@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This is the cake. Ben made it this morning. Which sentence joins the ideas with that?",
+  "options": [
+    "This is Ben that made the cake this morning.",
+    "This is the cake that Ben made this morning.",
+    "This that is the cake Ben made it.",
+    "The cake made Ben that morning."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "先行詞應是 cake，不是 Ben。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "that 取代 it，Ben 保留為 made 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項同時錯置 that 並重複 it。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項顛倒蛋糕與 Ben 的角色。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s164-join-cake-and-it-with-that",
+    "preserve-maker-object-and-time"
+  ],
+  "representationType": "that-sentence-combination",
+  "misconceptionTargets": [
+    "replace-wrong-shared-noun-or-keep-it"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩句共同項目是 the cake 與 it，合併時只取代 it。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 this morning、製作者與被製作物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

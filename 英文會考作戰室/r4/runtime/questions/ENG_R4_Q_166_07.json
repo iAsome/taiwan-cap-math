@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher who the students thanked smiled. Which sentence has a repeated object?",
+  "options": [
+    "The teacher who thanked the students smiled.",
+    "The students thanked the teacher who smiled.",
+    "The teacher who the students thanked her smiled.",
+    "The teacher thanked the students and smiled."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項交換感謝的方向，但沒有重複受詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項改寫詞序，teacher 仍只出現一次於 thanked 的受詞位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who 已代替 teacher 作 thanked 的受詞，her 又重複同一人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把 teacher 改成感謝學生的人，也沒有重複受詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s166-detect-added-her-after-object-who",
+    "separate-role-change-from-duplicate-object"
+  ],
+  "representationType": "duplicate-object-error-identification",
+  "misconceptionTargets": [
+    "confuse-role-change-with-resumptive-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "要找的是同一個受詞在關係代名詞與人稱代名詞中出現兩次。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時保留 who 與 her，因此正是要辨認的錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

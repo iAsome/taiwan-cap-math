@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Two nurses helped the team. The nurse who called yesterday left a message. Which nurse left it?",
+  "options": [
+    "Both nurses",
+    "The nurse who called yesterday",
+    "A nurse who did not call",
+    "The team"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "限定句使用單數 the nurse，沒有指兩人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "who called yesterday 從兩位護士中辨認留言者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未打電話者不符合條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "team 是受幫助群體，不是 nurse。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s168-resolve-message-nurse-among-two",
+    "use-relative-event-as-discriminator"
+  ],
+  "representationType": "multi-person-context-resolution",
+  "misconceptionTargets": [
+    "ignore-relative-clause-after-plural-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "前句建立兩個候選人，後句靠關係子句縮小到一人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只選擇具備明示通話特徵的護士。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

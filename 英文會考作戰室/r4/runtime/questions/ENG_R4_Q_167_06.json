@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I met two students. They did not join the game. Which sentence keeps the number two and the words did not join?",
+  "options": [
+    "I met the game that did not join two students.",
+    "I met two students who did not join the game.",
+    "Two students met me and joined the game.",
+    "I did not meet two students who joined the game."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 game 當主詞並打亂數量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "who 取代 They，two 與 did not 都保留。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項刪掉否定並改變 met 的方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把否定移到 met，意思不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s167-preserve-two-students-and-did-not",
+    "keep-negation-on-join-event"
+  ],
+  "representationType": "quantity-negation-relative-combination",
+  "misconceptionTargets": [
+    "drop-or-move-negation-when-merging"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "否定位置會決定哪個事件沒有發生，不能在合併時任意移動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完整保存兩位學生與未參加比賽的事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

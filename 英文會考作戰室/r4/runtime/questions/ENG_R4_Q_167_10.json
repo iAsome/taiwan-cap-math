@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The dog belongs to Mia. It followed us home. Which sentence keeps the owner and the action?",
+  "options": [
+    "Mia who followed the dog belongs to us.",
+    "The dog that followed us home belongs to Mia.",
+    "We belong to the dog that Mia followed home.",
+    "Home belongs to Mia's dog and followed us."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項改成 Mia 跟隨狗，且所有關係錯置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "that 取代 It，dog 仍屬 Mia 並跟隨我們。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把我們寫成狗的所有物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "home 是目的地，不能擁有或跟隨。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s167-join-dog-it-followed-and-ownership",
+    "preserve-owner-follower-and-destination"
+  ],
+  "representationType": "animal-relative-reference-combination",
+  "misconceptionTargets": [
+    "misresolve-it-and-reverse-ownership"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "It 的指涉由前句唯一的 dog 決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把 followed us home 放在 dog 後，沒有改變 belongs to Mia。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

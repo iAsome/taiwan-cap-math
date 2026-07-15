@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This is the tool ___ opens the back door.",
+  "options": [
+    "who",
+    "which",
+    "when",
+    "where"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tool 不是人物，因此不使用 who。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "which 代替 tool 並執行 opens。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "when 指時間，不能開門。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "where 指地點，無法代替工具。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s163-use-which-for-functional-tool",
+    "resist-agentive-verb-human-bias"
+  ],
+  "representationType": "inanimate-agent-relative-choice",
+  "misconceptionTargets": [
+    "use-who-for-thing-performing-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "是否能執行 opens 不會把工具變成人物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項依先行詞的事物類型作選擇，而非依動作能力猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

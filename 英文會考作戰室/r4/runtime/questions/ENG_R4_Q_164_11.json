@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The game that we watched was close. What does that stand for?",
+  "options": [
+    "We",
+    "The players",
+    "The game",
+    "The place"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "we 已在子句中作 watched 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "players 沒有出現在句中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "that 代替 game 作 watched 的受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有地點名詞可供連結。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s164-restore-game-from-object-that",
+    "exclude-relative-subject-and-invented-details"
+  ],
+  "representationType": "that-object-antecedent-identification",
+  "misconceptionTargets": [
+    "mistake-following-subject-for-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "that 雖位於 we 前，仍回指前面的 game。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項可還原成 We watched the game，角色完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

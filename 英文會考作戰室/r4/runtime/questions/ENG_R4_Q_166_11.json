@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The players who they practice after school are ready. Which word repeats the same subject as who?",
+  "options": [
+    "players",
+    "practice",
+    "they",
+    "ready"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "players 是必要先行詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "practice 是關係子句動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who 已代替 players 作主詞，they 重複。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ready 是主要句補語。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s166-identify-they-duplicate-after-who",
+    "retain-plural-agreement-and-main-state"
+  ],
+  "representationType": "plural-duplicate-subject-identification",
+  "misconceptionTargets": [
+    "add-they-after-plural-who"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "複數 who 仍然能自己作主詞，不需 they 支援。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項刪除後，practice 與 players 的複數一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

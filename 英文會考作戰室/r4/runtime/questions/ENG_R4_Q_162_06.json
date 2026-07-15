@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The people who live next door know Ben. Who lives next door?",
+  "options": [
+    "Ben",
+    "The people",
+    "The door",
+    "Everyone in town"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben 是 know 的受詞，未被說成住在隔壁。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "who 代替 people 作 live 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "door 是地點片語的一部分，不會居住。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原文只限定這些 people，沒有涵蓋全鎮。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s162-identify-neighbor-people-before-know-ben",
+    "limit-reference-to-stated-group"
+  ],
+  "representationType": "relative-group-identification",
+  "misconceptionTargets": [
+    "extend-relative-property-to-main-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "關係子句先限定 people，主要句再說他們認識 Ben。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有把受詞 Ben 或地點名詞誤升為先行詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S166",
+  "subject": "english",
+  "unitId": "ENG_R4_U24",
+  "skillId": "ENG_R4_S166",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S165"
+  ],
+  "objectives": [
+    "刪除關係子句中重複的主詞或受詞代名詞。",
+    "在省略受詞關係代名詞時仍保留完整且不重複的結構。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S166_SEC_01",
+      "title": "主詞關係代名詞後不再放 he、she 或 it",
+      "content": "The girl who sings 不寫成 The girl who she sings，因為 who 已代替 girl 作 sings 的主詞。多放 she 會讓同一個子句出現兩個競爭主詞。"
+    },
+    {
+      "id": "ENG_R4_L_S166_SEC_02",
+      "title": "受詞關係代名詞後不再重複 it 或 him",
+      "content": "The book that I read 不寫成 The book that I read it。that 已代替 book 作 read 的受詞，再放 it 會重複同一角色。"
+    },
+    {
+      "id": "ENG_R4_L_S166_SEC_03",
+      "title": "省略受詞關係代名詞不等於補回代名詞",
+      "content": "The bike that Ben rides 可簡化為 The bike Ben rides；兩種形式都只保留一個受詞空位。The bike Ben rides it 仍然錯，因為 it 與先行詞 bike 重複。"
+    },
+    {
+      "id": "ENG_R4_L_S166_SEC_04",
+      "title": "檢查方式是還原兩個基本句子",
+      "content": "The boy who lives next door 可還原成 The boy lives next door；The boy who Mia knows 可還原成 Mia knows the boy。若還原時同一名詞出現兩次，就表示原關係子句可能多放代名詞。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S166_EX_01",
+      "prompt": "The woman who she works here is my aunt. Take out one word to fix the sentence.",
+      "steps": [
+        "確認 who 代替 the woman。",
+        "判斷 who 已作 works 的主詞。",
+        "刪除重複主詞 she。"
+      ],
+      "answer": "Take out the word she.",
+      "why": "who 已指回 the woman 並作 works 的主詞，she 重複同一人物。刪除 she 後成為 The woman who works here，角色與動詞都完整。"
+    },
+    {
+      "id": "ENG_R4_L_S166_EX_02",
+      "prompt": "This is the bag that I found it on the bus. Take out one word.",
+      "steps": [
+        "找出 I 作 found 的主詞。",
+        "確認 that 代替 bag 作受詞。",
+        "刪除重複的 it。"
+      ],
+      "answer": "Take out the word it.",
+      "why": "that 已把 the bag 放進 found 的受詞位置，it 又指同一個袋子，因此形成雙重受詞。保留 that I found on the bus 即可。"
+    },
+    {
+      "id": "ENG_R4_L_S166_EX_03",
+      "prompt": "The coat we bought it was blue. Which word should be taken out?",
+      "steps": [
+        "辨認省略的受詞關係代名詞。",
+        "確認 we 是 bought 的主詞。",
+        "刪除補回的重複受詞 it。"
+      ],
+      "answer": "Take out the word it.",
+      "why": "The coat we bought 已能讓 coat 填補 bought 的受詞空位，省略 that 不會讓空位消失。再加 it 反而把 coat 重複一次。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "who 後一定要再放 he 或 she，句子才有主詞。",
+      "whyWrong": "who 作主詞時已承擔人物角色。",
+      "correction": "寫 who works、who called，不再加同指代名詞。"
+    },
+    {
+      "belief": "that 只是連接符號，所以受詞位置仍需 it。",
+      "whyWrong": "受詞 that 本身代替先行詞。",
+      "correction": "寫 the book that I read，不加 it。"
+    },
+    {
+      "belief": "省略 that 後，it 就可以補進受詞位置。",
+      "whyWrong": "省略只隱去關係代名詞，先行詞與空位的關係仍存在。",
+      "correction": "寫 the book I read，受詞不要重複。"
+    },
+    {
+      "belief": "看到兩個代名詞時，刪掉哪一個都不影響意思。",
+      "whyWrong": "刪錯關係代名詞可能破壞限定結構或改變主受詞。",
+      "correction": "先判斷每個詞的子句角色，再只刪除重複者。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "the boy who he won the game 應刪哪個詞？",
+      "answer": "he",
+      "reason": "who 已作 won 的主詞。"
+    },
+    {
+      "prompt": "the box that Mia opened it 應刪哪個詞？",
+      "answer": "it",
+      "reason": "that 已作 opened 的受詞。"
+    },
+    {
+      "prompt": "the box Mia opened it 仍正確嗎？",
+      "answer": "不正確",
+      "reason": "省略 that 後也不能重複受詞 it。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

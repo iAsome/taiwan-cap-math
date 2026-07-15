@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy spoke to the man ___ found her bag.",
+  "options": [
+    "who",
+    "which",
+    "when",
+    "where"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "who 連回 man，表示他找到袋子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "which 不用於此人物先行詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "when 需要時間名詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "where 需要地點名詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s163-link-man-as-bag-finder",
+    "distinguish-main-speaker-from-relative-agent"
+  ],
+  "representationType": "object-noun-person-relative-cloze",
+  "misconceptionTargets": [
+    "reuse-main-subject-for-relative-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Amy 是 spoke 的主詞，並不妨礙 man 成為 found 的主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把兩個子句的不同動作者分開保留。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

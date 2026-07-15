@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The girls ___ sit near the window are my cousins.",
+  "options": [
+    "near",
+    "window",
+    "who",
+    "are"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "near 是位置介系詞，不能連接人物與動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "window 是地點名詞，不能放在 girls 後作 sit 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who 代替 girls 作 sit 的主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 屬於主要句動詞，放入空格會留下兩個動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s163-identify-who-linking-girls-and-sit",
+    "separate-main-verb-and-location-words"
+  ],
+  "representationType": "relative-pronoun-cloze",
+  "misconceptionTargets": [
+    "mistake-preposition-or-main-verb-for-link"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "空格位於先行詞 girls 與子句動詞 sit 之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時具有人物連結與主詞功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

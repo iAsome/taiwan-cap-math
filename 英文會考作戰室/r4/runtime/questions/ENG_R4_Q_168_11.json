@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: Students who need help may stay after class. Who may clearly stay?",
+  "options": [
+    "Every student",
+    "Only students who already went home",
+    "Students who need help",
+    "People who are not students"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "關係子句沒有讓所有 students 都留下。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "已回家者不是公告限定群體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who need help 明確指定可留下者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "先行詞 students 排除非學生。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s168-apply-help-need-stay-permission",
+    "intersect-antecedent-class-and-relative-condition"
+  ],
+  "representationType": "notice-eligibility-interpretation",
+  "misconceptionTargets": [
+    "delete-relative-condition-from-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "公告中的關係子句是行動資格，不是可忽略的背景。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合學生身分與需要協助兩層限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

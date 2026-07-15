@@ -26,6 +26,7 @@ const UNITS = [
   { id: "ENG_R4_U21", firstSkill: 141 },
   { id: "ENG_R4_U22", firstSkill: 148 },
   { id: "ENG_R4_U23", firstSkill: 155 },
+  { id: "ENG_R4_U24", firstSkill: 162 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -702,6 +703,36 @@ test("U23 passive questions preserve roles, time, evidence limits, state boundar
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U23 duplicate ${label}`);
+});
+
+test("U24 relative-clause questions preserve antecedents, roles, omitted objects, and stated limits", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U24");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_163_07").options[question.get("ENG_R4_Q_163_07").answerIndex], "who");
+  assert.equal(question.get("ENG_R4_Q_163_08").options[question.get("ENG_R4_Q_163_08").answerIndex], "which");
+  assert.equal(question.get("ENG_R4_Q_163_11").options[question.get("ENG_R4_Q_163_11").answerIndex], "who");
+  assert.equal(question.get("ENG_R4_Q_164_03").options[question.get("ENG_R4_Q_164_03").answerIndex], "The second that");
+  assert.match(question.get("ENG_R4_Q_164_07").options[question.get("ENG_R4_Q_164_07").answerIndex], /no noun before it/i);
+  assert.match(question.get("ENG_R4_Q_165_03").options[question.get("ENG_R4_Q_165_03").answerIndex], /object of heard/i);
+  assert.match(question.get("ENG_R4_Q_165_04").options[question.get("ENG_R4_Q_165_04").answerIndex], /subject of works/i);
+  assert.equal(question.get("ENG_R4_Q_165_07").options[question.get("ENG_R4_Q_165_07").answerIndex], "The boy called Mia.");
+  assert.equal(question.get("ENG_R4_Q_165_08").options[question.get("ENG_R4_Q_165_08").answerIndex], "Mia called the boy.");
+  assert.match(question.get("ENG_R4_Q_166_07").options[question.get("ENG_R4_Q_166_07").answerIndex], /thanked her/);
+  assert.equal(question.get("ENG_R4_Q_166_10").options[question.get("ENG_R4_Q_166_10").answerIndex], "the song we heard");
+  assert.match(question.get("ENG_R4_Q_167_06").options[question.get("ENG_R4_Q_167_06").answerIndex], /two students who did not join/);
+  assert.match(question.get("ENG_R4_Q_167_08").options[question.get("ENG_R4_Q_167_08").answerIndex], /found near the gate.*on the desk/);
+  assert.equal(question.get("ENG_R4_Q_168_08").options[question.get("ENG_R4_Q_168_08").answerIndex], "Every coat is wet.");
+  assert.equal(source.lectures[0].workedExamples[0].steps[0], "找出 who 前的名詞。");
+  assert.match(source.lectures[5].sections[3].content, /過去時態/);
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U24 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U24 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

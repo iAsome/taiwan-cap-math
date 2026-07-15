@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher spoke to the students who were waiting outside. Who was waiting?",
+  "options": [
+    "The students",
+    "The teacher",
+    "Everyone at school",
+    "No one"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "who 代替複數 students，were 也與其一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "teacher 執行 spoke，但不在關係子句中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "限定只涵蓋這些學生，不是全校。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "were waiting 明確陳述等待事件。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s162-use-were-to-confirm-student-antecedent",
+    "separate-speaking-teacher-from-waiting-group"
+  ],
+  "representationType": "agreement-supported-antecedent",
+  "misconceptionTargets": [
+    "select-main-agent-over-relative-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "to the students 是主要句受詞片語，緊接的 who 再描述 students。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項利用複數 were 驗證先行詞，沒有套到 teacher。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

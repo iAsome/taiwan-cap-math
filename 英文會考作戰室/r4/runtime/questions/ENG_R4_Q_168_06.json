@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy who is wearing a red hat is my brother. Which sentence keeps the meaning?",
+  "options": [
+    "Every boy has a red hat.",
+    "The boy in the red hat is the speaker's brother.",
+    "The hat is new.",
+    "The brother likes red more than blue."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "關係子句只描述用來辨認的 boy。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項直接改述原句的身分連結。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "帽子新舊沒有被提到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "顏色喜好是未提供的原因猜測。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s168-limit-red-hat-inference-to-brother-identity",
+    "reject-universal-age-and-preference-inferences"
+  ],
+  "representationType": "evidence-bounded-person-identification",
+  "misconceptionTargets": [
+    "invent-background-from-identifying-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "wearing a red hat 是辨識證據，不是所有男孩的共同特徵。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項停在文本能證明的範圍內。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

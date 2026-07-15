@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy ___ won the race is my cousin.",
+  "options": [
+    "that",
+    "those",
+    "this",
+    "these"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "that 可代替人物 boy 作 won 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "those 是複數指示詞，不能開啟此子句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "this 指單數近物，但不連接先行詞與 won。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "these 是複數形式，與 boy 及句型皆不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s164-use-that-for-race-winning-boy",
+    "reject-demonstratives-as-relative-connectors"
+  ],
+  "representationType": "that-person-subject-cloze",
+  "misconceptionTargets": [
+    "ban-that-with-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要求一個能在 won 前代替 boy 的關係代名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成基本限定句，指出贏得比賽的男孩。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

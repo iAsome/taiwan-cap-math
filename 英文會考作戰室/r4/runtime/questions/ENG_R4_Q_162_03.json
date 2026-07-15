@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cakes which are on the table are for the class. What is on the table?",
+  "options": [
+    "The class",
+    "Only one plate",
+    "The cakes",
+    "The lesson"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "class 是蛋糕的預定對象，不是位置主體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有 plate，也沒有單數限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "which 指複數 cakes，are on the table 描述它們。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "lesson 未出現在原文。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s162-track-cakes-through-two-are-clauses",
+    "reject-purpose-noun-as-location-subject"
+  ],
+  "representationType": "plural-antecedent-tracking",
+  "misconceptionTargets": [
+    "attach-relative-clause-to-later-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個 are 分屬關係子句與主要句，皆連回 cakes。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項符合複數先行詞，也沒有把 for the class 當地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

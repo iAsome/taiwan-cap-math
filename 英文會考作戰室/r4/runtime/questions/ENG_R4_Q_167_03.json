@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The students are from Tainan. They won the game yesterday. Which sentence keeps the place and time?",
+  "options": [
+    "Tainan won the students yesterday.",
+    "The game that is from Tainan won yesterday.",
+    "The students who won the game yesterday are from Tainan.",
+    "The students are from the game that Tainan won."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Tainan 是來源地，不是比賽動作者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "game 不會來自 Tainan，也未被指定為贏家。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who 取代 They，yesterday 與 from Tainan 都保留。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項混合地點與比賽角色。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s167-merge-students-they-with-place-time",
+    "retain-two-clause-predicates-and-modifiers"
+  ],
+  "representationType": "plural-subject-relative-integration",
+  "misconceptionTargets": [
+    "attach-place-to-wrong-noun-when-combining"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "複數 students 同時是 won 的主詞與主要句 are 的主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項沒有遺漏原句的時間或地點條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

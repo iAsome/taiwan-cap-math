@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, 'Use the phone that I found it by the gate.' Which word makes the note wrong?",
+  "options": [
+    "it",
+    "phone",
+    "gate",
+    "found"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "that 已代替 phone 作 found 的受詞，it 多出。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "phone 是要使用的目標物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "gate 提供尋獲地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "found 說明如何辨認這支電話。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s166-proofread-notice-duplicate-it",
+    "retain-operational-object-and-location"
+  ],
+  "representationType": "notice-relative-error-edit",
+  "misconceptionTargets": [
+    "delete-context-detail-instead-of-duplicate"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "公告中的小錯誤仍要依句法角色判斷，不能刪除實用資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項移除後，that I found by the gate 能清楚限定 phone。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

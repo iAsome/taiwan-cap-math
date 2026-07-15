@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The woman who she works here is my aunt. Which word should be taken out?",
+  "options": [
+    "she",
+    "who",
+    "woman",
+    "here"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "who 已代替 woman 作 works 的主詞，she 重複。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪 who 會失去連接且留下兩個獨立結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "woman 是必要先行詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "here 提供工作地點，不造成角色重複。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s166-remove-she-after-subject-who",
+    "protect-antecedent-link-and-place-detail"
+  ],
+  "representationType": "duplicate-relative-subject-removal",
+  "misconceptionTargets": [
+    "add-personal-pronoun-after-subject-relative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "主詞型關係代名詞後不可再放同指的 she。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項刪除後得到 The woman who works here。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I thanked the nurse. She helped my father. Which sentence keeps both facts?",
+  "options": [
+    "I thanked the nurse who helped my father.",
+    "I thanked my father who helped the nurse.",
+    "The nurse thanked me because my father helped.",
+    "My father thanked the nurse who I helped."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "who 代替 nurse 作 helped 的主詞，兩事實都保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項交換 nurse 與 father 的角色。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原句沒有 nurse 感謝我或 because 關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項改成我幫助護士，與原文不同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s167-join-nurse-she-helper-facts",
+    "lock-thanker-helper-and-recipient-roles"
+  ],
+  "representationType": "person-subject-relative-combination",
+  "misconceptionTargets": [
+    "combine-by-swapping-person-roles"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "共同人物是 nurse 與 She，合併時應取代 She。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項仍是我感謝護士、護士幫助父親。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

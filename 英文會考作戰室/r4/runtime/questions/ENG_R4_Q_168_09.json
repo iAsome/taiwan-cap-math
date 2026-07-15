@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The books that are on the table are mine. What can be said about the books on the shelf?",
+  "options": [
+    "The sentence does not say who owns them.",
+    "They must also be mine.",
+    "They cannot belong to anyone.",
+    "They are all on the table."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "關係子句只限定 table 上的 books，未談 shelf 上的書。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "mine 不能自動擴大到另一位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有所有權資訊不等於無人所有。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "shelf 上的書不可能同時因本句變到 table。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s168-preserve-unknown-ownership-for-shelf-books",
+    "avoid-property-transfer-across-location-groups"
+  ],
+  "representationType": "unmentioned-group-evidence-boundary",
+  "misconceptionTargets": [
+    "extend-main-predicate-to-unmodified-items"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "沒有被關係子句涵蓋的對象要保留未知。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項正確區分明示所有權與未提供資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

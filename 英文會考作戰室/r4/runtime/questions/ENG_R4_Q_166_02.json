@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This is the bag that I found it on the bus. Which word should be taken out?",
+  "options": [
+    "that",
+    "it",
+    "bus",
+    "I"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "that 連回 bag 並作 found 的受詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "it 與 that 都指 bag，形成重複受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "bus 提供發現地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I 是 found 的必要主詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s166-remove-it-after-object-that",
+    "retain-finder-location-and-relative-link"
+  ],
+  "representationType": "duplicate-relative-object-removal",
+  "misconceptionTargets": [
+    "keep-resumptive-it-with-that"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "受詞 that 已占據 I found 後的空位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項刪除後保留誰找到、找到什麼及在哪裡三項資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

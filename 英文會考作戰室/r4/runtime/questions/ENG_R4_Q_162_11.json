@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boxes that are by the door belong to Sam. What is by the door?",
+  "options": [
+    "Sam",
+    "One person",
+    "The boxes",
+    "The owner only"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Sam 是 belong to 後的所有人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中談複數物品，不是單一人物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "that 代替 boxes，are by the door 描述它們位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "owner 與位置資訊無關。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s162-separate-box-location-from-sam-ownership",
+    "use-plural-agreement-to-anchor-reference"
+  ],
+  "representationType": "ownership-location-clause-separation",
+  "misconceptionTargets": [
+    "mistake-owner-for-relative-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "複數 are 與 boxes 相配，belong to Sam 則是主要句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項沒有把所有者誤當成被定位的物品。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

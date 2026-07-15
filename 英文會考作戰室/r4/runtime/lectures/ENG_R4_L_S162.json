@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S162",
+  "subject": "english",
+  "unitId": "ENG_R4_U24",
+  "skillId": "ENG_R4_S162",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S161"
+  ],
+  "objectives": [
+    "找出關係子句真正修飾的先行詞。",
+    "排除地點、時間與所有格等背景資訊造成的錯誤連結。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S162_SEC_01",
+      "title": "關係子句緊接在要補充的名詞後",
+      "content": "The boy who is waving is Ben 中，who is waving 補充 the boy，告訴讀者是哪一位男孩。the boy 稱為先行詞；關係子句不是另一個無關句子，而是名詞的一部分。"
+    },
+    {
+      "id": "ENG_R4_L_S162_SEC_02",
+      "title": "從子句語意確認先行詞",
+      "content": "I found the key that opens this door 裡，key 能開門，所以 that opens this door 修飾 key。不能只找前面任何名詞；要檢查該名詞能否合理放回子句缺少的位置。"
+    },
+    {
+      "id": "ENG_R4_L_S162_SEC_03",
+      "title": "地點與所有格不會自動成為先行詞",
+      "content": "Nora thanked the nurse who helped her 的 who 指 nurse，不指 Nora；The bag that has a red star is under the chair 的 that 指 bag，不指 chair。句子位置與事件角色要一起判斷。"
+    },
+    {
+      "id": "ENG_R4_L_S162_SEC_04",
+      "title": "先行詞的單複數會影響子句動詞",
+      "content": "The student who works here 與 The students who work here 的關係子句都修飾 student 或 students。當 who 是子句主詞時，後面的動詞要依先行詞單複數變化。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S162_EX_01",
+      "prompt": "The woman who teaches music is my aunt. Who teaches music?",
+      "steps": [
+        "找出 who 前的名詞。",
+        "把 woman 放回 teaches 的主詞位置。",
+        "確認 aunt 是整句補充身分。"
+      ],
+      "answer": "The woman.",
+      "why": "who teaches music 緊接 the woman，並以 who 代替她作 teaches 的主詞。my aunt 是整句對這位女士的身分說明，不是另一位教音樂的人。"
+    },
+    {
+      "id": "ENG_R4_L_S162_EX_02",
+      "prompt": "Mia bought a book that tells the story of a young cook. What tells the story?",
+      "steps": [
+        "定位 that tells the story。",
+        "回看 that 前的 book。",
+        "排除句尾的 cook。"
+      ],
+      "answer": "The book.",
+      "why": "that 代替 a book 作 tells 的主詞，因此是書在講述故事。young cook 位於故事內容中，並沒有在這個句子裡執行 tells。"
+    },
+    {
+      "id": "ENG_R4_L_S162_EX_03",
+      "prompt": "The cups which are on the table are clean. Which things are on the table?",
+      "steps": [
+        "找出 which are on the table。",
+        "確認 which 前是複數 cups。",
+        "用 are 與複數先行詞互相驗證。"
+      ],
+      "answer": "The cups.",
+      "why": "which are on the table 用來指出那些杯子的位置，先行詞是複數 cups。後面的 are 也和 cups 一致，不是把 table 當成被修飾物。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "關係代名詞前出現兩個名詞時，第一個一定是先行詞。",
+      "whyWrong": "先行詞要由子句位置與語意共同判斷，不靠整句第一個名詞。",
+      "correction": "先找關係子句，再把候選名詞放回缺少的位置檢查。"
+    },
+    {
+      "belief": "關係子句最後一個名詞會被下一段關係子句修飾。",
+      "whyWrong": "基本限定關係子句通常緊接自己的先行詞，句尾名詞可能只是子句成分。",
+      "correction": "沿著關係代名詞往前找直接相連且語意合理的名詞。"
+    },
+    {
+      "belief": "先行詞一定是人，因為句子在描述誰做事。",
+      "whyWrong": "書、車、店與其他事物也能被關係子句限定。",
+      "correction": "先判斷子句缺少的是人物還是事物，再連回相符名詞。"
+    },
+    {
+      "belief": "先行詞單複數不影響關係子句中的動詞。",
+      "whyWrong": "關係代名詞作主詞時，動詞需與它所代替的先行詞一致。",
+      "correction": "比較 student who works 與 students who work 的差異。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "The bus that goes to the station stops here 中，that 修飾什麼？",
+      "answer": "the bus",
+      "reason": "goes 的主體是 bus，station 只是目的地。"
+    },
+    {
+      "prompt": "The teachers who are talking know Mia 中，誰在交談？",
+      "answer": "the teachers",
+      "reason": "who are talking 直接限定複數 teachers。"
+    },
+    {
+      "prompt": "The phone that Ben found is mine 中，Ben 是先行詞嗎？",
+      "answer": "不是",
+      "reason": "that 指 phone，Ben 是 found 的主詞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

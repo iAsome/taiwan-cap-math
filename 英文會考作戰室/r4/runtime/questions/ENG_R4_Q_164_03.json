@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "That is the bike that Leo rides to school. Which use of that stands for the bike?",
+  "options": [
+    "The first That",
+    "Both uses",
+    "The second that",
+    "Neither use"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句首 That 是主要句主詞，前面沒有先行詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只有 bike 後的 that 代替 bike。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第二個 that 緊接 bike 並連到 Leo rides。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第二個 that 確實有明確先行詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s164-distinguish-demonstrative-and-relative-that",
+    "locate-relative-clause-boundary"
+  ],
+  "representationType": "that-function-disambiguation",
+  "misconceptionTargets": [
+    "label-every-that-as-relative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "相同拼字可有不同功能，必須查看它是否跟在名詞後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項代替 bike 作 rides 的受詞，符合關係代名詞條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

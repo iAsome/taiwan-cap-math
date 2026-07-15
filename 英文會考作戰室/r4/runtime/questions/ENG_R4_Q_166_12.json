@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bag Nora brought it is on the chair. Which sentence takes out the repeated object?",
+  "options": [
+    "The bag brought Nora is on the chair.",
+    "Nora the bag brought is on the chair.",
+    "The bag Nora brought it on the chair.",
+    "The bag Nora brought is on the chair."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 bag 寫成動作者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項詞序無法建立先行詞與主要句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項仍保留多餘 it，並改變地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "省略 that 的 Nora brought 已讓 bag 作受詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s166-repair-zero-relative-bag-brought-it",
+    "preserve-main-location-and-relative-agent"
+  ],
+  "representationType": "zero-relative-full-sentence-repair",
+  "misconceptionTargets": [
+    "move-words-instead-of-removing-extra-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "修正要同時保留 Nora 帶袋子與袋子在椅子上的兩個事實。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只刪重複 it，沒有移動其他成分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

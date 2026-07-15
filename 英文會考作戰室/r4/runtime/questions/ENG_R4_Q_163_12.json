@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The buses ___ stop by the school go downtown.",
+  "options": [
+    "who stops",
+    "which stops",
+    "who stop",
+    "which stop"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "buses 不是人物，且 stops 也不合複數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "which 類型正確，但 stops 不合複數 buses。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "stop 數量正確，who 卻不合事物先行詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "which 指 buses，stop 配合複數。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s163-integrate-bus-which-and-plural-stop",
+    "reject-half-correct-pronoun-verb-pairs"
+  ],
+  "representationType": "relative-pronoun-agreement-pair",
+  "misconceptionTargets": [
+    "check-pronoun-without-verb-agreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這題要同時檢查先行詞類型與動詞一致，不能只對一半。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項以 which stop 完整限定停靠學校旁的公車。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The doctor ___ helped Leo called his family.",
+  "options": [
+    "who",
+    "which",
+    "where",
+    "what"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "doctor 是人物，who 可代替他作 helped 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "which 不符合人物先行詞的基本分類。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "where 需要地點先行詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "what 不在此連接已明示的 doctor。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s163-connect-doctor-to-helped-with-who",
+    "reject-nonperson-relative-forms"
+  ],
+  "representationType": "two-action-person-relative-cloze",
+  "misconceptionTargets": [
+    "choose-which-because-leo-is-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "關係子句先指出幫助 Leo 的醫師，主要句再說醫師打電話。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項維持同一人物跨兩個動作的角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

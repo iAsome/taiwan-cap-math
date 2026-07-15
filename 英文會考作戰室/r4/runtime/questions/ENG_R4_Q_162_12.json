@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The girl with the blue bag who is talking to Mia is Nora. Who is talking to Mia?",
+  "options": [
+    "The bag",
+    "A boy not in the sentence",
+    "Mia's teacher",
+    "The girl with the blue bag"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "bag 是 with 片語中的物品，不能談話。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有 boy。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "teacher 也未出現在原文。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "who 連回 girl；with the blue bag 只補充辨識特徵。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s162-cross-with-phrase-to-girl-antecedent",
+    "reject-inanimate-and-unmentioned-speakers"
+  ],
+  "representationType": "intervening-phrase-antecedent-resolution",
+  "misconceptionTargets": [
+    "choose-nearest-noun-inside-modifier"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "介於 girl 與 who 之間的 with 片語不會改變人物核心。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項完整保留女孩的辨識資訊，並讓她執行 talking。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

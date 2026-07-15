@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which words name one song without using the object twice?",
+  "options": [
+    "the song that we heard it",
+    "the song we heard",
+    "the song we heard it",
+    "the song that it heard us"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "that 與 it 同時作 heard 的受詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "省略受詞 that 後，we heard 保留正確空位。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項同樣多放 it。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項顛倒歌曲與人的角色。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s166-select-clean-zero-relative-song-phrase",
+    "reject-overt-and-zero-relative-resumptives"
+  ],
+  "representationType": "nonrepetitive-relative-phrase-selection",
+  "misconceptionTargets": [
+    "equate-omission-with-pronoun-replacement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這裡檢查的是受詞只出現一次，不是單純挑最短片語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項可還原為 We heard the song，且沒有重複代名詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

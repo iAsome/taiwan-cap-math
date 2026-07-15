@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Students who finished the work may leave. Leo has not finished. May Leo leave under this rule?",
+  "options": [
+    "Yes, because Leo is a student.",
+    "No, because he does not meet the rule.",
+    "Yes, because the work is there.",
+    "No, because no student may ever leave."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "student 身分不足，還需 finished the work。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Leo 未完成，因此不在獲准群體內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "工作存在不等於完成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "規則允許符合條件的學生離開。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s168-apply-finished-work-condition-to-leo",
+    "separate-group-membership-from-condition-satisfaction"
+  ],
+  "representationType": "relative-rule-eligibility",
+  "misconceptionTargets": [
+    "apply-main-predicate-to-entire-antecedent-class"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "who finished the work 把全體學生縮小成一個子群。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項套用明示條件，沒有把 may 誇大為永久禁止。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

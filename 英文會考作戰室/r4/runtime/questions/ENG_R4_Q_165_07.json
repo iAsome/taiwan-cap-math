@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_165_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S165"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy who called Mia waited outside. What happened?",
+  "options": [
+    "Mia called the boy.",
+    "Outside called Mia.",
+    "The boy called Mia.",
+    "No call happened."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項交換 who 與 Mia 的角色。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "outside 是地點副詞，不能打電話。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who 代替 boy 作 called 的主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "called 明確表示通話事件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s165-interpret-who-called-mia-subject",
+    "reject-reversal-location-agent-and-denial"
+  ],
+  "representationType": "subject-relative-event-paraphrase",
+  "misconceptionTargets": [
+    "reverse-subject-relative-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "who called Mia 可直接還原成 The boy called Mia。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留主詞關係代名詞所建立的動作方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

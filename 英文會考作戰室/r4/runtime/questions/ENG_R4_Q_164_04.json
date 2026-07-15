@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Bring me the bag ___ has a blue star.",
+  "options": [
+    "it",
+    "where",
+    "there",
+    "that"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 會留下兩句並列不明，也不能作關係連接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "where 指地點，不代替 bag 作 has 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "there 是地點副詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "that 代替 bag 並限定有藍星的那一個。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s164-complete-blue-star-bag-restriction",
+    "reject-pronoun-and-location-fillers"
+  ],
+  "representationType": "identifying-that-cloze",
+  "misconceptionTargets": [
+    "treat-that-as-optional-when-identification-needed"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "多個袋子存在時，that has a blue star 提供必要辨識條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項直接接 has，顯示 that 在子句中作主詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

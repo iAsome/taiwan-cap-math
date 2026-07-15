@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S165",
+  "subject": "english",
+  "unitId": "ENG_R4_U24",
+  "skillId": "ENG_R4_S165",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S164"
+  ],
+  "objectives": [
+    "判斷關係代名詞在子句中作主詞或受詞。",
+    "利用子句結構辨識是否可省略受詞關係代名詞。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S165_SEC_01",
+      "title": "關係代名詞後直接接動詞時常作主詞",
+      "content": "The girl who called me 中，who 後直接接 called，表示 girl 發出電話；who 填補子句主詞。主詞關係代名詞不能直接省略，否則會剩下 the girl called me，語意與結構都改變。"
+    },
+    {
+      "id": "ENG_R4_L_S165_SEC_02",
+      "title": "關係代名詞後已有主詞時常作受詞",
+      "content": "The girl who I called 中，who 後已有 I 作 called 的主詞，所以 who 代替被打電話的 girl，功能是受詞。判讀時要看子句是否已經有明確動作者。"
+    },
+    {
+      "id": "ENG_R4_L_S165_SEC_03",
+      "title": "受詞關係代名詞在基本限定句中可省略",
+      "content": "The book that Amy bought 可寫成 The book Amy bought，因為 Amy 已是子句主詞，book 的受詞空位仍能理解。但 The book that fell 不能刪成 The book fell 來表達相同結構，因為 that 本來是 fell 的主詞。"
+    },
+    {
+      "id": "ENG_R4_L_S165_SEC_04",
+      "title": "主受詞功能決定後續動詞形式",
+      "content": "people who work here 中 who 作主詞，work 依 people；the person who we help 中 we 已作主詞，help 依 we。不能看到單數 person 就把第二句的 help 改成 helps。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S165_EX_01",
+      "prompt": "The boy who found the wallet called us. Is who the subject or object of found?",
+      "steps": [
+        "查看 who 後是否另有主詞。",
+        "確認 found 前只有 who。",
+        "把 boy 還原成 found 的執行者。"
+      ],
+      "answer": "The subject.",
+      "why": "who 後直接接 found，沒有另一個人物執行尋找，因此 who 代替 the boy 作 found 的主詞。wallet 才是 found 的受詞。"
+    },
+    {
+      "id": "ENG_R4_L_S165_EX_02",
+      "prompt": "The boy who Mia called is here. Is who the subject or object of called?",
+      "steps": [
+        "找出 called 前的 Mia。",
+        "確認 Mia 已是子句主詞。",
+        "把 who 放到 called 的受詞位置。"
+      ],
+      "answer": "The object.",
+      "why": "Mia 執行 called，所以子句主詞已經完整；who 代替被 Mia 打電話的 boy，位於受詞空位。不能把 boy 誤判成打電話的人。"
+    },
+    {
+      "id": "ENG_R4_L_S165_EX_03",
+      "prompt": "The song that we heard was beautiful. Can that be left out here?",
+      "steps": [
+        "確認 we 是 heard 的主詞。",
+        "判斷 that 代替 song 作受詞。",
+        "檢查省略後仍有 we heard 的結構。"
+      ],
+      "answer": "Yes.",
+      "why": "we 已作 heard 的主詞，that 只代替被聽見的 song，因此限定句可寫成 The song we heard。省略後不能再加 it，否則受詞會重複。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "who 一律在關係子句中作主詞。",
+      "whyWrong": "who 後若已有主詞，who 可能作受詞。",
+      "correction": "比較 who called Mia 與 who Mia called 的詞序。"
+    },
+    {
+      "belief": "先行詞是單數時，關係子句動詞一定加 s。",
+      "whyWrong": "受詞關係代名詞後的動詞要配合子句內真正主詞。",
+      "correction": "the person who we help 中 help 配合 we。"
+    },
+    {
+      "belief": "所有關係代名詞都可以省略。",
+      "whyWrong": "作主詞的關係代名詞省略後會失去子句主詞。",
+      "correction": "只在基本限定句中確認它作受詞後才考慮省略。"
+    },
+    {
+      "belief": "省略受詞關係代名詞後要補 it 或 him。",
+      "whyWrong": "先行詞仍填補受詞空位，再補代名詞會重複。",
+      "correction": "保留 The book Amy read，不加 it。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "the nurse who helped Ben 中，who 是什麼功能？",
+      "answer": "主詞",
+      "reason": "who 直接執行 helped。"
+    },
+    {
+      "prompt": "the nurse who Ben helped 中，who 是什麼功能？",
+      "answer": "受詞",
+      "reason": "Ben 已是 helped 的主詞。"
+    },
+    {
+      "prompt": "the cake that fell 中可省略 that 嗎？",
+      "answer": "不可以",
+      "reason": "that 是 fell 的主詞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy found the phone that Leo lost on the bus. What did Leo lose?",
+  "options": [
+    "The bus",
+    "The phone",
+    "Amy",
+    "A ticket"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "bus 是遺失發生的地點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "that 代替 phone 作 lost 的受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Amy 是 found 的主詞，不是可遺失物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "ticket 沒有文本依據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s162-resolve-phone-as-leo-lost-object",
+    "separate-bus-location-and-amy-finder"
+  ],
+  "representationType": "object-gap-antecedent-recovery",
+  "misconceptionTargets": [
+    "attach-relative-object-to-location"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Leo 已作 lost 的主詞，因此 that 的空位是被遺失物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 phone 在主要句被找到、在子句曾遺失的兩個關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The man is my uncle. He works at the post office. Which words join the two ideas without repeating he?",
+  "options": [
+    "the man which the post office works",
+    "the uncle where he works",
+    "the man who works at the post office",
+    "the post office who is my uncle"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "which 不合人物且詞序錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "where 不代替人物，he 也重複。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who 取代 He 並連回 the man。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "post office 不是 uncle，也不用 who。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s167-build-man-who-works-phrase",
+    "separate-person-antecedent-from-workplace"
+  ],
+  "representationType": "shared-subject-relative-phrase-construction",
+  "misconceptionTargets": [
+    "select-location-as-shared-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩句共同人物是 the man 與 He，不是工作地點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項可放入 The man who works at the post office is my uncle。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

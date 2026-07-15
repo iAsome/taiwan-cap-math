@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus that stops at Gate 2 goes to the museum. Where should a museum visitor wait?",
+  "options": [
+    "At the museum door",
+    "At every gate",
+    "At Gate 2",
+    "At home"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "museum 是目的地，不是上車處。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子只指定 Gate 2，沒有涵蓋所有 gate。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "that stops at Gate 2 限定前往 museum 的 bus。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "home 與搭車資訊無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s168-infer-museum-bus-waiting-gate",
+    "distinguish-stop-from-destination"
+  ],
+  "representationType": "travel-action-from-relative-detail",
+  "misconceptionTargets": [
+    "confuse-relative-location-with-main-destination"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "關係子句的地點能直接轉成旅客等待位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留公車與 museum 的連結，不把終點當起點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

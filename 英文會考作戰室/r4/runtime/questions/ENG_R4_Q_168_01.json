@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Two bags are by the door. Take the bag that has a blue star. Which bag should be taken?",
+  "options": [
+    "The bag with the blue star",
+    "Both bags",
+    "The first bag",
+    "Any bag without a star"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "關係子句明確指定有藍星的袋子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "two bags 是候選範圍，不表示兩個都拿。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原文沒有交代袋子的順序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有星星的袋子不符合限定條件。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s168-select-blue-star-bag",
+    "reject-all-size-and-opposite-feature-options"
+  ],
+  "representationType": "single-feature-object-selection",
+  "misconceptionTargets": [
+    "ignore-restrictive-feature-under-two-candidates"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "that has a blue star 的功能是從兩個候選物中辨認一個。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只使用明示特徵，沒有自行增加位置條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

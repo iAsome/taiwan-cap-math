@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy who is waving is Ben. Who is waving?",
+  "options": [
+    "The boy",
+    "Ben's friend",
+    "No one",
+    "The reader"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "who is waving 緊接 the boy，指出男孩正在揮手。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有提到 Ben 的朋友。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is waving 明確表示有人正在進行動作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "reader 不在事件中。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s162-link-waving-clause-to-boy",
+    "exclude-unmentioned-participants"
+  ],
+  "representationType": "antecedent-person-identification",
+  "misconceptionTargets": [
+    "mistake-predicate-name-for-separate-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先行詞 the boy 填入 who 在子句中的主詞位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只使用關係子句明示的角色，沒有增加人物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We visited the store. It closed at five that day. Which sentence keeps the visit and closing time?",
+  "options": [
+    "Five visited the store that day.",
+    "The store visited us when it closed.",
+    "We visited the store that closed at five that day.",
+    "We closed at five in the store that visited."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "five 是時間，不是訪客。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把 store 寫成拜訪者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "that 取代 It 作 closed 的主詞，主要句仍是 we visited。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項讓 we 成為關閉的對象並顛倒 visit。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s167-integrate-store-visit-and-closing-time",
+    "separate-visitor-action-from-store-state-change"
+  ],
+  "representationType": "event-time-relative-combination",
+  "misconceptionTargets": [
+    "assign-time-or-place-as-main-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "共同事物 store 與 It 在第二句執行 closed。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓 at five that day 只修飾關店事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

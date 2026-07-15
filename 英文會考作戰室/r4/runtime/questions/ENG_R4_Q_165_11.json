@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_165_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S165"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher who the students thanked smiled. Who did the students thank?",
+  "options": [
+    "The students",
+    "The time",
+    "The teacher",
+    "Someone else"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "students 是執行 thanked 的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "who 不提供時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "who 代替 teacher，表示學生感謝老師。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有另一位被感謝的人。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s165-identify-teacher-who-as-thanked-object",
+    "preserve-student-subject-in-restoration"
+  ],
+  "representationType": "embedded-plural-subject-object-relative",
+  "misconceptionTargets": [
+    "assign-relative-pronoun-subject-by-position-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "還原句為 The students thanked the teacher。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項顯示 who 在 thanked 後填入被感謝者的位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

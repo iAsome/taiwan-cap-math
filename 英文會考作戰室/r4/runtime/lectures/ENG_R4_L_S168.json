@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S168",
+  "subject": "english",
+  "unitId": "ENG_R4_U24",
+  "skillId": "ENG_R4_S168",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S167"
+  ],
+  "objectives": [
+    "用關係子句從多個候選人或事物中辨識目標。",
+    "只依明示限定資訊推論，不把子句擴大成所有成員的共同特徵。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S168_SEC_01",
+      "title": "限定子句把候選範圍縮小",
+      "content": "There are two bags. Take the bag that has a blue star. 關係子句指出要拿有藍星的袋子，不是任意一個。解題時要把子句中的每項特徵與候選物逐一比對。"
+    },
+    {
+      "id": "ENG_R4_L_S168_SEC_02",
+      "title": "子句只描述它所連接的先行詞",
+      "content": "The students who finished may leave 不代表所有學生都完成；只說完成的那群可以離開。不能把限定條件移到未被子句修飾的人或物上。"
+    },
+    {
+      "id": "ENG_R4_L_S168_SEC_03",
+      "title": "多個條件要一起滿足",
+      "content": "Choose the bus that stops here and goes to the station 要同時符合停靠此處與前往車站。只符合其中一項的公車仍不能確定是目標。"
+    },
+    {
+      "id": "ENG_R4_L_S168_SEC_04",
+      "title": "不要從辨識資訊推測未寫出的原因",
+      "content": "The boy who is wearing a red hat is my brother 能辨認哥哥，卻不能推出他喜歡紅色、帽子是新的或其他男孩沒有帽子。關係子句提供的是限定證據，不是完整背景故事。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S168_EX_01",
+      "prompt": "Two keys are on the table. Use the key that has a green star. Which key should be used?",
+      "steps": [
+        "列出兩把鑰匙。",
+        "讀取限定條件 green star。",
+        "選擇唯一符合條件者。"
+      ],
+      "answer": "The key with the green star.",
+      "why": "that has a green star 把目標從兩把鑰匙中分出來。題目沒有說另一把鑰匙不能開門，只能確定應使用帶綠色星號的那把。"
+    },
+    {
+      "id": "ENG_R4_L_S168_EX_02",
+      "prompt": "Students who finished the work may go home. Can a student who has not finished leave?",
+      "steps": [
+        "找出可離開的先行詞 students。",
+        "套用 who finished the work 的限制。",
+        "檢查未完成者是否符合。"
+      ],
+      "answer": "No.",
+      "why": "may go home 只適用於符合 who finished the work 的學生。未完成者不在這個限定群體內，因此不能從句子取得離開許可。"
+    },
+    {
+      "id": "ENG_R4_L_S168_EX_03",
+      "prompt": "Three rooms are open. The room that has a green door is for the music club. Which room should the music club use?",
+      "steps": [
+        "找出提供給 music club 的 room。",
+        "讀取該 room 的限定資訊 green door。",
+        "用門的顏色辨認正確教室。"
+      ],
+      "answer": "The room with the green door.",
+      "why": "that has a green door 只限定提供給音樂社的教室。其他教室雖然也開放，題目沒有說它們供音樂社使用，因此應選綠色門的教室。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "關係子句描述一群中的成員時，條件會自動套用到全群。",
+      "whyWrong": "限定子句常只挑出符合條件的子群。",
+      "correction": "把有條件與無條件的成員分開判讀。"
+    },
+    {
+      "belief": "候選物符合關係子句的一半條件就足以選定。",
+      "whyWrong": "and 連接的條件通常都必須成立。",
+      "correction": "逐項建立條件表，只選同時符合者。"
+    },
+    {
+      "belief": "辨認出目標後，可以補上合理但未寫出的原因。",
+      "whyWrong": "合理猜測仍不是文本證據。",
+      "correction": "答案只保留關係子句與上下文直接支持的資訊。"
+    },
+    {
+      "belief": "關係子句只是補充背景，刪掉不會影響讀者選擇。",
+      "whyWrong": "有多個候選時，它可能是唯一辨識線索。",
+      "correction": "先比較刪除前後是否仍能唯一找到目標。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Take the cup that is clean 中，哪個杯子是目標？",
+      "answer": "乾淨的杯子",
+      "reason": "that is clean 是選擇條件。"
+    },
+    {
+      "prompt": "People who have tickets may enter 表示所有人都可進入嗎？",
+      "answer": "不是",
+      "reason": "只限定持票者。"
+    },
+    {
+      "prompt": "關係子句寫紅帽子，能推出帽子是新買的嗎？",
+      "answer": "不能",
+      "reason": "新舊沒有文本證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

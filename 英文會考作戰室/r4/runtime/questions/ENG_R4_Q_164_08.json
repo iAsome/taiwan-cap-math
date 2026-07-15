@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The chair that is by the window is free. In 'that is by the window,' what does that stand for?",
+  "options": [
+    "A time",
+    "The window",
+    "A different chair",
+    "The chair"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "關係子句沒有時間意義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "window 位於 by 後，不是 that 指向的事物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "that 沒有另指一張椅子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "that 代替前面的 chair，直接作 is 的主詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s164-identify-that-as-is-subject",
+    "reject-time-object-and-new-reference-readings"
+  ],
+  "representationType": "that-clause-function-analysis",
+  "misconceptionTargets": [
+    "treat-that-as-roleless-link"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把 The chair 放回 is by the window，可得到完整句意。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項也說明為何 that 後不能再加 it。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The picture ___ Mia drew is in the hall.",
+  "options": [
+    "who",
+    "which",
+    "when",
+    "where"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "picture 不是人物，不能用 who。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "which 代替 picture 作 drew 的受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "when 無法指作品。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "where 不能填補 Mia drew 後的受詞空位。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s163-select-which-for-drawn-picture-object",
+    "reject-adverb-relatives-in-object-gap"
+  ],
+  "representationType": "object-relative-which-cloze",
+  "misconceptionTargets": [
+    "choose-where-because-picture-is-in-hall"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Mia 已是 drew 的主詞，因此 which 承接被畫的 picture。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項依先行詞類型與子句空位都能成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

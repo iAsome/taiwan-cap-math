@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The girl is Nora. She called Ben after school. Which sentence says that Nora called Ben?",
+  "options": [
+    "The girl who Ben called after school is Nora.",
+    "Ben is the girl who called Nora after school.",
+    "The girl who called Nora after school is Ben.",
+    "The girl who called Ben after school is Nora."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項改成 Ben 打給女孩。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把 Ben 寫成女孩並交換通話角色。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把接聽者改成 Nora。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "who 取代 She，所以女孩 Nora 打給 Ben。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s167-combine-nora-she-called-ben",
+    "prevent-name-role-reversal"
+  ],
+  "representationType": "multi-person-relative-combination",
+  "misconceptionTargets": [
+    "lose-pronoun-reference-among-names"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "人名很多時，先還原 She called Ben 再進行合併。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 after school 與兩人的原始方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

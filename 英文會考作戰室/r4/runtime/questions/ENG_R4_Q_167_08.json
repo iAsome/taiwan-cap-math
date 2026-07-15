@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The key is on the desk. Ben found it near the gate. Which sentence keeps the key on the desk and the finding near the gate?",
+  "options": [
+    "The key found Ben on the desk near the gate.",
+    "Ben is on the desk that found the key.",
+    "The gate that Ben found is on the key.",
+    "The key that Ben found near the gate is on the desk."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 key 寫成發現者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把 Ben 放到桌上並讓 desk 發現鑰匙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項改成 Ben 找到 gate。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "that 取代 it，near the gate 修飾 found，on the desk 留在主要句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s167-join-key-it-with-two-locations",
+    "attach-each-location-to-correct-event"
+  ],
+  "representationType": "multi-location-relative-integration",
+  "misconceptionTargets": [
+    "move-modifiers-between-clauses"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個地點分屬不同事件，合併時不能互換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留尋獲地點與目前位置的時間層次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

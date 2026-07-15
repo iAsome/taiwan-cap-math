@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I like the song that Mia sang at the show. What did Mia sing?",
+  "options": [
+    "The show",
+    "The song",
+    "The time",
+    "The singer"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "show 是演唱地點或活動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "that 代替 song 作 sang 的受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有以 time 作被唱內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Mia 才是歌手，singer 不是受詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s164-recover-song-as-sang-object",
+    "separate-show-setting-from-relative-object"
+  ],
+  "representationType": "that-object-role-question",
+  "misconceptionTargets": [
+    "choose-event-location-as-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Mia 已是 sang 的主詞，that 的空位自然落在受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時連回先行詞並保留 at the show 的背景。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

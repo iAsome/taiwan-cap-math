@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Four cups are on a shelf. Use the cup that is clean and has a handle. Which cup is clean and has a handle?",
+  "options": [
+    "A clean cup without a handle",
+    "A cup with a handle that is not clean",
+    "Any cup on the shelf",
+    "A clean cup with a handle"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只符合 clean，缺少 handle。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只符合 handle，卻違反 clean。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "on the shelf 只是共同位置，無法唯一辨認。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項同時滿足兩個 and 條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s168-intersect-clean-and-handle-cup-conditions",
+    "reject-partial-and-background-matches"
+  ],
+  "representationType": "conjoined-feature-selection",
+  "misconceptionTargets": [
+    "accept-candidate-matching-one-of-two-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "複合限定資訊不能只抓到其中一半。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項逐項通過 clean 與 has a handle 的檢查。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

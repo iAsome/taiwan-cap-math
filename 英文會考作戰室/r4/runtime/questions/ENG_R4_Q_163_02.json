@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train ___ stops here goes to the city.",
+  "options": [
+    "who",
+    "which",
+    "whose",
+    "why"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "train 不是人物，不用 who。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "which 代替 train 作 stops 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "whose 表所有關係，句中沒有名詞接續。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "why 不用來代替交通工具。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s163-select-which-for-stopping-train",
+    "exclude-possession-and-reason-forms"
+  ],
+  "representationType": "thing-relative-pronoun-cloze",
+  "misconceptionTargets": [
+    "use-who-for-moving-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "關係子句指出停靠此處的那班火車。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合事物先行詞，也能直接接動詞 stops。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

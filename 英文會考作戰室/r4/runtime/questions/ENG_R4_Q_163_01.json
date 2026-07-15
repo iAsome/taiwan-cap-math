@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_163_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The man ___ works at the shop is my uncle.",
+  "options": [
+    "who",
+    "which",
+    "where",
+    "when"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "who 連接人物 man，並作 works 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "which 在基本分類中連接事物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "where 連接地點，不代替人物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "when 用於時間，無法指 uncle。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s163-select-who-for-working-man",
+    "reject-place-time-and-thing-relatives"
+  ],
+  "representationType": "person-relative-pronoun-cloze",
+  "misconceptionTargets": [
+    "choose-relative-word-from-clause-topic"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先行詞 the man 已決定需要人物關係代名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項放入後，who works at the shop 完整限定該男子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

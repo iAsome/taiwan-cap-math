@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S167",
+  "subject": "english",
+  "unitId": "ENG_R4_U24",
+  "skillId": "ENG_R4_S167",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S166"
+  ],
+  "objectives": [
+    "找出兩句中的共同名詞並合併成關係子句。",
+    "保留原句的時態、否定與人物角色，不加入新意思。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S167_SEC_01",
+      "title": "先找兩句共同指向的人或物",
+      "content": "I know the boy. He won the race. 兩句的 the boy 與 He 指同一人，可合成 I know the boy who won the race。共同名詞成為先行詞，第二句代名詞改為關係代名詞。"
+    },
+    {
+      "id": "ENG_R4_L_S167_SEC_02",
+      "title": "共同名詞作受詞時留下受詞空位",
+      "content": "This is the book. Amy bought it yesterday. 合成 This is the book that Amy bought yesterday。Amy 保留為 bought 的主詞，it 所代表的 book 改由 that 連回。"
+    },
+    {
+      "id": "ENG_R4_L_S167_SEC_03",
+      "title": "合併不得改變原本事件關係",
+      "content": "The girl is Nora. She called Ben. 可合成 The girl who called Ben is Nora，不能改成 the girl who Ben called，因為後者交換了打電話的人與接電話的人。"
+    },
+    {
+      "id": "ENG_R4_L_S167_SEC_04",
+      "title": "時間、否定與數量都要保留",
+      "content": "I met two students. They did not join the game. 合併時仍需保留 two、did not 與過去時態：I met two students who did not join the game。關係子句不是刪減重要條件的理由。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S167_EX_01",
+      "prompt": "I thanked the nurse. She helped my father. Join the ideas without changing who helped.",
+      "steps": [
+        "確認 She 指 the nurse。",
+        "讓 who 代替 She 作 helped 的主詞。",
+        "把子句放在 nurse 後。"
+      ],
+      "answer": "I thanked the nurse who helped my father.",
+      "why": "nurse 與 She 是同一人，而且她執行 helped，所以用 who 作子句主詞。合併後父親仍是受到幫助的人，角色沒有交換。"
+    },
+    {
+      "id": "ENG_R4_L_S167_EX_02",
+      "prompt": "The movie was exciting. We watched it last night. Join the ideas.",
+      "steps": [
+        "確認 it 指 the movie。",
+        "保留 we 作 watched 的主詞。",
+        "用 that 取代受詞 it。"
+      ],
+      "answer": "The movie that we watched last night was exciting.",
+      "why": "we 是觀看者，movie 是被看的對象，所以 that 在 we watched 後填補受詞。last night 和 exciting 都保留，沒有把電影寫成觀看者。"
+    },
+    {
+      "id": "ENG_R4_L_S167_EX_03",
+      "prompt": "The students are from Tainan. They won the game yesterday. Join the ideas.",
+      "steps": [
+        "把 They 連回 the students。",
+        "使用 who 作 won 的主詞。",
+        "保留 yesterday 與複數 are。"
+      ],
+      "answer": "The students who won the game yesterday are from Tainan.",
+      "why": "who 代替複數 students 執行 won，yesterday 仍限定獲勝時間。主要句保留 are from Tainan，沒有把地點誤接到比賽上。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "合併兩句時只要把 who 放在任意兩句中間。",
+      "whyWrong": "關係子句必須緊接共同名詞，且 who 要占正確角色。",
+      "correction": "先找共同指涉，再依第二句主受詞安排詞序。"
+    },
+    {
+      "belief": "第二句的人稱代名詞與關係代名詞要一起保留。",
+      "whyWrong": "兩者若指同一先行詞會造成角色重複。",
+      "correction": "用關係代名詞取代共同名詞或代名詞，不並列兩者。"
+    },
+    {
+      "belief": "合併後可省略原句的 not、時間或數量。",
+      "whyWrong": "這些資訊會改變事件範圍與真假。",
+      "correction": "完成句型後逐項核對原本條件是否都保留。"
+    },
+    {
+      "belief": "主動與受動角色在合併時可以互換。",
+      "whyWrong": "交換角色會形成另一個事件。",
+      "correction": "還原兩個原句，檢查誰做事、誰承受仍相同。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "I know the girl. She sings here. 合併後 who 取代誰？",
+      "answer": "She，也就是 the girl",
+      "reason": "girl 是 sings 的執行者。"
+    },
+    {
+      "prompt": "This is the cake. Mia made it. 合併時保留 Mia 嗎？",
+      "answer": "保留",
+      "reason": "Mia 是 made 的主詞，it 才由 that 取代。"
+    },
+    {
+      "prompt": "兩句都有 yesterday，合併後可任意刪除嗎？",
+      "answer": "不可以",
+      "reason": "時間若屬必要原意就必須保留。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

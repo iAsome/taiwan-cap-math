@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The dog that it follows me lives next door. Which sentence takes out the repeated subject without changing who follows and who is followed?",
+  "options": [
+    "The dog it follows me lives next door.",
+    "That the dog follows me lives next door.",
+    "The dog that me follows lives next door.",
+    "The dog that follows me lives next door."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項缺少關係連接且 it 角色不明。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項沒有正確先行詞結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把 me 放成動作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "that 代替 dog 作 follows 的唯一主詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s166-repair-dog-that-it-follows",
+    "maintain-follower-recipient-and-home-location"
+  ],
+  "representationType": "thing-subject-relative-sentence-repair",
+  "misconceptionTargets": [
+    "repair-duplicate-by-role-reversal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "dog 是跟隨者，me 是被跟隨的人，不能為刪重複而交換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只移除多餘 it，並保留 next door。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora thanked the nurse who helped her. Who helped Nora?",
+  "options": [
+    "Nora",
+    "No person",
+    "A doctor",
+    "The nurse"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora 執行 thanked，並由 her 接受 help。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "who helped 明確指出有人提供幫助。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "doctor 沒有出現在句子中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "who 緊接 the nurse，所以護士幫助 Nora。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s162-resolve-nurse-as-helper-of-nora",
+    "separate-thanking-agent-from-helping-agent"
+  ],
+  "representationType": "cross-clause-agent-resolution",
+  "misconceptionTargets": [
+    "carry-main-subject-into-relative-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主要句與關係子句有不同動作者，不能只看第一個人名。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 nurse 到 Nora 的幫助方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

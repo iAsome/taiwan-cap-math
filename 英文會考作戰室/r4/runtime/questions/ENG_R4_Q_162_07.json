@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia bought a book that tells a story about a young cook. What tells the story?",
+  "options": [
+    "Mia",
+    "The cook",
+    "The book",
+    "The shop"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Mia 買書，但 tells 的主詞由 that 代替。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cook 是故事中的人物，不是講述媒介。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "that 連回 book，所以書承載故事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "shop 沒有出現在句子中。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s162-link-story-telling-to-book-not-cook",
+    "resist-content-noun-attachment"
+  ],
+  "representationType": "nested-content-antecedent-analysis",
+  "misconceptionTargets": [
+    "mistake-story-character-for-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "about a young cook 位於故事內容內，不能向後搶走 that 的連結。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項能合理執行 tells，並與關係代名詞位置相鄰。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I returned the book ___ I borrowed yesterday.",
+  "options": [
+    "it",
+    "that",
+    "there",
+    "then"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 會缺少關係連接，且重複 book。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "that 代替 book 作 borrowed 的受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "there 指地點，不能填入物件空位。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "then 指時間，無法連回 book。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s164-insert-that-for-borrowed-book",
+    "distinguish-object-relative-from-place-time-adverbs"
+  ],
+  "representationType": "that-thing-object-cloze",
+  "misconceptionTargets": [
+    "insert-resumptive-it-instead-of-relative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "I 已是 borrowed 的主詞，空格需要被借的物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項讓 yesterday 保留時間功能，book 保留受詞角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

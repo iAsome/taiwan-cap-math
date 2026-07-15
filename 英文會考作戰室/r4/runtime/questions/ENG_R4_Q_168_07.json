@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A person needs the bus that stops here and goes to the station. Which bus should the person take?",
+  "options": [
+    "The first bus stops here but goes to the park.",
+    "The second bus passes here but does not stop.",
+    "The third bus stops here and goes to the station.",
+    "Every bus on the road."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一班車符合停靠，目的地卻錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二班車經過此地，卻不符合 stops here。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三班車同時符合停靠與車站方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "道路上的公車不一定具備兩條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s168-match-bus-to-stop-and-destination",
+    "eliminate-one-condition-and-unbounded-candidates"
+  ],
+  "representationType": "two-condition-transport-selection",
+  "misconceptionTargets": [
+    "choose-candidate-with-only-one-relative-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "that 子句中的 and 要求候選車輛通過兩項限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不是因順序，而是完整交集。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

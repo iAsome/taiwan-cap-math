@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This is the book. Amy bought it at the school sale. Which sentence keeps the same object and place?",
+  "options": [
+    "This is the book that Amy bought at the school sale.",
+    "This is Amy who the book bought at school.",
+    "The school sale bought the book that is Amy.",
+    "Amy is the book that the school bought."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "that 取代 it，Amy 與 sale 地點都保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項顛倒 Amy 與 book。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "sale 是活動背景，不能買書。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把 Amy 等同於書。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s167-join-book-it-bought-at-sale",
+    "preserve-buyer-object-and-event-place"
+  ],
+  "representationType": "object-relative-with-setting-combination",
+  "misconceptionTargets": [
+    "turn-setting-into-agent-during-join"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "共同項目 the book 與 it 在第二句是受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只進行必要取代，沒有創造出售者身分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

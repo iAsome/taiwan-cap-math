@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I chose the chair. It was near the window and had a red seat. Which sentence keeps all the facts?",
+  "options": [
+    "I chose the window that had a chair and a red seat.",
+    "The chair chose me near the red window.",
+    "I chose the red seat that was a window.",
+    "I chose the chair that was near the window and had a red seat."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 window 誤作選擇目標。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把 chair 寫成選擇者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把 seat 與 window 錯誤等同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "that 取代 It，位置與座面顏色兩項都保留。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s167-combine-chair-it-with-two-identifiers",
+    "retain-conjoined-relative-predicates"
+  ],
+  "representationType": "multi-feature-relative-combination",
+  "misconceptionTargets": [
+    "drop-or-reattach-one-identifying-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "and 連接的兩個條件都屬於同一張 chair。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項沒有省略用來辨認椅子的任一特徵。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

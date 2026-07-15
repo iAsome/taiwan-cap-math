@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Four coats are here. The two coats that are wet are outside. Which sentence says more than the two sentences?",
+  "options": [
+    "Two coats are wet.",
+    "The wet coats are outside.",
+    "There are four coats here.",
+    "Every coat is wet."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the two coats that are wet 明示數量為二。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "主要句說這兩件濕外套在外面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一句交代共有四件外套。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "只有兩件被限定為 wet，不能說四件都濕。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s168-separate-two-wet-coats-from-four-total",
+    "detect-universal-overgeneralization"
+  ],
+  "representationType": "subset-relative-logic",
+  "misconceptionTargets": [
+    "spread-relative-property-to-whole-set"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "關係子句挑出四件中的兩件，而非替全體加特徵。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把子群條件錯誤擴張到所有 coats。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

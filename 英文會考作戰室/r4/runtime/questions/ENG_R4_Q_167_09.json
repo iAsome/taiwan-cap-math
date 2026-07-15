@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_167_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A bus comes at seven. It goes downtown. Which sentence tells both facts?",
+  "options": [
+    "The bus that goes downtown comes at seven.",
+    "Downtown comes at seven on the bus.",
+    "The bus that comes downtown is seven.",
+    "Seven goes downtown by bus."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "that 取代 It，路線與時間都保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "downtown 不是移動或到達的主體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把 seven 寫成 bus 的身分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "數字 seven 不能搭車前往市區。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u24-s167-combine-bus-route-and-arrival-time",
+    "retain-travel-information-for-action"
+  ],
+  "representationType": "transport-information-relative-merge",
+  "misconceptionTargets": [
+    "promote-destination-or-time-to-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "共同項目 bus 與 It 在兩句都作主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項讓讀者同時知道目的地與到站時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

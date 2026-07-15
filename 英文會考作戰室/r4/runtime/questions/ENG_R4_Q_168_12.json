@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_168_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Three keys are in a box. The key that opens the back door has a green star. Nora needs the back door. Which key should she take?",
+  "options": [
+    "Any key without a star",
+    "All three keys",
+    "The first key in the box",
+    "The key with the green star"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有 star 的鑰匙不符合唯一辨識線索。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nora 只需能開後門的一把。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "順序條件未在原文出現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "green star 連到能開 back door 的 key。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u24-s168-chain-back-door-key-to-green-star",
+    "reject-quantity-order-and-opposite-feature"
+  ],
+  "representationType": "cross-sentence-relative-feature-action",
+  "misconceptionTargets": [
+    "fail-to-transfer-identifying-feature-to-task"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先用需要開後門確定功能，再用綠色星號辨認實物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項串接兩句證據，卻沒有假設其他鑰匙用途。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

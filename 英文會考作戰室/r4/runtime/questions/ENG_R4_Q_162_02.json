@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I found the key which opens this box. What opens the box?",
+  "options": [
+    "I",
+    "The key",
+    "The box",
+    "The finding"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 執行 found，不是 opens 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "which 代替 key，因此是鑰匙開箱。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "box 承受 opens，不能開啟自己。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "finding 是動作概念，不是句中物品。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s162-restore-key-as-opens-subject",
+    "separate-main-clause-finder-from-relative-agent"
+  ],
+  "representationType": "thing-antecedent-role-restoration",
+  "misconceptionTargets": [
+    "choose-main-subject-as-relative-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "which opens this box 直接限定 the key。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能放回 opens 前的空位，語法與常識都成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

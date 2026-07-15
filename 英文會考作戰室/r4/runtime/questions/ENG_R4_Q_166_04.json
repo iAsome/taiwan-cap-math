@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_166_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S166"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy who he won the game is Ben. Which sentence uses who without he?",
+  "options": [
+    "The boy he won the game is Ben.",
+    "Who the boy won the game is Ben.",
+    "The boy who the game won is Ben.",
+    "The boy who won the game is Ben."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項刪掉連接詞，he 仍無法形成限定關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項顛倒先行詞與 who 的位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把 game 誤寫成動作者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "who 已代替 boy 作 won 的主詞，不再加 he。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s166-repair-boy-who-he-won",
+    "preserve-boy-agent-and-game-object"
+  ],
+  "representationType": "subject-relative-full-sentence-repair",
+  "misconceptionTargets": [
+    "delete-relative-link-instead-of-duplicate-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "修正只需刪除與 who 同指的 he，其他角色不動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項可還原成 The boy won the game。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

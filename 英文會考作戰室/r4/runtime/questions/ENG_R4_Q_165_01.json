@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_165_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S165"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The boy who found the wallet called us. In 'who found the wallet,' is who the subject or the object?",
+  "options": [
+    "It is the subject.",
+    "It is the object.",
+    "It marks the place.",
+    "It marks the time."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "who 代替 boy，直接執行 found。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wallet 才是 found 的受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "關係子句沒有地點標記功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "who 也不表示時間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u24-s165-classify-who-as-found-subject",
+    "restore-boy-wallet-base-clause"
+  ],
+  "representationType": "relative-subject-function",
+  "misconceptionTargets": [
+    "assume-who-is-object-because-wallet-follows"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "who 後沒有另一個主詞，因此它自己填補主詞空位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項可還原成 The boy found the wallet。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

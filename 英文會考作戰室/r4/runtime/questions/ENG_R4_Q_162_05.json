@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_162_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bag that has a red star is under the chair. What has a red star?",
+  "options": [
+    "The bag",
+    "The chair",
+    "The floor",
+    "The room"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "that 代替 bag 作 has 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "chair 只出現在 under 後，表示袋子位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "floor 沒有被提及。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "room 也不是關係子句描述的物品。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s162-distinguish-starred-bag-from-chair-location",
+    "filter-under-phrase-from-antecedent"
+  ],
+  "representationType": "antecedent-versus-location-object",
+  "misconceptionTargets": [
+    "choose-nearby-location-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先把 under the chair 當位置背景移開，關係子句便清楚指向 bag。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合 that 前的位置與星號特徵。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

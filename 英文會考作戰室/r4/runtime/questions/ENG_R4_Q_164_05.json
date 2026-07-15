@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_164_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The student that sits by the door is Ben. What does that stand for?",
+  "options": [
+    "The student",
+    "The door",
+    "Ben's chair",
+    "The class"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "that 緊接 student，並作 sits 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "door 是 by 後的地點參照。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "chair 沒有出現在句中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "class 也沒有文本連結。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u24-s164-map-subject-that-to-student",
+    "exclude-door-and-unmentioned-nouns"
+  ],
+  "representationType": "that-person-antecedent-resolution",
+  "misconceptionTargets": [
+    "assume-that-must-refer-to-thing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把 the student 放回 sits by the door，會得到完整敘述。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項證明人物先行詞在基本限定句也可使用 that。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
