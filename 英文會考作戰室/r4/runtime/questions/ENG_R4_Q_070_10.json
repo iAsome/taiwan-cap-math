@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora put the cake in the oven. Twenty minutes later, she took it out. What does “later” tell us?",
+  "options": [
+    "The two actions happened every day.",
+    "Taking the cake out happened after putting it in.",
+    "The cake was never in the oven.",
+    "Taking it out happened first."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子描述一次過去過程，不是每日習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "later 明確把 took it out 放在 put it in 之後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一句已說蛋糕放進烤箱。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這一項顛倒 later 的順序。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-later-in-oven-process",
+    "order-put-in-and-took-out"
+  ],
+  "representationType": "connector-meaning-in-context",
+  "misconceptionTargets": [
+    "read-later-as-earlier"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Twenty minutes later 表示第二個動作比第一個晚二十分鐘。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留放入、取出的合理順序；其餘項目改成習慣、否定事實或顛倒時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

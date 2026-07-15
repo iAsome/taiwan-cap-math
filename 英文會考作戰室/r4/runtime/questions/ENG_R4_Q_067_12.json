@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Why didn't Sam come to the meeting? B: He did not ___ the new time.",
+  "options": [
+    "knew",
+    "knows",
+    "knowing",
+    "know"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "knew 與 did not 形成雙重過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "knows 是現在第三人稱形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "knowing 不能直接接 did not。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "know 是 did not 後的原形。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "complete-reason-dialogue-with-know",
+    "coordinate-two-did-negatives"
+  ],
+  "representationType": "past-negative-dialogue",
+  "misconceptionTargets": [
+    "use-knew-after-did-not"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "B 說明 Sam 沒來的原因，did not 後應接 know。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使回答成為完整過去否定句，也和問句中的 didn't come 保持同一時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

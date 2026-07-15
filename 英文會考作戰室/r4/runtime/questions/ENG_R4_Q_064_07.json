@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Yesterday, Tom ___ his key, so he walked back home.",
+  "options": [
+    "loses",
+    "is losing",
+    "lost",
+    "will lose"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "loses 表現在習慣，不能說明昨天走回家的原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is losing 表目前進行，時間與 walked 不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "lost 是過去式，可作 walked back home 的先前原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will lose 是未來式，不能造成已發生的結果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-past-cause-of-walked-home",
+    "align-lost-with-past-result"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "leave-cause-in-present-tense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Yesterday 和 walked 共同建立過去情境，遺失鑰匙也須是過去事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "lost 能形成合理因果：先遺失鑰匙，再走回家；其餘時態無法和結果對齊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

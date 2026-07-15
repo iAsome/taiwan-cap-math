@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The shop ___ at nine but ___ early because of the rain.",
+  "options": [
+    "opens / closed",
+    "opened / closed",
+    "is opening / closes",
+    "opened / is closing"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "opens 把第一件事變成現在習慣，與單次 closed 不一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "opened 與 closed 都把同一天的兩件事放在過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is opening 與 closes 都是現在時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is closing 把第二件事改成目前進行。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "coordinate-two-shop-actions-in-past",
+    "select-consistent-open-close-pair"
+  ],
+  "representationType": "paired-verb-cloze",
+  "misconceptionTargets": [
+    "mix-present-and-past-in-one-report"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "but 連接同一天的開門與提早關門，兩件事都已完成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二組讓兩個主要動詞共享過去背景；其他組至少有一個動詞落在現在時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

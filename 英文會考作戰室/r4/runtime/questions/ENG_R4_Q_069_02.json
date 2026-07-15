@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_069_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S069"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ this card two days ago.",
+  "options": [
+    "find",
+    "found",
+    "finds",
+    "am finding"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "find 是原形，沒有標示 ago 的過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "found 是 find 的過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "finds 是現在第三人稱形式且不配 I。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "am finding 表目前正在發現。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-two-days-ago-anchor",
+    "select-found-for-card-discovery"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-ago-as-duration-in-progress"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "two days ago 從現在往前定位兩天，事件已完成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項 found 同時符合不規則變化與過去時間；其他選項不符合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

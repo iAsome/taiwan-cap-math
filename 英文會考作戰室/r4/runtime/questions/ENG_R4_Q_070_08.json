@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "At first, the road was dry. Later, heavy rain covered it with water. What changed?",
+  "options": [
+    "The road changed from wet to dry.",
+    "The road was wet before the rain.",
+    "The road stayed dry the whole time.",
+    "The road changed from dry to wet."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這一項把乾濕變化顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "At first 已明說道路是乾的。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Later 的雨水表示路面不再保持乾燥。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "At first 與 Later 對比出乾到濕的變化。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-at-first-and-later-road-states",
+    "infer-dry-to-wet-change"
+  ],
+  "representationType": "state-change-over-time",
+  "misconceptionTargets": [
+    "ignore-later-state-update"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "At first 建立乾燥狀態，Later 的大雨使路面覆水。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項精確概括前後變化；前三項與地點或狀態證據衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

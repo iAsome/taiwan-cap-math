@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S069",
+  "subject": "english",
+  "unitId": "ENG_R4_U10",
+  "skillId": "ENG_R4_S069",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S068"
+  ],
+  "objectives": [
+    "辨認 yesterday、ago、last 與明確過去年份等時間線索。",
+    "結合說話時間和上下文，避免把每個含 today 的句子都判成現在式。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S069_SEC_01",
+      "title": "常見的過去時間線索",
+      "content": "yesterday、last night、two days ago 與 in 2020 都把事件放在已結束的時間。ago 從現在往前計算，last 加一段時間表示上一個已結束的期間。這些線索通常與過去簡單式搭配。"
+    },
+    {
+      "id": "ENG_R4_L_S069_SEC_02",
+      "title": "this morning 要看說話時刻",
+      "content": "若現在已是 evening，this morning 已經結束，可說 I met Ben this morning。若上午仍在進行，句意可能不同。時間片語本身不總是足夠，還要看說話時刻與事件是否完成。"
+    },
+    {
+      "id": "ENG_R4_L_S069_SEC_03",
+      "title": "過去開始不代表現在一定結束",
+      "content": "The library opened in 2020 中，opened 是過去事件；圖書館現在仍可營運。過去式只說明開幕發生在過去，不自動表示開幕造成的狀態已消失。"
+    },
+    {
+      "id": "ENG_R4_L_S069_SEC_04",
+      "title": "日記與相對時間",
+      "content": "日記中的 yesterday 要以日記日期為基準。若一篇日記標示 Monday，文中 yesterday 指 Sunday，不是讀者閱讀日記的前一天。先找敘述立足點，再換算相對時間。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S069_EX_01",
+      "prompt": "My aunt ___ here five years ago. (lives / lived / is living)",
+      "steps": [
+        "辨認 five years ago。",
+        "ago 表示從現在往前的已結束時間。",
+        "使用過去式 lived。"
+      ],
+      "answer": "lived",
+      "why": "five years ago 明確指向過去，所以 live 要改成 lived。lives 表現在習慣，is living 表目前一段時間，兩者都不配 ago。"
+    },
+    {
+      "id": "ENG_R4_L_S069_EX_02",
+      "prompt": "It is evening now. I ___ Nora this morning. (meet / met / am meeting)",
+      "steps": [
+        "現在是 evening。",
+        "this morning 已結束。",
+        "用 met 表示上午已完成的見面。"
+      ],
+      "answer": "met",
+      "why": "說話時已到 evening，今天上午屬於已結束的時間，因此選 met。不能只看到 this 就誤以為一定使用現在式。"
+    },
+    {
+      "id": "ENG_R4_L_S069_EX_03",
+      "prompt": "A Monday diary says, “Yesterday we climbed the hill.” When did they climb it?",
+      "steps": [
+        "找出日記日期 Monday。",
+        "把 yesterday 往前推一天。",
+        "得到 Sunday。"
+      ],
+      "answer": "Sunday",
+      "why": "yesterday 的基準是日記中的 Monday，所以所指日期是 Sunday。不能以今天閱讀日記的日期另行計算。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "句中只要有 this，就一定要使用現在式。",
+      "whyWrong": "this morning 在晚上回顧時已是完成的過去時段。",
+      "correction": "判斷整段時間是否已結束，而不是只看單一指示詞。"
+    },
+    {
+      "belief": "ago 前面的數字越大，才越需要過去式。",
+      "whyWrong": "one minute ago 和 ten years ago 都表示已過去的時間。",
+      "correction": "看到 ago 就從說話時刻往前定位，不以距離長短決定。"
+    },
+    {
+      "belief": "opened in 2020 表示該地點現在一定已關閉。",
+      "whyWrong": "opened 只描述開幕事件，不能推出目前營運狀態。",
+      "correction": "把過去發生的事件與現在是否持續分開判讀。"
+    },
+    {
+      "belief": "日記中的 yesterday 永遠是讀者今天的前一天。",
+      "whyWrong": "相對時間要以文本建立的日期或說話時刻為基準。",
+      "correction": "先找到日記日期，再計算 yesterday、today 與 tomorrow。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Which time words show a finished past time: now or last Friday?",
+      "answer": "last Friday",
+      "reason": "last Friday 是已結束的上一個星期五。"
+    },
+    {
+      "prompt": "two hours ago 應從哪個時刻往前算？",
+      "answer": "now",
+      "reason": "ago 以說話當下為基準往前計算。"
+    },
+    {
+      "prompt": "A store opened in 2018. 能否只憑這句判定商店已關閉？",
+      "answer": "no",
+      "reason": "句子只提供開幕時間，沒有目前是否營業的資訊。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

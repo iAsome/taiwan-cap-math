@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We did not ___ the meeting time.",
+  "options": [
+    "forget",
+    "forgot",
+    "forgets",
+    "forgotten"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "forget 是 did not 後的原形。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "forgot 會和 did 形成雙重過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "forgets 是現在第三人稱形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "forgotten 不能直接接在 did not 後。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-forget-after-negative-did",
+    "differentiate-forget-forgot-forgotten"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-forgot-because-time-is-past"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "did not 已承擔否定與過去，後面只需原形 forget。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留原意與正確結構；其他項目都不是助動詞後的原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

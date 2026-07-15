@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ the museum last Saturday.",
+  "options": [
+    "visit",
+    "visits",
+    "are visiting",
+    "visited"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "visit 是原形，未標示過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "visits 不配主詞 We，且是現在式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are visiting 表示正在參觀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "visited 表示上星期六已完成參觀。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-last-saturday-to-completed-visit",
+    "reject-present-visit-forms"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-progressive-for-group-activity"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "last Saturday 是已結束的時間，主詞 We 的肯定過去句使用 visited。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項在時態與主詞上都成立；其他形式分別缺少過去、主詞不合或表示現在進行。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S065",
+  "subject": "english",
+  "unitId": "ENG_R4_U10",
+  "skillId": "ENG_R4_S065",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S064"
+  ],
+  "objectives": [
+    "依動詞字尾形成規則動詞的過去式。",
+    "區分直接加 -ed、加 -d、改 y 為 ied 與重複字尾再加 -ed。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S065_SEC_01",
+      "title": "多數規則動詞加 -ed",
+      "content": "多數規則動詞在字尾加 -ed，例如 wash → washed、visit → visited。若原形已以 e 結尾，只加 -d，例如 live → lived。形成過去式後仍要確認拼字，不能把 live 寫成 liveed。"
+    },
+    {
+      "id": "ENG_R4_L_S065_SEC_02",
+      "title": "子音加 y 與母音加 y",
+      "content": "動詞以子音字母加 y 結尾時，把 y 改為 i 再加 -ed，例如 study → studied、carry → carried。若 y 前是母音，則保留 y 直接加 -ed，例如 play → played、enjoy → enjoyed。"
+    },
+    {
+      "id": "ENG_R4_L_S065_SEC_03",
+      "title": "短母音後的字尾重複",
+      "content": "某些短而重讀的動詞以單一母音加單一子音結尾時，要重複最後一個子音再加 -ed，例如 stop → stopped、plan → planned。字尾是 w、x 或 y 時通常不重複，例如 snowed、fixed、played。"
+    },
+    {
+      "id": "ENG_R4_L_S065_SEC_04",
+      "title": "拼字規則不能取代句意判斷",
+      "content": "先確認句子需要過去式，再套用拼字規則。若句子有 did 或 did not，後面的動詞要回到原形，不寫 did studied。規則動詞的拼字與助動詞結構是兩個不同層次，必須分開處理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S065_EX_01",
+      "prompt": "We ___ near the station last year. (live / lived / liveed)",
+      "steps": [
+        "last year 要求過去式。",
+        "live 已以 e 結尾。",
+        "只加 -d，得到 lived。"
+      ],
+      "answer": "lived",
+      "why": "live 的字尾已有 e，所以過去式只補 d，形成 lived。live 沒有標示過去，liveed 則重複加入不需要的 e。"
+    },
+    {
+      "id": "ENG_R4_L_S065_EX_02",
+      "prompt": "Nora ___ the box into the room yesterday. (carryed / carried / carrid)",
+      "steps": [
+        "確認 carry 以子音加 y 結尾。",
+        "把 y 改成 i。",
+        "再加 -ed，形成 carried。"
+      ],
+      "answer": "carried",
+      "why": "carry 的 y 前是子音 r，因此要把 y 改為 i 再加 -ed，寫成 carried。carryed 沒有改 y，carrid 則少了 e。"
+    },
+    {
+      "id": "ENG_R4_L_S065_EX_03",
+      "prompt": "The bus ___ at the corner. (stoped / stopped / stopied)",
+      "steps": [
+        "stop 是短母音加單一子音結尾。",
+        "重複最後的 p。",
+        "加 -ed，得到 stopped。"
+      ],
+      "answer": "stopped",
+      "why": "stop 的字尾符合重複子音的條件，所以要寫 stopped。stoped 少了一個 p，stopied 則誤用了子音加 y 的規則。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有規則動詞只要在原形後面直接接 ed。",
+      "whyWrong": "字尾 e、子音加 y，以及部分短母音字尾都有不同拼法。",
+      "correction": "先辨認原形最後幾個字母，再選擇對應的規則。"
+    },
+    {
+      "belief": "只要動詞以 y 結尾，就把 y 改成 ied。",
+      "whyWrong": "play、enjoy 的 y 前是母音，必須保留 y。",
+      "correction": "檢查 y 前一個字母；子音才改 ied，母音則直接加 ed。"
+    },
+    {
+      "belief": "任何短動詞都要重複最後一個字母再加 ed。",
+      "whyWrong": "需要同時符合適當的母音與子音字尾，w、x、y 也通常不重複。",
+      "correction": "不要只看字長，要檢查實際字尾結構。"
+    },
+    {
+      "belief": "did 後面仍要保留規則動詞的 -ed。",
+      "whyWrong": "did 已承擔過去時間，後面的主要動詞必須使用原形。",
+      "correction": "問句與否定句看到 did，就把主要動詞還原。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "study 的過去式是什麼？",
+      "answer": "studied",
+      "reason": "y 前是子音 d，因此改 y 為 ied。"
+    },
+    {
+      "prompt": "play 的過去式是否為 plaied？",
+      "answer": "no",
+      "reason": "y 前是母音 a，應保留 y 寫 played。"
+    },
+    {
+      "prompt": "plan 的過去式為什麼有兩個 n？",
+      "answer": "planned",
+      "reason": "plan 的字尾符合重複最後子音再加 ed 的條件。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

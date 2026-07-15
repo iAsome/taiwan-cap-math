@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ the team win the game yesterday?",
+  "options": [
+    "Does",
+    "Was",
+    "Is",
+    "Did"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Does 是現在式，與 yesterday 不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Was 後不能直接接 win。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Is 也是現在 be 動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Did 配合 yesterday，後接原形 win。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-did-for-team-win-question",
+    "reject-be-before-base-win"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-was-as-universal-past-helper"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "win 是一般動詞，且比賽在昨天，因此問句以 Did 開頭。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 Did the team win...?；其他選項不是正確的過去一般問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

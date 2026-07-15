@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_065_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The club ___ a clean-up day last month.",
+  "options": [
+    "planed",
+    "plans",
+    "planned",
+    "planning"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "planed 少了一個 n，且可能被讀成另一個字。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "plans 是現在簡單式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "planned 重複 n 再加 -ed，拼字正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "planning 是 V-ing，不能單獨作過去謂語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "double-final-n-in-planned",
+    "apply-spelling-to-club-plan-event"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "write-planed-for-planned"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "plan 的字尾符合重複最後子音的條件，所以形成 planned。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "last month 要求過去式，只有第三項在時態與拼字上都成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

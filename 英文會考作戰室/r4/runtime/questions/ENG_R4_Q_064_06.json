@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sara cooked dinner and then washed the dishes. Which event happened second?",
+  "options": [
+    "Sara cooked dinner.",
+    "Sara washed the dishes.",
+    "Sara bought the dishes.",
+    "Sara left before dinner."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cooked dinner 出現在 then 之前，是第一件事。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "then 把 washed the dishes 放在第二個時間點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有買餐具。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文中沒有離開或 before 的資訊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "order-cooked-and-washed-events",
+    "use-then-to-identify-second-action"
+  ],
+  "representationType": "two-event-order-question",
+  "misconceptionTargets": [
+    "select-first-mentioned-event-as-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "then 明確推進事件，煮完晚餐後才洗餐具。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項直接對應 then 後的過去事件；第三、四項都加入原句沒有的內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

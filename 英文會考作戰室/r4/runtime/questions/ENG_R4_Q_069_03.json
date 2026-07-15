@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_069_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S069"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My family ___ to Tainan last month.",
+  "options": [
+    "moves",
+    "is moving",
+    "moved",
+    "will move"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "moves 表現在習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is moving 表目前進行。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "moved 表上個月已完成搬遷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will move 表未來計畫。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "locate-family-move-in-last-month",
+    "choose-completed-moved-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "read-last-month-as-current-plan"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "last month 是已結束的上一個月，因此使用 moved。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項能表達單一完成事件；其他選項把搬遷放在現在或未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

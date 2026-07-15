@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_065_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Our class ___ the science room twice last week.",
+  "options": [
+    "visitted",
+    "visits",
+    "visiting",
+    "visited"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "visitted 不必要地重複 t。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "visits 是現在習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "visiting 需搭配 be，且不是過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "visited 直接加 -ed，拼字正確。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "avoid-overdoubling-t-in-visited",
+    "select-visited-for-last-week"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "double-final-consonant-in-every-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "visit 不屬於 stop、plan 那類需要重複最後子音的短動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "last week 要求過去式 visited；第一項正是過度套用重複規則的錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

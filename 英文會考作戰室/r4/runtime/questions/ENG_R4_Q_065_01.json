@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_065_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The children ___ outside after lunch yesterday.",
+  "options": [
+    "played",
+    "plaied",
+    "playd",
+    "playing"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "played 保留 y 並加 -ed，拼字正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "plaied 誤把母音後的 y 改成 i。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "playd 少了 e。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "playing 是 V-ing，不是過去式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "apply-vowel-y-played-spelling",
+    "reject-plaied-and-playd"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "change-every-final-y-to-i"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "play 的 y 前是母音 a，所以直接加 -ed 成為 played。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只有第一項同時符合 yesterday 的過去時間與 play 的拼字規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

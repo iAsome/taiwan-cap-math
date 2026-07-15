@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus arrived, and the doors opened. What does the sentence report?",
+  "options": [
+    "Two completed events in the past",
+    "One daily habit",
+    "Two actions happening now",
+    "One plan for tomorrow"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "arrived 和 opened 都是過去式，表示兩件完成事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有 every day 等習慣線索。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "目前動作通常需要 are arriving、are opening 等形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有 will 或 tomorrow。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "count-past-events-across-coordination",
+    "classify-arrived-opened-report"
+  ],
+  "representationType": "event-structure-classification",
+  "misconceptionTargets": [
+    "read-and-as-single-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩個子句各有過去式動詞，先報告公車抵達，再報告車門打開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只有第一項能同時解釋 arrived 與 opened；其餘項目改變了時間或事件數量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

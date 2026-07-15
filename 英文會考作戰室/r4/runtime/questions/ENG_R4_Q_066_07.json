@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher ___ us two minutes to finish.",
+  "options": [
+    "give",
+    "gived",
+    "gave",
+    "given"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "give 是原形，未標示過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "gived 不是標準形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "gave 是 give 的過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "given 需要搭配 have 或 be，不能在此單獨作謂語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-gave-in-time-allocation",
+    "separate-gave-from-given"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-past-participle-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "老師給時間是已完成的動作，give 的過去式為 gave。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項可直接形成 gave us two minutes；其餘項目不是正確的單純過去形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

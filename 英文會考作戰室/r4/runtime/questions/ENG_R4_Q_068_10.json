@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_068_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy and I ___ ready before the doors opened.",
+  "options": [
+    "was",
+    "were",
+    "am",
+    "did"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "was 不配 Amy and I 的複數主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "were 配合兩人與過去狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "am 只配現在式的 I。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did 不能直接接形容詞 ready。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "treat-amy-and-i-as-plural",
+    "align-were-ready-with-opened"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-was-because-i-alone-uses-was"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "and 連接 Amy 與 I，主詞包含兩人，因此使用 were。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "before the doors opened 也建立過去背景，第二項同時符合數量和時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

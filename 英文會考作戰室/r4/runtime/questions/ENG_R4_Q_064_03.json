@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben visited his aunt on Sunday. When did the visit happen?",
+  "options": [
+    "Every Sunday",
+    "Right now",
+    "On Sunday",
+    "Next Sunday"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Every Sunday 會把事件解讀成固定習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Right now 與過去式 visited 不符。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "On Sunday 直接重述文中的完成時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Next Sunday 指未來，文中沒有此意。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "extract-visit-time-from-completed-sentence",
+    "separate-single-event-from-habit"
+  ],
+  "representationType": "time-detail-question",
+  "misconceptionTargets": [
+    "turn-one-sunday-into-weekly-habit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "visited 是過去式，on Sunday 明確提供該次探訪的時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目問這一次探訪何時發生，第三項有直接文本證據且不擴大成習慣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

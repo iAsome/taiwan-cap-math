@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A message says, “I read your note and came right away.” Which base forms match the two past words?",
+  "options": [
+    "read / came",
+    "readed / come",
+    "write / go",
+    "read / come"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "came 本身是過去式，不是所問的原形。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "readed 不存在，雖然 come 是原形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "write 和 go 改變了原句兩個動作的意思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "read 的原形同形，came 的原形是 come。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "reverse-map-read-and-came-to-base",
+    "handle-unchanged-read-spelling"
+  ],
+  "representationType": "irregular-base-form-pair",
+  "misconceptionTargets": [
+    "assume-every-past-form-changes-spelling"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第一個 read 的原形仍拼作 read，第二個 came 對應 come。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四組完整還原兩個動詞且不改意思；其他組保留過去式、使用假形式或換詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

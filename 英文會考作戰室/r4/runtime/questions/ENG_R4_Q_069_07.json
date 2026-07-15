@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_069_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S069"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "It is evening now. I met Grace ___.",
+  "options": [
+    "tomorrow morning",
+    "every morning",
+    "this morning",
+    "right now"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tomorrow morning 是未來。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "every morning 表重複習慣，與 met 不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "this morning 在 evening 回顧時已結束。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "right now 指目前，與過去式 met 不合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-this-morning-from-evening-viewpoint",
+    "match-met-to-ended-day-part"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "assume-this-always-means-present"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "現在已是 evening，所以同一天的 morning 已成為過去時段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項能和 met 搭配；其他片語分別指未來、習慣或現在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

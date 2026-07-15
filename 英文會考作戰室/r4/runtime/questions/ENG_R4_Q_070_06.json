@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "After Grace locked the door, she checked her bag. Which action followed the locking?",
+  "options": [
+    "She opened the door.",
+    "She checked her bag.",
+    "She put the key in her bag.",
+    "She packed before locking."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "文中沒有再開門。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "主句 checked her bag 發生在鎖門之後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有說她把鑰匙放進袋子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文中沒有提到打包。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-following-action-after-locking",
+    "distinguish-main-clause-from-after-clause"
+  ],
+  "representationType": "following-action-question",
+  "misconceptionTargets": [
+    "treat-after-clause-as-second-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "After Grace locked the door 建立先行事件，後續是 she checked her bag。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項回答 followed the locking；其他選項都不是原句提供的後續動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

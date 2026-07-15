@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_069_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S069"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "When I was seven, I ___ to ride a bike.",
+  "options": [
+    "learn",
+    "am learning",
+    "learns",
+    "learned"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "learn 是原形，沒有配合 was seven。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "am learning 是現在進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "learns 是現在第三人稱且不配 I。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "learned 表示七歲時完成學習。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "use-age-clause-as-past-anchor",
+    "select-learned-for-childhood-event"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "focus-on-present-ability-instead-of-learning-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "When I was seven 建立明確過去人生階段，主要動作使用 learned。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時配合主詞 I 與過去背景；其他形式均為非過去。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ enough water for the long walk, so nobody was thirsty.",
+  "options": [
+    "have",
+    "had",
+    "haved",
+    "having"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "have 是現在原形，與 was 不在同一過去背景。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "had 是 have 的過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "haved 不是標準形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "having 不能單獨作過去謂語。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "connect-had-water-to-past-outcome",
+    "reject-haved-in-possession-context"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "regularize-have"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "was thirsty 建立過去情境，當時擁有足夠水要用 had。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項也能合理說明沒有人口渴的原因；其他項目不是正確過去形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_065_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Last year, we ___ near the station.",
+  "options": [
+    "live",
+    "lived",
+    "liveed",
+    "living"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "live 是原形，未標示 last year。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "lived 在字尾 e 後加 d，正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "liveed 多加了一個 e。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "living 需搭配 be 才能形成進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "form-lived-from-final-e",
+    "exclude-liveed-overaddition"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "append-full-ed-after-final-e"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "live 已以 e 結尾，過去式只需加 d。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項拼字與 last year 相符；第三項正是常見的重複 e 錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

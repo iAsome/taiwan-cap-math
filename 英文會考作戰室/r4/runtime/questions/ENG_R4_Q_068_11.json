@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_068_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "When we looked, the box of old photos ___ under the bed.",
+  "options": [
+    "were",
+    "are",
+    "was",
+    "did"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "were 誤把 photos 當成主詞核心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are 是現在式，也不配單數核心 box。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "was 配合單數核心 box。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did 不能用來連接 box 與 under the bed。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "identify-box-as-head-of-subject",
+    "resist-nearest-noun-agreement"
+  ],
+  "representationType": "complex-subject-agreement",
+  "misconceptionTargets": [
+    "agree-with-noun-inside-of-phrase"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "of old photos 只是修飾 box，真正主詞仍是單數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項依核心主詞選 was；若只看最近的 photos 才會誤選 were。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

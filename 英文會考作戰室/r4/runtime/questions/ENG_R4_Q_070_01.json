@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia packed her bag before she left home. What happened first?",
+  "options": [
+    "Mia packed her bag.",
+    "Mia left home.",
+    "Mia came home.",
+    "Mia opened her bag."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "before 表示打包發生在離家之前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "left home 是第二件事。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有回家。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文中沒有打開袋子。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-packed-as-first-before-left",
+    "exclude-unstated-home-actions"
+  ],
+  "representationType": "before-order-detail",
+  "misconceptionTargets": [
+    "choose-left-because-it-is-nearer-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "packed her bag 位於 before 前，明確是較早事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項直接重述已知順序，第三、四項則加入原句沒有的動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

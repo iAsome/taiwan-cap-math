@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Last night, the lights ___ out at ten.",
+  "options": [
+    "go",
+    "went",
+    "goes",
+    "are going"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "go 是原形，不能單獨表示昨晚的完成事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "went 是 go 的過去式，符合 last night。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "goes 是現在簡單式第三人稱形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are going 表示目前正在進行。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-last-night-power-event",
+    "retrieve-went-for-go-out"
+  ],
+  "representationType": "past-event-cloze",
+  "misconceptionTargets": [
+    "regularize-go-as-present"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "last night 和 at ten 指向昨晚十點，熄燈事件已完成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "went out 是自然的過去表達；其他選項都沒有正確標示該過去時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

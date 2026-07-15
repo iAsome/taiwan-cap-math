@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_065_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The rain ___, so the workers opened the windows again.",
+  "options": [
+    "stoped",
+    "stopped",
+    "stoppied",
+    "stopping"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "stoped 少重複一個 p。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "stopped 是 stop 的正確過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "stoppied 誤用了 -ied。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "stopping 需搭配 was 才能作進行式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "integrate-stopped-spelling-with-past-result",
+    "reject-stoppied-in-weather-context"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "mix-doubling-and-ied-rules"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "opened 是過去結果，前面的雨停也需是已完成事件 stopped。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不只拼字正確，也能建立雨停後重新開窗的合理因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

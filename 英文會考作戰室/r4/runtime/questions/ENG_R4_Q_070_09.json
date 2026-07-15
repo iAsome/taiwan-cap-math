@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ the map before we ___ the station.",
+  "options": [
+    "checked / left",
+    "left / checked",
+    "check / leave",
+    "are checking / left"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "checked 與 left 都是過去式，且順序符合 before。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此組變成先離站後查地圖，與句型位置不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩個原形沒有標示過去敘事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第一個動詞改成現在進行，時間不一致。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "complete-before-clause-with-two-past-verbs",
+    "preserve-check-then-leave-order"
+  ],
+  "representationType": "ordered-dual-cloze",
+  "misconceptionTargets": [
+    "reverse-verbs-around-before"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "before 連接兩個已完成事件：先查地圖，再離開車站。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一組在時態與語意順序上都一致；其他組顛倒動作或混用時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

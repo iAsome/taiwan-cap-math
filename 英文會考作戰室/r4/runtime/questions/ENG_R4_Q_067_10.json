@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mina bought a book. Which question asks about the thing she bought?",
+  "options": [
+    "Where did Mina buy?",
+    "What did Mina buy?",
+    "What Mina bought?",
+    "Did Mina bought what?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Where 詢問地點，不是所買的物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "What 詢問事物，且字序與動詞形式正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺少 did，字序也不是完整問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did 後保留 bought，且疑問詞位置錯誤。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-object-question-from-bought-book",
+    "choose-what-over-where"
+  ],
+  "representationType": "information-gap-question",
+  "misconceptionTargets": [
+    "omit-did-in-object-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要問受詞 a book，因此用 What did Mina buy?。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項精確指定事物並把 bought 還原成 buy；其他項目問錯資訊或結構錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

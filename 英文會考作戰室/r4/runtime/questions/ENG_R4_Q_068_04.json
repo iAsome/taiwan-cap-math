@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_068_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You ___ right about the meeting time.",
+  "options": [
+    "was",
+    "did",
+    "are",
+    "were"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "was 不與 you 搭配。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 不能直接接形容詞 right。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are 是現在式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "were 是 you 的過去 be 動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "apply-you-were-fixed-pair",
+    "reject-was-for-singular-you"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-was-when-you-means-one-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "you 無論指一人或多人，過去陳述都搭配 were。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 You were right；其餘項目為錯誤搭配、錯誤結構或現在時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

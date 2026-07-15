@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A strong wind ___ the door close, but it did not break the glass.",
+  "options": [
+    "made",
+    "maked",
+    "makes",
+    "making"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "made 是 make 的過去式，表示風吹得門關上。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "maked 不是標準形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "makes 是現在式，與 did not 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "making 缺少 be，不能作主要動詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-made-from-past-wind-result",
+    "align-made-with-did-not-break"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "form-maked-by-ed"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "did not break 將情境放在過去，風吹門關也應使用 made。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保持因果與過去時間；其他項目為錯誤變化或不同時態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

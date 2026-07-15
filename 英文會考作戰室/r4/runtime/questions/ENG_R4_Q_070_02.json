@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben ate breakfast, then brushed his teeth. What happened second?",
+  "options": [
+    "Ben made breakfast.",
+    "Ben brushed his teeth.",
+    "Ben went to bed.",
+    "Ben ate dinner."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "文中只說吃早餐，沒有說製作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "then 後的 brushed his teeth 是第二件事。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有上床睡覺。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "事件是 breakfast，不是 dinner。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-then-to-locate-brushing-second",
+    "retain-breakfast-story-details"
+  ],
+  "representationType": "then-order-detail",
+  "misconceptionTargets": [
+    "replace-ate-with-made"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "then 將刷牙放在吃早餐之後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完全對應第二個過去動作；其他項目更換了動作或餐別。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -12,6 +12,7 @@ const RUNTIME_ROOT = path.join(ROOT, "英文會考作戰室", "r4", "runtime");
 const UNITS = [
   { id: "ENG_R4_U08", firstSkill: 50 },
   { id: "ENG_R4_U09", firstSkill: 57 },
+  { id: "ENG_R4_U10", firstSkill: 64 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -189,6 +190,25 @@ test("U09 semantic regressions remain repaired", async () => {
   const rainExample = source.lectures.find((value) => value.skillId === "ENG_R4_S062").workedExamples[2];
   assert.match(rainExample.prompt, /getting wet/);
   assert.match(rainExample.why, /仍在變濕/);
+});
+
+test("U10 semantic regressions remain repaired", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U10");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_064_08").answerIndex, 3);
+  assert.match(question.get("ENG_R4_Q_064_08").options[3], /stopped first/);
+  assert.match(question.get("ENG_R4_Q_065_09").options[0], /a in play, but r in carry/);
+  assert.equal(question.get("ENG_R4_Q_066_12").options[3], "read / come");
+  assert.equal(question.get("ENG_R4_Q_067_08").options[3], "Leo did not visit the museum.");
+  assert.equal(question.get("ENG_R4_Q_068_11").options[2], "was");
+  assert.equal(question.get("ENG_R4_Q_069_10").options[1], "Sunday");
+  assert.match(question.get("ENG_R4_Q_069_12").options[3], /continues now/);
+  assert.equal(question.get("ENG_R4_Q_070_03").options[2], "The students sat down.");
+  assert.match(question.get("ENG_R4_Q_070_11").stem, /reached the park/);
+  const didExample = source.lectures.find((value) => value.skillId === "ENG_R4_S066").workedExamples[2];
+  assert.equal(didExample.answer, "write");
+  assert.match(didExample.why, /主要動詞必須回到原形 write/);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

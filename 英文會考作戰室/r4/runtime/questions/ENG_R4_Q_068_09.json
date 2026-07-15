@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_068_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The meeting was in Room 3. Which question asks for its place?",
+  "options": [
+    "Where was the meeting?",
+    "Where did the meeting?",
+    "Was where the meeting?",
+    "Where the meeting was?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Where + was + subject 的問句結構正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 後缺少一般動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "疑問詞 Where 應放句首。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這是陳述式字序，不是直接問句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-where-was-meeting-question",
+    "retain-be-in-location-question"
+  ],
+  "representationType": "past-be-information-question",
+  "misconceptionTargets": [
+    "use-did-with-was-sentence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原句的主要動詞是 was，問地點時形成 Where was the meeting?。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不加入 did，並把 was 放在主詞 meeting 前，完整詢問 Room 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

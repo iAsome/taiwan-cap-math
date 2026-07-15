@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bell rang after the students sat down. What happened first?",
+  "options": [
+    "The students left.",
+    "The bell rang.",
+    "The students sat down.",
+    "The teacher opened the door."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "文中沒有學生離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "rang 發生在 after 所指事件之後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "after the students sat down 表示坐下在先。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文中沒有老師開門。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "reverse-surface-order-in-after-sentence",
+    "identify-sat-before-rang"
+  ],
+  "representationType": "after-order-detail",
+  "misconceptionTargets": [
+    "assume-first-mentioned-event-happened-first"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "A after B 的實際順序是 B 在前、A 在後，因此 students sat down 先發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項由 after 直接推出；其他選項不是第一件事或沒有文本根據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

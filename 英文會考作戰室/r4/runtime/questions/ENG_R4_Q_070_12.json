@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We missed the first bus, waited for the next one, and finally reached home. Which event ended the story?",
+  "options": [
+    "We missed the first bus.",
+    "We waited at home.",
+    "We found the first bus.",
+    "We reached home."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "錯過公車是故事開端。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "文中是在等下一班車，不是在家等。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有找到第一班車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "finally 表示到家是最後事件。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "identify-finally-marked-story-ending",
+    "separate-opening-delay-from-final-result"
+  ],
+  "representationType": "narrative-ending-identification",
+  "misconceptionTargets": [
+    "choose-first-problem-as-story-ending"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "finally 明確引出整段交通過程的結尾 reached home。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留原文最後結果；其他選項屬開端或加入不存在的事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia ___ her homework before dinner yesterday.",
+  "options": [
+    "finished",
+    "finishes",
+    "is finishing",
+    "will finish"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "finished 表示作業已在昨天完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "finishes 表示現在的習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is finishing 表示目前正在完成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will finish 表示未來才會完成。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "locate-finished-homework-in-past",
+    "select-past-finish-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "ignore-explicit-yesterday"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "yesterday 與 before dinner 都把事件放在已結束的過去時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只有 finished 同時符合過去時間與完成事件；其餘三項分屬現在習慣、現在進行與未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

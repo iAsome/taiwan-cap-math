@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_068_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ tired after the race.",
+  "options": [
+    "was",
+    "were",
+    "did",
+    "am"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "I 在過去式搭配 was。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "were 不用於一般 I 的過去陳述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did 不能直接接形容詞 tired。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "am 是現在式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "match-i-with-was-after-race",
+    "reject-did-before-adjective"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-were-with-i-by-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "after the race 建立過去狀態，I 的過去 be 動詞是 was。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成 I was tired；其餘項目或主詞不合、結構不合或時間不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

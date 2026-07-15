@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_064_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train was late, so we took a bus. What did the group do because the train was late?",
+  "options": [
+    "They waited for tomorrow.",
+    "They made the train late.",
+    "They took a bus.",
+    "They are taking a train now."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "文中沒有等待到明天。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子沒有說這群人造成火車誤點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "so 後的 took a bus 是因誤點採取的行動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這一項改成現在搭火車，和原句不同。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "trace-delay-to-past-response",
+    "answer-what-group-did-from-so-clause"
+  ],
+  "representationType": "past-cause-result-comprehension",
+  "misconceptionTargets": [
+    "confuse-cause-with-agent-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "was late 是原因，so 引出已完成的結果 took a bus。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項直接回答 did...do 的過去問題，沒有增加或更改交通資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

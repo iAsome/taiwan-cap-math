@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Why did Amy ___ early?",
+  "options": [
+    "left",
+    "leave",
+    "leaves",
+    "leaving"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "left 是過去式，不能留在 did 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "leave 是原形，結構正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "leaves 是現在第三人稱形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "leaving 不能直接接 did。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "build-why-did-leave-question",
+    "remove-left-after-did"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "retain-left-in-past-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Why 指定詢問原因，did 建立過去，主要動詞使用 leave。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完成 Why did Amy leave...?；其他三項都不是 did 後的原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

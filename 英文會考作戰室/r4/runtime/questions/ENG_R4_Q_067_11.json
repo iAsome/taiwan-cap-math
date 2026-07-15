@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "“Did Nora went home?” has one word error. Which sentence keeps the meaning?",
+  "options": [
+    "Does Nora went home?",
+    "Did Nora goes home?",
+    "Did Nora go home?",
+    "Was Nora go home?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Does 改成現在式，且後面仍錯用 went。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 後不能用 goes。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "did 後使用原形 go，意義與時間不變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "was 不能直接接原形 go。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-did-nora-went-error",
+    "preserve-question-meaning-with-go"
+  ],
+  "representationType": "single-error-correction",
+  "misconceptionTargets": [
+    "double-mark-past-in-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤只在 did 後使用 went，必要修正是把它還原成 go。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留 Nora、home 與過去問句，其餘項目另引入時態或結構錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

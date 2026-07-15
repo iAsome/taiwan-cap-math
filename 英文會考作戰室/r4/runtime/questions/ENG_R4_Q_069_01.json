@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_069_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S069"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Yesterday, our class ___ a short movie.",
+  "options": [
+    "watched",
+    "watches",
+    "is watching",
+    "will watch"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "watched 配合 yesterday，表示已看完。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "watches 表現在習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is watching 表目前進行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will watch 表未來。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-yesterday-to-watched-movie",
+    "separate-three-nonpast-forms"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "ignore-yesterday-time-anchor"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Yesterday 是直接的過去時間線索，watch 應使用 watched。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合完成事件；其餘三項分別落在現在習慣、現在進行和未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

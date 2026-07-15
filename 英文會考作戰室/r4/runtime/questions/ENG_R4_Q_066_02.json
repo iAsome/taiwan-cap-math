@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ a bright light in the sky last night.",
+  "options": [
+    "see",
+    "saw",
+    "seed",
+    "seeing"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "see 是原形，未標示昨晚。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "saw 是 see 的過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "seed 是另一個字，不是 see 的過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "seeing 需搭配 be 才能作進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-see-to-saw-in-night-observation",
+    "separate-saw-from-seed"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "invent-seed-as-past-see"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "last night 表示觀看發生在已結束的時間，因此使用 saw。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 see 的意思並正確改成過去；其他選項不符合形式或詞義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

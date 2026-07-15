@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Lily ___ the wrong bus, so she got off at the next stop.",
+  "options": [
+    "take",
+    "taked",
+    "took",
+    "takes"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "take 是原形，不能和 got off 組成完整過去敘事。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "taked 不是 take 的標準過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "took 是 take 的不規則過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "takes 是現在簡單式第三人稱。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-took-from-got-off-result",
+    "reject-taked-in-transport-context"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "regularize-take"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "got off 是過去結果，搭錯公車也必須是先前已完成的 took。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 took the wrong bus；其他形式無法正確標示這段過去事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

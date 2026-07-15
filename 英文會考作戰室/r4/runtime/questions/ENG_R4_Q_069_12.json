@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_069_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S069"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "It is 2026. The library opened in 2020 and still serves the town. What is true now?",
+  "options": [
+    "The library will first open after 2026.",
+    "The library closed in 2020.",
+    "The library serves only in the past.",
+    "The opening happened in the past, but the service continues now."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "opened in 2020 明確早於 2026。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "文中沒有關閉資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "still serves 表現在持續服務。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "這一項正確分開過去開幕與現在服務。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "separate-past-opening-from-current-service",
+    "integrate-in-2020-with-still"
+  ],
+  "representationType": "cross-time-state-inference",
+  "misconceptionTargets": [
+    "infer-current-closure-from-past-opened"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "opened 定位一次過去事件，still serves 則說明現況延續。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時保留兩種時間意義；前三項都和年份或 still 的證據衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

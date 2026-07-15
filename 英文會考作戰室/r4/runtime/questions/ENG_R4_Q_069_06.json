@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_069_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S069"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My aunt lived here ___.",
+  "options": [
+    "right now",
+    "five years ago",
+    "every morning",
+    "next week"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "right now 通常不配 lived。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "five years ago 與過去式 lived 相符。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "every morning 表習慣，通常使用 lives。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "next week 是未來時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "match-lived-with-compatible-time-phrase",
+    "reject-now-habit-future-markers"
+  ],
+  "representationType": "time-phrase-completion",
+  "misconceptionTargets": [
+    "pair-past-verb-with-future-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "lived 已標示過去，five years ago 提供相符的完成時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一不需更改動詞形式即可成立的時間片語。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

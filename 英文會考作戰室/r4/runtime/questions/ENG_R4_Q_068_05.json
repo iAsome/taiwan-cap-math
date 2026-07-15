@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_068_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "There ___ one message on my phone.",
+  "options": [
+    "was",
+    "were",
+    "did",
+    "are"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "one message 是單數，there was 正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "were 要配複數存在項目。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did 不能形成存在句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 是現在複數形式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "derive-there-was-from-one-message",
+    "ignore-neutral-there-for-number"
+  ],
+  "representationType": "past-existence-cloze",
+  "misconceptionTargets": [
+    "treat-there-as-plural-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "there 後真正決定形式的是 one message，因此使用 was。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成過去單數存在句；其他選項不合數量、時間或句型。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

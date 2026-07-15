@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sara did not ___ her lunch.",
+  "options": [
+    "brought",
+    "bring",
+    "brings",
+    "bringing"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "brought 與 did 形成雙重過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "bring 是 did not 後需要的原形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "brings 是現在第三人稱形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "bringing 不能直接接在 did not 後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "restore-bring-after-did-not",
+    "avoid-double-past-brought"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "keep-irregular-past-after-did"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "did not 已標出過去否定，主要動詞需回到 bring。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一原形；其餘形式分別是過去式、現在變化或 V-ing。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

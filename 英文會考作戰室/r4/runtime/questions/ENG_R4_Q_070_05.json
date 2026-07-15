@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "First, we found the bus stop. Then, we got on the bus. Which order matches the story?",
+  "options": [
+    "find the stop → get on the bus",
+    "get on the bus → find the stop",
+    "leave the bus → find the stop",
+    "get home → look for the stop"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "這個順序符合 First 與 Then。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這一項把兩件事顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文中沒有離開公車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文中沒有先回家。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "translate-first-then-story-to-arrow-order",
+    "preserve-bus-stop-and-boarding-events"
+  ],
+  "representationType": "event-sequence-diagram-text",
+  "misconceptionTargets": [
+    "reverse-first-then-arrow"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "First 標示找到站牌，Then 才標示上車。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留兩個原事件與正確箭頭方向，其餘選項顛倒或加入新事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

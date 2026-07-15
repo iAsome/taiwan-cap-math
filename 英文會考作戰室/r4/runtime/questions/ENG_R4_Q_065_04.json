@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_065_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus ___ at the corner and let us off.",
+  "options": [
+    "stoped",
+    "stopied",
+    "stopt",
+    "stopped"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "stoped 只寫一個 p，不是 stop 的正確過去式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "stopied 誤套用 y 的規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "stopt 不是本課使用的標準拼法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "stopped 重複 p 再加 -ed，正確。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "double-final-p-in-stopped",
+    "match-stopped-with-let-off-event"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-doubled-consonant"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "stop 的短母音字尾需要重複最後的 p，再接 -ed。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項得到 stopped，且能與 let us off 組成同一段過去敘事。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

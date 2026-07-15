@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_065_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Grace ___ English at home last night.",
+  "options": [
+    "studyed",
+    "studyd",
+    "studied",
+    "studying"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "studyed 沒有把子音後的 y 改成 i。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "studyd 少了形成過去式所需的 ie。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "studied 是 study 的正確過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "studying 是現在分詞，不能單獨表過去。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "convert-consonant-y-study-to-studied",
+    "distinguish-ied-from-yed"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "keep-y-after-consonant"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "study 的 y 前是子音 d，因此改 y 為 i 再加 -ed。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項完整形成 studied；其餘三項都缺少正確的過去式拼字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_067_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Change “Leo visited the museum” to a negative sentence without changing the time.",
+  "options": [
+    "Leo not visited the museum.",
+    "Leo does not visit the museum.",
+    "Leo did not visited the museum.",
+    "Leo did not visit the museum."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "英文否定句不能只在過去式前加 not。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does not 把句子改成現在時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did not 後不應保留 visited。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "did not + visit 正確表達過去否定。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "negate-visited-without-changing-time",
+    "convert-visited-to-did-not-visit"
+  ],
+  "representationType": "specific-negative-transformation",
+  "misconceptionTargets": [
+    "put-not-before-past-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原句是過去式 visited，改否定時使用 did not 並還原 visit。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保持相同人物、地點與過去時間，只改變肯定為否定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

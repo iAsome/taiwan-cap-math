@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The guests ___ early and sat near the window.",
+  "options": [
+    "came",
+    "comed",
+    "come",
+    "coming"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "came 是 come 的過去式，能和 sat 並列。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "comed 不是標準過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "come 是原形，與 sat 時態不一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "coming 缺少 be，不能作完整謂語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "align-came-with-sat-in-guest-story",
+    "exclude-comed-formation"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "add-ed-to-come"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "sat 已建立過去敘事，客人先到達也應使用 came。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項讓 came and sat 成為兩個完成事件，其他項目都不是合適的過去形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

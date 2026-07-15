@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ken ___ home after practice yesterday.",
+  "options": [
+    "went",
+    "goed",
+    "goes",
+    "going"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "went 是 go 的不規則過去式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "goed 不是標準英文形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "goes 是現在簡單式第三人稱。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "going 不能單獨作過去謂語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "retrieve-went-for-yesterday-homecoming",
+    "reject-regularized-goed"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "add-ed-to-go"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "yesterday 把回家事件放在過去，go 必須變成 went。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是唯一正確的不規則形式；其餘項目或不存在，或不是過去式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

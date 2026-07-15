@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lights went out. We waited a minute. Then Sam found a flashlight. Which event was third?",
+  "options": [
+    "The lights went out.",
+    "We waited a minute.",
+    "Sam found a flashlight.",
+    "Sam turned off the lights."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "燈熄滅是第一件事。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "等待一分鐘是第二件事。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Then 後找到手電筒是第三件事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文中沒有說 Sam 關燈。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-three-event-flashlight-sequence",
+    "select-third-after-two-prior-events"
+  ],
+  "representationType": "three-event-position-question",
+  "misconceptionTargets": [
+    "confuse-cause-of-lights-out-with-third-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三句依序建立熄燈、等待、找到手電筒。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項對應最後一句；第四項把自然現象錯寫成 Sam 的行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

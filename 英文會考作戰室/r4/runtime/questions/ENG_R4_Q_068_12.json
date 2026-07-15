@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_068_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "There ___ no buses after ten, so we walked home.",
+  "options": [
+    "was",
+    "is",
+    "did",
+    "were"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "was 不配複數 buses。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 不配 buses，也與 walked 的過去時間衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did 不能形成 there 存在句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "were 配合複數 buses 與 walked 的過去背景。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "use-were-with-zero-plural-buses",
+    "connect-past-absence-to-walked-result"
+  ],
+  "representationType": "negative-existence-cause",
+  "misconceptionTargets": [
+    "treat-no-as-singular"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "no buses 的中心名詞 buses 是複數，且 walked 表示整段在過去。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 There were no buses，合理說明大家走路回家的原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

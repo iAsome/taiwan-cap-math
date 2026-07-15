@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_070_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The team arrived at school at 8:00, left for the game at 8:30, and reached the park at 9:00. Which event was between the other two?",
+  "options": [
+    "The team reached the park.",
+    "The team played at school.",
+    "The team left for the game.",
+    "The team arrived at school."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "reached the park 是 9:00 的最後事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "文中沒有在學校比賽。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "8:30 的離校位於 8:00 與 9:00 之間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "arrived at school 是 8:00 的第一事件。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "place-three-schedule-events-on-timeline",
+    "identify-middle-eight-thirty-event"
+  ],
+  "representationType": "clock-time-sequence",
+  "misconceptionTargets": [
+    "select-last-event-as-middle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "依 8:00、8:30、9:00 排序，中間事件是 left for the game。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合時間數值與敘述內容；其他項目為首尾事件或未提資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

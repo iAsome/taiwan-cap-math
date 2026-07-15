@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_066_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ rice and soup for lunch yesterday.",
+  "options": [
+    "eated",
+    "ate",
+    "eat",
+    "eats"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "eated 不是 eat 的標準過去式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "ate 是 eat 的不規則過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "eat 是原形，未表達 yesterday。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "eats 不配主詞 I，且為現在式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "retrieve-ate-for-yesterday-lunch",
+    "distinguish-ate-from-eated"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "regularize-eat"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "yesterday 的午餐已吃完，eat 應變為 ate。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項在主詞、時間與拼字上都正確；其他項目不是合法過去式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
