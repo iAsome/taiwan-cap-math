@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A shop is near the library. What can we know for sure?",
+  "options": [
+    "The shop touches the library wall.",
+    "The shop is inside the library.",
+    "The shop is between two libraries.",
+    "The shop is not far from the library."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "near 不保證兩棟建築相接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "接近不等於位於建築內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子只提一間 library，沒有兩個邊界。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "near 能確定的只有兩地距離不遠。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "limit-inference-from-near-library",
+    "retain-not-far-only"
+  ],
+  "representationType": "near-inference-boundary",
+  "misconceptionTargets": [
+    "infer-touching-from-near"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目要求 for sure，需避免把近推成相鄰。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是 near 的最小充分意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

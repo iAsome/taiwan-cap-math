@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S134",
+  "subject": "english",
+  "unitId": "ENG_R4_U20",
+  "skillId": "ENG_R4_S134",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S133"
+  ],
+  "objectives": [
+    "依時間單位與固定用法選擇 at、on 或 in。",
+    "辨識星期加早晚、at night 與不加介系詞的時間片語。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S134_SEC_01",
+      "title": "at 指向明確時間點",
+      "content": "at 7:20、at noon、at midnight 都把事件放在一個時間點。at night 是常見固定用法；雖然 night 看似一段時間，不能因此改寫成 in night。"
+    },
+    {
+      "id": "ENG_R4_L_S134_SEC_02",
+      "title": "on 配合日期與星期",
+      "content": "on Tuesday、on May 4、on my birthday 都指特定一天。若早晚前已有星期或日期，也用 on，例如 on Tuesday morning，而不是 in Tuesday morning。"
+    },
+    {
+      "id": "ENG_R4_L_S134_SEC_03",
+      "title": "in 配合較長時段",
+      "content": "in June、in 2026、in summer 用於月份、年份與季節；in the morning、in the afternoon、in the evening 則是一天中的較長部分。判斷時要讀完整時間片語。"
+    },
+    {
+      "id": "ENG_R4_L_S134_SEC_04",
+      "title": "部分時間片語前不加介系詞",
+      "content": "this morning、last night、next Friday、every Sunday 前通常不再加 at、on 或 in。這些限定詞本身已把時間說清楚，多加介系詞反而形成錯誤結構。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S134_EX_01",
+      "prompt": "The meeting begins ___ 6:45.",
+      "steps": [
+        "找時間 6:45。",
+        "判斷它是明確鐘點。",
+        "使用 at。"
+      ],
+      "answer": "at",
+      "why": "6:45 是鐘面上的明確時間點，因此寫 at 6:45。on 用於某一天，in 用於月份、年份或較長時段，都不符合這個尺度。"
+    },
+    {
+      "id": "ENG_R4_L_S134_EX_02",
+      "prompt": "The library is closed ___ August 12.",
+      "steps": [
+        "辨認 August 12 是日期。",
+        "日期視為特定一天。",
+        "使用 on。"
+      ],
+      "answer": "on",
+      "why": "August 12 包含月份與日數，整體是一個明確日期，所以用 on。不能只看到 August 就選 in，必須讀完完整片語。"
+    },
+    {
+      "id": "ENG_R4_L_S134_EX_03",
+      "prompt": "My family moved here ___ 2021.",
+      "steps": [
+        "找年份 2021。",
+        "年份是較長時間範圍。",
+        "使用 in。"
+      ],
+      "answer": "in",
+      "why": "2021 指一整年的範圍，沒有指定某一天或鐘點，因此用 in。若題目改成 March 3, 2021，才會依完整日期改用 on。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到月份就一定選 in。",
+      "whyWrong": "月份後若帶日期，如 May 4，整體是特定一天。",
+      "correction": "先讀完整時間片語，再判斷是月份或日期。"
+    },
+    {
+      "belief": "morning 前永遠使用 in。",
+      "whyWrong": "Tuesday morning 已由星期限定，應使用 on。",
+      "correction": "區分 in the morning 與 on Tuesday morning。"
+    },
+    {
+      "belief": "night 是一段時間，所以要寫 in night。",
+      "whyWrong": "一般夜間用法是固定片語 at night。",
+      "correction": "將 at night 與 in the evening 分開記。"
+    },
+    {
+      "belief": "next Monday 前仍需加 on。",
+      "whyWrong": "next 已經直接限定時間，不再需要介系詞。",
+      "correction": "直接寫 next Monday，不寫 on next Monday。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "9:10 前用哪個介系詞？",
+      "answer": "at",
+      "reason": "鐘點視為明確時間點。"
+    },
+    {
+      "prompt": "Friday evening 前用哪個介系詞？",
+      "answer": "on",
+      "reason": "星期限定了 evening。"
+    },
+    {
+      "prompt": "last summer 前是否要加 in？",
+      "answer": "不用",
+      "reason": "last 已直接限定時間。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

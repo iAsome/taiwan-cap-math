@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora left home at 7:40. Her bus arrived at 8:00. Nora left home ___ the bus arrived.",
+  "options": [
+    "before",
+    "during",
+    "until",
+    "after"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "7:40 早於 8:00，所以她在公車抵達前離家。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "during 不用來比較兩個時間點的先後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "left 是單次動作，不能持續到 8:00。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "after 會和時間資料相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "compare-740-and-800",
+    "map-earlier-departure-to-before"
+  ],
+  "representationType": "timeline-before-transfer",
+  "misconceptionTargets": [
+    "reverse-earlier-and-later-times"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先比較 7:40 與 8:00，再選關係字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項由數值證據得出，不靠句子排列猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

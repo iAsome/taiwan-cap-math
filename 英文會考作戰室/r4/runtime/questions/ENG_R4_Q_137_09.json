@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_137_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A bird flew over the park. What can we know from this alone?",
+  "options": [
+    "The bird moved above the park without touching it.",
+    "The bird landed in the park.",
+    "The park covered the bird.",
+    "The bird stayed under the park."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "flew over 表示鳥在公園上方移動，沒有接觸地面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子沒有說鳥降落。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "覆蓋關係若存在也應是鳥在上、公園在下，不能反向解讀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "under 與原句的 over 相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-motion-over-field",
+    "limit-inference-to-above-path"
+  ],
+  "representationType": "over-motion-inference",
+  "misconceptionTargets": [
+    "infer-landing-from-flying-over"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "動詞 flew 讓 over 同時帶有跨越路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不額外推論終點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The light was on until midnight. What follows from the sentence?",
+  "options": [
+    "The light came on at midnight.",
+    "The light was never on.",
+    "The light stayed on up to midnight.",
+    "Midnight lasted all night."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "until 不表示動作到終點才開始。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子明確說燈處於開啟狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "until midnight 表示狀態維持到午夜。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "midnight 是時間點，不是一整夜的期間。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-state-plus-until-midnight",
+    "infer-continuation-to-endpoint"
+  ],
+  "representationType": "until-state-inference-boundary",
+  "misconceptionTargets": [
+    "treat-endpoint-as-start-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "was on 是持續狀態，而非一次開燈動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只陳述 until 能保證的延續範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

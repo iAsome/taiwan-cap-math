@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The hotel is ___ the station, about a five-minute walk away.",
+  "options": [
+    "among",
+    "between",
+    "beside",
+    "near"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "among 需要旅館位於一群車站之中。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "between 缺少另一個明確邊界。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "beside 會暗示緊鄰，但五分鐘路程不保證相鄰。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "near 表示距離不遠，符合步行五分鐘。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-five-minute-walk-as-near",
+    "avoid-beside-without-adjacency"
+  ],
+  "representationType": "near-distance-cloze",
+  "misconceptionTargets": [
+    "infer-beside-from-short-walk"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "five-minute walk 提供接近但非接觸的距離。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項不把附近誇大成就在旁邊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

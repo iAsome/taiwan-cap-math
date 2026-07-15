@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A bird flew ___ the open window and landed ___ the table.",
+  "options": [
+    "to / in",
+    "onto / through",
+    "into / at",
+    "through / onto"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to the window 沒有穿過，in the table 也把桌子當容器。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "onto the window 與 through the table 把兩個終點顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "into 可表示進入房間，但 at the table 沒有呈現落到桌面。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "through the window 表示穿過開口，onto the table 表示落到表面。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "classify-window-passage-and-table-landing",
+    "fill-through-and-onto-motion-pair"
+  ],
+  "representationType": "two-stage-motion-cloze",
+  "misconceptionTargets": [
+    "swap-passage-and-surface-prepositions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個動詞分別要求路徑與表面終點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留先穿窗、後落桌的事件順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

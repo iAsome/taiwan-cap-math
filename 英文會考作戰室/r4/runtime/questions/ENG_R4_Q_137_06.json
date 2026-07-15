@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_137_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The temperature fell to 2°C ___ zero.",
+  "options": [
+    "under",
+    "below",
+    "over",
+    "onto"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "under zero 有時可見，但本單元的數值基準使用 below zero。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "below zero 表示溫度數值低於零。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "over zero 會表示高於零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "onto 需要移動到表面。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-zero-as-temperature-reference",
+    "select-below-for-negative-value"
+  ],
+  "representationType": "below-zero-data-cloze",
+  "misconceptionTargets": [
+    "treat-numeric-lower-as-under-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "zero 是數值基準，不是會遮住溫度的物體。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項將高低位置概念延伸到溫度刻度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

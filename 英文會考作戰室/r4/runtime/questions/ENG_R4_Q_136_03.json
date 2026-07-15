@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_136_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Please wait for me ___ the front gate.",
+  "options": [
+    "on",
+    "in",
+    "at",
+    "onto"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "on the gate 會表示人在門的表面，語意不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "in the gate 不是一般會合位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "at the front gate 把大門當成明確會合點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "onto 表示移動到表面，不接 wait 的靜態位置。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-gate-as-meeting-point",
+    "select-at-for-waiting-location"
+  ],
+  "representationType": "meeting-point-preposition-cloze",
+  "misconceptionTargets": [
+    "put-person-on-gate-surface"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "wait for me 要指定雙方找到彼此的位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不必描述大門內外，只標示會合點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

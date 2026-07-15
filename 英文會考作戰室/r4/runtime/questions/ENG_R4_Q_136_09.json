@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_136_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A book is in a bag. The bag is on a chair. Where is the book?",
+  "options": [
+    "In the bag",
+    "On the chair beside the bag",
+    "At the chair",
+    "Under the bag"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一句直接說書在袋子裡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "袋子在椅子上，不代表書在袋子旁。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at the chair 失去袋子的容器關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "書在袋內，不是在袋子下方。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "track-book-inside-bag",
+    "retain-nearest-container-location"
+  ],
+  "representationType": "nested-location-inference",
+  "misconceptionTargets": [
+    "skip-container-and-attach-to-chair"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩層位置中，先保留最直接包住 book 的 bag。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不把容器所在處誤當成物品與容器的關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

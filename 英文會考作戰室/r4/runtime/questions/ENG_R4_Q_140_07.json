@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'We reached to the park at noon.' Which change fixes the verb pattern?",
+  "options": [
+    "We → Us",
+    "park → parks",
+    "reached to → reached",
+    "at noon → on noon"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "We 是正確主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "改複數不會修正 reach 的搭配。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "reach 直接接 the park，應刪除 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "noon 前使用 at，不能改成 on。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "separate-reach-object-from-at-noon",
+    "remove-to-after-reached"
+  ],
+  "representationType": "reach-pattern-proofreading",
+  "misconceptionTargets": [
+    "delete-correct-time-preposition-instead"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "句中同時有地點與時間介系詞，只有地點前的 to 多餘。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 reached the park at noon。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

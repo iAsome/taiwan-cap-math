@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Wash the fruit ___ you eat it, and clean the table ___ dinner.",
+  "options": [
+    "after / until",
+    "during / before",
+    "until / during",
+    "before / after"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "水果應在吃之前清洗，第一空不能用 after。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "during you eat it 的結構不合，餐桌也不是餐前才清理的唯一意思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "until 不適合單次洗水果，during dinner 也改變第二個指示。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "before you eat it 與 after dinner 建立合理衛生順序。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "order-washing-eating-and-cleaning-events",
+    "fill-before-and-after-pair"
+  ],
+  "representationType": "two-event-sequence-cloze",
+  "misconceptionTargets": [
+    "apply-one-time-relation-to-both-actions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個空格各有一組事件，不能用同一線索一起猜。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項分別得到先洗再吃、餐後清桌。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

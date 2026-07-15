@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Please call me before dinner. Which happens first?",
+  "options": [
+    "The call",
+    "Dinner",
+    "Both at the same time",
+    "The sentence does not say"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "before dinner 表示電話在晚餐前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "dinner 是較後發生的事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "before 不表示同時。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子已明確提供先後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "order-call-and-dinner-events",
+    "identify-call-before-dinner"
+  ],
+  "representationType": "before-event-order-inference",
+  "misconceptionTargets": [
+    "treat-written-order-as-uncertain"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先找 before 兩側的事件：call 與 dinner。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把語序轉成實際時間順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

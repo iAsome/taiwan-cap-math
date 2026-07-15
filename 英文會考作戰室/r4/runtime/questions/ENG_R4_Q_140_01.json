@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train arrived ___ Taipei before noon.",
+  "options": [
+    "in",
+    "at",
+    "to",
+    "no word"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "arrive in 常接城市 Taipei。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at 通常接車站、旅館等明確地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "arrive to 不是本單元的標準搭配。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Taipei 前不能在此省略介系詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-taipei-as-city",
+    "select-arrive-in-city"
+  ],
+  "representationType": "arrive-in-city-cloze",
+  "misconceptionTargets": [
+    "use-arrive-at-before-city"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Taipei 是城市範圍，不是站名。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合 arrive in + city。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

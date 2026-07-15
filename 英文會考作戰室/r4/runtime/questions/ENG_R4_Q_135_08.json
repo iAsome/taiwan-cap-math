@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A screen says, 'Please wait here until your number appears.' When may you stop waiting?",
+  "options": [
+    "Before getting a number",
+    "During another visit",
+    "After leaving the building",
+    "When the number appears"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有號碼前仍要等待。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "另一趟拜訪不是本次等待終點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "離開建築是在等待結束後的其他行動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "until 指定號碼出現為等待終點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-until-condition-on-screen",
+    "infer-waiting-stop-point"
+  ],
+  "representationType": "service-screen-until-inference",
+  "misconceptionTargets": [
+    "stop-before-until-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "wait 是持續動作，appears 是結束條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把文字指示轉成可執行的停止時機。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

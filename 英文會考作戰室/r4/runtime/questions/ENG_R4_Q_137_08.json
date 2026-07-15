@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_137_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A shelf is 2 meters above the floor. A picture is 1 meter above the floor. The picture is ___.",
+  "options": [
+    "over the shelf",
+    "on the shelf",
+    "under the floor",
+    "below the shelf"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "1 公尺位置不會高於 2 公尺的架子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料沒有說圖片接觸架子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "圖片仍在地板上方，不在地板下。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "1 公尺低於 2 公尺，所以圖片在架子下方。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-two-heights-from-floor",
+    "infer-picture-below-shelf"
+  ],
+  "representationType": "height-data-position-transfer",
+  "misconceptionTargets": [
+    "reverse-height-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個高度都使用同一個 floor 基準。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項由 1 小於 2 得出一般較低關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

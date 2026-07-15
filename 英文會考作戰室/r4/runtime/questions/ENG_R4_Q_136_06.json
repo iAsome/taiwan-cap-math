@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_136_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Let's meet ___ the bus stop at five.",
+  "options": [
+    "in",
+    "at",
+    "on",
+    "inside of"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "in the bus stop 不能表示在站牌這個會合點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "at the bus stop 正確指定見面的地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "on the bus stop 會誤把站牌當成表面。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "inside of 不適合沒有內部空間的站牌位置。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-bus-stop-as-rendezvous-point",
+    "choose-at-for-meeting-location"
+  ],
+  "representationType": "bus-stop-meeting-point-cloze",
+  "misconceptionTargets": [
+    "treat-bus-stop-as-container"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "bus stop 是路線上的明確位置點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時符合 meet 的地點需求與 at five 的時間安排。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Walk ___ the gate and stop there; do not pass it.",
+  "options": [
+    "into",
+    "onto",
+    "through",
+    "to"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "into 會表示進入門內的空間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "onto 需要可登上的表面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "through 會違反 do not pass it。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "to 表示走到 gate 並停在該目的地。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "apply-stop-at-gate-boundary",
+    "select-to-not-through"
+  ],
+  "representationType": "movement-instruction-boundary",
+  "misconceptionTargets": [
+    "overread-destination-as-passage"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "stop there 與 do not pass it 限制移動只到入口。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項不加入跨越動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "On a map, Road B lies after Road A and before Road C. Road B is ___.",
+  "options": [
+    "between Road A and Road C",
+    "among Road A and Road C",
+    "beside all roads",
+    "near no road"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "B 的位置由 A 與 C 兩個邊界夾定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "among 不搭配兩個用 and 指出的道路邊界。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料沒有說所有道路彼此緊鄰。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "B 已與 A、C 建立順序關係，不能說不靠近任何路。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-before-and-after-map-order",
+    "infer-road-b-between-a-c"
+  ],
+  "representationType": "ordered-map-between-transfer",
+  "misconceptionTargets": [
+    "ignore-two-sided-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "after A 與 before C 共同定位 B。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把線性順序轉成 between 關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

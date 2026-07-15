@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_134_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We will visit the farm ___ next Sunday.",
+  "options": [
+    "in",
+    "at",
+    "on",
+    "no word"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "in 不放在 next Sunday 前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at 不能接 next Sunday。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "on Sunday 可成立，但 next 已直接限定星期。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "next Sunday 前不需要介系詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "detect-next-as-time-determiner",
+    "omit-preposition-before-next-sunday"
+  ],
+  "representationType": "zero-time-preposition-cloze",
+  "misconceptionTargets": [
+    "add-on-before-next-weekday"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "next 是判斷關鍵，不可只看到 Sunday 就選 on。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留自然片語 visit the farm next Sunday。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

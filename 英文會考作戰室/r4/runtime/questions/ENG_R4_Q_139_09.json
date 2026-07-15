@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Path: entrance → forest → exit. A walker follows the whole path. The walker goes ___ the forest.",
+  "options": [
+    "through",
+    "to",
+    "onto",
+    "at"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "through 表示由入口沿森林內路徑走到出口。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "to 只會把森林當目的地，少了出口資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "onto 把森林當表面。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "at 是靜態位置，不描述整段行走。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "read-entrance-forest-exit-sequence",
+    "infer-through-whole-path"
+  ],
+  "representationType": "route-diagram-through-transfer",
+  "misconceptionTargets": [
+    "stop-reading-path-at-destination"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "箭頭序列同時提供進入、內部路徑與離開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把三段資料整合成穿越。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

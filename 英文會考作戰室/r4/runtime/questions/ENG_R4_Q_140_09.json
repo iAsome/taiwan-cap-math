@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Trip plan: enter Tainan; then check in at the hotel. Which line keeps both stops?",
+  "options": [
+    "Arrive in Tainan, then arrive at the hotel.",
+    "Arrive at Tainan, then arrive in the hotel.",
+    "Reach to Tainan, then arrive to the hotel.",
+    "Arrive Tainan, then reach at the hotel."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "in 配合城市 Tainan，at 配合特定 hotel。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個目的地的尺度介系詞被互換。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "reach 與 arrive 後都多加了不合的 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "arrive Tainan 缺介系詞，reach at 也錯。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-city-and-hotel-stops",
+    "pair-arrive-in-and-arrive-at"
+  ],
+  "representationType": "two-stop-arrival-plan",
+  "misconceptionTargets": [
+    "use-one-arrive-preposition-for-all-places"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "行程有城市與旅館兩種不同尺度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項逐一配對，沒有用一條規則套兩站。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

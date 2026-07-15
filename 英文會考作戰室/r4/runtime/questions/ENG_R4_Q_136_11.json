@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_136_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A coin is on the box. What does this sentence tell us?",
+  "options": [
+    "The coin is inside the box.",
+    "The coin is moving toward the box.",
+    "The coin touches the box.",
+    "The coin is far from the box."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "inside 需要 in，不是 on。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "移動方向會使用 onto 等形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "on 表示硬幣位於並接觸盒子表面。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "on 表示直接位置關係，不是距離很遠。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-static-on-box",
+    "infer-surface-contact-only"
+  ],
+  "representationType": "surface-preposition-meaning",
+  "misconceptionTargets": [
+    "confuse-on-with-onto-or-in"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "句子使用靜態 is on，沒有移動動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只陳述 on 能確定的接觸關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

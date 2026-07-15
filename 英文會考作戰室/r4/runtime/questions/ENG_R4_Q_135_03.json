@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "No photos were taken while the show was running = No photos were taken ___ the show.",
+  "options": [
+    "until",
+    "after of",
+    "during",
+    "before to"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "until the show 會把表演當成終點，不能保留 while 的期間關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "after of 不是標準介系詞組合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "during the show 與 while the show was running 都表示表演進行期間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "before to 不能直接接 the show。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "convert-while-clause-to-during-phrase",
+    "preserve-no-photo-period"
+  ],
+  "representationType": "while-to-during-meaning-equivalence",
+  "misconceptionTargets": [
+    "replace-period-with-until-endpoint"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "等號兩邊必須保留同一段禁止拍照的時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以介系詞加名詞片語改寫 while 子句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

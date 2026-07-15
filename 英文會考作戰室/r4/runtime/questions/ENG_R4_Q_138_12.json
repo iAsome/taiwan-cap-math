@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The shop is next to the bank and a short walk from the school. Which line keeps both facts?",
+  "options": [
+    "The shop is among the bank and school.",
+    "The shop is between no buildings.",
+    "The shop is near the bank and beside the school.",
+    "The shop is beside the bank and near the school."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "among 不搭配兩個指定地點，且未表達 next to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項否定了已提供的位置資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "它把 next to 與 short walk 的對象互換。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "beside the bank 對應 next to，near the school 對應 short walk。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "map-next-to-and-short-walk-to-relations",
+    "preserve-bank-school-reference-pairs"
+  ],
+  "representationType": "two-distance-facts-paraphrase",
+  "misconceptionTargets": [
+    "swap-relative-location-targets"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個距離線索分別指向不同建築。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保持 bank 與 school 的原始配對。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

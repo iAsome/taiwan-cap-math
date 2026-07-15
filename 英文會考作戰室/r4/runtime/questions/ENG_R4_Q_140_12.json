@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train should arrive at 8:00 and arrived at the station at 8:05. What happened?",
+  "options": [
+    "It reached the station five minutes early.",
+    "It arrived in a different city.",
+    "It did not reach the station.",
+    "It arrived at the station five minutes late."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "8:05 比 8:00 晚，不是早到。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料只談同一車站，沒有另一城市。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "arrived at the station 已證明列車抵達。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "實際時間比預定時間晚五分鐘。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-due-and-arrival-times",
+    "infer-five-minute-late-arrival"
+  ],
+  "representationType": "arrival-schedule-data-inference",
+  "misconceptionTargets": [
+    "reverse-due-and-actual-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先比較預定時間與實際抵達時間的先後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時保留目的地與五分鐘延遲。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

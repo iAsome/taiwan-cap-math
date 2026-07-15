@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_134_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This school opened ___ 2012.",
+  "options": [
+    "on",
+    "in",
+    "at",
+    "since"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "on 需要更完整的日期。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "in 2012 把開校時間放在該年份。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at 不接年份表示一般時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "since 2012 需搭配延續到現在的結構，opened 是單次過去事件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-2012-as-year",
+    "pair-opened-event-with-in-year"
+  ],
+  "representationType": "year-preposition-cloze",
+  "misconceptionTargets": [
+    "use-since-with-simple-past-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "2012 是年份，題目沒有月份或日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項也符合 opened 所指的單次歷史時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

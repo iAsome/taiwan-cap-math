@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The chair is not just near the bed; their sides touch. The chair is ___ the bed.",
+  "options": [
+    "near",
+    "among",
+    "beside",
+    "between"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "near 已被 not just 排除，因為題目要求比距離近更明確的關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "among 需要群體環繞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "beside 表示就在床旁，符合兩側相接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "between 需要另外指出兩個邊界。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "upgrade-near-to-adjacency-from-contact",
+    "select-beside-bed"
+  ],
+  "representationType": "near-to-beside-precision-cloze",
+  "misconceptionTargets": [
+    "ignore-not-just-near-contrast"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "not just near 要求把一般接近改成緊鄰。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項利用 sides touch 的直接證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

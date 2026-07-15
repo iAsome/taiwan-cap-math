@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The team arrived at the park before noon = The team ___ the park before noon.",
+  "options": [
+    "reached at",
+    "reached",
+    "reached to",
+    "reached in"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "reached at 把 arrive 的 at 錯接到 reach 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "reached 直接接受詞 the park，完整保留原句的到達意思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "reached to 多加了方向介系詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "reached in 也破壞 reach 直接接受詞的結構。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "rewrite-arrive-at-as-reach-direct-object",
+    "preserve-park-and-before-noon-details"
+  ],
+  "representationType": "arrival-verb-meaning-equivalence",
+  "misconceptionTargets": [
+    "carry-arrive-preposition-into-reach-rewrite"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "等號兩邊必須保留抵達、公園與中午前這三項資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只更換動詞結構，沒有改變事件內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

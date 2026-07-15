@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'I slept during the movie played.' Which change makes the time part clear?",
+  "options": [
+    "slept → sleep",
+    "movie → movies",
+    "during the movie played → during the movie",
+    "I → Me"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若事件在過去，slept 可保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "改複數不能修正 during 後的結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "during the movie 以名詞片語表達電影播放期間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "主詞位置應保留 I。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-during-noun-plus-stray-verb",
+    "reduce-to-during-the-movie"
+  ],
+  "representationType": "during-phrase-proofreading",
+  "misconceptionTargets": [
+    "attach-finite-verb-after-during-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "during 後已有 the movie，不必再硬接 played。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項刪除多餘動詞，事件時間仍完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_134_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The game is ___ Saturday afternoon.",
+  "options": [
+    "on",
+    "at",
+    "in",
+    "every"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "on 接完整的 Saturday afternoon。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at 不直接接星期加 afternoon。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "in the afternoon 可成立，但有 Saturday 時改用 on。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "every Saturday afternoon 不需要 is 後再填成此結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-saturday-with-afternoon",
+    "use-on-for-day-part"
+  ],
+  "representationType": "weekday-part-time-cloze",
+  "misconceptionTargets": [
+    "select-in-from-afternoon-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "afternoon 前已有 Saturday 限定特定一天。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項以 on 保留星期與時段的整體。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

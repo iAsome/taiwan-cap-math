@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note fell ___ the desk from the shelf.",
+  "options": [
+    "into",
+    "onto",
+    "through",
+    "in"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "desk 在此提供表面，不是容器內部。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "onto 表示紙條從架上移到桌面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "through 會表示穿過桌子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "in 是靜態內部位置，也未呈現落下到表面。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-note-from-shelf-to-desk",
+    "apply-onto-to-surface-endpoint"
+  ],
+  "representationType": "source-to-surface-motion",
+  "misconceptionTargets": [
+    "choose-static-in-for-fall"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "from the shelf 與 fell 共同說明位置發生改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把移動終點放在 desk 表面。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

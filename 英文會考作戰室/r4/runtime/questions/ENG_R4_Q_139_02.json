@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cat jumped ___ the open box and landed inside it.",
+  "options": [
+    "to",
+    "into",
+    "onto",
+    "through"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to 只表示朝箱子去，不能保證最後在裡面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "into 表示貓跨過箱口並落在箱內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "onto 會把終點放在箱子表面，與 inside it 衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "through 表示穿過後離開，不能保留箱內終點。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-inside-landing-as-entry-evidence",
+    "select-into-for-jump-entry"
+  ],
+  "representationType": "into-container-motion-with-endpoint",
+  "misconceptionTargets": [
+    "ignore-inside-endpoint-and-choose-onto"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "landed inside it 明確指定移動後的位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時表達方向、跨越邊界與箱內終點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

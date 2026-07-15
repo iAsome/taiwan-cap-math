@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben walked to the library. What do we still not know?",
+  "options": [
+    "The library was the place Ben walked to.",
+    "Ben moved toward the library.",
+    "Whether Ben went inside the library.",
+    "Ben did not move."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to the library 已指出行走終點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "walked to 表示他朝圖書館移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "to 不保證跨入建築內部，因此是否進去仍未知。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "walked 明確表示有移動。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "separate-to-destination-from-entry",
+    "identify-unknown-library-interior"
+  ],
+  "representationType": "to-inference-boundary",
+  "misconceptionTargets": [
+    "assume-to-means-entered"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求找出原句無法確定的資訊，需區分 to 能保證與不能保證的內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項正是 into 才會補充的進入細節。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

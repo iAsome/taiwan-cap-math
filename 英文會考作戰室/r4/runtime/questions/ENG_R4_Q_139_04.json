@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train passed ___ the tunnel and came out on the other side.",
+  "options": [
+    "to",
+    "onto",
+    "into",
+    "through"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to 只到隧道，沒有進入與離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "onto 不適合隧道內部路徑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "into 只強調進入，未表達從另一端出來。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "through 包含進入、沿內部前進並離開。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "trace-train-entry-and-exit",
+    "select-through-complete-path"
+  ],
+  "representationType": "through-tunnel-motion-cloze",
+  "misconceptionTargets": [
+    "use-into-despite-exit-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "came out on the other side 是穿越完成的明確證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項涵蓋整條隧道路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

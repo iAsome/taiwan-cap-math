@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We walked ___ the park but stayed outside the gate.",
+  "options": [
+    "to",
+    "into",
+    "onto",
+    "through"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "to 表示走到公園這個目的地，未必進入。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "into 會和 stayed outside the gate 衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "onto 表示到表面，不適合公園目的地。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "through 會表示穿過公園內部。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "use-stayed-outside-gate-constraint",
+    "choose-to-without-entry"
+  ],
+  "representationType": "to-destination-cloze",
+  "misconceptionTargets": [
+    "infer-entry-from-movement-to-place"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "outside the gate 明確排除進入或穿越。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只保留方向與終點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

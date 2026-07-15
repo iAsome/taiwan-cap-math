@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia reached ___ school at eight.",
+  "options": [
+    "at",
+    "to",
+    "no word",
+    "in"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "reach 後不加 at 再接目的地。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "reach 本身已有到達意思，不加 to。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "reached school 直接以 school 作受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "in 也不能插在 reached 與受詞間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-reach-transitive-pattern",
+    "omit-preposition-before-school"
+  ],
+  "representationType": "reach-direct-object-cloze",
+  "misconceptionTargets": [
+    "copy-arrive-at-pattern-to-reach"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先辨認動詞是 reached，不是 arrived。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留直接動詞受詞結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

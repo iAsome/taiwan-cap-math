@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_136_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia is ___ the room, and Ben is waiting ___ the door.",
+  "options": [
+    "at / on",
+    "on / in",
+    "in / on",
+    "in / at"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "at the room 不表示 Mia 在房內，on the door 也把 Ben 放到門面上。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "on the room 不是內部位置，in the door 不是正常等待點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一空 in 正確，但 on the door 仍不符合等待位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "in the room 表示內部，at the door 表示門口位置點。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "classify-room-interior-and-door-point",
+    "fill-in-and-at-location-pair"
+  ],
+  "representationType": "dual-place-preposition-cloze",
+  "misconceptionTargets": [
+    "apply-one-place-rule-to-two-relations"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩空分別測封閉空間與會合位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓 Mia 在室內，同時讓 Ben 位於門邊等待。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

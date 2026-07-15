@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cup fell ___ the floor.",
+  "options": [
+    "into",
+    "through",
+    "onto",
+    "to"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "into 需要地板有可進入的內部空間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "through 會表示杯子穿過地板。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "onto 表示杯子移動後落到地面表面。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "to 只指出方向，沒有表面終點的細節。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-fall-motion-with-floor-surface",
+    "choose-onto-as-landing-endpoint"
+  ],
+  "representationType": "onto-surface-motion-cloze",
+  "misconceptionTargets": [
+    "use-into-before-surface"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "fell 是移動，floor 是最後接觸的表面。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項比靜態 on 更清楚呈現落下過程。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

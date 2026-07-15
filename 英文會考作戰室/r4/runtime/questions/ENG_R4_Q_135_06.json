@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence means that rain continued and stopped at ten?",
+  "options": [
+    "It rained after ten.",
+    "It rained until ten.",
+    "It rained during ten.",
+    "It rained before of ten."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "after ten 把下雨放到十點之後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "until ten 表示下雨延續到十點為止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "during 不能直接接鐘點 ten 表示持續終點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "before of ten 不是標準時間片語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "translate-rain-duration-and-stop",
+    "select-until-ten-sentence"
+  ],
+  "representationType": "until-meaning-selection",
+  "misconceptionTargets": [
+    "replace-until-with-after"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹同時給 continued 與 stopped 的概念。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用 until 把整段持續和結束點連起來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

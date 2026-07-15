@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_134_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train leaves ___ 7:15.",
+  "options": [
+    "at",
+    "on",
+    "in",
+    "from"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "at 接明確鐘點 7:15。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "on 用於星期或日期，不接單一鐘點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "in 通常接月份、年份或較長時段。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "from 會表示起點，卻沒有後續時間範圍。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-715-as-clock-time",
+    "apply-at-to-departure-time"
+  ],
+  "representationType": "clock-time-preposition-cloze",
+  "misconceptionTargets": [
+    "use-in-before-clock-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "7:15 是時刻，不是日期或月份。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項建立 at + clock time 的完整片語。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

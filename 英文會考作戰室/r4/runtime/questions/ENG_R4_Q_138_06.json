@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia stood ___ the students in the school hall, with students on every side.",
+  "options": [
+    "beside",
+    "among",
+    "between",
+    "near to"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "beside 只會把 Mia 放在學生群旁邊，無法表達四周都有人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "among the students 表示她站在學生群中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "between 需要明確分開的邊界或對象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "near to 只說距離近，沒有保留 every side。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-every-side-as-group-surrounding-evidence",
+    "place-mia-among-students"
+  ],
+  "representationType": "person-surrounded-by-group-cloze",
+  "misconceptionTargets": [
+    "choose-near-despite-all-around-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "with students on every side 表示周圍是一個學生群體。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時保留 Mia 在群體內與四周有人的資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

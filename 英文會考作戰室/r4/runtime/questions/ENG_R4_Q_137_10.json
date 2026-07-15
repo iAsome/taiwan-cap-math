@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_137_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence says only that the bag is lower, not right under another thing?",
+  "options": [
+    "The bag is under the desk.",
+    "The bag is below the window.",
+    "The bag is on the floor.",
+    "The bag is through the door."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "under the desk 帶有較直接的桌下空間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "below the window 只要求袋子位置較低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "on the floor 表示接觸地面，不是相對窗戶的高低。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "through the door 是移動路徑，不是靜態較低。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "match-general-lower-without-alignment",
+    "select-below-window-statement"
+  ],
+  "representationType": "below-definition-selection",
+  "misconceptionTargets": [
+    "equate-below-with-direct-under"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目明確排除位於另一物正下方的關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合 below 的一般高低範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

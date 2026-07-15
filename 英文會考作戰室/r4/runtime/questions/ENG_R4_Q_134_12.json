@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_134_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A camp card says, 'Meet at noon on July 2.' What can we know?",
+  "options": [
+    "The camp lasts all July.",
+    "The meeting is at night.",
+    "July 2 is the meeting time.",
+    "The meeting time is noon, and the date is July 2."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "卡片只提供一個日期，沒有說持續整月。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "noon 是中午，不是夜間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "July 2 是日期，不是鐘點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "at noon 指時間，on July 2 指日期。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "separate-noon-time-from-july2-date",
+    "state-complete-camp-meeting-schedule"
+  ],
+  "representationType": "time-date-role-inference",
+  "misconceptionTargets": [
+    "confuse-calendar-date-with-clock-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "介系詞也在標示兩段資訊各自的角色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項沒有把日期與時間互換。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

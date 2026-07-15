@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus arrived ___ the station, but Nora reached ___ five minutes later.",
+  "options": [
+    "in / at it",
+    "to / it",
+    "at / it",
+    "at / at it"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "arrive in 不適合把 station 當具體到達點，reach 後也不加 at。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "arrive to the station 錯把方向介系詞接在 arrive 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "arrive at the station 與 reached it 分別使用介系詞結構和直接受詞結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "前半句正確，但 reached at it 多加了 at。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "coordinate-arrive-at-and-reach-pronoun-frames",
+    "fill-two-linked-arrival-structures"
+  ],
+  "representationType": "paired-arrive-reach-structure-cloze",
+  "misconceptionTargets": [
+    "insert-at-before-reach-pronoun-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一目的地先以完整名詞、後以代名詞 it 表示。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合 arrive at 與 reach 加受詞兩種框架。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_140_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S140"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus arrived ___ Gate 4 at 6:20.",
+  "options": [
+    "in",
+    "at",
+    "to",
+    "no word"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "in Gate 4 不能把編號入口當成可進入的地區。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "arrive at Gate 4 正確指出明確抵達點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "arrive to Gate 4 不是本單元形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Gate 4 前不能像 home 一樣省略介系詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-numbered-gate-as-specific-point",
+    "choose-arrive-at-gate-four"
+  ],
+  "representationType": "arrive-at-numbered-gate-cloze",
+  "misconceptionTargets": [
+    "treat-numbered-gate-as-large-area"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "編號把 gate 指定為單一位置點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時保留抵達地點與 6:20 的時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

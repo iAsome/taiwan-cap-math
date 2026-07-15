@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_134_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A sign says, 'The shop opens in 8:30.' Which change fixes the time words?",
+  "options": [
+    "opens → open",
+    "shop → shops",
+    "in → at",
+    "8:30 → Wednesday"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The shop 是單數，opens 正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "改成複數會造成 shops 與 opens 不一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "8:30 是鐘點，應寫 at 8:30。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "換成 Wednesday 會改掉原本營業時間資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-in-before-830",
+    "edit-to-at-clock-time"
+  ],
+  "representationType": "time-preposition-proofreading",
+  "misconceptionTargets": [
+    "repair-unrelated-subject-agreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤集中在鐘點前的介系詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只修正時間尺度，不改主詞、動詞或資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

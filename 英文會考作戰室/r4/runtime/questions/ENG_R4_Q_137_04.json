@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_137_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cat is sleeping ___ the chair, inside the space between its legs.",
+  "options": [
+    "above",
+    "over",
+    "below",
+    "under"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "above 會把貓放到椅子上方。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "over 也表示貓在較高處。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "below 只說位置較低，沒有指出貓在椅腳圍出的空間內。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "under the chair 表示貓睡在椅子正下方的空間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-chair-leg-space-as-direct-under-evidence",
+    "locate-cat-under-chair"
+  ],
+  "representationType": "under-object-bounded-space-cloze",
+  "misconceptionTargets": [
+    "choose-below-without-direct-object-space"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "between its legs 把位置限制在椅子下方，而非任意較低處。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留了椅子與貓的直接上下關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

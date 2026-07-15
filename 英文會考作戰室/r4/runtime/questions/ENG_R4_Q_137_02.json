@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_137_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A lamp hangs ___ the dining table.",
+  "options": [
+    "below",
+    "over",
+    "under",
+    "on"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "below 會把燈放到桌面較低處。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "over 表示燈位於餐桌正上方。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "under 會顛倒燈與桌子的上下關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "on 表示接觸桌面，與 hangs 不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-lamp-table-vertical-alignment",
+    "choose-over-for-directly-higher"
+  ],
+  "representationType": "over-direct-position-cloze",
+  "misconceptionTargets": [
+    "confuse-over-with-surface-on"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "hanging lamp 與 dining table 建立直接上下照明關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不表示燈碰到桌子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

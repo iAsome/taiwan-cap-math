@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_135_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "School plan: talk at 2:00; game at 3:00. The game begins ___ the talk.",
+  "options": [
+    "after",
+    "during",
+    "until",
+    "before"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "3:00 晚於 2:00，所以 game 在 talk 之後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩活動不是同時進行。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "game 不是持續到 talk 的終點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "before 會把時間順序顛倒。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "order-school-events-by-clock",
+    "express-game-after-talk"
+  ],
+  "representationType": "event-plan-after-transfer",
+  "misconceptionTargets": [
+    "follow-list-order-without-time-check"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "表格先給兩個鐘點，再要求轉成事件關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項正確保留 2:00 到 3:00 的先後。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A report says, 'The bus went into the tunnel and came out at the far end.' Which change fits the full trip?",
+  "options": [
+    "bus → buses",
+    "went → go",
+    "into → through",
+    "tunnel → road"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單數 bus 與 went 已一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "過去事件應保留 went。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "進入又從遠端出來表示完整穿越，through 更精確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "改成 road 會刪除封閉通道路徑。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-tunnel-entry-with-far-end-exit",
+    "edit-into-to-through"
+  ],
+  "representationType": "motion-path-precision-edit",
+  "misconceptionTargets": [
+    "ignore-exit-when-choosing-into"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求表達完整路徑，不是否定 into 能表示入口動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把出口證據納入同一個介系詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

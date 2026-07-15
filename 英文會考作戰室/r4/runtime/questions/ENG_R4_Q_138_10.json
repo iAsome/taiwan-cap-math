@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence places one person inside a group?",
+  "options": [
+    "Ben stood beside the team.",
+    "Ben stood among the team members.",
+    "Ben stood between the door and the wall.",
+    "Ben stood near the team."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "beside 表示在隊伍旁，不在群體內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "among the team members 表示 Ben 位於成員之中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "between 描述門與牆兩個邊界。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "near 只表示靠近隊伍。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "match-inside-group-definition",
+    "select-among-team-members-sentence"
+  ],
+  "representationType": "among-function-selection",
+  "misconceptionTargets": [
+    "confuse-near-group-with-among-group"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "inside a group 是 among 的核心條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項明確將 Ben 放入 team members 群體。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

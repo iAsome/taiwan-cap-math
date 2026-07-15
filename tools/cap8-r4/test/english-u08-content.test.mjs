@@ -22,6 +22,7 @@ const UNITS = [
   { id: "ENG_R4_U17", firstSkill: 113 },
   { id: "ENG_R4_U18", firstSkill: 120 },
   { id: "ENG_R4_U19", firstSkill: 127 },
+  { id: "ENG_R4_U20", firstSkill: 134 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -561,6 +562,44 @@ test("U19 adjective, adverb, degree, comparison, and linking-verb uses keep thei
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U19 duplicate ${label}`);
+});
+
+test("U20 time, place, movement, and arrival prepositions keep their semantic boundaries", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U20");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_134_04").options[3], "at");
+  assert.equal(question.get("ENG_R4_Q_134_08").options[3], "no word");
+  assert.equal(question.get("ENG_R4_Q_135_03").options[2], "during");
+  assert.match(question.get("ENG_R4_Q_135_11").options[2], /up to midnight/);
+  assert.equal(question.get("ENG_R4_Q_136_08").options[3], "in");
+  assert.match(question.get("ENG_R4_Q_136_11").options[2], /touches the box/);
+  assert.equal(question.get("ENG_R4_Q_137_10").options[1], "The bag is below the window.");
+  assert.equal(question.get("ENG_R4_Q_138_06").options[1], "among");
+  assert.equal(question.get("ENG_R4_Q_138_09").options[0], "between");
+  assert.equal(question.get("ENG_R4_Q_138_12").options[3], "The shop is beside the bank and near the school.");
+  assert.equal(question.get("ENG_R4_Q_139_09").options[0], "through");
+  assert.match(question.get("ENG_R4_Q_139_11").options[2], /went inside/);
+  assert.equal(question.get("ENG_R4_Q_139_12").options[3], "through / onto");
+  assert.equal(question.get("ENG_R4_Q_140_04").options[3], "home");
+  assert.equal(question.get("ENG_R4_Q_140_10").options[1], "reached");
+  assert.equal(question.get("ENG_R4_Q_140_11").options[2], "at / it");
+  const timeLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S134");
+  assert.match(timeLecture.sections.map((value) => value.content).join(" "), /at 7:20.*on Tuesday.*in June.*next Friday/);
+  const relativePlaceLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S138");
+  assert.match(relativePlaceLecture.sections.map((value) => value.content).join(" "), /between.*among.*beside.*near/);
+  const movementLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S139");
+  assert.match(movementLecture.sections.map((value) => value.content).join(" "), /to school.*into the box.*onto the floor.*through the tunnel/);
+  const arrivalLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S140");
+  assert.match(arrivalLecture.sections.map((value) => value.content).join(" "), /arrive in Taipei.*arrive at the station.*reach the station.*arrive home/);
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U20 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U20 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S139",
+  "subject": "english",
+  "unitId": "ENG_R4_U20",
+  "skillId": "ENG_R4_S139",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S138"
+  ],
+  "objectives": [
+    "依移動終點選擇 to、into 或 onto。",
+    "使用 through 表示從空間或通道的一端進入並向另一端移動。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S139_SEC_01",
+      "title": "to 指向目的地",
+      "content": "walk to school、send the letter to Mia 都指出移動或傳遞的終點，但不特別說明進入內部或登上表面。to 的重點是方向與目的地。"
+    },
+    {
+      "id": "ENG_R4_L_S139_SEC_02",
+      "title": "into 表示移動到內部",
+      "content": "The cat jumped into the box 表示牠從外面移到箱子裡。in 描述已在內部的靜態位置，into 則保留跨過邊界的移動。"
+    },
+    {
+      "id": "ENG_R4_L_S139_SEC_03",
+      "title": "onto 表示移動到表面",
+      "content": "The book fell onto the floor 說明書本移動後到達地面表面。on the floor 可描述最後位置，onto 則把到達表面的過程也寫出來。"
+    },
+    {
+      "id": "ENG_R4_L_S139_SEC_04",
+      "title": "through 表示穿過內部路徑",
+      "content": "The train went through the tunnel 表示列車進入隧道並沿其中通過。若只到隧道入口，應用 to；若只進入而未說穿過，則可能用 into。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S139_EX_01",
+      "prompt": "We walked ___ the museum but did not enter.",
+      "steps": [
+        "museum 是目的地。",
+        "題目排除進入內部。",
+        "選 to。"
+      ],
+      "answer": "to",
+      "why": "大家走到 museum，卻明確沒有進入，因此只需用 to 表示目的地。into 會和 did not enter 直接衝突。"
+    },
+    {
+      "id": "ENG_R4_L_S139_EX_02",
+      "prompt": "The toy moved ___ the box from the floor.",
+      "steps": [
+        "from the floor 給出原來位置。",
+        "終點在 box 內。",
+        "選 into。"
+      ],
+      "answer": "into",
+      "why": "玩具原本在地上，之後跨過箱口到箱內，into 能表達這段方向改變。in the box 只描述箱內位置，不能完整保留從地面移入的關係。"
+    },
+    {
+      "id": "ENG_R4_L_S139_EX_03",
+      "prompt": "The bus drove ___ the long tunnel.",
+      "steps": [
+        "公車進入隧道。",
+        "路徑延伸到另一端。",
+        "使用 through。"
+      ],
+      "answer": "through",
+      "why": "公車沿隧道內部前進並穿過通道，through 能表達完整路徑。to 只到入口，into 只強調進入，都少了穿越意思。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "to 與 into 都只表示到某地，所以能互換。",
+      "whyWrong": "into 明確包含進入內部，to 只指出目的地。",
+      "correction": "檢查是否跨過容器或空間邊界。"
+    },
+    {
+      "belief": "on 和 onto 完全相同。",
+      "whyWrong": "on 常描述位置，onto 強調移動到表面。",
+      "correction": "有移動過程時依終點表面考慮 onto。"
+    },
+    {
+      "belief": "through 只要看到隧道就一定使用。",
+      "whyWrong": "若只到入口或進入後停下，移動關係不同。",
+      "correction": "確認路徑是否穿過內部並向另一端延伸。"
+    },
+    {
+      "belief": "into 可以用來表示人在房間裡的靜態位置。",
+      "whyWrong": "靜態位置通常用 in，into 需要方向或移動。",
+      "correction": "比較 is in the room 與 walked into the room。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "只走到公園入口可用哪個字？",
+      "answer": "to",
+      "reason": "它只指出目的地。"
+    },
+    {
+      "prompt": "跳進水裡可用哪個字？",
+      "answer": "into",
+      "reason": "移動終點在水的內部範圍。"
+    },
+    {
+      "prompt": "穿過森林可用哪個字？",
+      "answer": "through",
+      "reason": "路徑在森林內延伸並通過。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

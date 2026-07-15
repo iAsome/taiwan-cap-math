@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_136_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia is inside the station building. Mia is ___ the station.",
+  "options": [
+    "on",
+    "at the door of",
+    "near",
+    "in"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "on 會把位置放在車站表面，不是建築內部。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at the door of 只把她放在車站門口。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "near 表示在附近，可能尚未進入。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "in 明確表示人在車站建築內。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "preserve-inside-building-detail",
+    "select-in-station-cloze"
+  ],
+  "representationType": "location-perspective-cloze",
+  "misconceptionTargets": [
+    "treat-near-and-in-as-identical-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "inside 是本題不能省略的空間細節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項完整保留人在建築內部的位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

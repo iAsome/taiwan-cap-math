@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_134_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Music show: June 6, 4:00 p.m. Which line gives the time correctly?",
+  "options": [
+    "The show is on June 6 at 4:00 p.m.",
+    "The show is in June 6 on 4:00 p.m.",
+    "The show is at June 6 in 4:00 p.m.",
+    "The show is on June at 6:00 p.m."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "on 接日期 June 6，at 接鐘點 4:00 p.m.。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "月份加日數不能用 in，鐘點也不能用 on。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at 與 in 都放錯時間尺度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此項把日期 6 誤改成時間 6:00。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "parse-date-and-time-from-show-card",
+    "assign-on-date-and-at-clock"
+  ],
+  "representationType": "schedule-card-time-transfer",
+  "misconceptionTargets": [
+    "swap-date-and-clock-prepositions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "卡片同時提供日期與鐘點，兩者要分開判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整保留 June 6 和 4:00 p.m.。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

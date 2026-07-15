@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_139_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cat is on the roof now. Which sentence describes the earlier movement to that position?",
+  "options": [
+    "It jumped in the roof.",
+    "It jumped onto the roof.",
+    "It jumped through the roof.",
+    "It jumped at the roof."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "in the roof 會把貓放在屋頂結構內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "onto the roof 表示跳躍終點在屋頂表面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "through the roof 表示穿破或穿過屋頂。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "at the roof 只指向位置，沒有到達表面的關係。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "convert-static-on-roof-to-prior-motion",
+    "choose-jumped-onto-roof"
+  ],
+  "representationType": "static-to-motion-rewrite",
+  "misconceptionTargets": [
+    "reuse-in-for-surface-destination"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "現在的 on 提供最後位置，題目要求回推移動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 onto 連接跳躍與表面終點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

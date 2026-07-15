@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_138_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The school is on one side of the bank, and the park is on the other. The bank is ___ them.",
+  "options": [
+    "between",
+    "among",
+    "beside",
+    "near"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "between 表示 bank 位於兩個明確地點所形成的中間位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "among 會把周圍對象視為群體，不能保留兩側關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "beside 只指出緊鄰一個對象，沒有表達兩邊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "near 只表示接近，無法說明 one side 與 the other。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-opposite-side-clues-to-two-boundaries",
+    "place-bank-between-school-park"
+  ],
+  "representationType": "between-opposite-sides-cloze",
+  "misconceptionTargets": [
+    "replace-middle-position-with-general-nearness"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "one side 與 the other 提供兩個相對邊界。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整保留 bank 位於兩地中間的資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
