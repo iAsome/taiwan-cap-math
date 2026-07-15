@@ -279,6 +279,7 @@ export function applyOfficialReviewEvidence(index, validated) {
     ledger.sourceReviews.sort((a, b) => compareText(a.id, b.id));
     ledger.items.sort((a, b) => compareText(`${a.year}\0${a.paper}\0${a.itemId}`, `${b.year}\0${b.paper}\0${b.itemId}`));
   }
-  if (validated.counts.materials || validated.counts.items) index.status = "partially-reviewed";
+  if (validated.counts.materials === materials.size) index.status = "complete-reviewed";
+  else if (validated.counts.materials || validated.counts.items) index.status = "partially-reviewed";
   return index;
 }

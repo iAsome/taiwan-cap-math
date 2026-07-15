@@ -60,16 +60,17 @@ function addSourceReview(ledger, materialIndex = 0) {
   return material.sourceSha256;
 }
 
-test("checked-in index inventories every fixed material and only completed review shards", async () => {
+test("checked-in index inventories and reviews every fixed material", async () => {
   const snapshot = await loadOfficialSourceRegister();
   const actual = JSON.parse(await readFile(path.join(HERE, "official-material-ledger.json"), "utf8"));
   assert.deepEqual(OFFICIAL_ITEM_YEARS, [106, 107, 108, 109, 110, 111, 112, 113, 114, 115]);
   const result = await validateOfficialMaterialLedgerIndex(actual, snapshot);
   assert.equal(result.years, 10);
   assert.equal(result.materials, 246);
-  assert(result.sourceReviews > 0 && result.sourceReviews < result.materials);
+  assert.equal(result.sourceReviews, result.materials);
   assert(result.items > 0);
-  assert.equal(result.status, "partially-reviewed");
+  assert.equal(result.status, "complete-reviewed");
+  await validateOfficialMaterialLedgerIndex(actual, snapshot, { requireComplete: true });
   assert(actual.years.find((ledger) => ledger.year === 106).items.some((item) => item.itemId === "CAP-106-MAIN-ENGLISH-READING-001"));
 });
 

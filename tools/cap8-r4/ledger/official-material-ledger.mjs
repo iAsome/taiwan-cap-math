@@ -202,9 +202,10 @@ export async function validateOfficialMaterialLedgerIndex(index, snapshot, { req
   assert.equal(index.sourceRegisterSha256, snapshot.sha256, "official source register hash mismatch");
   assert.deepEqual(index.years.map((ledger) => ledger.year), YEARS);
   const reviewed = index.years.some((ledger) => ledger.sourceReviews.length || ledger.items.length);
-  assert.equal(index.status, requireComplete ? "complete-reviewed" : reviewed ? "partially-reviewed" : "materials-inventoried-unreviewed");
+  const claimsComplete = index.status === "complete-reviewed";
+  assert.equal(index.status, requireComplete || claimsComplete ? "complete-reviewed" : reviewed ? "partially-reviewed" : "materials-inventoried-unreviewed");
   const results = [];
-  for (const ledger of index.years) results.push(await validateOfficialMaterialLedger(ledger, snapshot, { requireComplete }));
+  for (const ledger of index.years) results.push(await validateOfficialMaterialLedger(ledger, snapshot, { requireComplete: requireComplete || claimsComplete }));
   return {
     years: results.length,
     materials: results.reduce((total, result) => total + result.materials, 0),

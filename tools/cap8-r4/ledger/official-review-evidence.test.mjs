@@ -35,7 +35,7 @@ test("review evidence covers only fully rendered sources and complete papers", a
     materials: 246,
     sourceReviews: expected.materials,
     items: expected.items,
-    status: "partially-reviewed",
+    status: "complete-reviewed",
   });
 });
 
