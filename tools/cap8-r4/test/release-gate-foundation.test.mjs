@@ -12,6 +12,7 @@ import {
   verifyOfficialLedgerEvidence,
   verifyOfficialReviewShardEvidence,
   verifyPublisherReferenceEvidence,
+  verifyPublisherPublicResourceEvidence,
   verifyUserRequirements,
 } from "../run-full-release-gate.mjs";
 
@@ -57,6 +58,14 @@ test("publisher catalog and Chinese reference foundations are independently lock
   const publisher = await verifyPublisherReferenceEvidence();
   assert.equal(publisher.records, 95);
   assert.equal(publisher.bySubject.chinese, 18);
+  assert.deepEqual(await verifyPublisherPublicResourceEvidence(), {
+    resources: 13,
+    publishers: 5,
+    learningReferences: 8,
+    errataQuerySets: 8,
+    errataRecords: 21,
+    targetErrataRecords: 20,
+  });
   const chinese = await verifyChineseReferenceFoundation();
   assert.deepEqual(chinese.categories, {
     categories: 8,

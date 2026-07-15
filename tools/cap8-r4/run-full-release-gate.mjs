@@ -38,6 +38,11 @@ import {
   serializePublisherReferenceLedger,
   validatePublisherCatalog,
 } from "./publisher-reference-catalog.mjs";
+import {
+  serializePublisherLearningReferenceLedger,
+  serializeWebSourceDiscoveryLedger,
+  validatePublisherPublicResourceReview,
+} from "./publisher-public-resource-review.mjs";
 import { verifyCurriculumSources } from "./verify-curriculum-sources.mjs";
 import { verifyOfficialSources } from "./verify-official-sources.mjs";
 import { verifyPackage } from "./verify-package.mjs";
@@ -56,6 +61,9 @@ const CHINESE_WRITING_CALIBRATION_PATH = "tools/cap8-r4/ledger/chinese-writing-c
 const PUBLISHER_CATALOG_PDF_PATH = "tools/cap8-r4/evidence/publisher/naer-115-approved-textbooks.pdf";
 const PUBLISHER_CATALOG_JSON_PATH = "tools/cap8-r4/evidence/publisher/naer-115-approved-textbooks.json";
 const PUBLISHER_LEDGER_PATH = "tools/cap8-r4/ledger/publisher-reference-ledger.csv";
+const PUBLISHER_PUBLIC_REVIEW_PATH = "tools/cap8-r4/ledger/publisher-public-resource-review.json";
+const PUBLISHER_LEARNING_LEDGER_PATH = "tools/cap8-r4/ledger/publisher-learning-reference-ledger.csv";
+const WEB_DISCOVERY_LEDGER_PATH = "tools/cap8-r4/ledger/web-source-discovery-ledger.csv";
 const OFFICIAL_SOURCE_REGISTER_PATH = "tools/cap8-r4/evidence/official/official-source-register.json";
 const OFFICIAL_LEDGER_PATH = "tools/cap8-r4/ledger/official-material-ledger.json";
 const OFFICIAL_EXTRACTION_PATH = "tools/cap8-r4/evidence/official/official-extraction-index.json";
@@ -281,6 +289,18 @@ export async function verifyPublisherReferenceEvidence(repoRoot = REPO_ROOT) {
   ]);
   const counts = await validatePublisherCatalog(catalog, pdfBytes);
   assert.equal(ledgerBytes.toString("utf8"), serializePublisherReferenceLedger(catalog));
+  return counts;
+}
+
+export async function verifyPublisherPublicResourceEvidence(repoRoot = REPO_ROOT) {
+  const [review, learningLedger, discoveryLedger] = await Promise.all([
+    readJson(repoRoot, PUBLISHER_PUBLIC_REVIEW_PATH),
+    readRepositoryFile(repoRoot, PUBLISHER_LEARNING_LEDGER_PATH),
+    readRepositoryFile(repoRoot, WEB_DISCOVERY_LEDGER_PATH),
+  ]);
+  const counts = await validatePublisherPublicResourceReview(review);
+  assert.equal(learningLedger.toString("utf8"), serializePublisherLearningReferenceLedger(review));
+  assert.equal(discoveryLedger.toString("utf8"), serializeWebSourceDiscoveryLedger(review));
   return counts;
 }
 
@@ -661,6 +681,7 @@ export async function runFullReleaseGate({
     verifyAuthorityNodeReview,
     verifyEnglishVocabularyAuthority,
     verifyPublisherReferenceEvidence,
+    verifyPublisherPublicResourceEvidence,
     verifyChineseReferenceFoundation,
     verifyAuthorityGraphEvidence,
     verifyOfficialLedgerEvidence,
@@ -690,6 +711,7 @@ export async function runFullReleaseGate({
   checks.push(await checked("reviewed-fourth-stage-authority-nodes", () => use.verifyAuthorityNodeReview(repoRoot), repoRoot));
   checks.push(await checked("official-english-vocabulary-authority", () => use.verifyEnglishVocabularyAuthority(repoRoot), repoRoot));
   checks.push(await checked("publisher-reference-catalog", () => use.verifyPublisherReferenceEvidence(repoRoot), repoRoot));
+  checks.push(await checked("publisher-public-resource-review", () => use.verifyPublisherPublicResourceEvidence(repoRoot), repoRoot));
   checks.push(await checked("chinese-reference-foundation", () => use.verifyChineseReferenceFoundation(repoRoot), repoRoot));
   checks.push(await checked("frozen-authority-graph", () => use.verifyAuthorityGraphEvidence(repoRoot), repoRoot));
   checks.push(await checked("complete-official-106-115-ledger", () => use.verifyOfficialLedgerEvidence(repoRoot), repoRoot));
