@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S196",
+  "subject": "english",
+  "unitId": "ENG_R4_U28",
+  "skillId": "ENG_R4_S196",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S195"
+  ],
+  "objectives": [
+    "能讀懂 n.、v.、adj.、adv. 等常見字典詞性標記。",
+    "能在一字多詞性時，以句法位置和字典例句確認實際用法。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S196_SEC_01",
+      "title": "先讀詞性標記，再看定義",
+      "content": "常見標記 n. 是 noun、v. 是 verb、adj. 是 adjective、adv. 是 adverb。查字時先確認句子需要哪一類，再閱讀該詞性下的定義與例句，能避免看到第一個中文意思就直接套入。"
+    },
+    {
+      "id": "ENG_R4_L_S196_SEC_02",
+      "title": "同一拼法可以有不同詞性",
+      "content": "plan 可作名詞或動詞，light 可作名詞、形容詞或動詞，daily 可作形容詞或副詞。字典分列多個標記，是因為同一字形在不同位置會有不同工作；不能把整個單字永久貼上一種詞性。"
+    },
+    {
+      "id": "ENG_R4_L_S196_SEC_03",
+      "title": "字典中的字族條目要分開核對",
+      "content": "success n.、successful adj.、successfully adv. 雖共享詞根，仍是不同條目或形式。句子若是 The plan was ___，應查形容詞；若是 finished ___，應查副詞，不能只選自己最熟的拼法。"
+    },
+    {
+      "id": "ENG_R4_L_S196_SEC_04",
+      "title": "標記提供語法，例句確認自然用法",
+      "content": "詞性正確不代表意思一定合適。close 可作不同詞性，stand close 中是副詞，a close friend 中是形容詞；若還不確定，就比較字典例句中的位置、搭配與要表達的關係。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S196_EX_01",
+      "prompt": "A dictionary shows plan n., v. In 'We plan to leave,' which label should you use?",
+      "steps": [
+        "找出主詞 We。",
+        "plan 是句中主要動作。",
+        "選 v. 標記。"
+      ],
+      "answer": "v.",
+      "why": "We 後的 plan 承擔主要動詞，並接 to leave 說明計畫內容，所以應查 v. 的用法。若是 a plan，冠詞才會把它標成名詞。"
+    },
+    {
+      "id": "ENG_R4_L_S196_EX_02",
+      "prompt": "A dictionary shows daily adj., adv. What is daily in 'a daily meeting'?",
+      "steps": [
+        "daily 緊接在 meeting 前。",
+        "它描述會議的頻率特徵。",
+        "選 adj. 標記。"
+      ],
+      "answer": "adj.",
+      "why": "daily 直接修飾名詞 meeting，因此這裡使用形容詞條目。若句子是 We meet daily，它會改為修飾 meet 的副詞用法。"
+    },
+    {
+      "id": "ENG_R4_L_S196_EX_03",
+      "prompt": "Entries: health n.; healthy adj. Complete 'Exercise keeps us ___.'",
+      "steps": [
+        "keeps us 後描述 us 的狀態。",
+        "需要形容詞。",
+        "從 adj. 條目選 healthy。"
+      ],
+      "answer": "healthy",
+      "why": "keep + object 後的空格描述 us 維持的狀態，所以要用 adj. healthy。health 是名詞，只能命名健康概念，不能直接完成此補語。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "字典列在最前面的詞性一定適合目前句子。",
+      "whyWrong": "排序不會取代句法判斷，一字多詞性時要選符合位置的條目。",
+      "correction": "先分析句中工作，再查對應標記下的定義與例句。"
+    },
+    {
+      "belief": "一個英文單字只能有一種詞性。",
+      "whyWrong": "plan、light、close、daily 都能依位置承擔不同工作。",
+      "correction": "把詞性視為單字在特定句子中的功能。"
+    },
+    {
+      "belief": "查到中文意思相近，就不必看 adj. 或 adv.。",
+      "whyWrong": "形容詞和副詞即使中文相近，也不能任意交換位置。",
+      "correction": "同時核對意思、詞性與字典例句的搭配。"
+    },
+    {
+      "belief": "字典縮寫只是附加資訊，考試時不需理解。",
+      "whyWrong": "縮寫能直接排除不符合空格句法角色的形式。",
+      "correction": "熟悉 n.、v.、adj.、adv.，並用它們定位正確條目。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "n. 代表哪一詞性？",
+      "answer": "noun",
+      "reason": "它標示名詞條目。"
+    },
+    {
+      "prompt": "The light bag 中，light 應查哪個標記？",
+      "answer": "adj.",
+      "reason": "light 直接描述 bag。"
+    },
+    {
+      "prompt": "They record the talk 中，record 應查哪個標記？",
+      "answer": "v.",
+      "reason": "record 是主詞 they 執行的動作。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

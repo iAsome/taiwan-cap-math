@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_191_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The class had a long ___ about the new rule. (discuss)",
+  "options": [
+    "discuss",
+    "discussing",
+    "discussed",
+    "discussion"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "discuss 是動詞，不能接在 a long 後作中心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "discussing 在此不如標準事件名詞自然。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "discussed 是過去式或分詞，不能作此名詞中心。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "discussion 是名詞，可接 about。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u28-s191-select-discussion-for-a-long-frame",
+    "recognize-spelling-change-before-ion"
+  ],
+  "representationType": "event-noun-cloze",
+  "misconceptionTargets": [
+    "insert-base-verb-after-article"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "a long 與 about the new rule 共同要求一個討論事件名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用實際字形 discussion，而非直接在 discuss 後亂加字尾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

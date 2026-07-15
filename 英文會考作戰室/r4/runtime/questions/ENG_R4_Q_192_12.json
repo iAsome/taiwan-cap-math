@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_192_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "This glass may break if it falls, so it is ___.",
+  "options": [
+    "break",
+    "breaking",
+    "brokenly",
+    "breakable"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "break 是動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "breaking 表示動作進行，不是物品性質。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "brokenly 不是標準描述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "breakable 表示可能被打破或容易破的。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u28-s192-infer-breakable-property-from-may-break",
+    "distinguish-potential-from-current-breaking"
+  ],
+  "representationType": "property-from-event-possibility",
+  "misconceptionTargets": [
+    "use-participle-for-general-property"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "may break 提供 glass 具有可破性，而不是說它現在已破。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 -able 將可能性轉成形容詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S190",
+  "subject": "english",
+  "unitId": "ENG_R4_U28",
+  "skillId": "ENG_R4_S190",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S189"
+  ],
+  "objectives": [
+    "能先由冠詞、修飾語、動詞與連綴動詞判斷空格需要的詞性。",
+    "能把句法位置與整句意思交叉檢查，不只靠字尾猜答案。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S190_SEC_01",
+      "title": "名詞位置看前後關係",
+      "content": "a、an、the、this、my 等限定語後面常形成名詞片語；若中間已有形容詞，空格通常要放名詞，例如 a clear plan。名詞也常作主詞或受詞，但動名詞也可能占名詞位置，因此判斷的是句中工作，不是只看單字外形。"
+    },
+    {
+      "id": "ENG_R4_L_S190_SEC_02",
+      "title": "形容詞描述名詞或主詞狀態",
+      "content": "形容詞可直接放在名詞前，如 a useful map；也可接在 be、look、feel、sound、smell、taste、become 等連綴動詞後，描述主詞的狀態。連綴動詞後若改放方式副詞，往往會錯把狀態當成動作方式。"
+    },
+    {
+      "id": "ENG_R4_L_S190_SEC_03",
+      "title": "副詞補充動作、程度或頻率",
+      "content": "副詞可說明動作如何、何時或多常發生，也能修飾形容詞，例如 spoke clearly、very narrow。不是每個動詞後都要副詞：若動詞後需要受詞，就應先補名詞；若是連綴動詞，後面可能需要形容詞。"
+    },
+    {
+      "id": "ENG_R4_L_S190_SEC_04",
+      "title": "位置先縮小範圍，語意再定案",
+      "content": "詞性線索只能排除不合位置的形式，最後仍要讀完整句子。The team needs a clear plan 中，空格要名詞且 plan 符合意思；只看到 clear 就選 clearly，或只因某字有 -tion 就選它，都沒有完成語意檢查。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S190_EX_01",
+      "prompt": "The club needs a clear ___ before Friday. (plan / clearly)",
+      "steps": [
+        "a clear 後面還缺名詞中心。",
+        "plan 可作可數名詞。",
+        "代回後表示社團需要明確計畫。"
+      ],
+      "answer": "plan",
+      "why": "a 與 clear 已經組成限定語和形容詞，後面需要名詞完成 a clear plan。clearly 是副詞，不能在這個位置取代被描述的事物。"
+    },
+    {
+      "id": "ENG_R4_L_S190_EX_02",
+      "prompt": "The baby looks ___. (sleepy / sleepily)",
+      "steps": [
+        "looks 在此連接主詞與狀態。",
+        "空格要描述 baby。",
+        "選形容詞 sleepy。"
+      ],
+      "answer": "sleepy",
+      "why": "looks 不是指寶寶用眼睛觀看，而是表示看起來的狀態，所以後面接形容詞 sleepy。sleepily 會說明動作方式，無法完成這個連綴結構。"
+    },
+    {
+      "id": "ENG_R4_L_S190_EX_03",
+      "prompt": "Leo spoke ___ so everyone heard him. (clear / clearly)",
+      "steps": [
+        "spoke 表示說話動作。",
+        "空格回答說話方式。",
+        "選方式副詞 clearly。"
+      ],
+      "answer": "clearly",
+      "why": "空格補充 Leo 如何說話，因此 clearly 修飾 spoke。clear 是形容詞，適合描述聲音或訊息本身，不能直接放在這裡說明動作方式。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到動詞後有空格，就認為一定要填副詞。",
+      "whyWrong": "動詞後可能缺受詞，連綴動詞後也可能需要形容詞。",
+      "correction": "先判斷空格是受詞、主詞狀態，還是動作修飾語。"
+    },
+    {
+      "belief": "單字以 -ly 結尾就一定能放進任何副詞位置。",
+      "whyWrong": "friendly 等字多作形容詞，而且詞義也可能不合句意。",
+      "correction": "用句法位置縮小詞性後，仍須核對實際用法與意思。"
+    },
+    {
+      "belief": "冠詞後面看到形容詞，就把形容詞當成完整名詞片語。",
+      "whyWrong": "a clear 後仍缺少被描述的人或事物。",
+      "correction": "確認冠詞、形容詞與名詞中心是否都已出現。"
+    },
+    {
+      "belief": "只要某個選項有熟悉的字尾，就不必讀完整句子。",
+      "whyWrong": "同詞性的多個字仍可能因語意或搭配而只有一個適合。",
+      "correction": "先看位置，再把候選形式逐一代回整句。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "The soup smells fresh 中，fresh 描述什麼？",
+      "answer": "soup 的狀態",
+      "reason": "smells 在此是連綴動詞，fresh 是形容詞補語。"
+    },
+    {
+      "prompt": "The nurse spoke softly 中，softly 的工作是什麼？",
+      "answer": "說明 spoke 的方式",
+      "reason": "softly 是方式副詞，不是人物或物品名稱。"
+    },
+    {
+      "prompt": "a useful tool 中，哪一個字是名詞中心？",
+      "answer": "tool",
+      "reason": "a 限定整個名詞片語，useful 描述 tool。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

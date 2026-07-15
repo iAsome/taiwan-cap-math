@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_190_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Leo spoke ___ so everyone could hear each word.",
+  "options": [
+    "clear",
+    "clearness",
+    "clearly",
+    "cleared"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "clear 是形容詞，不能直接修飾 spoke。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "clearness 是名詞，不能說明 Leo 如何說話。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "clearly 是副詞，說明說話方式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cleared 是動詞過去式或分詞，意思也不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u28-s190-locate-manner-slot-after-spoke",
+    "choose-clearly-from-hearing-result"
+  ],
+  "representationType": "action-manner-cloze",
+  "misconceptionTargets": [
+    "place-adjective-after-action-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "so 子句說明每個字都能聽清楚，空格要補充 spoke 的方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項在詞性與因果語意上都完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S194",
+  "subject": "english",
+  "unitId": "ENG_R4_U28",
+  "skillId": "ENG_R4_S194",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S193"
+  ],
+  "objectives": [
+    "能用 un-、in-、im-、dis- 等常見否定字首推測詞義方向。",
+    "能辨認字首只是線索，並以詞根與上下文排除 uncle 等假拆解。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S194_SEC_01",
+      "title": "un- 常把原有性質轉向否定",
+      "content": "unsafe、unhappy、unfair 等字常可先理解為不安全、不快樂、不公平。這個方向有助於閱讀，但仍要辨認後面的完整詞根；uncle 的 un 並不是附加在 cle 前的否定字首。"
+    },
+    {
+      "id": "ENG_R4_L_S194_SEC_02",
+      "title": "in- 與 im- 會依字形出現",
+      "content": "incorrect、incomplete、inactive 使用 in-，impossible、impatient 使用 im-。兩者常帶有不或非的方向，但拼法不能任意互換，也不是每個以 in 或 im 開頭的字都能拆成否定字首。"
+    },
+    {
+      "id": "ENG_R4_L_S194_SEC_03",
+      "title": "dis- 常表示相反、分離或停止",
+      "content": "disagree 表示不同意，dishonest 表示不誠實，disappear 表示不再看得見。dis- 提供大方向，但不同詞的精確意思不完全相同，因此不能只用一個中文詞硬套所有例子。"
+    },
+    {
+      "id": "ENG_R4_L_S194_SEC_04",
+      "title": "先拆可確認的詞根，再回到上下文",
+      "content": "遇到不熟的字，可先找熟悉詞根，再看字首是否改變方向，最後用前後句驗證。例如 The box is unsafe, so do not touch it 中，警告內容支持 unsafe 的負向解讀；若上下文不支持，就不能只靠字母猜。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S194_EX_01",
+      "prompt": "The bridge is unsafe, so the road is closed. What direction does un- add?",
+      "steps": [
+        "找出詞根 safe。",
+        "un- 反轉安全方向。",
+        "closed 提供負向情境證據。"
+      ],
+      "answer": "It makes safe negative.",
+      "why": "safe 表示安全，un- 加在前面形成 unsafe，方向變為不安全。後面的 road is closed 也支持這座橋目前不適合通行。"
+    },
+    {
+      "id": "ENG_R4_L_S194_EX_02",
+      "prompt": "Mia disagreed with the plan. Did she share the same idea?",
+      "steps": [
+        "找出 agree。",
+        "dis- 改變同意方向。",
+        "判定兩方看法不同。"
+      ],
+      "answer": "No, she did not share the same idea.",
+      "why": "agree 表示同意，disagree 則表示不同意。句子只告訴我們 Mia 不贊成這項計畫，不能再推論她提出了哪個替代方案。"
+    },
+    {
+      "id": "ENG_R4_L_S194_EX_03",
+      "prompt": "The word uncle begins with un. Does un- mean not here?",
+      "steps": [
+        "嘗試找可獨立辨識的詞根。",
+        "cle 不是此字中的常見詞根。",
+        "不把 uncle 當成否定構詞。"
+      ],
+      "answer": "No.",
+      "why": "uncle 是完整的親屬名稱，開頭字母剛好是 un，並非在 cle 前加否定字首。這說明外形相同不等於構詞方式相同。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "任何以 un 開頭的字都表示原字的相反。",
+      "whyWrong": "uncle、under 等字不能用這種方式拆解。",
+      "correction": "確認字首後面是否有可辨識且意思相關的完整詞根。"
+    },
+    {
+      "belief": "in- 和 im- 可以任意交換而不影響拼字。",
+      "whyWrong": "實際單字有固定形式，例如 impossible，不寫 inpossible。",
+      "correction": "理解共同否定方向，同時記住已確認的標準字形。"
+    },
+    {
+      "belief": "只要看到否定字首，就能知道整個句子的所有細節。",
+      "whyWrong": "字首只提供方向，不說明事件原因、時間或結果。",
+      "correction": "用上下文補足範圍，避免加入文章未提供的資訊。"
+    },
+    {
+      "belief": "dis- 在每個字中都只能逐字翻成不。",
+      "whyWrong": "disappear、disconnect 等詞的自然意思可能是消失或分開。",
+      "correction": "先抓相反或分離方向，再依完整單字與句子調整。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "impatient 與 patient 的方向相同嗎？",
+      "answer": "不同",
+      "reason": "im- 在此帶否定方向。"
+    },
+    {
+      "prompt": "incomplete 表示 complete 已全部達成嗎？",
+      "answer": "沒有",
+      "reason": "in- 顯示尚不完整。"
+    },
+    {
+      "prompt": "under 的 un 可以解讀成 not 嗎？",
+      "answer": "不可以",
+      "reason": "under 不是 un- 加 der 的否定構詞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

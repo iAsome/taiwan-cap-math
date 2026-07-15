@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_194_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Nora's report is incomplete. Which statement follows?",
+  "options": [
+    "Nora did not start it.",
+    "Every part is wrong.",
+    "Some needed part is still missing.",
+    "The report will never be finished."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "incomplete 不表示完全未開始。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺少部分不等於每部分錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "in- + complete 表示尚未具備全部內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有永遠無法完成的預測。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u28-s194-infer-missing-part-from-incomplete",
+    "avoid-all-or-never-overstatement"
+  ],
+  "representationType": "scope-limited-prefix-inference",
+  "misconceptionTargets": [
+    "interpret-incomplete-as-entirely-wrong"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "否定字首作用在 complete，範圍是完整程度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是可由該字支持的最小結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

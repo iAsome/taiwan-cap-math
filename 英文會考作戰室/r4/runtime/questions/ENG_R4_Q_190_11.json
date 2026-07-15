@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_190_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "In 'The careful student checked the answer twice,' careful describes ___.",
+  "options": [
+    "checked",
+    "twice",
+    "student",
+    "answer"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "checked 是動作，若修飾它通常需副詞 carefully。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "twice 是次數副詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "careful 緊接在 student 前，描述學生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "answer 與 careful 之間隔著主要動詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u28-s190-link-careful-to-student",
+    "reject-remote-answer-and-verb-attachments"
+  ],
+  "representationType": "modifier-head-tracing",
+  "misconceptionTargets": [
+    "attach-adjective-to-nearest-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "看修飾語與名詞的相鄰關係，不因 checked 是動詞就把所有修飾語連給它。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項正確指出形容詞的中心名詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

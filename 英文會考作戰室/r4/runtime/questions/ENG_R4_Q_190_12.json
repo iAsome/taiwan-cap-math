@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_190_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The lights went out ___. Which type of word belongs in the blank?",
+  "options": [
+    "noun",
+    "adjective",
+    "verb",
+    "adverb"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "went out 已形成完整事件，不缺名詞受詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "形容詞不能直接說明 went out 的方式或時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中已有主要動詞 went。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "副詞可補充燈何時或如何熄滅。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u28-s190-analyze-complete-phrasal-event",
+    "classify-final-light-event-slot-as-adverbial"
+  ],
+  "representationType": "open-slot-category-reasoning",
+  "misconceptionTargets": [
+    "seek-object-after-intransitive-phrasal-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "went out 是不及物片語，句尾空格應加事件修飾語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項可容納 suddenly、yesterday 等不同副詞資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

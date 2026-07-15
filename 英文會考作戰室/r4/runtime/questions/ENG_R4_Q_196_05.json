@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_196_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S196"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which dictionary label should you check for a word after 'a' in 'a ___ arrived'?",
+  "options": [
+    "n.",
+    "v.",
+    "adj.",
+    "adv."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "a 後的空格是 arrived 的人物或事物主詞，需要名詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "主要動詞已是 arrived。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "若只有形容詞，後面仍缺名詞中心。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "副詞不能被 a 限定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u28-s196-choose-n-label-after-indefinite-article",
+    "derive-dictionary-category-from-empty-subject-slot"
+  ],
+  "representationType": "dictionary-label-from-sentence-slot",
+  "misconceptionTargets": [
+    "look-up-adjective-only-after-article"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "a ___ 整體位於 arrived 前，必須形成名詞片語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是查找候選字時的起點，仍需再核對語意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_192_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "It was a ___ morning, so every road was wet. (rain)",
+  "options": [
+    "rain",
+    "rained",
+    "raining",
+    "rainy"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "rain 是名詞或動詞，不能直接修飾 morning。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "rained 是過去式，不能放在此名詞前位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "raining 不能放在 a 與 morning 間作一般描述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "rainy 是形容詞，表示有雨的。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u28-s192-form-rainy-before-morning",
+    "use-wet-roads-as-weather-evidence"
+  ],
+  "representationType": "y-weather-adjective",
+  "misconceptionTargets": [
+    "place-raining-before-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "a 與 morning 之間需要形容詞，後文 wet 支持有雨情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 rain + y 的標準形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

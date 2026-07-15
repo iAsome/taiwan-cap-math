@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_193_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S193"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which word is the adverb in 'The very tired runner walked slowly'?",
+  "options": [
+    "tired",
+    "runner",
+    "slowly",
+    "walked"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tired 是形容詞，描述 runner。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "runner 是名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "slowly 是副詞，修飾 walked。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "walked 是動詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u28-s193-identify-slowly-among-content-words",
+    "separate-adverb-from-adjective-noun-verb"
+  ],
+  "representationType": "part-of-speech-sentence-scan",
+  "misconceptionTargets": [
+    "choose-tired-because-very-precedes-it"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "very 也是程度副詞，但選項中要找的是 slowly；題目有唯一可選答案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項直接說明走路方式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

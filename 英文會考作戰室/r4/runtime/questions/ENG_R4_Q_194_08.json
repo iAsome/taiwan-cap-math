@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_194_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which word should not be read as a negative prefix plus a root?",
+  "options": [
+    "unsafe",
+    "impatient",
+    "disagree",
+    "uncle"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "unsafe 可分析為 un- + safe。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "impatient 可由 im- 與 patient 理解。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "disagree 可由 dis- 與 agree 理解。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "uncle 是完整親屬名稱，cle 不是此處詞根。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u28-s194-reject-false-prefix-analysis-of-uncle",
+    "verify-independent-root-after-prefix"
+  ],
+  "representationType": "false-segmentation-detection",
+  "misconceptionTargets": [
+    "split-every-un-initial-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "字母開頭相同不保證存在構詞關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項防止把所有 un 開頭的字機械拆解。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

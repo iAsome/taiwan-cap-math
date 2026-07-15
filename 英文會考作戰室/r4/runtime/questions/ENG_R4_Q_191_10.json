@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_191_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses 'happiness' as the subject?",
+  "options": [
+    "The child happiness smiled.",
+    "Her happiness filled the room.",
+    "She spoke happinessly.",
+    "The news was happiness."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "child 才位於 smiled 前的主詞位置，happiness 插入後破壞結構。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Her happiness 是名詞片語，作 filled 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "happinessly 不是標準副詞，也不是主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The news 是主詞，happiness 位於 was 後。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u28-s191-find-happiness-as-subject",
+    "distinguish-subject-position-from-predicate-noun"
+  ],
+  "representationType": "noun-subject-sentence-comparison",
+  "misconceptionTargets": [
+    "count-any-noun-position-as-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定 subject，不只要求看見名詞形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時呈現所有格限定與完整主詞功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

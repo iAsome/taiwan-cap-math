@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_194_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The box is unlocked, so you can open it without a key. What does 'un-' show here?",
+  "options": [
+    "The box is not locked.",
+    "The box has two locks.",
+    "The box was made yesterday.",
+    "The key is inside."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "unlocked 在本情境表示沒有鎖住。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "un- 不表示數量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "它不提供製造時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不用鑰匙不能證明鑰匙在裡面。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u28-s194-use-keyless-opening-to-read-unlocked",
+    "reject-unstated-lock-count-and-key-location"
+  ],
+  "representationType": "prefix-context-confirmation",
+  "misconceptionTargets": [
+    "overinfer-object-details-from-prefix"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "後半句 without a key 支持 not locked 的狀態解讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留題幹明示範圍，沒有猜測鑰匙位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

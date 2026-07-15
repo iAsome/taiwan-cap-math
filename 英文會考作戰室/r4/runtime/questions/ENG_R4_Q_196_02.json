@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_196_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S196"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A dictionary lists 'light n., adj., v.' What is 'light' in 'the light bag'?",
+  "options": [
+    "noun",
+    "adjective",
+    "verb",
+    "adverb"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "light 沒有在此命名燈或光。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "light 直接描述 bag 的重量，是形容詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有點燃動作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "它沒有修飾動詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u28-s196-classify-light-before-bag",
+    "select-adjective-sense-from-multi-entry-word"
+  ],
+  "representationType": "dictionary-polysemy-position",
+  "misconceptionTargets": [
+    "assign-noun-label-to-every-light"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "相同拼法要由名詞前位置選擇 adj. 條目。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不把其他字典義項帶進目前句子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

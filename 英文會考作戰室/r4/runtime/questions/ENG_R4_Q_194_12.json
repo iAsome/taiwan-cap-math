@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_194_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A bird disappeared behind the building. Which reading is safest?",
+  "options": [
+    "The bird became unhappy.",
+    "The bird stopped moving after that.",
+    "The building was not real.",
+    "The bird could no longer be seen from there."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "disappear 與 happy 無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "看不見不等於停止移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有建築物真假資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "disappear 加上 behind the building 支持從該處看不見。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u28-s194-interpret-disappeared-with-viewpoint-limit",
+    "avoid-existence-inference-from-visibility-loss"
+  ],
+  "representationType": "prefix-context-boundary-transfer",
+  "misconceptionTargets": [
+    "equate-disappear-with-cease-to-exist"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "dis- 提供離開可見狀態的大方向，地點片語限制觀察範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項不把暫時遮蔽誇大成不存在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_195_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S195"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The book gives ___ information about local buses. (help)",
+  "options": [
+    "helpfully",
+    "helpful",
+    "helper",
+    "helpfulness"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "helpfully 是副詞，不能直接修飾 information。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "helpful 是形容詞，描述資訊有幫助。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "helper 是人物名詞，不能描述 information。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "helpfulness 是抽象名詞，無法放在另一名詞前作此性質修飾。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u28-s195-select-helpful-before-information",
+    "distinguish-property-from-manner-and-agent"
+  ],
+  "representationType": "word-family-prenominal-form",
+  "misconceptionTargets": [
+    "choose-helpfully-before-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "空格位於名詞 information 前，需要描述其性質。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 helpful information。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

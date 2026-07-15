@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S195",
+  "subject": "english",
+  "unitId": "ENG_R4_U28",
+  "skillId": "ENG_R4_S195",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S194"
+  ],
+  "objectives": [
+    "能在同一字族的名詞、動詞、形容詞與副詞中選出符合空格的形式。",
+    "能同時檢查詞性、拼字、搭配與整句意思。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S195_SEC_01",
+      "title": "先找空格的句法工作",
+      "content": "同一字族可能有 care、careful、carefully 等形式。冠詞或所有格後常需要名詞，名詞前或連綴動詞後常需要形容詞，修飾動作時常需要副詞；若空格是主要動作，還要選動詞並處理時態。"
+    },
+    {
+      "id": "ENG_R4_L_S195_SEC_02",
+      "title": "字族形式不一定只加一個固定字尾",
+      "content": "choose 變 choice、succeed 變 success、health 變 healthy 時，拼字或詞根會改變。不能看出需要名詞就自行加 -tion，也不能把每個形容詞都變成 -ly；應使用學過的標準形式。"
+    },
+    {
+      "id": "ENG_R4_L_S195_SEC_03",
+      "title": "分詞形容詞還要看感受者與起因",
+      "content": "confused 描述感到困惑的人，confusing 描述使人困惑的事物。兩者都可能放在形容詞位置，這時單靠詞性仍無法定案，必須判斷主詞是感受者還是造成感受的來源。"
+    },
+    {
+      "id": "ENG_R4_L_S195_SEC_04",
+      "title": "完成後逐層驗證",
+      "content": "把選定形式放回句子，檢查它是否完成必要成分、拼字是否正確、語意是否自然，最後再看時態或單複數。詞性判斷不是獨立小技巧，而是閱讀完整句構的第一層。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S195_EX_01",
+      "prompt": "Ben crossed the busy road ___. (safe)",
+      "steps": [
+        "crossed 已是主要動詞。",
+        "空格說明過馬路的方式。",
+        "safe 變 safely。"
+      ],
+      "answer": "safely",
+      "why": "句子需要修飾 crossed 的方式副詞，因此使用 safely。safe 可描述 road 或 Ben 的狀態，但不能在這個句尾位置直接說明動作。"
+    },
+    {
+      "id": "ENG_R4_L_S195_EX_02",
+      "prompt": "The directions were ___, so we asked again. (confuse)",
+      "steps": [
+        "were 後需要形容詞。",
+        "directions 是造成困惑的來源。",
+        "選 confusing。"
+      ],
+      "answer": "confusing",
+      "why": "指示使人困惑，所以描述指示本身要用 confusing。confused 會描述人的感受；後面的 we asked again 也支持指示造成問題。"
+    },
+    {
+      "id": "ENG_R4_L_S195_EX_03",
+      "prompt": "The team improved its ___ during the project. (communicate)",
+      "steps": [
+        "its 後需要名詞。",
+        "空格是 improved 的受詞。",
+        "使用 communication。"
+      ],
+      "answer": "communication",
+      "why": "its 後要接團隊所改善的事物，communication 是符合位置的名詞。communicate 是動詞，communicative 是形容詞，都不能作 improved 的直接受詞。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "知道字根中文意思，就可以任選同字族形式。",
+      "whyWrong": "不同形式在句中承擔不同工作，位置錯誤仍不成句。",
+      "correction": "先標出空格需要的詞性，再比較同字族候選。"
+    },
+    {
+      "belief": "每個名詞都能由動詞加 tion 形成。",
+      "whyWrong": "choice、success 等名詞使用不同字形。",
+      "correction": "使用已確認的字族形式，不臨時創造單字。"
+    },
+    {
+      "belief": "confused 和 confusing 都是形容詞，所以可互換。",
+      "whyWrong": "前者通常描述感受者，後者描述造成感受的人事物。",
+      "correction": "判斷主詞在情境中是接收感受，還是引發感受。"
+    },
+    {
+      "belief": "選對詞性後就不必檢查單複數或時態。",
+      "whyWrong": "名詞與動詞仍可能因數量、人稱或時間而改變形式。",
+      "correction": "完成詞性選擇後，再讀一次整句做文法與語意核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "The healthy child 中，healthy 來自哪個名詞？",
+      "answer": "health",
+      "reason": "health 命名健康，healthy 描述 child。"
+    },
+    {
+      "prompt": "The news was surprising 中，誰造成驚訝？",
+      "answer": "the news",
+      "reason": "surprising 描述引發感受的來源。"
+    },
+    {
+      "prompt": "They spoke politely 中，polite 可以直接取代 politely 嗎？",
+      "answer": "不可以",
+      "reason": "spoke 需要方式副詞，而不是形容詞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  }
+}

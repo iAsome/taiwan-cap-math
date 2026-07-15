@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_192_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The music from the next room was very ___. (noise)",
+  "options": [
+    "noise",
+    "noisily",
+    "noisy",
+    "noised"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "noise 是名詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "noisily 是副詞，不能接在 was very 後描述 music。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "noisy 是形容詞，且 noise 形成時去 e 加 y。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "noised 不是此處的自然形式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u28-s192-transform-noise-to-noisy",
+    "fit-y-adjective-after-very"
+  ],
+  "representationType": "e-drop-y-adjective",
+  "misconceptionTargets": [
+    "retain-noise-as-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "very 後需形容詞，主詞 music 是產生噪音的來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項兼顧詞性、拼字和情境。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_193_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S193"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-5",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "In 'The shop closes daily,' daily tells ___.",
+  "options": [
+    "which shop it is",
+    "how often it closes",
+    "who closes it",
+    "what it sells"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "daily 不辨認商店。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "daily 修飾 closes，表示每天。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有行動者姓名。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "它不提供商品內容。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u28-s193-interpret-daily-after-closes",
+    "extract-frequency-without-extra-shop-details"
+  ],
+  "representationType": "daily-dual-function-adverb",
+  "misconceptionTargets": [
+    "carry-prenominal-reading-into-postverb-slot"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-5",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "daily 位於完整動詞後，這次不是修飾名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項正確解讀頻率副詞功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
