@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_122_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "All three rules are important, but the first rule is the ___.",
+  "options": [
+    "important",
+    "more important",
+    "most important",
+    "importantest"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "important 只描述性質，沒有表示排序最高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "more important 只比較兩者，沒有總結 three rules。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "most important 表示第一條在三條之中最重要。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "importantest 不是 important 的標準最高級。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-three-rule-scope",
+    "rank-first-rule-with-most-important"
+  ],
+  "representationType": "rule-priority-superlative",
+  "misconceptionTargets": [
+    "choose-more-for-three-rules"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "all three rules 明示三個比較對象。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項與 the 組成長形容詞最高級。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

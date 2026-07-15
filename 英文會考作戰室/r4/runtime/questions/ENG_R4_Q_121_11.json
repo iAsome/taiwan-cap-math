@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_121_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bike is ___ than the bus on this short road. (fast)",
+  "options": [
+    "fastest",
+    "most fast",
+    "faster",
+    "fastter"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "fastest 是最高級，不適合 bike 與 bus 兩者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "most fast 不是短形容詞比較級。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "faster 直接加 -er，且不雙寫 t。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "fastter 不必要地雙寫 t。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-bike-and-bus-speed",
+    "avoid-doubling-t-in-faster"
+  ],
+  "representationType": "non-cvc-comparative",
+  "misconceptionTargets": [
+    "double-final-letter-in-fast"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目只有 bike 與 bus，than 鎖定比較級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項提醒不是每個短字都套用 CVC 雙寫。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

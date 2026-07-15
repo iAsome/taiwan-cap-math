@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia and Nora are both 13 years old. Which sentence matches?",
+  "options": [
+    "Mia is as old as Nora.",
+    "Mia is as older as Nora.",
+    "Mia is older as Nora.",
+    "Mia is the oldest as Nora."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "as old as 使用原級，符合兩人同為 13 歲。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "older 是比較級，不能放在兩個 as 之間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "older 應接 than，而且會表示年齡不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "oldest 是最高級，不能與 as Nora 連接。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "match-equal-ages-to-equality",
+    "choose-base-old-between-as"
+  ],
+  "representationType": "age-equality-sentence-selection",
+  "misconceptionTargets": [
+    "use-older-for-equal-age"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "相同年齡需要同等比較，不是比較級或最高級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把 old 保持原級，語意與數值一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

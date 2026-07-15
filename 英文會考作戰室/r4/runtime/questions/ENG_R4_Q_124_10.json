@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo is 15 years old, and Sam is 13. Leo is ___ years older than Sam.",
+  "options": [
+    "one",
+    "two",
+    "three",
+    "four"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "15 - 13 不是 1。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "15 - 13 = 2，所以年齡差是 two years。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "three 會把 Sam 的年齡誤讀為 12。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "four 不符合題目給的兩個年齡。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "subtract-two-person-ages",
+    "insert-two-before-years-older"
+  ],
+  "representationType": "age-gap-calculation",
+  "misconceptionTargets": [
+    "guess-age-gap-without-subtraction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "older than 前的數量要寫兩人實際差額。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項由 15 與 13 相減得到，不只是依人物順序猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

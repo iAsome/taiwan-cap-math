@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Room A seats 30 students, and Room B also seats 30. Which sentence matches the notice?",
+  "options": [
+    "Room A can seat more students than Room B.",
+    "Room B can seat the most students.",
+    "Room A can seat as many students as Room B.",
+    "Room A cannot seat as much students as Room B."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "30 不大於 30。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料只有兩個 rooms，也沒有顯示 B 較多。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩室各 30 位，as many students as 正確表示同量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "students 是可數複數，不能用 much；cannot 也與資料不符。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-room-seat-capacities",
+    "express-equal-count-with-as-many"
+  ],
+  "representationType": "capacity-notice-equality",
+  "misconceptionTargets": [
+    "use-much-with-students"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "seat 數相等，而且 students 是可數名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把 notice 的兩個數字轉成正確同量句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

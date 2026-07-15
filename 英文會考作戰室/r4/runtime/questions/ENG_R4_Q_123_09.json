@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The station is ___ from here than the park. (far)",
+  "options": [
+    "farther",
+    "farthest",
+    "more far",
+    "far"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "farther 可用於實際距離，並與 than 搭配。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "farthest 是最高級，題目只比較兩個地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "more far 不是此處採用的標準比較形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "far 是原級，未標示 station 與 park 的距離差。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-physical-distance-comparison",
+    "select-farther-with-than"
+  ],
+  "representationType": "far-distance-comparative",
+  "misconceptionTargets": [
+    "form-more-far"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "station 與 park 是兩個實際地點，句子比較離 here 的距離。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項使用 far 的不規則比較形式之一；本題沒有要求排除其他語境可用的 further。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

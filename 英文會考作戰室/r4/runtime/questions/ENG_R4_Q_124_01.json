@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia is taller than Nora. Which sentence says the same thing about their height?",
+  "options": [
+    "Nora is shorter than Mia.",
+    "Nora is taller than Mia.",
+    "Mia and Nora are equally tall.",
+    "Mia is the tallest student in school."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "若 Mia 較高，從 Nora 的方向看就是 Nora 較矮。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項把原本的高低順序顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "taller than 已表示兩人不等高。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句只比較兩人，不能推論全校最高。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "reverse-taller-than-with-opposite-adjective",
+    "preserve-mia-nora-height-order"
+  ],
+  "representationType": "than-relation-equivalence",
+  "misconceptionTargets": [
+    "reverse-names-without-reversing-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把 A taller than B 反向表達時，要同時交換人物與形容詞方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留相同的身高關係，也沒有擴大比較範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

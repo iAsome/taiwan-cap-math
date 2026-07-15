@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_120_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A sign says, 'The floor is wet. Walk ___.'",
+  "options": [
+    "careful",
+    "care",
+    "carefully",
+    "more careful"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "careful 是形容詞，不能直接說明 walk 的方式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "care 不是此處需要的方式副詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "carefully 修飾 walk，符合濕地板警示。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "more careful 需要 be 等結構或比較語境。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "connect-wet-floor-warning-to-walking-manner",
+    "select-carefully-for-imperative"
+  ],
+  "representationType": "notice-adverb-transfer",
+  "misconceptionTargets": [
+    "use-adjective-after-action-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "警示先交代 wet floor，再要求改變走路方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把安全要求放在動作 walk 上。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

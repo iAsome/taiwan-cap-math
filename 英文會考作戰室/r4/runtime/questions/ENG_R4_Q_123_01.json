@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This meal tastes ___ than the one we had yesterday. (good)",
+  "options": [
+    "better",
+    "best",
+    "more good",
+    "weller"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "better 是 good 的不規則比較級，能與 than 搭配。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "best 是最高級，不用於兩餐的直接比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "more good 不是 good 的標準比較形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "weller 不是此句中 good 的比較級。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-two-meal-quality-comparison",
+    "recall-good-to-better"
+  ],
+  "representationType": "irregular-good-comparative",
+  "misconceptionTargets": [
+    "form-more-good"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "than 與兩餐先確定需要比較級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "good 不加 -er，也不加 more，而要改成 better。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -20,6 +20,7 @@ const UNITS = [
   { id: "ENG_R4_U15", firstSkill: 99 },
   { id: "ENG_R4_U16", firstSkill: 106 },
   { id: "ENG_R4_U17", firstSkill: 113 },
+  { id: "ENG_R4_U18", firstSkill: 120 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -460,6 +461,49 @@ test("U17 noun roles, pronoun agreement, reference, and ambiguity repairs stay e
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U17 duplicate ${label}`);
+});
+
+test("U18 adjective placement and comparison forms keep scope, quantity, and inference boundaries", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U18");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_120_02").options[1], "good");
+  assert.match(question.get("ENG_R4_Q_120_04").reviews.join(" "), /checks.*動作方式/);
+  assert.equal(question.get("ENG_R4_Q_121_03").options[2], "larger");
+  assert.equal(question.get("ENG_R4_Q_121_04").options[3], "hottest");
+  assert.equal(question.get("ENG_R4_Q_121_05").options[0], "happier");
+  assert.match(question.get("ENG_R4_Q_122_06").stem, /more difficulter/);
+  assert.equal(question.get("ENG_R4_Q_122_06").options[1], "more difficult");
+  assert.equal(question.get("ENG_R4_Q_123_01").options[0], "better");
+  assert.equal(question.get("ENG_R4_Q_123_04").options[3], "less");
+  assert.match(question.get("ENG_R4_Q_123_08").reviews.join(" "), /water.*不是.*大小/);
+  assert.equal(question.get("ENG_R4_Q_124_03").options[2], "Nora's");
+  assert.equal(question.get("ENG_R4_Q_124_07").options[2], "The blue box has a greater size.");
+  assert.equal(question.get("ENG_R4_Q_125_03").options[2], "as many notebooks as");
+  assert.equal(question.get("ENG_R4_Q_125_04").options[3], "as much water as");
+  assert.equal(question.get("ENG_R4_Q_125_08").options[3], "not as wide as");
+  assert.equal(question.get("ENG_R4_Q_126_01").options[0], "Leo is taller than Ben.");
+  assert.equal(question.get("ENG_R4_Q_126_02").options[1], "tallest");
+  assert.equal(question.get("ENG_R4_Q_126_05").options[0], "best");
+  assert.equal(question.get("ENG_R4_Q_126_06").options[1], "of");
+  assert.equal(question.get("ENG_R4_Q_126_08").options[3], "clubs");
+  assert.equal(question.get("ENG_R4_Q_126_10").options[1], "Which box is the heaviest");
+  const placementLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S120");
+  assert.match(placementLecture.sections.map((value) => value.content).join(" "), /連綴動詞/);
+  const shortFormLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S121");
+  assert.match(shortFormLecture.sections.map((value) => value.content).join(" "), /子音.*y.*i/);
+  const irregularLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S123");
+  assert.match(irregularLecture.sections.map((value) => value.content).join(" "), /little.*less.*least/);
+  const equalityLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S125");
+  assert.match(equalityLecture.sections.map((value) => value.content).join(" "), /not as.*as/);
+  const groupLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S126");
+  assert.match(groupLecture.sections.map((value) => value.content).join(" "), /one of the.*複數/);
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U18 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

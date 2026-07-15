@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_122_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence compares two plans without marking the comparison twice?",
+  "options": [
+    "Plan A is more popular than Plan B.",
+    "Plan A is popularer than Plan B.",
+    "Plan A is more popularer than Plan B.",
+    "Plan A is the most popular than Plan B."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "more popular than 只標記一次比較，且比較兩個 plans。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "popularer 不是 popular 的標準比較級。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "more 與 -er 重複標記同一個比較級。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the most popular 是最高級，不能再接 than 比較兩者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "compare-four-popular-forms",
+    "reject-double-and-superlative-marking"
+  ],
+  "representationType": "double-marking-sentence-check",
+  "misconceptionTargets": [
+    "combine-more-with-er"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目同時要求長形容詞形式與兩者比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項沒有重複的級別標記。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

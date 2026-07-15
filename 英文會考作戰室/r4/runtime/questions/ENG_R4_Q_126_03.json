@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_126_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Five tools were tested. This tool worked better than each of the other four. It was the ___. (useful)",
+  "options": [
+    "usefuller",
+    "more useful",
+    "most useful",
+    "usefulest"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "usefuller 不是 useful 的標準比較級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "more useful 只保留單次兩者比較，未總結五件工具。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "most useful 把高於其餘四件的關係總結成群體最高級。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "usefulest 不是標準形式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-tool-over-four-relations",
+    "summarize-as-most-useful"
+  ],
+  "representationType": "comparative-evidence-to-long-superlative",
+  "misconceptionTargets": [
+    "stop-at-more-useful"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "each of the other four 表示此 tool 已逐一高於其餘成員。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把多個比較關係合成五件中的最高程度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

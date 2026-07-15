@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Bag A has a weight of 8 kg, and Bag B has a weight of 3 kg. Bag A is ___ Bag B.",
+  "options": [
+    "very heavier than",
+    "much heaviest than",
+    "much heavier than",
+    "more heavy than"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "very 不能直接修飾比較級 heavier。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "heaviest 是最高級，也不能接 than 比較兩袋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "much 可加強 heavier，並正確連接 Bag B。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "heavy 在本單元使用規則比較級 heavier，不用 more heavy。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-weight-gap-between-bags",
+    "use-much-to-modify-heavier"
+  ],
+  "representationType": "comparative-degree-modifier",
+  "misconceptionTargets": [
+    "use-very-before-comparative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "8 kg 與 3 kg 表示明顯的兩者重量差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項用 much 表示差距大，但比較級核心仍是 heavier than。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

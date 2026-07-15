@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_122_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The blue chair is ___ than the red chair. (comfortable)",
+  "options": [
+    "comfortabler",
+    "most comfortable",
+    "more comfortable",
+    "comfortable"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "comfortabler 不是 comfortable 的標準比較形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "most comfortable 表示群體最高級，不符合兩張椅子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "more comfortable 是長形容詞比較級，並可接 than。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "comfortable 是原級，缺少比較標記。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "count-two-chair-referents",
+    "apply-more-to-comfortable"
+  ],
+  "representationType": "comfort-comparison-cloze",
+  "misconceptionTargets": [
+    "use-most-for-two-chairs"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "blue chair 與 red chair 是兩個對象。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只用 more 標記一次比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

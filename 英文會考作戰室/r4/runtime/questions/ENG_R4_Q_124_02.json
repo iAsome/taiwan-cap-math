@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This chair is more comfortable ___ the old one.",
+  "options": [
+    "as",
+    "than",
+    "of",
+    "from"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "as 需要 as...as 的同等結構，不能接在比較級後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "than 正確連接 more comfortable 與 the old one。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "of 常標示最高級範圍，不接比較級的另一對象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "from 表示來源或分離，不建立程度比較。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "locate-connector-after-long-comparative",
+    "choose-than-before-old-one"
+  ],
+  "representationType": "than-connector-cloze",
+  "misconceptionTargets": [
+    "place-as-after-comparative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "more comfortable 已完成比較級，空格要連接第二張 chair。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成完整的 comparative + than 結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

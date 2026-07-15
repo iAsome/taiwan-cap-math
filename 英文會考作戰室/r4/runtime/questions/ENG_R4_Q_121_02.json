@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_121_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This is the ___ car in the race. (fast)",
+  "options": [
+    "faster",
+    "fastest",
+    "most fast",
+    "fastly"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "faster 只表示比另一輛快，未涵蓋整場 race。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "fastest 是短形容詞最高級，符合 in the race。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "most fast 不是此處標準短字形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "fastly 不是 fast 的一般副詞形式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "read-race-as-superlative-range",
+    "choose-fastest-car"
+  ],
+  "representationType": "short-adjective-superlative",
+  "misconceptionTargets": [
+    "stop-at-comparative-with-group"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "the 與 in the race 建立群體最高級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項從參賽車輛中指出速度最高的一輛。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

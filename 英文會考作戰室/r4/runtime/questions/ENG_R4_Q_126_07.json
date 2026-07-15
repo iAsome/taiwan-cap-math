@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_126_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Bag A is 8 kg, Bag B is 12 kg, and Bag C is 10 kg. Which sentence matches?",
+  "options": [
+    "Bag A is the heaviest.",
+    "Bag C is heavier than Bag B.",
+    "Bag B is the heaviest.",
+    "Bag A and Bag C are equally heavy."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "8 kg 是三袋中最輕，不是最重。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "10 kg 不大於 12 kg。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "12 kg 是最高重量，所以 Bag B 最重。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "8 kg 與 10 kg 不相等。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "rank-three-bag-weights",
+    "map-maximum-weight-to-bag-b"
+  ],
+  "representationType": "three-item-weight-superlative",
+  "misconceptionTargets": [
+    "choose-last-mentioned-bag"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "將 8、12、10 排序後，最大值對應 Bag B。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使用 heaviest 總結三個重量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

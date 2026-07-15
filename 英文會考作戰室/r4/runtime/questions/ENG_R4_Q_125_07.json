@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The blue bag is as heavy as the red bag. What do we know?",
+  "options": [
+    "The blue bag is larger.",
+    "The red bag costs more.",
+    "The two bags have the same weight.",
+    "The two bags hold the same number of books."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "heavy 的同等關係不提供尺寸資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "as heavy as 沒有比較兩個 bags 的售價。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "as heavy as 明確表示兩袋重量相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "相同重量不代表裝有相同數量的書。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "restrict-as-heavy-as-inference",
+    "identify-equal-weight-only"
+  ],
+  "representationType": "equality-inference-boundary",
+  "misconceptionTargets": [
+    "infer-size-or-content-from-weight"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "as...as 只保證中間形容詞所指的屬性相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留 weight 這個已知屬性，沒有加入其他推測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "After lunch, Mia has ___ water than Ben. (little)",
+  "options": [
+    "littler",
+    "least",
+    "smallest",
+    "less"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "littler 通常不是用來比較不可數水量的形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "least 是最高級，題目只有 Mia 與 Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "smallest 比較尺寸，不表示 water 的量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "less 是 little 表示少量時的比較級。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "separate-water-amount-from-size",
+    "choose-less-for-two-amounts"
+  ],
+  "representationType": "little-amount-comparative",
+  "misconceptionTargets": [
+    "use-smaller-for-water-amount"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "water 在此是不可數的量，且只比較兩人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把 little 的量改成不規則比較級 less。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_120_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "It is a ___ room.",
+  "options": [
+    "quiet",
+    "quietly",
+    "quite",
+    "more quietly"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "quiet 是形容詞，可直接修飾 room。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "quietly 是副詞，不能在此描述名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "quite 是程度副詞，後面還需接形容詞，不能單獨修飾 room。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "more quietly 是副詞比較形式，句中沒有動作可修飾。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "inspect-word-before-room",
+    "select-quiet-as-attributive-adjective"
+  ],
+  "representationType": "adjective-before-noun-cloze",
+  "misconceptionTargets": [
+    "add-ly-before-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "空格後緊接名詞 room，需選形容詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成 a quiet room，字義與句法都完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

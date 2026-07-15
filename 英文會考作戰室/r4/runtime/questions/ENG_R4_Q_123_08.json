@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cup has 100 mL of water, and the bowl has 300 mL. The cup has ___ water.",
+  "options": [
+    "smaller",
+    "smallest",
+    "least",
+    "less"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "smaller 描述杯子或物體尺寸，不直接比較水量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "smallest 是尺寸最高級，資料也只有兩個容器。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "least 是量的最高級，不能用於兩個量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "less 正確表示 100 mL 少於 300 mL。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-two-water-measurements",
+    "distinguish-less-from-smaller"
+  ],
+  "representationType": "measured-amount-comparative",
+  "misconceptionTargets": [
+    "transfer-container-size-to-amount"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "數字比較的是容器內的 water，不是 cup 與 bowl 的大小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把量的差異準確寫成 less water。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

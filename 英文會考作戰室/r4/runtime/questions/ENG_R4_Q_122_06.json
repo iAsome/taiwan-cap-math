@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_122_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, 'The second test was more difficulter than the first.' Which form is needed?",
+  "options": [
+    "most difficult",
+    "more difficult",
+    "difficultest",
+    "difficult"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "most difficult 是最高級，不符合兩次 tests 的比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "more difficult 保留 more 並移除多餘的 -er。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "difficultest 不是 difficult 的標準形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "difficult 是原級，無法與 than 完成比較。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-double-comparative-in-note",
+    "repair-to-more-difficult"
+  ],
+  "representationType": "long-comparative-edit",
+  "misconceptionTargets": [
+    "preserve-doubled-comparison"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "錯誤不是 than，而是同時出現 more 與 -er。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項留下長形容詞需要的比較標記。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

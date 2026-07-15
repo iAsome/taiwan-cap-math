@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Road A takes 20 minutes. Road B takes 35 minutes. Which sentence is true?",
+  "options": [
+    "Road A takes 15 minutes longer than Road B.",
+    "Road B is the longest of the two roads.",
+    "Road A and Road B take the same time.",
+    "Road B takes 15 minutes longer than Road A."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "20 比 35 少 15，方向相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個時間應用比較級；longest 也不直接描述此處所花時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "20 與 35 不相等。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "35 - 20 = 15，且 Road B 花的時間較長。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "subtract-route-times",
+    "align-longer-than-direction-with-35-minutes"
+  ],
+  "representationType": "time-difference-transfer",
+  "misconceptionTargets": [
+    "reverse-difference-direction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先算時間差 15，再確認 longer than 的方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時保留正確差額與比較對象順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

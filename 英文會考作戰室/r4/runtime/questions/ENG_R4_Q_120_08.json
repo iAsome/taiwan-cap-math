@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_120_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'Sam is a carefully driver.' Which change fixes the sentence about Sam?",
+  "options": [
+    "Sam → Sams",
+    "is → does",
+    "driver → drive",
+    "carefully → careful"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Sam 是單一人名，不需變複數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 正確連接 Sam 與身分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "drive 會把職業名詞改成動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "driver 前需要形容詞 careful，不使用副詞 carefully。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "diagnose-adverb-before-driver",
+    "repair-carefully-to-careful"
+  ],
+  "representationType": "adjective-form-edit",
+  "misconceptionTargets": [
+    "change-noun-instead-of-modifier"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "錯誤出現在名詞 driver 前的詞性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只修正修飾語，不改人物、動詞或身分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

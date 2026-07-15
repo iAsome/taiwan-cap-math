@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_122_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Story A is more interesting than Story B. Story B is more interesting than Story C. Which sentence must be true?",
+  "options": [
+    "Story C is more interesting than Story A.",
+    "Story B is the most interesting story.",
+    "Story A and Story C are equally interesting.",
+    "Story A is the most interesting of the three."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩個比較句都把 Story C 排在較後，不能高於 A。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Story B 高於 C，卻低於 A，因此不是最高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "已知 A 高於 B、B 高於 C，A 與 C 不相等。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "A 高於 B，而 B 又高於 C，所以 A 在三篇中最高。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "chain-two-story-interest-relations",
+    "infer-a-as-group-maximum"
+  ],
+  "representationType": "long-adjective-ranking-inference",
+  "misconceptionTargets": [
+    "read-comparisons-independently"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先把兩個 than 關係合成 A > B > C。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 most interesting 正確總結完整排序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

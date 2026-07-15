@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The green trip takes ___ time as the yellow trip.",
+  "options": [
+    "as many",
+    "as much",
+    "so many",
+    "more much"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "time 在此表示不可數的時間量，不用 many。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "as much 與後面的 as 組成不可數同量結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "so many 不適合修飾不可數 time，也不完成同等結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "more much 不是正確的數量片語。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-trip-time-as-uncountable",
+    "supply-as-much-before-time"
+  ],
+  "representationType": "as-much-partial-cloze",
+  "misconceptionTargets": [
+    "choose-many-before-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "空格後已有 time as，因此要補前半部 as much。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用新的不可數情境檢查 much，不重複 water 題面。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

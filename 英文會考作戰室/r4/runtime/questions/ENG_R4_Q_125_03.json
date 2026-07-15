@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy has four notebooks, and Ben also has four. Amy has ___ Ben.",
+  "options": [
+    "as much notebooks as",
+    "more notebooks as",
+    "as many notebooks as",
+    "as many notebook than"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "notebooks 是可數複數，不能用 much。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "more 應與 than 搭配，也不表示數量相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "as many notebooks as 正確表達兩人各有四本。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "notebook 應為複數，as...as 也不能改成 than。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-notebooks-as-countable",
+    "build-as-many-notebooks-as"
+  ],
+  "representationType": "equal-count-as-many-as",
+  "misconceptionTargets": [
+    "use-much-with-count-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "四本與四本是可數名詞的同量關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使用 many 並保留複數 notebooks。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

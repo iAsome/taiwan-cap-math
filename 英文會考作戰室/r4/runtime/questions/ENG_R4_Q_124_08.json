@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The north road is 8 km long, and the south road is 5 km long. The north road is ___.",
+  "options": [
+    "longest",
+    "more long",
+    "long",
+    "longer"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "longest 是最高級，資料只有兩條道路。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "more long 不是 long 的標準比較級。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "long 只描述長，沒有表達 8 與 5 的差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "longer 正確表示 8 km 大於 5 km。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-two-route-lengths",
+    "express-eight-km-as-longer"
+  ],
+  "representationType": "distance-data-comparative",
+  "misconceptionTargets": [
+    "use-longest-for-two-routes"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個數值與兩條 roads 只需要比較級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項的方向和 8 > 5 一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

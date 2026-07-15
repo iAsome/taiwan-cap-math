@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'This tree is as taller as that tree.' Which form is needed?",
+  "options": [
+    "taller than",
+    "as tall as",
+    "the tallest of",
+    "as tallest as"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "taller than 表示一棵較高，改變原句要表達的同等關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "as tall as 保留兩個 as，並把形容詞改回原級。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the tallest of 是最高級片語，不能直接接 that tree。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "最高級 tallest 不能放在 as...as 中。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-comparative-inside-as-as",
+    "repair-with-base-tall"
+  ],
+  "representationType": "as-as-form-edit",
+  "misconceptionTargets": [
+    "replace-equality-with-than"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句已有完整的同等框架，錯在中間用了 taller。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只修正級別，不把同等改成高低比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

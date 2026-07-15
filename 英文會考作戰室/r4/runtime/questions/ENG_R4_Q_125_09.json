@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Trains A and B travel the same 20 km road, and both take 40 minutes. Which sentence is true?",
+  "options": [
+    "Train A is as fast as Train B on this trip.",
+    "Train A is faster than Train B.",
+    "Train B is the fastest train.",
+    "Train A is not as fast as Train B."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "相同距離與時間支持兩車在此趟的速度表現相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩車距離與時間都相同，沒有較快的依據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料只含兩列車，不能判定所有列車中的最高級。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "not as fast as 與相同距離、時間的資料衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-equal-trip-times",
+    "state-trip-specific-speed-equality"
+  ],
+  "representationType": "equal-time-transfer",
+  "misconceptionTargets": [
+    "infer-permanent-speed-ranking"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "相同 20 km 且同為 40 minutes，才足以比較出同速。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項用 on this trip 限定結論，不擴大成列車的一般性能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

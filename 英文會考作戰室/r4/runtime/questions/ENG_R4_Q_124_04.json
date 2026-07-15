@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Grace is three months ___ than Amy. (young)",
+  "options": [
+    "young",
+    "youngest",
+    "more young",
+    "younger"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "young 是原級，不能接在差額與 than 之間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "youngest 是最高級，不描述兩人的年齡差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "more young 不是 young 的標準比較級。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "younger 與 three months、than 共同表示 Grace 小三個月。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-three-months-as-age-gap",
+    "place-younger-before-than"
+  ],
+  "representationType": "age-difference-comparative",
+  "misconceptionTargets": [
+    "omit-comparative-after-difference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "three months 是比較差額，不會取代比較級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把差額放在 younger 前，語意完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'The white wall is more taller than the gray wall.' Which form is needed?",
+  "options": [
+    "most tall",
+    "taller",
+    "more tallest",
+    "tall"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "most tall 不是 tall 的標準最高級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "taller 已包含比較級，不需再加 more。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "more 與 tallest 混合比較級和最高級。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "tall 是原級，不能完成 than 結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "isolate-more-taller-error",
+    "retain-single-comparative-marker"
+  ],
+  "representationType": "double-comparative-repair",
+  "misconceptionTargets": [
+    "keep-more-before-taller"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句的兩面牆與 than 都正確，錯在雙重比較標記。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項刪除 more 後保留必要的 -er。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

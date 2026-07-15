@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The blue box is larger than the red box. What do we know?",
+  "options": [
+    "The blue box is heavier.",
+    "The red box costs less.",
+    "The blue box has a greater size.",
+    "The red box is older."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "larger 沒有提供重量資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子沒有提到價格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "larger 只足以確定 blue box 的尺寸較大。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有提供兩個箱子的年代。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "limit-inference-to-size-property",
+    "paraphrase-larger-as-greater-size"
+  ],
+  "representationType": "comparison-inference-boundary",
+  "misconceptionTargets": [
+    "infer-weight-from-size"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較級只保證它明確指出的屬性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把 larger 改述為 greater size，沒有加入重量、價格或年代。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

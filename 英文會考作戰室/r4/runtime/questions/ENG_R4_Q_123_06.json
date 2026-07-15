@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The road is ___ than it was yesterday. (bad)",
+  "options": [
+    "badder",
+    "worse",
+    "worst",
+    "more worse"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "badder 不是 bad 的標準比較級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "worse 表示今天道路狀況比昨天差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "worst 是最高級，題目只比較兩天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "more worse 重複標記比較級。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "read-road-condition-across-two-days",
+    "select-worse-for-two-days"
+  ],
+  "representationType": "irregular-condition-comparative",
+  "misconceptionTargets": [
+    "regularize-bad-as-badder"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "than 與 today/yesterday 的對照要求比較級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項使用 bad 的不規則比較形式，不另外增加 more。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

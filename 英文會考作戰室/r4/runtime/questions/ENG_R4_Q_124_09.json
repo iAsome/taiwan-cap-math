@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia's room is cleaner than Nora. Which change compares two rooms?",
+  "options": [
+    "Mia's room is cleaner than Nora's.",
+    "Mia is cleaner than Nora's room.",
+    "Mia's room is the cleanest than Nora.",
+    "Mia's room is clean than Nora's."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Nora's 代替 Nora's room，使兩側都是 rooms。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此句反而把 Mia 這個人與 room 比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cleanest 不能接 than 比較兩個房間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "clean 是原級，不能直接搭配 than。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "diagnose-unlike-room-person-comparison",
+    "revise-with-noras-room-substitution"
+  ],
+  "representationType": "comparison-reference-repair",
+  "misconceptionTargets": [
+    "repair-by-changing-comparative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原句的問題不是 cleaner，而是 than 後只留下人名。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項用所有格省略重複的 room，仍維持清楚對應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

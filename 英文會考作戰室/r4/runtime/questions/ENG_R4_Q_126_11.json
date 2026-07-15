@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_126_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora ran faster than Mia and Amy. Nora was ___.",
+  "options": [
+    "faster of the three",
+    "the faster than the three",
+    "the fastest of the three",
+    "the most fast of the three"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "faster 是比較級，不能用 of the three 總結三人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the faster than the three 混合了不相容的結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the fastest of the three 正確總結 Nora 高於另外兩人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "most fast 不是 fast 的標準最高級。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "combine-nora-over-two-runners",
+    "rewrite-as-fastest-of-three"
+  ],
+  "representationType": "comparative-to-superlative-rewrite",
+  "misconceptionTargets": [
+    "retain-comparative-with-of-three"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個 faster than 關係共同涵蓋 Mia 與 Amy。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把三人範圍改寫為明確最高級。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_121_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'This box is biger than mine.' Which change is needed?",
+  "options": [
+    "This → These",
+    "is → are",
+    "biger → bigger",
+    "than → then"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "box 是單數，This 正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單數主詞需保留 is。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "big 要雙寫 g 再加 -er。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "than 才是比較連接詞，then 表示時間順序。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "isolate-biger-spelling-error",
+    "repair-big-to-bigger"
+  ],
+  "representationType": "comparative-spelling-edit",
+  "misconceptionTargets": [
+    "change-than-to-then"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "句型與單複數都正確，問題只在比較級拼字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項修復短母音加單一子音的雙寫規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

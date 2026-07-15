@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_126_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo is my ___ friend.",
+  "options": [
+    "best",
+    "the best",
+    "better",
+    "most good"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "best 可直接接在所有格 my 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "my 已限定 friend，不能再疊加 the。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "better 是比較級，未說明與誰比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "most good 不是 good 的標準最高級。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "recognize-possessive-before-superlative",
+    "omit-the-after-my"
+  ],
+  "representationType": "possessive-superlative-determiner",
+  "misconceptionTargets": [
+    "always-add-the-before-best"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "最高級常見 the，但所有格 my 已占限定詞位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成 my best friend，而不是 my the best friend。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

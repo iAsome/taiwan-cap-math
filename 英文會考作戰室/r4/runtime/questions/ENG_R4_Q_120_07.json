@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_120_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Please wash the two ___ cups.",
+  "options": [
+    "cleans",
+    "cleanly",
+    "clean",
+    "cleaned"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "形容詞不因 cups 為複數而加 s。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cleanly 是副詞，不能描述 cups 的狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "clean 是形容詞，修飾複數 cups 時形式不變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cleaned 表示已被清洗，與指示要洗乾淨杯子的意思不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "separate-cup-plural-from-adjective-form",
+    "keep-clean-unchanged-before-cups"
+  ],
+  "representationType": "plural-noun-adjective-invariance",
+  "misconceptionTargets": [
+    "pluralize-adjective-with-s"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "two 與 cups 顯示名詞複數，但不會改變形容詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 two clean cups，保留正確詞序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

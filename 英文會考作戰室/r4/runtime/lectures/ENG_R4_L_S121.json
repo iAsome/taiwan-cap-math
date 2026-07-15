@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S121",
+  "subject": "english",
+  "unitId": "ENG_R4_U18",
+  "skillId": "ENG_R4_S121",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S120"
+  ],
+  "objectives": [
+    "依短形容詞拼字規則形成比較級與最高級。",
+    "分辨加 -er、-est、去 e、雙寫字尾與 y 變 i 的情況。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S121_SEC_01",
+      "title": "多數短形容詞直接加 -er 或 -est",
+      "content": "tall 變 taller、tallest，fast 變 faster、fastest。比較兩個對象時常用比較級；從三個以上的範圍選出最突出者時使用最高級。不能只看到 than 就忽略字形變化。"
+    },
+    {
+      "id": "ENG_R4_L_S121_SEC_02",
+      "title": "字尾已有 e 時只加 r 或 st",
+      "content": "large 變 larger、largest，nice 變 nicer、nicest。原字已有不發音 e，不再重複寫 e。若寫成 largeer 或 largeest，雖看得出原字，拼字仍然錯誤。"
+    },
+    {
+      "id": "ENG_R4_L_S121_SEC_03",
+      "title": "短母音加單一字尾子音時要雙寫",
+      "content": "big 變 bigger、biggest，hot 變 hotter、hottest。雙寫保留原本的短母音讀法；並非所有短字都雙寫，例如 fast 的字尾不符合這個結構，所以是 faster。"
+    },
+    {
+      "id": "ENG_R4_L_S121_SEC_04",
+      "title": "子音加 y 時先把 y 改成 i",
+      "content": "happy 變 happier、happiest，easy 變 easier、easiest：子音後的 y 要先改成 i。若 y 前是母音，如 gray，通常直接加 -er、-est；因此不能看到 y 就一律更換。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S121_EX_01",
+      "prompt": "This box is ___ than that one. (big)",
+      "steps": [
+        "than 要求比較級。",
+        "big 為短母音加單一字尾子音。",
+        "雙寫 g 再加 -er。"
+      ],
+      "answer": "bigger",
+      "why": "兩個箱子由 than 連接，所以使用比較級。big 的結尾符合短母音加單一子音，必須雙寫 g，正確拼成 bigger，而不是 biger。"
+    },
+    {
+      "id": "ENG_R4_L_S121_EX_02",
+      "prompt": "Nora is the ___ player on the team. (fast)",
+      "steps": [
+        "on the team 提供群體範圍。",
+        "the 後需要最高級。",
+        "fast 直接加 -est。"
+      ],
+      "answer": "fastest",
+      "why": "題目從整個 team 找速度最突出的 player，因此用最高級 fastest。fast 不需雙寫 t，因為字尾不是一個短母音後只接一個子音的形式。"
+    },
+    {
+      "id": "ENG_R4_L_S121_EX_03",
+      "prompt": "Today is ___ than yesterday. (happy)",
+      "steps": [
+        "than 指向比較級。",
+        "happy 以子音加 y 結尾。",
+        "把 y 改 i 再加 -er。"
+      ],
+      "answer": "happier",
+      "why": "比較今天與昨天要用比較級。happy 的 y 前是子音 p，所以先改成 i，再加 -er，形成 happier；happyer 沒有套用正確字尾規則。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有短形容詞加 -er 前都要雙寫最後字母。",
+      "whyWrong": "tall、fast 等字不符合短母音加單一字尾子音的條件。",
+      "correction": "只在 big、hot 這類結尾結構下雙寫。"
+    },
+    {
+      "belief": "large 的比較級是 largeer。",
+      "whyWrong": "原字已有 e，只需加 r。",
+      "correction": "把 large、nice 這類字分成已有 e 的拼字群。"
+    },
+    {
+      "belief": "任何 y 結尾的形容詞都把 y 改成 i。",
+      "whyWrong": "gray 的 y 前是母音，通常直接加字尾。",
+      "correction": "先看 y 前一個字母是子音還是母音。"
+    },
+    {
+      "belief": "最高級只是比較級再多加一個 t。",
+      "whyWrong": "比較級與最高級有各自的 -er、-est 字尾。",
+      "correction": "由比較範圍先選級別，再從原級套用對應規則。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "large 的比較級怎麼拼？",
+      "answer": "larger",
+      "reason": "原字已有 e，只加 r。"
+    },
+    {
+      "prompt": "hot 的最高級為何雙寫 t？",
+      "answer": "hottest",
+      "reason": "字尾符合短母音加單一子音。"
+    },
+    {
+      "prompt": "easy 的比較級是什麼？",
+      "answer": "easier",
+      "reason": "子音加 y 要改 y 為 i。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

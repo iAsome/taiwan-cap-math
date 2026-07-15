@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A store sells 12 notebooks on Monday, 20 on Tuesday, and 18 on Wednesday. Which sentence matches the numbers?",
+  "options": [
+    "Monday sells the most notebooks.",
+    "Wednesday sells more notebooks than Tuesday.",
+    "Tuesday sells more notebooks than Monday.",
+    "Tuesday sells fewer notebooks than Wednesday."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "12 是三天中最少，不是最多。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "18 不大於 20。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "20 大於 12，因此 Tuesday 的數量比 Monday 多。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "20 不少於 18。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "read-three-day-sales-record",
+    "verify-more-notebooks-statement"
+  ],
+  "representationType": "count-data-irregular-comparison",
+  "misconceptionTargets": [
+    "reverse-more-relation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先比較 12、20、18，再檢查每個句子的方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 more notebooks 正確描述 20 與 12 的關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

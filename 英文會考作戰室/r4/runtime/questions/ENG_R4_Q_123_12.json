@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Three bottles have 600 mL, 350 mL, and 200 mL of water. The third bottle has the ___.",
+  "options": [
+    "smaller water",
+    "less water",
+    "smallest water",
+    "least water"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "smaller 描述尺寸，不是三瓶水量的最高級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "less 是比較級，不能總結三個水量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "smallest water 不是表示不可數水量最少的標準搭配。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "least water 表示 200 mL 是三個量中的最少。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "rank-three-water-volumes",
+    "express-minimum-with-least-water"
+  ],
+  "representationType": "volume-minimum-superlative",
+  "misconceptionTargets": [
+    "use-smallest-for-amount"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "600、350、200 中的最低值是第三瓶。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 little-less-least 的最高級形式描述水量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

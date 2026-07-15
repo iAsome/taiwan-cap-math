@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_121_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The new room is ___ than the old room. (large)",
+  "options": [
+    "largeer",
+    "largest",
+    "larger",
+    "more larger"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "large 已有 e，不能再完整加 er。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "largest 是最高級，不用於兩個房間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "larger 只在原字後加 r，拼字正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "more 與 -er 重複標記比較級。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "apply-existing-e-rule-to-large",
+    "select-larger-between-two-rooms"
+  ],
+  "representationType": "silent-e-comparative",
+  "misconceptionTargets": [
+    "write-largeer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "than 確定比較級，字尾 e 決定只加 r。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時通過級別與拼字檢查。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

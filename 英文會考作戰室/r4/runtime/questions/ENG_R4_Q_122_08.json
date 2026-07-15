@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_122_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Of these students, Amy is the ___. (careful)",
+  "options": [
+    "carefuler",
+    "more careful",
+    "carefulest",
+    "most careful"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "carefuler 不是 careful 的標準比較形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "more careful 是比較級，未表示整組學生中的最高程度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "carefulest 錯把 careful 直接加 -est。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "most careful 能配合 of these students 表達群體最高級。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-student-set-as-group",
+    "form-most-careful"
+  ],
+  "representationType": "care-superlative-cloze",
+  "misconceptionTargets": [
+    "append-est-to-careful"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "of these students 不是兩人之間的 than 比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項在 careful 前加 most，沒有其他級別字尾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A report says, 'Today's traffic was badder than yesterday's.' Which word is needed?",
+  "options": [
+    "bad",
+    "worse",
+    "worst",
+    "more bad"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "bad 是原級，不能完成 than 的比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "worse 是 bad 的正確比較級。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "worst 是最高級，需要三者以上的範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "more bad 不是標準比較形式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "diagnose-badder-in-traffic-report",
+    "replace-with-worse"
+  ],
+  "representationType": "irregular-form-proofreading",
+  "misconceptionTargets": [
+    "keep-regular-badder"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "today 與 yesterday 是兩個交通狀況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只修正不規則變化，不改動原句的比較關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

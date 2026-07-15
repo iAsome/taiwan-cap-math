@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_126_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam, Leo, and Ben ran the same 2 km road. Sam finished in 12 minutes, Leo in 10, and Ben in 14. Who was the fastest?",
+  "options": [
+    "Leo",
+    "Sam",
+    "Ben",
+    "They were equally fast."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "相同 2 km 中，Leo 的 10 minutes 最少，因此最快。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Sam 的 12 minutes 比 Leo 多。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Ben 的 14 minutes 是三人中最多。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三個完成時間不同，速度表現不相同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "rank-three-times-for-equal-distance",
+    "identify-leo-as-fastest"
+  ],
+  "representationType": "minimum-time-maximum-speed",
+  "misconceptionTargets": [
+    "treat-largest-time-as-fastest"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "距離相同時，完成時間越短代表速度越快。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把最低時間正確對應到最高級 fastest。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

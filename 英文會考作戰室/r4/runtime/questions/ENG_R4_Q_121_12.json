@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_121_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "At noon the air was 30°C, at three it was 35°C, and at six it was 28°C. It was ___ at three.",
+  "options": [
+    "hot",
+    "hotter",
+    "most hot",
+    "hottest"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "hot 只描述狀態，沒有比較三個時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "hotter 未指出三者中的最高溫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "most hot 不是短形容詞標準最高級。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "35°C 是三個數值最高者，使用 hottest。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-three-time-temperatures",
+    "label-35-degrees-as-hottest"
+  ],
+  "representationType": "temperature-superlative-transfer",
+  "misconceptionTargets": [
+    "use-comparative-for-maximum"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "三個時間與溫度可直接排序，最高值在 three。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項兼具正確範圍判讀與雙寫拼字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

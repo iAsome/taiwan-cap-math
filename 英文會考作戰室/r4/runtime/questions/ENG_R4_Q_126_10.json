@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_126_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The yellow box is the largest of the three boxes. What do we still need to know?",
+  "options": [
+    "Which box has the greatest size",
+    "Which box is the heaviest",
+    "How many boxes are compared",
+    "Whether the yellow box is larger than the other two"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "largest 已指出 yellow box 的尺寸最大。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "尺寸最大不一定重量最大，句中沒有重量資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "of the three boxes 已指出共比較三箱。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "最高級 largest 已表示它大於另外兩箱。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-largest-size-from-weight",
+    "identify-unanswered-heaviest-question"
+  ],
+  "representationType": "superlative-inference-boundary",
+  "misconceptionTargets": [
+    "infer-weight-from-largest-size"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "最高級也只能保證它所描述的屬性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項要求 weight，超出 largest 提供的 size 資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

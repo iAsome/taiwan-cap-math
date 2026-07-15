@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_123_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The new shelf holds ___ books than the old shelf. (many)",
+  "options": [
+    "many",
+    "most",
+    "more",
+    "manyer"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "many 是原級，沒有和 old shelf 比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "most 是最高級，需要群體範圍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "more 是 many 的不規則比較級，可修飾複數 books。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "manyer 不是標準英文形式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "link-many-books-to-than",
+    "change-many-to-more"
+  ],
+  "representationType": "many-irregular-comparative",
+  "misconceptionTargets": [
+    "write-manyer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "books 是可數複數，但 than 才是決定比較級的線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項可同時承接 many 的變化與兩個 shelf 的比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

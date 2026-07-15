@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus is not as fast as the train. What does the sentence mean?",
+  "options": [
+    "The bus and the train have the same speed.",
+    "The train is faster than the bus.",
+    "The bus is faster than the train.",
+    "The train is the fastest way to travel."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "not as fast as 表示速度不相等。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "公車沒有火車那麼快，因此火車較快。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此項把比較方向顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句只比較 bus 與 train，不能推論所有交通方式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-negative-equality-pattern",
+    "reverse-to-train-faster-than-bus"
+  ],
+  "representationType": "not-as-as-meaning",
+  "misconceptionTargets": [
+    "read-not-as-as-as-equal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先去除 not 會是同等；加入 not 後，前者未達後者程度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只轉換同一個兩者關係，沒有擴大範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

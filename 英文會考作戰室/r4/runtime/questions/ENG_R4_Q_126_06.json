@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_126_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo is the tallest ___ the three boys.",
+  "options": [
+    "in",
+    "of",
+    "than",
+    "from"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "in 通常接場所或群體名詞，如 in the class，不直接接 the three boys。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "of 可接明列的三個對象，形成 of the three boys。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "than 與比較級搭配，不接 tallest。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "from 不用來標示最高級比較範圍。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-explicit-three-person-range",
+    "choose-of-before-the-three-boys"
+  ],
+  "representationType": "superlative-range-preposition",
+  "misconceptionTargets": [
+    "use-than-after-superlative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "the three boys 是列舉出的比較集合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用 of 把 Leo 放回這個三人範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

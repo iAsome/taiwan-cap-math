@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_122_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S122"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This is the ___ picture in the room. (beautiful)",
+  "options": [
+    "beautifuler",
+    "more beautiful",
+    "beautifulest",
+    "most beautiful"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "beautifuler 錯把長形容詞直接加 -er。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "more beautiful 是比較級，不能單獨表示房內第一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "beautifulest 不是標準最高級形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "most beautiful 與 in the room 共同表達群體中的最高程度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "connect-room-range-to-superlative",
+    "select-most-beautiful-form"
+  ],
+  "representationType": "room-range-superlative",
+  "misconceptionTargets": [
+    "append-est-to-beautiful"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "the 與 in the room 建立明確的最高級範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項在 beautiful 前使用 most。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_121_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The class note says, 'Today was the happyest day.' Which spelling is correct?",
+  "options": [
+    "happyer",
+    "happiest",
+    "happier",
+    "most happyest"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "happyer 仍保留錯誤 y，且只是比較級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "happiest 把 y 改 i，再加 -est。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "happier 是比較級，不能接 the 表最高程度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "most 與 -est 重複，happyest 拼字也錯。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "diagnose-happyest-in-note",
+    "replace-with-happiest"
+  ],
+  "representationType": "superlative-proofreading",
+  "misconceptionTargets": [
+    "fix-only-er-est-level"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "the 與 day 的最高程度要求 -est 形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時修正 y 變 i 與最高級字尾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

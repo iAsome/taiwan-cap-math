@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_125_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora runs 2 km in 12 minutes. Mia runs 2 km in 10 minutes. Which sentence matches the times?",
+  "options": [
+    "Nora is as fast as Mia.",
+    "Mia is not as fast as Nora.",
+    "Nora is faster than Mia.",
+    "Nora is not as fast as Mia."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "相同距離下用時不同，速度不相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Mia 用時較少，因此不是較慢者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nora 用時較多，不能判為較快。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "相同 2 km 下，Nora 花 12 分鐘而 Mia 花 10 分鐘，所以 Nora 較慢。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-times-for-equal-distance",
+    "translate-slower-runner-to-not-as-fast"
+  ],
+  "representationType": "rate-data-negative-equality",
+  "misconceptionTargets": [
+    "treat-longer-time-as-faster"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較相同距離所需時間：時間較少者較快。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項以 not as fast as 表達 Nora 未達 Mia 的速度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

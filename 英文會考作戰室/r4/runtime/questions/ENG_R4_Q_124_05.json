@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_124_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence compares how long two pencils are?",
+  "options": [
+    "The blue pencil is longer than the red pencil.",
+    "The blue pencil is longer than Mia.",
+    "The blue pencil is the longest than the red pencil.",
+    "The blue pencil is long than the red pencil."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩邊都是 pencils，且 longer than 正確比較長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此句把 pencil 與人 Mia 比較，類型不一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "longest 是最高級，不能和 than 搭配比較兩枝。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "long 是原級，不能直接接 than。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "check-comparison-object-types",
+    "select-pencil-to-pencil-length-sentence"
+  ],
+  "representationType": "same-type-comparison-selection",
+  "misconceptionTargets": [
+    "compare-pencil-with-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目指定比較兩枝 pencil 有多長，因此兩側對象必須相同類型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項沒有省略造成的歧義，也只標記一次比較級。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
