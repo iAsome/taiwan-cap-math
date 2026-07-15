@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "On Monday, Nora said, \"I am busy today.\" On Tuesday, Leo reported Nora's words. Which phrase means Monday?",
+  "options": [
+    "that day",
+    "the next month",
+    "tomorrow",
+    "now"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "that day 可回指 Nora 說話的 Monday。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原句沒有月份變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "tomorrow 會指向 Monday 之後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "now 以 Leo 轉述的 Tuesday 為中心，方向不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s179-convert-monday-today-to-that-day",
+    "link-that-day-to-source-time"
+  ],
+  "representationType": "today-reference-conversion",
+  "misconceptionTargets": [
+    "interpret-today-from-reporter-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "today 的內容必須綁定原說話日。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項讓後來的讀者回到 Monday。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

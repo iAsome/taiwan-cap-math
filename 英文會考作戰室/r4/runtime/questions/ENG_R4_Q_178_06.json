@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_178_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo said to Nora, \"Your bag is here.\" Whose bag is in Leo's message?",
+  "options": [
+    "Leo's bag",
+    "Nora's bag",
+    "The reporter's bag",
+    "A group's bag"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo 若指自己的袋子會說 my bag。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "your 指 Leo 正在對話的 Nora。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有把轉述者設為所有者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "your 在此有明確的單一聽話者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s178-resolve-your-bag-to-nora-listener",
+    "link-possessive-pronoun-to-addressee"
+  ],
+  "representationType": "possessive-reference-resolution",
+  "misconceptionTargets": [
+    "assign-your-to-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先找 Leo 對誰說話，再解讀 your。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項依聽話者角色判定所有權。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

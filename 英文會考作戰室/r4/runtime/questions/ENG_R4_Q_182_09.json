@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy told Ben, \"I will send you my notes.\" Ben reported the message to Nora. Which meaning must Ben keep?",
+  "options": [
+    "Amy would send Ben her notes.",
+    "Ben would send Amy Nora's notes.",
+    "Nora would send Ben Amy's notes.",
+    "Amy would send Nora Ben's notes."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "I 與 my 指 Amy，you 指 Ben，三個角色都正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把寄件者、收件者與所有者都換掉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nora 只是後來聽到轉述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原話的收件者不是 Nora，筆記也不屬於 Ben。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s182-preserve-amy-ben-notes-roles-through-nora",
+    "resolve-pronouns-before-relaying-message"
+  ],
+  "representationType": "multi-role-relay-preservation",
+  "misconceptionTargets": [
+    "let-final-listener-replace-original-you"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "代名詞先在原說話層解決，再轉交內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不因 Nora 後來加入就改寫原事件角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

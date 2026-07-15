@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_178_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora said to Leo, \"I will call you.\" Nora said that she would call ___.",
+  "options": [
+    "herself",
+    "Leo",
+    "Amy",
+    "me"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "you 指 Leo，不是 Nora 自己。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Leo 是 Nora 原本說話的對象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原話沒有 Amy。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "me 會依新的轉述者改變指涉。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s178-fill-leo-as-object-of-nora-reported-call",
+    "convert-second-person-object-to-named-listener"
+  ],
+  "representationType": "object-pronoun-to-name-cloze",
+  "misconceptionTargets": [
+    "turn-you-into-reflexive-or-new-reporter"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先固定原話中 you 的聽話者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項讓轉述句保留原來的受話人物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

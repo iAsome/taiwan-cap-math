@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia asked Leo, \"Do you know the answer?\" Mia asked ___ Leo knew the answer.",
+  "options": [
+    "that",
+    "to",
+    "whether",
+    "what answer did"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "that 會把疑問改成陳述。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "to 不能接 Leo knew 的完整子句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "whether 保留 yes-no 問句功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "what answer did 不合原問句，也保留錯誤倒裝。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s181-use-whether-for-knowledge-question",
+    "retain-yes-no-uncertainty-in-report"
+  ],
+  "representationType": "whether-question-cloze",
+  "misconceptionTargets": [
+    "replace-question-link-with-that"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Do you know 可由 yes 或 no 回應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項和 if 一樣可引出這類間接問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

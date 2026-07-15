@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy told Ben, \"The game starts at three.\" Ben later gave Nora the same message. Who was the original source?",
+  "options": [
+    "Amy",
+    "Ben",
+    "Nora",
+    "The game"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Amy 先把訊息告訴 Ben，是最初來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Ben 是轉傳者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nora 是最後接收者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "game 是訊息主題，不是說話者。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s182-identify-amy-as-original-game-source",
+    "trace-first-speaker-in-two-step-relay"
+  ],
+  "representationType": "original-source-identification",
+  "misconceptionTargets": [
+    "choose-last-reporter-as-source"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "沿時間順序找第一個說出內容的人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不會把轉傳者誤認為來源。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

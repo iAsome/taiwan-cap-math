@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_178_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher says to the students, \"You need your books.\" Which report keeps the meaning?",
+  "options": [
+    "The teacher says that she needs her books.",
+    "The students say that the teacher needs books.",
+    "The teacher says that we need her books.",
+    "The teacher says that the students need their books."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "you 指學生，不是老師。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原說話者仍是老師。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "we 會把轉述者加入學生群體，her 也改錯所有權。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "you 與 your 都依學生群體改成 the students 與 their。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s178-report-teacher-address-to-students",
+    "convert-plural-you-and-your-to-students-their"
+  ],
+  "representationType": "group-addressee-pronoun-shift",
+  "misconceptionTargets": [
+    "assign-addressed-pronouns-to-teacher"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "複數聽話者需要複數代名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留需要書本的人與書本所有者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

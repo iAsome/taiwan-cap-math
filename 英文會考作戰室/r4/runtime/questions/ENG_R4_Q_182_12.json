@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia tells Leo, \"Sam will bring the map.\" Leo tells Nora, \"Mia will bring it.\" Which statement describes the relay?",
+  "options": [
+    "Leo left the person and action the same.",
+    "Nora heard Sam's own words.",
+    "Mia first said that Nora had a map.",
+    "Leo changed the person who would bring the map."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo 把 Sam 改成 Mia，並未完整保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nora 從 Leo 聽到，且 Sam 沒有在題幹發言。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原訊息是 Sam 將帶地圖，不是 Nora 擁有地圖。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "原來的執行者是 Sam，Leo 的版本改為 Mia。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s182-diagnose-sam-to-mia-agent-change",
+    "audit-relay-for-participant-substitution"
+  ],
+  "representationType": "message-integrity-audit",
+  "misconceptionTargets": [
+    "ignore-agent-change-when-object-stays-same"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較每一版的主詞、動作與物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項指出唯一明示的內容變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

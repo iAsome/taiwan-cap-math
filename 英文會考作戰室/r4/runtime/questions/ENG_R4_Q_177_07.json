@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_177_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia gave the news to Leo. Which sentence reports this with told?",
+  "options": [
+    "Mia told that Leo the news.",
+    "Mia told to Leo the news.",
+    "Mia told Leo the news.",
+    "Mia told the news Leo to."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "that 不能放在 told 與人稱受詞之間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "主動的 told Leo 不加 to。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "told Leo the news 正確排列聽話者與訊息。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the news 和 Leo 的位置被打亂。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s177-report-mia-news-transfer-with-told",
+    "order-person-before-message-after-tell"
+  ],
+  "representationType": "tell-double-object-transformation",
+  "misconceptionTargets": [
+    "insert-to-before-tell-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "使用 told 時，先放接收訊息的人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項維持 Mia、Leo 與 news 的原有角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

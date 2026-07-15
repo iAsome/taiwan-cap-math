@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora says Amy promised to come. Amy says she made no promise. What can we know?",
+  "options": [
+    "Nora's words make the promise certain.",
+    "Amy's words make it certain that Nora never spoke.",
+    "The two reports do not agree and need more information.",
+    "Both reports are certainly true in the same way."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora 的說法尚未被其他證據證實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy 否認承諾不表示 Nora 沒說過。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩個說法對承諾有直接衝突，需要更多資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同一承諾不可能在相同意義下既發生又未發生。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s182-evaluate-conflicting-promise-accounts",
+    "require-evidence-before-resolving-testimony"
+  ],
+  "representationType": "source-conflict-evidence-limit",
+  "misconceptionTargets": [
+    "assume-first-or-last-account-is-true"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "訊息鏈可以揭示衝突，但不能自行解決衝突。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項精確描述目前證據狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

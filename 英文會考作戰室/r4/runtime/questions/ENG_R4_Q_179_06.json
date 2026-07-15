@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam said at noon, \"I am working now.\" A report was written that evening. Which word should the evening report use for now?",
+  "options": [
+    "soon",
+    "then",
+    "outside",
+    "tomorrow"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "soon 表示不久後，並非原來正在工作的時刻。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "then 可指 Sam 中午說話時的那一刻。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "outside 是地點詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "tomorrow 把事件推到隔天。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s179-shift-noon-now-to-then",
+    "choose-past-reference-time-adverb"
+  ],
+  "representationType": "now-then-perspective-shift",
+  "misconceptionTargets": [
+    "treat-now-as-fixed-clock-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "now 隨說話時點移動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把工作時間鎖在先前的 noon。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

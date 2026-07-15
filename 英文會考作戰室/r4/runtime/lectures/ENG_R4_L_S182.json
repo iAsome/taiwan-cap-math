@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S182",
+  "subject": "english",
+  "unitId": "ENG_R4_U26",
+  "skillId": "ENG_R4_S182",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S181"
+  ],
+  "objectives": [
+    "在多人對話中追蹤每則訊息的來源、接收者與轉交順序。",
+    "比較轉述前後內容，發現遺漏、角色交換與無法證實的推論。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S182_SEC_01",
+      "title": "每一則話都標出三個角色",
+      "content": "多人情境可把訊息整理成 speaker → listener → message。例如 Amy tells Ben, \"The meeting is at four,\" and Ben tells Nora。原始來源是 Amy，第一位接收者是 Ben，最後收到轉述的是 Nora。"
+    },
+    {
+      "id": "ENG_R4_L_S182_SEC_02",
+      "title": "轉交時不能交換人物與行動",
+      "content": "若 Leo 對 Mia 說 \"Nora has my key,\"，Mia 轉告 Nora 時仍要保留 key 屬於 Leo。只要把 my 誤連到 Mia，或把 Nora 改成說話者，內容就已被改壞。"
+    },
+    {
+      "id": "ENG_R4_L_S182_SEC_03",
+      "title": "訊息衝突時只報告差異",
+      "content": "Amy says the bus leaves at five，Ben says it leaves at six。若沒有時刻表，就只能知道兩人說法不同，不能任選一個當真。轉述來源不等於外部證明。"
+    },
+    {
+      "id": "ENG_R4_L_S182_SEC_04",
+      "title": "依時間順序判斷誰能知道什麼",
+      "content": "Nora 先告訴 Leo 房間改到二樓，Leo 後來才傳給 Mia。若問題問 Mia 何時知道，就要看第二次傳話時間；不能因資訊最初由 Nora 說出，就假設所有人同時收到。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S182_EX_01",
+      "prompt": "Amy told Ben, \"The game starts at three.\" Ben later told Nora the same message. Who was the original source?",
+      "steps": [
+        "按時間列出兩次說話。",
+        "找出第一個提供內容的人。",
+        "區分來源和最後接收者。"
+      ],
+      "answer": "Amy.",
+      "why": "Amy 先把三點開始的訊息告訴 Ben，Ben 只是後來轉交給 Nora，所以原始來源是 Amy。Nora 是最後接收者，不是最早說話者。"
+    },
+    {
+      "id": "ENG_R4_L_S182_EX_02",
+      "prompt": "Leo told Mia, \"Nora has my book.\" Whose book did Mia hear about?",
+      "steps": [
+        "把 my 連回原說話者。",
+        "確認 Mia 只是聽話者。",
+        "保留 Nora 持有物品的關係。"
+      ],
+      "answer": "Leo's book.",
+      "why": "原句由 Leo 說出，所以 my 指 Leo；Mia 聽到的是 Nora 拿著 Leo 的書。若解成 Mia 的書，就把所有者錯接到轉述者。"
+    },
+    {
+      "id": "ENG_R4_L_S182_EX_03",
+      "prompt": "Amy says the shop closes at five. Ben says it closes at six. What can be known without more information?",
+      "steps": [
+        "分別記錄兩位說法。",
+        "確認兩個時間互相衝突。",
+        "檢查是否有第三項證據。"
+      ],
+      "answer": "Their reports do not agree.",
+      "why": "一人說五點、一人說六點，且沒有商店公告可核對，因此只能確定兩份轉述不一致。不能因某人先說或較熟悉商店就判他正確。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "最後轉述訊息的人就是原始來源。",
+      "whyWrong": "最後說話者可能只是把別人的內容傳下去。",
+      "correction": "沿時間往前找第一個提供該訊息的人。"
+    },
+    {
+      "belief": "轉述中的 my 一定指目前正在說話的人。",
+      "whyWrong": "my 可能來自被轉述的原說話者。",
+      "correction": "先回到原引語確認所有者，再改代名詞。"
+    },
+    {
+      "belief": "兩位說法衝突時，較詳細的一方一定正確。",
+      "whyWrong": "細節多寡不能取代外部證據。",
+      "correction": "記錄衝突，等待公告或其他可查證來源。"
+    },
+    {
+      "belief": "訊息一開始被說出，對話中每個人就同時知道。",
+      "whyWrong": "每個人只能在收到或聽到訊息後得知。",
+      "correction": "依每一次傳話建立接收時間線。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A 告訴 B，B 再告訴 C，原始來源是誰？",
+      "answer": "A",
+      "reason": "A 最先提供訊息。"
+    },
+    {
+      "prompt": "兩人說法衝突但無公告時，能選一人當真嗎？",
+      "answer": "不能",
+      "reason": "仍缺少獨立查證。"
+    },
+    {
+      "prompt": "追蹤多人轉述至少要記哪些角色？",
+      "answer": "說話者、接收者、訊息內容",
+      "reason": "三者可防止人物和內容交換。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_177_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence reports a message without naming a listener?",
+  "options": [
+    "Amy told Ben that the room was open.",
+    "Amy said to Ben that the room was open.",
+    "Amy told us the room was open.",
+    "Amy said that the room was open."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben 被明確列為聽話者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "to Ben 也指出聽話者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "us 是接收訊息的人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "said that 只交代 Amy 的訊息，沒有說她對誰說。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s177-find-report-with-no-named-listener",
+    "scan-say-tell-frames-for-addressee"
+  ],
+  "representationType": "listener-presence-discrimination",
+  "misconceptionTargets": [
+    "assume-say-always-names-listener"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "檢查報導動詞旁是否出現人稱或人物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只有來源與內容兩部分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

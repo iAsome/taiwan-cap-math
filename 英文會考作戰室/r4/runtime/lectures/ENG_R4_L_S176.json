@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S176",
+  "subject": "english",
+  "unitId": "ENG_R4_U26",
+  "skillId": "ENG_R4_S176",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S175"
+  ],
+  "objectives": [
+    "分辨逐字呈現的直接引語與只轉述內容的句子。",
+    "由標點與報導動詞找出原說話者和訊息內容。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S176_SEC_01",
+      "title": "直接引語保留說話者的原句",
+      "content": "Mia said, \"I am tired.\" 使用引號呈現 Mia 說出的原句。引號內的 I 從 Mia 的角度出發，標點也把報導部分 Mia said 和原話分開。直接引語可以支持逐字判斷，但不能自行補上說話時沒有出現的背景。"
+    },
+    {
+      "id": "ENG_R4_L_S176_SEC_02",
+      "title": "轉述句保留內容而非每一個字",
+      "content": "Mia said that she was tired 轉述 Mia 疲倦這項內容，不再使用引號，也不表示轉述者記得她的每一個原字。人稱與時態可能配合新的敘述角度調整，核心訊息仍應保持。"
+    },
+    {
+      "id": "ENG_R4_L_S176_SEC_03",
+      "title": "先確認誰說話，再讀他說了什麼",
+      "content": "在 Ben said, \"Nora has the key.\" 中，Ben 是原說話者，Nora has the key 才是他的訊息。不能因 Nora 出現在引號內，就把她誤認為說話者；也不能把 Ben 的話當成已由旁人證實的事實。"
+    },
+    {
+      "id": "ENG_R4_L_S176_SEC_04",
+      "title": "標點只顯示形式，不保證內容真實",
+      "content": "引號、逗號和 said 能協助辨認直接引語，that 子句常出現在轉述中；然而這些形式只告訴我們誰說了什麼。某人說一件事，不代表那件事必然正確，除非上下文另有證據。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S176_EX_01",
+      "prompt": "Which words are Amy's exact words? Amy said, \"The bus is late.\"",
+      "steps": [
+        "找出引號的起點與終點。",
+        "排除引號外的報導動詞。",
+        "只讀取引號內訊息。"
+      ],
+      "answer": "The bus is late.",
+      "why": "引號只包住 The bus is late，所以這一段是 Amy 的直接原話。Amy said 說明來源，但不是她在引號內說出的訊息內容。"
+    },
+    {
+      "id": "ENG_R4_L_S176_EX_02",
+      "prompt": "Is this direct speech or reported content? Leo said that he needed help.",
+      "steps": [
+        "查看句中是否有引號。",
+        "找出 said 後的內容子句。",
+        "判斷是否保留原句逐字形式。"
+      ],
+      "answer": "Reported content.",
+      "why": "句子沒有引號，said 後以 that he needed help 交代 Leo 的訊息。它保留需要幫助這項內容，卻沒有證據顯示 Leo 當時逐字使用哪些詞。"
+    },
+    {
+      "id": "ENG_R4_L_S176_EX_03",
+      "prompt": "Ben said, \"Nora found the map.\" Who is the speaker?",
+      "steps": [
+        "定位 said 前的主詞。",
+        "把引號內的人名和說話者分開。",
+        "核對誰執行說話動作。"
+      ],
+      "answer": "Ben.",
+      "why": "執行 said 的人是 Ben，因此他是說話者。Nora 只出現在 Ben 的訊息中，句子說她找到地圖，沒有說她正在發言。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到句中有人名，就把最靠近引號的人名當成說話者。",
+      "whyWrong": "說話者由 said、asked 等報導動詞的主詞決定。",
+      "correction": "先找誰執行說話動作，再讀引號內人物。"
+    },
+    {
+      "belief": "轉述句和直接引語必須逐字相同。",
+      "whyWrong": "轉述重點是保留內容，人稱或時間角度可調整。",
+      "correction": "比較核心事件、人物與語氣是否一致。"
+    },
+    {
+      "belief": "有引號的句子一定是在陳述真實事實。",
+      "whyWrong": "引號只能證明有人說過這段話，不能證明內容正確。",
+      "correction": "把話語來源和外部事實證據分開。"
+    },
+    {
+      "belief": "said that 後面的內容就是說話者當時的逐字原句。",
+      "whyWrong": "that 子句通常只是轉述，原始用字可能不同。",
+      "correction": "沒有直接引語時，不推測原句每一個字。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Nora said, \"I found it.\" 中誰是說話者？",
+      "answer": "Nora",
+      "reason": "Nora 是 said 的主詞。"
+    },
+    {
+      "prompt": "Leo said that he was ready 是否保留 Leo 的逐字原話？",
+      "answer": "不一定",
+      "reason": "這是內容轉述，沒有引號。"
+    },
+    {
+      "prompt": "有人說一件事，是否足以證明內容為真？",
+      "answer": "不足以",
+      "reason": "說話行為和事實正確性是兩種證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_180_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo said, \"I am tired, but I can finish the work.\" Which report keeps both parts?",
+  "options": [
+    "Leo said that I was tired, but he finished yesterday.",
+    "Leo said that he is tired because the work could finish him.",
+    "Leo said that he was tired but could finish the work.",
+    "Leo said that the work was tired and he can."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 改錯說話者，且加入 yesterday 與已完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "because 改變 but 的轉折，主客體也顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "was tired 與 could finish 同時保留狀態、能力與轉折。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "work 不能在此描述為 tired，can 後也缺動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s180-report-leo-tired-yet-able-message",
+    "integrate-pronoun-modal-and-contrast-shifts"
+  ],
+  "representationType": "multi-clause-backshift-transformation",
+  "misconceptionTargets": [
+    "alter-logical-connector-while-reporting"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "轉述多個子句時，每個人物與邏輯連接都要保留。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項沒有把能完成誤寫成已完成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

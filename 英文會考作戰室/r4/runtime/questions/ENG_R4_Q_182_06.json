@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy told Ben the meeting time. Ben told Nora later. Who heard the time from Amy herself?",
+  "options": [
+    "Nora",
+    "Ben",
+    "Both Ben and Nora",
+    "Neither person"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora 從 Ben 收到訊息，不是從 Amy 本人聽到。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Ben 是 Amy 的直接聽話者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只有 Ben 從 Amy 本人收到訊息。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹明示 Amy 告訴 Ben。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s182-distinguish-ben-direct-from-nora-indirect",
+    "identify-adjacent-link-in-report-chain"
+  ],
+  "representationType": "direct-versus-indirect-recipient",
+  "misconceptionTargets": [
+    "treat-all-relay-recipients-as-direct"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接接收只看相鄰的一次傳遞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不把間接轉傳算成直接聽見。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

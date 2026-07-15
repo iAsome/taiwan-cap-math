@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_178_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy said to Ben, \"My sister will call you.\" Who will make the call, and who will receive it?",
+  "options": [
+    "Ben will call Amy's sister.",
+    "Amy will call Ben.",
+    "Amy's sister will call Ben.",
+    "Ben's sister will call Amy."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "call 的主詞是 my sister，不是 Ben。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy 不是直接執行 call 的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "my 指 Amy，you 指 Ben，因此關係正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項同時換錯姊妹的所有者與通話方向。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s178-resolve-amy-sister-call-to-ben",
+    "combine-possessive-and-object-pronoun-roles"
+  ],
+  "representationType": "two-pronoun-event-reconstruction",
+  "misconceptionTargets": [
+    "reverse-caller-and-receiver"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "分別解析 my 與 you，不要只看靠近的名字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項還原出 Amy 的姊妹是來電者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

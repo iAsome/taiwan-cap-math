@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo asked, \"Where is the key?\" Which report keeps the question and uses statement word order?",
+  "options": [
+    "Leo asked that where the key is.",
+    "Leo asked where is the key.",
+    "Leo asked where did the key be.",
+    "Leo asked where the key was."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "that 不放在 where 間接問句前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "間接問句不保留 is the key 的倒裝。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did ... be 不是正確形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "where the key was 保留疑問詞並用陳述語序。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s181-report-key-location-question-with-statement-order",
+    "remove-inversion-in-wh-clause"
+  ],
+  "representationType": "indirect-wh-question-order",
+  "misconceptionTargets": [
+    "retain-direct-question-inversion"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "where 已經承擔疑問連接功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把主詞 the key 放在動詞 was 前。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

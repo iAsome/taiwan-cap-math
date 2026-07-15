@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_180_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "On Monday, Amy said, \"I am busy.\" On Friday, Ben reports her words as Amy said that she was busy. What time does was busy show?",
+  "options": [
+    "Only Friday after lunch",
+    "Every day of Amy's life",
+    "A future time after Friday",
+    "The time when Amy spoke on Monday"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Friday 是 Ben 的轉述時間，不是 was busy 的唯一時點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子沒有 always。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "was 不把狀態放到 Friday 之後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "過去式配合 said，把忙碌放在 Amy 原先說話的時間。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s180-locate-backshifted-busy-at-monday-speech",
+    "map-content-state-to-earlier-reporting-time"
+  ],
+  "representationType": "reported-state-timeline",
+  "misconceptionTargets": [
+    "attach-backshifted-state-to-report-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "建立 Monday 說話與 Friday 轉述兩個時間點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項不推論 Amy 在其他時間的狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

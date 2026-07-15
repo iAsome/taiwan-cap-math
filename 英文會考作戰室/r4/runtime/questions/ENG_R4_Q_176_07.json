@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_176_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy said, \"The bus is late.\" Which report adds information that Amy did not give?",
+  "options": [
+    "Amy said that the bus was late.",
+    "Amy reported a late bus.",
+    "Amy said that the bus was late because the driver was sick.",
+    "Amy's message was about the bus."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是原句的合理轉述。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "late bus 概括了原訊息。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "driver was sick 是原話沒有提供的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "訊息確實以 bus 為主題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s176-detect-added-driver-cause-in-bus-report",
+    "compare-report-detail-against-source-quote"
+  ],
+  "representationType": "unsupported-detail-detection",
+  "misconceptionTargets": [
+    "treat-plausible-cause-as-source-content"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "辨認新增資訊時要逐項核對原話。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項在 late 後自行補出一段因果故事。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

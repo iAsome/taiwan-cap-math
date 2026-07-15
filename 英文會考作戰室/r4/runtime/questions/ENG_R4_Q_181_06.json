@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben said, \"The train is late.\" Which report keeps this as a statement?",
+  "options": [
+    "Ben asked whether the train was late.",
+    "Ben said that the train was late.",
+    "Ben told the train to be late.",
+    "Ben asked the train when to be late."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "asked whether 改成提問。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "said that 保留 Ben 陳述列車遲到。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "train 不能作接受指示的人，語意也改變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句沒有 when 問題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s181-report-train-late-as-statement",
+    "avoid-changing-declarative-into-question-or-command"
+  ],
+  "representationType": "speech-act-preservation",
+  "misconceptionTargets": [
+    "choose-reporting-verb-by-form-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先判定原話沒有問號也沒有命令。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留陳述功能與核心內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

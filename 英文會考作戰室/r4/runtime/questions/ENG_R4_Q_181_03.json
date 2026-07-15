@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy asked, \"Is the shop open?\" Amy asked ___ the shop was open.",
+  "options": [
+    "that",
+    "what",
+    "if",
+    "to"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "that 通常引出陳述，不保留 yes-no 問句功能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "what 需要詢問事物內容，原題只問是否。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "if 可引出間接 yes-no 問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "to 後不能直接接完整子句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s181-insert-if-for-shop-yes-no-question",
+    "classify-direct-question-by-answer-type"
+  ],
+  "representationType": "indirect-yes-no-question-cloze",
+  "misconceptionTargets": [
+    "report-question-with-that"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原問句可用 yes 或 no 回答。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把疑問功能保留在 asked if 中。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

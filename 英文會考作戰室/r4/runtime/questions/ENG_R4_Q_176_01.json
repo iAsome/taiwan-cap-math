@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_176_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy said, \"The bus is late.\" Which words are Amy's exact words?",
+  "options": [
+    "The bus is late.",
+    "Amy said.",
+    "Amy is late.",
+    "The bus said Amy."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "引號完整包住 The bus is late，這才是 Amy 的原話。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy said 是引出原話的報導部分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原句沒有說 Amy 遲到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "bus 不會執行 said，人物角色也被顛倒。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s176-locate-amy-exact-bus-quote",
+    "exclude-reporting-clause-from-quoted-words"
+  ],
+  "representationType": "direct-quote-boundary",
+  "misconceptionTargets": [
+    "include-reporting-clause-in-exact-words"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "直接引語只把引號內文字視為逐字內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項沒有加入或刪去 Amy 說出的字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

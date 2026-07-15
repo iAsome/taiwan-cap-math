@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_177_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy ___, \"I am ready.\"",
+  "options": [
+    "said",
+    "told",
+    "told Ben that",
+    "said to"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "said 可直接引出後方引號原話。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "told 通常需要聽話者，這裡沒有。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "told Ben that 後不能直接接引號中的獨立句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "said to 還需要接一個人。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s177-use-said-to-introduce-amy-quote",
+    "reject-incomplete-listener-frames-before-quotation"
+  ],
+  "representationType": "direct-speech-reporting-verb",
+  "misconceptionTargets": [
+    "use-told-without-listener-before-quote"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "引號前沒有聽話者欄位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只負責引出 Amy 的直接引語。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

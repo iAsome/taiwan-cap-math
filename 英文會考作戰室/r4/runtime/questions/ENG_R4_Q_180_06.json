@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_180_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora said, \"I am reading the notice.\" Nora said that she ___ the notice.",
+  "options": [
+    "reads tomorrow",
+    "was reading",
+    "will reading",
+    "had read every day"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tomorrow 改變原來正在進行的時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "was reading 保留 Nora 在說話時正在閱讀。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "will reading 缺少 be 且形式錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "had read every day 改成反覆完成的過去。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s180-backshift-present-progressive-notice-reading",
+    "preserve-action-in-progress-at-speech-time"
+  ],
+  "representationType": "progressive-backshift-cloze",
+  "misconceptionTargets": [
+    "change-progressive-to-simple-or-future"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句的 am reading 是說話當時進行中的動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項配合 said 與 she 使用 was reading。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

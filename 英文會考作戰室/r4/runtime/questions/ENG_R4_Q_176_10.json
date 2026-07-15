@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_176_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo said that the room was locked. What can a reader know for sure?",
+  "options": [
+    "Leo locked the room.",
+    "Leo gave the message that the room was locked.",
+    "The room can never be opened.",
+    "Leo used the word locked in his exact sentence."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子沒有交代誰上鎖。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "said that 明確把房間上鎖當成 Leo 的訊息。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "never 是沒有根據的永久結論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "轉述句不保證 Leo 原話逐字含 locked。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s176-identify-certain-content-of-leo-locked-room-report",
+    "avoid-agent-permanence-and-wording-overreach"
+  ],
+  "representationType": "reported-message-certainty",
+  "misconceptionTargets": [
+    "confuse-reported-claim-with-established-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "確定的是 Leo 說了什麼內容，不是內容已被驗證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有把來源陳述擴大成事件事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

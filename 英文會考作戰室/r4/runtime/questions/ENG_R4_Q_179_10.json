@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "On Tuesday, Ben reported, \"Nora said yesterday that the office was closed.\" When did Nora speak?",
+  "options": [
+    "Sunday",
+    "Monday",
+    "Tuesday night",
+    "Wednesday"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Sunday 是 Tuesday 的兩天前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Tuesday 的 yesterday 是 Monday。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原句把說話時間放在 yesterday，不是 Tuesday night。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Wednesday 在報告之後。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s179-calculate-nora-speaking-day-from-tuesday-yesterday",
+    "resolve-nested-time-reference"
+  ],
+  "representationType": "reported-time-day-calculation",
+  "misconceptionTargets": [
+    "count-yesterday-from-wrong-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "本題的 yesterday 以 Ben 在 Tuesday 的句子為基準。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只做一天的回推。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

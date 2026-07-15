@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben said in Room A, \"I will wait here.\" He later reported this in Room B. Where did he say he would wait?",
+  "options": [
+    "Room B",
+    "Every room",
+    "Room A",
+    "No room was named"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Room B 是轉述地點，不是原話中的 here。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "here 只指當時所在處，不是所有房間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "原話在 Room A 說出，所以 here 指 Room A。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹已提供原說話地點。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s179-resolve-here-to-original-room-a",
+    "separate-speech-location-from-report-location"
+  ],
+  "representationType": "deictic-place-resolution",
+  "misconceptionTargets": [
+    "assign-here-to-later-report-location"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先固定原話的空間座標，再移到新觀點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不會被後來的轉述地點取代。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

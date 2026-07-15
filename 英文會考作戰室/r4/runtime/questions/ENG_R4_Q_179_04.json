@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben is still in the same room and repeats, \"I will wait here.\" What is true about here?",
+  "options": [
+    "It must become yesterday.",
+    "It must become tomorrow.",
+    "It must name another city.",
+    "It may stay here because the place has not changed."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "yesterday 是時間詞，不是地點替換。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tomorrow 也不能代替 here。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子沒有移到另一座城市。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "說話與轉述位置相同時，here 仍可指同一處。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s179-retain-here-in-unchanged-room",
+    "apply-perspective-dependent-place-shift"
+  ],
+  "representationType": "same-place-reference-judgment",
+  "misconceptionTargets": [
+    "always-change-here-to-there"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "地點詞是否改變要看觀點是否真的移動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項拒絕機械式把每個 here 改成 there。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

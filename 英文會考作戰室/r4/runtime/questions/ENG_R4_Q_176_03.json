@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_176_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben said, \"Nora found the map.\" Who found the map in Ben's message?",
+  "options": [
+    "The map",
+    "Ben",
+    "Nora",
+    "No one"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "map 是被找到的物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Ben 是說話者，但引號內沒有說他找到地圖。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Nora 是 found 的主詞，因此她是找到地圖的人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "訊息已明確指出 Nora。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s176-identify-nora-as-map-finder-inside-ben-message",
+    "separate-message-agent-from-reporting-speaker"
+  ],
+  "representationType": "quoted-event-role-identification",
+  "misconceptionTargets": [
+    "assign-quoted-action-to-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先進入引號讀取事件，再找 found 的主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把訊息中的行動者和說話者分開。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

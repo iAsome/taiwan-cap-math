@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_178_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam says, \"I lost my key.\" Which report names Sam clearly?",
+  "options": [
+    "Sam says that he lost his key.",
+    "Sam says that I lost my key.",
+    "Sam says that you lost his key.",
+    "Sam says that they lost our key."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "he 與 his 都清楚回指 Sam。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "I / my 會依轉述者解讀，不再明確是 Sam。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "you 把遺失者換成聽話者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "they / our 加入原句沒有的群體。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s178-name-sam-in-third-person-key-report",
+    "replace-first-person-with-clear-antecedent"
+  ],
+  "representationType": "explicit-antecedent-reporting",
+  "misconceptionTargets": [
+    "retain-i-while-changing-reporter"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "使用人名加第三人稱可解除 I 的觀點依賴。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時保留遺失者與鑰匙所有者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo told Mia the room number. Mia then sent that number to Nora. Who received the message last?",
+  "options": [
+    "Leo",
+    "Nora",
+    "Mia's room",
+    "No one"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo 是最初傳出訊息的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Nora 在 Mia 之後收到號碼，是最後接收者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "room 是訊息內容，不是接收者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹明確有兩次傳遞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s182-locate-nora-as-final-room-number-recipient",
+    "follow-message-chain-to-last-listener"
+  ],
+  "representationType": "final-recipient-tracing",
+  "misconceptionTargets": [
+    "confuse-source-with-final-recipient"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "依 told、then sent 的順序追蹤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項位於訊息鏈終點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_180_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben said, \"I will wait.\" Ben said that he ___ wait.",
+  "options": [
+    "will",
+    "would",
+    "waited to",
+    "is would"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "在基本過去轉述中，will 通常配合 said 改為 would。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "would wait 保留從當時看向未來的意思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "waited to 後還缺少另一個動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is would 不能形成動詞片語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s180-shift-ben-will-wait-to-would",
+    "retain-future-after-past-viewpoint"
+  ],
+  "representationType": "will-would-reporting-cloze",
+  "misconceptionTargets": [
+    "treat-will-as-unchanged-after-said"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "等待發生在 Ben 說話之後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 would 表示過去觀點中的未來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

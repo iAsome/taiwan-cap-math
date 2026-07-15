@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy needed help with a bag. Leo said, \"I can carry your bag.\" Which report best keeps Leo's offer?",
+  "options": [
+    "Leo ordered Amy to carry his bag.",
+    "Leo asked if Amy carried every bag.",
+    "Leo offered to carry Amy's bag.",
+    "Leo said that bags could carry Amy."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原話是 Leo 願意幫忙，不是命令 Amy。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有詢問過去行為。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "offered to carry 準確保留主動提供幫忙的意圖。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "bags 被錯寫成執行 carry 的主詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s181-identify-leo-bag-carry-offer",
+    "report-helping-intent-with-correct-agent"
+  ],
+  "representationType": "offer-intent-reporting",
+  "misconceptionTargets": [
+    "misclassify-offer-as-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "needed help 讓 can 在此成為主動提供協助。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留幫助者、物品所有者與行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

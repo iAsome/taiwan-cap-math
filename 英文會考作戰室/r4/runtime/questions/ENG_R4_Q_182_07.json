@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam told Mia, \"The bus leaves at eight.\" Mia told Leo it left at seven. Where did the message first change?",
+  "options": [
+    "When Sam spoke to Mia",
+    "Before Sam knew the time",
+    "When Mia told Leo",
+    "After Leo told Sam"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Sam 的原訊息仍是 eight，尚未改變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹沒有說 Sam 如何得知時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Mia 轉給 Leo 時把 eight 改成 seven。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有 Leo 再告訴 Sam 的事件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s182-detect-mia-alteration-from-eight-to-seven",
+    "compare-message-version-at-each-relay-step"
+  ],
+  "representationType": "relay-change-point-detection",
+  "misconceptionTargets": [
+    "blame-original-source-for-later-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐次比較每一版訊息內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是第一個可觀察到數字不同的連結。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

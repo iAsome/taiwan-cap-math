@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_177_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora said ___ Amy, \"Please call me.\"",
+  "options": [
+    "at",
+    "to",
+    "that",
+    "for"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "say at person 不是此用法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "said to Amy 正確指出 Nora 說話的對象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "said that Amy 後應接子句，不能接這種結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "said for Amy 表示的關係不同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s177-insert-to-before-amy-listener",
+    "distinguish-addressee-preposition-from-content-link"
+  ],
+  "representationType": "say-preposition-selection",
+  "misconceptionTargets": [
+    "use-that-to-mark-listener"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Amy 是聽話者，不是訊息內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把 say 與人物用 to 連接。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

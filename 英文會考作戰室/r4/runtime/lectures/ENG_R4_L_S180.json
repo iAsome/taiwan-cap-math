@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S180",
+  "subject": "english",
+  "unitId": "ENG_R4_U26",
+  "skillId": "ENG_R4_S180",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S179"
+  ],
+  "objectives": [
+    "理解過去報導動詞後常見的基本時態回溯。",
+    "辨認現在報導與持續真理不必機械改成過去。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S180_SEC_01",
+      "title": "過去報導常把現在形式往前移",
+      "content": "Mia said, \"I am tired.\" 常轉述為 Mia said that she was tired。said 把報導放在過去，am 便回溯成 was，表示她在當時感到疲倦，不保證現在仍然疲倦。"
+    },
+    {
+      "id": "ENG_R4_L_S180_SEC_02",
+      "title": "will 和 can 也有常見對應",
+      "content": "Leo said, \"I will call.\" 可轉成 Leo said that he would call；Amy said, \"I can help.\" 可轉成 Amy said that she could help。would 與 could 保留的是當時所談的未來或能力。"
+    },
+    {
+      "id": "ENG_R4_L_S180_SEC_03",
+      "title": "現在報導通常保留現在形式",
+      "content": "Nora says, \"I am ready.\" 可寫 Nora says that she is ready。says 表示目前報導，沒有必要把 is 改成 was。解題不能只看到 reported speech 就一律選過去式。"
+    },
+    {
+      "id": "ENG_R4_L_S180_SEC_04",
+      "title": "仍成立的一般事實可保持現在式",
+      "content": "The teacher said, \"Water turns into ice when it gets cold enough.\" 轉述時可保留 turns，因為內容是仍成立的一般事實。時態回溯服務於時間關係，不是改動每一個動詞的命令。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S180_EX_01",
+      "prompt": "Mia said, \"I am sick.\" Complete: Mia said that she ___ sick.",
+      "steps": [
+        "確認 reporting verb 是 said。",
+        "把 am 的人物改成 she。",
+        "將當時狀態回溯為 was。"
+      ],
+      "answer": "was",
+      "why": "said 把報導放在過去，Mia 原本說的 am sick 是她當時的狀態，因此轉述用 she was sick。這句不能證明她現在仍不舒服。"
+    },
+    {
+      "id": "ENG_R4_L_S180_EX_02",
+      "prompt": "Ben said, \"I will wait.\" Complete: Ben said that he ___ wait.",
+      "steps": [
+        "辨認 will 是原話中的未來。",
+        "以過去報導時間為基準。",
+        "改用 would 保留當時未來。"
+      ],
+      "answer": "would",
+      "why": "Ben 說話時，等待仍是之後的行動；從過去的 said 回看，will 常改為 would。would wait 不表示等待發生在現在。"
+    },
+    {
+      "id": "ENG_R4_L_S180_EX_03",
+      "prompt": "The guide says, \"The museum is open.\" Complete: The guide says that the museum ___ open.",
+      "steps": [
+        "確認報導動詞是現在式 says。",
+        "判斷訊息是目前狀態。",
+        "保留現在式 is。"
+      ],
+      "answer": "is",
+      "why": "says 表示導覽員現在提供資訊，the museum is open 仍是目前狀態，所以保留 is。若機械改成 was，會把開放時間錯放到過去。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有轉述句都要把動詞改成過去式。",
+      "whyWrong": "現在報導或仍成立的一般事實可以保留現在式。",
+      "correction": "先判斷報導時間和內容是否仍有效。"
+    },
+    {
+      "belief": "would 表示說話者現在才決定要做。",
+      "whyWrong": "在過去轉述中，would 常對應原話的 will。",
+      "correction": "以原說話時間判斷哪個行動當時尚未發生。"
+    },
+    {
+      "belief": "was sick 表示現在一定已經康復。",
+      "whyWrong": "過去轉述只定位當時狀態，沒有交代現在。",
+      "correction": "不從時態變化補出未提供的現況。"
+    },
+    {
+      "belief": "一般事實也必須跟著 said 改成過去。",
+      "whyWrong": "內容若跨時間持續成立，可保留現在式。",
+      "correction": "區分一次狀態與普遍規律。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Mia said, I am tired 中 am 常回溯成什麼？",
+      "answer": "was",
+      "reason": "said 建立過去報導基準。"
+    },
+    {
+      "prompt": "原話 will 在過去轉述中常改成什麼？",
+      "answer": "would",
+      "reason": "它表示從過去看仍在之後的行動。"
+    },
+    {
+      "prompt": "reporting verb 是 says 時一定要回溯嗎？",
+      "answer": "不一定",
+      "reason": "目前報導可保留現在式。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  }
+}

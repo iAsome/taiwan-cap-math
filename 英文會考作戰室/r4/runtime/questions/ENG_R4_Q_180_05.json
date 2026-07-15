@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_180_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher said, \"Water turns to ice when it gets cold enough.\" Which report keeps the general fact?",
+  "options": [
+    "The teacher said that water turns to ice when it gets cold enough.",
+    "The teacher said that water turned to ice only that morning.",
+    "The teacher said that water would never become ice.",
+    "The teacher said that cold water was always hot."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "一般事實仍適用，因此 turns 和 gets 可保留現在式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "only that morning 把一般現象縮成一次事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "never become ice 與原意相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cold water was always hot 自相矛盾也不是原話。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s180-preserve-water-ice-general-fact",
+    "separate-enduring-truth-from-one-time-event"
+  ],
+  "representationType": "general-fact-report-selection",
+  "misconceptionTargets": [
+    "backshift-general-fact-into-finished-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時態回溯不是把永續事實改成過去限定事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留條件與一般結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

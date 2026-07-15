@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia said in the library, \"I cannot study here now.\" What cannot be known just because there and then are used later?",
+  "options": [
+    "Mia first spoke in the library.",
+    "Mia had the study problem when she spoke.",
+    "Why Mia went to another place later",
+    "Mia first used here and now."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹明示原話在 library 說出。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "now 把不能讀書的狀態放在說話時。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "there / then 的轉換不會提供 Mia 後來移動的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "引號直接保存 here 和 now。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s179-bound-inference-from-there-then-shift",
+    "reject-invented-reason-for-perspective-change"
+  ],
+  "representationType": "time-place-evidence-limit",
+  "misconceptionTargets": [
+    "infer-cause-from-deictic-shift"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "觀點詞變化只能顯示時空中心改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項要求的是句子沒有交代的背景原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

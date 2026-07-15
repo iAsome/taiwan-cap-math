@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo told Mia, \"Nora has my book.\" Who has the book in Leo's message?",
+  "options": [
+    "Nora",
+    "Leo",
+    "Mia",
+    "No one"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Nora 是 has 的主詞，因此她目前持有書。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Leo 是 my 指出的所有者，但訊息沒有說書在他手上。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Mia 是聽話者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中已明確指出 Nora has the book。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s182-identify-nora-as-current-book-holder",
+    "distinguish-holder-from-owner-in-relayed-message"
+  ],
+  "representationType": "holder-owner-role-discrimination",
+  "misconceptionTargets": [
+    "confuse-my-owner-with-has-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "has 回答目前持有人，my 回答書的所有者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項刻意和 Leo's book 的所有權分開。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

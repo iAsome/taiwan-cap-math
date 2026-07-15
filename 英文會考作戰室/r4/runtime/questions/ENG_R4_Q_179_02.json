@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia said on Friday, \"I will call tomorrow.\" Mia said she would call ___.",
+  "options": [
+    "the day before",
+    "the next day",
+    "that morning before Friday",
+    "last year"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the day before 指星期四，方向錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Friday 的 tomorrow 是下一天，符合 the next day。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原句沒有 morning，且時間方向相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "last year 與原話完全無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s179-shift-friday-tomorrow-to-next-day",
+    "preserve-forward-relative-time"
+  ],
+  "representationType": "future-relative-day-cloze",
+  "misconceptionTargets": [
+    "reverse-next-and-previous-day"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "tomorrow 以原說話時間為基準往後一天。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能在之後轉述時保持這個方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

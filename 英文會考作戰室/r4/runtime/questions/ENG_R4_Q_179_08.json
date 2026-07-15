@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia says this morning, \"I need the book today,\" and reports it again before lunch. Must today change?",
+  "options": [
+    "Yes, to last year",
+    "Yes, to tomorrow",
+    "Yes, to the day before",
+    "No, both reports are on the same day"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "last year 與同一天無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tomorrow 把需求推後一天。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the day before 把需求移到昨天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩次都在同一天，today 仍指同一日期。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s179-retain-today-in-same-morning-report",
+    "avoid-unneeded-time-word-shift"
+  ],
+  "representationType": "same-day-reporting-decision",
+  "misconceptionTargets": [
+    "automatically-change-today"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "轉述形式不能取代實際時間關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項依題幹明示的 same day 判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,137 @@
+{
+  "id": "ENG_R4_L_S178",
+  "subject": "english",
+  "unitId": "ENG_R4_U26",
+  "skillId": "ENG_R4_S178",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S177"
+  ],
+  "objectives": [
+    "依原說話者與聽話者調整 I、you、we 和所有格。",
+    "在代名詞指涉不明時保留不確定，不擅自指定人物。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S178_SEC_01",
+      "title": "第一人稱要回到原說話者",
+      "content": "Mia says, \"I need my bag.\" 轉述為 Mia says that she needs her bag。I 和 my 都指 Mia，所以改成 she 和 her；不能只改主詞卻留下 my，否則袋子的擁有者會改變。"
+    },
+    {
+      "id": "ENG_R4_L_S178_SEC_02",
+      "title": "you 由原本的聽話者決定",
+      "content": "Ben said to Amy, \"You can use my phone.\" 中，you 指 Amy，my 指 Ben。轉述可寫 Ben told Amy that she could use his phone。不能把每一個 you 固定改成 he 或 she，必須先知道誰在聽。"
+    },
+    {
+      "id": "ENG_R4_L_S178_SEC_03",
+      "title": "說話者轉述自己的話時 I 可能不變",
+      "content": "I said, \"I am ready.\" 若仍由同一個 I 轉述，可寫 I said that I was ready。代名詞調整跟敘述角度有關，不是看到直接引語的 I 就一律換成 he 或 she。"
+    },
+    {
+      "id": "ENG_R4_L_S178_SEC_04",
+      "title": "指涉不明時不能猜",
+      "content": "Amy told Mia that she had the key 中，she 可能指 Amy，也可能指 Mia，若上下文沒有更多線索就不能確定。高品質轉述要避免製造新歧義，也不能把模糊訊息當成已知身分。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S178_EX_01",
+      "prompt": "Mia says, \"I need my book.\" Complete: Mia says that ___ needs ___ book.",
+      "steps": [
+        "把 I 連回 Mia。",
+        "把 my 的擁有者也連回 Mia。",
+        "選擇相同人物的主格與所有格。"
+      ],
+      "answer": "she; her",
+      "why": "原句中的 I 和 my 都由 Mia 說出，也都指 Mia。轉述改用第三人稱時，要同時寫 she needs her book，不能混成 she needs my book。"
+    },
+    {
+      "id": "ENG_R4_L_S178_EX_02",
+      "prompt": "Nora said to Leo, \"I will call you.\" Who will make the call, and who will receive it?",
+      "steps": [
+        "找出 I 的原說話者。",
+        "找出 you 的原聽話者。",
+        "依 call 的主詞與受詞排列人物。"
+      ],
+      "answer": "Nora will call Leo.",
+      "why": "I 指正在說話的 Nora，you 指聽話的 Leo，因此行動方向是 Nora 打電話給 Leo。若交換兩人，就會改變原訊息。"
+    },
+    {
+      "id": "ENG_R4_L_S178_EX_03",
+      "prompt": "I said, \"I can help.\" Must the reported subject become he or she?",
+      "steps": [
+        "確認目前轉述者仍是 I。",
+        "比較原說話者和新敘述者。",
+        "保留相同的第一人稱角度。"
+      ],
+      "answer": "No.",
+      "why": "原說話者和目前轉述者都是 I，因此可寫 I said that I could help。代名詞依人物關係調整，不是固定由第一人稱換成第三人稱。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "直接引語中的 I 一定改成 he。",
+      "whyWrong": "I 可能指任何性別的說話者，也可能在自述時保持 I。",
+      "correction": "先用名字或上下文確認原說話者。"
+    },
+    {
+      "belief": "所有 you 都改成同一個代名詞。",
+      "whyWrong": "you 指誰取決於每一次對話的聽話者。",
+      "correction": "在對話箭頭上標出 speaker 到 listener。"
+    },
+    {
+      "belief": "只改主詞，不必調整 my、our 等所有格。",
+      "whyWrong": "所有格若不跟著人物改，物品的主人會被換掉。",
+      "correction": "把每個代名詞逐一連回同一人物。"
+    },
+    {
+      "belief": "句中出現 she，就能確定她是哪一位女性。",
+      "whyWrong": "多位人物同時出現時，代名詞可能有歧義。",
+      "correction": "沒有足夠線索時明確回答無法確定。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Leo says, \"I lost my key.\" 中 I 和 my 都指誰？",
+      "answer": "Leo",
+      "reason": "兩者都從 Leo 的說話角度出發。"
+    },
+    {
+      "prompt": "Nora 對 Amy 說 You can sit here，you 指誰？",
+      "answer": "Amy",
+      "reason": "Amy 是原聽話者。"
+    },
+    {
+      "prompt": "Amy told Mia that she was late，能只靠這句確定 she 嗎？",
+      "answer": "不能",
+      "reason": "兩位人物都可能是指涉對象。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora said to Mia, \"Please wait.\" Nora ___ Mia to wait.",
+  "options": [
+    "said",
+    "asked",
+    "said that",
+    "spoke"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "said Mia 缺少 to，也未呈現請求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "asked Mia to wait 保留 please 的禮貌請求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "said that Mia to wait 不是完整結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "spoke Mia 也缺少介系詞與請求結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s181-select-asked-for-polite-wait-request",
+    "distinguish-request-from-statement-and-command"
+  ],
+  "representationType": "request-reporting-verb-cloze",
+  "misconceptionTargets": [
+    "erase-politeness-with-generic-say"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "please 提示這不是單純陳述。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時保留聽話者與請求行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

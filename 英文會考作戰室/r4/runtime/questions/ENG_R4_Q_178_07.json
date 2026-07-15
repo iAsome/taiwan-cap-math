@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_178_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy told Mia that she had the key. What cannot be known without more information?",
+  "options": [
+    "A key was in the message.",
+    "Amy spoke to Mia.",
+    "Whether she means Amy or Mia",
+    "This is a report."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the key 明確出現在訊息中。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "told Mia 明確指出聽話者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "she 可能回指 Amy 或 Mia，句中無法唯一判定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "told ... that 清楚形成轉述。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s178-detect-ambiguous-she-in-amy-mia-report",
+    "withhold-unsupported-pronoun-resolution"
+  ],
+  "representationType": "pronoun-ambiguity-detection",
+  "misconceptionTargets": [
+    "force-nearest-name-as-reference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "代名詞不一定能靠最近人名唯一解決。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留真實歧義，不擅自選人。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

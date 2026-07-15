@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_182_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A school notice says, \"The library closes at four.\" Amy reads it and tells Ben the same thing. Which one gave the information first?",
+  "options": [
+    "Ben's memory",
+    "Amy's opinion",
+    "A later phone call",
+    "The school notice"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Ben 只是後來接收訊息。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy 是轉述公告，不是表達個人意見。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有電話。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "公告在 Amy 轉述前已提供關門時間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s182-trace-library-time-to-school-notice",
+    "include-written-source-in-message-chain"
+  ],
+  "representationType": "written-source-provenance",
+  "misconceptionTargets": [
+    "assume-first-person-speaker-is-always-source"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "來源也可能是可讀的正式文字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項位於整條訊息鏈最前端。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy said to Sam, \"Please do not call after ten.\" Which report keeps the polite negative request?",
+  "options": [
+    "Amy said that Sam did not call after ten.",
+    "Amy told after ten not Sam call.",
+    "Amy asked whether Sam called after ten.",
+    "Amy asked Sam not to call after ten."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項改成 Sam 沒打電話的事實陳述。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項詞序與動詞形式都錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "asked whether 改成詢問是否打過電話。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "asked Sam not to call 保留 please、否定與時間限制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s181-report-polite-negative-call-request",
+    "preserve-request-negation-and-time-limit"
+  ],
+  "representationType": "negative-request-transformation",
+  "misconceptionTargets": [
+    "convert-request-to-negative-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同時檢查禮貌請求與 not 的位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項沒有把尚未執行的要求誤寫成既成事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

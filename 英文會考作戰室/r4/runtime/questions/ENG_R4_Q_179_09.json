@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "On June 1, Amy said, \"We will meet next week.\" A later report should place the meeting when?",
+  "options": [
+    "In the week following June 1",
+    "In the week before June 1",
+    "On June 1 itself",
+    "At some time before the speech"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "next week 從 June 1 的說話時點往後一週。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把方向倒轉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "next week 不是說話當天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "事件在說話後，而非之前。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s179-place-next-week-after-june-first",
+    "infer-relative-week-without-inventing-date"
+  ],
+  "representationType": "relative-week-timeline",
+  "misconceptionTargets": [
+    "turn-next-week-into-previous-or-same-week"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "固定說話日期後再解讀相對週次。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不必猜一個原句未指定的確切日期。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

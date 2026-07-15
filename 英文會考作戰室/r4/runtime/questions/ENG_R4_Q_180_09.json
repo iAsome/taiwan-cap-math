@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_180_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam said yesterday that he was tired. Which fact cannot be known today?",
+  "options": [
+    "Whether Sam is tired today",
+    "Whether Sam spoke yesterday",
+    "Whether tired described Sam",
+    "Whether the report used a past form"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "was tired 定位過去狀態，沒有說今天是否仍疲倦。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹明示 Sam yesterday said。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "he 清楚回指 Sam。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "was 本身就是過去式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s180-identify-current-unknown-after-past-tired-report",
+    "avoid-inferring-present-state-from-backshift"
+  ],
+  "representationType": "backshift-evidence-boundary",
+  "misconceptionTargets": [
+    "assume-past-state-ended-now"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "過去轉述不能自動推出現在相反或現在持續。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項需要今天的新證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

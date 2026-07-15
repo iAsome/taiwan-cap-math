@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia said to Sam, \"Do not open the box.\" Mia told Sam ___ the box.",
+  "options": [
+    "not to open",
+    "to not opened",
+    "did not open",
+    "not opening"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "told Sam not to open 正確保留禁止行動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "opened 不能接在 to not 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did not open 會變成 Sam 沒開過的陳述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "not opening 不能完成此 tell 結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s181-convert-negative-box-command-to-not-to-open",
+    "preserve-prohibition-in-reported-instruction"
+  ],
+  "representationType": "negative-command-reporting",
+  "misconceptionTargets": [
+    "turn-command-into-past-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Do not 是負面指示，不是過去事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項將 not 放在 to open 前。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

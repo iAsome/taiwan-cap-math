@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_181_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The student said, \"Please show me the next step.\" The student ___ the teacher to show the next step.",
+  "options": [
+    "asked",
+    "said",
+    "told that",
+    "answered"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "asked ... to 保留 please 所表達的請求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "said the teacher 缺少 to，且弱化請求功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "told that 後不能直接接 teacher to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "answered 表示回答，不符合學生提出需求。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s181-report-student-step-request-with-asked",
+    "map-requester-listener-and-action"
+  ],
+  "representationType": "polite-request-cloze",
+  "misconceptionTargets": [
+    "confuse-asking-for-help-with-answering"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "說話者是提出請求的學生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項也保留 teacher 是執行 show 的人。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

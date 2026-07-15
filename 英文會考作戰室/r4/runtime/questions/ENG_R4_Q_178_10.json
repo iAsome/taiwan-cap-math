@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_178_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora told me, \"You can sit here.\" Which report can I give from another room?",
+  "options": [
+    "Nora told me that she could sit here.",
+    "Nora told me that I could sit there.",
+    "Nora told me that you could sit my room.",
+    "Nora told me that they could sit their room."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "you 指我，不是 Nora，且換房後 here 不合觀點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "I 保留聽話者身分，there 配合轉述地點改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "you 與 my room 都改變原來的人物及地點關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "they / their 沒有原文依據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s178-integrate-listener-pronoun-with-location-shift",
+    "report-nora-seat-permission-from-new-room"
+  ],
+  "representationType": "pronoun-and-place-perspective",
+  "misconceptionTargets": [
+    "shift-place-but-not-addressee"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "此題同時追蹤聽話者與轉述位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項讓 I 指現在的轉述者，也調整 here。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

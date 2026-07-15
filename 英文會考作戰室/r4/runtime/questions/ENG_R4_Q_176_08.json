@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_176_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam wrote, \"Meet me at five.\" Which words are outside the quotation?",
+  "options": [
+    "Meet me",
+    "at five",
+    "Meet me at five",
+    "Sam wrote"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Meet me 位於引號內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at five 也在引號內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "整個片語都是 Sam 被呈現為寫下的內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Sam wrote 位於引號前，負責交代訊息來源。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u26-s176-separate-sam-wrote-from-quoted-meeting",
+    "read-punctuation-boundary-in-written-message"
+  ],
+  "representationType": "quotation-exterior-identification",
+  "misconceptionTargets": [
+    "include-source-tag-in-quoted-text"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "引號邊界也適用於書面訊息。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是報導部分，不是引號中的原文。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

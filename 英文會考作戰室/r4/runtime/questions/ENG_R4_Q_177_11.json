@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_177_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben ___ his mother that he would be late.",
+  "options": [
+    "said",
+    "said that",
+    "told",
+    "told to"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "said his mother 缺少 to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "said that his mother that 形成錯誤重複結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "told his mother that 正確交代聽話者與內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "told to his mother 在此多出 to。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u26-s177-complete-ben-mother-late-report",
+    "select-tell-before-noun-listener"
+  ],
+  "representationType": "noun-listener-reporting-cloze",
+  "misconceptionTargets": [
+    "omit-to-after-say-before-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "his mother 直接承接動詞，需使用 told。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項也保留 he would be late 這個訊息。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

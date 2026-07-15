@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_176_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia reported that the store was closed. Which answer only uses that report?",
+  "options": [
+    "Mia gave the message that the store was closed.",
+    "Mia used seven words.",
+    "Mia closed the store herself.",
+    "The store was closed because of rain."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "這一項只重述 Mia 傳達的核心內容。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有原話，無法計算 Mia 實際用了幾個字。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子沒有說關店的人是 Mia。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "報告沒有提供下雨這個原因。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u26-s176-bound-inference-from-mia-store-report",
+    "reject-unsupported-word-count-agent-and-cause"
+  ],
+  "representationType": "report-evidence-boundary",
+  "misconceptionTargets": [
+    "add-background-to-reported-message"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "報導句能支持訊息內容與來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項沒有把未知的原字、行動者或原因補進去。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

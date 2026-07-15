@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_179_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-9-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "On Tuesday, Leo reported his Monday words: \"I finished it yesterday.\" Which phrase keeps the time?",
+  "options": [
+    "the day before",
+    "the next day",
+    "that night",
+    "next week"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Monday 的 yesterday 是星期日，從星期二回述可說 the day before。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the next day 指說話之後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原話沒有夜晚資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "next week 與一天前不符。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u26-s179-map-monday-yesterday-to-day-before",
+    "anchor-relative-day-to-original-speech"
+  ],
+  "representationType": "relative-day-reporting",
+  "misconceptionTargets": [
+    "shift-yesterday-forward"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-9-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先以原說話日 Monday 定位 yesterday。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留事件發生在原話前一天。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
