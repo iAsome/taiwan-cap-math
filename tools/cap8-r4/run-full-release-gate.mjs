@@ -8,6 +8,7 @@ import {
   loadCurriculumSourceSnapshot,
   validateAuthorityGraph,
 } from "./authority/authority-graph.mjs";
+import { validateFrozenAuthorityGraph } from "./authority/frozen-authority-graph.mjs";
 import { validateAppendixEvidence } from "./authority/appendix-evidence.mjs";
 import { validateAuthorityNodeReview } from "./authority/authority-node-review.mjs";
 import { validateEnglishVocabularyAuthority } from "./authority/english-vocabulary-authority.mjs";
@@ -40,7 +41,8 @@ const REPO_ROOT = path.resolve(HERE, "..", "..");
 const MANIFEST_NAME = "content-manifest-v4.json";
 const AUDITED_ARTIFACT_TYPES = new Set(["lecture", "question", "stimulus", "asset", "writing-task", "ui"]);
 const USER_REQUIREMENTS_PATH = "tools/cap8-r4/user-requirements.json";
-const AUTHORITY_GRAPH_PATH = "tools/cap8-r4/authority/authority-graph.json";
+const RAW_AUTHORITY_GRAPH_PATH = "tools/cap8-r4/authority/authority-graph.json";
+const FROZEN_AUTHORITY_GRAPH_PATH = "tools/cap8-r4/authority/frozen-authority-graph.json";
 const APPENDIX_EVIDENCE_PATH = "tools/cap8-r4/authority/appendix-evidence.json";
 const AUTHORITY_NODE_REVIEW_PATH = "tools/cap8-r4/authority/authority-node-review.json";
 const ENGLISH_VOCABULARY_AUTHORITY_PATH = "tools/cap8-r4/authority/english-vocabulary-authority.json";
@@ -244,15 +246,16 @@ export async function verifyUserRequirements(repoRoot = REPO_ROOT) {
 }
 
 export async function verifyAuthorityGraphEvidence(repoRoot = REPO_ROOT, { requireFrozen = true } = {}) {
-  const graph = await readJson(repoRoot, AUTHORITY_GRAPH_PATH);
+  const graph = await readJson(repoRoot, requireFrozen ? FROZEN_AUTHORITY_GRAPH_PATH : RAW_AUTHORITY_GRAPH_PATH);
+  if (requireFrozen) return validateFrozenAuthorityGraph(graph, repoRoot);
   const snapshot = await loadCurriculumSourceSnapshot();
-  return validateAuthorityGraph(graph, snapshot, { repoRoot, requireFrozen });
+  return validateAuthorityGraph(graph, snapshot, { repoRoot, requireFrozen: false });
 }
 
 export async function verifyAppendixEvidence(repoRoot = REPO_ROOT) {
   return validateAppendixEvidence(
     await readJson(repoRoot, APPENDIX_EVIDENCE_PATH),
-    path.join(repoRoot, ...AUTHORITY_GRAPH_PATH.split("/")),
+    path.join(repoRoot, ...RAW_AUTHORITY_GRAPH_PATH.split("/")),
   );
 }
 
@@ -262,7 +265,7 @@ export async function verifyEnglishVocabularyAuthority(repoRoot = REPO_ROOT) {
 
 export async function verifyAuthorityNodeReview(repoRoot = REPO_ROOT) {
   return validateAuthorityNodeReview(await readJson(repoRoot, AUTHORITY_NODE_REVIEW_PATH), {
-    graphPath: path.join(repoRoot, ...AUTHORITY_GRAPH_PATH.split("/")),
+    graphPath: path.join(repoRoot, ...RAW_AUTHORITY_GRAPH_PATH.split("/")),
     appendixPath: path.join(repoRoot, ...APPENDIX_EVIDENCE_PATH.split("/")),
     officialRegisterPath: path.join(repoRoot, ...OFFICIAL_SOURCE_REGISTER_PATH.split("/")),
   });
@@ -288,7 +291,7 @@ export async function verifyOfficialItemCandidateEvidence(repoRoot = REPO_ROOT) 
 export async function verifyOfficialReviewShardEvidence(repoRoot = REPO_ROOT) {
   const extractionIndex = await readJson(repoRoot, OFFICIAL_EXTRACTION_PATH);
   const candidates = await readJson(repoRoot, OFFICIAL_ITEM_CANDIDATES_PATH);
-  const authorityGraph = await readJson(repoRoot, AUTHORITY_GRAPH_PATH);
+  const authorityGraph = await readJson(repoRoot, RAW_AUTHORITY_GRAPH_PATH);
   const evidence = await loadOfficialReviewEvidence({
     sourceReviewsPath: path.join(repoRoot, "tools", "cap8-r4", "ledger", "reviews", "official-source-reviews.json"),
     itemReviewsDirectory: path.join(repoRoot, "tools", "cap8-r4", "ledger", "reviews", "items"),

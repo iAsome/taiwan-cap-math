@@ -67,13 +67,17 @@ test("Math final-audit inventory covers every production record and reachable UI
   assert.equal(new Set(result.artifacts.map((artifact) => artifact.id)).size, 5300);
 });
 
-test("mechanical curriculum extraction validates but cannot pass the frozen gate", async () => {
+test("mechanical extraction remains separate while the reviewed production graph is frozen", async () => {
   const result = await verifyAuthorityGraphEvidence(undefined, { requireFrozen: false });
   assert.deepEqual(
     { sources: result.sources, nodes: result.nodes, skills: result.skills, status: result.status },
     { sources: 4, nodes: 669, skills: 0, status: "scope-extracted-unreviewed" },
   );
-  await assert.rejects(verifyAuthorityGraphEvidence(), /not frozen and semantically reviewed/);
+  const frozen = await verifyAuthorityGraphEvidence();
+  assert.deepEqual(
+    { sources: frozen.sources, nodes: frozen.nodes, skills: frozen.skills, status: frozen.status },
+    { sources: 4, nodes: 669, skills: 2100, status: "frozen-reviewed" },
+  );
 });
 
 test("complete item and material review passes the official ledger gate", async () => {
