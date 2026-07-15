@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_186_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S186"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Dad let Mia use the car, but Mia chose to walk. What is true?",
+  "options": [
+    "Dad made Mia drive.",
+    "Mia was not allowed to use the car.",
+    "Mia drove and walked at the same time.",
+    "Permission did not mean Mia had to use the car."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "let 表示允許，不是強迫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹明示 Dad let her use it。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子說她選擇走路。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "獲得允許不等於必須執行。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s186-separate-car-permission-from-actual-choice",
+    "reason-about-modal-possibility-without-actualization"
+  ],
+  "representationType": "permission-action-logic",
+  "misconceptionTargets": [
+    "equate-being-allowed-with-doing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "區分 permission 與 actual choice。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項能同時容納允許與未使用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

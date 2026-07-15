@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I saw Leo ___ the door from start to finish.",
+  "options": [
+    "open",
+    "to open",
+    "opened",
+    "opening to"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "完整事件線索支持 saw + object + base verb。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "感官動詞此結構不加 to。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "opened 不是 saw Leo 後的形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "opening to 形式錯誤。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s187-select-open-for-complete-seen-event",
+    "map-completion-cue-to-bare-perception-complement"
+  ],
+  "representationType": "complete-perception-cloze",
+  "misconceptionTargets": [
+    "add-to-after-see"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "from start to finish 明示完整範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項將 open 視為整體動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

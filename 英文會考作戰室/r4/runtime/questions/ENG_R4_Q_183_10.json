@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_183_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The rule is make + object + base verb. Which line follows it?",
+  "options": [
+    "The noise made to wake the baby.",
+    "The noise made the baby wake.",
+    "The noise made the baby to wake.",
+    "The noise made the baby was wake."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 to 放在受詞前且缺少正確結構。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "made + the baby + wake 完整符合規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "make 的受詞後不加 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "was wake 不能直接放在 made 的受詞後。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s183-apply-explicit-make-frame-to-full-line",
+    "reject-missing-object-to-and-finite-form-errors"
+  ],
+  "representationType": "rule-to-sentence-selection",
+  "misconceptionTargets": [
+    "multiply-mark-complement-form"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "四項都保留相同情境，只比較結構。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項有受詞且後接原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

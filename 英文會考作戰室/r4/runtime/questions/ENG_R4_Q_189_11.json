@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy had Ben call Nora, and Nora did not answer. Which statement keeps every stated role?",
+  "options": [
+    "Ben arranged Amy to call himself.",
+    "Nora made Amy answer Ben.",
+    "Amy arranged the call, Ben called, and Nora did not answer.",
+    "Amy called Nora and Ben answered."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項更換所有角色且結構錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項加入未發生的使役與回答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項依序保留安排者、撥電話者與未接聽者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把撥打與接聽者對調。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s189-preserve-call-roles-with-no-answer-result",
+    "integrate-causative-action-and-follow-up-outcome"
+  ],
+  "representationType": "multi-event-role-preservation",
+  "misconceptionTargets": [
+    "swap-roles-across-sentence-boundary"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "將 have frame 與後續 negative result 一起追蹤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項沒有把未接聽改寫成未撥出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

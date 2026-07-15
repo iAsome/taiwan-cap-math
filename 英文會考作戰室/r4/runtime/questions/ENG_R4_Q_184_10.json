@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_184_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S184"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Change only the wrong verb: The cold wind made my eyes watered.",
+  "options": [
+    "made → make",
+    "watered → water",
+    "my → mine",
+    "eyes → eyeing"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "主詞與過去情境可保留 made。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "made + object 後應接原形 water。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "my 正確修飾 eyes。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "eyeing 不是此處名詞形式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s184-edit-embedded-watered-to-water",
+    "locate-overinflected-causative-complement"
+  ],
+  "representationType": "single-error-causative-edit",
+  "misconceptionTargets": [
+    "repair-correct-matrix-tense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "錯誤集中在受詞後的動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項修正後不改變原意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

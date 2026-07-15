@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_188_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The coach told the team to meet at six. What did the coach give?",
+  "options": [
+    "A report that six had passed",
+    "Permission to miss the meeting",
+    "An instruction about the meeting time",
+    "A question about who owned six"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子不是報導時間已過。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "told ... to meet 不是允許缺席。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "教練給團隊六點集合的指示。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "six 是時間，不是所有物。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s188-interpret-coach-meeting-instruction",
+    "classify-tell-object-infinitive-speech-act"
+  ],
+  "representationType": "instruction-function-identification",
+  "misconceptionTargets": [
+    "read-tell-as-permission"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "tell + team + to meet 在此表達指示。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留時間與溝通功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

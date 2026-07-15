@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "At 3:00, Mia saw Leo carrying boxes. At 3:10, the boxes were still outside. Which reading fits both facts?",
+  "options": [
+    "Leo had finished every box before 3:00.",
+    "Mia told Leo never to carry boxes.",
+    "Mia saw part of the carrying process, which was not complete by 3:10.",
+    "The boxes carried Leo inside."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項和 3:10 的狀態衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "saw 不是禁止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "carrying 表示進行片段，3:10 仍在外支持尚未完成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "事件角色顛倒。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s187-integrate-carrying-with-later-unfinished-state",
+    "reason-across-observation-and-follow-up-evidence"
+  ],
+  "representationType": "perception-timeline-integration",
+  "misconceptionTargets": [
+    "force-completion-despite-later-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "整合 V-ing 與後續時間證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項沒有誇大 Mia 看見的範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

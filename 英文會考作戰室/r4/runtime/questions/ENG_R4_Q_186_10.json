@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_186_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S186"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Change only the pronoun: The teacher let they work together.",
+  "options": [
+    "teacher → teachers",
+    "they → them",
+    "let → lets",
+    "work → worked"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "teacher 可作單數主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "let 後需受格 them。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "若為過去或原形 let，不需改 lets。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "受詞後的 work 應保持原形。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s186-edit-they-to-them-after-let",
+    "repair-object-case-without-altering-correct-verbs"
+  ],
+  "representationType": "focused-pronoun-edit",
+  "misconceptionTargets": [
+    "change-correct-bare-verb-during-case-repair"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定只修 pronoun。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留原本人物與動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

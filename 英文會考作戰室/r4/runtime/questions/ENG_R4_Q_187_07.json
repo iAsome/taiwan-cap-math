@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo told me that Amy was singing. Which statement would be too strong?",
+  "options": [
+    "Leo gave me a report.",
+    "The report was about Amy singing.",
+    "I heard Amy with my own ears.",
+    "Leo used words to share information."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "told me 支持 Leo 轉述。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "that 子句提供報導內容。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "題幹只說 Leo 告訴我，沒有我親耳聽見的證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "told 表示以話語傳遞資訊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s187-reject-own-hearing-from-told-report",
+    "distinguish-hearsay-from-sensory-evidence"
+  ],
+  "representationType": "evidence-source-discrimination",
+  "misconceptionTargets": [
+    "convert-report-to-direct-perception"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "區分 reported evidence 與 direct hearing。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把轉述升格成親身感知。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

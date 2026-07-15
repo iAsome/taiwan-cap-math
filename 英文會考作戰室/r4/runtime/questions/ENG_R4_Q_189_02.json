@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Dad told ___ to clean the table.",
+  "options": [
+    "to clean",
+    "me",
+    "cleaned",
+    "that me"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "空格位置需要接受指示的人，不是另一個動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "me 是 told 的受詞，也執行 to clean。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cleaned 不能作人物受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "that me 不能接 to clean。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s189-fill-missing-object-in-told-frame",
+    "restore-required-recipient-role"
+  ],
+  "representationType": "missing-object-cloze",
+  "misconceptionTargets": [
+    "omit-recipient-after-tell"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "tell 與 to clean 之間必須有 object。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項補齊角色而不重複動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_185_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S185"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The manager had Amy call Ben. Which part names the receiver of the call?",
+  "options": [
+    "The manager",
+    "Amy",
+    "Ben",
+    "had"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "manager 是安排者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy 是撥電話的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Ben 是 call 的對象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "had 是安排動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s185-identify-ben-as-call-recipient",
+    "map-three-participant-causative-event"
+  ],
+  "representationType": "multi-participant-call-role",
+  "misconceptionTargets": [
+    "confuse-arranged-agent-with-recipient"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三個人物角色需分別追蹤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項位於 call 後，接收電話。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

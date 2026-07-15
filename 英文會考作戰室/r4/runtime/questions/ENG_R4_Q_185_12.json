@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_185_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S185"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy had Leo send Nora a message. Which result is not certain?",
+  "options": [
+    "Amy arranged the sending.",
+    "Leo was the sender.",
+    "Nora was the person meant to receive it.",
+    "Nora read the message."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Amy 是 had 的主詞，負責安排。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Leo 是 send 的執行者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nora 位於 send 後，是預定接收者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "send 不保證訊息已被讀取。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s185-mark-reading-as-uncertain-after-send",
+    "audit-event-chain-for-unstated-outcome"
+  ],
+  "representationType": "arrangement-result-boundary",
+  "misconceptionTargets": [
+    "equate-sent-with-read"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "區分執行 send 與完成 read。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項超出句子提供的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

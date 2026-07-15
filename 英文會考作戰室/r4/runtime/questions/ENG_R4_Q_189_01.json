@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The rain made us we stay inside. Which word should be taken out?",
+  "options": [
+    "we",
+    "us",
+    "made",
+    "inside"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "us 已是 made 的受詞和 stay 的執行者，we 重複角色。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "移除 us 會缺少受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "made 表達因果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "inside 提供地點。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s189-take-out-duplicate-we-after-us",
+    "detect-repeated-embedded-agent"
+  ],
+  "representationType": "duplicate-role-deletion",
+  "misconceptionTargets": [
+    "repeat-object-as-subject-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只刪除重複主格，不改正確結構。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項刪除後形成 made us stay。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

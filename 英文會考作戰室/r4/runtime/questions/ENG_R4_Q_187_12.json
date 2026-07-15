@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy heard a door close, then found the room quiet. What does heard a door close support?",
+  "options": [
+    "Amy saw who closed it.",
+    "The door had always been closed.",
+    "Amy ordered someone to close it.",
+    "Amy heard the closing event, but the person is not named."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "heard 不提供視覺身分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一次 close 不表示 always。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "感知事件不是命令。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "door close 提供聲音事件，但沒有行動者姓名。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s187-infer-closing-with-unknown-agent",
+    "extract-event-without-inventing-performer"
+  ],
+  "representationType": "auditory-agent-unknown",
+  "misconceptionTargets": [
+    "infer-agent-from-sound-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原形呈現關門事件，不能補出未知人物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時保留直接聽見與身分限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

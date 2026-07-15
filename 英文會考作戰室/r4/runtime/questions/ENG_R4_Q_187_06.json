@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line presents a complete action most clearly?",
+  "options": [
+    "I saw Sam crossing the road when the bus came.",
+    "I watched Sam cross the road from one side to the other.",
+    "I heard Sam talking when I entered.",
+    "I noticed Sam waiting at noon."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "crossing 與 when 子句聚焦進行片段。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "原形 cross 加完整起終點呈現整體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "talking 是進行中的片段。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "waiting 只說明當時狀態。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s187-choose-cross-with-explicit-endpoints",
+    "compare-four-perception-event-spans"
+  ],
+  "representationType": "event-span-comparison",
+  "misconceptionTargets": [
+    "treat-all-perception-complements-as-complete"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不是只看原形，還核對 from one side to the other。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項的形式與語意線索一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Dad heard ___ playing the piano.",
+  "options": [
+    "her",
+    "she",
+    "hers",
+    "herself was"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "her 是 heard 後的受格，也承接 playing。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "she 是主格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "hers 表示所有關係，不能作此受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "herself was 破壞結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s187-select-her-before-playing",
+    "apply-object-case-in-perception-frame"
+  ],
+  "representationType": "perception-pronoun-case",
+  "misconceptionTargets": [
+    "use-subject-pronoun-before-ing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "語意上她彈琴，形式上仍位於受詞位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合 object + V-ing。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

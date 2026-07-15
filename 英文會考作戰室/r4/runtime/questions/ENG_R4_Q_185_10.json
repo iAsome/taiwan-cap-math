@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_185_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S185"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Repair only the action form: The guide had us to follow the blue line.",
+  "options": [
+    "had → has",
+    "to follow → follow",
+    "us → we",
+    "line → lined"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若情境在過去，had 可保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "使役 have 的受詞後用原形 follow。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have 後需要受格 us。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "line 是正確名詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s185-remove-to-from-had-us-follow",
+    "edit-only-governed-complement-form"
+  ],
+  "representationType": "focused-have-frame-edit",
+  "misconceptionTargets": [
+    "replace-correct-object-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目只要求修正 action form。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項移除多餘 to，不改角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

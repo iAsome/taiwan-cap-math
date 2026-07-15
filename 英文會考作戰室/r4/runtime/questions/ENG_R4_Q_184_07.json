@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_184_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S184"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The loud sound made the baby wake up. What caused the waking?",
+  "options": [
+    "The baby",
+    "Wake up",
+    "The loud sound",
+    "A teacher not named here"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "baby 是受到影響並醒來的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wake up 是結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "loud sound 是 made 前的原因主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有 teacher。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s184-trace-waking-cause-to-loud-sound",
+    "read-causal-agent-from-make-subject"
+  ],
+  "representationType": "causative-source-question",
+  "misconceptionTargets": [
+    "confuse-affected-person-with-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "依 cause + made + person + action 讀取角色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一明示原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

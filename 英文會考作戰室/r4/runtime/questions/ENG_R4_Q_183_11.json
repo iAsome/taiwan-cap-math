@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_183_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I watched Ben carrying the chairs. Which fact is directly supported?",
+  "options": [
+    "Ben had carried every chair before I arrived.",
+    "I ordered Ben to carry the chairs.",
+    "Ben was carrying chairs while I watched.",
+    "The chairs carried Ben."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "carrying 不證明觀察前已完成全部。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "watched 不表示下命令。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "V-ing 直接支持觀察時正在搬。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "chairs 不是 carry 的執行者。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s183-limit-inference-from-watched-carrying",
+    "distinguish-direct-observation-from-command-and-completion"
+  ],
+  "representationType": "evidence-bound-perception-inference",
+  "misconceptionTargets": [
+    "infer-completion-from-ing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "只使用 watched + object + V-ing 的可見證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留事件方向與時間範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

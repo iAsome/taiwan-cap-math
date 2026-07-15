@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_188_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I want Amy to call Leo. Who should make the call?",
+  "options": [
+    "I",
+    "Leo",
+    "Amy",
+    "No one"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 是表達希望的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Leo 是電話接收者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Amy 位於 want 與 to call 間，是執行者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中明示預期有電話行動。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s188-resolve-amy-as-wanted-caller",
+    "trace-agent-through-want-object-infinitive"
+  ],
+  "representationType": "want-role-question",
+  "misconceptionTargets": [
+    "assign-infinitive-action-to-want-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "由 object + to V 決定後續執行者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不把主詞或接收者混入。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

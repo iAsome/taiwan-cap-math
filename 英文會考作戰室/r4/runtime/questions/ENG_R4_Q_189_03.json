@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line has one complete object-complement frame?",
+  "options": [
+    "Amy let him he leave.",
+    "Amy asked to Ben leave.",
+    "Amy had Ben check the door.",
+    "Amy made Ben to checked it."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "him he 重複同一人物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ask 的順序應是 asked Ben to leave。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "had + Ben + check 完整且無重複。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "make 後多 to，checked 形式也錯。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s189-select-single-wellformed-have-frame",
+    "compare-duplicate-order-and-form-errors"
+  ],
+  "representationType": "integrated-frame-selection",
+  "misconceptionTargets": [
+    "accept-surface-presence-of-all-words"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項檢查 object 是否一次且動詞形式合規。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項唯一完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

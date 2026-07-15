@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_186_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S186"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Dad let ___ use the camera.",
+  "options": [
+    "I",
+    "me",
+    "my",
+    "mine"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 是主格，不能放在 let 後受詞位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "me 是正確受格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "my 需修飾名詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "mine 是所有格代名詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s186-select-object-pronoun-me-after-let",
+    "separate-semantic-agent-from-case-form"
+  ],
+  "representationType": "let-pronoun-case-cloze",
+  "misconceptionTargets": [
+    "use-subject-case-for-embedded-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "空格同時承接 use 的執行者，但文法位置仍是受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合受格要求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

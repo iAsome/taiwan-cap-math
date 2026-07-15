@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I saw Amy carrying a bag. Which word is both the object of saw and the person carrying?",
+  "options": [
+    "I",
+    "bag",
+    "Amy",
+    "saw"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 是觀察者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "bag 是被搬的物品。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Amy 位於 saw 後並執行 carrying。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "saw 是感官動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s189-identify-dual-role-amy-in-perception",
+    "combine-syntactic-object-and-semantic-agent"
+  ],
+  "representationType": "dual-role-identification",
+  "misconceptionTargets": [
+    "assume-object-cannot-be-action-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一名詞可同時有文法受詞與語意行動者兩種角色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項符合兩個條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

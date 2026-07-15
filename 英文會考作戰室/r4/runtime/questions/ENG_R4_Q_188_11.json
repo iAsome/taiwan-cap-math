@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_188_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora wants Sam to bring the map, but Sam has not answered. What is known?",
+  "options": [
+    "Sam has promised to bring it.",
+    "The map is already with Nora.",
+    "Nora hopes Sam will bring it.",
+    "Sam refused the request."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未回答不等於承諾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹沒有地圖現況。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "wants Sam to bring 明示 Nora 的希望。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未回答也不等於拒絕。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s188-limit-inference-from-unanswered-want",
+    "separate-desire-from-promise-and-action"
+  ],
+  "representationType": "want-evidence-boundary",
+  "misconceptionTargets": [
+    "treat-want-as-guaranteed-compliance"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "區分想要、回應與實際行動三層。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一不超出證據的敘述。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

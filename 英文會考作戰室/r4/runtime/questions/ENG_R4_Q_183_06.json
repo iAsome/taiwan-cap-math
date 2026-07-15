@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_183_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora told Ben ___ near the door.",
+  "options": [
+    "wait",
+    "to wait",
+    "waited",
+    "waiting him"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tell + person 後不能只接原形。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "told Ben to wait 是完整結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "waited 會誤成過去事件片段。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "waiting him 形式與角色都不合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s183-insert-to-wait-after-told-ben",
+    "contrast-tell-frame-with-bare-verb-causatives"
+  ],
+  "representationType": "tell-complement-cloze",
+  "misconceptionTargets": [
+    "use-bare-verb-after-tell"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Ben 是 told 的受詞，也是 wait 的執行者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 tell 要求的 to V。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

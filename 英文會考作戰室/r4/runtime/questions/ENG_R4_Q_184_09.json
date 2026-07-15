@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_184_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S184"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "One more joke may ___ everyone laugh.",
+  "options": [
+    "make",
+    "makes",
+    "made",
+    "making"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "may 後接原形 make，make 後再接 everyone laugh。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "modal 後不能用 makes。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "may 後不能用 made。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "may 後不能直接用 making。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s184-stack-modal-base-with-causative-frame",
+    "coordinate-two-base-form-constraints"
+  ],
+  "representationType": "modal-causative-cloze",
+  "misconceptionTargets": [
+    "inflect-make-after-modal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "此題同時有 may + make 與 make + object + base verb。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留兩層原形要求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

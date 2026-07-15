@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S189",
+  "subject": "english",
+  "unitId": "ENG_R4_U27",
+  "skillId": "ENG_R4_S189",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S188"
+  ],
+  "objectives": [
+    "依主要動詞建立完整且不重複的受詞補語結構。",
+    "在多人物句中追蹤要求者、受詞、執行者與接收者。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S189_SEC_01",
+      "title": "每個句型只放一次必要角色",
+      "content": "The teacher made us read 中，us 同時是 made 的受詞和 read 的執行者，不需再寫 made us we read。The teacher told us to read 則需要 to，但也不重複 us。"
+    },
+    {
+      "id": "ENG_R4_L_S189_SEC_02",
+      "title": "由主要動詞選擇 bare V 或 to V",
+      "content": "make、have、let 接 object + bare V；ask、tell、want 接 object + to V。感官動詞可接 object + bare V 或 V-ing。若先決定主要動詞，就能避免把兩種結構拼成 made me to go 或 told me go。"
+    },
+    {
+      "id": "ENG_R4_L_S189_SEC_03",
+      "title": "代名詞形式跟句中位置走",
+      "content": "She made him wait、She told him to wait、She saw him waiting 都用 him，因為他位於第一個動詞後的受詞位置。雖然 him 執行 wait，英文形式仍是受格而非 he。"
+    },
+    {
+      "id": "ENG_R4_L_S189_SEC_04",
+      "title": "角色完整不代表可以補寫事實",
+      "content": "Amy had Ben call Nora 只表示 Amy 安排 Ben 打電話給 Nora。句子沒有保證 Nora 接聽、同意或完成任何後續行動。檢查結構之外，也要限制推論在明示證據內。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S189_EX_01",
+      "prompt": "Repair: The rain made us we stay inside.",
+      "steps": [
+        "找出 made 的受詞 us。",
+        "確認 us 已是 stay 的執行者。",
+        "刪除重複主格 we。"
+      ],
+      "answer": "The rain made us stay inside.",
+      "why": "us 已同時連接 made 和 stay，再放 we 會重複同一角色並破壞結構。保留 made + us + stay 即完整表達雨使我們待在室內。"
+    },
+    {
+      "id": "ENG_R4_L_S189_EX_02",
+      "prompt": "Repair: Dad told to clean the table.",
+      "steps": [
+        "辨認 tell 需要接收指示的人。",
+        "補上適當受詞。",
+        "保留受詞後的 to V。"
+      ],
+      "answer": "Dad told me to clean the table.",
+      "why": "原句缺少誰要清理桌子。加入 me 後，Dad 是指示者，me 是 told 的受詞，也是 to clean 的執行者。"
+    },
+    {
+      "id": "ENG_R4_L_S189_EX_03",
+      "prompt": "Amy had Ben call Nora. Did the sentence say Nora answered?",
+      "steps": [
+        "標出安排者 Amy。",
+        "確認 Ben 執行 call。",
+        "檢查是否提供接聽結果。"
+      ],
+      "answer": "No.",
+      "why": "句子只交代 Amy 安排 Ben 撥電話給 Nora，沒有 answered 或其他接聽證據。結構完整也不能證明電話已被接起。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "在受詞後再加同一人的主格，寫成 let him he leave。",
+      "whyWrong": "him 已是 leave 的語意主詞，he 造成角色重複。",
+      "correction": "保留 let him leave。"
+    },
+    {
+      "belief": "省略 tell 或 ask 後的人物，只留下 to V。",
+      "whyWrong": "基本結構缺少接受指示或請求的人。",
+      "correction": "補出 tell/ask + object + to V。"
+    },
+    {
+      "belief": "把 make 和 tell 的形式混合成 made me to wait。",
+      "whyWrong": "主動 make 的受詞後不使用 to。",
+      "correction": "依主要動詞選 made me wait 或 told me to wait。"
+    },
+    {
+      "belief": "從 call someone 推論對方已接聽並同意。",
+      "whyWrong": "撥電話和接聽、同意是不同事件。",
+      "correction": "只保留題幹明示的動作與結果。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "made her she laugh 多了哪個詞？",
+      "answer": "she",
+      "reason": "her 已承接 laugh，不需再放主格。"
+    },
+    {
+      "prompt": "told to wait 缺少哪種角色？",
+      "answer": "接受指示的受詞",
+      "reason": "tell 的基本結構需要 person + to V。"
+    },
+    {
+      "prompt": "had Leo send a message 是否證明訊息被讀取？",
+      "answer": "不能證明",
+      "reason": "send 與 read 是不同事件。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

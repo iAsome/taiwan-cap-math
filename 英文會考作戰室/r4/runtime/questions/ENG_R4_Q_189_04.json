@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia wants Leo to call Nora. Which role map is correct?",
+  "options": [
+    "Mia receives the call; Leo wants; Nora calls.",
+    "Nora wants; Mia calls; Leo receives.",
+    "Leo wants; Nora calls; Mia receives.",
+    "Mia wants; Leo calls; Nora receives."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項顛倒三個角色。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nora 不是 wants 的主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Leo 不是表達希望的人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Mia 是主詞，Leo 執行 call，Nora 接收。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s189-map-three-roles-in-want-call",
+    "resolve-wanter-agent-and-recipient"
+  ],
+  "representationType": "three-role-map",
+  "misconceptionTargets": [
+    "swap-person-roles-in-object-infinitive"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "依線性位置分配三位人物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 want object to V 的控制關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

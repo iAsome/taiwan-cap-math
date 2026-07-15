@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_185_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S185"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The shop owner had Ben put the chairs outside before opening. What happened first?",
+  "options": [
+    "The shop closed for the day.",
+    "Customers took every chair.",
+    "Ben put the chairs outside.",
+    "Ben opened another shop."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹沒有關店。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有顧客拿椅子的資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "before opening 表示搬椅子先發生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Ben 沒有開另一家店。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s185-sequence-chair-task-before-opening",
+    "integrate-arranged-action-with-time-order"
+  ],
+  "representationType": "arrangement-timeline",
+  "misconceptionTargets": [
+    "invent-later-events-from-shop-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結合 have 的角色與 before 的順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一明示且較早的事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

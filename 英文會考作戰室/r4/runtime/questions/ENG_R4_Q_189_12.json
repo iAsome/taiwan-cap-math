@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher let Mia read the note, then asked her to explain it. What did Mia do first?",
+  "options": [
+    "She explained the note.",
+    "She asked the teacher to read.",
+    "The teacher explained it.",
+    "She read the note."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "then 表示 explain 在 read 之後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Mia 不是提出 ask 的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "teacher 是允許者與請求者，非明示解釋者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "let Mia read 是第一個行動。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s189-sequence-let-read-before-ask-explain",
+    "integrate-two-frames-with-temporal-order"
+  ],
+  "representationType": "cross-frame-event-sequencing",
+  "misconceptionTargets": [
+    "ignore-then-and-reverse-actions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同時解析 let + bare V 與 ask + to V，再用 then 排序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是 Mia 的較早動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher made ___ read the note aloud.",
+  "options": [
+    "him",
+    "he",
+    "his",
+    "himself was"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "him 是 made 後的受格，也執行 read。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "he 是主格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "his 需表達所有或修飾名詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "himself was 破壞 frame。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s189-select-him-in-make-read-frame",
+    "apply-case-with-embedded-agent-role"
+  ],
+  "representationType": "integrated-pronoun-case",
+  "misconceptionTargets": [
+    "choose-pronoun-by-semantic-agent-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "語意執行者仍可使用受格，因為位置在 made 後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成 made him read。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_184_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S184"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A sudden message made Leo leave the meeting. What does the sentence mean?",
+  "options": [
+    "Leo allowed the message to leave.",
+    "The meeting asked Leo a question.",
+    "The message caused Leo to leave.",
+    "Leo made the message at home."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo 不是允許 message 離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "meeting 不能由題幹推出發問。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "made 在此連接 message 與 Leo leave 的因果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中 made 不是製作訊息。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s184-paraphrase-message-caused-leo-to-leave",
+    "interpret-inanimate-cause-with-make"
+  ],
+  "representationType": "causative-meaning-paraphrase",
+  "misconceptionTargets": [
+    "read-make-only-as-create"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "用主詞 message 的性質判斷自然因果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留角色與事件方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

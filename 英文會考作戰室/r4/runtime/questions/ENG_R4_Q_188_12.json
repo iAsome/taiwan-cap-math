@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_188_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Dad asked Mia not to call during class; the teacher told everyone to turn off phones. Which action appears in both messages?",
+  "options": [
+    "Calling Dad after class",
+    "Asking the teacher a question",
+    "Keeping phones in a bag at all times",
+    "Avoiding phone use during class"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "after class 不在兩個訊息共同內容。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有詢問老師。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at all times 超出時間範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "not to call 與 turn off phones 都限制上課用手機。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u27-s188-synthesize-two-class-phone-directives",
+    "find-shared-action-across-ask-and-tell-frames"
+  ],
+  "representationType": "multi-message-action-synthesis",
+  "misconceptionTargets": [
+    "overgeneralize-time-limited-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "整合兩句不同動詞但相近的行動限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 during class 的共同時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

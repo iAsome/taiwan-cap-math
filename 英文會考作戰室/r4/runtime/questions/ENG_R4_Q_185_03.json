@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_185_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S185"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We will have Nora bring the key. Who will bring it?",
+  "options": [
+    "We",
+    "The key",
+    "Nora",
+    "No one"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "We 是安排者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "key 是被帶的物品。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Nora 是 have 的受詞，也是 bring 的執行者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中明示 Nora 將帶。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s185-resolve-nora-as-key-bringer",
+    "separate-arranger-agent-and-object"
+  ],
+  "representationType": "have-role-resolution",
+  "misconceptionTargets": [
+    "assign-action-to-have-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "將 Nora 與 bring 連成後續事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不把安排者當成執行者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Change only the object form: We watched they dance for an hour.",
+  "options": [
+    "watched → watch",
+    "they → them",
+    "dance → danced",
+    "hour → hourly"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若事件在過去，watched 正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "watched 後的人物需受格 them。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "感官動詞後可用原形 dance。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "for an hour 是正確時間片語。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s187-edit-they-to-them-before-dance",
+    "repair-case-in-bare-perception-frame"
+  ],
+  "representationType": "perception-case-edit",
+  "misconceptionTargets": [
+    "alter-correct-event-form-during-pronoun-repair"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定 object form，不改其他正確部分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項修正格位並保留 dance。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

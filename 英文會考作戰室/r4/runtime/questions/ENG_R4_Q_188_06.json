@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_188_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line means that Ben, not Amy, will join?",
+  "options": [
+    "Amy wants to join Ben.",
+    "Amy wants Ben to join.",
+    "Ben wants Amy to join.",
+    "Amy asked to join Ben."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "主詞 Amy 執行 to join Ben。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Ben 是 want 的受詞，也是 to join 的執行者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項改成 Amy 加入。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項仍由 Amy 執行 join。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u27-s188-choose-ben-as-joiner-in-want-frame",
+    "contrast-subject-control-with-object-control"
+  ],
+  "representationType": "infinitive-agent-contrast",
+  "misconceptionTargets": [
+    "ignore-object-before-to-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "是否出現 Ben 作受詞會改變執行者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項精確指定 Ben 加入。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_189_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben was told to wait. If Amy was the teller, which active line keeps Ben's action?",
+  "options": [
+    "Ben told Amy to wait.",
+    "Amy made Ben waited.",
+    "Amy waited for Ben to tell.",
+    "Amy told Ben to wait."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項改成 Ben 是 teller、Amy 等待。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項改用 make 且 waited 形式錯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項是 Amy 等待 Ben 告知。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項保留 Amy 為 teller、Ben 執行 wait。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s189-reconstruct-active-teller-with-role-preservation",
+    "transform-voice-while-holding-embedded-agent"
+  ],
+  "representationType": "role-preserving-active-reconstruction",
+  "misconceptionTargets": [
+    "swap-teller-and-waiter"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題幹已明示 Amy 是告知者，不需由被動句猜測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項沒有改變 action agent。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

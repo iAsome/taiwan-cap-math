@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We heard Nora sing the whole song. What did we hear?",
+  "options": [
+    "Only the first sound",
+    "A report about Nora",
+    "The whole song",
+    "Nora asking us to sing"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "whole song 排除只聽第一個聲音。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "heard 表示直接聽見，不是轉述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "sing 原形配合 whole song 呈現完整表演。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有請求。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s187-infer-whole-song-from-heard-sing",
+    "combine-lexical-completion-with-bare-form"
+  ],
+  "representationType": "auditory-event-scope",
+  "misconceptionTargets": [
+    "ignore-whole-event-marker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "將 whole 與原形 sing 一起判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不增加說話行為。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_184_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S184"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy saw that the door was open when she arrived. Which statement is not supported?",
+  "options": [
+    "Amy saw an open door.",
+    "The door was already open at that time.",
+    "Someone may have opened it before Amy arrived.",
+    "Amy made Ben open the door."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "saw that the door was open 直接支持她看見開著的門。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "when she arrived 表示她到達時門已開著。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "may 表示可能，沒有斷言是誰。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "題幹沒有 Ben，也沒有 Amy 造成開門的證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s184-reject-unsupported-made-ben-statement",
+    "separate-state-evidence-from-invented-causation"
+  ],
+  "representationType": "causative-evidence-limit",
+  "misconceptionTargets": [
+    "invent-cause-from-result-state"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不能只因練習 make 就把使役事件補進情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項加入兩個未明示角色與因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_188_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy asked Leo if the store was open. Which fact is true?",
+  "options": [
+    "Amy ordered Leo to open it.",
+    "Leo was asked to close it.",
+    "Amy wanted the store to speak.",
+    "Amy asked Leo for information."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "if 子句是詢問資訊，不是命令開門。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹沒有 close。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "store 不是 speak 的執行者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "asked Leo if 表示向 Leo 詢問是否營業。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u27-s188-distinguish-ask-if-from-ask-to-act",
+    "classify-information-question-versus-request"
+  ],
+  "representationType": "ask-frame-function-contrast",
+  "misconceptionTargets": [
+    "put-every-ask-into-to-infinitive"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "ask 不一定接 object + to V，也可接 if 子句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 yes-no information request。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

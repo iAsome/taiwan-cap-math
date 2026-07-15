@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_183_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I heard Sam singing. What was Sam doing when I heard him?",
+  "options": [
+    "Listening to me",
+    "Ending every song",
+    "Singing",
+    "Asking a question"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 是聽見的人，不是 Sam 聽我。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "singing 不保證每首歌已唱完。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "V-ing 明示 Sam 當時正在唱。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有 ask。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s183-read-heard-object-ing-event",
+    "infer-observed-ongoing-action-without-completion"
+  ],
+  "representationType": "perception-event-interpretation",
+  "misconceptionTargets": [
+    "reverse-perceiver-and-performer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "將 heard 的受詞 Sam 與 singing 連起來。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不加入完成結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

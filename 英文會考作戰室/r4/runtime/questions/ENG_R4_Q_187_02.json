@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_187_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia saw Ben ___ across the park when she looked out.",
+  "options": [
+    "run",
+    "running",
+    "ran",
+    "to running"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "run 可能呈現整體，但 when she looked out 強調當時畫面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "running 描寫看見時正在跑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ran 不能直接接 saw Ben。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "to running 形式錯誤。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u27-s187-select-running-for-glimpse-in-park",
+    "use-simultaneous-viewpoint-to-choose-ing"
+  ],
+  "representationType": "ongoing-perception-cloze",
+  "misconceptionTargets": [
+    "use-past-form-after-saw-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹聚焦某一觀看時點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項最符合進行中的片段。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
