@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Can I use your ruler for a minute? B: ___.",
+  "options": [
+    "A ruler has numbers.",
+    "Sure. It is on my desk.",
+    "I used it last Monday.",
+    "Can I use your desk?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "描述尺上有數字，沒有給予或拒絕許可。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Sure 表示同意，並告知尺在桌上方便取得。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "過去使用時間不回答現在能否借用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項反過來提出另一個借桌子的問題，沒有回答 A。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "complete-ruler-permission-response",
+    "pair-sure-with-access-location"
+  ],
+  "representationType": "permission-response-dialogue",
+  "misconceptionTargets": [
+    "answer-permission-question-with-object-description"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Can I use...? 是詢問許可，回應要說明是否可借。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項接受後補出物品位置，能自然推進對話；其餘答案沒有處理許可。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

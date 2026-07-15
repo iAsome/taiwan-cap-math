@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "It starts to rain, and you forgot your umbrella. What can you ask a friend?",
+  "options": [
+    "Could I share your umbrella, please?",
+    "Your umbrella is blue.",
+    "I shared an umbrella last year.",
+    "Can you tell me if it will rain?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Could I share your umbrella, please? 清楚請求朋友讓自己共撐。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項只描述顏色，沒有處理淋雨問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "過去共傘經驗不能取得眼前許可。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "雨已經開始，第四項再問是否會下雨既不需要，也沒有取得遮雨協助。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-umbrella-sharing-permission-request",
+    "connect-rain-problem-to-could-i-share"
+  ],
+  "representationType": "weather-request-transfer",
+  "misconceptionTargets": [
+    "state-related-fact-instead-of-asking-permission"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "忘記雨傘後的合理目標是獲准共享朋友的雨傘。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項以 Could I 詢問許可並指出 share；其餘句子沒有可行的當下功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

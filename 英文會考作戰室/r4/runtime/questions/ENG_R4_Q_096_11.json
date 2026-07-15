@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The first bus is full, but another one comes in five minutes. Which idea is most useful?",
+  "options": [
+    "Let's walk away from the bus stop.",
+    "How about forgetting the trip?",
+    "Let's wait for the next bus.",
+    "Let's get on the full bus without space."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "離開站牌會錯過五分鐘後的公車。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "放棄旅程沒有利用可用資訊解決交通問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "等下一班能避開已滿車輛，且只需五分鐘。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有空間仍上車既不實際，也忽略 full。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "choose-next-bus-solution-from-capacity-and-wait",
+    "evaluate-suggestion-against-trip-goal"
+  ],
+  "representationType": "transport-suggestion-transfer",
+  "misconceptionTargets": [
+    "choose-action-unrelated-to-available-alternative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "有效建議應利用 another one comes in five minutes 這項關鍵條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項直接回應容量問題，代價也由題幹限定；其餘方案放棄目標或不安全。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

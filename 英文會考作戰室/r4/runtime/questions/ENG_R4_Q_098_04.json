@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: How about taking the early train? B: That may help us arrive on time. What is B doing?",
+  "options": [
+    "Asking A to miss the train",
+    "Saying that all trains are full",
+    "Refusing to travel",
+    "Saying the idea may help"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B 沒有要 A 錯過火車。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "對話沒有提到車廂容量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B 認為方案有助準時，並非拒絕旅行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "說明好處是在支持搭早班車的建議。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-on-time-reason-as-suggestion-support",
+    "preserve-may-as-benefit-not-guarantee"
+  ],
+  "representationType": "suggestion-support-function",
+  "misconceptionTargets": [
+    "mistake-cautious-support-for-refusal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "That may help 提供正面因果理由，對應 A 的 How about 建議。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項準確描述 B 的立場，同時保留 may 並非百分之百保證。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

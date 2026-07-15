@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_092_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which notice tells visitors to leave their bikes outside?",
+  "options": [
+    "Leave your bike outside before you enter.",
+    "Bikes were outside this morning.",
+    "The bike outside belongs to Leo.",
+    "Visitors can see bikes from the window."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "原形 Leave 直接指示訪客進入前把腳踏車留在外面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項只敘述今天早上的位置，沒有要求訪客行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項說明腳踏車的主人，並非館內規則。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項談可看到腳踏車，也沒有指示停放地點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "match-bike-notice-to-required-action",
+    "separate-imperative-notice-from-bike-facts"
+  ],
+  "representationType": "notice-function-selection",
+  "misconceptionTargets": [
+    "select-keyword-match-without-instruction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要找能使訪客採取特定行動的 notice，不是任何含 outside 的句子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時具祈使形式、動作 leave 與時間 before you enter。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

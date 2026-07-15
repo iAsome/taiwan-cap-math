@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_095_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A guest has just arrived. Which line naturally offers something to drink?",
+  "options": [
+    "Would you like some water?",
+    "Do you drink water every day?",
+    "You had water last night.",
+    "Could you close the door, please?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Would you like some water? 直接向剛到的客人提供飲料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項詢問日常習慣，不是眼前招待。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項談昨晚，沒有提供現在的水。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項是關門請求，雖然自然卻沒有提供飲料。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "select-arriving-guest-drink-offer",
+    "match-would-you-like-to-hosting-context"
+  ],
+  "representationType": "hosting-offer-transfer",
+  "misconceptionTargets": [
+    "ask-general-habit-instead-of-offering-now"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "guest has just arrived 建立招待場景，答案需讓對方決定是否接受飲品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合角色與時點；其餘句子只是習慣、過去事件或無意義問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

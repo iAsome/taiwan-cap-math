@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Can you join us at four? B: ___. I have a class then.",
+  "options": [
+    "Of course",
+    "Sorry, I can't",
+    "No problem",
+    "Yes, please"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Of course 表示接受，卻和四點有課衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Sorry, I can't 能自然引出無法參加的理由。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "No problem 通常表示可以做到，和後句不一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Yes, please 多用於接受提供，也無法接上限制。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "complete-four-oclock-invitation-refusal",
+    "use-class-conflict-to-select-cant"
+  ],
+  "representationType": "reasoned-refusal-cloze",
+  "misconceptionTargets": [
+    "choose-positive-politeness-despite-time-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "then 指四點，而有課使 B 不能參加，所以空格必須是婉拒。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時維持禮貌與邏輯；其他回應會先接受再立刻否定自己。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

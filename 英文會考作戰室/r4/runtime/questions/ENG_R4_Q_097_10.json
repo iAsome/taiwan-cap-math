@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_097_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You want an older passenger to move a bag so you can sit. Which line is best?",
+  "options": [
+    "Move your bag.",
+    "Excuse me. Could you move your bag, please?",
+    "Your bag has a seat.",
+    "I sat here yesterday."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項太像直接命令，未尊重陌生乘客。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Excuse me 取得注意，Could you 與 please 合宜提出小幅移動請求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項語意不自然，也未說明要做什麼。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "昨天座位情況不回答眼前需求。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "select-public-seat-bag-request-register",
+    "use-excuse-me-before-stranger-favor"
+  ],
+  "representationType": "public-space-request",
+  "misconceptionTargets": [
+    "issue-command-to-unfamiliar-passenger"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "陌生人與公共交通場景需要禮貌開場，動作仍要明確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項兼顧關係與目的；其他選項過硬、含糊或偏離現在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You did not hear the teacher. What can you say?",
+  "options": [
+    "You speak again.",
+    "Could you say that again, please?",
+    "I could hear yesterday.",
+    "What did the teacher say yesterday?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項像直接命令，且缺少自然禮貌語氣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Could you say that again, please? 清楚請老師重說一次。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項談昨天的能力，無法解決現在沒聽見。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項詢問昨天的內容，並未請眼前的老師重複剛才話語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "form-teacher-repeat-request-after-missed-speech",
+    "select-polite-complete-repetition-line"
+  ],
+  "representationType": "classroom-request-selection",
+  "misconceptionTargets": [
+    "describe-hearing-problem-without-requesting-repair"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "需求是請老師重複剛才內容，因此答案要包含 say that again。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項的 Could you 與 please 適合師生情境，並直接處理未聽清楚的問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

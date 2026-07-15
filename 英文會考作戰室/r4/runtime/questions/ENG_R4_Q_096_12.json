@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Let's visit the market after dinner. B: It closes at six, before dinner. What does B mean?",
+  "options": [
+    "The market serves dinner.",
+    "B visited at six yesterday.",
+    "B is inviting A to eat there.",
+    "The time in the idea will not work."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B 沒有說市場供餐。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子是一般關門時間，不是昨天的造訪。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B 未提出在市場吃飯。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "市場在晚餐前已關門，所以晚餐後去不可行。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-market-suggestion-rejection-from-closing-time",
+    "compare-after-dinner-with-before-dinner-closure"
+  ],
+  "representationType": "indirect-suggestion-rejection",
+  "misconceptionTargets": [
+    "miss-refusal-without-explicit-no"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "B 沒有直接說 No，卻用 closing time 否定了建議的可行性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項由時間先後得到，且沒有超出對話推論 B 的個人喜好。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

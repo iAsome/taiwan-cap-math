@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_092_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Smoke is coming from a pan. What should the cook say to a child standing near it?",
+  "options": [
+    "The pan was new last week.",
+    "You like this pan.",
+    "Stay back and don't touch it!",
+    "The kitchen has two windows."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "鍋子的購買時間無法阻止孩子接近危險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項談喜好，沒有安全功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Stay back 與 don't touch it 提供兩項立即且明確的安全指示。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "窗戶數量與孩子目前應做的事無關。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compose-child-safety-response-to-smoking-pan",
+    "select-two-action-emergency-imperative"
+  ],
+  "representationType": "safety-message-transfer",
+  "misconceptionTargets": [
+    "choose-descriptive-fact-instead-of-warning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "冒煙的鍋子需要對附近孩子發出可立即執行的警告。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項兼具保持距離與禁止碰觸；其他句子即使合文法，也不能處理風險。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

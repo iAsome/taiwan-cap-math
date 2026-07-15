@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Can you bring the keys? B: No problem. What will B probably do?",
+  "options": [
+    "Bring the keys",
+    "Hide the keys",
+    "Ask what a key is",
+    "Leave without the keys"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "No problem 接受 bring the keys，因此最可能把鑰匙帶來。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "隱藏鑰匙和請求方向相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B 沒有表示不知道 key 的意思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "空手離開會違反剛接受的任務。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "predict-key-delivery-after-no-problem",
+    "map-accepted-bring-request-to-next-action"
+  ],
+  "representationType": "response-to-action-prediction",
+  "misconceptionTargets": [
+    "treat-no-problem-as-negative-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "回應不是單看 No，而要把 No problem 視為接受語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項直接延續 B 的承諾；其餘行動都缺乏文本支持或與請求衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

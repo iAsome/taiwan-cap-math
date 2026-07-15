@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could you close the window? B: ___.",
+  "options": [
+    "Sure. I will close it now.",
+    "The window was open yesterday.",
+    "I like sunny days.",
+    "The question is about yesterday."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Sure 表示接受，後句也承諾立即關窗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項只談昨天，沒有回應是否願意關窗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "喜歡晴天和眼前請求無直接關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "解釋 could 的一種意思不是自然對話回應。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "complete-window-request-with-acceptance",
+    "verify-promised-action-matches-close"
+  ],
+  "representationType": "acceptance-dialogue",
+  "misconceptionTargets": [
+    "answer-request-with-related-background-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "A 期待 B 採取 close the window 的動作，回應應表明是否願意。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項的接受語與後續行動一致；其餘內容沒有承接當下請求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

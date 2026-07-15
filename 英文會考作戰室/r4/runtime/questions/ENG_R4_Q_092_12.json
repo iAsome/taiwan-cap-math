@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_092_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The room must stay quiet during the test. Which sign tells visitors what to do?",
+  "options": [
+    "The test was quiet yesterday.",
+    "Visitors heard a quiet song.",
+    "This room has a test every month.",
+    "Please keep your voice low."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "過去安靜不等於現在的訪客指示。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "聽到安靜歌曲與考試規則沒有直接關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只提供考試頻率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Please keep your voice low 直接要求訪客降低音量。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "convert-test-quiet-rule-to-visitor-instruction",
+    "choose-keep-voice-low-imperative"
+  ],
+  "representationType": "rule-to-sign-transfer",
+  "misconceptionTargets": [
+    "confuse-related-information-with-instruction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "sign 必須把 must stay quiet 轉成聽者可採取的行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用禮貌祈使句達成目的；其他選項只是關於房間或聲音的資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "What does “Let's check the map before we leave” ask people to do?",
+  "options": [
+    "Buy a new map tomorrow",
+    "Remember a trip from last year",
+    "Check the map together first",
+    "Leave before anyone sees the map"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子沒有要求購買，也沒有 tomorrow。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "它不是回顧過去旅行。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Let's 包含說話者，before 指明離開前共同查看地圖。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把 before 的順序反轉。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-map-checking-lets-suggestion",
+    "resolve-before-leaving-order"
+  ],
+  "representationType": "suggestion-meaning-reading",
+  "misconceptionTargets": [
+    "treat-lets-as-order-to-others-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這項建議同時包含共同動作 check 與時間關係 before we leave。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留兩個資訊；其他答案添加新事件或顛倒順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

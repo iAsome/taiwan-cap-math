@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_097_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You need a teacher to explain one step again. Which line works best here?",
+  "options": [
+    "Explain it.",
+    "You did not teach.",
+    "One step is on the board.",
+    "Could you explain this step again, please?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項過度直接，沒有顯示對老師的尊重。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項像指責老師，也未清楚指出要重說哪一步。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只是位置資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項具體指出 this step 與 again，並使用合宜請求語氣。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-teacher-step-reexplanation-request",
+    "combine-specific-reference-with-respectful-could"
+  ],
+  "representationType": "teacher-request-register",
+  "misconceptionTargets": [
+    "replace-request-with-blame"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "學生需要的是針對單一步驟的再說明，而不是批評或泛稱不懂。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項資訊完整且尊重角色關係；其餘句子不能自然達成學習需求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

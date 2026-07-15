@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_095_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which question asks about a person's usual taste rather than offering a drink now?",
+  "options": [
+    "Would you like some water?",
+    "Would you like a cup of milk?",
+    "Would you like some juice now?",
+    "Do you like coffee?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項在當下提供水。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項提供一杯牛奶。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "now 使第三項明確成為眼前果汁提供。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Do you like coffee? 通常詢問一般喜好。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "contrast-usual-coffee-preference-with-current-offers",
+    "identify-do-you-like-function"
+  ],
+  "representationType": "preference-offer-contrast",
+  "misconceptionTargets": [
+    "equate-do-you-like-with-immediate-offer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "usual taste 要找長期偏好，而非是否接受眼前物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 Do you like；前三項都以 Would you like 提供特定飲料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

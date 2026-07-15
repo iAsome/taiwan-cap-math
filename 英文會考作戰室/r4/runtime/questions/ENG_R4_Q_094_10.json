@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "What does “I am afraid I can't help tonight” mean after someone asks for help?",
+  "options": [
+    "It gives a strong order.",
+    "It politely refuses.",
+    "It asks about a past skill.",
+    "It accepts without a time."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子沒有命令別人做事。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "I am afraid 加 I can't 委婉表示今晚無法協助。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "它不在詢問任何人的過去能力。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "can't 明確否定能否幫忙，並非接受。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-im-afraid-cant-as-polite-refusal",
+    "interpret-softener-with-negative-ability"
+  ],
+  "representationType": "refusal-phrase-function",
+  "misconceptionTargets": [
+    "read-afraid-literally-and-miss-refusal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "I am afraid 在這裡是柔化負面回答，不是字面描述恐懼。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留整句功能；其他選項把婉拒誤判成命令、能力問題或接受。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

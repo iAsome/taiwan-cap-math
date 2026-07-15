@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Can you bring the blue book? B: Sure. I will get it from my room. What will B probably do next?",
+  "options": [
+    "Go to the room for the book",
+    "Ask A to buy a book",
+    "Leave the book at school tomorrow",
+    "Explain why blue is a color"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "B 已接受，並明說要去房間拿資料夾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "對話沒有購買需求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項會違反當下 bring 的承諾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "說明顏色無法完成拿資料夾的行動。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "predict-folder-fetch-after-acceptance",
+    "resolve-it-to-blue-folder"
+  ],
+  "representationType": "accepted-request-next-action",
+  "misconceptionTargets": [
+    "ignore-pronoun-link-in-follow-up-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Sure 與 I will get it 共同建立接受和下一步，it 指 blue book。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是由原話可直接推出的行動；其他選項都新增未提及目的。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Can you close the gate? B: Sure. Which choice is not supported by the talk?",
+  "options": [
+    "A wants the gate closed.",
+    "B agrees to help A.",
+    "B will probably close the gate.",
+    "A does not like any gate."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "close the gate 直接說明 A 的眼前目標。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Sure 是對請求的接受。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "接受後最合理的下一步是關上這扇門。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "一次關門請求無法證明 A 對所有大門的長期態度。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "identify-overreach-in-gate-request-inferences",
+    "separate-supported-next-action-from-global-dislike"
+  ],
+  "representationType": "evidence-boundary-transfer",
+  "misconceptionTargets": [
+    "generalize-single-request-to-permanent-preference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前三項都能由明說動作或接受回應支持，第四項則擴大到永久喜好。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案要求辨認 over-inference，不是找任何可能為真的句子；沒有證據就不能加入個性判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

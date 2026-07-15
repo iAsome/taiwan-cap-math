@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could we move our meeting from Tuesday to Wednesday? Which answer accepts the change?",
+  "options": [
+    "Tuesday comes before Wednesday.",
+    "I have never seen that room.",
+    "Wednesday works for me.",
+    "Meetings can be long."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "日序常識沒有表明是否同意改期。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項談房間經驗，和日期變更無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Wednesday works for me 表示新日期可配合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "會議可能很長不回答能否改到星期三。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "identify-acceptance-of-meeting-date-change",
+    "map-works-for-me-to-schedule-agreement"
+  ],
+  "representationType": "schedule-change-response",
+  "misconceptionTargets": [
+    "select-calendar-fact-instead-of-agreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "接受改期必須對 Wednesday 的可行性做出肯定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 works for me 清楚表示配合；其他答案雖提到會議或日期，仍沒有接受。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

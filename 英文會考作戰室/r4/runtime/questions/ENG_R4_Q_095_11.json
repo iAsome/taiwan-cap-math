@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_095_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Would you like to see a movie at seven? B: That sounds fun, but I work until eight. What is true?",
+  "options": [
+    "B will leave work at seven.",
+    "B thinks the movie starts at eight.",
+    "B cannot join at the given time.",
+    "B asks A for a job."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B 說工作到八點，沒有證據會七點離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "電影時間由 A 說是七點，B 沒有改成八點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "工作結束晚於電影開始，使 B 無法按時參加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "對話沒有求職內容。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-movie-start-with-work-end",
+    "infer-decline-despite-positive-reaction"
+  ],
+  "representationType": "time-conflict-invitation-transfer",
+  "misconceptionTargets": [
+    "equate-positive-comment-with-availability"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "sounds fun 顯示正面態度，but 後的時間線卻決定邀請結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項可由 7:00 與 until 8:00 比較得到，沒有推論 B 不喜歡電影。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

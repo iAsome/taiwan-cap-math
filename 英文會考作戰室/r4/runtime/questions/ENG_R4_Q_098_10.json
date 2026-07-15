@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Do you like tea? B: Yes, I drink it every morning. What is A most likely asking about?",
+  "options": [
+    "Whether B wants this cup now",
+    "What B usually likes",
+    "Whether B can make tea",
+    "A rule about morning drinks"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A 沒有使用 Would you like 或指出眼前一杯茶。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "B 以每天早上的習慣支持一般喜好解讀。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "對話沒有詢問泡茶能力。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有規則或 must 等必要語氣。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-usual-tea-preference-from-habit-response",
+    "contrast-do-you-like-with-current-cup-offer"
+  ],
+  "representationType": "response-guided-question-function",
+  "misconceptionTargets": [
+    "read-preference-question-as-offer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "every morning 把回答連到 routine，能反向確認 Do you like 的功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項依問答共同判斷；第一項則把一般喜好誤當成即時提供。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

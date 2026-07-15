@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could you speak more slowly, please? Which purpose best explains these words?",
+  "options": [
+    "A is praising the speaker's speed.",
+    "A is asking about an old speech.",
+    "A is offering to speak first.",
+    "A wants the current speech to be easy to follow."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "要求 more slowly 並不是稱讚目前速度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有過去時間或舊演講。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A 沒有提出自己先發言。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "放慢目前說話速度能讓 A 更容易理解內容。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-comprehension-goal-from-slow-speech-request",
+    "limit-purpose-to-current-followability"
+  ],
+  "representationType": "request-goal-inference",
+  "misconceptionTargets": [
+    "invent-background-reason-for-speech-request"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "more slowly 是對當下說話方式的調整請求，please 則使語氣較柔和。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項說明合理目的但沒有添加 A 的能力、國籍或其他未提供原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

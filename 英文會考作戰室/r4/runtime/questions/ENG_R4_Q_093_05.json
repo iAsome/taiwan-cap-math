@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which question gives the listener enough information to meet?",
+  "options": [
+    "Could you meet me at the front gate at four?",
+    "Could you meet me later?",
+    "Meeting is good.",
+    "You know a place."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項同時說明前門與四點，聽者能據此赴約。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "later 沒有明確時間，也沒有地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只評論會面，並未提出安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項沒有說要在哪裡或何時碰面。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "evaluate-meeting-request-information-completeness",
+    "identify-gate-and-four-as-actionable-details"
+  ],
+  "representationType": "request-completeness-comparison",
+  "misconceptionTargets": [
+    "equate-polite-modal-with-complete-message"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "有禮請求仍需提供完成行動所需的 time 與 place。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不靠冗長描述，而是補齊實際安排；另外三項資訊不足或不是請求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

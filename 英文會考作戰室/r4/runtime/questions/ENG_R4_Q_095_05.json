@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_095_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Would you like to play basketball after school? B wants to accept. What can B say?",
+  "options": [
+    "Yes, I would love to.",
+    "Sorry, I have a class then.",
+    "The team played yesterday.",
+    "I like basketball at school."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Yes, I would love to 自然接受活動邀請。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項是有時間理由的婉拒，不符合 B 想接受的條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只敘述球隊昨天比賽。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項表達一般喜好，仍未明確接受這次活動。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-basketball-acceptance-under-explicit-intent",
+    "interpret-would-love-to-as-join-response"
+  ],
+  "representationType": "activity-invitation-dialogue",
+  "misconceptionTargets": [
+    "respond-to-activity-as-general-preference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹明說 B wants to accept，因此答案必須清楚承諾參加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項接受邀請且可省略重複的 play basketball；其餘回應是拒絕、過去資訊或一般喜好。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

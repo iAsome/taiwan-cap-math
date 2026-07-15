@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Let's ___ at the front gate at three.",
+  "options": [
+    "meet",
+    "meets",
+    "met",
+    "meeting"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Let's 後使用原形 meet，提出共同會合建議。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "meets 帶第三人稱單數詞尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "met 是過去式，不能接在 Let's 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "meeting 是分詞，不是此結構所需形式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "complete-front-gate-meeting-suggestion",
+    "retain-meet-base-after-lets"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "inflect-verb-after-lets"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "at the front gate at three 提供共同見面的地點與時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合 Let's + base form；其他三項都錯改了 meet。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

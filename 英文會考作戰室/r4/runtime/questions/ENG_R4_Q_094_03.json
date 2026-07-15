@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Please help me move this chair. B: No problem. What does B mean?",
+  "options": [
+    "B thinks the chair is broken.",
+    "B wants a different chair.",
+    "B agrees to help.",
+    "B did the work yesterday."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "回應沒有評論椅子狀況。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 沒有要求更換椅子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "No problem 在此表示願意協助搬椅子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子是對當下請求的回應，不是過去敘事。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-no-problem-after-chair-request",
+    "infer-agreement-from-fixed-response"
+  ],
+  "representationType": "acceptance-phrase-meaning",
+  "misconceptionTargets": [
+    "treat-no-problem-as-refusal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "No problem 必須當作完整接受語理解，不能把 No 單獨抽出。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項說明 B 的實際立場，也能預測下一步是幫忙移動椅子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

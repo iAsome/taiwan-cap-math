@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "It is raining, and the picnic tables are outside. Which idea solves the problem?",
+  "options": [
+    "Let's eat inside.",
+    "Let's put more food outside.",
+    "How about wearing wet shoes?",
+    "Let's not look at the rain."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "移到室內用餐能避開雨水，直接處理戶外桌子的問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "把更多食物放到外面會使問題更嚴重。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "穿濕鞋不能讓野餐保持乾燥。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不看雨不會改變桌子在戶外的事實。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "evaluate-rainy-picnic-solutions",
+    "choose-indoor-eating-as-cause-focused-suggestion"
+  ],
+  "representationType": "problem-solving-suggestion",
+  "misconceptionTargets": [
+    "select-grammatical-but-ineffective-suggestion"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "有效建議須同時回應 rain 與 outside tables，而非只使用正確句型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項改變用餐地點，能達成保持乾燥的目標；其他選項沒有解決因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

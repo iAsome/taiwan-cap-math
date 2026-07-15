@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_097_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You ask a classmate to move one notebook. Which line is polite and not overly formal?",
+  "options": [
+    "Move it.",
+    "You must move this notebook for me.",
+    "Can you move this notebook, please?",
+    "Is this notebook heavy for you?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項缺少柔和語氣，容易像命令。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項用語不自然，對小協助過度正式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Can you 加 please 清楚且符合同學間的小請求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項沒有直接請同學採取行動。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "calibrate-classmate-notebook-request-tone",
+    "avoid-under-and-over-formality"
+  ],
+  "representationType": "peer-request-register",
+  "misconceptionTargets": [
+    "equate-longer-sentence-with-better-politeness"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "情境負擔很小，目標是自然尊重，不是選最長句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的直接程度與同學關係相稱；其餘選項太硬、太怪或太含糊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

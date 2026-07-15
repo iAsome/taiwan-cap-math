@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Please feed my cat tonight. B: Sorry, I have to work, but my sister can do it. What is the best reading?",
+  "options": [
+    "B accepts and will feed the cat alone.",
+    "B refuses and offers no help.",
+    "B asks A to feed another cat.",
+    "B cannot do it but offers another person who can."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B 明說要工作，因此不會親自完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 雖婉拒本人執行，仍提出妹妹可以幫忙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "貓屬於 A，B 沒有反向提出請求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項同時保留 B 的限制與替代協助。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "integrate-cat-request-refusal-and-alternative",
+    "distinguish-personal-inability-from-no-help"
+  ],
+  "representationType": "compound-response-transfer",
+  "misconceptionTargets": [
+    "ignore-alternative-after-refusal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "回應包含兩層：Sorry 加工作理由是婉拒，but 後則提供解決方案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項完整解釋整句，不能只依前半或後半把它簡化成純接受或純拒絕。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

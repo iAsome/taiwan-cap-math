@@ -16,6 +16,7 @@ const UNITS = [
   { id: "ENG_R4_U11", firstSkill: 71 },
   { id: "ENG_R4_U12", firstSkill: 78 },
   { id: "ENG_R4_U13", firstSkill: 85 },
+  { id: "ENG_R4_U14", firstSkill: 92 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -303,6 +304,49 @@ test("U13 modal forms, functions, and strength boundaries remain explicit", asyn
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U13 duplicate ${label}`);
+});
+
+test("U14 imperatives, requests, responses, offers, and suggestions remain context-bound", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U14");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.match(question.get("ENG_R4_Q_092_10").stem, /danger right away/);
+  assert.equal(question.get("ENG_R4_Q_092_11").options[2], "Stay back and don't touch it!");
+  assert.match(question.get("ENG_R4_Q_093_08").stem, /able to do in the past/);
+  assert.match(question.get("ENG_R4_Q_093_11").options[2], /science book.*Room 3.*after lunch/);
+  assert.equal(question.get("ENG_R4_Q_094_03").options[2], "B agrees to help.");
+  assert.match(question.get("ENG_R4_Q_094_12").options[3], /offers another person/);
+  assert.equal(question.get("ENG_R4_Q_095_04").options[3], "Do you like coffee?");
+  assert.equal(question.get("ENG_R4_Q_095_12").options[3], "Would you like a clean towel?");
+  assert.match(question.get("ENG_R4_Q_096_08").options[3], /shared action.*directly tells the listener/);
+  assert.equal(question.get("ENG_R4_Q_096_11").options[2], "Let's wait for the next bus.");
+  assert.match(question.get("ENG_R4_Q_097_06").stem, /asks too much/);
+  assert.match(question.get("ENG_R4_Q_097_08").options[3], /depends on the people.*needed right away/);
+  assert.equal(question.get("ENG_R4_Q_098_06").options[1], "B cannot go hiking on Saturday.");
+  assert.equal(question.get("ENG_R4_Q_098_12").options[3], "A does not like any gate.");
+  const imperativeLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S092");
+  assert.match(imperativeLecture.sections.map((value) => value.content).join(" "), /Don't \+ base form/);
+  assert.match(imperativeLecture.sections.map((value) => value.content).join(" "), /Don't be late/);
+  const requestLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S093");
+  assert.match(requestLecture.sections.map((value) => value.content).join(" "), /過去能力/);
+  assert.match(requestLecture.sections.map((value) => value.content).join(" "), /希望對方現在遞鹽/);
+  const responseLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S094");
+  assert.match(responseLecture.sections.map((value) => value.content).join(" "), /No problem/);
+  const offerLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S095");
+  assert.match(offerLecture.sections.map((value) => value.content).join(" "), /Do you like/);
+  const suggestionLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S096");
+  assert.match(suggestionLecture.sections.map((value) => value.content).join(" "), /How about/);
+  assert.match(suggestionLecture.sections.map((value) => value.content).join(" "), /about 是介系詞.*taking/);
+  const registerLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S097");
+  assert.match(registerLecture.sections.map((value) => value.content).join(" "), /緊急安全指示/);
+  const purposeLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S098");
+  assert.match(purposeLecture.sections.map((value) => value.content).join(" "), /不添加性格、長期喜好或未說出的事件/);
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U14 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

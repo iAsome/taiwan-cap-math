@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which answer politely says no to lending a bike and gives a reason?",
+  "options": [
+    "Sorry, I need it this afternoon.",
+    "Yes, my bike is outside.",
+    "Red bikes are easy to see.",
+    "Of course, I cannot ride."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "道歉加上下午自己要用，清楚且有關地婉拒借車。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項只說車在外面，沒有表明是否借出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只評論紅色腳踏車的可見度，沒有回應借用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Of course 表接受，但 cannot ride 又與借車問題沒有直接邏輯。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-bike-loan-refusal-with-relevant-reason",
+    "distinguish-decline-from-bike-location-fact"
+  ],
+  "representationType": "refusal-quality-comparison",
+  "misconceptionTargets": [
+    "mistake-related-bike-fact-for-refusal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目同時要求 refusal 與 reason，兩項條件都要出現在回應中。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項的 need it this afternoon 說明無法借出的限制，沒有添加不必要故事。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could you check this answer for me? B: ___.",
+  "options": [
+    "I checked my answer yesterday.",
+    "Sure. Show me the question.",
+    "“Could” may talk about the past.",
+    "An answer is on the page."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項只說 B 昨天檢查自己的答案，沒有接受 A 的請求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Sure 表示接受，後句要求看到題目以便檢查。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項討論 could 的功能，沒有回應是否幫忙。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項指出答案位置，卻未表示是否願意檢查。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "complete-answer-check-request-dialogue",
+    "select-acceptance-plus-needed-material"
+  ],
+  "representationType": "request-response-completion",
+  "misconceptionTargets": [
+    "reply-with-related-fact-not-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "自然回應應表明能否 check，並和完成檢查所需資訊連接。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項先接受再要求題目，形成可繼續的對話；其他選項答非所問。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

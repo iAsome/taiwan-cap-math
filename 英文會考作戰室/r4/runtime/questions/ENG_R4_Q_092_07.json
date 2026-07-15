@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_092_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "First, wash the apples. Then cut them into small pieces. What should you do second?",
+  "options": [
+    "Buy more apples.",
+    "Wash the pieces again.",
+    "Cut the apples.",
+    "Put the apples back."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "指示沒有要求購買更多蘋果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wash 出現在 first，不是第二個新動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Then 引出的 cut 是第二步。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "把蘋果放回去不在給定流程中。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "sequence-apple-preparation-imperatives",
+    "resolve-then-as-second-action"
+  ],
+  "representationType": "ordered-instruction-reading",
+  "misconceptionTargets": [
+    "ignore-order-marker-in-directions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這題需依 First 與 Then 排列兩個祈使指示，而非只找食物相關選項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項精確重述第二步 cut them；其他動作未出現在流程或順序不對。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

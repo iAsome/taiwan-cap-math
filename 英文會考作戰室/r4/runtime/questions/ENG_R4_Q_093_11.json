@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A message says, “Could you bring it later?” Which change makes the message clear?",
+  "options": [
+    "Could you bring things?",
+    "Please later.",
+    "Could you bring my science book to Room 3 after lunch?",
+    "You know what I mean."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "things 仍未指出要帶哪一件物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項缺少主要動作與受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項補出物品、地點與時間，收訊者能照做。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項假設對方知道內容，沒有消除含糊。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-unclear-bring-it-later-request",
+    "supply-object-place-and-time-details"
+  ],
+  "representationType": "message-clarity-transfer",
+  "misconceptionTargets": [
+    "use-pronoun-and-vague-time-without-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原訊息中的 it 與 later 都缺乏可辨識指向，需要具體化而非只增加禮貌字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項提供 my science book、Room 3 與 after lunch，是唯一可執行的版本。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

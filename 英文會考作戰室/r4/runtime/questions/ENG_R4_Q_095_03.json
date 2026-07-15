@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_095_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Would you like some cake? B: No, thank you. What does B mean?",
+  "options": [
+    "B wants two pieces.",
+    "B wants to make a cake.",
+    "B does not accept the cake now.",
+    "B never eats cake."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No, thank you 沒有要求兩塊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 沒有提到製作蛋糕。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "這是對當下提供的有禮婉拒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一次拒絕不足以證明 B 永遠不吃蛋糕。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-no-thank-you-in-cake-offer",
+    "limit-decline-inference-to-current-offer"
+  ],
+  "representationType": "offer-response-meaning",
+  "misconceptionTargets": [
+    "infer-permanent-dislike-from-one-decline"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "判讀範圍只限這次 cake offer，不能擴大成永久喜好。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項精確描述眼前選擇；第四項是超出證據的絕對推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

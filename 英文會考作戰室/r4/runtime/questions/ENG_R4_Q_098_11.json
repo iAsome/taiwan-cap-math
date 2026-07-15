@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: The room is getting dark. Could you turn on the light? B: I will do it now. What is happening in this talk?",
+  "options": [
+    "A asks whether B knew about lights as a child.",
+    "B refuses because the room is dark.",
+    "A asks B to do something, and B says yes.",
+    "A offers B a light to take home."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "getting dark 與 now 都指眼前情境，不是童年能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "I will do it now 表示接受，不是拒絕。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "A 請 B 開燈，B 承諾立即完成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "turn on 是啟動房內燈光，不是把物品送人。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "integrate-dark-room-request-and-acceptance",
+    "resolve-do-it-to-turning-on-light"
+  ],
+  "representationType": "complete-exchange-function-transfer",
+  "misconceptionTargets": [
+    "interpret-could-as-past-despite-now-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "前因是房間變暗，請求動作是 turn on，it 指開燈這件事。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項串起問題、請求與回應；其他選項都無法解釋 B 的即時承諾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

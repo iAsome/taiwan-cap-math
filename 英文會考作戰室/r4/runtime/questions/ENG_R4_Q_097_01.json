@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_097_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You need help from a person at the library. Which opening is best?",
+  "options": [
+    "Excuse me. Could you help me find this book?",
+    "Find this book now.",
+    "You work at the library.",
+    "A book is on a shelf."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Excuse me 先取得注意，Could you 再清楚而尊重地求助。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項對不熟悉的館員過度直接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "說明對方身分沒有提出具體需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項只是一般事實，無法指出要找哪本書。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "select-respectful-librarian-help-opening",
+    "balance-attention-and-specific-book-request"
+  ],
+  "representationType": "formal-help-request",
+  "misconceptionTargets": [
+    "use-bare-command-in-service-setting"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "服務情境需要兼顧 attention、specific action 與尊重。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項具備三項資訊；其他句子不是合宜請求或無法讓館員採取行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

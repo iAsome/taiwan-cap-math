@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_095_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Would you like to come to the beach on Sunday? B: I would like to, but I have to visit my aunt. What does B mean?",
+  "options": [
+    "B will bring the aunt to the beach.",
+    "B asks A to change the beach.",
+    "B cannot accept the invitation.",
+    "B does not like beaches."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "回應沒有說阿姨會同行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 沒有要求更換地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "星期日探望阿姨造成時間衝突，所以 B 婉拒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "B 的 I would like to 反而顯示活動本身可能有吸引力。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-sunday-beach-decline-from-family-duty",
+    "separate-unavailability-from-dislike"
+  ],
+  "representationType": "invitation-refusal-reading",
+  "misconceptionTargets": [
+    "interpret-decline-as-negative-preference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "but 後的既定安排決定 B 最終無法參加，不能停在正面開頭。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只推論邀請結果，不把婉拒錯誤擴大成討厭海灘。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could you come by eight tomorrow? B: I would like to, but the first bus arrives at nine. What does B mean?",
+  "options": [
+    "B will drive the first bus.",
+    "B wants A to arrive at nine.",
+    "B cannot come by eight.",
+    "B came early yesterday."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "回應沒有說 B 是公車駕駛。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 沒有要求 A 改變到達時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "首班車九點才到，明確晚於 A 要求的八點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "對話談 tomorrow，不是昨天。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-eight-oclock-refusal-from-nine-oclock-bus",
+    "compare-requested-arrival-with-first-available-bus"
+  ],
+  "representationType": "indirect-refusal-inference",
+  "misconceptionTargets": [
+    "stop-reading-after-would-like-to"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "I would like to 表達意願，但 8:00 與 9:00 的時間比較顯示 B 無法配合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項直接由班車限制推出，沒有擴大成 B 不喜歡活動或永遠不能早到。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

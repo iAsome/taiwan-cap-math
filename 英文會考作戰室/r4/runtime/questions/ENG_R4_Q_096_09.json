@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: We need a quiet place to study. B: How about the library? Why does B say this?",
+  "options": [
+    "To suggest a place",
+    "To ask who built it",
+    "To report a lost book",
+    "To refuse to study"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "How about the library? 提出一個符合安靜需求的地點選項。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 沒有詢問建造者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "對話沒有遺失書本。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "提出圖書館並非拒絕讀書。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-library-as-noun-phrase-suggestion",
+    "connect-quiet-study-goal-to-place-option"
+  ],
+  "representationType": "elliptical-suggestion-function",
+  "misconceptionTargets": [
+    "expect-gerund-after-every-how-about"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "How about 後可接名詞，這裡省略的是完整前往或在該處讀書的想法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項由 quiet place 的需求直接支持；其他目的都沒有文本證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

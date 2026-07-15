@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_092_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Please ___ the gate after you come in.",
+  "options": [
+    "close",
+    "closes",
+    "closed",
+    "closing"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "祈使句在 please 後使用原形 close。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "closes 是第三人稱單數形式，不能接在省略 you 的指示中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "closed 是過去式，題目不是敘述已完成事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "closing 是分詞，這裡缺少能帶出它的結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "complete-gate-closing-imperative",
+    "retain-close-base-form-after-please"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "inflect-verb-in-imperative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "句子要求聽者進門後關門，核心結構是 Please + base form。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合指示功能與動詞形式；其他三項都對 close 做了不必要變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

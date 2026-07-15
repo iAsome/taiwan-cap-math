@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Stop! There is a bike behind you. B: I did not see it. What is A doing?",
+  "options": [
+    "Telling B about danger",
+    "Inviting B to ride",
+    "Offering B a new bike",
+    "Asking B to repair the bike"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Stop 與 behind you 的腳踏車共同形成即時危險警告。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A 沒有邀請 B 騎乘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "對話沒有提供新腳踏車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "B 看不見車不是修理請求。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-stop-bike-behind-as-warning",
+    "use-b-response-to-confirm-unseen-danger"
+  ],
+  "representationType": "warning-dialogue-inference",
+  "misconceptionTargets": [
+    "treat-direct-stop-as-rude-request"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "B 的 I did not see it 證實警告補足了他未察覺的風險。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項能解釋直接語氣與位置資訊；其他功能都和避免碰撞無關。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

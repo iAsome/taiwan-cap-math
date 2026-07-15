@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_094_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could you pass the salt? B: ___.",
+  "options": [
+    "Salt is white.",
+    "I passed the store.",
+    "Do you use salt every day?",
+    "Of course. Here you are."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色資訊沒有回應遞鹽請求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "passed the store 使用不同意思，也把事件放在過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項詢問日常用鹽習慣，沒有表示是否遞過去。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Of course 接受請求，Here you are 表示正在交給對方。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-table-request-fulfillment-response",
+    "connect-here-you-are-to-passing-salt"
+  ],
+  "representationType": "table-dialogue-completion",
+  "misconceptionTargets": [
+    "select-shared-word-without-response-function"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "自然餐桌回應應承接 pass the salt，並可配合交付動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項前後一致；其他選項只共享 salt 或 pass 等字面元素，功能不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

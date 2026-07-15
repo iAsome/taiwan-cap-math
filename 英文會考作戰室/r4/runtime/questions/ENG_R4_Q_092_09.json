@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_092_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A cooking note says, “Heat the soup. Add the milk after it is hot.” When should you add the milk?",
+  "options": [
+    "After the soup is hot",
+    "Before heating the soup",
+    "While buying the milk",
+    "After the meal is over"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "after it is hot 明確指出湯熱了才加牛奶。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目先要求 Heat the soup，不能在加熱前加入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "購買牛奶不是食譜中的步驟。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "餐後才加會錯過烹調流程。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-after-condition-in-recipe",
+    "link-it-to-heated-soup"
+  ],
+  "representationType": "recipe-sequence-inference",
+  "misconceptionTargets": [
+    "reverse-after-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩個祈使句由 after 建立條件順序，it 指的是前句的 soup。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留加熱完成後再加入的時間關係，其他時點都違反食譜。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

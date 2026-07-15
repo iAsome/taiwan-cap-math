@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You write to a person at the library because a book is hard to find. Which line politely asks for help?",
+  "options": [
+    "Find it for me.",
+    "This book has many pages.",
+    "I found a book yesterday.",
+    "Could you tell me where this book is, please?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項像命令，也沒有清楚尊重館員的協助選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "頁數資訊不能幫助詢問書的位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只敘述昨天找到一本書，偏離現在的找書需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項有禮地請館員說明這本書的位置。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "select-librarian-location-request-in-writing",
+    "align-polite-form-with-book-finding-goal"
+  ],
+  "representationType": "written-service-request-transfer",
+  "misconceptionTargets": [
+    "use-command-or-biography-in-help-message"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "訊息目的在取得 location information，而不是評論書本或談過去。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 Could you tell me where... 並加 please，語意完整且場合合宜。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_092_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The glass is hot. ___ touch it.",
+  "options": [
+    "Not",
+    "Do not",
+    "Does not",
+    "No"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Not 不能單獨放在 touch 前形成否定祈使句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Do not touch 正確阻止聽者碰觸熱玻璃。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Does not 需要第三人稱主詞，並非對聽者的直接指示。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "No 後缺少可連接 touch 的結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "form-hot-glass-prohibition",
+    "choose-do-not-before-touch"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "place-bare-not-before-imperative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "hot 說明碰觸有風險，因此句子需要完整的否定指示。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 Do not 加原形 touch；其餘選項不是標準否定祈使句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

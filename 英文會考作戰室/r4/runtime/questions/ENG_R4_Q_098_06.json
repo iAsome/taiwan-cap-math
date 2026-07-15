@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Would you like to go hiking on Saturday? B: That sounds fun, but I have to work. What does B mean in the end?",
+  "options": [
+    "B will work on the hiking path.",
+    "B cannot go hiking on Saturday.",
+    "B wants to move work outside.",
+    "B thinks hiking is never fun."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B 沒有把工作地點改到步道。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "but 後的工作義務使 B 星期六無法參加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項不是對話提出的安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "sounds fun 顯示 B 並未否定健行本身。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "derive-final-hiking-response-from-but-clause",
+    "separate-positive-attitude-from-schedule-availability"
+  ],
+  "representationType": "final-stance-inference",
+  "misconceptionTargets": [
+    "read-positive-opening-as-acceptance"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正面開頭表態對活動有興趣，最終可否參加則由工作衝突決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項限於指定日期，避免把一次婉拒錯推成永久不喜歡健行。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

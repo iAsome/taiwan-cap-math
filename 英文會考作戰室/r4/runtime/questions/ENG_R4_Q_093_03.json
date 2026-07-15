@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A customer asks, “Could you hold this bag for a moment?” What does the customer want?",
+  "options": [
+    "To know what happened yesterday",
+    "To buy a different bag",
+    "Someone to hold the bag now",
+    "Someone to close the store"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有過去時間，也不是回顧事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顧客沒有表示要購買另一個袋子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Could you hold... 是請對方現在暫時拿著袋子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "請求的動作是 hold the bag，不是關店。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-customer-intent-from-could-you-hold",
+    "separate-present-help-from-past-ability"
+  ],
+  "representationType": "polite-request-function",
+  "misconceptionTargets": [
+    "read-could-request-as-past-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "for a moment 建立短暫的當下協助，排除過去能力解讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項準確指出期待的行動者與動作；其他選項添加了對話未提的目的。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

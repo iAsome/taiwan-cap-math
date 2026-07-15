@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Let's take the train. B: ___. It will save time.",
+  "options": [
+    "The train was late yesterday.",
+    "I cannot hear a train.",
+    "A train has many seats.",
+    "That sounds good."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "過去誤點資訊未必接受眼前建議，也無法接上節省時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項談聽覺，和搭車計畫無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "座位數量只是火車資訊，不能自然引出節省時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "That sounds good 表示認同，後句再提供節省時間的理由。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "complete-train-suggestion-acceptance-with-reason",
+    "link-time-saving-to-sounds-good"
+  ],
+  "representationType": "suggestion-response-cloze",
+  "misconceptionTargets": [
+    "choose-transport-fact-instead-of-acceptance"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "It will save time 支持搭火車，因此前句應是正面接受語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓立場與理由一致；其他回應無法自然連接後句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

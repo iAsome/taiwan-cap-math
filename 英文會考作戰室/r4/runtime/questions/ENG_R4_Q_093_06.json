@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You want a stranger to take a photo of your group. Which line is best?",
+  "options": [
+    "Take us now.",
+    "Excuse me. Could you take a photo for us, please?",
+    "You have a camera.",
+    "We took a photo yesterday."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項過度直接，也沒有先取得陌生人注意。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Excuse me 加 Could you 與 please，清楚又尊重地提出拍照請求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只陳述對方有相機，沒有說明希望他做什麼。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項談昨天的照片，和眼前協助無關。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-stranger-photo-request-tone",
+    "combine-excuse-me-could-you-and-purpose"
+  ],
+  "representationType": "social-request-choice",
+  "misconceptionTargets": [
+    "use-bare-command-with-stranger"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "對陌生人提出額外協助時，需要清楚動作、受益者與合宜語氣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項具備 take a photo for us 的完整內容，其餘選項不是自然請求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

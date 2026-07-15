@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_097_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You see smoke near a classroom door. Which message should come first?",
+  "options": [
+    "Stay back and tell a teacher now!",
+    "Would you like to think about smoke later?",
+    "Could everyone perhaps discuss the door tomorrow?",
+    "The classroom door is brown."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項立即讓人遠離風險並通知教師。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "延後思考不能處理正在發生的煙霧。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "明天討論會錯過眼前安全需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "門的顏色與危險處置無關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "prioritize-smoke-safety-message",
+    "combine-distance-and-adult-alert-actions"
+  ],
+  "representationType": "urgent-school-safety-transfer",
+  "misconceptionTargets": [
+    "choose-politeness-over-immediate-hazard-response"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "smoke near a classroom 是需要立即反應的安全情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項直接度具有功能必要性；其他句子過慢、迴避行動或只描述外觀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

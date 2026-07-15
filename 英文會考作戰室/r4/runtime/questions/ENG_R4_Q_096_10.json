@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: The line for food is very long. B: How about eating after the game? What is B suggesting?",
+  "options": [
+    "Leaving the game now",
+    "Waiting to eat until the game ends",
+    "Buying all the food",
+    "Playing while standing in line"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B 沒有建議離開比賽。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "after the game 表示把吃東西延後到比賽結束。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有購買全部食物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "B 的做法是改變用餐時間，不是排隊時比賽。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-delayed-eating-suggestion",
+    "use-after-game-to-set-new-time"
+  ],
+  "representationType": "timing-suggestion-inference",
+  "misconceptionTargets": [
+    "ignore-time-phrase-in-how-about"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "長隊伍是問題，after the game 是 B 提出的時間調整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項準確解讀 eating 的時點；其他選項都加入未提到的行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

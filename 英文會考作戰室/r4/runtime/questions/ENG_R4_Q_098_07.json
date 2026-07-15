@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Let's use the smaller room. B: It has enough chairs for everyone. What does B mean?",
+  "options": [
+    "B wants everyone to stand.",
+    "B is asking for more rooms.",
+    "B gives a reason to accept the idea.",
+    "B says the chairs are too small."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "enough chairs 表示不必站著。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 沒有要求增加房間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "座位足夠支持使用較小房間的建議。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "smaller 修飾 room，不是 chairs。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-support-from-enough-chair-evidence",
+    "resolve-smaller-as-room-not-chair-property"
+  ],
+  "representationType": "implicit-suggestion-support",
+  "misconceptionTargets": [
+    "miss-acceptance-without-explicit-yes"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "B 沒有直接說 yes，但提供了讓方案可行的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項解釋回應的支持功能；第四項錯把形容詞的修飾對象換成椅子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

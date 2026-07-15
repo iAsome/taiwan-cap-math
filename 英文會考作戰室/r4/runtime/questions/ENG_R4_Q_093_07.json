@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_093_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben says, “Can you send me the address?” What is Ben doing?",
+  "options": [
+    "Testing someone's reading skill",
+    "Reporting where he lived before",
+    "Asking someone to send information",
+    "Giving an order to leave"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子沒有測驗閱讀能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "address 是要被傳送的資訊，不是過去住址敘事。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Can you send me...? 在此提出傳送地址的請求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有 leave 或離開指令。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-address-can-you-as-request",
+    "trace-send-action-to-ben-as-receiver"
+  ],
+  "representationType": "can-you-pragmatic-reading",
+  "misconceptionTargets": [
+    "treat-all-can-you-questions-as-ability-tests"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "me 指出資訊接收者，send 則指出說話者期待的下一步。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項完整對應對話功能；不能只把 Can you 解讀成能力測量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

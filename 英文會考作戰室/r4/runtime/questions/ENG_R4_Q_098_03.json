@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_098_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could you turn down the music? B: Sure. What does A want?",
+  "options": [
+    "A wants to buy music.",
+    "A wants B to leave.",
+    "A wants the music to be quieter.",
+    "A wants to know what B could do as a child."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "turn down 在此不是購買音樂。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A 沒有要求 B 離開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "turn down the music 表示降低音量，Sure 顯示 B 接受請求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有過去背景或童年時間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-volume-reduction-request",
+    "interpret-turn-down-through-accepted-action"
+  ],
+  "representationType": "phrasal-request-purpose",
+  "misconceptionTargets": [
+    "force-past-ability-reading-on-could-you"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "B 的 Sure 顯示 A 期待一項可立即完成的動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項精確限定目前音量；不能由請求推成 A 討厭音樂或否定 B 的能力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

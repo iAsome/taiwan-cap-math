@@ -1,0 +1,91 @@
+{
+  "id": "ENG_R4_Q_096_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which words can follow “How about” to suggest a bike ride?",
+  "options": [
+    "ride our bikes",
+    "riding our bikes",
+    "to riding our bikes",
+    "used our bikes yesterday"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "ride 是原形，不能直接接在 about 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "riding our bikes 是合適的 V-ing 片語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "to riding 疊加了不需要的 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "used our bikes yesterday 是過去敘述，不能填入這項建議。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-bike-ride-gerund-phrase",
+    "exclude-base-infinitive-and-past-after-about"
+  ],
+  "representationType": "suggestion-phrase-form",
+  "misconceptionTargets": [
+    "treat-about-like-infinitive-marker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定接在 How about 後，因此判斷依據是介系詞後的動詞形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 How about riding our bikes?；其餘三項都不符合該位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
