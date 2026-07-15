@@ -26,7 +26,10 @@ export function materializeSubjectSkillPlan(plan, authorityNodes) {
   assert(Number.isInteger(plan.expectedAuthorityNodes) && plan.expectedAuthorityNodes > 0, "expectedAuthorityNodes must be positive");
   assert(Array.isArray(plan.families) && plan.families.length > 0, "skill families are required");
 
-  const applicableNodes = authorityNodes.filter((node) => node.subjects.includes(plan.subject));
+  for (const node of authorityNodes) {
+    assert(Array.isArray(node.reviewedSubjects), `${node.id}: reviewed subject ownership is required`);
+  }
+  const applicableNodes = authorityNodes.filter((node) => node.reviewedSubjects.includes(plan.subject));
   assert.equal(applicableNodes.length, plan.expectedAuthorityNodes, `${plan.subject}: authority-node count drift`);
   const authorityByCode = new Map(applicableNodes.map((node) => [node.code, node]));
   assert.equal(authorityByCode.size, applicableNodes.length, `${plan.subject}: duplicate authority code`);
