@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_143_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'Hurry, and you will miss the bus.' Which change gives this meaning: If you do not hurry, you will miss the bus?",
+  "options": [
+    "Hurry → Wait",
+    "will → did",
+    "and → or",
+    "miss → take"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 Wait 會更換要求的行動，不是修正連接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 無法接在 will 後形成未來警告。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "or 表示不快一點就會錯過公車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "改成 take 會把負面後果改成搭上車。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-and-in-failed-warning",
+    "replace-with-or-conditional-result"
+  ],
+  "representationType": "warning-connector-proofreading",
+  "misconceptionTargets": [
+    "repair-warning-by-changing-outcome"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目指定不快一點就會錯過公車的意思。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只修正邏輯連接，不改事件內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

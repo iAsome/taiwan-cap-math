@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora closed the door after everyone left. Who acted first?",
+  "options": [
+    "Nora closed the door first.",
+    "Everyone left first.",
+    "Both acted at the same moment.",
+    "No person acted."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "closed 位於主句不代表關門先發生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "after everyone left 表示大家先離開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "after 建立前後，不是完全同時。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩個子句都明說有人行動。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "override-text-order-with-after-logic",
+    "identify-everyone-leaving-first"
+  ],
+  "representationType": "after-inverted-text-order-inference",
+  "misconceptionTargets": [
+    "equate-first-written-with-first-happened"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "要依 after 解讀，不依句子左右順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是 after 子句所指的較早事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_145_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S145"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, 'Although Mia was busy, but she answered.' Which change fixes only the joining-word error?",
+  "options": [
+    "busy → free",
+    "answered → waited",
+    "take out but",
+    "Mia → she"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 free 會移除原本阻礙。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "改成 waited 會更換主句行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "拿掉 but 後，although 已足以連接忙碌與仍回覆。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "替換姓名不能修正雙重轉折標記。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "isolate-connector-only-error",
+    "delete-redundant-but-in-note"
+  ],
+  "representationType": "minimal-although-repair",
+  "misconceptionTargets": [
+    "change-content-instead-of-connector"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求只處理連接詞錯誤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使兩個事實和時態都保持原樣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

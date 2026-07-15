@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S143",
+  "subject": "english",
+  "unitId": "ENG_R4_U21",
+  "skillId": "ENG_R4_S143",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S142"
+  ],
+  "objectives": [
+    "使用 or 表達選擇、替代方案與否則結果。",
+    "依語境區分自由選擇、二選一與警告中的條件關係。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S143_SEC_01",
+      "title": "or 提供選擇或替代方案",
+      "content": "You may take the bus or walk 提供兩種到達方式；tea or coffee 則列出飲料選項。or 不一定表示兩者永遠不能同時發生，是否只能選一個要由情境決定。"
+    },
+    {
+      "id": "ENG_R4_L_S143_SEC_02",
+      "title": "否定句中的 or 可連接兩個都不成立的項目",
+      "content": "Mia does not eat meat or fish 表示兩者都不吃。不能直接把否定句中的 or 理解成只否定其中一項；否定範圍要連同動詞與並列項目一起讀。"
+    },
+    {
+      "id": "ENG_R4_L_S143_SEC_03",
+      "title": "命令句加 or 可表示否則結果",
+      "content": "Hurry, or you will miss the bus 可理解為 If you do not hurry, you will miss the bus。前半提出必要行動，後半說明不照做可能產生的結果。"
+    },
+    {
+      "id": "ENG_R4_L_S143_SEC_04",
+      "title": "選擇與否則結果要靠句型區分",
+      "content": "Would you like rice or noodles? 是選擇；Wear a coat, or you will feel cold 是警告。不要只看到 or 就套用同一中文意思，應先判斷前半是否為命令或必要行動。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S143_EX_01",
+      "prompt": "Choose one thing to eat: Would you like bread ___ rice?",
+      "steps": [
+        "句子限定一種食物。",
+        "兩項是替代方案。",
+        "使用 or。"
+      ],
+      "answer": "or",
+      "why": "Choose one thing to eat 要對方在 bread 與 rice 中擇一，因此用 or。and 會變成詢問是否兩種都要，違反單選限制。"
+    },
+    {
+      "id": "ENG_R4_L_S143_EX_02",
+      "prompt": "If you do not hurry, you will miss the bus. Hurry, ___ you will miss the bus.",
+      "steps": [
+        "前句指定 if-not 意思。",
+        "後半是不照做的結果。",
+        "填 or。"
+      ],
+      "answer": "or",
+      "why": "第一句指定「不快一點就會錯過公車」，or 能把命令與否則結果連起來。because 只會提供理由，不能重現同一個 if-not 條件。"
+    },
+    {
+      "id": "ENG_R4_L_S143_EX_03",
+      "prompt": "Ben does not drink tea ___ coffee.",
+      "steps": [
+        "否定詞 not 管到飲料項目。",
+        "tea 與 coffee 都被否定。",
+        "使用 or。"
+      ],
+      "answer": "or",
+      "why": "在這個否定句中，or 連接兩個都不喝的飲料，意思是 Ben 不喝茶，也不喝咖啡。使用 and 容易讓否定範圍變得不清楚。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "or 永遠表示只能選一個，兩者絕不可能同時成立。",
+      "whyWrong": "有些語境只列替代方案，是否互斥由規則或情境決定。",
+      "correction": "找是否有 only one、one ticket 等限制線索。"
+    },
+    {
+      "belief": "命令句後的 or 只是再增加一個選項。",
+      "whyWrong": "Hurry, or... 的後半通常是不照做的結果。",
+      "correction": "嘗試改寫為 If you do not..., 看意思是否相同。"
+    },
+    {
+      "belief": "否定句中連接兩個項目一定要用 and。",
+      "whyWrong": "not...or... 常表示兩項都不成立。",
+      "correction": "把否定範圍連同兩個並列受詞一起解讀。"
+    },
+    {
+      "belief": "or 可以直接代替 because 表示原因。",
+      "whyWrong": "or 本身不說明前件是後件的原因。",
+      "correction": "區分替代、否則結果與明確因果。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "tea or coffee 通常提供什麼？",
+      "answer": "選擇",
+      "reason": "兩項是替代方案。"
+    },
+    {
+      "prompt": "Hurry, or you will be late 可改寫成哪種條件？",
+      "answer": "If you do not hurry, you will be late.",
+      "reason": "or 後是不照做的結果。"
+    },
+    {
+      "prompt": "does not eat meat or fish 表示吃其中一種嗎？",
+      "answer": "不是",
+      "reason": "此處兩項都在否定範圍內。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

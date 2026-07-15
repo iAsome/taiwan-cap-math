@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_145_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S145"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Although it was late, we did not stop talking. Which sentence keeps the same meaning?",
+  "options": [
+    "We did not stop talking because it was late.",
+    "We did not stop talking although it was late.",
+    "We were late, so we talked.",
+    "We did not stop talking or it was late."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 late 改成持續交談的原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項只把 although 子句移到後面，讓步不變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項改變主詞資訊，也換成因果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項將兩個都成立的事實改成選擇。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "move-although-clause-without-logic-change",
+    "match-postposed-concession-equivalent"
+  ],
+  "representationType": "although-clause-order-equivalence",
+  "misconceptionTargets": [
+    "turn-concession-into-because-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "子句位置可改，late 與 did not stop talking 的角色不能換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項維持相同的阻礙與結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

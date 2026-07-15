@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_143_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Choose one drink: Would you like water ___ juice?",
+  "options": [
+    "or",
+    "and",
+    "because",
+    "yet"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "or 提供 water 與 juice 兩種飲料選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "and 會詢問是否兩種都要，違反 one drink。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "because 不能把 juice 當成原因子句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "yet 需要轉折，兩種飲料沒有預期落差。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "recognize-beverage-alternative-question",
+    "join-water-or-juice"
+  ],
+  "representationType": "choice-question-cloze",
+  "misconceptionTargets": [
+    "turn-choice-into-double-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Choose one 要求對方在飲料間擇一。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留兩個替代方案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

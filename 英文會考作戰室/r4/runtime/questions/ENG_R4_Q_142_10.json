@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_142_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S142"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Plan: the road is narrow; buses can still use it. Which report keeps the surprise?",
+  "options": [
+    "The road is narrow because buses use it.",
+    "The road is narrow, yet buses can use it.",
+    "The road is narrow or buses can use it.",
+    "The road is narrow, so buses cannot use it."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項沒有證據說公車通行造成道路狹窄。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項保留路窄但公車仍可通行的意外結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項誤把兩項資料改成二選一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把 can 改為 cannot，直接違反計畫資料。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "map-still-to-unexpected-access",
+    "choose-yet-with-narrow-road-data"
+  ],
+  "representationType": "plan-fact-to-yet-report",
+  "misconceptionTargets": [
+    "reverse-can-to-cannot-for-easy-causality"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "still 是結果出乎一般預期的明確線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有更動 road 或 buses 的事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

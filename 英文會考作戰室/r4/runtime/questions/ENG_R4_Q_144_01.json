@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "We closed the window ___ the rain was coming in.",
+  "options": [
+    "because",
+    "so",
+    "although",
+    "or"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "because 引出關窗的原因：雨正飄進來。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "so 應由原因接到結果，放此處會顛倒方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "although 會表示即使雨進來仍關窗，沒有合理反差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "or 會把兩個事實改成替代或警告。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "ask-why-window-was-closed",
+    "select-because-before-rain-cause"
+  ],
+  "representationType": "result-because-cause-cloze",
+  "misconceptionTargets": [
+    "reverse-because-and-so-direction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "後半句回答為何要關窗。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把原因放在 because 子句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

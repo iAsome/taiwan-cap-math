@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_147_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S147"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The work looked easy, ___ it took two hours.",
+  "options": [
+    "so",
+    "but",
+    "because",
+    "when"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "so 會把耗時兩小時寫成看似容易的自然結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "but 表示外觀看似容易，實際卻很耗時。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "because 會把耗時當成看似容易的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "when 只會建立時間關係，未表達落差。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "contrast-easy-appearance-with-long-duration",
+    "select-but-among-mixed-connectors"
+  ],
+  "representationType": "mixed-connector-contrast-cloze",
+  "misconceptionTargets": [
+    "turn-unexpected-duration-into-so-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "looked easy 建立應快速完成的預期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項由 two hours 修正該預期。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

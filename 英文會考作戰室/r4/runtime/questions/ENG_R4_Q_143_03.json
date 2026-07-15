@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_143_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben drinks no tea and no coffee. Ben does not drink tea ___ coffee.",
+  "options": [
+    "but",
+    "and then",
+    "or",
+    "so"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "but 會暗示兩項有更正或轉折。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "and then 表示事件順序，不能連接飲料受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "or 讓 tea 與 coffee 都落在 does not drink 的否定範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "so 需要由原因推到結果。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "extend-negation-over-two-drink-objects",
+    "use-or-in-negative-scope"
+  ],
+  "representationType": "negative-object-or-cloze",
+  "misconceptionTargets": [
+    "use-and-with-negative-alternatives"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第一句明確表示兩種飲料都不喝。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓 not 的作用延伸到 tea 與 coffee。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

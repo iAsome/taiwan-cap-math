@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_141_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The club needs someone to wash, dry, and pack the cups. Which plan follows the list?",
+  "options": [
+    "Wash the cups, dry them, and pack them.",
+    "Wash the cups but dry them.",
+    "Dry the cups or pack all of them.",
+    "Because the cups are washed, pack."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項保留 wash、dry、pack 三個都要完成的平行動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項只含兩項，且 but 誤加轉折。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把 dry 與 pack 改成只能擇一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項遺漏 dry，也把 pack 寫成不完整命令。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "map-three-required-club-actions",
+    "select-complete-parallel-command-list"
+  ],
+  "representationType": "task-list-to-parallel-instruction",
+  "misconceptionTargets": [
+    "drop-or-alternate-required-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原清單要求三項工作，不是替代方案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項以三個祈使動詞對應全部步驟。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

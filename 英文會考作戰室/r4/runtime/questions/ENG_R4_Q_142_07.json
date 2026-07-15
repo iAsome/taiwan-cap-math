@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_142_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S142"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'Although it was cold, but we went out.' Which change fixes it without changing either fact?",
+  "options": [
+    "cold → warm",
+    "went → go",
+    "take out but",
+    "Although → Because and keep but"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 warm 會竄改天氣資料，未處理雙重連接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "went 的過去式與句意一致，不需修改。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "拿掉 but 後形成完整的 Although 子句加主句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 與 but 仍會造成不合的因果轉折混接。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "spot-although-but-redundancy",
+    "delete-only-second-contrast-marker"
+  ],
+  "representationType": "double-contrast-proofreading",
+  "misconceptionTargets": [
+    "repair-logic-by-changing-factual-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Although 已經負責建立讓步關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留寒冷和外出兩項原始事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_141_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia read the note. Mia called Ben. Keep one subject and both facts.",
+  "options": [
+    "Mia read the note but Ben.",
+    "Mia read or called the note.",
+    "Mia read the note and called Ben.",
+    "Mia called the note because Ben."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 Ben 錯接成 but 後的殘缺成分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項改成選擇，且 called the note 搭配不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項共用 Mia，並保留讀便條與打電話兩件事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把 note 當成可撥打對象，也形成不完整原因。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "merge-repeated-subject-sentences",
+    "preserve-read-note-and-call-ben"
+  ],
+  "representationType": "shared-subject-sentence-combination",
+  "misconceptionTargets": [
+    "misattach-object-while-combining"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個原句主詞相同，可省略第二次 Mia。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的兩個過去動詞各自保留原受詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

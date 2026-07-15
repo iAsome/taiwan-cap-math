@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora called me after she ___ home.",
+  "options": [
+    "called",
+    "was calling",
+    "got",
+    "gets"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "called 會變成她打電話後又打電話，少了到家事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was calling 表示進行中的通話，不能提供較早的到家點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "got home 表示先到家，之後才打電話。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "gets 是現在式，與 called 的過去敘事不一致。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "seek-prior-event-inside-after-clause",
+    "choose-got-home-before-call"
+  ],
+  "representationType": "after-clause-event-completion",
+  "misconceptionTargets": [
+    "repeat-main-action-in-time-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "after 子句應提供打電話前已發生的事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項建立 got home → called 的順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

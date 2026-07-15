@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_141_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The light came on, and the door opened. What do we know for sure?",
+  "options": [
+    "The light made the door open.",
+    "Both things happened.",
+    "Only one thing happened.",
+    "The door opened before the light came on."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "and 本身不能證明燈光使門打開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩個子句由 and 並列，因此兩件事都發生。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "and 不是二選一，不會只保留其中一事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子未提供足以確定先後的時間標記。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "limit-inference-to-additive-connector",
+    "reject-causal-and-temporal-overreading"
+  ],
+  "representationType": "and-minimum-inference",
+  "misconceptionTargets": [
+    "treat-and-as-proof-of-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "問題只取原句能保證的最少資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不加入原因或時間順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'I will call when I will arrive.' Which change fixes the time words?",
+  "options": [
+    "I → Me",
+    "call → called",
+    "will arrive → arrive",
+    "when → because"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 是正確主詞，不需改受格 Me。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "called 會把主句改成過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "when 未來時間子句使用現在式 arrive。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 會把抵達改成打電話原因，並未修正時態原則。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-extra-will-inside-when-clause",
+    "replace-with-present-arrive"
+  ],
+  "representationType": "future-time-clause-proofreading",
+  "misconceptionTargets": [
+    "change-main-tense-instead-of-subordinate-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第一個 will 已在主句標示未來。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 I will call when I arrive。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

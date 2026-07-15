@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "We stayed inside for one reason: the air was bad. We stayed inside ___ the air was bad.",
+  "options": [
+    "so",
+    "because",
+    "but",
+    "when"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "so 會把空氣不好寫成待在室內造成的結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "because 引出留在室內的原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "but 需要前後有逆預期，題目已指定原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "when 只標示時間重疊，沒有保留 for one reason。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-bad-air-as-reason-for-staying",
+    "insert-because-after-result-clause"
+  ],
+  "representationType": "action-because-condition-cloze",
+  "misconceptionTargets": [
+    "reduce-cause-to-time-coincidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第一句明確指定 the air was bad 是理由。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項維持結果在前、原因在後的架構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

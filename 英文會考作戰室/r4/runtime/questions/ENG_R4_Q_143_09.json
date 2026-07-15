@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_143_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia did not see Ben or Leo. What follows from this sentence?",
+  "options": [
+    "She did not see Ben, and she did not see Leo.",
+    "She saw only Ben.",
+    "She saw both people.",
+    "She chose who to see."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項正確說明兩個人都在否定範圍內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原句沒有保留看見 Ben 的例外。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did not see 與看見兩人直接矛盾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子報告結果，不是描述選擇過程。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "map-not-a-or-b-to-neither-nor",
+    "reject-partial-positive-reading"
+  ],
+  "representationType": "negative-or-scope-inference",
+  "misconceptionTargets": [
+    "negate-only-nearest-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "or 連接 Ben、Leo 兩個受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把相同否定範圍拆成兩個句子重述。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

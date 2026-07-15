@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_147_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S147"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia needed the book that day. The library was closed, and this made her borrow it from Ben.",
+  "options": [
+    "Mia borrowed the book, although the library was closed.",
+    "The library was closed or Mia borrowed the book.",
+    "Mia needed the book before the library was closed.",
+    "Because the library was closed, Mia borrowed the book from Ben."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項改成讓步，沒有保留關門造成借書的因果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把關門與借書改成替代事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項只寫時間順序，且遺漏向 Ben 借書的結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項以 because 引出關門原因並保留借書結果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "map-explicit-closure-caused-borrowing",
+    "select-because-report-with-source-detail"
+  ],
+  "representationType": "integrated-context-causal-report",
+  "misconceptionTargets": [
+    "downgrade-explicit-cause-to-concession"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "this made her 明確指定因果，不只是背景。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項也保留借書來源 Ben。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

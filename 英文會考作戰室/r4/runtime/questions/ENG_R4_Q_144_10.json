@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The bell rang, and the students got up. What can we NOT know for sure?",
+  "options": [
+    "The bell rang.",
+    "The bell made the students get up.",
+    "The students got up.",
+    "Both things happened."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項由第一個子句直接得知。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "and 只並列事件，不能單獨證明鈴聲造成起立。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項由第二個子句明說。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩個子句確實都被報告為發生。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "test-causal-claim-against-and-only",
+    "identify-unsupported-bell-causation"
+  ],
+  "representationType": "and-versus-cause-inference-limit",
+  "misconceptionTargets": [
+    "convert-sequence-into-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要求排除沒有明確連接詞支持的推論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項需要額外因果情境或 so、because 證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

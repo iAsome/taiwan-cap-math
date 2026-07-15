@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_145_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S145"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The water was cold. Ben still went swimming. Which line keeps both facts?",
+  "options": [
+    "Ben went swimming because the water was cold.",
+    "The water was cold, so Ben stayed out.",
+    "Although the water was cold, Ben went swimming.",
+    "The water was cold or Ben went swimming."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項捏造冷水是游泳原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把實際 went swimming 改成 stayed out。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項用 although 表示冷水阻礙下仍游泳。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把兩項已知事實改成二選一。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-anyway-to-concession",
+    "combine-cold-water-and-swimming"
+  ],
+  "representationType": "two-fact-anyway-to-although",
+  "misconceptionTargets": [
+    "replace-actual-action-for-simple-causality"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "still 明確提示結果不受阻礙改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項完整保留 cold 與 went swimming。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

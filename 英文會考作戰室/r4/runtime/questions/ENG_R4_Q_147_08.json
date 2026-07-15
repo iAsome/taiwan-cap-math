@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_147_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S147"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia checked the meeting place at 8:00. She left home at 8:10. Mia checked the meeting place ___ she left home.",
+  "options": [
+    "so",
+    "because",
+    "although",
+    "before"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "so 會把離家寫成確認地點的結果，沒有表達兩個時間的先後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "because 會表示她因離家而確認地點，方向與時間不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "although 需要讓步落差，題目只有明確順序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "before 表示 8:00 的確認早於 8:10 的離家。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "order-address-check-before-departure",
+    "choose-before-in-mixed-set"
+  ],
+  "representationType": "mixed-connector-before-cloze",
+  "misconceptionTargets": [
+    "replace-time-order-with-vague-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "8:00 早於 8:10，提供明確時間線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把兩個行動依資料順序連起來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

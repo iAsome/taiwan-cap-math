@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_143_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which line gives a choice of one drink?",
+  "options": [
+    "Tea and milk.",
+    "Tea because milk.",
+    "Tea but milk.",
+    "Tea or milk?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項同時列出兩種飲料，不是單選。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項不是飲料選擇的完整因果句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項無法用轉折表達飲料選擇。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項用 or 提供茶或牛奶兩個替代項。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "apply-one-drink-limit-to-request",
+    "choose-or-under-exclusive-rule"
+  ],
+  "representationType": "rule-constrained-choice-request",
+  "misconceptionTargets": [
+    "ignore-only-and-order-both"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目要求提供 one drink 的選擇。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一用 or 連接兩種替代飲料的問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

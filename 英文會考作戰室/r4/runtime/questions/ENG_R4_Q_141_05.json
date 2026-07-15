@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_141_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The room has two good points: it is bright ___ clean.",
+  "options": [
+    "and",
+    "or",
+    "so",
+    "although"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "and 平列 bright 與 clean 兩個優點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "or 會把兩個已知優點變成二選一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "so 不能直接連接兩個同層形容詞表示結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "although 需要接讓步子句，不接單一 clean。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-two-codomain-adjectives",
+    "add-room-properties-with-and"
+  ],
+  "representationType": "parallel-adjective-cloze",
+  "misconceptionTargets": [
+    "treat-description-list-as-alternative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "two good points 表示兩項都要保留。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項沒有添加選擇或因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

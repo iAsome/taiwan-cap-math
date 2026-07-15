@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Turn off the computer ___ you leave.",
+  "options": [
+    "before",
+    "after",
+    "when after",
+    "because of"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "before 表示先關電腦再離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "after 會要求離開後才關機，無法執行。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "when after 是重複且不合的連接形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because of 後需接名詞片語，不能直接接 you leave。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "order-shutdown-before-departure",
+    "select-before-time-clause"
+  ],
+  "representationType": "instruction-before-clause-cloze",
+  "misconceptionTargets": [
+    "follow-word-order-instead-of-action-feasibility"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "關機必須發生在仍能操作電腦時。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項建立可執行的安全順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

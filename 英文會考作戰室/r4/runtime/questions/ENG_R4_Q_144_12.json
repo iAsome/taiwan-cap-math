@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Because Nora missed the bus, she was late. Which answer shows why she was late?",
+  "options": [
+    "Being late made her miss the bus.",
+    "She had to choose between two things.",
+    "The sentence only tells us the time.",
+    "Missing the bus is why she was late."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把 because 的方向反過來。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有 or，也不是選擇題意。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "because 不只提供時間，也明確指出遲到的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項正確以 missed the bus 解釋 late。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-fronted-because-clause",
+    "identify-missed-bus-as-lateness-cause"
+  ],
+  "representationType": "fronted-cause-role-inference",
+  "misconceptionTargets": [
+    "treat-first-clause-as-result-because-of-position"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Because 子句位於句首仍然是原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 Nora 的兩個事件與因果方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

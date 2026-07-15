@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_145_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S145"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'Although the bag was old, but it was useful.' Which change fixes it without changing either fact?",
+  "options": [
+    "old → new",
+    "useful → broken",
+    "take out but",
+    "Although → Because and keep but"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 new 會竄改袋子老舊的事實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "改成 broken 會更換 useful 的資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "拿掉 but 後，although 已能完整連接老舊與仍有用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 和 but 混接後無法建立清楚因果。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "preserve-old-useful-concession",
+    "remove-but-after-although"
+  ],
+  "representationType": "although-but-proofreading",
+  "misconceptionTargets": [
+    "repair-double-marker-by-changing-facts"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤是同一讓步關係用了兩個主要標記。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只移除多餘詞，不改內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

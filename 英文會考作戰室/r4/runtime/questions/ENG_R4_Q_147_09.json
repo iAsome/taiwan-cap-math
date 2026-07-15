@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_147_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S147"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Rain stopped. The game began. The ground was still wet. Which report keeps the time order and the surprise?",
+  "options": [
+    "When the rain stopped, the game began, but the ground was still wet.",
+    "Because the ground was wet, the rain stopped or the game began.",
+    "Although the game began, so the ground was wet.",
+    "The rain stopped and the ground was dry before the game."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項以 when 連接開始時間，再用 but 保留地面仍濕。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項捏造濕地造成停雨，並把事件改成選擇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項重複 although 與 so，且因果不明。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把 still wet 改成 dry，違反資料。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "integrate-rain-stop-game-start-and-wet-field",
+    "assign-when-then-but-relations"
+  ],
+  "representationType": "multi-connector-three-fact-report",
+  "misconceptionTargets": [
+    "simplify-by-reversing-wet-to-dry"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "三項資料包含時間接續與停雨後地面仍濕的狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項使用兩種不同連接功能而不改事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

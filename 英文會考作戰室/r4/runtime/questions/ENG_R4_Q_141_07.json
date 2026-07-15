@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_141_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, 'Ben and Mia is outside.' Which change fixes it?",
+  "options": [
+    "Ben → He",
+    "Mia → she",
+    "is → are",
+    "outside → out"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 He 會刪除 Ben 的姓名且未解決兩人主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "在 Mia 前加 she 會造成不必要的重複主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Ben and Mia 是複數主詞，應將 is 改為 are。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "outside 本來即可作位置補語，不需改成 out。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-compound-subject-be-disagreement",
+    "repair-is-to-are-only"
+  ],
+  "representationType": "and-subject-agreement-proofreading",
+  "misconceptionTargets": [
+    "edit-noun-instead-of-agreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤發生在複合主詞與 be 動詞的一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留兩個姓名與原本位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

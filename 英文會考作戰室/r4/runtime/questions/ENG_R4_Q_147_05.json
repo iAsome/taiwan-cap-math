@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_147_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S147"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The road was not safe. The park closed it for that reason. Use so to join the facts.",
+  "options": [
+    "The road was not safe, so the park closed it.",
+    "Although the road was not safe, the park closed it.",
+    "The road was not safe or the park closed it.",
+    "The road was not safe before the park closed it."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項用 so 由道路不安全推到公園封閉的結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項改成讓步，沒有保留 for that reason。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把道路不安全與公園封閉誤寫成只能擇一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項只建立時間，不能保留因果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "trace-unsafe-path-to-closure",
+    "select-so-in-integrated-causal-item"
+  ],
+  "representationType": "mixed-connector-so-rewrite",
+  "misconceptionTargets": [
+    "replace-cause-with-time-before"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "for that reason 指定道路不安全是封路原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項先放原因，再用 so 接管理行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S147",
+  "subject": "english",
+  "unitId": "ENG_R4_U21",
+  "skillId": "ENG_R4_S147",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S146"
+  ],
+  "objectives": [
+    "依加入、轉折、選擇、因果、讓步與時間關係選擇連接詞。",
+    "整合句法與情境證據，不以單一關鍵字猜答案。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S147_SEC_01",
+      "title": "先辨認兩段資訊的邏輯",
+      "content": "and 加入同類資訊，but 或 yet 修正預期，or 提供選擇或否則結果。作答前先用自己的話說明兩段資訊如何相關，再檢查連接詞後的句法是否完整。"
+    },
+    {
+      "id": "ENG_R4_L_S147_SEC_02",
+      "title": "因果與讓步方向不同",
+      "content": "because 引原因，so 引結果；although 則表示阻礙存在但結果仍發生。The road was wet because it rained 與 Although it rained, we went out 使用相同雨勢資料，邏輯任務卻不同。"
+    },
+    {
+      "id": "ENG_R4_L_S147_SEC_03",
+      "title": "時間連接詞要重排事件",
+      "content": "when 連到某時刻，before、after 建立先後。連接詞可能放在句中或句首，不能把文字先出現誤當成事件先發生；必要時把事件寫成時間線。"
+    },
+    {
+      "id": "ENG_R4_L_S147_SEC_04",
+      "title": "最後同時檢查意義與形式",
+      "content": "正確選項要保留所有情境資料，也要避免 because...so、although...but 等重複結構。即使某個詞符合大意，只要造成否定範圍、平行形式或子句時態錯誤，仍不能選。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S147_EX_01",
+      "prompt": "The map was old, ___ it was still useful. (but / because)",
+      "steps": [
+        "old 帶來可能無用的預期。",
+        "useful 修正這個預期。",
+        "選 but。"
+      ],
+      "answer": "but",
+      "why": "地圖雖舊卻仍有用，前後是轉折而非原因；在兩個指定選項中應選 but。because 會把 useful 誤當成地圖老舊的原因。"
+    },
+    {
+      "id": "ENG_R4_L_S147_EX_02",
+      "prompt": "The dark sky is why we need an umbrella: Take an umbrella ___ the sky is dark.",
+      "steps": [
+        "帶傘是行動。",
+        "天色暗是指定原因。",
+        "選 because。"
+      ],
+      "answer": "because",
+      "why": "題目明說 the sky is dark 解釋帶傘理由，因此由 because 引出原因。when 只能表示時間重疊，不能保留 why 指定的因果。"
+    },
+    {
+      "id": "ENG_R4_L_S147_EX_03",
+      "prompt": "The start time is the moment everyone is ready: We will start ___ everyone is ready.",
+      "steps": [
+        "ready 是開始時刻。",
+        "主句使用 will start。",
+        "選 when。"
+      ],
+      "answer": "when",
+      "why": "題目把大家準備好的時刻定為開始時間，因此使用 when。because 只表示原因，不能精確保留 the moment 指定的時間界線。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看見兩個完整句子時，任一連接詞都能使用。",
+      "whyWrong": "連接詞會改變加入、轉折、因果或時間等邏輯。",
+      "correction": "先說明兩句的關係，再檢查選項。"
+    },
+    {
+      "belief": "出現負面字就一定選 but 或 although。",
+      "whyWrong": "負面內容也可能是原因、結果或時間背景。",
+      "correction": "判斷後項是在反轉預期，還是在說明因果。"
+    },
+    {
+      "belief": "because 和 although 都接子句，所以意思相近。",
+      "whyWrong": "because 提供原因，although 承認阻礙後呈現反差。",
+      "correction": "比較「因為 A 所以 B」與「雖然 A 仍 B」。"
+    },
+    {
+      "belief": "只要連接詞意思大致合理，就不必檢查句法。",
+      "whyWrong": "重複連接、時態或平行結構錯誤仍會使句子不成立。",
+      "correction": "完成邏輯判斷後再讀一次完整句型。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "前後同方向增加資訊時先考慮哪個字？",
+      "answer": "and",
+      "reason": "它連接同層並列資訊。"
+    },
+    {
+      "prompt": "前因後果且空格在結果前時先考慮哪個字？",
+      "answer": "so",
+      "reason": "so 引出結果。"
+    },
+    {
+      "prompt": "阻礙存在但結果仍發生時先考慮哪個字？",
+      "answer": "although",
+      "reason": "它建立讓步關係。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_142_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S142"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The team was tired, ___ it did not stop playing.",
+  "options": [
+    "so",
+    "yet",
+    "because",
+    "and then"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "so 會把不停比賽寫成疲累的自然結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "yet 凸顯隊伍疲累卻沒有停下。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "because 會把後句當成疲累原因，邏輯顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "and then 只說接續，沒有保留意外落差。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "compare-fatigue-with-continuing-action",
+    "choose-yet-for-unexpected-persistence"
+  ],
+  "representationType": "unexpected-result-yet-cloze",
+  "misconceptionTargets": [
+    "treat-fatigue-as-cause-to-continue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "did not stop playing 與 tired 形成逆預期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項使用轉折連接兩個完整子句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

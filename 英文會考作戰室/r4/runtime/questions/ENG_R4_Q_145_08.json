@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_145_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S145"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The tea was hot, but Nora drank it. Use although without changing the meaning.",
+  "options": [
+    "Nora drank it because the tea was hot.",
+    "The tea was hot, so Nora drank it.",
+    "Although Nora drank it, so the tea was hot.",
+    "Although the tea was hot, Nora drank it."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項改成熱茶造成飲用的原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項同樣把轉折改為因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項顛倒從句角色，並重複 although 與 so。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項以 hot 為阻礙，保留 Nora 仍喝茶。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "convert-but-contrast-to-although-clause",
+    "preserve-hot-tea-drinking"
+  ],
+  "representationType": "but-to-although-rewrite",
+  "misconceptionTargets": [
+    "reverse-concession-clause-roles"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原句 but 後是出乎熱茶預期的行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只改連接架構，沒有改事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

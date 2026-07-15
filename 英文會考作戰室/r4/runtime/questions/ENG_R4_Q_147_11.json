@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_147_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S147"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which line uses one joining word for each meaning?",
+  "options": [
+    "Although it was cold, but we walked.",
+    "Because it was late, so we left.",
+    "It was cold, but we walked, and we talked.",
+    "When we arrived, so the door opened."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項用 although 和 but 重複標記同一讓步。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項用 because 和 so 重複標記同一因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第三項分別以 but 表轉折、and 加入另一行動，每個關係只有一個標記。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項將 when 與 so 不當疊在同一連接位置。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "audit-one-marker-per-logical-link",
+    "distinguish-two-valid-links-from-double-marking"
+  ],
+  "representationType": "connector-stack-structure-audit",
+  "misconceptionTargets": [
+    "treat-any-two-connectors-as-redundant"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目不是只數連接詞，而要分辨它們各自負責的關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項有兩個不同邏輯連結，所以可各用一詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

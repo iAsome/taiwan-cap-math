@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_142_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S142"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The room is clean and quiet. Which pair also joins two facts with and?",
+  "options": [
+    "old but useful",
+    "hurry or be late",
+    "warm and bright",
+    "tired yet working"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "old but useful 是轉折，不是同方向加入。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "hurry or be late 表示否則後果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "warm and bright 與原句一樣平列兩個特徵。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "tired yet working 凸顯逆預期。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "abstract-additive-relation-from-model",
+    "match-warm-and-bright-pair"
+  ],
+  "representationType": "connector-relation-analogy",
+  "misconceptionTargets": [
+    "group-all-two-adjective-phrases-together"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原句的 clean、quiet 都是 room 的並列特徵。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使用相同的 and 加入方式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

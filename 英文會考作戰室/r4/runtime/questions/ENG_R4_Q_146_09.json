@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Plan: talk ends at 3:00; game begins at 3:10. Which line follows the plan?",
+  "options": [
+    "The game begins after the talk ends.",
+    "The game begins before the talk ends.",
+    "The talk begins after the game.",
+    "The game and talk must begin together."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "3:10 晚於 3:00，因此比賽在談話結束後開始。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項與時間數字的先後相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "計畫只給談話結束，且比賽較晚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩個時間相差十分鐘，不是同時。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "translate-schedule-times-into-after-relation",
+    "place-game-after-talk"
+  ],
+  "representationType": "schedule-to-after-sentence",
+  "misconceptionTargets": [
+    "reverse-clock-order-in-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先比較 3:00 與 3:10，再選時間連接詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整保留活動名稱和順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

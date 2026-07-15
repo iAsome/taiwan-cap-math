@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The shop had no water. It closed early for that reason. Use so to join the facts.",
+  "options": [
+    "The shop had no water, but it closed early.",
+    "The shop had no water or it closed early.",
+    "The shop had no water, so it closed early.",
+    "Although the shop had no water, it closed early."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "but 會把關門寫成出乎預期的轉折。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "or 會讓缺水與關門變成替代事實。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "so 依題目指定的原因將缺水連到提早關門。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "although 會暗示即使缺水仍關門，邏輯方向不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "apply-explicit-for-that-reason-cue",
+    "combine-no-water-so-early-close"
+  ],
+  "representationType": "stated-cause-to-so-sentence",
+  "misconceptionTargets": [
+    "misread-causal-result-as-concession"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "for that reason 明確宣告第一事造成第二事。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項先保留原因，再用 so 引結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

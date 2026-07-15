@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_143_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "If you do not leave now, you will be late. Keep the same meaning: Leave now, ___ you will be late.",
+  "options": [
+    "and",
+    "or",
+    "because",
+    "although"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "and 只會加入第二件事，未保留 if-not 後果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "or 建立不現在離開就會遲到的警告。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "because 只提供現在離開的理由，不能重現 if-not 條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "although 需要讓步，前半命令不是從句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-imperative-plus-negative-consequence",
+    "select-warning-or"
+  ],
+  "representationType": "imperative-or-warning-cloze",
+  "misconceptionTargets": [
+    "read-warning-as-simple-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第一句明確指定不離開的後果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把相同條件改寫成命令加 or。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

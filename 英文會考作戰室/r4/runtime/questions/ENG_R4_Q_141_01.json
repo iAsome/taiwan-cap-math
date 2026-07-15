@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_141_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora bought two things: bread ___ milk.",
+  "options": [
+    "and",
+    "but",
+    "or",
+    "because"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "and 連接兩個同為 bought 受詞的物品。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "but 需要前後有轉折，two things 沒有反差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "or 會把兩項改成替代選擇，違反 two things。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 後應接原因子句，不能只接 milk。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-two-coobjects-of-bought",
+    "join-bread-and-milk-additively"
+  ],
+  "representationType": "parallel-noun-object-cloze",
+  "misconceptionTargets": [
+    "turn-two-purchases-into-choice"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "two things 表示 bread 與 milk 都買了。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 Nora 兩樣都買的資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

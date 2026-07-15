@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "___ the bell rang, the students left the room.",
+  "options": [
+    "Because of",
+    "Although of",
+    "So",
+    "When"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Because of 後不能直接接 the bell rang 完整子句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Although of 不是標準連接形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "So 不能在此引導句首時間子句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "When 連接鈴響時與學生離開的事件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-bell-ringing-as-time-trigger",
+    "front-when-clause-before-departure"
+  ],
+  "representationType": "fronted-when-event-cloze",
+  "misconceptionTargets": [
+    "choose-cause-form-with-of-before-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "the bell rang 是主句行動發生的時間點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成完整的 When 子句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

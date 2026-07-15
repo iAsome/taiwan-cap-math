@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "We will start when the rain ___.",
+  "options": [
+    "will stop",
+    "stops",
+    "stopped",
+    "stopping"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "when 未來時間子句不再使用 will stop。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "stops 以現在式表達未來的時間界線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "stopped 會把雨停寫成已完成過去事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "stopping 缺少能完成子句的限定動詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "detect-future-time-clause-after-when",
+    "use-present-stops-not-will-stop"
+  ],
+  "representationType": "future-when-clause-form-cloze",
+  "misconceptionTargets": [
+    "repeat-will-in-time-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "主句 will start 已表達未來。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合 when 子句使用現在式的規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

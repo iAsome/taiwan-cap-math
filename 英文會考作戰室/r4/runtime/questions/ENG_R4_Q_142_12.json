@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_142_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S142"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The road was closed, yet the bus arrived on time. Which fact is the surprise?",
+  "options": [
+    "The road was there.",
+    "The road was closed.",
+    "The bus had a driver.",
+    "The bus arrived on time."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "道路存在不是 yet 後的資訊焦點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "封路是建立預期的前件，不是被凸顯的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有提到駕駛。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "封路情況下仍準時抵達，這是 yet 標出的意外結果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "locate-unexpected-clause-after-yet",
+    "identify-on-time-arrival-as-surprise"
+  ],
+  "representationType": "yet-focus-identification",
+  "misconceptionTargets": [
+    "select-obstacle-instead-of-unexpected-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "yet 前後分別是阻礙與仍發生的事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項位於轉折後且違反封路預期。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

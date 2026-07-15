@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_143_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "One call is enough: Call me tonight ___ tomorrow morning.",
+  "options": [
+    "because",
+    "but",
+    "so",
+    "or"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "because 會把 tomorrow morning 當成原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "but 需要兩個時間有預期反差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "so 不能把明早當作今晚打電話的結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "or 提供今晚與明早兩個可用時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-two-acceptable-call-times",
+    "coordinate-tonight-or-tomorrow"
+  ],
+  "representationType": "time-alternative-cloze",
+  "misconceptionTargets": [
+    "require-both-call-times-with-and"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "One call is enough 排除兩個時間都打電話。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項提供兩個可接受的替代時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

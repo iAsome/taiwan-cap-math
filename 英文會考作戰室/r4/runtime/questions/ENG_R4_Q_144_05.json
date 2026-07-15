@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia was sick, ___ she stayed home.",
+  "options": [
+    "so",
+    "because",
+    "although",
+    "or"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "so 由生病推到留在家的結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "because 會把 stayed home 當作生病原因，方向相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "although 會表示生病卻留在家，沒有預期落差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "or 會把兩個已發生的事改成替代。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-illness-to-staying-home",
+    "choose-so-after-explicit-cause"
+  ],
+  "representationType": "health-cause-result-cloze",
+  "misconceptionTargets": [
+    "treat-result-as-because-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "sick 是前因，stayed home 是合理後果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項依資料順序引出結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

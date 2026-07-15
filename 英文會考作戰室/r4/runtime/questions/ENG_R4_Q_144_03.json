@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Because the bus was full, we ___ for the next one.",
+  "options": [
+    "so waited",
+    "although waited",
+    "waited",
+    "because waited"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "so waited 會在 Because 已標示原因後再加 so。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "although waited 把讓步詞塞在主句動詞前，結構不完整。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "waited 直接完成結果主句，不重複因果標記。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because waited 會重複原因詞，也缺少新的完整子句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "complete-main-clause-after-because",
+    "avoid-second-cause-result-marker"
+  ],
+  "representationType": "because-main-clause-cloze",
+  "misconceptionTargets": [
+    "insert-so-after-fronted-because"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Because the bus was full 已經說明等待的原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓 we waited for the next one 成為完整主句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

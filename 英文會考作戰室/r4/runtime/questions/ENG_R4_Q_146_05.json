@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_146_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben washed the cup before he put it away. What happened first?",
+  "options": [
+    "Ben washed the cup.",
+    "Ben put the cup away.",
+    "Both actions ended at the same time.",
+    "The sentence does not give an order."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "before 明確表示洗杯子先發生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "收杯子位於 before 後的較晚事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子不是描述兩件事同時。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "before 已提供順序，不能說未知。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "sequence-wash-and-put-away-via-before",
+    "identify-washing-as-first-event"
+  ],
+  "representationType": "before-order-inference",
+  "misconceptionTargets": [
+    "ignore-explicit-before-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "文字中 washed 雖先出現，仍要以 before 驗證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項也是實際較早的動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

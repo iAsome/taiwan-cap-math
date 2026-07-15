@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_147_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S147"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The lights went out because the rain became strong. Use so without changing why the lights went out.",
+  "options": [
+    "The lights went out, so the rain became strong.",
+    "The rain became strong, so the lights went out.",
+    "Although the rain became strong, the lights went out.",
+    "The rain became strong or the lights went out."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項反轉為停電造成雨勢變強。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項先放 rain became strong 原因，再以 so 接 lights went out 結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項改成讓步，表示停電出乎強雨預期。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把兩個都發生的事件改成選擇。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "rewrite-because-cause-after-result-into-so-order",
+    "preserve-storm-power-loss-arrow"
+  ],
+  "representationType": "integrated-because-to-so-rewrite",
+  "misconceptionTargets": [
+    "swap-cause-and-result-with-clause-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "改寫時要交換子句位置，但不能交換因果角色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保持 strong rain → lights out 的方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

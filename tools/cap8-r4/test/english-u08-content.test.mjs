@@ -23,6 +23,7 @@ const UNITS = [
   { id: "ENG_R4_U18", firstSkill: 120 },
   { id: "ENG_R4_U19", firstSkill: 127 },
   { id: "ENG_R4_U20", firstSkill: 134 },
+  { id: "ENG_R4_U21", firstSkill: 141 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -600,6 +601,47 @@ test("U20 time, place, movement, and arrival prepositions keep their semantic bo
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U20 duplicate ${label}`);
+});
+
+test("U21 conjunction questions preserve addition, contrast, cause, concession, and time boundaries", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U21");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.match(question.get("ENG_R4_Q_141_05").stem, /two good points/);
+  assert.equal(question.get("ENG_R4_Q_141_05").options[0], "and");
+  assert.match(question.get("ENG_R4_Q_142_01").stem, /still useful/);
+  assert(!question.get("ENG_R4_Q_142_01").options.includes("and"));
+  assert.match(question.get("ENG_R4_Q_143_03").stem, /no tea and no coffee/);
+  assert.match(question.get("ENG_R4_Q_143_05").stem, /If you do not wear a coat/);
+  assert.equal(question.get("ENG_R4_Q_143_12").options[3], "Tea or milk?");
+  assert.equal(question.get("ENG_R4_Q_144_03").options[2], "waited");
+  assert.match(question.get("ENG_R4_Q_144_06").stem, /for one reason/);
+  assert.match(question.get("ENG_R4_Q_144_10").options[1], /made the students get up/);
+  assert.match(question.get("ENG_R4_Q_144_11").stem, /Use so to join the facts/);
+  assert.match(question.get("ENG_R4_Q_145_01").stem, /did not stop the game/);
+  assert.equal(question.get("ENG_R4_Q_145_03").options[2], "take out but");
+  assert.match(question.get("ENG_R4_Q_145_06").stem, /did not stop talking/);
+  assert.match(question.get("ENG_R4_Q_146_12").stem, /light is off/);
+  assert.match(question.get("ENG_R4_Q_147_04").stem, /made us move inside/);
+  assert.match(question.get("ENG_R4_Q_147_05").stem, /for that reason/);
+  assert.match(question.get("ENG_R4_Q_147_08").stem, /8:00.*8:10/);
+  assert.match(question.get("ENG_R4_Q_147_10").stem, /rain became strong/);
+  const additionLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S141");
+  assert.match(additionLecture.sections.map((value) => value.content).join(" "), /平行.*複合主詞.*不代表前者一定造成後者/);
+  const causalLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S144");
+  assert.match(causalLecture.sections.map((value) => value.content).join(" "), /because.*so.*先後發生不必然代表因果/);
+  const timeLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S146");
+  const timeLectureText = timeLecture.sections.map((value) => value.content).join(" ");
+  assert.match(timeLectureText, /when.*before.*after/);
+  assert.match(timeLectureText, /主句用 will leave.*when 子句用 stops/);
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U21 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U21 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'Because the store was closed, so we left.' Which change keeps why they left?",
+  "options": [
+    "closed → open",
+    "left → stayed",
+    "Because → And",
+    "take out so"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 open 會竄改商店狀態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "改成 stayed 會更換原本離開的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "And the store was closed, so we left 需要重新處理句首結構，並非最小修正。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "拿掉 so 後，Because 子句與 we left 主句已完整。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "retain-store-closure-and-leaving",
+    "edit-double-causal-link-minimally"
+  ],
+  "representationType": "because-so-minimal-edit",
+  "misconceptionTargets": [
+    "repair-connector-by-changing-event-outcome"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原因是商店關門，結果是大家離開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只刪重複標記，不改兩項內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

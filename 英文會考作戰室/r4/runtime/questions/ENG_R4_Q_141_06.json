@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_141_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora opened the door and ___ inside.",
+  "options": [
+    "walk",
+    "walked",
+    "walking",
+    "to walk"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "walk 原形無法和 opened 保持過去式平行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "walked 與 opened 都是 Nora 完成的過去動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "walking 會改成分詞，缺少相應結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "to walk 會變成目的用法，不是第二個並列事件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-open-then-enter-sequence",
+    "match-past-tense-after-and"
+  ],
+  "representationType": "shared-subject-verb-form-cloze",
+  "misconceptionTargets": [
+    "reset-second-verb-to-base-form"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩個動作依序發生且共用主詞 Nora。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項維持 opened and walked 的相同時態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

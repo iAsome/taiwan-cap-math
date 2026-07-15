@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The road was closed, ___ we took another way.",
+  "options": [
+    "because",
+    "so",
+    "although",
+    "when"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "because 會把改道寫成道路封閉的原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "so 由道路封閉推到改走別條路的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "although 會表示改道是逆預期，情境沒有此意。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "when 只標示時間，未保留因果。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "trace-road-closure-to-route-change",
+    "place-so-before-result-clause"
+  ],
+  "representationType": "cause-so-result-cloze",
+  "misconceptionTargets": [
+    "use-because-before-consequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "前句提供造成改道的情況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項引出實際採取的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

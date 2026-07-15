@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The road was wet because it rained. Which part tells why the road was wet?",
+  "options": [
+    "The road",
+    "was wet",
+    "The road was wet",
+    "it rained"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The road 只是受影響的事物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was wet 描述結果狀態，未包含原因事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The road was wet 是 because 前的結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "it rained 位於 because 後並解釋路面為何濕。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-cause-clause-after-because",
+    "separate-wet-result-from-rain-cause"
+  ],
+  "representationType": "causal-clause-role-identification",
+  "misconceptionTargets": [
+    "select-result-before-because-as-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "because 後的完整子句回答 why。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是造成路濕的事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

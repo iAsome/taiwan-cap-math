@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_144_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The floor was wet because a bottle fell. What can we know?",
+  "options": [
+    "The bottle fell and made the floor wet.",
+    "The wet floor made the bottle fall.",
+    "The floor and bottle are two choices.",
+    "The sentence does not tell why the floor was wet."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一項依 because 的方向連接瓶子掉落與地板濕。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把原因和結果倒置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有 or，也不是替代選擇。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 明確表示已有原因說明。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "read-explicit-bottle-floor-causality",
+    "avoid-reversing-because-direction"
+  ],
+  "representationType": "because-evidence-conclusion",
+  "misconceptionTargets": [
+    "infer-wet-floor-caused-fall"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "because 前是濕地板結果，後是瓶子掉落原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不額外推測瓶內裝了什麼。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
