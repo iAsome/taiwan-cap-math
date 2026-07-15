@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence politely asks where the station is with correct indirect order?",
+  "options": [
+    "Could you tell me where the station is?",
+    "Could you tell me where is the station?",
+    "Could you tell where does the station be?",
+    "Could where you tell me the station is?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "where the station is 是正確內層直述句語序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項錯把直接問句倒裝保留在 tell me 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does...be 不是標準位置問句結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "where 被錯放在外層主詞 you 前。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "choose-polite-location-frame",
+    "verify-station-before-is-in-embedded-clause"
+  ],
+  "representationType": "polite-indirect-order-task",
+  "misconceptionTargets": [
+    "invert-embedded-be-after-polite-frame"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "禮貌外層是 Could you tell me，內層才說明缺少的地點資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把兩層分工清楚，問號由外層 Could you 決定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

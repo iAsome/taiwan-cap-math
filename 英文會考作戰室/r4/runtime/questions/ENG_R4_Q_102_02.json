@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Who did Mia call last night? What role does who have in this question?",
+  "options": [
+    "The time of the call",
+    "The person Mia called",
+    "The person making the call",
+    "The reason for the call"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "last night 才是通話時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Mia 是動作者，who 代表她打給的人，也就是受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "做出 call 的人已明說為 Mia。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "問句沒有用 why 詢問原因。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "restore-mia-called-person-event",
+    "label-who-as-call-object"
+  ],
+  "representationType": "syntactic-role-analysis",
+  "misconceptionTargets": [
+    "assume-who-always-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把回答 Leo 填回去會得到 Mia called Leo last night。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項指出 who 位於 call 的受詞位置，不因它表示人就變成主詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

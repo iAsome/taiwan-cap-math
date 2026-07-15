@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A and B are looking at three coats. B answers, 'The blue one.' Which question did A ask?",
+  "options": [
+    "What color do you know?",
+    "Which coat do you want?",
+    "Whose coat did you wash?",
+    "Where is the blue coat made?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項不是自然詢問三件外套中選擇的問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Which coat 要求從眼前三件中選一件，the blue one 正確回應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Whose 需要所有者答案。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Where 需要製造地點，blue 無法回答。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-limited-coat-choice-from-one",
+    "pair-which-question-with-blue-selection"
+  ],
+  "representationType": "choice-dialogue-reconstruction",
+  "misconceptionTargets": [
+    "use-what-when-choice-set-is-explicit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "three coats 建立有限選擇範圍，one 代替其中一件 coat。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時解釋 which 與 The blue one，不把顏色答案誤當抽象色彩知識。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

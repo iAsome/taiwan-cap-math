@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Is Lily ready to leave?",
+  "options": [
+    "Yes, she does.",
+    "Yes, she is.",
+    "Yes, she has.",
+    "Yes, Lily ready."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does 不回應問句中的 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "she 代替 Lily，is 與原問句助動結構一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has 不是這個 be 問句使用的動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "短答缺少 be 動詞，形式不完整。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "carry-is-into-positive-short-answer",
+    "replace-lily-with-she"
+  ],
+  "representationType": "be-short-answer",
+  "misconceptionTargets": [
+    "reply-with-does-to-be-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "yes-no 短答要沿用句首 Is，而人物可改為 she。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時符合代名詞與助動詞，沒有重複完整問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

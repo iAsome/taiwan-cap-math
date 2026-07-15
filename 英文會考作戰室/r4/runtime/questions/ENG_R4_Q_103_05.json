@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ is the movie? Ninety minutes.",
+  "options": [
+    "How long",
+    "How often",
+    "How old",
+    "How far"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Ninety minutes 表示電影持續時間，How long 正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "How often 會問播放頻率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "How old 會詢問電影或人物年齡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How far 需要距離。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-ninety-minutes-as-duration",
+    "ask-movie-length-with-how-long"
+  ],
+  "representationType": "duration-cloze",
+  "misconceptionTargets": [
+    "confuse-duration-with-frequency"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "minutes 在這裡衡量電影從開始到結束的時間長度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項聚焦 duration，不把所有時間單位都當成頻率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

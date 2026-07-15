@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "How did Tina ___ the broken chair?",
+  "options": [
+    "carried",
+    "carry",
+    "carries",
+    "carrying"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "carried 會與 did 重複標示過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "carry 是 did 後所需的原形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "carries 是第三人稱現在式，時態與形式都不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "carrying 需要另一個進行式結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "remove-past-marking-after-did",
+    "complete-method-question-with-carry"
+  ],
+  "representationType": "base-form-after-did-cloze",
+  "misconceptionTargets": [
+    "double-mark-past-in-wh-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "How did 已建立過去方法問句，主要動詞不可再變化。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 carry 原形，問題才能詢問 Tina 當時如何搬椅子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

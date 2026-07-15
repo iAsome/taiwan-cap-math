@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line has the correct question order for asking a reason?",
+  "options": [
+    "Why Sam was late?",
+    "Why did Sam was late?",
+    "Why Sam late was?",
+    "Why was Sam late?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Sam was 是直述句順序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was 已是 be 過去式，不應再加 did。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "late 不能插在 Sam 與 was 之間形成這個問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Why + was + Sam + late 是正確 be 問句語序。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-past-be-reason-question",
+    "reject-do-plus-was-stack"
+  ],
+  "representationType": "specific-word-order-selection",
+  "misconceptionTargets": [
+    "keep-be-statement-order-after-why"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "late 是形容詞，原句結構為 Sam was late。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只把 was 移到主詞前，沒有加入多餘的 did。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

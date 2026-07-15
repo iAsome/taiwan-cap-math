@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ is your birthday? In May.",
+  "options": [
+    "When",
+    "Where",
+    "Who",
+    "Why"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "In May 提供月份，When 正確詢問時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Where 需要地點回答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Who 詢問人物，不會得到月份。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Why 詢問原因，通常需要理由。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-in-may-as-time",
+    "select-when-for-birthday-month"
+  ],
+  "representationType": "answer-guided-wh-cloze",
+  "misconceptionTargets": [
+    "choose-where-for-in-phrase"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "回答的介系詞 in 加月份清楚標示時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項要求的資訊類型與 In May 完全相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

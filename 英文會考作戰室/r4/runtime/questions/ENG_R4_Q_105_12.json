@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A travel card says the museum is five kilometers away and the ride takes twenty minutes. Which two answers match the questions 'How far?' and 'How long?'",
+  "options": [
+    "Twenty minutes / five kilometers",
+    "Every day / by bus",
+    "At noon / near the park",
+    "Five kilometers / twenty minutes"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項把距離與旅行時間的順序顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "頻率與交通方式都沒有回答指定兩題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "時間點與位置描述不是距離及期間數值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "five kilometers 回答 How far，twenty minutes 回答 How long。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "align-two-travel-answers-with-question-order",
+    "verify-distance-before-duration"
+  ],
+  "representationType": "dual-answer-transfer",
+  "misconceptionTargets": [
+    "swap-related-measurement-answers"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目要求依兩個問句的順序配對，不只是找出卡片中的兩個數字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項先放空間距離，再放車程長度，單位與資訊類型各自一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

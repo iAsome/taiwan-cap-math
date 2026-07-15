@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ bus goes to the museum, number 3 or number 8?",
+  "options": [
+    "What",
+    "Which",
+    "Whose",
+    "How"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "What bus 較像開放詢問，未凸顯題目限定的兩個號碼。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Which bus 適合從 3 號與 8 號中選擇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Whose bus 詢問公車屬於誰。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How bus 不能形成標準名詞問句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-two-bus-choice-set",
+    "prefer-which-over-open-what"
+  ],
+  "representationType": "limited-choice-wh-cloze",
+  "misconceptionTargets": [
+    "ignore-explicit-choice-range"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "number 3 or number 8 把答案範圍限制為兩項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項利用 which 的有限選擇功能，不是詢問所有權。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

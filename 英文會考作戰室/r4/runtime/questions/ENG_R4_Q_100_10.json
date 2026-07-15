@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You may choose tea or juice. Which question fits this choice?",
+  "options": [
+    "What do you drink every day?",
+    "Which drink would you like, tea or juice?",
+    "Whose drink is on the table?",
+    "How do you make juice?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項詢問日常飲品，範圍不一定只有兩項。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Which 搭配明列的 tea or juice，正確要求二選一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Whose 詢問飲料的所有者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How 詢問製作果汁的方法。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "convert-two-drink-menu-to-which-question",
+    "distinguish-choice-from-habit"
+  ],
+  "representationType": "menu-choice-question",
+  "misconceptionTargets": [
+    "use-what-despite-fixed-options"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "情境已把可選飲品限制為 tea 和 juice。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不僅使用 which，也把兩個候選項明確保留在問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

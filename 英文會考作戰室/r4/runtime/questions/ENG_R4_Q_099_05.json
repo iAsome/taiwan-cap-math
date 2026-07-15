@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ you finished your report yet?",
+  "options": [
+    "Have",
+    "Do",
+    "Are",
+    "Did"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Have you finished 是現在完成式問句，yet 也符合尚待確認的語境。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Do 不能接過去分詞 finished 形成這個完成式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Are finished 會把 you 誤作被完成的對象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Did 後應接 finish，不會保留 finished。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "link-yet-to-present-perfect-check",
+    "front-have-before-you"
+  ],
+  "representationType": "perfect-question-cloze",
+  "misconceptionTargets": [
+    "add-do-to-present-perfect"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "finished 在此和 yet 組成完成式，原結構是 You have finished。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把 have 放到 you 前，保留 finished 作過去分詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

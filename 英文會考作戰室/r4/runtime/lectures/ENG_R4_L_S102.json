@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S102",
+  "subject": "english",
+  "unitId": "ENG_R4_U15",
+  "skillId": "ENG_R4_S102",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S101"
+  ],
+  "objectives": [
+    "辨認 wh 詞在問句中是未知主詞還是未知受詞。",
+    "依角色決定是否需要 do、does 或 did，並維持正確動詞形式。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S102_SEC_01",
+      "title": "主詞問句直接以 who 或 what 取代主詞",
+      "content": "Who called Mia? 中不知道的是做出 call 的人，who 本身就是主詞，因此不加 did。現在簡單式常依第三人稱單數處理，例如 Who wants some water?；不能寫 Who does want some water? 來表達中性的資訊問題。"
+    },
+    {
+      "id": "ENG_R4_L_S102_SEC_02",
+      "title": "受詞問句保留原主詞並使用助動詞",
+      "content": "Who did Mia call? 中 Mia 是做出 call 的主詞，who 代表被打電話的人，也就是受詞。一般動詞的受詞問句使用 do、does 或 did，主要動詞回到原形。"
+    },
+    {
+      "id": "ENG_R4_L_S102_SEC_03",
+      "title": "用回答還原事件角色",
+      "content": "比較 Who broke the window? — Leo did. 與 What did Leo break? — The window.。前者答案填進動作者位置，後者答案填進動作承受者位置。先還原成 Leo broke the window，就能看出疑問詞取代哪一格。"
+    },
+    {
+      "id": "ENG_R4_L_S102_SEC_04",
+      "title": "主詞問句不等於所有 who 問句",
+      "content": "who 只是表示人，不保證它擔任主詞。判斷關鍵是問句中是否另有明確主詞：Who did Amy invite? 已有 Amy，所以 who 是受詞；Who invited Amy? 沒有其他動作者，who 才是主詞。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S102_EX_01",
+      "prompt": "___ opened the door? Ben did. (Who / Who did / Whom did)",
+      "steps": [
+        "回答 Ben 是開門的人。",
+        "未知部分是動作主詞。",
+        "直接以 Who 取代主詞。"
+      ],
+      "answer": "Who",
+      "why": "Ben 填回去會得到 Ben opened the door，表示答案是動作者。Who 已擔任主詞，不需要再加 did；Who did 會讓句子缺少 did 後的另一個主詞。"
+    },
+    {
+      "id": "ENG_R4_L_S102_EX_02",
+      "prompt": "Who did Grace visit? She visited her aunt. What is who asking for?",
+      "steps": [
+        "找出明說的主詞 Grace。",
+        "visit 後缺少被拜訪的人。",
+        "判定 who 代表受詞。"
+      ],
+      "answer": "The person Grace visited.",
+      "why": "Grace 是執行 visit 的人，回答 her aunt 放在 visit 後，因此 who 詢問被拜訪的受詞。did 也顯示這是一般動詞的過去受詞問句。"
+    },
+    {
+      "id": "ENG_R4_L_S102_EX_03",
+      "prompt": "___ made this cake? Nora did. (Who / Who did / What did)",
+      "steps": [
+        "Nora 是製作蛋糕的人。",
+        "疑問詞要代替製作者。",
+        "主詞問句使用 Who made。"
+      ],
+      "answer": "Who",
+      "why": "回答 Nora did 說明 Nora 是 made 的主詞，所以寫 Who made this cake?。What did 會詢問 Nora 做了什麼，並非找製作者。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有過去式 wh 問句都一定要加入 did。",
+      "whyWrong": "疑問詞若本身是主詞，可直接搭配過去式動詞。",
+      "correction": "使用 Who called you?，不用 Who did call you?。"
+    },
+    {
+      "belief": "看到 who 就能判定它是主詞。",
+      "whyWrong": "who 也可代表動詞後的人類受詞。",
+      "correction": "檢查句中是否另有 Amy、they 等明確動作者。"
+    },
+    {
+      "belief": "Who did Mia called? 可以保留原來的過去式。",
+      "whyWrong": "did 已承擔過去時態，called 必須還原。",
+      "correction": "改成 Who did Mia call?。"
+    },
+    {
+      "belief": "主詞問句的動詞一律使用原形。",
+      "whyWrong": "現在簡單式的 who 主詞通常視為第三人稱單數。",
+      "correction": "寫 Who wants tea?，不是 Who want tea?。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Who found the ring 中 who 是主詞還是受詞？",
+      "answer": "主詞",
+      "reason": "句中沒有其他動作者，who 做出 found。"
+    },
+    {
+      "prompt": "Who did Sam help 中 Sam 擔任什麼角色？",
+      "answer": "主詞",
+      "reason": "Sam 是執行 help 的人，who 是受詞。"
+    },
+    {
+      "prompt": "Who does needs a ticket 應刪除哪個字？",
+      "answer": "does",
+      "reason": "who 本身是 needs 的主詞，不需 do-support。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Why ___ the children laughing?",
+  "options": [
+    "do",
+    "are",
+    "does",
+    "did"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "do laughing 缺少進行式所需的 be 動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "are 放在主詞前並與 laughing 組成現在進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does 不配合複數 children，也不能接 laughing。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did 後應接原形 laugh，而非 laughing。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "recognize-laughing-progressive-chain",
+    "invert-are-after-why"
+  ],
+  "representationType": "progressive-wh-cloze",
+  "misconceptionTargets": [
+    "add-do-to-progressive-wh-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "laughing 顯示句子需要 are，why 只負責詢問原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項建立 Why are the children laughing?，沒有混入 do-support。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

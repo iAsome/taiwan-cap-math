@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S100",
+  "subject": "english",
+  "unitId": "ENG_R4_U15",
+  "skillId": "ENG_R4_S100",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S099"
+  ],
+  "objectives": [
+    "依回答所提供的人、事物、地點、時間或原因選擇 wh 疑問詞。",
+    "區分 which、what、whose 與 who 所要求的資訊範圍。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S100_SEC_01",
+      "title": "從回答內容反推問題缺少哪一類資訊",
+      "content": "選 wh 疑問詞時，不要只背中文對照，要觀察預期回答。人用 who，事物或動作用 what，地點用 where，時間用 when，原因用 why。例如回答 At the station. 時，問句需要 where，而不是只因句中有時間字就選 when。"
+    },
+    {
+      "id": "ENG_R4_L_S100_SEC_02",
+      "title": "which 表示從明確範圍中選擇",
+      "content": "what 可詢問較開放的事物，which 則常有已知選項或有限範圍。Which bus goes downtown, the blue one or the green one? 已列出兩班車；若只是問 What do you need?，答案範圍並未先限定。"
+    },
+    {
+      "id": "ENG_R4_L_S100_SEC_03",
+      "title": "who 問人，whose 問所有者",
+      "content": "Who called you? 要找做出 call 的人；Whose umbrella is this? 要找物品屬於誰。回答 Amy. 可能回應 who，回答 Amy's. 則表達所有權，較適合 whose。判斷時要保留回答中的所有格線索。"
+    },
+    {
+      "id": "ENG_R4_L_S100_SEC_04",
+      "title": "how 詢問方式，why 詢問原因",
+      "content": "How did you get there? 可回答 By bus.；Why did you leave? 可回答 Because I felt sick.。方法與原因都可能解釋一件事如何發生，但 because 明確引出原因，交通方式或操作步驟則回應 how。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S100_EX_01",
+      "prompt": "___ did Nora put the keys? On the desk. (Where / When / Why)",
+      "steps": [
+        "讀回答 On the desk。",
+        "desk 提供位置資訊。",
+        "選擇詢問地點的 Where。"
+      ],
+      "answer": "Where",
+      "why": "On the desk 回答鑰匙所在的位置，所以問句要用 Where。When 需要時間答案，Why 則應得到原因，兩者都無法對應桌上的位置。"
+    },
+    {
+      "id": "ENG_R4_L_S100_EX_02",
+      "prompt": "___ jacket is this? It is Sam's. (Who / Whose / Which)",
+      "steps": [
+        "回答含 Sam's 所有格。",
+        "問題要找外套的所有者。",
+        "使用 Whose 修飾 jacket。"
+      ],
+      "answer": "Whose",
+      "why": "Sam's 表示外套屬於 Sam，因此 Whose jacket 正確詢問所有者。Who 不能直接修飾 jacket，Which 則是在有限外套中選一件。"
+    },
+    {
+      "id": "ENG_R4_L_S100_EX_03",
+      "prompt": "___ train should we take, the first one or the second one? (What / Which / Whose)",
+      "steps": [
+        "句尾列出兩個選項。",
+        "答案只能從有限範圍選擇。",
+        "使用 Which 指定其中一班。"
+      ],
+      "answer": "Which",
+      "why": "the first one or the second one 已限定兩班火車，所以 Which train 最精確。What train 較開放，Whose train 則詢問所有權。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要答案中出現人名，就一定選 who。",
+      "whyWrong": "人名加 's 可能是在回答物品屬於誰。",
+      "correction": "先判斷要找人物身分還是所有者，再選 who 或 whose。"
+    },
+    {
+      "belief": "what 和 which 可以在所有問句中任意互換。",
+      "whyWrong": "which 通常對應題目已限定的選項或範圍。",
+      "correction": "看到 the red one or the blue one 等有限選擇時，優先考慮 which。"
+    },
+    {
+      "belief": "By train 是在說原因，所以應用 why 提問。",
+      "whyWrong": "By train 說明到達的方式，不是採取行動的理由。",
+      "correction": "以 How did you get there? 詢問交通方式。"
+    },
+    {
+      "belief": "回答 yesterday 時，可以用 where，因為事情發生在某處。",
+      "whyWrong": "yesterday 本身提供的是時間，不是位置。",
+      "correction": "依回答的實際資訊類型選 When。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "回答 Because it was raining 時，疑問詞應選哪一個？",
+      "answer": "why",
+      "reason": "because 引出採取行動的原因。"
+    },
+    {
+      "prompt": "回答 My brother 時，一般是在回答 who 還是 whose？",
+      "answer": "who",
+      "reason": "沒有所有格標記時，My brother 表示人物身分。"
+    },
+    {
+      "prompt": "問題列出 Monday or Tuesday 時，較適合 what 還是 which？",
+      "answer": "which",
+      "reason": "可選範圍已限定為兩天。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

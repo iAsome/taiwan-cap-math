@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "What time ___ the store open its doors on Saturdays?",
+  "options": [
+    "is",
+    "did",
+    "has",
+    "does"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is 不能帶 open its doors 這個一般動詞片語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 會把週六固定營業改成一次過去事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has open 不是完成式正確形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "does 配合單數 store，open 保持原形，詢問週六固定時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "read-open-its-doors-as-transitive-action",
+    "insert-does-before-store"
+  ],
+  "representationType": "schedule-wh-cloze",
+  "misconceptionTargets": [
+    "confuse-open-action-with-open-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "open its doors 明確把 open 當作帶受詞的動作，而 on Saturdays 表示規律。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 What time does the store open its doors，不重複第三人稱變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

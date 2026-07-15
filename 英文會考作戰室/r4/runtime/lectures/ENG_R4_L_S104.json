@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S104",
+  "subject": "english",
+  "unitId": "ENG_R4_U15",
+  "skillId": "ENG_R4_S104",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S103"
+  ],
+  "objectives": [
+    "在間接問句中使用直述句語序，避免再次倒裝。",
+    "以 if 或 whether 嵌入 yes-no 問題，並依主句決定標點。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S104_SEC_01",
+      "title": "間接問句的內層改回直述句語序",
+      "content": "直接問句 Where is the station? 放進 Could you tell me... 後，寫成 Could you tell me where the station is?。wh 詞保留，但內層使用主詞 the station 加 is，不能再寫 where is the station。"
+    },
+    {
+      "id": "ENG_R4_L_S104_SEC_02",
+      "title": "一般動詞內層不保留問句用的 do",
+      "content": "直接問句 What time does the store close? 變成 Do you know what time the store closes?。內層已有主詞 the store，動詞依直述句規則用 closes；does 只服務直接問句倒裝，嵌入後要移除。"
+    },
+    {
+      "id": "ENG_R4_L_S104_SEC_03",
+      "title": "yes-no 內容使用 if 或 whether 連接",
+      "content": "沒有 wh 詞的 yes-no 問題可用 if 或 whether，例如 Do you know if the bus has left?。內層仍是 the bus has left 的直述句順序，不能寫 if has the bus left。"
+    },
+    {
+      "id": "ENG_R4_L_S104_SEC_04",
+      "title": "句尾標點由整個主句功能決定",
+      "content": "Could you tell me where Mia is? 整體是問題，所以用問號；I want to know where Mia is. 是陳述，所以用句點。不要因內層原本是問句就一律加問號，也不要在內層再加入第二個問號。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S104_EX_01",
+      "prompt": "Could you tell me where ___? (the bank is / is the bank / does the bank be)",
+      "steps": [
+        "where 引出內層問題。",
+        "間接問句使用直述句語序。",
+        "排列成 the bank is。"
+      ],
+      "answer": "the bank is",
+      "why": "where 後的內層要用主詞 the bank 加 be 動詞 is。is the bank 是直接問句倒裝，does the bank be 又錯誤加入 do。"
+    },
+    {
+      "id": "ENG_R4_L_S104_EX_02",
+      "prompt": "Do you know what time the movie ___? (starts / does start / start)",
+      "steps": [
+        "內層主詞是 the movie。",
+        "間接問句不保留 does。",
+        "第三人稱單數動詞使用 starts。"
+      ],
+      "answer": "starts",
+      "why": "what time 後是 the movie starts 的直述句語序，starts 與單數主詞一致。does start 是直接問句的排列，單獨 start 則少了第三人稱變化。"
+    },
+    {
+      "id": "ENG_R4_L_S104_EX_03",
+      "prompt": "I want to know ___ the library is open today. (if / where / what)",
+      "steps": [
+        "內層答案應是 yes 或 no。",
+        "沒有缺少地點或事物。",
+        "使用 if 引出 yes-no 內容。"
+      ],
+      "answer": "if",
+      "why": "說話者想知道圖書館今天是否開放，內層是 yes-no 問題，所以用 if。where 會要求地點，what 則缺少可被詢問的事物。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "間接問句仍要保留 is the station 的倒裝。",
+      "whyWrong": "wh 詞後的內層子句採直述句語序。",
+      "correction": "寫 where the station is。"
+    },
+    {
+      "belief": "What time does the store close 嵌入後仍保留 does。",
+      "whyWrong": "does 是直接問句的助動詞，內層恢復一般主詞動詞排列。",
+      "correction": "使用 what time the store closes。"
+    },
+    {
+      "belief": "任何間接問句都可以用 if 代替 wh 詞。",
+      "whyWrong": "if 或 whether 只引出 yes-no 內容，不能取代地點、時間等缺少資訊。",
+      "correction": "依內層答案選 where、when 等 wh 詞。"
+    },
+    {
+      "belief": "內層原本是問句，整句一定以問號結尾。",
+      "whyWrong": "標點取決於外層主句是提問還是陳述。",
+      "correction": "I want to know where he is. 使用句點。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Could you tell me where is the bus 要如何調整內層？",
+      "answer": "where the bus is",
+      "reason": "間接問句使用主詞在前的直述句語序。"
+    },
+    {
+      "prompt": "Do you know ___ Sam is ready 應填哪個連接詞？",
+      "answer": "if 或 whether",
+      "reason": "ready 與否可用 yes-no 回答。"
+    },
+    {
+      "prompt": "I want to know when the class ends 句尾應用問號嗎？",
+      "answer": "不用",
+      "reason": "外層 I want to know 是陳述句。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

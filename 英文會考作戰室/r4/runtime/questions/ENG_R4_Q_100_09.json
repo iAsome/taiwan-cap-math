@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The meeting begins at 7:30. Which question asks for the missing information in the answer 'At 7:30'?",
+  "options": [
+    "What time does the meeting begin?",
+    "Where does the meeting begin?",
+    "Why does the meeting begin?",
+    "Who begins the meeting?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "What time 明確要求 7:30 這個時刻。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Where 需要會議地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Why 需要開始會議的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Who 需要主持或啟動會議的人。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "match-clock-time-answer-to-question",
+    "retain-meeting-begin-event"
+  ],
+  "representationType": "question-answer-type-match",
+  "misconceptionTargets": [
+    "mistake-at-time-for-location"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "At 7:30 是精確鐘點，並不提供場地或人物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項鎖定時刻，同時保留 begin 的事件內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Change 'When does the class begin?' into a question after 'Do you know'. Which ending is correct?",
+  "options": [
+    "when does the class begin?",
+    "when the class begins?",
+    "when do the class begins?",
+    "when the class begin?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does the class begin 保留直接問句倒裝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "when the class begins 採直述句語序，begins 配合單數 class。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "do 不配合 class，且 begins 又重複變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "begin 少了第三人稱單數變化。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "convert-direct-class-time-question",
+    "transfer-does-marking-back-to-begins"
+  ],
+  "representationType": "direct-to-indirect-conversion",
+  "misconceptionTargets": [
+    "delete-does-without-restoring-s"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "外層完成後會是 Do you know when the class begins?。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項移除 does，將人稱資訊轉回 begins，沒有改變開始時間的意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

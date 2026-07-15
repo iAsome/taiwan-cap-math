@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ did you move the heavy box? With a small truck.",
+  "options": [
+    "Why",
+    "Where",
+    "How",
+    "When"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Why 會要求移動箱子的原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Where 會要求搬到的地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "With a small truck 說明方法，應由 How 提問。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "When 需要日期或時刻。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-truck-phrase-as-method",
+    "select-how-for-moving-means"
+  ],
+  "representationType": "method-wh-cloze",
+  "misconceptionTargets": [
+    "treat-with-phrase-as-place"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "with a small truck 描述完成搬運所使用的方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項問 how，不把工具誤讀成原因或位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ Mia ready for the test?",
+  "options": [
+    "Is",
+    "Does",
+    "Do",
+    "Has"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Mia ready 需要 be 動詞，Is 放到主詞前形成問句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 不能直接接形容詞 ready。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Do 與第三人稱單數 Mia 不合，也缺少一般動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Has 若不是完成式或 have 結構，不能單獨連接 ready。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-be-in-ready-predicate",
+    "invert-is-before-mia"
+  ],
+  "representationType": "be-question-cloze",
+  "misconceptionTargets": [
+    "add-do-before-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "ready 是形容詞，原直述句應為 Mia is ready。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只把 is 移到 Mia 前，沒有加入多餘助動詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

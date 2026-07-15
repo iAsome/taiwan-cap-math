@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I want a yes-or-no answer. I want to know ___ the store is open on Sunday.",
+  "options": [
+    "what",
+    "where",
+    "if",
+    "why is"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "what 無法連接完整的 the store is open 來表示是否。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "where 會詢問商店位置，但題目關心開放與否。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "if 引出可用 yes 或 no 回答的內層內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "why is 既改成原因問題，也保留錯誤倒裝。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-store-opening-as-yes-no-content",
+    "embed-with-if-not-wh-word"
+  ],
+  "representationType": "indirect-if-cloze",
+  "misconceptionTargets": [
+    "use-where-for-open-status"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "open on Sunday 是一個真偽待確認的完整命題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項用 if 表達 whether the store is open，沒有虛構地點或原因缺口。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

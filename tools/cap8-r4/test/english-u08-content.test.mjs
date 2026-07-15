@@ -17,6 +17,7 @@ const UNITS = [
   { id: "ENG_R4_U12", firstSkill: 78 },
   { id: "ENG_R4_U13", firstSkill: 85 },
   { id: "ENG_R4_U14", firstSkill: 92 },
+  { id: "ENG_R4_U15", firstSkill: 99 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -347,6 +348,51 @@ test("U14 imperatives, requests, responses, offers, and suggestions remain conte
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U14 duplicate ${label}`);
+});
+
+test("U15 direct, wh, subject-object, how, and indirect questions keep their information roles", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U15");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_099_02").options[question.get("ENG_R4_Q_099_02").answerIndex], "Does");
+  assert.equal(question.get("ENG_R4_Q_099_05").options[question.get("ENG_R4_Q_099_05").answerIndex], "Have");
+  assert.equal(question.get("ENG_R4_Q_099_12").options[3], "Were the lights on at midnight?");
+  assert.match(question.get("ENG_R4_Q_099_04").stem, /open or closed/);
+  assert.match(question.get("ENG_R4_Q_099_08").stem, /same plan every week/);
+  assert.equal(question.get("ENG_R4_Q_100_06").options[1], "Which");
+  assert.match(question.get("ENG_R4_Q_100_12").options[3], /^When/);
+  assert.equal(question.get("ENG_R4_Q_101_07").options[2], "are");
+  assert.equal(question.get("ENG_R4_Q_101_10").options[1], "lives → live");
+  assert.match(question.get("ENG_R4_Q_101_04").stem, /open its doors/);
+  assert.equal(question.get("ENG_R4_Q_102_01").options[0], "Who");
+  assert.match(question.get("ENG_R4_Q_102_05").options[0], /who invited Amy.*who Amy invited/i);
+  assert.doesNotMatch(question.get("ENG_R4_Q_102_06").options.join(" "), /Who did find the key/);
+  assert.match(question.get("ENG_R4_Q_103_09").options[0], /How soon/);
+  assert.equal(question.get("ENG_R4_Q_103_12").options[3], "How far / How long");
+  assert.equal(question.get("ENG_R4_Q_104_04").options[3], "I want to know where Mia is.");
+  assert.equal(question.get("ENG_R4_Q_104_06").options[1], "when the class begins?");
+  assert.match(question.get("ENG_R4_Q_104_10").options[1], /who is the subject/);
+  assert.match(question.get("ENG_R4_Q_104_03").stem, /yes-or-no answer/);
+  assert.match(question.get("ENG_R4_Q_104_10").stem, /only asks for information/);
+  assert.equal(question.get("ENG_R4_Q_105_11").options[2], "B wants to catch the last bus.");
+  const yesNoLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S099");
+  assert.match(yesNoLecture.sections.map((value) => value.content).join(" "), /Does Leo play tennis/);
+  assert.match(yesNoLecture.sections.map((value) => value.content).join(" "), /Have you finished/);
+  const roleLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S102");
+  assert.match(roleLecture.sections.map((value) => value.content).join(" "), /Who called Mia/);
+  assert.match(roleLecture.sections.map((value) => value.content).join(" "), /Who did Mia call/);
+  const howLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S103");
+  assert.match(howLecture.sections.map((value) => value.content).join(" "), /how often/);
+  assert.match(howLecture.sections.map((value) => value.content).join(" "), /how far/);
+  const indirectLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S104");
+  assert.match(indirectLecture.sections.map((value) => value.content).join(" "), /where the station is/);
+  assert.match(indirectLecture.sections.map((value) => value.content).join(" "), /if.*whether/);
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U15 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

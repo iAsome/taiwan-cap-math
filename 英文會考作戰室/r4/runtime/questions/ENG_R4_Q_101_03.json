@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "When ___ we safely leave the house after the storm?",
+  "options": [
+    "are",
+    "does",
+    "can",
+    "has"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "are 不能直接帶原形 leave。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 不配合主詞 we，也會留下錯誤形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "can 放在 we 前並接 leave 原形，正確詢問何時具備安全離開的條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "has 不配合 we，也缺少完成式分詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "connect-post-storm-safety-to-possibility",
+    "order-when-can-we-safely-leave"
+  ],
+  "representationType": "modal-wh-cloze",
+  "misconceptionTargets": [
+    "place-modal-after-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "safely after the storm 把問題焦點放在何時可以離開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項採 When can we safely leave，情態助動詞與主詞位置正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

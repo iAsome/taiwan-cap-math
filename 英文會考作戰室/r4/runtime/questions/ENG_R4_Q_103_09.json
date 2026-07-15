@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The next bus will come in ten minutes. Which question fits the answer 'In ten minutes'?",
+  "options": [
+    "How soon will the next bus come?",
+    "How long is the next bus?",
+    "How often does the bus come?",
+    "How far will the bus go?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "In ten minutes 表示從現在起還要等多久，How soon 正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項會詢問公車本身長度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項需要班次頻率，如 every hour。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項需要行駛距離。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "read-in-ten-minutes-as-future-wait",
+    "match-waiting-answer-to-how-soon"
+  ],
+  "representationType": "future-wait-question-match",
+  "misconceptionTargets": [
+    "confuse-in-duration-with-event-length"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "in 加一段時間常表示未來事件距現在的等待時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 next bus 的未來到站事件，沒有誤問車體長度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

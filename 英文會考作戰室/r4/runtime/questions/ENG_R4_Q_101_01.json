@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Where ___ Ben live?",
+  "options": [
+    "does",
+    "do",
+    "is",
+    "has"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "does 配合 Ben，後面的 live 保持原形。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do 不配合第三人稱單數 Ben。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 不能直接接原形 live 形成此問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "has 需要不同的完成式或所有結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-live-as-simple-present-verb",
+    "place-does-between-where-and-ben"
+  ],
+  "representationType": "wh-auxiliary-cloze",
+  "misconceptionTargets": [
+    "retain-statement-order-after-where"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "where 已放句首，剩下的是一般動詞現在式問句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項形成 Where does Ben live?，人稱與語序都正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ did Jack go after class? To the library.",
+  "options": [
+    "When",
+    "Where",
+    "Why",
+    "Who"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "When 會要求下課後的更精確時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "To the library 說明目的地，應由 Where 提問。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Why 需要前往圖書館的理由。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Who 會詢問同行或相關人物。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "read-to-library-as-destination",
+    "choose-where-despite-after-class-time-clue"
+  ],
+  "representationType": "destination-wh-cloze",
+  "misconceptionTargets": [
+    "follow-nearby-time-clue-instead-of-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "to the library 的核心資訊是 Jack 去了哪裡。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能產生 Where did Jack go after class? 的完整問答。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

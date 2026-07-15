@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ notebook is on the desk? It is Grace's.",
+  "options": [
+    "Whose",
+    "Who",
+    "What",
+    "Where"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Grace's 是所有格，Whose notebook 正確詢問所有者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Who 不能直接修飾 notebook 形成這個問句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "What 會詢問物品種類，不會得到 Grace's。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Where 會詢問筆記本位置，而位置已在題目中。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-grace-possessive-answer",
+    "use-whose-before-notebook"
+  ],
+  "representationType": "ownership-wh-cloze",
+  "misconceptionTargets": [
+    "select-who-before-owned-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "回答保留 apostrophe-s，明確表示物品屬於 Grace。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項直接修飾 notebook，問題焦點不是桌面位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

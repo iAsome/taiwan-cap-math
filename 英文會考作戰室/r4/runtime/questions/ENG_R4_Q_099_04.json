@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ the windows open or closed now?",
+  "options": [
+    "Do",
+    "Does",
+    "Did",
+    "Are"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Do 不能直接連接 open or closed 這組狀態補語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 不配合複數 windows，也沒有可帶出的主要動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Did 會加入不需要的過去時間，且仍缺少一般動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Are the windows open or closed 正確詢問窗戶目前狀態。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-open-or-closed-state-pair",
+    "invert-are-for-window-state"
+  ],
+  "representationType": "state-question-cloze",
+  "misconceptionTargets": [
+    "treat-predicate-adjective-as-action-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "open or closed 明確是一組狀態選擇，直述句會使用 The windows are...。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把 are 移到複數主詞前，語序與時間都完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

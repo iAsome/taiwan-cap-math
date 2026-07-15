@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A message must ask whether the gym will open tomorrow. Which line is correct?",
+  "options": [
+    "Please tell me will the gym open tomorrow.",
+    "Please tell me does the gym open tomorrow.",
+    "Please tell me whether will the gym open tomorrow.",
+    "Please tell me whether the gym will open tomorrow."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少 if 或 whether，且 will 仍在主詞前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 與未來 tomorrow 的內容不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "whether 後不應把 will 倒裝到 gym 前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "whether 引出 yes-no 內容，the gym will 採直述句順序。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compose-written-whether-request-about-gym",
+    "retain-future-modal-after-embedded-subject"
+  ],
+  "representationType": "message-writing-transfer",
+  "misconceptionTargets": [
+    "invert-will-after-whether"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "訊息是要求對方告知開放與否，內層不是缺少地點或時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 tomorrow 與 will，同時使用正確間接排列。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

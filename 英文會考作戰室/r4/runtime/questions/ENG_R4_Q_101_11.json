@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The notice says Sam was at the station because his bike broke. Which question asks only for the reason?",
+  "options": [
+    "Where Sam was?",
+    "Did Sam at the station?",
+    "Why was Sam at the station?",
+    "Why Sam did at the station?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項詢問地點且保留錯誤直述句順序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 不能直接接 at the station，也沒有詢問原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Why was Sam at the station 語序正確，答案可由腳踏車壞掉提供。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Sam did 的排列與 at 前缺少主要動詞都不正確。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "target-because-clause-with-why",
+    "construct-be-question-from-station-state"
+  ],
+  "representationType": "notice-based-reason-question",
+  "misconceptionTargets": [
+    "ask-where-despite-known-location"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "because his bike broke 是可回答 why 的原因證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只詢問 Sam 在車站的理由，不重問題目已明說的地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

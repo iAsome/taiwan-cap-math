@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ Sam buy the tickets last night?",
+  "options": [
+    "Has",
+    "Did",
+    "Does",
+    "Is"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Has 後若表完成式應接 bought，不是 buy。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Did 配合 last night，並讓 buy 使用原形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Does 表示現在習慣，和昨晚不一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Is 無法直接帶原形 buy。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "reconstruct-sam-bought-tickets",
+    "convert-past-statement-with-did"
+  ],
+  "representationType": "ticket-question-cloze",
+  "misconceptionTargets": [
+    "retain-bought-after-did"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "last night 使事件成為過去簡單式，原句可還原為 Sam bought the tickets。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項將過去標在 Did，buy 因而不再變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

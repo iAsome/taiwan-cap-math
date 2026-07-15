@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Who ___ the lights off before leaving?",
+  "options": [
+    "did turns",
+    "turn",
+    "turned",
+    "did turned"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "did 後不能使用第三人稱形式 turns。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "turn 沒有表達 before leaving 所指的已完成過去動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "turned 直接作主詞問句的過去動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did turned 同時標示兩次過去。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "treat-who-as-agent-of-turning-off",
+    "retain-past-turned-in-subject-question"
+  ],
+  "representationType": "past-agent-cloze",
+  "misconceptionTargets": [
+    "force-did-into-past-subject-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "who 是關燈的人，因此句中不另設一般動詞助動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 turned 表達過去，能自然詢問離開前是誰關燈。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

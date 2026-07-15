@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S105",
+  "subject": "english",
+  "unitId": "ENG_R4_U15",
+  "skillId": "ENG_R4_S105",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S104"
+  ],
+  "objectives": [
+    "依疑問詞、助動詞、時態與代名詞選擇合理回答。",
+    "從回答反推原問句，並避免加入對話未提供的資訊。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S105_SEC_01",
+      "title": "先確認問題要求的資訊種類",
+      "content": "Where 要地點，When 要時間，Why 要原因，How often 要頻率。回答文法正確但資訊類型不合，仍不是合理配對。例如 Where is Leo? 應回答 In the kitchen.，不能只回答 At six.。"
+    },
+    {
+      "id": "ENG_R4_L_S105_SEC_02",
+      "title": "yes-no 短答要回應原助動詞",
+      "content": "Is she ready? 可答 Yes, she is.；Does he walk to school? 可答 No, he doesn't.；Have they arrived? 可答 Yes, they have.。短答中的代名詞與助動詞都要和問句對應。"
+    },
+    {
+      "id": "ENG_R4_L_S105_SEC_03",
+      "title": "時態與時間線索必須一致",
+      "content": "When did you finish? 需要過去時間，如 Last night.；What are you doing? 要回答目前正在進行的動作。不要用 tomorrow 回答明確的過去問句，也不要用一般習慣取代眼前動作。"
+    },
+    {
+      "id": "ENG_R4_L_S105_SEC_04",
+      "title": "合理推論不能超過回答證據",
+      "content": "若 A 問 Why are you leaving?，B 答 Because the last bus comes at ten.，可推得 B 為了趕末班車而離開；卻不能因此斷定 B 討厭活動。會考對話題常要求配對功能，也同時考查是否守住文本界線。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S105_EX_01",
+      "prompt": "Where did Amy find the card? (Under the desk. / Yesterday. / Because she looked.)",
+      "steps": [
+        "where 詢問位置。",
+        "找出提供地點的選項。",
+        "確認 under the desk 能接續 find。"
+      ],
+      "answer": "Under the desk.",
+      "why": "Under the desk 明確指出卡片所在位置，能回答 Where。Yesterday 回答時間，Because she looked 則提供不完整的原因，資訊類型都不合。"
+    },
+    {
+      "id": "ENG_R4_L_S105_EX_02",
+      "prompt": "Does Ben need a ticket? (Yes, he does. / Yes, he is. / Yes, he needs.)",
+      "steps": [
+        "問句助動詞是 does。",
+        "主詞 Ben 在短答中換成 he。",
+        "肯定短答以 does 收尾。"
+      ],
+      "answer": "Yes, he does.",
+      "why": "Does 開頭的 yes-no 問句以 does 回應，Ben 改用 he，因此 Yes, he does 正確。he is 換錯助動詞，he needs 不是標準短答。"
+    },
+    {
+      "id": "ENG_R4_L_S105_EX_03",
+      "prompt": "Why is Nora taking a taxi? (Because she is late. / At the station. / Twice a week.)",
+      "steps": [
+        "why 要求原因。",
+        "because 子句說明搭計程車的理由。",
+        "排除地點與頻率答案。"
+      ],
+      "answer": "Because she is late.",
+      "why": "Because she is late 提供 Nora 搭計程車的原因，和 Why 直接配對。At the station 是地點，Twice a week 是頻率。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要回答句文法正確，就能配對任何問句。",
+      "whyWrong": "回答還必須提供疑問詞要求的資訊種類。",
+      "correction": "先標出問題需要人、地點、時間、原因或方式。"
+    },
+    {
+      "belief": "Is she ready? 可以回答 Yes, she does.。",
+      "whyWrong": "短答助動詞必須回應問句中的 is。",
+      "correction": "使用 Yes, she is.。"
+    },
+    {
+      "belief": "When did you arrive? 可以回答 Tomorrow morning.。",
+      "whyWrong": "did 明確要求過去事件，tomorrow 指未來。",
+      "correction": "改用 Last night 等過去時間。"
+    },
+    {
+      "belief": "一個人因末班車而離開，就表示他討厭這場活動。",
+      "whyWrong": "回答只提供交通時間造成的離開理由，沒有長期喜好證據。",
+      "correction": "只推論他要趕車，不加入未說出的態度。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "How often do you swim 應得到哪一類回答？",
+      "answer": "頻率",
+      "reason": "how often 專門詢問重複發生頻率。"
+    },
+    {
+      "prompt": "Has Mia eaten 的否定短答是什麼？",
+      "answer": "No, she hasn't.",
+      "reason": "短答沿用 has，並把 Mia 換成 she。"
+    },
+    {
+      "prompt": "Why 問句的回答一定要以 because 開頭嗎？",
+      "answer": "不一定",
+      "reason": "只要清楚提供原因即可，但 because 是常見明確形式。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

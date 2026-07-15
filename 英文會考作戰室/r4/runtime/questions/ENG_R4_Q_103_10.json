@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A cooking note says to use three cups of water and four eggs. Which question asks about the water?",
+  "options": [
+    "How many water do we need?",
+    "How much water do we need?",
+    "How often do we need water?",
+    "How long is the water?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "water 不可數，不能直接使用 many。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "How much water 正確詢問三杯所表示的水量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項改問使用水的頻率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把水當成可量長度的物體。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-container-count-from-uncount-substance",
+    "ask-water-amount-with-how-much"
+  ],
+  "representationType": "recipe-data-question",
+  "misconceptionTargets": [
+    "use-many-because-answer-has-cup-count"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "雖然答案含 three cups，問句直接修飾的名詞仍是 water。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項先依不可數性選 how much，數量可在回答中用容器單位表達。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

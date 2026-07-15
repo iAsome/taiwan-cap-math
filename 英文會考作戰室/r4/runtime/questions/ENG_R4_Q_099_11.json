@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A form says, 'Your sister works here.' Which yes-no question keeps that meaning?",
+  "options": [
+    "Is your sister work here?",
+    "Does your sister works here?",
+    "Does your sister work here?",
+    "Did your sister work here?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is 不能帶原形 work 表示現在固定工作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 與 works 重複第三人稱單數標記。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Does 配合 sister，work 還原，完整保留現在工作事實。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Did 會把內容改為過去。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "transform-workplace-statement-without-time-shift",
+    "remove-s-after-does"
+  ],
+  "representationType": "form-statement-conversion",
+  "misconceptionTargets": [
+    "double-mark-third-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "works 是現在簡單式的一般動詞，轉問句要用 does。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項維持 here 與現在時間，也只標示一次第三人稱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

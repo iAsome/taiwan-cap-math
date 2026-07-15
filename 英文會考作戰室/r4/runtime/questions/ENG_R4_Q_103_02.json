@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ rice should we cook for six people?",
+  "options": [
+    "How many",
+    "How much",
+    "How often",
+    "How far"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "rice 在此是不可數名詞，不能直接用 many。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "How much rice 正確詢問所需的米量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "How often 會詢問煮飯頻率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How far 需要距離答案。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "separate-six-people-from-rice-amount",
+    "apply-how-much-to-uncount-rice"
+  ],
+  "representationType": "uncount-quantity-cloze",
+  "misconceptionTargets": [
+    "follow-nearby-count-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "six people 說明用餐人數，但空格直接修飾 rice。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項依 rice 的不可數用法提問，不把旁邊的人數誤當目標。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

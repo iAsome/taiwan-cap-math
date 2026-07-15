@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A customer asks about a bag's price. Which line is correctly formed?",
+  "options": [
+    "Could you tell me how much is this bag?",
+    "Could you tell me how much does this bag cost?",
+    "Could you tell me how much this bag costs?",
+    "Could how much you tell me this bag costs?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "how much is this bag 保留直接問句倒裝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does this bag cost 也保留 do-support 的直接問句語序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "how much this bag costs 使用內層直述句語序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "how much 不應移到外層 Could 與 you 之間。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "embed-bag-price-question",
+    "restore-costs-after-removing-does"
+  ],
+  "representationType": "shopping-indirect-transfer",
+  "misconceptionTargets": [
+    "retain-do-support-in-price-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "直接問句 How much does this bag cost? 嵌入後要移除 does。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓 costs 配合單數 bag，並把價格資訊放在 tell me 後。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

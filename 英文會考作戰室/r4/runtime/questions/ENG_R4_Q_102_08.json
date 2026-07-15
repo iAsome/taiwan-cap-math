@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line asks about the person Grace invited?",
+  "options": [
+    "Who invited Grace?",
+    "Who did invite Grace?",
+    "Who Grace invited?",
+    "Who did Grace invite?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項詢問邀請 Grace 的人，角色相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項仍把 Grace 放在受詞位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項缺少一般動詞過去受詞問句所需的 did。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Grace 是主詞，who 是受詞，did 後 invite 回到原形。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "map-english-relative-description-to-object-question",
+    "keep-grace-as-inviting-subject"
+  ],
+  "representationType": "role-specific-question-selection",
+  "misconceptionTargets": [
+    "reverse-agent-and-recipient"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "the person Grace invited 明確指定 Grace 做出邀請。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留這個角色關係；第一項則是在問另一件事。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

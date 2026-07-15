@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: ___ umbrella is this? B: It belongs to my sister. Which word completes A's question?",
+  "options": [
+    "Who",
+    "Which",
+    "Whose",
+    "Where"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Who 不能直接放在 umbrella 前詢問所有者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Which 需要在多把傘中選定一把。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "belongs to my sister 提供所有權，所以 Whose 正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Where 只詢問位置。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "translate-belongs-to-into-ownership-gap",
+    "complete-whose-umbrella-question"
+  ],
+  "representationType": "dialogue-ownership-inference",
+  "misconceptionTargets": [
+    "confuse-person-identity-with-possession"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "belongs to 和所有格回答具有相同功能，指出物品歸屬。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使 A 詢問這把傘是誰的，並非問傘在哪裡。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

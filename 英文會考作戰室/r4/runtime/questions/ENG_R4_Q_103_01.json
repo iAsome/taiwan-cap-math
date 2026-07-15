@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ eggs do we need for the cake? Four.",
+  "options": [
+    "How many",
+    "How much",
+    "How often",
+    "How long"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "eggs 是可數複數，Four 回答個數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "How much 適合不可數量或價格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "How often 詢問做蛋糕的頻率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How long 詢問時間或長度。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-eggs-as-count-plural",
+    "select-how-many-for-four-eggs"
+  ],
+  "representationType": "count-quantity-cloze",
+  "misconceptionTargets": [
+    "use-how-much-with-count-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹中的 eggs 有複數形式，回答也是整數個數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合可數性和回答單位，不只因看見 Four 而選。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

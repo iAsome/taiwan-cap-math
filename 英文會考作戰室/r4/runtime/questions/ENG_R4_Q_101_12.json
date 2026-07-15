@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A sign shows the doors will open at 8:40. Which line asks for that time?",
+  "options": [
+    "What time the doors will open?",
+    "Do the doors will open at what time?",
+    "What time do will the doors open?",
+    "What time will the doors open?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the doors will 是直述句順序，尚未倒裝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do 與 will 不可同時作助動詞，what time 位置也錯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "do will 是多餘助動詞堆疊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "What time + will + the doors + open 正確詢問 8:40。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "turn-opening-schedule-into-time-question",
+    "avoid-helper-stacking-with-will"
+  ],
+  "representationType": "schedule-to-question-transfer",
+  "misconceptionTargets": [
+    "retain-modal-statement-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時間 8:40 被 What time 取代，未來助動詞 will 必須前移。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 open 原形，沒有因複數 doors 另加 do。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

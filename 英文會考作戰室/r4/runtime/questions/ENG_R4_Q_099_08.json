@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora follows the same plan every week. ___ she visit her aunt on Sundays?",
+  "options": [
+    "Is",
+    "Did",
+    "Has",
+    "Does"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Is 不能直接接 visit 來詢問一般習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Did 會詢問一次過去拜訪，和 on Sundays 的規律不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Has visit 形式錯誤，完成式需要 visited。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Does 配合 Nora，visit 用原形，正確詢問週日習慣。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "combine-weekly-plan-and-sunday-habit",
+    "form-nora-habit-question-with-does"
+  ],
+  "representationType": "weekly-habit-question",
+  "misconceptionTargets": [
+    "choose-past-helper-for-recurring-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "follows every week 與 on Sundays 共同鎖定目前反覆習慣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 Does she visit，第三人稱變化只出現在 does。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

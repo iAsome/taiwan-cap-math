@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train will stop at Hill Road. Which question asks about the same future event?",
+  "options": [
+    "Will the train stop at Hill Road?",
+    "Does the train stopped at Hill Road?",
+    "Is the train stop at Hill Road?",
+    "Did the train will stop at Hill Road?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Will 移到主詞前，stop 保持原形，未來事件未改變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 後使用 stopped 且把未來改成現在，形式與時間都不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 不能直接連接原形 stop。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did 和 will 不應在這種問句中同時堆疊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "preserve-future-stop-proposition",
+    "front-will-without-extra-helper"
+  ],
+  "representationType": "statement-question-equivalence",
+  "misconceptionTargets": [
+    "stack-two-question-auxiliaries"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原句已有未來助動詞 will，改問句時只需把它前移。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 Hill Road 與未來停靠內容，其他項另加錯誤助動詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

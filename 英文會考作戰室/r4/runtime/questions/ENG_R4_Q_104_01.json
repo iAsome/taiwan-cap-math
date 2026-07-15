@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Could you tell me where ___?",
+  "options": [
+    "the bank is",
+    "is the bank",
+    "does the bank be",
+    "the bank does"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "間接問句內層使用 the bank is 的直述句語序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is the bank 是直接問句倒裝。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does the bank be 混入不需要的 do-support。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the bank does 後缺少實際動作，無法表達位置。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "restore-statement-order-after-where",
+    "complete-bank-location-indirect-question"
+  ],
+  "representationType": "indirect-be-cloze",
+  "misconceptionTargets": [
+    "retain-direct-question-inversion"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "外層 Could you tell me 已承擔提問功能，where 後不再倒裝。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留主詞在 be 動詞前，形成完整地點間接問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

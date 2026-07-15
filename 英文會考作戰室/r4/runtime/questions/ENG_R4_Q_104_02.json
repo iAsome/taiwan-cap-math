@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Do you know what time the train ___?",
+  "options": [
+    "does leave",
+    "leaves",
+    "leave",
+    "is leave"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does leave 是直接問句使用的助動排列，不放在內層。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the train leaves 是第三人稱單數直述句語序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "leave 少了與單數 train 的一致變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is leave 不是進行式或標準一般現在式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "remove-do-support-inside-embedded-clause",
+    "inflect-leaves-for-train"
+  ],
+  "representationType": "indirect-lexical-verb-cloze",
+  "misconceptionTargets": [
+    "keep-does-in-indirect-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "內層原直接問句可為 What time does the train leave?。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "嵌入 Do you know 後移除 does，第二項 leaves 承擔現在式人稱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

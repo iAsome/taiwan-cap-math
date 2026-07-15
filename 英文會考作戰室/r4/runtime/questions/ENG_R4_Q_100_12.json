@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The club meeting was moved to Friday. It is still in Room 2. Which question asks about what changed?",
+  "options": [
+    "Who moved the chairs?",
+    "Where is Room 2?",
+    "Why is Friday busy?",
+    "When is the club meeting now?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題目沒有談搬椅子的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "not Room 2 明確否定地點是本次變動，不能把它當答案焦點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有提供星期五忙碌的原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "moved to Friday 表示會議時間改變，When 正確詢問新時間。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "resolve-moved-as-day-change",
+    "use-still-to-exclude-room-change"
+  ],
+  "representationType": "contrast-guided-wh-transfer",
+  "misconceptionTargets": [
+    "follow-location-noun-despite-negation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "still in Room 2 明確排除地點變動，Friday 才是新的資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只問實際改變的日期，不延伸到未說出的原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

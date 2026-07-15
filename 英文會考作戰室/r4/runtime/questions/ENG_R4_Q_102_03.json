@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ wants another glass of water?",
+  "options": [
+    "Who does",
+    "Whom",
+    "Who",
+    "Who do"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "中性主詞問句不需要 does，否則結構多出助動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Whom 傳統上標示受詞，不適合 wants 的動作者位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Who 作 wants 的主詞，現在簡單式使用第三人稱單數 wants。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "do 既不配合此結構，也會留下缺少主詞的問句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "assign-wanter-gap-to-subject",
+    "retain-wants-after-subject-who"
+  ],
+  "representationType": "present-subject-question-cloze",
+  "misconceptionTargets": [
+    "use-do-support-before-subject-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "未知的人是想再喝一杯水的動作者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 Who wants...，不加入 do-support，wants 的形式也正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

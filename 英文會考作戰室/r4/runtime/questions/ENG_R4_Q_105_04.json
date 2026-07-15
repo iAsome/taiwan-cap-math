@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "When did the movie end?",
+  "options": [
+    "At the new theater.",
+    "Because it was short.",
+    "With a song.",
+    "At 9:15."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "theater 是地點，不回答 when。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "because 子句提供原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "with a song 描述結尾方式或內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "At 9:15 是明確過去時刻，與 did 問句相符。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-when-ended-to-clock-time",
+    "check-past-time-compatibility"
+  ],
+  "representationType": "time-answer-selection",
+  "misconceptionTargets": [
+    "mistake-at-place-for-at-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "When 要求電影結束的時間，9:15 提供鐘點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項不僅資訊類型正確，也不和過去式 did 產生時間衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

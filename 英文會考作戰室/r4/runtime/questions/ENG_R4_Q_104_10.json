@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The speaker only asks for information: 'Do you know who called the office?' Why is 'who did call' not used?",
+  "options": [
+    "Because called is an adjective",
+    "Because who is the subject of the verb called",
+    "Because the office is the subject",
+    "Because indirect questions cannot ask about people"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "called 在此是過去動詞，不是形容詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "who 代表打電話的人，已擔任 called 的主詞，所以不需 did。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "office 是接到電話的受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "間接問句當然可以用 who 詢問人物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "preserve-subject-who-inside-indirect-question",
+    "explain-absence-of-did-through-role"
+  ],
+  "representationType": "embedded-subject-question-analysis",
+  "misconceptionTargets": [
+    "insert-did-after-every-embedded-who"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接問句本來就是 Who called the office?，不是受詞問句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時運用主詞問句規則與間接問句規則，沒有機械刪字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

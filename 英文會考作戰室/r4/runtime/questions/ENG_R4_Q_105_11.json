@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Why are you leaving now? B: Because the last bus comes at ten. Which idea is supported?",
+  "options": [
+    "B does not like anyone at the event.",
+    "B always travels before dark.",
+    "B wants to catch the last bus.",
+    "B has already missed the bus."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "對話沒有提到 B 對任何人的態度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一次趕車不能證明 B 永遠在天黑前旅行。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "末班車時間合理解釋 B 現在離開是為了趕車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "公車十點才來，沒有證據顯示已錯過。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-bus-catching-purpose-from-why-answer",
+    "limit-conclusion-to-stated-transport-need"
+  ],
+  "representationType": "evidence-boundary-dialogue",
+  "misconceptionTargets": [
+    "overgeneralize-reason-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "because 子句提供離開原因，但只支持交通安排層次的推論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項緊扣 last bus；其他選項加入長期習慣、喜好或相反時間線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

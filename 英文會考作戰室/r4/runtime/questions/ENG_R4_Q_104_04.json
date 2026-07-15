@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line correctly reports not knowing where Mia is?",
+  "options": [
+    "I want to know where is Mia?",
+    "I want to know where does Mia stay.",
+    "I want to know where Mia does stay?",
+    "I want to know where Mia is."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "內層 where is Mia 保留直接問句倒裝，且外層是陳述。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does Mia stay 也保留直接問句語序，意思還改成住宿。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does stay 帶不必要強調，句尾問號也不合陳述主句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "where Mia is 採直述句順序，I want to know 以句點結尾。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "report-mia-location-as-statement",
+    "coordinate-embedded-order-and-period"
+  ],
+  "representationType": "indirect-statement-selection",
+  "misconceptionTargets": [
+    "add-question-mark-because-embedded-content-is-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目要求 Mia 所在地，而外層 I want to know 是一個陳述。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時處理內層語序與整句標點，沒有把 stay 加進原意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

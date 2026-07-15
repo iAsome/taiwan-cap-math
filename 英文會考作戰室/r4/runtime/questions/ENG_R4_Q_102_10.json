@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo helped a visitor find the exit. Which question asks who the visitor was?",
+  "options": [
+    "Who helped the visitor?",
+    "Who did Leo help?",
+    "Who helped Leo?",
+    "Who did help Leo?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項詢問幫助 visitor 的人，答案會是 Leo。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Leo 保留為主詞，who 取代被幫助的 visitor。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項改成有人幫助 Leo。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項也把 Leo 放在受詞位置，而且加入不必要 did。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "replace-visitor-object-with-who",
+    "retain-leo-as-helper-in-did-question"
+  ],
+  "representationType": "event-object-transfer",
+  "misconceptionTargets": [
+    "ask-helper-instead-of-helped-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "visitor 是 help 的人類受詞，問題要找他的身分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成受詞問句 Who did Leo help?，事件方向沒有翻轉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

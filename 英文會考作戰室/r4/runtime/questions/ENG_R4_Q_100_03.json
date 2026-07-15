@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ broke the cup? Tina did.",
+  "options": [
+    "What",
+    "Whose",
+    "Who",
+    "Which"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "What 通常詢問事物，無法直接對應 Tina。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Whose 詢問所有者，不是做出動作的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Who 詢問打破杯子的人，Tina did 正好回答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Which 需要較明確的有限人物範圍。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "resolve-tina-did-as-person-answer",
+    "select-who-for-cup-breaker"
+  ],
+  "representationType": "person-wh-cloze",
+  "misconceptionTargets": [
+    "confuse-who-with-whose"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Tina did 中 did 代替 broke the cup，表示 Tina 是動作者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項詢問人物身分，而不是杯子的所有權或物品種類。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

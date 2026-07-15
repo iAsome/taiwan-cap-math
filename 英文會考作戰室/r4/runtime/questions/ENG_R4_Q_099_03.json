@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ they leave early yesterday?",
+  "options": [
+    "Do",
+    "Does",
+    "Did",
+    "Are"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Do 表示現在，不能保留 yesterday 的過去時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 既是現在式，也不配合複數 they。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Did 表示過去，後接原形 leave，和 yesterday 一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are 不能直接帶原形 leave 形成此問句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "anchor-question-to-yesterday",
+    "apply-did-plus-leave-base-form"
+  ],
+  "representationType": "past-question-cloze",
+  "misconceptionTargets": [
+    "use-present-helper-with-past-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "yesterday 鎖定過去簡單式，一般動詞問句使用 did。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項已讓 leave 回到原形，時態只標在 Did 上。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

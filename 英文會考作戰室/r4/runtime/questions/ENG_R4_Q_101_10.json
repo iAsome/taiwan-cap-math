@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes 'Where does Lily lives?' Which change fixes the verb form?",
+  "options": [
+    "does → is",
+    "lives → live",
+    "Where → When",
+    "Lily → her"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is live 不能表示 Lily 的固定居住地。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "does 已承擔第三人稱變化，主要動詞應改為 live。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "改成 When 會詢問時間，沒有修正文法核心。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "her 不能在此取代主詞 Lily。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "diagnose-double-third-person-marking",
+    "repair-only-main-verb-form"
+  ],
+  "representationType": "targeted-error-repair",
+  "misconceptionTargets": [
+    "change-unrelated-wh-word-to-fix-grammar"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "錯誤不是疑問詞或人物，而是 does 與 lives 重複標示人稱。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項修正後得到 Where does Lily live?，意思保持不變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

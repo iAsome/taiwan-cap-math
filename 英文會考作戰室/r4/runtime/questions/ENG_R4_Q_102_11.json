@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "What does 'Who saw Amy?' ask, and what does 'Who did Amy see?' ask?",
+  "options": [
+    "The first is present and the second is future.",
+    "The first asks about a place and the second about a time.",
+    "The first asks for the person who saw Amy; the second asks for the person Amy saw.",
+    "Both questions ask the same thing."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩句都是過去事件，沒有未來助動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "who 在兩句都詢問人物，不是地點或時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第一句 who 是主詞，第二句 Amy 是主詞而 who 是受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "角色交換使兩句答案可能完全不同。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "explain-role-reversal-in-see-questions",
+    "distinguish-agent-from-seen-person"
+  ],
+  "representationType": "semantic-syntax-comparison",
+  "misconceptionTargets": [
+    "treat-did-as-meaningless-surface-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "did Amy 是辨認第二句受詞問句的明確線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項用 saw 的方向說明差異，不只是指出表面有無 did。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which question correctly asks for the person who found the key?",
+  "options": [
+    "Who did found the key?",
+    "Who found the key?",
+    "Who did the key find?",
+    "Who the key found?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "did 後不能再保留 found 的過去式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Who 直接取代找鑰匙的人，found 保留過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把 key 當成會找人的主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項的角色與語序都無法形成標準問句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "target-key-finder-as-unknown-agent",
+    "select-bare-who-found-structure"
+  ],
+  "representationType": "agent-question-selection",
+  "misconceptionTargets": [
+    "insert-emphatic-did-without-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "要找的是執行 found 的人，因此 who 就是主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項最簡潔地保留 found the key 這個事件，其餘選項改亂角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

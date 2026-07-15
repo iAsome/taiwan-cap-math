@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The team will meet in the gym. Which question asks for the meeting place?",
+  "options": [
+    "Where will the team meet?",
+    "Where the team will meet?",
+    "Where does the team will meet?",
+    "Will where the team meet?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Where 後接 will、主詞與 meet，正確詢問未來地點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the team will 保留直述句語序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does 與 will 不應同時堆疊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "where 應放在 will 前作問句開頭。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "replace-gym-location-with-where",
+    "front-will-before-team-in-wh-question"
+  ],
+  "representationType": "future-location-transformation",
+  "misconceptionTargets": [
+    "add-do-before-modal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原句已有 will，地點 in the gym 被 where 取代。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留未來時間與 team 作主詞，操作只涉及位置成分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

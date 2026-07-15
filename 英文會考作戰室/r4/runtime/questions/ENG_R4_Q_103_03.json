@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ do you visit your family? Twice a month.",
+  "options": [
+    "How long",
+    "How far",
+    "How often",
+    "How soon"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "How long 會得到一次拜訪持續多久。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "How far 會得到兩地距離。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Twice a month 是重複頻率，對應 How often。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How soon 詢問還要等多久才發生。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "parse-twice-per-month-frequency",
+    "choose-how-often-for-visits"
+  ],
+  "representationType": "frequency-cloze",
+  "misconceptionTargets": [
+    "mistake-frequency-period-for-duration"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "twice 表示次數，a month 提供計算頻率的期間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項詢問的是拜訪規律，而不是路程或停留時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

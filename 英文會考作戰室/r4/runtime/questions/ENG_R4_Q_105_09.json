@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "B answers, 'By bus.' A wants to know the way B traveled here. Which question did A ask?",
+  "options": [
+    "How did you get here?",
+    "Why did you come here?",
+    "When did you get here?",
+    "Who came here with you?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "How 詢問到達方式，By bus 正確回應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Why 需要來此地的原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "When 需要抵達時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Who 需要同行人物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "recover-method-question-from-by-bus",
+    "honor-explicit-way-traveled-goal"
+  ],
+  "representationType": "dialogue-method-reconstruction",
+  "misconceptionTargets": [
+    "match-travel-answer-to-wrong-wh-dimension"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目直接限定 way traveled，答案也以 by 加交通工具表達方法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項讓問句和 By bus 完整配對，其餘都可能談同一旅程但缺少所需資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

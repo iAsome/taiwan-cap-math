@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which question asks for the price of the green bag?",
+  "options": [
+    "How many green bags are there?",
+    "How often is the green bag used?",
+    "How far is the green bag?",
+    "How much is the green bag?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項詢問綠色袋子的數量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項詢問使用頻率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項把物品錯當成距離。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "How much is the bag 是詢問價格的常見問法。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "distinguish-price-from-item-count",
+    "select-how-much-be-price-question"
+  ],
+  "representationType": "price-question-selection",
+  "misconceptionTargets": [
+    "limit-how-much-to-uncount-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "price 不是袋子的個數或重量，而是購買金額。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓 how much 直接搭配 be 動詞詢價，資訊需求最明確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

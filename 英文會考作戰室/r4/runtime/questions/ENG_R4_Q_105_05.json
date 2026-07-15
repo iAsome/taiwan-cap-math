@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "How often does the art club meet?",
+  "options": [
+    "Every Friday.",
+    "For two hours.",
+    "In Room 5.",
+    "Because members enjoy art."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Every Friday 描述固定重複頻率。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "For two hours 是每次活動持續時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "In Room 5 是地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 子句是成立社團或參加的原因。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "match-club-frequency-to-every-friday",
+    "distinguish-repeat-rate-from-session-duration"
+  ],
+  "representationType": "frequency-answer-selection",
+  "misconceptionTargets": [
+    "answer-how-often-with-for-duration"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "How often 聚焦 meet 重複發生的規律。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項以 every 加星期表示週期，不能和一次會議長度混淆。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

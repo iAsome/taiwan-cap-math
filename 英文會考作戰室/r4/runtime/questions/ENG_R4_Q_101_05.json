@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_101_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Put the words in the correct order: where / did / Amy / find / the ring",
+  "options": [
+    "Where did Amy find the ring?",
+    "Where Amy did find the ring?",
+    "Did where Amy find the ring?",
+    "Where did find Amy the ring?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Where + did + Amy + find 依序完成過去 wh 問句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy did 保留陳述句式位置，未完成標準倒裝。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "疑問詞 where 應置於整個問句最前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did 後應先放主詞 Amy，再放主要動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "assemble-past-location-question",
+    "sequence-wh-helper-subject-base-verb"
+  ],
+  "representationType": "word-order-task",
+  "misconceptionTargets": [
+    "place-subject-before-did"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "未知資訊是地點，已知動作是 Amy 過去找到戒指。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時保留 where 首位、did 在主詞前以及 find 原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

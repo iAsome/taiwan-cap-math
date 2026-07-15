@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Do you know ___? We need to find out whether Sam can come.",
+  "options": [
+    "can Sam come",
+    "does Sam can come",
+    "whether Sam can come",
+    "whether can Sam come"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "can Sam come 是直接 yes-no 問句，缺少嵌入連接詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 與 can 不應同時使用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "whether 引出 yes-no 內容，Sam can 保持直述句順序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "whether 後不再把 can 放到 Sam 前。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "embed-sam-availability-with-whether",
+    "keep-can-after-sam-in-embedded-content"
+  ],
+  "representationType": "whether-clause-selection",
+  "misconceptionTargets": [
+    "invert-modal-after-whether"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "提示句已明說要確認 Sam 是否能來，而非時間或原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 whether 連接完整命題，內層 modal 留在主詞後。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

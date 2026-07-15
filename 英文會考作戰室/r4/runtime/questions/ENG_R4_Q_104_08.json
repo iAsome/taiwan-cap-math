@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence correctly asks for the reason the road is closed?",
+  "options": [
+    "Could you explain why is the road closed?",
+    "Could why you explain the road is closed?",
+    "Could you explain the road why closed?",
+    "Could you explain why the road is closed?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "why is the road 保留直接問句倒裝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "why 不應插入 could 與主詞 you 之間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項缺少內層完整的 be 結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "why the road is closed 採直述句語序，正確嵌入 explain 後。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-indirect-road-closure-reason",
+    "place-road-before-is-after-why"
+  ],
+  "representationType": "reason-indirect-selection",
+  "misconceptionTargets": [
+    "double-invert-outer-and-inner-questions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "需要的資訊是道路封閉原因，所以保留 why。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓外層 Could you explain 負責提問，內層不再次倒裝。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

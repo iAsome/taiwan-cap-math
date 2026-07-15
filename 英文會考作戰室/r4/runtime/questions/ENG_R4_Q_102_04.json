@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam broke the lamp. Which question asks for the thing Sam broke?",
+  "options": [
+    "Who broke the lamp?",
+    "What broke Sam?",
+    "Who did Sam break?",
+    "What did Sam break?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項詢問動作者，答案會是 Sam。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項把 Sam 誤作被打破的對象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Who 詢問人，但 lamp 是物品。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "What 取代 lamp，Sam 保留為主詞，did 後用 break 原形。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "replace-lamp-object-with-what",
+    "form-past-object-question-about-sam"
+  ],
+  "representationType": "statement-role-transformation",
+  "misconceptionTargets": [
+    "ask-for-subject-instead-of-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目明說要找 thing，不是找打破東西的人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項還原後就是 Sam broke the lamp，角色與時態都一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

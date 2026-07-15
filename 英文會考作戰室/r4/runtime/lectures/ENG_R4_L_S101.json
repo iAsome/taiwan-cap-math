@@ -1,0 +1,131 @@
+{
+  "id": "ENG_R4_L_S101",
+  "subject": "english",
+  "unitId": "ENG_R4_U15",
+  "skillId": "ENG_R4_S101",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S100"
+  ],
+  "objectives": [
+    "依動詞種類安排 wh 疑問詞、助動詞與主詞的順序。",
+    "在 do、does、did 或情態助動詞後保留主要動詞原形。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S101_SEC_01",
+      "title": "一般動詞問句採 wh 加助動詞加主詞",
+      "content": "若 wh 詞不是主詞，一般動詞問句常用 wh + do/does/did + subject + base form。Where does Ben live? 中 does 在 Ben 前，live 回到原形；不能沿用直述句順序寫 Where Ben lives?。"
+    },
+    {
+      "id": "ENG_R4_L_S101_SEC_02",
+      "title": "be 動詞直接放在主詞前",
+      "content": "句中主要動詞是 be 時，不需加入 do。Why are they waiting?、Where was the bag? 都把 are 或 was 放到主詞前。若疑問詞後同時出現 do 與 be，通常表示把兩套結構混在一起。"
+    },
+    {
+      "id": "ENG_R4_L_S101_SEC_03",
+      "title": "情態助動詞位於主詞前，後接原形",
+      "content": "含 can、will、should 等情態助動詞時，順序為 wh + modal + subject + base form，例如 When can we leave?。情態助動詞本身不因主詞改變，主要動詞也不加 s 或改成過去式。"
+    },
+    {
+      "id": "ENG_R4_L_S101_SEC_04",
+      "title": "先決定缺少資訊，再重建完整問句",
+      "content": "實際作答可先把未知部分換成 wh 詞，再依 yes-no 問句語序排列其餘成分。完成後檢查：疑問詞是否在最前、助動詞是否在主詞前，以及主要動詞的時態是否已由助動詞承擔。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S101_EX_01",
+      "prompt": "Put the words in order: where / does / Tina / work",
+      "steps": [
+        "where 放在問句最前。",
+        "does 位於主詞 Tina 前。",
+        "work 保持原形。"
+      ],
+      "answer": "Where does Tina work?",
+      "why": "work 是一般動詞，Tina 為第三人稱單數，因此需要 does。助動詞承擔人稱後，work 不再加 s，完整順序是 Where does Tina work?。"
+    },
+    {
+      "id": "ENG_R4_L_S101_EX_02",
+      "prompt": "___ are the children laughing? Because the dog is dancing. (Why / Why do / Why are)",
+      "steps": [
+        "回答 Because... 表示原因。",
+        "原句使用 are laughing。",
+        "把 are 放在主詞前形成 Why are。"
+      ],
+      "answer": "Why",
+      "why": "題幹在空格後已經有 are the children laughing，所以只需填 Why。若填 Why are 會重複 are，Why do 又會和現在進行式衝突。"
+    },
+    {
+      "id": "ENG_R4_L_S101_EX_03",
+      "prompt": "Put the words in order: when / can / the team / start",
+      "steps": [
+        "when 詢問開始時間。",
+        "can 移到主詞 the team 前。",
+        "start 接在主詞後並保持原形。"
+      ],
+      "answer": "When can the team start?",
+      "why": "can 是原句所需的情態助動詞，放在 the team 前；其後主要動詞仍用 start。把 can 放在主詞後會留下直述句語序。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "疑問詞放在句首後，其餘部分可以保持直述句順序。",
+      "whyWrong": "非主詞 wh 問句通常還需要助動詞與主詞倒裝。",
+      "correction": "寫 Where does Tina work?，不寫 Where Tina works?。"
+    },
+    {
+      "belief": "使用 does 後，主要動詞仍要配合第三人稱加 s。",
+      "whyWrong": "第三人稱標記已由 does 承擔。",
+      "correction": "使用 What does he need?。"
+    },
+    {
+      "belief": "進行式問句要加入 do，形成 Why do they are waiting?。",
+      "whyWrong": "are 已是可移到主詞前的助動詞。",
+      "correction": "直接寫 Why are they waiting?。"
+    },
+    {
+      "belief": "can 後的主要動詞要依時間改成過去式。",
+      "whyWrong": "情態助動詞後固定接原形。",
+      "correction": "使用 When can we leave?，不使用 can left。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Where does Leo lives 中哪一個字要改？",
+      "answer": "lives → live",
+      "reason": "does 後的主要動詞使用原形。"
+    },
+    {
+      "prompt": "Why they are late 要交換哪兩部分？",
+      "answer": "they are → are they",
+      "reason": "be 動詞問句要把 are 放在主詞前。"
+    },
+    {
+      "prompt": "When will the store open 中 open 為什麼不用 opens？",
+      "answer": "will 後接原形",
+      "reason": "情態助動詞已承擔問句結構。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

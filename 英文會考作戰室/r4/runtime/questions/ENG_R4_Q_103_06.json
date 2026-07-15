@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ is your little brother? He is fourteen.",
+  "options": [
+    "How long",
+    "How old",
+    "How much",
+    "How soon"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "How long 不直接詢問人的年齡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "He is fourteen 提供年齡，對應 How old。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "How much 不能用來詢問人的歲數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How soon 詢問未來等待時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-age-from-he-is-fourteen",
+    "select-how-old-for-brother"
+  ],
+  "representationType": "age-cloze",
+  "misconceptionTargets": [
+    "choose-how-long-for-age"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "回答用 be 動詞加 fourteen，省略 years old 仍可清楚表達年齡。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項與 little brother 的年齡資訊配對，不涉及身高或等待時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

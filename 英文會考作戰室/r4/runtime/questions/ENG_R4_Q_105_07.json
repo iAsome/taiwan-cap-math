@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "What are you waiting for?",
+  "options": [
+    "At the bus stop.",
+    "Since eight o'clock.",
+    "We are waiting for the last bus.",
+    "Very slowly."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項說明等待地點，不是等待的對象。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項說明開始等待的時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the last bus 是 for 所要求的目標，能完整回答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "very slowly 是方式副詞，不能作 waiting for 的受詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-stranded-for-object-question",
+    "select-last-bus-as-wait-target"
+  ],
+  "representationType": "preposition-object-answer",
+  "misconceptionTargets": [
+    "answer-wait-for-with-location"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問句中的 for 已保留，因此 what 要找等待的事物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項回答 last bus，沒有因看到 waiting 就誤選地點或持續時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

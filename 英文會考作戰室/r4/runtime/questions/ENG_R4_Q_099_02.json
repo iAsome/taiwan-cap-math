@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ Leo walk to school every day?",
+  "options": [
+    "Is",
+    "Does",
+    "Did",
+    "Has"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Is 後不能直接用原形 walk 表達這個習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Does 配合 Leo，walk 保持原形，正確詢問每日習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Did 會把問題改成過去，和 every day 的一般習慣不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Has 需要過去分詞或 have 的其他結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "read-every-day-as-present-habit",
+    "select-does-for-leo-walk"
+  ],
+  "representationType": "habit-question-cloze",
+  "misconceptionTargets": [
+    "use-be-with-simple-present-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "every day 指現在的固定習慣，主要動詞是一般動詞 walk。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Leo 是第三人稱單數，所以第二項 Does 正確承擔人稱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

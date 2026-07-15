@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_100_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ are they cooking for dinner? Noodles.",
+  "options": [
+    "Who",
+    "Whose",
+    "Which",
+    "What"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Who 會詢問正在做飯的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Whose 需要所有格關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Which 若無明確選項範圍，資訊不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Noodles 是所烹煮的事物，What 正確。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-noodles-as-cooked-object",
+    "choose-open-what-for-dinner-content"
+  ],
+  "representationType": "thing-wh-cloze",
+  "misconceptionTargets": [
+    "force-which-without-limited-set"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "回答 Noodles 是食物內容，不是人物、所有者或既定選項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 What are they cooking for dinner?。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

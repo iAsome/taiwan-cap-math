@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A nurse helped Leo after he fell. Which question asks who the nurse was?",
+  "options": [
+    "Who helped Leo?",
+    "Who did Leo help?",
+    "What did Leo help?",
+    "Who did help Leo after he fell?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Who 取代 nurse 作 helped 的主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項改成 Leo 幫助別人，角色顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項詢問 Leo 幫助的物品，與事件不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一般資訊主詞問句不需要 did help 的額外強調。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "replace-nurse-agent-with-who",
+    "preserve-leo-as-help-recipient"
+  ],
+  "representationType": "event-agent-transfer",
+  "misconceptionTargets": [
+    "make-leo-agent-when-questioning-nurse"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "nurse 是原句的動作者，Leo 是接受幫助的人。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項刪去已知職稱並以 Who 詢問其身分，其他事件資訊保持不變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

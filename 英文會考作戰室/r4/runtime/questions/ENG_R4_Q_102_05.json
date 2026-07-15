@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_102_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S102"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "What does each question ask?\n1. Who invited Amy?\n2. Who did Amy invite?",
+  "options": [
+    "1 asks who invited Amy; 2 asks who Amy invited.",
+    "Both questions ask who Amy invited.",
+    "In both questions, Amy is the subject.",
+    "Only question 1 is about a person."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一句 who 做出 invite；第二句 Amy 做出 invite，who 接受動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩句的事件角色不同，不能都解為 Amy 邀請誰。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一句 Amy 是受詞，不是主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩個 who 都詢問人物。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "contrast-inviter-and-invitee-gaps",
+    "use-explicit-subject-to-classify-who"
+  ],
+  "representationType": "paired-question-role-comparison",
+  "misconceptionTargets": [
+    "give-same-reading-to-subject-and-object-questions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "did Amy 顯示第二句另有明確主詞，第一句則沒有其他動作者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項精確區分邀請者與受邀者，沒有只靠 who 的位置猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

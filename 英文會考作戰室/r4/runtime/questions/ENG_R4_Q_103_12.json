@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lake is six kilometers away, and the bus ride takes twenty minutes. Which pair asks for both facts in that order?",
+  "options": [
+    "How long / How often",
+    "How soon / How much",
+    "How old / How many",
+    "How far / How long"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "How long 可問車程，但 How often 不問六公里距離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "How soon 與 How much 都不對應題目兩項事實。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "年齡和可數數量與湖泊路程無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "How far 問六公里，How long 問二十分鐘車程，順序一致。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "separate-distance-and-travel-duration",
+    "order-how-far-before-how-long"
+  ],
+  "representationType": "dual-measure-transfer",
+  "misconceptionTargets": [
+    "collapse-distance-and-duration-questions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目刻意同時提供空間距離與旅行時間，兩者不可互換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項依 six kilometers、twenty minutes 的排列逐一配對。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

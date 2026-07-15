@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_105_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Where did Amy find the card?",
+  "options": [
+    "Under the desk.",
+    "Last night.",
+    "Because she looked carefully.",
+    "With her brother."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Under the desk 提供卡片被找到的位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Last night 回答時間，不是 where 所求資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Because she looked carefully 說明原因或方式，沒有指出卡片位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "with her brother 說明同行者。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "match-where-question-to-under-desk",
+    "reject-time-reason-and-companion-answers"
+  ],
+  "representationType": "wh-answer-selection",
+  "misconceptionTargets": [
+    "select-grammatical-but-wrong-information-type"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Where 要求地點，under 加名詞形成明確位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項能直接接在 find the card 的事件後，其餘答案類型不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

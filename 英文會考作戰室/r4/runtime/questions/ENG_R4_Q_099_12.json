@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note says the lights were on at midnight. Which question checks that fact?",
+  "options": [
+    "Do the lights on at midnight?",
+    "Did the lights were on at midnight?",
+    "Are the lights on at midnight?",
+    "Were the lights on at midnight?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Do 不能直接連接 on 來表示狀態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "were 已是 be 過去式，不能再加 did。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Are 會把午夜的過去狀態改為現在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Were 放在 lights 前，正確詢問當時是否亮著。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "verify-midnight-light-state",
+    "invert-past-be-without-did"
+  ],
+  "representationType": "evidence-check-question",
+  "misconceptionTargets": [
+    "combine-did-with-were"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "the lights were on 是 be 動詞的過去狀態，不屬於一般動詞 do-support。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 midnight 的過去時間，僅把 were 移到主詞前。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

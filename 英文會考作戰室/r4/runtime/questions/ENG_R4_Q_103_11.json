@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_103_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "B says, 'It takes twenty minutes to walk there.' Which question did A ask?",
+  "options": [
+    "How often do you walk there?",
+    "How far is the park?",
+    "How long does it take to walk there?",
+    "How soon did you walk there?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項需要次數或頻率回答。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項需要 meters 或 kilometers 等距離。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "It takes twenty minutes 回答步行所需時間，對應 How long does it take。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How soon 通常問未來等待，且 did 與回答不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-travel-time-question-from-it-takes",
+    "separate-duration-from-distance"
+  ],
+  "representationType": "dialogue-question-recovery",
+  "misconceptionTargets": [
+    "answer-how-far-with-minutes"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "takes twenty minutes 描述完成路程所需的時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項詢問 travel time；即使距離與時間相關，也不能用分鐘直接回答 how far。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

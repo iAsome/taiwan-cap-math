@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_104_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line correctly says that someone cannot find the keys?",
+  "options": [
+    "I don't know where my keys are.",
+    "I don't know where are my keys.",
+    "I don't know where do my keys be.",
+    "I don't know my keys where are."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "where my keys are 使用直述句語序並配合複數 keys。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are my keys 是直接問句倒裝。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "do...be 不是位置子句的正確結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "where 不能放在內層主詞之後。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "state-unknown-key-location",
+    "maintain-plural-be-in-embedded-order"
+  ],
+  "representationType": "embedded-location-statement",
+  "misconceptionTargets": [
+    "invert-be-after-know"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "整句是 I don't know 的陳述，不需要問號。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 where 作地點連接詞，my keys 在 are 前。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

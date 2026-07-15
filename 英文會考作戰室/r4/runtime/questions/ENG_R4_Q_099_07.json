@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_099_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-7",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ the children playing outside?",
+  "options": [
+    "Do",
+    "Does",
+    "Are",
+    "Have"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Do playing 缺少能形成進行式的 be 動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 不配合複數 children，也不能接 playing。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Are 與 playing 組成現在進行式，並置於主詞前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Have playing 不是標準完成式結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "detect-progressive-from-playing",
+    "place-are-before-children"
+  ],
+  "representationType": "progressive-question-cloze",
+  "misconceptionTargets": [
+    "use-do-before-ing-form"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-7",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "playing 顯示原句是 The children are playing outside。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留進行式所需的 are，並完成 yes-no 倒裝。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
