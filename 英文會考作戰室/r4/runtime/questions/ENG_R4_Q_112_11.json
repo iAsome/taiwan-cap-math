@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I may arrive after six if the bus is late. What can the listener know?",
+  "options": [
+    "A will arrive before six.",
+    "The bus is always late.",
+    "A might arrive after six.",
+    "A has decided not to come."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "may 與 if 不支持一定在六點前抵達。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一次條件句不能推出公車總是誤點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "may arrive after six 正好表示六點後抵達的可能性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子仍談抵達時間，沒有說不來。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "preserve-possibility-in-may-if-statement",
+    "reject-certainty-and-frequency-overreach"
+  ],
+  "representationType": "evidence-limited-dialogue-inference",
+  "misconceptionTargets": [
+    "turn-may-into-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "may 表可能，if the bus is late 提供發生條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留 might 的不確定性，不把條件改寫成事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

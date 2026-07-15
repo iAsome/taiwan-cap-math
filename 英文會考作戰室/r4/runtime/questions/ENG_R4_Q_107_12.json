@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Did you see anyone near the gate? B: ___. B saw no people there.",
+  "options": [
+    "I didn't see nobody.",
+    "I never didn't see anyone.",
+    "I saw anybody.",
+    "I didn't see anyone."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "didn't 與 nobody 形成雙重否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "never 與 didn't 疊加，無法表達單次事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "anybody 通常不直接放在此肯定句表示零人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "didn't see anyone 清楚表示當時沒看到任何人。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "answer-past-anyone-question-negatively",
+    "select-didnt-see-anyone-dialogue-form"
+  ],
+  "representationType": "dialogue-negative-transfer",
+  "misconceptionTargets": [
+    "reply-with-didnt-nobody"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "B saw no people 是過去一次事件的零人結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項以 didn't 和 anyone 配對，也直接回應 Did you see。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "I walk to the office every day. My brother does the same. Which line puts the two ideas together?",
+  "options": [
+    "So do my brother.",
+    "So does my brother.",
+    "So is my brother.",
+    "So did my brother."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "my brother 是單數，不能用 do。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "does 配合單數主詞，並代替 walks to the office。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 不對應 walk 這個一般動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did 會把 every day 的現在習慣改成過去。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "combine-repeated-walking-habit",
+    "inflect-do-for-inverted-brother"
+  ],
+  "representationType": "so-combination-task",
+  "misconceptionTargets": [
+    "use-do-with-singular-in-inversion"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "does the same 明確表示兄弟有相同的現在習慣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "倒裝後助動詞仍須配合後方主詞 my brother。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

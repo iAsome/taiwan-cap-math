@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Amy can come before noon. Sam can come, ___.",
+  "options": [
+    "either",
+    "too",
+    "neither",
+    "not"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "either 通常跟隨否定句，兩句都有 can。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "too 表示 Sam 也能來，和 Amy 的肯定能力一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "neither 需要搭配倒裝句，且語意為兩者都不能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "not 會使第二句結構與意思都不完整。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "align-two-positive-can-clauses",
+    "use-too-after-modal-statement"
+  ],
+  "representationType": "modal-too-cloze",
+  "misconceptionTargets": [
+    "choose-either-because-can-is-auxiliary"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "can come 在兩句中都是肯定形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項位於完整肯定句末，表示 Sam 具有相同情況。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

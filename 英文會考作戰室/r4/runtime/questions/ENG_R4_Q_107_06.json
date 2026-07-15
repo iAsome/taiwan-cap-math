@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes 'I don't know nothing about the plan.' Which one-word change fixes it?",
+  "options": [
+    "don't → doesn't",
+    "nothing → anything",
+    "know → knew",
+    "plan → plans"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I 不搭配 doesn't，且雙重否定仍存在。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "anything 與 don't know 搭配，保留完全不知道的意思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "改成 knew 會造成 don't knew 錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "plans 的數量變化不能修正否定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-double-negative-object",
+    "repair-nothing-to-anything"
+  ],
+  "representationType": "one-word-negative-repair",
+  "misconceptionTargets": [
+    "change-tense-instead-of-negative-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "問題在 don't 與 nothing 同時出現。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 don't，將受詞改為否定範圍內的 anything。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I finished the work before lunch. Which answer shows that B did the same?",
+  "options": [
+    "So did I.",
+    "Neither did I.",
+    "I didn't, either.",
+    "I was still working at lunch."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "So did I 表示 B 也在午餐前完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Neither did I 用於附和否定句，但 A 是肯定完成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I didn't, either 表示 B 未完成，和 A 不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "午餐時仍在工作也表示 B 沒有同樣結果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-reply-sharing-finished-result",
+    "match-so-did-to-past-positive-statement"
+  ],
+  "representationType": "same-result-reply-selection",
+  "misconceptionTargets": [
+    "use-neither-after-positive-past"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "A 的 finished 是肯定的過去完成結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項用 did 代替 finished the work 並表達肯定附和。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

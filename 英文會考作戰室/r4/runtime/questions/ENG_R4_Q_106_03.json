@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "They ___ arrive before the doors closed last night.",
+  "options": [
+    "don't",
+    "doesn't",
+    "didn't",
+    "aren't"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "don't 表示現在，和 last night 不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 既是現在式，也不配合 they。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "didn't 表示過去否定，後接原形 arrive。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "aren't 不能直接連接 arrive。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "anchor-arrival-failure-to-last-night",
+    "use-did-not-before-arrive"
+  ],
+  "representationType": "past-negative-cloze",
+  "misconceptionTargets": [
+    "use-present-negative-with-past-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "last night 與 closed 鎖定過去時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只在 did 上標過去，arrive 不再變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

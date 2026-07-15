@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Has Nora finished the report? No, ___.",
+  "options": [
+    "she isn't",
+    "she doesn't",
+    "she didn't",
+    "she hasn't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "isn't 不能回應 has finished 的完成式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 會把問題改成一般現在式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "didn't 改變時態，也沒有沿用 has。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "hasn't 正確否定 has，she 則承接 Nora。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-negative-perfect-reply-for-nora",
+    "retain-has-auxiliary-from-question"
+  ],
+  "representationType": "negative-perfect-short-answer",
+  "misconceptionTargets": [
+    "answer-perfect-question-with-didnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Has...finished 是現在完成式，簡答不可改用 do 或 be。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "否定回答把 has not 縮寫為 hasn't。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

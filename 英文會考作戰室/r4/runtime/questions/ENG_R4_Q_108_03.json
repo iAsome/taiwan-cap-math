@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Did the workers lock the gate? Yes, ___.",
+  "options": [
+    "they do",
+    "they were",
+    "they did",
+    "they have"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "do 是現在式，沒有保留問句的 did。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "were 屬於 be 動詞，問句問的是 lock 這個動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "did 與問句的過去式助動詞一致，they 也承接 workers。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "have 會改成完成式，並非原問句的時態。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "retain-past-did-in-worker-reply",
+    "map-plural-workers-to-they"
+  ],
+  "representationType": "past-short-answer-cloze",
+  "misconceptionTargets": [
+    "answer-did-question-with-do"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Did 已經標示過去，肯定簡答要重複 did。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "複數 workers 在回應中應使用 they。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

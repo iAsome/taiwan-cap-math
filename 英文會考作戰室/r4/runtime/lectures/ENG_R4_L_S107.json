@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S107",
+  "subject": "english",
+  "unitId": "ENG_R4_U16",
+  "skillId": "ENG_R4_S107",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S106"
+  ],
+  "objectives": [
+    "在會考採用的標準書面英語中，一個子句使用一套清楚的否定結構。",
+    "在 not...any 與 no、never 與 ever 等形式間選擇，不讓兩個否定詞互相衝突。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S107_SEC_01",
+      "title": "標準書面英語通常避免同一子句雙重否定",
+      "content": "I don't have any money. 與 I have no money. 都表示沒有錢，但不能混成 I don't have no money 來表達相同意思。這是會考採用的標準書面規則；不同口語變體可能另有用法，不應因此評斷說話者。"
+    },
+    {
+      "id": "ENG_R4_L_S107_SEC_02",
+      "title": "否定助動詞常搭配 any 系列",
+      "content": "don't、doesn't、didn't 之後可使用 any、anyone、anything，例如 We didn't see anyone.。若改用 nobody、nothing 等本身含否定意義的字，前面的動詞通常改為肯定形式：We saw nobody.。"
+    },
+    {
+      "id": "ENG_R4_L_S107_SEC_03",
+      "title": "never 本身已包含 not 的意義",
+      "content": "She never drinks coffee. 已表示她從不喝咖啡，不再寫 doesn't never。詢問經驗時可用 ever，如 Have you ever been there?；否定回答則可說 I have never been there.。"
+    },
+    {
+      "id": "ENG_R4_L_S107_SEC_04",
+      "title": "先找否定範圍，再選一套完整寫法",
+      "content": "看到 no、nobody、nothing、never 時，先確認同一子句是否又有 not、don't、didn't。修正時不是任意刪字，而是保留完整意思：I didn't buy anything 或 I bought nothing 都可以，時態與受詞也要一起檢查。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S107_EX_01",
+      "prompt": "I don't need ___ help. (any / no / never)",
+      "steps": [
+        "don't 已提供否定。",
+        "help 是否定範圍內的名詞。",
+        "使用 any 避免第二個否定詞。"
+      ],
+      "answer": "any",
+      "why": "don't 已使 need 成為否定，所以搭配 any help。no 會和 don't 形成雙重否定，never 則不能直接修飾 help。"
+    },
+    {
+      "id": "ENG_R4_L_S107_EX_02",
+      "prompt": "___ called me last night. (Nobody / Anybody didn't / Nobody didn't)",
+      "steps": [
+        "意思是昨晚沒有人打電話。",
+        "選一個本身含否定的主詞。",
+        "其後動詞保持肯定過去式 called。"
+      ],
+      "answer": "Nobody",
+      "why": "Nobody 本身表示沒有人，因此直接接 called。Nobody didn't 同時否定兩次，Anybody didn't 也不是這個意思的標準排列。"
+    },
+    {
+      "id": "ENG_R4_L_S107_EX_03",
+      "prompt": "Mia has ___ seen snow. (never / not never / no)",
+      "steps": [
+        "has seen 是現在完成式。",
+        "要表達從未有此經驗。",
+        "使用單一否定副詞 never。"
+      ],
+      "answer": "never",
+      "why": "has never seen 用 never 表達到目前為止一次也沒有。not never 形成不同且不必要的雙重否定，no 不能放在 seen 前。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "兩個否定詞會讓否定語氣更強，所以考試中較正確。",
+      "whyWrong": "標準書面英語可能把兩個否定解成衝突或另一種意思。",
+      "correction": "在同一子句選 don't...any 或 no 其中一套。"
+    },
+    {
+      "belief": "nobody 前一定要再加 didn't 才能表示過去沒有發生。",
+      "whyWrong": "nobody 已否定主詞，過去時間由 called 等動詞表達。",
+      "correction": "使用 Nobody called.。"
+    },
+    {
+      "belief": "never 只是頻率副詞，不含否定。",
+      "whyWrong": "never 已表示在任何時候都沒有。",
+      "correction": "寫 She never goes there.，不加 doesn't。"
+    },
+    {
+      "belief": "刪掉任一否定字都一定能保留原意。",
+      "whyWrong": "刪字後還要檢查 any/no 與動詞時態是否構成完整句子。",
+      "correction": "比較 didn't buy anything 與 bought nothing，再完整改寫。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "I didn't see nobody 的標準寫法可如何改？",
+      "answer": "I didn't see anybody.",
+      "reason": "didn't 已否定動詞，受詞改用 anybody。"
+    },
+    {
+      "prompt": "Nothing happened 是否還要加 didn't？",
+      "answer": "不用",
+      "reason": "Nothing 已是否定主詞。"
+    },
+    {
+      "prompt": "never 和 not never 的意思相同嗎？",
+      "answer": "不同",
+      "reason": "not never 不是單純加強 never。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  }
+}

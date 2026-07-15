@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The bus wasn't late. Neither ___ the train.",
+  "options": [
+    "did",
+    "is",
+    "were",
+    "was"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "did 不對應 was late 的 be 動詞結構。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 改成現在式，沒有保留 wasn't 的時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "were 不和單數 the train 配合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "was 由 wasn't 還原為肯定形式，並配合單數 train。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "restore-was-from-wasnt",
+    "match-was-to-singular-train"
+  ],
+  "representationType": "neither-past-be-inversion",
+  "misconceptionTargets": [
+    "use-wasnt-after-neither"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Neither 後使用 wasn't 所含的助動詞 was，但不再加 not。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "the train 是單數，排除複數 were。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

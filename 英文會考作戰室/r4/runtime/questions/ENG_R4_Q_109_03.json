@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben was tired after the game. I was tired, ___.",
+  "options": [
+    "either",
+    "neither",
+    "too",
+    "no"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "either 通常接在否定句尾，但 was tired 是肯定句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "neither 不能作為這個完整肯定句的句尾附和。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "too 表示我也累，和 Ben 的情況一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "no 不能放在逗號後形成此種附和句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "separate-tired-meaning-from-clause-polarity",
+    "attach-too-to-past-be-statement"
+  ],
+  "representationType": "positive-state-too-cloze",
+  "misconceptionTargets": [
+    "treat-tired-as-grammatical-negative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "tired 雖是不舒服的狀態，句法上仍是肯定的 was tired。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使用 too，不會因詞義不愉快而誤選 either。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

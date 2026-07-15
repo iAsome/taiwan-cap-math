@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The lights aren't on. The fan isn't on, ___.",
+  "options": [
+    "too",
+    "either",
+    "also",
+    "so"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "too 通常附和肯定完整句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "either 接在 isn't on 後，表示風扇也沒有開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "also 在這個否定句尾的位置不自然。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "so 不能直接放在完整句尾表達否定附和。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "link-two-negative-device-states",
+    "position-either-after-isnt-on"
+  ],
+  "representationType": "be-negative-either",
+  "misconceptionTargets": [
+    "use-too-after-isnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "aren't 與 isn't 都讓所在子句成為否定句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 either 連結兩個未開啟的設備狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

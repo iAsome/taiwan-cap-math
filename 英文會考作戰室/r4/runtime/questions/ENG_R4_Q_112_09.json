@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I wanted the blue bag, but it was too expensive, so I bought the black one. Which bag did A buy?",
+  "options": [
+    "The black bag",
+    "The blue bag",
+    "Both bags",
+    "No bag"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "bought the black one 直接指出最後購買黑色包。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wanted the blue bag 只是原本偏好，but 後價格改變了決定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中只說買了 the black one，沒有買兩個。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A 明確使用 bought，因此不是沒買。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "follow-wanted-but-so-purchase-sequence",
+    "resolve-one-to-black-bag"
+  ],
+  "representationType": "dialogue-event-outcome",
+  "misconceptionTargets": [
+    "choose-initial-preference-over-final-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "判斷行動要讀到 so 後的結果，不停在 wanted。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項和代名詞 one 所承接的 black bag 一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

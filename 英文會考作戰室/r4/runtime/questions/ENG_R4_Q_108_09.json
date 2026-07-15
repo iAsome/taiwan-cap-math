@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Do your parents work on Sunday? Yes, ___.",
+  "options": [
+    "they do",
+    "you do",
+    "they are",
+    "we work"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "they do 以 they 代替 your parents，並沿用 do。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "you 指向聽者本人，沒有承接 parents。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are 不回應 work 這個一般動詞問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "we 會把回答者算入 parents，且不是標準簡答形式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "shift-your-parents-to-they",
+    "shorten-do-work-question-with-do"
+  ],
+  "representationType": "perspective-shift-short-answer",
+  "misconceptionTargets": [
+    "retain-you-in-answer-about-parents"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "your parents 從提問者角度是複數第三人稱，回答時用 they。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Do 開頭的肯定簡答保留 do，不重複主要動詞 work。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

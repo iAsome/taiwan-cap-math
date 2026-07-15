@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S111",
+  "subject": "english",
+  "unitId": "ENG_R4_U16",
+  "skillId": "ENG_R4_S111",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S110"
+  ],
+  "objectives": [
+    "依回答中的 Yes 或 No 判斷否定問句所確認的實際事實。",
+    "讓簡答中的助動詞與代名詞對應問句，不用中文否定問法直接套答案。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S111_SEC_01",
+      "title": "Yes 肯定後面的事實，No 否定後面的事實",
+      "content": "Aren't you ready? — Yes, I am. 表示我準備好了；No, I am not. 表示我還沒準備好。英文 Yes 與 No 主要對應回答內容的肯定或否定，不因問句含 not 就顛倒。"
+    },
+    {
+      "id": "ENG_R4_L_S111_SEC_02",
+      "title": "一般動詞否定問句仍沿用 do 系列簡答",
+      "content": "Doesn't Mia live here? — Yes, she does. 表示 Mia 住這裡；No, she doesn't. 表示她不住這裡。判讀時把簡答展開成 she does live 或 she doesn't live，較不易受中文語序影響。"
+    },
+    {
+      "id": "ENG_R4_L_S111_SEC_03",
+      "title": "情態與完成式依原助動詞回答",
+      "content": "Can't Ben swim? — No, he can't. 表示 Ben 不會游泳；Hasn't Amy left? — Yes, she has. 表示 Amy 已離開。先讀簡答動詞，再判斷被確認的命題。"
+    },
+    {
+      "id": "ENG_R4_L_S111_SEC_04",
+      "title": "附加理由能幫助檢查解讀",
+      "content": "Isn't the shop open? — No, it isn't. The door is locked. 後句支持店沒開。若簡答與理由看似衝突，應重新檢查代名詞、否定縮寫及指涉，不要只翻譯問句表面。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S111_EX_01",
+      "prompt": "Aren't you cold? Yes, I am. Is the speaker cold?",
+      "steps": [
+        "Yes 引出肯定簡答。",
+        "I am 肯定 cold 的狀態。",
+        "判定說話者覺得冷。"
+      ],
+      "answer": "Yes, the speaker is cold.",
+      "why": "Yes, I am 肯定 I am cold，即使原問句寫 Aren't you cold。不能把中文的反問直覺套成不冷。"
+    },
+    {
+      "id": "ENG_R4_L_S111_EX_02",
+      "prompt": "Doesn't Leo need a ticket? No, he doesn't. Does Leo need one?",
+      "steps": [
+        "No 引出否定簡答。",
+        "he doesn't 展開為 he doesn't need a ticket。",
+        "判定 Leo 不需要票。"
+      ],
+      "answer": "No, he does not need a ticket.",
+      "why": "No, he doesn't 否定 Leo needs a ticket 這件事，因此 Leo 不需要票。問句中的 doesn't 不會把 No 反轉成肯定。"
+    },
+    {
+      "id": "ENG_R4_L_S111_EX_03",
+      "prompt": "Hasn't the bus left? Yes, it has. Where is the bus now?",
+      "steps": [
+        "Yes, it has 肯定完成式。",
+        "已完成的動作是 leave。",
+        "判定公車已不在原處。"
+      ],
+      "answer": "It has already left.",
+      "why": "Yes, it has 表示 the bus has left 為真，因此公車已離開。答案不能解成公車還在，只因問句含 hasn't。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "否定問句中的 Yes 一律要翻成中文的不是。",
+      "whyWrong": "英文 Yes 肯定回答子句，No 否定回答子句。",
+      "correction": "讀完整的 Yes, I am 或 No, I am not 再判斷事實。"
+    },
+    {
+      "belief": "Aren't you ready? — No, I am. 是標準一致簡答。",
+      "whyWrong": "No 應搭配否定內容，I am 卻是肯定。",
+      "correction": "選 Yes, I am 或 No, I am not。"
+    },
+    {
+      "belief": "Doesn't she work here? — Yes, she does 表示她不在這裡工作。",
+      "whyWrong": "she does 肯定 work here。",
+      "correction": "把短答展開後再決定事實。"
+    },
+    {
+      "belief": "只看問句的 not 就能判斷答案，不必讀簡答。",
+      "whyWrong": "同一否定問句可得到肯定或否定兩種真實回答。",
+      "correction": "以 Yes/No 後的完整助動詞結構為準。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Isn't Mia home? Yes, she is 表示什麼？",
+      "answer": "Mia 在家",
+      "reason": "Yes, she is 肯定 home 狀態。"
+    },
+    {
+      "prompt": "Can't Sam drive? No, he can't 表示什麼？",
+      "answer": "Sam 不會開車",
+      "reason": "No, he can't 否定駕駛能力。"
+    },
+    {
+      "prompt": "Hasn't Amy called? Yes, she has 表示什麼？",
+      "answer": "Amy 已經打過電話",
+      "reason": "Yes, she has 肯定完成式動作。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  }
+}

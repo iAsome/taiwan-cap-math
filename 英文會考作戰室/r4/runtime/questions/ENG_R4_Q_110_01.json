@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia plays tennis after school. So ___ I.",
+  "options": [
+    "do",
+    "am",
+    "did",
+    "have"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "plays 是一般現在式，附和句以 do 代替 play tennis。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "am 只適用於前句主要結構是 be 動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did 會把現在習慣改成過去。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "have 不對應 plays 的一般現在式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "recover-do-from-present-plays",
+    "form-so-do-i-inversion"
+  ],
+  "representationType": "so-present-inversion-cloze",
+  "misconceptionTargets": [
+    "use-be-in-so-after-action-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "前句的 plays 決定使用 do 類助動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "新主詞是 I，所以肯定附和為 So do I。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

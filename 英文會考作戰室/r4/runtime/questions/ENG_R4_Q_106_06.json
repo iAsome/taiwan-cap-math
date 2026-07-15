@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The windows ___ open because the room is cold.",
+  "options": [
+    "don't",
+    "aren't",
+    "didn't",
+    "haven't"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "don't open 會表示窗戶不會開啟，並非現在開著與否的狀態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "aren't open 正確否定複數窗戶目前開著的狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "didn't 會轉成過去動作且缺少 close 的時態背景。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "haven't open 不是完成式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-open-as-current-window-state",
+    "agree-are-not-with-windows"
+  ],
+  "representationType": "state-negative-cloze",
+  "misconceptionTargets": [
+    "confuse-do-not-open-with-are-not-open"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "because the room is cold 說明眼前窗戶處於未開啟狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 are not 連接 plural windows 與形容詞 open。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The bus didn't stop here. The train didn't stop here, ___.",
+  "options": [
+    "too",
+    "neither",
+    "either",
+    "also"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "too 不搭配 didn't 形成句尾否定附和。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "neither 不能直接接在已完整的否定句後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "either 放在第二個 didn't 句尾，表示火車也沒有停。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "also 的正常位置不是此否定句句尾。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "compare-past-nonstop-events",
+    "add-either-to-second-didnt-clause"
+  ],
+  "representationType": "past-negative-either",
+  "misconceptionTargets": [
+    "append-neither-after-complete-negative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個 didn't stop 描述相同的過去否定事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓第二句保留完整語序，再以 either 附和。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Wendy is unhappy about the news. Ella is unhappy, ___.",
+  "options": [
+    "either",
+    "neither",
+    "not",
+    "too"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "either 需要句法上的否定，而 is unhappy 沒有 not。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "neither 不能放在這個肯定結構的句尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "not 無法完成第二句的附和意思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "too 表示 Ella 也不快樂；unhappy 的字義不會把句子變成否定句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "treat-unhappy-as-positive-clause-grammar",
+    "choose-too-despite-negative-emotion"
+  ],
+  "representationType": "semantic-negative-positive-syntax",
+  "misconceptionTargets": [
+    "use-either-after-unhappy"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "判斷 too 或 either 要看句法是否有否定標記，不看情緒好壞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩句都是 be 動詞肯定句，所以第四項唯一合適。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

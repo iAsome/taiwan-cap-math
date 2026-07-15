@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Would you like to play today? B: I can't today because I must help my father. Which idea cannot be known from the talk?",
+  "options": [
+    "B is busy helping a family member today.",
+    "B never likes playing games.",
+    "B cannot play today.",
+    "B tells why the answer is no today."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "must help my father 支持 B 今天忙著協助家人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一次因事不能玩，不能證明 B 永遠不喜歡遊戲。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "I can't today 直接支持今天不能玩。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 後的內容正是今天回答 no 的理由。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-one-day-refusal-from-permanent-dislike",
+    "identify-unsupported-never-conclusion"
+  ],
+  "representationType": "dialogue-overgeneralization-check",
+  "misconceptionTargets": [
+    "infer-permanent-preference-from-one-refusal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "today 將拒絕限制在單一日期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項加入 never 與喜好判斷，超出對話證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The players have agreed to join the game. A asks, 'Won't they join us?' B should answer ___.",
+  "options": [
+    "No, they will.",
+    "Yes, they won't.",
+    "Yes, they will.",
+    "No, they don't."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No 與 they will 的肯定命題方向不一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Yes, they won't 同時肯定與否定，不能表達已答應參加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "已答應參加支持 Yes, they will。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "don't 不回應 will，而且改成一般現在式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "map-agreement-evidence-to-will-join",
+    "answer-wont-question-affirmatively"
+  ],
+  "representationType": "future-negative-question-reply",
+  "misconceptionTargets": [
+    "match-yes-to-wont-word-form"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "agreed to join 提供未來參加的事實依據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以 Yes 肯定 they will join us。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

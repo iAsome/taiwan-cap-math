@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I don't need help with this box. B: I don't, either. What do the speakers agree about?",
+  "options": [
+    "Both want someone to carry the box.",
+    "Neither speaker needs help.",
+    "Only B needs help.",
+    "A needs help but B does not."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩人都說不需要幫忙，沒有要求別人搬。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "B 的 either 附和 A 的 don't need help。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B 也說 I don't，不能推成只有 B 需要。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A 與 B 的回答方向相同，不是相反。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "join-two-dont-need-help-statements",
+    "convert-either-dialogue-to-neither-summary"
+  ],
+  "representationType": "dialogue-negative-agreement-meaning",
+  "misconceptionTargets": [
+    "treat-either-as-one-person-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "either 連結兩個 don't need help 的否定陳述。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 neither 準確概括兩人都不需要協助。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

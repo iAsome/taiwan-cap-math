@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A train notice says, 'The train does not leave at six.' Which line says this correctly?",
+  "options": [
+    "The train isn't leave at six.",
+    "The train not leaves at six.",
+    "The train doesn't leaves at six.",
+    "The train doesn't leave at six."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "isn't 不能直接帶 leave。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "not 不能直接否定 leaves。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "doesn't 後不保留 leaves 的 s。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "doesn't leave 正確否定單數 train 的固定班次。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "translate-no-six-departure-into-negative-schedule",
+    "use-doesnt-leave-for-train"
+  ],
+  "representationType": "notice-negation-transfer",
+  "misconceptionTargets": [
+    "double-mark-third-person-in-negative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "notice 談的是六點固定班次，不是一次臨時過去事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項以現在簡單式描述時刻表，助動詞與原形分工正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

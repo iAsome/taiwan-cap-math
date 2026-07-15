@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "No letter came to the house all day. Which line says this with one negative?",
+  "options": [
+    "No letter arrived.",
+    "No letter didn't arrive.",
+    "A letter never didn't arrive.",
+    "Nothing didn't come no time."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "No letter 作否定主詞，arrived 保持肯定過去形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "no 與 didn't 同時否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "never 和 didn't 衝突，還把主詞改成一封信。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "nothing、didn't、no 疊加多重否定。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "convert-empty-mailbox-evidence-to-no-message",
+    "avoid-extra-didnt-after-no-subject"
+  ],
+  "representationType": "evidence-to-standard-negative",
+  "misconceptionTargets": [
+    "add-negative-helper-after-no-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "no letter came 和 no letter arrived 指向相同的送達結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只用 no letter 一個否定來源，時間由 arrived 表示。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

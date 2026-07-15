@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "They don't eat meat. Neither ___ we.",
+  "options": [
+    "are",
+    "did",
+    "do",
+    "don't"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "are 不對應 eat 這個一般現在式動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 會把習慣改成過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "do 取自 don't，並在 Neither 後保持肯定形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "don't 和 Neither 重複否定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "derive-do-from-present-negative",
+    "prevent-double-negative-in-neither-do-we"
+  ],
+  "representationType": "neither-present-inversion",
+  "misconceptionTargets": [
+    "repeat-dont-after-neither"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "前句的一般現在式助動詞是 do。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Neither 已經帶否定，因此倒裝部分寫 do we。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

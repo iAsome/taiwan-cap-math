@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia walks home after class. Which line correctly makes the sentence negative?",
+  "options": [
+    "Mia not walks home after class.",
+    "Mia isn't walk home after class.",
+    "Mia don't walks home after class.",
+    "Mia doesn't walk home after class."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "not 不能直接放在 walks 前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "isn't 不能帶原形 walk 表示一般習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Mia 需要 does，而且 walks 不應保留 s。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "doesn't 配合 Mia，walk 回到原形。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "negate-mia-walking-habit",
+    "transfer-s-from-walks-to-doesnt"
+  ],
+  "representationType": "statement-negation-task",
+  "misconceptionTargets": [
+    "place-not-before-inflected-main-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "原句是第三人稱現在簡單式的一般動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只改肯否定，不改 after class 的時間範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

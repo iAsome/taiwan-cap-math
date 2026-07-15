@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Mia has ___ seen snow.",
+  "options": [
+    "no",
+    "not never",
+    "never",
+    "doesn't never"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "no 不能直接修飾 seen。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "not never 不是單純的從未經驗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "never 放在 has 與 seen 間，表示到目前一次也沒有。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "doesn't 不能插入完成式，也和 never 重複否定。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "insert-never-in-perfect-experience",
+    "reject-not-never-as-simple-negative"
+  ],
+  "representationType": "never-perfect-cloze",
+  "misconceptionTargets": [
+    "combine-doesnt-with-never"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "has seen 建立現在完成式，所缺的是經驗頻率副詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以單一 never 清楚否定所有過去到現在的經驗。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Jack can't lift the box. Victor can't lift it, ___.",
+  "options": [
+    "too",
+    "either",
+    "also",
+    "neither"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "too 通常在肯定句尾表示也，這裡的 can't 是否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "either 放在否定句尾，表示 Victor 也搬不動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "also 一般放在主要動詞前或 be 動詞後，不放在此句尾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "neither 需要另組成 Neither can Victor，不能直接接在完整句尾。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "classify-cant-lift-as-negative-agreement",
+    "select-sentence-final-either"
+  ],
+  "representationType": "negative-either-cloze",
+  "misconceptionTargets": [
+    "append-too-to-negative-modal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩句都含 can't，因此是相同的否定情況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完整否定句後的附和字應為 either。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

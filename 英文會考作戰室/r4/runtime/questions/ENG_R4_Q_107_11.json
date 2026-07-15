@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A writer means that the day was quiet but writes, 'Nothing didn't happen.' Which change says the idea clearly?",
+  "options": [
+    "Anything didn't happen.",
+    "Nothing not happened.",
+    "Nothing happened.",
+    "Nothing did happened."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Anything didn't 不是自然主詞否定排列。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "not 不能直接放在 happened 前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Nothing 本身表示沒有事情發生，happened 保持肯定過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did happened 重複過去標記，且未解決否定。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-nothing-didnt-with-intended-zero-event",
+    "keep-past-happened-after-negative-subject"
+  ],
+  "representationType": "double-negative-repair",
+  "misconceptionTargets": [
+    "remove-negative-pronoun-instead-of-helper"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "the day was quiet 提供沒有事情發生的目標意思。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項刪除多餘 didn't，讓 Nothing 成為唯一否定主詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The pool is closed, so we ___ swim there today.",
+  "options": [
+    "cannot",
+    "do not can",
+    "are not can",
+    "did not can"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "cannot 直接否定情態助動詞 can，符合今天無法游泳。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do not 與 can 不應在此堆疊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "are not 不能再接 can。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "did not can 同時混合過去 do 與情態助動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "derive-current-swimming-impossibility",
+    "negate-can-without-do-support"
+  ],
+  "representationType": "modal-negative-cloze",
+  "misconceptionTargets": [
+    "add-do-before-modal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "closed 說明今天的限制，所需意思是 cannot swim。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項後接 swim 原形，結構只有一個助動詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

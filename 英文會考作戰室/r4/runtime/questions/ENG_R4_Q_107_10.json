@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Leo says, 'I am not unhappy, but I am not very happy, either.' How does Leo feel?",
+  "options": [
+    "He is never happy.",
+    "He does not feel unhappy or very happy.",
+    "He does not feel anything.",
+    "He is unhappy all the time."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo 沒有說自己永遠不快樂。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第二項分別保留 not unhappy 與 not very happy，沒有擴大語氣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子仍清楚描述感受，不能推成沒有任何感覺。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "unhappy all the time 和 Leo 的兩個否定陳述都衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-negation-of-negative-adjective",
+    "avoid-collapsing-not-unhappy-into-unhappy"
+  ],
+  "representationType": "negation-scope-meaning",
+  "misconceptionTargets": [
+    "treat-two-negative-parts-as-strong-negative"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩個 not 各自作用在不同形容詞片語，不是互相抵消。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時保留不算難過與沒有非常開心這兩個界線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

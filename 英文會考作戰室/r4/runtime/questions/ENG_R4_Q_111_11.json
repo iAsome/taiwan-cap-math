@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Haven't you read my message? B: I read it this morning. Which short answer should B use?",
+  "options": [
+    "No, I haven't.",
+    "Yes, I did.",
+    "Yes, I have.",
+    "No, I don't."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I read it 已證明讀過，不能回答 haven't。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did 與事實相容，但題目要求回應 Have 開頭問句的簡答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Yes, I have 肯定已讀訊息，並沿用問句助動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "don't 既改變結構，也否定了已讀事實。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "connect-read-evidence-to-have-read",
+    "prefer-matching-have-in-short-reply"
+  ],
+  "representationType": "negative-perfect-dialogue-reply",
+  "misconceptionTargets": [
+    "answer-have-question-with-did"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "this morning 的 read 提供完成閱讀的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "簡答需回扣 Haven't you，因此第三項在方向與助動詞上都一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

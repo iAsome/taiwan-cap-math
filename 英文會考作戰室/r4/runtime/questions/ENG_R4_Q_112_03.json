@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I can meet at four. B: I can't. How are their answers different?",
+  "options": [
+    "Both can meet at four.",
+    "Neither can meet at four.",
+    "A can meet then, but B cannot.",
+    "B can meet before A."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "B 的 can't 排除兩人都能見面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A 已說 I can，所以不是兩人都不能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "A 的 can 與 B 的 can't 形成明確相反情況。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "對話沒有提供 B 能較早見面的資訊。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "contrast-can-and-cant-across-speakers",
+    "avoid-inventing-earlier-meeting-time"
+  ],
+  "representationType": "dialogue-opposite-ability",
+  "misconceptionTargets": [
+    "ignore-negation-in-second-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個回答只在 can 與 can't 上相反。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不增加其他時間，只保留四點能否見面的差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

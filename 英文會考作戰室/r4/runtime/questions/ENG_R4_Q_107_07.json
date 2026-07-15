@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sam never ___ late for practice.",
+  "options": [
+    "doesn't arrive",
+    "don't arrive",
+    "arrives",
+    "not arrives"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "never 已否定，不能再加 doesn't。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "don't 既重複否定也不配合 Sam。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "arrives 配合 Sam，never 單獨表達從不遲到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "not 不能直接放在 arrives 前形成此結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "treat-never-as-sole-negative-marker",
+    "agree-arrives-with-sam"
+  ],
+  "representationType": "never-habit-cloze",
+  "misconceptionTargets": [
+    "add-doesnt-after-never"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "never 本身已涵蓋每次練習的否定頻率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓動詞保持肯定形式並配合第三人稱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

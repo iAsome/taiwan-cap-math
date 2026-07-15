@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "May I open the window? Yes, ___.",
+  "options": [
+    "you are",
+    "you do",
+    "you may",
+    "I may"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "are 不回應 may 所提出的許可問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do 不能代替情態助動詞 may。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回答者對提問者說 you may，助動詞也與問句一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I may 仍指提問者自己的 I，沒有完成視角轉換。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "shift-i-to-you-in-permission-reply",
+    "echo-may-without-changing-modal"
+  ],
+  "representationType": "permission-short-answer",
+  "misconceptionTargets": [
+    "keep-i-in-response-to-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問句中的 I 對回答者而言是 you。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求以同一助動詞形成簡答，因此選 you may。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

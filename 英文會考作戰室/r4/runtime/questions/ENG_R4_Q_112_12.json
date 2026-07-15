@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I thought the room was empty, but then Mia and Ben spoke to me from inside. What does A understand now?",
+  "options": [
+    "The room was empty all day.",
+    "Mia and Ben were outside.",
+    "A has entered the room.",
+    "Someone is inside the room."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Mia and Ben spoke from inside 和房間無人的想法相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "from inside 明確排除兩人在室外。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A 是否進入房間沒有被說明。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩人從房內說話，足以確定房內有人。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "revise-empty-room-belief-from-voices",
+    "infer-minimum-presence-without-identity"
+  ],
+  "representationType": "dialogue-evidence-revision",
+  "misconceptionTargets": [
+    "retain-initial-belief-after-new-evidence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "but then 引入可推翻原先想法的新證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只下最低限度結論，不猜 A 是否進門。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Every visitor needs a ticket, and Sam is a visitor. A asks, 'Doesn't Sam need a ticket?' B should say ___.",
+  "options": [
+    "No, he doesn't.",
+    "Yes, he does.",
+    "No, he isn't.",
+    "Yes, he is."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "規則涵蓋 Sam，因此不能否定他需要票。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Yes, he does 肯定 Sam needs a ticket，符合兩項前提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "isn't 不回應 need 這個一般動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is 雖為肯定，但助動詞沒有配合 Does 問句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "apply-visitor-ticket-rule-to-sam",
+    "form-yes-he-does-to-negative-do-question"
+  ],
+  "representationType": "rule-based-negative-question",
+  "misconceptionTargets": [
+    "let-negative-question-reverse-known-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "all visitors 與 Sam is a visitor 可推出 Sam needs a ticket。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用 does 回應 Doesn't，並以 Yes 肯定該結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

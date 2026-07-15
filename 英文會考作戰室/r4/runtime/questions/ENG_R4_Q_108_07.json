@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Are the boys ready to leave? Yes, ___.",
+  "options": [
+    "he is",
+    "they do",
+    "they are",
+    "the boys do"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "he is 是單數，不能承接 boys。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do 不回應 Are 開頭的 be 動詞問句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "they are 同時配合複數 boys 與問句的 are。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the boys do 不但未改成代名詞，也用了錯誤助動詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "coordinate-are-with-they-for-boys",
+    "reject-singular-pronoun-in-plural-reply"
+  ],
+  "representationType": "plural-be-short-answer",
+  "misconceptionTargets": [
+    "use-he-for-boys"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Are 決定肯定簡答仍使用 are。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "the boys 是複數第三人稱，在簡答中換成 they。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

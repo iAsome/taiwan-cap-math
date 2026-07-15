@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Can Lily ride this bike? No, ___.",
+  "options": [
+    "she doesn't",
+    "she isn't",
+    "she won't",
+    "she can't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "doesn't 回應一般動詞現在式，沒有沿用 can。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "isn't 回應 be 動詞，不能表示沒有騎車能力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "won't 表示不願或未來不會，改變了能力問題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "can't 是 can 的否定簡答，she 也正確代替 Lily。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "negate-can-with-cant-in-short-reply",
+    "preserve-ability-meaning-for-lily"
+  ],
+  "representationType": "modal-short-answer-cloze",
+  "misconceptionTargets": [
+    "replace-cant-with-wont"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "問句測的是 can 所表達的能力，不是習慣或未來意願。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "否定回答需同時保留 can 並把 Lily 換成 she。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

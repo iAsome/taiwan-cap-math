@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Will Sam join the game tonight? No, ___.",
+  "options": [
+    "he doesn't",
+    "he won't",
+    "he isn't",
+    "he didn't"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "doesn't 是一般現在式簡答，不能回應 will。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "won't 是 will not 的縮寫，正確回應未來是否參加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "isn't 回應 be 動詞，與 join 的未來問句無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "didn't 會改成已發生的過去事件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "contract-will-not-in-sam-reply",
+    "keep-future-time-in-short-answer"
+  ],
+  "representationType": "future-short-answer-cloze",
+  "misconceptionTargets": [
+    "answer-will-question-with-doesnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "tonight 與 will 建立未來情境，否定簡答應保留 will。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Sam 以 he 承接，因此完整簡答是 he won't。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

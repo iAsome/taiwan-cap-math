@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes 'Ben can't skate, and neither can't Leo.' Which change is needed?",
+  "options": [
+    "neither isn't Leo",
+    "neither doesn't Leo",
+    "neither can Leo",
+    "neither could Leo"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "isn't 不對應前句的 can。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 既換了助動詞，也仍在 Neither 後重複否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "can 保留相同能力助動詞，Neither 已提供否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "could 會改變 can 所表達的現在能力。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "diagnose-negative-modal-after-neither",
+    "repair-cant-to-can-in-inversion"
+  ],
+  "representationType": "neither-modal-repair",
+  "misconceptionTargets": [
+    "double-negate-neither-with-cant"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤在 Neither 後又用了 can't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項刪除多餘 not，並維持前句的 can 與現在時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

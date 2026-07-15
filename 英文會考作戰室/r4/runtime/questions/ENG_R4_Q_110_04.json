@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Jack didn't take the early bus. Neither ___ Victor.",
+  "options": [
+    "does",
+    "was",
+    "had",
+    "did"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does 是現在式，與 didn't 不同時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was 不對應 take 這個一般動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "had 會改成過去完成式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "did 沿用前句的過去助動詞，表示 Victor 也沒搭。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "extract-did-from-didnt-take",
+    "avoid-negative-didnt-after-neither"
+  ],
+  "representationType": "neither-past-inversion",
+  "misconceptionTargets": [
+    "use-didnt-after-neither"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "didn't take 標示過去的一般動詞否定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Neither 已表達否定，後面只需肯定形式 did。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

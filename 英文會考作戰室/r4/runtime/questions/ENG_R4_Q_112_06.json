@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I don't drink coffee. B: I do. What does B show?",
+  "options": [
+    "B does not drink coffee, either.",
+    "B has a different habit.",
+    "B drank coffee only once.",
+    "B does not understand A."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I do 肯定 drink coffee，並非也不喝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "A 的 don't 與 B 的 do 顯示習慣不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一般現在式沒有說只喝過一次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "B 直接以 do 回應，不能推成沒有理解。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "recover-drink-coffee-after-i-do",
+    "classify-do-versus-dont-as-opposition"
+  ],
+  "representationType": "elliptical-opposite-habit",
+  "misconceptionTargets": [
+    "assume-short-do-always-agrees"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二位說話者省略了重複的 drink coffee。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "肯定 do 與前句 don't 對比，支持第二項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

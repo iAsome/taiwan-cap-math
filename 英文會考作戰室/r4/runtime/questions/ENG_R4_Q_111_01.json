@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Aren't you ready? B: Yes, I am. Which fact is true?",
+  "options": [
+    "B is ready.",
+    "B is not ready.",
+    "B was ready yesterday.",
+    "B does not understand the question."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Yes, I am 肯定 I am ready，所以 B 已準備好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若 B 尚未準備好，應回答 No, I am not。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "回答沒有提供 yesterday 的過去資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "簡答直接回應 ready 狀態，不能推成不懂問題。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-yes-to-negative-ready-question",
+    "recover-positive-ready-proposition"
+  ],
+  "representationType": "negative-question-fact-interpretation",
+  "misconceptionTargets": [
+    "translate-yes-as-not-ready"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "否定問句中的 Yes 仍肯定後面的 I am。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只陳述回答可確定的現在事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

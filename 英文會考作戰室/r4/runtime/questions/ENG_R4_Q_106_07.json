@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sam didn't ___ to the office yesterday.",
+  "options": [
+    "went",
+    "goes",
+    "go",
+    "going"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "went 會與 didn't 重複過去標記。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "goes 是現在第三人稱形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "go 是 didn't 後所需的原形。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "going 需要進行式助動結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "remove-past-from-go-after-didnt",
+    "complete-office-absence-negative"
+  ],
+  "representationType": "base-form-after-negative-did",
+  "misconceptionTargets": [
+    "retain-irregular-past-after-didnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "didn't 已承擔 yesterday 的過去時態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓主要動詞回到 go，避免 did 與 went 同時出現。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

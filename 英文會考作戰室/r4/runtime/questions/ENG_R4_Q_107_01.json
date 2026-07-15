@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "I don't have ___ money with me.",
+  "options": [
+    "any",
+    "no",
+    "nothing",
+    "never"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "any 可放在 don't have 的否定範圍內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "no 會和 don't 形成雙重否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "nothing 不能直接修飾 money。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "never 不能作 money 的限定詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "pair-dont-have-with-any",
+    "avoid-no-after-negative-helper"
+  ],
+  "representationType": "negative-any-cloze",
+  "misconceptionTargets": [
+    "stack-dont-and-no"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "don't 已經提供否定，名詞 money 使用 any。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留我身上沒錢的單一否定意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

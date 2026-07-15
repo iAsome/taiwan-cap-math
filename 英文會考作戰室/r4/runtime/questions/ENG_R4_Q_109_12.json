@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I finished my report this morning. B: I finished mine, ___.",
+  "options": [
+    "either",
+    "neither",
+    "not",
+    "too"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "either 不跟在 finished 這個肯定句後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "neither 會表達否定附和，和 B 已完成的句子衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "not 不能在句尾補出『也完成』的意思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "too 表示 B 也完成自己的報告，正好回應 A。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "resolve-mine-and-shared-completion",
+    "close-positive-dialogue-with-too"
+  ],
+  "representationType": "dialogue-too-transfer",
+  "misconceptionTargets": [
+    "select-either-by-habit-without-reading-polarity"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩人都說 finished，對話要表達相同的肯定結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "mine 已代替 my report，句尾只需用 too 完成附和。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Is Amy at home? Yes, ___.",
+  "options": [
+    "she is",
+    "she does",
+    "she has",
+    "she can"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "問句以 is 開頭，肯定簡答沿用 is，並以 she 代替 Amy。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 用來回應一般動詞問句，不回應 Is Amy。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has 並未出現在問句中，也不是此處的 be 動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "can 表示能力，和詢問是否在家的問句不相符。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "match-is-question-with-is-short-answer",
+    "replace-amy-with-she-in-reply"
+  ],
+  "representationType": "be-short-answer-cloze",
+  "misconceptionTargets": [
+    "answer-be-question-with-do"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Is Amy 決定簡答的助動詞是 is。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Amy 是單數女性人名，簡答主詞應改為 she。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

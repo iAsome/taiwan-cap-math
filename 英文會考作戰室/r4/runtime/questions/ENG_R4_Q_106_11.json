@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes 'The children doesn't need tickets.' Which change makes the sentence correct?",
+  "options": [
+    "The children isn't need tickets.",
+    "The children doesn't needs tickets.",
+    "The children don't need tickets.",
+    "The children didn't needs tickets."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "isn't 不能帶 need 表示一般需要。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "children 是複數，且 needs 仍重複人稱。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "don't 配合複數 children，need 保持原形。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "didn't 後不能接 needs，並會改成過去。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "diagnose-number-error-in-negative-helper",
+    "repair-children-with-do-not"
+  ],
+  "representationType": "negative-agreement-repair",
+  "misconceptionTargets": [
+    "use-doesnt-with-plural-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤同時涉及複數主詞與 does 的選擇。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項修正助動詞而不改變現在需要票的命題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

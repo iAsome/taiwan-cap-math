@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Leo doesn't watch TV at night. Mia doesn't watch TV, either. What is true?",
+  "options": [
+    "Neither Leo nor Mia watches TV at night.",
+    "Only Leo watches TV at night.",
+    "Mia watches TV but Leo does not.",
+    "Both of them watch TV at night."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩個否定句合起來表示 Leo 和 Mia 晚上都不看電視。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原文沒有說 Leo 會看，反而明確說 doesn't watch。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Mia 的句尾 either 表示她與 Leo 一樣不看。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "both watch 與兩個 doesn't watch 完全相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-shared-negative-tv-habit",
+    "paraphrase-two-either-clauses-with-neither-nor"
+  ],
+  "representationType": "either-meaning-interpretation",
+  "misconceptionTargets": [
+    "read-either-as-choice-between-people"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "either 把 Mia 的否定情況連到 Leo 的否定情況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項用 neither...nor 準確總結兩人都不看的事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

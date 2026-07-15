@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Could Grace hear the news? No, ___.",
+  "options": [
+    "she doesn't",
+    "Grace wasn't",
+    "she hasn't",
+    "she couldn't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "doesn't 會把 could 問句改成一般現在式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wasn't 回應 be 動詞，不能表示當時聽不到。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "hasn't 屬於完成式，未沿用 could。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "couldn't 是 could not 的縮寫，she 正確承接 Grace。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "answer-past-ability-with-couldnt",
+    "resolve-grace-pronoun-in-announcement-context"
+  ],
+  "representationType": "past-modal-short-answer",
+  "misconceptionTargets": [
+    "answer-could-question-with-wasnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Could 在此詢問過去是否聽得到，否定簡答必須保留 could。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Grace 換成 she 後，唯一完整匹配是 she couldn't。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

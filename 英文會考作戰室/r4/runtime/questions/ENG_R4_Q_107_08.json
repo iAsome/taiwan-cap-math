@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence has one negative part and no double negative?",
+  "options": [
+    "Nobody didn't answer.",
+    "I don't never eat fish.",
+    "We can't find nothing.",
+    "Nothing was broken."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nobody 與 didn't 同時否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "don't 與 never 重複否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "can't 與 nothing 疊加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Nothing 本身否定主詞，was broken 不再加 not。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "count-negative-markers-across-clauses",
+    "identify-nothing-with-affirmative-verb"
+  ],
+  "representationType": "negative-form-classification",
+  "misconceptionTargets": [
+    "count-only-not-and-ignore-negative-pronouns"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目要求標準書面形式中的單一否定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 Nothing 一次完成否定，其餘各有兩個否定來源。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

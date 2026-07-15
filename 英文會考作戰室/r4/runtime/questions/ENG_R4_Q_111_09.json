@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Aren't the shops open today? B: No, they aren't. What should a visitor expect?",
+  "options": [
+    "The shops are closed today.",
+    "The shops were open yesterday.",
+    "Only one shop is open.",
+    "The shops will open in a few minutes."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "No, they aren't 否定 shops are open，所以應預期今天關門。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "回答沒有提供昨天是否營業的資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "they aren't 表示這些商店不開，不能推成只開一家。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "簡答未提供稍後一定開門的資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "derive-closed-state-from-no-they-arent",
+    "avoid-unsupported-reopening-time"
+  ],
+  "representationType": "negative-question-practical-inference",
+  "misconceptionTargets": [
+    "assume-no-confirms-open"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "No 後的 aren't 是判讀營業狀態的核心。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不增加時間或數量猜測，只改述目前可知事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

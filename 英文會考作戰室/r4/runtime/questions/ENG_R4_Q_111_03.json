@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Can't Ben swim? B: Yes, he can. What does B say about Ben?",
+  "options": [
+    "Ben chooses not to swim.",
+    "Ben could swim only before.",
+    "Ben can swim.",
+    "Ben cannot swim."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "回答談能力，沒有提供 Ben 選擇不游泳的資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "can 是現在能力，不是只限過去的 could。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Yes, he can 肯定 Ben can swim。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cannot 與肯定簡答 he can 相反。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "affirm-can-swim-despite-negative-question",
+    "separate-ability-from-refusal"
+  ],
+  "representationType": "negative-modal-question-meaning",
+  "misconceptionTargets": [
+    "read-yes-he-can-as-cannot"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Yes 不受問句中的 n't 影響，仍肯定 can swim。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項和簡答的人稱、情態與動作完全一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

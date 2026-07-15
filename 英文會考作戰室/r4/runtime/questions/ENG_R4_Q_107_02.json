@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "___ called the office last night.",
+  "options": [
+    "Anybody didn't",
+    "Nobody",
+    "Nobody didn't",
+    "Not anybody"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Anybody didn't 不是標準主詞與助動排列。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Nobody 本身否定主詞，直接接 called。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nobody didn't 在同一子句使用兩個否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Not anybody 缺少能形成自然主詞片語的結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "select-negative-pronoun-as-subject",
+    "retain-affirmative-past-verb-after-nobody"
+  ],
+  "representationType": "negative-subject-cloze",
+  "misconceptionTargets": [
+    "add-didnt-after-nobody"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "意思是沒有任何人打電話，nobody 已完整表達。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用 called 標過去，不再加入 didn't。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

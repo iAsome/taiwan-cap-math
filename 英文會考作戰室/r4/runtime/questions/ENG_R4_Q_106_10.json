@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben has not eaten lunch. Which idea is true now?",
+  "options": [
+    "Ben ate lunch twice.",
+    "Ben has not eaten lunch yet.",
+    "Ben will never eat lunch.",
+    "Ben did not know what lunch was."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子否定的是完成用餐，不是說吃過兩次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "has not eaten 表示到目前仍未吃午餐。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "現在尚未吃不代表未來永遠不吃。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句沒有談 Ben 是否知道 lunch 的意思。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-present-perfect-negative-at-now",
+    "avoid-never-inference-from-not-yet"
+  ],
+  "representationType": "negative-time-meaning",
+  "misconceptionTargets": [
+    "turn-current-noncompletion-into-never"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完成式否定的時間界線是到現在。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項限縮在目前未吃午餐，沒有擴大成永久狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

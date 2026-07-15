@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The teacher's list shows that Wendy did not come to school. A asks, 'Wasn't Wendy at school?' B should answer ___.",
+  "options": [
+    "Yes, she wasn't.",
+    "No, she isn't.",
+    "Yes, she was.",
+    "No, she wasn't."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Yes 不和 she wasn't 的否定簡答一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "isn't 是現在式，無法回應老師記下的過去情況。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yes, she was 表示 Wendy 當時在校，和 did not come 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "No, she wasn't 表示 Wendy 當時不在校，符合清單資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "translate-absent-record-into-wasnt",
+    "select-no-for-false-school-presence"
+  ],
+  "representationType": "negative-past-be-evidence",
+  "misconceptionTargets": [
+    "answer-yes-because-question-hasnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "did not come to school 支持 Wendy was not at school。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時維持過去式與否定事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

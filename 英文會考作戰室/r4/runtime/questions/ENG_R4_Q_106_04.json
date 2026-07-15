@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_106_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Amy ___ finished the report yet.",
+  "options": [
+    "doesn't",
+    "isn't",
+    "didn't",
+    "hasn't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "doesn't 不能帶過去分詞 finished 形成完成式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "isn't finished 會把 Amy 誤成被完成的事物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "didn't 後應接 finish，而且不表達 yet 所需的到目前狀態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "hasn't finished 正確形成現在完成式否定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "read-yet-as-unfinished-present-perfect",
+    "combine-has-not-with-finished"
+  ],
+  "representationType": "perfect-negative-cloze",
+  "misconceptionTargets": [
+    "replace-perfect-helper-with-do"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "yet 與 finished 指到目前仍未完成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留過去分詞，否定放在 has 上。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

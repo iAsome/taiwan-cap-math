@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I am not worried about the rain. Which answer shows a different feeling?",
+  "options": [
+    "Neither am I.",
+    "I am not worried, either.",
+    "I am.",
+    "I feel fine, too."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Neither am I 表示 B 也不擔心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "not worried, either 是相同的否定態度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "I am 省略 worried，表示 B 確實擔心，與 A 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "fine 表示 B 也不擔心，仍與 A 相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-reply-opposing-not-worried",
+    "resolve-elliptical-i-am-as-worried"
+  ],
+  "representationType": "opposite-state-reply",
+  "misconceptionTargets": [
+    "mistake-neither-for-disagreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求找出不同感受，不能只看句型不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的 am 承接 worried，肯定 B 的擔心狀態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

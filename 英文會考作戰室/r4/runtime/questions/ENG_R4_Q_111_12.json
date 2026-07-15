@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Amy asked the speaker to repeat the news because she did not hear it. A asks, 'Couldn't Amy hear the news?' B should answer ___.",
+  "options": [
+    "Yes, she does.",
+    "No, she doesn't.",
+    "Yes, she could.",
+    "No, she couldn't."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does 不回應 could 的過去能力或情況。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 雖是否定，仍使用錯誤的現在助動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yes, she could 表示聽得到，和要求重說的原因衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "No, she couldn't 正確表達 Amy 當時沒聽到。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-couldnt-hear-from-repeat-request",
+    "answer-negative-could-question-with-no"
+  ],
+  "representationType": "contextual-negative-modal-reply",
+  "misconceptionTargets": [
+    "choose-yes-by-mirroring-couldnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "asked to repeat because she did not hear 是明確的過去否定證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 couldn't 保留問句形式，也和事實一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_107_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S107"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "There is no food in the box. Which line has the same meaning?",
+  "options": [
+    "There isn't any food in the box.",
+    "There isn't no food in the box.",
+    "There doesn't any food in the box.",
+    "There never is no food in the box."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "isn't any 使用單一否定，等於 no food。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "isn't 與 no 同時否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "there is 結構不能改用 doesn't。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "never 與 no 疊加且改變時間範圍。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "convert-no-food-to-not-any-food",
+    "preserve-there-be-structure"
+  ],
+  "representationType": "negative-paraphrase",
+  "misconceptionTargets": [
+    "combine-isnt-and-no"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "no food 與 not any food 是兩套可互換的標準寫法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只更換否定形式，仍限定同一個 box。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

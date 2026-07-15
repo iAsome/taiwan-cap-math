@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Doesn't Mia live near the station? B: No, she doesn't. What does B mean?",
+  "options": [
+    "Mia lived there before.",
+    "Mia does not live near the station.",
+    "Mia is at the station now.",
+    "Mia does not know where the station is."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "簡答沒有談以前住在哪裡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "No, she doesn't 否定 she lives near the station。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "live near 不是現在人在車站的意思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "住處回答不能推論 Mia 是否知道車站位置。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "decode-no-she-doesnt-after-negative-question",
+    "limit-inference-to-mia-residence"
+  ],
+  "representationType": "negative-do-question-meaning",
+  "misconceptionTargets": [
+    "treat-no-as-confirming-negative-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "No 後的 she doesn't 明確否定原命題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留相同主詞、地點與一般現在式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

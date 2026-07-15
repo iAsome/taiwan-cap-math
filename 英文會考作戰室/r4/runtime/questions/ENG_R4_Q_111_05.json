@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The door is locked. A asks, 'Isn't the door locked?' B should answer ___.",
+  "options": [
+    "Yes, it is.",
+    "No, it is.",
+    "Yes, it isn't.",
+    "No, it does."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "門確實鎖著，Yes 肯定 it is locked。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "No, it is 把否定詞與肯定簡答混在一起。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yes, it isn't 同時肯定又否定同一命題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "does 不能回應 is locked 的 be 動詞結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "answer-negative-be-question-from-locked-fact",
+    "coordinate-yes-with-it-is"
+  ],
+  "representationType": "evidence-based-negative-question-reply",
+  "misconceptionTargets": [
+    "pair-yes-with-isnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "已知事實 the door is locked 決定回答方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "英文 Yes, it is 的 Yes 與肯定簡答相互一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

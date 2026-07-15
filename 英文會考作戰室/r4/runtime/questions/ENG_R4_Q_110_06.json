@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "I am ready to begin. So ___ Sam.",
+  "options": [
+    "am",
+    "is",
+    "does",
+    "are"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "am 只和 I 配合，不能放在 Sam 前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is 配合新的第三人稱單數主詞 Sam。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does 不代替前句的 be 動詞 am。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 不和單數 Sam 配合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "change-am-to-is-for-new-subject",
+    "build-so-is-sam-agreement"
+  ],
+  "representationType": "so-be-subject-agreement",
+  "misconceptionTargets": [
+    "copy-am-before-sam"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "附和句沿用 be 動詞，但形式要依新主詞改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Sam 是單數第三人稱，因此答案不是照抄 am，而是 is。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

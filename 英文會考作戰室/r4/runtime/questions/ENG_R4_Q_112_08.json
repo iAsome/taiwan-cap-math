@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I won't visit the market today. B: Neither will I. What is their shared plan?",
+  "options": [
+    "They will visit at different times.",
+    "Only B will visit today.",
+    "They are already at the market.",
+    "Neither speaker will visit the market today."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Neither will I 表示相同的不去計畫，不是不同時間前往。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 並沒有肯定 will visit。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "對話談今天的未來計畫，沒有說已在市場。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩位說話者都表達今天不去市場。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "expand-neither-will-in-market-dialogue",
+    "state-shared-future-absence"
+  ],
+  "representationType": "shared-negative-plan",
+  "misconceptionTargets": [
+    "read-neither-will-as-b-will-go"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Neither will I 將 B 的未來行動連到 A 的 won't visit。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 today 的時間限制，不增加刻意避開等語氣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

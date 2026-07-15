@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_110_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora won't join the club trip. Neither will Ella. What does this mean?",
+  "options": [
+    "Neither girl will join the trip.",
+    "Only Nora will join the trip.",
+    "Ella will join, but Nora will not.",
+    "Both girls have already joined."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Neither will Ella 附和 Nora 的 won't join，兩人都不參加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原文說 Nora won't join，不是只有她參加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Ella 的 Neither will 表示她也不參加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子談未來不參加，沒有說已經加入。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "expand-neither-will-ella",
+    "summarize-two-future-nonparticipants"
+  ],
+  "representationType": "neither-inversion-meaning",
+  "misconceptionTargets": [
+    "interpret-neither-as-contrast"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Neither will Ella 省略了重複的 join the club trip。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時保留兩位女孩與未來否定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

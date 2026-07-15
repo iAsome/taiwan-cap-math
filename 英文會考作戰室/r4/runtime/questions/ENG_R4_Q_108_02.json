@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_108_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Does Ben carry a lunch box? No, ___.",
+  "options": [
+    "he isn't",
+    "he doesn't",
+    "he didn't",
+    "he hasn't"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "isn't 回應 be 動詞問句，不能回應 Does Ben carry。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "問句使用 does，否定簡答應為 he doesn't。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "didn't 會把現在的一般問句改成過去。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "hasn't 屬於 have 或完成式的簡答，與 does 不配。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "track-does-into-negative-short-answer",
+    "pronoun-substitute-ben-as-he"
+  ],
+  "representationType": "do-short-answer-cloze",
+  "misconceptionTargets": [
+    "switch-present-does-to-past-didnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Does 開頭的問句在否定簡答中變成 doesn't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Ben 在簡答中以代名詞 he 承接。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

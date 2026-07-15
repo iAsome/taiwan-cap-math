@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_112_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I enjoy cooking for my family. B: So do I. Which idea is true?",
+  "options": [
+    "Both speakers enjoy cooking.",
+    "Only A enjoys cooking.",
+    "B does not cook for the family.",
+    "Neither speaker enjoys cooking."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "So do I 表示 B 與 A 有相同的肯定喜好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 明確附和 A，不是只有 A 喜歡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B 沒有否定 cooking，也未限定不為家人煮。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Neither 與兩人的肯定陳述相反。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-so-do-i-as-shared-enjoyment",
+    "summarize-two-positive-speakers"
+  ],
+  "representationType": "dialogue-positive-agreement-meaning",
+  "misconceptionTargets": [
+    "read-so-as-contrast"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "A 的 enjoy cooking 是肯定句，B 用 So do I 附和。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只總結兩人共同表達的喜好。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

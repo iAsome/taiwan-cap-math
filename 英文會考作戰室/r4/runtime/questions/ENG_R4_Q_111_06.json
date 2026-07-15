@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The call record shows no call from Jack. A asks, 'Didn't Jack call?' B should say ___.",
+  "options": [
+    "Yes, he didn't.",
+    "No, he didn't.",
+    "No, he did.",
+    "Yes, he does."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Yes 不能和 he didn't 組成一致的標準簡答。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "沒有 Jack 的來電紀錄支持 No, he didn't。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "No, he did 前後方向衝突，且 did 表示有打。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "does 是現在式，也不符合沒有過去來電的證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-call-record-to-answer-didnt-question",
+    "align-no-with-he-didnt"
+  ],
+  "representationType": "record-evidence-negative-past-reply",
+  "misconceptionTargets": [
+    "say-yes-he-didnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "no call from Jack 表示 Jack did not call。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用 No 否定 did Jack call，並保留過去式 did。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

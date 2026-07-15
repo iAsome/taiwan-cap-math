@@ -18,6 +18,7 @@ const UNITS = [
   { id: "ENG_R4_U13", firstSkill: 85 },
   { id: "ENG_R4_U14", firstSkill: 92 },
   { id: "ENG_R4_U15", firstSkill: 99 },
+  { id: "ENG_R4_U16", firstSkill: 106 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -393,6 +394,42 @@ test("U15 direct, wh, subject-object, how, and indirect questions keep their inf
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U15 duplicate ${label}`);
+});
+
+test("U16 negatives, short answers, agreement, and dialogue inferences keep their semantic boundaries", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U16");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_106_10").options[1], "Ben has not eaten lunch yet.");
+  assert.match(question.get("ENG_R4_Q_107_09").stem, /No letter came to the house/);
+  assert.equal(question.get("ENG_R4_Q_107_09").options[0], "No letter arrived.");
+  assert.equal(question.get("ENG_R4_Q_108_11").options[2], "you may");
+  assert.equal(question.get("ENG_R4_Q_109_08").options[3], "too");
+  assert.match(question.get("ENG_R4_Q_109_08").reasons[3], /字義不會把句子變成否定句/);
+  assert.equal(question.get("ENG_R4_Q_110_07").options[2], "do");
+  assert.equal(question.get("ENG_R4_Q_110_11").options[2], "neither can Leo");
+  assert.equal(question.get("ENG_R4_Q_111_01").options[0], "B is ready.");
+  assert.equal(question.get("ENG_R4_Q_111_04").options[3], "They may still catch this bus.");
+  assert.equal(question.get("ENG_R4_Q_111_08").options[3], "No, she wasn't.");
+  assert.equal(question.get("ENG_R4_Q_112_04").options[3], "A cannot join the trip that day.");
+  assert.equal(question.get("ENG_R4_Q_112_10").options[1], "B never likes playing games.");
+  assert.equal(question.get("ENG_R4_Q_112_11").options[2], "A might arrive after six.");
+  const doubleNegativeLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S107");
+  assert.match(doubleNegativeLecture.sections[0].content, /不同口語變體可能另有用法/);
+  const eitherLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S109");
+  assert.match(eitherLecture.sections[3].content, /unhappy.*文法形式上仍是肯定句/);
+  const inversionLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S110");
+  assert.match(inversionLecture.sections[1].content, /Neither 已包含否定方向/);
+  const negativeQuestionLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S111");
+  assert.match(negativeQuestionLecture.sections[0].content, /Yes 與 No.*肯定或否定/);
+  const dialogueLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S112");
+  assert.match(dialogueLecture.sections[3].content, /不能推成永遠不參加/);
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U16 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

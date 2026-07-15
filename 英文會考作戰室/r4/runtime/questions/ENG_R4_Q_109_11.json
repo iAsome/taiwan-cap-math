@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_109_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S109"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student wants to agree with 'I don't like the noise' but writes 'I don't like it, too.' Which change is needed?",
+  "options": [
+    "don't → didn't",
+    "like → likes",
+    "too → either",
+    "it → them"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改成 didn't 只改變時間，仍留下否定句尾的 too。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "I 不搭配 likes，而且沒有處理附和字。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "否定完整句的句尾附和應把 too 改為 either。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "noise 可由 it 代替，改成 them 反而造成單複數錯誤。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "diagnose-too-in-negative-agreement",
+    "repair-only-final-agreement-adverb"
+  ],
+  "representationType": "too-either-edit",
+  "misconceptionTargets": [
+    "repair-agreement-by-changing-tense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "目標是附和 don't like 這個否定意見。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "唯一需要修正的是句尾副詞，第三項不改變原意或時態。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_111_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: Hasn't the bus left yet? B: No, it hasn't. What can they still do?",
+  "options": [
+    "They can only wait for another bus.",
+    "They can no longer see the bus.",
+    "They must walk because the bus left.",
+    "They may still catch this bus."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No, it hasn't 表示這班車還沒離開，不必斷定只能等下一班。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "回答沒有說看不見公車。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公車尚未離開，所以不能推成已離開而必須走路。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "既然車還沒走，他們仍可能趕上。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-opportunity-from-no-it-hasnt",
+    "preserve-may-in-bus-conclusion"
+  ],
+  "representationType": "negative-perfect-question-inference",
+  "misconceptionTargets": [
+    "assume-no-means-bus-left"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "No, it hasn't 否定 the bus has left。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是根據尚未離站可作的合理行動，不把可能性說成保證。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
