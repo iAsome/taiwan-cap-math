@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "cap8-r4-chinese-writing-calibration-v1",
+  "status": "official-rubric-and-rendered-samples-reviewed",
+  "reviewedAt": "2026-07-14",
+  "authority": "國中教育會考官方寫作測驗頁、問答、評分規準與106至115年官方樣卷評語",
+  "sources": {
+    "pages": [
+      {
+        "id": "cap-writing-content",
+        "url": "https://cap.rcpet.edu.tw/test4-1.html",
+        "repositoryPath": "tools/cap8-r4/evidence/official/html/cap-writing.html",
+        "sha256": "0c5ad8c85b5e40d713c8b9813757b499d53b42743df8ac575ba54bae7184983f",
+        "bytes": 24120,
+        "canonicalization": "none"
+      },
+      {
+        "id": "cap-writing-faq",
+        "url": "https://cap.rcpet.edu.tw/test5-1.html",
+        "repositoryPath": "tools/cap8-r4/evidence/official/html/cap-writing-faq.html",
+        "sha256": "1379a4a174c90823b91954f609de66e7b2c4ff0033ff4835975032abbef86f06",
+        "bytes": 31344,
+        "canonicalization": "cloudflare-email-token-redacted"
+      },
+      {
+        "id": "cap-writing-rubric",
+        "url": "https://cap.rcpet.edu.tw/exam3-1.html",
+        "repositoryPath": "tools/cap8-r4/evidence/official/html/cap-writing-rubric.html",
+        "sha256": "5fd52973ec9d8cda91a60ae3f3ac1ca567e44404e15243bc8d8b96e768d8c097",
+        "bytes": 27948,
+        "canonicalization": "cloudflare-email-token-redacted"
+      }
+    ],
+    "extractionIndexSha256": "04118a797c2a8eef55245a8c2e40e2859379356cb19f2f9bb1db38520e24b90d",
+    "sourceReviewsSha256": "ea41164d5a839f2560500364e6a2dc13ae1cf1a41d9d81558cca38b3259e8767"
+  },
+  "scoring": {
+    "method": "整體性評分",
+    "fixedDimensionWeights": false,
+    "perErrorPointDeduction": false,
+    "dimensions": [
+      "立意取材",
+      "結構組織",
+      "遣詞造句",
+      "錯別字、格式與標點符號"
+    ],
+    "profiles": [
+      {
+        "level": 0,
+        "officialSummary": "無法由作答判斷寫作能力。",
+        "boundaries": [
+          "完全離題",
+          "只訂題目",
+          "僅抄寫題目或題幹",
+          "使用詩歌體",
+          "空白卷"
+        ],
+        "observedPattern": "零級分是特定不可評情況，不等同於文章很短、錯字很多或寫得不完整。",
+        "nextStep": "先完整讀懂寫作任務，至少提出一個直接回應題意的主旨與相關材料。",
+        "evidence": {
+          "materials": 0,
+          "reviewedResponses": 0,
+          "materialIds": []
+        }
+      },
+      {
+        "level": 1,
+        "officialSummary": "僅約略解釋題意或提及主題，材料過於簡略，難以辨認文章結構，語句與書寫控制有極嚴重問題。",
+        "dimensions": {
+          "ideaAndMaterial": "只解釋題目、簡略提及主題，或無法選出相關材料繼續發展。",
+          "organization": "沒有明顯結構；即使只有一段，也看不出內容層次。",
+          "dictionAndSyntax": "用詞極不恰當、錯誤很多，或句子破碎而難以理解。",
+          "mechanics": "格式與標點掌握極弱，錯別字很多。"
+        },
+        "observedPattern": "106至114樣卷多半碰到題意，卻只命名觀點或列出極少材料，無法形成持續發展；因此完全離題應判零級分，不能誤列為一級分。",
+        "nextStep": "把一句主張擴成一個具體事件、觀察或例子，說清楚它和題意的關係。",
+        "evidence": {
+          "materials": 9,
+          "reviewedResponses": 15,
+          "years": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114
+          ],
+          "materialIds": [
+            "CAP-106-MATERIAL-008",
+            "CAP-107-MATERIAL-008",
+            "CAP-108-MATERIAL-008",
+            "CAP-109-MATERIAL-009",
+            "CAP-110-MATERIAL-010",
+            "CAP-111-MATERIAL-010",
+            "CAP-112-MATERIAL-011",
+            "CAP-113-MATERIAL-009",
+            "CAP-114-MATERIAL-009"
+          ]
+        }
+      },
+      {
+        "level": 2,
+        "officialSummary": "嘗試運用材料但不足，或大量引述題幹而發展有限；結構不完整，遣詞、格式、標點與錯別字問題明顯。",
+        "dimensions": {
+          "ideaAndMaterial": "有嘗試選材，但材料不足、重複，或過度抄用題幹而沒有自己的發展。",
+          "organization": "結構不完整；單一段落雖可略分層次，仍缺少完整推進。",
+          "dictionAndSyntax": "遣詞造句經常出錯，影響表達。",
+          "mechanics": "格式與標點不熟練，錯別字頗多。"
+        },
+        "observedPattern": "跨年樣卷常見列舉、重複主張或只有簡短理由；即使分成數段，段落若沒有不同功能，仍不能視為組織完整。",
+        "nextStep": "替材料安排清楚順序，補出原因、過程或結果，使每一段真正承擔不同功能。",
+        "evidence": {
+          "materials": 9,
+          "reviewedResponses": 16,
+          "years": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114
+          ],
+          "materialIds": [
+            "CAP-106-MATERIAL-010",
+            "CAP-107-MATERIAL-010",
+            "CAP-108-MATERIAL-010",
+            "CAP-109-MATERIAL-011",
+            "CAP-110-MATERIAL-012",
+            "CAP-111-MATERIAL-012",
+            "CAP-112-MATERIAL-013",
+            "CAP-113-MATERIAL-011",
+            "CAP-114-MATERIAL-011"
+          ]
+        }
+      },
+      {
+        "level": 3,
+        "officialSummary": "已有相關材料與基本作答方向，但統整或發展不充分，結構鬆散或不連貫，語句與書寫錯誤會妨礙理解。",
+        "dimensions": {
+          "ideaAndMaterial": "能找到相關材料，但選擇、統整或說明仍不夠適當、充分。",
+          "organization": "內容鬆散，前後關係或段落連接不清楚。",
+          "dictionAndSyntax": "用詞有不當或錯誤，冗詞贅句偏多。",
+          "mechanics": "錯字、格式或標點問題已造成部分理解困難。"
+        },
+        "observedPattern": "題材相關不等於論述完成；常缺少例證、因果、轉折、限定或由經驗回扣主旨的關係。",
+        "nextStep": "找出文章最重要的缺口，補足例證與因果，並用轉折或回扣讓材料共同支持主旨。",
+        "evidence": {
+          "materials": 9,
+          "reviewedResponses": 27,
+          "years": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114
+          ],
+          "materialIds": [
+            "CAP-106-MATERIAL-009",
+            "CAP-107-MATERIAL-009",
+            "CAP-108-MATERIAL-009",
+            "CAP-109-MATERIAL-010",
+            "CAP-110-MATERIAL-011",
+            "CAP-111-MATERIAL-011",
+            "CAP-112-MATERIAL-012",
+            "CAP-113-MATERIAL-010",
+            "CAP-114-MATERIAL-010"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "officialSummary": "能統整並運用材料，尚能說明主旨；結構大致完整，但連貫、轉折、精簡度或句型變化仍有不穩定處。",
+        "dimensions": {
+          "ideaAndMaterial": "能統整相關材料，主旨可以辨認，也有基本闡述。",
+          "organization": "整體大致完整，但局部不連貫或轉折不夠清楚。",
+          "dictionAndSyntax": "用詞大致正確、文意清楚，但可能冗長且句型變化有限。",
+          "mechanics": "有若干錯字、格式或標點錯誤，但通常不致嚴重妨礙理解。"
+        },
+        "observedPattern": "跨年樣卷已有可辨識主旨與大致完整結構，主要差距在材料連接、轉折清楚度、贅語、口語化及語言控制。",
+        "nextStep": "精修段落之間的邏輯，刪除重複內容，並讓句型和用詞更準確而有變化。",
+        "evidence": {
+          "materials": 9,
+          "reviewedResponses": 46,
+          "years": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114
+          ],
+          "materialIds": [
+            "CAP-106-MATERIAL-014",
+            "CAP-107-MATERIAL-014",
+            "CAP-108-MATERIAL-014",
+            "CAP-109-MATERIAL-015",
+            "CAP-110-MATERIAL-016",
+            "CAP-111-MATERIAL-016",
+            "CAP-112-MATERIAL-017",
+            "CAP-113-MATERIAL-015",
+            "CAP-114-MATERIAL-015"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "officialSummary": "能適當統整材料並闡述主旨，結構完整，語詞正確、句子通順；少量錯字或標點問題不影響文意。",
+        "dimensions": {
+          "ideaAndMaterial": "能適當選擇、統整並運用材料，充分說明主旨。",
+          "organization": "結構完整，僅偶有轉折不夠流暢。",
+          "dictionAndSyntax": "語詞使用正確，能運用不同句型使文句通順。",
+          "mechanics": "錯字、格式與標點錯誤很少，且不影響文意。"
+        },
+        "observedPattern": "多數樣卷能把具體事件或觀察連到原因、結果與反思，文章整體完整流暢，但局部轉折、字詞或標點仍可能不完美。",
+        "nextStep": "深化材料背後的關係或意義，並精修少數不順轉折，使全文脈絡更集中、精確。",
+        "evidence": {
+          "materials": 9,
+          "reviewedResponses": 51,
+          "years": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114
+          ],
+          "materialIds": [
+            "CAP-106-MATERIAL-011",
+            "CAP-107-MATERIAL-011",
+            "CAP-108-MATERIAL-011",
+            "CAP-109-MATERIAL-012",
+            "CAP-110-MATERIAL-013",
+            "CAP-111-MATERIAL-013",
+            "CAP-112-MATERIAL-014",
+            "CAP-113-MATERIAL-012",
+            "CAP-114-MATERIAL-012"
+          ]
+        }
+      },
+      {
+        "level": 6,
+        "officialSummary": "能適切統整材料並深入闡述主旨，結構完整、脈絡分明且前後連貫，語詞精確並能有效運用多種句型。",
+        "dimensions": {
+          "ideaAndMaterial": "能依任務適切統整材料，進一步闡述並凸顯主旨。",
+          "organization": "結構完整，脈絡清楚，內容前後連貫。",
+          "dictionAndSyntax": "語詞精確，句型運用有效，文句流暢。",
+          "mechanics": "幾乎沒有錯字、格式與標點錯誤。"
+        },
+        "observedPattern": "106至115樣卷採用的題材、立場與結構高度多樣；共同點是材料精準、發展持續、關係清楚且反思有依據，而不是固定文體、華麗詞藻或特定價值立場。",
+        "observedApproaches": [
+          "敘事後反思",
+          "說明與分析",
+          "比較對照",
+          "主張與限定",
+          "材料整合",
+          "象徵或寓意延伸"
+        ],
+        "nextStep": "維持內容深度與語言精確度，再逐項核對事實、錯字、格式與標點，不以堆疊修辭取代思考。",
+        "evidence": {
+          "materials": 10,
+          "reviewedResponses": 85,
+          "years": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ],
+          "materialIds": [
+            "CAP-106-MATERIAL-012",
+            "CAP-107-MATERIAL-012",
+            "CAP-108-MATERIAL-012",
+            "CAP-109-MATERIAL-013",
+            "CAP-110-MATERIAL-014",
+            "CAP-111-MATERIAL-014",
+            "CAP-112-MATERIAL-015",
+            "CAP-113-MATERIAL-013",
+            "CAP-114-MATERIAL-013",
+            "CAP-115-MATERIAL-009"
+          ]
+        }
+      }
+    ]
+  },
+  "examConstraints": {
+    "mode": "引導寫作",
+    "mustCompletePromptSpecificTask": true,
+    "poetryFormAllowed": false,
+    "privateIdentityDisclosureAllowed": false,
+    "titleRequirementDependsOnPrompt": true,
+    "copyingPromptAloneIsZero": true
+  },
+  "calibratedEvidence": {
+    "years": [
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115
+    ],
+    "materials": 55,
+    "reviewedResponses": 240,
+    "allRenderedPagesReviewed": true,
+    "sampleTextCopied": false
+  },
+  "nonRules": [
+    "官方規準沒有統一最低字數、固定段數或一律適用的文體公式；仍須完成當次題目明示的任務，且不可使用詩歌體。",
+    "成語、諺語、名言或華麗修辭不是高級分必要條件；只有在準確、自然且服務主旨時才可能改善表達。",
+    "級分不取決於是否同意題幹立場，也不取決於題材新奇、正向或感人。",
+    "錯別字與標點不逐字扣固定分，必須和全文四向度整體判斷；高分卷仍可能有少量局部錯誤。",
+    "樣卷中的文化、法律、科學、健康或時事敘述不是事實權威，引用於新內容前必須另向第一手來源查證。"
+  ],
+  "productionContract": {
+    "sidebarCategory": "作文",
+    "staticOriginalWritingTasks": 120,
+    "requiredLearningModules": [
+      "審題與任務拆解",
+      "取材與發展",
+      "結構與連貫",
+      "遣詞造句",
+      "格式標點與修訂",
+      "六級分校準"
+    ],
+    "copiedOfficialSampleProseAllowed": false,
+    "automaticScorePromiseAllowed": false,
+    "feedbackMustUseFourDimensions": true
+  }
+}

@@ -6,10 +6,12 @@ import {
   verifyAuthorityNodeReview,
   verifyAuthorityGraphEvidence,
   verifyEnglishVocabularyAuthority,
+  verifyChineseReferenceFoundation,
   verifyOfficialExtractionEvidence,
   verifyOfficialItemCandidateEvidence,
   verifyOfficialLedgerEvidence,
   verifyOfficialReviewShardEvidence,
+  verifyPublisherReferenceEvidence,
   verifyUserRequirements,
 } from "../run-full-release-gate.mjs";
 
@@ -49,6 +51,21 @@ test("official appendices and English Table 1 are independently locked", async (
     { basicSourceEntries: vocabulary.basicSourceEntries, additionalSourceEntries: vocabulary.additionalSourceEntries },
     { basicSourceEntries: 1211, additionalSourceEntries: 794 },
   );
+});
+
+test("publisher catalog and Chinese reference foundations are independently locked", async () => {
+  const publisher = await verifyPublisherReferenceEvidence();
+  assert.equal(publisher.records, 95);
+  assert.equal(publisher.bySubject.chinese, 18);
+  const chinese = await verifyChineseReferenceFoundation();
+  assert.deepEqual(chinese.categories, {
+    categories: 8,
+    families: 48,
+    skills: 320,
+    characterSkills: 35,
+    writingSkills: 24,
+  });
+  assert.deepEqual(chinese.calibration, { levels: 7, materials: 55, reviewedResponses: 240 });
 });
 
 test("all extracted fourth-stage nodes have a reviewed scope decision without fake mappings", async () => {

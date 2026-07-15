@@ -12,7 +12,9 @@ import { validateFrozenAuthorityGraph } from "./authority/frozen-authority-graph
 import { validateAppendixEvidence } from "./authority/appendix-evidence.mjs";
 import { validateAuthorityNodeReview } from "./authority/authority-node-review.mjs";
 import { validateEnglishVocabularyAuthority } from "./authority/english-vocabulary-authority.mjs";
+import { validateChineseLearningCategories } from "./authority/chinese-learning-categories.mjs";
 import { validateAuthoringRecord } from "./authoring-validator.mjs";
+import { validateChineseWritingCalibration } from "./chinese-writing-calibration.mjs";
 import { validateOfficialExtractionIndex } from "./extract-official-materials.mjs";
 import { inventoryCurrentSite } from "./inventory-current-site.mjs";
 import { validateOfficialItemCandidates } from "./ledger/official-item-candidates.mjs";
@@ -32,6 +34,10 @@ import {
   scopeLocks,
   sha256,
 } from "./r4-core.mjs";
+import {
+  serializePublisherReferenceLedger,
+  validatePublisherCatalog,
+} from "./publisher-reference-catalog.mjs";
 import { verifyCurriculumSources } from "./verify-curriculum-sources.mjs";
 import { verifyOfficialSources } from "./verify-official-sources.mjs";
 import { verifyPackage } from "./verify-package.mjs";
@@ -46,6 +52,10 @@ const FROZEN_AUTHORITY_GRAPH_PATH = "tools/cap8-r4/authority/frozen-authority-gr
 const APPENDIX_EVIDENCE_PATH = "tools/cap8-r4/authority/appendix-evidence.json";
 const AUTHORITY_NODE_REVIEW_PATH = "tools/cap8-r4/authority/authority-node-review.json";
 const ENGLISH_VOCABULARY_AUTHORITY_PATH = "tools/cap8-r4/authority/english-vocabulary-authority.json";
+const CHINESE_WRITING_CALIBRATION_PATH = "tools/cap8-r4/ledger/chinese-writing-calibration.json";
+const PUBLISHER_CATALOG_PDF_PATH = "tools/cap8-r4/evidence/publisher/naer-115-approved-textbooks.pdf";
+const PUBLISHER_CATALOG_JSON_PATH = "tools/cap8-r4/evidence/publisher/naer-115-approved-textbooks.json";
+const PUBLISHER_LEDGER_PATH = "tools/cap8-r4/ledger/publisher-reference-ledger.csv";
 const OFFICIAL_SOURCE_REGISTER_PATH = "tools/cap8-r4/evidence/official/official-source-register.json";
 const OFFICIAL_LEDGER_PATH = "tools/cap8-r4/ledger/official-material-ledger.json";
 const OFFICIAL_EXTRACTION_PATH = "tools/cap8-r4/evidence/official/official-extraction-index.json";
@@ -261,6 +271,25 @@ export async function verifyAppendixEvidence(repoRoot = REPO_ROOT) {
 
 export async function verifyEnglishVocabularyAuthority(repoRoot = REPO_ROOT) {
   return validateEnglishVocabularyAuthority(await readJson(repoRoot, ENGLISH_VOCABULARY_AUTHORITY_PATH));
+}
+
+export async function verifyPublisherReferenceEvidence(repoRoot = REPO_ROOT) {
+  const [pdfBytes, catalog, ledgerBytes] = await Promise.all([
+    readRepositoryFile(repoRoot, PUBLISHER_CATALOG_PDF_PATH),
+    readJson(repoRoot, PUBLISHER_CATALOG_JSON_PATH),
+    readRepositoryFile(repoRoot, PUBLISHER_LEDGER_PATH),
+  ]);
+  const counts = await validatePublisherCatalog(catalog, pdfBytes);
+  assert.equal(ledgerBytes.toString("utf8"), serializePublisherReferenceLedger(catalog));
+  return counts;
+}
+
+export async function verifyChineseReferenceFoundation(repoRoot = REPO_ROOT) {
+  const categories = validateChineseLearningCategories();
+  const calibration = await validateChineseWritingCalibration(
+    await readJson(repoRoot, CHINESE_WRITING_CALIBRATION_PATH),
+  );
+  return { categories, calibration };
 }
 
 export async function verifyAuthorityNodeReview(repoRoot = REPO_ROOT) {
@@ -631,6 +660,8 @@ export async function runFullReleaseGate({
     verifyAppendixEvidence,
     verifyAuthorityNodeReview,
     verifyEnglishVocabularyAuthority,
+    verifyPublisherReferenceEvidence,
+    verifyChineseReferenceFoundation,
     verifyAuthorityGraphEvidence,
     verifyOfficialLedgerEvidence,
     verifyOfficialExtractionEvidence,
@@ -658,6 +689,8 @@ export async function runFullReleaseGate({
   checks.push(await checked("official-curriculum-appendix-evidence", () => use.verifyAppendixEvidence(repoRoot), repoRoot));
   checks.push(await checked("reviewed-fourth-stage-authority-nodes", () => use.verifyAuthorityNodeReview(repoRoot), repoRoot));
   checks.push(await checked("official-english-vocabulary-authority", () => use.verifyEnglishVocabularyAuthority(repoRoot), repoRoot));
+  checks.push(await checked("publisher-reference-catalog", () => use.verifyPublisherReferenceEvidence(repoRoot), repoRoot));
+  checks.push(await checked("chinese-reference-foundation", () => use.verifyChineseReferenceFoundation(repoRoot), repoRoot));
   checks.push(await checked("frozen-authority-graph", () => use.verifyAuthorityGraphEvidence(repoRoot), repoRoot));
   checks.push(await checked("complete-official-106-115-ledger", () => use.verifyOfficialLedgerEvidence(repoRoot), repoRoot));
   checks.push(await checked("current-site-inventory", () => use.verifyInventoryEvidence(repoRoot), repoRoot));
