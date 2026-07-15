@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_089_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The soup is very hot. You ___ drink it quickly.",
+  "options": [
+    "should",
+    "may",
+    "shouldn't",
+    "have"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "should drink quickly 會給出不安全的正面建議。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "may 表示可能或許可，沒有指出不合宜行為。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "shouldn't drink it quickly 建議等待或慢慢喝以免燙傷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "have 不能直接構成本題建議。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "convert-hot-soup-risk-to-negative-advice",
+    "select-should-not-drink-quickly"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "ignore-negative-advice-required-by-risk"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "very hot 提供不宜快速飲用的理由，因此建議要用否定形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的 shouldn't 對應安全考量；其他選項不是方向相反，就是功能不足。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_089_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A doctor says, “You should rest today.” What does the doctor mean?",
+  "options": [
+    "The person must not rest.",
+    "Rest will end every health problem.",
+    "The doctor thinks rest is a good idea.",
+    "The person rested yesterday."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "should rest 和禁止恰好相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "建議休息不保證能解決所有問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "should 表示醫師認為今天休息是合宜做法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有報告昨天發生的事。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "bound-inference-from-doctor-should-rest",
+    "reject-guarantee-and-prohibition-overreads"
+  ],
+  "representationType": "advice-inference-boundary",
+  "misconceptionTargets": [
+    "treat-should-as-guaranteed-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "本題要求控制推論範圍，不能把 recommendation 擴大成保證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只保留醫師的建議；其他選項反轉語意、過度承諾或加入過去事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The ride rule says everyone ___ wear a seat belt.",
+  "options": [
+    "can",
+    "might",
+    "must",
+    "are"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "can 只表示能力或許可，未表達安全要求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "might 表示可能，強度不足。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "must wear 表示這項安全裝備是必要要求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 不能直接接原形 wear。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-ride-safety-requirement-to-must",
+    "complete-must-wear-seat-belt"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-possibility-modal-for-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "ride rule 明確要求每個人繫安全帶，不是描述能力或可能性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把必要性放在 wear 上；其他項目不是語氣太弱，就是結構不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

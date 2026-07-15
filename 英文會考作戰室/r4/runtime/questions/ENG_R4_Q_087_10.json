@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence keeps the verb after must in its base form?",
+  "options": [
+    "Sam must finish the report.",
+    "Sam must finishes the report.",
+    "Sam must to finish the report.",
+    "Sam must finished the report."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "finish 是原形，可直接接在 must 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "finishes 多了第三人稱單數字尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "must 後不接 to finish。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "finished 是過去形式，不是 must 後所需原形。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "inspect-finish-form-after-must",
+    "eliminate-s-to-and-past-marking"
+  ],
+  "representationType": "base-form-sentence-comparison",
+  "misconceptionTargets": [
+    "add-third-person-s-after-must"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目具體檢查 must 後動詞形式，四句差異集中在 finish。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是唯一保留 base form 的句子，沒有額外屈折或 to。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

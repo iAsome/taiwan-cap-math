@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_088_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which question matches “She has to finish by Friday”?",
+  "options": [
+    "Has she to finish by Friday?",
+    "Does she has to finish by Friday?",
+    "Is she have to finish by Friday?",
+    "Does she have to finish by Friday?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一般現代英文不以 Has she to...? 作本題目標問法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 已承擔第三人稱標記，後面不能再寫 has。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Is 不能接 have to 形成此問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Does she have to...? 正確把陳述句改成問句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "transform-she-has-to-into-question",
+    "restore-have-after-does"
+  ],
+  "representationType": "statement-to-question-transformation",
+  "misconceptionTargets": [
+    "retain-has-after-does"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "轉換問句時加入 Does，原來的 has 要還原為 have。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留 by Friday 與義務內容，只改變句型；其他項目都有助動詞結構問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

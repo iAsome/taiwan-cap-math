@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_088_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Lily ___ take the early bus on school days.",
+  "options": [
+    "have",
+    "having to",
+    "has",
+    "has to"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "have 少了 to，且 Lily 是第三人稱單數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "having to 不能直接作本句主要謂語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has 後缺少表示義務所需的 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "has to take 正確配合 Lily，表示上學日必須搭早班車。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "match-lily-with-has-to",
+    "complete-school-day-bus-duty"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-have-to-with-third-person-singular"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主詞 Lily 決定現在式使用 has to，後面再接原形 take。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時滿足主詞一致與義務結構；其他項目各缺少必要成分或形式不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

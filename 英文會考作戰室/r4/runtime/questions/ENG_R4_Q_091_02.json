@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The weather report says rain is possible. It ___ rain during the picnic.",
+  "options": [
+    "has to",
+    "should be",
+    "can to",
+    "might"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "has to rain 會把天氣說成義務。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "should be rain 不是正確結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "can to rain 在情態助動詞後多了 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "might rain 符合預報仍不確定的可能性。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-uncertain-forecast-to-might",
+    "exclude-duty-and-malformed-weather-forms"
+  ],
+  "representationType": "possibility-strength-cloze",
+  "misconceptionTargets": [
+    "treat-forecast-as-obligation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "uncertain 是選擇語氣的直接線索，不能使用必要或確定陳述。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留可能性並接原形 rain；其他項目功能或形式不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

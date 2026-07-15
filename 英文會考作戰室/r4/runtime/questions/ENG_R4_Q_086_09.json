@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses the base form after might?",
+  "options": [
+    "The store might closes early.",
+    "The store might close early.",
+    "The store might to close early.",
+    "The store might closed early."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "closes 加了第三人稱單數字尾，不能接在 might 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "might 後接原形 close，結構正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "情態助動詞後不加 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "closed 是過去式或過去分詞，不是此處所需原形。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "inspect-verb-form-after-might",
+    "select-close-over-inflected-forms"
+  ],
+  "representationType": "modal-form-diagnosis",
+  "misconceptionTargets": [
+    "inflect-verb-after-might"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目明確檢查 might 後主要動詞的形式，不是比較句子內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只有原形 close；其餘選項分別加入 s、to 或過去形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

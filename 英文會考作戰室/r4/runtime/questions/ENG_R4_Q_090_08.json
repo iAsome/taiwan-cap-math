@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia doesn't have to ___ after class; her work is finished.",
+  "options": [
+    "stays",
+    "stayed",
+    "staying",
+    "stay"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "doesn't 已承擔第三人稱形式，後面不能用 stays。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "stayed 是過去式，不能接在 have to 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "staying 是現在分詞，不是所需原形。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "stay 是原形，形成 doesn't have to stay。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "apply-base-form-after-does-not-have-to",
+    "complete-mia-optional-stay-cloze"
+  ],
+  "representationType": "negative-obligation-form",
+  "misconceptionTargets": [
+    "add-third-person-s-after-does-not-have-to"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "her work is finished 說明留下不是必要行動；結構仍需 have to 加原形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時符合語意與動詞形式，其他項目都多了屈折變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

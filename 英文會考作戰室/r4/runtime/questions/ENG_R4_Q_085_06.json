@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora could read when she was five. What does the sentence say about Nora?",
+  "options": [
+    "She is asking for a book.",
+    "She could read at age five.",
+    "She reads only five words now.",
+    "Someone told her that she had to read."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句子沒有請求書本。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "could read 配合 was five，表示她五歲時具備閱讀能力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "five 指年齡，不是字數，也沒有說現在只能讀五個字。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "could 在此表能力，不是規定或義務。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-could-read-at-age-five",
+    "exclude-request-count-and-duty-readings"
+  ],
+  "representationType": "past-ability-meaning",
+  "misconceptionTargets": [
+    "read-could-as-obligation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時間子句 when she was five 決定 could 的功能是回顧過去能力。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只重述原句可確定的資訊，其他選項加入請求、字數或義務。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

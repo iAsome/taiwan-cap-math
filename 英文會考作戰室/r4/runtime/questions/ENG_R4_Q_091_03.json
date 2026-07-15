@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You have a bad cough. You ___ talk to the school nurse.",
+  "options": [
+    "may not",
+    "should",
+    "can be",
+    "had to"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "may not talk 表示可能不談，沒有提出處理建議。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "should talk 是針對持續咳嗽的合宜建議。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "can be 不能直接接 talk。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "had to 把義務放在過去，和現在 have a bad cough 不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "derive-nurse-advice-from-current-cough",
+    "choose-should-over-possibility-and-past-duty"
+  ],
+  "representationType": "health-modal-selection",
+  "misconceptionTargets": [
+    "use-may-not-instead-of-advice"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "健康情境需要 recommendation，而不是可能性、錯誤結構或過去義務。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 should 建議尋求校護協助，語氣和資訊強度相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

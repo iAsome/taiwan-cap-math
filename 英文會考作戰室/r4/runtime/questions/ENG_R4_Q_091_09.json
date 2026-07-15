@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "It takes thirty minutes to reach the station, and the only train leaves at six. To catch it, we ___ leave home by 5:30.",
+  "options": [
+    "might",
+    "can",
+    "have to",
+    "should not"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "might leave 只表示可能，不能確保趕上唯一班次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "can leave 表示有能力或可行，沒有說明時限必要。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "have to leave 表示班次與行程造成的外在必要。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "should not leave 反而建議不要出發，和目標衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "derive-departure-duty-from-only-train",
+    "choose-have-to-for-timetable-constraint"
+  ],
+  "representationType": "schedule-modal-strength",
+  "misconceptionTargets": [
+    "use-can-for-required-timing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "路程需三十分鐘，五點半出門才會在六點前到站，唯一班次形成必要條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項表達外在時刻表造成的義務；其他選項語氣過弱或方向相反。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

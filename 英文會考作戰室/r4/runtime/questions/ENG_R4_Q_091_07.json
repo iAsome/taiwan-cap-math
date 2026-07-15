@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student asks, “May I leave after I finish?” What does the student want?",
+  "options": [
+    "Help with studying",
+    "To know if leaving is allowed",
+    "To show what she could do before",
+    "To guess where the teacher is"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "問句不是詢問讀書方法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "May I leave...? 是詢問完成後能否獲准離開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有過去時間，也不在描述能力。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中沒有對老師作推論。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-permission-from-may-i-leave",
+    "separate-permission-from-other-modal-functions"
+  ],
+  "representationType": "may-pragmatic-function",
+  "misconceptionTargets": [
+    "read-may-i-as-possibility"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第一人稱 May I 搭配可立即核准的行動，功能是 permission。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留說話者真正需求；其他選項分別改成建議、能力或推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

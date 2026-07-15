@@ -15,6 +15,7 @@ const UNITS = [
   { id: "ENG_R4_U10", firstSkill: 64 },
   { id: "ENG_R4_U11", firstSkill: 71 },
   { id: "ENG_R4_U12", firstSkill: 78 },
+  { id: "ENG_R4_U13", firstSkill: 85 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -265,6 +266,43 @@ test("U12 present-perfect forms, meanings, and time boundaries remain explicit",
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U12 duplicate ${label}`);
+});
+
+test("U13 modal forms, functions, and strength boundaries remain explicit", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U13");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_085_08").options[3], "Asking for the menu in a polite way");
+  assert.match(question.get("ENG_R4_Q_085_11").options[2], /learned how to ride/);
+  assert.equal(question.get("ENG_R4_Q_086_04").options[2], "There is a chance the bus will continue past this stop.");
+  assert.match(question.get("ENG_R4_Q_086_10").options[3], /neither gives a number/);
+  assert.equal(question.get("ENG_R4_Q_087_06").options[0], "A strong guess from the facts");
+  assert.equal(question.get("ENG_R4_Q_087_07").options[3], "had to");
+  assert.match(question.get("ENG_R4_Q_087_12").stem, /Mia's wet umbrella.*her voice/);
+  assert.match(question.get("ENG_R4_Q_088_09").options[3], /Does she have to finish/);
+  assert.match(question.get("ENG_R4_Q_088_10").stem, /lets visitors keep their bags/);
+  assert.doesNotMatch(question.get("ENG_R4_Q_089_05").options.join(" "), /can to|sleep last year/);
+  assert.equal(question.get("ENG_R4_Q_089_10").options[2], "The doctor thinks rest is a good idea.");
+  assert.equal(question.get("ENG_R4_Q_090_11").options[2], "The first says no one may leave; the second says people may choose.");
+  assert.doesNotMatch(question.get("ENG_R4_Q_090_12").options.join(" "), /be an umbrella|own an umbrella/);
+  assert.match(question.get("ENG_R4_Q_091_10").options[3], /other words may change/);
+  assert.equal(question.get("ENG_R4_Q_091_11").options[1], "must");
+  assert.equal(question.get("ENG_R4_Q_091_12").options[0], "do not have to");
+  assert.match(question.get("ENG_R4_Q_091_09").stem, /takes thirty minutes/);
+  const mayMightLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S086");
+  assert.match(mayMightLecture.sections.map((value) => value.content).join(" "), /固定百分比/);
+  const dutyLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S088");
+  assert.match(dutyLecture.sections.map((value) => value.content).join(" "), /had to/);
+  assert.match(dutyLecture.sections.map((value) => value.content).join(" "), /will have to/);
+  const negativeLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S090");
+  assert.match(negativeLecture.sections.map((value) => value.content).join(" "), /must not/);
+  assert.match(negativeLecture.sections.map((value) => value.content).join(" "), /do not have to/);
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U13 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which notice means that bringing a notebook is a choice?",
+  "options": [
+    "You must bring a notebook.",
+    "You must not bring a notebook.",
+    "You do not have to bring a notebook.",
+    "You cannot bring a notebook."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "must bring 表示有義務攜帶。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "must not bring 表示禁止攜帶。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "do not have to bring 表示沒有攜帶義務，可自行選擇。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cannot bring 表示不能攜帶。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-notebook-notices-by-obligation",
+    "identify-choice-from-do-not-have-to"
+  ],
+  "representationType": "notice-strength-comparison",
+  "misconceptionTargets": [
+    "confuse-not-required-with-forbidden"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目指定 a choice，因此要找既不強迫也不禁止的通知。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只取消必要性；其餘三項都限制了是否攜帶的選擇。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

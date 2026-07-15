@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The clouds are getting darker. It ___ rain this afternoon.",
+  "options": [
+    "may",
+    "did",
+    "is",
+    "must not"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "may rain 可由變暗的雲推測下午可能下雨。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did rain 是過去式，和 this afternoon 的未來情境不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is rain 缺少正確動詞形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "must not rain 表示禁止下雨，天氣情境不能如此命令。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-afternoon-rain-possibility-from-clouds",
+    "select-may-before-rain"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "turn-weather-clue-into-prohibition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "雲層變暗是一項線索，但不足以保證下午一定下雨。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項的 may 保留合理不確定性，且後接原形 rain。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

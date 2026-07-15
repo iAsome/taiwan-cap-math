@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The door is locked from inside, and Ben answers when I call. Someone ___ be in the room.",
+  "options": [
+    "must",
+    "should not",
+    "had",
+    "can to"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "門從內鎖上且 Ben 回答，兩項線索支持 must be 的推論。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "should not be 表示不建議在裡面，和證據方向相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "had be 不是正確結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "can to be 在情態助動詞後多了 to。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "combine-locked-door-and-ben-response",
+    "infer-presence-with-must-be"
+  ],
+  "representationType": "strong-inference-cloze",
+  "misconceptionTargets": [
+    "read-every-must-as-command"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "門從內鎖上且 Ben 對呼叫作出回應，說話者可據此作強推論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不表示規則，而是使用 must be 推斷房內有人。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

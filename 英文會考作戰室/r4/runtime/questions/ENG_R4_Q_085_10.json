@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Can you use this computer program? B: ___. I use it every day.",
+  "options": [
+    "Yes, I do can.",
+    "Yes, I can.",
+    "Yes, I am.",
+    "Yes, I could yesterday."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "短答不把 do 和 can 放在一起。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Yes, I can 直接肯定目前具備使用程式的能力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "am 不能代替能力問句中的 can。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "回答只談昨天，沒有直接回答目前能力。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "complete-can-you-program-short-answer",
+    "use-daily-practice-to-confirm-current-ability"
+  ],
+  "representationType": "ability-dialogue-completion",
+  "misconceptionTargets": [
+    "answer-can-question-with-do-or-be"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "問句以 Can you 開頭，肯定短答要保留同一個助動詞 can。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項也和 I use it every day 的熟練情境一致，沒有改變時間範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

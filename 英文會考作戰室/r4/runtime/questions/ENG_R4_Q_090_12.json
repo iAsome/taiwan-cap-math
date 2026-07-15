@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The path to the bus stop has a roof. A friend asks, “Do I need an umbrella?” Which answer is best?",
+  "options": [
+    "You must not bring one.",
+    "You have to bring one.",
+    "You may not walk to the bus stop.",
+    "You do not have to bring one."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "有遮棚不等於禁止攜帶雨傘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "全程有遮棚，因此題幹沒有建立必須帶傘的條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有說朋友可能不走去公車站。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "全程有遮棚表示不必攜帶雨傘，但仍可自行選擇。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "answer-umbrella-need-from-covered-walkway",
+    "choose-do-not-have-to-without-banning-item"
+  ],
+  "representationType": "situational-optionality-transfer",
+  "misconceptionTargets": [
+    "turn-no-need-into-no-ownership"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "有屋頂的路徑回答的是 need，而不是建立攜帶禁令。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把環境資訊轉成非必要；其他回答分別改成禁止、義務或無關的行程可能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

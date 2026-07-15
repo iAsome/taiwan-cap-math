@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "In 2022, Tina could not ride a bike. Now she rides to school alone. What changed?",
+  "options": [
+    "She is no longer allowed to ride.",
+    "She could ride in 2022 too.",
+    "She learned how to ride.",
+    "She still cannot ride."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "情境沒有提到許可被取消。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "could not 表示 2022 年當時沒有這項能力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "現在能獨自騎車上學，表示之後學會了。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "目前的 rides to school 證明她已能騎，不是仍然不會。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-tina-bike-ability-across-years",
+    "infer-skill-gain-from-could-not-to-rides"
+  ],
+  "representationType": "ability-timeline-transfer",
+  "misconceptionTargets": [
+    "ignore-now-contrast-after-could-not"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求比較兩個時間點，而不是只翻譯 could not。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合過去不會與現在會騎的對比，其他項目至少和其中一個時間點衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

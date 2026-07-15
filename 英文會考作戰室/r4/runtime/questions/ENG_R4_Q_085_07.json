@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which question asks whether Lily knows how to ride a bike?",
+  "options": [
+    "May Lily ride this bike?",
+    "Should Lily ride a bike?",
+    "Can Lily ride a bike?",
+    "Did Lily ride a bike?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "May Lily...? 詢問是否獲准，而不是她會不會騎。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Should Lily...? 詢問建議。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Can Lily...? 直接詢問目前是否具備騎車能力。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Did Lily...? 問過去有沒有騎車這件事。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-lily-bike-question-by-function",
+    "distinguish-ability-from-permission-advice-event"
+  ],
+  "representationType": "modal-function-discrimination",
+  "misconceptionTargets": [
+    "equate-can-and-may-functions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目限定 ability，必須把能力、許可、建議與過去事件分開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的 can 對應能力；其他三句雖都和騎車有關，溝通目的不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

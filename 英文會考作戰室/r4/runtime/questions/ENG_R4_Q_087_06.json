@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lights are on and music is playing inside. What does “Mia must be home” show?",
+  "options": [
+    "A strong guess from the facts",
+    "Something Mia did every day",
+    "Someone allowed Mia to go home",
+    "Someone told Mia what would be good to do"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "燈光與音樂是判斷 Mia 在家的有力證據，因此是強推論。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有描述以前反覆發生的習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "說話者不是准許 Mia 回家。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子也不是建議她做事。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-must-be-home-function",
+    "use-lights-and-music-as-inference-evidence"
+  ],
+  "representationType": "modal-function-labeling",
+  "misconceptionTargets": [
+    "label-must-inference-as-obligation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "must 後接 be 並由現場線索支持，功能不同於命令。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項正確辨認推論語氣；其餘三項都沒有對應題幹中的證據關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

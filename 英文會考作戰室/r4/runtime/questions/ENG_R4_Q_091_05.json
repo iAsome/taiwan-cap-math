@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A library sign says “NO FOOD.” Visitors ___ eat inside.",
+  "options": [
+    "do not have to",
+    "may",
+    "must not",
+    "can"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "do not have to eat 只表示不必吃，仍允許吃。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "may eat 表示許可，和標誌相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "must not eat 正確表達館內禁止飲食。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "can eat 會表示能力或可行性。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "convert-library-no-food-sign-to-prohibition",
+    "select-must-not-among-competing-modals"
+  ],
+  "representationType": "sign-modal-selection",
+  "misconceptionTargets": [
+    "respond-to-ban-with-do-not-have-to"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "NO FOOD 是直接禁令，所需語氣比建議或非必要更強。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一阻止 eat inside 的選擇；其他助動詞仍保留或給予行為空間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

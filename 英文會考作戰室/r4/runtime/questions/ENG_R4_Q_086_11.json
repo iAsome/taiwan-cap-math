@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A report says, “Strong wind may come after noon.” Which boat message is also not sure?",
+  "options": [
+    "The boat may leave late.",
+    "The boat left late every day.",
+    "The boat cannot ever leave.",
+    "The boat must have left yesterday."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "可能出現強風可使船延後離港成為合理但未定的結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原訊息只談今天中午後，沒有每日習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "可能有強風不能推出船永遠不能離港。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "訊息不涉及昨天，也不足以作此完成式推論。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "transfer-wind-possibility-to-boat-delay",
+    "maintain-uncertainty-in-harbor-update"
+  ],
+  "representationType": "weather-to-schedule-transfer",
+  "misconceptionTargets": [
+    "overgeneralize-possible-delay-to-impossibility"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目要把風勢可能性轉移到船班訊息，同時保留不確定性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項使用 may leave late；其餘項目加入反覆、永遠不可能或無關的過去推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

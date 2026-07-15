@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The museum is free today. Visitors ___ pay for a ticket.",
+  "options": [
+    "must not",
+    "do not have to",
+    "have to",
+    "might not be"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "must not pay 會表示禁止付款，而非免票。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "do not have to pay 正確表示今天沒有購票義務。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have to pay 和 free today 矛盾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "might not be 後不能直接接 pay，也沒有清楚表達免票。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "convert-free-museum-entry-to-no-payment-duty",
+    "avoid-must-not-pay-overstatement"
+  ],
+  "representationType": "free-entry-cloze",
+  "misconceptionTargets": [
+    "equate-free-with-prohibited-payment"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "free today 取消的是付款必要，不是把付款列為違禁行為。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以 do not have to 對應免票；另外三項反轉題意或破壞結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

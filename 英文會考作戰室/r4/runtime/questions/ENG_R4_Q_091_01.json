@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo ___ swim across the pool without help.",
+  "options": [
+    "should",
+    "might",
+    "can",
+    "must not"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "should swim 會提出建議，而非說明能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "might swim 只表示可能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "can swim 表示 Leo 具備獨自游過泳池的能力。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "must not swim 表示禁止，和 without help 的能力描述不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-independent-swimming-as-ability",
+    "select-can-among-modal-functions"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-modal-without-matching-ability-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "without help 說明 Leo 能自行完成動作，重點是 ability。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的 can 與原形 swim 對應能力；其他助動詞改成建議、可能或禁止。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

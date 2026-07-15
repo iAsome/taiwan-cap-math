@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "When Leo was four, he ___ read short words.",
+  "options": [
+    "can",
+    "could",
+    "did can",
+    "was"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "can 通常指現在能力，沒有配合 was four 的過去背景。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "could read 可描述 Leo 四歲時具備的一般能力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "did 和 can 不能疊在一起表達過去能力。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "was 後不能直接接原形 read。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-age-four-background-to-could",
+    "reject-double-auxiliary-did-can"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-can-for-explicit-past-ability"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "when Leo was four 明確建立過去時間，句子要回顧當時的一般能力。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項與原形 read 組成 could read；其他選項不是時間不合，就是動詞結構不成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

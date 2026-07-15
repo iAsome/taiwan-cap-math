@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_088_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The new rule lets visitors keep their bags. Before the rule changed yesterday, visitors ___ leave them at the desk.",
+  "options": [
+    "will have to",
+    "have to",
+    "had to",
+    "has to"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "will have to 指未來，不符合 before the change。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "have to 是現在形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "had to leave 正確回顧規則改變前的過去義務。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "has to 既是現在形式，也不搭配 visitors。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "locate-old-visitor-rule-before-change",
+    "select-had-to-for-former-obligation"
+  ],
+  "representationType": "rule-timeline-analysis",
+  "misconceptionTargets": [
+    "ignore-before-the-change-time-frame"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "changed yesterday 與 before the change 共同把舊規定放在過去。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項用 had to 說明當時的要求；其餘選項不是時間錯置，就是主詞不一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

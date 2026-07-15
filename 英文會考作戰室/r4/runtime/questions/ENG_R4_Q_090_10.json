@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Your ticket is already on your phone. You ___ print another copy.",
+  "options": [
+    "do not have to",
+    "must not",
+    "have to",
+    "are not"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "do not have to print 表示手機票已足夠，不必再印一份。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "must not print 會禁止列印，但題幹只說沒有必要。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have to print 和 already on your phone 的資訊相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are not 不能直接接原形 print。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-no-printing-need-from-phone-ticket",
+    "limit-negative-modal-to-absence-of-duty"
+  ],
+  "representationType": "digital-ticket-inference",
+  "misconceptionTargets": [
+    "invent-prohibition-from-redundancy"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "already on your phone 移除額外紙本的必要性，並未建立環保禁令。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留可印可不印；第二項太強，第三項反向，第四項結構不完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

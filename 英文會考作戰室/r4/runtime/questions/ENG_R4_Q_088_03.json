@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_088_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Yesterday, we ___ wait for the road to open.",
+  "options": [
+    "have to",
+    "had to",
+    "has to",
+    "will have to"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "have to 是現在形式，沒有配合 yesterday。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "had to wait 正確表達昨天因道路狀況產生的義務。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "has to 不但時間不合，也不搭配 we。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will have to 指未來必要，與 yesterday 相反。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "map-yesterday-road-delay-to-had-to",
+    "retain-wait-base-form-after-had-to"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "leave-have-to-unchanged-in-past"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "yesterday 要求 have to 轉成過去形式 had to，後面的 wait 不變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一同時符合過去時間與複數主詞的選擇。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

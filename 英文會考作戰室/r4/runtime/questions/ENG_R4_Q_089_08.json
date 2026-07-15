@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_089_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Should we leave now? B: The last bus comes in ten minutes. What does A want B to help decide?",
+  "options": [
+    "What A could do as a child",
+    "When they should leave",
+    "Whether A may drive the bus",
+    "What they do every day"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "問句沒有談過去能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Should we leave now? 是請對方判斷現在離開是否合宜。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A 沒有詢問能否駕駛公車。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "last bus 的資訊是當下決策線索，不是每日習慣報告。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-advice-request-from-last-bus-dialogue",
+    "identify-leaving-time-decision"
+  ],
+  "representationType": "dialogue-purpose-analysis",
+  "misconceptionTargets": [
+    "read-should-question-as-permission"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "B 提供末班車時間，證明對話焦點是離開時機的建議。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合 Should we...? 的功能，其餘選項和對話要解決的決策無關。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

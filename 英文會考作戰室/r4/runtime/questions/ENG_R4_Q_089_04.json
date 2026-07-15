@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_089_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Drivers should ___ more slowly in heavy rain.",
+  "options": [
+    "driving",
+    "drive",
+    "to drive",
+    "drove"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "driving 是現在分詞，不能直接接 should。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "drive 是原形，符合 should 的結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "should 後不加 to。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "drove 是過去式，不適用於情態助動詞後。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "apply-base-form-to-rain-driving-advice",
+    "select-drive-after-should"
+  ],
+  "representationType": "advice-form-cloze",
+  "misconceptionTargets": [
+    "use-to-infinitive-after-should"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "heavy rain 說明降低車速是安全建議，should 已提供情態語氣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留原形 drive；另外三項把動詞改成不合適的分詞、不定詞或過去式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

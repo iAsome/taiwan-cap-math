@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A customer says, “Could you open the window, please?” What is the customer doing?",
+  "options": [
+    "Asking what someone did as a child",
+    "Telling someone about a rule",
+    "Saying what the weather will be",
+    "Asking someone in a polite way"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有過去時間或童年背景。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顧客不是在宣布對方固定有義務開窗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子沒有預測天氣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Could you...? 加 please，使當下請求較為客氣。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-could-you-window-request",
+    "use-please-to-identify-politeness"
+  ],
+  "representationType": "could-pragmatic-function",
+  "misconceptionTargets": [
+    "force-past-reading-on-polite-could"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "判讀 could 必須看對話功能；顧客希望對方現在採取行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項符合禮貌請求，避免看到 could 就自動判成過去能力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

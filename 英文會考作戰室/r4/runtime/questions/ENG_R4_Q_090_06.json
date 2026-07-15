@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The floor is wet. Students ___ run in the hall.",
+  "options": [
+    "must not",
+    "do not have to",
+    "may",
+    "can"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "must not run 表示基於安全理由禁止奔跑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do not have to 只表示不必跑，仍會容許跑步。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "may run 會給予許可，和濕滑風險相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "can run 描述能力，沒有建立安全規則。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "derive-hall-running-ban-from-wet-floor",
+    "select-prohibition-over-optionality"
+  ],
+  "representationType": "safety-prohibition-cloze",
+  "misconceptionTargets": [
+    "weaken-safety-ban-to-no-need"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "wet floor 使奔跑成為需要制止的危險行為。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項具有足夠的禁止強度；其餘選項留下選擇、許可或只談能力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

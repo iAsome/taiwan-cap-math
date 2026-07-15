@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_089_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Wendy often misses the first lesson because she goes to bed late. Which message best addresses the cause?",
+  "options": [
+    "You might miss another lesson tomorrow.",
+    "You can sleep during the first lesson.",
+    "You must not set an alarm.",
+    "You should go to bed before ten."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "預測明天再錯過一堂課沒有處理晚睡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "上課時睡覺會延續問題，不能解決早上遲到。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "禁止設鬧鐘可能使她更難準時起床。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "十點前上床直接改變造成錯過第一堂課的晚睡行為。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "trace-missed-lesson-to-late-bedtime",
+    "select-cause-focused-should-message"
+  ],
+  "representationType": "cause-based-advice-transfer",
+  "misconceptionTargets": [
+    "offer-advice-unrelated-to-stated-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "有效建議要回應因果關係：晚睡導致早上錯過課程。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項改變造成問題的行為；其他訊息只是預測，或提出會讓情況更差的做法。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

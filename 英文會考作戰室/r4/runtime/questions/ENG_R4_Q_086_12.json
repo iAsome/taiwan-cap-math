@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student points to an empty chair and asks, “May I sit here?” What does the student want to know?",
+  "options": [
+    "What happened yesterday",
+    "Whether she will stand",
+    "Whether she may use the chair",
+    "Whether the chair may break"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "問句沒有談昨天。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "學生沒有承諾站著。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "May I sit here? 是詢問自己能否獲准使用座位。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "空椅子與問句都沒有提供椅子會壞的證據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-permission-goal-from-may-i-sit",
+    "separate-request-from-possibility-claim"
+  ],
+  "representationType": "permission-situation-transfer",
+  "misconceptionTargets": [
+    "interpret-may-i-as-future-possibility"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第一人稱 May I 加上可立即執行的 sit，顯示說話者在請求許可。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項符合互動目的；其他項目把問句誤解為過去報告、承諾或物品推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

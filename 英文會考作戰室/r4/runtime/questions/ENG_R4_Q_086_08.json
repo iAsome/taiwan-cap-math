@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, “The game may not start at six.” What should readers understand?",
+  "options": [
+    "The game is not allowed to start at six.",
+    "The game started at six.",
+    "The game may start at six, but it may not.",
+    "Every game has to begin after six."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "may not 不是規則上的禁止。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原句沒有說比賽已開始，更沒有確定六點開始。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "may not start 表示六點開始這件事可能不會發生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子只談這場比賽，沒有規定每場都要六點後開始。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "decode-may-not-start-in-event-note",
+    "reject-prohibition-and-universal-rule-readings"
+  ],
+  "representationType": "notice-meaning-analysis",
+  "misconceptionTargets": [
+    "misread-may-not-as-prohibition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "記事中的 not 否定 start，而 may 讓結果保持未定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項準確保留六點開賽的不確定性，沒有把提醒誤讀成禁令或通則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

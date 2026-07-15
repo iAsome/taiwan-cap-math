@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia ___ swim across the pool.",
+  "options": [
+    "can",
+    "cans",
+    "is can",
+    "can to"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "can 後接原形 swim，表示 Mia 具備游過泳池的能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "情態助動詞不因 Mia 是第三人稱單數而加 s。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "be 動詞不能直接放在 can 前形成能力敘述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "can 後直接接原形，不使用 to swim。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "form-current-ability-with-mia",
+    "retain-swim-base-form-after-can"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "inflect-modal-for-third-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹描述現在能力，Mia can swim 的主詞、助動詞與原形動詞完整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是唯一正確的情態助動詞結構；其餘項目分別多加 s、is 或 to。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

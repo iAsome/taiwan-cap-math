@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The rule says every person on the ride ___ wear a seat belt.",
+  "options": [
+    "must",
+    "might",
+    "could",
+    "should not"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "must wear 表示規則要求每位騎乘者配戴安全帽。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "might 只表示可能，強度不足。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "could 表能力或較弱可能、請求，不能承擔此規則。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "should not wear 反而建議不戴，和安全規定相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "calibrate-helmet-rule-to-must",
+    "reject-weaker-modal-strengths"
+  ],
+  "representationType": "rule-strength-cloze",
+  "misconceptionTargets": [
+    "use-should-for-explicit-mandatory-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "every rider 與 safety rule 顯示普遍且必要的要求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留規則強度；其餘選項會弱化、改變功能或反轉安全行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

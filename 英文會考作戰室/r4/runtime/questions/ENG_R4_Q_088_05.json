@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_088_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ Sam have to bring his own towel?",
+  "options": [
+    "Is",
+    "Has",
+    "Do",
+    "Does"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Is 不能和 have to 組成此問句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Has Sam have to 疊用了不合適的形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Sam 是第三人稱單數，不能以 Do 開頭。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Does Sam have to...? 正確詢問 Sam 是否有這項義務。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "construct-sam-have-to-question",
+    "use-does-and-restore-have-base-form"
+  ],
+  "representationType": "obligation-question-cloze",
+  "misconceptionTargets": [
+    "write-has-sam-have-to"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "have to 的現在式問句需要 do-support，Sam 決定使用 Does。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項之後保留 have 原形；其他選項不是助動詞不合，就是主詞一致錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

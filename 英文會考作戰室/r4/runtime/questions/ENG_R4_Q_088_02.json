@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_088_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The players ___ arrive before seven.",
+  "options": [
+    "has to",
+    "are have to",
+    "have to",
+    "have"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "players 是複數，不使用 has to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are 和 have to 不以此方式並列。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "have to arrive 正確表達所有選手的到場義務。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "have 缺少 to，不能形成此義務結構。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-players-as-plural-for-have-to",
+    "form-arrival-obligation-before-seven"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "select-has-to-for-plural-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "複數主詞 The players 搭配 have to，主要動詞 arrive 保持原形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成完整句；其他項目不是主詞不一致，就是多加或漏掉助動結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

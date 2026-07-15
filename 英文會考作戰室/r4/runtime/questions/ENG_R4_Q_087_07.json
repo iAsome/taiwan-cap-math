@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Yesterday, we ___ leave early because the road was closed.",
+  "options": [
+    "musted",
+    "must",
+    "will must",
+    "had to"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "英文沒有 musted 這個過去式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單獨 must 不清楚標示 yesterday 的過去義務。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "will must 不是正確助動詞組合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "had to leave 正確表達昨天因封路而必須提早離開。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "convert-past-necessity-to-had-to",
+    "reject-nonexistent-musted-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "create-past-form-musted"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "yesterday 和 was closed 都把外在必要放在過去。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用 had to 承擔過去形式，後面的 leave 保持原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

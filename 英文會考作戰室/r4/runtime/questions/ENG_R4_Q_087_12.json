@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia's wet umbrella is by the door, and her voice is coming from the kitchen. Which sentence best fits these facts?",
+  "options": [
+    "Mia can be a good cook.",
+    "Mia must be inside the house.",
+    "Mia should bring an umbrella tomorrow.",
+    "Mia must not enter the kitchen."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "現有線索不能判斷 Mia 的烹飪能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Mia 的濕傘和她從廚房傳來的聲音共同支持她人在屋內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目沒有詢問明天的建議。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "也沒有任何禁止 Mia 進廚房的規則。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "synthesize-umbrella-and-voice-evidence",
+    "select-must-be-inside-as-bounded-inference"
+  ],
+  "representationType": "multi-clue-inference-transfer",
+  "misconceptionTargets": [
+    "turn-evidence-into-unrelated-obligation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩項線索都明確屬於 Mia，可支持 must be inside 這個強推論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只推到證據足以支持的所在位置；其餘選項加入能力、未來建議或禁令。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

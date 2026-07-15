@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The box is too heavy for Grace. She ___ lift it.",
+  "options": [
+    "can",
+    "doesn't can",
+    "cannot",
+    "isn't"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "can 表示有能力，和箱子重到搬不動的情境相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "can 的否定不需要 does。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "cannot lift 正確表示 Grace 沒有能力搬起箱子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "isn't 不能直接接原形 lift。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-inability-from-too-heavy",
+    "select-cannot-before-lift"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "build-can-negative-with-do"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "too heavy for Grace 提供能力不足的原因，因此需要 can 的否定式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 She cannot lift it；其他項目不是意思相反，就是否定結構錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

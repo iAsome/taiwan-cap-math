@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Lunch is provided. Students ___ bring their own food.",
+  "options": [
+    "do not have to",
+    "must not",
+    "have to",
+    "cannot"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "do not have to 表示已有午餐時不必自行帶食物，但仍可依規定選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "must not 會變成禁止帶食物，題幹沒有這項規則。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have to 表示必須帶，和 provided 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cannot 表示不能，超出題幹資訊。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-no-food-duty-from-provided-lunch",
+    "preserve-optionality-with-do-not-have-to"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "turn-provided-item-into-prohibition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "provided 說明攜帶食物的必要性消失，而不是行為被禁止。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項準確表達不必；其餘項目分別改成禁止、必要或無能力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

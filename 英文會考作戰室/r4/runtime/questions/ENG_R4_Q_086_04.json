@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bus might not stop here today. What should a passenger understand?",
+  "options": [
+    "The bus is not allowed to move.",
+    "The bus stopped here yesterday.",
+    "There is a chance the bus will continue past this stop.",
+    "Every bus must stop here."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "might not stop 不是禁止公車移動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原句談 today，沒有報告昨天。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "might not 表示今天有可能不停靠此站。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句保留不確定性，沒有說每班車都必須停。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-might-not-stop-for-passenger",
+    "separate-negative-possibility-from-rule"
+  ],
+  "representationType": "negative-possibility-interpretation",
+  "misconceptionTargets": [
+    "equate-might-not-with-must-not"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "否定詞 not 的範圍是 stop，而 might 仍保留可能性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項正確表達可能不停靠；其餘項目分別改成禁止、過去事件或固定義務。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

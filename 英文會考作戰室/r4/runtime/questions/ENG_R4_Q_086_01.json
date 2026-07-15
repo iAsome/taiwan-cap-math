@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The train may arrive late. What does the sentence mean?",
+  "options": [
+    "The train is already here.",
+    "The train may be late, but no one knows yet.",
+    "The train is not allowed to arrive.",
+    "The train will be on time."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原句沒有說火車已經抵達。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "may 表示晚到有可能發生，但尚未確定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "may 在此不是禁止火車抵達。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "may 不表示事情不可能。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "interpret-train-may-arrive-late",
+    "preserve-possibility-without-certainty"
+  ],
+  "representationType": "possibility-meaning",
+  "misconceptionTargets": [
+    "treat-may-as-certainty"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "句子是陳述未來可能性，沒有給出確定結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 possible but not certain；其他項目把事件改成已發生、禁止或不可能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

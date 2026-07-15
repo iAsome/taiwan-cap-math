@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "No more facts are given. What is true about “It may rain” and “It might rain”?",
+  "options": [
+    "May always says rain will come.",
+    "Might always says rain will not come.",
+    "Only might can talk about tomorrow.",
+    "Both say rain is possible; other words may change which one a speaker uses."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "may rain 不是保證下雨。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "might rain 仍表示有下雨可能，不是否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "may 和 might 都可談明天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "沒有其他線索時，兩者都表示可能，不能指定固定強弱比例。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "set-boundary-for-may-might-comparison",
+    "avoid-absolute-modal-strength-rule"
+  ],
+  "representationType": "context-dependent-modal-comparison",
+  "misconceptionTargets": [
+    "rank-may-might-with-universal-scale"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "No other clues 限制了可作的語意判斷，答案不可添加絕對規則。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留共同功能並把細微語氣交由 context 決定，是唯一不過度推論的選擇。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

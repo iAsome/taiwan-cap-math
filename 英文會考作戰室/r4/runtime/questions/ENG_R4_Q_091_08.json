@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam's bike is outside, and his voice is coming from his room. Sam ___ be home.",
+  "options": [
+    "must",
+    "should not",
+    "may not",
+    "has to"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩項直接線索使 must be 成為有力推論。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "should not be 表示不建議在家，和證據無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "may not be 會與腳踏車和聲音的共同線索相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "has to be 可能表示義務，題幹要的是根據證據的判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "combine-bike-and-voice-to-infer-location",
+    "distinguish-must-inference-from-have-to-duty"
+  ],
+  "representationType": "modal-evidence-inference",
+  "misconceptionTargets": [
+    "confuse-inference-must-with-obligation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "腳踏車與聲音都指向 Sam 在家，足以使用強推論語氣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項的 must 不是命令 Sam 回家，而是說話者對目前位置的判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

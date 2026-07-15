@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_089_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You look tired. You ___ take a short break.",
+  "options": [
+    "should",
+    "might be",
+    "must not",
+    "are"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "should take 可根據疲倦狀況提出休息建議。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "might be 不能直接接 take，且沒有完成建議。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "must not take 反而禁止休息，和情境相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are 不能直接接原形 take。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "derive-rest-advice-from-tiredness",
+    "form-should-take-a-break"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-prohibition-for-helpful-advice"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "look tired 是提出建議的原因，不是強制命令。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項以 should 加原形 take 表達合宜建議；其他項目在語意或結構上不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

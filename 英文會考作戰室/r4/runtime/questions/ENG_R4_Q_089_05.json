@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_089_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A friend wants to sleep better. Which answer would help?",
+  "options": [
+    "You should turn off your phone before bed.",
+    "You might feel tired tomorrow.",
+    "You must not sleep at all.",
+    "You can drink coffee at midnight."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "睡前關掉手機是和改善睡眠直接相關的建議。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "預測明天可能疲倦沒有提供改善方法。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "完全禁止睡眠會使問題更嚴重。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "午夜喝咖啡通常無法回應想睡得更好的目標。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "evaluate-replies-for-sleep-advice",
+    "match-phone-off-action-to-sleep-goal"
+  ],
+  "representationType": "advice-response-selection",
+  "misconceptionTargets": [
+    "choose-grammatical-modal-with-irrelevant-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "答案必須同時是可實行的建議，並直接回應睡眠問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合兩項條件；其餘選項只是預測後果，或提出和目標相反的行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

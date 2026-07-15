@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_090_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The sign says “DO NOT ENTER.” You ___ go through this door.",
+  "options": [
+    "do not have to",
+    "must not",
+    "should",
+    "may"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "do not have to 只表示沒有必要，仍保留進門的選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "must not go through 正確把 DO NOT ENTER 表成禁止進入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "should 語氣是建議，弱於標誌的禁令。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "may 反而表示可能或許可。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "translate-no-entry-sign-to-must-not",
+    "distinguish-door-prohibition-from-no-need"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-do-not-have-to-for-prohibition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "DO NOT ENTER 是明確規則，不是可選事項或一般建議。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留禁止強度；其他助動詞會讓人以為仍能選擇是否通過。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

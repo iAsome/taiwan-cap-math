@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "No more facts are given. What is true about “It may snow tonight” and “It might snow tonight”?",
+  "options": [
+    "May always says that snow will come.",
+    "Might always says that snow cannot come.",
+    "Only may can talk about tonight.",
+    "Both say snow is possible; neither gives a number."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "may 沒有固定等於六成的語意規則。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "might 表示可能，不等於不可能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "may 與 might 都能配合 tonight 談未來可能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "缺乏其他情境時，兩者都可表不確定，不能硬換算固定比例。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "evaluate-may-might-without-context",
+    "reject-fixed-probability-ranking"
+  ],
+  "representationType": "modal-boundary-judgment",
+  "misconceptionTargets": [
+    "assign-fixed-percentages-to-modals"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題幹刻意說沒有其他情境，因此不能添加精確機率或絕對差別。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一不過度宣稱的說法，也符合兩個情態助動詞的共同功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

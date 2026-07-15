@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A class rule says, “Students must bring their school cards.” What follows from the rule?",
+  "options": [
+    "The cards are only one possible choice.",
+    "Students are not allowed to bring the cards.",
+    "Every student needs to bring a card.",
+    "The class has already ended."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "must 不是把證件當成可有可無的選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "規則要求攜帶，不是禁止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "must bring 表示進行這件事是必要的。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "規則沒有提供課程是否結束的資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "derive-required-id-card-from-rule",
+    "exclude-optional-prohibited-and-time-claims"
+  ],
+  "representationType": "rule-consequence-analysis",
+  "misconceptionTargets": [
+    "weaken-must-to-optional"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目要求由規則推出可確定的義務內容，不能添加時間事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留 required 的強度；第一、二項扭轉義務，第四項與原句無關。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

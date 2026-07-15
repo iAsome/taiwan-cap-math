@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_086_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S086"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence shows that the club plan is not decided?",
+  "options": [
+    "Mia joined the club yesterday.",
+    "Mia joins the club every year.",
+    "Mia must join the club today.",
+    "Mia may join the club next month."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "joined yesterday 是已完成的過去事件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "joins every year 表示固定習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "must join 表示必要，不保留是否加入的選擇。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "may join 表示下個月加入仍只是一種可能。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-club-plan-by-certainty",
+    "contrast-may-join-with-event-habit-and-duty"
+  ],
+  "representationType": "certainty-classification",
+  "misconceptionTargets": [
+    "choose-any-future-related-sentence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目指定 uncertain，需從四個不同時間與語氣中找出未定計畫。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時具有 may 與未來時間 next month，其他三句分別是過去、習慣或義務。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

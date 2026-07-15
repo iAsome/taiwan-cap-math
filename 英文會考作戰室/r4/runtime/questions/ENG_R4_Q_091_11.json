@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_091_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The coach says, “Every player has to warm up before practice.” A player ___ warm up.",
+  "options": [
+    "may",
+    "must",
+    "might",
+    "should"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "may warm up 只表示許可或可能，沒有達到 has to 的強度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "must warm up 和 has to 的必要程度相符。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "might warm up 讓是否暖身仍不確定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "should warm up 只是建議，弱於明定要求。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "translate-has-to-warm-up-wording-to-must",
+    "compare-modal-strength-against-explicit-requirement"
+  ],
+  "representationType": "requirement-paraphrase-transfer",
+  "misconceptionTargets": [
+    "weaken-required-to-should"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹刻意提供 has to，必須選擇能保留同等語氣強度的情態助動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項精確轉述教練的規定；其他項目都把必要性弱化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

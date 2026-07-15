@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_087_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A factory door says “DANGER: KEEP OUT.” Workers ___ open it.",
+  "options": [
+    "may",
+    "do not have to",
+    "should",
+    "must not"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "may open 表示可能或許可，和危險標示相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "do not have to 只表示沒有必要，仍可能選擇打開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "should 語氣只是建議，弱於警告要求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "must not open 把 KEEP OUT 轉成明確禁止。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "translate-danger-sign-into-modal-prohibition",
+    "calibrate-worker-rule-to-must-not"
+  ],
+  "representationType": "safety-sign-transfer",
+  "misconceptionTargets": [
+    "weaken-danger-rule-to-should"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "DANGER 與 KEEP OUT 同時顯示這不是一般建議或可選事項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留禁止強度；其他助動詞會把安全規則弱化或反轉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

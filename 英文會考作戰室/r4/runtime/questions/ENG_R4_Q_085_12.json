@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_085_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A work form asks, “Can you carry a twenty-kilogram box?” What does the form need to know?",
+  "options": [
+    "Which box the worker likes",
+    "When the box was made",
+    "Whether the worker may keep the box",
+    "Whether the worker can carry it"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表格沒有詢問喜好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "箱子的製造日期和 can carry 無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "問題不是詢問能否擁有箱子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Can you carry...? 要確認志工是否有搬運該重量的能力。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-volunteer-can-carry-requirement",
+    "separate-physical-ability-from-ownership-and-preference"
+  ],
+  "representationType": "form-purpose-transfer",
+  "misconceptionTargets": [
+    "read-can-question-as-permission-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "志工工作需要確認可執行的動作，twenty-kilogram 提供能力判斷所需的負重情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留問句真正用途；其他選項雖提到 box，卻不是 can 所詢問的能力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
