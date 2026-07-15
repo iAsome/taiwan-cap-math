@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia went to the market. She wanted to buy fruit. Which sentence keeps both ideas?",
+  "options": [
+    "Mia went to the market buying fruit.",
+    "Mia went to the market to buy fruit.",
+    "Mia went to buy fruit to the market.",
+    "Mia to the market went buy fruit."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "buying fruit 會讓目的關係不如原句明確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "to buy fruit 正確說明前往市場的目的。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "地點片語被錯放在目的成分後，語序不自然。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "主詞、地點與動詞順序都被打亂。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s148-compress-market-intention-pair",
+    "retain-destination-before-purpose"
+  ],
+  "representationType": "two-sentence-purpose-combination",
+  "misconceptionTargets": [
+    "misorder-destination-and-goal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原文先交代前往市場，再說明想買水果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留兩個資訊且沒有加入購買成功的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

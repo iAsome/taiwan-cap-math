@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy forgot ___ her book, so she had nothing to read in class.",
+  "options": [
+    "to bring",
+    "bringing",
+    "brought",
+    "brings"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "to bring 表示 Amy 該帶書卻沒有完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "bringing 會表示書帶過了但她忘記那段經驗，與沒有書矛盾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "brought 不能直接接 forgot。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "brings 是現在式，也不符合過去結果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s154-use-missing-book-as-noncompletion-evidence",
+    "select-forgot-to-bring"
+  ],
+  "representationType": "forget-duty-result-inference",
+  "misconceptionTargets": [
+    "confuse-forgot-action-with-forgot-memory"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "had nothing to read 證明帶書這件事未發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項由實際結果排除 forget doing 的解讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

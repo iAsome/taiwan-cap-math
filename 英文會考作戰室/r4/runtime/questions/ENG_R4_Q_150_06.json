@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia does not mind waiting ten more minutes. What does she mean?",
+  "options": [
+    "She has already left.",
+    "She is willing to wait.",
+    "She forgot the time.",
+    "She wants everyone to leave."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does not mind 不能推出她已離開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "不介意等待表示她願意再等十分鐘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子沒有說 Mia 忘記時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "她的態度針對自己等待，沒有要求別人離開。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s150-interpret-negative-mind-attitude",
+    "separate-willingness-from-action-result"
+  ],
+  "representationType": "mind-dialogue-meaning-inference",
+  "misconceptionTargets": [
+    "read-not-mind-as-refusal"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "否定 mind 要理解為「不介意」，不是拒絕。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項忠實呈現態度，未添加原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

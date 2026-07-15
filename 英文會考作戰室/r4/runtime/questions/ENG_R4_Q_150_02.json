@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy finished ___ the dishes before eight.",
+  "options": [
+    "to wash",
+    "washing",
+    "washed",
+    "washes"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to wash 不符合 finish 後的補語形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "washing 指 Amy 在八點前完成的工作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "washed 與 finished 都是過去式，不能直接相接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "washes 是現在式限定動詞，不能作 finished 的補語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s150-link-finish-to-completed-task",
+    "keep-time-marking-on-main-verb"
+  ],
+  "representationType": "finish-task-gerund-cloze",
+  "misconceptionTargets": [
+    "repeat-past-tense-on-complement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "before eight 說明完成時間，時態已在 finished。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把洗碗當成被完成的活動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

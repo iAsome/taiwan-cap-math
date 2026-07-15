@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The baby keeps ___ even after the door closes.",
+  "options": [
+    "to cry",
+    "cried",
+    "crying",
+    "cries"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to cry 不是 keep 表示持續時的常用補語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cried 是過去式，不能接在 keeps 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "crying 表示關門後哭聲仍持續。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cries 不能直接作 keeps 的補語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s150-infer-continuation-after-door-event",
+    "select-keeps-crying"
+  ],
+  "representationType": "continued-action-gerund",
+  "misconceptionTargets": [
+    "replace-continued-action-with-second-finite-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "even after the door closes 顯示哭泣沒有停止。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項同時符合 keep doing 與延續語意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

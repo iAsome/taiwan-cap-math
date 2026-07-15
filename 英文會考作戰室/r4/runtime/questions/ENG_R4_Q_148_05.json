@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Why did Sam turn on the light? He turned it on ___ his book.",
+  "options": [
+    "to read",
+    "read",
+    "reading",
+    "reads"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "to read 直接回答開燈是為了閱讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "read 原形缺少目的標記，不能接在完整句後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "reading 在這個位置不能單獨表示開燈的目的。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "reads 是限定動詞，會與 turned 產生結構衝突。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s148-answer-why-from-light-use",
+    "distinguish-purpose-from-completed-result"
+  ],
+  "representationType": "why-question-purpose-completion",
+  "misconceptionTargets": [
+    "treat-purpose-as-second-finite-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "why 問的是 turn on the light 的用意。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項提供合理目的，未額外聲稱書已讀完。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_149_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia learned ___ rice from her father.",
+  "options": [
+    "cooking",
+    "to cook",
+    "cooked",
+    "cooks"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cooking 不能在此直接補出學會的技能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "to cook 表示 Mia 學會煮飯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cooked 是過去式，與 learned 無連接詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cooks 是現在式限定動詞，不能作 learned 的補語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s149-complete-learned-skill",
+    "separate-teacher-source-from-complement"
+  ],
+  "representationType": "learn-skill-infinitive",
+  "misconceptionTargets": [
+    "copy-past-tense-onto-learned-content"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "from her father 說明學習來源，不改變 learn 的搭配。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項讓 learned 保留時態，cook 維持原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

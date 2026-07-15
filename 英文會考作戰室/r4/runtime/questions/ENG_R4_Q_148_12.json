@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia went back to the desk, not to sit down, but ___ her book.",
+  "options": [
+    "getting",
+    "got",
+    "gets",
+    "to get"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "getting 不能與前面的 to sit 形成清楚的對比平行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "got 是過去式，會破壞 not to...but to... 的結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "gets 帶人稱變化，也不與 to sit 同層。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "to get 和 to sit 平行，指出真正目的。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s148-resolve-not-but-purpose-contrast",
+    "parallelize-two-infinitive-goals"
+  ],
+  "representationType": "contrastive-purpose-infinitive",
+  "misconceptionTargets": [
+    "break-not-to-but-to-parallelism"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "not...but... 對比兩個可能的回桌目的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保持兩邊都是 to 加原形，並選出取書的用意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

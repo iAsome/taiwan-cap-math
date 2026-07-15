@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy suggested ___ the bus because it was raining.",
+  "options": [
+    "taking",
+    "to take",
+    "took",
+    "takes"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "taking 是 suggested 後提出的做法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "to take 不符合 suggest 在此的補語形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "took 會把建議錯寫成已發生事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "takes 是限定動詞，不能直接接 suggested。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s150-link-suggestion-to-rain-plan",
+    "avoid-turning-advice-into-result"
+  ],
+  "representationType": "suggested-action-gerund",
+  "misconceptionTargets": [
+    "use-suggest-to-infinitive"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "下雨是提出搭公車方案的背景。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只表示建議，沒有聲稱大家最後真的搭車。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy called Leo ___ him about the new meeting time.",
+  "options": [
+    "told",
+    "telling",
+    "tells",
+    "to tell"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "told 與 called 都是過去式，不能無連接詞並列。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "telling 沒有明確標示打電話的用意。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "tells 的現在式與 called 的結構不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "to tell 說明 Amy 打電話是為了告知新時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s148-connect-call-with-information-goal",
+    "preserve-shared-agent-in-infinitive"
+  ],
+  "representationType": "communication-purpose-cloze",
+  "misconceptionTargets": [
+    "stack-called-and-told"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "called 是主要行動，告知 Leo 是電話的用途。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓兩個動作由同一主詞串成目的關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

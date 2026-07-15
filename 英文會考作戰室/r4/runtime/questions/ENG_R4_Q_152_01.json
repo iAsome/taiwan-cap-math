@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_152_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia wants ___ before dinner.",
+  "options": [
+    "to read",
+    "to reading",
+    "to reads",
+    "to readed"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "to read 是 want 後的不定詞，read 保持原形。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "to reading 把不定詞標記後錯接動名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "to reads 在 to 後多加第三人稱字尾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "readed 不是 read 的正確形式，也不能放在 to 後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s152-recognize-infinitive-to-after-wants",
+    "enforce-base-read-after-marker"
+  ],
+  "representationType": "infinitive-marker-form-cloze",
+  "misconceptionTargets": [
+    "treat-to-as-preposition-before-gerund"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "wants 是控制動詞，此處 to 不表示方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合 to 加原形，不受 Mia 的人稱影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

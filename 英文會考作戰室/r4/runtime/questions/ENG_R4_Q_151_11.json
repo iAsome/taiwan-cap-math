@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_151_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "It is fun to cook with friends. Which sentence gives the same idea with the activity first?",
+  "options": [
+    "Friends are cooking for fun.",
+    "Cook with friends for fun.",
+    "Cooking with friends is fun.",
+    "To friends, cooking is fun."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一句改成朋友正在為了樂趣煮飯，並非原句評價。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二句是命令，沒有保留 is fun 的判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Cooking with friends 作主詞，完整保留原意。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "To friends 改變句法關係，也未明確表達一起煮飯。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s151-transform-it-to-gerund-subject",
+    "preserve-fun-evaluation"
+  ],
+  "representationType": "extraposition-to-gerund-paraphrase",
+  "misconceptionTargets": [
+    "turn-evaluation-into-command"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "改寫要求把活動移到句首，不能改事件或語氣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項用動名詞主詞對應原來的 to cook 內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

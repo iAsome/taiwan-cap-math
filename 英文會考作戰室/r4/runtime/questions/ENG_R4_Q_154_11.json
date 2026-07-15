@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia said, 'I remember calling Amy, so I will not call her again.' What does Mia remember?",
+  "options": [
+    "A call she still needs to make",
+    "A call Amy will make",
+    "A call she already made",
+    "A call she did not want to make"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "calling 表示已發生的回憶，不是待辦電話。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中打電話的人是 Mia，不是 Amy。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "remember calling 加上 not call again 證明 Mia 記得自己打過。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原文沒有說 Mia 當時不想打電話。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s154-use-no-repeat-call-as-memory-evidence",
+    "identify-agent-of-remembered-action"
+  ],
+  "representationType": "remember-doing-dialogue-inference",
+  "misconceptionTargets": [
+    "interpret-calling-as-future-task"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "so I will not call her again 是完成過電話的結果證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項正確排列先打電話、後保有記憶的時間線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "During the long walk, Ben stopped walking ___ some water.",
+  "options": [
+    "drinking",
+    "to drink",
+    "drank",
+    "drinks"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "drinking 不能直接接在 stopped walking 後標示停走的目的。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "to drink 說明他停止走路是為了喝水。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "drank 不能在此連接停走與喝水兩件事。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "drinks 是現在式，也無法作 walking 的目的補語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s154-identify-drinking-as-purpose-after-stopping-walk",
+    "separate-ended-walk-from-new-action"
+  ],
+  "representationType": "stop-walking-purpose-infinitive",
+  "misconceptionTargets": [
+    "attach-drinking-as-ended-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹已明說被停止的是 walking，喝水是接下來的新行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項屬目的不定詞，不再容許「停止喝水」的另一解讀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

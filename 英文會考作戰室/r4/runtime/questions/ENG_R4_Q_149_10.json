@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_149_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben asked for fresh air, and Nora agreed ___ the window.",
+  "options": [
+    "opening",
+    "to open",
+    "opened",
+    "opens"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "opening 不符合 agreed 後表示同意去做的形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "to open 表示 Nora 同意開窗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "opened 與 agreed 都是過去式，不能直接相接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "opens 是現在式，也不能作 agreed 的補語。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s149-link-agreement-to-requested-action",
+    "exclude-double-past-verbs"
+  ],
+  "representationType": "agreed-request-infinitive",
+  "misconceptionTargets": [
+    "interpret-agreed-as-gerund-controller"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Ben 的請求提供 Nora 同意內容的背景。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項使用 agree to do，並由 Nora 執行開窗動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

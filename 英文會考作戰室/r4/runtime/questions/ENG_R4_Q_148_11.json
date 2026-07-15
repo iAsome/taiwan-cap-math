@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo left home early so that he could catch the first bus. Keep the meaning: Leo left home early ___ the first bus.",
+  "options": [
+    "caught",
+    "catching",
+    "to catch",
+    "catches"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "caught 會把搭車寫成已發生結果，原句只說目的。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "catching 未正確取代 so that he could 的目的功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "to catch 可把 so that he could catch 簡化為同主詞目的。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "catches 是現在式，既不配 left 也不標示目的。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s148-reduce-so-that-purpose-clause",
+    "preserve-nonresult-status"
+  ],
+  "representationType": "purpose-clause-paraphrase",
+  "misconceptionTargets": [
+    "turn-intention-into-past-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個分句的行動者都是 Leo，適合縮成不定詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留目的但不保證他真的搭上公車。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

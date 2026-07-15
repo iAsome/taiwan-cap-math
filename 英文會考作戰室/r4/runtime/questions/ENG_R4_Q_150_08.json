@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo gave up ___ for the lost key after an hour.",
+  "options": [
+    "to look",
+    "looked",
+    "looks",
+    "looking"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to look 不符合 give up 後表示放棄活動的形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "looked 是過去式，不能直接接 gave up。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "looks 是現在式，與 after an hour 的過去情境不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "looking 表示 Leo 放棄繼續找鑰匙。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s150-map-give-up-to-ended-search",
+    "retain-gerund-after-phrasal-controller"
+  ],
+  "representationType": "abandoned-search-gerund",
+  "misconceptionTargets": [
+    "treat-up-as-purpose-marker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "after an hour 顯示搜尋持續過，後來停止。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓 looking 成為被放棄的活動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

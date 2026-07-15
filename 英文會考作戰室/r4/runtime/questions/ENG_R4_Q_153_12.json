@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_153_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben wants ___ early because he hopes to avoid ___ in heavy rain.",
+  "options": [
+    "leaving; to drive",
+    "leave; drive",
+    "left; drove",
+    "to leave; driving"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "want 不接 leaving，avoid 也不接 to drive。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個原形都無法直接作 wants、avoid 的補語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "left 與 drove 把尚未發生的計畫錯寫成過去。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "wants to leave 與 avoid driving 皆符合固定搭配。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s153-build-want-avoid-cause-chain",
+    "select-infinitive-then-gerund-under-hope"
+  ],
+  "representationType": "nested-goal-avoidance-complements",
+  "misconceptionTargets": [
+    "let-heavy-rain-trigger-past-tense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "提早離開是意願，避免的是在大雨中開車這項行為。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項也與 hopes to avoid 的目的鏈一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

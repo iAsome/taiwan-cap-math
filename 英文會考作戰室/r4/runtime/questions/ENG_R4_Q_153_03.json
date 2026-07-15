@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_153_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben finished ___ the room and decided ___ home.",
+  "options": [
+    "to clean; going",
+    "clean; go",
+    "cleaning; to go",
+    "cleaned; went"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "finish 不接 to clean，decide 也不接 going。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個原形都缺少各自所需的補語標記。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "finished cleaning 與 decided to go 分別符合兩種搭配。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cleaned 與 went 都是限定過去式，不能直接作補語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s153-solve-two-controller-complements",
+    "assign-gerund-then-infinitive"
+  ],
+  "representationType": "dual-complement-form-cloze",
+  "misconceptionTargets": [
+    "force-parallel-complements-across-different-verbs"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同句兩個控制動詞必須分開判斷，不能追求形式相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項先用動名詞，再用不定詞，且事件順序合理。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

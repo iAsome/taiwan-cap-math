@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The rain began, so the children stopped ___ outside.",
+  "options": [
+    "playing",
+    "to play",
+    "played",
+    "plays"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "playing 是孩子停止進行的戶外活動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "to play 會表示孩子停下原活動後去外面玩，與下雨情境相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "played 是過去式，不能接在 stopped 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "plays 是現在式限定動詞，結構不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s154-infer-ended-play-from-rain",
+    "contrast-stop-playing-with-stop-to-play"
+  ],
+  "representationType": "stop-doing-weather-cloze",
+  "misconceptionTargets": [
+    "reverse-ended-action-and-new-purpose"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "下雨後的合理變化是戶外遊戲結束。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項採 stop doing，與 to play 的開始新目的不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

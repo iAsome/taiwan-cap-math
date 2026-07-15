@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_151_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ music late at night makes the baby wake up.",
+  "options": [
+    "Played",
+    "Plays",
+    "Play",
+    "Playing"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Played 是過去式，不能作 makes 的活動主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Plays 缺少自己的主詞，且會和 makes 衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Play 會像命令句開頭，不符合後續結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Playing music late at night 整體是 makes 的主詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s151-cast-late-music-as-cause",
+    "pair-gerund-activity-with-makes"
+  ],
+  "representationType": "causal-gerund-subject",
+  "misconceptionTargets": [
+    "insert-second-finite-verb-before-makes"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目談的是深夜播放音樂這件事造成的影響。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓活動成為單數主詞，所以後面用 makes。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

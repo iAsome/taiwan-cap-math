@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence says Amy visited Ben because she wanted to help him?",
+  "options": [
+    "Amy visited Ben, and he helped her.",
+    "Amy visited Ben to help him.",
+    "Amy visited Ben because he helped her.",
+    "Amy helped Ben before he visited her."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一句的幫助者是 Ben，方向與題意相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "to help him 表示 Amy 拜訪 Ben 的目的是幫他。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "because he helped her 把 Ben 幫 Amy 當成拜訪原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四句改成 Ben 拜訪 Amy，事件與人物關係都變了。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s148-match-agent-patient-purpose",
+    "reject-reversed-help-relations"
+  ],
+  "representationType": "agent-sensitive-purpose-selection",
+  "misconceptionTargets": [
+    "reverse-helper-and-recipient"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目限定 Amy 是幫助者、Ben 是受助者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以目的不定詞完整保留人物與行動方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

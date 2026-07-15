@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The computer is slow. Leo first tries to close the page, but it does not close. Amy then says, 'Try ___ the computer off and on.'",
+  "options": [
+    "to turn",
+    "turned",
+    "turns",
+    "turning"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to turn 會重複努力達成單一目標的焦點，不如情境中的替代方法精確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "turned 是過去式，不能接 Amy 的 Try。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "turns 是第三人稱形式，也不能作命令後的補語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "turning the computer off and on 是 Amy 提出的另一個可試方法。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s154-shift-from-failed-goal-to-new-method",
+    "encode-restart-as-gerund-experiment"
+  ],
+  "representationType": "try-to-versus-try-doing-dialogue",
+  "misconceptionTargets": [
+    "ignore-method-shift-after-failure"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前一方法失敗後，Amy 改提重新開關電腦的做法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項以 try doing 表示測試方案，不保證一定修好。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

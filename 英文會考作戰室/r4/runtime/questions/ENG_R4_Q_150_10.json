@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben spends the afternoon ___ a paper plane.",
+  "options": [
+    "to build",
+    "building",
+    "built",
+    "builds"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to build 不能接在 spends the afternoon 後描述時間用途。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "building 說明 Ben 下午進行的活動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "built 是過去式，不能直接接在 spends 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "builds 會形成兩個帶人稱變化的動詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s150-assign-afternoon-time-to-building",
+    "separate-duration-from-completion"
+  ],
+  "representationType": "spend-time-gerund",
+  "misconceptionTargets": [
+    "infer-completion-from-spent-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "spend time doing 表示時間花在哪項活動上。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合結構，但不必推論紙飛機一定完成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

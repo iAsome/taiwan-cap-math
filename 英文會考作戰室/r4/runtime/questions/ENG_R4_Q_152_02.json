@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_152_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben walked to school. Where did he walk?",
+  "options": [
+    "In the morning",
+    "To school",
+    "For a class",
+    "With a friend"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有提供 morning 這個時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "to school 直接指出 Ben 前往的地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原文未把上課寫成行走原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中也沒有同行的朋友。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s152-interpret-to-before-school",
+    "separate-destination-from-purpose"
+  ],
+  "representationType": "prepositional-to-destination-reading",
+  "misconceptionTargets": [
+    "label-every-to-as-purpose"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "school 是地點名詞，因此 to 在此表方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項回答 where，沒有把方向誤判成目的。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

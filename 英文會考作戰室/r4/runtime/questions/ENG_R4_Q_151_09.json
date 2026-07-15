@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_151_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses an activity as its subject and says the activity takes time?",
+  "options": [
+    "Building a table takes time.",
+    "Ben is building a table.",
+    "Build the table today.",
+    "Ben wants to build a table."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Building a table 是主詞，takes time 說明這項活動所需時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二句的主詞是 Ben，building 是進行式的一部分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三句是命令句，沒有把活動當成被說明的主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四句談 Ben 的意願，主詞仍是 Ben。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s151-classify-building-as-gerund-subject",
+    "separate-nominal-gerund-from-progressive"
+  ],
+  "representationType": "gerund-role-sentence-classification",
+  "misconceptionTargets": [
+    "group-all-ing-forms-as-subjects"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目同時限定活動作主詞並由 takes time 描述。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項符合兩條件，其餘各有明確人稱主詞或命令語氣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

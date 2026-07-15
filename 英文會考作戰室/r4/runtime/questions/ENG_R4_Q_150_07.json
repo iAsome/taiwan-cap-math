@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The sign says, 'Please avoid ___ on the wet floor.'",
+  "options": [
+    "to run",
+    "ran",
+    "running",
+    "runs"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to run 不符合 avoid 後的補語形式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ran 是過去式，無法補出告示禁止的活動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "running 表示應避免在濕地板上奔跑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "runs 是第三人稱形式，不能接 avoid。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s150-interpret-wet-floor-warning",
+    "complete-avoid-with-running"
+  ],
+  "representationType": "safety-sign-gerund-cloze",
+  "misconceptionTargets": [
+    "use-infinitive-after-avoid"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "告示要求人們避開某項行為，並非敘述過去事件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項符合 avoid doing，也和 wet floor 的安全情境一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

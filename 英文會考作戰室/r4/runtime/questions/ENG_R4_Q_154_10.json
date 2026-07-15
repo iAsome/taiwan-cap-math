@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben stopped to work at six. What was he doing just before six?",
+  "options": [
+    "He was already working.",
+    "He was doing something else.",
+    "He was sleeping all day.",
+    "He had finished every job."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "stop to work 表示六點才停下原活動去工作，並非早已工作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "不定詞指出新目的，所以六點前在做別的事。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有足夠證據說他睡了一整天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "開始去工作不代表所有工作已完成。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s154-infer-prior-activity-from-stop-to-work",
+    "avoid-inventing-original-action"
+  ],
+  "representationType": "stop-to-do-timeline-inference",
+  "misconceptionTargets": [
+    "equate-stop-to-work-with-end-work"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "to work 是停下來後的新行動，而非被停止的行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留未知的原活動，不擅自指定它是什麼。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The club meets early ___ enough time to clean the room.",
+  "options": [
+    "had",
+    "having",
+    "to have",
+    "has"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "had 是過去式，不能直接補在 meets 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "having 未清楚指出提早集合的目的。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "to have 表示提早集合是為了有足夠時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "has 會成為另一個限定動詞，句中缺少連接。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s148-map-early-meeting-to-time-goal",
+    "choose-purpose-before-have-enough-time"
+  ],
+  "representationType": "schedule-purpose-cloze",
+  "misconceptionTargets": [
+    "use-having-after-finite-meets"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "enough time 是早集合想取得的條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把安排與目的連起來，主詞仍是 the club。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

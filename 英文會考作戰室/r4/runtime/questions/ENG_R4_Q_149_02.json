@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_149_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben hopes ___ his old friend this summer.",
+  "options": [
+    "seeing",
+    "to see",
+    "saw",
+    "sees"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "seeing 不是 hope 後的標準補語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "to see 表示 Ben 希望暑假見到朋友。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "saw 是過去式，與 this summer 的希望內容不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "sees 是現在式限定動詞，不能直接跟在 hopes 後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s149-link-hope-to-summer-meeting",
+    "exclude-finite-see-forms"
+  ],
+  "representationType": "hope-future-content-cloze",
+  "misconceptionTargets": [
+    "choose-tense-form-after-hope"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "hope 控制後面的動詞形式，時間線索不改變這項搭配。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項表達尚未實現的希望而未保證見面。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

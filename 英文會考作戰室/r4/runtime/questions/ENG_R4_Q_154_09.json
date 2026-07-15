@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben stopped working at six. What happened at six?",
+  "options": [
+    "He ended his work.",
+    "He began to work.",
+    "He planned tomorrow's work.",
+    "He forgot where he worked."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "stopped working 表示工作在六點結束。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "開始工作應表達 started working，不是 stopped working。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子沒有提到明天的計畫。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "stop doing 也不表示忘記工作地點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s154-paraphrase-stopped-working-time",
+    "exclude-start-plan-memory-readings"
+  ],
+  "representationType": "stop-doing-meaning-paraphrase",
+  "misconceptionTargets": [
+    "read-stop-doing-as-pause-to-start"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "working 是被 stopped 終止的活動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只重述停止工作，沒有加入原因或後續安排。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

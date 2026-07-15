@@ -24,6 +24,7 @@ const UNITS = [
   { id: "ENG_R4_U19", firstSkill: 127 },
   { id: "ENG_R4_U20", firstSkill: 134 },
   { id: "ENG_R4_U21", firstSkill: 141 },
+  { id: "ENG_R4_U22", firstSkill: 148 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -642,6 +643,39 @@ test("U21 conjunction questions preserve addition, contrast, cause, concession, 
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U21 duplicate ${label}`);
+});
+
+test("U22 infinitive and gerund questions preserve form, actor, timeline, and meaning boundaries", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U22");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_148_08").options[3], "Find the park.");
+  assert.match(question.get("ENG_R4_Q_148_11").reviews.join(" "), /不保證.*搭上公車/);
+  assert.match(question.get("ENG_R4_Q_149_07").reviews.join(" "), /Ben.*wait.*執行者/);
+  assert.equal(question.get("ENG_R4_Q_150_06").options[1], "She is willing to wait.");
+  assert.equal(question.get("ENG_R4_Q_151_05").options[question.get("ENG_R4_Q_151_05").answerIndex], "is");
+  assert.equal(question.get("ENG_R4_Q_151_06").options[question.get("ENG_R4_Q_151_06").answerIndex], "take");
+  assert.equal(question.get("ENG_R4_Q_152_05").options[0], "to get water");
+  assert.equal(question.get("ENG_R4_Q_152_07").options[2], "walk");
+  assert.match(question.get("ENG_R4_Q_152_08").options[3], /no longer new/);
+  assert.equal(question.get("ENG_R4_Q_153_03").options[2], "cleaning; to go");
+  assert.equal(question.get("ENG_R4_Q_153_12").options[3], "to leave; driving");
+  assert.equal(question.get("ENG_R4_Q_154_01").options[0], "playing");
+  assert.equal(question.get("ENG_R4_Q_154_02").options[1], "to drink");
+  assert.equal(question.get("ENG_R4_Q_154_05").options[0], "to bring");
+  assert.equal(question.get("ENG_R4_Q_154_06").options[1], "watching");
+  assert.equal(question.get("ENG_R4_Q_154_07").options[2], "to open");
+  assert.equal(question.get("ENG_R4_Q_154_08").options[3], "adding");
+  assert.equal(question.get("ENG_R4_Q_154_09").options[0], "He ended his work.");
+  assert.equal(question.get("ENG_R4_Q_154_10").options[1], "He was doing something else.");
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U22 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U22 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

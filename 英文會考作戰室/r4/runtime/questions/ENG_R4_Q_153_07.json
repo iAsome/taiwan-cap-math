@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_153_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora asks, 'Would you mind ___ the music down? I plan ___ now.'",
+  "options": [
+    "to turn; studying",
+    "turned; study",
+    "turning; to study",
+    "turns; studied"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "mind 不接 to turn，plan 也不接 studying。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "turned 與 study 都不符合各自的補語位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "mind turning 與 plan to study 正確表達請求和計畫。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "turns 與 studied 是限定動詞，不能直接接 mind、plan。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s153-combine-mind-request-with-study-plan",
+    "assign-gerund-and-infinitive-in-dialogue"
+  ],
+  "representationType": "mind-plan-dialogue-double-cloze",
+  "misconceptionTargets": [
+    "let-would-force-infinitive-after-mind"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Nora 先提出降低音量的請求，再交代要讀書的計畫。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項依 mind 與 plan 使用不同形式，兩個行動者也都清楚。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

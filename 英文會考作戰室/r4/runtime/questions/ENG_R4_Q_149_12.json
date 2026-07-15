@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_149_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia expects the bus ___ soon.",
+  "options": [
+    "arriving",
+    "arrived",
+    "arrives",
+    "to arrive"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "arriving 不能直接作 the bus 後的預期內容。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "arrived 會把尚未發生的事寫成過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "arrives 是限定動詞，若使用須另有完整子句結構。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "to arrive 讓 the bus 成為 arrive 的行動主體。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s149-build-expect-object-infinitive",
+    "align-bus-with-arrive-action"
+  ],
+  "representationType": "expect-event-infinitive",
+  "misconceptionTargets": [
+    "place-finite-arrives-after-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "soon 與 expects 表示對接下來事件的預期。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項採 expect + 受詞 + to 原形，答案唯一。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

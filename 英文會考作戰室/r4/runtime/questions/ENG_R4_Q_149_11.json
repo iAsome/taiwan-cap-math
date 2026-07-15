@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_149_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben promised ___ before nine.",
+  "options": [
+    "came home",
+    "coming home",
+    "to come home",
+    "comes home"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "came home 會形成未連接的過去式子句片段。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "coming home 不符合 promise 後的承諾內容形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "to come home 表示 Ben 承諾九點前回家。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "comes home 帶第三人稱變化，不能接 promised。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s149-identify-agent-of-promised-return",
+    "encode-return-home-commitment"
+  ],
+  "representationType": "promise-infinitive-cloze",
+  "misconceptionTargets": [
+    "place-past-come-after-promised"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "承諾內容是 Ben 自己在九點前回家。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓 promised 保留過去式，come 維持不定詞原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

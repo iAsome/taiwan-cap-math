@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_150_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora is busy ___ dinner, so she cannot answer the phone.",
+  "options": [
+    "to cook",
+    "cooked",
+    "cooking",
+    "cooks"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to cook 不符合 be busy 後描述正在忙的活動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cooked 是過去式，不能接在 is busy 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "cooking 說明 Nora 正忙著準備晚餐。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cooks 是一般現在式，無法作 busy 的補語。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u22-s150-infer-busy-activity-from-phone-context",
+    "complete-be-busy-with-gerund"
+  ],
+  "representationType": "busy-context-gerund",
+  "misconceptionTargets": [
+    "place-finite-cooks-after-busy"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "cannot answer the phone 提供她當下被事情占用的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項使用 busy doing，不把 cooking 誤當主要動詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

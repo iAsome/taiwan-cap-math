@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_152_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The class looks forward to watching the science show next week. What can we know?",
+  "options": [
+    "They watched it last week.",
+    "They are happy about the coming show.",
+    "They want the show to end early.",
+    "They have decided not to watch it."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "next week 表示觀看尚未發生，不是上週完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "looks forward to 表示學生期待即將到來的科學表演。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "期待觀看不能推出希望表演提早結束。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句表達期待，與決定不看相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s152-infer-attitude-from-look-forward-to",
+    "preserve-future-event-status"
+  ],
+  "representationType": "look-forward-meaning-inference",
+  "misconceptionTargets": [
+    "read-forward-as-time-direction-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "此題改考固定片語的實際語意，不再重複填 watching。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留未來時間與正向期待，沒有加入結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

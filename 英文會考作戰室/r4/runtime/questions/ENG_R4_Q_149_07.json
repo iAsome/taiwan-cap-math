@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_149_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Amy asked Ben ___ by the door.",
+  "options": [
+    "waits",
+    "waited",
+    "to wait",
+    "waiting"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "waits 不能放在受詞 Ben 後作補語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "waited 會成為另一個未連接的過去式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "to wait 表示 Amy 要 Ben 在門邊等。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "waiting 少了 ask someone to do 所需的不定詞形式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s149-assign-wait-action-to-object",
+    "build-ask-person-infinitive"
+  ],
+  "representationType": "object-controlled-infinitive",
+  "misconceptionTargets": [
+    "treat-asked-and-waited-as-serial-verbs"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Ben 既是 asked 的受詞，也是 wait 的執行者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項維持 ask + 人 + to + 原形的結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

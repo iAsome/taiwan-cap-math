@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_153_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo enjoys to cook for his family. Change only the wrong part.",
+  "options": [
+    "to cooking",
+    "cooking",
+    "cooked",
+    "cooks"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to cooking 仍保留不必要的 to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "cooking 正確接在 enjoys 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cooked 是過去式，不能作 enjoys 的補語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cooks 是限定動詞，會和 enjoys 衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u22-s153-repair-enjoy-to-cook",
+    "remove-to-and-form-gerund"
+  ],
+  "representationType": "targeted-complement-error-repair",
+  "misconceptionTargets": [
+    "retain-to-before-gerund"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目只修補語，不改 Leo 或句子時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項形成 enjoys cooking，原意仍是喜歡為家人煮飯。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

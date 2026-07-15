@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora remembers ___ Leo at the school party last year.",
+  "options": [
+    "to meet",
+    "met",
+    "meets",
+    "meeting"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "to meet 會把見面當成待完成責任，不符合 last year。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "met 是過去式，不能直接接 remembers。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "meets 是現在式限定動詞，結構錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "meeting 表示 Nora 記得去年見過 Leo 的經驗。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s154-anchor-memory-to-past-party",
+    "select-remember-meeting"
+  ],
+  "representationType": "remember-past-experience-gerund",
+  "misconceptionTargets": [
+    "use-infinitive-despite-completed-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "last year 與 remembers 共同指出事件已發生且仍有記憶。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是 remember doing，沒有把回憶改成提醒。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_148_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia went to the library ___ for tomorrow's test.",
+  "options": [
+    "to study",
+    "studying",
+    "studied",
+    "studies"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "to study 說明 Mia 去圖書館的目的。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "studying 不能直接接在 went to the library 後表示目的。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "studied 會多放一個過去式動詞，缺少連接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "studies 是第三人稱單數，無法補出此行目的。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s148-locate-library-visit-goal",
+    "encode-study-as-purpose-infinitive"
+  ],
+  "representationType": "destination-plus-purpose-cloze",
+  "misconceptionTargets": [
+    "replace-purpose-infinitive-with-tense-form"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "去圖書館在先，準備考試是她想完成的事。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時符合 to 加原形與目的關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

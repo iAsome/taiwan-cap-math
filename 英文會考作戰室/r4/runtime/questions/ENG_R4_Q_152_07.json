@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_152_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia used to ___ to school, but now she takes the bus.",
+  "options": [
+    "walking",
+    "walked",
+    "walk",
+    "walks"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "walking 適用於 be used to doing，不是此處過去習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "walked 不能接在 used to 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "walk 是 used to 後的原形，表示以前常走路。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "walks 帶第三人稱字尾，不能放在 to 後。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u22-s152-use-now-contrast-to-detect-past-habit",
+    "choose-base-verb-after-used-to"
+  ],
+  "representationType": "used-to-past-habit-cloze",
+  "misconceptionTargets": [
+    "merge-used-to-with-be-used-to"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "but now 提供過去習慣已改變的對比。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是 used to do，不是 is used to doing。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

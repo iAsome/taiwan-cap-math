@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_154_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Remember ___ the door before you leave.",
+  "options": [
+    "locking",
+    "locked",
+    "to lock",
+    "locks"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "locking 會偏向回想已鎖門的經驗，不是提醒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "locked 是過去式，不能接 remember。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "to lock 表示離開前別忘記完成鎖門責任。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "locks 帶人稱變化，不能作 remember 的補語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u22-s154-read-future-reminder-before-leaving",
+    "choose-remember-to-lock"
+  ],
+  "representationType": "remember-duty-infinitive",
+  "misconceptionTargets": [
+    "use-memory-of-past-form-for-reminder"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "before you leave 表示鎖門仍是接下來要做的事。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項採 remember to do，而不是記憶已發生事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
