@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Nora had a map, she would find the room. Which idea cannot be known?",
+  "options": [
+    "The sentence imagines Nora having a map.",
+    "Finding the room is the imagined result.",
+    "Nora lost the map on a bus yesterday.",
+    "Nora probably does not have a map now."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "had a map 是明示假設。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "would find 是假設結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "遺失地點與時間完全未被提供。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "非現實形式通常暗示目前沒有地圖。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s175-detect-invented-map-loss-background",
+    "bound-counterfactual-inference-to-form"
+  ],
+  "representationType": "counterfactual-evidence-boundary",
+  "misconceptionTargets": [
+    "invent-cause-for-unreal-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "假設語氣可支持現況差距，卻不能補寫背景故事。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項加入 bus 與 yesterday，超過句子證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

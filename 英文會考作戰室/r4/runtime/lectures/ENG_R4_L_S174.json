@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S174",
+  "subject": "english",
+  "unitId": "ENG_R4_U25",
+  "skillId": "ENG_R4_S174",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S173"
+  ],
+  "objectives": [
+    "依條件是否明確成立，判斷結果能否由句子推出。",
+    "避免把條件句錯讀成雙向保證。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S174_SEC_01",
+      "title": "條件成立時才能套用明示結果",
+      "content": "If a student has a ticket, the student may enter。已知 Mia 有票，就可依規則判斷她可以進入；若只知道 Ben 是學生，仍缺少有票這個條件，不能直接套用結果。"
+    },
+    {
+      "id": "ENG_R4_L_S174_SEC_02",
+      "title": "條件不成立不代表相反結果一定成立",
+      "content": "If it rains, the game will stop。若沒有下雨，句子只告訴我們這條規則沒有被觸發；比賽可能繼續，也可能因其他原因停止。不能自行補成「不下雨就一定繼續」。"
+    },
+    {
+      "id": "ENG_R4_L_S174_SEC_03",
+      "title": "看到結果也不一定能倒推唯一原因",
+      "content": "If the school bell rings, Nora goes to class。Nora 已在教室不保證校鈴一定響過，她也可能提早進教室。條件句通常保證從條件到結果的方向，不自動保證結果只可能由該條件造成。"
+    },
+    {
+      "id": "ENG_R4_L_S174_SEC_04",
+      "title": "多個條件必須逐一核對",
+      "content": "If the door is open and the green light is on, you may enter 要同時具備兩項條件。只有門開或只有綠燈亮，都不足以從這條規則取得進入許可。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S174_EX_01",
+      "prompt": "Rule: If a book has a blue mark, it is for Class 3. This book has a blue mark. Which class is it for?",
+      "steps": [
+        "列出規則的條件 blue mark。",
+        "確認這本書符合條件。",
+        "套用結果 for Class 3。"
+      ],
+      "answer": "Class 3.",
+      "why": "題目明示這本書有藍色記號，完整符合 if 子句，因此可套用結果，判定它是給三班的。這個結論不需要猜測書的內容。"
+    },
+    {
+      "id": "ENG_R4_L_S174_EX_02",
+      "prompt": "If it is windy, the school closes the window. The window is closed. Must it be windy?",
+      "steps": [
+        "辨認 windy 到 closed 的方向。",
+        "檢查結果是否只有一個可能原因。",
+        "避免把結果倒推成條件。"
+      ],
+      "answer": "No.",
+      "why": "規則只說有風時學校會關窗，沒有說關窗只能因為有風。窗戶也可能在放學後關閉，所以看到結果不能證明條件必然成立。"
+    },
+    {
+      "id": "ENG_R4_L_S174_EX_03",
+      "prompt": "Students may use the room if a teacher is there and the door is open. A teacher is there, but the door is closed. May the students use it under this rule?",
+      "steps": [
+        "拆出 teacher 與 open door 兩個條件。",
+        "逐項比對目前資訊。",
+        "在缺少一項時不套用許可。"
+      ],
+      "answer": "No.",
+      "why": "規則用 and 要求老師在場且門開著。雖然第一項成立，門仍關著，所以條件未完整滿足；不能只符合一半就取得使用教室的許可。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "知道人物屬於某群體，就能套用該群體中的附加條件結果。",
+      "whyWrong": "還必須確認 if 子句列出的實際條件。",
+      "correction": "把身分與資格條件分成不同欄位核對。"
+    },
+    {
+      "belief": "條件不成立時，主要句的相反敘述一定成立。",
+      "whyWrong": "條件句通常未排除其他可能結果或原因。",
+      "correction": "若規則沒有另外說明，就保留未知。"
+    },
+    {
+      "belief": "看到結果就能證明 if 子句的條件已經發生。",
+      "whyWrong": "同一結果可能由其他原因造成。",
+      "correction": "只沿著規則寫出的條件到結果方向推論。"
+    },
+    {
+      "belief": "and 連接兩個條件時，只符合其中一個也足夠。",
+      "whyWrong": "and 表示兩項都要成立。",
+      "correction": "逐項打勾，所有必要條件齊全才套用結果。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "If a card is red, put it here。已知卡片是紅色，可以放這裡嗎？",
+      "answer": "可以",
+      "reason": "明示條件已成立。"
+    },
+    {
+      "prompt": "If it rains, the road gets wet。路濕能證明一定下雨嗎？",
+      "answer": "不能",
+      "reason": "可能有其他使道路變濕的原因。"
+    },
+    {
+      "prompt": "條件是 A and B，只知道 A 時能套用結果嗎？",
+      "answer": "不能",
+      "reason": "仍缺少 B。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  }
+}

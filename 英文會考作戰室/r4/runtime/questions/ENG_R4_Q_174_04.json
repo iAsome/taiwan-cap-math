@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Students may use the room if a teacher is there and the door is open. Which choice meets both conditions?",
+  "options": [
+    "A teacher is there, but the door is closed.",
+    "The door is open, but no teacher is there.",
+    "A student is near a closed door.",
+    "A teacher is there, and the door is open."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項缺少 open door。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項缺少 teacher present。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項兩項必要條件都不完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第四項同時符合 teacher 與 open door。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s174-match-teacher-and-open-door-joint-condition",
+    "reject-each-partial-permission-case"
+  ],
+  "representationType": "compound-condition-match",
+  "misconceptionTargets": [
+    "treat-and-as-or"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "and 建立的是交集，不是二選一。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項才能套用 may use the room。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

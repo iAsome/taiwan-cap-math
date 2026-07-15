@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_169_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence places the condition first and marks its end with a comma?",
+  "options": [
+    "We will eat outside, if the weather is warm.",
+    "If, the weather is warm we will eat outside.",
+    "The weather is warm, if we will eat outside.",
+    "If the weather is warm, we will eat outside."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "條件放後面，且此基本句型不需該逗號。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "逗號不能拆開 if 與主詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項顛倒條件，也在 if 子句誤用 will。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "if 子句完整置前，逗號標示其結束。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s169-punctuate-fronted-warm-weather-condition",
+    "locate-full-clause-boundary"
+  ],
+  "representationType": "fronted-if-clause-punctuation",
+  "misconceptionTargets": [
+    "place-comma-after-if-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "標點要跟隨完整子句邊界。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時保留條件方向與基本書寫格式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

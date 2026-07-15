@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Mia knew the answer, she would ___ us.",
+  "options": [
+    "told",
+    "telling",
+    "tell",
+    "tells"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "would 後不接過去式 told。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "telling 不能直接跟在 would 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "would 後接原形 tell。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "tells 是第三人稱現在式，不跟 would。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s175-complete-would-tell-result-with-base-form",
+    "reject-inflected-verbs-after-modal"
+  ],
+  "representationType": "counterfactual-result-verb-cloze",
+  "misconceptionTargets": [
+    "use-past-after-would"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "knew 已標示假設條件，結果以 would 加原形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項形成 would tell us 的完整結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

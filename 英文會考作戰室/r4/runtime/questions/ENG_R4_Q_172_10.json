@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_172_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S172"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Sam cannot use the computer unless a teacher is there. A teacher is there. Which idea goes beyond the sentence?",
+  "options": [
+    "The needed condition is met.",
+    "Sam has already used the computer.",
+    "Having a teacher there matters.",
+    "Without a teacher, the rule blocks Sam."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "教師在場符合明示條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "條件成立只表示限制解除，不證明 Sam 已實際使用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "unless 子句明示教師在場的重要性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "若教師不在，cannot use 適用。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s172-detect-completed-use-overreach-after-exception-met",
+    "separate-eligibility-from-action"
+  ],
+  "representationType": "unless-evidence-boundary",
+  "misconceptionTargets": [
+    "infer-action-from-permission"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "permission or ability 不等於 action completed。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把可使用擴張成已使用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

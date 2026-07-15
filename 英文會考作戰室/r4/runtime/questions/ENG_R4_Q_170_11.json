@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_170_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "RULE: If the number is even, put the card in Box A. The number is 8. Where does the card go?",
+  "options": [
+    "Box B",
+    "Either box without a rule",
+    "Box A",
+    "The card stays outside"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Box B 沒有規則依據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "條件已明確成立，不是任選。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "8 是偶數，因此套用 Box A 的固定規則。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "outside 也未被指定。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s170-apply-even-number-box-a-rule",
+    "map-specific-case-to-general-condition"
+  ],
+  "representationType": "general-rule-specific-application",
+  "misconceptionTargets": [
+    "ignore-known-condition-in-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "一般規則也能用於一次具體判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項由 even 這個條件直接推出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

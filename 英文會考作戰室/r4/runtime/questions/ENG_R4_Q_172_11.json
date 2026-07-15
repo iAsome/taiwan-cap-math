@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_172_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S172"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses unless without a double negative?",
+  "options": [
+    "Unless you do not need help, call me.",
+    "Unless not the room is open, wait.",
+    "Unless the sign says OPEN, wait outside.",
+    "Unless the bus does not come, keep waiting."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "unless 與 do not 疊加成雙重否定，不符合題目要求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "not the room is open 詞序不成立。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "sign 未顯示 OPEN 時，wait outside 是清楚預設行動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "does not come 也把 unless 與否定疊加。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s172-select-clean-unless-open-sign-instruction",
+    "screen-double-negative-and-word-order-errors"
+  ],
+  "representationType": "unless-form-quality-selection",
+  "misconceptionTargets": [
+    "assume-not-required-after-unless"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "本技能的 unless 子句使用肯定形式表達例外。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項的 sign says OPEN 是唯一解除等待的情況。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

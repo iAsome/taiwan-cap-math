@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_169_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Call the office ___ the meeting time changes.",
+  "options": [
+    "because",
+    "if",
+    "but",
+    "although"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "because 會把變更寫成已知原因，而非可能條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "if 連接時間變更的條件與打電話行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "but 只表轉折，沒有條件關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "although 表讓步，不能表達變更時才通知的規則。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s169-insert-if-for-office-call-contingency",
+    "distinguish-condition-from-cause-and-contrast"
+  ],
+  "representationType": "condition-connector-cloze",
+  "misconceptionTargets": [
+    "choose-connector-without-event-relation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "meeting time changes 尚未被說成確定發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項建立「若變更就通知」的行動規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

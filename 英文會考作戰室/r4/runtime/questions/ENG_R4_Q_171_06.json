@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_171_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the road is busy, we may arrive late. Which idea has the same meaning?",
+  "options": [
+    "The road is surely busy now.",
+    "We may be late when the road is busy.",
+    "We arrived late before the road became busy.",
+    "The road becomes busy because we arrive."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "if 未確認道路目前一定繁忙。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "may 正確表示繁忙時可能遲到。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子談未來可能，不是既定過去順序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "條件方向是道路影響到達，不是相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s171-paraphrase-busy-road-late-arrival-possibility",
+    "preserve-direction-and-modal-strength"
+  ],
+  "representationType": "conditional-meaning-paraphrase",
+  "misconceptionTargets": [
+    "convert-if-may-to-fact-or-reversed-cause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同時保留 if 的未定性與 may 的可能性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有額外加入時間或因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

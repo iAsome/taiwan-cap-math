@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_171_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Amy finishes early, she can join the game. What becomes possible?",
+  "options": [
+    "The game finishes Amy.",
+    "Amy can join the game.",
+    "Amy has already joined.",
+    "The game cannot begin."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人物與動作角色顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "can join 是條件成立後的可能行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "finishes early 尚未被說成已成立。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有遊戲不能開始的資訊。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s171-read-can-result-after-amy-finishes",
+    "distinguish-possibility-from-completed-action"
+  ],
+  "representationType": "modal-result-interpretation",
+  "misconceptionTargets": [
+    "read-can-as-already-done"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結果使用 can，不是保證事件已經發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項完整保留 Amy 的行動與條件性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

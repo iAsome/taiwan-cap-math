@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_172_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S172"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "You will not finish unless you ask for help. Which sentence gives the same condition?",
+  "options": [
+    "If you ask for help, you will not finish.",
+    "If you do not ask for help, you will not finish.",
+    "If you finish, no one can help.",
+    "If help finishes, you will ask."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項移除了 unless 所含否定，變成求助也不完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "if you do not ask 正確展開 unless you ask。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三項倒推且加入 no one。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把 help 當成執行 finish 的人。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s172-expand-unless-ask-help-with-negative-if",
+    "preserve-negative-main-result"
+  ],
+  "representationType": "unless-with-negative-main-clause-rewrite",
+  "misconceptionTargets": [
+    "flip-main-clause-during-unless-rewrite"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "主要句 will not finish 在改寫後必須保持。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只調整條件子句的否定位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If it rains, the game will stop. It does not rain. What is known about the game from this sentence alone?",
+  "options": [
+    "It must stop for another reason.",
+    "Whether it stops is not decided by this rule.",
+    "It must continue all day.",
+    "It never started."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "另一原因沒有被提供。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "不下雨只表示此條規則未被觸發。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "continue all day 是相反結果的過度推論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "開始與否也不在句中。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s174-hold-game-result-unknown-when-no-rain",
+    "avoid-negating-antecedent-fallacy"
+  ],
+  "representationType": "failed-condition-underdetermination",
+  "misconceptionTargets": [
+    "infer-opposite-result-from-no-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "if P then Q 不會自動提供 not P 時的結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留規則之外的可能性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

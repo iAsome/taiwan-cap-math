@@ -27,6 +27,7 @@ const UNITS = [
   { id: "ENG_R4_U22", firstSkill: 148 },
   { id: "ENG_R4_U23", firstSkill: 155 },
   { id: "ENG_R4_U24", firstSkill: 162 },
+  { id: "ENG_R4_U25", firstSkill: 169 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -733,6 +734,36 @@ test("U24 relative-clause questions preserve antecedents, roles, omitted objects
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U24 duplicate ${label}`);
+});
+
+test("U25 condition questions preserve direction, reality, negation, and evidence limits", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U25");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_169_03").options[question.get("ENG_R4_Q_169_03").answerIndex], "If the bus is late, we will walk.");
+  assert.doesNotMatch(question.get("ENG_R4_Q_169_05").stem, /must happen/i);
+  assert.equal(question.get("ENG_R4_Q_170_04").options[question.get("ENG_R4_Q_170_04").answerIndex], "If plants never get water, they die.");
+  assert.equal(question.get("ENG_R4_Q_171_01").options[question.get("ENG_R4_Q_171_01").answerIndex], "is");
+  assert.equal(question.get("ENG_R4_Q_172_01").options[question.get("ENG_R4_Q_172_01").answerIndex], "If you do not hurry, you will miss the train.");
+  assert.equal(question.get("ENG_R4_Q_172_02").options[question.get("ENG_R4_Q_172_02").answerIndex], "rains");
+  assert.equal(question.get("ENG_R4_Q_172_05").options[question.get("ENG_R4_Q_172_05").answerIndex], "A person without a ticket");
+  assert.match(question.get("ENG_R4_Q_172_05").reviews.join(" "), /必要條件/);
+  assert.equal(question.get("ENG_R4_Q_173_02").options[question.get("ENG_R4_Q_173_02").answerIndex], "whether");
+  assert.equal(question.get("ENG_R4_Q_173_08").options[question.get("ENG_R4_Q_173_08").answerIndex], "I do not know if the shop will open early.");
+  assert.match(question.get("ENG_R4_Q_173_11").options[question.get("ENG_R4_Q_173_11").answerIndex], /present form after if/);
+  assert.match(question.get("ENG_R4_Q_174_02").options[question.get("ENG_R4_Q_174_02").answerIndex], /cannot know for sure/);
+  assert.equal(question.get("ENG_R4_Q_174_06").options[question.get("ENG_R4_Q_174_06").answerIndex], "Whether it stops is not decided by this rule.");
+  assert.equal(question.get("ENG_R4_Q_175_01").options[question.get("ENG_R4_Q_175_01").answerIndex], "were");
+  assert.equal(question.get("ENG_R4_Q_175_08").options[question.get("ENG_R4_Q_175_08").answerIndex], "If I had more money, I would buy the book.");
+  assert.match(question.get("ENG_R4_Q_175_12").reasons[3], /現實差距/);
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U25 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U25 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_172_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S172"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A plant will die unless it gets water. Plant A gets no water. What follows from the sentence?",
+  "options": [
+    "Plant A will grow faster.",
+    "Plant A has enough water.",
+    "Nothing can be said about Plant A.",
+    "Plant A will die."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "grow faster 與規則結果相反且無依據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目明說 gets no water。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "條件已明確符合，不是完全未知。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "unless it gets water 等於 if it does not get water，故套用 will die。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s172-apply-no-water-to-plant-unless-rule",
+    "translate-explicit-absence-into-unless-default"
+  ],
+  "representationType": "unless-rule-specific-case",
+  "misconceptionTargets": [
+    "fail-to-map-no-to-unless-default"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "gets no water 直接對應 unless 的否定條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是規則明示結果，不需要額外生物知識。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

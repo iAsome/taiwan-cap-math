@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A: I am afraid to speak in class. What should B say?",
+  "options": [
+    "I spoke yesterday",
+    "If I were you, I would start with one short answer",
+    "you are me",
+    "the class will be afraid"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "過去事件不能提供目前假設建議。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "If I were you 與 would start 說明站在對方立場會採取的可行做法。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "說話者沒有真的變成對方。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項把害怕者錯換成全班。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s175-complete-speaking-fear-advice-dialogue",
+    "select-practical-would-result-from-perspective"
+  ],
+  "representationType": "counterfactual-advice-dialogue",
+  "misconceptionTargets": [
+    "literalize-if-i-were-you"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "回應應使用 If I were you 提出目前建議。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保持人物觀點，也沒有保證結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

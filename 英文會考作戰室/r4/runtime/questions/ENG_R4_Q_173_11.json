@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_173_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the teacher will arrive by nine, the class can start. Why should will arrive change to arrives?",
+  "options": [
+    "The class happened yesterday.",
+    "The teacher can never come.",
+    "A possible future condition uses the present form after if.",
+    "By nine always needs the past tense."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有 yesterday。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "if 保留到達可能，沒有說永遠不能來。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "教師可能在九點前到達是 if 條件，因此使用現在式 arrives。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "by nine 不會一律要求過去式。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s173-justify-arrives-in-teacher-deadline-condition",
+    "locate-result-in-can-start-clause"
+  ],
+  "representationType": "future-if-error-explanation",
+  "misconceptionTargets": [
+    "explain-correction-with-irrelevant-time-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "錯誤原因需指出子句角色與相應形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項也保留 can start 作結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

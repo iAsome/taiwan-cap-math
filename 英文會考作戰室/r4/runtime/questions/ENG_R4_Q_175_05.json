@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If we ___ near the station, we would walk there.",
+  "options": [
+    "lived",
+    "live tomorrow",
+    "will live",
+    "are living yesterday"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "lived 與 would walk 形成現在非現實假設。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "live tomorrow 把意思改成可能未來且形式不合配對。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "will live 不放在此假設 if 子句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "進行式與 yesterday 衝突。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s175-select-lived-for-station-distance-counterfactual",
+    "separate-past-form-from-past-time"
+  ],
+  "representationType": "second-condition-past-form-cloze",
+  "misconceptionTargets": [
+    "interpret-lived-only-as-past-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "句子想像目前住得更近會採取的做法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不是過去居住報告，而是假設形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

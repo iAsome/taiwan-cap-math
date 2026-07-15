@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_170_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence tells what happens each time the button is pushed?",
+  "options": [
+    "The button was pushed before lunch.",
+    "The bell will ring only tomorrow.",
+    "If you push the button, the bell rings.",
+    "The bell is ringing, so the button is blue."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項只有一次過去動作，沒有結果規則。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "only tomorrow 限定一次未來。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "現在式 push 與 rings 表達每次操作的固定結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "正在響與按鈕顏色不是題目要求的條件規則。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s170-identify-repeatable-button-bell-operation",
+    "exclude-one-time-and-unrelated-state"
+  ],
+  "representationType": "repeatable-operation-recognition",
+  "misconceptionTargets": [
+    "replace-general-rule-with-single-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "each time 要求可反覆出現的操作關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把動作與設備反應直接連接。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

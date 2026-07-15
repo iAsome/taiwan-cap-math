@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_169_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which line is only a condition and still needs a result?",
+  "options": [
+    "The class starts at nine.",
+    "Bring your book to class.",
+    "If the teacher is absent.",
+    "We will meet in the library."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項是完整陳述句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項是完整祈使句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "if 子句只提出老師缺席，尚未說接著怎麼辦。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第四項有完整主詞與結果內容。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s169-detect-absent-teacher-condition-fragment",
+    "distinguish-clause-form-from-complete-message"
+  ],
+  "representationType": "condition-fragment-detection",
+  "misconceptionTargets": [
+    "treat-punctuation-as-completeness"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "句尾句點不會讓未完成的條件自動成句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項需要另一個主要子句才交代完整意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

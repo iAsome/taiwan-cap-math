@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the door is open, visitors may enter. The door is closed. What does this rule allow us to say?",
+  "options": [
+    "Visitors must enter through the closed door.",
+    "The building has no visitors.",
+    "The stated condition for entering is not met.",
+    "The door will open by itself."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "closed 不符合進入條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "規則未說建築內目前有沒有人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "door is open 這個條件明確未成立。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "自動開門並非規則結果。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s174-identify-unmet-open-door-entry-condition",
+    "limit-inference-when-condition-fails"
+  ],
+  "representationType": "failed-condition-status",
+  "misconceptionTargets": [
+    "invent-opposite-result-from-failed-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "條件未成立時，只能停止套用這條許可。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項沒有補上「因此永遠不能進入」等額外結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_170_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "As a general rule, if the green light is on, the door ___.",
+  "options": [
+    "opened last week",
+    "will open tomorrow",
+    "opens",
+    "is opening now"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "last week 只描述一次過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "tomorrow 把固定操作改成一次未來。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "opens 以現在式表示每次都適用的門禁反應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "now 只描述此刻正在發生。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s170-complete-green-light-door-rule",
+    "select-simple-present-for-repeated-operation"
+  ],
+  "representationType": "machine-rule-present-cloze",
+  "misconceptionTargets": [
+    "mistake-operating-rule-for-single-future"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "general rule 要求可反覆適用的設備反應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項配合單數 door，也保留一般性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

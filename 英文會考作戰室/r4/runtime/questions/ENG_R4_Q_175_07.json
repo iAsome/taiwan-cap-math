@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Sam were taller, he would reach the shelf. Which fact is most likely true now?",
+  "options": [
+    "The shelf is on the floor.",
+    "Sam reached it yesterday.",
+    "Sam is not tall enough to reach it.",
+    "Everyone can reach the shelf."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "floor 會使 reach 問題失去原句基礎，且未明示。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "yesterday 沒有出現在句中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "were taller 與 would reach 暗示目前高度不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "everyone 是不受支持的全稱推論。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s175-infer-current-height-limit-from-taller-hypothesis",
+    "reject-unmentioned-location-time-and-universal-claims"
+  ],
+  "representationType": "counterfactual-contrast-inference",
+  "misconceptionTargets": [
+    "ignore-implied-opposite-reality"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "假設的改變是 taller，結果是 reach。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項從這兩部分推回最直接的現實差距。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

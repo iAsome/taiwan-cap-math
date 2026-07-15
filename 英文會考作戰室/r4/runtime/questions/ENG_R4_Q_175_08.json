@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence shows a present condition that is not real and its result?",
+  "options": [
+    "If I had more money, I will bought the book.",
+    "If I would have more money, I buy the book.",
+    "If I have more money yesterday, I would buy the book.",
+    "If I had more money, I would buy the book."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "will bought 不是正確形式，也混合配對。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "基本 if 子句不寫 would have，結果也缺 would。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have 與 yesterday 衝突，且未形成假設配對。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "had 與 would buy 正確表達現在非現實。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s175-select-had-would-buy-form-pair",
+    "reject-mixed-and-malformed-counterfactual-forms"
+  ],
+  "representationType": "counterfactual-form-pair-selection",
+  "misconceptionTargets": [
+    "mix-first-and-second-condition-forms"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個子句需成對檢查，不能只看到 would。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項也讓 buy 維持原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

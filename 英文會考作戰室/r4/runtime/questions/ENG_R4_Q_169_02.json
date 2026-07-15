@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_169_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "We will wait inside if the rain starts. What is the result?",
+  "options": [
+    "The rain starts.",
+    "We will wait inside.",
+    "The rain stops.",
+    "We are already inside."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "rain starts 是句尾 if 子句的條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "主要句說明下雨後等待的位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有 rain stops。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will wait 表示尚未確定已在室內。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s169-read-result-before-final-if-clause",
+    "reject-assumed-present-location"
+  ],
+  "representationType": "postposed-condition-result-reading",
+  "misconceptionTargets": [
+    "treat-final-if-clause-as-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "if 子句放後面時，主要句仍是結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 will 所標出的後續行動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

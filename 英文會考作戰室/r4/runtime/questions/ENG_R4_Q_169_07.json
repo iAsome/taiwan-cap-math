@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_169_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: If the red light is on, stop the machine. What should a worker do when the red light is on?",
+  "options": [
+    "Turn on every light.",
+    "Leave the room at once.",
+    "Stop the machine.",
+    "Wait until the light turns green before reading the notice."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公告沒有要求開啟其他燈。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "離開房間不是明示結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "條件 red light is on 成立時，指示是 stop the machine。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "閱讀公告不以綠燈為條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s169-apply-red-light-imperative-result",
+    "exclude-unstated-workplace-actions"
+  ],
+  "representationType": "notice-condition-action",
+  "misconceptionTargets": [
+    "miss-imperative-as-result-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "祈使句可以作 if 條件成立後的結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項直接套用公告，沒有增加安全程序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

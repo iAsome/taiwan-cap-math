@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Unless a student has a pass, the student must wait. Leo has no pass. What must Leo do?",
+  "options": [
+    "Wait",
+    "Enter at once",
+    "Give everyone a pass",
+    "Leave school"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "no pass 符合 unless 的預設情況，結果是 wait。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "enter at once 與規則相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "發放通行證不是 Leo 的任務。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "離開學校不是規則結果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s174-apply-no-pass-unless-wait-rule",
+    "exclude-extreme-and-role-shift-results"
+  ],
+  "representationType": "unless-rule-inference",
+  "misconceptionTargets": [
+    "fail-to-apply-negative-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先把 unless 改讀為 if the student does not have a pass。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項精確套用結果，不誇大時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_170_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which pair does not make sense as a general rule?",
+  "options": [
+    "If people are tired, they rest.",
+    "If you add one and one, you get two.",
+    "If the school bell rings, students enter class.",
+    "If a book is heavy, Tuesday comes next."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "疲累時休息是可理解的一般反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一加一等於二是固定結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "校鈴可作進教室的日常信號。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "書的重量不會決定星期二是否來到。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s170-detect-heavy-book-tuesday-nonrelation",
+    "evaluate-semantic-link-beyond-verb-form"
+  ],
+  "representationType": "general-condition-semantic-validity",
+  "misconceptionTargets": [
+    "accept-any-present-present-pair"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此題檢查條件與結果是否真正相關。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項即使兩邊都是現在式，也不能建立合理規律。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

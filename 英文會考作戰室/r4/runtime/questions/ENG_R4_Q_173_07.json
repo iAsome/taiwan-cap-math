@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_173_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The bus will leave if everyone ___ ready.",
+  "options": [
+    "will be",
+    "being",
+    "is",
+    "was tomorrow"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "will be 不用於此一般條件子句。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "being 單獨不能完成 everyone ___ ready 的條件子句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is 以現在式形成 everyone is ready。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "was 與 tomorrow 衝突。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s173-select-is-after-everyone-in-final-condition",
+    "maintain-future-in-main-clause-only"
+  ],
+  "representationType": "be-form-future-if-cloze",
+  "misconceptionTargets": [
+    "repeat-will-in-final-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "主要句 will leave 保留未來結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓句尾 if 子句完整且不重複未來標記。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

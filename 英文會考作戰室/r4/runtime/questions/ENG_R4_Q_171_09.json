@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_171_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "NOTICE: If the rain stops by four, the game will begin at five. The rain stops at three. What will happen?",
+  "options": [
+    "The game will begin at five.",
+    "The game began at three.",
+    "The rain will start again at five.",
+    "The game must be inside."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三點停止符合 by four 的條件，因此套用五點開始。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三點是雨停時間，不是比賽開始時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "公告沒有說雨會再下。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "比賽地點也未被說明。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s171-apply-rain-stop-deadline-to-game-start",
+    "separate-condition-time-from-result-time"
+  ],
+  "representationType": "future-notice-deadline-application",
+  "misconceptionTargets": [
+    "transfer-condition-time-to-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "by four 包含四點以前，三點符合限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只推出公告明示的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

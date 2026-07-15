@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_172_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S172"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Unless the store closes early, Amy will shop after work. The store keeps its usual hours. What will Amy do?",
+  "options": [
+    "Shop after work",
+    "Close the store herself",
+    "Stay at work all night",
+    "Shop before the store opens"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "沒有提早關門，因此預設結果 shop after work 適用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Amy 不是被說成店員。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "all night 沒有文本依據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有要求開店前購物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s172-apply-unmet-early-close-exception-to-shopping",
+    "connect-usual-hours-to-default-plan"
+  ],
+  "representationType": "unless-context-default-result",
+  "misconceptionTargets": [
+    "misread-unmet-exception-as-cancelled-plan"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "usual hours 表示 closes early 這個例外未成立。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項沿用主要句，不把時間或角色改寫。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

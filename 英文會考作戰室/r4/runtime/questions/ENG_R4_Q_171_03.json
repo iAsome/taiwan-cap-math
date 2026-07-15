@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_171_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the train is late tonight, we may take a taxi. What does may show?",
+  "options": [
+    "The taxi trip happened yesterday.",
+    "The train is always late.",
+    "Taking a taxi is one possible result.",
+    "No other travel choice exists."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有 yesterday 或已發生旅程。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "if 表示遲到尚未確定，更不是 always。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "may 表達條件成立後的一種可能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "may 不排除其他選擇。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s171-interpret-may-in-late-train-taxi-result",
+    "avoid-certainty-and-exclusivity-from-may"
+  ],
+  "representationType": "first-condition-modal-strength",
+  "misconceptionTargets": [
+    "turn-may-result-into-certainty"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "情態動詞強度是解讀結果的重要線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留可能性，沒有把它擴大成唯一或事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

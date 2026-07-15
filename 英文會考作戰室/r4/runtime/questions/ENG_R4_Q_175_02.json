@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Leo had a bike, he would ride to school. What does the sentence suggest about Leo now?",
+  "options": [
+    "He rides a bike to school every day.",
+    "He probably does not have a bike.",
+    "He had a bike yesterday.",
+    "He will surely buy a bike tomorrow."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "would ride 是假設結果，不是現在習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "had 與 would ride 暗示目前沒有腳踏車。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "yesterday 沒有文本依據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有明天的購買計畫。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s175-infer-leo-lacks-bike-from-counterfactual",
+    "exclude-past-sale-and-future-purchase"
+  ],
+  "representationType": "counterfactual-reality-inference",
+  "misconceptionTargets": [
+    "read-had-as-past-possession-report"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "過去式形式在此表示與現在現實的距離。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只說 probably，符合假設語氣的暗示強度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

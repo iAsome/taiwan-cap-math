@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_170_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Leo misses the early bus, he walks to school. What does the sentence describe?",
+  "options": [
+    "One walk that ended yesterday",
+    "What Leo usually does when he misses the bus",
+    "A walk happening at this moment",
+    "A promise that Leo will never take a bus"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "句中沒有 yesterday 或已結束標記。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "misses 與 walks 說明條件反覆發生時的習慣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "現在式不等於正在進行式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有 never，也沒有承諾。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s170-interpret-missed-bus-walking-as-habit",
+    "separate-simple-present-from-now-and-never"
+  ],
+  "representationType": "habitual-condition-interpretation",
+  "misconceptionTargets": [
+    "read-simple-present-as-current-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩個現在式與可重複條件共同表示習慣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有把 usual 擴大成永遠。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

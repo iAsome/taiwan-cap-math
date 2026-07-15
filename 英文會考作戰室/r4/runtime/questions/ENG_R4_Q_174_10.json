@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Sam finishes before five, he will call Amy. Sam does not call Amy. Which idea is still possible?",
+  "options": [
+    "Sam surely finished at four.",
+    "Sam may not have finished before five.",
+    "Amy called every student.",
+    "The clock stopped because Sam called."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若確定四點完成，依規則應來電，與資訊不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "未在五點前完成可解釋條件未觸發。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Amy 的其他電話沒有文本依據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時鐘與電話的因果未被提及。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s174-find-compatible-unmet-deadline-after-no-call",
+    "avoid-invented-causes-for-absent-result"
+  ],
+  "representationType": "condition-result-consistency-reasoning",
+  "misconceptionTargets": [
+    "claim-condition-true-when-result-absent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這題不是要求證明唯一原因，而是找仍相容的情況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不超過規則與未來電兩項證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

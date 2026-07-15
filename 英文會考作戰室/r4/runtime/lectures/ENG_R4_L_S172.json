@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S172",
+  "subject": "english",
+  "unitId": "ENG_R4_U25",
+  "skillId": "ENG_R4_S172",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "prerequisites": [
+    "ENG_R4_S171"
+  ],
+  "objectives": [
+    "把 unless 理解為 if 加否定條件。",
+    "避免在 unless 子句中再加入不必要的否定。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S172_SEC_01",
+      "title": "unless 表示除非或如果不",
+      "content": "You cannot enter unless you have a ticket 可理解為 You cannot enter if you do not have a ticket。unless 引出使主要結果不再適用的例外條件，基本改寫時要注意主要句的意思不能跟著反轉。"
+    },
+    {
+      "id": "ENG_R4_L_S172_SEC_02",
+      "title": "unless 子句通常不用再加 not",
+      "content": "Unless it rains, we will walk 表示如果不下雨，我們就走路。若寫 Unless it does not rain，在基本題型中會形成雙重否定，意思反而接近「如果下雨」，容易與原意相反。"
+    },
+    {
+      "id": "ENG_R4_L_S172_SEC_03",
+      "title": "先找出被否定的是哪個條件",
+      "content": "Mia will miss the bus unless she leaves now 中，被否定的是 she leaves now：如果她現在不離開，就會錯過公車。不能把 unless 直接翻成主要句不發生。"
+    },
+    {
+      "id": "ENG_R4_L_S172_SEC_04",
+      "title": "unless 不適合所有 if 句機械替換",
+      "content": "if 子句本身已有複雜否定或語意不是「若不」時，直接換 unless 可能改變意思。本單元只處理能清楚改寫為 if ... not 的基本否定條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S172_EX_01",
+      "prompt": "Unless you hurry, you will miss the train. Which if sentence has the same meaning?",
+      "steps": [
+        "把 unless 改讀成 if not。",
+        "保留主詞 you。",
+        "維持主要結果 will miss。"
+      ],
+      "answer": "If you do not hurry, you will miss the train.",
+      "why": "unless you hurry 表示 if you do not hurry；主要句仍是 you will miss the train。不能把 miss 改成 will not miss，否則條件與結果都被反轉。"
+    },
+    {
+      "id": "ENG_R4_L_S172_EX_02",
+      "prompt": "We will eat outside unless it ___. (rains / does not rain)",
+      "steps": [
+        "確認在不下雨時去戶外。",
+        "讓 unless 自己承擔否定。",
+        "選擇肯定形式 rains。"
+      ],
+      "answer": "rains",
+      "why": "整句表示除非下雨，否則會在戶外用餐。unless 已包含「如果不」的條件作用，所以子句使用 rains，不再加 does not。"
+    },
+    {
+      "id": "ENG_R4_L_S172_EX_03",
+      "prompt": "Ben cannot finish on time unless Amy helps him. What does Ben need?",
+      "steps": [
+        "找出 unless 後的例外條件。",
+        "判斷何時 cannot finish 不再成立。",
+        "用肯定句說出需要。"
+      ],
+      "answer": "He needs Amy's help.",
+      "why": "沒有 Amy 幫忙時，Ben 無法準時完成；Amy helps him 是改變結果的必要條件。因此可確定他需要 Amy 的協助，不能推成他應獨自完成。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "unless 和 if 完全相同，替換時不必改否定。",
+      "whyWrong": "unless 通常相當於 if not，否定位置需要調整。",
+      "correction": "先寫出 if ... not 的同義句，再核對主要句。"
+    },
+    {
+      "belief": "unless 後一定要加 not 才有否定意思。",
+      "whyWrong": "unless 本身已帶有否定條件。",
+      "correction": "基本句型寫 unless it rains，不寫 unless it does not rain。"
+    },
+    {
+      "belief": "unless 會把主要句的肯定與否定一起反轉。",
+      "whyWrong": "改寫只改條件表達，主要結果應保持原意。",
+      "correction": "逐字核對主要句在改寫前後是否相同。"
+    },
+    {
+      "belief": "看到 unless 就表示後面的事件一定不會發生。",
+      "whyWrong": "unless 引出可能使結果改變的條件，並未判定它是否實現。",
+      "correction": "分開條件內容與條件是否真的成立。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Unless you call me 相當於哪個基本條件？",
+      "answer": "if you do not call me",
+      "reason": "unless 表示 if not。"
+    },
+    {
+      "prompt": "Unless it is late 中要再加 not 嗎？",
+      "answer": "不要",
+      "reason": "unless 已承擔否定條件。"
+    },
+    {
+      "prompt": "I will wait unless the bus comes 表示公車來時一定等嗎？",
+      "answer": "不是",
+      "reason": "公車來是停止等待的例外條件。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If a bus stops at Gate 3, it goes to the museum. This bus goes to the museum. Which idea is too strong?",
+  "options": [
+    "Gate 3 may be one possible stop.",
+    "The bus goes to the museum.",
+    "The bus must stop at Gate 3.",
+    "The sentence gives a rule about buses at Gate 3."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "規則容許 Gate 3 是一種可能，但不證實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目直接說此車前往博物館。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "結果成立不能證明該條件是唯一站點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原始條件句確實談 Gate 3 公車。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s174-detect-gate-three-converse-overclaim",
+    "separate-route-result-from-specific-stop-proof"
+  ],
+  "representationType": "converse-overclaim-detection",
+  "misconceptionTargets": [
+    "affirm-consequent-in-route-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "前往 museum 的公車可能經過不同站點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把單向規則誤讀成雙向保證。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

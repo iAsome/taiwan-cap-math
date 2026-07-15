@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the school bell rings, Nora goes to class. Nora is in class. What can we know about the bell?",
+  "options": [
+    "It must be broken.",
+    "It may have rung, but we cannot know for sure.",
+    "It surely did not ring.",
+    "Nora is the bell."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "broken 沒有文本證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Nora 進教室可能由校鈴或其他原因造成，不能唯一倒推。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "in class 也不能證明校鈴沒響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人物與物品角色完全不同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s174-reject-converse-from-classroom-result",
+    "preserve-undetermined-cause"
+  ],
+  "representationType": "result-to-condition-uncertainty",
+  "misconceptionTargets": [
+    "affirm-result-to-prove-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "規則提供 bell rings 到 goes to class 的方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留可能性，又避免把結果當成唯一原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

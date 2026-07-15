@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the blue key opens the box, Nora will take the map. The blue key opens the box, and the map shows the station. What can Nora get?",
+  "options": [
+    "A new box",
+    "A red key",
+    "A train ticket",
+    "The map that shows the station"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "new box 不是條件結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目只提 blue key。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "車票沒有出現在資訊鏈中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "條件成立使 Nora 取得 map，後句說明它顯示 station。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s174-chain-blue-key-result-to-map-detail",
+    "combine-condition-result-with-following-description"
+  ],
+  "representationType": "two-step-condition-information-chain",
+  "misconceptionTargets": [
+    "drop-or-transform-result-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先套用 key opens 到 take map，再連接 map 的內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保留兩句資訊，沒有把地圖誤作車票。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_175_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If I have time tonight, I will help. If I had more time, I would help more. What is the main difference?",
+  "options": [
+    "Both sentences describe finished past help.",
+    "The first can happen; the second suggests limited time now.",
+    "The second promises certain help tomorrow.",
+    "The first says time never matters."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一句談今晚未來，第二句談現在假設，都不是已完成過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "have/will 保留真實可能，had/would 暗示時間不足。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "would 不表示明日確定承諾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "第一句正把 time 當條件。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s175-contrast-real-tonight-and-limited-time-counterfactual",
+    "map-form-pairs-to-reality-status"
+  ],
+  "representationType": "first-versus-second-condition-comparison",
+  "misconceptionTargets": [
+    "erase-reality-difference-between-condition-types"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同樣使用 if，動詞配對卻表達不同現實距離。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時說明兩句，不只描述其中一個形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

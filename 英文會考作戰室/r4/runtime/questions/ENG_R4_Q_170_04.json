@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_170_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence tells a fact that is true each time?",
+  "options": [
+    "If plants needed water yesterday, they are green tomorrow.",
+    "If plants will need water, the sun is hot.",
+    "Plants get water if the clock is loud.",
+    "If plants never get water, they die."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "時態混合，且未形成一般事實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "需要水與太陽很熱沒有此條件關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "時鐘聲與植物得到水沒有合理規律。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "植物一直沒有水會死亡，是可理解的一般關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s170-select-repeatable-plant-water-fact",
+    "reject-formal-looking-noncausal-pairs"
+  ],
+  "representationType": "general-fact-selection",
+  "misconceptionTargets": [
+    "judge-zero-condition-by-tense-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "形式正確仍需搭配合理內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項用現在式說明條件持續成立時的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

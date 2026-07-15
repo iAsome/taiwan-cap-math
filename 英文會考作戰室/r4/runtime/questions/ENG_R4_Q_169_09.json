@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_169_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the key fits, the box will open. Which pair names the condition and then the result?",
+  "options": [
+    "the key fits / the box will open",
+    "the box opens / the key will fit",
+    "the key is lost / the box is closed",
+    "the box fits / the key opens"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩段依原句順序正確標示條件與結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第二項交換事件並改變時態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "lost 與 closed 都未出現在原文。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "box 與 key 的功能被錯置。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s169-label-key-fit-and-box-open-pair",
+    "reject-object-function-reversal"
+  ],
+  "representationType": "condition-result-pair-classification",
+  "misconceptionTargets": [
+    "reverse-condition-result-object-roles"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "斜線前後需分別對應 if 子句與主要句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保持物品角色與事件方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

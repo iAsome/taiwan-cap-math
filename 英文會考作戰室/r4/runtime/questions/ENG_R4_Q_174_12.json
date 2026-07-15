@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_174_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If a room is quiet, students can make a sound file there. Room A is quiet. Room B has a large table. What can we know from the rule?",
+  "options": [
+    "Room B is better for every job.",
+    "Both rooms are quiet.",
+    "A large table makes sound work impossible.",
+    "Students can make a sound file in Room A."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "better for every job 超出規則。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只知道 Room A 安靜。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "規則沒有談桌子影響聲音工作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Room A 符合 quiet 條件，因此可製作聲音檔。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s174-ignore-large-table-distractor-and-apply-quiet-rule",
+    "select-evidence-bounded-room-conclusion"
+  ],
+  "representationType": "condition-inference-with-irrelevant-detail",
+  "misconceptionTargets": [
+    "use-salient-but-irrelevant-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "無關的 Room B 資訊不能取代 if 條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項僅把明示規則套到已知個案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

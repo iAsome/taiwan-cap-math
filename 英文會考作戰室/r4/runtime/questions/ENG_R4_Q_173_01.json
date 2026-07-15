@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_173_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Nora ___ tomorrow, we will give her the key.",
+  "options": [
+    "comes",
+    "will come",
+    "came yesterday",
+    "coming"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "未來條件在 if 子句使用現在式 comes。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一般條件用法不在此放 will come。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "yesterday 與 tomorrow 衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "coming 不能獨立完成子句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s173-remove-future-marker-from-nora-condition",
+    "retain-singular-present-form"
+  ],
+  "representationType": "if-clause-will-avoidance-cloze",
+  "misconceptionTargets": [
+    "double-future-marking"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "主要句 will give 已表達未來結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項也符合第三人稱單數 Nora。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

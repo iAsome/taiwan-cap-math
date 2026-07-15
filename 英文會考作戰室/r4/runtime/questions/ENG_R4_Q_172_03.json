@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_172_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S172"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Mia will miss the bus unless she leaves now. Which action is named as the exception?",
+  "options": [
+    "Wait for another day.",
+    "Call the bus driver.",
+    "Leave now.",
+    "Miss the bus first."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "等待不符合 leaves now 這個例外。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有打電話的做法。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "unless she leaves now 表示現在離開會使原本的必然結果不再適用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "先錯過公車不是例外條件。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s172-infer-action-needed-to-avoid-missing-bus",
+    "resolve-exception-condition-as-prevention"
+  ],
+  "representationType": "unless-action-inference",
+  "misconceptionTargets": [
+    "treat-unless-condition-as-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先把句子改讀為 if she does not leave now。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是句中明示的例外，不另保證她一定搭得上車。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

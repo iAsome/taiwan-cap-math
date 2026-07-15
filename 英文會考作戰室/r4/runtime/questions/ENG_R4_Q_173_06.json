@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_173_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If Amy is free tonight, she can help us. Why do we use \"is,\" not \"will be\"?",
+  "options": [
+    "The sentence is about the past.",
+    "The if clause gives a possible future condition.",
+    "Amy is certainly free now.",
+    "The result word \"can\" alone decides the form in the if clause."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tonight 指可能未來，不是過去。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "第一類條件的 if 子句以現在式形式表達未來。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句子沒有確認 Amy 目前或今晚一定有空。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時態由 if 子句的功能決定，不是由 can 單獨控制。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u25-s173-explain-present-is-in-tonight-condition",
+    "reject-past-certainty-and-modal-substitution-explanations"
+  ],
+  "representationType": "if-clause-tense-rationale",
+  "misconceptionTargets": [
+    "confuse-present-form-with-present-certainty"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時態選擇來自子句功能，不是單一字詞替換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時保留未來意義與條件不確定性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

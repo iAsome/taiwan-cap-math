@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_173_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the rain will stop, we will walk home. Which change fixes the condition clause?",
+  "options": [
+    "Change walk to walked.",
+    "Change will stop to stops.",
+    "Change home to yesterday.",
+    "Change If to Because."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "walk 是主要句 will 後的正確原形。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "stops 是一般未來條件所需現在式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "yesterday 會造成時間矛盾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "because 會把未確定條件改成已知原因。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u25-s173-edit-will-stop-to-stops-only",
+    "isolate-condition-clause-error"
+  ],
+  "representationType": "targeted-if-clause-edit",
+  "misconceptionTargets": [
+    "delete-or-change-correct-main-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只修正錯誤位置，不連帶改壞其他成分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留雨停時走回家的原意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

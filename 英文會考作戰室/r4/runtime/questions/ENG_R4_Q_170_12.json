@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_170_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "How can this be written with if: Every time Ben feels sick, he stays home?",
+  "options": [
+    "Ben stayed home because every time was sick.",
+    "If Ben will feel sick, he stayed home.",
+    "Ben is staying home if yesterday.",
+    "If Ben feels sick, he stays home."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一項詞序與主詞不完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "時態混合，且在一般條件中誤用 will。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "if yesterday 不是完整條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個現在式保留 every time 的慣常關係。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u25-s170-restate-ben-sick-routine-with-if",
+    "preserve-repeated-time-meaning"
+  ],
+  "representationType": "routine-to-zero-condition-transformation",
+  "misconceptionTargets": [
+    "convert-habit-to-mixed-time-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "每次都適用的做法不能改成單一過去或正在發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項完整保留 Ben、感到不適與待在家三項資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_171_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "If the weather ___ good tomorrow, we will eat outside.",
+  "options": [
+    "is",
+    "was",
+    "will be",
+    "being"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一類未來條件在 if 子句用現在式 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "was 指向過去或非現實語境。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一般條件子句不在此使用 will be。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "being 不能獨立作謂語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u25-s171-select-is-for-tomorrow-weather-condition",
+    "resist-future-marker-in-if-clause"
+  ],
+  "representationType": "first-condition-be-cloze",
+  "misconceptionTargets": [
+    "use-will-in-future-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "tomorrow 不會迫使 if 子句改成未來式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項與主要句 will eat 形成標準時間配對。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
