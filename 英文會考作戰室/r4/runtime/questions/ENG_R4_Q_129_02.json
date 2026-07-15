@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which order keeps 'closed' next to its object?",
+  "options": [
+    "Mia slowly the door closed.",
+    "Mia closed the door slowly.",
+    "Mia closed slowly the door.",
+    "Mia the door slowly closed."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "主詞後的詞序沒有形成正常動詞組。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "closed the door 保持動詞與受詞相連，slowly 放在後面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "slowly 插入 closed 與 the door 之間，短句不自然。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the door 被移到主要動詞前，並非本題的一般敘述詞序。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "compare-closed-door-word-orders",
+    "keep-object-before-slowly"
+  ],
+  "representationType": "verb-object-adverb-order",
+  "misconceptionTargets": [
+    "insert-adverb-before-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定檢查動詞 closed 和受詞 the door。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項先完成動作對象，再補充速度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

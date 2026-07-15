@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Put the parts in a natural order: carefully / the glass / carried / Ben.",
+  "options": [
+    "Ben carried the glass carefully.",
+    "Ben carried carefully the glass.",
+    "Carefully the glass Ben carried.",
+    "The glass carefully carried Ben."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "主詞、動詞、受詞、方式副詞依序完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "carefully 切開 carried 與 the glass。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句首 carefully 後缺少逗點，後續詞序也不自然。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此項把 glass 寫成執行 carried 的主詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "assemble-subject-verb-object-first",
+    "append-carefully-to-carried-glass"
+  ],
+  "representationType": "word-order-construction",
+  "misconceptionTargets": [
+    "make-object-the-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先組成 Ben carried the glass，再加入方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留人物、動作與物品的角色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

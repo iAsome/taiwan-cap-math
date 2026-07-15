@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_131_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Class begins at 8:00. Mia arrives at 8:10. Mia arrives ___.",
+  "options": [
+    "late",
+    "lately",
+    "latest",
+    "hardly"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "8:10 晚於 8:00，所以 late 符合單次遲到。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "lately 表示最近期間，不表示這次晚十分鐘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "latest 是最高級，沒有比較多人的到達時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "hardly 表示幾乎不，不能描述時間差。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-class-and-arrival-times",
+    "label-ten-minute-delay-late"
+  ],
+  "representationType": "time-data-late-transfer",
+  "misconceptionTargets": [
+    "choose-lately-for-clock-delay"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先比較開始與抵達時間，得到晚到十分鐘。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項將數值結果轉成同形副詞 late。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

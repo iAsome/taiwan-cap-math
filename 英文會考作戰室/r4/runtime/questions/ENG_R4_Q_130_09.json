@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_130_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The pool rule allows water up to 30°C. Today it is 38°C, so the water is ___.",
+  "options": [
+    "too hot",
+    "very enough",
+    "hot enough",
+    "enough hot"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "38°C 超過規定上限，too hot 表示過熱。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "very enough 不是標準組合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "hot enough 表示達到某需求，沒有呈現超過上限。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "enough 應放在形容詞後，且語意方向仍不合。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "compare-temperature-with-rule-limit",
+    "label-over-limit-as-too-hot"
+  ],
+  "representationType": "numeric-limit-too-transfer",
+  "misconceptionTargets": [
+    "use-enough-for-over-limit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先比較實際 38°C 與允許上限 30°C。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把數值超標轉成 too 的限制意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

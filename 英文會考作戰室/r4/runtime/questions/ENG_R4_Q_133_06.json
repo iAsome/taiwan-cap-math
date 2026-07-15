@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_133_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The dog ___ before eating it.",
+  "options": [
+    "smelled carefully the food",
+    "smelled the food carefully",
+    "smelled the food careful",
+    "smelled good the food"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "carefully 插在動詞與短受詞之間，詞序不自然。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "smelled the food carefully 先保留動詞與受詞，再說明聞的方式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "careful 是形容詞，不能修飾 smelled。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "good 不能放在 smelled 與受詞之間形成這個意思。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-it-reference-to-identify-food",
+    "order-smell-object-before-manner"
+  ],
+  "representationType": "smell-action-word-order",
+  "misconceptionTargets": [
+    "force-linking-good-before-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "it 指 food，smelled 是狗實際聞食物的動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時保留受詞位置與方式副詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

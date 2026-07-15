@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_130_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo is too tired to walk home. What does the sentence mean?",
+  "options": [
+    "His tiredness stops him from walking home.",
+    "He walks home although he is tired.",
+    "He is tired enough after walking home.",
+    "He walks home very quickly."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "too tired to walk 表示疲勞程度阻止步行。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項把不能走改成仍然走。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原句不是說走完後達到疲勞程度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有提供速度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-too-tired-to-walk",
+    "state-prevented-action"
+  ],
+  "representationType": "too-to-meaning",
+  "misconceptionTargets": [
+    "read-too-to-as-although"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "too...to 的結果方向是程度過高而無法完成後項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保持 tired 與 walk home 的因果限制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

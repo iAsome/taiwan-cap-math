@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_130_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bag is ___ heavy for the child to carry.",
+  "options": [
+    "very",
+    "too",
+    "enough",
+    "many"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "very heavy 不必然表示孩子搬不動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "too heavy 與 for the child to carry 表示重量超過能力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "enough 要放在 heavy 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "many 不修飾形容詞 heavy。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-carrying-limit",
+    "complete-too-heavy-for-child"
+  ],
+  "representationType": "too-for-person-limit",
+  "misconceptionTargets": [
+    "use-very-for-impossible-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "for the child to carry 指出受限制的行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用 too 將過重和不能搬連接起來。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

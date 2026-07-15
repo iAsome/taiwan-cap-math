@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The guide explained the map clearly. Which part receives the explanation?",
+  "options": [
+    "clearly",
+    "the guide",
+    "the map",
+    "explained clearly"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "clearly 是方式，不是接受說明的內容。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the guide 是執行 explained 的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the map 是 explained 的受詞，也就是被說明的內容。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "explained clearly 是動作加方式，不是名詞受詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "parse-explained-map-object",
+    "separate-object-from-clearly"
+  ],
+  "representationType": "placement-preserves-object-role",
+  "misconceptionTargets": [
+    "mistake-adverb-for-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "副詞放句尾不會改變 explained 與 the map 的動詞受詞關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項確認位置安排仍能清楚找出動作對象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

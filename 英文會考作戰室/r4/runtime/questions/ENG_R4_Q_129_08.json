@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The dog barked ___ at night.",
+  "options": [
+    "at loudly night",
+    "night loudly at",
+    "loud",
+    "loudly"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "at night 是完整時間片語，不能被 loudly 切開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "詞序沒有形成可理解的時間片語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "loud 是形容詞，不能直接修飾 barked。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "loudly 放在 barked 後，at night 再提供時間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-manner-from-at-night",
+    "select-loudly-before-time-phrase"
+  ],
+  "representationType": "manner-before-time-phrase",
+  "misconceptionTargets": [
+    "split-at-night"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "句中同時有方式與時間，但兩者都不需進入另一個片語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 barked loudly at night 的清楚順序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

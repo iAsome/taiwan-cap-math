@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_127_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S127"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The door closed ___.",
+  "options": [
+    "sudden",
+    "a sudden",
+    "suddenness",
+    "suddenly"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sudden 是形容詞，不能直接修飾 closed。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "a sudden 後還需要名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "suddenness 是名詞，不回答門如何關上。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "suddenly 是副詞，表示門突然關上。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "classify-closed-as-event-action",
+    "choose-suddenly-for-manner"
+  ],
+  "representationType": "event-manner-cloze",
+  "misconceptionTargets": [
+    "use-sudden-after-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "closed 在此沒有受詞，句尾空格補充動作發生方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時符合詞性與事件意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

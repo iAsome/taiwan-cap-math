@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora read the message ___.",
+  "options": [
+    "carefully",
+    "carefully the message",
+    "the carefully message",
+    "careful"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "carefully 放在受詞 the message 後，修飾 read。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹已有 the message，選項會重複受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "carefully 不能直接修飾 message。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "careful 是形容詞，不表示閱讀方式。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "complete-read-message-object-group",
+    "place-carefully-after-object"
+  ],
+  "representationType": "post-object-manner-cloze",
+  "misconceptionTargets": [
+    "repeat-object-inside-option"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "read the message 已完成動詞與受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項在完整動作組後補上方式，不改變受詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

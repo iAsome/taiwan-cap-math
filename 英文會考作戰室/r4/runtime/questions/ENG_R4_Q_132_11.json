@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_132_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo works harder than Sam. What can we know from this alone?",
+  "options": [
+    "Leo always gets better results.",
+    "Sam never works.",
+    "Leo puts more effort into the work.",
+    "Leo finishes every job first."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "較努力不保證每次結果都較好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Sam 可能工作，只是努力程度較低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "harder 直接比較投入工作的努力方式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有提供完成順序。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "limit-inference-from-works-harder",
+    "retain-greater-effort-only"
+  ],
+  "representationType": "adverb-comparison-inference-boundary",
+  "misconceptionTargets": [
+    "infer-results-from-effort"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "方式比較只能支持被比較的方式屬性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留 effort，不擴大到結果、頻率或速度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

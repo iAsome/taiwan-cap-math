@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_127_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S127"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora answered the question ___.",
+  "options": [
+    "clear",
+    "a clear",
+    "clearly",
+    "cleared"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "clear 是形容詞，不能直接修飾 answered。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "a clear 後還需要名詞，不能表示回答方式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "clearly 是副詞，說明 Nora 如何回答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cleared 是另一個動詞形式，會和 answered 衝突。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "separate-answer-object-from-manner",
+    "attach-clearly-to-answered"
+  ],
+  "representationType": "transitive-action-manner-function",
+  "misconceptionTargets": [
+    "describe-question-instead-of-answering"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "the question 已完成受詞，句尾補充 answered 的方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓修飾關係落在動作而不是 question。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

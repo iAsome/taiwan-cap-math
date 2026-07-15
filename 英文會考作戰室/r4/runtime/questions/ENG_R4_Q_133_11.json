@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_133_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The cake tastes good. What can we know from this alone?",
+  "options": [
+    "The cake is healthy.",
+    "The cake is cheap.",
+    "Its taste is pleasant.",
+    "Everyone will eat it."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "good 在此只描述味道，不能證明食物健康。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有提供價格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "tastes good 直接表示味道令人愉快。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "好吃不保證每個人都會吃。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "limit-inference-from-tastes-good",
+    "retain-pleasant-taste-only"
+  ],
+  "representationType": "linking-adjective-inference-boundary",
+  "misconceptionTargets": [
+    "infer-health-or-popularity-from-good"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "連綴動詞後的 good 限定在主詞呈現的味道狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項沒有把感官描述擴大成營養、價格或所有人的選擇。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

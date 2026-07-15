@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes, 'Mia opened slowly the box.' Which change gives the clearest order?",
+  "options": [
+    "slowly → slow",
+    "the box → box the",
+    "opened slowly the box → opened the box slowly",
+    "Mia → Mia's"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "slow 會變成形容詞，仍未修正位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "box the 不是正常名詞片語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "opened the box 先連接動詞受詞，再放 slowly。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Mia 已是正確主詞，不需所有格。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-slowly-between-verb-object",
+    "move-adverb-after-the-box"
+  ],
+  "representationType": "adverb-order-edit",
+  "misconceptionTargets": [
+    "change-adverb-form-instead-of-position"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原句要表達的字都足夠，問題在方式副詞切開動詞與受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只調整順序，沒有改變事件內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

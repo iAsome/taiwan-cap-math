@@ -21,6 +21,7 @@ const UNITS = [
   { id: "ENG_R4_U16", firstSkill: 106 },
   { id: "ENG_R4_U17", firstSkill: 113 },
   { id: "ENG_R4_U18", firstSkill: 120 },
+  { id: "ENG_R4_U19", firstSkill: 127 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -504,6 +505,62 @@ test("U18 adjective placement and comparison forms keep scope, quantity, and inf
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U18 duplicate ${label}`);
+});
+
+test("U19 adjective, adverb, degree, comparison, and linking-verb uses keep their functional boundaries", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U19");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_127_01").options[0], "careful");
+  assert.equal(question.get("ENG_R4_Q_127_02").options[1], "quietly");
+  assert.match(question.get("ENG_R4_Q_127_08").options[3], /condition/);
+  assert.equal(question.get("ENG_R4_Q_128_02").options[1], "happily");
+  assert.equal(question.get("ENG_R4_Q_128_03").options[2], "simply");
+  assert.equal(question.get("ENG_R4_Q_128_04").options[3], "well");
+  assert.equal(question.get("ENG_R4_Q_128_08").options[3], "hard");
+  assert.equal(question.get("ENG_R4_Q_129_02").options[1], "Mia closed the door slowly.");
+  assert.match(question.get("ENG_R4_Q_129_04").options[3], /^Slowly,/);
+  assert.match(question.get("ENG_R4_Q_129_07").options[2], /opened the box slowly/);
+  assert.equal(question.get("ENG_R4_Q_130_01").options[0], "very");
+  assert.equal(question.get("ENG_R4_Q_130_02").options[1], "too");
+  assert.equal(question.get("ENG_R4_Q_130_03").options[2], "warm enough");
+  assert.equal(question.get("ENG_R4_Q_130_04").options[3], "enough");
+  assert.equal(question.get("ENG_R4_Q_130_09").options[0], "too hot");
+  assert.match(question.get("ENG_R4_Q_130_11").options[2], /low speed/);
+  assert.equal(question.get("ENG_R4_Q_131_02").options[1], "hard");
+  assert.equal(question.get("ENG_R4_Q_131_04").options[3], "lately");
+  assert.equal(question.get("ENG_R4_Q_131_11").options[2], "well");
+  assert.equal(question.get("ENG_R4_Q_132_02").options[1], "more carefully");
+  assert.equal(question.get("ENG_R4_Q_132_04").options[3], "better");
+  assert.equal(question.get("ENG_R4_Q_132_05").options[0], "quickly");
+  assert.equal(question.get("ENG_R4_Q_132_08").options[3], "worse");
+  assert.equal(question.get("ENG_R4_Q_133_01").options[0], "sour");
+  assert.equal(question.get("ENG_R4_Q_133_02").options[1], "carefully");
+  assert.equal(question.get("ENG_R4_Q_133_05").options[0], "The room looks clean.");
+  assert.equal(question.get("ENG_R4_Q_133_06").options[1], "smelled the food carefully");
+  assert.match(question.get("ENG_R4_Q_133_09").options[0], /links Nora to a state.*describes an action/);
+  assert.equal(question.get("ENG_R4_Q_133_10").options[1], "well");
+  assert.equal(question.get("ENG_R4_Q_133_11").options[2], "Its taste is pleasant.");
+  const formationLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S128");
+  assert.match(formationLecture.sections.map((value) => value.content).join(" "), /y.*i.*terrible.*simply.*good.*well.*hardly/);
+  const placementLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S129");
+  assert.match(placementLecture.sections.map((value) => value.content).join(" "), /closed 與 the door.*方式副詞放在整組後面/);
+  const degreeLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S130");
+  assert.match(degreeLecture.sections.map((value) => value.content).join(" "), /very cold.*沒有斷定不能使用.*too cold.*enough/);
+  const sameFormLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S131");
+  assert.match(sameFormLecture.sections.map((value) => value.content).join(" "), /hardly.*lately/);
+  const comparisonLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S132");
+  assert.match(comparisonLecture.sections.map((value) => value.content).join(" "), /more carefully.*well.*better.*as.*as/);
+  const linkingLecture = source.lectures.find((value) => value.skillId === "ENG_R4_S133");
+  assert.match(linkingLecture.sections.map((value) => value.content).join(" "), /looked carefully at.*looked tired.*tastes good.*cooks well/);
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U19 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U19 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

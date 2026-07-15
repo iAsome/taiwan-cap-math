@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_130_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The machine moves very slowly. What can we know from this alone?",
+  "options": [
+    "It cannot finish the work.",
+    "It is too old to use.",
+    "Its movement has a low speed.",
+    "It will stop in one minute."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "very slowly 沒有斷定工作一定無法完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子沒有提供機器年齡或可用性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "very slowly 只直接說明移動速度很低。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有提供停止時間。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "limit-inference-from-very-slowly",
+    "retain-low-speed-fact-only"
+  ],
+  "representationType": "very-inference-boundary",
+  "misconceptionTargets": [
+    "infer-impossibility-from-very"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "very 提高 slowly 的程度，但不自動產生不能完成的結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只重述已知速度，不加入故障推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

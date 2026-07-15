@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_133_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben smelled the milk ___ before drinking it.",
+  "options": [
+    "careful",
+    "carefully",
+    "a careful",
+    "more careful"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "careful 是形容詞，不能直接修飾 smelled 這個動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "carefully 說明 Ben 聞牛奶時採取的方式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a careful 後需要名詞，不能獨立補入。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "more careful 是形容詞比較形式，句中也沒有比較。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "read-smelled-with-object-as-action",
+    "choose-carefully-for-smelling-manner"
+  ],
+  "representationType": "sensory-action-adverb-cloze",
+  "misconceptionTargets": [
+    "always-treat-smell-as-linking"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "smelled 後已有受詞 the milk，因此這裡表示實際聞東西的動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項修飾動作，而不是把狀態連回 Ben。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_133_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nora cooks ___.",
+  "options": [
+    "good",
+    "well",
+    "a good",
+    "goodness"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "good 是形容詞，不能直接修飾 cooks。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "well 是副詞，說明 Nora 烹調的表現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a good 後缺少名詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "goodness 是名詞，不回答烹調方式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-cooks-as-action-verb",
+    "choose-well-for-cooking-performance"
+  ],
+  "representationType": "action-good-well-cloze",
+  "misconceptionTargets": [
+    "use-good-after-action-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "cooks 在這裡是動作，不是連綴動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項使用 good 對應的方式副詞 well。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

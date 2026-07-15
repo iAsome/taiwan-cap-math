@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A drink card says, 'Mix the water and juice ___.'",
+  "options": [
+    "the cup slowly",
+    "slow the cup",
+    "the slowly cup",
+    "slowly"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹已給受詞，the cup 會增加未交代的對象。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "slow 是形容詞，且 the cup 不是必要成分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "slowly 不能直接修飾 cup。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "slowly 放在完整受詞後，清楚說明 mix 的方式。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "read-instruction-with-complete-object",
+    "append-slowly-to-mixing-action"
+  ],
+  "representationType": "instruction-manner-placement",
+  "misconceptionTargets": [
+    "add-extra-object-to-instruction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "the water and juice 已經是 mix 的完整受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只加入操作速度，適合作為簡短指示。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The worker placed the cups ___.",
+  "options": [
+    "on carefully the table",
+    "carefully on the table",
+    "the table carefully on",
+    "careful on the table"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "carefully 不應插入介系詞 on 與其受詞之間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "carefully 說明 placed 的方式，on the table 保持完整地點片語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "詞序沒有形成完整的地點片語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "careful 是形容詞，不能直接修飾 placed。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "preserve-on-the-table-phrase",
+    "position-carefully-before-location"
+  ],
+  "representationType": "manner-location-order",
+  "misconceptionTargets": [
+    "split-preposition-and-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "空格同時要容納方式與地點，兩個片語各自保持完整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項將 carefully 放在 on the table 前，不切斷任何必要成分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

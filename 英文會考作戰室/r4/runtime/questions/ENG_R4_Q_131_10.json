@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_131_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence uses 'lately' to mean 'during the days before now'?",
+  "options": [
+    "The train came lately at nine.",
+    "Mia has felt tired lately.",
+    "The late bus is here.",
+    "Please come lately than noon."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "某次九點到達應用 late，不用 lately。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "lately 表示最近一段時間，配合 has felt。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "late 在此是形容詞，修飾 bus。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "比較時間應使用 later，且 than 結構不完整。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "test-lately-across-four-time-uses",
+    "select-recent-period-sentence"
+  ],
+  "representationType": "late-lately-sentence-selection",
+  "misconceptionTargets": [
+    "use-lately-for-specific-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "days before now 指跨一段近期時間，而不是某一次時刻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項的現在完成式和 lately 彼此配合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

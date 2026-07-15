@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_132_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A note says, 'The bike moved more faster today.' Which change is needed?",
+  "options": [
+    "moved → moves",
+    "today → tomorrow",
+    "more faster → faster",
+    "bike → bikes"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若事件在 today 已發生，moved 可保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "時間詞不是比較級錯誤來源。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "faster 已含 -er，刪除重複的 more。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "主詞單數和 moved 不衝突。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-more-faster",
+    "remove-duplicate-more"
+  ],
+  "representationType": "double-adverb-comparative-edit",
+  "misconceptionTargets": [
+    "change-tense-instead-of-degree"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "原句的問題是同一比較級標記兩次。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留 fast 的正確副詞比較形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_130_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We do not have ___ time to catch the last bus.",
+  "options": [
+    "time enough",
+    "very",
+    "too",
+    "enough"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "time enough 不是本題採用的標準名詞順序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "very 不能直接修飾 time。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "too 單獨不能限定 time，需有 much。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "enough time 表示可用時間是否足夠。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "parse-not-have-quantity-gap",
+    "place-enough-before-time"
+  ],
+  "representationType": "negative-enough-noun-cloze",
+  "misconceptionTargets": [
+    "reverse-time-enough-order"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "空格在名詞 time 前，not 將整個足夠狀態否定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 do not have enough time。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

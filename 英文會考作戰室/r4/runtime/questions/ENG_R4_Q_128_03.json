@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_128_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Ben explained the rule ___. (simple)",
+  "options": [
+    "simplely",
+    "simpily",
+    "simply",
+    "simple"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "simplely 錯誤保留完整 -le 再加 ly。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "simpily 拼錯字尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "simply 去掉 e 並把 -le 改成 -ly。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "simple 是形容詞，不能直接修飾 explained。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "recognize-simple-le-ending",
+    "form-simply-after-explained"
+  ],
+  "representationType": "le-to-ly-adverb",
+  "misconceptionTargets": [
+    "append-ly-to-full-simple"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "空格說明 explained 的方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項套用 simple → simply 的 -le 變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

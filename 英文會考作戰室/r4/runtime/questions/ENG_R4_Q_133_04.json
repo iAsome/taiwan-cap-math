@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_133_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "These flowers smell ___.",
+  "options": [
+    "sweetly",
+    "sweets",
+    "a sweet",
+    "sweet"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "sweetly 是副詞，不能描述 flowers 本身的氣味狀態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "sweets 是複數名詞，不適合作補語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a sweet 是名詞片語，意思與花的氣味不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "sweet 是形容詞，表示這些花聞起來很香甜。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "detect-no-agent-in-flowers-smell",
+    "select-sweet-for-flower-state"
+  ],
+  "representationType": "smell-linking-adjective-cloze",
+  "misconceptionTargets": [
+    "use-sweetly-after-linking-smell"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "句中沒有聞花的人，smell 是連綴動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項把感官得到的性質連回主詞 flowers。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

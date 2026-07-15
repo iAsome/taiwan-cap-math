@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_130_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A room has 25 chairs for 25 students. Which sentence matches?",
+  "options": [
+    "There are very chairs.",
+    "The chairs are enough comfortable.",
+    "There are too chairs.",
+    "There are enough chairs."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "very 不能直接限定 chairs。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "enough 修飾 comfortable 時應在後面，而且資料只談數量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "too 後需要 many，資料也未顯示過多造成問題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "椅子與學生各 25，數量足夠。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "compare-chair-supply-with-students",
+    "express-sufficient-count-with-enough"
+  ],
+  "representationType": "capacity-enough-transfer",
+  "misconceptionTargets": [
+    "use-enough-as-adjective-prefix"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "本題比較供應數和需求數，兩者相等。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 enough + plural noun 表達數量達標。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

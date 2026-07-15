@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_133_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A phone card says, 'This model feels ___ in your hand.'",
+  "options": [
+    "lightly",
+    "a light",
+    "lightness",
+    "light"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "lightly 是方式副詞，不能描述 model 的重量感受。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "a light 表示一盞燈等名詞意思，和手機重量不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "lightness 是名詞，不能直接作此處補語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "light 是形容詞，表示這款手機拿起來很輕。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-feels-as-product-linking-verb",
+    "select-light-weight-condition"
+  ],
+  "representationType": "product-feel-linking-adjective",
+  "misconceptionTargets": [
+    "choose-lightly-for-sensory-state"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "feels 在產品描述中連接 model 與使用者感受到的性質。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項描述主詞本身，不是在說觸摸動作很輕。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

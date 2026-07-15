@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_127_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S127"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which pair uses the same word family to describe a person first and an action second?",
+  "options": [
+    "a quietly child / speaks quiet",
+    "a polite child / speaks politely",
+    "a politely child / speaks polite",
+    "a politeness child / speaks politer"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "quietly 不能直接修飾 child，quiet 也不能在此修飾 speaks。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "polite 描述 child，politely 說明 speaks 的方式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩個形式的位置正好相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "politeness 是名詞，politer 也不是此處需要的方式副詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "compare-two-slot-word-family-functions",
+    "match-polite-and-politely"
+  ],
+  "representationType": "paired-adjective-adverb-functions",
+  "misconceptionTargets": [
+    "reverse-adjective-adverb-positions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要求先形容詞、後副詞兩個不同句法工作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項在換位置時也正確換了字族形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

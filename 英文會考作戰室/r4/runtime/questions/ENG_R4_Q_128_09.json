@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_128_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Rain fell ___ during the night. (heavy)",
+  "options": [
+    "heavily",
+    "heavyly",
+    "heavy",
+    "heavier"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "heavily 把子音後 y 改 i，再加 -ly。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "heavyly 沒有處理 y 字尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "heavy 是形容詞，不能直接修飾 fell。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "heavier 是比較級形容詞，沒有比較對象。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "apply-y-to-ily-for-heavy",
+    "attach-heavily-to-fell"
+  ],
+  "representationType": "heavy-to-heavily-transfer",
+  "misconceptionTargets": [
+    "write-heavyly"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "fell 是動作，空格說明降雨方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項使用 heavy → heavily 的規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

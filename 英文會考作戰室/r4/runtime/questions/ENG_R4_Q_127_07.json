@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_127_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S127"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A card says, 'It is a beautifully picture.' Which change fixes the word before 'picture'?",
+  "options": [
+    "picture → pictured",
+    "a → an",
+    "beautifully → beautiful",
+    "is → does"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "pictured 會改掉名詞，沒有修正修飾語詞性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "beautifully 的開頭音不需要 an，而且冠詞不是主要錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "picture 前需要形容詞 beautiful。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "does 不能連接主詞與名詞片語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "diagnose-adverb-before-picture",
+    "repair-beautifully-to-beautiful"
+  ],
+  "representationType": "adjective-adverb-edit",
+  "misconceptionTargets": [
+    "change-unrelated-article-or-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先鎖定題目指定的 picture 前位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只把副詞改成形容詞，保留原句要描述圖片的意思。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

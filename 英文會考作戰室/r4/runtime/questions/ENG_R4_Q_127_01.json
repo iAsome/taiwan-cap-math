@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_127_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S127"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia made a ___ plan.",
+  "options": [
+    "careful",
+    "carefully",
+    "care",
+    "cared"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "careful 是形容詞，可直接修飾 plan。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "carefully 是副詞，不能放在此處描述名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "care 通常是名詞或動詞，未形成需要的修飾語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cared 是動詞過去式，不適合放在 a 與 plan 之間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "locate-modifier-before-plan",
+    "select-careful-adjective"
+  ],
+  "representationType": "adjective-before-noun-function",
+  "misconceptionTargets": [
+    "use-adverb-before-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "空格後是名詞 plan，因此先找能描述名詞的形式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不是因字義猜中，而是句法位置要求形容詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

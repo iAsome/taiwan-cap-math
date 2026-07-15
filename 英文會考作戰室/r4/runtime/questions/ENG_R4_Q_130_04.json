@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_130_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "There are ___ chairs for every student.",
+  "options": [
+    "chairs enough",
+    "very chairs",
+    "too chairs",
+    "enough"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "chairs enough 顛倒了名詞與 enough 的位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "very 不能直接修飾複數名詞 chairs。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "too chairs 缺少 many。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "enough 放在 chairs 前，表示數量足夠。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-quantity-word-before-chairs",
+    "use-enough-before-noun"
+  ],
+  "representationType": "pre-noun-enough",
+  "misconceptionTargets": [
+    "put-enough-after-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題幹空格在名詞 chairs 前，因此 enough 直接限定數量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項和 warm enough 的位置規則不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

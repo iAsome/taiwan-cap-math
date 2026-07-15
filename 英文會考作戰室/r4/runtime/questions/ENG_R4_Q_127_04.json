@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_127_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S127"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The ___ rain ended at noon.",
+  "options": [
+    "heavily",
+    "heaviness",
+    "more heavily",
+    "heavy"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "heavily 是副詞，不能直接放在 rain 前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "heaviness 是名詞，不能作此處修飾語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "more heavily 是副詞比較形式，句中沒有動作或比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "heavy 是形容詞，直接描述 rain。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "distinguish-rain-modifier-from-ended",
+    "use-heavy-before-rain"
+  ],
+  "representationType": "noun-phrase-versus-verb-modifier",
+  "misconceptionTargets": [
+    "choose-heavily-near-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "空格與 rain 構成名詞片語，不是在修飾 ended。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項形成 the heavy rain，詞性與意思都完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

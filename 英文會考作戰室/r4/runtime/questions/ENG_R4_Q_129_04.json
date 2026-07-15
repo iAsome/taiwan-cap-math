@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_129_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S129"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which line uses a comma to separate a manner word placed first?",
+  "options": [
+    "Slowly Ben, opened the box.",
+    "Slowly Ben opened, the box.",
+    "Ben, opened the box slowly.",
+    "Slowly, Ben opened the box."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "逗點錯放在 Ben 後，沒有分隔句首 slowly。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "逗點切開 opened 與 the box。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主詞 Ben 與動詞 opened 不應被逗點分開。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Slowly 放句首，逗點後再接完整主句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-fronted-manner-boundary",
+    "punctuate-slowly-before-main-clause"
+  ],
+  "representationType": "fronted-adverb-punctuation",
+  "misconceptionTargets": [
+    "comma-between-subject-and-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先找前置的方式副詞 Slowly，再找主句 Ben opened the box。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項只在兩個部分的邊界使用逗點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

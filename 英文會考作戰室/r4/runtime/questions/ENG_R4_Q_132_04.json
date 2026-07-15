@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_132_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo played ___ than last week. (well)",
+  "options": [
+    "more well",
+    "best",
+    "gooder",
+    "better"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "more well 不是 well 的標準比較級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "best 是最高級，題目只比較兩個時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "gooder 不是標準形式，也把詞性方向混亂。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "better 是 well 的不規則比較級。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "identify-well-as-played-modifier",
+    "choose-irregular-better"
+  ],
+  "representationType": "well-better-adverb-comparison",
+  "misconceptionTargets": [
+    "form-more-well"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "played 需要副詞，than last week 要求比較級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 well-better-best 的中間形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
