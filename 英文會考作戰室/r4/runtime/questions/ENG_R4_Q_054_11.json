@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A sign says, “Buses stop here after 6 p.m.” Do buses stop here at 7 p.m.?",
+  "options": [
+    "No, it doesn't.",
+    "No, they don't.",
+    "Yes, they do.",
+    "Yes, it does."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "buses 是複數，不能用 it；內容也應為肯定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "時間 7 p.m. 在六點之後，否定回答不符標示。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "標示指出六點後停靠，7 p.m. 應回答 Yes, they do。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肯定語意正確，但單數 it 未代替複數 buses。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "apply-notice-condition",
+    "form-evidence-based-short-answer"
+  ],
+  "representationType": "sign-and-question",
+  "misconceptionTargets": [
+    "choose-correct-truth-with-wrong-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "7 p.m. 屬 after 6 p.m.，所以事實為肯定；buses 以 they 代替。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同時核對時間條件與複數簡答，可唯一得到第三項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

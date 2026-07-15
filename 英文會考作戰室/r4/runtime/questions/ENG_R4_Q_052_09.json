@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_052_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The two sisters practice after dinner. Which question checks this information?",
+  "options": [
+    "Does the two sisters practice after dinner?",
+    "Do the two sisters practice after dinner?",
+    "Do the two sisters practices after dinner?",
+    "Are the two sisters practice after dinner?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "two sisters 是複數，不能使用 Does。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Do 配複數 two sisters，後接原形 practice，結構正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Do 後主要動詞不應加 -s。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are 後不能直接接原形一般動詞 practice。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "transform-statement-to-question",
+    "preserve-meaning"
+  ],
+  "representationType": "sentence-transformation",
+  "misconceptionTargets": [
+    "misread-plural-s-ending"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句主詞 two sisters 為複數；改問句時在前面加入 Do，practice 保持原形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二句是唯一保留原意並符合現在簡單式問句規則的選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

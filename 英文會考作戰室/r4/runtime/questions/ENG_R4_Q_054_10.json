@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: We need two more cups. B: Do we need more plates, too? A: No, ___.",
+  "options": [
+    "we don't",
+    "you don't",
+    "we aren't",
+    "we doesn't"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "we don't 正確延續雙方所屬的 we，並否定 need。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "you 改變了問句所指的共同群體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "need 是一般動詞，不能用 aren't 回答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "we 不搭配 doesn't。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "maintain-inclusive-pronoun",
+    "complete-negative-response"
+  ],
+  "representationType": "multi-turn-dialogue",
+  "misconceptionTargets": [
+    "shift-we-to-you-without-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "問答雙方都以 we 指共同群體，Do 問句的否定簡答為 we don't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留人稱和一般動詞助動詞，沒有把 plates 的資訊誤轉給 you。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

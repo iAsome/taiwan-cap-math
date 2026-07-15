@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The science club meets every other Tuesday. What does this sentence tell us?",
+  "options": [
+    "The club met only once in the past.",
+    "The club follows a regular meeting plan.",
+    "The club is meeting at this moment.",
+    "The club has not chosen a meeting day."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "meets 是現在簡單式，沒有表示過去只發生一次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "every other Tuesday 表示每隔一個星期二開會的固定安排。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "句中沒有 now，也沒有 is meeting 的進行式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子已清楚提供會議日，不是尚未決定。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-grammar-in-notice",
+    "infer-recurring-plan"
+  ],
+  "representationType": "notice-interpretation",
+  "misconceptionTargets": [
+    "confuse-simple-with-single-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "every other Tuesday 和 meets 共同表達規律排程，故第二項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "將各選項改寫回時間意義後，只有 regular meeting plan 與原句完全相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

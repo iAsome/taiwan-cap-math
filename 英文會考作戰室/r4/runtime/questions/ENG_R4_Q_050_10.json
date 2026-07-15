@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The notice says the boat ___ at 6:40 tomorrow morning.",
+  "options": [
+    "left",
+    "is leave",
+    "leaves",
+    "leaving"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "left 表示渡輪已在過去離開，與 tomorrow 衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is leave 不是合法的現在式或進行式結構。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "leaves 可用現在簡單式表達時刻表上的固定班次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "leaving 缺少 be 動詞，無法單獨完成謂語。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-future-schedule",
+    "apply-present-simple-to-timetable"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "tomorrow-always-needs-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "notice 提供固定出發時刻，所以 tomorrow 前仍可用 leaves。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "語意與句法雙重檢核顯示，只有 leaves 能表達已排定的未來班次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

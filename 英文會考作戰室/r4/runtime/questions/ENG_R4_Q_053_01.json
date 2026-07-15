@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Evan ___ meat.",
+  "options": [
+    "don't eats",
+    "doesn't eats",
+    "doesn't eat",
+    "isn't eat"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Evan 是單數第三人稱，不能用 don't，且助動詞後不加 -s。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 與主詞一致，但 eats 應還原為 eat。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "doesn't eat 正確形成單數第三人稱的一般動詞否定句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "isn't 不能直接接原形一般動詞 eat。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "select-negative-auxiliary",
+    "restore-base-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "double-mark-after-doesnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Evan 可代換為 he，所以使用 doesn't，後面接原形 eat。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一同時符合助動詞一致與主要動詞原形的選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

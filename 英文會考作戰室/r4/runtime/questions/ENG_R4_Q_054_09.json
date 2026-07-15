@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Do your parents work on weekends? — No, ___.",
+  "options": [
+    "you don't",
+    "we don't",
+    "they doesn't",
+    "they don't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "you 指聽話者，沒有代替問句中的 parents。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "除非 parents 本人回答，題面的一般回答應以 they 指稱他們。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "they 是複數，不能搭配 doesn't。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "they don't 正確代替 your parents 並回答 Do 問句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "track-possessive-reference",
+    "select-pronoun-in-answer"
+  ],
+  "representationType": "dialogue-completion",
+  "misconceptionTargets": [
+    "copy-possessive-person-into-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "your parents 從被問者口中仍指第三人稱複數，以 they don't 回答。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項保持原主詞指涉，並使用複數助動詞 do 的否定形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The school show ___ at seven tomorrow evening.",
+  "options": [
+    "started",
+    "starts",
+    "starting",
+    "is start"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "started 是過去式，和 tomorrow 衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "starts 可用現在簡單式表示節目表上排定的開始時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "starting 缺少 be 動詞，不能獨立作謂語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is start 不是正確的英文動詞結構。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "distinguish-schedule-from-prediction",
+    "use-simple-present-for-event-time"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "future-word-forces-will"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "school show 的開始時間屬固定安排，即使有 tomorrow 也可使用 starts。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一同時符合未來排程語意與完整限定動詞形式的選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

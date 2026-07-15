@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The store ___ at ten on Sundays, so we cannot shop there at eleven.",
+  "options": [
+    "closing",
+    "closed",
+    "close",
+    "closes"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "closing 缺少 be 動詞，不能獨立作本句謂語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "closed 是過去式，和 on Sundays 的固定規律不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "close 未配合單數主詞 store。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "closes 正確表達商店每逢星期日的固定關門時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "link-schedule-and-result",
+    "apply-present-simple"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "past-form-for-scheduled-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "on Sundays 指固定規律，單數 store 要搭配 closes。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "後句 at eleven 的推論符合十點關門；只有 closes 提供固定時刻的意義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

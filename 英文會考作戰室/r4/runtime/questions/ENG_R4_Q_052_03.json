@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_052_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Does Kevin ___ breakfast at home?",
+  "options": [
+    "eats",
+    "eating",
+    "ate",
+    "eat"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "eats 和 Does 重複標示第三人稱單數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "eating 需要 be 動詞才能形成進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ate 是過去式，不能放在現在式 Does 問句後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "eat 是原形，正確接在 Does 和主詞 Kevin 之後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "remove-double-marking",
+    "use-base-verb-after-does"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "retain-s-after-does"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Does 已承擔現在式與單數標記，主要動詞必須回到原形 eat。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "移除 Does 後才會寫 Kevin eats；保留 Does 時唯一答案為 eat。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

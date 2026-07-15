@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A baby sometimes ___ when it is hungry.",
+  "options": [
+    "cry",
+    "cries",
+    "crys",
+    "crying"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cry 未配合單數主詞 baby。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "cries 依子音字母加 y 規則改 y 為 i，再加 -es。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "crys 漏掉 y 改 i 的拼字變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "crying 缺少 be 動詞，不能完成本句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "apply-y-ending-rule",
+    "maintain-subject-agreement"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-y-to-i-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "baby 是單數，cry 的 y 前為子音 r，因此正確形式是 cries。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "語意是習慣且主詞單數，依拼字規則只有 cries 可用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nina takes the same train seven days a week. Which word best describes this habit?",
+  "options": [
+    "never",
+    "seldom",
+    "sometimes",
+    "always"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "never 表示零次，和七天都搭車相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "seldom 表示很少，不能描述每天。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "sometimes 表示有時，頻率低於題示的七天。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "always 最符合一週七天都搭同一班車的習慣。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "map-frequency-data-to-adverb",
+    "compare-frequency-scale"
+  ],
+  "representationType": "frequency-interpretation",
+  "misconceptionTargets": [
+    "treat-sometimes-as-any-repeated-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "seven days a week 表示沒有例外，對應最高頻率副詞 always。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "將四個副詞按頻率排列後，只有 always 能涵蓋題示全部七天。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo doesn't walks home on Fridays. Which sentence fixes the error?",
+  "options": [
+    "Leo don't walk home on Fridays.",
+    "Leo doesn't walk home on Fridays.",
+    "Leo isn't walk home on Fridays.",
+    "Leo doesn't walking home on Fridays."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo 是單數，不能使用 don't。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "doesn't 後接原形 walk，正確修復重複的第三人稱標記。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "isn't 不能直接接原形一般動詞 walk。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "doesn't 後需要原形，不是現在分詞 walking。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-specific-verb-phrase",
+    "preserve-sentence-meaning"
+  ],
+  "representationType": "targeted-error-correction",
+  "misconceptionTargets": [
+    "double-third-person-marking"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句唯一核心錯誤是 doesn't 後保留 walks；改成 doesn't walk 即可。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留主詞、時間與否定意義，同時把主要動詞還原為原形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

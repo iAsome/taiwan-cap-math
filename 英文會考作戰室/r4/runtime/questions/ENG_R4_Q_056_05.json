@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "June usually walks home, but today she is taking a taxi. Which word points to the change for today?",
+  "options": [
+    "usually",
+    "today",
+    "walks",
+    "home"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "usually 指向平常走路的習慣，不是今天的例外。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "today 把搭計程車限制在今天，因此指出臨時改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "walks 是平常子句的動詞，沒有標示例外發生的時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "home 說明目的地，不是時間線索。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "assign-clue-to-clause",
+    "identify-temporary-time-marker"
+  ],
+  "representationType": "clause-scope-identification",
+  "misconceptionTargets": [
+    "apply-usually-to-second-clause"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "usually 屬於 walks home，today 則限定 is taking a taxi；所以第二項指向臨時改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "分開兩個子句的線索後，可知人物與目的地都不提供時間，只有 today 符合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Lina lives in Hualien, but this month she ___ with her aunt in Taipei.",
+  "options": [
+    "lives",
+    "lived",
+    "is staying",
+    "stay"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "lives 會把本月的暫時居住誤解成長期狀態，且與前句對比不足。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "lived 表示已結束的過去，但 this month 仍是目前期間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is staying 正確表示本月暫住臺北，和長期住花蓮形成對比。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "stay 不符合第三人稱單數，也沒有表達暫時進行情況。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "contrast-permanent-and-temporary",
+    "select-tense-by-context"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-present-simple-for-every-current-state"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "but 對比長期住所 lives 與本月暫住，後句應為 is staying。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "this month 在此限定目前的臨時狀態；is staying 是唯一語意完整的選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

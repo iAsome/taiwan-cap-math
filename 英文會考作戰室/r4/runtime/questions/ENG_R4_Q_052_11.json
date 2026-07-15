@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_052_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You want to know whether one bus goes directly to the zoo. What should you ask?",
+  "options": [
+    "Do this bus goes directly to the zoo?",
+    "Is this bus go directly to the zoo?",
+    "This bus goes directly to the zoo?",
+    "Does this bus go directly to the zoo?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單數 bus 要用 Does，且助動詞後不能保留 goes。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is 不能直接接原形一般動詞 go。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肯定句語序在正式書面題中不是標準 yes-no 問句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Does 配單數 bus，go 使用原形，能清楚詢問路線。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "apply-question-form-in-travel-context",
+    "evaluate-naturalness"
+  ],
+  "representationType": "travel-dialogue-choice",
+  "misconceptionTargets": [
+    "statement-intonation-as-written-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此情境詢問單一公車路線，標準問法是 Does this bus go directly to the zoo?",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "從溝通目的與句法兩面檢查，第四項是唯一自然且無雙重變化的問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

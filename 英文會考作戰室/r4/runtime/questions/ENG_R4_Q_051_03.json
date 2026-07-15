@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Emma ___ math every evening.",
+  "options": [
+    "study",
+    "studys",
+    "studying",
+    "studies"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "study 未配合單數主詞 Emma。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "study 以子音字母加 y 結尾，不能直接寫 studys。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "studying 不是本句所需的現在簡單式限定動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "studies 正確把 y 改成 i 再加 -es。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "inspect-letter-before-y",
+    "apply-ies-ending"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "write-studys"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Emma 是第三人稱單數，study 的 y 前是 d，故變成 studies。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "依子音加 y 的拼字規則重建動詞，可唯一得到 studies。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

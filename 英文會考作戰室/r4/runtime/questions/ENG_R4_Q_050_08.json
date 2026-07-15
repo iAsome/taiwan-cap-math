@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Kai usually cooks dinner, but tonight his father ___.",
+  "options": [
+    "cooks",
+    "is cooking",
+    "cooked",
+    "cook"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cooks 會把今晚的例外也寫成父親的固定習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is cooking 正確表示今晚正在發生、不同於平常的臨時安排。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "cooked 是已結束的過去式，tonight 的情境未表示事件已結束。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cook 不符合單數主詞 father。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-clause-time-frames",
+    "contrast-tenses"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "one-sentence-one-tense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "usually 與 but tonight 建立習慣和當下例外的對比，故選 is cooking。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐子句配對時間線索後，第二子句需要現在進行式而非現在簡單式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

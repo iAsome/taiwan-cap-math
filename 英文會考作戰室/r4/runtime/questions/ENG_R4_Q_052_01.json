@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_052_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ your sister work at the hospital?",
+  "options": [
+    "Do",
+    "Does",
+    "Is",
+    "Are"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Do 不和單數第三人稱主詞 your sister 搭配。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Does 正確引導單數第三人稱的一般動詞問句。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Is 後不能直接接原形一般動詞 work。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are 既不配合單數主詞，也不能形成本句的一般動詞問句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-subject-person",
+    "select-do-or-does"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-do-with-third-person-singular"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "work 是一般動詞，your sister 可代換為 she，因此問句使用 Does。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "主詞人稱與動詞種類都指向 Does；其餘選項無法形成合法結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

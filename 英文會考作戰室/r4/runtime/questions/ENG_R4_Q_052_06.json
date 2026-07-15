@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_052_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "What time ___ the movie start?",
+  "options": [
+    "do",
+    "does",
+    "is",
+    "has"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "do 不配合單數主詞 the movie。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "does 放在疑問詞與單數主詞之間，後接原形 start。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 不能直接接原形 start。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "has 無法形成 start 的現在簡單式問句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "extend-yes-no-to-wh-question",
+    "maintain-auxiliary-agreement"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "omit-does-after-wh-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "疑問詞 What time 後仍需助動詞；movie 是單數，所以填 does。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "還原 yes-no 問句 Does the movie start...? 可確認第二項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

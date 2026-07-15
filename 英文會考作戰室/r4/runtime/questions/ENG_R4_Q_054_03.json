@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Do you bring lunch from home? — Yes, ___.",
+  "options": [
+    "you do",
+    "I does",
+    "I am",
+    "I do"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "回答者談自己時，問句的 you 要轉成 I。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "I 不搭配 does。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "問句使用 do，不以 am 取代。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "I do 正確反映回答者視角並保留助動詞 do。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "shift-speaker-perspective",
+    "complete-short-answer"
+  ],
+  "representationType": "dialogue-completion",
+  "misconceptionTargets": [
+    "keep-you-in-self-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "被問的人以 I 回答自己的行動，Do 問句的肯定形式為 I do。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "代名詞視角與助動詞搭配均正確的只有第四項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

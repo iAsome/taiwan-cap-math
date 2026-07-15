@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ check the door before I leave home.",
+  "options": [
+    "am always",
+    "check always",
+    "always",
+    "always am"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "check 是本句一般動詞，不需要加入 am。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "頻率副詞在中性語序中不放在一般動詞 check 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "always 放在一般動詞 check 前，形成自然的習慣句。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句中不需要 be 動詞，always am 也無法接 check。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-main-verb",
+    "place-frequency-adverb"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "insert-be-before-frequency-adverb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "主要動詞是 check，頻率副詞 always 應放在它前面，因此選第三項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "代入後只有 I always check... 形成完整且自然的現在簡單式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

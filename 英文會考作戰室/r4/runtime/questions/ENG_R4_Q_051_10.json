@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo ___ to the chess club with his grandfather on Sundays.",
+  "options": [
+    "goes",
+    "gos",
+    "go",
+    "going"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "goes 是 go 的第三人稱單數形式，符合單數主詞 Leo。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "go 以 -o 結尾時要加 -es，不能只寫 gos。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "go 未標示單數第三人稱。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "going 前缺少 be 動詞，不能作現在簡單式謂語。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "apply-o-ending-rule",
+    "spell-third-person-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "add-s-without-es-after-o"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "單數 Leo 的固定活動使用現在簡單式，go 以 -o 結尾，因此答案是 goes。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐一代入可排除漏變化的 go、錯拼的 gos 與缺 be 的 going。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

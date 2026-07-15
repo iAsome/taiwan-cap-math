@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Maya ___ to the library every Saturday.",
+  "options": [
+    "is going",
+    "goes",
+    "went",
+    "go"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is going 表示一段正在進行的臨時動作，與 every Saturday 的固定習慣不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "goes 以現在簡單式表達每週六的習慣，並符合單數主詞 Maya。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "went 是過去式，句中沒有已結束的過去時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "go 未配合第三人稱單數主詞 Maya 變化。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify-recurring-time",
+    "select-present-simple"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "present-simple-means-only-now"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "every Saturday 表示反覆習慣，Maya 為第三人稱單數，因此推得 goes。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐一代入後，只有 goes 同時符合現在簡單式語意與主詞動詞一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

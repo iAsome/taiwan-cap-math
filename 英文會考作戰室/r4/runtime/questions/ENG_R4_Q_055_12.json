@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Leo plays often basketball after dinner. Where should the word often go?",
+  "options": [
+    "Leo is often plays basketball after dinner.",
+    "Leo often plays basketball after dinner.",
+    "Leo plays often basketball after dinner.",
+    "Leo does plays often basketball after dinner."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is 和 plays 不能同時作此現在簡單式的限定動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "often 放在一般動詞 plays 前，句意與結構都自然。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "often 仍放在動詞與受詞 basketball 之間，沒有修正原來的詞序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "does 後不應使用 plays，often 的位置也未修好。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "repair-adverb-placement",
+    "preserve-original-meaning"
+  ],
+  "representationType": "targeted-error-correction",
+  "misconceptionTargets": [
+    "place-often-after-transitive-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "原句只需把 often 移到一般動詞 plays 前，得到第二句。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留全部原意且不增添助動詞或新頻率訊息，是最小而完整的修正。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

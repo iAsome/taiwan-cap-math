@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This card does not work after June 30. What should a person understand?",
+  "options": [
+    "The card starts working on June 30.",
+    "The card works only after June 30.",
+    "The card cannot be used after June 30.",
+    "The card never works before June 30."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "does not work after 並不表示從該日開始可用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "only after 會把原句限制完全反轉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "原句直接表示 6 月 30 日之後卡片無法使用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原句沒有否定 6 月 30 日以前的效力。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "apply-negative-form-to-notice",
+    "identify-validity-limit"
+  ],
+  "representationType": "public-notice-interpretation",
+  "misconceptionTargets": [
+    "reverse-negative-date-limit"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "否定詞 not 修飾 work，時間範圍是 after June 30，因此第三項為正確使用限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項核對日期前後，只有 cannot be used after June 30 保留原句資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

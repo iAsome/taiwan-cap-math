@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Our class begins at nine, not eight. B: Does it begin at eight? A: ___",
+  "options": [
+    "Yes, it begins.",
+    "No, it isn't.",
+    "No, it doesn't.",
+    "Yes, it does."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "前句明說不是八點，肯定回答不符內容；簡答也不重複 begins。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "begin 是一般動詞，不能以 isn't 作簡答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "No, it doesn't 正確否定八點開始，並保留 Does 的助動詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Yes 會和 not eight 直接衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "evaluate-truth-from-context",
+    "select-consistent-short-answer"
+  ],
+  "representationType": "multi-turn-dialogue",
+  "misconceptionTargets": [
+    "ignore-negated-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "已知上課時間為九點，因此對八點開始的問句必須回答 No, it doesn't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "內容真值和簡答句法分別檢查後，只有第三項兩者皆正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

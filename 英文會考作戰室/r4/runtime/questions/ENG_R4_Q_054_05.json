@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Ken never orders tea at lunch. B: Does he order tea at lunch? A: ___",
+  "options": [
+    "Yes, he does.",
+    "No, he doesn't.",
+    "No, he isn't.",
+    "Yes, he drinks."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "前句 never orders tea，肯定回答會和已知事實衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "No, he doesn't 同時符合前文語意與 Does 問句形式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "問句是一般動詞 order，不使用 isn't 回答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此項重複主要動詞，且肯定內容與前文相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-prior-statement",
+    "select-semantic-short-answer"
+  ],
+  "representationType": "multi-turn-dialogue",
+  "misconceptionTargets": [
+    "choose-grammatical-answer-with-wrong-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "never orders tea 已直接否定午餐點茶，因此應以 No, he doesn't 回答。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先核對對話事實，再核對助動詞，第二項是唯一一致答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: How does Ben usually get to school? B: He ___ the bus.",
+  "options": [
+    "is taking",
+    "took",
+    "takes",
+    "take"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "is taking 表示此刻或臨時情況，沒有回答 usually 所問的習慣。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "took 是過去式，與現在的固定通勤方式不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "takes 正確表達 Ben 通常搭公車上學。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "take 沒有配合代名詞 He 的第三人稱單數。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "connect-question-and-response",
+    "express-routine"
+  ],
+  "representationType": "dialogue-cloze",
+  "misconceptionTargets": [
+    "answering-routine-with-current-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問句的 usually 要求回答平常方式；He 搭配 takes，答案為第三項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "對話功能、時態與主詞一致三項檢核後，只有 takes 可成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

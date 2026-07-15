@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Does your phone need more power? — Yes, ___.",
+  "options": [
+    "it does",
+    "this does",
+    "it is",
+    "it do"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "it does 正確以 it 代替 phone，並保留 does。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "簡答通常不用 this 代替前述名詞 phone。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "問句是一般動詞 need，不以 is 回答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "it 是第三人稱單數，不能搭配 do。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "replace-device-with-it",
+    "retain-question-auxiliary"
+  ],
+  "representationType": "dialogue-completion",
+  "misconceptionTargets": [
+    "answer-general-verb-question-with-be"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "phone 是單數事物，簡答主詞為 it；Does 問句回答 it does。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項在指涉與助動詞上都精確對應原問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

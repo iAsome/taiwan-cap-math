@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Do the cats sleep outside? — No, ___.",
+  "options": [
+    "they don't",
+    "it doesn't",
+    "they doesn't",
+    "the cats not"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "they don't 正確以複數代名詞和 do 的否定形式回答。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cats 是複數，不能用單數 it。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "they 不搭配 doesn't。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the cats not 缺少助動詞，不能形成標準簡答。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "convert-plural-noun-to-they",
+    "form-negative-short-answer"
+  ],
+  "representationType": "dialogue-completion",
+  "misconceptionTargets": [
+    "use-it-for-plural-animals"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "the cats 轉為 they，Do 問句的否定簡答使用 don't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整處理複數代名詞與助動詞，其他形式皆不一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

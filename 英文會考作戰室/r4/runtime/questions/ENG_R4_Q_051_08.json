@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The girl with three dogs ___ near the river.",
+  "options": [
+    "live",
+    "are living",
+    "lives",
+    "living"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "live 把鄰近的複數 dogs 誤當主詞，沒有配合真正主詞 girl。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are living 也錯把 dogs 當主詞，且將長期居住寫成進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "lives 配合單數主詞 girl；with three dogs 只是附加說明。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "living 沒有助動詞，不能獨立完成謂語。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "identify-head-of-subject",
+    "ignore-intervening-noun"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "agree-with-nearest-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "拿掉 with three dogs 後為 The girl ___ near the river，故用 lives。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "主詞核心是 girl 而非 dogs；第三項同時符合長期狀態和單數形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

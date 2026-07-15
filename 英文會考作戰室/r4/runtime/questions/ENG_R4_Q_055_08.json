@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The team has ___ finished practice before six.",
+  "options": [
+    "finish usually",
+    "usually has",
+    "usually",
+    "is usually"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "has 後需要過去分詞 finished，finish usually 會破壞完成式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹已有 has，usually has 會重複助動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "usually 位在助動詞 has 與 finished 之間，詞序正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "has 後不能再加入 is usually。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "locate-first-auxiliary",
+    "place-adverb-in-verb-phrase"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "place-adverb-before-first-auxiliary"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "有助動詞 has 時，頻率副詞通常置於 has 後，形成 has usually finished。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "空格兩側已是 has 與 finished，第三項能直接建立正確完成式語序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

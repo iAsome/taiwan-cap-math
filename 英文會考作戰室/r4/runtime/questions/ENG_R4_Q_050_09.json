@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence states a general fact?",
+  "options": [
+    "A week has seven days.",
+    "The children are counting the days now.",
+    "We visited the museum last week.",
+    "I will call you in seven days."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "一週有七天是不受單次情境限制的一般事實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "now 表示孩子此刻正在數日子，是進行情況。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "last week 指已結束的過去參觀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "will call 表示未來一次行動。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-time-meaning",
+    "distinguish-general-fact"
+  ],
+  "representationType": "sentence-classification",
+  "misconceptionTargets": [
+    "present-simple-means-current-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "四句的時間觀點不同；只有 A week has seven days 為普遍成立的事實。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘三句分別有 now、last week、will，均指特定事件而非一般事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A triangle ___ three sides.",
+  "options": [
+    "had",
+    "is having",
+    "have",
+    "has"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "had 是過去式，不能表達定義性事實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is having 不適合穩定的所有關係，也把事實寫成暫時狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "have 未配合單數主詞 A triangle。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "has 以現在簡單式表達三角形的定義性特徵。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "recognize-definition-without-time-marker",
+    "apply-present-simple"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "require-frequency-word-for-simple-present"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "句中沒有時間詞，但三角形有三邊是一般定義，單數主詞使用 has。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "由一般事實而非關鍵字判斷時態，可唯一選出第四項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

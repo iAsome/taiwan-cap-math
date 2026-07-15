@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The library doesn't close until nine. What does this mean?",
+  "options": [
+    "The library closes before nine.",
+    "The library is closed all day.",
+    "The library opens at nine.",
+    "The library stays open until nine."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "doesn't close until nine 表示九點前不關門，不是提早關門。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原句只說關門時間，沒有表示全天休館。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "close 與 open 的事件不同，不能推得九點才開門。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "直到九點才關門，等同圖書館維持開放到九點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-negative-time-boundary",
+    "paraphrase-meaning"
+  ],
+  "representationType": "sentence-interpretation",
+  "misconceptionTargets": [
+    "reverse-not-until-meaning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "not ... until nine 的時間範圍是九點前不發生 close，因此第四項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把否定範圍畫在九點之前，可排除提早關門、全天關閉與九點開門。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

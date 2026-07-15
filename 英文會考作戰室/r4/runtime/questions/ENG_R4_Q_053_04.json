@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My cousins ___ near here.",
+  "options": [
+    "doesn't live",
+    "don't live",
+    "aren't live",
+    "don't lives"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "cousins 是複數，不能使用 doesn't。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "don't live 正確搭配複數主詞，live 為原形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "aren't 不能直接接原形一般動詞 live。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "don't 後的 lives 不應有第三人稱單數字尾。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "recognize-plural-subject",
+    "form-negative-with-dont"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-every-third-person-noun-as-singular"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "複數主詞 My cousins 等同 they，所以使用 don't live。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一沒有主詞不一致、be 誤用或雙重標記的形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

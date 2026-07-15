@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_050_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Our first class ___ at 8:10 each morning.",
+  "options": [
+    "starts",
+    "is starting",
+    "started",
+    "start"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "starts 表示每天固定的上課時間，且 class 是單數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "is starting 把固定課表誤寫成此刻正在開始。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "started 是過去式，無法表達每天反覆的課表。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "start 未配合單數主詞 class。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "read-schedule-clue",
+    "select-present-simple"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "scheduled-event-needs-progressive"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "each morning 和 8:10 共同指出固定課表，故使用 starts。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "四項中只有 starts 兼具現在簡單式與第三人稱單數形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Our teacher answers questions after class on most school days. She can ___ help us then.",
+  "options": [
+    "never",
+    "seldom",
+    "always",
+    "usually"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "never 表示完全不會，和 most school days 提供的高頻率相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "seldom 表示很少，也低於題目所說的大多數上課日。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "always 表示每次都會，超過 most 所提供的資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "usually 表示大多數時候，且自然位於 can 與 help 之間。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "locate-modal-auxiliary",
+    "place-adverb-before-base-verb"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "inflect-verb-after-can"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "most school days 對應 usually；放入後形成 She can usually help us then。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目未說每天都提供協助，因此 always 過強，never 與 seldom 又和已知頻率衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

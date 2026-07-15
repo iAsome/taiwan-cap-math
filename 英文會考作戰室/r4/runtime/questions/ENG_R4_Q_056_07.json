@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "This week, Dad ___ from home while his office is closed.",
+  "options": [
+    "is working",
+    "works",
+    "worked",
+    "work"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "is working 表示只限 this week 的暫時安排。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "works 通常表示固定工作方式，沒有呈現辦公室暫時關閉的原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "worked 是已結束的過去，與 this week 的目前期間不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "work 不配單數 Dad。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-limited-current-period",
+    "choose-progressive-over-habit"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-any-week-phrase-as-routine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "this week 和 while his office is closed 都指出暫時狀況，應選 is working。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第二項文法可成立於別的語境，但會錯失本題明示的有限期間，故第一項唯一。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_052_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The coffee shop serves breakfast. How do you ask if this is true?",
+  "options": [
+    "Does the coffee shop serve breakfast?",
+    "Do the coffee shop serves breakfast?",
+    "Is the coffee shop serve breakfast?",
+    "Does the coffee shop serves breakfast?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Does 配單數 coffee shop，serve 回到原形，正確檢查原句資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Do 不配單數主詞，serves 也與助動詞重複變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "is 不能直接接原形一般動詞 serve。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Does 後應用 serve，不應保留 serves。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "transform-declarative-to-interrogative",
+    "restore-base-verb"
+  ],
+  "representationType": "sentence-transformation",
+  "misconceptionTargets": [
+    "double-third-person-marking"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把單數肯定句改問句時，加入 Does 並將 serves 還原為 serve。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整保留早餐服務的語意，且助動詞與主要動詞形式一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

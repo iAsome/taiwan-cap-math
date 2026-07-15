@@ -1,0 +1,86 @@
+{
+  "id": "ENG_R4_Q_052_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia wants to know whether the shop sells maps. What should she ask?",
+  "options": [
+    "Do the shop sells maps?",
+    "Does the shop sells maps?",
+    "Does the shop sell maps?",
+    "The shop does sell maps?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "shop 是單數，不能用 Do；sells 也與助動詞重複變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 正確，但後方主要動詞不應保留 -s。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Does + the shop + sell 的助動詞、主詞與原形動詞順序完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肯定句語序加問號不是本題所需的標準 yes-no 問句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "construct-question-for-purpose",
+    "check-word-order"
+  ],
+  "representationType": "communicative-question-choice",
+  "misconceptionTargets": [
+    "double-third-person-marking",
+    "statement-order-with-question-mark"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單數 shop 要用 Does，且 Does 後的 sell 保持原形，故第三句正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "檢查問句語序與雙重標記後，只有 Does the shop sell maps? 可成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

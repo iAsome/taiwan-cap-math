@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mr. Wu ___ two classes on Friday.",
+  "options": [
+    "teach",
+    "teachs",
+    "teaching",
+    "teaches"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "teach 未配合單數主詞 Mr. Wu。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "teachs 漏掉 -ch 結尾需要的 e。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "teaching 需要 be 動詞才能作進行式謂語。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "teaches 正確在 -ch 結尾後加 -es。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "apply-ch-ending-rule",
+    "select-finite-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "write-teachs"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Mr. Wu 是單數第三人稱，teach 以 -ch 結尾，答案為 teaches。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "從主詞與字尾兩方面檢核，teaches 是唯一合法的現在式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

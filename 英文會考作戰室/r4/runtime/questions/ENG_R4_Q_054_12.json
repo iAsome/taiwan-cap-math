@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: The red line goes to City Hall. B: Does the blue line go there, too? A: ___ It goes to the park, not City Hall.",
+  "options": [
+    "Yes, it goes.",
+    "No, it doesn't.",
+    "No, it isn't.",
+    "Yes, it does."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "後句說藍線去公園，肯定回答去 City Hall 會矛盾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "No, it doesn't 正確否定藍線去 City Hall，並與後句銜接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "go 是一般動詞，不能用 isn't 作簡答。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肯定回答與 It goes to the park 的對比不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "resolve-place-reference",
+    "infer-negative-response"
+  ],
+  "representationType": "route-dialogue",
+  "misconceptionTargets": [
+    "ignore-there-reference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "there 指 City Hall，而藍線去 park，所以答案必須是 No, it doesn't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "追蹤 there 的指涉並核對後句目的地後，第二項唯一符合對話。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

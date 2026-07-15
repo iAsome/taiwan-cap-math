@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The nurse ___ the door before she leaves.",
+  "options": [
+    "closes",
+    "close",
+    "closies",
+    "closing"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "closes 是 close 的第三人稱單數形式，符合單數主詞 nurse。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "close 沒有標示第三人稱單數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "closies 不是 e 結尾動詞的變化規則。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "closing 需要 be 動詞才能形成進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "match-subject-and-verb",
+    "form-third-person-singular"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "incorrect-e-ending-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "nurse 是單數第三人稱，close 直接加 -s 成為 closes。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "四個形式中只有 closes 可作現在簡單式單數謂語。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

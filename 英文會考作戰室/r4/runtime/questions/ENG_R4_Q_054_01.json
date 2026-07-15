@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Does Amy read before bed? — Yes, ___.",
+  "options": [
+    "she do",
+    "she does",
+    "Amy does read",
+    "she is"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "she 是第三人稱單數，簡答不能用 do。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "she does 正確保留問句助動詞並以代名詞回答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "標準簡短回答不在 does 後重複主要動詞 read。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "問句使用 does，不以 be 動詞 is 回答。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "replace-name-with-pronoun",
+    "match-short-answer-auxiliary"
+  ],
+  "representationType": "dialogue-completion",
+  "misconceptionTargets": [
+    "answer-does-question-with-do"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Amy 在回答中換成 she，Does 問句的肯定簡答為 she does。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "人稱與助動詞一致後，第二項是唯一完整的簡短回答。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

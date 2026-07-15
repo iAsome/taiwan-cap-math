@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The buses are ___ full before eight.",
+  "options": [
+    "full often",
+    "often are",
+    "do often",
+    "often"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "空格後已有 full，填入 full often 會重複形容詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹已有 are，often are 會重複 be 動詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "be 動詞句不需要 do。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "often 正確位於 are 後、full 前。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "place-adverb-in-be-clause",
+    "complete-adjective-predicate"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "duplicate-be-around-adverb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主要動詞 are 已在題幹中，副詞 often 應直接放在其後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "代入第四項得到 The buses are often full，結構與語意皆完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

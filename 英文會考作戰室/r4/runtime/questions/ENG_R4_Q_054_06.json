@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Do Mia and her brother share a room? — Yes, ___.",
+  "options": [
+    "she does",
+    "he does",
+    "they do",
+    "they does"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "主詞包含 Mia 和她的弟弟，不可只用 she。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "he 也只代表其中一人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "they do 正確代替兩人並保留 Do。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "they 是複數，不搭配 does。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-compound-reference",
+    "choose-plural-short-answer"
+  ],
+  "representationType": "dialogue-completion",
+  "misconceptionTargets": [
+    "refer-to-only-one-member-of-compound-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Mia and her brother 指兩人，代名詞用 they，肯定簡答搭配 do。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項完整涵蓋原問句的複數主詞，且助動詞形式正確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

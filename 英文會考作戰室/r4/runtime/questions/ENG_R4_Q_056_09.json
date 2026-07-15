@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Sam ___ lunch at school every day, but he ___ at home yesterday.",
+  "options": [
+    "ate / eats",
+    "is eating / eats",
+    "eats / is eating",
+    "eats / ate"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一組把每天習慣與昨天事件的時態顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "every day 不需要現在進行式，第二格也不應用現在式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第一格正確，但 yesterday 要求過去式 ate，而非 is eating。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "eats 對應每天習慣，ate 對應昨天一次事件。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "map-two-time-markers",
+    "select-two-verb-forms"
+  ],
+  "representationType": "double-cloze",
+  "misconceptionTargets": [
+    "force-same-tense-across-clauses"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩個子句各有獨立線索：every day 配 eats，yesterday 配 ate。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "依時間軸逐格判斷而非全句統一時態，可確認第四組。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

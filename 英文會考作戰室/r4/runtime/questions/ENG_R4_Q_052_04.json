@@ -1,0 +1,86 @@
+{
+  "id": "ENG_R4_Q_052_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which word order makes a correct written yes-no question about this machine?",
+  "options": [
+    "Does use this machine power?",
+    "This machine does use power?",
+    "Does this machine use power?",
+    "Does this machine power use?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "主要動詞 use 不能放在主詞 this machine 前面。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這仍是陳述句語序；標準書面一般問句要把 Does 放到主詞前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Does + this machine + use 的助動詞、主詞與原形動詞順序正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "power 是 use 的受詞，不能移到主要動詞前形成此排列。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "arrange-question-elements",
+    "retain-base-verb-after-does"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "retain-statement-order",
+    "move-object-before-main-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單數主詞 this machine 的一般動詞問句使用 Does，後接原形 use。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項依序呈現助動詞、主詞、主要動詞與受詞，是唯一完整問句。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

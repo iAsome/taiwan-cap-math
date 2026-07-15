@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We ___ eat outside on warm days.",
+  "options": [
+    "are often",
+    "often",
+    "eat often",
+    "do often"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "eat 已是本句主要動詞，are often 會造成兩個動詞結構衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "often 放在一般動詞 eat 前，正確表達頻率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "eat often 代入空格後會重複題幹中的 eat。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肯定句不需要 do，且 do often 後還會出現第二個 eat。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "read-blank-position",
+    "avoid-extra-auxiliary"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "add-be-to-frequency-sentence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹空格位於主詞與一般動詞 eat 之間，應填頻率副詞 often。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只有第二項不增加多餘動詞，並形成 We often eat outside...。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

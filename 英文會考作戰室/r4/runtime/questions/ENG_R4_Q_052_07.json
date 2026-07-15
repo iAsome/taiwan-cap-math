@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_052_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ you and Tom need more chairs?",
+  "options": [
+    "Do",
+    "Does",
+    "Is",
+    "Are"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Do 正確搭配由 and 連接的複數主詞 you and Tom。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Does 只配第三人稱單數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Is 不配合複數主詞，也不能直接接 need。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are 雖配複數主詞，但不能直接接原形一般動詞 need。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "interpret-compound-subject",
+    "form-present-question"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-does-for-named-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "you and Tom 是複數，need 為一般動詞，因此應用 Do。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "you and Tom 包含兩人，整體使用複數助動詞 Do；第一項是唯一完整形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

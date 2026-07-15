@@ -1,0 +1,86 @@
+{
+  "id": "ENG_R4_Q_053_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Our printers don't print color pages, and this printer ___ them either.",
+  "options": [
+    "don't print",
+    "doesn't prints",
+    "isn't print",
+    "doesn't print"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "前半句雖用 don't，後半句主詞 this printer 是單數，不能照抄 don't。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 已標示第三人稱單數，prints 會造成重複變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "print 是一般動詞，不能直接接在 isn't 後面。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "doesn't print 正確把複數 printers 的否定改為單數 this printer 的否定。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "shift-from-plural-to-singular-subject",
+    "retain-negative-parallelism"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "copy-dont-across-subject-change",
+    "use-isnt-before-main-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前句的 printers 是複數，後句改成單數 this printer，所以要換成 doesn't print。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時處理主詞數的轉換與 does 後用原形，並和 either 的否定語意一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

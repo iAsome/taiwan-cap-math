@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My aunt and uncle ___ a small bakery.",
+  "options": [
+    "owns",
+    "own",
+    "ownes",
+    "is owning"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "owns 將由 and 連接的兩人誤當成單數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "own 配合複數主詞 My aunt and uncle，並表達長期所有狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ownes 不是 own 的現在式拼法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is owning 通常不適合表達穩定的所有關係，且主詞也應搭配 are。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-compound-subject",
+    "choose-base-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "treat-compound-subject-as-singular"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "aunt and uncle 是兩個人組成的複數主詞，所以主要動詞用原形 own。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "檢查主詞數量與 own 的狀態語意，第二項是唯一自然完整的答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

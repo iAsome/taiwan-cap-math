@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Nina and Paul ___ the same bus to school.",
+  "options": [
+    "don't take",
+    "doesn't take",
+    "don't takes",
+    "aren't take"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Nina and Paul 是複數主詞，don't take 的助動詞與原形都正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 不配由 and 連接的兩人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "don't 後的 takes 不應有 -s。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "aren't 不能直接接原形一般動詞 take。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "evaluate-compound-subject",
+    "form-negative-predicate"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-doesnt-with-compound-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩個姓名以 and 連接，等同 they，故否定式為 don't take。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項是唯一同時處理複數主詞與助動詞後原形的答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

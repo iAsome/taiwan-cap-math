@@ -1,0 +1,86 @@
+{
+  "id": "ENG_R4_Q_052_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You need to ask about the class ending time. Which question does that?",
+  "options": [
+    "What time the class ends?",
+    "What time does the class ends?",
+    "Does what time the class end?",
+    "What time does the class end?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "直接問句在 What time 後缺少 does，且使用肯定句語序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "does 後不應再把 end 變成 ends。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "疑問詞應放在 does 前，不是放在助動詞後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "What time + does + the class + end 的語序與動詞形式都正確。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "assemble-wh-question",
+    "detect-multiple-form-errors"
+  ],
+  "representationType": "communicative-question-choice",
+  "misconceptionTargets": [
+    "wh-question-word-order",
+    "retain-s-after-does"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此為受詞資訊問句，依序使用 What time、does、主詞、原形 end。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "四句中只有第四句同時沒有漏助動詞、錯序或重複 -s。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

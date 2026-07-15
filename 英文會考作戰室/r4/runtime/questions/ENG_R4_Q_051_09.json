@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "One student uses the computer after lunch. Which sentence reports this correctly?",
+  "options": [
+    "A student use the computer after lunch.",
+    "A student using the computer after lunch.",
+    "A student does uses the computer after lunch.",
+    "A student uses the computer after lunch."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單數 student 需要第三人稱單數動詞，use 不足。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "using 前缺少 be 動詞，句子沒有完整謂語。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "does 和 uses 重複標示第三人稱單數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "uses 正確配合單數 student，句意也保持不變。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "evaluate-complete-sentence",
+    "apply-subject-agreement"
+  ],
+  "representationType": "meaning-preserving-sentence",
+  "misconceptionTargets": [
+    "missing-or-double-third-person-marker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目要求報告一名學生的固定行動，單數 student 應配 uses。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐句檢查限定動詞後，只有第四句結構完整且沒有重複變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

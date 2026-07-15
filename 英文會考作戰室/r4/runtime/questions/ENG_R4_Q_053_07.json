@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The room ___ cold in summer.",
+  "options": [
+    "isn't",
+    "doesn't",
+    "don't",
+    "doesn't be"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "isn't 直接否定 be 動詞，後接形容詞 cold。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "doesn't 不能單獨接形容詞 cold。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "don't 不配單數 room，也不能直接接 cold。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "doesn't be 不是標準的 be 動詞現在式否定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "distinguish-be-from-general-verb",
+    "select-isnt"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-doesnt-for-be-sentence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "cold 是形容詞，本句需要 be 動詞；room 是單數，因此用 isn't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "此題檢查一般動詞否定的邊界，只有第一項能和 cold 形成完整述語。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

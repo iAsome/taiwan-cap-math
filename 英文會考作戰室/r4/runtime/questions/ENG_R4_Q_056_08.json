@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The pool usually closes at eight, but it ___ open later tonight for the school event.",
+  "options": [
+    "stays",
+    "stayed",
+    "is staying",
+    "stay"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "stays 會把今晚延長開放誤寫成固定規律。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "stayed 是過去式，tonight 的活動尚屬目前安排。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "is staying 表示今晚一次性的臨時延長開放。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "stay 不配單數 it。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "integrate-rule-and-special-event",
+    "select-temporary-form"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "use-simple-present-for-explicit-one-night-exception"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "usually closes 與 later tonight 的活動例外相對，後句需要 is staying。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "辨認固定關門時間和單次特別開放兩層資訊後，第三項最精確。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

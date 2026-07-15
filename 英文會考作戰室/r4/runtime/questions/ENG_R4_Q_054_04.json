@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_054_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Does this key open the back door? — No, ___.",
+  "options": [
+    "this doesn't",
+    "he doesn't",
+    "it don't",
+    "it doesn't"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "簡答以代名詞 it 代替 this key，不以 this 單獨作主詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "key 是事物，不能用 he。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "it 是第三人稱單數，否定形式不能用 don't。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "it doesn't 正確代替單數事物並搭配 Does 問句。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-object-reference",
+    "match-does-with-doesnt"
+  ],
+  "representationType": "dialogue-completion",
+  "misconceptionTargets": [
+    "use-demonstrative-as-short-answer-subject"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "this key 是單數事物，回答代名詞為 it，否定助動詞為 doesn't。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項在指涉、人稱與否定形式三方面皆和問句一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

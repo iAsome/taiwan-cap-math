@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Mia is busy on most Friday evenings. Which sentence gives that meaning?",
+  "options": [
+    "Mia often busy on Friday evenings.",
+    "Mia is often busy on Friday evenings.",
+    "Mia is sometimes busy on Friday evenings.",
+    "Mia is never busy on Friday evenings."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "busy 是形容詞，前面缺少 be 動詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "is often busy 把頻率副詞放在 be 動詞後，符合題意。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "sometimes 只表示有時，低於 most Friday evenings 所給的頻率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "never 表示從不，和大多數星期五都忙直接相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "express-frequency-with-adjective",
+    "select-neutral-word-order"
+  ],
+  "representationType": "meaning-preserving-sentence",
+  "misconceptionTargets": [
+    "omit-be-before-adjective"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "busy 需要 is，often 應放在 is 後，得到 Mia is often busy...。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二句是唯一採用標準中性語序並保留『大多數星期五』語意的選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

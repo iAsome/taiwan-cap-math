@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_051_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Each of the two shops ___ at nine.",
+  "options": [
+    "open",
+    "are opening",
+    "opens",
+    "opening"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "open 受 two shops 影響而誤用複數形式，但主詞核心是 Each。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "are opening 不僅誤判主詞，也把固定時間改為進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "opens 配合單數代名詞 Each，並表達固定開門時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "opening 缺少限定動詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "identify-grammatical-head",
+    "resist-nearby-plural"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "agree-with-of-phrase-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "Each 表示逐一看待每家店，文法上是單數，因此使用 opens。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "介系詞片語 of the two shops 不決定動詞數，第三項為唯一正解。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

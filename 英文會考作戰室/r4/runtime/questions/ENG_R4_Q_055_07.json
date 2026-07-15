@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_055_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Lily never ___ her lunch at home.",
+  "options": [
+    "leaves",
+    "doesn't leave",
+    "leave",
+    "is leaving"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "leaves 配合單數 Lily；never 已完整表示從不。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "never 和 doesn't 同時出現會形成不標準的雙重否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "leave 沒有配合第三人稱單數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "is leaving 表示進行情況，也和 never 的習慣頻率不合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "combine-negative-frequency-with-affirmative-form",
+    "apply-s-ending"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "pair-never-with-doesnt"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "never 是頻率副詞而非助動詞，主要動詞仍需用第三人稱單數 leaves。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "移除雙重否定並檢查主詞一致後，第一項是唯一答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

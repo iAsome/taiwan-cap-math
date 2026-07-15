@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Look! The children ___ across the park right now.",
+  "options": [
+    "are running",
+    "run",
+    "ran",
+    "runs"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "are running 符合 Look 與 right now 所指的正在進行動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "run 會表達規律，沒有呈現眼前動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ran 是已完成的過去式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "runs 不配複數 children，也不是進行式。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "recognize-current-action-clues",
+    "reject-present-simple"
+  ],
+  "representationType": "sentence-cloze",
+  "misconceptionTargets": [
+    "choose-present-simple-for-any-present-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Look 和 right now 都把事件限定在此刻，複數主詞使用 are running。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "即使本單元主題是現在簡單式，時間線索仍要求辨認此題應選進行式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

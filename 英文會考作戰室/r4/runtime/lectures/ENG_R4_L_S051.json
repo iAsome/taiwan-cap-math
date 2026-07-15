@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S051",
+  "subject": "english",
+  "unitId": "ENG_R4_U08",
+  "skillId": "ENG_R4_S051",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S050"
+  ],
+  "objectives": [
+    "能找出現在簡單式肯定句的真正主詞，判斷是否為第三人稱單數。",
+    "能依動詞字尾規則正確形成 -s、-es、-ies 及常見不規則形式。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S051_SEC_01",
+      "title": "第三人稱單數是誰",
+      "content": "說話者 I 是第一人稱，聽話者 you 是第二人稱；談到的 he、she、it、單數姓名或單一事物，才是第三人稱單數。The boy、my mother、this machine 都屬這一類。主詞若由 and 連接兩人，通常已是複數，不再加第三人稱單數字尾。"
+    },
+    {
+      "id": "ENG_R4_L_S051_SEC_02",
+      "title": "大多數動詞直接加 -s",
+      "content": "play 變 plays，read 變 reads，help 變 helps。字尾變化寫在動詞上，不寫在主詞上。句中即使主詞和動詞之間插入其他文字，也要回頭找真正主詞，例如 The girl with two cats lives here. 真正主詞是單數 girl。"
+    },
+    {
+      "id": "ENG_R4_L_S051_SEC_03",
+      "title": "-es、-ies 與常見特殊形式",
+      "content": "動詞以 -s、-sh、-ch、-x 或 -o 結尾時，通常加 -es，如 watches、washes、goes。子音字母加 y 結尾時，先把 y 改成 i 再加 -es，如 studies；母音字母加 y 則直接加 -s，如 plays。have 的第三人稱單數是 has。"
+    },
+    {
+      "id": "ENG_R4_L_S051_SEC_04",
+      "title": "變化只出現在肯定句主要動詞",
+      "content": "本技能處理現在簡單式肯定句。若句中已有 does 或 does not，後面的主要動詞要回到原形；這是因為第三人稱的資訊已由 does 承擔。be 動詞則使用 is，不套用一般動詞的 -s 規則。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S051_EX_01",
+      "prompt": "Mia ___ English after dinner. (study / studies / studys)",
+      "steps": [
+        "Mia 是第三人稱單數。",
+        "study 以子音字母加 y 結尾。",
+        "y 改成 i，再加 -es。"
+      ],
+      "answer": "studies",
+      "why": "主詞 Mia 是單數第三人稱；study 的 y 前是子音字母 d，因此不能寫 studys。依規則改 y 為 i 再加 -es，得到 studies。"
+    },
+    {
+      "id": "ENG_R4_L_S051_EX_02",
+      "prompt": "My uncle ___ the dishes every night. (wash / washes / washies)",
+      "steps": [
+        "My uncle 是單數主詞。",
+        "wash 以 -sh 結尾。",
+        "動詞加 -es。"
+      ],
+      "answer": "washes",
+      "why": "wash 的字尾是 -sh，第三人稱單數要加 -es，所以使用 washes。Washies 並不是 wash 的現在式拼法，wash 則漏掉了主詞要求的變化。"
+    },
+    {
+      "id": "ENG_R4_L_S051_EX_03",
+      "prompt": "The student with two bags ___ a red bike. (have / has / haves)",
+      "steps": [
+        "介系詞片語 with two bags 不改變主詞。",
+        "真正主詞 student 是單數。",
+        "have 的特殊形式是 has。"
+      ],
+      "answer": "has",
+      "why": "two bags 雖然是複數，卻位在 with 片語中；句子的主詞仍是單數 student。Have 的第三人稱單數不是 haves，而是不規則形式 has。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要句中出現複數名詞，動詞就使用原形。",
+      "whyWrong": "複數名詞可能只是介系詞片語的一部分，不一定是主詞。",
+      "correction": "先找出誰執行動作，再判斷主詞單複數。"
+    },
+    {
+      "belief": "所有 y 結尾的動詞都改成 -ies。",
+      "whyWrong": "play 的 y 前是母音字母，因此第三人稱單數是 plays。",
+      "correction": "檢查 y 前一個字母是母音還是子音。"
+    },
+    {
+      "belief": "have 加 -s 就寫成 haves。",
+      "whyWrong": "have 的第三人稱單數是特殊形式 has。",
+      "correction": "把 has 視為需要單獨記住的常見形式。"
+    },
+    {
+      "belief": "does 後面的動詞仍要加 -s。",
+      "whyWrong": "does 已經標示第三人稱單數，再加 -s 會重複標記。",
+      "correction": "does 或 doesn't 後一律接原形動詞。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "The bus pass / passes my house at seven. 應選哪一個？",
+      "answer": "passes",
+      "reason": "bus 是單數，pass 以 -s 結尾，所以加 -es。"
+    },
+    {
+      "prompt": "Jay and Ann cooks dinner. 哪裡有錯？",
+      "answer": "cooks 應改為 cook",
+      "reason": "Jay and Ann 是由 and 連接的複數主詞。"
+    },
+    {
+      "prompt": "My sister plays volleyball. 為何不是 plaies？",
+      "answer": "play 的 y 前是母音字母 a",
+      "reason": "母音字母加 y 結尾時直接加 -s。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

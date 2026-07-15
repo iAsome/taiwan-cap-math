@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_056_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A notice says, “The reading room opens at 9 a.m. during the holiday.” What is the role of opens?",
+  "options": [
+    "It reports an action completed yesterday.",
+    "It describes someone opening the room now.",
+    "It gives a fixed opening time.",
+    "It makes a promise with no fixed time."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "opens 是現在式，notice 沒有提到昨天完成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句中沒有正在開門的人，也沒有進行式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "公告以現在簡單式列出固定開放時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "9 a.m. 已是明確時間，不是未知時間的承諾。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "interpret-tense-in-public-notice",
+    "identify-schedule-function"
+  ],
+  "representationType": "public-notice-analysis",
+  "misconceptionTargets": [
+    "read-present-form-as-action-now"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "公告中的 at 9 a.m. 是固定時刻，opens 用來陳述排程，故第三項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "從文體與時間資訊判斷，這是時刻表用法，不是過去、當下動作或承諾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

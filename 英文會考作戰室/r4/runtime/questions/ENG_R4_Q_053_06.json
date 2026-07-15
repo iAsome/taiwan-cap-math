@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_053_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Owen likes milk. Which sentence says this is not true?",
+  "options": [
+    "Owen don't likes milk.",
+    "Owen isn't like milk.",
+    "Owen doesn't likes milk.",
+    "Owen doesn't like milk."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單數 Owen 不配 don't，且 likes 未還原。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "isn't 不能直接否定一般動詞 like。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "doesn't 後不應保留 likes 的 -s。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "doesn't like 正確把肯定句改為相反的現在式否定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "negate-a-given-proposition",
+    "preserve-tense"
+  ],
+  "representationType": "meaning-reversal",
+  "misconceptionTargets": [
+    "negate-general-verb-with-be"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "Owen 是單數，否定 likes 時改為 doesn't like，故第四句正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較四種修正後，只有第四項既反轉語意又維持標準句法。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
