@@ -1,0 +1,28 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1","unitId":"u11","batch":"012-u11-complete","skills":["s004"],
+  "mc":[
+    {"questionId":"u11-s004-v001","expectedContentSha256":"c9baa77bf263644e276fefad9156dfdc700f32dd810c3165756dacbabc78b8d0","appendText":{"explanation":"平方函數在非負範圍遞增，因十六小於二十小於二十五，可同時開平方，得到四小於 √20 小於五。","misconceptionTarget":"直接拿二十與相鄰整數比較，沒有改用四與五的平方建立界線。"}},
+    {"questionId":"u11-s004-v002","expectedContentSha256":"839080553427e95f6958e6e5bf3a723a0b06fb8018b9c12b4ce7b9b8c56f2295","appendText":{"explanation":"一位小數的分界是二點六五；其平方七點零二二五大於七，所以 √7 在分界左側，四捨五入為二點六。","misconceptionTarget":"只比較二點六與二點七的平方，未檢查四捨五入中點二點六五。"}},
+    {"questionId":"u11-s004-v003","expectedContentSha256":"e9e2df6b1de06b2568cea8995cf69eb45188c4d7d428e8c297698dcdbe07fab0","appendText":{"explanation":"√50 介於七與八之間，實值約七點零七一；百分位是七，所以取到小數第一位時十分位零進一，寫成七點一。","misconceptionTarget":"因七的平方四十九接近五十便直接寫七點零，沒有判斷百分位進位。"}},
+    {"questionId":"u11-s004-v004","expectedContentSha256":"3abd84fdfb4d03d988b11ab31fa31457db106f8397daca8c528969ed8c5caf85","appendText":{"explanation":"檢查候選值平方可直接比較距離；11.4²=129.96，與一百三十只差零點零四，其他候選的平方差更大。","misconceptionTarget":"只靠 √130 在十一與十二之間猜測，沒有平方驗證哪個小數最接近。"}},
+    {"questionId":"u11-s004-v005","expectedContentSha256":"ef18ca21e4637f9383060608cb2559e511b05aa6bc3c8a1665d7f62d0d925519","appendText":{"explanation":"上下界與 √n 都為正，平方不改變不等號方向；區間三十九點六九到四十點九六內只有整數四十。","misconceptionTarget":"平方六點三、六點四時只把數字乘二，或忽略開區間端點。"}},
+    {"questionId":"u11-s004-v006","expectedContentSha256":"772933a46947745bb4076f2303c1478a385382d2257463275c0d0f802e65a2b7","appendText":{"explanation":"取一位小數的中點為九點二五；平方八十五點五六二五高於八十五，故 √85 小於中點，應捨為九點二。","misconceptionTarget":"只因數值位於九點二與九點三之間就選上界，未用中點判斷四捨五入。"}},
+    {"questionId":"u11-s004-v007","expectedContentSha256":"06dc916b3be4ae2b230e27101683f54c376605c55249c3defaaa8ff604b50dd5","appendText":{"explanation":"題目問四個選項中哪個可能；反推區間可知整數三十二、三十三皆可能，但選項只列三十二，因此單選答案仍唯一。","misconceptionTarget":"只檢查某個近似值，未反推完整四捨五入區間，也未區分所有可能值與選項唯一性。"}},
+    {"questionId":"u11-s004-v008","expectedContentSha256":"258d71c3b2b80a9a056e893043bc555f30835eaf4cacba688c6b007f09e3991b","appendText":{"explanation":"√48 介於六與七，判斷最近整數應比較中點六點五的平方四十二點二五；四十八在其上方，因此更接近七。","misconceptionTarget":"只以較低平方三十六作下界就選六，沒有比較六點五的平方分界。"}},
+    {"questionId":"u11-s004-v009","expectedContentSha256":"1cbd85cda5582f9ce4c97355cb270dec04eafec289781c5254917b1b967a0593","appendText":{"explanation":"一位小數在十四點一與十四點二間的分界是十四點一五；其平方大於二百，所以 √200 小於分界，取十四點一。","misconceptionTarget":"只建立十四到十五的整數範圍，沒有以小數中點平方決定進位。"}},
+    {"questionId":"u11-s004-v010","expectedContentSha256":"8db6ba17b24be29f04a8f1b84ff03b02eb811d6b35d28bdcbcc0797eeb6330d2","appendText":{"explanation":"圖只提供八平方為六十四、九平方為八十一的必要邊界；進位仍由計算 8.35²<70 判定，故 √70>8.35，填八點四公尺。","misconceptionTarget":"依圖上位置直接讀出近似答案，沒有使用平方邊界與四捨五入中點計算。"}},
+    {"questionId":"u11-s004-v011","expectedContentSha256":"c76c2cfbeaa0f75f53627dc1f970636a62f9bebf5ebb05bfecfc598929267517","appendText":{"explanation":"十一點四的平方一百二十九點九六非常接近一百三十，而實值約十一點四零一；百分位為零，顯示十一點四公里。","misconceptionTarget":"只用十一平方與十二平方粗估整數，未完成導航要求的一位小數。"}},
+    {"questionId":"u11-s004-v012","expectedContentSha256":"764bda41f156019c9c4c75d3f1bac964d2baf1d91d45c6e68de56af6db0d8ad2","appendText":{"explanation":"因上下界皆為正，可比較平方；一點四零平方小於二、一點四二平方大於二，因此 √2 嚴格落在合格範圍內。","misconceptionTarget":"認為沒有計算機便無法判斷，忽略以正數上下界平方可夾住根值。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u11-s004-cr001","expectedContentSha256":"da083ed60a9c001788250670adf282975800c7bf0e9047f78714abf2c1488b33","appendArray":{"fullCreditSolution":["先由 10²<115<11² 確定整數區間，再比較一位小數中點 10.75；因 10.75²=115.5625>115，所以 √115<10.75，且已知大於 10.7，故取到小數第一位為 10.7，近似記號應寫 ≈。"]},"set":{"commonErrors":["只寫整數下界十，沒有完成題目要求的小數第一位。","把近似結果寫成 √115=10.7，未用約等於符號或未檢查中點。"]}},
+    {"questionId":"u11-s004-cr002","expectedContentSha256":"e1d6789cdce4b04be1b7fa6443178264417c594ec40caf2c3e211584833dcb97","appendArray":{"fullCreditSolution":["正方形邊長 s=√155 公尺。十二點四與十二點五的平方分別夾住一百五十五；再算中點 12.45²=155.0025 略大於 155，故 √155 略小於十二點四五，取到小數第一位填 12.4 公尺。"]},"set":{"commonErrors":["把面積一百五十五除以二，未由邊長平方等於面積建立根式。","只看到數值介於十二點四與十二點五就填十二點五，沒有檢查中點平方。"]}}
+  ],
+  "lectures":[{"lectureId":"u11-s004-lecture-r1","expectedContentSha256":"2ce54dd5320ee07dff813b91141d6e83e8149d7a6c545bafa9c301f69707bf16","set":{"workedExamples":[
+    {"exampleId":"L1","prompt":"估√30的整數範圍。","solutionSteps":["25<30<36。"],"answer":"5<√30<6。","why":"五與六是相鄰整數，其平方二十五、三十六分別位於三十兩側；平方函數在非負範圍遞增，因此可同時開平方，得到 √30 的嚴格整數界線。"},
+    {"exampleId":"L2","prompt":"√3取一位小數。","solutionSteps":["1.7²=2.89，1.8²=3.24。","1.75²=3.0625>3。"],"answer":"約1.7。","why":"一點七五是一位小數一點七與一點八的四捨五入分界；其平方大於三，表示 √3 小於中點，所以百分位不足五，應捨去而保留一點七。"},
+    {"exampleId":"L3","prompt":"判斷√120是否大於11。","solutionSteps":["11²=121。","120<121。"],"answer":"√120<11。","why":"十一與 √120 都是非負數，可用平方大小比較；十一平方為一百二十一，大於一百二十，因此十一本身大於 √120，方向不能顛倒。"},
+    {"exampleId":"L4","prompt":"找最接近√250的整數。","solutionSteps":["15²=225，16²=256。","250更靠近256且超過15.5²。"],"answer":"16。","why":"判斷最近整數要看十五點五這個中點，而非只比較被開方數離兩個平方的差；15.5²=240.25，小於二百五十，所以 √250 位於中點右側，較接近十六。"}
+  ]},"appendArray":{"conceptNarrative":["平方根估算以正數平方的單調性為基礎：先找相鄰整數平方夾住被開方數，再依所需精度比較十分位候選或四捨五入中點的平方。要求小數第一位時，重點是判斷根值落在中點左側或右側，不必洩漏或計算過多小數；精確根式與近似值分別使用等號、約等號。圖形只能呈現必要平方邊界，實際近似與進位仍須由計算完成。"]}}],
+  "drawingSpecs":[],"textFiles":[]
+}

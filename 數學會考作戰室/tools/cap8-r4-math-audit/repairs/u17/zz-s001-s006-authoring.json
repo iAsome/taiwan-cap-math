@@ -1,0 +1,992 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u17",
+  "batch": "018-u17-complete",
+  "skills": ["s001", "s002", "s003", "s004", "s005", "s006"],
+  "mc": [
+    {
+      "questionId": "u17-s001-v001",
+      "expectedContentSha256": "e10b92f194e4c7ca472e125e2e1cff01ac108f010435f238794e31ec9040d8ea",
+      "appendText": {
+        "explanation": "先辨認兩角位於同一交點且分居相對位置，這正是對頂角的定義；對頂角不需平行條件便相等，所以不是用180°扣除。",
+        "misconceptionTarget": "若把相對位置誤認成相鄰位置，就會算成122°而選到鄰補角。"
+      },
+      "appendArray": { "steps": ["核對58°的相對角而非相鄰角，依對頂角相等得到58°。"] }
+    },
+    {
+      "questionId": "u17-s001-v002",
+      "expectedContentSha256": "8eb482765c97feb3840466164881f687ae7a70f876a9f506facb1f0dd65b6570",
+      "appendText": {
+        "explanation": "鄰補角共用一邊，另兩邊形成一直線，因此兩角總和固定為180°；以180°減去124°可得56°，且兩角相加可驗回180°，所以四個選項中只有56°成立。",
+        "misconceptionTarget": "若只看到兩角相鄰便判成相等，會錯選124°而漏掉一直線的互補條件。"
+      },
+      "appendArray": { "steps": ["用124°＋56°＝180°回代，確認所求角符合鄰補關係。"] }
+    },
+    {
+      "questionId": "u17-s001-v003",
+      "expectedContentSha256": "45b4a8ad5d03abb6b855f50914380a6fd850d31b27de9d8054550a4f6dd3f0cc",
+      "appendText": {
+        "explanation": "題幹已明示兩直線平行，而這兩角位於兩線內部並分居截線兩側，符合內錯角位置；平行時內錯角相等，所以仍是73°。",
+        "misconceptionTarget": "若沒有先確認兩角分居截線兩側，容易誤套同側內角互補而算成107°。"
+      },
+      "appendArray": { "steps": ["確認平行條件與內錯角位置都成立後，直接保留角度73°。"] }
+    },
+    {
+      "questionId": "u17-s001-v004",
+      "expectedContentSha256": "2eb99483f201a2222ed855df6f5aac1bb77d8125e079823f81b9c2751f037d01",
+      "appendText": {
+        "explanation": "同側內角位於兩條平行線之間且在截線同側，兩角互補而非相等；因此另一角是180°－131°＝49°，並可由131°＋49°驗算，位置與角和都吻合。",
+        "misconceptionTarget": "若只記得平行線會產生相等角，未辨認同側位置，就會錯把另一角寫成131°。"
+      },
+      "appendArray": { "steps": ["將49°與131°相加得180°，完成同側內角條件的檢查。"] }
+    },
+    {
+      "questionId": "u17-s001-v005",
+      "expectedContentSha256": "2d9c7117aaf821e0f961a6de6b6b23a1576f3bd5187195354f29871ed57ec05c",
+      "appendText": {
+        "explanation": "同位角在兩個交點占相同方位，且兩線平行，所以可列3x＋7＝82；先減7再除以3得x＝25，代回左式確為82°，右側已知角也相同，因此未知數符合全部條件。",
+        "misconceptionTarget": "若移項時把加7改成再加7，會得到錯誤的x，且代回後角度不會等於82°。"
+      },
+      "appendArray": { "steps": ["把x＝25代回3x＋7，得到82°並核對同位角相等。"] }
+    },
+    {
+      "questionId": "u17-s001-v006",
+      "expectedContentSha256": "8e83a3ffa27fa51a8ec8856acfa547b6b24e42d71ffa1e7af59455c50bcbf64b",
+      "appendText": {
+        "explanation": "同側內角互補，故兩個代數式的總和應為180°；合併後6x＋30＝180，解得x＝25，代回可得60°與120°，兩角都在合法範圍且總和恰為180°，因此答案唯一。",
+        "misconceptionTarget": "若把同側內角誤設為相等，會得到不同的x，且兩角總和無法驗成180°。"
+      },
+      "appendArray": { "steps": ["代入x＝25算得60°與120°，相加為180°，故方程與角度皆合理。"] }
+    },
+    {
+      "questionId": "u17-s001-v007",
+      "expectedContentSha256": "aaab1b88ea83d199afde3f6ac490b110aefe64e449a23c06d60f34025b2763b4",
+      "appendText": {
+        "explanation": "本題有兩層關係：先由一直線上的鄰補角求出142°，再把這個角搬到其對頂位置；第二步只保持角度不變。",
+        "misconceptionTarget": "若跳過鄰補角的計算而直接找38°的對頂角，會回答38°而未處理題目指定的角。"
+      },
+      "appendArray": { "steps": ["確認對頂角所對應的是剛求得的142°角，因此最後答案仍為142°。"] }
+    },
+    {
+      "questionId": "u17-s001-v008",
+      "expectedContentSha256": "a41c860816fcf3b4f9f0b17b9d812125df3f8150f2e35e542b7fe071599535a5",
+      "appendText": {
+        "explanation": "先用同側內角互補建立方程，再將x＝20分別代入5x－8與3x＋28；得到92°與88°後，題目要比較的是角度而不是x。",
+        "misconceptionTarget": "若解出x＝20便直接作答，或只代回其中一式，就無法判斷哪個角較小。"
+      },
+      "appendArray": { "steps": ["比較92°與88°，選出較小的88°，並核對兩角和為180°。"] }
+    },
+    {
+      "questionId": "u17-s001-v009",
+      "expectedContentSha256": "461d573cb508a5cfe8d4b104cb9ebdb85737ba7c84d3c417c0f166e91a7c204c",
+      "appendText": {
+        "explanation": "因a與b平行，指定的內錯角相等，故列7x－9＝4x＋36；移項得3x＝45與x＝15，代回任一式都是96°，另一式也同為96°，所以兩角度數已完整驗證。",
+        "misconceptionTarget": "若把內錯角當作同側內角列成和為180°，會得到不符合兩式相等的結果。"
+      },
+      "appendArray": { "steps": ["同時代回兩式得到96°與96°，確認內錯角相等且答案唯一。"] }
+    },
+    {
+      "questionId": "u17-s001-v010",
+      "expectedContentSha256": "c86a767325c75fd5e652f09f39cea0f364e645ed36e3c25dc6005c0f985e9c72",
+      "appendText": {
+        "explanation": "護欄兩邊平行，斜撐是截線；題目指定同側內角，所以切角需與64°互補。計算180°－64°＝116°，而非複製原角。",
+        "misconceptionTarget": "若只憑護欄外觀看成同位角，會誤切64°，造成同側內角總和不是180°。"
+      },
+      "appendArray": { "steps": ["以64°＋116°＝180°檢核切角，符合兩平行邊的同側內角關係。"] }
+    },
+    {
+      "questionId": "u17-s001-v011",
+      "expectedContentSha256": "e55d9ada5d511544f1e2ab98c0b7cebaafccb87194b6e0759103669da5d48dfc",
+      "appendText": {
+        "explanation": "平行街道被同一斜路所截，各交點的銳角都是41°；每個相鄰鈍角與銳角形成鄰補，因此鈍角是139°。",
+        "misconceptionTarget": "若把同一交點的銳角與鈍角都視為平行線的相等角，會錯答41°。"
+      },
+      "appendArray": { "steps": ["檢查41°是銳角而139°大於90°且小於180°，符合題目所求鈍角。"] }
+    },
+    {
+      "questionId": "u17-s001-v012",
+      "expectedContentSha256": "958a2142697cf3aa1334694cd77b21e88a72ee352d82b79d62204962806b8dde",
+      "appendText": {
+        "explanation": "上下邊平行且兩式表示內錯角，故角度必相等；整理2x＋15＝5x－30可得45＝3x與x＝15，代回兩角皆45°，支撐桿因而符合指定的內錯角安裝條件。",
+        "misconceptionTarget": "若誤用同側內角互補，會建立錯誤方程；代回後也不能得到題幹指定的內錯角相等。"
+      },
+      "appendArray": { "steps": ["代入x＝15，兩個角式都等於45°，確認安裝條件成立。"] }
+    },
+    {
+      "questionId": "u17-s002-v001",
+      "expectedContentSha256": "1e35ab1e4906dd7a9522ec44d6965d36ca5166dff3043ee9fd47490cec704ef0",
+      "appendText": {
+        "explanation": "三線在同一平面內，a與c都和同一條直線b平行，方向一致且不相交；依平行關係的傳遞性可確定a∥c。",
+        "misconceptionTarget": "若只逐對查看a∥b與b∥c，卻忽略平行的傳遞性，會誤選無法判斷。"
+      },
+      "appendArray": { "steps": ["套用同一平面內的平行傳遞性，寫出唯一結論a∥c。"] }
+    },
+    {
+      "questionId": "u17-s002-v002",
+      "expectedContentSha256": "9a679c1d0a8cd286e03b57d6444e01460caff16426d200d2f498547775a5ee28",
+      "appendText": {
+        "explanation": "題目已限定兩角為同位角，且兩者度數相等，正好符合平行判定的逆性質；因此被截的兩直線平行，與線段長度無關。",
+        "misconceptionTarget": "若只看到角相等便聯想到線段等長，會混淆角度關係與長度性質。"
+      },
+      "appendArray": { "steps": ["確認角型為同位角後，引用同位角相等的逆性質判定兩線平行。"] }
+    },
+    {
+      "questionId": "u17-s002-v003",
+      "expectedContentSha256": "6a2444b659fd0571865357d722e7bc8490b3dab3d8134e5d2d227f20329b02c2",
+      "appendText": {
+        "explanation": "先計算105°＋75°＝180°，再結合兩角確為同側內角；兩項條件同時成立，依逆性質可判定兩被截直線平行。",
+        "misconceptionTarget": "若只比較兩角是否相等，就會漏掉同側內角的判準其實是互補而非相等。"
+      },
+      "appendArray": { "steps": ["由同側內角互補的平行判定，得出兩直線平行。"] }
+    },
+    {
+      "questionId": "u17-s002-v004",
+      "expectedContentSha256": "639077d35ee378503191dd4df8cb099f995e331612b441661f2035422dd17bcd",
+      "appendText": {
+        "explanation": "a與b互相平行，所以任何垂直a的直線與a夾90°時，也會與同方向的b夾90°；故c同時垂直於b。",
+        "misconceptionTarget": "若把『垂直於平行線之一』誤讀成『平行於另一線』，會把90°關係判錯。"
+      },
+      "appendArray": { "steps": ["沿c比較它與a、b的同位角，兩者皆為90°，所以c⊥b。"] }
+    },
+    {
+      "questionId": "u17-s002-v005",
+      "expectedContentSha256": "36fc9588c77fe44f3d551c5be64efc7914bd8388c11eedd3a93584490451a58a",
+      "appendText": {
+        "explanation": "兩線平行時，各交點相同方位的銳角相等；題目明確仍求銳角，因此直接保留68°，不需改成它的鄰補角112°。",
+        "misconceptionTarget": "若忽略題目指定銳角，可能把68°的鄰補鈍角112°當成答案。"
+      },
+      "appendArray": { "steps": ["檢查68°小於90°且為相同方位角，確定符合所求銳角。"] }
+    },
+    {
+      "questionId": "u17-s002-v006",
+      "expectedContentSha256": "029f6eb739e549de6449d4bfe89110dcb151674fa40e38a22559a177f793eda1",
+      "appendText": {
+        "explanation": "平行條件使指定的內錯角相等，故應列4x＋8＝6x－18；移項得26＝2x與x＝13，代回兩角皆60°，兩式相等且角度合法，正好支持題幹的平行條件。",
+        "misconceptionTarget": "若把內錯角誤列成總和180°，會得到另一個x，且兩式代回不相等。"
+      },
+      "appendArray": { "steps": ["代入x＝13，兩式同為60°，完成平行內錯角的驗算。"] }
+    },
+    {
+      "questionId": "u17-s002-v007",
+      "expectedContentSha256": "8e8360f7b46e14e606de82b06a5bc3ef074ca8d4379d6371f4913de0012e769d",
+      "appendText": {
+        "explanation": "平行判定必須同時交代角的相對位置；『一對內角相等』沒有說明同位、內錯或同側，任意內角相等不足以推出平行。",
+        "misconceptionTarget": "若把所有相等角都當成平行判定，會忽略角型與截線位置是定理必要條件。"
+      },
+      "appendArray": { "steps": ["逐項比對正式判定後，只有未指定位置的『一對內角相等』不足。"] }
+    },
+    {
+      "questionId": "u17-s002-v008",
+      "expectedContentSha256": "64eb282900e9ebf66429dc87f8e7b9bd4b94e3089549bd11e704de419ed3a5bf",
+      "appendText": {
+        "explanation": "先由a∥b及b∥c得到a∥c，故t與c形成的對應銳角也是37°；題目改求鈍角，需再算180°－37°＝143°，且143°確實大於90°並小於180°，角型正確。",
+        "misconceptionTarget": "若只完成平行傳遞就把37°直接作答，會漏掉題目由銳角轉求鈍角的要求。"
+      },
+      "appendArray": { "steps": ["確認143°大於90°且與37°相加為180°，符合所求鈍角。"] }
+    },
+    {
+      "questionId": "u17-s002-v009",
+      "expectedContentSha256": "a0cd2081acf3c7fe1293575bc3b11879c66af42786d15ff31cae125661451116",
+      "appendText": {
+        "explanation": "要使a∥b，這對同位角必相等，因此列5x－7＝3x＋29；解得x＝18後，兩式均為83°，題目要求的兩個量都已求出，並可直接驗回同位角相等。",
+        "misconceptionTarget": "若只報x＝18而沒有代回求角，便沒有完整回答『x與角度』兩項所求。"
+      },
+      "appendArray": { "steps": ["把x＝18代回兩式，皆得83°，再由同位角相等確認平行。"] }
+    },
+    {
+      "questionId": "u17-s002-v010",
+      "expectedContentSha256": "3cb80ca1598d5ed22acd1c630b569b692ac8b83031748b07034eb9bb1ad23280",
+      "appendText": {
+        "explanation": "兩條中心線都和同一條枕木邊形成90°，在同一平面內它們方向相同；依共同垂直的性質，兩中心線互相平行。",
+        "misconceptionTarget": "若把『都垂直枕木』讀成『彼此垂直』，會混淆共同參照直線與兩中心線的關係。"
+      },
+      "appendArray": { "steps": ["確認兩個直角以同一枕木邊為參照，推出兩中心線平行。"] }
+    },
+    {
+      "questionId": "u17-s002-v011",
+      "expectedContentSha256": "efb0c4a83b5c6de8e43bb30bb3b7f5d68a91606784420b810915d1424212c43c",
+      "appendText": {
+        "explanation": "題幹已說量測值視為精確，92.0°＋88.0°恰為180.0°；又兩角位置是同側內角，因此可用互補的逆性質判p∥q。",
+        "misconceptionTarget": "若因數值帶小數就拒絕運算，會忽略題目已明示精確值且角和正好為180°。"
+      },
+      "appendArray": { "steps": ["將精確角和180.0°連結同側內角判定，寫出p∥q。"] }
+    },
+    {
+      "questionId": "u17-s002-v012",
+      "expectedContentSha256": "5fdf96e1a9889872e37e1c8c71ab61d09f44889f2c933e9d0391f56bbacf281a",
+      "appendText": {
+        "explanation": "由兩次平行關係先得梁a∥梁c，所以支撐桿與梁c的銳角仍是28°；題目要求鈍角，再取鄰補角得到152°。",
+        "misconceptionTarget": "若看到平行便直接沿用28°，會回答銳角而未完成題目所指定的鈍角轉換。"
+      },
+      "appendArray": { "steps": ["用28°＋152°＝180°檢查，且152°確為鈍角，故答案符合施工要求。"] }
+    },
+    {
+      "questionId": "u17-s003-v001",
+      "expectedContentSha256": "4eace525e2030e9ac73f538cb1ed525b0a74011b6ae2c0669d4f7d3718f853be",
+      "appendText": {
+        "explanation": "證明必須引用與已知角型相符的逆性質；既然兩角是內錯角且相等，就可直接判兩被截直線平行，不需另假設結論。",
+        "misconceptionTarget": "若引用對頂角相等，該性質只能比較同一交點的角，無法證明兩被截線平行。"
+      },
+      "appendArray": { "steps": ["把『內錯角相等』連結到其平行判定逆性質，完成結論。"] }
+    },
+    {
+      "questionId": "u17-s003-v002",
+      "expectedContentSha256": "94dc8f2cec7a46e0f06793e4a761b3e8ba65fa80d78c5840e2f560ab56592b1e",
+      "appendText": {
+        "explanation": "已知同位角∠1與∠2相等，條件已完整符合平行判定；下一步只需明確寫出定理與a∥b，不能先把待證結論當已知。",
+        "misconceptionTarget": "若先假設a∥b再導回同位角相等，整段推理會形成沒有獨立依據的循環論證。"
+      },
+      "appendArray": { "steps": ["引用同位角相等的逆性質，直接寫出a∥b。"] }
+    },
+    {
+      "questionId": "u17-s003-v003",
+      "expectedContentSha256": "b0068dd0d4881ba06d01423e28975f5246d39c4538f4adf25ed2e15d567ce64a",
+      "appendText": {
+        "explanation": "同側內角判定檢查的是角和是否為180°；118°與62°相加恰為180°，結合其位置即可證明兩線平行。",
+        "misconceptionTarget": "若改算兩角差56°，該數值並不是任何平行判定條件，不能支持結論。"
+      },
+      "appendArray": { "steps": ["由118°＋62°＝180°及同側內角位置，判定兩線平行。"] }
+    },
+    {
+      "questionId": "u17-s003-v004",
+      "expectedContentSha256": "a7bdb15e5122c6206cbdae26723f927b03d92b75dc89109a9ad582e938567fd1",
+      "appendText": {
+        "explanation": "將x＝16代入兩式：3×16＋14＝62，5×16－18＝62；兩個內錯角確實相等，所以可用逆性質判定兩線平行，計算與角型兩項依據均完整。",
+        "misconceptionTarget": "若只說兩式含同一個x，卻未代入比較角度，就沒有建立內錯角相等的證據。"
+      },
+      "appendArray": { "steps": ["核對兩個62°位於內錯位置後，引用內錯角相等判平行。"] }
+    },
+    {
+      "questionId": "u17-s003-v005",
+      "expectedContentSha256": "ebf999b78f4370cda5b824c4d8907ddb57d53bd0cea507c44b8ba19a78f3490b",
+      "appendText": {
+        "explanation": "先用同一交點的對頂角得到∠1＝∠3，再結合已知∠3＝∠2作等量傳遞；最後才以同位角∠1＝∠2判平行。",
+        "misconceptionTarget": "若從∠3＝∠2直接跳到平行，便沒有說明這兩角是否位於可用判定的位置。"
+      },
+      "appendArray": { "steps": ["確認∠1與∠2為同位角且已證相等，因而得出兩線平行。"] }
+    },
+    {
+      "questionId": "u17-s003-v006",
+      "expectedContentSha256": "21dc2f87937210fc3df2d9e04b3b9b514bbdc8dc5c4ae1d0c9789dbc3ba6b2e6",
+      "appendText": {
+        "explanation": "代入x＝26得2x＋30＝82°、4x－6＝98°，兩角和為180°；因其為同側內角，互補足以判兩線平行，不必要求兩角度數相同。",
+        "misconceptionTarget": "若要求同側內角也必須相等，會錯誤否定82°與98°這組合法的互補角。"
+      },
+      "appendArray": { "steps": ["將82°與98°相加驗成180°，再用同側內角互補判平行。"] }
+    },
+    {
+      "questionId": "u17-s003-v007",
+      "expectedContentSha256": "bff20f4bba513e900aa8edd68013dfa78bc7a5401e8434ebb37ee1d6f178a565",
+      "appendText": {
+        "explanation": "證明一開始就把待證的a∥b當作前提，得到同位角相等後又回到同一結論；前提未被其他已知支持，所以是循環論證。",
+        "misconceptionTarget": "若只看每句定理個別正確，可能忽略整體推理其實用結論證明自己。"
+      },
+      "appendArray": { "steps": ["檢查推理起點是否為已知，發現a∥b未證先用，故判為循環論證。"] }
+    },
+    {
+      "questionId": "u17-s003-v008",
+      "expectedContentSha256": "d4d3d31c42aa84a9428f8b2a574b8fac6c41b086cc9eb4bc726c27ac9236d245",
+      "appendText": {
+        "explanation": "角和180°本身只表示兩角互補；要判兩線平行，還需確認它們是同一截線形成的同側內角，位置條件不能省略。",
+        "misconceptionTarget": "若把任意互補角都當成平行證據，兩個毫無關聯的角也會被錯誤套用定理。"
+      },
+      "appendArray": { "steps": ["指出尚缺同側內角的位置資料，因此現有資訊不足以判平行。"] }
+    },
+    {
+      "questionId": "u17-s003-v009",
+      "expectedContentSha256": "7349022048708555b4a4f25d1bd2150673d12916aef25acc59e44e859b82f56f",
+      "appendText": {
+        "explanation": "正式證明要同時呈現計算、角型與定理：46°＋134°＝180°，而兩角已知為同側內角，所以依互補逆性質判兩線平行。",
+        "misconceptionTarget": "若只列46°＋134°而未說兩角位置與判定定理，角和無法單獨連到平行結論。"
+      },
+      "appendArray": { "steps": ["將互補計算與同側內角位置合併，完整寫出平行結論。"] }
+    },
+    {
+      "questionId": "u17-s003-v010",
+      "expectedContentSha256": "0d7573d5e6c98b0fc9934b9c949e6af48673d81ea83562c6a00cd6db0730945b",
+      "appendText": {
+        "explanation": "讀值89.5°在題幹中視為精確，且兩角明確是同位角；相等的同位角足以判兩邊線平行，是否接近90°不是判定理由。",
+        "misconceptionTarget": "若因89.5°接近直角便判兩邊線垂直，會混淆測量桿與兩條邊線之間的角。"
+      },
+      "appendArray": { "steps": ["以89.5°＝89.5°配合同位角逆性質，完成驗收結論。"] }
+    },
+    {
+      "questionId": "u17-s003-v011",
+      "expectedContentSha256": "188411d0c64874857c66ddd5a5f3a04b799f16e4da4c3589f5438e98552924e4",
+      "appendText": {
+        "explanation": "把x＝15分別代入：4x＋6＝66°，6x－24＝66°；兩角為內錯角且相等，因此道路平行，不能只憑x相同判定，代回角度才是有效證據。",
+        "misconceptionTarget": "若將第二式6×15－24算成54°，就會製造不存在的不相等並誤判道路。"
+      },
+      "appendArray": { "steps": ["核對兩式皆為66°後，依內錯角相等判定道路平行。"] }
+    },
+    {
+      "questionId": "u17-s003-v012",
+      "expectedContentSha256": "365fc46a94c63210c45e93da62fb26e6e3288e14ed7401fc3b040ba804fd5e4b",
+      "appendText": {
+        "explanation": "相等角要能判平行，必須是同位角或內錯角等正式位置；只說『兩個角相等』無法排除對頂角或其他無關角。",
+        "misconceptionTarget": "若用兩角都是銳角、顏色或截線長度補充，這些視覺資訊仍不是平行判定條件。"
+      },
+      "appendArray": { "steps": ["補明兩角是同位角或內錯角，才能引用相等的逆性質判平行。"] }
+    },
+    {
+      "questionId": "u17-s004-v001",
+      "expectedContentSha256": "6ac2f15891421c2bb01388da479122e5af4775453c6414230f4932f27e77bb06",
+      "appendText": {
+        "explanation": "平行四邊形的兩組對邊平行，可推出兩組對角分別相等；A與C互為對角，所以∠C直接等於∠A的72°。",
+        "misconceptionTarget": "若把C當成A的鄰角，就會誤算180°－72°＝108°，混淆頂點位置。"
+      },
+      "appendArray": { "steps": ["依頂點順序確認A與C相對，套用對角相等得到72°。"] }
+    },
+    {
+      "questionId": "u17-s004-v002",
+      "expectedContentSha256": "6afd4e77d04b9aada447469bbd45b6395a3225b5d6eafecc13ae150942ec0fee",
+      "appendText": {
+        "explanation": "平行四邊形相鄰兩角由平行線的同側內角關係可知互補；因此另一角為180°－115°＝65°，兩角合計180°，同時符合一鈍一銳的角度配置。",
+        "misconceptionTarget": "若把平行四邊形的對角相等誤套到鄰角，就會錯答115°。"
+      },
+      "appendArray": { "steps": ["用115°＋65°＝180°驗算相鄰內角的互補性。"] }
+    },
+    {
+      "questionId": "u17-s004-v003",
+      "expectedContentSha256": "75449f531ecfcd0c638e9a089c1e78287b24571659d63c908e22b4b5cddc89ce",
+      "appendText": {
+        "explanation": "平行四邊形對邊等長，四邊依序為9、6、9、6公分；周長是四邊總和，也可寫成2×(9＋6)＝30公分，長度單位仍保留為公分而非平方公分。",
+        "misconceptionTarget": "若只算9＋6＝15公分，便只計入一組鄰邊而漏掉等長的兩條對邊。"
+      },
+      "appendArray": { "steps": ["列出四邊9＋6＋9＋6，核對周長為30公分。"] }
+    },
+    {
+      "questionId": "u17-s004-v004",
+      "expectedContentSha256": "a9d33a127a6230eda52636c2cb56438bbb18e4dd09dad8d9120dc02538b04390",
+      "appendText": {
+        "explanation": "A、B為相鄰內角，故兩式總和是180°；合併得8x＋4＝180，移項後8x＝176，所以x＝22，代回得到71°與109°，兩角相加恰為180°且皆在合法範圍，驗算無誤。",
+        "misconceptionTarget": "若把A、B誤視為對角而設兩式相等，會得到不符合鄰角互補的結果。"
+      },
+      "appendArray": { "steps": ["代入x＝22得71°與109°，相加180°，驗證方程正確。"] }
+    },
+    {
+      "questionId": "u17-s004-v005",
+      "expectedContentSha256": "fe1124fe8ff433215a46d1d9c05bdb298d9f7e7f14ec6e70b7ed85a65b902913",
+      "appendText": {
+        "explanation": "相鄰角互補且相差36°，設小角x、大角x＋36°，便有x＋x＋36°＝180°；解得小角72°、大角108°，不僅角和正確，兩角差也正好是36°，因此配置唯一。",
+        "misconceptionTarget": "若直接用四邊形內角和360°除以錯誤份數，會忽略鄰角互補與36°的差。"
+      },
+      "appendArray": { "steps": ["檢查72°＋108°＝180°且108°－72°＝36°，兩條件都成立。"] }
+    },
+    {
+      "questionId": "u17-s004-v006",
+      "expectedContentSha256": "bfd578ea102a96230674f5eaff30e32acacf43d07298f3d79aa4a9892c55569b",
+      "appendText": {
+        "explanation": "AB與CD是平行四邊形的一組對邊，所以2x＋7＝5x－20；解得x＝9後，題目求AB，仍需代回得2×9＋7＝25，另一邊式也等於25，可驗證對邊相等且邊長為正。",
+        "misconceptionTarget": "若解出x＝9就停止，會把未知數值誤當成題目要求的邊長AB。"
+      },
+      "appendArray": { "steps": ["代回兩個邊式皆得25，確認對邊相等且AB＝25。"] }
+    },
+    {
+      "questionId": "u17-s004-v007",
+      "expectedContentSha256": "8ff2a46fcd20cd11eb18170c99f96995e6d97934cec5c10a5d8f86fb81a15e46",
+      "appendText": {
+        "explanation": "一般平行四邊形必有對邊平行、對邊等長及對角線互相平分；但傾斜程度不同時，兩條對角線可不等長。",
+        "misconceptionTarget": "若把矩形的對角線等長性質推廣到所有平行四邊形，就會選錯必然性敘述。"
+      },
+      "appendArray": { "steps": ["用非矩形的斜平行四邊形作反例，排除『對角線等長』。"] }
+    },
+    {
+      "questionId": "u17-s004-v008",
+      "expectedContentSha256": "e87fd29d1bf9427c88f367c3c44958ed5c49919e9c422266e32cb956d50fadd6",
+      "appendText": {
+        "explanation": "周長46公分表示一長一短的鄰邊合計23公分；設短邊x、長邊x＋5，解2x＋5＝23得x＝9，所以AB為14公分，與短邊9公分相差5公分且周長可驗回46公分。",
+        "misconceptionTarget": "若直接把46公分分給兩條邊，會忘記每種邊長在周長中各出現兩次。"
+      },
+      "appendArray": { "steps": ["以2×(14＋9)＝46公分驗回周長，並確認兩邊相差5公分。"] }
+    },
+    {
+      "questionId": "u17-s004-v009",
+      "expectedContentSha256": "975490d6b9c8726173f8aa705332770362adde6a858d60aba7cbde01f949fb75",
+      "appendText": {
+        "explanation": "A、B為鄰角，角和180°；比例2：3共5份，所以每份36°，A占2份為72°，B占3份為108°，兩數相加與比例都符合原題，因此A角確為72°且答案唯一。",
+        "misconceptionTarget": "若用四邊形內角和360°直接除5，會把只描述一組鄰角的比例套到四個角。"
+      },
+      "appendArray": { "steps": ["核對72°：108°＝2：3且兩角和180°，確認比例分配正確。"] }
+    },
+    {
+      "questionId": "u17-s004-v010",
+      "expectedContentSha256": "6546a1dc19d98b5facb6888d3280a4065daed9d2e3f2d8c66c5a0268ce6e24d5",
+      "appendText": {
+        "explanation": "反光條貼在外框，所求是周長而非面積；兩組對邊等長，總長為2×(1.8＋1.2)＝6公尺，四段外框都已計入且長度單位正確。",
+        "misconceptionTarget": "若將1.8與1.2相乘，算到的是面積型數值，量綱也不是外框所需的公尺。"
+      },
+      "appendArray": { "steps": ["把四邊1.8、1.2、1.8、1.2公尺相加，驗得6公尺。"] }
+    },
+    {
+      "questionId": "u17-s004-v011",
+      "expectedContentSha256": "cef6fc92c5bbc644a0d76dfb26cba1906f18b6d5b8ecefbe59f484afc9022c3b",
+      "appendText": {
+        "explanation": "每個入口轉角都與68°角相鄰，在平行四邊形中相鄰內角互補；所以兩個入口角各為180°－68°＝112°，兩個相對的入口角也因對角相等而一致。",
+        "misconceptionTarget": "若利用對角相等把所有角都寫68°，會忽略入口位於相鄰頂點而非相對頂點。"
+      },
+      "appendArray": { "steps": ["用68°＋112°＝180°檢查每個相鄰入口角。"] }
+    },
+    {
+      "questionId": "u17-s004-v012",
+      "expectedContentSha256": "190c9eaeb557e34798d8bf53fee0c8c5c3428af2d4f0aeb87eb2758b92d04416",
+      "appendText": {
+        "explanation": "周長84公分包含兩組等長對邊，故一組相鄰邊合計42公分；已知一邊26公分，另一邊為42－26＝16公分，再把兩種邊各取兩次可驗回84公分。",
+        "misconceptionTarget": "若算84－26，會只扣掉一條已知邊，仍把其對邊與另一組兩邊混在結果中。"
+      },
+      "appendArray": { "steps": ["以2×(26＋16)＝84公分驗算，確認另一邊長16公分。"] }
+    },
+    {
+      "questionId": "u17-s005-v001",
+      "expectedContentSha256": "b44686fc134dd25f42bb095070f6aaa1f849bb742a823ec8ac981c2a86d028f0",
+      "appendText": {
+        "explanation": "『內』表示兩角都在兩條被截直線之間，『錯』表示分居截線兩側；兩個位置條件缺一不可，因此選內部且異側。",
+        "misconceptionTarget": "若只記住角在截線兩側而未檢查是否位於兩線內部，可能把外錯角誤認為內錯角。"
+      },
+      "appendArray": { "steps": ["同時檢查內部與異側兩項位置，鎖定唯一符合的選項。"] }
+    },
+    {
+      "questionId": "u17-s005-v002",
+      "expectedContentSha256": "c1fcc36e8c40f82010ec24fa544dbb59c45b4ff6a95d3ca59cd41f52b5e1422c",
+      "appendText": {
+        "explanation": "題幹給a∥b，且指定兩角是內錯角；平行線的內錯角相等，所以另一角保留49°，不取它的鄰補角131°。",
+        "misconceptionTarget": "若把內錯角與同側內角混淆，就會錯用互補關係算成131°。"
+      },
+      "appendArray": { "steps": ["確認平行與內錯位置後，直接由相等性得到49°。"] }
+    },
+    {
+      "questionId": "u17-s005-v003",
+      "expectedContentSha256": "a02b74f42c55302f1ef5eeeb1ad2875216cd5a001109657e8febf41a528247c1",
+      "appendText": {
+        "explanation": "若一對角確實位於內錯位置且度數相等，便符合平行判定的逆性質；結論是兩條被截直線平行，並不表示角必為90°。",
+        "misconceptionTarget": "若把角相等自動解讀成直角，會錯誤加入題目未提供的90°條件。"
+      },
+      "appendArray": { "steps": ["引用內錯角相等的逆性質，判定兩被截直線平行。"] }
+    },
+    {
+      "questionId": "u17-s005-v004",
+      "expectedContentSha256": "f6849ed2bb3cde153b4dbef4838106e020eb85952d07bc969c4569d1cc720dac",
+      "appendText": {
+        "explanation": "兩線平行使內錯角相等，故2x＋11＝71；先減11得2x＝60，再除以2得x＝30，代回角式為71°，與另一內錯角完全相同且角度在合法範圍內，驗算成立。",
+        "misconceptionTarget": "若移項時把11加到71，會得到錯誤未知數，代回也不會等於71°。"
+      },
+      "appendArray": { "steps": ["代入x＝30得2x＋11＝71°，完成相等條件驗算。"] }
+    },
+    {
+      "questionId": "u17-s005-v005",
+      "expectedContentSha256": "e17cbbcb1427832d6023fad8988e0fe27b54dc39adfe13f2737490c5b2c19326",
+      "appendText": {
+        "explanation": "內錯角相等可列5x－13＝3x＋21，解得2x＝34與x＝17；題目問角度，代回得到85－13＝72°，另一式51＋21也為72°，所以兩角答案一致；四個選項中只有72°吻合，且角度小於平角。",
+        "misconceptionTarget": "若只回答方程的x＝17，就尚未回應題目所問的兩個內錯角度數。"
+      },
+      "appendArray": { "steps": ["把x＝17代回兩式，均得72°，確認兩角相等。"] }
+    },
+    {
+      "questionId": "u17-s005-v006",
+      "expectedContentSha256": "3ad3b5a07fcc606aaab085c70e20ced7304bc219dddade25053945e822f72515",
+      "appendText": {
+        "explanation": "先在原交點求126°的鄰補角：180°－126°＝54°；這個54°角與所求角互為內錯角，平行時兩者相等，因此跨到另一交點後仍是54°。",
+        "misconceptionTarget": "若略過鄰補關係便直接把126°搬到另一交點，會對錯誤的角位置套用內錯角相等。"
+      },
+      "appendArray": { "steps": ["將剛求得的54°依內錯角相等移到另一交點，得到所求54°。"] }
+    },
+    {
+      "questionId": "u17-s005-v007",
+      "expectedContentSha256": "26ecfe7ff70449c0b72a2db11a611b991208029b884c9d7e08ffd52020ea5bff",
+      "appendText": {
+        "explanation": "Z形只是辨認內錯位置的輔助圖像；只有兩被截線已知平行時，才能推出內錯角相等，不能把外觀當成定理前提。",
+        "misconceptionTarget": "若看到任何Z形就宣稱兩角相等，會在兩線不平行時也得到錯誤結論。"
+      },
+      "appendArray": { "steps": ["區分定位口訣與平行條件，選出同時保留兩者的完整敘述。"] }
+    },
+    {
+      "questionId": "u17-s005-v008",
+      "expectedContentSha256": "055d29d34dea647c985e9e239d7d69d78b116a0ff18e2911896f3b3bdc95f5d4",
+      "appendText": {
+        "explanation": "由7x－5＝4x＋40得3x＝45與x＝15；此時兩個內錯角皆100°，所以再用相等的逆性質判兩線平行，未知數與幾何結論兩項都已回答。",
+        "misconceptionTarget": "若解完方程便停止，只能得到x，仍缺少題目要求的兩直線關係。"
+      },
+      "appendArray": { "steps": ["代回兩角皆100°，依內錯角相等完成平行判定。"] }
+    },
+    {
+      "questionId": "u17-s005-v009",
+      "expectedContentSha256": "9880d4f7ce1cdd1f20d467ab1479fa1615dda2bc96c0041554cf8de0f2adad4e",
+      "appendText": {
+        "explanation": "3：3表示這對內錯角相等；設其中一角x，其相鄰補角為180°－x，且後者比x大40°，所以180°－2x＝40°，解得x＝70°後，鄰補角110°恰好多40°。",
+        "misconceptionTarget": "若把比例3：3當成實際3°，會忽略比例只表示兩角相等而未給共同大小。"
+      },
+      "appendArray": { "steps": ["解得x＝70°，驗算鄰補角110°恰比它大40°。"] }
+    },
+    {
+      "questionId": "u17-s005-v010",
+      "expectedContentSha256": "4b5fc95f435993971111815d8a2e8808e114a947a9ec75a46d68ae31f35ac60a",
+      "appendText": {
+        "explanation": "兩條車道平行，題中兩式又是內錯角，因此3x＋12＝5x－28；移項得40＝2x，所以x＝20，代回兩式都得到72°，完整驗證內錯角相等及平行條件。",
+        "misconceptionTarget": "若把內錯角誤認成同側內角而令兩式相加180°，會建立不符合位置的方程。"
+      },
+      "appendArray": { "steps": ["代入x＝20，兩角均為72°，確認內錯角相等。"] }
+    },
+    {
+      "questionId": "u17-s005-v011",
+      "expectedContentSha256": "a08fa39c8d34e48a0e5fe353908b6592329f6fb80066a00c75c512cedc1ffd9a",
+      "appendText": {
+        "explanation": "斜撐同時穿過兩條平行扶手，兩端指定角位於內錯位置；平行線內錯角相等，所以連接座也應設定為76°。",
+        "misconceptionTarget": "若把內錯角誤作鄰補角，會設定104°，與另一端的內錯角不相等。"
+      },
+      "appendArray": { "steps": ["核對兩端位於截線異側且同在內部，確定設定76°。"] }
+    },
+    {
+      "questionId": "u17-s005-v012",
+      "expectedContentSha256": "90275e8e7a199a30535300ff048fc5c60c165e902b5dd4dc9f97d191bc40a6bc",
+      "appendText": {
+        "explanation": "雖然題目未預先給兩邊線平行，但一對內錯角已精確相等為84°；這正是可反向使用的平行判定，故兩邊線平行。",
+        "misconceptionTarget": "若以為必須先知道平行才能用內錯角，會漏掉『內錯角相等則兩線平行』的逆性質。"
+      },
+      "appendArray": { "steps": ["由84°＝84°配合內錯角位置，引用逆性質判兩邊線平行。"] }
+    },
+    {
+      "questionId": "u17-s006-v001",
+      "expectedContentSha256": "ebe629d41a1c1cdf6925e6b566be09d2bc4bd21dff847fc48250ec15c9605792",
+      "appendText": {
+        "explanation": "同位角分屬截線與兩被截線形成的不同交點，並在各交點占相同相對方位；它們不是同一交點相對的對頂角。",
+        "misconceptionTarget": "若只看兩角外觀相對，未先確認分屬不同交點，就會把對頂角誤認為同位角。"
+      },
+      "appendArray": { "steps": ["檢查『不同交點』與『相同方位』兩條件，選出同位角位置。"] }
+    },
+    {
+      "questionId": "u17-s006-v002",
+      "expectedContentSha256": "87f6b14c195d47a31d2c3b8fe54968811036153538f4f4d3d687780abd0f610a",
+      "appendText": {
+        "explanation": "題幹已給a∥b，所比較的又是一對同位角；平行線同位角相等，因此另一角保持67°，而113°是其鄰補角。",
+        "misconceptionTarget": "若把不同交點的相同方位誤看成鄰補位置，會錯選113°。"
+      },
+      "appendArray": { "steps": ["依同位角相等，將67°對應到另一交點的相同方位。"] }
+    },
+    {
+      "questionId": "u17-s006-v003",
+      "expectedContentSha256": "64d29284008e74dacfab911755e88bd60fc822079293cc00cabfa92755b79118",
+      "appendText": {
+        "explanation": "當一對角的位置確為同位角且度數相等，就符合平行判定的逆性質；因此被截的兩直線平行，無須角為90°。",
+        "misconceptionTarget": "若把相等角一律解讀為直角，會錯誤加入垂直條件並誤判幾何關係。"
+      },
+      "appendArray": { "steps": ["引用同位角相等的逆性質，得兩被截直線平行。"] }
+    },
+    {
+      "questionId": "u17-s006-v004",
+      "expectedContentSha256": "40d891ac2d4cc01a566a2525213b8b9e0f3a03282f038753b004a178151bcdb1",
+      "appendText": {
+        "explanation": "平行條件使兩同位角相等，故4x－9＝75；兩邊加9得4x＝84，再除以4得到x＝21，代回角式為75°，與已知同位角相等且符合原方程，角度亦合法。",
+        "misconceptionTarget": "若忽略式中的－9而直接用75÷4，所得x代回後不會形成75°同位角。"
+      },
+      "appendArray": { "steps": ["把x＝21代回4x－9，得到75°並完成相等驗算。"] }
+    },
+    {
+      "questionId": "u17-s006-v005",
+      "expectedContentSha256": "863f5db2347b9008cfc7fa7a6dfc7d943b9a3a501f43e55f11ff8222dc58615d",
+      "appendText": {
+        "explanation": "由同位角相等列6x＋2＝4x＋30，得2x＝28與x＝14；題目所求是角度，所以代回得到86°而不是只報14，另一式也同為86°，兩角結果一致且均為合法角度。",
+        "misconceptionTarget": "若把x＝14直接當成角度答案，會混淆未知數與代數式代表的實際角度。"
+      },
+      "appendArray": { "steps": ["代回兩個角式都等於86°，確認同位角相等。"] }
+    },
+    {
+      "questionId": "u17-s006-v006",
+      "expectedContentSha256": "924d372cb9355d075d070f660d7fa3c3e7a723574867d0830cf0f15afd2e091a",
+      "appendText": {
+        "explanation": "103°先由同位角相等移到另一交點的對應位置；所求角與這個103°角相鄰成一直線，因此需算180°－103°＝77°。",
+        "misconceptionTarget": "若只做同位角對應而未讀到所求角是其相鄰角，會把103°錯當最後答案。"
+      },
+      "appendArray": { "steps": ["用103°＋77°＝180°核對另一交點的鄰補關係。"] }
+    },
+    {
+      "questionId": "u17-s006-v007",
+      "expectedContentSha256": "d660da2f23e319de344d09eefc3ad8aaea1d3f3b88e6a6937a9999deda12574d",
+      "appendText": {
+        "explanation": "同位角的名稱以兩個交點的相同方位為核心，所以必定分屬不同交點；同一交點的角可能是鄰角或對頂角。",
+        "misconceptionTarget": "若以為同位角必須都在兩線內部，會排除合法的一內一外同方位角。"
+      },
+      "appendArray": { "steps": ["以是否分屬不同交點逐項排除，選出不可能的同一交點選項。"] }
+    },
+    {
+      "questionId": "u17-s006-v008",
+      "expectedContentSha256": "38f1c12e5392bf12bff5afd241eb3062ebca5078eff659cc73374b4c4789ae03",
+      "appendText": {
+        "explanation": "由7x－20＝3x＋44可得4x＝64與x＝16；代回兩個同位角皆92°，再依相等的逆性質判兩線平行，代數與幾何兩階段結論都已驗證。",
+        "misconceptionTarget": "若只解出x而未把相等角連到逆性質，就沒有完成題目要求的兩線關係。"
+      },
+      "appendArray": { "steps": ["代回確認兩角均92°後，寫出兩被截直線平行。"] }
+    },
+    {
+      "questionId": "u17-s006-v009",
+      "expectedContentSha256": "be3e512eb1ae8736e5c4312b5c5f85248dd0c8485f6d09ce4be45c7f81d10098",
+      "appendText": {
+        "explanation": "銳同位角與它的鄰補角合計180°，依2：3分成5份，每份36°；銳角占2份，所以是72°，另一角108°，兩者比例正為2：3且72°確為銳角。",
+        "misconceptionTarget": "若把比例2：3直接當成2°與3°，就沒有使用兩個鄰補角總和180°的條件。"
+      },
+      "appendArray": { "steps": ["核對72°：108°＝2：3且72°小於90°，確定所求銳角。"] }
+    },
+    {
+      "questionId": "u17-s006-v010",
+      "expectedContentSha256": "d43bea82cc03e95beede9848d8f4219e2385b30a995ec296517d66bf0f2b5608",
+      "appendText": {
+        "explanation": "兩條輸送帶邊線平行，定位尺是共同截線；第二交點的同方位角與第一交點54°角互為同位角，所以仍為54°。",
+        "misconceptionTarget": "若把同方位角誤認為鄰補角，會錯算126°而違反平行線同位角相等。"
+      },
+      "appendArray": { "steps": ["沿定位尺比較兩交點相同方位，將54°對應到第二邊線。"] }
+    },
+    {
+      "questionId": "u17-s006-v011",
+      "expectedContentSha256": "8d97a50ea85b7dd20c72d0c3b8f75da654e369508a44d8f564b286ca76a51ae6",
+      "appendText": {
+        "explanation": "兩道路平行且兩角都在右上方，故為同位角並相等；列5x＋12＝117，減12後5x＝105，所以x＝21，代回可恢復117°並確認方位與角度都一致。",
+        "misconceptionTarget": "若算117－5而直接作答，會把係數5當成常數移項，破壞原方程。"
+      },
+      "appendArray": { "steps": ["代入x＝21得5x＋12＝117°，核對同位角讀值一致。"] }
+    },
+    {
+      "questionId": "u17-s006-v012",
+      "expectedContentSha256": "c10076f1ab279a33f4c8abb00d6b027228f3a3b1b26fba2a0b3ab9e81c3ceaab",
+      "appendText": {
+        "explanation": "相等的同位角先保證兩板邊平行；兩角又各為90°，表示測線分別垂直兩板邊，因此兩項結論都可成立。",
+        "misconceptionTarget": "若只寫兩板邊平行，會漏掉90°讀值額外提供的共同垂直資訊。"
+      },
+      "appendArray": { "steps": ["分別使用角的位置與90°數值，合併得平行且測線垂直兩者。"] }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u17-s001-cr001",
+      "expectedContentSha256": "fac226dc047e751d9cf75f605e3d1bd5109972b52ae48f8dcaeaa3e528f5fbf4",
+      "set": {
+        "fullCreditSolution": ["先由對頂角相等得到68°，再由鄰補角和為180°算出112°。因a∥b，對應的內錯角為68°，同側內角則為112°；四項都須連同角的位置與所用性質寫明。"],
+        "commonErrors": ["只列68°與112°兩個數值，卻沒有逐一說明對頂、鄰補、內錯與同側內角的對應理由。"]
+      },
+      "appendArray": { "reasoningSteps": ["最後檢查所有銳角為68°、所有相鄰鈍角為112°，且每個分類的位置符合名稱。"] }
+    },
+    {
+      "questionId": "u17-s001-cr002",
+      "expectedContentSha256": "f89e922bd1ae9a4c5ed9b3ba8793e8fedcff087021e3e4661cc14613ea1373cf",
+      "set": {
+        "fullCreditSolution": ["同側內角互補，故(3x＋12)＋(5x＋8)＝180，整理為8x＋20＝180，得x＝20。代回得到72°與108°；再以72°的同位角或內錯角等於72°，其鄰補角為108°完成驗算。", "這樣方程、兩角度數與另一種角關係彼此一致，完整回應三項要求。"],
+        "commonErrors": ["把兩個同側內角設成相等，或只求出x而沒有代回求兩角及提出另一種角關係驗算。"]
+      },
+      "appendArray": { "reasoningSteps": ["核對72°＋108°＝180°，並確認替代驗算使用的是正確的角位置。"] }
+    },
+    {
+      "questionId": "u17-s002-cr001",
+      "expectedContentSha256": "cf198ea48ac7efba64fb787a53ac9fef13124c896423ca601ca0f184e9411ef5",
+      "set": {
+        "fullCreditSolution": ["由a∥b且b∥c，依平行的傳遞性先得a∥c。截線t與a的銳角為37°，所以它與c的對應銳角也是37°；相鄰鈍角為180°－37°＝143°。", "推理順序先建立a與c平行，再分別處理相等的銳角及其鄰補鈍角。"],
+        "commonErrors": ["只寫a∥c後直接把37°同時當作銳角與鈍角，漏掉鈍角須取鄰補角。"]
+      },
+      "appendArray": { "reasoningSteps": ["確認37°小於90°、143°大於90°，且兩者相加為180°。"] }
+    },
+    {
+      "questionId": "u17-s002-cr002",
+      "expectedContentSha256": "e4477f8fc3a3d9ae0ed4d1b9018a6167c2d99f308a86a1464c27584a720cc7ff",
+      "set": {
+        "fullCreditSolution": ["要使p∥q，指定的同位角必須相等，因此列4x＋18＝7x－24。移項得3x＝42，故x＝14；代回兩式均為74°，介於0°與180°之間，角度合法且能判定p∥q。", "代回同時驗證相等、角度範圍與平行判定，三個檢查都不可省略。"],
+        "commonErrors": ["解出x＝14後未代回，因而沒有檢查兩角是否相等且是否落在合法角度範圍。"]
+      },
+      "appendArray": { "reasoningSteps": ["將x＝14同時代入兩個角式，檢查相等性與角度範圍後再下平行結論。"] }
+    },
+    {
+      "questionId": "u17-s003-cr001",
+      "expectedContentSha256": "021922602088d2312fd9c46f9abfb8cf8dfd4091987a79f2b87f828a7ae2e256",
+      "set": {
+        "fullCreditSolution": ["∠1與∠3互為對頂角，所以∠1＝∠3；又已知∠3＝∠2，依等量傳遞可得∠1＝∠2。最後確認∠1、∠2為同位角，依同位角相等的逆性質判兩被截直線平行。", "每一步都由已知或既有定理推出，沒有先使用尚待證明的平行結論。"],
+        "commonErrors": ["把待證的平行先當成已知，或從∠3＝∠2直接跳到平行而沒有建立同位角∠1＝∠2。"]
+      },
+      "appendArray": { "reasoningSteps": ["逐步標明每個等式的理由，且只在證得同位角相等後寫出平行結論。"] }
+    },
+    {
+      "questionId": "u17-s003-cr002",
+      "expectedContentSha256": "2582b51f550e3c09129ddef499031d579af509a7b96f1aa8f76b77503102c909",
+      "set": {
+        "fullCreditSolution": ["令兩個同側內角互補：(2x＋35)＋(4x＋25)＝180。整理得6x＋60＝180與x＝20；代回為75°及105°，兩角和180°，故依同側內角互補的逆性質判兩線平行。", "正式證明同時交代角型、互補計算及逆性質，因此結論有完整依據。"],
+        "commonErrors": ["把同側內角設為相等，或只算出兩角和180°卻沒有說明它們的位置與平行判定。"]
+      },
+      "appendArray": { "reasoningSteps": ["代回驗得75°＋105°＝180°，再完整引用同側內角的平行判定。"] }
+    },
+    {
+      "questionId": "u17-s004-cr001",
+      "expectedContentSha256": "4c579f295d4611bb10ddfff8e0e668068b450890febb9d637627b3404ad0ffec",
+      "set": {
+        "fullCreditSolution": ["平行四邊形相鄰內角互補，所以(3x＋6)＋(5x－2)＝180，得8x＋4＝180與x＝22。代回∠A＝72°、∠B＝108°；再由對角相等得∠C＝72°、∠D＝108°。", "四個內角依頂點順序交替為72°與108°，總和360°，所以結果一致。"],
+        "commonErrors": ["把A、B當成對角設成相等，或只求出A、B而漏寫由對角相等得到的C、D。"]
+      },
+      "appendArray": { "reasoningSteps": ["檢查四角總和72°＋108°＋72°＋108°＝360°，且兩組對角分別相等。"] }
+    },
+    {
+      "questionId": "u17-s004-cr002",
+      "expectedContentSha256": "5f6994480783cabd1b60531b49bf12b52f71a18b5c7db5c3a3bb909bb946d3ce",
+      "set": {
+        "fullCreditSolution": ["設短邊為x公分、長邊為x＋9公分。周長70公分表示一組鄰邊和為35公分，故x＋(x＋9)＝35；解得x＝13，兩種邊長為13與22公分。", "兩種邊各出現兩次，回代周長及邊長差都符合原題，故解答唯一。"],
+        "commonErrors": ["把70公分直接當成兩種邊長的和，忽略平行四邊形每種邊在周長中各出現兩次。"]
+      },
+      "appendArray": { "reasoningSteps": ["以2×(13＋22)＝70公分檢查周長，並核對22－13＝9公分。"] }
+    },
+    {
+      "questionId": "u17-s005-cr001",
+      "expectedContentSha256": "c0a570d5edd98326fc58aedeb5952e8daa3691b8ef9c9f607a59713c3caa1520",
+      "set": {
+        "fullCreditSolution": ["因a∥b，兩個內錯角相等，所以5x－7＝3x＋29，解得2x＝36與x＝18。代回兩式皆為83°；位置上兩角都在a、b之間，並分居截線兩側，因此確為內錯角。", "代數結果與內部、異側兩項位置定義相互配合，完整說明所用角型。"],
+        "commonErrors": ["只畫出Z形卻未說明內部與異側，或只求x＝18而沒有代回求83°角。"]
+      },
+      "appendArray": { "reasoningSteps": ["同時用『位於兩線內部』與『分居截線兩側』兩條件完成文字位置說明。"] }
+    },
+    {
+      "questionId": "u17-s005-cr002",
+      "expectedContentSha256": "b1cf24e34137647c0958b12afe819c6c929786851c6e59fb617a76b7b6ee4ef1",
+      "set": {
+        "fullCreditSolution": ["將x＝17代入4x＋6，得到4×17＋6＝74°，與另一個74°內錯角相等。即使題目未先給兩線平行，也可依內錯角相等的逆性質判定兩線平行。", "這裡使用的是判定方向，不是預先假設平行後才引用的性質方向。"],
+        "commonErrors": ["以為內錯角性質只能在已知平行時使用，因而忽略相等內錯角可反向判定平行。"]
+      },
+      "appendArray": { "reasoningSteps": ["先完成代入與角度相等檢查，再引用逆性質，而不是預設兩線已平行。"] }
+    },
+    {
+      "questionId": "u17-s006-cr001",
+      "expectedContentSha256": "950371c1a9ef899dad332ca24c5c9279ad00efd25233ace39aa84b6a8741d651",
+      "set": {
+        "fullCreditSolution": ["兩線平行使同位角相等，故6x－11＝4x＋25，整理得2x＝36與x＝18。代回兩式都為97°；同位角分屬不同交點，且相對截線與被截線占相同方位。", "方程求值、代回角度及位置特徵三部分均已完成，彼此沒有矛盾。"],
+        "commonErrors": ["把同位角說成同一交點的相對角，或只求x而未代回求兩角的97°。"]
+      },
+      "appendArray": { "reasoningSteps": ["核對97°＝97°，並用不同交點、相同方位兩要素說明角型。"] }
+    },
+    {
+      "questionId": "u17-s006-cr002",
+      "expectedContentSha256": "c308e80376da9191bf28991d920d498bcf02cddb14488cf57cbde666eeeb5f73",
+      "set": {
+        "fullCreditSolution": ["兩個89.7°讀值在題目中視為精確，且位置為同位角，所以兩角相等；依同位角相等的逆性質，兩板邊平行。『看起來平行』只是外觀，沒有可重複檢驗的角度條件，不能作證。"],
+        "commonErrors": ["因89.7°接近90°而改判垂直，或只以目測外觀代替同位角相等的量測證據。"]
+      },
+      "appendArray": { "reasoningSteps": ["驗收結論須同時列出精確讀值相等、同位角位置及所引用的逆性質。"] }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u17-s001-lecture-r1",
+      "expectedContentSha256": "a803a35075df74055ee849a23a0d2bf4f4e118b805fc09d2f67b49804ac3fe80",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "已知一個銳角為65°，求其對頂角。",
+            "solutionSteps": ["確認兩角位於同一交點的相對位置。", "套用對頂角相等。", "將已知65°對應到其對頂位置。"],
+            "answer": "對頂角為65°。",
+            "why": "對頂角位於同一交點的相對位置，兩邊分別是相反射線，所以兩角度數必相等；這條性質不需要先知道任何兩線平行。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "已知鄰補角之一為112°，求另一角。",
+            "solutionSteps": ["辨認兩角共用一邊且另兩邊成一直線。", "列式112°＋未知角＝180°。", "計算180°－112°＝68°並驗算角和。"],
+            "answer": "另一角為68°。",
+            "why": "鄰補角合成一直線，角度總和固定為180°；用180°減去112°可得68°，再相加驗回180°，可避免誤當成相等角，也確認兩角各自小於平角。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩平行線被截，某內錯角為47°，求另一個內錯角。",
+            "solutionSteps": ["確認題目已給兩線平行。", "辨認兩角位於兩線內部且分居截線兩側。", "依平行線內錯角相等得到47°。"],
+            "answer": "另一個內錯角為47°。",
+            "why": "兩角同在兩條平行線內部並分居截線兩側，位置符合內錯角；平行條件成立時兩角相等，因此不需取47°的鄰補角。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "兩平行線被截，同側內角之一為123°，求另一角。",
+            "solutionSteps": ["確認兩角位於平行線內部且在截線同側。", "列式123°＋未知角＝180°。", "計算未知角為57°並驗算。"],
+            "answer": "另一角為57°。",
+            "why": "平行線的同側內角互補而不是相等，所以用180°減去123°得到57°；123°與57°相加正好180°，符合位置條件，也排除直接沿用123°的錯法。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u17-s002-lecture-r1",
+      "expectedContentSha256": "317691b85f4b04c4d49796d8cb53e96a54865c6ea36ffcffb5b1d0e72c7d2d5a",
+      "appendArray": {
+        "conceptNarrative": ["判定時必須把角度關係與角的位置一起核對；只憑線條外觀、間距或大致方向，不能替代平行記號或可驗證的幾何條件。"]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "已知a∥b且b∥c，可得到a與c的何種關係？",
+            "solutionSteps": ["確認三線位於同一平面。", "記錄a、c都與共同直線b平行。", "套用平行關係的傳遞性。"],
+            "answer": "a∥c。",
+            "why": "同一平面內，a與c都和b保持相同方向且不相交，平行關係可以經由共同直線b傳遞；因此a與c也互相平行。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "兩線被同一截線所截，一對同位角皆為72°，可作何判定？",
+            "solutionSteps": ["確認兩角分屬不同交點的相同方位。", "比較度數得72°＝72°。", "引用同位角相等的逆性質。"],
+            "answer": "可判兩被截直線平行。",
+            "why": "角的位置已確定為同位角，讀值又精確相等，正好符合平行判定的逆性質；結論來自位置與角度，不是來自圖形外觀。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "一對同側內角為98°與82°，可作何判定？",
+            "solutionSteps": ["確認兩角在兩線內部且位於截線同側。", "計算98°＋82°＝180°。", "引用同側內角互補的逆性質。"],
+            "answer": "可判兩被截直線平行。",
+            "why": "98°與82°的位置是同側內角，且角和恰為180°，兩項條件同時成立；因此可用互補的逆性質判定兩被截直線平行。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "圖中兩線距離看似相同，能否據此判定平行？",
+            "solutionSteps": ["辨認『看似』只是目測描述。", "檢查題目未給平行記號或有效角關係。", "判定現有資訊不足。"],
+            "answer": "不能僅憑外觀判定平行。",
+            "why": "示意圖不一定按比例，局部間距看似相同也不是正式幾何條件；還需平行記號、共同垂直或特定截角關係才能作判定。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u17-s003-lecture-r1",
+      "expectedContentSha256": "de45226710dab7deaa9a0afc31c7ec70c4e7accdef7c2705ee79f012ead69f3a",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "已知一對同位角各為56°，證明兩被截直線平行。",
+            "solutionSteps": ["指出兩角為同位角。", "由讀值得兩角相等。", "依同位角相等的逆性質判平行。"],
+            "answer": "兩被截直線平行。",
+            "why": "證明同時具備角的位置與相等讀值，符合平行判定的完整前提；直接引用逆性質即可，不必先假設待證的兩直線已平行。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "內錯角為(3x＋5)°與(5x－35)°且相等，求x並判定兩線。",
+            "solutionSteps": ["列3x＋5＝5x－35。", "解得2x＝40與x＝20。", "代回兩角皆65°，依內錯角相等判平行。"],
+            "answer": "x＝20，兩被截直線平行。",
+            "why": "代數方程先證明兩個內錯角實際同為65°，再結合內錯位置使用逆性質；先計算後判定，可避免只由未知數相同就跳到平行。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "同側內角為(2x＋20)°與(4x＋10)°且互補，求x並判定兩線。",
+            "solutionSteps": ["列(2x＋20)＋(4x＋10)＝180。", "整理得6x＋30＝180與x＝25。", "代回70°與110°，依互補判平行。"],
+            "answer": "x＝25，兩被截直線平行。",
+            "why": "兩角代回後分別為70°與110°，總和180°且位置為同側內角；因此符合互補的逆性質，能完成正式平行判定，並驗證x＝25確實符合原式。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "只知兩個角相等，但未說明它們在截線圖中的位置，能否判定平行？",
+            "solutionSteps": ["記錄現有條件只有角度相等。", "檢查缺少同位角或內錯角等位置資料。", "判定資訊不足，不能推出平行。"],
+            "answer": "不能判定。",
+            "why": "任意兩個相等角可能互為對頂角或彼此無關，並不必然連結兩條被截直線；必須補充同位或內錯等有效位置才可套定理。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u17-s004-lecture-r1",
+      "expectedContentSha256": "6745571816a6f7f7ded0e8c689570429c5dfbe40e3b6111efa73751f24a8d757",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "平行四邊形ABCD中，∠A＝70°，求其餘三角。",
+            "solutionSteps": ["由對角相等得∠C＝70°。", "由鄰角互補算∠B＝110°。", "再由對角相等得∠D＝110°。"],
+            "answer": "∠B＝110°、∠C＝70°、∠D＝110°。",
+            "why": "平行四邊形的對角分別相等、鄰角互補；先依頂點位置區分對角與鄰角，再算70°的鄰補角，可避免把四角都寫成70°。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "平行四邊形相鄰邊AB＝8、BC＝5，求周長。",
+            "solutionSteps": ["由對邊等長得CD＝8、DA＝5。", "列四邊總和8＋5＋8＋5。", "計算周長為26。"],
+            "answer": "周長為26。",
+            "why": "平行四邊形兩組對邊分別等長，所以相鄰邊8與5都會在周長中各出現兩次；使用2×(8＋5)可完整計入四條邊。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "平行四邊形的兩條對角線交於O，可得到哪些線段相等？",
+            "solutionSteps": ["辨認O為兩條對角線的交點。", "使用平行四邊形對角線互相平分。", "分別寫出AO＝OC與BO＝OD。"],
+            "answer": "AO＝OC，BO＝OD。",
+            "why": "對角線互相平分表示每一條對角線都被交點O分成兩段等長部分；因此AC上的AO與OC相等，BD上的BO與OD相等，不能跨兩條對角線任意配對。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "一個四邊形只有一組對邊平行，能否判定為平行四邊形？",
+            "solutionSteps": ["回顧定義要求兩組對邊分別平行。", "比較已知只有一組對邊平行。", "判定條件不足，可能是梯形。"],
+            "answer": "不能判定為平行四邊形。",
+            "why": "平行四邊形的定義要求兩組對邊都分別平行；只給一組時仍可能形成梯形，所以不能把必要條件的一半誤當成充分條件。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u17-s005-lecture-r1",
+      "expectedContentSha256": "a981c24d1b69a2c6ca07e87132eaf1fce68bb6bc60f8011e6ba85e9acce2fc8d",
+      "appendArray": {
+        "conceptNarrative": ["讀圖時先找兩條被截直線之間的區域，再看兩角是否分居截線兩側；這比只背Z形更可靠，也能處理旋轉或傾斜的圖。"]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "a∥b，一個內錯角為38°，求另一個內錯角。",
+            "solutionSteps": ["確認兩角在兩線內部且分居截線兩側。", "確認a∥b。", "依內錯角相等得到38°。"],
+            "answer": "另一個內錯角為38°。",
+            "why": "角的位置符合內部且異側，並且兩被截線已知平行，所以可使用內錯角相等；38°不需改取鄰補角，另一角仍為38°。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "平行線的一對內錯角為(4x＋3)°與(6x－21)°，求x。",
+            "solutionSteps": ["由內錯角相等列4x＋3＝6x－21。", "移項得2x＝24。", "解得x＝12並代回兩角皆51°。"],
+            "answer": "x＝12。",
+            "why": "平行條件使這對內錯角相等，因此兩個代數式可設為相等；代回後兩角都為51°，同時驗證方程與角度位置。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩角分居截線兩側，但一角在兩線內部、另一角在外部，是否為內錯角？",
+            "solutionSteps": ["檢查兩角確實位於截線異側。", "再檢查其中一角不在兩線內部。", "因缺少『都在內部』而否定。"],
+            "answer": "不是內錯角。",
+            "why": "內錯角必須同時滿足兩角都在被截線之間以及分居截線兩側；本例只有異側條件成立，不能只靠Z形外觀命名。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "兩線是否平行未知，但一對內錯角相等，可作何判定？",
+            "solutionSteps": ["確認兩角確實位於內錯位置。", "記錄兩角度數相等。", "依內錯角相等的逆性質判平行。"],
+            "answer": "可判兩被截直線平行。",
+            "why": "內錯角相等不只是在已知平行時使用的性質，也能反向作為判定；位置與相等兩項都成立時，就足以推出兩線平行。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u17-s006-lecture-r1",
+      "expectedContentSha256": "df67bcd9f8a762e7885c3c1e5ae711dff4ffdaaf8febf5840e3c6248fb6101d4",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "a∥b，一個同位角為101°，求另一個同位角。",
+            "solutionSteps": ["確認兩角分屬不同交點的相同方位。", "確認a∥b。", "依同位角相等得到101°。"],
+            "answer": "另一個同位角為101°。",
+            "why": "兩個角在各交點占相同方位，且被截線互相平行，因此同位角相等；雖然101°是鈍角，也不影響相等性，更不需要改取其鄰補角79°。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "平行線的一對同位角為(7x－4)°與(5x＋20)°，求x。",
+            "solutionSteps": ["由同位角相等列7x－4＝5x＋20。", "整理得2x＝24。", "解得x＝12，代回兩角皆80°。"],
+            "answer": "x＝12。",
+            "why": "平行線讓相同方位的兩個同位角相等，所以可建立方程；把x＝12代回後兩式均為80°，可確認移項與計算無誤。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "同一交點的兩角能否稱為同位角？",
+            "solutionSteps": ["回顧同位角要比較兩個交點。", "確認題目兩角位於同一交點。", "排除同位角名稱，另判鄰角或對頂角。"],
+            "answer": "不能。",
+            "why": "同位角必須分屬截線與兩條被截線形成的兩個交點，再比較相同方位；同一交點的兩角只能另依位置判為鄰角或對頂角。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "兩線是否平行未知，但一對同位角相等，可作何判定？",
+            "solutionSteps": ["確認兩角位於不同交點的相同方位。", "記錄兩角度數相等。", "依同位角相等的逆性質判平行。"],
+            "answer": "可判兩被截直線平行。",
+            "why": "一對同位角的位置與相等條件都明確時，可以反向使用平行判定；不需要先假定兩線平行，也不能只靠線條看似同方向。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "弧長是長度，弧的度數是角度，兩者不能混為同一個量。",
     "弧 AB 的度數等於圓心角 ∠AOB 的度數。",
-    "圓周角的大小是它所對弧度數的一半；若題目給的是優弧，要先確認角所對的是哪一段弧。"
+    "圓周角的大小是它所對弧度數的一半；若題目給的是優弧，要先確認角所對的是哪一段弧。",
+    "判斷圓周角時，所對弧一定是不含角頂點的那一段；同端點雖有優弧與劣弧，必須先依頂點位置選對弧，再使用一半關係。"
   ],
   "formalDefinitions": [
     {
@@ -114,6 +115,11 @@
       "step": 4,
       "instruction": "圓心角取同度數，圓周角取一半。",
       "check": "完成此步後，確認仍在「弧與角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "把所得角乘回 2，並以優弧加劣弧等於 360° 反向驗算。",
+      "check": "所選弧是否不含圓周角頂點，兩段弧總和是否為整圓？"
     }
   ],
   "workedExamples": [
@@ -125,7 +131,8 @@
         "圓心角與弧同度數。"
       ],
       "answer": "100°。",
-      "level": "basic"
+      "level": "basic",
+      "why": "弧的度數依定義等於所對圓心角的度數；O 是圓心且 OA、OB 指向弧的兩端，所以弧 AB 為 100° 時，角 AOB 也恰為 100°。這裡不是圓周角，因此不需要再取一半。"
     },
     {
       "exampleId": "s002-L2",
@@ -135,7 +142,8 @@
         "140°÷2=70°。"
       ],
       "answer": "70°。",
-      "level": "standard"
+      "level": "standard",
+      "why": "C 位於另一段弧上，角 ACB 截得題給的 140° 弧 AB；圓周角為所對弧的一半，故 140° 除以 2 得 70°，而非直接照抄弧度數。再乘回 2 可驗得原弧 140°。"
     },
     {
       "exampleId": "s002-L3",
@@ -145,7 +153,8 @@
         "360°−80°=280°。"
       ],
       "answer": "280°。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "同端點的優弧與劣弧恰好合成 360° 整圓；已知劣弧 80°，從 360° 扣除後得到 280°，也符合優弧必大於 180° 的範圍。兩段弧端點相同並合成完整圓周。"
     },
     {
       "exampleId": "s002-L4",
@@ -155,7 +164,8 @@
         "55°×2=110°。"
       ],
       "answer": "110°。",
-      "level": "connection"
+      "level": "connection",
+      "why": "圓周角是所對弧的一半，反向由角求弧就必須乘 2；55° 乘 2 得 110°，代回 110° 除以 2 又回到原角，倍率方向一致，因此不能反過來再除以 2。"
     }
   ],
   "difficultyConnections": {
@@ -205,7 +215,7 @@
     {
       "figureId": "u19-s002-fig001",
       "purpose": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。",
-      "altText": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應。，不可按比例目測。"
+      "altText": "圓 O 中以粗弧標出劣弧 AB，圓周點 C 連到 A、B，顯示弧 AB 與角 ACB 的對應，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -240,5 +250,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "4977facc182fd66437eaa08e228409cea34d2fd54ecb50a63fa9e93db0e41a41"
+  "contentSha256": "08612831bbbc614c53288a9859ee11b8da07a3665c7a8adbc18c07b3ca7f7a44"
 }

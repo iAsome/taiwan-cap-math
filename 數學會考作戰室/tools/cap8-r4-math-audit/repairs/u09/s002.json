@@ -1,0 +1,27 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1","unitId":"u09","batch":"010-u09-complete","skills":["s002"],
+  "mc":[
+    {"questionId":"u09-s002-v001","expectedContentSha256":"b3bf5076e927bca84fba68b32ac7ef3772799cdd67ebf470854a75c51dd6118f","appendText":{"explanation":"蘋果列直接記錄八人，這就是該類別出現的次數；二十是三類合計，五與七則分別屬香蕉、芭樂，不能混作蘋果資料。","misconceptionTarget":"把全班三類合計當成蘋果單類次數，或沿錯列讀取其他水果。"},"appendArray":{"steps":["以三類次數相加為二十回查，確認蘋果八人只是其中一類。"]}},
+    {"questionId":"u09-s002-v002","expectedContentSha256":"af16d701254dd5d7ad4f2a71251abaf0d886c2ae04dc5f1ca1a681fa7b653879","appendText":{"explanation":"資料值一到四只是分數類別，真正代表人數的是次數二、五、四、一；四個次數相加為十二，才是表內全部觀測人數。","misconceptionTarget":"把分數值一二三四加入人數，或只取最高次數五當總人數。"}},
+    {"questionId":"u09-s002-v003","expectedContentSha256":"b84fcb6a558ae625a026ba2ff0074166d52d8b5833bac71528abe8b59e2a7471","appendText":{"explanation":"相對次數以全體二十人為分母、步行六人為分子，六除二十等於零點三，也就是百分之三十；十四只是未步行人數。","misconceptionTarget":"用剩餘十四人作分子，或把百分之三十錯寫成小數三。"},"appendArray":{"steps":["用零點三乘回二十得到六人，核對分子與原題一致。"]}},
+    {"questionId":"u09-s002-v004","expectedContentSha256":"2462f70550f6079c246c21035bd707ebcea22ae9cacff1c9129ac3053ba90660","appendText":{"explanation":"前三類九、十三、八合計三十，完整分配表四類總和必為四十，故缺類是十人；把十加回已知合計恰得總樣本數。","misconceptionTarget":"把前三類合計三十直接填入缺格，沒有由總數扣除已知次數。"}},
+    {"questionId":"u09-s002-v005","expectedContentSha256":"b430055086b93abc8a3f7b27a20f2a3a0ece00df03777c936ef7615d7058a45c","appendText":{"explanation":"零點二四表示全體的百分之二十四，五十人的百分之二十四為十二人；十二除五十也回到零點二四，數量與比例互相驗證。","misconceptionTarget":"把零點二四或二十四直接當人數，忘記乘上總樣本五十。"}},
+    {"questionId":"u09-s002-v006","expectedContentSha256":"a13a21d1b8987c8fa37afbb767aa0451e46a384aea0ee744d4d3513dbaccf75a","appendText":{"explanation":"四類已涵蓋全部資料，比例總和須為一；前三類零點一八、零點二七、零點三一合為零點七六，剩餘比例是一減零點七六等於零點二四。","misconceptionTarget":"把已知比例合計零點七六當成未知值，或忘記完整分配總和為一。"}},
+    {"questionId":"u09-s002-v007","expectedContentSha256":"570f33459a299823afe75d67300f6ad741cde3d4acad20de697b28de8269990e","appendText":{"explanation":"三分之七是資料值三的相對次數，乘總數十四得到次數六；另以五加六加三等於十四驗算，兩個條件同時成立。","misconceptionTarget":"把橫列資料值三誤當次數，或只用總和條件卻未核對相對次數。"}},
+    {"questionId":"u09-s002-v008","expectedContentSha256":"995a061392fdfe87e08dbe5e35db1562fa6b8328bf2858cb534ad58b08a74ef4","appendText":{"explanation":"兩班總人數不同，十二與十五不能直接比較；甲班十二除三十為零點四，乙班十五除四十五為三分之一，因此甲班比例較高。","misconceptionTarget":"看到乙班十五人大於甲班十二人，就忽略兩班分母不同而判乙較高。"}},
+    {"questionId":"u09-s002-v009","expectedContentSha256":"a979d33a123bba3d78f9f0a7a6e56c142b472a0351bb958428fb4d1f2e2d0d21","appendText":{"explanation":"精確比例零點一六、零點二八、零點三六、零點二零合為一；各自取到一位小數後誤差同向累積，顯示總和才成為一點一，原次數仍一致。","misconceptionTarget":"看到取位後總和超過一就斷定人數表錯誤，沒有回算精確比例。"}},
+    {"questionId":"u09-s002-v010","expectedContentSha256":"540ba8404b032545739c3b6e961c4a268c0c46d1102144823c869aef480d8162","appendText":{"explanation":"若外購只指早餐店，七十人除以兩百人為百分之三十五，明顯未超過百分之五十；人數七十不能直接解讀成百分之七十。","misconceptionTarget":"把七十人當成百分之七十，或把未吃早餐者錯併入外購人數。"}},
+    {"questionId":"u09-s002-v011","expectedContentSha256":"490155499ed360aed9c858e4b243fc58f65b40f3bc6edc88d239da49baf82d26","appendText":{"explanation":"紙類與塑膠合占零點六二五，金屬占剩餘零點三七五；三百二十乘八分之三得到一百二十公斤，三類重量合計仍為三百二十。","misconceptionTarget":"只相加兩個已知比例求重量，或把剩餘比例錯算成零點六二五。"}},
+    {"questionId":"u09-s002-v012","expectedContentSha256":"d184638c8e3b0c5ecb88625b7190a2a156c34577d93cb24ae2020362d87ef021","appendText":{"explanation":"限定語「回覆者中」把母群縮成一百二十五份有效回覆，其中七十五份支持，故支持率為六成；五百份寄出量只適合計算回覆率。","misconceptionTarget":"一律拿寄出五百份作分母，混淆支持率的母群與整體回覆率。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u09-s002-cr001","expectedContentSha256":"aacd34a6922db5b7251ede705cbda83c711322d9131af7e1cc369bfd7999265d","appendArray":{"standardSolution":["以前兩組與後兩組分別核對：六加九加十加五等於三十，各相對次數合為百分之百；至少四十分鐘的十五人正好占三十人的一半。"]},"set":{"commonErrors":["把組別端點二十、四十、六十當次數加入分母，沒有固定總樣本三十人。","把「至少四十分鐘」只算四十至未滿六十分鐘一組，漏掉六十分鐘以上五人。"]}},
+    {"questionId":"u09-s002-cr002","expectedContentSha256":"2c192b886ee47d8477941355dbcba85406ad021edaf1b4b91d71e842e2fb63dc","appendArray":{"standardSolution":["新比例約為百分之二十六點三、三十一點六、三十一點六、十點五，四類因四捨五入約合百分之百；共同分母改變正是其餘三類也必須重算的原因。"]},"set":{"commonErrors":["只把 B 類二十八減四，卻仍以原分母八十計算所有相對次數。","將四份無效問卷平均分散到各類，沒有使用題目明示它們全部來自 B 類。"]}}
+  ],
+  "lectures":[{"lectureId":"u09-s002-lecture-r1","expectedContentSha256":"8fb96f678d700cb39a71bc749984667e08679b7f692733d57bfe82057077bca1","set":{"workedExamples":[
+    {"id":"L1","prompt":"40 人中 10 人選甲類。","solution":["相對次數＝10÷40＝0.25。"],"answer":"0.25＝25%。","why":"相對次數描述某類占全體的比例，因此分子取甲類十人、分母取全體四十人。十除四十為四分之一，也就是零點二五或百分之二十五；三種寫法代表同一比例。"},
+    {"id":"L2","prompt":"總數 50，某類相對次數 0.24。","solution":["50×0.24＝12。"],"answer":"12 人。","why":"相對次數零點二四表示全體五十人的百分之二十四，反推次數要用總數乘比例。所得十二人是整數，且十二除五十回到零點二四，能同時檢查運算方向與結果。"},
+    {"id":"L3","prompt":"精確比例逐項取一位小數後總和 1.1。","solution":["先回算精確分數。","逐項取位的誤差可能累積。"],"answer":"不一定是原資料錯誤。","why":"每類比例各自四捨五入時，數個向上取位的誤差會相加，使顯示值總和偏離一。應回到原次數與共同總數計算精確比例；若精確值合為一，便不能因顯示總和一點一就判資料錯誤。"}
+  ]},"appendArray":{"conceptDevelopment":["次數是某類別實際出現的筆數，相對次數則以該類次數除以共同總數；兩者互換時，必須先確認分子所屬類別與分母代表的完整母群。完整分配的次數合計等於總數、精確相對次數合計等於一，但逐項四捨五入後顯示值可能略有偏差。若刪除無效資料使分母改變，即使其他類次數不變，所有類別比例仍須重新計算。"]}}],
+  "drawingSpecs":[],"textFiles":[]
+}

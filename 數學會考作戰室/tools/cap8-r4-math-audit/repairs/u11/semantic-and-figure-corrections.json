@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u11",
+  "batch": "012-u11-complete",
+  "skills": ["s003", "s004", "s012", "s014"],
+  "mc": [
+    {
+      "questionId": "u11-s003-v004",
+      "expectedContentSha256": "f73531669e2a7eecc972df169d4a62cf131ff3b720f0868d08b27357c2bc7060",
+      "set": {
+        "choices": ["√30", "12", "6√2", "24"],
+        "optionAnalysis": [
+          { "choice": "√30", "truth": false, "reason": "把根式相乘誤做被開方數相加，實際應算6×24。" },
+          { "choice": "12", "truth": true, "reason": "√6×√24=√(6×24)=√144=12，且算術平方根取非負值。" },
+          { "choice": "6√2", "truth": false, "reason": "6√2的平方為72，不等於√6×√24所得結果的平方144。" },
+          { "choice": "24", "truth": false, "reason": "把√6當成6又漏掉另一個平方根的影響。" }
+        ]
+      },
+      "reviewSet": {
+        "difficultyReason": "需使用√a×√b=√(ab)並將√144化為12；選項要求學生排除把被開方數相加或化簡不完整的錯誤。",
+        "ambiguityChecks": {
+          "givenConditions": "題幹明示被開方數均非負，因此可用根式乘法性質並取算術平方根。",
+          "target": "所求是根式乘積的精確值，四個選項均為可直接比較的實數表示，作答目標清楚。",
+          "choices": "逐項平方或化簡後，只有12等於√144；6√2、√30與24均不等值。",
+          "scope": "只使用國中會考的算術平方根與根式乘法，不引用後續實數指數或高中根式技巧。",
+          "units": "本題為純數值運算，不涉及單位或近似值，所有選項皆為同一無單位精確值。"
+        },
+        "reviewerNote": "不參照選項，從題幹條件重新計算：被開方數相乘 6×24=144，再取非負平方根 12。 詳算檢查：√6×√24=√144=12。 因此結果為「12」。審查補充：由被開方數非負，可得√6×√24=√144=12。逐項核對：√30是誤把被開方數相加；6√2平方後為72；24也不符合平方為144的非負結果。因此只有12正確，沒有等值第二答案。"
+      }
+    },
+    {
+      "questionId": "u11-s004-v007",
+      "expectedContentSha256": "06dc916b3be4ae2b230e27101683f54c376605c55249c3defaaa8ff604b50dd5",
+      "set": {
+        "independentSolution": "四捨五入到小數第一位得5.7，表示5.65≤√m<5.75。全部為正數，平方得31.9225≤m<33.0625，整數m可能為32或33。四個選項中只有32在此區間。",
+        "explanation": "先把『√m取到小數第一位是5.7』改寫成5.65≤√m<5.75。由於各數皆非負，兩邊平方得31.9225≤m<33.0625，所以整數m可為32或33；選項中只有32出現。逐一核對其餘選項的平方根取位結果，也不會產生第二個正確選項。",
+        "steps": ["由四捨五入條件列5.65≤√m<5.75。", "對非負區間平方，得31.9225≤m<33.0625。", "找出區間內整數為32、33，再對照選項，只有32。"],
+        "optionAnalysis": [
+          { "choice": "32", "truth": true, "reason": "32在31.9225≤m<33.0625內，所以√32取到小數第一位為5.7。" },
+          { "choice": "31", "truth": false, "reason": "√31約5.57，取到小數第一位為5.6。" },
+          { "choice": "34", "truth": false, "reason": "√34約5.83，取到小數第一位為5.8。" },
+          { "choice": "35", "truth": false, "reason": "√35約5.92，取到小數第一位為5.9。" }
+        ],
+        "ambiguityAndBoundaryAudit": "整數m在數學上可為32或33，但題目問『下列哪個』，四個互異選項中只列出32，故單選答案唯一。",
+        "difficultyReason": "需從四捨五入結果反推平方根區間，平方後再從選項判斷可能的整數m。"
+      },
+      "reviewSet": {
+        "independentSolution": "四捨五入到小數第一位得5.7，表示5.65≤√m<5.75。全部為正數，平方得31.9225≤m<33.0625，整數m可能為32或33。四個選項中只有32在此區間。",
+        "difficultyReason": "需從四捨五入結果反推區間，再根據整數與選項限制判斷。",
+        "ambiguityChecks": {
+          "givenConditions": "題幹明示m為整數，且√m四捨五入到小數第一位為5.7，已完整限定判斷條件。",
+          "target": "題目問四個選項中哪一個m可能，不要求列出所有可能整數，作答範圍明確。",
+          "choices": "區間內整數為32、33，但四個選項中只有32；31、34、35均不在區間內。",
+          "scope": "只使用國中平方根、不等式區間與四捨五入，不使用高中函數或誤差理論。",
+          "units": "m是無單位整數，題幹指定取到小數第一位，且沒有實物單位換算。"
+        },
+        "reviewerNote": "四捨五入到小數第一位得5.7，表示5.65≤√m<5.75。全部為正數，平方得31.9225≤m<33.0625，整數m可能為32或33。四個選項中只有32在此區間。審查補充：題目問四個選項中何者可能；選項只列出32而沒有33，其餘31、34、35均不合，故唯一選擇32；31不在下界內，34與35都超過上界。"
+      }
+    },
+    {
+      "questionId": "u11-s012-v007",
+      "expectedContentSha256": "dc25cacfec1bb00b020981122db28ece52ca2731cb23cb08862107f2fd768a69",
+      "set": {
+        "choices": ["4", "2√5", "√10", "8"],
+        "optionAnalysis": [
+          { "choice": "4", "truth": true, "reason": "(2√13)²−6²=52−36=16，另一股為√16=4。" },
+          { "choice": "2√5", "truth": false, "reason": "2√5的平方為20，不等於勾股定理所得的平方差16。" },
+          { "choice": "√10", "truth": false, "reason": "漏算根式外係數2的平方，才會得到錯誤的被開方數。" },
+          { "choice": "8", "truth": false, "reason": "將平方差16開根時計算錯誤，√16應為4。" }
+        ]
+      },
+      "reviewSet": {
+        "difficultyReason": "需正確將含係數根式平方，再用勾股定理求股長並排除三個不等值干擾項。",
+        "ambiguityChecks": {
+          "givenConditions": "題幹明示2√13為斜邊、6為一股，斜邊大於已知股，可合法使用勾股定理。",
+          "target": "所求是三角形的正股長，所以取平方根的非負值，不取負根也不求面積。",
+          "choices": "逐項平方後，只有4的平方為16；2√5、√10與8均不合，而且彼此不等值。",
+          "scope": "只使用勾股定理、根式平方與算術平方根，不引用三角比或座標公式。",
+          "units": "題目未指定實物單位，四個選項均表示同一長度，不需換算或取近似。"
+        },
+        "reviewerNote": "不參照選項，從題幹條件重新計算：(2√13)²=52。 詳算檢查：斜邊平方52，減36得16，另一股4。 因此結果為「4」。審查補充：將斜邊平方得(2√13)²=52，再減已知股平方36，另一股的平方為16，故股長為4。其餘選項平方分別為20、10、64，都不是16，所以只有4正確；亦已核對三角形邊長為正且斜邊最大。"
+      }
+    },
+    {
+      "questionId": "u11-s012-v008",
+      "expectedContentSha256": "1879a1f7bab1bff6b1e45653ed2ac6a5c7499135bd955461b9a5bcb93bf8e65a",
+      "set": {
+        "choices": ["9", "√400", "21", "49"],
+        "optionAnalysis": [
+          { "choice": "9", "truth": false, "reason": "只做29−20得到9，沒有使用斜邊與兩股的平方關係。" },
+          { "choice": "√400", "truth": false, "reason": "√400=20，這是已知股長，不是由841−400=441所得的未知股。" },
+          { "choice": "21", "truth": true, "reason": "29²−20²=(29−20)(29+20)=9×49=441，開根得未知股長21。" },
+          { "choice": "49", "truth": false, "reason": "將29+20=49直接當成股長，沒有使用勾股定理。" }
+        ]
+      },
+      "reviewSet": {
+        "difficultyReason": "可使用平方差結構高效計算29²−20²，再開根得未知股；干擾項均為不等值的具體錯法。",
+        "ambiguityChecks": {
+          "givenConditions": "題幹指定29為斜邊、20為一股，三角形為直角三角形，斜邊身分明確。",
+          "target": "所求是另一股的正長度，因此由平方差開根後取正值，不取負根也不求面積。",
+          "choices": "未知股平方為441，只有21的平方是441；√400=20，不是等值第二答案。",
+          "scope": "只使用勾股定理、平方差與算術平方根，不引用三角比或座標公式。",
+          "units": "四個選項皆表示同一股長，題目不涉及單位換算或近似，也無跨單位比較。"
+        },
+        "reviewerNote": "不參照選項，從題幹條件重新計算：用平方差公式可避免大數平方。 詳算檢查：29²-20²=(29-20)(29+20)=9×49=441，開根得21。 因此結果為「21」。審查補充：由勾股定理，未知股的平方=29²−20²=(29−20)(29+20)=9×49=441，故股長為√441=21。√400實際等於20，其餘9與49也均不符合，因此只有21正確。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u11-s004-numberline-estimate",
+      "expectedContentSha256": "07420b47fa64e6fb94bc1c044820427a8781d6b3a5e937cda45bddaed860d490",
+      "replaceText": {
+        "數線標出8.3、8.4、8.5，√70的位置落在8.3與8.4之間且較接近8.4。": "數線標出8與9，並注明8²=64、9²=81；圖中不標出√70的位置或四捨五入結果。",
+        "縮放至320像素寬時，主要標籤、直角符號與線段仍可辨識。": "縮放至320像素寬時，數線、8與9的刻度及平方值標籤仍可辨識。",
+        "圖中只呈現題目已知條件與一般公式，不標示該題的數值答案。": "圖中只呈現8²=64與9²=81的估算邊界，不標出√70位置、近似值或四捨五入答案。",
+        "已逐一核對 fig-u11-s004-numberline-estimate 的座標、標籤位置、線段交點與320像素縮圖；圖形不按比例，且不會以視覺長短洩漏答案。": "已逐一核對數線邊界、8與9的平方值標籤、線段位置與320像素縮圖；人工確認圖中不呈現√70的精確位置、近似值或四捨五入答案，也不依比例暗示答案。"
+      },
+      "set": {
+        "svgTitle": "平方根估算邊界數線",
+        "svgAssertions": ["8²=64", "9²=81", "介於 8 與 9 之間"]
+      }
+    },
+    {
+      "figureId": "fig-u11-s014-triangle-check",
+      "expectedContentSha256": "12d9633d30f7a9ef5f15368e7634655e2bbfae4e550f8c441fcad6f243ddfe46",
+      "replaceText": {
+        "三邊判定直角": "三邊長度條件圖",
+        "Right-angle symbols or axis arrows are explicitly drawn where relevant": "No right-angle symbol is drawn; students must decide from the labeled side lengths",
+        "三角形三邊標30、40、50，最長邊為50，左下角畫直角，並標示平方關係。": "一個不按比例繪製的三角形，三邊分別標示30、40、50；圖中沒有直角記號或平方關係。",
+        "縮放至320像素寬時，主要標籤、直角符號與線段仍可辨識。": "縮放至320像素寬時，三邊與30、40、50標籤仍可辨識。",
+        "圖中只呈現題目已知條件與一般公式，不標示該題的數值答案。": "圖中只呈現題幹已知的三邊長30、40、50，不畫直角記號、不寫勾股算式，也不以比例外觀暗示答案。",
+        "已逐一核對 fig-u11-s014-triangle-check 的座標、標籤位置、線段交點與320像素縮圖；圖形不按比例，且不會以視覺長短洩漏答案。": "已逐一核對三邊標籤、線段位置與320像素縮圖；人工確認圖中沒有直角記號、勾股算式或按比例外觀洩漏答案，且30、40、50均位於對應邊旁並清晰可讀。"
+      },
+      "set": {
+        "svgAssertions": [">30<", ">40<", ">50<", "圖形未按比例"]
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u11/fig-u11-s004-numberline-estimate.svg",
+      "replacements": [
+        {
+          "from": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"220\" viewBox=\"0 0 520 220\" role=\"img\" aria-labelledby=\"fig-u11-s004-numberline-estimate-title fig-u11-s004-numberline-estimate-desc\"><title id=\"fig-u11-s004-numberline-estimate-title\">平方根估算數線</title><desc id=\"fig-u11-s004-numberline-estimate-desc\">數線標出8.3、8.4、8.5，√70的位置落在8.3與8.4之間且較接近8.4。</desc><rect width=\"100%\" height=\"100%\" fill=\"white\"/><line x1=\"50\" y1=\"110\" x2=\"470\" y2=\"110\" stroke=\"#111\" stroke-width=\"4\"/><line x1=\"130\" y1=\"90\" x2=\"130\" y2=\"130\" stroke=\"#111\" stroke-width=\"3\"/><line x1=\"290\" y1=\"90\" x2=\"290\" y2=\"130\" stroke=\"#111\" stroke-width=\"3\"/><line x1=\"450\" y1=\"90\" x2=\"450\" y2=\"130\" stroke=\"#111\" stroke-width=\"3\"/><text x=\"130\" y=\"160\" text-anchor=\"middle\" font-size=\"20\">8.3</text><text x=\"290\" y=\"160\" text-anchor=\"middle\" font-size=\"20\">8.4</text><text x=\"450\" y=\"160\" text-anchor=\"middle\" font-size=\"20\">8.5</text><circle cx=\"237\" cy=\"110\" r=\"8\" fill=\"#222\"/><text x=\"237\" y=\"70\" text-anchor=\"middle\" font-size=\"19\">√70 約在此</text></svg>",
+          "to": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"520\" height=\"220\" viewBox=\"0 0 520 220\" role=\"img\" aria-labelledby=\"fig-u11-s004-numberline-estimate-title fig-u11-s004-numberline-estimate-desc\"><title id=\"fig-u11-s004-numberline-estimate-title\">平方根估算邊界數線</title><desc id=\"fig-u11-s004-numberline-estimate-desc\">數線標出8與9，並注明8²=64、9²=81；圖中不標出√70的位置或四捨五入結果。</desc><rect width=\"100%\" height=\"100%\" fill=\"white\"/><line x1=\"70\" y1=\"110\" x2=\"450\" y2=\"110\" stroke=\"#111\" stroke-width=\"4\"/><line x1=\"110\" y1=\"90\" x2=\"110\" y2=\"130\" stroke=\"#111\" stroke-width=\"3\"/><line x1=\"410\" y1=\"90\" x2=\"410\" y2=\"130\" stroke=\"#111\" stroke-width=\"3\"/><text x=\"110\" y=\"160\" text-anchor=\"middle\" font-size=\"20\">8，8²=64</text><text x=\"410\" y=\"160\" text-anchor=\"middle\" font-size=\"20\">9，9²=81</text><text x=\"260\" y=\"70\" text-anchor=\"middle\" font-size=\"19\">√70 介於 8 與 9 之間</text></svg>"
+        }
+      ]
+    },
+    {
+      "path": "figures/u11/fig-u11-s014-triangle-check.svg",
+      "replacements": [
+        {
+          "from": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"500\" height=\"330\" viewBox=\"0 0 500 330\" role=\"img\" aria-labelledby=\"fig-u11-s014-triangle-check-title fig-u11-s014-triangle-check-desc\"><title id=\"fig-u11-s014-triangle-check-title\">三邊判定直角</title><desc id=\"fig-u11-s014-triangle-check-desc\">三角形三邊標30、40、50，最長邊為50，左下角畫直角，並標示平方關係。</desc><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M70 270 L70 90 L430 270 Z\" fill=\"white\" stroke=\"#111\" stroke-width=\"4\"/><text x=\"45\" y=\"190\" text-anchor=\"middle\" font-size=\"21\">30</text><text x=\"250\" y=\"300\" text-anchor=\"middle\" font-size=\"21\">40</text><text x=\"265\" y=\"165\" text-anchor=\"middle\" font-size=\"21\" transform=\"rotate(27 265 165)\">50</text><path d=\"M70 240 L100 240 L100 270\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><text x=\"250\" y=\"55\" text-anchor=\"middle\" font-size=\"20\">30²+40²=50²</text></svg>",
+          "to": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"500\" height=\"330\" viewBox=\"0 0 500 330\" role=\"img\" aria-labelledby=\"fig-u11-s014-triangle-check-title fig-u11-s014-triangle-check-desc\"><title id=\"fig-u11-s014-triangle-check-title\">三邊長度條件圖</title><desc id=\"fig-u11-s014-triangle-check-desc\">一個不按比例繪製的三角形，三邊分別標示30、40、50；圖中沒有直角記號或平方關係。</desc><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M70 270 L165 80 L430 270 Z\" fill=\"white\" stroke=\"#111\" stroke-width=\"4\"/><text x=\"92\" y=\"170\" text-anchor=\"middle\" font-size=\"21\">30</text><text x=\"250\" y=\"300\" text-anchor=\"middle\" font-size=\"21\">40</text><text x=\"305\" y=\"160\" text-anchor=\"middle\" font-size=\"21\">50</text><text x=\"250\" y=\"45\" text-anchor=\"middle\" font-size=\"20\">圖形未按比例</text></svg>"
+        }
+      ]
+    },
+    {
+      "path": "review/figure-reviews.jsonl",
+      "replacements": [
+        {
+          "from": "{\"figureId\":\"fig-u11-s004-numberline-estimate\",\"svgPath\":\"figures/u11/fig-u11-s004-numberline-estimate.svg\",\"decision\":\"pass\",\"reviewedAt\":\"2026-07-12\",\"manualRenderRequired\":true,\"reviewNote\":\"已逐一核對 fig-u11-s004-numberline-estimate 的座標、標籤位置、線段交點與320像素縮圖；圖形不按比例，且不會以視覺長短洩漏答案。\",\"mobileReadability\":{\"reviewedAtWidthPx\":320,\"minimumFontPx\":18,\"decision\":\"pass\",\"note\":\"縮放至320像素寬時，主要標籤、直角符號與線段仍可辨識。\"},\"answerLeakageReview\":{\"decision\":\"pass\",\"note\":\"圖中只呈現題目已知條件與一般公式，不標示該題的數值答案。\"}}",
+          "to": "{\"figureId\":\"fig-u11-s004-numberline-estimate\",\"svgPath\":\"figures/u11/fig-u11-s004-numberline-estimate.svg\",\"decision\":\"pass\",\"reviewedAt\":\"2026-07-12\",\"manualRenderRequired\":true,\"reviewNote\":\"已逐一核對數線邊界、8與9的平方值標籤、線段位置與320像素縮圖；人工確認圖中不呈現√70的精確位置、近似值或四捨五入答案，也不依比例暗示答案。\",\"mobileReadability\":{\"reviewedAtWidthPx\":320,\"minimumFontPx\":18,\"decision\":\"pass\",\"note\":\"縮放至320像素寬時，數線、8與9的刻度及平方值標籤仍可辨識。\"},\"answerLeakageReview\":{\"decision\":\"pass\",\"note\":\"圖中只呈現8²=64與9²=81的估算邊界，不標出√70位置、近似值或四捨五入答案。\"}}"
+        },
+        {
+          "from": "{\"figureId\":\"fig-u11-s014-triangle-check\",\"svgPath\":\"figures/u11/fig-u11-s014-triangle-check.svg\",\"decision\":\"pass\",\"reviewedAt\":\"2026-07-12\",\"manualRenderRequired\":true,\"reviewNote\":\"已逐一核對 fig-u11-s014-triangle-check 的座標、標籤位置、線段交點與320像素縮圖；圖形不按比例，且不會以視覺長短洩漏答案。\",\"mobileReadability\":{\"reviewedAtWidthPx\":320,\"minimumFontPx\":18,\"decision\":\"pass\",\"note\":\"縮放至320像素寬時，主要標籤、直角符號與線段仍可辨識。\"},\"answerLeakageReview\":{\"decision\":\"pass\",\"note\":\"圖中只呈現題目已知條件與一般公式，不標示該題的數值答案。\"}}",
+          "to": "{\"figureId\":\"fig-u11-s014-triangle-check\",\"svgPath\":\"figures/u11/fig-u11-s014-triangle-check.svg\",\"decision\":\"pass\",\"reviewedAt\":\"2026-07-12\",\"manualRenderRequired\":true,\"reviewNote\":\"已逐一核對三邊標籤、線段位置與320像素縮圖；人工確認圖中沒有直角記號、勾股算式或按比例外觀洩漏答案，且30、40、50均位於對應邊旁並清晰可讀。\",\"mobileReadability\":{\"reviewedAtWidthPx\":320,\"minimumFontPx\":18,\"decision\":\"pass\",\"note\":\"縮放至320像素寬時，三邊與30、40、50標籤仍可辨識。\"},\"answerLeakageReview\":{\"decision\":\"pass\",\"note\":\"圖中只呈現題幹已知的三邊長30、40、50，不畫直角記號、不寫勾股算式，也不以比例外觀暗示答案。\"}}"
+        }
+      ]
+    }
+  ]
+}

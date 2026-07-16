@@ -61,7 +61,8 @@ export default {
       "柱高要依縱軸刻度換算；6 格不一定是 6，若每格 5 就是 30。",
       "分組長條圖要先讀圖例，再在同一類別內比較。",
       "縱軸不從 0 開始時，視覺差異會被放大，實際比較仍以刻度數值為準。",
-      "若類別背後總人口不同，總數柱高未必能代表個人資源或風險。"
+      "若類別背後總人口不同，總數柱高未必能代表個人資源或風險。",
+      "判讀長條圖要把橫軸類別、縱軸單位、刻度間距與柱頂高度一起閱讀；柱寬、顏色或排列位置若未被定義，就不能當成資料。比較多組資料時，先依圖例配對再計算合計、差距或比例。遇到截斷縱軸，必須使用刻度上的完整數值而非可見柱長倍數；遇到不同母體規模，則應換算成每人、每萬人等共同基準後再作公平比較。"
     ],
     "definitions": [
       {
@@ -126,18 +127,20 @@ export default {
         "id": "L1",
         "prompt": "柱高 6 格，每格 5 件。",
         "solution": [
-          "6×5=30。"
+          "6×5＝30。"
         ],
-        "answer": "30 件。"
+        "answer": "30 件。",
+        "why": "柱高的六格是圖面距離，不等於資料件數；縱軸明示每格代表五件，所以必須把格數乘上刻度單位。三十件再除以每格五件回到六格，能核對讀圖與換算。"
       },
       {
         "id": "L2",
         "prompt": "軸從 50 起，兩值 54、58。",
         "solution": [
-          "實際差 58-54=4。",
+          "實際差 58－54＝4。",
           "可見柱段 4 與 8 不代表資料倍數。"
         ],
-        "answer": "差 4。"
+        "answer": "差 4。",
+        "why": "截斷軸把五十以下共同部分隱去，使可見柱長四與八呈二比一，但完整數值五十四、五十八只差四。比較資料必須讀刻度標示，不能以截斷後的圖形長度推論倍數。"
       },
       {
         "id": "L3",
@@ -146,7 +149,8 @@ export default {
           "A 每萬人 2 座。",
           "B 每萬人 1 座。"
         ],
-        "answer": "以每萬人比較時 A 較高。"
+        "answer": "以每萬人比較時 A 較高。",
+        "why": "兩區人口規模差三倍，直接比較公園總數會把規模效應誤當服務程度。用公園數除以萬人口後，A 為二、B 為一，才是在相同分母下比較居民可享的公共資源。"
       }
     ],
     "commonMistakes": [
@@ -227,7 +231,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "342461cfd60e785f488fbe419d5e292f1755989060e670f30c4a0bc6eab4b1dd"
+    "contentSha256": "e73d2712b41efdcc61133c40a9e68afaf06a9903fa5b703efb9fb0f5fb937fb7"
   },
   "mcQuestions": [
     {
@@ -255,7 +259,7 @@ export default {
         "derivedAnswer": "籃球社",
         "trustStoredAnswer": false
       },
-      "explanation": "長條圖的類別由橫軸標籤辨認，高度由縱軸刻度讀取。",
+      "explanation": "長條圖的類別由橫軸標籤辨認，高度由縱軸刻度讀取。 四柱實值十八、十二、十五、九中，十八最大且橫軸標籤為籃球社；柱寬與由左到右的位置沒有代表人數大小。",
       "steps": [
         "確認橫軸類別。",
         "讀取各柱高度。",
@@ -283,7 +287,7 @@ export default {
           "reason": "科學社 9 人最少。"
         }
       ],
-      "misconceptionTarget": "只看柱寬或排列位置",
+      "misconceptionTarget": "只看柱寬或排列位置 把最寬或最靠前的柱當最高，沒有依縱軸高度對回社團標籤。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -301,7 +305,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b6f690f434e604b77988cd50e9ed9f04a2467c1c36e9a2aaf70cb55edeff599d"
+      "contentSha256": "a8baeffd10d47252589ae2f880f565377ad34130bb42a1dcac791dad79a8580b"
     },
     {
       "questionId": "u09-s003-v002",
@@ -328,7 +332,7 @@ export default {
         "derivedAnswer": "30 件",
         "trustStoredAnswer": false
       },
-      "explanation": "讀長條圖不能忽略縱軸每格代表的數量。",
+      "explanation": "讀長條圖不能忽略縱軸每格代表的數量。 六格只是圖上高度，縱軸規定每格五件，所以資料值為六乘五等於三十件；若直接答六件，就漏用了刻度倍率。",
       "steps": [
         "讀出每格 5 件。",
         "數出柱高 6 格。",
@@ -356,7 +360,7 @@ export default {
           "reason": "6×5=30。"
         }
       ],
-      "misconceptionTarget": "把格數直接當資料值",
+      "misconceptionTarget": "把格數直接當資料值 把柱子跨越的六格直接當六件，沒有乘上每格代表的五件。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -374,7 +378,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a5d60631008d1a382126580d4c7798ba11021d4ad1d280e25baa5fea669b1019"
+      "contentSha256": "5f056b32fed0d76eeb73f3a89794482f6568e4ef144612dd482b20abb1b1b8cf"
     },
     {
       "questionId": "u09-s003-v003",
@@ -401,7 +405,7 @@ export default {
         "derivedAnswer": "7 人",
         "trustStoredAnswer": false
       },
-      "explanation": "『多多少』求兩柱高度差。",
+      "explanation": "『多多少』求兩柱高度差。 「甲比乙多多少」問的是兩柱差距，以二十四減十七得到七人；四十一是合計，十七是乙本身，八則不是正確差值。",
       "steps": [
         "讀兩柱數值。",
         "大數減小數。",
@@ -429,7 +433,7 @@ export default {
           "reason": "減法計算錯一。"
         }
       ],
-      "misconceptionTarget": "把比較誤算為總和",
+      "misconceptionTarget": "把比較誤算為總和 將比較差距誤算成兩柱總和，或直接抄較小的乙柱數值。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -447,7 +451,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f6675be3611d0daf4775a88e4ce33d76c9301f06d4b968b315278d3126b1bee1"
+      "contentSha256": "7cb1acb50fed4e045d4bfebd89879721ec9e454c5d8726a2671b0d0aab44f728"
     },
     {
       "questionId": "u09-s003-v004",
@@ -474,7 +478,7 @@ export default {
         "derivedAnswer": "80/140=4/7",
         "trustStoredAnswer": false
       },
-      "explanation": "要先由多根長條求部分與全部，再形成比例。",
+      "explanation": "要先由多根長條求部分與全部，再形成比例。 週三與週四合計八十是部分量，四天合計一百四十是全體量，所占比例為八十除一百四十約成七分之四；分母不能只取後兩天。",
       "steps": [
         "加總指定兩天得 80。",
         "加總全部得 140。",
@@ -502,7 +506,7 @@ export default {
           "reason": "只取週三，漏週四。"
         }
       ],
-      "misconceptionTarget": "分母只取部分資料",
+      "misconceptionTarget": "分母只取部分資料 把部分八十當分母，或漏加週一、週二而錯估四天總數。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -520,7 +524,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f171d547fe2bed24e126dbb688de77b67f8240ff1db6dc417f036b98a0681d4b"
+      "contentSha256": "001916a0fc137a08e5c210de8161493e0bac084f8c77025677ff73cdaba7d52d"
     },
     {
       "questionId": "u09-s003-v005",
@@ -547,7 +551,7 @@ export default {
         "derivedAnswer": "乙實際只比甲多 4，不是看起來的兩倍",
         "trustStoredAnswer": false
       },
-      "explanation": "判讀長條圖要看刻度數字，不可只看可見柱段長度。",
+      "explanation": "判讀長條圖要看刻度數字，不可只看可見柱段長度。 截斷軸使可見高度分別為四與八，看似二倍，但完整資料是五十四與五十八，只相差四；實際倍數也遠小於二。",
       "steps": [
         "確認縱軸起點 50。",
         "讀出兩實值。",
@@ -575,7 +579,7 @@ export default {
           "reason": "截斷軸正會影響視覺印象。"
         }
       ],
-      "misconceptionTarget": "把可見柱長比當資料比",
+      "misconceptionTarget": "把可見柱長比當資料比 用截斷基線以上的可見柱長比，取代刻度標示的完整資料值比。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -593,7 +597,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "32c7d7261013b890b6daa6cb62b2e32044e564a34bd9fd33f17417e9b6d0f4f8"
+      "contentSha256": "21db061d9e8facde07b3f3fb2443b9926f4eea044c15ff13b91ff4d890eeaf92"
     },
     {
       "questionId": "u09-s003-v006",
@@ -620,7 +624,7 @@ export default {
         "derivedAnswer": "兩班相同，都是 30 人",
         "trustStoredAnswer": false
       },
-      "explanation": "雙組長條圖需先辨識圖例，再在同一班內合計。",
+      "explanation": "雙組長條圖需先辨識圖例，再在同一班內合計。 依圖例把甲班男女十四、十六相加得三十，乙班十八、十二也得三十；最高單柱乙男十八不能代表乙班總人數較多。",
       "steps": [
         "依圖例配對男女。",
         "分別計算班級總數。",
@@ -648,7 +652,7 @@ export default {
           "reason": "甲 14+16=30，乙 18+12=30。"
         }
       ],
-      "misconceptionTarget": "只看單一子群最高柱",
+      "misconceptionTarget": "只看單一子群最高柱 只比較乙男最高柱與甲女柱，沒有先把同班的男女兩柱合計。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -666,7 +670,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8d199efca9d2cabeb4033c40c78de27ba76914b4ac725135484e24ac01308737"
+      "contentSha256": "c8be60c13caa30e5a4fa37874786979abbdcc588bf09d02edd16cb29091ef562"
     },
     {
       "questionId": "u09-s003-v007",
@@ -693,7 +697,7 @@ export default {
         "derivedAnswer": "30",
         "trustStoredAnswer": false
       },
-      "explanation": "圖形提供的是資料值，平均條件可用來回推缺柱。",
+      "explanation": "圖形提供的是資料值，平均條件可用來回推缺柱。 平均二十七點五乘四給總和一百一十，已知三柱合為八十，所以缺柱三十；代回四柱總和與平均都吻合。",
       "steps": [
         "由平均求總和。",
         "加總已知三柱。",
@@ -721,7 +725,7 @@ export default {
           "reason": "40 會使平均 30。"
         }
       ],
-      "misconceptionTarget": "把平均直接填入缺值",
+      "misconceptionTarget": "把平均直接填入缺值 把平均二十七點五直接填成缺柱，忽略其他三柱並非對稱分布。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -739,7 +743,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "16cdef324264e8deb4b160ac15076c94df7adea8e60a4367e6bdf37de9ea43ae"
+      "contentSha256": "f9a8b5ca7ee738067b687a0aa05f50c13202ace3b719f4b1eccdd240133c11f9"
     },
     {
       "questionId": "u09-s003-v008",
@@ -766,7 +770,7 @@ export default {
         "derivedAnswer": "兩圖資料相同，乙圖只是放大差異",
         "trustStoredAnswer": false
       },
-      "explanation": "比較不同圖時，先比數值與尺度，不能只看視覺衝擊。",
+      "explanation": "比較不同圖時，先比數值與尺度，不能只看視覺衝擊。 兩圖三個柱頂都對應一百、一百二十、一百四十，資料完全相同；乙圖只因縱軸從九十起畫，使相同差距顯得更大。",
       "steps": [
         "讀出兩圖三筆數值。",
         "比較軸起點與範圍。",
@@ -794,7 +798,7 @@ export default {
           "reason": "同一數值在兩圖仍是 140。"
         }
       ],
-      "misconceptionTarget": "把視覺差異當資料差異",
+      "misconceptionTarget": "把視覺差異當資料差異 把乙圖較強烈的視覺斜率或柱差，誤認成另一組成長更快的資料。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -812,7 +816,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "31084e99665640ae0f8b697215387b027bb9f026bef6c78e63c33ceb2d417104"
+      "contentSha256": "427dfea3f2fb247592732b2da928b80708001b6bb679ad282f301aed6e24aaa2"
     },
     {
       "questionId": "u09-s003-v009",
@@ -839,7 +843,7 @@ export default {
         "derivedAnswer": "0.15",
         "trustStoredAnswer": false
       },
-      "explanation": "相對次數長條圖的全體柱高總和應為 1。",
+      "explanation": "相對次數長條圖的全體柱高總和應為 1。 已知三柱零點二五、零點四、零點二合為零點八五，完整分類剩餘零點一五；加回後四柱相對次數正好為一。",
       "steps": [
         "加總已知柱高。",
         "以 1 減合計。",
@@ -867,7 +871,7 @@ export default {
           "reason": "0.85 是已知三類合計。"
         }
       ],
-      "misconceptionTarget": "把已知合計當未知",
+      "misconceptionTarget": "把已知合計當未知 把已知合計零點八五填成其他類，或用一百減小數而混淆表示。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -885,7 +889,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9ceb8318597218076f08afb63b277049bce5459bc2c2fb28be4ce67821df9dc3"
+      "contentSha256": "f7d60d72bdfc92825a57fc5bd924a9ceaae7ab43ce1c7ce701a61eaf7a298756"
     },
     {
       "questionId": "u09-s003-v010",
@@ -912,7 +916,7 @@ export default {
         "derivedAnswer": "每萬人公園數",
         "trustStoredAnswer": false
       },
-      "explanation": "公共資源比較需把不同人口規模納入分母。",
+      "explanation": "公共資源比較需把不同人口規模納入分母。 公園總數必須配合服務人口才公平；A 每萬人兩座，B 每萬人一座，雖然 B 總數十八較高，居民平均可享資源反而較少。",
       "steps": [
         "辨認比較目的。",
         "找出人口差異。",
@@ -940,7 +944,7 @@ export default {
           "reason": "人口規模不同，應以公園數除以人口標準化。"
         }
       ],
-      "misconceptionTarget": "只看最高長條判定服務較好",
+      "misconceptionTarget": "只看最高長條判定服務較好 只看 B 區公園柱較高，就忽略其人口也是 A 區的三倍。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -958,7 +962,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c066894d3dcfe9e5e3e9181fd0c75d2c69f1ac03f79a40be015ccbd9c5bc963c"
+      "contentSha256": "06a5945eda4f343e470a2094581364cb35b37756ee5fb40fae59b8830f6e9739"
     },
     {
       "questionId": "u09-s003-v011",
@@ -985,7 +989,7 @@ export default {
         "derivedAnswer": "(330-270)÷270≈22.2%，合理",
         "trustStoredAnswer": false
       },
-      "explanation": "百分比變化的分母應是比較基準 2 月用電量。",
+      "explanation": "百分比變化的分母應是比較基準 2 月用電量。 三月比二月多六十度，百分比增加須以二月二百七十度為基準，六十除二百七十約為百分之二十二點二，支持報導的約數。",
       "steps": [
         "讀取兩月數值。",
         "求增加量 60。",
@@ -1013,7 +1017,7 @@ export default {
           "reason": "60 是度數差，不是百分比。"
         }
       ],
-      "misconceptionTarget": "用新值或差值直接當百分比",
+      "misconceptionTarget": "用新值或差值直接當百分比 改用三月新值三百三十作分母，或把增加六十度直接寫成百分之六十。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -1031,7 +1035,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d200ab5e1f46c068318242f58e01317692cc18ef8164a703bc79089bfe7b92aa"
+      "contentSha256": "1de496382c9e6b0116e1d7ea03d9d18f5f1fd55489ae86ef8b2a8792d984f69e"
     },
     {
       "questionId": "u09-s003-v012",
@@ -1058,7 +1062,7 @@ export default {
         "derivedAnswer": "2 隊",
         "trustStoredAnswer": false
       },
-      "explanation": "門檻判讀要使用『大於或等於』，不是只找最高柱。",
+      "explanation": "門檻判讀要使用『大於或等於』，不是只找最高柱。 門檻「達五十」包含等於五十，逐柱檢查只有乙五十二與丁五十五達標，甲四十八、丙四十五未達，因此共兩隊。",
       "steps": [
         "標出門檻 50。",
         "逐柱判斷是否達標。",
@@ -1086,7 +1090,7 @@ export default {
           "reason": "丙 45 也未達標。"
         }
       ],
-      "misconceptionTarget": "把接近門檻或最高柱概念混淆",
+      "misconceptionTarget": "把接近門檻或最高柱概念混淆 只數最高的丁隊，或把接近五十但仍低於門檻的甲隊也算達標。",
       "prerequisiteCheck": {
         "skillIds": [
           "frequency-table"
@@ -1104,7 +1108,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "48a6ec1cebae9775c2d1e43a0e9ae40d853b8a26021f27c8d47da52f2072d32b"
+      "contentSha256": "a2969cb4ac3febb8703e4249234689099cd6a04c2ad19a2a6422db04f5a7a8de"
     }
   ],
   "constructedResponses": [
@@ -1127,7 +1131,8 @@ export default {
       "standardSolution": [
         "甲18÷3=6格；乙24÷3=8格；丙15÷3=5格；丁21÷3=7格。",
         "乙班最多24公斤，丙班最少15公斤。",
-        "差距=24-15=9公斤。"
+        "差距=24-15=9公斤。",
+        "柱頂格數六、八、五、七乘回每格三公斤，分別還原十八、二十四、十五、二十一；最大與最小相差九公斤，圖上格差三格也給出同一結果。"
       ],
       "alternativeMethod": "可先排列15、18、21、24，再對照班級；柱高格數仍須另算。",
       "reasoningSteps": [
@@ -1172,7 +1177,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "85fbe8dd17a6d0c29bde405048160d614eab09baa71759def2c356b91a189a72"
+      "contentSha256": "d6f107ce22f24e5a0e0581fc877e4466a41705b0301429118e8d73f3d5b9f8de",
+      "commonErrors": [
+        "把每根柱的格數直接當公斤數，漏乘縱軸每大格三公斤。",
+        "找出乙最高與丙最低後用八減五只答三格，沒有換回九公斤。"
+      ]
     },
     {
       "questionId": "u09-s003-cr002",
@@ -1193,7 +1202,8 @@ export default {
       "standardSolution": [
         "實際差=58%-54%=4個百分點。",
         "相對甲校的增幅=4/54≈7.4%。",
-        "乙校達標率與甲校的比為58/54≈1.074，不是2倍。可見柱高分別為4與8（相對50基線），才會呈現2倍。"
+        "乙校達標率與甲校的比為58/54≈1.074，不是2倍。可見柱高分別為4與8（相對50基線），才會呈現2倍。",
+        "四個百分點是兩校達標率的直接差，約百分之七點四才是以甲校為基準的相對增幅；兩者都顯示乙校並非甲校的兩倍，二倍錯覺只來自五十的截斷基線。"
       ],
       "alternativeMethod": "可比較58:54=29:27，直接證明數值比遠小於2:1，再補述截斷基線。",
       "reasoningSteps": [
@@ -1238,7 +1248,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b68eb76fe1ea52aa7a5a84acbd5f0f4dfd081c059213b432088b07498c8b2b1c"
+      "contentSha256": "12c7055dd017a246bc651bb9b2509d6fa14cadffb0f9d9b4eb1de169d80599cf",
+      "commonErrors": [
+        "用可見柱高八除四便宣稱達標率二倍，忽略縱軸基線從五十開始。",
+        "把四個百分點直接稱為增加百分之四，沒有區分百分點差與相對增幅。"
+      ]
     }
   ],
   "semanticReviews": [

@@ -158,9 +158,9 @@ export const LECTURE = {
     },
     {
       "exampleId": "L3",
-      "prompt": "觀測者眼高 1.6 公尺，眼睛到牆 8 公尺；一支 0.4 公尺尺豎在眼前 1 公尺並遮住牆頂，求牆高。",
+      "prompt": "觀測者眼高 1.6 公尺，眼睛到牆 8 公尺；在眼前 1 公尺處豎一把尺，尺上自眼睛水平線到尺頂的線段長 0.4 公尺，尺頂恰好遮住牆頂，求牆高。",
       "solutionSteps": [
-        "尺高對應牆頂高於眼睛的高度。",
+        "尺上自眼睛水平線到尺頂的0.4公尺線段，對應牆頂高於眼睛的高度。",
         "眼上高度/8=0.4/1，所以眼上高度 3.2 公尺。",
         "牆總高=3.2+1.6=4.8 公尺。"
       ],
@@ -265,7 +265,7 @@ export const LECTURE = {
     "examplesIndividuallyChosen": true,
     "reviewNote": "四個測高模型均逐一辨認比例求得總高或眼上高度；鏡面、遮擋與標竿三種方法的角度理由、單位及地面水平前提均已明示。"
   },
-  "contentSha256": "77f22e0421f33d18f4cde72aa1b5659644df5947243d84c53c0ecec5a3d7246c"
+  "contentSha256": "9b8a90e3044d7d1aaf4f32219a410148a0f1c72d55290105ce9dc8315fa7566c"
 };
 
 export const QUESTIONS = [
@@ -358,10 +358,10 @@ export const QUESTIONS = [
       "8 m"
     ],
     "answerIndex": 2,
-    "independentSolution": "樹到镜面距離是人的 6 倍，鉛直高度也為眼高 1.6 的 6 倍，即 9.6 m。",
+    "independentSolution": "樹到鏡面距離是人的 6 倍，鉛直高度也為眼高 1.6 的 6 倍，即 9.6 m。",
     "explanation": "鏡面法有樹高/12=1.6/2，所以樹高=9.6 m。",
     "steps": [
-      "寫物高:物镜距=眼高:人镜距。",
+      "寫物高:物鏡距=眼高:人鏡距。",
       "列 H/12=1.6/2。",
       "計算 H。"
     ],
@@ -387,12 +387,12 @@ export const QUESTIONS = [
         "reason": "把 12/2 誤算為 5。"
       }
     ],
-    "misconceptionTarget": "鏡面兩侧水平距離對應反了。",
+    "misconceptionTarget": "鏡面兩側水平距離對應反了。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "距離和高度均以 m。",
     "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
-    "difficultyReason": "基本镜面測高比例。",
+    "difficultyReason": "基本鏡面測高比例。",
     "literacyContextNecessity": null,
     "visualMode": "text-only",
     "figureId": null,
@@ -401,7 +401,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "de3ae248e1193373cb3be9f0c64f9628e623f4035605a8a6475fa1102207e00a"
+    "contentSha256": "3ee8b99667c85806bc1105a3ffaee2fe7e9d5606e7b0aa6d73d8c2db93bf65fe"
   },
   {
     "questionId": "u18-s012-v003",
@@ -414,8 +414,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "觀測者眼高 1.7 m，眼睛到牆 8 m；眼前 1 m 處豎立 0.5 m 的尺，尺頂與牆頂在同一視線。牆高為何？",
-    "text": "觀測者眼高 1.7 m，眼睛到牆 8 m；眼前 1 m 處豎立 0.5 m 的尺，尺頂與牆頂在同一視線。牆高為何？",
+    "prompt": "觀測者眼高 1.7 m，眼睛到牆 8 m；在眼前 1 m 處豎一把尺，尺上從眼睛水平線到尺頂的線段長 0.5 m，而尺頂與牆頂在同一視線上。牆高為何？",
+    "text": "觀測者眼高 1.7 m，眼睛到牆 8 m；在眼前 1 m 處豎一把尺，尺上從眼睛水平線到尺頂的線段長 0.5 m，而尺頂與牆頂在同一視線上。牆高為何？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -454,7 +454,7 @@ export const QUESTIONS = [
         "reason": "把尺高與眼高直接相加後放大。"
       }
     ],
-    "misconceptionTarget": "没有辨認比例求的是局部高度。",
+    "misconceptionTarget": "沒有辨認比例求的是局部高度。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "所有長度以 m，最終加回眼高。",
@@ -468,7 +468,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7f54373c4c5661ba24a45e2883899c0e5f8d5fff5221fd7d353ee41ba1414c24"
+    "contentSha256": "cfb17ea6daa493c034613d0dd2292e7107f815c46d5b1b2934488cddeb721027"
   },
   {
     "questionId": "u18-s012-v004",
@@ -771,7 +771,7 @@ export const QUESTIONS = [
       {
         "choice": "約 9.6 m 到 10.4 m",
         "truth": false,
-        "reason": "没有按端點精確計算。"
+        "reason": "沒有按端點精確計算。"
       },
       {
         "choice": "約 15.4 m 到 15.6 m",
@@ -793,7 +793,7 @@ export const QUESTIONS = [
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 140,
     "unitAndRoundingCheck": "長度使用 m；端點取到小數點後兩位。",
-    "ambiguityAndBoundaryAudit": "只考虑人到镜面距離誤差，其他量視為精確。",
+    "ambiguityAndBoundaryAudit": "只考慮人到鏡面距離誤差，其他量視為精確。",
     "difficultyReason": "相似公式與誤差區間、單調性結合。",
     "literacyContextNecessity": null,
     "visualMode": "text-only",
@@ -803,7 +803,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7449fdbbfe2fbf4c407cbbb71832f1c5204cd7f6abe924f33c5a8912b9074cfd"
+    "contentSha256": "d15af6155c9c728e66851afde71fa7433d8313837f6ef94605d1ad8c9ee02bbb"
   },
   {
     "questionId": "u18-s012-v009",
@@ -843,20 +843,20 @@ export const QUESTIONS = [
       {
         "choice": "低估 2 m",
         "truth": false,
-        "reason": "使用較大的標竿高度会使塔高計算偏大。"
+        "reason": "使用較大的標竿高度會使塔高計算偏大。"
       },
       {
         "choice": "高估 0.1 m",
         "truth": false,
-        "reason": "誤差会按距離倍率 20 放大。"
+        "reason": "誤差會按距離倍率 20 放大。"
       },
       {
         "choice": "不受影響",
         "truth": false,
-        "reason": "模型使用鉛直高度，倾斜会影響。"
+        "reason": "模型使用鉛直高度，倾斜會影響。"
       }
     ],
-    "misconceptionTarget": "只比較標竿長度差，未考虑相似倍率。",
+    "misconceptionTarget": "只比較標竿長度差，未考慮相似倍率。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 130,
     "unitAndRoundingCheck": "題目量綱一致，答案不需另行四捨五入。",
@@ -870,7 +870,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "337c7fcfcd4e67dbb35b0244a3d4c40cf332aff5ab75576cfb8bfa6c7ab62396"
+    "contentSha256": "fe536153928daa3e643b5344ea5ebad3f1adc6464243558a5999f5f2db7ba9b7"
   },
   {
     "questionId": "u18-s012-v010",
@@ -894,10 +894,10 @@ export const QUESTIONS = [
       "1/4 m"
     ],
     "answerIndex": 1,
-    "independentSolution": "塔到镜面距離是人到镜面的 6 倍，塔高是眼高的 6 倍，1.5×6=9。",
+    "independentSolution": "塔到鏡面距離是人到鏡面的 6 倍，塔高是眼高的 6 倍，1.5×6=9。",
     "explanation": "塔高/18=1.5/3=1/2，所以塔高 9 m。",
     "steps": [
-      "辨認塔侧與人侧兩個直角三角形。",
+      "辨認塔側與人側兩個直角三角形。",
       "列 H:18=1.5:3。",
       "求 H=9。"
     ],
@@ -923,13 +923,13 @@ export const QUESTIONS = [
         "reason": "方向完全反轉。"
       }
     ],
-    "misconceptionTarget": "镜面兩侧距離與高度配對錯誤。",
+    "misconceptionTarget": "鏡面兩側距離與高度配對錯誤。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "所有長度為 m。",
-    "ambiguityAndBoundaryAudit": "地面水平、镜面反射有效，塔與人均鉛直條件由圖示說明。",
-    "difficultyReason": "從专用測量圖讀取對應邊。",
-    "literacyContextNecessity": "圖中镜面位置和眼高是現場可測量數據，必須依反射形成的相似三角形配對。",
+    "ambiguityAndBoundaryAudit": "地面水平、鏡面反射有效，塔與人均鉛直條件由圖示說明。",
+    "difficultyReason": "從專用測量圖讀取對應邊。",
+    "literacyContextNecessity": "圖中鏡面位置和眼高是現場可測量數據，必須依反射形成的相似三角形配對。",
     "visualMode": "figure-supported",
     "figureId": "u18-height-q010",
     "drawingSpecReference": "figures/u18/u18-height-q010.svg",
@@ -937,7 +937,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "eece518a4e7df716685797b1286f1099b07e7b6c5b63cb0a01b2b29954d76b8f"
+    "contentSha256": "2c5242aef3478196b565caf0beb5c6dbb24564da1e65d94a0806ea1a46865a62"
   },
   {
     "questionId": "u18-s012-v011",
@@ -950,8 +950,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "校園要用手機相機測旗桿高度。已知相機鏡頭離地 1.4 m，手機畫面中一支距鏡頭 2 m、高 0.6 m 的參考桿，與距鏡頭 14 m 的旗桿在同一視角下等高。旗桿總高為何？",
-    "text": "校園要用手機相機測旗桿高度。已知相機鏡頭離地 1.4 m，手機畫面中一支距鏡頭 2 m、高 0.6 m 的參考桿，與距鏡頭 14 m 的旗桿在同一視角下等高。旗桿總高為何？",
+    "prompt": "校園要用手機相機測旗桿高度。已知相機鏡頭離地 1.4 m；距鏡頭 2 m 的參考桿上，從鏡頭水平線到參考點的鉛直線段長 0.6 m。手機畫面中這個參考點與距鏡頭 14 m 的旗桿頂在同一視線上。旗桿總高為何？",
+    "text": "校園要用手機相機測旗桿高度。已知相機鏡頭離地 1.4 m；距鏡頭 2 m 的參考桿上，從鏡頭水平線到參考點的鉛直線段長 0.6 m。手機畫面中這個參考點與距鏡頭 14 m 的旗桿頂在同一視線上。旗桿總高為何？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -961,7 +961,7 @@ export const QUESTIONS = [
       "5.6 m"
     ],
     "answerIndex": 3,
-    "independentSolution": "画面等高對應的是镜头水平線以上的部分，不含镜头離地高度；因此 4.2+1.4=5.6 m。",
+    "independentSolution": "鏡頭水平線以上的參考線段與旗桿頂高於鏡頭的部分對應。水平距離倍率為14/2=7，所以旗桿頂高於鏡頭0.6×7=4.2 m；再加鏡頭離地1.4 m，總高為5.6 m。",
     "explanation": "鏡頭以上的旗桿高度/14=0.6/2，得 4.2 m；加鏡頭離地 1.4 m，總高 5.6 m。",
     "steps": [
       "求水平距離倍率 7。",
@@ -972,7 +972,7 @@ export const QUESTIONS = [
       {
         "choice": "4.2 m",
         "truth": false,
-        "reason": "只求镜头以上高度。"
+        "reason": "只求鏡頭以上高度。"
       },
       {
         "choice": "9.8 m",
@@ -982,7 +982,7 @@ export const QUESTIONS = [
       {
         "choice": "6.2 m",
         "truth": false,
-        "reason": "把參考桿高與镜头高相加後縮放。"
+        "reason": "把參考桿高與鏡頭高相加後縮放。"
       },
       {
         "choice": "5.6 m",
@@ -990,13 +990,13 @@ export const QUESTIONS = [
         "reason": "依獨立推導可得到 5.6 m，符合所有已知條件。"
       }
     ],
-    "misconceptionTarget": "把參考桿高度解释為從地面到頂部而未识別取景基準。",
+    "misconceptionTarget": "把參考桿高度解釋為從地面到頂部而未識別取景基準。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "所有長度以 m。",
-    "ambiguityAndBoundaryAudit": "題目說明參考桿在画面中對應镜头以上視角高度，需最後加镜头高度。",
+    "ambiguityAndBoundaryAudit": "題幹明示0.6 m是自鏡頭水平線向上的鉛直線段，對應旗桿頂高於鏡頭的部分；因此比例後需加回鏡頭離地高度。",
     "difficultyReason": "把相機取景模型與眼高修正結合。",
-    "literacyContextNecessity": "手機成像以镜头為觀察基準，必須區分镜头以上高度與旗桿總高。",
+    "literacyContextNecessity": "手機成像以鏡頭為觀察基準，必須區分鏡頭以上高度與旗桿總高。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -1004,7 +1004,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1f917aba361a95b7cf32ac0bb5f3a044f204c4e495773aa0eaf12e4bc4db1a86"
+    "contentSha256": "c9096f8ca5a83ff7496ff3ea44f34a0c3c43ce199017aa5c6f3a388da8a62502"
   },
   {
     "questionId": "u18-s012-v012",
@@ -1235,8 +1235,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "de3ae248e1193373cb3be9f0c64f9628e623f4035605a8a6475fa1102207e00a",
-    "independentSolution": "樹到镜面距離是人的 6 倍，鉛直高度也為眼高 1.6 的 6 倍，即 9.6 m。",
+    "contentSha256": "3ee8b99667c85806bc1105a3ffaee2fe7e9d5606e7b0aa6d73d8c2db93bf65fe",
+    "independentSolution": "樹到鏡面距離是人的 6 倍，鉛直高度也為眼高 1.6 的 6 倍，即 9.6 m。",
     "derivedAnswer": "9.6 m",
     "storedAnswer": "9.6 m",
     "answerMatch": true,
@@ -1253,9 +1253,9 @@ export const SEMANTIC_REVIEWS = [
       "units": "距離和高度均以 m。",
       "scope": "只使用國中會考範圍內的「利用相似測高」概念，未要求高中延伸。"
     },
-    "difficultyReason": "基本镜面測高比例。",
+    "difficultyReason": "基本鏡面測高比例。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
-    "reviewerNote": "重新由已知條件獨立計算：樹到镜面距離是人的 6 倍，鉛直高度也為眼高 1.6 的 6 倍，即 9.6 m。 四個選項逐一核對後，只有「9.6 m」符合；主要排除點是「鏡面兩侧水平距離對應反了。」。",
+    "reviewerNote": "重新由已知條件獨立計算：樹到鏡面距離是人的 6 倍，鉛直高度也為眼高 1.6 的 6 倍，即 9.6 m。 四個選項逐一核對後，只有「9.6 m」符合；主要排除點是「鏡面兩側水平距離對應反了。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
@@ -1266,7 +1266,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "7f54373c4c5661ba24a45e2883899c0e5f8d5fff5221fd7d353ee41ba1414c24",
+    "contentSha256": "cfb17ea6daa493c034613d0dd2292e7107f815c46d5b1b2934488cddeb721027",
     "independentSolution": "相似三角形的鉛直小邊是尺高 0.5，大邊是牆頂相對眼睛的 4；地面到眼睛另有 1.7，故總高 5.7。",
     "derivedAnswer": "5.7 m",
     "storedAnswer": "5.7 m",
@@ -1279,14 +1279,14 @@ export const SEMANTIC_REVIEWS = [
       false
     ],
     "ambiguityChecks": {
-      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
-      "units": "所有長度以 m，最終加回眼高。",
-      "scope": "只使用國中會考範圍內的「利用相似測高」概念，未要求高中延伸。"
+      "wording": "題幹明示0.5 m是從眼睛水平線到尺頂的鉛直線段，不是從地面到尺頂的尺高。",
+      "boundary": "尺頂、眼睛與牆頂共線，所以0.5 m與牆頂高於眼睛的線段對應。",
+      "units": "所有長度均以m表示，比例求得眼睛以上高度後再加回1.7 m眼高。",
+      "scope": "只使用兩個相似直角三角形的對應邊比與高度基準修正。"
     },
     "difficultyReason": "基礎比例後加眼高修正。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
-    "reviewerNote": "重新由已知條件獨立計算：相似三角形的鉛直小邊是尺高 0.5，大邊是牆頂相對眼睛的 4；地面到眼睛另有 1.7，故總高 5.7。 四個選項逐一核對後，只有「5.7 m」符合；主要排除點是「没有辨認比例求的是局部高度。」。",
+    "reviewerNote": "尺上自眼睛水平線到尺頂的0.5 m，對應牆頂高於眼睛的部分。依相似比例得眼上高度/8=0.5/1，所以眼上高度為4 m，加回眼高1.7 m得牆高5.7 m，選項唯一。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
@@ -1421,7 +1421,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "7449fdbbfe2fbf4c407cbbb71832f1c5204cd7f6abe924f33c5a8912b9074cfd",
+    "contentSha256": "d15af6155c9c728e66851afde71fa7433d8313837f6ef94605d1ad8c9ee02bbb",
     "independentSolution": "25.5÷2.6≈9.8077，25.5÷2.4=10.625，所以約為 9.81 到 10.63 m。",
     "derivedAnswer": "約 9.81 m 到 10.63 m",
     "storedAnswer": "約 9.81 m 到 10.63 m",
@@ -1435,7 +1435,7 @@ export const SEMANTIC_REVIEWS = [
     ],
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "只考虑人到镜面距離誤差，其他量視為精確。",
+      "boundary": "只考慮人到鏡面距離誤差，其他量視為精確。",
       "units": "長度使用 m；端點取到小數點後兩位。",
       "scope": "只使用國中會考範圍內的「利用相似測高」概念，未要求高中延伸。"
     },
@@ -1452,7 +1452,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "337c7fcfcd4e67dbb35b0244a3d4c40cf332aff5ab75576cfb8bfa6c7ab62396",
+    "contentSha256": "fe536153928daa3e643b5344ea5ebad3f1adc6464243558a5999f5f2db7ba9b7",
     "independentSolution": "標竿高度誤差 0.1 m 被水平倍率 30/1.5=20 放大為 2 m。",
     "derivedAnswer": "高估 2 m",
     "storedAnswer": "高估 2 m",
@@ -1472,7 +1472,7 @@ export const SEMANTIC_REVIEWS = [
     },
     "difficultyReason": "分析測量誤差在相似比例中的放大效應。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
-    "reviewerNote": "重新由已知條件獨立計算：標竿高度誤差 0.1 m 被水平倍率 30/1.5=20 放大為 2 m。 四個選項逐一核對後，只有「高估 2 m」符合；主要排除點是「只比較標竿長度差，未考虑相似倍率。」。",
+    "reviewerNote": "重新由已知條件獨立計算：標竿高度誤差 0.1 m 被水平倍率 30/1.5=20 放大為 2 m。 四個選項逐一核對後，只有「高估 2 m」符合；主要排除點是「只比較標竿長度差，未考慮相似倍率。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
@@ -1483,8 +1483,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "eece518a4e7df716685797b1286f1099b07e7b6c5b63cb0a01b2b29954d76b8f",
-    "independentSolution": "塔到镜面距離是人到镜面的 6 倍，塔高是眼高的 6 倍，1.5×6=9。",
+    "contentSha256": "2c5242aef3478196b565caf0beb5c6dbb24564da1e65d94a0806ea1a46865a62",
+    "independentSolution": "塔到鏡面距離是人到鏡面的 6 倍，塔高是眼高的 6 倍，1.5×6=9。",
     "derivedAnswer": "9 m",
     "storedAnswer": "9 m",
     "answerMatch": true,
@@ -1497,13 +1497,13 @@ export const SEMANTIC_REVIEWS = [
     ],
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "地面水平、镜面反射有效，塔與人均鉛直條件由圖示說明。",
+      "boundary": "地面水平、鏡面反射有效，塔與人均鉛直條件由圖示說明。",
       "units": "所有長度為 m。",
       "scope": "只使用國中會考範圍內的「利用相似測高」概念，未要求高中延伸。"
     },
-    "difficultyReason": "從专用測量圖讀取對應邊。",
-    "literacyNecessityReview": "圖中镜面位置和眼高是現場可測量數據，必須依反射形成的相似三角形配對。",
-    "reviewerNote": "重新由已知條件獨立計算：塔到镜面距離是人到镜面的 6 倍，塔高是眼高的 6 倍，1.5×6=9。 四個選項逐一核對後，只有「9 m」符合；主要排除點是「镜面兩侧距離與高度配對錯誤。」。",
+    "difficultyReason": "從專用測量圖讀取對應邊。",
+    "literacyNecessityReview": "圖中鏡面位置和眼高是現場可測量數據，必須依反射形成的相似三角形配對。",
+    "reviewerNote": "重新由已知條件獨立計算：塔到鏡面距離是人到鏡面的 6 倍，塔高是眼高的 6 倍，1.5×6=9。 四個選項逐一核對後，只有「9 m」符合；主要排除點是「鏡面兩側距離與高度配對錯誤。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
@@ -1514,8 +1514,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-height-measure",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "1f917aba361a95b7cf32ac0bb5f3a044f204c4e495773aa0eaf12e4bc4db1a86",
-    "independentSolution": "画面等高對應的是镜头水平線以上的部分，不含镜头離地高度；因此 4.2+1.4=5.6 m。",
+    "contentSha256": "c9096f8ca5a83ff7496ff3ea44f34a0c3c43ce199017aa5c6f3a388da8a62502",
+    "independentSolution": "鏡頭水平線以上的參考線段與旗桿頂高於鏡頭的部分對應。水平距離倍率為14/2=7，所以旗桿頂高於鏡頭0.6×7=4.2 m；再加鏡頭離地1.4 m，總高為5.6 m。",
     "derivedAnswer": "5.6 m",
     "storedAnswer": "5.6 m",
     "answerMatch": true,
@@ -1527,14 +1527,14 @@ export const SEMANTIC_REVIEWS = [
       true
     ],
     "ambiguityChecks": {
-      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "題目說明參考桿在画面中對應镜头以上視角高度，需最後加镜头高度。",
-      "units": "所有長度以 m。",
-      "scope": "只使用國中會考範圍內的「利用相似測高」概念，未要求高中延伸。"
+      "wording": "題幹已指定0.6 m是從鏡頭水平線到參考點的鉛直線段，而不是整支參考桿的離地高度。",
+      "boundary": "參考點、鏡頭與旗桿頂共線，所以兩個直角三角形有共同視角並可以AA判定相似。",
+      "units": "參考線段、鏡頭離地高度與水平距離全以m表示。",
+      "scope": "只使用相似三角形的對應邊比與局部高度加回離地基準。"
     },
     "difficultyReason": "把相機取景模型與眼高修正結合。",
-    "literacyNecessityReview": "手機成像以镜头為觀察基準，必須區分镜头以上高度與旗桿總高。",
-    "reviewerNote": "重新由已知條件獨立計算：画面等高對應的是镜头水平線以上的部分，不含镜头離地高度；因此 4.2+1.4=5.6 m。 四個選項逐一核對後，只有「5.6 m」符合；主要排除點是「把參考桿高度解释為從地面到頂部而未识別取景基準。」。",
+    "literacyNecessityReview": "手機取景以鏡頭水平線為基準，必須區分鏡頭以上高度與旗桿總高。",
+    "reviewerNote": "題幹把0.6 m明定為自鏡頭水平線向上的參考線段。相似三角形的水平距離比為14:2=7，因此旗桿頂高於鏡頭0.6×7=4.2 m；加回鏡頭離地1.4 m，唯一答案是5.6 m。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },

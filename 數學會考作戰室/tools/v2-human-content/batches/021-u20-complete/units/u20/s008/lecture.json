@@ -94,6 +94,11 @@
       "step": 4,
       "instruction": "用第三條中線複核。",
       "check": "是否也通過G？"
+    },
+    {
+      "step": 5,
+      "instruction": "若用於平衡問題，先核對材質、厚度與附加物是否近似均勻。",
+      "check": "不均勻時只能把幾何重心當初始估計，不能保證實際平衡。"
     }
   ],
   "workedExamples": [
@@ -101,19 +106,23 @@
       "exampleId": "L1",
       "prompt": "M是BC中點。AM是什麼？",
       "solutionSteps": [
-        "A是對面頂點。",
-        "M是BC中點。"
+        "A是BC的對面頂點。",
+        "M把BC分成BM＝MC。",
+        "連接A與M符合中線定義。"
       ],
-      "answer": "AM是中線。"
+      "answer": "AM是中線。",
+      "why": "中線只檢查兩件事：線段從頂點出發，並到達對邊中點；題設同時給出A與BC中點M，所以AM必為中線，不需要另證AM垂直BC或平分∠A。"
     },
     {
       "exampleId": "L2",
       "prompt": "均勻三角形紙板選單點支撐。",
       "solutionSteps": [
-        "質量隨面積均勻。",
-        "面積中心是三中線交點。"
+        "材質與厚度均勻，所以質量隨面積分布。",
+        "三角形面積中心是三中線交點。",
+        "以重心作初始支撐點並實測複核。"
       ],
-      "answer": "先選重心。"
+      "answer": "先選重心。",
+      "why": "均勻條件使幾何面積中心與實際質心重合，三中線交點因此能平衡紙板；若另加重物，這個模型便須重新評估。"
     }
   ],
   "commonMistakes": [
@@ -131,6 +140,11 @@
       "mistake": "對有重物的板仍直接用重心。",
       "why": "均勻假設失效。",
       "correction": "改找實際質心。"
+    },
+    {
+      "mistake": "只看線穿過圖形中央便稱為中線。",
+      "why": "中線的必要條件是從頂點連到對邊中點，視覺位置不能取代中點證據。",
+      "correction": "先以等長刻痕確認對邊被平分，再連接對面頂點。"
     }
   ],
   "selfCheck": [
@@ -188,5 +202,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "9053d1dff7bd1a9be4d05bbd6a9b5c1263341d1dec35c08bb48fbf6d88b495b1"
+  "contentSha256": "90f359941068bf830582cf0f178d1ba0025f3f6bb230359ea87543e0b9e77ec9"
 }

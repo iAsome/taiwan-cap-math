@@ -141,23 +141,28 @@ export const LECTURE = {
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "先讀角度並標出界線 90°、180°。",
-      "check": "等於界線與介於界線必須分開。"
+      "instruction": "先讀角度並標出 0°、90°、180° 三個分類界線。",
+      "check": "等於界線與介於界線必須分開判斷。"
     },
     {
       "step": 2,
-      "instruction": "若問互餘或互補，先寫總和。",
+      "instruction": "若問互餘或互補，先把關係翻成固定總和。",
       "check": "互餘寫 90°，互補寫 180°。"
     },
     {
       "step": 3,
-      "instruction": "用總和減去已知角或建立等式。",
-      "check": "保留度數單位，未知數求出後回代。"
+      "instruction": "用總和減去已知角，或依文字關係建立方程。",
+      "check": "倍數、相差與括號的正負號要完整保留。"
     },
     {
       "step": 4,
-      "instruction": "檢查結果範圍。",
-      "check": "餘角應在 0° 到 90°；補角應在 0° 到 180°。"
+      "instruction": "求出未知量後代回每一個角度式。",
+      "check": "角度都應為正，餘角小於 90°，補角小於 180°。"
+    },
+    {
+      "step": 5,
+      "instruction": "用總和、相差及角的分類做雙重驗算。",
+      "check": "回代須同時符合原方程與題目所問的角種類。"
     }
   ],
   "workedExamples": [
@@ -168,35 +173,39 @@ export const LECTURE = {
         "38 介於 0 與 90，為銳角。",
         "90 為直角；127 介於 90 與 180，為鈍角；180 為平角。"
       ],
-      "answer": "依序為銳角、直角、鈍角、平角。"
+      "answer": "依序為銳角、直角、鈍角、平角。",
+      "why": "角的種類由精確範圍決定：小於 90°、等於 90°、介於 90° 與 180°、等於 180° 分屬不同類別。先標出分界再逐個比較，可避免把接近分界的角或恰在分界上的角混為一談。"
     },
     {
       "exampleId": "L2",
       "prompt": "角 A 為 64°，它的餘角是多少？",
       "solutionSteps": [
         "互餘總和為 90°。",
-        "90°-64°=26°。"
+        "90°－64°＝26°。"
       ],
-      "answer": "26°。"
+      "answer": "26°。",
+      "why": "餘角不是把角度任意補大，而是要求兩角總和恰為直角 90°。因此未知角由 90° 扣除已知的 64°，得到 26°；再以 64°＋26°＝90° 回代，才能確認沒有誤用互補的 180°。"
     },
     {
       "exampleId": "L3",
       "prompt": "角 B 為 113°，它的補角是多少？",
       "solutionSteps": [
         "互補總和為 180°。",
-        "180°-113°=67°。"
+        "180°－113°＝67°。"
       ],
-      "answer": "67°。"
+      "answer": "67°。",
+      "why": "補角的共同基準是平角 180°，已知角雖是鈍角仍可用相同定義。由 180° 減 113° 得 67°，一鈍一銳相加正好為 180°；若誤用 90°，會得到負值並立刻顯示定義用錯。"
     },
     {
       "exampleId": "L4",
-      "prompt": "兩互補角度數分別為 2x° 與 (x+30)°，求 x。",
+      "prompt": "兩互補角度數分別為 2x° 與 (x＋30)°，求 x。",
       "solutionSteps": [
-        "建立 2x+x+30=180。",
-        "3x=150，x=50。",
+        "建立 2x＋x＋30＝180。",
+        "3x＝150，x＝50。",
         "兩角為 100° 與 80°，總和 180°。"
       ],
-      "answer": "x=50。"
+      "answer": "x＝50。",
+      "why": "互補關係決定兩個角度式必須相加為 180°，而不是令兩式相等。解得 x 後仍須代回，得到 100°、80°；兩角皆為正且總和 180°，同時驗證方程、角度範圍與互補條件。"
     }
   ],
   "levelConnections": {
@@ -266,7 +275,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "60aa9853e65527440c3ff8b2a5a80fd46684cb83d0da926e1f63a2f3c5a7b480"
+  "contentSha256": "0125786defd794a7ea88da75371293b54fcd469c91bd1f3586ab4a96010fb00c"
 };
 
 export const QUESTIONS = [
@@ -296,10 +305,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "89° 落在 (0°,90°) 範圍內。",
-    "explanation": "比較 89° 與 90°、180° 的分類界線。",
+    "explanation": "銳角的度數必須大於 0° 且小於 90°。89° 雖然很接近直角，但仍嚴格小於 90°，所以是銳角；只有恰好 90° 才是直角，不能因圖形看起來接近就改變分類。",
     "steps": [
-      "89<90。",
-      "因此是銳角。"
+      "先列出銳角範圍為 0°＜角度＜90°。",
+      "比較 89° 與分界值，得到 0°＜89°＜90°。",
+      "因此 89° 是銳角，不是直角、鈍角或平角。"
     ],
     "optionAnalysis": [
       {
@@ -323,7 +333,7 @@ export const QUESTIONS = [
         "reason": "平角為 180°。"
       }
     ],
-    "misconceptionTarget": "把接近 90° 的角誤判為直角。",
+    "misconceptionTarget": "把接近九十度的八十九度直接當成直角，忽略角分類的分界必須精確相等。",
     "prerequisiteCheck": "能讀角度符號並理解角的基本記號。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以度（°）表示，無單位轉換。",
@@ -335,7 +345,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "69463eaf4b121c74528a063ac89510ae4f31322824c955fd53482dfd699b41f7"
+    "contentSha256": "eabfaed57adf72f95231dde00b5690479c3ee525b2c54ae4d6421983cc97dac8"
   },
   {
     "questionId": "u08-s002-v002",
@@ -363,10 +373,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "直角固定為 90°。",
-    "explanation": "直角定義就是 90°。",
+    "explanation": "直角的定義是度數恰好等於 90°。0° 是零角，89° 仍是銳角，180° 是平角；只有選項中的 90° 正好符合直角定義，因此答案唯一，分界不能混用。",
     "steps": [
-      "回憶直角度數。",
-      "在選項中選 90°。"
+      "回憶直角的精確度數是 90°。",
+      "逐一比較選項與 90°，不以接近程度判斷。",
+      "只有 90° 完全相等，所以選 90°。"
     ],
     "optionAnalysis": [
       {
@@ -390,7 +401,7 @@ export const QUESTIONS = [
         "reason": "180° 是平角。"
       }
     ],
-    "misconceptionTarget": "把 180° 的平角當直角。",
+    "misconceptionTarget": "把八十九度因外觀接近而當成直角，或把一百八十度的平角與直角混淆。",
     "prerequisiteCheck": "能讀取角度。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位均為 °。",
@@ -402,7 +413,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "bd4c7c2707646c2a63d5b932fad046ca882cee79e891526d5cf2f15a33fa8106"
+    "contentSha256": "13ea26d4673905e6e6d47cecca8a53b026856e7444d41a028d6177513d42b50f"
   },
   {
     "questionId": "u08-s002-v003",
@@ -430,10 +441,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "總和 90°，符合互餘而非互補。",
-    "explanation": "互餘只要求兩角和為 90°。",
+    "explanation": "判斷互餘或互補要先計算兩角總和。35°＋55°＝90°，正好符合互餘兩角和為 90° 的定義；兩角不相等，總和也不是 180°，所以不能選相等或互補。",
     "steps": [
-      "計算 35+55=90。",
-      "依定義判為互餘。"
+      "將兩角相加：35°＋55°＝90°。",
+      "對照定義，總和 90° 的兩角互餘。",
+      "確認總和不是 180° 且兩數不同，故唯一答案為互餘。"
     ],
     "optionAnalysis": [
       {
@@ -457,7 +469,7 @@ export const QUESTIONS = [
         "reason": "35°+55°=90°，所以兩角互餘。"
       }
     ],
-    "misconceptionTarget": "把互餘與互補的總和混淆。",
+    "misconceptionTarget": "未先計算總和，只因兩角同為銳角就猜測相等或互補，混用互餘與互補定義。",
     "prerequisiteCheck": "能做整數加法並理解角度。",
     "estimatedTimeSec": 90,
     "unitCheck": "兩角皆以 ° 表示，直接相加。",
@@ -469,7 +481,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "cfa0b62286ea3e11baddde4d1b8ff64051a2ced6c46804cd06369f381364396e"
+    "contentSha256": "21eaa7eaa1be890662fc72d55085e84ce6534131c68ab77caabe2855c8801d54"
   },
   {
     "questionId": "u08-s002-v004",
@@ -498,10 +510,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "計算 90°-68°=22°，驗算 68°+22°=90°。",
-    "explanation": "用直角總量扣除已知角。",
+    "explanation": "餘角和已知角的總和必須是 90°，因此以 90° 減去 68°，得到 22°。回代可驗算 68°＋22°＝90°，所以 22° 才是餘角；112° 是用 180° 計算出的補角，這項回代也排除其餘選項。",
     "steps": [
-      "寫 90−68。",
-      "得到 22。"
+      "寫出互餘關係 68°＋x＝90°。",
+      "移項計算 x＝90°－68°＝22°。",
+      "回代得到 68°＋22°＝90°，確認答案為 22°。"
     ],
     "optionAnalysis": [
       {
@@ -525,7 +538,7 @@ export const QUESTIONS = [
         "reason": "超出本技能基本角範圍且總和不為 90°。"
       }
     ],
-    "misconceptionTarget": "誤用 180° 求補角。",
+    "misconceptionTarget": "把餘角誤用一百八十度相減而得到一百一十二度，混淆互餘與互補的總和。",
     "prerequisiteCheck": "能辨認互餘總和 90°。",
     "estimatedTimeSec": 90,
     "unitCheck": "計算與答案均以度為單位。",
@@ -537,7 +550,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "a5066dcf0aaeb9f524932218d6148a61b89aec71e0be251bdab2c9930c29d5ce"
+    "contentSha256": "ad5f43813be3d4945e9a8c568438fe3976620fff93426de4ef3bd289fd6ee150"
   },
   {
     "questionId": "u08-s002-v005",
@@ -566,11 +579,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "由平角扣除 137° 得 43°。",
-    "explanation": "互補兩角總和為 180°。",
+    "explanation": "補角與原角的總和為 180°。以平角 180° 扣除 137°，可得 43°；驗算 137°＋43°＝180°，正好互補。47° 是錯誤減法，223° 則不是正確的補角，也不符合角度總和條件。",
     "steps": [
-      "寫 180−137。",
-      "得到 43。",
-      "驗算 137+43=180。"
+      "建立互補等式 137°＋x＝180°。",
+      "計算 x＝180°－137°＝43°。",
+      "用 137°＋43°＝180° 驗算，所以選 43°。"
     ],
     "optionAnalysis": [
       {
@@ -594,7 +607,7 @@ export const QUESTIONS = [
         "reason": "137+53=190，不是 180。"
       }
     ],
-    "misconceptionTarget": "把補角總和誤用成 360°。",
+    "misconceptionTarget": "把補角錯用九十度或把減法算錯，沒有用兩角總和一百八十度回代檢查。",
     "prerequisiteCheck": "能使用互補定義。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有角度以 ° 表示。",
@@ -606,7 +619,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e6644b35e9a553a7c5efe1dae084e0a1c16d88aeca8b05f976b867eb8311c0c6"
+    "contentSha256": "634599e5b71748e4e6f26af109330375df6dbee262720217b31cb0bf365f733a"
   },
   {
     "questionId": "u08-s002-v006",
@@ -635,11 +648,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "將 180° 依 2:3 分配，兩角為 72°、108°。",
-    "explanation": "比例兩角合為 180°，按 2：3 分配。",
+    "explanation": "互補兩角合為 180°，比為 2：3 表示總共分成 5 份。每份是 180°÷5＝36°，較小角占 2 份，所以為 2×36°＝72°；另一角 108°，兩者相加確為 180°，大小次序也與比例一致。",
     "steps": [
-      "2+3=5 份。",
-      "180÷5=36。",
-      "2×36=72。"
+      "將比例份數相加，得到 2＋3＝5 份。",
+      "用互補總和分配，每份為 180°÷5＝36°。",
+      "較小角占 2 份，故 2×36°＝72°，並以 72°＋108° 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -663,7 +676,7 @@ export const QUESTIONS = [
         "reason": "108° 是較大角。"
       }
     ],
-    "misconceptionTarget": "只取一份或答較大角。",
+    "misconceptionTarget": "直接把二或三當角度，或把一百八十度除以較小比例二，沒有先求總份數。",
     "prerequisiteCheck": "能使用互補總和與基本比例。",
     "estimatedTimeSec": 90,
     "unitCheck": "比例無單位，結果為角度 °。",
@@ -675,7 +688,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "7fa249e1abea3d1c30f16070c92d61e8c4b5a815858b6c61fa39da60a284c020"
+    "contentSha256": "83c47d4ac0be8588d4d26592d4590c8abac50fec96efe4d9809b8cf8c0937a33"
   },
   {
     "questionId": "u08-s002-v007",
@@ -704,11 +717,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "解方程 5x+5=90 得 17，兩角為 57°、33°。",
-    "explanation": "建立方程並解一次式。",
+    "explanation": "兩角互餘，所以角度式的總和等於 90°。列式 (3x＋6)＋(2x－1)＝90，合併得 5x＋5＝90，解得 x＝17。代回兩角為 57°、33°，皆為正且總和 90°，因此沒有其他選項符合原來條件。",
     "steps": [
-      "合併得 5x+5=90。",
-      "5x=85。",
-      "x=17。"
+      "依互餘定義列式 (3x＋6)＋(2x－1)＝90。",
+      "合併同類項得 5x＋5＝90，再解得 x＝17。",
+      "代回得到 57°、33°，相加為 90°，確認 x＝17。"
     ],
     "optionAnalysis": [
       {
@@ -732,7 +745,7 @@ export const QUESTIONS = [
         "reason": "互餘總和 90°，(3x+6)+(2x−1)=90，5x+5=90，x=17。"
       }
     ],
-    "misconceptionTarget": "把互餘總和設為 180° 或漏合併常數。",
+    "misconceptionTarget": "把互餘總和誤寫成一百八十度，或合併常數六與負一時符號計算錯誤。",
     "prerequisiteCheck": "能使用一元一次方程與互餘定義。",
     "estimatedTimeSec": 90,
     "unitCheck": "x 為無單位數，代回角度式後單位為 °。",
@@ -744,7 +757,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "273aad303c40594f1f24d698b3e302e2974a44552a405426da37d316543114ee"
+    "contentSha256": "3560cb0aa9840e8caf7937dfd6340723da3e3ad6474e7c56429489cd1a4a2627"
   },
   {
     "questionId": "u08-s002-v008",
@@ -773,11 +786,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "原角 78°，補角 102°，相差 24°。",
-    "explanation": "把『補角比原角大 24°』翻成差的方程。",
+    "explanation": "設原角為 x°，其補角是 (180－x)°。題意說補角比原角大 24°，所以 (180－x)－x＝24，解得 2x＝156、x＝78。補角為 102°，且 102°－78°＝24°；兩角也確實合為 180°，所以原角只能是 78°，完整符合兩項關係。",
     "steps": [
-      "180−x 是補角。",
-      "180−2x=24。",
-      "2x=156，x=78。"
+      "設原角 x°，將補角表示成 (180－x)°。",
+      "依相差 24° 列式 (180－x)－x＝24。",
+      "解得 x＝78，並用補角 102° 與差 24° 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -801,7 +814,7 @@ export const QUESTIONS = [
         "reason": "84° 的補角 96°，只大 12°。"
       }
     ],
-    "misconceptionTarget": "將 24° 直接從 180° 減去而未平均分差。",
+    "misconceptionTarget": "把補角直接設成原角加二十四度後忘記兩角仍須合為一百八十度，或反向相減。",
     "prerequisiteCheck": "能列一元一次方程。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有角度以 ° 表示。",
@@ -813,7 +826,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4b2ac4a0936db106320df55795eedaff2dcf7eae1c07605422efec27371acaf9"
+    "contentSha256": "a0ab84fb168c5c654186429e5f4a5ed61b2285a3a8e7551bf94b669265657ea9"
   },
   {
     "questionId": "u08-s002-v009",
@@ -842,10 +855,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "三組總和為 90°，唯有 10° 與 90° 合為 100°。",
-    "explanation": "逐組檢查正值與總和。",
+    "explanation": "互餘的兩個正角總和必須是 90°。12°＋78°、44°＋46°、1°＋89° 都等於 90°；只有 10°＋90°＝100°，不符合互餘。因此 10° 與 90° 是唯一不可能的一組，且無須依圖形或角的外觀判斷。",
     "steps": [
-      "計算各組總和。",
-      "只有 10+90=100。"
+      "以總和 90° 作為每一組的共同檢查標準。",
+      "分別相加四組角度，得到 90、100、90、90。",
+      "只有 10° 與 90° 的總和為 100°，所以選該組。"
     ],
     "optionAnalysis": [
       {
@@ -869,7 +883,7 @@ export const QUESTIONS = [
         "reason": "兩角皆為正且總和 90°。"
       }
     ],
-    "misconceptionTarget": "只看到其中有 90° 就誤以為與任何角互餘。",
+    "misconceptionTarget": "只看兩角是否都不超過九十度，沒有逐組檢查互餘所要求的總和恰為九十度。",
     "prerequisiteCheck": "能辨認正角與互餘總和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -881,7 +895,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "9d10e905144476446ceb9754b6ab675576e4bbe1bb6c9d8074548e3349b7b5e9"
+    "contentSha256": "04fe75a55dc3f7817eddd5fad4f581f44a76108ae2fe844d85939dfd11df98ed"
   },
   {
     "questionId": "u08-s002-v010",
@@ -911,11 +925,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "從 65° 增至 90° 的差為 25°。",
-    "explanation": "『與目前角度互餘』把總開啟角限定為 90°。",
+    "explanation": "規範的直角位置是從關閉狀態量得 90°，目前門已開 65°，所以仍需增加的角度是 90°－65°＝25°。增加後總開角為 65°＋25°＝90°，正好到達規定位置。",
     "steps": [
-      "目標總角度 90°。",
-      "已開 65°。",
-      "剩餘 25°。"
+      "把完全關閉視為 0°，確認目標總開角為 90°。",
+      "以目標角減目前角：90°－65°＝25°。",
+      "驗算 65°＋25°＝90°，所以還需再開 25°。"
     ],
     "optionAnalysis": [
       {
@@ -939,7 +953,7 @@ export const QUESTIONS = [
         "reason": "65+155=220，與直角無關。"
       }
     ],
-    "misconceptionTarget": "看到『規範』後誤選補角 180°。",
+    "misconceptionTarget": "把目前六十五度當成仍需增加的角度，或誤用一百八十度計算而得到一百一十五度。",
     "prerequisiteCheck": "能辨認互餘總和。",
     "estimatedTimeSec": 90,
     "unitCheck": "開啟角與答案均以 ° 表示。",
@@ -951,7 +965,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "cfa08904a834778f5dc64ec2cc1feab432865f09c6b3a21883bf23ca0fb600a6"
+    "contentSha256": "6d23e44011110e821280194c12c1b03983495965192f1afde1c6947442d1a384"
   },
   {
     "questionId": "u08-s002-v011",
@@ -980,10 +994,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "計算平角總量扣除第一段，得到 68°。",
-    "explanation": "道路規格直接指定互補關係。",
+    "explanation": "兩段轉向角互補表示總和為 180°。第一段已占 112°，第二段應為 180°－112°＝68°；回代 112°＋68°＝180°，符合道路設計條件，因此答案是 68°，不是把第一段角度原樣複製。",
     "steps": [
-      "寫 112+x=180。",
-      "x=68。"
+      "將互補條件寫成 112°＋x＝180°。",
+      "由平角總量扣除第一段，x＝180°－112°＝68°。",
+      "相加驗算 112°＋68°＝180°，確認第二段設定 68°。"
     ],
     "optionAnalysis": [
       {
@@ -1007,7 +1022,7 @@ export const QUESTIONS = [
         "reason": "互補總和 180°，第二段=180°−112°=68°。"
       }
     ],
-    "misconceptionTarget": "把道路轉向誤用一周角 360°。",
+    "misconceptionTarget": "把互補誤當互餘而用九十度相減，或將已知的一百一十二度直接當作第二段。",
     "prerequisiteCheck": "能使用互補定義。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -1019,7 +1034,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "90e81fbeb15aed8f97ca7025a2754bee15083944e049432726fbf668df376ae2"
+    "contentSha256": "ae0227f5fbd0e474fa409d9a1bab7121205015ed1dbdf063b28aec4813f25f69"
   },
   {
     "questionId": "u08-s002-v012",
@@ -1048,11 +1063,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "規格方程解為 80/3，代回兩角為 125/3° 與 145/3°，總和 90°。",
-    "explanation": "把兩項照射角完整相加並解方程。",
+    "explanation": "規格要求兩照射角互餘，所以 (x＋15)＋(2x－5)＝90。整理得 3x＋10＝90、3x＝80，故 x＝80/3。代回角度為 125/3° 與 145/3°，相加正好 90°；兩角均為正值，也符合實際角度範圍，因此解答有效。",
     "steps": [
-      "3x+10=90。",
-      "3x=80。",
-      "x=80/3。"
+      "依互餘條件列式 (x＋15)＋(2x－5)＝90。",
+      "合併同類項得 3x＋10＝90，解得 x＝80/3。",
+      "代回兩角並相加為 90°，確認唯一符合的選項。"
     ],
     "optionAnalysis": [
       {
@@ -1076,7 +1091,7 @@ export const QUESTIONS = [
         "reason": "代回得 55° 與 75°，總和 130°。"
       }
     ],
-    "misconceptionTarget": "只比較兩角是否相等，忽略互餘是總和條件。",
+    "misconceptionTarget": "把互餘方程右側寫成一百八十，或合併正十五與負五時漏掉常數十。",
     "prerequisiteCheck": "能解一元一次方程與使用互餘定義。",
     "estimatedTimeSec": 90,
     "unitCheck": "x 無單位；代回後角度單位為 °。",
@@ -1088,7 +1103,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "85aa4ca438f8e05463528b0d5cdc373172f19edda7554b3e3fe0b2face4393b1"
+    "contentSha256": "10099f705f396185582d1d82078b6274c8a31fbe05a9661fa1a8eda3912fd6d0"
   }
 ];
 
@@ -1112,9 +1127,10 @@ export const CONSTRUCTED_RESPONSES = [
       "分類原角。"
     ],
     "standardSolution": [
-      "設原角為 x°，餘角為 (90−x)°。",
-      "依題意 x=(90−x)+18，得2x=108，x=54。",
-      "餘角為36°，原角54°小於90°，是銳角。"
+      "設原角為 x°，因互餘兩角合為 90°，它的餘角可表示為 (90－x)°。",
+      "原角比餘角多 18°，所以 x＝(90－x)＋18，整理得 2x＝108，故 x＝54。",
+      "餘角為 90°－54°＝36°，驗算 54°－36°＝18° 且 54°＋36°＝90°。",
+      "原角 54° 介於 0° 與 90° 之間，因此原角是銳角。"
     ],
     "alternativeMethods": [
       "可設餘角為 y°，原角 y+18，列 y+(y+18)=90，得 y=36。"
@@ -1167,7 +1183,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "ececa5b9052065cc4196d47025092850309178abdda991589ed7f0d91ad0c1e0"
+    "contentSha256": "09b97b2b67c76e6e4f55350111240880ac635366b5aa7ad20dcb988782622aa1"
   },
   {
     "questionId": "u08-s002-cr002",
@@ -1188,9 +1204,10 @@ export const CONSTRUCTED_RESPONSES = [
       "分類兩角並驗算互補。"
     ],
     "standardSolution": [
-      "設 A=x°，則 B=(2x−15)°。",
-      "x+(2x−15)=180，得3x=195，x=65。",
-      "B=115°；A是銳角，B是鈍角，65+115=180。"
+      "設角 A＝x°，則「角 B 是角 A 的 2 倍少 15°」表示 B＝(2x－15)°。",
+      "A、B 互補，所以 x＋(2x－15)＝180，整理得 3x＝195，解得 x＝65。",
+      "因此 A＝65°，B＝2×65°－15°＝115°；兩角相加為 180°，符合互補。",
+      "65° 小於 90°，所以 A 是銳角；115° 介於 90° 與 180° 之間，所以 B 是鈍角。"
     ],
     "alternativeMethods": [
       "可設 B=y°，則 A=(y+15)÷2，再代入 A+B=180 求 y=115。"
@@ -1243,7 +1260,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c5be6bfa3c5a1a2a1286b64497e7adcf21e83a8672c77dcbc6e66aed2638713c"
+    "contentSha256": "0fd91bac5b26c65433119a506aa6fc6317d5c8c50bec082b00e252167566a86a"
   }
 ];
 
@@ -1252,7 +1269,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v001",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "69463eaf4b121c74528a063ac89510ae4f31322824c955fd53482dfd699b41f7",
+    "contentSha256": "eabfaed57adf72f95231dde00b5690479c3ee525b2c54ae4d6421983cc97dac8",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "按角度範圍重查，89° 未達直角界線。",
@@ -1287,7 +1304,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v002",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "bd4c7c2707646c2a63d5b932fad046ca882cee79e891526d5cf2f15a33fa8106",
+    "contentSha256": "13ea26d4673905e6e6d47cecca8a53b026856e7444d41a028d6177513d42b50f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "逐一比較可知只有 90° 符合直角定義。",
@@ -1322,7 +1339,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v003",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "cfa0b62286ea3e11baddde4d1b8ff64051a2ced6c46804cd06369f381364396e",
+    "contentSha256": "21eaa7eaa1be890662fc72d55085e84ce6534131c68ab77caabe2855c8801d54",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重算兩角和為 90°，唯一對應互餘。",
@@ -1357,7 +1374,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v004",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "a5066dcf0aaeb9f524932218d6148a61b89aec71e0be251bdab2c9930c29d5ce",
+    "contentSha256": "ad5f43813be3d4945e9a8c568438fe3976620fff93426de4ef3bd289fd6ee150",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由互餘定義重算，22° 與 68° 合為 90°。",
@@ -1392,7 +1409,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v005",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "e6644b35e9a553a7c5efe1dae084e0a1c16d88aeca8b05f976b867eb8311c0c6",
+    "contentSha256": "634599e5b71748e4e6f26af109330375df6dbee262720217b31cb0bf365f733a",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重算差為 43°，且總和回到 180°。",
@@ -1427,7 +1444,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v006",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "7fa249e1abea3d1c30f16070c92d61e8c4b5a815858b6c61fa39da60a284c020",
+    "contentSha256": "83c47d4ac0be8588d4d26592d4590c8abac50fec96efe4d9809b8cf8c0937a33",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "比例單位角 36°，較小角為 2×36°=72°。",
@@ -1462,7 +1479,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v007",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "273aad303c40594f1f24d698b3e302e2974a44552a405426da37d316543114ee",
+    "contentSha256": "3560cb0aa9840e8caf7937dfd6340723da3e3ad6474e7c56429489cd1a4a2627",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重建等式後得到 x=17，驗算 57+33=90。",
@@ -1497,7 +1514,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v008",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "4b2ac4a0936db106320df55795eedaff2dcf7eae1c07605422efec27371acaf9",
+    "contentSha256": "a0ab84fb168c5c654186429e5f4a5ed61b2285a3a8e7551bf94b669265657ea9",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立驗算 78+102=180 且 102−78=24。",
@@ -1532,7 +1549,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v009",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "9d10e905144476446ceb9754b6ab675576e4bbe1bb6c9d8074548e3349b7b5e9",
+    "contentSha256": "04fe75a55dc3f7817eddd5fad4f581f44a76108ae2fe844d85939dfd11df98ed",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "逐一重算四組總和，第一指定組不符合互餘。",
@@ -1567,7 +1584,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v010",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "cfa08904a834778f5dc64ec2cc1feab432865f09c6b3a21883bf23ca0fb600a6",
+    "contentSha256": "6d23e44011110e821280194c12c1b03983495965192f1afde1c6947442d1a384",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "以門軸起始方向為同一基準，90−65=25。",
@@ -1602,7 +1619,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v011",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "90e81fbeb15aed8f97ca7025a2754bee15083944e049432726fbf668df376ae2",
+    "contentSha256": "ae0227f5fbd0e474fa409d9a1bab7121205015ed1dbdf063b28aec4813f25f69",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "驗算 112°+68°=180°，符合規格。",
@@ -1637,7 +1654,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s002-v012",
     "unitId": "u08",
     "skillId": "angle-types-measure",
-    "contentSha256": "85aa4ca438f8e05463528b0d5cdc373172f19edda7554b3e3fe0b2face4393b1",
+    "contentSha256": "10099f705f396185582d1d82078b6274c8a31fbe05a9661fa1a8eda3912fd6d0",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以分數代回，125/3+145/3=270/3=90。",

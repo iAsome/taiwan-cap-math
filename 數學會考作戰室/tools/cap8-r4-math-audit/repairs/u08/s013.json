@@ -1,0 +1,35 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u08",
+  "batch":"009-u08-complete",
+  "skills":["s013"],
+  "mc":[
+    {"questionId":"u08-s013-v001","expectedContentSha256":"10691ba0b97ba2aa130a7af3abfbe01d310abc1f730b4e6db74595f7a776ff02","appendText":{"explanation":"最大值等於三只保證兩堆中至少一堆達三，另一堆可為一、二或三；因此相等、總和與最小值敘述都不是必然。","misconceptionTarget":"也可能把欄高三平均分配到兩個位置，誤把最大值條件當成總和條件。"},"appendArray":{"steps":["用高度組合三與一作反例排除兩堆皆三。","確認最大值式在所有符合輪廓的配置中都成立。"]}},
+    {"questionId":"u08-s013-v002","expectedContentSha256":"4970676580a827c0ba3c7e85641965c28613a84c05b79bdaa857a5764469a328","appendText":{"explanation":"每個正視欄只有一個占用位置，欄高直接為二、一；側視唯一一列同時看見兩堆，只留下較高的二，不能把兩堆相加成三。","misconceptionTarget":"還可能把正視欄位順序由右向左讀，得到顛倒的高度序列。"},"appendArray":{"steps":["確認兩位置同屬側視的第一列。","對該列高度二與一取最大值二。"]}},
+    {"questionId":"u08-s013-v003","expectedContentSha256":"fea49fdf3aa8b7242ccc77a092df4c91178d985c027a23c90cb0cac79be716f1","appendText":{"explanation":"每個占用位置的高度就是該處單位方塊數，三處依序有二、三、一塊；逐處相加為六，而占用格數三只表示底層下限。","misconceptionTarget":"也可能只取最高的三層當總數，忽略另外兩個占用位置。"},"appendArray":{"steps":["將每一位置高度轉成該處方塊數。","用二加三加一驗算總和為六。"]}},
+    {"questionId":"u08-s013-v004","expectedContentSha256":"e9fca3ff659440a99a20cfa209f5a5870d1bf2197984305b4de6935bce63a225","appendText":{"explanation":"第二列在俯視中只有位置一逗號二，所以側視第二列最大值三只能由這一堆達成；代回正視第一欄也仍能得到高度三。","misconceptionTarget":"也可能只看正視第一欄有兩堆，便忽略側視單一位置已能唯一決定高度。"},"appendArray":{"steps":["把側視第二列的最大值條件寫成單一高度。","代回第一欄最大值，確認與正視高度三相容。"]}},
+    {"questionId":"u08-s013-v005","expectedContentSha256":"6e74a27365b2aa4da05fb799b5a933836401d4389e5b1b51bbd63cf7bf4ec4d7","appendText":{"explanation":"四格先各一塊共四；高度三的堆增加二塊，高度二的交叉堆再增加一塊，合計七。兩個加高位置不能合併，因指定欄列交會不同。","misconceptionTarget":"還可能把高度三與二放在同一格，導致另一個需要高度二的欄或列沒有達標。"},"appendArray":{"steps":["以四個底層加上兩個必要增量建立下界七。","逐欄逐列取最大值，驗證配置確實可達下界。"]}},
+    {"questionId":"u08-s013-v006","expectedContentSha256":"6c17ecb08a61e44c825f63ffbe05dac61725048b7a0808edfe20096ac833d1c8","appendText":{"explanation":"任何實際最高堆都同時屬於某正視欄與某側視列，因此兩方向序列的全域最大值必相同；四與三不同，無論總數或占用格數都無法修補。","misconceptionTarget":"也可能把兩方向視圖當成互不相關的兩個物體，沒有追蹤同一最高堆。"},"appendArray":{"steps":["指出正視與側視都在同一組高度中取全域最大值。","由四不等於三判定不存在任何相容配置。"]}},
+    {"questionId":"u08-s013-v007","expectedContentSha256":"3d12f45b8fb5af130df4e8f61e90f1ac373ece24e9432017f6ce3c9bd0fe45a9","appendText":{"explanation":"六格底層先給六塊，第一與第三欄各需一堆升到三，各增加二塊；第二欄與第二列可共享一個二高堆，再增加一塊，總數十一。","misconceptionTarget":"也可能只設一個三高堆，忽略另一個正視欄也明確要求最高三。"},"appendArray":{"steps":["由三個正視欄分別建立不可合併的高度需求。","代回兩個側視列，確認最高值依序為三與二。"]}},
+    {"questionId":"u08-s013-v008","expectedContentSha256":"2aa1258d772434f64fbc4c4e049eaed3a4fffd820e2e96043dce089e31b805fc","appendText":{"explanation":"每格不能超過其正視欄高與側視列高兩者中的較小值；六格上限逐一相加為十三，且第一欄能達三、第二欄達二，各列也達二、三、二。","misconceptionTarget":"還可能把每格都設成三，造成第二欄與第一、三列的輪廓超過規格。"},"appendArray":{"steps":["逐格使用欄高與列高的共同上限。","將最大配置代回全部五個欄列最大值。"]}},
+    {"questionId":"u08-s013-v009","expectedContentSha256":"9267d95c2f6251973892f523575b0cdfbda86f938fe616885484ff8f9ff54e76","appendText":{"explanation":"每列每欄至少有一個二；四個二有一種，三個二可任缺一格有四種，兩個二只能位於兩條對角線有兩種，合計七種且互不重複。","misconceptionTarget":"也可能把旋轉後的配置全部視為同一種，或遺漏三個二的四個缺格位置。"},"appendArray":{"steps":["證明只有一個二時必有一列或一欄全為一。","依二的個數二、三、四分類並相加。"]}},
+    {"questionId":"u08-s013-v010","expectedContentSha256":"8235650416e3218e23271efdccdc8e9714b2b5471307a01ab210648877d99850","appendText":{"explanation":"四個占用位置先各一箱共四箱；為使全域最高達三，其中一堆要再加兩箱，同一高堆可同時滿足正視與側視，所以至少六箱。","misconceptionTarget":"還可能為正視與側視各另設一個三高堆，將下界不必要地提高。"},"appendArray":{"steps":["以四個占用位置建立四箱底層。","讓同一位置升到三層並驗證兩方向最高皆為三。"]}},
+    {"questionId":"u08-s013-v011","expectedContentSha256":"e86c81c859f3eb21fcb8fbfc3325c1f9cc423fc5eb8f1fbb54f10d71bc196fe6","appendText":{"explanation":"正確配置的兩欄最大值為二、三，兩列最大值也為二、三；其餘配置至少有一個欄或列的最大值錯誤，不能只核對一半條件。","misconceptionTarget":"也可能看到配置中出現二與三就選取，沒有依指定座標分欄分列驗算。"},"appendArray":{"steps":["對每個候選分別計算兩個欄最大值。","再計算兩個列最大值並要求兩序列同時相符。"]}},
+    {"questionId":"u08-s013-v012","expectedContentSha256":"ef264ed951601ed3e3db770f8baea31fcae099517b1ff25411979e5033a47a7e","set":{"text":"自動倉儲有 2×2 四個堆位，四格都占用。系統要求正視欄高 [2,4]、側視列高 [4,2]，並限制每堆不得超過 4 層。下列哪一項是符合要求的最少箱數？"},"appendText":{"explanation":"四格底層共四箱；在第二欄第一列設四高堆增加三箱，再於第一欄第二列設二高堆增加一箱，其餘維持一層，總數八且四個輪廓值都吻合。","misconceptionTarget":"也可能把題目問的最少箱數誤讀成不同配置的種類數，或忽略高度二的欄列要求。"},"appendArray":{"steps":["先用四個占用格建立四箱下界。","代回正視二、四與側視四、二，確認八箱配置可達且最少。"]}
+    }
+  ],
+  "constructedResponse":[
+    {"questionId":"u08-s013-cr001","expectedContentSha256":"03da202add2885f6c377958c5bc4dd1701a58df7316229aaff2304a3616bec45","appendArray":{"standardSolution":["分別代入h11等於一與二，都得到正視三、二及側視二、三；h11若超過二會破壞第一列側視上限，範圍完整。"],"reasoningSteps":["用兩個端點配置與超界反例確認所有可能。"],"commonErrors":["只給一組配置便宣稱高度唯一，沒有檢查h11的另一個正整數可能。"]}},
+    {"questionId":"u08-s013-cr002","expectedContentSha256":"58cdd7e5488159b03016fde1691092e6f53ed0854f82f243b79e417e536e1cb1","appendArray":{"standardSolution":["最少配置總和七、最多配置總和九；兩端的每欄最大值都為三、二，每列最大值都為二、三，故上下界均可達。"],"reasoningSteps":["用逐欄逐列最大值驗證兩個端點配置。"],"commonErrors":["求最多時只把四個共同上限相加，卻未確認每個規定最大值實際有位置達到。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u08-s013-lecture-r1","expectedContentSha256":"eda8ee21332da9364e88133d69de7aa278a0d5c3100f3288291f26cafc70219e","appendArray":{"conceptDevelopment":["判定最少或最多不只要算出界值，還必須同時給下界或上界理由與可達配置；界值若無法由某組正整數高度實現，就不是實際答案。"],"stepByStepMethod":[{"step":5,"instruction":"對最小或最大界值建立可達配置，並逐欄逐列代回。","check":"每個占用位置為正整數高度，且所有指定最大值都恰好達到。"}]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"俯視占用 (1,1)、(1,2)、(2,1)，正視兩欄高度 [2,1]。這表示什麼？","solutionSteps":["依x座標把位置分成第一欄兩格與第二欄一格。","第一欄兩高度最大值為二。","第二欄唯一高度為一。"],"answer":"max(h11,h12)=2，且 h21=1。","why":"正視沿前後方向壓縮，同一x欄只留下最高堆；欄高是最大值而不是欄內總和，也不要求每格都達到最大值。"},
+      {"exampleId":"L2","prompt":"若側視兩列高度 [2,1]，且沿用上例，配置 h11=2、h12=1、h21=1 是否相容？","solutionSteps":["正視第一欄最大二、第二欄最大一。","側視第一列取h11與h21最大值二。","側視第二列只有h12等於一，兩序列皆相符。"],"answer":"相容。","why":"相容配置必須同時通過正視的逐欄最大值與側視的逐列最大值；只驗其中一個方向不能保證來自同一立體。"},
+      {"exampleId":"L3","prompt":"俯視只有 (1,1)、(2,1)，正視 [3,2]，側視只有一列高度 [3]，最少方塊數？","solutionSteps":["兩位置各自是唯一正視欄，故高度必為三與二。","側視唯一一列的最大值為三，已由三高堆滿足。","總數三加二等於五。"],"answer":"5 塊。","why":"兩個正視欄的需求不能合併到同一位置，但側視最高三可由既有三高堆共享；逐項分辨可合併與不可合併的限制才會得到最少值。"},
+      {"exampleId":"L4","prompt":"正視最高為 4，側視所有列最高都不超過 3，能否相容？","solutionSteps":["正視最高四表示存在一個實際四高堆。","該位置必屬於某一側視列。","那一列最高至少四，與所有列至多三矛盾。"],"answer":"不能相容。","why":"同一立體的全域最高堆從正面與側面都會出現在某個輪廓中，因此兩個水平視圖的全域最大高度必須一致。"}
+    ]}}
+  ],
+  "drawingSpecs":[],
+  "textFiles":[]
+}

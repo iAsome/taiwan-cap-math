@@ -1,0 +1,4346 @@
+{
+  "schemaVersion": "cap8-r4-math-normalized-batch-audit-r1",
+  "contentVersion": "72c20aa6e8b15bbab9244693befb14dcaf6ff1b6ea6d1cddadfc265efc4298a5",
+  "units": [
+    "u07",
+    "u08",
+    "u09"
+  ],
+  "counts": {
+    "units": 3,
+    "skills": 42,
+    "lectures": 42,
+    "mc": 504,
+    "cr": 84,
+    "figures": 14
+  },
+  "findingCounts": {
+    "BLOCKER": 0,
+    "HIGH": 52,
+    "MEDIUM": 565,
+    "LOW": 0
+  },
+  "findings": [
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u07-fig-and-intersection",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u07-fig-number-line-translation",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u07-fig-symbol-number-line",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u08-s001-fig001",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u08-s003-fig001",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u08-s004-fig001",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u08-s012-fig001",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u09-fig-bar-01",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u09-fig-bar-02",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u09-fig-bar-03",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u09-fig-hist-01",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u09-fig-line-01",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u09-fig-line-02",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "figure-description-incomplete",
+      "id": "u09-fig-pie-01",
+      "field": "drawingSpec",
+      "evidence": "altText or accessibility description missing"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s001-cr001",
+      "field": "figureAlt",
+      "evidence": "u07-fig-symbol-number-line"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s001-cr002",
+      "field": "figureAlt",
+      "evidence": "u07-fig-symbol-number-line"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s001-v002",
+      "field": "figureAlt",
+      "evidence": "u07-fig-symbol-number-line"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s001-v005",
+      "field": "figureAlt",
+      "evidence": "u07-fig-symbol-number-line"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s001-v008",
+      "field": "figureAlt",
+      "evidence": "u07-fig-symbol-number-line"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s001-v012",
+      "field": "figureAlt",
+      "evidence": "u07-fig-symbol-number-line"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-cr001",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-cr002",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v001",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v002",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v003",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v004",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v005",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v006",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v008",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v009",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v010",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v011",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s004-v012",
+      "field": "figureAlt",
+      "evidence": "u07-fig-number-line-translation"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s007-cr001",
+      "field": "figureAlt",
+      "evidence": "u07-fig-and-intersection"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s007-cr002",
+      "field": "figureAlt",
+      "evidence": "u07-fig-and-intersection"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u07-s007-v002",
+      "field": "figureAlt",
+      "evidence": "u07-fig-and-intersection"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u08-s001-v004",
+      "field": "figureAlt",
+      "evidence": "u08-s001-fig001"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u08-s003-v004",
+      "field": "figureAlt",
+      "evidence": "u08-s003-fig001"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u08-s004-v004",
+      "field": "figureAlt",
+      "evidence": "u08-s004-fig001"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u08-s012-v004",
+      "field": "figureAlt",
+      "evidence": "u08-s012-fig001"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s003-cr002",
+      "field": "figureAlt",
+      "evidence": "u09-fig-bar-02"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s003-v001",
+      "field": "figureAlt",
+      "evidence": "u09-fig-bar-01"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s003-v005",
+      "field": "figureAlt",
+      "evidence": "u09-fig-bar-02"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s003-v012",
+      "field": "figureAlt",
+      "evidence": "u09-fig-bar-03"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s004-cr001",
+      "field": "figureAlt",
+      "evidence": "u09-fig-line-01"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s004-v001",
+      "field": "figureAlt",
+      "evidence": "u09-fig-line-01"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s004-v010",
+      "field": "figureAlt",
+      "evidence": "u09-fig-line-02"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s005-cr001",
+      "field": "figureAlt",
+      "evidence": "u09-fig-pie-01"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s005-v002",
+      "field": "figureAlt",
+      "evidence": "u09-fig-pie-01"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s006-cr001",
+      "field": "figureAlt",
+      "evidence": "u09-fig-hist-01"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s006-v001",
+      "field": "figureAlt",
+      "evidence": "u09-fig-hist-01"
+    },
+    {
+      "severity": "HIGH",
+      "rule": "rendered-figure-alt-missing",
+      "id": "u09-s015-cr002",
+      "field": "figureAlt",
+      "evidence": "u09-fig-bar-02"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s002-v002",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s002-v003",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s002-v004",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s002-v008",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s003-v002",
+      "field": "text+choices",
+      "evidence": "u07-s003-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s003-v005",
+      "field": "text+choices",
+      "evidence": "u07-s003-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s003-v007",
+      "field": "text+choices",
+      "evidence": "u07-s003-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s003-v008",
+      "field": "text+choices",
+      "evidence": "u07-s003-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s004-v002",
+      "field": "text+choices",
+      "evidence": "u07-s004-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s005-v001",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s005-v002",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s005-v004",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s005-v005",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s005-v007",
+      "field": "text+choices",
+      "evidence": "u07-s003-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s005-v008",
+      "field": "text+choices",
+      "evidence": "u07-s002-v001"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "question-essence-candidate",
+      "id": "u07-s007-v009",
+      "field": "text+choices",
+      "evidence": "u07-s007-v007"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "angle-types-measure",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "bar-chart-text",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "composite-area-text",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "contingency-table",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "cumulative-frequency",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "data-comparison-context",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "data-table-reading",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "frequency-table",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "geometry-basic-elements",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "geometry-literacy-context",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "histogram-read",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "inequality-and-word",
+      "field": "stepGuide",
+      "evidence": "4"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "inequality-number-line",
+      "field": "stepGuide",
+      "evidence": "4"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "inequality-sign-flip",
+      "field": "stepGuide",
+      "evidence": "4"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "inequality-solve-basic",
+      "field": "stepGuide",
+      "evidence": "4"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "inequality-symbol",
+      "field": "stepGuide",
+      "evidence": "4"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "line-chart-text",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "mean-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "mean-from-table",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "median-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "misleading-statistics-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "mode-range-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "orthographic-description",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "parallel-perpendicular-angles",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "perimeter-area-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "perpendicular-bisector-symmetry",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "pie-chart-percent",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "polygon-angle-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "quadrilateral-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "solid-views-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "statistics-literacy-context",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "triangle-angle-sum",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "triangle-basic-classification",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "unit-conversion-geometry",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-lecture-steps-short",
+      "id": "weighted-average-basic",
+      "field": "stepGuide",
+      "evidence": "0"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v001",
+      "field": "trap",
+      "evidence": "把「或等於」忽略，誤選嚴格大於。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v002",
+      "field": "trap",
+      "evidence": "把不等號當箭頭，或忽略嚴格不等號的空心端點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v003",
+      "field": "trap",
+      "evidence": "看到負數就選 −1，未實際比較負數大小。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v004",
+      "field": "trap",
+      "evidence": "交換不等式兩邊時保留原符號外觀，造成語意反向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v005",
+      "field": "trap",
+      "evidence": "只看射線方向，忘記實心點代表等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v006",
+      "field": "trap",
+      "evidence": "把端點 −2 納入，或負數大小比較錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v007",
+      "field": "trap",
+      "evidence": "把 p<2 誤讀成 p≤2。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v008",
+      "field": "trap",
+      "evidence": "把數線中央位置誤當 0，或無視端點標籤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v009",
+      "field": "trap",
+      "evidence": "只比較符號外觀，不檢查兩式的解集。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v010",
+      "field": "trap",
+      "evidence": "負小數大小判斷錯誤，或把「低於」當成「不高於」。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v011",
+      "field": "trap",
+      "evidence": "把安全上限誤寫成嚴格小於，或顛倒限制方向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s001-v012",
+      "field": "trap",
+      "evidence": "把「未滿」當「至多」，或把最大整數解當成整個解集。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v001",
+      "field": "trap",
+      "evidence": "移除常數時做錯運算或擅自加入等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v002",
+      "field": "trap",
+      "evidence": "將減 4 移除時誤作減法，或漏保留等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v003",
+      "field": "trap",
+      "evidence": "誤以為所有除法都要變號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v004",
+      "field": "trap",
+      "evidence": "計算 20−2 或端點包含性錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v005",
+      "field": "trap",
+      "evidence": "移除 −9 時使用錯誤符號，或把嚴格小於改成含等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v006",
+      "field": "trap",
+      "evidence": "只代入部分選項，或忘記端點 6 包含。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v007",
+      "field": "trap",
+      "evidence": "把 a 直接當成解集端點，或解 12/a=3 時顛倒。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v008",
+      "field": "trap",
+      "evidence": "清除分母時誤變號或常數移項錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v009",
+      "field": "trap",
+      "evidence": "把「可得到答案」與「符合指定策略的第一步」混為一談。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v010",
+      "field": "trap",
+      "evidence": "把固定量與每單位量混淆，或把至少寫成嚴格大於。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v011",
+      "field": "trap",
+      "evidence": "把「超過」當成「至少」，或對整數時間錯誤取整。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s002-v012",
+      "field": "trap",
+      "evidence": "小數運算錯誤，或看到「不少於」卻排除剛好達標。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v001",
+      "field": "trap",
+      "evidence": "移項時未改項的加減號，或誤加等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v002",
+      "field": "trap",
+      "evidence": "係數相減或常數移項錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v003",
+      "field": "trap",
+      "evidence": "把移項簡記誤成任意改符號或漏項。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v004",
+      "field": "trap",
+      "evidence": "分配律漏乘 2，或端點誤含。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v005",
+      "field": "trap",
+      "evidence": "將 4≥x 改寫時不等號方向錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v006",
+      "field": "trap",
+      "evidence": "只背「移項變號」但未判斷原項符號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v007",
+      "field": "trap",
+      "evidence": "分配律或係數相減錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v008",
+      "field": "trap",
+      "evidence": "括號前負號未改變括號內 −3 的符號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v009",
+      "field": "trap",
+      "evidence": "把參數直接與端點相等，未先整理不等式。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v010",
+      "field": "trap",
+      "evidence": "只抓「折價」卻未正確建立價格式。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v011",
+      "field": "trap",
+      "evidence": "移項負的變動項時方向或取整錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s003-v012",
+      "field": "trap",
+      "evidence": "把低於寫成 ≤，或把 t>4 回答為 4。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v001",
+      "field": "trap",
+      "evidence": "忽略等號或把大於畫向左。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v002",
+      "field": "trap",
+      "evidence": "因端點是負數而誤向右。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v003",
+      "field": "trap",
+      "evidence": "只看方向而漏看端點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v004",
+      "field": "trap",
+      "evidence": "代數解正確但圖示端點或方向錯。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v005",
+      "field": "trap",
+      "evidence": "交換左右後把關係寫成 x>4。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v006",
+      "field": "trap",
+      "evidence": "只看符號外觀不同就認為解集不同。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v007",
+      "field": "trap",
+      "evidence": "只檢查一個測試值，未同時使用包含與排除條件。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v008",
+      "field": "trap",
+      "evidence": "除以負數未變號，或嚴格端點畫實心。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v009",
+      "field": "trap",
+      "evidence": "只把端點 −1 變成 1，卻忘記射線方向反轉。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v010",
+      "field": "trap",
+      "evidence": "把安全上限誤當嚴格小於或下限。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v011",
+      "field": "trap",
+      "evidence": "把小數寫法 2.0 誤認為比 2 大。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s004-v012",
+      "field": "trap",
+      "evidence": "把解集內任意數誤認為端點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v001",
+      "field": "trap",
+      "evidence": "除以負數時忘記反向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v002",
+      "field": "trap",
+      "evidence": "只改數值正負而沒有改不等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v003",
+      "field": "trap",
+      "evidence": "只計算乘積，不處理次序反轉。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v004",
+      "field": "trap",
+      "evidence": "6÷(−2) 的正負或 ≥ 反向錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v005",
+      "field": "trap",
+      "evidence": "只注意端點 −4，未正確決定方向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v006",
+      "field": "trap",
+      "evidence": "看見負數就變號，而未區分加法與除法。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v007",
+      "field": "trap",
+      "evidence": "係數 3−7=−4 後忘記變號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v008",
+      "field": "trap",
+      "evidence": "負號分配或 −6÷−6 計算錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v009",
+      "field": "trap",
+      "evidence": "忽略 −a 的負性，或解分式方程錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v010",
+      "field": "trap",
+      "evidence": "負溫度與負係數造成方向誤判，或把低於當含等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v011",
+      "field": "trap",
+      "evidence": "將高度的負號忽略或除負數未變號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s005-v012",
+      "field": "trap",
+      "evidence": "把 d<6 回答為 6，或忽略嚴格餘額。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v001",
+      "field": "trap",
+      "evidence": "把嚴格上界當成可取值。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v002",
+      "field": "trap",
+      "evidence": "兩端包含性混淆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v003",
+      "field": "trap",
+      "evidence": "看到小數端點就機械加減 1。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v004",
+      "field": "trap",
+      "evidence": "解式後漏含端點或未回答最大整數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v005",
+      "field": "trap",
+      "evidence": "雙邊操作只處理一側，或計數漏加 1。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v006",
+      "field": "trap",
+      "evidence": "對負小數使用錯誤取整方向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v007",
+      "field": "trap",
+      "evidence": "解集計數或等差數列總和錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v008",
+      "field": "trap",
+      "evidence": "嚴格左端點誤納入 −3。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v009",
+      "field": "trap",
+      "evidence": "未使用 k 為整數的條件。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v010",
+      "field": "trap",
+      "evidence": "兩端包含性造成座位數 off-by-one。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v011",
+      "field": "trap",
+      "evidence": "忽略至少端點，或用上界求最少。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s006-v012",
+      "field": "trap",
+      "evidence": "負整數列舉或加總錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v001",
+      "field": "trap",
+      "evidence": "雙邊端點包含性混淆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v002",
+      "field": "trap",
+      "evidence": "把且當成只需滿足其中一條。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v003",
+      "field": "trap",
+      "evidence": "把兩個解集全部列出，未取交集。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v004",
+      "field": "trap",
+      "evidence": "以為交集必須是一段有長度的區間。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v005",
+      "field": "trap",
+      "evidence": "解完兩式未把限制合併。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v006",
+      "field": "trap",
+      "evidence": "只檢查其中一個界限。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v007",
+      "field": "trap",
+      "evidence": "兩條件端點符號在合併時被交換。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v008",
+      "field": "trap",
+      "evidence": "未利用 a、b 為整數與端點開閉。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v009",
+      "field": "trap",
+      "evidence": "第一式負數變號或交集端點錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v010",
+      "field": "trap",
+      "evidence": "只符合其中一條就判定可搭。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v011",
+      "field": "trap",
+      "evidence": "負端點與包含性造成計數錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s007-v012",
+      "field": "trap",
+      "evidence": "把其中一個含等號端點排除。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v001",
+      "field": "trap",
+      "evidence": "把至多與至少混淆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v002",
+      "field": "trap",
+      "evidence": "把超過當成至少。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v003",
+      "field": "trap",
+      "evidence": "把未滿誤成不超過。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v004",
+      "field": "trap",
+      "evidence": "負下界使方向或等號判斷錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v005",
+      "field": "trap",
+      "evidence": "對嚴格小數下界錯誤向上多取一格。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v006",
+      "field": "trap",
+      "evidence": "把實數問題誤當只取一位小數或整數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v007",
+      "field": "trap",
+      "evidence": "只對照一個端點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v008",
+      "field": "trap",
+      "evidence": "負數範圍加總錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v009",
+      "field": "trap",
+      "evidence": "把嚴格小於 12 誤以為仍包含整數 12。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v010",
+      "field": "trap",
+      "evidence": "把不超過當成未滿，誤排除 120。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v011",
+      "field": "trap",
+      "evidence": "把 1.50 誤認為大於 1.5。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s008-v012",
+      "field": "trap",
+      "evidence": "未將儀器精度轉成離散步距，或誤含 6.5。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v001",
+      "field": "trap",
+      "evidence": "單價與數量關係建模錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v002",
+      "field": "trap",
+      "evidence": "漏掉原有 12 顆或把至少寫錯。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v003",
+      "field": "trap",
+      "evidence": "固定費漏算或最大整數解錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v004",
+      "field": "trap",
+      "evidence": "剩餘量模型或負數變號錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v005",
+      "field": "trap",
+      "evidence": "把超過寫成 ≥，回答 8。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v006",
+      "field": "trap",
+      "evidence": "忽略已有水量或把容量上限排除。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v007",
+      "field": "trap",
+      "evidence": "嚴格剩餘上界與負數變號處理錯。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v008",
+      "field": "trap",
+      "evidence": "只解代數而忘記幾何量必須為正。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v009",
+      "field": "trap",
+      "evidence": "比較兩個變動量時只看每日增加量。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v010",
+      "field": "trap",
+      "evidence": "把 5.6 四捨五入為 6。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v011",
+      "field": "trap",
+      "evidence": "漏算目前人數或錯誤向上取整。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s009-v012",
+      "field": "trap",
+      "evidence": "將超過 45 誤成至少 45，或對完整盤數取整錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v001",
+      "field": "trap",
+      "evidence": "用四捨五入代替可行性取整。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v002",
+      "field": "trap",
+      "evidence": "漏掉等號。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v003",
+      "field": "trap",
+      "evidence": "只看式子形式而不對照語句。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v004",
+      "field": "trap",
+      "evidence": "只採用代數解，忽略情境限制。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v005",
+      "field": "trap",
+      "evidence": "最低需求仍向下取整。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v006",
+      "field": "trap",
+      "evidence": "只驗證答案本身，未驗證最大性。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v007",
+      "field": "trap",
+      "evidence": "未知數消去後硬造一個 x 的範圍。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v008",
+      "field": "trap",
+      "evidence": "未知數消去後錯誤移動常數產生虛假邊界。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v009",
+      "field": "trap",
+      "evidence": "只檢查代數外形，不檢查單位。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v010",
+      "field": "trap",
+      "evidence": "以四捨五入或接近程度代替載重限制。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v011",
+      "field": "trap",
+      "evidence": "忽略單位而直接代數運算。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s010-v012",
+      "field": "trap",
+      "evidence": "分別看每條件而未檢查共同可行性。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v001",
+      "field": "trap",
+      "evidence": "把 7.69 四捨五入為 8。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v002",
+      "field": "trap",
+      "evidence": "漏掉運費或把運費按本計算。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v003",
+      "field": "trap",
+      "evidence": "把「八折」誤解為減 8% 或乘 8。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v004",
+      "field": "trap",
+      "evidence": "會員費重複乘堂數或漏算。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v005",
+      "field": "trap",
+      "evidence": "重複選項破壞唯一答案，且可能錯誤四捨五入。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v006",
+      "field": "trap",
+      "evidence": "把 15% 當成付 15%，或最大件數錯誤取整。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v007",
+      "field": "trap",
+      "evidence": "只檢查最低值或只解預算，不取交集。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v008",
+      "field": "trap",
+      "evidence": "直接套低單價而不檢查滿件門檻。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v009",
+      "field": "trap",
+      "evidence": "忽略免運條件或把運費算入滿額門檻。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v010",
+      "field": "trap",
+      "evidence": "把保險費乘人數或漏算。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v011",
+      "field": "trap",
+      "evidence": "把月租當每 GB 費或漏掉固定費。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s011-v012",
+      "field": "trap",
+      "evidence": "只回答預算上界，未檢查最低成席條件。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v001",
+      "field": "trap",
+      "evidence": "未區分固定與變動資訊。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v002",
+      "field": "trap",
+      "evidence": "多重規則連接詞與端點錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v003",
+      "field": "trap",
+      "evidence": "只算公式，不檢查分段一致性。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v004",
+      "field": "trap",
+      "evidence": "漏固定費或未找最大值。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v005",
+      "field": "trap",
+      "evidence": "只比較每單位費，忽略固定費。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v006",
+      "field": "trap",
+      "evidence": "只解最低需求或只看容量，未同時驗證。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v007",
+      "field": "trap",
+      "evidence": "把 25d 直接加在 90 上，重複計費前 3 公里。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v008",
+      "field": "trap",
+      "evidence": "把所有度數都用第二段費率或忽略前段累積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v009",
+      "field": "trap",
+      "evidence": "只解其中一個限制或錯誤取整。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v010",
+      "field": "trap",
+      "evidence": "只看 B 每 GB 較便宜就立即選 B。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v011",
+      "field": "trap",
+      "evidence": "把 4.82 四捨五入為 5，忽略整車卸下。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u07-s012-v012",
+      "field": "trap",
+      "evidence": "時段換算或正確選項索引錯誤。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v001",
+      "field": "trap",
+      "evidence": "把射線誤認為有兩端點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v002",
+      "field": "trap",
+      "evidence": "把第二個字母誤當端點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v003",
+      "field": "trap",
+      "evidence": "把角記號第一個字母當頂點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v004",
+      "field": "trap",
+      "evidence": "把直線當成有方向的射線。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v005",
+      "field": "trap",
+      "evidence": "只看包含相同字母而忽略端點與方向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v006",
+      "field": "trap",
+      "evidence": "把相交自動解讀為垂直。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v007",
+      "field": "trap",
+      "evidence": "只數相鄰線段或將倒序重複。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v008",
+      "field": "trap",
+      "evidence": "在同一頂點有多個角時仍只寫單字母。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v009",
+      "field": "trap",
+      "evidence": "把共線誤認為一定同方向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v010",
+      "field": "trap",
+      "evidence": "忽略『起點』或『繼續延伸』而選錯物件。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v011",
+      "field": "trap",
+      "evidence": "把『同時在線上』誤解成距離相等。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s001-v012",
+      "field": "trap",
+      "evidence": "只寫 ∠O 而忽略多個角的歧義。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v001",
+      "field": "trap",
+      "evidence": "把接近 90° 的角誤判為直角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v002",
+      "field": "trap",
+      "evidence": "把 180° 的平角當直角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v003",
+      "field": "trap",
+      "evidence": "把互餘與互補的總和混淆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v004",
+      "field": "trap",
+      "evidence": "誤用 180° 求補角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v005",
+      "field": "trap",
+      "evidence": "把補角總和誤用成 360°。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v006",
+      "field": "trap",
+      "evidence": "只取一份或答較大角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v007",
+      "field": "trap",
+      "evidence": "把互餘總和設為 180° 或漏合併常數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v008",
+      "field": "trap",
+      "evidence": "將 24° 直接從 180° 減去而未平均分差。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v009",
+      "field": "trap",
+      "evidence": "只看到其中有 90° 就誤以為與任何角互餘。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v010",
+      "field": "trap",
+      "evidence": "看到『規範』後誤選補角 180°。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v011",
+      "field": "trap",
+      "evidence": "把道路轉向誤用一周角 360°。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s002-v012",
+      "field": "trap",
+      "evidence": "只比較兩角是否相等，忽略互餘是總和條件。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v001",
+      "field": "trap",
+      "evidence": "把 ⟂ 與 ∥ 混淆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v002",
+      "field": "trap",
+      "evidence": "把平角或一周角當成單一交角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v003",
+      "field": "trap",
+      "evidence": "把對頂角誤當鄰補角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v004",
+      "field": "trap",
+      "evidence": "把相鄰角誤當對頂角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v005",
+      "field": "trap",
+      "evidence": "把對頂角誤設為和 180°。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v006",
+      "field": "trap",
+      "evidence": "只看到 3x 而漏掉常數 6。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v007",
+      "field": "trap",
+      "evidence": "只使用對頂相等而漏求相鄰角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v008",
+      "field": "trap",
+      "evidence": "把定理『對頂角相等』錯當成逆命題。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v009",
+      "field": "trap",
+      "evidence": "漏掉『同一平面』而把空間異面線也稱平行。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v010",
+      "field": "trap",
+      "evidence": "直接把道路間 90° 當成對基準的角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v011",
+      "field": "trap",
+      "evidence": "由垂直錯推等長。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s003-v012",
+      "field": "trap",
+      "evidence": "把線段未交直接當成直線平行。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v001",
+      "field": "trap",
+      "evidence": "把兩已知角相加當答案。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v002",
+      "field": "trap",
+      "evidence": "只檢查總和而忽略 0°。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v003",
+      "field": "trap",
+      "evidence": "忘記扣除直角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v004",
+      "field": "trap",
+      "evidence": "漏掉常數正負或把小數視為不允許。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v005",
+      "field": "trap",
+      "evidence": "誤求外角的相鄰內角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v006",
+      "field": "trap",
+      "evidence": "把頂角也視為與底角相等。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v007",
+      "field": "trap",
+      "evidence": "把單位份或中間角當最大角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v008",
+      "field": "trap",
+      "evidence": "直接把130°平均分配，或把較大比例份當較小角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v009",
+      "field": "trap",
+      "evidence": "把外角與三個內角全部加成 180°。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v010",
+      "field": "trap",
+      "evidence": "把兩底角總和當頂角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v011",
+      "field": "trap",
+      "evidence": "把誤差 1° 直接加到角度和。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s004-v012",
+      "field": "trap",
+      "evidence": "算出角度後忘記與門檻比較，或只答警告不給角度。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v001",
+      "field": "trap",
+      "evidence": "看到三個數就誤判不等邊。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v002",
+      "field": "trap",
+      "evidence": "把最大角接近 90° 誤當直角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v003",
+      "field": "trap",
+      "evidence": "把一周角 360° 平均分。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v004",
+      "field": "trap",
+      "evidence": "把按邊與按角分類混在一起。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v005",
+      "field": "trap",
+      "evidence": "把頂角當底角或忘記除以 2。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v006",
+      "field": "trap",
+      "evidence": "弄錯等長邊所對的底角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v007",
+      "field": "trap",
+      "evidence": "不檢查角度和就把 100° 當底角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v008",
+      "field": "trap",
+      "evidence": "以為等腰直角三角形可有兩個直角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v009",
+      "field": "trap",
+      "evidence": "由等腰過度推論正三角形或銳角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v010",
+      "field": "trap",
+      "evidence": "把外觀對稱當成三邊等長。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v011",
+      "field": "trap",
+      "evidence": "只以外觀估計角度或誤用四邊形角度。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s005-v012",
+      "field": "trap",
+      "evidence": "只做一套分類或把 88° 當直角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v001",
+      "field": "trap",
+      "evidence": "把三角形內角和直接套用。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v002",
+      "field": "trap",
+      "evidence": "把只有一組對邊平行與兩組對邊平行混淆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v003",
+      "field": "trap",
+      "evidence": "只選長方形或菱形而忽略最精確名稱。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v004",
+      "field": "trap",
+      "evidence": "把已知角總和當答案。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v005",
+      "field": "trap",
+      "evidence": "把對角相等誤用到鄰角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v006",
+      "field": "trap",
+      "evidence": "把周長誤算成邊長平方。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v007",
+      "field": "trap",
+      "evidence": "把相鄰角設為相等。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v008",
+      "field": "trap",
+      "evidence": "把必要條件誤當充分條件。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v009",
+      "field": "trap",
+      "evidence": "把分類名稱當互斥。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v010",
+      "field": "trap",
+      "evidence": "把看似方正的窗框直接稱正方形。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v011",
+      "field": "trap",
+      "evidence": "認為四邊等長必為正方形。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s006-v012",
+      "field": "trap",
+      "evidence": "只算第四角而不檢查對角關係。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v001",
+      "field": "trap",
+      "evidence": "直接算 n×180°。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v002",
+      "field": "trap",
+      "evidence": "把邊數或外角公式混入。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v003",
+      "field": "trap",
+      "evidence": "把內角或內角和當外角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v004",
+      "field": "trap",
+      "evidence": "把三角形個數 6 直接當成邊數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v005",
+      "field": "trap",
+      "evidence": "忘記把三角形數加回 2。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v006",
+      "field": "trap",
+      "evidence": "把外角當內角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v007",
+      "field": "trap",
+      "evidence": "用 180° 除外角或直接取 24。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v008",
+      "field": "trap",
+      "evidence": "直接以 360÷150 或把外角當邊數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v009",
+      "field": "trap",
+      "evidence": "把多出的三角形數當總邊數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v010",
+      "field": "trap",
+      "evidence": "把內角當成行進方向的外轉角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v011",
+      "field": "trap",
+      "evidence": "把誤差直接加到理論角或混用內角。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s007-v012",
+      "field": "trap",
+      "evidence": "只看角度大小而未反求整數邊數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v001",
+      "field": "trap",
+      "evidence": "只滿足垂直或中點其中一項。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v002",
+      "field": "trap",
+      "evidence": "把『平分』誤用到 PA 或 PB。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v003",
+      "field": "trap",
+      "evidence": "把所有等距點縮成唯一中點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v004",
+      "field": "trap",
+      "evidence": "把對稱軸誤認為與連線平行。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v005",
+      "field": "trap",
+      "evidence": "把必要條件之一當充分條件。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v006",
+      "field": "trap",
+      "evidence": "只檢查總和而忘記兩段相等。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v007",
+      "field": "trap",
+      "evidence": "由點到端點等距錯推原邊長或角度。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v008",
+      "field": "trap",
+      "evidence": "認為所有點都必移到另一側。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v009",
+      "field": "trap",
+      "evidence": "以為垂直平分線只含中點或單一點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v010",
+      "field": "trap",
+      "evidence": "只選中點，忽略平面其他等距位置。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v011",
+      "field": "trap",
+      "evidence": "只檢查摺線通過某一孔。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s008-v012",
+      "field": "trap",
+      "evidence": "把兩對稱點間距離當成單側軸距。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v001",
+      "field": "trap",
+      "evidence": "把面積或不完整邊數當周長。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v002",
+      "field": "trap",
+      "evidence": "混淆周長與面積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v003",
+      "field": "trap",
+      "evidence": "忘記除以 2 或單位漏平方。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v004",
+      "field": "trap",
+      "evidence": "只算長加寬或用面積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v005",
+      "field": "trap",
+      "evidence": "把斜邊當高度。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v006",
+      "field": "trap",
+      "evidence": "只計算其中一個圖形，或忘記梯形公式要除以 2。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v007",
+      "field": "trap",
+      "evidence": "以為同周長必同面積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v008",
+      "field": "trap",
+      "evidence": "把倍數方向倒置。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v009",
+      "field": "trap",
+      "evidence": "把面積與長度直接相減。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v010",
+      "field": "trap",
+      "evidence": "求成面積或忘記扣入口。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v011",
+      "field": "trap",
+      "evidence": "把周長當鋪設面積或漏乘需求率。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s009-v012",
+      "field": "trap",
+      "evidence": "忘記除以 2 或把面積當重量。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v001",
+      "field": "trap",
+      "evidence": "把挖除區相加或未扣除。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v002",
+      "field": "trap",
+      "evidence": "把面積相乘或相減。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v003",
+      "field": "trap",
+      "evidence": "忘記扣重疊或扣兩次。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v004",
+      "field": "trap",
+      "evidence": "長寬只各減一次邊寬。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v005",
+      "field": "trap",
+      "evidence": "只扣一區或把步道當新增面積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v006",
+      "field": "trap",
+      "evidence": "用邊長直接從面積相減。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v007",
+      "field": "trap",
+      "evidence": "把重疊扣兩次或完全不扣。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v008",
+      "field": "trap",
+      "evidence": "直接相加兩條道路面積，忘記扣重疊。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v009",
+      "field": "trap",
+      "evidence": "把挖角相加或尺寸錯配。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v010",
+      "field": "trap",
+      "evidence": "只扣一扇或把門洞加上。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v011",
+      "field": "trap",
+      "evidence": "忽略不重疊條件或只扣一區。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s010-v012",
+      "field": "trap",
+      "evidence": "把公分倍率直接套面積或未統一單位。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v001",
+      "field": "trap",
+      "evidence": "把倍率誤用 10 或除 100。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v002",
+      "field": "trap",
+      "evidence": "不同單位直接相減，或把差值單位寫錯。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v003",
+      "field": "trap",
+      "evidence": "把平方單位倍率只乘100，或忘記除以單片面積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v004",
+      "field": "trap",
+      "evidence": "只使用長度倍率 100。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v005",
+      "field": "trap",
+      "evidence": "未扣水域，或把平方公里倍率當公里倍率。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v006",
+      "field": "trap",
+      "evidence": "不同面積單位直接相減，或忘記扣除步道。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v007",
+      "field": "trap",
+      "evidence": "未統一單位或錯換小數點。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v008",
+      "field": "trap",
+      "evidence": "把面積單位直接線性換成邊長。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v009",
+      "field": "trap",
+      "evidence": "面積換算只用一次長度倍率或方向顛倒。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v010",
+      "field": "trap",
+      "evidence": "不同單位直接相減。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v011",
+      "field": "trap",
+      "evidence": "只依長度倍率移動兩位。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s011-v012",
+      "field": "trap",
+      "evidence": "把長度換算誤用面積倍率。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v001",
+      "field": "trap",
+      "evidence": "把正視與俯視方向混淆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v002",
+      "field": "trap",
+      "evidence": "把上方視角誤稱正視。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v003",
+      "field": "trap",
+      "evidence": "把高度帶入俯視圖。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v004",
+      "field": "trap",
+      "evidence": "把長誤當側視水平尺寸。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v005",
+      "field": "trap",
+      "evidence": "把占用格數直接當總塊數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v006",
+      "field": "trap",
+      "evidence": "未對齊共同方向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v007",
+      "field": "trap",
+      "evidence": "認為不同視向一定產生不同形狀。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v008",
+      "field": "trap",
+      "evidence": "由單一輪廓過度推論完整立體。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v009",
+      "field": "trap",
+      "evidence": "把最高值序列加總成總塊數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v010",
+      "field": "trap",
+      "evidence": "把高度帶入俯視圖。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v011",
+      "field": "trap",
+      "evidence": "直接用任一視圖面積當底面積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s012-v012",
+      "field": "trap",
+      "evidence": "只看最高層數，忽略每個占用格至少一塊。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v001",
+      "field": "trap",
+      "evidence": "把投影高度誤當成每一堆高度或高度總和。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v002",
+      "field": "trap",
+      "evidence": "把投影輪廓當成高度相加，或顛倒欄序。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v003",
+      "field": "trap",
+      "evidence": "把俯視占用格數直接當成總方塊數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v004",
+      "field": "trap",
+      "evidence": "看到正視第 1 欄高度 3 卻誤以為該欄每一處都無法確定。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v005",
+      "field": "trap",
+      "evidence": "直接把兩個視圖高度相加，或忘記每個占用格至少 1 個。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v006",
+      "field": "trap",
+      "evidence": "以為不同觀看方向可以得到不同的最高高度。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v007",
+      "field": "trap",
+      "evidence": "只看最高值 3，忽略每一正視欄都必須達到指定高度。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v008",
+      "field": "trap",
+      "evidence": "求最大時只看全域最高值，未逐格套用欄與列的共同上限。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v009",
+      "field": "trap",
+      "evidence": "只找出代表性配置，未完整計數所有可能。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v010",
+      "field": "trap",
+      "evidence": "把最高高度誤套到每一個占用位置。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v011",
+      "field": "trap",
+      "evidence": "只核對其中一個視圖，未同時檢查另一方向。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s013-v012",
+      "field": "trap",
+      "evidence": "只看全域最高堆，忽略其他欄列也有指定輪廓。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v001",
+      "field": "trap",
+      "evidence": "看到長和寬就直接相乘，混淆周長與面積。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v002",
+      "field": "trap",
+      "evidence": "把垂直平分線誤認為只有中點，或任意垂線。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v003",
+      "field": "trap",
+      "evidence": "把鋪面材料誤用周長估算。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v004",
+      "field": "trap",
+      "evidence": "未先統一單位，或把平方單位倍率只換一次。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v005",
+      "field": "trap",
+      "evidence": "把內角和、外角或其他正多邊形角度混為一談。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v006",
+      "field": "trap",
+      "evidence": "未固定正面就任意交換三個尺寸。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v007",
+      "field": "trap",
+      "evidence": "只看數字接近就判合格，未計算明確範圍。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v008",
+      "field": "trap",
+      "evidence": "以周長乘寬而漏算或重算角落。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v009",
+      "field": "trap",
+      "evidence": "只注意最高層數，忽略俯視每格至少一塊。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v010",
+      "field": "trap",
+      "evidence": "只滿足等距或只滿足步道其中一項。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v011",
+      "field": "trap",
+      "evidence": "把兩方向高度直接相加，或只放一個最高堆。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u08-s014-v012",
+      "field": "trap",
+      "evidence": "忘記扣除花圃，或把17.6箱直接寫成17箱。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v001",
+      "field": "trap",
+      "evidence": "看見第一個數就作答"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v002",
+      "field": "trap",
+      "evidence": "只寫最大值而忘記類別"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v003",
+      "field": "trap",
+      "evidence": "漏加或重複加一列"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v004",
+      "field": "trap",
+      "evidence": "把「高多少」誤算為相加"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v005",
+      "field": "trap",
+      "evidence": "不看欄意義而任意相加"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v006",
+      "field": "trap",
+      "evidence": "把同列第一個數當票價"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v007",
+      "field": "trap",
+      "evidence": "盲目信任表格摘要"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v008",
+      "field": "trap",
+      "evidence": "以單一天的大小代替整體比較"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v009",
+      "field": "trap",
+      "evidence": "把總分除以人數當成缺值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v010",
+      "field": "trap",
+      "evidence": "忽略腳註而直接比較總量"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v011",
+      "field": "trap",
+      "evidence": "不辨認流入與流出方向"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s001-v012",
+      "field": "trap",
+      "evidence": "混淆每份數值與整包數值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v001",
+      "field": "trap",
+      "evidence": "把總數當單類次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v002",
+      "field": "trap",
+      "evidence": "混加資料值與次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v003",
+      "field": "trap",
+      "evidence": "把剩餘人數或百分數格式混淆"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v004",
+      "field": "trap",
+      "evidence": "把已知合計當缺值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v005",
+      "field": "trap",
+      "evidence": "把百分比數字直接當人數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v006",
+      "field": "trap",
+      "evidence": "忘記總和應為 1"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v007",
+      "field": "trap",
+      "evidence": "把資料值 3 當成次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v008",
+      "field": "trap",
+      "evidence": "只看次數不看總數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v009",
+      "field": "trap",
+      "evidence": "看到總和不等於 1 就直接判表錯"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v010",
+      "field": "trap",
+      "evidence": "把人數 70 誤當 70%"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v011",
+      "field": "trap",
+      "evidence": "只算已知類別或誤減"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s002-v012",
+      "field": "trap",
+      "evidence": "把寄出份數當所有比例的分母"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v001",
+      "field": "trap",
+      "evidence": "只看柱寬或排列位置"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v002",
+      "field": "trap",
+      "evidence": "把格數直接當資料值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v003",
+      "field": "trap",
+      "evidence": "把比較誤算為總和"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v004",
+      "field": "trap",
+      "evidence": "分母只取部分資料"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v005",
+      "field": "trap",
+      "evidence": "把可見柱長比當資料比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v006",
+      "field": "trap",
+      "evidence": "只看單一子群最高柱"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v007",
+      "field": "trap",
+      "evidence": "把平均直接填入缺值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v008",
+      "field": "trap",
+      "evidence": "把視覺差異當資料差異"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v009",
+      "field": "trap",
+      "evidence": "把已知合計當未知"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v010",
+      "field": "trap",
+      "evidence": "只看最高長條判定服務較好"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v011",
+      "field": "trap",
+      "evidence": "用新值或差值直接當百分比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s003-v012",
+      "field": "trap",
+      "evidence": "把接近門檻或最高柱概念混淆"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v001",
+      "field": "trap",
+      "evidence": "沿線中段估讀而非讀資料點"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v002",
+      "field": "trap",
+      "evidence": "把斜率小誤認為不變"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v003",
+      "field": "trap",
+      "evidence": "把末值或負變化量當答案"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v004",
+      "field": "trap",
+      "evidence": "只看最高終點或跨多期差"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v005",
+      "field": "trap",
+      "evidence": "把橫座標組中點當次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v006",
+      "field": "trap",
+      "evidence": "只報總變化而忽略時間間隔"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v007",
+      "field": "trap",
+      "evidence": "把鄰點平均直接當缺值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v008",
+      "field": "trap",
+      "evidence": "只看最後交會便認為過程相同"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v009",
+      "field": "trap",
+      "evidence": "把組中點當缺次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v010",
+      "field": "trap",
+      "evidence": "把連線經過門檻當成額外測值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v011",
+      "field": "trap",
+      "evidence": "只看最近一期回升就宣稱完全恢復"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s004-v012",
+      "field": "trap",
+      "evidence": "用最後高低代替改善幅度"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v001",
+      "field": "trap",
+      "evidence": "把百分比數字直接當人數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v002",
+      "field": "trap",
+      "evidence": "把角度數當百分比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v003",
+      "field": "trap",
+      "evidence": "把已知合計當剩餘"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v004",
+      "field": "trap",
+      "evidence": "混淆百分點與百分比變化率"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v005",
+      "field": "trap",
+      "evidence": "把角度直接當人數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v006",
+      "field": "trap",
+      "evidence": "把角度差當倍數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v007",
+      "field": "trap",
+      "evidence": "忽略人數不能是小數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v008",
+      "field": "trap",
+      "evidence": "只比較百分比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v009",
+      "field": "trap",
+      "evidence": "直接把 25 當 25°"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v010",
+      "field": "trap",
+      "evidence": "把新教育總額當成需移金額"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v011",
+      "field": "trap",
+      "evidence": "把相對領先誤當絕對過半"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s005-v012",
+      "field": "trap",
+      "evidence": "忽略樣本範圍"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v001",
+      "field": "trap",
+      "evidence": "把組界或柱高角色混淆"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v002",
+      "field": "trap",
+      "evidence": "把組數或最高柱當總數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v003",
+      "field": "trap",
+      "evidence": "把位置或寬度當次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v004",
+      "field": "trap",
+      "evidence": "只取相鄰一柱"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v005",
+      "field": "trap",
+      "evidence": "把已知合計當缺值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v006",
+      "field": "trap",
+      "evidence": "把端點重複或漏算"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v007",
+      "field": "trap",
+      "evidence": "由分布外觀過度推論平均或個別值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v008",
+      "field": "trap",
+      "evidence": "把最高柱誤解為所有資料相同"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v009",
+      "field": "trap",
+      "evidence": "只增不減或忽略組界"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v010",
+      "field": "trap",
+      "evidence": "忽略端點包含規則"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v011",
+      "field": "trap",
+      "evidence": "只看單一最高柱"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s006-v012",
+      "field": "trap",
+      "evidence": "把眾數組當平均所在組"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v001",
+      "field": "trap",
+      "evidence": "只抄該組次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v002",
+      "field": "trap",
+      "evidence": "把累積欄再加總"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v003",
+      "field": "trap",
+      "evidence": "把累積值當單組次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v004",
+      "field": "trap",
+      "evidence": "漏掉指定組或多加後組"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v005",
+      "field": "trap",
+      "evidence": "把單組次數直接填入"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v006",
+      "field": "trap",
+      "evidence": "把累積人數直接當區間人數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v007",
+      "field": "trap",
+      "evidence": "把最後累積值最大誤認為最後組次數最多"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v008",
+      "field": "trap",
+      "evidence": "用錯累積門檻"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v009",
+      "field": "trap",
+      "evidence": "把百分數數字當筆數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v010",
+      "field": "trap",
+      "evidence": "直接抄上限累積值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v011",
+      "field": "trap",
+      "evidence": "把最高累積值當最高單日量"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s007-v012",
+      "field": "trap",
+      "evidence": "把累積持續增加誤當新增量持續增加"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v001",
+      "field": "trap",
+      "evidence": "只讀列總或相鄰格"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v002",
+      "field": "trap",
+      "evidence": "只抄其中一格"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v003",
+      "field": "trap",
+      "evidence": "把欄總直接填入"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v004",
+      "field": "trap",
+      "evidence": "把列總當欄總"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v005",
+      "field": "trap",
+      "evidence": "只做一步相減"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v006",
+      "field": "trap",
+      "evidence": "只看交叉格次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v007",
+      "field": "trap",
+      "evidence": "以人數高低代替比例"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v008",
+      "field": "trap",
+      "evidence": "抄已知格或加總錯誤"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v009",
+      "field": "trap",
+      "evidence": "把關聯誤寫成因果"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v010",
+      "field": "trap",
+      "evidence": "只看銷售數量"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v011",
+      "field": "trap",
+      "evidence": "以病例數取代組內風險"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s008-v012",
+      "field": "trap",
+      "evidence": "直接平均不同大小群組的百分比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v001",
+      "field": "trap",
+      "evidence": "只答總和或極值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v002",
+      "field": "trap",
+      "evidence": "把平均加上個數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v003",
+      "field": "trap",
+      "evidence": "認為平均不受所有資料同幅變化影響"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v004",
+      "field": "trap",
+      "evidence": "把平均直接填入"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v005",
+      "field": "trap",
+      "evidence": "忽略群組人數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v006",
+      "field": "trap",
+      "evidence": "直接平均舊平均與新值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v007",
+      "field": "trap",
+      "evidence": "把 9 與 19 的差方向弄反"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v008",
+      "field": "trap",
+      "evidence": "直接平均群組平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v009",
+      "field": "trap",
+      "evidence": "認為刪除任何資料都無法判斷"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v010",
+      "field": "trap",
+      "evidence": "直接平均不同人數的平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v011",
+      "field": "trap",
+      "evidence": "把平均當成多數人的薪資"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s009-v012",
+      "field": "trap",
+      "evidence": "把平均增幅直接加到新值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v001",
+      "field": "trap",
+      "evidence": "未排序或改算平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v002",
+      "field": "trap",
+      "evidence": "只取一個中央值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v003",
+      "field": "trap",
+      "evidence": "把筆數本身當位置"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v004",
+      "field": "trap",
+      "evidence": "把相鄰值平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v005",
+      "field": "trap",
+      "evidence": "把中位數當平均受極端值大幅拉動"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v006",
+      "field": "trap",
+      "evidence": "只看中位數而忽略排序"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v007",
+      "field": "trap",
+      "evidence": "固定沿用原中位數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v008",
+      "field": "trap",
+      "evidence": "把中位數直接填入未知"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v009",
+      "field": "trap",
+      "evidence": "認為任何數值變大都使中位數變大"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v010",
+      "field": "trap",
+      "evidence": "一律認為平均最好"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v011",
+      "field": "trap",
+      "evidence": "用高平均製造普遍高價印象"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s010-v012",
+      "field": "trap",
+      "evidence": "先求原中位數或改算平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v001",
+      "field": "trap",
+      "evidence": "把最大值當眾數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v002",
+      "field": "trap",
+      "evidence": "把最大值或總和當全距"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v003",
+      "field": "trap",
+      "evidence": "認為眾數只能一個"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v004",
+      "field": "trap",
+      "evidence": "只看 x 是否等於 7"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v005",
+      "field": "trap",
+      "evidence": "認為全距也加 4"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v006",
+      "field": "trap",
+      "evidence": "把新最大值當眾數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v007",
+      "field": "trap",
+      "evidence": "把全距直接當最大值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v008",
+      "field": "trap",
+      "evidence": "忽略未知值位置或眾數條件"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v009",
+      "field": "trap",
+      "evidence": "只看新增值或忽略並列"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v010",
+      "field": "trap",
+      "evidence": "只看平均相同便認為資料相同"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v011",
+      "field": "trap",
+      "evidence": "一律使用平均作決策"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s011-v012",
+      "field": "trap",
+      "evidence": "把整體統計量當成每筆資料"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v001",
+      "field": "trap",
+      "evidence": "直接平均兩分數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v002",
+      "field": "trap",
+      "evidence": "直接平均單價"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v003",
+      "field": "trap",
+      "evidence": "忘記除以權重總和"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v004",
+      "field": "trap",
+      "evidence": "把總成績直接當未知分數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v005",
+      "field": "trap",
+      "evidence": "把群組平均直接再平均，忽略各組人數。"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v006",
+      "field": "trap",
+      "evidence": "直接平均濃度"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v007",
+      "field": "trap",
+      "evidence": "把至少門檻或權重算錯"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v008",
+      "field": "trap",
+      "evidence": "直接用單價差相減"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v009",
+      "field": "trap",
+      "evidence": "忽略權重總和"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v010",
+      "field": "trap",
+      "evidence": "只看學測較高者"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v011",
+      "field": "trap",
+      "evidence": "直接平均兩種費率"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s012-v012",
+      "field": "trap",
+      "evidence": "只看平均忽略資料量"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v001",
+      "field": "trap",
+      "evidence": "只平均資料值或忘記除法"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v002",
+      "field": "trap",
+      "evidence": "每個資料值只算一次"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v003",
+      "field": "trap",
+      "evidence": "用除法或相加"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v004",
+      "field": "trap",
+      "evidence": "把資料值混入次數和"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v005",
+      "field": "trap",
+      "evidence": "假設未知必有唯一解"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v006",
+      "field": "trap",
+      "evidence": "只看總和變化忽略分母"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v007",
+      "field": "trap",
+      "evidence": "把平均值當次數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v008",
+      "field": "trap",
+      "evidence": "小數交叉相乘錯誤"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v009",
+      "field": "trap",
+      "evidence": "直接平均新舊平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v010",
+      "field": "trap",
+      "evidence": "直接平均時段或錯誤取位"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v011",
+      "field": "trap",
+      "evidence": "把總量當平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s013-v012",
+      "field": "trap",
+      "evidence": "只求缺值不驗算摘要"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v001",
+      "field": "trap",
+      "evidence": "忽略比較指標"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v002",
+      "field": "trap",
+      "evidence": "把中位數解讀成每筆大小"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v003",
+      "field": "trap",
+      "evidence": "認為全距大代表集中"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v004",
+      "field": "trap",
+      "evidence": "只看平均便判相同"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v005",
+      "field": "trap",
+      "evidence": "把可能線索說成必然"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v006",
+      "field": "trap",
+      "evidence": "只以平均作所有決策"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v007",
+      "field": "trap",
+      "evidence": "直接平均群組平均"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v008",
+      "field": "trap",
+      "evidence": "單指標過度概括"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v009",
+      "field": "trap",
+      "evidence": "認為所有統計量都加 5"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v010",
+      "field": "trap",
+      "evidence": "只選平均最低者"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v011",
+      "field": "trap",
+      "evidence": "看到平均就直接排序"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s014-v012",
+      "field": "trap",
+      "evidence": "以單一平均過度推論"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v001",
+      "field": "trap",
+      "evidence": "以可見長度比當數值比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v002",
+      "field": "trap",
+      "evidence": "把平均當每個人的數值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v003",
+      "field": "trap",
+      "evidence": "只看樣本有數據便接受"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v004",
+      "field": "trap",
+      "evidence": "把百分比當固定量"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v005",
+      "field": "trap",
+      "evidence": "把群體差值套到每人"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v006",
+      "field": "trap",
+      "evidence": "混淆百分點與相對成長"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v007",
+      "field": "trap",
+      "evidence": "只比總數"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v008",
+      "field": "trap",
+      "evidence": "只看百分比高低"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v009",
+      "field": "trap",
+      "evidence": "以極端值代表全體"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v010",
+      "field": "trap",
+      "evidence": "以大樣本取代隨機性"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v011",
+      "field": "trap",
+      "evidence": "只看大字每份數值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s015-v012",
+      "field": "trap",
+      "evidence": "用大百分比掩蓋小基數與窄範圍"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v001",
+      "field": "trap",
+      "evidence": "以方便取樣代替代表性"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v002",
+      "field": "trap",
+      "evidence": "過度外推"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v003",
+      "field": "trap",
+      "evidence": "只看已回覆樣本大小"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v004",
+      "field": "trap",
+      "evidence": "把關聯直接當因果"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v005",
+      "field": "trap",
+      "evidence": "混淆百分點與百分比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v006",
+      "field": "trap",
+      "evidence": "把樣本比例當母群確定值"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v007",
+      "field": "trap",
+      "evidence": "只看最高百分比"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v008",
+      "field": "trap",
+      "evidence": "認為代表值必同方向"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v009",
+      "field": "trap",
+      "evidence": "只重視視覺設計"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v010",
+      "field": "trap",
+      "evidence": "不是全盤接受就是全盤否定"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v011",
+      "field": "trap",
+      "evidence": "以總件數代替風險率"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "rendered-specific-misconception-lost",
+      "id": "u09-s016-v012",
+      "field": "trap",
+      "evidence": "在資訊不足時強行二分判斷"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u07-fig-and-intersection",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u07-fig-number-line-translation",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u07-fig-symbol-number-line",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u09-fig-bar-01",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u09-fig-bar-02",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u09-fig-bar-03",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u09-fig-hist-01",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u09-fig-line-01",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u09-fig-line-02",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "svg-color-only-review",
+      "id": "u09-fig-pie-01",
+      "field": "svg",
+      "evidence": "explicit colors require print/color-independence review"
+    }
+  ],
+  "semanticReviewComplete": false,
+  "semanticDisclaimer": "Mechanical normalization checks do not prove mathematical or pedagogical correctness."
+}

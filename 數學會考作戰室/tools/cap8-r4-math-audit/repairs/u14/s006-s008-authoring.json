@@ -1,0 +1,735 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u14",
+  "batch": "015-u14-complete",
+  "skills": [
+    "s006",
+    "s007",
+    "s008"
+  ],
+  "mc": [
+    {
+      "questionId": "u14-s006-v001",
+      "expectedContentSha256": "7d95225c790e45d803f904d4e540467cfb6c826d9daa85f9925c1a9bff96fa46",
+      "appendArray": {
+        "steps": [
+          "以兩段差皆為六回查三項確為等差。"
+        ]
+      },
+      "set": {
+        "explanation": "等差中項與兩端的距離相同，所以二倍中項等於兩端和；八加二十為二十八，再除以二得十四。用十四減八及二十減十四，兩段公差均為六。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v002",
+      "expectedContentSha256": "8e42cc4b8da4f90a9c9ecbd3038d96ea47c5a223265b9f0006855fdecb812a42",
+      "appendText": {
+        "misconceptionTarget": "公差六只是相鄰差，前一項還要由中項向前減一次公差。"
+      },
+      "appendArray": {
+        "steps": [
+          "代回五、十一、十七，確認相鄰差都等於六。"
+        ]
+      },
+      "set": {
+        "explanation": "十一到十七增加六，因此前一項必為十一減六等於五；也可用中項性質二乘十一等於前後兩端和，解得五。兩種方法一致。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v003",
+      "expectedContentSha256": "19d774e7d035a57665891a04d02ec67f7c5edf5aaa5ae1767343a77e28fe3c08",
+      "appendArray": {
+        "steps": [
+          "比較 1−(−7) 與 9−1 均為八，完成符號驗算。"
+        ]
+      },
+      "set": {
+        "explanation": "帶號數相加得到二，再取一半為一；中項一與負七相差八，九與中項一也相差八。不能只做絕對值相減後任意決定正負。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v004",
+      "expectedContentSha256": "d450703b5d7c2b6dc456e81144687f2b0591e8696bacfd625ecc0584282b5047",
+      "appendArray": {
+        "steps": [
+          "將三分之二、九分之二、十五分之二通分比較，確認兩差相等。"
+        ]
+      },
+      "set": {
+        "explanation": "兩端同分母相加為十八分之二，即九；算術平均還要再除以二，所以正確結果是二分之九。不能只平均分子或把分數讀成九分之二；代回兩段差皆為三。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v005",
+      "expectedContentSha256": "4bf7696c24c04feda8867efff5f5223fdcb90ba50959c7976528df54e264cdda",
+      "appendText": {
+        "misconceptionTarget": "插入兩項會形成三個間隔，總差不能只除以插入項數二。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出四項並檢查三個相鄰差均為六，再相加插入數。"
+        ]
+      },
+      "set": {
+        "explanation": "插入兩數後共有四項，首末之間有三個相鄰間隔；總差十八除以三得公差六，所以數列為四、十、十六、二十二，插入兩數和為二十六。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v006",
+      "expectedContentSha256": "c9c7e4fe26212b5f0bcba3e150a3b6d2ea03dda643a005007aa31a10d4a2e19a",
+      "appendArray": {
+        "steps": [
+          "代回後比較八減二與十四減八都為六，確認唯一解。"
+        ]
+      },
+      "set": {
+        "explanation": "連續三項滿足二倍中項等於首末和，故十六等於未知數減四加二倍未知數加二，即三倍未知數減二；解得六，代回為二、八、十四。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v007",
+      "expectedContentSha256": "6536c45533d6d633562d7362066ff444adc3b17a945bcfa6eee7798de9b689e3",
+      "appendArray": {
+        "steps": [
+          "列出負六、零、六、十二、十八，檢查第三項位置與公差。"
+        ]
+      },
+      "set": {
+        "explanation": "五項中的第三項正好位於首末位置中點，可直接取負六與十八的平均得到六；亦可算四個間隔的公差六，再由首項增加兩次得六。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v008",
+      "expectedContentSha256": "e32affab050dd6e086b04d744ade63318f47a4f57a43f97d5bea2d4ab36e8d28",
+      "appendArray": {
+        "steps": [
+          "以任意兩端寫成 17−d、17+d，驗證和固定為三十四。"
+        ]
+      },
+      "set": {
+        "explanation": "等差三連項的中項滿足二倍中項等於兩端和，所以只需已知兩端總和三十四，不必知道各端個別數值；二倍中項為三十四，故中項十七。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v009",
+      "expectedContentSha256": "a42a2e93b2068ae7645760ee6cc62f6412698fea9d537d2968a32ed3da58f4f0",
+      "appendArray": {
+        "steps": [
+          "列出十一、十五、十九，檢查總和四十五且相鄰差為四。"
+        ]
+      },
+      "set": {
+        "explanation": "三連項可寫成中項減四、中項、中項加四，總和中的公差互相抵消，故中項為四十五除三等於十五；最大項再加四得到十九。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v010",
+      "expectedContentSha256": "eaf4de261002f593014d9dd652cadb5f1e549084a97687df452acb9b03057662",
+      "appendText": {
+        "misconceptionTarget": "里程位置要取兩端座標平均，兩端相差一百八十公尺只是總間距。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算 210−120 與 300−210 均為九十公尺，驗證等距。"
+        ]
+      },
+      "set": {
+        "explanation": "新增路燈的位置是兩個里程數的算術平均，不是兩端距離；一百二十與三百相加除二得二百一十公尺，距兩端各九十公尺。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v011",
+      "expectedContentSha256": "d8c63a306105074f7eedcfaaca4bae56538c411bdafbc18cf9656f0c13b929c8",
+      "appendArray": {
+        "steps": [
+          "比較 22−18.4 與 25.6−22 均為 3.6°C，確認等量上升。"
+        ]
+      },
+      "set": {
+        "explanation": "七、九、十一時為等時間隔，且題設每兩小時等量上升，所以九時氣溫是兩端氣溫平均；四十四除二為二十二度，兩段各升三點六度。"
+      }
+    },
+    {
+      "questionId": "u14-s006-v012",
+      "expectedContentSha256": "4cfef6f6e66fd119c139b3a51958e2ba6c60dca17db9895f4929f661119b4037",
+      "appendText": {
+        "misconceptionTarget": "五個層位只有四個相鄰間隔，第三層距第一層是兩次增加。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出五層高度並確認最上層八十四公分及各差十二。"
+        ]
+      },
+      "set": {
+        "explanation": "五層從第一到第五只有四個高度間隔，總差四十八除四得每層增加十二公分；第三層從最下層增加兩次，為三十六加二十四等於六十公分。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v001",
+      "expectedContentSha256": "b46ff92c0d353c24bca7fa8bcd1c1f7eb4cf9ef7ec60b109b7dcb85247534a78",
+      "appendText": {
+        "misconceptionTarget": "通式的固定常數一也要計算，不能只代入四倍階段數。"
+      },
+      "appendArray": {
+        "steps": [
+          "以相鄰階段固定增加四片的規律檢查第六階段數值。"
+        ]
+      },
+      "set": {
+        "explanation": "階段編號六代入四倍階段數加一，先算二十四再加固定的一得到二十五片。固定部分代表每階段共同保留的圓片，不能在代入時省略。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v002",
+      "expectedContentSha256": "0e99c88763c29bf477fa3cf5076a3a42d60d25c6d63ad2155f9e508d91264e7f",
+      "appendText": {
+        "misconceptionTarget": "第十排是項次代入，不是把前十排椅子累加或把十當總排數。"
+      },
+      "appendArray": {
+        "steps": [
+          "附上張數單位並核對公式在排號增加一時多兩張。"
+        ]
+      },
+      "set": {
+        "explanation": "題目問第十排而非前十排總數，所以把排號十代入單排公式；二乘十加八得二十八張。答案描述一排的椅子數，不需做數列總和。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v003",
+      "expectedContentSha256": "aea66e0e83662ef104f4a52202e77c79293c716b7101b6714d7ac6ae994e32d6",
+      "appendArray": {
+        "steps": [
+          "用前三圖四、七、十驗證每次增加三，再推到第七圖。"
+        ]
+      },
+      "set": {
+        "explanation": "第一個正方形用四根，此後每新增一格會共用前一格的一邊，因此只新增三根；七格共有第一次四根加六次三根，等於二十二根。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v004",
+      "expectedContentSha256": "739da3140d8e208cc0104f9df6b4ff095690b6d05eeac782c0cf3f1759392427",
+      "appendText": {
+        "misconceptionTarget": "首圖已計入，增加次數是 n−1；直接寫五加四倍 n 會多算一次。"
+      },
+      "appendArray": {
+        "steps": [
+          "以 n=1、2 代回候選式，確認首圖與下一圖都吻合。"
+        ]
+      },
+      "set": {
+        "explanation": "第一圖已有五點，從第一圖到第 n 圖只增加 n 減一次，每次四點；因此五加四倍 n 減一，化簡為四倍 n 加一。代入一與二均還原五、九。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v005",
+      "expectedContentSha256": "b2ec8a5ec4304dc6430c5f3ef9e5ab5189c5d542795a1ba1b1b5db47fd70d8de",
+      "appendArray": {
+        "steps": [
+          "用 n=1、2、3 逐項驗證公式，不只依首項選式。"
+        ]
+      },
+      "set": {
+        "explanation": "三、五、七形成首項三、公差二的等差數列，通項為三加二倍 n 減一，化簡成二倍 n 加一；代入前三個項次皆完全吻合，所以只能選二倍 n 加一。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v006",
+      "expectedContentSha256": "bc8f5c5be3737b9052765df933a263bdc3ee6be8ed1e7c72ec1988da642d249c",
+      "appendText": {
+        "misconceptionTarget": "周長是兩倍長加兩倍寬，不能只把長與寬各算一次。"
+      },
+      "appendArray": {
+        "steps": [
+          "以 n 的任一正值代回幾何尺寸，檢查四邊總長。"
+        ]
+      },
+      "set": {
+        "explanation": "長方形周長包含兩條長與兩條寬，所以是二乘 n 加二再加二乘三；展開合併得到二倍 n 加十。只算長加寬會漏掉對邊。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v007",
+      "expectedContentSha256": "3837185e2c16425678107224eb50962fad68586bd518d0dd1c24e4f2f9972994",
+      "appendText": {
+        "misconceptionTarget": "第 n 階段從首階段只增加 n−1 次，首項七仍須保留。"
+      },
+      "appendArray": {
+        "steps": [
+          "以通式六倍 n 加一代入二十，和遞推計算交叉驗證。"
+        ]
+      },
+      "set": {
+        "explanation": "第一階段七個已存在，從第一到第二十階段只有十九次增加；七加六乘十九等於一百二十一。直接用二十乘六會漏首項並多算一次增加。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v008",
+      "expectedContentSha256": "9432cf67c6ba1deea2c0d472693141fc9f77b013b128003d947121fc9213abc5",
+      "appendArray": {
+        "steps": [
+          "分別列核心、左條、右條三部分後相加，避免重複或漏算。"
+        ]
+      },
+      "set": {
+        "explanation": "正方形核心有 n 乘 n 塊，左右兩條邊各有 n 塊，所以額外共二倍 n；兩部分相加是 n 平方加二倍 n，而不是把兩側合計只算 n。代入 n=1 可得三塊並回查。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v009",
+      "expectedContentSha256": "b02257d1be2271c08aefa15d690928d097d2b40fa69a93391d3549097ccc5513",
+      "appendArray": {
+        "steps": [
+          "以八列各十七點的乘積回查單位為點數。"
+        ]
+      },
+      "set": {
+        "explanation": "第八圖有八列，每列由二乘八加一得十七點；總點數是列數乘每列點數，八乘十七為一百三十六。兩個量不可相加。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v010",
+      "expectedContentSha256": "09b4dcaf5c5286b9db4a05e5af31c577f8c6d32949faec7a88150699d3bd5ae4",
+      "appendText": {
+        "misconceptionTarget": "從第一區到第十八區只有十七個間隔，不能把十八當增加次數。"
+      },
+      "appendArray": {
+        "steps": [
+          "將九十四與前一區八十九比較，確認固定增加五面。"
+        ]
+      },
+      "set": {
+        "explanation": "第一區已有九面，從第一區到第十八區只增加十七次，每次五面；九加八十五得到九十四。區號不是新增次數，列出第二區十四面也能驗算公差。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v011",
+      "expectedContentSha256": "63f793e0e79006a0776c6e0d12a3ef627a25edc843fbc0495a6963097418c237",
+      "appendText": {
+        "misconceptionTarget": "公式已寫 k−1，代入後增加次數為十四而不是十五。"
+      },
+      "appendArray": {
+        "steps": [
+          "用第十四區五十一個再加三，驗證第十五區五十四。"
+        ]
+      },
+      "set": {
+        "explanation": "代入十五後括號是十四，代表從第一區到第十五區的十四次增加；三乘十四為四十二，再加首區十二得五十四個車位。"
+      }
+    },
+    {
+      "questionId": "u14-s007-v012",
+      "expectedContentSha256": "a1149680ef55f96dd3ca59c077077b8f623c35a7cd28a4714a5144d8abeedcf7",
+      "appendArray": {
+        "steps": [
+          "以 20×21 回查 20²+20，並附圖示計數單位。"
+        ]
+      },
+      "set": {
+        "explanation": "二十平方為四百，另加一個二十得到四百二十；也可因式分解成二十乘二十一。額外的一列 n 不可因注意平方核心而漏掉。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v001",
+      "expectedContentSha256": "0256414795ab5799fb1d611d97cda083ab504461f9d9562d5ff87cad45de6b56",
+      "appendText": {
+        "misconceptionTarget": "第 n 項從首項只乘 n−1 次公比，指數不能直接寫成項次六。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出前六項五、十、二十、四十、八十、一百六十回查。"
+        ]
+      },
+      "set": {
+        "explanation": "首項到第六項之間有五個公比間隔，所以五乘二的五次方；二的五次方為三十二，乘首項得到一百六十。逐項列值也會得到同一第六項。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v002",
+      "expectedContentSha256": "08ec58bba81e388135a280a96233248a32619ee26ca614a42e09c1931ac12747",
+      "appendText": {
+        "misconceptionTarget": "第五星期或第五項只經過四次倍率，不能誤乘五次公比。"
+      },
+      "appendArray": {
+        "steps": [
+          "用逐項遞推與通項兩種方法交叉驗證第五項為一。"
+        ]
+      },
+      "set": {
+        "explanation": "第五項相對首項只乘四次三分之一，八十一乘八十一分之一等於一；逐項列出八十一、二十七、九、三、一亦相同，項次與倍率都吻合。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v003",
+      "expectedContentSha256": "ed8b7185de1aed37ec601b42b888a6b34c611c90daf56eeab1d4d47692798820",
+      "appendArray": {
+        "steps": [
+          "列出負二、四、負八、十六、負三十二，確認交錯符號。"
+        ]
+      },
+      "set": {
+        "explanation": "公比負二的四次方為正十六，但通項還要乘首項負二，所以結果負三十二；偶次方只改倍率符號，不會把首項也變正。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v004",
+      "expectedContentSha256": "8e7e6d952a3a0c37b010b75f70be78a64c895f300fcec63949f8df2173e65818",
+      "appendText": {
+        "misconceptionTarget": "從已知第 k 項到第 n 項使用 n−k 次公比，不可仍套 n−1。"
+      },
+      "appendArray": {
+        "steps": [
+          "從二十連乘四次二，列出四十、八十、一百六十、三百二十。"
+        ]
+      },
+      "set": {
+        "explanation": "已知第三項而求第七項，倍率次數是項次差七減三等於四，不是從首項計數；二的四次方十六乘二十得三百二十。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v005",
+      "expectedContentSha256": "47893d316a20c4e5efe560acd6de09593c52b8c0e9cf7d17923100aa22b91df8",
+      "appendText": {
+        "misconceptionTarget": "總倍率八分布在三個間隔，公比是其立方根二而不是八。"
+      },
+      "appendArray": {
+        "steps": [
+          "以十二乘二三次得到九十六，驗證公比與正項條件。"
+        ]
+      },
+      "set": {
+        "explanation": "第二到第五項跨三個間隔，所以九十六除十二等於公比三次方八；正項條件排除負公比，正立方根為二。代回連乘三次二可得九十六。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v006",
+      "expectedContentSha256": "3f7fe825b509c1457dd58a6e84dda299fda34f9ce290d5e792486acd41cf11c5",
+      "appendText": {
+        "misconceptionTarget": "負分數整體作三次方，分子分母都要乘方且指數為 n−1。"
+      },
+      "appendArray": {
+        "steps": [
+          "用相鄰項依次乘負二分之一列到第四項驗證符號與分母。"
+        ]
+      },
+      "set": {
+        "explanation": "代入第四項後指數為三，括號中的負二分之一三次方是負八分之一，再乘首項三得負八分之三。負底數必保留括號。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v007",
+      "expectedContentSha256": "6b63167affb500cf1bc971921c31a5ef376acfdbbd330df092d2ff92d7fbb2d0",
+      "appendArray": {
+        "steps": [
+          "逐段列出 4→5、5→6、6→7、7→8，確認恰有四次倍率。"
+        ]
+      },
+      "set": {
+        "explanation": "第四到第八項依序跨四個相鄰間隔，因此連乘四次三；五十四乘三的四次方等於四千三百七十四，與題值一致。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v008",
+      "expectedContentSha256": "d6ab274ccfec4d4f583722a1e5b520bd6c692ffa71eee8fb9dd5efe552ded38b",
+      "appendText": {
+        "misconceptionTarget": "倍率次數比項次少一，找到五次減半後要回答第六項。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出六項到八，確認索引與數值同時一致。"
+        ]
+      },
+      "set": {
+        "explanation": "二百五十六減半五次才得到八，因此八相對首項的倍率次數為五；首項是第一項，項次要再加一，所以八是第六項。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v009",
+      "expectedContentSha256": "ce7efbf4e4f2188c5c6ac4530300a9a0cf9d1c7a9130413209a74cb119bd01fc",
+      "appendArray": {
+        "steps": [
+          "以負六連乘負三三次得到一百六十二，再乘一次求第六項。"
+        ]
+      },
+      "set": {
+        "explanation": "第二到第五項跨三步，總倍率為一百六十二除負六等於負二十七，所以實數公比為負三；下一項再乘負三得到負四百八十六。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v010",
+      "expectedContentSha256": "73d0414f551f0e651b03cf8afd12d5e05122636653193a2db486c4fbeadefac8",
+      "appendArray": {
+        "steps": [
+          "列出各輪人數或以第五輪三百二十四再乘三回查。"
+        ]
+      },
+      "set": {
+        "explanation": "第一輪四人是首項，到第六輪只有五次三倍；四乘三的五次方，即四乘二百四十三，得到九百七十二人。逐輪列值可核對只乘五次。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v011",
+      "expectedContentSha256": "e86b0ab704a68cce77ec0f12012f478e3b04c181af82fdf9f4bf2b6f2a938972",
+      "appendArray": {
+        "steps": [
+          "以 160×(1/2)⁵ 計算，確認週期索引從零開始。"
+        ]
+      },
+      "set": {
+        "explanation": "起始量是週期零，經過五個週期就實際減半五次；一百六十依序變八十、四十、二十、十、五毫克。列值同時驗證週期索引與單位。"
+      }
+    },
+    {
+      "questionId": "u14-s008-v012",
+      "expectedContentSha256": "7b828610edab7c4439875dc8460ce4fabd6f2b34dfeedec43016bced8e506bfa",
+      "appendText": {
+        "misconceptionTarget": "第八層只經過七次倍增，不能把層號八直接當作指數。"
+      },
+      "appendArray": {
+        "steps": [
+          "用第七層一百九十二再乘二，驗證第八層三百八十四。"
+        ]
+      },
+      "set": {
+        "explanation": "第一層三根是首項，第八層相對第一層有七次倍增；三乘二的七次方即三乘一百二十八，得到三百八十四根。項次八不是直接乘八次。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u14-s006-cr001",
+      "expectedContentSha256": "40c62e0b112cad80239aab0ec61a2ad1750764a82af0861a546920101e47b97a",
+      "appendArray": {
+        "fullCreditSolution": [
+          "插入五數後包含兩端共七項，因此從第一項到第七項共有六個相鄰間隔。總差三十六平均分成六份，逐次加六可跨過零並得到五個插入值；最後再加一次必須回到二十六。"
+        ]
+      }
+    },
+    {
+      "questionId": "u14-s006-cr002",
+      "expectedContentSha256": "71e591471d82e2d0cbd2c6eb629e5724e211cb7e324867beebd475ac393ea203",
+      "appendArray": {
+        "fullCreditSolution": [
+          "三個連續等差項以中項和公差表示時，總和中的正負公差互相抵消，所以中項是二十四；最大與最小相差兩倍公差，故公差為八。列出的十六、二十四、三十二同時滿足總和與極差條件。"
+        ],
+        "commonErrors": [
+          "最大項與最小項相差兩個公差，不能把十六直接當成單一步公差。"
+        ]
+      }
+    },
+    {
+      "questionId": "u14-s007-cr001",
+      "expectedContentSha256": "f4b938092e5558e739078d068c13db4df187e2a0d20b9f39996d4720d17ff0a1",
+      "appendArray": {
+        "fullCreditSolution": [
+          "圖中相鄰正方形共用一條邊，所以只有第一格需要四根，此後每格只新增三根。第 n 圖包含 n 減一次新增，公式須能回算前三圖；代入五十時是四加四十九次三，得到一百五十一根。"
+        ]
+      }
+    },
+    {
+      "questionId": "u14-s007-cr002",
+      "expectedContentSha256": "00de2afc3f904da6f30c6b0b053f7a1dc9d4a2deb686a59f48d35dc7a8913241",
+      "appendArray": {
+        "fullCreditSolution": [
+          "各列方格數從 n 加一到二倍 n，形成共有 n 項的等差數列；用項數乘首末和的一半得到總式。代入六時六列依序為七至十二格，直接相加也得五十七，可作獨立驗算。"
+        ]
+      }
+    },
+    {
+      "questionId": "u14-s008-cr001",
+      "expectedContentSha256": "ee8fadd5f29f553c454fdf6704dd4703ac37c5e1182a0c89cc88d37522b474de",
+      "appendArray": {
+        "fullCreditSolution": [
+          "第三到第七項跨四個公比，所以兩項比值是公比四次方十六。偶次方原可有正負二，但各項皆正，負公比會造成符號交錯，故只取正二；再由第三項回除二的平方得到首項三。"
+        ]
+      }
+    },
+    {
+      "questionId": "u14-s008-cr002",
+      "expectedContentSha256": "92142f7fd9bc525b6d98dff343c966d20c0c33efc0301a3f7e50886b3ec71cee",
+      "appendArray": {
+        "fullCreditSolution": [
+          "題目明定 n 等於零代表起始，因此經過 n 個週期就乘 n 次四分之三，不使用一般首項索引的 n 減一。第五週期精確量為四分之二百四十三克，等於六十點七五克，有限小數不需近似。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u14-s006-lecture-r1",
+      "expectedContentSha256": "a63db302a476c25dcb230f9f1014eeda053dfbf497dcb4142cca99e950f4de3e",
+      "set": {
+        "conceptNarrative": [
+          "等差數列連續三項的中項等於兩端算術平均，等價於二倍中項等於兩端和。這個性質適用於正數、負數、分數與帶單位量；計算後可用中項減前項、後項減中項兩段差相等來回查。",
+          "插入若干等差中項時，要分清數的個數與相鄰間隔數。兩端之間插入若干數後，間隔數會比插入數多一；總差除以間隔數才是公差。五項數列的第三項位於位置中點，也可直接取首末平均。",
+          "情境題需先確認輸入值是位置、溫度或高度，且時間或空間間隔相等。里程中點用位置平均，不可把兩端距離當位置；層架與時刻題還要依實際層位數計算增加次數並保留公尺、公分、攝氏度等單位。",
+          "算術平均性質只保證用在等差數列的連續三項，不能看到任意三個數就把中間值取平均。若未知數位於首項或末項，應先以相鄰兩段差相等列式，再用代回原數列的方式確認項次與公差。"
+        ],
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "求 8 與 20 的等差中項。",
+            "solutionSteps": [
+              "使用二倍中項等於兩端和。",
+              "計算兩端和二十八。",
+              "除以二得十四並比較兩段差。"
+            ],
+            "answer": "14。",
+            "why": "十四分別距八與二十都是六，所以三項公差一致；算術平均處理的是兩端位置，不是只取兩端差的一半後忘記加回起點。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "在 4 與 22 間插入兩數成等差數列。",
+            "solutionSteps": [
+              "包含兩端共有四項、三個間隔。",
+              "公差為十八除三等於六。",
+              "依序列出四、十、十六、二十二。"
+            ],
+            "answer": "插入 10、16。",
+            "why": "插入兩個數不代表只有兩個間隔；首到末依序跨過三段。逐項列出可驗證三個相鄰差都為六，也避免把總差除錯。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "三連續等差項總和 45、公差 4，求最大項。",
+            "solutionSteps": [
+              "設三項為 b−4、b、b+4。",
+              "由總和 3b=45 得 b=15。",
+              "最大項為十五加四等於十九。"
+            ],
+            "answer": "19。",
+            "why": "以中項表示時正負公差在總和中抵消，所以中項就是三項平均十五；題目求最大項還要再加一次公差，不能停在平均值。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "五層架底層 36 cm、頂層 84 cm，求第三層。",
+            "solutionSteps": [
+              "五層形成四個相鄰間隔。",
+              "公差為四十八除四等於十二公分。",
+              "第三層為三十六加兩次十二等於六十公分。"
+            ],
+            "answer": "60 cm。",
+            "why": "第一到第三層只跨兩個間隔，而第一到第五層跨四個；列出各層高度可同時檢查公差、第三層位置與頂層八十四公分。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u14-s007-lecture-r1",
+      "expectedContentSha256": "d427d3fa17b3ae37ca99df4c1cc000826c2e3bd2ceca1f64e5b66d38bce636fe",
+      "set": {
+        "conceptNarrative": [
+          "圖形與情境規律常可寫成首項加上若干次固定增量。第 n 個圖形從第一個開始只經過 n 減一次增加，因此線性規律是首項加公差乘 n 減一；化簡後仍應代回前兩三個圖驗證。",
+          "計數前要拆清結構。相連正方形會共用邊，每新增一格只增加三根火柴；正方形核心加左右邊條則分別計平方區與兩條線性區。列數與每列數量應相乘，不能混成相加。",
+          "情境公式中的 n、k 代表排號、區號、階段或層級，不一定代表累計總數。代入後要處理括號中的項次差，保留張、根、面、個等計數語意；幾何圖僅供辨認共邊與區塊，不可用外觀量測答案。",
+          "先比較相鄰圖號的增加量，固定不變時才可使用一次式規律；若增加量本身也在變化，就不能硬套首項加固定公差。完成公式後至少代回題目提供的兩個圖號，逐一核對共邊、端點與單位。"
+        ],
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "相連正方形第 n 圖需幾根火柴？",
+            "solutionSteps": [
+              "第一格用四根。",
+              "每新增一格因共邊只加三根。",
+              "寫成 4+3(n−1)=3n+1。"
+            ],
+            "answer": "3n+1 根。",
+            "why": "共用邊只畫一次，所以不能用四倍 n；從第一圖到第 n 圖只有 n 減一次新增。公式代回前三圖得到四、七、十，與圖形完全一致。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "首圖 5 點、每圖多 4 點，求第 n 圖公式。",
+            "solutionSteps": [
+              "首項為五、公差為四。",
+              "第 n 圖經過 n−1 次增加。",
+              "化簡 5+4(n−1)=4n+1。"
+            ],
+            "answer": "4n+1。",
+            "why": "固定增加從首圖之後才開始，直接寫五加四倍 n 會多算一次。將 n 等於一與二代回正解，可得到五與九並驗證索引。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "長 n+2、寬 3 的長方形周長。",
+            "solutionSteps": [
+              "寫周長為兩倍長加兩倍寬。",
+              "代入得 2(n+2)+2×3。",
+              "展開合併為 2n+10。"
+            ],
+            "answer": "2n+10。",
+            "why": "長方形有兩條長與兩條寬，長加寬只算一半邊界。分配二倍並合併常數後，任取正 n 畫出四邊都能驗證總長。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "第 n 級需 n²+n 個圖示，求第 20 級。",
+            "solutionSteps": [
+              "代入 n=20。",
+              "計算二十平方加二十。",
+              "或因式分解為 20×21。"
+            ],
+            "answer": "420 個。",
+            "why": "平方核心四百之外還有一列二十，兩部分都要計入。因式乘積與直接相加皆得四百二十，可互相驗算並保留圖示計數單位。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u14-s008-lecture-r1",
+      "expectedContentSha256": "9898db9cb5a8c4f88666f15dfb9afa681dc961cbbad026683e5c6ad0939612bb",
+      "set": {
+        "conceptNarrative": [
+          "等比數列第 n 項相對首項只乘 n 減一次公比；若從第 k 項推到第 n 項，倍率次數改為 n 減 k。項次差代表相鄰間隔數，不能把目標項次直接當指數。可用逐項列值回查索引。",
+          "負公比會使項目符號交錯，偶次方只決定倍率正負，最後仍要乘首項。由兩個已知項回求公比時，先用項值比得到公比的若干次方，再依正項、實數或符號條件選根。",
+          "週期題要辨認索引起點。一般數列首項是第一項，通項使用 n 減一；若題目明定週期零為起始，經過 n 個週期就乘 n 次倍率。藥量與材料剩餘量須保留毫克、克及精確有限小數。",
+          "只有相鄰非零項的比值固定時才是等比數列；固定減少一個數量屬等差，不可混用。遇到百分比增加或衰減，要先把百分率改成每期倍率，再依經過的間隔數決定指數並代回已知項驗算。"
+        ],
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "首項 5、公比 2，求第 6 項。",
+            "solutionSteps": [
+              "第一到第六項跨五個間隔。",
+              "計算 5×2⁵。",
+              "得到一百六十並逐項回查。"
+            ],
+            "answer": "160。",
+            "why": "首項本身尚未乘公比，所以第六項只乘五次二；若把項次六直接當指數會多乘一次。列出六項可清楚核對索引。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "a₃=20、公比 2，求 a₇。",
+            "solutionSteps": [
+              "計算項次差七減三等於四。",
+              "由第三項乘四次二。",
+              "計算 20×16=320。"
+            ],
+            "answer": "320。",
+            "why": "已知值不是首項時，倍率次數應取兩項的項次差，而非仍用七減一。逐項乘二四次也會得到三百二十。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "正項等比數列 a₂=12、a₅=96，求公比。",
+            "solutionSteps": [
+              "第二到第五項跨三步。",
+              "建立 r³=96÷12=8。",
+              "由正項條件取 r=2 並驗算。"
+            ],
+            "answer": "2。",
+            "why": "八是三個相鄰倍率的總乘積，不是單一步公比；立方根得二，且正項條件與逐項十二、二十四、四十八、九十六一致。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "起始 160 mg，每週期剩一半，求五週期後。",
+            "solutionSteps": [
+              "起始量視為週期零。",
+              "五週期代表乘五次二分之一。",
+              "計算 160×(1/2)⁵=5 mg。"
+            ],
+            "answer": "5 mg。",
+            "why": "週期數直接對應實際衰減次數；把起始量誤當第一週期會少算一次。逐期列值可同時驗證索引、倍率與毫克單位。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

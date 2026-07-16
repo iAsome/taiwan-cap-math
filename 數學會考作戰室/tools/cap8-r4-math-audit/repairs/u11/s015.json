@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u11",
+  "batch": "012-u11-complete",
+  "skills": ["s015"],
+  "mc": [
+    {"questionId":"u11-s015-v001","expectedContentSha256":"3db04e2c77b11cca39704231b7ff4f79791aaa947e1e0651bf44a29040953510","appendText":{"explanation":"勾股定理逆敘述是由三邊關係推回角的性質：若一個三角形較短兩邊平方和等於最長邊平方，便可判定最長邊所對的角是直角。","misconceptionTarget":"把原定理與逆敘述方向混淆，從直角條件再次推出邊長等式。"}},
+    {"questionId":"u11-s015-v002","expectedContentSha256":"fa34cad5f7761d92ccce06b86b42c1a5e295776b567bf1a2020fea07ca9c4683","appendText":{"explanation":"斜邊必為直角三角形最長邊，所以利用三邊判定時要先找最長邊，才能正確比較另外兩邊平方和與候選斜邊平方。","misconceptionTarget":"未排序三邊便任選一邊當斜邊，造成等式方向錯置。"}},
+    {"questionId":"u11-s015-v003","expectedContentSha256":"a58b767c3190f29b256641eb8bcf8ce6a97933707bcd1accd7b1aa4f125d36d0","appendText":{"explanation":"已知a≤b≤c，所以c為最長邊。若a²＋b²＝c²，依勾股定理逆敘述可判定c所對的∠C為直角；直角是邊c的對角，不是邊上的端點。","misconceptionTarget":"把直角放在最長邊c的端點，而不是放在c的對角∠C。"}},
+    {"questionId":"u11-s015-v004","expectedContentSha256":"a647093214304ca89c225ad5ecd9604e7f8bf545316c8c7d3a86331ee95c7193","appendText":{"explanation":"九、四十、四十一已給出同一三角形的三邊，且四十一最長；9²＋40²＝81＋1600＝1681＝41²，資料足以依逆敘述判定為直角三角形，不必另給角度。","misconceptionTarget":"以為還必須知道一個角度，忽略三邊平方等式已是充分條件。"}},
+    {"questionId":"u11-s015-v005","expectedContentSha256":"67babcb508ac8bb9bf7ece4d63c305a276b62689ddf5f802584da3c9d5dda4c4","appendText":{"explanation":"若要由p²＋q²＝r²判定直角，還必須確認p、q、r是同一三角形三邊且r為最長邊；如此r才是候選斜邊。","misconceptionTarget":"只看到形式相同的平方等式，就省略同一三角形與最長邊條件。"}},
+    {"questionId":"u11-s015-v006","expectedContentSha256":"22583ae39550394526e3f7f8908e3429ddacd890b3ce03c6a6ac03397d4fb292","appendText":{"explanation":"三邊平方為二十五、一百四十四、一百六十九，最大值一百六十九對應最長邊；25＋144＝169，故逆敘述成立，可判定為直角三角形。","misconceptionTarget":"把已平方的數再平方一次，或沒有先認出一百六十九是最大平方。"}},
+    {"questionId":"u11-s015-v007","expectedContentSha256":"1b30f01322e99514c02eabe97842382cd8eb8e7cb8fb65fde7ab39c4d76eecbe","appendText":{"explanation":"單寫a²＋b²＝c²尚未交代這些長度屬於同一三角形，也未明說c是最長邊。補齊兩項條件後，才可用逆敘述得到直角結論。","misconceptionTarget":"把純代數等式直接當成幾何判定，忽略邊長角色與所屬圖形。"}},
+    {"questionId":"u11-s015-v008","expectedContentSha256":"6244141a0753f8811d273eae83242aa2d3a435b1bc565078fa1e47ba95dcbbf8","appendText":{"explanation":"完整推論應包含三邊屬於同一三角形、c為最長邊及a²＋b²＝c²，最後依逆敘述判定c所對角為直角，缺一不可。","misconceptionTarget":"只重述平方等式卻沒有寫出直角位置與判定結論。"}},
+    {"questionId":"u11-s015-v009","expectedContentSha256":"219783847141c6df31fc445818e96f34e6f319fa284edbfc0178ca7ea59685ca","appendText":{"explanation":"三邊同乘正數k後，平方等式兩側都乘k²，原有等式仍成立，而且邊長次序不變，因此縮放後仍可由逆敘述判定為直角三角形。","misconceptionTarget":"只把一側乘k或乘k而非k平方，誤以為縮放會破壞直角。"}},
+    {"questionId":"u11-s015-v010","expectedContentSha256":"eaa490beb3eaab8c986f380c9906ac719e11958532e75f70e97b796e5817c93d","appendText":{"explanation":"一點零最長，而0.6²＋0.8²＝0.36＋0.64＝1.00＝1.0²，平方精確相等，所以可判定此三角形是直角三角形；小數邊長同樣適用逆敘述，直角在一點零的對面。","misconceptionTarget":"認為逆敘述只適用整數邊長，遇到小數便改用目測或近似。"}},
+    {"questionId":"u11-s015-v011","expectedContentSha256":"ab578921a243be6343145da4600613aae5a7c4fadc858ca473442ce4c573f1a2","appendText":{"explanation":"一百零一最長；60²＋80²＝3600＋6400＝10000，但101²＝10201，並不相等，因此不能判定為直角三角形；數值接近仍不符合精確等式，也不能把一百零一擅自改成一百。","misconceptionTarget":"看到六、八、十的倍數便把一百零一看成一百，忽略精確檢驗。"}},
+    {"questionId":"u11-s015-v012","expectedContentSha256":"bc0c3e0f74dc65b4152abf4ee25482b416421acc4fadcfa44a108a64cd5041fe","appendText":{"explanation":"排序的作用是找出唯一的最長邊c，判定式應寫成另外兩邊平方和與c²比較；最長邊平方必須單獨放在等式另一側。","misconceptionTarget":"排序後仍把最大邊與其中一條短邊放在平方和的同一側。"}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u11-s015-cr001","expectedContentSha256":"73cc994f73303bdcfd0f9a35be1fb9782a40f2c66a5bc018a6976aca3fa0ae75","set":{"standardSolution":["勾股定理：若三角形是直角三角形，兩股平方和等於斜邊平方。","逆敘述：若同一三角形三邊a≤b≤c且a²＋b²＝c²，則c所對的角為直角。","兩者交換條件與結論；原定理由直角推邊長關係，逆敘述由邊長關係判定直角。"],"commonErrorTargets":["把定理與逆敘述寫成完全相同方向，沒有交換條件與結論。","逆敘述漏寫c為最長邊或三邊屬於同一三角形，使判定條件不完整。"]}},
+    {"questionId":"u11-s015-cr002","expectedContentSha256":"43c5bc347d98539030736d82c11da2f404661132170651d4a1354bdf0bc1dd51","set":{"standardSolution":["程式不能假設輸入順序已把斜邊放在最後，應先將三個正邊長由小到大排序為a≤b≤c。","接著先檢查a＋b＞c確能成三角形，再比較a²＋b²是否等於c²。","例如輸入5、13、12，排序後為5、12、13，且25＋144＝169，因此應判定為直角三角形。"],"commonErrorTargets":["直接用第三個輸入值當最長邊，使5、13、12這類不同順序得到錯誤結果。","只檢查平方等式而不驗證正邊長與三角形不等式，忽略輸入邊界。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u11-s015-lecture-r1","expectedContentSha256":"ce7c1577694bcec9535792cd5331ea6703bc8db4d5085cbdedf04607a7357a72","appendArray":{"conceptNarrative":["原勾股定理與逆敘述的差別在推論方向：知道有直角，才能用定理得到邊長平方關係；只知道三邊時，則要先排序，確認最長邊c，再以a²＋b²＝c²的精確相等使用逆敘述判定直角。敘述時不可省略三邊屬於同一三角形與c最長，也要指出直角是c的對角。若數值只是接近或圖形看似垂直，都不足以取代等式；整數、小數、根號及同比例縮放均遵守同一邏輯。"]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"說明為何三、四、五可由逆敘述判定為直角三角形。","solutionSteps":["確認五為三邊中的最長邊。","計算3²＋4²＝9＋16＝25＝5²。","依勾股定理逆敘述，五所對的角為直角。"],"answer":"是直角三角形，直角在邊五的對面","why":"已知資料是三邊而非角度，所以使用的是逆敘述；先確認最長邊並寫出對角位置，才能避免把原定理方向倒置。"},
+      {"exampleId":"L2","prompt":"比較勾股定理與其逆敘述的條件、結論。","solutionSteps":["定理以三角形有直角為條件。","定理結論是兩股平方和等於斜邊平方。","逆敘述交換方向，以平方等式為條件並以直角為結論。"],"answer":"兩者交換條件與結論","why":"同一個句子把條件與結論交換後不會自動為真，勾股定理的逆敘述需要另作有效判定；清楚辨識方向能防止循環論證。"},
+      {"exampleId":"L3","prompt":"邊長六、八、十是否仍可用逆敘述判定？","solutionSteps":["先確認十是最長邊。","計算6²＋8²＝36＋64＝100。","因10²＝100，故判定十所對角為直角。"],"answer":"可以，是直角三角形","why":"六、八、十是三、四、五同乘二，但判定仍應以平方等式驗證；同比例放大會讓兩側同乘四，不改變直角性質。"},
+      {"exampleId":"L4","prompt":"邊長六十、八十、一百零一是否為直角三角形？","solutionSteps":["一百零一是最長邊，作為候選斜邊。","計算60²＋80²＝10000。","比較101²＝10201，兩者不等，所以不是直角三角形。"],"answer":"不是直角三角形","why":"逆敘述要求精確相等，不能因數值接近六、八、十的倍數就四捨五入；一個單位的差異平方後已使等式不成立。"}
+    ]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -65,7 +65,8 @@ export default {
       "平均數比較整體水準，但受極端值影響；中位數適合描述偏態資料的中央位置。",
       "全距較小只表示最大與最小距離較近，不能保證每一筆都更接近中心。",
       "兩組平均相同，分布仍可能完全不同；一組可能很集中，另一組可能兩極化。",
-      "結論必須對應問題，例如「典型薪資」常看中位數，「總體每人平均產量」可看平均數。"
+      "結論必須對應問題，例如「典型薪資」常看中位數，「總體每人平均產量」可看平均數。",
+      "比較兩組資料時，平均與中位數描述中心位置，全距描述最兩端的跨度，三者回答的問題不同。先確認單位、樣本與抽樣方式可比，再依決策目標選指標：談典型值時中位數較能抵抗極端值，談穩定度時可看離散指標。任何摘要都不能推出每一位個體的情況，也不應只挑支持預設立場的單一數字。"
     ],
     "definitions": [
       {
@@ -129,39 +130,47 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "A組平均80、全距6；B組平均80、全距24。",
+        "prompt": "A、B兩組平均皆80，A全距6、B全距24，若依全距比較一致性，何者較集中？",
         "solution": [
-          "中心相同。",
-          "A組全距較小。"
+          "平均同為80，中心位置相同。",
+          "比較全距6與24。",
+          "6較小，所以A依全距較集中。"
         ],
-        "answer": "平均表現相同；依全距看A組較集中。"
+        "answer": "A組較集中。",
+        "why": "平均相同不代表分布相同，全距專門反映最大值與最小值的跨度；A的跨度只有6，依題目指定的全距判準，波動小於跨度24的B。"
       },
       {
         "id": "L2",
-        "prompt": "甲公司薪資中位數42千、平均65千；乙公司中位數48千、平均50千。",
+        "prompt": "A公司薪資中位數42、平均65；B公司中位數48、平均50。若比較典型員工薪資，先看哪一組？",
         "solution": [
-          "甲平均受少數高薪拉高的可能性大。",
-          "典型員工比較宜看中位數。"
+          "把『典型』對應到不易受極端值影響的中位數。",
+          "比較中位數42與48。",
+          "B的中位數較高，並留意A平均可能受高薪者拉高。"
         ],
-        "answer": "若問典型薪資，乙公司較高。"
+        "answer": "先以B公司的中位數48判斷較高。",
+        "why": "平均65高於中位數42的落差提示A可能有少數高薪值；對典型員工而言，中位數比平均更穩健。這仍不是每位B員工薪資都較高的保證。"
       },
       {
         "id": "L3",
-        "prompt": "A組5人平均70，B組20人平均80。",
+        "prompt": "甲組5人平均70，乙組20人平均80，求合併平均。",
         "solution": [
-          "合併總分=350+1600=1950。",
-          "總人數25。"
+          "甲組總和5×70＝350。",
+          "乙組總和20×80＝1600，合計1950。",
+          "總人數25，所以1950÷25＝78。"
         ],
-        "answer": "合併平均78，不是75。"
+        "answer": "78。",
+        "why": "合併平均要按人數加權，不能把70與80直接平均；乙組人數是甲組四倍，因此結果78會明顯靠近80，也可作為合理性檢查。"
       },
       {
         "id": "L4",
-        "prompt": "甲為每週公斤，乙為每日公克。",
+        "prompt": "一份資料以每週公斤記錄，另一份以每日公克記錄，能否直接比較平均？",
         "solution": [
-          "期間與單位均不同。",
-          "先換成同一期間與單位。"
+          "辨認時間單位一個是每週、一個是每日。",
+          "辨認重量單位一個是公斤、一個是公克。",
+          "先統一時間基準與重量單位，再比較平均。"
         ],
-        "answer": "原數值不可直接比較。"
+        "answer": "不能直接比較，必須先統一單位。",
+        "why": "數值大小只有在量綱與時間基準一致時才有可比意義；若未換算，較大的數字可能只來自單位選擇，而不是實際量較大。"
       }
     ],
     "commonMistakes": [
@@ -239,7 +248,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "1603cee68fb777bebcd755f711102f5f2a8a4885ff4a7b04fa904f2eedfbb7df"
+    "contentSha256": "1378d0d512be7b1f34142ffea8f871b5dbab0319c60b8bce0fdfd4afbcd90e46"
   },
   "mcQuestions": [
     {
@@ -267,9 +276,11 @@ export default {
         "derivedAnswer": "乙組",
         "trustStoredAnswer": false
       },
-      "explanation": "平均數可比較整體中心水準。",
+      "explanation": "平均數可比較整體中心水準。 A組平均70、B組平均75，在相同單位與可比資料下，只能由平均判定B組的中心位置較高，不能據此斷言每位B組成員都較高。",
       "steps": [
-        "比較兩平均。"
+        "比較兩平均。",
+        "先確認比較的是兩組平均而非個別資料。",
+        "由75＞70判定B的中心較高，同時保留分布未知的限制。"
       ],
       "optionAnalysis": [
         {
@@ -293,7 +304,7 @@ export default {
           "reason": "題目限定只比較平均，資料足夠。"
         }
       ],
-      "misconceptionTarget": "忽略比較指標",
+      "misconceptionTarget": "忽略比較指標 或把群體平均較高誤解成B組每一筆資料都必定高於A組。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -311,7 +322,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3cf2a1136460a9645c74fc10d745d47aaaecbbd110f790cebcc4314feb349073"
+      "contentSha256": "3e1b3fa6d62345225d4305cf909256018f02b4d8d68e49e78bfa81cd2362f7e3"
     },
     {
       "questionId": "u09-s014-v002",
@@ -338,9 +349,11 @@ export default {
         "derivedAnswer": "甲組",
         "trustStoredAnswer": false
       },
-      "explanation": "中位數比較不等於每筆都較高。",
+      "explanation": "中位數比較不等於每筆都較高。 A組中位數12表示排序後至少一半資料不低於12；B組中位數9較低。中位數不提供最大值、平均或每一筆大小。",
       "steps": [
-        "比較中位數。"
+        "比較中位數。",
+        "把中位數翻譯成排序後中央位置。",
+        "只保留至少一半不低於12的結論，排除涉及全部個體的敘述。"
       ],
       "optionAnalysis": [
         {
@@ -364,7 +377,7 @@ export default {
           "reason": "甲中位數較高，至少半數位於 12 附近或以上。"
         }
       ],
-      "misconceptionTarget": "把中位數解讀成每筆大小",
+      "misconceptionTarget": "把中位數解讀成每筆大小 或把中位數12當成所有A組資料至少都是12，超出中位數能保證的範圍。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -382,7 +395,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a4f798610beac73f33c283ed443b93165bbdca378f9cb2af70b88aaceeff899d"
+      "contentSha256": "87acf668210bb4f68f8b7bd0129eeca92bb28501220da1d99b9eb75501fab219"
     },
     {
       "questionId": "u09-s014-v003",
@@ -409,9 +422,11 @@ export default {
         "derivedAnswer": "甲組",
         "trustStoredAnswer": false
       },
-      "explanation": "散布比較與中心比較不同。",
+      "explanation": "散布比較與中心比較不同。 全距＝最大值－最小值，A組全距8小於B組15；若只依全距衡量離散，A組資料較集中，但這不等於每筆都相等。",
       "steps": [
-        "比較 8 與 15。"
+        "比較 8 與 15。",
+        "比較同單位下的全距8與15。",
+        "由8＜15判定A依全距較集中，並限制結論只針對此指標。"
       ],
       "optionAnalysis": [
         {
@@ -435,7 +450,7 @@ export default {
           "reason": "全距雖粗略但可作此比較。"
         }
       ],
-      "misconceptionTarget": "認為全距大代表集中",
+      "misconceptionTarget": "認為全距大代表集中 或把全距較小說成平均一定較小，混淆中心位置與離散程度。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -453,7 +468,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f64cc3ec53557eb8319d74ff6f7d38cbc035b7ee9e0212c682ca85cfb65e1f7d"
+      "contentSha256": "fb6d03544002473e3b323fc0886ffdb2a18b9ec525a6a2264658698af9946ee2"
     },
     {
       "questionId": "u09-s014-v004",
@@ -480,11 +495,13 @@ export default {
         "derivedAnswer": "乙組全距較大",
         "trustStoredAnswer": false
       },
-      "explanation": "相同平均不代表相同散布。",
+      "explanation": "相同平均不代表相同散布。 兩組4、5、6與1、5、9的平均都為5，但全距分別為6－4＝2與9－1＝8，所以B較分散，證明同平均不保證同分布。A的資料都落在5附近，B則延伸到1與9，視覺上也符合全距比較。",
       "steps": [
         "算兩平均。",
         "算兩全距。",
-        "比較。"
+        "比較。",
+        "分別驗算兩組平均皆為5。",
+        "再算全距2與8，用第二個指標區分分布。"
       ],
       "optionAnalysis": [
         {
@@ -508,7 +525,7 @@ export default {
           "reason": "甲全距 6-4=2。"
         }
       ],
-      "misconceptionTarget": "只看平均便判相同",
+      "misconceptionTarget": "只看平均便判相同 或看到平均同為5就認為兩組資料完全相同，忽略極端值與全距差異。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -526,7 +543,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a3e220b6c8864ebeaa482b9a7675433c713a995ce642aa6ef84ee30b536f7f81"
+      "contentSha256": "490662fc86e121966e6b2f1d7c07bbd0335ee3277495aa6fa66550ae8c2e8da8"
     },
     {
       "questionId": "u09-s014-v005",
@@ -553,10 +570,12 @@ export default {
         "derivedAnswer": "乙組可能受較高極端值拉高平均",
         "trustStoredAnswer": false
       },
-      "explanation": "比較平均與中位數差可提出保守的分布線索。",
+      "explanation": "比較平均與中位數差可提出保守的分布線索。 A的平均與中位數都是80；B平均80但中位數70，表示B的中央位置較低，平均可能被少數較大值向上拉高。這是合理可能性而非唯一分布。",
       "steps": [
         "比較每組兩代表值。",
-        "限制語氣為可能。"
+        "限制語氣為可能。",
+        "比較每組平均與中位數是否接近。",
+        "由B平均高於中位數10推測高端值可能拉高平均，但不宣稱唯一原因。"
       ],
       "optionAnalysis": [
         {
@@ -580,7 +599,7 @@ export default {
           "reason": "中位數不同表示分布不必相同。"
         }
       ],
-      "misconceptionTarget": "把可能線索說成必然",
+      "misconceptionTarget": "把可能線索說成必然 或把平均80直接當成B組典型值，沒有利用中位數70揭露偏斜或高端極端值。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -598,7 +617,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9b89744405f96f21e2f336b3c2907c6debc9161487c331c8f124a870335f82e4"
+      "contentSha256": "6a2e79db01eba2238519dd482a1101b855953de90d9e1f5dc21a901ead42c5a4"
     },
     {
       "questionId": "u09-s014-v006",
@@ -625,10 +644,12 @@ export default {
         "derivedAnswer": "甲班",
         "trustStoredAnswer": false
       },
-      "explanation": "決策目的若是穩定或一致，不能只看平均。",
+      "explanation": "決策目的若是穩定或一致，不能只看平均。 兩組平均相同時，中心位置無法區分；A全距10、B全距28，依全距判準A的波動較小，因此表現較一致。",
       "steps": [
         "辨認決策指標。",
-        "比較全距。"
+        "比較全距。",
+        "先確認平均相同只代表中心相同。",
+        "比較全距10＜28，將『較一致』限定為依全距判斷。"
       ],
       "optionAnalysis": [
         {
@@ -652,7 +673,7 @@ export default {
           "reason": "全距正可提供一致性資訊。"
         }
       ],
-      "misconceptionTarget": "只以平均作所有決策",
+      "misconceptionTarget": "只以平均作所有決策 或只因平均相同就說一致性也相同，忽略全距衡量的是另一個面向。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -670,7 +691,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ef102e975d2a292033f0daa3df3f2f01966f7e2dcb42be4e9ec0cd75788bfa8f"
+      "contentSha256": "004e5518476035993b591db5a03b3eb704a10ce25b52049faff367186e550dd1"
     },
     {
       "questionId": "u09-s014-v007",
@@ -697,11 +718,13 @@ export default {
         "derivedAnswer": "15",
         "trustStoredAnswer": false
       },
-      "explanation": "群組比較也要考慮樣本大小。",
+      "explanation": "群組比較也要考慮樣本大小。 合併平均為(5×12＋10×15)÷15＝210÷15＝14；因15分組人數是12分組的兩倍，結果14也較靠近15。用14×15＝210反向驗算，可還原兩組總和60＋150，分母與權重一致。",
       "steps": [
         "求兩組總和。",
         "算合併平均。",
-        "比較距離。"
+        "比較距離。",
+        "把兩組平均還原成總和60與150。",
+        "除以總人數15得14，並檢查靠近較大組平均15。"
       ],
       "optionAnalysis": [
         {
@@ -725,7 +748,7 @@ export default {
           "reason": "乙組人數較多，合併平均=(60+150)/15=14，與 15 距 1、與 12 距 2。"
         }
       ],
-      "misconceptionTarget": "直接平均群組平均",
+      "misconceptionTarget": "直接平均群組平均 或把12與15直接平均為13.5，未考慮兩組人數5與10不同。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -743,7 +766,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f31e2777763d7ff640d972c0fa35332c4d165fce90dad9b484ae0a97d5188295"
+      "contentSha256": "a3785e19215619dc22977189403ff86e652fa5ac7b7bcb7c1d42d3d2979352b1"
     },
     {
       "questionId": "u09-s014-v008",
@@ -770,11 +793,13 @@ export default {
         "derivedAnswer": "甲的典型水準約 50；乙應優先看中位數 45 並注意大全距",
         "trustStoredAnswer": false
       },
-      "explanation": "代表值選擇需配合散布與極端值線索。",
+      "explanation": "代表值選擇需配合散布與極端值線索。 A平均與中位數皆50、全距4；B平均52、中位數45、全距40。B平均較高但中央值較低且離散大，因此不能只用平均宣稱B普遍較高。",
       "steps": [
         "比較中心指標一致性。",
         "比較全距。",
-        "選保守敘述。"
+        "選保守敘述。",
+        "並列平均、中位數、全距三項指標。",
+        "尋找同時容納三項證據的敘述，排除『每個人』或『普遍』等過度結論。"
       ],
       "optionAnalysis": [
         {
@@ -798,7 +823,7 @@ export default {
           "reason": "乙平均可能受高值影響。"
         }
       ],
-      "misconceptionTarget": "單指標過度概括",
+      "misconceptionTarget": "單指標過度概括 或只挑B平均52這個有利指標，忽略中位數45與全距40提供的相反訊息。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -816,7 +841,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "28cd7959fa6a9a60f64aa2a4eeb585d567adde6d397265dfbaf9813b917d5fda"
+      "contentSha256": "d7b5231e072394e2edecbede46cc444ee062ee716726db558d03d78ffe5ef6c7"
     },
     {
       "questionId": "u09-s014-v009",
@@ -843,10 +868,12 @@ export default {
         "derivedAnswer": "甲班平均高 5 分，兩班全距仍相同",
         "trustStoredAnswer": false
       },
-      "explanation": "比較政策效果需分清位置與散布。",
+      "explanation": "比較政策效果需分清位置與散布。 每筆資料都加5會使總和增加5n，平均因此增加5；最大值與最小值都加5，相減時抵消，所以全距不變。",
       "steps": [
         "套用平均平移性質。",
-        "套用全距不變性質。"
+        "套用全距不變性質。",
+        "以總和增加5n證明平均增加5。",
+        "以(max＋5)－(min＋5)＝max－min證明全距不變。"
       ],
       "optionAnalysis": [
         {
@@ -870,7 +897,7 @@ export default {
           "reason": "乙資料未變。"
         }
       ],
-      "misconceptionTarget": "認為所有統計量都加 5",
+      "misconceptionTarget": "認為所有統計量都加 5 或認為資料整體上移會讓全距也增加5，沒有重新做最大值減最小值。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -888,7 +915,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ca0ac0e3065e244402865ece4b42f505854f78d46415f1af38a0459d3f78b8e0"
+      "contentSha256": "768bca7b345a6f61893305451cf7e31856aaa88ecde449e00523d283c1682c68"
     },
     {
       "questionId": "u09-s014-v010",
@@ -915,11 +942,13 @@ export default {
         "derivedAnswer": "乙店",
         "trustStoredAnswer": false
       },
-      "explanation": "決策指標由使用者偏好決定。",
+      "explanation": "決策指標由使用者偏好決定。 A等待平均8、中位數7但全距30；B平均與中位數9、全距8。若目標是避免極長等待並重視穩定，B雖中心略高，尾端風險依全距較小。",
       "steps": [
         "圈出『穩定』。",
         "優先比較全距並參考中心。",
-        "作限制性結論。"
+        "作限制性結論。",
+        "先把決策目標翻譯成中心與離散的權衡。",
+        "比較A、B三項指標後，說明選B依賴全距較小而非絕對保證。"
       ],
       "optionAnalysis": [
         {
@@ -943,7 +972,7 @@ export default {
           "reason": "現有指標可支持保守選擇。"
         }
       ],
-      "misconceptionTarget": "只選平均最低者",
+      "misconceptionTarget": "只選平均最低者 或只選平均8較小的A，沒有對照題目重視穩定與避免極長等待的決策條件。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -961,7 +990,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7e6e256e35b657d629cfad9180de8b520987f5b31b9a478fc33548c8231296f3"
+      "contentSha256": "f7472a316089a77a7402fd1da2a63c047b1a52e49d75274d56b082c29d52068c"
     },
     {
       "questionId": "u09-s014-v011",
@@ -988,11 +1017,13 @@ export default {
         "derivedAnswer": "不能直接用這兩個平均比較全校，甲樣本偏向愛閱讀者",
         "trustStoredAnswer": false
       },
-      "explanation": "資料比較的前提是測量與抽樣可比。",
+      "explanation": "資料比較的前提是測量與抽樣可比。 A校只調查閱讀社20人，B校隨機抽200人，樣本來源與大小不同；即使平均可算，代表性不一致，不能把差異直接當成兩校全體差異。",
       "steps": [
         "檢查兩校樣本定義。",
         "辨識選樣偏差。",
-        "限制結論。"
+        "限制結論。",
+        "先審查兩校樣本如何取得與涵蓋誰。",
+        "確認抽樣不可比後限制外推，而不是只比較平均數字。"
       ],
       "optionAnalysis": [
         {
@@ -1016,7 +1047,7 @@ export default {
           "reason": "大樣本仍需合理抽樣，但乙至少方法較佳。"
         }
       ],
-      "misconceptionTarget": "看到平均就直接排序",
+      "misconceptionTarget": "看到平均就直接排序 或把兩個樣本平均當成母群確定值，忽略閱讀社便利樣本的選擇偏誤。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -1034,7 +1065,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f8bcfd68d4eae12c5d93f250aa474cedf7e5ccac71fc53cf698d3f70a2d35f1e"
+      "contentSha256": "781e7696adebb635f2d1297f56e76d8a5084fd2ec17b3e7efcabd5c63d1604c1"
     },
     {
       "questionId": "u09-s014-v012",
@@ -1061,12 +1092,14 @@ export default {
         "derivedAnswer": "證據不足；B 平均較高但中位數較低且全距大",
         "trustStoredAnswer": false
       },
-      "explanation": "宣傳用語的強度要與證據匹配。",
+      "explanation": "宣傳用語的強度要與證據匹配。 A平均10.2、中位數10.1、全距0.8；B平均10.5但中位數9.8、全距5.6。B平均可能受高值影響，現有摘要不足以支持『一般都較久』。",
       "steps": [
         "比較平均。",
         "比較中位數。",
         "比較全距。",
-        "評估『普遍』。"
+        "評估『普遍』。",
+        "比較兩組中心指標是否一致指向同一結論。",
+        "因B平均與中位數方向不一致且全距大，保留分布與樣本資料需求。"
       ],
       "optionAnalysis": [
         {
@@ -1090,7 +1123,7 @@ export default {
           "reason": "『普遍』應考慮中位數與散布；B 指標互相衝突。"
         }
       ],
-      "misconceptionTarget": "以單一平均過度推論",
+      "misconceptionTarget": "以單一平均過度推論 或只看B平均10.5最大就推論多數B電池較久，忽略中位數與全距。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-from-table"
@@ -1108,7 +1141,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c8bd39f5f396258a736b5ab289d08ebd366dd158381f30049b1681256000e2b9"
+      "contentSha256": "beca4df1036a9a4a2cbb4803cf64c767f4e0e4691bde3227467a004d22c64d0b"
     }
   ],
   "constructedResponses": [
@@ -1132,7 +1165,8 @@ export default {
         "甲總和532，平均=532/7=76；中位數第4筆=76；全距=80-72=8。",
         "乙總和532，平均=76；中位數=76；全距=92-60=32。",
         "兩組平均與中位數均相同，所以典型中心相同。",
-        "甲組全距較小，依全距看較穩定。"
+        "甲組全距較小，依全距看較穩定。",
+        "兩組總和皆532，所以平均皆76；排序後中位數也皆76，但全距8與32顯示B明顯較分散，結論應同時保留相同中心與不同離散。"
       ],
       "alternativeMethod": "平均可用以76為基準觀察偏差互相抵消；兩組皆總和532。",
       "reasoningSteps": [
@@ -1140,7 +1174,8 @@ export default {
         "分別計算總和與平均。",
         "取第4筆中位數。",
         "最大減最小求全距。",
-        "把中心與穩定分開陳述。"
+        "把中心與穩定分開陳述。",
+        "最後用同一套平均、中位數、全距定義比較兩組，避免選擇性報告單一指標。"
       ],
       "rubric": [
         {
@@ -1178,7 +1213,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "294800f89ee18518b35c48db3acd198afccda12c1b5f12be9b8dede363c98e8f"
+      "contentSha256": "2ad4dcd256ee9478a6160d7e68d8ee918b01031b0db14f0157cef233154bfad8",
+      "commonErrors": [
+        "只比平均76就說兩組表現完全相同，沒有再看中位數與全距。",
+        "算全距時使用相鄰差或總和，未以最大值減最小值。"
+      ]
     },
     {
       "questionId": "u09-s014-cr002",
@@ -1200,14 +1239,16 @@ export default {
         "若關心多數一般員工較可能拿到的薪資，應優先看中位數，因中位數較不受170千元主管薪資影響。",
         "乙公司中位數48千元高於甲公司42千元，因此依現有資料，乙公司的典型薪資較高。",
         "甲平均55千元高於乙50千元，可能主要由少數高薪者拉高，不能推論多數甲員工薪資較高。",
-        "仍需完整薪資分布、職級人數、最低與最高薪資或全距等，才能判斷穩定性與同職位比較。"
+        "仍需完整薪資分布、職級人數、最低與最高薪資或全距等，才能判斷穩定性與同職位比較。",
+        "若問題是典型員工薪資，應優先比較中位數：B為48高於A的42；A平均65可能受主管170拉高，仍需各職級分布、樣本數與完整薪資分布才能做更穩健判斷。"
       ],
       "alternativeMethod": "可用『平均與中位數差距』判斷甲偏右：55-42=13，大於乙的2，支持甲受高薪尾端影響。",
       "reasoningSteps": [
         "確定問題問典型個人而非公司總薪資。",
         "檢查極端值對平均的敏感性。",
         "比較中位數42與48。",
-        "限制結論並列出資料缺口。"
+        "限制結論並列出資料缺口。",
+        "把決策中的『典型』對應到中位數，再檢查平均與中位數落差是否可能由極端值造成。"
       ],
       "rubric": [
         {
@@ -1245,7 +1286,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "4395a438711cd9ba40da96d97536dded68f1e0ac064b596cff6611a43bf1d503"
+      "contentSha256": "cde668fc90e106d4209347d4d80a581e247a50f7020a39b47c97950f5a71418b",
+      "commonErrors": [
+        "因A平均65高於B平均50就宣稱A典型薪資較高，忽略A的170高薪極端值。",
+        "只回答選B卻未說明中位數48對42的比較，也未提出職級或完整分布等補充資料。"
+      ]
     }
   ],
   "semanticReviews": [

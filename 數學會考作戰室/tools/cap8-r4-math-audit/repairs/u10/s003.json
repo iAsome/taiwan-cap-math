@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u10",
+  "batch": "011-u10-complete",
+  "skills": ["s003"],
+  "mc": [
+    {
+      "questionId": "u10-s003-v001",
+      "expectedContentSha256": "cc0ad5477cf29a6c8992dac25e80cfa70946b954bdd9da59d708e02b801d2b24",
+      "appendText": {"explanation": "4x+3x 可用分配律反向寫成 (4+3)x=7x；這是加法而非 x·x 的乘法，文字部分仍為 x¹，不能把指數改成二。", "misconceptionTarget": "把同類項的加法誤當同底數冪的乘法，錯誤把兩個一次方指數相加。"}
+    },
+    {
+      "questionId": "u10-s003-v002",
+      "expectedContentSha256": "c70eaa78e3ee561079d6bf6b4e8ebf16f350eedd5b60e1f3df73fd18775c2acf",
+      "appendText": {"explanation": "判斷同類項只比較文字種類與各字母指數，不要求係數相同；第四組兩項的文字部分都是 x²，正四與負七不影響分類。", "misconceptionTarget": "只因兩項係數相同就判為同類項，或只看都有 x 而忽略 x 與 x² 的指數不同。"},
+      "appendArray": {"steps": ["逐組遮住係數，只比較每項的字母與指數。", "前三組的文字部分不同，只有 x² 與 x² 完全相同，因此選第四組。"]}
+    },
+    {
+      "questionId": "u10-s003-v003",
+      "expectedContentSha256": "4cd8ac514837bbf3e049b27f1a19f7a0c28fb9cd0844eba47847be60b3a1ede0",
+      "appendText": {"explanation": "同類項合併只改變可配對的 a 項係數；-2b 沒有另一個 b 項，常數 5 也沒有同類常數，因此兩者都必須原樣留在答案中。", "misconceptionTarget": "把 a 項與 b 項混合成 ab，或只留下已合併的 9a 而遺失 -2b、5。"}
+    },
+    {
+      "questionId": "u10-s003-v004",
+      "expectedContentSha256": "e2ddaeb7b230bf371723d22561e9c5fc31e6f0e667728edea647a421206fb60d",
+      "appendText": {"explanation": "把 x² 項與 x 項分成兩組，分別反向提取文字部分：(5+2)x²=7x²，(-3+1)x=-2x，所以化簡式為 7x²-2x，兩組不可交叉，最後抄回文字部分並維持原指數。", "misconceptionTarget": "把不同次方的項放在同組，或計算 -3+1 時漏掉負號而得到正四。"},
+      "appendArray": {"steps": ["把兩組結果合併並保留各自文字部分，寫成 7x²+(-2)x。"]}
+    },
+    {
+      "questionId": "u10-s003-v005",
+      "expectedContentSha256": "ae22ce01b1ded23ff77fdb6248479168f6a13e390f4914cbe3fa1d226c8dc026",
+      "appendText": {"explanation": "乘法交換律給 yx=xy，因此三項都能寫成 xy 的倍數；係數連同符號相加為 2-5+4=1，係數一通常省略，答案是 xy。", "misconceptionTarget": "以字母書寫順序不同為由拒絕合併 yx 與 xy，或把負五的符號漏掉。"},
+      "appendArray": {"steps": ["先用交換律把 -5yx 改寫成 -5xy，使三項文字部分一致。", "計算係數 2+(-5)+4=1，抄回 xy 並省略係數 1。"]}
+    },
+    {
+      "questionId": "u10-s003-v006",
+      "expectedContentSha256": "e3858c2ae8802751cd8b510c228edb286d395e3a5906220003a54480d02072e2",
+      "appendText": {"explanation": "兩項的文字部分同為 x²，合併後係數是 3+k；它必須等於右式的係數 10，因此列 3+k=10，解得 k=7，代回係數正好為十。", "misconceptionTarget": "沒有先比較等式兩邊的 x² 係數，將 k 與 10 直接相等或把三乘上 k。"},
+      "appendArray": {"steps": ["反向使用分配律，將左式寫成 (3+k)x²。", "比較係數得 3+k=10，兩邊減 3 得 k=7，再代回核對。"]}
+    },
+    {
+      "questionId": "u10-s003-v007",
+      "expectedContentSha256": "9603cd06efdc7389d7d5361c5696699f1028dc4e4ef3526cd5c20dc8328636c9",
+      "appendText": {"explanation": "括號前的負號作用於括號內每一項，-(2x-3)=-2x+3；再合併 4x-2x+x=3x，常數留下 +3，結果為 3x+3；係數和 4-2+1 也可再次核對，常數項亦維持正三。", "misconceptionTarget": "只改變括號內第一項的符號，仍把 -3 寫成 -3，導致常數項錯誤。"},
+      "appendArray": {"steps": ["逐項分配負號，把原式改寫成 4x-2x+3+x。", "合併三個 x 項係數 4-2+1=3，得到 3x+3。"]}
+    },
+    {
+      "questionId": "u10-s003-v008",
+      "expectedContentSha256": "1b5652884696adfcc4d22b0b5d19e7736d9f492c4bed870f832bd9e6c87b8464",
+      "appendText": {"explanation": "先展開 2(x²-x)=2x²-2x，並將 -(x²+1) 逐項變為 -x²-1；二次項係數為一、一次項係數為一，常數為負一，三組合併後即得答案。", "misconceptionTarget": "分配二或括號前負號時只處理第一項，或把 x² 與 x 當同類項合併。"},
+      "appendArray": {"steps": ["完整展開成 2x²-2x+3x-x²-1，標出三種同類項。", "分別合併得 (2-1)x²+(-2+3)x-1=x²+x-1。"]}
+    },
+    {
+      "questionId": "u10-s003-v009",
+      "expectedContentSha256": "63ac11d05b31e3bfea9dfdad5207da386853e6c227d549aba8c583308d3d4a27",
+      "appendText": {"explanation": "合併係數時 m 與 -m 完全抵消，只剩 -1+2=1，所以左式恆為 x；要求它等於 5x 等同 1=5，任何 m 都不可能成立。", "misconceptionTarget": "未先化簡含參數的係數就移項求 m，忽略 m 已抵消而產生矛盾等式。"},
+      "appendArray": {"steps": ["把兩個 x 項合併為 [(m-1)+(2-m)]x。", "化簡括號得 1，與目標係數 5 比較為矛盾，因此判定無解。"]}
+    },
+    {
+      "questionId": "u10-s003-v010",
+      "expectedContentSha256": "9693641131f0aebc3bba930b605351bacf892a375c697c4ecb339e1f71ef43a1",
+      "appendText": {"explanation": "兩天的件數要相加，x 項係數為 3+2=5，固定件數為 5+(-1)=4；因此總量是 5x+4 件，而不是把不同類項互乘。", "misconceptionTarget": "第二天常數是負一卻當成正一，或將兩天的 x 項係數與常數交叉合併。"},
+      "appendArray": {"steps": ["列總量 (3x+5)+(2x-1)，去括號後保持各項符號。", "分別合併 x 項與常數項，得到 5x+4 件。"]}
+    },
+    {
+      "questionId": "u10-s003-v011",
+      "expectedContentSha256": "1b81c231ae5a1f29867b98b817d34703e1c4f98d1d648191b84a2c2a244d4a93",
+      "appendText": {"explanation": "總長等於三段相加；變動部分的係數 2+1+3=6，固定部分 1+4-2=3，所以總長為 6x+3 公尺，兩類長度分開計算。", "misconceptionTarget": "相加三段時漏掉其中一段，或把第三段的 -2 看成 +2 而算錯固定長度。"},
+      "appendArray": {"steps": ["把三段長度全數列入同一加法式，展開為 2x+1+x+4+3x-2。", "合併 x 項與常數項後，核對總長單位仍為公尺。"]}
+    },
+    {
+      "questionId": "u10-s003-v012",
+      "expectedContentSha256": "ffd0dd8b877800f46d317901c1b7cac3f56957aac66cf58943b9a51bb82e373e",
+      "appendText": {"explanation": "上午與下午先相加得 6x²-2x，再減報廢量時 -(x²-x)=-x²+x；合併後為 5x²-x，表示只扣除不合格件數，沒有遺漏任何時段。", "misconceptionTarget": "減去報廢多項式時只變 x² 的符號，沒有把原來的 -x 轉成 +x。"},
+      "appendArray": {"steps": ["列出合格量並完整去括號：4x²+3x+2x²-5x-x²+x。", "合併二次項係數 4+2-1=5、一次項係數 3-5+1=-1，得 5x²-x。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u10-s003-cr001",
+      "expectedContentSha256": "9dafac6ec78aff6c7570e275ab47f260f3a560ee4eff991d2d350c612bc9f56b",
+      "appendArray": {"standardSolution": ["三組的文字部分分別是 x²、x 與不含未知數的常數；每組只加減係數，文字部分不改變。將 9、-2、-5 代回可寫成 9x²+(-2)x+(-5)，與逐組結果一致。"]},
+      "set": {"commonErrorTargets": ["把 x² 項與 x 項混在同一組，或合併後改變 x 的指數。", "合併 -3x+x 時將省略係數的一讀成零，或漏掉常數 2-7。"]}
+    },
+    {
+      "questionId": "u10-s003-cr002",
+      "expectedContentSha256": "0f453675b39410c078efd3f14b3a38760f722fe7412b12935804ff165c572e45",
+      "appendArray": {"standardSolution": ["展開係數和得到 m-2+3-m，正負 m 抵消且 -2+3=1，因此無論代入何值，二次項都固定為 x²。要求係數同時為 5 會導致 1=5 的矛盾，故不存在符合的 m。"], "reasoningSteps": ["將固定係數 1 與題設係數 5 比較，得到矛盾，明確寫出解集合為空。"]},
+      "set": {"commonErrorTargets": ["看到 m 就直接解 m-2=5，漏掉另一個同類項中的 3-m。", "只代入單一 m 得到係數一，就宣稱全部都無解，沒有用 m-m 抵消說明一般性。"]}
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u10-s003-lecture-r1",
+      "expectedContentSha256": "34a8e02513fb3968dfda01dbbae0d4c787bf18327560fd6f702b84faf455a5fa",
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "化簡 4x+7x-3。", "solutionSteps": ["(4+7)x-3。"], "answer": "11x-3。", "why": "4x 與 7x 的文字部分完全相同，可由分配律反向合併成 (4+7)x；常數 -3 沒有 x，不能併入這一組。合併只改係數，不改 x 的指數，結果才是 11x-3。"},
+          {"exampleId": "L2", "prompt": "化簡 5x²-2x+3x²+x。", "solutionSteps": ["x² 項係數 5+3；x 項係數 -2+1。"], "answer": "8x²-x。", "why": "先依文字部分分成 x² 與 x 兩組，可避免跨次方相加。二次項係數為八，一次項中 x 的省略係數是一，所以 -2+1=-1；係數負一通常寫成 -x。"},
+          {"exampleId": "L3", "prompt": "化簡 2xy-5yx+4。", "solutionSteps": ["xy=yx，所以 2xy-5xy。"], "answer": "-3xy+4。", "why": "數的乘法具有交換律，yx 與 xy 表示相同文字部分，故兩項可以合併；係數 2-5=-3。常數四不含任何文字，只能保留，不能與 -3xy 再合併。"}
+        ]
+      },
+      "appendArray": {
+        "conceptNarrative": ["合併同類項前，先忽略係數並比較完整文字部分：字母種類與每個指數都相同才屬同組，乘法中的 xy 與 yx 可用交換律重排後比較。接著把各項係數連同正負號相加，再原樣抄回文字部分；係數為零時該組消失，為一或負一時通常省略數字。未配對的項與常數不可遺失，括號則須先完整展開，避免錯誤跨組或改變指數。"],
+        "commonMistakes": [{"mistake": "合併後只留下有配對的項", "why": "沒有同類項的項仍是原式的一部分", "correction": "分類時建立每種文字部分及常數的清單，逐組抄回答案。"}]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

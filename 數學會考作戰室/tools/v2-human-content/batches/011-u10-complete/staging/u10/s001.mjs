@@ -55,7 +55,8 @@ export default {
       "讀一個多項式時，先把減法改看成「加上一個負項」。例如 4x²-3x+5 的三項是 4x²、-3x、5。",
       "項的正負號不能丟失；-6x 的係數是 -6，不是 6。",
       "x 前未寫數字代表係數 1，-x 代表係數 -1。",
-      "本單元的一元多項式要求 x 的指數是 0、1、2 等非負整數；2/x、√x、x⁻¹ 不符合。"
+      "本單元的一元多項式要求 x 的指數是 0、1、2 等非負整數；2/x、√x、x⁻¹ 不符合。",
+      "完整判讀多項式時，可先把每個減法改寫成加上負項，再逐項標記數字係數、文字部分與指數；讀係數時包含正負號，讀項時保留完整文字部分，讀常數項時則確認完全不含未知數。若題目先給括號或不同排列，必須先化簡或搬移完整項，但不得改變項的符號；最後再檢查所有未知數指數都是非負整數，排除分母、根號與負次方的情形。"
     ],
     "formalDefinitions": [
       {
@@ -117,7 +118,8 @@ export default {
           "把減號留給下一項。",
           "依序讀出三項。"
         ],
-        "answer": "5x²、-2x、9。"
+        "answer": "5x²、-2x、9。",
+        "why": "項是由最外層加減號切出的完整部分，負號必須跟著後面的文字項一起移動。把原式重寫成 5x²+(-2x)+9，可直接看出三項，也能避免把係數二或常數九誤算成額外項。"
       },
       {
         "exampleId": "L2",
@@ -125,7 +127,8 @@ export default {
         "solutionSteps": [
           "-x³=-1x³。"
         ],
-        "answer": "-1。"
+        "answer": "-1。",
+        "why": "x³ 前沒有顯示正數時，省略的是一；原項前另有負號，所以完整數字因數是負一。將答案代回成 (-1)x³，正好恢復原來的 -x³，且不會把指數三混作係數。"
       },
       {
         "exampleId": "L3",
@@ -133,7 +136,8 @@ export default {
         "solutionSteps": [
           "2/x=2x⁻¹，指數 -1 不是非負整數。"
         ],
-        "answer": "不是。"
+        "answer": "不是。",
+        "why": "一元多項式要求未知數每一個指數都是非負整數；2/x 等同 2x⁻¹，已出現負一次方。即使其餘兩項合格，只要其中一項違反限制，整個式子就不能稱為本單元的一元多項式。"
       }
     ],
     "commonMistakes": [
@@ -151,12 +155,17 @@ export default {
         "mistake": "把 3x+5 說成三項",
         "why": "把係數 3 當作獨立項",
         "correction": "項由最外層加減分界，只有 3x 和 5。"
+      },
+      {
+        "mistake": "只看式子有幾個數字就判斷項數",
+        "why": "數字可能是係數、指數或常數，並非每個數字都形成一項",
+        "correction": "只用最外層加減號切分，並讓負號跟著後一項。"
       }
     ],
     "selfCheck": [
-      "我是否能能以加號或減號為分界正確指出每一項？",
-      "我是否能能辨認未知數項的係數、常數項與省略的 1 或 -1？",
-      "我是否能能判斷含負整數指數、未知數在分母或根號內的式子不是本單元的一元多項式？",
+      "我是否能以加號或減號為分界正確指出每一項？",
+      "我是否能辨認未知數項的係數、常數項與省略的 1 或 -1？",
+      "我是否能判斷含負整數指數、未知數在分母或根號內的式子不是本單元的一元多項式？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -207,7 +216,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "91b13d6053b7c5e5b06ec6269a67ad6ef0b050b2472e18cdcb2e01446942789c"
+    "contentSha256": "80a1945bd02ac3331ffc84b396558fffee76d9b88464c58540126b60ada56d1d"
   },
   "mcQuestions": [
     {
@@ -237,9 +246,11 @@ export default {
         "derivedChoice": "-7",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "係數包含正負號，因此答案為 -7。",
+      "explanation": "係數包含正負號，因此答案為 -7。 把原式視為負七乘以 x 的三次方，可知乘在文字部分前的完整數值是負七；三只表示 x 自乘的次數，不能取代係數。",
       "steps": [
-        "把 -7x³ 寫成 (-7)·x³，乘在文字部分前的數是 -7。"
+        "把 -7x³ 寫成 (-7)·x³，乘在文字部分前的數是 -7。",
+        "把項改寫成 (-7)·x³，讓數字因數與文字部分清楚分開。",
+        "核對原式的負號仍保留在數字因數上，因此選 -7。"
       ],
       "optionAnalysis": [
         {
@@ -263,7 +274,7 @@ export default {
           "reason": "同時混淆負號與指數。"
         }
       ],
-      "misconceptionTarget": "負號未隨項保留",
+      "misconceptionTarget": "負號未隨項保留 只讀數字的絕對值而漏掉負號，或把右上角的指數三誤認為係數。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -278,7 +289,7 @@ export default {
       "semanticReviewRef": "u10-s001-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e92e01f805ec8d42c71b7917db0e368a6a6c68770f43ce2f5c9b12776ce9a2d7"
+      "contentSha256": "884dfa4a5e0485488a9e20b2e92406f5e49f071ecbd833ff6d2b20ab17a1299b"
     },
     {
       "questionId": "u10-s001-v002",
@@ -307,10 +318,11 @@ export default {
         "derivedChoice": "9",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "以是否含未知數判斷，常數項為 9。",
+      "explanation": "以是否含未知數判斷，常數項為 9。 先以最外層加減號分出 4x²、-3x、9 三項，再逐項檢查是否含 x；只有 9 完全不含未知數，所以它才是常數項。",
       "steps": [
         "常數項是不含 x 的項。",
-        "四項資訊中只有 9 不含 x。"
+        "四項資訊中只有 9 不含 x。",
+        "回到原式確認 9 本身就是一個完整項，且沒有附帶任何未知數。"
       ],
       "optionAnalysis": [
         {
@@ -334,7 +346,7 @@ export default {
           "reason": "-3x 含 x。"
         }
       ],
-      "misconceptionTarget": "把係數當成常數項",
+      "misconceptionTarget": "把係數當成常數項 把一次項的係數 -3 單獨抽出，誤當成原多項式中的常數項。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -349,7 +361,7 @@ export default {
       "semanticReviewRef": "u10-s001-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b071440564e27b186dd6249190228a4b64ca1f0169d14aa06e5d2d6d3bd5d389"
+      "contentSha256": "2e99983cb871720160a2dede591234a1228766d1dbd1cb50c5adf0b7255e5baf"
     },
     {
       "questionId": "u10-s001-v003",
@@ -378,9 +390,11 @@ export default {
         "derivedChoice": "3 項",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "負號屬於第二項，因此共有 3 項。",
+      "explanation": "負號屬於第二項，因此共有 3 項。 項數由最外層的加減分界決定，不由係數大小決定；2a²、-5a 與常數 1 各是一項，所以一共是三項。",
       "steps": [
-        "以最外層加減分界，三項為 2a²、-5a、1。"
+        "以最外層加減分界，三項為 2a²、-5a、1。",
+        "把減法改讀成加上負項，得到 2a²+(-5a)+1。",
+        "逐一點算這三個完整部分，確認常數 1 也必須列入。"
       ],
       "optionAnalysis": [
         {
@@ -404,7 +418,7 @@ export default {
           "reason": "把係數 5 當成項數。"
         }
       ],
-      "misconceptionTarget": "漏算常數項或把係數當項數",
+      "misconceptionTarget": "漏算常數項或把係數當項數 只計算含 a 的兩項而漏掉常數 1，或看到係數 5 就誤選五項。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -419,7 +433,7 @@ export default {
       "semanticReviewRef": "u10-s001-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f277cbabd2e21db34173def4f4cd47337599c413edfdaf01f6dbb0cb0269f818"
+      "contentSha256": "0691f965db660e8a619c2e18f3207c4eb8f4362f9de76ec02152b98112bd9496"
     },
     {
       "questionId": "u10-s001-v004",
@@ -448,9 +462,11 @@ export default {
         "derivedChoice": "6x²",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "依指數 2 選出完整項 6x²。",
+      "explanation": "依指數 2 選出完整項 6x²。 二次項是未知數指數恰為二的整個項，須連同係數與符號一起寫；在原式中只有 6x² 符合，單寫 6 並不是一個項。",
       "steps": [
-        "二次項的文字部分必須是 x²，所以為 6x²。"
+        "二次項的文字部分必須是 x²，所以為 6x²。",
+        "比較各項的 x 指數：-x³ 為三次、6x² 為二次、-4 為常數。",
+        "題目問完整的二次項，因此保留係數與 x²，寫成 6x²。"
       ],
       "optionAnalysis": [
         {
@@ -474,7 +490,7 @@ export default {
           "reason": "含 x² 的完整項，正確。"
         }
       ],
-      "misconceptionTarget": "只寫係數而非完整項",
+      "misconceptionTarget": "只寫係數而非完整項 找到二次項後只抄它的係數 6，沒有保留文字部分 x²。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -489,7 +505,7 @@ export default {
       "semanticReviewRef": "u10-s001-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "43652733e66537c36229ee2b04e488a349ba68427c2b286650a302e429c075d1"
+      "contentSha256": "478eb8c9172afe0f8ea6d6cf7436ab2a0593c4c78ead1f1b2b01ef2fae541f22"
     },
     {
       "questionId": "u10-s001-v005",
@@ -518,9 +534,11 @@ export default {
         "derivedChoice": "-3",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "重新排列不改變任何項的符號。",
+      "explanation": "重新排列不改變任何項的符號。 降冪排列只改變各項的位置，不會改變原來的正負號；重排成 2x²-3x+8 後，一次項仍是 -3x，故係數為 -3。",
       "steps": [
-        "降冪排列為 2x²-3x+8，x 項是 -3x，係數 -3。"
+        "降冪排列為 2x²-3x+8，x 項是 -3x，係數 -3。",
+        "依指數由大到小搬移完整項，得到 2x²+(-3x)+8。",
+        "從 -3x 取出數字因數並保留符號，得到係數 -3。"
       ],
       "optionAnalysis": [
         {
@@ -544,7 +562,7 @@ export default {
           "reason": "8 是常數項。"
         }
       ],
-      "misconceptionTarget": "排列時改變項的符號",
+      "misconceptionTarget": "排列時改變項的符號 移動 -3x 時把負號留在原位置，錯把一次項係數讀成正三。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -559,7 +577,7 @@ export default {
       "semanticReviewRef": "u10-s001-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "db18886b58e5fcd06d11423c11873114001981e7f0b34dd702eb9936b768aa17"
+      "contentSha256": "d0c0bf76c5f541474ddc5e01b4438d8e97d6db5a161f7d8b5e8aa04187558ebd"
     },
     {
       "questionId": "u10-s001-v006",
@@ -588,9 +606,11 @@ export default {
         "derivedChoice": "3x²-x+5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "一元多項式不得有 x 在分母、根號內或負整數指數。",
+      "explanation": "一元多項式不得有 x 在分母、根號內或負整數指數。 逐一檢查未知數的位置與指數：分母中的 x 等同負一次方，根號中的 x 等同二分之一次方，兩者都不合規；只有第三式各指數皆為非負整數。",
       "steps": [
-        "3x²-x+5 的 x 指數為 2、1、0，皆為非負整數。"
+        "3x²-x+5 的 x 指數為 2、1、0，皆為非負整數。",
+        "把各選項中的 x 改寫成冪次形式，逐項列出其指數。",
+        "排除含負指數或分數指數者，只留下指數為 2、1、0 的 3x²-x+5。"
       ],
       "optionAnalysis": [
         {
@@ -601,7 +621,7 @@ export default {
         {
           "choice": "√x+2",
           "truth": false,
-          "reason": "含 x^(1/2)，不符合。"
+          "reason": "含 √x，不符合。"
         },
         {
           "choice": "3x²-x+5",
@@ -614,7 +634,7 @@ export default {
           "reason": "含負指數，不符合。"
         }
       ],
-      "misconceptionTarget": "只看式子有加減就認為是多項式",
+      "misconceptionTarget": "只看式子有加減就認為是多項式 只因式子含有加減號就稱為多項式，沒有檢查未知數是否在分母、根號或負次方。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -629,7 +649,7 @@ export default {
       "semanticReviewRef": "u10-s001-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1db05acc735607b20e3d895b943389ee9913f0ea179a297a342c6b04658d4cf8"
+      "contentSha256": "3c1d02a8210e149999d3fe16464f270316b7388b48b6332b98e351ad9dcd99d5"
     },
     {
       "questionId": "u10-s001-v007",
@@ -658,9 +678,11 @@ export default {
         "derivedChoice": "7",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先讀出係數式，再解一元一次等式。",
+      "explanation": "先讀出係數式，再解一元一次等式。 x² 前的整體因數是 m-2，而不是單獨的 m；依題意列 m-2=5，等式兩邊同加 2 得 m=7，代回後係數確為 5。",
       "steps": [
-        "二次項係數為 m-2，令 m-2=5，得 m=7。"
+        "二次項係數為 m-2，令 m-2=5，得 m=7。",
+        "由 (m-2)x² 讀出二次項係數為整個 m-2。",
+        "解 m-2=5 得 m=7，再代回算 7-2=5 核對。"
       ],
       "optionAnalysis": [
         {
@@ -684,7 +706,7 @@ export default {
           "reason": "m=7 時係數 5，正確。"
         }
       ],
-      "misconceptionTarget": "忽略係數是 m-2",
+      "misconceptionTarget": "忽略係數是 m-2 把參數 m 直接視為二次項係數，忽略括號內還要減去二。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -699,7 +721,7 @@ export default {
       "semanticReviewRef": "u10-s001-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2c5eef975652b87dcb65d834df441ab945913c1eed49ae75dd242495af43ac0d"
+      "contentSha256": "86422682e0fa112e9965b015fb51b8d659325e09087d647ad46ef79f4aea3d8d"
     },
     {
       "questionId": "u10-s001-v008",
@@ -728,9 +750,11 @@ export default {
         "derivedChoice": "3 個",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "負號逐項分配後共有 3 個非零項。",
+      "explanation": "負號逐項分配後共有 3 個非零項。 括號前是減號，須把括號內兩項都變號，故原式成為 3x²-2x+5；三項的次數互不相同且係數皆非零，不能再合併。",
       "steps": [
-        "去括號得 3x²-2x+5，三項次方不同，不能再合併。"
+        "去括號得 3x²-2x+5，三項次方不同，不能再合併。",
+        "將 -(2x-5) 分配為 -2x+5，完整去除括號。",
+        "依最外層加減分界列出 3x²、-2x、5，點算為三個非零項。"
       ],
       "optionAnalysis": [
         {
@@ -754,7 +778,7 @@ export default {
           "reason": "把數字 5 當項數。"
         }
       ],
-      "misconceptionTarget": "去括號漏變號或誤算項數",
+      "misconceptionTarget": "去括號漏變號或誤算項數 只把 2x 變成 -2x 卻沒有把 -5 變成 +5，或把括號內數字誤算成額外項。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -769,7 +793,7 @@ export default {
       "semanticReviewRef": "u10-s001-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "33b11bc37b238bdfd9b19c07942fde5b69f8a61fa5113980054adca3cdd1b273"
+      "contentSha256": "c3f33d5f459e6724c6df2f9ce585ee989ee8c6cdf6b2f8454fa069c6eaac0587"
     },
     {
       "questionId": "u10-s001-v009",
@@ -798,10 +822,12 @@ export default {
         "derivedChoice": "b=0，c=-4",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "依各係數所對應的次方判讀。",
+      "explanation": "依各係數所對應的次方判讀。 在標準式 ax²+bx+c 中，b 專門乘在 x 前，缺少 x 項就表示 b=0；c 是不含 x 的常數項，所以題設同時給出 c=-4。兩項條件缺一不可。",
       "steps": [
         "沒有 x 項表示 b=0。",
-        "常數項就是 c，所以 c=-4。"
+        "常數項就是 c，所以 c=-4。",
+        "把 a、b、c 分別對應到二次項、一次項與常數項。",
+        "套用缺少一次項及常數為 -4 兩條條件，得到 b=0、c=-4。"
       ],
       "optionAnalysis": [
         {
@@ -825,7 +851,7 @@ export default {
           "reason": "x 項為 -4x 且常數 0。"
         }
       ],
-      "misconceptionTarget": "把 a、b、c 對應次方弄反",
+      "misconceptionTarget": "把 a、b、c 對應次方弄反 沒有按 x²、x、常數的順序對應 a、b、c，將缺項條件放到錯誤係數。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -840,7 +866,7 @@ export default {
       "semanticReviewRef": "u10-s001-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e136a97560510bfc3b08a5878aec62e8b44b9a98fb036626c827bbd83db04690"
+      "contentSha256": "a45c9e5285d666b3c33326330db7bd537fa8a583605668345d14a22e04fd8e5b"
     },
     {
       "questionId": "u10-s001-v010",
@@ -869,9 +895,11 @@ export default {
         "derivedChoice": "每公里增加 5 元",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "係數 5 表示每增加 1 公里，車資增加 5 元。",
+      "explanation": "係數 5 表示每增加 1 公里，車資增加 5 元。 比較行駛 x 與 x+1 公里時的車資，差值為 [85+5(x+1)]-(85+5x)=5，因此 5 的情境單位是每公里五元，並非固定收費。",
       "steps": [
-        "當 x 增加 1，5x 增加 5，而常數 85 不變。"
+        "當 x 增加 1，5x 增加 5，而常數 85 不變。",
+        "先辨認常數 85 是不隨公里數改變的起跳價。",
+        "令公里數增加 1，比較兩次模型值，確認車資增加 5 元。"
       ],
       "optionAnalysis": [
         {
@@ -895,7 +923,7 @@ export default {
           "reason": "符合變動率意義。"
         }
       ],
-      "misconceptionTarget": "把係數和常數的情境意義互換",
+      "misconceptionTarget": "把係數和常數的情境意義互換 把變動率 5 與固定起跳價 85 對調，或把係數誤解為里程上限。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "5 的單位是元/公里；85 的單位是元。",
@@ -910,7 +938,7 @@ export default {
       "semanticReviewRef": "u10-s001-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b44e89ff711cf15c23e37ce85e807cac5145d19c76c0098454f9663a1f4f7668"
+      "contentSha256": "7550e67bc848012e4abde2a020ac1a96d6642b730b3e855e194c49a1390fbf83"
     },
     {
       "questionId": "u10-s001-v011",
@@ -939,9 +967,11 @@ export default {
         "derivedChoice": "7",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "平方公分是整個 A 的單位，不改變代數係數判讀。",
+      "explanation": "平方公分是整個 A 的單位，不改變代數係數判讀。 先依次方辨認一次項為 7x，再取乘在 x 前的數字 7；3 屬於二次項 3x²，整個面積的平方公分單位不會改變代數上的係數。",
       "steps": [
-        "一次項是 7x，其係數為 7。"
+        "一次項是 7x，其係數為 7。",
+        "按 x 的指數分類，鎖定指數為 1 的完整項 7x。",
+        "從 7x 分離數字因數 7，並確認題目只問係數而非面積值。"
       ],
       "optionAnalysis": [
         {
@@ -965,7 +995,7 @@ export default {
           "reason": "把兩係數相加，沒有依題意。"
         }
       ],
-      "misconceptionTarget": "把所有係數相加",
+      "misconceptionTarget": "把所有係數相加 把二次項係數 3 與一次項係數 7 相加，或把未知數 x 本身當成係數。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "A 的單位為平方公分；係數數值依指定變數單位解讀。",
@@ -980,7 +1010,7 @@ export default {
       "semanticReviewRef": "u10-s001-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b6bec73291812567e3f4e8d175ebd586f7ead1044c7922d92bd4482462c33010"
+      "contentSha256": "0bd421f5a2352373f554246536c2dd936590548cde73a2f4ede0c3bafeccdcef"
     },
     {
       "questionId": "u10-s001-v012",
@@ -1009,9 +1039,11 @@ export default {
         "derivedChoice": "開始時有 120 件",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "一次模型的常數項是變數為 0 時的初始量。",
+      "explanation": "一次模型的常數項是變數為 0 時的初始量。 常數項可用變數取零來解讀：尚未經過任何一天時 d=0，模型給 P=120；因此 120 的單位是件，代表開始時的庫存量。",
       "steps": [
-        "當 d=0 時 P=120，所以常數項代表起始庫存。"
+        "當 d=0 時 P=120，所以常數項代表起始庫存。",
+        "令經過天數 d=0，代入模型得到 P=120-8×0。",
+        "化簡得 P=120 件，因此選擇開始時有 120 件。"
       ],
       "optionAnalysis": [
         {
@@ -1035,7 +1067,7 @@ export default {
           "reason": "120 是件數，不是天數上限。"
         }
       ],
-      "misconceptionTarget": "未用 d=0 解釋常數項",
+      "misconceptionTarget": "未用 d=0 解釋常數項 把常數 120 當作每日變化量、天數上限，沒有以 d=0 檢查其初始量意義。",
       "prerequisiteCheck": "使用先備技能：既有整數與代數記號基礎；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "P 的單位是件，d 的單位是天；-8 表示每天減少 8 件。",
@@ -1050,7 +1082,7 @@ export default {
       "semanticReviewRef": "u10-s001-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "243e99985b1b055b08a0dfc29be2a71081d3e48c4f921e0d664ef84b46535021"
+      "contentSha256": "55e223c3257f69f9bb152c93a2054a730eac624c7a1d10cfc8ffb6c39c6fcfac"
     }
   ],
   "constructedResponses": [
@@ -1072,14 +1104,16 @@ export default {
       ],
       "standardSolution": [
         "各項為 -3x⁴、x²、-7x、5。",
-        "四次項係數 -3，一次項係數 -7，常數項 5。"
+        "四次項係數 -3，一次項係數 -7，常數項 5。",
+        "以最外層加減號分界時，x² 前雖未寫數字仍有係數 1；將結果代回原式可重組成 (-3)x⁴+1x²+(-7)x+5，與題目完全一致，故三個指定值不會漏掉符號。"
       ],
       "alternativeMethods": [
         "可先改寫為 (-3)x⁴+(1)x²+(-7)x+5，再讀取。"
       ],
       "reasoningSteps": [
         "各項為 -3x⁴、x²、-7x、5。",
-        "四次項係數 -3，一次項係數 -7，常數項 5。"
+        "四次項係數 -3，一次項係數 -7，常數項 5。",
+        "把列出的四項依原順序重新相加核對，確認四次項與一次項的負號及常數 5 均未遺失。"
       ],
       "rubric": [
         {
@@ -1106,7 +1140,8 @@ export default {
       "unitAndNotationRules": "不涉及單位；係數必須連同正負號。",
       "answerOnlyPolicy": "只寫「-3、-7、5」但未列各項，最高 2 分。",
       "commonErrorTargets": [
-        "辨認項、係數、常數項與多項式的基本限制"
+        "把 -3x⁴ 或 -7x 的負號留在分隔符號上，將係數錯寫成正 3 或正 7。",
+        "把 x² 右上角的 2 當成係數，或因其數字係數省略而漏列這一項。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1117,7 +1152,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "822aca86b1d3cecc5b327963f2389cdce8029447e0c21a0f841f282fea064d83"
+      "contentSha256": "13690ca9b73324a27828a7bcf6c5d88cd4aa9f74d5cddeea797befd7d69be44d"
     },
     {
       "questionId": "u10-s001-cr002",
@@ -1145,7 +1180,8 @@ export default {
       ],
       "reasoningSteps": [
         "2/x=2x⁻¹，x 的指數 -1 不是非負整數，因此第一式不是本單元的一元多項式。",
-        "第二式化簡為 x²+1，各 x 指數為 2、0，皆為非負整數，所以是多項式。"
+        "第二式化簡為 x²+1，各 x 指數為 2、0，皆為非負整數，所以是多項式。",
+        "最後逐項核對：第一式含指數 -1 而不合格；第二式只有指數 2 與 0，符合所有多項式條件。"
       ],
       "rubric": [
         {
@@ -1172,7 +1208,8 @@ export default {
       "unitAndNotationRules": "不涉及單位；負指數應寫成 -1。",
       "answerOnlyPolicy": "只寫「第一個不是，第二個是」最高 1 分。",
       "commonErrorTargets": [
-        "辨認項、係數、常數項與多項式的基本限制"
+        "只因兩個式子都有加減號便都判成多項式，沒有檢查 2/x 中未知數位於分母。",
+        "把 2+x²-1 的常數化簡錯誤連帶誤判資格；常數值改變不影響其 x 指數仍為零。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1183,14 +1220,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1ebb3ed29642198fc32b8e071a5121cfcea107f18a469b3712c9b1d2c99a744c"
+      "contentSha256": "51308fe00b77b2b7e8b87b1e9660f3cd6f32f15b633aed0cae51fcee9b66ca12"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s001-v001-review",
       "questionId": "u10-s001-v001",
-      "questionContentSha256": "e92e01f805ec8d42c71b7917db0e368a6a6c68770f43ce2f5c9b12776ce9a2d7",
+      "questionContentSha256": "884dfa4a5e0485488a9e20b2e92406f5e49f071ecbd833ff6d2b20ab17a1299b",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "把 -7x³ 寫成 (-7)·x³，乘在文字部分前的數是 -7。",
@@ -1219,12 +1256,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「在單項式 -7x³ 中，x³ 的係數是多少？」獨立重算：把 -7x³ 寫成 (-7)·x³，乘在文字部分前的數是 -7。 正解「-7」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "7dd66283ca5bcf57b1168b329928ac4a4853c31e7538f01a81330ffeaddd82d4"
+      "contentSha256": "b6ad1e57fdd81fbe10eec74e291eefe24a2c2e622dc975760a0865c76a777dbd"
     },
     {
       "reviewId": "u10-s001-v002-review",
       "questionId": "u10-s001-v002",
-      "questionContentSha256": "b071440564e27b186dd6249190228a4b64ca1f0169d14aa06e5d2d6d3bd5d389",
+      "questionContentSha256": "2e99983cb871720160a2dede591234a1228766d1dbd1cb50c5adf0b7255e5baf",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "常數項是不含 x 的項；四項資訊中只有 9 不含 x。",
@@ -1253,12 +1290,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「多項式 4x²-3x+9 的常數項是哪一個？」獨立重算：常數項是不含 x 的項；四項資訊中只有 9 不含 x。 正解「9」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "7a90c2ba6e23666b9265f21ade32144876235478bf8636c072f93e543eb9b915"
+      "contentSha256": "da32f3f565002ad131bf54a035eb55cbc764754ee1d5b12cc9d4a74fd971939a"
     },
     {
       "reviewId": "u10-s001-v003-review",
       "questionId": "u10-s001-v003",
-      "questionContentSha256": "f277cbabd2e21db34173def4f4cd47337599c413edfdaf01f6dbb0cb0269f818",
+      "questionContentSha256": "0691f965db660e8a619c2e18f3207c4eb8f4362f9de76ec02152b98112bd9496",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "以最外層加減分界，三項為 2a²、-5a、1。",
@@ -1287,12 +1324,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「多項式 2a²-5a+1 共有幾項？」獨立重算：以最外層加減分界，三項為 2a²、-5a、1。 正解「3 項」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "7a611e69a257092faf5d30e475fc8ce7f9f88af6c153ab6866ec772f2dd46c4f"
+      "contentSha256": "b9f6497c50f3ee6069fed20dd81aac2ea566bb71384b7b7efa10cbd6c5b51179"
     },
     {
       "reviewId": "u10-s001-v004-review",
       "questionId": "u10-s001-v004",
-      "questionContentSha256": "43652733e66537c36229ee2b04e488a349ba68427c2b286650a302e429c075d1",
+      "questionContentSha256": "478eb8c9172afe0f8ea6d6cf7436ab2a0593c4c78ead1f1b2b01ef2fae541f22",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "二次項的文字部分必須是 x²，所以為 6x²。",
@@ -1321,12 +1358,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「在 -x³+6x²-4 中，二次項是哪一個？」獨立重算：二次項的文字部分必須是 x²，所以為 6x²。 正解「6x²」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "ae16ceafdac45957400f50993e01b22d3f8e04d1c2deffc3c1825b7179fd8886"
+      "contentSha256": "f1be0b28f17fed838829d3ac3e08faf9f29ee27e8b8313f85d81c4b4e2e1223a"
     },
     {
       "reviewId": "u10-s001-v005-review",
       "questionId": "u10-s001-v005",
-      "questionContentSha256": "db18886b58e5fcd06d11423c11873114001981e7f0b34dd702eb9936b768aa17",
+      "questionContentSha256": "d0c0bf76c5f541474ddc5e01b4438d8e97d6db5a161f7d8b5e8aa04187558ebd",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "降冪排列為 2x²-3x+8，x 項是 -3x，係數 -3。",
@@ -1355,12 +1392,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「將 8-3x+2x² 按降冪排列後，x 項係數為何？」獨立重算：降冪排列為 2x²-3x+8，x 項是 -3x，係數 -3。 正解「-3」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "cc38a5a37a260455b4baabeeb6e0ebe4ec26cbed53af6cf6543f88f85a070c7e"
+      "contentSha256": "254289a5c01d9d87edee03fc5c27fbb2c2f3c672161879e88d27fc0b624c89dd"
     },
     {
       "reviewId": "u10-s001-v006-review",
       "questionId": "u10-s001-v006",
-      "questionContentSha256": "1db05acc735607b20e3d895b943389ee9913f0ea179a297a342c6b04658d4cf8",
+      "questionContentSha256": "3c1d02a8210e149999d3fe16464f270316b7388b48b6332b98e351ad9dcd99d5",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "3x²-x+5 的 x 指數為 2、1、0，皆為非負整數。",
@@ -1389,12 +1426,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「下列哪一個是 x 的多項式？」獨立重算：3x²-x+5 的 x 指數為 2、1、0，皆為非負整數。 正解「3x²-x+5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "7c6ada043e4f81573e8115155e9457d2ec76b8495b43e14c9c36cd1c54797e87"
+      "contentSha256": "e714997fa4a2a166cf4d93d3839a8c6f8be09a6cc6ddfae39deded4ea8da4c9d"
     },
     {
       "reviewId": "u10-s001-v007-review",
       "questionId": "u10-s001-v007",
-      "questionContentSha256": "2c5eef975652b87dcb65d834df441ab945913c1eed49ae75dd242495af43ac0d",
+      "questionContentSha256": "86422682e0fa112e9965b015fb51b8d659325e09087d647ad46ef79f4aea3d8d",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "二次項係數為 m-2，令 m-2=5，得 m=7。",
@@ -1423,12 +1460,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 (m-2)x²+3x-1 的二次項係數是 5，則 m 為何？」獨立重算：二次項係數為 m-2，令 m-2=5，得 m=7。 正解「7」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "62005258fc5a3fc0c10598844fb323d2668a37919a9850b881c239a1ab6ea88b"
+      "contentSha256": "b75faf748ddfba7e8cb5be5de5b2a16eb905a9266a61ed94814455699980e036"
     },
     {
       "reviewId": "u10-s001-v008-review",
       "questionId": "u10-s001-v008",
-      "questionContentSha256": "33b11bc37b238bdfd9b19c07942fde5b69f8a61fa5113980054adca3cdd1b273",
+      "questionContentSha256": "c3f33d5f459e6724c6df2f9ce585ee989ee8c6cdf6b2f8454fa069c6eaac0587",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "去括號得 3x²-2x+5，三項次方不同，不能再合併。",
@@ -1457,12 +1494,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「將 3x²-(2x-5) 去括號後共有幾個非零項？」獨立重算：去括號得 3x²-2x+5，三項次方不同，不能再合併。 正解「3 個」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "1099a986a65fd6ce5993f01d914a115f332dbbbfe8926cfa377528eabf613ea7"
+      "contentSha256": "3f15cebe4d8809061ebe92180ab77154b4f6276c707e244b58b775daf3e22328"
     },
     {
       "reviewId": "u10-s001-v009-review",
       "questionId": "u10-s001-v009",
-      "questionContentSha256": "e136a97560510bfc3b08a5878aec62e8b44b9a98fb036626c827bbd83db04690",
+      "questionContentSha256": "a45c9e5285d666b3c33326330db7bd537fa8a583605668345d14a22e04fd8e5b",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "沒有 x 項表示 b=0；常數項就是 c，所以 c=-4。",
@@ -1491,12 +1528,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「多項式 ax²+bx+c 中沒有 x 項，且常數項為 -4。下列條件何者正確？」獨立重算：沒有 x 項表示 b=0；常數項就是 c，所以 c=-4。 正解「b=0，c=-4」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "46da2fc52f32a6b50adf240536e3f67c14befbce5763f06b789ceb3276a40b40"
+      "contentSha256": "c25fc05fc48529a22d645e6164baaacce30c539d77ccab9aaecc78475a054d28"
     },
     {
       "reviewId": "u10-s001-v010-review",
       "questionId": "u10-s001-v010",
-      "questionContentSha256": "b44e89ff711cf15c23e37ce85e807cac5145d19c76c0098454f9663a1f4f7668",
+      "questionContentSha256": "7550e67bc848012e4abde2a020ac1a96d6642b730b3e855e194c49a1390fbf83",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "當 x 增加 1，5x 增加 5，而常數 85 不變。",
@@ -1525,12 +1562,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「計程車費用模型 C=85+5x，其中 x 是行駛公里數。係數 5 的意義是什麼？」獨立重算：當 x 增加 1，5x 增加 5，而常數 85 不變。 正解「每公里增加 5 元」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "7c022b71b1b5f9941cf9491e2d9e426e2626cf806057722c72d19ed5d193f53e"
+      "contentSha256": "e7ae964e901e43248df1741589e6159d92b56ab7f425a84c7c09a7d7af82806e"
     },
     {
       "reviewId": "u10-s001-v011-review",
       "questionId": "u10-s001-v011",
-      "questionContentSha256": "b6bec73291812567e3f4e8d175ebd586f7ead1044c7922d92bd4482462c33010",
+      "questionContentSha256": "0bd421f5a2352373f554246536c2dd936590548cde73a2f4ede0c3bafeccdcef",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "一次項是 7x，其係數為 7。",
@@ -1559,12 +1596,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一塊材料的面積表示為 A=3x²+7x（平方公分）。其中一次項的係數是多少？」獨立重算：一次項是 7x，其係數為 7。 正解「7」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "a70a3e97a30d514287501522546167944635d1e72aa22f29874f35775474049e"
+      "contentSha256": "12e656157f3626f1ed7c700e9ffd65f143bf6f83921ec79c715baeb8ebce2f3a"
     },
     {
       "reviewId": "u10-s001-v012-review",
       "questionId": "u10-s001-v012",
-      "questionContentSha256": "243e99985b1b055b08a0dfc29be2a71081d3e48c4f921e0d664ef84b46535021",
+      "questionContentSha256": "55e223c3257f69f9bb152c93a2054a730eac624c7a1d10cfc8ffb6c39c6fcfac",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "當 d=0 時 P=120，所以常數項代表起始庫存。",
@@ -1593,7 +1630,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「倉庫庫存以 P=120-8d 表示，d 為經過天數。常數項 120 代表什麼？」獨立重算：當 d=0 時 P=120，所以常數項代表起始庫存。 正解「開始時有 120 件」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "64bb7459651a4e701730f1fb9b4a1dec5c9e84af02b4a4c9564af6e8e00e5edb"
+      "contentSha256": "f84dcad66df2a64e5d27835ec4d489d934794ffa76ea2e2f806492c598e3bae3"
     }
   ],
   "drawingSpecs": []

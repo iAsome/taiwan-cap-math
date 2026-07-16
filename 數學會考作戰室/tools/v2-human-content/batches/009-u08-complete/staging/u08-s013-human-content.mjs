@@ -74,7 +74,8 @@ export const LECTURE = {
     "文字三視圖必須先定義座標方向。俯視提供哪些 (x,y) 有方塊；正視高度序列通常給每個 x 欄在所有 y 中的最大高度；側視則給每個 y 列在所有 x 中的最大高度。",
     "若正視某欄高度為 3，表示該欄至少有一個位置高度 3，不代表該欄每個位置都高 3。",
     "求最少方塊數時，盡量讓同一高堆同時滿足正視與側視的最大值；求最多時，在不超過各欄與各列上限下提高其他占用位置。",
-    "相容性檢查包括：俯視占用位置是否能承擔所需高度；正視與側視的全域最高值應一致，因為都是同一立體的最高高度。"
+    "相容性檢查包括：俯視占用位置是否能承擔所需高度；正視與側視的全域最高值應一致，因為都是同一立體的最高高度。",
+    "判定最少或最多不只要算出界值，還必須同時給下界或上界理由與可達配置；界值若無法由某組正整數高度實現，就不是實際答案。"
   ],
   "formalDefinitions": [
     {
@@ -139,6 +140,11 @@ export const LECTURE = {
       "step": 4,
       "instruction": "配置高度並逐欄逐列驗證。",
       "check": "求最少時合併高峰；求最多時不超過雙向上限。"
+    },
+    {
+      "step": 5,
+      "instruction": "對最小或最大界值建立可達配置，並逐欄逐列代回。",
+      "check": "每個占用位置為正整數高度，且所有指定最大值都恰好達到。"
     }
   ],
   "workedExamples": [
@@ -146,38 +152,45 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "俯視占用 (1,1)、(1,2)、(2,1)，正視兩欄高度 [2,1]。這表示什麼？",
       "solutionSteps": [
-        "x=1 欄兩位置中最高為 2。",
-        "x=2 欄唯一位置高度為 1。"
+        "依x座標把位置分成第一欄兩格與第二欄一格。",
+        "第一欄兩高度最大值為二。",
+        "第二欄唯一高度為一。"
       ],
-      "answer": "max(h11,h12)=2，且 h21=1。"
+      "answer": "max(h11,h12)=2，且 h21=1。",
+      "why": "正視沿前後方向壓縮，同一x欄只留下最高堆；欄高是最大值而不是欄內總和，也不要求每格都達到最大值。"
     },
     {
       "exampleId": "L2",
       "prompt": "若側視兩列高度 [2,1]，且沿用上例，配置 h11=2、h12=1、h21=1 是否相容？",
       "solutionSteps": [
-        "正視 x1 最大 2、x2 最大 1。",
-        "側視 y1 max(2,1)=2，y2=1。"
+        "正視第一欄最大二、第二欄最大一。",
+        "側視第一列取h11與h21最大值二。",
+        "側視第二列只有h12等於一，兩序列皆相符。"
       ],
-      "answer": "相容。"
+      "answer": "相容。",
+      "why": "相容配置必須同時通過正視的逐欄最大值與側視的逐列最大值；只驗其中一個方向不能保證來自同一立體。"
     },
     {
       "exampleId": "L3",
       "prompt": "俯視只有 (1,1)、(2,1)，正視 [3,2]，側視只有一列高度 [3]，最少方塊數？",
       "solutionSteps": [
-        "兩占用位置各要達正視高度 3、2。",
-        "側視最大為 3 已自然滿足。",
-        "總數 3+2=5。"
+        "兩位置各自是唯一正視欄，故高度必為三與二。",
+        "側視唯一一列的最大值為三，已由三高堆滿足。",
+        "總數三加二等於五。"
       ],
-      "answer": "5 塊。"
+      "answer": "5 塊。",
+      "why": "兩個正視欄的需求不能合併到同一位置，但側視最高三可由既有三高堆共享；逐項分辨可合併與不可合併的限制才會得到最少值。"
     },
     {
       "exampleId": "L4",
       "prompt": "正視最高為 4，側視所有列最高都不超過 3，能否相容？",
       "solutionSteps": [
-        "同一立體全域最高高度從任何水平視向都相同。",
-        "正視需有高度 4，但側視沒有任何列可容納 4。"
+        "正視最高四表示存在一個實際四高堆。",
+        "該位置必屬於某一側視列。",
+        "那一列最高至少四，與所有列至多三矛盾。"
       ],
-      "answer": "不能相容。"
+      "answer": "不能相容。",
+      "why": "同一立體的全域最高堆從正面與側面都會出現在某個輪廓中，因此兩個水平視圖的全域最大高度必須一致。"
     }
   ],
   "levelConnections": {
@@ -248,7 +261,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "eda8ee21332da9364e88133d69de7aa278a0d5c3100f3288291f26cafc70219e"
+  "contentSha256": "ed628852ee7984ac61aba5af225d9dd86487379353b4db29d43a22dedd621579"
 };
 
 export const QUESTIONS = [
@@ -279,11 +292,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "正視欄高 3 只限制最大值為 3，故必定成立的是 max(h(1,1),h(1,2))=3。",
-    "explanation": "沿前後方向投影時，同一 x 欄只留下最高輪廓，因此兩個高度的最大值為 3。",
+    "explanation": "沿前後方向投影時，同一 x 欄只留下最高輪廓，因此兩個高度的最大值為 3。 最大值等於三只保證兩堆中至少一堆達三，另一堆可為一、二或三；因此相等、總和與最小值敘述都不是必然。",
     "steps": [
       "找出同一 x 欄的兩個位置。",
       "依定義取最大高度。",
-      "寫成 max(h(1,1),h(1,2))=3。"
+      "寫成 max(h(1,1),h(1,2))=3。",
+      "用高度組合三與一作反例排除兩堆皆三。",
+      "確認最大值式在所有符合輪廓的配置中都成立。"
     ],
     "optionAnalysis": [
       {
@@ -307,7 +322,7 @@ export const QUESTIONS = [
         "reason": "正視高度不代表較小值。"
       }
     ],
-    "misconceptionTarget": "把投影高度誤當成每一堆高度或高度總和。",
+    "misconceptionTarget": "把投影高度誤當成每一堆高度或高度總和。 也可能把欄高三平均分配到兩個位置，誤把最大值條件當成總和條件。",
     "prerequisiteCheck": "只需知道正視欄高是同欄各堆高度的最大值。",
     "estimatedTimeSec": 90,
     "unitCheck": "高度皆以方塊層數表示，沒有長度單位混用。",
@@ -319,7 +334,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "10691ba0b97ba2aa130a7af3abfbe01d310abc1f730b4e6db74595f7a776ff02"
+    "contentSha256": "087d69dfe009fc4d2ca00da55db73e130591289f6e8370804ab4bb09562f2330"
   },
   {
     "questionId": "u08-s013-v002",
@@ -348,10 +363,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "正視序列直接是 [2,1]；側視唯一列為 max(2,1)=2。",
-    "explanation": "正視按 x 欄列出高度 2、1；側視沿左右壓縮，同一列最高為 max(2,1)=2。",
+    "explanation": "正視按 x 欄列出高度 2、1；側視沿左右壓縮，同一列最高為 max(2,1)=2。 每個正視欄只有一個占用位置，欄高直接為二、一；側視唯一一列同時看見兩堆，只留下較高的二，不能把兩堆相加成三。",
     "steps": [
       "依 x=1、2 讀出正視欄高。",
-      "對 y=1 的兩個位置取最大值。"
+      "對 y=1 的兩個位置取最大值。",
+      "確認兩位置同屬側視的第一列。",
+      "對該列高度二與一取最大值二。"
     ],
     "optionAnalysis": [
       {
@@ -375,7 +392,7 @@ export const QUESTIONS = [
         "reason": "正視欄序不可把第 1、2 欄顛倒。"
       }
     ],
-    "misconceptionTarget": "把投影輪廓當成高度相加，或顛倒欄序。",
+    "misconceptionTarget": "把投影輪廓當成高度相加，或顛倒欄序。 還可能把正視欄位順序由右向左讀，得到顛倒的高度序列。",
     "prerequisiteCheck": "需能分辨正視按 x 欄、側視按 y 列取最大值。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有數值均為方塊層數。",
@@ -387,7 +404,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4970676580a827c0ba3c7e85641965c28613a84c05b79bdaa857a5764469a328"
+    "contentSha256": "bc918fe240d80393f069945a0bc285518d346377f06ae82ed691a7389402b883"
   },
   {
     "questionId": "u08-s013-v003",
@@ -415,10 +432,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "2+3+1=6，所以共 6 個單位方塊。",
-    "explanation": "每一位置的高度就是該處方塊數，逐處相加即可。",
+    "explanation": "每一位置的高度就是該處方塊數，逐處相加即可。 每個占用位置的高度就是該處單位方塊數，三處依序有二、三、一塊；逐處相加為六，而占用格數三只表示底層下限。",
     "steps": [
       "列出三處高度 2、3、1。",
-      "相加得 6。"
+      "相加得 6。",
+      "將每一位置高度轉成該處方塊數。",
+      "用二加三加一驗算總和為六。"
     ],
     "optionAnalysis": [
       {
@@ -442,7 +461,7 @@ export const QUESTIONS = [
         "reason": "總方塊數等於各占用位置高度總和：2+3+1=6。"
       }
     ],
-    "misconceptionTarget": "把俯視占用格數直接當成總方塊數。",
+    "misconceptionTarget": "把俯視占用格數直接當成總方塊數。 也可能只取最高的三層當總數，忽略另外兩個占用位置。",
     "prerequisiteCheck": "只使用總方塊數為各堆高度總和。",
     "estimatedTimeSec": 90,
     "unitCheck": "答案單位為「個單位方塊」。",
@@ -454,7 +473,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "fea49fdf3aa8b7242ccc77a092df4c91178d985c027a23c90cb0cac79be716f1"
+    "contentSha256": "38d7e6c6d0f69aa12cf4142030653429ab6e0b9a83d2eb5e2ce55ef7ce747a21"
   },
   {
     "questionId": "u08-s013-v004",
@@ -483,11 +502,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "y=2 僅含 h(1,2)，而其最大值被指定為 3，因此 h(1,2)=3。",
-    "explanation": "先用俯視確認第 2 列沒有其他占用位置；側視該列輪廓 3 就是唯一一堆的高度。",
+    "explanation": "先用俯視確認第 2 列沒有其他占用位置；側視該列輪廓 3 就是唯一一堆的高度。 第二列在俯視中只有位置一逗號二，所以側視第二列最大值三只能由這一堆達成；代回正視第一欄也仍能得到高度三。",
     "steps": [
       "找出 y=2 的占用位置。",
       "確認只有 (1,2)。",
-      "由側視第 2 列高度得 h(1,2)=3。"
+      "由側視第 2 列高度得 h(1,2)=3。",
+      "把側視第二列的最大值條件寫成單一高度。",
+      "代回第一欄最大值，確認與正視高度三相容。"
     ],
     "optionAnalysis": [
       {
@@ -511,7 +532,7 @@ export const QUESTIONS = [
         "reason": "第二列只有 (1,2) 一處，占用與側視高度已使其唯一。"
       }
     ],
-    "misconceptionTarget": "看到正視第 1 欄高度 3 卻誤以為該欄每一處都無法確定。",
+    "misconceptionTarget": "看到正視第 1 欄高度 3 卻誤以為該欄每一處都無法確定。 也可能只看正視第一欄有兩堆，便忽略側視單一位置已能唯一決定高度。",
     "prerequisiteCheck": "需能由俯視占用與側視最大值共同判讀。",
     "estimatedTimeSec": 90,
     "unitCheck": "高度以層數表示。",
@@ -523,7 +544,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e9fca3ff659440a99a20cfa209f5a5870d1bf2197984305b4de6935bce63a225"
+    "contentSha256": "fbb1a9e3fd47a94fd29a32ae5d88432cc6c66d6e965b43879a87edd74f62de6c"
   },
   {
     "questionId": "u08-s013-v005",
@@ -552,12 +573,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "可配置 h(2,1)=3、h(1,2)=2、其餘兩格各 1，總數 7；少於 7 無法同時保有一個 3 高與另一交叉位置的 2 高。",
-    "explanation": "求最少時應讓同一高堆同時滿足一個正視欄高與一個側視列高。",
+    "explanation": "求最少時應讓同一高堆同時滿足一個正視欄高與一個側視列高。 四格先各一塊共四；高度三的堆增加二塊，高度二的交叉堆再增加一塊，合計七。兩個加高位置不能合併，因指定欄列交會不同。",
     "steps": [
       "四個占用格先各放 1 個。",
       "在第 2 欄第 1 列提高到 3。",
       "在第 1 欄第 2 列提高到 2。",
-      "相加得 7。"
+      "相加得 7。",
+      "以四個底層加上兩個必要增量建立下界七。",
+      "逐欄逐列取最大值，驗證配置確實可達下界。"
     ],
     "optionAnalysis": [
       {
@@ -581,7 +604,7 @@ export const QUESTIONS = [
         "reason": "以一堆高度 3 同時滿足第 2 欄與第 1 列，再以一堆高度 2 同時滿足第 1 欄與第 2 列，其餘兩格各 1，總數 3+2+1+1=7。"
       }
     ],
-    "misconceptionTarget": "直接把兩個視圖高度相加，或忘記每個占用格至少 1 個。",
+    "misconceptionTarget": "直接把兩個視圖高度相加，或忘記每個占用格至少 1 個。 還可能把高度三與二放在同一格，導致另一個需要高度二的欄或列沒有達標。",
     "prerequisiteCheck": "需掌握正視與側視最大值並能安排共享高堆。",
     "estimatedTimeSec": 120,
     "unitCheck": "方塊數以「個」計，輪廓數值為層數。",
@@ -593,7 +616,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "6e74a27365b2aa4da05fb799b5a933836401d4389e5b1b51bbd63cf7bf4ec4d7"
+    "contentSha256": "77d619e91b0c1b3291663abe756b05d5635ff3394f6ea2e80395d7a9f5929c6e"
   },
   {
     "questionId": "u08-s013-v006",
@@ -622,11 +645,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "兩方向輪廓的最大值都應等於最高堆高；4≠3，故不可能。",
-    "explanation": "正視最高欄=max所有 h(x,y)，側視最高列也等於同一個全域最大值。",
+    "explanation": "正視最高欄=max所有 h(x,y)，側視最高列也等於同一個全域最大值。 任何實際最高堆都同時屬於某正視欄與某側視列，因此兩方向序列的全域最大值必相同；四與三不同，無論總數或占用格數都無法修補。",
     "steps": [
       "比較正視序列最大值。",
       "比較側視序列最大值。",
-      "兩者不同，所以不相容。"
+      "兩者不同，所以不相容。",
+      "指出正視與側視都在同一組高度中取全域最大值。",
+      "由四不等於三判定不存在任何相容配置。"
     ],
     "optionAnalysis": [
       {
@@ -650,7 +675,7 @@ export const QUESTIONS = [
         "reason": "同一立體從任一水平投影看到的最高高度必相同，已足以判斷。"
       }
     ],
-    "misconceptionTarget": "以為不同觀看方向可以得到不同的最高高度。",
+    "misconceptionTarget": "以為不同觀看方向可以得到不同的最高高度。 也可能把兩方向視圖當成互不相關的兩個物體，沒有追蹤同一最高堆。",
     "prerequisiteCheck": "需知道兩方向最大輪廓的最大值必相同。",
     "estimatedTimeSec": 90,
     "unitCheck": "高度都以層數表示。",
@@ -662,7 +687,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "6c17ecb08a61e44c825f63ffbe05dac61725048b7a0808edfe20096ac833d1c8"
+    "contentSha256": "3f03074dac6d78b4e35254d165d7a9036ad003bc9449c541bf4251b0b3f3f843"
   },
   {
     "questionId": "u08-s013-v007",
@@ -691,12 +716,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "兩個 3 高堆不可合併，因為位於不同欄；一個 2 高堆可同時滿足第 2 欄與第 2 列，故最少 11。",
-    "explanation": "不同 x 欄的最大值必由各欄自己的堆實現；再讓高度 2 同時服務第 2 欄和第 2 列。",
+    "explanation": "不同 x 欄的最大值必由各欄自己的堆實現；再讓高度 2 同時服務第 2 欄和第 2 列。 六格底層先給六塊，第一與第三欄各需一堆升到三，各增加二塊；第二欄與第二列可共享一個二高堆，再增加一塊，總數十一。",
     "steps": [
       "在第 1、3 欄的第 1 列各放高度 3。",
       "在第 2 欄第 2 列放高度 2。",
       "其他三格各高度 1。",
-      "總和為 11。"
+      "總和為 11。",
+      "由三個正視欄分別建立不可合併的高度需求。",
+      "代回兩個側視列，確認最高值依序為三與二。"
     ],
     "optionAnalysis": [
       {
@@ -720,7 +747,7 @@ export const QUESTIONS = [
         "reason": "有一個 11 個方塊的配置可達成，所以 12 不是最少。"
       }
     ],
-    "misconceptionTarget": "只看最高值 3，忽略每一正視欄都必須達到指定高度。",
+    "misconceptionTarget": "只看最高值 3，忽略每一正視欄都必須達到指定高度。 也可能只設一個三高堆，忽略另一個正視欄也明確要求最高三。",
     "prerequisiteCheck": "需能安排多個欄最大值與列最大值的共享關係。",
     "estimatedTimeSec": 150,
     "unitCheck": "答案是單位方塊個數。",
@@ -732,7 +759,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "3d12f45b8fb5af130df4e8f61e90f1ac373ece24e9432017f6ce3c9bd0fe45a9"
+    "contentSha256": "826b3d34750f6a80d335ff14dd4fc903ddde88fe2a3aae2697cc158e0d256b85"
   },
   {
     "questionId": "u08-s013-v008",
@@ -761,11 +788,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "逐格最大配置為第一欄 [2,3,2]、第二欄 [2,2,2]，總和 13，且正視與側視最大值完全不變。",
-    "explanation": "求最多時，把每格提高到 min(正視欄高, 側視列高)，並檢查各欄列仍達到原最大值。",
+    "explanation": "求最多時，把每格提高到 min(正視欄高, 側視列高)，並檢查各欄列仍達到原最大值。 每格不能超過其正視欄高與側視列高兩者中的較小值；六格上限逐一相加為十三，且第一欄能達三、第二欄達二，各列也達二、三、二。",
     "steps": [
       "第 1 欄三格上限為 min(3,2)、min(3,3)、min(3,2)，和為 7。",
       "第 2 欄上限皆為 min(2,列高)=2，和為 6。",
-      "總數 7+6=13。"
+      "總數 7+6=13。",
+      "逐格使用欄高與列高的共同上限。",
+      "將最大配置代回全部五個欄列最大值。"
     ],
     "optionAnalysis": [
       {
@@ -789,7 +818,7 @@ export const QUESTIONS = [
         "reason": "若所有格都提高到較大值，會使原本高度 2 的欄或列超過指定輪廓。"
       }
     ],
-    "misconceptionTarget": "求最大時只看全域最高值，未逐格套用欄與列的共同上限。",
+    "misconceptionTarget": "求最大時只看全域最高值，未逐格套用欄與列的共同上限。 還可能把每格都設成三，造成第二欄與第一、三列的輪廓超過規格。",
     "prerequisiteCheck": "需能把每格高度限制寫成兩個最大值的較小者。",
     "estimatedTimeSec": 150,
     "unitCheck": "答案是單位方塊個數。",
@@ -801,7 +830,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "2aa1258d772434f64fbc4c4e049eaed3a4fffd820e2e96043dce089e31b805fc"
+    "contentSha256": "2139658c1bb62eb8fcdb00c21591ac0d0e73928e02eaaba93ce7fe36268b3477"
   },
   {
     "questionId": "u08-s013-v009",
@@ -830,12 +859,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "符合每列每欄至少一個 2 的 2×2 配置共有 1+4+2=7。",
-    "explanation": "把高度 2 視為必須覆蓋每一列與每一欄，再依 2 的個數分類。",
+    "explanation": "把高度 2 視為必須覆蓋每一列與每一欄，再依 2 的個數分類。 每列每欄至少有一個二；四個二有一種，三個二可任缺一格有四種，兩個二只能位於兩條對角線有兩種，合計七種且互不重複。",
     "steps": [
       "四個 2：1 種。",
       "三個 2：缺哪一格皆可，共 4 種。",
       "兩個 2：只能放在兩條對角線，共 2 種。",
-      "合計 1+4+2=7。"
+      "合計 1+4+2=7。",
+      "證明只有一個二時必有一列或一欄全為一。",
+      "依二的個數二、三、四分類並相加。"
     ],
     "optionAnalysis": [
       {
@@ -859,7 +890,7 @@ export const QUESTIONS = [
         "reason": "含有某一整列或整欄全為 1 的配置不符合輪廓 [2,2]。"
       }
     ],
-    "misconceptionTarget": "只找出代表性配置，未完整計數所有可能。",
+    "misconceptionTarget": "只找出代表性配置，未完整計數所有可能。 也可能把旋轉後的配置全部視為同一種，或遺漏三個二的四個缺格位置。",
     "prerequisiteCheck": "需掌握欄列最大值條件，並能做小規模分類枚舉。",
     "estimatedTimeSec": 180,
     "unitCheck": "答案單位為「種配置」。",
@@ -871,7 +902,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "9267d95c2f6251973892f523575b0cdfbda86f938fe616885484ff8f9ff54e76"
+    "contentSha256": "6c865515cef4fe0b133428a591fb8e6d139130ebb808858fdb0432a4050b1117"
   },
   {
     "questionId": "u08-s013-v010",
@@ -900,11 +931,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "最低情況是一堆高 3、其餘三堆高 1，總數 3+1+1+1=6。",
-    "explanation": "同一個 3 層高堆可同時出現在正視與側視的最高輪廓，因此最低下界為 4+2=6。",
+    "explanation": "同一個 3 層高堆可同時出現在正視與側視的最高輪廓，因此最低下界為 4+2=6。 四個占用位置先各一箱共四箱；為使全域最高達三，其中一堆要再加兩箱，同一高堆可同時滿足正視與側視，所以至少六箱。",
     "steps": [
       "四個占用位置提供 4 個底層箱。",
       "至少一處高度必為 3，該處比底層多 2 箱。",
-      "得至少 6 箱。"
+      "得至少 6 箱。",
+      "以四個占用位置建立四箱底層。",
+      "讓同一位置升到三層並驗證兩方向最高皆為三。"
     ],
     "optionAnalysis": [
       {
@@ -928,7 +961,7 @@ export const QUESTIONS = [
         "reason": "四個占用位置先各至少 1 箱，共 4 箱；為出現最高 3 層，至少有一堆從 1 增至 3，多 2 箱，所以至少 6 箱。"
       }
     ],
-    "misconceptionTarget": "把最高高度誤套到每一個占用位置。",
+    "misconceptionTarget": "把最高高度誤套到每一個占用位置。 還可能為正視與側視各另設一個三高堆，將下界不必要地提高。",
     "prerequisiteCheck": "需能把俯視占用數與投影最高值轉為最少箱數。",
     "estimatedTimeSec": 120,
     "unitCheck": "箱子以「個」計，高度以「層」計。",
@@ -940,7 +973,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "8235650416e3218e23271efdccdc8e9714b2b5471307a01ab210648877d99850"
+    "contentSha256": "8e008d7f788f0b3a26d24993f1299bda54f691143b9c0aa776cbd6c91a819460"
   },
   {
     "questionId": "u08-s013-v011",
@@ -969,11 +1002,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "對正確配置重算：正視 [max(2,1),3]=[2,3]；側視 [2,max(1,3)]=[2,3]。",
-    "explanation": "把每一候選配置分別計算兩個正視欄最大值與兩個側視列最大值。",
+    "explanation": "把每一候選配置分別計算兩個正視欄最大值與兩個側視列最大值。 正確配置的兩欄最大值為二、三，兩列最大值也為二、三；其餘配置至少有一個欄或列的最大值錯誤，不能只核對一半條件。",
     "steps": [
       "檢查第 1、2 欄最大值。",
       "檢查第 1、2 列最大值。",
-      "只有指定配置同時得到 [2,3] 與 [2,3]。"
+      "只有指定配置同時得到 [2,3] 與 [2,3]。",
+      "對每個候選分別計算兩個欄最大值。",
+      "再計算兩個列最大值並要求兩序列同時相符。"
     ],
     "optionAnalysis": [
       {
@@ -997,7 +1032,7 @@ export const QUESTIONS = [
         "reason": "正視第 1 欄與側視第 1 列會出現高度 3，違反指定 2。"
       }
     ],
-    "misconceptionTarget": "只核對其中一個視圖，未同時檢查另一方向。",
+    "misconceptionTarget": "只核對其中一個視圖，未同時檢查另一方向。 也可能看到配置中出現二與三就選取，沒有依指定座標分欄分列驗算。",
     "prerequisiteCheck": "需能由座標占用與欄列最大值判讀配置。",
     "estimatedTimeSec": 150,
     "unitCheck": "高度為整數層數。",
@@ -1009,7 +1044,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e86c81c859f3eb21fcb8fbfc3325c1f9cc423fc5eb8f1fbb54f10d71bc196fe6"
+    "contentSha256": "9c0ad984a93ce54567181b98e9d2da6a98beefaaa1dd2ecc659e21808acc784f"
   },
   {
     "questionId": "u08-s013-v012",
@@ -1024,7 +1059,7 @@ export const QUESTIONS = [
     "figureId": null,
     "drawingSpecRef": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
-    "text": "自動倉儲有 2×2 四個堆位，四格都占用。系統要求正視欄高 [2,4]、側視列高 [4,2]，並限制每堆不得超過 4 層。下列哪一項是最少箱數且符合要求的配置總數？",
+    "text": "自動倉儲有 2×2 四個堆位，四格都占用。系統要求正視欄高 [2,4]、側視列高 [4,2]，並限制每堆不得超過 4 層。下列哪一項是符合要求的最少箱數？",
     "givenConditions": [
       "四個堆位皆占用。",
       "正視 [2,4]，側視 [4,2]。",
@@ -1039,12 +1074,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "可達配置總數是 8；少於 8 時無法同時保留另一欄與另一列的高度 2。",
-    "explanation": "最少配置要讓同一堆共享正視與側視的高值要求。",
+    "explanation": "最少配置要讓同一堆共享正視與側視的高值要求。 四格底層共四箱；在第二欄第一列設四高堆增加三箱，再於第一欄第二列設二高堆增加一箱，其餘維持一層，總數八且四個輪廓值都吻合。",
     "steps": [
       "先放第 2 欄第 1 列高度 4。",
       "再放第 1 欄第 2 列高度 2。",
       "其餘兩堆各高度 1。",
-      "總數為 8。"
+      "總數為 8。",
+      "先用四個占用格建立四箱下界。",
+      "代回正視二、四與側視四、二，確認八箱配置可達且最少。"
     ],
     "optionAnalysis": [
       {
@@ -1068,7 +1105,7 @@ export const QUESTIONS = [
         "reason": "配置 4、2、1、1 已能達成全部輪廓，只需 8 箱。"
       }
     ],
-    "misconceptionTarget": "只看全域最高堆，忽略其他欄列也有指定輪廓。",
+    "misconceptionTarget": "只看全域最高堆，忽略其他欄列也有指定輪廓。 也可能把題目問的最少箱數誤讀成不同配置的種類數，或忽略高度二的欄列要求。",
     "prerequisiteCheck": "需整合占用、兩向最大高度與層數上限。",
     "estimatedTimeSec": 150,
     "unitCheck": "箱數以「個」計，堆高以「層」計。",
@@ -1080,7 +1117,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "ef264ed951601ed3e3db770f8baea31fcae099517b1ff25411979e5033a47a7e"
+    "contentSha256": "f23cd4a161670258616bbdf2eab033452dc34ec0a101f08df424a37717ef0224"
   }
 ];
 
@@ -1107,7 +1144,8 @@ export const CONSTRUCTED_RESPONSES = [
       "設h11=h(1,1)、h12=h(1,2)、h21=h(2,1)。",
       "第2欄只有h21，所以h21=2；第2列只有h12，所以h12=3。",
       "第1列最大值為2，故h11≤2；占用使h11≥1，所以1≤h11≤2。",
-      "配置例如(h11,h12,h21)=(1,3,2)或(2,3,2)，兩者都符合。"
+      "配置例如(h11,h12,h21)=(1,3,2)或(2,3,2)，兩者都符合。",
+      "分別代入h11等於一與二，都得到正視三、二及側視二、三；h11若超過二會破壞第一列側視上限，範圍完整。"
     ],
     "alternativeMethods": [
       "可逐列逐欄先找只有一格的投影，再處理交會位置。"
@@ -1116,7 +1154,8 @@ export const CONSTRUCTED_RESPONSES = [
       "寫max(h11,h12)=3與h21=2。",
       "寫max(h11,h21)=2與h12=3。",
       "交叉得到h11為1或2。",
-      "代回驗證配置。"
+      "代回驗證配置。",
+      "用兩個端點配置與超界反例確認所有可能。"
     ],
     "rubric": [
       {
@@ -1144,7 +1183,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只列一個符合配置但無範圍，最高1分。",
     "commonErrors": [
       "把正視欄高當欄內總和。",
-      "忘記占用位置至少1層。"
+      "忘記占用位置至少1層。",
+      "只給一組配置便宣稱高度唯一，沒有檢查h11的另一個正整數可能。"
     ],
     "independentReview": {
       "derivedResult": "h12=3，h21=2，h11∈{1,2}。",
@@ -1160,7 +1200,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "03da202add2885f6c377958c5bc4dd1701a58df7316229aaff2304a3616bec45"
+    "contentSha256": "408cc39960b76fd6386e5317930209439dc239b9219c9366288b77b1aafce194"
   },
   {
     "questionId": "u08-s013-cr002",
@@ -1183,7 +1223,8 @@ export const CONSTRUCTED_RESPONSES = [
     "standardSolution": [
       "最少時把3放在第1欄第2列，同時滿足正視3與側視第2列3；把2放在第2欄第1列，同時滿足另兩個2；其餘兩格各1，總數3+2+1+1=7。",
       "最多時每格取min(欄高,列高)：高度矩陣可取 [[2,2],[3,2]]（列為y=1,2、欄為x=1,2），總數9。",
-      "最少配置與最多配置都得到正視[3,2]、側視[2,3]。"
+      "最少配置與最多配置都得到正視[3,2]、側視[2,3]。",
+      "最少配置總和七、最多配置總和九；兩端的每欄最大值都為三、二，每列最大值都為二、三，故上下界均可達。"
     ],
     "alternativeMethods": [
       "最多也可逐格列上限：h11≤2、h21≤2、h12≤3、h22≤2，相加上限9，且可達。"
@@ -1192,7 +1233,8 @@ export const CONSTRUCTED_RESPONSES = [
       "最少讓高值在交會位置共享。",
       "最多用每格的欄列共同上限。",
       "分別相加。",
-      "代回各列欄最大值。"
+      "代回各列欄最大值。",
+      "用逐欄逐列最大值驗證兩個端點配置。"
     ],
     "rubric": [
       {
@@ -1220,7 +1262,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只答7與9無配置最高1分。",
     "commonErrors": [
       "最多把每格都設3而破壞高度2的欄列。",
-      "最少忘記其餘占用格各至少1。"
+      "最少忘記其餘占用格各至少1。",
+      "求最多時只把四個共同上限相加，卻未確認每個規定最大值實際有位置達到。"
     ],
     "independentReview": {
       "derivedResult": "最少7塊，最多9塊。",
@@ -1236,7 +1279,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "58cdd7e5488159b03016fde1691092e6f53ed0854f82f243b79e417e536e1cb1"
+    "contentSha256": "a3e18ef566383515be67b42c6d74974174f10cdb366ee173ff2539f36ec3812c"
   }
 ];
 
@@ -1245,7 +1288,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v001",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "10691ba0b97ba2aa130a7af3abfbe01d310abc1f730b4e6db74595f7a776ff02",
+    "contentSha256": "087d69dfe009fc4d2ca00da55db73e130591289f6e8370804ab4bb09562f2330",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由投影定義重算，該欄至少一堆高 3 且沒有一堆超過 3，所以最大值恰為 3。",
@@ -1280,7 +1323,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v002",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "4970676580a827c0ba3c7e85641965c28613a84c05b79bdaa857a5764469a328",
+    "contentSha256": "bc918fe240d80393f069945a0bc285518d346377f06ae82ed691a7389402b883",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立依座標方向計算：x 欄輪廓 2、1；y 列輪廓 2，因此答案為正視 [2,1]、側視 [2]。",
@@ -1315,7 +1358,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v003",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "fea49fdf3aa8b7242ccc77a092df4c91178d985c027a23c90cb0cac79be716f1",
+    "contentSha256": "38d7e6c6d0f69aa12cf4142030653429ab6e0b9a83d2eb5e2ce55ef7ce747a21",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重新逐堆計數得到 2+3+1=6，沒有把俯視格數與方塊總數混為一談。",
@@ -1350,7 +1393,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v004",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "e9fca3ff659440a99a20cfa209f5a5870d1bf2197984305b4de6935bce63a225",
+    "contentSha256": "fbb1a9e3fd47a94fd29a32ae5d88432cc6c66d6e965b43879a87edd74f62de6c",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以側視限制重算：max_x h(x,2)=h(1,2)=3，故答案唯一為 3。",
@@ -1385,7 +1428,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v005",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "6e74a27365b2aa4da05fb799b5a933836401d4389e5b1b51bbd63cf7bf4ec4d7",
+    "contentSha256": "77d619e91b0c1b3291663abe756b05d5635ff3394f6ea2e80395d7a9f5929c6e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立建立最省配置：3 與 2 分別放在 (2,1)、(1,2)，另兩格必為正高度 1，故下界與可達值皆為 7。",
@@ -1420,7 +1463,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v006",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "6c17ecb08a61e44c825f63ffbe05dac61725048b7a0808edfe20096ac833d1c8",
+    "contentSha256": "3f03074dac6d78b4e35254d165d7a9036ad003bc9449c541bf4251b0b3f3f843",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重新寫成 max_x max_y h(x,y)=4 與 max_y max_x h(x,y)=3；兩式左側相同而右側不同，因此矛盾。",
@@ -1455,7 +1498,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v007",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "3d12f45b8fb5af130df4e8f61e90f1ac373ece24e9432017f6ce3c9bd0fe45a9",
+    "contentSha256": "826b3d34750f6a80d335ff14dd4fc903ddde88fe2a3aae2697cc158e0d256b85",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立由必要下界計算：六格基底 6，加上兩個 3 高堆各多 2，再加上一個 2 高堆多 1，共 11；所述配置可達到此下界。",
@@ -1490,7 +1533,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v008",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "2aa1258d772434f64fbc4c4e049eaed3a4fffd820e2e96043dce089e31b805fc",
+    "contentSha256": "2139658c1bb62eb8fcdb00c21591ac0d0e73928e02eaaba93ce7fe36268b3477",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立檢查六格上界相加得 13；該配置在第 1 欄達 3、第 2 欄達 2，各列也達 2、3、2，因此上界可達。",
@@ -1525,7 +1568,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v009",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "9267d95c2f6251973892f523575b0cdfbda86f938fe616885484ff8f9ff54e76",
+    "contentSha256": "6c865515cef4fe0b133428a591fb8e6d139130ebb808858fdb0432a4050b1117",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立枚舉 16 種 1/2 配置後，排除任何全為 1 的列或欄；留下 7 種，與分類計數一致。",
@@ -1560,7 +1603,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v010",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "8235650416e3218e23271efdccdc8e9714b2b5471307a01ab210648877d99850",
+    "contentSha256": "8e008d7f788f0b3a26d24993f1299bda54f691143b9c0aa776cbd6c91a819460",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重新從占用數與全域最高高度求下界：4 個基底加最高堆額外 2 個，確定至少 6 個箱子。",
@@ -1595,7 +1638,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v011",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "e86c81c859f3eb21fcb8fbfc3325c1f9cc423fc5eb8f1fbb54f10d71bc196fe6",
+    "contentSha256": "9c0ad984a93ce54567181b98e9d2da6a98beefaaa1dd2ecc659e21808acc784f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立將四個候選逐一代入欄列最大值；只有 h11=2、h12=1、h22=3 同時通過四個輪廓條件。",
@@ -1630,7 +1673,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s013-v012",
     "unitId": "u08",
     "skillId": "orthographic-description",
-    "contentSha256": "ef264ed951601ed3e3db770f8baea31fcae099517b1ff25411979e5033a47a7e",
+    "contentSha256": "f23cd4a161670258616bbdf2eab033452dc34ec0a101f08df424a37717ef0224",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立建立下界：四格底層 4，4 層堆額外 3，另需一個 2 層堆額外 1，共 8；交叉配置達到下界。",

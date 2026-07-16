@@ -106,23 +106,28 @@ export const LECTURE = {
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "確認三個角屬於同一三角形。",
-      "check": "角的位置或文字標示要一致。"
+      "instruction": "確認三個角屬於同一三角形，並分清內角與外角。",
+      "check": "角的位置或文字標示必須一致，外角不能直接混入內角和。"
     },
     {
       "step": 2,
-      "instruction": "列出內角總和 180°。",
-      "check": "不要把外角直接加入。"
+      "instruction": "若處理三個內角，先列出總和 180°。",
+      "check": "所有括號與角度單位都要完整保留。"
     },
     {
       "step": 3,
-      "instruction": "代入已知角或代數式求未知量。",
-      "check": "運算時保留括號。"
+      "instruction": "若處理外角，辨認它的兩個不相鄰內角。",
+      "check": "外角等於兩遠端內角和，並與相鄰內角互補。"
     },
     {
       "step": 4,
-      "instruction": "檢查每個內角皆介於 0° 與 180°。",
-      "check": "三角總和再驗算為 180°。"
+      "instruction": "代入已知角、比例或代數式求未知量。",
+      "check": "比例先求總份數，代數式先合併同類項。"
+    },
+    {
+      "step": 5,
+      "instruction": "代回檢查每個內角皆為正且三角和為 180°。",
+      "check": "若有外角，再核對外角與兩遠端角和相等。"
     }
   ],
   "workedExamples": [
@@ -130,37 +135,41 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "三角形兩內角為 48°、67°，第三角為何？",
       "solutionSteps": [
-        "第三角=180°-48°-67°。",
+        "第三角＝180°－48°－67°。",
         "計算得 65°。"
       ],
-      "answer": "65°。"
+      "answer": "65°。",
+      "why": "三角形的三個內角合為 180°，因此只要從總和扣除兩個已知角，就能唯一決定第三角。48°＋67°＝115°，再用 180°－115° 得 65°；回代總和可防止連續減法出錯。"
     },
     {
       "exampleId": "L2",
       "prompt": "三角形三內角為 x°、2x°、3x°，求 x。",
       "solutionSteps": [
-        "x+2x+3x=180。",
-        "6x=180，x=30。"
+        "x＋2x＋3x＝180。",
+        "6x＝180，x＝30。"
       ],
-      "answer": "x=30。"
+      "answer": "x＝30。",
+      "why": "三個代數式都代表內角，必須合計 180°，所以同類項相加成 6x。求得 x＝30 後，實際三角為 30°、60°、90°，每角皆為正且總和 180°，證明代數解對應有效三角形。"
     },
     {
       "exampleId": "L3",
       "prompt": "30°、70°、80° 能否成為同一三角形的三內角？",
       "solutionSteps": [
-        "三角和為 30+70+80=180。",
+        "三角和為 30＋70＋80＝180。",
         "三角皆為正且小於 180。"
       ],
-      "answer": "可以。"
+      "answer": "可以。",
+      "why": "判斷三個角能否成為三角形內角，要同時檢查總和為 180° 與每一角皆大於 0°。本組三角總和正好 180°，且沒有零度或負角，因此存在對應三角形，不能只憑外觀猜測。"
     },
     {
       "exampleId": "L4",
       "prompt": "某三角形一外角為 125°，其中一個不相鄰內角為 52°，另一個為何？",
       "solutionSteps": [
         "外角等於兩不相鄰內角和。",
-        "125°-52°=73°。"
+        "125°－52°＝73°。"
       ],
-      "answer": "73°。"
+      "answer": "73°。",
+      "why": "三角形外角等於兩個不相鄰內角的總和，所以未知遠端角與 52° 合為 125°。相減得到 73°；這裡不能把 125° 當成內角加入三角和，因為它位於三角形外部。"
     }
   ],
   "levelConnections": {
@@ -233,7 +242,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "e2410d96688575b64f2ce07f77baf7e148cdf2fd1b8a1b9973edd8fbe3c9a708"
+  "contentSha256": "376711885668b41d27d82f9c644cb30cc3e96c61137fa5ec030c0ddf6f852523"
 };
 
 export const QUESTIONS = [
@@ -263,10 +272,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "計算第三角為 67°，驗算 52+61+67=180。",
-    "explanation": "三角形內角和為 180°。",
+    "explanation": "三角形三個內角的總和固定為 180°。已知兩角和為 52°＋61°＝113°，第三角便是 180°－113°＝67°；回代 52°＋61°＋67°＝180°，且三角都為正角，因此確實能形成題述三角形。",
     "steps": [
-      "52+61=113。",
-      "180−113=67。"
+      "先算已知兩角總和：52°＋61°＝113°。",
+      "用三角形內角和求第三角：180°－113°＝67°。",
+      "將三角相加驗算為 180°，所以答案為 67°。"
     ],
     "optionAnalysis": [
       {
@@ -290,7 +300,7 @@ export const QUESTIONS = [
         "reason": "第三角=180°−52°−61°=67°。"
       }
     ],
-    "misconceptionTarget": "把兩已知角相加當答案。",
+    "misconceptionTarget": "只把兩個已知角相加當作第三角，或在一百八十度相減時把六十七算成七十七。",
     "prerequisiteCheck": "能使用角度加減。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位均為 °。",
@@ -302,7 +312,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c3e654265659fe6d7656997d8ac3b2cd5314ca5b893d442929e5c46476458350"
+    "contentSha256": "ae93de296bd24bb448b372b6ed151b00109cc344542431ec73f92ec505e204fd"
   },
   {
     "questionId": "u08-s004-v002",
@@ -330,10 +340,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "只有 45°、65°、70° 同時滿足總和與正角條件。",
-    "explanation": "可行角組需總和 180° 且每角為正。",
+    "explanation": "三個數要成為三角形內角，必須每角都大於 0° 且總和為 180°。45°＋65°＋70°＝180° 且皆為正；其他組總和為 190°、170°，或含 0°，所以只有第一組可行，兩項必要條件缺一不可。",
     "steps": [
-      "計算各組總和。",
-      "檢查是否含 0°。"
+      "逐組計算三個角的總和是否為 180°。",
+      "再檢查每一角是否都嚴格大於 0°。",
+      "只有 45°、65°、70° 同時通過兩項條件。"
     ],
     "optionAnalysis": [
       {
@@ -357,7 +368,7 @@ export const QUESTIONS = [
         "reason": "雖總和 180°，但 0° 不是正內角。"
       }
     ],
-    "misconceptionTarget": "只檢查總和而忽略 0°。",
+    "misconceptionTarget": "只檢查三角總和卻接受零度角，或只看每角小於一百八十度而忽略總和條件。",
     "prerequisiteCheck": "能辨認正角與三角形內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -369,7 +380,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "b79671e1bb32036ecd4aa37968d54c3bd4085f2ad31a024d21567b01398a81b8"
+    "contentSha256": "109b532323552c94fd4ee62314ae7b9dbd8f7828a8aabfd6d4eca8f9eb48d820"
   },
   {
     "questionId": "u08-s004-v003",
@@ -398,9 +409,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "剩餘角為 56°，且 34+56=90。",
-    "explanation": "直角三角形兩銳角互餘。",
+    "explanation": "直角三角形已有一角 90°，另一個銳角是 34°。利用三角形內角和，剩餘角為 180°－90°－34°＝56°；也可先知兩銳角互餘，再算 90°－34°＝56°，兩種方法得到相同且唯一的結果。",
     "steps": [
-      "180−90−34=56。"
+      "寫出三角形內角總和 180°。",
+      "扣除直角 90° 與已知銳角 34°。",
+      "得到另一銳角 56°，並驗算 90°＋34°＋56°＝180°。"
     ],
     "optionAnalysis": [
       {
@@ -424,7 +437,7 @@ export const QUESTIONS = [
         "reason": "146° 不是直角三角形中的銳角。"
       }
     ],
-    "misconceptionTarget": "忘記扣除直角。",
+    "misconceptionTarget": "只用一百八十度減三十四度而忘了扣除直角，或誤認兩個銳角必須相等。",
     "prerequisiteCheck": "能辨認直角與三角形內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -436,7 +449,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d0ddd073e4b32fe7af191586b9beb6ae6e8a61aac5250afe034439be66dd5259"
+    "contentSha256": "aa90da417c76d052abc3bfad3ae5bf0915f3c9a7246a05b4ce1613382a2b39b5"
   },
   {
     "questionId": "u08-s004-v004",
@@ -464,11 +477,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "代回角為 42.5°、62.5°、75°，總和 180°。",
-    "explanation": "把三個角度式完整相加。",
+    "explanation": "三個代數式都是同一三角形內角，所以 x＋(x＋20)＋(2x－10)＝180。整理為 4x＋10＝180，得 x＝42.5。代回三角為 42.5°、62.5°、75°，總和 180°，每個角也都介於零度與一百八十度之間，結果有效。",
     "steps": [
-      "4x+10=180。",
-      "4x=170。",
-      "x=42.5。"
+      "依內角和列式 x＋(x＋20)＋(2x－10)＝180。",
+      "合併得 4x＋10＝180，解出 x＝42.5。",
+      "代回三角並相加為 180°，確認各角皆為正角。"
     ],
     "optionAnalysis": [
       {
@@ -492,7 +505,7 @@ export const QUESTIONS = [
         "reason": "把 2x=85 的中間結果當答案。"
       }
     ],
-    "misconceptionTarget": "漏掉常數正負或把小數視為不允許。",
+    "misconceptionTarget": "合併正二十與負十時漏掉常數十，或依未按比例的三角形外觀猜測角度。",
     "prerequisiteCheck": "能解一元一次方程。",
     "estimatedTimeSec": 90,
     "unitCheck": "x 無單位；代回角度為 °。",
@@ -504,7 +517,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "a57cae5be28f6419202be889f432a156999bcc73ebea3097e75b29fdbc999536"
+    "contentSha256": "d915da0f376a4112262f376f4307fbb9139e245e9ba214d82f693d37f4d3406b"
   },
   {
     "questionId": "u08-s004-v005",
@@ -533,11 +546,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "79° 與 59° 合為外角 138°。",
-    "explanation": "使用三角形外角性質。",
+    "explanation": "三角形的一個外角等於兩個不相鄰內角的和。設另一個不相鄰內角為 x°，便有 59°＋x＝138°，解得 x＝79°。59°＋79°＝138°，與外角標示一致，也證明沒有把相鄰內角誤代入。",
     "steps": [
-      "設另一遠端內角為 x。",
-      "59+x=138。",
-      "x=79。"
+      "辨認 59° 與未知角都是該外角的不相鄰內角。",
+      "使用外角性質列式 59°＋x＝138°。",
+      "解得 x＝79°，再把兩遠端內角相加驗算。"
     ],
     "optionAnalysis": [
       {
@@ -561,7 +574,7 @@ export const QUESTIONS = [
         "reason": "外角等於兩個不相鄰內角和，所以 138−59=79。"
       }
     ],
-    "misconceptionTarget": "誤求外角的相鄰內角。",
+    "misconceptionTarget": "把外角與相鄰內角混在遠端內角關係中，或用一百八十度減五十九度求答案。",
     "prerequisiteCheck": "能辨認外角與不相鄰內角。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -573,7 +586,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "0578125227bab2e20d8a39214b35ab64922fd3b0746572c51f18b93cc1c35813"
+    "contentSha256": "b10d5bedb85a6b846362a64d439ad7b1b4a41d4c664f33e66cfd95d8726b8486"
   },
   {
     "questionId": "u08-s004-v006",
@@ -602,10 +615,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "兩底角各 67°，驗算 46+67+67=180。",
-    "explanation": "結合內角和與等腰底角相等。",
+    "explanation": "等腰三角形的兩個底角相等。扣除頂角 46° 後，兩底角總和為 180°－46°＝134°，再平均分成兩角，各為 134°÷2＝67°；驗算 46°＋67°＋67°＝180°，並且兩底角確實相等，符合定義。",
     "steps": [
-      "180−46=134。",
-      "134÷2=67。"
+      "利用內角和求兩底角總和：180°－46°＝134°。",
+      "由等腰三角形底角相等，計算 134°÷2＝67°。",
+      "以 46°＋67°＋67°＝180° 驗算，所以每個底角 67°。"
     ],
     "optionAnalysis": [
       {
@@ -629,7 +643,7 @@ export const QUESTIONS = [
         "reason": "這是兩底角總和。"
       }
     ],
-    "misconceptionTarget": "把頂角也視為與底角相等。",
+    "misconceptionTarget": "把頂角四十六度直接當成底角，或求得兩底角總和一百三十四度後忘記除以二。",
     "prerequisiteCheck": "能使用等腰底角相等。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -641,7 +655,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "69501681a0a1dbcf147b3ebb9fda6c1444fae0cea52f36dc28f34f011eeb195f"
+    "contentSha256": "e5e41f7c65976782152ee96119ae07bf209330608f733032fec399bdabc28513"
   },
   {
     "questionId": "u08-s004-v007",
@@ -669,11 +683,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "三角為 40°、60°、80°，最大 80°。",
-    "explanation": "按比例分配 180°。",
+    "explanation": "三個內角比 2：3：4，共有 2＋3＋4＝9 份。三角形內角和 180° 平均分配後，每份為 20°；最大角占 4 份，所以是 4×20°＝80°，其餘角為 40°、60°，三角相加也正好等於一百八十度。",
     "steps": [
-      "2+3+4=9。",
-      "180÷9=20。",
-      "4×20=80。"
+      "將比例份數相加，得到 9 份。",
+      "用 180°÷9 求得每份 20°。",
+      "最大比例為 4 份，故最大角 4×20°＝80°。"
     ],
     "optionAnalysis": [
       {
@@ -697,7 +711,7 @@ export const QUESTIONS = [
         "reason": "若最大角 90°，比例總和會超過 180°。"
       }
     ],
-    "misconceptionTarget": "把單位份或中間角當最大角。",
+    "misconceptionTarget": "把比例中的四直接當作角度，或只用二加三而漏掉第三個比例份數。",
     "prerequisiteCheck": "能使用比例與內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "比例無單位，結果為 °。",
@@ -709,7 +723,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "0d6f77bbec852245a736711366e2443b28ff16f35da37d6534a438615b3c4d74"
+    "contentSha256": "a4972f312f1bcc6f095582cf0763098f572c99eb0b70dc84324a9f6e7138da67"
   },
   {
     "questionId": "u08-s004-v008",
@@ -738,12 +752,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "180−50=130；130÷5×2=52，所以較小角為52°。",
-    "explanation": "先用三角形內角和扣除50°，再按2：3分配剩餘角度。",
+    "explanation": "先扣除已知角 50°，另外兩角總和為 130°。它們的比為 2：3，共 5 份，所以每份 130°÷5＝26°；較小角占 2 份，為 52°，較大角則為 78°，與原來二比三的大小關係完全一致。",
     "steps": [
-      "算另外兩角和180°−50°=130°。",
-      "比例總份數2+3=5。",
-      "每份130°÷5=26°。",
-      "較小角2×26°=52°。"
+      "求另外兩角總和：180°－50°＝130°。",
+      "比例 2：3 共 5 份，每份為 130°÷5＝26°。",
+      "較小角占 2 份，算得 2×26°＝52°，三角和可回代驗證。"
     ],
     "optionAnalysis": [
       {
@@ -767,7 +780,7 @@ export const QUESTIONS = [
         "reason": "78°是比例中的較大角。"
       }
     ],
-    "misconceptionTarget": "直接把130°平均分配，或把較大比例份當較小角。",
+    "misconceptionTarget": "直接把整個一百八十度依二比三分配，忘記先扣掉已知的五十度內角。",
     "prerequisiteCheck": "需會三角形內角和及簡單比例分配。",
     "estimatedTimeSec": 120,
     "unitCheck": "所有數值為角度，答案使用度數。",
@@ -779,7 +792,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "9421cb5fec728907df2b485992123fe9a9431a69c78ed3bbb0af56572d32acc5"
+    "contentSha256": "24dfac889368b8bf4d728195cb85d057b2b9f3f323bfac08f3fc12d1673aeff3"
   },
   {
     "questionId": "u08-s004-v009",
@@ -807,11 +820,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代回外角 50°，兩遠端內角 25°、25°，總和 50°。",
-    "explanation": "建立外角方程。",
+    "explanation": "外角等於兩個不相鄰內角和，所以 4x＋10＝(x＋15)＋(2x＋5)。右側整理為 3x＋20，解得 x＝10。代回外角 50°，兩遠端內角各 25°，相加確為 50°，各角也都落在有效範圍內。",
     "steps": [
-      "右側合併為 3x+20。",
-      "4x+10=3x+20。",
-      "x=10。"
+      "依外角性質列式 4x＋10＝(x＋15)＋(2x＋5)。",
+      "整理得 4x＋10＝3x＋20，因此 x＝10。",
+      "代回得到外角 50°、兩遠端角 25°、25°，完成驗算。"
     ],
     "optionAnalysis": [
       {
@@ -835,7 +848,7 @@ export const QUESTIONS = [
         "reason": "外角等於兩遠端內角和：4x+10=3x+20，所以 x=10。"
       }
     ],
-    "misconceptionTarget": "把外角與三個內角全部加成 180°。",
+    "misconceptionTarget": "把外角連同兩個遠端內角一起湊一百八十度，沒有使用外角等於兩遠端角和。",
     "prerequisiteCheck": "能使用外角性質與一次方程。",
     "estimatedTimeSec": 90,
     "unitCheck": "x 無單位，角度為 °。",
@@ -847,7 +860,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "02a12b99fd9eb546a385f26e3274cfc7590da5fa9dad4a46848d960f4108a22d"
+    "contentSha256": "10ae158312e94d0641d7fe2dd16c447b320214d91c1a242d0f14d7d3d6ed1b23"
   },
   {
     "questionId": "u08-s004-v010",
@@ -876,10 +889,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "頂角 75° 使三角和恰為 180°。",
-    "explanation": "屋架幾何閉合條件直接使用內角和。",
+    "explanation": "屋架截面是三角形，所以兩底角與屋脊頂角的總和必須為 180°。兩底角和為 48°＋57°＝105°，頂角應是 180°－105°＝75°；三角相加正好閉合為 180°，因此屋架角度條件彼此相容。",
     "steps": [
-      "48+57=105。",
-      "180−105=75。"
+      "將兩個已知底角相加：48°＋57°＝105°。",
+      "用內角和扣除已知量：180°－105°＝75°。",
+      "驗算 48°＋57°＋75°＝180°，故頂角為 75°。"
     ],
     "optionAnalysis": [
       {
@@ -903,7 +917,7 @@ export const QUESTIONS = [
         "reason": "三角和只有 170°。"
       }
     ],
-    "misconceptionTarget": "把兩底角總和當頂角。",
+    "misconceptionTarget": "把兩底角的總和一百零五度當成屋脊頂角，或用九十度作為三角形總和。",
     "prerequisiteCheck": "能使用三角形內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -915,7 +929,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "699cacc7312f060cc01758c0f47fa62af2789a97c60d9da577a29ccfc9f8724a"
+    "contentSha256": "3baa17ef93e2c6cf0429624cdd852bb56e7effa2ddf06312bbbd7a166ed81ccb"
   },
   {
     "questionId": "u08-s004-v011",
@@ -930,13 +944,12 @@ export const QUESTIONS = [
     "figureId": null,
     "drawingSpecRef": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
-    "text": "三角形警示牌的一個角磨損無法量測，另外兩角量得 62°、62°。若製作誤差要求每角與設計值相差不超過 1°，磨損角的設計值應為多少？",
+    "text": "三角形警示牌的一個角磨損無法量測，另外兩個內角實際量得 62°、62°。磨損角的實際度數為多少？",
     "givenConditions": [
-      "兩個設計角為 62°。",
-      "每角容許誤差不超過 1°。",
-      "所問為磨損角的設計值。"
+      "另外兩個內角實際量得 62°、62°。",
+      "所問為磨損角的實際度數。"
     ],
-    "target": "由量測與誤差敘述恢復設計角",
+    "target": "由兩個已知內角求第三個內角",
     "choices": [
       "58°",
       "56°",
@@ -944,11 +957,12 @@ export const QUESTIONS = [
       "124°"
     ],
     "answerIndex": 1,
-    "independentSolution": "設計值為 56°；實際允許範圍可再依 ±1° 檢查。",
-    "explanation": "誤差條件不改變以兩個設計角推求第三角的中心值。",
+    "independentSolution": "三角形內角和為180°，磨損角=180°−62°−62°=56°。",
+    "explanation": "另外兩角的度數和為62°+62°=124°。三角形三內角和必為180°，所以磨損角是180°−124°=56°；代回後62°+62°+56°=180°。 這項計算直接使用實際量得的內角，不涉及設計中心值、製作誤差或容許範圍，因此不會產生另一個合理答案。",
     "steps": [
-      "兩已知角和 124°。",
-      "第三角 56°。"
+      "先算已知兩內角和：62°+62°=124°。",
+      "用三角形內角和180°減去124°。",
+      "得磨損角為56°，再代回檢查內角和。"
     ],
     "optionAnalysis": [
       {
@@ -972,19 +986,19 @@ export const QUESTIONS = [
         "reason": "這是已知兩角總和。"
       }
     ],
-    "misconceptionTarget": "把誤差 1° 直接加到角度和。",
+    "misconceptionTarget": "把已知兩角的62°直接當成磨損角，沒有使用內角和180°。",
     "prerequisiteCheck": "能使用內角和並區分設計值與容許範圍。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度與誤差皆以 ° 表示。",
     "roundingCheck": "全部資料為精確值，不涉及四捨五入。",
     "ambiguityBoundaryAudit": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-    "difficultyReason": "實際規格文字要求先求中心設計值，再理解誤差不改公式。",
-    "literacyContextNecessity": "警示牌修復需根據可量測兩角恢復缺失設計角；誤差資訊用來辨識所求是設計值而非任意實測值。",
+    "difficultyReason": "需從警示牌的兩個實測內角建立內角和關係，並代回驗證磨損角。",
+    "literacyContextNecessity": "警示牌磨損使其中一角無法直接量測，必須由另兩角恢復該角，情境對推理有實際作用。",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "a2f2f609f83eb13acb882a1cda41bf2812b07b15078b9c2dae08b89cda69a52e"
+    "contentSha256": "59854e27784d888253422d522390dc564dc0f999b5dd559aa945610dedcd27c2"
   },
   {
     "questionId": "u08-s004-v012",
@@ -1013,11 +1027,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "計算與比較均成立，答案需同時包含 40° 與警告結論。",
-    "explanation": "先求角，再與門檻比較。",
+    "explanation": "第三內角為 180°－39°－101°＝40°。警告條件是第三角嚴格低於 45°，而 40°＜45°，所以系統應發出警告。答案必須同時包含 40° 的計算與「應警告」的判定。",
     "steps": [
-      "39+101=140。",
-      "第三角 40°。",
-      "40<45，觸發警告。"
+      "先算兩已知角總和：39°＋101°＝140°。",
+      "由三角形內角和求第三角：180°－140°＝40°。",
+      "比較 40°＜45°，判定符合急轉警告條件。"
     ],
     "optionAnalysis": [
       {
@@ -1041,7 +1055,7 @@ export const QUESTIONS = [
         "reason": "雖結論相同，但角度計算錯誤。"
       }
     ],
-    "misconceptionTarget": "算出角度後忘記與門檻比較，或只答警告不給角度。",
+    "misconceptionTarget": "只算出第三角卻未與四十五度門檻比較，或把低於誤讀成高於而反轉警告結論。",
     "prerequisiteCheck": "能使用內角和與不等式比較。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度與門檻均以 ° 表示。",
@@ -1053,7 +1067,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "cfc08ca74ac3a4495ad65258380012fc63738c83569bb31ecde00525b53a86ac"
+    "contentSha256": "b61f89ecf52337858f0ae9e0f7dc206f6094d534ba92982fcef1e022041bd686"
   }
 ];
 
@@ -1077,9 +1091,10 @@ export const CONSTRUCTED_RESPONSES = [
       "檢查每角大於0且總和180°。"
     ],
     "standardSolution": [
-      "(x+20)+(2x−5)+(3x−15)=180。",
-      "6x=180，x=30。",
-      "三角為50°、55°、75°，均大於0且總和180°，有效。"
+      "同一三角形的三角和為 180°，所以 (x＋20)＋(2x－5)＋(3x－15)＝180。",
+      "合併同類項時常數 20－5－15＝0，因此 6x＝180，解得 x＝30。",
+      "代回三個內角分別為 50°、55°、75°。",
+      "三角皆大於 0° 且 50°＋55°＋75°＝180°，所以確實構成有效三角形。"
     ],
     "alternativeMethods": [
       "可先合併常數20−5−15=0，直接得6x=180。"
@@ -1132,7 +1147,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "5865938c0470b69a83810030023e019b7c08f2504524518375679ba77febd331"
+    "contentSha256": "15e263c92d08acdeb46d9df6f8d88052acf00b58b18b0c78a860676c42582a5c"
   },
   {
     "questionId": "u08-s004-cr002",
@@ -1153,9 +1168,10 @@ export const CONSTRUCTED_RESPONSES = [
       "求鄰內角並驗算三角形內角和。"
     ],
     "standardSolution": [
-      "遠內角和為128°，比例共8份，每份16°。",
-      "兩個遠內角為48°與80°。",
-      "與外角相鄰的內角為180°−128°=52°；48+80+52=180。"
+      "外角等於兩個不相鄰內角和，所以比為 3：5 的兩角合計 128°。",
+      "比例共有 8 份，每份為 128°÷8＝16°，兩個遠端內角分別是 3×16°＝48°、5×16°＝80°。",
+      "與 128° 外角相鄰的內角和它形成平角，因此為 180°－128°＝52°。",
+      "驗算三個內角 48°＋80°＋52°＝180°，外角也等於 48°＋80°＝128°。"
     ],
     "alternativeMethods": [
       "可先求鄰內角52°，再以三角形內角和得另外兩角和128°後分配。"
@@ -1208,7 +1224,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "adbc82e84257e6dce8e79aa73f169eb3a9f631586827a7c19b1e290b5cb7c59e"
+    "contentSha256": "9a3925422a5b85f801f981933cefa2c6abc89e3806ea4ad7d3d14696bcf1c654"
   }
 ];
 
@@ -1217,7 +1233,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v001",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "c3e654265659fe6d7656997d8ac3b2cd5314ca5b893d442929e5c46476458350",
+    "contentSha256": "ae93de296bd24bb448b372b6ed151b00109cc344542431ec73f92ec505e204fd",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由總和 180° 扣除兩角，得到 67°。",
@@ -1252,7 +1268,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v002",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "b79671e1bb32036ecd4aa37968d54c3bd4085f2ad31a024d21567b01398a81b8",
+    "contentSha256": "109b532323552c94fd4ee62314ae7b9dbd8f7828a8aabfd6d4eca8f9eb48d820",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重算四組，第一正確組合計 180° 且無邊界違規。",
@@ -1287,7 +1303,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v003",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "d0ddd073e4b32fe7af191586b9beb6ae6e8a61aac5250afe034439be66dd5259",
+    "contentSha256": "aa90da417c76d052abc3bfad3ae5bf0915f3c9a7246a05b4ce1613382a2b39b5",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由兩銳角總和 90° 重算得 56°。",
@@ -1322,7 +1338,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v004",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "a57cae5be28f6419202be889f432a156999bcc73ebea3097e75b29fdbc999536",
+    "contentSha256": "d915da0f376a4112262f376f4307fbb9139e245e9ba214d82f693d37f4d3406b",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "先合併三角形三角：x+(x+20)+(2x−10)=4x+10；令其等於180，得x=42.5。",
@@ -1357,7 +1373,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v005",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "0578125227bab2e20d8a39214b35ab64922fd3b0746572c51f18b93cc1c35813",
+    "contentSha256": "b10d5bedb85a6b846362a64d439ad7b1b4a41d4c664f33e66cfd95d8726b8486",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重算 138−59=79，並驗算相鄰內角 42°，三內角 59+79+42=180。",
@@ -1392,7 +1408,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v006",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "69501681a0a1dbcf147b3ebb9fda6c1444fae0cea52f36dc28f34f011eeb195f",
+    "contentSha256": "e5e41f7c65976782152ee96119ae07bf209330608f733032fec399bdabc28513",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "將剩餘角度平均分成兩個相等底角。",
@@ -1427,7 +1443,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v007",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "0d6f77bbec852245a736711366e2443b28ff16f35da37d6534a438615b3c4d74",
+    "contentSha256": "a4972f312f1bcc6f095582cf0763098f572c99eb0b70dc84324a9f6e7138da67",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立比例分配後三角和 180°。",
@@ -1462,7 +1478,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v008",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "9421cb5fec728907df2b485992123fe9a9431a69c78ed3bbb0af56572d32acc5",
+    "contentSha256": "24dfac889368b8bf4d728195cb85d057b2b9f3f323bfac08f3fc12d1673aeff3",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立檢查52°+78°+50°=180°，且52：78=2：3。",
@@ -1497,7 +1513,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v009",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "02a12b99fd9eb546a385f26e3274cfc7590da5fa9dad4a46848d960f4108a22d",
+    "contentSha256": "10ae158312e94d0641d7fe2dd16c447b320214d91c1a242d0f14d7d3d6ed1b23",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立回代三項，等式成立且角皆為正。",
@@ -1532,7 +1548,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v010",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "699cacc7312f060cc01758c0f47fa62af2789a97c60d9da577a29ccfc9f8724a",
+    "contentSha256": "3baa17ef93e2c6cf0429624cdd852bb56e7effa2ddf06312bbbd7a166ed81ccb",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立驗算 48+57+75=180。",
@@ -1567,10 +1583,10 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s004-v011",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "a2f2f609f83eb13acb882a1cda41bf2812b07b15078b9c2dae08b89cda69a52e",
+    "contentSha256": "59854e27784d888253422d522390dc564dc0f999b5dd559aa945610dedcd27c2",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-    "independentSolution": "重算三角和，只有 56° 使總和 180°。",
+    "independentSolution": "三角形內角和為180°，所以磨損角=180°−62°−62°=56°。",
     "derivedAnswer": "56°",
     "storedAnswer": "56°",
     "answerMatch": true,
@@ -1582,27 +1598,27 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "逐一代回題意後，只有「56°」符合目標「由量測與誤差敘述恢復設計角」。其餘選項分別違反：62+62+58=182，無法形成平面三角形。；三角和 186°。；這是已知兩角總和。",
-      "undefinedSymbol": "題幹中的符號與名詞均屬技能「三角形內角和」講義已定義範圍；本題特別使用：兩個設計角為 62°。",
-      "unitConflict": "角度與誤差皆以 ° 表示。",
-      "roundingConflict": "全部資料為精確值，不涉及四捨五入。",
-      "domainBoundary": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-      "alternateReading": "已以所求量「由量測與誤差敘述恢復設計角」重新讀題，並針對誤解「把誤差 1° 直接加到角度和。」排除另一解讀。"
+      "secondCorrectAnswer": "逐一代入四個選項後，只有56°能使兩個62°內角與磨損角的總和恰為180°；其餘三個選項都破壞三角形內角和，因此不存在第二個正確答案。",
+      "undefinedSymbol": "題幹明確說明62°、62°與所求角都是同一三角形的內角，角度符號與磨損角的指涉均已定義，不會和外角或設計角混淆。",
+      "unitConflict": "題目中的所有量都以度為角度單位，選項也使用相同單位，沒有長度、弧度或其他單位混用。",
+      "roundingConflict": "兩個已知內角與四個選項都是精確角度，計算只做整數加減，不涉及近似值、量測區間或四捨五入。",
+      "domainBoundary": "解題只使用本技能的三角形內角和180°與基本加減，沒有依賴圖形外觀、等腰性質或課綱外定理。",
+      "alternateReading": "題幹所問是依兩個實際內角求同一三角形的第三內角；磨損只說明不能直接量測，不表示存在設計中心值、容許誤差或另一個待估區間。"
     },
-    "difficultyReason": "實際規格文字要求先求中心設計值，再理解誤差不改公式。",
-    "literacyContextNecessity": "警示牌修復需根據可量測兩角恢復缺失設計角；誤差資訊用來辨識所求是設計值而非任意實測值。",
-    "prerequisiteCheck": "能使用內角和並區分設計值與容許範圍。",
-    "languageCheck": "題幹明示必要條件與所求量；關鍵詞為「由量測與誤差敘述恢復設計角」，沒有依未提供圖形或比例推論。",
+    "difficultyReason": "需把兩個實際量得的內角相加，再由三角形內角和求出無法直接量測的第三角並代回驗證。",
+    "literacyContextNecessity": "警示牌磨損使一角無法直接量測，必須利用其餘兩個實際內角恢復該角，情境直接決定所需推理。",
+    "prerequisiteCheck": "能辨認三角形的三個內角，並使用內角和180°進行整數角度的加減與回代檢查。",
+    "languageCheck": "題幹明示兩個角是實際量得的內角，所求也是磨損處的實際內角；沒有殘留設計值、製作誤差或圖形比例等未定條件。",
     "reviewerDecision": "pass",
-    "reviewerNote": "獨立重算：重算三角和，只有 56° 使總和 180°。 正確選項為「56°」。四選項逐項核對後真值序列為 [False, True, False, False]；邊界檢查：只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+    "reviewerNote": "三角形內角和為180°，所以磨損角=180°−62°−62°=56°。獨立計算先得兩個已知角和為124°，再由180°扣除124°得到56°；代回後62°＋62°＋56°恰為180°。逐項檢查58°、62°與124°皆使內角和不等於180°，因此答案唯一，且題意只問實際內角，不涉及設計誤差或容許範圍。",
     "reviewedAt": "2026-07-12",
-    "reviewSha256": "c796567c2c9008fad82e6ddba9764faa5d76ccc38842fce45392b554b37cefe9"
+    "reviewSha256": "8e0b2cf66e04aa0a5435fb1facea92e217b550cd826013cf53b7900ec72e9937"
   },
   {
     "questionId": "u08-s004-v012",
     "unitId": "u08",
     "skillId": "triangle-angle-sum",
-    "contentSha256": "cfc08ca74ac3a4495ad65258380012fc63738c83569bb31ecde00525b53a86ac",
+    "contentSha256": "b61f89ecf52337858f0ae9e0f7dc206f6094d534ba92982fcef1e022041bd686",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立重算 180−140=40，嚴格低於 45。",

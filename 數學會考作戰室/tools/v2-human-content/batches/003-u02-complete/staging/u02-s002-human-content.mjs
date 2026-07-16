@@ -44,10 +44,11 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "質數不是『不能分』，而是隻能分成1×本身的正整數乘積。",
-    "1只有一個正因數，因此既不是質數也不是合數。",
-    "除了2以外的偶數都可被2整除，所以都是合數。",
-    "判斷n是否為質數，只需檢查不大於√n的質數是否整除。"
+    "質數不是「不能分」，而是只能分成 1×本身的正整數乘積。",
+    "1 只有一個正因數，因此既不是質數也不是合數。",
+    "除了 2 以外的偶數都可被 2 整除，所以都是合數。",
+    "判斷 n 是否為質數，只需檢查不大於 √n 的質數是否整除。",
+    "若找到任何介於 1 與本身之間的正因數，就已證明該數是合數，不必繼續試除。"
   ],
   "formalDefinitions": [
     {
@@ -99,40 +100,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "判斷 19。",
+      "prompt": "判斷 19 是質數或合數。",
       "solutionSteps": [
-        "19大於1。",
-        "不能被2、3整除，且√19<5。"
+        "因為 4<√19<5，只需檢查不大於 √19 的質數 2、3。",
+        "19 不是偶數，且各位數和 1+9=10 不是 3 的倍數，所以 19 不被 2 或 3 整除。",
+        "19 沒有 1 與本身以外的正因數，因此是質數。"
       ],
-      "answer": "19是質數。"
+      "answer": "19 是質數。",
+      "why": "19 大於 1，且 √19 小於 5，只需檢查質數 2、3。19 不是偶數，各位數和 10 也非 3 的倍數，因此沒有非平凡因數，可依定義判定為質數。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "判斷 57。",
+      "prompt": "判斷 57 是質數或合數。",
       "solutionSteps": [
-        "各位數和為12。",
-        "57可被3整除，57=3×19。"
+        "計算各位數和 5+7=12，12 是 3 的倍數，所以 57 可被 3 整除。",
+        "計算 57÷3=19，得到 57=3×19。",
+        "57 有 1 與本身之外的因數 3、19，因此判定為合數。"
       ],
-      "answer": "57是合數。"
+      "answer": "57 是合數。",
+      "why": "57 的各位數和為 12，可被 3 整除，且 57=3×19。找到 1 與本身之外的因數 3、19，便足以判定它是合數，不必再列出所有正因數。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "說明2為何特殊。",
+      "prompt": "說明 2 為什麼是特殊的質數。",
       "solutionSteps": [
-        "2的正因數只有1、2。",
-        "任何更大的偶數還有因數2。"
+        "列出 2 的正因數為 1、2，恰有兩個正因數，所以 2 是質數。",
+        "任一大於 2 的偶數都可寫成 2×k，其中 k>1，因此除 1 與本身外還有因數 2。",
+        "所以大於 2 的偶數都是合數，2 便是唯一的偶質數。"
       ],
-      "answer": "2是唯一偶質數。"
+      "answer": "2 是唯一的偶質數。",
+      "why": "2 的正因數只有 1、2，符合質數恰有兩個正因數的定義；任何大於 2 的偶數都還能被 2 整除，所以必有額外因數而成為合數。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "29人能否排成兩邊都大於1的完整長方形？",
+      "prompt": "29 人能否排成兩邊都大於 1 的完整長方形？",
       "solutionSteps": [
-        "29是質數。",
-        "沒有非平凡因數。"
+        "完整長方形的兩邊人數須為大於 1 的整數，且兩數乘積為 29。",
+        "檢查不大於 √29 的質數 2、3、5，29 都不能被它們整除，所以 29 是質數。",
+        "29 只能寫成 1×29，含有一邊為 1，不符合兩邊都大於 1，因此不能排成。"
       ],
-      "answer": "不能。"
+      "answer": "不能。",
+      "why": "完整長方形需把 29 寫成兩個都大於 1 的整數乘積，但 29 是質數，正因數只有 1、29。唯一排列 1×29 有一邊不大於 1，所以不符題目限制。"
     }
   ],
   "commonMistakes": [
@@ -218,7 +223,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "867ee1af3ee5a509371ca62f045ef399257731c44184b32d336c20f199c4db11",
+  "contentSha256": "730fb6dae7423848103a07269ce33fa68886f5e581690351c381149b118660a4",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -242,10 +247,11 @@ export const QUESTIONS = [
       "27"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：13 的正因數只有 1 和 13；其餘三數都可分解成兩個大於 1 的整數相乘。所以答案是「13」。",
+    "explanation": "質數必須大於 1 且恰有 1 與本身兩個正因數。13 不能被 2、3 整除，所以只有 1、13 兩個正因數；15=3×5、21=3×7、27=3×9，三者都是合數，唯有 13 符合定義，因此它是唯一可選的質數。",
     "steps": [
-      "13 的正因數只有 1 和 13",
-      "其餘三數都可分解成兩個大於 1 的整數相乘"
+      "先依質數定義檢查 13 的正因數。",
+      "確認 13 不能被不大於 √13 的質數 2、3 整除。",
+      "用乘積分解排除 15、21、27。"
     ],
     "optionAnalysis": [
       {
@@ -269,7 +275,7 @@ export const QUESTIONS = [
         "reason": "27=3×9。"
       }
     ],
-    "commonMistake": "把所有奇數都當成質數。",
+    "commonMistake": "把十五、二十一、二十七也因為是奇數而誤判成質數。",
     "concept": "質數恰有兩個正因數。",
     "tags": [
       "數與量",
@@ -284,7 +290,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0e07716da48ccd56253e3d63108862bb3e9fb243a1557c977af7fe2c9995e77c",
+    "contentSha256": "894c1911e4aa37317ed47c79155ac2cbcbffaa2b8d0eb9535a8dade7123adb01",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -306,10 +312,11 @@ export const QUESTIONS = [
       "31"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：22=2×11；因此除了 1 和 22，還有 2、11 等因數。所以答案是「22」。",
+    "explanation": "合數是大於 1 且正因數超過兩個的整數。22=2×11，所以除 1、22 外還有 2、11，是合數；17、29、31 都無法被其平方根以下的質數整除，均為質數，因此答案為 22。",
     "steps": [
-      "22=2×11",
-      "因此除了 1 和 22，還有 2、11 等因數"
+      "嘗試把四個選項分解成大於 1 的整數乘積。",
+      "找到 22=2×11，確定它有非平凡因數。",
+      "檢查 17、29、31 為質數後選 22。"
     ],
     "optionAnalysis": [
       {
@@ -348,7 +355,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ff2f4372da2c3b211b6e5d9394722e4c31f0f456be713d687fdfb6f49a528297",
+    "contentSha256": "d865a203ea096d98362ebe353657c7c0d25ae9eaea7e0fd6b6978c221075443f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -372,8 +379,9 @@ export const QUESTIONS = [
     "answerIndex": 2,
     "explanation": "依題意逐步處理：1 只有一個正因數 1；質數需恰有兩個正因數，合數需多於兩個。所以答案是「1 既不是質數也不是合數」。",
     "steps": [
-      "1 只有一個正因數 1",
-      "質數需恰有兩個正因數，合數需多於兩個"
+      "列出 1 唯一的正因數就是 1。",
+      "比較質數需恰有兩個、合數需多於兩個正因數。",
+      "判定 1 既不是質數，也不是合數。"
     ],
     "optionAnalysis": [
       {
@@ -412,7 +420,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "18a32505c47f3b3f61113f589e4f01de401efbc50907b79550b00aa21bf1c815",
+    "contentSha256": "398ac46bdfe122b2f9ea6b554a6bcdcd5ce23012ef3b2a2179150d7a18d4dd30",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -434,10 +442,11 @@ export const QUESTIONS = [
       "2"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：2 的正因數只有 1、2；其他偶數都至少可被 1、2、本身整除。所以答案是「2」。",
+    "explanation": "2 的正因數只有 1、2，恰好兩個，所以 2 是質數。任何大於 2 的偶數都可被 2 整除，除 1 與本身外還有因數 2，因此必為合數，故 2 是唯一偶質數。",
     "steps": [
-      "2 的正因數只有 1、2",
-      "其他偶數都至少可被 1、2、本身整除"
+      "列出 2 的正因數只有 1、2。",
+      "說明大於 2 的偶數都有額外因數 2。",
+      "排除 0、1、4 後確認唯一偶質數為 2。"
     ],
     "optionAnalysis": [
       {
@@ -461,7 +470,7 @@ export const QUESTIONS = [
         "reason": "2 是唯一偶質數。"
       }
     ],
-    "commonMistake": "把所有偶數都排除為質數。",
+    "commonMistake": "把所有偶數一律判為合數，因而漏掉唯一的偶質數二。",
     "concept": "2 是唯一的偶質數。",
     "tags": [
       "數與量",
@@ -476,7 +485,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f5452b368d875e4bcd8c2f4e959fb9c3284d33ff05c504f0d28c8ee16c8c94da",
+    "contentSha256": "87ea2463e084086b0092efc60aad30abd2ac11ed47c308847d5a5f14ff3981a7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -498,10 +507,11 @@ export const QUESTIONS = [
       "7 個"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：逐一檢查得到 11、13、17、19；共有 4 個。所以答案是「4 個」。",
+    "explanation": "10 到 20 之間的整數逐一檢查後，11、13、17、19 只有 1 與本身兩個正因數。其餘數不是偶數，就是能被 3 或 5 整除，所以共有 4 個質數，列舉後計數即可。",
     "steps": [
-      "逐一檢查得到 11、13、17、19",
-      "共有 4 個"
+      "先排除區間內大於 2 的偶數。",
+      "再用 3、5 的整除性排除 15 等合數。",
+      "列出 11、13、17、19 並計得 4 個。"
     ],
     "optionAnalysis": [
       {
@@ -525,7 +535,7 @@ export const QUESTIONS = [
         "reason": "區間內沒有 7 個質數。"
       }
     ],
-    "commonMistake": "未檢查 15 是否可被 3、5 整除。",
+    "commonMistake": "把十五列為質數，沒有檢查它可同時被三與五整除。",
     "concept": "列舉區間質數要排除每個合數。",
     "tags": [
       "數與量",
@@ -540,7 +550,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4ba73dc79549e104ae19315bcc64454522fd8a6e3787694300ea2585a2f21584",
+    "contentSha256": "1e569678031afc1154ee945e2018f2c6b3e0b9c183ff617285b57cd0fd7394ce",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -562,10 +572,11 @@ export const QUESTIONS = [
       "13"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：91=7×13；小於 10 的質因數只有 7。所以答案是「7」。",
+    "explanation": "先分解 91=7×13，兩個質因數為 7、13。題目又限制 p 小於 10，因此只能保留 7；5 不能整除 91，而 11、13 均不符合小於 10 的條件，故 p 唯一可能是 7，並且 91÷7=13 沒有餘數。",
     "steps": [
-      "91=7×13",
-      "小於 10 的質因數只有 7"
+      "將 91 分解成質因數 7×13。",
+      "從質因數中套用 p<10 的限制。",
+      "確認 7 能整除 91 且符合範圍。"
     ],
     "optionAnalysis": [
       {
@@ -589,7 +600,7 @@ export const QUESTIONS = [
         "reason": "13 不符合小於 10。"
       }
     ],
-    "commonMistake": "忽略小於 10 的限制。",
+    "commonMistake": "找到質因數十三便作答，忽略題目限定質數必須小於十。",
     "concept": "多條件題要同時檢查質數、整除與範圍。",
     "tags": [
       "數與量",
@@ -604,7 +615,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "aa9125144bc12f710963c9b45465fddb1c68ecb7c48595d94eb237f8251ad30c",
+    "contentSha256": "3b9a738dc22fa0fb1a484a4928b864b3245b400275191260b49bb8d599efb2bb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -626,10 +637,11 @@ export const QUESTIONS = [
       "81"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：77=7×11；7 與 11 都是質數且彼此不同。所以答案是「77」。",
+    "explanation": "77=7×11，7、11 都是質數且彼此不同，完全符合條件。49=7×7 的兩質數相同；75=3×5×5、81=3⁴ 都不是恰由兩個不同質數相乘，因此唯一答案是 77，且其質因數分解已完整。",
     "steps": [
-      "77=7×11",
-      "7 與 11 都是質數且彼此不同"
+      "分解四個選項的質因數。",
+      "確認 77 的分解恰為 7×11。",
+      "檢查 7、11 均為質數且不同，排除其餘選項。"
     ],
     "optionAnalysis": [
       {
@@ -668,7 +680,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "30ba2acbcab711fe54020298a3e38f0df99f34ef0d8ebd66c2d6b6a5cbf95627",
+    "contentSha256": "a3481708464326ea9fa67b50179fca59a3f0e3830ed5989cef06ea6fbf169d8e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -690,10 +702,11 @@ export const QUESTIONS = [
       "41"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：區間內質數為 41、43、47；41+2=43 是質數；43+2=45、47+2=49 都不是質數。所以答案是「41」。",
+    "explanation": "40、50 之間的質數是 41、43、47。再檢查 q+2：41+2=43 仍是質數；43+2=45=3×15，47+2=49=7²，後兩者為合數，所以 q=41。這是唯一同時滿足 q 與 q+2 皆為質數的選項，兩個條件均已檢查。",
     "steps": [
-      "區間內質數為 41、43、47",
-      "41+2=43 是質數；43+2=45、47+2=49 都不是質數"
+      "先列出區間內質數 41、43、47。",
+      "分別計算三個候選值的 q+2。",
+      "確認只有 41 與 43 同為質數。"
     ],
     "optionAnalysis": [
       {
@@ -732,7 +745,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "30264b90ed7255fd2fab469e40ee7cf91fc76e2522da175eb591c27b0d2df98a",
+    "contentSha256": "a3d3bc37f3d9cc3be873a2636f6210ef4aecb90d2a6ad04b0d242cecbc1a11e1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -754,10 +767,11 @@ export const QUESTIONS = [
       "7"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：相鄰兩整數中必有一個偶數；唯一可為質數的偶數是 2，所以相鄰質數只能是 2、3。所以答案是「2」。",
+    "explanation": "相鄰兩整數一奇一偶；若兩者都為質數，其中的偶數只能是唯一偶質數 2。因此這對相鄰質數只能是 2、3，較小的 n=2；3、5、7 的下一個整數皆為大於 2 的偶合數。",
     "steps": [
-      "相鄰兩整數中必有一個偶數",
-      "唯一可為質數的偶數是 2，所以相鄰質數只能是 2、3"
+      "利用相鄰兩整數必有一個偶數。",
+      "套用唯一偶質數是 2 的性質。",
+      "驗算 n=2 時 2、3 都是質數。"
     ],
     "optionAnalysis": [
       {
@@ -796,7 +810,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "53fc1e9222636a7863b25389105bcb2717fd9acee45f197afbfada7644fd85f9",
+    "contentSha256": "c78a1d2fac5f9c920d35b099a3e7313fe6b04e026854180b314c567667e28fa2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -820,8 +834,9 @@ export const QUESTIONS = [
     "answerIndex": 1,
     "explanation": "依題意逐步處理：29 是質數，正因數只有 1 和 29；若列數與每列人數都大於 1，就不存在整除分法。所以答案是「無法排成符合條件的長方形」。",
     "steps": [
-      "29 是質數，正因數只有 1 和 29",
-      "若列數與每列人數都大於 1，就不存在整除分法"
+      "確認 29 的正因數只有 1、29。",
+      "把長方形兩邊都大於 1 翻成非平凡因數分解。",
+      "判定 29 無此分解，故不能排成符合條件的隊形。"
     ],
     "optionAnalysis": [
       {
@@ -860,7 +875,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "學生總數、不得剩人及兩邊都大於 1 共同決定要檢查 29 是否有非平凡因數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8c96d591743d3e05c54650e92c0d256e2495c0f0b5ed3b118d6c3162a6a04119",
+    "contentSha256": "1939d90c9da210c4dcc7035e577e20158697ec2b255b6ed561497bd39443f3d1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -882,10 +897,11 @@ export const QUESTIONS = [
       "57"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：51=3×17、55=5×11、57=3×19；59 除 2、3、5、7 都不整除，所以是質數。所以答案是「59」。",
+    "explanation": "51=3×17、55=5×11、57=3×19，三者都有非平凡因數。√59 小於 8，只需檢查質數 2、3、5、7，均不能整除 59，因此 59 是區間內符合條件的質數，也是唯一符合者，因數檢查已覆蓋必要範圍。",
     "steps": [
-      "51=3×17、55=5×11、57=3×19",
-      "59 除 2、3、5、7 都不整除，所以是質數"
+      "先用整除性分解 51、55、57。",
+      "對 59 試除不大於 √59 的質數 2、3、5、7。",
+      "確認都不整除後判定 59 為質數。"
     ],
     "optionAnalysis": [
       {
@@ -924,7 +940,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "條碼範圍與十位數限制界定候選值，質數判定是情境中的必要條件。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4cc4496eab1f97d3feac55be417f48292dd8713649793f1fade2b1974a48f941",
+    "contentSha256": "9204af3fe0f5f210244bf25df1cc08fe861a24dece1c08309c2e6a8c628d9735",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -946,10 +962,11 @@ export const QUESTIONS = [
       "無法照條件平均分袋"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：43 是質數；不存在袋數與每袋張數都至少 2 的整數分解。所以答案是「無法照條件平均分袋」。",
+    "explanation": "43 是質數，只能寫成 1×43。若袋數與每袋張數都至少 2，就需要把 43 分解成兩個都大於 1 的整數，但這不可能；分成 43 袋又會每袋僅 1 張，所以無法依條件分袋。",
     "steps": [
-      "43 是質數",
-      "不存在袋數與每袋張數都至少 2 的整數分解"
+      "判定 43 的正因數只有 1、43。",
+      "將分袋條件翻成兩個因數都至少為 2。",
+      "排除每袋 1 張後判定沒有可行分法。"
     ],
     "optionAnalysis": [
       {
@@ -988,7 +1005,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "至少 2 袋、每袋至少 2 張及不剩三項條件共同排除質數的兩種平凡分法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9d3ada5094d67ed32a6971b064887d66b2deab6811520a8f6afab794df39da82",
+    "contentSha256": "1454436c7d64164cd6a2eeeab3f17bf99a2940474caa0c9ecd3a7e9cc6ff0d51",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1009,9 +1026,9 @@ export const CONSTRUCTED_RESPONSES = [
       "質數與合數例子各一。"
     ],
     "fullCreditSolution": [
-      "1只有正因數1，共一個。",
-      "質數需恰有兩個正因數，合數需多於兩個，因此1兩者皆非。",
-      "例如7是質數，8=2×4是合數。"
+      "1 的正因數只有 1，共一個；質數需恰有兩個正因數，合數則有兩個以上但不只兩個。",
+      "因此 1 的因數個數既不符合質數，也不符合合數定義，所以 1 兩者皆非。",
+      "例如 7 的正因數只有 1、7，是質數；8=2×4，另有因數 2、4，是合數。"
     ],
     "alternativeSolutions": [
       "可用不可寫成兩個大於1整數乘積補充合數定義。"
@@ -1046,7 +1063,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "c7f1d4cff0745a14e1e446df79df0b6c1cde61903b6e5be4d452f21dc50279cf",
+    "contentSha256": "0e285e11fd814c25a9e08efb9bfc7d920264daa84b122da2e415fdd77bd1f019",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1064,9 +1081,9 @@ export const CONSTRUCTED_RESPONSES = [
       "實際試除並給出結論。"
     ],
     "fullCreditSolution": [
-      "√221約14.9，所以檢查2、3、5、7、11、13。",
-      "221不能被2、3、5、7、11整除。",
-      "221=13×17，因此221是合數。"
+      "因為 √221 約為 14.9，只需檢查不大於它的質數 2、3、5、7、11、13。",
+      "221 不是偶數、各位數和不是 3 的倍數、末位不是 0 或 5，且除以 7、11 也不整除。",
+      "檢查 13 時得到 221=13×17，找到非平凡因數，因此 221 是合數而不是質數。"
     ],
     "alternativeSolutions": [
       "可直接發現221÷13=17，但須說明13為非平凡因數。"
@@ -1101,7 +1118,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "c5ccaf818e1393a726520953e17360247f4e1cf5582d7d529915434121603a5c",
+    "contentSha256": "92681ad4214868b765d4b8312640eede3b70fb834da2e22e6372521c0fa580ce",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

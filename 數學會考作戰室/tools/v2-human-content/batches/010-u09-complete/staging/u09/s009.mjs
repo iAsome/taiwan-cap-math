@@ -61,11 +61,9 @@ export default {
       }
     ],
     "conceptDevelopment": [
-      "平均數不是一定出現在原資料中的數；它描述把總量平均分配後每一筆應有多少。",
-      "計算順序是先求資料總和，再除以資料筆數。筆數要逐筆計，不可只數不同數值。",
-      "若已知平均數與筆數，資料總和等於平均數乘筆數，這是解缺值的重要橋梁。",
-      "增加一筆高於原平均的資料，平均數會上升；增加一筆低於原平均的資料，平均數會下降。",
-      "平均數會受極端值影響，因此比較資料時不能只看平均數，還要配合全距或資料分布。"
+      "平均數表示把總量平均分配到每一筆後的數值，基本關係是平均數等於總和除以筆數，反向則是總和等於平均數乘筆數。求缺值、加入資料、刪除資料或訂正誤值時，先把平均還原成總和，完成總量變動後再除以新的筆數；直接對平均做加減通常會忽略資料筆數。",
+      "合併兩組資料須以各組人數加權：各組平均乘各組人數還原總量，加總後除以總人數。只有兩組人數相等時，合併平均才恰好等於兩個平均的算術平均；人數不同時直接平均兩個平均會給每組相同權重而失真。",
+      "每筆資料同加一個常數，平均也同加該常數；加入高於原平均的資料會拉高平均，加入低於原平均的資料會拉低平均。平均數會受極端值影響，因此解讀薪資、房價等偏斜資料時，還要檢查多數資料分布，不能說每筆都接近平均。"
     ],
     "definitions": [
       {
@@ -132,39 +130,43 @@ export default {
         "id": "L1",
         "prompt": "5 次小考分數為 72、81、85、76、86。",
         "solution": [
-          "總和=400。",
-          "筆數=5。",
+          "總和為 400。",
+          "筆數為 5。",
           "400÷5=80。"
         ],
-        "answer": "平均 80 分。"
+        "answer": "平均 80 分。",
+        "why": "平均計算先合計全部分數，再依五次平均分配；八十介於最低七十二與最高八十六之間，且八十乘五回到四百，可作逆向驗算。"
       },
       {
         "id": "L2",
         "prompt": "4 天用水量平均 18 公升，前三天為 16、20、17 公升。",
         "solution": [
-          "4 天總量=18×4=72。",
-          "前三天總量=53。",
-          "第四天=72-53=19。"
+          "四天總量為 18×4=72 公升。",
+          "前三天總量為 53 公升。",
+          "第四天為 72-53=19 公升。"
         ],
-        "answer": "19 公升。"
+        "answer": "19 公升。",
+        "why": "已知平均不能直接與前三天相減，必須先乘四還原所需總量；再扣已知五十三得到十九，代回四天合計七十二才與平均十八一致。"
       },
       {
         "id": "L3",
-        "prompt": "資料 8、9、9、10、44。",
+        "prompt": "資料為 8、9、9、10、44。",
         "solution": [
-          "平均數=80÷5=16。",
-          "44 明顯高於其餘資料，將平均數拉高。"
+          "總和為 80，平均為 16。",
+          "四十四遠高於其餘四筆，使平均向上移動。"
         ],
-        "answer": "平均 16，但不代表典型值接近 16。"
+        "answer": "平均 16，但不代表典型值接近 16。",
+        "why": "平均十六的算術計算沒有錯，但五筆中沒有任何一筆接近十六；檢視原資料可看出四十四是極端高值，所以平均不宜單獨描述多數資料。"
       },
       {
         "id": "L4",
-        "prompt": "3 筆長度為 1.2、0.85、95 公分。",
+        "prompt": "3 筆長度分別為 1.2 公尺、0.85 公尺與 95 公分，求平均長度。",
         "solution": [
-          "先將 1.2 公尺改為 120 公分（若原題單位如此）。",
-          "統一單位後才能相加。"
+          "先將 1.2 公尺、0.85 公尺分別換成 120 公分、85 公分。",
+          "統一單位後相加：120+85+95=300 公分，再用 300÷3=100 公分。"
         ],
-        "answer": "先統一單位，再依總和除以 3。"
+        "answer": "平均長度為 100 公分，也就是 1 公尺。",
+        "why": "長度相加前必須先使用相同單位，否則數字大小沒有共同量尺；三筆都換成公分後求總和再除以三，答案最後也要清楚標示長度單位。"
       }
     ],
     "commonMistakes": [
@@ -242,7 +244,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "b683005092c5f9e79a2091b1270ce6d7615acf42e6609c4a32df22f934a2f5e5"
+    "contentSha256": "4071ce85c2f214644fe35bdc6f3abd463d6b64f677340fcc98c646d635d6b4db"
   },
   "mcQuestions": [
     {
@@ -270,10 +272,11 @@ export default {
         "derivedAnswer": "8",
         "trustStoredAnswer": false
       },
-      "explanation": "平均數是總和除以個數。",
+      "explanation": "平均數是總和除以個數。 平均數是把資料總和平均分配到每一筆，六加八加十為二十四，再除以三筆得到八；二十四是總和而非平均。",
       "steps": [
         "加總資料。",
-        "除以資料個數。"
+        "除以資料個數。",
+        "計算二十四除以三得八，並確認八位於最小六與最大十之間。"
       ],
       "optionAnalysis": [
         {
@@ -297,7 +300,7 @@ export default {
           "reason": "24 是總和。"
         }
       ],
-      "misconceptionTarget": "只答總和或極值",
+      "misconceptionTarget": "只答總和或極值 求出總和二十四後忘記除以資料筆數三。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -315,7 +318,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7905e580f600bdd8d1989ebbced34864e7c545e63d291c712994c8f2c95df714"
+      "contentSha256": "7bfaa2d8bf9ab5e7dc2710158eea29811418baffda41be3d03fa033b1704ff23"
     },
     {
       "questionId": "u09-s009-v002",
@@ -342,10 +345,11 @@ export default {
         "derivedAnswer": "60",
         "trustStoredAnswer": false
       },
-      "explanation": "平均公式可反推總和。",
+      "explanation": "平均公式可反推總和。 平均十二表示五筆資料平均分配後每筆十二，因此反推總和要用平均乘筆數，十二乘五等於六十；十二本身不是總和。",
       "steps": [
         "辨認平均與個數。",
-        "相乘。"
+        "相乘。",
+        "使用總和等於平均乘筆數，算十二乘五為六十。"
       ],
       "optionAnalysis": [
         {
@@ -369,7 +373,7 @@ export default {
           "reason": "2.4 是 12÷5。"
         }
       ],
-      "misconceptionTarget": "把平均加上個數",
+      "misconceptionTarget": "把平均加上個數 把已知平均十二直接當總和，或錯用十二除以五。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -387,7 +391,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "15cb72571e24d7c2f92212f4baf161548d274704812d4f740d04f052c9a37d01"
+      "contentSha256": "e6e26a8eb6ebac88f45a8df85ef2df95c1eb2cab147d7f88795c59a2df47ff98"
     },
     {
       "questionId": "u09-s009-v003",
@@ -414,9 +418,11 @@ export default {
         "derivedAnswer": "增加 3",
         "trustStoredAnswer": false
       },
-      "explanation": "所有資料加同一常數，平均加同一常數。",
+      "explanation": "所有資料加同一常數，平均加同一常數。 每筆都加三會使總和增加三乘資料筆數，除回相同筆數後恰好增加三；資料間差距不變，也不是把原平均乘三。",
       "steps": [
-        "用小例子或代數檢查。"
+        "用小例子或代數檢查。",
+        "設原總和為筆數乘原平均。",
+        "加入的總量除回原筆數，得到新平均為原平均加三。"
       ],
       "optionAnalysis": [
         {
@@ -440,7 +446,7 @@ export default {
           "reason": "變化與資料個數本身不同。"
         }
       ],
-      "misconceptionTarget": "認為平均不受所有資料同幅變化影響",
+      "misconceptionTarget": "認為平均不受所有資料同幅變化影響 只看到常數三就把平均數乘三，沒有考慮每筆同加。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -458,7 +464,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e2fea01aed7edc438e8c3e97e022bf84d0533b48950ef5ca0c8dbd185a7b6807"
+      "contentSha256": "f38b255921b73a76d6137289a57ab4b088469bf47a8f8c8bccbd35cc4ae1b04a"
     },
     {
       "questionId": "u09-s009-v004",
@@ -485,7 +491,7 @@ export default {
         "derivedAnswer": "13",
         "trustStoredAnswer": false
       },
-      "explanation": "先由平均求總和，再扣已知資料。",
+      "explanation": "先由平均求總和，再扣已知資料。 四筆平均十表示所需總和四十，三個已知數合計二十七，缺值為四十減二十七等於十三；代回後四數平均確為十。",
       "steps": [
         "求目標總和。",
         "加總已知數。",
@@ -513,7 +519,7 @@ export default {
           "reason": "總和應為 40，已知和 27，x=13。"
         }
       ],
-      "misconceptionTarget": "把平均直接填入",
+      "misconceptionTarget": "把平均直接填入 直接以平均十當缺值，未先反推四筆資料總和。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -531,7 +537,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0e45de17840f6600706d3212e6980e554a96f66428a4485a36a760e19dcbe89c"
+      "contentSha256": "2302609bb00a3cbb053a127670cb06902112c7923c3e23b7d00b62049d83e785"
     },
     {
       "questionId": "u09-s009-v005",
@@ -558,10 +564,11 @@ export default {
         "derivedAnswer": "17",
         "trustStoredAnswer": false
       },
-      "explanation": "只有在人數相同時，兩組平均可直接再平均。",
+      "explanation": "只有在人數相同時，兩組平均可直接再平均。 兩組人數同為四人，可先分別還原總分六十與七十六，再用總和一百三十六除八得十七；此處也等於兩平均的算術平均。",
       "steps": [
         "求兩組總和。",
-        "除以總人數。"
+        "除以總人數。",
+        "合計兩組總分一百三十六，再除八人得到十七。"
       ],
       "optionAnalysis": [
         {
@@ -585,7 +592,7 @@ export default {
           "reason": "19 只取乙組。"
         }
       ],
-      "misconceptionTarget": "忽略群組人數",
+      "misconceptionTarget": "忽略群組人數 把兩組平均直接相加成三十四，沒有除以總人數。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -603,7 +610,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b6c329d7f578c1d99a6b1e81fd1116f8a09aa9a04e1302fbb94bd2799755c790"
+      "contentSha256": "0432f31ffa250abf98a02c0609ed47d9e1de6de81c395ff3d7cf99e6c1a196fe"
     },
     {
       "questionId": "u09-s009-v006",
@@ -630,7 +637,7 @@ export default {
         "derivedAnswer": "21",
         "trustStoredAnswer": false
       },
-      "explanation": "加入資料後需更新總和與個數。",
+      "explanation": "加入資料後需更新總和與個數。 原五筆總和為一百，加入二十六後總和一百二十六且筆數變六，故新平均二十一；不能只把二十與二十六取平均。",
       "steps": [
         "還原原總和。",
         "加入新值。",
@@ -658,7 +665,7 @@ export default {
           "reason": "46 是相加。"
         }
       ],
-      "misconceptionTarget": "直接平均舊平均與新值",
+      "misconceptionTarget": "直接平均舊平均與新值 忽略原平均代表五筆資料，誤把二十和二十六平均。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -676,7 +683,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4b4505e7376b7504356dc6b6254bc8867fbc32a8aaa81fd296ef141457391175"
+      "contentSha256": "321b741889cd90c00b3b9429ce1bf846d8918b51cac5bfaa521989428f853313"
     },
     {
       "questionId": "u09-s009-v007",
@@ -703,7 +710,7 @@ export default {
         "derivedAnswer": "12⅓",
         "trustStoredAnswer": false
       },
-      "explanation": "資料更正影響平均＝總和變化÷個數。",
+      "explanation": "資料更正影響平均＝總和變化÷個數。 誤登十九比正確九多十，因此錯誤總和八十四要減十成七十四；六筆資料筆數不變，七十四除六為十二又三分之一。",
       "steps": [
         "還原錯誤總和。",
         "調整錯誤差值。",
@@ -731,7 +738,7 @@ export default {
           "reason": "方向反了，像是增加 10。"
         }
       ],
-      "misconceptionTarget": "把 9 與 19 的差方向弄反",
+      "misconceptionTarget": "把 9 與 19 的差方向弄反 只把平均十四減十，沒有把總和差平均分到六筆。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -749,7 +756,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "50678bc84f9f7226208080afc63c97c744008aac50f2824f7d862e06da17798d"
+      "contentSha256": "b56c5e43bc35ee48216c53b401da3e78b4fe6c90cc65d526375e6b1f2dc722ee"
     },
     {
       "questionId": "u09-s009-v008",
@@ -776,7 +783,7 @@ export default {
         "derivedAnswer": "78",
         "trustStoredAnswer": false
       },
-      "explanation": "不同人數群組必須依人數加權。",
+      "explanation": "不同人數群組必須依人數加權。 合併平均必須以人數加權，甲組總分七百二十、乙組一千六百二十，合計二千三百四十除三十人得七十八。",
       "steps": [
         "求各組總分。",
         "加總。",
@@ -804,7 +811,7 @@ export default {
           "reason": "總分 720+1620=2340，除 30 得 78。"
         }
       ],
-      "misconceptionTarget": "直接平均群組平均",
+      "misconceptionTarget": "直接平均群組平均 直接平均七十二與八十一，忽略乙組人數是甲組兩倍。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -822,7 +829,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ac2bca3f6e0727749f84880fdfdb1fd773657cd5ca26cea64308a1948d201979"
+      "contentSha256": "80d22a874ad8636d8340056490819f2f9006b0cd5aa0fe9b4068f43e17c064e3"
     },
     {
       "questionId": "u09-s009-v009",
@@ -849,9 +856,11 @@ export default {
         "derivedAnswer": "仍為 50",
         "trustStoredAnswer": false
       },
-      "explanation": "刪除恰等於平均的資料，平均不變。",
+      "explanation": "刪除恰等於平均的資料，平均不變。 刪除的數值恰等於原平均，總和與筆數各減去一份五十，剩餘總和仍可表示為五十乘剩餘筆數，所以平均不變。",
       "steps": [
-        "用總和表示驗證。"
+        "用總和表示驗證。",
+        "將新總和寫成五十乘原筆數減五十。",
+        "提出公因數後除以少一筆的筆數，仍得五十。"
       ],
       "optionAnalysis": [
         {
@@ -875,7 +884,7 @@ export default {
           "reason": "由等於平均即可確定。"
         }
       ],
-      "misconceptionTarget": "認為刪除任何資料都無法判斷",
+      "misconceptionTarget": "認為刪除任何資料都無法判斷 認為刪除任何資料都必然使平均變大或變小。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -893,7 +902,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9fde82e323f819906d22f229d5afb88ab70f1d93ad96cde001815d20b559469c"
+      "contentSha256": "f09d2d196cf615b005ca77ca58e9887702e4aa231d2f8dc84b2be0e04d826de7"
     },
     {
       "questionId": "u09-s009-v010",
@@ -920,7 +929,7 @@ export default {
         "derivedAnswer": "(76×30+82×28+79×32)÷90",
         "trustStoredAnswer": false
       },
-      "explanation": "參加人數不同使加權不可省略。",
+      "explanation": "參加人數不同使加權不可省略。 每次平均須先乘該次應試人數還原總分，三次總分相加後再除總應試人次九十；直接平均三個平均數會把人數不同的三次視為同權重。",
       "steps": [
         "求各次總分。",
         "加總總人次。",
@@ -948,7 +957,7 @@ export default {
           "reason": "分子分母意義顛倒。"
         }
       ],
-      "misconceptionTarget": "直接平均不同人數的平均",
+      "misconceptionTarget": "直接平均不同人數的平均 把三次平均直接相加除三，忽略每次應試人數不同。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -966,7 +975,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2caa25f39f5a5ec3a52021b94a81d4f811a395bd44a19a7c1d9994c3e92c4934"
+      "contentSha256": "59ab16d2688dce988e9bbf8cb4b3fcac31dd216c8a639fe7138db98ffa39be51"
     },
     {
       "questionId": "u09-s009-v011",
@@ -993,7 +1002,7 @@ export default {
         "derivedAnswer": "平均 55,000 正確，但不代表多數員工領 55,000",
         "trustStoredAnswer": false
       },
-      "explanation": "平均能描述總量分攤，不保證典型個體接近平均。",
+      "explanation": "平均能描述總量分攤，不保證典型個體接近平均。 主管十九萬元與九名各四萬元合計五十五萬元，平均確為五萬五千元；但九成員工薪資低於平均，顯示極端高值會拉高平均。",
       "steps": [
         "驗算平均。",
         "查看個別分布。",
@@ -1021,7 +1030,7 @@ export default {
           "reason": "極端高值使平均偏高。"
         }
       ],
-      "misconceptionTarget": "把平均當成多數人的薪資",
+      "misconceptionTarget": "把平均當成多數人的薪資 把平均數解讀成多數人的實際薪資或每人都接近平均。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -1039,7 +1048,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f02b4cb928c2c9a1e6af7104674cbbcdb619f9b77a5ed135ebbf7d505517f1f0"
+      "contentSha256": "de3b1bc6debf8de5ffd97dccce16866f0d22e6678fc827b910475d6a666b22b7"
     },
     {
       "questionId": "u09-s009-v012",
@@ -1066,7 +1075,7 @@ export default {
         "derivedAnswer": "28 分",
         "trustStoredAnswer": false
       },
-      "explanation": "新平均提升 2 分不表示新增那場只高 2 分。",
+      "explanation": "新平均提升 2 分不表示新增那場只高 2 分。 前四場總得分七十二，第五場後五場總分需達一百，兩總分相減得第五場二十八分；新平均二十分不是第五場單場分數。",
       "steps": [
         "還原前總分。",
         "求五場總分。",
@@ -1094,7 +1103,7 @@ export default {
           "reason": "前四場總分 72，五場總分 100，第五場 28。"
         }
       ],
-      "misconceptionTarget": "把平均增幅直接加到新值",
+      "misconceptionTarget": "把平均增幅直接加到新值 把五場平均二十分直接當成第五場得分，未比較總分。",
       "prerequisiteCheck": {
         "skillIds": [
           "contingency-table"
@@ -1112,7 +1121,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "60b32b1285c131aaa65529ffa25ae161d3762a3a48a7671e8b818751cc97a1e3"
+      "contentSha256": "6efa34d7762c4fc1da84416ee8a4924306d531d3f2fa94788c8485df048d6266"
     }
   ],
   "constructedResponses": [
@@ -1135,7 +1144,8 @@ export default {
       "standardSolution": [
         "正確總分=80×5=400。",
         "已知四次總分=72+84+76+88=320，所以x=400-320=80。",
-        "若誤記為90，總分多10分，平均數多10÷5=2分；誤記平均為82分。"
+        "若誤記為90，總分多10分，平均數多10÷5=2分；誤記平均為82分。",
+        "代回正確第五次八十分後，五次總分為四百分；把八十誤記為九十只使總和增加十分，因此平均增加量要再除以五，而不是直接增加十分。"
       ],
       "alternativeMethod": "可直接列方程式(72+84+76+88+x)/5=80，解得x=80；誤植平均再計算一次。",
       "reasoningSteps": [
@@ -1180,7 +1190,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "46ca86c2c7edd51072ccdeff28dd8c61377de0cba8b4b4954355fab4a1953d66"
+      "contentSha256": "708376578328dde0a1c924fdc7d1224f1cc5e09ceb15a5d1fd409bd171f7ecb2",
+      "commonErrors": [
+        "把平均八十直接當成第五次分數而未先驗證四次已知總分與所需總分。",
+        "將誤記值多出的十分直接加到平均，忘記這十分會平均分攤到五筆資料。"
+      ]
     },
     {
       "questionId": "u09-s009-cr002",
@@ -1247,7 +1261,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "4a0af5f958a94576c475259e83617ea86b875ddb4af43f81b409c3444a29cd0e"
+      "contentSha256": "e92091ce65b454a82451a2e260af059d1c55f979b2ca1c58436a23a7f4417bba",
+      "commonErrors": [
+        "直接平均五十二與五十八而未依六人、四人加權，求錯原十人平均與總重。",
+        "用五十四減五十四點四猜新成員體重，沒有由新舊總重相減求五十公斤。"
+      ]
     }
   ],
   "semanticReviews": [

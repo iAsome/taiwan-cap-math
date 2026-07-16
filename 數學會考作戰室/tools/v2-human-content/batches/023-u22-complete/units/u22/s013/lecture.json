@@ -122,7 +122,8 @@
       "solutionSteps": [
         "正正、正反、反正、反反。"
       ],
-      "answer": "正正、正反、反正、反反。"
+      "answer": "正正、正反、反正、反反。",
+      "why": "兩次硬幣若記錄先後，第一擲與第二擲各有正、反兩種；四個有序配對互斥且完整，正反與反正不能合併。也可用二乘二驗算總數為四。"
     },
     {
       "exampleId": "L2",
@@ -130,7 +131,8 @@
       "solutionSteps": [
         "9個有序結果。"
       ],
-      "answer": "9個有序結果。"
+      "answer": "9個有序結果。",
+      "why": "放回後每次仍有A、B、C三個候選，每個首抽都能接三個次抽，所以有三乘三共九個有序結果。AA等重複結果在放回條件下合法。"
     },
     {
       "exampleId": "L3",
@@ -138,7 +140,8 @@
       "solutionSteps": [
         "AB、AC、BA、BC、CA、CB。"
       ],
-      "answer": "AB、AC、BA、BC、CA、CB。"
+      "answer": "AB、AC、BA、BC、CA、CB。",
+      "why": "不放回使第二次不能再取首抽字母，每個第一結果只接另外兩個字母；三乘二得到六個結果，列出的六項也恰好互斥且無遺漏。"
     },
     {
       "exampleId": "L4",
@@ -146,7 +149,8 @@
       "solutionSteps": [
         "和3到7，但各和不等可能。"
       ],
-      "answer": "和3到7，但各和不等可能。"
+      "answer": "和3到7，但各和不等可能。",
+      "why": "六個不重複兩數組合映射成和3至7，但和5可由1+4與2+3兩組形成，其他和的來源數不同。因此值域完整不代表五個和等可能。"
     }
   ],
   "commonMistakes": [
@@ -225,5 +229,5 @@
     "reviewVersion": "human-lecture-review-u22-r1.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "2db2bdb6244ad2fb938ad4b3c1b71f7a38589764f41011e81be33081f0986fc9"
+  "contentSha256": "0b43cfe203dc904b593f272c733ddcdf49a7933d1d7352d1a82c5a94cf00bf85"
 }

@@ -55,7 +55,8 @@ export const LECTURE = {
     "分組的目的不是任意加括號，而是讓每組提出後得到完全相同的括號。",
     "若兩括號只差整體負號，例如 x-2 與 2-x，可從其中一組提出 -1。",
     "有時原順序無法形成共同括號，需要重排；重排不改變加法的值。",
-    "最後的共同括號再提出一次，才形成乘積。"
+    "最後的共同括號再提出一次，才形成乘積。",
+    "分組分解的目標是讓每一組先提出自己的公因式後，出現完全相同的二項括號，再把該括號視為整體因式提出。分組可以利用加法交換律調整項目順序，但不能改變任何項的符號或遺漏項；若兩組括號互為相反式，應從其中一組提出負因式，使括號順序與符號一致。完成第二次提出後，必須展開兩個最終因式並逐項核對原來所有項。"
   ],
   "formalDefinitions": [
     {
@@ -112,24 +113,27 @@ export const LECTURE = {
         "前兩項提 m，後兩項提 n。",
         "得到 m(x+y)+n(x+y)。"
       ],
-      "answer": "(m+n)(x+y)"
+      "answer": "(m+n)(x+y)",
+      "why": "前兩項提出甲、後兩項提出乙後，都留下丙加丁這個完整括號；再用分配律逆向提出共同括號，另一因式由外層商甲與乙組成，展開可回到四項。"
     },
     {
       "exampleId": "L2",
-      "prompt": "x^2+4x+3x+12",
+      "prompt": "x²+4x+3x+12",
       "solutionSteps": [
         "前組 x(x+4)，後組 3(x+4)。"
       ],
-      "answer": "(x+3)(x+4)"
+      "answer": "(x+3)(x+4)",
+      "why": "前組兩項共同含未知數，後組兩項共同含三，逐組提出後都得到未知數加四；把共同括號提出，外層未知數與三形成另一因式並可完整回展。"
     },
     {
       "exampleId": "L3",
-      "prompt": "6a^2-9a+4ab-6b",
+      "prompt": "6a²-9a+4ab-6b",
       "solutionSteps": [
-        "分成 (6a^2-9a)+(4ab-6b)。",
+        "分成 (6a²-9a)+(4ab-6b)。",
         "提 3a(2a-3)+2b(2a-3)。"
       ],
-      "answer": "(2a-3)(3a+2b)"
+      "answer": "(2a-3)(3a+2b)",
+      "why": "前組提出三甲、後組提出二乙後，兩者都留下二甲減三；提出共同差式後，另一因式保留三甲加二乙，回展會逐項恢復正負號與兩種變數。"
     },
     {
       "exampleId": "L4",
@@ -138,7 +142,8 @@ export const LECTURE = {
         "前組 p(q-r)。",
         "後組 -2(q-r)。"
       ],
-      "answer": "(p-2)(q-r)"
+      "answer": "(p-2)(q-r)",
+      "why": "前組提出甲後是乙減丙，後組必須提出負二才能也得到乙減丙；若只提出正二會得到相反括號。共同差式提出後，另一因式自然是甲減二。"
     }
   ],
   "difficultyConnections": {
@@ -234,7 +239,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "032d4622402f777144abefd4cb0cfa4363f9500594860badf5a3393212ce58a9"
+  "contentSha256": "130ef9ef5a37a966252017b56b5c821874ed06da3b0ac51b8d6bb0e966617b03"
 };
 
 export const QUESTIONS = [
@@ -262,7 +267,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開回四項完全一致。",
-    "explanation": "ax+ay+bx+by=a(x+y)+b(x+y)=(a+b)(x+y)。",
+    "explanation": "ax+ay+bx+by=a(x+y)+b(x+y)=(a+b)(x+y)。 把前兩項提出甲、後兩項提出乙後，兩組括號都成為丙加丁，才能再把此完整括號提出；最終兩因式相乘展開，會依序恢復四個原項而不改變任何配對。",
     "steps": [
       "分成前兩項、後兩項。",
       "各組提 a、b。",
@@ -290,7 +295,7 @@ export const QUESTIONS = [
         "reason": "前兩項提 a、後兩項提 b，均得 x+y。"
       }
     ],
-    "misconceptionTarget": "分組後沒有形成相同括號。",
+    "misconceptionTarget": "分組後沒有形成相同括號。 各組提出公因式後，兩個括號必須完全相同或可由整體負號轉換。",
     "prerequisiteCheck": "需掌握提公因式。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "無單位；代數恆等。",
@@ -309,7 +314,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "aeb8b4f8704844ffbd73dff984b311cf24bc1ce2d8eb97a4be68fd77adb97b1d"
+    "contentSha256": "62f0ff8c8a0de587614d96c34b2d0211e60281f3f9f6d1ff03573fe693cbe4e3"
   },
   {
     "questionId": "u12-s004-v002",
@@ -335,7 +340,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "(x+3)(x+2)=x²+5x+6，與原式合併後相同。",
-    "explanation": "前兩項 x(x+3)，後兩項 2(x+3)，提出 x+3。",
+    "explanation": "前兩項 x(x+3)，後兩項 2(x+3)，提出 x+3。 前兩項共同含未知數並留下未知數加三，後兩項共同含二也留下同一括號；提出共同括號後，外層商未知數與二組成另一因式，展開可回到四項。",
     "steps": [
       "分組 (x²+3x)+(2x+6)。",
       "各提 x、2。",
@@ -363,7 +368,7 @@ export const QUESTIONS = [
         "reason": "未形成乘積且不是有效分組結果。"
       }
     ],
-    "misconceptionTarget": "只先合併 3x+2x，沒看分組結構。",
+    "misconceptionTarget": "只先合併 3x+2x，沒看分組結構。 先合併同類項雖不改值，卻會遮住題目要求觀察的兩組共同括號。",
     "prerequisiteCheck": "需會同類項與提公因式。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "無單位與近似。",
@@ -382,7 +387,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e03020114035996985a9e860ccf13950a2d2123cbedfa42d492c2644c9c17486"
+    "contentSha256": "fe6418f11256de520bfd53645339cbe4d185626b0d64ba00f2182c6ee0043d21"
   },
   {
     "questionId": "u12-s004-v003",
@@ -408,7 +413,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "展開得 6m²+4m-9m-6，正是原式。",
-    "explanation": "(6m²-9m)+(4m-6)=3m(2m-3)+2(2m-3)。",
+    "explanation": "(6m²-9m)+(4m-6)=3m(2m-3)+2(2m-3)。 前組六倍平方減九倍一次提出三倍未知數後留下二倍未知數減三；後組四倍一次減六提出二後也留下同一括號，最後外層商相加成三倍未知數加二。",
     "steps": [
       "前組提 3m。",
       "後組提 2。",
@@ -436,7 +441,7 @@ export const QUESTIONS = [
         "reason": "展開中間項為 -14m。"
       }
     ],
-    "misconceptionTarget": "後組把 4m-6 提成 2(2m+3)。",
+    "misconceptionTarget": "後組把 4m-6 提成 2(2m+3)。 後組四倍未知數減六提出二後仍是二倍未知數減三，常數符號不可改。",
     "prerequisiteCheck": "需會正負數除法。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位；精確係數。",
@@ -455,7 +460,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "7870f4ff8838bd7540991c33b708b746b055371f61737ada9f808644b006e927"
+    "contentSha256": "4b73f9a9fa86a201ae63819fcbb8044dd292c02be84460e653a62d72a20ce740"
   },
   {
     "questionId": "u12-s004-v004",
@@ -481,7 +486,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(p-2)(q-r)=pq-pr-2q+2r。",
-    "explanation": "前兩項提 p 得 p(q-r)；後兩項 -2q+2r=-2(q-r)。",
+    "explanation": "前兩項提 p 得 p(q-r)；後兩項 -2q+2r=-2(q-r)。 前組以甲提出後得到乙減丙；後組負二乙加二丙必須提出負二，才能也得到乙減丙。再提出共同差式後，另一因式是甲減二，展開符號逐項相符。",
     "steps": [
       "分組前兩項與後兩項。",
       "後組提出 -2。",
@@ -528,7 +533,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b2efc6e235afe79063b8dbd4cb764b753ccf689f852027fac77747218de49949"
+    "contentSha256": "190b677e06738c5a0e3e6a284308c5fa9ac286433ba9e2d70be2fa32e7cb6b5e"
   },
   {
     "questionId": "u12-s004-v005",
@@ -554,7 +559,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開為 x²+xy+3x+3y。",
-    "explanation": "(x²+xy)+(3x+3y)=x(x+y)+3(x+y)。",
+    "explanation": "(x²+xy)+(3x+3y)=x(x+y)+3(x+y)。 前兩項提出未知數後留下未知數加乙，後兩項提出三後同樣留下未知數加乙；把共同括號提出，外層商未知數與三形成另一因式，乘回可還原四項。",
     "steps": [
       "前兩項提 x。",
       "後兩項提 3。",
@@ -582,7 +587,7 @@ export const QUESTIONS = [
         "reason": "x(x+y)+3(x+y)。"
       }
     ],
-    "misconceptionTarget": "把 x+y 之外的剩餘因式誤寫含 y。",
+    "misconceptionTarget": "把 x+y 之外的剩餘因式誤寫含 y。 提出共同括號後，另一因式只由各組外層商組成，不應任意再加入乙。",
     "prerequisiteCheck": "需辨認每組公因式。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位；精確代數。",
@@ -601,7 +606,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "7e4527895e79a7a42ca34545f55e188c0ba5a5b9fd7c1a384be170b35fe8751c"
+    "contentSha256": "0ed1863f4a965688da68dd54731b66205182c78372f2d8660887a10196f389fb"
   },
   {
     "questionId": "u12-s004-v006",
@@ -627,7 +632,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "展開 (2a-1)(a+3b)=2a²+6ab-a-3b。",
-    "explanation": "(2a²+6ab)+(-a-3b)=2a(a+3b)-(a+3b)。",
+    "explanation": "(2a²+6ab)+(-a-3b)=2a(a+3b)-(a+3b)。 前組提出二倍甲留下甲加三乙；後組負甲減三乙需提出負一，才會得到完全相同的括號。共同括號提出後另一因式為二甲減一，展開四項皆吻合。",
     "steps": [
       "第一組提 2a。",
       "第二組提 -1。",
@@ -655,7 +660,7 @@ export const QUESTIONS = [
         "reason": "展開 ab 係數為 3，不是 6。"
       }
     ],
-    "misconceptionTarget": "把 -a-3b 提出 +1，未形成相同括號。",
+    "misconceptionTarget": "把 -a-3b 提出 +1，未形成相同括號。 第二組的每一項都要除以負一，才能把相反符號轉成相同括號。",
     "prerequisiteCheck": "需理解提出 -1 的作用。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位；無近似。",
@@ -674,7 +679,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "7d244ee1af146eb2317e85246a8d9ede90c66deb59df961fc3941137e8d15675"
+    "contentSha256": "295cc7250132b4c806cc3a830d8219186b631e512e01c0215c5bbd4ae122aa14"
   },
   {
     "questionId": "u12-s004-v007",
@@ -700,7 +705,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "得到的乘積與原先 (a+3)(x+y) 只差因式順序。",
-    "explanation": "ax+3x+ay+3y=x(a+3)+y(a+3)=(x+y)(a+3)。",
+    "explanation": "ax+3x+ay+3y=x(a+3)+y(a+3)=(x+y)(a+3)。 加法交換律允許把含丙的兩項排在一起、含丁的兩項排在一起；前組提出丙、後組提出丁，都留下甲加三，再提出共同括號所得乘積只與原答案交換因式順序。",
     "steps": [
       "利用加法交換律重排。",
       "按共同 x、y 分組。",
@@ -747,7 +752,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4cf98f699cb49f1c09a87da06f2cc497aaafff183e4293e25571f927b303e9ec"
+    "contentSha256": "9ce341da204def7dc5e20d65b80ca9d6837b48f2e54eb9542181d64ed77d9861"
   },
   {
     "questionId": "u12-s004-v008",
@@ -773,7 +778,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "展開 (x+k)(x+4)=x²+4x+kx+4k，任意 k 均吻合。",
-    "explanation": "原式分成 x(x+4)+k(x+4)，可直接提出共同 x+4。",
+    "explanation": "原式分成 x(x+4)+k(x+4)，可直接提出共同 x+4。 前兩項提出未知數、後兩項提出參數後都留下未知數加四；這只使用分配律，沒有除以參數或取平方根，所以參數為正、負、零或非整數時，恆等式都成立。",
     "steps": [
       "前組提 x。",
       "後組提 k。",
@@ -820,7 +825,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6060090cff07ce554e7795f9bef127b215a66d48128f5b7af527e0c7b310629f"
+    "contentSha256": "ff0d3d1e132882343b0e122b0f2b1c67b188ced0f384e6dae9159095563f975e"
   },
   {
     "questionId": "u12-s004-v009",
@@ -846,7 +851,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開乘積回到四項。",
-    "explanation": "選定分組後：3x(x+2y)-5(x+2y)=(3x-5)(x+2y)。",
+    "explanation": "選定分組後：3x(x+2y)-5(x+2y)=(3x-5)(x+2y)。 將前兩項成組可提出三倍未知數並留下未知數加二乙，後兩項成組提出負五也留下同一括號；其餘分組無法在兩組中製造相同二項式，因此只有此選項成功。",
     "steps": [
       "觀察前兩項共同 3x。",
       "後兩項共同 -5。",
@@ -893,7 +898,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "cd9d891a248333bed7c7cfdd4b4acfe0be9eff1db5893f52f9c2967eec4d0021"
+    "contentSha256": "e13fe5ab9ddf07695d38af18d705c7952c7e3a047227c0ad748607cf39b838e9"
   },
   {
     "questionId": "u12-s004-v010",
@@ -919,7 +924,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "四區寬分別由 x、y 組成，兩列共享 x+y。",
-    "explanation": "總面積=(a+b)(x+y)，高度為 a+b，因此寬度為 x+y。",
+    "explanation": "總面積=(a+b)(x+y)，高度為 a+b，因此寬度為 x+y。 上列兩區面積提出高度甲後留下共同總寬丙加丁，下列提出高度乙後也留下相同寬度；總面積雖是高度和乘寬度和，但題目只問寬，因此取丙加丁公尺。",
     "steps": [
       "按兩列分組。",
       "各列提出高度。",
@@ -966,7 +971,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a8bc086a221322cbe9a8620e56507fb88ca43abe41d3f4cf0fc5a68cc04f0cea"
+    "contentSha256": "651a8c5ce3ce4ad48e70e9fdabb9c4ee8a0ddc737882e8b8c536f0f98a7b041b"
   },
   {
     "questionId": "u12-s004-v011",
@@ -992,7 +997,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "展開為 5n²+10n+3n+6。",
-    "explanation": "(5n²+10n)+(3n+6)=5n(n+2)+3(n+2)。",
+    "explanation": "(5n²+10n)+(3n+6)=5n(n+2)+3(n+2)。 前兩項提出五倍數量留下數量加二，後兩項提出三也留下相同括號；再提出共同格數後，另一因式是五倍數量加三，展開會恢復四個容量項。",
     "steps": [
       "第一排相關項提 5n。",
       "第二排相關項提 3。",
@@ -1020,7 +1025,7 @@ export const QUESTIONS = [
         "reason": "5n 與 3 不能合併成 8n。"
       }
     ],
-    "misconceptionTarget": "把 5n 與 3 當同類項相加。",
+    "misconceptionTarget": "把 5n 與 3 當同類項相加。 五倍數量與常數三不是同類項，只能作為另一因式中的兩項保留。",
     "prerequisiteCheck": "需會分組與正整數計數。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "兩因式為計數量，乘積為總容量；無近似。",
@@ -1039,7 +1044,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9e44ccf6535e5a84dd48876a9bec1241bb10fcef79614c343c50de8363827074"
+    "contentSha256": "4905badf9691157c4e02d30e19b02c4daacdca04b0f357e08b9c698cf4fc2dab"
   },
   {
     "questionId": "u12-s004-v012",
@@ -1065,7 +1070,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "展開回 2pq+6p-q-3。",
-    "explanation": "(2pq+6p)+(-q-3)=2p(q+3)-(q+3)。",
+    "explanation": "(2pq+6p)+(-q-3)=2p(q+3)-(q+3)。 前兩項提出二倍甲後留下乙加三；後兩項負乙減三必須提出負一，才得到同一版型因子。共同括號提出後另一因式為二甲減一，展開可還原全部成本項。",
     "steps": [
       "按 p 相關兩項與負項分組。",
       "第二組提出 -1。",
@@ -1093,7 +1098,7 @@ export const QUESTIONS = [
         "reason": "展開 p 項係數與 q 項不符。"
       }
     ],
-    "misconceptionTarget": "忽略第二組整體負號。",
+    "misconceptionTarget": "忽略第二組整體負號。 後兩項共同的是負一，若漏掉整體負號就無法形成相同的乙加三括號。",
     "prerequisiteCheck": "需會帶負號分組。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "成本單位元；模型可能需 p、q 範圍使總成本非負，分解本身精確。",
@@ -1112,7 +1117,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "931c99291e706003b76e23e8509d3f3a9e49f6aba9c784421e180a3add57354c"
+    "contentSha256": "6df3e5602222c516492d6e4eadaea834c9b687af1ede185118e6625eb10f335e"
   }
 ];
 
@@ -1137,14 +1142,16 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "分成 (4a²+8ab)+(-3a-6b)。",
       "前組提 4a 得 4a(a+2b)，後組提 -3 得 -3(a+2b)。",
-      "所以為 (4a-3)(a+2b)。"
+      "所以為 (4a-3)(a+2b)。",
+      "把前兩項與後兩項分組，前組提出四甲、後組提出負三，兩組都留下甲加二乙；再提出此共同括號得到四甲減三乘甲加二乙。回展時四甲產生前兩項、負三產生後兩項，四個係數與符號完全一致。"
     ],
     "alternativeSolutions": [
       "也可重排為 4a²-3a+8ab-6b，再分成 a(4a-3)+2b(4a-3)。"
     ],
     "reasoningSteps": [
       "兩條合法分組路徑都製造相同括號。",
-      "共同括號可為 a+2b 或 4a-3。"
+      "共同括號可為 a+2b 或 4a-3。",
+      "最後將兩因式展開，逐項核對四甲平方、八甲乙、負三甲與負六乙。"
     ],
     "rubric": [
       {
@@ -1176,7 +1183,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只寫最終答案最高 2 分。",
     "commonErrors": [
       "把 -3a-6b 提成 3(a+2b)。",
-      "分組後停在兩項和。"
+      "分組後停在兩項和。",
+      "第二組負三甲減六乙必須提出負三；若提出正三，括號會成為原括號的相反式。"
     ],
     "independentReview": {
       "derivedResult": "(4a-3)(a+2b)。",
@@ -1186,7 +1194,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "927338ad238187150dabc81405ec8eb0ad056ee3285b95041ec1cdd3223e1e95"
+    "contentSha256": "133188be1bab67c7f548c6c9c28be5af1553b57bd2c1a1d3e15a91cedee8e2fb"
   },
   {
     "questionId": "u12-s004-cr002",
@@ -1208,14 +1216,16 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "分組為 (x²+4x)+(px+4p)。",
       "得到 x(x+4)+p(x+4)=(x+p)(x+4)。",
-      "此推導只用分配律，對所有可運算的 p 成立。"
+      "此推導只用分配律，對所有可運算的 p 成立。",
+      "將前兩項提出未知數得到未知數乘未知數加四，後兩項提出參數也得到參數乘未知數加四；提出共同括號後為未知數加參數乘未知數加四。整個過程只用分配律，沒有除以參數，因此對參數的所有可運算數值都成立。"
     ],
     "alternativeSolutions": [
       "也可重排為 x²+px+4x+4p=x(x+p)+4(x+p)=(x+4)(x+p)。"
     ],
     "reasoningSteps": [
       "兩種分組分別顯示共同 x+4 或 x+p。",
-      "乘法交換律使結果相同。"
+      "乘法交換律使結果相同。",
+      "展開未知數加參數與未知數加四，四項依序回到未知數平方、四倍未知數、參數乘未知數與四倍參數。"
     ],
     "rubric": [
       {
@@ -1257,7 +1267,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3685bebccb2e4ae4d3c008e257af6b38994165458a1d68c8aaf9bdb3a3516a7d"
+    "contentSha256": "c4b2dd9bb9d87a4a2899345babf96aaef18e8b0b10ef918fca97f2ea06af1464"
   }
 ];
 
@@ -1266,7 +1276,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v001",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "aeb8b4f8704844ffbd73dff984b311cf24bc1ce2d8eb97a4be68fd77adb97b1d",
+    "contentSha256": "62f0ff8c8a0de587614d96c34b2d0211e60281f3f9f6d1ff03573fe693cbe4e3",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開回四項完全一致。",
     "derivedAnswer": "(a+b)(x+y)",
@@ -1300,7 +1310,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v002",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "e03020114035996985a9e860ccf13950a2d2123cbedfa42d492c2644c9c17486",
+    "contentSha256": "fe6418f11256de520bfd53645339cbe4d185626b0d64ba00f2182c6ee0043d21",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(x+3)(x+2)=x²+5x+6，與原式合併後相同。",
     "derivedAnswer": "(x+2)(x+3)",
@@ -1334,7 +1344,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v003",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "7870f4ff8838bd7540991c33b708b746b055371f61737ada9f808644b006e927",
+    "contentSha256": "4b73f9a9fa86a201ae63819fcbb8044dd292c02be84460e653a62d72a20ce740",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開得 6m²+4m-9m-6，正是原式。",
     "derivedAnswer": "(2m-3)(3m+2)",
@@ -1368,7 +1378,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v004",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "b2efc6e235afe79063b8dbd4cb764b753ccf689f852027fac77747218de49949",
+    "contentSha256": "190b677e06738c5a0e3e6a284308c5fa9ac286433ba9e2d70be2fa32e7cb6b5e",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(p-2)(q-r)=pq-pr-2q+2r。",
     "derivedAnswer": "(p-2)(q-r)",
@@ -1402,7 +1412,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v005",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "7e4527895e79a7a42ca34545f55e188c0ba5a5b9fd7c1a384be170b35fe8751c",
+    "contentSha256": "0ed1863f4a965688da68dd54731b66205182c78372f2d8660887a10196f389fb",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開為 x²+xy+3x+3y。",
     "derivedAnswer": "(x+3)(x+y)",
@@ -1436,7 +1446,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v006",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "7d244ee1af146eb2317e85246a8d9ede90c66deb59df961fc3941137e8d15675",
+    "contentSha256": "295cc7250132b4c806cc3a830d8219186b631e512e01c0215c5bbd4ae122aa14",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開 (2a-1)(a+3b)=2a²+6ab-a-3b。",
     "derivedAnswer": "(2a-1)(a+3b)",
@@ -1470,7 +1480,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v007",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "4cf98f699cb49f1c09a87da06f2cc497aaafff183e4293e25571f927b303e9ec",
+    "contentSha256": "9ce341da204def7dc5e20d65b80ca9d6837b48f2e54eb9542181d64ed77d9861",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "得到的乘積與原先 (a+3)(x+y) 只差因式順序。",
     "derivedAnswer": "先由前兩項提 x、後兩項提 y，再提出 a+3",
@@ -1504,7 +1514,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v008",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "6060090cff07ce554e7795f9bef127b215a66d48128f5b7af527e0c7b310629f",
+    "contentSha256": "ff0d3d1e132882343b0e122b0f2b1c67b188ced0f384e6dae9159095563f975e",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開 (x+k)(x+4)=x²+4x+kx+4k，任意 k 均吻合。",
     "derivedAnswer": "對所有 k 都成立",
@@ -1538,7 +1548,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v009",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "cd9d891a248333bed7c7cfdd4b4acfe0be9eff1db5893f52f9c2967eec4d0021",
+    "contentSha256": "e13fe5ab9ddf07695d38af18d705c7952c7e3a047227c0ad748607cf39b838e9",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開乘積回到四項。",
     "derivedAnswer": "(3x²+6xy)+(-5x-10y)",
@@ -1572,7 +1582,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v010",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "a8bc086a221322cbe9a8620e56507fb88ca43abe41d3f4cf0fc5a68cc04f0cea",
+    "contentSha256": "651a8c5ce3ce4ad48e70e9fdabb9c4ee8a0ddc737882e8b8c536f0f98a7b041b",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "四區寬分別由 x、y 組成，兩列共享 x+y。",
     "derivedAnswer": "x+y 公尺",
@@ -1606,7 +1616,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v011",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "9e44ccf6535e5a84dd48876a9bec1241bb10fcef79614c343c50de8363827074",
+    "contentSha256": "4905badf9691157c4e02d30e19b02c4daacdca04b0f357e08b9c698cf4fc2dab",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開為 5n²+10n+3n+6。",
     "derivedAnswer": "(5n+3)(n+2)",
@@ -1640,7 +1650,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s004-v012",
     "unitId": "u12",
     "skillId": "factoring-by-grouping",
-    "contentSha256": "931c99291e706003b76e23e8509d3f3a9e49f6aba9c784421e180a3add57354c",
+    "contentSha256": "6df3e5602222c516492d6e4eadaea834c9b687af1ede185118e6625eb10f335e",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開回 2pq+6p-q-3。",
     "derivedAnswer": "(2p-1)(q+3) 元",

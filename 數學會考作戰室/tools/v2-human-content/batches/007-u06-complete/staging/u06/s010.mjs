@@ -136,7 +136,8 @@ export default {
           "共同項 B 的份數 3、4，最小公倍數 12。",
           "2:3 放大 4 倍得 8:12；4:5 放大 3 倍得 12:15。"
         ],
-        "answer": "8:12:15。"
+        "answer": "8:12:15。",
+        "why": "B 在兩個比中分別代表三份與四份，不能直接串接。對齊成十二份後，兩個比都保持原值，合併的八比十二比十五再拆回也正好是二比三與四比五。"
       },
       {
         "exampleId": "L2",
@@ -145,7 +146,8 @@ export default {
           "共同項乙為 6 與 4 份，對齊到 12。",
           "甲:乙=10:12；丙:乙=21:12，所以甲:乙:丙=10:12:21。"
         ],
-        "answer": "10:12:21。"
+        "answer": "10:12:21。",
+        "why": "共同項乙都在後項，對齊後還要依題目指定的甲、乙、丙順序排列。十比十二與二十一比十二分別可化回五比六與七比四，所以順序與比值都正確。"
       },
       {
         "exampleId": "L3",
@@ -154,7 +156,8 @@ export default {
           "Y 的 8 與 2 對齊到 8。",
           "第二比乘 4 得 Y:Z=8:28。"
         ],
-        "answer": "X:Y:Z=3:8:28。"
+        "answer": "X:Y:Z=3:8:28。",
+        "why": "第二個比的 Y 只有兩份，把整個二比七乘四便成八比二十八，可直接接上第一個比。若只把 Y 改成八而留下 Z 為七，就會破壞原本二比七的關係。"
       },
       {
         "exampleId": "L4",
@@ -163,7 +166,8 @@ export default {
           "12:18 化簡為 2:3。",
           "18:25 已最簡，兩個條件皆符合。"
         ],
-        "answer": "符合。"
+        "answer": "符合。",
+        "why": "檢查連比時要按字母取出相應的兩項。前兩項十二比十八化簡為二比三，後兩項十八比二十五保持不變，兩組都符合，才能判定整個連比一致。"
       }
     ],
     "commonMistakes": [
@@ -250,7 +254,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "c3e11b222df171aed18a499665d0dad0e95884474b841da372ca8bd60d2569c8"
+    "contentSha256": "1471c18eb747e676b8b24055b07b071f0411df88a4ca39ad311f1e4a204bbb03"
   },
   "mcQuestions": [
     {
@@ -274,12 +278,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "8:12=2:3，12:15=4:5。",
-      "mainExplanation": "共同項B需在兩比中相同。",
-      "explanation": "共同項B需在兩比中相同。",
+      "mainExplanation": "兩個比中的共同項都是 B，但 B 分別是三份與四份，不能直接接在一起。把 B 對齊為十二份後，第一比成為八比十二，第二比成為十二比十五，所以連比是八比十二比十五。",
+      "explanation": "兩個比中的共同項都是 B，但 B 分別是三份與四份，不能直接接在一起。把 B 對齊為十二份後，第一比成為八比十二，第二比成為十二比十五，所以連比是八比十二比十五。",
       "steps": [
-        "2:3→8:12",
-        "4:5→12:15",
-        "合8:12:15"
+        "辨認共同項 B 的份數分別為三與四。",
+        "以最小公倍數十二對齊，得 A:B=8:12、B:C=12:15。",
+        "合併為 A:B:C=8:12:15，並拆回兩個原比驗算。"
       ],
       "optionAnalysis": [
         {
@@ -303,7 +307,7 @@ export default {
           "reason": "第二比未整體放大。"
         }
       ],
-      "misconceptionTarget": "直接把兩個比接起來。",
+      "misconceptionTarget": "看到共同字母便直接接成二比三比五，沒有先讓 B 的份數一致。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -324,7 +328,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3ebfdd216c81592284c438f9446cc506dc200f1f9b21d263cfa3e8b5b4f03bfe"
+      "contentSha256": "35443a2e1d4823c49ae250619352683b5bdaba87b0df52eddac81a76bf0b3c3a"
     },
     {
       "questionId": "u06-s010-v002",
@@ -347,11 +351,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "6:10=3:5，10:7符合。",
-      "mainExplanation": "第一比3:5變6:10，與第二比合併。",
-      "explanation": "第一比3:5變6:10，與第二比合併。",
+      "mainExplanation": "共同項乙在第一個比中是五份，在第二個比中是十份。把甲比乙三比五整體乘二，得到六比十，再與乙比丙十比七合併，所以甲比乙比丙是六比十比七。",
+      "explanation": "共同項乙在第一個比中是五份，在第二個比中是十份。把甲比乙三比五整體乘二，得到六比十，再與乙比丙十比七合併，所以甲比乙比丙是六比十比七。",
       "steps": [
-        "3:5×2=6:10",
-        "合6:10:7"
+        "找出共同項乙的份數五與十。",
+        "將甲:乙=3:5 整體乘二，改寫成 6:10。",
+        "接上乙:丙=10:7，得到 6:10:7，並拆回驗算。"
       ],
       "optionAnalysis": [
         {
@@ -375,7 +380,7 @@ export default {
           "reason": "乙仍不一致。"
         }
       ],
-      "misconceptionTarget": "只改共同項。",
+      "misconceptionTarget": "只把共同項乙從五改成十，卻沒有把甲的三份同時乘二。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -396,7 +401,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0fa4782275a008a8ae26fc0e10176abeb167b41401e6a2f667c6a977a91caaee"
+      "contentSha256": "18c915f78273af419de67b69a75afa0ec476edd08ada7eb508c13eb91ef2c13a"
     },
     {
       "questionId": "u06-s010-v003",
@@ -419,13 +424,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "先由 X:Y:Z=5:8:12；X 從5份變15，倍率為3，所以 Z=12×3=36。",
-      "mainExplanation": "先把 Y:Z=2:3 同乘4成8:12，得到 X:Y:Z=5:8:12；再用 X=15 求每份是3。",
-      "explanation": "先把 Y:Z=2:3 同乘4成8:12，得到 X:Y:Z=5:8:12；再用 X=15 求每份是3。",
+      "mainExplanation": "先把 Y 比 Z 的二比三整體乘四，改寫成八比十二，便可與 X 比 Y 的五比八合併成五比八比十二。X 的五份等於十五，所以每份是三，Z 的十二份就是三十六。",
+      "explanation": "先把 Y 比 Z 的二比三整體乘四，改寫成八比十二，便可與 X 比 Y 的五比八合併成五比八比十二。X 的五份等於十五，所以每份是三，Z 的十二份就是三十六。",
       "steps": [
-        "把 Y:Z=2:3 化成8:12",
-        "合併為 X:Y:Z=5:8:12",
-        "15÷5=3",
-        "Z=12×3=36"
+        "將 Y:Z=2:3 整體乘四，得到 8:12。",
+        "合併成 X:Y:Z=5:8:12。",
+        "由 X=15 求每份 15÷5=3，再算 Z=12×3=36。"
       ],
       "optionAnalysis": [
         {
@@ -449,7 +453,7 @@ export default {
           "reason": "把 Y=8份直接乘5，未依 X=15 求正確倍率。"
         }
       ],
-      "misconceptionTarget": "只完成共同比對齊，卻不再依已知實際量縮放。",
+      "misconceptionTarget": "完成共同項對齊後便把十二當成答案，沒有再依 X 的實際值求倍率。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -470,7 +474,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "819d4d404ea2a7b59c5500bedc7d5250fdef68cac5e5261f197ad7c084fd7af0"
+      "contentSha256": "7d4d3e7a9d5be201da0cad9c1ba9e39763a6b06475427f35ad21b4837b742725"
     },
     {
       "questionId": "u06-s010-v004",
@@ -493,12 +497,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "10:12=5:6，21:12=7:4。",
-      "mainExplanation": "注意第二比是丙:乙，合併時要按甲:乙:丙排列。",
-      "explanation": "注意第二比是丙:乙，合併時要按甲:乙:丙排列。",
+      "mainExplanation": "第二個比寫成丙比乙，所以共同項乙位在後項。把乙的六份與四份對齊為十二份，可得甲比乙十比十二、丙比乙二十一比十二；依甲、乙、丙順序排列為十比十二比二十一。",
+      "explanation": "第二個比寫成丙比乙，所以共同項乙位在後項。把乙的六份與四份對齊為十二份，可得甲比乙十比十二、丙比乙二十一比十二；依甲、乙、丙順序排列為十比十二比二十一。",
       "steps": [
-        "甲:乙=10:12",
-        "丙:乙=21:12",
-        "合10:12:21"
+        "確認共同項乙在第一比後項、第二比後項。",
+        "對齊乙為十二份，得甲:乙=10:12、丙:乙=21:12。",
+        "按甲:乙:丙順序寫成 10:12:21，並還原兩個原比。"
       ],
       "optionAnalysis": [
         {
@@ -522,7 +526,7 @@ export default {
           "reason": "乙份數6與4對齊到12；甲乙乘2，丙乙乘3。"
         }
       ],
-      "misconceptionTarget": "忽略共同項在第二比的後項。",
+      "misconceptionTarget": "忽略丙比乙的項次，直接把七放到乙的位置或將三量順序排錯。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -543,7 +547,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3430868da78a061125f556d9cd5fa5347ff28626f586338d9b95e3d4c5e9fab7"
+      "contentSha256": "75388593d5f7c4a2559aee1ce38376514d91dc95bb106569e63e40c6619a52c5"
     },
     {
       "questionId": "u06-s010-v005",
@@ -566,12 +570,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "2:3放大6倍回12:18。",
-      "mainExplanation": "連比可抽出對應兩項化簡。",
-      "explanation": "連比可抽出對應兩項化簡。",
+      "mainExplanation": "從連比十二比十八比二十五中取 A 與 B 對應的前兩項，得到十二比十八。兩項同除以最大公因數六，化為二比三；第三項二十五與本題所問的 A 比 B 無關。",
+      "explanation": "從連比十二比十八比二十五中取 A 與 B 對應的前兩項，得到十二比十八。兩項同除以最大公因數六，化為二比三；第三項二十五與本題所問的 A 比 B 無關。",
       "steps": [
-        "12:18",
-        "同除6",
-        "2:3"
+        "依 A:B:C 順序取出 A 與 B 的份數 12:18。",
+        "求十二與十八的最大公因數六。",
+        "前後項同除以六，得到最簡比 2:3。"
       ],
       "optionAnalysis": [
         {
@@ -595,7 +599,7 @@ export default {
           "reason": "把所求比的前後項顛倒，形成原比例的倒比。"
         }
       ],
-      "misconceptionTarget": "取錯項或順序。",
+      "misconceptionTarget": "取成 A 與 C 的十二比二十五，或化簡時顛倒 A、B 的先後順序。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -616,7 +620,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "dac003e8d4c7cd6036020a81a68a2c25a9db719f89853110fd3ba54965e2879a"
+      "contentSha256": "c2ed95a1de02fe42395ef8b7ff3888190f5c8b6a105a04dd9ab7f62ea6421a0d"
     },
     {
       "questionId": "u06-s010-v006",
@@ -639,11 +643,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "A=20、B=35、C=45。",
-      "mainExplanation": "以共同份量求指定項。",
-      "explanation": "以共同份量求指定項。",
+      "mainExplanation": "連比中 B 對應七份，已知 B 是三十五，所以每份為三十五除以七，等於五。C 對應九份，因此 C 是九乘五，等於四十五；A 則為二十，可一併回查三量倍率相同。",
+      "explanation": "連比中 B 對應七份，已知 B 是三十五，所以每份為三十五除以七，等於五。C 對應九份，因此 C 是九乘五，等於四十五；A 則為二十，可一併回查三量倍率相同。",
       "steps": [
-        "35/7=5",
-        "9×5=45"
+        "辨認 B 在 4:7:9 中對應七份。",
+        "求每份 35÷7=5。",
+        "計算 C=9×5=45，並以 B:C=35:45=7:9 驗算。"
       ],
       "optionAnalysis": [
         {
@@ -667,7 +672,7 @@ export default {
           "reason": "7份是35，每份5，C=9×5=45。"
         }
       ],
-      "misconceptionTarget": "用總份數求每份。",
+      "misconceptionTarget": "用三量總份數二十去除三十五，誤把已知的 B 當成三量總和。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -688,7 +693,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e5d1d6b763ae232f99478b8633c9bdf5b931db0662d0fd87a0d6a6a3eeaffadf"
+      "contentSha256": "306f3c4bff62e50f31c4a5e05f3e1dc205f02b4fcdbceeabd901c4e62527a80a"
     },
     {
       "questionId": "u06-s010-v007",
@@ -711,12 +716,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "12:27=4:9，12:10=6:5。",
-      "mainExplanation": "共同項位於兩比前項，也要對齊。",
-      "explanation": "共同項位於兩比前項，也要對齊。",
+      "mainExplanation": "共同項 A 位在兩個比的前項，仍須先對齊。四與六的最小公倍數是十二，所以 A 比 B 四比九放大三倍成十二比二十七，A 比 C 六比五放大二倍成十二比十，合為十二比二十七比十。",
+      "explanation": "共同項 A 位在兩個比的前項，仍須先對齊。四與六的最小公倍數是十二，所以 A 比 B 四比九放大三倍成十二比二十七，A 比 C 六比五放大二倍成十二比十，合為十二比二十七比十。",
       "steps": [
-        "lcm(4,6)=12",
-        "A:B=12:27",
-        "A:C=12:10"
+        "辨認共同項 A 的份數四與六，最小公倍數為十二。",
+        "把 A:B 放大成 12:27，把 A:C 放大成 12:10。",
+        "依 A:B:C 排列成 12:27:10，再拆回驗算。"
       ],
       "optionAnalysis": [
         {
@@ -740,7 +745,7 @@ export default {
           "reason": "B未隨A放大。"
         }
       ],
-      "misconceptionTarget": "只會處理共同項在中間。",
+      "misconceptionTarget": "以為共同項只能位在第一比後項，未將兩個比前項的 A 對齊。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -761,7 +766,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3cebff350f5dc37d935b6aadc1648b099f8f44047ffbc452c5bd40e380180fb4"
+      "contentSha256": "e565f7fa57da6319f4e6d51d7db5f458948438b7da44411184b7aa30f41664b7"
     },
     {
       "questionId": "u06-s010-v008",
@@ -772,50 +777,48 @@ export default {
       "difficulty": "advanced",
       "itemType": "multiple-choice",
       "type": "mc",
-      "prompt": "A:B=2:5，C:B=3:4。若 A+B+C=86，A為何？",
-      "text": "A:B=2:5，C:B=3:4。若 A+B+C=86，A為何？",
-      "givenConditions": "三量皆為正且構成總量。",
-      "target": "連比與總量整合",
+      "prompt": "同學把 A:B=3:4、C:B=5:8 直接寫成 A:B:C=3:4:5。下列修正何者正確？",
+      "text": "同學把 A:B=3:4、C:B=5:8 直接寫成 A:B:C=3:4:5。下列修正何者正確？",
+      "givenConditions": "A:B=3:4，C:B=5:8；要求依 A:B:C 排列。",
+      "target": "診斷共同項未對齊並選出正確連比",
       "choices": [
-        "12",
-        "20",
-        "16",
-        "30"
+        "保留 3:4:5，因三個字母都已出現",
+        "只把 B 改成 8 份，寫成 3:8:5",
+        "把 B 對齊成 8 份，寫成 6:8:5",
+        "依 C:B 排列，寫成 6:5:8"
       ],
       "answerIndex": 2,
-      "independentSolution": "16+40+30=86，且16:40=2:5、30:40=3:4。",
-      "mainExplanation": "先對齊共同項，再用總份數求單位份量。",
-      "explanation": "先對齊共同項，再用總份數求單位份量。",
+      "independentSolution": "A:B=3:4 整體乘二得 6:8；C:B=5:8 已對齊，所以依 A:B:C 排列為 6:8:5。",
+      "mainExplanation": "共同項 B 在兩個比中分別是四份與八份，必須先調成相同。把 A 比 B 三比四整體乘二得六比八，另一個 C 比 B 已是五比八；依 A、B、C 排列便得到六比八比五。",
+      "explanation": "共同項 B 在兩個比中分別是四份與八份，必須先調成相同。把 A 比 B 三比四整體乘二得六比八，另一個 C 比 B 已是五比八；依 A、B、C 排列便得到六比八比五。",
       "steps": [
-        "A:B=8:20",
-        "C:B=15:20",
-        "A:B:C=8:20:15",
-        "每份2",
-        "A=16"
+        "指出原寫法中的 B 同時被當成四份與八份，份數不一致。",
+        "將 A:B=3:4 整體乘二，得到 6:8。",
+        "與 C:B=5:8 合併並按 A:B:C 排列，得到 6:8:5。"
       ],
       "optionAnalysis": [
         {
-          "choice": "12",
+          "choice": "保留 3:4:5，因三個字母都已出現",
           "truth": false,
-          "reason": "12對應每份1.5。"
+          "reason": "字母雖齊全，但 B 在兩個原比中不是同一份數，不能直接接合。"
         },
         {
-          "choice": "20",
+          "choice": "只把 B 改成 8 份，寫成 3:8:5",
           "truth": false,
-          "reason": "20是B的一半但不是A。"
+          "reason": "把 B 乘二時 A 也必須乘二，只改共同項會破壞 A:B=3:4。"
         },
         {
-          "choice": "16",
+          "choice": "把 B 對齊成 8 份，寫成 6:8:5",
           "truth": true,
-          "reason": "B份數5與4對齊20；A:B:C=8:20:15，共43份。86÷43=2，A=16。"
+          "reason": "6:8 化簡為3:4，且 C:B=5:8，兩個原比都能還原。"
         },
         {
-          "choice": "30",
+          "choice": "依 C:B 排列，寫成 6:5:8",
           "truth": false,
-          "reason": "30是C。"
+          "reason": "題目要求 A:B:C，不能把 C 與 B 的位置互換。"
         }
       ],
-      "misconceptionTarget": "未檢查總量是否對應總份數。",
+      "misconceptionTarget": "只看到三個字母便直接串接，或只改共同項而沒有將整個比等比例放大。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -823,10 +826,10 @@ export default {
         "evidence": "本題只使用已鎖定前置技能 ['ratio-word-problem'] 與本技能定義；解法未引用後續單元技巧。"
       },
       "estimatedTimeSec": 135,
-      "unitCheck": "無單位。",
-      "roundingCheck": "無近似。",
-      "ambiguityBoundaryAudit": "86正好是43份的2倍。",
-      "difficultyReason": "進階一致性與分配。",
+      "unitCheck": "本題只比較無單位份數。",
+      "roundingCheck": "全為精確整數比，不需近似。",
+      "ambiguityBoundaryAudit": "題目明定 C:B 的順序與輸出 A:B:C 的順序。",
+      "difficultyReason": "需先診斷錯誤連比，再處理共同項位於兩比後項的排列。",
       "literacyContextNecessity": null,
       "visualMode": "text-only",
       "figureId": null,
@@ -836,7 +839,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e860370070c589c6ac32adc1bb94644302f8a951a5b84d67b87909ece164401d"
+      "contentSha256": "258474de4b4df0dd174b4a06749f1a2940116d8f26d25cba60fa3e3b2b00a79f"
     },
     {
       "questionId": "u06-s010-v009",
@@ -847,49 +850,48 @@ export default {
       "difficulty": "advanced",
       "itemType": "multiple-choice",
       "type": "mc",
-      "prompt": "甲:乙=3:4，乙:丙=6:5。若甲比丙少 7，乙為何？",
-      "text": "甲:乙=3:4，乙:丙=6:5。若甲比丙少 7，乙為何？",
-      "givenConditions": "三量為正。",
-      "target": "連比差量反推",
+      "prompt": "把甲:乙=2:7 與乙:丙=14:3 合併後，再拆回兩個原比檢查。哪個連比通過檢查？",
+      "text": "把甲:乙=2:7 與乙:丙=14:3 合併後，再拆回兩個原比檢查。哪個連比通過檢查？",
+      "givenConditions": "甲:乙=2:7，乙:丙=14:3；輸出順序為甲:乙:丙。",
+      "target": "以共同項對齊與拆回驗算辨認連比",
       "choices": [
-        "42",
-        "63",
-        "70",
-        "84"
+        "2:7:3",
+        "2:14:3",
+        "4:7:3",
+        "4:14:3"
       ],
       "answerIndex": 3,
-      "independentSolution": "甲63、乙84、丙70，甲比丙少7。",
-      "mainExplanation": "共同項乙對齊後，用甲丙的份數差求每份。",
-      "explanation": "共同項乙對齊後，用甲丙的份數差求每份。",
+      "independentSolution": "乙的七份與十四份對齊為十四份，甲:乙=4:14；接上乙:丙=14:3，得 4:14:3。",
+      "mainExplanation": "共同項乙在兩個比中是七份與十四份。把甲比乙二比七整體乘二得四比十四，再接上乙比丙十四比三，得到四比十四比三；拆回後四比十四化簡為二比七，另一比也完全相符。",
+      "explanation": "共同項乙在兩個比中是七份與十四份。把甲比乙二比七整體乘二得四比十四，再接上乙比丙十四比三，得到四比十四比三；拆回後四比十四化簡為二比七，另一比也完全相符。",
       "steps": [
-        "3:4×3=9:12",
-        "6:5×2=12:10",
-        "每份7",
-        "乙=12×7=84"
+        "找出乙的份數七與十四，決定對齊為十四份。",
+        "把甲:乙=2:7 整體乘二，得到 4:14。",
+        "合併成 4:14:3，再拆回 4:14=2:7 與 14:3 驗算。"
       ],
       "optionAnalysis": [
         {
-          "choice": "42",
+          "choice": "2:7:3",
           "truth": false,
-          "reason": "把乙當6份。"
+          "reason": "乙為七份時，乙比丙七比三不等於十四比三。"
         },
         {
-          "choice": "63",
+          "choice": "2:14:3",
           "truth": false,
-          "reason": "63是甲。"
+          "reason": "乙改為十四份時甲仍留二份，會破壞甲比乙二比七。"
         },
         {
-          "choice": "70",
+          "choice": "4:7:3",
           "truth": false,
-          "reason": "70是丙。"
+          "reason": "四比七不等於二比七，且乙仍未與十四份對齊。"
         },
         {
-          "choice": "84",
+          "choice": "4:14:3",
           "truth": true,
-          "reason": "對齊得甲:乙:丙=9:12:10；丙比甲多1份=7，所以乙12份=84。"
+          "reason": "四比十四化簡為二比七，十四比三也符合第二個原比。"
         }
       ],
-      "misconceptionTarget": "未對齊共同項或把差量對應錯份數。",
+      "misconceptionTarget": "合併後不拆回兩個原比檢查，因而沒有發現共同項或非共同項只改一邊。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -897,10 +899,10 @@ export default {
         "evidence": "本題只使用已鎖定前置技能 ['ratio-word-problem'] 與本技能定義；解法未引用後續單元技巧。"
       },
       "estimatedTimeSec": 135,
-      "unitCheck": "無單位。",
-      "roundingCheck": "無近似。",
-      "ambiguityBoundaryAudit": "甲與丙只差1份，資料唯一決定每份。",
-      "difficultyReason": "高階多條件。",
+      "unitCheck": "本題只比較無單位份數。",
+      "roundingCheck": "全為精確整數比，不需近似。",
+      "ambiguityBoundaryAudit": "兩個原比及甲、乙、丙的輸出順序均已明示。",
+      "difficultyReason": "須完成對齊，並以拆回驗算排除三個看似接近的連比。",
       "literacyContextNecessity": null,
       "visualMode": "text-only",
       "figureId": null,
@@ -910,7 +912,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "da5a5338738f1b4794e249a1f899ccac1815c6ba3fd90e656a44079200061160"
+      "contentSha256": "a3070a2f05fa0c27a679ce59852c97339089381f30e081ae5f2171ff026a5dc8"
     },
     {
       "questionId": "u06-s010-v010",
@@ -921,48 +923,48 @@ export default {
       "difficulty": "literacy",
       "itemType": "multiple-choice",
       "type": "mc",
-      "prompt": "食譜中麵粉:糖=5:2，糖:奶油=4:3。若奶油用 180 公克，麵粉需多少？",
-      "text": "食譜中麵粉:糖=5:2，糖:奶油=4:3。若奶油用 180 公克，麵粉需多少？",
-      "givenConditions": "配方比例固定。",
-      "target": "配方共同項應用",
+      "prompt": "飲料標示濃縮汁:水=1:4，水:冰塊=8:3。只依標示關係，濃縮汁:水:冰塊應寫成何者？",
+      "text": "飲料標示濃縮汁:水=1:4，水:冰塊=8:3。只依標示關係，濃縮汁:水:冰塊應寫成何者？",
+      "givenConditions": "兩個標示中的水是同一批飲料內的相同量。",
+      "target": "讀取標示並對齊共同項水",
       "choices": [
-        "300公克",
-        "450公克",
-        "600公克",
-        "750公克"
+        "1:4:3",
+        "2:4:3",
+        "2:8:3",
+        "2:8:6"
       ],
       "answerIndex": 2,
-      "independentSolution": "糖240，5:2=600:240；4:3=240:180。",
-      "mainExplanation": "兩段配方共同項糖需對齊。",
-      "explanation": "兩段配方共同項糖需對齊。",
+      "independentSolution": "水的四份與八份對齊為八份，濃縮汁:水=2:8；接上水:冰塊=8:3，得 2:8:3。",
+      "mainExplanation": "共同項水在第一個標示中是四份，在第二個標示中是八份。把濃縮汁比水一比四整體乘二，得到二比八，再接上水比冰塊八比三，所以正確連比是二比八比三。",
+      "explanation": "共同項水在第一個標示中是四份，在第二個標示中是八份。把濃縮汁比水一比四整體乘二，得到二比八，再接上水比冰塊八比三，所以正確連比是二比八比三。",
       "steps": [
-        "5:2×2=10:4",
-        "奶油3份=180",
-        "麵粉10份=600"
+        "確認兩個標示的共同項都是同一批飲料中的水。",
+        "把濃縮汁:水=1:4 整體乘二，得到 2:8。",
+        "接上水:冰塊=8:3，寫成 2:8:3 並拆回檢查。"
       ],
       "optionAnalysis": [
         {
-          "choice": "300公克",
+          "choice": "1:4:3",
           "truth": false,
-          "reason": "只用5/3。"
+          "reason": "水四份尚未與第二個比的水八份對齊。"
         },
         {
-          "choice": "450公克",
+          "choice": "2:4:3",
           "truth": false,
-          "reason": "把每份45。"
+          "reason": "濃縮汁比水二比四化簡為一比二，不符合一比四。"
         },
         {
-          "choice": "600公克",
+          "choice": "2:8:3",
           "truth": true,
-          "reason": "糖份數2與4對齊4；麵粉:糖:奶油=10:4:3。奶油3份180，每份60，麵粉600。"
+          "reason": "二比八化簡為一比四，八比三也符合第二個標示。"
         },
         {
-          "choice": "750公克",
+          "choice": "2:8:6",
           "truth": false,
-          "reason": "把奶油當2份。"
+          "reason": "水比冰塊八比六化簡為四比三，不符合八比三。"
         }
       ],
-      "misconceptionTarget": "直接把5:2:3相接。",
+      "misconceptionTarget": "把飲料標示中的兩個比直接串接，沒有把共同項水的份數先調成一致。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -970,11 +972,11 @@ export default {
         "evidence": "本題只使用已鎖定前置技能 ['ratio-word-problem'] 與本技能定義；解法未引用後續單元技巧。"
       },
       "estimatedTimeSec": 110,
-      "unitCheck": "公克。",
-      "roundingCheck": "無近似。",
-      "ambiguityBoundaryAudit": "三種材料角色明確。",
-      "difficultyReason": "生活連比預備。",
-      "literacyContextNecessity": "共享糖量連接兩個配方比，情境不可移除。",
+      "unitCheck": "三項都以相同容量單位比較。",
+      "roundingCheck": "標示為精確整數比，不需近似。",
+      "ambiguityBoundaryAudit": "題幹明定兩個水量來自同一批飲料，語意可合併。",
+      "difficultyReason": "需把生活標示翻成同一份量基準並完成拆回檢查。",
+      "literacyContextNecessity": "飲料標示分別提供兩組成分比，必須確認共同成分水是同一量後才能合併。",
       "visualMode": "text-only",
       "figureId": null,
       "drawingSpecRef": null,
@@ -983,7 +985,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7bb8bed56bca61934f5ea7c99c33380cf8b533d6eabb7d4f36808e24ce725599"
+      "contentSha256": "fc086eec16686cb471dd31aca43bce660def633f78a80e720d5155b83c9c215d"
     },
     {
       "questionId": "u06-s010-v011",
@@ -994,49 +996,48 @@ export default {
       "difficulty": "literacy",
       "itemType": "multiple-choice",
       "type": "mc",
-      "prompt": "三班回收量關係為甲:乙=7:9、乙:丙=3:5。若甲 42 公斤，丙多少公斤？",
-      "text": "三班回收量關係為甲:乙=7:9、乙:丙=3:5。若甲 42 公斤，丙多少公斤？",
-      "givenConditions": "同一統計期間與同一重量單位。",
-      "target": "回收資料的兩段比",
+      "prompt": "校隊公告記錄七年級:八年級=2:3、八年級:九年級=9:4。改寫成同一份量基準時，七年級:八年級:九年級為何？",
+      "text": "校隊公告記錄七年級:八年級=2:3、八年級:九年級=9:4。改寫成同一份量基準時，七年級:八年級:九年級為何？",
+      "givenConditions": "兩組比來自同一份校隊公告，八年級指同一群學生。",
+      "target": "把分開記錄的年級比對齊為三項比",
       "choices": [
-        "90公斤",
-        "54公斤",
-        "70公斤",
-        "105公斤"
+        "6:9:4",
+        "2:3:4",
+        "6:3:4",
+        "6:9:12"
       ],
       "answerIndex": 0,
-      "independentSolution": "乙54；54:90=3:5。",
-      "mainExplanation": "先合併，再由甲求單位份量。",
-      "explanation": "先合併，再由甲求單位份量。",
+      "independentSolution": "八年級的三份與九份對齊為九份，七年級:八年級=6:9；接上 9:4，得 6:9:4。",
+      "mainExplanation": "八年級是兩組記錄的共同項，份數分別為三與九。把七年級比八年級二比三整體乘三，得到六比九，再接上八年級比九年級九比四，所以三年級連比是六比九比四。",
+      "explanation": "八年級是兩組記錄的共同項，份數分別為三與九。把七年級比八年級二比三整體乘三，得到六比九，再接上八年級比九年級九比四，所以三年級連比是六比九比四。",
       "steps": [
-        "乙:丙=9:15",
-        "合7:9:15",
-        "每份6",
-        "丙90"
+        "確認共同項八年級指同一群學生，份數為三與九。",
+        "將七年級:八年級=2:3 整體乘三，得 6:9。",
+        "接上八年級:九年級=9:4，得到 6:9:4 並拆回驗算。"
       ],
       "optionAnalysis": [
         {
-          "choice": "90公斤",
+          "choice": "6:9:4",
           "truth": true,
-          "reason": "乙9與3對齊9，甲:乙:丙=7:9:15；甲7份42，每份6，丙90。"
+          "reason": "六比九化簡為二比三，九比四也符合公告第二組比。"
         },
         {
-          "choice": "54公斤",
+          "choice": "2:3:4",
           "truth": false,
-          "reason": "54是乙。"
+          "reason": "八年級比九年級三比四不等於九比四。"
         },
         {
-          "choice": "70公斤",
+          "choice": "6:3:4",
           "truth": false,
-          "reason": "丙份數誤作約11.67。"
+          "reason": "七年級比八年級六比三不等於二比三。"
         },
         {
-          "choice": "105公斤",
+          "choice": "6:9:12",
           "truth": false,
-          "reason": "把丙當17.5份。"
+          "reason": "八年級比九年級九比十二化簡為三比四。"
         }
       ],
-      "misconceptionTarget": "把乙公斤數當丙。",
+      "misconceptionTarget": "只把兩組年級比依序接在一起，沒有先確認八年級的份數三與九一致。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -1044,11 +1045,11 @@ export default {
         "evidence": "本題只使用已鎖定前置技能 ['ratio-word-problem'] 與本技能定義；解法未引用後續單元技巧。"
       },
       "estimatedTimeSec": 105,
-      "unitCheck": "公斤。",
-      "roundingCheck": "無近似。",
-      "ambiguityBoundaryAudit": "三班資料可直接比較。",
-      "difficultyReason": "情境合併。",
-      "literacyContextNecessity": "同期間與同單位使兩個比可透過乙合併。",
+      "unitCheck": "三項皆代表同一公告中的學生人數。",
+      "roundingCheck": "人數關係以精確整數比表示。",
+      "ambiguityBoundaryAudit": "公告來源與八年級共同群體均已明示。",
+      "difficultyReason": "需讀懂分開記錄的年級關係，再對齊共同年級。",
+      "literacyContextNecessity": "公告把三個年級拆成兩組比，讀者須確認共同年級同源後才能合併。",
       "visualMode": "text-only",
       "figureId": null,
       "drawingSpecRef": null,
@@ -1057,7 +1058,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f04707289e831398857bb437f5c29538a0c1d76fa09fe2a58ff3ae9286619a08"
+      "contentSha256": "5537d02b32d4afc1709c3e79d1936ab6307534a7d1f3c2c40ce3d07011abcc1d"
     },
     {
       "questionId": "u06-s010-v012",
@@ -1080,12 +1081,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "缺少跨年變化資訊，無法建立唯一連比。",
-      "mainExplanation": "數學上對齊份數前要審查資料一致性。",
-      "explanation": "數學上對齊份數前要審查資料一致性。",
+      "mainExplanation": "連比對齊的共同項必須代表同一時點、同一口徑的量。兩個比中的乙區雖然名稱相同，卻來自不同年份；若不知道乙區跨年的變化，就不能把兩個乙區數值當同一份量，因此無法建立唯一連比。",
+      "explanation": "連比對齊的共同項必須代表同一時點、同一口徑的量。兩個比中的乙區雖然名稱相同，卻來自不同年份；若不知道乙區跨年的變化，就不能把兩個乙區數值當同一份量，因此無法建立唯一連比。",
       "steps": [
-        "檢查共同項語意",
-        "年份不同",
-        "拒絕合併"
+        "先辨認兩組比的共同名稱都是乙區。",
+        "檢查資料時點，發現兩個乙區來自不同年份。",
+        "因缺少跨年換算資訊，拒絕直接合併成甲:乙:丙。"
       ],
       "optionAnalysis": [
         {
@@ -1109,7 +1110,7 @@ export default {
           "reason": "連比本身可以含三項。"
         }
       ],
-      "misconceptionTarget": "只看名稱相同就當共同項相同。",
+      "misconceptionTarget": "只看共同項名稱相同便直接對齊，忽略資料年份與統計口徑並不一致。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-word-problem"
@@ -1130,7 +1131,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e8893501295f43825ae7705765aafdb482d0d40ec4d20f62d05d7be00605e1b4"
+      "contentSha256": "7586bb3dc9d08b4483311c62cf94e574f91ea41141c07c7558eddbe3457c0f22"
     }
   ],
   "constructedResponses": [
@@ -1151,19 +1152,18 @@ export default {
         "拆回驗算。"
       ],
       "fullCreditSolution": [
-        "乙份數7與6的最小公倍數為42。",
-        "甲:乙=24:42；乙:丙=42:35。",
-        "所以甲:乙:丙=24:42:35。",
-        "24:42=4:7，42:35=6:5。"
+        "共同項乙在兩個比中分別是七份與六份，最小公倍數為四十二份。",
+        "將甲:乙=4:7 整體乘六，得到 24:42；將乙:丙=6:5 整體乘七，得到 42:35。",
+        "依甲、乙、丙順序合併，得到甲:乙:丙=24:42:35。",
+        "拆回驗算：24:42 同除六為 4:7，42:35 同除七為 6:5，兩個原比都成立。"
       ],
       "alternativeSolutions": [
         "可令乙=42k，直接得到甲=24k、丙=35k。"
       ],
       "reasoningSteps": [
-        "乙份數7與6的最小公倍數為42。",
-        "甲:乙=24:42；乙:丙=42:35。",
-        "所以甲:乙:丙=24:42:35。",
-        "24:42=4:7，42:35=6:5。"
+        "找共同項乙的兩個份數，取最小公倍數四十二。",
+        "將兩個比各自整體放大，使乙都成四十二份。",
+        "合併後依序排列，再拆回原比完成驗算。"
       ],
       "rubric": [
         {
@@ -1190,9 +1190,9 @@ export default {
       "unitNotationRules": "無單位，冒號順序甲:乙:丙。",
       "answerOnlyPolicy": "只寫24:42:35最多2分。",
       "commonErrors": [
-        "共同項相乘但只改一項。",
-        "丙與甲位置交換。",
-        "未驗算。"
+        "只把共同項乙改成四十二，沒有同步放大同一比的另一項。",
+        "合併時把甲、乙、丙位置交換，得到不符合題目順序的連比。",
+        "寫出連比後沒有拆回驗算，因而未發現放大倍率或排列錯誤。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1207,7 +1207,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b9d37bef4780e522aa295f4b425dcab42d178c635820ed0c67adf9327a50217b"
+      "contentSha256": "2e6415ee56e2a33bcbd7f640669f72af7a0b869fd2111a02042c6ffdaaaf4b9a"
     },
     {
       "questionId": "u06-s010-cr002",
@@ -1218,72 +1218,71 @@ export default {
       "difficulty": "advanced",
       "itemType": "constructed-response",
       "type": "constructed-response",
-      "prompt": "甲:乙=3:5，丙:乙=7:4，且甲+乙+丙=215。求三量。",
-      "target": "連比總量的非整數份量",
+      "prompt": "同學把 A:B=3:4、C:B=5:6 直接寫成 A:B:C=3:4:5。請指出問題，依 A:B:C 順序改正，並拆回兩個原比驗算。",
+      "target": "診斷共同項未對齊，改正連比並驗算",
       "requiredWork": [
-        "按甲:乙:丙順序對齊共同項。",
-        "求總份數與每份。",
-        "求三量並驗算兩原比。"
+        "指出 B 在兩個原比中的份數不同，不能直接串接。",
+        "把共同項 B 對齊後依 A:B:C 排列。",
+        "拆回 A:B 與 C:B，分別化簡驗算。"
       ],
       "fullCreditSolution": [
-        "乙份數5與4對齊20。",
-        "甲:乙=12:20；丙:乙=35:20，所以甲:乙:丙=12:20:35。",
-        "總67份，215÷67不是整數，為215/67每份。",
-        "甲=2580/67、乙=4300/67、丙=7525/67。"
+        "原寫法把同一個 B 同時當成四份與六份，份數不一致，因此 3:4:5 不能代表兩個原比。",
+        "四與六的最小公倍數是十二。將 A:B=3:4 整體乘三得 9:12；將 C:B=5:6 整體乘二得 10:12。",
+        "依 A:B:C 順序排列，正確連比為 9:12:10。",
+        "拆回驗算：A:B=9:12=3:4；C:B=10:12=5:6，兩個條件都成立。"
       ],
       "alternativeSolutions": [
-        "若題意期待整數量，應指出215與67不整除；但一般數量可用分數表示。"
+        "也可先任取 B 的共同倍數二十四，得 18:24:20，再將三項同除二，化為 9:12:10。"
       ],
       "reasoningSteps": [
-        "乙份數5與4對齊20。",
-        "甲:乙=12:20；丙:乙=35:20，所以甲:乙:丙=12:20:35。",
-        "總67份，215÷67不是整數，為215/67每份。",
-        "甲=2580/67、乙=4300/67、丙=7525/67。"
+        "比較 B 在兩比中的四份與六份，說明原連比的矛盾。",
+        "以最小公倍數十二對齊 B，並將兩個比各自整體放大。",
+        "按 A:B:C 排列後，拆回 A:B 與 C:B 驗證。"
       ],
       "rubric": [
         {
           "score": 3,
-          "criteria": "正確對齊12:20:35，指出總67份並給出三個精確分數量。"
+          "criteria": "清楚指出共同項不一致，正確求得 9:12:10，並完整拆回兩個原比驗算。"
         },
         {
           "score": 2,
-          "criteria": "連比與每份215/67正確，但漏寫一個量或驗算。"
+          "criteria": "對齊與答案正確，但錯誤說明或其中一個拆回驗算不完整。"
         },
         {
           "score": 1,
-          "criteria": "正確得到12:20:35，但誤認每份為整數或除法錯。"
+          "criteria": "知道要對齊共同項並有合理計算，但連比排列或倍率有一處錯誤。"
         },
         {
           "score": 0,
-          "criteria": "直接接比或強行把215分成12、20、35。"
+          "criteria": "仍直接串接成 3:4:5，或作答與共同項對齊無關。"
         }
       ],
       "partialCreditRules": [
-        "指出『若要求整數，資料不合』是加強說明，不取代求一般量。",
-        "接受帶分數或小數近似，但需保留足夠精度。"
+        "若使用二十四等非最小共同倍數，只要最後得到等值連比並驗算，仍可給滿分。",
+        "答案三項為等比例放大的 9:12:10 時視為同一連比，不因未化到最小而扣分。"
       ],
-      "followThroughPolicy": "若對齊正確但215÷67算錯，後續依錯誤每份一致可給1分；若發現不整除並停在各量為比例倍數，最多2分。",
-      "unitNotationRules": "無特定單位；精確分數優先。",
-      "answerOnlyPolicy": "只寫12:20:35不是回答實際三量，最多1分。",
+      "followThroughPolicy": "若對齊時有單一算術錯誤，但後續依自得連比一致拆回檢查，可依正確方法給部分分。",
+      "unitNotationRules": "A、B、C 為無單位份數，冒號順序必須維持 A:B:C。",
+      "answerOnlyPolicy": "只寫 9:12:10 而未指出原錯誤及拆回驗算，不給完整作答分。",
       "commonErrors": [
-        "把總份數寫55。",
-        "要求整數就判無解。",
-        "丙:乙順序誤排。"
+        "看到 A、B、C 都出現便直接串成三比四比五，忽略 B 份數不同。",
+        "只把 B 改成十二，沒有將 A 或 C 按同一倍率放大。",
+        "把 C:B=10:12 排成 B:C=10:12，導致最後兩項順序顛倒。"
       ],
       "visualMode": "text-only",
       "figureId": null,
       "drawingSpecRef": null,
       "independentReview": {
-        "derivedResult": "甲2580/67、乙4300/67、丙7525/67。",
-        "ambiguity": "一般量允許分數；題目未稱人數或整件。",
-        "scope": "U06 locked skill only; no future-unit method required.",
+        "derivedResult": "共同項 B 對齊十二份後，A:B:C=9:12:10，拆回兩個原比均成立。",
+        "ambiguity": "題幹明示兩個原比與輸出順序，錯誤診斷及驗算要求皆唯一。",
+        "scope": "只處理簡單三量的共同項對齊與拆回驗算，未進入總量、差量或實際分配。",
         "decision": "pass",
-        "reviewedAt": "2026-07-12"
+        "reviewedAt": "2026-07-16"
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "a33b4deebf3d30bf9b5d795297de4aedd03d3e3a8f2e3fcb947bf3b72f80a958"
+      "contentSha256": "57958e3adaf105c5cd85ccd9df86909177398c864d26a33b3afd3cc573efa3f8"
     }
   ],
   "semanticReviews": [
@@ -1292,7 +1291,7 @@ export default {
       "questionId": "u06-s010-v001",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "3ebfdd216c81592284c438f9446cc506dc200f1f9b21d263cfa3e8b5b4f03bfe",
+      "contentSha256": "35443a2e1d4823c49ae250619352683b5bdaba87b0df52eddac81a76bf0b3c3a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1329,7 +1328,7 @@ export default {
       "questionId": "u06-s010-v002",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "0fa4782275a008a8ae26fc0e10176abeb167b41401e6a2f667c6a977a91caaee",
+      "contentSha256": "18c915f78273af419de67b69a75afa0ec476edd08ada7eb508c13eb91ef2c13a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1366,7 +1365,7 @@ export default {
       "questionId": "u06-s010-v003",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "819d4d404ea2a7b59c5500bedc7d5250fdef68cac5e5261f197ad7c084fd7af0",
+      "contentSha256": "7d4d3e7a9d5be201da0cad9c1ba9e39763a6b06475427f35ad21b4837b742725",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1403,7 +1402,7 @@ export default {
       "questionId": "u06-s010-v004",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "3430868da78a061125f556d9cd5fa5347ff28626f586338d9b95e3d4c5e9fab7",
+      "contentSha256": "75388593d5f7c4a2559aee1ce38376514d91dc95bb106569e63e40c6619a52c5",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1440,7 +1439,7 @@ export default {
       "questionId": "u06-s010-v005",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "dac003e8d4c7cd6036020a81a68a2c25a9db719f89853110fd3ba54965e2879a",
+      "contentSha256": "c2ed95a1de02fe42395ef8b7ff3888190f5c8b6a105a04dd9ab7f62ea6421a0d",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1477,7 +1476,7 @@ export default {
       "questionId": "u06-s010-v006",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "e5d1d6b763ae232f99478b8633c9bdf5b931db0662d0fd87a0d6a6a3eeaffadf",
+      "contentSha256": "306f3c4bff62e50f31c4a5e05f3e1dc205f02b4fcdbceeabd901c4e62527a80a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1514,7 +1513,7 @@ export default {
       "questionId": "u06-s010-v007",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "3cebff350f5dc37d935b6aadc1648b099f8f44047ffbc452c5bd40e380180fb4",
+      "contentSha256": "e565f7fa57da6319f4e6d51d7db5f458948438b7da44411184b7aa30f41664b7",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1551,13 +1550,13 @@ export default {
       "questionId": "u06-s010-v008",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "e860370070c589c6ac32adc1bb94644302f8a951a5b84d67b87909ece164401d",
+      "contentSha256": "258474de4b4df0dd174b4a06749f1a2940116d8f26d25cba60fa3e3b2b00a79f",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "16+40+30=86，且16:40=2:5、30:40=3:4。",
-      "derivedAnswer": "16",
-      "storedAnswer": "16",
+      "independentSolution": "A:B=3:4 整體乘二得 6:8；C:B=5:8 已對齊，所以依 A:B:C 排列為 6:8:5。",
+      "derivedAnswer": "把 B 對齊成 8 份，寫成 6:8:5",
+      "storedAnswer": "把 B 對齊成 8 份，寫成 6:8:5",
       "answerMatch": true,
       "uniqueCorrectAnswer": true,
       "optionTruth": [
@@ -1567,20 +1566,20 @@ export default {
         false
       ],
       "optionEvidence": [
-        "12對應每份1.5。",
-        "20是B的一半但不是A。",
-        "B份數5與4對齊20；A:B:C=8:20:15，共43份。86÷43=2，A=16。",
-        "30是C。"
+        "共同項 B 的四份與八份尚未對齊。",
+        "只改 B 會破壞 A:B 的等值關係。",
+        "6:8=3:4 且 C:B=5:8，並符合指定順序。",
+        "六比五比八不是題目要求的 A:B:C 排列。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「連比與總量整合」，已明示必要條件：三量皆為正且構成總量。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：86正好是43份的2倍。，未超出 U06 鎖定技能邊界。",
-        "rounding": "近似與取整審查：無近似。。"
+        "wording": "題幹明示兩個原比及輸出順序，不需猜測字母位置。",
+        "units": "所有數字都是無單位份數，不存在單位換算衝突。",
+        "boundary": "只做共同項對齊、合併與拆回檢查，留在連比預備範圍。",
+        "rounding": "計算全為精確整數比，沒有四捨五入或近似值。"
       },
-      "difficultyReason": "進階一致性與分配。",
+      "difficultyReason": "先判讀錯誤來源，再同時處理共同項對齊與指定順序。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：16+40+30=86，且16:40=2:5、30:40=3:4。 正確選項為「16」。逐項檢查後，唯一為真的理由是「B份數5與4對齊20；A:B:C=8:20:15，共43份。86÷43=2，A=16。」；其餘三項分別因「12對應每份1.5。」、「20是B的一半但不是A。」、「30是C。」而排除。邊界與語意再檢查：86正好是43份的2倍。",
+      "reviewerNote": "獨立重算：A:B=3:4 整體乘二得 6:8；C:B=5:8 已對齊，所以依 A:B:C 排列為 6:8:5。拆回可得 6:8=3:4、5:8=5:8；其餘選項不是 B 未對齊，就是只改一項或排列錯誤，因此正確答案唯一。",
       "reviewerDecision": "pass"
     },
     {
@@ -1588,13 +1587,13 @@ export default {
       "questionId": "u06-s010-v009",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "da5a5338738f1b4794e249a1f899ccac1815c6ba3fd90e656a44079200061160",
+      "contentSha256": "a3070a2f05fa0c27a679ce59852c97339089381f30e081ae5f2171ff026a5dc8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "甲63、乙84、丙70，甲比丙少7。",
-      "derivedAnswer": "84",
-      "storedAnswer": "84",
+      "independentSolution": "乙的七份與十四份對齊為十四份，甲:乙=4:14；接上乙:丙=14:3，得 4:14:3。",
+      "derivedAnswer": "4:14:3",
+      "storedAnswer": "4:14:3",
       "answerMatch": true,
       "uniqueCorrectAnswer": true,
       "optionTruth": [
@@ -1604,20 +1603,20 @@ export default {
         true
       ],
       "optionEvidence": [
-        "把乙當6份。",
-        "63是甲。",
-        "70是丙。",
-        "對齊得甲:乙:丙=9:12:10；丙比甲多1份=7，所以乙12份=84。"
+        "乙比丙七比三不符合十四比三。",
+        "只改乙而未同步放大甲，破壞第一個比。",
+        "第一比四比七不符合二比七。",
+        "兩組相鄰比拆回後都與原條件一致。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「連比差量反推」，已明示必要條件：三量為正。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：甲與丙只差1份，資料唯一決定每份。，未超出 U06 鎖定技能邊界。",
-        "rounding": "近似與取整審查：無近似。。"
+        "wording": "題目明示合併後還要拆回檢查，判準完整且一致。",
+        "units": "本題使用無單位份數，所有選項可直接作比值比較。",
+        "boundary": "僅涉及一個共同項的對齊及驗算，未進入總量或差量分配。",
+        "rounding": "各比均為精確整數，答案不受近似或取整影響。"
       },
-      "difficultyReason": "高階多條件。",
+      "difficultyReason": "除對齊共同項外，還要逐項拆回驗證兩個原比。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：甲63、乙84、丙70，甲比丙少7。 正確選項為「84」。逐項檢查後，唯一為真的理由是「對齊得甲:乙:丙=9:12:10；丙比甲多1份=7，所以乙12份=84。」；其餘三項分別因「把乙當6份。」、「63是甲。」、「70是丙。」而排除。邊界與語意再檢查：甲與丙只差1份，資料唯一決定每份。",
+      "reviewerNote": "獨立重算：乙的七份與十四份對齊為十四份，甲:乙=4:14；接上乙:丙=14:3，得 4:14:3。拆回後四比十四化簡為二比七，十四比三保持不變；其餘三個選項至少違反一個原比，因此答案唯一。",
       "reviewerDecision": "pass"
     },
     {
@@ -1625,13 +1624,13 @@ export default {
       "questionId": "u06-s010-v010",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "7bb8bed56bca61934f5ea7c99c33380cf8b533d6eabb7d4f36808e24ce725599",
+      "contentSha256": "fc086eec16686cb471dd31aca43bce660def633f78a80e720d5155b83c9c215d",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "糖240，5:2=600:240；4:3=240:180。",
-      "derivedAnswer": "600公克",
-      "storedAnswer": "600公克",
+      "independentSolution": "水的四份與八份對齊為八份，濃縮汁:水=2:8；接上水:冰塊=8:3，得 2:8:3。",
+      "derivedAnswer": "2:8:3",
+      "storedAnswer": "2:8:3",
       "answerMatch": true,
       "uniqueCorrectAnswer": true,
       "optionTruth": [
@@ -1641,20 +1640,20 @@ export default {
         false
       ],
       "optionEvidence": [
-        "只用5/3。",
-        "把每份45。",
-        "糖份數2與4對齊4；麵粉:糖:奶油=10:4:3。奶油3份180，每份60，麵粉600。",
-        "把奶油當2份。"
+        "第一個水量未對齊第二個水量。",
+        "第一組成分比被改成一比二。",
+        "拆回兩組成分比均與標示相同。",
+        "第二組成分比被改成四比三。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「配方共同項應用」，已明示必要條件：配方比例固定。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：公克。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：三種材料角色明確。，未超出 U06 鎖定技能邊界。",
-        "rounding": "近似與取整審查：無近似。。"
+        "wording": "題幹明示兩個水都是同一批飲料內的相同量。",
+        "units": "三項皆以相同容量單位表示，沒有跨單位換算問題。",
+        "boundary": "只依標示完成共同項對齊，不求實際容量或進行分配。",
+        "rounding": "成分比全為精確整數，不需要四捨五入。"
       },
-      "difficultyReason": "生活連比預備。",
-      "literacyNecessity": "共享糖量連接兩個配方比，情境不可移除。",
-      "reviewerNote": "獨立重算：糖240，5:2=600:240；4:3=240:180。 正確選項為「600公克」。逐項檢查後，唯一為真的理由是「糖份數2與4對齊4；麵粉:糖:奶油=10:4:3。奶油3份180，每份60，麵粉600。」；其餘三項分別因「只用5/3。」、「把每份45。」、「把奶油當2份。」而排除。邊界與語意再檢查：三種材料角色明確。",
+      "difficultyReason": "需從生活標示辨認共同成分，再正確排列三項。",
+      "literacyNecessity": "兩張成分標示必須以共同的水量銜接，情境直接決定能否合併。",
+      "reviewerNote": "獨立重算：水的四份與八份對齊為八份，濃縮汁:水=2:8；接上水:冰塊=8:3，得 2:8:3。拆回可得二比八等於一比四，八比三保持不變；其他選項至少破壞一個標示比，因此答案唯一。題幹也明定兩處水是同一批飲料中的相同量，不存在跨配方誤接。",
       "reviewerDecision": "pass"
     },
     {
@@ -1662,13 +1661,13 @@ export default {
       "questionId": "u06-s010-v011",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "f04707289e831398857bb437f5c29538a0c1d76fa09fe2a58ff3ae9286619a08",
+      "contentSha256": "5537d02b32d4afc1709c3e79d1936ab6307534a7d1f3c2c40ce3d07011abcc1d",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "乙54；54:90=3:5。",
-      "derivedAnswer": "90公斤",
-      "storedAnswer": "90公斤",
+      "independentSolution": "八年級的三份與九份對齊為九份，七年級:八年級=6:9；接上 9:4，得 6:9:4。",
+      "derivedAnswer": "6:9:4",
+      "storedAnswer": "6:9:4",
       "answerMatch": true,
       "uniqueCorrectAnswer": true,
       "optionTruth": [
@@ -1678,20 +1677,20 @@ export default {
         false
       ],
       "optionEvidence": [
-        "乙9與3對齊9，甲:乙:丙=7:9:15；甲7份42，每份6，丙90。",
-        "54是乙。",
-        "丙份數誤作約11.67。",
-        "把丙當17.5份。"
+        "拆回後同時符合二比三與九比四。",
+        "第二組年級比不符合九比四。",
+        "第一組年級比不符合二比三。",
+        "第二組年級比變成三比四。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「回收資料的兩段比」，已明示必要條件：同一統計期間與同一重量單位。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：公斤。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：三班資料可直接比較。，未超出 U06 鎖定技能邊界。",
-        "rounding": "近似與取整審查：無近似。。"
+        "wording": "題幹說明兩組比取自同一公告，八年級群體相同。",
+        "units": "各項都代表學生人數，沒有單位或統計口徑衝突。",
+        "boundary": "只將兩組年級比對齊成三項比，未進行實際人數分配。",
+        "rounding": "所有份數均為精確整數，不涉及近似與取整。"
       },
-      "difficultyReason": "情境合併。",
-      "literacyNecessity": "同期間與同單位使兩個比可透過乙合併。",
-      "reviewerNote": "獨立重算：乙54；54:90=3:5。 正確選項為「90公斤」。逐項檢查後，唯一為真的理由是「乙9與3對齊9，甲:乙:丙=7:9:15；甲7份42，每份6，丙90。」；其餘三項分別因「54是乙。」、「丙份數誤作約11.67。」、「把丙當17.5份。」而排除。邊界與語意再檢查：三班資料可直接比較。",
+      "difficultyReason": "要先判讀公告來源一致，再完成共同年級對齊。",
+      "literacyNecessity": "公告分兩列呈現年級關係，共同群體判讀是合併的必要條件。",
+      "reviewerNote": "獨立重算：八年級的三份與九份對齊為九份，七年級:八年級=6:9；接上 9:4，得 6:9:4。拆回後六比九化簡為二比三，九比四與原公告相同；其餘三項各違反至少一組比，答案唯一。題幹已確認兩組資料來自同一公告，八年級不是不同時點的群體。",
       "reviewerDecision": "pass"
     },
     {
@@ -1699,7 +1698,7 @@ export default {
       "questionId": "u06-s010-v012",
       "unitId": "u06",
       "skillId": "continued-ratio-preview",
-      "contentSha256": "e8893501295f43825ae7705765aafdb482d0d40ec4d20f62d05d7be00605e1b4",
+      "contentSha256": "7586bb3dc9d08b4483311c62cf94e574f91ea41141c07c7558eddbe3457c0f22",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

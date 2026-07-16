@@ -82,7 +82,7 @@ export default {
         "meaning": "等差模型。"
       },
       {
-        "formula": "a_n=a_1r^{n-1}",
+        "formula": "a_n=a_1rⁿ⁻¹",
         "conditions": [
           "固定倍率"
         ],
@@ -146,7 +146,7 @@ export default {
         "reasoning": "等比r=3。",
         "solutionSteps": [
           "等比r=3。",
-          "a_6=2×3^5。"
+          "a_6=2×3⁵。"
         ],
         "answer": "486個"
       },
@@ -262,7 +262,7 @@ export default {
       "reviewedAt": "2026-07-12",
       "reviewNote": "逐段檢查「數列素養題」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
     },
-    "contentSha256": "a873a8d0b91b9e586bc23535244cd0dc094c4f59443f102054bc501af2b60d87"
+    "contentSha256": "d0cf2f0c57ada6552a01414bd60a6abda6f0858ce84a598e88a892ff63047af4"
   },
   "mcQuestions": [
     {
@@ -371,7 +371,7 @@ export default {
         {
           "choice": "162",
           "truth": true,
-          "reason": "公比3，第5輪=2×3^4=162。"
+          "reason": "公比3，第5輪=2×3⁴=162。"
         },
         {
           "choice": "54",
@@ -404,7 +404,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3741d6087850ced4e0e77627ec5819270e82a72f8b945f6bf13bcbac7dc32f79"
+      "contentSha256": "4933e67ef5a67c6bc576737430f52aa3f5eb56301271d4d8d459ee8952705f23"
     },
     {
       "questionId": "u14-s012-v003",
@@ -1303,7 +1303,7 @@ export default {
       "questionId": "u14-s012-v002",
       "unitId": "u14",
       "skillId": "sequence-literacy",
-      "contentSha256": "3741d6087850ced4e0e77627ec5819270e82a72f8b945f6bf13bcbac7dc32f79",
+      "contentSha256": "4933e67ef5a67c6bc576737430f52aa3f5eb56301271d4d8d459ee8952705f23",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",

@@ -118,37 +118,45 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "A=(2,1) 是否在 2x+y=5 上？",
       "solutionSteps": [
-        "左邊=2×2+1=5。",
-        "與右邊 5 相等。"
+        "依順序讀出 x=2、y=1。",
+        "代入左邊得 2×2+1=5。",
+        "左邊與右邊相等，因此 A 在線上。"
       ],
-      "answer": "A 在直線上。"
+      "answer": "A 在直線上。",
+      "why": "點在線上的定義就是坐標代入後使方程式成立。第一分量二乘係數二，再加第二分量一，結果正好等於右邊五，所以不是憑圖形外觀猜測。"
     },
     {
       "exampleId": "L2",
       "prompt": "B=(-1,4) 是否在 x-y=-5 上？",
       "solutionSteps": [
-        "左邊=-1-4=-5。",
-        "等式成立。"
+        "讀出 x=-1、y=4，負數連同符號代入。",
+        "計算左邊 -1-4=-5。",
+        "與右邊負五相等，判定 B 在線上。"
       ],
-      "answer": "B 在直線上。"
+      "answer": "B 在直線上。",
+      "why": "第一分量本身是負一，而方程式還要減去第二分量四，得到負五。完整保留負號與減法後，左右相等，因此這個點確實滿足直線方程式。"
     },
     {
       "exampleId": "L3",
       "prompt": "P=(k,3) 在 3x-y=9 上，求 k。",
       "solutionSteps": [
-        "3k-3=9。",
-        "3k=12，k=4。"
+        "把 x=k、y=3 代入，得到 3k-3=9。",
+        "兩邊加三後除以三，求得 k=4。",
+        "以 P=(4,3) 回代，十二減三等於九。"
       ],
-      "answer": "k=4。"
+      "answer": "k=4。",
+      "why": "『在直線上』把含參數的坐標轉成一元一次方程式。求出四後還要回代，確認參數放在第一分量且原等式成立，避免保留移項錯誤。"
     },
     {
       "exampleId": "L4",
       "prompt": "哪個點不在 x+2y=6 上：C=(0,3)、D=(2,2)、E=(4,1)、F=(6,1)？",
       "solutionSteps": [
-        "前三點代入皆得 6。",
-        "F 代入得 8。"
+        "代入 C、D、E，左邊分別都等於六。",
+        "代入 F=(6,1)，左邊為 6+2=8。",
+        "只有 F 的左邊不等於右邊六，因此 F 不在線上。"
       ],
-      "answer": "F 不在直線上。"
+      "answer": "F 不在直線上。",
+      "why": "多點判定必須逐一代入，不能因前三點成立就推測第四點。F 的兩分量代入後得到八而非六，所以它是唯一不滿足方程式的候選點。"
     }
   ],
   "commonMistakes": [
@@ -232,7 +240,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "1131513b6423e4bd5c09506e3703b26f1a43dc0d94ef7786cb1bb61d94331e07"
+  "contentSha256": "83ae2975d3b2abd4a47f820c01c5c9984fef0cc3995aaa6dc1120b60d2e1e3ad"
 };
 
 export const QUESTIONS = [
@@ -260,10 +268,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "代入 x=1、y=2，左邊 3×1+2=5，等於右邊，所以在線上。",
-    "explanation": "代入 x=1、y=2，左邊 3×1+2=5，等於右邊，所以在線上。",
+    "explanation": "有序數對 A=(1,2) 表示 x=1、y=2。完整代入左邊得 3×1+2=5，與方程式右邊五相等，所以 A 是直線上的點。只計算一加二或比較兩個坐標是否相等，都不是判定依據。",
     "steps": [
-      "正確代入兩分量。",
-      "比較左右兩邊。"
+      "依坐標順序寫出 x=1、y=2。",
+      "代入左邊並計算 3×1+2=5。",
+      "比較左右同為五，判定 A 在直線上。"
     ],
     "optionAnalysis": [
       {
@@ -287,7 +296,7 @@ export const QUESTIONS = [
         "reason": "坐標分量不必相等。"
       }
     ],
-    "misconceptionTarget": "漏乘係數或用無關條件判斷。",
+    "misconceptionTarget": "漏乘 x 的係數三，或用 x、y 是否相等等無關條件判斷。",
     "prerequisiteCheck": "需會代入。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -300,7 +309,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "12b86b5926c6aee6a202be4eff73fb8762e47a2d6dc8853230247003aeac31b7"
+    "contentSha256": "18661d543baa3666e30dc07085e821304f5bf3949c0091d949b68f585b4df9f5"
   },
   {
     "questionId": "u05-s009-v002",
@@ -326,10 +335,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入 (3,0) 得 3-0=3，不等於 2；其餘三點代入都得 2。",
-    "explanation": "代入 (3,0) 得 3-0=3，不等於 2；其餘三點代入都得 2。",
+    "explanation": "逐點代入 x-y：前兩點分別得 2-0=2、5-3=2；第三點為 -1-(-3)=2，都在線上。只有 (3,0) 代入得三而非二，因此不在直線上。題目問的是『不在』，不能選成立的點。",
     "steps": [
-      "逐點計算 x-y。",
-      "找出結果不是 2 的點。"
+      "逐一把四個點的兩分量代入 x-y。",
+      "特別計算負數相減 -1-(-3)=2。",
+      "找出唯一不等於二的 (3,0)。"
     ],
     "optionAnalysis": [
       {
@@ -353,7 +363,7 @@ export const QUESTIONS = [
         "reason": "代入得 3，不成立。"
       }
     ],
-    "misconceptionTarget": "負數相減錯誤或題目問『不在』卻選在線點。",
+    "misconceptionTarget": "負數相減時漏掉括號，或忽略題目要求選出不在線上的點。",
     "prerequisiteCheck": "需會負數減法。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -366,7 +376,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "38bc49c666a8055a59b05eeb4899e0b46125676cca7bd68e9289eb7e3556b717"
+    "contentSha256": "9a45dbcf78cb5c8bdbf0882796157e06c4eb46e5d3c3c551ef4f769809e1dcd2"
   },
   {
     "questionId": "u05-s009-v003",
@@ -392,10 +402,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "左邊 2(-2)+3(4)=-4+12=8，等於右邊。",
-    "explanation": "左邊 2(-2)+3(4)=-4+12=8，等於右邊。",
+    "explanation": "點 P=(-2,4) 代入時，負二要連同符號放入括號。左邊為 2×(-2)+3×4=-4+12=8，與右邊八相等，因此 P 在直線上。若把二乘負二算成正四，就會誤得十六。",
     "steps": [
-      "負數代入加括號。",
-      "計算並比較 8=8。"
+      "依順序代入 x=-2、y=4，負數使用括號。",
+      "計算左邊 -4+12=8。",
+      "與右邊八比較，判定 P 在直線上。"
     ],
     "optionAnalysis": [
       {
@@ -419,7 +430,7 @@ export const QUESTIONS = [
         "reason": "坐標與方程式足夠。"
       }
     ],
-    "misconceptionTarget": "負數代入時忽略括號。",
+    "misconceptionTarget": "負數代入未加括號，把二乘負二錯算成正四而誤判。",
     "prerequisiteCheck": "需會整數乘加。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -432,7 +443,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "af7e140b6cd65767fda22ec4af5525f9565334b379919fc32fde8ffc6a67bd3b"
+    "contentSha256": "8098f30513c13e83be6b25b1f7c48eb942bab54cb96064bcbdb136ea023a1afc"
   },
   {
     "questionId": "u05-s009-v004",
@@ -458,10 +469,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "代入得 2k-3=7，故 2k=10，k=5。",
-    "explanation": "代入得 2k-3=7，故 2k=10，k=5。",
+    "explanation": "Q=(k,3) 在線上表示同一組 x=k、y=3 使方程式成立。代入 2x-y=7 得 2k-3=7，兩邊加三為 2k=10，再除以二得 k=5。回代十減三等於七，確認結果。五是唯一能使這個指定點落在直線上的參數值。",
     "steps": [
-      "列 2k-3=7。",
-      "解得 k=5。"
+      "將 x=k、y=3 代入，列 2k-3=7。",
+      "移項得到 2k=10，再求 k=5。",
+      "把五代回，檢查 2×5-3=7。"
     ],
     "optionAnalysis": [
       {
@@ -485,7 +497,7 @@ export const QUESTIONS = [
         "reason": "代入得 11。"
       }
     ],
-    "misconceptionTarget": "把 k 直接等同常數 7。",
+    "misconceptionTarget": "把右邊常數七直接當成 k，沒有先代入第二分量三並解方程式。",
     "prerequisiteCheck": "需會解一次方程式。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -498,7 +510,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "0ce0bb3df48b50ecbab407d38764e655a1de4648166afbe555b4ff38594ff803"
+    "contentSha256": "b3930fa1fd5cde2bfbc04a7b5163fc128456be29aa30354eb9d09b8cd91fe7cd"
   },
   {
     "questionId": "u05-s009-v005",
@@ -524,10 +536,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入得 a+(a+1)=9，2a+1=9，a=4。",
-    "explanation": "代入得 a+(a+1)=9，2a+1=9，a=4。",
+    "explanation": "R 的兩個分量都含 a，分別是 x=a、y=a+1，必須一起代入。由 a+(a+1)=9 得 2a+1=9，所以 2a=8、a=4；此時 R=(4,5)，兩分量和為九，確實在線上。這也確認第二分量隨參數改變的部分沒有被遺漏。",
     "steps": [
-      "代入兩個分量。",
-      "合併同類項解 a。"
+      "把 x=a 與 y=a+1 同時代入 x+y=9。",
+      "展開並合併為 2a+1=9，求得 a=4。",
+      "寫出 R=(4,5)，代回確認四加五等於九。"
     ],
     "optionAnalysis": [
       {
@@ -551,7 +564,7 @@ export const QUESTIONS = [
         "reason": "R=(4,5)，和為 9。"
       }
     ],
-    "misconceptionTarget": "只代入第一分量，忽略 y 也含 a。",
+    "misconceptionTarget": "只代入第一分量 a，忽略第二分量 a+1 也會隨參數改變。",
     "prerequisiteCheck": "需會代數式代入。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -564,7 +577,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b7656e7c96e4e7b0a67cf8e4d9060ad262a3c80c6658ef5ba79d139459576522"
+    "contentSha256": "c13f14c9af23d590cfaaf08a7bad656ddf11b98a773cfd7cac8eb218ccbbbb96"
   },
   {
     "questionId": "u05-s009-v006",
@@ -590,10 +603,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "代入 x=2 得 8+b=10，所以 b=2。",
-    "explanation": "代入 x=2 得 8+b=10，所以 b=2。",
+    "explanation": "已知 A=(2,b)，所以先把 x=2 代入 4x+y=10，得到 4×2+b=10，也就是 8+b=10。兩邊減八得 b=2。將 A=(2,2) 回代，左邊八加二正好為十。縱坐標二是唯一能配合已知橫坐標使等式成立的值。",
     "steps": [
-      "列 8+b=10。",
-      "解得 b=2。"
+      "依點的第一分量將 x=2 代入方程式。",
+      "計算 4×2=8，列出 8+b=10。",
+      "求得 b=2，並回代檢查等式成立。"
     ],
     "optionAnalysis": [
       {
@@ -617,7 +631,7 @@ export const QUESTIONS = [
         "reason": "左邊為 8。"
       }
     ],
-    "misconceptionTarget": "把題目常數直接當 b，或忘記先計算 4x。",
+    "misconceptionTarget": "把右邊十直接當成 b，或忘記先計算四乘第一分量二。",
     "prerequisiteCheck": "需理解在線判定。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -630,7 +644,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "63421edd9ea4b1505d857f037f0d75daa3d0c3d72a00f5d7efd37fe901008e92"
+    "contentSha256": "2fb8435badd7b712d8db761f0bc023a076fe9b299d33729655b32433b795a5a7"
   },
   {
     "questionId": "u05-s009-v007",
@@ -656,10 +670,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "代入得 3(m-1)-2m=4，化簡為 m-3=4，所以 m=7。",
-    "explanation": "代入得 3(m-1)-2m=4，化簡為 m-3=4，所以 m=7。",
+    "explanation": "S=(m-1,2m) 在線上，所以代入得 3(m-1)-2m=4。分配律展開為 3m-3-2m=4，合併同類項得 m-3=4，因此 m=7。此時 S=(6,14)，代入為十八減十四等於四，兩個含參數分量都通過驗證。",
     "steps": [
-      "展開 3m-3-2m=4。",
-      "解 m=7。"
+      "將 x=m-1、y=2m 代入 3x-y=4。",
+      "展開括號並合併，得到 m-3=4。",
+      "求 m=7，再以 S=(6,14) 回代驗證。"
     ],
     "optionAnalysis": [
       {
@@ -683,7 +698,7 @@ export const QUESTIONS = [
         "reason": "代入左邊 2。"
       }
     ],
-    "misconceptionTarget": "展開括號或合併同類項錯誤。",
+    "misconceptionTarget": "展開三乘括號時漏乘負一，或減去二 m 時把符號合併錯誤。",
     "prerequisiteCheck": "需會代數化簡。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -696,7 +711,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "837d2f0d48bdf7ef79ee868c7f1acdf806af50bea08f7e1b36a93940749dfaaa"
+    "contentSha256": "5acb84ddb3975d6be9e11ec945731cfdb9d2ba88d5ead3d4db2ac41bfa0d02bd"
   },
   {
     "questionId": "u05-s009-v008",
@@ -722,10 +737,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "由 (p,2) 在線得 2p+6=12，p=3；檢查 (3,3) 代入得 15≠12，確實不在線。",
-    "explanation": "由 (p,2) 在線得 2p+6=12，p=3；檢查 (3,3) 代入得 15≠12，確實不在線。",
+    "explanation": "由 (p,2) 在線上可列 2p+3×2=12，得到 2p=6、p=3。還要使用第二條件檢查：(3,3) 代入左邊為六加九等於十五，不等於十二，因此確實不在線上，兩項條件同時成立。",
     "steps": [
-      "先用在線點求 p。",
-      "再以不在線點驗證。"
+      "將在線點 (p,2) 代入，列 2p+6=12。",
+      "解得 p=3。",
+      "把 (3,3) 代入得十五不等於十二，完成第二條件驗證。"
     ],
     "optionAnalysis": [
       {
@@ -749,7 +765,7 @@ export const QUESTIONS = [
         "reason": "第一點代入得 18。"
       }
     ],
-    "misconceptionTarget": "只使用一個條件，未驗證第二點。",
+    "misconceptionTarget": "只利用第一個在線條件求參數，沒有確認第二個點確實不在線上。",
     "prerequisiteCheck": "需會代入。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -762,7 +778,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "bb2d2b0578b638efe2ee9dd1906f569bde3b9410db5a649545dc48074e21f3da"
+    "contentSha256": "d49e8d86eb4948ccc3783d74482f041f38fef91e2c20d059eb3c89911015e938"
   },
   {
     "questionId": "u05-s009-v009",
@@ -788,10 +804,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "C 在線需 2k+2=4，得 k=1；A、B 也都滿足方程式。",
-    "explanation": "C 在線需 2k+2=4，得 k=1；A、B 也都滿足方程式。",
+    "explanation": "C=(k,2) 也在 2x+y=4 上，所以代入得 2k+2=4，解得 2k=2、k=1。此時 C=(1,2)，左邊等於四；A=(0,4) 與 B=(2,0) 也各自滿足方程式，三點確實都落在同一條指定直線上，參數值已獨立驗算。",
     "steps": [
-      "用 C 建立方程式。",
-      "檢查 A、B 為既知線上點。"
+      "把 C 的 x=k、y=2 代入直線方程式。",
+      "由 2k+2=4 求得 k=1。",
+      "回代 C 並檢查已給的 A、B 也都在線上。"
     ],
     "optionAnalysis": [
       {
@@ -815,7 +832,7 @@ export const QUESTIONS = [
         "reason": "代入得 8。"
       }
     ],
-    "misconceptionTarget": "以 A、B 的坐標平均錯求 k，而未使用方程式。",
+    "misconceptionTarget": "用 A、B 坐標的平均猜 k，沒有使用 C 必須滿足直線方程式的條件。",
     "prerequisiteCheck": "需掌握點在線判定。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -828,7 +845,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "68dfcab2c80af585b224f90eb16a3be944a2e2f2220d3ab8df018f2a9c588975"
+    "contentSha256": "127a5f3f5e2e1d50bf090a8094dcaec70dd9129bab62be5ccd24931f1f100de7"
   },
   {
     "questionId": "u05-s009-v010",
@@ -854,10 +871,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "代入 x=6，85+150=235，與紀錄 y=235 相同，所以符合。",
-    "explanation": "代入 x=6，85+150=235，與紀錄 y=235 相同，所以符合。",
+    "explanation": "紀錄 (6,235) 的第一分量六是里程，第二分量二百三十五是費用。代入方案得 85+25×6=85+150=235，與紀錄費用相同，因此符合。總費用含八十五元固定費，不能直接除以里程求單價。",
     "steps": [
-      "辨認 x 為里程、y 為費用。",
-      "代入並比較。"
+      "依情境讀出 x=6 公里、y=235 元。",
+      "代入費用式，計算 85+25×6=235。",
+      "比較模型值與紀錄值相同，判定符合方案。"
     ],
     "optionAnalysis": [
       {
@@ -881,7 +899,7 @@ export const QUESTIONS = [
         "reason": "總費用含固定起跳價，不能直接相除。"
       }
     ],
-    "misconceptionTarget": "忽略固定費用或誤用平均單價。",
+    "misconceptionTarget": "忽略八十五元固定費，只計里程費，或用總費用直接除公里數。",
     "prerequisiteCheck": "需會代入一次關係。",
     "estimatedTimeSec": 150,
     "unitCheck": "x 為公里，y 為元；25 的單位是元/公里。",
@@ -894,7 +912,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ed5e1cb78ea78a92a60284abcdcecd4f21a64d80a29397e42dac5e8710bd5f91"
+    "contentSha256": "db34d3b9606b4502f0b463bda7ee9744e8833d8270923f9da124f1e754510af4"
   },
   {
     "questionId": "u05-s009-v011",
@@ -920,10 +938,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "代入 C=20，(9/5)×20=36，再加 32 得 68，所以在線上。",
-    "explanation": "代入 C=20，(9/5)×20=36，再加 32 得 68，所以在線上。",
+    "explanation": "資料點依順序表示攝氏 C=20、華氏 F=68。代入右邊，先算 (9/5)×20=36，再加三十二得六十八，正好等於 F 的紀錄值，所以此點在關係圖形上。比例項的除以五與常數三十二都不能省略。",
     "steps": [
-      "先算比例項 36。",
-      "加 32 並比較 F。"
+      "依欄位順序讀出 C=20、F=68。",
+      "計算比例項 (9/5)×20=36，再加三十二。",
+      "得到六十八並與 F 比較，判定資料點成立。"
     ],
     "optionAnalysis": [
       {
@@ -947,7 +966,7 @@ export const QUESTIONS = [
         "reason": "68-32 應為 36。"
       }
     ],
-    "misconceptionTarget": "分數係數運算或變數角色錯誤。",
+    "misconceptionTarget": "分數係數只乘九而漏除以五，或把攝氏、華氏兩分量角色對調。",
     "prerequisiteCheck": "需會分數乘法。",
     "estimatedTimeSec": 150,
     "unitCheck": "第一分量為 °C，第二分量為 °F；不同單位不直接相加，僅依公式換算。",
@@ -960,7 +979,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "16954f3d0754dc64f6d1de5bb3b3253f54de08cad68328ec35a6c6bdd76f5796"
+    "contentSha256": "fc6fcef1404633c69bdc114901bc24c3ce79c7ae3677681f4fb21c6e54ca62d7"
   },
   {
     "questionId": "u05-s009-v012",
@@ -986,10 +1005,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "前兩筆分別滿足 2×5+10=20、2×10+10=30；第三筆應為 2×15+10=40，不是 35。",
-    "explanation": "前兩筆分別滿足 2×5+10=20、2×10+10=30；第三筆應為 2×15+10=40，不是 35。",
+    "explanation": "三筆紀錄都要逐一代入。五張費用為 2×5+10=20，十張為 2×10+10=30，前兩筆正確；十五張應為 2×15+10=40，而紀錄寫三十五元，相差五元，所以需要更正的是 (15,35)。",
     "steps": [
-      "逐筆代入。",
-      "找出第三筆左右不等。"
+      "將 (5,20) 代入，確認模型費用二十元。",
+      "將 (10,30) 代入，確認模型費用三十元。",
+      "計算十五張應為四十元，找出 (15,35) 錯誤。"
     ],
     "optionAnalysis": [
       {
@@ -1013,7 +1033,7 @@ export const QUESTIONS = [
         "reason": "正確費用應為 40。"
       }
     ],
-    "misconceptionTarget": "只抽查前兩筆便推論全部正確。",
+    "misconceptionTarget": "只抽查前兩筆都正確就推論全部資料正確，沒有逐筆核對第三筆。",
     "prerequisiteCheck": "需會代入。",
     "estimatedTimeSec": 150,
     "unitCheck": "x 張、y 元，2 元/張加固定 10 元。",
@@ -1026,7 +1046,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6219b5abbe7084aafba4ca93cbc76febd5da06ec53891e16a720d992843a336b"
+    "contentSha256": "cd34396b1e42d39fa2469bc4b8bd8c7f3c9dbd415d536085f84a22d63e05ccc3"
   }
 ];
 
@@ -1048,19 +1068,18 @@ export const CONSTRUCTED_RESPONSES = [
       "列出在線點。"
     ],
     "fullCreditSolution": [
-      "A：2(-1)+5=3，所以在線上。",
-      "B：2×2+1=5，不在線上。",
-      "C：2×4-3=5，不在線上。",
-      "因此只有 A 在線上。"
+      "將 A=(-1,5) 代入：2×(-1)+5=-2+5=3，與右邊三相等，所以 A 在線上。",
+      "將 B=(2,1) 代入：2×2+1=5，不等於三，所以 B 不在線上。",
+      "將 C=(4,-3) 代入：2×4+(-3)=8-3=5，也不等於三，所以 C 不在線上。",
+      "三點逐一比較後，所有在線上的點只有 A=(-1,5)。"
     ],
     "alternativeSolutions": [
       "可製作代入值表：A=3、B=5、C=5。"
     ],
     "reasoningSteps": [
-      "A：2(-1)+5=3，所以在線上。",
-      "B：2×2+1=5，不在線上。",
-      "C：2×4-3=5，不在線上。",
-      "因此只有 A 在線上。"
+      "依有序數對順序，把 A、B、C 分別代入左邊。",
+      "逐點將算出的左邊與固定右邊三比較。",
+      "只收集左右相等的點，得到唯一在線點 A。"
     ],
     "rubric": [
       {
@@ -1087,8 +1106,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "每點都須寫出 2x+y 的代入值並與 3 比較；在線點寫成 A=(-1,5)。",
     "answerOnlyPolicy": "只寫 A 而沒有三點代入判斷，最高給 1 分。",
     "commonErrors": [
-      "負數代入漏括號。",
-      "把代入值 5 也視為成立。"
+      "負一或負三代入時未加括號，造成乘法與加減符號錯誤。",
+      "把左邊算得五也視為成立，沒有與右邊三比較。",
+      "只找到 A 成立就停止，未按題意完成 B、C 的逐點檢查。"
     ],
     "independentReview": {
       "derivedResult": "一點算術錯不連帶扣其他兩點。",
@@ -1098,7 +1118,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "546a1eae267c87cc77fa197dae5634391182d73045759d2ff4bf66182048f58e"
+    "contentSha256": "5192359fa14786bd25634b656ca1e02793b2f9cf2a60c6822d2301b986b1b392"
   },
   {
     "questionId": "u05-s009-cr002",
@@ -1117,19 +1137,18 @@ export const CONSTRUCTED_RESPONSES = [
       "求點坐標並驗證。"
     ],
     "fullCreditSolution": [
-      "代入得 3(m+1)-(2m-1)=8。",
-      "化簡為 3m+3-2m+1=8，所以 m+4=8，m=4。",
-      "P=(5,7)。",
-      "驗證 3×5-7=15-7=8。"
+      "P=(m+1,2m-1) 在線上，代入 3x-y=8 得 3(m+1)-(2m-1)=8。",
+      "展開為 3m+3-2m+1=8，合併得 m+4=8，所以 m=4。減去括號時，括號內的負一也要變號。",
+      "把 m=4 代回坐標，得到 P=(5,7)。",
+      "驗證 3×5-7=15-7=8，與右邊相等，因此參數與點坐標都正確。"
     ],
     "alternativeSolutions": [
       "可先展開後再合併，步驟等價。"
     ],
     "reasoningSteps": [
-      "代入得 3(m+1)-(2m-1)=8。",
-      "化簡為 3m+3-2m+1=8，所以 m+4=8，m=4。",
-      "P=(5,7)。",
-      "驗證 3×5-7=15-7=8。"
+      "把含 m 的兩個坐標完整代入直線方程式。",
+      "正確展開減號與括號，解出 m=4 並求 P=(5,7)。",
+      "將完整點坐標代回原式，確認左右同為八。"
     ],
     "rubric": [
       {
@@ -1156,8 +1175,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "答案包含 m=4 與 P=(5,7)；驗證須寫 3×5-7=8。",
     "answerOnlyPolicy": "只寫 m=4 而沒有點坐標與代回驗證，最高給 1 分。",
     "commonErrors": [
-      "減去括號時符號錯。",
-      "求得 m 後未計算 P。"
+      "展開 -(2m-1) 時寫成 -2m-1，沒有讓括號內負一變成正一。",
+      "求得 m=4 後直接當成點坐標，未計算 m+1 與 2m-1。",
+      "只寫 P=(5,7) 而未代回，無法用驗算發現早期符號錯誤。"
     ],
     "independentReview": {
       "derivedResult": "若展開有單一符號錯但後續依錯誤式一致，可給 1 分；驗算若發現不成立可再給檢查證據。",
@@ -1167,14 +1187,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "385b1fdf208716b22cb6909ff79b7d68fd4191158f1b52bec3bd479acfdb2df1"
+    "contentSha256": "8617b8dff621e30f257b45b07526491ffcc767b21763a5aa683244c341ec3d65"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s009-v001",
-    "contentSha256": "12b86b5926c6aee6a202be4eff73fb8762e47a2d6dc8853230247003aeac31b7",
+    "contentSha256": "18661d543baa3666e30dc07085e821304f5bf3949c0091d949b68f585b4df9f5",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入 x=1、y=2，左邊 3×1+2=5，等於右邊，所以在線上。",
     "derivedAnswer": "是，因為 3×1+2=5",
@@ -1206,7 +1226,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v002",
-    "contentSha256": "38bc49c666a8055a59b05eeb4899e0b46125676cca7bd68e9289eb7e3556b717",
+    "contentSha256": "9a45dbcf78cb5c8bdbf0882796157e06c4eb46e5d3c3c551ef4f769809e1dcd2",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入 (3,0) 得 3-0=3，不等於 2；其餘三點代入都得 2。",
     "derivedAnswer": "(3,0)",
@@ -1238,7 +1258,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v003",
-    "contentSha256": "af7e140b6cd65767fda22ec4af5525f9565334b379919fc32fde8ffc6a67bd3b",
+    "contentSha256": "8098f30513c13e83be6b25b1f7c48eb942bab54cb96064bcbdb136ea023a1afc",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "左邊 2(-2)+3(4)=-4+12=8，等於右邊。",
     "derivedAnswer": "在直線上",
@@ -1270,7 +1290,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v004",
-    "contentSha256": "0ce0bb3df48b50ecbab407d38764e655a1de4648166afbe555b4ff38594ff803",
+    "contentSha256": "b3930fa1fd5cde2bfbc04a7b5163fc128456be29aa30354eb9d09b8cd91fe7cd",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入得 2k-3=7，故 2k=10，k=5。",
     "derivedAnswer": "5",
@@ -1302,7 +1322,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v005",
-    "contentSha256": "b7656e7c96e4e7b0a67cf8e4d9060ad262a3c80c6658ef5ba79d139459576522",
+    "contentSha256": "c13f14c9af23d590cfaaf08a7bad656ddf11b98a773cfd7cac8eb218ccbbbb96",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入得 a+(a+1)=9，2a+1=9，a=4。",
     "derivedAnswer": "4",
@@ -1334,7 +1354,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v006",
-    "contentSha256": "63421edd9ea4b1505d857f037f0d75daa3d0c3d72a00f5d7efd37fe901008e92",
+    "contentSha256": "2fb8435badd7b712d8db761f0bc023a076fe9b299d33729655b32433b795a5a7",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入 x=2 得 8+b=10，所以 b=2。",
     "derivedAnswer": "2",
@@ -1366,7 +1386,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v007",
-    "contentSha256": "837d2f0d48bdf7ef79ee868c7f1acdf806af50bea08f7e1b36a93940749dfaaa",
+    "contentSha256": "5acb84ddb3975d6be9e11ec945731cfdb9d2ba88d5ead3d4db2ac41bfa0d02bd",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入得 3(m-1)-2m=4，化簡為 m-3=4，所以 m=7。",
     "derivedAnswer": "7",
@@ -1398,7 +1418,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v008",
-    "contentSha256": "bb2d2b0578b638efe2ee9dd1906f569bde3b9410db5a649545dc48074e21f3da",
+    "contentSha256": "d49e8d86eb4948ccc3783d74482f041f38fef91e2c20d059eb3c89911015e938",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "由 (p,2) 在線得 2p+6=12，p=3；檢查 (3,3) 代入得 15≠12，確實不在線。",
     "derivedAnswer": "3",
@@ -1430,7 +1450,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v009",
-    "contentSha256": "68dfcab2c80af585b224f90eb16a3be944a2e2f2220d3ab8df018f2a9c588975",
+    "contentSha256": "127a5f3f5e2e1d50bf090a8094dcaec70dd9129bab62be5ccd24931f1f100de7",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "C 在線需 2k+2=4，得 k=1；A、B 也都滿足方程式。",
     "derivedAnswer": "1",
@@ -1462,7 +1482,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v010",
-    "contentSha256": "ed5e1cb78ea78a92a60284abcdcecd4f21a64d80a29397e42dac5e8710bd5f91",
+    "contentSha256": "db34d3b9606b4502f0b463bda7ee9744e8833d8270923f9da124f1e754510af4",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入 x=6，85+150=235，與紀錄 y=235 相同，所以符合。",
     "derivedAnswer": "符合，因為 85+25×6=235",
@@ -1494,7 +1514,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v011",
-    "contentSha256": "16954f3d0754dc64f6d1de5bb3b3253f54de08cad68328ec35a6c6bdd76f5796",
+    "contentSha256": "fc6fcef1404633c69bdc114901bc24c3ce79c7ae3677681f4fb21c6e54ca62d7",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入 C=20，(9/5)×20=36，再加 32 得 68，所以在線上。",
     "derivedAnswer": "在，因為 36+32=68",
@@ -1526,7 +1546,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s009-v012",
-    "contentSha256": "6219b5abbe7084aafba4ca93cbc76febd5da06ec53891e16a720d992843a336b",
+    "contentSha256": "cd34396b1e42d39fa2469bc4b8bd8c7f3c9dbd415d536085f84a22d63e05ccc3",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "前兩筆分別滿足 2×5+10=20、2×10+10=30；第三筆應為 2×15+10=40，不是 35。",
     "derivedAnswer": "(15,35)",

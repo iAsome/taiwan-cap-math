@@ -92,66 +92,74 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "選一個方便的 x 或 y。",
-      "check": "能否讓另一個未知數易算？"
+      "instruction": "先確認方程式中的x、y意義與坐標順序，將候選點完整代入。",
+      "check": "第一分量代x、第二分量代y，沒有交換。"
     },
     {
       "step": 2,
-      "instruction": "代入方程式求另一分量。",
-      "check": "等式是否成立？"
+      "instruction": "分別計算等式左、右兩邊；相等才是解點，不相等就排除。",
+      "check": "負號、係數與初始常數都已完整計入。"
     },
     {
       "step": 3,
-      "instruction": "至少取得兩個不同解點。",
-      "check": "兩點是否真的不同？"
+      "instruction": "找作圖點時可任取一個變數值求另一個，並選至少兩個不同解點。",
+      "check": "兩點各自代回成立，且不是同一點重複。"
     },
     {
       "step": 4,
-      "instruction": "辨認特殊形式。",
-      "check": "x 固定還是 y 固定？"
+      "instruction": "辨認x＝常數為垂直線、y＝常數為水平線，說明另一變數可任意變動。",
+      "check": "沒有因軸名稱而把水平與垂直方向顛倒。"
     },
     {
       "step": 5,
-      "instruction": "說明圖形含所有解。",
-      "check": "是否誤以為只有列出的點？"
+      "instruction": "情境題把坐標翻回變數名稱與單位，並區分代表點和全部解集合。",
+      "check": "答案回應正確物理量，且不宣稱直線只有所選兩點。"
     }
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "求 2x+y=6 的兩組解。",
+      "prompt": "求2x＋y＝6的兩組不同解。",
       "solutionSteps": [
-        "取 x=0 得 y=6。",
-        "取 x=2 得 y=2。"
+        "令x＝0，得到y＝6，所以有點(0,6)。",
+        "令x＝2，得到4＋y＝6，所以有點(2,2)。",
+        "兩點逐一代入皆成立，且彼此不同。"
       ],
-      "answer": "(0,6)、(2,2) 都在圖形上。"
+      "answer": "(0,6)、(2,2)都在圖形上。",
+      "why": "二元方程式允許先自由選一個變數，再由等式求另一個。選零與二得到兩個不同解點，兩次代入左邊都等於六；它們足以畫線，但不是方程式的全部解。"
     },
     {
       "exampleId": "L2",
-      "prompt": "x=-3 的圖形方向。",
+      "prompt": "說明x＝-3的圖形方向。",
       "solutionSteps": [
-        "所有點橫坐標固定 -3。",
-        "縱坐標可任意改變。"
+        "方程式要求所有點的橫坐標固定為-3。",
+        "縱坐標可取任意值，例如(-3,0)、(-3,4)。",
+        "同x的點上下排列，形成垂直直線。"
       ],
-      "answer": "通過 x=-3 的垂直直線。"
+      "answer": "通過x＝-3的垂直直線。",
+      "why": "x固定表示左右位置不變，而y可任意改變，所以所有解點只能沿上下方向延伸。列出兩個同x不同y的點即可看出垂直方向，也說明圖形不只含一個點。"
     },
     {
       "exampleId": "L3",
-      "prompt": "y=4 的圖形方向。",
+      "prompt": "說明y＝4的圖形方向。",
       "solutionSteps": [
-        "所有點縱坐標固定 4。",
-        "橫坐標可任意改變。"
+        "方程式要求所有點的縱坐標固定為4。",
+        "橫坐標可取任意值，例如(0,4)、(5,4)。",
+        "同y的點左右排列，形成水平直線。"
       ],
-      "answer": "通過 y=4 的水平直線。"
+      "answer": "通過y＝4的水平直線。",
+      "why": "y固定表示高度不變，而x可自由改變，所以解點沿左右方向延伸。兩個例點的第二分量都為四，第一分量不同，清楚顯示圖形是水平直線而非垂直線。"
     },
     {
       "exampleId": "L4",
-      "prompt": "3x-2y=12，取 y=0 與 x=0。",
+      "prompt": "對3x－2y＝12，分別令y＝0與x＝0找兩點。",
       "solutionSteps": [
-        "y=0 得 x=4。",
-        "x=0 得 y=-6。"
+        "令y＝0，得3x＝12，所以x＝4，點為(4,0)。",
+        "令x＝0，得-2y＝12，所以y＝-6，點為(0,-6)。",
+        "把兩點代回原式，左邊都等於12。"
       ],
-      "answer": "(4,0)、(0,-6)。"
+      "answer": "(4,0)、(0,-6)。",
+      "why": "令一個分量為零可快速找出兩個軸上的解點。解負係數時要保留y的負號，坐標也依先x後y排列；兩點不同且都滿足方程式，因此可作為畫直線的代表點。"
     }
   ],
   "commonMistakes": [
@@ -235,7 +243,8 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "829f6e7bd000712a6685a2e8c0c3c70b9a5b974ea47c85e33f9867f278108606"
+  "contentSha256": "af666180e1544631f7dd704713266494751d8c09bc75f34d052770f7fd3a48c2",
+  "concept": "二元一次方程式的一組解可寫成有序數對(x,y)，把所有解點標在坐標平面上會形成一條直線。判斷某點是否在圖形上，要把橫、縱坐標完整代入並確認等式成立。作圖常選兩個不同解點來決定直線，但這兩點只是代表，直線上仍有無限多個解點。特殊情形x等於常數形成垂直線，y等於常數形成水平線；坐標順序與變數的情境意義必須固定。"
 };
 
 export const QUESTIONS = [
@@ -263,10 +272,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "將 (2,3) 代入得 2+3=5，等式成立。",
-    "explanation": "將 (2,3) 代入得 2+3=5，等式成立。",
+    "explanation": "一個坐標點在方程式圖形上，表示把它的橫、縱坐標代入後等式成立。逐項相加，(2,3)給二加三等於五；其餘三點的和分別為四、六、六，所以只有(2,3)是一組解。",
     "steps": [
-      "代入每個候選點。",
-      "只有 (2,3) 的和為 5。"
+      "依(x,y)順序把各候選點代入x＋y。",
+      "計算四個候選點的坐標和。",
+      "選出唯一使左邊等於5的點(2,3)。"
     ],
     "optionAnalysis": [
       {
@@ -303,7 +313,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "31471372ea1d51ae2185e73055e7329b9d0e9358afdb56c1a171af8e8f8599b7"
+    "contentSha256": "a5ef9bdaa69de911cf9e49f792ab7a8eff639fcc52585dd635022c3465f7784b",
+    "commonMistake": "只看坐標中是否出現五或接近五，沒有實際把兩個分量相加驗證。"
   },
   {
     "questionId": "u05-s008-v002",
@@ -329,10 +340,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "所有解點的縱坐標都固定為 -2，而橫坐標可變，因此形成水平直線。",
-    "explanation": "所有解點的縱坐標都固定為 -2，而橫坐標可變，因此形成水平直線。",
+    "explanation": "方程式y＝-2把每個解點的縱坐標固定為負二，但橫坐標可以任意改變，例如(0,-2)、(3,-2)都成立。這些點在同一高度向左右延伸，所以形成水平直線，而不是只有一個點。",
     "steps": [
-      "辨認 y 固定。",
-      "x 可任意變動，沿水平方向延伸。"
+      "辨認方程式固定的是縱坐標y。",
+      "列出兩個不同橫坐標的解點，確認y皆為-2。",
+      "由同y、x可變判定圖形為水平直線。"
     ],
     "optionAnalysis": [
       {
@@ -369,7 +381,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "510287e1c3f43a6b65a8da0b14479f40951fca5d8d1c8ed6ff363ebba328f409"
+    "contentSha256": "a399ae417eeb5d255ade9d2ba373d3015006bdcdb224d21009036fa2762d117f",
+    "commonMistake": "看到等式只有一個變數就以為只有一點，或把y固定誤判成垂直線。"
   },
   {
     "questionId": "u05-s008-v003",
@@ -395,10 +408,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "x=4 的所有點第一分量都為 4；(4,-7) 符合。",
-    "explanation": "x=4 的所有點第一分量都為 4；(4,-7) 符合。",
+    "explanation": "x＝4要求所有解點的第一分量都等於四，第二分量y則可取任意值。四個候選中只有(4,-7)的橫坐標是四，所以它在這條垂直直線上；縱坐標等於四的點並不符合x＝4。",
     "steps": [
-      "檢查候選點的 x。",
-      "選第一分量為 4 的點。"
+      "確認坐標順序第一分量是x、第二分量是y。",
+      "逐項檢查候選點的第一分量是否為4。",
+      "選出(4,-7)，並判定其他點橫坐標不符。"
     ],
     "optionAnalysis": [
       {
@@ -435,7 +449,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b03ef5976221a382a3a717d8faadef1cde927e3a65fddbf5a3b42ed5c4606239"
+    "contentSha256": "889165159fd58f711e0ca06665c1e769821e37811b85df2c47bd5c5ef249e89c",
+    "commonMistake": "把x等於四看成第二分量等於四，顛倒了有序數對的橫、縱坐標。"
   },
   {
     "questionId": "u05-s008-v004",
@@ -461,10 +476,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "代入：(0,6) 得 6；(3,0) 得 6，且兩點不同。",
-    "explanation": "代入：(0,6) 得 6；(3,0) 得 6，且兩點不同。",
+    "explanation": "要用兩點表示方程式圖形，兩個點都必須使2x＋y＝6成立，而且彼此不同。(0,6)代入得六，(3,0)代入也得六，且不是同一點；其他組不是重複同點，就是至少有一點代入不成立。",
     "steps": [
-      "逐點代入 2x+y。",
-      "確認兩點不同。"
+      "把每組的第一個點代入2x＋y檢查是否等於6。",
+      "再檢查第二個點，不能只驗證其中一點。",
+      "確認兩個有效點彼此不同，選出(0,6)與(3,0)。"
     ],
     "optionAnalysis": [
       {
@@ -501,7 +517,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "d72654ef0f5320c3b5250e55828df2499f97a76ba5b973bc86ae03d5d2681ab1"
+    "contentSha256": "7549d5de888af4805eb5619b2d32c00984f8c86a3267f989f5ec0ffdda904e60",
+    "commonMistake": "只驗證一個候選點，或重複使用同一點而誤以為足以決定直線。"
   },
   {
     "questionId": "u05-s008-v005",
@@ -527,10 +544,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "令 x=0 得 -2y=12，所以 y=-6，點為 (0,-6)。",
-    "explanation": "令 x=0 得 -2y=12，所以 y=-6，點為 (0,-6)。",
+    "explanation": "題目指定x＝0，代入3x－2y＝12後，三x項消失，留下-2y＝12。兩邊同除以負二得到y＝-6，因此解點依(x,y)順序是(0,-6)。負號不能在除法時漏掉，這個點位於y軸下方並能通過代入檢驗。",
     "steps": [
-      "代入 x=0。",
-      "解 -2y=12。"
+      "把x＝0代入，得到3×0－2y＝12。",
+      "化簡為-2y＝12，兩邊同除以-2得y＝-6。",
+      "依橫、縱順序寫成坐標點(0,-6)。"
     ],
     "optionAnalysis": [
       {
@@ -567,7 +585,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "322d41cbaae4ad6ff11e3228e877048840d4e01a773da6139b92427985f063b5"
+    "contentSha256": "147916c07860cc72a0acf56a32e961108e6784321368ceca181cb31297fa4deb",
+    "commonMistake": "由負二y等於十二解成正六，或把求得的y放到坐標第一分量。"
   },
   {
     "questionId": "u05-s008-v006",
@@ -593,10 +612,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "方程式圖形是全部解點的集合；用來畫線的兩點只是其中兩個代表點。",
-    "explanation": "方程式圖形是全部解點的集合；用來畫線的兩點只是其中兩個代表點。",
+    "explanation": "二元一次方程式的每一組解都可視為坐標點，所有使等式成立的點合起來才是方程式圖形。作圖時選兩個不同解點只是為了決定直線，不代表圖形只有兩點；例如x＝3也是含無限多點的垂直線。",
     "steps": [
-      "回到圖形定義。",
-      "排除解的數量與特殊線方向錯誤。"
+      "回到定義：解點必須使方程式左右相等。",
+      "辨認二元一次方程式通常有無限多組解。",
+      "排除把代表點數當解總數及把x固定判成水平線的敘述。"
     ],
     "optionAnalysis": [
       {
@@ -633,7 +653,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6f1ea073817f1b438b9a9c5715fa822ca9112dfb5f1be86e342bfcf65abcf04d"
+    "contentSha256": "3d82d4741bc221d8275613443d6dab0e53ead1357cef9d5d49f51d89ce75bd5f",
+    "commonMistake": "把作圖時挑選的兩個代表點誤認為全部解，忽略直線上還有其他解點。"
   },
   {
     "questionId": "u05-s008-v007",
@@ -659,10 +680,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "3x=6 可寫成 3x+0y=6，所以 a=3、b=0。",
-    "explanation": "3x=6 可寫成 3x+0y=6，所以 a=3、b=0。",
+    "explanation": "題目已限定方程式正好等價於3x＝6，將它寫成二元形式就是3x＋0y＝6。因此x係數a＝3、y係數b＝0，得到(a,b)＝(3,0)。若b不為零，y會影響解點，不再是垂直線x＝2。",
     "steps": [
-      "比較 x 係數。",
-      "確認 y 係數為 0。"
+      "把3x＝6補寫成3x＋0y＝6。",
+      "和ax＋by＝6逐項比較係數。",
+      "得到a＝3、b＝0，核對圖形為x＝2。"
     ],
     "optionAnalysis": [
       {
@@ -699,7 +721,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "46eeae26d85c824280c0b7f209477d78faeb0b0145373cc2c0b8942e3333beec"
+    "contentSha256": "5873f9e6df833d0c5ae628d2b2a8814b4e099a95eafdfa1c7eb4ef5b95873dfc",
+    "commonMistake": "認為二元方程式的兩個係數都不能為零，因而拒絕垂直線所需的b等於零。"
   },
   {
     "questionId": "u05-s008-v008",
@@ -725,10 +748,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "代入 (0,4)：4k=8，得 k=2；(4,0) 也使 2×4=8，驗證成立。",
-    "explanation": "代入 (0,4)：4k=8，得 k=2；(4,0) 也使 2×4=8，驗證成立。",
+    "explanation": "直線通過(0,4)，表示代入後等式成立：2×0＋4k＝8，所以4k＝8、k＝2。再以另一點(4,0)驗證，2×4＋2×0＝8也成立；第二點本身不能決定k，但能檢查資料一致，兩個已知點確實同在所得直線上。",
     "steps": [
-      "用 (0,4) 求 k。",
-      "用 (4,0) 驗證。"
+      "代入(0,4)，列4k＝8。",
+      "兩邊同除以4，求得k＝2。",
+      "把k＝2與點(4,0)代回，確認左邊等於8。"
     ],
     "optionAnalysis": [
       {
@@ -765,7 +789,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6a74c7b6c74886cf2b3d3d0ae88885a1d5f4320ac3a028efcc98cc89ad0d1099"
+    "contentSha256": "ff89f1dceb5b2bb0e8fbc18a1a35b1f3121b08d08151a08e06070fcf60568b64",
+    "commonMistake": "看到坐標中一個分量為零就直接把另一分量當係數，沒有建立代入等式。"
   },
   {
     "questionId": "u05-s008-v009",
@@ -791,10 +816,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "與 y 軸平行的直線是垂直線，形式為 x=常數；x=-5 符合。",
-    "explanation": "與 y 軸平行的直線是垂直線，形式為 x=常數；x=-5 符合。",
+    "explanation": "y軸本身是垂直方向，和y軸平行的直線也必須垂直。垂直線上每一點的橫坐標固定，所以形式為x＝常數；四個選項中x＝-5符合。y＝-5固定縱坐標，反而是水平線。",
     "steps": [
-      "辨認 y 軸本身為垂直方向。",
-      "選 x 固定的方程式。"
+      "先辨認y軸由上下方向延伸，是垂直線。",
+      "回憶垂直線的方程式形式為x＝常數。",
+      "選出x＝-5，並排除y固定及斜線方程式。"
     ],
     "optionAnalysis": [
       {
@@ -831,7 +857,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c3a91e3760598312fddec0a2e769ff2209f616728433bdd3e1bba43eeca55a25"
+    "contentSha256": "f4d481b4183725e3ce2e720b58928e1102b4f4d29d4cc7f507988a54fabf5a87",
+    "commonMistake": "看到題目寫y軸就選y等於常數，混淆軸的名稱與直線延伸方向。"
   },
   {
     "questionId": "u05-s008-v010",
@@ -857,10 +884,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "購買 5 張時 y=120×5=600，因此 (5,600) 在圖形上。",
-    "explanation": "購買 5 張時 y=120×5=600，因此 (5,600) 在圖形上。",
+    "explanation": "關係式已定義x為張數、y為總價，所以坐標順序是(張數,總價)。購買五張時，總價為120×5＝600元，因此(5,600)在圖形上。單價一百二十不是五張票的總價，也不能交換兩個分量。",
     "steps": [
-      "確認 x 代表張數。",
-      "計算 y=600。"
+      "依題意確認x代表張數、y代表總價。",
+      "代入x＝5，計算y＝120×5＝600。",
+      "依(x,y)順序組成(5,600)，代回關係式驗證。"
     ],
     "optionAnalysis": [
       {
@@ -897,7 +925,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e309821c4c281005f1473f3984a7a81d89c1281a2d6891752b2361fa55b9dcc9"
+    "contentSha256": "e88a85a7fed837f28c17762bc63044fcb7096452130bfdfbe31baf3fc56e4075",
+    "commonMistake": "把每張單價一百二十直接當成總價，或將張數與金額在坐標中對調。"
   },
   {
     "questionId": "u05-s008-v011",
@@ -923,10 +952,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x=10 時 y=50+8×10=130，所以點為 (10,130)。",
-    "explanation": "x=10 時 y=50+8×10=130，所以點為 (10,130)。",
+    "explanation": "x表示經過的分鐘數，y表示總水量。十分鐘增加8×10＝80公升，再加原有五十公升，得到y＝130；所以圖形上的點是(10,130)。初始量不能漏掉，坐標也不能寫成(水量,時間)。",
     "steps": [
-      "代入時間 10。",
-      "依 (時間,水量) 排列。"
+      "把時間x＝10代入y＝50＋8x。",
+      "計算增加量80，再加初始量50得y＝130。",
+      "依(時間,水量)寫成(10,130)並核對單位。"
     ],
     "optionAnalysis": [
       {
@@ -963,7 +993,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "df6b958edbc4b0916238df885ef451f21a2b4b4e30434b56e27bd2ef347b103c"
+    "contentSha256": "1bb6e42f8f6e3bb0c9e365f100ede8e280ec7eb111d167790ac203d5332d0164",
+    "commonMistake": "只計算十分鐘增加的八十公升，忘記水箱原有五十公升，或交換坐標順序。"
   },
   {
     "questionId": "u05-s008-v012",
@@ -989,10 +1020,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "代入 (1,8) 得 4+16=20；代入 (3,4) 得 12+8=20，所以兩點都在直線上。",
-    "explanation": "代入 (1,8) 得 4+16=20；代入 (3,4) 得 12+8=20，所以兩點都在直線上。",
+    "explanation": "每個校正點都要完整代入4x＋2y。對(1,8)，左邊為四加十六等於二十；對(3,4)，左邊為十二加八也等於二十。因此兩點都在同一條直線上，不能只心算第一點就推測第二點。",
     "steps": [
-      "代入第一點得 20。",
-      "代入第二點也得 20。"
+      "代入(1,8)，計算4×1＋2×8＝20。",
+      "代入(3,4)，計算4×3＋2×4＝20。",
+      "兩次皆等於右邊20，判定兩點都在直線上。"
     ],
     "optionAnalysis": [
       {
@@ -1029,7 +1061,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "945807a1852177383c4b03b39ef9de40eea2c0ede3e9dc86755585d4f0cf88b8"
+    "contentSha256": "ba4019a807f919d7f117e37308280e4b66f74322d4191b7c22a5a8ad45ff040b",
+    "commonMistake": "驗證完一個點就停止，沒有對另一個點進行獨立代入與等式檢查。"
   }
 ];
 
@@ -1051,19 +1084,19 @@ export const CONSTRUCTED_RESPONSES = [
       "代入驗證。"
     ],
     "fullCreditSolution": [
-      "令 x=0，得 (0,6)，在 y 軸上。",
-      "令 y=0，得 (3,0)，在 x 軸上。",
-      "再取 x=1，得 y=4，所以第三點可為 (1,4)。",
-      "驗證：0+6=6；2×3+0=6；2×1+4=6。"
+      "要找y軸上的點，令x＝0；代入2x＋y＝6得y＝6，所以第一點是(0,6)。",
+      "要找x軸上的點，令y＝0；代入得2x＝6，所以x＝3，第二點是(3,0)。",
+      "再任取不同的x，例如x＝1，得到2＋y＝6，所以y＝4，第三點可取(1,4)。",
+      "逐點驗證：0＋6＝6、2×3＋0＝6、2×1＋4＝6；三點不同且符合軸上條件。"
     ],
     "alternativeSolutions": [
       "第三點也可選 (2,2)、(-1,8) 等任何不同解點。"
     ],
     "reasoningSteps": [
-      "令 x=0，得 (0,6)，在 y 軸上。",
-      "令 y=0，得 (3,0)，在 x 軸上。",
-      "再取 x=1，得 y=4，所以第三點可為 (1,4)。",
-      "驗證：0+6=6；2×3+0=6；2×1+4=6。"
+      "令x為零求y軸上的解點。",
+      "令y為零求x軸上的解點。",
+      "另選一個x值求第三個不同解點。",
+      "將三點逐一代回，並檢查互不重複。"
     ],
     "rubric": [
       {
@@ -1090,8 +1123,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "每個解寫成 (x,y)，至少明確標出一個 x 軸點 y=0 與一個 y 軸點 x=0。",
     "answerOnlyPolicy": "只列三個正確解點但沒有逐點代入驗證，最高給 2 分。",
     "commonErrors": [
-      "把 (0,3) 當 x 軸點。",
-      "列三個點但未保持不同。"
+      "把x等於零所得點誤說成x軸點，混淆哪個分量為零時落在哪條軸。",
+      "列出三次相同坐標或只驗證其中一點，沒有滿足三個不同解點與逐點驗證。"
     ],
     "independentReview": {
       "derivedResult": "某一自選第三點錯誤不影響兩個截軸點得分。",
@@ -1101,7 +1134,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "98e026b5b75e64ffd889f259e22932fae065f6e9edbf069da37f6f1be242157b"
+    "contentSha256": "c720e8b8c2f0528acb31c62721768feebe8abc2f30bedc41e2c0aed43f2d5107"
   },
   {
     "questionId": "u05-s008-cr002",
@@ -1120,17 +1153,19 @@ export const CONSTRUCTED_RESPONSES = [
       "說明兩個不同點決定一條直線。"
     ],
     "fullCreditSolution": [
-      "A 代入得 2a+2=8，所以 2a=6，a=3。",
-      "B 代入得 0+8=8，與 a 無關且成立。",
-      "A、B 是兩個不同解點；二元一次方程式圖形是直線，兩個不同點可決定該直線。"
+      "把A=(2,1)代入ax＋2y＝8，得到2a＋2＝8，所以2a＝6、a＝3。",
+      "把B=(0,4)代入檢查，得到a×0＋2×4＝8，對任何a都成立，也與a＝3一致。",
+      "當a＝3時方程式為3x＋2y＝8，A、B確實是兩個不同的解點。",
+      "二元一次方程式的圖形是一條直線；兩個不同點可唯一決定這條直線，但直線仍包含無限多個解點。"
     ],
     "alternativeSolutions": [
       "也可先寫方程式 3x+2y=8，再驗證兩點。"
     ],
     "reasoningSteps": [
-      "A 代入得 2a+2=8，所以 2a=6，a=3。",
-      "B 代入得 0+8=8，與 a 無關且成立。",
-      "A、B 是兩個不同解點；二元一次方程式圖形是直線，兩個不同點可決定該直線。"
+      "用含a且x不為零的點A建立方程式求a。",
+      "把點B代回，說明它提供一致性檢查但不單獨決定a。",
+      "確認A、B是兩個不同解點。",
+      "說明兩點決定直線不等於直線只有兩個點。"
     ],
     "rubric": [
       {
@@ -1157,8 +1192,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "參數寫成 a=3；代入點時保留有序對順序，並說明 A、B 為相異點。",
     "answerOnlyPolicy": "只寫 a=3 而沒有代入及兩點代表性的說明，最高給 1 分。",
     "commonErrors": [
-      "用 B 得 a=4。",
-      "認為直線只有這兩個點。"
+      "用B的坐標直接得a＝4，忽略B的x為零使ax項完全消失。",
+      "正確找出兩點後卻宣稱方程式只有這兩組解，混淆代表點與全部解集合。"
     ],
     "independentReview": {
       "derivedResult": "若 a 算錯但能正確說明兩點決定直線，可保留概念分。",
@@ -1168,14 +1203,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b578db13271491cd4a86f76e41e823df0e74b5d4e1fee2425f8c9fe806d7f58c"
+    "contentSha256": "8c2e7fab57c25837e34c91c182c25b3e6d0cbfa4fb8e87a79fcebd76e9900607"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s008-v001",
-    "contentSha256": "31471372ea1d51ae2185e73055e7329b9d0e9358afdb56c1a171af8e8f8599b7",
+    "contentSha256": "a5ef9bdaa69de911cf9e49f792ab7a8eff639fcc52585dd635022c3465f7784b",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "將 (2,3) 代入得 2+3=5，等式成立。",
     "derivedAnswer": "(2,3)",
@@ -1207,7 +1242,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v002",
-    "contentSha256": "510287e1c3f43a6b65a8da0b14479f40951fca5d8d1c8ed6ff363ebba328f409",
+    "contentSha256": "a399ae417eeb5d255ade9d2ba373d3015006bdcdb224d21009036fa2762d117f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "所有解點的縱坐標都固定為 -2，而橫坐標可變，因此形成水平直線。",
     "derivedAnswer": "水平直線",
@@ -1239,7 +1274,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v003",
-    "contentSha256": "b03ef5976221a382a3a717d8faadef1cde927e3a65fddbf5a3b42ed5c4606239",
+    "contentSha256": "889165159fd58f711e0ca06665c1e769821e37811b85df2c47bd5c5ef249e89c",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=4 的所有點第一分量都為 4；(4,-7) 符合。",
     "derivedAnswer": "(4,-7)",
@@ -1271,7 +1306,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v004",
-    "contentSha256": "d72654ef0f5320c3b5250e55828df2499f97a76ba5b973bc86ae03d5d2681ab1",
+    "contentSha256": "7549d5de888af4805eb5619b2d32c00984f8c86a3267f989f5ec0ffdda904e60",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入：(0,6) 得 6；(3,0) 得 6，且兩點不同。",
     "derivedAnswer": "(0,6) 與 (3,0)",
@@ -1303,7 +1338,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v005",
-    "contentSha256": "322d41cbaae4ad6ff11e3228e877048840d4e01a773da6139b92427985f063b5",
+    "contentSha256": "147916c07860cc72a0acf56a32e961108e6784321368ceca181cb31297fa4deb",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "令 x=0 得 -2y=12，所以 y=-6，點為 (0,-6)。",
     "derivedAnswer": "(0,-6)",
@@ -1335,7 +1370,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v006",
-    "contentSha256": "6f1ea073817f1b438b9a9c5715fa822ca9112dfb5f1be86e342bfcf65abcf04d",
+    "contentSha256": "3d82d4741bc221d8275613443d6dab0e53ead1357cef9d5d49f51d89ce75bd5f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "方程式圖形是全部解點的集合；用來畫線的兩點只是其中兩個代表點。",
     "derivedAnswer": "二元一次方程式的圖形包含所有使等式成立的點",
@@ -1367,7 +1402,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v007",
-    "contentSha256": "46eeae26d85c824280c0b7f209477d78faeb0b0145373cc2c0b8942e3333beec",
+    "contentSha256": "5873f9e6df833d0c5ae628d2b2a8814b4e099a95eafdfa1c7eb4ef5b95873dfc",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "3x=6 可寫成 3x+0y=6，所以 a=3、b=0。",
     "derivedAnswer": "(3,0)",
@@ -1399,7 +1434,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v008",
-    "contentSha256": "6a74c7b6c74886cf2b3d3d0ae88885a1d5f4320ac3a028efcc98cc89ad0d1099",
+    "contentSha256": "ff89f1dceb5b2bb0e8fbc18a1a35b1f3121b08d08151a08e06070fcf60568b64",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入 (0,4)：4k=8，得 k=2；(4,0) 也使 2×4=8，驗證成立。",
     "derivedAnswer": "2",
@@ -1431,7 +1466,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v009",
-    "contentSha256": "c3a91e3760598312fddec0a2e769ff2209f616728433bdd3e1bba43eeca55a25",
+    "contentSha256": "f4d481b4183725e3ce2e720b58928e1102b4f4d29d4cc7f507988a54fabf5a87",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "與 y 軸平行的直線是垂直線，形式為 x=常數；x=-5 符合。",
     "derivedAnswer": "x=-5",
@@ -1463,7 +1498,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v010",
-    "contentSha256": "e309821c4c281005f1473f3984a7a81d89c1281a2d6891752b2361fa55b9dcc9",
+    "contentSha256": "e88a85a7fed837f28c17762bc63044fcb7096452130bfdfbe31baf3fc56e4075",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "購買 5 張時 y=120×5=600，因此 (5,600) 在圖形上。",
     "derivedAnswer": "(5,600)",
@@ -1495,7 +1530,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v011",
-    "contentSha256": "df6b958edbc4b0916238df885ef451f21a2b4b4e30434b56e27bd2ef347b103c",
+    "contentSha256": "1bb6e42f8f6e3bb0c9e365f100ede8e280ec7eb111d167790ac203d5332d0164",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=10 時 y=50+8×10=130，所以點為 (10,130)。",
     "derivedAnswer": "(10,130)",
@@ -1527,7 +1562,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s008-v012",
-    "contentSha256": "945807a1852177383c4b03b39ef9de40eea2c0ede3e9dc86755585d4f0cf88b8",
+    "contentSha256": "ba4019a807f919d7f117e37308280e4b66f74322d4191b7c22a5a8ad45ff040b",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "代入 (1,8) 得 4+16=20；代入 (3,4) 得 12+8=20，所以兩點都在直線上。",
     "derivedAnswer": "兩點都在直線上",

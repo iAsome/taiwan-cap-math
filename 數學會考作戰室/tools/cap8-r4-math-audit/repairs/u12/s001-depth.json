@@ -1,0 +1,34 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u12",
+  "batch":"013-u12-complete",
+  "skills":["s001"],
+  "mc":[
+    {"questionId":"u12-s001-v001","expectedContentSha256":"12a9a89daaa3e4a41257cc3b01e8c19f7d858f476f5b186d8ccad7c4c53985b3","appendText":{"explanation":"先把三視為候選共同因式，再逐項相除得到二倍未知數與三；回展時三分別乘回兩項，係數六與常數九都恢復，證明分解等值且已提出最大數字公因式。","misconceptionTarget":"判斷可提出的字母前，還要確認多項式的每一項都含有該字母。"}},
+    {"questionId":"u12-s001-v002","expectedContentSha256":"58c4fce978b35e7df6102710af4ec2d892d13568b2a9b76f9dd00b3be970d0a5","appendText":{"explanation":"將六倍的甲乙分別除進兩個單項式，所得商為二甲與三乙，確定係數六和兩個一次字母都能整除；若提高任一字母次方，就會無法整除含一次方的那一項。","misconceptionTarget":"共同字母的次方必須取各項較小的指數，才能同時整除兩個單項式。"}},
+    {"questionId":"u12-s001-v003","expectedContentSha256":"1e16572e5e001d1a8a7449b1a7d50befcadb89a3ab5e14d2627fe36afffda4f8","appendText":{"explanation":"四倍平方項同時整除八倍三次項與十二倍平方項，兩個商依序是二倍一次項與三；括號內係數互質且沒有共同未知數，所以不只是等值，也已完成最大公因式分解。"}},
+    {"questionId":"u12-s001-v004","expectedContentSha256":"3c9cb8f3499559f29e22547250e7b08d23937f8b779044f9abb7f3764487e2c7","appendText":{"explanation":"題目指定括號首項為正，因此把負五倍未知數提出；第一項除後為正三倍未知數，第二項除以負數後為負二，展開時負五乘負二回到正十，符號與原式一致。"}},
+    {"questionId":"u12-s001-v005","expectedContentSha256":"8253fb211b13a50bb112e37745ebdf6dd509f4903f235dff98f89029903a86f8","appendText":{"explanation":"把整個差式暫記為同一因式後，原式就是三倍未知數乘該因式再加五乘該因式；由分配律逆向提出，括號中保留三倍未知數與五，兩項不能錯合併。"}},
+    {"questionId":"u12-s001-v006","expectedContentSha256":"1f4a0eb236b079e1292076a186ad5a4337d83ada57e61e50ce6cbbd93f94001b","appendText":{"explanation":"三個係數的最大公因數是三，且每項至少各含一個甲與一個乙；逐項相除得到二甲、負三乙與四，將三倍甲乙乘回三個商，係數、次方與負號都回到原式。"}},
+    {"questionId":"u12-s001-v007","expectedContentSha256":"2275b9c79f2699745ed45217f203cb66d708e3681e8436347589436a55dcf6ec","appendText":{"explanation":"兩項都含完整的和式而外層分別是二倍甲與負三倍乙，所以提出共同和式後必須原樣保留這兩個不同係數；重新分配可逐項恢復原式，負號也不會消失。"}},
+    {"questionId":"u12-s001-v008","expectedContentSha256":"5fa4c7f5a91d8489eed250fb18238a49159ca24a48de429e199314ef633a684c","appendText":{"explanation":"係數二十與三十的最大公因數是十，兩項的甲最低次方與乙最低次方都為二；提出後的二甲與負三乙沒有共同字母或數字，回展也正好恢復兩個原項。"}},
+    {"questionId":"u12-s001-v009","expectedContentSha256":"b9828b4cbbd7659b1e5ed1eb65f44434c3e5748a715c731090d61225e7cca75e","appendText":{"explanation":"兩項除了係數二與一次未知數外，還共同含整個差式，因此一次提出二倍未知數乘差式最完整；兩項相除後成為二倍未知數與三，括號內已無共同因式。"}},
+    {"questionId":"u12-s001-v010","expectedContentSha256":"8702ddc7a5ca57b26c0cf1d02cb7b65315c60c70c2cd1e81ac98004c5f5f2a25","appendText":{"explanation":"十四倍未知數與二十一都可改寫成七公分乘份數，前者是二倍未知數份、後者是三份；提出七公分後括號表示總份數，展開仍得到原本兩段總長。","misconceptionTarget":"共同長度是括號外的單位量，括號內則表示各段換算後的份數。"}},
+    {"questionId":"u12-s001-v011","expectedContentSha256":"8882dde030f2fea3907edae7e4a51c8f895e229b2c06519fdd781d8c75265d76","appendText":{"explanation":"共同高度六倍未知數分別除進兩區面積，左區寬為三倍未知數、右區寬為五；並排後總寬只能相加成三倍未知數加五，面積式本身不能誤當成長度。"}},
+    {"questionId":"u12-s001-v012","expectedContentSha256":"a5eae26c30f4c131380378dd3fe2ade4e8672135f70d363dccd42a95acd30b90","appendText":{"explanation":"數字部分二十四與三十六的最大公因數為十二，兩式都含一次甲但只有第一式含乙；除以十二甲後批數為二乙與三，題設正整數條件確保兩者都是整批。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u12-s001-cr001","expectedContentSha256":"e3cee54de84bad65e854e626cc9cc2e55c7b3ff02098a7f9cc7004a9184cf477","appendArray":{"fullCreditSolution":["完整檢查時，十二同時整除三個係數，甲與乙的最低次方都為二；三項除以十二甲平方乙平方依序得到二甲、負三乙與一。括號內沒有共同因式，再把外因式分配回三項，可逐一恢復原係數、次方與符號。"]}},
+    {"questionId":"u12-s001-cr002","expectedContentSha256":"c04309fbfeeed362450c02953fa7c6d42814661fe6cc1719533b587fa38a339e","appendArray":{"fullCreditSolution":["三項共同含完整的甲減乙，外層數字八、十二、四的最大公因數是四，而甲與丙並非每項都有；因此一次提出四乘甲減乙後，商為二甲、負三丙與一。括號內已無共同部分，展開即可回到原式。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u12-s001-lecture-r1","expectedContentSha256":"79e5c2d059fdb0782b650d0194316723ec14df26e28abf521f178c341a638171","set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"18x+24","solutionSteps":["18 與 24 的最大公因數是 6。","兩項都沒有共同字母。","18x÷6=3x，24÷6=4。"],"answer":"6(3x+4)","why":"十八與二十四能同時被六整除，未知數只出現在第一項所以不能提出；逐項相除後，六乘三倍未知數與六乘四恰好還原兩項，括號內三與四互質。"},
+      {"exampleId":"L2","prompt":"12a²b-18ab²","solutionSteps":["係數公因數為 6。","字母共同有 a、b，最低次方各為 1。","除回括號得到 2a 與 -3b。"],"answer":"6ab(2a-3b)","why":"係數取六，甲與乙都必須取較低的一次方，才能同時整除兩項；除後二甲與負三乙沒有共同字母，展開會恢復十二甲平方乙與負十八甲乙平方。"},
+      {"exampleId":"L3","prompt":"-14y³+21y²","solutionSteps":["共同部分可取 7y²。","提出 -7y² 使括號首項為正。","展開 -7y²(2y-3) 得原式。"],"answer":"-7y²(2y-3)","why":"提出負七乙平方是為了讓括號首項成為正二乙；第二項除以負因式後為負三，負七再乘負三會回到正二十一，這能同時檢查負號與最低次方。"},
+      {"exampleId":"L4","prompt":"5m(m+2)-3(m+2)","solutionSteps":["兩項共同因式不是單一字母，而是整個括號 m+2。","分別除以 m+2 得 5m 與 -3。"],"answer":"(m+2)(5m-3)","why":"兩項共享的是完整括號而不是括號中的單一項，把它視為一個因式後，外層商為五倍未知數與負三；重新分配共同括號即可逐項回到原式。"}
+    ]},"appendArray":{"conceptNarrative":["提公因式要同時處理數字、字母與完整括號：係數取所有項都能整除的最大公因數，字母只保留每項共有者且次方取最低，括號則必須整體重複才可提出。每一項除以公因式所得的商都要完整寫入括號；若提出負因式，所有商的符號都會改變。最後以分配律逐項乘回，並確認括號內已無共同因式，才能判定分解既等值又完整。"]}}
+  ],
+  "drawingSpecs":[],
+  "textFiles":[]
+}

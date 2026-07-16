@@ -130,7 +130,8 @@
         "總距離700π cm。"
       ],
       "answer": "700π cm。",
-      "level": "basic"
+      "level": "basic",
+      "why": "無滑動時輪子每轉一圈前進一個圓周長，直徑70給出70π cm；乘10圈得到700π cm，模型屬長度而非面積。換算成7π m也能與公分答案互相核對。"
     },
     {
       "exampleId": "s018-L2",
@@ -139,7 +140,8 @@
         "面積=1/3×36π。"
       ],
       "answer": "12π m²。",
-      "level": "standard"
+      "level": "standard",
+      "why": "灑水器掃過的是扇形面積，120°占整圓三分之一；半徑6的整圓面積36π取三分之一，即12π m²。剩餘240°面積24π，兩部分合回36π。"
     },
     {
       "exampleId": "s018-L3",
@@ -148,7 +150,8 @@
         "弧長=20π m。"
       ],
       "answer": "20π m。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "半圓彎道的弧長等於πr，半徑20時為20π m；題目只算彎道曲線，因此不把直徑再加入。半圓只取整圓周的一半，倍率方向正確。"
     },
     {
       "exampleId": "s018-L4",
@@ -158,7 +161,8 @@
         "桌布半徑0.7 m。"
       ],
       "answer": "0.7 m。",
-      "level": "connection"
+      "level": "connection",
+      "why": "桌面直徑1.2 m先除以2得半徑0.6 m，桌布在半徑方向多出0.1 m，所以所需半徑為0.7 m。桌布直徑因此為1.4 m，也大於桌面直徑。"
     }
   ],
   "difficultyConnections": {
@@ -208,7 +212,7 @@
     {
       "figureId": "u19-s018-fig001",
       "purpose": "左側輪子以箭頭表示滾動一圈，右側灑水器以扇形表示旋轉覆蓋，對比長度與面積模型。",
-      "altText": "左側輪子以箭頭表示滾動一圈，右側灑水器以扇形表示旋轉覆蓋，對比長度與面積模型。，不可按比例目測。"
+      "altText": "左側輪子以箭頭表示滾動一圈，右側灑水器以扇形表示旋轉覆蓋，對比長度與面積模型，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -243,5 +247,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "9292edeb6f5c52fd88821858fccd3892d99879b7ff04ceff01795f039a871106"
+  "contentSha256": "e55e584c5c5197d81a367e53578d9eb5156acd9cae42027f0083bde65b472191"
 }

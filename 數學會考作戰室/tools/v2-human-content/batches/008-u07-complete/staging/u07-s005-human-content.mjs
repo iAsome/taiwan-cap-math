@@ -50,7 +50,8 @@ export const LECTURE = {
     "先用 5>2 觀察：兩邊乘 −1 得 −5<−2，大小次序倒轉。",
     "乘除負數會同時做「縮放」與「關於 0 的翻轉」，因此不等號必須反向，才能保留原解集。",
     "移項只是兩邊同加減，不會變號；只有整個不等式兩邊同乘或同除負數時才變號。",
-    "乘除正數方向不變；乘除 0 會失去資訊，不能用來解不等式。"
+    "乘除正數方向不變；乘除 0 會失去資訊，不能用來解不等式。",
+    "變號規則應由實際操作判斷而非負號外觀；完成除法後要同時計算端點正負，並用解集內、端點及解集外的數回代原式，確認方向沒有翻錯。"
   ],
   "formalDefinitions": [
     {
@@ -87,61 +88,74 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先整理未知數項。",
-      "check": "目前是否真的要乘或除負數？"
+      "instruction": "先以同加減整理出未知數項。",
+      "check": "移項本身不反向不等號。"
     },
     {
       "step": 2,
-      "instruction": "執行負數乘除並同時反向不等號。",
-      "check": "＞與＜互換，≥與≤互換。"
+      "instruction": "辨認最後乘數或除數的正負。",
+      "check": "只有負數乘除需要反向。"
     },
     {
       "step": 3,
-      "instruction": "寫成 x 在左側的標準形式。",
-      "check": "端點正負號是否正確？"
+      "instruction": "除以負係數時同步反向並計算端點。",
+      "check": "數值正負和符號方向都已處理。"
     },
     {
       "step": 4,
-      "instruction": "取一個解集內的值代回原式。",
-      "check": "若未變號，代入是否會失敗？"
+      "instruction": "把結果改寫成x在左的標準範圍。",
+      "check": "交換左右仍維持同一大小語意。"
+    },
+    {
+      "step": 5,
+      "instruction": "取解集內、端點及外部值回原式驗算。",
+      "check": "三個測試值的真假符合答案。"
     }
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "解 −2x>8。",
+      "prompt": "解-2x>8。",
       "solutionSteps": [
-        "兩邊同除以 −2。",
-        "因除以負數，＞改成＜，得到 x<−4。"
+        "兩邊同除以-2。",
+        "因除負數將>反成<。",
+        "得到x<-4並用-5、-4驗算。"
       ],
-      "answer": "x<−4。"
+      "answer": "x<-4。",
+      "why": "除以負二會把數線左右次序翻轉，因此必須同時反向不等號。負五代入使十>八成立，端點負四使兩邊相等而不成立，驗證嚴格向左範圍。"
     },
     {
       "exampleId": "L2",
-      "prompt": "解 6−3x≤15。",
+      "prompt": "解6-3x≤15。",
       "solutionSteps": [
-        "兩邊同減 6，得 −3x≤9。",
-        "除以 −3 並反向，得 x≥−3。"
+        "同減6得-3x≤9。",
+        "除以-3並把≤反成≥。",
+        "得到x≥-3，以-3、-4驗算。"
       ],
-      "answer": "x≥−3。"
+      "answer": "x≥-3。",
+      "why": "整理常數的同減六不會變號，真正需要反向的是最後除以負三。端點負三讓兩邊相等而成立，負四則使左式十八大於十五而失敗。"
     },
     {
       "exampleId": "L3",
-      "prompt": "解 4x−7>6x+1。",
+      "prompt": "解4x-7>6x+1。",
       "solutionSteps": [
-        "兩邊同減 6x，得 −2x−7>1。",
-        "加 7 得 −2x>8；除以 −2 變號。"
+        "同減6x得-2x-7>1。",
+        "同加7得-2x>8。",
+        "除以-2反向得x<-4並驗算。"
       ],
-      "answer": "x<−4。"
+      "answer": "x<-4。",
+      "why": "兩邊有未知數時先集中會得到負係數，但前兩次同加減仍不改方向。只有除以負二時才反向；以負五及負四代入可確認端點和方向。"
     },
     {
       "exampleId": "L4",
-      "prompt": "說明為何 −5<−2。",
+      "prompt": "說明為何-5<-2。",
       "solutionSteps": [
-        "原本 5>2。",
-        "兩邊乘 −1 後，數線位置左右對調。"
+        "從已知5>2開始。",
+        "兩邊同乘-1得到-5與-2。",
+        "負數乘法翻轉次序，所以改成-5<-2。"
       ],
-      "answer": "乘負數使大小順序反轉。"
+      "answer": "乘負數使大小順序反轉。",
+      "why": "乘負一相當於把數線上的點關於零鏡射，原來右側的五會移到更左的負五，原來的二移到負二。因此原本的大於必須改成小於，才能保持真值。"
     }
   ],
   "commonMistakes": [
@@ -229,7 +243,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "4eb9bdf939159c8219d3ad606d53eb66f3c0eb994fdecb9703d22d15caa509ed"
+  "contentSha256": "482e2f20b20c8813de0c18023947007a043f81f52df85b471bd24fad19e1dfc0"
 };
 
 export const QUESTIONS = [
@@ -259,10 +273,11 @@ export const QUESTIONS = [
       "result": "x<−4",
       "answerIndexVerified": 0
     },
-    "explanation": "兩邊同除以 −3，不等號必須反向，所以 x<−4。",
+    "explanation": "兩邊同除以 −3，不等號必須反向，所以 x<−4。 端點-4使左右相等而不符合嚴格大於；取-5時左式15>12成立，驗證向左範圍，而較大的零代入不成立。",
     "steps": [
       "除以負數 −3",
-      "將 > 反向為 <"
+      "將 > 反向為 <",
+      "用-5與-4代回原式，檢查方向及端點排除。"
     ],
     "optionAnalysis": [
       {
@@ -286,7 +301,7 @@ export const QUESTIONS = [
         "reason": "方向與端點都錯。"
       }
     ],
-    "misconceptionTarget": "除以負數時忘記反向。",
+    "misconceptionTarget": "除以負數時忘記反向。 也可能正確反向後把十二除負三的端點錯算成正四。",
     "prerequisiteCheck": "需會整數除法與變號。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "無單位。",
@@ -302,7 +317,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "115d5086e0b70cf38936c83a5302968f607779dc7a567da0cd42f633bbe185b5"
+    "contentSha256": "2f50171847350666030af5b610b03a120a3b86580350ef9e1d62967a8338bb48"
   },
   {
     "questionId": "u07-s005-v002",
@@ -330,10 +345,11 @@ export const QUESTIONS = [
       "result": "x≥−7",
       "answerIndexVerified": 2
     },
-    "explanation": "兩邊同除以 −1，≤ 反向為 ≥，得到 x≥−7。",
+    "explanation": "兩邊同除以 −1，≤ 反向為 ≥，得到 x≥−7。 x=-7使兩邊相等而成立，x=-8也成立，x=0亦成立，確認是含端點的右向範圍。負號消去等同兩邊同乘負一並反向。",
     "steps": [
       "除以 −1",
-      "≤ 變為 ≥"
+      "≤ 變為 ≥",
+      "代入-7、-8與0，交叉確認x≥-7。"
     ],
     "optionAnalysis": [
       {
@@ -357,7 +373,7 @@ export const QUESTIONS = [
         "reason": "選項「x>−7」漏含端點。，與獨立解得的「x≥−7」不一致。"
       }
     ],
-    "misconceptionTarget": "只改數值正負而沒有改不等號。",
+    "misconceptionTarget": "只改數值正負而沒有改不等號。 還可能只把-x改為x，卻忘記右邊七也要乘負一。",
     "prerequisiteCheck": "需會相反數。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "無單位。",
@@ -373,7 +389,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "904501e3ab10322432e512b78d915481aceb3aeb816384844e382897fca6d4a3"
+    "contentSha256": "1e1405aa45cc62bab7bac6530a336e3b4a3405b45fa0562ad96fc6739da7a1cb"
   },
   {
     "questionId": "u07-s005-v003",
@@ -401,10 +417,11 @@ export const QUESTIONS = [
       "result": "−8<−2",
       "answerIndexVerified": 1
     },
-    "explanation": "4×(−2)=−8，1×(−2)=−2；乘負數後方向反轉，所以 −8<−2。",
+    "explanation": "4×(−2)=−8，1×(−2)=−2；乘負數後方向反轉，所以 −8<−2。 數線上-8位於-2左側，故原來較大的4乘負二後反而變成較小的-8。這正是負數乘法反轉大小次序的具體例子。",
     "steps": [
       "計算兩個乘積",
-      "將 > 反向為 <"
+      "將 > 反向為 <",
+      "計算兩乘積並在數線比較-8與-2的位置。"
     ],
     "optionAnalysis": [
       {
@@ -428,7 +445,7 @@ export const QUESTIONS = [
         "reason": "乘積正負與題意不符。"
       }
     ],
-    "misconceptionTarget": "只計算乘積，不處理次序反轉。",
+    "misconceptionTarget": "只計算乘積，不處理次序反轉。 也可能把兩邊乘積算成正八與正二，漏掉乘數的負號。",
     "prerequisiteCheck": "需會負數乘法。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "無單位。",
@@ -444,7 +461,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "f7d0aa9494ea5303aa1c7272fc3dc86bd1906429fc69b3e02ae19f9db086c81f"
+    "contentSha256": "e21cc34a922828f3008fea5920601fc6f4eb37983c3b378cd84cf762dac821d2"
   },
   {
     "questionId": "u07-s005-v004",
@@ -472,10 +489,11 @@ export const QUESTIONS = [
       "result": "x≤−3",
       "answerIndexVerified": 3
     },
-    "explanation": "兩邊同減 5 得 −2x≥6；除以 −2 並反向，得 x≤−3。",
+    "explanation": "兩邊同減 5 得 −2x≥6；除以 −2 並反向，得 x≤−3。 原式先同減五得負二x大於等於六，再除負二得x小於等於負三。x=-3代入左式11而成立，x=-2使左式9不足11。",
     "steps": [
       "移常數",
-      "除負係數變號"
+      "除負係數變號",
+      "代入-3與-2驗證端點及x≤-3方向。"
     ],
     "optionAnalysis": [
       {
@@ -499,7 +517,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「x≤−3」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "6÷(−2) 的正負或 ≥ 反向錯誤。",
+    "misconceptionTarget": "6÷(−2) 的正負或 ≥ 反向錯誤。 還可能只反向不等號，卻把六除負二的端點寫成正三。",
     "prerequisiteCheck": "需會移項與負數除法。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "無單位。",
@@ -515,7 +533,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "94e6978d56651612d11a17f250f8f09712bb02c93cd27bde9e8e010f834dfd7e"
+    "contentSha256": "3ea5b87ee6e7f4f99530db5a1c7d2f754e48099ed32c557824153deda2fe0123"
   },
   {
     "questionId": "u07-s005-v005",
@@ -543,10 +561,11 @@ export const QUESTIONS = [
       "result": "x>−4",
       "answerIndexVerified": 2
     },
-    "explanation": "兩邊同加 1 得 −4x<16；除以 −4 時 < 反向成 >，所以 x>−4。",
+    "explanation": "兩邊同加 1 得 −4x<16；除以 −4 時 < 反向成 >，所以 x>−4。 x=-4使左右同為15而不符合嚴格小於，x=0使-1<15成立，確認向右且空心，所以解集從負四右方開始。",
     "steps": [
       "同加 1",
-      "除以負數變號"
+      "除以負數變號",
+      "用-4與0代入原式，檢查嚴格端點和右向範圍。"
     ],
     "optionAnalysis": [
       {
@@ -570,7 +589,7 @@ export const QUESTIONS = [
         "reason": "方向錯且含端點。"
       }
     ],
-    "misconceptionTarget": "只注意端點 −4，未正確決定方向。",
+    "misconceptionTarget": "只注意端點 −4，未正確決定方向。 還可能只求出端點-4，沒有用測試值決定射線方向。",
     "prerequisiteCheck": "需會加法與負數除法。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "無單位。",
@@ -586,7 +605,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6d546546c8f9cf90fb88e1467532fea61c78704b6759a8d80c5068d39d55285b"
+    "contentSha256": "07cc2e3a6cd8a0aaa530947970d516543217b5369eefe338827efcd1378a63f1"
   },
   {
     "questionId": "u07-s005-v006",
@@ -614,10 +633,11 @@ export const QUESTIONS = [
       "result": "兩邊同除以 −3",
       "answerIndexVerified": 1
     },
-    "explanation": "只有同除以 −3 是乘除負數；同加減任何數與同乘正數都不改方向。",
+    "explanation": "只有同除以 −3 是乘除負數；同加減任何數與同乘正數都不改方向。 加減負數仍是平移且保序；只有除以負三會把數線左右次序翻轉。",
     "steps": [
       "辨認運算種類",
-      "檢查乘除因子的正負"
+      "檢查乘除因子的正負",
+      "逐項分類為加減、乘正數與除負數，找唯一反序操作。"
     ],
     "optionAnalysis": [
       {
@@ -641,7 +661,7 @@ export const QUESTIONS = [
         "reason": "乘正數不變號。"
       }
     ],
-    "misconceptionTarget": "看見負數就變號，而未區分加法與除法。",
+    "misconceptionTarget": "看見負數就變號，而未區分加法與除法。 還可能認為同乘正四也變號，未依乘除因子的正負分類。",
     "prerequisiteCheck": "需理解運算分類。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "無單位。",
@@ -657,7 +677,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5d7e9cf575768fee67b30cf1eff5db34f1f749cf4bb492bb72b093e6cad42c2e"
+    "contentSha256": "fccc84fd86fed023c58811675fb0098c5fcbf6593bb1194d96d0c759e5463f5e"
   },
   {
     "questionId": "u07-s005-v007",
@@ -685,10 +705,11 @@ export const QUESTIONS = [
       "result": "x<−3",
       "answerIndexVerified": 3
     },
-    "explanation": "移項得 −4x>12；除以 −4 並反向，得到 x<−3。",
+    "explanation": "移項得 −4x>12；除以 −4 並反向，得到 x<−3。 整理得負四x大於十二，除負四得x小於負三。x=-4代入左式-20、右式-24而成立；端點-3兩邊同為-17不符合。",
     "steps": [
       "把 x 項集中",
-      "除以負係數"
+      "除以負係數",
+      "以-4與-3回代原式，驗證x<-3。"
     ],
     "optionAnalysis": [
       {
@@ -712,7 +733,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「x<−3」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "係數 3−7=−4 後忘記變號。",
+    "misconceptionTarget": "係數 3−7=−4 後忘記變號。 還可能把三x減七x算成正四x，導致端點與方向都錯。",
     "prerequisiteCheck": "需會移項與變號。",
     "estimatedTimeSec": "90",
     "unitAndRoundingCheck": "無單位。",
@@ -728,7 +749,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "110cea5456b048fbd3129795f9207d08e7dae0280026755c3481babd94970875"
+    "contentSha256": "00cc1d08644447d03c08261bf60e7334ff743d595098371b9dde94024ad47013"
   },
   {
     "questionId": "u07-s005-v008",
@@ -756,11 +777,12 @@ export const QUESTIONS = [
       "result": "x≥1",
       "answerIndexVerified": 0
     },
-    "explanation": "展開為 −6x+10≤4；移項得 −6x≤−6；除以 −6 反向，得到 x≥1。",
+    "explanation": "展開為 −6x+10≤4；移項得 −6x≤−6；除以 −6 反向，得到 x≥1。 展開為負六x加十小於等於四，整理得x大於等於一。x=1使左式4與右式相等而成立，x=0使左式10>4失敗。",
     "steps": [
       "展開負係數",
       "移常數",
-      "除負數變號"
+      "除負數變號",
+      "代入1與0檢查端點包含及x≥1方向。"
     ],
     "optionAnalysis": [
       {
@@ -784,7 +806,7 @@ export const QUESTIONS = [
         "reason": "方向與端點錯。"
       }
     ],
-    "misconceptionTarget": "負號分配或 −6÷−6 計算錯誤。",
+    "misconceptionTarget": "負號分配或 −6÷−6 計算錯誤。 還可能只把負二乘到三x，漏乘括號內的負五。",
     "prerequisiteCheck": "需會分配律。",
     "estimatedTimeSec": "100",
     "unitAndRoundingCheck": "無單位。",
@@ -800,7 +822,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1a158fdcc3e2680fe75036b0c1aa274fd2d4b3e84a1a58117a7fa920c8385092"
+    "contentSha256": "1158da9ac98a0e4b6148a01dab7194ff582d70f18cba774eab713b2f7426e916"
   },
   {
     "questionId": "u07-s005-v009",
@@ -828,10 +850,11 @@ export const QUESTIONS = [
       "result": "5",
       "answerIndexVerified": 1
     },
-    "explanation": "−a<0，兩邊除以 −a 得 x<−10/a。與 x<−2 比較端點，−10/a=−2，所以 a=5。",
+    "explanation": "−a<0，兩邊除以 −a 得 x<−10/a。與 x<−2 比較端點，−10/a=−2，所以 a=5。 因負a實為負係數，除法後方向必須反轉。a=5時原式-5x>10，除負五得到x<-2，與題給解集完全相同。",
     "steps": [
       "確認除數 −a 為負",
-      "令端點相等解參數"
+      "令端點相等解參數",
+      "把a=5代回並重新除以-5，驗證方向與端點。"
     ],
     "optionAnalysis": [
       {
@@ -855,7 +878,7 @@ export const QUESTIONS = [
         "reason": "端點 −50。"
       }
     ],
-    "misconceptionTarget": "忽略 −a 的負性，或解分式方程錯誤。",
+    "misconceptionTarget": "忽略 −a 的負性，或解分式方程錯誤。 也可能只看到a>0就當除數正數，忽略實際係數是-a<0。",
     "prerequisiteCheck": "需會變號與參數方程。",
     "estimatedTimeSec": "110",
     "unitAndRoundingCheck": "無單位；a 精確。",
@@ -871,7 +894,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "0c461759e53318e746d8111e8d29b9a7dfa1d8818e5d0d7d33e4f152b7467bff"
+    "contentSha256": "49241994e3f1df0425a2dfcf4ac33e2d50fe346e338e4f5f70c6c208b25f15c1"
   },
   {
     "questionId": "u07-s005-v010",
@@ -899,11 +922,12 @@ export const QUESTIONS = [
       "result": "5 小時",
       "answerIndexVerified": 3
     },
-    "explanation": "t 小時後為 −8−3t，需 −8−3t<−20。得 −3t<−12；除以 −3 變號，t>4，所以至少 5 小時。",
+    "explanation": "t 小時後為 −8−3t，需 −8−3t<−20。得 −3t<−12；除以 −3 變號，t>4，所以至少 5 小時。 四小時後恰-20不符合低於，五小時後-23才成立，故完整小時最少5，整數時數必須越過四的端點。",
     "steps": [
       "建立下降模型",
       "除以負數變號",
-      "取最小完整小時"
+      "取最小完整小時",
+      "比較4與5小時後溫度，驗證嚴格門檻和取整。"
     ],
     "optionAnalysis": [
       {
@@ -927,7 +951,7 @@ export const QUESTIONS = [
         "reason": "5 小時為 −23°C，是最少。"
       }
     ],
-    "misconceptionTarget": "負溫度與負係數造成方向誤判，或把低於當含等號。",
+    "misconceptionTarget": "負溫度與負係數造成方向誤判，或把低於當含等號。 還可能把溫度越負誤認為越高，或將t>4的整數答案寫4。",
     "prerequisiteCheck": "需會負數比較與變號。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "溫度 °C、時間小時；不做四捨五入。",
@@ -943,7 +967,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "357c48a33e6077fb1b100fe3c7a0cf7735f890304719e25621d7828863ff481a"
+    "contentSha256": "e11fe072f3132f5488dc8312fcc60fc50d5424ba8a1f03f7541e3355d6a50b36"
   },
   {
     "questionId": "u07-s005-v011",
@@ -971,10 +995,11 @@ export const QUESTIONS = [
       "result": "7 分鐘",
       "answerIndexVerified": 0
     },
-    "explanation": "t 分鐘後 h=−4t，條件 −4t≤−28。除以 −4 並反向，得 t≥7，所以至少 7 分鐘。",
+    "explanation": "t 分鐘後 h=−4t，條件 −4t≤−28。除以 −4 並反向，得 t≥7，所以至少 7 分鐘。 六分鐘高度-24尚未達標，七分鐘恰-28且≤包含等號，所以最少7分鐘。下降量乘時間應從零高度扣除。",
     "steps": [
       "列高度 −4t",
-      "除負數並將 ≤ 變 ≥"
+      "除負數並將 ≤ 變 ≥",
+      "用6與7分鐘的高度做相鄰整數檢查。"
     ],
     "optionAnalysis": [
       {
@@ -998,7 +1023,7 @@ export const QUESTIONS = [
         "reason": "5 分鐘只有 −20。"
       }
     ],
-    "misconceptionTarget": "將高度的負號忽略或除負數未變號。",
+    "misconceptionTarget": "將高度的負號忽略或除負數未變號。 還可能把下降四公尺寫成高度加四，讓情境方向相反。",
     "prerequisiteCheck": "需理解高度負值與 ≤。",
     "estimatedTimeSec": "90",
     "unitAndRoundingCheck": "公尺與分鐘單位一致。",
@@ -1014,7 +1039,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "089cb1ec633f6dbc48b37a6e3ee9efabf04cb35c495fea9eee319cc6065468ed"
+    "contentSha256": "1a2d7a763efb62a62745f74d67437fd1b69f478eb68cb6f8203c3fc3676be0a3"
   },
   {
     "questionId": "u07-s005-v012",
@@ -1042,11 +1067,12 @@ export const QUESTIONS = [
       "result": "5 日",
       "answerIndexVerified": 2
     },
-    "explanation": "d 日後餘額 1200−150d>300。得 −150d>−900；除以 −150 變號，d<6。d 為非負整數，最多 5 日。",
+    "explanation": "d 日後餘額 1200−150d>300。得 −150d>−900；除以 −150 變號，d<6。d 為非負整數，最多 5 日。 五日後餘450仍大於300，六日後恰300而失敗；故最大非負整數日數為5。完整日限制排除分數天的解釋。",
     "steps": [
       "建立餘額不等式",
       "除負數得 d<6",
-      "取最大整數 5"
+      "取最大整數 5",
+      "比較第5與第6日餘額，確認最大整數解。"
     ],
     "optionAnalysis": [
       {
@@ -1070,7 +1096,7 @@ export const QUESTIONS = [
         "reason": "8 日餘額 0。"
       }
     ],
-    "misconceptionTarget": "把 d<6 回答為 6，或忽略嚴格餘額。",
+    "misconceptionTarget": "把 d<6 回答為 6，或忽略嚴格餘額。 還可能看到d<6就回答端點六，沒有套用嚴格條件與完整日。",
     "prerequisiteCheck": "需會餘額模型與嚴格上界。",
     "estimatedTimeSec": "100",
     "unitAndRoundingCheck": "金額元、時間日；計算精確。",
@@ -1086,7 +1112,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5b2c246ae06a9021dce34764291818c2d4807250eca2cc1d011a8f0e278e37cf"
+    "contentSha256": "9ae487127979f21d64998060d056c77ca395fb94cc8426888fec6dd90510437f"
   }
 ];
 
@@ -1105,18 +1131,21 @@ export const CONSTRUCTED_RESPONSES = [
       "各選一個內外值驗證"
     ],
     "fullCreditSolution": [
-      "−4x≥12。",
-      "兩邊同除以 −4，≥ 反向成 ≤，得 x≤−3。",
-      "取解集內 x=−4：−4(−4)+5=21≥17，成立。",
-      "取解集外 x=0：5≥17，不成立。"
+      "由-4x+5≥17兩邊同減5，得到-4x≥12。",
+      "兩邊同除以負數-4時大小次序反轉，≥改為≤，所以x≤-3。",
+      "取解集內x=-4，左式21≥17為真。",
+      "取解集外x=0，左式5≥17為假；內外測試共同排除錯向x≥-3。",
+      "端點x=-3使左式17與右式相等，因含等號而成立。"
     ],
     "alternativeMethod": [
       "也可取邊界 x=−3 驗證等號成立，再取 −2 驗證外側失敗；關鍵是至少一內一外。"
     ],
     "reasoningSteps": [
-      "移除常數 5",
-      "負係數除法反向",
-      "用內外測試值辨別方向"
+      "同減5整理常數。",
+      "除負四並反向求出x≤-3。",
+      "用-4檢查解集內值。",
+      "用0檢查解集外值。",
+      "用-3確認端點包含。"
     ],
     "rubric": [
       {
@@ -1141,8 +1170,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "不需要單位；負號需清楚，接受 x≤−3 或 −3≥x。",
     "answerOnlyPolicy": "只寫 x≤−3，最多 1 分。",
     "commonErrors": [
-      "除以 −4 未反向",
-      "代回時把 −4×−4 算成負數"
+      "兩邊除以-4後仍保留≥，沒有反轉大小次序。",
+      "代回x=-4時把負四乘負四算成負十六，導致正確解被誤判。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1155,7 +1184,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6011b406ef4ded192a7fa8f3f679f5d97f8e3bec0e436d138830ca0f8f4b8e85"
+    "contentSha256": "d1cd28f0f54cf35a05defaafa78fcf2740ea4556dc73314604680f9cfea7a664"
   },
   {
     "questionId": "u07-s005-cr002",
@@ -1171,17 +1200,21 @@ export const CONSTRUCTED_RESPONSES = [
       "寫出精確變號規則"
     ],
     "fullCreditSolution": [
-      "x−6<2：兩邊同加 6，得 x<8；加減運算不使不等號反向。",
-      "−3x<12：兩邊同除以 −3，因除以負數，< 反向為 >，得 x>−4。",
-      "修正規則：只有對不等式兩邊同乘或同除一個負數時，才必須反向；單純出現負號、移項或加減負數都不夠。"
+      "第一題x-6<2只需兩邊同加6，得到x<8；加減相同數是平移，不改大小次序。",
+      "第二題-3x<12要兩邊同除以負數-3，因此<反向成>，得到x>-4。",
+      "所以小明的說法錯在只看式子是否出現負號，而沒有辨認實際操作。",
+      "精確規則是：只有不等式兩邊同乘或同除同一負數時必須反向；同加減任意數及乘除正數都不反向。",
+      "以x=0驗算兩題都成立，可檢查x<8與x>-4的方向。"
     ],
     "alternativeMethod": [
       "可先用數值例 5>2 乘 −1 得 −5<−2 說明次序翻轉，再對兩題分類。"
     ],
     "reasoningSteps": [
-      "辨認操作而非符號外觀",
-      "比較加法等價運算與負數除法",
-      "形成精確規則"
+      "解加減型例題並保持方向。",
+      "解負係數例題並於除負數時反向。",
+      "比較兩題的操作種類。",
+      "寫出限定乘除負數的精確規則。",
+      "選測試值回原式驗算。"
     ],
     "rubric": [
       {
@@ -1206,8 +1239,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "最終規則不可只寫「除法要變號」，必須限定除數為負數；不需單位。",
     "answerOnlyPolicy": "只寫「小明錯」而無例題或修正，0 分或至多極少程序證據，不足 1 分標準。",
     "commonErrors": [
-      "把減 6 誤認為除以負數",
-      "說所有除法都要反向"
+      "看到x-6中的負號就反向，混淆減法與除以負數。",
+      "把規則寫成所有除法都變號，沒有明定乘數或除數必須為負。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1220,7 +1253,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "076078c7e737a45136100d3bad2e3a9b8399ef59ab18480912ce9032b987b3c7"
+    "contentSha256": "db18cc7adba761bdbb36aa1dcb107505285fef865c173189268817cbbe557157"
   }
 ];
 
@@ -1231,7 +1264,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "115d5086e0b70cf38936c83a5302968f607779dc7a567da0cd42f633bbe185b5",
+    "contentSha256": "2f50171847350666030af5b610b03a120a3b86580350ef9e1d62967a8338bb48",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−3x>12。因除數為負，方向反轉；12÷(−3)=−4，所以 x<−4。取 x=−5 時 15>12 成立。",
@@ -1263,7 +1296,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "904501e3ab10322432e512b78d915481aceb3aeb816384844e382897fca6d4a3",
+    "contentSha256": "1e1405aa45cc62bab7bac6530a336e3b4a3405b45fa0562ad96fc6739da7a1cb",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "把 −x≤7 的兩邊乘 −1，左邊成 x，右邊成 −7，大小次序反轉，故 x≥−7。",
@@ -1295,7 +1328,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "f7d0aa9494ea5303aa1c7272fc3dc86bd1906429fc69b3e02ae19f9db086c81f",
+    "contentSha256": "e21cc34a922828f3008fea5920601fc6f4eb37983c3b378cd84cf762dac821d2",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "直接算得 −8 與 −2；在數線上 −8 較小，所以新關係必為 −8<−2。",
@@ -1327,7 +1360,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "94e6978d56651612d11a17f250f8f09712bb02c93cd27bde9e8e010f834dfd7e",
+    "contentSha256": "3ea5b87ee6e7f4f99530db5a1c7d2f754e48099ed32c557824153deda2fe0123",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "5−2x≥11 ⇒ −2x≥6。除以負 2，符號變成 ≤，端點 6/(−2)=−3，故 x≤−3。",
@@ -1359,7 +1392,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "6d546546c8f9cf90fb88e1467532fea61c78704b6759a8d80c5068d39d55285b",
+    "contentSha256": "07cc2e3a6cd8a0aaa530947970d516543217b5369eefe338827efcd1378a63f1",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "加 1：−4x<16。除以 −4：x>−4。測 x=0 得 −1<15 成立，符合向右範圍。",
@@ -1391,7 +1424,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "5d7e9cf575768fee67b30cf1eff5db34f1f749cf4bb492bb72b093e6cad42c2e",
+    "contentSha256": "fccc84fd86fed023c58811675fb0098c5fcbf6593bb1194d96d0c759e5463f5e",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "逐項套規則：加減任意實數保序；乘 4 因 4>0 保序；除以 −3 因負數反序，所以只有索引 1。",
@@ -1423,7 +1456,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "110cea5456b048fbd3129795f9207d08e7dae0280026755c3481babd94970875",
+    "contentSha256": "00cc1d08644447d03c08261bf60e7334ff743d595098371b9dde94024ad47013",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "3x−8>7x+4 ⇒ −4x>12。除 −4 得 x<−3。取 x=−4：左 −20、右 −24，−20>−24 成立。",
@@ -1455,7 +1488,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "1a158fdcc3e2680fe75036b0c1aa274fd2d4b3e84a1a58117a7fa920c8385092",
+    "contentSha256": "1158da9ac98a0e4b6148a01dab7194ff582d70f18cba774eab713b2f7426e916",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−2(3x−5)=−6x+10。減 10 得 −6x≤−6；除負 6 時 ≤ 反成 ≥，端點為 1。",
@@ -1487,7 +1520,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "0c461759e53318e746d8111e8d29b9a7dfa1d8818e5d0d7d33e4f152b7467bff",
+    "contentSha256": "49241994e3f1df0425a2dfcf4ac33e2d50fe346e338e4f5f70c6c208b25f15c1",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−ax>10 除以負數 −a：x<10/(−a)=−10/a。題給端點 −2，故 10/a=2，a=5。",
@@ -1519,7 +1552,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "357c48a33e6077fb1b100fe3c7a0cf7735f890304719e25621d7828863ff481a",
+    "contentSha256": "e11fe072f3132f5488dc8312fcc60fc50d5424ba8a1f03f7541e3355d6a50b36",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "逐時檢查：4 小時後 −8−12=−20，尚未低於；5 小時後 −23，低於 −20。因此最少 5 小時。",
@@ -1551,7 +1584,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "089cb1ec633f6dbc48b37a6e3ee9efabf04cb35c495fea9eee319cc6065468ed",
+    "contentSha256": "1a2d7a763efb62a62745f74d67437fd1b69f478eb68cb6f8203c3fc3676be0a3",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "每分鐘降 4 公尺，7 分鐘為 −28 公尺，符合 h≤−28；6 分鐘為 −24，不夠深。故至少 7 分鐘。",
@@ -1583,7 +1616,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-sign-flip",
-    "contentSha256": "5b2c246ae06a9021dce34764291818c2d4807250eca2cc1d011a8f0e278e37cf",
+    "contentSha256": "9ae487127979f21d64998060d056c77ca395fb94cc8426888fec6dd90510437f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "第 5 日餘額 1200−750=450>300；第 6 日餘額正好 300，不符合「大於」。所以最多 5 日。",

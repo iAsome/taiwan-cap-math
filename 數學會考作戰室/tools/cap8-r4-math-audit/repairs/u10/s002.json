@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u10",
+  "batch": "011-u10-complete",
+  "skills": ["s002"],
+  "mc": [
+    {
+      "questionId": "u10-s002-v001",
+      "expectedContentSha256": "e04de41068ef88c9707c2b5217bea86446156301c816bca8da86aea48cf2d938",
+      "appendText": {"explanation": "將 P(4) 解讀為把式中每個 x 換成 4，得到 3×4+2；先算乘法十二，再加常數二，結果十四，代回式子可再次核對。", "misconceptionTarget": "把 3x 直接換成 34，或只代入 x 卻漏算乘法與最後的常數項。"},
+      "appendArray": {"steps": ["以括號代入寫成 P(4)=3(4)+2，確認 x 已完整替換。", "依先乘後加計算 12+2=14，對應選項 14。"]}
+    },
+    {
+      "questionId": "u10-s002-v002",
+      "expectedContentSha256": "ec6bfdcc05450255e499a4dfad8f41fc53c28caf5fc3c4974b50cf19c0f7a148",
+      "appendText": {"explanation": "代入負三時，平方的底數是整個 (-3)，所以 (-3)²=9；再減去 5 得 4，而不是先保留外面的負號算成 -9，正負號須分層判讀。", "misconceptionTarget": "省略負數外的括號，把 (-3)² 誤算成 -(3²)，導致平方值寫成負九。"},
+      "appendArray": {"steps": ["完整代入為 Q(-3)=(-3)²-5，讓負號包含在平方底數內。", "先算平方 9，再做 9-5=4，核對唯一選項。"]}
+    },
+    {
+      "questionId": "u10-s002-v003",
+      "expectedContentSha256": "ae590fdf81759eb3461dec9513d7477570bef5e11ce591c8dc66e8a08367f5fb",
+      "appendText": {"explanation": "式中的 2 是乘在 a² 前的係數，不在平方範圍內；代入後先得 2×4=8，再減去同一個 a 值 2，結果為 6，兩處代入都不可遺漏。", "misconceptionTarget": "把係數 2 與代入值一起平方，或只替換 a² 中的 a 而漏掉末項的 a。"},
+      "appendArray": {"steps": ["兩處 a 都代入 2，寫成 R(2)=2(2²)-2。", "依序算平方、乘法與減法，得到 2×4-2=6。"]}
+    },
+    {
+      "questionId": "u10-s002-v004",
+      "expectedContentSha256": "3cbe99e7d13724294a82956117a12e6d353cd408b0f2158b2ae5145c36641a45",
+      "appendText": {"explanation": "同一個 -2 同時代入二次項與一次項：平方後為正四，而 -3×(-2) 為正六；三項 8、6、1 相加才是 15。", "misconceptionTarget": "把 (-2)² 算成負四，或在 -3(-2) 中漏掉負負得正，使兩項符號判斷錯誤。"},
+      "appendArray": {"steps": ["把兩處 x 都以 (-2) 替換，寫成 2(-2)²-3(-2)+1。", "分項算得 8、6、1，再相加為 15 並核對正負號。"]}
+    },
+    {
+      "questionId": "u10-s002-v005",
+      "expectedContentSha256": "ca10dbee80fa7d693e0e36a1a6ab438082b6acd10249e6c8d9e774e9f3f55087",
+      "appendText": {"explanation": "依原來的三項代入 t=3，常數為 5、一次項為 -2×3=-6、二次項為 3²=9；合計 5-6+9=8，原項符號須完整保留，並以三項相加順序核對答案。", "misconceptionTarget": "把 -2t 的負號漏掉，或按書寫順序先做 5-2 再乘 3，破壞運算順序。"},
+      "appendArray": {"steps": ["將兩處 t 都換成 3，得到 5-2(3)+3²。", "先算乘法與平方，再合併 5-6+9=8。"]}
+    },
+    {
+      "questionId": "u10-s002-v006",
+      "expectedContentSha256": "54d30ac9dafddd3b56e1ba26012f2063bd43ef9e0666cb4d45c1d9e4a1520142",
+      "appendText": {"explanation": "x=-1、y=3 必須分別代入所有位置；2x²=2，而 xy=(-1)×3=-3，所以式中的 -xy 變成 -(-3)=+3，最後再加 y=3，三項合計為八。", "misconceptionTarget": "沒有先算 xy 的正負，將 -(-1)(3) 誤作負三，或把 x、y 的代入位置互換。"},
+      "appendArray": {"steps": ["完整代入為 2(-1)²-(-1)(3)+3，保留每組括號。", "算得 2-(-3)+3=2+3+3=8，逐項核對符號。"]}
+    },
+    {
+      "questionId": "u10-s002-v007",
+      "expectedContentSha256": "f76b8a60003c26ca8552a12d7b360207a5f2cdb34c54356883e162b2319e9997",
+      "appendText": {"explanation": "題目已把 k 限為四個候選正整數，可逐一代入檢查；只有 k=3 時 3³-3×3=27-9=18，其餘值皆不符合，故答案唯一。", "misconceptionTarget": "看到十八就猜立方根附近的數，沒有把候選值代入完整的 k³-3k 驗證。"},
+      "appendArray": {"steps": ["分別計算四個候選值的 k³-3k，不只檢查第一個看似合理者。", "比較結果 -2、2、18、52，確認只有 k=3 產生 18。"]}
+    },
+    {
+      "questionId": "u10-s002-v008",
+      "expectedContentSha256": "d36f4c9c01778985dd7034ff6430f81919f857fa66fb00ddffbe53d09522ee29",
+      "appendText": {"explanation": "將 x=2 代入時 x²=4，所以 P(2)=4a+4-1；合併常數得 4a+3=15，依序移項、除以四可得 a=3；代回原式可驗得十五，也能確認參數解唯一。", "misconceptionTarget": "將 ax² 代成 2a 而漏掉平方，或由 4a=12 除法錯誤而選到其他係數。"},
+      "appendArray": {"steps": ["代入並化簡為 4a+3=15，先把含 a 與常數部分分清楚。", "兩邊減 3 得 4a=12，再除以 4 得 a=3，代回核對 P(2)=15。"]}
+    },
+    {
+      "questionId": "u10-s002-v009",
+      "expectedContentSha256": "ac13878df9b5628a02c2902f227fdbf8f11acf22e8606151c7e86766947d61d4",
+      "appendText": {"explanation": "正二與負二平方都為四，但一次項分別是 +2 與 -2，因此 P(2)=7、P(-2)=3；題目指定前者減後者，差為 4。", "misconceptionTarget": "以為正負二代入後平方相同就使整個多項式值相同，忽略一次項會改變符號。"},
+      "appendArray": {"steps": ["分開計算 P(2)=4+2+1 與 P(-2)=4-2+1。", "依題目順序用 7-3，而非顛倒相減，得到 4。"]}
+    },
+    {
+      "questionId": "u10-s002-v010",
+      "expectedContentSha256": "3e9e264a7a7865fe8d6324bc352ea36699d8cfcea90bd7738e98a77059632dcf",
+      "appendText": {"explanation": "h=5 表示經過五個一小時，每小時下降 2°C，總下降量為 2×5=10°C；由初始 18°C 扣除後為 8°C，溫度單位保持不變，且符合逐時下降的模型方向。", "misconceptionTarget": "只從十八減一次二，或把每小時下降二度誤當成五小時總共下降二度。"},
+      "appendArray": {"steps": ["將 h=5 代入模型，寫成 T(5)=18-2×5。", "先算下降量 10，再做 18-10=8，保留攝氏度單位。"]}
+    },
+    {
+      "questionId": "u10-s002-v011",
+      "expectedContentSha256": "56e418e90292b074cff2b3d081a0f067ea9166f6d3a714a70040e55295648266",
+      "appendText": {"explanation": "x=7 時兩個邊長分別是 7 公分與 7+3=10 公分，面積須以長乘寬，故 7×10=70，單位為平方公分。", "misconceptionTarget": "把兩個邊長直接相加得到十七，或只計算 x² 而漏掉括號中的加三。"},
+      "appendArray": {"steps": ["分別代入兩個因數，得到 A(7)=7(7+3)。", "先算括號為 10，再乘 7 得 70 平方公分並核對面積單位。"]}
+    },
+    {
+      "questionId": "u10-s002-v012",
+      "expectedContentSha256": "ff72b2b425dd1c138b1156ceca45e30d76b6d9d246df76cc066757b306659dd6",
+      "appendText": {"explanation": "1200 元是不隨人數改變的固定費，45n 是每人費；三十二人的變動費為 45×32=1440 元，再加固定費得 2640 元，兩種費用缺一不可。", "misconceptionTarget": "只算每人費而漏加固定費，或把固定費 1200 也乘以人數三十二。"},
+      "appendArray": {"steps": ["代入 n=32，得到 C(32)=1200+45×32。", "先算 45×32=1440，再加 1200 得 2640 元。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u10-s002-cr001",
+      "expectedContentSha256": "1b8a406d51b8a96030ea98e16b0a51644f200482b4ba73189c4f979a5cb85848",
+      "appendArray": {
+        "standardSolution": ["分項檢查可得二次項 2×4=8、一次項 -3×(-2)=6、常數項 4；三者相加為 18。把 -2 同時代入兩處 x 並保留括號，才能確定平方與負負得正兩個符號都正確。"],
+        "reasoningSteps": ["把分項結果 8、6、4 依原式符號重新相加，得到 18，並核對完整等號鏈。"]
+      },
+      "set": {"commonErrorTargets": ["把 (-2)² 算成 -4，沒有將負二整體放入平方括號。", "只替換二次項中的 x，或把 -3(-2) 算成 -6，漏掉負負得正。"]}
+    },
+    {
+      "questionId": "u10-s002-cr002",
+      "expectedContentSha256": "592d327271e39e9a65f5a9441b8f40099e51baaccfbb062bb1f7b256a76e0816",
+      "appendArray": {
+        "standardSolution": ["由 9a-5=22 解得 a=3 後，不能只寫「符合」；應把 a=3、x=3 一起代回原式，算出 3×3²-2×3+1=27-6+1=22，確實等於題設值。這也確認移項與除法沒有造成參數誤差，故解答完整且唯一。"],
+        "reasoningSteps": ["將 a=3 代回 Q(x)，再取 x=3 算得 22，完成與原條件的獨立驗算。"]
+      },
+      "set": {"commonErrorTargets": ["把 x=3 代入 ax² 時寫成 3a，漏掉平方而建立錯誤方程。", "解出 a 後未回代驗算，或驗算時把參數 a 與變數 x 的兩個三混為同一因數。"]}
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u10-s002-lecture-r1",
+      "expectedContentSha256": "d1e0ce9a86822b0e39659145ab7b4d7a620f779096f39184d6a6444eca87c2ff",
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "P(x)=2x²-3x+1，求 P(2)。", "solutionSteps": ["2(2²)-3(2)+1=8-6+1。"], "answer": "3。", "why": "同一個二必須代入二次項與一次項兩處，且平方只作用在代入值上。先算 2²，再乘外面的係數二，接著計算 -3×2，最後合併常數，可維持原式每一項的運算層級。"},
+          {"exampleId": "L2", "prompt": "Q(x)=-x²+4x，求 Q(-3)。", "solutionSteps": ["-(-3)²+4(-3)=-9-12。"], "answer": "-21。", "why": "原式的負號在平方運算之外，所以應先算 (-3)²=9，再取相反數成 -9；另一項 4(-3)=-12。把負數代入時保留括號，才能分辨外部負號與平方底數。"},
+          {"exampleId": "L3", "prompt": "R(a,b)=2a-b，a=-1、b=5。", "solutionSteps": ["2(-1)-5=-2-5。"], "answer": "-7。", "why": "多變數式必須依名稱逐一替換，a=-1 只進入 a 的位置，b=5 只進入 b 的位置。原式是減去 b，因此得到 -2-5 而不是 -2+5，最後結果為負七。"}
+        ]
+      },
+      "appendArray": {
+        "conceptNarrative": ["多項式求值的核心是完整替換而非心算猜值：先圈出同名未知數的每一次出現，以括號代入指定數，特別讓負數成為次方的完整底數；再按次方、乘除、加減的順序分項計算，最後把各項依原符號合併。若含兩個未知數，須依名稱分別代入；若結果具有金額、溫度或面積意義，還要核對固定量、每單位變化量與答案單位是否一致。"],
+        "commonMistakes": [{"mistake": "算出各項後按代入順序任意相加減", "why": "分項值仍須服從原式各項前的正負號", "correction": "在代入前先標記每項符號，算完後依原順序重組。"}]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

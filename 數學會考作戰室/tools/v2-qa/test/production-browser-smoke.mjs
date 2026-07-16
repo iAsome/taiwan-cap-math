@@ -164,6 +164,109 @@ try {
   assert.equal(await evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1"), true);
   mark("human production runtime has no mobile horizontal overflow");
 
+  const accessibility = await evaluate(`(() => {
+    const visible = element => {
+      const style = getComputedStyle(element);
+      return style.display !== "none" && style.visibility !== "hidden" && element.getClientRects().length > 0;
+    };
+    const ids = [...document.querySelectorAll("[id]")].map(element => element.id);
+    const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
+    const unnamedButtons = [...document.querySelectorAll("button")].filter(element => visible(element) && !(element.getAttribute("aria-label") || element.textContent).trim());
+    const unlabeledControls = [...document.querySelectorAll("input, select, textarea")].filter(element => visible(element) && !element.labels?.length && !element.getAttribute("aria-label") && !element.getAttribute("aria-labelledby"));
+    const imagesWithoutAlt = [...document.querySelectorAll("img")].filter(element => !element.hasAttribute("alt"));
+    const visibleH1 = [...document.querySelectorAll("h1")].filter(visible);
+    const skip = document.querySelector('a[href="#main"]');
+    return {
+      duplicateIds: duplicateIds.length,
+      unnamedButtons: unnamedButtons.length,
+      unlabeledControls: unlabeledControls.length,
+      imagesWithoutAlt: imagesWithoutAlt.length,
+      positiveTabIndex: [...document.querySelectorAll("[tabindex]")].filter(element => Number(element.getAttribute("tabindex")) > 0).length,
+      visibleH1: visibleH1.length,
+      mainCount: document.querySelectorAll("main#main").length,
+      skipLink: Boolean(skip && skip.textContent.trim())
+    };
+  })()`);
+  assert.deepEqual(accessibility, {
+    duplicateIds: 0, unnamedButtons: 0, unlabeledControls: 0, imagesWithoutAlt: 0,
+    positiveTabIndex: 0, visibleH1: 1, mainCount: 1, skipLink: true
+  });
+  mark("WCAG structure has named controls, labels, alt text, one visible H1, main landmark, and skip link");
+
+  await cdp.send("Input.dispatchKeyEvent", { type: "keyDown", key: "Tab", code: "Tab", windowsVirtualKeyCode: 9 });
+  await cdp.send("Input.dispatchKeyEvent", { type: "keyUp", key: "Tab", code: "Tab", windowsVirtualKeyCode: 9 });
+  const keyboard = await evaluate(`(() => {
+    const element = document.activeElement;
+    const style = getComputedStyle(element);
+    return {
+      href: element?.getAttribute?.("href"),
+      visible: element?.getClientRects?.().length > 0,
+      focusIndicator: style.outlineStyle !== "none" || style.boxShadow !== "none" || Number.parseFloat(style.outlineWidth) > 0
+    };
+  })()`);
+  assert.deepEqual(keyboard, { href: "#main", visible: true, focusIndicator: true });
+  mark("first keyboard focus exposes the visible skip link with a focus indicator");
+
+  await evaluate(`(() => {
+    document.querySelector('[data-view="exam"]')?.click();
+    document.querySelector("#startDefaultExam")?.click();
+    return true;
+  })()`);
+  await waitFor("!document.querySelector('#examWorkspace').classList.contains('hidden') && document.querySelectorAll('.question').length === 27", 120000);
+  const exam = await evaluate(`(() => ({
+    questionCount: document.querySelectorAll(".question").length,
+    figureCount: document.querySelectorAll(".exam-figure").length,
+    figuresWithoutAlt: [...document.querySelectorAll(".exam-figure img")].filter(image => !image.getAttribute("alt")).length,
+    figuresWithoutCaption: [...document.querySelectorAll(".exam-figure")].filter(figure => !figure.querySelector("figcaption")).length,
+    figuresWithoutDescription: [...document.querySelectorAll(".exam-figure")].filter(figure => !figure.querySelector(".figure-description")?.textContent.trim()).length,
+    horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1
+  }))()`);
+  assert.equal(exam.questionCount, 27);
+  assert(exam.figureCount >= 3);
+  assert.equal(exam.figuresWithoutAlt, 0);
+  assert.equal(exam.figuresWithoutCaption, 0);
+  assert.equal(exam.figuresWithoutDescription, 0);
+  assert.equal(exam.horizontalOverflow, false);
+  mark("mobile mock renders 27 questions and accessible figures without overflow");
+
+  await cdp.send("Emulation.setEmulatedMedia", { media: "print" });
+  const print = await evaluate(`(() => ({
+    media: matchMedia("print").matches,
+    sidebarHidden: getComputedStyle(document.querySelector(".sidebar")).display === "none",
+    topbarHidden: getComputedStyle(document.querySelector(".topbar")).display === "none",
+    footerHidden: getComputedStyle(document.querySelector("footer")).display === "none",
+    examVisible: getComputedStyle(document.querySelector("#view-exam")).display !== "none",
+    workspaceVisible: getComputedStyle(document.querySelector("#examWorkspace")).display !== "none",
+    paperVisible: getComputedStyle(document.querySelector(".paper")).display !== "none",
+    questionsAvoidBreak: [...document.querySelectorAll(".question")].every(question => getComputedStyle(question).breakInside === "avoid")
+  }))()`);
+  assert.deepEqual(print, {
+    media: true, sidebarHidden: true, topbarHidden: true, footerHidden: true,
+    examVisible: true, workspaceVisible: true, paperVisible: true, questionsAvoidBreak: true
+  });
+  const pdf = await cdp.send("Page.printToPDF", { printBackground: true, preferCSSPageSize: true });
+  assert(pdf.data.length > 10000, "printed PDF is unexpectedly empty");
+  mark("print media produces a non-empty exam PDF with navigation hidden and questions kept together");
+  await cdp.send("Emulation.setEmulatedMedia", { media: "screen" });
+
+  const externalRequests = cdp.events
+    .filter(event => event.method === "Network.requestWillBeSent")
+    .map(event => event.params.request.url)
+    .filter(url => /^https?:/i.test(url) && !["127.0.0.1", "localhost"].includes(new URL(url).hostname));
+  assert.deepEqual(externalRequests, []);
+  await cdp.send("Network.emulateNetworkConditions", { offline: true, latency: 0, downloadThroughput: 0, uploadThroughput: 0, connectionType: "none" });
+  const offline = await evaluate(`(async () => {
+    const assessment = await window.EXAM_ENGINE.generate(11528, 2);
+    return {
+      total: assessment.questions.length,
+      mc: assessment.questions.filter(question => question.type === "mc").length,
+      cr: assessment.questions.filter(question => question.type !== "mc").length
+    };
+  })()`);
+  assert.deepEqual(offline, { total: 27, mc: 25, cr: 2 });
+  mark("runtime makes no external requests and can generate a new 25+2 assessment while offline after load");
+  await cdp.send("Network.emulateNetworkConditions", { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1, connectionType: "wifi" });
+
   const browserErrors = cdp.events.filter(event => event.method === "Runtime.exceptionThrown" || (event.method === "Log.entryAdded" && event.params.entry.level === "error"));
   assert.deepEqual(browserErrors, []);
   report.browserErrors = 0;

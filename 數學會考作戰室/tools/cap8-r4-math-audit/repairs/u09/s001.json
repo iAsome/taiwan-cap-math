@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u09",
+  "batch": "010-u09-complete",
+  "skills": ["s001"],
+  "mc": [
+    {"questionId":"u09-s001-v001","expectedContentSha256":"0fb07e0920e35c29effd9b053a61fd94563f1460f456c02a4e4590796cb67636","appendText":{"explanation":"題目只問乙的借書本數，沿乙列與借書欄交會處讀得五本；甲、丙、丁的數字分屬其他列，不能因排列較前就選取。","misconceptionTarget":"未同時對準學生列與借書欄，讀成相鄰學生的資料。"},"appendArray":{"steps":["將答案五本放回乙列核對，確認姓名、數值與單位完全對應。"]}},
+    {"questionId":"u09-s001-v002","expectedContentSha256":"99415e148ba7fb36460a4685f12ddcf769397535fc515e8837880a3ba8ab1028","appendText":{"explanation":"五天人數依序是二、三、二、四、三，最大值四只出現在星期四；答案須回到該數值的日期標籤，而不是只寫四人。","misconceptionTarget":"找到最大數值後沒有回讀日期標籤，或把相同的三人列當最大。"}},
+    {"questionId":"u09-s001-v003","expectedContentSha256":"6c24b9de2abf1c269ad09cc0d52db32b42871b01cf37bf77ca60fdf141e32746","appendText":{"explanation":"四種飲料互不重疊，總杯數要把十八、十五、二十二、十各加一次，得到六十五；結果大於任何單項且未把總計重複納入。","misconceptionTarget":"加總時漏掉果茶或重複計入奶茶，沒有逐類勾選已使用資料。"}},
+    {"questionId":"u09-s001-v004","expectedContentSha256":"d45d810e31117ce1728876ad13d516c9041409278cc3690b0bfc1608a072e3a5","appendText":{"explanation":"十二時的二十七度是比較終值，八時的十八度是基準值，以終值減基準值才得到升高九度；兩溫度相加沒有溫差意義。","misconceptionTarget":"把升高多少誤解成兩時刻溫度總和，或顛倒相減得到負值。"}},
+    {"questionId":"u09-s001-v005","expectedContentSha256":"e2acae7f8452d6660f65bf08ebdcb96a22d6cf79380fd7fd60f1b4abce723806","appendText":{"explanation":"剩餘量是原有庫存扣除已售數量，八十減二十七為五十三；再驗算五十三加二十七回到八十，證明欄位關係一致。","misconceptionTarget":"未讀剩餘欄的意義而把原有與售出相加，得到不可能超過原有的庫存。"}},
+    {"questionId":"u09-s001-v006","expectedContentSha256":"162f47e96c8535773faaa4c8ccb650344796b28092435b9ebd7bf887ff3c2471","appendText":{"explanation":"欄位順序使二十四、三十都代表公里數，三十減二十四為六公里；三十與二十四不是票價，兩票價四十二與三十六也只差六元。","misconceptionTarget":"忽略欄位順序，把每列第一個數誤讀成票價或跨欄相減。"}},
+    {"questionId":"u09-s001-v007","expectedContentSha256":"7f98cc230c8b62f5f498eec5721232eca918b6c7b2415764ff1ec05d70fc46f0","appendText":{"explanation":"四筆原始值相加為五十，除以四得到十二點五；摘要十二點八不是原始測量，也不能拿來當最大值或再加入平均計算。","misconceptionTarget":"把摘要列視為不可質疑的原始資料，沒有用四筆測量重新驗證平均。"}},
+    {"questionId":"u09-s001-v008","expectedContentSha256":"f6c0cec6a95c77f9ce05031878ea21bf349e95fb1badbc0aadc53debb81b046d","appendText":{"explanation":"甲店三日合計一百五十，乙店三日也合計一百五十；逐日高低雖不同，題目所述的三天總數仍完全相同，其他敘述可由單日數值排除。","misconceptionTarget":"只挑某一天比較大小，便把局部高低錯當三日合計的整體結論。"}},
+    {"questionId":"u09-s001-v009","expectedContentSha256":"fc87b696f8a858e957f1b189911949a5e94bce2f658f24b15cb058985440b5fe","appendText":{"explanation":"四個已知分數七十二、八十八、九十一、七十九合計三百三十，以總分四百一十五扣除後得到八十五；代回五人總分正好吻合。","misconceptionTarget":"把總分直接除以五當缺值，混淆全班平均與單一學生分數。"}},
+    {"questionId":"u09-s001-v010","expectedContentSha256":"01a7ba4cbcd08fbd2119e22a6049bb37a464180e44671253604b8f8b02cc3383","appendText":{"explanation":"各月天數不同，總用水量不能直接代表每日用量；一月與三月各除三十一日，二月除二十八日，所得商才具有相同的每日基準。","misconceptionTarget":"忽略二月天數註記，直接以月總量或統一除以三十日比較。"}},
+    {"questionId":"u09-s001-v011","expectedContentSha256":"1d158f5b2950c7606237d3c3324004113a23d4b06ed35765ad3fa5cafc55d522","appendText":{"explanation":"站前二十六人是起始量，上車七人使人數增加，下車三人使人數減少，因此站後為三十人；以三十減七再加三也能回到站前量。","misconceptionTarget":"沒有分辨上車是流入、下車是流出，把兩個人數都加上或都減去。"}},
+    {"questionId":"u09-s001-v012","expectedContentSha256":"84fc13760a79e1a4a02e877c932abeb4b4876eb60789c0d989ba61eb9fa01521","appendText":{"explanation":"每份八公克是單份糖量，整包共有二點五份，故完整食用量為八乘二點五等於二十公克；每份三十公克是食品重量，不是糖量。","misconceptionTarget":"只抄每份糖量，或把每份食品重量三十公克誤當整包糖量。"}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u09-s001-cr001","expectedContentSha256":"807d295c72d4d437675c0de19963566d0f9d00a8b1a2e21469b8f7cf60862861","appendArray":{"standardSolution":["用本學期欄再核對可得最大值四十只屬籃球社；變化量的正、負、零也分別對應增加、減少、不變，因此美術與閱讀兩列已足以反駁「所有社團都增加」。"]},"set":{"commonErrors":["把兩學期欄位顛倒，以前期減後期而反轉各社團變化量。","只看到科學社與籃球社增加，就忽略美術社減少及閱讀社不變，錯誤接受全稱敘述。"]}},
+    {"questionId":"u09-s001-cr002","expectedContentSha256":"522f5745843afd9ec46499590b8cb0ef46efbb6a931f4f7c954dc10d0e4dbca0","appendArray":{"standardSolution":["代回八個時段後總數為一千六百六十，週六五百四十也確實比週日四百六十多八十人；缺值、日合計與比較結果三層驗算一致。"]},"set":{"commonErrors":["把四日總計再加入七個已知格，或漏加其中一個時段而求錯週六下午。","求得週六下午三百人後直接和週日總數比較，沒有先算週六單日總數五百四十。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u09-s001-lecture-r1","expectedContentSha256":"376497afd756b1eb6d3f2ea8c932be92da7afbd21bde15044234fb5b5750ccbd","set":{"workedExamples":[
+      {"id":"L1","prompt":"A 線 24 公里票價 36 元，B 線 30 公里票價 42 元，哪線較長？","solution":["先依欄位把 24、30 解讀為公里數。","30＞24，所以 B 線較長 6 公里。"],"answer":"B 線，長 6 公里。","why":"每列同時有公里數與票價，若只看數字而不看欄名，就可能拿二十四元和三十元比較。先鎖定全程公里數欄，再以三十減二十四，才能讓比較對象與六公里的單位一致。"},
+      {"id":"L2","prompt":"原有 80 枝、售出 27 枝，剩餘欄空白。","solution":["剩餘＝原有－售出。","80－27＝53。"],"answer":"53 枝。","why":"空格位於剩餘欄，表示要由原有量扣除已流出的售出量，而不是把兩欄相加。五十三枝加回二十七枝正好恢復八十枝，這項逆運算可同時核對數值與欄位關係。"},
+      {"id":"L3","prompt":"四次測量 12.4、12.6、12.5、12.5，摘要寫平均 12.8。","solution":["原始資料總和 50.0。","50.0÷4＝12.5，摘要列不一致。"],"answer":"正確平均 12.5。","why":"摘要列是由原始資料計算出的結論，不應被視為第五筆測量或無條件相信。把四筆數值重新相加並除以四，所得十二點五與摘要十二點八不同，因此可確定摘要抄錄有誤。"}
+    ]},"appendArray":{"conceptDevelopment":["完整判讀資料表時，先用表名界定資料主題，再把列標題、欄標題與單位組成每個數值的完整名稱；若題目要求比較、補缺值或檢查摘要，還要確認所選資料來自相同期間與相同分母，並用總計或逆運算回查。這套流程能避免沿錯列、混用單位、重複加入總計，以及把腳註所揭示的天數差異忽略掉。"]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

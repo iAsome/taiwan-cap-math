@@ -126,7 +126,8 @@
       "solutionSteps": [
         "乙中位高1且IQR大4。"
       ],
-      "answer": "乙中位高1且IQR大4。"
+      "answer": "乙中位高1且IQR大4。",
+      "why": "甲、乙中位數分別14、15，所以乙高1；箱寬分別18-10=8與21-9=12，所以乙IQR大4，中心與分散須分開計算，兩項都可獨立驗算，且各自使用正確端點。"
     },
     {
       "exampleId": "L2",
@@ -134,7 +135,8 @@
       "solutionSteps": [
         "中位相同；A IQR小、全距大。"
       ],
-      "answer": "中位相同；A IQR小、全距大。"
+      "answer": "中位相同；A IQR小、全距大。",
+      "why": "兩組中位都為11；A的IQR=2小於B的6，但A全距=40大於B的12，顯示A中段更集中、箱外端點波動卻更大，不能概括成全面較穩。"
     },
     {
       "exampleId": "L3",
@@ -142,7 +144,8 @@
       "solutionSteps": [
         "IQR甲8、乙10。"
       ],
-      "answer": "IQR甲8、乙10。"
+      "answer": "IQR甲8、乙10。",
+      "why": "不同數軸不能直接比較圖上格數；甲4格乘每格2得8，乙2格乘每格5得10，換成相同數值單位後才能判定乙箱寬較大。"
     },
     {
       "exampleId": "L4",
@@ -150,7 +153,8 @@
       "solutionSteps": [
         "只能說中間50%位置分離。"
       ],
-      "answer": "只能說中間50%位置分離。"
+      "answer": "只能說中間50%位置分離。",
+      "why": "箱體代表Q1到Q3，完全分離只保證兩組中間50%的位置不重疊；鬚線仍重疊表示外側資料可能交錯，不能說每一筆都較高。"
     }
   ],
   "commonMistakes": [
@@ -235,5 +239,5 @@
     "reviewVersion": "human-lecture-review-u22-r1.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "32becafdc25f6c61d21196528848f8e0d7ba72ab6cca4bb14e5dabe792d2f478"
+  "contentSha256": "6bdb193c430fd1d0902e62798c1c2551cbda3bc8420c16c8cf8fd5cfc76a8b5a"
 }

@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "內接角應用通常不是多背一條公式，而是先辨認每一個角所對的弧，再串接已學性質。",
     "若看到直徑，優先標出90°；若看到同弧，標出相等圓周角；若有四點共圓，檢查對角互補。",
-    "每一步都要寫出性質，避免只憑圖形猜角。"
+    "每一步都要寫出性質，避免只憑圖形猜角。",
+    "判斷同弧角是否相等前，還要確認兩個頂點位於同一段弧；若位於弦的兩側，兩角分別對兩段弧而互補。"
   ],
   "formalDefinitions": [
     {
@@ -124,42 +125,47 @@
   "workedExamples": [
     {
       "exampleId": "s009-L1",
-      "prompt": "AB為直徑，C在圓上，∠CAB=32°。求∠ABC。",
+      "prompt": "AB為直徑，C在圓上，∠CAB＝32°，求∠ABC。",
       "solutionSteps": [
-        "∠ACB=90°。",
-        "三角形內角和得58°。"
+        "直徑AB所對∠ACB＝90°。",
+        "另兩銳角和為90°。",
+        "計算∠ABC＝90°－32°＝58°。"
       ],
-      "answer": "58°。",
-      "level": "basic"
+      "answer": "∠ABC＝58°。",
+      "why": "C點位於以AB為直徑的圓上，所以C角必為直角；三角形剩下A、B兩角合為90°，扣除32°後得到58°。代回三角形內角和為180°，可驗證答案一致。"
     },
     {
       "exampleId": "s009-L2",
-      "prompt": "A、B、C、D共圓，∠ACB=41°。求∠ADB。",
+      "prompt": "A、B、C、D共圓，且C、D位於弦AB同側；∠ACB＝41°，求∠ADB。",
       "solutionSteps": [
-        "兩角同對弧AB。"
+        "確認C、D位於弦AB同側。",
+        "兩角都以A、B為首尾並對同一段弧AB。",
+        "套用同弧圓周角相等。"
       ],
-      "answer": "41°。",
-      "level": "standard"
+      "answer": "∠ADB＝41°。",
+      "why": "C、D在弦AB同側，使兩個圓周角都對另一側的同一段弧AB；同弧圓周角相等，因此可保留41°而不是取互補角。特別指出同側條件，正是為了排除對到另一段弧的情形。"
     },
     {
       "exampleId": "s009-L3",
-      "prompt": "ABCD內接圓，∠A=68°。",
+      "prompt": "ABCD為圓內接四邊形，∠A＝68°，求∠C。",
       "solutionSteps": [
-        "對角互補。",
-        "∠C=112°。"
+        "A與C為內接四邊形對角。",
+        "列∠A＋∠C＝180°。",
+        "計算∠C＝112°。"
       ],
-      "answer": "112°。",
-      "level": "advanced"
+      "answer": "∠C＝112°。",
+      "why": "圓內接四邊形的一組對角互補，A與C不是相鄰角；用180°扣除68°得到112°，兩角相加可驗回180°。先確認對角位置，可避免誤把相鄰角也當成互補。"
     },
     {
       "exampleId": "s009-L4",
-      "prompt": "AB為直徑，D在圓上，∠DAB=2x，∠DBA=x。",
+      "prompt": "AB為直徑，D在圓上，∠DAB＝2x、∠DBA＝x，求x。",
       "solutionSteps": [
-        "∠ADB=90°。",
-        "3x+90=180，x=30。"
+        "直徑AB所對∠ADB＝90°。",
+        "列2x＋x＋90°＝180°。",
+        "解3x＝90°得x＝30°。"
       ],
-      "answer": "x=30。",
-      "level": "connection"
+      "answer": "x＝30°。",
+      "why": "D點圓周角對直徑AB而為90°，因此三角形其餘兩角合計90°；按2x與x分配可得x＝30°，代回角和正確。此處先建立直角條件，方程才具有唯一解。"
     }
   ],
   "difficultyConnections": {
@@ -244,5 +250,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "94050692c470de806c1507a85705ae81ec5bb123295f91e225560bcef3c81948"
+  "contentSha256": "2ad0df4691f36731a84ecb4e1fbaab7befaacbfee91caef530b067c85ba32be9"
 }

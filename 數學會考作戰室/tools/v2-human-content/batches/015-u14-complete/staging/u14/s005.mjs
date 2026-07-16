@@ -32,7 +32,7 @@ export default {
       },
       {
         "term": "平方數列",
-        "definition": "各項與n^2相關的數列。"
+        "definition": "各項與n²相關的數列。"
       },
       {
         "term": "三角數",
@@ -40,7 +40,7 @@ export default {
       },
       {
         "term": "交錯符號",
-        "definition": "常用(-1)^n或(-1)^{n+1}描述正負輪替。"
+        "definition": "常用(-1)ⁿ或(-1)ⁿ⁺¹描述正負輪替。"
       }
     ],
     "notation": [
@@ -49,7 +49,7 @@ export default {
         "meaning": "把位置n代入函數式得到項值。"
       },
       {
-        "symbol": "(-1)^n",
+        "symbol": "(-1)ⁿ",
         "meaning": "n奇數時為-1，n偶數時為1。"
       },
       {
@@ -60,7 +60,7 @@ export default {
     "conceptNarrative": [
       "求第n項不是只延伸到目標，而是找出位置與項值的固定關係。",
       "先列n=1、2、3代入候選式，若前三項就不符，公式一定錯。",
-      "平方型數列常先比較n^2，再看是否平移或加減線性項。",
+      "平方型數列常先比較n²，再看是否平移或加減線性項。",
       "交錯數列要同時處理絕對值規律與正負規律。"
     ],
     "formalDefinitions": [
@@ -89,7 +89,7 @@ export default {
         "meaning": "三角數通項。"
       },
       {
-        "formula": "a_n=(-1)^{n+1}(2n-1)",
+        "formula": "a_n=(-1)ⁿ⁺¹(2n-1)",
         "conditions": [
           "絕對值為連續奇數且首項為正"
         ],
@@ -99,7 +99,7 @@ export default {
     "nonApplicableCases": [
       "只符合前兩項的式子未必是題目規律。",
       "n從1開始時不可誤用從0開始的公式。",
-      "(-1)^n只控制正負，不決定絕對值。",
+      "(-1)ⁿ只控制正負，不決定絕對值。",
       "分段或區塊重複數列不一定能用單一一次式。"
     ],
     "method": [
@@ -166,7 +166,7 @@ export default {
         "reasoning": "絕對值2n-1，奇數項正。",
         "solutionSteps": [
           "絕對值2n-1，奇數項正。",
-          "a_n=(-1)^{n+1}(2n-1)。"
+          "a_n=(-1)ⁿ⁺¹(2n-1)。"
         ],
         "answer": "a_6=-11"
       }
@@ -189,9 +189,9 @@ export default {
         "correction": "檢查首項。"
       },
       {
-        "mistake": "平方數列只看差不寫n^2",
+        "mistake": "平方數列只看差不寫n²",
         "why": "差值雖有規律但無法直接求遠項。",
-        "correction": "比較a_n與n^2。"
+        "correction": "比較a_n與n²。"
       },
       {
         "mistake": "交錯符號次方寫反",
@@ -261,7 +261,7 @@ export default {
       "reviewedAt": "2026-07-12",
       "reviewNote": "逐段檢查「求第 n 項」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
     },
-    "contentSha256": "03e4eb0a8819f9f8400c01c62ddca9789c285dc3459b0863e38c3b71513f6302"
+    "contentSha256": "393c23b180c1f2cbfe876f2261a0b7c8e4b08f7ff45b59b3821a570fcc480329"
   },
   "mcQuestions": [
     {
@@ -429,7 +429,7 @@ export default {
         "15"
       ],
       "answerIndex": 1,
-      "independentSolution": "可寫a_n=(-1)^n；因15為奇數，(-1)^15=-1。",
+      "independentSolution": "可寫a_n=(-1)ⁿ；因15為奇數，(-1)¹⁵=-1。",
       "mainExplanation": "依題意依序處理：辨認交錯符號。；判斷15奇偶。，所以唯一正確選項是「-1」。",
       "steps": [
         "辨認交錯符號。",
@@ -472,7 +472,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "57a74c05d49ca24852f90582766c4778aa9ec5b94d1c69c1d8cc75d20d33baf9"
+      "contentSha256": "a8d558a4cb8348286c13c01bc64158368464cd4be997bd2255eb794c88781270"
     },
     {
       "questionId": "u14-s005-v004",
@@ -767,7 +767,7 @@ export default {
       "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-      "text": "數列通項為 a_n=(-1)^{n+1}(2n-1)，則 a_8 等於多少？",
+      "text": "數列通項為 a_n=(-1)ⁿ⁺¹(2n-1)，則 a_8 等於多少？",
       "givenConditions": [
         "交錯通項"
       ],
@@ -779,7 +779,7 @@ export default {
         "17"
       ],
       "answerIndex": 0,
-      "independentSolution": "n=8時符號因子(-1)^9=-1，絕對值因子15，乘積-15。",
+      "independentSolution": "n=8時符號因子(-1)⁹=-1，絕對值因子15，乘積-15。",
       "mainExplanation": "依題意依序處理：分別計算符號與絕對值。；相乘。，所以唯一正確選項是「-15」。",
       "steps": [
         "分別計算符號與絕對值。",
@@ -789,7 +789,7 @@ export default {
         {
           "choice": "-15",
           "truth": true,
-          "reason": "(-1)^9=-1，2×8-1=15，所以a_8=-15。"
+          "reason": "(-1)⁹=-1，2×8-1=15，所以a_8=-15。"
         },
         {
           "choice": "15",
@@ -807,7 +807,7 @@ export default {
           "reason": "17同時符號與算式錯。"
         }
       ],
-      "misconceptionTarget": "把(-1)^{n+1}與2n-1的角色混在一起。",
+      "misconceptionTarget": "把(-1)ⁿ⁺¹與2n-1的角色混在一起。",
       "prerequisiteSkillIds": [
         "geometric-basic"
       ],
@@ -822,7 +822,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "940cf340060f13141c57bdd5cebc3d620f7796b9e5585d65e899ddfc219eb36b"
+      "contentSha256": "8d8010642de28c39b553ebbc18fc8f046763599dd4af49df1e512164340f1680"
     },
     {
       "questionId": "u14-s005-v009",
@@ -1197,8 +1197,8 @@ export default {
       ],
       "fullCreditSolution": [
         "絕對值為2n。",
-        "首項正且交錯，可用(-1)^{n+1}控制符號。",
-        "所以a_n=(-1)^{n+1}2n。",
+        "首項正且交錯，可用(-1)ⁿ⁺¹控制符號。",
+        "所以a_n=(-1)ⁿ⁺¹2n。",
         "25為奇數，a_25=50。"
       ],
       "alternativeSolutions": [
@@ -1206,8 +1206,8 @@ export default {
       ],
       "reasoningSteps": [
         "絕對值為2n。",
-        "首項正且交錯，可用(-1)^{n+1}控制符號。",
-        "所以a_n=(-1)^{n+1}2n。",
+        "首項正且交錯，可用(-1)ⁿ⁺¹控制符號。",
+        "所以a_n=(-1)ⁿ⁺¹2n。",
         "25為奇數，a_25=50。"
       ],
       "rubric": [
@@ -1231,24 +1231,24 @@ export default {
       "partialCreditRules": [
         "分段式與(-1)次方式同等給分。"
       ],
-      "followThroughPolicy": "若寫(-1)^n2n導致首項錯，但後續指出應修正為(-1)^{n+1}，以最終式評分。",
+      "followThroughPolicy": "若寫(-1)ⁿ2n導致首項錯，但後續指出應修正為(-1)ⁿ⁺¹，以最終式評分。",
       "unitAndNotationRules": "無單位；項次從1開始。",
       "answerOnlyPolicy": "只答50最多1分。",
       "commonErrors": [
-        "(-1)^n使首項為-2。",
+        "(-1)ⁿ使首項為-2。",
         "把第25項寫成25。"
       ],
       "figureDrawingSpecRef": null,
       "independentReview": {
-        "derivedResult": "a_n=(-1)^{n+1}2n，a_25=50。",
+        "derivedResult": "a_n=(-1)ⁿ⁺¹2n，a_25=50。",
         "ambiguity": "交錯與絕對值規律明確。",
         "unitBoundaryCheck": "無單位；項次從1開始。",
         "decision": "pass",
-        "reviewNote": "獨立依題目條件重新推導，得到「a_n=(-1)^{n+1}2n，a_25=50。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+        "reviewNote": "獨立依題目條件重新推導，得到「a_n=(-1)ⁿ⁺¹2n，a_25=50。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "10ecf06b287f0a0fcb7d79d107a7b734f2ef42d557819d6a19dfd3f962323909"
+      "contentSha256": "d244e309e39ef7fcbf7370a4b5c8688d9d56876bef7221f454203aee52310e69"
     }
   ],
   "semanticReviews": [
@@ -1326,11 +1326,11 @@ export default {
       "questionId": "u14-s005-v003",
       "unitId": "u14",
       "skillId": "sequence-nth-term",
-      "contentSha256": "57a74c05d49ca24852f90582766c4778aa9ec5b94d1c69c1d8cc75d20d33baf9",
+      "contentSha256": "a8d558a4cb8348286c13c01bc64158368464cd4be997bd2255eb794c88781270",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "可寫a_n=(-1)^n；因15為奇數，(-1)^15=-1。",
+      "independentSolution": "可寫a_n=(-1)ⁿ；因15為奇數，(-1)¹⁵=-1。",
       "derivedAnswer": "-1",
       "storedAnswer": "-1",
       "answerMatch": true,
@@ -1354,8 +1354,8 @@ export default {
       "prerequisiteCheck": "使用前置技能「等比數列基本」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「數列 -1，1，-1，1，… 的第 15 項是多少？」獨立重算為：可寫a_n=(-1)^n；因15為奇數，(-1)^15=-1。 四選項逐項核對後唯一正解為「-1」；邊界檢查：15為奇數；無除法與單位。",
-      "reviewContentSha256": "1f5fb8f823ce99d3577361726f05dde8bfb5a7b4f6ac95c23ebc568c551e36ea"
+      "reviewerNote": "題目「數列 -1，1，-1，1，… 的第 15 項是多少？」獨立重算為：可寫a_n=(-1)ⁿ；因15為奇數，(-1)¹⁵=-1。 四選項逐項核對後唯一正解為「-1」；邊界檢查：15為奇數；無除法與單位。",
+      "reviewContentSha256": "92ac06a504c1f61f1c09313e4b2ff2b54c5a996bbac56ee221ba111635f641a6"
     },
     {
       "questionId": "u14-s005-v004",
@@ -1501,11 +1501,11 @@ export default {
       "questionId": "u14-s005-v008",
       "unitId": "u14",
       "skillId": "sequence-nth-term",
-      "contentSha256": "940cf340060f13141c57bdd5cebc3d620f7796b9e5585d65e899ddfc219eb36b",
+      "contentSha256": "8d8010642de28c39b553ebbc18fc8f046763599dd4af49df1e512164340f1680",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "n=8時符號因子(-1)^9=-1，絕對值因子15，乘積-15。",
+      "independentSolution": "n=8時符號因子(-1)⁹=-1，絕對值因子15，乘積-15。",
       "derivedAnswer": "-15",
       "storedAnswer": "-15",
       "answerMatch": true,
@@ -1522,15 +1522,15 @@ export default {
         "unitConflict": "括號完整；指數9為奇數。；選項均以相同數學對象或相同單位比較。",
         "roundingConflict": "獨立解答得到精確值「-15」，沒有近似取整導致第二答案。",
         "domainBoundary": "審查本題定義域、端點與會考範圍：括號完整；指數9為奇數。",
-        "alternateReading": "最可能的誤讀是「把(-1)^{n+1}與2n-1的角色混在一起。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+        "alternateReading": "最可能的誤讀是「把(-1)ⁿ⁺¹與2n-1的角色混在一起。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
       },
       "difficultyReason": "進階：需控制指數奇偶與線性因子兩部分。",
       "literacyContextNecessity": null,
       "prerequisiteCheck": "使用前置技能「等比數列基本」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「數列通項為 a_n=(-1)^{n+1}(2n-1)，則 a_8 等於多少？」獨立重算為：n=8時符號因子(-1)^9=-1，絕對值因子15，乘積-15。 四選項逐項核對後唯一正解為「-15」；邊界檢查：括號完整；指數9為奇數。",
-      "reviewContentSha256": "f88c7df6d3e5ca623c73e3aede16b8c99ba8a596dc9e462741eabd19a9d08884"
+      "reviewerNote": "題目「數列通項為 a_n=(-1)ⁿ⁺¹(2n-1)，則 a_8 等於多少？」獨立重算為：n=8時符號因子(-1)⁹=-1，絕對值因子15，乘積-15。 四選項逐項核對後唯一正解為「-15」；邊界檢查：括號完整；指數9為奇數。",
+      "reviewContentSha256": "60fdf9051cfc8df366bb65cd5821fdd33fb8b8539bc9b93b11ecb50f64b8aad3"
     },
     {
       "questionId": "u14-s005-v009",

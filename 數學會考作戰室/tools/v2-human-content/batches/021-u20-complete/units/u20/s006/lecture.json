@@ -95,6 +95,11 @@
       "step": 4,
       "instruction": "依角型判斷O在內、邊上或外。",
       "check": "直角時是否在斜邊中點？"
+    },
+    {
+      "step": 5,
+      "instruction": "以OA、OB、OC三段距離或第三條垂直平分線複核交點。",
+      "check": "不要只憑交點看似位於圖形中央。"
     }
   ],
   "workedExamples": [
@@ -106,16 +111,19 @@
         "OA＝OC。",
         "所以OA＝OB＝OC。"
       ],
-      "answer": "O是外心。"
+      "answer": "O是外心。",
+      "why": "垂直平分線上的點到線段兩端等距，兩個等距式共享OA；遞移後O到A、B、C三頂點等距，恰符合外心判定，並能以O為圓心畫出通過三點的圓。"
     },
     {
       "exampleId": "L2",
       "prompt": "直角三角形外心在哪裡？",
       "solutionSteps": [
         "斜邊是外接圓直徑。",
-        "圓心是斜邊中點。"
+        "圓心是斜邊中點。",
+        "中點到三頂點距離相等。"
       ],
-      "answer": "斜邊中點。"
+      "answer": "斜邊中點。",
+      "why": "直徑所對圓周角為直角，反過來可把直角三角形斜邊視為外接圓直徑；直徑中點就是圓心，因此也是外心。"
     }
   ],
   "commonMistakes": [
@@ -133,6 +141,11 @@
       "mistake": "把到邊等距當外心。",
       "why": "混淆等距對象。",
       "correction": "外心比較頂點距離。"
+    },
+    {
+      "mistake": "把只通過邊中點的線當成垂直平分線。",
+      "why": "垂直平分線必須同時具有通過中點與垂直該邊兩項條件。",
+      "correction": "在中點標等長刻痕，並在交點標直角後再取兩線交點。"
     }
   ],
   "selfCheck": [
@@ -189,5 +202,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "a8f17123dc0344966966d3a6357b7f9737bb4ffbfe74084a21360d127b6ef86c"
+  "contentSha256": "a626aa2e18d004e65ab3e884274a268aa043b2e67ee2f50207f685865182d4e1"
 }

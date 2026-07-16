@@ -112,66 +112,74 @@ export default {
     "method": [
       {
         "step": 1,
-        "instruction": "寫清楚比例尺方向：圖上:實際。",
-        "check": "是否把順序顛倒？"
+        "instruction": "先判斷題目給的是圖上距離、實際距離或比例尺中的哪一項。",
+        "check": "比例尺方向固定為圖上:實際。"
       },
       {
         "step": 2,
-        "instruction": "把兩個距離換成同單位。",
-        "check": "公里到公分是否乘 100000？"
+        "instruction": "把圖上與實際長度統一成相同單位後再列比例。",
+        "check": "1公里已換成100000公分。"
       },
       {
         "step": 3,
-        "instruction": "列比例式或用倍率。",
-        "check": "求的是圖上還是實際？"
+        "instruction": "求實距時乘分母，求圖距時除以分母。",
+        "check": "答案量級符合縮圖應小於實物。"
       },
       {
         "step": 4,
-        "instruction": "完成計算並換成題目要求單位。",
-        "check": "數量級合理嗎？"
+        "instruction": "周長依長度倍率一次處理，面積則使用長度倍率的平方。",
+        "check": "平方單位的換算也使用平方倍率。"
       },
       {
         "step": 5,
-        "instruction": "若涉及面積，平方長度倍率。",
-        "check": "是否誤用線性倍率？"
+        "instruction": "把答案換回原單位反算圖距，且不量測不按比例示意圖。",
+        "check": "反算回題目標示值。"
       }
     ],
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "比例尺 1:25000，圖上 6 公分，實際多遠？",
+        "prompt": "比例尺1:25000，圖上6公分，實際多遠？",
         "solutionSteps": [
-          "實際為 6×25000=150000 公分。",
-          "150000 公分=1.5 公里。"
+          "計算6×25000=150000公分。",
+          "用100000公分=1公里換算。",
+          "得到1.5公里並反算回6公分。"
         ],
-        "answer": "1.5 公里。"
+        "answer": "1.5公里。",
+        "why": "比例尺的兩項先視為相同單位，圖上六公分放大二萬五千倍得到十五萬公分。再換成一點五公里，最後除回二萬五千可恢復六公分，確保方向沒有顛倒。"
       },
       {
         "exampleId": "L2",
-        "prompt": "比例尺 1:80000，實際 4 公里，圖上幾公分？",
+        "prompt": "比例尺1:80000，實際4公里，圖上幾公分？",
         "solutionSteps": [
-          "4 公里=400000 公分。",
-          "400000÷80000=5。"
+          "把4公里換成400000公分。",
+          "計算400000÷80000=5。",
+          "以5×80000=400000公分驗算。"
         ],
-        "answer": "5 公分。"
+        "answer": "5公分。",
+        "why": "要求的是較短的圖上距離，所以應把同單位的實際距離除以縮小倍數。四十萬除以八萬得到五公分，反向放大又回到四公里，符合縮尺方向。"
       },
       {
         "exampleId": "L3",
-        "prompt": "模型長 18 公分，實物長 4.5 公尺，求比例尺。",
+        "prompt": "模型長18公分，實物長4.5公尺，求比例尺。",
         "solutionSteps": [
-          "4.5 公尺=450 公分。",
-          "18:450=1:25。"
+          "將4.5公尺換成450公分。",
+          "列模型:實物=18:450。",
+          "同除以18得到1:25。"
         ],
-        "answer": "1:25。"
+        "answer": "1:25。",
+        "why": "模型與實物必須先統一為公分才能化簡，否則十八與四點五直接相比會混入單位錯誤。十八比四百五十同除十八為一比二十五，且模型確實較小。"
       },
       {
         "exampleId": "L4",
-        "prompt": "平面圖比例尺 1:100，圖上房間面積 24 平方公分，實際面積？",
+        "prompt": "平面圖比例尺1:100，圖上房間面積24平方公分，實際面積？",
         "solutionSteps": [
-          "長度倍率為 100，面積倍率為 10000。",
-          "24×10000=240000 平方公分=24 平方公尺。"
+          "判斷長度倍率為100。",
+          "面積倍率為100²=10000。",
+          "算24×10000平方公分=24平方公尺。"
         ],
-        "answer": "24 平方公尺。"
+        "answer": "24平方公尺。",
+        "why": "面積由兩個互相垂直的長度相乘而成，兩個方向各放大一百倍，所以總倍率是一萬。二十四萬平方公分再除以一萬換成平方公尺，得到二十四。"
       }
     ],
     "commonMistakes": [
@@ -260,7 +268,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "72e174ab58ea4237286bff6e25b799fbc7f20a23c5f5fa8a7990107589fd28d9"
+    "contentSha256": "880f6ee6e72de24abc695833bb13b566b16e74e51ceed5d5d300f8905ea5e9ee"
   },
   "mcQuestions": [
     {
@@ -285,10 +293,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "500公尺=50000公分。",
       "mainExplanation": "1:50000的兩項同單位，將50000公分換算。",
-      "explanation": "1:50000的兩項同單位，將50000公分換算。",
+      "explanation": "比例尺1:50000的前後項必須使用相同單位，所以圖上1公分代表實際50000公分。因100公分=1公尺，50000÷100=500公尺；反算500公尺=50000公分，確實與比例尺後項一致。",
       "steps": [
-        "比例尺1：50,000表示圖上1 cm對應實際50,000 cm",
-        "50,000 cm÷100=500 m，所以答案為500公尺"
+        "把比例尺讀成1公分對50000公分。",
+        "用50000÷100換成500公尺。",
+        "將500公尺換回50000公分驗算。"
       ],
       "optionAnalysis": [
         {
@@ -312,7 +321,7 @@ export default {
           "reason": "50000公分=500公尺。"
         }
       ],
-      "misconceptionTarget": "把比例尺後項直接當公尺。",
+      "misconceptionTarget": "把比例尺後項五萬直接當成公尺，沒有先維持同單位再換算。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -333,7 +342,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "99c6e85892cf2ab1664c9846c06ad43e5a55a2ff70a0cd95c0f7bbedd9d14546"
+      "contentSha256": "9c66b975d76906e016410534ba76173e05df8934a94200b8da337f21bf4528b8"
     },
     {
       "questionId": "u06-s008-v002",
@@ -357,10 +366,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "1公里在圖上為100000/25000=4公分。",
       "mainExplanation": "先求實際公分，再換公里。",
-      "explanation": "先求實際公分，再換公里。",
+      "explanation": "圖上4公分在1:25000地圖中代表4×25000=100000公分。因1公里=1000公尺=100000公分，所以實際距離是1公里。反算100000÷25000=4公分，與題目的圖距相同，單位與比例方向都正確。",
       "steps": [
-        "4×25000=100000公分",
-        "=1公里"
+        "計算實際距離4×25000=100000公分。",
+        "用100000公分=1公里完成換算。",
+        "以100000÷25000=4公分反算。"
       ],
       "optionAnalysis": [
         {
@@ -384,7 +394,7 @@ export default {
           "reason": "公分換公里錯。"
         }
       ],
-      "misconceptionTarget": "公里與公分換算錯誤。",
+      "misconceptionTarget": "公里換公分時只乘一千，漏掉公尺到公分還要再乘一百。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -405,7 +415,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "5b1dfdc9d2251d09434921b0fab256014203b2d780bd6e5c02067788ad540132"
+      "contentSha256": "b68f16919980da724c8ffa95e64f890b4c53e9994002292167aa626ba2a39bbd"
     },
     {
       "questionId": "u06-s008-v003",
@@ -429,10 +439,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "3×80000=240000公分。",
       "mainExplanation": "實際距離除以縮小倍數。",
-      "explanation": "實際距離除以縮小倍數。",
+      "explanation": "先把實際2.4公里換成240000公分，再依比例尺用實際距離除以80000，得到圖上距離240000÷80000=3公分。反算3×80000=240000公分=2.4公里，方向與單位都正確，也符合圖距小於實距的縮尺特徵。",
       "steps": [
-        "先把實際距離2.4 km換成240,000 cm",
-        "240,000÷80,000=3，所以圖上距離為3 cm"
+        "將2.4公里換成240000公分。",
+        "計算圖距240000÷80000=3公分。",
+        "用3×80000換回2.4公里驗算。"
       ],
       "optionAnalysis": [
         {
@@ -456,7 +467,7 @@ export default {
           "reason": "公里換公分或除法錯。"
         }
       ],
-      "misconceptionTarget": "求圖上距離時仍乘比例尺後項。",
+      "misconceptionTarget": "求縮小後的圖距仍乘比例尺分母，或沒有先把公里換成公分。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -477,7 +488,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "03a851d61e49e3f8edf27c5b55665448d09129b493df0835ebd82e3cd68b228e"
+      "contentSha256": "d46c25542f6fee1d6c314c5944710a05038fc7d52d263c1339b7ffca5b3de05b"
     },
     {
       "questionId": "u06-s008-v004",
@@ -501,11 +512,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "18×25=450。",
       "mainExplanation": "統一單位後化簡模型:實物。",
-      "explanation": "統一單位後化簡模型:實物。",
+      "explanation": "比例尺是模型長與實車長的同單位比。先把4.5公尺換成450公分，再化簡18:450；兩項同除以18得到1:25。驗算18×25=450公分，正好等於實車長。",
       "steps": [
-        "450公分",
-        "18:450",
-        "同除18"
+        "把實車4.5公尺換成450公分。",
+        "列模型:實車=18:450。",
+        "同除以18得1:25，並以18×25=450驗算。"
       ],
       "optionAnalysis": [
         {
@@ -529,7 +540,7 @@ export default {
           "reason": "未化成圖上:實際。"
         }
       ],
-      "misconceptionTarget": "比例尺方向或單位錯。",
+      "misconceptionTarget": "未統一公分與公尺就直接相比，或把實物與模型的比例方向顛倒。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -550,7 +561,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7c3d4129c522de0782af195acc69bbc838602df0fb3510f5ce6199c9b4ab01f9"
+      "contentSha256": "3c2b1c69620bd6bfffa504edd19319d5ece2fd59beec869f555d906078ef3514"
     },
     {
       "questionId": "u06-s008-v005",
@@ -574,10 +585,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "4.5公里換回圖上為7.5公分。",
       "mainExplanation": "完成乘法與公分轉公里。",
-      "explanation": "完成乘法與公分轉公里。",
+      "explanation": "題幹已完整給出比例尺1:60000與圖距7.5公分，不使用數值不同的共用示意圖。實距為7.5×60000=450000公分；因100000公分=1公里，所以450000公分=4.5公里。反算4.5公里÷60000回到7.5公分。",
       "steps": [
-        "450000公分",
-        "÷100000=4.5公里"
+        "計算7.5×60000=450000公分。",
+        "把450000公分換成4.5公里。",
+        "將4.5公里換回公分後除60000，驗證圖距7.5公分。"
       ],
       "optionAnalysis": [
         {
@@ -601,7 +613,7 @@ export default {
           "reason": "多一個10。"
         }
       ],
-      "misconceptionTarget": "數量級判斷不足。",
+      "misconceptionTarget": "把其他圖的比例尺或圖距套入本題，或在公分轉公里時差一個十倍。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -614,15 +626,15 @@ export default {
       "ambiguityBoundaryAudit": "結果介於合理公里級。",
       "difficultyReason": "標準小數運算。",
       "literacyContextNecessity": null,
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-scale-map-01",
-      "drawingSpecRef": "units/u06/s008/drawing-specs.jsonl#u06-fig-scale-map-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "06163b851a7311991aad87bb0d729aa8b6e65a07816d0b72f44f72b262e61b95"
+      "contentSha256": "8097af224872ac10cf7a18f7620185fb680a61f25f13ce3214e65d1f4e824607"
     },
     {
       "questionId": "u06-s008-v006",
@@ -646,11 +658,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "圖上周長20公分×200=4000公分=40公尺。",
       "mainExplanation": "先將兩邊長放大200倍，再算周長。",
-      "explanation": "先將兩邊長放大200倍，再算周長。",
+      "explanation": "圖上長6公分、寬4公分，在1:200下分別代表實際1200公分與800公分，也就是12公尺與8公尺。實際周長=2×(12+8)=40公尺；也可先算圖上周長20公分，再乘200得4000公分。",
       "steps": [
-        "6×200=1200公分=12公尺",
-        "4×200=800公分=8公尺",
-        "周長40公尺"
+        "把長寬放大200倍，得到12公尺與8公尺。",
+        "計算周長2×(12+8)=40公尺。",
+        "另以圖上周長20公分×200=4000公分驗算。"
       ],
       "optionAnalysis": [
         {
@@ -674,7 +686,7 @@ export default {
           "reason": "實際長12公尺、寬8公尺，周長2(12+8)=40。"
         }
       ],
-      "misconceptionTarget": "把周長與面積公式混淆。",
+      "misconceptionTarget": "把長方形周長誤用成長乘寬，或只放大其中一條邊就作答。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -695,7 +707,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ff6db34036d8363a90d040a2cd9ce443f5fe0b18a2c74ca89e4643eeb824ee54"
+      "contentSha256": "110cee312dc843ab500c3fe2404b3cd3a1a2c9a0ad75097b887744938ea18823"
     },
     {
       "questionId": "u06-s008-v007",
@@ -719,10 +731,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "圖上正方形邊5公分，實際邊5公尺，面積25平方公尺。",
       "mainExplanation": "面積倍率需平方，平方單位換算也需平方處理。",
-      "explanation": "面積倍率需平方，平方單位換算也需平方處理。",
+      "explanation": "圖上正方形面積25平方公分，所以邊長為5公分。比例尺1:100使實際邊長為500公分=5公尺，因此實際面積=5×5=25平方公尺。長度倍率100在面積中要使用兩次，面積倍率為10000。",
       "steps": [
-        "25×100²=250000平方公分",
-        "250000÷10000=25平方公尺"
+        "由25平方公分求圖上邊長5公分。",
+        "放大100倍得實際邊長5公尺。",
+        "計算實際面積5×5=25平方公尺。"
       ],
       "optionAnalysis": [
         {
@@ -746,7 +759,7 @@ export default {
           "reason": "把平方公分轉平方公尺漏除10000。"
         }
       ],
-      "misconceptionTarget": "只用長度倍率或平方單位換算錯誤。",
+      "misconceptionTarget": "面積只乘一次長度倍率，或把平方公分換平方公尺時只除以一百。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -767,7 +780,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b281729e9e89efd8b38d08775b16efeafa75faf6bc8edc330c96a4da64101b2b"
+      "contentSha256": "45834137b2f58968f03c3dce52fe9e6698ee6dc5baed238461308aa13841972f"
     },
     {
       "questionId": "u06-s008-v008",
@@ -791,10 +804,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "原圖1公分代表90000公分；放大後1.5公分代表同距，故1公分代表60000。",
       "mainExplanation": "同一實際距離下圖上距離放大，縮小倍數變小。",
-      "explanation": "同一實際距離下圖上距離放大，縮小倍數變小。",
+      "explanation": "原圖1公分代表90000公分實距。印刷後原來1公分變成1.5公分，但仍代表同一段90000公分，所以放大圖的1公分代表90000÷1.5=60000公分，新的比例尺為1:60000。分母變小符合圖畫得更大的直覺。",
       "steps": [
-        "新圖距=1.5舊圖距",
-        "新分母=90000/1.5=60000"
+        "把150%寫成圖距乘1.5。",
+        "列1.5公分對90000公分實距。",
+        "兩項同除以1.5，得到比例尺1:60000。"
       ],
       "optionAnalysis": [
         {
@@ -818,7 +832,7 @@ export default {
           "reason": "比例值不等於1/60000。"
         }
       ],
-      "misconceptionTarget": "比例尺分母跟圖形同向放大。",
+      "misconceptionTarget": "讓比例尺分母也乘一點五，忽略圖距放大時每公分代表的實距反而變小。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -839,7 +853,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e4eba2356f64af3fda90ebb485ea117dad6c711b20646b943f3164bb84aefd99"
+      "contentSha256": "9834d91eb9149167c8d76c468e2658924841e5dc16cfbaebeaf25a9ef59f313e"
     },
     {
       "questionId": "u06-s008-v009",
@@ -863,11 +877,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "若實距4公里，甲10公分、乙4公分，比2.5。",
       "mainExplanation": "同一實距在分母較小的地圖上畫得較長。",
-      "explanation": "同一實距在分母較小的地圖上畫得較長。",
+      "explanation": "同一實際距離D在甲、乙圖上的長度分別為D/40000與D/100000，所以甲對乙的倍率=(D/40000)÷(D/100000)=100000/40000=2.5。也可取4公里驗算，甲圖10公分、乙圖4公分，線段長度比確為2.5倍。",
       "steps": [
-        "L甲=D/40000",
-        "L乙=D/100000",
-        "比=2.5"
+        "寫甲圖距D/40000與乙圖距D/100000。",
+        "相除並消去D，得到100000/40000=2.5。",
+        "取4公里反算10公分對4公分驗證。"
       ],
       "optionAnalysis": [
         {
@@ -891,7 +905,7 @@ export default {
           "reason": "把100000/25000。"
         }
       ],
-      "misconceptionTarget": "只看分母大小未求倍率。",
+      "misconceptionTarget": "只比較分母大小卻把倍率方向顛倒，或誤以為分母差六萬就是倍數。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -912,7 +926,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b2418c88e18c8d96a7242d9dd26c452f5a6755507ac02cbf812632dcf419c5c8"
+      "contentSha256": "26e6eb344d5c631ef5ee4e702d01d9f21ad43fa80727c306c57ea3c26c45d857"
     },
     {
       "questionId": "u06-s008-v010",
@@ -936,10 +950,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "100公尺換回10000公分，除2000得5公分。",
       "mainExplanation": "圖距乘比例尺分母。",
-      "explanation": "圖距乘比例尺分母。",
+      "explanation": "本題直接使用題幹的校園比例尺1:2000與圖上長5公分，不使用數值不同的共用示意圖。實際長=5×2000=10000公分，再除以100得到100公尺。反算100公尺=10000公分，除2000正好為5公分。",
       "steps": [
-        "10000公分",
-        "=100公尺"
+        "計算實際長5×2000=10000公分。",
+        "將10000公分換成100公尺。",
+        "用10000÷2000=5公分反算。"
       ],
       "optionAnalysis": [
         {
@@ -963,7 +978,7 @@ export default {
           "reason": "未正確換單位。"
         }
       ],
-      "misconceptionTarget": "把公分直接當公尺。",
+      "misconceptionTarget": "把其他地圖的比例尺套入校園題，或將一萬公分錯換成十公尺。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -976,15 +991,15 @@ export default {
       "ambiguityBoundaryAudit": "圖示僅提供標示長度，不需目測。",
       "difficultyReason": "生活地圖應用。",
       "literacyContextNecessity": "校園比例尺決定圖上與實際的轉換。",
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-scale-map-01",
-      "drawingSpecRef": "units/u06/s008/drawing-specs.jsonl#u06-fig-scale-map-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d603bc69d459d613e8cc45e64dbf26f4eb56726bcffff44f7f84ba8b6b0c0587"
+      "contentSha256": "cbb9199062ab9e01e950ef1d5e4e4f8aecea815a1b48899234eedff1a9a29125"
     },
     {
       "questionId": "u06-s008-v011",
@@ -1008,10 +1023,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "90÷50=1.8。",
       "mainExplanation": "同單位直接放大50倍。",
-      "explanation": "同單位直接放大50倍。",
+      "explanation": "比例尺1:50表示圖上1公分對實際50公分，題目也明確要求以公分作答。實際門寬=1.8×50=90公分；這是0.9公尺，但不是0.9公里。用90÷50=1.8公分反算，單位與圖距完全一致。",
       "steps": [
-        "圖上1.8 cm按每1 cm代表50 km換算",
-        "1.8×50=90，所以實際距離為90 km"
+        "確認比例尺兩項與答案都使用公分。",
+        "計算1.8×50=90公分。",
+        "用90÷50=1.8公分驗算，並排除公里單位。"
       ],
       "optionAnalysis": [
         {
@@ -1035,7 +1051,7 @@ export default {
           "reason": "1.8×50=90。"
         }
       ],
-      "misconceptionTarget": "小數乘整數錯誤。",
+      "misconceptionTarget": "把公分誤寫成公里，或未依題目指定單位就把九十公分任意改成其他量級。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -1043,7 +1059,7 @@ export default {
         "evidence": "本題只使用已鎖定前置技能 ['inverse-variation-graph'] 與本技能定義；解法未引用後續單元技巧。"
       },
       "estimatedTimeSec": 75,
-      "unitCheck": "公分。",
+      "unitCheck": "圖上與實際門寬均以公分表示；本題不換算公里。",
       "roundingCheck": "精確到題目給定位數。",
       "ambiguityBoundaryAudit": "不需換其他單位。",
       "difficultyReason": "小數比例尺應用。",
@@ -1056,7 +1072,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c2d2ba11bb09d592a75fb29964c1f6d624658bcfa2454616f2a1c8db617cb130"
+      "contentSha256": "17e1d36fd83e88fe76b592c6bd0f0eecd433b5397bb29369fdef85d47b4f782e"
     },
     {
       "questionId": "u06-s008-v012",
@@ -1080,11 +1096,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "5.16/1.2=4.3，逆向驗證。",
       "mainExplanation": "先用比例尺求平面距離，再套起伏倍率。",
-      "explanation": "先用比例尺求平面距離，再套起伏倍率。",
+      "explanation": "先求地圖所示的平面距離：8.6×50000=430000公分=4.3公里。實際行走距離比平面距離多20%，所以再乘1.2，得到4.3×1.2=5.16公里。反算5.16÷1.2=4.3公里，兩階段模型一致。",
       "steps": [
-        "平面4.3公里",
-        "乘1.2",
-        "5.16公里"
+        "用比例尺算平面距離430000公分。",
+        "換算為4.3公里後乘起伏倍率1.2。",
+        "得到5.16公里，並除以1.2反算平面距離。"
       ],
       "optionAnalysis": [
         {
@@ -1108,7 +1124,7 @@ export default {
           "reason": "計算20%錯。"
         }
       ],
-      "misconceptionTarget": "忘記第二步或把20%加成20公里。",
+      "misconceptionTarget": "漏掉路線起伏的第二步，或把增加百分之二十錯解成直接增加二十公里。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation-graph"
@@ -1129,7 +1145,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ee2573fa9edd9542c49cdba06d51f3ffc4362a016b4ee245b32c91f407e3d7a7"
+      "contentSha256": "624625d3b5adf4b1a82cdbcd29ef3dd4048a0f9668b2c18217748ff0f3ba858f"
     }
   ],
   "constructedResponses": [
@@ -1142,7 +1158,7 @@ export default {
       "difficulty": "standard",
       "itemType": "constructed-response",
       "type": "constructed-response",
-      "prompt": "地圖比例尺1:40000，圖上A到B為6.5公分。求實際距離，以公里表示，並在圖中標示的同一路段上寫出換算。",
+      "prompt": "地圖比例尺1:40000，題目標示A到B的圖上距離為6.5公分。求實際距離，以公里表示，並以反算驗證換算。",
       "target": "由地圖求實距",
       "requiredWork": [
         "圖距乘比例尺分母。",
@@ -1150,17 +1166,19 @@ export default {
         "用反算驗證。"
       ],
       "fullCreditSolution": [
-        "實際距離=6.5×40000=260000公分。",
-        "260000公分=2.6公里。",
-        "反算2.6公里=260000公分，除40000得6.5公分。"
+        "比例尺1:40000表示圖上1公分對實際40000公分，因此A到B的實距=6.5×40000=260000公分。",
+        "因1公里=100000公分，260000公分=2.6公里。",
+        "反算2.6公里=260000公分，再除以40000得到6.5公分，與題幹標示完全一致。",
+        "計算只使用題幹數值，不以任何不按比例示意圖的像素長度作為資料。"
       ],
       "alternativeSolutions": [
         "可先求1公分代表0.4公里，再算6.5×0.4=2.6公里。"
       ],
       "reasoningSteps": [
-        "實際距離=6.5×40000=260000公分。",
-        "260000公分=2.6公里。",
-        "反算2.6公里=260000公分，除40000得6.5公分。"
+        "由比例尺將6.5公分放大40000倍。",
+        "把260000公分換成2.6公里。",
+        "將2.6公里換回公分後除40000。",
+        "確認反算回到原圖距6.5公分。"
       ],
       "rubric": [
         {
@@ -1188,13 +1206,12 @@ export default {
       "unitNotationRules": "最後必須以公里表示；1公里=100000公分。",
       "answerOnlyPolicy": "只寫2.6公里最多2分。",
       "commonErrors": [
-        "把1:40000當1公分代表40000公里。",
-        "6.5÷40000。",
-        "使用尺量示意圖。"
+        "把1:40000讀成一公分代表四萬公里，沒有維持同單位。",
+        "用6.5除以40000，或拿不按比例圖形的線段重新量測而忽略標示值。"
       ],
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-scale-map-01",
-      "drawingSpecRef": "units/u06/s008/drawing-specs.jsonl#u06-fig-scale-map-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "independentReview": {
         "derivedResult": "2.6公里。",
         "ambiguity": "圖上標示值與比例尺充分，圖不按比例警告排除量測。",
@@ -1205,7 +1222,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "fa43f950a79ed761c3d03500d1cf6b9ecafeae4be250faca0b42ad8bc613cb1d"
+      "contentSha256": "9e8526aacc138c6fb3c0aaad9a6778454592f47b0aab08e7cb5ccee47b6a3b8c"
     },
     {
       "questionId": "u06-s008-cr002",
@@ -1224,17 +1241,19 @@ export default {
         "說明面積倍率為200²。"
       ],
       "fullCreditSolution": [
-        "實際長=8×200=1600公分=16公尺，實際寬=5×200=1000公分=10公尺。",
+        "比例尺1:200使實際長=8×200=1600公分=16公尺，實際寬=5×200=1000公分=10公尺。",
         "實際面積=16×10=160平方公尺。",
-        "長和寬都放大200倍，所以面積放大200×200=40000倍，不是只乘200。"
+        "長與寬各放大200倍，所以面積倍率為200×200=40000，而不是只乘一次200。",
+        "另以圖上面積40平方公分×40000=1600000平方公分=160平方公尺驗算。"
       ],
       "alternativeSolutions": [
         "圖上面積40平方公分×40000=1600000平方公分=160平方公尺。"
       ],
       "reasoningSteps": [
-        "實際長=8×200=1600公分=16公尺，實際寬=5×200=1000公分=10公尺。",
-        "實際面積=16×10=160平方公尺。",
-        "長和寬都放大200倍，所以面積放大200×200=40000倍，不是只乘200。"
+        "把圖上長寬各放大200倍並換成公尺。",
+        "用實際長16公尺與寬10公尺求面積。",
+        "說明面積含兩個長度方向，因此倍率為200²。",
+        "用面積倍率法得到相同160平方公尺。"
       ],
       "rubric": [
         {
@@ -1262,9 +1281,8 @@ export default {
       "unitNotationRules": "最後用平方公尺；中間可用公分。",
       "answerOnlyPolicy": "只寫160平方公尺最多2分。",
       "commonErrors": [
-        "面積倍率只用200。",
-        "1600000平方公分寫成16000平方公尺。",
-        "周長與面積混淆。"
+        "只把圖上面積乘200，忽略長與寬都各自放大一次。",
+        "把1600000平方公分錯換成16000平方公尺，沒有使用平方單位倍率。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1279,7 +1297,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "853e035f694f70edf97011a6b190a7669a48b3c05f8f0fab0bd2a7d1a945d5b5"
+      "contentSha256": "d81bb779a95618eb6729e53b8909f545c32e7c3d92f6203e30c6c631307be2a5"
     }
   ],
   "semanticReviews": [
@@ -1288,7 +1306,7 @@ export default {
       "questionId": "u06-s008-v001",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "99c6e85892cf2ab1664c9846c06ad43e5a55a2ff70a0cd95c0f7bbedd9d14546",
+      "contentSha256": "9c66b975d76906e016410534ba76173e05df8934a94200b8da337f21bf4528b8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1325,7 +1343,7 @@ export default {
       "questionId": "u06-s008-v002",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "5b1dfdc9d2251d09434921b0fab256014203b2d780bd6e5c02067788ad540132",
+      "contentSha256": "b68f16919980da724c8ffa95e64f890b4c53e9994002292167aa626ba2a39bbd",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1362,7 +1380,7 @@ export default {
       "questionId": "u06-s008-v003",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "03a851d61e49e3f8edf27c5b55665448d09129b493df0835ebd82e3cd68b228e",
+      "contentSha256": "d46c25542f6fee1d6c314c5944710a05038fc7d52d263c1339b7ffca5b3de05b",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1399,7 +1417,7 @@ export default {
       "questionId": "u06-s008-v004",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "7c3d4129c522de0782af195acc69bbc838602df0fb3510f5ce6199c9b4ab01f9",
+      "contentSha256": "3c2b1c69620bd6bfffa504edd19319d5ece2fd59beec869f555d906078ef3514",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1436,7 +1454,7 @@ export default {
       "questionId": "u06-s008-v005",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "06163b851a7311991aad87bb0d729aa8b6e65a07816d0b72f44f72b262e61b95",
+      "contentSha256": "8097af224872ac10cf7a18f7620185fb680a61f25f13ce3214e65d1f4e824607",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1473,7 +1491,7 @@ export default {
       "questionId": "u06-s008-v006",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "ff6db34036d8363a90d040a2cd9ce443f5fe0b18a2c74ca89e4643eeb824ee54",
+      "contentSha256": "110cee312dc843ab500c3fe2404b3cd3a1a2c9a0ad75097b887744938ea18823",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1510,7 +1528,7 @@ export default {
       "questionId": "u06-s008-v007",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "b281729e9e89efd8b38d08775b16efeafa75faf6bc8edc330c96a4da64101b2b",
+      "contentSha256": "45834137b2f58968f03c3dce52fe9e6698ee6dc5baed238461308aa13841972f",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1547,7 +1565,7 @@ export default {
       "questionId": "u06-s008-v008",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "e4eba2356f64af3fda90ebb485ea117dad6c711b20646b943f3164bb84aefd99",
+      "contentSha256": "9834d91eb9149167c8d76c468e2658924841e5dc16cfbaebeaf25a9ef59f313e",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1584,7 +1602,7 @@ export default {
       "questionId": "u06-s008-v009",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "b2418c88e18c8d96a7242d9dd26c452f5a6755507ac02cbf812632dcf419c5c8",
+      "contentSha256": "26e6eb344d5c631ef5ee4e702d01d9f21ad43fa80727c306c57ea3c26c45d857",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1621,7 +1639,7 @@ export default {
       "questionId": "u06-s008-v010",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "d603bc69d459d613e8cc45e64dbf26f4eb56726bcffff44f7f84ba8b6b0c0587",
+      "contentSha256": "cbb9199062ab9e01e950ef1d5e4e4f8aecea815a1b48899234eedff1a9a29125",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1645,12 +1663,12 @@ export default {
       "ambiguityChecks": {
         "wording": "題幹中的所求量為「在校園圖讀實際長度」，已明示必要條件：比例尺與標示線段對應。，不存在需猜測的隱藏量。",
         "units": "單位審查結果：公分轉公尺。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：圖示僅提供標示長度，不需目測。，未超出 U06 鎖定技能邊界。",
+        "boundary": "範圍審查結果：題幹已提供圖上長度，不需要任何示意圖或目測。，未超出 U06 鎖定技能邊界。",
         "rounding": "近似與取整審查：無近似。。"
       },
       "difficultyReason": "生活地圖應用。",
       "literacyNecessity": "校園比例尺決定圖上與實際的轉換。",
-      "reviewerNote": "獨立重算：100公尺換回10000公分，除2000得5公分。 正確選項為「100公尺」。逐項檢查後，唯一為真的理由是「5×2000=10000公分=100公尺。」；其餘三項分別因「少除一個10。」、「把5×50。」、「未正確換單位。」而排除。邊界與語意再檢查：圖示僅提供標示長度，不需目測。",
+      "reviewerNote": "獨立重算：100公尺換回10000公分，除2000得5公分。 正確選項為「100公尺」。逐項檢查後，唯一為真的理由是「5×2000=10000公分=100公尺。」；其餘三項分別因「少除一個10。」、「把5×50。」、「未正確換單位。」而排除。邊界與語意再檢查：題幹已提供圖上長度，不需要任何示意圖或目測。",
       "reviewerDecision": "pass"
     },
     {
@@ -1658,7 +1676,7 @@ export default {
       "questionId": "u06-s008-v011",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "c2d2ba11bb09d592a75fb29964c1f6d624658bcfa2454616f2a1c8db617cb130",
+      "contentSha256": "17e1d36fd83e88fe76b592c6bd0f0eecd433b5397bb29369fdef85d47b4f782e",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1681,13 +1699,13 @@ export default {
       ],
       "ambiguityChecks": {
         "wording": "題幹中的所求量為「建築圖尺寸換算」，已明示必要條件：圖上與實際均用公分。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：公分。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：不需換其他單位。，未超出 U06 鎖定技能邊界。",
+        "units": "單位審查結果：圖上與實際門寬都以公分表示，本題不使用公里。；因此選項可在同一基準下比較。",
+        "boundary": "範圍審查結果：題目明確要求公分，無須也不得把答案誤寫為公里。，未超出 U06 鎖定技能邊界。",
         "rounding": "近似與取整審查：精確到題目給定位數。。"
       },
       "difficultyReason": "小數比例尺應用。",
       "literacyNecessity": "門寬情境提供合理尺寸檢查，90公分符合常見量級。",
-      "reviewerNote": "獨立重算：90÷50=1.8。 正確選項為「90公分」。逐項檢查後，唯一為真的理由是「1.8×50=90。」；其餘三項分別因「1.8×20。」、「把比例尺後項直接作答案。」、「多乘2。」而排除。邊界與語意再檢查：不需換其他單位。",
+      "reviewerNote": "獨立重算：90÷50=1.8。 正確選項為「90公分」。逐項檢查後，唯一為真的理由是「1.8×50=90。」；其餘三項分別因「1.8×20。」、「把比例尺後項直接作答案。」、「多乘2。」而排除。邊界與語意再檢查：題目明確要求公分，無須也不得把答案誤寫為公里。",
       "reviewerDecision": "pass"
     },
     {
@@ -1695,7 +1713,7 @@ export default {
       "questionId": "u06-s008-v012",
       "unitId": "u06",
       "skillId": "scale-drawing",
-      "contentSha256": "ee2573fa9edd9542c49cdba06d51f3ffc4362a016b4ee245b32c91f407e3d7a7",
+      "contentSha256": "624625d3b5adf4b1a82cdbcd29ef3dd4048a0f9668b2c18217748ff0f3ba858f",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1793,11 +1811,11 @@ export default {
       "ticksUnitsArrows": "端點刻線顯示量測界線；單位 cm 明列；無方向箭頭。",
       "toScale": false,
       "visualInferenceWarning": "A、B 的螢幕像素距離不是 3.6 cm；只能使用題面標示和比例尺計算。",
-      "altText": "A、B 兩點的圖上距離標示為三點六公分，比例尺是一比五萬，並提醒示意圖不按實際距離繪製。",
+      "altText": "不按比例的地圖線段示意圖：A、B兩端點以黑線相連，標示圖上距離3.6公分與比例尺1:50000，下方提醒計算只能使用標示數值。",
       "svgTitle": "比例尺一比五萬的地圖線段示意圖",
-      "svgDesc": "A、B 兩點與三點六公分圖距及一比五萬比例尺的示意圖。",
-      "mobileReadabilityReview": "360 px 手機顯示時，A、B 與 3.6 cm 不重疊；比例尺文字保持單行可辨識。",
-      "answerLeakageReview": "圖僅提供題目必要資料，不直接標示換算後的 1.8 km，學生仍須處理 50,000 cm 與公里換算。",
+      "svgDesc": "不按比例的地圖線段示意圖：A、B兩端點以黑線相連，標示圖上距離3.6公分與比例尺1:50000，下方提醒計算只能使用標示數值。",
+      "mobileReadabilityReview": "以360 px寬顯示時，A、B、3.6公分與比例尺文字仍可分辨，底部警語可換行且不與線段或端點重疊。",
+      "answerLeakageReview": "此圖只由講義引用，示範3.6公分與1:50000的讀法；數值不同的題庫題已移除共用figureId，因此不會由alt、desc或圖面直接得到選項答案。",
       "manualVisualInspection": {
         "status": "pass-after-render",
         "inspectionNote": "以 720×360 PNG 實際轉譯檢查；A、B 端點、3.6 cm、1：50,000 和不按比例警語均清楚，線段與文字無重疊。"
@@ -1810,10 +1828,11 @@ export default {
       ],
       "figureReview": {
         "decision": "pass",
-        "reviewNote": "第一次轉譯發現透明背景的跨預覽器可讀性問題；加入白底及繁中字型後重繪，端點、圖距、比例尺與警語全部清晰，且未直接顯示 1.8 km 答案。"
+        "reviewNote": "逐項核對SVG與drawing spec的A、B端點、3.6公分、1:50000和不按比例警語；alt與desc一致，手機及黑白列印可讀，且題庫不再誤掛此講義示意圖。"
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "f1e9f757f8a2bfe4dc6c0bc81eb92109df2687a49b9bb16d0989b25b4160b1db"
+      "contentSha256": "63df144f38f8fa18c8b2016f23a60488b5f4adb25ab8bab71d65929446fa2e33",
+      "printReadabilityReview": "以A4黑白列印並縮至版心寬度時，5 px路線、3 px端點刻線與黑色端點保持清楚；資訊全以形狀和文字表達，不依賴顏色。"
     }
   ]
 };

@@ -15,7 +15,8 @@
     "能辨認三組對應邊相等的 SSS 判定。",
     "能辨認兩組對應邊與夾角相等的 SAS 判定。",
     "能區分夾角與非夾角，避免把 SSA 誤作 SAS。",
-    "能在共用邊、中點或角平分線題型中補出 SSS 或 SAS 所需條件。"
+    "能在共用邊、中點或角平分線題型中補出 SSS 或 SAS 所需條件。",
+    "能區分SSS、SAS與一般SSA，並以共同端點確認夾角及全等式的頂點順序。"
   ],
   "prerequisiteBridge": "已建立全等判定總覽與證明格式。本技能集中處理以邊為主的兩種判定，核心問題是『資料是否把三角形鎖定成唯一形狀』。",
   "prerequisites": [
@@ -133,27 +134,33 @@
       "prompt": "AB=DE=5、BC=EF=7、CA=FD=8，判斷兩三角形。",
       "solutionSteps": [
         "三組對應邊分別相等。",
-        "邊的端點對應為 A↔D、B↔E、C↔F。"
+        "邊的端點對應為 A↔D、B↔E、C↔F。",
+        "由三組邊的共同端點確認A對D、B對E、C對F。"
       ],
-      "answer": "△ABC≅△DEF（SSS）。"
+      "answer": "△ABC≅△DEF（SSS）。",
+      "why": "三個邊長5、7、8在兩圖中一一相等，且依共同端點建立一致的頂點配對，才能同時得到SSS判定與正確全等式。"
     },
     {
       "exampleId": "L2",
       "prompt": "AB=PQ、AC=PR、∠A=∠P，判斷條件。",
       "solutionSteps": [
         "∠A 是 AB、AC 的夾角。",
-        "∠P 是 PQ、PR 的夾角。"
+        "∠P 是 PQ、PR 的夾角。",
+        "兩組已知邊與共同端點角一一對應，因此套用SAS。"
       ],
-      "answer": "可用 SAS 判定。"
+      "answer": "可用 SAS 判定。",
+      "why": "∠A正好夾在AB與AC之間，∠P正好夾在PQ與PR之間；兩邊及其夾角對應相等，SAS足以唯一固定三角形。其餘頂點對應也隨之唯一確定。"
     },
     {
       "exampleId": "L3",
       "prompt": "AB=DE、BC=EF、∠A=∠D，能否用 SAS？",
       "solutionSteps": [
         "兩已知邊 AB、BC 的夾角是 ∠B。",
-        "給定的是 ∠A，不是夾角。"
+        "給定的是 ∠A，不是夾角。",
+        "因給定角不是夾角，保留一般SSA可能有兩種圖形的結論。"
       ],
-      "answer": "不能直接用 SAS；資料型態為 SSA。"
+      "answer": "不能直接用 SAS；資料型態為 SSA。",
+      "why": "AB與BC的夾角應是∠B，題目卻給∠A；非夾角配合兩邊可能產生兩個第三頂點位置，所以不能誤套SAS。這正是一般SSA的二解風險。"
     },
     {
       "exampleId": "L4",
@@ -161,9 +168,11 @@
       "solutionSteps": [
         "AM=MB（中點）。",
         "CM=CM（共用邊）。",
-        "AC=BC（已知）。"
+        "AC=BC（已知）。",
+        "三組邊AM－MB、CM－CM、AC－BC齊備後套用SSS。"
       ],
-      "answer": "△AMC≅△BMC（SSS）。"
+      "answer": "△AMC≅△BMC（SSS）。",
+      "why": "中點、共用邊與已知等腰條件分別提供三組邊相等；將三組資料完整列出後，SSS直接證明兩個小三角形全等。"
     },
     {
       "exampleId": "L5",
@@ -171,9 +180,11 @@
       "solutionSteps": [
         "AB=AC。",
         "∠BAD=∠CAD。",
-        "AD=AD。"
+        "AD=AD。",
+        "確認∠BAD與∠CAD是AB、AD和AC、AD各自的夾角。"
       ],
-      "answer": "△ABD≅△ACD（SAS）。"
+      "answer": "△ABD≅△ACD（SAS）。",
+      "why": "AD同時出現在兩個三角形，角平分線又把頂角分成相等夾角；配合AB＝AC，資料恰好是邊、角、邊。三項都具有明確且獨立的來源。"
     }
   ],
   "commonMistakes": [
@@ -265,5 +276,5 @@
     "reviewVersion": "human-lecture-review-u16-r1.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "7a08768062d32c310934cc49b3491ec8265658e8f156b11e79612945ca053c29"
+  "contentSha256": "7e1859b141ddb24e20f2338dd5e63131da46354b55182d4864919ff20c82b1d2"
 }

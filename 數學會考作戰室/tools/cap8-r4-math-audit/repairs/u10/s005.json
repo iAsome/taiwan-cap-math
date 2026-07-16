@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u10",
+  "batch": "011-u10-complete",
+  "skills": ["s005"],
+  "mc": [
+    {
+      "questionId": "u10-s005-v001",
+      "expectedContentSha256": "e2796b4e915193eb6f4caf19c9147389b181add14a59931984e86c30fe18e8e7",
+      "appendText": {"explanation": "兩個括號以加號連接，可直接展開並分類；x 項係數 2+5=7，常數項 3+(-1)=2，因此結果是 7x+2，兩組同類項分別核對，且沒有遺漏任何原項。", "misconceptionTarget": "把第二式的 -1 當成正一，或交叉合併 x 項與常數而得到錯誤係數。"},
+      "appendArray": {"steps": ["去掉加法括號，寫成 2x+3+5x-1。", "分別合併 x 項與常數項，得到 7x+2。"]}
+    },
+    {
+      "questionId": "u10-s005-v002",
+      "expectedContentSha256": "f7fafa90c6685809ccea2a497994e913ffe304afd704092f174ed459a1874d25",
+      "appendText": {"explanation": "括號前的減號使 x² 與 -3x 都取相反數，第二式變成 -x²+3x；再算二次項 4-1=3、一次項 2+3=5，故兩項皆為正確符號。", "misconceptionTarget": "只把括號第一項 x² 變號，仍保留 -3x，因而把一次項係數算成負一。"},
+      "appendArray": {"steps": ["完整去括號為 4x²+2x-x²+3x。", "按次方合併，得到 3x²+5x 並核對兩項符號。"]}
+    },
+    {
+      "questionId": "u10-s005-v003",
+      "expectedContentSha256": "e40aaa1be6bba20be7ec172c7107d867a00d8e0561f63ea32b5de2a57a5c2839",
+      "appendText": {"explanation": "P+Q=(x²+4)+(3x²-2)，同類二次項係數 1+3=4，常數 4-2=2；加法不會改變 x 的指數，所以答案仍是二次式，完整結果為 4x²+2，常數欄也已完整相加。", "misconceptionTarget": "把 x² 與 3x² 相加時將指數也相加成 x⁴，或把常數 -2 漏掉。"},
+      "appendArray": {"steps": ["將兩式並列成 x²+3x²+4-2，按文字部分分組。", "算得 4x²+2，確認沒有一次項需要補入。"]}
+    },
+    {
+      "questionId": "u10-s005-v004",
+      "expectedContentSha256": "35acb6eea9a587cb96729b1cb2d391e1333d7dd5776744228dbe77fb4e4ac021",
+      "appendText": {"explanation": "減去第二個三項式時，2x²、4x、-7 依序變為 -2x²、-4x、+7；再逐次方合併，得到 x²-5x+12，三個符號皆已反轉，每一欄也各自完成核對。", "misconceptionTarget": "外層減號沒有分配到常數 -7，將 5-7 算成 -2 而非 5+7。"},
+      "appendArray": {"steps": ["展開為 3x²-x+5-2x²-4x+7，檢查三項皆已變號。", "合併係數 3-2、-1-4、5+7，得到 x²-5x+12。"]}
+    },
+    {
+      "questionId": "u10-s005-v005",
+      "expectedContentSha256": "408e845cc649ec1999ec1e5ccba0ae3b0491edab4e44ea5004718ab39c14ad15",
+      "appendText": {"explanation": "題目只問 P+Q 的 x 項，可鎖定 P 中的 -x 與 Q 中的 3x；係數 -1+3=2，三次、二次與常數項都不影響此係數，故答案只取二。", "misconceptionTarget": "把不同次方的係數一起相加，或漏讀 -x 省略的係數是負一。"},
+      "appendArray": {"steps": ["從兩式各自擷取一次項 -x 與 3x，忽略其他不同次方項。", "將 -x 改寫成 -1x，合併係數 -1+3=2。"]}
+    },
+    {
+      "questionId": "u10-s005-v006",
+      "expectedContentSha256": "770fcf4828980012cd526f1aa8cf6e51409632c4c3961e2c87ee5283e20d6502",
+      "appendText": {"explanation": "括號外的 2 必須乘到三項，先得 2x²+2x-2；加上第二式後，二次項 3x²、一次項 -x、常數 2，三類項完整保留，結果已按降冪排列。", "misconceptionTarget": "外係數二只乘括號第一項，或漏把常數 -1 乘成 -2。"},
+      "appendArray": {"steps": ["用分配律完整展開第一括號為 2x²+2x-2。", "與 x²-3x+4 分類合併，得到 3x²-x+2。"]}
+    },
+    {
+      "questionId": "u10-s005-v007",
+      "expectedContentSha256": "49423d99680a256a414821625e9467d5f5d6f8aa8235dd57a89bfe3937817852",
+      "appendText": {"explanation": "先處理內層 -(x-1)=-x+1，再把外層所減的整個 x²+(2x+3) 展開為 -x²-2x-3；最後合併得 x²-3x-2，兩層括號依序處理。", "misconceptionTarget": "混淆兩層負號的作用範圍，只改變每個括號的第一項而漏掉常數。"},
+      "appendArray": {"steps": ["將兩個整體都展開，得到 (2x²-x+1)-(x²+2x+3)。"]}
+    },
+    {
+      "questionId": "u10-s005-v008",
+      "expectedContentSha256": "f4733dc566b12bdd5d909edd9a3671c9bba92708027793dd6f134416230ee058",
+      "appendText": {"explanation": "由 P-Q=D 可在等式兩邊同加 Q，得 P=D+Q；把已知差與 Q 對齊相加後，二次項四、一次項負一、常數四，故 P=4x²-x+4，再減 Q 可回到原差。", "misconceptionTarget": "反求被減式時再次用差減 Q，將 P 錯列為 (P-Q)-Q。"},
+      "appendArray": {"steps": ["先用等式運算寫出 P=(P-Q)+Q，確認方向。", "代入兩式後合併 3x²+x²、-2x+x、5-1，得 4x²-x+4。"]}
+    },
+    {
+      "questionId": "u10-s005-v009",
+      "expectedContentSha256": "eb678dc62135ae18f9d75bc5b86ff89cce8b159aa3e3cd7fd9548efc0c10def2",
+      "appendText": {"explanation": "A-B 展開時 B 的 -4x 變為 +4x，常數 b 變為 -b；比較一次項得 a+4=5、常數項得 -3-b=-7，所以 a=1、b=4，最後相加為五；兩個係數條件彼此獨立。", "misconceptionTarget": "減去 B 時未改變 -4x 或 b 的符號，因而建立 a-4=5 或 -3+b=-7。"}
+    },
+    {
+      "questionId": "u10-s005-v010",
+      "expectedContentSha256": "e7aed90ed4dfd69d901638416efa624d9bb0eeaa5e3b3de2b208606fe27e06e8",
+      "appendText": {"explanation": "結餘定義為收入減支出，故變動部分 80x-35x=45x，固定部分 1200-500=700；兩部分合併為 45x+700 元，金額單位一致。", "misconceptionTarget": "把收入與支出相加，或只減 x 項而將固定支出五百元加到收入。"},
+      "appendArray": {"steps": ["依結餘關係列 (80x+1200)-(35x+500)。", "逐項變號並合併，得到 45x+700 元，保留金額單位。"]}
+    },
+    {
+      "questionId": "u10-s005-v011",
+      "expectedContentSha256": "f351f85db045d4bbe5ee6b58b78e31462566541791361a923e14a1596f1c8b3e",
+      "appendText": {"explanation": "剩量等於原有量減放出量；括號內 -3x 被整體相減後成 +3x，因此一次項 4x+3x=7x，常數則為 -5，二次項同時相減為 4x²。", "misconceptionTarget": "將放出量中的 -3x 保留為負，或把放出的常數五加到剩餘量。"},
+      "appendArray": {"steps": ["展開為 6x²+4x-2x²+3x-5，確認放出量三項皆取相反數。", "合併得 4x²+7x-5 公升，核對量綱仍為容量。"]}
+    },
+    {
+      "questionId": "u10-s005-v012",
+      "expectedContentSha256": "b95871d6266b70559790d18c8e32ba7503aea3ec17a6e7f547e7fa26ad917240",
+      "appendText": {"explanation": "乙比甲短某差量，關係是乙=甲-差；減去 x²-x+2 時得到 -x²+x-2，與甲式合併為 2x²+3x-1 公里，方向符合較短語意。", "misconceptionTarget": "把『乙比甲短』理解成甲加差量，或減括號時沒有將 -x 轉為 +x。"},
+      "appendArray": {"steps": ["依語意列乙=(3x²+2x+1)-(x²-x+2)。", "完整去括號再逐次方合併，得到 2x²+3x-1 公里。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u10-s005-cr001",
+      "expectedContentSha256": "cf89dd72efd8cb8c92923788e23e08ea2f550f52b538d4c45ae63ba5d37ef0fe",
+      "appendArray": {"standardSolution": ["外層減號使第二式的 x²、5x、-2 依序成為 -x²、-5x、+2；分三欄計算係數 4-1=3、-3-5=-8、6+2=8，故完整化簡式為 3x²-8x+8。將結果逐欄與去括號式比對，可確認每項都有對應且沒有遺失負號。"], "reasoningSteps": ["把三組係數逐一回填到 x²、x、常數位置，並確認答案已按降冪排列。"]},
+      "set": {"commonErrorTargets": ["只把第二式第一項 x² 變號，沒有同時把 5x 與 -2 取相反數。", "直式書寫時未按同次方對齊，將 x 項係數與常數相減。"]}
+    },
+    {
+      "questionId": "u10-s005-cr002",
+      "expectedContentSha256": "924285bf442051f85e946891c24cfd2a1dd5c5ff84cd46d48e147337f0382669",
+      "appendArray": {"standardSolution": ["設已知差 D=A-B，則由 D=A-B 兩邊同加 B、再減 D 可得 B=A-D。將兩個已知式相減後，二次項 1-2=-1、一次項 1-(-3)=4、常數 -1-4=-5，所以 B=-x²+4x-5。再以 A-B 回算原差，三個係數均吻合，證明反求方向正確。"], "reasoningSteps": ["用求得的 B 驗算 A-B，確實回到 2x²-3x+4，確認關係方向與所有符號。"]},
+      "set": {"commonErrorTargets": ["由 A-B=D 反求 B 時誤寫成 D-A 或 A+D，顛倒被減式關係。", "計算 A-D 時未將 D 的 -3x 變成 +3x，或漏變常數 4 的符號。"]}
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u10-s005-lecture-r1",
+      "expectedContentSha256": "52c39bf822b45b08fc2a089aad62a8cb032727cd154bf682dd1ed353b7dcb32e",
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "(3x²+2x-1)+(x²-5x+4)。", "solutionSteps": ["x²、x、常數分組。"], "answer": "4x²-3x+3。", "why": "加法括號可展開後按次方分組：二次項係數 3+1=4，一次項 2-5=-3，常數 -1+4=3。合併過程只改係數、不改文字部分，三組都必須保留。"},
+          {"exampleId": "L2", "prompt": "(4x²-x+6)-(2x²+3x-5)。", "solutionSteps": ["第二式變為 -2x²-3x+5。"], "answer": "2x²-4x+11。", "why": "減去整個第二式等同每一項乘負一，所以常數 -5 也要變成 +5。逐項變號後再合併，可得二次項二、一次項負四、常數十一，避免只改第一項。"},
+          {"exampleId": "L3", "prompt": "(x³+2)-(2x²-x)。", "solutionSteps": ["補看缺項後相減。"], "answer": "x³-2x²+x+2。", "why": "第一式可視為 x³+0x²+0x+2，第二式可視為 0x³+2x²-x+0；按同次方對齊並把第二式逐項變號後，每一欄都能正確相加，不會因缺項而錯位。"}
+        ]
+      },
+      "appendArray": {
+        "conceptNarrative": ["多項式加減可用橫式或直式，但核心都是按相同文字部分對齊係數；缺少某次項時應視其係數為零，不能依書寫位置錯位。相加時保留各項原符號，相減時則先把被減的整個多項式每一項乘以負一，再合併同類項、刪除零項並按降冪整理。完成後可代入簡單數值，比較原運算與化簡式是否同值，以檢查漏項或變號錯誤。"],
+        "commonMistakes": [{"mistake": "由已知和或差反求其中一式時憑字面猜運算", "why": "被減式、減式與差的角色不同，方向錯會使全部係數反號", "correction": "先用 A-B=D 寫等式，再以等式兩邊同加減推得所求關係。"}]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

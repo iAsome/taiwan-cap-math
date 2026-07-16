@@ -44,10 +44,11 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "LCM要包含每個原數需要的全部質因數。",
+    "最小公倍數要包含每個原數需要的全部質因數。",
     "同一質因數取各數中最大指數，才能讓結果被所有原數整除。",
-    "若a是b的倍數，lcm(a,b)=a。",
-    "所有正共同倍數都是LCM的正整數倍。"
+    "若 a 是 b 的倍數，lcm(a,b)=a。",
+    "所有正共同倍數都是最小公倍數的正整數倍。",
+    "週期同步題除了求共同週期，還要把週期加到題目給的起始時刻，並注意端點是否計入。"
   ],
   "formalDefinitions": [
     {
@@ -99,40 +100,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "求 lcm(8,12)。",
       "solutionSteps": [
-        "8=2³，12=2²×3。",
-        "取2³×3。"
+        "分解兩數：8=2³，12=2²×3。",
+        "收集質因數 2、3 並各取較大指數，得到 lcm(8,12)=2³×3=24。",
+        "驗算 24÷8=3、24÷12=2，確認 24 是兩數的共同倍數。"
       ],
-      "answer": "24。"
+      "answer": "24。",
+      "why": "8=2³、12=2²×3，收集底數 2、3 並各取最大指數，得 2³×3=24。24÷8=3、24÷12=2，且沒有更小正共同倍數。對任一指數減少一都會使其中一數無法整除。"
     },
     {
-      "exampleId": "L2",
       "prompt": "求 lcm(18,30,40)。",
       "solutionSteps": [
-        "分解為2×3²、2×3×5、2³×5。",
-        "取2³×3²×5。"
+        "分解三數：18=2×3²、30=2×3×5、40=2³×5。",
+        "質因數 2、3、5 分別取三數中最大的指數 3、2、1。",
+        "所以 lcm(18,30,40)=2³×3²×5=8×9×5=360。"
       ],
-      "answer": "360。"
+      "answer": "360。",
+      "why": "三數分解為 2×3²、2×3×5、2³×5。質因數 2、3、5 的最大指數為 3、2、1，所以最小公倍數是 2³×3²×5=360。這個乘積同時包含三數各自需要的所有質因數。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "已知9整除45。",
+      "prompt": "已知 9 整除 45，求兩數最小公倍數。",
       "solutionSteps": [
-        "45同時是9與45的倍數。",
-        "最小者就是45。"
+        "由 45=9×5 可知 45 是 9 的倍數，同時也當然是 45 的倍數。",
+        "因此 45 已是兩數的共同倍數。",
+        "任何 45 的正倍數都不小於 45，所以 lcm(9,45)=45。"
       ],
-      "answer": "lcm(9,45)=45。"
+      "answer": "lcm(9,45)=45。",
+      "why": "45 本身是 45 的倍數，也因 45=9×5 而是 9 的倍數，所以它已是共同倍數。任何 45 的正倍數都不小於 45，因此最小值就是 45，可直接利用整除關係判斷。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "共同週期為36分鐘的事件，若每12分鐘發生一次，在第1分鐘至第36分鐘內（含第36分鐘）共發生幾次？",
+      "prompt": "事件每 12 分鐘發生一次，第 1 至第 36 分鐘內含終點共發生幾次？",
       "solutionSteps": [
-        "發生時刻為第12、24、36分鐘。",
-        "不含起點，含共同終點，共3次。"
+        "發生時刻是 12 的正倍數，列出不超過 36 的時刻：12、24、36。",
+        "第 36 分鐘包含在題目區間內，而起點不另算一次。",
+        "符合條件的時刻共有 3 個，所以發生 3 次。"
       ],
-      "answer": "3次。"
+      "answer": "3 次。",
+      "why": "從第 1 分鐘後開始列 12 的正倍數，符合區間的時刻為第 12、24、36 分鐘。題目包含第 36 分鐘且不把起點算一次，因此共 3 次。"
     }
   ],
   "commonMistakes": [
@@ -218,7 +223,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "e10257f94f47cfd0fbeb68e5285fbc41b4a26374e95dbd39a7d72ac52996e4ad",
+  "contentSha256": "8cd3ad90c3088e6095ed271574d87c069eec8ddf082cf5f8b515f098df115a25",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -242,10 +247,11 @@ export const QUESTIONS = [
       "48"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：6的倍數12、18、24；8的倍數16、24；最小共同者是24。所以答案是「24」。",
+    "explanation": "依序列倍數：6 的正倍數有 6、12、18、24，8 的正倍數有 8、16、24；第一次共同出現的是 24，所以最小公倍數為 24。48 雖也是共同倍數，但不是最小，因此不能選 48。",
     "steps": [
-      "6的倍數12、18、24；8的倍數16、24",
-      "最小共同者是24"
+      "列出 6 的倍數直到 24。",
+      "列出 8 的倍數並找到共同的 24。",
+      "確認 24 是第一個正共同倍數。"
     ],
     "optionAnalysis": [
       {
@@ -284,7 +290,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "05c21b1801a7c56c1fae2b17af1b87c16d304b4e6c9e8263aefd4396cd97130d",
+    "contentSha256": "62ad79fdd78ad72e0bc173e5ba30dd209d82e5a6f343ef52062f2061a58f100b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -306,7 +312,7 @@ export const QUESTIONS = [
       "2³×3²"
     ],
     "answerIndex": 1,
-    "explanation": "最小公倍數要涵蓋兩數中的所有質因數，對每一個質因數取較大指數，因此為 2²×3²。",
+    "explanation": "最小公倍數必須包含兩數需要的所有質因數。比較 12=2²×3、18=2×3²，質因數 2、3 的較大指數都為 2，因此得到 2²×3²=36，且 36 可同時被 12、18 整除，所以答案為 36。",
     "steps": [
       "比較 12=2²×3 與 18=2×3²。",
       "2 的較大指數為 2，3 的較大指數為 2。",
@@ -349,7 +355,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "30760417febd9b3c17f7f36b4e02aad8105cfef91aefe344308c5006819b6f13",
+    "contentSha256": "24c6e1bcd08bc3b9e821190b293dbc55fda45e660b53d8f56e944d77cad815ce",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -371,10 +377,11 @@ export const QUESTIONS = [
       "60"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：45=9×5=15×3；其餘至少不被其中一數整除。所以答案是「45」。",
+    "explanation": "共同倍數要同時能被 9、15 整除。45÷9=5、45÷15=3，兩個商都是整數；30、36、60 各至少有一個除法有餘數，所以唯一符合的是 45，兩個整除條件都不能省略。",
     "steps": [
-      "45=9×5=15×3",
-      "其餘至少不被其中一數整除"
+      "逐項檢查是否能被 9 整除。",
+      "再檢查同一選項是否也能被 15 整除。",
+      "確認只有 45=9×5=15×3。"
     ],
     "optionAnalysis": [
       {
@@ -398,7 +405,7 @@ export const QUESTIONS = [
         "reason": "60不是9的倍數。"
       }
     ],
-    "commonMistake": "只檢查一個倍數條件。",
+    "commonMistake": "只檢查候選數是九或十五其中一個的倍數，沒有同時滿足兩條件。",
     "concept": "共同倍數必須同時被兩數整除。",
     "tags": [
       "數與量",
@@ -413,7 +420,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4da6004af5d9b9a816dfcf1675c05ffb45ad9ff9b2aa49228883d8dbf061a7ea",
+    "contentSha256": "4952bbc3cd2feca5c06879c7e283f2895b8d62fa8754e8b53104c592afa5b3a1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -435,10 +442,11 @@ export const QUESTIONS = [
       "a"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：a已同時是a與b的倍數；不可能有比a更小且仍為a倍數的正數。所以答案是「a」。",
+    "explanation": "a 是 b 的倍數，表示 a=b×正整數，所以 a 已同時是 a、b 的倍數。任何 a 的正倍數都不小於 a，因此不可能有更小的正共同倍數，故 lcm(a,b)=a，此結論不需再列舉倍數。",
     "steps": [
-      "a已同時是a與b的倍數",
-      "不可能有比a更小且仍為a倍數的正數"
+      "把 a 是 b 的倍數寫成 a=b×正整數。",
+      "確認 a 同時是 a 與 b 的倍數。",
+      "利用 a 是自身最小正倍數，判定最小公倍數為 a。"
     ],
     "optionAnalysis": [
       {
@@ -477,7 +485,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "34e4b7396f42dc29f26ee4abefbf8b996c1180f8be534aacdccfd4d08ffc647d",
+    "contentSha256": "e6859517c8d8bf9bfd2058d6e5a8cd04e39a84e611c762ef4d98d052783a4226",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -499,10 +507,11 @@ export const QUESTIONS = [
       "360"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：20=2²×5，30=2×3×5，45=3²×5；取最大指數2²×3²×5=180。所以答案是「180」。",
+    "explanation": "20=2²×5、30=2×3×5、45=3²×5。最小公倍數收集所有底數並取最大指數，得 2²×3²×5=180；180÷20=9、÷30=6、÷45=4，均為整數。若少取任一質因數或指數，就會有原數無法整除所得數，因此 180 確為最小值。",
     "steps": [
-      "20=2²×5，30=2×3×5，45=3²×5",
-      "取最大指數2²×3²×5=180"
+      "分解 20、30、45 的質因數。",
+      "對質因數 2、3、5 分別取最大指數。",
+      "算得 180，並逐一驗證可被三數整除。"
     ],
     "optionAnalysis": [
       {
@@ -541,7 +550,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e614996c4e371c1c6bed2ad817c56fde9f1dd1662dfb5aaa2458ec5221145468",
+    "contentSha256": "49bdd6fbaee3318d7aedd8ef0cdb4b1dea1485f62ba6124850f49f3d6f6437c7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -563,10 +572,11 @@ export const QUESTIONS = [
       "24"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：lcm(12,15)=60；其餘三數與12的最小公倍數分別為24、36、24。所以答案是「15」。",
+    "explanation": "逐項反查：lcm(12,15)=60，符合題意；12 與 8、18、24 的最小公倍數分別為 24、36、24。只有 n=15 能補入質因數 5，又不加入超過 60 所需的指數，所以其他選項都不符條件。",
     "steps": [
-      "lcm(12,15)=60",
-      "其餘三數與12的最小公倍數分別為24、36、24"
+      "先分解 12=2²×3 與目標 60=2²×3×5。",
+      "逐項計算 12 與候選 n 的最小公倍數。",
+      "確認只有 n=15 時結果恰為 60。"
     ],
     "optionAnalysis": [
       {
@@ -605,7 +615,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3bf09f04fb697f8a0588f560655b0a794089d9c87dab84d68e9b71c8a58acd4a",
+    "contentSha256": "90b43ee1cffccfe6c8383e68bb788a8cd0f7047dfc508da493d48f052047dda6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -627,10 +637,11 @@ export const QUESTIONS = [
       "8"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：LCM對2取5、對3取2；a+b=5+2=7。所以答案是「7」。",
+    "explanation": "求最小公倍數時，同底數取較大指數。質因數 2 的指數取 max(3,5)=5，質因數 3 取 max(2,1)=2，並保留 5，所以 a=5、b=2，a+b=7。字母代表的是指數，不是質因數底數。",
     "steps": [
-      "LCM對2取5、對3取2",
-      "a+b=5+2=7"
+      "收集兩式出現的質因數 2、3、5。",
+      "對 2、3 分別取較大指數 5、2。",
+      "讀出 a=5、b=2，計算 a+b=7。"
     ],
     "optionAnalysis": [
       {
@@ -669,7 +680,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f147293535c4806efadb664f9983bc75a45db96e8e547bc4457895ff61537430",
+    "contentSha256": "568ac88093fece09f725a2e699b4548cb02acddade8df7416edf7386bc7188cd",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -691,10 +702,11 @@ export const QUESTIONS = [
       "54"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：每個原數都必須整除LCM=360；54含3³，不能整除只有3²的360。所以答案是「54」。",
+    "explanation": "三個原數都必須整除其最小公倍數 2³×3²×5=360。54=2×3³，所需的 3 指數為 3，超過 360 中的 3²，因此不能整除 360；45、72、120 都能整除，所以 54 不可能是原數，其餘三項才符合必要條件。",
     "steps": [
-      "每個原數都必須整除LCM=360",
-      "54含3³，不能整除只有3²的360"
+      "先將給定最小公倍數還原為 360。",
+      "檢查每個選項的質因數指數是否超過 2³×3²×5。",
+      "發現 54 含 3³，故不可能是原數之一。"
     ],
     "optionAnalysis": [
       {
@@ -718,7 +730,7 @@ export const QUESTIONS = [
         "reason": "54=2×3³，含過多3。"
       }
     ],
-    "commonMistake": "只看數值小於360就認為可能。",
+    "commonMistake": "只比較候選數小於三百六十，沒有檢查它是否整除最小公倍數。",
     "concept": "成員必須在各質因數指數上不超過 LCM。",
     "tags": [
       "數與量",
@@ -733,7 +745,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c98da9cb990b5dfa5021a5fd15e10f385125b14c4ec62a0447780e3390a6b7b1",
+    "contentSha256": "5a0df17cfcc98e96a3d8d2c52f3db6f932bc46facc1baf857e92de6b0f1f42e8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -755,10 +767,11 @@ export const QUESTIONS = [
       "30"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：g=6，m=90；90÷6=15。所以答案是「15」。",
+    "explanation": "18=2×3²、30=2×3×5，所以最大公因數 g=2×3=6，最小公倍數 m=2×3²×5=90。依題意計算 m÷g=90÷6=15，不能把兩者相加。兩個量分別要取共同質因數的小指數與大指數，順序不可混淆。",
     "steps": [
-      "g=6，m=90",
-      "90÷6=15"
+      "由共同質因數的較小指數求 g=6。",
+      "由全部質因數的較大指數求 m=90。",
+      "代入 m÷g，計算 90÷6=15。"
     ],
     "optionAnalysis": [
       {
@@ -782,7 +795,7 @@ export const QUESTIONS = [
         "reason": "30是其中一個原數。"
       }
     ],
-    "commonMistake": "混淆 GCD、LCM 或把兩者相加。",
+    "commonMistake": "混淆最大公因數與最小公倍數，或把兩個結果誤做加法。",
     "concept": "兩數的 GCD 與 LCM 可同時計算並比較。",
     "tags": [
       "數與量",
@@ -797,7 +810,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "be01c1d58265475fafa66f977a6b89080457432faee174c0da75d0d984198700",
+    "contentSha256": "3b3620f44265f8f3303ea9763d57e0f3c8b0b107b289bbe97ade6de010b14ca4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -819,10 +832,11 @@ export const QUESTIONS = [
       "48 秒"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：再次同時閃的時間是8、12的最小公倍數；lcm(8,12)=24。所以答案是「24 秒」。",
+    "explanation": "再次同時閃的秒數必須同時是 8、12 的倍數，且要求最早，所以求最小公倍數。8=2³、12=2²×3，lcm=2³×3=24，因此 24 秒後兩燈再次同時閃，而非把兩個週期相加。",
     "steps": [
-      "再次同時閃的時間是8、12的最小公倍數",
-      "lcm(8,12)=24"
+      "把再次同步時間轉成 8、12 的共同倍數。",
+      "求 lcm(8,12)=24。",
+      "確認 24÷8=3、24÷12=2，且是最早正時刻。"
     ],
     "optionAnalysis": [
       {
@@ -846,7 +860,7 @@ export const QUESTIONS = [
         "reason": "48較晚。"
       }
     ],
-    "commonMistake": "找到共同時刻但沒選最早。",
+    "commonMistake": "找到四十八秒也是共同時刻便作答，沒有選最早的二十四秒。",
     "concept": "同步週期是各週期的 LCM。",
     "tags": [
       "數與量",
@@ -861,7 +875,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩個閃燈週期與『最少多久後』共同指定最小公倍數，情境不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "de6b4c538b925a30499b13c4f2cf707bac910c418becefb81098b0242b0c5f64",
+    "contentSha256": "3a242a09d1ae58e40d0c31de0c226486bc2527ca584f0b384ebf2824b9c9ef00",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -883,10 +897,11 @@ export const QUESTIONS = [
       "9:20"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：lcm(15,20)=60分鐘；8:00後60分鐘是9:00。所以答案是「9:00」。",
+    "explanation": "下一次同時發車的間隔是 15、20 分鐘的最小公倍數。15=3×5、20=2²×5，lcm=2²×3×5=60 分鐘；上午 8:00 加 60 分鐘是 9:00。在這一小時內兩班車分別經過四個與三個週期，因此確實同時發車。",
     "steps": [
-      "lcm(15,20)=60分鐘",
-      "8:00後60分鐘是9:00"
+      "把共同發車間隔轉成 15、20 的最小公倍數。",
+      "求得共同週期為 60 分鐘。",
+      "從上午 8:00 加 60 分鐘，得到 9:00。"
     ],
     "optionAnalysis": [
       {
@@ -910,7 +925,7 @@ export const QUESTIONS = [
         "reason": "80分鐘不是最早共同週期。"
       }
     ],
-    "commonMistake": "只取較大的週期20分鐘。",
+    "commonMistake": "只取較大的二十分鐘週期，沒有確認十五分鐘班次也同時發車。",
     "concept": "先求 LCM，再換算成鐘面時間。",
     "tags": [
       "數與量",
@@ -925,7 +940,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "班距、起始時刻和下一次三項資料都必須保留，才能由週期換算到實際鐘點。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b407b65de2cbb72f96f05b439712efb1c949d2927115019673ee0b8d21a0f475",
+    "contentSha256": "f742327e3bdf9cd12b57ba9cbea6f576bdac7c603742be3cee074a94b28724d3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -947,10 +962,11 @@ export const QUESTIONS = [
       "1:30"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：lcm(6,10,15)=30分鐘；1:00後30分鐘是1:30。所以答案是「1:30」。",
+    "explanation": "三個警示器再次同時響的間隔是 6、10、15 的最小公倍數。分解後取 2×3×5=30 分鐘；下午 1:00 加 30 分鐘得到 1:30，且 30 可被三個週期整除，所以三者都完成整數次週期。",
     "steps": [
-      "lcm(6,10,15)=30分鐘",
-      "1:00後30分鐘是1:30"
+      "將再次同步時間轉成三個週期的最小公倍數。",
+      "求 lcm(6,10,15)=30 分鐘。",
+      "從下午 1:00 加 30 分鐘，得到 1:30。"
     ],
     "optionAnalysis": [
       {
@@ -989,7 +1005,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "三個週期、共同起點與下一次同步共同決定三數最小公倍數及鐘面換算。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8410ce6cd8825a0f97fc7ac804bef2b43d1ba797142cd3b0a98068487bbe011f",
+    "contentSha256": "518c8e58d7b6f84e94a0e8edd5da2a9c6659c434a556037b7919855567045f3b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1011,9 +1027,9 @@ export const CONSTRUCTED_RESPONSES = [
       "用除法驗證。"
     ],
     "fullCreditSolution": [
-      "24=2³×3，36=2²×3²，90=2×3²×5。",
-      "LCM=2³×3²×5=360。",
-      "360÷24=15、÷36=10、÷90=4。"
+      "先分解：24=2³×3、36=2²×3²、90=2×3²×5，三式都已完成質因數分解。",
+      "收集質因數 2、3、5 並各取最大指數，得到 LCM=2³×3²×5=360，確保包含每個原數所需的質因數。",
+      "驗算 360÷24=15、360÷36=10、360÷90=4，商皆為整數，確認 360 是共同倍數。"
     ],
     "alternativeSolutions": [
       "也可逐步求lcm(24,36)=72，再求lcm(72,90)=360。"
@@ -1040,15 +1056,15 @@ export const CONSTRUCTED_RESPONSES = [
       "驗證商須為整數。"
     ],
     "commonErrors": [
-      "漏質因數5。",
-      "對2取較小指數。"
+      "求最小公倍數時漏掉質因數五，所得數便不能被含五的原數整除。",
+      "質因數二的指數誤取較小值，混用了最大公因數的選取規則。"
     ],
     "independentReview": {
       "derivedResult": "lcm=360。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "d40e0c28462d4c2732c7341821ae324f5ee03586cccc33272a2a6b42872d55b5",
+    "contentSha256": "fb8a3bb7e20f595d4ed593841d82481859b81594dd5ac945aec6c012dbc3b853",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1066,9 +1082,9 @@ export const CONSTRUCTED_RESPONSES = [
       "列出全部並說明完整性。"
     ],
     "fullCreditSolution": [
-      "12=2²×3，60=2²×3×5。",
-      "n必須整除60、必須含質因數5，且2、3指數不能超過60；同時與12合併要產生5。",
-      "滿足者為5、10、15、20、30、60。逐項與12求LCM均為60。"
+      "12=2²×3、60=2²×3×5；要使 lcm(12,n)=60，n 必須整除 60 且提供質因數 5。",
+      "n 的 2、3 指數不得超過 60 中的指數，5 的指數須恰為 1，因此候選為 5、10、15、20、30、60。",
+      "六個候選都小於 100，逐項與 12 合併後的最大指數皆為 2²×3×5，所以最小公倍數均為 60。"
     ],
     "alternativeSolutions": [
       "可列60的正因數後篩選含5者，並排除lcm不足者。"
@@ -1095,15 +1111,15 @@ export const CONSTRUCTED_RESPONSES = [
       "n小於100，60可列入。"
     ],
     "commonErrors": [
-      "只列15。",
-      "列25，導致質因數5²。"
+      "只列出十五而沒有依題目範圍繼續檢查十五的其他倍數。",
+      "列入二十五會帶入質因數五的平方，與指定的最小公倍數不符。"
     ],
     "independentReview": {
       "derivedResult": "n=5、10、15、20、30、60。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "7e7aa78874072bd11a872715c033b7ff68f58fb845a65a501025d3ba324f1b82",
+    "contentSha256": "ea4909ffed79f865ed40f4943fa715f12fa9dcac5e432a5754e3a5721fe59de2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

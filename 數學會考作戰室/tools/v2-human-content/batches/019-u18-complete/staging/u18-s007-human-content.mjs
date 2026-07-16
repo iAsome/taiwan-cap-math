@@ -775,7 +775,7 @@ export const QUESTIONS = [
       {
         "choice": "能，且 △ABC∼△DEF",
         "truth": false,
-        "reason": "該順序会把 B=70° 對到 E=60°。"
+        "reason": "該順序會把 B=70° 對到 E=60°。"
       },
       {
         "choice": "能，且 △ABC∼△DFE",
@@ -792,7 +792,7 @@ export const QUESTIONS = [
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 120,
     "unitAndRoundingCheck": "題目量綱一致，答案不需另行四捨五入。",
-    "ambiguityAndBoundaryAudit": "題目問能否判定相似，不预設 DEF 的對應順序；正確順序需自行决定。",
+    "ambiguityAndBoundaryAudit": "題目問能否判定相似，不预設 DEF 的對應順序；正確順序需自行決定。",
     "difficultyReason": "需要判斷是否可重新排列對應角，而非只看同位置。",
     "literacyContextNecessity": null,
     "visualMode": "text-only",
@@ -802,7 +802,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2418e42d7d688067af726b0f74ac0a0a87d2c5f0d03c71f7891bf03642f7a013"
+    "contentSha256": "898e7611aef9437844b5c82bb0655a0f46902405362e362f3deb3a2258843ea3"
   },
   {
     "questionId": "u18-s007-v009",
@@ -995,7 +995,7 @@ export const QUESTIONS = [
     "unitAndRoundingCheck": "長度同為 cm，比例無單位。",
     "ambiguityAndBoundaryAudit": "D、B 位於同一射線，E、A 位於另一射線，且 DE∥AB，配對唯一。",
     "difficultyReason": "先以 AA 建立成像相似，再轉換大小方向。",
-    "literacyContextNecessity": "取景框與牆面平行關系决定成像比例，攝影構圖中比值方向具有實際意義。",
+    "literacyContextNecessity": "取景框與牆面平行關系決定成像比例，攝影構圖中比值方向具有實際意義。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -1003,7 +1003,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8698591878b6b44c5c4097a7414d5d864ec2b5b132b27e9fb5b3e25e688a6f51"
+    "contentSha256": "1f67e6721ab14fd5e5c19550953c4c027a7d53d584f24acda9b51f229addeb20"
   },
   {
     "questionId": "u18-s007-v012",
@@ -1420,7 +1420,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-aa",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "2418e42d7d688067af726b0f74ac0a0a87d2c5f0d03c71f7891bf03642f7a013",
+    "contentSha256": "898e7611aef9437844b5c82bb0655a0f46902405362e362f3deb3a2258843ea3",
     "independentSolution": "兩組角集合都是 50°、60°、70°；按位置正確配對後，△ABC∼△DFE。",
     "derivedAnswer": "能，且 △ABC∼△DFE",
     "storedAnswer": "能，且 △ABC∼△DFE",
@@ -1434,7 +1434,7 @@ export const SEMANTIC_REVIEWS = [
     ],
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "題目問能否判定相似，不预設 DEF 的對應順序；正確順序需自行决定。",
+      "boundary": "題目問能否判定相似，不预設 DEF 的對應順序；正確順序需自行決定。",
       "units": "題目量綱一致，答案不需另行四捨五入。",
       "scope": "只使用國中會考範圍內的「AA 相似」概念，未要求高中延伸。"
     },
@@ -1513,7 +1513,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-aa",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "8698591878b6b44c5c4097a7414d5d864ec2b5b132b27e9fb5b3e25e688a6f51",
+    "contentSha256": "1f67e6721ab14fd5e5c19550953c4c027a7d53d584f24acda9b51f229addeb20",
     "independentSolution": "小對大線性比為 CD/CB=1/5，因此大牆高對框高是 5/1。",
     "derivedAnswer": "5:1",
     "storedAnswer": "5:1",
@@ -1532,7 +1532,7 @@ export const SEMANTIC_REVIEWS = [
       "scope": "只使用國中會考範圍內的「AA 相似」概念，未要求高中延伸。"
     },
     "difficultyReason": "先以 AA 建立成像相似，再轉換大小方向。",
-    "literacyNecessityReview": "取景框與牆面平行關系决定成像比例，攝影構圖中比值方向具有實際意義。",
+    "literacyNecessityReview": "取景框與牆面平行關系決定成像比例，攝影構圖中比值方向具有實際意義。",
     "reviewerNote": "重新由已知條件獨立計算：小對大線性比為 CD/CB=1/5，因此大牆高對框高是 5/1。 四個選項逐一核對後，只有「5:1」符合；主要排除點是「忽略所求比值方向或選錯對應邊。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"

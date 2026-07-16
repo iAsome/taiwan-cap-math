@@ -69,7 +69,8 @@ export default {
       "便利抽樣、自願回覆與只調查單一時間地點都可能造成代表性問題。",
       "缺失資料若集中在特定群體，刪除缺值可能改變結論。",
       "觀察研究能發現關聯，但因果判斷還需時間先後、控制其他因素或合理實驗設計。",
-      "負責任決策要寫出資料支持什麼、不支持什麼，以及還需要哪些資料。"
+      "負責任決策要寫出資料支持什麼、不支持什麼，以及還需要哪些資料。",
+      "統計資料素養的最後一步是把計算結果與證據強度分開：樣本內的平均、比例與差值可以精確重算，但能否外推取決於母體定義、抽樣方式、未回覆、分母與研究設計。觀察到關聯時應主動尋找混淆因素，只有較強的控制或隨機分派才能支持因果；負責任結論還要明說資料支持到哪裡、尚缺哪些資訊。"
     ],
     "definitions": [
       {
@@ -142,39 +143,47 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "學校在籃球社群組調查全校運動時間。",
+        "prompt": "學校只在籃球社群組調查全校學生的運動時間，能否代表全校？",
         "solution": [
-          "樣本偏向喜愛運動者。",
-          "母體是全校學生。"
+          "母體是全校學生，樣本只有籃球社群組成員。",
+          "籃球社成員被選入的機會較高，且可能更喜愛運動。",
+          "將結論限制在受訪群組，另以跨年級隨機抽樣補強。"
         ],
-        "answer": "便利且偏誤的樣本，不能直接代表全校。"
+        "answer": "屬便利且偏誤的樣本，不能直接代表全校。",
+        "why": "樣本中的人雖然也是學生，但與全校母體的運動偏好可能系統性不同；代表性看抽樣機會是否公平，不是只看受訪者是否屬於母體。"
       },
       {
         "id": "L2",
-        "prompt": "1000人問卷只有120人回覆，回覆者滿意率90%。",
+        "prompt": "1000人問卷只有120人回覆，回覆者滿意率90%，如何報告？",
         "solution": [
-          "回覆率12%。",
-          "不滿意者或忙碌者可能較不回覆。"
+          "先算回覆率120÷1000＝12%。",
+          "辨認未回覆的880人可能與回覆者意見不同。",
+          "只報回覆者中的90%，並明示低回覆率與不回應偏誤。"
         ],
-        "answer": "可報回覆者90%，但需警告不回應偏誤。"
+        "answer": "可報回覆者90%，但不能直接當成1000人或母群的滿意率。",
+        "why": "90%的比例計算可以正確，問題在於只有12%的人回覆；若回覆意願與滿意度相關，已回覆樣本會系統性偏離原邀請對象。"
       },
       {
         "id": "L3",
-        "prompt": "帶水壺學生平均成績較高。",
+        "prompt": "帶水壺的學生平均成績較高，能否說帶水壺會提高成績？",
         "solution": [
-          "可能受家庭支持、自律或年級影響。",
-          "觀察資料未控制混淆因素。"
+          "確認資料只觀察學生原本是否帶水壺。",
+          "列出家庭支持、自律、年級或健康習慣等混淆因素。",
+          "在未控制與未隨機分派前，只能說樣本中有關聯。"
         ],
-        "answer": "有關聯，不足以證明帶水壺提高成績。"
+        "answer": "不能僅由此觀察資料證明因果。",
+        "why": "同一個第三因素可能同時提高帶水壺機會與成績，使兩者看似相關；若沒有更強研究設計，直接把關聯改寫成因果會超過證據。"
       },
       {
         "id": "L4",
-        "prompt": "決定是否延長圖書館時間，只調查午休使用者。",
+        "prompt": "決定是否延長圖書館時間時，只調查午休使用者，資料足夠嗎？",
         "solution": [
-          "午休使用者不一定代表晚間需求者。",
-          "應跨時段與年級抽樣，並記錄實際進館量。"
+          "辨認決策關心的是晚間需求，樣本卻只含午休使用者。",
+          "午休使用者不一定代表未來晚間使用者。",
+          "跨時段、年級抽樣並記錄實際進館量後再決策。"
         ],
-        "answer": "目前資料不足，先補充具代表性的需求資料。"
+        "answer": "目前資料不足，需補充具代表性的需求資料。",
+        "why": "抽樣的時間與地點會決定誰有機會被調查；只問午休使用者容易漏掉白天不進館但晚間有需求的人，與決策目標不一致。"
       }
     ],
     "commonMistakes": [
@@ -252,7 +261,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "b30e1ad6f3284aa38247efa042f610ccc9334a64a2f2c2e7cfa5a50a616268cb"
+    "contentSha256": "07bc42ded4587d704d931acaaf952a6388dc66776c211d12cb9e2de05ec79cf3"
   },
   "mcQuestions": [
     {
@@ -280,10 +289,12 @@ export default {
         "derivedAnswer": "從各年級隨機抽取學生",
         "trustStoredAnswer": false
       },
-      "explanation": "抽樣設計要對應推論母群。",
+      "explanation": "抽樣設計要對應推論母群。 要推論全校，樣本應讓各年級學生都有可知且較公平的抽取機會；分年級隨機抽樣比只問幹部、操場學生或自願支持者更能涵蓋母體。",
       "steps": [
         "辨認母群。",
-        "比較樣本涵蓋性。"
+        "比較樣本涵蓋性。",
+        "把目標母體寫成全校各年級學生。",
+        "逐一排除便利、自願與單一群體抽樣，保留分層隨機方案。"
       ],
       "optionAnalysis": [
         {
@@ -307,7 +318,7 @@ export default {
           "reason": "涵蓋各年級並隨機抽取較具代表性。"
         }
       ],
-      "misconceptionTarget": "以方便取樣代替代表性",
+      "misconceptionTarget": "以方便取樣代替代表性 或只選容易接觸的人，沒有檢查各年級與不同意見者是否有機會入樣。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -325,7 +336,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2228141fe3c2d73db77fe0fd2cec33e0b0366fb51514fdfc1498af3b1d21cb97"
+      "contentSha256": "073355b14db02f05a62d93073befb5d2c4706eba497aa097e4c65e615bdeedbb"
     },
     {
       "questionId": "u09-s016-v002",
@@ -352,9 +363,11 @@ export default {
         "derivedAnswer": "樣本總分除以樣本數等於 68",
         "trustStoredAnswer": false
       },
-      "explanation": "要分清樣本統計量與個體、母群。",
+      "explanation": "要分清樣本統計量與個體、母群。 『樣本平均68分』依定義只保證樣本總分÷樣本數＝68；個別分數、中位數與母群平均都可能不同，不能由一個樣本平均唯一推出。",
       "steps": [
-        "逐一檢查敘述層次。"
+        "逐一檢查敘述層次。",
+        "將平均定義改寫成樣本總分除以樣本數。",
+        "檢查其他選項都額外加入個體、中央位置或母群層次的未給條件。"
       ],
       "optionAnalysis": [
         {
@@ -378,7 +391,7 @@ export default {
           "reason": "樣本平均不保證母群平均相同。"
         }
       ],
-      "misconceptionTarget": "過度外推",
+      "misconceptionTarget": "過度外推 或把樣本平均同時當成每個人的分數、中位數及母群平均。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -396,7 +409,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "51ea99f9f79aba553cfd61609b104d4cfe695e224466adef8cb568eb9a324ba9"
+      "contentSha256": "14f4ad1d90ee4bff5847d2e38b6a3c63e604e24e70f3f6842993754aa8cfde20"
     },
     {
       "questionId": "u09-s016-v003",
@@ -423,9 +436,11 @@ export default {
         "derivedAnswer": "未回覆者可能與回覆者意見不同",
         "trustStoredAnswer": false
       },
-      "explanation": "統計素養不只看計算，也看資料如何取得。",
+      "explanation": "統計素養不只看計算，也看資料如何取得。 回覆率30%表示70%未回覆；若未回覆者的意見與回覆者系統性不同，只分析已回覆資料就會產生不回應偏誤。30%本身不證明調查必錯。",
       "steps": [
-        "辨識缺失資料來源。"
+        "辨識缺失資料來源。",
+        "算出未回覆比例為70%。",
+        "詢問未回覆是否與意見相關，將結論限定為可能偏誤而非必然錯誤。"
       ],
       "optionAnalysis": [
         {
@@ -449,7 +464,7 @@ export default {
           "reason": "回覆模式可能影響結果。"
         }
       ],
-      "misconceptionTarget": "只看已回覆樣本大小",
+      "misconceptionTarget": "只看已回覆樣本大小 或只看已收回的樣本數，完全忽略未回覆者可能集中於特定立場。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -467,7 +482,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "dc5517b2825afa4b2356886d388973cb9803e0fe2f039e77ca02aa72e4e8a946"
+      "contentSha256": "327a653051321ea4e9598b0b69de9f57637adb2c9f0127fb285e01128d3b6963"
     },
     {
       "questionId": "u09-s016-v004",
@@ -494,9 +509,11 @@ export default {
         "derivedAnswer": "兩者在樣本中有關聯，但不能僅此證明運動造成睡眠變長",
         "trustStoredAnswer": false
       },
-      "explanation": "相關不等於因果。",
+      "explanation": "相關不等於因果。 這是觀察到常運動者與較長睡眠同時出現，只能支持樣本中的關聯；年齡、健康、自律或作息都可能同時影響兩者，不能僅此確定因果方向。",
       "steps": [
-        "區分觀察與因果。"
+        "區分觀察與因果。",
+        "辨認研究未說明隨機分派或控制。",
+        "保留『樣本中有關聯』，排除兩個方向的必然因果敘述。"
       ],
       "optionAnalysis": [
         {
@@ -520,7 +537,7 @@ export default {
           "reason": "資料顯示至少有關聯。"
         }
       ],
-      "misconceptionTarget": "把關聯直接當因果",
+      "misconceptionTarget": "把關聯直接當因果 或把平均差異直接改寫成運動必然造成睡眠變長，沒有控制混淆因素。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -538,7 +555,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ab4046aa85a672aa8fcea31d2caba15a07f2750a613599ac6e159cee67636b06"
+      "contentSha256": "314069ab5ae7dbf1d771d44723bf9682570330d8609e3bb66e6bff0f03021ee7"
     },
     {
       "questionId": "u09-s016-v005",
@@ -565,10 +582,12 @@ export default {
         "derivedAnswer": "增加 1 個百分點；相對增幅為 25%",
         "trustStoredAnswer": false
       },
-      "explanation": "統計語言需標明比較方式。",
+      "explanation": "統計語言需標明比較方式。 失業率由4%到5%的直接差是1個百分點；相對原率4%的增幅為(5－4)÷4＝25%，所以應明確區分兩種表達。用4%×1.25＝5%反向驗算，可確認相對增幅以原率為基準。",
       "steps": [
         "算直接差。",
-        "算相對差。"
+        "算相對差。",
+        "以5%－4%得到1個百分點。",
+        "以原率4%作分母算1%÷4%＝25%。"
       ],
       "optionAnalysis": [
         {
@@ -592,7 +611,7 @@ export default {
           "reason": "差不是 5。"
         }
       ],
-      "misconceptionTarget": "混淆百分點與百分比",
+      "misconceptionTarget": "混淆百分點與百分比 或把增加1個百分點簡寫成增加1%，使讀者無法判斷指直接差或相對增幅。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -610,7 +629,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "6688518d048a9f4703871d889298d3632d6743cc39826711122f04dd7ad8f78e"
+      "contentSha256": "e66e23a70c8b507ed262708fad7fa088a58abdbdf604f3a3571f5a633eeb7de1"
     },
     {
       "questionId": "u09-s016-v006",
@@ -637,10 +656,12 @@ export default {
         "derivedAnswer": "在該樣本中約 520 人支持；推論母群仍需抽樣方法與誤差資訊",
         "trustStoredAnswer": false
       },
-      "explanation": "同時保留可計算事實與推論限制。",
+      "explanation": "同時保留可計算事實與推論限制。 52%乘1000得到樣本內約520人支持，這是可直接計算的事實；要推論全體仍需知道抽樣方法、抽樣誤差與未回覆情形，不能寫成母群恰為52%。",
       "steps": [
         "換算樣本內人數。",
-        "檢查外推前提。"
+        "檢查外推前提。",
+        "先算0.52×1000＝520人。",
+        "再把樣本內描述與母群推論分開，列出外推需要的條件。"
       ],
       "optionAnalysis": [
         {
@@ -664,7 +685,7 @@ export default {
           "reason": "0.52×1000=520；外推仍需方法。"
         }
       ],
-      "misconceptionTarget": "把樣本比例當母群確定值",
+      "misconceptionTarget": "把樣本比例當母群確定值 或因樣本有1000人就跳過代表性與誤差，將樣本比例視為母群確定值。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -682,7 +703,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9ef7ea03d02b806c75e781dc3d07954fc427be3097b818da603ff60334a04711"
+      "contentSha256": "c3b88a35b36c1604d7a01356be647d10383f99bd311a556b2e852da823d974ad"
     },
     {
       "questionId": "u09-s016-v007",
@@ -709,10 +730,12 @@ export default {
         "derivedAnswer": "檢查兩試驗分組、樣本數與受試者條件是否可比",
         "trustStoredAnswer": false
       },
-      "explanation": "統計素養要求先審查可比性。",
+      "explanation": "統計素養要求先審查可比性。 B的樣本改善率70%高於A的60%，但兩試驗樣本數100與20不同，受試者與分組也可能不可比；下一步應審查設計與條件，而非直接宣布療效。",
       "steps": [
         "辨認兩研究差異。",
-        "提出必要補充資訊。"
+        "提出必要補充資訊。",
+        "保留60/100與14/20的原始分子分母。",
+        "檢查隨機分派、受試條件與樣本數後才評估藥效差異。"
       ],
       "optionAnalysis": [
         {
@@ -736,7 +759,7 @@ export default {
           "reason": "直接平均沒有明確權重與目的。"
         }
       ],
-      "misconceptionTarget": "只看最高百分比",
+      "misconceptionTarget": "只看最高百分比 或只挑最高百分比，忽略小樣本波動、分組方法及病況差異。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -754,7 +777,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c16748b09ffabe0ff2aa271bc1fc0797d9f0a83361a3206d5eaea862d41b84cc"
+      "contentSha256": "24ceb05c35335bea7245ebe62dce3b725210506fe53e04a9261942df7c40270b"
     },
     {
       "questionId": "u09-s016-v008",
@@ -781,10 +804,12 @@ export default {
         "derivedAnswer": "少數高分大幅上升，拉高平均；多數中央位置略降",
         "trustStoredAnswer": false
       },
-      "explanation": "不同代表值反應分布不同面向。",
+      "explanation": "不同代表值反應分布不同面向。 少數高分大幅上升會拉高對極端值敏感的平均；若中央附近多數資料略降，排序後的中位數仍可下降，因此兩指標方向可以不同。",
       "steps": [
         "構造或想像反例。",
-        "檢查兩指標方向。"
+        "檢查兩指標方向。",
+        "分別回想平均使用全部數值、中位數只看中央位置。",
+        "構造少數高值大升、多數中央值略降的情況，驗證兩方向可並存。"
       ],
       "optionAnalysis": [
         {
@@ -808,7 +833,7 @@ export default {
           "reason": "平均對極高值敏感，中位數反映中央位置。"
         }
       ],
-      "misconceptionTarget": "認為代表值必同方向",
+      "misconceptionTarget": "認為代表值必同方向 或認為平均與中位數一定同方向變化，沒有考慮少數極端值的拉動。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -826,7 +851,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9b888acf9f5b4709fd9cacb8de78bd6bedcc90a6353c11e9c0562e056698590a"
+      "contentSha256": "a19ce43e64b462f03e33280083c23390b241e10f2aa0d8d577ed65d7e9a16c22"
     },
     {
       "questionId": "u09-s016-v009",
@@ -853,9 +878,11 @@ export default {
         "derivedAnswer": "各百分比背後的實際分母與證據量",
         "trustStoredAnswer": false
       },
-      "explanation": "百分比應盡量與樣本數一起揭露。",
+      "explanation": "百分比應盡量與樣本數一起揭露。 相同百分比若來自10人或10000人，證據量與波動程度不同；沒有各類別的實際分母，就無法判斷比例背後有多少觀察資料。",
       "steps": [
-        "找影響解讀的未提供資訊。"
+        "找影響解讀的未提供資訊。",
+        "把百分比寫成分子除以分母的形式。",
+        "辨認圖中缺少的是各類實際分母與樣本數，而非裝飾性資訊。"
       ],
       "optionAnalysis": [
         {
@@ -879,7 +906,7 @@ export default {
           "reason": "排列可影響閱讀但不是核心缺失。"
         }
       ],
-      "misconceptionTarget": "只重視視覺設計",
+      "misconceptionTarget": "只重視視覺設計 或只看百分比圖形與顏色，完全不問百分比是由多少樣本計算。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -897,7 +924,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "07ac0f5633798d8eaa817c2eb7ac64b64eb437f9df9903292ce75bc04603891e"
+      "contentSha256": "71e39d16cb915d1e1c65cd5f4cd2b4a5ee29b62873cf5b0586e9460ed055eb47"
     },
     {
       "questionId": "u09-s016-v010",
@@ -924,11 +951,13 @@ export default {
         "derivedAnswer": "18/20=90% 的計算正確，但樣本小且自我選擇，不能代表所有網友",
         "trustStoredAnswer": false
       },
-      "explanation": "好的統計批判不應因外推錯誤而否定正確算術。",
+      "explanation": "好的統計批判不應因外推錯誤而否定正確算術。 18÷20＝90%的算術正確，但20票很少且是作者限時動態中的自我選擇樣本；可描述這20票，不能外推成所有網友支持率。",
       "steps": [
         "驗算比例。",
         "檢查樣本來源。",
-        "限制結論。"
+        "限制結論。",
+        "驗算18/20的樣本比例確為90%。",
+        "再審查樣本大小與自我選擇來源，將結論限制在參與投票者。"
       ],
       "optionAnalysis": [
         {
@@ -952,7 +981,7 @@ export default {
           "reason": "可描述該次投票，但需限制範圍。"
         }
       ],
-      "misconceptionTarget": "不是全盤接受就是全盤否定",
+      "misconceptionTarget": "不是全盤接受就是全盤否定 或在全盤接受與全盤否定間二選一，沒有分開評估計算正確性與外推有效性。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -970,7 +999,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "09c42f03872765f2213bb3f976fc5befb907f489ccc8fdbcd004c8106a8bf9a3"
+      "contentSha256": "7eba6d2aef9e6f32ff9949c93ab0533576b2f6c0c9ddefe011bb4b10612e54f4"
     },
     {
       "questionId": "u09-s016-v011",
@@ -997,11 +1026,13 @@ export default {
         "derivedAnswer": "乙區每十萬人 90 件，高於甲區 60 件",
         "trustStoredAnswer": false
       },
-      "explanation": "風險比較需要適當人口分母。",
+      "explanation": "風險比較需要適當人口分母。 甲區每十萬人事故率為120÷20萬×10萬＝60件，乙區為90÷10萬×10萬＝90件；比較居民風險要統一人口分母，乙較高。",
       "steps": [
         "計算甲率。",
         "計算乙率。",
-        "比較。"
+        "比較。",
+        "將兩區都換算成每十萬人的事故件數。",
+        "比較60與90，而不是直接比較總件數120與90。"
       ],
       "optionAnalysis": [
         {
@@ -1025,7 +1056,7 @@ export default {
           "reason": "60 不等於 90。"
         }
       ],
-      "misconceptionTarget": "以總件數代替風險率",
+      "misconceptionTarget": "以總件數代替風險率 或以總事故120大於90判定甲風險較高，忽略甲人口也是乙的兩倍。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -1043,7 +1074,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4f6d1aa4914b6ac4085eda35987f93bb859d2fd0fe8047c272be29fa2f6c6545"
+      "contentSha256": "8b92ed2afd6c90336bebb9a975e6770babf334fca4225898ca160c9d2da89b9d"
     },
     {
       "questionId": "u09-s016-v012",
@@ -1070,10 +1101,12 @@ export default {
         "derivedAnswer": "要求完整基準、時間範圍與原始數值後再判斷",
         "trustStoredAnswer": false
       },
-      "explanation": "統計資料素養包含知道何時不能下結論。",
+      "explanation": "統計資料素養包含知道何時不能下結論。 『下降30%』若缺少比較年份、污染物種類、原始值與計算基準，無法重算也無法判斷涵蓋範圍；應先要求完整資料，而非直接相信或直接指控造假。",
       "steps": [
         "列出缺失資訊。",
-        "暫緩判斷。"
+        "暫緩判斷。",
+        "列出重算30%所需的原值、新值與期間。",
+        "補問污染物種類與計算口徑，在資料齊全前暫緩結論。"
       ],
       "optionAnalysis": [
         {
@@ -1097,7 +1130,7 @@ export default {
           "reason": "顏色不是證據。"
         }
       ],
-      "misconceptionTarget": "在資訊不足時強行二分判斷",
+      "misconceptionTarget": "在資訊不足時強行二分判斷 或在資訊不足時強迫作真偽二分判斷，不先補齊基準與原始數。",
       "prerequisiteCheck": {
         "skillIds": [
           "misleading-statistics-basic"
@@ -1115,7 +1148,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4f9a5deeaeab9589fdb272a2276f992278f1cee2e1718a56191f9213d7c82919"
+      "contentSha256": "1afba080ad4041fae4cfe7a93b4927649672d126903ff9c629ff9482a024f860"
     }
   ],
   "constructedResponses": [
@@ -1139,14 +1172,16 @@ export default {
         "母體是全校學生；樣本是電競社群組中願意填答的120人。",
         "可能偏誤一：電競社成員或群組使用者可能比一般學生更常使用手機，屬便利抽樣偏誤。",
         "可能偏誤二：願意回覆者可能與未回覆者不同，屬自願回覆或不回應偏誤。",
-        "合理結論：『在此次電競社群組自願回覆的120人中，平均每天使用手機4.6小時；此結果不能直接代表全校學生。』"
+        "合理結論：『在此次電競社群組自願回覆的120人中，平均每天使用手機4.6小時；此結果不能直接代表全校學生。』",
+        "核對結論中的每個量詞：4.6小時只描述電競社群組內自願回覆的120人；沒有跨年級隨機樣本時，不得改寫成全校平均。"
       ],
       "alternativeMethod": "也可指出未涵蓋不在群組者、年級比例失衡或自報時間誤差，只要與設計具體相關。",
       "reasoningSteps": [
         "寫出研究想推論的全部對象。",
         "寫出實際被蒐集的對象。",
         "比較誰有較高被選入或回覆機會。",
-        "將結論限制在樣本。"
+        "將結論限制在樣本。",
+        "逐一檢查結論是否明確寫出樣本來源、120人及不能代表全校的限制。"
       ],
       "rubric": [
         {
@@ -1184,7 +1219,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "7261d4ec2ef5ffd562840ad942c4ccf3ad1b15006c967415ee8209038ca59823"
+      "contentSha256": "5beacd75c8768018ab6b75319fed034a3dbc1bc77d0ac3b53ce14a365de160ad",
+      "commonErrors": [
+        "把電競社群組中的120名自願回覆者寫成全校母體，直接外推4.6小時。",
+        "只說樣本太小，卻未指出便利抽樣、自願回覆與不回應偏誤的具體機制。"
+      ]
     },
     {
       "questionId": "u09-s016-cr002",
@@ -1205,7 +1244,8 @@ export default {
       "standardSolution": [
         "觀察到的平均差為3.4-2.1=1.3杯，但帶環保杯是居民自行選擇，不是隨機分派，因此只能說兩群在樣本中有關聯。",
         "可能混淆因素包括健康意識、年齡、收入、工作地點是否有飲水機、原本飲料習慣、運動習慣或環保態度。",
-        "較強方案：招募符合條件的居民，先量測基準含糖飲料量，再隨機分為『免費提供環保杯並鼓勵使用』與『不提供』兩組；在相同期間記錄每人每週含糖飲料杯數，比較兩組從基準到追蹤期的平均變化，並監測遵從與流失。"
+        "較強方案：招募符合條件的居民，先量測基準含糖飲料量，再隨機分為『免費提供環保杯並鼓勵使用』與『不提供』兩組；在相同期間記錄每人每週含糖飲料杯數，比較兩組從基準到追蹤期的平均變化，並監測遵從與流失。",
+        "隨機試驗應比較兩組從基準期到追蹤期的平均變化，而不只比較追蹤期絕對值；同時記錄遵從、流失與含糖飲料定義，才能判斷差異是否可歸因於介入。"
       ],
       "alternativeMethod": "若不能隨機，可配對相似居民並控制基準飲用量、年齡等，但因果證據仍弱於隨機實驗。",
       "reasoningSteps": [
@@ -1213,7 +1253,8 @@ export default {
         "辨認暴露不是隨機。",
         "列出同時影響帶杯與飲料量的因素。",
         "設計對照與隨機分派。",
-        "明確寫出追蹤指標與比較方式。"
+        "明確寫出追蹤指標與比較方式。",
+        "確認三個混淆因素各能同時影響是否帶杯及飲料量，再檢查研究方案是否真正打破自行選擇。"
       ],
       "rubric": [
         {
@@ -1251,7 +1292,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "c46564976f2438ba9e1de35f8a7cd9971625f67514c995cc43f928295534cb10"
+      "contentSha256": "75a602f959139f62669a9556a5d83248f8afe007b2d4729a359dd860b80120e3",
+      "commonErrors": [
+        "由3.4－2.1＝1.3就宣稱環保杯造成減量，沒有區分觀察差與因果效果。",
+        "研究方案只再做一次問卷，未加入隨機分派、對照組、基準量測與相同追蹤期。"
+      ]
     }
   ],
   "semanticReviews": [

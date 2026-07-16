@@ -1,0 +1,1122 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u20",
+  "batch": "021-u20-complete",
+  "skills": [
+    "s011",
+    "s012",
+    "s013",
+    "s014",
+    "s015"
+  ],
+  "mc": [
+    {
+      "questionId": "u20-s011-v001",
+      "expectedContentSha256": "9cfc946cf976e88a34596a8f1fbcefa7a3804a8e30c64ece12142c1ee9718c43",
+      "appendText": {
+        "explanation": "三條角平分線的交點同時落在三個內角的角平分線上；角平分線上的點到角的兩邊垂距相等，因此三個垂距相同。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v002",
+      "expectedContentSha256": "7edf31f1ba3615c64ba4b1dcfb826e49c60df5a5489a3717d48270db3b96580f",
+      "appendText": {
+        "explanation": "AI 平分頂角 A，所以兩個小角各占完整頂角的一半；把 60° 除以 2 得 30°，不能再重複平分。驗算時兩個小角相加必須回到原來的六十度。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v003",
+      "expectedContentSha256": "bbc4149630179da9e69d2e632f987f1da0fb8234df8d8974b1142ff40cb900e6",
+      "appendText": {
+        "explanation": "相切時，圓心到切線的最短距離由垂直半徑表示；題設的 r 正是這段距離，所以半徑既不是 2r，也不需再除以 2。",
+        "misconceptionTarget": "常把題設垂距誤認成直徑或再次除以二。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v004",
+      "expectedContentSha256": "6615e2f5148f2db1c449414b6afd2522d788a72f736bb99c9c1e325ad3571abf",
+      "appendText": {
+        "explanation": "角平分線只把同一頂角平均分成兩份，故 70° 的一半為 35°；其他數值若不是兩個相等小角便不符角平分線定義。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v005",
+      "expectedContentSha256": "0438303832b05f37a21cf89e0893012220dcc70eefc51e4e0e7331678c2934f3",
+      "appendText": {
+        "explanation": "圓與直線相切時，連結圓心與切點的半徑必垂直該直線；因此先找垂足即可同時確定切點與半徑方向。",
+        "misconceptionTarget": "只看圓與邊接觸，漏驗半徑必須垂直切線。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v006",
+      "expectedContentSha256": "845e4190792c34b66d2e3fd80e6440f9aceb7781304c88bc09a2d81e4d1eb871",
+      "appendText": {
+        "explanation": "內心到三邊的垂直距離相等，而且每一段都是內切圓半徑；其中一段為 4，另外兩段與圓半徑也都為 4。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v007",
+      "expectedContentSha256": "fa78b51ee01ea8baf663b0c78ff3bffdbe8b04b73ac075fd0464f25aab1012fd",
+      "appendText": {
+        "explanation": "在三角形 AIC 中，A、C 兩個小角分別是原角的一半；由 A＋B＋C＝180° 整理後，得到夾角為 90°＋B÷2。若只取 B 的半角，便會漏掉由另外兩角合併產生的九十度。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v008",
+      "expectedContentSha256": "edec57a92abeff72b593ca1c2d794f3178643f84e392d9270eee0cf1805ddf59",
+      "appendText": {
+        "explanation": "先把 B＝60° 平分得 30°，再代入內心夾角關係 90°＋B÷2；結果為 120°，不是只取半角或用 180° 直接相減。驗算時一百二十度大於九十度，符合內心該夾角為鈍角。",
+        "misconceptionTarget": "只取 B 的半角，漏掉內心夾角固定的九十度。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v009",
+      "expectedContentSha256": "0a91ece4a73c8925c00ae749ea0f8a55b20fc5af8cf33a1ad959f699d5e73ffc",
+      "appendText": {
+        "explanation": "連結內心與三個頂點後，三個小三角形的高都等於 r；面積相加為 r(a＋b＋c)÷2，也就是半周長乘半徑。",
+        "misconceptionTarget": "把半周長誤寫成周長，使面積多算一倍。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v010",
+      "expectedContentSha256": "8ec9d694cf15650044c3d1b2037f02611f5fd608b41c3706a3dabeaf970b2982",
+      "appendText": {
+        "explanation": "噴頭若到兩面牆的最短距離相等，就必在兩牆夾角的角平分線上；此處比較的是到牆的垂距，不是到牆角端點的距離。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v011",
+      "expectedContentSha256": "83f45e2680320374bf91223b7fc1c8c32b672c7069899b5828ddb93596ca66f1",
+      "appendText": {
+        "explanation": "兩條角平分線先確定唯一交點 I，再由 I 向任一邊作垂線取半徑；三個垂距相等，畫出的圓才會同時與三邊相切。"
+      }
+    },
+    {
+      "questionId": "u20-s011-v012",
+      "expectedContentSha256": "5b420e8bf75c79271535fc34a2000fba0b6d9b477857a638835b165cbe9170df",
+      "appendText": {
+        "explanation": "以邊長 6 為底、內心到該邊的垂距 2 為高，小三角形面積是 6×2÷2＝6；不可把垂距誤當斜邊。面積單位必須平方化，因為底與高都是長度。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v001",
+      "expectedContentSha256": "fb9f16491ab1eff8ec1c0e44f2e9f70ba8894a86c6af08bed9350838591c5ef0",
+      "appendText": {
+        "explanation": "重心把每條中線分成靠頂點的兩份與靠對邊中點的一份，所以 AG：GM＝2：1；比例方向不能從 M 端照抄。",
+        "misconceptionTarget": "把重心當作中線中點，或顛倒靠頂點的較長段。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v002",
+      "expectedContentSha256": "32ebd45807712b0020b65a8374b64e293831b859dc52923c639ae0afd2fcd771",
+      "appendText": {
+        "explanation": "AG 是兩份而 GM 是一份，因此 AG＝8 時每份為 4，GM＝4；整條中線則為 12，不能把 8 當整條。回代四加八等於十二，可確認分段沒有顛倒。",
+        "misconceptionTarget": "把 AG 當整條中線，沒有先辨認它占兩份。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v003",
+      "expectedContentSha256": "6ce3a8ae6072700ff77515a68a9ada16faedfdec58b505e0dc1e42991990c4f9",
+      "appendText": {
+        "explanation": "GM 對應比例中的一份，已知它為 5，整條中線共有三份，所以長 15；靠頂點的 AG 另占兩份為 10。",
+        "misconceptionTarget": "把靠中點的一份誤認為整條或靠頂點的兩份。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v004",
+      "expectedContentSha256": "977a27c0c908bc8f10d0341ab056713a0bced07382e27f6801086b36ef8bfbb8",
+      "appendText": {
+        "explanation": "整條中線 18 由 2＋1 共三份組成，每份 6；頂點到重心占兩份，故 AG＝12，而不是中線的一半。回代十二加六等於十八，也符合十二比六等於二比一。",
+        "misconceptionTarget": "直接取中線一半，忽略二比一共是三份。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v005",
+      "expectedContentSha256": "9f15c94a36b96431cbb438b2c55ac8f05f137938cb2e357a8a761f6f8abc02fa",
+      "appendText": {
+        "explanation": "重心座標要把三個頂點的 x、y 分別平均：x 為 (0＋6＋0)÷3，y 為 (0＋0＋6)÷3，均得 2。所得點位於三條中線上，可作為獨立的幾何複核。",
+        "misconceptionTarget": "只平均兩個端點，或把三個坐標混在同一算式。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v006",
+      "expectedContentSha256": "bfcf719da40a5c5948a9f62c9bb8bf991bbbd9866f76dc3289f4922ac0bd3dfb",
+      "appendText": {
+        "explanation": "每條中線先把三角形分成等面積兩半，三條中線共點後形成六個等面積小三角形；等面積不代表形狀全等。",
+        "misconceptionTarget": "把六個等面積小三角形誤說成六個全等三角形。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v007",
+      "expectedContentSha256": "309b78f6e83026035cd92d8841baff0f20359f05e5ed66f0612efbab73778014",
+      "appendText": {
+        "explanation": "在中線 BN 上，BG：GN＝2：1；GN＝5 是一份，所以 BG＝10，整條 BN＝15，不能把較短段放在頂點側。回代十加五等於十五，且十比五為二比一，也確認較長段確實靠近頂點 B。",
+        "misconceptionTarget": "顛倒 BG 與 GN 的二比一方向。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v008",
+      "expectedContentSha256": "450f7e013adb72ac04bc4ec71f983c2723c645a66ebf3375d219719c8180c52a",
+      "appendText": {
+        "explanation": "分別計算三個 x 坐標與三個 y 坐標的平均，得到 x＝3、y＝1；負數 −2 必須保留在 y 的加總中。回代三個頂點的分量加總，可確認平均計算沒有遺漏。",
+        "misconceptionTarget": "平均坐標時漏掉負號，或忘記兩個分量都除以三。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v009",
+      "expectedContentSha256": "81337d10c38b4141c3bd629aa6041e0db556b94b018bb7a4569c77227d7a10cf",
+      "appendText": {
+        "explanation": "重心連到三個頂點形成三個等面積區塊，因此總面積 72 平均分成三份，每份 24；不要誤用六小塊的除以 6。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v010",
+      "expectedContentSha256": "cefeeeb8ffdc0ae50d8b7fca3bd4e12cc74bef1a19cd0351c04f60d7b32f9be2",
+      "appendText": {
+        "explanation": "均勻薄板的幾何重心位於中線上，從頂點量是整條的三分之二；吊孔位置須依頂點與對邊中點的方向辨認。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v011",
+      "expectedContentSha256": "083f19b57f284c105f601c84bdfaca31bb6b80ea7efe0c34f47d16774a7f799e",
+      "appendText": {
+        "explanation": "三頂點等權時可分別平均座標：x＝(1＋5＋6)÷3＝4，y＝(2＋4＋3)÷3＝3，因此位置是 (4,3)。此點是三個站點的等權平均位置，並非到三點等距的外心。"
+      }
+    },
+    {
+      "questionId": "u20-s012-v012",
+      "expectedContentSha256": "ec9c2f2b0748a9111da17bc8b4b7bffa46d52a92d3afbf6a0a5442626ede4a68",
+      "appendText": {
+        "explanation": "幾何重心只對應三頂點或面積的等權平均；各批貨物重量不同時應改算加權質心，原本的幾何重心不再保證平衡。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v001",
+      "expectedContentSha256": "1c8689f902f9db5d68f3006a41dc241afdd2f7d1cbe0ff755f332f6b4f36add0",
+      "appendText": {
+        "explanation": "三角形的高必須同時通過一個頂點，並垂直該頂點的對邊所在直線；只滿足其中一項都不能稱為高。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v002",
+      "expectedContentSha256": "4bb5f562a88f71366267c69b61de12071ccb3691d83fecff9148936990049926",
+      "appendText": {
+        "explanation": "直角三角形的兩股互相垂直，且各自通過一個頂點並垂直另一股，因此兩股本身就是兩條高，交在直角頂點。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v003",
+      "expectedContentSha256": "e30a17823b74a14e2c91ffd7f79c60e0d8473b10f643d4b9f690f11649e78420",
+      "appendText": {
+        "explanation": "銳角三角形的三個垂足都落在各對邊線段上，三條高因而在內部相交；直角與鈍角情形的交點位置不同。",
+        "misconceptionTarget": "以為所有三角形的垂心都固定在內部。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v004",
+      "expectedContentSha256": "01da1b18e9fb49342a0d307f4d3074a14a6d84a8b33db988f9f563a5d48b958c",
+      "appendText": {
+        "explanation": "AP 通過 A 且垂直 BC，BP 通過 B 且垂直 AC，兩線分別是兩條高；兩高交於 P 已足以判定 P 為垂心，第三條高也必通過同一點。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v005",
+      "expectedContentSha256": "58f42969bb6e3f1dcb1735655f1f357079f33b92bcec05a0203fdb914ce1ab97",
+      "appendText": {
+        "explanation": "鈍角三角形有兩個垂足落在對邊的延長線上，所以必須畫出延長線才能看見完整高與外部交點；這不表示高不存在。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v006",
+      "expectedContentSha256": "2220b0a5755c022405a2dcfc709d56899c65ce2d56aa92d06ec3f4247706a3bb",
+      "appendText": {
+        "explanation": "垂直平分線雖與邊垂直，卻通過邊中點而非對面頂點；其交點服務三個頂點的等距需求，名稱是外心。",
+        "misconceptionTarget": "看到垂直線就命名垂心，沒有檢查是否通過頂點。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v007",
+      "expectedContentSha256": "d5b25dfb6bf9c2556d47c0707cbb712c0865703a667ec5d972245c8f8561ef4d",
+      "appendText": {
+        "explanation": "A 為鈍角時，從 A 作出的高仍垂直 BC，而另外兩條高需沿邊的延長線相交；交點落在越過 A 的外部一側。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v008",
+      "expectedContentSha256": "afb8da3820fd61e062087492d7b888f59903236e6a2239289a3c41c11c26e64d",
+      "appendText": {
+        "explanation": "甲的線連頂點與對邊中點，是中線；乙的線通過頂點且垂直對邊，是高；丙平分內角，所以只有乙對應垂心。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v009",
+      "expectedContentSha256": "c228c0613ed5f340f9ebb13a8d5849218740bbe5c92b173a6cac91774c8716b1",
+      "appendText": {
+        "explanation": "C 為直角時，AC 與 BC 互相垂直，兩股同時是從 A、B 作出的高；兩高交點就是 C，故 H 與 C 重合，斜邊中點則是外心而非垂心。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v010",
+      "expectedContentSha256": "9eed047a3dfeedb311c112864781709a9bbd656ab6123d5558b8433d238941a5",
+      "appendText": {
+        "explanation": "施工虛線可能表示中心線、尺寸線或延長線，不能僅憑外觀命名；逐線驗證通過頂點與垂直對邊後，交點才可判為垂心。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v011",
+      "expectedContentSha256": "0d0ff554f6ea3b977520dcdbba1cb34c8aa6d39761e61903a0dc56a399364503",
+      "appendText": {
+        "explanation": "鈍角三角形的兩個垂足位在邊的延長線，若軟體工具只把邊當有限線段，相關高會被截斷；改顯示直線即可看見。"
+      }
+    },
+    {
+      "questionId": "u20-s013-v012",
+      "expectedContentSha256": "f7e7b62916b64eb2f28243d1c992923621669fbff5db18e594c6a0bd695238db",
+      "appendText": {
+        "explanation": "外部交點只說明位置，還不足以證明線是高；完整教材圖必須同時呈現頂點、對邊延長線與直角記號，才可驗證垂直關係。",
+        "misconceptionTarget": "只憑交點在外部判定垂心，忽略高的完整證據。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v001",
+      "expectedContentSha256": "5d3b58cda1e933806c0f411184dfb463cf82a301a7cc657986de984d76d75284",
+      "appendText": {
+        "explanation": "題目比較的是設備到三個頂點的距離；三邊垂直平分線的交點到三頂點等距，這個交點定義為外心。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v002",
+      "expectedContentSha256": "ecbf0fb28477c81d52081e324e465d4485450bbff0a2d47211c7f3702fab4954",
+      "appendText": {
+        "explanation": "到牆或邊的距離是最短垂直距離，三個垂距相等的點位於三內角平分線交點，因此要選內心而非外心。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v003",
+      "expectedContentSha256": "593c19d83ca9a96831be95c9cf23d01c7aee532fdb10ac0a8dd10e41f3520f24",
+      "appendText": {
+        "explanation": "均勻薄板各處面密度相同，質量中心與幾何面積中心重合；三中線交點就是重心，適合作為理想單點支撐位置。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v004",
+      "expectedContentSha256": "a791911c345121923ea2d1f703eea77c406360f51d1c6166bfa146a579a7f9e0",
+      "appendText": {
+        "explanation": "村落是三個頂點，等距條件指向外心；但鈍角三角形的外心位在三角形外，存在數學解不等於地點一定可施工。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v005",
+      "expectedContentSha256": "faee0dcec56dc37ea8aa04f5939b4c9a39efecf496626570aad9520d04e40ce1",
+      "appendText": {
+        "explanation": "圓與每一邊相切時，三條半徑分別垂直三邊且長度相同；圓心因此到三邊等垂距，必為內心。",
+        "misconceptionTarget": "看到圓便選外心，未區分圓通過頂點或與邊相切。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v006",
+      "expectedContentSha256": "3c6adf84aef0512f84c153372fb50ae300e76ebd694c3f8a342d6791f52a8472",
+      "appendText": {
+        "explanation": "材質均勻時，平衡需求可用面積平均描述，三條中線交點即重心；若紙片另有配重，這個結論便需重新檢查。",
+        "misconceptionTarget": "把均勻薄板的重心結論套到任意不均勻物體。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v007",
+      "expectedContentSha256": "245df3289ad7218ed064322b5489ee6718980f2735eee1d93b5863280931091a",
+      "appendText": {
+        "explanation": "直角三角形外接圓以斜邊為直徑，所以斜邊中點到三頂點距離相等，半徑等於斜邊的一半。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v008",
+      "expectedContentSha256": "5fe3c9d8f8c226aeb2efdfb31a0ea1975dc0c9f7e0b347c1b22f1ab31f002e28",
+      "appendText": {
+        "explanation": "重心將中線分成 2：1，較長的兩份靠頂點；因此從頂點量取整條中線的三分之二，而非取中點。",
+        "misconceptionTarget": "把中線中點當吊孔，或從對邊中點量錯方向。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v009",
+      "expectedContentSha256": "e83d65d4e17554e3c3596c5ad584d7e5f609df9ef704dc869558ce97ab459ccf",
+      "appendText": {
+        "explanation": "每條線都從頂點出發並垂直對邊所在直線，故是三角形的高；三條高的共同交點依定義稱為垂心。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v010",
+      "expectedContentSha256": "bb6533822a3750e09463257e20c73f424470b52b6be724561c11b1a0d8e5f112",
+      "appendText": {
+        "explanation": "入口是離散的頂點，應比較點到點距離而用外心；圍牆是直線邊界，應比較垂距而用內心，兩種等距不可互換。",
+        "misconceptionTarget": "只看到等距二字，沒有辨別入口點與圍牆線。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v011",
+      "expectedContentSha256": "b5568ba1d00ad40a584504446a6095441c244396f8276871f6cd95bb9fafef1e",
+      "appendText": {
+        "explanation": "加裝左側燈具會破壞均勻面密度假設，使實際質心向較重的一側偏移；作出的幾何重心仍在原位，卻未必能平衡。"
+      }
+    },
+    {
+      "questionId": "u20-s014-v012",
+      "expectedContentSha256": "340b097c470ce7a20513bd29f4d54124939c70489c3635ef1e928acc892024e2",
+      "appendText": {
+        "explanation": "一般三角形的外心、內心、重心、垂心通常不同；規格須先說明要服務頂點、邊界、平衡或高度線，才有唯一選點依據。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v001",
+      "expectedContentSha256": "d5716367f21fa90b253398955c9cba51037c2921c2928d05491503c6b9781c60",
+      "appendText": {
+        "explanation": "幾何圖例用同型刻痕表示被標記線段等長；這是可引用的正式已知，不可改由顏色、粗細或目測長度推論。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v002",
+      "expectedContentSha256": "39373859958406dbdd085827c322bd6416caec993e05e59a6fa2fa223fa6f2ba",
+      "appendText": {
+        "explanation": "小正方形把交角明確標成 90°，所以兩線互相垂直；它不提供線段長度或中點資訊，證明時不能越界使用。",
+        "misconceptionTarget": "把直角方框誤讀為中點、等長或一般角度標示。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v003",
+      "expectedContentSha256": "59bb5ba853ef9cdbe5cc329965dced22451648fbbdcfd9cd5a4327c7491a4b9a",
+      "appendText": {
+        "explanation": "不按比例圖只負責呈現關係，線段與角的外觀可能刻意失真；解題只能採用文字、刻痕、直角與已證結論。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v004",
+      "expectedContentSha256": "ece96070c70c0eeafcb2c683e186083889c0bb0d3c7ed773c72f8251db4e8b2c",
+      "appendText": {
+        "explanation": "中點給 DB＝DC，公共邊給 AD＝AD，垂直給兩個 90° 夾角；兩邊及夾角齊備後才能以 SAS 判定全等。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v005",
+      "expectedContentSha256": "614397d74d0f36ead8f9ee4fae720a3fa1088cb4655a327b2828955df19b5918",
+      "appendText": {
+        "explanation": "先確認兩角確為同旁內角，再算 110°＋70°＝180°；角型與互補兩個條件同時成立，才可反推兩線平行。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v006",
+      "expectedContentSha256": "1011df3463d861b64bba9d7f593418027cb7975e432c5dbb9ab614c070535e5e",
+      "appendText": {
+        "explanation": "單有 ∠1＝∠2 不足以連結兩條護欄；還要指出它們由同一截線形成同位角或內錯角，才能套用平行判定。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v007",
+      "expectedContentSha256": "55b783e9bfe5f10251d8269c956049c26f3c66f573552e5aa76e90fa12b1ebbc",
+      "appendText": {
+        "explanation": "AC＝BD 正是待證結論，若先把它列入全等條件，推理便以結論支持自身；應改找獨立的已知邊角條件。",
+        "misconceptionTarget": "把待證結論提前當已知，形成循環論證。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v008",
+      "expectedContentSha256": "749f98c2afef732ea0c6d78cb138fc0a5c76dbebe34c0a202e113af2165e897c",
+      "appendText": {
+        "explanation": "先由 ∠1＝∠3 與 ∠3＝∠2 得 ∠1＝∠2，再確認兩角是內錯角；等量遞移完成角等式後才可判定平行。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v009",
+      "expectedContentSha256": "a8c8ae9ea4b12a9b551a0826ed5e4a6dc237d9873cf1fba585533358c1fbb162",
+      "appendText": {
+        "explanation": "有效反例要保留原命題的前提：一般梯形確有一組對邊平行，卻沒有兩組對邊平行，因而不是平行四邊形。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v010",
+      "expectedContentSha256": "d8176228b97acd397716a3499041e7345b9e020c2c04c6b5b8eb116f0dd97ad9",
+      "appendText": {
+        "explanation": "三點若共線，兩段垂直平分線互相平行而沒有共同有限交點；補上三點不共線後，才形成三角形並唯一決定外心。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v011",
+      "expectedContentSha256": "88d11804fe7d6a03eed8a516038b1ef8b068143d0bba3b3d8d27fed161479f5a",
+      "appendText": {
+        "explanation": "三中線交點是均勻三角形薄板的質心；電池增加局部質量後，實際平衡點會偏移，不能沿用只依外形求得的重心。"
+      }
+    },
+    {
+      "questionId": "u20-s015-v012",
+      "expectedContentSha256": "2739e8e16d7e1cfceac9b2e305d54a1572c107d65cccc14cf70151535b3348be",
+      "appendText": {
+        "explanation": "兩條內角平分線先決定內心，從內心向邊作垂線取得半徑；再核對三個垂距相等，才能驗證圓確實三邊相切。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u20-s011-cr001",
+      "expectedContentSha256": "20a338775128d2246aeb0ff809b32fa893f095096e328eae4500b332c714acb7",
+      "appendArray": {
+        "standardSolution": [
+          "這個推導也說明 90° 不是額外背誦的常數，而是把 A＋C＝180°－B 代入三角形 AIC 的內角和後自然得到；最後代回三角形內角和即可再次核對角度。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s011-cr002",
+      "expectedContentSha256": "8f404108138202dfe9f0cdcca3e83740a9290ec5406ef4274aaa687275acae11",
+      "appendArray": {
+        "standardSolution": [
+          "三個小三角形的底分別是原三邊，而從內心到各底的高都為 2；因此相加後等同半周長 15 乘半徑 2。"
+        ],
+        "reasoningSteps": [
+          "把三個小三角形面積相加，並以平方公分作答。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s012-cr001",
+      "expectedContentSha256": "019b372ce31ab42dd275ca216ca6ab56877f97968f614556f1fe94d9d56b022a",
+      "appendArray": {
+        "standardSolution": [
+          "檢查時可把兩段相加：14＋7＝21，且 14：7＝2：1；總長與比例同時符合，才算完成驗證，也能排除把重心誤當中點的錯法。"
+        ],
+        "reasoningSteps": [
+          "以兩段和與二比一回代，確認總長 21 公分。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s012-cr002",
+      "expectedContentSha256": "a41b52401077ebe8b39d125f9e7f3fc13452f32ec485197cae9cb463b8e2506f",
+      "appendArray": {
+        "standardSolution": [
+          "用向量也可看出 A 到 G 的位移為 (4,0)，G 到 M 的位移為 (2,0)，兩段同方向且長度比正好為 2：1。"
+        ],
+        "reasoningSteps": [
+          "求 BC 中點 M，逐段比較 AG 與 GM 的方向和長度。"
+        ],
+        "commonErrors": [
+          "只以坐標平均得答案，卻沒有沿一條中線實際驗證二比一。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s015-cr001",
+      "expectedContentSha256": "a73539be32ec0cff3e6a457681c5e3fa8c6c8fa60ef845bd39aa10d8af4811c2",
+      "appendArray": {
+        "standardSolution": [
+          "最後還要核對全等式的頂點順序：A 對應 A、D 對應 D、B 對應 C，因此由對應邊才能合法推出 AB＝AC。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s013-cr001",
+      "expectedContentSha256": "fb03f8410e721ec77797d9b9525d78e30c4eaf5f2d6e07a53648d0b8b76185ce",
+      "appendArray": {
+        "reasoningSteps": [
+          "引用三高共點性質，說明第三條高通過 P 可作複核而非額外前提。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s013-cr002",
+      "expectedContentSha256": "6a2add047ebdaed1e674faaffdcc05a29b7e9939cf3dbe7dd9507ef8b7fc058e",
+      "appendArray": {
+        "reasoningSteps": [
+          "逐一標出延長線、頂點出發的垂線、直角記號與外部交點。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s014-cr001",
+      "expectedContentSha256": "d481d7c2aea1e4f7835a4f422d6e7f701a59c60524a42b9c4e2de3dd35e8dfd4",
+      "appendArray": {
+        "reasoningSteps": [
+          "分別檢查外心可能的位置與內心仍在三角形內的限制。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u20-s011-lecture-r1",
+      "expectedContentSha256": "032ff43c7ca1808b9a81b07204004877f8edc1b72005fef6d0d9cea66d20c9fd",
+      "appendArray": {
+        "commonMistakes": [
+          {
+            "mistake": "只畫一個看似置中的圓便宣稱是內切圓。",
+            "why": "圓在圖形內不代表同時與三邊相切。",
+            "correction": "由內心向三邊作垂線，確認三段同為半徑且三處相切。"
+          }
+        ],
+        "method": [
+          {
+            "step": 5,
+            "instruction": "完成後用三個垂距或面積分割回查。",
+            "check": "半徑、半周長與面積單位是否一致？"
+          }
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "∠B=40°，I為內心，求∠AIC。",
+            "solutionSteps": [
+              "∠B/2=20°。",
+              "90°+20°=110°。"
+            ],
+            "answer": "110°。",
+            "why": "內心夾角由三角形 AIC 的兩個半角與內角和推出，所以先取 B 的一半再加九十度，能避免漏掉固定項；結果也可代回內角和驗算。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "三邊6、8、10，r=2。",
+            "solutionSteps": [
+              "半周長=12。",
+              "K=rs=2×12。"
+            ],
+            "answer": "24平方單位。",
+            "why": "三個以原三邊為底的小三角形共用高 r，面積相加等於 r 乘半周長；代入資料即可得到二十四平方單位。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s012-lecture-r1",
+      "expectedContentSha256": "2024386db3d281f19cbf9efdfc961cbe0b2fed7c577babb97a1bf2ea36f75a8e",
+      "appendArray": {
+        "commonMistakes": [
+          {
+            "mistake": "把六個等面積小三角形說成六個全等三角形。",
+            "why": "相同面積不保證邊長與角度逐一相同。",
+            "correction": "面積題只使用等面積結論，不延伸出未給定的全等關係。"
+          }
+        ],
+        "method": [
+          {
+            "step": 5,
+            "instruction": "把分段、坐標或面積結果代回原條件。",
+            "check": "兩段和、二比一與三點平均是否同時成立？"
+          }
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "AM=24，求AG、GM。",
+            "solutionSteps": [
+              "每份=24÷3=8。",
+              "AG=16，GM=8。"
+            ],
+            "answer": "16與8。",
+            "why": "重心把中線分成二加一共三份，從頂點到重心占兩份；先求每份八，再得到十六與八並可相加回二十四。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "頂點(0,0),(6,0),(0,3)。",
+            "solutionSteps": [
+              "x平均2。",
+              "y平均1。"
+            ],
+            "answer": "G=(2,1)。",
+            "why": "重心的兩個坐標分量各自是三頂點平均值；水平與垂直分開加總除以三，得到的點同時落在三條中線上。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s013-lecture-r1",
+      "expectedContentSha256": "28f9201ee1cf56d0f93a5f69501ba6ad82fd5be883837604e09b6544a5793e67",
+      "appendArray": {
+        "commonMistakes": [
+          {
+            "mistake": "先看交點在內外，再反推線一定是高。",
+            "why": "外心等其他交點也可能位於相同區域。",
+            "correction": "先逐線核對頂點與垂直對邊，再用位置作第二層檢查。"
+          }
+        ],
+        "method": [
+          {
+            "step": 5,
+            "instruction": "用第三條高或角型位置做獨立複核。",
+            "check": "複核只驗證結論，沒有把待證關係先當已知？"
+          }
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "AP⊥BC、BP⊥AC。",
+            "solutionSteps": [
+              "AP是A高。",
+              "BP是B高。",
+              "兩高交於P。"
+            ],
+            "answer": "P是垂心。",
+            "why": "AP 與 BP 各自同時通過頂點並垂直對邊，所以確為兩條高；兩高交點已唯一決定垂心，第三高會依共點性質通過。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "三條線垂直各邊且通過邊中點。",
+            "solutionSteps": [
+              "未通過對面頂點。",
+              "這些是垂直平分線。"
+            ],
+            "answer": "交點是外心，不是垂心。",
+            "why": "垂直平分線的必要條件是通過邊中點並垂直該邊，服務的是頂點等距；它不通過對面頂點，故不能當作高。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s014-lecture-r1",
+      "expectedContentSha256": "edaefbfc5ea1a4a99ff170b4837f2e466e8e150fee4f156941c1970fd1e21160",
+      "appendArray": {
+        "commonMistakes": [
+          {
+            "mistake": "找到數學中心後就直接宣布方案可施工。",
+            "why": "外心可能落在區域外，重心模型也可能違反均勻假設。",
+            "correction": "另列可行域、權重與場地限制，分開報告數學解和實務決策。"
+          }
+        ],
+        "method": [
+          {
+            "step": 5,
+            "instruction": "把選到的中心翻回原情境驗收。",
+            "check": "服務距離、可行域與均勻假設是否都真的滿足？"
+          }
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "三個村落等距基地台。",
+            "solutionSteps": [
+              "村落是頂點。",
+              "到頂點等距。"
+            ],
+            "answer": "外心。",
+            "why": "村落是三個頂點，需求是點到點等距；外心由三邊垂直平分線決定，正好到三頂點距離相同，還須另查設址是否落在可行域。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "三角形公園到三面圍牆等距。",
+            "solutionSteps": [
+              "圍牆是邊。",
+              "距離取垂距。"
+            ],
+            "answer": "內心。",
+            "why": "圍牆是三條邊界直線，最短距離取垂距；內心到三邊垂距相同，才能公平服務三面圍牆，且半徑方向必與牆垂直。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "均勻招牌吊點。",
+            "solutionSteps": [
+              "質量均勻。",
+              "面積平衡。"
+            ],
+            "answer": "重心。",
+            "why": "均勻招牌的質量依面積均勻分布，三中線交點就是面積與質量中心；若另有配重，則必須重新找實際質心。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s015-lecture-r1",
+      "expectedContentSha256": "2f53bfebe0d700c15d36311667cf538168ded4461846eaa5f3272bb7163dea04",
+      "appendArray": {
+        "commonMistakes": [
+          {
+            "mistake": "圖上看似垂直或等長就直接寫入證明。",
+            "why": "未按比例圖的外觀不是正式已知，量測也有誤差。",
+            "correction": "只引用文字、圖例符號或前一步已證結果，並註明每項來源。"
+          }
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "D為BC中點且AD⊥BC，證AB＝AC。",
+            "solutionSteps": [
+              "DB＝DC。",
+              "AD公共。",
+              "兩直角相等。",
+              "SAS全等。",
+              "對應邊相等。"
+            ],
+            "answer": "AB＝AC。",
+            "why": "中點、公共邊與垂直分別提供兩邊及夾角，符合 SAS；完成全等後再按正確對應順序推出 AB 與 AC 相等，不能先借用待證結論。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "規格稱任三站外心都在區域內。",
+            "solutionSteps": [
+              "三點可能共線。",
+              "鈍角外心在外。",
+              "直角外心在邊上。"
+            ],
+            "answer": "規格需限制不共線並另判角型。",
+            "why": "規格同時忽略存在性與位置：共線三點沒有有限外心，而非共線時外心仍可能在內、邊上或外部，須依角型分類。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u20-incenter-sign-01",
+      "set": {
+        "coordinates": {
+          "A": [
+            170,
+            10
+          ],
+          "B": [
+            70,
+            250
+          ],
+          "C": [
+            350,
+            250
+          ],
+          "I": [
+            190,
+            170
+          ],
+          "tangentRadius": 80
+        },
+        "manualVisualInspection": "pass: exact 13-14-15 triangle geometry; I is the incenter and the radius-80 circle is tangent to all three sides; rendered and inspected at 480x320"
+      }
+    },
+    {
+      "figureId": "fig-u20-orthocenter-identify-01",
+      "set": {
+        "coordinates": {
+          "A": [
+            230,
+            30
+          ],
+          "B": [
+            70,
+            270
+          ],
+          "C": [
+            410,
+            270
+          ],
+          "P": [
+            230,
+            150
+          ],
+          "footFromA": [
+            230,
+            270
+          ],
+          "footFromB": [
+            287.6,
+            106.8
+          ]
+        },
+        "manualVisualInspection": "pass: both displayed lines are exact altitudes and meet at the interior point P; rendered and inspected at 480x320"
+      }
+    },
+    {
+      "figureId": "fig-u20-centers-compare-01",
+      "set": {
+        "coordinates": {
+          "panels": {
+            "I": [
+              0,
+              0,
+              160,
+              320
+            ],
+            "II": [
+              160,
+              0,
+              160,
+              320
+            ],
+            "III": [
+              320,
+              0,
+              160,
+              320
+            ]
+          },
+          "panelII": {
+            "altitudeFootFromLeft": [
+              137.5,
+              207.5
+            ]
+          },
+          "panelIII": {
+            "angleBisectorIntersection": [
+              88.3,
+              200.5
+            ]
+          }
+        },
+        "manualVisualInspection": "pass: panel I uses side midpoints, panel II uses exact perpendicular altitudes, and panel III uses the calculated incenter; rendered and inspected at 480x320"
+      }
+    },
+    {
+      "figureId": "fig-u20-orthocenter-textbook-01",
+      "set": {
+        "coordinates": {
+          "A": [
+            120,
+            180
+          ],
+          "B": [
+            75,
+            245
+          ],
+          "C": [
+            405,
+            245
+          ],
+          "H": [
+            120,
+            48
+          ],
+          "feet": [
+            [
+              91.3,
+              173.5
+            ],
+            [
+              181.9,
+              90.6
+            ]
+          ]
+        },
+        "manualVisualInspection": "pass: A is obtuse, both displayed altitudes meet at exterior H, side extensions and right-angle marks are visible; rendered and inspected at 480x320"
+      }
+    },
+    {
+      "figureId": "fig-u20-proof-bridge-02",
+      "set": {
+        "coordinates": {
+          "A": [
+            242,
+            55
+          ],
+          "B": [
+            65,
+            250
+          ],
+          "C": [
+            419,
+            250
+          ],
+          "D": [
+            242,
+            250
+          ]
+        },
+        "manualVisualInspection": "pass: D is the exact midpoint of BC and AD is exactly perpendicular to BC; equal-base ticks do not mark the conclusion AB=AC; rendered and inspected at 480x320"
+      }
+    },
+    {
+      "figureId": "fig-u20-proof-literacy-sign-01",
+      "set": {
+        "coordinates": {
+          "A": [
+            170,
+            10
+          ],
+          "B": [
+            70,
+            250
+          ],
+          "C": [
+            350,
+            250
+          ],
+          "I": [
+            190,
+            170
+          ],
+          "feet": [
+            [
+              116.2,
+              139.2
+            ],
+            [
+              190,
+              250
+            ],
+            [
+              254,
+              122
+            ]
+          ]
+        },
+        "manualVisualInspection": "pass: I is the calculated incenter and all three dashed distances meet the sides perpendicularly with exact equal length 80; no circle or answer label is shown; rendered and inspected at 480x320"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u20/fig-u20-incenter-sign-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"line\" d=\"M60 255 L145 45 L425 250 Z\"/>",
+          "to": "<path class=\"line\" d=\"M70 250 L170 10 L350 250 Z\"/>"
+        },
+        {
+          "from": "<path class=\"aux\" d=\"M145 45 L230 187 M60 255 L230 187\"/>",
+          "to": "<path class=\"aux\" d=\"M170 10 L190 170 M70 250 L190 170\"/>"
+        },
+        {
+          "from": "<circle class=\"line\" cx=\"230\" cy=\"187\" r=\"58\"/>",
+          "to": "<circle class=\"line\" cx=\"190\" cy=\"170\" r=\"80\"/>"
+        },
+        {
+          "from": "<circle class=\"pt\" cx=\"230\" cy=\"187\" r=\"4\"/>",
+          "to": "<circle class=\"pt\" cx=\"190\" cy=\"170\" r=\"4\"/>"
+        },
+        {
+          "from": "<path class=\"aux\" d=\"M230 187 L229 249\"/>",
+          "to": "<path class=\"aux\" d=\"M190 170 L190 250\"/>"
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M229 249 l10 0 l0 -10\"/>",
+          "to": "<path class=\"mark\" d=\"M190 250 l12 0 l0 -12\"/>"
+        },
+        {
+          "from": "<text class=\"lbl\" x=\"137\" y=\"35\">A</text><text class=\"lbl\" x=\"38\" y=\"275\">B</text><text class=\"lbl\" x=\"430\" y=\"270\">C</text><text class=\"lbl\" x=\"238\" y=\"181\">I</text>",
+          "to": "<text class=\"lbl\" x=\"162\" y=\"27\">A</text><text class=\"lbl\" x=\"48\" y=\"271\">B</text><text class=\"lbl\" x=\"355\" y=\"270\">C</text><text class=\"lbl\" x=\"198\" y=\"165\">I</text>"
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-orthocenter-identify-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"line\" d=\"M65 255 L225 45 L420 245 Z\"/>",
+          "to": "<path class=\"line\" d=\"M70 270 L230 30 L410 270 Z\"/>"
+        },
+        {
+          "from": "<path class=\"line\" d=\"M225 45 L242 249 M65 255 L319 136\"/>",
+          "to": "<path class=\"line\" d=\"M230 30 L230 270 M70 270 L287.6 106.8\"/>"
+        },
+        {
+          "from": "<circle class=\"pt\" cx=\"231\" cy=\"174\" r=\"5\"/>",
+          "to": "<circle class=\"pt\" cx=\"230\" cy=\"150\" r=\"5\"/>"
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M242 249 l12 -1 l-1 -12 M319 136 l7 11 l11 -7\"/>",
+          "to": "<path class=\"mark\" d=\"M230 270 l12 0 l0 -12 M281 98 l-8.8 6.6 l6.6 8.8\"/>"
+        },
+        {
+          "from": "<text class=\"lbl\" x=\"217\" y=\"35\">A</text><text class=\"lbl\" x=\"43\" y=\"276\">B</text><text class=\"lbl\" x=\"425\" y=\"265\">C</text><text class=\"lbl\" x=\"238\" y=\"170\">P</text>",
+          "to": "<text class=\"lbl\" x=\"222\" y=\"24\">A</text><text class=\"lbl\" x=\"48\" y=\"292\">B</text><text class=\"lbl\" x=\"415\" y=\"292\">C</text><text class=\"lbl\" x=\"238\" y=\"146\">P</text>"
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-centers-compare-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"line\" d=\"M90 65 L90 245 M25 245 L121 154\"/>",
+          "to": "<path class=\"line\" d=\"M90 65 L90 245 M25 245 L137.5 207.5\"/>"
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M90 245 l10 0 l0 -10 M121 154 l6 9 l9 -6\"/>",
+          "to": "<path class=\"mark\" d=\"M90 245 l10 0 l0 -10 M131.8 190.4 l9.5 -3.2 l3.2 9.5\"/>"
+        },
+        {
+          "from": "<path class=\"aux\" d=\"M90 65 L93 190 M25 245 L93 190 M150 245 L93 190\"/>",
+          "to": "<path class=\"aux\" d=\"M90 65 L88.3 200.5 M25 245 L88.3 200.5 M150 245 L88.3 200.5\"/>"
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-orthocenter-textbook-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"line\" d=\"M120 70 L75 245 L405 245 Z\"/>",
+          "to": "<path class=\"line\" d=\"M120 180 L75 245 L405 245 Z\"/>"
+        },
+        {
+          "from": "<path class=\"aux\" d=\"M120 70 L45 290 M120 70 L455 280\"/>",
+          "to": "<path class=\"aux\" d=\"M75 245 L45 288 M120 180 L200 64 M120 180 L72 169\"/>"
+        },
+        {
+          "from": "<path class=\"line\" d=\"M75 245 L278 130 M405 245 L80 64\"/>",
+          "to": "<path class=\"line\" d=\"M75 245 L120 48 M405 245 L120 48\"/>"
+        },
+        {
+          "from": "<circle class=\"pt\" cx=\"80\" cy=\"64\" r=\"5\"/>",
+          "to": "<circle class=\"pt\" cx=\"120\" cy=\"48\" r=\"5\"/>"
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M267 136 l7 10 l10 -7 M91 72 l9 7 l7 -9\"/>",
+          "to": "<path class=\"mark\" d=\"M101.1 175.7 L103.3 166 L93.5 163.8 M176.2 98.8 L168 93.2 L173.7 84.9\"/>"
+        },
+        {
+          "from": "<text class=\"lbl\" x=\"117\" y=\"58\">A</text><text class=\"lbl\" x=\"52\" y=\"266\">B</text><text class=\"lbl\" x=\"412\" y=\"265\">C</text><text class=\"lbl\" x=\"56\" y=\"57\">H</text>",
+          "to": "<text class=\"lbl\" x=\"126\" y=\"184\">A</text><text class=\"lbl\" x=\"52\" y=\"266\">B</text><text class=\"lbl\" x=\"412\" y=\"265\">C</text><text class=\"lbl\" x=\"96\" y=\"42\">H</text>"
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-proof-bridge-02.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"line\" d=\"M65 250 L240 55 L420 250 Z\"/>",
+          "to": "<path class=\"line\" d=\"M65 250 L242 55 L419 250 Z\"/>"
+        },
+        {
+          "from": "<path class=\"line\" d=\"M240 55 L242 250\"/>",
+          "to": "<path class=\"line\" d=\"M242 55 L242 250\"/>"
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M242 250 l14 0 l0 -14 M145 245 l0 12 M333 245 l0 12\"/>",
+          "to": "<path class=\"mark\" d=\"M242 250 l14 0 l0 -14 M153.5 244 l0 12 M330.5 244 l0 12\"/>"
+        },
+        {
+          "from": "<text class=\"lbl\" x=\"232\" y=\"43\">A</text><text class=\"lbl\" x=\"42\" y=\"271\">B</text><text class=\"lbl\" x=\"425\" y=\"270\">C</text><text class=\"lbl\" x=\"235\" y=\"277\">D</text>",
+          "to": "<text class=\"lbl\" x=\"234\" y=\"43\">A</text><text class=\"lbl\" x=\"42\" y=\"271\">B</text><text class=\"lbl\" x=\"424\" y=\"270\">C</text><text class=\"lbl\" x=\"235\" y=\"277\">D</text>"
+        }
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-proof-literacy-sign-01.svg",
+      "replacements": [
+        {
+          "from": "<path class=\"line\" d=\"M60 255 L155 42 L430 248 Z\"/>",
+          "to": "<path class=\"line\" d=\"M70 250 L170 10 L350 250 Z\"/>"
+        },
+        {
+          "from": "<path class=\"aux\" d=\"M155 42 L235 183 M60 255 L235 183\"/>",
+          "to": "<path class=\"aux\" d=\"M170 10 L190 170 M70 250 L190 170\"/>"
+        },
+        {
+          "from": "<circle class=\"pt\" cx=\"235\" cy=\"183\" r=\"5\"/>",
+          "to": "<circle class=\"pt\" cx=\"190\" cy=\"170\" r=\"5\"/>"
+        },
+        {
+          "from": "<path class=\"aux\" d=\"M235 183 L187 147 M235 183 L235 251 M235 183 L286 136\"/>",
+          "to": "<path class=\"aux\" d=\"M190 170 L116.2 139.2 M190 170 L190 250 M190 170 L254 122\"/>"
+        },
+        {
+          "from": "<path class=\"mark\" d=\"M187 147 l8 5 l5 -8 M235 251 l10 0 l0 -10 M286 136 l7 6 l6 -7\"/>",
+          "to": "<path class=\"mark\" d=\"M120.4 129.1 l10.2 4.2 l-4.3 10.2 M190 250 l12 0 l0 -12 M247.4 113.2 l-8.8 6.6 l6.6 8.8\"/>"
+        },
+        {
+          "from": "<text class=\"lbl\" x=\"147\" y=\"33\">A</text><text class=\"lbl\" x=\"38\" y=\"276\">B</text><text class=\"lbl\" x=\"435\" y=\"268\">C</text><text class=\"lbl\" x=\"244\" y=\"179\">I</text>",
+          "to": "<text class=\"lbl\" x=\"162\" y=\"27\">A</text><text class=\"lbl\" x=\"48\" y=\"271\">B</text><text class=\"lbl\" x=\"355\" y=\"270\">C</text><text class=\"lbl\" x=\"198\" y=\"165\">I</text>"
+        }
+      ]
+    }
+  ]
+}

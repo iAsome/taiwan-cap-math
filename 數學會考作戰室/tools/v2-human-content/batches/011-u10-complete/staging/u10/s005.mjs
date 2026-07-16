@@ -49,7 +49,8 @@ export default {
       "多項式相加就是同類項係數相加。",
       "多項式相減最容易錯在只改第一項；括號前負號要使括號內每一項變號。",
       "直式適合缺項較多的式子，但必須按同次方對齊。",
-      "最後仍須合併並按降冪整理。"
+      "最後仍須合併並按降冪整理。",
+      "多項式加減可用橫式或直式，但核心都是按相同文字部分對齊係數；缺少某次項時應視其係數為零，不能依書寫位置錯位。相加時保留各項原符號，相減時則先把被減的整個多項式每一項乘以負一，再合併同類項、刪除零項並按降冪整理。完成後可代入簡單數值，比較原運算與化簡式是否同值，以檢查漏項或變號錯誤。"
     ],
     "formalDefinitions": [
       {
@@ -106,7 +107,8 @@ export default {
         "solutionSteps": [
           "x²、x、常數分組。"
         ],
-        "answer": "4x²-3x+3。"
+        "answer": "4x²-3x+3。",
+        "why": "加法括號可展開後按次方分組：二次項係數 3+1=4，一次項 2-5=-3，常數 -1+4=3。合併過程只改係數、不改文字部分，三組都必須保留。"
       },
       {
         "exampleId": "L2",
@@ -114,7 +116,8 @@ export default {
         "solutionSteps": [
           "第二式變為 -2x²-3x+5。"
         ],
-        "answer": "2x²-4x+11。"
+        "answer": "2x²-4x+11。",
+        "why": "減去整個第二式等同每一項乘負一，所以常數 -5 也要變成 +5。逐項變號後再合併，可得二次項二、一次項負四、常數十一，避免只改第一項。"
       },
       {
         "exampleId": "L3",
@@ -122,7 +125,8 @@ export default {
         "solutionSteps": [
           "補看缺項後相減。"
         ],
-        "answer": "x³-2x²+x+2。"
+        "answer": "x³-2x²+x+2。",
+        "why": "第一式可視為 x³+0x²+0x+2，第二式可視為 0x³+2x²-x+0；按同次方對齊並把第二式逐項變號後，每一欄都能正確相加，不會因缺項而錯位。"
       }
     ],
     "commonMistakes": [
@@ -140,12 +144,17 @@ export default {
         "mistake": "缺項造成直式錯位",
         "why": "依書寫位置而非次方對齊",
         "correction": "用 0 係數佔位。"
+      },
+      {
+        "mistake": "由已知和或差反求其中一式時憑字面猜運算",
+        "why": "被減式、減式與差的角色不同，方向錯會使全部係數反號",
+        "correction": "先用 A-B=D 寫等式，再以等式兩邊同加減推得所求關係。"
       }
     ],
     "selfCheck": [
-      "我是否能能以橫式或直式對齊同類項？",
-      "我是否能能正確展開括號前的正號與負號？",
-      "我是否能能處理缺項並化簡結果？",
+      "我是否能以橫式或直式對齊同類項？",
+      "我是否能正確展開括號前的正號與負號？",
+      "我是否能處理缺項並化簡結果？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -196,7 +205,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "52c39bf822b45b08fc2a089aad62a8cb032727cd154bf682dd1ed353b7dcb32e"
+    "contentSha256": "1b664d792b91069a7b028331fae961ffe16d9759f8b4e3a71ab9884be7424705"
   },
   "mcQuestions": [
     {
@@ -226,9 +235,11 @@ export default {
         "derivedChoice": "7x+2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "逐類合併得到 7x+2。",
+      "explanation": "逐類合併得到 7x+2。 兩個括號以加號連接，可直接展開並分類；x 項係數 2+5=7，常數項 3+(-1)=2，因此結果是 7x+2，兩組同類項分別核對，且沒有遺漏任何原項。",
       "steps": [
-        "同類項相加：2x+5x=7x，3+(-1)=2。"
+        "同類項相加：2x+5x=7x，3+(-1)=2。",
+        "去掉加法括號，寫成 2x+3+5x-1。",
+        "分別合併 x 項與常數項，得到 7x+2。"
       ],
       "optionAnalysis": [
         {
@@ -252,7 +263,7 @@ export default {
           "reason": "把係數相乘。"
         }
       ],
-      "misconceptionTarget": "常數符號或係數運算錯誤",
+      "misconceptionTarget": "常數符號或係數運算錯誤 把第二式的 -1 當成正一，或交叉合併 x 項與常數而得到錯誤係數。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -267,7 +278,7 @@ export default {
       "semanticReviewRef": "u10-s005-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e2796b4e915193eb6f4caf19c9147389b181add14a59931984e86c30fe18e8e7"
+      "contentSha256": "c2039e23fea8ae57e05be26f2d024232227f6d3020c6333d3dbc60a5aeadbecf"
     },
     {
       "questionId": "u10-s005-v002",
@@ -296,9 +307,11 @@ export default {
         "derivedChoice": "3x²+5x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "減去多項式時每一項都變號。",
+      "explanation": "減去多項式時每一項都變號。 括號前的減號使 x² 與 -3x 都取相反數，第二式變成 -x²+3x；再算二次項 4-1=3、一次項 2+3=5，故兩項皆為正確符號。",
       "steps": [
-        "第二式變號：4x²+2x-x²+3x=3x²+5x。"
+        "第二式變號：4x²+2x-x²+3x=3x²+5x。",
+        "完整去括號為 4x²+2x-x²+3x。",
+        "按次方合併，得到 3x²+5x 並核對兩項符號。"
       ],
       "optionAnalysis": [
         {
@@ -322,7 +335,7 @@ export default {
           "reason": "把二次項也當加法。"
         }
       ],
-      "misconceptionTarget": "只改括號第一項的符號",
+      "misconceptionTarget": "只改括號第一項的符號 只把括號第一項 x² 變號，仍保留 -3x，因而把一次項係數算成負一。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -337,7 +350,7 @@ export default {
       "semanticReviewRef": "u10-s005-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f7fafa90c6685809ccea2a497994e913ffe304afd704092f174ed459a1874d25"
+      "contentSha256": "2ce75be76b38077cc4474d976e0b4a932425b2763e8d0eb6ce70b9b8a7aaaf74"
     },
     {
       "questionId": "u10-s005-v003",
@@ -366,9 +379,11 @@ export default {
         "derivedChoice": "4x²+2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "同次方係數相加，指數不變。",
+      "explanation": "同次方係數相加，指數不變。 P+Q=(x²+4)+(3x²-2)，同類二次項係數 1+3=4，常數 4-2=2；加法不會改變 x 的指數，所以答案仍是二次式，完整結果為 4x²+2，常數欄也已完整相加。",
       "steps": [
-        "x²+3x²=4x²，4+(-2)=2。"
+        "x²+3x²=4x²，4+(-2)=2。",
+        "將兩式並列成 x²+3x²+4-2，按文字部分分組。",
+        "算得 4x²+2，確認沒有一次項需要補入。"
       ],
       "optionAnalysis": [
         {
@@ -392,7 +407,7 @@ export default {
           "reason": "把加法誤作乘法。"
         }
       ],
-      "misconceptionTarget": "相加時指數改變",
+      "misconceptionTarget": "相加時指數改變 把 x² 與 3x² 相加時將指數也相加成 x⁴，或把常數 -2 漏掉。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -407,7 +422,7 @@ export default {
       "semanticReviewRef": "u10-s005-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e40aaa1be6bba20be7ec172c7107d867a00d8e0561f63ea32b5de2a57a5c2839"
+      "contentSha256": "baa266d3d39d431987dd23f780755542f83d195876facac9103817f8d0708f5f"
     },
     {
       "questionId": "u10-s005-v004",
@@ -436,9 +451,11 @@ export default {
         "derivedChoice": "x²-5x+12",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "第二式三項全部變號後合併。",
+      "explanation": "第二式三項全部變號後合併。 減去第二個三項式時，2x²、4x、-7 依序變為 -2x²、-4x、+7；再逐次方合併，得到 x²-5x+12，三個符號皆已反轉，每一欄也各自完成核對。",
       "steps": [
-        "去括號：3x²-x+5-2x²-4x+7=x²-5x+12。"
+        "去括號：3x²-x+5-2x²-4x+7=x²-5x+12。",
+        "展開為 3x²-x+5-2x²-4x+7，檢查三項皆已變號。",
+        "合併係數 3-2、-1-4、5+7，得到 x²-5x+12。"
       ],
       "optionAnalysis": [
         {
@@ -462,7 +479,7 @@ export default {
           "reason": "x²-5x+12 正確。"
         }
       ],
-      "misconceptionTarget": "減號分配不完整",
+      "misconceptionTarget": "減號分配不完整 外層減號沒有分配到常數 -7，將 5-7 算成 -2 而非 5+7。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -477,7 +494,7 @@ export default {
       "semanticReviewRef": "u10-s005-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "35acb6eea9a587cb96729b1cb2d391e1333d7dd5776744228dbe77fb4e4ac021"
+      "contentSha256": "82927b85c51b9405e60106ffa0e6f253c3ff17e4718ddfd20f3451bf5ae25539"
     },
     {
       "questionId": "u10-s005-v005",
@@ -506,9 +523,11 @@ export default {
         "derivedChoice": "2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "其他次方不影響 x 項係數。",
+      "explanation": "其他次方不影響 x 項係數。 題目只問 P+Q 的 x 項，可鎖定 P 中的 -x 與 Q 中的 3x；係數 -1+3=2，三次、二次與常數項都不影響此係數，故答案只取二。",
       "steps": [
-        "x 項只來自 -x+3x=2x，所以係數為 2。"
+        "x 項只來自 -x+3x=2x，所以係數為 2。",
+        "從兩式各自擷取一次項 -x 與 3x，忽略其他不同次方項。",
+        "將 -x 改寫成 -1x，合併係數 -1+3=2。"
       ],
       "optionAnalysis": [
         {
@@ -532,7 +551,7 @@ export default {
           "reason": "把係數絕對值相加。"
         }
       ],
-      "misconceptionTarget": "未按次方取對應係數",
+      "misconceptionTarget": "未按次方取對應係數 把不同次方的係數一起相加，或漏讀 -x 省略的係數是負一。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -547,7 +566,7 @@ export default {
       "semanticReviewRef": "u10-s005-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "408e845cc649ec1999ec1e5ccba0ae3b0491edab4e44ea5004718ab39c14ad15"
+      "contentSha256": "2afbfd809f414421da6aebbf87fb3eca847ade5a63dd72efe672cfbe63e2f77c"
     },
     {
       "questionId": "u10-s005-v006",
@@ -576,9 +595,11 @@ export default {
         "derivedChoice": "3x²-x+2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "分配後逐次方相加。",
+      "explanation": "分配後逐次方相加。 括號外的 2 必須乘到三項，先得 2x²+2x-2；加上第二式後，二次項 3x²、一次項 -x、常數 2，三類項完整保留，結果已按降冪排列。",
       "steps": [
-        "先分配 2：2x²+2x-2，再加第二式，得 3x²-x+2。"
+        "先分配 2：2x²+2x-2，再加第二式，得 3x²-x+2。",
+        "用分配律完整展開第一括號為 2x²+2x-2。",
+        "與 x²-3x+4 分類合併，得到 3x²-x+2。"
       ],
       "optionAnalysis": [
         {
@@ -602,7 +623,7 @@ export default {
           "reason": "常數 -2+4 算成 6。"
         }
       ],
-      "misconceptionTarget": "外係數未分配所有項",
+      "misconceptionTarget": "外係數未分配所有項 外係數二只乘括號第一項，或漏把常數 -1 乘成 -2。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -617,7 +638,7 @@ export default {
       "semanticReviewRef": "u10-s005-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "770fcf4828980012cd526f1aa8cf6e51409632c4c3961e2c87ee5283e20d6502"
+      "contentSha256": "e2fcaad84141292a09003a008355a026e522ba14986d519c8f87a7a7e901cced"
     },
     {
       "questionId": "u10-s005-v007",
@@ -646,10 +667,11 @@ export default {
         "derivedChoice": "x²-3x-2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "分兩層去括號，外層減號作用於第二個整體。",
+      "explanation": "分兩層去括號，外層減號作用於第二個整體。 先處理內層 -(x-1)=-x+1，再把外層所減的整個 x²+(2x+3) 展開為 -x²-2x-3；最後合併得 x²-3x-2，兩層括號依序處理。",
       "steps": [
         "第一括號為 2x²-x+1。",
-        "減第二括號得 -x²-2x-3，所以總為 x²-3x-2。"
+        "減第二括號得 -x²-2x-3，所以總為 x²-3x-2。",
+        "將兩個整體都展開，得到 (2x²-x+1)-(x²+2x+3)。"
       ],
       "optionAnalysis": [
         {
@@ -673,7 +695,7 @@ export default {
           "reason": "x²-3x-2 正確。"
         }
       ],
-      "misconceptionTarget": "巢狀括號的負號範圍錯",
+      "misconceptionTarget": "巢狀括號的負號範圍錯 混淆兩層負號的作用範圍，只改變每個括號的第一項而漏掉常數。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -688,7 +710,7 @@ export default {
       "semanticReviewRef": "u10-s005-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "49423d99680a256a414821625e9467d5f5d6f8aa8235dd57a89bfe3937817852"
+      "contentSha256": "df4b959c9a5c78430a53476bc31ee8e989ce5efe85e7525c090a534d13491d06"
     },
     {
       "questionId": "u10-s005-v008",
@@ -717,9 +739,11 @@ export default {
         "derivedChoice": "4x²-x+4",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "由已知差加回 Q。",
+      "explanation": "由已知差加回 Q。 由 P-Q=D 可在等式兩邊同加 Q，得 P=D+Q；把已知差與 Q 對齊相加後，二次項四、一次項負一、常數四，故 P=4x²-x+4，再減 Q 可回到原差。",
       "steps": [
-        "P=(P-Q)+Q=(3x²-2x+5)+(x²+x-1)=4x²-x+4。"
+        "P=(P-Q)+Q=(3x²-2x+5)+(x²+x-1)=4x²-x+4。",
+        "先用等式運算寫出 P=(P-Q)+Q，確認方向。",
+        "代入兩式後合併 3x²+x²、-2x+x、5-1，得 4x²-x+4。"
       ],
       "optionAnalysis": [
         {
@@ -743,7 +767,7 @@ export default {
           "reason": "二次項係數錯。"
         }
       ],
-      "misconceptionTarget": "由差反求被減式時運算方向錯",
+      "misconceptionTarget": "由差反求被減式時運算方向錯 反求被減式時再次用差減 Q，將 P 錯列為 (P-Q)-Q。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -758,7 +782,7 @@ export default {
       "semanticReviewRef": "u10-s005-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f4733dc566b12bdd5d909edd9a3671c9bba92708027793dd6f134416230ee058"
+      "contentSha256": "e26b073275f2c928b22a0ca7e827f99158a5fa8b905218d7c52956c21b69ab76"
     },
     {
       "questionId": "u10-s005-v009",
@@ -787,7 +811,7 @@ export default {
         "derivedChoice": "5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "逐次方比較係數求兩參數。",
+      "explanation": "逐次方比較係數求兩參數。 A-B 展開時 B 的 -4x 變為 +4x，常數 b 變為 -b；比較一次項得 a+4=5、常數項得 -3-b=-7，所以 a=1、b=4，最後相加為五；兩個係數條件彼此獨立。",
       "steps": [
         "A-B=x²+(a+4)x+(-3-b)。",
         "比較得 a+4=5，所以 a=1。",
@@ -816,7 +840,7 @@ export default {
           "reason": "計算 b 符號錯。"
         }
       ],
-      "misconceptionTarget": "比較係數時減號造成參數符號錯",
+      "misconceptionTarget": "比較係數時減號造成參數符號錯 減去 B 時未改變 -4x 或 b 的符號，因而建立 a-4=5 或 -3+b=-7。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -831,7 +855,7 @@ export default {
       "semanticReviewRef": "u10-s005-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "eb678dc62135ae18f9d75bc5b86ff89cce8b159aa3e3cd7fd9548efc0c10def2"
+      "contentSha256": "1c5cd6f0b3c270928c2be60bde328fa83b7d811b6841da207070424c2da8cea9"
     },
     {
       "questionId": "u10-s005-v010",
@@ -860,9 +884,11 @@ export default {
         "derivedChoice": "45x+700 元",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "變動收入與固定收入分別減去對應支出。",
+      "explanation": "變動收入與固定收入分別減去對應支出。 結餘定義為收入減支出，故變動部分 80x-35x=45x，固定部分 1200-500=700；兩部分合併為 45x+700 元，金額單位一致。",
       "steps": [
-        "結餘=收入-支出=80x+1200-35x-500=45x+700。"
+        "結餘=收入-支出=80x+1200-35x-500=45x+700。",
+        "依結餘關係列 (80x+1200)-(35x+500)。",
+        "逐項變號並合併，得到 45x+700 元，保留金額單位。"
       ],
       "optionAnalysis": [
         {
@@ -886,7 +912,7 @@ export default {
           "reason": "45x+700 正確。"
         }
       ],
-      "misconceptionTarget": "把結餘誤作收入加支出",
+      "misconceptionTarget": "把結餘誤作收入加支出 把收入與支出相加，或只減 x 項而將固定支出五百元加到收入。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "所有項均為元，可直接相減。",
@@ -901,7 +927,7 @@ export default {
       "semanticReviewRef": "u10-s005-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e7aed90ed4dfd69d901638416efa624d9bb0eeaa5e3b3de2b208606fe27e06e8"
+      "contentSha256": "a2df334bf1f5d24e9402fd27f1e19dbe20527885c9eb9f57d8646eaf4b2ff4a6"
     },
     {
       "questionId": "u10-s005-v011",
@@ -930,9 +956,11 @@ export default {
         "derivedChoice": "4x²+7x-5 公升",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "放出量整體要相減，因此 -3x 變 +3x。",
+      "explanation": "放出量整體要相減，因此 -3x 變 +3x。 剩量等於原有量減放出量；括號內 -3x 被整體相減後成 +3x，因此一次項 4x+3x=7x，常數則為 -5，二次項同時相減為 4x²。",
       "steps": [
-        "剩量=6x²+4x-(2x²-3x+5)=4x²+7x-5。"
+        "剩量=6x²+4x-(2x²-3x+5)=4x²+7x-5。",
+        "展開為 6x²+4x-2x²+3x-5，確認放出量三項皆取相反數。",
+        "合併得 4x²+7x-5 公升，核對量綱仍為容量。"
       ],
       "optionAnalysis": [
         {
@@ -956,7 +984,7 @@ export default {
           "reason": "常數 5 未變號。"
         }
       ],
-      "misconceptionTarget": "減去含負項的放出量時符號錯",
+      "misconceptionTarget": "減去含負項的放出量時符號錯 將放出量中的 -3x 保留為負，或把放出的常數五加到剩餘量。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "各式均以公升表示。",
@@ -971,7 +999,7 @@ export default {
       "semanticReviewRef": "u10-s005-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f351f85db045d4bbe5ee6b58b78e31462566541791361a923e14a1596f1c8b3e"
+      "contentSha256": "45ce8544ef31d35895f493442d54aa70e7bb4582c09fefb555c389efda747ee9"
     },
     {
       "questionId": "u10-s005-v012",
@@ -1000,9 +1028,11 @@ export default {
         "derivedChoice": "2x²+3x-1 公里",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "「比甲短」表示從甲路線減去差量。",
+      "explanation": "「比甲短」表示從甲路線減去差量。 乙比甲短某差量，關係是乙=甲-差；減去 x²-x+2 時得到 -x²+x-2，與甲式合併為 2x²+3x-1 公里，方向符合較短語意。",
       "steps": [
-        "乙=甲-差=3x²+2x+1-(x²-x+2)=2x²+3x-1。"
+        "乙=甲-差=3x²+2x+1-(x²-x+2)=2x²+3x-1。",
+        "依語意列乙=(3x²+2x+1)-(x²-x+2)。",
+        "完整去括號再逐次方合併，得到 2x²+3x-1 公里。"
       ],
       "optionAnalysis": [
         {
@@ -1026,7 +1056,7 @@ export default {
           "reason": "常數 2 未變號。"
         }
       ],
-      "misconceptionTarget": "把「短多少」的關係方向弄反",
+      "misconceptionTarget": "把「短多少」的關係方向弄反 把『乙比甲短』理解成甲加差量，或減括號時沒有將 -x 轉為 +x。",
       "prerequisiteCheck": "使用先備技能：polynomial-degree-coefficient；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "所有長度式單位為公里。",
@@ -1041,7 +1071,7 @@ export default {
       "semanticReviewRef": "u10-s005-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b95871d6266b70559790d18c8e32ba7503aea3ec17a6e7f547e7fa26ad917240"
+      "contentSha256": "7a5a9a94d2cabb4fd902329698b25139800138b44b85baa24bd802deb4ecf4fa"
     }
   ],
   "constructedResponses": [
@@ -1063,14 +1093,16 @@ export default {
       ],
       "standardSolution": [
         "4x²-3x+6-x²-5x+2。",
-        "=3x²-8x+8。"
+        "=3x²-8x+8。",
+        "外層減號使第二式的 x²、5x、-2 依序成為 -x²、-5x、+2；分三欄計算係數 4-1=3、-3-5=-8、6+2=8，故完整化簡式為 3x²-8x+8。將結果逐欄與去括號式比對，可確認每項都有對應且沒有遺失負號。"
       ],
       "alternativeMethods": [
         "可用直式把第二式各係數取相反數後相加。"
       ],
       "reasoningSteps": [
         "4x²-3x+6-x²-5x+2。",
-        "=3x²-8x+8。"
+        "=3x²-8x+8。",
+        "把三組係數逐一回填到 x²、x、常數位置，並確認答案已按降冪排列。"
       ],
       "rubric": [
         {
@@ -1097,7 +1129,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫正確答案無步驟，最高 2 分。",
       "commonErrorTargets": [
-        "對齊同類項並正確處理減號"
+        "只把第二式第一項 x² 變號，沒有同時把 5x 與 -2 取相反數。",
+        "直式書寫時未按同次方對齊，將 x 項係數與常數相減。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1108,7 +1141,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "cf89dd72efd8cb8c92923788e23e08ea2f550f52b538d4c45ae63ba5d37ef0fe"
+      "contentSha256": "7695f3f099bfd90efc43a2df3fdd2e230f866636d0e8324a434a3a3c0cd4cfc8"
     },
     {
       "questionId": "u10-s005-cr002",
@@ -1128,14 +1161,16 @@ export default {
       ],
       "standardSolution": [
         "B=(x²+x-1)-(2x²-3x+4)。",
-        "=x²+x-1-2x²+3x-4=-x²+4x-5。"
+        "=x²+x-1-2x²+3x-4=-x²+4x-5。",
+        "設已知差 D=A-B，則由 D=A-B 兩邊同加 B、再減 D 可得 B=A-D。將兩個已知式相減後，二次項 1-2=-1、一次項 1-(-3)=4、常數 -1-4=-5，所以 B=-x²+4x-5。再以 A-B 回算原差，三個係數均吻合，證明反求方向正確。"
       ],
       "alternativeMethods": [
         "也可由 A-B=D 改寫 B=A-D，再以直式相減。"
       ],
       "reasoningSteps": [
         "B=(x²+x-1)-(2x²-3x+4)。",
-        "=x²+x-1-2x²+3x-4=-x²+4x-5。"
+        "=x²+x-1-2x²+3x-4=-x²+4x-5。",
+        "用求得的 B 驗算 A-B，確實回到 2x²-3x+4，確認關係方向與所有符號。"
       ],
       "rubric": [
         {
@@ -1162,7 +1197,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫 B 的正確式，最高 2 分。",
       "commonErrorTargets": [
-        "對齊同類項並正確處理減號"
+        "由 A-B=D 反求 B 時誤寫成 D-A 或 A+D，顛倒被減式關係。",
+        "計算 A-D 時未將 D 的 -3x 變成 +3x，或漏變常數 4 的符號。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1173,14 +1209,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "924285bf442051f85e946891c24cfd2a1dd5c5ff84cd46d48e147337f0382669"
+      "contentSha256": "cecef27e5260091c82166c74d87f1a618684eaf169c3fbe84581e66cf33615d8"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s005-v001-review",
       "questionId": "u10-s005-v001",
-      "questionContentSha256": "e2796b4e915193eb6f4caf19c9147389b181add14a59931984e86c30fe18e8e7",
+      "questionContentSha256": "c2039e23fea8ae57e05be26f2d024232227f6d3020c6333d3dbc60a5aeadbecf",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "同類項相加：2x+5x=7x，3+(-1)=2。",
@@ -1209,12 +1245,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 (2x+3)+(5x-1)。」獨立重算：同類項相加：2x+5x=7x，3+(-1)=2。 正解「7x+2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "85aece7660292624fea649398796b59dcb97825ff5293ed94403cb439891f705"
+      "contentSha256": "0f9290b7c3f80f4ac7ffbe9b3f919fa7f7d9d5ccc343ebace2e4840a3fa32603"
     },
     {
       "reviewId": "u10-s005-v002-review",
       "questionId": "u10-s005-v002",
-      "questionContentSha256": "f7fafa90c6685809ccea2a497994e913ffe304afd704092f174ed459a1874d25",
+      "questionContentSha256": "2ce75be76b38077cc4474d976e0b4a932425b2763e8d0eb6ce70b9b8a7aaaf74",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "第二式變號：4x²+2x-x²+3x=3x²+5x。",
@@ -1243,12 +1279,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 (4x²+2x)-(x²-3x)。」獨立重算：第二式變號：4x²+2x-x²+3x=3x²+5x。 正解「3x²+5x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "4a694d6aee1f60ceafe0d3e2ac9660528db3318e5bab6ab119682b3c528f60e3"
+      "contentSha256": "2c33b9def90d44bbd92c9d8bd896fad851d3a0f87d58a2215ef7da0a42fd11ca"
     },
     {
       "reviewId": "u10-s005-v003-review",
       "questionId": "u10-s005-v003",
-      "questionContentSha256": "e40aaa1be6bba20be7ec172c7107d867a00d8e0561f63ea32b5de2a57a5c2839",
+      "questionContentSha256": "baa266d3d39d431987dd23f780755542f83d195876facac9103817f8d0708f5f",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "x²+3x²=4x²，4+(-2)=2。",
@@ -1277,12 +1313,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「P=x²+4，Q=3x²-2。P+Q 為何？」獨立重算：x²+3x²=4x²，4+(-2)=2。 正解「4x²+2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "33ca3bb53be82e3b99e90fea36ba187aaaaa1bfb29e976452776b565360d2d27"
+      "contentSha256": "3660ff54adc8c5547c01f7e5087d01bfb342fe1f884f3adc0893d75718761e99"
     },
     {
       "reviewId": "u10-s005-v004-review",
       "questionId": "u10-s005-v004",
-      "questionContentSha256": "35acb6eea9a587cb96729b1cb2d391e1333d7dd5776744228dbe77fb4e4ac021",
+      "questionContentSha256": "82927b85c51b9405e60106ffa0e6f253c3ff17e4718ddfd20f3451bf5ae25539",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "去括號：3x²-x+5-2x²-4x+7=x²-5x+12。",
@@ -1311,12 +1347,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 (3x²-x+5)-(2x²+4x-7)。」獨立重算：去括號：3x²-x+5-2x²-4x+7=x²-5x+12。 正解「x²-5x+12」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "d28b4097b8f0bc085475e65daf4b1c400116483b948a2c888cb5edad49c9e9f2"
+      "contentSha256": "aee3f87cc8b3b20e4ef564d12aa489211b2bb5709a581d0f639cdc21748b93be"
     },
     {
       "reviewId": "u10-s005-v005-review",
       "questionId": "u10-s005-v005",
-      "questionContentSha256": "408e845cc649ec1999ec1e5ccba0ae3b0491edab4e44ea5004718ab39c14ad15",
+      "questionContentSha256": "2afbfd809f414421da6aebbf87fb3eca847ade5a63dd72efe672cfbe63e2f77c",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "x 項只來自 -x+3x=2x，所以係數為 2。",
@@ -1345,12 +1381,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 P=2x³-x+1，Q=x²+3x-4，則 P+Q 的 x 項係數為何？」獨立重算：x 項只來自 -x+3x=2x，所以係數為 2。 正解「2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "891a767460a96f5566dbb65b28f20a840c631c73d7bf47117f7266a82f4b3eb2"
+      "contentSha256": "c8a55d8e5c29088641dd67856b02054ab0beccbaf0ea4b86f118cd0c8114b356"
     },
     {
       "reviewId": "u10-s005-v006-review",
       "questionId": "u10-s005-v006",
-      "questionContentSha256": "770fcf4828980012cd526f1aa8cf6e51409632c4c3961e2c87ee5283e20d6502",
+      "questionContentSha256": "e2fcaad84141292a09003a008355a026e522ba14986d519c8f87a7a7e901cced",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "先分配 2：2x²+2x-2，再加第二式，得 3x²-x+2。",
@@ -1379,12 +1415,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 2(x²+x-1)+(x²-3x+4)。」獨立重算：先分配 2：2x²+2x-2，再加第二式，得 3x²-x+2。 正解「3x²-x+2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "c19f3f0ec2cddb4f8118f7afd4554568ad08cbabdcae6e87af589bab2765e4e7"
+      "contentSha256": "70a3224f6a2a051d0de9ea9035613352cff03d524cc19360aff1ed788e0f378d"
     },
     {
       "reviewId": "u10-s005-v007-review",
       "questionId": "u10-s005-v007",
-      "questionContentSha256": "49423d99680a256a414821625e9467d5f5d6f8aa8235dd57a89bfe3937817852",
+      "questionContentSha256": "df4b959c9a5c78430a53476bc31ee8e989ce5efe85e7525c090a534d13491d06",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "第一括號為 2x²-x+1；減第二括號得 -x²-2x-3，所以總為 x²-3x-2。",
@@ -1413,12 +1449,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 [2x²-(x-1)]-[x²+(2x+3)]。」獨立重算：第一括號為 2x²-x+1；減第二括號得 -x²-2x-3，所以總為 x²-3x-2。 正解「x²-3x-2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "38ff15022565a567686607980b1e50461dd33b986def12536e219e22377f8bf0"
+      "contentSha256": "a2254d22bb6c65d0447fc84f80d8209c30ceec40b7e2d989e24abffa34851f30"
     },
     {
       "reviewId": "u10-s005-v008-review",
       "questionId": "u10-s005-v008",
-      "questionContentSha256": "f4733dc566b12bdd5d909edd9a3671c9bba92708027793dd6f134416230ee058",
+      "questionContentSha256": "e26b073275f2c928b22a0ca7e827f99158a5fa8b905218d7c52956c21b69ab76",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "P=(P-Q)+Q=(3x²-2x+5)+(x²+x-1)=4x²-x+4。",
@@ -1447,12 +1483,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 P-Q=3x²-2x+5，且 Q=x²+x-1，則 P 為何？」獨立重算：P=(P-Q)+Q=(3x²-2x+5)+(x²+x-1)=4x²-x+4。 正解「4x²-x+4」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "43d58c2ffb9dc3e58bfbe8901c88873ec9f62d95ee92022925c54d9ba488ed65"
+      "contentSha256": "df536e2afb0347a82ef77b0e46f7a1f6ff932ba99fd5547a511e4869895cfed0"
     },
     {
       "reviewId": "u10-s005-v009-review",
       "questionId": "u10-s005-v009",
-      "questionContentSha256": "eb678dc62135ae18f9d75bc5b86ff89cce8b159aa3e3cd7fd9548efc0c10def2",
+      "questionContentSha256": "1c5cd6f0b3c270928c2be60bde328fa83b7d811b6841da207070424c2da8cea9",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "A-B=x²+(a+4)x+(-3-b)。比較得 a+4=5，所以 a=1；-3-b=-7，所以 b=4；因此 a+b=5。",
@@ -1481,12 +1517,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 A=2x²+ax-3，B=x²-4x+b，且 A-B=x²+5x-7，則 a+b 為何？」獨立重算：A-B=x²+(a+4)x+(-3-b)。比較得 a+4=5，所以 a=1；-3-b=-7，所以 b=4；因此 a+b=5。 正解「5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "16847dcf6acf4a8e2436f5b0b7195716c06b25bda1bc8c76519431b43b8eff85"
+      "contentSha256": "e29c1aff7e90d1c41affd9a82a9f134607d77c700b86434f7d7ce7a91f42d931"
     },
     {
       "reviewId": "u10-s005-v010-review",
       "questionId": "u10-s005-v010",
-      "questionContentSha256": "e7aed90ed4dfd69d901638416efa624d9bb0eeaa5e3b3de2b208606fe27e06e8",
+      "questionContentSha256": "a2df334bf1f5d24e9402fd27f1e19dbe20527885c9eb9f57d8646eaf4b2ff4a6",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "結餘=收入-支出=80x+1200-35x-500=45x+700。",
@@ -1515,12 +1551,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「某社團收入為 (80x+1200) 元，支出為 (35x+500) 元。結餘是多少？」獨立重算：結餘=收入-支出=80x+1200-35x-500=45x+700。 正解「45x+700 元」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "d0ee2f410c1065a5dbd005b5b0e8c6aa41eab9be87af7e4c9065b2dd5e6dee25"
+      "contentSha256": "caba4e3c615b9af6d331eee6fbe55a592ac41822597a9d51b9b4d1f9f07ae84c"
     },
     {
       "reviewId": "u10-s005-v011-review",
       "questionId": "u10-s005-v011",
-      "questionContentSha256": "f351f85db045d4bbe5ee6b58b78e31462566541791361a923e14a1596f1c8b3e",
+      "questionContentSha256": "45ce8544ef31d35895f493442d54aa70e7bb4582c09fefb555c389efda747ee9",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "剩量=6x²+4x-(2x²-3x+5)=4x²+7x-5。",
@@ -1549,12 +1585,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一水槽原有 (6x²+4x) 公升，放出 (2x²-3x+5) 公升後，剩多少？」獨立重算：剩量=6x²+4x-(2x²-3x+5)=4x²+7x-5。 正解「4x²+7x-5 公升」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "7fd0225b6203d94acb37c31ff965d7ab9db96a30a8826bdac2505c586b04780b"
+      "contentSha256": "024a02189f9b62d2269a9b3811afc55c0c2b5ec53383efc51e2c496417227576"
     },
     {
       "reviewId": "u10-s005-v012-review",
       "questionId": "u10-s005-v012",
-      "questionContentSha256": "b95871d6266b70559790d18c8e32ba7503aea3ec17a6e7f547e7fa26ad917240",
+      "questionContentSha256": "7a5a9a94d2cabb4fd902329698b25139800138b44b85baa24bd802deb4ecf4fa",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "乙=甲-差=3x²+2x+1-(x²-x+2)=2x²+3x-1。",
@@ -1583,7 +1619,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「甲路線長 (3x²+2x+1) 公里，乙路線比甲短 (x²-x+2) 公里。乙路線長為何？」獨立重算：乙=甲-差=3x²+2x+1-(x²-x+2)=2x²+3x-1。 正解「2x²+3x-1 公里」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "d8beb9a49593c883a894722fa22a2ea3be42818ee91066aab48e31d5ba8d12b1"
+      "contentSha256": "f56698ecc052c0e1ecb0e0ebad71021705a327eb4291f4fd95848e487a422c69"
     }
   ],
   "drawingSpecs": []

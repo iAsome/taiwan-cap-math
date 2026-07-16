@@ -57,7 +57,7 @@ export const LECTURE = {
     },
     {
       "term": "梯形",
-      "definition": "本課採至少一組對邊平行的廣義定義；題目若另有定義依題意。"
+      "definition": "依臺灣國中教材，只有一組對邊平行，且另一組對邊不平行的四邊形。"
     }
   ],
   "notation": [
@@ -74,7 +74,7 @@ export const LECTURE = {
     "一般四邊形內角和為 360°，可畫一條對角線分成兩個三角形理解。",
     "辨認特殊四邊形要看定義的必要條件，不是看名稱印象。平行四邊形要求兩組對邊平行；長方形再加入四直角；菱形再加入四邊等長。",
     "正方形同時符合長方形與菱形定義，也是平行四邊形。這是包含關係，不是只能選一個名稱。",
-    "同樣的局部條件可能不足以唯一分類。例如只有一組對邊平行，只能確定符合梯形廣義定義，不能直接說是平行四邊形。"
+    "同樣的局部條件可能不足以唯一分類。若只有一組對邊平行，還要確認另一組對邊不平行，才能依臺灣教材定義判為梯形；兩組對邊都平行時應判為平行四邊形。"
   ],
   "formalDefinitions": [
     {
@@ -121,28 +121,38 @@ export const LECTURE = {
     "四邊等長不表示一定有四個直角；那可能是非正方形菱形。",
     "四個直角不表示四邊等長；那可能是非正方形長方形。",
     "只有一組對邊等長不足以判定平行四邊形。",
-    "不同教材對梯形可能採『恰一組』或『至少一組』平行，必須依題目定義。"
+    "依本專案臺灣國中課程用語，梯形必須只有一組對邊平行；兩組都平行的圖形應歸入平行四邊形。"
   ],
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "列出題目明示的平行、等長與直角條件。",
-      "check": "不要從外觀補條件。"
+      "instruction": "列出題目明示的平行、等長、直角與角度條件。",
+      "check": "只採題目給定性質，不從外觀自行補條件。"
     },
     {
       "step": 2,
-      "instruction": "先檢查最基本定義。",
-      "check": "兩組對邊平行可判平行四邊形。"
+      "instruction": "先用最基本定義判斷一般類別。",
+      "check": "兩組對邊分別平行才可直接判為平行四邊形。"
     },
     {
       "step": 3,
-      "instruction": "再檢查額外條件。",
-      "check": "四直角判長方形；四邊等長判菱形；兩者皆有判正方形。"
+      "instruction": "依臺灣教材檢查梯形是否只有一組對邊平行。",
+      "check": "另一組也平行時應歸入平行四邊形，不稱梯形。"
     },
     {
       "step": 4,
-      "instruction": "若求角度，使用 360° 或特殊四邊形性質。",
-      "check": "最後說明能確定到哪一層。"
+      "instruction": "再用四直角或四邊等長縮小到特殊類別。",
+      "check": "長方形、菱形、正方形的附加條件是否完整？"
+    },
+    {
+      "step": 5,
+      "instruction": "求角度時使用內角和、鄰角互補與對角相等。",
+      "check": "代回後四角總和是否為三百六十度？"
+    },
+    {
+      "step": 6,
+      "instruction": "以最精確且必然成立的名稱或性質作答。",
+      "check": "有沒有把可能成立誤寫成一定成立？"
     }
   ],
   "workedExamples": [
@@ -151,35 +161,42 @@ export const LECTURE = {
       "prompt": "四邊形三內角為 80°、95°、105°，第四角為何？",
       "solutionSteps": [
         "四邊形內角和 360°。",
-        "360°-80°-95°-105°=80°。"
+        "360°−80°−95°−105°=80°。",
+        "四角相加為三百六十度。"
       ],
-      "answer": "80°。"
+      "answer": "80°。",
+      "why": "先把三個已知角合計為二百八十度，再由四邊形固定內角和求差；代回總和驗證，能避免誤套三角形的一百八十度。"
     },
     {
       "exampleId": "L2",
       "prompt": "某四邊形兩組對邊分別平行，可先判定為何種圖形？",
       "solutionSteps": [
-        "這正是平行四邊形的定義。"
+        "兩組對邊分別平行正是平行四邊形定義。",
+        "未給直角或四邊等長，不能再縮小類別。"
       ],
-      "answer": "平行四邊形。"
+      "answer": "平行四邊形。",
+      "why": "答案只使用題目明示的兩組平行條件，既能直接套定義，也保留未給的角與邊資訊，不會過度判成長方形、菱形或正方形。"
     },
     {
       "exampleId": "L3",
       "prompt": "某平行四邊形四邊等長，但沒有直角，最精確可稱為何？",
       "solutionSteps": [
-        "四邊等長的平行四邊形是菱形。",
-        "沒有直角，所以不能稱正方形。"
+        "四邊等長的平行四邊形符合菱形定義。",
+        "沒有直角，因此不符合正方形的附加條件。"
       ],
-      "answer": "菱形。"
+      "answer": "菱形。",
+      "why": "四邊等長足以從平行四邊形縮小到菱形，而沒有直角明確排除正方形；這個判斷同時使用了正向條件與排除條件。"
     },
     {
       "exampleId": "L4",
       "prompt": "某四邊形四邊等長且四角皆為 90°，它同時屬於哪些常見類別？",
       "solutionSteps": [
         "四角直角符合長方形；四邊等長符合菱形。",
-        "兩組對邊平行，亦為平行四邊形；最具體名稱是正方形。"
+        "兩組對邊也分別平行，因此同時是平行四邊形。",
+        "最具體名稱為正方形。"
       ],
-      "answer": "正方形、長方形、菱形與平行四邊形。"
+      "answer": "正方形、長方形、菱形與平行四邊形。",
+      "why": "特殊四邊形可同時屬於較一般類別；四直角與四等邊共同決定正方形，並不會取消它原本符合的長方形、菱形與平行四邊形定義。"
     }
   ],
   "levelConnections": {
@@ -215,16 +232,16 @@ export const LECTURE = {
       "correction": "平行四邊形要求兩組對邊分別平行。"
     },
     {
-      "mistake": "忽略梯形定義差異。",
-      "why": "不同教材慣例不同。",
-      "correction": "題目若明示定義，依題意作答並說明。"
+      "mistake": "把平行四邊形也當成梯形。",
+      "why": "誤以為有一組對邊平行就足夠。",
+      "correction": "再檢查另一組對邊不平行，才能判為梯形。"
     }
   ],
   "selfCheckItems": [
     "我是否只使用題目提供的條件？",
     "內角和是否用 360°？",
     "我能說明正方形與長方形、菱形的包含關係嗎？",
-    "梯形定義是否由題目指定？"
+    "我是否檢查梯形只有一組對邊平行？"
   ],
   "conciseSummary": [
     "四邊形內角和 360°。",
@@ -245,12 +262,12 @@ export const LECTURE = {
     "zeroFoundationReadability": "pass",
     "scopeCheck": "u08 locked CAP text-only boundary",
     "examplesNotCopiedFromLegacyOrProductionBank": true,
-    "skillSpecificEvidence": "逐項以定義檢查特殊四邊形包含關係；內角例題重算 80+95+105+80=360，並明示梯形定義可能依題目採廣義或狹義。",
+    "skillSpecificEvidence": "逐項以定義檢查特殊四邊形包含關係；內角例題重算 80+95+105+80=360，並依臺灣國中教材確認梯形只有一組對邊平行。",
     "manualSymbolAndUnitCheck": true,
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "cfc7bcd947f90efea40e71403fef8bb9e3933fc72bd5c416e49003ee24af87bb"
+  "contentSha256": "d86f1fb2316d441dc7242e9ff204072c1228d2f18a2bd18b570dbaeed5cb1868"
 };
 
 export const QUESTIONS = [
@@ -280,10 +297,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "四邊形固定內角和 360°。",
-    "explanation": "使用四邊形內角和。",
+    "explanation": "從四邊形任一頂點連到不相鄰頂點，可分成兩個不重疊三角形。每個三角形內角和是一百八十度，所以四邊形內角和為 2×180°=360°；此性質不要求四邊形是特殊類型。",
     "steps": [
-      "畫一條對角線形成兩三角形。",
-      "2×180=360。"
+      "在四邊形內連一條對角線，把圖形分成兩個三角形。",
+      "將兩個三角形內角和相加，得到 180°+180°。",
+      "確認四個內角總和為 360°，選第二項。"
     ],
     "optionAnalysis": [
       {
@@ -307,7 +325,7 @@ export const QUESTIONS = [
         "reason": "540° 是五邊形內角和。"
       }
     ],
-    "misconceptionTarget": "把三角形內角和直接套用。",
+    "misconceptionTarget": "把四邊形誤當一個三角形而回答一百八十度，或誤用五邊形公式。",
     "prerequisiteCheck": "能使用三角形內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -319,7 +337,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "641cf60ee15224607674899e587f39ace3477703169e470432239b57fec5e21c"
+    "contentSha256": "af0a555bb495c4993fbbfd508b8e6c3e936097babb72d0a2bf0e273c29de13b9"
   },
   {
     "questionId": "u08-s006-v002",
@@ -348,11 +366,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "由定義，具有兩組對邊分別平行的四邊形就是平行四邊形。",
-    "explanation": "題目要求最精確分類，應直接使用平行四邊形定義。",
+    "explanation": "平行四邊形的定義就是兩組對邊分別平行，題目已完整給出這項條件，所以最精確可判為平行四邊形。依臺灣教材，梯形只有一組對邊平行；風箏形則要求鄰邊成對等長，都不符合所給的最精確資訊。",
     "steps": [
-      "確認有兩組對邊。",
-      "兩組都分別平行。",
-      "判定為平行四邊形。"
+      "將題目給的兩組對邊分別平行與各類四邊形定義比對。",
+      "確認此條件正好滿足平行四邊形的定義。",
+      "排除只有一組對邊平行的梯形與需要鄰邊等長的風箏形。"
     ],
     "optionAnalysis": [
       {
@@ -376,7 +394,7 @@ export const QUESTIONS = [
         "reason": "兩組對邊分別平行正是平行四邊形的定義。"
       }
     ],
-    "misconceptionTarget": "把只有一組對邊平行與兩組對邊平行混淆。",
+    "misconceptionTarget": "只說一般四邊形而忽略更精確定義，或把兩組平行誤判成梯形。",
     "prerequisiteCheck": "需能辨認四邊形的對邊。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位。",
@@ -388,7 +406,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "f382fe41495203ccfe094f09a90949fd8b7134593add7cb4c275b88b61cb1643"
+    "contentSha256": "0e1589edf529ee8dca80e029defec0f43f4e5ea448eeb43c0ad905fbf808d2ec"
   },
   {
     "questionId": "u08-s006-v003",
@@ -417,11 +435,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "正方形是同時滿足長方形與菱形條件的圖形。",
-    "explanation": "選擇包含全部條件的最具體名稱。",
+    "explanation": "四邊等長使圖形具備菱形條件，四個角都是直角又具備長方形條件；同時滿足兩組條件的最精確名稱是正方形。雖然正方形也屬於長方形、菱形和平行四邊形，但題目要求最精確類別。",
     "steps": [
-      "四等邊。",
-      "四直角。",
-      "兩條件合併為正方形。"
+      "由四邊等長辨認菱形性質。",
+      "由四角皆為直角辨認長方形性質。",
+      "合併兩項條件，選同時具有兩種性質的正方形。"
     ],
     "optionAnalysis": [
       {
@@ -445,7 +463,7 @@ export const QUESTIONS = [
         "reason": "過於一般。"
       }
     ],
-    "misconceptionTarget": "只選長方形或菱形而忽略最精確名稱。",
+    "misconceptionTarget": "只使用其中一項條件選長方形或菱形，沒有選最精確的正方形。",
     "prerequisiteCheck": "能辨認特殊四邊形。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度條件以 90° 表示，無計算。",
@@ -457,7 +475,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c7a05709456562c1de0940ba1e9e2e981ff42d4918e32e4a1c5a1931fc0139c4"
+    "contentSha256": "a266e8e99e5323882b1b21511e3ac6ff0e56b30b3309a90e8a0af1e6bb60db35"
   },
   {
     "questionId": "u08-s006-v004",
@@ -485,10 +503,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "第四角 80°，驗算總和 360°。",
-    "explanation": "使用四邊形內角和。",
+    "explanation": "四邊形內角和為三百六十度。三個已知角相加為 75°+110°+95°=280°，所以第四角為 360°−280°=80°；代回四角總和確為三百六十度，且八十度是合理的內角。",
     "steps": [
-      "前三角和 280°。",
-      "360−280=80°。"
+      "先將三個已知內角相加，得到 280°。",
+      "用四邊形內角和 360° 減去 280°。",
+      "得到第四角 80°，再把四角相加完成驗算。"
     ],
     "optionAnalysis": [
       {
@@ -512,7 +531,7 @@ export const QUESTIONS = [
         "reason": "這是三已知角總和，不是剩餘角。"
       }
     ],
-    "misconceptionTarget": "把已知角總和當答案。",
+    "misconceptionTarget": "把三角形內角和一百八十度套到四邊形，或只減去其中兩個角。",
     "prerequisiteCheck": "能做角度加減。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -524,7 +543,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "93fac70f58f568c664e4eed089582fb4f39044503ad26b5b698c5425913daed3"
+    "contentSha256": "392396589be2e326b2d1b34323eaff242718beb9aa231780829b9044d181a997"
   },
   {
     "questionId": "u08-s006-v005",
@@ -553,10 +572,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "相鄰角 112°，對角才為 68°。",
-    "explanation": "利用平行四邊形角性質。",
+    "explanation": "平行四邊形的相鄰內角互補，因此相鄰角與六十八度的總和為一百八十度。計算 180°−68°=112°，所以相鄰角是一百一十二度；六十八度會出現在對角位置，而不是相鄰位置。",
     "steps": [
-      "相鄰角和 180°。",
-      "180−68=112°。"
+      "辨認題目問的是平行四邊形的相鄰角。",
+      "使用鄰角互補，列出未知角加 68° 等於 180°。",
+      "相減得 112°，並以 68°+112°=180° 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -580,7 +600,7 @@ export const QUESTIONS = [
         "reason": "以 360° 減一角得到其餘三角總和。"
       }
     ],
-    "misconceptionTarget": "把對角相等誤用到鄰角。",
+    "misconceptionTarget": "把對角相等的性質誤用到相鄰角，直接回答六十八度。",
     "prerequisiteCheck": "能使用互補與平行四邊形性質。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -592,7 +612,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "cec1cd1ed8b50f7159b45d2c55630bb8bccdd14aeccdce87716ef94e70b17bb3"
+    "contentSha256": "1ff1f15b5e8f2da84d145129ce01178db005cf59238377096141814a9cbf0df4"
   },
   {
     "questionId": "u08-s006-v006",
@@ -621,10 +641,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "周長為 36 公分。",
-    "explanation": "由四等邊求周長。",
+    "explanation": "菱形四條邊都等長，已知其中一邊九公分，四邊便各為九公分。周長是邊界長度總和，所以 9×4=36 公分；平方公分是面積單位，不能用在本題的周長答案。",
     "steps": [
-      "四邊皆 9。",
-      "4×9=36。"
+      "由菱形定義確定四條邊都長九公分。",
+      "把四邊長相加，或計算 4×9。",
+      "得到三十六公分，並檢查答案使用長度單位。"
     ],
     "optionAnalysis": [
       {
@@ -648,7 +669,7 @@ export const QUESTIONS = [
         "reason": "只算三邊。"
       }
     ],
-    "misconceptionTarget": "把周長誤算成邊長平方。",
+    "misconceptionTarget": "把邊長平方當成周長，或只把兩條邊相加而少算另外兩邊。",
     "prerequisiteCheck": "能辨認周長與菱形四等邊。",
     "estimatedTimeSec": 90,
     "unitCheck": "周長使用一次方長度單位公分。",
@@ -660,7 +681,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c7bca7ed6eae051f2590169211d739b150e452e4b7ded3e4df088eba42e31313"
+    "contentSha256": "acb593b7b26c5367782ceb1093dcd8091306896376d7108876dfdfb1aba4d752"
   },
   {
     "questionId": "u08-s006-v007",
@@ -689,11 +710,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代回為 78°、102°，總和 180°。",
-    "explanation": "建立鄰角總和方程。",
+    "explanation": "平行四邊形相鄰內角互補，故 (3x+12)+(5x−8)=180。整理得 8x+4=180，8x=176，所以 x=22；代回兩角為七十八度與一百零二度，相加一百八十度且皆為正角，答案唯一。",
     "steps": [
-      "8x+4=180。",
-      "8x=176。",
-      "x=22。"
+      "以鄰角互補列出兩個角式的和等於 180°。",
+      "合併同類項得 8x+4=180，解得 x=22。",
+      "代回算出 78°、102°，驗證兩角互補。"
     ],
     "optionAnalysis": [
       {
@@ -717,7 +738,7 @@ export const QUESTIONS = [
         "reason": "鄰角互補，3x+12+5x−8=180，8x+4=180，x=22。"
       }
     ],
-    "misconceptionTarget": "把相鄰角設為相等。",
+    "misconceptionTarget": "把相鄰角設成相等，或展開負八時符號錯誤而得到其他數值。",
     "prerequisiteCheck": "能解一元一次方程。",
     "estimatedTimeSec": 90,
     "unitCheck": "x 無單位，角度為 °。",
@@ -729,7 +750,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d97464fef846f699a4240eb354e3e05a931cda4d6a8de0dfbdd4049a0afb04d6"
+    "contentSha256": "5de3269568a7a5b5e11a4f1f7580c4505c5b6c6ed3fda7badbc3267d5d2fd7cf"
   },
   {
     "questionId": "u08-s006-v008",
@@ -757,10 +778,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "單一平行組不足，其餘三組為常見充分判定條件。",
-    "explanation": "判定條件需足以排除非平行四邊形。",
+    "explanation": "只有一組對邊平行時，依臺灣教材可形成梯形，不能保證另一組也平行，所以不足以判定平行四邊形。其餘三項分別是定義、兩組對邊等長判定，以及一組對邊同時平行且等長判定，皆足以保證。",
     "steps": [
-      "檢查各條件是否可構造反例。",
-      "一組平行可構造一般梯形。"
+      "逐項比對平行四邊形的定義與常用充分判定。",
+      "確認只有一組對邊平行仍可能是梯形，無法推出第二組平行。",
+      "檢查其餘三項都能排除非平行四邊形，因此選第二項。"
     ],
     "optionAnalysis": [
       {
@@ -784,7 +806,7 @@ export const QUESTIONS = [
         "reason": "在一般凸四邊形中可保證為平行四邊形。"
       }
     ],
-    "misconceptionTarget": "把必要條件誤當充分條件。",
+    "misconceptionTarget": "誤以為出現任何一組平行邊就能判為平行四邊形，忽略第二組對邊。",
     "prerequisiteCheck": "能理解四邊形定義與反例。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位。",
@@ -796,7 +818,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "01dd5d6798bb9507e54e590cbf275622add24e4eb49429b6c3a9d9bc3e56c743"
+    "contentSha256": "5cc30da4cf6ea9a2aa79edfcf75f12732d8ea5916169a2eea3be3dd71ad4cd9d"
   },
   {
     "questionId": "u08-s006-v009",
@@ -820,38 +842,39 @@ export const QUESTIONS = [
       "每個正方形都是長方形",
       "每個長方形都是正方形",
       "每個菱形都有四個直角",
-      "每個梯形都沒有第二組平行邊"
+      "每個梯形的兩組對邊都互相平行"
     ],
     "answerIndex": 0,
-    "independentSolution": "正方形必為長方形，但逆敘述不成立。",
-    "explanation": "特殊圖形可同時屬於較一般類別。",
+    "independentSolution": "正方形有四個直角，符合長方形定義，所以第一項必然正確。依臺灣國中教材，梯形只有一組對邊平行，故第四項錯誤。",
+    "explanation": "正方形具有四個直角，因此一定同時是長方形。長方形不一定四邊等長，菱形不一定有直角；臺灣教材中的梯形只有一組對邊平行，不會有兩組對邊都平行。",
     "steps": [
-      "列正方形性質。",
-      "核對長方形定義。"
+      "逐一列出正方形、長方形、菱形與梯形的定義條件。",
+      "檢查正方形的四個直角，確認它一定符合長方形定義。",
+      "以非正方形的長方形、無直角的菱形與梯形定義排除其餘三項。"
     ],
     "optionAnalysis": [
       {
         "choice": "每個正方形都是長方形",
         "truth": true,
-        "reason": "正方形具有四個直角，符合長方形定義。"
+        "reason": "正方形的四個內角都是90°，完全符合長方形有四個直角的定義。"
       },
       {
         "choice": "每個長方形都是正方形",
         "truth": false,
-        "reason": "長方形不要求四邊等長。"
+        "reason": "長方形只要四角為直角，不要求四邊等長，所以可以不是正方形。"
       },
       {
         "choice": "每個菱形都有四個直角",
         "truth": false,
-        "reason": "菱形不一定有直角。"
+        "reason": "菱形要求四邊等長，但內角不一定是直角。"
       },
       {
-        "choice": "每個梯形都沒有第二組平行邊",
+        "choice": "每個梯形的兩組對邊都互相平行",
         "truth": false,
-        "reason": "這取決於梯形採狹義或廣義定義，不能一概而論。"
+        "reason": "臺灣國中教材定義梯形只有一組對邊平行，另一組對邊不平行。"
       }
     ],
-    "misconceptionTarget": "把分類名稱當互斥。",
+    "misconceptionTarget": "把正方形、長方形、菱形的包含關係當成互斥分類，或誤用廣義梯形定義。",
     "prerequisiteCheck": "能辨認長方形、菱形、正方形性質。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位。",
@@ -863,7 +886,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "8b9e8171bf83607d5d3e3e103b1d36959c7ed5310627cbc669b4c52385d17b21"
+    "contentSha256": "dfc9415912636a63254b4c7e68c2bf94d28ddf70fedf017c1d5eafd9e03163a9"
   },
   {
     "questionId": "u08-s006-v010",
@@ -893,10 +916,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "最精確的必然分類是長方形。",
-    "explanation": "規格的角與平行條件支持長方形。",
+    "explanation": "兩組對邊分別平行且四角都是九十度，完整符合長方形定義。正方形還必須四邊等長，題目未給；菱形也需四邊等長。因此最精確能保證的是長方形，不能由外觀自行補上等邊條件。",
     "steps": [
-      "核對四直角。",
-      "核對未給四等邊。"
+      "整理規格中的兩組對邊平行與四個直角。",
+      "用四角皆為直角判定此平行四邊形是長方形。",
+      "檢查題目未給四邊等長，排除必然為正方形或菱形。"
     ],
     "optionAnalysis": [
       {
@@ -920,7 +944,7 @@ export const QUESTIONS = [
         "reason": "兩組平行與四直角已足以更精確分類。"
       }
     ],
-    "misconceptionTarget": "把看似方正的窗框直接稱正方形。",
+    "misconceptionTarget": "看到四個直角就自行假設四邊等長，將一般長方形誤判為正方形。",
     "prerequisiteCheck": "能理解充分條件與資訊缺失。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示，無長度計算。",
@@ -932,7 +956,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1872218bef78d57e086bd0e483361940626f2c7bbcaa39309aaa097559171011"
+    "contentSha256": "6148eed6733d2ac295a5a27739bd3a9a41c898964414326545c615a7e6d8be0f"
   },
   {
     "questionId": "u08-s006-v011",
@@ -962,10 +986,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "菱形可有非直角內角，最符合規格。",
-    "explanation": "描述刻意排除正方形的必要角條件。",
+    "explanation": "四邊等長是菱形的核心條件，而內角不一定是直角正好說明它不必是正方形。長方形需要四個直角，梯形則只有一組對邊平行；因此在所列類別中，菱形最完整符合標示且不加入未給條件。",
     "steps": [
-      "抓出四等邊。",
-      "注意未保證直角。"
+      "由四邊等長先辨認菱形條件。",
+      "利用內角不一定為直角，確認不能保證是正方形或長方形。",
+      "比對各選項後選菱形，並保留它可有非直角內角的特性。"
     ],
     "optionAnalysis": [
       {
@@ -989,7 +1014,7 @@ export const QUESTIONS = [
         "reason": "四等邊已支持更精確的菱形分類。"
       }
     ],
-    "misconceptionTarget": "認為四邊等長必為正方形。",
+    "misconceptionTarget": "把所有四邊等長圖形都視為正方形，忽略正方形還要四個直角。",
     "prerequisiteCheck": "能區分菱形與正方形。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位。",
@@ -1001,7 +1026,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "904f45ab2b4fa6fda6cc5540af3e87e5f6cbc95606865286887982172d2effb8"
+    "contentSha256": "d08eaa9b47b12989fac5dcdbb35195e537aba7df96c1b9273d126caefab2ab6e"
   },
   {
     "questionId": "u08-s006-v012",
@@ -1016,7 +1041,7 @@ export const QUESTIONS = [
     "figureId": null,
     "drawingSpecRef": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_U08_LOCKED_TEXT_ONLY",
-    "text": "一個四邊形標誌的三角量測為 88°、92°、88°，且已知它是平行四邊形。第四角及最可能的角關係為何？",
+    "text": "一個四邊形標誌的三角量測為 88°、92°、88°，且已知它是平行四邊形。第四角及必然成立的角關係為何？",
     "givenConditions": [
       "圖形已知為平行四邊形。",
       "三角依序 88°、92°、88°。"
@@ -1030,11 +1055,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "第四角 92°，四角交替且鄰角互補。",
-    "explanation": "同時使用內角和與平行四邊形性質。",
+    "explanation": "三個已知內角和為 88°+92°+88°=268°，第四角為 360°−268°=92°。已知圖形是平行四邊形，所以對角必相等、相鄰角必互補；四角依序八十八、九十二、八十八、九十二，唯一必然成立的是第四項。",
     "steps": [
-      "前三角和 268°。",
-      "第四角 92°。",
-      "核對對角 88=88、92=92。"
+      "先用四邊形內角和算出第四角為 92°。",
+      "依平行四邊形對角相等，配對兩個 88° 與兩個 92°。",
+      "再檢查每對相鄰角和為 180°，排除其餘三項。"
     ],
     "optionAnalysis": [
       {
@@ -1058,7 +1083,7 @@ export const QUESTIONS = [
         "reason": "第四角=360−88−92−88=92°；角序列 88、92、88、92，對角相等。"
       }
     ],
-    "misconceptionTarget": "只算第四角而不檢查對角關係。",
+    "misconceptionTarget": "只補出第四角卻不檢查必然角關係，或把相鄰角誤判成相等。",
     "prerequisiteCheck": "能使用四邊形內角和與平行四邊形性質。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -1070,7 +1095,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4d99be3ba482a611a311524e8868d326a49f732535ad8b7c2b48b4c8ae6dec4b"
+    "contentSha256": "e48bf3bb7715b8fd474087d2af81e252d73788bba971ee759eb8be51b470a2cd"
   }
 ];
 
@@ -1094,18 +1119,18 @@ export const CONSTRUCTED_RESPONSES = [
       "寫出四角排列與對角相等。"
     ],
     "standardSolution": [
-      "(4x+8)+(2x+28)=180，得6x+36=180，x=24。",
-      "兩相鄰角為104°與76°。",
-      "平行四邊形對角相等，所以四角依序為104°、76°、104°、76°。"
+      "平行四邊形相鄰內角互補，因此列 (4x+8)+(2x+28)=180。整理為 6x+36=180，得到 6x=144，所以 x=24。",
+      "代回第一角為 4×24+8=104°，第二角為 2×24+28=76°；兩角相加為一百八十度。",
+      "平行四邊形對角相等，故四個內角依序為 104°、76°、104°、76°，總和三百六十度。"
     ],
     "alternativeMethods": [
       "可先利用四邊形內角和與兩對對角相等，列2(4x+8)+2(2x+28)=360。"
     ],
     "reasoningSteps": [
-      "辨認平行四邊形鄰角互補。",
-      "解x=24。",
-      "代回求104與76。",
-      "用對角相等補齊四角。"
+      "辨認兩個角相鄰，使用平行四邊形鄰角互補。",
+      "建立並解一元一次方程，求得 x=24。",
+      "將 x 代回兩個角式，求出 104° 與 76°。",
+      "以對角相等補齊四角，並用內角和驗算。"
     ],
     "rubric": [
       {
@@ -1132,8 +1157,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "x無單位；角度附°。",
     "answerOnlyPolicy": "只答x=24最高1分；只列四角無推導最高2分。",
     "commonErrors": [
-      "列4x+8=2x+28。",
-      "把對角相等誤寫成四角都相等。"
+      "把相鄰角誤當成對角相等，列成 4x+8=2x+28。",
+      "解得 x 後只寫兩個角，沒有依對角相等補齊另外兩角。",
+      "代回時漏算常數八或二十八，導致兩個相鄰角不再互補。"
     ],
     "independentReview": {
       "derivedResult": "x=24；四角交替104°與76°。",
@@ -1149,7 +1175,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "0bacc230ebc292e818c1333ab5f00f442c44de3c63c26f5e218711b27ecf3a33"
+    "contentSha256": "6dde9523bd876f7ed4721ace209426d1f7924300d90292b2ee6001b94b17b09f"
   },
   {
     "questionId": "u08-s006-cr002",
@@ -1234,7 +1260,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v001",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "641cf60ee15224607674899e587f39ace3477703169e470432239b57fec5e21c",
+    "contentSha256": "af0a555bb495c4993fbbfd508b8e6c3e936097babb72d0a2bf0e273c29de13b9",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由兩個三角形總和重新推得 360°。",
@@ -1269,7 +1295,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v002",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "f382fe41495203ccfe094f09a90949fd8b7134593add7cb4c275b88b61cb1643",
+    "contentSha256": "0e1589edf529ee8dca80e029defec0f43f4e5ea448eeb43c0ad905fbf808d2ec",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立比對各類別的必要條件，只有平行四邊形直接且完整符合兩組對邊平行。",
@@ -1304,7 +1330,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v003",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "c7a05709456562c1de0940ba1e9e2e981ff42d4918e32e4a1c5a1931fc0139c4",
+    "contentSha256": "a266e8e99e5323882b1b21511e3ac6ff0e56b30b3309a90e8a0af1e6bb60db35",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "逐層分類後最精確為正方形。",
@@ -1339,7 +1365,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v004",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "93fac70f58f568c664e4eed089582fb4f39044503ad26b5b698c5425913daed3",
+    "contentSha256": "392396589be2e326b2d1b34323eaff242718beb9aa231780829b9044d181a997",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立重算 75+110+95=280，餘 80。",
@@ -1374,7 +1400,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v005",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "cec1cd1ed8b50f7159b45d2c55630bb8bccdd14aeccdce87716ef94e70b17bb3",
+    "contentSha256": "1ff1f15b5e8f2da84d145129ce01178db005cf59238377096141814a9cbf0df4",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "回查四角為 68、112、68、112。",
@@ -1409,7 +1435,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v006",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "c7bca7ed6eae051f2590169211d739b150e452e4b7ded3e4df088eba42e31313",
+    "contentSha256": "acb593b7b26c5367782ceb1093dcd8091306896376d7108876dfdfb1aba4d752",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立加總 9+9+9+9=36。",
@@ -1444,7 +1470,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v007",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "d97464fef846f699a4240eb354e3e05a931cda4d6a8de0dfbdd4049a0afb04d6",
+    "contentSha256": "5de3269568a7a5b5e11a4f1f7580c4505c5b6c6ed3fda7badbc3267d5d2fd7cf",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立回代兩角，符合平行四邊形鄰角性質。",
@@ -1479,7 +1505,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v008",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "01dd5d6798bb9507e54e590cbf275622add24e4eb49429b6c3a9d9bc3e56c743",
+    "contentSha256": "5cc30da4cf6ea9a2aa79edfcf75f12732d8ea5916169a2eea3be3dd71ad4cd9d",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "反例為只有上下底平行、兩腰不平行的梯形。",
@@ -1514,10 +1540,10 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v009",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "8b9e8171bf83607d5d3e3e103b1d36959c7ed5310627cbc669b4c52385d17b21",
+    "contentSha256": "dfc9415912636a63254b4c7e68c2bf94d28ddf70fedf017c1d5eafd9e03163a9",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-    "independentSolution": "以非正方形長方形與非正方形菱形作反例排除其他敘述。",
+    "independentSolution": "正方形有四個直角，符合長方形定義；非正方形的長方形、無直角的菱形與只一組對邊平行的梯形均可排除其餘項。",
     "derivedAnswer": "每個正方形都是長方形",
     "storedAnswer": "每個正方形都是長方形",
     "answerMatch": true,
@@ -1529,27 +1555,27 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "逐一代回題意後，只有「每個正方形都是長方形」符合目標「判斷特殊四邊形包含關係」。其餘選項分別違反：長方形不要求四邊等長。；菱形不一定有直角。；這取決於梯形採狹義或廣義定義，不能一概而論。",
-      "undefinedSymbol": "題幹中的符號與名詞均屬技能「四邊形基本性質」講義已定義範圍；本題特別使用：採長方形四直角、正方形四等邊四直角的定義。",
-      "unitConflict": "本題不涉及數值單位。",
-      "roundingConflict": "全部資料為精確值，不涉及四捨五入。",
-      "domainBoundary": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-      "alternateReading": "已以所求量「判斷特殊四邊形包含關係」重新讀題，並針對誤解「把分類名稱當互斥。」排除另一解讀。"
+      "secondCorrectAnswer": "依臺灣國中教材的梯形定義，梯形只有一組對邊平行，所以第四項錯誤；其餘兩項也各有反例，只有第一項必然正確。",
+      "undefinedSymbol": "題幹所用的正方形、長方形、菱形與梯形均由本技能講義依臺灣國中教材明確定義，沒有未定義符號。",
+      "unitConflict": "本題判斷圖形定義與包含關係，不涉及數值單位。",
+      "roundingConflict": "本題沒有近似值或四捨五入。",
+      "domainBoundary": "只使用 U08 的特殊四邊形定義與包含關係。",
+      "alternateReading": "梯形的定義已在講義固定為『只有一組對邊平行』，不採用至少一組對邊平行的廣義讀法，因此不產生另一答案。"
     },
     "difficultyReason": "需判斷命題方向與反例。",
     "literacyContextNecessity": null,
     "prerequisiteCheck": "能辨認長方形、菱形、正方形性質。",
     "languageCheck": "題幹明示必要條件與所求量；關鍵詞為「判斷特殊四邊形包含關係」，沒有依未提供圖形或比例推論。",
     "reviewerDecision": "pass",
-    "reviewerNote": "獨立重算：以非正方形長方形與非正方形菱形作反例排除其他敘述。 正確選項為「每個正方形都是長方形」。四選項逐項核對後真值序列為 [True, False, False, False]；邊界檢查：只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+    "reviewerNote": "正方形有四個直角，符合長方形定義；非正方形的長方形、無直角的菱形與只一組對邊平行的梯形均可排除其餘項。正方形四角都是直角，所以必然符合長方形定義。長方形不必四邊等長，菱形不必有直角；臺灣國中教材的梯形只有一組對邊平行，不是兩組都平行。因此真值唯一為第一項。",
     "reviewedAt": "2026-07-12",
-    "reviewSha256": "45dac4cb32ffd970236f18e143ba3db4498ba076214c391d64722a06fc5a4072"
+    "reviewSha256": "949102d84d42905abc295c2008991081c79ac9c8b9990bb088c04116a0ef7ed5"
   },
   {
     "questionId": "u08-s006-v010",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "1872218bef78d57e086bd0e483361940626f2c7bbcaa39309aaa097559171011",
+    "contentSha256": "6148eed6733d2ac295a5a27739bd3a9a41c898964414326545c615a7e6d8be0f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "可存在長寬不同的窗框，說明不能保證正方形。",
@@ -1584,7 +1610,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v011",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "904f45ab2b4fa6fda6cc5540af3e87e5f6cbc95606865286887982172d2effb8",
+    "contentSha256": "d08eaa9b47b12989fac5dcdbb35195e537aba7df96c1b9273d126caefab2ab6e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "正方形是特殊菱形，但題意不保證直角，故一般分類為菱形。",
@@ -1619,7 +1645,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s006-v012",
     "unitId": "u08",
     "skillId": "quadrilateral-basic",
-    "contentSha256": "4d99be3ba482a611a311524e8868d326a49f732535ad8b7c2b48b4c8ae6dec4b",
+    "contentSha256": "e48bf3bb7715b8fd474087d2af81e252d73788bba971ee759eb8be51b470a2cd",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立重算總和與對角位置，結論一致。",
@@ -1634,21 +1660,21 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "逐一代回題意後，只有「92°，對角分別相等」符合目標「依實測角度驗證平行四邊形角關係」。其餘選項分別違反：總和會是 356°，且不是所有平行四邊形四角相等。；88° 與 92° 的相鄰角不相等。；四邊形內角不能以此形成正常封閉標誌。",
-      "undefinedSymbol": "題幹中的符號與名詞均屬技能「四邊形基本性質」講義已定義範圍；本題特別使用：圖形已知為平行四邊形。",
-      "unitConflict": "角度單位一致。",
-      "roundingConflict": "全部資料為精確值，不涉及四捨五入。",
-      "domainBoundary": "只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
-      "alternateReading": "已以所求量「依實測角度驗證平行四邊形角關係」重新讀題，並針對誤解「只算第四角而不檢查對角關係。」排除另一解讀。"
+      "secondCorrectAnswer": "逐項代入後，只有第四項同時給出第四角九十二度與平行四邊形對角分別相等；其餘選項違反內角和或鄰角互補，因此沒有第二個正確答案。",
+      "undefinedSymbol": "題幹明示三個數值都是依序量得的內角，且圖形已知為平行四邊形；沒有未定義符號或未標示角的位置。",
+      "unitConflict": "四個角度都以度為單位，角關係比較沒有單位衝突。",
+      "roundingConflict": "所有量測值在題目中作為精確角度使用，不涉及近似或四捨五入。",
+      "domainBoundary": "只使用四邊形內角和、平行四邊形對角相等與鄰角互補，不依未提供的圖形外觀推論。",
+      "alternateReading": "題幹經 semantic correction 明確問『必然成立的角關係』，不是依外觀猜測最可能關係；第四項是唯一由已知條件必然推出的敘述。"
     },
     "difficultyReason": "驗收情境要求計算及結構一致性雙重判斷。",
     "literacyContextNecessity": "標誌驗收不只補出缺角，也要確認量測是否符合平行四邊形對角相等與鄰角互補。",
     "prerequisiteCheck": "能使用四邊形內角和與平行四邊形性質。",
-    "languageCheck": "題幹明示必要條件與所求量；關鍵詞為「依實測角度驗證平行四邊形角關係」，沒有依未提供圖形或比例推論。",
+    "languageCheck": "題幹使用『必然成立』固定判定強度，答案須同時符合精確角度與平行四邊形性質，沒有機率或外觀推測語意。",
     "reviewerDecision": "pass",
-    "reviewerNote": "獨立重算：獨立重算總和與對角位置，結論一致。 正確選項為「92°，對角分別相等」。四選項逐項核對後真值序列為 [False, False, False, True]；邊界檢查：只使用 U08 鎖定技能與題幹明示條件，不依示意圖外觀推論。",
+    "reviewerNote": "獨立重算：獨立重算總和與對角位置，結論一致。 三個已知角和為二百六十八度，所以第四角必為九十二度；四角依序交替為八十八度與九十二度，對角分別相等且鄰角互補。修正後題幹問必然成立的角關係，只有第四項符合，真值序列為 [false,false,false,true]。",
     "reviewedAt": "2026-07-12",
-    "reviewSha256": "c2848fd0455fb6a776efa5faf4108e80f75543f7e3aa269c77125a9b21baa14f"
+    "reviewSha256": "f5fc1d0c7664273cf93f27a7134ff68c4c132db2350167148a69a1761d2aaa49"
   }
 ];
 

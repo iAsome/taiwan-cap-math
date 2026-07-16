@@ -1,0 +1,864 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u23",
+  "batch": "024-u23-complete",
+  "skills": ["s008", "s009", "s010", "s011", "s012", "s013", "s014"],
+  "mc": [
+    {
+      "questionId": "u23-s008-v001",
+      "expectedContentSha256": "b2559a54189afd62287d1d6656ffa6269422c37c1e41900bf0ddbdfd5bccc9af",
+      "appendText": {"explanation": "通過旋轉軸的平面同時切到上下底圓的直徑與兩條互相平行的母線，所以四個截面邊形成長方形，而不是底面圓或側面展開扇形。"},
+      "appendArray": {"steps": ["核對兩條直徑互相平行且都垂直於兩條母線，因此截面為長方形。"]}
+    },
+    {
+      "questionId": "u23-s008-v002",
+      "expectedContentSha256": "f68a9a5bd574c1e868856ddfd71367e9f9b28d6c7adfc88537e0704cd3e8550a",
+      "appendText": {"explanation": "切面含圓錐軸時一定通過頂點，兩側截線是等長母線，底邊則是底圓直徑，因此所得三角形左右對稱且為等腰三角形。"},
+      "appendArray": {"steps": ["由兩條母線等長且會聚於頂點，確認截面是等腰三角形。"]}
+    },
+    {
+      "questionId": "u23-s008-v003",
+      "expectedContentSha256": "3db94be4aa8dea0fc84ffdab2952e62dba8926fcf76baee8e170d28c42e33600",
+      "appendText": {"explanation": "球面上所有點到球心距離固定；切面內各交點到球心在切面上的垂足距離相同，所以非退化交集必為圓，橢圓只是透視外觀。"},
+      "appendArray": {"steps": ["以球心到切面的垂足為截面圓心，確認所有交點等距。"]}
+    },
+    {
+      "questionId": "u23-s008-v004",
+      "expectedContentSha256": "e3502bc8a92cc516c20a84892971ceb7b65aae0910cde2131991287964329627",
+      "appendText": {"explanation": "在四個選項中，只有直圓柱沿著與底面平行的方向具有半徑固定的圓形截面；圓錐會單向縮放，球則先增大後減小。"},
+      "appendArray": {"steps": ["逐一排除截面會縮放的圓錐、球與角錐，留下直圓柱。"]}
+    },
+    {
+      "questionId": "u23-s008-v005",
+      "expectedContentSha256": "1b0567646cc9da0611e264d460fab640ed0d8f3f67a32a41ab5a08dc9427abd6",
+      "appendText": {"explanation": "切面離球心越近，截面半徑越大；到球心時成為大圓，越過球心後依對稱性反向縮小，直到另一端退化為一點。"}
+    },
+    {
+      "questionId": "u23-s008-v006",
+      "expectedContentSha256": "bb9008f2e5951cda294ab1f4e5f1e3d10ba54d64ec2c687a5322d746ba69007a",
+      "appendText": {"explanation": "平行圓柱底面、平行圓錐底面或切過球內部都能得到圓，因此單一截面只提供必要線索，還要知道切片方向與大小變化才能唯一判定。"},
+      "appendArray": {"steps": ["確認至少三種候選都能產生圓截面，所以資訊不足以唯一反推。"]}
+    },
+    {
+      "questionId": "u23-s008-v007",
+      "expectedContentSha256": "58a69cc44e54103f2a511f81457689e1f2872b529135348b4c35565da91726b9",
+      "appendText": {"explanation": "一般位置下，截面邊界每跨過一條被切稜就產生一個不同交點；切過六條不同稜時最多有六個頂點，所以可形成六邊形。"},
+      "appendArray": {"steps": ["以六個交稜點依截面邊界順序連接，最多得到六條邊。"]}
+    },
+    {
+      "questionId": "u23-s008-v008",
+      "expectedContentSha256": "7ffa5b290242ce9385285dd42d5f02422be444aa366f3736f7739b695d759ab4",
+      "appendArray": {"steps": ["取正平方根得到8公分，並以8小於球半徑10檢查合理性。"]},
+      "appendText": {"explanation": "球心、切面垂足與截面圓上一點形成直角三角形，斜邊是球半徑10，兩股為6與截面半徑，故半徑平方為100減36。", "misconceptionTarget": "半徑差只是一段線性距離，並非直角三角形另一股，必須使用畢氏定理。"}
+    },
+    {
+      "questionId": "u23-s008-v009",
+      "expectedContentSha256": "d0ce957168325ffb92fa5b0f94a379d9f87314fd5fabb5964f2b1d590004ef0d",
+      "appendText": {"explanation": "圓錐中平行底面的截面與底面相似，距頂點高度比等於半徑比；高度為一比二時半徑為一比二，圓面積須將比例平方。"},
+      "appendArray": {"steps": ["將半徑比平方成1²：2²，得到截面面積比1：4。"]}
+    },
+    {
+      "questionId": "u23-s008-v010",
+      "expectedContentSha256": "346cd39a62ff385919596e67faeacbb64a8555ed9f769fd082e07cb4fa6567df",
+      "appendText": {"explanation": "球形物體的切片半徑由球心到切面的距離決定，距離為零時半徑等於球半徑，因此通過球心的影像面積最大。"},
+      "appendArray": {"steps": ["把最大半徑代入圓面積與半徑平方的關係，鎖定球心切片。"]}
+    },
+    {
+      "questionId": "u23-s008-v011",
+      "expectedContentSha256": "771fa7484715ed0bb841cccf8fc7d79a4d6dc50958748092fea3a36154e990a9",
+      "appendText": {"explanation": "理想圓錐在同一軸向由頂端往底部等距切片時，半徑應隨距頂點線性增加；若沒有此趨勢，切面可能未平行底面或零件並非理想圓錐。"},
+      "appendArray": {"steps": ["將觀察結果與理想線性增長比較，判定應檢查切法或零件外形。"]}
+    },
+    {
+      "questionId": "u23-s008-v012",
+      "expectedContentSha256": "f58be8d3c59d95245de3d99d54abbb6ad7edf64655d1344e2ca40b8ef6a61eae",
+      "appendText": {"explanation": "需求是沿整段高度的水平圓形截面大小都相同，等價於半徑不隨高度改變；四個選項中只有直圓柱滿足此條件。"},
+      "appendArray": {"steps": ["檢查球、圓錐與半球的截面半徑都會改變，因此排除。"]}
+    },
+    {
+      "questionId": "u23-s009-v001",
+      "expectedContentSha256": "bd8637e08f7ab73bd1454465eca244df89219db8b524e0699009cddd1494fa31",
+      "appendText": {"explanation": "長方體有長寬、長高、寬高三種相對面，每種各有兩面；所以先算24、18、12，再把總和54乘二得到108平方公分。"},
+      "appendArray": {"steps": ["加總24+18+12=54後乘2，並確認使用平方單位。"]}
+    },
+    {
+      "questionId": "u23-s009-v002",
+      "expectedContentSha256": "b21f206d485362d843192b5610fc0827c421747d2fea9e0a77846c94c188d89a",
+      "appendText": {"explanation": "把各側面沿底面邊依序攤開後，所有側面寬度總和正好是底面周長14，高均為5，因此側面帶面積是14乘5。"},
+      "appendArray": {"steps": ["確認題目只問側面積，不需再加任何底面面積。"]}
+    },
+    {
+      "questionId": "u23-s009-v003",
+      "expectedContentSha256": "f9121d194bfcc00a7e886d2522d28d0035c291cc37f0010068caedcc64796ac0",
+      "appendText": {"explanation": "兩個底圓合計為2π×2²=8π，曲側面展開後面積為圓周4π乘高7得28π；完整圓柱需將兩部分相加為36π平方公分。"}
+    },
+    {
+      "questionId": "u23-s009-v004",
+      "expectedContentSha256": "48be0466eeccba0989d5c3f9e695a7b127e8cbafa9a4130062acaaabc082e5d9",
+      "appendText": {"explanation": "無上蓋容器仍有一個4×4底面，四個側面形成底面周長16乘高6的側面帶；16加96等於112平方公分。"}
+    },
+    {
+      "questionId": "u23-s009-v005",
+      "expectedContentSha256": "7f53d9f85e7c743618d423c88e012340b300d5c3057191c8c66abef3b52744c9",
+      "appendText": {"explanation": "三角形底面積為3×4÷2=6，兩底共12；側面積使用底面周長3+4+5=12乘柱高10得120，總和為132平方公分。"}
+    },
+    {
+      "questionId": "u23-s009-v006",
+      "expectedContentSha256": "dfed566b7071bf0c2b032bbb79035f066f64afc614b617bcb787cc293fe7886a",
+      "appendText": {"explanation": "紙筒沒有上下底，只保留曲側面；直徑8使底圓周為8π，展開長方形另一邊為高15，所以紙張面積是120π平方公分。"},
+      "appendArray": {"steps": ["依沒有上、下底的條件排除所有底圓面積。"]}
+    },
+    {
+      "questionId": "u23-s009-v007",
+      "expectedContentSha256": "ce50a93280264f479d4cb921fcdadaa502fd4e8ef369de08b3dcfe7aacaed7ad",
+      "appendText": {"explanation": "完整直角柱的兩底面共2×24=48平方公分，從總表面積158扣除後側面積為110；側面積等於周長22乘高，因此高為5公分。"}
+    },
+    {
+      "questionId": "u23-s009-v008",
+      "expectedContentSha256": "9cfb01c184fb06f806c4115461bec63724140b190884b9e72d10f94c233b501a",
+      "appendText": {"explanation": "兩個6×4底面合計48，四個側面合計為2(6+4)h=20h；由48+20h=148得到20h=100，所以h=5公分。這個分拆也清楚顯示未知高度只出現在四個側面，不會改變上下底面積。", "misconceptionTarget": "應先列兩底與四側面的面積方程，不能用長乘寬乘高的體積公式反求。"},
+      "appendArray": {"steps": ["檢查h=5代回表面積方程確實得到148。"]}
+    },
+    {
+      "questionId": "u23-s009-v009",
+      "expectedContentSha256": "58d10a7f6d0f653e6dbc162e8f3f5c9eb662c1743db1f22ef728b40aeb2ced10",
+      "appendText": {"explanation": "高等於半徑時，兩底面積是2πr²，曲側面積2πr×r也是2πr²，因此總面積4πr²=36π，取正半徑r=3公分。幾何長度不能取負值，所以平方根只保留正值。"}
+    },
+    {
+      "questionId": "u23-s009-v010",
+      "expectedContentSha256": "09bbe723a4f3040255b9f7151327833adea4c8cb8302e119dff7dabf571e534b",
+      "appendText": {"explanation": "無上蓋盒材料包含底面600與兩組側面720、480，合計1800平方公分；再乘每平方公分0.08元，得到144元。"}
+    },
+    {
+      "questionId": "u23-s009-v011",
+      "expectedContentSha256": "7cd41af4c6521b68d35e8cc0b50af529a539e6c1cf5503e6e38d236c1a068594",
+      "appendText": {"explanation": "曲側面為2π×2×5=20π平方公尺，上底為π×2²=4π；題意明確排除底部，所以粉刷面積只加這兩部分得24π。列面清單可避免把完整封閉外形誤當成全部都要粉刷。"}
+    },
+    {
+      "questionId": "u23-s009-v012",
+      "expectedContentSha256": "77d40bf34609331aab629a0f646a52ba7d29712cfb06ef8a246c1aa7c28ed532",
+      "appendText": {"explanation": "四側面展開成底面周長32乘高15的長方形，印刷面積為480平方公分；480÷100=4.8，依不足一單位仍計價須進位成5單位。"}
+    },
+    {
+      "questionId": "u23-s010-v001",
+      "expectedContentSha256": "1985be836b3ffe0a3989171ea62307551aebe6b9d4778ad1b14936a8852fff71",
+      "appendText": {"explanation": "直角柱可視為底面積16平方公分的全等薄片沿垂直高9公分堆疊，因此體積V=Bh=16×9=144立方公分。"},
+      "appendArray": {"steps": ["辨認單一底面積B=16平方公分。", "套用V=Bh並寫成立方公分。"]}
+    },
+    {
+      "questionId": "u23-s010-v002",
+      "expectedContentSha256": "e38c5fb23b720250573acfd7df6af552f02d4db8dcaaa1c16220e0b88ab963cb",
+      "appendText": {"explanation": "長與寬先形成底面積8×5=40平方公分，再乘垂直高3公分，得到40×3=120立方公分；不能只停在底面積。"},
+      "appendArray": {"steps": ["確認三個互相垂直方向都已相乘且單位為立方公分。"]}
+    },
+    {
+      "questionId": "u23-s010-v003",
+      "expectedContentSha256": "0f40fd810ba082178e304f2a3d3a083d5dbc0d8622d6bbc8f6eb5d8828cf3e19",
+      "appendText": {"explanation": "底圓面積必須用πr²，所以半徑4先平方為16，形成16π平方公分；再乘高6得到96π立方公分。若誤用圓周長，所得量會是面積而不是三維空間容量。", "misconceptionTarget": "圓周長只描述底面邊界，體積需用整個底圓面積πr²再乘垂直高。"},
+      "appendArray": {"steps": ["以πr²求底面積16π。", "乘垂直高6並確認答案為96π立方公分。"]}
+    },
+    {
+      "questionId": "u23-s010-v004",
+      "expectedContentSha256": "877a2432071be361dba24709be2f911b728f8f297ffe3fc7686c593faa8107cb",
+      "appendText": {"explanation": "先用10×6÷2求出三角形底面積30平方公分，再乘柱體垂直高8公分，體積為240立方公分；三角形底面只算一次。"},
+      "appendArray": {"steps": ["檢查答案240小於未除以2所得480，符合三角形底面。"]}
+    },
+    {
+      "questionId": "u23-s010-v005",
+      "expectedContentSha256": "8916daec64581e3fb373534ee50422418f66792729e01c79a4504e7efc6e9bf9",
+      "appendText": {"explanation": "由柱體公式V=Bh反求底面積時，應將體積360立方公分除以高12公分，得到30平方公分，量綱也由立方除長度變成平方。"},
+      "appendArray": {"steps": ["把V=Bh改寫成B=V÷h。", "計算360÷12並核對平方公分單位。"]}
+    },
+    {
+      "questionId": "u23-s010-v006",
+      "expectedContentSha256": "1a487337abaaa453d75a2ce44cb56f98da25f8c467663fd3b81f37f33202cc4e",
+      "appendText": {"explanation": "半徑5使底圓面積為25π平方公分；由V=Bh反求高度，200π÷25π=8公分，π約去後仍須保留長度單位。把八代回原式可重新得到題目的體積，完成反向核對。"},
+      "appendArray": {"steps": ["將h=8代回25π×8，驗得原體積200π。"]}
+    },
+    {
+      "questionId": "u23-s010-v007",
+      "expectedContentSha256": "d2ef706636123080b198f68074dfd80460bc346ce086757dfa231ad8e241ff00",
+      "appendText": {"explanation": "斜角柱體積仍為底面積乘兩底面間的垂直距離；斜側稜10不是高，因此使用35×8=280立方公分。", "misconceptionTarget": "斜側稜連接對應頂點但不垂直底面，體積公式的高只能取兩底面間垂直距離。"},
+      "appendArray": {"steps": ["排除斜側稜10後，以垂直距離8代入體積公式。"]}
+    },
+    {
+      "questionId": "u23-s010-v008",
+      "expectedContentSha256": "150e740a3b67f0435ff3e1c04c51b0134890a61daafe2165c99fccd2bdcca5c4",
+      "appendText": {"explanation": "柱體體積比等於底面積比乘高度比，所以兩者體積比為3×4：5×3=12：15，再同除以3化成4：5。底面與高度分屬不同因素，不能只比較其中一個比例。"}
+    },
+    {
+      "questionId": "u23-s010-v009",
+      "expectedContentSha256": "cab72dfa2357fba94dbbb29928ba3171f0cf5884d0cfeccb11809858a64b18d8",
+      "appendText": {"explanation": "長與寬各變成兩倍，使底面積變成2×2=4倍；高度倍率為1，所以總體積倍率為4×1=4，不能把倍率相加。"},
+      "appendArray": {"steps": ["確認只有兩個水平方向加倍，高度沒有改變。"]}
+    },
+    {
+      "questionId": "u23-s010-v010",
+      "expectedContentSha256": "83e846fd3214440c40f76483d0bc16bd8c978d0b24b702831bd798cda61e59aa",
+      "appendText": {"explanation": "30公升先換成30000立方公分，水槽內部底面積為50×40=2000平方公分；水深等於體積除底面積，所以是15公分。"}
+    },
+    {
+      "questionId": "u23-s010-v011",
+      "expectedContentSha256": "e7329bc8ecc421626c191a311308df28387a19be6fe59faf0334f72f69a36153",
+      "appendText": {"explanation": "金屬棒長2公尺須先換成200公分，體積為18×200=3600立方公分；乘密度7.5得27000公克，再換成27公斤。"}
+    },
+    {
+      "questionId": "u23-s010-v012",
+      "expectedContentSha256": "14978e0130596998634d63224d02409559becc7c56ad0033ba75b22c7a6a2fc6",
+      "appendText": {"explanation": "液面高度是3×0.8=2.4公尺，液體體積為3.14×1²×2.4=7.536立方公尺；每立方公尺1000公升，故為7536公升。"}
+    },
+    {
+      "questionId": "u23-s011-v001",
+      "expectedContentSha256": "e4e8d05ee9a87528352b66f59ae9f40bf427b377d5d7c830a5360a06c98354de",
+      "appendText": {"explanation": "角錐體積是同底等高角柱的三分之一，因此先算底面積21乘垂直高12得252，再除以3得到84立方公分。"},
+      "appendArray": {"steps": ["確認題型為角錐，將同底等高柱體體積除以3。"]}
+    },
+    {
+      "questionId": "u23-s011-v002",
+      "expectedContentSha256": "54801453ae31057451495dc7be43495a99fbeecfad1c69336c5a8c32a28b4e71",
+      "appendText": {"explanation": "底圓面積為π×3²=9π，乘高10得到同底等高圓柱體積90π；圓錐只占三分之一，所以體積為30π立方公分。最後的立方單位也反映底面積再乘高度的量綱。"},
+      "appendArray": {"steps": ["套用V=πr²h÷3並保留π的精確表示。"]}
+    },
+    {
+      "questionId": "u23-s011-v003",
+      "expectedContentSha256": "4d3dde11e6d0f50baeb5e9a644ac2fbed102d5656310feaf99a0cdcd128d27b1",
+      "appendText": {"explanation": "同底等高是使用三分之一關係的必要條件；角柱體積180除以3得60立方公分，反向乘3也會回到180。"},
+      "appendArray": {"steps": ["辨認角柱與角錐同底且等高。", "將角柱體積180除以3並驗算。"]}
+    },
+    {
+      "questionId": "u23-s011-v004",
+      "expectedContentSha256": "873f2204801aa8f6b526a599b1264ea77bc7b567c20bdcc7fe6f3216c637713f",
+      "appendText": {"explanation": "由V=Bh÷3可改寫為h=3V÷B；將體積120先乘3得360，再除以底面積30，得到垂直高12公分。反求時先乘三正是補回錐體公式的三分之一係數，不能只算體積除底面積。"},
+      "appendArray": {"steps": ["以30×12÷3=120代回，確認高度正確。"]}
+    },
+    {
+      "questionId": "u23-s011-v005",
+      "expectedContentSha256": "803007a600b15b5bd19b4616787ab794b0b7cf6b2ed7fdd638286e04c2a1ad28",
+      "appendText": {"explanation": "正方形底面邊長6，底面積不是6而是6²=36平方公分；再乘垂直高5並除以3，體積為60立方公分。底邊長與底面積的量綱不同，必須先完成平方計算。"},
+      "appendArray": {"steps": ["檢查60是同底等高角柱體積180的三分之一。"]}
+    },
+    {
+      "questionId": "u23-s011-v006",
+      "expectedContentSha256": "7967cde51bfe11a7c617ac275d743e90e3139650e022fd4dd9787241ab8a6b1c",
+      "appendText": {"explanation": "題目給直徑12，須先除以2得到半徑6；底面積為36π，乘高9再除以3，得到108π立方公分。若把直徑直接平方，底面積與體積都會被放大成正確值的四倍。"},
+      "appendArray": {"steps": ["以半徑6而非直徑12代入πr²，避免體積放大四倍。"]}
+    },
+    {
+      "questionId": "u23-s011-v007",
+      "expectedContentSha256": "52c4789c88f6b512c1ef54a97e5f5f5a92fc8e8d67309a2ad7e6efe318962a5d",
+      "appendText": {"explanation": "軸截面的一半形成斜邊13、底邊5的直角三角形，垂直高為√(13²−5²)=12；圓錐體積為π×25×12÷3=100π。母線比垂直高長，求得十二也符合直角三角形的幾何關係。", "misconceptionTarget": "母線是軸截面直角三角形的斜邊，必須先和半徑用畢氏定理求垂直高。"},
+      "appendArray": {"steps": ["將求得的垂直高12代入圓錐體積公式並除以3。"]}
+    },
+    {
+      "questionId": "u23-s011-v008",
+      "expectedContentSha256": "44f510b21dada27436fb39887f24dbc7252a3257e27dbaa5acbf486cf52153bf",
+      "appendText": {"explanation": "對同類角錐而言，公式中的固定三分之一會在新舊體積比中相消；只需將底面積倍率2與高度倍率3/4相乘，得到3/2倍。"},
+      "appendArray": {"steps": ["確認體積由底面積與高的一次方共同縮放，固定係數不另計。"]}
+    },
+    {
+      "questionId": "u23-s011-v009",
+      "expectedContentSha256": "ba9d2cb74bf6330d25d7ae44522ac74abe61fdd74dbc4de66ed2e536758bff05",
+      "appendText": {"explanation": "兩者底圓面積相同可約去；圓柱體積係數為8，圓錐為18÷3=6，所以體積比8：6約分為4：3。圓錐雖然較高，三分之一係數仍使它的體積小於圓柱。"}
+    },
+    {
+      "questionId": "u23-s011-v010",
+      "expectedContentSha256": "b4277cc7d2fa6232c93bb796063f653468957703a437c31f96470333e074e448",
+      "appendText": {"explanation": "口徑18是直徑，所以半徑為9公分；漏斗容量近似π×9²×12÷3=324π立方公分，而1立方公分正好等於1毫升。"}
+    },
+    {
+      "questionId": "u23-s011-v011",
+      "expectedContentSha256": "1ffab821971cf6dbb2c2d800bc56c35aeeee7bc6ae08cfac85b119ac00f6b796",
+      "appendText": {"explanation": "沙堆體積為3.14×2²×1.5÷3=6.28立方公尺；再乘每立方公尺1.6公噸得10.048公噸，依選項取到小數第二位為10.05。先求空間體積再乘單位體積重量，兩個步驟不可混在同一單位。"}
+    },
+    {
+      "questionId": "u23-s011-v012",
+      "expectedContentSha256": "b70d138fb07761aa1fb60e74b7f9f4ae9a67407a1b7676d557c072ad1f1718e9",
+      "appendText": {"explanation": "每個圓錐體積為π×2²×6÷3=8π，12個共有96π；熔化無損耗，除以新圓柱底面積48π後，高為2公分。重鑄只改變形狀，不改變金屬的總體積，因此可直接使用體積守恆。"}
+    },
+    {
+      "questionId": "u23-s012-v001",
+      "expectedContentSha256": "f60d7f439f1657a90b02eefaa1ab5ee03fb7025537e72aac2c09893a05c4a6f4",
+      "set": {"figureId": null, "drawingSpecId": null, "visualMode": "text-only"},
+      "appendText": {"explanation": "每個正方形面積為4²=16平方公分，正方體有六個全等外表面，故總表面積為6×16=96平方公分；原三角柱圖與本題無關，已移除引用。"},
+      "appendArray": {"steps": ["依題幹直接數出六個正方形面，無需參照其他立體展開圖。"]}
+    },
+    {
+      "questionId": "u23-s012-v002",
+      "expectedContentSha256": "4a1caceeda7d00d2f8aa0c625ffaf12cdfe455642dbe4c797448af7b195c9873",
+      "appendText": {"explanation": "三組相對面面積分別為2×3=6、2×5=10、3×5=15，單組合計31；每種都有兩面，所以總面積為62平方單位。把三組面逐一列出，也能確認六個長方形沒有遺漏或重複。"},
+      "appendArray": {"steps": ["確認六個面均已計入，且相對面兩兩全等。"]}
+    },
+    {
+      "questionId": "u23-s012-v003",
+      "expectedContentSha256": "767ad5343913d7e6e80031ef596cf1a0f2c082eba5a47403d538b64173ff606c",
+      "appendText": {"explanation": "題目只問側面積，展開後曲側面就是長10π、寬7的長方形，因此面積為10π×7=70π平方公分；兩底存在不代表要加入本題答案。"},
+      "appendArray": {"steps": ["辨認長方形兩邊為底圓周10π與圓柱高7。", "計算乘積後維持平方公分單位。"]}
+    },
+    {
+      "questionId": "u23-s012-v004",
+      "expectedContentSha256": "bcf66f850f434161fcd1c5e73643a64e32518c38409329e1a763acc4da08bf77",
+      "appendText": {"explanation": "一個三角形底面積為6×4÷2=12，兩底共24平方公分；再加已知三個側面合計90，總表面積為114平方公分。"}
+    },
+    {
+      "questionId": "u23-s012-v005",
+      "expectedContentSha256": "9fb16a49bade248271a9d5a1853f6a44e6dda85c6a8c63f0b1c3b66c2d9524bd",
+      "appendText": {"explanation": "圓柱曲側面展開長方形的長等於底圓周長，因此2πr=12π；兩邊除以2π得到r=6公分，長方形高5不影響半徑。"},
+      "appendArray": {"steps": ["以圓周公式反求半徑，並確認直徑會是12公分。"]}
+    },
+    {
+      "questionId": "u23-s012-v006",
+      "expectedContentSha256": "54404bd17649fbc8eb2860f2b6bafee5fce8b364c5949377b632fe0d6ae89454",
+      "appendText": {"explanation": "底圓半徑4使底面積為16π；扇形半徑10是圓錐母線，曲側面積用πrl=π×4×10=40π，合計56π平方公分。", "misconceptionTarget": "展開扇形半徑代表母線長，底面積仍只用題目所給的底圓半徑4計算。"}
+    },
+    {
+      "questionId": "u23-s012-v007",
+      "expectedContentSha256": "20d5d33092184a0d6546896ebc065f881ea8443102a995b4ee39bc81c680e05c",
+      "appendText": {"explanation": "無蓋盒只有8×5底面40，以及兩個8×3側面48與兩個5×3側面30；三部分相加為118平方公分，不應補上不存在的上蓋。"},
+      "appendArray": {"steps": ["核對面片數為一底加四側，共五個外露面。"]}
+    },
+    {
+      "questionId": "u23-s012-v008",
+      "expectedContentSha256": "5bf06e414ddc72b21ad818006f2eeb9030ee31a133bfa7060c0eb1a2d1d998cd",
+      "appendText": {"explanation": "六個黏貼片互不重疊，每片3平方公分，所以額外用料為18平方公分；裁紙總面積須把它加到幾何展開圖250，得到268平方公分。"},
+      "appendArray": {"steps": ["區分幾何表面積250與實際裁紙用料，依題意將黏貼片加入。"]}
+    },
+    {
+      "questionId": "u23-s012-v009",
+      "expectedContentSha256": "881ef2fa1204bfff14dac999cd3bed3766efe07c38cf82a4dfdabc15c638f729",
+      "appendText": {"explanation": "扇形弧長為120/360×2π×12=8π公分，摺合後等於底圓周2πr；由2πr=8π可得底圓半徑4公分。扇形半徑十二是母線，不能直接當作底圓半徑使用。"}
+    },
+    {
+      "questionId": "u23-s012-v010",
+      "expectedContentSha256": "9e18a85bca7e72d66afd6ad4ff7692f94a577ea96aba60f1bdf73d846697a191",
+      "appendText": {"explanation": "無上蓋盒幾何面積為底240加四側320與192，共752；另加黏貼片40得每盒792平方公分，900只能完整裁出一盒。"}
+    },
+    {
+      "questionId": "u23-s012-v011",
+      "expectedContentSha256": "2e0662f2c3894d03bb9058225953f9375acfbaeb31347b8b86194de258c84ea9",
+      "appendText": {"explanation": "重疊黏貼寬度是沿標籤長方向多出的1公分，因此實際長為31.4+1=32.4公分；乘寬12得到388.8平方公分。"},
+      "appendArray": {"steps": ["把重疊量視為長度後再乘標籤寬，不能直接把1當面積相加。"]}
+    },
+    {
+      "questionId": "u23-s012-v012",
+      "expectedContentSha256": "8599e97214f64ec5b45657857ba4c82063e1b53fcb10caf708f01df80e7b60b2",
+      "appendText": {"explanation": "生日帽沒有底面，只算曲側面πrl=(22/7)×7×20=440平方公分；題意按比例計費，每平方公分0.12元，所以費用52.8元。"}
+    },
+    {
+      "questionId": "u23-s013-v001",
+      "expectedContentSha256": "d5b18419245d09818974d66cf68a3365af659b49e156fad21f9cc54457c2062d",
+      "appendText": {"explanation": "一公尺等於100公分，因此正方體的長、寬、高三個方向各可排100個小正方體；總數為100×100×100=1,000,000個。"},
+      "appendArray": {"steps": ["將三個方向的個數相乘，而不是只算一條邊或一個面。"]}
+    },
+    {
+      "questionId": "u23-s013-v002",
+      "expectedContentSha256": "bab731b74069839ba809bf694082cc8ed30ae8299f0b718ab3f11d057b0a5db6",
+      "appendText": {"explanation": "一公升等於1000立方公分，從較小的立方公分換成較大的公升要除以1000；2500÷1000=2.5公升。換成較大單位後數值縮小，也與量杯讀數的尺度方向一致。"},
+      "appendArray": {"steps": ["寫出1公升=1000立方公分。", "用2500除以1000並保留公升單位。"]}
+    },
+    {
+      "questionId": "u23-s013-v003",
+      "expectedContentSha256": "f6f9d79053cff5f12e36aab491813b618633ffc6118381cb36f75fc5d47e7658",
+      "appendText": {"explanation": "每公升有1000毫升，因此0.72公升乘1000等於720毫升；每格代表1毫升，所需格數與毫升數相同為720格。這裡換成較小容量單位，數值應合理地放大。"},
+      "appendArray": {"steps": ["先把0.72公升換成720毫升。", "依每格1毫升將容量直接換成720格。"]}
+    },
+    {
+      "questionId": "u23-s013-v004",
+      "expectedContentSha256": "12d1ee82437f648c6f7332fe730d027550352c29eb6738b826ae45b3285cf2f1",
+      "appendText": {"explanation": "一公分等於10毫米，體積有三個方向，所以一立方公分等於10³=1000立方毫米；3.6乘1000得到3600立方毫米。"},
+      "appendArray": {"steps": ["確認換成較小單位後數值應放大，方向與結果一致。"]}
+    },
+    {
+      "questionId": "u23-s013-v005",
+      "expectedContentSha256": "a1e9b07bf9ea46b706d77476932a35da6ec7fcac524eb8592e16bbee16d2bbe4",
+      "appendText": {"explanation": "因1立方公分包含1000立方毫米，將45000立方毫米換成較大的立方公分需除以1000，得到45立方公分。", "misconceptionTarget": "由較小的立方毫米換成較大的立方公分時，數值必須除以1000而不是再乘。"},
+      "appendArray": {"steps": ["寫出1000立方毫米=1立方公分。", "計算45000÷1000並核對數值變小。"]}
+    },
+    {
+      "questionId": "u23-s013-v006",
+      "expectedContentSha256": "cc9f26dd3e034220f9bb5a8a32fd51123927819ad8d40946bfefb5b46f6c69e8",
+      "appendText": {"explanation": "一立方公尺等於1000公升，所以0.035立方公尺為35公升；每桶5公升，35÷5=7，且恰好整除不需進位。桶數乘回單桶容量等於原總容量，可作反向驗算。"},
+      "appendArray": {"steps": ["完成容量換算後，再除以單桶容量求桶數。"]}
+    },
+    {
+      "questionId": "u23-s013-v007",
+      "expectedContentSha256": "fc2f664c697f91cea510790b8c1d96b83fbe3e1da812e4b174aa998737065086",
+      "appendText": {"explanation": "公尺換公分的長度倍率是100，體積需把長、寬、高三方向倍率相乘，所以倍率為100³=1,000,000。", "misconceptionTarget": "體積包含三個彼此垂直方向，不能只用單一長度倍率100或面積倍率10000。"},
+      "appendArray": {"steps": ["將長度倍率100提升為三次方。", "計算100×100×100得到1,000,000倍。"]}
+    },
+    {
+      "questionId": "u23-s013-v008",
+      "expectedContentSha256": "7ab3759fe850662efbe66e46c57f2a8fa7f5494c8607cc17f0e0cdc1ba12caf2",
+      "appendText": {"explanation": "一立方公尺等於1,000,000立方公分，因此把8,000,000立方公分換成較大的立方公尺，要除以1,000,000得到8立方公尺。"},
+      "appendArray": {"steps": ["先寫出兩種體積單位的倍率。", "以8,000,000÷1,000,000完成換算。"]}
+    },
+    {
+      "questionId": "u23-s013-v009",
+      "expectedContentSha256": "555f595b7d7d60223f5bf7f2ed6d474c23c073931c3bd75bf13d07f8b86e7267",
+      "appendText": {"explanation": "毫升是容量而立方公分是體積，兩者有1毫升=1立方公分的定義關係；其餘選項不是量綱不同，就是少了體積的立方倍率。"}
+    },
+    {
+      "questionId": "u23-s013-v010",
+      "expectedContentSha256": "a1503b28215bb34e5119b3d9e1724e0f50c41782cdc36b47795c77872a6b12df",
+      "appendText": {"explanation": "1.2立方公尺先乘1000換成1200公升，再以每桶15公升計算1200÷15=80；結果整除，所以80桶即可裝下。題目問至少需要幾桶，若有餘數才須向上取整，本題沒有餘數。"},
+      "appendArray": {"steps": ["確認80×15=1200公升，容量正好相等。"]}
+    },
+    {
+      "questionId": "u23-s013-v011",
+      "expectedContentSha256": "500122e3403cda9e256fa54ab510faaba111a830fc2acbcc3f346ce62f9ce2a7",
+      "appendText": {"explanation": "0.8公升等於800毫升，每支容量25毫升；800÷25=32且沒有餘量，因此最多能完整裝滿32支注射器。容量先統一成毫升後才能與每支刻度直接相除。"},
+      "appendArray": {"steps": ["以32×25=800毫升驗算，確認沒有剩餘溶液。"]}
+    },
+    {
+      "questionId": "u23-s013-v012",
+      "expectedContentSha256": "1950166663877998b967881ae1caf435106e1f59135343ca844fc0376d3271c5",
+      "appendText": {"explanation": "0.0045立方公尺乘1,000,000換成4500立方公分，乘密度2.4得10800公克，再除以1000換成10.8公斤。體積單位須先配合密度的每立方公分，最後才把質量換成公斤。"}
+    },
+    {
+      "questionId": "u23-s014-v001",
+      "expectedContentSha256": "01abbecfaa9ebdbac2ff5d64ae3c80276e354afc24b1891855a95355379fee97",
+      "appendText": {"explanation": "兩個長方體只在邊界接合且內部互不重疊，接合面沒有厚度，不會占體積；因此直接把60與45相加得到105立方公分。"},
+      "appendArray": {"steps": ["確認兩部分內部互不重疊。", "相加兩個體積並保留立方公分單位。"]}
+    },
+    {
+      "questionId": "u23-s014-v002",
+      "expectedContentSha256": "c4593e3efeeaa7935c3ca2fe5302e29048e2b029e528b8fdefdb6821f6c27561",
+      "appendText": {"explanation": "正方體原體積為6³=216立方公分，貫穿長方體孔體積為2×2×6=24；挖去後剩216−24=192立方公分。孔洞貫穿完整邊長六，所以第三個尺寸不能漏掉。"}
+    },
+    {
+      "questionId": "u23-s014-v003",
+      "expectedContentSha256": "1a0c8d961562d9330e437d66d190876f5046ee4724beff874254b87a238e3f90",
+      "set": {"prompt": "一個底面半徑 3 公分、高 4 公分的圓柱，上方接一個底面半徑同為 3 公分、高 6 公分的圓錐。總體積是多少？", "text": "一個底面半徑 3 公分、高 4 公分的圓柱，上方接一個底面半徑同為 3 公分、高 6 公分的圓錐。總體積是多少？"},
+      "appendText": {"explanation": "圓柱體積為π×3²×4=36π，圓錐體積為π×3²×6÷3=18π；兩部分只在底面接合，所以相加為54π立方公分。接合面沒有厚度，不需要從體積總和中扣除。"}
+    },
+    {
+      "questionId": "u23-s014-v004",
+      "expectedContentSha256": "134970cda1631e58d24cb1370735bd13fc536aeaa336fe8098179bc38b7dd2e0",
+      "set": {"figureId": null, "drawingSpecId": null, "visualMode": "text-only"},
+      "appendText": {"explanation": "底層體積為10×6×2=120，上層是另一個不重疊的4×6×3長方體，體積72；堆疊後總體積為192立方公分，原盲孔圓柱圖與本題無關，已移除引用。", "misconceptionTarget": "上層只覆蓋4×6的區域，不能把其高度3套用到整個10×6底面；兩層應分別計算。"}
+    },
+    {
+      "questionId": "u23-s014-v005",
+      "expectedContentSha256": "96b386b69bea57747e1a592076da57cdc7432beb630fba8d43af63af12145b9f",
+      "appendText": {"explanation": "材料截面是圓環，面積為π(5²−3²)=16π平方公分；沿高8公分保持不變，故材料體積為16π×8=128π立方公分。"},
+      "appendArray": {"steps": ["將圓環截面積乘整段高度8，得到材料體積。"]}
+    },
+    {
+      "questionId": "u23-s014-v006",
+      "expectedContentSha256": "1129cf212ee53e21672511a7e14655146bf2f79a697e64f3a38a2980a596e39c",
+      "appendText": {"explanation": "原長方體體積12×8×5=480，從一角切去的長方體體積4×3×5=60；兩區不重疊，所以剩餘體積為420立方公分。切角後答案小於原體積，也符合挖除材料的合理性。"}
+    },
+    {
+      "questionId": "u23-s014-v007",
+      "expectedContentSha256": "3511632f5f4a098d5917d8e389922813d12d2760fe066108f7d7253a133229eb",
+      "appendText": {"explanation": "外圓柱與孔洞高度相同，π與高度可在體積比中約去；剩餘比例為(4²−2²)÷4²=(16−4)÷16=3/4。這是圓環截面占外圓截面的比例，沿同一高度後仍保持不變。", "misconceptionTarget": "圓柱體積與半徑平方成正比，孔洞比例應比較4與2的平方，不能只用半徑比。"},
+      "appendArray": {"steps": ["約去共同的π與高度10，將問題化為圓環與外圓面積比。"]}
+    },
+    {
+      "questionId": "u23-s014-v008",
+      "expectedContentSha256": "a02b1ec9f0283a1356f96e55038f8bfd6d692a9af3247e6183fe3ed85bea6b5f",
+      "appendText": {"explanation": "A體積160、B體積90，但B有3×5×2=30立方公分已嵌在A內；相加會重複計算，故實際體積160+90−30=220。使用容斥只扣一次重疊區，保留兩物體其餘部分。"}
+    },
+    {
+      "questionId": "u23-s014-v009",
+      "expectedContentSha256": "c5cbf32bc882463d7546d8e480d72d337ddbf31d4622d356fa43682303cf47a0",
+      "appendText": {"explanation": "正方體原體積10³=1000；每個凹槽體積2×2×1=4，六個互不相交共挖去24，因此剩餘1000−24=976立方公分。"}
+    },
+    {
+      "questionId": "u23-s014-v010",
+      "expectedContentSha256": "f1a45f98ef80f59c2c35a2902cd41c93cca01041129dcae352a440b5b12bdc6b",
+      "appendText": {"explanation": "共同底面積為3.14×0.5²=0.785，圓柱體積0.785×1.2=0.942，圓錐體積0.785×0.6÷3=0.157，相加約1.099立方公尺。圓錐部分保留三分之一係數，才能與圓柱正確合併。"}
+    },
+    {
+      "questionId": "u23-s014-v011",
+      "expectedContentSha256": "052468d8d93796b43683fb4db5503c46718a239abef397ff6e2043a1bc3f6afc",
+      "appendText": {"explanation": "五個金屬塊共有5×120=600立方公分，再加入50得650；熔化無損耗，均勻長條長度為650÷65=10公分。截面積乘長度應回到總體積，六十五乘十正好驗得六百五十。"},
+      "appendArray": {"steps": ["利用重鑄前後體積守恆，以總體積除截面積求長度。"]}
+    },
+    {
+      "questionId": "u23-s014-v012",
+      "expectedContentSha256": "b0a055a95d8cbfa65af13de6724e02ca89eaebd913754eb793b0d19b27ebbdd4",
+      "appendText": {"explanation": "三層彼此堆疊而不穿入，每層體積分別用100²、70²、40²乘共同高度20；總和330000立方公分等於330公升。分層相加可避免把最大底面錯誤延伸到全部六十公分高度。"}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u23-s008-cr001",
+      "expectedContentSha256": "4bd832d7bfd6abd5c9235db86cd208d78ef585d71ae6c8bd54a805ac642fd942",
+      "set": {"commonErrors": ["只寫三種截面都是圓，沒有比較大小隨高度的變化，無法回答題目核心。"]}
+    },
+    {
+      "questionId": "u23-s008-cr002",
+      "expectedContentSha256": "e93ba315b3d8da0648e967fd61a0d33da780a480c29d0b42a00f4db498fe18b6",
+      "set": {"commonErrors": ["直接以13−5求截面半徑，忽略球半徑、切面距離與截面半徑形成直角三角形。"]}
+    },
+    {
+      "questionId": "u23-s009-cr001",
+      "expectedContentSha256": "b562509f2a3cea4bd225e755db43d1ccc8a2bdb64e6b51e8c6755d422ee364df",
+      "set": {"commonErrors": ["把底面積6當成底面周長，或完整三角柱只加一個三角形底面。"]},
+      "appendArray": {"fullCreditSolution": ["側面帶由寬3、4、5的三個長方形組成，所以其總寬為底面周長12；完整柱體另有兩個面積各6的底面。"]}
+    },
+    {
+      "questionId": "u23-s009-cr002",
+      "expectedContentSha256": "a9c0a33f56bcc4f0b0f33671b13a158c50f2f62b8b93a9f6b7a7e8fb0f330a48",
+      "set": {"commonErrors": ["無上蓋容器仍計入第二個底圓，或把側面積誤算成底面積乘高。"]},
+      "appendArray": {"fullCreditSolution": ["題目只塗底面外側與曲側面，因此保留一個底圓25π與側面120π；上方開口沒有可塗的表面。"]}
+    },
+    {
+      "questionId": "u23-s010-cr001",
+      "expectedContentSha256": "209d6fbd28e86d0a317aa9cf50165ff5d161b2800f67f936020124344f37c579",
+      "set": {"commonErrors": ["混用梯形內部的高5與柱體兩底面間的垂直高12，導致底面積或體積公式代錯。"]},
+      "appendArray": {"fullCreditSolution": ["兩個『高』分屬不同維度：5只用於梯形面積，12才是底面積沿立體方向累積的距離。"]}
+    },
+    {
+      "questionId": "u23-s010-cr002",
+      "expectedContentSha256": "6f971a50738df079ff5c797f26a01b4792bb458d99927a485c26664c9fc63e5c",
+      "set": {"commonErrors": ["把9π公升直接代入以公分為尺寸的公式，或只除以半徑15而非底面積225π。"]},
+      "appendArray": {"fullCreditSolution": ["由體積除底面積可驗算水深：9000π立方公分÷225π平方公分=40公分，π與平方單位正確約去；代回圓柱體積公式也會得到原來的九千π立方公分。"]}
+    },
+    {
+      "questionId": "u23-s011-cr001",
+      "expectedContentSha256": "9a6b5fc73e3e71220c894e6ba3f5cb48271d23fdc8dd987fe930078492374eee",
+      "set": {"commonErrors": ["把側面斜高13直接當角錐垂直高，沒有先利用底面中心到邊中點的5公分求高。"]},
+      "appendArray": {"fullCreditSolution": ["斜高13、底面半邊5與垂直高12形成直角三角形；只有求出的垂直高12能代入角錐體積公式。"]}
+    },
+    {
+      "questionId": "u23-s011-cr002",
+      "expectedContentSha256": "0df4c8e58a735b2421803261ce5c48d8a95e6b4c36d44d690fe57538f45060e9",
+      "set": {"commonErrors": ["只因底面相同便令兩者高度相同，忽略圓錐體積公式固定有三分之一係數。"]},
+      "appendArray": {"fullCreditSolution": ["相同底面積下，要補償圓錐的三分之一係數，其高度必須是圓柱高度的3倍；24公分也使兩體積同為288π。"]}
+    },
+    {
+      "questionId": "u23-s012-cr001",
+      "expectedContentSha256": "1991c227ab23badcb9189165026cb86f816202a1b4ff1276910ad62b08175f50",
+      "set": {"commonErrors": ["求得斜邊13後只算一個側面，或忘記展開圖還包含兩個全等三角形底面。"]},
+      "appendArray": {"fullCreditSolution": ["三個長方形共同高度為柱高10，寬度總和等於三角形周長30，因此側面積可一次算成30×10=300。"]}
+    },
+    {
+      "questionId": "u23-s012-cr002",
+      "expectedContentSha256": "27508e75a54ca1f3f1525c92b5b1ec6769a0c191ad4afde661b1b7f6ac8385ba",
+      "set": {"commonErrors": ["把扇形半徑15當底圓半徑，或沒有令扇形弧長等於摺合後的底圓周長。"]},
+      "appendArray": {"fullCreditSolution": ["扇形半徑15是母線，不是底圓半徑；先由弧長12π求得r=6，才能把扇形90π與底圓36π相加。"]}
+    },
+    {
+      "questionId": "u23-s013-cr001",
+      "expectedContentSha256": "b702d7a09c784cd087a10b88d877da10564193d63cb44c4aafa50dd44ce145d1",
+      "set": {"commonErrors": ["只將一條邊的公尺換成公分而寫100，或只計一層平面而寫10000，忽略第三方向。"]}
+    },
+    {
+      "questionId": "u23-s013-cr002",
+      "expectedContentSha256": "05c3072a9d871c0bb0cf713b847f36a51d972e772980a14fddef481538913726",
+      "set": {"commonErrors": ["未先統一公升、毫升與立方公分，或把倒出480誤作相加、加入325誤作相減。"]},
+      "appendArray": {"fullCreditSolution": ["最後以1公升=1000毫升換算，2595毫升除以1000為2.595公升；加減方向與液體流入、流出一致。"]}
+    },
+    {
+      "questionId": "u23-s014-cr001",
+      "expectedContentSha256": "6a77dbcb0507ecf3927887e7aa6a5efeb2aea2cd26d6e1a4bec7660f89b8841c",
+      "set": {"commonErrors": ["把孔洞當成貫穿20公分而非只深12公分，或從外半徑直接減孔半徑後再平方。"]},
+      "appendArray": {"fullCreditSolution": ["孔未鑽穿，所以只扣半徑2、深12的48π；剩餘452π小於原體積500π且差值正好等於孔洞體積。"]}
+    },
+    {
+      "questionId": "u23-s014-cr002",
+      "expectedContentSha256": "c3308444c5a6766949a328753bd94ffc299cf9371c04c4aff2dac3c4add14a74",
+      "set": {"commonErrors": ["沒有把18公升換成立方公分，或誤用水槽周長而不是內部底面積計算水面上升。"]},
+      "appendArray": {"fullCreditSolution": ["完全浸沒石塊排開的水量等於石塊體積；以18000立方公分除水槽底面積2400平方公分，量綱與數值皆得到7.5公分。"]}
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u23-s008-lecture-r1",
+      "expectedContentSha256": "efd9e2a4ac3ab11d3e9ba4d1323588b056a42bb3b811e0dc01d8fa6094520586",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "直圓柱通過軸的截面為何？",
+            "solutionSteps": ["平面切到兩條母線與兩條底面直徑。"],
+            "answer": "長方形。",
+            "why": "含軸切面會在上下底各留下直徑，並以兩條互相平行的母線連接；直徑垂直母線，所以四邊構成長方形，而非底面圓。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "直圓錐通過軸的截面為何？",
+            "solutionSteps": ["兩條母線會聚於頂點，底邊是底圓直徑。"],
+            "answer": "等腰三角形。",
+            "why": "軸截面通過圓錐頂點與底圓直徑，左右兩邊是等長母線，因此形成以底圓直徑為底的等腰三角形；扇形則是側面展開圖。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "球的平行切片從一端移到另一端，大小如何變化？",
+            "solutionSteps": ["端點處退化為點。", "靠近球心圓變大，過球心後再變小。"],
+            "answer": "由0增至最大圓，再減至0。",
+            "why": "截面半徑由球心到切面的距離決定；切面靠近球心時半徑增大，通過球心達最大，之後依球的對稱性縮小，兩端退化為點。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "只知道某截面是圓，能否確定原立體為球？",
+            "solutionSteps": ["圓柱、圓錐與球均可能有圓截面。"],
+            "answer": "不能。",
+            "why": "平行底面切圓柱或圓錐，以及任意穿過球內部的平面，都可能產生圓形截面；缺少切片方向與尺寸變化時，單一形狀不足以唯一反推。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u23-s009-lecture-r1",
+      "expectedContentSha256": "a31be93c7392900773a10a80a01c0ca8e3a8fedf745d5182d30382a65f07a9b5",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "長方體長4、寬3、高2公分，表面積多少？",
+            "solutionSteps": ["2(4×3+4×2+3×2)=2(12+8+6)。"],
+            "answer": "52平方公分。",
+            "why": "長方體有三組相對且全等的面，面積分別為12、8、6平方公分；每組各出現兩次，所以將三者合計26後乘2得到52。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "底面周長18公分、底面積20平方公分、高5公分的直角柱，總表面積多少？",
+            "solutionSteps": ["側面積18×5=90。", "兩底面40。"],
+            "answer": "130平方公分。",
+            "why": "側面沿底面邊界展開成長為周長18、高為5的面帶，所以面積90；完整柱體還有兩個面積各20的底面，總和為130。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "半徑3、高4公分的完整圓柱表面積？",
+            "solutionSteps": ["兩底面2π×9=18π。", "側面2π×3×4=24π。"],
+            "answer": "42π平方公分。",
+            "why": "完整圓柱包含兩個半徑3的底圓，共18π；曲側面展開成長為圓周6π、寬為高4的長方形，面積24π，因此合計42π。兩類外露面都不可遺漏。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "同一圓柱若無上蓋，外表面積多少？",
+            "solutionSteps": ["只保留下底面9π與側面24π。"],
+            "answer": "33π平方公分。",
+            "why": "無上蓋代表上底圓不存在，不能套用兩底面的完整公式；保留一個底圓9π與不變的曲側面24π，相加得到33π平方公分。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u23-s010-lecture-r1",
+      "expectedContentSha256": "e6a3428513573d0d7bca5f43264e2a5ca7801a42cda1b0b9c1546e39d9fcdd30",
+      "set": {
+        "workedExamples": [
+          {
+            "0": "L1",
+            "1": "底面積18平方公分、高7公分的直角柱體積？",
+            "2": ["18×7=126。"],
+            "3": "126立方公分。",
+            "why": "直角柱沿垂直高的每一層截面都與底面全等，因此體積等於單一底面積18乘高7；面積乘長度後量綱成為立方公分。"
+          },
+          {
+            "0": "L2",
+            "1": "底面為底6、高4公分的三角形，柱高10公分，體積？",
+            "2": ["底面積6×4÷2=12。", "12×10=120。"],
+            "3": "120立方公分。",
+            "why": "題目有三角形內部的高4與柱體高10兩種高度；先用6與4求底面積12，再沿柱高10累積，才能得到120立方公分。兩個高度各自只用在對應公式。"
+          },
+          {
+            "0": "L3",
+            "1": "半徑3、高5公分的圓柱體積？",
+            "2": ["π×3²×5=45π。"],
+            "3": "45π立方公分。",
+            "why": "圓柱底面是半徑3的圓，底面積為9π而非圓周6π；將相同圓截面沿垂直高5堆疊，體積為45π立方公分。底面必須使用面積而非邊界長度。"
+          },
+          {
+            "0": "L4",
+            "1": "體積240立方公分、底面積30平方公分的柱體，高多少？",
+            "2": ["240÷30=8。"],
+            "3": "8公分。",
+            "why": "由V=Bh反求高度要將體積除以底面積；240立方公分除以30平方公分得到8公分，代回30×8可驗得原體積。立方單位除平方單位也正好留下長度。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u23-s011-lecture-r1",
+      "expectedContentSha256": "4cd8d839459781495c9e238fca4cf1641ae4d3daf459edabfbd9cdaf1680c84d",
+      "set": {
+        "workedExamples": [
+          {
+            "0": "L1",
+            "1": "底面積30平方公分、高9公分的角錐體積？",
+            "2": ["30×9÷3=90。"],
+            "3": "90立方公分。",
+            "why": "同底等高角錐的體積是角柱的三分之一；底面積30乘垂直高9先得270，再除以3為90，結果小於同底等高柱體。"
+          },
+          {
+            "0": "L2",
+            "1": "半徑3、高8公分的圓錐體積？",
+            "2": ["π×9×8÷3=24π。"],
+            "3": "24π立方公分。",
+            "why": "底圓半徑3使底面積為9π，乘垂直高8得到同底等高圓柱體積72π；圓錐只占三分之一，所以為24π。結果必須小於對應圓柱體積。"
+          },
+          {
+            "0": "L3",
+            "1": "同底等高圓柱體積150立方公分，圓錐體積？",
+            "2": ["150÷3=50。"],
+            "3": "50立方公分。",
+            "why": "同底且等高讓兩者公式只差固定係數三分之一，因此不用知道個別半徑或高度，直接將圓柱體積150除以3即可得到50。"
+          },
+          {
+            "0": "L4",
+            "1": "角錐體積96立方公分、底面積24平方公分，高？",
+            "2": ["96×3÷24=12。"],
+            "3": "12公分。",
+            "why": "由V=Bh÷3反求高度時先消去分母3，得到h=3V÷B；96乘3再除以24為12，代回公式可還原96立方公分。不能漏掉先乘三的逆運算。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u23-s012-lecture-r1",
+      "expectedContentSha256": "64a8780d6bf17a48129f56885336a42d63344ea3d675033690f18f12dae6f627",
+      "set": {
+        "workedExamples": [
+          {
+            "0": "L1",
+            "1": "長方體展開圖含兩個3×4、兩個3×5、兩個4×5長方形，總面積？",
+            "2": ["2(12+15+20)=94。"],
+            "3": "94平方單位。",
+            "why": "長方體三組相對面各有兩個，單組面積是12、15、20；展開圖不重疊時面片面積直接相加，因此2×47得到94平方單位。"
+          },
+          {
+            "0": "L2",
+            "1": "圓柱展開圖有半徑2的兩圓與4π×6長方形，總面積？",
+            "2": ["兩圓8π，側面24π。"],
+            "3": "32π平方單位。",
+            "why": "兩個半徑2的底圓面積共8π；側面展開長方形長4π正是底圓周，乘高6得24π，完整展開圖合計32π。兩個底面與一個側面帶都已計入。"
+          },
+          {
+            "0": "L3",
+            "1": "圓錐展開圖底圓半徑3、扇形半徑5，表面積？",
+            "2": ["底面9π，側面π×3×5=15π。"],
+            "3": "24π平方單位。",
+            "why": "底圓半徑3用於πr²得到9π，扇形半徑5代表母線，曲側面用πrl得到15π；兩種半徑角色不同，總和為24π。辨明底圓半徑與母線可避免公式代錯。"
+          },
+          {
+            "0": "L4",
+            "1": "紙盒幾何展開圖面積100，另有8平方公分黏貼片；用料？",
+            "2": ["材料含幾何面與黏貼片。"],
+            "3": "108平方公分。",
+            "why": "幾何表面積只計成盒後的外表面，但裁紙用料還包含不屬於立體表面的黏貼片；依題目問用料，必須將8加到100得到108。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u23-s013-lecture-r1",
+      "expectedContentSha256": "aa94de39b399c2dd6d965f7c0eddd57b6e3f39920d640f3f8fd44d76274bfa69",
+      "set": {
+        "workedExamples": [
+          {
+            "0": "L1",
+            "1": "2.5立方公尺等於多少立方公分？",
+            "2": ["2.5×1,000,000。"],
+            "3": "2,500,000立方公分。",
+            "why": "一公尺等於100公分，體積三個方向都要換算，所以一立方公尺等於100³立方公分；換成較小單位時乘1,000,000。數值放大方向也符合單位縮小。"
+          },
+          {
+            "0": "L2",
+            "1": "3600立方公分等於多少公升？",
+            "2": ["3600÷1000。"],
+            "3": "3.6公升。",
+            "why": "一公升定義為1000立方公分；由較小的立方公分換成較大的公升，數值應縮小，因此3600除以1000得到3.6公升。乘回一千可驗得原數值。"
+          },
+          {
+            "0": "L3",
+            "1": "0.8公升等於多少毫升與立方公分？",
+            "2": ["0.8×1000。"],
+            "3": "800毫升=800立方公分。",
+            "why": "每公升有1000毫升，所以0.8公升為800毫升；又一毫升等於一立方公分，因此同一容量也可寫成800立方公分。兩個答案表示的是同一體積。"
+          },
+          {
+            "0": "L4",
+            "1": "45000立方毫米等於多少立方公分？",
+            "2": ["1立方公分=1000立方毫米。", "45000÷1000。"],
+            "3": "45立方公分。",
+            "why": "一公分等於10毫米，立方後倍率為10³=1000；將立方毫米換成較大的立方公分要除以1000，所以45000變成45。三個方向的倍率都不可遺漏。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u23-s014-lecture-r1",
+      "expectedContentSha256": "8d5c1aa276f12334fbb69fce2509cd58c043dd32f96190e801358cdc14bba04a",
+      "set": {
+        "workedExamples": [
+          {
+            "0": "L1",
+            "1": "8×5×3長方體上放4×5×2長方體，體積？",
+            "2": ["120+40=160。"],
+            "3": "160立方單位。",
+            "why": "兩個長方體只在接合面相鄰，內部互不重疊；接合面沒有厚度不占體積，所以分別算120與40後直接相加為160。"
+          },
+          {
+            "0": "L2",
+            "1": "邊長10正方體挖去2×2×10通孔，剩餘體積？",
+            "2": ["1000-40=960。"],
+            "3": "960立方單位。",
+            "why": "正方體原體積為1000，通孔截面2×2且穿過完整長度10，孔洞體積40；挖去後應相減，剩餘960小於原體積。通孔的第三個尺寸必須使用完整穿透長度。"
+          },
+          {
+            "0": "L3",
+            "1": "半徑2、高6圓柱上接同底高3圓錐，體積？",
+            "2": ["24π+4π=28π。"],
+            "3": "28π立方單位。",
+            "why": "圓柱體積為π×2²×6=24π，圓錐同底但高3，體積為π×2²×3÷3=4π；接合處不重疊，所以總和28π。兩部分必須分別使用柱體與錐體公式，不能共用同一係數。"
+          },
+          {
+            "0": "L4",
+            "1": "兩形狀熔化重鑄且無損耗，新體積？",
+            "2": ["先加原零件體積。"],
+            "3": "新體積等於原總體積。",
+            "why": "無損耗表示重鑄前後材料總量不變，形狀改變不會改變體積；因此先把所有原零件體積相加，再用新截面積或尺寸反求未知量。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": [
+    {
+      "path": "figures/u23/u23-s012-fig001.svg",
+      "replacements": [
+        {
+          "from": "<path d=\"M100 100 L40 100 L100 40 Z\" fill=\"none\" stroke=\"black\" stroke-width=\"3\"/>",
+          "to": "<path d=\"M100 100 L170 100 L100 40 Z\" fill=\"none\" stroke=\"black\" stroke-width=\"3\"/>"
+        },
+        {
+          "from": "<path d=\"M420 190 L480 190 L420 250 Z\" fill=\"none\" stroke=\"black\" stroke-width=\"3\"/>",
+          "to": "<path d=\"M100 190 L170 190 L100 250 Z\" fill=\"none\" stroke=\"black\" stroke-width=\"3\"/>"
+        },
+        {
+          "from": "<path d=\"M91 100 v9 h9\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>",
+          "to": "<path d=\"M100 91 h9 v9\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>"
+        },
+        {
+          "from": "<text x=\"66\" y=\"92\" font-size=\"16\">5</text>",
+          "to": "<text x=\"135\" y=\"92\" font-size=\"16\">5</text>"
+        },
+        {
+          "from": "<text x=\"96\" y=\"66\" font-size=\"16\">12</text>",
+          "to": "<text x=\"88\" y=\"70\" font-size=\"16\">12</text>"
+        },
+        {
+          "from": "<text x=\"59\" y=\"63\" font-size=\"16\">x</text>",
+          "to": "<text x=\"139\" y=\"63\" font-size=\"16\">x</text>"
+        },
+        {
+          "from": "<line x1=\"70\" y1=\"210\" x2=\"450\" y2=\"210\" stroke=\"black\" stroke-width=\"2\"/>",
+          "to": "<line x1=\"450\" y1=\"100\" x2=\"450\" y2=\"190\" stroke=\"black\" stroke-width=\"2\"/>"
+        },
+        {
+          "from": "<path d=\"M70 210 l10 -5 v10 z M450 210 l-10 -5 v10 z\" fill=\"black\"/>",
+          "to": "<path d=\"M450 100 l-5 10 h10 z M450 190 l-5 -10 h10 z\" fill=\"black\"/>"
+        },
+        {
+          "from": "<text x=\"260\" y=\"232\" font-size=\"16\" text-anchor=\"middle\">柱高 10</text>",
+          "to": "<text x=\"480\" y=\"150\" font-size=\"16\" text-anchor=\"middle\">柱高 10</text>"
+        }
+      ]
+    }
+  ]
+}

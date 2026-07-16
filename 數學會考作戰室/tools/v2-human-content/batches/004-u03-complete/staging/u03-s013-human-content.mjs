@@ -109,40 +109,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "每組人數解為-2。",
+      "answer": "不可接受，應回查列式。",
       "solutionSteps": [
-        "人數不可為負。",
-        "判定不可接受。"
+        "先代回原方程式，區分代數驗算與情境判斷。",
+        "辨認未知數是每組完整人數，必須為非負整數。",
+        "排除 -2，回查題目資料、比較方向與方程式。"
       ],
-      "answer": "回查列式。"
+      "why": "方程式有負二這個代數解，不表示情境中真能有負二人的組別。人數是離散的非負整數，所以此值違反未知數的意義；也不能直接取絕對值改成兩人，因為正兩不一定是原方程式的解。"
     },
     {
-      "exampleId": "L2",
       "prompt": "布長解為3.25公尺，尺可量到0.01公尺。",
+      "answer": "合理。",
       "solutionSteps": [
-        "為正連續量。",
-        "精度足夠。"
+        "檢查 3.25 公尺為正值，符合布長條件。",
+        "辨認布長是可取小數的連續量。",
+        "比較量尺精度 0.01 公尺，3.25 可被精確表示。"
       ],
-      "answer": "合理。"
+      "why": "布長不像人數或箱數必須是整數，它是可量測的連續量。三點二五公尺是正值，而且小數點後兩位剛好在量尺可讀到的零點零一公尺精度內，因此既符合量的類型，也沒有不必要的取整問題。"
     },
     {
-      "exampleId": "L3",
       "prompt": "巴士數解為4.6台。",
+      "answer": "不可直接接受。",
       "solutionSteps": [
-        "完整巴士數需整數。",
-        "未指定向上取整。"
+        "辨認未知數代表完整巴士台數，必須為非負整數。",
+        "檢查 4.6 非整數，不能表示可實際使用的巴士數。",
+        "回查題目是否改問最少車數；若未授權進位，不得直接改為 5。"
       ],
-      "answer": "不可直接接受。"
+      "why": "巴士是必須整台計數的離散量，四點六台無法作為實際安排。如果題目問「最少需幾台」且允許不滿載，才能依容量需求向上取成五台；本例未給這項授權，所以應先判為不可直接接受並回查模型。"
     },
     {
-      "exampleId": "L4",
       "prompt": "容納率為110%，且規定不得超載。",
+      "answer": "不合理。",
       "solutionSteps": [
-        "110%超過100%。",
-        "違反限制。"
+        "將 110% 寫成容量的 1.10 倍。",
+        "與不得超載的上限 100% 比較。",
+        "因 110%>100%，排除該結果並回查人數或容量資料。"
       ],
-      "answer": "不合理。"
+      "why": "百分率在增加率等其他情境中可能超過百分之百，所以不能只因數值大於一百就一律判錯。然而本題額外明定不得超載，容納率上限就是百分之百；百分之一百一十代表超出容量一成，因此違反情境限制。"
     }
   ],
   "commonMistakes": [
@@ -228,7 +232,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "036ea1f7e1a4e046a1f8784378c3293f7ce2b38fef69fc2e105fcbf915ec4401",
+  "contentSha256": "d1586ed7c14fdd12d72d3f0024db690035dc179d3d18620ce9c7fd03df20961c",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 };
@@ -253,7 +257,7 @@ export const QUESTIONS = [
       "不合理，應直接改成4人"
     ],
     "answerIndex": 0,
-    "explanation": "辨認未知數代表人數；人數不可為負；回頭檢查模型而非改答案。所以答案是「不合理，人數不能為負」。",
+    "explanation": "辨認未知數代表人數；人數不可為負；回頭檢查模型而非改答案。所以答案是「不合理，人數不能為負」。 負號不能當成「少四人」的標記，也不能未經重算就改成正四人。",
     "steps": [
       "辨認未知數代表人數",
       "人數不可為負",
@@ -296,7 +300,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c9e7864bb9d87ea12871a5b8a1ed00683d2c8e69c44bbdd7a2e12915081834ed",
+    "contentSha256": "27123392088ab8db899f3c7b9c968dc43df283de0dacf362a53a428fc5da2ab7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -319,7 +323,7 @@ export const QUESTIONS = [
       "直接捨去成13即可"
     ],
     "answerIndex": 1,
-    "explanation": "確認題目要求完整整年；13.5非整數；不應任意四捨五入。所以答案是「若以已完成整年計，13.5 不符合整數條件」。",
+    "explanation": "確認題目要求完整整年；13.5非整數；不應任意四捨五入。所以答案是「若以已完成整年計，13.5 不符合整數條件」。 十三點五不能表示已完成的整學年數，所以應回查題意與列式。",
     "steps": [
       "確認題目要求完整整年",
       "13.5非整數",
@@ -347,7 +351,7 @@ export const QUESTIONS = [
         "reason": "無條件捨去也不是解。"
       }
     ],
-    "commonMistake": "看到年數就一律接受小數。",
+    "commonMistake": "看到「年」就一律接受小數，忽略題幹特別要求已完成的整學年數。",
     "concept": "是否能用小數取決於量的定義。",
     "tags": [
       "代數",
@@ -362,7 +366,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "76a5d5f34cf55dafa05557d54689f3600f66a4cd9f3d23aa477df6abf993b6e0",
+    "contentSha256": "0a5ec712c64cfff78523a1b099351d9e87af401e593b4041e36c3c8e622355b4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -385,7 +389,7 @@ export const QUESTIONS = [
       "一定改成8箱"
     ],
     "answerIndex": 2,
-    "explanation": "未知數代表完整箱數；必須為整數；重新檢查資料或列式。所以答案是「7.2 不是可接受箱數，應檢查題意或模型」。",
+    "explanation": "未知數代表完整箱數；必須為整數；重新檢查資料或列式。所以答案是「7.2 不是可接受箱數，應檢查題意或模型」。 四捨五入或無條件進位都會改變原方程式的精確解。",
     "steps": [
       "未知數代表完整箱數",
       "必須為整數",
@@ -428,7 +432,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "961d66598951a337150a9d9c965eaa32bcdcd33a266221559dc53d854a6685e4",
+    "contentSha256": "f82a80572d962a970dc4209f9e1f47d860ca29b7e0f4310ea6c8d69e575dffe4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -451,7 +455,7 @@ export const QUESTIONS = [
       "不合理，長度不可為負"
     ],
     "answerIndex": 3,
-    "explanation": "未知數代表長度；長度需為正；拒絕-3並檢查列式。所以答案是「不合理，長度不可為負」。",
+    "explanation": "未知數代表長度；長度需為正；拒絕-3並檢查列式。所以答案是「不合理，長度不可為負」。 幾何邊長沒有「方向相反」的負值詮釋，也不能直接取絕對值。",
     "steps": [
       "未知數代表長度",
       "長度需為正",
@@ -479,7 +483,7 @@ export const QUESTIONS = [
         "reason": "幾何長度必須大於0；-3不屬於可接受範圍，表示模型或條件需重查。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "把負長度自行改成正長度。",
+    "commonMistake": "把負三公分直接取絕對值改成正三公分，但這已不是原方程式的解。",
     "concept": "代數解還要落在情境定義域。",
     "tags": [
       "代數",
@@ -494,7 +498,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "eb8fc0fefbb97e2086aa64e3e514fafb70c2d2a2207798bd1cda32c683af9f7b",
+    "contentSha256": "c7ac0500514f059f35307688ac942000a05abd108a51bb0484b35426d53a6659",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -517,7 +521,7 @@ export const QUESTIONS = [
       "應改成1公里/時"
     ],
     "answerIndex": 1,
-    "explanation": "核對距離為正；速率0使距離為0；判定模型不合理。所以答案是「不合理，正距離在有限時間內速率不能為0」。",
+    "explanation": "核對距離為正；速率0使距離為0；判定模型不合理。所以答案是「不合理，正距離在有限時間內速率不能為0」。 因此不能只用速率非負就接受零，也不能任意改成一公里每小時。",
     "steps": [
       "核對距離為正",
       "速率0使距離為0",
@@ -545,7 +549,7 @@ export const QUESTIONS = [
         "reason": "不能任意改為1。"
       }
     ],
-    "commonMistake": "只看速率非負就接受0。",
+    "commonMistake": "只檢查速率不是負數就接受零，沒有再對照正距離與有限時間。",
     "concept": "d=vt必須同時成立。",
     "tags": [
       "代數",
@@ -560,7 +564,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bdb244dcd283e69229781fdfab5ecd83c4828f53dd4de6ce29d90267cd32847d",
+    "contentSha256": "3578e2d9fa1d91713c371e749332f2f8839775770d5e60808ef5544f1ab2b2cd",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -583,7 +587,7 @@ export const QUESTIONS = [
       "合理，但只能寫42元"
     ],
     "answerIndex": 2,
-    "explanation": "檢查允許的最小貨幣單位；42.5是0.5的整數倍；判定合理。所以答案是「合理」。",
+    "explanation": "檢查允許的最小貨幣單位；42.5是0.5的整數倍；判定合理。所以答案是「合理」。 四十二點五除以零點五為八十五，確實是允許計價單位的整數倍，無需取整。",
     "steps": [
       "檢查允許的最小貨幣單位",
       "42.5是0.5的整數倍",
@@ -611,7 +615,7 @@ export const QUESTIONS = [
         "reason": "少寫0.5會不符合方程式。"
       }
     ],
-    "commonMistake": "看到小數金額就否定。",
+    "commonMistake": "看到小數金額就直接否定，沒有檢查它是否符合店家允許的零點五元單位。",
     "concept": "可接受範圍由題幹定義。",
     "tags": [
       "代數",
@@ -626,7 +630,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "074b0cb75a82d43597d52e5aef18b67667d6ce7d398e14d2d3512bf6fe98f213",
+    "contentSha256": "db12ab685ee281a3f97ce804ae0e1e5c569831f3092e894c5354cda07f83916b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -649,7 +653,7 @@ export const QUESTIONS = [
       "合理，12 是非負整數且通過驗算"
     ],
     "answerIndex": 3,
-    "explanation": "檢查整數與非負；代回原式；兩項都通過。所以答案是「合理，12 是非負整數且通過驗算」。",
+    "explanation": "檢查整數與非負；代回原式；兩項都通過。所以答案是「合理，12 是非負整數且通過驗算」。 題目沒有最多十張或必須為偶數之類的額外限制，不能自行加入。",
     "steps": [
       "檢查整數與非負",
       "代回原式",
@@ -692,7 +696,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "74f1e3af8046c7d58eb0ece47b4ff7be5be321e08767fbba87fcbd6fbc8c4dcf",
+    "contentSha256": "24a264de10fb5adaaaf9973f122599285bdbcbe9f417ca3f12c0515e3ed67f59",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -715,7 +719,7 @@ export const QUESTIONS = [
       "把條件x＞8刪除"
     ],
     "answerIndex": 0,
-    "explanation": "分開檢查方程式與限制；5不大於8；排除該解。所以答案是「不是題目可接受的解」。",
+    "explanation": "分開檢查方程式與限制；5不大於8；排除該解。所以答案是「不是題目可接受的解」。 不能把五任意改成九，也不能刪除題幹給定的 x>8 限制。",
     "steps": [
       "分開檢查方程式與限制",
       "5不大於8",
@@ -743,7 +747,7 @@ export const QUESTIONS = [
         "reason": "條件不能任意刪除。"
       }
     ],
-    "commonMistake": "只驗算方程式。",
+    "commonMistake": "只驗算五是否滿足方程式，完全忽略題幹另外要求 x 必須大於八。",
     "concept": "額外條件與方程式同樣重要。",
     "tags": [
       "代數",
@@ -758,7 +762,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "853f27aec1005d55d4894eebedf0dcb667cf075d3e6757706d8d9ef26dab33be",
+    "contentSha256": "8a68418dedbe25873408a25dfba0a616d0b1f95ae6ad0641f25aac5d78375ffa",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -781,7 +785,7 @@ export const QUESTIONS = [
       "應改成2.7公斤"
     ],
     "answerIndex": 2,
-    "explanation": "檢查重量為正；檢查量測精度；2.75可被精確表示。所以答案是「合理」。",
+    "explanation": "檢查重量為正；檢查量測精度；2.75可被精確表示。所以答案是「合理」。 這是可量測的連續量，不需強制改成整數公斤，也不應降低題目給定的精度。",
     "steps": [
       "檢查重量為正",
       "檢查量測精度",
@@ -809,7 +813,7 @@ export const QUESTIONS = [
         "reason": "2.7會改變精確答案。"
       }
     ],
-    "commonMistake": "把所有數量都當離散整數。",
+    "commonMistake": "把重量也當成必須用整數表示的離散數量，因而任意改寫精確值。",
     "concept": "重量通常允許小數。",
     "tags": [
       "代數",
@@ -824,7 +828,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e1c0f730e6a08d80a7998eb7cae90564800cd48af9c3a9d9d2c1097a5a7cf6fb",
+    "contentSha256": "c7c9e4a99476de6171d8f19645b6abee3eae1e901331632897695cc0aafa1da9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -847,7 +851,7 @@ export const QUESTIONS = [
       "不合理，座位數需為整數"
     ],
     "answerIndex": 3,
-    "explanation": "辨認座位為離散數量；38.2非整數；回查模型。所以答案是「不合理，座位數需為整數」。",
+    "explanation": "辨認座位為離散數量；38.2非整數；回查模型。所以答案是「不合理，座位數需為整數」。 「每台座位數相同」不是平均值的意思，而是每台都要有同一整數座位數。",
     "steps": [
       "辨認座位為離散數量",
       "38.2非整數",
@@ -875,7 +879,7 @@ export const QUESTIONS = [
         "reason": "單台完整座位數必須是整數；38.2不能直接作答，也不能未經題意授權取整。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "以平均概念掩蓋不合法解。",
+    "commonMistake": "用「平均座位數」解釋三十八點二，掩蓋單台完整座位數必須為整數。",
     "concept": "離散量不能用任意小數。",
     "tags": [
       "代數",
@@ -890,7 +894,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "巴士與座位是不可分割的離散物件，情境直接決定答案必須是整數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bae6f6d0a468c749bbef5aea440d3c583b840d7ecef1fa8d84d8cd966b3e80d3",
+    "contentSha256": "c0892a4a5ee7ef710b423eb7532b35f0910242d04e59cac1f1952abefe59fe4d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -913,7 +917,7 @@ export const QUESTIONS = [
       "必須改成90小時"
     ],
     "answerIndex": 0,
-    "explanation": "換算1.5小時=90分鐘；符合半小時倍數；判定合理。所以答案是「合理」。",
+    "explanation": "換算1.5小時=90分鐘；符合半小時倍數；判定合理。所以答案是「合理」。 一點五小時表示一小時三十分，不是一小時五分，也不必向上取整。",
     "steps": [
       "換算1.5小時=90分鐘",
       "符合半小時倍數",
@@ -941,7 +945,7 @@ export const QUESTIONS = [
         "reason": "1.5小時不是90小時。"
       }
     ],
-    "commonMistake": "把1.5誤解成1小時5分。",
+    "commonMistake": "把小時的小數部分零點五誤當成五分鐘，而非三十分鐘。",
     "concept": "小數時間可換成分鐘檢查。",
     "tags": [
       "代數",
@@ -956,7 +960,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "題目允許半小時計量，這項精度條件決定1.5小時可以被接受。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "120f0d0161661cdd8edfe16b4bff781f85dca4a23e9243545c7cc23352a63635",
+    "contentSha256": "be3975edf4d88cec41ae1c3fc6bc2f2fec53489d6d565b8b28f11e2c8f940679",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -979,7 +983,7 @@ export const QUESTIONS = [
       "不合理，但應改成200%"
     ],
     "answerIndex": 1,
-    "explanation": "把125%換成1.25；計算1.25×200=250；與容量200比較。所以答案是「不合理，250人超過容量」。",
+    "explanation": "把125%換成1.25；計算1.25×200=250；與容量200比較。所以答案是「不合理，250人超過容量」。 百分率本身雖可超過百分之百，但入場人數仍必須遵守不得超載的額外條件。",
     "steps": [
       "把125%換成1.25",
       "計算1.25×200=250",
@@ -1022,7 +1026,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "容量上限與不得超載規定決定125%是否可接受，若刪除限制，125%本身並非數學錯誤。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6c988e49dd01dba7dbbeea0627c6c6303fbfde6ffa7130f633e6a127b1dbc857",
+    "contentSha256": "256c594953a833111d94b8314ea67113b24b701136032f04713762943f213ee4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }
@@ -1045,9 +1049,9 @@ export const CONSTRUCTED_RESPONSES = [
       "提出回查列式或判定無精確方案。"
     ],
     "fullCreditSolution": [
-      "24.5不能直接作為每艘船完整座位數。",
-      "若原方程式與資料無誤，表示不存在完全符合等分條件的整數方案。",
-      "應回查題目是否允許不同載客數或要求最少船數；未授權時不得改成24或25。"
+      "先辨認未知數是「每艘船可載的完整人數」。雖然代數方程式解得 24.5，但人數與固定座位數都必須是非負整數，因此 24.5 不能直接採用。",
+      "不能無條件把 24.5 四捨五入為 25，也不能直接捨去為 24，因為這兩個整數都不再是原方程式的精確解。",
+      "下一步應回查列式與題目資料，並確認題目是否允許各船載客數不同，或其實要求最少船數。若都沒有，應判定不存在精確符合等分條件的整數方案。"
     ],
     "alternativeSolutions": [
       "可用代回說明24與25都不等於原方程式的精確解。"
@@ -1075,15 +1079,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "直接向上取25。",
-      "看到代數成立就忽略座位整數性。"
+      "看到二十四點五就直接向上取成二十五人，但題目未說是求最少容量，而且新值不滿足原方程式。",
+      "只檢查 24.5 能代回方程式，忽略每艘船的人數與固定座位數不可為半個的情境限制。"
     ],
     "independentReview": {
       "derivedResult": "不可直接採用24.5",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "d9a10e1bd2c3907cc7715f0005de3f44ba452b2232dce7e95714b89b0ad10b4e",
+    "contentSha256": "c4e12c34ee4a8fe326608439f6cf49078dec79890f69a8772d0cb1b5f011031b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -1103,9 +1107,9 @@ export const CONSTRUCTED_RESPONSES = [
       "說明不合理不等於改成絕對值。"
     ],
     "fullCreditSolution": [
-      "若x=5，寬為5-8=-3公分。",
-      "幾何邊長不可為負，因此x=5不是此情境的可接受解。",
-      "應回查建模或資料，不能把寬改成3公分。"
+      "將 x=5 代入邊長條件，長為 5 公分，寬為 x-8=5-8=-3 公分。代數計算雖得到 -3，但這不是可接受的幾何邊長。",
+      "長方形的長與寬都必須大於 0。由寬 x-8>0 可知 x>8，而 x=5 不滿足此基本範圍，所以不能作為本情境的解。",
+      "應回查面積資料或建模過程，找出為何產生不合法的解。不能把 -3 直接取絕對值改成 3 公分，因為那會改變原本 x-8 的關係。"
     ],
     "alternativeSolutions": [
       "可用限制x>8直接排除x=5。"
@@ -1133,15 +1137,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "只檢查長為正。",
-      "把-3取絕對值。"
+      "只檢查長 x=5 是正數，未將 x 代入寬 x-8，因而漏掉寬為 -3 公分的矛盾。",
+      "把負寬度 -3 公分直接取絕對值改成 3 公分，但 3 並不等於當 x=5 時的 x-8。"
     ],
     "independentReview": {
       "derivedResult": "不可接受，因寬為-3公分",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "40386f2973b35e32b60663c8d048d423eaadf7339373b3e445102ad892e7f477",
+    "contentSha256": "2aaf9554354dfa504624ffa244c22fbdc673fc4e56d4d7c1d6f234ddab9de74b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }

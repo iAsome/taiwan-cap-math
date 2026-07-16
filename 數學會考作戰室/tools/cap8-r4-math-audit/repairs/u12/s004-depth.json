@@ -1,0 +1,34 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u12",
+  "batch":"013-u12-complete",
+  "skills":["s004"],
+  "mc":[
+    {"questionId":"u12-s004-v001","expectedContentSha256":"aeb8b4f8704844ffbd73dff984b311cf24bc1ce2d8eb97a4be68fd77adb97b1d","appendText":{"explanation":"把前兩項提出甲、後兩項提出乙後，兩組括號都成為丙加丁，才能再把此完整括號提出；最終兩因式相乘展開，會依序恢復四個原項而不改變任何配對。","misconceptionTarget":"各組提出公因式後，兩個括號必須完全相同或可由整體負號轉換。"}},
+    {"questionId":"u12-s004-v002","expectedContentSha256":"e03020114035996985a9e860ccf13950a2d2123cbedfa42d492c2644c9c17486","appendText":{"explanation":"前兩項共同含未知數並留下未知數加三，後兩項共同含二也留下同一括號；提出共同括號後，外層商未知數與二組成另一因式，展開可回到四項。","misconceptionTarget":"先合併同類項雖不改值，卻會遮住題目要求觀察的兩組共同括號。"}},
+    {"questionId":"u12-s004-v003","expectedContentSha256":"7870f4ff8838bd7540991c33b708b746b055371f61737ada9f808644b006e927","appendText":{"explanation":"前組六倍平方減九倍一次提出三倍未知數後留下二倍未知數減三；後組四倍一次減六提出二後也留下同一括號，最後外層商相加成三倍未知數加二。","misconceptionTarget":"後組四倍未知數減六提出二後仍是二倍未知數減三，常數符號不可改。"}},
+    {"questionId":"u12-s004-v004","expectedContentSha256":"b2efc6e235afe79063b8dbd4cb764b753ccf689f852027fac77747218de49949","appendText":{"explanation":"前組以甲提出後得到乙減丙；後組負二乙加二丙必須提出負二，才能也得到乙減丙。再提出共同差式後，另一因式是甲減二，展開符號逐項相符。"}},
+    {"questionId":"u12-s004-v005","expectedContentSha256":"7e4527895e79a7a42ca34545f55e188c0ba5a5b9fd7c1a384be170b35fe8751c","appendText":{"explanation":"前兩項提出未知數後留下未知數加乙，後兩項提出三後同樣留下未知數加乙；把共同括號提出，外層商未知數與三形成另一因式，乘回可還原四項。","misconceptionTarget":"提出共同括號後，另一因式只由各組外層商組成，不應任意再加入乙。"}},
+    {"questionId":"u12-s004-v006","expectedContentSha256":"7d244ee1af146eb2317e85246a8d9ede90c66deb59df961fc3941137e8d15675","appendText":{"explanation":"前組提出二倍甲留下甲加三乙；後組負甲減三乙需提出負一，才會得到完全相同的括號。共同括號提出後另一因式為二甲減一，展開四項皆吻合。","misconceptionTarget":"第二組的每一項都要除以負一，才能把相反符號轉成相同括號。"}},
+    {"questionId":"u12-s004-v007","expectedContentSha256":"4cf98f699cb49f1c09a87da06f2cc497aaafff183e4293e25571f927b303e9ec","appendText":{"explanation":"加法交換律允許把含丙的兩項排在一起、含丁的兩項排在一起；前組提出丙、後組提出丁，都留下甲加三，再提出共同括號所得乘積只與原答案交換因式順序。"}},
+    {"questionId":"u12-s004-v008","expectedContentSha256":"6060090cff07ce554e7795f9bef127b215a66d48128f5b7af527e0c7b310629f","appendText":{"explanation":"前兩項提出未知數、後兩項提出參數後都留下未知數加四；這只使用分配律，沒有除以參數或取平方根，所以參數為正、負、零或非整數時，恆等式都成立。"}},
+    {"questionId":"u12-s004-v009","expectedContentSha256":"cd9d891a248333bed7c7cfdd4b4acfe0be9eff1db5893f52f9c2967eec4d0021","appendText":{"explanation":"將前兩項成組可提出三倍未知數並留下未知數加二乙，後兩項成組提出負五也留下同一括號；其餘分組無法在兩組中製造相同二項式，因此只有此選項成功。"}},
+    {"questionId":"u12-s004-v010","expectedContentSha256":"a8bc086a221322cbe9a8620e56507fb88ca43abe41d3f4cf0fc5a68cc04f0cea","appendText":{"explanation":"上列兩區面積提出高度甲後留下共同總寬丙加丁，下列提出高度乙後也留下相同寬度；總面積雖是高度和乘寬度和，但題目只問寬，因此取丙加丁公尺。"}},
+    {"questionId":"u12-s004-v011","expectedContentSha256":"9e44ccf6535e5a84dd48876a9bec1241bb10fcef79614c343c50de8363827074","appendText":{"explanation":"前兩項提出五倍數量留下數量加二，後兩項提出三也留下相同括號；再提出共同格數後，另一因式是五倍數量加三，展開會恢復四個容量項。","misconceptionTarget":"五倍數量與常數三不是同類項，只能作為另一因式中的兩項保留。"}},
+    {"questionId":"u12-s004-v012","expectedContentSha256":"931c99291e706003b76e23e8509d3f3a9e49f6aba9c784421e180a3add57354c","appendText":{"explanation":"前兩項提出二倍甲後留下乙加三；後兩項負乙減三必須提出負一，才得到同一版型因子。共同括號提出後另一因式為二甲減一，展開可還原全部成本項。","misconceptionTarget":"後兩項共同的是負一，若漏掉整體負號就無法形成相同的乙加三括號。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u12-s004-cr001","expectedContentSha256":"927338ad238187150dabc81405ec8eb0ad056ee3285b95041ec1cdd3223e1e95","appendArray":{"fullCreditSolution":["把前兩項與後兩項分組，前組提出四甲、後組提出負三，兩組都留下甲加二乙；再提出此共同括號得到四甲減三乘甲加二乙。回展時四甲產生前兩項、負三產生後兩項，四個係數與符號完全一致。"],"reasoningSteps":["最後將兩因式展開，逐項核對四甲平方、八甲乙、負三甲與負六乙。"],"commonErrors":["第二組負三甲減六乙必須提出負三；若提出正三，括號會成為原括號的相反式。"]}},
+    {"questionId":"u12-s004-cr002","expectedContentSha256":"3685bebccb2e4ae4d3c008e257af6b38994165458a1d68c8aaf9bdb3a3516a7d","appendArray":{"fullCreditSolution":["將前兩項提出未知數得到未知數乘未知數加四，後兩項提出參數也得到參數乘未知數加四；提出共同括號後為未知數加參數乘未知數加四。整個過程只用分配律，沒有除以參數，因此對參數的所有可運算數值都成立。"],"reasoningSteps":["展開未知數加參數與未知數加四，四項依序回到未知數平方、四倍未知數、參數乘未知數與四倍參數。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u12-s004-lecture-r1","expectedContentSha256":"032d4622402f777144abefd4cb0cfa4363f9500594860badf5a3393212ce58a9","set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"mx+my+nx+ny","solutionSteps":["前兩項提 m，後兩項提 n。","得到 m(x+y)+n(x+y)。"],"answer":"(m+n)(x+y)","why":"前兩項提出甲、後兩項提出乙後，都留下丙加丁這個完整括號；再用分配律逆向提出共同括號，另一因式由外層商甲與乙組成，展開可回到四項。"},
+      {"exampleId":"L2","prompt":"x²+4x+3x+12","solutionSteps":["前組 x(x+4)，後組 3(x+4)。"],"answer":"(x+3)(x+4)","why":"前組兩項共同含未知數，後組兩項共同含三，逐組提出後都得到未知數加四；把共同括號提出，外層未知數與三形成另一因式並可完整回展。"},
+      {"exampleId":"L3","prompt":"6a²-9a+4ab-6b","solutionSteps":["分成 (6a²-9a)+(4ab-6b)。","提 3a(2a-3)+2b(2a-3)。"],"answer":"(2a-3)(3a+2b)","why":"前組提出三甲、後組提出二乙後，兩者都留下二甲減三；提出共同差式後，另一因式保留三甲加二乙，回展會逐項恢復正負號與兩種變數。"},
+      {"exampleId":"L4","prompt":"pq-pr-2q+2r","solutionSteps":["前組 p(q-r)。","後組 -2(q-r)。"],"answer":"(p-2)(q-r)","why":"前組提出甲後是乙減丙，後組必須提出負二才能也得到乙減丙；若只提出正二會得到相反括號。共同差式提出後，另一因式自然是甲減二。"}
+    ]},"appendArray":{"conceptNarrative":["分組分解的目標是讓每一組先提出自己的公因式後，出現完全相同的二項括號，再把該括號視為整體因式提出。分組可以利用加法交換律調整項目順序，但不能改變任何項的符號或遺漏項；若兩組括號互為相反式，應從其中一組提出負因式，使括號順序與符號一致。完成第二次提出後，必須展開兩個最終因式並逐項核對原來所有項。"]}}
+  ],
+  "drawingSpecs":[],
+  "textFiles":[]
+}

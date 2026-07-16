@@ -1,0 +1,989 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u18",
+  "batch": "019-u18-complete",
+  "skills": [
+    "s007",
+    "s008",
+    "s009",
+    "s010",
+    "s011"
+  ],
+  "mc": [
+    {
+      "questionId": "u18-s007-v001",
+      "expectedContentSha256": "de512ad0164191c2a621042109ac3e0e6a3bd6bd532f901736e209d40ff12b43",
+      "appendText": {
+        "explanation": "獨立驗算：AA 代表 Angle-Angle；題目恰給兩組角相等，所以直接適用。 逐項排除：「SAS」SAS 需要兩組邊成比例與夾角相等。；「SSS」SSS 需要三組邊成比例。；「SSA」SSA 不是一般相似判定。；因此只有「AA」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s007-v002",
+      "expectedContentSha256": "158b327315ae1ddfeff1b4b2fde50bedf5080de0484a87da753fe01475b97e06",
+      "appendText": {
+        "explanation": "獨立驗算：第三角也都是 55°，兩三角形形狀相同，因此相似。 逐項排除：「兩三角形必全等」角度相同只保證相似，不保證邊長相等。；「兩三角形不相似」已有兩組對應角相等。；「仍需知道三邊長」AA 判定不需要邊長資料。；因此只有「△ABC∼△DEF」符合全部條件。",
+        "misconceptionTarget": "角度相同只保證相似，不保證邊長相等。"
+      }
+    },
+    {
+      "questionId": "u18-s007-v003",
+      "expectedContentSha256": "38c6050d92e03c13680e8e528ab558254b7be0591c86391dfabdf4ace4f0a9a0",
+      "appendText": {
+        "explanation": "獨立驗算：對頂角定理直接給 ∠AOB=∠DOC，這是第二組相等角。 逐項排除：「∠ABO=∠DCO，因為同位角」題目沒有平行線條件。；「∠AOB+∠DOC=180°」對頂角是相等，不是互補。；「∠A=∠D，因為共同角」A 與 D 是不同頂點，不是共同角。；因此只有「∠AOB=∠DOC，因為對頂角相等」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s007-v004",
+      "expectedContentSha256": "ad0d86ee549233f60ef8948fb85bf855cec576dceb1dec38fc029594f82c6e64",
+      "appendText": {
+        "explanation": "獨立驗算：D 角由 AD 與 DE 形成，對應 B 角由 BA 與 BC 形成；E 角同理對應 C。 逐項排除：「∠ADE=∠ACB，∠AED=∠ABC」把兩組平行線角交叉配對。；「∠DAE=∠ABC，∠AED=∠BAC」共同角與平行角位置不對應。；「∠ADB=∠AEC，∠ABC=∠ACB」第一組角不是兩個三角形的對應角。；因此只有「∠ADE=∠ABC，∠AED=∠ACB」符合全部條件。",
+        "misconceptionTarget": "把兩組平行線角交叉配對。"
+      }
+    },
+    {
+      "questionId": "u18-s007-v005",
+      "expectedContentSha256": "96ca256d07905f9d8d95f9090439030e5555c94fc4991ffbf45ff267a8379541",
+      "appendText": {
+        "explanation": "獨立驗算：從第一三角形到第二三角形放大 12/8=1.5，BC=10 對應 EF=15。 逐項排除：「6.67」相似比方向取反。；「14」用邊長差 4 加到 10。；「18」把 10 乘錯誤倍率 1.8。；因此只有「15」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s007-v006",
+      "expectedContentSha256": "975d0005739f9786854eb64eed603c1942c53f06a1c56c6750bcf841d9163cbe",
+      "appendText": {
+        "explanation": "獨立驗算：AA 需要兩組角；『另一組對應銳角相等』正好補足，其他條件都不直接給第二組角。 逐項排除：「一組對應斜邊相等」一組邊長不足以配合 AA。；「面積相等」面積相等不保證形狀相同。；「周長相等」周長相等也不保證相似。；因此只有「另一組對應銳角相等」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s007-v007",
+      "expectedContentSha256": "77868bfab98cb751a6363d6f0b05391d9f64eb3968018ebe5396fe1db1f42483",
+      "appendText": {
+        "explanation": "獨立驗算：從 △BAD 的 B、A、D 依次對應 △BCA 的 B、C、A，因此關係正確。 逐項排除：「△BAD∼△CAB」第二個頂點 A 應對 C，不是 A。；「△ABD∼△BCA」第一組角配對順序不符。；「△BDA∼△BCA」BDA 的第一角 B 對應 B，但第二角 D 沒有與 C 的已知配對。；因此只有「△BAD∼△BCA」符合全部條件。"
+      },
+      "replaceText": {
+        "關系": "關係",
+        "随意": "隨意",
+        "没有": "沒有"
+      },
+      "reviewReplaceText": {
+        "關系": "關係",
+        "随意": "隨意"
+      }
+    },
+    {
+      "questionId": "u18-s007-v008",
+      "expectedContentSha256": "898e7611aef9437844b5c82bb0655a0f46902405362e362f3deb3a2258843ea3",
+      "appendText": {
+        "explanation": "獨立驗算：兩組角集合都是 50°、60°、70°；按位置正確配對後，△ABC∼△DFE。 逐項排除：「不能，因為只有 ∠A=∠D」另有 ∠B=∠F=70° 與 ∠C=∠E=60°。；「能，且 △ABC∼△DEF」該順序會把 B=70° 對到 E=60°。；「能，且兩三角形必全等」角相同只保證相似，邊長未知。；因此只有「能，且 △ABC∼△DFE」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s007-v009",
+      "expectedContentSha256": "72a06f67fb0d25f758f0db0c4402800fa097445c6c18732e480580560bc821b0",
+      "appendText": {
+        "explanation": "獨立驗算：原三角形兩銳角分別出現在兩個小三角形中；每個小三角形的另一銳角與原對應，故三者角集合相同。 逐項排除：「只有兩個小三角形彼此全等」一般不全等。；「小三角形與原三角形沒有角度關係」各自共享一個銳角並都有直角。；「只有面積相同時才相似」相似由角度決定，不需面積相同。；因此只有「兩個小三角形彼此相似，且都與原三角形相似」符合全部條件。"
+      },
+      "replaceText": {
+        "關系": "關係",
+        "锐角": "銳角",
+        "相似链": "相似鏈",
+        "追踪": "追蹤"
+      },
+      "reviewReplaceText": {
+        "關系": "關係",
+        "锐角": "銳角",
+        "追踪": "追蹤"
+      }
+    },
+    {
+      "questionId": "u18-s007-v010",
+      "expectedContentSha256": "3f4fa42940cb25e1bec09d8c616f8b57fac3fd5502b4f7123250ada0500efbf9",
+      "appendText": {
+        "explanation": "獨立驗算：P 點的夾角相同；若標桿與塔均垂直地面，則 B 與塔底的角均為 90°，兩組角足夠。 逐項排除：「標桿高度等於測量員身高」長度相等不是 AA 的必要條件。；「塔影與標桿影一樣長」影長相等不保證視線角模型。；「P 到標桿與塔的距離相等」兩三角形大小相等不是建立相似的角度條件。；因此只有「標桿與塔都垂直地面」符合全部條件。",
+        "misconceptionTarget": "長度相等不是 AA 的必要條件。"
+      },
+      "replaceText": {
+        "關系": "關係",
+        "夹角": "夾角",
+        "選择": "選擇",
+        "几何": "幾何"
+      },
+      "reviewReplaceText": {
+        "關系": "關係",
+        "夹角": "夾角",
+        "几何": "幾何"
+      }
+    },
+    {
+      "questionId": "u18-s007-v011",
+      "expectedContentSha256": "1f67e6721ab14fd5e5c19550953c4c027a7d53d584f24acda9b51f229addeb20",
+      "appendText": {
+        "explanation": "獨立驗算：小對大線性比為 CD/CB=1/5，因此大牆高對框高是 5/1。 逐項排除：「3:2」這是 CD:CE，不是大圖與小圖對應距離比。；「1:5」方向與題目 AB:DE 相反。；「15:2」把 150:20 錯當成對應比。；因此只有「5:1」符合全部條件。"
+      },
+      "replaceText": {
+        "關系": "關係"
+      },
+      "reviewReplaceText": {
+        "關系": "關係"
+      }
+    },
+    {
+      "questionId": "u18-s007-v012",
+      "expectedContentSha256": "a2d5900b247557391a81eb159f3370d73a65ea4469545bbbda597c56271f6819",
+      "appendText": {
+        "explanation": "獨立驗算：標桿三角形以水平地面形成直角；坡面處的邊與鉛直樹幹不一定形成相同角，因此兩三角形不保證有兩組相等角。 逐項排除：「能，樹高為 9 m」只有地面水平且物體鉛直時才可直接得 9 m。；「能，樹高為 16 m」比例方向也不正確。；「不能，因為 AA 永遠不能用於影子」在水平地面同一時刻，AA 正是標準方法。；因此只有「不能，坡面影長不一定對應同一水平角模型」符合全部條件。"
+      },
+      "replaceText": {
+        "夹角": "夾角",
+        "几何": "幾何",
+        "评估": "評估",
+        "会使": "會使",
+        "樹干": "樹幹",
+        "检查": "檢查"
+      },
+      "reviewReplaceText": {
+        "几何": "幾何",
+        "评估": "評估",
+        "会使": "會使",
+        "樹干": "樹幹"
+      }
+    },
+    {
+      "questionId": "u18-s008-v001",
+      "expectedContentSha256": "d100fb8ca563a429172882b02e84e314be9a727c35bcc24e35e2edb9072beb41",
+      "appendText": {
+        "explanation": "獨立驗算：由字母順序 Side-Angle-Side 可知角在兩邊之間，必須是共同端點形成的夾角。 逐項排除：「任意一個對應角」非夾角相等通常不足以判定。；「最大角」SAS 不要求使用最大角。；「直角」夾角不一定是直角。；因此只有「兩組成比例邊的夾角」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v002",
+      "expectedContentSha256": "bf03037da072322a4717b4cfefa606279182d1ee98d14ba65d951247f86f3eae",
+      "appendText": {
+        "explanation": "獨立驗算：A 周圍的兩邊 6、9 與 D 周圍的 10、15 同比放大 5/3，夾角又相等，故相似。 逐項排除：「不能相似，因為 6≠10」相似只要求成比例，不要求邊等長。；「只能由 AA 判定」題目只給一組角，主要條件是 SAS。；「一定全等」對應邊長不同，不是全等。；因此只有「兩三角形可由 SAS 判定相似」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v003",
+      "expectedContentSha256": "84ad0d9beac366b735171d2d29eaabd445bba221a8c5632668156fa9cf99feec",
+      "appendText": {
+        "explanation": "獨立驗算：AB 與 BC 相交於 B，DE 與 EF 相交於 E，故 ∠B、∠E 正好是夾角。 逐項排除：「因為 B、E 都是三角形第二個頂點」字母位置本身不是幾何理由。；「因為兩組邊長相等」題目只說比例相等。；「因為任何一組角相等都可以」必須是兩組已知邊的夾角。；因此只有「∠B 與 ∠E 分別是 AB、BC 和 DE、EF 的夾角」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v004",
+      "expectedContentSha256": "2769de560375b004117d9ea24a97708549c9b33d0818cd88f2f419266d80a5a8",
+      "appendText": {
+        "explanation": "獨立驗算：B 對應 D、C 對應 E，兩組邊比均 4:7，夾角 A 相同，所以相似順序為 ABC 對 ADE。 逐項排除：「△ABC∼△AED」此順序會把 AB 對 AE，比例不符。；「兩三角形不相似」8/14=12/21=4/7，且夾角共用。；「兩三角形全等」邊長尺度不同。；因此只有「△ABC∼△ADE」符合全部條件。",
+        "misconceptionTarget": "此順序會把 AB 對 AE，比例不符。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v005",
+      "expectedContentSha256": "39b3deed0ee312286b56d780862048490e6350e9dbdf793e8bcc625705ff6390",
+      "appendText": {
+        "explanation": "獨立驗算：即使邊比相同，非夾角可能對應不同形狀；缺少充分條件，所以不能直接判定。 逐項排除：「能，因為已有兩邊比和一角」忽略夾角位置。；「能，但只能在直角三角形中」題目未給其他足夠條件。；「一定全等」邊比 2:3 已表示大小不同。；因此只有「不能」符合全部條件。",
+        "misconceptionTarget": "忽略夾角位置。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v006",
+      "expectedContentSha256": "3866076cc7e104524614d37da018416720455aa4cbc56bc948816a78175ffa62",
+      "appendText": {
+        "explanation": "獨立驗算：兩組對應邊都從第一圖到第二圖放大 3 倍，因此第一:第二=1:3。 逐項排除：「3:1」方向與題目相反。；「5:7」這是同一三角形內兩邊的比。；「15:21」未跨圖形比較，且可化簡為 5:7。；因此只有「1:3」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v007",
+      "expectedContentSha256": "0550612c8da947fc9e8e3b082ce010c67882c88e85668748c0e1fb6f5ff91a01",
+      "appendText": {
+        "explanation": "獨立驗算：SAS 要求 A 周圍兩邊同比；DE 的 10 對應 AB=8，因此 x=7。 逐項排除：「5」把 x+1 直接等於 6。；「8」求得 AB=8 後忘記減 1。；「9」把比例方向用成 12/15=10/(x-1)。；因此只有「7」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v008",
+      "expectedContentSha256": "f29ec3f9f9e97cec578fb90600d54d8d4b750c202159101ba1fea6940c6698fe",
+      "appendText": {
+        "explanation": "獨立驗算：相似比 PQR:XYZ 已由 9:15 確定為 3:5，所以 QR:YZ=3:5。 逐項排除：「4:5」這是 PR:XZ=12:20 化簡錯誤，正確也是 3:5。；「9:12」同一三角形內邊比。；「5:3」方向與題目相反。；因此只有「3:5」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v009",
+      "expectedContentSha256": "4df8bca7f8ab79c81734650412ef7334ca5f0d420200c905a822d8c4eddcaf18",
+      "appendText": {
+        "explanation": "獨立驗算：小第三邊 7 乘放大倍率 5/2 得 17.5；與題給 18 不同，因此至少一筆測量或角度標示錯誤。 逐項排除：「兩三角形相似，因為前兩邊與夾角符合 SAS」若相似，大三角形第三邊應為 17.5，不是 18。；「兩三角形不相似，但所有測量都可能正確」前兩邊與夾角若正確就必相似，因此不能同時保留第三邊 18。；「兩三角形全等」對應邊比例 2:5，不可能全等。；因此只有「資料矛盾，不可能同時成立」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s008-v010",
+      "expectedContentSha256": "461d3955799d62fe3ad6879ff143a01c69ccfccab8a01b62e9a45691b3cc7e85",
+      "appendText": {
+        "explanation": "獨立驗算：大結構是小結構的 5/3 倍；兩組邊倍率相同且接點夾角相等，因此相似。 逐項排除：「不相似，因為四條連桿長都不同」相似允許大小不同。；「相似比小:大=2:3」18:30=3:5，不是 2:3。；「只能判定全等」邊長不相等，且條件是比例。；因此只有「兩結構由 SAS 相似，相似比小:大=3:5」符合全部條件。"
+      },
+      "replaceText": {
+        "夹角": "夾角"
+      },
+      "reviewReplaceText": {
+        "夹角": "夾角"
+      }
+    },
+    {
+      "questionId": "u18-s008-v011",
+      "expectedContentSha256": "35ba3acd6942ba7c2a2532bd7244a632e3b64b572681eb22b914f243ea68989e",
+      "appendText": {
+        "explanation": "獨立驗算：120000/3=40000、180000/4.5=40000，兩個實地距離都是圖上 40000 倍，且夾角相同。 逐項排除：「不支持，因為 cm 與 km 不能比較」統一單位後即可比較。；「支持，相似比為 1:4」忽略 1 km=100000 cm。；「不支持，因為只知道一組角」SAS 還給了兩組邊比例。；因此只有「支持，兩組邊比皆為 1:40000 且夾角相等」符合全部條件。"
+      },
+      "replaceText": {
+        "夹角": "夾角"
+      },
+      "reviewReplaceText": {
+        "夹角": "夾角"
+      }
+    },
+    {
+      "questionId": "u18-s008-v012",
+      "expectedContentSha256": "47376deadd3533b1f100ea57d9edc0c4dc48efd49117c9e369552dc6a60ddcdf",
+      "appendText": {
+        "explanation": "獨立驗算：若角不是夾角，可能出現不同形狀支架；確認夾角位置後，才可保證模板形狀相同。 逐項排除：「兩支架面積是否相等」相似模板不要求面積相等。；「兩支架周長是否相等」大小可以不同。；「第三邊是否完全等長」SAS 不需要第三邊等長。；因此只有「相等角是否為那兩組成比例邊的夾角」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v001",
+      "expectedContentSha256": "43e2a9af863ab6a72106d46276ca1c202582ec7341ae27fb9b97dd11821f8bbc",
+      "appendText": {
+        "explanation": "獨立驗算：第二三角形每邊都是第一個的 2 倍，故三組邊同一倍率，SSS 相似。 逐項排除：「AA」題目未直接提供角度。；「SAS」雖可另推，但已知條件直接是三組邊。；「SSA」SSA 不是一般相似判定。；因此只有「SSS」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v002",
+      "expectedContentSha256": "7475e7fad2e2eaff9c89c43789a3a2ec9de693a896de8274af3a0f8deccd14ea",
+      "appendText": {
+        "explanation": "獨立驗算：三角形不等式只需檢查最短兩邊和大於最長邊；此處成立。 逐項排除：「不能，因為 4+6=10>9」這正是能形成三角形的條件。；「不能，因為三邊不是整數倍」形成三角形不要求比例。；「無法判斷」三邊已知，最短兩邊和可直接檢查。；因此只有「能」符合全部條件。",
+        "misconceptionTarget": "這正是能形成三角形的條件。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v003",
+      "expectedContentSha256": "e7445c3a983c044e0e342fc7acc69e51fd1c32bedf72cba122db40f400cd72ea",
+      "appendText": {
+        "explanation": "獨立驗算：AB 與 BC 共點 B，對應 DE 與 EF 共點 E，所以 B↔E；其餘 A↔D、C↔F。 逐項排除：「△ABC∼△DFE」此順序會讓 AB 對 DF，5:16 不符。；「△ACB∼△DEF」AC 会對 DE，8:10 不等於 1:2。；「兩三角形不相似」三組對應邊都是 1:2。；因此只有「△ABC∼△DEF」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v004",
+      "expectedContentSha256": "d6b60603333fcab399f7b87694b3c51710ae61cfbc793847511d904db5fe85fe",
+      "appendText": {
+        "explanation": "獨立驗算：若相似，9 對應邊應為 18；實際給 17，故不相似。 逐項排除：「相似，相似比為 1:2」第三組 9:17 不等於 1:2。；「相似，因為前兩組邊比相等」SSS 要求三組。；「全等」邊長顯然不同。；因此只有「不相似」符合全部條件。",
+        "misconceptionTarget": "第三組 9:17 不等於 1:2。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v005",
+      "expectedContentSha256": "f0511ea88debd0533f6a1c4a5ab426dcb09fa97faf2fe6af80f9268aebdd344e",
+      "appendText": {
+        "explanation": "獨立驗算：6:8:10 同乘 2.5 得 15:20:25。 逐項排除：「17、19」以固定差 2、4 放大。；「30、40」把最短邊倍率誤作 5。；「16、20」只加最短邊增量 9。；因此只有「20、25」符合全部條件。",
+        "misconceptionTarget": "以固定差 2、4 放大。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v006",
+      "expectedContentSha256": "3f2d0c72abb0f5193a7db0f73403c531b32d16e719aba7f24b4b9ccb543194b0",
+      "appendText": {
+        "explanation": "獨立驗算：第二選項的4、5、7與8、10、14都滿足三角形不等式，且對應邊比8/4=10/5=14/7=2，所以兩三角形以SSS相似。 逐項排除：「2、3、6 與 4、6、12」2+3<6，不能形成三角形。；「3、4、5 與 6、8、11」第三組比 5:11 不一致。；「5、5、9 與 10、10、19」第二組 10+10>19 能成三角形，但 9:19 不等於 1:2。；因此只有「4、5、7 與 8、10、14」符合全部條件。"
+      },
+      "reviewReplaceText": {
+        "检查": "檢查"
+      }
+    },
+    {
+      "questionId": "u18-s009-v007",
+      "expectedContentSha256": "5eb556923d50ed64a75b3a905d09b4036142373152e5f9a7205f5863a9430e02",
+      "appendText": {
+        "explanation": "獨立驗算：第二三角形是第一個的 5/3 倍，故第一最短邊 x=10×3/5=6。 逐項排除：「5」把 12:20 化簡為 3:5 後乘錯。；「8」用 15:25 的差 10 配置。；「18」把比例方向取反。；因此只有「6」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v008",
+      "expectedContentSha256": "40670f7e8ec62c0ac12e124e19a4e44bfcedacb901ffdddb88559bb95cba7a1a",
+      "appendText": {
+        "explanation": "獨立驗算：三角形不等式必須嚴格大於；等於時三點共線，不能使用相似三角形判定。 逐項排除：「兩三角形相似，因為三組比皆 1:2」2+3=5 只能形成退化線段，不是三角形。；「只有第一組不能形成三角形」第二組 4+6=10 也退化。；「兩三角形全等」邊長比例不是 1，且圖形不存在。；因此只有「兩組都不能形成三角形，因此不能用 SSS 判定相似」符合全部條件。"
+      },
+      "replaceText": {
+        "認识": "認識"
+      },
+      "reviewReplaceText": {
+        "認识": "認識"
+      }
+    },
+    {
+      "questionId": "u18-s009-v009",
+      "expectedContentSha256": "c87643c22f03bff962c1322b16927e655669b7ee1f5821f53e5e17a51516282a",
+      "appendText": {
+        "explanation": "獨立驗算：三個比都等於 0.6，因此存在共同縮放倍率，角度資料不是必要條件。 逐項排除：「不能，因為第三組不是 3:5」6:10 化簡正是 3:5。；「只能由 SAS 判定」三組邊比例已足夠。；「資料不足，因為不知道角度」SSS 不需要角度。；因此只有「可由 SSS 判定相似」符合全部條件。",
+        "misconceptionTarget": "6:10 化簡正是 3:5。"
+      }
+    },
+    {
+      "questionId": "u18-s009-v010",
+      "expectedContentSha256": "51ca972aee9ff517fe546df48ec446e067a72b4659de5f8a1f469177bfa9ac65",
+      "appendText": {
+        "explanation": "獨立驗算：大標誌三邊正好是小標誌各乘 1.75，且兩組均可成三角形，支持 SSS。 逐項排除：「不一致，因為 24≠42」相似不要求邊長相等。；「不一致，因為放大倍率不是整數」縮放倍率可為 7/4。；「無法判斷，因為沒有角度」三組邊可直接用 SSS。；因此只有「一致」符合全部條件。",
+        "misconceptionTarget": "相似不要求邊長相等。"
+      },
+      "replaceText": {
+        "制造": "製造"
+      },
+      "reviewReplaceText": {
+        "制造": "製造"
+      }
+    },
+    {
+      "questionId": "u18-s009-v011",
+      "expectedContentSha256": "6d7100837127ad012a1fa2d831f82f6b87071ee5307bd5e5b57653e9eb1de9b6",
+      "appendText": {
+        "explanation": "獨立驗算：將第一組三邊乘 1.5 得 15.0、19.5、24.0；實測僅第三邊差 0.1，在容許範圍內。 逐項排除：「一定完全相似，沒有任何誤差」24.1/16 不等於精確 1.5。；「一定不相似，因為 24.1≠24.0」差 0.1 在容許誤差內。；「兩三角形全等」邊長整體約放大 1.5 倍。；因此只有「資料可能支持約 1.5 倍相似，但第三邊需標示為近似」符合全部條件。"
+      },
+      "replaceText": {
+        "检查": "檢查",
+        "容许": "容許",
+        "允许": "允許"
+      },
+      "reviewReplaceText": {
+        "检查": "檢查",
+        "容许": "容許",
+        "允许": "允許"
+      }
+    },
+    {
+      "questionId": "u18-s009-v012",
+      "expectedContentSha256": "ee289fd8cbebfdd38cc10f378b2cf5472530f7456f59e1ac3afcef01f3804adc",
+      "appendText": {
+        "explanation": "獨立驗算：SSS 比給出模型三邊 20、28、32 cm；實物最短邊資料可用於核對比例尺，但不影響所求。 逐項排除：「17.5 cm」把 5:7:8 的中間邊 7 份當較短者。；「25 cm」將 32 除以錯誤倍率。；「200 cm」把實物 12.5 m 直接與模型混用。；因此只有「20 cm」符合全部條件。"
+      },
+      "replaceText": {
+        "筛選": "篩選"
+      },
+      "reviewReplaceText": {
+        "筛選": "篩選"
+      }
+    },
+    {
+      "questionId": "u18-s010-v001",
+      "expectedContentSha256": "1a9ab793b9e7d49b8c594fc84ffd451d567151f3eee7fdf6eae627c3c1e7e362",
+      "appendText": {
+        "explanation": "獨立驗算：每一條邊都按 2:5 對應相加，周長也維持 2:5。 逐項排除：「4:25」這是面積比。；「5:2」方向與題目相反。；「2:25」只平方第二項。；因此只有「2:5」符合全部條件。",
+        "misconceptionTarget": "這是面積比。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v002",
+      "expectedContentSha256": "c8193da367b156bafc466b49f117a928604b2b4fd3a0f399158539de032f7242",
+      "appendText": {
+        "explanation": "獨立驗算：36/54=2/3，所以第一圖的任一對應邊也是第二圖的 2/3。 逐項排除：「4:9」這是面積比。；「3:2」方向顛倒。；「1:3」把 36:54 的兩項誤用不同除數，才會得到 1:3；這與 2:3 不等值。；因此只有「2:3」符合全部條件。",
+        "misconceptionTarget": "這是面積比。"
+      },
+      "replaceText": {
+        "18:27": "1:3",
+        "等值但尚未最簡。": "把 36:54 的兩項誤用不同除數，才會得到 1:3；這與 2:3 不等值。"
+      },
+      "reviewSet": {
+        "reviewerNote": "重新由周長比獨立計算 36:54=2:3；四個選項 2:3、4:9、3:2、1:3 逐一化簡後，只有 2:3 與指定方向相符，且沒有等值重複選項。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v003",
+      "expectedContentSha256": "a6cad91e97fb250da3992acc172825689dacd37f4723d0eb89c364cfa7032274",
+      "appendText": {
+        "explanation": "獨立驗算：24 代表 3 份，每份 8；大圖 7 份為 56。 逐項排除：「28」把倍率誤作 7-3=4 後加到 24。；「42」只乘 7/4。；「130.67」誤用面積倍率 49/9。；因此只有「56」符合全部條件。",
+        "misconceptionTarget": "把倍率誤作 7-3=4 後加到 24。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v004",
+      "expectedContentSha256": "a411b3e5e8f31eb5f9895d943428cf8814ddd8ce4f47d505dab10909cbf583bb",
+      "appendText": {
+        "explanation": "獨立驗算：大周長 72 為 9 份，每份 8，較小 4 份為 32 cm。 逐項排除：「16 cm」誤用面積比 16:81 後近似。；「48 cm」把倍率寫成 2/3。；「162 cm」方向反轉。；因此只有「32 cm」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v005",
+      "expectedContentSha256": "8742da6ddf157c4999a8f2010794ce47182bb1907cbdb3de62d8047a4f0ac0a9",
+      "appendText": {
+        "explanation": "獨立驗算：A 的 15 cm 對應 5 份，每份 3 cm，B 的 8 份為 24 cm。 逐項排除：「18 cm」把周長差 3 份當 3 cm。；「9.375 cm」方向取反。；「38.4 cm」誤用平方倍率。；因此只有「24 cm」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v006",
+      "expectedContentSha256": "ebba9de56032c136dea16a63ea805fc031488630c247447837cf14a4c00c4199",
+      "appendText": {
+        "explanation": "獨立驗算：1.25=5/4，64×5/4=80。 逐項排除：「100 cm」誤用 1.25²。；「65.25 cm」把倍率當增加量。；「51.2 cm」使用縮小方向 1/1.25。；因此只有「80 cm」符合全部條件。周長是所有邊長的一次總和，因此線性放大 1.25 倍時周長也只乘 1.25，不能改用平方倍率。",
+        "misconceptionTarget": "誤用 1.25²。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v007",
+      "expectedContentSha256": "ee73f17e6334ee9c572a37f33b6d057bd78aca82f291a118d893092476273f95",
+      "appendText": {
+        "explanation": "獨立驗算：第一周長 45 是 3 份，每份 15，第二 5 份為 75；故 x=75-15=60。 逐項排除：「30」把第二周長誤設為 75 後減 45。；「45」忘記 x+15 中的 15。；「90」把 45 乘 5/3 後未減 15。；因此只有「60」符合全部條件。"
+      },
+      "replaceText": {
+        "没有": "沒有",
+        "忘记": "忘記"
+      },
+      "reviewReplaceText": {
+        "没有": "沒有"
+      }
+    },
+    {
+      "questionId": "u18-s010-v008",
+      "expectedContentSha256": "4719c711a950248c53e1d095bbc715eaa5f1c6dea943f6d16a3d5ebfa56f9620",
+      "appendText": {
+        "explanation": "獨立驗算：設 PA=7k、PB=4k；3k=33，k=11，PB=44。 逐項排除：「33 cm」把周長差直接當 B。；「77 cm」這是 A 周長。；「132 cm」把差 3 份錯當 1 份。；因此只有「44 cm」符合全部條件。把兩個周長寫成 7k 與 4k，差為 3k=33，所以 k=11；較小周長 4k=44。",
+        "misconceptionTarget": "把周長差直接當 B。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v009",
+      "expectedContentSha256": "ff46571a98c5ef1ff093fbda19d22069afb529f77783b1898bc070b37c753113",
+      "appendText": {
+        "explanation": "獨立驗算：54÷9=6，每份 6 cm，第二圖 11 份為 66 cm。 逐項排除：「73.33 cm」把面積比 81:121 直接用於周長。；「54×121/81 cm」同樣誤用面積倍率。；「44.18 cm」取相似比方向反。；因此只有「66 cm」符合全部條件。",
+        "misconceptionTarget": "把面積比 81:121 直接用於周長。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v010",
+      "expectedContentSha256": "93321dc7a760eddb35dc9012c1a122af3aa5adb88d4f203de84101c2bdb68828",
+      "appendText": {
+        "explanation": "獨立驗算：1 cm 代表 250 m，因此 8.4 cm 代表 8.4×250=2100 m=2.1 km。 逐項排除：「0.336 km」把 8.4÷25000 後錯誤換算。；「21 km」公分轉公里少除一個 10。；「525 km」誤將面積倍率用於周長。；因此只有「2.1 km」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s010-v011",
+      "expectedContentSha256": "551c39a5278f71c3373abcb991354beffe3cc70dbd9f060e6643848dd8962551",
+      "appendText": {
+        "explanation": "獨立驗算：接合邊不屬於相似圖形的周界縮放；因此 120×1.5+8=188。 逐項排除：「180 mm」只算幾何周長，漏加接合邊。；「192 mm」把接合邊也按 3:2 放大。；「278 mm」誤用平方倍率。；因此只有「188 mm」符合全部條件。"
+      },
+      "replaceText": {
+        "几何": "幾何",
+        "制作": "製作",
+        "印制": "印製",
+        "四舍五入": "四捨五入",
+        "绝對": "絕對"
+      },
+      "reviewReplaceText": {
+        "几何": "幾何",
+        "印制": "印製",
+        "四舍五入": "四捨五入",
+        "绝對": "絕對"
+      }
+    },
+    {
+      "questionId": "u18-s010-v012",
+      "expectedContentSha256": "68437bafea92fe3115815b28a5aa5f9a94ec6022a4791d1c2bc4e23a283d9bde",
+      "appendText": {
+        "explanation": "獨立驗算：總路程相同滿足 12×4份=n×7份，所以 n=48/7。 逐項排除：「7 圈」把周長比項直接當圈數。；「12×7/4 圈」方向相反，得到更大圈數。；「3 圈」把 12×4/7 誤算為整數 3。；因此只有「48/7 圈」符合全部條件。"
+      },
+      "replaceText": {
+        "允许": "允許"
+      },
+      "reviewReplaceText": {
+        "允许": "允許"
+      }
+    },
+    {
+      "questionId": "u18-s011-v001",
+      "expectedContentSha256": "263343bef78b9bd5dc4fe0d6cfab2be3298cfcfa1fb4fad17b6d62c8371528c5",
+      "appendText": {
+        "explanation": "獨立驗算：長與高各按 3:4，面積倍率為 (3/4)²=9/16。 逐項排除：「3:4」這是線性比。；「6:8」只是把兩項同乘 2。；「27:64」這是立方關係。；因此只有「9:16」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v002",
+      "expectedContentSha256": "0216da748c3d600db845f583d63a2c3987ae57e52056380a1966bbc51411d378",
+      "appendText": {
+        "explanation": "獨立驗算：因長度為正，取 5 與 7，不取負根。 逐項排除：「25:49」未取平方根。；「625:2401」反而再平方。；「-5:7」長度比取正值。；因此只有「5:7」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v003",
+      "expectedContentSha256": "542e4e67f5c1930b35b90e78262f07102578799e9d7be28c04bac9905e119556",
+      "appendText": {
+        "explanation": "獨立驗算：面積比小:大=4:9，18 對應 4 份，每份 4.5，大圖 9 份為 40.5。 逐項排除：「27 cm²」只乘線性倍率 3/2。；「81 cm²」把 18 乘 (3/2)³。；「8 cm²」方向取反。；因此只有「40.5 cm²」符合全部條件。",
+        "misconceptionTarget": "只乘線性倍率 3/2。"
+      },
+      "replaceText": {
+        "四舍五入": "四捨五入"
+      },
+      "reviewReplaceText": {
+        "四舍五入": "四捨五入"
+      }
+    },
+    {
+      "questionId": "u18-s011-v004",
+      "expectedContentSha256": "bec386a2455ad59c5103291516d5e76327ff11cc476adb709d1be607b30647f4",
+      "appendText": {
+        "explanation": "獨立驗算：32/50=16/25=(4/5)²，因此長度比為 4/5。 逐項排除：「16:25」這是面積比，不是相似比。；「32:50」未化簡且仍為面積比。；「5:4」方向反轉。；因此只有「4:5」符合全部條件。",
+        "misconceptionTarget": "這是面積比，不是相似比。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v005",
+      "expectedContentSha256": "bb3c5da0b189e21957280cf191d7f6cdb54a007da6fb6c3ef49d0fcd83cebc6c",
+      "appendText": {
+        "explanation": "獨立驗算：B 每面積份為 27/9=3，A 49 份為 147。 逐項排除：「63 m²」只乘線性倍率 7/3。；「343 m²」把 27 錯當 3 份後乘 7²。；「243 m²」誤用立方倍率。；因此只有「147 m²」符合全部條件。",
+        "misconceptionTarget": "只乘線性倍率 7/3。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v006",
+      "expectedContentSha256": "22b4a8b3fcaf893464d3bd54bee6e09ab51002a204cb09c1a74fe807698ef251",
+      "appendText": {
+        "explanation": "獨立驗算：若長和寬都乘 0.6，面積乘 0.6×0.6=0.36。 逐項排除：「60%」只考慮一個方向。；「40%」把縮小比例當減少百分比。；「21.6%」誤用 0.6³。；因此只有「36%」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v007",
+      "expectedContentSha256": "4c8c014c8d7efdc25e7e8926577dffc49eeaa1dbaa4b20bd574d607f536cbbb9",
+      "appendText": {
+        "explanation": "獨立驗算：A 周長 28 對應 2 份，每份 14，B 的 3 份為 42。 逐項排除：「63 cm」直接用面積比 4:9。；「18.67 cm」方向取反且用面積比。；「56 cm」誤把相似比當 1:2。；因此只有「42 cm」符合全部條件。",
+        "misconceptionTarget": "直接用面積比 4:9。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v008",
+      "expectedContentSha256": "d699afcabaa090409f5e5dcd5ada6027b976a5fe360e4484e4f2d88bfc23b888",
+      "appendText": {
+        "explanation": "獨立驗算：設兩面積為 81k、16k；65k=130，k=2，小面積 32。 逐項排除：「16 cm²」把小圖面積直接當 16 份的數值。；「65 cm²」把差 130 平分。；「162 cm²」把每份誤算成 2 後乘 81。；因此只有「32 cm²」符合全部條件。",
+        "misconceptionTarget": "把小圖面積直接當 16 份的數值。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v009",
+      "expectedContentSha256": "35870a3b76843e68935be2e907ba142afb4d902d6e4ecc1846c5eb2b8097131b",
+      "appendText": {
+        "explanation": "獨立驗算：6 對應 3 份，每份 2，x 對應 2 份為 4。 逐項排除：「8/3」把 x/6 直接等於 4/9。；「9」把面積比項當長度。；「-4」長度取正值。；因此只有「4」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v010",
+      "expectedContentSha256": "75ae95672a61830010afd270b87ff3fe48da5975cccae5f6257697766d6ffad3",
+      "appendText": {
+        "explanation": "獨立驗算：每 1 cm² 代表 4 m²，因為 200 cm=2 m；25 cm² 代表 25×4=100 m²。 逐項排除：「50 m²」只乘線性倍率 200。；「10000 m²」平方倍率後忘記 cm² 轉 m²。；「1 m²」把 25 cm² 直接除以 25。；因此只有「100 m²」符合全部條件。"
+      },
+      "replaceText": {
+        "忘记": "忘記",
+        "繪制": "繪製"
+      },
+      "reviewReplaceText": {
+        "繪制": "繪製"
+      }
+    },
+    {
+      "questionId": "u18-s011-v011",
+      "expectedContentSha256": "86ad972d963de3eb9c1070b3d24df1e1b5503a3d114cae2ffe1d2604e7a06abe",
+      "appendText": {
+        "explanation": "獨立驗算：小墨 180 對應 9 份，每份 20 g，大海報 25 份用 500 g。 逐項排除：「300 g」只按線性倍率 5/3。；「648 g」把倍率誤作 3.6。；「108 g」方向取反。；因此只有「500 g」符合全部條件。"
+      }
+    },
+    {
+      "questionId": "u18-s011-v012",
+      "expectedContentSha256": "79e7c040cebffe8809afa034075df54d7cbb646b71b338ab30a3d7e8d2713529",
+      "appendText": {
+        "explanation": "獨立驗算：同一水深只影響水面輪廓，不是比較體積；面積按兩個水平方向縮放。 逐項排除：「3/2 倍」只用一次線性倍率。；「27/8 倍」誤用三維體積倍率。；「4/9 倍」方向反轉。；因此只有「9/4 倍」符合全部條件。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u18-s007-cr001",
+      "expectedContentSha256": "c92f05fc94b9bfea6e0b06b5b600295d038e2bf7ffbb75613a8ce43eada3eb22",
+      "appendText": {
+        "standardSolution": "核對角的來源與順序：D、E 分別對應 B、C，而 A 是共同頂點；三個配對都與相似記號 △ADE∼△ABC 一致。"
+      },
+      "set": {
+        "commonErrors": [
+          "只憑圖形外觀宣稱角相等，沒有引用 DE∥BC 所產生的同位角或內錯角。",
+          "相似記號把 D、E 配到 C、B，造成頂點順序與已證明的角配對矛盾。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s007-cr002",
+      "expectedContentSha256": "25b6013b2a0eefd8dd3cbac0251f7f88de1a22a70f97fe8088091b4aa331e1d7",
+      "appendText": {
+        "standardSolution": "兩組角集合都為 48°、67°、65°，但相似記號必須逐角配對；因此第二個三角形要按 Z、Y、X 排列，不能照原字母順序抄寫。"
+      },
+      "set": {
+        "commonErrors": [
+          "求出第三角後仍寫 △PQR∼△XYZ，沒有把 48° 配 Z、67° 配 Y、65° 配 X。",
+          "把三組角相同誤寫成全等；題目沒有提供任何對應邊相等的條件。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s008-cr001",
+      "expectedContentSha256": "5b15473e551c615ed7d8c9e29d97ecd121c43574216cc610067a5af7bb7d41ad",
+      "appendText": {
+        "standardSolution": "兩個比都固定以第一個三角形除以第二個三角形，且 50° 正好夾在所比較的兩邊之間；所以比例方向與 SAS 的位置條件同時成立。"
+      },
+      "set": {
+        "commonErrors": [
+          "一組邊比寫 6/10，另一組卻寫 15/9，混用相反方向而誤判比例不同。",
+          "只看到兩組邊成比例就下結論，沒有確認 50° 是這兩組邊的夾角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s008-cr002",
+      "expectedContentSha256": "2d2dc3a44b648987fe3cb4caab55b19e0323953e221a6e0816eb40b725795908",
+      "appendText": {
+        "standardSolution": "SAS 必須同時滿足夾角相等與夾角兩側的邊同比；本題第二組邊比 7/13 不等於 4/8，故 60° 相等仍不足。"
+      },
+      "set": {
+        "commonErrors": [
+          "只比較 4:8 就停止，漏掉另一組 7:13，因而把單一邊比誤當成兩組邊成比例。",
+          "認為兩三角形都有 60° 就必定相似；一組角相等本身不符合 AA 或 SAS。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s009-cr001",
+      "expectedContentSha256": "557ac22b4147bb08da92fa9c3eb94bd2204a1f38af2a8a8b66f65e95b3c79d2f",
+      "appendText": {
+        "standardSolution": "SSS 得到的 3/2 是一維長度倍率；面積同時在兩個方向縮放，因此必須平方成 9/4，再由 24×9/4 得 54。"
+      },
+      "set": {
+        "commonErrors": [
+          "只把面積 24 乘線性倍率 3/2 得 36，忽略面積倍率應為線性倍率的平方。",
+          "三組邊比未固定同一方向，導致其中一比寫成 10/15 而無法得到共同倍率。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s009-cr002",
+      "expectedContentSha256": "6363bb287d3f6b0d06c9f1e8e369bd51e2f7c9957f7e5be950e6b7fbb03e442e",
+      "appendText": {
+        "standardSolution": "兩組資料都先通過最短兩邊和大於最長邊的存在性檢查，之後三個乙邊除以甲邊才都等於 1.5；兩個前提缺一不可。"
+      },
+      "set": {
+        "commonErrors": [
+          "只見三組數值同乘 1.5 就判相似，沒有先確認兩組長度各自能形成三角形。",
+          "以對應邊的固定差 2、2.5、4 判斷相似；SSS 比較的是共同倍數而不是差。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s010-cr001",
+      "expectedContentSha256": "dc1e47bf3e66f829fce56ff744a63cea00b13e137858697019f329399bc2747b",
+      "appendText": {
+        "standardSolution": "周長是所有對應邊的一次總和，所以仍按 3:7 分成十份；30+70=100 且 30:70=3:7，兩項驗算都成立。最後以總和與比例雙重檢核，答案沒有其他可能。"
+      },
+      "set": {
+        "commonErrors": [
+          "把 3:7 平方成 9:49，誤把面積倍率套到一維的周長問題。",
+          "由 10k=100 求得 k=10 後，直接把 10 當成其中一個周長，沒有乘回份數。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s010-cr002",
+      "expectedContentSha256": "aef0a111a488ef6ceb819c5b6c7ce7600dab77627c1810940f79d36e8971e173",
+      "appendText": {
+        "standardSolution": "乙相對甲放大 5/3，所以周長也由 42 放大到 70；扣除兩條已知邊後，第三邊為 25，且最短兩邊 20+25>25。三邊 20、25、25 也都為正數，答案唯一。"
+      },
+      "set": {
+        "commonErrors": [
+          "把 5/3 倒用成 3/5，將乙周長算成 25.2，與乙的兩條已知邊總和 45 矛盾。",
+          "求得第三邊 25 後沒有檢查三角形不等式，因而漏掉題目要求的存在性驗證。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s011-cr001",
+      "expectedContentSha256": "c36d575f08db6c2477656df9607c32ab37beeef4ac200930bbff23aa86f8c926",
+      "appendText": {
+        "standardSolution": "長與寬都乘 7/4，面積才乘 (7/4)²；80÷16=5，再乘 49 得 245，且結果大於小圖面積符合放大方向。"
+      },
+      "set": {
+        "commonErrors": [
+          "直接計算 80×7/4=140，只套用一次線性倍率，沒有處理第二個方向的縮放。",
+          "把小對大 4:7 倒置後再平方，得到縮小的面積，與題目求大圖的方向相反。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s011-cr002",
+      "expectedContentSha256": "d6376cf2f23177eec2ab20e593b2fe2fc142c8366642249b52dd3f202ce6e1a1",
+      "appendText": {
+        "standardSolution": "面積比 36:121 的正平方根是長度比 6:11；33 cm 對應大圖的 11 份，每份 3 cm，小圖 6 份即 18 cm。平方後正好還原題給面積比，方向與單位都一致。"
+      },
+      "set": {
+        "commonErrors": [
+          "直接把 36:121 當成邊長比，計算 33×36/121，沒有先對面積比開平方。",
+          "比例邊長取負平方根；實際長度必為正數，所以只取 6:11。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u18-s007-lecture-r1",
+      "expectedContentSha256": "1d8e80b13d3d7f2068fb1e4591de8539ba5ca868925162e914342f252c05e7ea",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "在 △ABC 中，D 在 AB、E 在 AC，且 DE∥BC。證明 △ADE∼△ABC。",
+            "solutionSteps": [
+              "因 DE∥BC，∠ADE=∠ABC（同位角或內錯角）。",
+              "∠AED=∠ACB。",
+              "兩組角相等，所以 △ADE∼△ABC。"
+            ],
+            "answer": "由 AA 相似",
+            "why": "DE∥BC 同時提供 D↔B、E↔C 的兩組平行線角；兩組角相等已足以使用 AA，且依此順序得到 △ADE∼△ABC。第三角會隨內角和自動相等，無須另假設邊長比例。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "兩直線 AC 與 BD 交於 O，若 ∠A=∠D，證明 △AOB∼△DOC。",
+            "solutionSteps": [
+              "∠AOB=∠DOC，因為是對頂角。",
+              "已知 ∠A=∠D。",
+              "由 AA 得 △AOB∼△DOC。"
+            ],
+            "answer": "△AOB∼△DOC",
+            "why": "O 點的兩角是對頂角而必相等，再加上題給 ∠A=∠D，構成兩組獨立的相等角；按 A↔D、O↔O、B↔C 排列即可。第三角亦由內角和相等，不需要任何邊長資料。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "直角三角形 ABC 與 DEF 中，∠A=∠D=90°，∠B=35°、∠E=35°，判定是否相似。",
+            "solutionSteps": [
+              "兩組角分別相等。",
+              "因此第三組角也相等。",
+              "由 AA 判定相似。"
+            ],
+            "answer": "相似",
+            "why": "兩三角形都有 90° 直角且另有一組 35° 角相等，已滿足 AA；第三角也都為 55°，因此形狀相同但大小未必相同，對應邊長仍可不同。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "△ABC∼△DEF 由 AA 判定，AB=4、DE=10、AC=6，求 DF。",
+            "solutionSteps": [
+              "AB/DE=AC/DF。",
+              "4/10=6/DF。",
+              "4DF=60，所以 DF=15。"
+            ],
+            "answer": "15",
+            "why": "相似成立後，AB↔DE、AC↔DF 必須使用同一方向比例；4/10=6/DF，交叉相乘唯一得到 DF=15。代回原比例後兩邊同為二比五，驗算方向與數值都一致。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s008-lecture-r1",
+      "expectedContentSha256": "7fa5e9570d424cd6078a693f8f3e7db6119ff70b4a46648badf97038cd34c888",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "AB=6、AC=9、DE=10、DF=15，且 ∠A=∠D，判定兩三角形。",
+            "solutionSteps": [
+              "AB/DE=6/10=3/5。",
+              "AC/DF=9/15=3/5。",
+              "∠A、∠D 是兩組邊夾角，所以由 SAS 相似。"
+            ],
+            "answer": "相似",
+            "why": "A、D 周圍的兩組邊比都為 3/5，且相等的角正好夾在這兩組邊之間；比例與位置條件同時符合 SAS。若相等角不是夾角，這項判定便不能成立。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "△ABC 與 △ADE 共用 ∠A，AB=4、AC=6、AD=10、AE=15，判定是否相似。",
+            "solutionSteps": [
+              "AB/AD=4/10=2/5。",
+              "AC/AE=6/15=2/5。",
+              "夾角 ∠A 共用，由 SAS 得相似。"
+            ],
+            "answer": "△ABC∼△ADE",
+            "why": "兩三角形共用 ∠A，而 A 兩側的邊比 4/10 與 6/15 都為 2/5；共同角就是夾角，所以可由 SAS 判定。兩項條件都集中在同一頂點，邊與角的對應唯一。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩三角形有邊 5、8 與 10、16 成比例，且一組非夾角相等，可否用 SAS？",
+            "solutionSteps": [
+              "兩組邊比雖相等。",
+              "但相等角不在兩組邊之間。",
+              "不符合 SAS 的夾角條件。"
+            ],
+            "answer": "不可",
+            "why": "5:10 與 8:16 雖同為 1:2，但相等角不是這兩組邊的夾角；這是 SSA 資料，可能對應不同形狀，不能套用 SAS。因此不能只看數字能否約成相同比值。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "若 AB/DE=BC/EF 且 ∠B=∠E，應如何排列相似順序？",
+            "solutionSteps": [
+              "∠B、∠E 是 AB與BC、DE與EF 的夾角。",
+              "AB 對 DE，所以 A↔D；BC 對 EF，所以 C↔F。",
+              "得到 △ABC∼△DEF。"
+            ],
+            "answer": "△ABC∼△DEF",
+            "why": "夾角先確定 B↔E，再由 AB↔DE 得 A↔D、BC↔EF 得 C↔F；三個頂點配對一致，故順序只能寫 △ABC∼△DEF。若交換 D、F，邊的端點對應就會互相矛盾，也不符合已知兩組邊的配對。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s009-lecture-r1",
+      "expectedContentSha256": "f6e9080b9891828161bb2230b754e2dc9dbb6b443663d1129a75be9e9d776491",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "邊長 4、6、8 與 10、15、20 的三角形是否相似？",
+            "solutionSteps": [
+              "兩組均符合三角形不等式。",
+              "4/10=6/15=8/20=2/5。",
+              "三組對應邊同一比值，由 SSS 相似。"
+            ],
+            "answer": "相似",
+            "why": "兩組邊長先各自符合三角形不等式，再逐邊得到共同比 2/5；存在性與三組邊同比均成立，才能使用 SSS，且相似結論因此唯一。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "△ABC 邊 AB=5、BC=7、AC=8；△DEF 邊 DE=10、EF=14、DF=16，寫相似關係。",
+            "solutionSteps": [
+              "AB 對 DE、BC 對 EF、AC 對 DF，比例皆 1:2。",
+              "AB 與 BC 共點 B，DE 與 EF 共點 E，所以 B↔E。",
+              "得到 A↔D、C↔F，故 △ABC∼△DEF。"
+            ],
+            "answer": "△ABC∼△DEF",
+            "why": "三組邊比都是 1:2 後，還要用共點關係確認頂點：AB、BC 共於 B，對應 DE、EF 共於 E，因此 B↔E 並確定完整順序。若只依長短排序而不核對共點，仍可能寫錯字母順序。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "邊長 2、3、6 與 4、6、12 可否以 SSS 判定相似？",
+            "solutionSteps": [
+              "第一組 2+3=5<6，不能形成三角形。",
+              "第二組也有 4+6<12。",
+              "因此不存在兩個三角形，不能談 SSS 相似。"
+            ],
+            "answer": "不可",
+            "why": "2+3<6 與 4+6<12 顯示兩組資料都不能圍成三角形；即使數值看似同倍放大，也沒有實際三角形可套用 SSS。三角形不等式是任何相似判定之前都必須成立的前提。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "△PQR 三邊 9、12、15，另一三角形最短邊為 6，若相似，另外兩邊為何？",
+            "solutionSteps": [
+              "最短邊縮放比為 6/9=2/3。",
+              "其餘邊為 12×2/3=8、15×2/3=10。",
+              "6、8、10 可形成三角形。"
+            ],
+            "answer": "8、10",
+            "why": "最短邊 9 對應 6，縮小倍率固定為 2/3；同一倍率套到另外兩邊得到 8、10，並以 6+8>10 完成存在性驗算。所有三邊都須用同一正倍率，不能逐邊任意調整。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s010-lecture-r1",
+      "expectedContentSha256": "3b3504d1d284a4957371678911e0306f3b9aea4a51bd2013a7867e181c493523",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "兩相似三角形對應邊比為 3:5，小三角形周長 24，求大三角形周長。",
+            "solutionSteps": [
+              "周長比等於相似比 3:5。",
+              "24:P=3:5。",
+              "P=24×5/3=40。"
+            ],
+            "answer": "40",
+            "why": "周長是各對應邊的一次總和，因此與線性相似比同為 3:5；由 24 對應 3 份可得每份 8，大圖 5 份為 40。因此不能把相似比平方，也不能只增加固定差。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "兩相似多邊形周長為 42 與 63，第一圖對第二圖的相似比為何？",
+            "solutionSteps": [
+              "相似比等於周長比。",
+              "42:63 化簡同除 21。",
+              "得 2:3。"
+            ],
+            "answer": "2:3",
+            "why": "兩個周長的方向就是第一圖對第二圖，直接將 42:63 同除共同因數 21 得 2:3；周長不需要平方倍率。化簡前後比值相同，兩個周長也維持同一縮放方向。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "模型長度是實物的 1/50，實物周長 350 公尺，模型周長多少公尺？",
+            "solutionSteps": [
+              "模型:實物=1:50。",
+              "模型周長=350×1/50=7 公尺。",
+              "周長使用一次縮放。"
+            ],
+            "answer": "7 公尺",
+            "why": "模型每一條邊都是實物的 1/50，將所有邊相加後周長仍是 1/50；350×1/50=7，不能誤用面積平方倍率。平方只適用面積，周長仍是一維的長度量。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "相似比 A:B=4:3，若 B 周長 27，求 A 周長。",
+            "solutionSteps": [
+              "PA:PB=4:3。",
+              "PA/27=4/3。",
+              "PA=36。"
+            ],
+            "answer": "36",
+            "why": "A:B 的周長比保持 4:3，B 的 27 對應 3 份，所以每份 9；A 對應 4 份即 36，且 36:27 可驗回 4:3。題目方向固定為 A 對 B，不能倒寫成 B 對 A，否則會把放大誤作縮小。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s011-lecture-r1",
+      "expectedContentSha256": "17ddc675123700515951b61d3a28f926cf62197d8cc961b5578e700b99f5edce",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "兩相似三角形相似比為 3:4，求面積比。",
+            "solutionSteps": [
+              "面積比為相似比平方。",
+              "3²:4²=9:16。"
+            ],
+            "answer": "9:16",
+            "why": "相似圖形的長與高都按 3:4 縮放，面積因此同時乘兩次倍率；3²:4²=9:16，而不是只沿用線性比 3:4。兩個方向共同決定面積，不能只乘一次三比四。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "兩相似圖形面積比為 36:81，求相似比。",
+            "solutionSteps": [
+              "取正平方根得 6:9。",
+              "化簡為 2:3。"
+            ],
+            "answer": "2:3",
+            "why": "面積比是線性比的平方，反求時要取正平方根；√36:√81=6:9，再化簡才得到最簡相似比 2:3。長度不取負值，六比九仍需同除三才是最簡比。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "小圖面積 20 平方公分，相似比小:大=2:5，求大圖面積。",
+            "solutionSteps": [
+              "面積比小:大=4:25。",
+              "20:S=4:25。",
+              "S=125 平方公分。"
+            ],
+            "answer": "125 平方公分",
+            "why": "小對大線性比 2:5 平方後成面積比 4:25；20 對應 4 份，每份 5，大圖 25 份為 125 平方公分。算出的面積應大於小圖，亦符合五大於二的放大方向。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "一張圖線性放大 150%，原面積 32 平方公分，新面積多少？",
+            "solutionSteps": [
+              "線性倍數為 1.5。",
+              "面積倍數 1.5²=2.25。",
+              "32×2.25=72。"
+            ],
+            "answer": "72 平方公分",
+            "why": "線性放大 150% 表示每個方向乘 1.5，不是面積只增加 50%；面積倍率為 1.5²=2.25，所以 32×2.25=72。若把百分比當作面積增加率，就會低估第二個方向的縮放效果。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

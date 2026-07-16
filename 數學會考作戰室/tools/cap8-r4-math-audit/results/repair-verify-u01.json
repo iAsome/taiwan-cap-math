@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "unitId": "u01",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "001",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"lectureCount\": 1,\n  \"mcQuestionCount\": 12,\n  \"constructedResponseCount\": 2,\n  \"semanticReviewCount\": 12,\n  \"difficultyCounts\": {\n    \"basic\": 3,\n    \"standard\": 3,\n    \"advanced\": 3,\n    \"literacy\": 3\n  },\n  \"answerIndexCounts\": [\n    3,\n    3,\n    3,\n    3\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "lectureCount": 1,
+          "mcQuestionCount": 12,
+          "constructedResponseCount": 2,
+          "semanticReviewCount": 12,
+          "difficultyCounts": {
+            "basic": 3,
+            "standard": 3,
+            "advanced": 3,
+            "literacy": 3
+          },
+          "answerIndexCounts": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "productionActivationAllowed": false
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-skill-module.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"lectureCount\": 1,\n  \"mcQuestionCount\": 12,\n  \"constructedResponseCount\": 2,\n  \"semanticReviewCount\": 12,\n  \"difficultyCounts\": {\n    \"basic\": 3,\n    \"standard\": 3,\n    \"advanced\": 3,\n    \"literacy\": 3\n  },\n  \"answerIndexCounts\": [\n    3,\n    3,\n    3,\n    3\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "lectureCount": 1,
+          "mcQuestionCount": 12,
+          "constructedResponseCount": 2,
+          "semanticReviewCount": 12,
+          "difficultyCounts": {
+            "basic": 3,
+            "standard": 3,
+            "advanced": 3,
+            "literacy": 3
+          },
+          "answerIndexCounts": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "productionActivationAllowed": false
+        }
+      }
+    },
+    {
+      "status": "PASS",
+      "batch": "002-u01-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u01\",\n  \"newSkillCount\": 14,\n  \"u01SkillTotalAfterBatch\": 15,\n  \"lectureCount\": 14,\n  \"mcQuestionCount\": 168,\n  \"constructedResponseCount\": 28,\n  \"semanticReviewCount\": 168,\n  \"figureCount\": 5,\n  \"difficultyCounts\": {\n    \"basic\": 42,\n    \"standard\": 42,\n    \"advanced\": 42,\n    \"literacy\": 42\n  },\n  \"answerIndexCounts\": [\n    42,\n    42,\n    42,\n    42\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u01",
+          "newSkillCount": 14,
+          "u01SkillTotalAfterBatch": 15,
+          "lectureCount": 14,
+          "mcQuestionCount": 168,
+          "constructedResponseCount": 28,
+          "semanticReviewCount": 168,
+          "figureCount": 5,
+          "difficultyCounts": {
+            "basic": 42,
+            "standard": 42,
+            "advanced": 42,
+            "literacy": 42
+          },
+          "answerIndexCounts": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "productionActivationAllowed": false
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u01\",\n  \"newSkillCount\": 14,\n  \"u01SkillTotalAfterBatch\": 15,\n  \"lectureCount\": 14,\n  \"mcQuestionCount\": 168,\n  \"constructedResponseCount\": 28,\n  \"semanticReviewCount\": 168,\n  \"figureCount\": 5,\n  \"difficultyCounts\": {\n    \"basic\": 42,\n    \"standard\": 42,\n    \"advanced\": 42,\n    \"literacy\": 42\n  },\n  \"answerIndexCounts\": [\n    42,\n    42,\n    42,\n    42\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u01",
+          "newSkillCount": 14,
+          "u01SkillTotalAfterBatch": 15,
+          "lectureCount": 14,
+          "mcQuestionCount": 168,
+          "constructedResponseCount": 28,
+          "semanticReviewCount": 168,
+          "figureCount": 5,
+          "difficultyCounts": {
+            "basic": 42,
+            "standard": 42,
+            "advanced": 42,
+            "literacy": 42
+          },
+          "answerIndexCounts": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "productionActivationAllowed": false
+        }
+      }
+    }
+  ]
+}

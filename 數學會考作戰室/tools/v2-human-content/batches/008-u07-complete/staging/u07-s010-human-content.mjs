@@ -123,7 +123,8 @@ export const LECTURE = {
         "票數必為非負整數。",
         "最大不超過 6.8 的整數是 6。"
       ],
-      "answer": "最多 6 張。"
+      "answer": "最多 6 張。",
+      "why": "最多形成上界，票數又不可分割。六張符合不超過六點八，七張則超過，因此取整不是看小數是否大於零點五，而是保留最大可行整數。"
     },
     {
       "exampleId": "L2",
@@ -132,7 +133,8 @@ export const LECTURE = {
         "至少包含 40。",
         "正確應為 s≥40。"
       ],
-      "answer": "不合理，方向與等號都錯。"
+      "answer": "不合理，方向與等號都錯。",
+      "why": "至少四十分表示四十分與更高分都通過，所以範圍由四十向右且包含端點。把四十與五十分代入原式即可看出 s<40 的方向和端點都相反。"
     },
     {
       "exampleId": "L3",
@@ -141,7 +143,8 @@ export const LECTURE = {
         "情境另有 0≤n≤50。",
         "與 n≤62 取交集。"
       ],
-      "answer": "0≤n≤50，若 n 為人數則 n 為整數。"
+      "answer": "0≤n≤50，若 n 為人數則 n 為整數。",
+      "why": "代數上界六十二不能凌駕場地容量五十，兩項限制必須取交集；人數還不能為負且需為整數。完整答案要同時保留代數與現實限制。"
     },
     {
       "exampleId": "L4",
@@ -150,7 +153,8 @@ export const LECTURE = {
         "3<8 對所有 x 都成立。",
         "因此所有允許範圍內的 x 都是解。"
       ],
-      "answer": "所有原定義域中的 x。"
+      "answer": "所有原定義域中的 x。",
+      "why": "未知數消去後只剩恆真的常數敘述，表示原式不再限制 x。若剩下的是假敘述則無解；不能在未知數消失後自行創造一個數值邊界。"
     }
   ],
   "commonMistakes": [
@@ -238,7 +242,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "437b68e594adb70f1bb85098b70868f7bb6dfe9b403416ae9d965e1e41878f08"
+  "contentSha256": "4bfd3f9ce8d1c8ab8c295cbdebc07763b6f69a109363159a8efeb01a421c5c9b"
 };
 
 export const QUESTIONS = [
@@ -268,10 +272,11 @@ export const QUESTIONS = [
       "result": "最多 4 本",
       "answerIndexVerified": 0
     },
-    "explanation": "「最多」是上限，且書本數為整數；不能超過 4.7 的最大整數是 4。",
+    "explanation": "書本數只能是非負整數，而最多四點七本表示本數不得超過四點七。整數四符合，五已超過上界，所以最大可行值是四，應作答最多四本。",
     "steps": [
-      "確認離散量",
-      "依上限向下取整"
+      "確認書本數是不可分割的整數。",
+      "比較相鄰整數四與五是否符合 x≤4.7。",
+      "四可行、五不可行，寫成最多四本。"
     ],
     "optionAnalysis": [
       {
@@ -295,7 +300,7 @@ export const QUESTIONS = [
         "reason": "書不能買 0.7 本。"
       }
     ],
-    "misconceptionTarget": "用四捨五入代替可行性取整。",
+    "misconceptionTarget": "用一般四捨五入把四點七變成五，沒有檢查五本已超過可行上界。",
     "prerequisiteCheck": "需理解最大整數解。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "單位本；不可拆分。",
@@ -311,7 +316,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c46c1c645746358e38faed936c02af1aac10a91f2295e353e5626efe9fb72f81"
+    "contentSha256": "66f116d33358d21c2f527425519135380d04f29532e7b924e1755da89c0aa302"
   },
   {
     "questionId": "u07-s010-v002",
@@ -339,10 +344,11 @@ export const QUESTIONS = [
       "result": "s≥60",
       "answerIndexVerified": 3
     },
-    "explanation": "至少包含 60 並要求更高分，因此 s≥60。",
+    "explanation": "至少六十分表示六十分本身合格，且所有更高分也合格。因此範圍由六十向右並包含端點，模型是 s≥60；把六十代入可驗證等號不可省略。",
     "steps": [
-      "辨認至少",
-      "測試邊界 60"
+      "辨認至少描述下界。",
+      "用 s=60 測試，確認六十必須包含。",
+      "用較高分測試方向，寫成 s≥60。"
     ],
     "optionAnalysis": [
       {
@@ -366,7 +372,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「s≥60」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "漏掉等號。",
+    "misconceptionTarget": "把至少誤寫成嚴格大於，漏掉剛好六十分也達到門檻的情況。",
     "prerequisiteCheck": "需理解至少。",
     "estimatedTimeSec": "40",
     "unitAndRoundingCheck": "單位分。",
@@ -382,7 +388,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1d5625f889c5d5d391143e43815ae7bea7df0a452647dcbb01bcb683e086d849"
+    "contentSha256": "b267ed857a6eaedf28017c5ec4a4a2f4f468a8a2254652de81dd84f8bfd0ca34"
   },
   {
     "questionId": "u07-s010-v003",
@@ -410,9 +416,11 @@ export const QUESTIONS = [
       "result": "不等號方向錯誤",
       "answerIndexVerified": 1
     },
-    "explanation": "「最多」表示 V 不可大於 30，應為 V≤30；原式方向相反。",
+    "explanation": "最多三十公升表示容器中的體積不能大於三十，應寫 V≤30。原式 V≥30 反而會讓四十公升等超過容量的數值通過，因此主要錯誤是不等號方向相反。",
     "steps": [
-      "翻譯最多為上界"
+      "把最多三十翻成上界 V≤30。",
+      "用 V=40 檢查原式會錯誤判定可行。",
+      "比較兩式，指出不等號方向錯誤。"
     ],
     "optionAnalysis": [
       {
@@ -436,7 +444,7 @@ export const QUESTIONS = [
         "reason": "數值 30 由題意給定。"
       }
     ],
-    "misconceptionTarget": "只看式子形式而不對照語句。",
+    "misconceptionTarget": "只看式子含有 V 與三十就認為合理，沒有用超過容量的數值檢查方向。",
     "prerequisiteCheck": "需理解至多。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "單位一致。",
@@ -452,7 +460,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6666eb7422e25865bcdb937e1867b554199d923f8424e9edf0b23942989c8c82"
+    "contentSha256": "dfae936c9d940cb85bbe569a7695baf451990ed8219ec72eb78de122671efd31"
   },
   {
     "questionId": "u07-s010-v004",
@@ -480,10 +488,11 @@ export const QUESTIONS = [
       "result": "0≤n≤40",
       "answerIndexVerified": 2
     },
-    "explanation": "代數上界 45 與場地上界 40 同時成立，較嚴格的是 40；加上非負，得 0≤n≤40。",
+    "explanation": "代數結果給 n≤45，場地另給更嚴格的 n≤40，兩項必須同時成立，所以共同上界是四十。人數又是非負整數，因此完整實數範圍寫成 0≤n≤40，並保留整數限制。",
     "steps": [
-      "取兩個上限交集",
-      "加入非負限制"
+      "把代數上界四十五與場地上界四十取交集。",
+      "選較嚴格上界 n≤40。",
+      "加入人數非負限制，得到 0≤n≤40 且 n 為整數。"
     ],
     "optionAnalysis": [
       {
@@ -507,7 +516,7 @@ export const QUESTIONS = [
         "reason": "把可行範圍誤成高人數區間。"
       }
     ],
-    "misconceptionTarget": "只採用代數解，忽略情境限制。",
+    "misconceptionTarget": "只採代數算出的四十五，忽略場地容量與人數非負、整數等情境限制。",
     "prerequisiteCheck": "需會且與範圍。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "單位人。",
@@ -523,7 +532,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "456993daf4fc263f3390630741b7aff84649159fe46ed52f28279145205d7cff"
+    "contentSha256": "5fefd2b4962190640ecd06a4a57e56b0d42d75dabb3a14383a1d7a62b248bf74"
   },
   {
     "questionId": "u07-s010-v005",
@@ -551,10 +560,11 @@ export const QUESTIONS = [
       "result": "至少 7 輛",
       "answerIndexVerified": 3
     },
-    "explanation": "最低需求 6.2 表示車數需不小於 6.2；最小整數是 7。",
+    "explanation": "至少需要六點二輛表示車數不小於六點二，而車輛不能分割。六輛小於六點二而不足，七輛是第一個符合下界的整數，所以合理答案是至少七輛。",
     "steps": [
-      "辨認下界",
-      "向上取到最小可行整數"
+      "確認至少需要形成下界 n≥6.2。",
+      "檢查六輛不符合、七輛符合。",
+      "依最小可行整數向上取整，作答至少七輛。"
     ],
     "optionAnalysis": [
       {
@@ -578,7 +588,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「至少 7 輛」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "最低需求仍向下取整。",
+    "misconceptionTarget": "把最低需求也向下取整成六輛，沒有檢查六其實低於六點二。",
     "prerequisiteCheck": "需理解最小整數解。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "單位輛；不可分割。",
@@ -594,7 +604,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "7f5b96f8968548f6a7d262566657b8a7e27607e45aa4e30f889b38edbd1fd1c1"
+    "contentSha256": "59a0ce28783080a41563e85b36f1eaba11f3fe9516a808ddc931dbdd5729adce"
   },
   {
     "questionId": "u07-s010-v006",
@@ -622,10 +632,11 @@ export const QUESTIONS = [
       "result": "代入 12 件成立且 13 件不成立",
       "answerIndexVerified": 1
     },
-    "explanation": "最大整數邊界需確認 12 可行，同時下一個整數 13 不可行，才能證明「最多」。",
+    "explanation": "要證明最多十二件，不只要確認十二件符合限制，還要確認下一個整數十三件不符合。若十三也可行，十二便不是最大值；因此同時驗證候選值與相鄰超界值最有力。",
     "steps": [
-      "驗證候選值",
-      "驗證相鄰超界值"
+      "把十二件代回原限制，確認候選值可行。",
+      "把下一個整數十三件代回，確認不可行。",
+      "由一真一假證明分界確在十二，故為最多。"
     ],
     "optionAnalysis": [
       {
@@ -649,7 +660,7 @@ export const QUESTIONS = [
         "reason": "12 已是整數，不需四捨五入。"
       }
     ],
-    "misconceptionTarget": "只驗證答案本身，未驗證最大性。",
+    "misconceptionTarget": "只驗證十二件本身可行，沒有排除更大的十三件也可能可行。",
     "prerequisiteCheck": "需理解最大值驗證。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "無單位換算。",
@@ -665,7 +676,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "07f0033978137528a428c22705bd8dcb2bccebe9e0ea30da7ecfed68c0a677e4"
+    "contentSha256": "f402e47162332276bb1c3e4be6e8a4f771bcef1713459b4a87f7c4140ecc2943"
   },
   {
     "questionId": "u07-s010-v007",
@@ -693,10 +704,11 @@ export const QUESTIONS = [
       "result": "原式對所有實數 x 都成立",
       "answerIndexVerified": 2
     },
-    "explanation": "兩邊同減 2x 後只剩 5≤9，這是真敘述，與 x 無關，所以所有實數 x 都成立。",
+    "explanation": "兩邊同減二 x 後，未知數完全消去，只剩五不超過九。這個常數敘述永遠為真，所以原不等式對每個實數 x 都成立，不能憑空寫出 x≤2。",
     "steps": [
-      "消去相同未知數項",
-      "判斷剩餘常數敘述真偽"
+      "兩邊同減 2x，得到 5≤9。",
+      "判斷五不超過九為真敘述。",
+      "因結果與 x 無關且恆真，結論是所有實數皆解。"
     ],
     "optionAnalysis": [
       {
@@ -720,7 +732,7 @@ export const QUESTIONS = [
         "reason": "常數敘述為真，不是無解。"
       }
     ],
-    "misconceptionTarget": "未知數消去後硬造一個 x 的範圍。",
+    "misconceptionTarget": "未知數消去後仍硬把常數相減結果當成 x 的邊界，創造不存在的限制。",
     "prerequisiteCheck": "需會移項與邏輯真值。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "無單位。",
@@ -736,7 +748,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6d0b456e79b97a9fcd936589c097c69e49460d22ebe43d48a7509b2568935b46"
+    "contentSha256": "6e389dbe6b8646329ea68c5be4cdac60a64d0b289a33919711315e6f3982fbfe"
   },
   {
     "questionId": "u07-s010-v008",
@@ -764,10 +776,11 @@ export const QUESTIONS = [
       "result": "原式無解",
       "answerIndexVerified": 0
     },
-    "explanation": "兩邊同減 3x 得 −1>4，這是假敘述，任何 x 都不能使它成立，所以無解。",
+    "explanation": "兩邊同減三 x 後只剩負一大於四，這是假敘述，且不再含 x。任何 x 都無法改變負一與四的大小關係，因此原式沒有解，不是 x 大於五。",
     "steps": [
-      "消去相同 x 項",
-      "判斷 −1>4 為假"
+      "兩邊同減 3x，得到 −1>4。",
+      "判斷負一大於四為假敘述。",
+      "因結果對所有 x 都是假，結論為無解。"
     ],
     "optionAnalysis": [
       {
@@ -791,7 +804,7 @@ export const QUESTIONS = [
         "reason": "同樣沒有此範圍。"
       }
     ],
-    "misconceptionTarget": "未知數消去後錯誤移動常數產生虛假邊界。",
+    "misconceptionTarget": "未知數消去後錯誤移動常數，硬造 x 大於五或其他虛假範圍。",
     "prerequisiteCheck": "需會常數比較。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "無單位。",
@@ -807,7 +820,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "eccd8b842cced7749938be0f48ba69db606d51392469fb1355a11187c7bef82e"
+    "contentSha256": "da1a77cb4ec28560b1caac38e7bf56b5a1113ff1bed1a9050fc69f080a94b1ee"
   },
   {
     "questionId": "u07-s010-v009",
@@ -835,10 +848,11 @@ export const QUESTIONS = [
       "result": "單位不一致，不能直接相加",
       "answerIndexVerified": 1
     },
-    "explanation": "小時與公里是不同種類的量，若未透過速度等關係轉換，不能直接相加。",
+    "explanation": "加法的各項必須代表同一種類與單位的量。三小時是時間，四十公里乘 x 若仍代表距離，兩者不能直接相加；必須先透過速度等關係換成同一量綱。",
     "steps": [
-      "辨認各項單位",
-      "檢查量綱一致"
+      "標出三的單位為小時。",
+      "判讀四十公里相關項代表距離。",
+      "確認時間與距離量綱不同，指出不能直接相加。"
     ],
     "optionAnalysis": [
       {
@@ -862,7 +876,7 @@ export const QUESTIONS = [
         "reason": "係數正負需依情境，非必然。"
       }
     ],
-    "misconceptionTarget": "只檢查代數外形，不檢查單位。",
+    "misconceptionTarget": "只檢查代數式外形與係數，沒有檢查相加各項的物理單位是否一致。",
     "prerequisiteCheck": "需理解同類量才能相加。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "核心就是單位不一致。",
@@ -878,7 +892,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6a7ed1c21acdc3c243b46ab31e782eca62d57111e4ef8fc531ac10c385bfc411"
+    "contentSha256": "562d812d1d30e4d81c497f658fae98355ba3cb09e962e084a04f8fdc8edb69b2"
   },
   {
     "questionId": "u07-s010-v010",
@@ -906,11 +920,11 @@ export const QUESTIONS = [
       "result": "不合理，最多 4 箱",
       "answerIndexVerified": 2
     },
-    "explanation": "520+18x≤600，得 18x≤80，x≤4.44…，最大整數為 4。5 箱會使總重 610，超過上限。",
+    "explanation": "扣除四位乘客五百二十公斤後，只剩八十公斤載重。四箱重七十二公斤可行，五箱重九十公斤，使總重六百一十公斤超限，所以原答案不合理，最多只能四箱。",
     "steps": [
-      "建立剩餘載重",
-      "計算最大整數",
-      "代入 5 箱反證"
+      "求剩餘載重 600−520=80 公斤。",
+      "比較四箱 72 公斤與五箱 90 公斤。",
+      "確認四箱可行、五箱超限，作答最多四箱。"
     ],
     "optionAnalysis": [
       {
@@ -934,7 +948,7 @@ export const QUESTIONS = [
         "reason": "接近不代表可行。"
       }
     ],
-    "misconceptionTarget": "以四捨五入或接近程度代替載重限制。",
+    "misconceptionTarget": "用四點四四接近五或四捨五入決定箱數，忽略五箱實際會超過載重。",
     "prerequisiteCheck": "需會容量上限與取整。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "重量公斤一致。",
@@ -950,7 +964,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "352308fa13fbf145495d5d8330c3c4c9832d1560f3e1e0d1db86886512cdde7d"
+    "contentSha256": "453b85f1ee26f04574bd50ac19692f56f8f844f9cfbf80afd2818d9fa3e65496"
   },
   {
     "questionId": "u07-s010-v011",
@@ -978,10 +992,11 @@ export const QUESTIONS = [
       "result": "先統一公里或公尺單位",
       "answerIndexVerified": 0
     },
-    "explanation": "2.4 公里與 900 公尺單位不同，需先換成 2400 公尺與 900 公尺，或 2.4 公里與 0.9 公里。",
+    "explanation": "二點四公里與九百公尺是不同單位，不能直接做二點四減九百。可把二點四公里換成二千四百公尺，或把九百公尺換成零點九公里，再計算剩餘距離。",
     "steps": [
-      "辨認單位不同",
-      "先換算再相減"
+      "辨認兩個距離分別用公里與公尺。",
+      "選同一單位換算成 2400 公尺與 900 公尺。",
+      "單位一致後才做相減，得到剩餘一千五百公尺。"
     ],
     "optionAnalysis": [
       {
@@ -1005,7 +1020,7 @@ export const QUESTIONS = [
         "reason": "剩餘距離應用減法。"
       }
     ],
-    "misconceptionTarget": "忽略單位而直接代數運算。",
+    "misconceptionTarget": "忽略公里與公尺相差一千倍，直接把二點四與九百放進同一減法式。",
     "prerequisiteCheck": "需會基本單位換算。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "必須統一距離單位。",
@@ -1021,7 +1036,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "863313795db4fc9f4fabbd6828f9c787e78eaabcb7cccaf66afc19ebd032c477"
+    "contentSha256": "0c923017073c86710e649aeaa2310da3a0a777e15a22c48c35db743313a5fa2a"
   },
   {
     "questionId": "u07-s010-v012",
@@ -1049,10 +1064,11 @@ export const QUESTIONS = [
       "result": "沒有可行人數",
       "answerIndexVerified": 3
     },
-    "explanation": "條件是 n≥20 且 n≤18，兩範圍沒有重疊，所以無解。",
+    "explanation": "至少二十人要求 n≥20，場地最多十八人要求 n≤18。兩個範圍沒有重疊：達到二十就超過十八，不超過十八又未達二十，所以沒有任何可行人數。",
     "steps": [
-      "建立兩個限制",
-      "取交集並判斷空集合"
+      "把最低要求寫成 n≥20。",
+      "把場地上限寫成 n≤18。",
+      "取兩範圍交集，確認是空集合，作答無可行人數。"
     ],
     "optionAnalysis": [
       {
@@ -1076,7 +1092,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「沒有可行人數」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "分別看每條件而未檢查共同可行性。",
+    "misconceptionTarget": "分別看到十八或二十符合其中一條便判可行，沒有檢查兩條件要同時成立。",
     "prerequisiteCheck": "需會且的交集。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "單位人。",
@@ -1092,7 +1108,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d33031841f60d3d0f26d3c4b9fb080995e96e3d363ab62994492c51e32515c5c"
+    "contentSha256": "a5bc2f9d89949f9517cd0816a77e32c6b3082696677b3a9333793c0b05539ee9"
   }
 ];
 
@@ -1112,19 +1128,18 @@ export const CONSTRUCTED_RESPONSES = [
       "說明不可直接寫 6.7 盒"
     ],
     "fullCreditSolution": [
-      "盒數不能是 6.7 盒，x 應為非負整數。",
-      "符合 x≤6.7 的最大整數是 6，因此最多買 6 盒。",
-      "驗算時 6 盒應不超過限制，而 7 盒因 7>6.7 應超過限制。",
-      "不能四捨五入成 7，因 7 不在解集。"
+      "盒數 x 必須是非負整數，不能實際購買六點七盒。",
+      "不等式 x≤6.7 給的是上界，符合此上界的最大整數是六，所以應寫最多買六盒。",
+      "驗算六盒時 6≤6.7，符合；下一個整數七滿足 7>6.7，不符合。",
+      "不能四捨五入成七，因為取整必須保留原不等式的可行性。"
     ],
     "alternativeMethod": [
       "可用數線判斷：6.7 左側的整數中最大為 6；再回原情境確認。"
     ],
     "reasoningSteps": [
-      "加入自然限制",
-      "取最大整數",
-      "檢查相鄰整數",
-      "用語意表達結果"
+      "加入盒數非負且為整數的自然限制。",
+      "從實數上界取最大可行整數六。",
+      "代入六與七，驗證答案與最大性。"
     ],
     "rubric": [
       {
@@ -1149,8 +1164,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "最終單位為盒；應寫「最多 6 盒」，而非單寫 x=6.7。",
     "answerOnlyPolicy": "只寫 6 盒而無三方面判斷，最多 1 分。",
     "commonErrors": [
-      "將離散量當連續量",
-      "用四捨五入而非可行性取整"
+      "把盒數當連續量，直接回答六點七盒。",
+      "用一般四捨五入得到七，卻沒有檢查七已超過上界。",
+      "只驗證六盒可行，沒有用七盒確認六是最大值。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1163,7 +1179,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "f73a3432a135838ddcfd8a9fbadcb4ecae557c4454b4b1be98d958ccc5ebade2"
+    "contentSha256": "0084d20c635351531677945e9c71e0c1848d99ea760748d47475cfe1be425faf"
   },
   {
     "questionId": "u07-s010-cr002",
@@ -1180,17 +1196,18 @@ export const CONSTRUCTED_RESPONSES = [
       "比較最大上界題"
     ],
     "fullCreditSolution": [
-      "x≥4.2 表示車輛數至少要達到 4.2，而車輛只能是整數。",
-      "4<4.2，不符合；最小符合整數為 5，所以至少需要 5 輛。",
-      "「至少需要」是在下界找最小可行整數，通常向上取整；「最多可裝」是在上界找最大可行整數，通常向下取整。"
+      "x≥4.2 是最低需求，車輛數又只能是整數；四小於四點二，所以四輛不符合。",
+      "第一個不小於四點二的整數是五，因此正確答案為至少需要五輛。",
+      "驗算四輛不足，五輛符合，證明取整分界正確。",
+      "至少需要是在下界找最小可行整數，通常向上取；最多可裝是在上界找最大可行整數，通常向下取。"
     ],
     "alternativeMethod": [
       "可在數線上標出 4.2，向右找第一個整數 5；上界則向左找最後一個整數。"
     ],
     "reasoningSteps": [
-      "判斷下界方向",
-      "檢查相鄰整數",
-      "區分最小需求與最大容量"
+      "辨認至少需要形成下界，並加入整數限制。",
+      "比較相鄰整數四與五，找最小可行值。",
+      "對照最大容量上界題，解釋兩種取整方向。"
     ],
     "rubric": [
       {
@@ -1215,8 +1232,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "最終單位為輛；車輛數為正整數。",
     "answerOnlyPolicy": "只寫 5 輛，最多 1 分。",
     "commonErrors": [
-      "所有小數上界下界都向下取",
-      "把至少需要誤認為不得超過"
+      "認為所有小數結果一律向下取整，把不足的四輛當答案。",
+      "把至少需要誤讀為不得超過，將下界問題當上界問題。",
+      "只寫五輛而沒有說明為何與最多可裝題的取整方向不同。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1229,7 +1247,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6cbb969062cf6e9eab8967eb1be61212e445158c89cafb7cb199d354e0d7b1aa"
+    "contentSha256": "0bcd9898fa7ac6a21b609d0cc6135a6fae8e5588d4c59ad874803530f3543849"
   }
 ];
 
@@ -1240,7 +1258,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "c46c1c645746358e38faed936c02af1aac10a91f2295e353e5626efe9fb72f81",
+    "contentSha256": "66f116d33358d21c2f527425519135380d04f29532e7b924e1755da89c0aa302",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "候選整數靠近 4.7 的是 4 與 5；4≤4.7，5>4.7，所以最大可行整數為 4。",
@@ -1272,7 +1290,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "1d5625f889c5d5d391143e43815ae7bea7df0a452647dcbb01bcb683e086d849",
+    "contentSha256": "b267ed857a6eaedf28017c5ec4a4a2f4f468a8a2254652de81dd84f8bfd0ca34",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "把 s=60 代入規則應通過，故要等號；s=70 也應通過，故方向為 ≥。",
@@ -1304,7 +1322,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "6666eb7422e25865bcdb937e1867b554199d923f8424e9edf0b23942989c8c82",
+    "contentSha256": "dfae936c9d940cb85bbe569a7695baf451990ed8219ec72eb78de122671efd31",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "測 V=40：原式 V≥30 會判可行，但容器最多 30，不合理。因此方向應反成 ≤。",
@@ -1336,7 +1354,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "456993daf4fc263f3390630741b7aff84649159fe46ed52f28279145205d7cff",
+    "contentSha256": "5fefd2b4962190640ecd06a4a57e56b0d42d75dabb3a14383a1d7a62b248bf74",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "需同時 n≤45、n≤40、n≥0；共同部分由較小上界 40 決定，所以 0≤n≤40。",
@@ -1368,7 +1386,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "7f5b96f8968548f6a7d262566657b8a7e27607e45aa4e30f889b38edbd1fd1c1",
+    "contentSha256": "59a0ce28783080a41563e85b36f1eaba11f3fe9516a808ddc931dbdd5729adce",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "比較相鄰整數 6、7；6 不滿足 n≥6.2，7 滿足，所以至少 7 輛。",
@@ -1400,7 +1418,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "07f0033978137528a428c22705bd8dcb2bccebe9e0ea30da7ecfed68c0a677e4",
+    "contentSha256": "f402e47162332276bb1c3e4be6e8a4f771bcef1713459b4a87f7c4140ecc2943",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "若 12 成立但 13 也成立，12 就不是最多；故必須同時驗證 12 真、13 假。",
@@ -1432,7 +1450,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "6d0b456e79b97a9fcd936589c097c69e49460d22ebe43d48a7509b2568935b46",
+    "contentSha256": "6e389dbe6b8646329ea68c5be4cdac60a64d0b289a33919711315e6f3982fbfe",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "對任意 x，左右差為 (2x+9)−(2x+5)=4≥0，所以左邊總不大於右邊，所有 x 皆可。",
@@ -1464,7 +1482,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "eccd8b842cced7749938be0f48ba69db606d51392469fb1355a11187c7bef82e",
+    "contentSha256": "da1a77cb4ec28560b1caac38e7bf56b5a1113ff1bed1a9050fc69f080a94b1ee",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "右式比左式固定大 5，因此不可能左>右；化簡成 −1>4 也直接顯示為假，解集空。",
@@ -1496,7 +1514,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "6a7ed1c21acdc3c243b46ab31e782eca62d57111e4ef8fc531ac10c385bfc411",
+    "contentSha256": "562d812d1d30e4d81c497f658fae98355ba3cb09e962e084a04f8fdc8edb69b2",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "加法結果必須有單一可解釋單位；「小時＋公里」沒有共同量綱，因此模型不成立。",
@@ -1528,7 +1546,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "352308fa13fbf145495d5d8330c3c4c9832d1560f3e1e0d1db86886512cdde7d",
+    "contentSha256": "453b85f1ee26f04574bd50ac19692f56f8f844f9cfbf80afd2818d9fa3e65496",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "可用載重 80 公斤；4 箱重 72，可行；5 箱重 90，總重 610，不可行，所以原答案不合理，最多 4 箱。",
@@ -1560,7 +1578,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "863313795db4fc9f4fabbd6828f9c787e78eaabcb7cccaf66afc19ebd032c477",
+    "contentSha256": "0c923017073c86710e649aeaa2310da3a0a777e15a22c48c35db743313a5fa2a",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "換成公尺：2.4 公里=2400 公尺，才能算 2400−900；或換成公里 0.9。故第一步是統一單位。",
@@ -1592,7 +1610,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-reasonableness",
-    "contentSha256": "d33031841f60d3d0f26d3c4b9fb080995e96e3d363ab62994492c51e32515c5c",
+    "contentSha256": "a5bc2f9d89949f9517cd0816a77e32c6b3082696677b3a9333793c0b05539ee9",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "任何 n≥20 都大於 18，故必違反 n≤18；任何 n≤18 又小於 20，故必違反最低要求。沒有共同值。",

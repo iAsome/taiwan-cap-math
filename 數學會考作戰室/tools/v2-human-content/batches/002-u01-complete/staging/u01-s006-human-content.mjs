@@ -53,10 +53,9 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "絕對值只保留距離大小，不保留左右方向，所以 |-8|=8。",
-    "正數的絕對值是自己，負數的絕對值是其相反數，0 的絕對值是 0。",
-    "若 |x|=5，表示 x 在 0 左右各 5 單位，因此 x=5 或 -5。",
-    "外層負號不在絕對值符號內，例如 -|-4| 先算 |-4|=4，再取負得到 -4。"
+    "一個數的絕對值是它在數線上到原點的距離。距離沒有正負方向，所以絕對值一定大於或等於零；正數與它的相反數到原點等距，因此兩者絕對值相同。",
+    "計算單一整數的絕對值時，正數與零保持原值，負數則得到對應的正距離。若絕對值直條外還有負號，必須先算直條內，再處理外部取負。",
+    "方程式中絕對值等於正數代表原點左右各有一個等距位置，通常有正負兩解；絕對值不等式則可轉成到原點距離的區間。溫差、誤差與變化幅度都以絕對值表達相差多少。"
   ],
   "formalDefinitions": [
     {
@@ -97,102 +96,80 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先算絕對值符號內的數或算式。",
-      "check": "內部是否尚有運算？"
+      "instruction": "先確認絕對值直條涵蓋的完整算式，只在直條內部先做必要運算。",
+      "check": "區分直條內外的負號，外部符號不可提前被絕對值消去。"
     },
     {
       "step": 2,
-      "instruction": "判斷結果在 0 的哪一側。",
-      "check": "是正、負還是 0？"
+      "instruction": "把直條內結果解讀為到原點的距離，正數與零不變，負數改成對應正值。",
+      "check": "單純絕對值的結果必為非負數；若得到負值，表示尚未正確取距離。"
     },
     {
       "step": 3,
-      "instruction": "把到 0 的距離寫成非負數。",
-      "check": "答案是否錯帶負號？"
+      "instruction": "絕對值算完後，再依原式處理直條外的負號、加減或比較符號。",
+      "check": "重抄化簡後的完整式子，避免漏掉外部運算。"
     },
     {
       "step": 4,
-      "instruction": "再處理絕對值外的運算。",
-      "check": "外層負號或加減是否遺漏？"
+      "instruction": "遇到絕對值等於正數時，在原點左右列出兩個等距候選，再套用附加條件篩選。",
+      "check": "代回每個候選，確認絕對值符合，並檢查是否因正負條件排除其中一個。"
     },
     {
       "step": 5,
-      "instruction": "方程題用數線左右兩點檢查。",
-      "check": "是否漏掉相反數解？"
+      "instruction": "遇到絕對值不等式或情境差距時，改寫成以原點或目標值為中心的距離區間。",
+      "check": "嚴格小於不含端點，不大於則含端點；情境答案要附單位且不帶方向符號。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "計算 |-15|。",
-      "solutionSteps": [
-        "-15 距離 0 有 15 單位。",
-        "距離為非負。",
-        "所以結果是 15。"
-      ],
-      "answer": "15。"
+      "exampleId": "u01-s006-example-a",
+      "prompt": "計算負十八的絕對值。",
+      "answer": "十八。",
+      "why": "負十八在數線原點左側十八個單位，絕對值只計算位置到原點的距離，不保留向左的方向。因此距離為十八，結果必須是非負的十八。"
     },
     {
-      "exampleId": "L2",
+      "exampleId": "u01-s006-example-b",
+      "prompt": "計算負的負九絕對值。",
+      "answer": "負九。",
+      "why": "先算直條內負九的絕對值，得到到原點的距離九；原式直條外還有一個負號，接著對九取負才得到負九，不能把外部負號一併消去。"
+    },
+    {
+      "exampleId": "u01-s006-example-c",
+      "prompt": "解方程式甲的絕對值等於六。",
+      "answer": "甲等於六或負六。",
+      "why": "絕對值等於六表示甲到原點距離為六。數線上原點右側六個單位是正六，左側六個單位是負六，兩者代回後絕對值都等於六。"
+    },
+    {
+      "exampleId": "u01-s006-ex04-r4",
       "prompt": "計算 -|-7|。",
-      "solutionSteps": [
-        "先算 |-7|=7。",
-        "外層仍有負號。",
-        "結果為 -7。"
-      ],
-      "answer": "-7。"
-    },
-    {
-      "exampleId": "L3",
-      "prompt": "解 |x|=4。",
-      "solutionSteps": [
-        "x 到 0 的距離是 4。",
-        "右側坐標 4，左側坐標 -4。",
-        "兩者都符合。"
-      ],
-      "answer": "x=4 或 x=-4。"
-    },
-    {
-      "exampleId": "L4",
-      "prompt": "比較 |-9| 與 |6|。",
-      "solutionSteps": [
-        "|-9|=9。",
-        "|6|=6。",
-        "9>6。"
-      ],
-      "answer": "|-9|>|6|。"
+      "answer": "-7。",
+      "why": "先處理絕對值直條內的 -7，到零距離是 7，所以 |-7|=7；最前面的負號位於直條外仍須保留，最後得到 -7，而不是 7，兩層運算的順序不能互換。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "認為 |-6|=-6。",
-      "why": "把原坐標當距離。",
-      "correction": "到 0 的距離是 6。"
+      "mistake": "認為絕對值就是一律把數字前的負號刪掉。",
+      "correction": "先用到原點距離理解直條內容；直條外的負號仍須在絕對值之後處理。"
     },
     {
-      "mistake": "把 |0| 寫成沒有答案。",
-      "why": "誤以為絕對值只處理正負成對。",
-      "correction": "0 到 0 距離為 0。"
+      "mistake": "把絕對值等於正數只寫出正的一個原數。",
+      "correction": "距離原點同樣遠的位置通常有左右兩個，應列出正負兩解再套條件。"
     },
     {
-      "mistake": "解 |x|=7 只寫 x=7。",
-      "why": "忽略數線左側等距點。",
-      "correction": "還有 x=-7。"
+      "mistake": "認為零的絕對值必須是正數而不是零。",
+      "correction": "零就在原點，到原點距離為零；絕對值是非負，不是一定為正。"
     },
     {
-      "mistake": "認為 |x|=-2 有 x=±2。",
-      "why": "忽略絕對值非負。",
-      "correction": "右邊為負，無解。"
+      "mistake": "比較絕對值時直接比較原本帶號數的大小。",
+      "correction": "先分別算出每個到零的非負距離，再比較所得距離，不能跳過取絕對值。"
     },
     {
-      "mistake": "把 -|-3| 算成 3。",
-      "why": "把外層負號一起消掉。",
-      "correction": "先得 3，再取負為 -3。"
+      "mistake": "把嚴格小於與不大於的端點處理成相同。",
+      "correction": "小於不含距離恰等於界限的點，不大於則包含兩側端點，列整數時尤其要核對。"
     },
     {
-      "mistake": "任意拆開 |a+b|。",
-      "why": "誤用不存在的分配規則。",
-      "correction": "先算括號內總和再取絕對值。"
+      "mistake": "把直條外的負號也一起消去，將 -|-7| 算成 7。",
+      "correction": "絕對值只作用在直條內；先算出內部距離 7，再由外部負號取其相反數。"
     }
   ],
   "selfCheck": [
@@ -247,7 +224,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "d4db542d00b7350f60b28315cc80ef6bab287d368457af199d62618ede0a56c9",
+  "contentSha256": "e36473a43435782b2b07d8503ce7501f9bea5a5f36f6dcbe95f6cad6a589fa0b",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -271,11 +248,11 @@ export const QUESTIONS = [
       "16"
     ],
     "answerIndex": 0,
-    "explanation": "絕對值表示到 0 的距離。-8 到 0 的距離是 8。",
+    "explanation": "絕對值表示一個數在數線上到原點的距離，距離不帶方向且不會是負數。負八到原點相隔八個單位，所以負八的絕對值等於八。",
     "steps": [
-      "找 -8 在數線的位置。",
-      "計算到0的距離。",
-      "距離為8。"
+      "在數線上定位負八，位於原點左側八個單位。",
+      "取到原點的距離，只保留八個單位而不保留左向符號。",
+      "寫出負八的絕對值為八，並檢查結果非負。"
     ],
     "optionAnalysis": [
       {
@@ -299,7 +276,7 @@ export const QUESTIONS = [
         "reason": "16是-8與8的距離。"
       }
     ],
-    "commonMistake": "把原坐標 -8 直接當作絕對值。",
+    "commonMistake": "把絕對值直條當成括號，照抄負八而得到負的距離。",
     "concept": "負數的絕對值是對應正距離。",
     "tags": [
       "數與量",
@@ -314,7 +291,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "987b0c6002eb6401fb2ed4d125dec72d8908fe3a3c68f204256e931cce80147c",
+    "contentSha256": "2cadc47e4523913e214375bca2aa09e382f0a779f3918c692bea23d582c2351c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -336,11 +313,11 @@ export const QUESTIONS = [
       "1"
     ],
     "answerIndex": 1,
-    "explanation": "0 到 0 的距離是 0，所以 |0|=0。",
+    "explanation": "零就在數線原點上，因此零到原點的距離是零個單位。依絕對值的距離定義，零的絕對值等於零；它既不需改成正數，也不可能變成負數。",
     "steps": [
-      "絕對值是到0的距離。",
-      "0與0重合。",
-      "距離為0。"
+      "定位零的位置，確認它與原點是同一點。",
+      "計算該點到原點的距離為零。",
+      "依距離定義寫出零的絕對值為零，並確認結果非負。"
     ],
     "optionAnalysis": [
       {
@@ -364,7 +341,7 @@ export const QUESTIONS = [
         "reason": "|1|=1，不是0。"
       }
     ],
-    "commonMistake": "認為絕對值只適用於非零數。",
+    "commonMistake": "誤認絕對值一定要大於零，因而把零的絕對值寫成一或其他正數。",
     "concept": "0的絕對值是0。",
     "tags": [
       "數與量",
@@ -379,7 +356,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "29aa2cc08db92ca5a5d2b4c9144d72851e6310c949dee266ee986655df415644",
+    "contentSha256": "ff4c677db87437d7e957f9b974c317390b4641e15a204710e624596ebb63c19a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -401,11 +378,11 @@ export const QUESTIONS = [
       "|0|=1"
     ],
     "answerIndex": 2,
-    "explanation": "-5 到 0 的距離是 5，所以 |-5|=5。",
+    "explanation": "負五到原點的距離是五，所以負五的絕對值等於五。絕對值的結果必為非負數，不能保留原本負號；其餘不符合距離定義的等式都應排除。",
     "steps": [
-      "逐項把絕對值解釋成距離。",
-      "距離不能為負。",
-      "第三項成立。"
+      "把負五解讀為原點左側五個單位的位置。",
+      "取該位置到原點的距離，得到五。",
+      "檢查等式右側為非負的五，選出負五的絕對值等於五。"
     ],
     "optionAnalysis": [
       {
@@ -429,7 +406,7 @@ export const QUESTIONS = [
         "reason": "0到0距離為0。"
       }
     ],
-    "commonMistake": "認為絕對值符號只是把數原樣抄出。",
+    "commonMistake": "以為絕對值只是把數放進直條中，未把負五轉成到原點的正距離五。",
     "concept": "絕對值必為非負。",
     "tags": [
       "數與量",
@@ -444,7 +421,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "57e392ba0d642391e5f441e2054d8ff64fef076972d1f824754bfbb43aee36ed",
+    "contentSha256": "87dfd9751aef3fba29f055417412779778b0253fab0cd846c64467c59d14e59a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -466,11 +443,11 @@ export const QUESTIONS = [
       "5 或 -5"
     ],
     "answerIndex": 3,
-    "explanation": "到 0 距離 5 的點有兩個：右側 5 與左側 -5。",
+    "explanation": "絕對值等於五表示 x 到原點的距離是五。數線上距離原點五個單位有左右兩個位置，分別是正五與負五，因此 x 可能是五或負五，不能只取正的一個。",
     "steps": [
-      "把|x|=5解讀為距離。",
-      "向右5得到5。",
-      "向左5得到-5。"
+      "把 x 的絕對值等於五翻成 x 到原點距離為五。",
+      "在原點右側五個單位得到 x 等於五。",
+      "在原點左側五個單位得到 x 等於負五，合併為兩個解。"
     ],
     "optionAnalysis": [
       {
@@ -494,7 +471,7 @@ export const QUESTIONS = [
         "reason": "x=±5。"
       }
     ],
-    "commonMistake": "只寫正數解5。",
+    "commonMistake": "只記得絕對值結果是正數，便漏掉原數可以位於原點左側的負五。",
     "concept": "|x|=正數通常有一對相反數解。",
     "tags": [
       "數與量",
@@ -509,7 +486,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "75a6cd8378931c98a3ac80f42f35f492c499af79c7c305722017d655d54e65bb",
+    "contentSha256": "6c0a52b4fe98c9d1a47c42dd2d1146f068ab661a9343eb9503d5de982c6b3ed7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -531,11 +508,11 @@ export const QUESTIONS = [
       "無法比較"
     ],
     "answerIndex": 0,
-    "explanation": "|-9|=9，|6|=6，所以 9>6。",
+    "explanation": "先分別計算絕對值：負九到原點距離是九，而六到原點距離是六。比較兩個非負距離可得九大於六，所以負九的絕對值大於六的絕對值。",
     "steps": [
-      "先算兩個絕對值。",
-      "得到9與6。",
-      "比較9>6。"
+      "計算負九的絕對值，得到九。",
+      "計算六的絕對值，得到六。",
+      "比較九與六，將結果寫回原式得到大於關係。"
     ],
     "optionAnalysis": [
       {
@@ -559,7 +536,7 @@ export const QUESTIONS = [
         "reason": "兩值皆可算。"
       }
     ],
-    "commonMistake": "直接比較原數 -9 與 6，誤認左式較小。",
+    "commonMistake": "直接比較原數負九與六，沒有先各自取絕對值便錯選小於。",
     "concept": "比較絕對值就是比較到0的距離。",
     "tags": [
       "數與量",
@@ -574,7 +551,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "50fbe311be08aaf87ad4a1bc249140b56ac488221bf2e586feca04171edf529d",
+    "contentSha256": "d9247626d59b578486daa2d0448cfb030ad210d976345eba6d06f57f15a88ca5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -596,11 +573,11 @@ export const QUESTIONS = [
       "-8"
     ],
     "answerIndex": 1,
-    "explanation": "先算 |-4|=4，再處理外面的負號，得到 -4。",
+    "explanation": "運算順序要先算絕對值直條內的負四，得到正四；再處理直條外的負號，表示取四的相反數，因此最後結果是負四。外面的負號不在絕對值內。",
     "steps": [
-      "絕對值內部得4。",
-      "外層負號仍保留。",
-      "結果-4。"
+      "先計算負四的絕對值，得到四。",
+      "保留原式最外面的負號，式子化為負的四。",
+      "得到負四，並檢查沒有誤把外部負號一併消去。"
     ],
     "optionAnalysis": [
       {
@@ -624,7 +601,7 @@ export const QUESTIONS = [
         "reason": "把4加倍。"
       }
     ],
-    "commonMistake": "看到絕對值就把所有負號都消掉。",
+    "commonMistake": "把直條外的負號也包進絕對值，因而只留下正四而漏算最後取負。",
     "concept": "絕對值外的負號是另一個運算。",
     "tags": [
       "數與量",
@@ -639,7 +616,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7652c17243f67f098c95a72025394ce370ddaacb9f5ee977ee502ead61c7aec7",
+    "contentSha256": "f9fb3cc79ad7ee59ddd7315b4cfabc186a910d6229dd4e446e83d616cdc83114",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -661,11 +638,11 @@ export const QUESTIONS = [
       "3"
     ],
     "answerIndex": 2,
-    "explanation": "|a|=3 原有 a=±3，但條件 a<0 排除 3，所以 a=-3。",
+    "explanation": "a 的絕對值是三，表示 a 到原點距離三，因此候選為正三或負三。題目另給 a 小於零，排除正三，只剩位於原點左側的負三。",
     "steps": [
-      "由絕對值得a=3或-3。",
-      "使用a<0。",
-      "保留-3。"
+      "由 a 的絕對值等於三列出 a 可能是三或負三。",
+      "使用 a 小於零的附加條件，排除正三。",
+      "保留負三並代回，確認其絕對值為三且確實小於零。"
     ],
     "optionAnalysis": [
       {
@@ -689,7 +666,7 @@ export const QUESTIONS = [
         "reason": "不符合a<0。"
       }
     ],
-    "commonMistake": "只看到|a|=3就保留兩個答案。",
+    "commonMistake": "只由絕對值等於三回答正負三兩個值，忽略題目已限定 a 是負數。",
     "concept": "附加符號條件可從一對相反數解中選一個。",
     "tags": [
       "數與量",
@@ -704,7 +681,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7821950b13aee56e2d85fbccb6720b2cd5613ac14bd1626b916ac87b1755cf00",
+    "contentSha256": "7c0fcf3f7626e2aa2e1751cdf4c7ee71ea72956c2607fbc248bbb1bb29e3b849",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -726,11 +703,11 @@ export const QUESTIONS = [
       "3 個"
     ],
     "answerIndex": 3,
-    "explanation": "到 0 的距離小於 2 的整數是 -1、0、1，共 3 個。",
+    "explanation": "x 的絕對值小於二表示 x 到原點距離嚴格少於二。介於負二與二之間的整數只有負一、零、一，共三個；端點負二與二因為是不包含的嚴格不等式，不能計入。",
     "steps": [
-      "在數線找-2與2之間。",
-      "只取整數且不含端點。",
-      "列出-1,0,1，共3個。"
+      "把絕對值小於二改寫成負二小於 x 且 x 小於二。",
+      "列出開區間內的整數負一、零與一。",
+      "確認負二與二的絕對值等於二不合條件，因此總數為三。"
     ],
     "optionAnalysis": [
       {
@@ -754,7 +731,7 @@ export const QUESTIONS = [
         "reason": "x∈{-1,0,1}，3個。"
       }
     ],
-    "commonMistake": "把 -2、2 也列入，忽略嚴格小於。",
+    "commonMistake": "把小於看成小於或等於，將兩個端點也列入而算成五個整數。",
     "concept": "|x|<k表示x位於-k與k之間。",
     "tags": [
       "數與量",
@@ -769,7 +746,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7bc7edbe10b8ddc905423ccebdc9be0b48a8dfc1a3f281aea657ba4b92c76511",
+    "contentSha256": "e04eb7b5d9594fdc36e3aedf6475e48f01e9877312ab1cd4e24521f2bb964eed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -791,11 +768,11 @@ export const QUESTIONS = [
       "-9"
     ],
     "answerIndex": 0,
-    "explanation": "|-7|=7，|2|=2，所以 7-2=5。",
+    "explanation": "先算兩個絕對值，負七到原點距離為七，正二到原點距離為二。原式因此化為七減二，結果是五；不能把負七直接拿去減二。",
     "steps": [
-      "先算兩個絕對值。",
-      "得到7與2。",
-      "相減得5。"
+      "計算負七的絕對值為七。",
+      "計算二的絕對值為二，原式變成七減二。",
+      "完成減法得到五，並檢查兩個直條都已先處理。"
     ],
     "optionAnalysis": [
       {
@@ -819,7 +796,7 @@ export const QUESTIONS = [
         "reason": "保留錯誤負號。"
       }
     ],
-    "commonMistake": "把 |-7|-|2| 當成 |-7-2|=9。",
+    "commonMistake": "保留負七的負號後算成負九，忘記絕對值先把距離轉為非負數。",
     "concept": "分開的絕對值符號要各自計算，再做外部運算。",
     "tags": [
       "數與量",
@@ -834,7 +811,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3476e533fe77198785a41a1160228b4dd177fef5498c8770d4699d88869ec289",
+    "contentSha256": "cdd74b2432c5f9a875f22914488e88a76bc83e52db00b6db80b4845f582f4755",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -856,11 +833,11 @@ export const QUESTIONS = [
       "493°C"
     ],
     "answerIndex": 1,
-    "explanation": "相差多少是距離，使用 |243-250|=7°C，不帶方向。",
+    "explanation": "與目標值的差距只問相差多少，不問高低方向，所以取實際值二百四十三減目標值二百五十的絕對值。差為負七，絕對值是七度，表示相差七度。",
     "steps": [
-      "寫實際-目標=-7。",
-      "取絕對值得7。",
-      "附單位°C。"
+      "用實際值減目標值，列出二百四十三減二百五十等於負七。",
+      "對差值取絕對值，將方向差負七轉成距離七。",
+      "補上題目單位，答案為七度並核對不帶負號。"
     ],
     "optionAnalysis": [
       {
@@ -884,7 +861,7 @@ export const QUESTIONS = [
         "reason": "把兩溫度相加。"
       }
     ],
-    "commonMistake": "把偏差 -7°C 直接當作「相差多少」的答案。",
+    "commonMistake": "把實際值較低理解成差距也要寫負七，忽略相差多少代表非負距離。",
     "concept": "絕對值把帶號偏差轉成無方向差距。",
     "tags": [
       "數與量",
@@ -899,7 +876,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "目標值、實際值與問題用語「相差多少」共同決定是否取絕對值。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bc5192ff65877ca0e20a14b976a2df837b40261afe1b41a9090a318c2c5cc02a",
+    "contentSha256": "f077835ca9fe612f071ead5a11b9c986d482c99fe382b2d3587e69f9a3876971",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -921,11 +898,11 @@ export const QUESTIONS = [
       "-17"
     ],
     "answerIndex": 2,
-    "explanation": "變化量大小分別為 |-12|=12、|5|=5，相差 12-5=7。",
+    "explanation": "變化量負十二的幅度是十二，正五的幅度是五；幅度只比較到零的距離，所以分別取絕對值。兩個幅度相差十二減五等於七，答案為七。",
     "steps": [
-      "取兩個變化量絕對值。",
-      "得到12與5。",
-      "大小差7。"
+      "取負十二的絕對值得到第一個變化幅度十二。",
+      "取正五的絕對值得到第二個變化幅度五。",
+      "以較大幅度減較小幅度，十二減五得到七。"
     ],
     "optionAnalysis": [
       {
@@ -949,7 +926,7 @@ export const QUESTIONS = [
         "reason": "錯誤負號。"
       }
     ],
-    "commonMistake": "看到一正一負就直接求兩分數在數線上的距離17。",
+    "commonMistake": "直接用負十二減正五得到負十七，混淆帶方向的變化量與變化幅度。",
     "concept": "「變化量的大小」先各取絕對值，再比較。",
     "tags": [
       "數與量",
@@ -964,7 +941,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "隊伍、帶號變化與「大小相差」這個措辭都不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "eddcd5b362bd8f740eab7914530e8455839301f00bdfc68cef5f2cc6e0cbb6c1",
+    "contentSha256": "7fe185ae201d61eae6b47bf09f9e94d64d8e3770aac11e7fb9e179899a12a0e8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -986,11 +963,11 @@ export const QUESTIONS = [
       "第四次"
     ],
     "answerIndex": 3,
-    "explanation": "絕對值依序 3、4、0、5，只有第四次的5超過4。",
+    "explanation": "逐筆取偏差的絕對值，可得三、四、零、五。題目要求絕對值不大於四，前三筆都符合，第四筆的五超過四，因此不符合的是第四筆。",
     "steps": [
-      "逐一取絕對值。",
-      "比較是否>4。",
-      "第四次超標。"
+      "把四筆偏差三、負四、零、負五分別取絕對值。",
+      "得到三、四、零、五，逐一與上限四比較。",
+      "只有第四筆的五大於四，所以選擇第四筆。"
     ],
     "optionAnalysis": [
       {
@@ -1014,7 +991,7 @@ export const QUESTIONS = [
         "reason": "正確，|-5|=5。"
       }
     ],
-    "commonMistake": "把 -5 視為小於4，所以判定未超標。",
+    "commonMistake": "只檢查原偏差是否大於四，因負五本身小於四而錯把第四筆判為合格。",
     "concept": "允差通常比較絕對偏差，不比較原偏差大小。",
     "tags": [
       "數與量",
@@ -1029,7 +1006,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "允差規則與四筆偏差都參與判斷，等於上限不算超過。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2d9819aae028d47a72401274c571dc7a4323d58a09bcd02e88708892c3744d4a",
+    "contentSha256": "d1c03fba5c40116e12a18dd1a322c09bcf223d91098f62fbf6fa405d15454077",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1050,10 +1027,9 @@ export const CONSTRUCTED_RESPONSES = [
       "外層負號必須在取絕對值後處理。"
     ],
     "fullCreditSolution": [
-      "|-13|=13。",
-      "|0|=0。",
-      "-|7|=-7。",
-      "-|-6|=-6。"
+      "先算每個絕對值：負十三到原點距離為十三，所以負十三的絕對值是十三；零的絕對值仍是零。",
+      "七的絕對值為七，再保留外面的負號得到負七；負六的絕對值為六，再保留外面的負號得到負六。",
+      "四個結果依序為十三、零、負七、負六。關鍵是先算直條內的距離，再處理直條外的負號，不能一次消去。"
     ],
     "alternativeSolutions": [
       "可用「距離」說明前兩項，用運算順序說明後兩項。"
@@ -1080,17 +1056,22 @@ export const CONSTRUCTED_RESPONSES = [
       "-|7|與-|-6|的結果都為負，不可因絕對值而刪除外層負號。"
     ],
     "commonErrors": [
-      "把|-13|寫-13。",
-      "把-|7|寫7。",
-      "把-|-6|寫6。"
+      "把負十三的負號保留在絕對值結果中，錯把距離寫成負十三。",
+      "將直條外的負號也納入絕對值，因而把負七與負六錯寫成正數。",
+      "未逐項依先絕對值後外部符號的順序計算，導致多層符號互相混淆。"
     ],
     "independentReview": {
       "derivedResult": "13、0、-7、-6。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "004c37763a86598bc9152e5899917f030b11e012bb84a29b5c7212cef915f530",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "819a3b52f298bce3db134cc86479c8df6c8d932dff222a99679e1e23743a6963",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "逐項先處理絕對值直條，得到十三、零、七與六。",
+      "只對原式直條外另有負號的後兩項取負，得到負七與負六。",
+      "依題目原順序寫出十三、零、負七、負六，並檢查絕對值本身皆非負。"
+    ]
   },
   {
     "questionId": "u01-s006-cr002",
@@ -1108,9 +1089,9 @@ export const CONSTRUCTED_RESPONSES = [
       "解釋相反數配對。"
     ],
     "fullCreditSolution": [
-      "x=-3、-2、-1、0、1、2、3。",
-      "相反數配對 (-3+3)、(-2+2)、(-1+1) 都為0，再加0。",
-      "總和為0。"
+      "x 的絕對值不大於三，表示 x 到原點的距離最多三個單位，等價於負三小於或等於 x 且 x 小於或等於三。",
+      "在這個閉區間內逐一列出整數為負三、負二、負一、零、一、二、三，兩個端點因為可以等於而都要保留。",
+      "成對相加負三與三、負二與二、負一與一都抵消為零，再加中央的零，因此全部整數總和為零。"
     ],
     "alternativeSolutions": [
       "可直接逐項相加，但須補充對稱解釋才得滿分。"
@@ -1137,17 +1118,22 @@ export const CONSTRUCTED_RESPONSES = [
       "≤包含-3與3。"
     ],
     "commonErrors": [
-      "漏掉0。",
-      "把±4納入。",
-      "只列非負整數。"
+      "把不大於看成小於，錯誤排除負三與三而少列兩個整數。",
+      "只列正整數與零，忘記同距離的負整數也符合絕對值條件。",
+      "逐項相加時符號出錯，沒有利用正負三、正負二、正負一成對抵消。"
     ],
     "independentReview": {
       "derivedResult": "x=-3至3的所有整數，總和0。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "efbd824e1b07e731bf0df38efae882aa1f608643064f809f01ea5d5644eea4cf",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "972d7b9df35052d95534855a374e27b382840b293da583085586a0501dc65b3d",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "把絕對值不等式改寫為包含端點的區間負三到三。",
+      "依序列出區間內七個整數，確認沒有漏掉零或兩個端點。",
+      "利用相反數成對抵消，三組和皆為零，最後總和仍是零。"
+    ]
   }
 ];
 

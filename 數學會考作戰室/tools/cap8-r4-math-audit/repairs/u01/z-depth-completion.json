@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u01",
+  "batch": "002-u01-complete",
+  "skills": ["s004", "s005", "s006", "s010", "s011", "s012"],
+  "mc": [],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u01-s004-lecture-r1",
+      "expectedContentSha256": "cf189f1020494a0df45879c9652f1b3818a3a30cbe8e14fa591da3535479a0dd",
+      "appendArray": {
+        "workedExamples": [
+          {
+            "exampleId": "u01-s004-ex04-r4",
+            "prompt": "甲帳戶餘額為 -250 元，乙帳戶餘額為 -80 元，哪一個餘額較大？",
+            "answer": "乙帳戶的 -80 元較大。",
+            "why": "兩個餘額都是負數，先比較到零的距離；八十比二百五十小，所以負八十在數線上較靠右，原數較大，表示乙帳戶欠款較少。"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "mistake": "看到金額的絕對值 250 較大，就判定 -250 元的餘額較大。",
+            "correction": "餘額大小比較的是帶號數，不是欠款量；負數離零越遠，在數線上反而越小。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u01-s005-lecture-r1",
+      "expectedContentSha256": "f3233ff64d5099da30fef278513b75d4d332204c9f76ba251b223d7d114a5df6",
+      "appendArray": {
+        "workedExamples": [
+          {
+            "exampleId": "u01-s005-ex04-r4",
+            "prompt": "若 a 的相反數是 -12，求 a。",
+            "answer": "a=12。",
+            "why": "a 的相反數寫成 -a，題意給出 -a=-12；等式兩邊同取相反數可得 a=12，再以 12+(-12)=0 驗證兩數確實互為相反數。"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "mistake": "題目說 a 的相反數是 -12，就直接把 a 也寫成 -12。",
+            "correction": "先把語句翻成 -a=-12，再取一次相反數；原數與其相反數的符號應相反。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u01-s006-lecture-r1",
+      "expectedContentSha256": "f89f7c8b9db6debe77ba527e369b8d3aee9331334e13f69b2d2e0ea1e6a71274",
+      "appendArray": {
+        "workedExamples": [
+          {
+            "exampleId": "u01-s006-ex04-r4",
+            "prompt": "計算 -|-7|。",
+            "answer": "-7。",
+            "why": "先處理絕對值直條內的 -7，到零距離是 7，所以 |-7|=7；最前面的負號位於直條外仍須保留，最後得到 -7，而不是 7。"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "mistake": "把直條外的負號也一起消去，將 -|-7| 算成 7。",
+            "correction": "絕對值只作用在直條內；先算出內部距離 7，再由外部負號取其相反數。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u01-s010-lecture-r1",
+      "expectedContentSha256": "c2f4fc416420284cb0afa3335f01a05c14a588130ce9e8b1fffe2c8c9bc22663",
+      "appendArray": {
+        "workedExamples": [
+          {
+            "exampleId": "u01-s010-ex04-r4",
+            "prompt": "計算 (-96)÷8×(-2)。",
+            "answer": "24。",
+            "why": "乘法與除法同級，依出現順序先算 (-96)÷8=-12，再算 (-12)×(-2)=24；兩次運算各自判斷符號，可避免跳步漏掉第二個負號。"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "mistake": "為了先乘 8×(-2)，擅自改變原式乘除的次序。",
+            "correction": "沒有括號時乘除同級且由左到右；不能跨過除號任意把後兩數先相乘。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u01-s011-lecture-r1",
+      "expectedContentSha256": "0b01df7f76d7c376e47695fe37d16a289f985e7b204a575a905a0f49420b8d14",
+      "appendArray": {
+        "workedExamples": [
+          {
+            "exampleId": "u01-s011-ex04-r4",
+            "prompt": "計算 48÷[3×(-2)]-5。",
+            "answer": "-13。",
+            "why": "先算中括號 3×(-2)=-6，使原式成 48÷(-6)-5；再完成除法得 -8，最後做加減得到 -13，每一步只處理一個運算層級。"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "mistake": "先算 48÷3，再把所得結果乘 -2，忽略中括號指定的整體除數。",
+            "correction": "中括號內的乘積是完整除數，必須先求 -6，才能進行 48÷(-6)。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u01-s012-lecture-r1",
+      "expectedContentSha256": "89fc780f7eb5c01b60302aae92ef7edec17974c7cc124d019989fcca335e5a8c",
+      "appendArray": {
+        "workedExamples": [
+          {
+            "exampleId": "u01-s012-ex04-r4",
+            "prompt": "某培養皿起初有 3 個菌落，每一輪數量都變成前一輪的 2 倍，5 輪後有多少個？",
+            "answer": "96 個。",
+            "why": "五輪各乘一次 2，累積倍率是 2⁵=32；起初的 3 個不能省略，因此總數為 3×32=96。指數只表示五次倍增，不包含初始數量。"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "mistake": "看到五輪倍增就只算 2⁵，忘記還要乘起初的 3 個菌落。",
+            "correction": "2⁵ 是相對於初始量的倍率；題目求實際總數時，仍須用初始量乘倍率。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

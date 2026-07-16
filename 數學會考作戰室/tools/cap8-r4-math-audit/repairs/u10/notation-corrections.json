@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u10",
+  "batch": "011-u10-complete",
+  "skills": ["s001", "s002", "s003", "s004", "s005", "s006", "s007", "s008", "s009", "s010", "s011", "s012", "s013"],
+  "mc": [
+    {
+      "questionId": "u10-s001-v006",
+      "expectedContentSha256": "1db05acc735607b20e3d895b943389ee9913f0ea179a297a342c6b04658d4cf8",
+      "replaceText": { "x^(1/2)": "√x" }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u10-s006-cr001",
+      "expectedContentSha256": "f2f9c89e051aac4a6d1a9934ee254692ac2bb9a0cb4c9f25de7362639ca0baf4",
+      "replaceText": {
+        "可先寫成 -12·a^(2+1)·b^(1+3)。": "可先把同底數的因數排在一起，寫成 -12·a²·a·b·b³，再化為 -12a³b⁴。"
+      }
+    },
+    {
+      "questionId": "u10-s009-cr001",
+      "expectedContentSha256": "375ced3dfe3fdd7951342396770c9dfa74ae44e739662202ff77f0300b9e78be",
+      "replaceText": {
+        "^2": "²"
+      }
+    },
+    {
+      "questionId": "u10-s009-cr002",
+      "expectedContentSha256": "15ef6dc9e31da2c503ec8488746be76c21e8da703353e9351c5c18b5e99985d4",
+      "replaceText": {
+        "^2": "²"
+      }
+    },
+    {
+      "questionId": "u10-s010-cr001",
+      "expectedContentSha256": "9f21e0066873178186cb0c07a14887f81395fe944bc7f676d519611925f550fe",
+      "replaceText": {
+        "^2": "²"
+      }
+    },
+    {
+      "questionId": "u10-s010-cr002",
+      "expectedContentSha256": "ff781a361fa66f50ee71316e39ed516d99856c65054d6e40041546ea339aa037",
+      "replaceText": {
+        "^2": "²"
+      }
+    },
+    {
+      "questionId": "u10-s011-cr001",
+      "expectedContentSha256": "a06a06ab03946c023e3614ce0acfaf288eacf01b90becda1cf7a73788dcd1833",
+      "replaceText": {
+        "^2": "²"
+      }
+    },
+    {
+      "questionId": "u10-s011-cr002",
+      "expectedContentSha256": "5747080d46f9ef5bbec54f86322fe07f0c28dea3c984922472d652985de4e4dd",
+      "replaceText": {
+        "^2": "²"
+      }
+    }
+  ],
+  "lectures": [
+    { "lectureId": "u10-s001-lecture-r1", "expectedContentSha256": "91b13d6053b7c5e5b06ec6269a67ad6ef0b050b2472e18cdcb2e01446942789c", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s002-lecture-r1", "expectedContentSha256": "d1e0ce9a86822b0e39659145ab7b4d7a620f779096f39184d6a6444eca87c2ff", "replaceText": { "我是否能能": "我是否能", "我是否能代入負數時能使用括號保留符號？": "我是否能在代入負數時使用括號保留符號？" } },
+    { "lectureId": "u10-s003-lecture-r1", "expectedContentSha256": "34a8e02513fb3968dfda01dbbae0d4c787bf18327560fd6f702b84faf455a5fa", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s004-lecture-r1", "expectedContentSha256": "97a41aed40a91e689d52726d040c6bb278344e7ec8c09912480dcce13d23c774", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s005-lecture-r1", "expectedContentSha256": "52c39bf822b45b08fc2a089aad62a8cb032727cd154bf682dd1ed353b7dcb32e", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s006-lecture-r1", "expectedContentSha256": "cd09ff585f0c9fad299725272c9bba829c59e31cc6cbd628b3462e65cf71f71b", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s007-lecture-r1", "expectedContentSha256": "c030d5c003a33f5f87429cf6edf590c20b937f43657b879d03438cf9594024e7", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s008-lecture-r1", "expectedContentSha256": "848ebf404380110d9a702c8ceae64d17ff7ab9ea748ad27e899853a1f699c962", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s009-lecture-r1", "expectedContentSha256": "3cae3521d3707be4eeb7145f08e832588f27050ca1cc1f27fdb9f27165451cac", "replaceText": { "^2": "²", "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s010-lecture-r1", "expectedContentSha256": "aa9149448278080a7c85b33331b0e8df1ccdb8aeed553b651b6f547fb79c7eee", "replaceText": { "^2": "²", "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s011-lecture-r1", "expectedContentSha256": "9e8b83e18f7d033ece43a269a46655b697a3d10361a579a648ae42e6c1fec30e", "replaceText": { "^2": "²", "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s012-lecture-r1", "expectedContentSha256": "ba7233eb4028ffbfbc18c4a1415143f974e34e62c23a998cb527eee156d10571", "replaceText": { "我是否能能": "我是否能" } },
+    { "lectureId": "u10-s013-lecture-r1", "expectedContentSha256": "77bd438b91bab7098e990c19a66fc515a0acaa2a69f72fad152bbdf00249b2c8", "replaceText": { "我是否能能": "我是否能" } }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

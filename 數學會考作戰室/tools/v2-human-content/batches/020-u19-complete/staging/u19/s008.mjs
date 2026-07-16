@@ -440,7 +440,7 @@ export const u19_s008 = {
       "estimatedTimeSec": 60,
       "unitCheck": "正確答案是長度 7π cm；面積公式和 cm² 選項均被排除。",
       "roundingCheck": "保留 π 的精確值；已確認不會因四捨五入產生第二答案。",
-      "ambiguityAudit": "180° 明確表示半圓弧；直徑 14 cm 唯一對應半徑 7 cm，不存在優弧或反角歧義。",
+      "ambiguityAudit": "180° 明確表示半圓弧；直徑 14 cm 唯一對應半徑 7 cm，不存在優弧或優角歧義。",
       "boundaryAudit": "只使用直徑半徑關係與弧長公式，符合國中會考範圍。",
       "difficultyReason": "basic：重點是診斷直徑、半徑及單位，而不是再做一次同型數字代入。",
       "literacyContextNecessity": null,
@@ -449,7 +449,7 @@ export const u19_s008 = {
       "noTemplateDeclaration": true,
       "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "8e9d84105334b4e7cc04993be9b61a78dda3affeedd6548a8e916323834ae16a"
+      "contentSha256": "862921c1b274bc781eea7e09ae5008fc299c5e4110b457c423d6bb9e106f7fdf"
     },
     {
       "questionId": "u19-s008-v004",
@@ -1277,7 +1277,7 @@ export const u19_s008 = {
     },
     {
       "questionId": "u19-s008-v003",
-      "contentSha256": "8e9d84105334b4e7cc04993be9b61a78dda3affeedd6548a8e916323834ae16a",
+      "contentSha256": "862921c1b274bc781eea7e09ae5008fc299c5e4110b457c423d6bb9e106f7fdf",
       "reviewVersion": "central-human-review-r1.1",
       "independentSolution": "先不看選項，直徑 14 cm 表示半徑 7 cm。180° 弧是半圓弧，弧長=πr=7π cm，因此第一個修正正確。",
       "derivedAnswer": "半徑是 7 cm，正確弧長為 7π cm",
@@ -1296,7 +1296,7 @@ export const u19_s008 = {
         "unitConflict": "正確答案是長度 7π cm；面積公式和 cm² 選項均被排除。",
         "roundingConflict": "保留 π 的精確值；已確認不會因四捨五入產生第二答案。",
         "domainBoundary": "只使用直徑半徑關係與弧長公式，符合國中會考範圍。",
-        "alternateReading": "180° 明確表示半圓弧；直徑 14 cm 唯一對應半徑 7 cm，不存在優弧或反角歧義。"
+        "alternateReading": "180° 明確表示半圓弧；直徑 14 cm 唯一對應半徑 7 cm，不存在優弧或優角歧義。"
       },
       "difficultyReason": "basic：重點是診斷直徑、半徑及單位，而不是再做一次同型數字代入。",
       "literacyContextNecessity": null,

@@ -61,11 +61,9 @@ export default {
       }
     ],
     "conceptDevelopment": [
-      "眾數回答「哪個值最常見」，所以要比較次數；答案是資料值，不是最高次數。",
-      "可能有一個、兩個或更多眾數；若每個值次數相同，通常說沒有眾數。",
-      "全距只由最大值與最小值決定，中間資料怎麼變通常不影響全距。",
-      "極端值會直接擴大全距，因此全距容易受離群值影響。",
-      "眾數適用於類別資料，例如最受歡迎口味；平均數則不一定能用於類別。"
+      "眾數是出現次數最高的資料值，作答時要寫資料值而不是最高次數。先建立每個值的次數表，再找最大次數；若兩個以上資料值並列最高，它們都是眾數。若每個值出現次數完全相同，通常說沒有眾數，因此不能預設每組資料只有一個眾數。",
+      "全距等於最大值減最小值，只由資料兩端決定。所有資料同加或同減一個常數時，最大與最小同步平移，差保持不變；替換或加入資料時，只有超出原兩端才會改變全距。極端值會直接擴大全距，所以全距容易受離群值影響。",
+      "同一筆資料變動可能對眾數與全距造成不同效果，必須分開檢查：先更新各值次數判眾數，再重找最大、最小求全距。比較兩組散布時，較小全距只表示最大最小跨度較小，不能據此斷言兩組分布其他部分完全相同。"
     ],
     "definitions": [
       {
@@ -125,38 +123,44 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "鞋號 23、24、24、24、25、25。",
+        "prompt": "鞋號為 23、24、24、24、25、25，求眾數。",
         "solution": [
-          "24 出現3次，25出現2次，其餘1次。"
+          "二十四出現三次。",
+          "二十五出現兩次，其餘各一次。"
         ],
-        "answer": "眾數24。"
+        "answer": "眾數為 24。",
+        "why": "補貨關心哪個鞋號實際出現最多，次數表顯示二十四唯一達三次；答案要寫鞋號二十四，而不是把最高次數三誤當成眾數。"
       },
       {
         "id": "L2",
-        "prompt": "資料 2、2、5、5、8。",
+        "prompt": "資料為 2、2、5、5、8，求眾數。",
         "solution": [
-          "2與5都出現2次，並列最高。"
+          "二與五各出現兩次。",
+          "八只出現一次。"
         ],
-        "answer": "眾數為2與5。"
+        "answer": "眾數為 2 與 5。",
+        "why": "二、五的次數並列最高，兩者都符合最常出現的定義；強迫只選其中一個會遺漏完整答案，而八並未追平最高次數。"
       },
       {
         "id": "L3",
-        "prompt": "資料 4、7、9、13、13。",
+        "prompt": "資料為 4、7、9、13、13，求全距。",
         "solution": [
-          "最大13，最小4。",
+          "最大值為 13，最小值為 4。",
           "13-4=9。"
         ],
-        "answer": "全距9。"
+        "answer": "全距為 9。",
+        "why": "全距只量測兩端跨度，中間七、九與十三是否重複都不改變最大減最小；以四加九回到十三也能快速核對相減方向。"
       },
       {
         "id": "L4",
-        "prompt": "資料 10、11、11、12、50。",
+        "prompt": "資料為 10、11、11、12、50，說明眾數與全距。",
         "solution": [
-          "眾數11。",
-          "全距=50-10=40。",
-          "50 使全距很大。"
+          "十一出現兩次，為眾數。",
+          "全距為 50-10=40。",
+          "五十是造成大跨度的極端值。"
         ],
-        "answer": "最常見為11，但跨度40顯示有極端值。"
+        "answer": "眾數 11，全距 40。",
+        "why": "眾數由次數決定，所以仍是十一；全距只看兩端，五十使最大最小差擴大到四十。兩個統計量分別揭示最常見值與整體跨度。"
       }
     ],
     "commonMistakes": [
@@ -234,7 +238,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "20bf2d63e4e08cf20541ba6bf7857fd32e5785e63cac14a2a3b777b61cff21c8"
+    "contentSha256": "a7412d47a06c549f5801dd441d0f16b20d3802f7fde2629b038eaa10f6a5875d"
   },
   "mcQuestions": [
     {
@@ -262,10 +266,11 @@ export default {
         "derivedAnswer": "3",
         "trustStoredAnswer": false
       },
-      "explanation": "眾數是出現次數最多的資料值。",
+      "explanation": "眾數是出現次數最多的資料值。 逐值計數可得三出現兩次，其餘二、五、七各一次，所以出現次數最高的資料值是三；眾數答案不是最高次數二。",
       "steps": [
         "統計每個值的次數。",
-        "找最高次數。"
+        "找最高次數。",
+        "比較次數後確認只有三達到最高兩次。"
       ],
       "optionAnalysis": [
         {
@@ -289,7 +294,7 @@ export default {
           "reason": "7 只出現一次。"
         }
       ],
-      "misconceptionTarget": "把最大值當眾數",
+      "misconceptionTarget": "把最大值當眾數 把出現次數二寫成眾數，而非寫最常出現的資料值三。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -307,7 +312,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "77346876e1225b7caa9678b1a2e538f0743ab90553d79847955e455b82ec1344"
+      "contentSha256": "e21571b6e367a08a23f1da235fcf7bc11d825608c028536ad7b187ea4216e279"
     },
     {
       "questionId": "u09-s011-v002",
@@ -334,7 +339,7 @@ export default {
         "derivedAnswer": "7",
         "trustStoredAnswer": false
       },
-      "explanation": "全距只看兩端值。",
+      "explanation": "全距只看兩端值。 全距只比較資料兩端，最大十一減最小四等於七；中間的六與九不影響全距，也不能把最大與最小相加。",
       "steps": [
         "找最大值 11。",
         "找最小值 4。",
@@ -362,7 +367,7 @@ export default {
           "reason": "11-4=7。"
         }
       ],
-      "misconceptionTarget": "把最大值或總和當全距",
+      "misconceptionTarget": "把最大值或總和當全距 將最大十一與最小四相加成十五，混淆全距定義。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -380,7 +385,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c497a6515224524918e8a68db5d2f5aa07523815ad833329cb4c6d1c57423f99"
+      "contentSha256": "24ec693e2aa6d9a7abcd8f135ae9be98f82bde0c9264337b36db400138da214b"
     },
     {
       "questionId": "u09-s011-v003",
@@ -407,10 +412,11 @@ export default {
         "derivedAnswer": "1 與 2",
         "trustStoredAnswer": false
       },
-      "explanation": "眾數可以不只一個。",
+      "explanation": "眾數可以不只一個。 一與二都各出現兩次且並列最高，三只出現一次，因此本組有兩個眾數一、二；眾數不要求只能有一個。",
       "steps": [
         "統計次數。",
-        "保留所有並列最高值。"
+        "保留所有並列最高值。",
+        "列出次數一為二次、二為二次、三為一次。"
       ],
       "optionAnalysis": [
         {
@@ -434,7 +440,7 @@ export default {
           "reason": "有兩個眾數，不是沒有。"
         }
       ],
-      "misconceptionTarget": "認為眾數只能一個",
+      "misconceptionTarget": "認為眾數只能一個 強迫只選一個眾數，忽略一與二出現次數並列最高。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -452,7 +458,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d643404b8437b9d6a274a0295192089300c71d09727369084cc2cd2f9149c4b4"
+      "contentSha256": "e1df754b0aaefa8e98b2fd8bb34da28b43c152aba93fc6ea7bc8ad9b51b31071"
     },
     {
       "questionId": "u09-s011-v004",
@@ -479,10 +485,11 @@ export default {
         "derivedAnswer": "9",
         "trustStoredAnswer": false
       },
-      "explanation": "眾數條件要檢查所有值的次數。",
+      "explanation": "眾數條件要檢查所有值的次數。 原本七出現兩次，若未知數取九，九也出現兩次，便形成七與九並列眾數，不再唯一；其餘選項都不會追平七的最高次數。",
       "steps": [
         "代入各選項。",
-        "比較最高次數是否唯一。"
+        "比較最高次數是否唯一。",
+        "逐項代入並比較所有資料值次數，找出九造成並列。"
       ],
       "optionAnalysis": [
         {
@@ -506,7 +513,7 @@ export default {
           "reason": "x=10 時 7 仍唯一最多。"
         }
       ],
-      "misconceptionTarget": "只看 x 是否等於 7",
+      "misconceptionTarget": "只看 x 是否等於 7 只確認七仍出現兩次，沒有檢查其他值是否也並列兩次。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -524,7 +531,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7eccf5c08f05d0774feff87dc80237b4b164e9156c69cb60a89ed18840ff96db"
+      "contentSha256": "22e367b8f9f07236f6edfe2706971d21b425f9ba66c37306a39a024aa63e0769"
     },
     {
       "questionId": "u09-s011-v005",
@@ -551,10 +558,11 @@ export default {
         "derivedAnswer": "23",
         "trustStoredAnswer": false
       },
-      "explanation": "所有資料平移同一常數不改變全距。",
+      "explanation": "所有資料平移同一常數不改變全距。 每筆都加四後最大與最小分別成三十九、十六，兩端差仍是二十三；同加常數會在相減時互相抵消，因此全距不變。",
       "steps": [
         "更新兩端或用性質。",
-        "相減。"
+        "相減。",
+        "計算三十九減十六得二十三，與原三十五減十二一致。"
       ],
       "optionAnalysis": [
         {
@@ -578,7 +586,7 @@ export default {
           "reason": "31 是錯誤更新。"
         }
       ],
-      "misconceptionTarget": "認為全距也加 4",
+      "misconceptionTarget": "認為全距也加 4 把增加四誤當全距也增加四，沒有重算新兩端差。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -596,7 +604,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "045f3e6e69f67b2c9cbd313681ef60283b7b92307e11755db6023143c063a14a"
+      "contentSha256": "0a21647f80f4af42b36f00ec32bb2740fb8189c4a7a763643200c433155ac325"
     },
     {
       "questionId": "u09-s011-v006",
@@ -623,10 +631,11 @@ export default {
         "derivedAnswer": "眾數仍為 4，全距由 7 變 10",
         "trustStoredAnswer": false
       },
-      "explanation": "極端值改變可能影響全距但不一定影響眾數。",
+      "explanation": "極端值改變可能影響全距但不一定影響眾數。 四仍出現兩次而保持唯一眾數；最大值由九改為十二、最小仍二，所以全距由七變十，眾數與全距須分別檢查。",
       "steps": [
         "比較更正前後次數。",
-        "比較最大最小。"
+        "比較最大最小。",
+        "重算次數得眾數四，再用十二減二得全距十。"
       ],
       "optionAnalysis": [
         {
@@ -650,7 +659,7 @@ export default {
           "reason": "4 仍出現 2 次；原全距 9-2=7，新全距 12-2=10。"
         }
       ],
-      "misconceptionTarget": "把新最大值當眾數",
+      "misconceptionTarget": "把新最大值當眾數 看到最大值改動就誤認眾數也變成十二，或把全距寫成十二。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -668,7 +677,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "65ab5ccd1010f7baabb8f6c084cc2319ec242dbccfc1bd338189b56ea0e6691a"
+      "contentSha256": "ea038ff257c789b4e019e5336cecf43dfe37301e337c1568cf698afc0dabceae"
     },
     {
       "questionId": "u09-s011-v007",
@@ -695,10 +704,11 @@ export default {
         "derivedAnswer": "11",
         "trustStoredAnswer": false
       },
-      "explanation": "已知未知值是最大值，可直接建立全距方程。",
+      "explanation": "已知未知值是最大值，可直接建立全距方程。 已知未知數是最大值而最小值為三，全距八可列未知數減三等於八，解得十一；十一也確實大於既有最大值七。",
       "steps": [
         "寫 x-3=8。",
-        "解得 x=11。"
+        "解得 x=11。",
+        "解未知數減三等於八得十一，並檢查最大值條件。"
       ],
       "optionAnalysis": [
         {
@@ -722,7 +732,7 @@ export default {
           "reason": "13 使全距 10。"
         }
       ],
-      "misconceptionTarget": "把全距直接當最大值",
+      "misconceptionTarget": "把全距直接當最大值 把全距八直接當成最大值，忽略還要加回最小值三。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -740,7 +750,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f030fedd95857cb79a2b5bc1bc63899ed1c67e97e9b0a9a23a1b360a06a64997"
+      "contentSha256": "d454940ed8b91267e6dce1c7067548065f299dc5f559b38e5276a1077c59e10d"
     },
     {
       "questionId": "u09-s011-v008",
@@ -767,7 +777,7 @@ export default {
         "derivedAnswer": "10",
         "trustStoredAnswer": false
       },
-      "explanation": "兩個條件都要驗證，不能只解全距。",
+      "explanation": "兩個條件都要驗證，不能只解全距。 最小值一、最大值未知數的差為九，所以未知數等於十；代回後四仍出現兩次，其餘值一次，唯一眾數條件也成立。",
       "steps": [
         "由全距求 x。",
         "檢查 x 是最大值。",
@@ -795,7 +805,7 @@ export default {
           "reason": "x=13 時全距 12。"
         }
       ],
-      "misconceptionTarget": "忽略未知值位置或眾數條件",
+      "misconceptionTarget": "忽略未知值位置或眾數條件 只解全距方程而未代回檢查未知數是否為最大值及眾數唯一。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -813,7 +823,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4dcdac33a8a28e91e36fd9468898d9f559c6b7e722c33512128f36282c9d9450"
+      "contentSha256": "4b4630dd8ae2d2888517cc10aad35f3abfaf46e73062ae389b1e5cc1a2f6bf4c"
     },
     {
       "questionId": "u09-s011-v009",
@@ -840,10 +850,11 @@ export default {
         "derivedAnswer": "2、3、4 都是眾數",
         "trustStoredAnswer": false
       },
-      "explanation": "加入資料可能改變眾數集合而不改最高次數。",
+      "explanation": "加入資料可能改變眾數集合而不改最高次數。 加入一筆三後，二、三、四各出現兩次並列最高，因此三個值都是眾數；增加資料可能新增眾數，不代表原眾數一定消失。",
       "steps": [
         "更新 3 的次數。",
-        "比較三值次數。"
+        "比較三值次數。",
+        "更新三的次數為二次，再與二、四各二次比較。"
       ],
       "optionAnalysis": [
         {
@@ -867,7 +878,7 @@ export default {
           "reason": "有三個並列最高值。"
         }
       ],
-      "misconceptionTarget": "只看新增值或忽略並列",
+      "misconceptionTarget": "只看新增值或忽略並列 只看新加入的三而說它是唯一眾數，未比較完整次數。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -885,7 +896,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8492e7622a3001936b9369461a4f5270023d1a24b666e27dcd06033c1ed25714"
+      "contentSha256": "7a58bc1b47656e21888941a7ca247eb4609d939b81f7b9b4a2791a1fd37695f9"
     },
     {
       "questionId": "u09-s011-v010",
@@ -912,10 +923,11 @@ export default {
         "derivedAnswer": "甲班分數較集中",
         "trustStoredAnswer": false
       },
-      "explanation": "代表值相同仍可能有不同散布。",
+      "explanation": "代表值相同仍可能有不同散布。 兩班平均相同時，以全距衡量散布，甲班十二小於乙班三十，表示甲班最大與最小分數間跨度較小；結論只限全距這項指標。",
       "steps": [
         "分清平均與全距角色。",
-        "比較全距大小。"
+        "比較全距大小。",
+        "比較十二與三十，依較小全距判甲班較集中。"
       ],
       "optionAnalysis": [
         {
@@ -939,7 +951,7 @@ export default {
           "reason": "平均相同時，較小全距表示兩端差距較小。"
         }
       ],
-      "misconceptionTarget": "只看平均相同便認為資料相同",
+      "misconceptionTarget": "只看平均相同便認為資料相同 只看到平均相同便判兩班分布完全相同，忽略全距差異。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -957,7 +969,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4c84045a0574061b1998572c45500992ac7f108bc55ad2f3e00d9eae55d52155"
+      "contentSha256": "886dfb33ee377920bbfbb4bb66d629dc628c44db03fcb8c699185fb158877d9e"
     },
     {
       "questionId": "u09-s011-v011",
@@ -984,7 +996,7 @@ export default {
         "derivedAnswer": "眾數 25 號",
         "trustStoredAnswer": false
       },
-      "explanation": "庫存補貨關心最常售出的類別，眾數最直接。",
+      "explanation": "庫存補貨關心最常售出的類別，眾數最直接。 補貨要找實際售出次數最多的鞋號，二十五號售二十一雙為最高，因此眾數二十五最直接；平均鞋號可能不是需求最高的規格。",
       "steps": [
         "找最高次數。",
         "對應鞋號。",
@@ -1012,7 +1024,7 @@ export default {
           "reason": "中位數不會必然是最大鞋號。"
         }
       ],
-      "misconceptionTarget": "一律使用平均作決策",
+      "misconceptionTarget": "一律使用平均作決策 用平均數或全距決定補貨，沒有比較各鞋號銷售次數。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -1030,7 +1042,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "78fc59ff80c82843ceaa9e6b586a4ec0a0d763ffe22d561f1e8a6714499475e5"
+      "contentSha256": "234efe359a6ef64b82b247735e6300c483d143c041f572cf512f175d60dde524"
     },
     {
       "questionId": "u09-s011-v012",
@@ -1057,10 +1069,11 @@ export default {
         "derivedAnswer": "不正確，全距 14°C 只表示最大值與最小值相差 14°C",
         "trustStoredAnswer": false
       },
-      "explanation": "統計量描述資料集合，不應誤解成每一個個體值。",
+      "explanation": "統計量描述資料集合，不應誤解成每一個個體值。 全距十四度只說一週資料中的最大溫差減最小溫差等於十四，各天可取介於兩端的不同值；它不是任一天的溫差或平均。",
       "steps": [
         "回顧全距定義。",
-        "檢查報導是否把集合指標套到個體。"
+        "檢查報導是否把集合指標套到個體。",
+        "以最大值減最小值解讀十四度，排除逐日皆相同的說法。"
       ],
       "optionAnalysis": [
         {
@@ -1084,7 +1097,7 @@ export default {
           "reason": "全距不能推出平均。"
         }
       ],
-      "misconceptionTarget": "把整體統計量當成每筆資料",
+      "misconceptionTarget": "把整體統計量當成每筆資料 把整組資料的最大最小差，錯當每一筆資料都等於十四。",
       "prerequisiteCheck": {
         "skillIds": [
           "median-basic"
@@ -1102,7 +1115,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "723bc21b3e4727d626384f39c46549ee74f751995e3ba2da0f9026f7cb7fb501"
+      "contentSha256": "c906387ea77fbdda5f43b86d0ef4a363c701eadd2466b210debfa26a82565bc8"
     }
   ],
   "constructedResponses": [
@@ -1125,7 +1138,8 @@ export default {
       "standardSolution": [
         "原資料中9出現3次，為眾數。全距=12-4=8。",
         "加入4後，4出現2次，9仍出現3次，因此眾數仍是9。",
-        "最大值仍12、最小值仍4，所以全距仍為8。"
+        "最大值仍12、最小值仍4，所以全距仍為8。",
+        "新增四只改變四的出現次數，沒有超過九的三次；它也不改變最小值四或最大值十二，所以眾數與全距都維持原值。"
       ],
       "alternativeMethod": "可用次數表：4:1→2、6:2、7:1、9:3、12:1，直接比較。",
       "reasoningSteps": [
@@ -1170,7 +1184,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "444827ec87061dde61501fc9f37818bb5d7cc7a7b071b129608864ee98b65672"
+      "contentSha256": "36c288aa5c470a3f9fec610021d5342d4cb3a5f43349bb9b0494c15b4cb94b43",
+      "commonErrors": [
+        "把最高出現次數三寫成眾數，沒有寫出對應的資料值九。",
+        "加入四後只看重複值增加便說眾數改成四，未比較九仍出現三次。"
+      ]
     },
     {
       "questionId": "u09-s011-cr002",
@@ -1191,7 +1209,8 @@ export default {
       "standardSolution": [
         "x-1=11，所以x=12，符合x≥8且為最大值。",
         "原資料1、3、3、5、8、12中，3出現2次，其餘1次，眾數為3。",
-        "把12改成3後資料為1、3、3、3、5、8，眾數仍為3但次數增為3；新全距=8-1=7。"
+        "把12改成3後資料為1、3、3、3、5、8，眾數仍為3但次數增為3；新全距=8-1=7。",
+        "替換十二為三之後必須重新檢查兩項統計量：三的次數由二增為三而仍是眾數，最大值則由十二降為八，使全距從十一降為七。"
       ],
       "alternativeMethod": "可先由全距定義直接寫最大值=最小值+11=12。",
       "reasoningSteps": [
@@ -1236,7 +1255,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "fc073afe543dbd1f09b07c9a107dc794ccd8b2e4034f0b26324f58b2c37f1c82"
+      "contentSha256": "a150e53d9dc7bd5883b0785c67975d1f55c9e6d5fc8a13f999952e4603c67e6a",
+      "commonErrors": [
+        "由全距十一直接寫未知數等於十一，忘記最大值還要加回最小值一。",
+        "把十二改成三後只更新眾數次數，未重找最大值八而沿用原全距。"
+      ]
     }
   ],
   "semanticReviews": [

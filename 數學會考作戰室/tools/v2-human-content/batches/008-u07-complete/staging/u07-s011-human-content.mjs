@@ -55,10 +55,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "預算題先確認所有價格單位一致，並找出哪些費用只付一次。",
-    "「不超過預算」包含剛好用完，因此使用≤。",
-    "折扣應作用在題目指定的品項或總額，不能自行套到固定費。",
-    "求最多件數時解出上界，再取不超過它的最大非負整數，並代入下一件確認會超支。"
+    "預算不等式的核心不是看到金額就全部相加，而是先分辨費用角色。固定費不隨數量改變，只支付一次；變動費則是單價乘數量。把兩者與預算上限連結，常見模型是固定費加單價乘數量不超過預算。",
+    "題目問最多可買幾件時，先解出實數上界，再依完整件、整包或完整時段的限制，取不超過上界的最大非負整數。這不是一般四捨五入；還要代回最大整數與下一個整數，才能證明前者可行而後者超支。",
+    "折扣與優惠門檻會改變費用模型。八折是支付原價的百分之八十，滿額免運則必須先確認商品額是否達門檻。若規則分段，應分別列式並檢查所得答案仍落在所用分段，不能只挑看起來較便宜的單價。",
+    "當題目同時給最低需求、備用金或容量限制，所有條件要以且取交集。備用金是不可支用的金額，最低需求是解集下界；最後除了金額與整數性，也要用題目單位回答，說明方案是否可行及最大數量為何。"
   ],
   "formalDefinitions": [
     {
@@ -100,98 +100,111 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "列出預算與全部支出。",
-      "check": "元、點數或其他單位是否一致？"
+      "instruction": "定義數量變數並寫明它是非負整數。",
+      "check": "題目單位是件、包、桌、堂或完整時段嗎？"
     },
     {
       "step": 2,
-      "instruction": "分辨固定費、單價與折扣範圍。",
-      "check": "哪些費用只付一次？"
+      "instruction": "列出預算、固定費、變動單價與不可支用金額。",
+      "check": "有沒有把一次性費用錯乘數量？"
     },
     {
       "step": 3,
-      "instruction": "寫總支出≤預算。",
-      "check": "優惠條件是否也需滿足？"
+      "instruction": "確認折扣、免運或滿件優惠的適用條件。",
+      "check": "候選答案真的落在這一段規則內嗎？"
     },
     {
       "step": 4,
-      "instruction": "解出數量上界。",
-      "check": "除數是否為正單價？"
+      "instruction": "建立總支出不超過預算的不等式並求上界。",
+      "check": "除以的單價為正，方向是否維持？"
     },
     {
       "step": 5,
-      "instruction": "取最大可行整數並驗證相鄰值。",
-      "check": "x 件不超支，x+1 件會超支嗎？"
+      "instruction": "加入最低需求等其他限制並取整數交集。",
+      "check": "所有條件是同時成立，而非任選其一嗎？"
+    },
+    {
+      "step": 6,
+      "instruction": "代回最大整數與下一個整數完成邊界驗算。",
+      "check": "最大值可行且下一值確實超支嗎？"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "預算 1000 元，運費 80 元，每本書 115 元，最多買幾本？",
+      "exampleId": "u07-s011-example-a",
+      "prompt": "園遊會攤位費 180 元，每組材料 72 元，預算 900 元，最多準備幾組材料？",
       "solutionSteps": [
-        "80+115x≤1000。",
-        "115x≤920，x≤8。"
+        "列 180+72x≤900。",
+        "得到 72x≤720，所以 x≤10。",
+        "十組剛好九百元，十一組需九百七十二元。"
       ],
-      "answer": "最多 8 本。"
+      "answer": "最多十組材料。",
+      "why": "攤位費只付一次，材料費才隨組數增加；十組符合預算而十一組超支，整數邊界的正反代入同時證明十是唯一最大值。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "每張票 250 元打八折，預算 1100 元，最多買幾張？",
+      "exampleId": "u07-s011-example-b",
+      "prompt": "每件文具原價 160 元打七五折，另付一次運費 45 元，預算 650 元，最多買幾件？",
       "solutionSteps": [
-        "折扣後每張 200 元。",
-        "200x≤1100，x≤5.5。"
+        "折後單價為 160×0.75=120 元。",
+        "列 45+120x≤650，得到 x≤5.04 左右。",
+        "五件需六百四十五元，六件需七百六十五元。"
       ],
-      "answer": "最多 5 張。"
+      "answer": "最多五件。",
+      "why": "折扣只作用在文具單價，運費仍是一次固定費；向下取五後再檢查第六件，可避免把小數上界錯誤四捨五入而超支。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "會員費 300 元，每次課程 180 元，總支出至多 1560 元，最多上幾次？",
+      "exampleId": "u07-s011-example-c",
+      "prompt": "影印未滿 20 張每張 6 元，至少 20 張時每張 4 元。預算 100 元，最多印幾張？",
       "solutionSteps": [
-        "300+180n≤1560。",
-        "180n≤1260，n≤7。"
+        "未滿二十張時最多十六張。",
+        "優惠段列 4x≤100，得 x≤25，且二十五張符合至少二十張。",
+        "二十五張剛好一百元。"
       ],
-      "answer": "最多 7 次。"
+      "answer": "最多二十五張。",
+      "why": "兩段價格必須各自檢查適用範圍；優惠段算得二十五張確實達門檻，比門檻前最多十六張多，因此全局最大值是二十五張。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "預算 500 元，固定入場費 560 元，還能購買紀念品嗎？",
+      "exampleId": "u07-s011-example-d",
+      "prompt": "方案甲固定費 240 元、每次 18 元；方案乙固定費 120 元、每次 24 元。預算 600 元，哪個方案可使用較多次？",
       "solutionSteps": [
-        "即使買 0 件，支出 560 元仍超過 500 元。",
-        "可行集合為空。"
+        "甲有 240+18x≤600，最多二十次。",
+        "乙有 120+24y≤600，最多二十次。",
+        "兩方案在此預算下最大次數相同。"
       ],
-      "answer": "不能，連入場費都超出預算。"
+      "answer": "兩方案都最多二十次。",
+      "why": "方案比較要分別保留各自固定費與單價，再比較最大整數；只看甲單價較低或乙固定費較低都不足以判斷，完整模型才顯示兩者相同。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把運費乘上書本數量。",
-      "why": "把固定費誤當每件費用。",
-      "correction": "總支出為一次運費加單價乘數量。"
+      "mistake": "將固定運費或會員費乘上購買數量。",
+      "why": "沒有辨認費用只支付一次。",
+      "correction": "固定費單獨相加，只有單價乘數量。"
     },
     {
-      "mistake": "八折算成原價減 8%。",
-      "why": "混淆八折與 92 折。",
-      "correction": "八折是原價×0.8。"
+      "mistake": "把八折當成原價減百分之八。",
+      "why": "混淆折數與折價百分比。",
+      "correction": "八折表示實付原價的百分之八十。"
     },
     {
-      "mistake": "x≤5.5 回答 6 張。",
-      "why": "向上取整造成超支。",
-      "correction": "最大可行整數為 5。"
+      "mistake": "把件數上界四捨五入。",
+      "why": "四捨五入可能讓支出超過預算。",
+      "correction": "最大完整數量取不超過上界的整數。"
     },
     {
-      "mistake": "總支出剛好等於預算時排除。",
-      "why": "把「不超過」當嚴格小於。",
-      "correction": "預算上限通常包含等於。"
+      "mistake": "未達門檻就使用優惠單價。",
+      "why": "忽略分段規則的適用條件。",
+      "correction": "算完後把數量代回門檻檢查。"
     },
     {
-      "mistake": "固定費超預算仍回答 0 件可行。",
-      "why": "沒有檢查 0 件時的總支出。",
-      "correction": "若必要固定費已超支，無可行方案。"
+      "mistake": "把保留的備用金當成可花預算。",
+      "why": "誤解保留至少某金額的語意。",
+      "correction": "先從總額扣除備用金或把它列入必要占用。"
     },
     {
-      "mistake": "未達滿額門檻仍套折扣。",
-      "why": "忽略優惠條件。",
-      "correction": "先驗證門檻，再決定價格模型。"
+      "mistake": "只代回所答數量，不檢查下一個整數。",
+      "why": "只能證明可行，尚未證明是最大值。",
+      "correction": "同時驗算最大候選值與下一值。"
     }
   ],
   "selfCheck": [
@@ -246,7 +259,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "f1da6394a5c71b0b610a45288b117ddf2fd30a622e95858a87c7937d54c8a271"
+  "contentSha256": "8953773082b799dda62ad88e1dfb8b24b5a6ed2cc02e553dd27fb0cf0e6d5144"
 };
 
 export const QUESTIONS = [
@@ -276,10 +289,11 @@ export const QUESTIONS = [
       "result": "7 件",
       "answerIndexVerified": 2
     },
-    "explanation": "65x≤500，得 x≤500/65≈7.69。件數為整數，所以最多 7 件。",
+    "explanation": "設可購買 x 件，預算限制為 65x≤500，因此 x≤500÷65，約為 7.69。件數必須是非負整數，所以取不超過上界的最大整數 7；七件需四百五十五元，八件需五百二十元，確定最多七件。",
     "steps": [
-      "列單價乘數量",
-      "取最大可行整數"
+      "以每件六十五元乘件數，列出 65x≤500。",
+      "兩邊同除以正數六十五，得到 x≤7.69 左右。",
+      "依完整件數向下取七，並驗算七件可行、八件超支。"
     ],
     "optionAnalysis": [
       {
@@ -303,7 +317,7 @@ export const QUESTIONS = [
         "reason": "9 件更超支。"
       }
     ],
-    "misconceptionTarget": "把 7.69 四捨五入為 8。",
+    "misconceptionTarget": "把七點六九四捨五入成八件，忽略最大可行整數不能超過預算。",
     "prerequisiteCheck": "需會除法與整數上界。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "金額元；65×7=455、65×8=520。",
@@ -319,7 +333,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1000cb82723d556574abb29ef89dfcf7b0878569cc7e08c8560c0c2c723c6ab4"
+    "contentSha256": "c554fb7de294b6140418dafeab8c9c6e5a483ad7313a82408d89ab5937ea09da"
   },
   {
     "questionId": "u07-s011-v002",
@@ -347,10 +361,11 @@ export const QUESTIONS = [
       "result": "5 本",
       "answerIndexVerified": 1
     },
-    "explanation": "60+80x≤460，得 80x≤400，所以 x≤5，最多 5 本。",
+    "explanation": "運費六十元只支付一次，故總費用為 60+80x，預算式是 60+80x≤460。先扣運費剩四百元，再除以每本八十元，得到 x≤5；買五本總價四百六十元，六本則要五百四十元，所以最多五本。",
     "steps": [
-      "扣除固定運費",
-      "除以單價"
+      "把一次性運費與每本書費分開，列 60+80x≤460。",
+      "扣除六十元並除以正數八十，求得 x≤5。",
+      "代入五本恰用完預算，再確認六本會超過預算。"
     ],
     "optionAnalysis": [
       {
@@ -374,7 +389,7 @@ export const QUESTIONS = [
         "reason": "3 本非最大。"
       }
     ],
-    "misconceptionTarget": "漏掉運費或把運費按本計算。",
+    "misconceptionTarget": "漏算一次性運費，或錯把運費也乘上書本數量。",
     "prerequisiteCheck": "需會固定費模型。",
     "estimatedTimeSec": "65",
     "unitAndRoundingCheck": "金額元。",
@@ -390,7 +405,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b26a73f85d4ffaf51f751c0086339f53bad956026a4e8f8ec80a1383f1e24990"
+    "contentSha256": "59f2e92d1f8b7bca5973946467d414904b8806bf65e4a1b51c6d7e9ce1496eaa"
   },
   {
     "questionId": "u07-s011-v003",
@@ -418,10 +433,11 @@ export const QUESTIONS = [
       "result": "240 元",
       "answerIndexVerified": 3
     },
-    "explanation": "八折表示原價乘 0.8，300×0.8=240 元。",
+    "explanation": "八折表示支付原價的百分之八十，也就是乘以 0.8，不是減去百分之八。折後單價為 300×0.8=240 元；也可算原價減少百分之二十，即減六十元，仍得二百四十元，兩種算法互相驗證。",
     "steps": [
-      "把八折寫成 0.8",
-      "相乘"
+      "把八折換成支付比例 0.8。",
+      "以原價三百元乘 0.8，算得二百四十元。",
+      "另算百分之二十折價額六十元，確認 300−60=240。"
     ],
     "optionAnalysis": [
       {
@@ -445,7 +461,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「240 元」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把「八折」誤解為減 8% 或乘 8。",
+    "misconceptionTarget": "把八折誤當只減百分之八，或直接把原價乘以八。",
     "prerequisiteCheck": "需會百分率小數。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "單位元；結果精確。",
@@ -461,7 +477,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "396184b4f18aab80b15f674ec6aaec3ff9d43008d47a29a948aa5fff00afed4a"
+    "contentSha256": "5e19c8ec37a9bd7c966731e930f3c90e5113ebe4ef278e7a0d51fcd3a6ed0b21"
   },
   {
     "questionId": "u07-s011-v004",
@@ -489,10 +505,11 @@ export const QUESTIONS = [
       "result": "7 堂",
       "answerIndexVerified": 0
     },
-    "explanation": "200+150n≤1250，得 150n≤1050，所以 n≤7，最多 7 堂。",
+    "explanation": "會員費二百元只付一次，每堂再付一百五十元，因此 200+150n≤1250。扣除會員費後可用一千零五十元，除以一百五十恰為七；七堂總費一千二百五十元，八堂需一千四百元，故最多七堂。",
     "steps": [
-      "扣除會員費",
-      "求堂數上界"
+      "以 n 表示堂數，列出 200+150n≤1250。",
+      "扣除固定會員費，再除以每堂費用，得到 n≤7。",
+      "驗算七堂剛好符合，八堂則超出預算。"
     ],
     "optionAnalysis": [
       {
@@ -516,7 +533,7 @@ export const QUESTIONS = [
         "reason": "選項「9 堂」更超支。，與獨立解得的「7 堂」不一致。"
       }
     ],
-    "misconceptionTarget": "會員費重複乘堂數或漏算。",
+    "misconceptionTarget": "把會員費重複乘以堂數，或求堂數時完全漏掉固定費。",
     "prerequisiteCheck": "需會兩步不等式。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "金額元、堂數整數。",
@@ -532,7 +549,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "59cd1f85413b907c3b8e8c245c04a5cf58d6a6d17c7ce6d0c8476d216f92f447"
+    "contentSha256": "7211c17c094cf9cc6409b7cc4df80dc861afcfeba753b2a388c52f78740cd9ec"
   },
   {
     "questionId": "u07-s011-v005",
@@ -560,11 +577,11 @@ export const QUESTIONS = [
       "result": "8 包",
       "answerIndexVerified": 1
     },
-    "explanation": "350+95x≤1200，得 95x≤850，x≤8.94…；材料必須整包購買，所以最多 8 包。",
+    "explanation": "工具費三百五十元是先支付的固定支出，故 350+95x≤1200。材料預算剩八百五十元，850÷95 約為 8.94，完整包數最多八包；八包總價一千一百一十元，九包總價一千二百零五元，下一包會超支。",
     "steps": [
-      "扣除工具固定費",
-      "除以每包價格",
-      "取最大整數並驗證下一包"
+      "先扣除工具費，得到材料可用八百五十元。",
+      "以每包九十五元除剩餘預算，求得 x≤8.94 左右。",
+      "向下取八包，並比較八包與九包的總價確認邊界。"
     ],
     "optionAnalysis": [
       {
@@ -588,7 +605,7 @@ export const QUESTIONS = [
         "reason": "總價 1300 元，更超支。"
       }
     ],
-    "misconceptionTarget": "重複選項破壞唯一答案，且可能錯誤四捨五入。",
+    "misconceptionTarget": "把小數商四捨五入成九包，沒有驗算第九包已超出總預算。",
     "prerequisiteCheck": "需會除法與選項品質檢查。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "金額元。",
@@ -604,7 +621,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b3783ad58ed8e93892f9d0ea328bfc1d356a13e94f4e72c7194d8a1c812cfb76"
+    "contentSha256": "382e39d71d659da734865d3e3010f9804beaa6356beee24b02199731d98a4621"
   },
   {
     "questionId": "u07-s011-v006",
@@ -632,10 +649,11 @@ export const QUESTIONS = [
       "result": "4 件",
       "answerIndexVerified": 3
     },
-    "explanation": "折後單價 450×0.85=382.5 元。382.5x≤1600，x≤4.18…，最多 4 件。",
+    "explanation": "折價百分之十五表示實付百分之八十五，折後每件為 450×0.85=382.5 元。由 382.5x≤1600 得 x 約不超過 4.18；四件需一千五百三十元可行，五件需一千九百一十二點五元超支，所以最多四件。",
     "steps": [
-      "算折後單價",
-      "求最大整數件數"
+      "用原價乘 0.85，求出折後單價三百八十二點五元。",
+      "列 382.5x≤1600，求得件數上界約為 4.18。",
+      "取最大整數四，再驗算第五件已使支出超過預算。"
     ],
     "optionAnalysis": [
       {
@@ -659,7 +677,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「4 件」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把 15% 當成付 15%，或最大件數錯誤取整。",
+    "misconceptionTarget": "把折價百分之十五當成只支付百分之十五，或將件數上界向上取整。",
     "prerequisiteCheck": "需會百分率與小數除法。",
     "estimatedTimeSec": "90",
     "unitAndRoundingCheck": "金額元；382.5×4=1530，×5=1912.5。",
@@ -675,7 +693,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "fc06316f8f410b2c385aec1e73662cffd5818a552b0c68ceeebc80bf04e9929c"
+    "contentSha256": "ce92d021434ded401bc4b143ddd685d4b4415e82ecde712f19466b0f2efce99c"
   },
   {
     "questionId": "u07-s011-v007",
@@ -703,11 +721,11 @@ export const QUESTIONS = [
       "result": "有，可買 10 至 13 單位",
       "answerIndexVerified": 0
     },
-    "explanation": "120+28x≤500 得 28x≤380，x≤13.57…；再與 x≥10 取交集，整數可買 10、11、12、13。",
+    "explanation": "預算條件 120+28x≤500 化簡為 x≤380÷28，約為 13.57；需求條件又要求 x≥10。數量為整數，兩條件取交集後只有十、十一、十二、十三單位，故有可行方案，範圍為十至十三單位。",
     "steps": [
-      "求預算上界",
-      "加入最低需求",
-      "列整數交集"
+      "由固定費與單位費列出 120+28x≤500。",
+      "解得預算上界 x≤13.57，再保留整數上界十三。",
+      "與最低需求 x≥10 取交集，列出十至十三的整數範圍。"
     ],
     "optionAnalysis": [
       {
@@ -731,7 +749,7 @@ export const QUESTIONS = [
         "reason": "10 單位總價 400，未超支。"
       }
     ],
-    "misconceptionTarget": "只檢查最低值或只解預算，不取交集。",
+    "misconceptionTarget": "只檢查至少十單位可否購買，沒有求出所有可行整數的共同範圍。",
     "prerequisiteCheck": "需會且與整數範圍。",
     "estimatedTimeSec": "100",
     "unitAndRoundingCheck": "金額元；單位數整數。",
@@ -747,7 +765,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1fb06824a02f0b8a19ecdac9122762a9a44b0a687d3e8e9fbd91c6d85217a825"
+    "contentSha256": "cb41d76074caaf8959c1e48009d84b45395a85453f142b5ab1bdb848e70d5371"
   },
   {
     "questionId": "u07-s011-v008",
@@ -775,10 +793,11 @@ export const QUESTIONS = [
       "result": "7 件",
       "answerIndexVerified": 2
     },
-    "explanation": "若享優惠需 x≥6，優惠模型 70x≤500 得 x≤7.14，所以可買 6 或 7 件，最多 7。未優惠最多 5 件。",
+    "explanation": "未滿六件時每件八十五元，最多只能買五件。若買滿六件可用七十元單價，由 70x≤500 得 x≤7.14，且六、七件都符合優惠門檻；七件需四百九十元，八件需五百六十元，因此全局最多七件。",
     "steps": [
-      "分別檢查門檻前後",
-      "確認優惠段解仍滿足 x≥6"
+      "分別辨認未滿六件與至少六件的兩段價格規則。",
+      "在優惠段解 70x≤500，並確認所得整數仍滿足 x≥6。",
+      "比較門檻前最多五件與優惠段最多七件，再驗算第八件超支。"
     ],
     "optionAnalysis": [
       {
@@ -802,7 +821,7 @@ export const QUESTIONS = [
         "reason": "6 可行但非最多。"
       }
     ],
-    "misconceptionTarget": "直接套低單價而不檢查滿件門檻。",
+    "misconceptionTarget": "直接套用低單價卻不檢查滿六件門檻，導致使用不適用的價格規則。",
     "prerequisiteCheck": "需會分段規則與驗證。",
     "estimatedTimeSec": "115",
     "unitAndRoundingCheck": "金額元。",
@@ -818,7 +837,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "86273c807985648d3fb812293119a7ecf6938ec0a364469f726b7ef124d04202"
+    "contentSha256": "d473152a2b362d3d35847a315811352ebfa6986f6653f5bc9c70e6a626bdb976"
   },
   {
     "questionId": "u07-s011-v009",
@@ -846,11 +865,11 @@ export const QUESTIONS = [
       "result": "10 件",
       "answerIndexVerified": 3
     },
-    "explanation": "未免運時 100+120x≤1300 得 x≤10，但 x=10 商品額 1200 已滿 1000，應免運。免運模型 120x≤1300 得 x≤10.83，所以最多 10 件。",
+    "explanation": "免運門檻只看商品額，九件商品額為一千零八十元，已達一千元門檻。免運後由 120x≤1300 得 x≤10.83，最大整數為十；十件花一千二百元，十一件花一千三百二十元，所以最多十件。",
     "steps": [
-      "先辨認免運門檻按商品額",
-      "檢查 10 件是否觸發免運",
-      "求免運段上界"
+      "先算至少九件才使商品額達到免運門檻。",
+      "在免運分段列 120x≤1300，求出整數上界十件。",
+      "驗算十件已免運且不超支，十一件商品費本身就超支。"
     ],
     "optionAnalysis": [
       {
@@ -874,7 +893,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「10 件」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "忽略免運條件或把運費算入滿額門檻。",
+    "misconceptionTarget": "把運費算進滿額門檻，或忽略達門檻後應改用免運的費用模型。",
     "prerequisiteCheck": "需會分段與門檻一致性。",
     "estimatedTimeSec": "125",
     "unitAndRoundingCheck": "金額元；商品額門檻明示不含運費。",
@@ -890,7 +909,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ddd97c7d89b25ea100e816e64e7ec1d021a63a81f805b0b97f8b7542d7d3915d"
+    "contentSha256": "fa9c788dbab74b1d86dc1c5f73cd830341f0bf5db253ac966d899ffd524b24a5"
   },
   {
     "questionId": "u07-s011-v010",
@@ -918,10 +937,11 @@ export const QUESTIONS = [
       "result": "30 人",
       "answerIndexVerified": 0
     },
-    "explanation": "1200+180n≤6600，得 180n≤5400，所以 n≤30，最多 30 人。",
+    "explanation": "全團保險一千二百元只支付一次，學生門票才隨人數增加，故 1200+180n≤6600。扣除保險後剩五千四百元，恰可買三十張票；三十人總費六千六百元，三十一人需六千七百八十元，因此最多三十人。",
     "steps": [
-      "區分全團固定費與每人費",
-      "解人數上界"
+      "區分一次性全團保險與每位學生的門票費。",
+      "列 1200+180n≤6600，解得 n≤30。",
+      "代入三十人剛好用完預算，並確認第三十一人會超支。"
     ],
     "optionAnalysis": [
       {
@@ -945,7 +965,7 @@ export const QUESTIONS = [
         "reason": "36 更超支。"
       }
     ],
-    "misconceptionTarget": "把保險費乘人數或漏算。",
+    "misconceptionTarget": "把全團保險誤當每人收費，或只用預算除門票而漏掉固定支出。",
     "prerequisiteCheck": "需會固定費模型。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "金額元、人數整數。",
@@ -961,7 +981,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "91cf3b3103b58a5634ddf4635f30bec1f9537eaf7f09f0403cb54dc5b638c7c6"
+    "contentSha256": "8a437286d02388c324fc32395fa52949a9d52709bf1a4ff4c833b3dca998adea"
   },
   {
     "questionId": "u07-s011-v011",
@@ -989,10 +1009,11 @@ export const QUESTIONS = [
       "result": "7 GB",
       "answerIndexVerified": 2
     },
-    "explanation": "299+35g≤544，得 35g≤245，所以 g≤7，最多 7 GB。",
+    "explanation": "月租二百九十九元是固定費，每個完整 GB 再付三十五元，故 299+35g≤544。扣除月租後可用二百四十五元，除以三十五恰為七；七 GB 總費五百四十四元，八 GB 則要五百七十九元，所以最多七 GB。",
     "steps": [
-      "扣除月租",
-      "求完整 GB 上界"
+      "以 g 表示完整 GB 數，列出 299+35g≤544。",
+      "扣除月租並除以三十五，得到 g≤7。",
+      "驗算七 GB 剛好符合預算，八 GB 則超出上限。"
     ],
     "optionAnalysis": [
       {
@@ -1016,7 +1037,7 @@ export const QUESTIONS = [
         "reason": "選項「9 GB」更超支。，與獨立解得的「7 GB」不一致。"
       }
     ],
-    "misconceptionTarget": "把月租當每 GB 費或漏掉固定費。",
+    "misconceptionTarget": "將月租費也按每 GB 重複計算，或求流量時漏掉固定月租。",
     "prerequisiteCheck": "需會固定費與整數上界。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "金額元、流量 GB。",
@@ -1032,7 +1053,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "2c1b0629c1ed9fc32ec9cb89ba435426d6d7c61b0271f69e00c89d887a6f948d"
+    "contentSha256": "49e502bc8143002d3902295d0f092728028fc978d8962127728009b49e3399ee"
   },
   {
     "questionId": "u07-s011-v012",
@@ -1060,11 +1081,11 @@ export const QUESTIONS = [
       "result": "7 桌，符合",
       "answerIndexVerified": 1
     },
-    "explanation": "2400+3200t≤25000，得 3200t≤22600，t≤7.0625，所以最多 7 桌；7≥5，符合最低桌數。",
+    "explanation": "場地費二千四百元只付一次，因此 2400+3200t≤25000，解得 t≤22600÷3200=7.0625。完整桌數最多七桌；七桌總費二萬四千八百元且七不小於五，既未超支也符合最低成席桌數。",
     "steps": [
-      "求預算上界",
-      "取整數 7",
-      "檢查最低 5 桌"
+      "列出場地固定費加每桌餐費的預算不等式。",
+      "解得桌數實數上界 7.0625，取最大整數七桌。",
+      "代回總費並與至少五桌的成席條件取交集。"
     ],
     "optionAnalysis": [
       {
@@ -1088,7 +1109,7 @@ export const QUESTIONS = [
         "reason": "5 桌可行但非最多。"
       }
     ],
-    "misconceptionTarget": "只回答預算上界，未檢查最低成席條件。",
+    "misconceptionTarget": "只求預算可開的桌數，沒有再檢查至少五桌才能成席的必要條件。",
     "prerequisiteCheck": "需會固定費與且。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "金額元、桌數整數。",
@@ -1104,7 +1125,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "40a7298f621c414b3dfb861def08a60645a613357367e0718b6586c9b0eb5ec3"
+    "contentSha256": "b80ff7b6b2750592ee8b200847c28f114630a6747a543749bf976ecfe58f3d99"
   }
 ];
 
@@ -1124,19 +1145,19 @@ export const CONSTRUCTED_RESPONSES = [
       "驗算最大值與下一值"
     ],
     "fullCreditSolution": [
-      "設可買 x 份。保留至少 150 元等同支出不超過 2500−150，故 460+135x≤2350；也可寫 460+135x+150≤2500。",
-      "135x≤1890，所以 x≤14。",
-      "最多買 14 份。",
-      "14 份總占用 460+1890+150=2500；15 份需 2635，超出。"
+      "設餐點份數為非負整數 x。保留至少一百五十元表示場地費與餐費最多只能用二千三百五十元，因此可列 460+135x≤2350；等價地也可列 460+135x+150≤2500。",
+      "移項得 135x≤1890，再除以正數一百三十五，得到 x≤14。完整份數的最大值為十四。",
+      "買十四份時，場地、餐點與備用金合計 460+14×135+150=2500，恰好符合總額。",
+      "若買十五份，三項合計為二千六百三十五元，超出預算一百三十五元，所以最多十四份且答案唯一。"
     ],
     "alternativeMethod": [
       "先扣備用金與場地費：2500−150−460=1890，再算 1890÷135=14。"
     ],
     "reasoningSteps": [
-      "正確處理預留金",
-      "建立固定加變動費",
-      "求整數上界",
-      "驗證相鄰份數"
+      "定義非負整數份數，並將至少保留的備用金視為不可支用。",
+      "把一次場地費、每份餐費與備用金完整納入預算限制。",
+      "解出份數上界十四，再依完整份數判定最大整數。",
+      "分別代入十四與十五份，確認最大值可行而下一值超支。"
     ],
     "rubric": [
       {
@@ -1161,8 +1182,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "金額單位元、餐點單位份；x 為非負整數。",
     "answerOnlyPolicy": "只寫 14 份，最多 1 分。",
     "commonErrors": [
-      "把備用金當可花預算加入右邊",
-      "漏固定場地費"
+      "把備用金當成可以額外花用的金額加到預算右邊。",
+      "只計算餐點費，完全漏掉一次性的場地費四百六十元。",
+      "算得十四後未驗算十五份，無法證明所答確為最大值。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1175,7 +1197,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "50efdcdab37bd95e6368a2743772421d1911244f3fcd427a9d483c83c0bbf054"
+    "contentSha256": "92715a0f6e3c5db5567ca7fc0432683995babd2dfef7b5715e3cf256e603c468"
   },
   {
     "questionId": "u07-s011-cr002",
@@ -1192,19 +1214,19 @@ export const CONSTRUCTED_RESPONSES = [
       "檢查下一件是否超支"
     ],
     "fullCreditSolution": [
-      "甲：300+22x≤900，22x≤600，x≤27.27…，最多 27 件。",
-      "乙：180+28y≤900，28y≤720，y≤25.71…，最多 25 件。",
-      "因此方案甲可買較多，27 件比 25 件多 2 件。",
-      "甲 28 件費 916；乙 26 件費 908，均超支。"
+      "方案甲設件數為 x，列 300+22x≤900，得 22x≤600，所以 x≤27.27 左右；完整件數最多二十七件。",
+      "方案乙設件數為 y，列 180+28y≤900，得 28y≤720，所以 y≤25.71 左右；完整件數最多二十五件。",
+      "比較兩個最大整數，方案甲二十七件比方案乙二十五件多兩件，因此此預算下甲買得較多。",
+      "驗算甲買二十八件需九百一十六元，乙買二十六件需九百零八元，兩者的下一件都超過九百元。"
     ],
     "alternativeMethod": [
       "可用剩餘預算法：甲 600÷22、乙 720÷28，各自向下取整，再比較。"
     ],
     "reasoningSteps": [
-      "建立兩個模型",
-      "保留各自固定費與單價",
-      "向下取整",
-      "以相鄰值驗證並比較"
+      "為甲、乙各自保留固定費與單價，建立兩個獨立預算式。",
+      "分別解出實數上界，再依完整件數各自向下取整。",
+      "比較二十七與二十五，判斷甲可多買兩件。",
+      "代入兩方案的下一件，證實兩個最大件數邊界都正確。"
     ],
     "rubric": [
       {
@@ -1229,8 +1251,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "金額元、數量件；最大件數需為非負整數。",
     "answerOnlyPolicy": "只寫「甲」而無兩方案計算，最多 1 分。",
     "commonErrors": [
-      "只看每件 22<28 就直接選甲",
-      "固定費與單價相加後再乘件數"
+      "只因甲的每件單價較低就直接選甲，沒有計算兩個固定費。",
+      "把固定費與單價先相加，再將合計錯誤乘上購買件數。",
+      "兩個商數都向上取整，造成所謂最大件數實際已經超支。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1243,7 +1266,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "955908f02aaf6219716b716011e37f5ae7be668321c30ec8beeda0f3c3e61ca7"
+    "contentSha256": "f0621ae219be1115b4535cbf6c3aa2ac0db748d40304245067f23f384c7a7f11"
   }
 ];
 
@@ -1254,7 +1277,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "1000cb82723d556574abb29ef89dfcf7b0878569cc7e08c8560c0c2c723c6ab4",
+    "contentSha256": "c554fb7de294b6140418dafeab8c9c6e5a483ad7313a82408d89ab5937ea09da",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "7 件花 455≤500；8 件花 520>500，所以最多 7 件。",
@@ -1286,7 +1309,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "b26a73f85d4ffaf51f751c0086339f53bad956026a4e8f8ec80a1383f1e24990",
+    "contentSha256": "59f2e92d1f8b7bca5973946467d414904b8806bf65e4a1b51c6d7e9ce1496eaa",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "預算扣運費 460−60=400；每本 80，400÷80=5。買 5 本剛好用完。",
@@ -1318,7 +1341,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "396184b4f18aab80b15f674ec6aaec3ff9d43008d47a29a948aa5fff00afed4a",
+    "contentSha256": "5e19c8ec37a9bd7c966731e930f3c90e5113ebe4ef278e7a0d51fcd3a6ed0b21",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "八折=80%=0.8；300×0.8=240。亦可算減少 20% 即 60，300−60=240。",
@@ -1350,7 +1373,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "59cd1f85413b907c3b8e8c245c04a5cf58d6a6d17c7ce6d0c8476d216f92f447",
+    "contentSha256": "7211c17c094cf9cc6409b7cc4df80dc861afcfeba753b2a388c52f78740cd9ec",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "可用於課程費 1050 元；1050÷150=7，所以剛好 7 堂。",
@@ -1382,7 +1405,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "b3783ad58ed8e93892f9d0ea328bfc1d356a13e94f4e72c7194d8a1c812cfb76",
+    "contentSha256": "382e39d71d659da734865d3e3010f9804beaa6356beee24b02199731d98a4621",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "可用於材料的金額為 1200−350=850；850÷95=8.94…，完整包數最多 8。9 包時總價 1205。",
@@ -1414,7 +1437,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "fc06316f8f410b2c385aec1e73662cffd5818a552b0c68ceeebc80bf04e9929c",
+    "contentSha256": "ce92d021434ded401bc4b143ddd685d4b4415e82ecde712f19466b0f2efce99c",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "折價後支付 85%，單價 382.5。4 件 1530≤1600，5 件 1912.5>1600，故最多 4。",
@@ -1446,7 +1469,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "1fb06824a02f0b8a19ecdac9122762a9a44b0a687d3e8e9fbd91c6d85217a825",
+    "contentSha256": "cb41d76074caaf8959c1e48009d84b45395a85453f142b5ab1bdb848e70d5371",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "預算容許 x≤380/28≈13.57；需求 x≥10。整數交集為 10≤x≤13。",
@@ -1478,7 +1501,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "86273c807985648d3fb812293119a7ecf6938ec0a364469f726b7ef124d04202",
+    "contentSha256": "d473152a2b362d3d35847a315811352ebfa6986f6653f5bc9c70e6a626bdb976",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "未滿 6 件時最多 floor(500/85)=5；滿 6 後用 70 元，floor(500/70)=7 且 7≥6，故全局最多 7。",
@@ -1510,7 +1533,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "ddd97c7d89b25ea100e816e64e7ec1d021a63a81f805b0b97f8b7542d7d3915d",
+    "contentSha256": "fa9c788dbab74b1d86dc1c5f73cd830341f0bf5db253ac966d899ffd524b24a5",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "要免運至少 ceil(1000/120)=9 件。免運段預算允許 floor(1300/120)=10 件，且 10≥9；11 件超支，故最多 10。",
@@ -1542,7 +1565,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "91cf3b3103b58a5634ddf4635f30bec1f9537eaf7f09f0403cb54dc5b638c7c6",
+    "contentSha256": "8a437286d02388c324fc32395fa52949a9d52709bf1a4ff4c833b3dca998adea",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "扣除全團保險 1200 後，門票預算 5400；5400÷180=30。",
@@ -1574,7 +1597,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "2c1b0629c1ed9fc32ec9cb89ba435426d6d7c61b0271f69e00c89d887a6f948d",
+    "contentSha256": "49e502bc8143002d3902295d0f092728028fc978d8962127728009b49e3399ee",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "可付流量費 544−299=245；245÷35=7，剛好 7 GB。",
@@ -1606,7 +1629,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-budget",
-    "contentSha256": "40a7298f621c414b3dfb861def08a60645a613357367e0718b6586c9b0eb5ec3",
+    "contentSha256": "b80ff7b6b2750592ee8b200847c28f114630a6747a543749bf976ecfe58f3d99",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "扣場地費剩 22600，最多 floor(22600/3200)=7 桌。因 7≥5，所以方案可成席。",

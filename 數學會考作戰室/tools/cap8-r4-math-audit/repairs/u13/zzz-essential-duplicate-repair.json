@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u13",
+  "batch": "014-u13-complete",
+  "skills": ["s009"],
+  "mc": [
+    {
+      "questionId": "u13-s009-v012",
+      "expectedContentSha256": "f9b56068eeeec508a2bdb9498a3ead772d57677c9c10e280806906fe9ac49f86",
+      "set": {
+        "text": "票價模型的損益方程式為 n²-2pn+(p²-4)=0。若 p 為實數，這個方程式有兩個不同實數解的 p 條件為何？",
+        "givenConditions": "p 為實數；題目只要求兩解為不同實數，未要求解為正數。",
+        "target": "判斷有兩個不同實數解的參數條件",
+        "choices": ["p>2", "所有實數 p", "p=2", "p≥0"],
+        "answerIndex": 1,
+        "explanation": "二次項係數為一，判別式 Δ=(-2p)²-4(p²-4)=4p²-4p²+16=16。因為十六對每個實數 p 都大於零，方程式始終有兩個不同實數解，所以 p 可為任意實數。亦可將方程式改寫為 (n-p)²=4，兩解 p+2 與 p-2 恒相差四，再次驗證結論。",
+        "steps": [
+          "以 a=1、b=-2p、c=p²-4 寫出判別式。",
+          "化簡得 Δ=16，對所有實數 p 皆大於零。",
+          "判定每個實數 p 都有兩個不同實數解，並以 p±2 驗算。"
+        ],
+        "optionAnalysis": [
+          { "choice": "p>2", "truth": false, "reason": "p≤2 時判別式仍為16，也有兩個不同實數解。" },
+          { "choice": "所有實數 p", "truth": true, "reason": "判別式恒為16>0，不需對 p 再加限制。" },
+          { "choice": "p=2", "truth": false, "reason": "p=2 只是可行值之一，不是唯一可行值。" },
+          { "choice": "p≥0", "truth": false, "reason": "負數 p 的判別式同樣為16，仍符合條件。" }
+        ],
+        "misconceptionTarget": "把參數出現在係數中誤當成必須限制大小，沒有先完整化簡判別式。",
+        "ambiguityAndBoundaryAudit": "判別式恒為16，沒有等於零的邊界值；題幹已明示 p 為實數。",
+        "difficultyReason": "需正確將含參數的三個係數代入判別式，並辨認參數項完全消去。",
+        "literacyContextNecessity": "情境中「兩個不同實數解」明確對應判別式大於零，且排除自行加上正值限制的誤讀。",
+        "authoringIntent": "判斷判別式恒正時的兩實根條件"
+      },
+      "reviewSet": {
+        "answerMatch": true,
+        "uniqueCorrectAnswer": true,
+        "independentSolution": "獨立代入 a=1、b=-2p、c=p²-4，得 Δ=4p²-4(p²-4)=16>0，故所有實數 p 均有兩個不同實數解。",
+        "derivedAnswer": "所有實數 p",
+        "storedAnswer": "所有實數 p",
+        "optionTruth": [false, true, false, false],
+        "ambiguityChecks": {
+          "language": "題幹明示 p 為實數，並只詢問方程式有兩個不同實數解的條件。",
+          "conditions": "題目未要求兩解為正數，不得自行加上 p 的正負限制。",
+          "boundary": "判別式恒為16，不存在重根邊界值；任取正數、零或負數 p 都不會改變根的個數。",
+          "choices": "逐項檢查得 p>2、p=2、p≥0 都只覆蓋部分可行值，唯有所有實數 p 完整。"
+        },
+        "difficultyReason": "需化簡含參數的判別式並辨認其恒為正數。",
+        "literacyNecessityReview": "「兩個不同實數解」的語意直接對應 Δ>0，情境並未加上正值限制。",
+        "reviewerNote": "獨立重算票價模型方程式：判別式 Δ=(-2p)²-4(p²-4)=16，對每個實數 p 都大於零；因此第二選項「所有實數 p」唯一正確。再以兩根 p+2、p-2 恒相差四交叉驗證。其餘三項都只取可行參數的一部分，無法覆蓋全部實數。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

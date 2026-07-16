@@ -1,0 +1,1312 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u19",
+  "batch": "020-u19-complete",
+  "skills": [
+    "s001",
+    "s002",
+    "s003",
+    "s004",
+    "s005",
+    "s006"
+  ],
+  "mc": [
+    {
+      "questionId": "u19-s001-v001",
+      "expectedContentSha256": "d6c5808ba47dad9879ff653f7131849a581dfef6056ecc98e34855b87746afe8",
+      "appendText": {
+        "explanation": "獨立核對：圓心角的頂點必須在圓心 O，因此 ∠AOB 符合定義。 逐項排除：「∠OAB」頂點在A，是圓周附近的角，不是圓心角。；「∠ABO」頂點在B，不在圓心。；「∠APB」P的位置未保證是圓心。；因此只有「∠AOB」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓心角的頂點必須在圓心 O，因此 ∠AOB 符合定義。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s001-v002",
+      "expectedContentSha256": "8e603e07fadd0796466843f1ebc640155866b7312d94615904f8a2a0db21e38a",
+      "appendText": {
+        "explanation": "獨立核對：∠ACB 的頂點 C 在圓周上，兩邊 CA、CB 連到圓上另外兩點，所以是圓周角。 逐項排除：「圓心角」頂點不是圓心。；「平角」兩邊不是相反射線。；「周角」角度不是360°。；因此只有「圓周角」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：∠ACB 的頂點 C 在圓周上，兩邊 CA、CB 連到圓上另外兩點，所以是圓周角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s001-v003",
+      "expectedContentSha256": "63c9b6e45829652f58a9213bd64471d611afb84b68a7c4b57d3bcf943615b69d",
+      "appendText": {
+        "explanation": "獨立核對：圓周角所對弧由兩邊的圓周端點 A、B 決定，且不含角的頂點 D。 逐項排除：「含 D 的弧 AB」圓周角的所對弧不包含頂點D。；「弧 AD」弧AD只對應一邊。；「弧 DB」弧DB只對應另一邊。；因此只有「不含 D 的弧 AB」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓周角所對弧由兩邊的圓周端點 A、B 決定，且不含角的頂點 D。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s001-v005",
+      "expectedContentSha256": "dff7a436bfe6056485a28112a39ec2b8aaf830fd593735947edea9704d08f064",
+      "appendText": {
+        "explanation": "獨立核對：角名的中間字母是頂點，因此以 C 為頂點且兩邊經 A、B 的角寫作 ∠ACB。 逐項排除：「∠ABC」頂點是B。；「∠BAC」頂點是A。；「∠AOB」頂點是O，為圓心角。；因此只有「∠ACB」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：角名的中間字母是頂點，因此以 C 為頂點且兩邊經 A、B 的角寫作 ∠ACB。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s001-v006",
+      "expectedContentSha256": "506052164d126350a14213ee2dd31d034c2e7f62cf26a532ca91c88518fdc3bc",
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓周角要求頂點 P 在圓周上，角的兩邊再交圓於 A、B，因此三點同圓且位置符合即可。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s001-v008",
+      "expectedContentSha256": "b9eb098cb46bcde37a39bd0d19de3d8aa683af971a2107e0fdf79c61a107266e",
+      "appendArray": {
+        "steps": [
+          "完整驗算：兩角的兩邊都通過 A、B，所以所對弧的端點相同；但頂點不同，角度關係需另用定理，且∠AOB是圓心角。"
+        ]
+      },
+      "appendText": {
+        "misconceptionTarget": "頂點分別為O與C。"
+      }
+    },
+    {
+      "questionId": "u19-s001-v010",
+      "expectedContentSha256": "947bb1ad4a1a5a7977b4220b121c976c4bd2b6cdcedb46fb410f6d6cdfcc13b7",
+      "appendText": {
+        "explanation": "獨立核對：攝影機位置 O 是圓心，鏡頭方向 OA、OB 都指向圓周，因此形成圓心角。 逐項排除：「圓周角」頂點不在廣場邊緣。；「切線角」題目沒有切線。；「內接四邊形的角」只有三個點，未形成四邊形。；因此只有「圓心角」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：攝影機位置 O 是圓心，鏡頭方向 OA、OB 都指向圓周，因此形成圓心角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s001-v011",
+      "expectedContentSha256": "bbfa6a6ffa24634c6e133239c660bfba4965d5cc6f285b7102f3a4740a63e235",
+      "appendText": {
+        "explanation": "獨立核對：C、A、B 都位於同一圓形邊緣，頂點 C 在圓周，兩視線連到另外兩個圓上點，構成圓周角。 逐項排除：「圓心角」頂點C不在圓心。；「周角」視角不是360°。；「相離直線」兩視線相交於C。；因此只有「圓周角」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：C、A、B 都位於同一圓形邊緣，頂點 C 在圓周，兩視線連到另外兩個圓上點，構成圓周角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s001-v012",
+      "expectedContentSha256": "f7ab00cefb15e870b060b6b82ffe0466edd85bc5603180c1f6676d7976242dcd",
+      "appendArray": {
+        "steps": [
+          "完整驗算：P只是圓內鑽孔且不是圓心，也不在圓周，故不符合兩類角的定義；工程圖位置資訊不可省略。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v001",
+      "expectedContentSha256": "687d59a5be3a1d3064582969b67209be5e2c304145e06d0dbcc6b493d873adc6",
+      "appendText": {
+        "explanation": "獨立核對：弧的度數等於所對圓心角，所以劣弧AB為86°。 逐項排除：「43°」43°是錯誤地取一半。；「94°」94°沒有對應關係。；「172°」172°是錯誤地乘2。；因此只有「86°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：弧的度數等於所對圓心角，所以劣弧AB為86°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v002",
+      "expectedContentSha256": "f4d66cef443812aeb2b63f687c079c733378d440f3b0d7ab16953be04efcb294",
+      "appendText": {
+        "explanation": "獨立核對：圓周角等於所對弧的一半，150°÷2=75°。 逐項排除：「150°」直接把弧度數當角度。；「300°」錯誤乘2。；「30°」錯誤用180−150。；因此只有「75°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓周角等於所對弧的一半，150°÷2=75°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v003",
+      "expectedContentSha256": "6836d9fdff4a5babaa7804630f181cb0ac78a07ac9ecd64bf6a3c04e5ed2b4f4",
+      "appendText": {
+        "explanation": "獨立核對：同端點的劣弧與優弧合為整圓，360°−112°=248°。 逐項排除：「112°」重複劣弧度數。；「224°」把劣弧乘2。；「68°」錯用180−112。；因此只有「248°」符合所有條件。",
+        "misconceptionTarget": "重複劣弧度數。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同端點的劣弧與優弧合為整圓，360°−112°=248°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v004",
+      "expectedContentSha256": "27eba49854811172dc2da3ad884b42e2ecfc8a5497f04f0f62d12ebe177e19f1",
+      "appendText": {
+        "explanation": "獨立核對：所對弧度數是圓周角的2倍，47°×2=94°。 逐項排除：「47°」未乘2。；「133°」錯用180−47。；「313°」錯用360−47。；因此只有「94°」符合所有條件。",
+        "misconceptionTarget": "反求所對弧時仍把圓周角除以 2，將兩倍關係的方向顛倒。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：所對弧度數是圓周角的2倍，47°×2=94°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v005",
+      "expectedContentSha256": "d06202556d609e616500e54ac4043cf583c27d40f78d4f4c3afa10f0ed6daac6",
+      "appendText": {
+        "explanation": "獨立核對：劣弧MN=360°−250°=110°，其圓周角為110°÷2=55°。 逐項排除：「110°」只完成求劣弧，未取一半。；「125°」把優弧直接除2。；「70°」錯用180−110。；因此只有「55°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：劣弧MN=360°−250°=110°，其圓周角為110°÷2=55°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v006",
+      "expectedContentSha256": "8278bab84e36a908e0419955535a4e24dad1462205cf9b811c13b6f8fbf30246",
+      "appendText": {
+        "explanation": "獨立核對：同弧圓心角為圓周角2倍，所以2×64°=128°。 逐項排除：「64°」未乘2。；「32°」錯誤除2。；「296°」用360−64而非同弧關係。；因此只有「128°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同弧圓心角為圓周角2倍，所以2×64°=128°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v007",
+      "expectedContentSha256": "674f871ee25df19328fd9caec2299ecb7569a743a18eff54f56137e81b701d4c",
+      "appendText": {
+        "explanation": "獨立核對：圓周角是弧的一半，所以3x+10=2(x+20)，解得x=30。 逐項排除：「10」代入後弧40°、角30°不符一半。；「20」代入後弧70°、角40°不符。；「40」代入後弧130°、角60°不符。；因此只有「30」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s002-v008",
+      "expectedContentSha256": "3958d62d96e882d40d05be7409089d7be858ed1c6a5746d424f3da26243ff018",
+      "appendText": {
+        "explanation": "獨立核對：題目明確指出所對的是260°優弧，因此圓周角為260°÷2=130°；不能自行改用100°劣弧。 逐項排除：「50°」50°是改用劣弧100°的一半。；「100°」100°是劣弧度數。；「260°」未取一半。；因此只有「130°」符合所有條件。",
+        "misconceptionTarget": "50°是改用劣弧100°的一半。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：題目明確指出所對的是260°優弧，因此圓周角為260°÷2=130°；不能自行改用100°劣弧。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v009",
+      "expectedContentSha256": "7240f94ab94d55beb2ae8a8707a303a1cd1f0b9b6f6f5c3798eb99e0ecef7a8c",
+      "appendText": {
+        "explanation": "獨立核對：三弧共10份，每份36°；最大弧為180°，所對圓周角為90°。 逐項排除：「72°」72°是第二大弧120°以外的錯算。；「180°」180°是弧度數未除2。；「100°」份數計算錯誤。；因此只有「90°」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s002-v010",
+      "expectedContentSha256": "217fe231782689f56ba8b5d067e8fe66f567fb9c48ad54cb798a9567ffc3f4fb",
+      "appendText": {
+        "explanation": "獨立核對：鐘面12等分，每格30°；從12到4共4格，所以劣弧為120°。 逐項排除：「90°」只算3格。；「150°」誤以每格37.5°。；「240°」240°是另一段優弧。；因此只有「120°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：鐘面12等分，每格30°；從12到4共4格，所以劣弧為120°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v011",
+      "expectedContentSha256": "f9c347a842dea9da295b368b6f536ec52e920dee3e640bcd5144cdbe7a6dd682",
+      "appendText": {
+        "explanation": "獨立核對：劣弧AB為360°×3/8=135°，圓周角為135°÷2=67.5°。 逐項排除：「135°」只求弧未取一半。；「45°」把3/8誤作1/4。；「112.5°」錯用180−67.5。；因此只有「67.5°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：劣弧AB為360°×3/8=135°，圓周角為135°÷2=67.5°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-v012",
+      "expectedContentSha256": "dade5eef0e9863ab65ed690b113ee932476ff70f21c567fa21672887d3901c1c",
+      "appendText": {
+        "explanation": "獨立核對：同端點劣弧為60°，其圓周角為30°。 逐項排除：「60°」60°是劣弧度數。；「150°」150°是優弧的一半，非題目指定。；「300°」未換算。；因此只有「30°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同端點劣弧為60°，其圓周角為30°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v001",
+      "expectedContentSha256": "65c4f672a0b0ed729d3c26328b39cfb73c645b86dade417b48a721acbe5cf756",
+      "appendText": {
+        "explanation": "獨立核對：圓內接四邊形對角互補，所以∠C=180°−68°=112°。 逐項排除：「68°」誤認對角相等。；「22°」錯用90−68。；「292°」錯用360−68。；因此只有「112°」符合所有條件。",
+        "misconceptionTarget": "誤認對角相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓內接四邊形對角互補，所以∠C=180°−68°=112°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v002",
+      "expectedContentSha256": "376f901f1ddfd88e6e18de70ab885b1ba2e50ee08155e200b840f3997d69df26",
+      "appendText": {
+        "explanation": "獨立核對：∠B 的對角是 ∠D。圓內接四邊形的對角互補，所以必定與 ∠B 互補的是 ∠D。 逐項排除：「∠A」∠A 與 ∠B 相鄰，不是與 ∠B 互補的對角。；「∠B」同一個角不會因圓內接條件而必定等於自己的補角。；「∠C」∠C 與 ∠B 相鄰，對角配對應是 A–C、B–D。；因此只有「∠D」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：∠B 的對角是 ∠D。圓內接四邊形的對角互補，所以必定與 ∠B 互補的是 ∠D。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v003",
+      "expectedContentSha256": "a9dc83a2327ff0bbece9d90d45a70b5dbb77e2b22fa4c7951592e50a6f08d57f",
+      "appendText": {
+        "explanation": "獨立核對：圓內接四邊形的兩組對角各自互補。 逐項排除：「四邊都相等」只對菱形等特殊情況成立。；「四個角都相等」只對矩形等特殊情況成立。；「兩條對角線互相垂直」不是一般圓內接四邊形必然性質。；因此只有「一組對角的和為180°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓內接四邊形的兩組對角各自互補。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v004",
+      "expectedContentSha256": "e2f68134d05c359370681b94b3749db44ccce57ddc08d0601574a926b4ba466d",
+      "appendText": {
+        "explanation": "獨立核對：對角互補：(2x+10)+(3x−5)=180，5x+5=180，x=35。 逐項排除：「25」回代60°+70°不等180°。；「30」回代70°+85°不等180°。；「40」回代90°+115°超過180°。；因此只有「35」符合所有條件。",
+        "misconceptionTarget": "回代60°+70°不等180°。"
+      }
+    },
+    {
+      "questionId": "u19-s003-v005",
+      "expectedContentSha256": "43a57761bbdbdefebff44ced9d82eebfa01d516ea69bfe1cd4a0ace7f30d5b93",
+      "appendText": {
+        "explanation": "獨立核對：B點外角與∠B互補，而∠B與∠D也互補，所以外角∠CBE=∠D=124°。 逐項排除：「56°」56°是∠B。；「62°」無此關係。；「236°」超過四邊形內角範圍。；因此只有「124°」符合所有條件。",
+        "misconceptionTarget": "把外角 124° 誤當成相鄰內角 B，而不是與它相等的內對角 D。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：B點外角與∠B互補，而∠B與∠D也互補，所以外角∠CBE=∠D=124°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v006",
+      "expectedContentSha256": "eff86ef19a0015ca9542790eb6a4d083177e0d83d47d784004672fddf2652be7",
+      "appendText": {
+        "explanation": "獨立核對：P與R為對角且和180°，共5份，每份36°，∠P=72°。 逐項排除：「60°」把180平均成3份。；「108°」這是∠R。；「120°」比例與總和計算錯。；因此只有「72°」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s003-v007",
+      "expectedContentSha256": "dedad8398df04d40bec0b65eaee0dd63e0a20177ea2608e30759ef63f52c9cf8",
+      "appendText": {
+        "explanation": "獨立核對：A與C互補：3x+x+60=180，x=30。則∠B=70°，所以∠D=180°−70°=110°。 逐項排除：「50°」50°與B角70°不互補。；「70°」70°是∠B，不是∠D。；「130°」130°與B角和200°。；因此只有「110°」符合所有條件。",
+        "misconceptionTarget": "50°與B角70°不互補。"
+      }
+    },
+    {
+      "questionId": "u19-s003-v008",
+      "expectedContentSha256": "0f6f8a2ee24c28fddda97a468fb80f1aa35d9fca91d0f0bb36dc2211ec6919ee",
+      "appendText": {
+        "explanation": "獨立核對：第一角與第三角互補：(x+10)+(3x−30)=180，解得x=50。第二角=95°，因此第四角y=180°−95°=85°。 逐項排除：「65°」65°與95°和160°。；「105°」105°與95°和200°。；「115°」115°與95°和210°。；因此只有「85°」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s003-v009",
+      "expectedContentSha256": "effee31428339f7d929dff38088a8e7ce0ec0ac8c2ba43ade804941c8b85cb7d",
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓內接四邊形的逆判別在一般凸四邊形中成立：一組對角互補可判四點共圓；仍須注意四邊形的通常幾何設定。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v010",
+      "expectedContentSha256": "55bc91d5cd1f6c1142fcfada7cec5071baf029b43206d2732bcab19e81889732",
+      "appendText": {
+        "explanation": "獨立核對：四點共圓時對角互補，∠C=180°−74°=106°。 逐項排除：「74°」誤認對角相等。；「116°」算術錯誤。；「286°」錯用360°。；因此只有「106°」符合所有條件。",
+        "misconceptionTarget": "誤認對角相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：四點共圓時對角互補，∠C=180°−74°=106°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v011",
+      "expectedContentSha256": "33f502db234c215472945f7b818a53998726cc1e7bac69e2dcacac356e5b6d66",
+      "appendText": {
+        "explanation": "獨立核對：98°+82°=180°，符合內接四邊形對角互補；其他敘述不成立。 逐項排除：「兩角相等，所以一定共圓」兩角不相等。；「兩角和90°，所以形成直角」和不是90°。；「兩角差16°，所以四邊相等」角差不能推出四邊相等。；因此只有「兩角和180°，符合圓內接四邊形的必要關係」符合所有條件。",
+        "misconceptionTarget": "兩角不相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：98°+82°=180°，符合內接四邊形對角互補；其他敘述不成立。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-v012",
+      "expectedContentSha256": "0f70af811061bdd306d4e850f9354681c02f438baef58668dda4f063d1aeaadf",
+      "appendText": {
+        "explanation": "獨立核對：圓內接四邊形的一個外角等於其內對角，因此∠C=118°。 逐項排除：「62°」62°是∠A。；「72°」沒有對應。；「242°」不是內角範圍。；因此只有「118°」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s004-v001",
+      "expectedContentSha256": "106dffc93cfc295675bd5bf501f2edacdebf7fc04145e38ff7848b8e660a6a2b",
+      "appendText": {
+        "explanation": "獨立核對：半圓弧長是圓周長的一半：2π×7÷2=7π cm。 逐項排除：「14π cm」14π是整圓周長。；「7π cm²」平方單位不適用長度。；「14 cm」漏掉π且誤用直徑。；因此只有「7π cm」符合所有條件。",
+        "misconceptionTarget": "14π是整圓周長。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：半圓弧長是圓周長的一半：2π×7÷2=7π cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v002",
+      "expectedContentSha256": "684bc45ad27ec655db8daae0c5abb8603dc38fdcf0008c38950666a8b6fe99e4",
+      "appendText": {
+        "explanation": "獨立核對：整圓周長16π m，四分之一為4π m。 逐項排除：「2π m」錯取八分之一。；「8π m」錯取二分之一。；「16π m」未取四分之一。；因此只有「4π m」符合所有條件。",
+        "misconceptionTarget": "錯取八分之一。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：整圓周長16π m，四分之一為4π m。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v003",
+      "expectedContentSha256": "e4834115f066758a2c319b948a44782429bbcdf30a3c5b9c64721445ec197db9",
+      "appendText": {
+        "explanation": "獨立核對：直徑10故半徑5，半圓弧長πr=5π cm。 逐項排除：「10π cm」把直徑當半徑。；「25π cm」誤用面積。；「5π cm²」單位錯。；因此只有「5π cm」符合所有條件。",
+        "misconceptionTarget": "把直徑當半徑。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：直徑10故半徑5，半圓弧長πr=5π cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v004",
+      "expectedContentSha256": "124e849a7837da10ad09425dec2c179f6ea13cfdaa59cd28e1be4dae25d260f6",
+      "appendText": {
+        "explanation": "獨立核對：120°占整圓1/3，整圓周長12π，所以弧長4π cm。 逐項排除：「2π cm」錯用1/6。；「6π cm」錯取半圓。；「12π cm」未乘比例。；因此只有「4π cm」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：120°占整圓1/3，整圓周長12π，所以弧長4π cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v005",
+      "expectedContentSha256": "fe7d8982189bf2628fe548f2177ed84c357d1c3a29fa9205974bdd18a1fc1cdb",
+      "appendText": {
+        "explanation": "獨立核對：72°占整圓1/5，所以整圓周長=3π×5=15π cm。 逐項排除：「6π cm」只乘2。；「12π cm」錯認72°占1/4。；「18π cm」錯認占1/6。；因此只有「15π cm」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：72°占整圓1/5，所以整圓周長=3π×5=15π cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v006",
+      "expectedContentSha256": "12c7cc4732419bf4d4c922fba0e50986b46ac91f78f3974520ffb16918273c59",
+      "appendText": {
+        "explanation": "獨立核對：同圓弧長與中心角成正比，45:135=1:3。 逐項排除：「1:2」比例化簡錯。；「2:3」角度比不是2:3。；「3:1」顛倒甲乙順序。；因此只有「1:3」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同圓弧長與中心角成正比，45:135=1:3。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v007",
+      "expectedContentSha256": "c84b5b10e55855722082bf304eb8d3de986cb8fcc2b6bd3599f2c775cd7394b0",
+      "appendText": {
+        "explanation": "獨立核對：相鄰弧合成中心角120°，占整圓1/3；整圓周長18π，故總弧長6π。 逐項排除：「3π cm」只算第一段。；「4π cm」只按80°附近錯算。；「12π cm」把120°當2/3圓。；因此只有「6π cm」符合所有條件。",
+        "misconceptionTarget": "只算第一段。"
+      }
+    },
+    {
+      "questionId": "u19-s004-v008",
+      "expectedContentSha256": "d5f73160208f9e48619d093356c197fd0e15190e2542ff54988bffd891fdd169",
+      "appendText": {
+        "explanation": "獨立核對：270°弧與90°弧的長度差是整圓周長的1/2，即πr。由πr=10π得r=10。 逐項排除：「2.5」使弧長差只有2.5π。；「5」使弧長差只有5π。；「20」使弧長差20π。；因此只有「10」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s004-v009",
+      "expectedContentSha256": "0ca761eb35c3b2f104e88804237f543a08637388ad2c1db77a9b02e61396e785",
+      "appendText": {
+        "explanation": "獨立核對：相同中心角下弧長與半徑成正比，8π×3/2=12π。 逐項排除：「9π」比例倍率錯。；「16π」誤乘2。；「18π」把半徑比平方。；因此只有「12π」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：相同中心角下弧長與半徑成正比，8π×3/2=12π。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v010",
+      "expectedContentSha256": "2cc378a961c32732148c0f6a18bfe1c438db32dc8db54044b69a7a9e422750d7",
+      "appendText": {
+        "explanation": "獨立核對：輪周長70π cm，半圈走過35π cm。 逐項排除：「70π cm」整圈距離。；「35π cm²」面積單位錯。；「70 cm」漏π。；因此只有「35π cm」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：輪周長70π cm，半圈走過35π cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v011",
+      "expectedContentSha256": "399409263881003121b6b7e711b0d2df0d5efe5246edead3d68940aec19f3567",
+      "appendText": {
+        "explanation": "獨立核對：半圓弧長πr=20π m。直徑不是跑道曲線的一部分。 逐項排除：「40π m」整圓周長。；「20π m²」單位錯。；「40 m」把直徑當彎道長。；因此只有「20π m」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：半圓弧長πr=20π m。直徑不是跑道曲線的一部分。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-v012",
+      "expectedContentSha256": "ae560af61d50e86100ea58126242b79091772a6c5f6fb7e629b509ab619066a6",
+      "appendText": {
+        "explanation": "獨立核對：弧長=(240/360)×2π×1.5=(2/3)×3π=2π m。 逐項排除：「π m」只取1/3。；「3π m」未乘比例。；「4π m」把240°誤作4/3圈。；因此只有「2π m」符合所有條件。中心角 240° 占整圓三分之二，應先求整圓周長 3π，再乘三分之二；所得 2π m 是曲線長度。"
+      }
+    },
+    {
+      "questionId": "u19-s005-v001",
+      "expectedContentSha256": "0f589ca7c3d3d18b82b120746369987ed64699a387022148ccdb782cd0d66f19",
+      "appendText": {
+        "explanation": "獨立核對：弦的定義是兩端點都在圓上的線段。 逐項排除：「圓心到圓周的線段」這是半徑。；「圓外兩點的連線」端點不在圓上。；「與圓只有一個交點的線段」只一個交點不足以成弦。；因此只有「兩端點都在圓上的線段」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "檢查四個選項的線段端點是否都在圓周上。",
+          "只有兩端點都在圓上的線段符合弦的定義。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v002",
+      "expectedContentSha256": "f83fe89d24e75202fdf9b3f7cc0de142c64290964fd609ceaddd595bca98e885",
+      "appendText": {
+        "explanation": "獨立核對：直徑兩端在圓上，所以符合弦定義；但一般弦不必通過圓心。 逐項排除：「每一條弦都是直徑」弦不一定通過圓心。；「直徑不是弦」直徑是特殊弦。；「弦一定比半徑短」某些弦可長於半徑。；因此只有「每一條直徑都是弦」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：直徑兩端在圓上，所以符合弦定義；但一般弦不必通過圓心。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v003",
+      "expectedContentSha256": "9e92e90750f66dc7c4f56d8a09d34df490cc12de82aa5c2c494a39f7e6d82633",
+      "appendText": {
+        "explanation": "獨立核對：同圓等弦所對劣弧相等。 逐項排除：「優弧 AB=劣弧 CD」優弧與劣弧種類不同。；「AB 通過圓心」等弦不必為直徑。；「兩弦互相垂直」等弦不推出垂直。；因此只有「劣弧 AB=劣弧 CD」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同圓等弦所對劣弧相等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v004",
+      "expectedContentSha256": "bb94639f5fd36709fd7a9db7092db96da7b82ba86edc4545ca50f51db7ca46e1",
+      "appendText": {
+        "explanation": "獨立核對：同圓等弦所對圓心角相等，因此∠COD=74°。 逐項排除：「37°」錯取一半。；「106°」錯取補角。；「148°」錯乘2。；因此只有「74°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同圓等弦所對圓心角相等，因此∠COD=74°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v005",
+      "expectedContentSha256": "51130b8c9a8003fd2f012af5c0e76456154b0a3350184c0897d69a40a806a452",
+      "appendText": {
+        "explanation": "獨立核對：同圓等劣弧所對弦相等，故RS=PQ=6 cm。 逐項排除：「3 cm」錯誤取一半。；「12 cm」錯誤乘2。；「無法判定」同圓條件已足夠。；因此只有「6 cm」符合所有條件。",
+        "misconceptionTarget": "錯誤取一半。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同圓等劣弧所對弦相等，故RS=PQ=6 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v006",
+      "expectedContentSha256": "41399d8aefbcf76c2995e05fe7e9c1d1386966133c801e95ec806d2af5a67526",
+      "appendText": {
+        "explanation": "獨立核對：同圓中較大圓心角對較長弦；90°>50°，故CD較長。 逐項排除：「AB=CD」中心角不等，弦不等。；「AB>CD」大小方向反了。；「無法比較」同圓與角度資訊足以比較。；因此只有「AB<CD」符合所有條件。",
+        "misconceptionTarget": "中心角不等，弦不等。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同圓中較大圓心角對較長弦；90°>50°，故CD較長。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v007",
+      "expectedContentSha256": "711cf2a048adb9fdd489513c10de561ffdeb35e5bcbd308ccef25932665e7cfa",
+      "appendText": {
+        "explanation": "獨立核對：等弦對等圓心角，3x+5=5x−35，40=2x，x=20。 逐項排除：「10」回代35°與15°不等。；「15」回代50°與40°不等。；「25」回代80°與90°不等。；因此只有「20」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s005-v008",
+      "expectedContentSha256": "7c691896683cdc004182a35b4100e36c432f9727e49ac98c25c16f864c2c9fc2",
+      "appendText": {
+        "explanation": "獨立核對：直徑長2r=20；弦的最大長度是直徑，因此長20的弦必通過圓心。 逐項排除：「AB 所對圓心角為90°」直徑所對圓心角是180°。；「AB 只是一條普通短弦」長度達最大，不是普通短弦。；「AB 長度大於直徑」等於而非大於直徑。；因此只有「AB 是直徑」符合所有條件。",
+        "misconceptionTarget": "直徑所對圓心角是180°。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：直徑長2r=20；弦的最大長度是直徑，因此長20的弦必通過圓心。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v009",
+      "expectedContentSha256": "78cb51f7638bbf2aa0edd0d31023d9c734765864cb43a74cf80893e85e676b84",
+      "appendArray": {
+        "steps": [
+          "完整驗算：同弦長在不同半徑圓中所對中心角可能不同；等弦等弧性質需同圓或等圓。"
+        ]
+      },
+      "appendText": {
+        "misconceptionTarget": "忽略圓大小。"
+      }
+    },
+    {
+      "questionId": "u19-s005-v010",
+      "expectedContentSha256": "9e7d15aadf8bb9a984bec4e55e1d85c5dc10abaf2605470a3c792bdc9ffa9667",
+      "appendText": {
+        "explanation": "獨立核對：同一圓中等弦所對圓心角相等。 逐項排除：「一個是另一個兩倍」沒有倍率關係。；「和為90°」沒有直角條件。；「無法比較」同圓與等長已足夠。；因此只有「相等」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同一圓中等弦所對圓心角相等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v011",
+      "expectedContentSha256": "9d4992124cd01e8b844fea415611f71c06c11b9f94d822584d94451e4b438fc5",
+      "appendText": {
+        "explanation": "獨立核對：同一圓中等弦與等劣弧互相對應，直接控制弦長即可。 逐項排除：「兩弦與水平線夾角相等」方向相等不保證弦長。；「兩弦中點高度相等但不考慮圓心」未以圓心為基準的高度不充分。；「兩弦顏色相同」顏色與幾何無關。；因此只有「兩條弦的長度相等」符合所有條件。",
+        "misconceptionTarget": "方向相等不保證弦長。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同一圓中等弦與等劣弧互相對應，直接控制弦長即可。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-v012",
+      "expectedContentSha256": "b0470828eae3c3a88b300d468615ceafa6f7f3c041e26740d815c140c6e0b122",
+      "appendText": {
+        "explanation": "獨立核對：同一圓中140°>100°，較大中心角對較長弦，所以弦甲較長。 逐項排除：「弦乙」大小方向顛倒。；「兩弦等長」中心角不等。；「資料不足」同圓條件足以比較。；因此只有「弦甲」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同一圓中140°>100°，較大中心角對較長弦，所以弦甲較長。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v001",
+      "expectedContentSha256": "1155bd100bac719c3e9b9af3b1c20902e262e9a68e1fde0248386e28ea6d96f3",
+      "appendText": {
+        "explanation": "獨立核對：同弧圓周角是圓心角的一半，120°÷2=60°。 逐項排除：「120°」未取一半。；「240°」錯誤乘2。；「30°」多除一次2。；因此只有「60°」符合所有條件。",
+        "misconceptionTarget": "把圓周角當成較大的角，弄反圓心角與圓周角的兩倍關係。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同弧圓周角是圓心角的一半，120°÷2=60°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v002",
+      "expectedContentSha256": "61288d9381502311be29bd2bed127135cbcdd66a3f127c7a32a61c27e386fc4d",
+      "appendText": {
+        "explanation": "獨立核對：同弧所對圓周角相等，因此∠ADB=38°。 逐項排除：「19°」錯取一半。；「76°」錯乘2。；「142°」錯取補角。；因此只有「38°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：同弧所對圓周角相等，因此∠ADB=38°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v003",
+      "expectedContentSha256": "7a996737c0eb6d6c13516437c0c3b0bcc01cea5fbb2fb9b2b8e72019990e596c",
+      "appendText": {
+        "explanation": "獨立核對：直徑AB所對弧為180°，圓周角為其一半90°。 逐項排除：「45°」錯再除2。；「180°」把弧度數當角度。；「60°」無此固定值。；因此只有「90°」符合所有條件。",
+        "misconceptionTarget": "把半圓所對圓周角寫成 180°，沒有再取所對弧的一半。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：直徑AB所對弧為180°，圓周角為其一半90°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v004",
+      "expectedContentSha256": "19f601bdbeef416559d04ddc5aa466ec3804a3aaaebfd7a4c701f70eec023b05",
+      "appendText": {
+        "explanation": "獨立核對：圓心角為同弧圓周角的2倍，52°×2=104°。 逐項排除：「26°」錯取一半。；「52°」未乘2。；「128°」錯用180−52。；因此只有「104°」符合所有條件。",
+        "misconceptionTarget": "錯取一半。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：圓心角為同弧圓周角的2倍，52°×2=104°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v005",
+      "expectedContentSha256": "6539b2664a988b579d9d5e2f4b7a910cb73a7f3a2f150db76cbffabdc0054eb7",
+      "appendText": {
+        "explanation": "獨立核對：∠BAC與∠BDC皆為圓周角且同對弧BC，因此相等為28°。 逐項排除：「56°」錯乘2。；「62°」用三角形餘角但對錯角。；「90°」直徑性質不是此角。；因此只有「28°」符合所有條件。",
+        "misconceptionTarget": "錯乘2。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：∠BAC與∠BDC皆為圓周角且同對弧BC，因此相等為28°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v006",
+      "expectedContentSha256": "691f5a4ff5001a66e136725790c7ade078a2eb323ee66153b730a25fae81df2c",
+      "appendText": {
+        "explanation": "獨立核對：∠ACB所對弧AB=90°。弧AB=3×弧BC，所以弧BC=30°。 逐項排除：「45°」把角度直接除3。；「60°」只求弧AB的錯誤值。；「90°」未除比例。；因此只有「30°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：∠ACB所對弧AB=90°。弧AB=3×弧BC，所以弧BC=30°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v007",
+      "expectedContentSha256": "b5d2b3c732400dc4d110631795a85ac5e1d790f5db17940340bf7cb5cabd5b6b",
+      "appendText": {
+        "explanation": "獨立核對：圓心角是圓周角2倍：5x−10=2(2x+5)=4x+10，所以x=20。 逐項排除：「10」回代25°與40°不符兩倍。；「15」回代35°與65°不符。；「25」回代55°與115°不符。；因此只有「20」符合所有條件。",
+        "misconceptionTarget": "回代25°與40°不符兩倍。"
+      }
+    },
+    {
+      "questionId": "u19-s006-v008",
+      "expectedContentSha256": "f6442e05c0f9751abd4d98f9c465fdea2989c316b0c8ad7eeacf6d3a9d1b7dc6",
+      "appendText": {
+        "explanation": "獨立核對：∠ABC=34°所對不含B的弧AC為68°；但D位於該68°劣弧AC上，因此∠ADC所對的是另一條優弧AC，度數360°−68°=292°，所以∠ADC=146°。 逐項排除：「34°」34°錯把兩角當同弧同側。；「56°」56°為直角三角形另一角。；「112°」112°不是優弧一半。；因此只有「146°」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s006-v009",
+      "expectedContentSha256": "a82560b080e09c7096e9176abe0c60ab1423ef9fe587b12ba929ec5b4479c258",
+      "appendText": {
+        "explanation": "獨立核對：∠ACB所對弧AB為84°；另一段弧為276°，∠ADB若對該弧則為138°。 逐項排除：「42°」錯當同弧同側。；「84°」只求弧度數。；「96°」錯算補弧。；因此只有「138°」符合所有條件。",
+        "misconceptionTarget": "錯當同弧同側。"
+      }
+    },
+    {
+      "questionId": "u19-s006-v010",
+      "expectedContentSha256": "36bf4e344c9523d442e8d1e9e4284cb3069e746a50ea049e17cee0cc955bebb0",
+      "appendText": {
+        "explanation": "獨立核對：乘客視角∠ACB是同弧圓周角，等於中心角一半48°。 逐項排除：「96°」未取一半。；「192°」錯乘2。；「84°」錯取補角。；因此只有「48°」符合所有條件。",
+        "misconceptionTarget": "未取一半。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：乘客視角∠ACB是同弧圓周角，等於中心角一半48°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-v011",
+      "expectedContentSha256": "ff4b061868eac2a08698abb06555956ebbe189e7abbd6bbaa78ccd193af761f3",
+      "appendText": {
+        "explanation": "獨立核對：因 AB 是直徑，∠ACB=90°，AB 是直角三角形斜邊。由 AC²+BC²=AB²，BC²=10²−6²=64，所以 BC=8 m。 逐項排除：「4 m」只做 10−6，沒有使用直角三角形的平方關係。；「10 m」10 m 是直徑 AB，也就是斜邊，不是另一股。；「16 m」把兩已知長度直接相加，且結果大於斜邊，不可能是直角三角形的股。；因此只有「8 m」符合所有條件。"
+      }
+    },
+    {
+      "questionId": "u19-s006-v012",
+      "expectedContentSha256": "288dd76a58c674ba409407fb5c242d5a3ccc19106f0d5ebf1dbee5ffeb02bd5d",
+      "appendText": {
+        "explanation": "獨立核對：兩攝影機視角皆為同弧AB所對圓周角，因此相等。 逐項排除：「18.5°」錯取一半。；「74°」錯乘2。；「143°」錯取補角。；因此只有「37°」符合所有條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "完整驗算：兩攝影機視角皆為同弧AB所對圓周角，因此相等。"
+        ]
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u19-s001-cr002",
+      "expectedContentSha256": "2838514281b8b25cc63c9e2466e5539cd1382784241cc12e22dea50db0807ee7",
+      "appendArray": {
+        "standardSolution": [
+          "圓周角的頂點 Y 必須在圓周，角的兩邊再分別交圓於 X、Z；因此所對弧以 X、Z 為端點，並選擇不經過頂點 Y 的那一段，三項位置條件缺一不可。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-cr001",
+      "expectedContentSha256": "da7aaf3e36c6e4b9b4a7c7062aed57e8ddb5b7bd748af4969ca32b7047782266",
+      "appendArray": {
+        "standardSolution": [
+          "因 C 位於優弧 AB，角 ACB 截得不含 C 的 132° 劣弧，所以圓周角為 66°；同端點另一段弧與劣弧合成整圓，優弧為 228°，兩個結果可分別用兩倍與總和驗算。"
+        ],
+        "commonErrors": [
+          "把 C 所在的優弧誤當成角 ACB 的所對弧，因而用 228° 除以 2。"
+        ],
+        "reasoningSteps": [
+          "最後檢查 66° 的兩倍是 132°，且 132°+228°=360°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s002-cr002",
+      "expectedContentSha256": "1e9779cdda5120fff66b1a411574e5eb165311f8ba35d9693ffb73a7605b174d",
+      "appendArray": {
+        "standardSolution": [
+          "圓周角的兩倍等於所對弧，故把 3x+6 設為 2(x+12)；展開括號後得到 x=18，回代得圓周角 30°、劣弧 60°，符合弧為圓周角兩倍且角度範圍合理。"
+        ],
+        "commonErrors": [
+          "展開 2(x+12) 時只乘 x 而漏乘 12，會得到錯誤的 x 與角度。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-cr001",
+      "expectedContentSha256": "455084cae49ffd7f5fd7e59c2f49ae2220217c6a7a9fb78abb171afa86fe3a7c",
+      "appendArray": {
+        "standardSolution": [
+          "A、C 是圓內接四邊形的一組對角，所以兩式相加等於 180°；解得 x=29 後，分別回代得到 72° 與 108°，兩角和正好為 180°，並且都在內角的合理範圍內。"
+        ],
+        "commonErrors": [
+          "只求出 x=29 就停止，沒有依題意回代求出兩個對角並驗算互補。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s003-cr002",
+      "expectedContentSha256": "43d2a4f2f4c9e74aa0252b525d40c5ae8a143317df48d633e3990d48fdacd822",
+      "appendArray": {
+        "standardSolution": [
+          "A 點外角與內角 A 為線性對，所以內角 A 是 54°；圓內接四邊形的 A、C 對角互補，故內角 C 是 126°。兩個角都與同一個 54° 角互補，因此外角與內對角相等。"
+        ],
+        "commonErrors": [
+          "把 A 點外角 126° 直接當成內角 A，進而把對角 C 算成 54°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-cr001",
+      "expectedContentSha256": "6ba06a90fd51205283f585cf489e5348f9c608c2da7adab4b671e143b91a9f20",
+      "appendArray": {
+        "standardSolution": [
+          "200° 占整圓的 200/360，乘半徑 9 的圓周長 18π 得弧長 10π cm；半圓弧長為 9π cm。因 200° 大於 180°，計算結果也確實有 10π 大於 9π，角度比例與弧長大小相符。"
+        ],
+        "commonErrors": [
+          "把弧長公式誤寫成圓面積 πr² 乘中心角比例，導致量綱與答案都錯。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s004-cr002",
+      "expectedContentSha256": "80e876baaace594dc218b58a3864e3866e9064dfdd06d9f9f6347f6948b178b2",
+      "appendArray": {
+        "standardSolution": [
+          "72° 是整圓的五分之一，因此 4π cm 是圓周長的五分之一，整圓周長為 20π cm；再由 2πr=20π 得半徑 10 cm，先求整體再求半徑可避免倍率方向錯置。"
+        ],
+        "commonErrors": [
+          "由整圓周長 20π 直接把 20 當成半徑，漏掉圓周長公式中的係數 2。"
+        ],
+        "reasoningSteps": [
+          "以 2π×10=20π 回代圓周長，再取五分之一確認 72° 弧長為 4π。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-cr001",
+      "expectedContentSha256": "b08f3142109bdafe78657a81a72af38a8f5f64af0328b1c11f266ba3b02f75d6",
+      "appendArray": {
+        "standardSolution": [
+          "同一圓中的等弦對應相等圓心角，因此令 3x+12=5x−20；解得 x=16，將它代回兩式都得到 60°。方程、兩角回代與同圓條件三者相符，答案唯一。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s005-cr002",
+      "expectedContentSha256": "43dfe8bc21d9724fe658d0d4a45951df64c4b120031197efb10f43a54bb3cd86",
+      "appendArray": {
+        "standardSolution": [
+          "圓心到弦的垂線會平分弦，所以直角三角形的一股是半弦 12 cm，斜邊是半徑 13 cm；由畢氏定理得到另一股平方為 25，弦心距取正值 5 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-cr001",
+      "expectedContentSha256": "4e79ea39a85def2b079787d1055bdcd6b41b45bbaf1c2ef7a09443f1526c762d",
+      "appendArray": {
+        "standardSolution": [
+          "同弧圓心角是圓周角的兩倍，因此 6x−8 必須等於 2(2x+6)；完整展開後解得 x=10，回代得到圓心角 52°、圓周角 26°，前者確為後者兩倍，且兩角都在合理範圍內。"
+        ],
+        "commonErrors": [
+          "展開兩倍的圓周角時漏乘常數 6，會破壞圓心角與圓周角的兩倍關係。"
+        ]
+      }
+    },
+    {
+      "questionId": "u19-s006-cr002",
+      "expectedContentSha256": "5552b9bb6cf0965624b540efe5865ddffca0aa930623e3adf4909d78a88d5ee9",
+      "appendArray": {
+        "standardSolution": [
+          "AB 是直徑，所以所對圓周角 ACB 為 90°，AB 即為直角三角形的斜邊；使用畢氏定理將 9² 與 12² 相加得 225，再取正平方根，直徑 AB 為 15 cm。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u19-s001-lecture-r1",
+      "expectedContentSha256": "24862856042a899d17f3ec6aa85f79beedc9b05a07b3db01574c6dc24f9bca8a",
+      "replaceText": {
+        "。，不可按比例目測。": "，不可按比例目測。"
+      },
+      "appendArray": {
+        "method": [
+          {
+            "step": 5,
+            "instruction": "用頂點不在圓心或圓周、以及切線與弦的反例排除誤判。",
+            "check": "是否同時核對頂點位置與角的兩邊，而不是只看角畫在圓內？"
+          }
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "s001-L1",
+            "prompt": "圓心 O，A、B 在圓上，判斷 ∠AOB。",
+            "solutionSteps": [
+              "頂點是 O。",
+              "OA、OB 都是半徑。"
+            ],
+            "answer": "∠AOB 是圓心角。",
+            "level": "basic",
+            "why": "圓心角的必要條件是頂點位於圓心；本題 O 明確是圓心，且 OA、OB 都是連向圓周的半徑，所以角 AOB 完整符合定義，無須依圖形大小猜測。"
+          },
+          {
+            "exampleId": "s001-L2",
+            "prompt": "A、B、C 在圓上，判斷 ∠ACB。",
+            "solutionSteps": [
+              "頂點 C 在圓周上。",
+              "CA、CB 都是弦。"
+            ],
+            "answer": "∠ACB 是圓周角。",
+            "level": "standard",
+            "why": "角 ACB 的中間字母 C 是頂點，而 C、A、B 都在圓周上；CA、CB 因此為兩條弦，這兩項位置條件共同保證它是圓周角。若頂點改到 O，角的類型就會隨位置改變。"
+          },
+          {
+            "exampleId": "s001-L3",
+            "prompt": "點 P 在圓內但 P≠O，判斷 ∠APB。",
+            "solutionSteps": [
+              "頂點不在圓心。",
+              "頂點也不在圓周。"
+            ],
+            "answer": "不是本節定義的圓心角或圓周角。",
+            "level": "advanced",
+            "why": "P 雖在圓內，卻既不是圓心也不在圓周，因此同時不符合圓心角與圓周角的頂點條件；角畫在圓內本身不是分類依據。"
+          },
+          {
+            "exampleId": "s001-L4",
+            "prompt": "∠ADB 的兩邊交圓於 A、B。指出所對弧。",
+            "solutionSteps": [
+              "角的端點是 A、B。",
+              "選不含頂點 D 的弧。"
+            ],
+            "answer": "所對弧為弧 AB。",
+            "level": "connection",
+            "why": "圓周角所對弧由角兩邊在圓上的端點 A、B 決定，並且不能經過角頂點 D；這樣才是角內部真正截得的那一段弧 AB。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u19-s002-lecture-r1",
+      "expectedContentSha256": "4977facc182fd66437eaa08e228409cea34d2fd54ecb50a63fa9e93db0e41a41",
+      "replaceText": {
+        "。，不可按比例目測。": "，不可按比例目測。"
+      },
+      "appendArray": {
+        "method": [
+          {
+            "step": 5,
+            "instruction": "把所得角乘回 2，並以優弧加劣弧等於 360° 反向驗算。",
+            "check": "所選弧是否不含圓周角頂點，兩段弧總和是否為整圓？"
+          }
+        ],
+        "conceptNarrative": [
+          "判斷圓周角時，所對弧一定是不含角頂點的那一段；同端點雖有優弧與劣弧，必須先依頂點位置選對弧，再使用一半關係。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "s002-L1",
+            "prompt": "弧 AB 為 100°，求 ∠AOB。",
+            "solutionSteps": [
+              "O 是圓心。",
+              "圓心角與弧同度數。"
+            ],
+            "answer": "100°。",
+            "level": "basic",
+            "why": "弧的度數依定義等於所對圓心角的度數；O 是圓心且 OA、OB 指向弧的兩端，所以弧 AB 為 100° 時，角 AOB 也恰為 100°。這裡不是圓周角，因此不需要再取一半。"
+          },
+          {
+            "exampleId": "s002-L2",
+            "prompt": "弧 AB 為 140°，C 在另一弧上，求 ∠ACB。",
+            "solutionSteps": [
+              "∠ACB 所對弧 AB。",
+              "140°÷2=70°。"
+            ],
+            "answer": "70°。",
+            "level": "standard",
+            "why": "C 位於另一段弧上，角 ACB 截得題給的 140° 弧 AB；圓周角為所對弧的一半，故 140° 除以 2 得 70°，而非直接照抄弧度數。再乘回 2 可驗得原弧 140°。"
+          },
+          {
+            "exampleId": "s002-L3",
+            "prompt": "劣弧 AB 為 80°，求優弧 AB。",
+            "solutionSteps": [
+              "整圓 360°。",
+              "360°−80°=280°。"
+            ],
+            "answer": "280°。",
+            "level": "advanced",
+            "why": "同端點的優弧與劣弧恰好合成 360° 整圓；已知劣弧 80°，從 360° 扣除後得到 280°，也符合優弧必大於 180° 的範圍。兩段弧端點相同並合成完整圓周。"
+          },
+          {
+            "exampleId": "s002-L4",
+            "prompt": "圓周角為 55°，求所對弧。",
+            "solutionSteps": [
+              "弧度數為圓周角兩倍。",
+              "55°×2=110°。"
+            ],
+            "answer": "110°。",
+            "level": "connection",
+            "why": "圓周角是所對弧的一半，反向由角求弧就必須乘 2；55° 乘 2 得 110°，代回 110° 除以 2 又回到原角，倍率方向一致，因此不能反過來再除以 2。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u19-s003-lecture-r1",
+      "expectedContentSha256": "6d2e69f9c21d45065cbd87df596e48f66f2bb1338e4c9ea761815fa6b0c46114",
+      "replaceText": {
+        "。，不可按比例目測。": "，不可按比例目測。"
+      },
+      "appendArray": {
+        "method": [
+          {
+            "step": 5,
+            "instruction": "遇到外角時先找相鄰內角，再用對角互補建立外角等於內對角。",
+            "check": "外角、相鄰內角與內對角的頂點是否辨認正確？"
+          }
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "s003-L1",
+            "prompt": "ABCD 為圓內接四邊形，∠A=72°，求 ∠C。",
+            "solutionSteps": [
+              "∠A+∠C=180°。",
+              "180°−72°=108°。"
+            ],
+            "answer": "108°。",
+            "level": "basic",
+            "why": "A、C 是依序內接四邊形中不共邊的一組對角，兩角必互補；因此從 180° 減 72° 得 108°，而不是把相鄰角誤當成指定對角。"
+          },
+          {
+            "exampleId": "s003-L2",
+            "prompt": "∠B=95°，求 ∠D。",
+            "solutionSteps": [
+              "B、D 為對角。",
+              "180°−95°=85°。"
+            ],
+            "answer": "85°。",
+            "level": "standard",
+            "why": "在頂點順序 A、B、C、D 中，B 與 D 相隔一個頂點而互為對角；內接四邊形對角和為 180°，所以 95° 的補角 85° 就是角 D，相鄰的 A、C 並非所求配對。"
+          },
+          {
+            "exampleId": "s003-L3",
+            "prompt": "∠A=3x+10°，∠C=2x+20°。",
+            "solutionSteps": [
+              "兩角和 180°。",
+              "5x+30=180，x=30。"
+            ],
+            "answer": "x=30。",
+            "level": "advanced",
+            "why": "兩個代數角分別位於 A、C，必須先列 3x+10+2x+20=180；解得 x=30 後，兩角為 100° 與 80°，回代總和正好 180°。兩個結果都是合法內角，且彼此確實互補。"
+          },
+          {
+            "exampleId": "s003-L4",
+            "prompt": "A 點外角為 112°，求 ∠C。",
+            "solutionSteps": [
+              "A 外角與 ∠A 互補。",
+              "∠C 也與 ∠A 互補。"
+            ],
+            "answer": "∠C=112°。",
+            "level": "connection",
+            "why": "A 點外角與內角 A 互補，而內角 C 也與 A 互補；同一個角的補角相等，所以外角 112° 直接等於內對角 C，而非等於內角 A。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u19-s004-lecture-r1",
+      "expectedContentSha256": "74792404aa1d8bc65bc36db078eaf63e05390933a858a695fe36eb6bd4a7fa9b",
+      "replaceText": {
+        "。，不可按比例目測。": "，不可按比例目測。"
+      },
+      "appendArray": {
+        "method": [
+          {
+            "step": 5,
+            "instruction": "用弧長除以整圓周長，確認所得比例等於中心角除以 360°。",
+            "check": "答案單位是否為長度，且中心角越大時弧長也隨之增加？"
+          }
+        ],
+        "conceptNarrative": [
+          "任意中心角的弧長都可視為整圓周長按角度比例分配；答案是曲線長度，應使用與半徑相同的長度單位，不能寫成平方單位。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "s004-L1",
+            "prompt": "半徑 6 的半圓弧長。",
+            "solutionSteps": [
+              "整圓周長 12π。",
+              "取一半得 6π。"
+            ],
+            "answer": "6π。",
+            "level": "basic",
+            "why": "半圓弧只占整個圓周的一半；半徑 6 的整圓周長是 12π，取一半得 6π。題目只問曲線弧長，因此不把直徑另加進答案。"
+          },
+          {
+            "exampleId": "s004-L2",
+            "prompt": "半徑 8 的四分之一圓弧長。",
+            "solutionSteps": [
+              "整圓周長 16π。",
+              "取四分之一得 4π。"
+            ],
+            "answer": "4π。",
+            "level": "standard",
+            "why": "四分之一圓的中心角為 90°，占整圓 1/4；半徑 8 的整圓周長 16π 乘 1/4 得 4π，答案仍使用長度單位。九十度只占四分之一，不能誤判為半圓。"
+          },
+          {
+            "exampleId": "s004-L3",
+            "prompt": "直徑 10 的半圓弧長。",
+            "solutionSteps": [
+              "半徑為5。",
+              "πr=5π。"
+            ],
+            "answer": "5π。",
+            "level": "advanced",
+            "why": "直徑 10 必須先除以 2 得半徑 5；半圓弧長是 πr，所以得到 5π。若直接把直徑代入 πr，會把弧長放大一倍。此處答案是曲線長度，單位與直徑相同。"
+          },
+          {
+            "exampleId": "s004-L4",
+            "prompt": "半徑 3，270° 優弧長。",
+            "solutionSteps": [
+              "270°占整圓3/4。",
+              "2π×3×3/4=9π/2。"
+            ],
+            "answer": "9π/2。",
+            "level": "connection",
+            "why": "270° 優弧占整圓 3/4，半徑 3 的整圓周長為 6π；兩者相乘得 18π/4，也就是最簡的 9π/2，且大於半圓弧長。優弧超過半圓，結果也必須大於 3π。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u19-s005-lecture-r1",
+      "expectedContentSha256": "fd503dc370f5331ad85bbaa2e0743b7363f1b06b410ff6b911e4419dbcb4c524",
+      "replaceText": {
+        "。，不可按比例目測。": "，不可按比例目測。"
+      },
+      "appendArray": {
+        "method": [
+          {
+            "step": 5,
+            "instruction": "由求得的弦、劣弧或圓心角反推另外兩項，確認等量關係一致。",
+            "check": "是否先確認同圓或等圓，並且比較的是對應劣弧？"
+          }
+        ],
+        "conceptNarrative": [
+          "等弦、等劣弧與等圓心角的雙向關係都以同一圓或等圓為前提；跨不同半徑的圓比較時，即使弦長相同，所對角度仍可能不同。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "s005-L1",
+            "prompt": "AB 通過圓心且 A、B 在圓上。",
+            "solutionSteps": [
+              "兩端在圓上，是弦。",
+              "又通過圓心。"
+            ],
+            "answer": "AB 是直徑，也是弦。",
+            "level": "basic",
+            "why": "AB 的兩端都在圓周上，所以先符合弦的定義；它又通過圓心，進一步成為直徑。直徑是特殊的弦，不能把包含關係反向解讀。"
+          },
+          {
+            "exampleId": "s005-L2",
+            "prompt": "同圓中 AB=CD，∠AOB=70°。",
+            "solutionSteps": [
+              "等弦對等圓心角。",
+              "∠COD=70°。"
+            ],
+            "answer": "70°。",
+            "level": "standard",
+            "why": "AB、CD 位於同一圓且等長，所對圓心角必相等；因此角 AOB 為 70° 時，角 COD 也為 70°，不需要再套圓周角的一半關係。等弦性質已足夠，無須先求弧度數。"
+          },
+          {
+            "exampleId": "s005-L3",
+            "prompt": "同圓中劣弧 PQ 為 120°，劣弧 RS 也為120°。",
+            "solutionSteps": [
+              "等弧對等弦。",
+              "PQ=RS。"
+            ],
+            "answer": "兩弦等長。",
+            "level": "advanced",
+            "why": "同一圓中的兩段劣弧度數都為 120°，對應圓心角相等，進而對應弦也等長；同圓條件確保兩段弧使用相同半徑比較。"
+          },
+          {
+            "exampleId": "s005-L4",
+            "prompt": "同圓中 ∠AOB>∠COD。",
+            "solutionSteps": [
+              "較大圓心角對較大劣弧。",
+              "較大劣弧對較長弦。"
+            ],
+            "answer": "AB>CD。",
+            "level": "connection",
+            "why": "同一圓內半徑固定，較大的圓心角截得較大的劣弧，也對應較長的弦；因此角 AOB 大於角 COD 時，弦 AB 必大於弦 CD。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u19-s006-lecture-r1",
+      "expectedContentSha256": "5aa0131d8c7af6e4c3578d952761071e01afcbca6e065025f1df776b18e17bed",
+      "replaceText": {
+        "。，不可按比例目測。": "，不可按比例目測。"
+      },
+      "appendArray": {
+        "method": [
+          {
+            "step": 5,
+            "instruction": "依圓周角頂點所在弧判斷它截得劣弧或優弧，再做兩倍或相等驗算。",
+            "check": "頂點若換到弦的另一側，所對弧與角度是否也跟著改變？"
+          }
+        ],
+        "conceptNarrative": [
+          "若兩個圓周角的頂點位於弦的兩側，它們會分別截得互補的兩段弧而成為互補角；只有頂點位於同一段弧時，才能直接判定同弧圓周角相等。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "s006-L1",
+            "prompt": "∠AOB=124°，P 在另一弧上。求 ∠APB。",
+            "solutionSteps": [
+              "兩角同對弧AB。",
+              "124°÷2=62°。"
+            ],
+            "answer": "62°。",
+            "level": "basic",
+            "why": "角 AOB 是圓心角、角 APB 是圓周角，且兩者同對弧 AB；圓周角恰為圓心角的一半，所以 124° 除以 2 唯一得到 62°。頂點 P 位於另一弧，所對弧選擇也正確。"
+          },
+          {
+            "exampleId": "s006-L2",
+            "prompt": "∠ACB=37°，求同弧上的 ∠ADB。",
+            "solutionSteps": [
+              "兩角同對弧AB。",
+              "同弧圓周角相等。"
+            ],
+            "answer": "37°。",
+            "level": "standard",
+            "why": "角 ACB 與角 ADB 的兩邊端點都是 A、B，且頂點位於同一段弧；它們截得完全相同的另一段弧，因此同弧圓周角相等為 37°。"
+          },
+          {
+            "exampleId": "s006-L3",
+            "prompt": "AB 為直徑，C 在圓上。求 ∠ACB。",
+            "solutionSteps": [
+              "弧AB為180°。",
+              "180°÷2=90°。"
+            ],
+            "answer": "90°。",
+            "level": "advanced",
+            "why": "AB 是直徑，所對弧為 180° 半圓；任何頂點在另一段圓周上的角 ACB 都截得此半圓，所以圓周角為 180° 的一半 90°。這是圓周角定理在直徑情形的直接結果。"
+          },
+          {
+            "exampleId": "s006-L4",
+            "prompt": "∠APB=48°，求 ∠AOB。",
+            "solutionSteps": [
+              "圓心角為圓周角兩倍。",
+              "48°×2=96°。"
+            ],
+            "answer": "96°。",
+            "level": "connection",
+            "why": "同弧圓心角是圓周角的兩倍，故由 48° 反求時要乘 2 得 96°；再以 96° 除以 2 可回到原角，驗證倍率方向正確。兩角頂點不同，但所對弧的端點一致。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

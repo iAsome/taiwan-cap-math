@@ -18,7 +18,7 @@ export const u19_s007 = {
     "learningOutcomes": [
       "能由圓心角決定弧度數。",
       "能把多個圓心角與整圓360°連結。",
-      "能處理優弧與反角。"
+      "能處理優弧與優角。"
     ],
     "prerequisites": [
       {
@@ -29,7 +29,7 @@ export const u19_s007 = {
     "prerequisiteBridge": "先由前一技能「圓周角定理」的結論，連接到本技能「圓心角與弧」所需的新判斷。",
     "glossary": [
       {
-        "term": "反角",
+        "term": "優角",
         "definition": "大於180°且小於360°的角。"
       },
       {
@@ -58,11 +58,11 @@ export const u19_s007 = {
     "conceptNarrative": [
       "圓心角與它所對弧的度數一一對應，因此分割圓心角也等於分割整個圓。",
       "若三條半徑把圓分成三部分，三個圓心角總和必為360°。",
-      "優弧所對的是反角，不能只讀圖中較小的角。"
+      "優弧所對的是優角，不能只讀圖中較小的角。"
     ],
     "formalDefinitions": [
       {
-        "name": "反角",
+        "name": "優角",
         "statement": "大於180°且小於360°的角。"
       },
       {
@@ -168,7 +168,7 @@ export const u19_s007 = {
       {
         "mistake": "所有弧都配小於180°角",
         "why": "忽略優弧",
-        "correction": "優弧對反角"
+        "correction": "優弧對優角"
       },
       {
         "mistake": "中心角和寫180°",
@@ -195,7 +195,7 @@ export const u19_s007 = {
     "summary": [
       "圓心角與所對弧同度數。",
       "中心角分割整圓時總和360°。",
-      "優弧對應反角。"
+      "優弧對應優角。"
     ],
     "connections": {
       "previous": "承接「圓周角定理」。",
@@ -204,8 +204,8 @@ export const u19_s007 = {
     "figureReferences": [
       {
         "figureId": "u19-s007-fig001",
-        "purpose": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。",
-        "altText": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。，不可按比例目測。"
+        "purpose": "四條半徑把圓分成不同大小扇區，其中一個優角以外側箭頭標示。",
+        "altText": "四條半徑把圓分成不同大小扇區，其中一個優角以外側箭頭標示。，不可按比例目測。"
       }
     ],
     "practiceLinks": {
@@ -240,7 +240,7 @@ export const u19_s007 = {
     },
     "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-    "contentSha256": "89fc8b1735a1f13cf4f89753cc192a9c8767cf28f61147de1167dbc419120ada"
+    "contentSha256": "4f7731e61b9cc755628c54578007fcdd5e594599ba68b9c5d2f072a0d4b2dfdc"
   },
   "questions": [
     {
@@ -353,7 +353,7 @@ export const u19_s007 = {
         {
           "choice": "282°",
           "truth": false,
-          "reason": "282°是反角。"
+          "reason": "282°是優角。"
         },
         {
           "choice": "78°",
@@ -361,7 +361,7 @@ export const u19_s007 = {
           "reason": "依題目條件重新計算：較小圓心角與劣弧CD同度數，為78°。"
         }
       ],
-      "misconceptionTarget": "把劣弧配到反角。",
+      "misconceptionTarget": "把劣弧配到優角。",
       "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
       "estimatedTimeSec": 55,
       "unitCheck": "u19-s007-v002 已核對所求量「求較小∠COD。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
@@ -375,7 +375,7 @@ export const u19_s007 = {
       "noTemplateDeclaration": true,
       "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "0cd0a4b13393ff2f72c0f9200a7d870472b80916d02338b2c2616873b9824242"
+      "contentSha256": "45d4246111a6d28dc8df8f9af61c2e541cddf52523db615d4052c01f35a971b4"
     },
     {
       "questionId": "u19-s007-v003",
@@ -389,10 +389,10 @@ export const u19_s007 = {
       "visualMode": "text-only",
       "figureId": null,
       "drawingSpecId": null,
-      "prompt": "兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的反角為何？",
-      "text": "兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的反角為何？",
-      "givenConditions": "較小圓心角與同端點反角合成 360°。",
-      "target": "求同端點的反角。",
+      "prompt": "兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的優角為何？",
+      "text": "兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的優角為何？",
+      "givenConditions": "較小圓心角與同端點優角合成 360°。",
+      "target": "求同端點的優角。",
       "choices": [
         "110°",
         "290°",
@@ -400,10 +400,10 @@ export const u19_s007 = {
         "70°"
       ],
       "answerIndex": 1,
-      "independentSolution": "不看儲存答案，直接用一周角：反角=360°−70°=290°。",
-      "explanation": "同兩條半徑形成的較小角和反角合計 360°，所以反角是 290°。",
+      "independentSolution": "不看儲存答案，直接用一周角：優角=360°−70°=290°。",
+      "explanation": "同兩條半徑形成的較小角和優角合計 360°，所以優角是 290°。",
       "steps": [
-        "辨認題目要的是大於 180° 的反角。",
+        "辨認題目要的是大於 180° 的優角。",
         "計算 360−70=290。"
       ],
       "optionAnalysis": [
@@ -415,7 +415,7 @@ export const u19_s007 = {
         {
           "choice": "290°",
           "truth": true,
-          "reason": "360°−70°=290°，且結果大於 180°，符合反角。"
+          "reason": "360°−70°=290°，且結果大於 180°，符合優角。"
         },
         {
           "choice": "145°",
@@ -425,24 +425,24 @@ export const u19_s007 = {
         {
           "choice": "70°",
           "truth": false,
-          "reason": "只是原來的較小圓心角，不是另一方向的反角。"
+          "reason": "只是原來的較小圓心角，不是另一方向的優角。"
         }
       ],
-      "misconceptionTarget": "把反角與補角或圓周角混淆。",
+      "misconceptionTarget": "把優角與補角或圓周角混淆。",
       "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
       "estimatedTimeSec": 50,
-      "unitCheck": "四個選項皆為角度；反角 290° 位於 180° 到 360° 之間。",
+      "unitCheck": "四個選項皆為角度；優角 290° 位於 180° 到 360° 之間。",
       "roundingCheck": "無近似或四捨五入；已確認不會因四捨五入產生第二答案。",
-      "ambiguityAudit": "題幹明確指定較小角為 70°，並要求沿另一方向形成的反角，所以不是求優弧或圓周角。",
-      "boundaryAudit": "只使用反角和一周角的國中基礎概念，且未使用高中弧度制、圓冪或解析幾何方法。",
-      "difficultyReason": "basic：辨認反角後，以 360° 減去較小圓心角。",
+      "ambiguityAudit": "題幹明確指定較小角為 70°，並要求沿另一方向形成的優角，所以不是求優弧或圓周角。",
+      "boundaryAudit": "只使用優角和一周角的國中基礎概念，且未使用高中弧度制、圓冪或解析幾何方法。",
+      "difficultyReason": "basic：辨認優角後，以 360° 減去較小圓心角。",
       "literacyContextNecessity": null,
-      "authoringIntent": "區分圓心反角、補角和圓周角，避免與弧的優劣互補題只換數字。",
+      "authoringIntent": "區分圓心優角、補角和圓周角，避免與弧的優劣互補題只換數字。",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
       "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "297af65e8d6a4b337b61aca1eb91cdb1bba33b1bd7823005beae34804ea32190"
+      "contentSha256": "ade0ea0d933bdc5fc01fb49d49b5de721975e53462a6bf4fc411aea864556085"
     },
     {
       "questionId": "u19-s007-v004",
@@ -658,8 +658,8 @@ export const u19_s007 = {
       "visualMode": "figure-supported",
       "figureId": "u19-s007-fig001",
       "drawingSpecId": "u19-s007-fig001",
-      "prompt": "圓 O 中，較小 ∠AOB=(2x+10)°，同端點反角為(4x+20)°。求較小 ∠AOB。",
-      "text": "圓 O 中，較小 ∠AOB=(2x+10)°，同端點反角為(4x+20)°。求較小 ∠AOB。",
+      "prompt": "圓 O 中，較小 ∠AOB=(2x+10)°，同端點優角為(4x+20)°。求較小 ∠AOB。",
+      "text": "圓 O 中，較小 ∠AOB=(2x+10)°，同端點優角為(4x+20)°。求較小 ∠AOB。",
       "givenConditions": "兩角同端點且合為整圓。",
       "target": "求較小角。",
       "choices": [
@@ -669,18 +669,18 @@ export const u19_s007 = {
         "240°"
       ],
       "answerIndex": 0,
-      "independentSolution": "不採用儲存答案，直接依「兩角同端點且合為整圓。」重算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。",
-      "explanation": "較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。 因此唯一正確選項是「120°」。",
+      "independentSolution": "不採用儲存答案，直接依「兩角同端點且合為整圓。」重算：較小圓心角與優角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。",
+      "explanation": "較小圓心角與優角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。 因此唯一正確選項是「120°」。",
       "steps": [
         "列6x+30=360。",
         "解x=55。",
-        "代回較小角120°，反角240°。"
+        "代回較小角120°，優角240°。"
       ],
       "optionAnalysis": [
         {
           "choice": "120°",
           "truth": true,
-          "reason": "依題目條件重新計算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。"
+          "reason": "依題目條件重新計算：較小圓心角與優角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。"
         },
         {
           "choice": "55°",
@@ -695,24 +695,24 @@ export const u19_s007 = {
         {
           "choice": "240°",
           "truth": false,
-          "reason": "240°是反角。"
+          "reason": "240°是優角。"
         }
       ],
-      "misconceptionTarget": "只解出參數便當成角度，或沒有區分較小角與反角。",
+      "misconceptionTarget": "只解出參數便當成角度，或沒有區分較小角與優角。",
       "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
       "estimatedTimeSec": 120,
       "unitCheck": "u19-s007-v007 已核對所求量「求較小角。」的角度、長度、面積或無單位比例，四個選項量綱一致。",
       "roundingCheck": "答案使用整數、分數、根式或保留π的精確值，無四捨五入造成第二答案。",
-      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由圓心角與反角的總和求指定角。」只有一個數學目標。",
+      "ambiguityAudit": "題幹已指定關鍵點位置、弧段方向、中心角、半徑或施工範圍；依「由圓心角與優角的總和求指定角。」只有一個數學目標。",
       "boundaryAudit": "只使用國中會考圓、比例、一次或基礎二次方程、畢氏定理與單位換算；已檢查幾何長度為正及角度範圍。題號：u19-s007-v007。",
-      "difficultyReason": "advanced：由圓心角與反角的總和求指定角。 解題需完成「列6x+30=360。；解x=55。；代回較小角120°，反角240°。」。",
+      "difficultyReason": "advanced：由圓心角與優角的總和求指定角。 解題需完成「列6x+30=360。；解x=55。；代回較小角120°，優角240°。」。",
       "literacyContextNecessity": null,
-      "authoringIntent": "由圓心角與反角的總和求指定角。",
+      "authoringIntent": "由圓心角與優角的總和求指定角。",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
       "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "2c00c4abd6923929ffc23af581c8bae363a392db328f8bf0d56fdd479e699533"
+      "contentSha256": "0907122da9f708e007dda1786fe5ffcf03ce3399528585ec9d7358d28e3c43b8"
     },
     {
       "questionId": "u19-s007-v008",
@@ -1065,21 +1065,21 @@ export const u19_s007 = {
       "visualMode": "figure-supported",
       "figureId": "u19-s007-fig001",
       "drawingSpecId": "u19-s007-fig001",
-      "prompt": "三條半徑把圓分成三弧，度數比為 2:3:7。求三弧度數及最大弧所對反角。",
+      "prompt": "三條半徑把圓分成三弧，度數比為 2:3:7。求三弧度數及最大弧所對優角。",
       "requiredWork": [
         "求總份數。",
         "分配360°。",
-        "指出最大弧的反角。"
+        "指出最大弧的優角。"
       ],
       "standardSolution": [
         "總份數2+3+7=12，每份30°。",
         "三弧依序60°、90°、210°。",
-        "最大弧所對圓心反角為210°。"
+        "最大弧所對圓心優角為210°。"
       ],
       "fullCreditSolution": [
         "總份數2+3+7=12，每份30°。",
         "三弧依序60°、90°、210°。",
-        "最大弧所對圓心反角為210°。"
+        "最大弧所對圓心優角為210°。"
       ],
       "alternativeSolutions": [
         "可先求最大弧360×7/12=210°，再求其餘。"
@@ -1087,16 +1087,16 @@ export const u19_s007 = {
       "reasoningSteps": [
         "總份數2+3+7=12，每份30°。",
         "三弧依序60°、90°、210°。",
-        "最大弧所對圓心反角為210°。"
+        "最大弧所對圓心優角為210°。"
       ],
       "rubric": [
         {
           "score": 3,
-          "criteria": "60°、90°、210°與反角判定完整。"
+          "criteria": "60°、90°、210°與優角判定完整。"
         },
         {
           "score": 2,
-          "criteria": "三弧正確但未說反角，或一個算術錯。"
+          "criteria": "三弧正確但未說優角，或一個算術錯。"
         },
         {
           "score": 1,
@@ -1108,7 +1108,7 @@ export const u19_s007 = {
         }
       ],
       "partialCreditRules": [
-        "比例分配與反角各自給分。"
+        "比例分配與優角各自給分。"
       ],
       "followThroughPolicy": "若每份算錯但三弧仍按2:3:7且總和一致，可給1分。",
       "unitNotationRules": "弧與角皆用°。",
@@ -1118,15 +1118,15 @@ export const u19_s007 = {
         "最大弧仍用較小角150°。"
       ],
       "independentReview": {
-        "derivedResult": "三弧60°、90°、210°；最大弧反角210°。",
+        "derivedResult": "三弧60°、90°、210°；最大弧優角210°。",
         "ambiguity": "比例完整分割整圓，唯一。",
         "decision": "pass",
-        "reviewNote": "u19-s007-cr001 由題目條件另行推導得到「三弧60°、90°、210°；最大弧反角210°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
+        "reviewNote": "u19-s007-cr001 由題目條件另行推導得到「三弧60°、90°、210°；最大弧優角210°。」；評分規準逐步對應本題所需的定理、列式、運算與單位。",
         "reviewedAt": "2026-07-12"
       },
       "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "87b061cbbcd946aa7012826df4552f4890760485e3c0ec20a149f21c70226fcb"
+      "contentSha256": "2acef55032ad909773c2ea41e3f8863c0c0157ef92efc63523539ff15474a1f5"
     },
     {
       "questionId": "u19-s007-cr002",
@@ -1240,7 +1240,7 @@ export const u19_s007 = {
     },
     {
       "questionId": "u19-s007-v002",
-      "contentSha256": "0cd0a4b13393ff2f72c0f9200a7d870472b80916d02338b2c2616873b9824242",
+      "contentSha256": "45d4246111a6d28dc8df8f9af61c2e541cddf52523db615d4052c01f35a971b4",
       "reviewVersion": "human-review-r1.0",
       "independentSolution": "不採用儲存答案，直接依「O為圓心；劣弧CD=78°。」重算：較小圓心角與劣弧CD同度數，為78°。",
       "derivedAnswer": "78°",
@@ -1254,7 +1254,7 @@ export const u19_s007 = {
       ],
       "uniqueCorrectAnswer": true,
       "ambiguityChecks": {
-        "secondCorrectAnswer": "逐項核對四選項後，只有「78°」符合；三個干擾項分別因「錯取一半。；錯取補角。；282°是反角。」而排除。",
+        "secondCorrectAnswer": "逐項核對四選項後，只有「78°」符合；三個干擾項分別因「錯取一半。；錯取補角。；282°是優角。」而排除。",
         "undefinedSymbol": "u19-s007-v002 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
         "unitConflict": "題目所求為「求較小∠COD。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
         "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
@@ -1272,9 +1272,9 @@ export const u19_s007 = {
     },
     {
       "questionId": "u19-s007-v003",
-      "contentSha256": "297af65e8d6a4b337b61aca1eb91cdb1bba33b1bd7823005beae34804ea32190",
+      "contentSha256": "ade0ea0d933bdc5fc01fb49d49b5de721975e53462a6bf4fc411aea864556085",
       "reviewVersion": "central-human-review-r1.1",
-      "independentSolution": "不看儲存答案，直接用一周角：反角=360°−70°=290°。",
+      "independentSolution": "不看儲存答案，直接用一周角：優角=360°−70°=290°。",
       "derivedAnswer": "290°",
       "storedAnswer": "290°",
       "answerMatch": true,
@@ -1286,19 +1286,19 @@ export const u19_s007 = {
       ],
       "uniqueCorrectAnswer": true,
       "ambiguityChecks": {
-        "secondCorrectAnswer": "逐項重算後只有「290°」符合。其餘三項分別因「110° 是 180°−70°，錯把一周角改成平角。；把 290° 又除以 2，混入圓周角關係。；只是原來的較小圓心角，不是另一方向的反角。」而排除。",
+        "secondCorrectAnswer": "逐項重算後只有「290°」符合。其餘三項分別因「110° 是 180°−70°，錯把一周角改成平角。；把 290° 又除以 2，混入圓周角關係。；只是原來的較小圓心角，不是另一方向的優角。」而排除。",
         "undefinedSymbol": "u19-s007-v003 所用圓心、圓周、弧、角、直徑、半徑或 π 均已在 U19 先備講義中定義，沒有未說明符號。",
-        "unitConflict": "四個選項皆為角度；反角 290° 位於 180° 到 360° 之間。",
+        "unitConflict": "四個選項皆為角度；優角 290° 位於 180° 到 360° 之間。",
         "roundingConflict": "無近似或四捨五入；已確認不會因四捨五入產生第二答案。",
-        "domainBoundary": "只使用反角和一周角的國中基礎概念，且未使用高中弧度制、圓冪或解析幾何方法。",
-        "alternateReading": "題幹明確指定較小角為 70°，並要求沿另一方向形成的反角，所以不是求優弧或圓周角。"
+        "domainBoundary": "只使用優角和一周角的國中基礎概念，且未使用高中弧度制、圓冪或解析幾何方法。",
+        "alternateReading": "題幹明確指定較小角為 70°，並要求沿另一方向形成的優角，所以不是求優弧或圓周角。"
       },
-      "difficultyReason": "basic：辨認反角後，以 360° 減去較小圓心角。",
+      "difficultyReason": "basic：辨認優角後，以 360° 減去較小圓心角。",
       "literacyContextNecessity": null,
       "prerequisiteCheck": "需先能使用「圓周角定理」；本題未使用後續技能。",
-      "languageCheck": "題幹「兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的反角為何？」採臺灣繁體中文，條件、所求量與比較基準均完整。",
+      "languageCheck": "題幹「兩條半徑 OA、OB 形成的較小圓心角是 70°。沿另一方向由 OA 轉到 OB 所形成的優角為何？」採臺灣繁體中文，條件、所求量與比較基準均完整。",
       "reviewerDecision": "pass",
-      "reviewerNote": "u19-s007-v003 中央人工重算：不看儲存答案，直接用一周角：反角=360°−70°=290°。 正確選項為「290°」，四項真值與每個干擾項錯因均已重新核對。",
+      "reviewerNote": "u19-s007-v003 中央人工重算：不看儲存答案，直接用一周角：優角=360°−70°=290°。 正確選項為「290°」，四項真值與每個干擾項錯因均已重新核對。",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "roundingConflict": null
@@ -1401,9 +1401,9 @@ export const u19_s007 = {
     },
     {
       "questionId": "u19-s007-v007",
-      "contentSha256": "2c00c4abd6923929ffc23af581c8bae363a392db328f8bf0d56fdd479e699533",
+      "contentSha256": "0907122da9f708e007dda1786fe5ffcf03ce3399528585ec9d7358d28e3c43b8",
       "reviewVersion": "human-review-r1.0",
-      "independentSolution": "不採用儲存答案，直接依「兩角同端點且合為整圓。」重算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。",
+      "independentSolution": "不採用儲存答案，直接依「兩角同端點且合為整圓。」重算：較小圓心角與優角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。",
       "derivedAnswer": "120°",
       "storedAnswer": "120°",
       "answerMatch": true,
@@ -1415,19 +1415,19 @@ export const u19_s007 = {
       ],
       "uniqueCorrectAnswer": true,
       "ambiguityChecks": {
-        "secondCorrectAnswer": "逐項核對四選項後，只有「120°」符合；三個干擾項分別因「55是x，不是角度。；代數回代少10°。；240°是反角。」而排除。",
+        "secondCorrectAnswer": "逐項核對四選項後，只有「120°」符合；三個干擾項分別因「55是x，不是角度。；代數回代少10°。；240°是優角。」而排除。",
         "undefinedSymbol": "u19-s007-v007 使用的圓心、弧、角、半徑、直徑、切線或π均已在「圓心角與弧」講義定義。",
         "unitConflict": "題目所求為「求較小角。」，選項單位與題幹資料已逐項核對，沒有長度與面積混算。",
         "roundingConflict": "以精確值重算，π、根式或分數均保留，無近似臨界問題。",
-        "domainBoundary": "本題僅測「由圓心角與反角的總和求指定角。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
+        "domainBoundary": "本題僅測「由圓心角與優角的總和求指定角。」，未使用高中弧度制、解析幾何切線方程或超出CAP的圓冪定理。",
         "alternateReading": "依給定條件「兩角同端點且合為整圓。」重讀，所求「求較小角。」不會因優劣弧、內外邊界或直徑半徑混淆產生另一答案。"
       },
-      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是由圓心角與反角的總和求指定角。，而非只依題序標示。",
+      "difficultyReason": "將題目完整重算後確認難度為advanced，核心任務是由圓心角與優角的總和求指定角。，而非只依題序標示。",
       "literacyContextNecessity": null,
       "prerequisiteCheck": "只依賴inscribed-angle-theorem，未引用後續技能。",
-      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓 O 中，較小 ∠AOB=(2x+10)°，同端點反角為(4x+20)°。求較小 ∠AOB。」未省略比較基準或所求量。",
+      "languageCheck": "繁體中文用語採臺灣教材慣例；題幹「圓 O 中，較小 ∠AOB=(2x+10)°，同端點優角為(4x+20)°。求較小 ∠AOB。」未省略比較基準或所求量。",
       "reviewerDecision": "pass",
-      "reviewerNote": "u19-s007-v007 人工重算：較小圓心角與反角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。 正確選項為「120°」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
+      "reviewerNote": "u19-s007-v007 人工重算：較小圓心角與優角合為360°：(2x+10)+(4x+20)=360，6x+30=360，x=55。較小角=2×55+10=120°。 正確選項為「120°」。四項真值依序為真,假,假,假；干擾項錯因均已逐一對應。",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     },
@@ -1607,7 +1607,7 @@ export const u19_s007 = {
       "drawingSpec": {
         "purpose": "支援「圓心角與弧」中需要辨認點、線、弧、角或邊界的題目。",
         "coordinateSystem": "SVG x向右、y向下；所有座標以360×240畫布為準。",
-        "geometry": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。",
+        "geometry": "四條半徑把圓分成不同大小扇區，其中一個優角以外側箭頭標示。",
         "visibleLines": "所有作答所需實線均以2px以上深色描邊；強調弧以5px描邊。",
         "hiddenLines": "只有內部共邊或量測輔助線使用虛線；未指定者不得自行添加。",
         "labels": "標籤位置已在SVG以固定座標給定，避免遮住交點、角弧或刻痕。",
@@ -1617,16 +1617,16 @@ export const u19_s007 = {
         "mobileReadability": "360×240檢視下文字至少16px，關鍵線至少2px，無微小數值標籤。",
         "answerLeakage": "圖中不標示任何題目要求計算的最終數值或正確選項。"
       },
-      "altText": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。 圖形僅協助辨認結構，不可依比例目測答案。",
+      "altText": "四條半徑把圓分成不同大小扇區，其中一個優角以外側箭頭標示。 圖形僅協助辨認結構，不可依比例目測答案。",
       "svgTitle": "整圓中心角分割圖",
-      "svgDescription": "四條半徑把圓分成不同大小扇區，其中一個反角以外側箭頭標示。",
+      "svgDescription": "四條半徑把圓分成不同大小扇區，其中一個優角以外側箭頭標示。",
       "svgAssertions": [
         "role=\"img\"",
         "<title",
         "<desc",
         "viewBox=\"0 0 360 240\"",
         "class=\"arrow\"",
-        ">反角</text>",
+        ">優角</text>",
         ">θ</text>"
       ],
       "figureReview": {
@@ -1639,7 +1639,7 @@ export const u19_s007 = {
         "reviewedAt": "2026-07-12"
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "ed124fd3594f01396c266ad3ca7a653da2965409e442d9a5e192d49cdab9e247"
+      "contentSha256": "4ebabe890141b42407bb242b72c7e333d74cd0bb2f5b11940a3a63e2776df7cf"
     }
   ]
 };

@@ -57,10 +57,9 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "數線是比較大小最可靠的模型：越右越大。正數在 0 右側，負數在 0 左側，所以正數大於 0，0 大於負數。",
-    "兩個負數不能只比去掉負號後的數字。-2 在 -9 右邊，因此 -2>-9。",
-    "排列多個數時可先分成正數、0、負數，再處理同號數，能降低不等號寫反的機會。",
-    "不等號開口朝較大的數；讀回完整句子是最後檢查。"
+    "整數大小可以放回數線理解：數線由左向右遞增，因此右邊的數永遠比左邊大。零是正數與負數的分界，任何正數都大於零，任何負數都小於零。",
+    "比較兩個負數時，不能直接沿用正整數的表面數字大小。負數離零越遠，在數線上越靠左，數值反而越小；例如負十比負四小。",
+    "處理多個整數或生活情境時，先把溫度、高度、餘額等量轉成帶正負號的數，再依負數、零、正數分區排序，可避免把大小與絕對值混為一談。"
   ],
   "formalDefinitions": [
     {
@@ -97,102 +96,80 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先看正、零、負。",
-      "check": "是否可以直接用正數>0>負數？"
+      "instruction": "先辨認每個數的正負號，並以零把負數、零、正數分成三區。",
+      "check": "確認所有負數都排在零左側，所有正數都排在零右側。"
     },
     {
       "step": 2,
-      "instruction": "同為正數照一般大小比較。",
-      "check": "位數和數值是否看清楚？"
+      "instruction": "若比較異號數，直接利用正數大於零、零大於負數判斷。",
+      "check": "不要因負數的表面數字較大，就誤判它大於正數或零。"
     },
     {
       "step": 3,
-      "instruction": "同為負數時想像數線位置。",
-      "check": "離 0 較近的是否較大？"
+      "instruction": "若兩數皆為負數，比較它們到零的距離，距離較遠者數值較小。",
+      "check": "用數線位置核對：絕對值較大的負數應在更左邊。"
     },
     {
       "step": 4,
-      "instruction": "排列後寫不等號。",
-      "check": "由小到大還是由大到小？"
+      "instruction": "多數排序先排負數，再接零與正數，並依題目要求選擇由小到大或由大到小。",
+      "check": "完成後逐對檢查相鄰兩數的不等號方向是否一致。"
     },
     {
       "step": 5,
-      "instruction": "逐段讀回句子。",
-      "check": "每個相鄰關係都成立嗎？"
+      "instruction": "情境題把地點、帳戶或測量名稱換成帶號數完成比較，再把結果翻回原名稱。",
+      "check": "答案要回應題目問的最高、最低、最大或最小，並保留正確單位。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "比較 -11 與 -4。",
-      "solutionSteps": [
-        "兩數都為負。",
-        "-4 距離 0 較近，位置較右。",
-        "所以 -11<-4。"
-      ],
-      "answer": "-11<-4。"
+      "exampleId": "u01-s004-example-a",
+      "prompt": "比較負十四與負六的大小。",
+      "answer": "負十四小於負六。",
+      "why": "兩數都是負數，負十四到零的距離十四比負六的距離六更大，所以負十四在數線上更靠左。數線左邊的數較小，因此負十四小於負六。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "將 3、-5、0、-2 由小到大排列。",
-      "solutionSteps": [
-        "負數最小，0 次之，正數最大。",
-        "負數中 -5 在 -2 左邊。",
-        "依序為 -5、-2、0、3。"
-      ],
-      "answer": "-5<-2<0<3。"
+      "exampleId": "u01-s004-example-b",
+      "prompt": "將五、負八、零、負三由小到大排列。",
+      "answer": "負八小於負三小於零小於五。",
+      "why": "先把兩個負數放在零之前，正五放在零之後。負八比負三離零更遠，因此負八較小；依數線由左到右接上零與五，就得到完整順序。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "哪一個較高：海拔 -20 公尺或 -7 公尺？",
-      "solutionSteps": [
-        "兩者都低於海平面。",
-        "-7 在數線較右。",
-        "所以 -7 公尺較高。"
-      ],
-      "answer": "-7 公尺較高。"
+      "exampleId": "u01-s004-example-c",
+      "prompt": "冷凍庫甲為負十二度、乙為負四度，哪一個溫度較高？",
+      "answer": "乙的溫度較高。",
+      "why": "溫度較高就是帶號數較大。負四比負十二更接近零，在數線上位於負十二右側，所以負四度較高；不能因十二的表面數字較大便選甲。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "判斷 -100>-99 是否正確。",
-      "solutionSteps": [
-        "-100 在 -99 左邊。",
-        "左邊的數較小。",
-        "原式應為 -100<-99。"
-      ],
-      "answer": "錯誤。"
+      "exampleId": "u01-s004-ex04-r4",
+      "prompt": "甲帳戶餘額為 -250 元，乙帳戶餘額為 -80 元，哪一個餘額較大？",
+      "answer": "乙帳戶的 -80 元較大。",
+      "why": "兩個餘額都是負數，先比較到零的距離；八十比二百五十小，所以負八十在數線上較靠右，原數較大，表示乙帳戶欠款較少。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "認為 -8>-3，因為 8>3。",
-      "why": "忽略負號使數線順序反轉。",
-      "correction": "-8 在 -3 左方，所以 -8<-3。"
+      "mistake": "去掉負號後直接比較表面數字，認為負十二大於負四。",
+      "correction": "兩個負數要看數線位置；離零越遠越靠左，原數反而越小。"
     },
     {
-      "mistake": "把 0 當最小整數。",
-      "why": "忘記負整數小於 0。",
-      "correction": "任何負整數都小於 0。"
+      "mistake": "把原數大小與絕對值大小混在一起。",
+      "correction": "原數比較看左右位置，絕對值只表示到零距離，兩者問題不同。"
     },
     {
-      "mistake": "不等號開口朝較小數。",
-      "why": "只記形狀未讀句子。",
-      "correction": "開口朝較大數，尖端朝較小數。"
+      "mistake": "排序時未確認題目要求由小到大或由大到小。",
+      "correction": "先在草稿標示方向，排完後逐對讀出不等號以核對順序。"
     },
     {
-      "mistake": "由小到大排列成遞減。",
-      "why": "忽略題目方向。",
-      "correction": "先在答案旁標「小→大」。"
+      "mistake": "把零當成正數，忽略它是正負數的分界。",
+      "correction": "零本身既非正數也非負數，但大於所有負數且小於所有正數。"
     },
     {
-      "mistake": "以絕對值較大就判原數較大。",
-      "why": "把距離當位置。",
-      "correction": "負數的絕對值越大，原數越小。"
+      "mistake": "情境題只比較沒有正負號的量值，漏看低於零或欠款的方向。",
+      "correction": "先把每筆資料完整寫成帶號數，再依整數規則比較並換回情境名稱。"
     },
     {
-      "mistake": "不同基準的紀錄直接比較。",
-      "why": "沒有統一參考點。",
-      "correction": "先換成同一實際量或同一基準。"
+      "mistake": "看到金額的絕對值 250 較大，就判定 -250 元的餘額較大。",
+      "correction": "餘額大小比較的是帶號數，不是欠款量；負數離零越遠，在數線上反而越小。"
     }
   ],
   "selfCheck": [
@@ -247,7 +224,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "9f8ceb5a84520009e6d42eae4608871974498e8205db9e5ece5d5514bfa88cdb",
+  "contentSha256": "927b5394d09a881d97695bee606cc52df98738cf60fb5c39027aebe2c6ac09bd",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -271,11 +248,11 @@ export const QUESTIONS = [
       "0<-2"
     ],
     "answerIndex": 0,
-    "explanation": "負數小於 0，正數大於 0，所以 -2<3。",
+    "explanation": "在數線上，負數位於零的左側，正數位於零的右側，所以任何負數都小於任何正數。由於負二是負數而三是正數，可判定負二小於三，其餘關係都與數線位置矛盾。",
     "steps": [
-      "辨認 -2 是負數。",
-      "3 是正數。",
-      "負數小於正數。"
+      "先辨認負二在零的左側，而三在零的右側。",
+      "套用數線上右邊的數大於左邊的數，得到三大於負二。",
+      "把關係改寫為負二小於三，並核對這正是所選選項。"
     ],
     "optionAnalysis": [
       {
@@ -299,7 +276,7 @@ export const QUESTIONS = [
         "reason": "0大於-2。"
       }
     ],
-    "commonMistake": "只看數字2與3而忽略正負位置。",
+    "commonMistake": "只看到二小於三便忽略負號，未用零分隔正數與負數來判斷。",
     "concept": "正數>0>負數。",
     "tags": [
       "數與量",
@@ -314,7 +291,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8d68a26d0f6e93c399d444d1997ac011f65b54a35f3dd99306b853cc2de1f2ed",
+    "contentSha256": "d21a1c6a85aa83f3b3bd81f8844fec24f25b0d31ec49c6f85c8f93372a610e49",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -336,11 +313,11 @@ export const QUESTIONS = [
       "-5"
     ],
     "answerIndex": 1,
-    "explanation": "負數中離 0 最近者最大。-3 距離 0 最近，因此最大。",
+    "explanation": "四個數都是負數，越靠近零的數越大。它們到零的距離依序為八、三、十一、五，其中負三距離零最近，因此負三最大，而不是絕對值最大的負十一。",
     "steps": [
-      "四數都為負。",
-      "比較到0的距離。",
-      "3最小，所以-3最大。"
+      "確認四個候選數全都小於零，不能用正數的表面數字直接比較。",
+      "比較它們與零的距離，三是八、三、十一、五之中的最小值。",
+      "負數距離零越近越大，所以選擇負三。"
     ],
     "optionAnalysis": [
       {
@@ -364,7 +341,7 @@ export const QUESTIONS = [
         "reason": "小於-3。"
       }
     ],
-    "commonMistake": "看到11最大就選-11。",
+    "commonMistake": "把負號暫時去掉後直接選十一，錯把絕對值最大當成原數最大。",
     "concept": "兩負數中絕對值較小者較大。",
     "tags": [
       "數與量",
@@ -379,7 +356,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "21d0ad56472de033335eb71dd5b03acfb586bfb993559595a89b5dc0f66087e9",
+    "contentSha256": "39da7164e666527be69157b9c4e556a10faeff5dfc34273f567d0b2868b89481",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -401,11 +378,11 @@ export const QUESTIONS = [
       "-7<0<-1"
     ],
     "answerIndex": 2,
-    "explanation": "負數小於 0；兩負數中 -7 在 -1 左側，所以 -7<-1<0。",
+    "explanation": "由小到大就是依數線由左向右排列。負七比負一離零更遠，故負七在負一左邊；兩個負數又都在零左邊，所以完整順序為負七、負一、零。",
     "steps": [
-      "先把0放最大。",
-      "比較-7與-1。",
-      "由小到大寫-7、-1、0。"
+      "先把零視為正負數的分界，兩個負數一定排在零之前。",
+      "在負七與負一之間比較，負七距離零較遠，因此較小。",
+      "依序寫成負七小於負一小於零，並檢查方向是由小到大。"
     ],
     "optionAnalysis": [
       {
@@ -429,7 +406,7 @@ export const QUESTIONS = [
         "reason": "0與-1順序錯。"
       }
     ],
-    "commonMistake": "把負號後數字較大者當原數較大。",
+    "commonMistake": "把七大於一直接搬到負數比較，因而誤認負七會大於負一。",
     "concept": "利用數線由左到右排列。",
     "tags": [
       "數與量",
@@ -444,7 +421,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ca42bea40bccaed80490771f386dc60d509dd6e961f58fa4d9d5a7ebc2c30115",
+    "contentSha256": "ea9d5c286578b70c851c4cd89386323d371f6176c185a83aca57d42a9a79e246",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -466,11 +443,11 @@ export const QUESTIONS = [
       "-6<-2<0<4"
     ],
     "answerIndex": 3,
-    "explanation": "負數先，且 -6<-2；接著 0，最後正數 4。",
+    "explanation": "先依數線分成負數、零、正數三區，負數都在零之前，正四在零之後。兩個負數中，負六比負二更靠左，因此由小到大是負六、負二、零、四。",
     "steps": [
-      "負數小於0，正數大於0。",
-      "負數中-6較小。",
-      "排列-6<-2<0<4。"
+      "把負六與負二放在零左側，正四放在零右側。",
+      "比較兩個負數，負六離零較遠，所以負六小於負二。",
+      "接上零與正四，得到負六小於負二小於零小於四。"
     ],
     "optionAnalysis": [
       {
@@ -494,7 +471,7 @@ export const QUESTIONS = [
         "reason": "數線由左到右為-6,-2,0,4。"
       }
     ],
-    "commonMistake": "把 0 放在負數之前。",
+    "commonMistake": "只按六、二、零、四的表面大小排序，沒有先處理負號與零的位置。",
     "concept": "多數排序先分正、零、負。",
     "tags": [
       "數與量",
@@ -509,7 +486,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "49dc04d07d229594af911fb85f6ab93231758c8507ae75073be06518782cea5c",
+    "contentSha256": "17b5a47973cc57b9fdc4054aecd0ff9c8a126da674f070cc95cc217601fbd1ed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -531,11 +508,11 @@ export const QUESTIONS = [
       "無法比較"
     ],
     "answerIndex": 0,
-    "explanation": "A 在 -5，B 在 -1；B 位於 A 右方，所以 B>A。",
+    "explanation": "圖上點 A 代表負五，點 B 代表負一。數線由左向右數值遞增，負一位在負五右側，所以 B 所代表的數大於 A 所代表的數，應寫成 B 大於 A。",
     "steps": [
-      "讀出A=-5。",
-      "讀出B=-1。",
-      "數線右方較大。"
+      "由圖讀出 A 的位置是負五，B 的位置是負一。",
+      "觀察 B 在 A 的右方，套用數線右邊的數較大。",
+      "把位置關係轉成代數關係，得到 B 大於 A。"
     ],
     "optionAnalysis": [
       {
@@ -559,7 +536,7 @@ export const QUESTIONS = [
         "reason": "圖中刻度充分。"
       }
     ],
-    "commonMistake": "比較5與1後認為A較大。",
+    "commonMistake": "只比較標記名稱或到零的格數，沒有先讀出兩點在數線上的實際位置。",
     "concept": "數線越右的數越大。",
     "tags": [
       "數與量",
@@ -574,7 +551,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c946f8f1cf5192252dfa230fc131de34c2b0f8c8b58090d2c5ba05a9e08074c0",
+    "contentSha256": "0348c98702adfb6fbce0edc886e77371e9a94db1e970dd9502b6f1365ee451f5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -596,11 +573,11 @@ export const QUESTIONS = [
       "0<-1"
     ],
     "answerIndex": 1,
-    "explanation": "-12 在 -9 左側，所以 -12<-9。",
+    "explanation": "負十二與負九都是負數；在負數範圍內，距離零越遠的數越小。負十二比負九多向左三個單位，因此負十二小於負九，這個不等式符合數線次序。",
     "steps": [
-      "檢查每個式子的數線位置。",
-      "-12比-9更左。",
-      "第二項正確。"
+      "確認要比較的是負十二與負九，兩者都在零左側。",
+      "比較到零的距離，十二大於九，所以負十二的位置更靠左。",
+      "依左小右大寫出負十二小於負九，選出正確不等式。"
     ],
     "optionAnalysis": [
       {
@@ -624,7 +601,7 @@ export const QUESTIONS = [
         "reason": "0大於-1。"
       }
     ],
-    "commonMistake": "直接比較12與9而寫-12>-9。",
+    "commonMistake": "看到十二大於九就直接寫負十二大於負九，忽略負數的次序相反。",
     "concept": "負數越遠離0越小。",
     "tags": [
       "數與量",
@@ -639,7 +616,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ea82035fa5d5cac28e8430eadbb1dea57a5c2372053aea08d6e8b968c3a5c940",
+    "contentSha256": "45bfa0ba18ad06825eaf6e4e226c1c934c711e8bb1d4f687522d2e60e778ff17",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -661,11 +638,11 @@ export const QUESTIONS = [
       "|a|<b"
     ],
     "answerIndex": 2,
-    "explanation": "任何正數都大於任何負數，所以 b>a 一定成立；絕對值關係未給大小，不能確定。",
+    "explanation": "已知 a 小於零，表示 a 是負數；b 大於零，表示 b 是正數。任何正數都大於任何負數，因此無論兩數離零多遠，b 一定大於 a；兩者絕對值則無法由題目比較。",
     "steps": [
-      "a是負數。",
-      "b是正數。",
-      "正數大於負數。"
+      "由 a 小於零判定 a 位於數線零的左側。",
+      "由 b 大於零判定 b 位於數線零的右側。",
+      "利用右側數大於左側數，確定 b 大於 a 且不需知道實際數值。"
     ],
     "optionAnalysis": [
       {
@@ -689,7 +666,7 @@ export const QUESTIONS = [
         "reason": "例如a=-100,b=1時不成立。"
       }
     ],
-    "commonMistake": "認為 |a|<b 一定成立，忽略負數的絕對值可能很大。",
+    "commonMistake": "自行假設兩數與零的距離，誤把無法確定的絕對值關係當成必然成立。",
     "concept": "只靠符號可確定正數大於負數，但不能確定絕對值。",
     "tags": [
       "數與量",
@@ -704,7 +681,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "07cfbef777029f40f850f065f05480f10c4e82e538198f2b44ca66e60e9e17f9",
+    "contentSha256": "d0e71197a5af0251eb10d4415f636106ea5e6bed97fbda6e00c4dedac15a0a48",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -726,11 +703,11 @@ export const QUESTIONS = [
       "-3"
     ],
     "answerIndex": 3,
-    "explanation": "由大到小為 -2、-3、-4、-5，因此第二大是 -3。",
+    "explanation": "四個數皆為負數，越接近零越大。由大到小排列為負二、負三、負四、負五，因此排在第二位的是負三；題目問第二大，不能改成找絕對值第二大。",
     "steps": [
-      "四數皆負。",
-      "離0越近越大。",
-      "排序後取第二個。"
+      "比較四數到零的距離，分別是五、二、四、三。",
+      "按負數距離零越近越大的規則排成負二、負三、負四、負五。",
+      "從由大到小順序取第二個，得到負三。"
     ],
     "optionAnalysis": [
       {
@@ -754,7 +731,7 @@ export const QUESTIONS = [
         "reason": "-2>-3>-4>-5，第二大-3。"
       }
     ],
-    "commonMistake": "把絕對值第二大4對應的-4當第二大。",
+    "commonMistake": "把絕對值由大到小排列後取第二個，因而把負號下的大小次序弄反。",
     "concept": "負數排序與絕對值順序相反。",
     "tags": [
       "數與量",
@@ -769,7 +746,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c02fc92caa7b16f11a9c599fa3b55c3e608322be9988689941c23e6180a777fe",
+    "contentSha256": "e336e1164febb35c5e57cdd77453c18d6200abb598a36eb7c1daac90d58b53e7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -791,11 +768,11 @@ export const QUESTIONS = [
       "無法比較"
     ],
     "answerIndex": 0,
-    "explanation": "-2026 比 -2025 更遠離 0，位於數線較左，所以較小。",
+    "explanation": "兩數都是負數，而且負二千零二十六比負二千零二十五離零多一個單位，在數線上更靠左。數線左邊的數較小，所以負二千零二十六小於負二千零二十五。",
     "steps": [
-      "兩數都為負。",
-      "2026>2025。",
-      "原負數順序反轉，-2026<-2025。"
+      "確認兩數只有末位相差一，並且都帶負號。",
+      "比較到零的距離，二千零二十六較大，故其原數更靠左。",
+      "依左小右大寫成負二千零二十六小於負二千零二十五。"
     ],
     "optionAnalysis": [
       {
@@ -819,7 +796,7 @@ export const QUESTIONS = [
         "reason": "整數可直接比較。"
       }
     ],
-    "commonMistake": "看到2026較大就判-2026較大。",
+    "commonMistake": "忽略共同的負號，沿用正整數比較結果而把不等號方向寫反。",
     "concept": "大絕對值的負數反而較小。",
     "tags": [
       "數與量",
@@ -834,7 +811,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0d426536aeced2221667ff5d51d3ebb16a06657b72224c8b4d00d9e8dfee9c9a",
+    "contentSha256": "3a2a0b9fa813fe3bf94bce82a5d0c49b31c160a3884ff1c594b3bdefde7924fb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -856,11 +833,11 @@ export const QUESTIONS = [
       "丁"
     ],
     "answerIndex": 1,
-    "explanation": "2°C 是四個數中最大，因此丙站最低溫最高。",
+    "explanation": "最高溫就是溫度數值最大的紀錄。四個溫度中，二度是正數，零度次之，負四度與負九度都更低，因此丙的二度最大，丙所記錄的溫度最高。",
     "steps": [
-      "把四溫度視為數線位置。",
-      "正數2大於0與負數。",
-      "丙站最高。"
+      "把四筆溫度視為整數負四、負九、二與零。",
+      "依正數大於零、零大於負數，先判定二是最大值。",
+      "對照二度所屬的紀錄者，得到丙的溫度最高。"
     ],
     "optionAnalysis": [
       {
@@ -884,7 +861,7 @@ export const QUESTIONS = [
         "reason": "0小於2。"
       }
     ],
-    "commonMistake": "把「最低溫最高」誤解成選數值最小的測站。",
+    "commonMistake": "把負九的九看成最大數字，未把負號代表低於零度納入比較。",
     "concept": "情境中的「最高」仍是比較數值最大。",
     "tags": [
       "數與量",
@@ -899,7 +876,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "測站名稱與各自溫度資料決定比較對象，不能刪除表意。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0c3e2fb8f71dbb8a4fd80e56f640c298ad462e78080b261e90a12a4e28318d29",
+    "contentSha256": "8111c4f99a21b5bbe12acb5e31b60a698ca0c4b3d020798a6f2f55dbfefc0257",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -921,11 +898,11 @@ export const QUESTIONS = [
       "甲與乙都比丙大"
     ],
     "answerIndex": 2,
-    "explanation": "300>-800>-1200，所以丙最大、甲最小。",
+    "explanation": "帳戶餘額依數值比較，正三百大於所有負餘額，所以丙最大。負一千二百與負八百相比，負一千二百離零較遠而更小，所以甲最小，敘述為丙最大且甲最小。",
     "steps": [
-      "正餘額大於負餘額。",
-      "兩負數中-800>-1200。",
-      "判定丙最大、甲最小。"
+      "先分辨丙為正餘額，甲與乙為負餘額，故丙一定最大。",
+      "比較兩個負餘額的欠款程度，負一千二百比負八百更小。",
+      "將最大與最小的帳戶名稱合併核對，得到丙最大、甲最小。"
     ],
     "optionAnalysis": [
       {
@@ -949,7 +926,7 @@ export const QUESTIONS = [
         "reason": "兩個負餘額都小於丙。"
       }
     ],
-    "commonMistake": "以債務數字1200較大就說甲餘額最大。",
+    "commonMistake": "用欠款金額的絕對值判斷餘額大小，誤把欠得最多的甲說成最大。",
     "concept": "帳戶餘額依帶號數比較，不依債務絕對值。",
     "tags": [
       "數與量",
@@ -964,7 +941,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "帳戶餘額的正負與三個持有者資料共同決定最大最小。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "348fe8cf6644f38ad4b2b0533e7609ca6f4b17045cfdb6d74c57b08b96523be4",
+    "contentSha256": "aae3c2464708787bf50f2c9d593af9b5b633dcabdd6e54ed211492b27f69c22a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -986,11 +963,11 @@ export const QUESTIONS = [
       "河床、隧道、月台、山丘"
     ],
     "answerIndex": 3,
-    "explanation": "數值由小到大為 -25、-18、-3、12，因此順序是河床、隧道、月台、山丘。",
+    "explanation": "由低到高等同把高度數值由小排到大。負二十五小於負十八，兩者又都小於負三，負三仍小於正十二，因此依序是河床、隧道、月台、山丘。",
     "steps": [
-      "低到高等同數值小到大。",
-      "排列負數 -25<-18<-3。",
-      "正數12最後。"
+      "把各地點高度寫成負二十五、負十八、負三與正十二。",
+      "先排三個負數，距離零越遠越低，順序為負二十五、負十八、負三。",
+      "最後接上正十二並換回地點名稱，得到完整由低到高次序。"
     ],
     "optionAnalysis": [
       {
@@ -1014,7 +991,7 @@ export const QUESTIONS = [
         "reason": "-25<-18<-3<12，對應第四項。"
       }
     ],
-    "commonMistake": "把負數絕對值較大者當作高度較高。",
+    "commonMistake": "把負高度的絕對值由小排到大，造成河床、隧道與月台的順序顛倒。",
     "concept": "海拔可用帶號數直接排序。",
     "tags": [
       "數與量",
@@ -1029,7 +1006,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "四種地形名稱與相對高程都需要參與排序。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bd2ac65f659221cec6b18eef395e2fb69d4097d7d9162bacb06cd817fabf4d43",
+    "contentSha256": "e208626208beb44f8ba01f68b0a599b12b1661184444b76583233940dd8e107c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1050,8 +1027,9 @@ export const CONSTRUCTED_RESPONSES = [
       "規則須能解釋 -12、-9、-3 的順序。"
     ],
     "fullCreditSolution": [
-      "-12<-9<-3<0<5。",
-      "兩個負數中，離 0 越遠者越小；或絕對值越大者原數越小。"
+      "先以零為分界：負十二、負三、負九都小於零，零小於正五，所以三個負數排在最前面。",
+      "比較三個負數到零的距離，十二最大、九次之、三最小；負數離零越遠，數值反而越小。",
+      "因此由小到大排列為負十二、負九、負三、零、五，亦即負十二小於負九小於負三小於零小於五。"
     ],
     "alternativeSolutions": [
       "可畫數線說明，但仍須寫出排列。"
@@ -1078,17 +1056,22 @@ export const CONSTRUCTED_RESPONSES = [
       "不等號方向須與「由小到大」一致。"
     ],
     "commonErrors": [
-      "把-3放最小。",
-      "把0放在負數前。",
-      "不等號全部反向。"
+      "直接按十二、九、三的正數大小排列負數，造成三個負數次序完全相反。",
+      "把零放在正五之後，忽略零小於任何正數且大於任何負數。",
+      "只寫排列答案卻沒有說明負數離零越遠數值越小的比較理由。"
     ],
     "independentReview": {
       "derivedResult": "-12<-9<-3<0<5。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "ed1ebcd3f275ff55ddfc528ee1dd4dfe215758ed22fa33e8e69f2bab5ce639f9",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "0437aa6355579dd1a1faf63a03757107a3789e74bf345764a61bd7e9fb09be49",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "先把負數、零與正數分區，確定負數在前、正五在最後。",
+      "在負數中按到零距離由大到小排成負十二、負九、負三。",
+      "接上零與正五，並以數線由左到右遞增檢查完整次序。"
+    ]
   },
   {
     "questionId": "u01-s004-cr002",
@@ -1106,9 +1089,9 @@ export const CONSTRUCTED_RESPONSES = [
       "指出最大、最小。"
     ],
     "fullCreditSolution": [
-      "可能的 x 為 -5、-4、-3、-2。",
-      "最大值 -2，最小值 -5。",
-      "因為符號 < 表示 x 必須嚴格大於 -6 且嚴格小於 -1，所以 -6、-1 不符合。"
+      "不等式負六小於 x 且 x 小於負一，表示 x 嚴格位在數線負六與負一之間，兩個端點都不包含。",
+      "依數線逐一列出區間內整數為負五、負四、負三、負二，沒有其他整數落在相鄰端點之間。",
+      "在這四個整數中，最靠右的負二最大，最靠左的負五最小；負六與負一因嚴格不等號不得列入。"
     ],
     "alternativeSolutions": [
       "可用數線空心點表示端點。"
@@ -1135,17 +1118,22 @@ export const CONSTRUCTED_RESPONSES = [
       "順序不影響得分，但不得重複或漏值。"
     ],
     "commonErrors": [
-      "列入-6或-1。",
-      "認為-5最大。",
-      "漏掉-2。"
+      "把嚴格小於誤讀成小於或等於，錯把負六或負一列入答案。",
+      "列舉時漏掉負三，沒有按相鄰整數由左向右逐項檢查。",
+      "認為絕對值較大的負五也較大，因而把最大值與最小值對調。"
     ],
     "independentReview": {
       "derivedResult": "x=-5,-4,-3,-2；最大-2，最小-5。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "455b2737cda8dff14c7ef9f66e2c506dfa6701ee645a55542e30015bc3472293",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "6c6bdde07fd2ba646348fc54c31d4a83d45c25aa1944ef5851474125bb00956a",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "先把雙重不等式畫成負六與負一之間的開區間。",
+      "由左向右列出負五、負四、負三、負二四個整數。",
+      "讀取最左與最右元素，得到最小負五、最大負二，並排除兩端點。"
+    ]
   }
 ];
 

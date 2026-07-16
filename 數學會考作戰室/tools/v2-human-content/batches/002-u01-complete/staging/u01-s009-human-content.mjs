@@ -123,44 +123,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "計算 6-11。",
-      "solutionSteps": [
-        "改寫 6+(-11)。",
-        "異號相加，11-6=5。",
-        "負數絕對值較大。"
-      ],
-      "answer": "-5。"
+      "prompt": "計算 6−11。",
+      "answer": "結果是 −5。",
+      "why": "減去 11 等於加上它的相反數 −11，所以 6−11=6+(−11)。異號相加用 11−6=5，並取絕對值較大的 −11 所帶負號，得到 −5。數線上也相當於從六向左走十一格。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "計算 -4-(-9)。",
-      "solutionSteps": [
-        "減去 -9 等於加 9。",
-        "-4+9=5。",
-        "結果為 5。"
-      ],
-      "answer": "5。"
+      "prompt": "計算 −4−(−9)。",
+      "answer": "結果是 5。",
+      "why": "減數是 −9，它的相反數為 +9，因此 −4−(−9)=−4+9。異號相加後 9−4=5，且正數絕對值較大，所以答案是正 5。代回原式後，兩個負號的作用也完整保留。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "氣溫從 3°C 降到 -5°C，變化量？",
-      "solutionSteps": [
-        "後值－前值=-5-3。",
-        "改寫 -5+(-3)。",
-        "得到 -8，表示下降 8°C。"
-      ],
-      "answer": "-8°C。"
+      "prompt": "氣溫從 3°C 降到 −5°C，帶號變化量是多少？",
+      "answer": "帶號變化量是 −8°C。",
+      "why": "帶號變化要用後值減前值，列式 −5−3=−5+(−3)=−8°C。結果的負號對應題目的下降方向，絕對值 8 則表示下降幅度。從三度經過零度到負五度也共下降八度。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "某數減 7 得 -2，求該數。",
-      "solutionSteps": [
-        "設原數 x，x-7=-2。",
-        "兩邊加 7。",
-        "x=5。"
-      ],
-      "answer": "5。"
+      "prompt": "某數減 7 得 −2，求該數。",
+      "answer": "該數是 5。",
+      "why": "設原數為 x，依題意 x−7=−2。被減數等於差加減數，所以 x=−2+7=5；代回原式 5−7=−2，確認答案滿足條件。反求未知數後的代回檢查可排除符號誤寫。"
     }
   ],
   "commonMistakes": [
@@ -247,7 +227,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "da083d61b7a08c7d62ab2db58758691d05c8f3586cf0f714d80182ea397a3226",
+  "contentSha256": "b9381de84fc47768859828586b5efa4df44bf2c8bea0ba506f7b84fd2098613d",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -271,7 +251,7 @@ export const QUESTIONS = [
       "-19"
     ],
     "answerIndex": 0,
-    "explanation": "7-12=7+(-12)=-5。",
+    "explanation": "減去 12 等於加上 12 的相反數，所以 7−12 可改寫為 7+(−12)。這是異號相加，12−7=5，且絕對值較大的 −12 為負，因此結果是 −5；原式次序不能顛倒。結果在數線上位於原點左側。",
     "steps": [
       "改寫加上-12。",
       "異號相加。",
@@ -299,7 +279,7 @@ export const QUESTIONS = [
         "reason": "大小與符號皆錯。"
       }
     ],
-    "commonMistake": "只算12-7=5而忘記原式方向。",
+    "commonMistake": "只算十二減七得到五，卻忘記原式是較小數七減較大數十二。",
     "concept": "減去正數等於加上負數。",
     "tags": [
       "數與量",
@@ -314,7 +294,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "75b86d8b6984125e550f5e479b30c6bccaeab43aa8e438feeae28727e019a469",
+    "contentSha256": "8f0ebde80cec9c394411d1af497c2f6d4e37bbb55645b8c84d7b50c039d042ba",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -336,7 +316,7 @@ export const QUESTIONS = [
       "-2"
     ],
     "answerIndex": 1,
-    "explanation": "-3-5=-3+(-5)=-8。",
+    "explanation": "把減法改寫成加上相反數，−3−5=−3+(−5)。兩個加數同為負數，絕對值 3+5=8 並保留負號，所以答案是 −8；負數再減正數會往數線左方移得更小。",
     "steps": [
       "減5改加-5。",
       "同號負數相加。",
@@ -364,7 +344,7 @@ export const QUESTIONS = [
         "reason": "算術錯。"
       }
     ],
-    "commonMistake": "把 -3-5 當成 5-3。",
+    "commonMistake": "把負三減五顛倒成五減三，忽略減法沒有交換律。",
     "concept": "負數再減正數會更小。",
     "tags": [
       "數與量",
@@ -379,7 +359,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "43233a26fc7e9452525bb96c7a76ff7aafe655a012b1216660bf3b03e7500ab5",
+    "contentSha256": "47f07346614e1f8712d988cc33605aba4f2a60c1a347763ff460efdb640ec797",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -401,7 +381,7 @@ export const QUESTIONS = [
       "2"
     ],
     "answerIndex": 2,
-    "explanation": "減去 -4 等於加 4，-6+4=-2。",
+    "explanation": "減去負數要加上該負數的相反數，因此 −6−(−4)=−6+4。異號相加時用 6−4=2，絕對值較大的 −6 決定負號，得到 −2；代回原式也不會是正 2 或 −10。數線上向右移四格後仍在原點左側。",
     "steps": [
       "把減去-4改成加4。",
       "異號相加。",
@@ -444,7 +424,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d44e86e7f6a569a14a82fa4bee09ae05f43e4bbef0cbc908d945b01cd6d31b9a",
+    "contentSha256": "4be39f51bbbda0b0b15277607ba1e45f388a14e7bc31aad51c6d200953ca3a0d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -466,7 +446,7 @@ export const QUESTIONS = [
       "22"
     ],
     "answerIndex": 3,
-    "explanation": "15-(-7)=15+7=22。",
+    "explanation": "依 a−b=a+(−b)，減數 −7 的相反數是 +7，所以 15−(−7)=15+7=22。減去負數會使數值增加，若算成 8 就是把 −(−7) 錯當成 −7。答案二十二也確實大於原被減數十五，方向合理。",
     "steps": [
       "減去負數改加正數。",
       "15+7。",
@@ -494,7 +474,7 @@ export const QUESTIONS = [
         "reason": "15+7=22。"
       }
     ],
-    "commonMistake": "把 -(-7) 處理成 -7。",
+    "commonMistake": "把減去負七仍處理成減七，沒有將負減數改成相反數正七。",
     "concept": "減去負數使值增加。",
     "tags": [
       "數與量",
@@ -509,7 +489,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "61bcbaa3034c6f37027f07faff887a7af15ae4a41767878df600d11665c37865",
+    "contentSha256": "61142fafc6ad9fde17a24273ec28fefcc4435e44a09ba38d252dd639fd2dbfe8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -531,7 +511,7 @@ export const QUESTIONS = [
       "-8-3=8+(-3)"
     ],
     "answerIndex": 0,
-    "explanation": "a-b=a+(-b)，因此 -8-3=-8+(-3)。",
+    "explanation": "減法轉加法時，被減數 −8 原樣保留，減號改為加號，減數 3 改成相反數 −3，因此 −8−3=−8+(−3)。其他選項不是改變被減數，就是沒有正確改變減數符號。",
     "steps": [
       "被減數-8原樣保留。",
       "減號改加號。",
@@ -574,7 +554,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0fbb6fcddd37a41f82bf485c5efdd67209193c419f6248cd96efe19a8f921aa0",
+    "contentSha256": "55860f6df3ab27153e06801790b2ed053546bb5c43e464731cc56b934bda2031",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -596,7 +576,7 @@ export const QUESTIONS = [
       "-5"
     ],
     "answerIndex": 1,
-    "explanation": "x=-4+9=5；檢查5-9=-4。",
+    "explanation": "在 x−9=−4 中，被減數等於差加減數，因此 x=−4+9=5。也可在等式兩邊同加 9；代回檢查 5−9=−4，確實符合原式，其餘選項代回都不成立。反求未知數後的代回檢查可同時核對數值與符號。",
     "steps": [
       "兩邊加9。",
       "x=5。",
@@ -624,7 +604,7 @@ export const QUESTIONS = [
         "reason": "代回-14。"
       }
     ],
-    "commonMistake": "把 -4-9 算成 x。",
+    "commonMistake": "把負四再減九當成未知數，沒有用差加減數反求被減數。",
     "concept": "被減數＝差＋減數。",
     "tags": [
       "數與量",
@@ -639,7 +619,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "594e3699f89380d90b82584eda738a8d1b933a66aa67702d84003354e58f2079",
+    "contentSha256": "92881f9d9d261470a015f2ea077da0537b4729217ba85d87782714c43318b320",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -661,7 +641,7 @@ export const QUESTIONS = [
       "10"
     ],
     "answerIndex": 2,
-    "explanation": "括號內3-(-2)=5，再算-5-5=-10。",
+    "explanation": "依運算順序先算括號：3−(−2)=3+2=5。外層成為 −5−5，再改寫為 −5+(−5)=−10；不能先把外面的 −5 與括號中的 −2 結合，否則會破壞括號範圍。兩個同號負數相加後結果必在負方向。",
     "steps": [
       "先算括號5。",
       "外式-5-5。",
@@ -704,7 +684,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3cf727bca774845aedfaaff6ca8a0a748aaac6c1d0ca547b72485a5b09f3c3fa",
+    "contentSha256": "aa66a3a7e880ebe68a0d359fd3d9ab0fc330e3dfe6f457b6d7e7cb00069341b1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -726,7 +706,7 @@ export const QUESTIONS = [
       "7"
     ],
     "answerIndex": 3,
-    "explanation": "同級減法由左到右：12-(-4)=16，再16-9=7。",
+    "explanation": "連續減法是同級運算，要由左到右計算。先算 12−(−4)=12+4=16，再算 16−9=7；也可全部改寫成 12+4+(−9)=7，但不能把後兩項先結合成另一個減數。兩種合法算法都得到相同結果七。",
     "steps": [
       "先算12+4=16。",
       "再減9。",
@@ -754,7 +734,7 @@ export const QUESTIONS = [
         "reason": "16-9=7。"
       }
     ],
-    "commonMistake": "把連續減法錯誤結合成12-[(-4)-9]。",
+    "commonMistake": "把連續減法誤用結合律，先算括號中的負四減九而改變原式。",
     "concept": "連續加減同級由左到右。",
     "tags": [
       "數與量",
@@ -769,7 +749,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f0e6f0a935f2a3585e1fbc1f044e51017ec2e0cc83e4c321e1039c720f0f21c6",
+    "contentSha256": "1c80349d4af8113cbd9e754e83ca279cda20a8ecf6e0777797a0c9385dd27191",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -791,7 +771,7 @@ export const QUESTIONS = [
       "13°C"
     ],
     "answerIndex": 0,
-    "explanation": "變化量＝後值－前值＝-11-(-2)=-9°C，表示下降9°C。",
+    "explanation": "帶號變化量要用後值減前值，故 −11−(−2)=−11+2=−9°C。負號表示溫度下降，大小 9 表示下降幅度；若只答 9°C，僅得到無方向的溫差而不符合題目。",
     "steps": [
       "後值-11。",
       "減前值-2。",
@@ -834,7 +814,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d52289d1bb776ce75320881d39d19e9836ac092098f8849f96b435e10677f232",
+    "contentSha256": "d9cbed3be116a522d71d606aff854e1735cf4f8ec9d2cb18c54a182fa1df5149",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -856,7 +836,7 @@ export const QUESTIONS = [
       "-155 件"
     ],
     "answerIndex": 1,
-    "explanation": "庫存=70-85=-15 件，表示尚欠15件。",
+    "explanation": "出貨會從原庫存扣除，因此出貨後庫存為 70−85=−15 件。題目明定允許用負庫存表示缺貨，−15 代表尚有 15 件需求未滿足；正 15 只有缺貨大小，沒有保留庫存狀態。",
     "steps": [
       "原庫存70。",
       "出貨85用減法。",
@@ -899,7 +879,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "允許負庫存的規則是必要條件，否則情境解讀不同。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0e1a9c82d0c3cc928f693216c52a7c0cfd0e735c66262a140ef5676326c2b12d",
+    "contentSha256": "e9c71505167666b5eb4c5c23660c0402cec7865d9321f4286a5b62b36b2caf83",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -921,7 +901,7 @@ export const QUESTIONS = [
       "-18 公尺"
     ],
     "answerIndex": 2,
-    "explanation": "後值－前值＝12-(-30)=42 公尺，正號表示上升。",
+    "explanation": "高度的帶號變化用後值減前值：12−(−30)=12+30=42 公尺。結果為正，與題目所說上升一致；探測器先從 −30 上升 30 公尺到 0，再上升 12 公尺，共上升 42 公尺。",
     "steps": [
       "後值12。",
       "減去前值-30。",
@@ -949,7 +929,7 @@ export const QUESTIONS = [
         "reason": "大小與方向錯。"
       }
     ],
-    "commonMistake": "以30-12=18處理，沒有使用帶號坐標。",
+    "commonMistake": "只用三十減十二得到十八，沒有把負海拔當成帶號的前值。",
     "concept": "跨越基準的上升量用後值減前值。",
     "tags": [
       "數與量",
@@ -964,7 +944,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起終海拔與「上升」要求共同決定帶號變化。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "dbffc5d059d586a7ea98a0c1f9d4bc2a392eb789229c0da110fedf6161b614a7",
+    "contentSha256": "0bdd931a048882ff5b44cd3ef5ccf0946f9c0414279f670622a0fc050bc94cd5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -986,7 +966,7 @@ export const QUESTIONS = [
       "-620 元"
     ],
     "answerIndex": 3,
-    "explanation": "後值－前值＝-120-500=-620 元，表示減少620元。",
+    "explanation": "餘額的帶號變化量是後值減前值，所以列式 −120−500=−620 元。負號表示餘額減少，大小 620 也可由 500 元降到 0 再降到 −120 元相加驗證；不能忽略後值的負號。",
     "steps": [
       "後值-120。",
       "減前值500。",
@@ -1014,7 +994,7 @@ export const QUESTIONS = [
         "reason": "-120-500=-620元。"
       }
     ],
-    "commonMistake": "計算500-120=380，忽略後值是-120。",
+    "commonMistake": "把負一百二十看成正數後算五百減一百二十，導致大小與方向都錯。",
     "concept": "從正餘額到負餘額的變化跨越0。",
     "tags": [
       "數與量",
@@ -1029,7 +1009,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩次餘額與「帶號變化量」措辭決定次序和符號。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7aa64ca96d3969875a3a56c54b4027c3f38b72face238a41d69335d7c0403ec9",
+    "contentSha256": "26cfc69e69db9157a3000cc411ab9a967819ee8f4a5e1b8e73777fb920546146",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1050,9 +1030,9 @@ export const CONSTRUCTED_RESPONSES = [
       "再完成整數加法。"
     ],
     "fullCreditSolution": [
-      "8-13=8+(-13)=-5。",
-      "-6-4=-6+(-4)=-10。",
-      "-9-(-5)=-9+5=-4。"
+      "第一題保留被減數 8，把減去 13 改成加上 −13：8−13=8+(−13)=−5。",
+      "第二題同樣把正減數 4 改成 −4：−6−4=−6+(−4)=−10。",
+      "第三題的減數是 −5，其相反數為 +5，所以 −9−(−5)=−9+5=−4；三題都只改減數的符號。"
     ],
     "alternativeSolutions": [
       "可用數線驗證，但等價加法必須出現。"
@@ -1088,7 +1068,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "3df8ec65db1a0657b607f925923d929be9911e101356060632f500012df9040f",
+    "contentSha256": "956cf22e8e9cfda19de24201070acbf1b742159cadd7a0fc2ab87462614547a5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1107,9 +1087,9 @@ export const CONSTRUCTED_RESPONSES = [
       "三個答案附單位。"
     ],
     "fullCreditSolution": [
-      "上午到下午：7-(-4)=+11°C。",
-      "下午到夜間：-9-7=-16°C。",
-      "上午到夜間溫差：|-9-(-4)|=5°C。"
+      "上午到下午的帶號變化為後值減前值：7−(−4)=+11°C，正號表示上升 11°C。",
+      "下午到夜間的帶號變化為 −9−7=−16°C，負號表示下降 16°C。",
+      "上午到夜間問的是溫差而非帶號變化，因此取絕對值 |−9−(−4)|=|−5|=5°C。"
     ],
     "alternativeSolutions": [
       "可說上升11、下降16、相差5。"
@@ -1145,7 +1125,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "91ad04a4b3069dda7ead7beb21252cb29e865738bf785d1dc53d54dcc9a6205b",
+    "contentSha256": "8e5474b6f18f2559f0f5e272917ee375ed2e9ef375a6a476ff7b302b92fc5c93",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

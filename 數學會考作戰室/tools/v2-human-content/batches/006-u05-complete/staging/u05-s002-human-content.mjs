@@ -63,10 +63,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "四個象限從右上方開始，依逆時針順序編號。",
-    "判斷象限不必先畫圖；只要依序看 x 的正負與 y 的正負。",
-    "坐標中若有任一分量為 0，點就在坐標軸上，因此不能硬套四象限。",
-    "象限只描述區域，不表示點離原點多遠。"
+    "x 軸與 y 軸把平面分成四個象限。依逆時針方向，第一象限的符號是 (+,+)、第二象限 (-,+)、第三象限 (-,-)、第四象限 (+,-)。",
+    "判斷象限只需看橫、縱坐標的正負，不需比較絕對值大小。右方對應 x>0，左方 x<0；上方 y>0，下方 y<0，兩個條件必須同時成立。",
+    "任一分量為零時，點位於坐標軸而不屬任何象限。x=0 在 y 軸，y=0 在 x 軸；若兩者同時為零則是原點，邊界值不可錯納入象限。",
+    "分量含參數時，將目標象限轉成兩個嚴格不等式並取交集。情境方位題則須先明示東、北與坐標正向的對應，才能把方向紀錄唯一轉成象限符號。"
   ],
   "formalDefinitions": [
     {
@@ -104,93 +104,102 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先檢查是否有 0。",
-      "check": "若有 0，是否應改判坐標軸？"
+      "instruction": "先檢查 x 或 y 是否為零，辨認坐標軸與原點。",
+      "check": "零分量點沒有被錯分到相鄰象限。"
     },
     {
       "step": 2,
-      "instruction": "看 x 正負。",
-      "check": "在左半平面還是右半平面？"
+      "instruction": "若兩分量皆非零，分別記錄 x、y 的正負號。",
+      "check": "只判符號，不受分量絕對值大小干擾。"
     },
     {
       "step": 3,
-      "instruction": "看 y 正負。",
-      "check": "在上半平面還是下半平面？"
+      "instruction": "依 (+,+)、(-,+)、(-,-)、(+,-) 對應四象限。",
+      "check": "符號順序仍是先 x 後 y，第二、第四象限沒有互換。"
     },
     {
       "step": 4,
-      "instruction": "對照符號表。",
-      "check": "是否得到唯一象限？"
+      "instruction": "含參數時將兩個符號要求各列成嚴格不等式。",
+      "check": "兩條件以『且』連結，最後取共同範圍並排除端點。"
     },
     {
       "step": 5,
-      "instruction": "用位置語言驗算。",
-      "check": "例如左上是否確為第二象限？"
+      "instruction": "方位情境先確認正向，再把東西南北轉成坐標符號。",
+      "check": "象限答案由題幹明示的軸向決定，不靠隱藏慣例。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "判斷 A=(-4,7) 的象限。",
+      "exampleId": "u05-s002-example-a",
+      "prompt": "判斷 K=(-4,-7) 所在象限。",
       "solutionSteps": [
-        "x<0 表示左。",
-        "y>0 表示上。"
+        "橫坐標與縱坐標都為負。",
+        "符號 (-,-) 對應第三象限。"
       ],
-      "answer": "左上方，第二象限。"
+      "answer": "K 在第三象限。",
+      "why": "負橫坐標表示左方，負縱坐標表示下方，所以點在左下區域。象限判斷只看符號，不因七大於四而改變。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "第三象限中的點，其坐標符號如何？",
+      "exampleId": "u05-s002-example-b",
+      "prompt": "點 M=(0,9) 位於哪裡？",
       "solutionSteps": [
-        "第三象限在左下。",
-        "左使 x<0，下使 y<0。"
+        "第一分量為零，所以 M 在 y 軸。",
+        "第二分量九為正，所以在原點上方。"
       ],
-      "answer": "(-,-)。"
+      "answer": "M 在 y 軸正半軸上。",
+      "why": "橫坐標為零是 y 軸判準，點不屬第一或第二象限。縱坐標正九只用來判斷它位於 y 軸的正半軸，原點也不在此位置。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "B=(6,0) 在哪一象限？",
+      "exampleId": "u05-s002-example-c",
+      "prompt": "P=(m-2,m+5) 在第二象限，求 m 的範圍。",
       "solutionSteps": [
-        "y=0。",
-        "點在 x 軸上。"
+        "第二象限要求 m-2<0 與 m+5>0。",
+        "解得 m<2、m>-5，交集為 -5<m<2。"
       ],
-      "answer": "不屬任何象限。"
+      "answer": "-5<m<2。",
+      "why": "第二象限同時需要負橫坐標與正縱坐標，因此兩個不等式要取交集。端點會使一個分量為零而落在坐標軸，不能包含。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "若 P=(a,-3) 在第四象限，a 的條件是什麼？",
+      "exampleId": "u05-s002-example-d",
+      "prompt": "A 在第一象限，A 的原點對稱點位於哪一象限？",
       "solutionSteps": [
-        "第四象限為 (+,-)。",
-        "第二分量已為負，因此 a 必須為正。"
+        "A 的兩分量皆為正。",
+        "對原點對稱後兩分量皆變負。"
       ],
-      "answer": "a>0。"
+      "answer": "位於第三象限。",
+      "why": "原點對稱會把 (x,y) 變成 (-x,-y)。第一象限的 (+,+) 因而變為 (-,-)，正好對應相對的第三象限；兩分量都變號，不是只改其中之一。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把第二象限寫成 (+,-)。",
-      "why": "把象限順序記成順時針。",
-      "correction": "從右上逆時針寫出四個符號組合。"
+      "mistake": "用數字大小而非正負判象限。",
+      "why": "象限只由方向符號決定。",
+      "correction": "先忽略絕對值，單獨寫出 x、y 符號。"
     },
     {
-      "mistake": "看到兩個負號就答第四象限。",
-      "why": "只記編號不理解位置。",
-      "correction": "兩負是左下，應為第三象限。"
+      "mistake": "交換第二與第四象限。",
+      "why": "忘記有序符號先 x 後 y。",
+      "correction": "以左上 (-,+)、右下 (+,-) 固定對照。"
     },
     {
-      "mistake": "把 (0,5) 判為第一或第二象限。",
-      "why": "忽略 0 代表在軸上。",
-      "correction": "先做零分量檢查。"
+      "mistake": "零分量點仍歸入象限。",
+      "why": "未先檢查坐標軸邊界。",
+      "correction": "任何一個分量為零都先判定所在坐標軸。"
     },
     {
-      "mistake": "認為數值較大就屬較大的象限編號。",
-      "why": "混淆編號與大小。",
-      "correction": "象限由正負號決定，不由絕對值決定。"
+      "mistake": "參數不等式只解一條。",
+      "why": "象限需要兩分量條件同時成立。",
+      "correction": "分別求解後取交集。"
     },
     {
-      "mistake": "只由 x<0 判定第二象限。",
-      "why": "漏看 y 的上下方向。",
-      "correction": "x<0 可能在第二或第三象限，仍要看 y。"
+      "mistake": "範圍端點使用≤或≥。",
+      "why": "端點會產生零分量。",
+      "correction": "象限條件使用嚴格不等式並代入端點檢查。"
+    },
+    {
+      "mistake": "把東西南北直接套坐標符號。",
+      "why": "題目可能尚未定義坐標正向。",
+      "correction": "要求題幹明示東、北與 x、y 正向的關係。"
     }
   ],
   "selfCheck": [
@@ -246,7 +255,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "f37763e398917a7f28560170f721bc8a8b7c2952663a4dcba66bc785e8cf981a"
+  "contentSha256": "46d8280e754227a2673cad88123083d15ec7045fdf7d608936eaa8d89d62fbcd"
 };
 
 export const QUESTIONS = [
@@ -274,10 +283,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "x=-3<0 表示左方，y=5>0 表示上方；左上區域是第二象限。",
-    "explanation": "x=-3<0 表示左方，y=5>0 表示上方；左上區域是第二象限。",
+    "explanation": "A=(-3,5) 的橫坐標為負、縱坐標為正，符號組合是 (-,+)。依象限順序，左上方的 (-,+) 屬於第二象限，因此 A 位於第二象限；兩分量都非零，並未落在坐標軸上。",
     "steps": [
-      "看 x：負，位於左半平面。",
-      "看 y：正，位於上半平面。"
+      "讀出橫坐標 -3 為負。",
+      "讀出縱坐標 5 為正。",
+      "將符號 (-,+) 對應到第二象限。"
     ],
     "optionAnalysis": [
       {
@@ -301,7 +311,7 @@ export const QUESTIONS = [
         "reason": "需要 (+,-)。"
       }
     ],
-    "misconceptionTarget": "把象限編號方向記成順時針。",
+    "misconceptionTarget": "只依坐標中的數字大小判象限，沒有先判斷兩分量正負。",
     "prerequisiteCheck": "已能讀出坐標的左右與上下。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -314,7 +324,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ede60aee2956d3a2b72f35198b8ffe621c74819fef0896e2b3310598e81b1682"
+    "contentSha256": "ae75665c04bef3556b8822c92597542311d8c7ba9bf9c4863891f85cde7695c1"
   },
   {
     "questionId": "u05-s002-v002",
@@ -340,10 +350,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "第四象限的符號是 (+,-)，只有 (6,-2) 符合。",
-    "explanation": "第四象限的符號是 (+,-)，只有 (6,-2) 符合。",
+    "explanation": "第四象限位於原點右下方，所以橫坐標必須為正、縱坐標必須為負。選項 (6,-2) 的符號恰為 (+,-)，而且兩分量都不為零，因此位於第四象限。",
     "steps": [
-      "第四象限在右下。",
-      "右使 x>0，下使 y<0。"
+      "把第四象限轉成符號條件 x>0、y<0。",
+      "逐項檢查兩個分量的正負與是否為零。",
+      "選出符號為 (+,-) 的 (6,-2)。"
     ],
     "optionAnalysis": [
       {
@@ -367,7 +378,7 @@ export const QUESTIONS = [
         "reason": "(+,-) 正確。"
       }
     ],
-    "misconceptionTarget": "只記住『第四』而未用右下位置判斷。",
+    "misconceptionTarget": "把第四象限記成左下方，或忽略坐標軸上的點不屬任何象限。",
     "prerequisiteCheck": "需知道四象限符號表。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -380,7 +391,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1bd4f854a6e57040ab727781390fe5cc75d7d5e304e07c59a2c7b93c6da4890e"
+    "contentSha256": "dbce7d12928478d468d3f8561e1236715632813252242962297fe2c8a851b404"
   },
   {
     "questionId": "u05-s002-v003",
@@ -406,10 +417,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "第三象限位於左下，因此橫坐標與縱坐標都為負。",
-    "explanation": "第三象限位於左下，因此橫坐標與縱坐標都為負。",
+    "explanation": "第三象限位於原點左下方，左方要求橫坐標 a<0，下方要求縱坐標 b<0。兩個不等式必須同時成立；任一分量為零時點會落在坐標軸上。",
     "steps": [
-      "左下方決定 x<0。",
-      "左下方也決定 y<0。"
+      "把第三象限辨認為左下方。",
+      "將左方轉成 a<0、下方轉成 b<0。",
+      "用「且」連結兩個必要條件。"
     ],
     "optionAnalysis": [
       {
@@ -433,7 +445,7 @@ export const QUESTIONS = [
         "reason": "第四象限。"
       }
     ],
-    "misconceptionTarget": "只看其中一個分量。",
+    "misconceptionTarget": "只要求其中一個分量為負，或把兩個條件錯用「或」連結。",
     "prerequisiteCheck": "需理解象限與坐標符號。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -446,7 +458,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "db3a363b8d04943f26fc901ba95f3914c85e1702118303ba0c0c005879782dd5"
+    "contentSha256": "a8af445159f67ca96ec5b499cd1a76a04b1d1d9cb500b9fbf8a82365614793b3"
   },
   {
     "questionId": "u05-s002-v004",
@@ -472,10 +484,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "Q 的橫坐標為 0，所以在 y 軸上；縱坐標為負，因此在 y 軸負半軸。",
-    "explanation": "Q 的橫坐標為 0，所以在 y 軸上；縱坐標為負，因此在 y 軸負半軸。",
+    "explanation": "Q=(0,-7) 的橫坐標為零，所以點在 y 軸上；縱坐標為負七，表示位於原點下方。因此 Q 位於 y 軸負半軸，而不是任何一個象限，零分量是判斷關鍵。",
     "steps": [
-      "先檢查 x=0。",
-      "再由 y=-7 判斷在原點下方。"
+      "先檢查橫坐標為零，判定在 y 軸。",
+      "再看縱坐標 -7 為負，判定在原點下方。",
+      "合併為 y 軸負半軸上。"
     ],
     "optionAnalysis": [
       {
@@ -499,7 +512,7 @@ export const QUESTIONS = [
         "reason": "x 軸上的點應 y=0。"
       }
     ],
-    "misconceptionTarget": "看到負號就硬判第三或第四象限。",
+    "misconceptionTarget": "看到一正一負之外的數值就套象限，忘記零分量代表坐標軸。",
     "prerequisiteCheck": "需會判斷零分量。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -512,7 +525,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "83af4bf5574543250754543b57badef410a936d06ac6c7fbdf2e581386ed560d"
+    "contentSha256": "19649d46ae177221bd7a11124a6d8f63fa9fbe349c87b18a0d4b5e70c55e42bb"
   },
   {
     "questionId": "u05-s002-v005",
@@ -538,10 +551,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "第二象限要求 x<0、y>0；y=4 已為正，因此 m 必須為負，只有 -2。",
-    "explanation": "第二象限要求 x<0、y>0；y=4 已為正，因此 m 必須為負，只有 -2。",
+    "explanation": "第二象限的符號是 (-,+)。A=(m,4) 的縱坐標四已為正，因此只需讓橫坐標 m 為負；選項中的 -2 符合，代入後 A=(-2,4) 位於左上方，且兩分量都不為零。",
     "steps": [
-      "由第二象限得 m<0。",
-      "逐項檢查只有 -2 為負。"
+      "寫出第二象限條件 x<0、y>0。",
+      "確認固定的 y=4 已滿足正數條件。",
+      "從選項選出負數 m=-2。"
     ],
     "optionAnalysis": [
       {
@@ -565,7 +579,7 @@ export const QUESTIONS = [
         "reason": "形成第一象限。"
       }
     ],
-    "misconceptionTarget": "把 m=0 也視為第二象限。",
+    "misconceptionTarget": "因縱坐標是正四就選正的 m，忽略第二象限需要橫坐標為負。",
     "prerequisiteCheck": "需能由象限反推 x 符號。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -578,7 +592,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "17208615a14e2a0f04fb712ecb5909a94a93cc189fdad984dbb6de81b2b060cf"
+    "contentSha256": "b79a88c3b6a9db0740d6789b7b2c96e95f2d44879c90e9bcca68b98664ca215d"
   },
   {
     "questionId": "u05-s002-v006",
@@ -604,10 +618,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "B 的 x=-5 不為 0。要不在任何象限，只能令 y=n=0，使點位於 x 軸。",
-    "explanation": "B 的 x=-5 不為 0。要不在任何象限，只能令 y=n=0，使點位於 x 軸。",
+    "explanation": "B 的橫坐標固定為 -5，不可能在 y 軸；若要不屬任何象限，只能讓它落在 x 軸上，所以縱坐標 n 必須等於零。此時 B=(-5,0)，位於 x 軸負半軸。",
     "steps": [
-      "象限外的坐標點需至少一分量為 0。",
-      "x 已非 0，所以 n=0。"
+      "確認 x=-5 不為零，排除 y 軸與原點。",
+      "用不在象限的條件要求 y=0。",
+      "得到 n=0，並辨認點在 x 軸負半軸。"
     ],
     "optionAnalysis": [
       {
@@ -631,7 +646,7 @@ export const QUESTIONS = [
         "reason": "形成 (-5,0)，位於 x 軸。"
       }
     ],
-    "misconceptionTarget": "誤以為負橫坐標的點都不屬象限。",
+    "misconceptionTarget": "把不在任何象限誤認為坐標不存在，沒有想到點可位於坐標軸。",
     "prerequisiteCheck": "需理解象限點的兩分量皆非 0。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -644,7 +659,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7571e540b0ceb267136410094c41baaa764be104001a80ac2c30f82cdf3cd241"
+    "contentSha256": "67849b68c5140fac341084a083fa6f174ade148f744be5c1f742fe92e8388b37"
   },
   {
     "questionId": "u05-s002-v007",
@@ -670,10 +685,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "第一象限需 2t-6>0 且 t+1>0。第一個條件給 t>3，第二個給 t>-1；合併為 t>3，只有 4。",
-    "explanation": "第一象限需 2t-6>0 且 t+1>0。第一個條件給 t>3，第二個給 t>-1；合併為 t>3，只有 4。",
+    "explanation": "第一象限要求兩個分量都為正。代入 t=4，橫坐標 2×4-6=2>0，縱坐標 4+1=5>0，因此 C=(2,5) 確實位於第一象限，這個值一定可行，兩個符號條件均通過。",
     "steps": [
-      "解 2t-6>0 得 t>3。",
-      "解 t+1>0 得 t>-1，取交集 t>3。"
+      "將第一象限轉成 2t-6>0 與 t+1>0。",
+      "代入選項 t=4，分別算得二與五。",
+      "確認兩分量皆為正，選定 t=4。"
     ],
     "optionAnalysis": [
       {
@@ -697,7 +713,7 @@ export const QUESTIONS = [
         "reason": "x=-2<0，雖 y>0 仍不在第一象限。"
       }
     ],
-    "misconceptionTarget": "只檢查其中一個坐標分量。",
+    "misconceptionTarget": "只檢查其中一個分量為正，就認為點一定在第一象限。",
     "prerequisiteCheck": "需會解簡單一元一次不等式。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -710,7 +726,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e7f67834464a83ffc270d0fd714150d7c5bf869c507c231918638c8ccaae2912"
+    "contentSha256": "a11fa8741b786f0e00d78d8f12a6551f1f93f2d99d5afffff5d7edbfdac248ac"
   },
   {
     "questionId": "u05-s002-v008",
@@ -736,10 +752,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "P 在第一象限表示 a>0、b>0；Q 的兩分量變成負數，所以在第三象限。",
-    "explanation": "P 在第一象限表示 a>0、b>0；Q 的兩分量變成負數，所以在第三象限。",
+    "explanation": "P 在第一象限，所以 a>0、b>0。Q=(-a,-b) 同時把兩個分量取相反數，便有 -a<0、-b<0，符號為 (-,-)，因此 Q 位於第三象限。兩點分居以原點為中心的相對象限，且不在坐標軸。",
     "steps": [
-      "由 P 得 a,b 均正。",
-      "Q=(-a,-b) 兩分量均負。"
+      "由 P 在第一象限寫出 a>0、b>0。",
+      "對兩分量取相反數，得到 -a<0、-b<0。",
+      "將 (-,-) 對應到第三象限。"
     ],
     "optionAnalysis": [
       {
@@ -763,7 +780,7 @@ export const QUESTIONS = [
         "reason": "需要 (+,-)。"
       }
     ],
-    "misconceptionTarget": "只反轉一個分量或把相反位置誤認為同象限。",
+    "misconceptionTarget": "只把一個分量變號，或把坐標相反點誤判為相鄰象限。",
     "prerequisiteCheck": "需熟悉四象限符號。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -776,7 +793,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "d4323f8158cd89133ce15627727502a6b17228f3063b9258135da1d83be07309"
+    "contentSha256": "aabc42fef04dfac85b1064e68e7e4fb59048d596a0172229815e956b5b2398b5"
   },
   {
     "questionId": "u05-s002-v009",
@@ -802,10 +819,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "若在第四象限需 k-2>0 且 k+3<0，即 k>2 且 k<-3，無法同時成立，所以第四象限不可能。",
-    "explanation": "若在第四象限需 k-2>0 且 k+3<0，即 k>2 且 k<-3，無法同時成立，所以第四象限不可能。",
+    "explanation": "若 R 在第四象限，須同時滿足 k-2>0 與 k+3<0。前者要求 k>2，後者要求 k<-3，兩條件不可能同時成立，所以 R 不可能位於第四象限，因為交集是空集合。",
     "steps": [
-      "分別寫出各分量的符號條件。",
-      "第四象限條件互相矛盾。"
+      "把第四象限轉成 x>0、y<0。",
+      "分別解得 k>2 與 k<-3。",
+      "判斷兩範圍沒有交集，因此第四象限不可能。"
     ],
     "optionAnalysis": [
       {
@@ -829,7 +847,7 @@ export const QUESTIONS = [
         "reason": "取 k=-4 得 (-6,-1)，可行。"
       }
     ],
-    "misconceptionTarget": "沒有檢查兩個參數條件能否同時成立。",
+    "misconceptionTarget": "分開看兩個不等式各自有解，卻未取同一個 k 的交集。",
     "prerequisiteCheck": "需會由象限建立不等式。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -842,7 +860,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "2cdc3f7c09a9bc93cc284d8f035c0d2fa7c50b1abc1af9bd46787e596de67e16"
+    "contentSha256": "06e020d802120a0a2ddc77a6533c254e1d2843420c0492e96aa85c9ff4e2a64e"
   },
   {
     "questionId": "u05-s002-v010",
@@ -868,10 +886,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x=-8 表示西方，y=6 表示北方，所以是西北方，對應第二象限。",
-    "explanation": "x=-8 表示西方，y=6 表示北方，所以是西北方，對應第二象限。",
+    "explanation": "題目定義東為 x 正向、北為 y 正向。雲團坐標 (-8,6) 的負橫坐標表示西方，正縱坐標表示北方，所以位於西北方，也就是符號 (-,+) 的第二象限。",
     "steps": [
-      "依方向定義讀出西、北。",
-      "(-,+) 對應第二象限。"
+      "由 x=-8 判定在測站西方。",
+      "由 y=6 判定在測站北方。",
+      "合併為西北方，對應第二象限。"
     ],
     "optionAnalysis": [
       {
@@ -895,7 +914,7 @@ export const QUESTIONS = [
         "reason": "方位與象限均一致。"
       }
     ],
-    "misconceptionTarget": "只答方位或只答象限，未核對兩者一致。",
+    "misconceptionTarget": "只把西北當方位名稱，沒有用坐標符號確認它屬第二象限。",
     "prerequisiteCheck": "需會坐標讀法與象限判斷。",
     "estimatedTimeSec": 150,
     "unitCheck": "本題只判方位與象限，不需要將格數換算成實際距離。",
@@ -908,7 +927,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7eef99c21ea1a97688752b829753b1254076aa014d2810feb948790bf5bfb57e"
+    "contentSha256": "5d98b8562656eaa489c4c72216304abf0a8f48486a4470af01b1c4b6efd1ff2c"
   },
   {
     "questionId": "u05-s002-v011",
@@ -934,10 +953,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "x<0 表示左側；因 y 正向定為後方，所以 y<0 表示前方。兩分量皆負，為第三象限。",
-    "explanation": "x<0 表示左側；因 y 正向定為後方，所以 y<0 表示前方。兩分量皆負，為第三象限。",
+    "explanation": "座位表把右方定為 x 正向，所以 x=-3 表示講臺左側；後方定為 y 正向，所以 y=-2 表示前方。兩分量都為負，位置在第三象限的左前區域。",
     "steps": [
-      "把 x=-3 轉為左側。",
-      "把自訂 y 正向解讀：-2 為前方。"
+      "把 x=-3 依題目方向轉成講臺左側。",
+      "把 y=-2 轉成講臺前方。",
+      "以 (-,-) 判定第三象限，組成完整區域敘述。"
     ],
     "optionAnalysis": [
       {
@@ -961,7 +981,7 @@ export const QUESTIONS = [
         "reason": "兩方向皆反。"
       }
     ],
-    "misconceptionTarget": "把一般地圖的上北下南習慣套到題目自訂座位方向。",
+    "misconceptionTarget": "依日常方向猜測後方的正負，沒有遵守題目對 y 正向的定義。",
     "prerequisiteCheck": "需能依題目定義讀坐標。",
     "estimatedTimeSec": 150,
     "unitCheck": "坐標單位是座位格，題目只要求區域。",
@@ -974,7 +994,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ad3accd3fe08a3a144b0ca5d90a718be94b328d7914086b7f604d03b48b301f5"
+    "contentSha256": "ed74b0a99ed217115d7b554d7720419383b19579be2ea3b2daaf5eabc563f462"
   },
   {
     "questionId": "u05-s002-v012",
@@ -987,7 +1007,7 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
-    "text": "無人車地圖把充電站設為原點，車輛目前位於第四象限。下列哪組感測紀錄可能是它的位置？",
+    "text": "無人車地圖把充電站設為原點，並以東方為 x 正向、北方為 y 正向。車輛目前位於第四象限，下列哪組感測紀錄可能是它的位置？",
     "givenConditions": [
       "題幹所列坐標、方程式與移動條件均為精確值。"
     ],
@@ -1000,10 +1020,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "第四象限是右下；若東為右、北為上，則應向東且向南。",
-    "explanation": "第四象限是右下；若東為右、北為上，則應向東且向南。",
+    "explanation": "第四象限的坐標符號為 (+,-)。依題幹方向定義，東方對應正 x，南方對應負 y，因此向東十二公尺、向南五公尺形成 (+,-)，是唯一可能的紀錄。",
     "steps": [
-      "第四象限轉成 (+,-)。",
-      "方位轉成東正、南負。"
+      "把第四象限轉成橫坐標正、縱坐標負。",
+      "依題幹把東轉成正 x、南轉成負 y。",
+      "選出向東十二公尺、向南五公尺的紀錄。"
     ],
     "optionAnalysis": [
       {
@@ -1027,12 +1048,12 @@ export const QUESTIONS = [
         "reason": "(+,+) 是第一象限。"
       }
     ],
-    "misconceptionTarget": "只看『南』或『東』其中一個方向。",
+    "misconceptionTarget": "未依明示的坐標正向轉換東西南北，或只核對其中一個方向。",
     "prerequisiteCheck": "需掌握象限與方向正負。",
     "estimatedTimeSec": 150,
     "unitCheck": "四選項均以公尺表示同類位移，不需額外換算。",
     "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-    "ambiguityBoundaryAudit": "感測紀錄均以充電站為共同基準，公尺大小不影響象限。",
+    "ambiguityBoundaryAudit": "題幹已明定東為 x 正向、北為 y 正向；四筆紀錄都以充電站為基準，方向符號與象限可唯一對應。",
     "difficultyReason": "需把象限規則轉回具體導航語句，屬素養應用。",
     "literacyContextNecessity": "無人車的東西南北感測紀錄必須轉成坐標符號才能判斷象限，情境具有實際決策功能。",
     "authoringIntent": "由象限選擇感測方位",
@@ -1040,7 +1061,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "32653f9faa91de930afbc755a1a8b81d921a977b47e751bd5e5b08eb6f434c7c"
+    "contentSha256": "fc3c5fa39b58797b988c6eee53369650606e45cafebc1b917790f31d1a404361"
   }
 ];
 
@@ -1061,17 +1082,17 @@ export const CONSTRUCTED_RESPONSES = [
       "寫出三個位置。"
     ],
     "fullCreditSolution": [
-      "A 的符號為 (-,+)，所以在第二象限。",
-      "B 的符號為 (+,-)，所以在第四象限。",
-      "C 的 x=0，所以在 y 軸正半軸上，不屬任何象限。"
+      "A=(-5,2) 的符號為 (-,+)，橫坐標負、縱坐標正，所以位於第二象限。",
+      "B=(3,-4) 的符號為 (+,-)，橫坐標正、縱坐標負，所以位於第四象限。",
+      "C=(0,6) 的橫坐標為零，故位於 y 軸正半軸，不屬於任何象限。"
     ],
     "alternativeSolutions": [
       "可用『左上、右下、軸上』先描述，再轉成象限名稱。"
     ],
     "reasoningSteps": [
-      "A 的符號為 (-,+)，所以在第二象限。",
-      "B 的符號為 (+,-)，所以在第四象限。",
-      "C 的 x=0，所以在 y 軸正半軸上，不屬任何象限。"
+      "逐點先檢查是否有任一分量為零，以辨認坐標軸。",
+      "對兩分量皆非零的點，依序記錄 x、y 的正負號。",
+      "把符號組合對應象限，對零分量點說明所在半軸。"
     ],
     "rubric": [
       {
@@ -1098,8 +1119,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "象限使用「第一象限」等完整名稱；坐標軸上的點必須寫明 x 軸或 y 軸，不可寫成第幾象限。",
     "answerOnlyPolicy": "只列三個位置且全對但沒有正負號或零分量的判斷依據，最高給 2 分。",
     "commonErrors": [
-      "把第二、第四象限對調。",
-      "把 C 判成第一或第二象限。"
+      "看到 A 含負數就判第三象限，未同時檢查縱坐標為正。",
+      "把 (+,-) 與 (-,+) 的象限順序記反，交換第二、第四象限。",
+      "把 C=(0,6) 判第一或第二象限，忽略坐標軸不屬象限。"
     ],
     "independentReview": {
       "derivedResult": "各點獨立計分；一點錯誤不影響另外兩點。",
@@ -1109,7 +1131,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "655329dfae22c0c395c24d5f7233fb1ea9749c3f1336289c20da16c3cb44cd40"
+    "contentSha256": "cff8264f67233c1b312cf344bd8ae127c29070e6f23d6954310d367a019ebd01"
   },
   {
     "questionId": "u05-s002-cr002",
@@ -1128,19 +1150,17 @@ export const CONSTRUCTED_RESPONSES = [
       "解釋端點對應坐標軸。"
     ],
     "fullCreditSolution": [
-      "第二象限要求 2k-6<0 且 k+1>0。",
-      "由 2k-6<0 得 k<3；由 k+1>0 得 k>-1。",
-      "交集為 -1<k<3。",
-      "k=-1 時 y=0，k=3 時 x=0，兩點都在坐標軸上，所以端點不包含。"
+      "第二象限要求橫坐標負、縱坐標正，所以列出 2k-6<0 與 k+1>0。",
+      "解得 k<3 與 k>-1，兩個條件必須同時成立，交集為 -1<k<3。",
+      "k=-1 時縱坐標為零，k=3 時橫坐標為零，端點都落在坐標軸上，因此不包含。"
     ],
     "alternativeSolutions": [
       "可用數線標出 k<3 與 k>-1，再取重疊部分。"
     ],
     "reasoningSteps": [
-      "第二象限要求 2k-6<0 且 k+1>0。",
-      "由 2k-6<0 得 k<3；由 k+1>0 得 k>-1。",
-      "交集為 -1<k<3。",
-      "k=-1 時 y=0，k=3 時 x=0，兩點都在坐標軸上，所以端點不包含。"
+      "把第二象限符號 (-,+) 轉成兩個嚴格不等式。",
+      "分別解兩個不等式，再取共同範圍。",
+      "代入兩個端點確認零分量，使其不屬任何象限。"
     ],
     "rubric": [
       {
@@ -1167,8 +1187,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "答案須用不等式範圍表示；第二象限條件寫為 x<0 且 y>0，端點使用嚴格不等號。",
     "answerOnlyPolicy": "只寫 -1<k<3 而沒有建立兩個象限條件與端點說明，最高給 2 分。",
     "commonErrors": [
-      "把第二象限寫成 x>0、y>0。",
-      "把聯集當成交集。"
+      "只解其中一個不等式，沒有取兩個條件的交集。",
+      "把第二象限的縱坐標條件寫成 k+1<0。",
+      "使用≤包含端點，忽略分量為零時點位於坐標軸。"
     ],
     "independentReview": {
       "derivedResult": "若解不等式有一次移項錯，但後續交集與端點說明依其結果一致，可給 1 分。",
@@ -1178,14 +1199,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4e6e152b691f4d78cd60b3bbd32115b0d824f74d2d2ce17606b691c55bf39990"
+    "contentSha256": "61370728b55b9e592af5cea65f7344fbae35d4e4ccf4629276fc5e88a9678fa2"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s002-v001",
-    "contentSha256": "ede60aee2956d3a2b72f35198b8ffe621c74819fef0896e2b3310598e81b1682",
+    "contentSha256": "ae75665c04bef3556b8822c92597542311d8c7ba9bf9c4863891f85cde7695c1",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=-3<0 表示左方，y=5>0 表示上方；左上區域是第二象限。",
     "derivedAnswer": "第二象限",
@@ -1217,7 +1238,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v002",
-    "contentSha256": "1bd4f854a6e57040ab727781390fe5cc75d7d5e304e07c59a2c7b93c6da4890e",
+    "contentSha256": "dbce7d12928478d468d3f8561e1236715632813252242962297fe2c8a851b404",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "第四象限的符號是 (+,-)，只有 (6,-2) 符合。",
     "derivedAnswer": "(6,-2)",
@@ -1249,7 +1270,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v003",
-    "contentSha256": "db3a363b8d04943f26fc901ba95f3914c85e1702118303ba0c0c005879782dd5",
+    "contentSha256": "a8af445159f67ca96ec5b499cd1a76a04b1d1d9cb500b9fbf8a82365614793b3",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "第三象限位於左下，因此橫坐標與縱坐標都為負。",
     "derivedAnswer": "a<0 且 b<0",
@@ -1281,7 +1302,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v004",
-    "contentSha256": "83af4bf5574543250754543b57badef410a936d06ac6c7fbdf2e581386ed560d",
+    "contentSha256": "19649d46ae177221bd7a11124a6d8f63fa9fbe349c87b18a0d4b5e70c55e42bb",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "Q 的橫坐標為 0，所以在 y 軸上；縱坐標為負，因此在 y 軸負半軸。",
     "derivedAnswer": "y 軸負半軸上",
@@ -1313,7 +1334,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v005",
-    "contentSha256": "17208615a14e2a0f04fb712ecb5909a94a93cc189fdad984dbb6de81b2b060cf",
+    "contentSha256": "b79a88c3b6a9db0740d6789b7b2c96e95f2d44879c90e9bcca68b98664ca215d",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "第二象限要求 x<0、y>0；y=4 已為正，因此 m 必須為負，只有 -2。",
     "derivedAnswer": "-2",
@@ -1345,7 +1366,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v006",
-    "contentSha256": "7571e540b0ceb267136410094c41baaa764be104001a80ac2c30f82cdf3cd241",
+    "contentSha256": "67849b68c5140fac341084a083fa6f174ade148f744be5c1f742fe92e8388b37",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "B 的 x=-5 不為 0。要不在任何象限，只能令 y=n=0，使點位於 x 軸。",
     "derivedAnswer": "0",
@@ -1377,7 +1398,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v007",
-    "contentSha256": "e7f67834464a83ffc270d0fd714150d7c5bf869c507c231918638c8ccaae2912",
+    "contentSha256": "a11fa8741b786f0e00d78d8f12a6551f1f93f2d99d5afffff5d7edbfdac248ac",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "第一象限需 2t-6>0 且 t+1>0。第一個條件給 t>3，第二個給 t>-1；合併為 t>3，只有 4。",
     "derivedAnswer": "4",
@@ -1409,7 +1430,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v008",
-    "contentSha256": "d4323f8158cd89133ce15627727502a6b17228f3063b9258135da1d83be07309",
+    "contentSha256": "aabc42fef04dfac85b1064e68e7e4fb59048d596a0172229815e956b5b2398b5",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "P 在第一象限表示 a>0、b>0；Q 的兩分量變成負數，所以在第三象限。",
     "derivedAnswer": "第三象限",
@@ -1441,7 +1462,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v009",
-    "contentSha256": "2cdc3f7c09a9bc93cc284d8f035c0d2fa7c50b1abc1af9bd46787e596de67e16",
+    "contentSha256": "06e020d802120a0a2ddc77a6533c254e1d2843420c0492e96aa85c9ff4e2a64e",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "若在第四象限需 k-2>0 且 k+3<0，即 k>2 且 k<-3，無法同時成立，所以第四象限不可能。",
     "derivedAnswer": "第四象限",
@@ -1473,7 +1494,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v010",
-    "contentSha256": "7eef99c21ea1a97688752b829753b1254076aa014d2810feb948790bf5bfb57e",
+    "contentSha256": "5d98b8562656eaa489c4c72216304abf0a8f48486a4470af01b1c4b6efd1ff2c",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=-8 表示西方，y=6 表示北方，所以是西北方，對應第二象限。",
     "derivedAnswer": "西北方的第二象限",
@@ -1505,7 +1526,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v011",
-    "contentSha256": "ad3accd3fe08a3a144b0ca5d90a718be94b328d7914086b7f604d03b48b301f5",
+    "contentSha256": "ed74b0a99ed217115d7b554d7720419383b19579be2ea3b2daaf5eabc563f462",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x<0 表示左側；因 y 正向定為後方，所以 y<0 表示前方。兩分量皆負，為第三象限。",
     "derivedAnswer": "講臺左側且前方的第三象限",
@@ -1537,7 +1558,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s002-v012",
-    "contentSha256": "32653f9faa91de930afbc755a1a8b81d921a977b47e751bd5e5b08eb6f434c7c",
+    "contentSha256": "fc3c5fa39b58797b988c6eee53369650606e45cafebc1b917790f31d1a404361",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "第四象限是右下；若東為右、北為上，則應向東且向南。",
     "derivedAnswer": "向東 12 公尺、向南 5 公尺",
@@ -1551,19 +1572,19 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "重新計算得到「向東 12 公尺、向南 5 公尺」；其餘三項逐項檢查：「向西 12 公尺、向北 5 公尺」不成立，(-,+) 是第二象限。；「向西 12 公尺、向南 5 公尺」不成立，(-,-) 是第三象限。；「向東 12 公尺、向北 5 公尺」不成立，(+,+) 是第一象限。",
-      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「象限判斷」講義中定義，坐標固定以 (x,y) 表示。",
-      "unitConflict": "四選項均以公尺表示同類位移，不需額外換算。",
-      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-      "domainBoundary": "感測紀錄均以充電站為共同基準，公尺大小不影響象限。",
-      "alternateReading": "常見誤讀是「只看『南』或『東』其中一個方向。」；依題幹完整條件重算後不會形成另一個正確答案。"
+      "secondCorrectAnswer": "第四象限要求 (+,-)；依題幹東為正 x、北為正 y，只有向東十二公尺、向南五公尺符合，另外三項各落在其他象限。",
+      "undefinedSymbol": "充電站、原點、x 與 y 正向都在題幹明確定義，感測紀錄的東西南北可直接轉成坐標符號。",
+      "unitConflict": "四個選項都以公尺記錄相同基準下的水平與垂直位移，無須換算。",
+      "roundingConflict": "感測距離是精確整數，沒有近似值或捨入條件。",
+      "domainBoundary": "題幹明示東為 x 正向、北為 y 正向，不再依賴一般地圖慣例；充電站是所有紀錄的共同原點。",
+      "alternateReading": "若坐標正向未指定，方位與符號的對應會是隱藏假設；修正後方向定義已寫入題幹，因此唯一答案不依賴慣例。"
     },
     "difficultyReason": "需把象限規則轉回具體導航語句，屬素養應用。",
     "literacyContextNecessity": "無人車的東西南北感測紀錄必須轉成坐標符號才能判斷象限，情境具有實際決策功能。",
     "prerequisiteCheck": "需掌握象限與方向正負。",
     "languageCheck": "題幹所求為「由象限選擇感測方位」，方向、軸名、截距值或交點坐標均有明確指稱。",
     "reviewerDecision": "pass",
-    "reviewerNote": "針對「無人車地圖把充電站設為原點，車輛目前位於第四象限。下列哪組感測紀錄可能是它的位置？」重新依序處理：第四象限是右下；若東為右、北為上，則應向東且向南。 正確選項為「向東 12 公尺、向南 5 公尺」。三個干擾項均對應不同錯誤：「向西 12 公尺、向北 5 公尺」不成立，(-,+) 是第二象限。；「向西 12 公尺、向南 5 公尺」不成立，(-,-) 是第三象限。；「向東 12 公尺、向北 5 公尺」不成立，(+,+) 是第一象限。。邊界審查：感測紀錄均以充電站為共同基準，公尺大小不影響象限。 難度理由：需把象限規則轉回具體導航語句，屬素養應用。",
+    "reviewerNote": "重新依修正後條件驗算：第四象限必須是 x>0、y<0；題幹已明定東方為 x 正向、北方為 y 正向，所以東十二公尺給正橫坐標，南五公尺給負縱坐標。只有「向東 12 公尺、向南 5 公尺」符合 (+,-)，其餘三筆分屬第二、第三、第一象限。唯一性不再依賴未寫出的地圖慣例。",
     "reviewedAt": "2026-07-12",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }

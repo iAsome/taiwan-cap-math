@@ -61,11 +61,10 @@ export default {
       }
     ],
     "conceptNarrative": [
-      "若紅球:藍球=2:3，可想成紅球 2 份、藍球 3 份，總共 5 份。",
-      "已知總量時，先算每份；已知一部分時，先由該部分除以它的份數。",
-      "部分比總量不是原來的 2:3，而是 2:(2+3)=2:5。",
-      "只有各部分互不重複且涵蓋全部時，才能直接相加成總量。",
-      "題目若增添或移走某部分，原比通常會改變，必須用實際量重算。"
+      "部分量的比可看成份數。若甲:乙=m:n，甲占 m 份、乙占 n 份，總量對應 m+n 份；先用已知總量、部分量或差量求每份，才能得到實際數量。",
+      "已知總量時，每份=總量÷總份數；已知某部分時，每份=該部分÷對應份數；已知兩部分的差時，每份=差量÷份數差。分子所對應的量必須核對清楚。",
+      "若發生增加、減少或轉移，先求原來的實際量，再依題意更新。從乙移給甲時，甲增加、乙同量減少，總量不變；直接改比的數字通常會得到錯誤結果。",
+      "等份圖只能呈現份數結構，不應預先標示題目的總量、每份值或答案。題文、figureId、drawing spec、altText 與 SVG 的份數必須一致，學生才可由圖獨立推理。"
     ],
     "formalDefinitions": [
       {
@@ -104,98 +103,102 @@ export default {
     "method": [
       {
         "step": 1,
-        "instruction": "確認哪些量構成全部。",
-        "check": "有沒有遺漏第三類或重複計數？"
+        "instruction": "確認比的前後項各代表哪個部分，畫出或寫出對應份數。",
+        "check": "甲乙順序與題意一致，圖示格數和文字比完全相符。"
       },
       {
         "step": 2,
-        "instruction": "把比化成最簡整數比並加總份數。",
-        "check": "總份數是否為各項相加？"
+        "instruction": "判斷已知量對應總份數、單一部分份數或份數差。",
+        "check": "沒有把部分量誤除以總份數，也沒有把差量當總量。"
       },
       {
         "step": 3,
-        "instruction": "根據已知量求每份。",
-        "check": "已知的是總量還是某一部分？"
+        "instruction": "用已知量除以正確份數，求每一份的實際大小。",
+        "check": "單位保留，每份值乘回已知份數能還原題目數值。"
       },
       {
         "step": 4,
-        "instruction": "乘回各部分份數。",
-        "check": "各部分相加是否等於總量？"
+        "instruction": "將每份乘各部分份數，變動題再依順序加減或轉移。",
+        "check": "轉移前後總量守恆，增加與減少方向正確。"
       },
       {
         "step": 5,
-        "instruction": "若情況改變，重算實際量與新比。",
-        "check": "有無增加、減少或轉移？"
+        "instruction": "以總和、差量與最簡比至少一項回驗。",
+        "check": "所有已知條件同時成立，部分量沒有顛倒。"
       }
     ],
     "workedExamples": [
       {
-        "exampleId": "L1",
-        "prompt": "甲乙人數比 3:5，共 32 人，求甲。",
+        "exampleId": "u06-s003-example-a",
+        "prompt": "甲:乙=2:5，總量四十九，求甲與乙。",
         "solutionSteps": [
-          "總份數 3+5=8。",
-          "每份 32÷8=4，甲為 3×4=12。"
+          "總份數七，每份 49÷7=7。",
+          "甲 2×7=14，乙 5×7=35。"
         ],
-        "answer": "12 人。"
+        "answer": "甲十四、乙三十五。",
+        "why": "總量四十九對應二加五共七份，每份七。兩部分相加回到四十九，十四比三十五同除以七也確實為二比五。"
       },
       {
-        "exampleId": "L2",
-        "prompt": "紅球:白球=4:7，紅球有 20 顆，求總數。",
+        "exampleId": "u06-s003-example-b",
+        "prompt": "甲:乙=3:8，乙比甲多二十五，求兩部分。",
         "solutionSteps": [
-          "4 份是 20，所以每份 5。",
-          "總份數 11，總數 11×5=55。"
+          "份數差 8-3=5，故每份 25÷5=5。",
+          "甲 15、乙 40。"
         ],
-        "answer": "55 顆。"
+        "answer": "甲十五、乙四十。",
+        "why": "二十五只對應乙比甲多的五份，不是總量。每份五後，三份與八份分別為十五與四十，差正好二十五。"
       },
       {
-        "exampleId": "L3",
-        "prompt": "甲:乙=2:5，乙比甲多 18，求甲乙。",
+        "exampleId": "u06-s003-example-c",
+        "prompt": "甲:乙=4:7，甲有二十，求總量。",
         "solutionSteps": [
-          "份數差 5-2=3 份對應 18。",
-          "每份 6，甲 12、乙 30。"
+          "甲四份等於二十，每份五。",
+          "總份數十一，所以總量 11×5=55。"
         ],
-        "answer": "甲 12，乙 30。"
+        "answer": "總量五十五。",
+        "why": "甲的二十只對應四份，因此先求每份五，再乘甲乙合計十一份。若直接用二十除以十一，會把部分量錯當總量。"
       },
       {
-        "exampleId": "L4",
-        "prompt": "班上男:女=4:5，共 36 人；再加入 4 名男生，求新比。",
+        "exampleId": "u06-s003-example-d",
+        "prompt": "A:B=4:1 的均勻混合液倒出一部分後，剩餘比為何？",
         "solutionSteps": [
-          "原每份 36÷9=4，男 16、女 20。",
-          "加入後男 20、女 20，新比 1:1。"
+          "均勻混合使倒出部分仍含 A:B=4:1。",
+          "兩成分按相同倍數減少。"
         ],
-        "answer": "1:1。"
+        "answer": "剩餘 A:B 仍為 4:1。",
+        "why": "均勻條件保證任一小份的成分比例和整體相同，倒出後兩成分同乘相同剩餘倍數，所以比值不會改變。"
       }
     ],
     "commonMistakes": [
       {
-        "mistake": "3:5 的總份數寫成 15。",
-        "why": "把加總誤成相乘。",
-        "correction": "總份數是 3+5=8。"
+        "mistake": "把比的份數直接當實際數量。",
+        "why": "忽略每份大小由已知量決定。",
+        "correction": "先求每份再乘份數。"
       },
       {
-        "mistake": "甲:乙=2:3，說甲占總量 2/3。",
-        "why": "分母應是總份數。",
-        "correction": "甲占 2/5。"
+        "mistake": "部分量除以總份數。",
+        "why": "已知量與份數對應錯誤。",
+        "correction": "單一部分量只除它自己的份數。"
       },
       {
-        "mistake": "已知乙 24 卻用 24÷總份數。",
-        "why": "沒有對準乙的份數。",
-        "correction": "先用 24÷乙的份數。"
+        "mistake": "差量當成總量分配。",
+        "why": "沒有計算兩部分的份數差。",
+        "correction": "差量除以份數差求每份。"
       },
       {
-        "mistake": "求出兩部分後未加總驗算。",
-        "why": "份量乘錯不易發現。",
-        "correction": "檢查部分和等於總量。"
+        "mistake": "增加數量直接加在比的項。",
+        "why": "比項不是固定的實際數量。",
+        "correction": "先還原原量，再進行加減。"
       },
       {
-        "mistake": "新增 3 人後仍寫原比。",
-        "why": "比例不是永久標籤。",
-        "correction": "先更新實際人數再化簡。"
+        "mistake": "轉移只改一個部分。",
+        "why": "忽略一方增加時另一方同量減少。",
+        "correction": "用總量守恆核對轉移。"
       },
       {
-        "mistake": "把有重疊的社團人數直接相加。",
-        "why": "違反互斥條件。",
-        "correction": "先處理同時參加者。"
+        "mistake": "題文份數與圖格不一致。",
+        "why": "圖像會提供互相衝突的條件。",
+        "correction": "逐字核對題文、alt、drawing spec 與 SVG 標籤。"
       }
     ],
     "selfCheck": [
@@ -252,7 +255,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "d18f4482d90a63ca32b417ec66d8de98134144930fb4e40203ebaa49c48c6f34"
+    "contentSha256": "a005f56dcf5447f7b31a6b43110cb04dcbba6dc97d11f4d25df124b9923a74e2"
   },
   "mcQuestions": [
     {
@@ -277,11 +280,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "甲=25×2/(2+3)=10。",
       "mainExplanation": "份數法：2+3=5份，25÷5×2=10。",
-      "explanation": "份數法：2+3=5份，25÷5×2=10。",
+      "explanation": "甲乙比為 2:3，總份數是五。二十五人平均分成五份，每份為 25÷5=5 人；甲占兩份，所以甲有 2×5=10 人，乙十五人也能核對總數與原來比例。",
       "steps": [
-        "總份數5",
-        "每份5人",
-        "甲2份為10人"
+        "計算總份數 2+3=5。",
+        "用 25÷5 求每份五人。",
+        "甲占兩份，算得 2×5=10 人並核對總和。"
       ],
       "optionAnalysis": [
         {
@@ -305,7 +308,7 @@ export default {
           "reason": "20人把甲當4份。"
         }
       ],
-      "misconceptionTarget": "把比的其中一項直接當人數。",
+      "misconceptionTarget": "把甲的兩份直接當成兩人，沒有利用總量求每份大小。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -326,7 +329,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9d0c3807c961339c398ba937bffd52a3c07c415dff938850803f8ebf3ab2a021"
+      "contentSha256": "a97fa46f00c6fb4627d60362959fc502cf18e169578e086f2a17b1fb61a78ee9"
     },
     {
       "questionId": "u06-s003-v002",
@@ -350,11 +353,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "白球=36×5/9=20。",
       "mainExplanation": "36÷9=4，再乘白球份數5。",
-      "explanation": "36÷9=4，再乘白球份數5。",
+      "explanation": "紅球與白球共有 4+5=9 份，三十六顆除以九得每份四顆。白球占五份，所以有 5×4=20 顆；紅球十六顆，兩者相加為三十六，十六比二十也可約為四比五。",
       "steps": [
-        "4+5=9",
-        "36÷9=4",
-        "4×5=20"
+        "把比的兩項相加，得到總份數九。",
+        "計算每份 36÷9=4 顆。",
+        "白球五份乘四，得到二十顆並驗算。"
       ],
       "optionAnalysis": [
         {
@@ -378,7 +381,7 @@ export default {
           "reason": "總份數9，每份4顆，白球5份為20顆。"
         }
       ],
-      "misconceptionTarget": "選錯對應份數。",
+      "misconceptionTarget": "用白球五份除以總數，或把紅白兩項順序交換。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -399,7 +402,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "96032c25eed36e039b5dd31a5956df424766d5de1f6e3f3e525d9d47db0da539"
+      "contentSha256": "9b7f2f850a4dd4f207f418954faa63895eac3bcd9a9d6388867ba1ca8abbf15c"
     },
     {
       "questionId": "u06-s003-v003",
@@ -423,11 +426,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "0.5+2.0=2.5，且0.5:2.0=1:4。",
       "mainExplanation": "原液=2.5×1/(1+4)=0.5。",
-      "explanation": "原液=2.5×1/(1+4)=0.5。",
+      "explanation": "原液與水的比為 1:4，總份數五。總量二點五公升除以五，得到每份 0.5 公升；原液占一份，所以原液量就是 0.5 公升，水量二公升可回驗總量。",
       "steps": [
-        "總份數5",
-        "每份0.5公升",
-        "原液1份"
+        "計算總份數 1+4=5。",
+        "求每份 2.5÷5=0.5 公升。",
+        "原液占一份，得到 0.5 公升並核對水量二公升。"
       ],
       "optionAnalysis": [
         {
@@ -451,7 +454,7 @@ export default {
           "reason": "2是水量。"
         }
       ],
-      "misconceptionTarget": "把水的4份當總份數。",
+      "misconceptionTarget": "把比的一直接解讀為一公升，忽略總量決定每份實際大小。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -472,7 +475,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "76524da4b065b00e04ef5db1737bc7372c6b6d81df2e65be0a735008bfed766f"
+      "contentSha256": "d1cbc4e2ade655bbfd4db14c20c4820f800b57e9a4b4f4f80e3abc8a76398fb5"
     },
     {
       "questionId": "u06-s003-v004",
@@ -496,10 +499,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "總量=18×10/3=60。",
       "mainExplanation": "由已知部分先求單位份量，再求總量。",
-      "explanation": "由已知部分先求單位份量，再求總量。",
+      "explanation": "甲的三份等於十八元，所以每份為 18÷3=6 元。乙占七份，有 7×6=42 元；甲乙總量為 18+42=60 元，且 18:42 約分為 3:7。已知部分量只能除以它自己的三份，不能除總份數十。",
       "steps": [
-        "18÷3=6",
-        "(3+7)×6=60"
+        "由甲三份等於十八，求每份六元。",
+        "乙七份乘六，得到四十二元。",
+        "相加 18+42=60 元，並核對原比。"
       ],
       "optionAnalysis": [
         {
@@ -523,7 +527,7 @@ export default {
           "reason": "72元把甲加乙份數算12。"
         }
       ],
-      "misconceptionTarget": "用總份數直接除已知部分。",
+      "misconceptionTarget": "用總份數十直接除甲的十八元，誤把部分量當作總量。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -544,7 +548,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "24a2539fa8d423446e75fb960cd6d01abda33109893510cbf4e9f2969fb1018c"
+      "contentSha256": "5572a0ebd3b5c6aee39384bb57301d886a11a6311bb47b1835ace98b0559dd31"
     },
     {
       "questionId": "u06-s003-v005",
@@ -568,10 +572,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "甲14、乙35，差21且比2:5。",
       "mainExplanation": "差量對應份數差5-2=3。",
-      "explanation": "差量對應份數差5-2=3。",
+      "explanation": "乙比甲多的份數為 5-2=3 份，這三份等於二十一本，因此每份為 21÷3=7 本。甲占兩份，所以甲有 2×7=14 本；乙三十五本，兩者差正好二十一本。",
       "steps": [
-        "21÷3=7",
-        "甲2×7=14"
+        "計算乙比甲多 5-2=3 份。",
+        "用 21÷3 求每份七本。",
+        "甲兩份乘七，得到十四本並核對差為二十一。"
       ],
       "optionAnalysis": [
         {
@@ -595,7 +600,7 @@ export default {
           "reason": "份數差3對應21，每份7，甲2份為14。"
         }
       ],
-      "misconceptionTarget": "把差量當一份或當甲量。",
+      "misconceptionTarget": "把二十一本當成總量分成七份，沒有辨認它只對應份數差。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -616,7 +621,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d8fd69826b1f32c52466c2a3c026f0048e6b9c5c992f424d4b067cd77502b28f"
+      "contentSha256": "9846fa762cb03618a4d5bb2353437f263c452f558264b75dd332edc7ea03ddb0"
     },
     {
       "questionId": "u06-s003-v006",
@@ -640,10 +645,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "男20、女16，合36。",
       "mainExplanation": "先由女生4份求每份，再乘總份數9。",
-      "explanation": "先由女生4份求每份，再乘總份數9。",
+      "explanation": "女生四份等於十六人，因此每份為 16÷4=4 人。男生五份有二十人，全班總人數為 20+16=36 人；也可用九份乘每份四人，二十比十六可回驗為五比四。",
       "steps": [
-        "16÷4=4",
-        "9×4=36"
+        "由女生四份等於十六，求每份四人。",
+        "男生五份乘四，得到二十人。",
+        "男女人數相加，得到全班三十六人。"
       ],
       "optionAnalysis": [
         {
@@ -667,7 +673,7 @@ export default {
           "reason": "40人把總份數當10。"
         }
       ],
-      "misconceptionTarget": "把男生人數當總量。",
+      "misconceptionTarget": "用女生十六人除總份數九，忽略十六只對應女生四份。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -688,7 +694,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4af323bf2c90022acf1ef9b87e027e93bc5c3b9add7ed9ae49d2a520737b4f5f"
+      "contentSha256": "33849eb51dc4bf2d0eb9fef444628715748b1a63b44fd34abdbd79f208224235"
     },
     {
       "questionId": "u06-s003-v007",
@@ -712,12 +718,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "19+25=44，且題目只增加4人。",
       "mainExplanation": "先求原實際人數，再更新甲並化簡。",
-      "explanation": "先求原實際人數，再更新甲並化簡。",
+      "explanation": "原比 3:5 共八份，四十人除以八得每份五人，所以甲十五人、乙二十五人。甲增加四人後成十九人，乙不變，新比為 19:25，已互質。",
       "steps": [
-        "40÷8=5",
-        "甲15、乙25",
-        "甲增至19",
-        "19:25已互質"
+        "用 40÷(3+5) 求每份五人。",
+        "算出原甲十五、乙二十五。",
+        "甲加四成十九，列新比 19:25 並確認最簡。"
       ],
       "optionAnalysis": [
         {
@@ -741,7 +746,7 @@ export default {
           "reason": "把19:25錯誤近似成4:5。"
         }
       ],
-      "misconceptionTarget": "變動後仍沿用舊比或把實量當份數。",
+      "misconceptionTarget": "直接在比的前項三上加四，寫成七比五而忽略實際人數。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -762,7 +767,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "886d8071a2ce3b569196b4be6d0d880d4094dc8ba1422259a8ef032980a10155"
+      "contentSha256": "0f173daeefb59e408164a85840e139415d53c4283bdb768cf8df185d75f40925"
     },
     {
       "questionId": "u06-s003-v008",
@@ -786,12 +791,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "原為16與28，移6後皆22。",
       "mainExplanation": "移動不改變總量，但使兩者差距縮少12。",
-      "explanation": "移動不改變總量，但使兩者差距縮少12。",
+      "explanation": "令甲=4k、乙=7k。從乙移六個給甲後相等，所以 4k+6=7k-6，整理得 3k=12、k=4。原總量為 (4+7)×4=44 個；轉移只改分配，不改四十四的總數，轉移後兩邊各二十二個。",
       "steps": [
-        "4k+6=7k-6",
-        "3k=12",
-        "k=4",
-        "總量=11×4=44"
+        "依原比設甲=4k、乙=7k。",
+        "列轉移後相等式 4k+6=7k-6。",
+        "解得 k=4，計算總量 11×4=44。"
       ],
       "optionAnalysis": [
         {
@@ -815,7 +819,7 @@ export default {
           "reason": "66把移動6誤當每份。"
         }
       ],
-      "misconceptionTarget": "只把6視為原差，忽略一加一減。",
+      "misconceptionTarget": "只在乙減六卻沒有在甲加六，破壞轉移前後總量不變。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -836,7 +840,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "dc48e07272418a00651479641ff8611e69a08832173c51e8b653c64456b0a97f"
+      "contentSha256": "c5c23488c3aee921a1861a1132e95aa6b54e4b32208a9ad24772dd66ecf76918"
     },
     {
       "questionId": "u06-s003-v009",
@@ -860,12 +864,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "原甲24、乙64；變動後30:60=1:2。",
       "mainExplanation": "以共同份量k表示原數，再建立變動後比例式。",
-      "explanation": "以共同份量k表示原數，再建立變動後比例式。",
+      "explanation": "設原甲=3k、乙=8k，變動後有 (3k+6):(8k-4)=1:2。交叉相乘得 2(3k+6)=8k-4，整理為 2k=16，所以 k=8，原甲為 3×8=24。代回變動後三十比六十，確為一比二，所有變動條件一致，因此答案唯一。",
       "steps": [
-        "2(3k+6)=8k-4",
-        "6k+12=8k-4",
-        "k=8",
-        "甲=3k=24"
+        "依原比設甲=3k、乙=8k。",
+        "依變動列比例 (3k+6):(8k-4)=1:2。",
+        "交叉相乘解得 k=8，再求原甲二十四。"
       ],
       "optionAnalysis": [
         {
@@ -889,7 +892,7 @@ export default {
           "reason": "48對應k=16，新比54:124。"
         }
       ],
-      "misconceptionTarget": "變動量放錯部分或交叉相乘錯誤。",
+      "misconceptionTarget": "把增加六、減少四直接改在比的三與八上，而非實際數量。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -910,7 +913,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3a27af182435c6218d879e9e1f6fefc71363a68faba638526e0a8597cc2bd625"
+      "contentSha256": "061ee6ad891cb0a175797f9a14db505c12ff1b2e0667be11e42e938447da8764"
     },
     {
       "questionId": "u06-s003-v010",
@@ -934,12 +937,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "出席總44，男24女20，比6:5。",
       "mainExplanation": "先求原人數，再更新出席量。",
-      "explanation": "先求原人數，再更新出席量。",
+      "explanation": "男女人數比 7:5 共十二份，四十八人除以十二得每份四人，所以男二十八、女二十。男生請假四人後出席二十四人，新比 24:20 化簡為 6:5。",
       "steps": [
-        "48÷12=4",
-        "男28女20",
-        "男24",
-        "24:20=6:5"
+        "由 48÷12 求每份四人。",
+        "算出男二十八、女二十，再將男生減四。",
+        "列出席比 24:20，同除以四得 6:5。"
       ],
       "optionAnalysis": [
         {
@@ -963,7 +965,7 @@ export default {
           "reason": "5:6為倒比。"
         }
       ],
-      "misconceptionTarget": "把請假人數從份數扣除。",
+      "misconceptionTarget": "把請假四人直接從比的前項七減掉，沒有先求實際人數。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -984,7 +986,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "88a18357d9f6a1b3feb89c23e42162a80e069c96a5b0fe6274e4f6094a747258"
+      "contentSha256": "0f3d2ee043c7ffefbe6d96438a1702f385440ab65bd11001f01b2ac2dc28fe37"
     },
     {
       "questionId": "u06-s003-v011",
@@ -1008,12 +1010,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "60:165=4:11，所以喬木占總量4/(4+11)=4/15。",
       "mainExplanation": "先用比例求實際株數，再更新總量與部分率。",
-      "explanation": "先用比例求實際株數，再更新總量與部分率。",
+      "explanation": "喬木與灌木共九份，270÷9=30 株一份，所以喬木六十、灌木二百一十。移走四十五株灌木後總數為 60+165=225，喬木占 60/225=4/15。分母必須改用移除後的剩餘總數。",
       "steps": [
-        "270÷9=30",
-        "喬木60灌木210",
-        "移後總225",
-        "60/225=4/15"
+        "依 2:7 分配總數，求喬木六十、灌木二百一十。",
+        "灌木減四十五後為一百六十五，剩餘總數二百二十五。",
+        "計算喬木占比 60/225，約分為 4/15。"
       ],
       "optionAnalysis": [
         {
@@ -1037,7 +1038,7 @@ export default {
           "reason": "4/13錯誤約分。"
         }
       ],
-      "misconceptionTarget": "移走後仍使用原總量或原占比。",
+      "misconceptionTarget": "分母仍使用原總數二百七十，沒有隨移走灌木更新剩餘總量。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -1058,7 +1059,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4eab5ada05d8e7683a9c06d0b155fd52d8c5c1634db12c883efe68d9131f0898"
+      "contentSha256": "249e2690d2b22d26b5b3d71c3792477bf7a27f36c43bbe85dcbf858c1a8adae0"
     },
     {
       "questionId": "u06-s003-v012",
@@ -1082,11 +1083,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "以實際量驗算0.72/0.48=1.5。",
       "mainExplanation": "倒出混合液相當於 A、B 同乘相同剩餘比例，因此比值維持3:2。",
-      "explanation": "倒出混合液相當於 A、B 同乘相同剩餘比例，因此比值維持3:2。",
+      "explanation": "飲料已混合均勻，倒出的每一部分都含相同比例的 A 與 B，因此兩成分同乘相同的剩餘倍數。總量雖減少零點三公升，A:B 仍保持 3:2。",
       "steps": [
-        "原A0.9L、B0.6L",
-        "倒出20%後各剩80%",
-        "0.72:0.48=3:2"
+        "辨認倒出前飲料已混合均勻。",
+        "倒出部分含 A、B 的比仍為 3:2。",
+        "兩成分按相同倍數減少，所以剩餘比保持 3:2。"
       ],
       "optionAnalysis": [
         {
@@ -1110,7 +1111,7 @@ export default {
           "reason": "混合均勻後倒出時兩成分按同一比例減少，剩餘比不變。"
         }
       ],
-      "misconceptionTarget": "認為倒出總量一定改變成分比。",
+      "misconceptionTarget": "把零點三公升只從其中一種成分扣除，忽略混合均勻條件。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-solve"
@@ -1131,7 +1132,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9441a3ab47d5e2a6247795115d03d4e5d80b0fcf5d19c1de5015de717ab4468c"
+      "contentSha256": "a2c4111cb15007bbbb23fa1ebea696120b6b7d7617471c44be45f77a143235a0"
     }
   ],
   "constructedResponses": [
@@ -1144,7 +1145,7 @@ export default {
       "difficulty": "standard",
       "itemType": "constructed-response",
       "type": "constructed-response",
-      "prompt": "圖示把總量分成甲3份、乙5份。若總量64，求甲、乙，並說明圖中的每一格代表多少。",
+      "prompt": "圖示把總量平均分成五格，前兩格代表甲、後三格代表乙。若總量為 65 個，求甲、乙各有多少，並說明圖中每一格代表多少個。",
       "target": "由份數圖求部分",
       "requiredWork": [
         "由圖讀出總份數。",
@@ -1152,62 +1153,62 @@ export default {
         "用總和和比值驗算。"
       ],
       "fullCreditSolution": [
-        "總份數3+5=8。",
-        "每份64÷8=8；甲3×8=24，乙5×8=40。",
-        "24+40=64，且24:40=3:5。"
+        "圖中甲二份、乙三份，總份數為 2+3=5，與五個等寬格一致。",
+        "每一格代表 65÷5=13 個；甲有 2×13=26 個，乙有 3×13=39 個。",
+        "驗算 26+39=65，且 26:39 同除以十三為 2:3，與圖示份數相符。"
       ],
       "alternativeSolutions": [
-        "可列甲=3k、乙=5k，8k=64。"
+        "可設甲=2k、乙=3k，由 5k=65 得 k=13，再求甲二十六、乙三十九。"
       ],
       "reasoningSteps": [
-        "總份數3+5=8。",
-        "每份64÷8=8；甲3×8=24，乙5×8=40。",
-        "24+40=64，且24:40=3:5。"
+        "逐格讀圖，確認甲二份、乙三份、總共五份。",
+        "用總量六十五除以五，求每格十三個。",
+        "分別乘甲、乙份數並以總和與比值雙重驗算。"
       ],
       "rubric": [
         {
           "score": 3,
-          "criteria": "每份8、甲24、乙40，並完成總和或比值驗算。"
+          "criteria": "正確寫出每格十三個、甲二十六個、乙三十九個，並完成總和或比值驗算。"
         },
         {
           "score": 2,
-          "criteria": "甲乙正確但未說每份或未驗算。"
+          "criteria": "甲乙兩部分皆正確，但未說明每格代表十三個或未完成驗算。"
         },
         {
           "score": 1,
-          "criteria": "正確讀出8份並建立64÷8，但後續一項乘錯。"
+          "criteria": "正確讀出五份並列出 65÷5，但後續只有一個部分量正確。"
         },
         {
           "score": 0,
-          "criteria": "把3×5當總份數或無有效過程。"
+          "criteria": "未依圖讀出二份與三份，或沒有可辨識的份數分配過程。"
         }
       ],
       "partialCreditRules": [
-        "讀圖總份數與每份是核心。",
-        "甲乙顛倒但計算一致最多1分。"
+        "讀出甲二份、乙三份及每格十三個是核心評分依據。",
+        "若甲乙份數對調但後續乘算一致，最多給一分。"
       ],
-      "followThroughPolicy": "若每份計算小錯，後續按3份與5份一致乘算可給1分；若把圖的份數讀錯，不採跟隨。",
-      "unitNotationRules": "答案單位依題目視為個；圖格只代表份數，不代表固定8直到使用總量。",
-      "answerOnlyPolicy": "只寫24、40最多2分。",
+      "followThroughPolicy": "若每格十三的計算有單一算術錯誤，但後續仍一致乘甲二份、乙三份，可依過程給一分；讀圖份數錯誤不採跟隨。",
+      "unitNotationRules": "總量與部分量以『個』表示；圖格代表等份，每格十三個是由總量六十五計算所得，不是圖上預先標示。",
+      "answerOnlyPolicy": "只寫甲二十六、乙三十九而沒有每格與份數過程，最多給二分。",
       "commonErrors": [
-        "總份數寫15。",
-        "甲乙份數顛倒。",
-        "只求一部分。"
+        "把二乘三當成總份數六，沒有數出五個等寬格。",
+        "把甲乙份數對調，算成甲三十九、乙二十六。",
+        "直接用六十五分別乘二與三，沒有先求每格十三個。"
       ],
       "visualMode": "figure-supported",
       "figureId": "u06-fig-part-total-strip-01",
       "drawingSpecRef": "units/u06/s003/drawing-specs.jsonl#u06-fig-part-total-strip-01",
       "independentReview": {
-        "derivedResult": "甲24、乙40、每份8。",
-        "ambiguity": "圖中3格與5格標示明確，圖不按實際大小但格數可數。",
-        "scope": "U06 locked skill only; no future-unit method required.",
+        "derivedResult": "每格十三個，甲二十六個，乙三十九個。",
+        "ambiguity": "題文、figureId、drawing spec、altText 與 SVG 均明示甲二格、乙三格、總共五格；圖未提供總量六十五或計算答案。",
+        "scope": "只使用 U06 部分量與總量的份數法，不需要後續技能。",
         "decision": "pass",
         "reviewedAt": "2026-07-12"
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "7d1e14ababd2c55100e8b6addf83d38380c0e533214617c12a8ed7175b5f5737"
+      "contentSha256": "5c0847d8d6a71037ce794304af7394b3989a9f65ac0101bcca6bb3a550ada554"
     },
     {
       "questionId": "u06-s003-cr002",
@@ -1226,19 +1227,17 @@ export default {
         "求兩部分並驗證轉移後比。"
       ],
       "fullCreditSolution": [
-        "令甲=4k、乙=9k。",
-        "(4k+10):(9k-10)=2:3，所以3(4k+10)=2(9k-10)。",
-        "12k+30=18k-20，6k=50，k=25/3。",
-        "原甲100/3、乙75，總量325/3；轉移後130/3:65=2:3。"
+        "依原比設甲=4k、乙=9k。轉移十個後，甲為 4k+10、乙為 9k-10，總量保持不變。",
+        "由新比列 (4k+10):(9k-10)=2:3，交叉相乘得 12k+30=18k-20，所以 k=25/3。",
+        "原甲=100/3、原乙=75、總量=325/3；轉移後 130/3:65 約分為 2:3，驗算成立。"
       ],
       "alternativeSolutions": [
         "可用原差5k；轉移後差縮少20，且2:3的差為1份，再聯立總量不變求解。"
       ],
       "reasoningSteps": [
-        "令甲=4k、乙=9k。",
-        "(4k+10):(9k-10)=2:3，所以3(4k+10)=2(9k-10)。",
-        "12k+30=18k-20，6k=50，k=25/3。",
-        "原甲100/3、乙75，總量325/3；轉移後130/3:65=2:3。"
+        "用共同倍數 k 表示原甲、乙。",
+        "依轉移方向分別加十、減十，建立新比例式。",
+        "解得 k 後求兩部分與總量，再代回新比驗算。"
       ],
       "rubric": [
         {
@@ -1266,9 +1265,9 @@ export default {
       "unitNotationRules": "分數可寫帶分數；需清楚標示甲、乙、總量。",
       "answerOnlyPolicy": "只寫三個數且無方程最多1分。",
       "commonErrors": [
-        "誤以為轉移改變總量。",
-        "甲減10乙加10。",
-        "強迫k為整數。"
+        "只在甲加十而忘記乙要減十，造成總量不守恆。",
+        "把新比二比三直接套到原甲乙，忽略轉移前後不同。",
+        "解得 k=25/3 後擅自取整數，改變精確答案。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1283,7 +1282,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "d34acbeb6324cc61e2e01d623c80333f676e229ffae74e98fc6deefbf9446e0e"
+      "contentSha256": "8b6f5f0d07453f71f776931e9e1392a492687155ff6776230c299df3d5822a10"
     }
   ],
   "semanticReviews": [
@@ -1292,7 +1291,7 @@ export default {
       "questionId": "u06-s003-v001",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "9d0c3807c961339c398ba937bffd52a3c07c415dff938850803f8ebf3ab2a021",
+      "contentSha256": "a97fa46f00c6fb4627d60362959fc502cf18e169578e086f2a17b1fb61a78ee9",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1329,7 +1328,7 @@ export default {
       "questionId": "u06-s003-v002",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "96032c25eed36e039b5dd31a5956df424766d5de1f6e3f3e525d9d47db0da539",
+      "contentSha256": "9b7f2f850a4dd4f207f418954faa63895eac3bcd9a9d6388867ba1ca8abbf15c",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1366,7 +1365,7 @@ export default {
       "questionId": "u06-s003-v003",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "76524da4b065b00e04ef5db1737bc7372c6b6d81df2e65be0a735008bfed766f",
+      "contentSha256": "d1cbc4e2ade655bbfd4db14c20c4820f800b57e9a4b4f4f80e3abc8a76398fb5",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1403,7 +1402,7 @@ export default {
       "questionId": "u06-s003-v004",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "24a2539fa8d423446e75fb960cd6d01abda33109893510cbf4e9f2969fb1018c",
+      "contentSha256": "5572a0ebd3b5c6aee39384bb57301d886a11a6311bb47b1835ace98b0559dd31",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1440,7 +1439,7 @@ export default {
       "questionId": "u06-s003-v005",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "d8fd69826b1f32c52466c2a3c026f0048e6b9c5c992f424d4b067cd77502b28f",
+      "contentSha256": "9846fa762cb03618a4d5bb2353437f263c452f558264b75dd332edc7ea03ddb0",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1477,7 +1476,7 @@ export default {
       "questionId": "u06-s003-v006",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "4af323bf2c90022acf1ef9b87e027e93bc5c3b9add7ed9ae49d2a520737b4f5f",
+      "contentSha256": "33849eb51dc4bf2d0eb9fef444628715748b1a63b44fd34abdbd79f208224235",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1514,7 +1513,7 @@ export default {
       "questionId": "u06-s003-v007",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "886d8071a2ce3b569196b4be6d0d880d4094dc8ba1422259a8ef032980a10155",
+      "contentSha256": "0f173daeefb59e408164a85840e139415d53c4283bdb768cf8df185d75f40925",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1551,7 +1550,7 @@ export default {
       "questionId": "u06-s003-v008",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "dc48e07272418a00651479641ff8611e69a08832173c51e8b653c64456b0a97f",
+      "contentSha256": "c5c23488c3aee921a1861a1132e95aa6b54e4b32208a9ad24772dd66ecf76918",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1588,7 +1587,7 @@ export default {
       "questionId": "u06-s003-v009",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "3a27af182435c6218d879e9e1f6fefc71363a68faba638526e0a8597cc2bd625",
+      "contentSha256": "061ee6ad891cb0a175797f9a14db505c12ff1b2e0667be11e42e938447da8764",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1625,7 +1624,7 @@ export default {
       "questionId": "u06-s003-v010",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "88a18357d9f6a1b3feb89c23e42162a80e069c96a5b0fe6274e4f6094a747258",
+      "contentSha256": "0f3d2ee043c7ffefbe6d96438a1702f385440ab65bd11001f01b2ac2dc28fe37",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1662,7 +1661,7 @@ export default {
       "questionId": "u06-s003-v011",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "4eab5ada05d8e7683a9c06d0b155fd52d8c5c1634db12c883efe68d9131f0898",
+      "contentSha256": "249e2690d2b22d26b5b3d71c3792477bf7a27f36c43bbe85dcbf858c1a8adae0",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1699,7 +1698,7 @@ export default {
       "questionId": "u06-s003-v012",
       "unitId": "u06",
       "skillId": "ratio-part-total",
-      "contentSha256": "9441a3ab47d5e2a6247795115d03d4e5d80b0fcf5d19c1de5015de717ab4468c",
+      "contentSha256": "a2c4111cb15007bbbb23fa1ebea696120b6b7d7617471c44be45f77a143235a0",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

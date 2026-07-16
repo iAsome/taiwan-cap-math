@@ -59,7 +59,8 @@ export const LECTURE = {
     "不等號不是箭頭；判讀時看開口朝大數、尖端朝小數。",
     "數線越往右數值越大，因此 x>2 的解在 2 的右側。",
     "嚴格不等號＞或＜不包含端點，使用空心點；含等號的≥或≤包含端點，使用實心點。",
-    "檢驗一個數是否為解，要把它代入原不等式，而不是只看它離端點多遠。"
+    "檢驗一個數是否為解，要把它代入原不等式，而不是只看它離端點多遠。",
+    "讀圖與畫圖都應用端點值、端點是否包含及左右方向三項資訊交叉檢查；通用圖例只能教規則，不能替代特定題目的數值與解集。"
   ],
   "formalDefinitions": [
     {
@@ -97,61 +98,74 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先把不等號讀成完整中文。",
-      "check": "是否包含「等於」？"
+      "instruction": "先把不等式完整讀成中文大小關係。",
+      "check": "沒有把符號外觀當作箭頭。"
     },
     {
       "step": 2,
-      "instruction": "找端點並決定空心或實心。",
-      "check": "＞、＜用空心；≥、≤用實心。"
+      "instruction": "找出端點並判斷等號是否使端點成立。",
+      "check": "嚴格符號空心、含等號符號實心。"
     },
     {
       "step": 3,
-      "instruction": "依大於往右、小於往左畫方向。",
-      "check": "數線右側是否代表更大的數？"
+      "instruction": "依標準數線左小右大決定射線方向。",
+      "check": "大於向右、小於向左。"
     },
     {
       "step": 4,
-      "instruction": "挑一個方向內的數代入驗證。",
-      "check": "代入後敘述是否成立？"
+      "instruction": "由圖反寫時先讀方向，再讀空心或實心。",
+      "check": "端點數值取自標籤而非圖面位置。"
+    },
+    {
+      "step": 5,
+      "instruction": "用端點、範圍內與範圍外各一值代入驗算。",
+      "check": "代入真假與數線標示一致。"
     }
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "判斷 5 是否為 x>3 的解。",
+      "prompt": "判斷5是否為x>3的解。",
       "solutionSteps": [
-        "代入 x=5，得到 5>3。",
-        "敘述為真。"
+        "把x=5代入原式。",
+        "得到5>3為真。",
+        "再確認5位於端點3右側。"
       ],
-      "answer": "5 是解。"
+      "answer": "5是解。",
+      "why": "是否為解必須以代入後的真假判斷，不能只看數字是不是正數。五大於三為真，而且五在標準數線的端點三右側，代數與圖形兩種證據一致。"
     },
     {
       "exampleId": "L2",
-      "prompt": "將 x≤−2 畫在數線上。",
+      "prompt": "將x≤-2畫在數線上。",
       "solutionSteps": [
-        "端點為 −2，因含等號畫實心點。",
-        "小於表示向左延伸。"
+        "以-2作端點。",
+        "因含等號畫實心點。",
+        "小於或等於的數向左延伸。"
       ],
-      "answer": "在 −2 畫實心點，向左畫射線。"
+      "answer": "在-2畫實心點，向左畫射線。",
+      "why": "符號≤同時提供兩項資訊：等號使-2本身成立，所以端點實心；小於使解位於-2左側。端點是負數不會改變標準數線左小右大的方向。"
     },
     {
       "exampleId": "L3",
-      "prompt": "數線在 4 畫空心點並向右延伸，寫出不等式。",
+      "prompt": "數線在4畫空心點並向右延伸，寫出不等式。",
       "solutionSteps": [
-        "向右表示大於 4。",
-        "空心點表示不包含 4。"
+        "向右表示x比4大。",
+        "空心表示4本身排除。",
+        "寫成x>4並用5、4驗算。"
       ],
-      "answer": "x>4。"
+      "answer": "x>4。",
+      "why": "射線方向先給出大於，端點空心再排除等號，因此只能是嚴格大於。代入右側的五為真、端點四為假，可排除x≥4與向左的兩種誤讀。"
     },
     {
       "exampleId": "L4",
-      "prompt": "找出 −1、0、2 中符合 x≥0 的數。",
+      "prompt": "找出-1、0、2中符合x≥0的數。",
       "solutionSteps": [
-        "逐一比較是否大於或等於 0。",
-        "−1 不符合；0 與 2 符合。"
+        "逐一代入三個候選數。",
+        "-1≥0為假，0≥0與2≥0為真。",
+        "確認端點0因等號而包含。"
       ],
-      "answer": "0、2。"
+      "answer": "0、2。",
+      "why": "逐項代入能同時檢查負數大小與端點包含性。零恰好等於端點，因≥含等號而成立；二在右側也成立，負一在左側則不符合。"
     }
   ],
   "commonMistakes": [
@@ -241,7 +255,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "ae0b32e930b93ab25db71f07125bdb4af6313dc3df22cbb4843025f97b37e0e9"
+  "contentSha256": "03adf586f22d029db6062c33fb5c01bc2febd9cf98a1f89133e12839435e3e89"
 };
 
 export const QUESTIONS = [
@@ -271,10 +285,11 @@ export const QUESTIONS = [
       "result": "x≥−3",
       "answerIndexVerified": 0
     },
-    "explanation": "「大於或等於」同時包含比 −3 大以及等於 −3，因此符號是 ≥，寫成 x≥−3。",
+    "explanation": "「大於或等於」同時包含比 −3 大以及等於 −3，因此符號是 ≥，寫成 x≥−3。 以邊界x=-3代入應成立，再取較大的0也成立，可同時確認等號與方向。",
     "steps": [
       "找出關鍵語「大於或等於」",
-      "使用含等號的大於符號 ≥"
+      "使用含等號的大於符號 ≥",
+      "代入-3與0，確認端點包含且較大數皆符合。"
     ],
     "optionAnalysis": [
       {
@@ -298,7 +313,7 @@ export const QUESTIONS = [
         "reason": "此式既方向相反又排除 −3。"
       }
     ],
-    "misconceptionTarget": "把「或等於」忽略，誤選嚴格大於。",
+    "misconceptionTarget": "把「或等於」忽略，誤選嚴格大於。 還可能只看符號尖端，沒有用邊界值核對語意。",
     "prerequisiteCheck": "需能讀懂正負數與大小關係。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "沒有單位與近似問題。",
@@ -314,7 +329,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "56e8ce69286fb8500ed241b99ac05e41602860237d30097e2358fb52571280a2"
+    "contentSha256": "4f360dd79ba89238508948890b46895ebcf0397f70c53b70f2880234c743be26"
   },
   {
     "questionId": "u07-s001-v002",
@@ -324,8 +339,8 @@ export const QUESTIONS = [
     "skillId": "inequality-symbol",
     "difficulty": "basic",
     "type": "mc",
-    "visualMode": "figure-supported",
-    "figureId": "u07-fig-symbol-number-line",
+    "visualMode": "text-only",
+    "figureId": null,
     "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
     "text": "把 x<4 表示在標準數線上，正確作法是哪一個？",
     "givenConditions": "標準數線向右數值增大。",
@@ -342,10 +357,11 @@ export const QUESTIONS = [
       "result": "在 4 畫空心點並向左",
       "answerIndexVerified": 1
     },
-    "explanation": "x<4 不包含 4，所以端點用空心點；所有小於 4 的數位於 4 左側，因此射線向左。",
+    "explanation": "x<4 不包含 4，所以端點用空心點；所有小於 4 的數位於 4 左側，因此射線向左。 可用3與4驗算：3<4為真而4<4為假，所以左側要納入、端點要排除。",
     "steps": [
       "嚴格小於不含端點",
-      "數線左側代表較小數"
+      "數線左側代表較小數",
+      "用3與4代入，檢查射線方向及空心端點。"
     ],
     "optionAnalysis": [
       {
@@ -369,7 +385,7 @@ export const QUESTIONS = [
         "reason": "端點與方向都不符合。"
       }
     ],
-    "misconceptionTarget": "把不等號當箭頭，或忽略嚴格不等號的空心端點。",
+    "misconceptionTarget": "把不等號當箭頭，或忽略嚴格不等號的空心端點。 共用圖例若不是空心向左也不可拿來代替題幹條件。",
     "prerequisiteCheck": "需知道數線方向與空心實心意義。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "沒有單位與計算。",
@@ -385,7 +401,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9099a48c485ff8cf0fe0be10a82f95df8338ad0e7a7289dc3eaa87e0cbb9a782"
+    "contentSha256": "0fa807158ab4f84668b96b4d4381cc25948a9934281226b1ab6efc5009f8a11e"
   },
   {
     "questionId": "u07-s001-v003",
@@ -413,10 +429,11 @@ export const QUESTIONS = [
       "result": "−2",
       "answerIndexVerified": 2
     },
-    "explanation": "x≤−2 要求候選數小於或等於 −2。四個選項中只有 −2 符合，而且等號允許端點。",
+    "explanation": "x≤−2 要求候選數小於或等於 −2。四個選項中只有 −2 符合，而且等號允許端點。 負數越往數線左側越小，-1其實大於-2；只有端點-2因含等號而通過。",
     "steps": [
       "逐一與 −2 比較",
-      "確認 ≤ 包含 −2"
+      "確認 ≤ 包含 −2",
+      "逐項代入並特別比較-1與-2在數線上的位置。"
     ],
     "optionAnalysis": [
       {
@@ -440,7 +457,7 @@ export const QUESTIONS = [
         "reason": "3 大於 −2。"
       }
     ],
-    "misconceptionTarget": "看到負數就選 −1，未實際比較負數大小。",
+    "misconceptionTarget": "看到負數就選 −1，未實際比較負數大小。 也可能把負號忽略，只比較一與二的絕對值大小。",
     "prerequisiteCheck": "需能比較負整數大小。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "沒有單位與近似。",
@@ -456,7 +473,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "58e3ce5882e6ea7a14f34ed74bb817a384c7222f67b173714786d90015fdb52a"
+    "contentSha256": "90a94c375ceb8be53ab80119987e84532951fca1c7732e8b8532912ea8a4dc37"
   },
   {
     "questionId": "u07-s001-v004",
@@ -484,10 +501,11 @@ export const QUESTIONS = [
       "result": "a>5",
       "answerIndexVerified": 3
     },
-    "explanation": "5<a 表示 a 比 5 大。交換左右書寫時，大小關係不能改變，所以寫成 a>5。",
+    "explanation": "5<a 表示 a 比 5 大。交換左右書寫時，大小關係不能改變，所以寫成 a>5。 交換左右只是改寫閱讀順序，必須同步改成開口朝a，才能仍表達a比5大。",
     "steps": [
       "讀成「5 小於 a」",
-      "改寫成「a 大於 5」"
+      "改寫成「a 大於 5」",
+      "取a=6與a=5測試，確認a>5與原式真假一致。"
     ],
     "optionAnalysis": [
       {
@@ -511,7 +529,7 @@ export const QUESTIONS = [
         "reason": "a>5 完全等價。"
       }
     ],
-    "misconceptionTarget": "交換不等式兩邊時保留原符號外觀，造成語意反向。",
+    "misconceptionTarget": "交換不等式兩邊時保留原符號外觀，造成語意反向。 只搬動未知數位置，卻讓改寫後的真假集合與原式不同。",
     "prerequisiteCheck": "需能閱讀不等號方向。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "沒有單位與近似。",
@@ -527,7 +545,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9d8500d7953f59f5ff2263472253af79d6e3e3a563760cd15057f4bdcb7f5a48"
+    "contentSha256": "cab6661a9fb186edc2b663d54ece73d41b3cb2d0894cc7cd79908be25d5661cd"
   },
   {
     "questionId": "u07-s001-v005",
@@ -537,8 +555,8 @@ export const QUESTIONS = [
     "skillId": "inequality-symbol",
     "difficulty": "standard",
     "type": "mc",
-    "visualMode": "figure-supported",
-    "figureId": "u07-fig-symbol-number-line",
+    "visualMode": "text-only",
+    "figureId": null,
     "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
     "text": "數線在 −1 畫實心點，並向右延伸。此圖表示哪一個不等式？",
     "givenConditions": "標準數線右側較大；端點標為 −1。",
@@ -555,10 +573,11 @@ export const QUESTIONS = [
       "result": "x≥−1",
       "answerIndexVerified": 1
     },
-    "explanation": "向右表示比 −1 大；實心點表示 −1 也包含在內，因此是 x≥−1。",
+    "explanation": "向右表示比 −1 大；實心點表示 −1 也包含在內，因此是 x≥−1。 以-1與0檢查，兩者都在解集中；比-1小的-2則不在向右射線上。方向判定也與數線左小右大的次序一致。",
     "steps": [
       "讀方向為大於",
-      "讀實心端點為包含"
+      "讀實心端點為包含",
+      "測試端點-1、右側0與左側-2以驗證解集。"
     ],
     "optionAnalysis": [
       {
@@ -582,7 +601,7 @@ export const QUESTIONS = [
         "reason": "方向與包含性都相反。"
       }
     ],
-    "misconceptionTarget": "只看射線方向，忘記實心點代表等號。",
+    "misconceptionTarget": "只看射線方向，忘記實心點代表等號。 若共用圖只展示實心向左，也不能據圖取代文字描述。",
     "prerequisiteCheck": "需理解端點與射線。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "沒有單位與比例推估。",
@@ -598,7 +617,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "05a6749f937268700d93e4a4f4760beb52e75137124fe234a1a40a655761470c"
+    "contentSha256": "b389801b303522e1bbfc497fef08e66e7829c63bf3b6f5992304d090e8898059"
   },
   {
     "questionId": "u07-s001-v006",
@@ -626,10 +645,11 @@ export const QUESTIONS = [
       "result": "2 個",
       "answerIndexVerified": 2
     },
-    "explanation": "−2<x 等價於 x>−2。四數中 1 與 5 大於 −2；−2 不符合嚴格大於，−4 更小，所以共有 2 個。",
+    "explanation": "−2<x 等價於 x>−2。四數中 1 與 5 大於 −2；−2 不符合嚴格大於，−4 更小，所以共有 2 個。 題式是嚴格大於，端點-2代入得到假；只有1與5位於其右側，故計數為2。",
     "steps": [
       "先改寫為 x>−2",
-      "逐一篩選 1、5"
+      "逐一篩選 1、5",
+      "把每個候選數放到x的位置，統計真值恰有兩個。"
     ],
     "optionAnalysis": [
       {
@@ -653,7 +673,7 @@ export const QUESTIONS = [
         "reason": "四個皆符合顯然錯誤。"
       }
     ],
-    "misconceptionTarget": "把端點 −2 納入，或負數大小比較錯誤。",
+    "misconceptionTarget": "把端點 −2 納入，或負數大小比較錯誤。 還可能把題式-2<x誤讀成x<-2而選左側數。",
     "prerequisiteCheck": "需能交換不等式左右並比較負數。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "答案單位為「個」，不需四捨五入。",
@@ -669,7 +689,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "835d91bc5907ec3181e1e286f3b64a243a51e90567f62be7f2d13563ca0d944e"
+    "contentSha256": "77e9b4ba5543e0e4ab7a8e56aee13ae04d16e5fc60e133cd6a59004ccce17ff2"
   },
   {
     "questionId": "u07-s001-v007",
@@ -697,10 +717,11 @@ export const QUESTIONS = [
       "result": "2",
       "answerIndexVerified": 3
     },
-    "explanation": "兩條件共同要求 −1≤p<2。2 因為不符合 p<2 而不可能；其餘三數都落在範圍內。",
+    "explanation": "兩條件共同要求 −1≤p<2。2 因為不符合 p<2 而不可能；其餘三數都落在範圍內。 交集的左端-1包含、右端2排除；逐項代入後只有2在第二條件失敗。",
     "steps": [
       "取兩條件共同範圍",
-      "檢查右端點 2 被排除"
+      "檢查右端點 2 被排除",
+      "將四個選項同時代入兩式，找唯一至少一式為假的數。"
     ],
     "optionAnalysis": [
       {
@@ -724,7 +745,7 @@ export const QUESTIONS = [
         "reason": "2 不小於 2，違反嚴格上界。"
       }
     ],
-    "misconceptionTarget": "把 p<2 誤讀成 p≤2。",
+    "misconceptionTarget": "把 p<2 誤讀成 p≤2。 也可能只檢查其中一條不等式，沒有取兩條件的共同解。",
     "prerequisiteCheck": "需會判斷單邊不等式與端點。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "無單位與近似；1.9 是精確十進位。",
@@ -740,7 +761,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "bc96d5bd69210e3973e65e09b2694c61e8b35534c05065603f69870df186dc2e"
+    "contentSha256": "adaece426bec0913a3689229d3f5c15eb4e4c75034c679b564d6f61921a89108"
   },
   {
     "questionId": "u07-s001-v008",
@@ -750,8 +771,8 @@ export const QUESTIONS = [
     "skillId": "inequality-symbol",
     "difficulty": "advanced",
     "type": "mc",
-    "visualMode": "figure-supported",
-    "figureId": "u07-fig-symbol-number-line",
+    "visualMode": "text-only",
+    "figureId": null,
     "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
     "text": "已知 x>k 的數線圖在 6 畫空心點並向右延伸，則 k 為何？",
     "givenConditions": "圖上端點數值明確為 6。",
@@ -768,10 +789,11 @@ export const QUESTIONS = [
       "result": "6",
       "answerIndexVerified": 0
     },
-    "explanation": "x>k 的端點就是 k。圖上空心端點標在 6，方向也與大於一致，所以 k=6。",
+    "explanation": "x>k 的端點就是 k。圖上空心端點標在 6，方向也與大於一致，所以 k=6。 端點是使x=k由假轉真的分界；文字已明示空心點在6，故不需從通用圖例猜值。",
     "steps": [
       "辨認代數式的端點是 k",
-      "讀取圖上端點標值 6"
+      "讀取圖上端點標值 6",
+      "以x=6不成立、x=7成立核對k=6與向右方向。"
     ],
     "optionAnalysis": [
       {
@@ -795,7 +817,7 @@ export const QUESTIONS = [
         "reason": "端點已明確標值，能判定。"
       }
     ],
-    "misconceptionTarget": "把數線中央位置誤當 0，或無視端點標籤。",
+    "misconceptionTarget": "把數線中央位置誤當 0，或無視端點標籤。 共用圖中的字母a不是本題k，也不能用圖面位置推測端點。",
     "prerequisiteCheck": "需理解 x>k 的 k 是邊界。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -811,7 +833,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e2c2ba0b81c1698dab522f6a02abf36f4c41bfe0d4c651fe292b1eb2be377c18"
+    "contentSha256": "b299a2218fb76c0ad8391745b174a4395528f5af337915380bf8fba61ecf79eb"
   },
   {
     "questionId": "u07-s001-v009",
@@ -835,14 +857,15 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": {
-      "derivation": "測試各組：A 在 x=4 時左真右假；B 兩式都是「x 大於 −2」；C 在 x=5 時真假不同；D 在 x=0 時真假不同。故 B 正確。",
+      "derivation": "逐組檢查：第一組在x=4時x≤3為假、3≤x為真；第二組在x=5時x<5為假、x≤5為真；第三組兩式都表示x大於-2；第四組在x=0時x≥0為真、x>0為假。因此只有第三組等價。",
       "result": "x>−2 與 −2<x",
       "answerIndexVerified": 2
     },
-    "explanation": "x>−2 表示 x 比 −2 大；−2<x 表示 −2 比 x 小，兩者是同一關係。其餘各組不是方向相反，就是端點包含性不同。",
+    "explanation": "第三組的x>−2與−2<x都表示x比−2大，具有完全相同的解集。第一組方向相反；第二組在端點5的真假不同；第四組在端點0的真假不同，所以只有索引2唯一正確。",
     "steps": [
-      "逐組比較方向",
-      "再比較端點是否包含"
+      "先用內部值檢查每組方向是否相同。",
+      "再用3、5、0等端點比較包含性。",
+      "確認只有第三組所有實數的真假結果一致。"
     ],
     "optionAnalysis": [
       {
@@ -866,7 +889,7 @@ export const QUESTIONS = [
         "reason": "第四組端點 0 的包含性不同。"
       }
     ],
-    "misconceptionTarget": "只比較符號外觀，不檢查兩式的解集。",
+    "misconceptionTarget": "把選項代號與內容錯配，或只看符號外觀而未逐組檢查方向和端點。",
     "prerequisiteCheck": "需會交換左右與辨認等號。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -882,7 +905,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5d0b82f6227e6df74856dd261ecfeb4034cc7cdb9c5aa168a0dbb9d5b5e20d4a"
+    "contentSha256": "daba89135d5ea98cc6843635b1b6859326a3f88ab94f6ad2c449ed4853521d74"
   },
   {
     "questionId": "u07-s001-v010",
@@ -910,10 +933,11 @@ export const QUESTIONS = [
       "result": "−6°C",
       "answerIndexVerified": 3
     },
-    "explanation": "「低於 −5°C」表示 T<−5。−6 小於 −5，因此會啟動；−5 本身不包含，−4.8 與 0 都較高。",
+    "explanation": "「低於 −5°C」表示 T<−5。−6 小於 −5，因此會啟動；−5 本身不包含，−4.8 與 0 都較高。 邊界-5因低於是嚴格條件而不啟動；-6在數線更左且唯一符合T<-5。其餘紀錄都沒有跨過啟動的溫度門檻。",
     "steps": [
       "把規則寫成 T<−5",
-      "逐筆比較四個溫度"
+      "逐筆比較四個溫度",
+      "將四個溫度代入T<-5，確認只有-6得到真值。"
     ],
     "optionAnalysis": [
       {
@@ -937,7 +961,7 @@ export const QUESTIONS = [
         "reason": "−6 比 −5 低，符合。"
       }
     ],
-    "misconceptionTarget": "負小數大小判斷錯誤，或把「低於」當成「不高於」。",
+    "misconceptionTarget": "負小數大小判斷錯誤，或把「低於」當成「不高於」。 還可能誤認-4.8的絕對值較小就代表溫度更低。",
     "prerequisiteCheck": "需能比較負數與讀取「低於」。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "單位均為 °C，無換算與四捨五入。",
@@ -953,7 +977,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "bb20dfe4edeba86b31419d1fe4fd649e98d7528c051d801e62a1017385a30159"
+    "contentSha256": "74f3f2da08f0f683304f31669b5a4bec9c76bda642674fbced48dcb0496a60c5"
   },
   {
     "questionId": "u07-s001-v011",
@@ -981,10 +1005,11 @@ export const QUESTIONS = [
       "result": "W≤600",
       "answerIndexVerified": 0
     },
-    "explanation": "「不得超過 600」表示可以剛好等於 600，但不能更大，所以 W≤600。",
+    "explanation": "「不得超過 600」表示可以剛好等於 600，但不能更大，所以 W≤600。 用600公斤測試仍未超過上限，而601公斤已超過，故端點必須包含且方向向下。",
     "steps": [
       "辨認「不得超過」為上限",
-      "確認上限包含等於"
+      "確認上限包含等於",
+      "比較600與601公斤，驗證≤及上限方向。"
     ],
     "optionAnalysis": [
       {
@@ -1008,7 +1033,7 @@ export const QUESTIONS = [
         "reason": "方向相反且排除 600。"
       }
     ],
-    "misconceptionTarget": "把安全上限誤寫成嚴格小於，或顛倒限制方向。",
+    "misconceptionTarget": "把安全上限誤寫成嚴格小於，或顛倒限制方向。 也可能把載重上限誤寫成重量至少六百公斤的下限。",
     "prerequisiteCheck": "需理解「不超過」語意。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "W 與 600 單位同為公斤，不需換算。",
@@ -1024,7 +1049,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "dad23c48bf186ccac67c712a0c76a056ea79238cb53609933eadf5f66b985204"
+    "contentSha256": "89fd55fd4f6ef0afa130de65c60218c017d5ffc5b9f69e70d3f167e233c7d2c1"
   },
   {
     "questionId": "u07-s001-v012",
@@ -1034,8 +1059,8 @@ export const QUESTIONS = [
     "skillId": "inequality-symbol",
     "difficulty": "literacy",
     "type": "mc",
-    "visualMode": "figure-supported",
-    "figureId": "u07-fig-symbol-number-line",
+    "visualMode": "text-only",
+    "figureId": null,
     "sourceScope": "TAIWAN_JUNIOR_HIGH_CAP_MATH",
     "text": "一款遊戲的青少年模式限定「年齡未滿 18 歲」。若用 a 表示整數年齡，下列哪一個數線描述正確？",
     "givenConditions": "a 為非負整數；限制為未滿 18。",
@@ -1052,10 +1077,11 @@ export const QUESTIONS = [
       "result": "18 空心向左",
       "answerIndexVerified": 1
     },
-    "explanation": "「未滿 18」是 a<18，18 不包含，所以 18 畫空心點；小於 18 的範圍向左。整數限制不會把解集縮成只有 17。",
+    "explanation": "「未滿 18」是 a<18，18 不包含，所以 18 畫空心點；小於 18 的範圍向左。整數限制不會把解集縮成只有 17。 即使年齡限定為整數，16、17等多個值都符合，數線仍表示整個小於18的範圍。",
     "steps": [
       "翻譯未滿為 a<18",
-      "依嚴格小於選空心向左"
+      "依嚴格小於選空心向左",
+      "測試17符合、18不符合，再確認所有更小整數也符合。"
     ],
     "optionAnalysis": [
       {
@@ -1079,7 +1105,7 @@ export const QUESTIONS = [
         "reason": "整數解還有 16、15 等，不只 17。"
       }
     ],
-    "misconceptionTarget": "把「未滿」當「至多」，或把最大整數解當成整個解集。",
+    "misconceptionTarget": "把「未滿」當「至多」，或把最大整數解當成整個解集。 通用圖例未展示空心向左時，更不能把最大整數17畫成單點。",
     "prerequisiteCheck": "需理解未滿、空心端點與整數解。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "年齡單位為歲；不涉及生日日期的細分，依題目整數年齡。",
@@ -1095,7 +1121,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9a72f2fd5fa7b8968710e0c93ba87ab817545988aab9b9bc54802f5663a02447"
+    "contentSha256": "1978419acc5a80bd0acf7c17e06091f96e2ecc18046f28420b25291882f66b93"
   }
 ];
 
@@ -1114,17 +1140,19 @@ export const CONSTRUCTED_RESPONSES = [
       "逐一判斷三個指定數並說明"
     ],
     "fullCreditSolution": [
-      "x<3 不包含 3，所以在 3 畫空心點。",
-      "小於 3 的數位於 3 左側，因此射線向左。",
-      "3 不符合；2.9<3，符合；−4<3，符合。"
+      "不等式x<3是嚴格小於，代入端點得到3<3為假，因此在3畫空心點。",
+      "標準數線左側數值較小，所有小於3的數位於3左邊，所以由空心點向左畫射線與箭頭。",
+      "逐一代入：3不符合；2.9<3為真；-4<3也為真，因此後兩數是解。",
+      "再取右側的4代入得到假，可交叉確認射線沒有畫反。"
     ],
     "alternativeMethod": [
       "也可不先畫圖，直接把 3、2.9、−4 代入 x<3，再用判斷結果回頭確認數線應向左且端點空心。"
     ],
     "reasoningSteps": [
-      "辨認嚴格小於不含端點",
-      "利用數線左小右大的次序決定方向",
-      "代入每個候選值驗證"
+      "用端點3判斷空心。",
+      "依左小右大決定向左延伸。",
+      "逐一代入三個指定數。",
+      "另取右側數驗證方向。"
     ],
     "rubric": [
       {
@@ -1149,10 +1177,10 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "數線需標出端點 3；小數 2.9 可用文字判斷，不要求精確按比例定位。",
     "answerOnlyPolicy": "只寫「3 不行，其他可以」而未畫圖或說明，最多 1 分。",
     "commonErrors": [
-      "把空心點誤作實心點",
-      "把小於理解成向右延伸"
+      "把嚴格小於的端點3畫成實心，錯把3納入解集。",
+      "把不等號外觀當箭頭而向右畫，導致2.9與-4的判斷矛盾。"
     ],
-    "figureId": "u07-fig-symbol-number-line",
+    "figureId": null,
     "independentReview": {
       "decision": "pass",
       "derivedResult": "3 空心點向左；3 非解，2.9 與 −4 是解。",
@@ -1163,7 +1191,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4173705c8a25d3069e055153d2b8a74b1d7529ab99d5b8720bb8feaf8961996f"
+    "contentSha256": "ff81b56d0572fc7f0d163af464e974de4eac6643bf1c47b5f61dba69e7d76589"
   },
   {
     "questionId": "u07-s001-cr002",
@@ -1179,17 +1207,19 @@ export const CONSTRUCTED_RESPONSES = [
       "以代入說明兩者符合"
     ],
     "fullCreditSolution": [
-      "實心點表示包含 −2，向右表示大於，因此不等式為 x≥−2。",
-      "可取負數解 −1，因 −1≥−2。",
-      "可取正數解 3，因 3≥−2。"
+      "實心點表示端點-2包含在解集中，向右表示所有比-2大的數也包含，所以可寫x≥-2或-2≤x。",
+      "負數解可取-1，因-1≥-2為真；也可取端點-2。",
+      "正數解可取3，因3≥-2為真；任何正數也都位於-2右側。",
+      "用左側的-3檢查會得到假，確認解集方向不是向左。"
     ],
     "alternativeMethod": [
       "負數解亦可取 −2；正數解可取任何正數。只要分別代入 x≥−2 成立即可。"
     ],
     "reasoningSteps": [
-      "由實心點判斷含等號",
-      "由向右判斷大於",
-      "依正負數限制選取兩個例子"
+      "由實心點判定含等號。",
+      "由向右判定大於。",
+      "選一個符合的負數與正數。",
+      "代入兩個例子並以-3反查方向。"
     ],
     "rubric": [
       {
@@ -1214,10 +1244,10 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "接受 x≥−2 或 −2≤x；負數例子必須小於 0，正數例子必須大於 0。",
     "answerOnlyPolicy": "只寫 x≥−2，沒有例子，最多 1 分。",
     "commonErrors": [
-      "把 −2 的負號看成方向提示",
-      "實心點仍漏寫等號"
+      "把端點的負號誤當射線方向，寫成x≤-2。",
+      "選-3當負數例子卻未代入，沒有發現它不符合x≥-2。"
     ],
-    "figureId": "u07-fig-symbol-number-line",
+    "figureId": null,
     "independentReview": {
       "decision": "pass",
       "derivedResult": "x≥−2；例如 −1 與 3。",
@@ -1228,7 +1258,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "626df3066cab72d5caceb5e2550ea51e64beec6d08804a214cecc7fb74524435"
+    "contentSha256": "c44bf239974bfe1bfdc6c7587c9a635a925580c16bdba995485144c9d99da630"
   }
 ];
 
@@ -1239,7 +1269,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "56e8ce69286fb8500ed241b99ac05e41602860237d30097e2358fb52571280a2",
+    "contentSha256": "4f360dd79ba89238508948890b46895ebcf0397f70c53b70f2880234c743be26",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "測試邊界 x=−3：原句應成立，所以必須含等號；再測 x=0：也應成立，所以方向為大於。只有 x≥−3 同時通過。",
@@ -1271,7 +1301,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "9099a48c485ff8cf0fe0be10a82f95df8338ad0e7a7289dc3eaa87e0cbb9a782",
+    "contentSha256": "0fa807158ab4f84668b96b4d4381cc25948a9934281226b1ab6efc5009f8a11e",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "4 本身代入 4<4 為假，故端點不可填實；取 3 是解且在 4 左邊，所以應向左延伸。",
@@ -1303,7 +1333,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "58e3ce5882e6ea7a14f34ed74bb817a384c7222f67b173714786d90015fdb52a",
+    "contentSha256": "90a94c375ceb8be53ab80119987e84532951fca1c7732e8b8532912ea8a4dc37",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "把四數代入左邊：只有 −2≤−2 為真；−1≤−2、0≤−2、3≤−2 都是假。",
@@ -1335,7 +1365,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "9d8500d7953f59f5ff2263472253af79d6e3e3a563760cd15057f4bdcb7f5a48",
+    "contentSha256": "cab6661a9fb186edc2b663d54ece73d41b3cb2d0894cc7cd79908be25d5661cd",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "以 a=6 測試：5<6 成立，所以改寫式也要讓 6 成立；以 a=5 測試應不成立。四項中只有 a>5 同時符合。",
@@ -1367,7 +1397,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "05a6749f937268700d93e4a4f4760beb52e75137124fe234a1a40a655761470c",
+    "contentSha256": "b389801b303522e1bbfc497fef08e66e7829c63bf3b6f5992304d090e8898059",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "圖中 −1 被填滿，故 x=−1 必須成立；右側的 0 也在射線上，故方向是大於。答案為 x≥−1。",
@@ -1399,7 +1429,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "835d91bc5907ec3181e1e286f3b64a243a51e90567f62be7f2d13563ca0d944e",
+    "contentSha256": "77e9b4ba5543e0e4ab7a8e56aee13ae04d16e5fc60e133cd6a59004ccce17ff2",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "檢查：−4>−2 假，−2>−2 假，1>−2 真，5>−2 真，所以真值有 2 個。",
@@ -1431,7 +1461,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "bc96d5bd69210e3973e65e09b2694c61e8b35534c05065603f69870df186dc2e",
+    "contentSha256": "adaece426bec0913a3689229d3f5c15eb4e4c75034c679b564d6f61921a89108",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "代入兩式：p=2 時第一式真，但第二式 2<2 假；其他三值兩式皆真，所以唯一不可能是 2。",
@@ -1463,7 +1493,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "e2c2ba0b81c1698dab522f6a02abf36f4c41bfe0d4c651fe292b1eb2be377c18",
+    "contentSha256": "b299a2218fb76c0ad8391745b174a4395528f5af337915380bf8fba61ecf79eb",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "在 x>k 中，x=k 時應是唯一邊界且不包含。圖的唯一空心邊界在 6，因此令 k=6。",
@@ -1495,10 +1525,10 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "5d0b82f6227e6df74856dd261ecfeb4034cc7cdb9c5aa168a0dbb9d5b5e20d4a",
+    "contentSha256": "daba89135d5ea98cc6843635b1b6859326a3f88ab94f6ad2c449ed4853521d74",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
-    "independentSolution": "測試各組：A 在 x=4 時左真右假；B 兩式都是「x 大於 −2」；C 在 x=5 時真假不同；D 在 x=0 時真假不同。故 B 正確。",
+    "independentSolution": "逐組檢查：第一組在x=4時x≤3為假、3≤x為真；第二組在x=5時x<5為假、x≤5為真；第三組兩式都表示x大於-2；第四組在x=0時x≥0為真、x>0為假。因此只有第三組等價。",
     "derivedAnswer": "x>−2 與 −2<x",
     "storedAnswer": "x>−2 與 −2<x",
     "answerMatch": true,
@@ -1518,7 +1548,7 @@ export const SEMANTIC_REVIEWS = [
     "difficultyReason": "需比較四組解集而非單一轉譯。",
     "literacyNecessityCheck": "非素養分級題，未以可刪除的故事包裝難度。",
     "reviewerDecision": "pass",
-    "reviewerNote": "獨立重算：測試各組：A 在 x=4 時左真右假；B 兩式都是「x 大於 −2」；C 在 x=5 時真假不同；D 在 x=0 時真假不同。故 B 正確。 所得「x>−2 與 −2<x」與儲存答案一致。四個選項逐項檢查後只有索引 2 為真；邊界審核：每組可用端點與一個內部值區分。",
+    "reviewerNote": "獨立逐組驗算：第一組於x=4真假相反；第二組於x=5真假相反；第三組兩式皆表示x大於-2；第四組於x=0真假相反。因此只有索引2的「x>−2 與 −2<x」等價，與儲存答案一致，原先選項代號錯配已排除。",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1527,7 +1557,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "bb20dfe4edeba86b31419d1fe4fd649e98d7528c051d801e62a1017385a30159",
+    "contentSha256": "74f3f2da08f0f683304f31669b5a4bec9c76bda642674fbced48dcb0496a60c5",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "檢查 T<−5：−5<−5 假；−4.8<−5 假；−6<−5 真；0<−5 假。唯一真值是 −6°C。",
@@ -1559,7 +1589,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "dad23c48bf186ccac67c712a0c76a056ea79238cb53609933eadf5f66b985204",
+    "contentSha256": "89fd55fd4f6ef0afa130de65c60218c017d5ffc5b9f69e70d3f167e233c7d2c1",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "用邊界 W=600 測試：標示說不得超過，等於 600 尚未超過，故必須包含等號；用 W=650 應排除，方向只能是 ≤。",
@@ -1591,7 +1621,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-symbol",
-    "contentSha256": "9a72f2fd5fa7b8968710e0c93ba87ab817545988aab9b9bc54802f5663a02447",
+    "contentSha256": "1978419acc5a80bd0acf7c17e06091f96e2ecc18046f28420b25291882f66b93",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "未滿表示 a<18。令 a=18 應不符合，所以端點空心；令 a=17、16 都符合且在左側，因此是向左射線而非單點。",
@@ -1712,11 +1742,11 @@ export const DRAWING_SPECS = [
     },
     "toScale": false,
     "noVisualInferenceWarning": "本圖用於說明端點與方向，不按數值距離比例繪製；不得由線段長短推論答案。",
-    "altText": "兩條水平數線。上方在 a 畫空心點並以粗線向右延伸，表示端點不包含；下方在 b 畫實心點並以粗線向左延伸，表示端點包含。",
+    "altText": "兩條不按比例的水平數線圖例：上方在字母a畫空心點並以粗線向右延伸；下方在字母b畫實心點並以粗線向左延伸，文字分別說明端點不包含與包含。",
     "svgTitle": "不等號數線端點與方向示意",
-    "svgDesc": "上方示範空心端點向右，下方示範實心端點向左；字母僅為一般端點，圖不按比例。",
+    "svgDesc": "兩條不按比例的水平數線圖例：上方在字母a畫空心點並以粗線向右延伸；下方在字母b畫實心點並以粗線向左延伸，文字分別說明端點不包含與包含。",
     "mobileReadability": "在 360px 寬度檢查後，端點直徑、箭頭、刻度與標籤仍可分辨；文字不小於 18px。",
-    "answerLeakageReview": "圖中使用一般字母與不同於題目數值的示例，不標示任何題目的正確選項或最終數值答案。",
+    "answerLeakageReview": "圖只保留給講義說明兩種一般圖例；所有題庫與非選題已移除figureId，因此字母端點與alt、desc不會直接透露特定選項答案。",
     "svgAssertions": [
       "id=\"open-endpoint\"",
       "id=\"closed-endpoint\"",
@@ -1731,11 +1761,13 @@ export const DRAWING_SPECS = [
       "geometryCheck": "pass",
       "mobileCheck": "pass",
       "answerLeakageCheck": "pass",
-      "reviewNote": "人工渲染後移除與上方解集射線重疊的基準線箭頭；再次檢查兩條射線未遮住端點輪廓，空心點白底黑框、實心點全黑，方向清楚且未使用題目數值。",
+      "reviewNote": "重新交叉核對空心向右與實心向左的SVG幾何、alt和desc，並確認白底黑白列印及手機縮放可讀；此圖僅由講義引用，不再誤導特定題目。",
       "reviewedAt": "2026-07-12"
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b66acbbde3c0866d09aeacd32aacce9e6361dd006bd1f8f9800bc3ce40ca2ee3"
+    "contentSha256": "f8d5d947bcbfad812977fdd0af9d2262987bc3a050a5069088c0d5c3df9c7ebe",
+    "mobileReadabilityReview": "縮至360px寬時，空心與實心端點、兩條粗射線、箭頭及a、b標籤仍可區分，說明文字不與線條重疊。",
+    "printReadabilityReview": "A4黑白列印時以白底、黑框空心圓、全黑實心圓和粗線方向傳遞資訊，不依賴色彩；端點輪廓與箭頭保持清楚。"
   }
 ];

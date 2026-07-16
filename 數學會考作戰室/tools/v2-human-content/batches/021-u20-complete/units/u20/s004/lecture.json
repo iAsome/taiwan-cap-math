@@ -95,6 +95,11 @@
       "step": 4,
       "instruction": "檢查是否存在缺件。",
       "check": "角型、對應、夾角或單位是否明確？"
+    },
+    {
+      "step": 5,
+      "instruction": "把填入理由後的整個證明句完整朗讀並代回檢查。",
+      "check": "理由的條件、方向與角或邊的位置是否全都符合上下文？"
     }
   ],
   "workedExamples": [
@@ -102,19 +107,23 @@
       "exampleId": "L1",
       "prompt": "M是AB中點，所以AM＝MB（　）。",
       "solutionSteps": [
-        "前句給中點。",
-        "後句是兩段等長。"
+        "讀出空格前的直接條件是M為AB中點。",
+        "確認空格後的AM＝MB正是中點把線段分成兩段等長。",
+        "填入「中點的定義」並朗讀整句。"
       ],
-      "answer": "中點的定義。"
+      "answer": "中點的定義。",
+      "why": "填空理由必須直接連接前後句；中點定義能由M是AB中點立刻推出AM＝MB，其他平行、全等或垂直性質都沒有相應前提。"
     },
     {
       "exampleId": "L2",
       "prompt": "兩邊及夾角相等，所以兩三角形全等（　）。",
       "solutionSteps": [
-        "條件類型為邊角邊。",
-        "角位於兩邊之間。"
+        "將條件分類為兩組對應邊與一組角。",
+        "檢查相等角確實位於這兩組邊之間。",
+        "依邊角邊排列填入SAS。"
       ],
-      "answer": "SAS。"
+      "answer": "SAS。",
+      "why": "SAS中的A必須是兩個S所代表邊的夾角；只看見兩邊一角還不夠，先核對角的位置才能排除一般不成立的SSA。"
     }
   ],
   "commonMistakes": [
@@ -132,6 +141,11 @@
       "mistake": "把性質方向填成判定方向。",
       "why": "未辨認前提與結論。",
       "correction": "用完整句朗讀推理。"
+    },
+    {
+      "mistake": "只數邊角條件，不檢查相等角是否為夾角。",
+      "why": "兩邊與非夾角的SSA一般不能判定三角形全等。",
+      "correction": "在圖上標出兩組邊的共同頂點，確認相等角位於該頂點。"
     }
   ],
   "selfCheck": [
@@ -186,5 +200,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "38ae68997ac3e08dd1c53809fb25591cec42a0ad879a34e2d619809f1c553a08"
+  "contentSha256": "701efdb2af1fd64ae1427d8ab68a1db34d3f319fd2770ceea7d029a1cfe01eda"
 }

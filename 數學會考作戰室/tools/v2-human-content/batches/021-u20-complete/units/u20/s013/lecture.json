@@ -95,6 +95,11 @@
       "step": 4,
       "instruction": "再依兩高交點與位置命名。",
       "check": "是否與角型一致？"
+    },
+    {
+      "step": 5,
+      "instruction": "用第三條高或角型位置做獨立複核。",
+      "check": "複核只驗證結論，沒有把待證關係先當已知？"
     }
   ],
   "workedExamples": [
@@ -106,7 +111,8 @@
         "BP是B高。",
         "兩高交於P。"
       ],
-      "answer": "P是垂心。"
+      "answer": "P是垂心。",
+      "why": "AP 與 BP 各自同時通過頂點並垂直對邊，所以確為兩條高；兩高交點已唯一決定垂心，第三高會依共點性質通過。"
     },
     {
       "exampleId": "L2",
@@ -115,7 +121,8 @@
         "未通過對面頂點。",
         "這些是垂直平分線。"
       ],
-      "answer": "交點是外心，不是垂心。"
+      "answer": "交點是外心，不是垂心。",
+      "why": "垂直平分線的必要條件是通過邊中點並垂直該邊，服務的是頂點等距；它不通過對面頂點，故不能當作高。"
     }
   ],
   "commonMistakes": [
@@ -133,6 +140,11 @@
       "mistake": "軟體沒畫出就說高不存在。",
       "why": "可能未延長線段。",
       "correction": "顯示對邊所在直線。"
+    },
+    {
+      "mistake": "先看交點在內外，再反推線一定是高。",
+      "why": "外心等其他交點也可能位於相同區域。",
+      "correction": "先逐線核對頂點與垂直對邊，再用位置作第二層檢查。"
     }
   ],
   "selfCheck": [
@@ -191,5 +203,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "28f9201ee1cf56d0f93a5f69501ba6ad82fd5be883837604e09b6544a5793e67"
+  "contentSha256": "998bac22b8768c5edaaa2f94fe2a404ce53ce54775c4f9be8b35f91346c88216"
 }

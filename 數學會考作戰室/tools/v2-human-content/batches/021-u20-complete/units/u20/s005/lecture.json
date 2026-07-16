@@ -100,6 +100,11 @@
       "step": 4,
       "instruction": "朗讀並與原命題比較。",
       "check": "是否誤寫成逆命題或否命題？"
+    },
+    {
+      "step": 5,
+      "instruction": "用邊界值或複合條件檢查否定範圍。",
+      "check": "小於的否定是否含等於，且「A且B」是否否定為至少一項不成立？"
     }
   ],
   "workedExamples": [
@@ -107,19 +112,23 @@
       "exampleId": "L1",
       "prompt": "若能被2整除，則是偶數。",
       "solutionSteps": [
-        "P：能被2整除；Q：是偶數。",
-        "非Q：不是偶數；非P：不能被2整除。"
+        "令P為能被2整除，Q為是偶數。",
+        "把Q、P分別否定為不是偶數、不能被2整除。",
+        "交換順序寫成非Q→非P。"
       ],
-      "answer": "若不是偶數，則不能被2整除。"
+      "answer": "若不是偶數，則不能被2整除。",
+      "why": "逆否不是只把原句倒過來，而是交換P、Q後再同時否定兩邊；非Q放前、非P放後，才能保留與原命題相同的真假。"
     },
     {
       "exampleId": "L2",
       "prompt": "若距離小於5，則警報亮。",
       "solutionSteps": [
-        "非Q：警報未亮。",
-        "非P：距離不小於5，含等於5。"
+        "令P為距離小於5，Q為警報亮。",
+        "否定Q為警報未亮，否定P為距離大於或等於5。",
+        "組合成若警報未亮，則距離大於或等於5。"
       ],
-      "answer": "若警報未亮，則距離大於或等於5。"
+      "answer": "若警報未亮，則距離大於或等於5。",
+      "why": "「小於5」的否定必須包含等於5，完整寫成大於或等於5；若只寫大於5，就遺漏邊界，使逆否命題不再與原命題等價。"
     }
   ],
   "commonMistakes": [
@@ -137,6 +146,11 @@
       "mistake": "由非P推出非Q並稱逆否。",
       "why": "這是否命題。",
       "correction": "逆否從非Q開始。"
+    },
+    {
+      "mistake": "把小於某值的否定只寫成大於該值。",
+      "why": "完整否定還包含恰好等於該值的情況，漏掉後便不再等價。",
+      "correction": "把「小於a」改寫為「大於或等於a」或「不小於a」。"
     }
   ],
   "selfCheck": [
@@ -192,5 +206,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "b251aebdd6b69b3a4a52b6759085845759b6acde70a89346696bd68a0a26f638"
+  "contentSha256": "f7ca0d71eabd072f977aa8fc6d9da95939c332691527910988dc6a9755de0987"
 }

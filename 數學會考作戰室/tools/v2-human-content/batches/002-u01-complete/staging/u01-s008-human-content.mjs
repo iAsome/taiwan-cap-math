@@ -134,44 +134,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "計算 (-8)+(-5)。",
-      "solutionSteps": [
-        "同為負數。",
-        "8+5=13。",
-        "保留負號。"
-      ],
-      "answer": "-13。"
+      "prompt": "計算 (−8)+(−5)。",
+      "answer": "結果是 −13。",
+      "why": "兩個加數都是負數，代表同方向累積，應先把絕對值 8 與 5 相加得 13，再保留共同負號。加號不會使兩個負號抵消，所以結果為 −13。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "計算 11+(-7)。",
-      "solutionSteps": [
-        "異號相加。",
-        "11-7=4。",
-        "11 的絕對值較大且為正。"
-      ],
-      "answer": "4。"
+      "prompt": "計算 11+(−7)。",
+      "answer": "結果是 4。",
+      "why": "11 與 −7 是異號加法，先以較大絕對值 11 減 7 得 4，再取絕對值較大的正 11 所帶正號。從數線看也就是由 11 向左移 7 到 4。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "計算 -14+9。",
-      "solutionSteps": [
-        "異號相加。",
-        "14-9=5。",
-        "-14 的絕對值較大，結果為負。"
-      ],
-      "answer": "-5。"
+      "prompt": "計算 −14+9。",
+      "answer": "結果是 −5。",
+      "why": "異號相加先比較絕對值，14 大於 9，因此用 14−9=5 決定大小，並保留 −14 的負號。數線上從 −14 向右移 9，仍停在原點左側的 −5。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "計算 18+(-6)+(-18)+10。",
-      "solutionSteps": [
-        "先配 18 與 -18 得 0。",
-        "剩下 -6+10=4。",
-        "利用交換律與結合律不改變總和。"
-      ],
-      "answer": "4。"
+      "prompt": "計算 18+(−6)+(−18)+10。",
+      "answer": "結果是 4。",
+      "why": "利用交換律與結合律把 18 和 −18 配成相反數，兩者相加為 0；剩下 −6+10=4。重新分組時每個加數連同符號移動，原式總和不會改變。"
     }
   ],
   "commonMistakes": [
@@ -258,7 +238,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "c3d47a47c711b18fb2c5461dd91340757f1fb158e9c63102f4518a9bfbe01650",
+  "contentSha256": "229ee119b6751f6c714fd8e4043fe3a6e6c1fed15f7a76e185293bd41eed4cf7",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -282,7 +262,7 @@ export const QUESTIONS = [
       "-3"
     ],
     "answerIndex": 0,
-    "explanation": "異號相加，8-5=3，絕對值較大者8為正，所以結果3。",
+    "explanation": "−5 與 8 符號相反，表示兩個相反方向的量互相抵消。先用較大絕對值 8 減 5 得 3，再取絕對值較大的 8 所帶正號，因此 (−5)+8=3；不能把絕對值直接相加。",
     "steps": [
       "判斷異號。",
       "絕對值大減小。",
@@ -310,7 +290,7 @@ export const QUESTIONS = [
         "reason": "符號取錯。"
       }
     ],
-    "commonMistake": "異號相加仍把5與8直接相加。",
+    "commonMistake": "異號相加仍套用同號規則，把五與八直接相加成十三。",
     "concept": "異號加法做絕對值大減小。",
     "tags": [
       "數與量",
@@ -325,7 +305,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6ded25cf2e01943107084fa0bf6be0cc1957b2e3af650add7364c1562d0e163b",
+    "contentSha256": "76c9b8385aa3fa62c97eb684138c23289d45a2ad4ef366a0f2ccac1da4a0acc5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -347,7 +327,7 @@ export const QUESTIONS = [
       "3"
     ],
     "answerIndex": 1,
-    "explanation": "同為負數，絕對值相加7+4=11，保留負號，得到-11。",
+    "explanation": "兩個加數 −7、−4 同為負數，方向一致，所以先把絕對值相加：7+4=11，再保留共同的負號，得到 −11。加號連接兩個負數不會使負號抵消，−3 是誤用異號規則。",
     "steps": [
       "兩數同號且為負。",
       "7+4=11。",
@@ -375,7 +355,7 @@ export const QUESTIONS = [
         "reason": "符號與運算皆錯。"
       }
     ],
-    "commonMistake": "看到兩個負號就互相抵消。",
+    "commonMistake": "看到兩個負號便以為會互相抵消，誤把同號負數當成異號計算。",
     "concept": "同號負數相加，絕對值相加並保留負號。",
     "tags": [
       "數與量",
@@ -390,7 +370,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "162fd39faf50b8e4e2b9e9970eaf098dd8b98391103760a3c565b9af6caeffa6",
+    "contentSha256": "667b13faf113adb43b3aecb02ad49ebe790b921ab3d30c55348b07ca0a1b7d19",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -412,7 +392,7 @@ export const QUESTIONS = [
       "9"
     ],
     "answerIndex": 2,
-    "explanation": "9與-9互為相反數，相加為0。",
+    "explanation": "9 與 −9 絕對值相同、方向相反，是一對相反數。相加時兩個方向量完全抵消，9+(−9)=9−9=0；結果不是 18，也不能只保留其中一個加數。從數線看，向右九格再向左九格會回到原點。",
     "steps": [
       "辨認相反數。",
       "距離相同方向相反。",
@@ -440,7 +420,7 @@ export const QUESTIONS = [
         "reason": "只保留第一項。"
       }
     ],
-    "commonMistake": "把相反數相加誤寫成18。",
+    "commonMistake": "把相反數九與負九的絕對值相加，誤寫成十八而沒有抵消。",
     "concept": "a+(-a)=0。",
     "tags": [
       "數與量",
@@ -455,7 +435,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5a84c96017a2b3562fe5c9e9a8eb37297fafa05a630a3d3603ee2fe5bed965bb",
+    "contentSha256": "e8b8b24064a7b881ebd72a829531b0fbd00131b1cee1d4db741f84dcfe3ae054",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -477,7 +457,7 @@ export const QUESTIONS = [
       "-7"
     ],
     "answerIndex": 3,
-    "explanation": "異號相加，12-5=7，負數絕對值較大，所以結果-7。",
+    "explanation": "−12 與 5 是異號加法，先比較絕對值，12 大於 5。用 12−5=7 得結果大小，再取絕對值較大的 −12 所帶負號，因此 (−12)+5=−7；正 7 只有大小正確而符號錯誤。",
     "steps": [
       "異號。",
       "12-5=7。",
@@ -520,7 +500,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "58863ccbb350bad6e17fe03c0d7e5a1a1b4559811f24d60bee775eea8f4b2036",
+    "contentSha256": "6f009f4b32a24b0272178e07f605fe36474e5bb7bdc49383c49efb5af5ebd89d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -542,7 +522,7 @@ export const QUESTIONS = [
       "28"
     ],
     "answerIndex": 0,
-    "explanation": "(-6)+(-8)=-14，再與14相加抵消為0。也可先配14與-8得6，再加-6。",
+    "explanation": "利用結合律可先合併兩個負數：(−6)+(−8)=−14，再與正 14 相加，14+(−14)=0。也可依原順序算 14−6−8=8−8=0；兩種算法都把三項完整納入。正十四與合成的負十四恰好完全抵消。",
     "steps": [
       "辨認總負和-14。",
       "14+(-14)=0。",
@@ -570,7 +550,7 @@ export const QUESTIONS = [
         "reason": "漏負號。"
       }
     ],
-    "commonMistake": "只先算14-6=8後忘記再加-8。",
+    "commonMistake": "算完十四加負六得到八便停止，漏掉最後還要再加負八。",
     "concept": "多項加法可重排配成相反數。",
     "tags": [
       "數與量",
@@ -585,7 +565,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "013ce45a97d5eb257ada9e8c72390f2848ba8ce77edca38c9fe30642f7287f08",
+    "contentSha256": "e42eedff462729ffe2eeee99a6ef05f283dbad14d1f5642b811da1fc3cdae5eb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -607,7 +587,7 @@ export const QUESTIONS = [
       "-5"
     ],
     "answerIndex": 1,
-    "explanation": "要從-9加到4，需要增加13，因此x=13。也可兩邊加9。",
+    "explanation": "等式 −9+x=4 表示從 −9 增加 x 後到 4，因此未知加數 x=4−(−9)=4+9=13。代回檢查，−9+13=4，左右兩邊相等；若取 −5 或 5 都無法滿足原式。數線上從負九到正四也正好向右十三格。",
     "steps": [
       "寫x=4-(-9)。",
       "4+9=13。",
@@ -635,7 +615,7 @@ export const QUESTIONS = [
         "reason": "代回得-14。"
       }
     ],
-    "commonMistake": "把4與9相減得到-5。",
+    "commonMistake": "把四與九直接相減成負五，沒有依未知加數公式處理負九。",
     "concept": "未知加數＝和－已知加數。",
     "tags": [
       "數與量",
@@ -650,7 +630,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "beb6efa47511320ab451207bec332b34a100c88a44827e354096783af7a4dd6c",
+    "contentSha256": "bd00af00c5f2234085db920995fba86567c9ef8e37ecd05ee0c0106deba6b8a9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -672,7 +652,7 @@ export const QUESTIONS = [
       "-41"
     ],
     "answerIndex": 2,
-    "explanation": "18與-18先抵消，剩-7+12=5。",
+    "explanation": "加法可用交換律與結合律重新配對，但每項符號不變。先把 18 與 −18 配成相反數得 0，再算 −7+12=5，所以原式總和為 5；這樣也避免依序計算時抄錯負號。",
     "steps": [
       "用交換律配18與-18。",
       "得到0。",
@@ -715,7 +695,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b5ae4c9c3f00d0b10a4452978659e06f3abd36f885ae19dbbc1dc6abe7e66e5c",
+    "contentSha256": "b55309ad3ff54a08f6ecdb36d8801fda2649c2aa783a4c0f222aa733d09f13e5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -737,7 +717,7 @@ export const QUESTIONS = [
       "0"
     ],
     "answerIndex": 3,
-    "explanation": "-6+11-5。先把-6與-5合成-11，再與11抵消，得到0。",
+    "explanation": "先連同符號代入 a=−6、b=11、c=−5，得 −6+11+(−5)。可先合併兩個負數為 −11，再算 −11+11=0；也可依序得到 5−5=0，兩種算法一致。代入時每個字母的正負號都屬於該數本身。",
     "steps": [
       "代入三數。",
       "負數合成-11。",
@@ -765,7 +745,7 @@ export const QUESTIONS = [
         "reason": "-6+11-5=0。"
       }
     ],
-    "commonMistake": "把c=-5代入成+5。",
+    "commonMistake": "代入時把題目給的負五抄成正五，導致三個加數的符號被改變。",
     "concept": "代入後每個數連同符號參與加法。",
     "tags": [
       "數與量",
@@ -780,7 +760,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6aefcd7fe42203c702a743b7307adf5221d4ed859cf9e95d136d42b4cd1fed3b",
+    "contentSha256": "46b55ac9a281d6406d393fbb0c6a54eb55628535c28818be8f813c4682fb414c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -802,7 +782,7 @@ export const QUESTIONS = [
       "-69"
     ],
     "answerIndex": 0,
-    "explanation": "-25與25抵消，-7+12=5。",
+    "explanation": "先辨認 −25 與 25 互為相反數，相加恰為 0；剩下 (−7)+12 是異號相加，12−7=5 且正數絕對值較大，所以總和為 0+5=5。抵消後仍不能漏掉其餘兩項。",
     "steps": [
       "配對-25與25。",
       "得到0。",
@@ -830,7 +810,7 @@ export const QUESTIONS = [
         "reason": "全部負加。"
       }
     ],
-    "commonMistake": "看到-25+25後誤寫1。",
+    "commonMistake": "把負二十五與正二十五相加誤寫成一，接著造成整體總和錯誤。",
     "concept": "相反數抵消並保留其他加數。",
     "tags": [
       "數與量",
@@ -845,7 +825,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "676c696ec91fe6c4de3c00c34ec7d2bda828af17dd64607c8ff24f9e4631a487",
+    "contentSha256": "3e4f2e903aa6228e1f00704cd17d80ec2f9865c0a83139ce90f176534fff068c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -867,7 +847,7 @@ export const QUESTIONS = [
       "9°C"
     ],
     "answerIndex": 1,
-    "explanation": "-3+8+(-4)=1°C。",
+    "explanation": "以清晨 −3°C 為起始量，上升 8°C 記 +8，下降 4°C 記 −4。依時間列式 −3+8+(−4)，先到 5°C，再降到 1°C，所以傍晚溫度是 1°C，而不是只算兩段變化的淨值。最後值必須同時包含起始溫度與全部變化。",
     "steps": [
       "起始-3。",
       "升8到5。",
@@ -895,7 +875,7 @@ export const QUESTIONS = [
         "reason": "忽略起始量。"
       }
     ],
-    "commonMistake": "只用8-4=4，忘記起始溫度-3。",
+    "commonMistake": "只算上升八與下降四的淨變化四度，忘記加回清晨負三度。",
     "concept": "最後量＝起始量＋所有帶號變化。",
     "tags": [
       "數與量",
@@ -910,7 +890,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始溫度、兩段變化與時間順序都影響最後值。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8c4b3199a2929220dbd0242ed7615fc0a1be63454d0068721b8242bde1b661f5",
+    "contentSha256": "49c2da132141902f778fde9c551e0205f13aabd5deb58978c4f73b9542e309c4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -932,7 +912,7 @@ export const QUESTIONS = [
       "1,150 元"
     ],
     "answerIndex": 2,
-    "explanation": "1200+(-450)+300+(-200)=850 元。",
+    "explanation": "從起始餘額 1,200 元出發，支出記負、收入記正，完整算式為 1,200−450+300−200。依序算得 750、1,050、850，因此最後餘額為 850 元；三筆交易都必須納入。代回交易紀錄後，各次增減方向也完全一致。",
     "steps": [
       "支出記負，收入記正。",
       "1200-450=750。",
@@ -975,7 +955,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始餘額與三筆不同方向交易都是必要資料。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "da787e8cdb18c83a3b55f2b56558c6984e3d23cf8f28be0bb84f88460aba50f3",
+    "contentSha256": "55269910b8cd0a5963e75df4354041762f5937f428181154bbf8bc469bb3b0ea",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -997,7 +977,7 @@ export const QUESTIONS = [
       "5"
     ],
     "answerIndex": 3,
-    "explanation": "-6+10-3+4=5。",
+    "explanation": "總得分變化要把四回合帶號分數全部累加：−6+10−3+4。依時間順序先得 4，再減 3 得 1，最後加 4 得 5；也可先合併正分 14 與負分 −9，仍得 5。兩種分組都沒有遺漏任何一回合。",
     "steps": [
       "依序合併-6+10=4。",
       "4-3=1。",
@@ -1040,7 +1020,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "四回合的每筆帶號分數都需納入，不能只看正分。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "57f4bdddfbfc17f78eb0c1ea2b714e37b945c31fb26be877c9b5e0f5e71c803a",
+    "contentSha256": "6be1bdd8d10b2b567a848dfe5a616314b5953538207bceae013db79ffc2e4eb5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1061,8 +1041,9 @@ export const CONSTRUCTED_RESPONSES = [
       "再以原順序或另一分組驗算。"
     ],
     "fullCreditSolution": [
-      "簡便法：(-18+18)+(7-12)=0-5=-5。",
-      "原順序：-18+7=-11，-11+18=7，7-12=-5。"
+      "簡便法先把每一項連同符號重排：(−18+18)+(7−12)=0+(−5)=−5。",
+      "交換律只改變加數順序，−18 與 18 是相反數，所以先配對後不會改變原式總和。",
+      "再按原順序驗算：−18+7=−11，−11+18=7，7−12=−5，與簡便法結果一致。"
     ],
     "alternativeSolutions": [
       "也可先配7與-12，再配相反數。"
@@ -1098,7 +1079,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "112d345cd076150b88d914a9d6bf33fcde35a6e131dc0f1861eceb50360dd42c",
+    "contentSha256": "4527f175326116462291d97ce3ea582c01f7c6b19d498c7fba7ddca7104a0402",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1116,9 +1097,9 @@ export const CONSTRUCTED_RESPONSES = [
       "保留每筆正負號。"
     ],
     "fullCreditSolution": [
-      "總變化=12-9+4-6=1。",
-      "最後能量=-5+1=-4。",
-      "最後能量=起始能量+總變化。"
+      "先只合併四個事件的帶號變化：12−9+4−6=3+4−6=1，所以總變化為 +1。",
+      "最後能量要加回起始值 −5，因此 −5+(+1)=−4；總變化 1 不能直接當成最後能量。",
+      "兩個答案的關係是最後能量＝起始能量＋總變化，代入 −5+1=−4 可完整驗證。"
     ],
     "alternativeSolutions": [
       "可直接列 -5+12-9+4-6=-4，再另外指出事件和為1。"
@@ -1154,7 +1135,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "fefb6d5546211314204c1ba0b920bb49430da51a48a7ca0f0cc97df0c0c12484",
+    "contentSha256": "f2af0a6e69ecc84d9fc127fcb33580ee9c4074d5a78f5c28b58bfe9d40c5b020",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

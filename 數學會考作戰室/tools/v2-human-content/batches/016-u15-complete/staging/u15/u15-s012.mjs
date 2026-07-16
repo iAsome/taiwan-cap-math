@@ -78,7 +78,7 @@ export default {
         "exampleId": "s012-ex03",
         "title": "方案比較",
         "prompt": "方案 A 的費用為 4x+60，方案 B 為 6x+20。求兩方案同價時的 x，並判斷交點意義。",
-        "solution": "A=4x+60、B=6x+20，同價於 x=10。",
+        "solution": "令 4x+60=6x+20，解得 x=20；代回兩式皆為 140，所以交點 (20,140) 表示購買 20 單位時兩方案同價 140 元。",
         "level": "advanced"
       },
       {
@@ -144,7 +144,7 @@ export default {
       "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
     },
     "canonicalization": "sorted-keys-json-utf8-v1",
-    "contentSha256": "d1715ce7b60329b110974e9cb5e2a1f914c89b3f1ed1980f5865a653f3f841dd"
+    "contentSha256": "b0a1b2bd247562e84fc3c6f2fc22caa07718367f8584dc5c813f80d4a7316f66"
   },
   "mcQuestions": [
     {

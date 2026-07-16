@@ -59,10 +59,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "描點時先處理 x，再處理 y；但路線題必須照題目給的時間順序執行每一步。",
-    "由原點出發時，向右、向上分別增加 x、y；向左、向下分別減少 x、y。",
-    "若起點不是原點，坐標表示目前位置，移動量必須加到目前坐標上。",
-    "只說『走 3 格』而沒有方向，不能唯一決定終點。"
+    "在坐標平面描述路線時，向右使 x 增加、向左使 x 減少，向上使 y 增加、向下使 y 減少。水平移動不改 y，垂直移動不改 x，每一步都以上一步終點為新起點。",
+    "從起點 A 到終點 B 的位移可用終點坐標減起點坐標：水平變化是 x_B-x_A，垂直變化是 y_B-y_A。正負號決定方向，絕對值決定移動單位數。",
+    "多段路線要保留中途點與順序。兩條路線可能具有相同淨位移與最終點，卻經過不同位置；若題目要求依序通過指定站點，不能只用起點與終點取代完整路線。",
+    "方位情境應明示東、北和坐標正向的關係，以及每格代表多少坐標單位。反推起點時可對終點執行相反方向、倒序的移動，再用原路線正向驗證。"
   ],
   "formalDefinitions": [
     {
@@ -93,93 +93,102 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "寫出起點。",
-      "check": "是原點還是指定點？"
+      "instruction": "記錄起點，將每段方向翻成對 x 或 y 的加減。",
+      "check": "左右只改 x、上下只改 y，方向符號符合題幹定義。"
     },
     {
       "step": 2,
-      "instruction": "把每段方向改成正負改變量。",
-      "check": "右/上為正，左/下為負嗎？"
+      "instruction": "依題目順序逐段運算，寫出每個中間點。",
+      "check": "每一步以上一步終點為起點，沒有反覆從原點重算。"
     },
     {
       "step": 3,
-      "instruction": "水平方向合併。",
-      "check": "只改 x，沒有誤改 y？"
+      "instruction": "比較兩點時使用終點減起點，符號判方向、絕對值判距離。",
+      "check": "水平與垂直變化分開，沒有只看較大數減較小數。"
     },
     {
       "step": 4,
-      "instruction": "垂直方向合併。",
-      "check": "只改 y，沒有誤改 x？"
+      "instruction": "反推起點時將移動倒序並改成相反方向。",
+      "check": "反推所得起點經正向路線能回到指定終點。"
     },
     {
       "step": 5,
-      "instruction": "用反向路線驗算。",
-      "check": "從終點倒走能回起點嗎？"
+      "instruction": "檢查格距、方位正向、中途站點與重複位置的計數規則。",
+      "check": "答案同時滿足坐標、單位、路線順序及題目指定的計數方式。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "從原點向右 5、向下 2，終點在哪？",
+      "exampleId": "u05-s004-example-a",
+      "prompt": "從 (-1,2) 向右五單位、再向下四單位，求終點。",
       "solutionSteps": [
-        "x=0+5。",
-        "y=0-2。"
+        "右移後為 (4,2)。",
+        "下移後為 (4,-2)。"
       ],
-      "answer": "(5,-2)。"
+      "answer": "終點是 (4,-2)。",
+      "why": "右移五只把橫坐標由負一增加到四，縱坐標保持二；再下移四只把縱坐標減到負二。逐段記錄可避免兩軸同時誤改。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "由 A=(-3,4) 向左 2、向上 1。",
+      "exampleId": "u05-s004-example-b",
+      "prompt": "某點先向左二、再向上七後到 (3,6)，反求起點。",
       "solutionSteps": [
-        "x=-3-2=-5。",
-        "y=4+1=5。"
+        "由終點反向先向下七，得 (3,-1)。",
+        "再向右二，得起點 (5,-1)。"
       ],
-      "answer": "(-5,5)。"
+      "answer": "起點為 (5,-1)。",
+      "why": "反推必須倒轉順序並使用相反方向：最後的上七先還原成下七，先前的左二再還原成右二。正向驗算確實回到 (3,6)。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "從 B=(6,-1) 到 C=(2,-1) 如何描述？",
+      "exampleId": "u05-s004-example-c",
+      "prompt": "由原點右三、上二、左三、下二，計算不同頂點數。",
       "solutionSteps": [
-        "y 不變。",
-        "x 由 6 變 2，減少 4。"
+        "依序列出 (0,0)、(3,0)、(3,2)、(0,2)。",
+        "最後回到 (0,0)，與起點重複。"
       ],
-      "answer": "向左 4 單位。"
+      "answer": "共有四個不同頂點。",
+      "why": "四段路線形成封閉長方形，最後位置與起點相同。若題目要求重複只算一次，就要對位置去重，而不是按到達次數算五個。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "一條路線右 7、上 3、左 2、下 5，從原點出發。",
+      "exampleId": "u05-s004-example-d",
+      "prompt": "地圖以東、北為正向，從 (2,-1) 向西三格、北五格，求位置。",
       "solutionSteps": [
-        "水平淨移動 7-2=5。",
-        "垂直淨移動 3-5=-2。"
+        "西三格使 x=2-3=-1。",
+        "北五格使 y=-1+5=4。"
       ],
-      "answer": "(5,-2)。"
+      "answer": "位置為 (-1,4)。",
+      "why": "明示的正向使西方對應 x 減少、北方對應 y 增加。起點不是原點，因此要在原分量上加減位移，不能直接把位移寫成坐標。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "每一步都從原點重新開始。",
-      "why": "混淆絕對位置與連續路線。",
-      "correction": "除非題目重設起點，下一步從目前位置繼續。"
+      "mistake": "每段移動都從原起點重算。",
+      "why": "忽略路線具有先後狀態。",
+      "correction": "逐段寫中間點，以上一步結果繼續。"
     },
     {
-      "mistake": "向左卻把 x 加上正數。",
-      "why": "沒有把方向轉成帶符號改變量。",
-      "correction": "左為負、右為正。"
+      "mistake": "向下或向左仍使用加法。",
+      "why": "只記步數，未加入方向符號。",
+      "correction": "左使 x 減少，下使 y 減少。"
     },
     {
-      "mistake": "向下改變 x。",
-      "why": "混淆水平與垂直分量。",
-      "correction": "左右只改 x，上下只改 y。"
+      "mistake": "垂直移動同時改變 x。",
+      "why": "混淆兩個坐標軸的獨立作用。",
+      "correction": "上下只改 y，左右只改 x。"
     },
     {
-      "mistake": "把路線次序完全忽略在有中途條件的題目。",
-      "why": "只看淨位移而漏掉經過點限制。",
-      "correction": "若問經過位置，必須逐步追蹤。"
+      "mistake": "用較大坐標減較小坐標判方向。",
+      "why": "絕對差遺失正負方向。",
+      "correction": "一律使用終點減起點。"
     },
     {
-      "mistake": "坐標寫成 y 在前。",
-      "why": "忘記有序數對順序。",
-      "correction": "終點仍寫成 (x,y)。"
+      "mistake": "只看淨位移，忽略中途站順序。",
+      "why": "不同路線可能具有相同終點。",
+      "correction": "題目指定站點時逐段比較相鄰點。"
+    },
+    {
+      "mistake": "情境方位沿用未寫出的慣例。",
+      "why": "正向與每格單位可能未明示。",
+      "correction": "先確認東、北正向與格距，再進行坐標運算。"
     }
   ],
   "selfCheck": [
@@ -236,7 +245,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "cb862976d4013d271dea6e95a43c9bc2a89608b0e6dc19c6e5ccdc3435717424"
+  "contentSha256": "809d917ce1e5f416f962e589a7f5b959f565296d4a21c0c808b0eb5d445ba2ae"
 };
 
 export const QUESTIONS = [
@@ -264,10 +273,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "向右使 x=3，向上使 y=4，所以終點為 (3,4)。",
-    "explanation": "向右使 x=3，向上使 y=4，所以終點為 (3,4)。",
+    "explanation": "從原點 (0,0) 向右三單位，使橫坐標由零增加為三；向上四單位，使縱坐標由零增加為四。依 x、y 順序，終點坐標為 (3,4)，兩段位移分別只改變一個分量。",
     "steps": [
-      "由水平移動得 x=3。",
-      "由垂直移動得 y=4。"
+      "由原點開始，向右三使 x=0+3=3。",
+      "向上四使 y=0+4=4。",
+      "依橫、縱坐標順序寫出 (3,4)。"
     ],
     "optionAnalysis": [
       {
@@ -291,7 +301,7 @@ export const QUESTIONS = [
         "reason": "方向與順序皆正確。"
       }
     ],
-    "misconceptionTarget": "方向符號或坐標順序錯誤。",
+    "misconceptionTarget": "把向右與向上的步數交換成 (4,3)，忽略分量順序。",
     "prerequisiteCheck": "需會坐標讀寫。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -304,7 +314,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "39001efab7a28bcad312b23f7948177c2bf2753b4b92fa21d43b7adf87250bbd"
+    "contentSha256": "0e244c58d548baec7294bb072715cac91ab49997847191757ffae7bc5333b903"
   },
   {
     "questionId": "u05-s004-v002",
@@ -330,10 +340,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "向下只改變 y：5-7=-2；x 保持 -2。",
-    "explanation": "向下只改變 y：5-7=-2；x 保持 -2。",
+    "explanation": "向下移動只改變縱坐標，橫坐標仍為 -2。縱坐標從五減去七得到 -2，所以終點為 (-2,-2)；跨過 x 軸不會改變水平位置，橫坐標全程保持不變。",
     "steps": [
-      "保留 x=-2。",
-      "計算 y=5-7=-2。"
+      "保留原橫坐標 x=-2。",
+      "向下七單位，計算 y=5-7=-2。",
+      "組合兩分量得到 (-2,-2)。"
     ],
     "optionAnalysis": [
       {
@@ -357,7 +368,7 @@ export const QUESTIONS = [
         "reason": "把向下當成加 7。"
       }
     ],
-    "misconceptionTarget": "上下移動卻改變橫坐標。",
+    "misconceptionTarget": "向下移動時誤改橫坐標，或把五減七算成正二。",
     "prerequisiteCheck": "需能辨認上下只改 y。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -370,7 +381,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7e79edbcd16527b899052e689f39426288d74652a4351e34023b0ce84b317098"
+    "contentSha256": "dde68e475c298ef6e9f867684133bcae58a44a029074eca2dddbc2c043c44a8f"
   },
   {
     "questionId": "u05-s004-v003",
@@ -396,10 +407,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "兩點 y 相同；x 由 6 變 2，減少 4，因此向左 4 單位。",
-    "explanation": "兩點 y 相同；x 由 6 變 2，減少 4，因此向左 4 單位。",
+    "explanation": "B 與 C 的縱坐標都為 -1，所以沒有上下移動。橫坐標由六變成二，變化量為 2-6=-4，表示向左四單位，恰可從 B 到達 C；負號提供方向、絕對值提供距離。",
     "steps": [
-      "比較 y：不變。",
-      "比較 x：2-6=-4。"
+      "比較縱坐標相同，確定只需水平移動。",
+      "計算橫坐標變化 2-6=-4。",
+      "把負四解讀為向左四單位。"
     ],
     "optionAnalysis": [
       {
@@ -423,7 +435,7 @@ export const QUESTIONS = [
         "reason": "把兩個 x 的絕對值相加。"
       }
     ],
-    "misconceptionTarget": "知道距離但方向或分量判斷錯。",
+    "misconceptionTarget": "用 6-2=4 就直接說向右，沒有依終點減起點判方向。",
     "prerequisiteCheck": "需會比較整數大小。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -436,7 +448,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e2c01eb6f97664d437fb5748718c65ba8a53621603b46ae40b862cf9ed3e90b3"
+    "contentSha256": "0261796aa00855ae97d7b922a69718ead1c51518288a2d60b21cac2347ece0a4"
   },
   {
     "questionId": "u05-s004-v004",
@@ -462,10 +474,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "先右移使 x=1+5=6；再上移使 y=-3+2=-1，所以為 (6,-1)。",
-    "explanation": "先右移使 x=1+5=6；再上移使 y=-3+2=-1，所以為 (6,-1)。",
+    "explanation": "從 P=(1,-3) 向右五，橫坐標變成 1+5=6，縱坐標保持 -3；再向上二，縱坐標變成 -3+2=-1。因此終點為 (6,-1)。每一步都以上一步的終點為起點，且只改對應分量。",
     "steps": [
-      "水平更新 x=6。",
-      "垂直更新 y=-1。"
+      "向右五，得到中間點 (6,-3)。",
+      "從中間點向上二，計算 -3+2=-1。",
+      "保留橫坐標六，寫出終點 (6,-1)。"
     ],
     "optionAnalysis": [
       {
@@ -489,7 +502,7 @@ export const QUESTIONS = [
         "reason": "向右卻令 x 減少。"
       }
     ],
-    "misconceptionTarget": "負數起點使學生誤以為上移仍更負。",
+    "misconceptionTarget": "每一步都從原點重算，或把向上二誤作縱坐標減二。",
     "prerequisiteCheck": "需能做整數加法與坐標平移。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -502,7 +515,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c5b61bb55a227f858db99789761225c4aea534d0489da3eab33efc47c6540c7d"
+    "contentSha256": "b0621b45d4ce48e5cfe3b88b66580b98d3d4517609d4e2eea42e6f7e3abb9ea1"
   },
   {
     "questionId": "u05-s004-v005",
@@ -528,10 +541,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "水平淨移動 8-5=3；垂直淨移動 3-7=-4，所以終點 (3,-4)。",
-    "explanation": "水平淨移動 8-5=3；垂直淨移動 3-7=-4，所以終點 (3,-4)。",
+    "explanation": "水平方向的總變化是右八再左五，淨向右三，所以 x=3；垂直方向是上三再下七，淨向下四，所以 y=-4。由原點出發的終點為 (3,-4)。",
     "steps": [
-      "合併水平：3。",
-      "合併垂直：-4。"
+      "合併水平位移 8-5=3。",
+      "合併垂直位移 3-7=-4。",
+      "從原點加入淨位移，得到 (3,-4)。"
     ],
     "optionAnalysis": [
       {
@@ -555,7 +569,7 @@ export const QUESTIONS = [
         "reason": "水平與垂直淨移動正確。"
       }
     ],
-    "misconceptionTarget": "只加步數不處理相反方向。",
+    "misconceptionTarget": "把四段距離全部相加，沒有分開水平與垂直方向及正負。",
     "prerequisiteCheck": "需會同類方向相減。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -568,7 +582,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6947d8ad0900ea2597825d069ccaa3ef76d65343817635449e4e13e135b24689"
+    "contentSha256": "4dc83a21d56078e6c172c5caea677ec5aac70cba11337f42261bf50da9b3321d"
   },
   {
     "questionId": "u05-s004-v006",
@@ -594,10 +608,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "A 到 B 同 x，y 由 2 變 -3，向下 5；B 到 C 同 y，x 由 -4 變 5，向右 9。",
-    "explanation": "A 到 B 同 x，y 由 2 變 -3，向下 5；B 到 C 同 y，x 由 -4 變 5，向右 9。",
+    "explanation": "A 到 B 的橫坐標同為 -4，縱坐標由二降到 -3，變化 -5，所以先向下五。B 到 C 的縱坐標同為 -3，橫坐標由 -4 增到五，變化九，所以再向右九。",
     "steps": [
-      "比較 A、B 的 y 差。",
-      "比較 B、C 的 x 差。"
+      "比較 A、B，算出縱坐標變化 -3-2=-5。",
+      "比較 B、C，算出橫坐標變化 5-(-4)=9。",
+      "依順序寫成先下五、再右九。"
     ],
     "optionAnalysis": [
       {
@@ -621,7 +636,7 @@ export const QUESTIONS = [
         "reason": "第二段方向反。"
       }
     ],
-    "misconceptionTarget": "跨越 0 時把距離算成絕對值之差。",
+    "misconceptionTarget": "只比較數值差的大小，沒有依終點減起點決定移動方向。",
     "prerequisiteCheck": "需會水平與垂直坐標差。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -634,7 +649,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "468926e932fae1d1c4455d029de61eb01b54045f0716e00ca53d9496f9f1206d"
+    "contentSha256": "65b73d422ddd00d55958261140062eade69953ae1f1f00dcd2e08419dc95d8a9"
   },
   {
     "questionId": "u05-s004-v007",
@@ -660,10 +675,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "向左 4 後橫坐標為 a-4=-1，所以 a=3。",
-    "explanation": "向左 4 後橫坐標為 a-4=-1，所以 a=3。",
+    "explanation": "從 (a,3) 向左四單位後，橫坐標成為 a-4，縱坐標仍是三。終點橫坐標為 -1，所以 a-4=-1，兩邊同加四可得 a=3。回算三減四確為負一，方向與終點一致。",
     "steps": [
-      "列 a-4=-1。",
-      "兩邊加 4 得 a=3。"
+      "把向左四寫成新橫坐標 a-4。",
+      "與終點第一分量比較，列出 a-4=-1。",
+      "解方程式得到 a=3，並回算 3-4=-1。"
     ],
     "optionAnalysis": [
       {
@@ -687,7 +703,7 @@ export const QUESTIONS = [
         "reason": "5-4=1。"
       }
     ],
-    "misconceptionTarget": "把反推原點仍做同方向減法。",
+    "misconceptionTarget": "把向左四寫成 a+4，或用終點直接取代原來的 a。",
     "prerequisiteCheck": "需會由平移式反解。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -700,7 +716,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "27ed10f550c682f93ad20ae1fa74c2eb6495472fdbd6c1ed333dddca901a4750"
+    "contentSha256": "f40e7be809ba02b2b3ac597a469f01bfe5babb5ac496c8d55a04368b32b3fdcb"
   },
   {
     "questionId": "u05-s004-v008",
@@ -726,10 +742,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "縱坐標淨改變為 +6-10=-4，所以 b-4=-1，得 b=3。",
-    "explanation": "縱坐標淨改變為 +6-10=-4，所以 b-4=-1，得 b=3。",
+    "explanation": "從縱坐標 b 先向上六、再向下十，終點縱坐標為 b+6-10=b-4。題目給 b-4=-1，兩邊同加四得到 b=3；水平坐標在垂直移動中不變，回算終點縱坐標仍為負一。",
     "steps": [
-      "合併垂直淨位移 -4。",
-      "解 b-4=-1。"
+      "把兩段垂直位移合併成 +6-10=-4。",
+      "列出終點條件 b-4=-1。",
+      "解得 b=3，回算 3+6-10=-1。"
     ],
     "optionAnalysis": [
       {
@@ -753,7 +770,7 @@ export const QUESTIONS = [
         "reason": "代入後為 11。"
       }
     ],
-    "misconceptionTarget": "沒有先合併相反方向，或反解符號錯。",
+    "misconceptionTarget": "把上六與下十都當正數相加，沒有保留方向符號。",
     "prerequisiteCheck": "需會整數運算與方程式。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -766,7 +783,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b744ac28f57828ddd7be911e974e6b5ed1d8084cf16f14d7b13cb776857141aa"
+    "contentSha256": "baed79fa44a254390a4b75a9a57d34165236f2127b47cc9790ab4a56a4dee3a2"
   },
   {
     "questionId": "u05-s004-v009",
@@ -792,10 +809,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "位置依序為 (0,0)、(2,0)、(2,2)、(0,2)、(0,0)。最後回到起點重複，因此不同位置共 4 個。",
-    "explanation": "位置依序為 (0,0)、(2,0)、(2,2)、(0,2)、(0,0)。最後回到起點重複，因此不同位置共 4 個。",
+    "explanation": "路線依序到達 (0,0)、(2,0)、(2,2)、(0,2)，最後回到 (0,0)。起點與終點是同一位置且只算一次，因此不同頂點共有四個，而不是五個到達紀錄，計數必須去重。",
     "steps": [
-      "逐步列出五次紀錄。",
-      "合併重複的原點。"
+      "逐步列出起點與前三段後的四個頂點。",
+      "確認最後下二回到起點 (0,0)。",
+      "去除重複的起終點，計得四個不同位置。"
     ],
     "optionAnalysis": [
       {
@@ -819,7 +837,7 @@ export const QUESTIONS = [
         "reason": "正方形四個頂點各一次。"
       }
     ],
-    "misconceptionTarget": "只看步數或未處理重複位置。",
+    "misconceptionTarget": "把最後回到起點當成新的第五個位置，沒有依題意去除重複。",
     "prerequisiteCheck": "需能依序描點並辨認重複。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -832,7 +850,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "855b0cdf4a031cb834cf412999b4060f93058e420e5514c77924728d67f78a21"
+    "contentSha256": "e294fe05b7a76cfa8ff1e3f2c98f2af0f4669a86c1b92fe1f2ecbbc40e963316"
   },
   {
     "questionId": "u05-s004-v010",
@@ -845,7 +863,7 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
-    "text": "校園尋寶從司令台 (1,1) 出發，提示為「向西 4 格，再向南 3 格」。寶箱坐標為何？",
+    "text": "校園尋寶地圖以東方為 x 正向、北方為 y 正向，每格一坐標單位。從司令台 (1,1) 出發，提示為「向西 4 格，再向南 3 格」，寶箱坐標為何？",
     "givenConditions": [
       "題幹所列坐標、方程式與移動條件均為精確值。"
     ],
@@ -858,10 +876,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "西使 x 減 4：1-4=-3；南使 y 減 3：1-3=-2。",
-    "explanation": "西使 x 減 4：1-4=-3；南使 y 減 3：1-3=-2。",
+    "explanation": "依題幹方向，向西四格使 x 由一減為 -3，向南三格使 y 由一減為 -2。每格等於一坐標單位，所以寶箱坐標唯一為 (-3,-2)，起點與格距都已納入計算。",
     "steps": [
-      "把西轉成 x-4。",
-      "把南轉成 y-3。"
+      "由東為正 x，將向西四格寫成 1-4=-3。",
+      "由北為正 y，將向南三格寫成 1-3=-2。",
+      "按 x、y 順序寫出寶箱 (-3,-2)。"
     ],
     "optionAnalysis": [
       {
@@ -885,12 +904,12 @@ export const QUESTIONS = [
         "reason": "把南當北。"
       }
     ],
-    "misconceptionTarget": "忽略起點不是原點，或把方位正負弄反。",
+    "misconceptionTarget": "未使用明示的方向與格距，或忽略起點不是原點而直接寫位移。",
     "prerequisiteCheck": "需會從非原點平移。",
     "estimatedTimeSec": 150,
     "unitCheck": "坐標單位為格，答案保留格線坐標。",
     "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-    "ambiguityBoundaryAudit": "預設東、北為正向已由一般坐標地圖語境配合題意；路線無其他障礙。",
+    "ambiguityBoundaryAudit": "題幹明定東為 x 正向、北為 y 正向且每格一坐標單位，西、南移動對兩分量的影響可唯一決定。",
     "difficultyReason": "起點與兩段方位都是必要資訊，需轉換後計算。",
     "literacyContextNecessity": "寶箱位置取決於司令台起點與西南兩段提示；情境資訊直接形成坐標運算。",
     "authoringIntent": "在尋寶情境執行路線",
@@ -898,7 +917,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "885b97882574e904713b1be6d05162f228010a4045c03ef3874871b617fbae02"
+    "contentSha256": "ddb1e578e062df3fc5551a4afdfdc81eda99ab093082275719cfeb282d0ec5df"
   },
   {
     "questionId": "u05-s004-v011",
@@ -924,10 +943,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "R3 使 x=-2+3=1；D5 使 y=4-5=-1，所以為 (1,-1)。",
-    "explanation": "R3 使 x=-2+3=1；D5 使 y=4-5=-1，所以為 (1,-1)。",
+    "explanation": "起點 (-2,4) 執行 R3，向右三格使 x=-2+3=1，得到 (1,4)；再執行 D5，向下五格使 y=4-5=-1。因此最後位置為 (1,-1)。兩個指令依序作用，並分別只改橫、縱坐標，結果可逐步回查。",
     "steps": [
-      "解碼 R3 更新 x。",
-      "解碼 D5 更新 y。"
+      "執行 R3，算出中間點 (1,4)。",
+      "執行 D5，保留 x=1 並算 y=4-5=-1。",
+      "寫出最後位置 (1,-1)。"
     ],
     "optionAnalysis": [
       {
@@ -951,7 +971,7 @@ export const QUESTIONS = [
         "reason": "直接把指令數字當坐標。"
       }
     ],
-    "misconceptionTarget": "將控制碼數字取代坐標，而不是從起點累加。",
+    "misconceptionTarget": "同時從起點處理兩個指令，或把向下五寫成縱坐標加五。",
     "prerequisiteCheck": "需會平移。",
     "estimatedTimeSec": 150,
     "unitCheck": "每指令單位均為棋盤格。",
@@ -964,7 +984,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "fd7871c39c2234c1dc3eea68cf1d4e8d42f1be9fa412a5e5538549055cd9091a"
+    "contentSha256": "adedcb595af049c6d66d8678d04e493be9c8dc91464cce8a5a6af6ec8226aadd"
   },
   {
     "questionId": "u05-s004-v012",
@@ -977,7 +997,7 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
-    "text": "配送員從站點 A=(4,-2) 前往 B=(4,5)，再前往 C=(-1,5)。哪段敘述可完整描述路線？",
+    "text": "配送地圖以東方為 x 正向、北方為 y 正向，每格一坐標單位。配送員從 A=(4,-2) 依序前往 B=(4,5)、C=(-1,5)，哪段敘述可完整描述路線？",
     "givenConditions": [
       "題幹所列坐標、方程式與移動條件均為精確值。"
     ],
@@ -990,10 +1010,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "A 到 B 同 x，y 增加 7，向北；B 到 C 同 y，x 減少 5，向西。",
-    "explanation": "A 到 B 同 x，y 增加 7，向北；B 到 C 同 y，x 減少 5，向西。",
+    "explanation": "A 到 B 的 x 不變，y 由 -2 增至 5，共增加七，所以先向北七格；B 到 C 的 y 不變，x 由 4 減至 -1，共減少五，所以再向西五格。兩段必須依指定中途站 B 的順序完整描述。",
     "steps": [
-      "A→B：5-(-2)=7，北移。",
-      "B→C：-1-4=-5，西移 5。"
+      "比較 A、B，計算 y 變化 5-(-2)=7，判定向北。",
+      "比較 B、C，計算 x 變化 -1-4=-5，判定向西。",
+      "依指定站點順序寫成先北七、再西五。"
     ],
     "optionAnalysis": [
       {
@@ -1017,12 +1038,12 @@ export const QUESTIONS = [
         "reason": "淨終點相同但不符合指定經過 B 的順序。"
       }
     ],
-    "misconceptionTarget": "只看總位移，忽略必須先經過 B 的路線順序。",
+    "misconceptionTarget": "只看 A 到 C 的淨位移，忽略必須依序經過 B 與明示的方向定義。",
     "prerequisiteCheck": "需會分段比較坐標。",
     "estimatedTimeSec": 150,
     "unitCheck": "所有距離以格表示，兩段分開計算。",
     "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-    "ambiguityBoundaryAudit": "題目要求完整描述 A→B→C，交換兩段雖終點相同但不符合路線。",
+    "ambiguityBoundaryAudit": "題幹明定東為 x 正向、北為 y 正向、每格一單位，且要求依序經過 B；方向、距離與路線順序皆唯一。",
     "difficultyReason": "中途站點使順序成為必要條件，不能只算淨位移。",
     "literacyContextNecessity": "配送必須依序經過 B；中途站點使路線次序成為數學條件，而非裝飾。",
     "authoringIntent": "依站點順序描述配送路線",
@@ -1030,7 +1051,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4835cff7920f6a405f4b4fbf81d47c5f130210aee88d300dbe304384219c3053"
+    "contentSha256": "ba269d17f3b2b4fc3bfff519517a099b19176a56e90a479f8d60ed35f1cbea30"
   }
 ];
 
@@ -1051,19 +1072,17 @@ export const CONSTRUCTED_RESPONSES = [
       "最後寫出終點。"
     ],
     "fullCreditSolution": [
-      "右 8 後：(-3+8,2)=(5,2)。",
-      "下 5 後：(5,2-5)=(5,-3)。",
-      "左 2 後：(5-2,-3)=(3,-3)。",
-      "終點為 (3,-3)。"
+      "從 A=(-3,2) 向右八，橫坐標為 -3+8=5，縱坐標不變，第一步到 (5,2)。",
+      "再向下五，縱坐標為 2-5=-3，第二步到 (5,-3)。",
+      "最後向左二，橫坐標為 5-2=3，終點是 (3,-3)；每一步均以上一步位置為起點。"
     ],
     "alternativeSolutions": [
       "也可列坐標表，逐列更新 x 或 y。"
     ],
     "reasoningSteps": [
-      "右 8 後：(-3+8,2)=(5,2)。",
-      "下 5 後：(5,2-5)=(5,-3)。",
-      "左 2 後：(5-2,-3)=(3,-3)。",
-      "終點為 (3,-3)。"
+      "先執行水平右移，記錄第一個中間點。",
+      "由中間點執行垂直下移，保留橫坐標。",
+      "再執行水平左移，寫出終點並按順序核對三段。"
     ],
     "rubric": [
       {
@@ -1090,8 +1109,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "每一步均以有序對表示，依序寫出三個中間或終點坐標；移動量以格或單位計。",
     "answerOnlyPolicy": "只寫最後終點 (3,-3) 而沒有每一步位置，最高給 2 分。",
     "commonErrors": [
-      "向下改 x。",
-      "第三步又從 A 開始。"
+      "每一段都從原始點 A 出發，沒有以上一步結果繼續。",
+      "向下五寫成縱坐標加五，方向符號顛倒。",
+      "只寫最後終點，沒有完成題目要求的每一步位置。"
     ],
     "independentReview": {
       "derivedResult": "若早期算術錯但後續都從自己的錯誤中間點正確平移，採結果追隨，可保留後續方法分。",
@@ -1101,7 +1121,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "8ebc756ad61db4bc311d4cec39a346523da994a303c7b5a8201324a3642431ee"
+    "contentSha256": "5831b4398ae95418e6b1dab71f3ad2b1837c6f454ac4e88e965e5fd04c7f0c98"
   },
   {
     "questionId": "u05-s004-cr002",
@@ -1119,19 +1139,17 @@ export const CONSTRUCTED_RESPONSES = [
       "寫出驗算。"
     ],
     "fullCreditSolution": [
-      "由終點反推，原橫坐標 a=1-4=-3。",
-      "原縱坐標 b=2-7=-5。",
-      "所以 P=(-3,-5)。",
-      "驗算：(-3,-5) 向右 4 到 (1,-5)，再向上 7 到 (1,2)，正好是 Q。"
+      "終點橫坐標為一，原點向右四才到一，所以 a+4=1，解得 a=-3。",
+      "終點縱坐標為二，原點向上七才到二，所以 b+7=2，解得 b=-5。",
+      "P=(-3,-5)。正向驗算：先右移到 (1,-5)，再上移到 (1,2)，恰為 Q。"
     ],
     "alternativeSolutions": [
       "可列 a+4=1、b+7=2，解出 a、b。"
     ],
     "reasoningSteps": [
-      "由終點反推，原橫坐標 a=1-4=-3。",
-      "原縱坐標 b=2-7=-5。",
-      "所以 P=(-3,-5)。",
-      "驗算：(-3,-5) 向右 4 到 (1,-5)，再向上 7 到 (1,2)，正好是 Q。"
+      "由終點橫坐標反推，列出 a+4=1。",
+      "由終點縱坐標反推，列出 b+7=2。",
+      "組成起點 P，依原路線正向執行兩段完成驗算。"
     ],
     "rubric": [
       {
@@ -1158,8 +1176,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "起點寫成 P=(-3,-5)，終點寫成 Q=(1,2)；反向移動需明確寫左 4、下 7。",
     "answerOnlyPolicy": "只寫 P=(-3,-5) 而沒有反向推導或驗算，最高給 2 分。",
     "commonErrors": [
-      "反推仍做同方向。",
-      "把 a、b 對調。"
+      "反推時仍把四與七加到終點，得到方向相反的起點。",
+      "只求 a 或 b，沒有把起點寫成完整有序數對。",
+      "驗算只比較淨位移，沒有依序執行向右再向上的路線。"
     ],
     "independentReview": {
       "derivedResult": "若 a 算錯但 b 與相應驗算正確，可給該分量方法分。",
@@ -1169,14 +1188,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1ca5388c2a10b7f472f44ef25bfb71530c0e8555010c4b6be915d0eac7a23b72"
+    "contentSha256": "a6fb7a3debdf7eead09b5fe1e9809ee0941243290debf380d42f0634c928527e"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s004-v001",
-    "contentSha256": "39001efab7a28bcad312b23f7948177c2bf2753b4b92fa21d43b7adf87250bbd",
+    "contentSha256": "0e244c58d548baec7294bb072715cac91ab49997847191757ffae7bc5333b903",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "向右使 x=3，向上使 y=4，所以終點為 (3,4)。",
     "derivedAnswer": "(3,4)",
@@ -1208,7 +1227,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v002",
-    "contentSha256": "7e79edbcd16527b899052e689f39426288d74652a4351e34023b0ce84b317098",
+    "contentSha256": "dde68e475c298ef6e9f867684133bcae58a44a029074eca2dddbc2c043c44a8f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "向下只改變 y：5-7=-2；x 保持 -2。",
     "derivedAnswer": "(-2,-2)",
@@ -1240,7 +1259,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v003",
-    "contentSha256": "e2c01eb6f97664d437fb5748718c65ba8a53621603b46ae40b862cf9ed3e90b3",
+    "contentSha256": "0261796aa00855ae97d7b922a69718ead1c51518288a2d60b21cac2347ece0a4",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "兩點 y 相同；x 由 6 變 2，減少 4，因此向左 4 單位。",
     "derivedAnswer": "向左 4 單位",
@@ -1272,7 +1291,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v004",
-    "contentSha256": "c5b61bb55a227f858db99789761225c4aea534d0489da3eab33efc47c6540c7d",
+    "contentSha256": "b0621b45d4ce48e5cfe3b88b66580b98d3d4517609d4e2eea42e6f7e3abb9ea1",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "先右移使 x=1+5=6；再上移使 y=-3+2=-1，所以為 (6,-1)。",
     "derivedAnswer": "(6,-1)",
@@ -1304,7 +1323,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v005",
-    "contentSha256": "6947d8ad0900ea2597825d069ccaa3ef76d65343817635449e4e13e135b24689",
+    "contentSha256": "4dc83a21d56078e6c172c5caea677ec5aac70cba11337f42261bf50da9b3321d",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "水平淨移動 8-5=3；垂直淨移動 3-7=-4，所以終點 (3,-4)。",
     "derivedAnswer": "(3,-4)",
@@ -1336,7 +1355,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v006",
-    "contentSha256": "468926e932fae1d1c4455d029de61eb01b54045f0716e00ca53d9496f9f1206d",
+    "contentSha256": "65b73d422ddd00d55958261140062eade69953ae1f1f00dcd2e08419dc95d8a9",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "A 到 B 同 x，y 由 2 變 -3，向下 5；B 到 C 同 y，x 由 -4 變 5，向右 9。",
     "derivedAnswer": "先向下 5，再向右 9",
@@ -1368,7 +1387,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v007",
-    "contentSha256": "27ed10f550c682f93ad20ae1fa74c2eb6495472fdbd6c1ed333dddca901a4750",
+    "contentSha256": "f40e7be809ba02b2b3ac597a469f01bfe5babb5ac496c8d55a04368b32b3fdcb",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "向左 4 後橫坐標為 a-4=-1，所以 a=3。",
     "derivedAnswer": "3",
@@ -1400,7 +1419,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v008",
-    "contentSha256": "b744ac28f57828ddd7be911e974e6b5ed1d8084cf16f14d7b13cb776857141aa",
+    "contentSha256": "baed79fa44a254390a4b75a9a57d34165236f2127b47cc9790ab4a56a4dee3a2",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "縱坐標淨改變為 +6-10=-4，所以 b-4=-1，得 b=3。",
     "derivedAnswer": "3",
@@ -1432,7 +1451,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v009",
-    "contentSha256": "855b0cdf4a031cb834cf412999b4060f93058e420e5514c77924728d67f78a21",
+    "contentSha256": "e294fe05b7a76cfa8ff1e3f2c98f2af0f4669a86c1b92fe1f2ecbbc40e963316",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "位置依序為 (0,0)、(2,0)、(2,2)、(0,2)、(0,0)。最後回到起點重複，因此不同位置共 4 個。",
     "derivedAnswer": "4 個",
@@ -1464,7 +1483,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v010",
-    "contentSha256": "885b97882574e904713b1be6d05162f228010a4045c03ef3874871b617fbae02",
+    "contentSha256": "ddb1e578e062df3fc5551a4afdfdc81eda99ab093082275719cfeb282d0ec5df",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "西使 x 減 4：1-4=-3；南使 y 減 3：1-3=-2。",
     "derivedAnswer": "(-3,-2)",
@@ -1478,25 +1497,25 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "重新計算得到「(-3,-2)」；其餘三項逐項檢查：「(5,-2)」不成立，把西當東。；「(-2,-3)」不成立，交換步數。；「(-3,4)」不成立，把南當北。",
-      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「描點與位置描述」講義中定義，坐標固定以 (x,y) 表示。",
-      "unitConflict": "坐標單位為格，答案保留格線坐標。",
-      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-      "domainBoundary": "預設東、北為正向已由一般坐標地圖語境配合題意；路線無其他障礙。",
-      "alternateReading": "常見誤讀是「忽略起點不是原點，或把方位正負弄反。」；依題幹完整條件重算後不會形成另一個正確答案。"
+      "secondCorrectAnswer": "由 (1,1) 向西四格得 x=-3，再向南三格得 y=-2，只有 (-3,-2) 同時符合起點、順序、方向與格距。",
+      "undefinedSymbol": "題幹已定義 x、y 正向、格與坐標單位，司令台起點和寶箱目標均有明確指稱。",
+      "unitConflict": "每格明定等於一坐標單位，四格與三格可直接作用於坐標分量。",
+      "roundingConflict": "起點與位移都是精確整數格，不涉及近似。",
+      "domainBoundary": "東、北正向與每格一單位已寫入題幹，不再依靠一般校園地圖慣例；路線沒有其他障礙條件。",
+      "alternateReading": "若未定義方向與格距，西南方位如何對應坐標會是隱藏假設；修正題幹已排除此替代讀法。"
     },
     "difficultyReason": "起點與兩段方位都是必要資訊，需轉換後計算。",
     "literacyContextNecessity": "寶箱位置取決於司令台起點與西南兩段提示；情境資訊直接形成坐標運算。",
     "prerequisiteCheck": "需會從非原點平移。",
     "languageCheck": "題幹所求為「在尋寶情境執行路線」，方向、軸名、截距值或交點坐標均有明確指稱。",
     "reviewerDecision": "pass",
-    "reviewerNote": "針對「校園尋寶從司令台 (1,1) 出發，提示為「向西 4 格，再向南 3 格」。寶箱坐標為何？」重新依序處理：西使 x 減 4：1-4=-3；南使 y 減 3：1-3=-2。 正確選項為「(-3,-2)」。三個干擾項均對應不同錯誤：「(5,-2)」不成立，把西當東。；「(-2,-3)」不成立，交換步數。；「(-3,4)」不成立，把南當北。。邊界審查：預設東、北為正向已由一般坐標地圖語境配合題意；路線無其他障礙。 難度理由：起點與兩段方位都是必要資訊，需轉換後計算。",
+    "reviewerNote": "依修正後題幹重新計算：地圖東方為 x 正向、北方為 y 正向，每格一坐標單位。從 (1,1) 向西四格，橫坐標為 1-4=-3；再向南三格，縱坐標為 1-3=-2，所以唯一答案是 (-3,-2)。其他選項分別誤判西方、交換步數或誤判南方。方向與格距均已明示，不再使用未寫出的慣例。",
     "reviewedAt": "2026-07-12",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u05-s004-v011",
-    "contentSha256": "fd7871c39c2234c1dc3eea68cf1d4e8d42f1be9fa412a5e5538549055cd9091a",
+    "contentSha256": "adedcb595af049c6d66d8678d04e493be9c8dc91464cce8a5a6af6ec8226aadd",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "R3 使 x=-2+3=1；D5 使 y=4-5=-1，所以為 (1,-1)。",
     "derivedAnswer": "(1,-1)",
@@ -1528,7 +1547,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s004-v012",
-    "contentSha256": "4835cff7920f6a405f4b4fbf81d47c5f130210aee88d300dbe304384219c3053",
+    "contentSha256": "ba269d17f3b2b4fc3bfff519517a099b19176a56e90a479f8d60ed35f1cbea30",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "A 到 B 同 x，y 增加 7，向北；B 到 C 同 y，x 減少 5，向西。",
     "derivedAnswer": "先向北 7 格，再向西 5 格",
@@ -1542,19 +1561,19 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "重新計算得到「先向北 7 格，再向西 5 格」；其餘三項逐項檢查：「先向南 7 格，再向西 5 格」不成立，第一段方向反。；「先向北 3 格，再向東 5 格」不成立，兩段距離或方向錯。；「先向西 5 格，再向北 7 格」不成立，淨終點相同但不符合指定經過 B 的順序。",
-      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「描點與位置描述」講義中定義，坐標固定以 (x,y) 表示。",
-      "unitConflict": "所有距離以格表示，兩段分開計算。",
-      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-      "domainBoundary": "題目要求完整描述 A→B→C，交換兩段雖終點相同但不符合路線。",
-      "alternateReading": "常見誤讀是「只看總位移，忽略必須先經過 B 的路線順序。」；依題幹完整條件重算後不會形成另一個正確答案。"
+      "secondCorrectAnswer": "A 到 B 僅 y 增加七，必為向北七格；B 到 C 僅 x 減少五，必為向西五格，只有第一選項符合指定順序。",
+      "undefinedSymbol": "A、B、C 的坐標、站點順序、坐標正向及格距都已在題幹明確定義。",
+      "unitConflict": "每格等於一坐標單位，兩段坐標差可直接轉成七格與五格。",
+      "roundingConflict": "所有站點坐標與格數都是精確整數，不需四捨五入。",
+      "domainBoundary": "題目要求 A→B→C 的實際順序，東、北正向與格距亦明示；交換兩段雖可能同終點，仍不符合經過 B 的路線。",
+      "alternateReading": "若只看 A 到 C 淨位移，會忽略中途站 B；修正題幹以『依序』和明示方向排除此讀法。"
     },
     "difficultyReason": "中途站點使順序成為必要條件，不能只算淨位移。",
     "literacyContextNecessity": "配送必須依序經過 B；中途站點使路線次序成為數學條件，而非裝飾。",
     "prerequisiteCheck": "需會分段比較坐標。",
     "languageCheck": "題幹所求為「依站點順序描述配送路線」，方向、軸名、截距值或交點坐標均有明確指稱。",
     "reviewerDecision": "pass",
-    "reviewerNote": "針對「配送員從站點 A=(4,-2) 前往 B=(4,5)，再前往 C=(-1,5)。哪段敘述可完整描述路線？」重新依序處理：A 到 B 同 x，y 增加 7，向北；B 到 C 同 y，x 減少 5，向西。 正確選項為「先向北 7 格，再向西 5 格」。三個干擾項均對應不同錯誤：「先向南 7 格，再向西 5 格」不成立，第一段方向反。；「先向北 3 格，再向東 5 格」不成立，兩段距離或方向錯。；「先向西 5 格，再向北 7 格」不成立，淨終點相同但不符合指定經過 B 的順序。。邊界審查：題目要求完整描述 A→B→C，交換兩段雖終點相同但不符合路線。 難度理由：中途站點使順序成為必要條件，不能只算淨位移。",
+    "reviewerNote": "依修正後題幹獨立驗算：地圖東方為 x 正向、北方為 y 正向，每格一單位。A=(4,-2) 到 B=(4,5) 的橫坐標不變，縱坐標增加七，故向北七格；B 到 C=(-1,5) 的縱坐標不變，橫坐標減少五，故向西五格。唯一完整路線是先北七、再西五，且題幹已明示坐標方向、格距與依序經過 B。",
     "reviewedAt": "2026-07-12",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }

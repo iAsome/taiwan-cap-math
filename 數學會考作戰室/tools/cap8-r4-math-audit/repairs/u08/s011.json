@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u08",
+  "batch": "009-u08-complete",
+  "skills": ["s011"],
+  "mc": [
+    {"questionId":"u08-s011-v001","expectedContentSha256":"e5eb5f0dac10f27a294e5d92563e986e283820a05ee39b9612c3d55fec68ecd8","appendText":{"explanation":"每一公尺含一百公分，所以三點二要乘一百；反向把三百二十公分除以一百會回到三點二公尺，數值與單位都一致。","misconceptionTarget":"也可能把小數點向錯方向移動，使大單位換小單位後數值反而縮小。"},"appendArray":{"steps":["寫出一公尺等於一百公分。","用反向除法確認三百二十公分等於三點二公尺。"]}},
+    {"questionId":"u08-s011-v002","expectedContentSha256":"5b8fb9f3632720f62eeb7203f2b5c933379245f5e381db4d0f6a05d922b4c672","appendText":{"explanation":"四點二公尺先換成四百二十公分，才能與四百五十公分相減；兩條繩長只差三十公分，且第一條數值較大，方向沒有顛倒。","misconceptionTarget":"還可能把四點二公尺看成四十二公分，造成差值被放大。"},"appendArray":{"steps":["確認第一條四百五十公分較長。","把四百二十加回三十，驗證得到四百五十。"]}},
+    {"questionId":"u08-s011-v003","expectedContentSha256":"1250b7b6425581d8111f75b9e8da50face1a7c96802aba4a3ea303bd5ab85fc0","appendText":{"explanation":"一平方公尺是一萬平方公分；總面積一萬除以每片一百，得到一百片，並可用一百片乘一百平方公分反查恰好鋪滿。","misconceptionTarget":"也可能把裁片數誤當面積換算倍率，直接回答一萬片。"},"appendArray":{"steps":["以總面積除以每片面積，單位平方公分相消。","用一百乘一百驗證總面積回到一萬平方公分。"]}},
+    {"questionId":"u08-s011-v004","expectedContentSha256":"fac946d1d088ac441532833c25f11c6f8392a4205691b0850ae70a575bf33422","appendText":{"explanation":"平方公分換平方公尺必須除以一萬，三萬六千除一萬為三點六；再乘一萬可回復原數，排除零點三六與三十六等錯誤倍率。","misconceptionTarget":"還可能只移動兩位小數，錯把面積倍率當成長度倍率。"},"appendArray":{"steps":["辨認這是二維面積而非長度。","將三點六平方公尺乘一萬回算原面積。"]}},
+    {"questionId":"u08-s011-v005","expectedContentSha256":"11d0a615f6a002f961c24a840c0975fa416c87cc1846526567f5fa24356588ba","appendText":{"explanation":"總面積扣水域後為二點一平方公里；每平方公里是一百萬平方公尺，所以陸地為二百一十萬平方公尺，且小單位數值應變大。","misconceptionTarget":"也可能把二點五與零點四先換成不同單位，造成不能直接相減。"},"appendArray":{"steps":["先在相同平方公里單位求陸地面積。","以二百一十萬除一百萬，反查二點一平方公里。"]}},
+    {"questionId":"u08-s011-v006","expectedContentSha256":"60e8b5870beea4566db41b098394d341423783578c0b760ba92cf379d323543a","appendText":{"explanation":"零點三五公頃等於三千五百平方公尺，扣除五百平方公尺步道後剩三千；把三千與五百相加可回到原苗圃總面積。","misconceptionTarget":"還可能把零點三五公頃誤換成三百五十平方公尺，少一個十倍。"},"appendArray":{"steps":["使用一公頃等於一萬平方公尺。","以剩餘面積加步道面積驗證總量守恆。"]}},
+    {"questionId":"u08-s011-v007","expectedContentSha256":"518e2afb43cfa7afabb677ff1209e1263b7f610fd72b823f7b529ab99e8a9efb","appendText":{"explanation":"一點八公尺先換成一百八十公分，再乘七十五公分得到一萬三千五百平方公分；兩個長度單位一致後，乘積單位自然是平方公分。","misconceptionTarget":"也可能把一點八直接乘七十五後誤標平方公分，忽略原本單位不同。"},"appendArray":{"steps":["確認長與寬都已使用公分。","用一萬三千五百除七十五，反查長為一百八十公分。"]}},
+    {"questionId":"u08-s011-v008","expectedContentSha256":"90fae160feec470bcad34f7498e4b97269ebe00dba0a0461921085c5e585edef","appendText":{"explanation":"正方形邊長是面積的正平方根，零點八一開根號得零點九公尺；再換成九十公分，平方九十公分也會得到八千一百平方公分。","misconceptionTarget":"還可能直接把零點八一乘一百，錯把面積數值當成長度。"},"appendArray":{"steps":["取正平方根，因邊長必為非負。","用九十乘九十驗證面積等於零點八一平方公尺。"]}},
+    {"questionId":"u08-s011-v009","expectedContentSha256":"efdc093753e52b14d830415b5e08bb2c3c65a46affcee30190e4d3679b1a8f39","appendText":{"explanation":"一平方公里含一百萬平方公尺，而每公頃含一萬平方公尺；一百萬除一萬等於一百，因此正確等式唯一是平方公里等於一百公頃。","misconceptionTarget":"還可能把公里到公尺的一千倍直接套到面積，得到錯誤的一千公頃。"},"appendArray":{"steps":["比較一平方公里與一公頃各含多少平方公尺。","以一百公頃乘一萬，驗證回到一百萬平方公尺。"]}},
+    {"questionId":"u08-s011-v010","expectedContentSha256":"a161f250e322cb78ba086ee56ae8dfaa29c9aa3e67fa2ae56bc0bf044648196a","appendText":{"explanation":"二點四公頃先換為二萬四千平方公尺，扣掉六千後剩一萬八千；相加驗算可恢復總面積，並確認公園面積沒有重複換算。","misconceptionTarget":"也可能把保留面積加到土地總面積，誤解剩餘一詞。"},"appendArray":{"steps":["將兩個面積統一成平方公尺。","以一萬八千加六千驗證總量為二萬四千。"]}},
+    {"questionId":"u08-s011-v011","expectedContentSha256":"0f65fef170a99a23f963a4d80a761cde3be5db18ae2a7423a4a2145c4337b594","appendText":{"explanation":"二千五百平方公分除以一萬是零點二五平方公尺；反向乘一萬恰回二千五百，證明不是零點零二五或二點五。","misconceptionTarget":"還可能把二千五百中的兩個零直接刪除，沒有依平方倍率計算。"},"appendArray":{"steps":["辨認平方公尺是較大的面積單位。","用零點二五乘一萬做反向驗算。"]}},
+    {"questionId":"u08-s011-v012","expectedContentSha256":"aabb7a909c52f4d08645d93b4d2adb9a72edc98b660b229ead0a89b0657b88b5","appendText":{"explanation":"七點五圈乘每圈四百公尺得三千公尺，再除一千為三公里；路程是一維長度，所以只用公里與公尺的一千倍關係。","misconceptionTarget":"也可能把圈數取成整數七或八，忽略題目給定的半圈路程。"},"appendArray":{"steps":["先以圈數乘單圈周長求總公尺數。","用三公里乘一千回算三千公尺。"]}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u08-s011-cr001","expectedContentSha256":"5ea50e637d4da576da0d084a7fdb134e9070a902c74f3ca32829667237070a2b","appendArray":{"standardSolution":["反查八片乘每片三千平方公分等於二萬四千平方公分，再除一萬正好回到二點四平方公尺，換算與完整片數一致。"],"reasoningSteps":["以乘法與反向單位換算共同驗證答案。"],"commonErrors":["把二點四平方公尺換成二百四十平方公分，導致片數少一百倍。"]}},
+    {"questionId":"u08-s011-cr002","expectedContentSha256":"d98cd385acf5527383427213789defef8bad6b4476cdf89d0a24e543c6396ebd","appendArray":{"standardSolution":["另以九千平方公分除以七十五公分，得到長一百二十公分，與一點二公尺相同，兩條計算路徑互相核對。"],"reasoningSteps":["用面積除已知邊長反查另一邊及單位。"],"commonErrors":["只把其中一邊換成公分便相乘，卻把結果任意標成平方公尺。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u08-s011-lecture-r1","expectedContentSha256":"9b72cdd87f101178085c042bb0d9a4772018ae7fc0f1060b9fcf1d08a2e6bf89","replaceText":{"公釐":"毫米"},"appendArray":{"conceptDevelopment":["單位換算完成後應以反向運算或量級估計驗證；例如大面積單位換成小面積單位時數值必定放大，若結果縮小便表示乘除方向或平方倍率有誤。"],"stepByStepMethod":[{"step":5,"instruction":"以反向換算、面積除邊長或量級估計驗證結果。","check":"數值方向、量的種類與平方單位三者一致。"}]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"3.6 公尺等於多少公分？","solutionSteps":["寫出一公尺等於一百公分。","大單位換小單位，計算三點六乘一百等於三百六十。","把三百六十公分除一百，反查為三點六公尺。"],"answer":"360 公分。","why":"公尺到公分是長度的一維倍率，只需乘一百而不是平方；反向除法能同時確認小數點位置與單位換算方向。"},
+      {"exampleId":"L2","prompt":"25,000 平方公分等於多少平方公尺？","solutionSteps":["由一公尺等於一百公分推出一平方公尺等於一萬平方公分。","小面積單位換大單位，計算二萬五千除一萬等於二點五。","用二點五乘一萬回算二萬五千平方公分。"],"answer":"2.5 平方公尺。","why":"面積同時有長與寬兩個方向，所以公分到公尺的一百倍必須平方；反向乘一萬可排除只除一百的常見錯誤。"},
+      {"exampleId":"L3","prompt":"0.08 平方公里等於多少公頃？","solutionSteps":["寫出一平方公里等於一百公頃。","大面積單位換小單位，計算零點零八乘一百等於八。","用八公頃除一百，反查零點零八平方公里。"],"answer":"8 公頃。","why":"一平方公里是一百萬平方公尺，一公頃是一萬平方公尺，兩者比值為一百；用共同的平方公尺基準可避免記錯倍率。"},
+      {"exampleId":"L4","prompt":"長 2 公尺、寬 75 公分的長方形面積，以平方公分表示。","solutionSteps":["把二公尺換成二百公分，使兩邊同單位。","計算二百乘七十五等於一萬五千。","以一萬五千除七十五反查長為二百公分。"],"answer":"15,000 平方公分。","why":"長與寬必須先統一單位才能相乘，兩個公分長度相乘後結果自然是平方公分；除回其中一邊可檢查乘積與單位。"}
+    ]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

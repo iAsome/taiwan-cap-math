@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u11",
+  "batch": "012-u11-complete",
+  "skills": ["s013"],
+  "mc": [
+    {"questionId":"u11-s013-v001","expectedContentSha256":"0ee1c97a1a10e50214f13f936abd3472db2b22fa30c477594b64d79939152c9e","appendText":{"explanation":"向東三公里與向北四公里互相垂直，可視為直角三角形的兩股。起點到終點是斜邊，因此距離為√(3²＋4²)＝√25＝5公里。","misconceptionTarget":"把兩段路程直接相加，誤認直線距離也是七公里。"}},
+    {"questionId":"u11-s013-v002","expectedContentSha256":"f9c2f737631cb20e28ab36728d23d6aa860a09e69912818771267429a8f10f4e","appendText":{"explanation":"折斷處離地六公尺，樹梢落點離樹根八公尺，兩段互相垂直。折斷部分是斜邊，長為√(6²＋8²)＝10公尺。","misconceptionTarget":"把折斷部分誤當成直角邊，或直接以六加八作答。"}},
+    {"questionId":"u11-s013-v003","expectedContentSha256":"fa70ffb62e4376c13e28b7b20c546de5117f9f0ee7728363530ee2a13837a611","appendText":{"explanation":"向南五公里與向西十二公里形成互相垂直的位移分量，合位移方向為西南，長度為√(5²＋12²)＝13公里。","misconceptionTarget":"只判斷方向而忽略距離，或將兩段路程相加成十七。"}},
+    {"questionId":"u11-s013-v004","expectedContentSha256":"08ed712e6cf1593420ec20d8740cc32903d48f76e620587f412ee0dc5a92f401","appendText":{"explanation":"電線桿高度十二公尺與固定點到桿底五公尺是兩股，纜線連接桿頂與固定點，故為斜邊。其長為√(12²＋5²)＝13公尺。","misconceptionTarget":"誤把地面五公尺與桿高直接相加，沒有辨認纜線是斜邊。"}},
+    {"questionId":"u11-s013-v005","expectedContentSha256":"c45f0e7431770093c03e051803b8a6b9eadade044ae9461de718d615eb32b6f4","appendText":{"explanation":"原路線長九加十二等於二十一公里；直線距離為√(9²＋12²)＝15公里，所以改走直線可節省21－15＝6公里。","misconceptionTarget":"只算出直線十五公里，卻沒有再與原路線二十一公里相減。"}},
+    {"questionId":"u11-s013-v006","expectedContentSha256":"485eba5d46a42f1818cda81e532937d827ce80fbb0142da8ffb50ce671e9ebcc","appendText":{"explanation":"長方形相鄰兩邊互相垂直，對角線是所形成直角三角形的斜邊。長為√(15²＋8²)＝√289＝17公尺，並大於任一邊而小於兩邊總和，量感合理。","misconceptionTarget":"把長與寬相加當成對角線，或錯用兩邊平方相減。"}},
+    {"questionId":"u11-s013-v007","expectedContentSha256":"5aba3618ece3ed033141a94ccb25cad012f4938db7ba05fd90eb00936c0fad19","appendText":{"explanation":"去程向東七公里再向北二十四公里，終點到起點的直線為√(7²＋24²)＝25公里。總路程是7＋24＋25＝56公里。","misconceptionTarget":"只求出返程二十五公里，忘記總路程還要加上兩段去程。"}},
+    {"questionId":"u11-s013-v008","expectedContentSha256":"4c9ef75f367056c6396108d281981cf352243df402f074e8cff179193755d36d","appendText":{"explanation":"折斷處高九公尺，樹梢距樹根十二公尺，折斷部分長√(9²＋12²)＝15公尺。原樹高是未折段加折斷段，即9＋15＝24公尺。","misconceptionTarget":"把十五公尺當作原樹高，遺漏仍直立的九公尺部分。"}},
+    {"questionId":"u11-s013-v009","expectedContentSha256":"1bdfa8176e14588f15829fd0687e8a4f6a18d40df61a3f874a5b133eca69d91a","appendText":{"explanation":"兩人從同一點分別向東八公尺與向北十五公尺，位置差形成兩股，兩人距離為√(8²＋15²)＝√289＝17公尺。","misconceptionTarget":"把各自走的距離相加，誤答二十三公尺而非直線距離。"}},
+    {"questionId":"u11-s013-v010","expectedContentSha256":"d4ade719ae48c9a02ad47e35cfbb91e5b61939e6e75a756a0f46e0a975dd411a","appendText":{"explanation":"沿兩股行走的原路程為六加八等於十四公里；斜向直達為√(6²＋8²)＝10公里，因此少走14－10＝4公里。","misconceptionTarget":"將十公里當成節省量，沒有用原路程扣除直達距離。"}},
+    {"questionId":"u11-s013-v011","expectedContentSha256":"aad5ee891c4d3b5f04434ecfeeda3686d57ae75afba40dbdee4b6f48ca62009f","appendText":{"explanation":"風箏線二十六公尺為斜邊，水平距離十公尺為一股，高度是另一股。高度為√(26²－10²)＝√576＝24公尺；二十四小於斜邊二十六，符合斜邊最長。","misconceptionTarget":"看到兩個長度就平方相加，沒有辨認二十六是斜邊。"}},
+    {"questionId":"u11-s013-v012","expectedContentSha256":"ac9223a877e21854ac60cc40fe629f2dd7cc8ba84eafd92ded1e5682528c9210","appendText":{"explanation":"向東二十公尺與向北二十一公尺互相垂直，起終點距離是斜邊，為√(20²＋21²)＝√841＝29公尺；此直線也小於折線路程四十一公尺。","misconceptionTarget":"把兩個位移分量相加成四十一，混淆路程與直線距離。"}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u11-s013-cr001","expectedContentSha256":"a2fa60413781b614b4cf4fa23062de8c36fa46081522a572286336a4b165b5ef","set":{"standardSolution":["向東十二公里與向北五公里互相垂直，返程直線是直角三角形的斜邊。","返程距離為√(12²＋5²)＝√169＝13公里。","全程路程為12＋5＋13＝30公里，所以答案是三十公里。"],"commonErrorTargets":["只算返程十三公里，未把向東與向北的去程一起計入全程。","把十二與五相加成十七並當成返程，混淆折線路程與直線距離。"]}},
+    {"questionId":"u11-s013-cr002","expectedContentSha256":"ec3afa5b0d2f874ebe0f0d84f2afd3f6a792e69851bdb2c46a823bc788b608b7","set":{"standardSolution":["折斷處高八公尺，樹梢離樹根十五公尺，兩段形成直角三角形的兩股。","折斷部分長√(8²＋15²)＝√289＝17公尺。","原樹高為仍直立的八公尺加折斷的十七公尺，共25公尺。"],"commonErrorTargets":["只答折斷部分十七公尺，忘記原樹高還包含直立的八公尺。","把八與十五直接相加成二十三，沒有用勾股定理求折斷部分。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u11-s013-lecture-r1","expectedContentSha256":"0cc3b9e42a1d2e03e9e2aceb49eda1bc56cf4dc27c38c6dfa70fe1f9a86665b6","appendArray":{"conceptNarrative":["生活情境先不要急著代公式，應先把方向、地面與鉛直高度翻譯成直角三角形。互相垂直的兩段是兩股，連接起點與終點的最短直線才是斜邊；若題目問全程、節省距離或原來高度，求出斜邊後還要依語意加減。最後應寫出單位並檢查斜邊大於任一股、直線不超過折線，這些量感能及早發現角色判錯或漏算。"]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"先向西八公里，再向北十五公里，起點到終點多遠？","solutionSteps":["把向西八與向北十五視為互相垂直的兩股。","以勾股定理算直線距離√(8²＋15²)＝√289。","取正長度，得到起點到終點為17公里。"],"answer":"17公里","why":"題目問起終點的直線距離，不是走過的折線總長；因此八與十五要用平方和開根號，結果也應小於原路程二十三公里。"},
+      {"exampleId":"L2","prompt":"沿兩條垂直道路各走八與十五公里，若改走直線可少走多少？","solutionSteps":["原折線路程為8＋15＝23公里。","直線距離為√(8²＋15²)＝17公里。","節省距離為23－17＝6公里。"],"answer":"6公里","why":"先分別求原路線與新路線，再相減才能回答節省量；若只答十七公里，回答的是新路線長度而不是題目所問。"},
+      {"exampleId":"L3","prompt":"樹在離地十二公尺處折斷，樹梢落在離樹根五公尺處，原樹高多少？","solutionSteps":["十二公尺與五公尺是直角三角形兩股。","折斷部分長√(12²＋5²)＝13公尺。","原樹高為12＋13＝25公尺。"],"answer":"25公尺","why":"斜邊十三公尺只是折斷後倒下的部分，原樹還含離地十二公尺的直立段；兩段相加才會還原折斷前的總高度。"},
+      {"exampleId":"L4","prompt":"高二十公尺的旗桿，地面固定點距桿底十五公尺，纜線至少多長？","solutionSteps":["桿高二十與地面十五是互相垂直的兩股。","纜線是連接桿頂與固定點的斜邊。","算得√(20²＋15²)＝√625＝25公尺。"],"answer":"25公尺","why":"至少長度對應兩點間直線，所以纜線應視為斜邊；答案二十五也大於兩股，符合直角三角形斜邊最長的量感。"}
+    ]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

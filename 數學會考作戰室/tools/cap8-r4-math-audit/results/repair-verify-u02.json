@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "unitId": "u02",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "003-u02-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u02\",\n  \"newSkillCount\": 15,\n  \"u02SkillTotalAfterBatch\": 15,\n  \"totalHumanSkillCountAfterBatch\": 30,\n  \"lectureCount\": 15,\n  \"mcQuestionCount\": 180,\n  \"constructedResponseCount\": 30,\n  \"semanticReviewCount\": 180,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 45,\n    \"standard\": 45,\n    \"advanced\": 45,\n    \"literacy\": 45\n  },\n  \"answerIndexCounts\": [\n    45,\n    45,\n    45,\n    45\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u02",
+          "newSkillCount": 15,
+          "u02SkillTotalAfterBatch": 15,
+          "totalHumanSkillCountAfterBatch": 30,
+          "lectureCount": 15,
+          "mcQuestionCount": 180,
+          "constructedResponseCount": 30,
+          "semanticReviewCount": 180,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 45,
+            "standard": 45,
+            "advanced": 45,
+            "literacy": 45
+          },
+          "answerIndexCounts": [
+            45,
+            45,
+            45,
+            45
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "productionActivationAllowed": false
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u02\",\n  \"newSkillCount\": 15,\n  \"u02SkillTotalAfterBatch\": 15,\n  \"totalHumanSkillCountAfterBatch\": 30,\n  \"lectureCount\": 15,\n  \"mcQuestionCount\": 180,\n  \"constructedResponseCount\": 30,\n  \"semanticReviewCount\": 180,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 45,\n    \"standard\": 45,\n    \"advanced\": 45,\n    \"literacy\": 45\n  },\n  \"answerIndexCounts\": [\n    45,\n    45,\n    45,\n    45\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u02",
+          "newSkillCount": 15,
+          "u02SkillTotalAfterBatch": 15,
+          "totalHumanSkillCountAfterBatch": 30,
+          "lectureCount": 15,
+          "mcQuestionCount": 180,
+          "constructedResponseCount": 30,
+          "semanticReviewCount": 180,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 45,
+            "standard": 45,
+            "advanced": 45,
+            "literacy": 45
+          },
+          "answerIndexCounts": [
+            45,
+            45,
+            45,
+            45
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "productionActivationAllowed": false
+        }
+      }
+    }
+  ]
+}

@@ -116,41 +116,40 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "解x/6=5。",
+      "prompt": "解 x/7＝6，並代回原式驗算。",
       "solutionSteps": [
-        "兩邊同乘6。",
-        "x=30。"
+        "等式兩邊同乘 7，得到 x＝6×7＝42。",
+        "把 42 代回原式，計算 42/7＝6。"
       ],
-      "answer": "30。"
+      "answer": "x＝42。",
+      "why": "未知數被七除，逆運算是讓等式兩邊同乘七，所以 x＝六乘七等於四十二。代回原式，四十二除以七確實等於六；若再除七會把逆運算方向做反。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "解(x+4)/3=7。",
+      "prompt": "解 (x＋5)/4＝9，說明分數線的作用範圍。",
       "solutionSteps": [
-        "乘3得x+4=21。",
-        "x=17。"
+        "兩邊同乘 4，完整保留分子，得到 x＋5＝36。",
+        "兩邊同減 5 得 x＝31，再代回 36/4＝9。"
       ],
-      "answer": "17。"
+      "answer": "x＝31。",
+      "why": "分數線作用在整個 x 加五，兩邊同乘四後得到 x＋5＝36，再同減五得 x＝31。代回時分子為三十六，除以四等於九，不能只讓 x 除以四。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "解x/4+x/6=5。",
+      "prompt": "解 x/8＋x/12＝5。",
       "solutionSteps": [
-        "同乘12得3x+2x=60。",
-        "5x=60，x=12。"
+        "用最小公倍數 24 同乘每一項，得到 3x＋2x＝120。",
+        "合併為 5x＝120，解得 x＝24 並代回驗算。"
       ],
-      "answer": "12。"
+      "answer": "x＝24。",
+      "why": "八與十二的最小公倍數是二十四。等式每一項同乘二十四，得到 3x＋2x＝120，因此 5x＝120、x＝24；代回三加二正好等於五，左右精確相等。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "解(2x-1)/3-(x+2)/4=2。",
+      "prompt": "解 (3x－2)/4－(x＋1)/6＝5。",
       "solutionSteps": [
-        "同乘12得4(2x-1)-3(x+2)=24。",
-        "8x-4-3x-6=24。",
-        "5x=34，x=34/5。"
+        "用最小公倍數 12 同乘，得到 3(3x－2)－2(x＋1)＝60。",
+        "展開成 7x－8＝60，解得 x＝68/7 並代回原式。"
       ],
-      "answer": "34/5。"
+      "answer": "x＝68/7。",
+      "why": "四與六的最小公倍數是十二。同乘後得 3(3x－2)－2(x＋1)＝60，展開為 7x－8＝60，所以 x＝68/7；代回原式左右相等，精確答案應保留六十八分之七。"
     }
   ],
   "commonMistakes": [
@@ -236,7 +235,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "daee3b53117dc146b431c5eb1c236d1214312d9c1d82a122dbf3b60fea196f10",
+  "contentSha256": "d2037cf1f44384004d1a229ac0b43f390677bdfaa53a2aa98eba2812546deb56",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 };
@@ -261,11 +260,11 @@ export const QUESTIONS = [
       "24"
     ],
     "answerIndex": 0,
-    "explanation": "兩邊同乘3；x=7×3=21。所以答案是「21」。",
+    "explanation": "方程式 x/3＝7 表示 x 的三分之一是 7。依等量公理，等式兩邊同乘 3，得到 x＝7×3＝21。把 21 代回原式，21/3＝7，左右相等，所以 21 是唯一正確答案；同乘非零數沒有改變等式的解。",
     "steps": [
-      "將等式兩邊同乘 3。",
-      "得到 x＝7×3。",
-      "計算得 x＝21，代回 21÷3＝7。"
+      "辨認未知數 x 被 3 除，逆運算應乘 3。",
+      "等式兩邊同乘 3，得到 x＝7×3。",
+      "算得 x＝21，代回 21/3＝7 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -289,7 +288,7 @@ export const QUESTIONS = [
         "reason": "把3與7相加後再乘。"
       }
     ],
-    "commonMistake": "看到分母就再除一次。",
+    "commonMistake": "把分母三看成還要再除一次，會得到七分之三，沒有維持等式兩邊相等。",
     "concept": "乘分母可消去除法。",
     "tags": [
       "代數",
@@ -304,7 +303,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "af888bbd1144c0383249730f0d91f2674570ea3b445847fcd221db06d9ac2074",
+    "contentSha256": "3ba476ddeb9158db305c40f720b92a8b20d5797070796a3ef390be8331579581",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -327,11 +326,11 @@ export const QUESTIONS = [
       "20"
     ],
     "answerIndex": 1,
-    "explanation": "消去常數2；x/4=3；乘4得12。所以答案是「12」。",
+    "explanation": "先消去 x/4 外加的 2，等式兩邊同減 2，得到 x/4＝3。再把兩邊同乘 4，得到 x＝12。代回原式可得 12/4＋2＝3＋2＝5，與右邊相等，因此答案是 12；先處理加二再消除分母，運算層次才正確。",
     "steps": [
-      "消去常數2",
-      "x/4=3",
-      "乘4得12"
+      "等式兩邊同減 2，得到 x/4＝3。",
+      "等式兩邊同乘 4，得到 x＝12。",
+      "代回計算 12/4＋2＝5，確認成立。"
     ],
     "optionAnalysis": [
       {
@@ -355,7 +354,7 @@ export const QUESTIONS = [
         "reason": "直接5×4。"
       }
     ],
-    "commonMistake": "未先扣除常數。",
+    "commonMistake": "直接用右邊五乘四而漏掉常數二，會把尚未移項的總值誤當成 x/4。",
     "concept": "先消常數再消分母。",
     "tags": [
       "代數",
@@ -370,7 +369,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "38396e12d018d1f5a7e06c3b7950e5a8ce105179784267a63d439b4e156ba172",
+    "contentSha256": "00edb81f81fbfbe9ce8eba8e0672eb950c5e04a3d64e8053300547f7084e609e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -393,11 +392,11 @@ export const QUESTIONS = [
       "20"
     ],
     "answerIndex": 2,
-    "explanation": "消分母得x-1=15；兩邊加1；x=16。所以答案是「16」。",
+    "explanation": "分數線作用在整個 x－1。等式兩邊同乘 5，可得 x－1＝15；接著兩邊同加 1，得到 x＝16。把 16 代回，(16－1)/5＝15/5＝3，正好等於右邊，所以第三個選項正確；括號範圍前後保持一致。",
     "steps": [
-      "消分母得x-1=15",
-      "兩邊加1",
-      "x=16"
+      "保留分子括號，兩邊同乘 5 得 x－1＝15。",
+      "等式兩邊同加 1，解得 x＝16。",
+      "代回原分數式，確認 15/5＝3。"
     ],
     "optionAnalysis": [
       {
@@ -421,7 +420,7 @@ export const QUESTIONS = [
         "reason": "把3+1再乘5。"
       }
     ],
-    "commonMistake": "只讓x除5而忽略-1。",
+    "commonMistake": "只讓 x 除以五而忽略分子中的減一，會改變分數線原本作用的完整範圍。",
     "concept": "先乘分母再解括號內。",
     "tags": [
       "代數",
@@ -436,7 +435,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a97cf7d5a4518cd58a27f7abcc0a113da9e94c1abed949cf57ebabec35985059",
+    "contentSha256": "a2712725fd41915462791f7570348b6490c7b104850fb68a032f35c1765c9a21",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -459,11 +458,11 @@ export const QUESTIONS = [
       "30"
     ],
     "answerIndex": 3,
-    "explanation": "通分為3x/10=9；兩邊乘10得3x=90；除3得30。所以答案是「30」。",
+    "explanation": "將 x/2 與 x/5 通分到分母 10，左邊成為 5x/10－2x/10＝3x/10。由 3x/10＝9，兩邊同乘 10 得 3x＝90，再除以 3 得 x＝30。代回 15－6＝9，驗算成立。也可直接讓全式同乘十，仍會得到相同的一次方程式與唯一解。",
     "steps": [
-      "通分為3x/10=9",
-      "兩邊乘10得3x=90",
-      "除3得30"
+      "把兩個分數通分，化為 3x/10＝9。",
+      "等式兩邊同乘 10，得到 3x＝90。",
+      "兩邊同除以 3 得 x＝30，並代回驗算。"
     ],
     "optionAnalysis": [
       {
@@ -487,7 +486,7 @@ export const QUESTIONS = [
         "reason": "通分得(5x-2x)/10=9，即3x/10=9；兩邊乘10再除3，x=30。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "分母直接相減或相加。",
+    "commonMistake": "把分母二與五直接相減或相加，沒有先通分，就無法正確合併兩個 x 的分數項。",
     "concept": "通分後再解係數。",
     "tags": [
       "代數",
@@ -502,7 +501,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5c54f3ddb5386644cbb5df2a904c0bf22ff63d205d184cf038e43e6bd46bafb7",
+    "contentSha256": "57dd755899eee5f7087bd2540058d02a6632cc335a24d7272acf61473f2aa07b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -525,11 +524,11 @@ export const QUESTIONS = [
       "23/2"
     ],
     "answerIndex": 1,
-    "explanation": "消分母得到2x+3=20；減3得2x=17；除2得17/2。所以答案是「17/2」。",
+    "explanation": "分子 2x＋3 整體除以 4，因此先讓等式兩邊同乘 4，得到 2x＋3＝20。兩邊同減 3 得 2x＝17，再同除以 2 得 x＝17/2。代回時分子為 20，20/4＝5，故分數解完全正確，不必取成整數。",
     "steps": [
-      "消分母得到2x+3=20",
-      "減3得2x=17",
-      "除2得17/2"
+      "等式兩邊同乘 4，保留完整分子得 2x＋3＝20。",
+      "兩邊同減 3，得到 2x＝17。",
+      "兩邊同除以 2 得 17/2，代回原式驗算。"
     ],
     "optionAnalysis": [
       {
@@ -553,7 +552,7 @@ export const QUESTIONS = [
         "reason": "把20+3後除2。"
       }
     ],
-    "commonMistake": "為了整數答案擅自四捨五入。",
+    "commonMistake": "看到答案不是整數便擅自取整或四捨五入，會使代回原方程式時左右不再相等。",
     "concept": "解可為非整數，應保留精確分數。",
     "tags": [
       "代數",
@@ -568,7 +567,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a546676eed7d7a115c89935abcad80288d3417e49e587957098edb413cfdf93b",
+    "contentSha256": "8e508b1f78b25d991ba425769e215f9a84730059244eaa3110632b981a13e08b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -591,11 +590,11 @@ export const QUESTIONS = [
       "4"
     ],
     "answerIndex": 2,
-    "explanation": "通分求5/6-1/2=1/3；得到x/3=1/3；兩邊乘3得1。所以答案是「1」。",
+    "explanation": "先把常數分數移到右邊：x/3＝5/6－1/2。將 1/2 通分成 3/6，可得 x/3＝2/6＝1/3。等式兩邊同乘 3，所以 x＝1。代回 1/3＋1/2＝2/6＋3/6＝5/6，左右相等。通分只改寫分數形式，不會改變原有數值。",
     "steps": [
-      "通分求5/6-1/2=1/3",
-      "得到x/3=1/3",
-      "兩邊乘3得1"
+      "兩邊同減 1/2，寫成 x/3＝5/6－1/2。",
+      "通分計算右邊，得到 x/3＝1/3。",
+      "兩邊同乘 3 得 x＝1，再代回驗算。"
     ],
     "optionAnalysis": [
       {
@@ -619,7 +618,7 @@ export const QUESTIONS = [
         "reason": "分數相減錯誤。"
       }
     ],
-    "commonMistake": "把不同分母的分子分母各自相減。",
+    "commonMistake": "把不同分母的分子與分母分別相減，會錯算五分之六減二分之一，應先通分。",
     "concept": "先精確通分再消分母。",
     "tags": [
       "代數",
@@ -634,7 +633,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3f14ff82d8ca11c2826e523710c7b950196ffd48e53ea872520a05e1d1646f03",
+    "contentSha256": "4dc0b0ebd13c61798d1c52fac0d35e777c39b70fb3ce387eb63610783dbe47ff",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -657,11 +656,11 @@ export const QUESTIONS = [
       "9"
     ],
     "answerIndex": 3,
-    "explanation": "以最小公倍數6消分母；展開得3x-3=24；解得x=9。所以答案是「9」。",
+    "explanation": "分母 3 與 6 的最小公倍數是 6。等式每一項同乘 6，得到 2(x－2)＋(x＋1)＝24；展開為 2x－4＋x＋1＝24，也就是 3x－3＝24。解得 3x＝27、x＝9，代回兩分數和為 4。右邊也必須乘六，等量關係才會保持。",
     "steps": [
-      "以最小公倍數6消分母",
-      "展開得3x-3=24",
-      "解得x=9"
+      "等式每一項同乘 6，得到 2(x－2)＋(x＋1)＝24。",
+      "展開並合併為 3x－3＝24。",
+      "解得 x＝9，代回原式確認等於 4。"
     ],
     "optionAnalysis": [
       {
@@ -685,7 +684,7 @@ export const QUESTIONS = [
         "reason": "兩邊乘6得2(x-2)+(x+1)=24，化簡3x-3=24，所以x=9。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "消分母時漏乘某一項。",
+    "commonMistake": "消分母時漏乘第二個分子或等式右邊，會破壞等量關係並得到錯誤的係數。",
     "concept": "每一項都要乘6。",
     "tags": [
       "代數",
@@ -700,7 +699,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7b74fecf558072ab6034bfc532aa7e1d222d9009b0528246a9a26b880e44c4b0",
+    "contentSha256": "e89a13c9e528676ada43c84996e106746d5fc78dcc1c1663ecff8aad85f9d0bc",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -723,11 +722,11 @@ export const QUESTIONS = [
       "24"
     ],
     "answerIndex": 0,
-    "explanation": "乘10消分母；展開合併得x-12=10；所以x=22。所以答案是「22」。",
+    "explanation": "等式同乘分母 5 與 2 的最小公倍數 10，得到 2(3x－1)－5(x＋2)＝10。展開時負號作用於整個括號，左邊為 6x－2－5x－10＝x－12。因此 x－12＝10，解得 x＝22；代回原式確為 1，負號分配也可由此核對。",
     "steps": [
-      "乘10消分母",
-      "展開合併得x-12=10",
-      "所以x=22"
+      "等式每項同乘 10，寫成 2(3x－1)－5(x＋2)＝10。",
+      "正確分配負號並合併，得到 x－12＝10。",
+      "兩邊同加 12 得 x＝22，代回原式驗算。"
     ],
     "optionAnalysis": [
       {
@@ -751,7 +750,7 @@ export const QUESTIONS = [
         "reason": "漏乘右邊的1。"
       }
     ],
-    "commonMistake": "把-5(x+2)展成-5x+10。",
+    "commonMistake": "把負五乘括號展開成負五 x 加十，漏了負號也要乘常數二，會使常數項符號錯誤。",
     "concept": "消分母後仍須正確分配負號。",
     "tags": [
       "代數",
@@ -766,7 +765,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fe7a81f182108760569c7b0dd84a1a14b1f292d5c9732a63a3a177645a18499b",
+    "contentSha256": "ccd6f8037f77a9e3bc7455ffe0702c5b4159f048ee510ce5286d53822ca17f9d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -789,11 +788,11 @@ export const QUESTIONS = [
       "37.5"
     ],
     "answerIndex": 2,
-    "explanation": "辨認x除以0.4；兩邊乘0.4；得到6。所以答案是「6」。",
+    "explanation": "x/0.4＝15 表示 x 除以 0.4 的結果是 15。依除法的逆運算，等式兩邊同乘 0.4，得到 x＝15×0.4＝6。驗算 6÷0.4＝15，左右相等；因除以小於 1 的正數會變大，x 小於 15 也合理。",
     "steps": [
-      "辨認x除以0.4",
-      "兩邊乘0.4",
-      "得到6"
+      "辨認 x 是被 0.4 除的數。",
+      "等式兩邊同乘 0.4，得到 x＝15×0.4。",
+      "算得 x＝6，代回 6÷0.4＝15。"
     ],
     "optionAnalysis": [
       {
@@ -817,7 +816,7 @@ export const QUESTIONS = [
         "reason": "把15×0.4小數點放錯。"
       }
     ],
-    "commonMistake": "看到除號就固定再做除法。",
+    "commonMistake": "看到除號就又用十五除以零點四，會把逆運算方向做反並得到三十七點五。",
     "concept": "除以0.4的逆運算是乘0.4。",
     "tags": [
       "代數",
@@ -832,7 +831,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a7d7a8bbcb22cf60e5b26b1066cda87c7ac445b940427660d3149480e3730652",
+    "contentSha256": "4e829bd1ba2a63af0d319ff8ef1d2031853935c686b05d004b4ae338428e42b8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -855,11 +854,11 @@ export const QUESTIONS = [
       "36"
     ],
     "answerIndex": 3,
-    "explanation": "每分鐘流入量是 x/3 公升。流入 1 分鐘後另加 4 公升，因此列 x/3＋4＝16。兩邊同減 4 得 x/3＝12，再同乘 3，得 x＝36 公升。",
+    "explanation": "預定 3 分鐘等量流入 x 公升，所以每分鐘流入 x/3 公升。第一分鐘的流入量再加備用水 4 公升後共有 16 公升，故 x/3＋4＝16。先減 4 得 x/3＝12，再乘 3 得 x＝36 公升；其中 12 只是每分鐘流量。",
     "steps": [
-      "依「3 分鐘內等量流入 x 公升」，寫出每分鐘流入量 x/3 公升。",
-      "依 1 分鐘流入量加上 4 公升等於 16 公升，列 x/3＋4＝16。",
-      "同減 4、再同乘 3，得到 x＝36 公升。"
+      "由三分鐘總量 x 寫出每分鐘流入 x/3 公升。",
+      "依第一分鐘加備用水列 x/3＋4＝16。",
+      "同減 4 再同乘 3，求得三分鐘總量 x＝36 公升。"
     ],
     "optionAnalysis": [
       {
@@ -883,7 +882,7 @@ export const QUESTIONS = [
         "reason": "x/3＋4＝16，所以 x/3＝12，三分鐘總量 x＝36 公升。"
       }
     ],
-    "commonMistake": "求出每分鐘流入 12 公升後便停止，沒有再換算成 3 分鐘的總流入量。",
+    "commonMistake": "求出每分鐘十二公升便停止，沒有再乘三換回題目所問的三分鐘預定總流入量。",
     "concept": "總量平均分成 3 分鐘時，每分鐘量為 x/3；另加入的 4 公升只出現一次。",
     "tags": [
       "代數",
@@ -898,7 +897,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "三分鐘總量、等量流入、一分鐘已流入量與另加4公升共同決定方程式 x/3＋4＝16；任一資料刪除都無法求出總量。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b771a0cf1510f1006bf8b5cc0759321c0e407213feb56ed8191d0f85edfdc0f4",
+    "contentSha256": "2c93a5343aa1f8f9b2180041adad1c315eda699ffb644b0b65b4f2e49b14481d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -921,11 +920,11 @@ export const QUESTIONS = [
       "480"
     ],
     "answerIndex": 0,
-    "explanation": "列已讀頁數x/4+30=90；減30得x/4=60；乘4得240。所以答案是「240」。",
+    "explanation": "設全書有 x 頁，先讀完四分之一就是 x/4 頁，再讀 30 頁後累計 90 頁，因此列 x/4＋30＝90。兩邊同減 30 得 x/4＝60，再同乘 4 得 x＝240。驗算四分之一為 60 頁，加 30 頁正好 90 頁。",
     "steps": [
-      "列已讀頁數x/4+30=90",
-      "減30得x/4=60",
-      "乘4得240"
+      "用 x/4 表示先讀完的頁數，列 x/4＋30＝90。",
+      "等式兩邊同減 30，得到 x/4＝60。",
+      "兩邊同乘 4 得 x＝240 頁，並依累計頁數驗算。"
     ],
     "optionAnalysis": [
       {
@@ -949,7 +948,7 @@ export const QUESTIONS = [
         "reason": "把四分之一誤成除2。"
       }
     ],
-    "commonMistake": "把30頁也乘4。",
+    "commonMistake": "把後來再讀的三十頁也乘四，會誤認為三十頁屬於每一個四分之一區段。",
     "concept": "四分之一全書用x/4表示。",
     "tags": [
       "代數",
@@ -964,7 +963,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "先讀全書四分之一再讀固定30頁的順序與量型決定x/4+30=90，情境不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "079c9735dd01341f90ec131e4e72768911ca495b1d3f9ebc760d9b17c4f4ed8c",
+    "contentSha256": "817adee1f35bde74e2134536f6e747b7876cc741bb57ac2a8f869b6f9d43c546",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -987,11 +986,11 @@ export const QUESTIONS = [
       "6"
     ],
     "answerIndex": 1,
-    "explanation": "剩餘比例為1/3；列x/3=1.5；乘3得4.5公斤。所以答案是「4.5」。",
+    "explanation": "用掉總量的 2/3 後，剩餘比例是 1－2/3＝1/3。設原有 x 公斤，便有 x/3＝1.5；兩邊同乘 3，得到 x＝4.5 公斤。驗算原量的三分之二是 3 公斤，4.5－3＝1.5 公斤，完整符合題意。",
     "steps": [
-      "剩餘比例為1/3",
-      "列x/3=1.5",
-      "乘3得4.5公斤"
+      "先求剩餘比例為 1/3。",
+      "設原量 x 公斤，列 x/3＝1.5。",
+      "兩邊同乘 3 得 4.5 公斤，並核對用掉量。"
     ],
     "optionAnalysis": [
       {
@@ -1015,7 +1014,7 @@ export const QUESTIONS = [
         "reason": "把1.5乘4。"
       }
     ],
-    "commonMistake": "把2/3當成剩餘比例。",
+    "commonMistake": "把已用掉的三分之二當成剩餘比例，會用一點五除以三分之二而求錯原量。",
     "concept": "總量減用量後才等於剩餘量。",
     "tags": [
       "代數",
@@ -1030,7 +1029,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "使用比例與剩餘重量共同決定剩餘是全量的1/3，若刪除「用掉」方向就會得到不同方程式。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6ec5d7cefe3eb3ae8921fcfd10d23e888ef26f11a00136c1c56ad6dcc6495f3c",
+    "contentSha256": "d8e277112e2dff9bb3b4318eda74d3105cfae84dbd6dd2a0e6b238f5b4a49b20",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }
@@ -1053,10 +1052,10 @@ export const CONSTRUCTED_RESPONSES = [
       "解答後代回原式。"
     ],
     "fullCreditSolution": [
-      "同乘12：3(x-3)+2(x+1)=60。",
-      "3x-9+2x+2=60，5x-7=60。",
-      "5x=67，x=67/5。",
-      "代回兩分數和為5。"
+      "分母 4 與 6 的最小公倍數是 12。等式每一項同乘 12，得到 3(x－3)＋2(x＋1)＝60。",
+      "展開並合併同類項：3x－9＋2x＋2＝60，所以 5x－7＝60。",
+      "兩邊同加 7 得 5x＝67，再同除以 5，求得 x＝67/5。",
+      "代回原式：(67/5－3)/4＋(67/5＋1)/6＝13/5＋12/5＝5，左右相等。"
     ],
     "alternativeSolutions": [
       "可先通分左邊再解，但不得漏乘任何一項。"
@@ -1084,15 +1083,16 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "只乘左邊含x的項。",
-      "把12×5漏寫。"
+      "同乘十二時只乘含 x 的分數項，漏乘右邊五，會破壞原等式。",
+      "展開 3(x－3) 或 2(x＋1) 時漏乘常數，導致常數項合併錯誤。",
+      "因答案不是整數便擅自取近似值，沒有以六十七分之五精確代回驗算。"
     ],
     "independentReview": {
       "derivedResult": "x=67/5",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "c152190c230dca7d6a34edf84bd785e864acaad64c2fb5690d703b83dec1b1e0",
+    "contentSha256": "441c82b1b9aa57b7c3b0c6888ec6fe2ee2d6913e7b9f7ac0e79975da5a00c723",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -1112,9 +1112,9 @@ export const CONSTRUCTED_RESPONSES = [
       "附公升並檢查正值。"
     ],
     "fullCreditSolution": [
-      "3x/5+2=14。",
-      "3x/5=12。",
-      "3x=60，x=20公升。"
+      "設原桶有 x 公升，倒入容器的是原量的 3/5，再補入 2 公升，因此列 3x/5＋2＝14。",
+      "等式兩邊同減 2，得到 3x/5＝12；再同乘 5，得到 3x＝60。",
+      "兩邊同除以 3，求得 x＝20 公升。原量五分之三是 12 公升，加 2 公升正好 14 公升。"
     ],
     "alternativeSolutions": [
       "可由14-2=12是原量的3/5，算12÷3×5。"
@@ -1142,15 +1142,16 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "把3/5當剩餘比例。",
-      "先把2公升乘5而未保持等式。"
+      "把倒入的五分之三誤當成桶內剩餘比例，會建立與容器水量不符的方程式。",
+      "把補入的二公升也乘五，卻沒有讓等式所有項同步運算，破壞等量關係。",
+      "求得倒入量十二公升便停止，沒有用五分之三反求原桶的完整容量。"
     ],
     "independentReview": {
       "derivedResult": "20公升",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "01bdbe093cb6999296b0a8fa676a9d4b5180c63ab0b6173ec7e46fabbb1fc4f8",
+    "contentSha256": "e620a7056232bb936329b8acb4162c52faca5d3b1009c00e07f293048f33703d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }

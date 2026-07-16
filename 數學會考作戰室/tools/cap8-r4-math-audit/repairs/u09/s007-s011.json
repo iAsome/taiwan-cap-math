@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u09",
+  "batch": "010-u09-complete",
+  "skills": ["s007", "s008", "s009", "s010", "s011"],
+  "mc": [
+    {"questionId":"u09-s007-v001","expectedContentSha256":"07815a8a62d26214e8d621236808d4eab6a5a5697aa48286afcb14086e66af24","appendText":{"explanation":"累積次數表示從第一組一路加到指定組，因此第二組累積值同時包含第一、二組，計算三加五得八；第三組的四次尚未納入。","misconceptionTarget":"只抄第二組次數五，沒有把第一組一併累加。"},"appendArray":{"steps":["先確認題目問到第二組為止。","將第一組三次與第二組五次相加並選八。"]}},
+    {"questionId":"u09-s007-v002","expectedContentSha256":"7fb67acb15a0b5ff1ddafc44322aa5c29d1964792d7830eca3a824c995883ae8","appendText":{"explanation":"最後一個累積次數已把前面四組的資料各計一次，所以二十就是全體資料筆數；把四個累積值再相加會重複計入早期資料。","misconceptionTarget":"將各組累積值再次相加，造成同一資料重複計數。"},"appendArray":{"steps":["找出累積表最後一組的數值。","直接讀得總資料數二十並排除重複加總。"]}},
+    {"questionId":"u09-s007-v003","expectedContentSha256":"8b606904f42dbdb454eb3252ecd949fe0f99507795ede5cdc51cb12af3b783d8","appendText":{"explanation":"第二個累積值十四包含第一組的六次與第二組本身次數，因此以十四減六還原第二組為八次；十四不是單組次數。","misconceptionTarget":"把第二個累積值十四直接當成第二組本身次數。"},"appendArray":{"steps":["用第二組累積十四減去前一組累積六。","得到八並以六加八等於十四驗算。"]}},
+    {"questionId":"u09-s007-v004","expectedContentSha256":"e03445dac66ba26ed481f2185c18c3b3306d35e14d05e509578599ffb204e780","appendText":{"explanation":"第三組累積次數須包含前三組的二、七、五次，依序相加為十四；第四組六次位於指定範圍之後，不能提前加入。","misconceptionTarget":"只加第二、三組或誤把第四組也納入第三組累積值。"},"appendArray":{"steps":["圈出第一至第三組三個次數。","計算二加七加五等於十四並選第二項。"]}},
+    {"questionId":"u09-s007-v005","expectedContentSha256":"71a6af5964cc8f627c9ce911ba969137431d4dda4baf8bfd1c89d1c667e53283","appendText":{"explanation":"第三組累積值等於前兩組累積十二再加第三組本身八次，所以未知數為二十；最後累積二十五還含第四組，不能用來代替。","misconceptionTarget":"把第三組單組次數八當成累積值，或直接抄最後累積。"},"appendArray":{"steps":["以十二加八得二十，再確認二十不超過末累積二十五。"]}},
+    {"questionId":"u09-s007-v006","expectedContentSha256":"d1623fc7277781c5b0ea33ca87018e82117326a671ad8c7081d0482251c42f36","appendText":{"explanation":"小於二十的十一人已包含小於十的四人，兩個門檻相減正好留下十以上且未滿二十的七人；小於三十的數值與本區間無關。","misconceptionTarget":"直接抄小於二十的十一人，忘記扣掉小於十者。"},"appendArray":{"steps":["以十一減四得七，並核對區間端點為十含、二十不含。"]}},
+    {"questionId":"u09-s007-v007","expectedContentSha256":"db1b9bfbd8b2052b8817da3039563d97673911652818134d306a2b59921d52d2","appendText":{"explanation":"各組本身次數要由相鄰累積值作差，依序為三、七、八、七、五；最大值八只出現在第三組，因此答案唯一，不是累積值最大的第五組。","misconceptionTarget":"用累積值大小判單組最多，誤選最後一組而未相減。"}},
+    {"questionId":"u09-s007-v008","expectedContentSha256":"8d21ee853ce3d202fe00cb560e87ceaba2322fcab5dd2afb0a5115d7f321844b","appendText":{"explanation":"全體三十五筆可分成小於四十的二十七筆與至少四十的其餘資料，所以用補集得八筆；小於二十的十二筆早已包含於二十七筆。","misconceptionTarget":"用三十五減十二，錯把至少二十當成至少四十。"},"appendArray":{"steps":["以總數三十五減小於四十的二十七，得到至少四十共八筆。"]}},
+    {"questionId":"u09-s007-v009","expectedContentSha256":"b75efaf3ffa3e9915bbad1a8094a16c145e8cd4ee4dd485bc1e1c628f971c8e8","appendText":{"explanation":"累積相對次數零點七二代表到該組占全體百分之七十二，乘總數五十得到三十六筆；三十六是整數，也符合題目條件。","misconceptionTarget":"把零點七二當成七十二筆，沒有乘上總資料數。"}},
+    {"questionId":"u09-s007-v010","expectedContentSha256":"74060990b1a0db96a1ceab7c20a02f669b89ba251b07744c06d2c8ee50922ab7","appendText":{"explanation":"十五分鐘內的二十一人包含十分鐘內八人，兩個累積門檻相減得十三，正好保留超過十分鐘且不超過十五分鐘的人。","misconceptionTarget":"直接讀十五分鐘內二十一人，未扣除十分鐘內八人。"},"appendArray":{"steps":["依題意用二十一減八得十三人，並核對兩端點描述。"]}},
+    {"questionId":"u09-s007-v011","expectedContentSha256":"ee4264bbd9401e3e2f4cbb337627b5ad12384e7b68406df928745372338b6732","appendText":{"explanation":"逐日新增量須以前後累積值相減，週二與週三都增加五十五本，週四只增加四十八本；因此最大值是並列而非單獨週三。","misconceptionTarget":"把累積一百九十八當成週四單日量，或漏看並列。"}},
+    {"questionId":"u09-s007-v012","expectedContentSha256":"07200fdb70eb835bc78f6ad1c3b7428d8c88a63d1a77ff382a6e9e7ffbd6dd3f","appendText":{"explanation":"累積人數增加只表示總量沒有下降，是否持續加速必須比較每週相鄰差；新增量由一百四十降為一百三十再降為一百一十，故報告不成立。","misconceptionTarget":"看到累積折線上升，就誤認每週新增量也持續增加。"}},
+
+    {"questionId":"u09-s008-v001","expectedContentSha256":"2d1b8cc4fb2cf133f27a27b32f0e929933a7b71c2be250925330aac2b814b235","appendText":{"explanation":"交叉格必須同時符合女生與喜歡音樂兩個條件，沿女生列和音樂欄找到十一人；二十是女生列合計，不是指定交集。","misconceptionTarget":"只看女生總數或音樂欄其他格，沒有定位列欄交會處。"}},
+    {"questionId":"u09-s008-v002","expectedContentSha256":"701376fc80d7f16587d59ed0c1c790f59b8e555a3eee45e62f4c61cf32b964b3","appendText":{"explanation":"通過與未通過是甲組內互斥且完整的兩類，列合計為十五加五等於二十人；七十五是兩格相乘，沒有總人數意義。","misconceptionTarget":"只抄通過人數十五，或把兩個分類人數相乘。"},"appendArray":{"steps":["確認甲組只有通過與未通過兩類。","相加十五與五得到甲組總數二十人。"]}},
+    {"questionId":"u09-s008-v003","expectedContentSha256":"69afec52463b2c2cc705cf9e1fb1c6c3b04b0ee67707572ff490b5369c1bc380","appendText":{"explanation":"戴眼鏡欄總十八人由男生七人和女生人數組成，因此女生為十八減七等於十一；不能把欄總與男生再相加。","misconceptionTarget":"把欄總十八當成女生人數，忽略其中已含七名男生。"},"appendArray":{"steps":["用戴眼鏡欄總十八扣除男生七，得到女生十一人。"]}},
+    {"questionId":"u09-s008-v004","expectedContentSha256":"4ab63da639749064c80bb40578d930daf2af4dee608e83bd3761fc70045e6d7d","appendText":{"explanation":"全部男生是男生欄的甲班十四人與乙班十八人合計，共三十二人；女生十六與十二屬另一欄，不應納入。","misconceptionTarget":"沿班級列加男女得到班級總數，沒有沿男生欄加總。"},"appendArray":{"steps":["沿男生欄相加十四與十八，得到三十二人。"]}},
+    {"questionId":"u09-s008-v005","expectedContentSha256":"816deba1f6a55015901239f83b90c3f354809260d4d5e68d2d2f612b880faf11","appendText":{"explanation":"先由全體八十扣喜歡運動五十得不喜歡運動三十人，再扣男生不運動十四人，剩下女生不運動十六人；列欄總數彼此一致。","misconceptionTarget":"只做其中一次補集，或把男生運動二十二直接從三十扣除。"}},
+    {"questionId":"u09-s008-v006","expectedContentSha256":"b9f4c35f0beafbe2bc5f5c156f49fc1878ddd5eba1c6901389216bc700d09b9a","appendText":{"explanation":"比較答對率要各用該組總人數當分母，甲組十二除二十為百分之六十，乙組十五除三十為百分之五十，所以甲組較高。","misconceptionTarget":"只比較答對人數十五大於十二，忽略兩組人數不同。"}},
+    {"questionId":"u09-s008-v007","expectedContentSha256":"309d4d1005eab61aff1f4a17de790dc9afde917b8d313c68fcfba1f6ccf91a8d","appendText":{"explanation":"城市組公車比例為二十四除四十等於百分之六十，鄉鎮為三十除六十等於百分之五十；人數三十較大不代表組內比例較大。","misconceptionTarget":"以搭公車人數三十對二十四直接比較，沒有除以各組總數。"}},
+    {"questionId":"u09-s008-v008","expectedContentSha256":"c3d1560d6946673510dd570f340e17261d9a705dae426088376722f89fd3baca","appendText":{"explanation":"第二列由二十七與未知格組成且列總四十五，因此未知格等於四十五減二十七為十八；第一列的十八與十二不參與這次列合計。","misconceptionTarget":"把第一列數值混入第二列，或把列總四十五再相加。"},"appendArray":{"steps":["列出二十七加未知數等於四十五，解得十八。"]}},
+    {"questionId":"u09-s008-v009","expectedContentSha256":"4e76c089402e3fe1a824151c45c95dd4966216ff9f3ce51a386651c56654c8c2","appendText":{"explanation":"有運動組睡眠充足率為三十除四十等於百分之七十五，無運動組為二十四除四十等於百分之六十；表格支持樣本關聯，不能單憑觀察資料宣稱因果。","misconceptionTarget":"把較高比例直接解讀成運動必然造成睡眠充足。"}},
+    {"questionId":"u09-s008-v010","expectedContentSha256":"27eb2c3ad92e0d172618d19147376daf3acee0944700c2aebbccee5fe2561117","appendText":{"explanation":"接受度是各時段點套餐者占該時段顧客的比例，午餐五十二除八十為百分之六十五，晚餐六十六除一百二十為百分之五十五，故午餐較高。","misconceptionTarget":"只看晚餐套餐六十六人較多，沒有校正兩時段總人數。"}},
+    {"questionId":"u09-s008-v011","expectedContentSha256":"92ba42aea97524a7516cd097d7195b3e6b710daeacbba85373dc8a2b7d920424","appendText":{"explanation":"吸菸組咳嗽二十除五十為百分之四十，不吸菸組三十除一百五十為百分之二十；後者人數雖多，組內風險反而較低，且資料仍不能證明因果。","misconceptionTarget":"混淆事件人數與條件比例，並把樣本關聯誇大為因果。"}},
+    {"questionId":"u09-s008-v012","expectedContentSha256":"777d55e06fd0d8aa53eb94656cde879ebdb8282c920088cb1b6945318ed420b8","appendText":{"explanation":"七年級支持七十人、八年級支持二十人，共九十人；合併分母是一百五十人，所以支持率為百分之六十，不能把兩個比例不加權平均。","misconceptionTarget":"忽略兩年級樣本數不同，直接平均百分之七十與四十。"}},
+
+    {"questionId":"u09-s009-v001","expectedContentSha256":"7905e580f600bdd8d1989ebbced34864e7c545e63d291c712994c8f2c95df714","appendText":{"explanation":"平均數是把資料總和平均分配到每一筆，六加八加十為二十四，再除以三筆得到八；二十四是總和而非平均。","misconceptionTarget":"求出總和二十四後忘記除以資料筆數三。"},"appendArray":{"steps":["計算二十四除以三得八，並確認八位於最小六與最大十之間。"]}},
+    {"questionId":"u09-s009-v002","expectedContentSha256":"15cb72571e24d7c2f92212f4baf161548d274704812d4f740d04f052c9a37d01","appendText":{"explanation":"平均十二表示五筆資料平均分配後每筆十二，因此反推總和要用平均乘筆數，十二乘五等於六十；十二本身不是總和。","misconceptionTarget":"把已知平均十二直接當總和，或錯用十二除以五。"},"appendArray":{"steps":["使用總和等於平均乘筆數，算十二乘五為六十。"]}},
+    {"questionId":"u09-s009-v003","expectedContentSha256":"e2fea01aed7edc438e8c3e97e022bf84d0533b48950ef5ca0c8dbd185a7b6807","appendText":{"explanation":"每筆都加三會使總和增加三乘資料筆數，除回相同筆數後恰好增加三；資料間差距不變，也不是把原平均乘三。","misconceptionTarget":"只看到常數三就把平均數乘三，沒有考慮每筆同加。"},"appendArray":{"steps":["設原總和為筆數乘原平均。","加入的總量除回原筆數，得到新平均為原平均加三。"]}},
+    {"questionId":"u09-s009-v004","expectedContentSha256":"0e45de17840f6600706d3212e6980e554a96f66428a4485a36a760e19dcbe89c","appendText":{"explanation":"四筆平均十表示所需總和四十，三個已知數合計二十七，缺值為四十減二十七等於十三；代回後四數平均確為十。","misconceptionTarget":"直接以平均十當缺值，未先反推四筆資料總和。"}},
+    {"questionId":"u09-s009-v005","expectedContentSha256":"b6c329d7f578c1d99a6b1e81fd1116f8a09aa9a04e1302fbb94bd2799755c790","appendText":{"explanation":"兩組人數同為四人，可先分別還原總分六十與七十六，再用總和一百三十六除八得十七；此處也等於兩平均的算術平均。","misconceptionTarget":"把兩組平均直接相加成三十四，沒有除以總人數。"},"appendArray":{"steps":["合計兩組總分一百三十六，再除八人得到十七。"]}},
+    {"questionId":"u09-s009-v006","expectedContentSha256":"4b4505e7376b7504356dc6b6254bc8867fbc32a8aaa81fd296ef141457391175","appendText":{"explanation":"原五筆總和為一百，加入二十六後總和一百二十六且筆數變六，故新平均二十一；不能只把二十與二十六取平均。","misconceptionTarget":"忽略原平均代表五筆資料，誤把二十和二十六平均。"}},
+    {"questionId":"u09-s009-v007","expectedContentSha256":"50678bc84f9f7226208080afc63c97c744008aac50f2824f7d862e06da17798d","appendText":{"explanation":"誤登十九比正確九多十，因此錯誤總和八十四要減十成七十四；六筆資料筆數不變，七十四除六為十二又三分之一。","misconceptionTarget":"只把平均十四減十，沒有把總和差平均分到六筆。"}},
+    {"questionId":"u09-s009-v008","expectedContentSha256":"ac2bca3f6e0727749f84880fdfdb1fd773657cd5ca26cea64308a1948d201979","appendText":{"explanation":"合併平均必須以人數加權，甲組總分七百二十、乙組一千六百二十，合計二千三百四十除三十人得七十八。","misconceptionTarget":"直接平均七十二與八十一，忽略乙組人數是甲組兩倍。"}},
+    {"questionId":"u09-s009-v009","expectedContentSha256":"9fde82e323f819906d22f229d5afb88ab70f1d93ad96cde001815d20b559469c","appendText":{"explanation":"刪除的數值恰等於原平均，總和與筆數各減去一份五十，剩餘總和仍可表示為五十乘剩餘筆數，所以平均不變。","misconceptionTarget":"認為刪除任何資料都必然使平均變大或變小。"},"appendArray":{"steps":["將新總和寫成五十乘原筆數減五十。","提出公因數後除以少一筆的筆數，仍得五十。"]}},
+    {"questionId":"u09-s009-v010","expectedContentSha256":"2caa25f39f5a5ec3a52021b94a81d4f811a395bd44a19a7c1d9994c3e92c4934","appendText":{"explanation":"每次平均須先乘該次應試人數還原總分，三次總分相加後再除總應試人次九十；直接平均三個平均數會把人數不同的三次視為同權重。","misconceptionTarget":"把三次平均直接相加除三，忽略每次應試人數不同。"}},
+    {"questionId":"u09-s009-v011","expectedContentSha256":"f02b4cb928c2c9a1e6af7104674cbbcdb619f9b77a5ed135ebbf7d505517f1f0","appendText":{"explanation":"主管十九萬元與九名各四萬元合計五十五萬元，平均確為五萬五千元；但九成員工薪資低於平均，顯示極端高值會拉高平均。","misconceptionTarget":"把平均數解讀成多數人的實際薪資或每人都接近平均。"}},
+    {"questionId":"u09-s009-v012","expectedContentSha256":"60b32b1285c131aaa65529ffa25ae161d3762a3a48a7671e8b818751cc97a1e3","appendText":{"explanation":"前四場總得分七十二，第五場後五場總分需達一百，兩總分相減得第五場二十八分；新平均二十分不是第五場單場分數。","misconceptionTarget":"把五場平均二十分直接當成第五場得分，未比較總分。"}},
+
+    {"questionId":"u09-s010-v001","expectedContentSha256":"370ea965d20884843373439213a1ff7b7db48aad5e36c4472b9820754311728c","appendText":{"explanation":"中位數要先將三筆由小到大排成三、五、八，奇數筆資料只有一個正中央位置，因此第二筆五就是中位數，不需計算總和。","misconceptionTarget":"未排序就取原列中間的八，或誤用平均數公式。"},"appendArray":{"steps":["三筆資料取排序後第二個值，得到中位數五。"]}},
+    {"questionId":"u09-s010-v002","expectedContentSha256":"3ae330de76d036e966ce2a52cc27eb6382bf20f0c1e0031ead7ab750286db243","appendText":{"explanation":"四筆已排序資料沒有單一中央值，中央位置是第二、三筆的四與七，兩者相加除二得五點五；兩端二與九不參與。","misconceptionTarget":"偶數筆只取第二筆或第三筆，沒有平均中央兩值。"}},
+    {"questionId":"u09-s010-v003","expectedContentSha256":"dd1189d760a328465b9eda644bf8e12379282a519e0e2dd73bd68f7783e3f6d1","appendText":{"explanation":"七是奇數，中央位置左右各要保留三筆，所以位於第四個；也可用七加一再除二得到四，前提是資料已排序。","misconceptionTarget":"用七除二後無條件捨去成第三個位置。"},"appendArray":{"steps":["確認排序後第四個值左右各有三筆，因此位置正確。"]}},
+    {"questionId":"u09-s010-v004","expectedContentSha256":"eb6a50ce6f814099f7f48d3a9d75fa3782f1979c763e8e598723a3663e4605db","appendText":{"explanation":"五筆已依序排列，第三筆未知數正是唯一中央位置；既然中位數指定為六，未知數必為六，且三小於等於六小於等於八符合排序。","misconceptionTarget":"把五筆資料平均設為六，誤列總和方程式。"},"appendArray":{"steps":["將第三筆直接等同中位數六，再檢查排序限制。"]}},
+    {"questionId":"u09-s010-v005","expectedContentSha256":"4e3dd3cadc00935dcd28bd5715d3b1d9b683614ee98de50502ddd844f17744ff","appendText":{"explanation":"加入一百後排序為四、六、八、十、十二、一百，共六筆；中央第三與第四值為八、十，平均得九，極端值本身不直接進入計算。","misconceptionTarget":"仍取原第三筆八，沒有因筆數由奇數變偶數而重新定位。"}},
+    {"questionId":"u09-s010-v006","expectedContentSha256":"e1ef0af5c5987e9ef8e9483c0d2e4e4a4332e55a215222aa7e876e5ed26638b8","appendText":{"explanation":"題目已聲明資料排序且未知數在九之後，所以未知數至少為九；四個選項只有十二符合，中央第三筆七仍不受末項數值影響。","misconceptionTarget":"只看中位數七便選七，忽略未知數位於排序末端。"},"appendArray":{"steps":["由末項條件列未知數大於等於九，篩出十二。"]}},
+    {"questionId":"u09-s010-v007","expectedContentSha256":"c49b90de1cd5f77e5c7eb41096e9c2f88a4f3b7c9c4cabad387f0aff0c780871","appendText":{"explanation":"加入新資料後必須把八筆全部重新排序，偶數筆的中央落在第四、五位置，取兩值平均；新資料可能插入任何位置，不能沿用原第四值。","misconceptionTarget":"資料增加後仍沿用原中位位置，沒有重新排序與計數。"}},
+    {"questionId":"u09-s010-v008","expectedContentSha256":"04e7d92aade3fb084c1c8743cbde11ac7de78b8e331ec3db25237f4b224d58fd","appendText":{"explanation":"六筆資料的中央是第三項六與第四項未知數，平均為八可列六加未知數等於十六，解得十；十也落在六與十二之間，排序成立。","misconceptionTarget":"把未知數本身直接設成中位數八，忽略偶數筆有兩個中央值。"}},
+    {"questionId":"u09-s010-v009","expectedContentSha256":"217b8b16add3086495e06b85780c3d3eb1b58e4066f081a65bf17848f6fec25f","appendText":{"explanation":"把最大值十一改為更大的百後，排序中央第三筆仍是七，所以中位數不變；極端值會大幅影響平均數，卻未跨過中央位置。","misconceptionTarget":"看到最大值變大就認為所有集中量數都一定增加。"},"appendArray":{"steps":["重排為二、四、七、九、一百，讀取第三筆仍為七。"]}},
+    {"questionId":"u09-s010-v010","expectedContentSha256":"dfba77c64a33fa28cb4ada87aa6dbe876843eb23e6589dfd4a3d343bd9140f1a","appendText":{"explanation":"九十五分鐘遠高於其餘四筆，使總和與平均被拉升到三十二；中位數只取排序中央十八，較能表示這個偏斜小樣本中的典型等候時間。","misconceptionTarget":"認為平均數一定最具代表性，忽略九十五分鐘極端值。"}},
+    {"questionId":"u09-s010-v011","expectedContentSha256":"ff2a4657178a36a14102e03e1ebc7e74dbba5ee2eed2bf2948ce63a8170e49e7","appendText":{"explanation":"三千萬元豪宅使平均升至一千二百七十萬元，但排序中央仍是八百五十萬元；以中位數描述典型值較合理，且五筆樣本限制也須揭露。","misconceptionTarget":"把受極端豪宅拉高的平均當成每戶都接近的典型價格。"}},
+    {"questionId":"u09-s010-v012","expectedContentSha256":"e6b2a94724658fde74b137f0a7def645ab41bea3be7e5fd204e82af9c6ef0557","appendText":{"explanation":"刪除最低六與最高十後剩七、七、八、八、九，共五筆；重新定位中央第三筆為八，不能沿用原七筆的位置編號。","misconceptionTarget":"刪除兩端後未重新計數，或錯把剩餘五筆求平均數。"}},
+
+    {"questionId":"u09-s011-v001","expectedContentSha256":"77346876e1225b7caa9678b1a2e538f0743ab90553d79847955e455b82ec1344","appendText":{"explanation":"逐值計數可得三出現兩次，其餘二、五、七各一次，所以出現次數最高的資料值是三；眾數答案不是最高次數二。","misconceptionTarget":"把出現次數二寫成眾數，而非寫最常出現的資料值三。"},"appendArray":{"steps":["比較次數後確認只有三達到最高兩次。"]}},
+    {"questionId":"u09-s011-v002","expectedContentSha256":"c497a6515224524918e8a68db5d2f5aa07523815ad833329cb4c6d1c57423f99","appendText":{"explanation":"全距只比較資料兩端，最大十一減最小四等於七；中間的六與九不影響全距，也不能把最大與最小相加。","misconceptionTarget":"將最大十一與最小四相加成十五，混淆全距定義。"}},
+    {"questionId":"u09-s011-v003","expectedContentSha256":"d643404b8437b9d6a274a0295192089300c71d09727369084cc2cd2f9149c4b4","appendText":{"explanation":"一與二都各出現兩次且並列最高，三只出現一次，因此本組有兩個眾數一、二；眾數不要求只能有一個。","misconceptionTarget":"強迫只選一個眾數，忽略一與二出現次數並列最高。"},"appendArray":{"steps":["列出次數一為二次、二為二次、三為一次。"]}},
+    {"questionId":"u09-s011-v004","expectedContentSha256":"7eccf5c08f05d0774feff87dc80237b4b164e9156c69cb60a89ed18840ff96db","appendText":{"explanation":"原本七出現兩次，若未知數取九，九也出現兩次，便形成七與九並列眾數，不再唯一；其餘選項都不會追平七的最高次數。","misconceptionTarget":"只確認七仍出現兩次，沒有檢查其他值是否也並列兩次。"},"appendArray":{"steps":["逐項代入並比較所有資料值次數，找出九造成並列。"]}},
+    {"questionId":"u09-s011-v005","expectedContentSha256":"045f3e6e69f67b2c9cbd313681ef60283b7b92307e11755db6023143c063a14a","appendText":{"explanation":"每筆都加四後最大與最小分別成三十九、十六，兩端差仍是二十三；同加常數會在相減時互相抵消，因此全距不變。","misconceptionTarget":"把增加四誤當全距也增加四，沒有重算新兩端差。"},"appendArray":{"steps":["計算三十九減十六得二十三，與原三十五減十二一致。"]}},
+    {"questionId":"u09-s011-v006","expectedContentSha256":"65ab5ccd1010f7baabb8f6c084cc2319ec242dbccfc1bd338189b56ea0e6691a","appendText":{"explanation":"四仍出現兩次而保持唯一眾數；最大值由九改為十二、最小仍二，所以全距由七變十，眾數與全距須分別檢查。","misconceptionTarget":"看到最大值改動就誤認眾數也變成十二，或把全距寫成十二。"},"appendArray":{"steps":["重算次數得眾數四，再用十二減二得全距十。"]}},
+    {"questionId":"u09-s011-v007","expectedContentSha256":"f030fedd95857cb79a2b5bc1bc63899ed1c67e97e9b0a9a23a1b360a06a64997","appendText":{"explanation":"已知未知數是最大值而最小值為三，全距八可列未知數減三等於八，解得十一；十一也確實大於既有最大值七。","misconceptionTarget":"把全距八直接當成最大值，忽略還要加回最小值三。"},"appendArray":{"steps":["解未知數減三等於八得十一，並檢查最大值條件。"]}},
+    {"questionId":"u09-s011-v008","expectedContentSha256":"4dcdac33a8a28e91e36fd9468898d9f559c6b7e722c33512128f36282c9d9450","appendText":{"explanation":"最小值一、最大值未知數的差為九，所以未知數等於十；代回後四仍出現兩次，其餘值一次，唯一眾數條件也成立。","misconceptionTarget":"只解全距方程而未代回檢查未知數是否為最大值及眾數唯一。"}},
+    {"questionId":"u09-s011-v009","expectedContentSha256":"8492e7622a3001936b9369461a4f5270023d1a24b666e27dcd06033c1ed25714","appendText":{"explanation":"加入一筆三後，二、三、四各出現兩次並列最高，因此三個值都是眾數；增加資料可能新增眾數，不代表原眾數一定消失。","misconceptionTarget":"只看新加入的三而說它是唯一眾數，未比較完整次數。"},"appendArray":{"steps":["更新三的次數為二次，再與二、四各二次比較。"]}},
+    {"questionId":"u09-s011-v010","expectedContentSha256":"4c84045a0574061b1998572c45500992ac7f108bc55ad2f3e00d9eae55d52155","appendText":{"explanation":"兩班平均相同時，以全距衡量散布，甲班十二小於乙班三十，表示甲班最大與最小分數間跨度較小；結論只限全距這項指標。","misconceptionTarget":"只看到平均相同便判兩班分布完全相同，忽略全距差異。"},"appendArray":{"steps":["比較十二與三十，依較小全距判甲班較集中。"]}},
+    {"questionId":"u09-s011-v011","expectedContentSha256":"78fc59ff80c82843ceaa9e6b586a4ec0a0d763ffe22d561f1e8a6714499475e5","appendText":{"explanation":"補貨要找實際售出次數最多的鞋號，二十五號售二十一雙為最高，因此眾數二十五最直接；平均鞋號可能不是需求最高的規格。","misconceptionTarget":"用平均數或全距決定補貨，沒有比較各鞋號銷售次數。"}},
+    {"questionId":"u09-s011-v012","expectedContentSha256":"723bc21b3e4727d626384f39c46549ee74f751995e3ba2da0f9026f7cb7fb501","appendText":{"explanation":"全距十四度只說一週資料中的最大溫差減最小溫差等於十四，各天可取介於兩端的不同值；它不是任一天的溫差或平均。","misconceptionTarget":"把整組資料的最大最小差，錯當每一筆資料都等於十四。"},"appendArray":{"steps":["以最大值減最小值解讀十四度，排除逐日皆相同的說法。"]}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u09-s007-cr001","expectedContentSha256":"f331be880c6797df63a0f2ccfc6dfb434c9cb71e6afa461872ddaa88ddf46901","appendArray":{"standardSolution":["四個區間次數加上未滿五十分的三人為三十人，與最後累積值一致；比例分母必須用全體三十人，而不是只用已列出的某一區間。"]},"set":{"commonErrors":["把八、十七、二十六、三十等累積值直接當成各區間次數，未作相鄰相減。","計算未滿七十分比例時以十七除以二十六，錯把未滿八十分者當全體。"]}},
+    {"questionId":"u09-s007-cr002","expectedContentSha256":"a293bc6e151228ddd12d7532005e484b3da33060ffe02156a6642ed671e1c62c","set":{"commonErrors":["把五天累積值全部相加而重複計入早期報名者，得到二百二十七人。","相鄰相減後漏看第三、四天同為十八人，錯把新增最多寫成單獨一天。"]}},
+    {"questionId":"u09-s008-cr001","expectedContentSha256":"cf42a9f3460e33bdbeb88e74e8adf481b3f78a9ebc7969a4c9c56d667886fb79","set":{"commonErrors":["列總與欄總交叉加總時重複計數，導致兩種方式算出的總計不一致。","比較社團比例時用全班六十人作兩組共同分母，沒有各用該列三十人。"]}},
+    {"questionId":"u09-s008-cr002","expectedContentSha256":"0724c5377b664d15351424eaead4f811bc9ed66d35465470d1be76c0b665358b","set":{"commonErrors":["把百分之七十五與百分之六十直接平均成百分之六十七點五，忽略兩組人數不同。","看到相差十五個百分點便寫成運動造成改善，沒有區分觀察關聯與因果結論。"]}},
+    {"questionId":"u09-s009-cr001","expectedContentSha256":"46ca86c2c7edd51072ccdeff28dd8c61377de0cba8b4b4954355fab4a1953d66","appendArray":{"standardSolution":["代回正確第五次八十分後，五次總分為四百分；把八十誤記為九十只使總和增加十分，因此平均增加量要再除以五，而不是直接增加十分。"]},"set":{"commonErrors":["把平均八十直接當成第五次分數而未先驗證四次已知總分與所需總分。","將誤記值多出的十分直接加到平均，忘記這十分會平均分攤到五筆資料。"]}},
+    {"questionId":"u09-s009-cr002","expectedContentSha256":"4a0af5f958a94576c475259e83617ea86b875ddb4af43f81b409c3444a29cd0e","set":{"commonErrors":["直接平均五十二與五十八而未依六人、四人加權，求錯原十人平均與總重。","用五十四減五十四點四猜新成員體重，沒有由新舊總重相減求五十公斤。"]}},
+    {"questionId":"u09-s010-cr001","expectedContentSha256":"1a719583ff442db8d70af45801f06c532aaa9604a59b5c3c2fe484e420b7701f","appendArray":{"standardSolution":["新增的一百雖遠大於原資料，但它排在最右端；中位數由原本第四筆十一改為八筆中的第四、五筆平均，所以只上升零點五，而不是被一百直接拉高。"]},"set":{"commonErrors":["未先排序原資料便取題目列出的第四項九，錯認原中位數。","加入一百後仍取單一第四筆十一，忘記八筆資料須平均第四與第五筆。"]}},
+    {"questionId":"u09-s010-cr002","expectedContentSha256":"3beff8c058fe93dbfde5a55e7584d3b0d5e5eb3760491c8269a17ba85f7a90ef","set":{"commonErrors":["看到未知數甲乙便試圖由中位數九解方程，忽略它們位在第九、十位置。","把偶數十筆的中位數誤取第五筆十，沒有平均第五、六筆十與十二。"]}},
+    {"questionId":"u09-s011-cr001","expectedContentSha256":"444827ec87061dde61501fc9f37818bb5d7cc7a7b071b129608864ee98b65672","appendArray":{"standardSolution":["新增四只改變四的出現次數，沒有超過九的三次；它也不改變最小值四或最大值十二，所以眾數與全距都維持原值。"]},"set":{"commonErrors":["把最高出現次數三寫成眾數，沒有寫出對應的資料值九。","加入四後只看重複值增加便說眾數改成四，未比較九仍出現三次。"]}},
+    {"questionId":"u09-s011-cr002","expectedContentSha256":"fc073afe543dbd1f09b07c9a107dc794ccd8b2e4034f0b26324f58b2c37f1c82","appendArray":{"standardSolution":["替換十二為三之後必須重新檢查兩項統計量：三的次數由二增為三而仍是眾數，最大值則由十二降為八，使全距從十一降為七。"]},"set":{"commonErrors":["由全距十一直接寫未知數等於十一，忘記最大值還要加回最小值一。","把十二改成三後只更新眾數次數，未重找最大值八而沿用原全距。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u09-s007-lecture-r1","expectedContentSha256":"98a3ccc279a21ecaa77bff287adccba85cba02cefa774b616abfafac1d779f1d","set":{"conceptDevelopment":[
+      "累積次數是從第一組開始一路加到目前組別的總和，因此數列必須保持不減，最後一個累積值就是資料總數。反向還原時，第一組次數等於第一個累積值，其餘每組用本組累積減前組累積；所有差值都應是非負整數，且重新累加後必須回到原表，這兩項可作完整驗算。",
+      "區間語句須配合門檻解讀：小於較大上界的累積值減去小於較小上界的累積值，會留下兩門檻之間的人數；至少某門檻則可用全體減去小於該門檻。端點是否包含仍須依題目中的含或不含判定。",
+      "累積量與每期新增量不能混用。累積值上升只表示總量沒有減少，不代表新增速度增加；要比較哪一期新增最多，必須先做相鄰差。累積相對次數則先乘全體筆數還原累積次數，再檢查結果是否符合整數資料。"
+    ],"workedExamples":[
+      {"id":"L1","prompt":"單組次數依序為 3、5、4，求各組累積次數。","solution":["第一組累積為 3。","第二組為 3+5=8。","第三組為 8+4=12。"],"answer":"累積次數為 3、8、12。","why":"累積表的每一格都包含前面資料，所以要沿組序逐步加總；最後十二也等於三組次數總和，可同時驗證沒有漏組或重複計數。"},
+      {"id":"L2","prompt":"累積次數為 3、10、18、25、30，哪組本身次數最多？","solution":["相鄰相減得 3、7、8、7、5。","比較單組次數，最大值 8 在第三組。"],"answer":"第三組。","why":"累積值天然越來越大，直接找最大一定偏向末組；先還原相鄰差才能比較同一意義的單組次數，並能看出第三組八次是唯一最大。"},
+      {"id":"L3","prompt":"小於 40 有 27 筆，全體 35 筆，求至少 40 的筆數。","solution":["全體分成小於 40 與至少 40 兩個互斥部分。","35-27=8。"],"answer":"8 筆。","why":"小於四十與至少四十正好覆蓋全體且沒有重疊，所以用補集相減最直接；答案八與二十七相加回到三十五，可檢查門檻方向沒有顛倒。"}
+    ]}},
+    {"lectureId":"u09-s008-lecture-r1","expectedContentSha256":"273646c1a437d1a16e6839b009e60ac70e8bfe0814f4aba904471761fc7e1f2e","set":{"conceptDevelopment":[
+      "列聯表的內格同時符合列分類與欄分類，例如女生且喜歡音樂；列總與欄總是各方向的邊際總數，從列總相加或欄總相加都必須得到同一總計。補未知格時先鎖定同一列或同一欄，以邊際總數減去其餘內格，完成後再用另一方向加總交叉驗算。",
+      "比較群組表現時必須使用條件比例，每一組都以自己的列總或欄總作分母。群組人數不同時，事件人數較多不保證比例較高；合併比例則要先加事件人數與總人數再相除，不能直接平均兩個百分率，除非兩組分母相同。",
+      "列聯表可呈現樣本中兩個分類變項的關聯，例如一組的睡眠充足比例較高；但若資料不是隨機實驗且未控制其他因素，只能描述觀察到的比例差，不能把較高比例改寫成某因素必然造成另一結果。"
+    ],"workedExamples":[
+      {"id":"L1","prompt":"男生共 36 人，其中 22 人喜歡運動，求男生不喜歡運動人數。","solution":["男生列由喜歡與不喜歡運動兩格組成。","36-22=14。"],"answer":"14 人。","why":"題目給的是男生列總與其中一格，用同列相減才會得到另一格；若拿全體總數或女生資料相減，就會混入不同分類而失去列聯表交集意義。"},
+      {"id":"L2","prompt":"A 組 20 人中 12 人答對，B 組 30 人中 15 人答對，哪組答對率高？","solution":["A 組為 12÷20=60%。","B 組為 15÷30=50%。"],"answer":"A 組答對率較高。","why":"十五人雖多於十二人，但兩組分母也不同；分別除以各組總數後才能建立公平比例基準，百分之六十與百分之五十顯示人數比較會得出相反判斷。"},
+      {"id":"L3","prompt":"運動者睡眠充足率 75%，未運動者 60%，能否說運動造成睡眠充足？","solution":["樣本中兩組比例相差 15 個百分點。","未說明隨機分派，也未控制作息等因素。"],"answer":"可描述樣本關聯，不可由此證明因果。","why":"比例差的算術結果成立，但列聯表沒有排除年齡、工作與健康狀況等共同因素；因果結論需要研究設計支持，不能只把觀察到的關聯換成造成。"}
+    ]}},
+    {"lectureId":"u09-s009-lecture-r1","expectedContentSha256":"b683005092c5f9e79a2091b1270ce6d7615acf42e6609c4a32df22f934a2f5e5","set":{"conceptDevelopment":[
+      "平均數表示把總量平均分配到每一筆後的數值，基本關係是平均數等於總和除以筆數，反向則是總和等於平均數乘筆數。求缺值、加入資料、刪除資料或訂正誤值時，先把平均還原成總和，完成總量變動後再除以新的筆數；直接對平均做加減通常會忽略資料筆數。",
+      "合併兩組資料須以各組人數加權：各組平均乘各組人數還原總量，加總後除以總人數。只有兩組人數相等時，合併平均才恰好等於兩個平均的算術平均；人數不同時直接平均兩個平均會給每組相同權重而失真。",
+      "每筆資料同加一個常數，平均也同加該常數；加入高於原平均的資料會拉高平均，加入低於原平均的資料會拉低平均。平均數會受極端值影響，因此解讀薪資、房價等偏斜資料時，還要檢查多數資料分布，不能說每筆都接近平均。"
+    ],"workedExamples":[
+      {"id":"L1","prompt":"5 次小考分數為 72、81、85、76、86。","solution":["總和為 400。","筆數為 5。","400÷5=80。"],"answer":"平均 80 分。","why":"平均計算先合計全部分數，再依五次平均分配；八十介於最低七十二與最高八十六之間，且八十乘五回到四百，可作逆向驗算。"},
+      {"id":"L2","prompt":"4 天用水量平均 18 公升，前三天為 16、20、17 公升。","solution":["四天總量為 18×4=72 公升。","前三天總量為 53 公升。","第四天為 72-53=19 公升。"],"answer":"19 公升。","why":"已知平均不能直接與前三天相減，必須先乘四還原所需總量；再扣已知五十三得到十九，代回四天合計七十二才與平均十八一致。"},
+      {"id":"L3","prompt":"資料為 8、9、9、10、44。","solution":["總和為 80，平均為 16。","四十四遠高於其餘四筆，使平均向上移動。"],"answer":"平均 16，但不代表典型值接近 16。","why":"平均十六的算術計算沒有錯，但五筆中沒有任何一筆接近十六；檢視原資料可看出四十四是極端高值，所以平均不宜單獨描述多數資料。"},
+      {"id":"L4","prompt":"3 筆長度為 1.2、0.85、95 公分。","solution":["先將 1.2 公尺改為 120 公分（若原題單位如此）。","統一單位後才能相加。"],"answer":"先統一單位，再依總和除以 3。","why":"長度相加前必須先使用相同單位，否則數字大小沒有共同量尺；三筆都換成公分後求總和再除以三，答案最後也要清楚標示長度單位。"}
+    ]}},
+    {"lectureId":"u09-s010-lecture-r1","expectedContentSha256":"1e1391b127685a97871959b540f982b60192f7585d88985e8ce2880aa87aa4f0","set":{"conceptDevelopment":[
+      "中位數描述排序後的中央位置，第一步一定是將資料由小到大排列並逐筆計數，重複值也各占一個位置。奇數筆的中位位置為筆數加一後除以二；偶數筆則取正中央兩個位置的數值平均。中位數不使用全部資料總和，因此不能拿平均數公式替代。",
+      "加入、刪除或更改資料後，即使新值位在最左或最右，也要更新總筆數並重新確認中央位置。極端值留在兩端時常不會大幅改變中位數，但若筆數奇偶改變，單一中央值可能變成中央兩值平均，所以中位數仍可能小幅移動。",
+      "已排序且含未知數的題目要同時使用位置與排序限制。奇數筆可把中央未知數直接等同中位數；偶數筆則由中央兩值建立方程，解得後還要檢查未知數是否落在前後值之間。次數表也可用累積次數判斷中央位置落在哪個資料值。"
+    ],"workedExamples":[
+      {"id":"L1","prompt":"資料為 9、3、7、4、12，求中位數。","solution":["排序為 3、4、7、9、12。","五筆中央位置為第三筆。"],"answer":"中位數為 7。","why":"原題第三個數七雖巧合是答案，仍必須先排序才能確定；排序後第三筆左右各有兩筆，位置完全平衡，這才是中位數的定義依據。"},
+      {"id":"L2","prompt":"資料為 2、8、5、11、6、20，求中位數。","solution":["排序為 2、5、6、8、11、20。","中央為第三、四筆六與八。","(6+8)÷2=7。"],"answer":"中位數為 7。","why":"六筆是偶數，中央落在兩個位置之間，所以必須平均六與八；只取其中一個會使左右資料筆數不對稱，而兩端二與二十不參與中央計算。"},
+      {"id":"L3","prompt":"1 出現 2 次、4 出現 3 次、9 出現 4 次，求中位數。","solution":["總筆數為 9，中位位置是第五筆。","累積到 1 為 2 筆，累積到 4 為 5 筆。"],"answer":"中位數為 4。","why":"不必展開九筆資料，只要用累積次數定位第五筆；第五筆已落在數值四的區段，後面四個九都在中央位置右側，不會改變答案。"},
+      {"id":"L4","prompt":"薪資為 30、31、31、32、300 千元，哪個數較能描述中央員工？","solution":["排序後中央第三筆為 31 千元。","三百千元位在最右端，是極端高值。"],"answer":"中位數 31 千元較合適。","why":"極端薪資會明顯增加總和與平均，但它仍在排序末端，不改變第三筆；因此中位數三十一更接近其餘四名員工，不代表平均計算錯誤。"}
+    ]}},
+    {"lectureId":"u09-s011-lecture-r1","expectedContentSha256":"20bf2d63e4e08cf20541ba6bf7857fd32e5785e63cac14a2a3b777b61cff21c8","set":{"conceptDevelopment":[
+      "眾數是出現次數最高的資料值，作答時要寫資料值而不是最高次數。先建立每個值的次數表，再找最大次數；若兩個以上資料值並列最高，它們都是眾數。若每個值出現次數完全相同，通常說沒有眾數，因此不能預設每組資料只有一個眾數。",
+      "全距等於最大值減最小值，只由資料兩端決定。所有資料同加或同減一個常數時，最大與最小同步平移，差保持不變；替換或加入資料時，只有超出原兩端才會改變全距。極端值會直接擴大全距，所以全距容易受離群值影響。",
+      "同一筆資料變動可能對眾數與全距造成不同效果，必須分開檢查：先更新各值次數判眾數，再重找最大、最小求全距。比較兩組散布時，較小全距只表示最大最小跨度較小，不能據此斷言兩組分布其他部分完全相同。"
+    ],"workedExamples":[
+      {"id":"L1","prompt":"鞋號為 23、24、24、24、25、25，求眾數。","solution":["二十四出現三次。","二十五出現兩次，其餘各一次。"],"answer":"眾數為 24。","why":"補貨關心哪個鞋號實際出現最多，次數表顯示二十四唯一達三次；答案要寫鞋號二十四，而不是把最高次數三誤當成眾數。"},
+      {"id":"L2","prompt":"資料為 2、2、5、5、8，求眾數。","solution":["二與五各出現兩次。","八只出現一次。"],"answer":"眾數為 2 與 5。","why":"二、五的次數並列最高，兩者都符合最常出現的定義；強迫只選其中一個會遺漏完整答案，而八並未追平最高次數。"},
+      {"id":"L3","prompt":"資料為 4、7、9、13、13，求全距。","solution":["最大值為 13，最小值為 4。","13-4=9。"],"answer":"全距為 9。","why":"全距只量測兩端跨度，中間七、九與十三是否重複都不改變最大減最小；以四加九回到十三也能快速核對相減方向。"},
+      {"id":"L4","prompt":"資料為 10、11、11、12、50，說明眾數與全距。","solution":["十一出現兩次，為眾數。","全距為 50-10=40。","五十是造成大跨度的極端值。"],"answer":"眾數 11，全距 40。","why":"眾數由次數決定，所以仍是十一；全距只看兩端，五十使最大最小差擴大到四十。兩個統計量分別揭示最常見值與整體跨度。"}
+    ]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -17,7 +17,7 @@ export const LECTURE = {
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "learningOutcomes": [
-    "能進行公釐、公分、公尺與公里的長度換算。",
+    "能進行毫米、公分、公尺與公里的長度換算。",
     "能正確換算平方公分、平方公尺與平方公里。",
     "能理解長度倍率與面積倍率不同。",
     "能在幾何計算前統一單位。"
@@ -78,7 +78,8 @@ export const LECTURE = {
     "長度換算沿一個方向乘倍率；面積有長與寬兩個方向，所以倍率要平方。",
     "1 公尺等於 100 公分，因此 1 平方公尺可想成 100 公分×100 公分，共 10,000 平方公分。",
     "大單位換小單位數值變大；小單位換大單位數值變小。先判方向，再決定乘除。",
-    "幾何公式代入前，所有長度必須統一成同一單位；計算完再依要求換答案單位。"
+    "幾何公式代入前，所有長度必須統一成同一單位；計算完再依要求換答案單位。",
+    "單位換算完成後應以反向運算或量級估計驗證；例如大面積單位換成小面積單位時數值必定放大，若結果縮小便表示乘除方向或平方倍率有誤。"
   ],
   "formalDefinitions": [
     {
@@ -96,7 +97,7 @@ export const LECTURE = {
       "conditions": [
         "長度"
       ],
-      "meaning": "公分轉公釐乘 10。"
+      "meaning": "公分轉毫米乘 10。"
     },
     {
       "formula": "1 m=100 cm",
@@ -146,6 +147,11 @@ export const LECTURE = {
       "step": 4,
       "instruction": "判斷大轉小乘、小轉大除，並回寫完整單位。",
       "check": "用估量檢查數值變大或變小是否合理。"
+    },
+    {
+      "step": 5,
+      "instruction": "以反向換算、面積除邊長或量級估計驗證結果。",
+      "check": "數值方向、量的種類與平方單位三者一致。"
     }
   ],
   "workedExamples": [
@@ -153,37 +159,45 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "3.6 公尺等於多少公分？",
       "solutionSteps": [
-        "1 公尺=100 公分。",
-        "3.6×100=360。"
+        "寫出一公尺等於一百公分。",
+        "大單位換小單位，計算三點六乘一百等於三百六十。",
+        "把三百六十公分除一百，反查為三點六公尺。"
       ],
-      "answer": "360 公分。"
+      "answer": "360 公分。",
+      "why": "公尺到公分是長度的一維倍率，只需乘一百而不是平方；反向除法能同時確認小數點位置與單位換算方向。"
     },
     {
       "exampleId": "L2",
       "prompt": "25,000 平方公分等於多少平方公尺？",
       "solutionSteps": [
-        "1 平方公尺=10,000 平方公分。",
-        "25,000÷10,000=2.5。"
+        "由一公尺等於一百公分推出一平方公尺等於一萬平方公分。",
+        "小面積單位換大單位，計算二萬五千除一萬等於二點五。",
+        "用二點五乘一萬回算二萬五千平方公分。"
       ],
-      "answer": "2.5 平方公尺。"
+      "answer": "2.5 平方公尺。",
+      "why": "面積同時有長與寬兩個方向，所以公分到公尺的一百倍必須平方；反向乘一萬可排除只除一百的常見錯誤。"
     },
     {
       "exampleId": "L3",
       "prompt": "0.08 平方公里等於多少公頃？",
       "solutionSteps": [
-        "1 平方公里=100 公頃。",
-        "0.08×100=8。"
+        "寫出一平方公里等於一百公頃。",
+        "大面積單位換小單位，計算零點零八乘一百等於八。",
+        "用八公頃除一百，反查零點零八平方公里。"
       ],
-      "answer": "8 公頃。"
+      "answer": "8 公頃。",
+      "why": "一平方公里是一百萬平方公尺，一公頃是一萬平方公尺，兩者比值為一百；用共同的平方公尺基準可避免記錯倍率。"
     },
     {
       "exampleId": "L4",
       "prompt": "長 2 公尺、寬 75 公分的長方形面積，以平方公分表示。",
       "solutionSteps": [
-        "2 公尺=200 公分。",
-        "200×75=15,000。"
+        "把二公尺換成二百公分，使兩邊同單位。",
+        "計算二百乘七十五等於一萬五千。",
+        "以一萬五千除七十五反查長為二百公分。"
       ],
-      "answer": "15,000 平方公分。"
+      "answer": "15,000 平方公分。",
+      "why": "長與寬必須先統一單位才能相乘，兩個公分長度相乘後結果自然是平方公分；除回其中一邊可檢查乘積與單位。"
     }
   ],
   "levelConnections": {
@@ -254,7 +268,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "9b72cdd87f101178085c042bb0d9a4772018ae7fc0f1060b9fcf1d08a2e6bf89"
+  "contentSha256": "5fd9f8bfdece51164bc3aba30dddfa267cd227b7517c0664a259f9475a9e3ec2"
 };
 
 export const QUESTIONS = [
@@ -284,9 +298,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "320 公分。",
-    "explanation": "大單位轉小單位乘 100。",
+    "explanation": "大單位轉小單位乘 100。 每一公尺含一百公分，所以三點二要乘一百；反向把三百二十公分除以一百會回到三點二公尺，數值與單位都一致。",
     "steps": [
-      "3.2×100=320。"
+      "3.2×100=320。",
+      "寫出一公尺等於一百公分。",
+      "用反向除法確認三百二十公分等於三點二公尺。"
     ],
     "optionAnalysis": [
       {
@@ -310,7 +326,7 @@ export const QUESTIONS = [
         "reason": "換算方向顛倒。"
       }
     ],
-    "misconceptionTarget": "把倍率誤用 10 或除 100。",
+    "misconceptionTarget": "把倍率誤用 10 或除 100。 也可能把小數點向錯方向移動，使大單位換小單位後數值反而縮小。",
     "prerequisiteCheck": "能做小數乘 100。",
     "estimatedTimeSec": 90,
     "unitCheck": "1 m=100 cm，答案公分。",
@@ -322,7 +338,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e5eb5f0dac10f27a294e5d92563e986e283820a05ee39b9612c3d55fec68ecd8"
+    "contentSha256": "e359c3303391cd99974b5c4dd0a6992e7296ef4e96583376d50278ee3f88b67f"
   },
   {
     "questionId": "u08-s011-v002",
@@ -351,10 +367,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "450公分−420公分=30公分。",
-    "explanation": "先把兩條繩長統一為公分，再求差。",
+    "explanation": "先把兩條繩長統一為公分，再求差。 四點二公尺先換成四百二十公分，才能與四百五十公分相減；兩條繩長只差三十公分，且第一條數值較大，方向沒有顛倒。",
     "steps": [
       "4.2公尺換成420公分。",
-      "450−420=30公分。"
+      "450−420=30公分。",
+      "確認第一條四百五十公分較長。",
+      "把四百二十加回三十，驗證得到四百五十。"
     ],
     "optionAnalysis": [
       {
@@ -378,7 +396,7 @@ export const QUESTIONS = [
         "reason": "把兩條長度相加而不是比較差。"
       }
     ],
-    "misconceptionTarget": "不同單位直接相減，或把差值單位寫錯。",
+    "misconceptionTarget": "不同單位直接相減，或把差值單位寫錯。 還可能把四點二公尺看成四十二公分，造成差值被放大。",
     "prerequisiteCheck": "能使用1公尺=100公分並做減法。",
     "estimatedTimeSec": 90,
     "unitCheck": "兩條長度先統一為公分，答案為公分。",
@@ -390,7 +408,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "5b8fb9f3632720f62eeb7203f2b5c933379245f5e381db4d0f6a05d922b4c672"
+    "contentSha256": "90f9b074f7bed9d23810d212908064b85e9f87f603079c8a5d5eecf196503937"
   },
   {
     "questionId": "u08-s011-v003",
@@ -420,10 +438,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "總面積10000平方公分，每片100平方公分，因此100片。",
-    "explanation": "先換算總面積，再除以每片面積。",
+    "explanation": "先換算總面積，再除以每片面積。 一平方公尺是一萬平方公分；總面積一萬除以每片一百，得到一百片，並可用一百片乘一百平方公分反查恰好鋪滿。",
     "steps": [
       "1平方公尺換成10000平方公分。",
-      "10000÷100=100。"
+      "10000÷100=100。",
+      "以總面積除以每片面積，單位平方公分相消。",
+      "用一百乘一百驗證總面積回到一萬平方公分。"
     ],
     "optionAnalysis": [
       {
@@ -447,7 +467,7 @@ export const QUESTIONS = [
         "reason": "1平方公尺=10000平方公分，10000÷100=100片。"
       }
     ],
-    "misconceptionTarget": "把平方單位倍率只乘100，或忘記除以單片面積。",
+    "misconceptionTarget": "把平方單位倍率只乘100，或忘記除以單片面積。 也可能把裁片數誤當面積換算倍率，直接回答一萬片。",
     "prerequisiteCheck": "能理解平方公尺與平方公分倍率。",
     "estimatedTimeSec": 90,
     "unitCheck": "總面積與單片面積統一為平方公分，答案為片數。",
@@ -459,7 +479,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1250b7b6425581d8111f75b9e8da50face1a7c96802aba4a3ea303bd5ab85fc0"
+    "contentSha256": "35ae56e1379433b00fc284aae0c3ed10d82fccd191a932d66d99a387e5bf9b2c"
   },
   {
     "questionId": "u08-s011-v004",
@@ -487,9 +507,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "3.6 平方公尺。",
-    "explanation": "小面積單位轉大單位除 10,000。",
+    "explanation": "小面積單位轉大單位除 10,000。 平方公分換平方公尺必須除以一萬，三萬六千除一萬為三點六；再乘一萬可回復原數，排除零點三六與三十六等錯誤倍率。",
     "steps": [
-      "36,000÷10,000=3.6。"
+      "36,000÷10,000=3.6。",
+      "辨認這是二維面積而非長度。",
+      "將三點六平方公尺乘一萬回算原面積。"
     ],
     "optionAnalysis": [
       {
@@ -513,7 +535,7 @@ export const QUESTIONS = [
         "reason": "多除 10。"
       }
     ],
-    "misconceptionTarget": "只使用長度倍率 100。",
+    "misconceptionTarget": "只使用長度倍率 100。 還可能只移動兩位小數，錯把面積倍率當成長度倍率。",
     "prerequisiteCheck": "能做小數除法。",
     "estimatedTimeSec": 90,
     "unitCheck": "平方公分除以 10,000 得平方公尺。",
@@ -525,7 +547,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "fac946d1d088ac441532833c25f11c6f8392a4205691b0850ae70a575bf33422"
+    "contentSha256": "5b2df6c22f10d81b7d89f30e8e265d9ed0ffa98085da0d6307b120a309076f06"
   },
   {
     "questionId": "u08-s011-v005",
@@ -554,10 +576,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "陸地2.1平方公里等於2,100,000平方公尺。",
-    "explanation": "先在同一平方公里單位相減，再換成平方公尺。",
+    "explanation": "先在同一平方公里單位相減，再換成平方公尺。 總面積扣水域後為二點一平方公里；每平方公里是一百萬平方公尺，所以陸地為二百一十萬平方公尺，且小單位數值應變大。",
     "steps": [
       "2.5−0.4=2.1平方公里。",
-      "2.1×1,000,000=2,100,000平方公尺。"
+      "2.1×1,000,000=2,100,000平方公尺。",
+      "先在相同平方公里單位求陸地面積。",
+      "以二百一十萬除一百萬，反查二點一平方公里。"
     ],
     "optionAnalysis": [
       {
@@ -581,7 +605,7 @@ export const QUESTIONS = [
         "reason": "陸地=2.5−0.4=2.1平方公里=2.1×1,000,000=2,100,000平方公尺。"
       }
     ],
-    "misconceptionTarget": "未扣水域，或把平方公里倍率當公里倍率。",
+    "misconceptionTarget": "未扣水域，或把平方公里倍率當公里倍率。 也可能把二點五與零點四先換成不同單位，造成不能直接相減。",
     "prerequisiteCheck": "能做小數減法與平方公里換平方公尺。",
     "estimatedTimeSec": 90,
     "unitCheck": "先以平方公里相減，最後答案為平方公尺。",
@@ -593,7 +617,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "11d0a615f6a002f961c24a840c0975fa416c87cc1846526567f5fa24356588ba"
+    "contentSha256": "e7e8c922e391e1c564eee16c36838befd8c0398b2c1724cafc368774617954fb"
   },
   {
     "questionId": "u08-s011-v006",
@@ -622,10 +646,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "剩餘面積為3000平方公尺。",
-    "explanation": "先把公頃換成平方公尺，再扣除步道。",
+    "explanation": "先把公頃換成平方公尺，再扣除步道。 零點三五公頃等於三千五百平方公尺，扣除五百平方公尺步道後剩三千；把三千與五百相加可回到原苗圃總面積。",
     "steps": [
       "0.35×10000=3500平方公尺。",
-      "3500−500=3000平方公尺。"
+      "3500−500=3000平方公尺。",
+      "使用一公頃等於一萬平方公尺。",
+      "以剩餘面積加步道面積驗證總量守恆。"
     ],
     "optionAnalysis": [
       {
@@ -649,7 +675,7 @@ export const QUESTIONS = [
         "reason": "把1公頃誤當100000平方公尺。"
       }
     ],
-    "misconceptionTarget": "不同面積單位直接相減，或忘記扣除步道。",
+    "misconceptionTarget": "不同面積單位直接相減，或忘記扣除步道。 還可能把零點三五公頃誤換成三百五十平方公尺，少一個十倍。",
     "prerequisiteCheck": "能使用1公頃=10000平方公尺。",
     "estimatedTimeSec": 90,
     "unitCheck": "0.35公頃先換為平方公尺，答案為平方公尺。",
@@ -661,7 +687,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "60e8b5870beea4566db41b098394d341423783578c0b760ba92cf379d323543a"
+    "contentSha256": "bc5dc08b650cc2e9fddb6ff4d12b61f243e858073105ec12eb55bb88cb4493a5"
   },
   {
     "questionId": "u08-s011-v007",
@@ -690,10 +716,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "13,500 平方公分。",
-    "explanation": "先統一長度單位。",
+    "explanation": "先統一長度單位。 一點八公尺先換成一百八十公分，再乘七十五公分得到一萬三千五百平方公分；兩個長度單位一致後，乘積單位自然是平方公分。",
     "steps": [
       "1.8 m=180 cm。",
-      "180×75=13,500。"
+      "180×75=13,500。",
+      "確認長與寬都已使用公分。",
+      "用一萬三千五百除七十五，反查長為一百八十公分。"
     ],
     "optionAnalysis": [
       {
@@ -717,7 +745,7 @@ export const QUESTIONS = [
         "reason": "多乘 10。"
       }
     ],
-    "misconceptionTarget": "未統一單位或錯換小數點。",
+    "misconceptionTarget": "未統一單位或錯換小數點。 也可能把一點八直接乘七十五後誤標平方公分，忽略原本單位不同。",
     "prerequisiteCheck": "能換算公尺與公分並求面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "兩尺寸先統一為公分，結果平方公分。",
@@ -729,7 +757,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "518e2afb43cfa7afabb677ff1209e1263b7f610fd72b823f7b529ab99e8a9efb"
+    "contentSha256": "7601a1221ec3a10ff4dcfd3ca49fef551059500270f1456590081cbdc88f4f77"
   },
   {
     "questionId": "u08-s011-v008",
@@ -757,10 +785,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "邊長 90 公分。",
-    "explanation": "面積反求邊長後再換單位。",
+    "explanation": "面積反求邊長後再換單位。 正方形邊長是面積的正平方根，零點八一開根號得零點九公尺；再換成九十公分，平方九十公分也會得到八千一百平方公分。",
     "steps": [
       "√0.81=0.9。",
-      "0.9×100=90。"
+      "0.9×100=90。",
+      "取正平方根，因邊長必為非負。",
+      "用九十乘九十驗證面積等於零點八一平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -784,7 +814,7 @@ export const QUESTIONS = [
         "reason": "多乘 10。"
       }
     ],
-    "misconceptionTarget": "把面積單位直接線性換成邊長。",
+    "misconceptionTarget": "把面積單位直接線性換成邊長。 還可能直接把零點八一乘一百，錯把面積數值當成長度。",
     "prerequisiteCheck": "能理解正方形面積與平方根。",
     "estimatedTimeSec": 90,
     "unitCheck": "平方公尺開平方得到公尺，再換公分。",
@@ -796,7 +826,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "90fae160feec470bcad34f7498e4b97269ebe00dba0a0461921085c5e585edef"
+    "contentSha256": "e455e21ee97443edc975410427fce2f95b8e2a9693921d73086e2e3926e043d4"
   },
   {
     "questionId": "u08-s011-v009",
@@ -825,11 +855,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "1平方公里=(1000公尺)²=1,000,000平方公尺；再除以每公頃10,000平方公尺，得到100公頃。",
-    "explanation": "先把長度換算倍率平方，再換成公頃。",
+    "explanation": "先把長度換算倍率平方，再換成公頃。 一平方公里含一百萬平方公尺，而每公頃含一萬平方公尺；一百萬除一萬等於一百，因此正確等式唯一是平方公里等於一百公頃。",
     "steps": [
       "把1公里換成1000公尺。",
       "面積倍率平方得到1,000,000平方公尺。",
-      "除以10,000得到100公頃。"
+      "除以10,000得到100公頃。",
+      "比較一平方公里與一公頃各含多少平方公尺。",
+      "以一百公頃乘一萬，驗證回到一百萬平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -853,7 +885,7 @@ export const QUESTIONS = [
         "reason": "方向與倍率都顛倒。"
       }
     ],
-    "misconceptionTarget": "面積換算只用一次長度倍率或方向顛倒。",
+    "misconceptionTarget": "面積換算只用一次長度倍率或方向顛倒。 還可能把公里到公尺的一千倍直接套到面積，得到錯誤的一千公頃。",
     "prerequisiteCheck": "能使用土地面積單位。",
     "estimatedTimeSec": 90,
     "unitCheck": "兩者皆為面積單位。",
@@ -865,7 +897,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "efdc093753e52b14d830415b5e08bb2c3c65a46affcee30190e4d3679b1a8f39"
+    "contentSha256": "c7f2d0fbbd36ec4ac834201cee72fcef20d4389345363d45a74cb83eaeb4002a"
   },
   {
     "questionId": "u08-s011-v010",
@@ -894,10 +926,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "剩餘 18,000 平方公尺。",
-    "explanation": "先統一土地面積單位。",
+    "explanation": "先統一土地面積單位。 二點四公頃先換為二萬四千平方公尺，扣掉六千後剩一萬八千；相加驗算可恢復總面積，並確認公園面積沒有重複換算。",
     "steps": [
       "2.4×10,000=24,000。",
-      "24,000−6,000=18,000。"
+      "24,000−6,000=18,000。",
+      "將兩個面積統一成平方公尺。",
+      "以一萬八千加六千驗證總量為二萬四千。"
     ],
     "optionAnalysis": [
       {
@@ -921,7 +955,7 @@ export const QUESTIONS = [
         "reason": "2.4 ha=24,000 m²，扣 6,000 得 18,000 m²。"
       }
     ],
-    "misconceptionTarget": "不同單位直接相減。",
+    "misconceptionTarget": "不同單位直接相減。 也可能把保留面積加到土地總面積，誤解剩餘一詞。",
     "prerequisiteCheck": "能換算公頃與平方公尺。",
     "estimatedTimeSec": 90,
     "unitCheck": "2.4 ha 先換 24,000 m²，再相減。",
@@ -933,7 +967,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "a161f250e322cb78ba086ee56ae8dfaa29c9aa3e67fa2ae56bc0bf044648196a"
+    "contentSha256": "43925be5ae7b8c093a310c89ba268f12353fe722534e7d4ddc6476cfdb9871e8"
   },
   {
     "questionId": "u08-s011-v011",
@@ -961,9 +995,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "每片 0.25 平方公尺。",
-    "explanation": "平方公分轉平方公尺除 10,000。",
+    "explanation": "平方公分轉平方公尺除 10,000。 二千五百平方公分除以一萬是零點二五平方公尺；反向乘一萬恰回二千五百，證明不是零點零二五或二點五。",
     "steps": [
-      "2,500/10,000=0.25。"
+      "2,500/10,000=0.25。",
+      "辨認平方公尺是較大的面積單位。",
+      "用零點二五乘一萬做反向驗算。"
     ],
     "optionAnalysis": [
       {
@@ -987,7 +1023,7 @@ export const QUESTIONS = [
         "reason": "多除 10。"
       }
     ],
-    "misconceptionTarget": "只依長度倍率移動兩位。",
+    "misconceptionTarget": "只依長度倍率移動兩位。 還可能把二千五百中的兩個零直接刪除，沒有依平方倍率計算。",
     "prerequisiteCheck": "能使用面積倍率。",
     "estimatedTimeSec": 90,
     "unitCheck": "平方公分除以 10,000 得平方公尺。",
@@ -999,7 +1035,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "0f65fef170a99a23f963a4d80a761cde3be5db18ae2a7423a4a2145c4337b594"
+    "contentSha256": "7c7421b785b35ae38905e474d03994a098c78c4d277124821e4ae9f804b0ee5f"
   },
   {
     "questionId": "u08-s011-v012",
@@ -1028,10 +1064,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "總路程 3 公里。",
-    "explanation": "周長路程使用長度倍率，不用平方倍率。",
+    "explanation": "周長路程使用長度倍率，不用平方倍率。 七點五圈乘每圈四百公尺得三千公尺，再除一千為三公里；路程是一維長度，所以只用公里與公尺的一千倍關係。",
     "steps": [
       "400×7.5=3,000 m。",
-      "3,000÷1,000=3 km。"
+      "3,000÷1,000=3 km。",
+      "先以圈數乘單圈周長求總公尺數。",
+      "用三公里乘一千回算三千公尺。"
     ],
     "optionAnalysis": [
       {
@@ -1055,7 +1093,7 @@ export const QUESTIONS = [
         "reason": "把公尺數直接當公里。"
       }
     ],
-    "misconceptionTarget": "把長度換算誤用面積倍率。",
+    "misconceptionTarget": "把長度換算誤用面積倍率。 也可能把圈數取成整數七或八，忽略題目給定的半圈路程。",
     "prerequisiteCheck": "能使用單位率與長度換算。",
     "estimatedTimeSec": 90,
     "unitCheck": "400 m/圈×7.5 圈=3,000 m=3 km。",
@@ -1067,7 +1105,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "aabb7a909c52f4d08645d93b4d2adb9a72edc98b660b229ead0a89b0657b88b5"
+    "contentSha256": "8d6072e04393271993124877b5c61e41709751ec66e91cab6ee6abef0e004af5"
   }
 ];
 
@@ -1092,7 +1130,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "standardSolution": [
       "1平方公尺=10000平方公分，所以2.4平方公尺=24000平方公分。",
-      "24000÷3000=8，因此最多剪8片完整布片。"
+      "24000÷3000=8，因此最多剪8片完整布片。",
+      "反查八片乘每片三千平方公分等於二萬四千平方公分，再除一萬正好回到二點四平方公尺，換算與完整片數一致。"
     ],
     "alternativeMethods": [
       "可先把3000平方公分換成0.3平方公尺，再算2.4÷0.3=8。"
@@ -1101,7 +1140,8 @@ export const CONSTRUCTED_RESPONSES = [
       "使用平方倍率100²。",
       "完成面積換算。",
       "以同單位相除。",
-      "檢查8片剛好無餘料。"
+      "檢查8片剛好無餘料。",
+      "以乘法與反向單位換算共同驗證答案。"
     ],
     "rubric": [
       {
@@ -1129,7 +1169,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只答8片而無換算最高1分。",
     "commonErrors": [
       "面積倍率只乘100。",
-      "把3000平方公分當3000平方公尺。"
+      "把3000平方公分當3000平方公尺。",
+      "把二點四平方公尺換成二百四十平方公分，導致片數少一百倍。"
     ],
     "independentReview": {
       "derivedResult": "24000平方公分；8片。",
@@ -1145,7 +1186,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "5ea50e637d4da576da0d084a7fdb134e9070a902c74f3ca32829667237070a2b"
+    "contentSha256": "0764f2a7a0203d19995069d328445433c4ba773ffeb13172988e2024c73b6411"
   },
   {
     "questionId": "u08-s011-cr002",
@@ -1168,7 +1209,8 @@ export const CONSTRUCTED_RESPONSES = [
     "standardSolution": [
       "75公分=0.75公尺，面積=1.2×0.75=0.9平方公尺。",
       "1.2公尺=120公分，面積=120×75=9000平方公分。",
-      "0.9平方公尺×10000=9000平方公分，兩答案一致。"
+      "0.9平方公尺×10000=9000平方公分，兩答案一致。",
+      "另以九千平方公分除以七十五公分，得到長一百二十公分，與一點二公尺相同，兩條計算路徑互相核對。"
     ],
     "alternativeMethods": [
       "可先用公分計算9000平方公分，再除以10000得0.9平方公尺。"
@@ -1177,7 +1219,8 @@ export const CONSTRUCTED_RESPONSES = [
       "選一種長度單位統一。",
       "計算面積。",
       "轉成另一平方單位。",
-      "反向驗算倍率。"
+      "反向驗算倍率。",
+      "用面積除已知邊長反查另一邊及單位。"
     ],
     "rubric": [
       {
@@ -1205,7 +1248,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只列兩答案無驗證最高2分。",
     "commonErrors": [
       "75公分誤換成0.075公尺。",
-      "0.9平方公尺誤換成90平方公分。"
+      "0.9平方公尺誤換成90平方公分。",
+      "只把其中一邊換成公分便相乘，卻把結果任意標成平方公尺。"
     ],
     "independentReview": {
       "derivedResult": "0.9平方公尺=9000平方公分。",
@@ -1221,7 +1265,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d98cd385acf5527383427213789defef8bad6b4476cdf89d0a24e543c6396ebd"
+    "contentSha256": "3978af84bb58c271edadd4907e5757e68799157b3c75fdd91742771dac17f793"
   }
 ];
 
@@ -1230,7 +1274,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v001",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "e5eb5f0dac10f27a294e5d92563e986e283820a05ee39b9612c3d55fec68ecd8",
+    "contentSha256": "e359c3303391cd99974b5c4dd0a6992e7296ef4e96583376d50278ee3f88b67f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立把 3 公尺與 0.2 公尺分別換成 300、20 公分。",
@@ -1265,7 +1309,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v002",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "5b8fb9f3632720f62eeb7203f2b5c933379245f5e381db4d0f6a05d922b4c672",
+    "contentSha256": "90f9b074f7bed9d23810d212908064b85e9f87f603079c8a5d5eecf196503937",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立換算4.2×100=420，再比較450與420，差30。",
@@ -1300,7 +1344,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v003",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "1250b7b6425581d8111f75b9e8da50face1a7c96802aba4a3ea303bd5ab85fc0",
+    "contentSha256": "35ae56e1379433b00fc284aae0c3ed10d82fccd191a932d66d99a387e5bf9b2c",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立檢查100片×100平方公分=10000平方公分=1平方公尺。",
@@ -1335,7 +1379,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v004",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "fac946d1d088ac441532833c25f11c6f8392a4205691b0850ae70a575bf33422",
+    "contentSha256": "5b2df6c22f10d81b7d89f30e8e265d9ed0ffa98085da0d6307b120a309076f06",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "3 m²=30,000 cm²，餘 6,000=0.6 m²。",
@@ -1370,7 +1414,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v005",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "11d0a615f6a002f961c24a840c0975fa416c87cc1846526567f5fa24356588ba",
+    "contentSha256": "e7e8c922e391e1c564eee16c36838befd8c0398b2c1724cafc368774617954fb",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以2500000−400000=2100000平方公尺驗算。",
@@ -1405,7 +1449,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v006",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "60e8b5870beea4566db41b098394d341423783578c0b760ba92cf379d323543a",
+    "contentSha256": "bc5dc08b650cc2e9fddb6ff4d12b61f243e858073105ec12eb55bb88cb4493a5",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立將500平方公尺換成0.05公頃，0.35−0.05=0.30公頃=3000平方公尺。",
@@ -1440,7 +1484,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v007",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "518e2afb43cfa7afabb677ff1209e1263b7f610fd72b823f7b529ab99e8a9efb",
+    "contentSha256": "7601a1221ec3a10ff4dcfd3ca49fef551059500270f1456590081cbdc88f4f77",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以 1.8×0.75=1.35 m²，再換 13,500 cm²。",
@@ -1475,7 +1519,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v008",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "90fae160feec470bcad34f7498e4b97269ebe00dba0a0461921085c5e585edef",
+    "contentSha256": "e455e21ee97443edc975410427fce2f95b8e2a9693921d73086e2e3926e043d4",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "驗算 90×90=8,100 cm²=0.81 m²。",
@@ -1510,7 +1554,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v009",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "efdc093753e52b14d830415b5e08bb2c3c65a46affcee30190e4d3679b1a8f39",
+    "contentSha256": "c7f2d0fbbd36ec4ac834201cee72fcef20d4389345363d45a74cb83eaeb4002a",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "從面積單位定義重算：1平方公里=(1000公尺)²=1,000,000平方公尺，再以1公頃=10,000平方公尺換算，得到100公頃。",
@@ -1545,7 +1589,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v010",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "a161f250e322cb78ba086ee56ae8dfaa29c9aa3e67fa2ae56bc0bf044648196a",
+    "contentSha256": "43925be5ae7b8c093a310c89ba268f12353fe722534e7d4ddc6476cfdb9871e8",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "也可將 6,000 m²=0.6 ha，剩 1.8 ha=18,000 m²。",
@@ -1580,7 +1624,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v011",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "0f65fef170a99a23f963a4d80a761cde3be5db18ae2a7423a4a2145c4337b594",
+    "contentSha256": "7c7421b785b35ae38905e474d03994a098c78c4d277124821e4ae9f804b0ee5f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "若為 50 cm×50 cm，換 0.5 m×0.5 m 也得 0.25 m²。",
@@ -1615,7 +1659,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s011-v012",
     "unitId": "u08",
     "skillId": "unit-conversion-geometry",
-    "contentSha256": "aabb7a909c52f4d08645d93b4d2adb9a72edc98b660b229ead0a89b0657b88b5",
+    "contentSha256": "8d6072e04393271993124877b5c61e41709751ec66e91cab6ee6abef0e004af5",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "7 圈 2.8 km，半圈 0.2 km，共 3 km。",

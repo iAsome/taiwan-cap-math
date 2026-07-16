@@ -797,7 +797,7 @@ export const QUESTIONS = [
     "type": "mc",
     "itemType": "single-choice",
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "a∥b，一對內錯角的度數比為3:3，且其中一角與相鄰角相差40°。內錯角是多少？",
+    "text": "a∥b，一對內錯角的度數比為3:3，且其中一個內錯角比它的相鄰角小40°。內錯角是多少？",
     "givenConditions": [
       "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
     ],
@@ -854,7 +854,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3542c0e41e4b2c6ae89dabd55e1ac41bdfe80ae28bd321a2f0b7c91a222fd962"
+    "contentSha256": "9880d4f7ce1cdd1f20d467ab1479fa1615dda2bc96c0041554cf8de0f2adad4e"
   },
   {
     "questionId": "u17-s005-v010",

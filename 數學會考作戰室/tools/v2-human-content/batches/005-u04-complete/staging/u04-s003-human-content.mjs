@@ -107,59 +107,76 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "判斷 (2,1) 是否為 x+y=3、2x-y=3 的共同解。",
+      "exampleId": "u04-s003-example-a",
+      "prompt": "檢驗 (1,2) 是否同時符合 x+y=3 與 2x+y=4。",
       "solutionSteps": [
-        "第一式 2+1=3。",
-        "第二式 4-1=3。"
+        "第一式代入得 1+2=3。",
+        "第二式代入得 2×1+2=4。"
       ],
-      "answer": "是共同解。"
+      "answer": "(1,2) 是這組聯立方程式的解。",
+      "why": "同一組 x=1、y=2 分別使兩個方程式左右相等，所以通過全部條件。兩次驗算缺一不可，正是共同解與單一方程式解的差別。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "判斷 (1,2) 是否為同一聯立的解。",
+      "exampleId": "u04-s003-example-b",
+      "prompt": "判斷 (5,1) 是否為 x+y=6、x-y=2 的共同解。",
       "solutionSteps": [
-        "第一式成立。",
-        "第二式 2-2=0≠3。"
+        "第一式得 5+1=6，成立。",
+        "第二式得 5-1=4，不等於二。"
       ],
-      "answer": "不是共同解。"
+      "answer": "不是共同解。",
+      "why": "雖然這組數滿足總和條件，卻不滿足差額條件。聯立方程式使用「且」連結限制，任何一式失敗就足以排除候選數對。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "已知 (3,-1) 為 x+ay=5 的解，求 a。",
+      "exampleId": "u04-s003-example-c",
+      "prompt": "已知 (2,3) 是 x-y=-1、kx+y=11 的解，求 k。",
       "solutionSteps": [
-        "代入 3-a=5。",
-        "-a=2。"
+        "先驗第一式 2-3=-1。",
+        "第二式代入得 2k+3=11，解得 k=4。"
       ],
-      "answer": "a=-2。"
+      "answer": "k=4。",
+      "why": "指定數對必須同時符合兩式；第一式確認順序無誤，第二式化為一元方程式。回代可得 4×2+3=11，證明參數四確實有效。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "若 (p,q) 同時滿足 p+q=8 與 p-q=2，說明兩式提供的資訊。",
+      "exampleId": "u04-s003-example-d",
+      "prompt": "甲乙共十二件且甲比乙多四件，檢查 (8,4) 是否符合。",
       "solutionSteps": [
-        "第一式限制總和。",
-        "第二式限制差。",
-        "同一組 p、q 必須兼顧兩者。"
+        "總數檢查為 8+4=12。",
+        "差額檢查為 8-4=4。"
       ],
-      "answer": "共同解同時符合總和 8、差 2。"
+      "answer": "這組數量符合兩項條件。",
+      "why": "八件與四件不僅總和為十二，差額也正好為四，因此同時滿足情境形成的兩個方程式。只核對總數不足以確定分配。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "兩式各找一組不同的解",
-      "correction": "聯立要求同一組數。"
+      "mistake": "滿足第一式就直接宣稱是共同解。",
+      "why": "把聯立條件中的「且」誤讀成「或」。",
+      "correction": "同一數對必須逐式檢驗，全部成立才能接受。"
     },
     {
-      "mistake": "第一式成立就停止",
-      "correction": "仍需檢查第二式。"
+      "mistake": "兩個方程式各代入不同數對。",
+      "why": "忽略未知數代表同一組量。",
+      "correction": "先固定 x、y 值，再將它們帶入每一式。"
     },
     {
-      "mistake": "把參數當成第三個未知數任意變動",
-      "correction": "參數在同一題中是固定數。"
+      "mistake": "第二式驗算時交換 x、y。",
+      "why": "沒有維持有序數對的固定分量。",
+      "correction": "在每個式子旁重寫 x、y 的指定值。"
     },
     {
-      "mistake": "誤認無法立刻看出就代表無解",
-      "correction": "需要用解法或檢驗判斷。"
+      "mistake": "含參數時只求參數不驗其他方程式。",
+      "why": "未確認指定數對本身是否符合全部條件。",
+      "correction": "先驗不含參數式，求參數後再做全式回驗。"
+    },
+    {
+      "mistake": "把同一資訊倍乘後當成新的獨立限制。",
+      "why": "沒有比較兩個方程式是否等價。",
+      "correction": "檢查係數與常數是否整體成相同比例。"
+    },
+    {
+      "mistake": "情境資料只核對總數。",
+      "why": "忽略差額、費用或規格等第二條件。",
+      "correction": "把每句限制各列一式並逐項檢查。"
     }
   ],
   "selfCheck": [
@@ -202,7 +219,40 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "79e30672d7335b1aa1ac0cdf7d2d3f7765f7a788906cdd6d4bb37903dd7c2de6"
+  "contentSha256": "dac82f9fded37a80bec80e4d367ea4a1bda6e2cebc6c463b21f87aae18d87d00",
+  "conceptNarrative": [
+    "聯立方程式把兩個或更多條件同時放在同一組未知數上。它的解是一個有序數對，代入後必須讓每一個方程式都成立；只通過其中一式，只能稱為該單一方程式的解。",
+    "檢驗共同解時，每個方程式都使用完全相同的 x、y 值。可把它想成兩道篩選：第一式先保留一群候選，第二式再從中留下同時符合者，不能在兩式間更換數值。",
+    "若題目已指定共同解並要求參數，可以把同一數對代入含參數的方程式，化成一元一次方程式求參數；求出後仍應代回全部原式，確認沒有符號或順序錯誤。",
+    "生活情境常以總數、差額、費用或規格形成兩條限制。某組資料只有在每一項限制都通過時才合格；表格、裝置或密碼鎖的名稱不會改變共同解必須同時成立的核心意義。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "將候選有序數對依第一分量為 x、第二分量為 y 寫清楚。",
+      "check": "兩個方程式將使用同一組 x、y，沒有交換或另取數值。"
+    },
+    {
+      "step": 2,
+      "instruction": "代入第一個方程式，計算左邊並與右邊比較。",
+      "check": "第一式的代入、運算與相等判定都有完整紀錄。"
+    },
+    {
+      "step": 3,
+      "instruction": "不論第一式結果如何，都按題意代入第二個方程式完成檢查。",
+      "check": "第二式沒有被省略，負號與係數亦按原式保留。"
+    },
+    {
+      "step": 4,
+      "instruction": "將各式結果彙整，只有全部成立才標記為聯立方程式的解。",
+      "check": "結論使用「同時成立」，沒有把任一式成立當成充分條件。"
+    },
+    {
+      "step": 5,
+      "instruction": "若含參數，解出參數後把參數與數對一起代回所有原式。",
+      "check": "每式左右相等，參數值與有序數對順序都經過驗證。"
+    }
+  ]
 };
 
 export const QUESTIONS = [
@@ -227,10 +277,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "依定義，聯立解是同一組 x、y 使每個方程式都成立。",
-    "explanation": "「聯立」表示條件同時成立。",
+    "explanation": "聯立方程式用多個方程式共同限制同一組未知數，因此它的解必須讓每一個方程式同時成立。只滿足其中一式的數對，仍可能違反其他條件，不能稱為這組聯立方程式的解。",
     "steps": [
-      "讀取共同解定義。",
-      "排除只滿足部分條件。"
+      "確認各方程式使用的是同一組未知數。",
+      "把候選數對分別代入每一個方程式。",
+      "只有所有等式都成立時才判定為共同解。"
     ],
     "optionAnalysis": [
       {
@@ -254,7 +305,7 @@ export const QUESTIONS = [
         "reason": "還必須各自等於右邊。"
       }
     ],
-    "misconceptionTarget": "把兩式分開處理",
+    "misconceptionTarget": "只驗算其中一個方程式成立，就過早宣稱找到聯立方程式的解。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -267,7 +318,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "5b3fc1b7c93dcf8d3de0af41964276648cda948826850a0b524a484937951d32"
+    "contentSha256": "b9c86b4f8c70f35398773c66d0bd5b7f0862df58eb1658172b985c740d442c32"
   },
   {
     "questionId": "u04-s003-v002",
@@ -290,11 +341,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "第一式 2+1=3；第二式 4-1=3，兩式都成立。",
-    "explanation": "同一數對滿足兩個等式，因此為共同解。",
+    "explanation": "把 (2,1) 代入第一式，2+1=3；代入第二式，2×2-1=3。兩個方程式的左右兩邊都相等，因此這一組數對同時滿足兩式，確實是聯立方程式的解。",
     "steps": [
-      "代入第一式。",
-      "代入第二式。",
-      "確認皆成立。"
+      "代入第一式 x+y=3，驗得 2+1=3。",
+      "代入第二式 2x-y=3，驗得 4-1=3。",
+      "確認兩式都成立，判定答案為是。"
     ],
     "optionAnalysis": [
       {
@@ -318,7 +369,7 @@ export const QUESTIONS = [
         "reason": "兩個方程式代入後都成立。"
       }
     ],
-    "misconceptionTarget": "只檢查一式",
+    "misconceptionTarget": "只因第一式成立便停止檢驗，沒有確認第二式也同時成立。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -331,7 +382,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "2242e79f614de6904c7251843cf54ea2fe7e8b0ea258e4a9f132a0afe3b9d493"
+    "contentSha256": "aee1a6838a2fb06065c44b0b2a68212c8f82d0bc20c66df391a3a8566fce31a7"
   },
   {
     "questionId": "u04-s003-v003",
@@ -354,11 +405,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "第二式代入為 4-0=4≠2，因此不是共同解。",
-    "explanation": "任一方程式不成立就排除。",
+    "explanation": "(4,0) 代入 x+y=4 確實得到 4+0=4，但代入 x-y=2 卻得到 4-0=4，不等於二。聯立解必須同時通過全部方程式，所以這組數對不是共同解。第一式成立不能抵銷第二式失敗的事實。",
     "steps": [
-      "保留第一式成立資訊。",
-      "檢查第二式。",
-      "因第二式失敗而否決。"
+      "驗算第一式，得到 4+0=4。",
+      "驗算第二式，得到 4-0=4≠2。",
+      "因第二式不成立，判定不是聯立方程式的解。"
     ],
     "optionAnalysis": [
       {
@@ -382,7 +433,7 @@ export const QUESTIONS = [
         "reason": "整數性不是共同解的充分條件。"
       }
     ],
-    "misconceptionTarget": "第一式成立就停止",
+    "misconceptionTarget": "把滿足任一方程式誤認為滿足聯立條件，忽略共同解的「同時」要求。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -395,7 +446,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "dcab19109e41d64096a8fdde8beeb3c5d28aad5159a8619f51477a3a61881c29"
+    "contentSha256": "80ab936648cc1495583c9b5956149f715031d80ba43a75da98898c4272cb262b"
   },
   {
     "questionId": "u04-s003-v004",
@@ -418,10 +469,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "第二式代入得 3k-(-1)=7，即 3k+1=7，k=2；第一式也成立。",
-    "explanation": "已知共同解可代入含參數的方程式。",
+    "explanation": "既然 (3,-1) 是共同解，代入第二式 kx-y=7 必須成立。得到 3k-(-1)=7，也就是 3k+1=7；兩邊同減一後 3k=6，所以 k=2。第一式也可驗得 3+(-1)=2。把 k=2 回代第二式可得 6+1=7，兩條限制都已核對。",
     "steps": [
-      "先確認第一式 3-1=2。",
-      "第二式代入並解 3k+1=7。"
+      "先代入第一式，確認 3+(-1)=2。",
+      "代入第二式，寫成 3k-(-1)=7。",
+      "化為 3k+1=7，解得 k=2。"
     ],
     "optionAnalysis": [
       {
@@ -445,7 +497,7 @@ export const QUESTIONS = [
         "reason": "忽略 y=-1 使 -y=+1。"
       }
     ],
-    "misconceptionTarget": "負數代入 -y 時符號錯",
+    "misconceptionTarget": "把減去負一仍寫成減一，使參數 k 的方程式符號錯誤。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -458,7 +510,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f87c444e7b388901e56b1be5617e649207b054ccfcd3c855b6282bd0c871c8db"
+    "contentSha256": "bcbee1a131fee4bf73ff7005bbe1c3a2b5dbe807532a0e60e93aead6c746de33"
   },
   {
     "questionId": "u04-s003-v005",
@@ -481,11 +533,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "(3,2) 代入第一式 6+2=8，第二式 3-2=1。",
-    "explanation": "多個選項可能滿足第一式，必須再用第二式篩選。",
+    "explanation": "代入 (3,2) 時，第一式左邊為 2×3+2=8，第二式左邊為 3-2=1，兩式皆與右邊相等。因此 (3,2) 是兩個方程式的共同解；其他選項至少有一式不成立。",
     "steps": [
-      "逐組檢查第一式。",
-      "再檢查第二式。",
-      "保留兩式均成立者。"
+      "把 x=3、y=2 代入 2x+y，算得八。",
+      "代入 x-y，算得一。",
+      "兩個結果分別符合右邊，選定 (3,2)。"
     ],
     "optionAnalysis": [
       {
@@ -509,7 +561,7 @@ export const QUESTIONS = [
         "reason": "(3,2) 同時使兩式成立。"
       }
     ],
-    "misconceptionTarget": "只用一個方程式篩選",
+    "misconceptionTarget": "只挑能滿足第一式的數對，沒有再用第二式篩出共同解。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -522,7 +574,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "764e4d739957ca5d2f0aafb2071210c194d07df72a6b29fa40dfd69f38504cd2"
+    "contentSha256": "99ba4528ce2032fe1e3e333939b87186bd385cde3d7c162b73b009da50ccf8b8"
   },
   {
     "questionId": "u04-s003-v006",
@@ -545,10 +597,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "代入 (1,4)：3×1+4=7。",
-    "explanation": "任何聯立中的方程式都必須被共同解滿足。",
+    "explanation": "把共同解 (1,4) 代入選項 3x+y=7，左邊為 3×1+4=7，等於右邊，因此它可作為聯立方程式的一式。判斷時須代入完整有序數對，而不是只查看係數外觀。",
     "steps": [
-      "將候選解代入各式。",
-      "找等號成立者。"
+      "由共同解讀出 x=1、y=4。",
+      "代入選項 3x+y=7，計算 3+4=7。",
+      "核對等式成立，選出可用的方程式。"
     ],
     "optionAnalysis": [
       {
@@ -572,7 +625,7 @@ export const QUESTIONS = [
         "reason": "代入得 -7。"
       }
     ],
-    "misconceptionTarget": "只看式子外觀不代入",
+    "misconceptionTarget": "憑選項形式猜測，沒有把指定共同解代入每個候選方程式。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -585,7 +638,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ab0f6734205fa23bbed28e75fb8168540f74fc3d0ae23f11c1bd850bab02c36c"
+    "contentSha256": "2accb6c9d5f1c24e3e718f671ab2db1974184e784bc30b0df2d3a831ec2b266d"
   },
   {
     "questionId": "u04-s003-v007",
@@ -608,11 +661,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "兩式相加得 2a=14，所以 a=7；代回 a+b=10 得 b=3，因此 2a+3b=14+9=23。",
-    "explanation": "先由兩個共同條件求出有序數對，再計算指定的一次式。",
+    "explanation": "兩式相加得 2a=14，所以 a=7；再代入 a+b=10，得到 b=3。目標式為 2a+3b=2×7+3×3=14+9=23，因此正確答案是二十三。代回 a-b=4 也能確認七減三正好等於四，兩個解值均無誤。",
     "steps": [
-      "將兩式相加求 a=7。",
-      "代回求 b=3。",
-      "計算 2a+3b=23。"
+      "將 a+b=10 與 a-b=4 相加，求得 a=7。",
+      "代回第一式，求得 b=3。",
+      "代入目標式，計算 2×7+3×3=23。"
     ],
     "optionAnalysis": [
       {
@@ -636,7 +689,7 @@ export const QUESTIONS = [
         "reason": "把 a、b 的順序交換後代入。"
       }
     ],
-    "misconceptionTarget": "只使用一式或交換 a、b 的順序",
+    "misconceptionTarget": "求出 a、b 後直接相加，沒有再依目標式的係數二與三計算。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -649,7 +702,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "58dd465ef6e7bca54be301e2828eef3e2db1084ba131abfb643f644a26e0be80"
+    "contentSha256": "b98da496432bf3861c8b3d782d222f7cc30956e75c8b0c3dd13efc6ac4c56352"
   },
   {
     "questionId": "u04-s003-v008",
@@ -672,10 +725,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "第一式給 2+m=5，m=3；第二式驗證 4+6=10。",
-    "explanation": "共同解可先由較簡單一式求值，再用另一式檢驗。",
+    "explanation": "由第一式 x+y=5 且 x=2，可得 2+m=5，所以 m=3。再用 a=2 代入第二式驗算：2×2+2×3=4+6=10，確實成立，因此共同解的第二分量為三。兩式使用相同的 x=2、y=3，符合共同解定義。",
     "steps": [
-      "用第一式求 m。",
-      "代入第二式確認。"
+      "把 (2,m) 代入 x+y=5，得到 2+m=5。",
+      "解出 m=3。",
+      "代入第二式 2×2+2×3=10，確認共同成立。"
     ],
     "optionAnalysis": [
       {
@@ -699,7 +753,7 @@ export const QUESTIONS = [
         "reason": "將 5+1 誤作答案。"
       }
     ],
-    "misconceptionTarget": "求出後未檢查第二式",
+    "misconceptionTarget": "只由其中一式求得 m 就省略第二式驗證，未確認題目的同時滿足條件。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -712,7 +766,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b8cde10dc25b52cdfe12c0c020f7f96e32005243803817879b68ee6eb8b28949"
+    "contentSha256": "6fb5987272db8f4b972d7c72b06fadfa3034530d43c7d439369ccebed2a2044c"
   },
   {
     "questionId": "u04-s003-v009",
@@ -735,11 +789,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "第二式左邊是 2(x+y)，而 x+y=6，所以 k=12。",
-    "explanation": "第二條件若是第一式左邊的兩倍，右邊也必須兩倍。",
+    "explanation": "同一組數使 x+y=6 成立，把等式兩邊同乘二便得到 2x+2y=12。因此第二式若描述相同限制，右邊 k 必須等於十二；只倍乘左邊而不倍乘右邊會破壞等式。",
     "steps": [
-      "提取 2(x+y)。",
-      "代入 x+y=6。",
-      "得到 k=12。"
+      "從 x+y=6 出發。",
+      "將等式左右兩邊同乘二，得 2x+2y=12。",
+      "與 2x+2y=k 比較，確定 k=12。"
     ],
     "optionAnalysis": [
       {
@@ -763,7 +817,7 @@ export const QUESTIONS = [
         "reason": "把 6 加倍後再加 6。"
       }
     ],
-    "misconceptionTarget": "只放大左邊不放大右邊",
+    "misconceptionTarget": "把左邊係數都乘二，卻忘記右邊常數六也必須乘二。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -776,7 +830,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7bcc6129f6284cdbf7e0687f5dcfd6cd213e548bf0dc204dbc90ad81dfe2e754"
+    "contentSha256": "3fde283d758bc2d766569b2b63b8d51646bf3bdbe0e46cc95c0fd6e5dbb93b40"
   },
   {
     "questionId": "u04-s003-v010",
@@ -799,11 +853,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "設成人 x、學生 y；(5,3) 同時滿足 x+y=8、x-y=2。",
-    "explanation": "兩項活動規則等同兩個聯立條件。",
+    "explanation": "成人五人、學生三人，總人數為 5+3=8；成人比學生多 5-3=2 人。這組人數同時符合總數與差額兩項規則，所以應判定合格，而非只核對其中一項。",
     "steps": [
-      "檢查總人數。",
-      "檢查人數差。",
-      "兩者均通過。"
+      "檢查總人數，計算 5+3=8。",
+      "檢查人數差，計算 5-3=2。",
+      "兩項規則均成立，判定該組合格。"
     ],
     "optionAnalysis": [
       {
@@ -827,7 +881,7 @@ export const QUESTIONS = [
         "reason": "5+3=8 且 5-3=2。"
       }
     ],
-    "misconceptionTarget": "把總數條件套到單一類別",
+    "misconceptionTarget": "只查看總人數八人，沒有再核對成人比學生多二人的差額規則。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有人數單位皆為人。",
@@ -840,7 +894,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1e978a226997ffdfabdadd67039970667f34743031c69db4a9117b75141b7b5b"
+    "contentSha256": "f6a2ac6bcbbd3d4cd1a69dad6e5773764870a97664109c09cb27de3b9ce17834"
   },
   {
     "questionId": "u04-s003-v011",
@@ -863,11 +917,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "(4,5)：4+2×5=14，3×4+5=17，兩項都成立。",
-    "explanation": "逐列檢查可避免只符合第一限制的假候選。",
+    "explanation": "將 (4,5) 代入第一式得 4+2×5=14，代入第二式得 3×4+5=17。兩項物流限制都通過，因此這一列表格資料是共同解；任一式失敗都不能選。欄位順序固定為 x、y，兩次代入不可互換。",
     "steps": [
-      "代入第一限制。",
-      "代入第二限制。",
-      "確認同時成立。"
+      "按欄位順序取 x=4、y=5。",
+      "驗算 x+2y=4+10=14。",
+      "再驗算 3x+y=12+5=17，選定該列。"
     ],
     "optionAnalysis": [
       {
@@ -891,7 +945,7 @@ export const QUESTIONS = [
         "reason": "第一式成立，但第二式 32。"
       }
     ],
-    "misconceptionTarget": "只檢查第一條限制",
+    "misconceptionTarget": "驗完一個物流條件就停止，未把同一列資料代入另一條限制。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "x、y 都是箱數，兩式各項單位依模型為標準化容量單位。",
@@ -904,7 +958,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "11a8ead6891a6d8483cc8f6184e6348c2d855e5e0aae2351317d85ab61051b82"
+    "contentSha256": "8abfd316bf52c2a9c9e0faf041d485713f3bdd9f4bbcbad71f4b80f6e974a214"
   },
   {
     "questionId": "u04-s003-v012",
@@ -927,11 +981,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(4,5)：4+5=9，8-5=3，兩條規則均成立。",
-    "explanation": "解鎖條件具有聯立語意，任一規則失敗都不接受。",
+    "explanation": "把 (4,5) 代入第一個條件，4+5=9；代入第二個條件，2×4-5=8-5=3。兩個等式都成立，所以這組輸入符合密碼鎖的聯立規則，能夠解鎖。共同輸入必須原封不動通過兩道檢查，不能只符合總和。",
     "steps": [
-      "檢查和。",
-      "檢查加權差。",
-      "確認同時成立。"
+      "將 x=4、y=5 代入 x+y，得到九。",
+      "代入 2x-y，得到 8-5=3。",
+      "確認兩個指定條件同時成立，選擇 (4,5)。"
     ],
     "optionAnalysis": [
       {
@@ -955,7 +1009,7 @@ export const QUESTIONS = [
         "reason": "第二式 9。"
       }
     ],
-    "misconceptionTarget": "只通過一條規則就接受",
+    "misconceptionTarget": "只符合總和九便判定可解鎖，忽略還要同時符合第二個差值條件。",
     "prerequisiteCheck": "只需先備 system-ordered-pair-solution-check，並使用本技能「聯立方程式解的意義」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -968,7 +1022,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "cf8f52ee565f75a0624c5b7c4c00f474ffb8c8090fd666b23b4b5340feea0dc5"
+    "contentSha256": "77aa74d389fa2283a6f6be54a9699229f645e5f5e92909f2cd87932782dfee5d"
   }
 ];
 
@@ -987,17 +1041,17 @@ export const CONSTRUCTED_RESPONSES = [
       "說明“同時滿足”。"
     ],
     "standardSolution": [
-      "第一式：2×3+2=8。",
-      "第二式：3-2=1。",
-      "兩式都成立，所以 (3,2) 是共同解。",
-      "只驗第一式無法排除滿足第一式但不滿足第二式的數對。"
+      "將 (3,2) 代入第一式 2x+y=8，左邊為 2×3+2=8，第一式成立。",
+      "將同一組數代入第二式 x-y=1，左邊為 3-2=1，第二式也成立。",
+      "因兩式同時成立，所以 (3,2) 是共同解。只驗第一式不夠，因為可能有數對滿足第一式卻違反第二式。"
     ],
     "alternativeMethods": [
       "可舉 (2,4) 滿足第一式但不滿足第二式作為反例。"
     ],
     "reasoningSteps": [
-      "同一數對代入兩式。",
-      "解釋共同解邏輯。"
+      "按照 x=3、y=2 的順序代入第一個方程式並比較左右兩邊。",
+      "再把完全相同的 x、y 值代入第二個方程式並比較。",
+      "只有兩次比較都成立時，才依共同解定義下結論。"
     ],
     "rubric": [
       {
@@ -1035,7 +1089,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ac6d3a68ea6300c449a7b65850e7276b1def036ba8dfa12726e8484107b1f791"
+    "contentSha256": "3033e9e4a89e71026e4f284f5180340fa7422821ae13ac096b0288cb93b3995d",
+    "commonErrors": [
+      "驗算第一式得到八就停止，忽略共同解必須同時符合第二式。",
+      "第二式代入時交換三與二，將 x-y 錯算成二減三。",
+      "把兩個方程式各自使用不同數對，違反同一組未知數的要求。"
+    ]
   },
   {
     "questionId": "u04-s003-cr002",
@@ -1051,17 +1110,17 @@ export const CONSTRUCTED_RESPONSES = [
       "第一式與第二式都要回驗。"
     ],
     "standardSolution": [
-      "第一式：2+(-1)=1。",
-      "第二式：2k-3(-1)=9，2k+3=9，k=3。",
-      "回驗 k=3：6+3=9。"
+      "先驗第一式：將 (2,-1) 代入 x+y，得到 2+(-1)=1，因此第一式成立。",
+      "代入第二式 kx-3y=9，得 2k-3(-1)=9，即 2k+3=9，所以 2k=6、k=3。",
+      "回驗 k=3 時，第二式左邊為 3×2-3×(-1)=6+3=9；兩式都成立，參數值正確。"
     ],
     "alternativeMethods": [
       "可先由第二式整理 k=(9+3y)/x，再代入 x=2、y=-1。"
     ],
     "reasoningSteps": [
-      "先確認共同解第一條件。",
-      "求參數。",
-      "回驗。"
+      "先用第一式確認指定數對的順序與數值符合題設。",
+      "把 x=2、y=-1 代入含 k 的第二式，保留負數括號後解一元方程式。",
+      "將 k=3 與原數對一起代回兩個原式，完成雙式驗證。"
     ],
     "rubric": [
       {
@@ -1099,7 +1158,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "706e99484bd504c0c0be2686bd55960640461ccede7838199dd01641d5bc6000"
+    "contentSha256": "c4893b70d5dcf743a7f5cb02fd26d6609567b41d0d1c3d543283c9e99abaad8e",
+    "commonErrors": [
+      "把 -3(-1) 算成負三，漏掉兩個負號相乘後應為正三。",
+      "只利用第二式求 k，沒有依題意寫出第一式的共同解驗證。",
+      "求得 k=3 後不代回原式，未檢查代數移項是否造成符號錯誤。"
+    ]
   }
 ];
 

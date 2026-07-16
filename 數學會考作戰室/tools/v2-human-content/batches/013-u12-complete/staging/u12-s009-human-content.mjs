@@ -55,7 +55,8 @@ export const LECTURE = {
     "面積相加對應展開；把總面積寫成長乘寬對應因式分解。",
     "若各區共享高度，就可把高度提出，括號內是各區寬度的總和。",
     "二次三項式分解成兩個一次式時，可把兩因式解讀為整體長與寬。",
-    "圖若未按比例，不能靠視覺判斷哪邊較長，必須依標示式子。"
+    "圖若未按比例，不能靠視覺判斷哪邊較長，必須依標示式子。",
+    "面積多項式的因式分解可解讀為把總面積改寫成長乘寬：分割圖中共享的邊長就是公因式，括號則表示另一方向各段長度的和。若三項式分解成兩個一次因式，必須展開核對交叉項，不能只配首項與常數。得到尺寸後還要處理題目真正所求，例如周長或比較方案，並檢查每個邊長嚴格為正；面積用平方單位，邊長與周長則用長度單位。"
   ],
   "formalDefinitions": [
     {
@@ -114,37 +115,47 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "兩區面積 8x^2 與 12x，共同高 4x",
+      "prompt": "兩區面積為8x²與12x，共同高4x，求總寬。",
       "solutionSteps": [
-        "8x^2÷4x=2x。",
-        "12x÷4x=3。"
+        "第一區寬為8x²除以4x，得到2x。",
+        "第二區寬為12x除以4x，得到3。",
+        "兩區並排，總寬為2x＋3。"
       ],
-      "answer": "總寬 2x+3"
+      "answer": "總寬2x＋3",
+      "why": "共同高度4x是兩個面積項的公因式，提出後括號直接表示兩段寬的和；面積除以高度得到的是長度，不能把整個乘積當成寬。"
     },
     {
       "exampleId": "L2",
-      "prompt": "面積 x^2+7x+10",
+      "prompt": "面積x²＋7x＋10可對應哪些邊長？",
       "solutionSteps": [
-        "5·2=10，5+2=7。"
+        "列出常數十的正因數配對。",
+        "選取乘積為10且和為7的2與5。",
+        "寫成(x＋2)(x＋5)並展開回查。"
       ],
-      "answer": "邊長可為 x+5 與 x+2"
+      "answer": "邊長可為x＋2與x＋5",
+      "why": "常數因數的乘積只決定常數項，兩數的和還必須符合一次項係數；展開回查三個係數，才能確認尺寸乘積確實等於面積。"
     },
     {
       "exampleId": "L3",
-      "prompt": "面積 6x^2+13x+6",
+      "prompt": "面積6x²＋13x＋6可對應哪些整數係數邊長？",
       "solutionSteps": [
-        "交叉和 9x+4x=13x。"
+        "將首項配為3x與2x，常數配為2與3。",
+        "交叉項為9x與4x，合併為13x。",
+        "因此分解為(3x＋2)(2x＋3)。"
       ],
-      "answer": "邊長可為 3x+2 與 2x+3"
+      "answer": "邊長可為3x＋2與2x＋3",
+      "why": "非首一三項式必須同時配首項、常數與交叉項；交叉和九x加四x恰為十三x，展開後才與原面積逐項吻合。"
     },
     {
       "exampleId": "L4",
-      "prompt": "面積 2x^2-8 且一邊為 2(x-2)",
+      "prompt": "面積2x²－8且一邊為2(x－2)，求另一邊與可行範圍。",
       "solutionSteps": [
-        "2x^2-8=2(x-2)(x+2)。",
-        "需 x>2 才使已知邊長為正。"
+        "分解2x²－8＝2(x－2)(x＋2)。",
+        "對照已知因式，另一邊為x＋2。",
+        "由2(x－2)＞0得x＞2，此時另一邊也為正。"
       ],
-      "answer": "另一邊為 x+2"
+      "answer": "另一邊x＋2，且x＞2",
+      "why": "代數約分只能排除x等於二，但長方形還要求已知邊嚴格大於零，因此限制要加強為x大於二，並以公尺作邊長單位。"
     }
   ],
   "difficultyConnections": {
@@ -245,7 +256,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "5a3b37d167f445e1fd9c3878dd7461b3f2b368a51a4b71eb6d3bb3b56e739c6b"
+  "contentSha256": "d06dca55dbf9022f23e4ab88f812e5272f7e2fa2a4eb270bad11fa2dc7f547fc"
 };
 
 export const QUESTIONS = [
@@ -273,7 +284,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "6x(2x+3)=原面積。",
-    "explanation": "總面積除以高 6x，得到 2x+3。",
+    "explanation": "總面積除以高 6x，得到 2x+3。 長方形面積等於高乘寬，因此將12x²＋18x提出共同因式6x，可得6x(2x＋3)。題目已給高為6x，所以另一因式2x＋3就是寬，單位由平方公分除以公分成為公分。",
     "steps": [
       "提出 6x。",
       "逐項相除。",
@@ -301,7 +312,7 @@ export const QUESTIONS = [
         "reason": "把面積係數直接當長度。"
       }
     ],
-    "misconceptionTarget": "把面積項直接相加成邊長。",
+    "misconceptionTarget": "把面積項直接相加成邊長。 把兩個面積項直接相加當作邊長，沒有除以共同高度。",
     "prerequisiteCheck": "需會提公因式與面積公式。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "平方公分÷公分=公分；x>0 避免高為 0。",
@@ -320,7 +331,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8a317359524ae751e1ce4786e2055aea5bddd2ec973aebb78a40e1c0e1c70fc6"
+    "contentSha256": "c4a09e06ee242a65acaa0e8489f0ed825d35c6655a8726c7c4dc78fbf0877af4"
   },
   {
     "questionId": "u12-s009-v002",
@@ -346,7 +357,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "兩邊相乘回原面積。",
-    "explanation": "x²+6x+8=(x+2)(x+4)。",
+    "explanation": "x²+6x+8=(x+2)(x+4)。 要分解x²＋6x＋8，找乘積為8且和為6的兩數，得到2與4，所以面積可寫成(x＋2)(x＋4)。兩因式可解讀為邊長，乘回後三個係數都與原式一致。",
     "steps": [
       "找 8 的因數。",
       "選和為 6 的 2、4。",
@@ -374,7 +385,7 @@ export const QUESTIONS = [
         "reason": "2·4=8，2+4=6。"
       }
     ],
-    "misconceptionTarget": "選項有重複正解，將修正。",
+    "misconceptionTarget": "只看常數乘積為八，沒有同時檢查兩數相加必須等於六。",
     "prerequisiteCheck": "需會首一分解。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "邊長公尺，面積平方公尺。",
@@ -393,7 +404,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8942c3d0fb671e38e970602d9780e55a13a143253b74238704ba6da338fb7b02"
+    "contentSha256": "85cd39f1de7de3b29402d6f8a84fd1fe97d10496a2f9abea8150a3f87e834697"
   },
   {
     "questionId": "u12-s009-v003",
@@ -419,7 +430,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "因式形式直接顯示整體高與總寬。",
-    "explanation": "兩區面積 5x、15，相加為 5x+15=5(x+3)。",
+    "explanation": "兩區面積 5x、15，相加為 5x+15=5(x+3)。 左區面積是共同高5乘寬x，右區面積是5乘3，因此總面積為5x＋15。提出共同高度5後得到5(x＋3)，括號中的x＋3正是兩區並排後的總寬。",
     "steps": [
       "算各區面積。",
       "相加。",
@@ -447,7 +458,7 @@ export const QUESTIONS = [
         "reason": "改變了幾何尺寸。"
       }
     ],
-    "misconceptionTarget": "把高度只乘第一區。",
+    "misconceptionTarget": "把高度只乘第一區。 共同高度只乘第一區寬，遺漏右區的十五平方公分面積。",
     "prerequisiteCheck": "需知道長方形面積。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "5 與 x+3 為公分，乘積平方公分。",
@@ -466,7 +477,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b4a47aae9c85674b5712f84aa7ce178d2e32d975b892745821fac5233f5c1412"
+    "contentSha256": "fba9e6fc4a6369600fe43f9fbe781cbd972528fb1114f5fa79ea629ca8231188"
   },
   {
     "questionId": "u12-s009-v004",
@@ -492,7 +503,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "兩邊乘回面積式。",
-    "explanation": "6x²+13x+6=(3x+2)(2x+3)。",
+    "explanation": "6x²+13x+6=(3x+2)(2x+3)。 首項6x²可配成3x與2x，常數6配成2與3；交叉項為9x＋4x＝13x，所以(3x＋2)(2x＋3)展開後恰為6x²＋13x＋6，三個係數全部吻合，兩因式可作為長方形的兩個實際邊長。",
     "steps": [
       "配首項 3x、2x。",
       "配常數 2、3。",
@@ -520,7 +531,7 @@ export const QUESTIONS = [
         "reason": "展開中間項為 15x，且兩因式有共同 3 的配置不符。"
       }
     ],
-    "misconceptionTarget": "選項含重複正解，將修正。",
+    "misconceptionTarget": "只配出首項與常數，沒有核對兩個交叉乘積的和是否為十三x。",
     "prerequisiteCheck": "需會十字交乘。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "邊長公尺，面積平方公尺。",
@@ -539,7 +550,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "514e046b648cb3d3c0a720b32228b1e97ea29cf174bce56226afaaceac23a41f"
+    "contentSha256": "85f22d3e5ca5c640a3d4dfff73fb4ec93debdd8888dd87d96c8d8673f677035a"
   },
   {
     "questionId": "u12-s009-v005",
@@ -565,7 +576,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "x>2 使兩邊均正。",
-    "explanation": "把面積分解為已知邊 2(x-2) 乘 x+2。",
+    "explanation": "把面積分解為已知邊 2(x-2) 乘 x+2。 先提出公因式2，得2(x²－4)，再用平方差分解為2(x－2)(x＋2)。已知一邊是2(x－2)，因此另一邊為x＋2公尺；實際長方形還需x大於2。",
     "steps": [
       "先提 2。",
       "套平方差。",
@@ -593,7 +604,7 @@ export const QUESTIONS = [
         "reason": "未形成正確乘積。"
       }
     ],
-    "misconceptionTarget": "平方差或係數 2 遺失。",
+    "misconceptionTarget": "平方差或係數 2 遺失。 套平方差時把x加二因式漏掉，或把外面的公因式二遺失。",
     "prerequisiteCheck": "需會提公因式與平方差。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "平方公尺除以公尺得公尺；無近似。",
@@ -612,7 +623,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "0a53ef7e7d4a308e72650393f0a395e51cb9bf167f978a3bc2377489d807df92"
+    "contentSha256": "00c1ebbd6cf24f8c1ba4d6b7e205c8192be0d246974508b50af426a04d25d36e"
   },
   {
     "questionId": "u12-s009-v006",
@@ -638,7 +649,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "反向分解也可由 3+7=10、3·7=21 確認。",
-    "explanation": "(x+3)(x+7)=x²+10x+21。",
+    "explanation": "(x+3)(x+7)=x²+10x+21。 長方形面積為兩邊相乘：(x＋3)(x＋7)＝x²＋7x＋3x＋21＝x²＋10x＋21。一次項係數來自3與7的和，常數21來自兩常數的乘積，最後答案應使用面積單位平方公尺。",
     "steps": [
       "展開四項。",
       "合併一次項。",
@@ -666,7 +677,7 @@ export const QUESTIONS = [
         "reason": "交叉項 7x+3x=10x，常數 21。"
       }
     ],
-    "misconceptionTarget": "把常數和與積顛倒。",
+    "misconceptionTarget": "把常數和與積顛倒。 把三與七的和、積對調，造成一次項係數或常數項錯置。",
     "prerequisiteCheck": "需會展開。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "邊長公尺相乘為平方公尺。",
@@ -685,7 +696,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d93e9e1c14e83dffc35a1f65e9cdfe525e2a7157e7daf3489883fa6fd06877b9"
+    "contentSha256": "60a658dee3953e247d752b86e6b96575326dcd9577dcf227ff54896492afe1b5"
   },
   {
     "questionId": "u12-s009-v007",
@@ -711,7 +722,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "周長單位為公尺，不是平方公尺。",
-    "explanation": "20 因數 4、5，和 9；邊長 x+4、x+5。",
+    "explanation": "20 因數 4、5，和 9；邊長 x+4、x+5。 面積式分解為(x＋4)(x＋5)，所以兩邊長為x＋4與x＋5。周長是兩倍的長寬和，故2[(x＋4)＋(x＋5)]＝2(2x＋9)＝4x＋18公尺；結果是長度而不是面積，單位應使用公尺。",
     "steps": [
       "分解面積。",
       "求長寬和 2x+9。",
@@ -739,7 +750,7 @@ export const QUESTIONS = [
         "reason": "把面積常數直接放入周長。"
       }
     ],
-    "misconceptionTarget": "分解後停在邊長或漏周長倍數。",
+    "misconceptionTarget": "分解後停在邊長或漏周長倍數。 分解出兩個邊長後便停止，或求周長時忘記長寬和還要乘二。",
     "prerequisiteCheck": "需會面積分解與周長公式。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "面積平方公尺，邊長與周長公尺。",
@@ -758,7 +769,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4ffb4955b26a12167b8419c184474f1b158971d00775efac57bb102d44ec7caa"
+    "contentSha256": "2d4f45f657cf476d7acfa4d7036573b2b80e9444e3635dece607c0761d6694c4"
   },
   {
     "questionId": "u12-s009-v008",
@@ -784,7 +795,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "x>4 同時滿足兩條件。",
-    "explanation": "實際長方形邊長必須嚴格大於 0。",
+    "explanation": "實際長方形邊長必須嚴格大於 0。 兩個邊長因式是3x與x－4。實際長方形要求兩邊都嚴格大於零：3x＞0給x＞0，x－4＞0給x＞4，取共同範圍後得到x＞4，零邊長不可接受。",
     "steps": [
       "列 3x>0。",
       "列 x-4>0。",
@@ -812,7 +823,7 @@ export const QUESTIONS = [
         "reason": "3x 為負。"
       }
     ],
-    "misconceptionTarget": "只檢查一個因式，或允許零邊長。",
+    "misconceptionTarget": "只檢查一個因式，或允許零邊長。 只檢查三x為正，或把x等於四造成的零邊長也列為可行。",
     "prerequisiteCheck": "需理解正長度與簡單不等式。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "邊長公尺；不涉及近似。",
@@ -831,7 +842,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "265d76ed860eede6b6782fa854f6fa41b6f3055b80ba0839ba20853120ebcca1"
+    "contentSha256": "e98aa6623fb112cd544a79e9e44fc9ad9add5e6ad90575f6ba20820c9fae10e3"
   },
   {
     "questionId": "u12-s009-v009",
@@ -857,7 +868,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "只有甲的尺寸乘積符合面積。",
-    "explanation": "甲=(2x+1)(x+3)=2x²+7x+3；乙=2x²+5x+3。",
+    "explanation": "甲=(2x+1)(x+3)=2x²+7x+3；乙=2x²+5x+3。 甲展開為2x²＋6x＋x＋3＝2x²＋7x＋3，完全符合面積；乙展開為2x²＋2x＋3x＋3＝2x²＋5x＋3，一次項係數不符，所以只有甲的尺寸標示正確，不能只核對首項與常數。",
     "steps": [
       "展開甲。",
       "展開乙。",
@@ -885,7 +896,7 @@ export const QUESTIONS = [
         "reason": "甲完全吻合。"
       }
     ],
-    "misconceptionTarget": "只看首項與常數相同就判兩者都對。",
+    "misconceptionTarget": "只看首項與常數相同就判兩者都對。 只比較二次項與常數項相同，就誤認兩組尺寸都符合面積。",
     "prerequisiteCheck": "需會展開驗證。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "邊長公尺、面積平方公尺。",
@@ -904,7 +915,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ab7b3cda472ff2f253d9cd503466a2845160f724f6639a0f7df3b3f792d054e6"
+    "contentSha256": "7cad28ace18a1759d1e06abc972962a55263150fd70b602916387a4dfa8016c8"
   },
   {
     "questionId": "u12-s009-v010",
@@ -930,7 +941,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "圖示共享高，使公因式有明確幾何意義。",
-    "explanation": "8x²+20x=4x(2x+5)，括號是總寬。",
+    "explanation": "8x²+20x=4x(2x+5)，括號是總寬。 總面積8x²＋20x可提出共同高度4x，得到4x(2x＋5)。依面積等於高乘寬，括號中的2x＋5就是花圃總寬；面積單位除以高度公尺後，答案單位為公尺。",
     "steps": [
       "找共同高因式。",
       "逐區求寬。",
@@ -958,7 +969,7 @@ export const QUESTIONS = [
         "reason": "8x²÷4x=2x，20x÷4x=5。"
       }
     ],
-    "misconceptionTarget": "把總面積乘積當寬。",
+    "misconceptionTarget": "把總面積乘積當寬。 把整個面積乘積4x(2x＋5)直接當成寬，混淆面積與長度。",
     "prerequisiteCheck": "需會面積公式。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "平方公尺÷公尺=公尺。",
@@ -977,7 +988,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "0fd71d9c6897bd601c3bb6ddf5c71e9e62769348e7f27962f4cf88715d618ea7"
+    "contentSha256": "69b85d8ec051fb0b54b539087111fad2a7222e66a01196bfa8c882fc710b06f0"
   },
   {
     "questionId": "u12-s009-v011",
@@ -1003,7 +1014,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "代數與規格雙重確認。",
-    "explanation": "面積分解為 (x+5)(x+7)，規格差值也吻合。",
+    "explanation": "面積分解為 (x+5)(x+7)，規格差值也吻合。 常數35的因數配對中，5與7的和為12，因此面積分解為(x＋5)(x＋7)。兩個邊長相差2公尺，也符合規格；面積條件與邊差條件必須同時通過。",
     "steps": [
       "列 35 因數配對。",
       "找和為 12 的 5、7。",
@@ -1031,7 +1042,7 @@ export const QUESTIONS = [
         "reason": "面積常數 36，差 0。"
       }
     ],
-    "misconceptionTarget": "只滿足面積或只滿足邊差。",
+    "misconceptionTarget": "只滿足面積或只滿足邊差。 只找到乘積為三十五的因數，沒有再檢查和為十二及邊長差為二。",
     "prerequisiteCheck": "需會首一分解。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "邊長公尺，面積平方公尺。",
@@ -1050,7 +1061,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "522c2d5c26961cb913e33f9de386e8fabbe9342af40dc477247d9da4c7912e05"
+    "contentSha256": "6c5b1f6754f9f9e547ba0455ee346d5f462a3745b43a10732764e1f32abe6313"
   },
   {
     "questionId": "u12-s009-v012",
@@ -1076,7 +1087,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "兩因式乘回原面積。",
-    "explanation": "兩平方相減，取平方根 2x、5。",
+    "explanation": "兩平方相減，取平方根 2x、5。 面積4x²－25可看成(2x)²－5²，依平方差公式分解為(2x＋5)(2x－5)。兩因式相乘會消去一次項並回到原面積；若作實際邊長，還需2x－5＞0。",
     "steps": [
       "辨認 (2x)²-5²。",
       "套平方差。",
@@ -1104,7 +1115,7 @@ export const QUESTIONS = [
         "reason": "展開會出現一次項且首項係數為 4。"
       }
     ],
-    "misconceptionTarget": "把平方差當差的平方。",
+    "misconceptionTarget": "把平方差當差的平方。 把平方差誤寫成兩個相同因式，或將四x平方的平方根看成四x。",
     "prerequisiteCheck": "需會平方差。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "邊長公尺相乘為平方公尺。",
@@ -1123,7 +1134,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "909a02fa77d6a527aace6e17920ce5b691e8517941e05fbfac537a1ed7eb5eaf"
+    "contentSha256": "29731c4baf67b0477fdc4d7807561329cf240f6032df812daa2743d077373faf"
   }
 ];
 
@@ -1146,16 +1157,17 @@ export const CONSTRUCTED_RESPONSES = [
       "正確標示公尺與平方公尺。"
     ],
     "fullCreditSolution": [
-      "12x²+30x=6x(2x+5)，所以寬為 2x+5 公尺。",
-      "周長=2[6x+(2x+5)]=16x+10 公尺。",
-      "x>0 使高 6x 與寬 2x+5 都為正。"
+      "將總面積提出已知高度：12x²＋30x＝6x(2x＋5)，因此寬為2x＋5公尺。",
+      "周長為兩倍的高寬和：2[6x＋(2x＋5)]＝2(8x＋5)＝16x＋10公尺。",
+      "因x＞0，高6x為正且寬2x＋5也為正；面積使用平方公尺，寬、高與周長使用公尺。"
     ],
     "alternativeSolutions": [
       "可先分別以面積兩項除以 6x 求寬 2x+5，再求周長。"
     ],
     "reasoningSteps": [
-      "面積除以高得到長度。",
-      "周長不是面積，單位回到公尺。"
+      "用面積除以已知高度，辨認括號中的另一因式為寬。",
+      "將高與寬代入周長公式2(長＋寬)，再合併同類項。",
+      "檢查x的正值條件與面積、長度兩種單位是否正確。"
     ],
     "rubric": [
       {
@@ -1186,8 +1198,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "answerOnlyPolicy": "只給兩個答案無過程最高 2 分。",
     "commonErrors": [
-      "周長只算高加寬。",
-      "寬仍寫平方公尺。"
+      "周長只算高加寬，忘記相對兩邊所以沒有乘二。",
+      "把由面積求得的寬仍寫成平方公尺，混淆面積與長度單位。"
     ],
     "independentReview": {
       "derivedResult": "寬 2x+5 公尺，周長 16x+10 公尺。",
@@ -1197,7 +1209,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "7e212988c9768ab2fa943e366c2314705a6642d0e73683639c91245bf130f012"
+    "contentSha256": "81d6b59758a6f4b822f9e6787b69b972f069f8c891fa3545c7d74ae7967b6178"
   },
   {
     "questionId": "u12-s009-cr002",
@@ -1217,15 +1229,17 @@ export const CONSTRUCTED_RESPONSES = [
       "使兩邊都大於 0。"
     ],
     "fullCreditSolution": [
-      "2x²-18=2(x²-9)=2(x-3)(x+3)。",
-      "已知一邊 2(x-3)，另一邊為 x+3 公尺。",
-      "2(x-3)>0 得 x>3；此時 x+3>0，所以可行範圍為 x>3。"
+      "先分解面積：2x²－18＝2(x²－9)＝2(x－3)(x＋3)。",
+      "對照已知一邊2(x－3)，另一邊為x＋3公尺；將兩邊相乘可回到原面積。",
+      "實際邊長都要大於零。2(x－3)＞0給x＞3，此時x＋3也為正，所以可行範圍是x＞3。"
     ],
     "alternativeSolutions": [
       "可先以面積除以 2(x-3)，在 x≠3 下約分得到 x+3，再把長度條件加強為 x>3。"
     ],
     "reasoningSteps": [
-      "約分條件與實際正長度條件不同：代數需 x≠3，幾何需 x>3。"
+      "提出公因式二，再以平方差分解剩下的x平方減九。",
+      "對照已知因式並約去後，確定另一邊為x加三。",
+      "分別檢查兩個邊長嚴格為正，取交集得到可行範圍。"
     ],
     "rubric": [
       {
@@ -1256,8 +1270,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "answerOnlyPolicy": "只答 x+3 且 x>3，無過程最高 2 分。",
     "commonErrors": [
-      "只檢查另一邊 x+3 正，漏已知邊。",
-      "把 x=3 納入。"
+      "只寫代數約分條件x不等於三，沒有加上實際邊長必須為正的限制。",
+      "只檢查另一邊x加三為正，漏掉已知邊二乘x減三也要為正。"
     ],
     "independentReview": {
       "derivedResult": "另一邊 x+3 公尺，可行 x>3。",
@@ -1267,7 +1281,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5e295b92602d6a491ac6ed81f4bcdfbcc861a19fe400601c7e669c8338d62ea7"
+    "contentSha256": "de18a046c5441fb969a3c5240832d76bc663c7d60dd89a4bfc72f342c76a0fed"
   }
 ];
 
@@ -1276,7 +1290,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v001",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "8a317359524ae751e1ce4786e2055aea5bddd2ec973aebb78a40e1c0e1c70fc6",
+    "contentSha256": "c4a09e06ee242a65acaa0e8489f0ed825d35c6655a8726c7c4dc78fbf0877af4",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "6x(2x+3)=原面積。",
     "derivedAnswer": "2x+3 公分",
@@ -1310,7 +1324,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v002",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "8942c3d0fb671e38e970602d9780e55a13a143253b74238704ba6da338fb7b02",
+    "contentSha256": "85cd39f1de7de3b29402d6f8a84fd1fe97d10496a2f9abea8150a3f87e834697",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "兩邊相乘回原面積。",
     "derivedAnswer": "x+2 與 x+4 公尺",
@@ -1344,7 +1358,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v003",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "b4a47aae9c85674b5712f84aa7ce178d2e32d975b892745821fac5233f5c1412",
+    "contentSha256": "fba9e6fc4a6369600fe43f9fbe781cbd972528fb1114f5fa79ea629ca8231188",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "因式形式直接顯示整體高與總寬。",
     "derivedAnswer": "5(x+3) 平方公分",
@@ -1378,7 +1392,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v004",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "514e046b648cb3d3c0a720b32228b1e97ea29cf174bce56226afaaceac23a41f",
+    "contentSha256": "85f22d3e5ca5c640a3d4dfff73fb4ec93debdd8888dd87d96c8d8673f677035a",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "兩邊乘回面積式。",
     "derivedAnswer": "3x+2 與 2x+3 公尺",
@@ -1412,7 +1426,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v005",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "0a53ef7e7d4a308e72650393f0a395e51cb9bf167f978a3bc2377489d807df92",
+    "contentSha256": "00c1ebbd6cf24f8c1ba4d6b7e205c8192be0d246974508b50af426a04d25d36e",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "x>2 使兩邊均正。",
     "derivedAnswer": "x+2 公尺",
@@ -1446,7 +1460,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v006",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "d93e9e1c14e83dffc35a1f65e9cdfe525e2a7157e7daf3489883fa6fd06877b9",
+    "contentSha256": "60a658dee3953e247d752b86e6b96575326dcd9577dcf227ff54896492afe1b5",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "反向分解也可由 3+7=10、3·7=21 確認。",
     "derivedAnswer": "x²+10x+21 平方公尺",
@@ -1480,7 +1494,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v007",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "4ffb4955b26a12167b8419c184474f1b158971d00775efac57bb102d44ec7caa",
+    "contentSha256": "2d4f45f657cf476d7acfa4d7036573b2b80e9444e3635dece607c0761d6694c4",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "周長單位為公尺，不是平方公尺。",
     "derivedAnswer": "4x+18 公尺",
@@ -1514,7 +1528,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v008",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "265d76ed860eede6b6782fa854f6fa41b6f3055b80ba0839ba20853120ebcca1",
+    "contentSha256": "e98aa6623fb112cd544a79e9e44fc9ad9add5e6ad90575f6ba20820c9fae10e3",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "x>4 同時滿足兩條件。",
     "derivedAnswer": "x>4",
@@ -1548,7 +1562,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v009",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "ab7b3cda472ff2f253d9cd503466a2845160f724f6639a0f7df3b3f792d054e6",
+    "contentSha256": "7cad28ace18a1759d1e06abc972962a55263150fd70b602916387a4dfa8016c8",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "只有甲的尺寸乘積符合面積。",
     "derivedAnswer": "只有甲正確",
@@ -1582,7 +1596,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v010",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "0fd71d9c6897bd601c3bb6ddf5c71e9e62769348e7f27962f4cf88715d618ea7",
+    "contentSha256": "69b85d8ec051fb0b54b539087111fad2a7222e66a01196bfa8c882fc710b06f0",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "圖示共享高，使公因式有明確幾何意義。",
     "derivedAnswer": "2x+5 公尺",
@@ -1616,7 +1630,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v011",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "522c2d5c26961cb913e33f9de386e8fabbe9342af40dc477247d9da4c7912e05",
+    "contentSha256": "6c5b1f6754f9f9e547ba0455ee346d5f462a3745b43a10732764e1f32abe6313",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "代數與規格雙重確認。",
     "derivedAnswer": "x+5 與 x+7 公尺",
@@ -1650,7 +1664,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s009-v012",
     "unitId": "u12",
     "skillId": "factoring-word-area",
-    "contentSha256": "909a02fa77d6a527aace6e17920ce5b691e8517941e05fbfac537a1ed7eb5eaf",
+    "contentSha256": "29731c4baf67b0477fdc4d7807561329cf240f6032df812daa2743d077373faf",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "兩因式乘回原面積。",
     "derivedAnswer": "2x+5 與 2x-5 公尺",

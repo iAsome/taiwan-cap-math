@@ -688,11 +688,13 @@ body.dark .paper-history-empty { background: #15342f; }
 .paper-view-note { color: var(--muted); font-size: .82rem; margin-top: 10px; line-height: 1.6; }
 .archive-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
-/* Text-only visual safety: no student-facing SVG or question images. */
-.paper .question img,
-.lecture-example img {
-  display: none !important;
-}
+.exam-figure,
+.lecture-figure { margin: 18px 0; }
+.exam-figure img,
+.lecture-figure img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.exam-figure figcaption,
+.lecture-figure figcaption { display: grid; gap: 4px; margin-top: 8px; color: var(--muted); line-height: 1.6; }
+.figure-description { font-size: .9rem; }
 
 .text-only-notice {
   display: flex;

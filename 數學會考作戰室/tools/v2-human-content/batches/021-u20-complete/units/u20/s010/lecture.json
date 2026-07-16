@@ -107,6 +107,11 @@
       "step": 4,
       "instruction": "用位置分類或圓周角反查。",
       "check": "結論是否超出已知？"
+    },
+    {
+      "step": 5,
+      "instruction": "把所得半徑、等距或角型結論代回原條件驗算。",
+      "check": "直徑應為半徑兩倍，三段頂點距離也應一致。"
     }
   ],
   "workedExamples": [
@@ -114,19 +119,23 @@
       "exampleId": "L1",
       "prompt": "直角三角形斜邊18公分。",
       "solutionSteps": [
-        "斜邊是直徑。",
-        "R=18÷2。"
+        "確認18公分的是斜邊。",
+        "直角三角形斜邊是外接圓直徑。",
+        "R=18÷2=9。"
       ],
-      "answer": "外接圓半徑9公分。"
+      "answer": "外接圓半徑9公分。",
+      "why": "直角三角形外心在斜邊中點，所以斜邊跨過圓心而成為直徑；半徑只取直徑一半，故18除以2得9公分，回乘2也會恢復斜邊18公分。"
     },
     {
       "exampleId": "L2",
-      "prompt": "OA＝OB且OB＝OC。",
+      "prompt": "OA＝OB且OB＝OC，A、B、C不共線。",
       "solutionSteps": [
         "遞移得OA＝OC。",
-        "O到三頂點等距。"
+        "O到三頂點等距。",
+        "兩條垂直平分線交點唯一。"
       ],
-      "answer": "O為外心。"
+      "answer": "O為外心。",
+      "why": "兩個等式經遞移形成OA＝OB＝OC，表示A、B、C同在以O為圓心的圓上；不共線又排除退化情形，所以O是唯一外心，第三個等距式不是額外假設。"
     }
   ],
   "commonMistakes": [
@@ -144,6 +153,11 @@
       "mistake": "外心在外就說無解。",
       "why": "位置不影響等距性。",
       "correction": "仍以O為圓心畫外接圓。"
+    },
+    {
+      "mistake": "由OA＝OB便直接宣稱O是三角形外心。",
+      "why": "一組端點等距只把O限制在線段AB的垂直平分線上，尚未連結第三個頂點C。",
+      "correction": "再取得OA＝OC或OB＝OC，才能推出O到三頂點等距。"
     }
   ],
   "selfCheck": [
@@ -199,5 +213,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "b2445a813bdfe85bedc9dce3060130ef283d966c9f139cf2c3e1bcadf960f9ba"
+  "contentSha256": "d4a4b25c5eb8cde909957746345d480ca96e1aa35cd66a4fb3e4f5d9b3fb8b25"
 }

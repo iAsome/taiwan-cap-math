@@ -52,10 +52,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "p%=p/100。",
-    "八折表示付80%，不是減少8%。",
-    "增加p%後乘1+p%，減少p%後乘1-p%。",
-    "連續變動的基準會更新，因此倍率相乘，百分點不能直接相加減。"
+    "百分率 p% 表示 p/100。折數以十分制表示，八折就是原價的 80%；成數也可換成百分率，例如一成五等於 15%。",
+    "已知原量求增加或減少後的新量，可把變動轉成倍率：增加 p% 乘 1+p%，減少 p% 乘 1−p%。已知新量反求原量則要除以倍率。",
+    "連續折扣、漲價或加稅的基準會隨每一步更新，因此應依題目順序相乘倍率，不能把百分點直接相加減。定額折價券則要在指定時點做金額加減。",
+    "完成後應比較答案與原價的大小，並把總倍率轉回百分率解釋。例如總倍率 1.02 表示最後是原價的 102%，也就是增加 2%。"
   ],
   "formalDefinitions": [
     {
@@ -118,40 +118,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "1500元打七折。",
+      "prompt": "一件 1500 元商品打七折，售價是多少？",
       "solutionSteps": [
-        "七折=0.7。",
-        "1500×0.7。"
+        "把七折寫成原價的 70%，倍率為 0.7。",
+        "計算 1500×0.7＝1050 元。",
+        "另算折掉的 30% 為 450 元，以 1500－450 驗得 1050 元。"
       ],
-      "answer": "1050元。"
+      "answer": "1050 元。",
+      "why": "七折表示支付原價的 70%，倍率為 0.7，所以售價是 1500×0.7=1050 元。也可先算折掉 30% 為 450 元，再以 1500−450 驗算。折後價低於原價，符合七折情境。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "售價680元為八折價。",
+      "prompt": "某商品八折售價為 680 元，原價是多少？",
       "solutionSteps": [
-        "原價×0.8=680。",
-        "680÷0.8。"
+        "八折價是原價的 80%，設原價 x 元，列 0.8x＝680。",
+        "兩邊同除以 0.8，求得 x＝850 元。",
+        "以 850×0.8＝680 代回驗算折後價。"
       ],
-      "answer": "850元。"
+      "answer": "850 元。",
+      "why": "八折價等於原價的 80%，所以 680=原價×0.8。已知折後價反求原價要除以倍率，680÷0.8=850 元；代回 850×0.8=680。折後價比原價少一百七十元，正是原價的兩成。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "先漲10%再降10%。",
+      "prompt": "價格先漲 10% 再降 10%，最後與原價相比如何？",
       "solutionSteps": [
-        "倍率1.1×0.9=0.99。",
-        "不是回到原價。"
+        "先漲 10% 的倍率為 1.1，再降 10% 的倍率為 0.9。",
+        "依順序相乘 1.1×0.9＝0.99。",
+        "把 0.99 轉為原價的 99%，判定比原價少 1%。"
       ],
-      "answer": "比原價少1%。"
+      "answer": "比原價少 1%。",
+      "why": "兩次變動的基準不同，要相乘倍率 1.1×0.9=0.99。最後是原價的 99%，因此少 1%；直接用加十個百分點再減十個百分點會誤判為相同。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "九折後加5%稅。",
+      "prompt": "商品九折後再加 5% 稅，實付是原價的多少？",
       "solutionSteps": [
-        "總倍率0.9×1.05。",
-        "=0.945。"
+        "九折倍率為 0.9，加 5% 稅的倍率為 1.05。",
+        "按題目順序計算 0.9×1.05＝0.945。",
+        "將總倍率轉成百分率，得到實付為原價的 94.5%。"
       ],
-      "answer": "實付原價94.5%。"
+      "answer": "原價的 94.5%。",
+      "why": "九折倍率是 0.9，加稅倍率是 1.05，依順序相乘得 0.9×1.05=0.945，所以實付為原價的 94.5%；稅率作用在折後價。總倍率小於一，表示實付仍低於原價。"
     }
   ],
   "commonMistakes": [
@@ -237,7 +241,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "91aa06921655eb57e41b6754ee13af8f250aab680ae874cd221957c37eb9e7c3",
+  "contentSha256": "91777573af1b1196ef9c32321a7d690b1a6b13353e59d77b5a8dd7e54e94f728",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -261,10 +265,11 @@ export const QUESTIONS = [
       "3/4"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：25%=25/100；約分得1/4。所以答案是「1/4」。",
+    "explanation": "百分率表示以 100 為分母的分數，所以 25%=25/100。分子、分母同除以最大公因數 25，得到 1/4；反向計算 1÷4=0.25，也就是 25%。分子與分母已互質，因此四分之一就是最簡分數。",
     "steps": [
-      "25%=25/100",
-      "約分得1/4"
+      "將 25% 寫成 25/100。",
+      "分子、分母同除以 25，約成 1/4。",
+      "把 1/4 化成 0.25 驗證等於 25%。"
     ],
     "optionAnalysis": [
       {
@@ -288,7 +293,7 @@ export const QUESTIONS = [
         "reason": "3/4是75%。"
       }
     ],
-    "commonMistake": "把25%寫成25/10。",
+    "commonMistake": "把百分號誤認為除以十，將百分之二十五錯寫成二十五分之十。",
     "concept": "百分率表示以100為分母。",
     "tags": [
       "數與量",
@@ -303,7 +308,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c25aba97823b9d4551bcf164326b09b0c24cb0f59fe602a745ad792cd1738d39",
+    "contentSha256": "90708e754ea2fe642e3a6230c03b265c7954d85d2d2c49f1bef805e8a4f18d0d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -325,10 +330,11 @@ export const QUESTIONS = [
       "1000 元"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：八折=原價的80%；800×0.8=640。所以答案是「640 元」。",
+    "explanation": "八折表示售價是原價的 80%，不是減少 8%。因此售價為 800×0.8=640 元；也可先算折掉 20% 為 160 元，再以 800−160 得到 640 元。兩種算法都以原價八百元為相同基準，結果一致。",
     "steps": [
-      "八折=原價的80%",
-      "800×0.8=640"
+      "把八折轉成倍率 0.8。",
+      "計算 800×0.8=640。",
+      "以原價減去 20% 的折扣額驗算，仍得 640 元。"
     ],
     "optionAnalysis": [
       {
@@ -352,7 +358,7 @@ export const QUESTIONS = [
         "reason": "售價不會高於原價。"
       }
     ],
-    "commonMistake": "把八折當成減少8%。",
+    "commonMistake": "把八折讀成只減少百分之八，使用零點九二的錯誤倍率。",
     "concept": "八折表示付原價的80%。",
     "tags": [
       "數與量",
@@ -367,7 +373,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8bba34b4a079e92d692ed703dd36aec88bda77c01b1d73015afe840d4dbcdf51",
+    "contentSha256": "a3a8178b14a2dd24f26dc19d86d899df0b3a5824eaa8a83ed9318562038448fc",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -389,10 +395,11 @@ export const QUESTIONS = [
       "135"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：設原數x，0.3x=45；x=45÷0.3=150。所以答案是「150」。",
+    "explanation": "設原數為 x，題意是 x 的 30% 等於 45，因此 0.3x=45。已知部分反求整體要除以分率，x=45÷0.3=150；驗算 150×30%=45。因為三成小於全部，原數一百五十也應大於已知部分四十五。",
     "steps": [
-      "設原數x，0.3x=45",
-      "x=45÷0.3=150"
+      "設原數為 x，列式 0.3x=45。",
+      "兩邊除以 0.3，得到 x=150。",
+      "代回計算 150×0.3=45，確認符合題意。"
     ],
     "optionAnalysis": [
       {
@@ -416,7 +423,7 @@ export const QUESTIONS = [
         "reason": "應以45÷0.3反求原數；135不是此除法的結果。"
       }
     ],
-    "commonMistake": "已知部分求整體時又乘百分率。",
+    "commonMistake": "已知百分之三十所對應的部分量後仍再乘零點三，沒有用除法反求整體。",
     "concept": "整體=部分÷百分率。",
     "tags": [
       "數與量",
@@ -431,7 +438,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e413a775e38148812c9c3336af76d92f5a21d93a7cbbda0a0111dc95fef23c90",
+    "contentSha256": "01c949a8b0772587f8618c9ee14e758ac7f0e178ca0de8c57f5101fb6a9b24e3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -453,10 +460,11 @@ export const QUESTIONS = [
       "980 元"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：1200×0.9=1080；1080-100=980。所以答案是「980 元」。",
+    "explanation": "優惠有明確順序，先打九折得 1200×0.9=1080 元，再從折後價扣 100 元，得到 1080−100=980 元。若先減 100 再打折，折扣基準會改變。原價先少一百二十元，再少一百元，合計也可核對實付金額。",
     "steps": [
-      "1200×0.9=1080",
-      "1080-100=980"
+      "先依九折計算 1200×0.9=1080 元。",
+      "再使用定額折價，1080−100=980 元。",
+      "依題目順序檢查兩個優惠都已套用。"
     ],
     "optionAnalysis": [
       {
@@ -480,7 +488,7 @@ export const QUESTIONS = [
         "reason": "980元正確。"
       }
     ],
-    "commonMistake": "把100元先減再打折，改變題目順序。",
+    "commonMistake": "先從原價扣一百元再打九折，顛倒題目指定的優惠順序而改變結果。",
     "concept": "連續優惠依題意順序計算。",
     "tags": [
       "數與量",
@@ -495,7 +503,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1e794f6c22ba06e2d71a4754a6a4de019b4855393d767378acdbab20f45114e6",
+    "contentSha256": "4f8b7dcd555c83a9d342518e3d8d6947ef61388f4249624676df274dd45939c9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -517,10 +525,11 @@ export const QUESTIONS = [
       "625 元"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：漲價20%表示新價為原價120%；500×1.2=600。所以答案是「600 元」。",
+    "explanation": "漲價 20% 表示新價格包含原來的 100% 和增加的 20%，總倍率為 1.2。計算 500×1.2=600 元；增加額 100 元也等於 500×20%。把原價五百元與增加額一百元相加，同樣得到六百元。",
     "steps": [
-      "漲價20%表示新價為原價120%",
-      "500×1.2=600"
+      "把漲價 20% 轉成新價倍率 1.2。",
+      "計算 500×1.2=600 元。",
+      "以增加額 500×0.2=100 元驗算。"
     ],
     "optionAnalysis": [
       {
@@ -544,7 +553,7 @@ export const QUESTIONS = [
         "reason": "錯用除法。"
       }
     ],
-    "commonMistake": "把20%當成20元。",
+    "commonMistake": "把百分之二十當成固定二十元，只在原價上加二十而忽略百分率基準。",
     "concept": "增加p%後為原量×(1+p)。",
     "tags": [
       "數與量",
@@ -559,7 +568,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "aef636ca2d93bf894214a642f6635bb92812df6e802ff18758b468874525be85",
+    "contentSha256": "f80310bb55ea64a65512f8bdf109182f3c71342495f60c0ab0533d87e0f127f3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -581,10 +590,11 @@ export const QUESTIONS = [
       "1000 元"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：720=原價×0.8；原價=720÷0.8=900。所以答案是「900 元」。",
+    "explanation": "八折售價等於原價的 80%，所以 720=原價×0.8。反求原價要用 720÷0.8=900 元；代回 900×0.8=720，可確認不是再把售價乘 0.8。折後價小於原價，七百二十小於九百也符合情境。",
     "steps": [
-      "720=原價×0.8",
-      "原價=720÷0.8=900"
+      "依八折關係列式 720=原價×0.8。",
+      "用 720÷0.8 求得原價 900 元。",
+      "代回 900×0.8=720 驗證。"
     ],
     "optionAnalysis": [
       {
@@ -608,7 +618,7 @@ export const QUESTIONS = [
         "reason": "估值過高。"
       }
     ],
-    "commonMistake": "看到八折就直接乘0.8，忽略已知的是售價。",
+    "commonMistake": "看到八折就把已知售價七百二十再乘零點八，混淆原價與折後價。",
     "concept": "已知折後價求原價要除以折數。",
     "tags": [
       "數與量",
@@ -623,7 +633,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "28f63d7320efc8f5f949209eaf72bc4b10d915295dfba1a23584d24beb041f75",
+    "contentSha256": "1ff965dde26b5b1e24d36d754961910a09b9a9507ee6682fb64e37ec87f79f46",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -645,10 +655,11 @@ export const QUESTIONS = [
       "增加20%"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：總倍率1.25×0.8=1；最後等於原價。所以答案是「相同」。",
+    "explanation": "先漲價 25% 的倍率是 1.25，再打八折的倍率是 0.8。連續變動應相乘，1.25×0.8=1，所以最後價格等於原價；不能直接用 25%−20%。後一次折扣是對漲價後金額計算，兩個百分率的基準並不相同。",
     "steps": [
-      "總倍率1.25×0.8=1",
-      "最後等於原價"
+      "把漲價 25% 寫成倍率 1.25。",
+      "把八折寫成倍率 0.8，計算 1.25×0.8=1。",
+      "總倍率為 1，判斷最後與原價相同。"
     ],
     "optionAnalysis": [
       {
@@ -672,7 +683,7 @@ export const QUESTIONS = [
         "reason": "不能只看八折。"
       }
     ],
-    "commonMistake": "把25%-20%=5%作為結果。",
+    "commonMistake": "把百分之二十五與八折所減少的百分之二十直接相減，忽略兩次基準不同。",
     "concept": "連續百分率要乘倍率，不能直接加減百分點。",
     "tags": [
       "數與量",
@@ -687,7 +698,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "eafe79e11df49fe152579771df07fb4e09542f212ffc5fe0b4a60f88c594d06a",
+    "contentSha256": "19a509936d581ff689d8479df9649ac02971bbb660bd17b5f3aa3d17e883f357",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -709,10 +720,11 @@ export const QUESTIONS = [
       "78.75%"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：折後倍率0.75；加稅倍率1.05，總倍率0.7875=78.75%。所以答案是「78.75%」。",
+    "explanation": "七五折使價格成為原價的 0.75，營業稅以折後價為基準再乘 1.05。總倍率 0.75×1.05=0.7875，因此實付為原價的 78.75%，不是直接加五個百分點。實付仍低於原價，和倍率小於一相符。",
     "steps": [
-      "折後倍率0.75",
-      "加稅倍率1.05，總倍率0.7875=78.75%"
+      "把七五折轉成倍率 0.75。",
+      "將加稅 5% 轉成倍率 1.05。",
+      "相乘得 0.7875，換成百分率 78.75%。"
     ],
     "optionAnalysis": [
       {
@@ -736,7 +748,7 @@ export const QUESTIONS = [
         "reason": "78.75%正確。"
       }
     ],
-    "commonMistake": "把加稅5%直接加5個百分點。",
+    "commonMistake": "把折後百分之七十五直接加上五個百分點，沒有讓稅率作用在折後價格。",
     "concept": "後續百分率以當時金額為基準，相乘處理。",
     "tags": [
       "數與量",
@@ -751,7 +763,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fe7e93a17778c033fea48eb07e225735f3b0cdb0374cbd40858d111a2e70899d",
+    "contentSha256": "9e03c28a591eeaee434b2f684a8c9f776f5c131ee96c84eba8aa96d6107f1ced",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -773,10 +785,11 @@ export const QUESTIONS = [
       "兩店同價"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：A=800元；B=(1000-150)×0.9=765元，所以B便宜35元。所以答案是「B 店便宜 35 元」。",
+    "explanation": "A 店售價為 1000×0.8=800 元。B 店先減 150 元再打九折，售價為 (1000−150)×0.9=765 元。比較後 B 店少 800−765=35 元。兩家都先各自完成全部優惠，才可用相同的實付金額作比較。",
     "steps": [
-      "A=800元",
-      "B=(1000-150)×0.9=765元，所以B便宜35元"
+      "計算 A 店售價 1000×0.8=800 元。",
+      "依順序計算 B 店售價 (1000−150)×0.9=765 元。",
+      "比較 800−765=35，得 B 店便宜 35 元。"
     ],
     "optionAnalysis": [
       {
@@ -800,7 +813,7 @@ export const QUESTIONS = [
         "reason": "兩店價格不同。"
       }
     ],
-    "commonMistake": "只比較折數，忽略B店先減150元。",
+    "commonMistake": "只比較八折與九折便判斷 A 店較便宜，漏掉 B 店先減一百五十元。",
     "concept": "比較方案要完整計算每個優惠流程。",
     "tags": [
       "數與量",
@@ -815,7 +828,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "03b2c31dcbb00f91611dc1e2c6a0f7bacc64d4f38ef3d6c22780fce88ed317a1",
+    "contentSha256": "4689ef0c070e45b3c13c220692b875f485676cfda091ef616757d109aedff87b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -837,10 +850,11 @@ export const QUESTIONS = [
       "1100 元"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：第一件500元，第二件500×0.6=300元；總價800元。所以答案是「800 元」。",
+    "explanation": "第二件六折只適用第二件。第一件仍為 500 元，第二件為 500×0.6=300 元，兩件合計 500+300=800 元；不能把兩件都打六折。平均每件四百元，相當於兩件合計為原總價的八折。",
     "steps": [
-      "第一件500元，第二件500×0.6=300元",
-      "總價800元"
+      "第一件按原價計算為 500 元。",
+      "第二件六折，計算 500×0.6=300 元。",
+      "相加得到兩件總價 800 元。"
     ],
     "optionAnalysis": [
       {
@@ -864,7 +878,7 @@ export const QUESTIONS = [
         "reason": "把六折當加價。"
       }
     ],
-    "commonMistake": "把兩件都打六折或只算第二件。",
+    "commonMistake": "把第二件六折誤套用到兩件商品，或只計算折扣後的第二件價格。",
     "concept": "優惠文字要確認適用範圍。",
     "tags": [
       "數與量",
@@ -879,7 +893,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩件同價與『只有第二件六折』的適用範圍是計算總價的必要資訊。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "96a6a8dca17e7c82aee719b4b1013a4b8f18f35fd3f3de93513edf323a49ead0",
+    "contentSha256": "1e40b53191400a9b543e98e612b9709eb60f1bcfea4839ce65772883f7e63849",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -901,10 +915,11 @@ export const QUESTIONS = [
       "38 人"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：40×0.925=37；人數為37。所以答案是「37 人」。",
+    "explanation": "出席率 92.5%=0.925，出席人數是全班 40 人的 0.925 倍。計算 40×0.925=37，因此出席 37 人；結果為整數且不超過全班人數。缺席三人占全班百分之七點五，與出席率互補為百分之百。",
     "steps": [
-      "40×0.925=37",
-      "人數為37"
+      "將 92.5% 化成小數 0.925。",
+      "計算 40×0.925=37。",
+      "檢查 37 為整數且介於 0 與 40 之間。"
     ],
     "optionAnalysis": [
       {
@@ -928,7 +943,7 @@ export const QUESTIONS = [
         "reason": "38對應95%。"
       }
     ],
-    "commonMistake": "百分率小數轉換錯一位。",
+    "commonMistake": "百分率化小數時小數點只左移一位，將九十二點五百分比誤寫成九點二五。",
     "concept": "人數=總人數×出席率，結果應符合整數人數。",
     "tags": [
       "數與量",
@@ -943,7 +958,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "班級總人數與出席率共同決定實際出席人數，且答案必須回到整數人數檢查，情境資料不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4f3a8235f1dcdd84e0309be0dc7991162e5d65194cf8401f6e6cb5973938b45d",
+    "contentSha256": "5f4a0a5cda488d1a202fc8048b0e0feba985322de101401251f72392488566d6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -965,10 +980,11 @@ export const QUESTIONS = [
       "920 公斤"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：一成五=15%；800×1.15=920。所以答案是「920 公斤」。",
+    "explanation": "一成五表示 15%，今年比去年增加 15%，新量倍率為 1.15。以去年 800 公斤計算，800×1.15=920 公斤；增加量 120 公斤也等於 800×0.15。去年產量與增加量相加，同樣得到今年九百二十公斤。",
     "steps": [
-      "一成五=15%",
-      "800×1.15=920"
+      "把一成五換成 15%，新量倍率為 1.15。",
+      "計算 800×1.15=920 公斤。",
+      "用增加量 800×0.15=120 公斤驗算。"
     ],
     "optionAnalysis": [
       {
@@ -992,7 +1008,7 @@ export const QUESTIONS = [
         "reason": "920公斤正確。"
       }
     ],
-    "commonMistake": "不熟悉成數，把一成五讀成1.5%。",
+    "commonMistake": "把一成五讀成百分之一點五，將成數與百分率的小數位置混淆。",
     "concept": "一成=10%，一成五=15%。",
     "tags": [
       "數與量",
@@ -1007,7 +1023,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "去年產量是100%的基準，「增加一成五」決定倍率1.15；缺少任一情境資料都無法求今年公斤數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8007e161df0979884250b8eff785f72be1ddd5cd5409669456629833cd9e8b29",
+    "contentSha256": "a44aa9c2ae096c196b7b5a25384ec19acaa9e4d0a1b5ebe27d5c4d22eb194035",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1028,9 +1044,9 @@ export const CONSTRUCTED_RESPONSES = [
       "服務費基準是使用折價券後的金額。"
     ],
     "fullCreditSolution": [
-      "2500×0.88=2200元。",
-      "2200-150=2050元。",
-      "2050×1.05=2152.5元。"
+      "先依八八折計算折後價：2500×0.88=2200 元。",
+      "再按題目順序使用 150 元折價券，2200−150=2050 元。",
+      "服務費以使用折價券後金額為基準，實付為 2050×1.05=2152.5 元；其中服務費為 102.5 元，與折價券後金額相加可驗算。"
     ],
     "alternativeSolutions": [
       "可將最後一步寫2050+102.5。"
@@ -1057,15 +1073,16 @@ export const CONSTRUCTED_RESPONSES = [
       "金額可寫2152元5角；不得擅自四捨五入到整數。"
     ],
     "commonErrors": [
-      "折價券先從原價扣。",
-      "服務費以原價計算。"
+      "先從原價扣除折價券再打八八折，顛倒優惠順序而改變折扣基準。",
+      "用原價 2500 元計算百分之五服務費，忽略題目指定以券後金額為基準。",
+      "把加收百分之五寫成只乘零點零五，漏掉原來應支付的一百分之百。"
     ],
     "independentReview": {
       "derivedResult": "實付2152.5元。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "a324ce41003ff5e6bad6a794da02a84c3172ead7b0f862c72c47118547414160",
+    "contentSha256": "60bee3bd1f7541f682d944073c4cb706246f14db0b8f615a5010a5d3e29bf502",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1084,9 +1101,9 @@ export const CONSTRUCTED_RESPONSES = [
       "比較總倍率。"
     ],
     "fullCreditSolution": [
-      "總倍率1.2×0.85=1.02。",
-      "原價=1224÷1.02=1200元。",
-      "最後為原價102%，即增加2%。"
+      "漲價 20% 的倍率為 1.2，之後降價 15% 的倍率為 0.85，總倍率是 1.2×0.85=1.02。",
+      "最後售價 1224 元等於原價的 1.02 倍，所以原價=1224÷1.02=1200 元。",
+      "總倍率 1.02 表示最後為原價的 102%，因此最後相對原價增加 2%；1200×1.02=1224 可驗算。"
     ],
     "alternativeSolutions": [
       "可設原價x，列1.02x=1224。"
@@ -1113,15 +1130,16 @@ export const CONSTRUCTED_RESPONSES = [
       "百分率以原價為基準。"
     ],
     "commonErrors": [
-      "把漲跌率直接相減。",
-      "用1224減2%求原價。"
+      "直接用漲百分之二十減降百分之十五得到增加百分之五，忽略第二次基準已更新。",
+      "用最後售價 1224 元直接減去它的百分之二，沒有用除法反求原價。",
+      "把降價百分之十五的倍率寫成零點一五，而不是保留原價百分之八十五。"
     ],
     "independentReview": {
       "derivedResult": "原價1200元，最後增加2%。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "6f0ace583618903ece033146069cce1a6c05650eea688807fce01abba0129528",
+    "contentSha256": "ec1126e36f14e5f123e0e74e89563d69509d74361911084d76be1bfef152d5f3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

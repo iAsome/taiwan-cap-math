@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u12",
+  "batch": "013-u12-complete",
+  "skills": ["s006"],
+  "mc": [
+    {
+      "questionId": "u12-s006-v001",
+      "expectedContentSha256": "395bb1b3ccb08978e172c2fb35fd5d0b1a687fc5c104d66d13749dc4d9de4161",
+      "appendText": {"explanation":"提出負三等同將每一項分別除以負三：負六倍未知數的商是正二倍未知數，正九的商是負三。把負三乘回兩個括號項，符號與係數都回到原式，所以括號為二倍未知數減三。"}
+    },
+    {
+      "questionId": "u12-s006-v002",
+      "expectedContentSha256": "5b4e7d8b2ca4a99a428d6aca25a40d55fdd00965d4bad6446457a2042876e17e",
+      "appendText": {"explanation":"負號乘進差式後，括號中的兩項都要改號，得到負的第一個字母加第二個字母；交換加法次序就是第二個字母減第一個字母。這個等式對任意兩數成立，其餘選項都有漏改號或錯誤括號。"}
+    },
+    {
+      "questionId": "u12-s006-v003",
+      "expectedContentSha256": "ca2de22f1dd0f5f44c4ceb8ebb0194bf24c9feec056828e2ef1509473902833a",
+      "appendText": {
+        "explanation":"首項與末項分別是未知數和四的平方，而一次項負八倍未知數等於未知數與四乘積的負兩倍，因此應套用差的完全平方。展開正解得到平方項、負八倍一次項與正十六，逐項吻合。",
+        "misconceptionTarget":"還要核對中間項的符號與兩倍乘積，不能只看末項。"
+      }
+    },
+    {
+      "questionId": "u12-s006-v004",
+      "expectedContentSha256": "1397823990c4f895f3e57bddb6dae85c4564420a0aacfc5d7abaa3cb30009c7d",
+      "appendText": {"explanation":"第二個差式與第一個差式方向相反，所以先把它改寫為第一個差式的相反數；原有負二再乘這個負號成正二。兩項因此具有共同括號，提出後得到一次式加二，展開可還原原式。"}
+    },
+    {
+      "questionId": "u12-s006-v005",
+      "expectedContentSha256": "9d3cf03696b9f733850a5cc086f3c148b20599e52a34195cc10a50ff0957ecc3",
+      "appendText": {"explanation":"判斷括號內容應以逐項除法而非抄寫原符號。第二項負十二倍未知數除以外層負四倍未知數，商為正三；若寫負三，展開會產生正十二倍未知數，與原式的負號相反。"}
+    },
+    {
+      "questionId": "u12-s006-v006",
+      "expectedContentSha256": "3d708714906a7fbc24f35e45ef1181685f197daa102c54e0ed05dc1836999672",
+      "appendText": {"explanation":"先提出負一後，括號內三項全部改為正係數。二倍未知數加一與未知數加三的交叉項合計七倍未知數，常數為三；再乘回外層負一，三項符號全部恢復為負，答案完整。"}
+    },
+    {
+      "questionId": "u12-s006-v007",
+      "expectedContentSha256": "2005523ddeb28ce5b613975f282eef9b809cf6278ad50f3a665c8aebaa8d2c8c",
+      "appendText": {
+        "explanation":"展開兩個差式可得平方項減兩常數和倍的未知數，再加兩常數的乘積；與原式比較，一次項係數直接給出兩正整數的和為九，常數項則驗證乘積二十，實際配對四與五唯一。",
+        "misconceptionTarget":"常數項二十代表乘積；一次項負九才代表兩正數的和。"
+      }
+    },
+    {
+      "questionId": "u12-s006-v008",
+      "expectedContentSha256": "3b9a75ab55e7fc0271f942032250d3b6bba727e4f80f52cc44da6726fc35aaa6",
+      "appendText": {"explanation":"正解的兩個交叉項為負九倍未知數與正二倍未知數，合併後正好是負七倍；同時首項為六倍平方項、常數為負三。其他候選雖也可能有異號常數，交叉和並不等於負七。"}
+    },
+    {
+      "questionId": "u12-s006-v009",
+      "expectedContentSha256": "4d626688380f9701e93340514ba0765fb6bd4d37bab207119152142bfac15458",
+      "appendText": {
+        "explanation":"差的平方展開必須包含負的兩倍乘積，所以第一式具有一次項；平方差公式則直接分成和與差的乘積，沒有一次項。兩式雖使用相同的二倍未知數與五，代數結構不同，不能互換。",
+        "misconceptionTarget":"差的平方含交叉項，平方差只有兩平方相減，兩者公式不同。"
+      }
+    },
+    {
+      "questionId": "u12-s006-v010",
+      "expectedContentSha256": "70bf7cfe5891a0d66c27def041b29f0dfc76743d1ca7e36e00d784464671938e",
+      "appendText": {"explanation":"第一項除以負六確實得到正二倍未知數，但常數正十八除以負六必為負三。原紀錄只核對第一項而漏查常數符號；將修正版展開，負六乘負三才會還原正十八。"}
+    },
+    {
+      "questionId": "u12-s006-v011",
+      "expectedContentSha256": "04b51f19a5c6213fc5e2f7f6ec167f04c1937f2917f6a40e7a34c21aa512930e",
+      "appendText": {"explanation":"依題意提出負三倍未知數後，第一項的商為正未知數，第二項正十五倍未知數的商為負五。括號首項因此為正且常數為負；展開時外層負值使第二項恢復正號，符合淨庫存式。"}
+    },
+    {
+      "questionId": "u12-s006-v012",
+      "expectedContentSha256": "99f35bed3f41c707f8a9989245748d60e009aa59020eb73111f0a58e4853f5d3",
+      "appendText": {"explanation":"第二項的括號方向與第一項相反，改寫時會多出負號，因此它等於負的第二個係數乘共同差式。兩項合併後共同括號外的係數是第一個字母減第二個字母，展開修正版可逐項還原。"}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u12-s006-cr001",
+      "expectedContentSha256": "1ccf6fbbb2b8e0b04a2ff2e3f50a4f7f8ed8fdfdc51b4971de3fac543c78075a",
+      "appendArray": {
+        "fullCreditSolution": ["錯誤源於提出負因式後未改變第二項的符號。逐項相除可確認括號中的常數必為負五；把正確乘積展開時，負四倍未知數乘負五才會得到正二十倍未知數，與原式一致。"],
+        "reasoningSteps": ["以第二項的商與展開後符號交叉驗證，排除括號寫正五的錯誤。"]
+      }
+    },
+    {
+      "questionId": "u12-s006-cr002",
+      "expectedContentSha256": "c95f058d5b6abeae43adfbd444436af5a853b76532e73e61dd8b99b38da4c942",
+      "appendArray": {
+        "fullCreditSolution": ["兩個差式只交換順序便互為相反式，所以第二項同時含原有負四與改寫產生的負一，乘起來成正四。轉成相同方向後才可提出共同括號；展開結果分別是第一個係數乘差式與負四乘反向差式。"],
+        "reasoningSteps": ["最後展開共同因式，確認雙重負號與兩個括號方向都和原式相符。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u12-s006-lecture-r1",
+      "expectedContentSha256": "3349b30710567e855899003cbf1777179cb674962ddd6b74ac8310326235b20e",
+      "set": {
+        "conceptNarrative": [
+          "負號與括號的錯誤應以運算範圍來處理，而不是憑外觀猜符號。提出負公因式時，每一項都要除以同一個負數，因此原本為正的項在括號內會變負，原本為負的項會變正。負號乘進括號也必須改變其中每一項，最後以完整展開逐項核對係數。",
+          "兩個差式若只交換前後順序就互為相反式，例如第二個字母減第一個字母等於第一個字母減第二個字母的相反數。分組分解時，必須先把括號方向統一，再提出共同括號；改寫本身產生的負號還要和原有係數相乘。",
+          "完全平方與平方差也常造成符號混淆。差的平方展開含有負的兩倍乘積與正的末項平方；平方差則是兩個平方直接相減，可分成和與差的乘積。最可靠的除錯方式是展開候選式，找出第一個與原式不一致的係數。"
+        ],
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"提出負公因式：−8x²+12x。","solutionSteps":["兩項共同因式為四倍未知數，依題意提出負四倍未知數。","逐項相除得到 2x 與 −3。","寫成 −4x(2x−3) 並展開。"],"answer":"−4x(2x−3)","why":"提出負數後不能直接抄原式符號；正十二倍未知數除以負四倍未知數得到負三。乘回時兩個負號相乘為正，才能還原第二項。"},
+          {"exampleId":"L2","prompt":"分解 x(a−b)−3(b−a)。","solutionSteps":["辨認 b−a=−(a−b)。","第二項改成正三倍的共同差式。","提出 a−b 得 (a−b)(x+3)。"],"answer":"(a−b)(x+3)","why":"兩個括號方向相反，不能直接視為相同；改寫會產生一個負號，再與原來的負三相乘成正三。統一方向後才有真正的共同因式。"},
+          {"exampleId":"L3","prompt":"分解 y²−10y+25。","solutionSteps":["首末項是 y 與五的平方。","中間項是兩者乘積的負兩倍。","套差的完全平方得 (y−5)²。"],"answer":"(y−5)²","why":"末項為正只能判斷兩常數同號，還要由中間項負號決定兩者都取負五。展開正解會得到負十倍未知數，與和的平方不同。"},
+          {"exampleId":"L4","prompt":"完整分解 −2m²−7m−3。","solutionSteps":["先提出負一，使括號首項為正。","將 2m²+7m+3 分成 (2m+1)(m+3)。","保留外層負號並展開。"],"answer":"−(2m+1)(m+3)","why":"內部兩個交叉項是一倍與六倍未知數，合成七倍；外層負一再使三項全變負。若只寫內部因式，會遺失原式整體的負號。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

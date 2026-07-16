@@ -15,7 +15,8 @@
     "能說明尺規作圖中直尺與圓規各自允許的操作。",
     "能依圓弧交點理解等距與作圖正確性的理由。",
     "能按順序描述作一線段等長線段、作中垂線與作角平分線的基本流程。",
-    "能分辨作圖痕跡與最後答案線，並保留足以驗證的圓弧。"
+    "能分辨作圖痕跡與最後答案線，並保留足以驗證的圓弧。",
+    "能在作圖完成後，用同圓半徑相等、等距軌跡或SSS全等逐步驗證答案線，並指出半徑過小、開口改變或連錯點時失敗的條件。"
   ],
   "prerequisiteBridge": "等邊三角形可由兩個同半徑圓的交點構造，顯示尺規作圖的核心：圓上各點到圓心等距。現在把這種等距關係轉成標準作圖步驟。",
   "prerequisites": [
@@ -134,42 +135,47 @@
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "在射線 PX 上作 PQ=AB。",
+      "prompt": "在射線PX上作PQ＝AB。",
       "solutionSteps": [
-        "以 P 為圓心、AB 為半徑畫弧，交射線 PX 於 Q。",
-        "因 Q 在此弧上，所以 PQ=AB。"
+        "把圓規兩腳分別放在A、B，取得開口AB。",
+        "保持開口不變，以P為圓心畫弧，與射線PX交於Q。",
+        "由Q在以P為圓心、AB為半徑的弧上，驗證PQ＝AB。"
       ],
-      "answer": "Q 即所求點。"
+      "answer": "Q即所求點，且PQ＝AB。",
+      "why": "圓規能直接保存並搬移幾何距離，不需也不能用無刻度直尺讀出AB的數值；把圓心設在P才能使新半徑PQ等於已知長度AB。"
     },
     {
       "exampleId": "L2",
-      "prompt": "作線段 AB 的中垂線。",
+      "prompt": "作線段AB的垂直平分線。",
       "solutionSteps": [
-        "以 A、B 為圓心，用相同且大於 AB 一半的半徑畫弧，交於 P、Q。",
-        "連接 P、Q。",
-        "P、Q 都到 A、B 等距。"
+        "取大於AB一半的圓規開口，分別以A、B為圓心，在AB兩側畫弧交於P、Q。",
+        "保持兩次開口相同，以確保PA＝PB且QA＝QB。",
+        "用直尺連接P、Q；由等距軌跡判定直線PQ垂直AB且通過AB中點。"
       ],
-      "answer": "直線 PQ 為 AB 的中垂線。"
+      "answer": "直線PQ為AB的垂直平分線。",
+      "why": "P、Q都是到A、B等距的點，因此都在AB的中垂線上；兩個不同點決定唯一一直線。半徑必須大於AB的一半，才能取得兩個交點。"
     },
     {
       "exampleId": "L3",
-      "prompt": "作 ∠AOB 的角平分線。",
+      "prompt": "作∠AOB的角平分線。",
       "solutionSteps": [
-        "以 O 為圓心作弧，交 OA、OB 於 C、D。",
-        "以 C、D 為圓心、相同半徑作弧，交於 P。",
-        "作射線 OP。"
+        "以O為圓心畫弧，分別交OA、OB於C、D，故OC＝OD。",
+        "以C、D為圓心且用相同半徑畫弧，在角內交於P，故CP＝DP。",
+        "作射線OP；△OCP與△ODP因SSS全等，所以∠COP＝∠POD。"
       ],
-      "answer": "OP 平分 ∠AOB。"
+      "answer": "射線OP平分∠AOB。",
+      "why": "角平分線必須通過角頂點O。兩組相等半徑加上共用邊OP，提供可核對的SSS全等理由，而不是只靠圖看似對稱。"
     },
     {
       "exampleId": "L4",
-      "prompt": "用尺規作等邊三角形，已知底邊 AB。",
+      "prompt": "以已知線段AB為邊，用尺規作等邊三角形。",
       "solutionSteps": [
-        "以 A 為圓心、AB 為半徑作弧。",
-        "以 B 為圓心、BA 為半徑作弧，交於 C。",
-        "連接 AC、BC。"
+        "以A為圓心、AB為半徑畫弧。",
+        "以B為圓心、同樣以BA為半徑畫弧，任取一個交點C。",
+        "連接AC、BC；由同圓半徑得AC＝AB且BC＝BA。"
       ],
-      "answer": "AB=AC=BC，△ABC 為等邊三角形。"
+      "answer": "AB＝AC＝BC，所以△ABC為等邊三角形。",
+      "why": "兩弧交點可能在AB上方或下方，所得三角形互為鏡射但依SSS全等；方向不同不影響三邊相等，也不改變等邊三角形的判定。"
     }
   ],
   "commonMistakes": [
@@ -261,5 +267,5 @@
     "reviewVersion": "human-lecture-review-u16-r1.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "e6d8287e0c3edb9bb10813dc9d30d571c2c3d9f0f4cc5eb4dad9cae247f1cd6a"
+  "contentSha256": "77a9bd86d6fdae26b3bc77dca33395d6e92c0d8c7a85bc7939cc9f783c7ebf3c"
 }

@@ -103,40 +103,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "(2/5)/(3/10)。",
+      "prompt": "化簡 (7/12)/(14/9)，並用估值說明結果為何小於 1。",
       "solutionSteps": [
-        "改寫2/5÷3/10。",
-        "乘10/3並約分。"
+        "把主分數線改寫成 7/12÷14/9。",
+        "乘以除數的倒數，計算 7/12×9/14，約分得 3/8。",
+        "比較 7/12 小於 14/9，因此正數相除的商應小於 1，與 3/8 相符。"
       ],
-      "answer": "4/3。"
+      "answer": "3/8。",
+      "why": "主分數線表示 7/12÷14/9，乘以完整除數的倒數後為 7/12×9/14=3/8。分子區 7/12 小於除數 14/9，正數用較小數除以較大數，商應小於 1，與 3/8 相符。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "4/(5/6)。",
+      "prompt": "化簡 6/(9/10)，並將答案乘回除數驗算。",
       "solutionSteps": [
-        "4寫成4/1。",
-        "4×6/5。"
+        "把整數 6 寫成 6/1，將除以 9/10 改成乘 10/9。",
+        "計算 6×10/9＝60/9，約分得 20/3。",
+        "以 20/3×9/10＝6 乘回除數，確認還原分子區。"
       ],
-      "answer": "24/5。"
+      "answer": "20/3。",
+      "why": "把整數 6 寫成 6/1，除以 9/10 等於乘 10/9，所以 6×10/9=60/9=20/3。驗算時以 20/3×9/10=6，可還原原來的分子區數值。除數小於一，因此商大於六，和二十除以三的大小一致。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "(1/2+1/3)/(7/6)。",
+      "prompt": "化簡 (1/2+1/3)/(7/6)。",
       "solutionSteps": [
-        "上方=5/6。",
-        "5/6÷7/6=5/7。"
+        "先完成分子區加法：1/2＋1/3＝3/6＋2/6＝5/6。",
+        "再計算 5/6÷7/6，改成 5/6×6/7，約分得 5/7。",
+        "把 5/7 乘回 7/6，得到原分子區 5/6。"
       ],
-      "answer": "5/7。"
+      "answer": "5/7。",
+      "why": "先算完整分子區，1/2+1/3=3/6+2/6=5/6。再計算 5/6÷7/6=5/6×6/7=5/7；不能在上方加法完成前就與下方交叉相乘。以五分之七乘回七分之六會得到五分之六，可核對繁分數的上下關係。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "(3/4)/(1-1/4)。",
+      "prompt": "化簡 (3/4)/(1−1/4)。",
       "solutionSteps": [
-        "下方=3/4。",
-        "同一非零數相除。"
+        "先完成分母區運算：1－1/4＝3/4，並確認不為零。",
+        "原式化為 3/4÷3/4，同一個非零數除以自己等於 1。",
+        "用 1×3/4＝3/4 乘回分母區，確認結果。"
       ],
-      "answer": "1。"
+      "answer": "1。",
+      "why": "先算完整分母區，1−1/4=3/4，且不為 0。原式因此是 3/4÷3/4，同一個非零數除以自己等於 1；若只翻轉分母區中的 1/4 會改變題意。"
     }
   ],
   "commonMistakes": [
@@ -222,7 +226,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "0c8ca3d00254f9491f1aa82b0fb58205c62ad4fc5f187b34e65619e7d75d869c",
+  "contentSha256": "988d7c88880f42a9c3b1cc22c7e2291f6e74ac569a01235e3b3f3cab5b82529d",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -246,10 +250,11 @@ export const QUESTIONS = [
       "6/4"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：(1/2)÷(3/4)=(1/2)×(4/3)；=2/3。所以答案是「2/3」。",
+    "explanation": "主分數線表示上方 1/2 除以下方 3/4，因此改寫為 1/2÷3/4。除以分數等於乘以它的倒數，1/2×4/3=4/6=2/3，所以第一個選項正確。用 2/3 乘回 3/4，會還原成上方的 1/2。",
     "steps": [
-      "(1/2)÷(3/4)=(1/2)×(4/3)",
-      "=2/3"
+      "把繁分數讀成 1/2÷3/4。",
+      "將除以 3/4 改成乘以倒數 4/3。",
+      "計算 1/2×4/3=4/6，約分得 2/3。"
     ],
     "optionAnalysis": [
       {
@@ -273,7 +278,7 @@ export const QUESTIONS = [
         "reason": "未約分且數值錯。"
       }
     ],
-    "commonMistake": "把大分數線看成乘法。",
+    "commonMistake": "把主分數線誤讀成乘號，直接計算二分之一乘四分之三。",
     "concept": "繁分數的主分數線表示除法。",
     "tags": [
       "數與量",
@@ -288,7 +293,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "839bebadc684a978d4807f3cc5cb9d40bd1cc417e466c667013754b46d439ae4",
+    "contentSha256": "a8a05d9a61ce57c89b9721f111576aa792059f2f89d4f6a0d16ed395b7ce892e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -310,10 +315,11 @@ export const QUESTIONS = [
       "50/54"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：5/6÷10/9=5/6×9/10；=45/60=3/4。所以答案是「3/4」。",
+    "explanation": "繁分數等於 5/6÷10/9。要將整個除數 10/9 取倒數，得到 5/6×9/10；交叉約分後為 3/4。選項 50/54 是未取倒數所得，不能代表原除法。由於除數大於 1，商小於 5/6，結果 3/4 也符合估值。",
     "steps": [
-      "5/6÷10/9=5/6×9/10",
-      "=45/60=3/4"
+      "將主分數線改寫為 5/6÷10/9。",
+      "把除數 10/9 取倒數，寫成 5/6×9/10。",
+      "約分並計算得 45/60=3/4。"
     ],
     "optionAnalysis": [
       {
@@ -337,7 +343,7 @@ export const QUESTIONS = [
         "reason": "直接上下分子分母相乘。"
       }
     ],
-    "commonMistake": "分母分數沒有取倒數。",
+    "commonMistake": "分母分數十分之九沒有整體取倒數，仍照原順序相乘而得到錯誤結果。",
     "concept": "除以分數等於乘倒數。",
     "tags": [
       "數與量",
@@ -352,7 +358,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d762b6d70000827ea172f784c1e4c9a003d0a784b2454e3172e1667534b15e41",
+    "contentSha256": "8b17c401236d65b104514c6dbca5ab83521b4013cf718e01310aa42157e5e304",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -374,10 +380,11 @@ export const QUESTIONS = [
       "2/5"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：2可寫成2/1；3/5÷2/1=3/5×1/2=3/10。所以答案是「3/10」。",
+    "explanation": "(3/5)/2 表示 3/5÷2。把整數 2 寫成 2/1，再乘其倒數 1/2，得到 3/5×1/2=3/10。結果小於 3/5，也符合除以大於 1 的數會變小。再以 3/10 乘 2，可還原原來的 3/5，前後驗算成立。",
     "steps": [
-      "2可寫成2/1",
-      "3/5÷2/1=3/5×1/2=3/10"
+      "把主分數線讀成 3/5÷2。",
+      "將 2 改寫為 2/1，再取倒數 1/2。",
+      "計算 3/5×1/2=3/10，並以大小關係檢查。"
     ],
     "optionAnalysis": [
       {
@@ -401,7 +408,7 @@ export const QUESTIONS = [
         "reason": "沒有依除法計算。"
       }
     ],
-    "commonMistake": "整數在繁分數分母時未改寫成分數。",
+    "commonMistake": "整數二位於除數時沒有寫成二分之一的倒數關係，反而放進錯誤位置。",
     "concept": "除以整數等於乘其倒數。",
     "tags": [
       "數與量",
@@ -416,7 +423,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bdc086a00a187e94951afd4cfae529376e327cc0d9f88f58d6bf4ff21f0eb7ef",
+    "contentSha256": "f0f6911caf3f8bbc5d0ebb5d3a61aab1793d83930d1e8bc3e0348fa3cc4f1c70",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -438,10 +445,11 @@ export const QUESTIONS = [
       "15/4"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：3=3/1；3÷4/5=3×5/4=15/4。所以答案是「15/4」。",
+    "explanation": "3/(4/5) 表示整數 3 除以 4/5。將 3 寫成 3/1，除以 4/5 改為乘 5/4，得到 3×5/4=15/4。因除數小於 1，結果大於 3，大小也合理。用 15/4 乘回 4/5，乘積正好等於 3，前後驗算成立。",
     "steps": [
-      "3=3/1",
-      "3÷4/5=3×5/4=15/4"
+      "將繁分數改寫為 3÷4/5。",
+      "把除以 4/5 改成乘以 5/4。",
+      "計算 3×5/4=15/4，並檢查結果大於 3。"
     ],
     "optionAnalysis": [
       {
@@ -465,7 +473,7 @@ export const QUESTIONS = [
         "reason": "15/4正確。"
       }
     ],
-    "commonMistake": "把3放入分母或未取倒數。",
+    "commonMistake": "將整數三錯放入分母，或忘記把完整除數四分之五取倒數。",
     "concept": "整數除以分數仍使用乘倒數。",
     "tags": [
       "數與量",
@@ -480,7 +488,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "68ef6dd9c9eac6df416f8c85edec5d1c89a4c3f27d85d36c261441aeafa263a8",
+    "contentSha256": "9dabbfadd09d9751052d26961269aedf631ff381343daa90c095ee9d9e66a0c9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -502,10 +510,11 @@ export const QUESTIONS = [
       "4/5"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：上方2/3+1/6=5/6；5/6÷5/4=5/6×4/5=2/3。所以答案是「2/3」。",
+    "explanation": "先算主分數線上方，2/3+1/6=4/6+1/6=5/6。再用上方結果除以下方 5/4，5/6÷5/4=5/6×4/5=2/3；上下的因數 5 可約去。分子區小於除數，所以商小於 1，和所得答案一致。",
     "steps": [
-      "上方2/3+1/6=5/6",
-      "5/6÷5/4=5/6×4/5=2/3"
+      "通分計算上方 2/3+1/6=5/6。",
+      "把主除法寫成 5/6÷5/4。",
+      "乘倒數並約分，5/6×4/5=2/3。"
     ],
     "optionAnalysis": [
       {
@@ -529,7 +538,7 @@ export const QUESTIONS = [
         "reason": "把5/6乘5/4。"
       }
     ],
-    "commonMistake": "沒有先算主分數線上方的加法。",
+    "commonMistake": "沒有先完成主分數線上方的加法，就把各項與下方分數任意交叉相乘。",
     "concept": "先化簡分子、分母，再做最後除法。",
     "tags": [
       "數與量",
@@ -544,7 +553,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3918cc16588b0e4f856f4bbd5c1144731e1cd767f314642bb0134bca466f7c84",
+    "contentSha256": "c6d3fd11b05aec6944383626999868409a6daa498308768e488f89b666fadf1b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -566,10 +575,11 @@ export const QUESTIONS = [
       "1"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：下方1-3/8=5/8；7/8÷5/8=7/5。所以答案是「7/5」。",
+    "explanation": "先算主分數線下方的括號，1−3/8=8/8−3/8=5/8，且不為 0。原式成為 7/8÷5/8，乘倒數後 7/8×8/5=7/5，所以第二個選項正確。因分子區大於分母區，商大於 1，也符合 7/5。",
     "steps": [
-      "下方1-3/8=5/8",
-      "7/8÷5/8=7/5"
+      "計算分母括號 1−3/8=5/8。",
+      "將原式改寫為 7/8÷5/8。",
+      "乘以倒數 8/5 並約分，得到 7/5。"
     ],
     "optionAnalysis": [
       {
@@ -593,7 +603,7 @@ export const QUESTIONS = [
         "reason": "把相同分母誤認為比值1。"
       }
     ],
-    "commonMistake": "分母中的括號未先計算。",
+    "commonMistake": "未先計算分母中的一減八分之三，就只對其中一項取倒數。",
     "concept": "主分數線上下各自先化簡。",
     "tags": [
       "數與量",
@@ -608,7 +618,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8953eca849722c686ffaf945a096cfe55aef7fa7e89937dd6730afe44307b664",
+    "contentSha256": "e2bcb55d507a80f0736699ddf4f29852897f319c5869e3fec28977448d91e103",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -630,10 +640,11 @@ export const QUESTIONS = [
       "9/5"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：內層1/2÷3/4=2/3；2/3÷5/6=2/3×6/5=4/5。所以答案是「4/5」。",
+    "explanation": "多層除法要先處理括號內層，1/2÷3/4=1/2×4/3=2/3。再算外層 2/3÷5/6=2/3×6/5=4/5；兩次都是將完整除數取倒數。用 4/5 乘外層除數 5/6，會還原內層結果 2/3，順序不可交換。",
     "steps": [
-      "內層1/2÷3/4=2/3",
-      "2/3÷5/6=2/3×6/5=4/5"
+      "先算內層 1/2÷3/4=2/3。",
+      "把外層改寫為 2/3÷5/6。",
+      "乘以 6/5 並約分，得到 4/5。"
     ],
     "optionAnalysis": [
       {
@@ -657,7 +668,7 @@ export const QUESTIONS = [
         "reason": "是錯誤倒數。"
       }
     ],
-    "commonMistake": "多層除法沒有由內而外。",
+    "commonMistake": "多層除法未依括號由內向外處理，一次翻轉多個分數而改變原式層級。",
     "concept": "巢狀繁分數按括號層級處理。",
     "tags": [
       "數與量",
@@ -672,7 +683,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c054eb2832b005af59bb81341dbd7a612185b183cf4b1d53f95e4f42878fe7eb",
+    "contentSha256": "8187cd1ebf7c27d3ea094afc3dc2652cf562b02c3e4644f2d2ba4259ae47105a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -694,10 +705,11 @@ export const QUESTIONS = [
       "3/4"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：上方=7/12；下方=7/9；7/12÷7/9=3/4。所以答案是「3/4」。",
+    "explanation": "先分別化簡主分數線的上下兩區：3/4−1/6=9/12−2/12=7/12；2/3+1/9=6/9+1/9=7/9。再算 7/12÷7/9=7/12×9/7=3/4。上下兩區都先完成加減，才能把整個分母區取倒數；以 3/4 乘 7/9 可驗回 7/12，運算吻合。",
     "steps": [
-      "上方=7/12",
-      "下方=7/9；7/12÷7/9=3/4"
+      "通分計算分子區，得到 7/12。",
+      "通分計算分母區，得到 7/9。",
+      "計算 7/12÷7/9，乘倒數並約分得 3/4。"
     ],
     "optionAnalysis": [
       {
@@ -721,7 +733,7 @@ export const QUESTIONS = [
         "reason": "3/4正確。"
       }
     ],
-    "commonMistake": "上下各自通分後，最後除法忘記取倒數。",
+    "commonMistake": "上下各自通分後，最後仍直接相乘七分之十二與七分之九，忘記除數要取倒數。",
     "concept": "先分別化簡上下，再約掉共同因子。",
     "tags": [
       "數與量",
@@ -736,7 +748,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "81f766a19f7d2a025e30ae1bc6b5641c8e40ea91765cdff6c6782b9719942add",
+    "contentSha256": "81cc7f54c015daaa07e6ae4c1d3e47e3dd5c09e701e96310b44f650b5a544687",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -758,10 +770,11 @@ export const QUESTIONS = [
       "bc/(ad)"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：a/b÷c/d=a/b×d/c；=ad/(bc)。所以答案是「ad/(bc)」。",
+    "explanation": "主分數線表示 a/b÷c/d。因 c、d 均非 0，可將除以 c/d 改成乘以 d/c，得到 a/b×d/c=ad/(bc)。分母 b、c 非 0，結果的式子有定義。這個推導同時保留原分數與除數都必須有意義的條件。",
     "steps": [
-      "a/b÷c/d=a/b×d/c",
-      "=ad/(bc)"
+      "把繁分數寫成 a/b÷c/d。",
+      "將除以 c/d 改寫為乘以 d/c。",
+      "相乘得 ad/(bc)，並確認 b、c 非 0。"
     ],
     "optionAnalysis": [
       {
@@ -785,7 +798,7 @@ export const QUESTIONS = [
         "reason": "配對錯誤。"
       }
     ],
-    "commonMistake": "記成分子對分子、分母對分母相除。",
+    "commonMistake": "直接做分子除分子、分母除分母，寫成不等價且可能顛倒的代數式。",
     "concept": "繁分數一般式等於外項乘外項、內項乘內項的比。",
     "tags": [
       "數與量",
@@ -800,7 +813,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "51d32ab5aabc843f60640bc2abc500c6a36dbb02ae486813f4fca19ed90ecda6",
+    "contentSha256": "423fbe90e9d88aff53d140c8fdc8e94c59f546d65e9de0728cce3736b90eae9e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -822,10 +835,11 @@ export const QUESTIONS = [
       "6 份"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：份數=(3/5)/(3/20)；=3/5×20/3=4。所以答案是「4 份」。",
+    "explanation": "可分份數等於總量除以每份量，列式 (3/5)÷(3/20)。乘以倒數後 3/5×20/3，約去因數 3 並算 20÷5=4，因此可分成 4 份。驗算四份各為 3/20，總量就是 12/20=3/5，沒有剩餘。",
     "steps": [
-      "份數=(3/5)/(3/20)",
-      "=3/5×20/3=4"
+      "依總量÷每份量列式 3/5÷3/20。",
+      "把除以 3/20 改成乘以 20/3。",
+      "約分計算得 4，並以 4×3/20=3/5 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -849,7 +863,7 @@ export const QUESTIONS = [
         "reason": "(3/5)÷(3/20)=4，不是6，因此6份不符總量。"
       }
     ],
-    "commonMistake": "把總量與每份量相乘。",
+    "commonMistake": "把總量與每份量相乘，所得量綱不是份數，也無法乘回每份量得到原液總量。",
     "concept": "份數=總量÷每份量，形式即繁分數。",
     "tags": [
       "數與量",
@@ -864,7 +878,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "總原液量與每份容量共同形成除法，份數不能由任一資料單獨決定。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9a57674bd69cb3c90149b1776a8843799d17eaf9377c36b32cf8b21ccfb8e1e0",
+    "contentSha256": "2a9698ef0140bbec2b98a42ac814490611bc5171840109ae7cc870c5d4410dbe",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -886,11 +900,11 @@ export const QUESTIONS = [
       "21/24"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：把完成測試者視為全部樣本的7/8。；在完成者中再取2/3。；(7/8)×(2/3)=14/24=7/12。。所以答案是「7/12」。",
+    "explanation": "完成測試者是全部樣本的 7/8，優良者又是完成者的 2/3，因此要在 7/8 中再取 2/3，計算 7/8×2/3=14/24=7/12。這是連續部分關係，不是除法。所得比例小於 7/8，也符合優良者只是完成者中的一部分。",
     "steps": [
-      "把完成測試者視為全部樣本的7/8。",
-      "在完成者中再取2/3。",
-      "(7/8)×(2/3)=14/24=7/12。"
+      "以全部樣本為基準，完成者比例是 7/8。",
+      "在完成者中再取 2/3，列式 7/8×2/3。",
+      "計算並約分 14/24=7/12。"
     ],
     "optionAnalysis": [
       {
@@ -914,7 +928,7 @@ export const QUESTIONS = [
         "reason": "21/24等於7/8，代表只保留第一層比例。"
       }
     ],
-    "commonMistake": "把「完成者中的比例」誤當成用 7/8 除以 2/3。",
+    "commonMistake": "把完成者中的三分之二誤作除數，用八分之七除以三分之二而放大比例。",
     "concept": "部分中的一部分佔整體的比例，要把兩個分率相乘。",
     "tags": [
       "數與量",
@@ -929,7 +943,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩層比例描述要求先判斷『其中的』是乘法，避免把所有分數排列都視為繁分數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "69ad73c48b9b7ccbfe9a0f91a2bbd16f624a3c47b6096045c789a27b65a37b51",
+    "contentSha256": "4defdb082d7e207cfbc11c39a23d6d3e27adf4d9bf9ea0b5423d9e29ab1e95f4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -951,10 +965,11 @@ export const QUESTIONS = [
       "10 段"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：段數=(5/6)/(1/12)；=5/6×12=10。所以答案是「10 段」。",
+    "explanation": "段數等於木條總長除以每小段長，列式 5/6÷1/12。乘以倒數後為 5/6×12，約分可得 5×2=10，因此可切成 10 段，且 10×1/12=5/6。段數為整數，也符合題目要求每段等長且沒有剩餘。",
     "steps": [
-      "段數=(5/6)/(1/12)",
-      "=5/6×12=10"
+      "依總長÷每段長列式 5/6÷1/12。",
+      "將除以 1/12 改成乘以 12。",
+      "約分得 10 段，並乘回每段長驗算。"
     ],
     "optionAnalysis": [
       {
@@ -978,7 +993,7 @@ export const QUESTIONS = [
         "reason": "10段正好用完。"
       }
     ],
-    "commonMistake": "倒數後約分錯誤。",
+    "commonMistake": "取倒數後約分時把十二與六處理錯誤，或漏寫所得結果代表段數。",
     "concept": "總長除以段長可寫成繁分數。",
     "tags": [
       "數與量",
@@ -993,7 +1008,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "總長與單段長度是形成繁分數的上下兩個量，全部切完決定商需為整數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a4c53a3afc5824af444eb4999e86f2f6b2b2c62fb8f6c9ac16a1281630a01ffe",
+    "contentSha256": "17bd79efb0b65b539b54436ee5ad39ada77d8d77fae471e1aa36534c763fc1b0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1015,9 +1030,9 @@ export const CONSTRUCTED_RESPONSES = [
       "最後乘倒數並約分。"
     ],
     "fullCreditSolution": [
-      "上方3/4+5/6=9/12+10/12=19/12。",
-      "下方7/8-1/3=21/24-8/24=13/24。",
-      "(19/12)÷(13/24)=19/12×24/13=38/13。"
+      "先算主分數線上方：3/4+5/6=9/12+10/12=19/12。",
+      "再算主分數線下方：7/8−1/3=21/24−8/24=13/24，且結果不為 0。",
+      "最後以分子區結果除以分母區結果：(19/12)÷(13/24)=19/12×24/13=38/13；把 38/13 乘回 13/24，可還原 19/12，驗算與分子區一致。"
     ],
     "alternativeSolutions": [
       "也可上下同乘24，直接得38/13。"
@@ -1044,15 +1059,16 @@ export const CONSTRUCTED_RESPONSES = [
       "38/13可寫2又12/13。"
     ],
     "commonErrors": [
-      "下方通分錯誤。",
-      "只取1/3倒數。"
+      "分母區將 7/8−1/3 通分成 21/24−1/24，沒有把 1/3 正確擴分成 8/24。",
+      "最後只把分母區的 1/3 取倒數，沒有先算完整的 7/8−1/3。",
+      "上下加減尚未完成就交叉相乘，破壞主分數線的整體除法結構。"
     ],
     "independentReview": {
       "derivedResult": "38/13。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "e7caa07ee81ee7d61ea42c863abcc9fa14fea6d5da8805fa1b8c780648a67ec2",
+    "contentSha256": "88811b14af74b372f5a744770b6c96d67f4acde1c4e2769ac27b6be201a6bfda",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1070,9 +1086,9 @@ export const CONSTRUCTED_RESPONSES = [
       "再算外層除法。"
     ],
     "fullCreditSolution": [
-      "左內層1/2÷3/5=5/6。",
-      "右內層7/10÷14/15=7/10×15/14=3/4。",
-      "x=5/6÷3/4=5/6×4/3=10/9。"
+      "先算左內層：1/2÷3/5=1/2×5/3=5/6。",
+      "再算右內層：7/10÷14/15=7/10×15/14=3/4。",
+      "外層成為 5/6÷3/4=5/6×4/3=20/18=10/9；乘回 3/4 可還原 5/6。先完成兩個內層再處理外層，才能保留原式括號所指定的運算順序。"
     ],
     "alternativeSolutions": [
       "可將原式改寫為(1/2×5/3)×(14/15×10/7)。"
@@ -1099,15 +1115,16 @@ export const CONSTRUCTED_RESPONSES = [
       "所有除數均非0。"
     ],
     "commonErrors": [
-      "一次把所有分子相乘。",
-      "外層倒錯左值。"
+      "忽略左右內層括號，一次把所有分子與分母相乘，導致除法層級錯亂。",
+      "外層除法把左值 5/6 取倒數，而不是將完整除數 3/4 取倒數。",
+      "右內層只翻轉 14，沒有把整個分數 14/15 改成 15/14。"
     ],
     "independentReview": {
       "derivedResult": "x=10/9。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "cc4564e0f5a400bf1197be0d3442a8e6710ab37bd0767390283a04bf01bdb3b6",
+    "contentSha256": "33aaba2fe9f53a2f6f83a8edcc7f45b67fa9915552694a584fdd77dd2e94d37b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

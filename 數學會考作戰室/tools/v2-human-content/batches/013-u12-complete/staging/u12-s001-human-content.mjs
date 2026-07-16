@@ -42,7 +42,7 @@ export const LECTURE = {
       "meaning": "a 與 b 相乘。"
     },
     {
-      "symbol": "x^2",
+      "symbol": "x²",
       "meaning": "x 的平方，也就是 x·x。"
     },
     {
@@ -54,7 +54,8 @@ export const LECTURE = {
     "展開使用分配律 kA+kB=k(A+B) 的反方向，就是提公因式。",
     "找數字公因式時看所有係數的最大公因數；找字母時只保留每項都有的字母，次方取最低。",
     "提出後，括號內每一項都要用原項除以公因式，不能漏項。",
-    "若多項式首項為負，有時提出負公因式可讓括號首項為正，後續較易判讀。"
+    "若多項式首項為負，有時提出負公因式可讓括號首項為正，後續較易判讀。",
+    "提公因式要同時處理數字、字母與完整括號：係數取所有項都能整除的最大公因數，字母只保留每項共有者且次方取最低，括號則必須整體重複才可提出。每一項除以公因式所得的商都要完整寫入括號；若提出負因式，所有商的符號都會改變。最後以分配律逐項乘回，並確認括號內已無共同因式，才能判定分解既等值又完整。"
   ],
   "formalDefinitions": [
     {
@@ -92,7 +93,7 @@ export const LECTURE = {
     {
       "step": 2,
       "instruction": "找每項共有的字母，次方取最低。",
-      "check": "例如 x^3、x^2、x 共同部分是 x。"
+      "check": "例如 x³、x²、x 共同部分是 x。"
     },
     {
       "step": 3,
@@ -119,27 +120,30 @@ export const LECTURE = {
         "兩項都沒有共同字母。",
         "18x÷6=3x，24÷6=4。"
       ],
-      "answer": "6(3x+4)"
+      "answer": "6(3x+4)",
+      "why": "十八與二十四能同時被六整除，未知數只出現在第一項所以不能提出；逐項相除後，六乘三倍未知數與六乘四恰好還原兩項，括號內三與四互質。"
     },
     {
       "exampleId": "L2",
-      "prompt": "12a^2b-18ab^2",
+      "prompt": "12a²b-18ab²",
       "solutionSteps": [
         "係數公因數為 6。",
         "字母共同有 a、b，最低次方各為 1。",
         "除回括號得到 2a 與 -3b。"
       ],
-      "answer": "6ab(2a-3b)"
+      "answer": "6ab(2a-3b)",
+      "why": "係數取六，甲與乙都必須取較低的一次方，才能同時整除兩項；除後二甲與負三乙沒有共同字母，展開會恢復十二甲平方乙與負十八甲乙平方。"
     },
     {
       "exampleId": "L3",
-      "prompt": "-14y^3+21y^2",
+      "prompt": "-14y³+21y²",
       "solutionSteps": [
-        "共同部分可取 7y^2。",
-        "提出 -7y^2 使括號首項為正。",
-        "展開 -7y^2(2y-3) 得原式。"
+        "共同部分可取 7y²。",
+        "提出 -7y² 使括號首項為正。",
+        "展開 -7y²(2y-3) 得原式。"
       ],
-      "answer": "-7y^2(2y-3)"
+      "answer": "-7y²(2y-3)",
+      "why": "提出負七乙平方是為了讓括號首項成為正二乙；第二項除以負因式後為負三，負七再乘負三會回到正二十一，這能同時檢查負號與最低次方。"
     },
     {
       "exampleId": "L4",
@@ -148,7 +152,8 @@ export const LECTURE = {
         "兩項共同因式不是單一字母，而是整個括號 m+2。",
         "分別除以 m+2 得 5m 與 -3。"
       ],
-      "answer": "(m+2)(5m-3)"
+      "answer": "(m+2)(5m-3)",
+      "why": "兩項共享的是完整括號而不是括號中的單一項，把它視為一個因式後，外層商為五倍未知數與負三；重新分配共同括號即可逐項回到原式。"
     }
   ],
   "difficultyConnections": {
@@ -244,7 +249,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "79e5c2d059fdb0782b650d0194316723ec14df26e28abf521f178c341a638171"
+  "contentSha256": "9f7b93215d038d13588aa68ae31a71e5b0db8c82a74afde30a119d0ec1aa53ea"
 };
 
 export const QUESTIONS = [
@@ -272,7 +277,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "6x÷3=2x，9÷3=3，所以答案為 3(2x+3)。",
-    "explanation": "6 與 9 的最大公因數是 3，因此 6x+9=3(2x+3)。",
+    "explanation": "6 與 9 的最大公因數是 3，因此 6x+9=3(2x+3)。 先把三視為候選共同因式，再逐項相除得到二倍未知數與三；回展時三分別乘回兩項，係數六與常數九都恢復，證明分解等值且已提出最大數字公因式。",
     "steps": [
       "求係數最大公因數 3。",
       "兩項除以 3 得 2x 與 3。",
@@ -300,7 +305,7 @@ export const QUESTIONS = [
         "reason": "第二項 9 不含 x，不能提出 x。"
       }
     ],
-    "misconceptionTarget": "把不共同的 x 提出，或把 9÷3 算成 6。",
+    "misconceptionTarget": "把不共同的 x 提出，或把 9÷3 算成 6。 判斷可提出的字母前，還要確認多項式的每一項都含有該字母。",
     "prerequisiteCheck": "只需整數整除與分配律。",
     "estimatedTimeSec": 60,
     "unitAndRoundingChecks": "無單位；全為精確整數係數，不涉及近似。",
@@ -319,7 +324,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "12a9a89daaa3e4a41257cc3b01e8c19f7d858f476f5b186d8ccad7c4c53985b3"
+    "contentSha256": "b69aba0803f21fdda73cee3eee4fa33d00b8eacd9da9759297c32320dca65f62"
   },
   {
     "questionId": "u12-s001-v002",
@@ -345,7 +350,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "12a²b÷6ab=2a；18ab²÷6ab=3b，兩者皆整除，因此共同最大部分是 6ab。",
-    "explanation": "係數最大公因數為 6；a 的最低次方是 1，b 的最低次方也是 1，所以為 6ab。",
+    "explanation": "係數最大公因數為 6；a 的最低次方是 1，b 的最低次方也是 1，所以為 6ab。 將六倍的甲乙分別除進兩個單項式，所得商為二甲與三乙，確定係數六和兩個一次字母都能整除；若提高任一字母次方，就會無法整除含一次方的那一項。",
     "steps": [
       "求 gcd(12,18)=6。",
       "比較 a 次方取 1。",
@@ -373,7 +378,7 @@ export const QUESTIONS = [
         "reason": "第二項只有 a¹，無法被 a² 整除。"
       }
     ],
-    "misconceptionTarget": "把最高次方誤當共同次方。",
+    "misconceptionTarget": "把最高次方誤當共同次方。 共同字母的次方必須取各項較小的指數，才能同時整除兩個單項式。",
     "prerequisiteCheck": "需會最大公因數及同底數次方相除。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "無實際單位；次方為整數且結果精確。",
@@ -392,7 +397,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "58c4fce978b35e7df6102710af4ec2d892d13568b2a9b76f9dd00b3be970d0a5"
+    "contentSha256": "a441c34b20d712e9d03963b609bdcdf0d47dd755b6fd86959a2e51f2310b6267"
   },
   {
     "questionId": "u12-s001-v003",
@@ -418,7 +423,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "8x³÷4x²=2x，12x²÷4x²=3；括號內 2x 與 3 無公因式。",
-    "explanation": "係數取 4，x 的最低次方取 2，故 8x³+12x²=4x²(2x+3)。",
+    "explanation": "係數取 4，x 的最低次方取 2，故 8x³+12x²=4x²(2x+3)。 四倍平方項同時整除八倍三次項與十二倍平方項，兩個商依序是二倍一次項與三；括號內係數互質且沒有共同未知數，所以不只是等值，也已完成最大公因式分解。",
     "steps": [
       "求係數公因數 4。",
       "x³ 與 x² 取 x²。",
@@ -465,7 +470,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1e16572e5e001d1a8a7449b1a7d50befcadb89a3ab5e14d2627fe36afffda4f8"
+    "contentSha256": "56d06e3df2d6fda9c3c96aae9eb9fce84a61e54923d3aa5a6401c0d2b4ac5f93"
   },
   {
     "questionId": "u12-s001-v004",
@@ -491,7 +496,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "-5y·3y=-15y²，-5y·(-2)=+10y，因此答案正確。",
-    "explanation": "提出 -5y：(-15y²)÷(-5y)=3y，10y÷(-5y)=-2。",
+    "explanation": "提出 -5y：(-15y²)÷(-5y)=3y，10y÷(-5y)=-2。 題目指定括號首項為正，因此把負五倍未知數提出；第一項除後為正三倍未知數，第二項除以負數後為負二，展開時負五乘負二回到正十，符號與原式一致。",
     "steps": [
       "共同部分為 5y。",
       "為使括號首項正，提出 -5y。",
@@ -538,7 +543,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3c9cb8f3499559f29e22547250e7b08d23937f8b779044f9abb7f3764487e2c7"
+    "contentSha256": "e0ebb82e194394b628d817830b8017241e5072319a5a8b4c88c5d1c5a893b515"
   },
   {
     "questionId": "u12-s001-v005",
@@ -564,7 +569,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "(x-2)(3x+5)=3x(x-2)+5(x-2)，完全等於原式。",
-    "explanation": "令 M=x-2，原式為 3xM+5M=M(3x+5)。",
+    "explanation": "令 M=x-2，原式為 3xM+5M=M(3x+5)。 把整個差式暫記為同一因式後，原式就是三倍未知數乘該因式再加五乘該因式；由分配律逆向提出，括號中保留三倍未知數與五，兩項不能錯合併。",
     "steps": [
       "辨認共同整體 x-2。",
       "提出共同括號。",
@@ -611,7 +616,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8253fb211b13a50bb112e37745ebdf6dd509f4903f235dff98f89029903a86f8"
+    "contentSha256": "87bdf939c0578c453656c793b8042656ca2a9cb7345c26edda03ea09cb41390c"
   },
   {
     "questionId": "u12-s001-v006",
@@ -637,7 +642,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "三個商為 2x、-3y、4；括號內三項無共同因式。",
-    "explanation": "係數最大公因數為 3；三項共同含 x、y 各一次。",
+    "explanation": "係數最大公因數為 3；三項共同含 x、y 各一次。 三個係數的最大公因數是三，且每項至少各含一個甲與一個乙；逐項相除得到二甲、負三乙與四，將三倍甲乙乘回三個商，係數、次方與負號都回到原式。",
     "steps": [
       "gcd(6,9,12)=3。",
       "比較 x、y 最低次方皆為 1。",
@@ -684,7 +689,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1f4a0eb236b079e1292076a186ad5a4337d83ada57e61e50ce6cbbd93f94001b"
+    "contentSha256": "2c3a7929d2676bf652e2764b5ed04228d6cbbbf85f4b2f45ad0be5fbdfdc62e2"
   },
   {
     "questionId": "u12-s001-v007",
@@ -710,7 +715,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(x+y)(2a-3b)=2a(x+y)-3b(x+y)，與原式逐項相同。",
-    "explanation": "把 M=x+y，原式為 2aM-3bM=M(2a-3b)。",
+    "explanation": "把 M=x+y，原式為 2aM-3bM=M(2a-3b)。 兩項都含完整的和式而外層分別是二倍甲與負三倍乙，所以提出共同和式後必須原樣保留這兩個不同係數；重新分配可逐項恢復原式，負號也不會消失。",
     "steps": [
       "將共同括號視為 M。",
       "使用 AM+BM=(A+B)M。",
@@ -757,7 +762,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "2275b9c79f2699745ed45217f203cb66d708e3681e8436347589436a55dcf6ec"
+    "contentSha256": "8c336a60c12235ef5c2c3621223153574f14a442335e982f7d6508e7274f61f4"
   },
   {
     "questionId": "u12-s001-v008",
@@ -783,7 +788,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開 10m²n²·2m=20m³n²，乘 -3n 得 -30m²n³；且無剩餘公因式。",
-    "explanation": "逐項相除得 2m 與 -3n；最大共同部分確為 10m²n²。",
+    "explanation": "逐項相除得 2m 與 -3n；最大共同部分確為 10m²n²。 係數二十與三十的最大公因數是十，兩項的甲最低次方與乙最低次方都為二；提出後的二甲與負三乙沒有共同字母或數字，回展也正好恢復兩個原項。",
     "steps": [
       "求 20、30 的 gcd=10。",
       "m³、m² 取 m²；n²、n³ 取 n²。",
@@ -830,7 +835,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5fa4c7f5a91d8489eed250fb18238a49159ca24a48de429e199314ef633a684c"
+    "contentSha256": "d75d6844a63111b752bcc995d81aab49c09663c45614d401be731397970ab81f"
   },
   {
     "questionId": "u12-s001-v009",
@@ -856,7 +861,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "P=2x(x-1)[2x+3]，所有共同部分一次提出。",
-    "explanation": "兩項係數 4、6 共同 2，x²、x 共同 x，且都含 x-1。",
+    "explanation": "兩項係數 4、6 共同 2，x²、x 共同 x，且都含 x-1。 兩項除了係數二與一次未知數外，還共同含整個差式，因此一次提出二倍未知數乘差式最完整；兩項相除後成為二倍未知數與三，括號內已無共同因式。",
     "steps": [
       "比較數字得到 2。",
       "比較 x 次方得到 x。",
@@ -903,7 +908,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b9828b4cbbd7659b1e5ed1eb65f44434c3e5748a715c731090d61225e7cca75e"
+    "contentSha256": "a38067eb9118ff8c0205513fc7618e3030f2d03fe439b8d8e7146d3f7af3a058"
   },
   {
     "questionId": "u12-s001-v010",
@@ -929,7 +934,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "共同 7 公分乘總份數 2x+3，展開即原總長。",
-    "explanation": "14x+21=7·2x+7·3=7(2x+3)。",
+    "explanation": "14x+21=7·2x+7·3=7(2x+3)。 十四倍未知數與二十一都可改寫成七公分乘份數，前者是二倍未知數份、後者是三份；提出七公分後括號表示總份數，展開仍得到原本兩段總長。",
     "steps": [
       "找兩段長度共同單位 7 公分。",
       "各段換算為 7 公分的份數。",
@@ -957,7 +962,7 @@ export const QUESTIONS = [
         "reason": "把總和誤寫成乘積，量值改變。"
       }
     ],
-    "misconceptionTarget": "把共同單位與份數混淆。",
+    "misconceptionTarget": "把共同單位與份數混淆。 共同長度是括號外的單位量，括號內則表示各段換算後的份數。",
     "prerequisiteCheck": "只需整數公因數與單位解讀。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "原式與答案皆為公分；2x+3 是無單位份數式，無近似。",
@@ -976,7 +981,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8702ddc7a5ca57b26c0cf1d02cb7b65315c60c70c2cd1e81ac98004c5f5f2a25"
+    "contentSha256": "4b64814360708b27036f1c331cb0ffd448f2340856bc953139eee0af50b0abac"
   },
   {
     "questionId": "u12-s001-v011",
@@ -1002,7 +1007,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "兩區寬分別為 3x、5 公分，相加為 3x+5 公分。",
-    "explanation": "總面積=18x²+30x=6x(3x+5)，共同高度為 6x，所以總寬 3x+5。",
+    "explanation": "總面積=18x²+30x=6x(3x+5)，共同高度為 6x，所以總寬 3x+5。 共同高度六倍未知數分別除進兩區面積，左區寬為三倍未知數、右區寬為五；並排後總寬只能相加成三倍未知數加五，面積式本身不能誤當成長度。",
     "steps": [
       "把兩區面積相加。",
       "提出共同高度 6x。",
@@ -1049,7 +1054,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8882dde030f2fea3907edae7e4a51c8f895e229b2c06519fdd781d8c75265d76"
+    "contentSha256": "7eeed872ef147c7ada7fa601f8cac54cec4cd194c5cf147c7b26f96f12d737e8"
   },
   {
     "questionId": "u12-s001-v012",
@@ -1075,7 +1080,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "因 m、n 為正整數，兩種批數都為正整數，12m 可實際分批。",
-    "explanation": "24mn=12m·2n，36m=12m·3，因此最大共同批量是 12m。",
+    "explanation": "24mn=12m·2n，36m=12m·3，因此最大共同批量是 12m。 數字部分二十四與三十六的最大公因數為十二，兩式都含一次甲但只有第一式含乙；除以十二甲後批數為二乙與三，題設正整數條件確保兩者都是整批。",
     "steps": [
       "求數字最大公因數 12。",
       "找共同字母只有 m。",
@@ -1122,7 +1127,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a5eae26c30f4c131380378dd3fe2ade4e8672135f70d363dccd42a95acd30b90"
+    "contentSha256": "bc7b7f7434e9e44e1d3147416aa5e89944880349da45647a08712db9cfe56deb"
   }
 ];
 
@@ -1147,7 +1152,8 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "係數最大公因數為 12，字母共同部分為 x²y²。",
       "原式=12x²y²(2x-3y+1)。",
-      "展開依序得 24x³y²、-36x²y³、12x²y²，與原式一致。"
+      "展開依序得 24x³y²、-36x²y³、12x²y²，與原式一致。",
+      "完整檢查時，十二同時整除三個係數，甲與乙的最低次方都為二；三項除以十二甲平方乙平方依序得到二甲、負三乙與一。括號內沒有共同因式，再把外因式分配回三項，可逐一恢復原係數、次方與符號。"
     ],
     "alternativeSolutions": [
       "也可先提 12x²，再從括號提出 y²；最後合併外層因式，結果相同。"
@@ -1181,7 +1187,7 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "followThroughPolicy": "若前一步只把某一商算錯，後續展開依其結果一致，可保留方法分；若共同次方選到不能整除的高次方，後續不給完整性分。",
     "unitAndNotationRules": [
-      "x、y 次方用上標或 ^ 均可。",
+      "x、y 的次方請一律使用上標表示。",
       "無實際單位。"
     ],
     "answerOnlyPolicy": "只寫最終分解且正確，最高 2 分；必須有共同因式判斷或展開證據才得 3 分。",
@@ -1197,7 +1203,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e3cee54de84bad65e854e626cc9cc2e55c7b3ff02098a7f9cc7004a9184cf477"
+    "contentSha256": "9430e80ef1761d5ec2bc4e4f22ed7f21977e7c68748ee23bcd798cb059ae91a5"
   },
   {
     "questionId": "u12-s001-cr002",
@@ -1219,7 +1225,8 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "三項都含 a-b，外層係數的數字最大公因數為 4。",
       "P=4(a-b)(2a-3c+1)。",
-      "括號 2a-3c+1 沒有共同數字或字母因式。"
+      "括號 2a-3c+1 沒有共同數字或字母因式。",
+      "三項共同含完整的甲減乙，外層數字八、十二、四的最大公因數是四，而甲與丙並非每項都有；因此一次提出四乘甲減乙後，商為二甲、負三丙與一。括號內已無共同部分，展開即可回到原式。"
     ],
     "alternativeSolutions": [
       "可先提出 a-b 得 (a-b)(8a-12c+4)，再從第二括號提出 4。"
@@ -1269,7 +1276,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c04309fbfeeed362450c02953fa7c6d42814661fe6cc1719533b587fa38a339e"
+    "contentSha256": "829a48db54d3aa24a7c7f781fe77383b9e79cb71be1544dcd2cedaf2554a63ea"
   }
 ];
 
@@ -1278,7 +1285,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v001",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "12a9a89daaa3e4a41257cc3b01e8c19f7d858f476f5b186d8ccad7c4c53985b3",
+    "contentSha256": "b69aba0803f21fdda73cee3eee4fa33d00b8eacd9da9759297c32320dca65f62",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "6x÷3=2x，9÷3=3，所以答案為 3(2x+3)。",
     "derivedAnswer": "3(2x+3)",
@@ -1312,7 +1319,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v002",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "58c4fce978b35e7df6102710af4ec2d892d13568b2a9b76f9dd00b3be970d0a5",
+    "contentSha256": "a441c34b20d712e9d03963b609bdcdf0d47dd755b6fd86959a2e51f2310b6267",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "12a²b÷6ab=2a；18ab²÷6ab=3b，兩者皆整除，因此共同最大部分是 6ab。",
     "derivedAnswer": "6ab",
@@ -1346,7 +1353,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v003",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "1e16572e5e001d1a8a7449b1a7d50befcadb89a3ab5e14d2627fe36afffda4f8",
+    "contentSha256": "56d06e3df2d6fda9c3c96aae9eb9fce84a61e54923d3aa5a6401c0d2b4ac5f93",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "8x³÷4x²=2x，12x²÷4x²=3；括號內 2x 與 3 無公因式。",
     "derivedAnswer": "4x²(2x+3)",
@@ -1380,7 +1387,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v004",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "3c9cb8f3499559f29e22547250e7b08d23937f8b779044f9abb7f3764487e2c7",
+    "contentSha256": "e0ebb82e194394b628d817830b8017241e5072319a5a8b4c88c5d1c5a893b515",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "-5y·3y=-15y²，-5y·(-2)=+10y，因此答案正確。",
     "derivedAnswer": "-5y(3y-2)",
@@ -1414,7 +1421,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v005",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "8253fb211b13a50bb112e37745ebdf6dd509f4903f235dff98f89029903a86f8",
+    "contentSha256": "87bdf939c0578c453656c793b8042656ca2a9cb7345c26edda03ea09cb41390c",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(x-2)(3x+5)=3x(x-2)+5(x-2)，完全等於原式。",
     "derivedAnswer": "(x-2)(3x+5)",
@@ -1448,7 +1455,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v006",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "1f4a0eb236b079e1292076a186ad5a4337d83ada57e61e50ce6cbbd93f94001b",
+    "contentSha256": "2c3a7929d2676bf652e2764b5ed04228d6cbbbf85f4b2f45ad0be5fbdfdc62e2",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "三個商為 2x、-3y、4；括號內三項無共同因式。",
     "derivedAnswer": "3xy(2x-3y+4)",
@@ -1482,7 +1489,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v007",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "2275b9c79f2699745ed45217f203cb66d708e3681e8436347589436a55dcf6ec",
+    "contentSha256": "8c336a60c12235ef5c2c3621223153574f14a442335e982f7d6508e7274f61f4",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(x+y)(2a-3b)=2a(x+y)-3b(x+y)，與原式逐項相同。",
     "derivedAnswer": "(x+y)(2a-3b)",
@@ -1516,7 +1523,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v008",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "5fa4c7f5a91d8489eed250fb18238a49159ca24a48de429e199314ef633a684c",
+    "contentSha256": "d75d6844a63111b752bcc995d81aab49c09663c45614d401be731397970ab81f",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開 10m²n²·2m=20m³n²，乘 -3n 得 -30m²n³；且無剩餘公因式。",
     "derivedAnswer": "結果正確且已提出最大共同單項式",
@@ -1550,7 +1557,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v009",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "b9828b4cbbd7659b1e5ed1eb65f44434c3e5748a715c731090d61225e7cca75e",
+    "contentSha256": "a38067eb9118ff8c0205513fc7618e3030f2d03fe439b8d8e7146d3f7af3a058",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "P=2x(x-1)[2x+3]，所有共同部分一次提出。",
     "derivedAnswer": "2x(x-1)",
@@ -1584,7 +1591,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v010",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "8702ddc7a5ca57b26c0cf1d02cb7b65315c60c70c2cd1e81ac98004c5f5f2a25",
+    "contentSha256": "4b64814360708b27036f1c331cb0ffd448f2340856bc953139eee0af50b0abac",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "共同 7 公分乘總份數 2x+3，展開即原總長。",
     "derivedAnswer": "7(2x+3) 公分",
@@ -1618,7 +1625,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v011",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "8882dde030f2fea3907edae7e4a51c8f895e229b2c06519fdd781d8c75265d76",
+    "contentSha256": "7eeed872ef147c7ada7fa601f8cac54cec4cd194c5cf147c7b26f96f12d737e8",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "兩區寬分別為 3x、5 公分，相加為 3x+5 公分。",
     "derivedAnswer": "3x+5 公分",
@@ -1652,7 +1659,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s001-v012",
     "unitId": "u12",
     "skillId": "factoring-common",
-    "contentSha256": "a5eae26c30f4c131380378dd3fe2ade4e8672135f70d363dccd42a95acd30b90",
+    "contentSha256": "bc7b7f7434e9e44e1d3147416aa5e89944880349da45647a08712db9cfe56deb",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "因 m、n 為正整數，兩種批數都為正整數，12m 可實際分批。",
     "derivedAnswer": "12m 件",

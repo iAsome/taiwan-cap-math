@@ -31,19 +31,19 @@ export default {
     "glossary": [
       {
         "term": "反比",
-        "definition": "兩量乘積固定；一量乘幾倍，另一量除以同樣倍數。"
+        "definition": "兩個非零變數滿足xy=k或y=k/x，且反比常數k≠0。"
       },
       {
         "term": "反比常數",
-        "definition": "xy=k 中固定的乘積 k。"
+        "definition": "各組對應值的固定非零乘積k=xy。"
       },
       {
         "term": "固定總量",
-        "definition": "例如路程、工作量或矩形面積在比較過程中不改變。"
+        "definition": "比較過程中不改變的路程、工作量、面積或資料量。"
       },
       {
         "term": "相反倍數",
-        "definition": "x 乘 r 倍時，y 乘 1/r 倍。"
+        "definition": "一量乘r倍時，另一量乘1/r倍，使乘積不變。"
       }
     ],
     "notation": [
@@ -61,11 +61,11 @@ export default {
       }
     ],
     "conceptNarrative": [
-      "反比不是一增一減就足夠，而是每組 x×y 都相同。",
-      "固定路程下，速度×時間=路程，因此速度與時間成反比。",
-      "工人數與天數成反比需要每位工人的效率相同，且總工作量不變。",
-      "x 變成 4 倍時，y 變成 1/4；若只少固定數量，通常不是反比。",
-      "x、y 不能為 0，因為 y=k/x 需除以 x；生活量還常限制為正。"
+      "國中數學所稱反比，是兩個非零變數滿足xy=k或y=k/x，其中反比常數k必須不等於0；若k=0，便不能形成反比的兩個分支。",
+      "反比不是看到一量增加、另一量減少就成立，而是每一組對應資料的乘積都等於同一個非零常數。",
+      "固定路程時速度×時間等於路程；固定工作量且每人效率相同時，人數×天數等於總人日，這些才可建立反比。",
+      "一量乘r倍時，另一量要除以r，乘積才不變；若情境有整數趟次或完整人數限制，應在理論值後依題意取整。",
+      "因k≠0且x不能為0，y也不會為0；生活情境還常把x、y限制為正數，但代數反比可以位於其他象限。"
     ],
     "formalDefinitions": [
       {
@@ -103,66 +103,74 @@ export default {
     "method": [
       {
         "step": 1,
-        "instruction": "找出可能固定的總量。",
-        "check": "路程、面積、工作量是否真的不變？"
+        "instruction": "先找出題目明示不變的總量與模型條件。",
+        "check": "工作題確認同效率，速率題確認固定資料或路程。"
       },
       {
         "step": 2,
-        "instruction": "計算每組乘積 xy。",
-        "check": "是否所有乘積相同？"
+        "instruction": "以非零數對計算k=xy，並確認k≠0。",
+        "check": "沒有誤用y÷x的正比判準。"
       },
       {
         "step": 3,
-        "instruction": "寫出 k 或 x1y1=x2y2。",
-        "check": "單位乘積有沒有意義？"
+        "instruction": "寫成xy=k或y=k/x，再代入新的已知量。",
+        "check": "分母x不是零。"
       },
       {
         "step": 4,
-        "instruction": "解未知數。",
-        "check": "倍數方向是否相反？"
+        "instruction": "解出未知量，保留精確分數，最後才依情境處理整數限制。",
+        "check": "至少完成等條件應向上取整而非四捨五入。"
       },
       {
         "step": 5,
-        "instruction": "檢查條件與情境。",
-        "check": "效率、工作時間、整數限制是否一致？"
+        "instruction": "用新數對重算乘積，並檢查變化方向是否相反。",
+        "check": "新舊乘積相同且單位合理。"
       }
     ],
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "x、y 成反比，x=6、y=8，求 k。",
+        "prompt": "x、y成反比，x=6、y=8，求k。",
         "solutionSteps": [
-          "k=xy。",
-          "k=6×8=48。"
+          "由反比寫k=xy且k≠0。",
+          "代入得到k=6×8=48。",
+          "以y=48÷6=8驗算。"
         ],
-        "answer": "48。"
+        "answer": "48。",
+        "why": "反比常數是兩個非零對應值的乘積，不是它們的比值。六乘八得到四十八，且把四十八除以六會回到八，因此原數對確實滿足同一反比關係。"
       },
       {
         "exampleId": "L2",
-        "prompt": "承上，x=12 時求 y。",
+        "prompt": "承上，x=12時求y。",
         "solutionSteps": [
-          "12y=48。",
-          "y=4。"
+          "沿用乘積xy=48。",
+          "列12y=48，解得y=4。",
+          "驗算12×4=48。"
         ],
-        "answer": "4。"
+        "answer": "4。",
+        "why": "x由六變十二是放大兩倍，反比中的y應由八縮成四，才會保持乘積四十八。代數解與相反倍數的判斷一致，可排除把y也放大兩倍的錯誤。"
       },
       {
         "exampleId": "L3",
-        "prompt": "資料 (2,18)、(3,12)、(6,7) 是否反比？",
+        "prompt": "資料(2,18)、(3,12)、(6,7)是否反比？",
         "solutionSteps": [
-          "乘積為 36、36、42。",
-          "乘積不全相同。"
+          "計算三個乘積36、36、42。",
+          "比較發現第三組不等於前兩組。",
+          "因此所有資料無法共用同一非零k。"
         ],
-        "answer": "不是反比。"
+        "answer": "不是反比。",
+        "why": "多組資料必須每一組乘積都相同，前兩組成立不能代表第三組也成立。六乘七等於四十二而不是三十六，所以不存在一個反比常數同時描述三組資料。"
       },
       {
         "exampleId": "L4",
-        "prompt": "同效率 8 人做 15 天的工作，改 12 人需幾天？",
+        "prompt": "同效率8人做15天的工作，改12人需幾天？",
         "solutionSteps": [
-          "總人日數 8×15=120。",
-          "12×天數=120，得 10 天。"
+          "以8×15算得120人日。",
+          "列12×天數=120。",
+          "解得10天並驗算12×10=120。"
         ],
-        "answer": "10 天。"
+        "answer": "10天。",
+        "why": "同效率與總工作固定使人數乘天數保持一百二十人日。人數由八增加到十二後，天數必須下降；算得十天後重新相乘仍是一百二十，符合反比模型。"
       }
     ],
     "commonMistakes": [
@@ -249,7 +257,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "1c14b48be8447fc951f4ad6510c03baa7d3687c036b280d711f9de8c99185ffa"
+    "contentSha256": "529fb2ee8d20ba120af09cf80277efb1039a5dc322428e1466e7a4bd7b67978c"
   },
   "mcQuestions": [
     {
@@ -274,10 +282,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "代入y=48/x，x=6時y=8。",
       "mainExplanation": "反比常數是乘積。",
-      "explanation": "反比常數是乘積。",
+      "explanation": "反比關係可寫成xy=k，其中k不為零。把x=6、y=8代入，得到k=6×8=48。再用y=48/x檢查：x=6時y=48÷6=8，與題目相符，因此反比常數是48而不是兩量的和或比值，定義與驗算互相一致。",
       "steps": [
-        "由反比關係求固定乘積：6×8=48",
-        "把48代回 xy，可驗證每組資料都應維持相同乘積"
+        "由成反比寫出xy=k且k≠0。",
+        "代入x=6、y=8，計算k=48。",
+        "用y=48÷6=8驗算原數對。"
       ],
       "optionAnalysis": [
         {
@@ -301,7 +310,7 @@ export default {
           "reason": "4/3是y/x。"
         }
       ],
-      "misconceptionTarget": "把反比常數當比值。",
+      "misconceptionTarget": "把反比常數誤算成y÷x，或把兩量相加而沒有檢查固定乘積。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -322,7 +331,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "da9d61b025f259d69e07e2bda94a9c3fcaca255172184bd3681de062575cedd6"
+      "contentSha256": "ccdd52dea9824645d96b840f608a6417ca816f9818637a7b31f85f1c1e517289"
     },
     {
       "questionId": "u06-s006-v002",
@@ -344,12 +353,13 @@ export default {
         "4"
       ],
       "answerIndex": 3,
-      "independentSolution": "反比常數為 xy=12×3=36；當 x=9 時，y=36÷9=4，並以9×4=36驗算。",
+      "independentSolution": "只使用題幹所給關係式：把x=9代入y=36/x，得y=36÷9=4；再算9×4=36，驗證固定乘積。",
       "mainExplanation": "直接代入反比式。",
-      "explanation": "直接代入反比式。",
+      "explanation": "題目已給y=36/x，不需要虛構其他數對。直接把x=9代入，得到y=36÷9=4；用9×4=36反算，乘積與式中的非零常數36一致，所以4是唯一正確值，全部推論都來自題幹資料。",
       "steps": [
-        "先由已知資料求反比常數：12×3=36",
-        "當x=9時，y=36÷9=4，並驗算9×4=36"
+        "讀出反比常數k=36。",
+        "將x=9代入y=36/x，算得y=4。",
+        "檢查9×4=36，確認乘積固定。"
       ],
       "optionAnalysis": [
         {
@@ -373,7 +383,7 @@ export default {
           "reason": "y=36÷9=4。"
         }
       ],
-      "misconceptionTarget": "把除法當加減。",
+      "misconceptionTarget": "自行加入題幹沒有提供的數對，或把三十六除以九錯做成加減運算。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -394,7 +404,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "232f1f37c68eaaa46b1a8dc7d02eb2a4b1580623b201095a2663b33b8718d50b"
+      "contentSha256": "bfd7afde252a1e3d744632e1b33a4e9e495fde96ec2483e20375875f8eede85d"
     },
     {
       "questionId": "u06-s006-v003",
@@ -418,11 +428,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "可寫y=36/x。",
       "mainExplanation": "逐組計算xy。",
-      "explanation": "逐組計算xy。",
+      "explanation": "判斷反比要逐組計算xy。第三個選項的乘積依序為2×18=36、3×12=36、6×6=36，全都固定且不為零，因此可寫成y=36/x。其他選項至少有一個乘積不同，不能只憑一增一減的外觀判斷。",
       "steps": [
-        "2×18=36",
-        "3×12=36",
-        "6×6=36"
+        "分別計算各選項中每個數對的xy。",
+        "第三項三個乘積都等於36。",
+        "確認其餘選項乘積不全相同，第三項唯一成立。"
       ],
       "optionAnalysis": [
         {
@@ -446,7 +456,7 @@ export default {
           "reason": "比值固定4/3。"
         }
       ],
-      "misconceptionTarget": "只看一增一減或固定差。",
+      "misconceptionTarget": "只看到x增大、y減小就判反比，沒有逐組檢查乘積是否固定。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -467,7 +477,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0e19d17e9ce539971078b3e74fa34837ef6184a4f3ce23112d7ce42cd7ebbe48"
+      "contentSha256": "068454a4b512819c317c70d7dd38bec325205901dea90379e60f3069bcc4e757"
     },
     {
       "questionId": "u06-s006-v004",
@@ -491,11 +501,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "10×6=60。",
       "mainExplanation": "保持乘積4×15=10×y。",
-      "explanation": "保持乘積4×15=10×y。",
+      "explanation": "由x=4、y=15可得固定乘積k=4×15=60。當x=10時，10y=60，所以y=6。驗算10×6=60，與原來的4×15相同；x放大2.5倍時y縮成原來的1/2.5，也符合反比，而不是讓兩量一起跟著放大。",
       "steps": [
-        "k=60",
-        "10y=60",
-        "y=6"
+        "計算反比常數k=4×15=60。",
+        "列10y=60，解得y=6。",
+        "比較10×6與4×15，確認乘積相同。"
       ],
       "optionAnalysis": [
         {
@@ -519,7 +529,7 @@ export default {
           "reason": "37.5把反比當正比。"
         }
       ],
-      "misconceptionTarget": "把x倍率2.5也乘到y。",
+      "misconceptionTarget": "把x的放大倍率也乘到y，誤把反比當成同向變化的正比。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -540,7 +550,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ccee5efa93ac1c7dda7dc33cf35dbb789bd66fb0fd12046640a33fc9527968a4"
+      "contentSha256": "5237d0b2686690bc4efdef619e27016e4dde80ed55a8bcf3ced887965b08d2d8"
     },
     {
       "questionId": "u06-s006-v005",
@@ -564,11 +574,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "新乘積3x×y/3=xy。",
       "mainExplanation": "令xy=k，(3x)y'=k，因此y'=y/3。",
-      "explanation": "令xy=k，(3x)y'=k，因此y'=y/3。",
+      "explanation": "設原數對滿足xy=k且k≠0。x變成3x後，若新值為y'，則(3x)y'=xy；兩邊除以3x得到y'=y/3。因此一量乘3倍，另一量必須除以3，乘積才維持不變，變化方向與正比恰好相反。",
       "steps": [
-        "xy=k",
-        "3xy'=k",
-        "y'=y/3"
+        "寫原關係xy=k。",
+        "將新關係寫成(3x)y'=k。",
+        "比較兩式得y'=y/3，並驗證乘積仍為xy。"
       ],
       "optionAnalysis": [
         {
@@ -592,7 +602,7 @@ export default {
           "reason": "乘積固定，所以y需除以3。"
         }
       ],
-      "misconceptionTarget": "把反比與正比混淆。",
+      "misconceptionTarget": "把反比誤當正比使兩量同乘三，或把縮為三分之一說成減少三。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -613,7 +623,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "edb06609af8d186805cb47666546d0acaefca34739987ac0ef4a2153b96cfd4f"
+      "contentSha256": "89c3f77479dd7019bcca917b98c65544e2849268fd25b784cbf7690e0a6ef4f7"
     },
     {
       "questionId": "u06-s006-v006",
@@ -637,11 +647,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "4×18=72且4:18=2:9。",
       "mainExplanation": "比例與乘積共同決定實際值。",
-      "explanation": "比例與乘積共同決定實際值。",
+      "explanation": "因x:y=2:9且兩量皆為正，可設x=2t、y=9t，其中t>0。代入固定乘積七十二後，可求得共同倍數t=2。於是x=2×2=4、y=18；檢查4×18=72且4:18=2:9，乘積與比例兩項條件都同時成立。",
       "steps": [
-        "18k²=72",
-        "k=2",
-        "x=4"
+        "依正數比設x=2t、y=9t且t>0。",
+        "由18t²=72求得t=2。",
+        "算x=4並以4×18=72、4:18=2:9驗算。"
       ],
       "optionAnalysis": [
         {
@@ -665,7 +675,7 @@ export default {
           "reason": "18是份數乘積。"
         }
       ],
-      "misconceptionTarget": "把k²當k。",
+      "misconceptionTarget": "求得t²後忘記正值條件，或把比例中的份數2直接當成實際x。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -686,7 +696,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3521978c8e4cc814fc7b374f4382615de838835dd3ea2a9905a1f4f4389afc23"
+      "contentSha256": "4fcc92ec1b3247430a77e7b594558bf9708b5a0911360fd546521f2d8c1f0108"
     },
     {
       "questionId": "u06-s006-v007",
@@ -710,10 +720,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "75×4=300。",
       "mainExplanation": "用v1t1=v2t2。",
-      "explanation": "用v1t1=v2t2。",
+      "explanation": "同一路程下速度與時間的乘積固定。原路程為60×5=300公里；速度提高到75公里/時後，所需時間為300÷75=4小時。用75×4=300公里驗算，確實完成相同路程。",
       "steps": [
-        "60×5=75t",
-        "t=4"
+        "由原速度與時間算路程60×5=300公里。",
+        "用300÷75求新時間4小時。",
+        "以75×4=300公里核對固定路程。"
       ],
       "optionAnalysis": [
         {
@@ -737,7 +748,7 @@ export default {
           "reason": "把速度增加量加到時間。"
         }
       ],
-      "misconceptionTarget": "把反比方向弄反。",
+      "misconceptionTarget": "看到速度增加就把時間也增加，忽略固定路程下兩者為反向倍數。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -758,7 +769,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f4ee48c46150e8d45c37e3ed90100a15a17d94dd170d10c9e8cf79eb6dc1a130"
+      "contentSha256": "91f05e6e47cf1f8b72392253e298e0a3253ac0491ae1176aa3b2cdc6d6efefac"
     },
     {
       "questionId": "u06-s006-v008",
@@ -782,10 +793,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "12×10=120人日。",
       "mainExplanation": "人數×天數固定。",
-      "explanation": "人數×天數固定。",
+      "explanation": "每位工人的效率相同且工作總量固定，所以人數×天數等於總人日。原工作量是8×15=120人日；改由12人工作，需要120÷12=10天。反算12×10=120人日，與原工作量一致。",
       "steps": [
-        "8×15=12t",
-        "t=10"
+        "計算固定總工作量8×15=120人日。",
+        "用120÷12求得10天。",
+        "以12×10=120人日驗算。"
       ],
       "optionAnalysis": [
         {
@@ -809,7 +821,7 @@ export default {
           "reason": "把15乘1.5。"
         }
       ],
-      "misconceptionTarget": "忽略效率相同。",
+      "misconceptionTarget": "沒有確認同效率與固定工作量，就直接套用人數和天數的反比公式。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -830,7 +842,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4764b9110b209dfb781a75ab572a445d0fd9641247977b280db6a91d592698c4"
+      "contentSha256": "9614f499404bdf3420f893e98dae5550181d79e3a68b77b273fc0d44aaf39a6b"
     },
     {
       "questionId": "u06-s006-v009",
@@ -854,10 +866,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "16×6=96。",
       "mainExplanation": "固定面積下長×寬=96。",
-      "explanation": "固定面積下長×寬=96。",
+      "explanation": "矩形面積固定為96平方公分，所以長與寬的乘積必須保持96。長改為16公分時，寬=96÷16=6公分；驗算16×6=96平方公分，與原來12×8的面積相同。",
       "steps": [
-        "原寬8",
-        "新寬6"
+        "依固定面積寫長×寬=96。",
+        "把長16代入，算寬=96÷16=6公分。",
+        "用16×6=96平方公分驗算。"
       ],
       "optionAnalysis": [
         {
@@ -881,7 +894,7 @@ export default {
           "reason": "面積192。"
         }
       ],
-      "misconceptionTarget": "用固定差。",
+      "misconceptionTarget": "把長增加四公分就令寬減四公分，錯用固定差而非固定面積。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -902,7 +915,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ac1a1f6d5739f9423033c184099cdad630c3bc28b2b1b18e9c1ce8609221b577"
+      "contentSha256": "93389fa25d2c3d4bf0bb33b803360bbac15785134a56572a74f6bf4e9d7a0df4"
     },
     {
       "questionId": "u06-s006-v010",
@@ -926,10 +939,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "固定工作量為3個水龍頭×8分鐘=24龍頭分鐘；改用4個水龍頭時，時間=24÷4=6分鐘。",
       "mainExplanation": "每個水龍頭流量相同且同時開啟。",
-      "explanation": "每個水龍頭流量相同且同時開啟。",
+      "explanation": "水箱容量固定，且每個水龍頭流量相同並同時開啟，因此水龍頭數×時間固定。原來是3×8=24龍頭分鐘；改用4個時，時間=24÷4=6分鐘。驗算4×6=24。",
       "steps": [
-        "3×8=24龍頭分鐘",
-        "24÷4=6"
+        "確認水箱容量與單一水龍頭流量固定。",
+        "計算總量指標3×8=24龍頭分鐘。",
+        "用24÷4=6分鐘並以4×6驗算。"
       ],
       "optionAnalysis": [
         {
@@ -953,7 +967,7 @@ export default {
           "reason": "方向反了。"
         }
       ],
-      "misconceptionTarget": "忽略相同流量。",
+      "misconceptionTarget": "忽略各水龍頭必須同流量且同時開啟，或讓龍頭增加而時間也增加。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -974,7 +988,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "efa8b5ed84f4b8efa847e41d6aadacf41dab6124ec364edbaf46c9c1c643aeee"
+      "contentSha256": "f00e8340f39e24724e4e8d7230df41e8f9ae892d9d94fb343a66b478cf6b00f9"
     },
     {
       "questionId": "u06-s006-v011",
@@ -998,10 +1012,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "20×30=600。",
       "mainExplanation": "速率×時間固定。",
-      "explanation": "速率×時間固定。",
+      "explanation": "在理想傳輸且資料量固定的假設下，速率×時間=600MB。速率改為20MB/s時，時間=600÷20=30秒。驗算20MB/s×30秒=600MB，單位相消後確實回到固定資料量，也符合速率較快、時間較短的方向。",
       "steps": [
-        "12×50=600",
-        "600/20=30"
+        "列出固定資料量600MB。",
+        "計算600MB÷20MB/s=30秒。",
+        "用20×30=600驗算速率與時間。"
       ],
       "optionAnalysis": [
         {
@@ -1025,7 +1040,7 @@ export default {
           "reason": "比例方向反。"
         }
       ],
-      "misconceptionTarget": "較快速率卻算更久。",
+      "misconceptionTarget": "速率提高後仍算出更久時間，或忽略題目限定的是理想固定資料量。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -1046,7 +1061,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bf842044945a2df4025562c1518274fe22281bb5d3135a124c13803faf12c2cc"
+      "contentSha256": "6fa84a0c62e6b3767194b70fa4fb366d2297d1df0695e2eca590b1c132cc03ff"
     },
     {
       "questionId": "u06-s006-v012",
@@ -1070,11 +1085,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "8×4=32≥30，8×3=24<30。",
       "mainExplanation": "先算理論值，再套整數限制。",
-      "explanation": "先算理論值，再套整數限制。",
+      "explanation": "總運量相當於6×5=30輛次。改用8輛時，理論上每輛需30÷8=3.75趟，但每一趟不可分割且題目問至少幾趟，所以必須向上取整為4趟。8×4=32足夠，8×3=24不足。",
       "steps": [
-        "6×5=30",
-        "30/8=3.75",
-        "向上取整4"
+        "計算固定總需求6×5=30輛次。",
+        "求理論值30÷8=3.75趟。",
+        "依完整趟次限制向上取整為4，並比較32與24。"
       ],
       "optionAnalysis": [
         {
@@ -1098,7 +1113,7 @@ export default {
           "reason": "總車趟30，30÷8=3.75；趟數須整數且至少完成，向上取整4。"
         }
       ],
-      "misconceptionTarget": "直接四捨五入。",
+      "misconceptionTarget": "把三點七五直接四捨五入，沒有依至少完成且趟次為整數的條件向上取整。",
       "prerequisiteCheck": {
         "skillIds": [
           "direct-variation"
@@ -1119,7 +1134,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c12791254be560898f63d38ff3e0b1f14e33f2c0ad874c8ed38ec1a0c67e1b76"
+      "contentSha256": "802cd278c243d01252032a026455b56e273164d880ffcc2bc5af4b9ddab00d20"
     }
   ],
   "constructedResponses": [
@@ -1140,17 +1155,19 @@ export default {
         "代入並驗算。"
       ],
       "fullCreditSolution": [
-        "k=5×18=90。",
-        "關係式y=90/x。",
-        "x=12時y=90/12=15/2；12×15/2=90。"
+        "反比定義為xy=k且k≠0；由x=5、y=18算得k=5×18=90，這個非零乘積決定唯一關係。",
+        "因此關係式為y=90/x，定義域須有x≠0，且所得y也不會等於零。",
+        "當x=12時，y=90÷12=15/2，也就是7.5。",
+        "以12×(15/2)=90驗算，乘積與原資料5×18相同，前後兩組資料都滿足反比。"
       ],
       "alternativeSolutions": [
         "可用5×18=12y直接求y=15/2。"
       ],
       "reasoningSteps": [
-        "k=5×18=90。",
-        "關係式y=90/x。",
-        "x=12時y=90/12=15/2；12×15/2=90。"
+        "由已知非零數對求固定乘積90。",
+        "寫出y=90/x並註明x不能為零。",
+        "代入x=12求y=15/2。",
+        "用新舊數對的乘積完成驗算。"
       ],
       "rubric": [
         {
@@ -1178,9 +1195,8 @@ export default {
       "unitNotationRules": "無單位；可註明x≠0。",
       "answerOnlyPolicy": "只寫7.5最多1分。",
       "commonErrors": [
-        "k算成18/5。",
-        "x增大時y也增大。",
-        "把90/12約錯。"
+        "把反比常數算成18÷5，混用了正比的固定比值。",
+        "x變大時也讓y變大，或把90÷12錯誤約分而未用乘積回查。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1195,7 +1211,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b900773d213fcdda418be47ca26d86361b61c41e6dc64cb029d2144b1e431e39"
+      "contentSha256": "33ddeacea90041d2d4e5810ac80025c26de60050c61e03bee1b1e05b317e820a"
     },
     {
       "questionId": "u06-s006-cr002",
@@ -1214,17 +1230,19 @@ export default {
         "用剩餘8人求剩餘天數。"
       ],
       "fullCreditSolution": [
-        "總工作量10×12=120人日。",
-        "前4天完成10×4=40人日，剩80人日。",
-        "剩8人工作需80÷8=10天。"
+        "每人效率相同且總工作量固定，所以原計畫的工作量為10×12=120人日。",
+        "前四天仍有10人工作，已完成10×4=40人日，因此剩下120-40=80人日。",
+        "兩人離開後剩8人，完成剩餘工作需80÷8=10天。",
+        "題目問的是離開後還需多久，所以答案為10天；若問總工期才是4+10=14天。"
       ],
       "alternativeSolutions": [
         "也可用完成比例：前4天完成1/3，剩2/3；原總120人日的2/3為80。"
       ],
       "reasoningSteps": [
-        "總工作量10×12=120人日。",
-        "前4天完成10×4=40人日，剩80人日。",
-        "剩8人工作需80÷8=10天。"
+        "以人日算出全部工作量120。",
+        "扣除前四天完成的40人日。",
+        "用剩餘八人分擔80人日，求得10天。",
+        "區分還需天數與總工期並核對題意。"
       ],
       "rubric": [
         {
@@ -1251,9 +1269,8 @@ export default {
       "unitNotationRules": "單位需區分人日與天；最後答10天。",
       "answerOnlyPolicy": "只寫10天最多2分。",
       "commonErrors": [
-        "把離開2人從天數減去。",
-        "用8人完成全部120人日。",
-        "回答總工期14天而未答還需。"
+        "直接用八人完成全部120人日，忽略前四天已完成的工作。",
+        "算出總工期十四天後直接作答，沒有回應題目所問的還需十天。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1268,7 +1285,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b5c07f64a45b42e935e76941f4814a0630fb0316bf0bd1f4ab759df7fcc4df62"
+      "contentSha256": "3f3dc76981cb9d0a72c8064d406221b45b6bdc0a6f9f8acc6353e44f95c98d78"
     }
   ],
   "semanticReviews": [
@@ -1277,7 +1294,7 @@ export default {
       "questionId": "u06-s006-v001",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "da9d61b025f259d69e07e2bda94a9c3fcaca255172184bd3681de062575cedd6",
+      "contentSha256": "ccdd52dea9824645d96b840f608a6417ca816f9818637a7b31f85f1c1e517289",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1314,11 +1331,11 @@ export default {
       "questionId": "u06-s006-v002",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "232f1f37c68eaaa46b1a8dc7d02eb2a4b1580623b201095a2663b33b8718d50b",
+      "contentSha256": "bfd7afde252a1e3d744632e1b33a4e9e495fde96ec2483e20375875f8eede85d",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "反比常數為 xy=12×3=36；當 x=9 時，y=36÷9=4，並以9×4=36驗算。",
+      "independentSolution": "只使用題幹所給關係式：把x=9代入y=36/x，得y=36÷9=4；再算9×4=36，驗證固定乘積。",
       "derivedAnswer": "4",
       "storedAnswer": "4",
       "answerMatch": true,
@@ -1343,7 +1360,7 @@ export default {
       },
       "difficultyReason": "先辨認 xy 固定，再以 12÷3 求 y，屬於反比基礎代入。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：反比常數為 xy=12×3=36；當 x=9 時，y=36÷9=4，並以9×4=36驗算。 正確選項為「4」。逐項核對四個選項後，只有該選項符合題幹全部條件；其餘選項的排除理由依序為：3是36÷12。；27是36-9。；45是36+9。。",
+      "reviewerNote": "只使用題幹所給關係式：把x=9代入y=36/x，得y=36÷9=4；再算9×4=36，驗證固定乘積。正確選項為「4」；3、27、45分別來自錯用其他除數或把除法改成減法、加法，均不符合反比式，因此沒有第二個正確答案。",
       "reviewerDecision": "pass"
     },
     {
@@ -1351,7 +1368,7 @@ export default {
       "questionId": "u06-s006-v003",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "0e19d17e9ce539971078b3e74fa34837ef6184a4f3ce23112d7ce42cd7ebbe48",
+      "contentSha256": "068454a4b512819c317c70d7dd38bec325205901dea90379e60f3069bcc4e757",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1388,7 +1405,7 @@ export default {
       "questionId": "u06-s006-v004",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "ccee5efa93ac1c7dda7dc33cf35dbb789bd66fb0fd12046640a33fc9527968a4",
+      "contentSha256": "5237d0b2686690bc4efdef619e27016e4dde80ed55a8bcf3ced887965b08d2d8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1425,7 +1442,7 @@ export default {
       "questionId": "u06-s006-v005",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "edb06609af8d186805cb47666546d0acaefca34739987ac0ef4a2153b96cfd4f",
+      "contentSha256": "89c3f77479dd7019bcca917b98c65544e2849268fd25b784cbf7690e0a6ef4f7",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1462,7 +1479,7 @@ export default {
       "questionId": "u06-s006-v006",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "3521978c8e4cc814fc7b374f4382615de838835dd3ea2a9905a1f4f4389afc23",
+      "contentSha256": "4fcc92ec1b3247430a77e7b594558bf9708b5a0911360fd546521f2d8c1f0108",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1499,7 +1516,7 @@ export default {
       "questionId": "u06-s006-v007",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "f4ee48c46150e8d45c37e3ed90100a15a17d94dd170d10c9e8cf79eb6dc1a130",
+      "contentSha256": "91f05e6e47cf1f8b72392253e298e0a3253ac0491ae1176aa3b2cdc6d6efefac",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1536,7 +1553,7 @@ export default {
       "questionId": "u06-s006-v008",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "4764b9110b209dfb781a75ab572a445d0fd9641247977b280db6a91d592698c4",
+      "contentSha256": "9614f499404bdf3420f893e98dae5550181d79e3a68b77b273fc0d44aaf39a6b",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1573,7 +1590,7 @@ export default {
       "questionId": "u06-s006-v009",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "ac1a1f6d5739f9423033c184099cdad630c3bc28b2b1b18e9c1ce8609221b577",
+      "contentSha256": "93389fa25d2c3d4bf0bb33b803360bbac15785134a56572a74f6bf4e9d7a0df4",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1610,7 +1627,7 @@ export default {
       "questionId": "u06-s006-v010",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "efa8b5ed84f4b8efa847e41d6aadacf41dab6124ec364edbaf46c9c1c643aeee",
+      "contentSha256": "f00e8340f39e24724e4e8d7230df41e8f9ae892d9d94fb343a66b478cf6b00f9",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1647,7 +1664,7 @@ export default {
       "questionId": "u06-s006-v011",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "bf842044945a2df4025562c1518274fe22281bb5d3135a124c13803faf12c2cc",
+      "contentSha256": "6fa84a0c62e6b3767194b70fa4fb366d2297d1df0695e2eca590b1c132cc03ff",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1684,7 +1701,7 @@ export default {
       "questionId": "u06-s006-v012",
       "unitId": "u06",
       "skillId": "inverse-variation",
-      "contentSha256": "c12791254be560898f63d38ff3e0b1f14e33f2c0ad874c8ed38ec1a0c67e1b76",
+      "contentSha256": "802cd278c243d01252032a026455b56e273164d880ffcc2bc5af4b9ddab00d20",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

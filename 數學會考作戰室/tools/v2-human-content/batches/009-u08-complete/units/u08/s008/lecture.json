@@ -120,23 +120,33 @@
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "判斷垂直平分線時分別檢查垂直與中點。",
-      "check": "兩個條件都要成立。"
+      "instruction": "判斷垂直平分線時分開檢查垂直與中點。",
+      "check": "兩個條件必須同時成立。"
     },
     {
       "step": 2,
-      "instruction": "遇到等距 PA=PB，辨認被比較的端點 A、B。",
-      "check": "把 P 放到 AB 的垂直平分線上。"
+      "instruction": "遇到 PA=PB，先辨認被比較的兩端 A、B。",
+      "check": "等距點屬於 AB 的哪一條軌跡？"
     },
     {
       "step": 3,
-      "instruction": "遇到線對稱，配對對應點。",
-      "check": "對稱軸應垂直平分對應點連線。"
+      "instruction": "依推理方向選正定理或逆定理。",
+      "check": "從在軸上推等距，或從等距推在軸上，不可顛倒理由。"
     },
     {
       "step": 4,
-      "instruction": "回頭檢查方向。",
-      "check": "從在軸上推等距，或從等距推在軸上，敘述方向不可混亂。"
+      "instruction": "線對稱題配對原點與對應點。",
+      "check": "對稱軸是否垂直平分對應點連線？"
+    },
+    {
+      "step": 5,
+      "instruction": "串連多個等距式時找共同距離。",
+      "check": "例如 PA=PB 與 PA=PC 可推出三者相等。"
+    },
+    {
+      "step": 6,
+      "instruction": "檢查兩點是否相異及軸上點的退化情況。",
+      "check": "重合點能否決定唯一直線或方向？"
     }
   ],
   "workedExamples": [
@@ -145,9 +155,10 @@
       "prompt": "直線 l 垂直 AB 且通過 AB 中點 M，l 是什麼？",
       "solutionSteps": [
         "l 與 AB 垂直。",
-        "l 通過 AB 中點，兩條件皆成立。"
+        "l 通過 AB 中點，兩項條件皆成立。"
       ],
-      "answer": "l 是 AB 的垂直平分線。"
+      "answer": "l 是 AB 的垂直平分線。",
+      "why": "垂直只限制方向，通過中點才保證平分位置；題目同時給齊兩項必要條件，因此可以直接套用垂直平分線的完整定義。"
     },
     {
       "exampleId": "L2",
@@ -156,25 +167,28 @@
         "垂直平分線上的點到兩端等距。",
         "PB=PA=7 公分。"
       ],
-      "answer": "7 公分。"
+      "answer": "7 公分。",
+      "why": "已知位置在垂直平分線上，應使用正向等距定理；PB 不需加上或扣除 AB 長度，直接等於同一點到另一端的距離。"
     },
     {
       "exampleId": "L3",
       "prompt": "若 QA=QB，Q 的位置必在哪一條直線上？",
       "solutionSteps": [
-        "到 A、B 等距。",
+        "Q 到 A、B 等距。",
         "依逆敘述，Q 在 AB 的垂直平分線上。"
       ],
-      "answer": "線段 AB 的垂直平分線。"
+      "answer": "線段 AB 的垂直平分線。",
+      "why": "題目從距離相等反推位置，使用的是逆定理；所有等距點形成整條垂直平分線，不應把可能位置縮成唯一的中點。"
     },
     {
       "exampleId": "L4",
       "prompt": "A 與 A' 關於直線 k 對稱，線段 AA' 與 k 有何關係？",
       "solutionSteps": [
         "對稱軸垂直平分對應點連線。",
-        "所以 k ⟂ AA' 且通過 AA' 中點。"
+        "所以 k⊥AA' 且通過 AA' 中點。"
       ],
-      "answer": "k 是 AA' 的垂直平分線。"
+      "answer": "k 是 AA' 的垂直平分線。",
+      "why": "鏡射使兩點分居軸兩側且到軸距離相等，軸與連線交於中點並成直角；兩個幾何條件合併才完整描述對稱軸。"
     }
   ],
   "levelConnections": {
@@ -245,5 +259,5 @@
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "419ccd9e4ec72ef78f029cfe7bdbe38c505fb58875b8aa03f95762ff5191da7f"
+  "contentSha256": "16741e41f5e403b734f3a31d1ac05a8b510244488c8581b184d4d27c50155ef6"
 }

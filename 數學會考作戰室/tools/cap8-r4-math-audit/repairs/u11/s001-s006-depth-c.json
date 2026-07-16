@@ -1,0 +1,28 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1","unitId":"u11","batch":"012-u11-complete","skills":["s003"],
+  "mc":[
+    {"questionId":"u11-s003-v001","expectedContentSha256":"7c51dc3c76747e2c957452204095d8ea515f27044a98fb432596dcf3e47624a5","appendText":{"explanation":"兩項的根號部分完全相同，等同把係數二與五相加後保留 √3；加法不會把被開方數三改成六。","misconceptionTarget":"把根式加法誤套為被開方數相加，錯寫成 7√6 或其他非同值形式。"}},
+    {"questionId":"u11-s003-v002","expectedContentSha256":"56b213557166a2422027972dc3ee7ef3e9ac97ce7377d2324cb0ffe605013aeb","appendText":{"explanation":"十二與二十七先分別提出平方因數，得到 2√3 與 3√3；成為同類根式後只加係數，和為 5√3。","misconceptionTarget":"未先化簡就把十二與二十七相加成 √39，忽略根式加法規則。"}},
+    {"questionId":"u11-s003-v003","expectedContentSha256":"f2fb739aebd24a37b56a1bf201fcf88483c229decfe1a35eba1cca7c9e11fa71","appendText":{"explanation":"√18 與 √8 分別化成 3√2、2√2，根號部分相同後係數三減二為一；係數一省略，所以答案是 √2。","misconceptionTarget":"把被開方數直接相減成 √10，或未看出化簡後兩項是同類根式。"}},
+    {"questionId":"u11-s003-v004","expectedContentSha256":"f73531669e2a7eecc972df169d4a62cf131ff3b720f0868d08b27357c2bc7060","appendText":{"explanation":"被開方數均非負，可合併乘法為 √(6×24)=√144；算術平方根取非負值十二，不能把六與二十四相加。","misconceptionTarget":"把根式乘法誤作被開方數相加，或得到 √144 後未取非負平方根十二。"}},
+    {"questionId":"u11-s003-v005","expectedContentSha256":"fe06a96fa2569560f7a72f498730957f671bd38d62f1add45f599cc6965f19df","appendText":{"explanation":"分母根式非零，可把根式相除合為 √(75÷3)=√25；主平方根是五，並非二十五或未約分的形式。","misconceptionTarget":"只化簡分子 √75 而未與 √3 約分，或將 √25 錯當成二十五。"}},
+    {"questionId":"u11-s003-v006","expectedContentSha256":"76acdd322ea6c05ccdfc22b6ca9f92dfa9662536007d18b63767f6627397d474","appendText":{"explanation":"兩因式互為共軛，套用 (A+B)(A-B)=A²-B²，交叉項抵消；五減二等於三，無須逐項留下根式。","misconceptionTarget":"沒有辨認共軛平方差，錯把兩根式相加或展開後漏掉交叉項抵消。"}},
+    {"questionId":"u11-s003-v007","expectedContentSha256":"0f7042523d53e84000d2fd1bd169d8fa77954861f896fc458180d6b9fb48bf75","appendText":{"explanation":"先將 √12 化為 2√3，分子兩項合成 4√3；再除以非零的 √3 約去相同因數，結果恰為四。","misconceptionTarget":"未先處理整個分子就分別除，或漏掉 √12 化簡後的係數二。"}},
+    {"questionId":"u11-s003-v008","expectedContentSha256":"a44b33da1205bb0a08e8cc8485f2d6f821ef82421f7620b82d35e35b5d350450","appendText":{"explanation":"括號內先化簡合併成 5√2，再將整體平方，係數五與根式都要平方；二十五乘二得五十。","misconceptionTarget":"只平方係數五得到二十五，或只平方根號二而遺失係數平方。"}},
+    {"questionId":"u11-s003-v009","expectedContentSha256":"428555595edab8c83a42e32ca8994edf364a1ad7175531674df186d972f674d1","appendText":{"explanation":"三項都可化成 √2 的倍數，係數依原符號為三、負二、五；相加得六，故 A=6√2。","misconceptionTarget":"雖能化簡根式，卻把中間的減號看成加號而將係數算成十。"}},
+    {"questionId":"u11-s003-v010","expectedContentSha256":"dea9eaaf4e6fb9c748effd2b7a4dd1cb36ef1bf180ccd8450d592d26462ea6ae","appendText":{"explanation":"兩段同方向拼接且不重疊，總長使用加法；同為 √5 的倍數，係數三加二得五，單位仍是公分。","misconceptionTarget":"未依拼接語意選加法，或把同類根式相加成 5√10。"}},
+    {"questionId":"u11-s003-v011","expectedContentSha256":"60b04996570cebf32b268c027d208f41ff2393e570fe798c2c94527a6c3bdc8d","appendText":{"explanation":"每個邊長 √18=3√2 公分，兩個並排的總寬是兩倍邊長，即 6√2 公分；所求仍是長度而非面積。","misconceptionTarget":"把並排總寬誤寫成平方公分，或只化簡一個零件而漏乘二。"}},
+    {"questionId":"u11-s003-v012","expectedContentSha256":"ce0b3ea83a954a3dd5992f6b450816b7d00c7ffeb34be9d81dc803c75fbd579f","appendText":{"explanation":"兩括號是共軛因式，平方差使根式交叉項抵消，留下七減三等於四；四本身是系統接受的整數。","misconceptionTarget":"不使用共軛結構而誤留根式項，或把七與三相加成十。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u11-s003-cr001","expectedContentSha256":"fb1488691f3aa7d98c6310fbe6b0ed58efbe04bf59f944ec0f480b505fa647d9","appendArray":{"fullCreditSolution":["先分別化簡：2√27=2×3√3=6√3、√12=2√3、√75=5√3；三項成為同類根式後依原符號合併係數 6-2+5=9，因此結果為 9√3，不能把被開方數直接加減。","回代原式時，三個根式化簡後的被開方數都是三，這正是只能合併外部係數的理由。"]},"set":{"commonErrors":["把原式改成 √(27-12+75)，錯把根式加減當作根號內運算。","化簡 √27 後漏乘前面的係數二，或忽略中間負號。"]}},
+    {"questionId":"u11-s003-cr002","expectedContentSha256":"e37bedd73d425636332168796c16ec6349543c3225d9dfff3a408ecdf0cf428c","appendArray":{"fullCreditSolution":["前兩因式互為共軛，乘積用平方差得 13-5=8；再將 √20 化簡成 2√5。八是有理數項，2√5 是根式項，兩者不是同類項，所以最終答案為 8+2√5。"]},"set":{"commonErrors":["把共軛乘積誤算成十三加五，得到十八。","得到八與 2√5 後強行合併成單一根式，忽略兩項不同類。"]}}
+  ],
+  "lectures":[{"lectureId":"u11-s003-lecture-r1","expectedContentSha256":"b307da0f5e5f94f958342f47ff79342347700b13b5f8af35f0df8e913debc615","set":{"workedExamples":[
+    {"exampleId":"L1","prompt":"計算4√7-√7。","solutionSteps":["同類根式。","係數4-1。"],"answer":"3√7。","why":"兩項根號部分都為 √7，因此像同類項一樣只計算係數四減一，並原樣保留根式；加減運算不會把被開方數七改變，也不能約掉根號。"},
+    {"exampleId":"L2","prompt":"計算√20+√45。","solutionSteps":["化簡為2√5與3√5。","合併係數。"],"answer":"5√5。","why":"原先被開方數不同，必須先各自化簡；√20=2√5、√45=3√5 後才看出同類。係數二加三得五，不能直接寫成 √65。將結果拆回兩項也能驗證合併前後等值。"},
+    {"exampleId":"L3","prompt":"計算√10×√40。","solutionSteps":["合併成√400。","取主平方根。"],"answer":"20。","why":"根式乘法在被開方數非負時可合併成 √(10×40)，得到 √400；根號表示非負主平方根，所以結果是二十而不是正負二十。"},
+    {"exampleId":"L4","prompt":"計算(√11+2)(√11-2)。","solutionSteps":["使用平方差。","11-4。"],"answer":"7。","why":"兩因式只在中間符號不同，套用平方差可讓交叉項互相抵消；(√11)²=11、2²=4，故只需算十一減四，避免冗長展開。直接展開時兩個交叉項也會一正一負相消。"}
+  ]},"appendArray":{"conceptNarrative":["根式四則需先辨認運算類型：加減前各自化簡，只有根號部分完全相同的同類根式才能合併係數；乘除則可在被開方數非負、分母不為零時合併根號內的乘除。括號互為共軛時優先使用平方差消去交叉根式項。每一步都要保留原係數與正負號，最後再確認根號內已最簡，且有理數項不能與不同根式項強行合併。"]}}],
+  "drawingSpecs":[],"textFiles":[]
+}

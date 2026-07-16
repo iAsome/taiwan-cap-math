@@ -65,7 +65,8 @@ export default {
       "若權數是次數，先做「數值×次數」；若權數是百分比，先將百分比改成小數或分數。",
       "當百分比總和為100%時，加權平均可直接相加各項「分數×比例」。",
       "合併兩組平均時，權數是各組人數，不是把兩個平均數直接平均。",
-      "加權平均一定落在有正權數的最小資料值與最大資料值之間。"
+      "加權平均一定落在有正權數的最小資料值與最大資料值之間。",
+      "加權平均的核心不是把幾個代表值再平均，而是先把每一組的平均還原成對總量的貢獻，再用全部權重的總和分攤。權重可以是人數、件數、百分比、學分或金額，但分子與分母必須使用同一種權重；算完還要檢查結果是否落在各資料值之間，並偏向權重較大的資料值。"
     ],
     "definitions": [
       {
@@ -130,43 +131,47 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "作業80分占30%，考試90分占70%。",
+        "prompt": "某成績由80分占30%、90分占70%組成，求加權成績。",
         "solution": [
-          "80×0.3=24。",
-          "90×0.7=63。",
-          "24+63=87。"
+          "把30%、70%寫成0.3、0.7。",
+          "計算80×0.3＝24、90×0.7＝63。",
+          "相加得24＋63＝87。"
         ],
-        "answer": "學期成績87分。"
+        "answer": "87分。",
+        "why": "百分比權重總和已是1，所以各分數乘權重後直接相加即可；結果87介於80與90之間，且較靠近權重較大的90，也通過合理性檢查。"
       },
       {
         "id": "L2",
-        "prompt": "A組10人平均70分，B組15人平均80分。",
+        "prompt": "甲組10人平均70分，乙組15人平均80分，求全體平均。",
         "solution": [
-          "總分=70×10+80×15=1900。",
-          "總人數25。",
-          "1900÷25=76。"
+          "甲組總分為10×70＝700。",
+          "乙組總分為15×80＝1200，合計1900。",
+          "總人數25，所以1900÷25＝76。"
         ],
-        "answer": "合併平均76分。"
+        "answer": "76分。",
+        "why": "兩組人數不同，不能把70與80直接除以2；先還原總分再除以總人數，才能讓每位學生具有相同權重，結果也合理地較靠近人數較多的80分。"
       },
       {
         "id": "L3",
-        "prompt": "三種單價20、30、50元，購買數量2、3、1件。",
+        "prompt": "商品單價20、30、50元，購買量分別為2、3、1件，求平均每件單價。",
         "solution": [
-          "總價=20×2+30×3+50×1=180。",
-          "總件數=6。",
-          "180÷6=30。"
+          "總價為20×2＋30×3＋50×1＝180元。",
+          "總件數為2＋3＋1＝6件。",
+          "平均每件180÷6＝30元。"
         ],
-        "answer": "每件平均30元。"
+        "answer": "30元／件。",
+        "why": "題目要的是每一件商品的平均單價，因此數量就是權重；只平均三種標價會把買一件與買三件視為同等重要，無法反映實際支出結構。"
       },
       {
         "id": "L4",
-        "prompt": "平時80占40%，期末x占60%，總成績至少84。",
+        "prompt": "第一次80分占40%，第二次x分占60%，總成績至少84分，若x為整數，最少多少？",
         "solution": [
-          "0.4×80+0.6x≥84。",
-          "32+0.6x≥84。",
-          "x≥86.666…。"
+          "列不等式0.4×80＋0.6x≥84。",
+          "整理得32＋0.6x≥84，所以0.6x≥52。",
+          "x≥86又2/3，故最小整數是87。"
         ],
-        "answer": "若分數取整數，至少87分。"
+        "answer": "87分。",
+        "why": "不等式解出的86又2/3是最低實數門檻，但題目限定分數取整數，所以必須向上取到87；代回可得84.2，而86只得83.6，邊界也驗證無誤。"
       }
     ],
     "commonMistakes": [
@@ -244,7 +249,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "96b658d5dcf24799ad7db8f001563b9a472d08eb5d37939d95dc651cda2bd44d"
+    "contentSha256": "7f20a2e350c76daee219ce1c6ebfe5a9a8b036920cf91151faea8cc1c19dcb60"
   },
   "mcQuestions": [
     {
@@ -272,11 +277,13 @@ export default {
         "derivedAnswer": "86",
         "trustStoredAnswer": false
       },
-      "explanation": "加權平均要讓權重反映各部分重要性。",
+      "explanation": "加權平均要讓權重反映各部分重要性。 依權重直接計算為80×0.4＋90×0.6＝32＋54＝86；兩個權重相加為1，所以不需再除以其他數。若誤算成85或87，代回兩項貢獻便無法同時得到原題的加權總和。",
       "steps": [
         "權重化為小數。",
         "各分數乘權重。",
-        "加總。"
+        "加總。",
+        "把40%、60%分別寫成0.4、0.6。",
+        "驗算86介於80與90之間且偏向權重較大的90。"
       ],
       "optionAnalysis": [
         {
@@ -300,7 +307,7 @@ export default {
           "reason": "80×0.4+90×0.6=32+54=86。"
         }
       ],
-      "misconceptionTarget": "直接平均兩分數",
+      "misconceptionTarget": "直接平均兩分數 或把40與60當人數後又多除一次，沒有先確認權重總和為百分之百。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -318,7 +325,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a105d35331b5b7d5244bca25422eeea3740bc50b357a22d18ce10c6d59847898"
+      "contentSha256": "13f78aea458dffa4b52ec01ba4f788e26bedce073346d3032855dcc89ec70358"
     },
     {
       "questionId": "u09-s012-v002",
@@ -345,11 +352,13 @@ export default {
         "derivedAnswer": "70 元",
         "trustStoredAnswer": false
       },
-      "explanation": "重量是單價的權重。",
+      "explanation": "重量是單價的權重。 兩件60元與一件90元的總價是60×2＋90＝210元，總件數為3，因此平均每件210÷3＝70元。用70×3＝210反向檢查，正好還原實際支出，故分母與單位都一致。",
       "steps": [
         "求各項總價。",
         "加總重量與總價。",
-        "相除。"
+        "相除。",
+        "先以單價乘數量求每類商品總價。",
+        "用總價210元除以總件數3並保留元／件。"
       ],
       "optionAnalysis": [
         {
@@ -373,7 +382,7 @@ export default {
           "reason": "150 是單價相加。"
         }
       ],
-      "misconceptionTarget": "直接平均單價",
+      "misconceptionTarget": "直接平均單價 或只平均60與90兩種標價而忽略60元商品買了兩件。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -391,7 +400,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "05428706e7f942576bd692b03db757b5bc520dd5bf50e51b22f6bde6f94306b5"
+      "contentSha256": "1d8dee4d306ad63b76584c4dc88341c2b95e93d779006f12d1a29a87b4c1f27d"
     },
     {
       "questionId": "u09-s012-v003",
@@ -418,11 +427,13 @@ export default {
         "derivedAnswer": "82.5",
         "trustStoredAnswer": false
       },
-      "explanation": "權重可用比例數，不一定寫成百分比。",
+      "explanation": "權重可用比例數，不一定寫成百分比。 權數比1：1：2的總權數是4，加權總分為70＋80＋2×90＝330，所以加權平均為330÷4＝82.5。把90展開成兩份後，四份資料70、80、90、90的普通平均也同樣為82.5。",
       "steps": [
         "乘上各權重。",
         "加總權重。",
-        "相除。"
+        "相除。",
+        "依1、1、2展開加權總分330。",
+        "除以總權數4，並檢查結果較靠近權重最大的90。"
       ],
       "optionAnalysis": [
         {
@@ -446,7 +457,7 @@ export default {
           "reason": "330 是加權總分未除權重和。"
         }
       ],
-      "misconceptionTarget": "忘記除以權重總和",
+      "misconceptionTarget": "忘記除以權重總和 或把三個分數直接平均，漏掉90分在加權總分中要計兩次。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -464,7 +475,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "30aa560373a68efd631ed6860da5763a59d2439b7e82171a00d15dfb3c5b8d85"
+      "contentSha256": "cdbded3737f8d50b01f7ea43045b81d893c7791bf1de3b15e03a7dc4048f693c"
     },
     {
       "questionId": "u09-s012-v004",
@@ -491,11 +502,13 @@ export default {
         "derivedAnswer": "85",
         "trustStoredAnswer": false
       },
-      "explanation": "未知分項可由加權方程反推。",
+      "explanation": "未知分項可由加權方程反推。 由0.3×75＋0.7x＝82，先得22.5＋0.7x＝82，再算0.7x＝59.5，所以x＝85。代回可得22.5＋59.5＝82，且未知項權重較大，85高於目標82也符合拉升平均的方向。",
       "steps": [
         "寫加權方程。",
         "移項。",
-        "除以 0.7。"
+        "除以 0.7。",
+        "將已知部分算成22.5後移項。",
+        "以0.7除59.5得85，代回可得82。"
       ],
       "optionAnalysis": [
         {
@@ -519,7 +532,7 @@ export default {
           "reason": "87 會使總成績 83.4。"
         }
       ],
-      "misconceptionTarget": "把總成績直接當未知分數",
+      "misconceptionTarget": "把總成績直接當未知分數 或把目標82直接減75，未依30%與70%的權重建立方程式。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -537,7 +550,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c1b2fffdac112151ecb290d4bf761652fc4bbdc25e49e33354c311ff9f59b7a9"
+      "contentSha256": "47eb252a7a93b5fbb0053eef100a0ddc6d8821c773b04896f0a46679b5af40e3"
     },
     {
       "questionId": "u09-s012-v005",
@@ -566,11 +579,13 @@ export default {
         "derivedAnswer": "75.6",
         "trustStoredAnswer": false
       },
-      "explanation": "先把各班平均還原成總分，再除以合併總人數。",
+      "explanation": "先把各班平均還原成總分，再除以合併總人數。 兩組總分為20×72＋30×78＝3780，總人數為50，所以全體平均3780÷50＝75.6分。因78分組占三十人，合併平均75.6應比兩平均的中點75更靠近78，結果合理。",
       "steps": [
         "把各班平均乘以人數求總分。",
         "兩班總分相加。",
-        "除以總人數50。"
+        "除以總人數50。",
+        "把各組平均還原成總分1440與2340。",
+        "相加後除以50人，並檢查75.6較接近人數較多的78。"
       ],
       "optionAnalysis": [
         {
@@ -594,7 +609,7 @@ export default {
           "reason": "依20與30加權得到75.6分。"
         }
       ],
-      "misconceptionTarget": "把群組平均直接再平均，忽略各組人數。",
+      "misconceptionTarget": "把群組平均直接再平均，忽略各組人數。 或把兩班平均72與78再除以2，忽略兩班人數20與30不同。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -612,7 +627,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "698c52faf3567e2f9ddb38409566859df96b2a4faf8219eb473486383492f723"
+      "contentSha256": "c866bb7e99eb5035c6e418f56e97f8bd060f6600213c044375292446c6f39782"
     },
     {
       "questionId": "u09-s012-v006",
@@ -639,11 +654,13 @@ export default {
         "derivedAnswer": "16%",
         "trustStoredAnswer": false
       },
-      "explanation": "混合濃度以溶液重量為權重。",
+      "explanation": "混合濃度以溶液重量為權重。 第一份溶質30克、第二份溶質50克，混合後溶質共80克、溶液共500克，濃度為80÷500＝16%。此值介於10%與25%之間，且較靠近重量較大的10%溶液，符合加權結果。",
       "steps": [
         "求兩份溶質量。",
         "加總溶質與溶液。",
-        "相除。"
+        "相除。",
+        "分別求出30克與50克溶質。",
+        "以總溶質80克除以總溶液500克再化成百分率。"
       ],
       "optionAnalysis": [
         {
@@ -667,7 +684,7 @@ export default {
           "reason": "35% 是濃度相加。"
         }
       ],
-      "misconceptionTarget": "直接平均濃度",
+      "misconceptionTarget": "直接平均濃度 或直接平均10%與25%，沒有用兩份溶液的300克與200克作權重。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -685,7 +702,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1b1e7194278addadaf641638fe0b381cbadfa12d55bc39accdb5fc5942e700db"
+      "contentSha256": "87699a500de9b0ff8e9766f4bfb177a1233212ec220d25067c9a53cba24a7710"
     },
     {
       "questionId": "u09-s012-v007",
@@ -712,11 +729,13 @@ export default {
         "derivedAnswer": "86",
         "trustStoredAnswer": false
       },
-      "explanation": "『至少』形成不等式，且分數為整數。",
+      "explanation": "『至少』形成不等式，且分數為整數。 依人數加權得(20×90＋30×80＋50x)÷100≥85，整理為4200＋50x≥8500，因此x≥86。邊界值86代回時總分8500、總人數100，平均恰為85，較小值即不合格。",
       "steps": [
         "算已知加權分。",
         "建立不等式。",
-        "求最小整數解。"
+        "求最小整數解。",
+        "把總人數100乘回不等式兩側。",
+        "由50x≥4300得x≥86，並以x＝86代入確認恰為85。"
       ],
       "optionAnalysis": [
         {
@@ -740,7 +759,7 @@ export default {
           "reason": "85 使總成績 84.5。"
         }
       ],
-      "misconceptionTarget": "把至少門檻或權重算錯",
+      "misconceptionTarget": "把至少門檻或權重算錯 或把三組平均直接相加平均，漏掉三組人數20、30、50形成的不同權重。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -758,7 +777,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "81cbb04ebed4fa2e6b7aff800f9af86c429ba0c882626f47b9059f736190f5c0"
+      "contentSha256": "0f80e91dabd974981fb404a36cad38b68180774fa402c5503aef08e514bbd2f1"
     },
     {
       "questionId": "u09-s012-v008",
@@ -785,11 +804,13 @@ export default {
         "derivedAnswer": "2 公斤",
         "trustStoredAnswer": false
       },
-      "explanation": "未知權重需由平均單價方程求解。",
+      "explanation": "未知權重需由平均單價方程求解。 設70元商品為x公斤，依平均單價得(40×3＋70x)÷(3＋x)＝52，解得120＋70x＝156＋52x，所以x＝2。此時兩種商品總價260元、總重5公斤，260÷5確為每公斤52元。",
       "steps": [
         "建立總價／總重方程。",
         "交叉相乘。",
-        "解 x 並驗證。"
+        "解 x 並驗證。",
+        "交叉相乘並把含x項移到同一側。",
+        "以x＝2驗算總價260元、總重5公斤，平均52元。"
       ],
       "optionAnalysis": [
         {
@@ -813,7 +834,7 @@ export default {
           "reason": "x=5 時平均 58.75。"
         }
       ],
-      "misconceptionTarget": "直接用單價差相減",
+      "misconceptionTarget": "直接用單價差相減 或只平均40元與70元兩個單價，沒有把公斤數同時放入總價與總重量。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -831,7 +852,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "62751dc640f2ff1b143d5f02d0aa2ef1f11b8d8168ff16242c5c7215affb3ecf"
+      "contentSha256": "f6ad645be1a71fe921567922063164fda48e10503100432462d493ef69caac4d"
     },
     {
       "questionId": "u09-s012-v009",
@@ -858,11 +879,13 @@ export default {
         "derivedAnswer": "80",
         "trustStoredAnswer": false
       },
-      "explanation": "整數權重比也要除以權重總和。",
+      "explanation": "整數權重比也要除以權重總和。 A、B權重為2：3且平均74，故2×65＋3B＝5×74＝370；3B＝240，因此B＝80。代回得到130＋240＝370，再除以5為74，也顯示較大權重的B高於整體平均，答案與權重方向完全一致。",
       "steps": [
         "寫加權方程。",
         "解未知分數。",
-        "代回。"
+        "代回。",
+        "把平均74乘總權數5還原成加權總和370。",
+        "移去A的貢獻130後除以3，並代回驗算。"
       ],
       "optionAnalysis": [
         {
@@ -886,7 +909,7 @@ export default {
           "reason": "(2×65+3x)/5=74，3x=240，x=80。"
         }
       ],
-      "misconceptionTarget": "忽略權重總和",
+      "misconceptionTarget": "忽略權重總和 或把65與未知數做普通平均，忽略B的權重3大於A的權重2。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -904,7 +927,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f48fb41e4065ce016a5fcdf4004d968ba3f6d1fbb8c899b5723cd59e5f859abf"
+      "contentSha256": "192514721b04045c9c8cd549aa2d176dddd668148928ff8ce51d650138216ee2"
     },
     {
       "questionId": "u09-s012-v010",
@@ -931,10 +954,12 @@ export default {
         "derivedAnswer": "甲生，85.6 分",
         "trustStoredAnswer": false
       },
-      "explanation": "各項權重不同，不能只比較單項或未加權平均。",
+      "explanation": "各項權重不同，不能只比較單項或未加權平均。 依題示權重分別計算，A的加權分數為85.6，B為85.2；兩者使用同一規則，所以A以0.4分領先。",
       "steps": [
         "分別計算兩人加權分。",
-        "比較。"
+        "比較。",
+        "逐項列出A、B的加權貢獻後各自相加。",
+        "以85.6－85.2＝0.4確認A的總分較高。"
       ],
       "optionAnalysis": [
         {
@@ -958,7 +983,7 @@ export default {
           "reason": "兩值不同。"
         }
       ],
-      "misconceptionTarget": "只看學測較高者",
+      "misconceptionTarget": "只看學測較高者 或只比較某一單項最高分，沒有把每一項分數乘上相同的評選權重。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -976,7 +1001,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "aa922be1244cba4768b35687719f0c11e73b74bbe87332d6e66d3a9c364a135a"
+      "contentSha256": "318c68ba2ca6e0158c771f5049eacd3a823b6b0b86fc4e40825134a8928dd6a1"
     },
     {
       "questionId": "u09-s012-v011",
@@ -1003,11 +1028,13 @@ export default {
         "derivedAnswer": "2.9 元",
         "trustStoredAnswer": false
       },
-      "explanation": "用電量是單價的權重。",
+      "explanation": "用電量是單價的權重。 各級用電費加總為1160元、總用電量400度，若題目問整體平均每度電價，應以1160÷400＝2.9元回答。這是實付總額攤到每一度的平均，不等於各級公告費率的算術平均。",
       "steps": [
         "求兩時段費用。",
         "加總費用與度數。",
-        "相除。"
+        "相除。",
+        "先按級距求費用並合計1160元。",
+        "再除以400度，確認單位是元／度而非總費用。"
       ],
       "optionAnalysis": [
         {
@@ -1031,7 +1058,7 @@ export default {
           "reason": "7 是單價相加。"
         }
       ],
-      "misconceptionTarget": "直接平均兩種費率",
+      "misconceptionTarget": "直接平均兩種費率 或把各級費率直接平均，忽略每一級實際使用的度數並不相同。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -1049,7 +1076,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8abedaa534a394912b37571fb555d57f4f15cb309711a4367be84017f01436c0"
+      "contentSha256": "5fcb4223314515215bc5cc5806fd18b1af2bb9d2079ded34b13cfe42ac9b6c76"
     },
     {
       "questionId": "u09-s012-v012",
@@ -1076,11 +1103,13 @@ export default {
         "derivedAnswer": "平均相同，但甲店樣本數較大，評估穩定性資訊較多",
         "trustStoredAnswer": false
       },
-      "explanation": "加權平均相同不代表證據量相同。",
+      "explanation": "加權平均相同不代表證據量相同。 兩組樣本平均都為4.6，只能說目前中心值相同；A有100人、B僅10人，樣本量差異會影響穩定性，但仍需抽樣方式與分布資訊。",
       "steps": [
         "驗算兩店平均。",
         "比較評論數。",
-        "限制結論。"
+        "限制結論。",
+        "先區分已知的樣本平均與未知的母群特性。",
+        "比較樣本數後保留抽樣方法、變異與代表性等限制。"
       ],
       "optionAnalysis": [
         {
@@ -1104,7 +1133,7 @@ export default {
           "reason": "資料筆數與個別評價仍不同。"
         }
       ],
-      "misconceptionTarget": "只看平均忽略資料量",
+      "misconceptionTarget": "只看平均忽略資料量 或只見平均相同就宣稱兩母群完全相同，也可能只憑樣本較大就保證沒有偏誤。",
       "prerequisiteCheck": {
         "skillIds": [
           "mode-range-basic"
@@ -1122,7 +1151,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1e2c7578c3e4b2f6706c02b53a1ceb15a65ba1b11711663f08ae5dadb357bc49"
+      "contentSha256": "cf26e68bdc88fca145147ace42ddc7b3e30cfc9d3cbb3310e629481843eeb75f"
     }
   ],
   "constructedResponses": [
@@ -1147,7 +1176,8 @@ export default {
         "小考貢獻=76×0.35=26.6。",
         "期末貢獻=90×0.40=36。",
         "加權平均=22+26.6+36=84.6分。",
-        "四捨五入到整數為85分。"
+        "四捨五入到整數為85分。",
+        "驗算三項加權貢獻22、26.6、36的總和為84.6，依題意四捨五入到整數才得到85分。"
       ],
       "alternativeMethod": "可用(88×25+76×35+90×40)÷100=84.6。",
       "reasoningSteps": [
@@ -1155,7 +1185,8 @@ export default {
         "配對各分數與權重。",
         "計算加權貢獻。",
         "相加得精確平均。",
-        "依規則取整數。"
+        "依規則取整數。",
+        "最後檢查權重總和為100%，且84.6位於各原始分數的合理範圍內。"
       ],
       "rubric": [
         {
@@ -1193,7 +1224,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "bdb10a71ae6ad49b17d61df48c811ea04da6c923a5909d9138cc08bc31dbd867"
+      "contentSha256": "f8137a9e8c90f9124df9a3b0dd687f01805c880d5fb03f4227c904d3a68af6ef",
+      "commonErrors": [
+        "把各項分數直接平均，沒有乘上題目給定的權重。",
+        "算得84.6後過早把中間貢獻四捨五入，或漏寫最後取整數為85分。"
+      ]
     },
     {
       "questionId": "u09-s012-cr002",
@@ -1215,14 +1250,16 @@ export default {
         "A總分=72×12=864；B總分=78×18=1404；C總分=84x。",
         "(864+1404+84x)/(30+x)=78。",
         "2268+84x=2340+78x，所以6x=72，x=12。",
-        "12為正整數，符合人數限制。"
+        "12為正整數，符合人數限制。",
+        "代回x＝12時，總分為12×72＋18×78＋12×84＝3276，總人數42，3276÷42＝78，符合題意。這也確認C班人數同時正確計入分子加權總分與分母總人數，而非只改其中一處。"
       ],
       "alternativeMethod": "因B平均正好78，B對偏差平衡為0；A每人低6共-72，C每人高6，需12人提供+72，因此x=12。",
       "reasoningSteps": [
         "還原各班總分或使用相對78的偏差。",
         "建立總分=78×總人數。",
         "解一元一次方程。",
-        "檢查分母正、x為正整數。"
+        "檢查分母正、x為正整數。",
+        "解得人數後必須代回總分與總人數，確認加權平均確為78。"
       ],
       "rubric": [
         {
@@ -1260,7 +1297,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b3b476edf3d3147a691ec7c489b0f3c2f14687a55668e89df0a79579f3d7a6a3"
+      "contentSha256": "4381f3d53b42c6308ab562032fb1b53ef56b95082e97f82bfedf109b79016167",
+      "commonErrors": [
+        "把三班平均72、78、84直接除以3，忽略各班人數。",
+        "建立方程式時漏把C班的x同時加進總人數，導致只改分子不改分母。"
+      ]
     }
   ],
   "semanticReviews": [

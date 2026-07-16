@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "unitId": "u13",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "014-u13-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u13\",\n  \"lockedSkillCount\": 15,\n  \"lectureCount\": 15,\n  \"mcQuestionCount\": 180,\n  \"constructedResponseCount\": 30,\n  \"semanticReviewCount\": 180,\n  \"figureCount\": 4,\n  \"difficultyCounts\": {\n    \"basic\": 45,\n    \"standard\": 45,\n    \"advanced\": 45,\n    \"literacy\": 45\n  },\n  \"answerIndexCounts\": [\n    45,\n    45,\n    45,\n    45\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgAssertionsVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"localDuplicateScanVerified\": true,\n  \"crossUnitDuplicateScanPending\": true,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 16,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u13",
+          "lockedSkillCount": 15,
+          "lectureCount": 15,
+          "mcQuestionCount": 180,
+          "constructedResponseCount": 30,
+          "semanticReviewCount": 180,
+          "figureCount": 4,
+          "difficultyCounts": {
+            "basic": 45,
+            "standard": 45,
+            "advanced": 45,
+            "literacy": 45
+          },
+          "answerIndexCounts": [
+            45,
+            45,
+            45,
+            45
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgAssertionsVerified": true,
+          "legacyIsolationVerified": true,
+          "localDuplicateScanVerified": true,
+          "crossUnitDuplicateScanPending": true,
+          "stagingPresent": true,
+          "emittedModuleCount": 16,
+          "productionActivationAllowed": false
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u13\",\n  \"lockedSkillCount\": 15,\n  \"lectureCount\": 15,\n  \"mcQuestionCount\": 180,\n  \"constructedResponseCount\": 30,\n  \"semanticReviewCount\": 180,\n  \"figureCount\": 4,\n  \"difficultyCounts\": {\n    \"basic\": 45,\n    \"standard\": 45,\n    \"advanced\": 45,\n    \"literacy\": 45\n  },\n  \"answerIndexCounts\": [\n    45,\n    45,\n    45,\n    45\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"svgAssertionsVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"localDuplicateScanVerified\": true,\n  \"crossUnitDuplicateScanPending\": true,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 16,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u13",
+          "lockedSkillCount": 15,
+          "lectureCount": 15,
+          "mcQuestionCount": 180,
+          "constructedResponseCount": 30,
+          "semanticReviewCount": 180,
+          "figureCount": 4,
+          "difficultyCounts": {
+            "basic": 45,
+            "standard": 45,
+            "advanced": 45,
+            "literacy": 45
+          },
+          "answerIndexCounts": [
+            45,
+            45,
+            45,
+            45
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "svgAssertionsVerified": true,
+          "legacyIsolationVerified": true,
+          "localDuplicateScanVerified": true,
+          "crossUnitDuplicateScanPending": true,
+          "stagingPresent": true,
+          "emittedModuleCount": 16,
+          "productionActivationAllowed": false
+        }
+      }
+    }
+  ]
+}

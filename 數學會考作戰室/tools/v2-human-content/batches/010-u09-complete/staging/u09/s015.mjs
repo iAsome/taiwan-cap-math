@@ -65,7 +65,8 @@ export default {
       "百分率從40%到50%是增加10個百分點，但相對於原40%增加25%；兩種說法不可混用。",
       "截斷縱軸不必然錯，但必須清楚標示；讀者應看刻度而非柱高比例。",
       "「增加一倍」表示新值為原值的2倍，也就是增加100%，不是增加到原值的1倍後再加其他量。",
-      "觀察到差異只能描述這批資料；若樣本不具代表性，不能推廣到所有人。"
+      "觀察到差異只能描述這批資料；若樣本不具代表性，不能推廣到所有人。",
+      "辨識誤導統計要依序檢查數值、基準、圖軸、樣本與因果語言。百分點是兩個百分率的直接差，相對增幅則用原值作分母；截斷縱軸不會改變資料本身，卻會放大可見柱高。即使算術正確，便利樣本、不同觀察期、極小分母或把相關寫成因果仍會使結論失真，因此負責任報告必須揭露原始數、分母與限制。"
     ],
     "definitions": [
       {
@@ -130,39 +131,47 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "支持率由40%升至50%。",
+        "prompt": "某比例由40%提高到50%，分別說明百分點與相對增幅。",
         "solution": [
-          "百分點差=50%-40%=10個百分點。",
-          "相對增幅=10%÷40%=25%。"
+          "直接差為50%－40%＝10個百分點。",
+          "相對增幅用原率40%作分母。",
+          "10%÷40%＝25%。"
         ],
-        "answer": "增加10個百分點，或相對增加25%。"
+        "answer": "增加10個百分點，亦即相對增加25%。",
+        "why": "百分點與百分比回答不同問題：前者比較兩個比率的距離，後者比較增加量占原值多少。清楚標出原值作分母，可避免把10與25混成同一種增幅。"
       },
       {
         "id": "L2",
-        "prompt": "銷量由100件到120件，圖的縱軸從95開始。",
+        "prompt": "長條圖縱軸從95開始，數值由100增到120，如何判讀？",
         "solution": [
-          "實際增加20件、20%。",
-          "截斷軸會放大外觀差距。"
+          "先讀實值差120－100＝20。",
+          "相對增幅為20÷100＝20%。",
+          "辨認截斷軸會讓可見柱高比例誇大，不能當成數值比。"
         ],
-        "answer": "應依刻度讀值，不可說柱高顯示成長數倍。"
+        "answer": "實際增加20，亦即20%；圖軸可能誇大視覺差異。",
+        "why": "柱形的可見高度取決於繪圖基線，原始資料比則由120與100決定；把實值、差值與相對增幅分開計算，就不會被截斷軸的外觀帶走。"
       },
       {
         "id": "L3",
-        "prompt": "網站投票80%贊成，因此全校80%贊成。",
+        "prompt": "網站自願投票顯示80%支持某方案，可以推論全市80%支持嗎？",
         "solution": [
-          "參與者是自願樣本。",
-          "未必代表未投票者。"
+          "母體是全市居民，樣本只是網站參與者。",
+          "參與者自行選擇回覆，可能與未參與者立場不同。",
+          "只能報網站參與者中的80%，不能直接外推全市。"
         ],
-        "answer": "只能說投票者中80%贊成。"
+        "answer": "不能直接推論全市支持率。",
+        "why": "比例計算本身可以正確，但代表性取決於樣本如何取得；自願回覆使不同立場者被納入的機會不等，樣本再大也不必然消除這種系統偏誤。"
       },
       {
         "id": "L4",
-        "prompt": "雨天冰品銷量下降，故下雨一定造成所有店冰品下降。",
+        "prompt": "同一段時間內，降雨量與冰品銷量一起上升，能說降雨造成銷量上升嗎？",
         "solution": [
-          "資料可能只來自部分店與期間。",
-          "還可能有溫度、促銷等因素。"
+          "先確認資料只顯示兩變數同時變動。",
+          "列出氣溫、季節或假日等可能共同因素。",
+          "在沒有控制或實驗前，只能說有關聯，不能確定因果。"
         ],
-        "answer": "可描述樣本關聯，不可斷言普遍必然因果。"
+        "answer": "不能僅由此資料斷定因果。",
+        "why": "兩項數據同步變化可能由第三個因素共同驅動，也可能只是特定期間的巧合；因果判斷還需要時間順序、控制混淆因素或更合適的研究設計。"
       }
     ],
     "commonMistakes": [
@@ -239,7 +248,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "7a8444720b58302e5fc338aa695a393a5f4fcd97cb7262958acd6b62ccdc80d3"
+    "contentSha256": "633d405e7fa44defe4aebffe65d70627e18e1480d7939b903408c96fc10656db"
   },
   "mcQuestions": [
     {
@@ -267,11 +276,13 @@ export default {
         "derivedAnswer": "實際差 4，截斷軸會放大視覺差異",
         "trustStoredAnswer": false
       },
-      "explanation": "統計圖的視覺比例不能取代刻度。",
+      "explanation": "統計圖的視覺比例不能取代刻度。 縱軸從95開始時，96與100的可見高度是1與5，視覺比例會被放大；真實數值只差4，且100並非96的五倍。",
       "steps": [
         "讀軸起點。",
         "讀兩值。",
-        "以實值比較。"
+        "以實值比較。",
+        "先讀柱頂實值96與100並算差4。",
+        "再辨認基線95只改變可見高度，不改變原數值比例。"
       ],
       "optionAnalysis": [
         {
@@ -295,7 +306,7 @@ export default {
           "reason": "截斷會影響視覺。"
         }
       ],
-      "misconceptionTarget": "以可見長度比當數值比",
+      "misconceptionTarget": "以可見長度比當數值比 或把截斷基線後的柱高比例直接當成原始資料的數值比例。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -313,7 +324,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7c2626ffab6c21f0c84cacdd471192ff85d8f66d052e1a5a8ae76078e55dda9f"
+      "contentSha256": "164a4db6ef09378f64f1163371bb6d8b910505a4a831ebe42b9dfb15c4b4b288"
     },
     {
       "questionId": "u09-s015-v002",
@@ -340,9 +351,11 @@ export default {
         "derivedAnswer": "平均不是每一戶的實際值",
         "trustStoredAnswer": false
       },
-      "explanation": "群體平均不可直接套到每個個體。",
+      "explanation": "群體平均不可直接套到每個個體。 平均每戶2.4輛是總車數除以戶數的結果，個別家庭可有0、1、2或更多輛；平均值不要求每一筆資料都等於2.4。",
       "steps": [
-        "區分群體統計量與個體。"
+        "區分群體統計量與個體。",
+        "區分群體平均與單一家庭的車輛數。",
+        "保留『總車數÷戶數＝2.4』這個唯一必然結論。"
       ],
       "optionAnalysis": [
         {
@@ -366,7 +379,7 @@ export default {
           "reason": "平均與中位數不必相同。"
         }
       ],
-      "misconceptionTarget": "把平均當每個人的數值",
+      "misconceptionTarget": "把平均當每個人的數值 或把群體平均誤當成每戶的實際整數車數，忽略資料可以分散。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -384,7 +397,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9a6c2f3d3482f5b953f03cdd75e3aff5595e77904a0ec910858dbb9fe52f6e59"
+      "contentSha256": "450c09e3c463d331be69442ef7c6f96485a3d69deac0ea7038d2762f26876cb3"
     },
     {
       "questionId": "u09-s015-v003",
@@ -411,10 +424,12 @@ export default {
         "derivedAnswer": "樣本不具全校代表性",
         "trustStoredAnswer": false
       },
-      "explanation": "要推論全校，樣本應涵蓋全校不同學生。",
+      "explanation": "要推論全校，樣本應涵蓋全校不同學生。 只調查籃球隊成員會過度涵蓋喜愛運動者，與全校學生的組成不同，因此樣本結果不能直接代表全校。",
       "steps": [
         "辨認母群。",
-        "檢查樣本來源。"
+        "檢查樣本來源。",
+        "明確寫出母體是全校學生、樣本是籃球隊。",
+        "比較兩者運動偏好可能不同，判定便利抽樣有偏誤。"
       ],
       "optionAnalysis": [
         {
@@ -438,7 +453,7 @@ export default {
           "reason": "籃球隊成員對籃球偏好可能偏高。"
         }
       ],
-      "misconceptionTarget": "只看樣本有數據便接受",
+      "misconceptionTarget": "只看樣本有數據便接受 或只因受訪者也是學生就認為樣本必然代表全校，忽略選入機會不均。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -456,7 +471,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d913a0ff88e542687b72a050ced3c2dd7a7248a54467cc2f6d2dd296fcd9340f"
+      "contentSha256": "dcce53c305f04857b52736da679387b7c7594a471a0487ba62b0fe16e0d197a7"
     },
     {
       "questionId": "u09-s015-v004",
@@ -483,10 +498,12 @@ export default {
         "derivedAnswer": "第二次 20% 的基準是 120 元，降後是 96 元",
         "trustStoredAnswer": false
       },
-      "explanation": "百分比變化必須標明基準量。",
+      "explanation": "百分比變化必須標明基準量。 100增加20%成為120，再減少20%是減去120×0.2＝24，所以得到96；兩次百分率的基準不同，不能互相抵消。也可用100×1.2×0.8＝96驗算，兩個倍率乘積0.96並不是1。",
       "steps": [
         "依序計算。",
-        "比較基準。"
+        "比較基準。",
+        "先算增加後的新基準120。",
+        "再用120乘20%得24，最後120－24＝96。"
       ],
       "optionAnalysis": [
         {
@@ -510,7 +527,7 @@ export default {
           "reason": "價格可用百分比。"
         }
       ],
-      "misconceptionTarget": "把百分比當固定量",
+      "misconceptionTarget": "把百分比當固定量 或把先增加20%再減少20%視為加減同一數量，沒有更新第二次的基準。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -528,7 +545,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "23a40307c82f9009752271d199ecaae8f2274bd78d13c16011d82db2a1647ff0"
+      "contentSha256": "805ef850a9d814a9ce712e02e03285a2abeb416c2afb66117aebeabd6284bedf"
     },
     {
       "questionId": "u09-s015-v005",
@@ -555,10 +572,12 @@ export default {
         "derivedAnswer": "平均增加 2 不代表每個人都增加 2",
         "trustStoredAnswer": false
       },
-      "explanation": "群體變化不能直接推論個體變化。",
+      "explanation": "群體變化不能直接推論個體變化。 平均增加2只代表新總和比舊總和增加2n，無法推出每個人都增加2；有人增加較多、有人不變或下降仍可能得到同一平均變化。",
       "steps": [
         "區分平均與個人。",
-        "用可能反例檢查。"
+        "用可能反例檢查。",
+        "把平均增加2翻譯成總和增加2n。",
+        "構想個別增減不同但總變化相同的反例，排除『每人』敘述。"
       ],
       "optionAnalysis": [
         {
@@ -582,7 +601,7 @@ export default {
           "reason": "總分平均上升可由不同個別變化造成。"
         }
       ],
-      "misconceptionTarget": "把群體差值套到每人",
+      "misconceptionTarget": "把群體差值套到每人 或把平均的群體變化錯配到每一位個體，忽略個別變化可以互相抵銷。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -600,7 +619,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1c5ace3a1bf5ffded5f3009a706d63c56360558894b9cb719650a02832b11286"
+      "contentSha256": "c6fe76688c00d9975b9a1a041ce168a7353750f783a45adf8da8b2134c6ba2e9"
     },
     {
       "questionId": "u09-s015-v006",
@@ -627,11 +646,13 @@ export default {
         "derivedAnswer": "增加 2 個百分點，或相對成長 100%",
         "trustStoredAnswer": false
       },
-      "explanation": "統計報導應區分百分點與百分比。",
+      "explanation": "統計報導應區分百分點與百分比。 比率由2%升到4%，直接差為4%－2%＝2個百分點；相對原來2%的增幅為(4－2)÷2＝100%。原率乘2正好成為4%，因此『相對增加100%』與『變為原來兩倍』彼此一致。",
       "steps": [
         "算直接差。",
         "算相對變化。",
-        "選精確用語。"
+        "選精確用語。",
+        "先用新率減舊率得到2個百分點。",
+        "再以舊率2%作分母，算相對增幅100%。"
       ],
       "optionAnalysis": [
         {
@@ -655,7 +676,7 @@ export default {
           "reason": "2/2=100%，不是 50%。"
         }
       ],
-      "misconceptionTarget": "混淆百分點與相對成長",
+      "misconceptionTarget": "混淆百分點與相對成長 或把2個百分點與增加100%混為同一種說法，未標明相對基準。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -673,7 +694,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "dd78cfa059d6eded211240cb1a44c791cf1baf17375835a213b62b879451e70b"
+      "contentSha256": "9a3bee2c4ec8cad0b9675c544157e81777e86d577e303fe7a47b1771072fd2a9"
     },
     {
       "questionId": "u09-s015-v007",
@@ -700,11 +721,13 @@ export default {
         "derivedAnswer": "不能直接比較年度總數，觀察期間不同",
         "trustStoredAnswer": false
       },
-      "explanation": "比較前需確認分母與觀察期間相同。",
+      "explanation": "比較前需確認分母與觀察期間相同。 100件發生在12個月，月均約8.33件；80件發生在8個月，月均10件。觀察期不同時不能只比總件數，統一每月基準後反而後者較高。",
       "steps": [
         "檢查時間範圍。",
         "換算同期間率。",
-        "審核結論。"
+        "審核結論。",
+        "分別用100÷12與80÷8換成每月件數。",
+        "在同一時間基準比較8.33與10，並避免由總量直接下結論。"
       ],
       "optionAnalysis": [
         {
@@ -728,7 +751,7 @@ export default {
           "reason": "圖形不能修正資料定義。"
         }
       ],
-      "misconceptionTarget": "只比總數",
+      "misconceptionTarget": "只比總數 或直接以100＞80判定第一段期間較嚴重，忽略12月與8月的曝險時間不同。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -746,7 +769,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "5b1d80dbd9c1549886c6d8c434aeeb46d40e143b2f10bf307292936fff90728f"
+      "contentSha256": "6ab3fa56b12ef15194e1b7aa3225627877c01e395056d980dd004f837056eb34"
     },
     {
       "questionId": "u09-s015-v008",
@@ -773,11 +796,13 @@ export default {
         "derivedAnswer": "兩院樣本數差異很大，應一起揭露",
         "trustStoredAnswer": false
       },
-      "explanation": "單一百分比若隱藏分母會誤導證據強度。",
+      "explanation": "單一百分比若隱藏分母會誤導證據強度。 9/10＝90%，850/1000＝85%，但前者只有10例，且兩院病患嚴重度可能不同；應揭露樣本數、病例組成與一致的結果定義再比較。",
       "steps": [
         "驗算比例。",
         "比較分母。",
-        "限制因果結論。"
+        "限制因果結論。",
+        "同時計算比例並保留分子、分母。",
+        "列出樣本數與病例條件等可比性資訊，限制品質結論。"
       ],
       "optionAnalysis": [
         {
@@ -801,7 +826,7 @@ export default {
           "reason": "未控制病例差異，不能判因果。"
         }
       ],
-      "misconceptionTarget": "只看百分比高低",
+      "misconceptionTarget": "只看百分比高低 或只挑90%高於85%就宣稱醫院一定較好，忽略小樣本與病例不可比。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -819,7 +844,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "210260f1127d4e5bceff55c9abd85e8125b086972f16903ba21928b5951657e6"
+      "contentSha256": "70b7cb6e63029cd9caac2804b571b651ff07ed57548fe750ba71cb5128c3605f"
     },
     {
       "questionId": "u09-s015-v009",
@@ -846,10 +871,12 @@ export default {
         "derivedAnswer": "中位數與薪資分布",
         "trustStoredAnswer": false
       },
-      "explanation": "選擇性揭露單一極端值會造成印象偏差。",
+      "explanation": "選擇性揭露單一極端值會造成印象偏差。 最高薪資只描述一個極端值，不能代表多數職缺的待遇；應補中位數、四分位範圍、完整分布與各職級樣本數。",
       "steps": [
         "辨識最高值局限。",
-        "選擇能描述中心與散布的資訊。"
+        "選擇能描述中心與散布的資訊。",
+        "辨認報導只提供最大值而非中心位置。",
+        "要求中位數與分布等能描述典型情況的資料。"
       ],
       "optionAnalysis": [
         {
@@ -873,7 +900,7 @@ export default {
           "reason": "樓層無關。"
         }
       ],
-      "misconceptionTarget": "以極端值代表全體",
+      "misconceptionTarget": "以極端值代表全體 或把單一最大值當成典型薪資，忽略它可能只屬極少數高階職位。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -891,7 +918,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "070f7b3c05888920f3325eb008650b1fee9cb76aac86ce02deb616bda846a606"
+      "contentSha256": "6c20fbda2c3e26dc8c23ac6ec92f60f107c2781b374243dd81e2c94ad2294bf3"
     },
     {
       "questionId": "u09-s015-v010",
@@ -918,11 +945,13 @@ export default {
         "derivedAnswer": "自願瀏覽網站的讀者可能不是全市代表樣本",
         "trustStoredAnswer": false
       },
-      "explanation": "大樣本不能自動修正偏誤抽樣。",
+      "explanation": "大樣本不能自動修正偏誤抽樣。 網站讀者是自行進入特定網站的人，可能在年齡、興趣與立場上不同於全市居民；即使回覆很多，也不能自動消除自我選擇偏誤。",
       "steps": [
         "辨認母群全市。",
         "檢查樣本招募。",
-        "限制外推。"
+        "限制外推。",
+        "區分目標母體全市居民與實際網站讀者。",
+        "指出自我選擇造成涵蓋差異，將結論限制在參與者。"
       ],
       "optionAnalysis": [
         {
@@ -946,7 +975,7 @@ export default {
           "reason": "樣本來源可能高度偏向候選人支持者。"
         }
       ],
-      "misconceptionTarget": "以大樣本取代隨機性",
+      "misconceptionTarget": "以大樣本取代隨機性 或把回覆數量大視為代表性保證，沒有檢查每位市民被抽中的機會。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -964,7 +993,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "149366dd1d0d4e4f3722dfbc260bb6665e22ca4829dbff92edfafe656d307ce1"
+      "contentSha256": "d52fb1f9bad1b80f2725ff40843721c3563b7d70fdb4226e96e2662e72997cdc"
     },
     {
       "questionId": "u09-s015-v011",
@@ -991,11 +1020,13 @@ export default {
         "derivedAnswer": "由 2 克增為 3 克",
         "trustStoredAnswer": false
       },
-      "explanation": "廣告分母與包裝規格必須一起讀。",
+      "explanation": "廣告分母與包裝規格必須一起讀。 舊包裝每包2克；新包裝每小份1克但一包含3份，所以每包總量1×3＝3克，實際比舊包多1克。",
       "steps": [
         "讀每份數值。",
         "乘每包份數。",
-        "比較整包。"
+        "比較整包。",
+        "把新包裝依3份換算成每包3克。",
+        "用同為每包的3克與2克比較，確認新包裝反而較多。"
       ],
       "optionAnalysis": [
         {
@@ -1019,7 +1050,7 @@ export default {
           "reason": "新包不是 2 克。"
         }
       ],
-      "misconceptionTarget": "只看大字每份數值",
+      "misconceptionTarget": "只看大字每份數值 或只比較醒目的每份1克與每包2克，沒有統一成每包的相同比較基準。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -1037,7 +1068,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f98f80d37c72a572a15bc844c879905570634b426ac0df6a75d1f7327ee5c379"
+      "contentSha256": "ff3bb9116c74d496d6f55e9ab675e86a13a151254c5b55e6bee0c1e1b3f0ffa3"
     },
     {
       "questionId": "u09-s015-v012",
@@ -1064,11 +1095,13 @@ export default {
         "derivedAnswer": "該小區該週由 1 件增至 2 件，樣本範圍小，不宜代表全市趨勢",
         "trustStoredAnswer": false
       },
-      "explanation": "合理統計溝通要同時報相對與絕對變化。",
+      "explanation": "合理統計溝通要同時報相對與絕對變化。 案件由1件變2件的相對增幅雖是100%，但分母極小且只涵蓋單一行政區一週；負責任說法應同時報原始件數、期間與長期基準。",
       "steps": [
         "核對母群與期間。",
         "核對絕對數。",
-        "降低外推強度。"
+        "降低外推強度。",
+        "同時寫出1件到2件、增加1件與100%。",
+        "檢查地區、期間與基數後改寫成不過度外推的敘述。"
       ],
       "optionAnalysis": [
         {
@@ -1092,7 +1125,7 @@ export default {
           "reason": "小基數百分比易誇大。"
         }
       ],
-      "misconceptionTarget": "用大百分比掩蓋小基數與窄範圍",
+      "misconceptionTarget": "用大百分比掩蓋小基數與窄範圍 或只用『暴增100%』製造巨大印象，不揭露實際只多1件及觀察期很短。",
       "prerequisiteCheck": {
         "skillIds": [
           "data-comparison-context"
@@ -1110,7 +1143,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1fa3d5a1e2ce5c63bbd3e44f8dc5da5ef2983621dc91eca100007bd8807df372"
+      "contentSha256": "7a11de53cf6468d0faaabf130bf6337c6158e3c20681ce35e4d345f29c840534"
     }
   ],
   "constructedResponses": [
@@ -1133,14 +1166,16 @@ export default {
       "standardSolution": [
         "40%-32%=8個百分點，所以『增加8%』若想表達直接差，應改為『增加8個百分點』。",
         "相對增幅=(40%-32%)÷32%=8/32=25%，也就是相對去年成長四分之一。",
-        "精確說法：『滿意率由32%升至40%，增加8個百分點，相對增幅為25%。』"
+        "精確說法：『滿意率由32%升至40%，增加8個百分點，相對增幅為25%。』",
+        "兩種表達可同時正確：滿意率增加8個百分點，而相對原滿意率增加8÷32＝25%；報告必須標明使用哪一種比較。"
       ],
       "alternativeMethod": "可用人數想像：每100人由32人變40人，多8人；多出的8相對原32為1/4。",
       "reasoningSteps": [
         "辨認新舊百分率。",
         "計算直接差。",
         "以舊值作相對增幅分母。",
-        "分別使用百分點與百分比。"
+        "分別使用百分點與百分比。",
+        "最後以原率32%乘1.25＝40%反向驗算相對增幅。"
       ],
       "rubric": [
         {
@@ -1178,7 +1213,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b0b3f7b1a6f7353e04bad0c7b0f6a15a163ddc2ecedfff41e2fe7c10beede800"
+      "contentSha256": "164b2b7f3201214de423255c4e720b7620aff4e05c6f6edd1b40b77049ca4009",
+      "commonErrors": [
+        "把40－32＝8直接寫成增加8%，沒有標明是8個百分點。",
+        "計算相對增幅時用新值40作分母，而非以原值32作比較基準。"
+      ]
     },
     {
       "questionId": "u09-s015-cr002",
@@ -1200,14 +1239,16 @@ export default {
         "實際差=1020-1000=20件。",
         "相對增幅=20/1000=2%；乙月為甲月的102%，不是2倍。",
         "可見高度是1000-980=20與1020-980=40，才呈現2倍。",
-        "改進可包括：縱軸從0開始；若保留截斷軸，清楚標示斷軸與數值標籤；在圖旁寫明差20件與增幅2%。"
+        "改進可包括：縱軸從0開始；若保留截斷軸，清楚標示斷軸與數值標籤；在圖旁寫明差20件與增幅2%。",
+        "題幹已完整給出基線980與兩個數值；移除不相符的54%、58%共用圖後，仍可由1020÷1000＝1.02、可見高度40÷20＝2清楚區分真實比與視覺比。"
       ],
       "alternativeMethod": "直接算1020/1000=1.02即可否定2倍，再分析截斷基線。",
       "reasoningSteps": [
         "讀取軸上數值而非只看柱高。",
         "算差值與相對增幅。",
         "解釋截斷後可見高度比例。",
-        "提出能揭露尺度的改圖方案。"
+        "提出能揭露尺度的改圖方案。",
+        "核對題幹數據與任何圖形引用一致；若圖不符，應以自含數據作答並停止顯示錯圖。"
       ],
       "rubric": [
         {
@@ -1234,8 +1275,8 @@ export default {
       "followThroughPolicy": "相對增幅算術錯誤不影響圖表改進與截斷原因的獨立分。",
       "unitAndNotationRules": "銷量以件；增幅用%；『倍』是無單位比值。",
       "answerOnlyPolicy": "只寫2%與不合理，最高1分。",
-      "figureId": "u09-fig-bar-02",
-      "drawingSpecId": "u09-draw-bar-02",
+      "figureId": null,
+      "drawingSpecId": null,
       "independentReview": {
         "independentDerivation": "1020/1000=1.02，差20，增幅2%；截斷高度40/20=2造成錯覺。",
         "boundaryAndAmbiguityAudit": "縱軸起點980與兩數值均已給定，可唯一解釋視覺比例。",
@@ -1245,7 +1286,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b1906aa9d31adfa77098ccc955d23d83b264ebd7bfe81698ecb9b26ece7321a9"
+      "contentSha256": "02479ca8488ee1c5edab64c996c4d4a6180c4d6f6f9739fd946118b378a6d299",
+      "commonErrors": [
+        "把截斷後40與20的柱高比當成1020與1000的數值比，宣稱銷量兩倍。",
+        "算出增加20件後直接寫增加20%，或只建議改顏色而未處理截斷尺度。"
+      ]
     }
   ],
   "semanticReviews": [

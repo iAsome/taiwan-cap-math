@@ -380,7 +380,7 @@ export const QUESTIONS = [
       {
         "choice": "1.8 km",
         "truth": false,
-        "reason": "公分換公裡錯誤。"
+        "reason": "公分換公里錯誤。"
       },
       {
         "choice": "1800 m",
@@ -402,7 +402,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3081894b3cce96bb814ea4191761d00caf912921c0e278490f8e395d2ae23e15"
+    "contentSha256": "bb3ab61d9e4106a28ca73c68d2f9cfeace60918f3f6614f230eecf3da7a57c0c"
   },
   {
     "questionId": "u18-s016-v003",
@@ -819,8 +819,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "一張相似地圖原比例尺 1：25000，影印時長與寬縮成 80%。影印後地圖上 4 cm 代表實際多少公裡？",
-    "text": "一張相似地圖原比例尺 1：25000，影印時長與寬縮成 80%。影印後地圖上 4 cm 代表實際多少公裡？",
+    "prompt": "一張相似地圖原比例尺 1：25000，影印時長與寬縮成 80%。影印後地圖上 4 cm 代表實際多少公里？",
+    "text": "一張相似地圖原比例尺 1：25000，影印時長與寬縮成 80%。影印後地圖上 4 cm 代表實際多少公里？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -873,7 +873,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "03cc574c0554b33b3c55a6e8d4665852b4cf0b066bc78944a26bbb2128eb9bd9"
+    "contentSha256": "be9ef3b526afca09064b50f1e94372a7e8f7d398cbf580a7060f79e331a74a0f"
   },
   {
     "questionId": "u18-s016-v010",
@@ -1246,7 +1246,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-literacy",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "3081894b3cce96bb814ea4191761d00caf912921c0e278490f8e395d2ae23e15",
+    "contentSha256": "bb3ab61d9e4106a28ca73c68d2f9cfeace60918f3f6614f230eecf3da7a57c0c",
     "independentSolution": "1 m=100 cm，18000÷100=180 m。",
     "derivedAnswer": "180 m",
     "storedAnswer": "180 m",
@@ -1463,7 +1463,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-literacy",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "03cc574c0554b33b3c55a6e8d4665852b4cf0b066bc78944a26bbb2128eb9bd9",
+    "contentSha256": "be9ef3b526afca09064b50f1e94372a7e8f7d398cbf580a7060f79e331a74a0f",
     "independentSolution": "原圖上 5 cm 代表 1.25 km；縮成 80% 後變 4 cm，所以影印圖 4 cm 仍代表 1.25 km。",
     "derivedAnswer": "1.25 km",
     "storedAnswer": "1.25 km",

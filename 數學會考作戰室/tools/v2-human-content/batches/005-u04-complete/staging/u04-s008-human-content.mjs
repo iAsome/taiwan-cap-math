@@ -120,41 +120,47 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "兩數和 18，差 4。",
+      "prompt": "兩數和為18，差為4，求兩數。",
       "solutionSteps": [
-        "設較大數 x、較小數 y。",
-        "列 x+y=18、x-y=4。",
-        "解得 x=11、y=7。"
+        "設較大數x、較小數y，列x＋y＝18與x－y＝4。",
+        "兩式相加得2x＝22，所以x＝11。",
+        "代回總和式得y＝7，並核對差為4。"
       ],
-      "answer": "兩數為 11、7。"
+      "answer": "兩數為11與7。",
+      "why": "總和與差額是兩個獨立條件，且較大數減較小數的方向已由變數定義固定。相加可直接消去y，求得較大數後再回代；十一加七為十八、十一減七為四，完整符合題意。"
     },
     {
       "exampleId": "L2",
-      "prompt": "甲乙共有 30 人，甲比乙多 6 人。",
+      "prompt": "甲乙共有30人，甲比乙多6人，求兩邊人數。",
       "solutionSteps": [
-        "設甲 x 人、乙 y 人。",
-        "x+y=30、x-y=6。"
+        "設甲x人、乙y人，列x＋y＝30與x－y＝6。",
+        "相加得2x＝36，所以x＝18。",
+        "代回得y＝12，檢查兩數皆為非負整數。"
       ],
-      "answer": "模型正確。"
+      "answer": "甲18人、乙12人。",
+      "why": "「共有」提供總數式，「甲比乙多」決定差額式的順序。兩式相加後甲有十八人，乙由總數得十二人；十八比十二多六且合計三十，答案與人數整數限制一致。"
     },
     {
       "exampleId": "L3",
-      "prompt": "兩種筆共 12 枝，單價 10 元與 15 元，總價 150 元。",
+      "prompt": "兩種筆共12枝，單價10元與15元，總價150元，求各幾枝。",
       "solutionSteps": [
-        "設兩種筆各 x、y 枝。",
-        "x+y=12。",
-        "10x+15y=150。"
+        "設十元筆x枝、十五元筆y枝，列x＋y＝12。",
+        "依單價乘數量列10x＋15y＝150。",
+        "由第一式乘10後相減得5y＝30，所以y＝6、x＝6。"
       ],
-      "answer": "可解得 x=6、y=6。"
+      "answer": "兩種筆各6枝。",
+      "why": "枝數總和與金額總和的單位不同，必須分成兩式；金額式中每種單價要乘自己的枝數。解得各六枝後，總數為十二，總價六十加九十為一百五十，兩項條件都成立。"
     },
     {
       "exampleId": "L4",
-      "prompt": "檢查模型 x+y=20、2x+2y=40。",
+      "prompt": "檢查模型x＋y＝20與2x＋2y＝40能否唯一求解。",
       "solutionSteps": [
-        "第二式只是第一式乘 2。",
-        "沒有第二個獨立資訊。"
+        "把第一式整式乘2，得到2x＋2y＝40。",
+        "第二式與第一式完全等價，只提供一個獨立條件。",
+        "列出(0,20)與(10,10)兩組不同解，證明不能唯一求值。"
       ],
-      "answer": "不能唯一決定 x、y。"
+      "answer": "不能唯一決定x、y。",
+      "why": "方程式的數量不等於獨立資訊的數量。第二式只是第一式的兩倍，消去後得到零等於零；所有滿足x＋y＝20的數對都同時符合兩式，因此仍需另一個不相依的數量條件。"
     }
   ],
   "commonMistakes": [
@@ -215,7 +221,35 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "6ab8bfb66fd96e75e9462a60955ee224edc267a903988fd3226fc79eb92a3d41"
+  "contentSha256": "f6c3b17e1cf2a5f2249488b86224678cbbe7de3607bf92192bec3dc5ef7f3d7f",
+  "concept": "文字情境要先定義兩個未知數的意義與單位，再把每一條可量化資訊翻成等量關係。總數通常由各部分相加，差額要依「誰比誰多」決定減法方向，總價或總熱量則是每單位數值乘數量後加總。兩個方程式必須提供獨立限制，若第二式只是第一式的倍數，仍無法唯一求解。最後還要檢查人數、件數等離散量是否為非負整數，以及等號左右單位是否一致。",
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出題目要找的兩個量，設為x、y並寫清楚各自名稱與單位。",
+      "check": "變數定義固定，後續沒有交換兩者角色。"
+    },
+    {
+      "step": 2,
+      "instruction": "找出第一個可量化條件，通常是總數、總長或總時間，列成等式。",
+      "check": "等號左右表示相同種類的量，單位一致。"
+    },
+    {
+      "step": 3,
+      "instruction": "找第二個獨立條件，依差額、倍數、單價乘數量或其他守恆關係列式。",
+      "check": "第二式不是第一式的等價倍數，也不是無關敘述。"
+    },
+    {
+      "step": 4,
+      "instruction": "用代入或加減消去法解聯立方程式，完整保留變數對應。",
+      "check": "每步等式運算正確，所得數值代回兩式皆成立。"
+    },
+    {
+      "step": 5,
+      "instruction": "把數值翻回原情境，檢查單位、非負性、整數性與合理範圍。",
+      "check": "答案回應正確物件，沒有擅自四捨五入不可分割的數量。"
+    }
+  ]
 };
 
 export const QUESTIONS = [
@@ -240,10 +274,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "「和」表示兩數相加，故 x+y=20。",
-    "explanation": "文字中的運算詞要直接翻成等量關係。",
+    "explanation": "題目已定義較大數為x、較小數為y，而「兩數和為二十」中的和表示把兩個數相加。因此等量關係是x＋y＝20；差、乘積或倍數都不是這句文字提供的條件。",
     "steps": [
-      "辨認「和」。",
-      "以 x、y 相加。"
+      "依題意固定x代表較大數、y代表較小數。",
+      "把關鍵詞「和」翻譯為兩個未知數相加。",
+      "令相加結果等於20，寫成x＋y＝20。"
     ],
     "optionAnalysis": [
       {
@@ -280,7 +315,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "d5110ba89b8a4a8fc1fb8bedb24efbbd7f55d5331864d350ea91cd033c5e49c9"
+    "contentSha256": "f2fa986f71a703f7b2fcf1201a77fd90b6f7d09dc6c22e64bced187e60536622",
+    "commonMistake": "把「和」誤讀成差或乘積，列出與題意不同的運算關係。"
   },
   {
     "questionId": "u04-s008-v002",
@@ -303,10 +339,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "甲比乙多 6 表示甲減乙等於 6。",
-    "explanation": "「A 比 B 多 d」可寫 A-B=d。",
+    "explanation": "甲有x人、乙有y人，「甲比乙多六人」表示從甲的人數減去乙的人數，差正好是六，所以第二式為x－y＝6。若寫成y－x＝6，語意會反成乙比甲多六人。",
     "steps": [
-      "固定變數意義。",
-      "依比較方向寫差。"
+      "確認比較主體甲對應x，被比較的乙對應y。",
+      "把「甲比乙多」寫成甲減乙，即x－y。",
+      "令人數差等於6，得到x－y＝6。"
     ],
     "optionAnalysis": [
       {
@@ -343,7 +380,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e8d53278b878870535d4cdd26ebbc37a267f11a86e40ea74813cbd5954efd6ec"
+    "contentSha256": "9739c05c8f9fe4c7320eece5d4c92f3b9100222b7ab58ce289ad8b1a6d397637",
+    "commonMistake": "比較順序顛倒，把甲比乙多六人寫成y減x等於六。"
   },
   {
     "questionId": "u04-s008-v003",
@@ -366,10 +404,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "兩類筆合起來的枝數就是 x+y。",
-    "explanation": "總數量由各部分相加。",
+    "explanation": "甲種筆有x枝、乙種筆有y枝，兩類互不重複且合計十二枝，所以總數由各類數量相加，得到x＋y＝12。十二是總枝數，不應放在未知數前當係數，也不是兩種筆數量的乘積。",
     "steps": [
-      "確認兩類互不重疊。",
-      "相加等於總數。"
+      "列出甲種筆x枝與乙種筆y枝兩個部分。",
+      "用加法合併兩類筆的枝數，形成x＋y。",
+      "把總枝數12放在等號右邊，寫成x＋y＝12。"
     ],
     "optionAnalysis": [
       {
@@ -406,7 +445,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b2b4f55eb11997ccb882c20aa0559a8e2fa6917ef6b6db08ce3bc30d7f6ce4ac"
+    "contentSha256": "3507bb5001200f7ca7256b4d547e0dd1e42fc2ff3cdf8eebbf90b117ba45cce7",
+    "commonMistake": "把總數十二誤放成未知數係數，或用相乘代替兩類數量相加。"
   },
   {
     "questionId": "u04-s008-v004",
@@ -429,11 +469,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "總和對應 x+y=18，較大減較小對應 x-y=4。",
-    "explanation": "每個獨立句子分別形成一式。",
+    "explanation": "較大數x與較小數y的總和是十八，所以第一式為x＋y＝18；較大數減較小數的差是四，所以第二式為x－y＝4。兩個常數各自對應不同語句，不能把和與差對調。",
     "steps": [
-      "翻譯總和。",
-      "翻譯差額。",
-      "檢查變數順序。"
+      "把「兩數和十八」翻譯成x＋y＝18。",
+      "依較大減較小，把「差四」翻譯成x－y＝4。",
+      "逐句回讀，核對總和與差額的常數沒有交換。"
     ],
     "optionAnalysis": [
       {
@@ -470,7 +510,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ab2114c9e46f95f754d2822a843ebb1186f03b792f08c1f14fe8e8fcf44f300a"
+    "contentSha256": "35b36c4ccf4ed475f6de4167685ccd0bddc16a34a057177d90816901b322d7be",
+    "commonMistake": "把十八與四對調，或將較大減較小的方向寫反。"
   },
   {
     "questionId": "u04-s008-v005",
@@ -493,11 +534,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "成人票款 200x，學生票款 120y，相加為總收入。",
-    "explanation": "總價必須逐類做單價乘數量。",
+    "explanation": "成人票每張二百元且售x張，票款是200x元；學生票每張一百二十元且售y張，票款是120y元。兩類收入相加等於總收入七千六百元，因此收入式為200x＋120y＝7600。",
     "steps": [
-      "寫成人票款。",
-      "寫學生票款。",
-      "加總。"
+      "用成人票單價200乘張數x，得到成人票款200x。",
+      "用學生票單價120乘張數y，得到學生票款120y。",
+      "合併兩類票款並令其等於7600，完成收入方程式。"
     ],
     "optionAnalysis": [
       {
@@ -534,7 +575,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "fa3d940c5d16bc8e61668607849f782cdab4401dba98a31f2dbbe4d8e41eb6bb"
+    "contentSha256": "34c9865046f1898164605af1678e6a41475eddf7ff99f04d30370c576c6c251f",
+    "commonMistake": "只把兩個單價相加，或把票價與另一票種的張數交叉配對。"
   },
   {
     "questionId": "u04-s008-v006",
@@ -557,11 +599,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "先取乙的 2 倍 2y，再多 3，得到甲 x。",
-    "explanation": "語句順序決定運算層次。",
+    "explanation": "甲數是乙數的二倍再多三，先以乙數y乘二得到2y，再加三，結果才等於甲數x，所以列式為x＝2y＋3。「再多三」不在乘二的括號內，也不能顛倒甲乙角色。",
     "steps": [
-      "定位被比較量乙。",
-      "先乘 2。",
-      "再加 3。"
+      "固定甲數為x、乙數為y，避免交換變數角色。",
+      "先取乙數的2倍，寫成2y。",
+      "在2y之後再加3，令結果等於x，得到x＝2y＋3。"
     ],
     "optionAnalysis": [
       {
@@ -598,7 +640,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1dc972cf1b66a70c9d54575a9e0d3e5544edf57ad954769589d7360878f1eb69"
+    "contentSha256": "38d0d54ce795f6f379b9bbf6bc13fa210f97f881f1ee68d721fb05bb9166acdd",
+    "commonMistake": "把「再多三」也放進兩倍內，錯寫成二乘以y加三的整體。"
   },
   {
     "questionId": "u04-s008-v007",
@@ -621,10 +664,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "第二式是第一式的 2 倍，只提供一個獨立條件。",
-    "explanation": "列出兩式後還要檢查是否重複。",
+    "explanation": "第二式2x＋2y＝40正是第一式x＋y＝20整式乘二的結果，兩式只重複同一個總和條件。像(10,10)與(20,0)都滿足，因此不能唯一求出x、y；但兩式相容，不是矛盾。",
     "steps": [
-      "比較整式倍數。",
-      "判斷獨立條件數。"
+      "將第一式x＋y＝20整式乘2。",
+      "核對所得2x＋2y＝40與第二式完全相同。",
+      "列舉兩組不同解並判定兩式相依，無法唯一求值。"
     ],
     "optionAnalysis": [
       {
@@ -661,7 +705,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c1eccefa1928192b0366bc36286b4686f86c4efbde5be6cde7e70a8a4c4f12c1"
+    "contentSha256": "31d916a42e9a685d4393c1b887fac36c7a471f1fb53555c450ebae7936c368e2",
+    "commonMistake": "只因題面列了兩個方程式，就認為一定提供兩個獨立條件。"
   },
   {
     "questionId": "u04-s008-v008",
@@ -684,11 +729,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "聯立方程式可有小數解，但商品件數模型另有整數限制。",
-    "explanation": "數學解與情境可行解要分開審查。",
+    "explanation": "方程式本身可能正確解出x＝4.5、y＝7.5，但題目把兩個未知數定義為商品件數，件數在一般情境中必須是非負整數。不能直接接受半件，也不能任意四捨五入；應判定代數解存在但情境不可行，並回查資料或模型。",
     "steps": [
-      "確認代數解。",
-      "檢查單位為件。",
-      "判斷整數限制。"
+      "先區分代數方程式是否有解與答案是否符合情境。",
+      "由單位「件」確認x、y應為非負整數。",
+      "發現4.5與7.5不符合整數限制，拒絕擅自四捨五入。"
     ],
     "optionAnalysis": [
       {
@@ -725,7 +770,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ebd99d7e6f17122b898e2072570af3162d0b2499021c6fa848ba2a85ebcefdb5"
+    "contentSha256": "c8537a6a268b98e514366359b9481baf4f337d325a5bb5923507df02e28f9d0c",
+    "commonMistake": "認為算出代數解就一定可用，或把小數件數任意取整而不再驗算。"
   },
   {
     "questionId": "u04-s008-v009",
@@ -748,10 +794,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "x+y 的單位是人，不可直接等於 500 元。",
-    "explanation": "方程式左右必須代表同一種量。",
+    "explanation": "x、y都代表人數，所以x＋y與x－y的單位仍是人；若乘上每人票價，才會得到元。選項x＋y＝500元把人數直接等同金額，等號左右量綱不同，因此是最明顯的單位錯誤。",
     "steps": [
-      "標出每項單位。",
-      "比較等號左右。"
+      "標記x與y的單位皆為人。",
+      "判斷x＋y或x－y仍表示人數，而單價乘人數才表示金額。",
+      "逐項比較等號左右單位，找出人數等於元的錯誤式。"
     ],
     "optionAnalysis": [
       {
@@ -788,7 +835,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "fed006bb44a49a1f12647dbe9b19d6c21d4e8a6c645a93a19d276f50404ba6a1"
+    "contentSha256": "4cfdb63ad69ba1f1056fd311f7cf084405f8503977be401f15322589cf81c916",
+    "commonMistake": "只檢查數字與字母的形式，沒有核對等號左右是否為同一種量。"
   },
   {
     "questionId": "u04-s008-v010",
@@ -811,11 +859,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "總人數形成和式，線上較多形成 x-y=8。",
-    "explanation": "表單兩項統計是獨立條件。",
+    "explanation": "線上報名x人與現場報名y人合計四十二人，先得x＋y＝42；線上比現場多八人，依比較方向得到x－y＝8。兩式分別描述總數與差額，常數與減法方向都不能互換。",
     "steps": [
-      "讀取總人數。",
-      "讀取比較方向。",
-      "列成兩式。"
+      "把兩類報名人數相加，列出x＋y＝42。",
+      "依線上比現場多8人，列出x－y＝8。",
+      "回讀變數定義，核對總數42與差額8各在正確方程式。"
     ],
     "optionAnalysis": [
       {
@@ -852,7 +900,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b36aad481851adb19396d0c4c7d09f7392f63db782f28cda86023e86e9913b44"
+    "contentSha256": "8785f8cdedd54a6d59e7f1813f5837ff81cbc13264a06ce230e9957725222c55",
+    "commonMistake": "把總人數與差額交換，或把線上較多錯寫成y減x等於八。"
   },
   {
     "questionId": "u04-s008-v011",
@@ -875,11 +924,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "盒數總和為 10；各盒熱量乘盒數後加總 4250。",
-    "explanation": "表格欄位決定係數與單位。",
+    "explanation": "A、B兩種餐盒的盒數分別是x、y，總共十盒，所以x＋y＝10。A每盒五百大卡貢獻500x，B每盒三百五十大卡貢獻350y，總熱量四千二百五十大卡，因此第二式為500x＋350y＝4250。",
     "steps": [
-      "列盒數式。",
-      "列熱量式。",
-      "檢查單位。"
+      "以盒數守恆列出x＋y＝10。",
+      "分別以每盒熱量乘盒數，得到500x與350y。",
+      "將兩類熱量相加等於4250，並核對兩式單位。"
     ],
     "optionAnalysis": [
       {
@@ -916,7 +965,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "5d00ecff2b2802d5957ba238e7e4715eb99c43fbd8414ebdaf794d5ee4fb3905"
+    "contentSha256": "7b25aead99a922f52867bb96a8611eeeb0a8e1acb2a3555e420ed816d9d3571c",
+    "commonMistake": "直接相加每盒熱量而漏乘盒數，或把總盒數與總熱量對調。"
   },
   {
     "questionId": "u04-s008-v012",
@@ -939,10 +989,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "只有總輛數一個數量條件；天氣資料與兩種車輛數量無明確等量關係。",
-    "explanation": "建模要排除不能形成數學限制的無關資訊。",
+    "explanation": "「汽車與機車共六十輛」只能形成一個數量方程式x＋y＝60。「今天晴天」沒有說明天氣與兩類車輛數量之間的等量關係，不能強行列成第二式，所以資訊不足，無法唯一決定各自輛數。",
     "steps": [
-      "識別可量化條件。",
-      "判斷第二句是否關聯未知數。"
+      "由總輛數建立唯一可用的方程式x＋y＝60。",
+      "檢查天氣敘述是否含x、y的數量或等量關係。",
+      "確認晴天是無關資訊，判定缺少第二個獨立方程式。"
     ],
     "optionAnalysis": [
       {
@@ -979,7 +1030,8 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f17437b9cc7b839a29534da3eb0af46c14b2d505c88c378f8d73626201be6902"
+    "contentSha256": "bb5886e38a45b5f4972cbce807d130b1b250cf7207b3a843cf0cc940ca17c8f2",
+    "commonMistake": "看到題目有兩句話便各列一式，將沒有數量關係的天氣硬套進模型。"
   }
 ];
 
@@ -998,18 +1050,19 @@ export const CONSTRUCTED_RESPONSES = [
       "兩式與答案均要寫。"
     ],
     "standardSolution": [
-      "設甲班 x 人、乙班 y 人。",
-      "x+y=68，x-y=8。",
-      "相加得 2x=76，x=38。",
-      "y=30。"
+      "設甲班有x人、乙班有y人，並註明x、y應為非負整數。總人數條件給出x＋y＝68。",
+      "甲班比乙班多八人，依比較方向列出x－y＝8。",
+      "兩式相加得2x＝76，所以x＝38；代回x＋y＝68，得到y＝30。",
+      "檢驗：38＋30＝68且38－30＝8，因此甲班38人、乙班30人。"
     ],
     "alternativeMethods": [
       "可寫 x=y+8 代入 x+y=68。"
     ],
     "reasoningSteps": [
-      "定義。",
-      "翻譯總數與差額。",
-      "求解並回情境。"
+      "定義兩個未知數及其人數單位。",
+      "分別把總數與甲比乙多的差額翻成兩個獨立方程式。",
+      "用相加消去y，求x後回代求y。",
+      "回到情境核對總人數、差額與非負整數限制。"
     ],
     "rubric": [
       {
@@ -1047,7 +1100,11 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "332e2a40fb1185f7453d84547fe7f65f5049adc771a205aea3239b546317fe5d"
+    "contentSha256": "1d84b1f647b7e6d7d779b0b1f10c797dac523dec71ba8b4490d1c8e6bae2196c",
+    "commonErrors": [
+      "把甲比乙多八人寫成y減x等於八，導致兩班答案對調或出現負差。",
+      "只報三十八與三十而未說明各自所屬班級，也沒有代回總數與差額。"
+    ]
   },
   {
     "questionId": "u04-s008-cr002",
@@ -1063,16 +1120,19 @@ export const CONSTRUCTED_RESPONSES = [
       "提出具體新增資料並列式。"
     ],
     "standardSolution": [
-      "設汽車 x、機車 y，僅有 x+y=60，存在多組非負整數解，例如 (0,60)、(20,40)。",
-      "可新增“總輪數 180 個”，則 4x+2y=180，與 x+y=60 獨立，可唯一求解。"
+      "設汽車x輛、機車y輛，目前只有x＋y＝60；一個方程式無法唯一決定兩個未知數。",
+      "例如(x,y)＝(0,60)、(20,40)與(60,0)都滿足總輛數，足以證明解不唯一。",
+      "可增加「總輪數一百八十個」這項合理資料，因汽車四輪、機車二輪，可列4x＋2y＝180。",
+      "新式與x＋y＝60並不相依；聯立可得x＝30、y＝30，且輪數與輛數均符合非負整數情境。"
     ],
     "alternativeMethods": [
       "也可提出停車費總收入、佔用面積等，只要每類貢獻不同且數值明確。"
     ],
     "reasoningSteps": [
-      "證明多解。",
-      "設計獨立條件。",
-      "檢查單位合理。"
+      "以不同非負整數數對證明單一總數方程式有多組解。",
+      "提出會讓兩類物件貢獻不同的可量化資料。",
+      "把新增資料寫成單位一致的第二個獨立方程式。",
+      "解示例模型並核對資料確實可行且能唯一決定兩數。"
     ],
     "rubric": [
       {
@@ -1110,7 +1170,11 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "d0e24002b330232102b00d8d0cdc9d322901822e33a86b6d02bcb52619e3b2ee"
+    "contentSha256": "d5328375d2ec2144e8db1d16579b9de2ca6eb0c46bb4e9a3be7359f509cf9f68",
+    "commonErrors": [
+      "直接假設汽車與機車各三十輛，沒有題目條件支持兩類數量相等。",
+      "提出晴天或顏色等無關資訊，卻未建立可量化且獨立的第二個方程式。"
+    ]
   }
 ];
 

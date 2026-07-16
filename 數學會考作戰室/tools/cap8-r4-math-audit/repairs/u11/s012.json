@@ -1,0 +1,33 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u11",
+  "batch":"012-u11-complete",
+  "skills":["s012"],
+  "mc":[
+    {"questionId":"u11-s012-v001","expectedContentSha256":"f4236101a19b349d1c039615a0e9506824f2ef10bb3bff1a91cc5f8cc73798a3","appendText":{"explanation":"斜邊十三是最大邊，未知股平方等於十三平方減五平方，即一百六十九減二十五為一百四十四；股長取正平方根，所以是十二。","misconceptionTarget":"或直接用十三減五得到八，忽略畢氏定理連結的是三邊平方。"}},
+    {"questionId":"u11-s012-v002","expectedContentSha256":"93f26f55517d6332304f115a7446f9600367f4059a630dfe81c954d587bc94cb","appendText":{"explanation":"因十是斜邊，先列未知股平方等於十平方減六平方，得到六十四，再取正平方根為八。選項必須同時包含平方差與最後開根。","misconceptionTarget":"或只停在六十四，把股長平方誤當股長；也可能把平方差寫成平方和。"}},
+    {"questionId":"u11-s012-v003","expectedContentSha256":"1529c835707847bd2a00fd342d91025dbed4cde5304ef7e66c565fdb2edc15a1","appendText":{"explanation":"若另一股是一，則一平方加四平方只有十七，不等於斜邊五平方的二十五。正確應算五平方減四平方得九，再取正根為三。","misconceptionTarget":"或把邊長直接相減當成求股，沒有用平方和回代檢查原說法。"}},
+    {"questionId":"u11-s012-v004","expectedContentSha256":"7141ac983b1e39e345f5cf23a22bb8722b9ef3d19221bc46ca7e650b6d2ecfbd","appendText":{"explanation":"十七為斜邊，未知股平方等於十七平方減八平方，即二百八十九減六十四為二百二十五；正股長是二百二十五的正平方根十五。","misconceptionTarget":"或做大數平方差時只減底數，或忘記從未知股平方再開正平方根。"}},
+    {"questionId":"u11-s012-v005","expectedContentSha256":"ee3e4da51346ce632ef1f69f3f507e23871c338d4f717f613ced8a7079270d37","appendText":{"explanation":"二十五為斜邊，另一股平方是二十五平方減二十四平方；用平方差可算成一乘四十九等於四十九，故正股長為七。","misconceptionTarget":"或只算二十五減二十四得到一，沒有把兩個邊長先平方。"}},
+    {"questionId":"u11-s012-v006","expectedContentSha256":"b9cb17d54c50acec0850b6e1c76c79fb5937b703346dffe2d1c3e69e75991cbb","appendText":{"explanation":"斜邊本身是根號四十一，所以斜邊平方直接是四十一；減去已知股四的平方十六，未知股平方為二十五，正長度為五。","misconceptionTarget":"或把根號四十一當四十一再平方，造成不必要的大數與錯誤結果。"}},
+    {"questionId":"u11-s012-v007","expectedContentSha256":"dc25cacfec1bb00b020981122db28ece52ca2731cb23cb08862107f2fd768a69","appendText":{"explanation":"斜邊二根號十三平方為四乘十三等於五十二，再減六平方三十六，未知股平方為十六，因此股長唯一取正值四。","misconceptionTarget":"或漏平方根式外的係數二，或把十六開根誤算為八。"}},
+    {"questionId":"u11-s012-v008","expectedContentSha256":"1879a1f7bab1bff6b1e45653ed2ac6a5c7499135bd955461b9a5bcb93bf8e65a","appendText":{"explanation":"未知股平方是二十九平方減二十平方，可用平方差算成九乘四十九等於四百四十一；開正平方根得到二十一，不能停在平方值。","misconceptionTarget":"或把二十九減二十所得九當股長，或把四百四十一未開根就作答。"}},
+    {"questionId":"u11-s012-v009","expectedContentSha256":"9d374eac4a8f2ec19ba99152435bef5e34af9805a4793f02506a86a8f62255f9","appendText":{"explanation":"兩股比五比十二對應基本畢氏數組五、十二、十三。斜邊二十六是十三的兩倍，所以短股也是五的兩倍，等於十。","misconceptionTarget":"或只按五比十二分配斜邊，沒有先補出比例中的斜邊十三份。"}},
+    {"questionId":"u11-s012-v010","expectedContentSha256":"94e155d68e59a2aeea0286fcfe029e25a520393c6bb3c1c0a1e65c59b8a2243e","appendText":{"explanation":"二十公尺是斜邊、十六公尺是垂直股，水平股平方為四百減二百五十六等於一百四十四，故水平距離為十二公尺。","misconceptionTarget":"或把水平距離直接寫成二十減十六，沒有辨認斜邊與兩股的平方關係。"}},
+    {"questionId":"u11-s012-v011","expectedContentSha256":"d7c9b4f59761e802ee4e555611525c73631d8cc37c597aee37ba5b7680c66895","appendText":{"explanation":"長方形對角線五十公分是斜邊，高三十公分是一股；寬平方為二千五百減九百等於一千六百，因此寬為四十公分。","misconceptionTarget":"或用對角線直接減高度得二十，忽略矩形角落形成直角三角形。"}},
+    {"questionId":"u11-s012-v012","expectedContentSha256":"22fcfdc0a0e2c6507f75f7973fc4df392912d0dfb11d982b46c83eff95900a04","appendText":{"explanation":"斜邊一點三公里平方為一點六九，已知股零點五平方為零點二五，相減得一點四四，正平方根是一點二公里。","misconceptionTarget":"或直接相減小數得到零點八，或在小數平方時把位數位置算錯。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u11-s012-cr001","expectedContentSha256":"0304d2428b9543c6ccd111fe38ab0e4b3da7b366c989e23d91165f69c7a3bea4","set":{"standardSolution":["設另一股為b公分，由畢氏定理得b²＝37²−12²，因為斜邊平方應等於兩股平方和。","利用平方差，b²＝(37−12)(37＋12)＝25×49＝1225，可減少大數平方的計算量。","因b是實際長度，只取正平方根b＝35公分；最後驗算12²＋35²＝37²，三邊角色與數值都符合。"],"commonErrorTargets":["直接以37−12＝25作為另一股，沒有使用三邊平方關係。","算得1225後未開根，或忘記股長只取正值而寫成正負35。"]}},
+    {"questionId":"u11-s012-cr002","expectedContentSha256":"62f015b593df41c9472dbdde315f33ba9c3ef0a2b3b85902c4991c08945644c9","set":{"standardSolution":["設兩股為7k、24k，先用勾股定理補出斜邊比例，得√[(7k)²＋(24k)²]＝25k。","由實際斜邊25k＝50得k＝2，所以兩股必須同步放大，分別為14與48。","驗算14²＋48²＝196＋2304＝2500＝50²，兩股皆為正且斜邊最大，答案符合題目全部條件。"],"commonErrorTargets":["把斜邊50直接按7比24分配，忽略畢氏數組的斜邊比例25。","求得k＝2後只報一股，或把24k誤算成46而未回代驗算。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u11-s012-lecture-r1","expectedContentSha256":"cbd6c02425e5903ab96034788002c3e0341dc8ca54e32e13c162ca5301500b68","appendArray":{"conceptNarrative":["已知斜邊與一股求另一股時，先確認斜邊是最大邊，再用未知股平方＝斜邊平方−已知股平方，最後對非負平方差取正平方根。含根式的斜邊要把外部係數一併平方，大數可用平方差公式簡化；比例題則先辨認完整畢氏數組。答案還要回代平方和，若平方差為負或斜邊不最大，應先質疑題目模型。"]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"直角三角形斜邊15、一股9，求另一股。","solutionSteps":["列未知股平方為15²−9²。","計算225−81＝144。","取正平方根得12。"],"answer":"另一股12。","why":"求股必須用斜邊平方減已知股平方，不能直接減邊長；長度只取正根，並可由9²＋12²＝15²回代確認角色與計算都正確。"},
+      {"exampleId":"L2","prompt":"直角三角形斜邊√34、一股3，求另一股。","solutionSteps":["斜邊平方為(√34)²＝34。","未知股平方＝34−3²＝25。","取正平方根得5。"],"answer":"另一股5。","why":"根號三十四是邊長，代入畢氏定理後平方會直接還原三十四；不應把根式先粗估，精確平方更快且不會引入誤差。"},
+      {"exampleId":"L3","prompt":"直角三角形斜邊37、一股12，求另一股。","solutionSteps":["列未知股平方37²−12²。","用平方差算(37−12)(37＋12)＝25×49＝1225。","開正平方根得35。"],"answer":"另一股35。","why":"平方差能避免分別計算兩個大平方；得到一千二百二十五仍是股長平方，最後必須開根並以十二、三十五、三十七驗算。"},
+      {"exampleId":"L4","prompt":"兩股比8：15，斜邊34，求兩股。","solutionSteps":["由8²＋15²＝17²辨認比例為8：15：17。","斜邊34是17的2倍。","兩股同步放大為16與30。"],"answer":"兩股16與30。","why":"只知道兩股比還要用畢氏定理補出斜邊比例十七；三邊同比放大才保持相似與直角關係，不能把三十四只在兩股間分配。"}
+    ]}}
+  ],
+  "drawingSpecs":[],"textFiles":[]
+}

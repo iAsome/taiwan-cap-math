@@ -115,13 +115,18 @@ export const LECTURE = {
     },
     {
       "step": 3,
-      "instruction": "把文字敘述轉成關係。",
-      "check": "「A、B、C 共線」表示三點在同一直線；「交於 P」表示 P 同時在兩物件上。"
+      "instruction": "把文字敘述轉成點與線的所屬關係。",
+      "check": "「共線」表示在同一直線；「交於 P」表示 P 同時在兩物件上。"
     },
     {
       "step": 4,
-      "instruction": "最後檢查名稱是否可倒序。",
-      "check": "直線與線段可倒序；射線通常不可；三字母角可交換兩側字母但中間頂點不變。"
+      "instruction": "比較物件是否有方向，再判斷名稱能否倒序。",
+      "check": "直線與線段可倒序；射線倒序通常會改變端點與方向。"
+    },
+    {
+      "step": 5,
+      "instruction": "回到所有已知條件檢查名稱是否唯一。",
+      "check": "同頂點有多個角時用三字母記號，未標比例的圖形不拿來猜長短。"
     }
   ],
   "workedExamples": [
@@ -132,7 +137,8 @@ export const LECTURE = {
         "兩者端點都是 A、C。",
         "線段名稱可交換端點順序。"
       ],
-      "answer": "相同。"
+      "answer": "相同。",
+      "why": "線段只由兩個端點及其間的點決定，沒有像射線那樣的起點與方向。AC、CA 使用同一對端點，倒序沒有改變所包含的點，因此是同一條線段；這也避免把名稱順序誤當成新的物件。"
     },
     {
       "exampleId": "L2",
@@ -141,7 +147,8 @@ export const LECTURE = {
         "射線名稱第一個字母表示端點。",
         "第一個字母是 P。"
       ],
-      "answer": "P 點。"
+      "answer": "P 點。",
+      "why": "射線由端點向單一方向延伸，所以名稱必須保留方向資訊。第一個字母 P 固定起點，第二個字母 Q 只指出延伸經過的位置；若改寫為射線 QP，端點便改成 Q，通常不再是同一射線。"
     },
     {
       "exampleId": "L3",
@@ -150,7 +157,8 @@ export const LECTURE = {
         "三字母角記號的中間字母是頂點。",
         "頂點為 S；兩邊由 S 指向 R 與 T。"
       ],
-      "answer": "頂點 S；兩邊為射線 SR 與射線 ST。"
+      "answer": "頂點 S；兩邊為射線 SR 與射線 ST。",
+      "why": "角的兩邊必須共用同一端點，三字母記號特別把這個共同端點放在中間。由 ∠RST 可直接讀出 S 同時是射線 SR、ST 的端點，兩側字母 R、T 則各指出一條角邊經過的方向點。"
     },
     {
       "exampleId": "L4",
@@ -159,7 +167,8 @@ export const LECTURE = {
         "交點同時屬於兩條直線。",
         "所以 K 在 m 上，也在 n 上。"
       ],
-      "answer": "K 同時在直線 m 與直線 n 上。"
+      "answer": "K 同時在直線 m 與直線 n 上。",
+      "why": "「交於 K」是所屬關係的簡寫，表示 K 是兩條直線共有的點。這項條件只保證 K 同時位於 m、n，不會額外保證兩線垂直、等長或有端點；把語句精確翻譯即可避免加入圖上未給的資訊。"
     }
   ],
   "levelConnections": {
@@ -233,7 +242,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "492182c5e8f471f5ec90e8cce9caaf4a81bcccac4e7b78aabd5215872d19e0ba"
+  "contentSha256": "46054bf9c69f015325cc9a864924f4e1394306cf9b4e9bd5c51fc21ca91974bd"
 };
 
 export const QUESTIONS = [
@@ -263,11 +272,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "逐一比較端點數，可得線段符合兩個端點。",
-    "explanation": "依端點數分類，線段恰有兩個端點。",
+    "explanation": "端點是限制線形物件延伸的邊界。直線向兩端無限延伸而沒有端點，射線只有固定起點，線段則由兩個端點夾出有限部分。因此四個選項中，只有線段恰有兩個端點。",
     "steps": [
-      "直線有 0 個端點。",
-      "射線有 1 個端點。",
-      "線段有 2 個端點。"
+      "先依題意把比較標準固定為端點數量。",
+      "逐一判定直線為零個端點、射線為一個端點。",
+      "線段具有兩個端點，所以選線段；點本身不以端點數分類。"
     ],
     "optionAnalysis": [
       {
@@ -291,7 +300,7 @@ export const QUESTIONS = [
         "reason": "點只表示位置，不以端點數描述。"
       }
     ],
-    "misconceptionTarget": "把射線誤認為有兩端點。",
+    "misconceptionTarget": "把射線畫出的有限部分誤看成有兩端點，忽略它仍向一端無限延伸。",
     "prerequisiteCheck": "不需先備技能；只使用本講義的基本定義。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -303,7 +312,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "cf09dd15030f27ab44b8d2737c5f5cb58b687cd5b8bc5cae70463639cfb55e80"
+    "contentSha256": "13aa9cc9bc3bc3b2b77c58e05514943574c6edf80ec13e26fba12ef80a71fe09"
   },
   {
     "questionId": "u08-s001-v002",
@@ -331,10 +340,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "依射線命名規則，端點是 A。",
-    "explanation": "射線 AB 從 A 出發，經過 B 並沿該方向延伸。",
+    "explanation": "射線的命名順序帶有方向資訊，第一個字母表示唯一端點，第二個字母只表示射線經過的方向點。射線 AB 從 A 出發並經過 B，因此端點是 A，而不是 B 或兩點都有。",
     "steps": [
-      "讀取射線名稱 AB。",
-      "第一字母 A 為端點。"
+      "確認題目物件是射線而非線段。",
+      "套用射線名稱第一個字母為端點的規則。",
+      "AB 的第一個字母是 A，所以答案為 A 點。"
     ],
     "optionAnalysis": [
       {
@@ -358,7 +368,7 @@ export const QUESTIONS = [
         "reason": "射線名稱第一字母明確指定端點。"
       }
     ],
-    "misconceptionTarget": "把第二個字母誤當端點。",
+    "misconceptionTarget": "把射線名稱當成可任意倒序的線段名稱，因而誤認第二個字母 B 是端點。",
     "prerequisiteCheck": "不需先備技能；使用射線命名規則。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -370,7 +380,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "411d9bcff59d80ac8f4e6c553168517a8e351766a284e5b1a0c7ec2846371236"
+    "contentSha256": "bce739193001d0d42afd388fc6093f08660a6603c3351ef53456aaeb94365631"
   },
   {
     "questionId": "u08-s001-v003",
@@ -398,10 +408,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "按照角記號規則，Q 是共同端點。",
-    "explanation": "∠PQR 的中間字母為 Q，所以頂點是 Q。",
+    "explanation": "三字母角記號中，中間字母一定是兩條角邊的共同端點，也就是角的頂點。∠PQR 的兩邊可寫成射線 QP 與射線 QR，它們共同從 Q 出發，所以頂點唯一是 Q。",
     "steps": [
-      "找三字母記號的中間位置。",
-      "中間字母為 Q。"
+      "找出三字母角記號的中間位置。",
+      "∠PQR 的中間字母是 Q。",
+      "以射線 QP、QR 共同端點再檢查，故頂點為 Q 點。"
     ],
     "optionAnalysis": [
       {
@@ -425,7 +436,7 @@ export const QUESTIONS = [
         "reason": "角頂點由中間字母決定，與中點無關。"
       }
     ],
-    "misconceptionTarget": "把角記號第一個字母當頂點。",
+    "misconceptionTarget": "只看角記號的第一個字母，沒有利用中間字母固定為頂點的命名規則。",
     "prerequisiteCheck": "不需先備技能；使用三字母角記號。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -437,7 +448,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "bb16f7a4a5c7a8ce3ea7c3f860d75bd992b9857a3d49e82c03351b23ac7ec259"
+    "contentSha256": "209153b072779a4c35b20629a067da518a3130b013153af59047723a8694a80c"
   },
   {
     "questionId": "u08-s001-v004",
@@ -465,10 +476,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "兩條記號皆代表通過 A、B 的唯一直線。",
-    "explanation": "直線 AB 和 BA 都通過 A、B，且向兩端延伸，因此是同一直線。",
+    "explanation": "兩個相異點可唯一決定一條直線。直線 AB 與直線 BA 都通過相同的 A、B 兩點，而且都向兩端無限延伸；交換字母順序不會改變這條直線，因此兩個名稱表示同一條直線。",
     "steps": [
-      "確認兩名稱使用相同兩點。",
-      "直線名稱順序可交換。"
+      "確認 A、B 是兩個相異點。",
+      "比較兩個名稱，發現都以 A、B 決定直線。",
+      "直線名稱可交換兩點順序，所以 AB 與 BA 表示同一直線。"
     ],
     "optionAnalysis": [
       {
@@ -492,7 +504,7 @@ export const QUESTIONS = [
         "reason": "兩點決定唯一一條直線，直線名稱可倒序。"
       }
     ],
-    "misconceptionTarget": "把直線當成有方向的射線。",
+    "misconceptionTarget": "把直線誤當具有起點與方向的射線，因字母倒序就判成另一條幾何物件。",
     "prerequisiteCheck": "不需先備技能；使用直線命名規則。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -504,7 +516,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c6a1822f1a613d01a2c1866ee7912926669e6bb9e6321a6ff7a42ce03582d214"
+    "contentSha256": "b86cbd373d25e557d95d54d005d2111bd55f857deb0d9b858d9a4639f17657c3"
   },
   {
     "questionId": "u08-s001-v005",
@@ -533,11 +545,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "端點皆為 A，且經 B、經 C 的方向一致，所以是同一射線。",
-    "explanation": "因 A、B、C 依序共線，B、C 位於 A 的同一方向；兩射線端點同為 A 且方向相同。",
+    "explanation": "射線是否相同要同時比較端點和延伸方向。B 在 A、C 之間，表示從 A 看去，B 與 C 位於同一方向；射線 AB 與射線 AC 又同以 A 為端點，所以兩者包含相同的點並表示同一射線。",
     "steps": [
-      "固定端點 A。",
-      "由 B 在 A、C 之間判斷 B、C 在 A 的同側。",
-      "比較延伸方向。"
+      "先由名稱確認射線 AB 的端點是 A。",
+      "利用 B 在 A、C 之間，判定 B、C 在 A 的同一側。",
+      "射線 AC 也以 A 為端點且同方向，所以它與射線 AB 相同。"
     ],
     "optionAnalysis": [
       {
@@ -561,7 +573,7 @@ export const QUESTIONS = [
         "reason": "端點為 C，沿 C 到 B 的方向。"
       }
     ],
-    "misconceptionTarget": "只看包含相同字母而忽略端點與方向。",
+    "misconceptionTarget": "只比較名稱是否含相同字母，沒有同時檢查射線的端點與單向延伸方向。",
     "prerequisiteCheck": "能讀懂點、射線與共線關係。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -573,7 +585,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "509099ca5e2213fe1253661d7a5af0d67e1346691e3560fe4c2c4b83618ce703"
+    "contentSha256": "e8c79cb818c370e31b4a66434bf7d9e389c0c68c9c83bd5f50e75e2af8002ecd"
   },
   {
     "questionId": "u08-s001-v006",
@@ -602,10 +614,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "交點 P 是兩線共有的唯一點，因此同時在 l、m 上。",
-    "explanation": "題目明示 l、m 交於 P，所以 P 在 l 上且在 m 上。",
+    "explanation": "兩直線交於 P 的意思，就是 P 同時屬於直線 l 和直線 m。兩條不同直線在平面上至多有一個交點，但相交不表示必定垂直；直線也沒有端點，因此只有「P 同時在兩線上」一定成立。",
     "steps": [
-      "讀取「交於 P」。",
-      "翻譯為 P 屬於兩條直線。"
+      "把「交於 P」翻譯成 P 是兩直線的共同點。",
+      "因此 P 在 l 上，也在 m 上。",
+      "排除直線有端點、兩交點或必定垂直等未由題意保證的敘述。"
     ],
     "optionAnalysis": [
       {
@@ -629,7 +642,7 @@ export const QUESTIONS = [
         "reason": "相交不必形成直角。"
       }
     ],
-    "misconceptionTarget": "把相交自動解讀為垂直。",
+    "misconceptionTarget": "看到兩線相交就自動補上九十度條件，把一般交點誤當成垂直交點。",
     "prerequisiteCheck": "能辨認直線與交點。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -641,7 +654,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "b78740c08ada8e03d83442e37925b55bf648a1ba1f3bedfcbf807a239ae0be6e"
+    "contentSha256": "593210208d582eb33f9892765c594784b51485cf1f30b9ec0d0a110e8c001686"
   },
   {
     "questionId": "u08-s001-v007",
@@ -670,11 +683,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "完整枚舉六組端點，沒有把 AB 與 BA 重複計算。",
-    "explanation": "線段名稱可倒序，所以只需列不重複點對。",
+    "explanation": "每條線段由兩個不同端點決定，而且線段 AB 與 BA 是同一條，不能重複計數。依序列出 AB、AC、AD、BC、BD、CD，共有六組不同端點，因此可命名六條不同線段。",
     "steps": [
-      "依左端點列出 AB、AC、AD。",
-      "再列 BC、BD。",
-      "最後列 CD，共 6 條。"
+      "以 A 為一端列出 AB、AC、AD 三條。",
+      "再以 B 為尚未配對的一端列出 BC、BD 兩條。",
+      "最後補上 CD，一共 3＋2＋1＝6 條且沒有倒序重複。"
     ],
     "optionAnalysis": [
       {
@@ -698,7 +711,7 @@ export const QUESTIONS = [
         "reason": "把有方向的排列數當成無方向線段數。"
       }
     ],
-    "misconceptionTarget": "只數相鄰線段或將倒序重複。",
+    "misconceptionTarget": "只數相鄰點形成的三條短線段，或把 AB、BA 當成兩條而重複計數。",
     "prerequisiteCheck": "能辨認線段由兩端點決定。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題答案為線段條數，使用「條」作計數單位。",
@@ -710,7 +723,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "74f23ec7bb23ff48f75e6b129766cbf45423b5b7f5b6622274c60fb675b7dab6"
+    "contentSha256": "f8f1b5c4e0ec87353695149f14b7b6563e470649668998cb02a63abb5a290fca"
   },
   {
     "questionId": "u08-s001-v008",
@@ -739,11 +752,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "由射線 OA、OC 可組成 ∠AOC；只寫 ∠O 無法區分其他角。",
-    "explanation": "頂點 O 有多個角，因此必須用三字母 ∠AOC 或 ∠COA 明確指定。",
+    "explanation": "所求角的兩邊是射線 OA 與 OC，共同端點為 O，因此三字母記號必須把 O 放在中間，寫成 ∠AOC 或 ∠COA。選項中只有 ∠AOC 符合；只寫 ∠O 會和同頂點的其他角混淆。",
     "steps": [
-      "確定頂點是 O。",
-      "確定兩邊經過 A、C。",
-      "把 O 放中間，得 ∠AOC。"
+      "由題意鎖定兩條角邊為 OA、OC。",
+      "共同端點 O 是頂點，必須放在三字母記號中間。",
+      "選項中 ∠AOC 唯一同時指出 A、O、C 且沒有歧義。"
     ],
     "optionAnalysis": [
       {
@@ -767,7 +780,7 @@ export const QUESTIONS = [
         "reason": "三字母角記號以 O 為中間字母，兩側字母 A、C 指出兩邊。"
       }
     ],
-    "misconceptionTarget": "在同一頂點有多個角時仍只寫單字母。",
+    "misconceptionTarget": "同一頂點有多個角時仍只寫單字母角記號，沒有指明實際使用的兩條射線。",
     "prerequisiteCheck": "能讀寫射線與三字母角記號。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -779,7 +792,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "556ccd3bb15733dd4534ca6ba9d8cb936b1bd0da879ceb91e71fc56c02046d1b"
+    "contentSha256": "53359ef2376bbd00c5050ccdf50c5f794d19facd5ccaeffd51bdfdd25973500e"
   },
   {
     "questionId": "u08-s001-v009",
@@ -808,11 +821,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "共線限制只有同向或反向；題目排除同向，所以必為反向。",
-    "explanation": "兩射線端點同為 X；若 Y、Z 在同側，方向相同會是同一射線，因此必在相反側。",
+    "explanation": "X、Y、Z 共線時，從 X 指向 Y、Z 的方向只有同向或反向兩種。若 Y、Z 在 X 的同一側，射線 XY 與 XZ 會完全相同；題目明示兩射線不同，故只能是 Y、Z 位於 X 的相反方向。",
     "steps": [
-      "固定共同端點 X。",
-      "利用共線排除不同斜向。",
-      "利用射線不同排除同方向。"
+      "先固定兩射線共同端點 X。",
+      "利用三點共線，把相對位置縮成同側或異側兩種。",
+      "同側會得到同一射線，與已知矛盾，所以 Y、Z 必在 X 的相反方向。"
     ],
     "optionAnalysis": [
       {
@@ -836,7 +849,7 @@ export const QUESTIONS = [
         "reason": "共線的反向射線形成平角，不是垂直。"
       }
     ],
-    "misconceptionTarget": "把共線誤認為一定同方向。",
+    "misconceptionTarget": "把三點共線直接等同於兩射線同方向，漏用題目給出的「兩射線不同」條件。",
     "prerequisiteCheck": "能理解射線端點與方向。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值或單位。",
@@ -848,7 +861,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e81b642e72ea3666e0c9473e32054ac8d202be4c94ba205d85571df99f739834"
+    "contentSha256": "c65bc210bb0206824b53c72e859b1c9b3d395e3c7dd450a46f378cc70b4895a9"
   },
   {
     "questionId": "u08-s001-v010",
@@ -877,11 +890,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "起點一個、單向延伸的幾何模型是射線；A 在第一字母位置。",
-    "explanation": "情境同時給出起點與單向延伸，因此必須用射線而非線段或直線。",
+    "explanation": "情境指定 A 是固定起點，軌道由 A 經過 B 後仍朝同一方向延伸，正好符合一個端點、單向無限延伸的射線。名稱須先寫端點 A，再寫方向點 B，所以應以射線 AB 表示。",
     "steps": [
-      "辨認固定起點 A。",
-      "辨認經過 B 後繼續同方向延伸。",
-      "依名稱寫射線 AB。"
+      "從文字辨認固定起點是 A。",
+      "確認路徑經過 B 後仍只向前延伸，不是有限線段或雙向直線。",
+      "依端點在前的規則命名為射線 AB。"
     ],
     "optionAnalysis": [
       {
@@ -905,7 +918,7 @@ export const QUESTIONS = [
         "reason": "端點會變成 B，方向與規畫敘述不同。"
       }
     ],
-    "misconceptionTarget": "忽略『起點』或『繼續延伸』而選錯物件。",
+    "misconceptionTarget": "忽略「起點」與「繼續向前延伸」，因出現兩站就誤選線段 AB 或直線 AB。",
     "prerequisiteCheck": "能辨認線段、射線與直線。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位；只判斷幾何模型。",
@@ -917,7 +930,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "bea32c2a1b1813429b6a59bf3426b60cabd619dc2d94b0b3e1833e8b40021606"
+    "contentSha256": "a0a6d23f7b5b9a0be48fda4ea051314a596489a8577eecb74b9d403c89710aa8"
   },
   {
     "questionId": "u08-s001-v011",
@@ -946,10 +959,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "P 屬於 l 且屬於 m，所以 P 是兩線交點。",
-    "explanation": "圖說把 P 指定為 l、m 共有的位置，因此可翻成 P 為兩線交點。",
+    "explanation": "P 同時位在 l 與 m 上，表示 P 是兩條不同直線共有的位置；依交點定義，P 就是 l、m 的交點。直線沒有端點，而共同點也不會推出兩線平行或 P 到兩線距離相等。",
     "steps": [
-      "把『在 l 上』與『在 m 上』同時成立。",
-      "共同點即交點。"
+      "將「P 位在 l 上」記為 P 屬於直線 l。",
+      "再將「P 位在 m 上」記為 P 也屬於直線 m。",
+      "兩條不同直線的共同點稱為交點，所以選 P 是 l 與 m 的交點。"
     ],
     "optionAnalysis": [
       {
@@ -973,7 +987,7 @@ export const QUESTIONS = [
         "reason": "位在線上表示距離為 0，但題意重點是共同點，不是一般等距軌跡。"
       }
     ],
-    "misconceptionTarget": "把『同時在線上』誤解成距離相等。",
+    "misconceptionTarget": "把同時在線上的共同點誤解為與兩線等距，或忽略不同直線已有交點而選平行。",
     "prerequisiteCheck": "能理解交點與直線無端點。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及量測單位。",
@@ -985,7 +999,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "9c6eb6da23f7111dec1df48fcff7c6bd465758598aeba7c22105e28c8f7b38a1"
+    "contentSha256": "ba2f4700734801afc8464137980311f5fe0cfbeed5b286d2cbc6a700e3810004"
   },
   {
     "questionId": "u08-s001-v012",
@@ -1014,11 +1028,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "由 OA、OC 的共同端點 O 組成 ∠AOC，且三字母記號排除其他角。",
-    "explanation": "三條步道使單字母角記號不夠明確，必須把兩方向點名。",
+    "explanation": "A 方向與 C 方向分別是射線 OA、OC，它們的共同起點 O 是角的頂點。為了和 OB 形成的其他角區分，需用三字母記號並把 O 放中間，因此最佳標記是 ∠AOC。",
     "steps": [
-      "定位共同起點 O。",
-      "選取 OA、OC 兩方向。",
-      "將 O 放在角記號中間。"
+      "由敘述選出所求角的兩邊 OA 與 OC。",
+      "確認共同起點 O 為頂點，放在角記號中間。",
+      "寫成 ∠AOC，並以三字母排除 ∠AOB 等其他同頂點角。"
     ],
     "optionAnalysis": [
       {
@@ -1042,7 +1056,7 @@ export const QUESTIONS = [
         "reason": "頂點是 O，指定方向是 A 與 C，因此用三字母 ∠AOC。"
       }
     ],
-    "misconceptionTarget": "只寫 ∠O 而忽略多個角的歧義。",
+    "misconceptionTarget": "在三條步道共用 O 時仍只寫 ∠O，沒有用兩側字母消除同頂點多角的歧義。",
     "prerequisiteCheck": "能使用三字母角記號。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位。",
@@ -1054,7 +1068,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "20bf563da79216b50a9b271ead71d779ae9d4f01f084f8c659ce206423af9aea"
+    "contentSha256": "9da7abef87efe3deaecf7e930182fe43be8492df461150339ef1929f339c4c66"
   }
 ];
 
@@ -1078,9 +1092,10 @@ export const CONSTRUCTED_RESPONSES = [
       "計算 AC 並附單位。"
     ],
     "standardSolution": [
-      "兩射線的共同端點都是 B。",
-      "因 A、B、C 共線且 A、C 位於 B 的相反兩側，射線 BA 與 BC 為相反射線，形成平角。",
-      "AC=AB+BC=4+7=11 公分。"
+      "射線名稱的第一個字母表示端點，所以射線 BA 與射線 BC 的共同端點都是 B。",
+      "A、B、C 依序共線，A 與 C 位於 B 的相反兩側，因此 BA、BC 是端點相同而方向相反的兩條射線。",
+      "兩條相反射線形成平角，角度為 180°。又因 B 在 A、C 之間，AC＝AB＋BC＝4＋7＝11 公分。",
+      "答案為：共同端點 B、形成平角，且 AC 長 11 公分。"
     ],
     "alternativeMethods": [
       "可用數線位置 A—B—C 說明相反方向，再逐段相加。"
@@ -1117,8 +1132,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "線段名稱可寫 AB 或 BA；長度答案必須用公分。∠ABC 或 ∠CBA 都表示頂點 B 的該平角。",
     "answerOnlyPolicy": "只答「B、平角、11公分」且無理由，最高 2 分；因題目要求判斷與計算過程。",
     "commonErrors": [
-      "把射線 BA 的端點誤認為 A。",
-      "用 7−4 求 AC。"
+      "把射線 BA 的第二個字母 A 誤認為端點，沒有使用射線命名順序。",
+      "忽略 B 位於 A、C 之間而用 7－4 求 AC，或把相反射線誤判為直角。"
     ],
     "independentReview": {
       "derivedResult": "B；平角；11公分。",
@@ -1132,7 +1147,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4bcffefcf17d0fa83b0dc2dfb3169997bf25121b6208f9effc1a08f08c66dba2"
+    "contentSha256": "6803f2cab0eaf4fa6a6920f11350afd1cb201b0feb987fd5d5b7303091ea549e"
   },
   {
     "questionId": "u08-s001-cr002",
@@ -1153,9 +1168,10 @@ export const CONSTRUCTED_RESPONSES = [
       "解釋單字母角記號在此處為何可能不清楚。"
     ],
     "standardSolution": [
-      "剩餘角是 ∠DBC（或 ∠CBD）。",
-      "∠DBC=∠ABC−∠ABD=38°−15°=23°。",
-      "B 點有 BA、BD、BC 三條射線形成多個角，只寫 ∠B 無法唯一指出所指角。"
+      "射線 BD 位於 ∠ABC 內部，所以大角 ∠ABC 被分成 ∠ABD 與 ∠DBC。",
+      "剩餘角可寫成 ∠DBC 或 ∠CBD；兩個名稱都把頂點 B 放在中間，角邊是 BD、BC。",
+      "由角的可加性，∠DBC＝∠ABC－∠ABD＝38°－15°＝23°。",
+      "B 周圍有 BA、BD、BC 三條射線形成多個角，只寫 ∠B 無法唯一指定 23° 的這個角，因此必須使用三字母記號。"
     ],
     "alternativeMethods": [
       "可寫 15°+x=38°，解得 x=23°，再標成 ∠DBC。"
@@ -1207,7 +1223,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e0b52a6d90e119e38b5af05eaea811c12b936a8af62b8deedc383b1df47686de"
+    "contentSha256": "9dd5f416b8e729f932a0d3e86a14849daac2d67493cbdc694ac656cc748d0462"
   }
 ];
 
@@ -1216,7 +1232,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v001",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "cf09dd15030f27ab44b8d2737c5f5cb58b687cd5b8bc5cae70463639cfb55e80",
+    "contentSha256": "13aa9cc9bc3bc3b2b77c58e05514943574c6edf80ec13e26fba12ef80a71fe09",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由 0、1、2 個端點的定義重查，只有線段為 2。",
@@ -1251,7 +1267,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v002",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "411d9bcff59d80ac8f4e6c553168517a8e351766a284e5b1a0c7ec2846371236",
+    "contentSha256": "bce739193001d0d42afd388fc6093f08660a6603c3351ef53456aaeb94365631",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "從 A 經 B 的方向定義射線，因此固定端點為 A。",
@@ -1286,7 +1302,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v003",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "bb16f7a4a5c7a8ce3ea7c3f860d75bd992b9857a3d49e82c03351b23ac7ec259",
+    "contentSha256": "209153b072779a4c35b20629a067da518a3130b013153af59047723a8694a80c",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "兩邊為射線 QP、QR，共同端點 Q 即頂點。",
@@ -1321,7 +1337,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v004",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "c6a1822f1a613d01a2c1866ee7912926669e6bb9e6321a6ff7a42ce03582d214",
+    "contentSha256": "b86cbd373d25e557d95d54d005d2111bd55f857deb0d9b858d9a4639f17657c3",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由「兩個相異點只能決定一條直線」反推：AB 與 BA 使用同一組兩點，因此不可能是兩條不同直線。",
@@ -1356,7 +1372,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v005",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "509099ca5e2213fe1253661d7a5af0d67e1346691e3560fe4c2c4b83618ce703",
+    "contentSha256": "e8c79cb818c370e31b4a66434bf7d9e389c0c68c9c83bd5f50e75e2af8002ecd",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "依點序 A-B-C，從 A 指向 B 與從 A 指向 C 共用同一方向。",
@@ -1391,7 +1407,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v006",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "b78740c08ada8e03d83442e37925b55bf648a1ba1f3bedfcbf807a239ae0be6e",
+    "contentSha256": "593210208d582eb33f9892765c594784b51485cf1f30b9ec0d0a110e8c001686",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "依交點定義，P 必為兩直線的共同點。",
@@ -1426,7 +1442,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v007",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "74f23ec7bb23ff48f75e6b129766cbf45423b5b7f5b6622274c60fb675b7dab6",
+    "contentSha256": "f8f1b5c4e0ec87353695149f14b7b6563e470649668998cb02a63abb5a290fca",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "四點兩兩配對為 AB、AC、AD、BC、BD、CD，共六組。",
@@ -1461,7 +1477,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v008",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "556ccd3bb15733dd4534ca6ba9d8cb936b1bd0da879ceb91e71fc56c02046d1b",
+    "contentSha256": "53359ef2376bbd00c5050ccdf50c5f794d19facd5ccaeffd51bdfdd25973500e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "角兩邊是 OA、OC，故三字母記號中間必為 O、兩側為 A、C。",
@@ -1496,7 +1512,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v009",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "e81b642e72ea3666e0c9473e32054ac8d202be4c94ba205d85571df99f739834",
+    "contentSha256": "c65bc210bb0206824b53c72e859b1c9b3d395e3c7dd450a46f378cc70b4895a9",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "同端點的共線射線若不相同，兩個經過點必分居端點兩側。",
@@ -1531,7 +1547,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v010",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "bea32c2a1b1813429b6a59bf3426b60cabd619dc2d94b0b3e1833e8b40021606",
+    "contentSha256": "a0a6d23f7b5b9a0be48fda4ea051314a596489a8577eecb74b9d403c89710aa8",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "軌道模型從 A 出發穿過 B 並延伸，對應射線 AB。",
@@ -1566,7 +1582,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v011",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "9c6eb6da23f7111dec1df48fcff7c6bd465758598aeba7c22105e28c8f7b38a1",
+    "contentSha256": "ba2f4700734801afc8464137980311f5fe0cfbeed5b286d2cbc6a700e3810004",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "兩個隸屬條件的交集是共同點 P，亦即交點。",
@@ -1601,7 +1617,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s001-v012",
     "unitId": "u08",
     "skillId": "geometry-basic-elements",
-    "contentSha256": "20bf563da79216b50a9b271ead71d779ae9d4f01f084f8c659ce206423af9aea",
+    "contentSha256": "9da7abef87efe3deaecf7e930182fe43be8492df461150339ef1929f339c4c66",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "指定的兩射線是 OA、OC，故唯一無歧義記號為 ∠AOC 或等價 ∠COA；選項中只有前者。",

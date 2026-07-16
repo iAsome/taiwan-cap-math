@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u11",
+  "batch": "012-u11-complete",
+  "skills": ["s001"],
+  "mc": [
+    {"questionId":"u11-s001-v001","expectedContentSha256":"deafc9d04b03e7fd937527b639fdcdf07e95c77376cbb790b35c62968ff103c1","appendText":{"explanation":"題目問所有實數平方根，而不是只算主平方根符號；正七與負七平方都回到四十九，所以兩者必須同時列出。","misconceptionTarget":"把根號記號的非負值與『所有平方根』混淆，遺漏負七。"}},
+    {"questionId":"u11-s001-v002","expectedContentSha256":"0aceb1549b1e2aa38e7d4d6eca9bbf5b3f786f579a5601a6bf553dc3352979c9","appendText":{"explanation":"雖可形式上寫正零與負零，但兩者是同一個實數；解 x²=0 只得到 x=0，因此平方根個數恰為一。","misconceptionTarget":"機械套用正數有正負兩根的規則，誤把正零、負零當成兩個不同數。"}},
+    {"questionId":"u11-s001-v003","expectedContentSha256":"1cdfd53c7270b0e64afb5427007c6f0033a4b70007676339aa68779e30af54dd","appendText":{"explanation":"平方根的判準是候選數與自己相乘後等於被開方數；五乘五等於二十五，其他加法或除法關係都不能證明平方根。","misconceptionTarget":"只看到五與二十五有倍數關係，沒有以五的平方驗證定義。"}},
+    {"questionId":"u11-s001-v004","expectedContentSha256":"43e1fecb5c600fc3299cd32660c082c9c250004a62d234ef6a5073cc475f1db1","appendText":{"explanation":"方程要求全部實數解，將八十一寫成九的平方後，正九與負九都使 x²=81 成立；不能只取主平方根。","misconceptionTarget":"解平方方程時直接寫 x=√81，只留下正九而漏掉負九。"}},
+    {"questionId":"u11-s001-v005","expectedContentSha256":"ad2863c7da97fbf15bd240030278a9bf1511c8a679c7fc5566a9fdc909065088","appendText":{"explanation":"任一實數 y 的平方 y² 都不小於零，所以不可能等於負數；本題限定實數範圍，因此負數沒有實數平方根。","misconceptionTarget":"以為負數可由負的候選值平方得到，忽略負數乘負數反而為正。"}},
+    {"questionId":"u11-s001-v006","expectedContentSha256":"0ac1724273d07520292b76aa21e27f3bb38f7856bee586a242bedcd6579f5b6c","appendText":{"explanation":"正數 a 的兩個平方根必為 r 與 -r，它們是互為相反數的一對；相加時 r-r 完全抵消，所以和固定為零。","misconceptionTarget":"把兩根都視為正 r，誤把和算成 2r，沒有保留負根符號。"}},
+    {"questionId":"u11-s001-v007","expectedContentSha256":"64ec46c654896707abbe2658a148c9cd8ff0a27a544fc943be98c99bc08f4ff8","appendText":{"explanation":"一點五乘一點五等於二點二五，而負一點五平方也相同；方程問全部實數解，因此小數平方仍要列出正負兩值。","misconceptionTarget":"只辨認正的一點五，或把被開方數二點二五本身誤當成平方根。"}},
+    {"questionId":"u11-s001-v008","expectedContentSha256":"067b218e5173c85ce41b1771c2b158f2d76e190b5432f8df4365f712aa218149","appendText":{"explanation":"由 m²=m 移項因式分解得 m(m-1)=0，候選為零與一；題目另給 m 為正數，故零被排除，只剩一。","misconceptionTarget":"求出零與一後未套用 m>0 的限制，錯誤保留零為第二答案。"}},
+    {"questionId":"u11-s001-v009","expectedContentSha256":"bf74b038946cbec9c83a91d7254a56f852564e4d8ef9193af4dc55b1ff7c2015","appendText":{"explanation":"若正根為 r，較大根減較小根是 r-(-r)=2r；由差十二得 r=6，再以 a=r² 求得三十六。","misconceptionTarget":"把兩根差當成 r，直接用十二平方，沒有先除以二求正根。"}},
+    {"questionId":"u11-s001-v010","expectedContentSha256":"64a63c9592d002ac55878196cbf826a02cc4804badb6e08ef2485a48b9cf7e71","appendText":{"explanation":"代數方程 s²=196 有正負十四兩個解，但 s 表示實際邊長且必須非負，因此只取十四，單位由平方公分還原為公分。","misconceptionTarget":"未用邊長非負的情境條件篩選，將正負十四都當成可用長度。"}},
+    {"questionId":"u11-s001-v011","expectedContentSha256":"ab5326c2141ba065e4db2e9be791aac9d764bbb362dafad539d1bf7901e5b32f","appendText":{"explanation":"計算機的根號按鍵定義為輸出非負主平方根，所以顯示十八；這不表示方程 x²=324 沒有負十八這個解。","misconceptionTarget":"把介面只顯示主平方根，誤解為三百二十四只有一個平方根。"}},
+    {"questionId":"u11-s001-v012","expectedContentSha256":"584eccb7a7b4720c1aa862a3f05cc9e86347ce0ea74c36539d669173f0676879","appendText":{"explanation":"平方方程先給出 v=±20，但速率描述大小而不能為負；套用物理量限制後只留下二十，不能保留負二十。","misconceptionTarget":"只完成代數雙根便停止，沒有依速率非負排除負值。"}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u11-s001-cr001","expectedContentSha256":"046745b322fb8870a076fbc2b4bce1cd9480cae09b4314e99a7eff993dbb6463","appendArray":{"fullCreditSolution":["設 x²=100，因 100=10²，所以 x=10 或 x=-10；逐一驗算 10×10 與 (-10)×(-10) 都等於 100，兩個不同實數都符合平方根定義，因此答案不能只列正值。"]},"set":{"commonErrors":["把『一百的平方根』當成根號記號 √100，只寫非負的十。","把被開方數一百加上正負號寫成 ±100，沒有將候選值平方驗算。"]}},
+    {"questionId":"u11-s001-cr002","expectedContentSha256":"0caaac585c3258fd5623dca00a52409b40da3e8ea7d8400baa58ce9fa7e72efc","appendArray":{"fullCreditSolution":["由正方形面積公式 s²=288，代數候選為 ±√288；將 288 分解成 144×2 得 √288=12√2。因 s 是邊長，必須取正的 12√2 公分，負值不具幾何意義。"]},"set":{"figureId":null,"drawingSpecReference":null,"commonErrors":["把面積二百八十八除以二，未使用邊長平方等於面積。","正確化簡出 12√2 後仍寫 ±12√2 公分，忽略邊長非負。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u11-s001-lecture-r1","expectedContentSha256":"f144599a67fb03b057799e2db22e5f979eccb64ab7b4e0ddaa84ae80859b29cd","set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"求 64 的所有平方根。","solutionSteps":["8²=64。","(-8)²=64。","兩個值都符合定義。"],"answer":"8 與 -8。","why":"題目問所有平方根，必須解 x²=64；正八與負八平方都等於六十四，所以兩個不同實數都要保留。若只寫 √64=8，回答的是主平方根而非全部平方根。"},
+      {"exampleId":"L2","prompt":"求 0 的平方根。","solutionSteps":["設x²=0。","只有x=0。"],"answer":"0。","why":"平方等於零時，數本身只能是零；形式上的正零與負零代表同一個實數，因此不能套用正數有兩個相異平方根的結論，答案與個數都只有一個零。"},
+      {"exampleId":"L3","prompt":"方程 z²=1.44 的實數解。","solutionSteps":["1.2²=1.44。","正負1.2平方相同。"],"answer":"z=±1.2。","why":"一點四四是一點二的平方，且負一點二平方也會得到相同正數；方程要求全部實數解，所以要寫正負一點二，不能因使用根號計算就只留下非負值。"},
+      {"exampleId":"L4","prompt":"正方形面積121平方公分，求邊長。","solutionSteps":["邊長s滿足s²=121。","代數候選±11。","長度取正值。"],"answer":"11公分。","why":"由面積公式先得到代數候選正負十一，但題目的 s 是正方形實際邊長，負十一公分沒有情境意義；因此保留十一公分，並把面積的平方單位還原成長度單位。"}
+    ]},"appendArray":{"conceptNarrative":["處理平方根問題時，先分清題目是在問『所有平方後得到 a 的實數』、單值的主平方根 √a，還是具有非負限制的實際量。正數的平方根為互為相反數的一對，零只有一個平方根，負數在實數範圍沒有平方根；若先由方程得到正負候選，還要依邊長、速率或數量等語意篩選，最後將每個保留值平方回代，確認確實得到原數。"]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

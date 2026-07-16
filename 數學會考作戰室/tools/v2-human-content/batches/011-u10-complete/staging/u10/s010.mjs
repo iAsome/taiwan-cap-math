@@ -20,7 +20,7 @@ export default {
     "prerequisites": [
       "square-sum-formula"
     ],
-    "prerequisiteBridge": "先備技能 square-sum-formula 已建立下一步所需概念；本節專注於理解並運用 (a-b)^2=a^2-2ab+b^2。",
+    "prerequisiteBridge": "先備技能 square-sum-formula 已建立下一步所需概念；本節專注於理解並運用 (a-b)²=a²-2ab+b²。",
     "glossary": [
       {
         "term": "差的平方",
@@ -41,7 +41,8 @@ export default {
       "平方表示相同的兩個因式相乘：(a-b)(a-b)。",
       "交叉項是 -ab 與 -ab，因此合成 -2ab。",
       "最後一項 (-b)(-b)=+b²，所以尾項仍為正。",
-      "此公式適合計算略小於整數基準的平方。"
+      "此公式適合計算略小於整數基準的平方。",
+      "差的平方(a−b)²是兩個完全相同的二項式相乘，不是a²−b²。展開時首項為a²，兩個交叉乘積−ab合成−2ab，尾項則因(−b)(−b)成為＋b²。反向辨認時要同時核對首尾是否為平方、中間項是否恰為負的兩倍乘積；在面積情境還需先把縮短後的邊長寫對，並檢查長度為正。"
     ],
     "formalDefinitions": [
       {
@@ -68,53 +69,62 @@ export default {
       {
         "step": 1,
         "instruction": "辨認 a 與被減的 b。",
-        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)²=a²-2ab+b²」。"
       },
       {
         "step": 2,
         "instruction": "寫 a²。",
-        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)²=a²-2ab+b²」。"
       },
       {
         "step": 3,
         "instruction": "寫 -2ab。",
-        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)²=a²-2ab+b²」。"
       },
       {
         "step": 4,
         "instruction": "寫 +b²。",
-        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)²=a²-2ab+b²」。"
       },
       {
         "step": 5,
         "instruction": "展開內部式後再合併。",
-        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)^2=a^2-2ab+b^2」。"
+        "check": "完成此步後，確認內容仍符合「理解並運用 (a-b)²=a²-2ab+b²」。"
       }
     ],
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "展開 (x−4)²。",
+        "prompt": "展開(x−4)²。",
         "solutionSteps": [
-          "x²−8x+16。"
+          "令a＝x、b＝4。",
+          "計算a²−2ab＋b²＝x²−2·x·4＋4²。",
+          "化簡得x²−8x＋16。"
         ],
-        "answer": "x²-8x+16。"
+        "answer": "x²−8x＋16。",
+        "why": "平方作用在整個差上，所以不能只平方x與4；兩個交叉乘積合成−8x，而尾項由(−4)(−4)得到正16，三項缺一不可，也能逐項對回兩個相同因式。"
       },
       {
         "exampleId": "L2",
-        "prompt": "展開 (3x−2)²。",
+        "prompt": "展開(3x−2)²。",
         "solutionSteps": [
-          "9x²−12x+4。"
+          "辨認a＝3x、b＝2。",
+          "首項(3x)²＝9x²，中間項−2·3x·2＝−12x。",
+          "加上尾項2²＝4，得9x²−12x＋4。"
         ],
-        "answer": "9x²-12x+4。"
+        "answer": "9x²−12x＋4。",
+        "why": "公式中的a是整體3x，因此係數3也要平方；中間項同時含兩倍、3x與2，逐項計算能避免把它誤寫成−6x，代零亦可檢查常數四。"
       },
       {
         "exampleId": "L3",
-        "prompt": "計算 98²。",
+        "prompt": "使用差的平方計算98²。",
         "solutionSteps": [
-          "(100−2)²=10000−400+4。"
+          "把98寫成100−2。",
+          "套用(100−2)²＝100²−2·100·2＋2²。",
+          "計算10000−400＋4＝9604。"
         ],
-        "answer": "9604。"
+        "answer": "9604。",
+        "why": "選100作鄰近整數基準可把乘法轉成三個容易心算的量；最後加回2²很重要，若只算10000−400會少4，結果也應略低於一萬。"
       }
     ],
     "commonMistakes": [
@@ -132,12 +142,17 @@ export default {
         "mistake": "中間係數漏乘 2",
         "why": "只寫一個交叉乘積",
         "correction": "展開兩因式核對。"
+      },
+      {
+        "mistake": "由a²與b²就直接選公式，不檢查中間項",
+        "why": "差的平方與平方差都有首尾平方，但結構與項數不同",
+        "correction": "先看平方是否包住整個括號，再驗算中間項是否為−2ab。"
       }
     ],
     "selfCheck": [
-      "我是否能能由 (a-b)(a-b) 推導公式？",
-      "我是否能能避免把 b² 誤寫成負？",
-      "我是否能能用公式計算與解釋邊長縮減的面積？",
+      "我是否能由 (a-b)(a-b) 推導公式？",
+      "我是否能避免把 b² 誤寫成負？",
+      "我是否能用公式計算與解釋邊長縮減的面積？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -190,7 +205,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "aa9149448278080a7c85b33331b0e8df1ccdb8aeed553b651b6f547fb79c7eee"
+    "contentSha256": "ec43a1113efef5805e9be4dacbf1e53d09c4db90427527c8ca91582bdc128d66"
   },
   "mcQuestions": [
     {
@@ -222,11 +237,13 @@ export default {
         "derivedChoice": "漏掉−10x，正確為x²−10x+25",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "把平方改寫成兩個相同因式，再完成四個乘積。",
+      "explanation": "把平方改寫成兩個相同因式，再完成四個乘積。 由(x−5)(x−5)逐項相乘，兩個交叉項都是−5x，合併成−10x；尾項則是正25。因此原式不是平方差，而是漏了中間項，完整結果為x²−10x＋25。",
       "steps": [
         "改寫成(x−5)(x−5)。",
         "完成四個乘積。",
-        "合併−5x−5x為−10x。"
+        "合併−5x−5x為−10x。",
+        "列出x²、−5x、−5x、25四個乘積。",
+        "合併同類項並用x＝0代入，確認常數項仍為25。"
       ],
       "optionAnalysis": [
         {
@@ -250,7 +267,7 @@ export default {
           "reason": "交叉項應為負，不是正。"
         }
       ],
-      "misconceptionTarget": "把(a−b)²誤當a²−b²。",
+      "misconceptionTarget": "把(a−b)²誤當a²−b²。 也可能只看首尾平方就誤認公式相同，沒有檢查兩個交叉乘積。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -265,7 +282,7 @@ export default {
       "semanticReviewRef": "u10-s010-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "aba4b38606cb1f02a64b2c2862aafa1173a3c30b0f698db9376b1d8fe92eeece"
+      "contentSha256": "a213a22ac7112b26d188ed2f0fdf00249c6956fa8fa9d63fb85aa25b82b63577"
     },
     {
       "questionId": "u10-s010-v002",
@@ -294,9 +311,11 @@ export default {
         "derivedChoice": "a²-2ab+b²",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "兩個交叉項為負，尾尾乘積為正。",
+      "explanation": "兩個交叉項為負，尾尾乘積為正。 (a−b)²表示(a−b)(a−b)，展開為a²−ab−ab＋b²；兩個交叉項合為−2ab，負數相乘使尾項為正，所以結果是a²−2ab＋b²。這個三項結構也能區別只有兩項的平方差公式。",
       "steps": [
-        "(a-b)(a-b)=a²-2ab+b²。"
+        "(a-b)(a-b)=a²-2ab+b²。",
+        "把平方改寫為兩個相同因式並逐項相乘。",
+        "合併−ab與−ab，再確認尾項(−b)(−b)為正。"
       ],
       "optionAnalysis": [
         {
@@ -320,7 +339,7 @@ export default {
           "reason": "這是和平方。"
         }
       ],
-      "misconceptionTarget": "差平方的尾項符號錯",
+      "misconceptionTarget": "差平方的尾項符號錯 或把括號差的平方誤當兩個平方相減，因而完全漏掉中間項。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -335,7 +354,7 @@ export default {
       "semanticReviewRef": "u10-s010-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4e02d3bf9951ed69b6f28df3ee7a1f96ae161d676f32d70164ccd73c37ad20de"
+      "contentSha256": "43c98352a7e74cfbc848ed38be95d98675f59cb9d5658ddf88a6ff772df5a99a"
     },
     {
       "questionId": "u10-s010-v003",
@@ -364,9 +383,11 @@ export default {
         "derivedChoice": "4x²-12x+9",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "係數平方、中間兩倍乘積與尾平方都要計算。",
+      "explanation": "係數平方、中間兩倍乘積與尾平方都要計算。 令a＝2x、b＝3，套用a²−2ab＋b²：首項(2x)²＝4x²，中間項−2(2x)(3)＝−12x，尾項3²＝9，故為4x²−12x＋9。將x代成零時常數仍為九，可再排除尾項錯誤的選項。",
       "steps": [
-        "(2x)²-2(2x)(3)+3²=4x²-12x+9。"
+        "(2x)²-2(2x)(3)+3²=4x²-12x+9。",
+        "辨認公式中的整體a是2x、b是3。",
+        "分別算三項後依正負號組合，並以x＝0檢查尾項9。"
       ],
       "optionAnalysis": [
         {
@@ -390,7 +411,7 @@ export default {
           "reason": "誤用平方差。"
         }
       ],
-      "misconceptionTarget": "係數平方與中間項錯",
+      "misconceptionTarget": "係數平方與中間項錯 或只把x平方而漏平方係數2，也可能把兩倍乘積誤寫成−6x。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -405,7 +426,7 @@ export default {
       "semanticReviewRef": "u10-s010-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f6521d5351436bbb84579cbd31962836476d7400dfbe729b47f44bcbc2e029d0"
+      "contentSha256": "0562ad2aa39db0ae1f054710ecde0d3944af751e5839af1c066dd69f57c4a1aa"
     },
     {
       "questionId": "u10-s010-v004",
@@ -434,9 +455,11 @@ export default {
         "derivedChoice": "9y²-24y+16",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "三部分符號依差平方公式。",
+      "explanation": "三部分符號依差平方公式。 把3y視為a、4視為b，(a−b)²＝a²−2ab＋b²；三項依序是9y²、−24y、16，所以唯一完整展開為9y²−24y＋16。首項與尾項均為平方而非原數，這能同步檢查兩端係數。",
       "steps": [
-        "(3y)²-2(3y)(4)+4²=9y²-24y+16。"
+        "(3y)²-2(3y)(4)+4²=9y²-24y+16。",
+        "計算(3y)²＝9y²與4²＝16。",
+        "計算兩倍乘積2×3y×4＝24y並保留負號。"
       ],
       "optionAnalysis": [
         {
@@ -460,7 +483,7 @@ export default {
           "reason": "三部分符號依差平方公式。"
         }
       ],
-      "misconceptionTarget": "中間項係數或符號錯",
+      "misconceptionTarget": "中間項係數或符號錯 或把中間項只算一次3y×4而得−12y，或把差號帶到尾平方。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -475,7 +498,7 @@ export default {
       "semanticReviewRef": "u10-s010-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e54633eab1624e1136dc8cfe6f396f5f96fe77ea76c70389b2dd440ce6d40e6e"
+      "contentSha256": "71eea76f1ee481adcf9670c2e0fc1e987bd1eec0b26b7533b646483e8ee750f9"
     },
     {
       "questionId": "u10-s010-v005",
@@ -504,9 +527,11 @@ export default {
         "derivedChoice": "8",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "中間項與尾平方交叉驗證。",
+      "explanation": "中間項與尾平方交叉驗證。 (x−k)²＝x²−2kx＋k²。比較中間項得−2k＝−16，所以k＝8；再以尾項k²＝64驗算，8²確為64，兩個條件共同鎖定答案。若取負八，中間項會變成正十六x，立即與題式矛盾。",
       "steps": [
-        "-2k=-16 得 k=8，且 k²=64。"
+        "-2k=-16 得 k=8，且 k²=64。",
+        "比較x的一次項係數，解−2k＝−16。",
+        "用常數項64反向檢查k²，並排除符號不合的負值。"
       ],
       "optionAnalysis": [
         {
@@ -530,7 +555,7 @@ export default {
           "reason": "中間項只 -8x。"
         }
       ],
-      "misconceptionTarget": "反向比較中間項係數錯",
+      "misconceptionTarget": "反向比較中間項係數錯 或只由k²＝64取±8，沒有使用中間項−16x排除k＝−8。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -545,7 +570,7 @@ export default {
       "semanticReviewRef": "u10-s010-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "03a00b0480c2a69b36d2ced2aefc293dbe3cfc4ac66570ea9c048aaac1673492"
+      "contentSha256": "2e4ddd8d1dfc46e261bafe4e63941ec5385a3eefc578d63ac915066b7a84779d"
     },
     {
       "questionId": "u10-s010-v006",
@@ -574,9 +599,11 @@ export default {
         "derivedChoice": "-600",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "差的平方中間項是負的兩倍乘積。",
+      "explanation": "差的平方中間項是負的兩倍乘積。 差的平方中間項是−2ab。此處a＝100、b＝3，所以−2×100×3＝−600；題目問的是中間項本身，必須連同負號回答。它會使九十七的平方低於一萬，方向也與數值大小相符。",
       "steps": [
-        "中間項為 -2×100×3=-600。"
+        "中間項為 -2×100×3=-600。",
+        "從100²−2·100·3＋3²鎖定中間一項。",
+        "計算係數2×100×3＝600，再加回原有負號。"
       ],
       "optionAnalysis": [
         {
@@ -600,7 +627,7 @@ export default {
           "reason": "漏乘 2 且符號錯。"
         }
       ],
-      "misconceptionTarget": "差平方中間項的符號或倍數錯",
+      "misconceptionTarget": "差平方中間項的符號或倍數錯 或只算100×3得到300，漏掉公式中的兩倍與差平方的負號。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -615,7 +642,7 @@ export default {
       "semanticReviewRef": "u10-s010-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ca4ec5fa6cd6778c43fd31c4e15eec01204e506e985b3a50d9ff6df4f54cd2f7"
+      "contentSha256": "2cbfc5e5063a0e47147699040e726bf8b2f5eaad0d7c2551541faf95f0b8cac7"
     },
     {
       "questionId": "u10-s010-v007",
@@ -644,10 +671,12 @@ export default {
         "derivedChoice": "4x-8",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "減去第二個平方後二次項抵消。",
+      "explanation": "減去第二個平方後二次項抵消。 展開得(x²−2x＋1)−(x²−6x＋9)。外層減號要分配到第二括號每一項，二次項抵消後為−2x＋6x＋1−9＝4x−8。代入x＝三時原式為四、答案式也為四，可作快速驗算。",
       "steps": [
         "第一式 x²-2x+1，第二式 x²-6x+9。",
-        "相減得 4x-8。"
+        "相減得 4x-8。",
+        "先分別寫出兩個差平方的三項展開。",
+        "去括號時整體變號，再按二次、一次、常數項合併。"
       ],
       "optionAnalysis": [
         {
@@ -671,7 +700,7 @@ export default {
           "reason": "4x-8 正確。"
         }
       ],
-      "misconceptionTarget": "兩個差平方相減時外層負號錯",
+      "misconceptionTarget": "兩個差平方相減時外層負號錯 或只改第二式首項符號，沒有把−6x與＋9一起變號後再合併。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -686,7 +715,7 @@ export default {
       "semanticReviewRef": "u10-s010-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "cce19df1b932eec64d6c25145d661e86784a984b8bd07013bbcc26ce502a7159"
+      "contentSha256": "bce8914dcffab5f44e1cb4663efdf8a30205aaee72b68344944609c9474be05f"
     },
     {
       "questionId": "u10-s010-v008",
@@ -715,9 +744,11 @@ export default {
         "derivedChoice": "2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "中間項排除 a=-2。",
+      "explanation": "中間項排除 a=-2。 (ax−1)²＝a²x²−2ax＋1。由a²＝4只能得a＝±2，但一次項要求−2a＝−4，因此a＝2；a＝−2會產生＋4x，不符合原式。首尾比較不足以定符號，一次項才提供唯一判準。",
       "steps": [
-        "a²=4，但中間項 -2a=-4，得 a=2。"
+        "a²=4，但中間項 -2a=-4，得 a=2。",
+        "先由x²係數列a²＝4，保留兩個候選。",
+        "再比較x係數−2a＝−4，排除a＝−2並代回驗算。"
       ],
       "optionAnalysis": [
         {
@@ -741,7 +772,7 @@ export default {
           "reason": "±2 未考慮中間項符號。"
         }
       ],
-      "misconceptionTarget": "只由 a² 判斷而忽略中間項",
+      "misconceptionTarget": "只由 a² 判斷而忽略中間項 或只比較二次項係數得到±2，沒有再用一次項的符號判定唯一值。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -756,7 +787,7 @@ export default {
       "semanticReviewRef": "u10-s010-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c66d0523cc8a8b15c00c2b13899d102ffc09a8b523c9f8a52f2c3ff812238306"
+      "contentSha256": "6181e70393627aaa14d3302357a6dff7bb5e8bb7091974bce7c1ed2990952516"
     },
     {
       "questionId": "u10-s010-v009",
@@ -785,9 +816,11 @@ export default {
         "derivedChoice": "x-y",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "整體 x-y 作為公式第一部分。",
+      "explanation": "整體 x-y 作為公式第一部分。 要把(x−y−2)²寫成(A−2)²，減去2以前的整體就是x−y，因此A＝x−y。代回(A−2)可完全還原x−y−2，其他選項都改變原括號。這種代換必須保留原有負號與運算順序，不能只看單一字母。",
       "steps": [
-        "原式可重組為 [(x-y)-2]²，所以 A=x-y。"
+        "原式可重組為 [(x-y)-2]²，所以 A=x-y。",
+        "把原括號依最後的−2切成兩個部分。",
+        "令A＝x−y並代回，逐字核對括號內式完全相同。"
       ],
       "optionAnalysis": [
         {
@@ -811,7 +844,7 @@ export default {
           "reason": "改變原式符號。"
         }
       ],
-      "misconceptionTarget": "整體代換時漏負號",
+      "misconceptionTarget": "整體代換時漏負號 或只取最前面的x作A，忽略−y也屬於被整體平方的第一部分。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -826,7 +859,7 @@ export default {
       "semanticReviewRef": "u10-s010-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "383f7f99370f9c6f0b162137499ab68b4e4c5c0dce0b7412248ae4e0ff454c89"
+      "contentSha256": "ddb4f4bf412aeb4502f25b9f5f4dfdb1c7a6cdcf3ff524b58441ed82ea2a0b97"
     },
     {
       "questionId": "u10-s010-v010",
@@ -855,9 +888,11 @@ export default {
         "derivedChoice": "x²-4x+4 平方公尺",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "縮短邊長後整體平方。",
+      "explanation": "縮短邊長後整體平方。 每邊由x公尺縮短2公尺，新邊長是x−2而非面積直接減2。新面積為(x−2)²＝x²−4x＋4平方公尺，且實際情境需x＞2。中間項反映水平與垂直兩方向同時縮短造成的面積變化。",
       "steps": [
-        "新邊長 x-2，面積 (x-2)²=x²-4x+4。"
+        "新邊長 x-2，面積 (x-2)²=x²-4x+4。",
+        "先由情境寫出新邊長x−2。",
+        "再將新邊長平方並用差的平方展開，保留平方公尺單位。"
       ],
       "optionAnalysis": [
         {
@@ -881,7 +916,7 @@ export default {
           "reason": "縮短邊長後整體平方。"
         }
       ],
-      "misconceptionTarget": "把邊長縮短直接轉成面積減 4",
+      "misconceptionTarget": "把邊長縮短直接轉成面積減 4 或把邊長少2線性套到面積，寫成x²−2或只減去固定面積4。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "公尺×公尺=平方公尺。",
@@ -896,7 +931,7 @@ export default {
       "semanticReviewRef": "u10-s010-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d0daea2da0356b2c081cea6ce3806b8ea4b41bc49ae39a6aa955301907863086"
+      "contentSha256": "2b54fdfba37453b7dcbdeb495875020b62c8dc3f2898641761fd53bb5a8034ab"
     },
     {
       "questionId": "u10-s010-v011",
@@ -925,10 +960,12 @@ export default {
         "derivedChoice": "1444 平方公尺",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "「兩側各 1 公尺」使整條邊減少 2，而不是 1。",
+      "explanation": "「兩側各 1 公尺」使整條邊減少 2，而不是 1。 四邊向內各縮1公尺時，水平邊左右各少1，垂直邊上下各少1，所以新正方形邊長為40−2＝38公尺，面積38²＝1444平方公尺。",
       "steps": [
         "四周各縮 1 使邊長減少 2，成為 38 公尺。",
-        "38²=1444。"
+        "38²=1444。",
+        "沿任一方向計算兩側各少1，得到新邊長38。",
+        "算38²＝(40−2)²＝1600−160＋4＝1444。"
       ],
       "optionAnalysis": [
         {
@@ -952,7 +989,7 @@ export default {
           "reason": "這是 41²。"
         }
       ],
-      "misconceptionTarget": "把四周內縮 1 誤解為邊長只減 1",
+      "misconceptionTarget": "把四周內縮 1 誤解為邊長只減 1 或把『向內1公尺』只扣一次，誤用39²；也可能仍以40作新邊長。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "公尺×公尺=平方公尺。",
@@ -967,7 +1004,7 @@ export default {
       "semanticReviewRef": "u10-s010-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "59fa8648140e5d54cd958b1778ea53927ee476742b1b5472cf03db0ac465796e"
+      "contentSha256": "d05b4fb01ddcd45902140c8567233602903410abace250f42189d113052f20cf"
     },
     {
       "questionId": "u10-s010-v012",
@@ -996,9 +1033,11 @@ export default {
         "derivedChoice": "x²-4x+4",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "圖示切除位置確認兩方向各減 2。",
+      "explanation": "圖示切除位置確認兩方向各減 2。 圖中右側與下側各標寬2，中央剩餘區在水平、垂直方向都由x減為x−2，因此是邊長x−2的正方形，面積為(x−2)²＝x²−4x＋4。",
       "steps": [
-        "中央正方形邊長為 x-2，因此面積 (x-2)²=x²-4x+4。"
+        "中央正方形邊長為 x-2，因此面積 (x-2)²=x²-4x+4。",
+        "依圖分別讀出中央區的水平邊與垂直邊皆為x−2。",
+        "將(x−2)平方展開，並以x＞2確認剩餘邊長為正。"
       ],
       "optionAnalysis": [
         {
@@ -1022,7 +1061,7 @@ export default {
           "reason": "切除卻使面積增加。"
         }
       ],
-      "misconceptionTarget": "由圖讀邊長減量錯",
+      "misconceptionTarget": "由圖讀邊長減量錯 或把兩個方向各減2相加成邊長x−4，或只對面積扣固定的4。",
       "prerequisiteCheck": "使用先備技能：square-sum-formula；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "邊長為抽象長度單位，面積為平方單位。",
@@ -1037,7 +1076,7 @@ export default {
       "semanticReviewRef": "u10-s010-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f435cbb9358dc354aa6cd986135568c644c2cdf8954b266d2c72d1a15e97c30b"
+      "contentSha256": "4bb5b9f8d15bc2ba76d006c52d75badecb960e30312c472ec79f90eebce2a571"
     }
   ],
   "constructedResponses": [
@@ -1059,14 +1098,16 @@ export default {
       ],
       "standardSolution": [
         "(4x-3)²=16x²-24x+9。",
-        "尾項來自 (-3)(-3)=+9，因此為正。"
+        "尾項來自 (-3)(-3)=+9，因此為正。",
+        "完整逐項相乘可寫成(4x)(4x)＋(4x)(−3)＋(−3)(4x)＋(−3)(−3)，合併後為16x²−24x＋9；最後一項為正是因負負得正。兩個交叉項各為負十二x，合計負二十四x，三項係數與符號都可由四個乘積逐一核對。"
       ],
       "alternativeMethods": [
         "可展開 (4x-3)(4x-3) 顯示兩交叉項與尾項。"
       ],
       "reasoningSteps": [
         "(4x-3)²=16x²-24x+9。",
-        "尾項來自 (-3)(-3)=+9，因此為正。"
+        "尾項來自 (-3)(-3)=+9，因此為正。",
+        "分別檢查首項平方、中間兩倍乘積與尾項平方的係數及符號。"
       ],
       "rubric": [
         {
@@ -1093,7 +1134,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫結果最高 2 分。",
       "commonErrorTargets": [
-        "理解並運用 (a-b)^2=a^2-2ab+b^2"
+        "把(4x−3)²誤寫成16x²−9，混淆差的平方與平方差並漏掉中間項。",
+        "把尾項寫成−9，沒有指出它來自兩個負因數(−3)(−3)的乘積。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1104,7 +1146,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9f21e0066873178186cb0c07a14887f81395fe944bc7f676d519611925f550fe"
+      "contentSha256": "4fea58175e8fd6e49998f9f59fad2e6988e0e1facb69afa951f2d2c5ac8466c5"
     },
     {
       "questionId": "u10-s010-cr002",
@@ -1124,14 +1166,16 @@ export default {
       ],
       "standardSolution": [
         "199²=(200-1)²。",
-        "=200²-2·200·1+1²=40000-400+1=39601。"
+        "=200²-2·200·1+1²=40000-400+1=39601。",
+        "以200為基準，199＝200−1，所以199²＝(200−1)²＝200²−2·200·1＋1²＝40000−400＋1＝39601，三項均已展示。結果應略小於四萬，且個位是一，與一百九十九乘自身的末位相符，能排除少加尾項的錯誤。"
       ],
       "alternativeMethods": [
         "可用直式驗算，但主要解法必須呈現差平方。"
       ],
       "reasoningSteps": [
         "199²=(200-1)²。",
-        "=200²-2·200·1+1²=40000-400+1=39601。"
+        "=200²-2·200·1+1²=40000-400+1=39601。",
+        "用199×199的末兩位或(200−1)×199快速驗算39601，確認數值沒有少減或多減。"
       ],
       "rubric": [
         {
@@ -1158,7 +1202,8 @@ export default {
       "unitAndNotationRules": "純數無單位。",
       "answerOnlyPolicy": "只寫 39601，最高 1 分，因題目指定方法。",
       "commonErrorTargets": [
-        "理解並運用 (a-b)^2=a^2-2ab+b^2"
+        "把199²改成200²−1²，誤用平方差而漏掉−2·200·1。",
+        "中間項算成−200或＋400，沒有同時保留兩倍乘積與負號。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1169,14 +1214,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ff781a361fa66f50ee71316e39ed516d99856c65054d6e40041546ea339aa037"
+      "contentSha256": "1d953a9a036d476640679a62b6b4d23dfb02246e30d7054b288db439db75e31b"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s010-v001-review",
       "questionId": "u10-s010-v001",
-      "questionContentSha256": "aba4b38606cb1f02a64b2c2862aafa1173a3c30b0f698db9376b1d8fe92eeece",
+      "questionContentSha256": "a213a22ac7112b26d188ed2f0fdf00249c6956fa8fa9d63fb85aa25b82b63577",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "(x−5)(x−5)=x²−5x−5x+25=x²−10x+25；原式漏掉兩個−5x形成的中間項。",
@@ -1205,12 +1250,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "u10-s010-v001 中央修訂後獨立重算：(x−5)(x−5)=x²−5x−5x+25=x²−10x+25；原式漏掉兩個−5x形成的中間項。 四個選項逐項核對，唯一正解為「漏掉−10x，正確為x²−10x+25」；其餘選項排除理由為：平方常數仍是25。；除了常數外還缺中間項。；交叉項應為負，不是正。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "b36ac5d68c6832194c1b2741a28692af8328e833dcaa5ea828d34188648b8ee1"
+      "contentSha256": "bb00246000807d10ae69716d031e046c7e5ec1889fb1e26bb986d701ff987b85"
     },
     {
       "reviewId": "u10-s010-v002-review",
       "questionId": "u10-s010-v002",
-      "questionContentSha256": "4e02d3bf9951ed69b6f28df3ee7a1f96ae161d676f32d70164ccd73c37ad20de",
+      "questionContentSha256": "43c98352a7e74cfbc848ed38be95d98675f59cb9d5658ddf88a6ff772df5a99a",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "(a-b)(a-b)=a²-2ab+b²。",
@@ -1239,12 +1284,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「下列何者等於 (a-b)²？」獨立重算：(a-b)(a-b)=a²-2ab+b²。 正解「a²-2ab+b²」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "aaca82728d382122737504935937024f43bf6f5cc56491cf3f713e38688bc4e6"
+      "contentSha256": "b3e44be6ce36f1fd926dca0d44c916e4d0351d5eb2ddf11264bcf9158e842942"
     },
     {
       "reviewId": "u10-s010-v003-review",
       "questionId": "u10-s010-v003",
-      "questionContentSha256": "f6521d5351436bbb84579cbd31962836476d7400dfbe729b47f44bcbc2e029d0",
+      "questionContentSha256": "0562ad2aa39db0ae1f054710ecde0d3944af751e5839af1c066dd69f57c4a1aa",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "(2x)²-2(2x)(3)+3²=4x²-12x+9。",
@@ -1273,12 +1318,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 (2x-3)²。」獨立重算：(2x)²-2(2x)(3)+3²=4x²-12x+9。 正解「4x²-12x+9」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "91c002e3cd6a818e217ff56841d7132f345d4b0272f08bd859abf6d228f874c9"
+      "contentSha256": "19ddb210dd57797b9ddef2d9ea413dbfd144553f25127cb43dfcde5e6cc72315"
     },
     {
       "reviewId": "u10-s010-v004-review",
       "questionId": "u10-s010-v004",
-      "questionContentSha256": "e54633eab1624e1136dc8cfe6f396f5f96fe77ea76c70389b2dd440ce6d40e6e",
+      "questionContentSha256": "71eea76f1ee481adcf9670c2e0fc1e987bd1eec0b26b7533b646483e8ee750f9",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "(3y)²-2(3y)(4)+4²=9y²-24y+16。",
@@ -1307,12 +1352,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 (3y-4)²。」獨立重算：(3y)²-2(3y)(4)+4²=9y²-24y+16。 正解「9y²-24y+16」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "ed107dfec32dfd518f16356416b6354c3deb37fa2d10e50cc51023a011297068"
+      "contentSha256": "2176b1704da6316c75ff6016e6fca39d7537690f4c1de28b671dcddb8251a256"
     },
     {
       "reviewId": "u10-s010-v005-review",
       "questionId": "u10-s010-v005",
-      "questionContentSha256": "03a00b0480c2a69b36d2ced2aefc293dbe3cfc4ac66570ea9c048aaac1673492",
+      "questionContentSha256": "2e4ddd8d1dfc46e261bafe4e63941ec5385a3eefc578d63ac915066b7a84779d",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "-2k=-16 得 k=8，且 k²=64。",
@@ -1341,12 +1386,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 (x-k)²=x²-16x+64，則 k 為何？」獨立重算：-2k=-16 得 k=8，且 k²=64。 正解「8」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "bdd633c48241cb2eeae0e0a763e1ea2c247fb74a204fa805197fddeb0aaa90d4"
+      "contentSha256": "01167ca8002c0cb651d0a355f16d694102bbe601f9c5d62cd50f911f6dd9ed04"
     },
     {
       "reviewId": "u10-s010-v006-review",
       "questionId": "u10-s010-v006",
-      "questionContentSha256": "ca4ec5fa6cd6778c43fd31c4e15eec01204e506e985b3a50d9ff6df4f54cd2f7",
+      "questionContentSha256": "2cbfc5e5063a0e47147699040e726bf8b2f5eaad0d7c2551541faf95f0b8cac7",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "中間項為 -2×100×3=-600。",
@@ -1375,12 +1420,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「將 (100-3)² 展開為 100²-2·100·3+3²，其中中間項的值為何？」獨立重算：中間項為 -2×100×3=-600。 正解「-600」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "9be77c8179a27576e573b800304c3c9cfc00c22fc1e3f6f8437f3d5f1f84e16f"
+      "contentSha256": "5c81cac289f46b03979188b3fef0eae61afe99123e0e18737c1b17b028aa90ce"
     },
     {
       "reviewId": "u10-s010-v007-review",
       "questionId": "u10-s010-v007",
-      "questionContentSha256": "cce19df1b932eec64d6c25145d661e86784a984b8bd07013bbcc26ce502a7159",
+      "questionContentSha256": "bce8914dcffab5f44e1cb4663efdf8a30205aaee72b68344944609c9474be05f",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "第一式 x²-2x+1，第二式 x²-6x+9；相減得 4x-8。",
@@ -1409,12 +1454,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 (x-1)²-(x-3)²。」獨立重算：第一式 x²-2x+1，第二式 x²-6x+9；相減得 4x-8。 正解「4x-8」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "8db025ba7cc3cd414706c1cdcfaa3ba73afda552ec45540b4fba7e70024d58ee"
+      "contentSha256": "0aec87428ac270c5a81fdbf16173a31f0dc3776f2bcba60456c388d75de4fc73"
     },
     {
       "reviewId": "u10-s010-v008-review",
       "questionId": "u10-s010-v008",
-      "questionContentSha256": "c66d0523cc8a8b15c00c2b13899d102ffc09a8b523c9f8a52f2c3ff812238306",
+      "questionContentSha256": "6181e70393627aaa14d3302357a6dff7bb5e8bb7091974bce7c1ed2990952516",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "a²=4，但中間項 -2a=-4，得 a=2。",
@@ -1443,12 +1488,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 (ax-1)²=4x²-4x+1，則 a 為何？」獨立重算：a²=4，但中間項 -2a=-4，得 a=2。 正解「2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "5ccf4cce3ece354e43c3d9719f3fd3319f2901a99a1fca3ae63059ef44410e12"
+      "contentSha256": "ecd0368cd37c6c39eaeb3535c98219c902066648294ea9cc653795169b465f86"
     },
     {
       "reviewId": "u10-s010-v009-review",
       "questionId": "u10-s010-v009",
-      "questionContentSha256": "383f7f99370f9c6f0b162137499ab68b4e4c5c0dce0b7412248ae4e0ff454c89",
+      "questionContentSha256": "ddb4f4bf412aeb4502f25b9f5f4dfdb1c7a6cdcf3ff524b58441ed82ea2a0b97",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "原式可重組為 [(x-y)-2]²，所以 A=x-y。",
@@ -1477,12 +1522,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「將 (x-y-2)² 視為 (A-2)²，A 應為何？」獨立重算：原式可重組為 [(x-y)-2]²，所以 A=x-y。 正解「x-y」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "8d895f18a2967256c662b79796f1c989441b4d0de417addbab565c697a419399"
+      "contentSha256": "8e9d56ddff52f9ce431686c410b9f86c0361c70d33bcbf87e0e08596cd686e5d"
     },
     {
       "reviewId": "u10-s010-v010-review",
       "questionId": "u10-s010-v010",
-      "questionContentSha256": "d0daea2da0356b2c081cea6ce3806b8ea4b41bc49ae39a6aa955301907863086",
+      "questionContentSha256": "2b54fdfba37453b7dcbdeb495875020b62c8dc3f2898641761fd53bb5a8034ab",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "新邊長 x-2，面積 (x-2)²=x²-4x+4。",
@@ -1511,12 +1556,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「正方形原邊長 x 公尺，每邊縮短 2 公尺。新面積為何？」獨立重算：新邊長 x-2，面積 (x-2)²=x²-4x+4。 正解「x²-4x+4 平方公尺」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "2838f2c0609d4b46a01331657b4864375c4c85671ac5a4b0cb9ba221f20a321c"
+      "contentSha256": "b16ef71f86df8e74cc0a7a7a3b647910664d255b12f0cf793fd89ae3be7c4fa2"
     },
     {
       "reviewId": "u10-s010-v011-review",
       "questionId": "u10-s010-v011",
-      "questionContentSha256": "59fa8648140e5d54cd958b1778ea53927ee476742b1b5472cf03db0ac465796e",
+      "questionContentSha256": "d05b4fb01ddcd45902140c8567233602903410abace250f42189d113052f20cf",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "四周各縮 1 使邊長減少 2，成為 38 公尺；38²=1444。",
@@ -1545,12 +1590,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一塊邊長 40 公尺的正方形土地，四邊向內各縮 1 公尺形成新正方形，新面積為何？」獨立重算：四周各縮 1 使邊長減少 2，成為 38 公尺；38²=1444。 正解「1444 平方公尺」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "d2193c8ac1df6f0eef50fb03ef70fa8229af7dd8f3b4143ef5f5af107b4f0dab"
+      "contentSha256": "66a386c8af53a9b0493ab47da322acd01f19613d37b5d4c7f6de58dfe9ead7e5"
     },
     {
       "reviewId": "u10-s010-v012-review",
       "questionId": "u10-s010-v012",
-      "questionContentSha256": "f435cbb9358dc354aa6cd986135568c644c2cdf8954b266d2c72d1a15e97c30b",
+      "questionContentSha256": "4bb5b9f8d15bc2ba76d006c52d75badecb960e30312c472ec79f90eebce2a571",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "中央正方形邊長為 x-2，因此面積 (x-2)²=x²-4x+4。",
@@ -1579,7 +1624,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「圖示正方形原邊長 x，右側與下側各切去寬 2 的長條後，中央剩餘正方形面積為何？」獨立重算：中央正方形邊長為 x-2，因此面積 (x-2)²=x²-4x+4。 正解「x²-4x+4」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "a7afbcf59b47f186f87fbc23e2d490a7e998bace46390f69f0d9c54744d4727d"
+      "contentSha256": "236591a7f14d9e91aa85086dee0a103dbdb57c5f81ea2aa72aec2f532646f877"
     }
   ],
   "drawingSpecs": [

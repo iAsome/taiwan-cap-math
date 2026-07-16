@@ -44,10 +44,11 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "GCD只保留每個數都具有的質因數。",
+    "最大公因數只保留每個數都具有的質因數。",
     "共同質因數的指數要取各數中最小值，因為共同因數不能超過任何一數的供應量。",
-    "若a整除b，則gcd(a,b)=a。",
-    "GCD可把多個數同時約成沒有更大共同因數的比例。"
+    "若 a 整除 b，則 gcd(a,b)=a。",
+    "最大公因數可把多個數同時約成沒有更大共同因數的比例。",
+    "求得候選值後，要用它逐一除所有原數並檢查商為整數，才能確認確實是共同因數。"
   ],
   "formalDefinitions": [
     {
@@ -103,40 +104,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "求 gcd(48,72)。",
       "solutionSteps": [
-        "48=2⁴×3。",
-        "72=2³×3²，取2³×3。"
+        "分解兩數：48=2⁴×3，72=2³×3²。",
+        "共同質因數 2、3 各取較小指數，得到 gcd(48,72)=2³×3=24。",
+        "驗算 48÷24=2、72÷24=3，且 2、3 互質，所以沒有更大的公因數。"
       ],
-      "answer": "24。"
+      "answer": "24。",
+      "why": "48=2⁴×3、72=2³×3²，共同底數為 2、3，各取較小指數得 2³×3=24。48÷24=2、72÷24=3，驗證 24 同時整除兩數。由於兩個商互質，已沒有更大的共同因數，因此 24 確實是最大值。"
     },
     {
-      "exampleId": "L2",
       "prompt": "求 gcd(45,75,105)。",
       "solutionSteps": [
-        "分解後共同含3×5。",
-        "更高指數無法同時保留。"
+        "分解三數：45=3²×5、75=3×5²、105=3×5×7。",
+        "三數共同具有的質因數只有 3、5，兩者的最小指數都是 1。",
+        "所以 gcd(45,75,105)=3×5=15。"
       ],
-      "answer": "15。"
+      "answer": "15。",
+      "why": "三數分別為 3²×5、3×5²、3×5×7，共同質因數只有 3、5，最小指數皆為 1，所以最大公因數是 3×5=15。質因數 7 只在其中一數出現，不能列入共同部分。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "已知15整除60。",
+      "prompt": "已知 15 整除 60，求兩數最大公因數。",
       "solutionSteps": [
-        "15同時整除15與60。",
-        "共同因數不可能大於15。"
+        "由 60=15×4 可知 15 同時整除 15 與 60，因此 15 是公因數。",
+        "兩數的公因數不可能大於較小的數 15。",
+        "所以已找到最大的公因數，gcd(15,60)=15。"
       ],
-      "answer": "gcd(15,60)=15。"
+      "answer": "gcd(15,60)=15。",
+      "why": "15 能整除自己，也能整除 60，所以它已是兩數的共同因數；共同因數不可能大於較小的 15，因此最大公因數直接等於 15。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "把84:126約成最簡整數比。",
+      "prompt": "把 84:126 約成最簡整數比。",
       "solutionSteps": [
-        "gcd=42。",
-        "兩數同除42。"
+        "先求 84 與 126 的最大公因數，得到 gcd(84,126)=42。",
+        "比的兩項同除以 42：84÷42=2，126÷42=3。",
+        "因為 gcd(2,3)=1，所以最簡整數比是 2:3。"
       ],
-      "answer": "2:3。"
+      "answer": "2:3。",
+      "why": "84、126 的最大公因數為 42，兩項同除以 42 得 2、3。因 gcd(2,3)=1，已沒有更大的共同因數，所以 2:3 是最簡整數比。同除最大公因數可一次完成化簡。"
     }
   ],
   "commonMistakes": [
@@ -222,7 +227,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "658d47ca24c49238d7803d27e74daebc8df356f2e6b62ee01e4b8c3146eb488a",
+  "contentSha256": "9d08a69e72cb7ae6eef6dd6a8b73d225118c5268fe8da506c970c5968d6c8f98",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -246,10 +251,11 @@ export const QUESTIONS = [
       "72"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：18 的因數有1、2、3、6、9、18；24 的因數有1、2、3、4、6、8、12、24；最大共同者為6。所以答案是「6」。",
+    "explanation": "18 的正因數為 1、2、3、6、9、18；24 的正因數為 1、2、3、4、6、8、12、24。共同因數是 1、2、3、6，其中最大為 6，所以最大公因數是 6。這是完整列舉兩數因數後所得的唯一最大值。",
     "steps": [
-      "18 的因數有1、2、3、6、9、18",
-      "24 的因數有1、2、3、4、6、8、12、24；最大共同者為6"
+      "完整列出 18 的正因數。",
+      "完整列出 24 的正因數並找共同項。",
+      "比較共同因數 1、2、3、6，選最大值 6。"
     ],
     "optionAnalysis": [
       {
@@ -288,7 +294,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1bdb8357095ce3545abe472d780beadd9d154c9befebd06c4e6a10f6ae1091af",
+    "contentSha256": "211bae10fd523f89350a61d261e650b6ee3b6e44d23dedcc572f67ab39c1850c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -310,7 +316,7 @@ export const QUESTIONS = [
       "2×3×5"
     ],
     "answerIndex": 1,
-    "explanation": "最大公因數只取兩數共同出現的質因數，且每一個共同質因數取較小指數，所以得到 3×5。",
+    "explanation": "45=3²×5，60=2²×3×5；最大公因數只保留兩數共同具有的質因數 3、5，且各取較小指數 1，所以共同部分為 3×5=15。質因數 2 只出現在 60，不能納入，故答案為 15。",
     "steps": [
       "比較 45=3²×5 與 60=2²×3×5。",
       "共同質因數為 3 和 5，分別取指數 1。",
@@ -353,7 +359,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4d9e48db6b791c1fbbd93f507dd53e51800cae518b84ee5dd6ccb5e3b1391c26",
+    "contentSha256": "ca4c6812b48d63a7aa97cfb1b95704d77873f4eca76372eea20e3f4015045db5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -375,10 +381,11 @@ export const QUESTIONS = [
       "12"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：三數都可被6整除；沒有比6更大的數同時整除三者。所以答案是「6」。",
+    "explanation": "12、18、30 都能被 6 整除，商分別為 2、3、5。更大的候選 12 不能整除 18、30，而共同質因數只有 2×3，因此三數的最大公因數是 6，且不可只檢查其中兩數。",
     "steps": [
-      "三數都可被6整除",
-      "沒有比6更大的數同時整除三者"
+      "先找出 6 可同時整除 12、18、30。",
+      "計算三個商皆為整數，確認 6 是公因數。",
+      "排除更大的共同因數後判定最大值為 6。"
     ],
     "optionAnalysis": [
       {
@@ -417,7 +424,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e2cd25ac42ed131d1d0a0eb0b286b3b3a537c961bd4ea145f9c531fec270a40e",
+    "contentSha256": "1c09a47a6196d6610cddd4a84523d9894bdb8aa67e277ecf9b58e1709a96fbbf",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -439,10 +446,11 @@ export const QUESTIONS = [
       "a"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：a 是 b 的因數，因此 a 同時整除 a、b；任何共同因數不可能大於 a。所以答案是「a」。",
+    "explanation": "a 能整除 b，表示 b=a×整數，因此 a 同時整除 a 與 b，是兩數的公因數。任何 a 的因數都不會大於 a，而 a 本身已是公因數，所以 gcd(a,b)=a，此結論由整除關係直接得到。",
     "steps": [
-      "a 是 b 的因數，因此 a 同時整除 a、b",
-      "任何共同因數不可能大於 a"
+      "把 a 能整除 b 寫成 b=a×整數。",
+      "確認 a 可同時整除 a、b。",
+      "利用共同因數不大於 a，判定最大公因數為 a。"
     ],
     "optionAnalysis": [
       {
@@ -481,7 +489,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1cc58ec94e7591e1943e0c1d4c85cdaefce3e7aea6ab49066e3308270cfe7efd",
+    "contentSha256": "cdf7a8e63f78712f56cfa3c1777335d031279a93a505ea4a0c6981fe8b0cef96",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -503,10 +511,11 @@ export const QUESTIONS = [
       "252"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：84=2²×3×7，126=2×3²×7；共同部分為2×3×7=42。所以答案是「42」。",
+    "explanation": "84=2²×3×7，126=2×3²×7。共同質因數 2、3、7 各取較小指數，得到 2×3×7=42；84÷42=2、126÷42=3，確認 42 同時整除兩數。兩個商 2、3 互質，表示共同質因數已全部取出，不可再擴大，所以最大值為 42。",
     "steps": [
-      "84=2²×3×7，126=2×3²×7",
-      "共同部分為2×3×7=42"
+      "分解 84 與 126 的質因數。",
+      "共同底數 2、3、7 各取較小指數。",
+      "相乘得 42，並用兩個原數除以 42 驗證。"
     ],
     "optionAnalysis": [
       {
@@ -545,7 +554,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8e08b5c867cf0752b2a82c13458e74fd3862e2605ca437ae1fcfd0467db0e010",
+    "contentSha256": "1dec6dfae408f2e2e56f62eae48ceb82391ccdf27fc282b504e82217d8f008b1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -567,10 +576,11 @@ export const QUESTIONS = [
       "54"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：gcd(36,24)=12；其餘選項與36的最大公因數不是12。所以答案是「24」。",
+    "explanation": "逐項反查最大公因數：gcd(36,24)=12，符合條件；與 18、30、54 的最大公因數分別為 18、6、18，都不是 12。因此可能的 n 是 24，不能只看 n 是否為 12 的倍數，還要排除更大公因數。",
     "steps": [
-      "gcd(36,24)=12",
-      "其餘選項與36的最大公因數不是12"
+      "先確認候選 n 必須與 36 共同含有因數 12。",
+      "逐項計算 36 與四個選項的最大公因數。",
+      "只有 n=24 時最大公因數恰為 12。"
     ],
     "optionAnalysis": [
       {
@@ -609,7 +619,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2efef4ce8919e45fa7b4fca6baf5fcf2c8344bb945279c02335583c0061f901f",
+    "contentSha256": "560a54d0bf37e1c176d39df892e269f13b699044058e9198c5ec2d0837309ede",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -631,10 +641,11 @@ export const QUESTIONS = [
       "6"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：共同底數為2與3；較小指數分別是2、2，所以a+b=4。所以答案是「4」。",
+    "explanation": "兩數共同的質因數只有 2、3。求最大公因數時取較小指數：2 的指數 min(3,2)=2，3 的指數 min(2,4)=2，所以 a=2、b=2，a+b=4。這兩個字母代表指數，不是質因數本身。",
     "steps": [
-      "共同底數為2與3",
-      "較小指數分別是2、2，所以a+b=4"
+      "找出共同底數為 2、3，排除只出現一邊的 5、7。",
+      "對 2、3 分別取較小指數 2、2。",
+      "讀出 a=2、b=2，計算 a+b=4。"
     ],
     "optionAnalysis": [
       {
@@ -658,7 +669,7 @@ export const QUESTIONS = [
         "reason": "把較大指數相加會得6。"
       }
     ],
-    "commonMistake": "求 GCD 時誤取較大指數。",
+    "commonMistake": "求最大公因數時把共同質因數取較大指數，誤套最小公倍數規則。",
     "concept": "GCD 對共同質因數取較小指數。",
     "tags": [
       "數與量",
@@ -673,7 +684,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c7979771ab8c74b8665d609586bf2740a6113cd952947885a4f52fb925b23430",
+    "contentSha256": "e0b57db2b49d64f9e13259b414019d26f7cd83cf0b10a8df7821d0ad64591aaa",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -695,10 +706,11 @@ export const QUESTIONS = [
       "36"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：72=2³×3²，108=2²×3³，180=2²×3²×5；共同部分2²×3²=36。所以答案是「36」。",
+    "explanation": "72=2³×3²、108=2²×3³、180=2²×3²×5。三數共同含 2、3，較小指數都是 2，故最大公因數為 2²×3²=36；36 可整除三數且不能再增大。質因數 5 並非三數共有，所以不納入，否則不能整除前兩數。",
     "steps": [
-      "72=2³×3²，108=2²×3³，180=2²×3²×5",
-      "共同部分2²×3²=36"
+      "分解 72、108、180 的質因數。",
+      "對三數共同底數 2、3 各取最小指數 2。",
+      "算得 36，並確認 72、108、180 都可被它整除。"
     ],
     "optionAnalysis": [
       {
@@ -722,7 +734,7 @@ export const QUESTIONS = [
         "reason": "36同時整除三數且最大。"
       }
     ],
-    "commonMistake": "只求前兩數 GCD 就停止。",
+    "commonMistake": "只求七十二與一百零八的最大公因數便停止，沒有核對第三個數。",
     "concept": "三數 GCD 取所有數共同質因數的最小指數。",
     "tags": [
       "數與量",
@@ -737,7 +749,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "488e690bab4fbab8d879ca610d21291e693cdd403cee8fd19afa473a4d08311a",
+    "contentSha256": "bfa2099d305233301780497b90feab844b74bcaa46e166efa13100a8a739b149",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -759,10 +771,11 @@ export const QUESTIONS = [
       "8"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：d=24；48÷24+72÷24=2+3=5。所以答案是「5」。",
+    "explanation": "48=2⁴×3、72=2³×3²，因此 d=gcd(48,72)=2³×3=24。代入後 48÷24+72÷24=2+3=5，所以答案為 5；必須先正確求出 d。兩個商 2 與 3 互質，也可驗證 d 確實最大，然後再依題意做兩項商數的加法。",
     "steps": [
-      "d=24",
-      "48÷24+72÷24=2+3=5"
+      "先由質因數分解求得 d=24。",
+      "分別計算 48÷24=2、72÷24=3。",
+      "將兩個商相加得到 5。"
     ],
     "optionAnalysis": [
       {
@@ -801,7 +814,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9920d2fb1ad9d276023c1dbcfb9c1b5a68265cb76ffd01e569c23a5752f5ab8b",
+    "contentSha256": "6ffa3154b723761527b4d1d6846120618d33048a451af5809120fdb66d746ee5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -823,10 +836,11 @@ export const QUESTIONS = [
       "20 袋"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：袋數必須同時整除48與60；gcd(48,60)=12。所以答案是「12 袋」。",
+    "explanation": "每袋內容完全相同且全部用完，袋數必須同時整除 48、60；要求最多袋，所以取最大公因數 gcd(48,60)=12。驗算每袋有 4 顆紅珠、5 顆藍珠，內容相同且無剩餘。",
     "steps": [
-      "袋數必須同時整除48與60",
-      "gcd(48,60)=12"
+      "把袋數翻成 48、60 的共同因數。",
+      "求 gcd(48,60)=12，得到最多袋數。",
+      "驗算每袋紅珠 4 顆、藍珠 5 顆且全部用完。"
     ],
     "optionAnalysis": [
       {
@@ -850,7 +864,7 @@ export const QUESTIONS = [
         "reason": "20不能整除48。"
       }
     ],
-    "commonMistake": "把每袋珠數當成袋數。",
+    "commonMistake": "把每袋紅珠或藍珠的顆數誤當成題目要求的最多袋數。",
     "concept": "最多相同組數就是各總量的 GCD。",
     "tags": [
       "數與量",
@@ -865,7 +879,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "紅藍數量、每袋相同與全部用完共同限定袋數為兩數公因數，最多條件指定最大公因數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1f9bdb546e93b36e40141fff4baec3867c51d30e350b550af00fefc42bcc671e",
+    "contentSha256": "391878efa3a456fe2eb91b0f626a0871e9ac1d7c4cd0f8c49a99ae5b9704de3a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -887,10 +901,11 @@ export const QUESTIONS = [
       "63 公分"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：段長要同時整除84、126；gcd=42。所以答案是「42 公分」。",
+    "explanation": "等長且不剩的段長要同時整除 84、126；又要求最長，所以求最大公因數。84=2²×3×7、126=2×3²×7，共同部分 2×3×7=42，故每段 42 公分。兩條繩分別剪成 2 段與 3 段，都沒有剩餘。",
     "steps": [
-      "段長要同時整除84、126",
-      "gcd=42"
+      "將最長等長段轉成 84、126 的最大公因數。",
+      "分解兩數並取共同質因數的較小指數。",
+      "算得 42 公分，驗證兩條繩子都能整除。"
     ],
     "optionAnalysis": [
       {
@@ -929,7 +944,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩條長度、等長、最長與不剩餘共同決定最大公因數，情境條件不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5591ad1945a88ff424aaefb6df19fa2d5b3e300e8fb8478739ed30114438bc26",
+    "contentSha256": "7c579d5f08385a511add33d669d80dcce0341bdf30f1510a895c4dce718d6d55",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -951,10 +966,11 @@ export const QUESTIONS = [
       "48 公分"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：正方形邊長要同時整除96與144；gcd(96,144)=48。所以答案是「48 公分」。",
+    "explanation": "正方形貼紙不裁切鋪滿時，邊長必須同時整除看板的 96、144 公分；要求最大邊長，所以求 gcd(96,144)=48。看板可排 2×3 張 48 公分正方形，恰好鋪滿。",
     "steps": [
-      "正方形邊長要同時整除96與144",
-      "gcd(96,144)=48"
+      "把貼紙邊長轉成 96、144 的共同因數。",
+      "求兩邊長的最大公因數為 48。",
+      "用 96÷48=2、144÷48=3 驗證可鋪滿。"
     ],
     "optionAnalysis": [
       {
@@ -993,7 +1009,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "長與寬、正方形、不裁切及最大四項條件共同限定貼紙邊長。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ab933f08f98e5bd971d80bf300ab19f25decc06409779c4c5898053a82060ec1",
+    "contentSha256": "0b3d4c6864af535cb481fd4cbce8e27520e6f2d70c582ca2b3cb81b68ece0a4d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1014,10 +1030,9 @@ export const CONSTRUCTED_RESPONSES = [
       "共同質因數取較小指數。"
     ],
     "fullCreditSolution": [
-      "144=2⁴×3²。",
-      "180=2²×3²×5。",
-      "252=2²×3²×7。",
-      "共同部分2²×3²=36。"
+      "分解三數：144=2⁴×3²，180=2²×3²×5，252=2²×3²×7，三式都已分解到質數。",
+      "三數共同質因數只有 2、3，且各取最小指數 2，因此共同部分為 2²×3²。",
+      "計算 2²×3²=36；144÷36=4、180÷36=5、252÷36=7，確認 36 同時整除三數且最大。"
     ],
     "alternativeSolutions": [
       "可先gcd(144,180)=36，再與252求gcd仍為36。"
@@ -1044,15 +1059,15 @@ export const CONSTRUCTED_RESPONSES = [
       "結果必須能整除三個數。"
     ],
     "commonErrors": [
-      "把5或7納入。",
-      "2指數取4。"
+      "把只出現在其中一個數的質因數五或七也納入最大公因數。",
+      "共同質因數二的指數誤取較大的四，而不是兩數中的較小值。"
     ],
     "independentReview": {
       "derivedResult": "gcd=36。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "baa4e9fd714ac6d4401affb544bf49a49d3f68c196ce5182fcca0c51cd7cdd03",
+    "contentSha256": "adac9bf4402dc50083a8ea5993eee5859892b2f1a35ea73425b8d257e7fef269",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1071,8 +1086,9 @@ export const CONSTRUCTED_RESPONSES = [
       "不得重複同一個例子。"
     ],
     "fullCreditSolution": [
-      "例如n=28：gcd(84,28)=28。",
-      "例如n=56：84=2²×3×7，56=2³×7，共同2²×7=28。"
+      "第一個可取 n=28；因 28 整除 84，所以 gcd(84,28)=28，且 28<100，先滿足範圍限制。",
+      "第二個可取 n=56；84=2²×3×7、56=2³×7，共同部分為 2²×7=28。",
+      "兩個候選都小於 100，且驗算後最大公因數恰為 28，因此 n=28、56 均符合。"
     ],
     "alternativeSolutions": [
       "可選其他符合條件的例子；所有有效例子為28與56，因此兩個都必須寫出。"
@@ -1099,15 +1115,15 @@ export const CONSTRUCTED_RESPONSES = [
       "n=0不採用正整數語境。"
     ],
     "commonErrors": [
-      "給42，GCD為42。",
-      "給70，GCD為14。"
+      "選四十二時沒有回算，實際最大公因數會變成四十二而不是十四。",
+      "選七十時忽略它與原數的共同因數仍只有十四，需逐項驗算條件。"
     ],
     "independentReview": {
       "derivedResult": "小於100的可能值只有28、56，因此所求兩個例子為n=28、56。",
       "ambiguity": "雖然題型以「兩個可能值」表述，但小於100的完整解集合恰為28、56；驗證後答案組唯一。",
       "decision": "pass"
     },
-    "contentSha256": "01451ee7212bc3e273ecf90a5e9d7c761b1c331c50eaa10f9e037c7a15fc3746",
+    "contentSha256": "4e71cbb572d197060fff814412b61d44dd19c7b52814e2ab22ceacc53744b7cb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

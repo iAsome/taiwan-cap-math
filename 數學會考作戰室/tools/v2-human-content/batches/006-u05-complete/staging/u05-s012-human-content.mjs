@@ -118,37 +118,45 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "校門為原點，東為 x 正、北為 y 正；圖書館在西 3 格、北 2 格。",
       "solutionSteps": [
-        "西使 x=-3。",
-        "北使 y=2。"
+        "西與 x 正向相反，所以第一分量為負三。",
+        "北與 y 正向相同，所以第二分量為正二。",
+        "依 (x,y) 順序寫成 (-3,2)。"
       ],
-      "answer": "圖書館坐標 (-3,2)。"
+      "answer": "圖書館坐標 (-3,2)。",
+      "why": "情境先定義坐標正方向，西三格決定 x=-3，北二格決定 y=2。兩個方向不能交換，也不能因地點名稱改變規則；依序組合便得到正確坐標。"
     },
     {
       "exampleId": "L2",
       "prompt": "每格 20 公尺，A=(1,4)、B=(6,4)。",
       "solutionSteps": [
-        "同 y，格線距離 5 格。",
-        "5×20=100。"
+        "兩點 y 相同，使用水平距離。",
+        "格距為 |6-1|=5 格。",
+        "乘每格二十公尺，得到一百公尺。"
       ],
-      "answer": "實際距離 100 公尺。"
+      "answer": "實際距離 100 公尺。",
+      "why": "相同 y 坐標表示兩點在同一水平線，距離只看 x 的差五格。坐標格數不是實際公尺，還要乘地圖比例二十，才得到一百公尺。"
     },
     {
       "exampleId": "L3",
       "prompt": "座位表以講臺為原點，右為 x 正、後為 y 正；學生由 (-2,3) 向右 5 格。",
       "solutionSteps": [
-        "x=-2+5=3。",
-        "y 保持 3。"
+        "向右只改變 x，計算 -2+5=3。",
+        "沒有前後移動，所以 y 保持三。",
+        "新座位依序寫成 (3,3)。"
       ],
-      "answer": "新座位 (3,3)。"
+      "answer": "新座位 (3,3)。",
+      "why": "題目把向右定義為 x 增加，五格位移要加在原本負二上，而不是直接把五當坐標。沒有改變前後排數，因此第二分量仍為三。"
     },
     {
       "exampleId": "L4",
       "prompt": "兩條巡邏規則 x+y=6 與 x-y=2 的交會點。",
       "solutionSteps": [
-        "相加得 2x=8，x=4。",
-        "代回得 y=2。"
+        "將兩式相加消去 y，得到 2x=8。",
+        "求 x=4，代回第一式得 y=2。",
+        "以 (4,2) 驗證和為六、差為二。"
       ],
-      "answer": "交會點 (4,2)。"
+      "answer": "交會點 (4,2)。",
+      "why": "交會點必須同時符合兩條巡邏規則。消去法求得四與二後，兩式回代都成立，所以 (4,2) 才是共同位置，而不是只符合其中一式的候選點。"
     }
   ],
   "commonMistakes": [
@@ -232,7 +240,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "61307bbb459cd2b9905c71412dfd62ee070971d6f0592e9196f1fb8f3dbf8cd5"
+  "contentSha256": "3cb56d1ef6f2ed1be5fc5013d8f844b0868dd5d37e4d04a2c56278a285e7136f"
 };
 
 export const QUESTIONS = [
@@ -260,10 +268,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "西對應 x=-2，北對應 y=5，所以為 (-2,5)。",
-    "explanation": "西對應 x=-2，北對應 y=5，所以為 (-2,5)。",
+    "explanation": "題目明定東為 x 正向，所以向西二格使 x=-2；北為 y 正向，所以向北五格使 y=5。依有序數對先橫後縱，圖書館坐標為 (-2,5)。不能忽略負號，也不能把二格與五格交換。",
     "steps": [
-      "建立東西與 x 的對應。",
-      "建立南北與 y 的對應。"
+      "依地圖規則把西二格翻成 x=-2。",
+      "把北五格翻成 y=5。",
+      "依 (x,y) 順序寫成 (-2,5)。"
     ],
     "optionAnalysis": [
       {
@@ -287,7 +296,7 @@ export const QUESTIONS = [
         "reason": "西負、北正。"
       }
     ],
-    "misconceptionTarget": "未依地圖方向定義讀坐標。",
+    "misconceptionTarget": "未讀題目自訂的正方向，或把東西格數與南北格數交換分量。",
     "prerequisiteCheck": "需會坐標讀寫。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -300,7 +309,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4247d867e3c86a1510ac0195af86072371ba4db197d1cbba89959708ef36feac"
+    "contentSha256": "7d475b8476b1d499d681fa89cd272770ce709e6482afdeee55431b82b5437970"
   },
   {
     "questionId": "u05-s012-v002",
@@ -326,10 +335,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "x=-3 表示向左 3；y=4 表示向後 4 排。",
-    "explanation": "x=-3 表示向左 3；y=4 表示向後 4 排。",
+    "explanation": "座位表自行定義向右使 x 增加，所以 x=-3 表示從中央向左三個座位；向後使 y 增加，所以 y=4 表示向後四排。因此 (-3,4) 是左三、後四，不能直接套一般地圖的上下方向。",
     "steps": [
-      "讀第一分量的座位方向。",
-      "讀第二分量的排數方向。"
+      "讀第一分量負三，依規則判為向左三個座位。",
+      "讀第二分量正四，依規則判為向後四排。",
+      "合併兩項位置描述，選左三、後四。"
     ],
     "optionAnalysis": [
       {
@@ -353,7 +363,7 @@ export const QUESTIONS = [
         "reason": "y 正向誤讀。"
       }
     ],
-    "misconceptionTarget": "套用一般地圖上下，而未讀座位表規則。",
+    "misconceptionTarget": "套用慣用地圖方向而忽略座位表將 y 正向定義為向後。",
     "prerequisiteCheck": "需會坐標讀法。",
     "estimatedTimeSec": 75,
     "unitCheck": "x 使用座位個數，y 使用排數，敘述保留各自單位。",
@@ -366,7 +376,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "3a17c383a4c99b569f761229fb018bf53bdf5f9bbd29265b3c505c972b21ff85"
+    "contentSha256": "2de3f1bfa5f9ff0b734cd8295b206d29115fe8c1e8b4995b185e7c1e98dac174"
   },
   {
     "questionId": "u05-s012-v003",
@@ -392,10 +402,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "x=1+2=3，y=-1+3=2。",
-    "explanation": "x=1+2=3，y=-1+3=2。",
+    "explanation": "從 (1,-1) 向右二格只改變 x，得到 x=1+2=3；向上三格只改變 y，得到 y=-1+3=2。因此終點是 (3,2)。二與三是位移量，必須加在起點上，不能直接當終點坐標。",
     "steps": [
-      "更新 x。",
-      "更新 y。"
+      "向右二格，將第一分量更新為 1+2=3。",
+      "向上三格，將第二分量更新為 -1+3=2。",
+      "按順序組成終點 (3,2)。"
     ],
     "optionAnalysis": [
       {
@@ -419,7 +430,7 @@ export const QUESTIONS = [
         "reason": "把改變量直接當坐標。"
       }
     ],
-    "misconceptionTarget": "忽略起點或方向。",
+    "misconceptionTarget": "忽略原本起點，直接把向右二、向上三當成終點坐標。",
     "prerequisiteCheck": "需會平移。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -432,7 +443,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "89b2add46f71958255bfba4d0300a09ef41dcf7f4957a042f86049a8f73ce702"
+    "contentSha256": "3cd9b1b7f7b77149877e08b00c07586c90ce068f8712d3cb9a9590f06ad66fed"
   },
   {
     "questionId": "u05-s012-v004",
@@ -458,10 +469,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "兩點同 y，水平距離 |5-(-1)|=6 格；6×50=300 公尺。",
-    "explanation": "兩點同 y，水平距離 |5-(-1)|=6 格；6×50=300 公尺。",
+    "explanation": "A、B 的 y 都是二，位於同一水平道路，只需比較 x。格距為 |5-(-1)|=6 格；每格五十公尺，所以實際距離為 6×50=300 公尺。從負一跨到五時要把兩側距離都計入。",
     "steps": [
-      "求格數 6。",
-      "乘每格 50 公尺。"
+      "確認兩點 y 相同，使用水平距離。",
+      "計算 |5-(-1)|=6 格。",
+      "乘每格五十公尺，得到三百公尺。"
     ],
     "optionAnalysis": [
       {
@@ -485,7 +497,7 @@ export const QUESTIONS = [
         "reason": "誤算 7 格。"
       }
     ],
-    "misconceptionTarget": "跨越 y 軸漏算或忘記比例。",
+    "misconceptionTarget": "跨越 y 軸時只取五格，或求得六格後忘記乘每格五十公尺。",
     "prerequisiteCheck": "需會距離。",
     "estimatedTimeSec": 100,
     "unitCheck": "6 格×50 公尺/格。",
@@ -498,7 +510,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "47052b971f37680f066571d63dd66bf1919e4fe47de32c0358b003c5cf5df48c"
+    "contentSha256": "122305a990c614d499f539400d9e0419bdf9ee0bec609cb06317a0a75d5062e6"
   },
   {
     "questionId": "u05-s012-v005",
@@ -524,10 +536,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "格線寬 6、高 4；實際寬 30 公尺、高 20 公尺，面積 600 平方公尺。",
-    "explanation": "格線寬 6、高 4；實際寬 30 公尺、高 20 公尺，面積 600 平方公尺。",
+    "explanation": "軸平行長方形的格數寬為 |4-(-2)|=6 格，高為 |3-(-1)|=4 格。每格邊長五公尺，所以實際寬三十公尺、高二十公尺，面積為 30×20=600 平方公尺。兩個方向都要換算。",
     "steps": [
-      "求邊長 6、4 格。",
-      "各乘 5 再求面積。"
+      "由對角點求寬六格、高四格。",
+      "分別乘五，得到實際寬三十、高二十公尺。",
+      "相乘求面積六百平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -551,7 +564,7 @@ export const QUESTIONS = [
         "reason": "多乘一次 5。"
       }
     ],
-    "misconceptionTarget": "面積比例只換算一個方向。",
+    "misconceptionTarget": "只把格面積二十四乘一次比例五，忽略面積需兩個方向都換算。",
     "prerequisiteCheck": "需會長方形面積。",
     "estimatedTimeSec": 100,
     "unitCheck": "最終為平方公尺。",
@@ -564,7 +577,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "910cb43e6f402280ddfd91cab4ea3de4b0abdab400eb7ebaa11d5332c84526ba"
+    "contentSha256": "a12057817160183b404de53e908e054e8f4dcac7b2831fb7b41c3f8163883dd2"
   },
   {
     "questionId": "u05-s012-v006",
@@ -590,10 +603,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "兩式相加得 2x=10，x=5；代回得 y=3。",
-    "explanation": "兩式相加得 2x=10，x=5；代回得 y=3。",
+    "explanation": "轉乘站同時位於兩條路線，所以求聯立共同解。將 x+y=8 與 x-y=2 相加，得到 2x=10、x=5；代回第一式得 y=3。點 (5,3) 的和為八、差為二，確實同時在兩條路線上。",
     "steps": [
-      "聯立求 x。",
-      "代回求 y。"
+      "將兩路線方程式相加消去 y。",
+      "由 2x=10 求 x=5，再代回得 y=3。",
+      "把 (5,3) 代回兩式驗證。"
     ],
     "optionAnalysis": [
       {
@@ -617,7 +631,7 @@ export const QUESTIONS = [
         "reason": "第一式成立但第二式為 4。"
       }
     ],
-    "misconceptionTarget": "只滿足其中一路線。",
+    "misconceptionTarget": "選擇只符合總和八的點，沒有檢查同時還須滿足坐標差二。",
     "prerequisiteCheck": "需會聯立方程式。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -630,7 +644,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1e7a59463486ed8c56c54262c9eeae67870fefc0c03862585604e497dc451236"
+    "contentSha256": "48c2c5aaa97988582bed4912e3e73c1f46b2a4fb34a9b23f40e27e6cebfb6bcd"
   },
   {
     "questionId": "u05-s012-v007",
@@ -656,10 +670,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "終點為 (-1+7,2+3)=(6,5)。y 合格，但 x=6>5，所以不在安全區。",
-    "explanation": "終點為 (-1+7,2+3)=(6,5)。y 合格，但 x=6>5，所以不在安全區。",
+    "explanation": "從 (-1,2) 向右七、向上三，終點為 (-1+7,2+3)=(6,5)。安全區要求 x 不大於五且 y 介於一與六；y=5 合格，但 x=6 超過上限五，所以機器人不在安全區。每個條件都要檢查。",
     "steps": [
-      "計算終點 (6,5)。",
-      "逐一檢查 x、y 邊界。"
+      "依方向計算終點 (6,5)。",
+      "檢查 x=6 不符合負三至五的範圍。",
+      "再確認 y=5 合格，但因 x 失敗仍判定不安全。"
     ],
     "optionAnalysis": [
       {
@@ -683,7 +698,7 @@ export const QUESTIONS = [
         "reason": "只檢查 y。"
       }
     ],
-    "misconceptionTarget": "只檢查其中一個範圍條件。",
+    "misconceptionTarget": "只看到 y=5 在允許範圍就判合格，未逐一檢查 x 邊界。",
     "prerequisiteCheck": "需會平移與不等式。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標與移動均以倉庫格為單位。",
@@ -696,7 +711,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "a8e14980437861e3b180aec4267802ad4445f0e30a61a6eadaa3fa456a8b5edb"
+    "contentSha256": "09f03909052f59ba34d200a917c2577aa3e0658ff281e06db550094a0da393c4"
   },
   {
     "questionId": "u05-s012-v008",
@@ -722,10 +737,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "甲在第一象限且到 y 軸 6 格，所以 a=6，甲=(6,4)。乙與甲水平對齊表示 y 相同，且乙 x=6，所以乙=(6,4)。",
-    "explanation": "甲在第一象限且到 y 軸 6 格，所以 a=6，甲=(6,4)。乙與甲水平對齊表示 y 相同，且乙 x=6，所以乙=(6,4)。",
+    "explanation": "甲點到 y 軸六格表示 |a|=6，又在第一象限，所以 a=6，甲為 (6,4)。乙已知 x=6，且與甲水平對齊表示 y 坐標相同，因此 b=4、乙為 (6,4)。兩個路線終點重合並不違反任何條件。",
     "steps": [
-      "用軸距與象限定甲點。",
-      "用水平對齊定乙的 b=4。"
+      "由軸距六與第一象限求 a=6，得甲點 (6,4)。",
+      "利用水平對齊代表 y 相同，求 b=4。",
+      "寫出乙點 (6,4)，並確認重合是允許的。"
     ],
     "optionAnalysis": [
       {
@@ -749,7 +765,7 @@ export const QUESTIONS = [
         "reason": "所有條件一致，兩點重合也允許。"
       }
     ],
-    "misconceptionTarget": "認為兩條路線終點必須不同，或混淆水平同 y。",
+    "misconceptionTarget": "認為兩條路線終點必須不同，或把水平對齊誤解為 x 坐標相同。",
     "prerequisiteCheck": "需會軸距與水平對齊。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -762,7 +778,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b6cc5cc335a65f4eb196cdcc373738af503d8bae62c2363a9c7ec6002962bf9a"
+    "contentSha256": "b4af785708c7fa6b3092055d0b9fee3290b1d7ca59f6dc690682c0728899ee00"
   },
   {
     "questionId": "u05-s012-v009",
@@ -788,10 +804,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "同一垂直道路使 x=2；位於下方 5 格使 y=3-5=-2。",
-    "explanation": "同一垂直道路使 x=2；位於下方 5 格使 y=3-5=-2。",
+    "explanation": "S 與 H 在同一垂直道路，兩點的 x 坐標都為二。S 位於 H 下方五格，所以 y=3-5=-2。因此 S=(2,-2)。若把五加到 y 會得到上方點，若改變 x 則成為水平移動。",
     "steps": [
-      "保持 x=2。",
-      "y 向下減 5。"
+      "由同一垂直道路固定 x=2。",
+      "由位於下方五格計算 y=3-5=-2。",
+      "組成 S=(2,-2)，並檢查垂直距離為五格。"
     ],
     "optionAnalysis": [
       {
@@ -815,7 +832,7 @@ export const QUESTIONS = [
         "reason": "水平右移。"
       }
     ],
-    "misconceptionTarget": "只用距離大小，未使用垂直與下方方向。",
+    "misconceptionTarget": "只使用距離五而忽略垂直與下方方向，錯改 x 或把 y 增加。",
     "prerequisiteCheck": "需會垂直距離。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -828,7 +845,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "56d5cf0caecc3d4e8efa647b419db79effe1b024eb5ddb35eb53d4b781c14816"
+    "contentSha256": "31aa8889bc00a148a4c1bf8ef8211016861748968cc4ad5d46aa0e618bfd9c2e"
   },
   {
     "questionId": "u05-s012-v010",
@@ -854,10 +871,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "格線寬 5、高 5，周長 20 格；每格 2 公尺，所以 40 公尺。",
-    "explanation": "格線寬 5、高 5，周長 20 格；每格 2 公尺，所以 40 公尺。",
+    "explanation": "長方形格數寬為 1-(-4)=5，高為 3-(-2)=5，所以格線周長是 2×(5+5)=20 格。每格邊長二公尺，實際圍欄長度為 20×2=40 公尺。圍欄求周長，不是草地面積，單位應為公尺。",
     "steps": [
-      "由邊界求寬高各 5。",
-      "周長 20 格再乘 2。"
+      "由 x、y 邊界分別求寬五格、高五格。",
+      "計算長方形周長二十格。",
+      "乘每格二公尺，得到四十公尺。"
     ],
     "optionAnalysis": [
       {
@@ -881,7 +899,7 @@ export const QUESTIONS = [
         "reason": "20×2 正確。"
       }
     ],
-    "misconceptionTarget": "把圍欄長度當成面積。",
+    "misconceptionTarget": "把『圍住』誤算成面積，或求得二十格後忘記乘每格二公尺。",
     "prerequisiteCheck": "需會長方形周長。",
     "estimatedTimeSec": 150,
     "unitCheck": "20 格×2 公尺/格。",
@@ -894,7 +912,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "58796dc87d4fc0f0c9046dea99a602b78f04dbd800b8d36414e77672eadbdea8"
+    "contentSha256": "f5415af642486b4c6900631666a0a8e243d431aca4555ea7f06007c7d24aaaf8"
   },
   {
     "questionId": "u05-s012-v011",
@@ -920,10 +938,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "令 15x+20=10x+45，得 5x=25，所以 x=5。",
-    "explanation": "令 15x+20=10x+45，得 5x=25，所以 x=5。",
+    "explanation": "費用相同表示 15x+20=10x+45。移項後得 5x=25，所以 x=5 小時。代回時甲方案為七十五加二十，乙方案為五十加四十五，兩者都是九十五元。只比較每小時費率會漏掉固定費。",
     "steps": [
-      "建立費用相等式。",
-      "解 x=5。"
+      "把甲、乙完整費用式設為相等。",
+      "整理得 5x=25，求 x=5 小時。",
+      "代回兩式，確認費用皆為九十五元。"
     ],
     "optionAnalysis": [
       {
@@ -947,7 +966,7 @@ export const QUESTIONS = [
         "reason": "110 與 105 元。"
       }
     ],
-    "misconceptionTarget": "只比較每小時費率，忽略固定費。",
+    "misconceptionTarget": "只比較每小時十五元與十元，忽略兩方案固定費二十與四十五元。",
     "prerequisiteCheck": "需會一次方程式。",
     "estimatedTimeSec": 150,
     "unitCheck": "x 小時，y 元。",
@@ -960,7 +979,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "2bb59c462b1509b686cfd817922eaee4cfc75f0f055d2a84d0b31e42800b76d5"
+    "contentSha256": "80ddd63adcc6a6b57870dc0b811c32c37e11f90195a730f8d07e91745bab6749"
   },
   {
     "questionId": "u05-s012-v012",
@@ -986,10 +1005,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "聯立：兩式相加得 3x=12，x=4；交點為 (4,3)。到 y 軸距離為 |x|=4 公里。",
-    "explanation": "聯立：兩式相加得 3x=12，x=4；交點為 (4,3)。到 y 軸距離為 |x|=4 公里。",
+    "explanation": "物資點是兩路共同交點。兩式相加得 3x=12，所以 x=4；代回 x-y=1 得 y=3，交點為 (4,3)。到 y 軸的距離等於橫坐標絕對值 |4|，每單位一公里，因此距離是四公里。",
     "steps": [
-      "求交點 x=4、y=3。",
-      "取到 y 軸距離 |4|。"
+      "聯立兩道路方程式，求得交點 (4,3)。",
+      "辨認到 y 軸距離取橫坐標絕對值。",
+      "計算 |4|=4，換成四公里。"
     ],
     "optionAnalysis": [
       {
@@ -1013,7 +1033,7 @@ export const QUESTIONS = [
         "reason": "把兩坐標絕對值相加。"
       }
     ],
-    "misconceptionTarget": "求得交點後看錯要到哪一軸。",
+    "misconceptionTarget": "求出交點後誤取 y=3 當到 y 軸距離，或把兩坐標相加。",
     "prerequisiteCheck": "需會交點與到軸距離。",
     "estimatedTimeSec": 150,
     "unitCheck": "到 y 軸看 x，4 單位即 4 公里。",
@@ -1026,7 +1046,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f8af4c00cef4c3dc05f3904970f06a836fdc7c2e1be68c5f11d3ade9dd6d2a13"
+    "contentSha256": "9e7c64a436b79124592459e40eea8265fa44bc273f45a11a35f28dfc7740fc42"
   }
 ];
 
@@ -1048,19 +1068,18 @@ export const CONSTRUCTED_RESPONSES = [
       "說明由圖書館到體育館的方向。"
     ],
     "fullCreditSolution": [
-      "兩點 y 都是 3，所以位於同一東西向道路。",
-      "水平距離 |4-(-2)|=6 格。",
-      "6×25=150 公尺。",
-      "從圖書館 x=-2 到體育館 x=4，x 增加，因此方向向東。"
+      "圖書館 (-2,3) 與體育館 (4,3) 的 y 坐標相同，所以兩地在同一條東西向道路上。",
+      "水平格距為 |4-(-2)|=6 格。每格二十五公尺，因此實際距離是 6×25=150 公尺。",
+      "從圖書館的 x=-2 移到體育館的 x=4，x 增加；題目定義東為正向，所以行進方向為向東。",
+      "答案為沿道路向東一百五十公尺，距離與方向都符合地圖設定。"
     ],
     "alternativeSolutions": [
       "可由 -2 向右走 6 格到 4，再換算。"
     ],
     "reasoningSteps": [
-      "兩點 y 都是 3，所以位於同一東西向道路。",
-      "水平距離 |4-(-2)|=6 格。",
-      "6×25=150 公尺。",
-      "從圖書館 x=-2 到體育館 x=4，x 增加，因此方向向東。"
+      "先用相同 y 坐標確認兩地可沿東西向道路移動。",
+      "以橫坐標差求六格，再乘每格二十五公尺。",
+      "依 x 從負二增加到四，判定由圖書館向體育館為向東。"
     ],
     "rubric": [
       {
@@ -1087,8 +1106,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "格數為 6 格，實際距離寫 150 公尺；方向由圖書館往體育館為向東。",
     "answerOnlyPolicy": "只寫 150 公尺而沒有格數差與方向說明，最高給 2 分。",
     "commonErrors": [
-      "跨越原點只算 2 格。",
-      "方向寫向西。"
+      "跨越原點時只算負二到零的兩格，漏掉零到四的四格。",
+      "求得六格就寫六公尺，沒有乘地圖比例二十五。",
+      "只寫一百五十公尺而漏答方向，或把 x 增加誤寫成向西。"
     ],
     "independentReview": {
       "derivedResult": "若格距早期算錯但正確乘 25，保留換算方法分。",
@@ -1098,7 +1118,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "8b74a733e71dd2e6b32afe6a613f0c46e0fec01cc73be6271495bdc752ed37c9"
+    "contentSha256": "f59104e36ca34c52de1da77d8a54bcc8843e0c0865292fe23004fc1c1f633fa1"
   },
   {
     "questionId": "u05-s012-cr002",
@@ -1117,17 +1137,18 @@ export const CONSTRUCTED_RESPONSES = [
       "比較 x=2 時兩方案。"
     ],
     "fullCreditSolution": [
-      "令 40x+60=25x+150，得 15x=90，所以 x=6。",
-      "代入得 y=40×6+60=300 元，乙也為 25×6+150=300 元。",
-      "使用 2 小時：甲 140 元，乙 200 元，所以甲較便宜。"
+      "費用相同時令 40x+60=25x+150，移項得 15x=90，所以 x=6 小時。",
+      "把六代回甲方案，y=40×6+60=300 元；乙方案為 25×6+150=300 元，所以交點是 (6,300)。",
+      "使用二小時時，甲費用為 40×2+60=140 元，乙費用為 25×2+150=200 元。",
+      "因此二小時選甲方案較便宜，便宜六十元；不能只因乙的每小時費率較低就忽略固定費。"
     ],
     "alternativeSolutions": [
       "也可先比較兩方案差額：甲-乙=15x-90，再判斷 x=6 與 x=2。"
     ],
     "reasoningSteps": [
-      "令 40x+60=25x+150，得 15x=90，所以 x=6。",
-      "代入得 y=40×6+60=300 元，乙也為 25×6+150=300 元。",
-      "使用 2 小時：甲 140 元，乙 200 元，所以甲較便宜。"
+      "將兩個完整費用式設為相等，求同價時間。",
+      "代回任一方案求共同費用，並用另一式驗證。",
+      "獨立代入二小時，比較兩方案總費用與價差。"
     ],
     "rubric": [
       {
@@ -1154,8 +1175,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "x 以小時為單位、y 以元為單位；相同費用點寫 (6,300)，2 小時費用須分別標明方案。",
     "answerOnlyPolicy": "只寫「6 小時、甲較便宜」而沒有共同費用與計算過程，最高給 1 分。",
     "commonErrors": [
-      "把 60 與 150 相加。",
-      "認為乙單價低所以任何時間都較便宜。"
+      "把固定費六十與一百五十相加，沒有建立兩方案費用相等式。",
+      "求得六小時後漏算同價費用三百元。",
+      "看到乙每小時二十五元較低就說任何時間都較便宜，忽略較高固定費。"
     ],
     "independentReview": {
       "derivedResult": "若交點時間算錯，學生仍可用 x=2 獨立正確比較並取得部分分。",
@@ -1165,14 +1187,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "741bdc624a7d6e9126d94df460ee9a6418104eab83eb1bc2ccb0d3a5e0b0ba92"
+    "contentSha256": "80042b95145929e682385032859b4c534c1c7ff34c2cf0be864517c26509e328"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s012-v001",
-    "contentSha256": "4247d867e3c86a1510ac0195af86072371ba4db197d1cbba89959708ef36feac",
+    "contentSha256": "7d475b8476b1d499d681fa89cd272770ce709e6482afdeee55431b82b5437970",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "西對應 x=-2，北對應 y=5，所以為 (-2,5)。",
     "derivedAnswer": "(-2,5)",
@@ -1204,7 +1226,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v002",
-    "contentSha256": "3a17c383a4c99b569f761229fb018bf53bdf5f9bbd29265b3c505c972b21ff85",
+    "contentSha256": "2de3f1bfa5f9ff0b734cd8295b206d29115fe8c1e8b4995b185e7c1e98dac174",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=-3 表示向左 3；y=4 表示向後 4 排。",
     "derivedAnswer": "左 3 個座位、後 4 排",
@@ -1236,7 +1258,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v003",
-    "contentSha256": "89b2add46f71958255bfba4d0300a09ef41dcf7f4957a042f86049a8f73ce702",
+    "contentSha256": "3cd9b1b7f7b77149877e08b00c07586c90ce068f8712d3cb9a9590f06ad66fed",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=1+2=3，y=-1+3=2。",
     "derivedAnswer": "(3,2)",
@@ -1268,7 +1290,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v004",
-    "contentSha256": "47052b971f37680f066571d63dd66bf1919e4fe47de32c0358b003c5cf5df48c",
+    "contentSha256": "122305a990c614d499f539400d9e0419bdf9ee0bec609cb06317a0a75d5062e6",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "兩點同 y，水平距離 |5-(-1)|=6 格；6×50=300 公尺。",
     "derivedAnswer": "300 公尺",
@@ -1300,7 +1322,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v005",
-    "contentSha256": "910cb43e6f402280ddfd91cab4ea3de4b0abdab400eb7ebaa11d5332c84526ba",
+    "contentSha256": "a12057817160183b404de53e908e054e8f4dcac7b2831fb7b41c3f8163883dd2",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "格線寬 6、高 4；實際寬 30 公尺、高 20 公尺，面積 600 平方公尺。",
     "derivedAnswer": "600 平方公尺",
@@ -1332,7 +1354,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v006",
-    "contentSha256": "1e7a59463486ed8c56c54262c9eeae67870fefc0c03862585604e497dc451236",
+    "contentSha256": "48c2c5aaa97988582bed4912e3e73c1f46b2a4fb34a9b23f40e27e6cebfb6bcd",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "兩式相加得 2x=10，x=5；代回得 y=3。",
     "derivedAnswer": "(5,3)",
@@ -1364,7 +1386,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v007",
-    "contentSha256": "a8e14980437861e3b180aec4267802ad4445f0e30a61a6eadaa3fa456a8b5edb",
+    "contentSha256": "09f03909052f59ba34d200a917c2577aa3e0658ff281e06db550094a0da393c4",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "終點為 (-1+7,2+3)=(6,5)。y 合格，但 x=6>5，所以不在安全區。",
     "derivedAnswer": "否，終點 (6,5) 超出 x 上限",
@@ -1396,7 +1418,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v008",
-    "contentSha256": "b6cc5cc335a65f4eb196cdcc373738af503d8bae62c2363a9c7ec6002962bf9a",
+    "contentSha256": "b4af785708c7fa6b3092055d0b9fee3290b1d7ca59f6dc690682c0728899ee00",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "甲在第一象限且到 y 軸 6 格，所以 a=6，甲=(6,4)。乙與甲水平對齊表示 y 相同，且乙 x=6，所以乙=(6,4)。",
     "derivedAnswer": "(6,4)",
@@ -1428,7 +1450,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v009",
-    "contentSha256": "56d5cf0caecc3d4e8efa647b419db79effe1b024eb5ddb35eb53d4b781c14816",
+    "contentSha256": "31aa8889bc00a148a4c1bf8ef8211016861748968cc4ad5d46aa0e618bfd9c2e",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "同一垂直道路使 x=2；位於下方 5 格使 y=3-5=-2。",
     "derivedAnswer": "(2,-2)",
@@ -1460,7 +1482,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v010",
-    "contentSha256": "58796dc87d4fc0f0c9046dea99a602b78f04dbd800b8d36414e77672eadbdea8",
+    "contentSha256": "f5415af642486b4c6900631666a0a8e243d431aca4555ea7f06007c7d24aaaf8",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "格線寬 5、高 5，周長 20 格；每格 2 公尺，所以 40 公尺。",
     "derivedAnswer": "40 公尺",
@@ -1492,7 +1514,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v011",
-    "contentSha256": "2bb59c462b1509b686cfd817922eaee4cfc75f0f055d2a84d0b31e42800b76d5",
+    "contentSha256": "80ddd63adcc6a6b57870dc0b811c32c37e11f90195a730f8d07e91745bab6749",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "令 15x+20=10x+45，得 5x=25，所以 x=5。",
     "derivedAnswer": "5 小時",
@@ -1524,7 +1546,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s012-v012",
-    "contentSha256": "f8af4c00cef4c3dc05f3904970f06a836fdc7c2e1be68c5f11d3ade9dd6d2a13",
+    "contentSha256": "9e7c64a436b79124592459e40eea8265fa44bc273f45a11a35f28dfc7740fc42",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "聯立：兩式相加得 3x=12，x=4；交點為 (4,3)。到 y 軸距離為 |x|=4 公里。",
     "derivedAnswer": "4 公里",

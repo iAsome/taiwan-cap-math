@@ -44,7 +44,7 @@ export const LECTURE = {
   "notation": [
     {
       "symbol": "(ax+b)(cx+d)",
-      "meaning": "展開為 acx^2+(ad+bc)x+bd。"
+      "meaning": "展開為 acx²+(ad+bc)x+bd。"
     },
     {
       "symbol": "≡",
@@ -55,7 +55,8 @@ export const LECTURE = {
     "展開檢查要產生完整多項式，再按次方排列。",
     "二次項、一次項、常數項任何一項不同，候選分解就錯。",
     "兩式在某一個 x 值相同可能只是巧合，不能證明恆等。",
-    "反例足以推翻錯誤主張，但要證明正確通常需展開或完整係數論證。"
+    "反例足以推翻錯誤主張，但要證明正確通常需展開或完整係數論證。",
+    "驗證候選因式分解時，要把乘積完整展開、合併同類項並按降冪排列，再逐項比較二次項、一次項與常數項；首尾相同仍可能在交叉項出錯。單點代入只能檢查該數值，不能證明恆等，但找到一個左右不等的反例就足以推翻主張。若式中含未知係數，應至少用一個係數求值，再以其他係數回查，避免只滿足局部條件。"
   ],
   "formalDefinitions": [
     {
@@ -65,7 +66,7 @@ export const LECTURE = {
   ],
   "formulas": [
     {
-      "formula": "(ax+b)(cx+d)=acx^2+(ad+bc)x+bd",
+      "formula": "(ax+b)(cx+d)=acx²+(ad+bc)x+bd",
       "conditions": [
         "每個交叉乘積都要保留"
       ],
@@ -107,38 +108,47 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "檢查 (x+2)(x+7)",
+      "prompt": "檢查(x＋2)(x＋7)的完整展開。",
       "solutionSteps": [
-        "四項為 x^2+7x+2x+14。",
-        "合併得 x^2+9x+14。"
+        "列出x²、7x、2x、14四個乘積。",
+        "合併同類項7x＋2x＝9x。",
+        "按降冪整理為x²＋9x＋14。"
       ],
-      "answer": "x^2+9x+14"
+      "answer": "x²＋9x＋14",
+      "why": "兩個交叉項共同決定一次項係數，若只乘首項與常數就會漏掉9x；把四項逐一寫出再合併，是最直接也最可靠的檢查方式。"
     },
     {
       "exampleId": "L2",
-      "prompt": "檢查 (2x-3)(x+4)",
+      "prompt": "檢查(2x－3)(x＋4)是否等於2x²＋5x－12。",
       "solutionSteps": [
-        "交叉項 8x-3x=5x。"
+        "展開得2x²＋8x－3x－12。",
+        "合併一次項8x－3x＝5x。",
+        "三個係數逐項比對後完全相同。"
       ],
-      "answer": "2x^2+5x-12"
+      "answer": "候選正確",
+      "why": "負三會同時產生負的交叉項與負常數，兩處符號都必須保留；展開後首項、一次項與常數全部吻合，才足以判定恆等。"
     },
     {
       "exampleId": "L3",
-      "prompt": "判斷 (x+1)(x+6) 是否為 x^2+5x+6",
+      "prompt": "判斷(x＋1)(x＋6)是否等於x²＋5x＋6。",
       "solutionSteps": [
-        "展開一次項係數為 7。",
-        "原式一次項係數為 5。"
+        "展開左式為x²＋6x＋x＋6。",
+        "合併得x²＋7x＋6。",
+        "比較一次項係數7與5，判定不相等。"
       ],
-      "answer": "不是"
+      "answer": "不是恆等式",
+      "why": "二次項與常數項雖然相同，一次項仍不一致；這說明只檢查首尾兩項不夠，交叉項合併後的係數也必須核對。"
     },
     {
       "exampleId": "L4",
-      "prompt": "若 (3x+p)(x-2) 的一次項係數為 -1",
+      "prompt": "若(3x＋p)(x－2)的一次項係數為－1，求p。",
       "solutionSteps": [
-        "展開一次項為 (p-6)x。",
-        "p-6=-1，所以 p=5。"
+        "展開一次項為－6x＋px＝(p－6)x。",
+        "比對p－6＝－1，解得p＝5。",
+        "代回完整展開檢查其他係數沒有衝突。"
       ],
-      "answer": "p=5"
+      "answer": "p＝5",
+      "why": "未知係數來自兩個交叉乘積的和，不能只看其中一個；求得p後再代回展開式，可確認設定的係數與其餘項相容。"
     }
   ],
   "difficultyConnections": {
@@ -228,7 +238,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "b5e88dd67bc47ebdc94cb311a9ad78a7804045d8f9a634ca13796b6d250a5b18"
+  "contentSha256": "1e01813219a24434e4c560149c46caea0222f6c727770398e1eafe4f96eb5ad9"
 };
 
 export const QUESTIONS = [
@@ -256,7 +266,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "每一項係數均由分配律得到。",
-    "explanation": "(x+2)(x+5)=x²+5x+2x+10=x²+7x+10。",
+    "explanation": "(x+2)(x+5)=x²+5x+2x+10=x²+7x+10。 依分配律，x要分別乘x與5，常數2也要分別乘x與5，得到x²、5x、2x、10四項。合併同類項5x＋2x＝7x，所以完整結果為x²＋7x＋10，三個係數都可由四項乘積逐一回查。",
     "steps": [
       "列出四個乘積。",
       "合併 5x 與 2x。",
@@ -284,7 +294,7 @@ export const QUESTIONS = [
         "reason": "交叉項 5x+2x=7x。"
       }
     ],
-    "misconceptionTarget": "只乘首項與常數。",
+    "misconceptionTarget": "只乘首項與常數。 只乘兩個首項與兩個常數，遺漏兩個交叉乘積。",
     "prerequisiteCheck": "需會分配律。",
     "estimatedTimeSec": 60,
     "unitAndRoundingChecks": "無單位；精確。",
@@ -303,7 +313,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c962ee17ce6badb7727a298b68100fb78f1916e402bb3b7eb924f02553be3c68"
+    "contentSha256": "24a07a0c784ef968a5fac5defe479e97fc531abee6e5a222dfbcdec01ffc5523"
   },
   {
     "questionId": "u12-s008-v002",
@@ -329,7 +339,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "一次項係數不是一次項本身，因此答案為 5。",
-    "explanation": "展開為 2x²+6x-x-3=2x²+5x-3。",
+    "explanation": "展開為 2x²+6x-x-3=2x²+5x-3。 完整展開為2x²＋6x－x－3，其中一次項來自兩個交叉乘積，合併後是5x。題目問的是一次項係數，因此要取5，而不是寫成5x或只保留6。",
     "steps": [
       "算兩個交叉乘積 6x、-x。",
       "合併得 5x。",
@@ -357,7 +367,7 @@ export const QUESTIONS = [
         "reason": "把 -x 錯當 +x，得到 6+1。"
       }
     ],
-    "misconceptionTarget": "只算一個交叉乘積。",
+    "misconceptionTarget": "只算一個交叉乘積。 只計算2x乘3，漏掉負一乘x所產生的負x。",
     "prerequisiteCheck": "需會帶號同類項合併。",
     "estimatedTimeSec": 60,
     "unitAndRoundingChecks": "無單位；係數為無單位數。",
@@ -376,7 +386,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4d4959566bf58e151cc836f946668702e21ebf71f5c94ab3992834d97914644a"
+    "contentSha256": "43e991d508d316306538cad16fdb58425c3850742fb91c500db0306ae6c8dcff"
   },
   {
     "questionId": "u12-s008-v003",
@@ -402,7 +412,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "不依賴代入特定值。",
-    "explanation": "完整展開後三項係數皆吻合，因此是恆等分解。",
+    "explanation": "完整展開後三項係數皆吻合，因此是恆等分解。 把候選式完整展開可得x²＋4x＋x＋4，合併後正是x²＋5x＋4。三個係數逐項相同，因此對所有x都成立，不是只在某個代入值巧合相等。",
     "steps": [
       "展開四項。",
       "合併一次項。",
@@ -430,7 +440,7 @@ export const QUESTIONS = [
         "reason": "1×4=4。"
       }
     ],
-    "misconceptionTarget": "只用單點代入或漏交叉項。",
+    "misconceptionTarget": "只用單點代入或漏交叉項。 只代入x等於零便宣稱恆等，或展開時漏掉其中一個交叉項。",
     "prerequisiteCheck": "需會展開。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "無單位與近似。",
@@ -449,7 +459,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "dffa8e306c727704d0ee332da39fe137cafd6299a2e79434b1297ac320e252fc"
+    "contentSha256": "23f383afd500d54e0e507ad20281d4bf2a42f40e96ee1de15bbcd1e1e283fc78"
   },
   {
     "questionId": "u12-s008-v004",
@@ -475,7 +485,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "只有一次項寫錯，二次與常數正確。",
-    "explanation": "(x+2)(x+6)=x²+8x+12。",
+    "explanation": "(x+2)(x+6)=x²+8x+12。 四個乘積為x²、6x、2x與12，所以正確展開是x²＋8x＋12。原主張的二次項與常數項都正確，只有一次項把兩個交叉項漏合併成8x，故應選一次項錯誤。",
     "steps": [
       "列四個乘積。",
       "合併 6x+2x。",
@@ -503,7 +513,7 @@ export const QUESTIONS = [
         "reason": "一次項係數不符。"
       }
     ],
-    "misconceptionTarget": "把其中一個括號常數當一次項係數。",
+    "misconceptionTarget": "把其中一個括號常數當一次項係數。 把括號中的6直接當一次項係數，忘記還有2x交叉項。",
     "prerequisiteCheck": "需會展開與係數比對。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位。",
@@ -522,7 +532,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "44d7916c677133aa134bad9abd3c88b16812aaec3f6572f134fe3d6eb2ffbd6f"
+    "contentSha256": "b0d33a1d0a39e2746b14785c26e36f17536179279bf707e4c6a10b2b84c370d5"
   },
   {
     "questionId": "u12-s008-v005",
@@ -548,7 +558,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "三項完全一致。",
-    "explanation": "(3x-2)(x+5)=3x²+15x-2x-10=3x²+13x-10。",
+    "explanation": "(3x-2)(x+5)=3x²+15x-2x-10=3x²+13x-10。 依序相乘得到3x²、15x、－2x、－10，兩個一次項合併為13x，因此展開式正是3x²＋13x－10。首項、一次項與常數項三者都吻合，所以候選分解確實正確。",
     "steps": [
       "算四項。",
       "合併一次項。",
@@ -576,7 +586,7 @@ export const QUESTIONS = [
         "reason": "交叉項 15x-2x=13x，首末項也吻合。"
       }
     ],
-    "misconceptionTarget": "負交叉項或負常數乘法錯。",
+    "misconceptionTarget": "負交叉項或負常數乘法錯。 把負二乘x或負二乘五的符號算錯，造成一次項或常數項錯誤。",
     "prerequisiteCheck": "需會帶號乘法。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位；精確。",
@@ -595,7 +605,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3dfe4543a8dacc0508a85ece0c776717696a8fd83ea76c2fa1d05b240df609df"
+    "contentSha256": "a1a096103215af5e76592bd18aa84b5717687ce2da4f2c28b9b381c9b2f39dc6"
   },
   {
     "questionId": "u12-s008-v006",
@@ -621,7 +631,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "展開得到 2x²+(p-6)x-3p；比對 p-6=-1 可得 p=5，並且 -3p=-15 也成立。",
-    "explanation": "p=5 同時使一次項與常數項符合，不能只檢查其中一個。",
+    "explanation": "p=5 同時使一次項與常數項符合，不能只檢查其中一個。 一般展開為2x²＋(p－6)x－3p。比對一次項係數p－6＝－1可得p＝5，再檢查常數－3p＝－15也成立；兩個係數條件同時吻合，才能確認答案。",
     "steps": [
       "展開成 2x²+(p-6)x-3p。",
       "由一次項 p-6=-1 得 p=5。",
@@ -649,7 +659,7 @@ export const QUESTIONS = [
         "reason": "常數為 +15，符號不符。"
       }
     ],
-    "misconceptionTarget": "只比對一個係數就下結論。",
+    "misconceptionTarget": "只比對一個係數就下結論。 只用一次項或常數項其中一個條件求值，沒有用另一項回查。",
     "prerequisiteCheck": "需會係數比對。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位。",
@@ -668,7 +678,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "65b8852107875e8a9ce01d2ccebdfaa9657eeee57b4ea6ada7788bf5fd67ad64"
+    "contentSha256": "88716144d360c2b5cae6e303c97690602057fde34205ddb61a69d06cba964c4f"
   },
   {
     "questionId": "u12-s008-v007",
@@ -694,7 +704,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "答案同時評估方法與事實。",
-    "explanation": "邏輯上單點不足；另行展開 P=x²+7x+6，才能證明本例恆等。",
+    "explanation": "邏輯上單點不足；另行展開 P=x²+7x+6，才能證明本例恆等。 代入x＝0只能知道兩式在單一點相等，不足以證明對所有x恆等。本題另將P完整展開，得到x²＋7x＋6，這時才可證明P與Q的每個係數都相同。",
     "steps": [
       "區分「檢查一點」與「證明所有值」。",
       "舉出單點只驗常數的限制。",
@@ -722,7 +732,7 @@ export const QUESTIONS = [
         "reason": "x=0 只直接檢查常數項。"
       }
     ],
-    "misconceptionTarget": "把正確結論誤當成錯誤證明也有效。",
+    "misconceptionTarget": "把正確結論誤當成錯誤證明也有效。 因為本例結論恰好正確，就誤認單點代入也是有效的恆等證明。",
     "prerequisiteCheck": "需會展開與恆等概念。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "無單位。",
@@ -741,7 +751,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "702bc03170fa5f044fff542061586b7190e0481bb4737f5325c83e80655c840c"
+    "contentSha256": "46a398d20eaaf555705b0bbec7e4503b401f2726d806b265f832ec4e57369318"
   },
   {
     "questionId": "u12-s008-v008",
@@ -767,7 +777,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "只有一次項係數不一致。",
-    "explanation": "展開 R=2x²+8x-3x-12=2x²+5x-12。",
+    "explanation": "展開 R=2x²+8x-3x-12=2x²+5x-12。 候選式展開為2x²＋8x－3x－12＝2x²＋5x－12。二次項係數2與常數－12都和原式相同，第一次出現差異的是一次項係數5與6，因此不能因首尾相同就接受。",
     "steps": [
       "展開。",
       "依次比二次、一次、常數。",
@@ -795,7 +805,7 @@ export const QUESTIONS = [
         "reason": "一次項不同。"
       }
     ],
-    "misconceptionTarget": "看到首尾吻合就停止檢查。",
+    "misconceptionTarget": "看到首尾吻合就停止檢查。 只看到首項與常數項吻合便停止，沒有檢查中間一次項係數。",
     "prerequisiteCheck": "需會完整展開。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位；精確。",
@@ -814,7 +824,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "58bd534b0c5f2b9dc7463471b2adb9fdb11d31e1f19bf43f69e6b9b133c80742"
+    "contentSha256": "d16c8a96b6acb6e013e294a01a5de05f855d2547ae4e763eaff08a306ec5037a"
   },
   {
     "questionId": "u12-s008-v009",
@@ -840,7 +850,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入 x=1：左式 (1+2)(1+3)=12，右式 1+6+6=13；12≠13，因此這一項是有效反例。",
-    "explanation": "反例必須指出同一個允許值使左右不相等；x=1 時得到 12 與 13，可直接推翻主張。",
+    "explanation": "反例必須指出同一個允許值使左右不相等；x=1 時得到 12 與 13，可直接推翻主張。 要推翻恆等主張，只需找到一個允許值使左右不同。代入x＝1時左式為3×4＝12，右式為1＋6＋6＝13，兩值不等，所以這是直接且充分的反例。",
     "steps": [
       "辨認反例需要左右不等。",
       "檢查只比係數或代 x=0 都沒有得到不等。",
@@ -868,7 +878,7 @@ export const QUESTIONS = [
         "reason": "同一個 x 值使左右不相等，已足以推翻恆等主張。"
       }
     ],
-    "misconceptionTarget": "把局部係數相同或某個代入值相等誤認為已完成恆等驗證。",
+    "misconceptionTarget": "把局部係數相同或某個代入值相等誤認為已完成恆等驗證。 把某一係數相同或代入零時相等，誤當成能推翻主張的反例。",
     "prerequisiteCheck": "需會代入與展開。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位。",
@@ -887,7 +897,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "be8af815fa8b5de3801a32d961cf40d058c6a18c93903d2335316cbae0f6d224"
+    "contentSha256": "7aa83afca252d856ea47eb09318250e9fd9662086051996d3ebb320fad49a337"
   },
   {
     "questionId": "u12-s008-v010",
@@ -913,7 +923,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "試算表公式對所有 n 正確。",
-    "explanation": "完整展開證明每個係數皆正確。",
+    "explanation": "完整展開證明每個係數皆正確。 依分配律展開得n²＋7n＋4n＋28，合併兩個一次項後為n²＋11n＋28，與試算表結果完全一致。完整係數比對證明此公式對所有n都成立。",
     "steps": [
       "列四個乘積。",
       "合併 7n+4n。",
@@ -941,7 +951,7 @@ export const QUESTIONS = [
         "reason": "展開是恆等式。"
       }
     ],
-    "misconceptionTarget": "只用一筆資料代入判斷。",
+    "misconceptionTarget": "只用一筆資料代入判斷。 把4與7的乘積二十八誤當一次項係數，或只代入一筆資料驗證。",
     "prerequisiteCheck": "需會展開。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "筆數模型為整數；係數精確。",
@@ -960,7 +970,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "81b249839db5f2598cdc7205fb59b4d8b988b63f211123fb354e6bcd4d3eb0c4"
+    "contentSha256": "446523b4636ee0638d7501f76e421b7dae0c227b3caf4a755e1171715cbccc1e"
   },
   {
     "questionId": "u12-s008-v011",
@@ -986,7 +996,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "每個係數吻合，所以程式公式正確。",
-    "explanation": "分配律完整展開是直接的恆等證明。",
+    "explanation": "分配律完整展開是直接的恆等證明。 完整展開為3x²－15x＋2x－10，合併一次項得到3x²－13x－10，三個係數都與程式輸出相同。這種完整展開比只檢查首項、常數或單點更能直接證實恆等。",
     "steps": [
       "寫四項乘積。",
       "合併 -15x+2x。",
@@ -1014,7 +1024,7 @@ export const QUESTIONS = [
         "reason": "同樣不足。"
       }
     ],
-    "misconceptionTarget": "把部分係數或單點檢查當完整證明。",
+    "misconceptionTarget": "把部分係數或單點檢查當完整證明。 只核對首項、常數項或x等於零的結果，就宣稱整個公式正確。",
     "prerequisiteCheck": "需會展開與證明。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "若 x 為公尺，各項代表相應模型量；無近似。",
@@ -1033,7 +1043,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a5348c692c9aa344741f4073f03d46051a7813bc67fa227c786161ba484fdc98"
+    "contentSha256": "1e23c8205b86f3ef6ab70ca5669716322da7f56ab4b3acd9f713277dd23b74b8"
   },
   {
     "questionId": "u12-s008-v012",
@@ -1059,7 +1069,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "一次項係數少 2。",
-    "explanation": "(2p+3)(p+1)=2p²+2p+3p+3=2p²+5p+3。",
+    "explanation": "(2p+3)(p+1)=2p²+2p+3p+3=2p²+5p+3。 候選式展開為2p²＋2p＋3p＋3＝2p²＋5p＋3。二次項係數2與常數3都吻合，但一次項係數應為5而不是原式的7，因此唯一不符的是一次項係數，系統應標記此欄。",
     "steps": [
       "完整展開。",
       "合併一次項。",
@@ -1087,7 +1097,7 @@ export const QUESTIONS = [
         "reason": "一次項 5≠7。"
       }
     ],
-    "misconceptionTarget": "首尾正確就誤判整體正確。",
+    "misconceptionTarget": "首尾正確就誤判整體正確。 只比對首項與常數項便接受候選分解，漏查兩個交叉項的和。",
     "prerequisiteCheck": "需會非首一展開。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "計數模型無近似；係數無單位。",
@@ -1106,7 +1116,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a50927286e7d205838d6568dcd95e5b523db1671d13dbd4a98439c64f09fc93e"
+    "contentSha256": "e5bb18a8a0e8bf5646cb9f8b5beae3858d96565e15cd5c93f196cd02608c2366"
   }
 ];
 
@@ -1129,16 +1139,17 @@ export const CONSTRUCTED_RESPONSES = [
       "作明確結論。"
     ],
     "fullCreditSolution": [
-      "(2x-5)(x+3)=2x²+6x-5x-15。",
-      "=2x²+x-15。",
-      "二次係數 2、一次係數 1、常數 -15 均吻合，所以候選正確。"
+      "依分配律列出四個乘積：(2x－5)(x＋3)＝2x²＋6x－5x－15，每個括號內的項都不可遺漏。",
+      "合併同類項6x－5x＝x，整理為2x²＋x－15。",
+      "逐項比對後，二次項係數2、一次項係數1及常數－15全部吻合，所以候選分解正確。"
     ],
     "alternativeSolutions": [
       "可用係數公式 ac、ad+bc、bd 檢查，但需寫出三個結果。"
     ],
     "reasoningSteps": [
-      "完整展開不是只代一點。",
-      "三個係數都必須相同。"
+      "先完整展開四個乘積，不能用單一代入值取代恆等檢查。",
+      "合併同類項並按降冪排列，避免漏看一次項。",
+      "比較二次、一次與常數三個係數後，才作正確結論。"
     ],
     "rubric": [
       {
@@ -1169,8 +1180,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "answerOnlyPolicy": "只有結論無過程最高 1 分。",
     "commonErrors": [
-      "漏掉 -5x。",
-      "把 -5×3 算成 +15。"
+      "漏掉負五乘x的交叉項，使一次項誤成6x。",
+      "把負五乘正三算成正十五，導致常數符號錯誤。"
     ],
     "independentReview": {
       "derivedResult": "候選正確，展開為 2x²+x-15。",
@@ -1180,7 +1191,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "bbbe406abf690543a17a439885f75a57371f235962ac772cda42489b8b9bc4d7"
+    "contentSha256": "6542ddf76aa40e7ea5e0512420ff75f1426d57ffd786766217bf84617915c74d"
   },
   {
     "questionId": "u12-s008-cr002",
@@ -1200,16 +1211,17 @@ export const CONSTRUCTED_RESPONSES = [
       "給反例或係數比較。"
     ],
     "fullCreditSolution": [
-      "x=0 只直接檢查常數項，不能證明恆等。",
-      "左式展開為 x²+9x+14，不是 x²+8x+14。",
-      "例如 x=1 時左式 24，右式 23，因此主張錯誤。"
+      "代入x＝0只會檢查常數項；不同多項式可能在同一點相等，因此這個證據不足以證明恆等。",
+      "完整展開左式：(x＋2)(x＋7)＝x²＋9x＋14，與右式x²＋8x＋14的一次項係數不同。",
+      "也可代入x＝1作反例：左式為24、右式為23。故同學的證據不足，而且原主張確實錯誤。"
     ],
     "alternativeSolutions": [
       "不必另找反例，只要完整展開並指出一次項係數 9≠8，即可完成判斷。"
     ],
     "reasoningSteps": [
-      "證據不足與命題真假分開評估。",
-      "本題命題確實為假。"
+      "先分開評估證明方法是否充分，以及原命題實際是真是假。",
+      "以完整展開比較每個係數，找出一次項9與8不一致。",
+      "再用一個使左右不等的允許值作反例，確認主張可被推翻。"
     ],
     "rubric": [
       {
@@ -1240,8 +1252,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "answerOnlyPolicy": "只答「錯」無理由最高 1 分。",
     "commonErrors": [
-      "把「證明不足」說成「式子一定不相等」而未查。",
-      "x=0 只看常數卻宣稱全對。"
+      "只說單點證據不足便直接斷言式子錯誤，沒有另行展開或找反例。",
+      "因x等於零時兩邊相同，就誤認所有x都會相同。"
     ],
     "independentReview": {
       "derivedResult": "證據不足且命題為假；左式一次係數為 9。",
@@ -1251,7 +1263,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ea84d679ea85d5199a0a1d03bc17f330d9f686bea4d5512d89a3628ae01d1c12"
+    "contentSha256": "7ef4fed36366a993bb65670f68118c99136a936a1feec22c357c38fce75cc050"
   }
 ];
 
@@ -1260,7 +1272,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v001",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "c962ee17ce6badb7727a298b68100fb78f1916e402bb3b7eb924f02553be3c68",
+    "contentSha256": "24a07a0c784ef968a5fac5defe479e97fc531abee6e5a222dfbcdec01ffc5523",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "每一項係數均由分配律得到。",
     "derivedAnswer": "x²+7x+10",
@@ -1294,7 +1306,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v002",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "4d4959566bf58e151cc836f946668702e21ebf71f5c94ab3992834d97914644a",
+    "contentSha256": "43e991d508d316306538cad16fdb58425c3850742fb91c500db0306ae6c8dcff",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "一次項係數不是一次項本身，因此答案為 5。",
     "derivedAnswer": "5",
@@ -1328,7 +1340,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v003",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "dffa8e306c727704d0ee332da39fe137cafd6299a2e79434b1297ac320e252fc",
+    "contentSha256": "23f383afd500d54e0e507ad20281d4bf2a42f40e96ee1de15bbcd1e1e283fc78",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "不依賴代入特定值。",
     "derivedAnswer": "是，因展開恰為 x²+5x+4",
@@ -1362,7 +1374,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v004",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "44d7916c677133aa134bad9abd3c88b16812aaec3f6572f134fe3d6eb2ffbd6f",
+    "contentSha256": "b0d33a1d0a39e2746b14785c26e36f17536179279bf707e4c6a10b2b84c370d5",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "只有一次項寫錯，二次與常數正確。",
     "derivedAnswer": "一次項應為 8x",
@@ -1396,7 +1408,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v005",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "3dfe4543a8dacc0508a85ece0c776717696a8fd83ea76c2fa1d05b240df609df",
+    "contentSha256": "a1a096103215af5e76592bd18aa84b5717687ce2da4f2c28b9b381c9b2f39dc6",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "三項完全一致。",
     "derivedAnswer": "正確",
@@ -1430,7 +1442,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v006",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "65b8852107875e8a9ce01d2ccebdfaa9657eeee57b4ea6ada7788bf5fd67ad64",
+    "contentSha256": "88716144d360c2b5cae6e303c97690602057fde34205ddb61a69d06cba964c4f",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開得到 2x²+(p-6)x-3p；比對 p-6=-1 可得 p=5，並且 -3p=-15 也成立。",
     "derivedAnswer": "5",
@@ -1464,7 +1476,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v007",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "702bc03170fa5f044fff542061586b7190e0481bb4737f5325c83e80655c840c",
+    "contentSha256": "46a398d20eaaf555705b0bbec7e4503b401f2726d806b265f832ec4e57369318",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "答案同時評估方法與事實。",
     "derivedAnswer": "不能；單點相等不足，但完整展開可證明本例確實恆等",
@@ -1498,7 +1510,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v008",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "58bd534b0c5f2b9dc7463471b2adb9fdb11d31e1f19bf43f69e6b9b133c80742",
+    "contentSha256": "d16c8a96b6acb6e013e294a01a5de05f855d2547ae4e763eaff08a306ec5037a",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "只有一次項係數不一致。",
     "derivedAnswer": "一次項係數",
@@ -1532,7 +1544,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v009",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "be8af815fa8b5de3801a32d961cf40d058c6a18c93903d2335316cbae0f6d224",
+    "contentSha256": "7aa83afca252d856ea47eb09318250e9fd9662086051996d3ebb320fad49a337",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "代入 x=1：左式 (1+2)(1+3)=12，右式 1+6+6=13；12≠13，因此這一項是有效反例。",
     "derivedAnswer": "代入 x=1，左邊 12、右邊 13",
@@ -1566,7 +1578,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v010",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "81b249839db5f2598cdc7205fb59b4d8b988b63f211123fb354e6bcd4d3eb0c4",
+    "contentSha256": "446523b4636ee0638d7501f76e421b7dae0c227b3caf4a755e1171715cbccc1e",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "試算表公式對所有 n 正確。",
     "derivedAnswer": "通過，四項合併後完全一致",
@@ -1600,7 +1612,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v011",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "a5348c692c9aa344741f4073f03d46051a7813bc67fa227c786161ba484fdc98",
+    "contentSha256": "1e23c8205b86f3ef6ab70ca5669716322da7f56ab4b3acd9f713277dd23b74b8",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "每個係數吻合，所以程式公式正確。",
     "derivedAnswer": "計算 3x²-15x+2x-10，合併為 3x²-13x-10",
@@ -1634,7 +1646,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s008-v012",
     "unitId": "u12",
     "skillId": "factoring-check-expand",
-    "contentSha256": "a50927286e7d205838d6568dcd95e5b523db1671d13dbd4a98439c64f09fc93e",
+    "contentSha256": "e5bb18a8a0e8bf5646cb9f8b5beae3858d96565e15cd5c93f196cd02608c2366",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "一次項係數少 2。",
     "derivedAnswer": "一次項係數",

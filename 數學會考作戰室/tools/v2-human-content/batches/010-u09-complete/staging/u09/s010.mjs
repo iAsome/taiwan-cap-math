@@ -61,11 +61,9 @@ export default {
       }
     ],
     "conceptDevelopment": [
-      "中位數先看位置，不是先做加總；未排序的中間一個數不一定是中位數。",
-      "奇數筆只有一個中央位置；偶數筆沒有單一中央資料，需將中央兩值相加除以 2。",
-      "重複值每出現一次就占一個位置。",
-      "極端值若仍在兩端，通常不改變中位數；但加入或刪除資料會改變筆數與中央位置。",
-      "次數表可用累積次數找中央位置，不必逐一抄出全部資料。"
+      "中位數描述排序後的中央位置，第一步一定是將資料由小到大排列並逐筆計數，重複值也各占一個位置。奇數筆的中位位置為筆數加一後除以二；偶數筆則取正中央兩個位置的數值平均。中位數不使用全部資料總和，因此不能拿平均數公式替代。",
+      "加入、刪除或更改資料後，即使新值位在最左或最右，也要更新總筆數並重新確認中央位置。極端值留在兩端時常不會大幅改變中位數，但若筆數奇偶改變，單一中央值可能變成中央兩值平均，所以中位數仍可能小幅移動。",
+      "已排序且含未知數的題目要同時使用位置與排序限制。奇數筆可把中央未知數直接等同中位數；偶數筆則由中央兩值建立方程，解得後還要檢查未知數是否落在前後值之間。次數表也可用累積次數判斷中央位置落在哪個資料值。"
     ],
     "definitions": [
       {
@@ -125,40 +123,44 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "資料為 9、3、7、4、12。",
+        "prompt": "資料為 9、3、7、4、12，求中位數。",
         "solution": [
-          "排序：3、4、7、9、12。",
-          "5 筆，中位位置=(5+1)÷2=3。"
+          "排序為 3、4、7、9、12。",
+          "五筆中央位置為第三筆。"
         ],
-        "answer": "中位數 7。"
+        "answer": "中位數為 7。",
+        "why": "原題第三個數七雖巧合是答案，仍必須先排序才能確定；排序後第三筆左右各有兩筆，位置完全平衡，這才是中位數的定義依據。"
       },
       {
         "id": "L2",
-        "prompt": "資料為 2、8、5、11、6、20。",
+        "prompt": "資料為 2、8、5、11、6、20，求中位數。",
         "solution": [
-          "排序：2、5、6、8、11、20。",
-          "6 筆，中央為第3與第4筆。",
+          "排序為 2、5、6、8、11、20。",
+          "中央為第三、四筆六與八。",
           "(6+8)÷2=7。"
         ],
-        "answer": "中位數 7。"
+        "answer": "中位數為 7。",
+        "why": "六筆是偶數，中央落在兩個位置之間，所以必須平均六與八；只取其中一個會使左右資料筆數不對稱，而兩端二與二十不參與中央計算。"
       },
       {
         "id": "L3",
-        "prompt": "1 出現 2 次、4 出現 3 次、9 出現 4 次。",
+        "prompt": "1 出現 2 次、4 出現 3 次、9 出現 4 次，求中位數。",
         "solution": [
-          "共9筆，中位位置第5筆。",
-          "累積到1為2筆，累積到4為5筆。"
+          "總筆數為 9，中位位置是第五筆。",
+          "累積到 1 為 2 筆，累積到 4 為 5 筆。"
         ],
-        "answer": "第5筆是4，中位數4。"
+        "answer": "中位數為 4。",
+        "why": "不必展開九筆資料，只要用累積次數定位第五筆；第五筆已落在數值四的區段，後面四個九都在中央位置右側，不會改變答案。"
       },
       {
         "id": "L4",
-        "prompt": "薪資 30、31、31、32、300（千元）。",
+        "prompt": "薪資為 30、31、31、32、300 千元，哪個數較能描述中央員工？",
         "solution": [
-          "排序後中央第3筆為31。",
-          "300 是極端值但位於末端。"
+          "排序後中央第三筆為 31 千元。",
+          "三百千元位在最右端，是極端高值。"
         ],
-        "answer": "中位數31千元，比平均數更能描述中央員工。"
+        "answer": "中位數 31 千元較合適。",
+        "why": "極端薪資會明顯增加總和與平均，但它仍在排序末端，不改變第三筆；因此中位數三十一更接近其餘四名員工，不代表平均計算錯誤。"
       }
     ],
     "commonMistakes": [
@@ -236,7 +238,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "1e1391b127685a97871959b540f982b60192f7585d88985e8ce2880aa87aa4f0"
+    "contentSha256": "9dcea6a22de4aac35f79f5f948c2c3716b7d7ba6be5e68bfa955af2665a063b5"
   },
   "mcQuestions": [
     {
@@ -264,10 +266,11 @@ export default {
         "derivedAnswer": "5",
         "trustStoredAnswer": false
       },
-      "explanation": "求中位數前必須排序。",
+      "explanation": "求中位數前必須排序。 中位數要先將三筆由小到大排成三、五、八，奇數筆資料只有一個正中央位置，因此第二筆五就是中位數，不需計算總和。",
       "steps": [
         "由小到大排列。",
-        "取正中央位置。"
+        "取正中央位置。",
+        "三筆資料取排序後第二個值，得到中位數五。"
       ],
       "optionAnalysis": [
         {
@@ -291,7 +294,7 @@ export default {
           "reason": "16/3 是平均數。"
         }
       ],
-      "misconceptionTarget": "未排序或改算平均",
+      "misconceptionTarget": "未排序或改算平均 未排序就取原列中間的八，或誤用平均數公式。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -309,7 +312,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "370ea965d20884843373439213a1ff7b7db48aad5e36c4472b9820754311728c"
+      "contentSha256": "bade8146a8dfd7998c5e1cd1bba6d75b93f120d67dec38cf72014811f0e47930"
     },
     {
       "questionId": "u09-s010-v002",
@@ -336,7 +339,7 @@ export default {
         "derivedAnswer": "5.5",
         "trustStoredAnswer": false
       },
-      "explanation": "偶數筆中位數是排序後中間兩數的平均。",
+      "explanation": "偶數筆中位數是排序後中間兩數的平均。 四筆已排序資料沒有單一中央值，中央位置是第二、三筆的四與七，兩者相加除二得五點五；兩端二與九不參與。",
       "steps": [
         "確認已排序。",
         "取第 2、3 個。",
@@ -364,7 +367,7 @@ export default {
           "reason": "6 是錯誤平均。"
         }
       ],
-      "misconceptionTarget": "只取一個中央值",
+      "misconceptionTarget": "只取一個中央值 偶數筆只取第二筆或第三筆，沒有平均中央兩值。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -382,7 +385,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3ae330de76d036e966ce2a52cc27eb6382bf20f0c1e0031ead7ab750286db243"
+      "contentSha256": "a41a70ee25e81595d33cda0d964c1ed7d03deb50ea6ae6ff86eff17250ea46cd"
     },
     {
       "questionId": "u09-s010-v003",
@@ -409,10 +412,11 @@ export default {
         "derivedAnswer": "第 4 個",
         "trustStoredAnswer": false
       },
-      "explanation": "位置公式只適用已排序資料。",
+      "explanation": "位置公式只適用已排序資料。 七是奇數，中央位置左右各要保留三筆，所以位於第四個；也可用七加一再除二得到四，前提是資料已排序。",
       "steps": [
         "確認筆數 7。",
-        "計算中央位置。"
+        "計算中央位置。",
+        "確認排序後第四個值左右各有三筆，因此位置正確。"
       ],
       "optionAnalysis": [
         {
@@ -436,7 +440,7 @@ export default {
           "reason": "(7+1)÷2=4。"
         }
       ],
-      "misconceptionTarget": "把筆數本身當位置",
+      "misconceptionTarget": "把筆數本身當位置 用七除二後無條件捨去成第三個位置。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -454,7 +458,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "dd1189d760a328465b9eda644bf8e12379282a519e0e2dd73bd68f7783e3f6d1"
+      "contentSha256": "4417fb1356705980df982fc7a574b402db3dd3944e1c0cf384f92309447b960b"
     },
     {
       "questionId": "u09-s010-v004",
@@ -481,10 +485,11 @@ export default {
         "derivedAnswer": "6",
         "trustStoredAnswer": false
       },
-      "explanation": "已排序條件使中央位置直接決定 x。",
+      "explanation": "已排序條件使中央位置直接決定 x。 五筆已依序排列，第三筆未知數正是唯一中央位置；既然中位數指定為六，未知數必為六，且三小於等於六小於等於八符合排序。",
       "steps": [
         "找第 3 個位置。",
-        "令 x 等於中位數 6。"
+        "令 x 等於中位數 6。",
+        "將第三筆直接等同中位數六，再檢查排序限制。"
       ],
       "optionAnalysis": [
         {
@@ -508,7 +513,7 @@ export default {
           "reason": "8 是第四個資料。"
         }
       ],
-      "misconceptionTarget": "把相鄰值平均",
+      "misconceptionTarget": "把相鄰值平均 把五筆資料平均設為六，誤列總和方程式。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -526,7 +531,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "eb6a50ce6f814099f7f48d3a9d75fa3782f1979c763e8e598723a3663e4605db"
+      "contentSha256": "efa18af8fe31d5880666ebe7a2c0569d29f1e9c2a9006a32a51b91581dbd75f0"
     },
     {
       "questionId": "u09-s010-v005",
@@ -553,7 +558,7 @@ export default {
         "derivedAnswer": "9",
         "trustStoredAnswer": false
       },
-      "explanation": "加入極大值會改變筆數與中央位置，但中位數不會被拉到 100 附近。",
+      "explanation": "加入極大值會改變筆數與中央位置，但中位數不會被拉到 100 附近。 加入一百後排序為四、六、八、十、十二、一百，共六筆；中央第三與第四值為八、十，平均得九，極端值本身不直接進入計算。",
       "steps": [
         "加入並排序。",
         "取第 3、4 個。",
@@ -581,7 +586,7 @@ export default {
           "reason": "23.3 近似新平均。"
         }
       ],
-      "misconceptionTarget": "把中位數當平均受極端值大幅拉動",
+      "misconceptionTarget": "把中位數當平均受極端值大幅拉動 仍取原第三筆八，沒有因筆數由奇數變偶數而重新定位。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -599,7 +604,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4e3dd3cadc00935dcd28bd5715d3b1d9b683614ee98de50502ddd844f17744ff"
+      "contentSha256": "2862c8f12ed28179073e0199845e64363dc1acddfc46662c37e491702c3d2f1c"
     },
     {
       "questionId": "u09-s010-v006",
@@ -626,10 +631,11 @@ export default {
         "derivedAnswer": "12",
         "trustStoredAnswer": false
       },
-      "explanation": "中位數 7 由第 3 個決定，但排序條件仍限制 x。",
+      "explanation": "中位數 7 由第 3 個決定，但排序條件仍限制 x。 題目已聲明資料排序且未知數在九之後，所以未知數至少為九；四個選項只有十二符合，中央第三筆七仍不受末項數值影響。",
       "steps": [
         "辨認 x 的位置。",
-        "套用 x≥9。"
+        "套用 x≥9。",
+        "由末項條件列未知數大於等於九，篩出十二。"
       ],
       "optionAnalysis": [
         {
@@ -653,7 +659,7 @@ export default {
           "reason": "8 也小於 9。"
         }
       ],
-      "misconceptionTarget": "只看中位數而忽略排序",
+      "misconceptionTarget": "只看中位數而忽略排序 只看中位數七便選七，忽略未知數位於排序末端。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -671,7 +677,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e1ef0af5c5987e9ef8e9483c0d2e4e4a4332e55a215222aa7e876e5ed26638b8"
+      "contentSha256": "0f60acc78e3ac728344c1e3b09d546ef175a90e922c2d25731daa8ad1056e207"
     },
     {
       "questionId": "u09-s010-v007",
@@ -698,7 +704,7 @@ export default {
         "derivedAnswer": "排序後第 4 與第 5 個值的平均",
         "trustStoredAnswer": false
       },
-      "explanation": "新增資料後必須重新排序，不能沿用原中央值。",
+      "explanation": "新增資料後必須重新排序，不能沿用原中央值。 加入新資料後必須把八筆全部重新排序，偶數筆的中央落在第四、五位置，取兩值平均；新資料可能插入任何位置，不能沿用原第四值。",
       "steps": [
         "更新筆數。",
         "重新排序。",
@@ -726,7 +732,7 @@ export default {
           "reason": "8 筆偶數資料取中央兩值平均。"
         }
       ],
-      "misconceptionTarget": "固定沿用原中位數",
+      "misconceptionTarget": "固定沿用原中位數 資料增加後仍沿用原中位位置，沒有重新排序與計數。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -744,7 +750,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c49b90de1cd5f77e5c7eb41096e9c2f88a4f3b7c9c4cabad387f0aff0c780871"
+      "contentSha256": "885188ee21aad24b8170e392e348c2db6381bb525836ac1f9767d5a70bef7aae"
     },
     {
       "questionId": "u09-s010-v008",
@@ -771,7 +777,7 @@ export default {
         "derivedAnswer": "10",
         "trustStoredAnswer": false
       },
-      "explanation": "偶數筆中位數條件形成一元方程。",
+      "explanation": "偶數筆中位數條件形成一元方程。 六筆資料的中央是第三項六與第四項未知數，平均為八可列六加未知數等於十六，解得十；十也落在六與十二之間，排序成立。",
       "steps": [
         "找中間兩數 6、x。",
         "建立平均方程。",
@@ -799,7 +805,7 @@ export default {
           "reason": "x=12 時中位數 9。"
         }
       ],
-      "misconceptionTarget": "把中位數直接填入未知",
+      "misconceptionTarget": "把中位數直接填入未知 把未知數本身直接設成中位數八，忽略偶數筆有兩個中央值。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -817,7 +823,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "04e7d92aade3fb084c1c8743cbde11ac7de78b8e331ec3db25237f4b224d58fd"
+      "contentSha256": "a2e4487b999b0605fb922c54baeb38abd12e23cbe10ff018ece483aa50235d99"
     },
     {
       "questionId": "u09-s010-v009",
@@ -844,10 +850,11 @@ export default {
         "derivedAnswer": "仍為 7",
         "trustStoredAnswer": false
       },
-      "explanation": "中位數對單一極端值通常較不敏感。",
+      "explanation": "中位數對單一極端值通常較不敏感。 把最大值十一改為更大的百後，排序中央第三筆仍是七，所以中位數不變；極端值會大幅影響平均數，卻未跨過中央位置。",
       "steps": [
         "重新排列確認。",
-        "讀第 3 個。"
+        "讀第 3 個。",
+        "重排為二、四、七、九、一百，讀取第三筆仍為七。"
       ],
       "optionAnalysis": [
         {
@@ -871,7 +878,7 @@ export default {
           "reason": "100 是最大值。"
         }
       ],
-      "misconceptionTarget": "認為任何數值變大都使中位數變大",
+      "misconceptionTarget": "認為任何數值變大都使中位數變大 看到最大值變大就認為所有集中量數都一定增加。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -889,7 +896,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "217b8b16add3086495e06b85780c3d3eb1b58e4066f081a65bf17848f6fec25f"
+      "contentSha256": "6de457668daac579e9c46ce5910fd77a7f2f3814a09ec76899a85cb285b72b9c"
     },
     {
       "questionId": "u09-s010-v010",
@@ -916,7 +923,7 @@ export default {
         "derivedAnswer": "中位數 18 分，因 95 分的極端值拉高平均",
         "trustStoredAnswer": false
       },
-      "explanation": "代表值選擇要考慮極端值與溝通目的。",
+      "explanation": "代表值選擇要考慮極端值與溝通目的。 九十五分鐘遠高於其餘四筆，使總和與平均被拉升到三十二；中位數只取排序中央十八，較能表示這個偏斜小樣本中的典型等候時間。",
       "steps": [
         "計算或核對兩代表值。",
         "辨識 95 為極端值。",
@@ -944,7 +951,7 @@ export default {
           "reason": "兩者都可計算。"
         }
       ],
-      "misconceptionTarget": "一律認為平均最好",
+      "misconceptionTarget": "一律認為平均最好 認為平均數一定最具代表性，忽略九十五分鐘極端值。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -962,7 +969,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "dfba77c64a33fa28cb4ada87aa6dbe876843eb23e6589dfd4a3d343bd9140f1a"
+      "contentSha256": "2dc987b3c7bc1253acc823f1b7a5aa4ca6696b843bd2b85fd7ea29a154892247"
     },
     {
       "questionId": "u09-s010-v011",
@@ -989,7 +996,7 @@ export default {
         "derivedAnswer": "改用中位數 850 萬元並說明樣本僅 5 筆",
         "trustStoredAnswer": false
       },
-      "explanation": "合理報導需選適當代表值並交代樣本範圍。",
+      "explanation": "合理報導需選適當代表值並交代樣本範圍。 三千萬元豪宅使平均升至一千二百七十萬元，但排序中央仍是八百五十萬元；以中位數描述典型值較合理，且五筆樣本限制也須揭露。",
       "steps": [
         "核算平均與中位數。",
         "辨識極端值。",
@@ -1017,7 +1024,7 @@ export default {
           "reason": "中位數不受 3000 萬元單筆豪宅大幅拉高，且應揭露樣本小。"
         }
       ],
-      "misconceptionTarget": "用高平均製造普遍高價印象",
+      "misconceptionTarget": "用高平均製造普遍高價印象 把受極端豪宅拉高的平均當成每戶都接近的典型價格。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -1035,7 +1042,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ff2a4657178a36a14102e03e1ebc7e74dbba5ee2eed2bf2948ce63a8170e49e7"
+      "contentSha256": "e87890c5aad255a30e86301ea6fdc292f131a2037bb8749798708e03f4d8ef8e"
     },
     {
       "questionId": "u09-s010-v012",
@@ -1062,7 +1069,7 @@ export default {
         "derivedAnswer": "8",
         "trustStoredAnswer": false
       },
-      "explanation": "程序規則先改變資料集，再求中位數。",
+      "explanation": "程序規則先改變資料集，再求中位數。 刪除最低六與最高十後剩七、七、八、八、九，共五筆；重新定位中央第三筆為八，不能沿用原七筆的位置編號。",
       "steps": [
         "刪除兩端。",
         "重新列出剩餘資料。",
@@ -1090,7 +1097,7 @@ export default {
           "reason": "9 是最大剩餘值。"
         }
       ],
-      "misconceptionTarget": "先求原中位數或改算平均",
+      "misconceptionTarget": "先求原中位數或改算平均 刪除兩端後未重新計數，或錯把剩餘五筆求平均數。",
       "prerequisiteCheck": {
         "skillIds": [
           "mean-basic"
@@ -1108,7 +1115,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e6b2a94724658fde74b137f0a7def645ab41bea3be7e5fd204e82af9c6ef0557"
+      "contentSha256": "2009fcd6052bfd3591b1bbe5bc8c1fb2eaae856c1a8e502bf6a53b843cbf464c"
     }
   ],
   "constructedResponses": [
@@ -1133,7 +1140,8 @@ export default {
         "7筆中位數為第4筆11。",
         "加入100後：7、9、9、11、12、15、20、100。",
         "8筆中位數=(第4筆11+第5筆12)÷2=11.5。",
-        "中位數增加0.5。"
+        "中位數增加0.5。",
+        "新增的一百雖遠大於原資料，但它排在最右端；中位數由原本第四筆十一改為八筆中的第四、五筆平均，所以只上升零點五，而不是被一百直接拉高。"
       ],
       "alternativeMethod": "因100大於原所有值，可直接放在末端；原排序不必全部重做。",
       "reasoningSteps": [
@@ -1179,7 +1187,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "1a719583ff442db8d70af45801f06c532aaa9604a59b5c3c2fe484e420b7701f"
+      "contentSha256": "df0333b7ae612b2db19ee1e258118760c2b30413863ff1b23b2691a1e90cfc0e",
+      "commonErrors": [
+        "未先排序原資料便取題目列出的第四項九，錯認原中位數。",
+        "加入一百後仍取單一第四筆十一，忘記八筆資料須平均第四與第五筆。"
+      ]
     },
     {
       "questionId": "u09-s010-cr002",
@@ -1246,7 +1258,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "3beff8c058fe93dbfde5a55e7584d3b0d5e5eb3760491c8269a17ba85f7a90ef"
+      "contentSha256": "c5f9ef2c23fd165afe968a36ef32d06e9f2b690f6278aa532d9c8f9ba6a295f4",
+      "commonErrors": [
+        "看到未知數甲乙便試圖由中位數九解方程，忽略它們位在第九、十位置。",
+        "把偶數十筆的中位數誤取第五筆十，沒有平均第五、六筆十與十二。"
+      ]
     }
   ],
   "semanticReviews": [

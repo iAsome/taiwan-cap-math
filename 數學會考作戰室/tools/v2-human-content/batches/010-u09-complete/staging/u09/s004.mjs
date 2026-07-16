@@ -61,7 +61,8 @@ export default {
       "連線幫助看趨勢，但已測資料仍是各資料點；未測時刻不能自動當成真實測值。",
       "增加最多要逐段計算後值減前值，而不是只找最高點。",
       "平均變化率還要除以橫軸間隔。",
-      "次數分配折線圖的縱座標才是次數，橫座標是組中點。"
+      "次數分配折線圖的縱座標才是次數，橫座標是組中點。",
+      "折線圖的每個資料點對應一個實際時點或組中點，連線主要協助觀察變化方向，不能自行創造未測時刻的精確數值。分析變化時先以後值減前值求相鄰差，再依題意區分總變化、下降幅度、百分點差與平均變化率；後者還要除以橫軸間隔。次數分配折線的橫座標是組中點、縱座標才是次數，因此總筆數只加縱座標。"
     ],
     "definitions": [
       {
@@ -126,26 +127,29 @@ export default {
         "id": "L1",
         "prompt": "數值 80、92、88、104，哪段增加最多？",
         "solution": [
-          "變化 +12、-4、+16。"
+          "變化為＋12、－4、＋16。"
         ],
-        "answer": "第 3 到第 4 段。"
+        "answer": "第 3 到第 4 段。",
+        "why": "增加最多比較的是每一對相鄰時點的後值減前值，不是找整列最高點。三段變化中只有十二與十六為增加，十六較大，因此第三到第四段才是最大上升區間。"
       },
       {
         "id": "L2",
         "prompt": "點 (2,18)、(5,30) 的平均每小時增加。",
         "solution": [
           "縱差 12，橫差 3。",
-          "12÷3=4。"
+          "12÷3＝4。"
         ],
-        "answer": "每小時 4。"
+        "answer": "每小時 4。",
+        "why": "平均變化率同時使用縱向總增加與橫向經過時間。由二到五共三小時，而數值增加十二，十二除三才得到每小時四；若只答十二，就只是總變化而非每小時。"
       },
       {
         "id": "L3",
         "prompt": "次數點 (5,2)、(15,6)、(25,4)。",
         "solution": [
-          "只加縱座標 2+6+4。"
+          "只加縱座標 2＋6＋4。"
         ],
-        "answer": "總次數 12。"
+        "answer": "總次數 12。",
+        "why": "次數分配折線的橫座標是各組中點，用來安排資料點位置；縱座標才代表該組次數。總筆數只加二、六、四得到十二，不能把五、十五、二十五混入。"
       }
     ],
     "commonMistakes": [
@@ -225,7 +229,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "4416f59680515e9c45766b5a30d8071f4e448a292fac5909dadc9d05ecf905a3"
+    "contentSha256": "0e3c19767279530e3914a827c2036ec7daaa9322757a03ffa636b506a92dc010"
   },
   "mcQuestions": [
     {
@@ -253,10 +257,11 @@ export default {
         "derivedAnswer": "25°C",
         "trustStoredAnswer": false
       },
-      "explanation": "折線只是連接資料點，指定日期要讀該點。",
+      "explanation": "折線只是連接資料點，指定日期要讀該點。 沿橫軸定位週四，再垂直讀該資料點為二十五度；週五二十四度與週三二十一度是其他日期，連線中間也不是已測點。",
       "steps": [
         "定位週四。",
-        "讀取對應高度 25。"
+        "讀取對應高度 25。",
+        "將二十五度對回週四標籤，核對日期與溫度單位。"
       ],
       "optionAnalysis": [
         {
@@ -280,7 +285,7 @@ export default {
           "reason": "週四資料點位於 25°C。"
         }
       ],
-      "misconceptionTarget": "沿線中段估讀而非讀資料點",
+      "misconceptionTarget": "沿線中段估讀而非讀資料點 沿折線估讀相鄰位置，沒有先鎖定週四這個實際資料點。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -298,7 +303,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "20eb5cb037a464b9e5fa6af4f8352ea11cd9fa11be90505914febee2738de292"
+      "contentSha256": "c479196c6cb912eb29272c90edb50b6fffa10a711ad57b56ab279840302101f8"
     },
     {
       "questionId": "u09-s004-v002",
@@ -325,10 +330,11 @@ export default {
         "derivedAnswer": "第 2 與第 3 時點",
         "trustStoredAnswer": false
       },
-      "explanation": "水平線段表示相鄰資料值相同。",
+      "explanation": "水平線段表示相鄰資料值相同。 相鄰變化依序為增加三、零、增加四，只有第二到第三時點數值都為十五，折線段呈水平；斜率很小仍不等於完全不變。",
       "steps": [
         "列出相鄰差。",
-        "找到差為 0 的區段。"
+        "找到差為 0 的區段。",
+        "用十五減十五等於零回查，確認水平段唯一出現在第二、三時點。"
       ],
       "optionAnalysis": [
         {
@@ -352,7 +358,7 @@ export default {
           "reason": "15 到 19 有增加。"
         }
       ],
-      "misconceptionTarget": "把斜率小誤認為不變",
+      "misconceptionTarget": "把斜率小誤認為不變 只憑線段看似平緩就判定不變，沒有檢查兩端數值是否相等。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -370,7 +376,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1f64a46f5f731c75283b006e3dbcd96260eeda2583bb4c9c71f6286c219e15bc"
+      "contentSha256": "0265e8979eab8f1a8a85e677fa416b5ef16516f809b9593bec7263d6769ac32a"
     },
     {
       "questionId": "u09-s004-v003",
@@ -397,10 +403,11 @@ export default {
         "derivedAnswer": "6",
         "trustStoredAnswer": false
       },
-      "explanation": "要區分變化方向與變化大小。",
+      "explanation": "要區分變化方向與變化大小。 若問帶方向的變化量可寫負六，但題目問「下降多少」是下降幅度，應答正的六；二十四是末值，五十四則是無意義的相加。",
       "steps": [
         "確認起值 30、末值 24。",
-        "相減求差 6。"
+        "相減求差 6。",
+        "以末值二十四加下降六回到起值三十，驗證下降幅度。"
       ],
       "optionAnalysis": [
         {
@@ -424,7 +431,7 @@ export default {
           "reason": "54 是相加。"
         }
       ],
-      "misconceptionTarget": "把末值或負變化量當答案",
+      "misconceptionTarget": "把末值或負變化量當答案 未區分帶方向變化量與下降幅度，把負六或末值二十四當答案。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -442,7 +449,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a1cbb286af302fd8f7c7a9f52f4fcf8861da9755ccb35a47d30082b3495e950e"
+      "contentSha256": "bfda822fce86ab187114c9e8ee013714fa6129151ae6129e7a880fa7c069972b"
     },
     {
       "questionId": "u09-s004-v004",
@@ -469,7 +476,7 @@ export default {
         "derivedAnswer": "第 3 週到第 4 週",
         "trustStoredAnswer": false
       },
-      "explanation": "比較增加最多需看相鄰差，不是最高點本身。",
+      "explanation": "比較增加最多需看相鄰差，不是最高點本身。 三段相鄰變化分別為增加十二、減少四、增加十六，最大正變化十六發生在第三到第四週；第四週最高不等於任何跨期比較都可選。",
       "steps": [
         "計算每段變化量。",
         "只保留正增加。",
@@ -497,7 +504,7 @@ export default {
           "reason": "不是相鄰兩週的變化。"
         }
       ],
-      "misconceptionTarget": "只看最高終點或跨多期差",
+      "misconceptionTarget": "只看最高終點或跨多期差 只看到第四週數值最高，未逐段計算相鄰週的增加量。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -515,7 +522,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bc8fe7b747d6e26ddbe3b6316fa26b42ce53694d7e7e49cdd4ffe2e067dc1c3e"
+      "contentSha256": "38194d88187d2f7c09ea241d319daf4d21124d058eb1b91e6f64bbbd1cf469ff"
     },
     {
       "questionId": "u09-s004-v005",
@@ -542,10 +549,11 @@ export default {
         "derivedAnswer": "12",
         "trustStoredAnswer": false
       },
-      "explanation": "次數分配折線圖的橫座標是組中點，不能與次數混加。",
+      "explanation": "次數分配折線圖的橫座標是組中點，不能與次數混加。 三個點的橫座標五、十五、二十五是組中點，縱座標二、六、四才是各組次數；總資料筆數為二加六加四等於十二。",
       "steps": [
         "辨識縱座標代表次數。",
-        "加總三個次數。"
+        "加總三個次數。",
+        "確認三個縱座標合計十二，橫座標完全不參與總次數。"
       ],
       "optionAnalysis": [
         {
@@ -569,7 +577,7 @@ export default {
           "reason": "2+6+4=12。"
         }
       ],
-      "misconceptionTarget": "把橫座標組中點當次數",
+      "misconceptionTarget": "把橫座標組中點當次數 把組中點五、十五、二十五加入次數，混淆兩座標軸的統計意義。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -587,7 +595,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f04f466c168892c27a723a46b083ba1ad039a876799ecccf1fc17ed0d7668397"
+      "contentSha256": "dfc4026bdd6c323b508b77e0424163613503b0b8aceca5e233db73e09576d7b6"
     },
     {
       "questionId": "u09-s004-v006",
@@ -614,7 +622,7 @@ export default {
         "derivedAnswer": "4",
         "trustStoredAnswer": false
       },
-      "explanation": "平均變化率要同時考慮縱向差與橫向間隔。",
+      "explanation": "平均變化率要同時考慮縱向差與橫向間隔。 縱向由十八增至三十共十二，橫向由二到五經過三小時，平均每小時為十二除三等於四；只答十二會漏掉時間尺度。",
       "steps": [
         "求縱差 12。",
         "求橫差 3。",
@@ -642,7 +650,7 @@ export default {
           "reason": "48 是相加或相乘錯誤。"
         }
       ],
-      "misconceptionTarget": "只報總變化而忽略時間間隔",
+      "misconceptionTarget": "只報總變化而忽略時間間隔 把總增加十二當成每小時增加量，沒有除以三小時的橫向間隔。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -660,7 +668,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4ef2b221e0f16be7191513f0408b955400f86cb93f30bd72afd34d86a9f35d29"
+      "contentSha256": "93c4f88714e0ecc54290bc433ac2d2cb52f917035c7a8d77137fe164564141b4"
     },
     {
       "questionId": "u09-s004-v007",
@@ -687,7 +695,7 @@ export default {
         "derivedAnswer": "16",
         "trustStoredAnswer": false
       },
-      "explanation": "折線圖提供序列資料，平均條件可回推遺失點。",
+      "explanation": "折線圖提供序列資料，平均條件可回推遺失點。 五日平均十六代表總和八十，四個已知值十、十八、十六、二十合為六十四，缺值為十六；代回後總和及平均皆一致。",
       "steps": [
         "由平均求總和。",
         "加總已知四點。",
@@ -715,7 +723,7 @@ export default {
           "reason": "20 會使平均 16.8。"
         }
       ],
-      "misconceptionTarget": "把鄰點平均直接當缺值",
+      "misconceptionTarget": "把鄰點平均直接當缺值 直接取缺值兩側十八與十的平均，沒有使用題目給定的五日平均。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -733,7 +741,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f44dee39b74933a15ef089b8bb7b152f77d156a4c2df1ad77065067875e2346c"
+      "contentSha256": "9d7d875fa087c2ccd4dd46dcbe77fe700d927db5c6e6a5d8195000b49e93a87b"
     },
     {
       "questionId": "u09-s004-v008",
@@ -760,7 +768,7 @@ export default {
         "derivedAnswer": "兩組最後相同，但甲波動較大",
         "trustStoredAnswer": false
       },
-      "explanation": "折線比較不能只看交會點，也要看整段變動。",
+      "explanation": "折線比較不能只看交會點，也要看整段變動。 兩組末期都為二十五，但甲的最大最小差十，乙只有二，故甲波動較大；末點相同不代表中間過程、範圍或各期高低相同。",
       "steps": [
         "比較各期數值。",
         "計算兩組範圍。",
@@ -788,7 +796,7 @@ export default {
           "reason": "甲平均 25，乙平均 25。"
         }
       ],
-      "misconceptionTarget": "只看最後交會便認為過程相同",
+      "misconceptionTarget": "只看最後交會便認為過程相同 只看到最後交會在二十五，就宣稱兩組整段走勢與波動完全相同。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -806,7 +814,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7b74ee4031d143a4cdf61b014fbc850ae301c47db8088ca7e79b4d22e661b6fa"
+      "contentSha256": "93ee82efe85a847b2d591deb2477f9ca9038401b40d6dcf044bbd7019e8b2d24"
     },
     {
       "questionId": "u09-s004-v009",
@@ -833,7 +841,7 @@ export default {
         "derivedAnswer": "5",
         "trustStoredAnswer": false
       },
-      "explanation": "橫座標 40 是組中點，縱座標才是待求次數。",
+      "explanation": "橫座標 40 是組中點，縱座標才是待求次數。 已知縱座標四、九、七合計二十，總次數二十五尚缺五；橫座標四十已由組中點指定，因此遺漏點只能是四十、五。",
       "steps": [
         "加總已知縱座標。",
         "由總次數扣除。",
@@ -861,7 +869,7 @@ export default {
           "reason": "25-(4+9+7)=5。"
         }
       ],
-      "misconceptionTarget": "把組中點當缺次數",
+      "misconceptionTarget": "把組中點當缺次數 把橫座標四十當成待求次數，沒有由縱座標合計回推缺值。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -879,7 +887,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b2c3e1464bb16e23c3623ec0a5781065dc2dcc00fc0a596f61dc2defb613b8ad"
+      "contentSha256": "d7f192a88f002c7ae91ce30d2d54c003575cf8e91951f1ad967b67af6230dc24"
     },
     {
       "questionId": "u09-s004-v010",
@@ -906,7 +914,7 @@ export default {
         "derivedAnswer": "12 時",
         "trustStoredAnswer": false
       },
-      "explanation": "公告只適用已測資料點，不能由連線任意推測未測時刻。",
+      "explanation": "公告只適用已測資料點，不能由連線任意推測未測時刻。 四個已測值逐一與三十五比較，只有十二時的四十二超過門檻；折線穿越門檻只表示兩測點間可能曾通過，不能新增一個精確測值。",
       "steps": [
         "標出門檻 35。",
         "比較四個測值。",
@@ -934,7 +942,7 @@ export default {
           "reason": "12 時已超過。"
         }
       ],
-      "misconceptionTarget": "把連線經過門檻當成額外測值",
+      "misconceptionTarget": "把連線經過門檻當成額外測值 把折線與門檻的交點當成額外量測時刻，或把十四時三十誤判超標。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -952,7 +960,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "aa054f786f3365a0141a2a8831aef1c5a515677a91b96c018593105a6e92088a"
+      "contentSha256": "f4b67a725431947787daec989fc7cfb7d568b7b0d8498d5f9b45ed6c7edf51f3"
     },
     {
       "questionId": "u09-s004-v011",
@@ -979,7 +987,7 @@ export default {
         "derivedAnswer": "不正確，第四週仍比第一週低 5 個百分點",
         "trustStoredAnswer": false
       },
-      "explanation": "百分比指標的直接差應稱百分點，避免與相對變化率混淆。",
+      "explanation": "百分比指標的直接差應稱百分點，避免與相對變化率混淆。 第四週五十七雖比第三週五十五回升，但仍比第一週六十二低五個百分點，所以尚未恢復；百分點差不同於以第一週為分母的相對降幅。",
       "steps": [
         "讀第一週與第四週。",
         "相減 62-57。",
@@ -1007,7 +1015,7 @@ export default {
           "reason": "同一指標可直接比較。"
         }
       ],
-      "misconceptionTarget": "只看最近一期回升就宣稱完全恢復",
+      "misconceptionTarget": "只看最近一期回升就宣稱完全恢復 只見最近一期上升便說完全恢復，沒有把第四週直接與第一週比較。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -1025,7 +1033,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "6b4809dc84d458e557b6f8c6d4c953fca0d3ef1f89136d53be13c80e74265d41"
+      "contentSha256": "200ad03e656ccee1e59feeb8a90b27bcdf1123c077282a7f025d57d7398e392d"
     },
     {
       "questionId": "u09-s004-v012",
@@ -1052,7 +1060,7 @@ export default {
         "derivedAnswer": "合理，甲增加 4 個百分點，乙增加 1 個百分點",
         "trustStoredAnswer": false
       },
-      "explanation": "比較『水準』與『改善幅度』是不同問題。",
+      "explanation": "比較『水準』與『改善幅度』是不同問題。 改善幅度看同一路線前後差，甲由八十八到九十二增加四個百分點，乙由九十四到九十五只增加一個百分點；乙的最終水準較高是另一問題。",
       "steps": [
         "分別算兩線前後差。",
         "統一以百分點表達。",
@@ -1080,7 +1088,7 @@ export default {
           "reason": "比較準點率變化不一定需要乘客數。"
         }
       ],
-      "misconceptionTarget": "用最後高低代替改善幅度",
+      "misconceptionTarget": "用最後高低代替改善幅度 以四月準點率乙較高取代前後差比較，混淆水準與改善幅度。",
       "prerequisiteCheck": {
         "skillIds": [
           "bar-chart-text"
@@ -1098,7 +1106,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a9da663d00aec4c2072d2be22825d73aba968e80c4039cee0e1d72f70aaa6ca0"
+      "contentSha256": "55f419c6a4a4dd1ee05a09657379b98729d9756a251905384bceea2f46b186e9"
     }
   ],
   "constructedResponses": [
@@ -1121,7 +1129,8 @@ export default {
       "standardSolution": [
         "週二-週一=+3°C；週三-週二=-2°C；週四-週三=+4°C；週五-週四=-1°C。",
         "最大上升為週三到週四，上升4°C。",
-        "全距=25-20=5°C。"
+        "全距=25-20=5°C。",
+        "四段變化量正負方向均以後日減前日定義；最大上升四度與全距五度分別回答相鄰變化及五日整體跨度，兩者不可混為同一統計量。"
       ],
       "alternativeMethod": "可在折線各線段旁標+3、-2、+4、-1後比較。",
       "reasoningSteps": [
@@ -1166,7 +1175,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "a0c820995d9c5f6acdd63074e0119666218943e4fbbea5852506022da1d9c7fe"
+      "contentSha256": "dbaa2292d721b365eb1d53436ce53cea6c3852a5676a89a505fe0bec3be97611",
+      "commonErrors": [
+        "把前日減後日而顛倒所有升降符號，導致最大上升區段判錯。",
+        "用週四到週三的四度當全距，沒有以五日最大二十五減最小二十。"
+      ]
     },
     {
       "questionId": "u09-s004-cr002",
@@ -1187,7 +1200,8 @@ export default {
       "standardSolution": [
         "總次數=2+7+11+6+4=30。",
         "最高次數11對應組中點30，所以該組為次數最多組。",
-        "圖上的30是該組區間的組中點，用來畫點；組內資料可分布在該區間，不必全部等於30。"
+        "圖上的30是該組區間的組中點，用來畫點；組內資料可分布在該區間，不必全部等於30。",
+        "最高點的橫座標三十只標示該組區間中心，十一筆資料可分散在中心兩側；折線保留組次數，不提供每筆原始觀測值，因此不能推出十一筆全等於三十。"
       ],
       "alternativeMethod": "若組距為10，可說明組中點30通常代表25至未滿35一組；即使未給端點，也能確定30只是代表位置。",
       "reasoningSteps": [
@@ -1232,7 +1246,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "45dfbcbf570d1f186a63a37d359bf9fadb81eabf0436d4bc84edd6f448edf1be"
+      "contentSha256": "e1ce1b6dc2cc048efa729c3f71e360016278e301a7e2d942a71f01acff63578b",
+      "commonErrors": [
+        "把橫座標組中點十、二十等加入縱座標次數，錯算總資料筆數。",
+        "看到最高點位於三十就宣稱十一筆資料都等於三十，忽略分組已隱去組內細節。"
+      ]
     }
   ],
   "semanticReviews": [

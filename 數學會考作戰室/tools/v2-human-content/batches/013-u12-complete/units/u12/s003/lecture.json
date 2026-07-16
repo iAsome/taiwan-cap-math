@@ -9,8 +9,8 @@
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
-    "能分解 x^2+bx+c。",
-    "能分解 ax^2+bx+c 且 a 不等於 1。",
+    "能分解 x²+bx+c。",
+    "能分解 ax²+bx+c 且 a 不等於 1。",
     "能利用常數正負判斷因數符號。",
     "能計算交叉乘積之和。",
     "能交換因數位置並辨認等價答案。"
@@ -43,7 +43,7 @@
   "notation": [
     {
       "symbol": "(px+q)(rx+s)",
-      "meaning": "展開為 prx^2+(ps+qr)x+qs。"
+      "meaning": "展開為 prx²+(ps+qr)x+qs。"
     },
     {
       "symbol": "ps+qr",
@@ -54,17 +54,18 @@
     "十字交乘不是畫圖猜答案，而是同時滿足 pr=a、qs=c、ps+qr=b。",
     "常數為正時 q、s 同號；中間係數為正則多半同正，為負則同負。",
     "常數為負時 q、s 異號，交叉和的符號取決於絕對值較大的交叉乘積。",
-    "候選配對找到後必須展開，因為首尾乘積正確仍可能中間項錯。"
+    "候選配對找到後必須展開，因為首尾乘積正確仍可能中間項錯。",
+    "十字交乘的本質是把候選兩因式完整展開並比對三個係數。若寫成甲倍未知數加常數與乙倍未知數加常數相乘，首項乘積要等於二次項係數，常數乘積要等於常數項，而兩個交叉乘積的和才是一次項係數。常數正負可先縮小同號或異號的候選，但因數放在哪一個括號仍會改變交叉和；找到組合後必須展開，並再檢查各因式是否還含公因數。"
   ],
   "formalDefinitions": [
     {
       "name": "十字交乘條件",
-      "statement": "若 ax^2+bx+c=(px+q)(rx+s)，則 pr=a、qs=c、ps+qr=b。"
+      "statement": "若 ax²+bx+c=(px+q)(rx+s)，則 pr=a、qs=c、ps+qr=b。"
     }
   ],
   "formulas": [
     {
-      "formula": "(px+q)(rx+s)=prx^2+(ps+qr)x+qs",
+      "formula": "(px+q)(rx+s)=prx²+(ps+qr)x+qs",
       "conditions": [
         "p、q、r、s 為選定因數"
       ],
@@ -106,40 +107,44 @@
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "x^2+9x+20",
+      "prompt": "x²+9x+20",
       "solutionSteps": [
         "4·5=20。",
         "4+5=9。"
       ],
-      "answer": "(x+4)(x+5)"
+      "answer": "(x+4)(x+5)",
+      "why": "首項係數為一，所以只需找兩個常數乘積二十且和為九；四與五同時符合。展開兩因式時交叉項為四倍與五倍未知數，正好合成九倍。"
     },
     {
       "exampleId": "L2",
-      "prompt": "x^2-2x-15",
+      "prompt": "x²-2x-15",
       "solutionSteps": [
         "3·(-5)=-15。",
         "3+(-5)=-2。"
       ],
-      "answer": "(x+3)(x-5)"
+      "answer": "(x+3)(x-5)",
+      "why": "常數負十五表示兩數異號，正三與負五的乘積為負十五、和為負二；展開時正三倍與負五倍未知數合為負二倍，三項都吻合。"
     },
     {
       "exampleId": "L3",
-      "prompt": "6x^2+11x+3",
+      "prompt": "6x²+11x+3",
       "solutionSteps": [
-        "首項 3x·2x=6x^2。",
+        "首項 3x·2x=6x²。",
         "交叉和 9x+2x=11x。",
         "常數 1·3=3。"
       ],
-      "answer": "(3x+1)(2x+3)"
+      "answer": "(3x+1)(2x+3)",
+      "why": "首項非首一時不能只加常數，必須把三倍與二倍未知數交叉乘常數；九倍與二倍未知數相加成十一倍，同時首項乘積六、常數乘積三。"
     },
     {
       "exampleId": "L4",
-      "prompt": "8y^2-2y-3",
+      "prompt": "8y²-2y-3",
       "solutionSteps": [
         "交叉和 4y-6y=-2y。",
         "首末項也吻合。"
       ],
-      "answer": "(4y-3)(2y+1)"
+      "answer": "(4y-3)(2y+1)",
+      "why": "四倍未知數乘二倍未知數得到八倍平方，負三與正一得到負三；交叉積正四倍與負六倍未知數相加為負二倍，故符號與三個係數都正確。"
     }
   ],
   "difficultyConnections": {
@@ -229,5 +234,5 @@
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "270f3f0159421ed0d1cd4408a461a37ebcdadb9803f9e30c1175e2a55b18244f"
+  "contentSha256": "3f4e2e7856a1b01bd3d378d7fecf33d3f1a2291ebcc6f55a313a807ac079fd0f"
 }

@@ -1,0 +1,1508 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": [
+    "s013",
+    "s014",
+    "s015",
+    "s016",
+    "s017",
+    "s018"
+  ],
+  "mc": [
+    {
+      "questionId": "u16-s013-v001",
+      "expectedContentSha256": "11ee93790326dcbf2934718288171ed34a4f65d5144658d74259bbed316e2efb",
+      "appendText": {
+        "explanation": "48+67=115，所以外角為 115°。 外角等於兩個不相鄰內角和，48°+67°=115°。 指定的是延長邊形成的外角，遠內角唯一。"
+      },
+      "appendArray": {
+        "steps": [
+          "48+67=115，所以外角為 115°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v002",
+      "expectedContentSha256": "48d5fa917501e7134b70784aef8ae2b3a96a76b4033c20a6c805bbd721b3d7b0",
+      "appendText": {
+        "explanation": "x=132−57=75。 另一遠內角為 132°−57°=75°。 兩遠內角皆為三角形內角，75° 合理且唯一。 角度精確。 基礎題，單步反算。 由外角反求遠內角",
+        "misconceptionTarget": "誤認兩個遠內角相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "x=132−57=75。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v003",
+      "expectedContentSha256": "27ae532eb03f51983f1a018e3d389239a555f4593d994c20229ac5619f198ab7",
+      "appendText": {
+        "explanation": "設相鄰內角為A，另外兩個內角為B、C。由A+B+C=180°且外角+A=180°，相減得外角=B+C。 外角等於兩個不相鄰內角和。"
+      },
+      "appendArray": {
+        "steps": [
+          "設相鄰內角為A，另外兩個內角為B、C。由A+B+C=180°且外角+A=180°，相減得外角=B+C。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v004",
+      "expectedContentSha256": "46c9a76dc43bd0ed011b75bb01c1cacce299aeecc3935b9b34bf90a76f1512bc",
+      "appendText": {
+        "explanation": "移項得 x=30；此時外角 128°，遠內角 50°、78°，相加吻合。 4x+8=(x+20)+(2x+18)，故 x=30。 代回後兩遠內角和等於外角，且第三內角為 52°。 角度代回皆為正且精確。",
+        "misconceptionTarget": "把常數移項錯誤。"
+      },
+      "appendArray": {
+        "steps": [
+          "移項得 x=30；此時外角 128°，遠內角 50°、78°，相加吻合。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v005",
+      "expectedContentSha256": "671bd7454f7245ed643c6a01b8176b2d5acf462fe549ee4563518d7063a5f4e7",
+      "appendText": {
+        "explanation": "底角為 68°，指定外角為 112°；亦可用遠內角 44°+68°。 底角=(180°−44°)÷2=68°；相鄰外角=180°−68°=112°。 題幹明定外角位於底角頂點，兩種算法一致。"
+      },
+      "appendArray": {
+        "steps": [
+          "底角為 68°，指定外角為 112°；亦可用遠內角 44°+68°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v006",
+      "expectedContentSha256": "ab5d827839572cef30316056b8ddcbe068fc17a9ba269057c61b6e8b6f055423",
+      "appendText": {
+        "explanation": "遠內角 A、B 的和為 104°，解得 x=23，再得 A=69°。 3x+(x+12)=104，4x=92，x=23，故 ∠A=69°。 代回 B=35°，69+35=104，第三內角 76°。 所有角為度且為正。 標準題，列式後仍須回答正確目標。 利用外角方程求指定角",
+        "misconceptionTarget": "把常數移項方向弄反。"
+      },
+      "appendArray": {
+        "steps": [
+          "遠內角 A、B 的和為 104°，解得 x=23，再得 A=69°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v007",
+      "expectedContentSha256": "72c41567578634cb70b1db6efbf1ad8fa3c8b48f5c25950a28048cb4a9bbac9f",
+      "appendText": {
+        "explanation": "121+146=267，360−267=93。 三角形一組外角和為 360°，第三角=360°−121°−146°=93°。 題幹指定同向外角，避免一頂點兩個外角的歧義。"
+      },
+      "appendArray": {
+        "steps": [
+          "121+146=267，360−267=93。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v008",
+      "expectedContentSha256": "5192affa910ce415f8830a30e65d21ddd7e73c06711bb51a2a38b9881e6467bf",
+      "appendText": {
+        "explanation": "(150+18)÷2=84，較大遠內角是 84°。 設 B=y，A=y+18，2y+18=150，y=66，故 A=84°。 84°與66°均為正，和為150°；相鄰內角為30°。 角度精確。 進階題，外角定理後需解和差。",
+        "misconceptionTarget": "將和與差直接相加。"
+      },
+      "appendArray": {
+        "steps": [
+          "(150+18)÷2=84，較大遠內角是 84°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v009",
+      "expectedContentSha256": "c91600d27b57f14bef90cdd81e1907da93fe93069c9bdec7858286a02586b59c",
+      "appendText": {
+        "explanation": "若 E=A+B 且 A,B>0，則 E>A 且 E>B，原說法正確。"
+      },
+      "appendArray": {
+        "steps": [
+          "若 E=A+B 且 A,B>0，則 E>A 且 E>B，原說法正確。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v010",
+      "expectedContentSha256": "427fa2420faabdab0a69845724dbce99163927af9e701b2ac3519d3b3caaefdb",
+      "appendText": {
+        "explanation": "38+52=90，因此應量到直角 90°。 指定外角=38°+52°=90°。 情境指定延長線與斜桿之間外角，無另一個反角。",
+        "misconceptionTarget": "只取一個遠內角。"
+      },
+      "appendArray": {
+        "steps": [
+          "38+52=90，因此應量到直角 90°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v011",
+      "expectedContentSha256": "e9def1ddb6ff938ed642829738dd2322b9a985eab80dff7e111127a51aa418d9",
+      "appendText": {
+        "explanation": "126−49=77，且49+77=126。 另一遠內角=126°−49°=77°。 外轉角限定小於180°，排除取234°反角。 角度精確。 素養題，必須將步道轉向語言轉成外角定理。"
+      },
+      "appendArray": {
+        "steps": [
+          "126−49=77，且49+77=126。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-v012",
+      "expectedContentSha256": "9ce7db71cb67a6e1b58871ec4db387d32e67bc9b6b322e97c0c6dd3d09d4fb86",
+      "appendText": {
+        "explanation": "所有基本角度關係無法同時滿足，因此不存在符合全部標示的三角形。"
+      },
+      "appendArray": {
+        "steps": [
+          "所有基本角度關係無法同時滿足，因此不存在符合全部標示的三角形。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v001",
+      "expectedContentSha256": "ba0993e11a0abc5eaa18899e138a49fe3e2bfc7b7e8ab5094fab170134c69fe3",
+      "appendText": {
+        "explanation": "9為最長邊，因此其對角最大。 同一三角形中，最大角對最長邊，所以對邊長為9。",
+        "misconceptionTarget": "最短邊對最小角。"
+      },
+      "appendArray": {
+        "steps": [
+          "9為最長邊，因此其對角最大。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v002",
+      "expectedContentSha256": "93aa0fca4cb6fe25f02f327a77ad1bdcb4251883521e092269af84c4db93d407",
+      "appendText": {
+        "explanation": "BC對A且為最長，所以最大角是A。 最長邊 BC=11 對著 ∠A，因此 ∠A 最大。 頂點與對邊對應明確，只有A符合。"
+      },
+      "appendArray": {
+        "steps": [
+          "BC對A且為最長，所以最大角是A。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v003",
+      "expectedContentSha256": "ee39b2f36b4f2ed42479fc2d312ade7cc33f63391724ec16458db0610bd65f6a",
+      "appendText": {
+        "explanation": "71°最大，所以PR最長。 最大角是∠Q=71°，其對邊PR最長。 三角和為180°且大小互異。 角度精確。 基礎題，由最大角找最長邊。"
+      },
+      "appendArray": {
+        "steps": [
+          "71°最大，所以PR最長。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v004",
+      "expectedContentSha256": "c1feafd41e49faf5efd8f4e738d5945cb69fffdd1779876024545bc3c591fcfc",
+      "appendText": {
+        "explanation": "AB=BC=9<AC=10，故∠A=∠C<∠B。 代入得AB=9、AC=10、BC=9；AC最長，所以∠B最大，AB=BC，所以∠C=∠A。 相等關係與嚴格大小均已顯示，答案唯一。",
+        "misconceptionTarget": "把最長邊所對角排成最小。"
+      },
+      "appendArray": {
+        "steps": [
+          "AB=BC=9<AC=10，故∠A=∠C<∠B。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v005",
+      "expectedContentSha256": "e349d47250f4bb604de1ed4aee5d2fc363dc38b520dc642fd05e5cf4c7cb4a69",
+      "appendText": {
+        "explanation": "A>B即BC>AC，所以必有BC>AC。 ∠A的對邊BC大於∠B的對邊AC，因此BC>AC=9。 只主張由已知必然推出的關係。 長度同單位。",
+        "misconceptionTarget": "與A>B的對邊關係相反。"
+      },
+      "appendArray": {
+        "steps": [
+          "A>B即BC>AC，所以必有BC>AC。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v006",
+      "expectedContentSha256": "498735e9aeace3e92a4ee4ff614c52fc00d0c939d3f71834fa828125435189e9",
+      "appendText": {
+        "explanation": "a<c<b 對應 A<C<B。 同一三角形中邊越長對角越大，順序保持為A<C<B。 三邊互異，角序唯一。"
+      },
+      "appendArray": {
+        "steps": [
+          "a<c<b 對應 A<C<B。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v007",
+      "expectedContentSha256": "553562f8cf8d763a5fac0009a5fb92de79261e7dc7e00ce2326daddc1e344e13",
+      "appendText": {
+        "explanation": "固定兩邊已迫使B<C，故整數BC的可能數為0。 ∠B的對邊AC=10，∠C的對邊AB=13；必有∠B<∠C，與題設相反，所以沒有任何BC。"
+      },
+      "appendArray": {
+        "steps": [
+          "固定兩邊已迫使B<C，故整數BC的可能數為0。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v008",
+      "expectedContentSha256": "418a9271882c61396a51e6c0c09743769a4d4212d0220fa5acaa64dcabeea5e8",
+      "appendText": {
+        "explanation": "角序2<3<4，故邊序BC<CA<AB。 A<B<C，所以其對邊 BC<CA<AB。 比值正且總和可縮放為180°，角序唯一。 不需實際算角度。 進階題，需用標準對邊記號轉換。",
+        "misconceptionTarget": "把最小兩邊交換。"
+      },
+      "appendArray": {
+        "steps": [
+          "角序2<3<4，故邊序BC<CA<AB。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v009",
+      "expectedContentSha256": "055fe9303e8f97705d680e14619b2388913f216e6ff487bfbce037f1caf4f1d1",
+      "appendText": {
+        "explanation": "3<x<9，正整數有5個。 x為唯一最短邊，所以x<9；又9+x>12，所以x>3。整數4、5、6、7、8共5個。 端點3、9均不可取，列舉完整。"
+      },
+      "appendArray": {
+        "steps": [
+          "3<x<9，正整數有5個。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v010",
+      "expectedContentSha256": "ebac91961057812e0c8adb0e1d9ee66c28eb51ae02d2e9eac878914421d5efa7",
+      "appendText": {
+        "explanation": "同一三角形內，30 m邊對最大角。 30 m 是最長邊，所對開口角最大。"
+      },
+      "appendArray": {
+        "steps": [
+          "同一三角形內，30 m邊對最大角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v011",
+      "expectedContentSha256": "2957e61b0929bfb9c19eac23357aebc3148a9984c5810646b83a74783b7c39ea",
+      "appendText": {
+        "explanation": "6.1最大且為BC，所以最大角在A。 最長邊BC=6.1 km 對著A，因此A為最大內角頂點。 資料大小互異，最大角唯一。",
+        "misconceptionTarget": "三邊不相等，最大角唯一。"
+      },
+      "appendArray": {
+        "steps": [
+          "6.1最大且為BC，所以最大角在A。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-v012",
+      "expectedContentSha256": "f14ee28e174a8b2b3356388298123b6c3e7754001098daa40de7b14d0d24f835",
+      "appendText": {
+        "explanation": "因2.4<2.6，X不可能是最大角。 2.6 m是最長邊，其對角最大；X對邊2.4 m不是最長。 三長度可成三角形且最長邊唯一。"
+      },
+      "appendArray": {
+        "steps": [
+          "因2.4<2.6，X不可能是最大角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v001",
+      "expectedContentSha256": "22896c1bdf7139a7d06fbaae1559ac648bd4bb82cbaec75ce03e4e338d1ba63d",
+      "appendText": {
+        "explanation": "不論邊數，一組同方向外角和皆為360°。 沿多邊形繞行一周，方向總共轉360°。"
+      },
+      "appendArray": {
+        "steps": [
+          "不論邊數，一組同方向外角和皆為360°。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s015-v002",
+      "expectedContentSha256": "3f2024ae898d24c14b316a599ce122451f5ede578351ec46ab156722292a024c",
+      "appendText": {
+        "explanation": "每個外角為40°。 360°÷9=40°。 正九邊形保證九個外角相等。 角度精確。 基礎題，單步平均。 由外角和求單一外角 正多邊形各外角相等",
+        "misconceptionTarget": "誤用正十邊形內角。"
+      },
+      "appendArray": {
+        "steps": [
+          "每個外角為40°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v003",
+      "expectedContentSha256": "101e597117bf3e582d3051ee23de1ff61b9976d9173d5b589f65e244a51db082",
+      "appendText": {
+        "explanation": "360÷30=12，所以是正十二邊形。 邊數n=360°÷30°=12。 30°能整除360°，正多邊形存在。 邊數為整數。 基礎題，直接反算邊數。 由單一外角反求邊數",
+        "misconceptionTarget": "把角度值當邊數。 誤認外角36°。"
+      },
+      "appendArray": {
+        "steps": [
+          "360÷30=12，所以是正十二邊形。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v004",
+      "expectedContentSha256": "e3db5ceeb2c2a8cd2100cd2dfbbbb888ba69665c44180e0446ded74b9a6a5b0f",
+      "appendText": {
+        "explanation": "360−296=64。 已知和=68+75+92+61=296，缺角=360−296=64°。 五角均按同向選取，缺角唯一且為正。 角度精確。 標準題，需正確加總與補缺。 利用外角和補缺角",
+        "misconceptionTarget": "只給出已知四角和。"
+      },
+      "appendArray": {
+        "steps": [
+          "360−296=64。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v005",
+      "expectedContentSha256": "93a75d2ec4e76adf81fd6e0a9ef9971a2cebf302dc6cfbb8c09d6cad40fff290",
+      "appendText": {
+        "explanation": "每個外角30°，共有12個。 外角=180°−150°=30°，邊數=360°÷30°=12。 正多邊形條件使內角一致。 角度精確，邊數整數。 標準題，兩步轉換。",
+        "misconceptionTarget": "用180−165的錯誤外角。 誤認外角36°。"
+      },
+      "appendArray": {
+        "steps": [
+          "每個外角30°，共有12個。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v006",
+      "expectedContentSha256": "c44589c488421ff8f3bb740778ced231e547c6978e4f238c3266d9755fe74ddd",
+      "appendText": {
+        "explanation": "最小外角對一份，為20°。 比值總和18，最小角=360°÷18=20°。 所有外角均小於180°，可構成凸多邊形角資料。 角度精確。 標準題，使用比例分配固定總和。",
+        "misconceptionTarget": "把比值總和誤算成36。"
+      },
+      "appendArray": {
+        "steps": [
+          "最小外角對一份，為20°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v007",
+      "expectedContentSha256": "39a456bf09e20aaa66cd24e03089dff8eec51bd01eb9a049651b001c012c57c2",
+      "appendText": {
+        "explanation": "280+4×20=360，所以有11邊。 7×40°=280°，剩80°；80°÷20°=4個，總邊數7+4=11。 外角皆正且小於180°，總和條件唯一決定個數。 角度精確，個數為整數。",
+        "misconceptionTarget": "只把剩餘80°除以40°。"
+      },
+      "appendArray": {
+        "steps": [
+          "280+4×20=360，所以有11邊。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v008",
+      "expectedContentSha256": "53a030b1e0de2dc6b1df0e42d684b758b5b46a16d1eca5b4cf8e94b8332c87fc",
+      "appendText": {
+        "explanation": "五個外角為30、60、60、90、120，最大內角150°。 外角和12x=360，x=30。最大內角對最小外角x，為180−30=150°。 外角皆介於0與180，凸性一致。",
+        "misconceptionTarget": "這是最小外角，不是最大內角。"
+      },
+      "appendArray": {
+        "steps": [
+          "五個外角為30、60、60、90、120，最大內角150°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v009",
+      "expectedContentSha256": "5e6c6db14d5a9c2e17296b05cee297b22eb335547a0aee4542afa5f6a4e6edbf",
+      "appendText": {
+        "explanation": "錯在把每一內角命名為外角，正確外角為24°。 2340÷15求得的是平均內角；外角=180−156=24，也等於360÷15。"
+      },
+      "appendArray": {
+        "steps": [
+          "錯在把每一內角命名為外角，正確外角為24°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v010",
+      "expectedContentSha256": "78a1fb9e133e9a1d77a51f6e4be50c13ab865c5a18f38de5d558dffd3c133f48",
+      "appendText": {
+        "explanation": "50+72+65+48+55=290，剩70。 一圈總轉向360°；已知和290°，最後轉70°。 順時針同向和一圈條件排除正負號歧義。 角度以度表示且精確。"
+      },
+      "appendArray": {
+        "steps": [
+          "50+72+65+48+55=290，剩70。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v011",
+      "expectedContentSha256": "85c4345ba7c1823000f59ecceebf3671166d2d6225d99e5be0a49753b7a9fc58",
+      "appendText": {
+        "explanation": "360÷24=15，所以有15段。 每次轉24°，一圈360°，次數=360÷24=15；路口數等於道路段數。"
+      },
+      "appendArray": {
+        "steps": [
+          "360÷24=15，所以有15段。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-v012",
+      "expectedContentSha256": "d65275521891cc0330aab9f3c1c1816b7af1c55a4e7bf14b163bf2669aabb9d9",
+      "appendText": {
+        "explanation": "282+82=364，不是360，因此方向多轉4°而不能依指定五段閉合。 前四角和282°，閉合一圈須360°，故最後應78°；設82°會多轉4°。",
+        "misconceptionTarget": "邊長相等不能修正總轉向錯誤。"
+      },
+      "appendArray": {
+        "steps": [
+          "282+82=364，不是360，因此方向多轉4°而不能依指定五段閉合。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v001",
+      "expectedContentSha256": "323544be388c333ed069ef3a450242b8b1c6cb54b8ee40e16818ace0119c9d21",
+      "appendText": {
+        "explanation": "只有『頂點連到對邊中點』符合定義。 中線的兩端是一個頂點與其對邊中點。"
+      },
+      "appendArray": {
+        "steps": [
+          "只有『頂點連到對邊中點』符合定義。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v002",
+      "expectedContentSha256": "844c506cc5fae044bee63e2880578b7597f5e2ae67421dd8c705238e50988532",
+      "appendText": {
+        "explanation": "BD=DC=7 cm。 中點把BC分成相等兩段，BD=14÷2=7 cm。 D為中點且在BC上，兩半唯一。 單位為cm，答案精確。 基礎題，單一步驟中點計算。",
+        "misconceptionTarget": "把半段關係反向。"
+      },
+      "appendArray": {
+        "steps": [
+          "BD=DC=7 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v003",
+      "expectedContentSha256": "40b3677c716fe45dc96a44170782f7e31eed67c4ae6c058a3106de71b05672df",
+      "appendText": {
+        "explanation": "共有3條中線。 三角形有三個頂點，每個頂點各決定一條中線。"
+      },
+      "appendArray": {
+        "steps": [
+          "共有3條中線。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v004",
+      "expectedContentSha256": "41c07860639e59ce5c6c9770c38b2f2cdff0f4a2816433e11ab3ed24fdd87f8c",
+      "appendText": {
+        "explanation": "AG是兩份，8÷2=4，所以GD為一份4 cm。 重心G把中線分成AG：GD=2：1，因此GD=8÷2=4 cm。 A為頂點、D為對邊中點，比例方向明確。",
+        "misconceptionTarget": "誤認G為AD中點。 把AG視為短段。"
+      },
+      "appendArray": {
+        "steps": [
+          "AG是兩份，8÷2=4，所以GD為一份4 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v005",
+      "expectedContentSha256": "1e3cd1eb001d43d707043bf232d47fdb319bedc480caa023e45c5f8c44c3a18d",
+      "appendText": {
+        "explanation": "PG=10 cm，GM=5 cm，合為15 cm。 PG佔整條中線的2/3，所以15×2/3=10 cm。 G為重心使比例固定，方向清楚。 單位cm，答案精確。 標準題，從部分比轉為整體分率。",
+        "misconceptionTarget": "把比例當倍數放大整條。"
+      },
+      "appendArray": {
+        "steps": [
+          "PG=10 cm，GM=5 cm，合為15 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v006",
+      "expectedContentSha256": "a3ef0c9b5e435897752f30d19212189482fbe2da7c807af0e6fbb81477f0a5f9",
+      "appendText": {
+        "explanation": "兩面積相等，所以為18 cm²。 BD=DC，兩小三角形對同一直線BC有相同高，因此面積相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩面積相等，所以為18 cm²。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v007",
+      "expectedContentSha256": "1fc599e05a555a07865f81f1bba91951ff47fa42e93f8147bf87ec1472b4a30d",
+      "appendText": {
+        "explanation": "總長30 cm。 頂點到G各為完整中線的2/3，總和=(12+15+18)×2/3=45×2/3=30 cm。 三條中線可各自使用相同比例，線段不需相連。",
+        "misconceptionTarget": "誤取每條的一半。"
+      },
+      "appendArray": {
+        "steps": [
+          "總長30 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v008",
+      "expectedContentSha256": "f75eb2764ac91f8a2460808c8d8c0df5ca0d259f0b23717882e6767323f2d428",
+      "appendText": {
+        "explanation": "GD=5、AG=10，AD=15 cm。 設GD=k，AG=2k，差為k=5；AD=3k=15 cm。 比例方向由A是頂點決定。 單位cm，精確。 進階題，從比例差反求全長。 由差值重建2：1分段 A為頂點，D為BC中點",
+        "misconceptionTarget": "把差當整條。 誤設比例3：1。"
+      },
+      "appendArray": {
+        "steps": [
+          "GD=5、AG=10，AD=15 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v009",
+      "expectedContentSha256": "b683ff1448c21e6a5c6f7b45aa9f4ca08c84b60cdc5d4b941d4b5291b97e454e",
+      "appendText": {
+        "explanation": "GE=3可獨立推出BG=6與BE=9；AG=6只是無關的另一條中線資料。 E是CA中點，所以BE為中線；G為重心，BG=2GE=6，故BE=6+3=9。"
+      },
+      "appendArray": {
+        "steps": [
+          "GE=3可獨立推出BG=6與BE=9；AG=6只是無關的另一條中線資料。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v010",
+      "expectedContentSha256": "df077bf6fdb4ce9ebf35648545c2bb62b6c910ba6ba4f8bcdc49fdf820605ea5",
+      "appendText": {
+        "explanation": "支點置於重心即可平衡理想均勻薄板。"
+      },
+      "appendArray": {
+        "steps": [
+          "支點置於重心即可平衡理想均勻薄板。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s016-v011",
+      "expectedContentSha256": "f3fe95b374c68d1cb9a23748d812bbbd3d225ee14b8c2146cb3e5793a12a41a2",
+      "appendText": {
+        "explanation": "每片3.6 m²。 中線兩側三角形共高且底相等，面積各為7.2÷2=3.6 m²。 忽略耗損使兩片面積和保持7.2。",
+        "misconceptionTarget": "誤以為三條中線分成三份。"
+      },
+      "appendArray": {
+        "steps": [
+          "每片3.6 m²。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-v012",
+      "expectedContentSha256": "dc9b6ccaf5f25129fd0a229bd96c14e32b5f30b09a5131434def3a1a0eb8bab3",
+      "appendText": {
+        "explanation": "從A量1.2 m到G。 AG=2/3 AD=2/3×1.8=1.2 m。 題幹明定從A量起，排除0.6 m。 單位m，精確到0.1 m。 素養題，安裝方向決定選用比例的哪一段。 把2：1比例轉成安裝距離 G為展示板三條中線交點",
+        "misconceptionTarget": "誤認重心是中點。"
+      },
+      "appendArray": {
+        "steps": [
+          "從A量1.2 m到G。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v001",
+      "expectedContentSha256": "14ed94b9ed507457e8ec9cbf3859bc32a6d9d43c3653d3064985232f01165ca8",
+      "appendText": {
+        "explanation": "AH符合頂點到對邊所在直線垂直的定義。 由頂點A到對邊BC所在直線的垂直線段AH就是高。"
+      },
+      "appendArray": {
+        "steps": [
+          "AH符合頂點到對邊所在直線垂直的定義。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v002",
+      "expectedContentSha256": "b6208f48f1e31ef247c15d1f782d6a0385e29f532a912756dabe85ed70e5baaa",
+      "appendText": {
+        "explanation": "任意非退化三角形都有3條高。 三個頂點各對應一條高，所以共有3條。"
+      },
+      "appendArray": {
+        "steps": [
+          "任意非退化三角形都有3條高。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v003",
+      "expectedContentSha256": "fa279d6a4be5e2b8ef1f2980620d5913fe0971834155c324ba7efb791473d402",
+      "appendText": {
+        "explanation": "兩股AC、BC互相垂直，因此各自也是一條高。 AC垂直BC；以BC為底時AC是高，以AC為底時BC是高。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩股AC、BC互相垂直，因此各自也是一條高。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v004",
+      "expectedContentSha256": "ffaec1a268e2f1890d53a9ed3a5235170bf2c59207f14665dfe4cc54ea1f9c1f",
+      "appendText": {
+        "explanation": "12×7/2=42。 面積=12×7÷2=42 cm²。 底高對應明確且精確。 底、高為cm，面積用cm²。 標準題，直接使用面積公式但需注意對應。 用底與高計算面積"
+      },
+      "appendArray": {
+        "steps": [
+          "12×7/2=42。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v005",
+      "expectedContentSha256": "720b929bc676c279d577467b21d388e1bc6d48f6bd93795ea447fb140881095f",
+      "appendText": {
+        "explanation": "h=12 cm；驗算9×12÷2=54。 54=9×h÷2，所以h=54×2÷9=12 cm。 正高為12且驗算吻合。 答案長度cm，面積cm²。 標準題，從面積逆推高。 由面積反求高 面積=底×高÷2",
+        "misconceptionTarget": "誤認底與高相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "h=12 cm；驗算9×12÷2=54。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v006",
+      "expectedContentSha256": "7f25edfc9cee7c9ef9f86a33ff53a9724ce3389a4925bca1e65dfe7d0585fb59",
+      "appendText": {
+        "explanation": "高是到『對邊所在直線』，不要求垂足在線段內。"
+      },
+      "appendArray": {
+        "steps": [
+          "高是到『對邊所在直線』，不要求垂足在線段內。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v007",
+      "expectedContentSha256": "d1aab58ff6153ac459c5a92be489ee6104844662b9f9f25d03c7726fe18ff006",
+      "appendText": {
+        "explanation": "兩面積各為7.5×8÷2=30 cm²，差0。 BD=DC=7.5 cm，兩小三角形對BC所在直線的高都為8 cm，面積相等，差0。",
+        "misconceptionTarget": "算出整個三角形面積。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩面積各為7.5×8÷2=30 cm²，差0。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v008",
+      "expectedContentSha256": "22a9cf33813b4c6c037676e5047f6434bc49322d1a02cf9fcbb0023324771e2c",
+      "appendText": {
+        "explanation": "6最短故對應高最大，10最長故高最小。 同一面積S下h=2S÷底，底越短，高越長。 三邊互異，排序唯一。"
+      },
+      "appendArray": {
+        "steps": [
+          "6最短故對應高最大，10最長故高最小。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v009",
+      "expectedContentSha256": "2291a1be5fb77396b64dc122e3aaed08929b73c47111b260c7007c84d303c0be",
+      "appendText": {
+        "explanation": "底與高反比，a:b=6:9=2:3。 a=72÷9=8，b=72÷6=12，所以a:b=8:12=2:3。 正底長唯一且兩種面積算式一致。 長度單位相同，比例無單位。 進階題，需跨兩組底高比較。",
+        "misconceptionTarget": "把底與高同比。"
+      },
+      "appendArray": {
+        "steps": [
+          "底與高反比，a:b=6:9=2:3。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v010",
+      "expectedContentSha256": "6cca370bcbce44c8e84f30c66389e079ef74d06a81359c9729c652c88286e225",
+      "appendText": {
+        "explanation": "高為牆上垂直高度4.8 m。",
+        "misconceptionTarget": "這是梯長，非對地面底的高。"
+      },
+      "appendArray": {
+        "steps": [
+          "高為牆上垂直高度4.8 m。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v011",
+      "expectedContentSha256": "7149865a9036c0a53f7d90bffdd667ee98e6233fb212127473d9483c5d1dc275",
+      "appendText": {
+        "explanation": "所需垂直距離1.5 m。 h=2×1.35÷1.8=2.7÷1.8=1.5 m。 答案代回精確符合面積。 面積m²除以底m得到m。 素養題，材料裁切需要的是指定底的垂直距離。",
+        "misconceptionTarget": "忘記面積公式要乘2反算。"
+      },
+      "appendArray": {
+        "steps": [
+          "所需垂直距離1.5 m。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-v012",
+      "expectedContentSha256": "47b3c90535848bcafdd2b7c9f3301ba367ecb723b2944d16bb125a683dddfdfb",
+      "appendText": {
+        "explanation": "兩個底高乘積都是260，除2後皆130 m²。 甲=20×13÷2=130；乙=26×10÷2=130，面積相等。 每組對應關係明確，答案包含正確數值。",
+        "misconceptionTarget": "漏除以2，雖比較相等但面積值錯。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩個底高乘積都是260，除2後皆130 m²。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v001",
+      "expectedContentSha256": "3c8d994ccd3e246b6f4628f51feef1cb9d96a3a0d8223ece7d94b965302d73ad",
+      "appendText": {
+        "explanation": "70>50，框架可閉合成三角形。 最短兩邊和30+40=70>50，所以可形成非退化三角形。 嚴格大於成立，並非退化。",
+        "misconceptionTarget": "條件是小於另外兩邊和。"
+      },
+      "appendArray": {
+        "steps": [
+          "70>50，框架可閉合成三角形。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s018-v002",
+      "expectedContentSha256": "e09b4ac3c7d84641b27dd798eefdcd8c4abd5ed6b7e77a8a135171c5fb304320",
+      "appendText": {
+        "explanation": "另外兩角也各60°。 等邊三角形三角皆為60°。 等邊條件保證唯一。 角度精確。 基礎題，直接使用等邊性質。"
+      },
+      "appendArray": {
+        "steps": [
+          "另外兩角也各60°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v003",
+      "expectedContentSha256": "5b48fe24af159bfb9d86643ce81edf0389e39eb455b212c89ea0f2273f40be85",
+      "appendText": {
+        "explanation": "該支架桿為中線。 頂點連到對邊中點的線段是中線。 只給中點條件，不能額外推論垂直或平分角。"
+      },
+      "appendArray": {
+        "steps": [
+          "該支架桿為中線。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v004",
+      "expectedContentSha256": "3f5bd27df9e690ad7ddbade3d4133c34b49ca3e5a8740485ff9555e867c0fb62",
+      "appendText": {
+        "explanation": "文字列出的先後不同不影響邊長配對，兩玻璃全等。"
+      },
+      "appendArray": {
+        "steps": [
+          "文字列出的先後不同不影響邊長配對，兩玻璃全等。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s018-v005",
+      "expectedContentSha256": "1e353c24b54a2b03eaeb0f1288f6d36a7cf89aa0f1912706db6ceeed226f91ad",
+      "appendText": {
+        "explanation": "它通過底邊中點並垂直底邊。 等腰三角形頂角的角平分線同時是底邊中線與高線。",
+        "misconceptionTarget": "底的一半是3 m，不是支撐桿長。"
+      },
+      "appendArray": {
+        "steps": [
+          "它通過底邊中點並垂直底邊。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v006",
+      "expectedContentSha256": "841dcb404238e7ae680e70a80a46fc18f0b862e856ad1c772e4059bac97f68da",
+      "appendText": {
+        "explanation": "AG=120 m。 AG佔中線的2/3，180×2/3=120 m。 起點A明確，排除60 m。 單位m，答案精確。 標準題，將重心比例轉成步行距離。 使用重心比例處理路線距離",
+        "misconceptionTarget": "這是G到對邊中點距離。"
+      },
+      "appendArray": {
+        "steps": [
+          "AG=120 m。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s018-v007",
+      "expectedContentSha256": "8cf991ad3dc603e83742eaeebfc3d55e076f99761e5e882db20deca9c16c0d5d",
+      "appendText": {
+        "explanation": "11<x<19，共7個整數。 x需為唯一最長邊，所以x>11；又8+11>x，所以x<19。整數12至18，共7種。"
+      },
+      "appendArray": {
+        "steps": [
+          "11<x<19，共7個整數。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v008",
+      "expectedContentSha256": "b50346af75b1a77a727040ed1887d3832ee9ab66084d5d74e338a38ee2bf3c98",
+      "appendText": {
+        "explanation": "兩遠內角為48°、80°，和128°。 3+5=8份，每份128÷8=16°，較小角3份=48°。 48與80皆小於128且第三內角52°，三角形合理。 角度精確。 進階題，結合角定理與比例。",
+        "misconceptionTarget": "把兩角平均。 選到較大角。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩遠內角為48°、80°，和128°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v009",
+      "expectedContentSha256": "63c5c112d0bf97b71c2ad84875f646b1d247867508c4cdacef03ab9dd1b2ea0b",
+      "appendText": {
+        "explanation": "數值吻合，存在以該底為底的等腰三角形符合圖面。",
+        "misconceptionTarget": "已知底與面積即可求對應高。"
+      },
+      "appendArray": {
+        "steps": [
+          "數值吻合，存在以該底為底的等腰三角形符合圖面。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v010",
+      "expectedContentSha256": "e534a9fcc37779ffe8bf109d7033bda222d6539f4a5414ad198fa17447e48c2f",
+      "appendText": {
+        "explanation": "左右半部依SSS全等，可互為鏡像。"
+      },
+      "appendArray": {
+        "steps": [
+          "左右半部依SSS全等，可互為鏡像。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-v011",
+      "expectedContentSha256": "012f6da4920532ef5c5ac6bc2ace51bfbe26f7458e682f23b0ea597820053c4b",
+      "appendText": {
+        "explanation": "三角形存在，且AB唯一最長，所以C唯一最大；規範不符合。"
+      },
+      "appendArray": {
+        "steps": [
+          "三角形存在，且AB唯一最長，所以C唯一最大；規範不符合。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s018-v012",
+      "expectedContentSha256": "d5b6740ac5c46f502e74e823c5322ef8a2c8b7c4c410eb91c38bb7ebc67e1246",
+      "appendText": {
+        "explanation": "沒有等腰條件，不能把垂足與中點視為同一點。"
+      },
+      "appendArray": {
+        "steps": [
+          "沒有等腰條件，不能把垂足與中點視為同一點。"
+        ]
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u16-s013-cr001",
+      "expectedContentSha256": "b8c594851766badaeb9590561fc531e370cc12c39d1f315c7485d6e1ce56646e",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可先由C=60°，再用三內角和列(2x+10)+(x+20)+60=180。 x=30；A=70°、B=50°、C=60°。 D在BC延長方向明確，∠ACD與C內角互補。 (2x+10)+(x+20)=120，3x+30=120，x=30。 ∠A=70°、∠B=50°。 ∠C=180°−120°=60°，驗算70+50+60=180。",
+          "由外角定理，120°就是∠A與∠B的和，而不是第三個內角。先解參數再代回，得到70°與50°；C點內角和120°外角互補為60°，三角和180°完成雙重檢查。"
+        ],
+        "commonErrors": [
+          "把外角當第三內角、方程錯誤或無有效作答。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s013-cr002",
+      "expectedContentSha256": "862647defb8ce8c9380655f6e9c3e42d08b2a7d9d55800233e5bdc43472f2065",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可用反證：若E≤A，配合E=A+B會推出B≤0，違反三角形內角為正。 E=A+B且A,B>0，所以E>A、E>B。 討論非退化三角形，內角嚴格為正。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-cr001",
+      "expectedContentSha256": "9dd915138cd90b13f2bbab01360eec6f3f557dddef488cebf8b16231d45ab0b4",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可先按邊AB<BC<CA，再把每邊替換成其對角。 ∠C<∠A<∠B。 三邊互異，因此三角大小也互異。 ∠A對BC=12，∠B對CA=15，∠C對AB=9。 因9<12<15，所以∠C<∠A<∠B。",
+          "比較前先把每一邊換成對面頂點：BC對A、CA對B、AB對C。由9＜12＜15可知最短AB對最小角C、最長CA對最大角B，因此唯一順序為C＜A＜B。"
+        ],
+        "reasoningSteps": [
+          "最後以獨立結果核對：∠C<∠A<∠B。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s014-cr002",
+      "expectedContentSha256": "3bca168d04b7cc9549e7912977151b7f9ea0ad7e5a71e5223c2c774ac4f2045f",
+      "appendArray": {
+        "fullCreditSolution": [
+          "也可先列整數使b正：x≥2，再與x<3交集。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-cr001",
+      "expectedContentSha256": "b75f978dd016f52c61029a07bcd4a84263267b1b2ae051fd20d543016c1c8a5f",
+      "appendArray": {
+        "fullCreditSolution": [
+          "也可先設六角為k、2k、2k、3k、4k、6k，列18k=360。 20°、40°、40°、60°、80°、120°，角度範圍符合凸性。 角度條件是必要且與題設相容；題目不要求實際尺規構造。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s015-cr002",
+      "expectedContentSha256": "e2f3bd6895e101ceae85ed27cdbdfa5460d23d4257567f98a6e383d72a76cf97",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可先算15×24=360驗證，再計算周長。 15段相容；總路程1200 m。 正多邊形每頂點一次轉向，頂點數等於邊數。 一圈同方向總轉向360°，所需頂點數=360÷24=15，與15段相容。"
+        ],
+        "reasoningSteps": [
+          "最後以獨立結果核對：15段相容；總路程1200 m。"
+        ],
+        "commonErrors": [
+          "使用內角156°作轉向總和、判斷不相容或無作答。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s016-cr001",
+      "expectedContentSha256": "85abe49c0647efdb92c157344e9accb067adeec4f2d3f89c6771074f8f3fda6b",
+      "appendArray": {
+        "fullCreditSolution": [
+          "也可用AG=2/3 AD，得AD=14×3/2=21，再求GD=7。 GD=7 cm，AD=21 cm。 A為頂點端，故AG是較長的兩份。 AG：GD=2：1，所以GD=14÷2=7 cm。 AD=AG+GD=14+7=21 cm。",
+          "重心不是中線中點，而是把頂點端分成兩份、中點端分成一份。AG為14公分代表兩份，所以每份7公分即GD；完整中線AD共有三份，長21公分，且14＋7驗算一致。"
+        ],
+        "reasoningSteps": [
+          "最後以獨立結果核對：GD=7 cm，AD=21 cm。"
+        ],
+        "commonErrors": [
+          "把比例方向顛倒、得到GD=28且未檢查，或無作答。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s016-cr002",
+      "expectedContentSha256": "e29fcb61755abc3ca8bdf23801baab39cba1e1e2d6eb3f1d6b4ec0279484609f",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可用面積分率表示：第二次兩片各為原面積1/4，另一片為1/2。 第二次兩片各6 m²，另一片12 m²。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s017-cr001",
+      "expectedContentSha256": "3576acc1d7d207982540e04fa40b6207534cb53c0e0a59740bd0b60632739667",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可算h=2S÷b=192÷16=12。 高12 m；垂足在延長線時公式仍適用。 高指非負垂直距離，不以有向長度處理。"
+        ],
+        "reasoningSteps": [
+          "最後以獨立結果核對：高12 m；垂足在延長線時公式仍適用。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s017-cr002",
+      "expectedContentSha256": "424fa45337f267a7a2c1b6060396a52182db6705ee035bb55c27e1313a859f97",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可設a=4k、b=3k，由7k=28得k=4。 a=16 cm，b=12 cm，面積72 cm²。 a、b為正邊，比例與和給唯一正解。 由a×9÷2=b×12÷2，得9a=12b，所以a:b=4:3。 共7份=28，a=16 cm、b=12 cm。 面積=16×9÷2=72 cm²，亦等於12×12÷2。",
+          "同一三角形面積固定，底與對應高的乘積相同。由9a＝12b化成a比b為4比3，再用總長28公分求得每份4公分，所以a為16、b為12，兩組底高都算出72平方公分。"
+        ],
+        "commonErrors": [
+          "把底與高同比得3：4、忽略同一面積或無作答。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s018-cr001",
+      "expectedContentSha256": "230b8cd6c1fc75e281c263b243e9bec801b123ea0dfe3c404d834e4293b47337",
+      "appendArray": {
+        "fullCreditSolution": [
+          "可先以等腰三角形三線合一直接得D為中點，再計算。"
+        ],
+        "reasoningSteps": [
+          "最後以獨立結果核對：支柱為底邊中線，兩段各1.5 m。"
+        ]
+      },
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      }
+    },
+    {
+      "questionId": "u16-s018-cr002",
+      "expectedContentSha256": "a14d1f229edd170c9017e53fd92c98a73d2bc5bd06cab89ad2cbee110923fc5d",
+      "appendArray": {
+        "fullCreditSolution": [
+          "若規格只能取整公尺，可把15 m改為13 m，或把6 m改為8 m等可行方案；修正須重新驗證。"
+        ],
+        "reasoningSteps": [
+          "最後以獨立結果核對：路線多轉10°，最後角可改60°；支架6+8<15不可行，需縮短長桿至<14 m或加長短桿。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u16-s013-lecture-r1",
+      "expectedContentSha256": "eb1ba2fd2dbd25a27e5e07b2d3bf6e81aab5792fde302ca761d1df212f4d196c",
+      "appendArray": {
+        "learningOutcomes": [
+          "能同時使用外角定理、鄰補角與正角範圍交叉驗算未知角及不可能條件。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "三角形兩個不相鄰內角為 45°、68°，求相對外角。",
+            "solutionSteps": [
+              "外角等於兩不相鄰內角和。",
+              "45°+68°=113°。",
+              "核對113°確實大於45°與68°兩個遠內角。"
+            ],
+            "answer": "113°。",
+            "why": "外角定理直接把指定外角寫成兩個遠內角的和；相加後再檢查113°分別大於45°與68°，可同時確認沒有誤取相鄰內角。 所得「113°。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "外角為 125°，其中一個不相鄰內角為 47°，求另一個。",
+            "solutionSteps": [
+              "另一角=125°−47°。",
+              "以47°＋78°＝125°代回外角定理驗算。",
+              "將「78°。」與原條件逐項核對。"
+            ],
+            "answer": "78°。",
+            "why": "已知外角是兩個遠內角的總和，所以用125°扣掉47°即可找另一角；代回相加仍為125°，也確認78°是合理的正內角。 所得「78°。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "C 點外角為 140°，求 C 點內角。",
+            "solutionSteps": [
+              "內角與外角鄰補。",
+              "180°−140°=40°。",
+              "以40°＋140°＝180°檢查兩角為鄰補角。"
+            ],
+            "answer": "40°。",
+            "why": "C點內角與同頂點外角共用一邊，另外兩邊互為反向射線，因此兩角和固定為180°；這裡不需要誤用兩個遠內角相加。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "外角為 3x+10°，兩個不相鄰內角為 x+20°、x+30°，求 x。",
+            "solutionSteps": [
+              "3x+10=(x+20)+(x+30)。",
+              "3x+10=2x+50。",
+              "將x＝40代回，外角與兩個遠內角都等於130°。"
+            ],
+            "answer": "x=40。",
+            "why": "依外角定理列式後，左右各自整理才能正確移項；把x＝40代回可得外角130°，兩遠內角60°與70°，總和一致。 所得「x=40。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "某外角為 70°，一個不相鄰內角為 75°，條件可能嗎？",
+            "solutionSteps": [
+              "外角應大於每個不相鄰內角。",
+              "70°<75°，矛盾。",
+              "由70°不大於75°確認違反外角的正角性質。"
+            ],
+            "answer": "不可能。",
+            "why": "一個外角等於兩個正的遠內角之和，所以必須分別大於任一遠內角；70°反而小於75°，不可能補出另一個正內角。 所得「不可能。」也與題目所求及已知條件逐項相符。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s014-lecture-r1",
+      "expectedContentSha256": "8cc77b3cb6d75d349585deba89241fce5d353da71e0868d581eecd4dda240f80",
+      "appendArray": {
+        "learningOutcomes": [
+          "能先標出每個角的對邊，再把參數、整數或情境資料轉成唯一的邊角排序。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "△ABC 中 AB=5、BC=7、CA=9，將三角由大到小排列。",
+            "solutionSteps": [
+              "CA 最長，對 ∠B。",
+              "BC 次長，對 ∠A。",
+              "AB 最短，對 ∠C。",
+              "逐一核對CA、BC、AB的對角依序為B、A、C。"
+            ],
+            "answer": "∠B>∠A>∠C。",
+            "why": "邊角大小關係只能在同一三角形內使用，且必須看邊的對面頂點；CA、BC、AB由長到短，對角便依序是B、A、C。 所得「∠B>∠A>∠C。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "∠A=80°、∠B=60°、∠C=40°，排列三邊。",
+            "solutionSteps": [
+              "最大角 A 對 BC。",
+              "B 對 CA，C 對 AB。",
+              "以角與對邊配對表再次核對三組順序。"
+            ],
+            "answer": "BC>CA>AB。",
+            "why": "角度80°、60°、40°由大到小，而它們的對邊分別是BC、CA、AB；角愈大對邊愈長，因此得到唯一的邊長排序。 所得「BC>CA>AB。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "若 AB=AC，邊角關係給出什麼？",
+            "solutionSteps": [
+              "AB 對 ∠C，AC 對 ∠B。",
+              "相等邊對相等角。",
+              "確認相等的是AB與AC的對角C與B。"
+            ],
+            "answer": "∠B=∠C。",
+            "why": "AB與AC雖都鄰接頂點A，但比較時要看各自的對角；AB對C、AC對B，兩邊相等便推出兩個底角B、C相等。 所得「∠B=∠C。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "若 ∠A>∠C，哪一邊較長？",
+            "solutionSteps": [
+              "∠A 對 BC。",
+              "∠C 對 AB。",
+              "將A與C的對邊分別標成BC與AB後比較。"
+            ],
+            "answer": "BC>AB。",
+            "why": "大角對大邊的前提是角與其正對的邊一一配對；A對BC且C對AB，所以A大於C正好推出BC大於AB。 所得「BC>AB。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "三邊為 x+1、x+3、2x，且 x=4，最大角對哪邊？",
+            "solutionSteps": [
+              "邊長為 5、7、8。",
+              "最大角對長 8 的邊。",
+              "代回x＝4並檢查5、7、8能組成三角形。"
+            ],
+            "answer": "對應 2x 那條邊的角最大。",
+            "why": "先代入參數得到三邊5、7、8，再以最大值8判定其對角最大；同時5＋7＞8，資料確實形成非退化三角形。 所得「對應 2x 那條邊的角最大。」也與題目所求及已知條件逐項相符。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s015-lecture-r1",
+      "expectedContentSha256": "8cb9b33a8f0016055ba8670e740d5d34455717c5876af03c4d9dd20e323a3e3a",
+      "appendArray": {
+        "learningOutcomes": [
+          "能把行進轉向解讀為同方向外角，並以總轉向檢查路線能否閉合。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "凸七邊形同方向外角和是多少？",
+            "solutionSteps": [
+              "外角和與邊數無關。",
+              "以沿邊完整轉一周回到原方向作方向驗算。",
+              "將「360°。」與原條件逐項核對。"
+            ],
+            "answer": "360°。",
+            "why": "同方向選取每個頂點的轉角，相當於沿多邊形邊界完整轉一圈；最後方向與起始方向相同，累積轉向正好是360°。 所得「360°。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "正九邊形每個外角是多少？",
+            "solutionSteps": [
+              "360°÷9=40°。",
+              "以9個40°相加為360°檢查結果。",
+              "將「40°。」與原條件逐項核對。"
+            ],
+            "answer": "40°。",
+            "why": "正九邊形各外角相等，而同方向外角總和是360°；平均分成九份得到40°，並可用九角總和回代驗算。 所得「40°。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "正多邊形每個外角 24°，求邊數。",
+            "solutionSteps": [
+              "n=360÷24。",
+              "360÷24=15。",
+              "確認15個24°外角的總和正好為360°。"
+            ],
+            "answer": "15 邊形。",
+            "why": "正多邊形每個外角相同，邊數等於完整轉向360°可分成的24°份數；商為15且為整數，所以資料相容。 所得「15 邊形。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "某凸五邊形四個外角為 60°、80°、95°、70°，求第五個。",
+            "solutionSteps": [
+              "已知和為 305°。",
+              "第五角=360°−305°。",
+              "把55°加回四個已知外角，總和為360°。"
+            ],
+            "answer": "55°。",
+            "why": "先將四個同方向外角加成305°，再由一圈總轉向扣除；所得55°介於0°與180°之間，也符合凸多邊形外角範圍。 所得「55°。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "正多邊形每個內角 150°，求邊數。",
+            "solutionSteps": [
+              "外角=180°−150°=30°。",
+              "n=360°÷30°。",
+              "以12個30°外角相加為360°作最後驗算。"
+            ],
+            "answer": "12 邊形。",
+            "why": "每個內角150°與同頂點外角互補，所以外角是30°；一圈360°包含十二個30°轉角，故為正十二邊形。 所得「12 邊形。」也與題目所求及已知條件逐項相符。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s016-lecture-r1",
+      "expectedContentSha256": "5e2761def61fa30b25903dfdcd8f9fa668fc69accd1852d02c835f4bab9752c1",
+      "appendArray": {
+        "learningOutcomes": [
+          "能依中點、共高與重心分段關係處理中線長度、面積與平衡情境。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "M 為 BC 中點，判斷 AM。",
+            "solutionSteps": [
+              "A 是 △ABC 的頂點。",
+              "M 是對邊 BC 的中點。",
+              "確認AM的一端是頂點，另一端是對邊中點。"
+            ],
+            "answer": "AM 是 △ABC 的中線。",
+            "why": "中線的兩個必要位置條件缺一不可：必須從三角形頂點出發，並終止於該頂點對邊的中點；A與M正好符合。 所得「AM 是 △ABC 的中線。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "BC=18，M 為 BC 中點，求 BM、MC。",
+            "solutionSteps": [
+              "中點分成兩段相等。",
+              "18÷2=9。",
+              "以BM＋MC＝18且BM＝MC作雙重核對。"
+            ],
+            "answer": "BM=MC=9。",
+            "why": "中點把整段BC分成兩條相等線段，因此每段是18的一半；兩段各9相加仍為18，符合原線段長。 所得「BM=MC=9。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "AM 為中線，△ABC 面積 30，求 △ABM 面積。",
+            "solutionSteps": [
+              "BM=MC。",
+              "兩小三角形對直線 BC 高相同，面積相等。",
+              "以兩個小三角形同高且底長相等說明各占一半。"
+            ],
+            "answer": "15。",
+            "why": "中線使BM與MC等長，而ABM與ACM對同一直線BC的高相同；底、高條件相同，所以面積相等且各為30的一半。 所得「15。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "G 為重心，AG=12，求 GM。",
+            "solutionSteps": [
+              "AG:GM=2:1。",
+              "GM=12÷2。",
+              "以12＋6＝18確認完整中線AM的分段比例。"
+            ],
+            "answer": "6。",
+            "why": "重心把從頂點到中點的中線分成2比1，AG是兩份且GM是一份；AG為12時每份是6，方向也與頂點段較長相符。 所得「6。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "一線段由 A 連到 BC 且與 BC 垂直，能否必定稱中線？",
+            "solutionSteps": [
+              "垂直只表示高線。",
+              "還需垂足為 BC 中點。",
+              "只有垂足同時滿足BM＝MC時才可再稱為中線。"
+            ],
+            "answer": "不能，除非再知其平分 BC。",
+            "why": "垂直條件只能確定這條線是高線；中線另要求落點平分對邊，所以還必須取得兩段相等的中點證據。 所得「不能，除非再知其平分 BC。」也與題目所求及已知條件逐項相符。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s017-lecture-r1",
+      "expectedContentSha256": "ab5fc51af9e828504410d5b359b02da889962a17ba152782c6fdbe265efe4d02",
+      "appendArray": {
+        "learningOutcomes": [
+          "能以對邊所在直線定義高，處理垂足在延長線及底高反比的情形。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "D 在 BC 上且 AD⊥BC，判斷 AD。",
+            "solutionSteps": [
+              "A 是 △ABC 頂點。",
+              "AD 對邊 BC 所在直線垂直。",
+              "確認垂足D位在BC所在直線且AD與BC成直角。"
+            ],
+            "answer": "AD 是 BC 上的高線。",
+            "why": "高線的判定看的是頂點到對邊所在直線的垂直線段；A是頂點、D在BC上且AD垂直BC，三項位置條件都成立。 所得「AD 是 BC 上的高線。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "鈍角三角形從銳角頂點作高，垂足可能在哪裡？",
+            "solutionSteps": [
+              "對邊方向需延長。",
+              "垂足可落在對邊延長線上。",
+              "延長對邊後仍以直角符號核對垂直關係。"
+            ],
+            "answer": "可能在三角形外部。",
+            "why": "高是到對邊所在直線的垂直距離，不限垂足必須位於邊的線段內；鈍角三角形從銳角頂點作高時會落在延長線。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "底 12 公分、高 7 公分，求面積。",
+            "solutionSteps": [
+              "12×7÷2=42。",
+              "以42平方公分代回底乘高除以二驗算。",
+              "將「42 平方公分。」與原條件逐項核對。"
+            ],
+            "answer": "42 平方公分。",
+            "why": "面積必須使用互相對應的底12公分與垂直高7公分；乘積84再除以二得到42平方公分，單位也由長度轉為面積。 所得「42 平方公分。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "面積 54 平方公分，底 9 公分，求對應高。",
+            "solutionSteps": [
+              "h=2×54÷9。",
+              "108÷9=12。",
+              "將高12公分代回9×12÷2，恢復54平方公分。"
+            ],
+            "answer": "12 公分。",
+            "why": "由面積公式反求高時要先把面積乘二再除以底，不能漏掉二分之一；代回原式可確認12公分是對應垂直距離。 所得「12 公分。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "直角三角形兩股為 6、8，取 6 為底時對應高是多少？",
+            "solutionSteps": [
+              "兩股互相垂直。",
+              "另一股 8 是對底 6 的高。",
+              "確認底6與另一股8互相垂直，並算得面積24。"
+            ],
+            "answer": "8。",
+            "why": "直角三角形的兩股互相垂直，所以選一股6為底時，另一股8自然就是相對應的高；斜邊不具這個垂直條件。 所得「8。」也與題目所求及已知條件逐項相符。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s018-lecture-r1",
+      "expectedContentSha256": "140439055265d533a6a9ebd87e80f02385cd2e19d2c1953344e567d3aa28a64f",
+      "appendArray": {
+        "learningOutcomes": [
+          "能依序檢查結構存在性、邊角位置、單位與完整理由，排除情境中的多餘或矛盾資訊。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "兩條等長鋼索 AB、AC 固定在同一頂點 A，地面端 B、C。若頂角 50°，求兩個地面夾角。",
+            "solutionSteps": [
+              "AB=AC，故底角相等。",
+              "兩底角和 180°−50°=130°。",
+              "以65°＋65°＋50°＝180°驗算兩個底角。"
+            ],
+            "answer": "各 65°。",
+            "why": "兩條等長鋼索形成等腰三角形，地面兩角相等；扣除頂角後的130°平均分配成65°，三角和亦正確。 所得「各 65°。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "兩根桿長 6 公尺與 9 公尺，第三根為整數 x，要組三角支架。",
+            "solutionSteps": [
+              "|9−6|<x<9+6。",
+              "3<x<15。",
+              "逐一檢查4至14都同時大於3且小於15。"
+            ],
+            "answer": "x 可為 4 至 14 公尺的整數。",
+            "why": "第三邊必須嚴格介於兩已知邊的差與和之間；整數4至14都符合，端點3與15會退化成一直線而不可納入。 所得「x 可為 4 至 14 公尺的整數。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "三角形標誌底 80 公分、垂直高 45 公分，求面積。",
+            "solutionSteps": [
+              "單位均為公分。",
+              "80×45÷2=1800。",
+              "檢查80公分與45公分單位相同後再標平方公分。"
+            ],
+            "answer": "1800 平方公分。",
+            "why": "底與垂直高都以公分表示，可直接相乘再除以二；結果1800是面積，必須使用平方公分而不是公分。 所得「1800 平方公分。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "巡檢機器人沿正八邊形外框走一圈，每個轉向角相同，求每次轉角。",
+            "solutionSteps": [
+              "同向外角和 360°。",
+              "360°÷8=45°。",
+              "以八次45°轉向合計360°核對一圈方向。"
+            ],
+            "answer": "45°。",
+            "why": "沿正八邊形同方向行走一圈會累積360°轉向，八個頂點等分此總量；每次45°，且八次後回到原方向。 所得「45°。」也與題目所求及已知條件逐項相符。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "橋架左右兩半各形成直角三角形，斜桿等長且水平半跨等長，能否判定兩半全等？",
+            "solutionSteps": [
+              "兩者皆直角三角形。",
+              "斜邊與一股分別相等。",
+              "確認直角、斜邊與一股三組RHS條件皆為對應資料。"
+            ],
+            "answer": "能，用 RHS。",
+            "why": "左右兩半皆是直角三角形，等長斜桿是對應斜邊，水平半跨是對應的一股；三項位置正確，故可使用RHS判定全等。 所得「能，用 RHS。」也與題目所求及已知條件逐項相符。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -61,11 +61,9 @@ export default {
       }
     ],
     "conceptDevelopment": [
-      "列聯表的每個內格同時符合兩個分類。",
-      "列總與欄總是邊際總數，可由總計互相檢查。",
-      "比較兩組成功率時，分母分別是各組總數，不是全體總數。",
-      "群組大小不同時，次數較多不一定比例較高。",
-      "列聯表顯示的比例差可稱為樣本中的關聯；若非實驗設計，不能直接說某因素造成另一結果。"
+      "列聯表的內格同時符合列分類與欄分類，例如女生且喜歡音樂；列總與欄總是各方向的邊際總數，從列總相加或欄總相加都必須得到同一總計。補未知格時先鎖定同一列或同一欄，以邊際總數減去其餘內格，完成後再用另一方向加總交叉驗算。",
+      "比較群組表現時必須使用條件比例，每一組都以自己的列總或欄總作分母。群組人數不同時，事件人數較多不保證比例較高；合併比例則要先加事件人數與總人數再相除，不能直接平均兩個百分率，除非兩組分母相同。",
+      "列聯表可呈現樣本中兩個分類變項的關聯，例如一組的睡眠充足比例較高；但若資料不是隨機實驗且未控制其他因素，只能描述觀察到的比例差，不能把較高比例改寫成某因素必然造成另一結果。"
     ],
     "definitions": [
       {
@@ -128,28 +126,33 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "男生運動 22，男生總數 36。",
+        "prompt": "男生共 36 人，其中 22 人喜歡運動，求男生不喜歡運動人數。",
         "solution": [
-          "男生不運動=36-22=14。"
+          "男生列由喜歡與不喜歡運動兩格組成。",
+          "36-22=14。"
         ],
-        "answer": "14 人。"
+        "answer": "14 人。",
+        "why": "題目給的是男生列總與其中一格，用同列相減才會得到另一格；若拿全體總數或女生資料相減，就會混入不同分類而失去列聯表交集意義。"
       },
       {
         "id": "L2",
-        "prompt": "A 組 12/20 答對，B 組 15/30。",
+        "prompt": "A 組 20 人中 12 人答對，B 組 30 人中 15 人答對，哪組答對率高？",
         "solution": [
-          "A=60%，B=50%。"
+          "A 組為 12÷20=60%。",
+          "B 組為 15÷30=50%。"
         ],
-        "answer": "A 組率較高。"
+        "answer": "A 組答對率較高。",
+        "why": "十五人雖多於十二人，但兩組分母也不同；分別除以各組總數後才能建立公平比例基準，百分之六十與百分之五十顯示人數比較會得出相反判斷。"
       },
       {
         "id": "L3",
-        "prompt": "運動者睡眠充足 75%，無運動者 60%。",
+        "prompt": "運動者睡眠充足率 75%，未運動者 60%，能否說運動造成睡眠充足？",
         "solution": [
-          "樣本中有比例差。",
-          "未控制其他因素。"
+          "樣本中兩組比例相差 15 個百分點。",
+          "未說明隨機分派，也未控制作息等因素。"
         ],
-        "answer": "可說有關聯，不可僅此證明因果。"
+        "answer": "可描述樣本關聯，不可由此證明因果。",
+        "why": "比例差的算術結果成立，但列聯表沒有排除年齡、工作與健康狀況等共同因素；因果結論需要研究設計支持，不能只把觀察到的關聯換成造成。"
       }
     ],
     "commonMistakes": [
@@ -226,7 +229,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "273646c1a437d1a16e6839b009e60ac70e8bfe0814f4aba904471761fc7e1f2e"
+    "contentSha256": "df85a68161466b71bf9526ddd34df243c2d0e3207c0fb2e95b79d7280d2ffe27"
   },
   "mcQuestions": [
     {
@@ -254,7 +257,7 @@ export default {
         "derivedAnswer": "11 人",
         "trustStoredAnswer": false
       },
-      "explanation": "列聯表的交叉格代表同時符合兩個分類。",
+      "explanation": "列聯表的交叉格代表同時符合兩個分類。 交叉格必須同時符合女生與喜歡音樂兩個條件，沿女生列和音樂欄找到十一人；二十是女生列合計，不是指定交集。",
       "steps": [
         "找女生列。",
         "找音樂欄。",
@@ -282,7 +285,7 @@ export default {
           "reason": "女生列與音樂欄交會格是 11。"
         }
       ],
-      "misconceptionTarget": "只讀列總或相鄰格",
+      "misconceptionTarget": "只讀列總或相鄰格 只看女生總數或音樂欄其他格，沒有定位列欄交會處。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -300,7 +303,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2d1b8cc4fb2cf133f27a27b32f0e929933a7b71c2be250925330aac2b814b235"
+      "contentSha256": "c534f77dcb20ca893dd9a3109a4bf8a7e430b000971f265e2db5a5834bcf10f7"
     },
     {
       "questionId": "u09-s008-v002",
@@ -327,9 +330,11 @@ export default {
         "derivedAnswer": "20 人",
         "trustStoredAnswer": false
       },
-      "explanation": "列總等於該列各欄相加。",
+      "explanation": "列總等於該列各欄相加。 通過與未通過是甲組內互斥且完整的兩類，列合計為十五加五等於二十人；七十五是兩格相乘，沒有總人數意義。",
       "steps": [
-        "加同列兩格。"
+        "加同列兩格。",
+        "確認甲組只有通過與未通過兩類。",
+        "相加十五與五得到甲組總數二十人。"
       ],
       "optionAnalysis": [
         {
@@ -353,7 +358,7 @@ export default {
           "reason": "75 是相乘。"
         }
       ],
-      "misconceptionTarget": "只抄其中一格",
+      "misconceptionTarget": "只抄其中一格 只抄通過人數十五，或把兩個分類人數相乘。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -371,7 +376,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "701376fc80d7f16587d59ed0c1c790f59b8e555a3eee45e62f4c61cf32b964b3"
+      "contentSha256": "0b358db9356a45cd3185ee018fe2318d2820345e3cfd5a5f8e9aa93ed103b516"
     },
     {
       "questionId": "u09-s008-v003",
@@ -398,10 +403,11 @@ export default {
         "derivedAnswer": "11 人",
         "trustStoredAnswer": false
       },
-      "explanation": "由欄總補單一交叉格用減法。",
+      "explanation": "由欄總補單一交叉格用減法。 戴眼鏡欄總十八人由男生七人和女生人數組成，因此女生為十八減七等於十一；不能把欄總與男生再相加。",
       "steps": [
         "找欄總。",
-        "扣已知另一列。"
+        "扣已知另一列。",
+        "用戴眼鏡欄總十八扣除男生七，得到女生十一人。"
       ],
       "optionAnalysis": [
         {
@@ -425,7 +431,7 @@ export default {
           "reason": "25 是相加。"
         }
       ],
-      "misconceptionTarget": "把欄總直接填入",
+      "misconceptionTarget": "把欄總直接填入 把欄總十八當成女生人數，忽略其中已含七名男生。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -443,7 +449,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "69afec52463b2c2cc705cf9e1fb1c6c3b04b0ee67707572ff490b5369c1bc380"
+      "contentSha256": "59854a5ea2018cff97edb97482a294e62702b11dc1bd31086dc01869725884e9"
     },
     {
       "questionId": "u09-s008-v004",
@@ -470,10 +476,11 @@ export default {
         "derivedAnswer": "32 人",
         "trustStoredAnswer": false
       },
-      "explanation": "欄總要跨列加總同一類別。",
+      "explanation": "欄總要跨列加總同一類別。 全部男生是男生欄的甲班十四人與乙班十八人合計，共三十二人；女生十六與十二屬另一欄，不應納入。",
       "steps": [
         "辨識男生欄。",
-        "相加兩班數值。"
+        "相加兩班數值。",
+        "沿男生欄相加十四與十八，得到三十二人。"
       ],
       "optionAnalysis": [
         {
@@ -497,7 +504,7 @@ export default {
           "reason": "60 是全部學生。"
         }
       ],
-      "misconceptionTarget": "把列總當欄總",
+      "misconceptionTarget": "把列總當欄總 沿班級列加男女得到班級總數，沒有沿男生欄加總。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -515,7 +522,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4ab63da639749064c80bb40578d930daf2af4dee608e83bd3761fc70045e6d7d"
+      "contentSha256": "93ebdec8ce4f68b4e4aef5659105629ee62ff9383a079552de2fa11259aef512"
     },
     {
       "questionId": "u09-s008-v005",
@@ -542,7 +549,7 @@ export default {
         "derivedAnswer": "16 人",
         "trustStoredAnswer": false
       },
-      "explanation": "可由列總與欄總沿兩條路補值，結果應一致。",
+      "explanation": "可由列總與欄總沿兩條路補值，結果應一致。 先由全體八十扣喜歡運動五十得不喜歡運動三十人，再扣男生不運動十四人，剩下女生不運動十六人；列欄總數彼此一致。",
       "steps": [
         "求不運動總數。",
         "求男不運動。",
@@ -570,7 +577,7 @@ export default {
           "reason": "30 是不運動總數。"
         }
       ],
-      "misconceptionTarget": "只做一步相減",
+      "misconceptionTarget": "只做一步相減 只做其中一次補集，或把男生運動二十二直接從三十扣除。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -588,7 +595,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "816deba1f6a55015901239f83b90c3f354809260d4d5e68d2d2f612b880faf11"
+      "contentSha256": "534776628cb86282232c3f23bc2a3811cb5ae2e342dad27434184d8439cd3d8b"
     },
     {
       "questionId": "u09-s008-v006",
@@ -615,7 +622,7 @@ export default {
         "derivedAnswer": "A 組",
         "trustStoredAnswer": false
       },
-      "explanation": "比較組內比例時，分母要使用各組列總。",
+      "explanation": "比較組內比例時，分母要使用各組列總。 比較答對率要各用該組總人數當分母，甲組十二除二十為百分之六十，乙組十五除三十為百分之五十，所以甲組較高。",
       "steps": [
         "求 A 組內答對率。",
         "求 B 組內答對率。",
@@ -643,7 +650,7 @@ export default {
           "reason": "A 12/20=60%，B 15/30=50%。"
         }
       ],
-      "misconceptionTarget": "只看交叉格次數",
+      "misconceptionTarget": "只看交叉格次數 只比較答對人數十五大於十二，忽略兩組人數不同。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -661,7 +668,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b9f4c35f0beafbe2bc5f5c156f49fc1878ddd5eba1c6901389216bc700d09b9a"
+      "contentSha256": "b055a061be6c1b4de8757cbca09c5711e94c4597ffefb3048dd70223298a9bb7"
     },
     {
       "questionId": "u09-s008-v007",
@@ -688,7 +695,7 @@ export default {
         "derivedAnswer": "城市學生選公車的比例較高",
         "trustStoredAnswer": false
       },
-      "explanation": "列聯表比較常需在每個群組內標準化。",
+      "explanation": "列聯表比較常需在每個群組內標準化。 城市組公車比例為二十四除四十等於百分之六十，鄉鎮為三十除六十等於百分之五十；人數三十較大不代表組內比例較大。",
       "steps": [
         "選各地學生總數作分母。",
         "計算兩個比例。",
@@ -716,7 +723,7 @@ export default {
           "reason": "次數較多不保證比例較高。"
         }
       ],
-      "misconceptionTarget": "以人數高低代替比例",
+      "misconceptionTarget": "以人數高低代替比例 以搭公車人數三十對二十四直接比較，沒有除以各組總數。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -734,7 +741,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "309d4d1005eab61aff1f4a17de790dc9afde917b8d313c68fcfba1f6ccf91a8d"
+      "contentSha256": "538cb85ba30c536815144f3676256d9dbbdecb75d7a32d748cd003e057af690a"
     },
     {
       "questionId": "u09-s008-v008",
@@ -761,10 +768,11 @@ export default {
         "derivedAnswer": "18",
         "trustStoredAnswer": false
       },
-      "explanation": "列總限制直接決定缺格。",
+      "explanation": "列總限制直接決定缺格。 第二列由二十七與未知格組成且列總四十五，因此未知格等於四十五減二十七為十八；第一列的十八與十二不參與這次列合計。",
       "steps": [
         "建立 27+x=45。",
-        "相減求 x。"
+        "相減求 x。",
+        "列出二十七加未知數等於四十五，解得十八。"
       ],
       "optionAnalysis": [
         {
@@ -788,7 +796,7 @@ export default {
           "reason": "27+x=45，所以 x=18。"
         }
       ],
-      "misconceptionTarget": "抄已知格或加總錯誤",
+      "misconceptionTarget": "抄已知格或加總錯誤 把第一列數值混入第二列，或把列總四十五再相加。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -806,7 +814,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c3d1560d6946673510dd570f340e17261d9a705dae426088376722f89fd3baca"
+      "contentSha256": "506c8bb3cac396c7d04396c6d0c416840fc5bd9be00f1966c0263e534ab9fdb2"
     },
     {
       "questionId": "u09-s008-v009",
@@ -833,7 +841,7 @@ export default {
         "derivedAnswer": "在這份樣本中，有運動習慣者睡眠充足比例較高",
         "trustStoredAnswer": false
       },
-      "explanation": "列聯表能顯示關聯模式，但觀察資料不能直接證明因果。",
+      "explanation": "列聯表能顯示關聯模式，但觀察資料不能直接證明因果。 有運動組睡眠充足率為三十除四十等於百分之七十五，無運動組為二十四除四十等於百分之六十；表格支持樣本關聯，不能單憑觀察資料宣稱因果。",
       "steps": [
         "算兩組充足比例。",
         "比較。",
@@ -861,7 +869,7 @@ export default {
           "reason": "兩組比例不同，不能說完全無關。"
         }
       ],
-      "misconceptionTarget": "把關聯誤寫成因果",
+      "misconceptionTarget": "把關聯誤寫成因果 把較高比例直接解讀成運動必然造成睡眠充足。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -879,7 +887,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4e76c089402e3fe1a824151c45c95dd4966216ff9f3ce51a386651c56654c8c2"
+      "contentSha256": "215a3fd8209c86e02302681ac22afeeaca5691ca4db23107391dffebfc8d1aad"
     },
     {
       "questionId": "u09-s008-v010",
@@ -906,7 +914,7 @@ export default {
         "derivedAnswer": "午餐，65% 高於晚餐 55%",
         "trustStoredAnswer": false
       },
-      "explanation": "營運接受度應以各時段顧客為分母。",
+      "explanation": "營運接受度應以各時段顧客為分母。 接受度是各時段點套餐者占該時段顧客的比例，午餐五十二除八十為百分之六十五，晚餐六十六除一百二十為百分之五十五，故午餐較高。",
       "steps": [
         "分別計算套餐率。",
         "比較兩率。",
@@ -934,7 +942,7 @@ export default {
           "reason": "總人數少本身不是理由。"
         }
       ],
-      "misconceptionTarget": "只看銷售數量",
+      "misconceptionTarget": "只看銷售數量 只看晚餐套餐六十六人較多，沒有校正兩時段總人數。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -952,7 +960,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "27eb2c3ad92e0d172618d19147376daf3acee0944700c2aebbccee5fe2561117"
+      "contentSha256": "4c89bdab273acd65924ec98ce8e6fe0cc3cf6f0a9719957754983319b2f1503a"
     },
     {
       "questionId": "u09-s008-v011",
@@ -979,7 +987,7 @@ export default {
         "derivedAnswer": "報告不合理；吸菸者咳嗽率 40%，不吸菸者 20%",
         "trustStoredAnswer": false
       },
-      "explanation": "健康風險比較應以各暴露組人數為分母。",
+      "explanation": "健康風險比較應以各暴露組人數為分母。 吸菸組咳嗽二十除五十為百分之四十，不吸菸組三十除一百五十為百分之二十；後者人數雖多，組內風險反而較低，且資料仍不能證明因果。",
       "steps": [
         "辨認兩組分母。",
         "計算咳嗽率。",
@@ -1007,7 +1015,7 @@ export default {
           "reason": "觀察關聯不等於因果證明。"
         }
       ],
-      "misconceptionTarget": "以病例數取代組內風險",
+      "misconceptionTarget": "以病例數取代組內風險 混淆事件人數與條件比例，並把樣本關聯誇大為因果。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -1025,7 +1033,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "92ba42aea97524a7516cd097d7195b3e6b710daeacbba85373dc8a2b7d920424"
+      "contentSha256": "f6af15498ff29a07a30ea03b91de660a7a9504e5233f07468aa63388d58ff282"
     },
     {
       "questionId": "u09-s008-v012",
@@ -1052,7 +1060,7 @@ export default {
         "derivedAnswer": "90/150=60%",
         "trustStoredAnswer": false
       },
-      "explanation": "合併列聯表比例需加總次數與分母，不是平均組別百分比。",
+      "explanation": "合併列聯表比例需加總次數與分母，不是平均組別百分比。 七年級支持七十人、八年級支持二十人，共九十人；合併分母是一百五十人，所以支持率為百分之六十，不能把兩個比例不加權平均。",
       "steps": [
         "加總支持人數。",
         "加總樣本數。",
@@ -1080,7 +1088,7 @@ export default {
           "reason": "40% 只屬八年級。"
         }
       ],
-      "misconceptionTarget": "直接平均不同大小群組的百分比",
+      "misconceptionTarget": "直接平均不同大小群組的百分比 忽略兩年級樣本數不同，直接平均百分之七十與四十。",
       "prerequisiteCheck": {
         "skillIds": [
           "cumulative-frequency"
@@ -1098,7 +1106,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "777d55e06fd0d8aa53eb94656cde879ebdb8282c920088cb1b6945318ed420b8"
+      "contentSha256": "f9b1264f4f27a79bc1ae13bd63e017a341ad3eebd7d8069ff65901bf5469687f"
     }
   ],
   "constructedResponses": [
@@ -1167,7 +1175,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "cf42a9f3460e33bdbeb88e74e8adf481b3f78a9ebc7969a4c9c56d667886fb79"
+      "contentSha256": "8e60d89ea471a1e61d91ca9a0bc70725007b74ad40be30741ba03d4840d41604",
+      "commonErrors": [
+        "列總與欄總交叉加總時重複計數，導致兩種方式算出的總計不一致。",
+        "比較社團比例時用全班六十人作兩組共同分母，沒有各用該列三十人。"
+      ]
     },
     {
       "questionId": "u09-s008-cr002",
@@ -1234,7 +1246,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "0724c5377b664d15351424eaead4f811bc9ed66d35465470d1be76c0b665358b"
+      "contentSha256": "2819f008d258a241752af11a9816c62f7d4fe4dbcf504a6bc3381415b7e643e1",
+      "commonErrors": [
+        "把百分之七十五與百分之六十直接平均成百分之六十七點五，忽略兩組人數不同。",
+        "看到相差十五個百分點便寫成運動造成改善，沒有區分觀察關聯與因果結論。"
+      ]
     }
   ],
   "semanticReviews": [

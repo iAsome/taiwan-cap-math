@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "每一條直徑都是弦，但不是每一條弦都通過圓心。",
     "在同一圓或等圓中，等弦所對的劣弧相等，所對圓心角也相等。",
-    "弦越接近直徑通常越長；正式比較時使用所對圓心角或弧，而不只看圖。"
+    "弦越接近直徑通常越長；正式比較時使用所對圓心角或弧，而不只看圖。",
+    "等弦、等劣弧與等圓心角的雙向關係都以同一圓或等圓為前提；跨不同半徑的圓比較時，即使弦長相同，所對角度仍可能不同。"
   ],
   "formalDefinitions": [
     {
@@ -114,6 +115,11 @@
       "step": 4,
       "instruction": "依等量關係求未知值。",
       "check": "完成此步後，確認仍在「弦與弧」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "由求得的弦、劣弧或圓心角反推另外兩項，確認等量關係一致。",
+      "check": "是否先確認同圓或等圓，並且比較的是對應劣弧？"
     }
   ],
   "workedExamples": [
@@ -125,7 +131,8 @@
         "又通過圓心。"
       ],
       "answer": "AB 是直徑，也是弦。",
-      "level": "basic"
+      "level": "basic",
+      "why": "AB 的兩端都在圓周上，所以先符合弦的定義；它又通過圓心，進一步成為直徑。直徑是特殊的弦，不能把包含關係反向解讀。"
     },
     {
       "exampleId": "s005-L2",
@@ -135,7 +142,8 @@
         "∠COD=70°。"
       ],
       "answer": "70°。",
-      "level": "standard"
+      "level": "standard",
+      "why": "AB、CD 位於同一圓且等長，所對圓心角必相等；因此角 AOB 為 70° 時，角 COD 也為 70°，不需要再套圓周角的一半關係。等弦性質已足夠，無須先求弧度數。"
     },
     {
       "exampleId": "s005-L3",
@@ -145,7 +153,8 @@
         "PQ=RS。"
       ],
       "answer": "兩弦等長。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "同一圓中的兩段劣弧度數都為 120°，對應圓心角相等，進而對應弦也等長；同圓條件確保兩段弧使用相同半徑比較。"
     },
     {
       "exampleId": "s005-L4",
@@ -155,7 +164,8 @@
         "較大劣弧對較長弦。"
       ],
       "answer": "AB>CD。",
-      "level": "connection"
+      "level": "connection",
+      "why": "同一圓內半徑固定，較大的圓心角截得較大的劣弧，也對應較長的弦；因此角 AOB 大於角 COD 時，弦 AB 必大於弦 CD。"
     }
   ],
   "difficultyConnections": {
@@ -205,7 +215,7 @@
     {
       "figureId": "u19-s005-fig001",
       "purpose": "同一圓中畫出等長弦 AB、CD，弦上有相同刻痕，並連接圓心到四端點。",
-      "altText": "同一圓中畫出等長弦 AB、CD，弦上有相同刻痕，並連接圓心到四端點。，不可按比例目測。"
+      "altText": "同一圓中畫出等長弦 AB、CD，弦上有相同刻痕，並連接圓心到四端點，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -240,5 +250,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "fd503dc370f5331ad85bbaa2e0743b7363f1b06b410ff6b911e4419dbcb4c524"
+  "contentSha256": "47867eb4efa73efcf06a43735ffe662704d2f2b2d0536e17a0fe1c6c2e90d645"
 }

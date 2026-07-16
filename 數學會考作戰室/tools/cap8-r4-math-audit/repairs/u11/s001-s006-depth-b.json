@@ -1,0 +1,28 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1","unitId":"u11","batch":"012-u11-complete","skills":["s002"],
+  "mc":[
+    {"questionId":"u11-s002-v001","expectedContentSha256":"852b99a06d91d4ac9fbf8d98f10b92ef0ab2cea2bd082c4c7b6c693573470f78","appendText":{"explanation":"完全平方因數四開平方後只能提出二，剩下三仍留在根號內；將 2√3 平方可回到十二，確認等值且最簡。","misconceptionTarget":"把因數四原樣移到根號外，沒有先算 √4=2。"}},
+    {"questionId":"u11-s002-v002","expectedContentSha256":"e2ad17418dbc5c7ccf3b8f93b36c5b877e518dee6267c12d19ce80c2034cc4bb","appendText":{"explanation":"中途的 3√8 尚含平方因數四；把 √8 化為 2√2 後，根號外原係數三還要相乘，故得到 6√2。","misconceptionTarget":"停在未最簡的 3√8，或提出二後忘記與原來的三相乘。"}},
+    {"questionId":"u11-s002-v003","expectedContentSha256":"0424b14abe067f721654988f6fcd1463ea922e5421e354ca1d02a06c90eea0c3","appendText":{"explanation":"二百可分成一百乘二，提出 √100=10 後只剩 √2；二不含更大的平方因數，所以 10√2 同時滿足等值與最簡。","misconceptionTarget":"只驗證候選與原式等值，卻未檢查根號內是否仍含平方因數。"}},
+    {"questionId":"u11-s002-v004","expectedContentSha256":"a6c634eda54fe1e2a97bf9fef614738c2a20f2bde5b459559e80a8b33b867fd3","appendText":{"explanation":"三十六是完全平方數且 √36=6，因此 √180=6√5；根號內五沒有非一平方因數，化簡已完成。","misconceptionTarget":"把三十六直接提出，或只提出較小平方因數後停在仍可化簡的形式。"}},
+    {"questionId":"u11-s002-v005","expectedContentSha256":"e8a7562ff5d49d0811c450d4410158e043f8843e53aab4b7340df1159e9b3e67","appendText":{"explanation":"先處理 √48=4√3，再把外面的係數三保留並相乘，3×4√3=12√3；三不含平方因數。","misconceptionTarget":"只化簡根號內四十八而遺失外係數三，或把係數也放回根號內。"}},
+    {"questionId":"u11-s002-v006","expectedContentSha256":"718092f1c83d6506596ee107d786d729e9a3fc30848b041e8c3dcb9d4debba6e","appendText":{"explanation":"開平方會將偶數指數除以二，2⁴ 提出成 2²=4，而未成對的因數三留在根號內，所以結果為 4√3。","misconceptionTarget":"把四次方只減一半底數，或誤將 2⁴ 開平方成 2。"}},
+    {"questionId":"u11-s002-v007","expectedContentSha256":"f73a4873e7a1f2b70c205d946e8d28ee178eb1ebdbbf09422973417d9fcd28c3","appendText":{"explanation":"四百三十二的最大平方因數可取一百四十四，開平方為十二；剩餘三無平方因數，因此 12√3 才是最簡形式。","misconceptionTarget":"只抽出三十六而停在 6√12，沒有繼續把 √12 化簡。"}},
+    {"questionId":"u11-s002-v008","expectedContentSha256":"1de1c483fce4678e090c5d104e1ed4d4e2c4701aac4d629fa57a590b713e86ec","appendText":{"explanation":"六百七十五等於二百二十五乘三，而二百二十五是十五的平方；提出十五後留下 √3，即得 15√3。","misconceptionTarget":"找到平方因數二百二十五後，將其平方根錯算成二十五或五。"}},
+    {"questionId":"u11-s002-v009","expectedContentSha256":"9719e759e5477a5a53261dcbaec0cdb09cb9fcd62752eb059881a20761665b5c","appendText":{"explanation":"二的三次方可拆為 2²×2，三的平方整組提出；根號外得到 2×3=6，根號內留下 2×5=10。","misconceptionTarget":"質因數配對時把單獨剩下的二或五遺失，導致根號內不再等值。"}},
+    {"questionId":"u11-s002-v010","expectedContentSha256":"fd518ecc91f745e963e680515b83572199f11be4ffc6eeefe2ec354554309ac0","appendText":{"explanation":"正方形邊長為面積的非負平方根；一百零八分解成三十六乘三，故邊長為 6√3 公尺，不能用面積除二。","misconceptionTarget":"把求正方形邊長誤作面積除以二，或停在等值但未最簡的 3√12。"}},
+    {"questionId":"u11-s002-v011","expectedContentSha256":"85dd7a410388c61859128bc7ade929c12a131f8ddf8943acac7defa078ab1179","appendText":{"explanation":"報表禁止小數並要求最簡，應抽出 √100=10 得 10√3；5√12 雖等值但根號內十二仍可提出平方因數。","misconceptionTarget":"把等值的 5√12 當成完成答案，沒有依格式繼續化到最簡。"}},
+    {"questionId":"u11-s002-v012","expectedContentSha256":"1a92f8692e44e4ea18e5a33f483faac76861e19415e09b5eae237c64388faffc","appendText":{"explanation":"截面是正方形，邊長取面積一百九十二的正平方根；抽出六十四後得 8√3 公分，根號內三已最簡。","misconceptionTarget":"忽略邊長為正或將面積直接對半，也可能停在仍可化簡的 4√12。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u11-s002-cr001","expectedContentSha256":"b48bbab672a9d842400148cf0ff2b9e59a885a76350e13142a209efdb1090025","appendArray":{"fullCreditSolution":["選最大完全平方因數二百五十六，可寫 768=256×3；因此 √768=√256×√3=16√3。再檢查根號內三沒有大於一的平方因數，且平方 16√3 可回到七百六十八。"]},"set":{"commonErrors":["把完全平方因數二百五十六原樣提出，錯寫成 256√3。","只提出六十四而停在 8√12，沒有將根號內十二再化簡。"]}},
+    {"questionId":"u11-s002-cr002","expectedContentSha256":"d8d43ad5f40e409b1362ed9d08cd24a773aa90dd56baac3ffbe8c33c806b09a2","appendArray":{"fullCreditSolution":["設邊長 s>0，則 s²=243，所以 s=√243；因 243=81×3，化簡得 s=9√3 公尺。長度只取非負值，且平方 (9√3)²=243 可完成驗算。","也可以先估算邊長介於十五與十六之間，以此排除將二百四十三直接當成邊長的錯誤。"]},"set":{"commonErrors":["把面積二百四十三除以二得到一百二十一點五，未使用平方關係。","抽出平方因數八十一時未開平方，錯寫成 81√3 公尺。"]}}
+  ],
+  "lectures":[{"lectureId":"u11-s002-lecture-r1","expectedContentSha256":"13c9cf9acf426f4a55c7710d6aa83d21a7ac5a64a309a8590e466d8638f4e46b","set":{"workedExamples":[
+    {"exampleId":"L1","prompt":"化簡√28。","solutionSteps":["28=4×7。","√4=2。"],"answer":"2√7。","why":"二十八含完全平方因數四，開平方後提出二而不是四；根號內剩七且無平方因數。將 2√7 平方可得二十八，可同時檢查提出係數與剩餘因數。"},
+    {"exampleId":"L2","prompt":"化簡√147。","solutionSteps":["147=49×3。","√49=7。"],"answer":"7√3。","why":"四十九是七的平方，也是此處方便的最大平方因數；提出七後只剩三。若只抽出較小因數，還要繼續化簡，最後仍應得到 7√3。"},
+    {"exampleId":"L3","prompt":"化簡2√75。","solutionSteps":["√75=5√3。","乘回2。"],"answer":"10√3。","why":"外面的係數二不在根號化簡範圍內，先由七十五等於二十五乘三得到 5√3，再乘回原係數二成 10√3，才能保持原式等值。"},
+    {"exampleId":"L4","prompt":"化簡√(2⁵×3²)。","solutionSteps":["2⁵×3²=(2⁴×3²)×2。","提出2²×3。"],"answer":"12√2。","why":"把質因數成對分組可看出 2⁴ 與 3² 都能完整開平方，根號外得到四乘三；多出的一個二沒有配對，留在根號內，故為 12√2。"}
+  ]},"appendArray":{"conceptNarrative":["根式化簡必須保持數值不變：先把被開方數分解成『最大完全平方因數×剩餘因數』，完全平方部分開根後移到根號外，未成對的因數留在根號內；若原式已有外係數，最後還要相乘。完成時應確認根號內不再含四、九、十六等平方因數，並可將結果平方回去檢查是否恢復原被開方數，避免直接提出平方因數或中途停止。"]}}],
+  "drawingSpecs":[],"textFiles":[]
+}

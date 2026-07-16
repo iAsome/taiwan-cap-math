@@ -61,7 +61,8 @@
   "conceptNarrative": [
     "直線與圓的位置可用公共點個數分類，也可比較圓心到直線的垂直距離 d 與半徑 r。",
     "d<r 時直線穿過圓形成兩交點；d=r 時恰好相切；d>r 時相離。",
-    "切線判別需要垂直距離，不是任意一段從圓心到直線的斜線距離。"
+    "切線判別需要垂直距離，不是任意一段從圓心到直線的斜線距離。",
+    "距離d本身永遠非負，因此含未知數的題目除了比較d與r，還要把d≥0一併列入；等號是否保留則由割線、切線或允許相切的語意決定。"
   ],
   "formalDefinitions": [
     {
@@ -144,7 +145,8 @@
         "3<5。"
       ],
       "answer": "割線。",
-      "level": "basic"
+      "level": "basic",
+      "why": "圓心到直線的垂直距離3小於半徑5，直線會穿入圓內並形成兩個公共點，因此依定義判為割線。兩個公共點的分類也與此判斷完全一致。"
     },
     {
       "exampleId": "s015-L2",
@@ -153,7 +155,8 @@
         "d=r。"
       ],
       "answer": "切線。",
-      "level": "standard"
+      "level": "standard",
+      "why": "距離與半徑同為7是臨界情況，直線只在圓周接觸一點；公共點恰有一個，所以分類為切線。等號只對應一個公共點，臨界值不可混用。"
     },
     {
       "exampleId": "s015-L3",
@@ -162,7 +165,8 @@
         "6>4。"
       ],
       "answer": "相離。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "距離6大於半徑4，整條直線位於圓外而沒有公共點；這符合相離的定義，不可因示意圖接近就改判。零公共點的結果也能反向驗證相離分類。"
     },
     {
       "exampleId": "s015-L4",
@@ -171,7 +175,8 @@
         "依定義。"
       ],
       "answer": "割線。",
-      "level": "connection"
+      "level": "connection",
+      "why": "完整直線與圓有兩個交點時必穿過圓內，因此圓心到直線距離小於半徑；公共點數已足以判為割線。公共點數與距離比較提供兩種一致的判法。"
     }
   ],
   "difficultyConnections": {
@@ -221,7 +226,7 @@
     {
       "figureId": "u19-s015-fig001",
       "purpose": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離。",
-      "altText": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離。，不可按比例目測。"
+      "altText": "同一圓旁畫出割線、切線與相離直線，並由圓心作三條垂直距離，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -256,5 +261,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "ea40417787a5fa9efcecdbbe7d074e21e3108d9ed4f79a19317916e85dce46c4"
+  "contentSha256": "b08059eee0d20094335f74683f9de6f3adc3e96207d70a9f8d97990adf127265"
 }

@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "圓的切線在切點處與該點半徑垂直。這把圓問題轉成直角三角形問題。",
     "若 P 是圓外點、T 是切點、O 是圓心，則 OT⊥PT，OP 是直角三角形斜邊。",
-    "斜邊一定最長，可用此快速檢查代入位置是否正確。"
+    "斜邊一定最長，可用此快速檢查代入位置是否正確。",
+    "只有切點所連的半徑垂直切線；一旦標出這個直角，就能依已知邊判斷平方和或平方差，最後須取符合長度為正的根。"
   ],
   "formalDefinitions": [
     {
@@ -130,7 +131,8 @@
         "OP=10。"
       ],
       "answer": "10。",
-      "level": "basic"
+      "level": "basic",
+      "why": "T是切點使OT與PT互相垂直，兩者為直角三角形的股；平方和36+64=100，正根10即為斜邊OP。所得10也大於兩股6、8，符合斜邊檢查。"
     },
     {
       "exampleId": "s016-L2",
@@ -140,7 +142,8 @@
         "PT=12。"
       ],
       "answer": "12。",
-      "level": "standard"
+      "level": "standard",
+      "why": "OP位在直角對面而是斜邊，求PT應使用平方差169−25；得到144後再取正根12，且12確實小於斜邊13。回代5²+12²=13²可再次確認答案。"
     },
     {
       "exampleId": "s016-L3",
@@ -149,7 +152,8 @@
         "依性質。"
       ],
       "answer": "90°。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "切線與切點半徑垂直是精確定理，所以夾角固定為90°；這個結論不受圓大小、切線方向或圖形比例影響。這是切點條件的必然結果，不靠目測。"
     },
     {
       "exampleId": "s016-L4",
@@ -159,7 +163,8 @@
         "OT=8。"
       ],
       "answer": "8。",
-      "level": "connection"
+      "level": "connection",
+      "why": "OP=17是斜邊、PT=15是一股，另一股半徑平方為289−225=64；取正根8後也符合8-15-17直角三角形。回代8²+15²=17²能完整核對三邊，且半徑8為正。"
     }
   ],
   "difficultyConnections": {
@@ -209,7 +214,7 @@
     {
       "figureId": "u19-s016-fig001",
       "purpose": "圓 O 在 T 點與直線 PT 相切，連接 OP、OT，T 點畫直角符號。",
-      "altText": "圓 O 在 T 點與直線 PT 相切，連接 OP、OT，T 點畫直角符號。，不可按比例目測。"
+      "altText": "圓 O 在 T 點與直線 PT 相切，連接 OP、OT，T 點畫直角符號，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -244,5 +249,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "1f6039d75795856e7435353e86e87701e58d01fad768c880f53032499aba3d11"
+  "contentSha256": "87736e41edde532dd6d7ba0ee603a97293b3ccb6361439f863bfc971d9da4a60"
 }

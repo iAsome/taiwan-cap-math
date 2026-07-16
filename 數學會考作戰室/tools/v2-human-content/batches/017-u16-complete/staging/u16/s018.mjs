@@ -1187,14 +1187,14 @@ export const skillData={
         "求兩段各1.5 m。"
       ],
       "fullCreditSolution": [
-        "設垂足D。直角三角形ABD、ACD中，AB=AC=2.5 m、AD共同、兩直角相等，可用直角情形或SAS/斜邊直角邊觀念理解兩半全等；在本課可引用等腰三角形頂角高線同時為中線。",
+        "設垂足D。直角三角形ABD、ACD中，AB=AC=2.5 m、AD共同、兩直角相等，可用斜邊直角邊（RHS）判定兩半全等；在本課可引用等腰三角形頂角高線同時為中線。",
         "因此BD=DC=3÷2=1.5 m。"
       ],
       "alternativeSolutions": [
         "可先以等腰三角形三線合一直接得D為中點，再計算。"
       ],
       "reasoningSteps": [
-        "設垂足D。直角三角形ABD、ACD中，AB=AC=2.5 m、AD共同、兩直角相等，可用直角情形或SAS/斜邊直角邊觀念理解兩半全等；在本課可引用等腰三角形頂角高線同時為中線。",
+        "設垂足D。直角三角形ABD、ACD中，AB=AC=2.5 m、AD共同、兩直角相等，可用斜邊直角邊（RHS）判定兩半全等；在本課可引用等腰三角形頂角高線同時為中線。",
         "因此BD=DC=3÷2=1.5 m。"
       ],
       "rubric": [
@@ -1234,7 +1234,7 @@ export const skillData={
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-      "contentSha256": "2d731714d8147928636eb39f2fbfcebafcc0356b1f90305a7d092d3063ce207f"
+      "contentSha256": "230b8cd6c1fc75e281c263b243e9bec801b123ea0dfe3c404d834e4293b47337"
     },
     {
       "questionId": "u16-s018-cr002",

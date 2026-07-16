@@ -122,7 +122,8 @@
       "solutionSteps": [
         "A整體跨度大，B中段跨度大。"
       ],
-      "answer": "A整體跨度大，B中段跨度大。"
+      "answer": "A整體跨度大，B中段跨度大。",
+      "why": "全距比較最小到最大，20>15支持A端點總跨度較大；IQR比較Q1到Q3，11>8支持B中間50%較分散，兩種結論可以同時成立，不能互相取代。"
     },
     {
       "exampleId": "L2",
@@ -130,7 +131,8 @@
       "solutionSteps": [
         "R40、IQR4，端點遠但中段集中。"
       ],
-      "answer": "R40、IQR4，端點遠但中段集中。"
+      "answer": "R40、IQR4，端點遠但中段集中。",
+      "why": "端點差40-0=40很大，但箱體寬14-10=4很小；兩者並不衝突，而是顯示外側端點離得遠、典型中間一半仍集中，須分區域解讀。"
     },
     {
       "exampleId": "L3",
@@ -138,7 +140,8 @@
       "solutionSteps": [
         "R與IQR都乘3。"
       ],
-      "answer": "R與IQR都乘3。"
+      "answer": "R與IQR都乘3。",
+      "why": "所有資料乘正數3時，最大、最小、Q1與Q3都同步縮放；任兩位置的差也乘3，所以全距與IQR都必成為原來三倍，且順序保持不變。"
     },
     {
       "exampleId": "L4",
@@ -146,7 +149,8 @@
       "solutionSteps": [
         "左右鬚總長0，所以Q1=min、Q3=max。"
       ],
-      "answer": "左右鬚總長0，所以Q1=min、Q3=max。"
+      "answer": "左右鬚總長0，所以Q1=min、Q3=max。",
+      "why": "全距可拆成左外段、IQR與右外段三個非負長度；若總長等於中間的IQR，兩個外段總和只能為0，故各自都必為0。"
     }
   ],
   "commonMistakes": [
@@ -224,5 +228,5 @@
     "reviewVersion": "human-lecture-review-u22-r1.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "209463060c0674ea236342430945c94afc153a43b871a58b3d05f2757e6a00aa"
+  "contentSha256": "2c604457eec24b616b546239987e9e8054022cce27f5146be0df0ae5bbdd7181"
 }

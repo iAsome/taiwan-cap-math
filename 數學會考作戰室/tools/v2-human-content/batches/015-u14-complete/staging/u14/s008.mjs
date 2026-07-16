@@ -13,7 +13,7 @@ export default {
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "learningOutcomes": [
-      "能推導並使用a_n=a_1r^{n-1}。",
+      "能推導並使用a_n=a_1rⁿ⁻¹。",
       "能由兩項與公比求其他項。",
       "能處理負公比與分數公比。",
       "能回求簡單的項數或公比。"
@@ -45,11 +45,11 @@ export default {
     ],
     "notation": [
       {
-        "symbol": "a_n=a_1r^{n-1}",
+        "symbol": "a_n=a_1rⁿ⁻¹",
         "meaning": "等比數列第n項公式。"
       },
       {
-        "symbol": "r^{n-1}",
+        "symbol": "rⁿ⁻¹",
         "meaning": "公比重複相乘n-1次。"
       }
     ],
@@ -71,7 +71,7 @@ export default {
     ],
     "formulas": [
       {
-        "formula": "a_n=a_1r^{n-1}",
+        "formula": "a_n=a_1rⁿ⁻¹",
         "conditions": [
           "n為正整數",
           "數列確為等比"
@@ -79,7 +79,7 @@ export default {
         "meaning": "首項經過n-1次倍率。"
       },
       {
-        "formula": "a_n=a_kr^{n-k}",
+        "formula": "a_n=a_krⁿ⁻ᵏ",
         "conditions": [
           "已知第k項與公比"
         ],
@@ -100,7 +100,7 @@ export default {
       },
       {
         "step": 2,
-        "instruction": "寫a_n=a_1r^{n-1}",
+        "instruction": "寫a_n=a_1rⁿ⁻¹",
         "check": "先不急著算。"
       },
       {
@@ -123,10 +123,10 @@ export default {
       {
         "exampleId": "L1",
         "prompt": "a_1=3，r=2，求a_7",
-        "reasoning": "a_7=3×2^6。",
+        "reasoning": "a_7=3×2⁶。",
         "solutionSteps": [
-          "a_7=3×2^6。",
-          "2^6=64。"
+          "a_7=3×2⁶。",
+          "2⁶=64。"
         ],
         "answer": "192"
       },
@@ -143,9 +143,9 @@ export default {
       {
         "exampleId": "L3",
         "prompt": "a_1=-5，r=-2，求a_4",
-        "reasoning": "(-2)^3=-8。",
+        "reasoning": "(-2)³=-8。",
         "solutionSteps": [
-          "(-2)^3=-8。",
+          "(-2)³=-8。",
           "-5×(-8)=40。"
         ],
         "answer": "40"
@@ -153,9 +153,9 @@ export default {
       {
         "exampleId": "L4",
         "prompt": "a_3=18，r=3，求a_1",
-        "reasoning": "18=a_1×3^2。",
+        "reasoning": "18=a_1×3²。",
         "solutionSteps": [
-          "18=a_1×3^2。",
+          "18=a_1×3²。",
           "a_1=2。"
         ],
         "answer": "2"
@@ -176,17 +176,17 @@ export default {
       {
         "mistake": "負公比只看絕對值",
         "why": "項的正負會錯。",
-        "correction": "保留括號(-r)^{n-1}。"
+        "correction": "保留括號(-r)ⁿ⁻¹。"
       },
       {
         "mistake": "分數公比只乘分母",
         "why": "指數作用於整個分數。",
-        "correction": "寫成(p/q)^{n-1}。"
+        "correction": "寫成(p/q)ⁿ⁻¹。"
       },
       {
         "mistake": "把a_k直接當首項",
         "why": "位置差未處理。",
-        "correction": "使用a_n=a_kr^{n-k}。"
+        "correction": "使用a_n=a_krⁿ⁻ᵏ。"
       },
       {
         "mistake": "以加法累積公比",
@@ -207,7 +207,7 @@ export default {
       "回求n是否為正整數且代回成立？"
     ],
     "summary": [
-      "等比第n項為a_1r^{n-1}。",
+      "等比第n項為a_1rⁿ⁻¹。",
       "n-1來自倍率次數。",
       "負公比與分數公比需保留完整括號。",
       "國中回求項數以同底次方與驗算處理。"
@@ -251,7 +251,7 @@ export default {
       "reviewedAt": "2026-07-12",
       "reviewNote": "逐段檢查「等比第 n 項基本」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
     },
-    "contentSha256": "8ee9fa2180fb34ae981b99d32347c0ab99bec7df19f4b9a44ee111f650332086"
+    "contentSha256": "0fd8d9ba85a066895837d2698c547eb457949459083c21a477812bea6e9ce36d"
   },
   "mcQuestions": [
     {
@@ -281,10 +281,10 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "從第1項到第6項乘5次2：5×32=160。",
-      "mainExplanation": "依題意依序處理：使用n-1=5。；計算2^5。，所以唯一正確選項是「160」。",
+      "mainExplanation": "依題意依序處理：使用n-1=5。；計算2⁵。，所以唯一正確選項是「160」。",
       "steps": [
         "使用n-1=5。",
-        "計算2^5。"
+        "計算2⁵。"
       ],
       "optionAnalysis": [
         {
@@ -305,7 +305,7 @@ export default {
         {
           "choice": "160",
           "truth": true,
-          "reason": "a_6=5×2^5=160。"
+          "reason": "a_6=5×2⁵=160。"
         }
       ],
       "misconceptionTarget": "把第6項的指數寫成6或4。",
@@ -323,7 +323,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ef67d2f16b10e74e1ce2a575966e34a7173a713295978329234cb9d879a0746f"
+      "contentSha256": "622c57dea4691c6409bc9daa9d24ebf4ee149935ed07b822ac7aecdaa72e26ac"
     },
     {
       "questionId": "u14-s008-v002",
@@ -366,7 +366,7 @@ export default {
         {
           "choice": "1",
           "truth": true,
-          "reason": "a_5=81×(1/3)^4=81/81=1。"
+          "reason": "a_5=81×(1/3)⁴=81/81=1。"
         },
         {
           "choice": "1/3",
@@ -394,7 +394,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bb0197bd035228a9c017bce54444a63780dd74bd6983828935d0eb358ea5501b"
+      "contentSha256": "2aaab469bbd15886652352f53361ac9f452d27e0b8802bb0ef8d1341c4e74843"
     },
     {
       "questionId": "u14-s008-v003",
@@ -422,7 +422,7 @@ export default {
         "16"
       ],
       "answerIndex": 0,
-      "independentSolution": "第5項需4次公比，(-2)^4=16，再乘首項-2得-32。",
+      "independentSolution": "第5項需4次公比，(-2)⁴=16，再乘首項-2得-32。",
       "mainExplanation": "依題意依序處理：先算負底數偶次方。；乘首項。，所以唯一正確選項是「-32」。",
       "steps": [
         "先算負底數偶次方。",
@@ -432,7 +432,7 @@ export default {
         {
           "choice": "-32",
           "truth": true,
-          "reason": "a_5=-2×(-2)^4=-2×16=-32。"
+          "reason": "a_5=-2×(-2)⁴=-2×16=-32。"
         },
         {
           "choice": "32",
@@ -458,14 +458,14 @@ export default {
       "estimatedTimeSec": 90,
       "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
       "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
-      "ambiguityBoundaryAudit": "括號(-2)^4完整；答案-32。",
+      "ambiguityBoundaryAudit": "括號(-2)⁴完整；答案-32。",
       "difficultyReason": "基礎：考查負底數次方與首項符號的分離。",
       "literacyContextNecessity": null,
       "authoringIntent": "負公比通項符號。",
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9c04d423414fbf10425bb258b94d93384119eb82830c26f784afa50ad63af12b"
+      "contentSha256": "5fdb60b2a3dfb63baa1bd5bc17b68a7aa34c827c9428b4a424570b5949965d69"
     },
     {
       "questionId": "u14-s008-v004",
@@ -493,7 +493,7 @@ export default {
         "80"
       ],
       "answerIndex": 2,
-      "independentSolution": "a_7=a_3×2^{7-3}=20×16=320。",
+      "independentSolution": "a_7=a_3×2⁷⁻³=20×16=320。",
       "mainExplanation": "依題意依序處理：使用位置差4。；計算倍率。，所以唯一正確選項是「320」。",
       "steps": [
         "使用位置差4。",
@@ -513,7 +513,7 @@ export default {
         {
           "choice": "320",
           "truth": true,
-          "reason": "從第3項到第7項跨4步，20×2^4=320。"
+          "reason": "從第3項到第7項跨4步，20×2⁴=320。"
         },
         {
           "choice": "80",
@@ -530,13 +530,13 @@ export default {
       "unitCheck": "題目為純數時無外部單位；若含情境，所有量均使用題幹同一單位並已在答案保留。",
       "roundingCheck": "所有計算使用精確整數、分數或有限小數；題目未要求四捨五入。",
       "ambiguityBoundaryAudit": "位置差7-3=4。",
-      "difficultyReason": "標準：需使用a_n=a_kr^{n-k}避免位置錯位。",
+      "difficultyReason": "標準：需使用a_n=a_krⁿ⁻ᵏ避免位置錯位。",
       "literacyContextNecessity": null,
       "authoringIntent": "由非首項求遠項。",
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "90f55d9a95ef712ea7fb1db5c9745b8af7f167a372fc04ae801b952ddf397c13"
+      "contentSha256": "651f0bc03d69723957753b49554649120ca7cf193e27c6a414084acbeef35d3e"
     },
     {
       "questionId": "u14-s008-v005",
@@ -565,10 +565,10 @@ export default {
         "1/2"
       ],
       "answerIndex": 2,
-      "independentSolution": "第2到第5項有3個倍率，r^3=8。正項且遞增，r=2。",
-      "mainExplanation": "依題意依序處理：建立r^3=8。；取正的立方根2。，所以唯一正確選項是「2」。",
+      "independentSolution": "第2到第5項有3個倍率，r³=8。正項且遞增，r=2。",
+      "mainExplanation": "依題意依序處理：建立r³=8。；取正的立方根2。，所以唯一正確選項是「2」。",
       "steps": [
-        "建立r^3=8。",
+        "建立r³=8。",
         "取正的立方根2。"
       ],
       "optionAnalysis": [
@@ -585,7 +585,7 @@ export default {
         {
           "choice": "2",
           "truth": true,
-          "reason": "a_5/a_2=r^3=96/12=8；正公比r=2。"
+          "reason": "a_5/a_2=r³=96/12=8；正公比r=2。"
         },
         {
           "choice": "1/2",
@@ -608,7 +608,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8b1d6876ec71d9e96f7236a101a4068a702676437761206e7a4a3e471a9c5770"
+      "contentSha256": "d510e426e1dbb2a12b7b285704e90d90c9459087fda30fbcc1174107e2ff2dcd"
     },
     {
       "questionId": "u14-s008-v006",
@@ -623,7 +623,7 @@ export default {
       "sourceScope": "TAIWAN_CAP_JUNIOR_MATH_108",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-      "text": "等比數列的通項為 a_n=3(-1/2)^{n-1}，則 a_4 等於多少？",
+      "text": "等比數列的通項為 a_n=3(-1/2)ⁿ⁻¹，則 a_4 等於多少？",
       "givenConditions": [
         "通項"
       ],
@@ -645,7 +645,7 @@ export default {
         {
           "choice": "-3/8",
           "truth": true,
-          "reason": "a_4=3(-1/2)^3=3(-1/8)=-3/8。"
+          "reason": "a_4=3(-1/2)³=3(-1/8)=-3/8。"
         },
         {
           "choice": "3/8",
@@ -663,7 +663,7 @@ export default {
           "reason": "3/16同時符號與次方錯。"
         }
       ],
-      "misconceptionTarget": "把(-1/2)^3誤作-1/2^4或忽略括號。",
+      "misconceptionTarget": "把(-1/2)³誤作-1/2⁴或忽略括號。",
       "prerequisiteSkillIds": [
         "sequence-pattern-word"
       ],
@@ -678,7 +678,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8a1028eb759b0ad318c3a534c1665bd40d46f4e90f3430d24ee36d1f05fa9cca"
+      "contentSha256": "8616f36046b16656f09bf137479c993b1ff8580892bae73a94f7b736685f91f0"
     },
     {
       "questionId": "u14-s008-v007",
@@ -804,7 +804,7 @@ export default {
         {
           "choice": "6",
           "truth": true,
-          "reason": "256×(1/2)^{n-1}=8，256/8=32=2^5，所以n-1=5，n=6。"
+          "reason": "256×(1/2)ⁿ⁻¹=8，256/8=32=2⁵，所以n-1=5，n=6。"
         }
       ],
       "misconceptionTarget": "找到5次減半就回答第5項。",
@@ -822,7 +822,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "00b9de945cf462b6d9731f927128800f23d7f450457df3d060571b474ef1cd5b"
+      "contentSha256": "3ff404c9175e384b6c307ccaa9277c73279fe0b23736ff358ad18d0a92aef71b"
     },
     {
       "questionId": "u14-s008-v009",
@@ -850,7 +850,7 @@ export default {
         "54"
       ],
       "answerIndex": 1,
-      "independentSolution": "第2到第5項跨3步，r^3=-27，實數r=-3。下一項乘-3得-486。",
+      "independentSolution": "第2到第5項跨3步，r³=-27，實數r=-3。下一項乘-3得-486。",
       "mainExplanation": "依題意依序處理：回求負公比。；由a_5求a_6。，所以唯一正確選項是「-486」。",
       "steps": [
         "回求負公比。",
@@ -865,7 +865,7 @@ export default {
         {
           "choice": "-486",
           "truth": true,
-          "reason": "a_5/a_2=r^3=162/(-6)=-27，所以r=-3；a_6=162×(-3)=-486。"
+          "reason": "a_5/a_2=r³=162/(-6)=-27，所以r=-3；a_6=162×(-3)=-486。"
         },
         {
           "choice": "-162",
@@ -893,7 +893,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "405223daf3c4c8fa81a04f1c3072a47a15d4e6644b0d688640fa2794e7253a60"
+      "contentSha256": "dd00702f40bb31218ac1e3a24aca90d63267be8501e83a9b768ab453777be0d3"
     },
     {
       "questionId": "u14-s008-v010",
@@ -941,7 +941,7 @@ export default {
         {
           "choice": "972",
           "truth": true,
-          "reason": "a_6=4×3^5=4×243=972。"
+          "reason": "a_6=4×3⁵=4×243=972。"
         },
         {
           "choice": "729",
@@ -964,7 +964,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2d2087b1fbbbcf0cb125ebb5b0e499cdc064a054ad73b8207f5029112cbc5ada"
+      "contentSha256": "a4d782f6293b2921c6ba848f71a2b05a972c5fc8f7ceeba02cbe4a12d90f599e"
     },
     {
       "questionId": "u14-s008-v011",
@@ -1017,7 +1017,7 @@ export default {
         {
           "choice": "5 mg",
           "truth": true,
-          "reason": "160×(1/2)^5=5 mg。"
+          "reason": "160×(1/2)⁵=5 mg。"
         }
       ],
       "misconceptionTarget": "將5個週期誤作包含起始在內的5項。",
@@ -1035,7 +1035,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "56fbae546ed06640d11533bc98fc8a27b7b01bc8f1754752901e6989536a9227"
+      "contentSha256": "7bd3c8fca13e397221357332695aecc93f345c8518178a3d6b6892784cc24d13"
     },
     {
       "questionId": "u14-s008-v012",
@@ -1064,16 +1064,16 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "從第1層到第8層有7次倍增，3×128=384根。",
-      "mainExplanation": "依題意依序處理：辨認層號為項次。；計算2^7並乘3。，所以唯一正確選項是「384」。",
+      "mainExplanation": "依題意依序處理：辨認層號為項次。；計算2⁷並乘3。，所以唯一正確選項是「384」。",
       "steps": [
         "辨認層號為項次。",
-        "計算2^7並乘3。"
+        "計算2⁷並乘3。"
       ],
       "optionAnalysis": [
         {
           "choice": "384",
           "truth": true,
-          "reason": "a_8=3×2^7=384。"
+          "reason": "a_8=3×2⁷=384。"
         },
         {
           "choice": "192",
@@ -1091,7 +1091,7 @@ export default {
           "reason": "256漏掉首項係數3。"
         }
       ],
-      "misconceptionTarget": "直接算2^8或3×2^8。",
+      "misconceptionTarget": "直接算2⁸或3×2⁸。",
       "prerequisiteSkillIds": [
         "sequence-pattern-word"
       ],
@@ -1106,7 +1106,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a82485390d878456088c15eefeda8e26e1ed209fbd2ac152a15be1e6fe0437b6"
+      "contentSha256": "6a87fcb3cc6bd6e8a805b884107a9ca7231b0d45a12d234d7dbf8e386f5440c5"
     }
   ],
   "constructedResponses": [
@@ -1129,19 +1129,19 @@ export default {
         "回推首項並驗算。"
       ],
       "fullCreditSolution": [
-        "a_7/a_3=r^4=192/12=16。",
-        "r^4=16有r=±2，但各項皆正數，故r=2。",
+        "a_7/a_3=r⁴=192/12=16。",
+        "r⁴=16有r=±2，但各項皆正數，故r=2。",
         "a_3=a_1r²，所以12=4a_1，a_1=3。",
-        "驗算a_7=3×2^6=192。"
+        "驗算a_7=3×2⁶=192。"
       ],
       "alternativeSolutions": [
         "若先由正項與遞增判r>0，再取r=2亦可。"
       ],
       "reasoningSteps": [
-        "a_7/a_3=r^4=192/12=16。",
-        "r^4=16有r=±2，但各項皆正數，故r=2。",
+        "a_7/a_3=r⁴=192/12=16。",
+        "r⁴=16有r=±2，但各項皆正數，故r=2。",
         "a_3=a_1r²，所以12=4a_1，a_1=3。",
-        "驗算a_7=3×2^6=192。"
+        "驗算a_7=3×2⁶=192。"
       ],
       "rubric": [
         {
@@ -1181,7 +1181,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "aeef68785d905fae4614ae270cdfb1fb3f77444d0aa38e1b34935e73b87879c0"
+      "contentSha256": "ee8fadd5f29f553c454fdf6704dd4703ac37c5e1182a0c89cc88d37522b474de"
     },
     {
       "questionId": "u14-s008-cr002",
@@ -1203,7 +1203,7 @@ export default {
       ],
       "fullCreditSolution": [
         "令R_n表示經過n個週期後的量。",
-        "R_n=256(3/4)^n，因n=0時R_0=256。",
+        "R_n=256(3/4)ⁿ，因n=0時R_0=256。",
         "R_5=256×243/1024=243/4=60.75 g。"
       ],
       "alternativeSolutions": [
@@ -1211,13 +1211,13 @@ export default {
       ],
       "reasoningSteps": [
         "令R_n表示經過n個週期後的量。",
-        "R_n=256(3/4)^n，因n=0時R_0=256。",
+        "R_n=256(3/4)ⁿ，因n=0時R_0=256。",
         "R_5=256×243/1024=243/4=60.75 g。"
       ],
       "rubric": [
         {
           "score": 3,
-          "criteria": "公式R_n=256(3/4)^n與R_5=60.75g均正確，並說明n=0起始。"
+          "criteria": "公式R_n=256(3/4)ⁿ與R_5=60.75g均正確，並說明n=0起始。"
         },
         {
           "score": 2,
@@ -1244,15 +1244,15 @@ export default {
       ],
       "figureDrawingSpecRef": null,
       "independentReview": {
-        "derivedResult": "R_n=256(3/4)^n，R_5=60.75g。",
+        "derivedResult": "R_n=256(3/4)ⁿ，R_5=60.75g。",
         "ambiguity": "索引起點由題目明示，公式唯一。",
         "unitBoundaryCheck": "單位g；60.75為有限小數，不需四捨五入。",
         "decision": "pass",
-        "reviewNote": "獨立依題目條件重新推導，得到「R_n=256(3/4)^n，R_5=60.75g。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
+        "reviewNote": "獨立依題目條件重新推導，得到「R_n=256(3/4)ⁿ，R_5=60.75g。」。評分規準逐分對應本題必要步驟，並已檢查錯誤追隨與只寫答案的處理。"
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "eca3913fce9703ca9e87364e7fac16f07e2a944e5edbcaaa655dbe0c37464e02"
+      "contentSha256": "92142f7fd9bc525b6d98dff343c966d20c0c33efc0301a3f7e50886b3ec71cee"
     }
   ],
   "semanticReviews": [
@@ -1260,7 +1260,7 @@ export default {
       "questionId": "u14-s008-v001",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "ef67d2f16b10e74e1ce2a575966e34a7173a713295978329234cb9d879a0746f",
+      "contentSha256": "622c57dea4691c6409bc9daa9d24ebf4ee149935ed07b822ac7aecdaa72e26ac",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
@@ -1295,7 +1295,7 @@ export default {
       "questionId": "u14-s008-v002",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "bb0197bd035228a9c017bce54444a63780dd74bd6983828935d0eb358ea5501b",
+      "contentSha256": "2aaab469bbd15886652352f53361ac9f452d27e0b8802bb0ef8d1341c4e74843",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
@@ -1330,11 +1330,11 @@ export default {
       "questionId": "u14-s008-v003",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "9c04d423414fbf10425bb258b94d93384119eb82830c26f784afa50ad63af12b",
+      "contentSha256": "5fdb60b2a3dfb63baa1bd5bc17b68a7aa34c827c9428b4a424570b5949965d69",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "第5項需4次公比，(-2)^4=16，再乘首項-2得-32。",
+      "independentSolution": "第5項需4次公比，(-2)⁴=16，再乘首項-2得-32。",
       "derivedAnswer": "-32",
       "storedAnswer": "-32",
       "answerMatch": true,
@@ -1348,9 +1348,9 @@ export default {
       "ambiguityChecks": {
         "secondCorrectAnswer": "逐項重算四個選項後，只有「-32」符合。其餘三項各自違反：32漏掉首項負號。；-16只乘3次公比。；16同時少乘與符號錯。",
         "undefinedSymbol": "題幹所用符號與用語均在「等比第 n 項基本」講義中定義；本題目標為「求a_5」。",
-        "unitConflict": "括號(-2)^4完整；答案-32。；選項均以相同數學對象或相同單位比較。",
+        "unitConflict": "括號(-2)⁴完整；答案-32。；選項均以相同數學對象或相同單位比較。",
         "roundingConflict": "獨立解答得到精確值「-32」，沒有近似取整導致第二答案。",
-        "domainBoundary": "審查本題定義域、端點與會考範圍：括號(-2)^4完整；答案-32。",
+        "domainBoundary": "審查本題定義域、端點與會考範圍：括號(-2)⁴完整；答案-32。",
         "alternateReading": "最可能的誤讀是「認為偶次方使整個結果必為正，忽略首項仍為負。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
       },
       "difficultyReason": "基礎：考查負底數次方與首項符號的分離。",
@@ -1358,18 +1358,18 @@ export default {
       "prerequisiteCheck": "使用前置技能「規律觀察列式」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「等比數列首項為 -2、公比為 -2，則第 5 項是多少？」獨立重算為：第5項需4次公比，(-2)^4=16，再乘首項-2得-32。 四選項逐項核對後唯一正解為「-32」；邊界檢查：括號(-2)^4完整；答案-32。",
-      "reviewContentSha256": "5db0d945426ab37804d4a5e7533125b518e3a08d0337ea96435796e1c26d3a3e"
+      "reviewerNote": "題目「等比數列首項為 -2、公比為 -2，則第 5 項是多少？」獨立重算為：第5項需4次公比，(-2)⁴=16，再乘首項-2得-32。 四選項逐項核對後唯一正解為「-32」；邊界檢查：括號(-2)⁴完整；答案-32。",
+      "reviewContentSha256": "4ce26b6d88cc930b112604321868556c0782d0fea80f553f7e1999b695a9087c"
     },
     {
       "questionId": "u14-s008-v004",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "90f55d9a95ef712ea7fb1db5c9745b8af7f167a372fc04ae801b952ddf397c13",
+      "contentSha256": "651f0bc03d69723957753b49554649120ca7cf193e27c6a414084acbeef35d3e",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "a_7=a_3×2^{7-3}=20×16=320。",
+      "independentSolution": "a_7=a_3×2⁷⁻³=20×16=320。",
       "derivedAnswer": "320",
       "storedAnswer": "320",
       "answerMatch": true,
@@ -1388,23 +1388,23 @@ export default {
         "domainBoundary": "審查本題定義域、端點與會考範圍：位置差7-3=4。",
         "alternateReading": "最可能的誤讀是「仍使用n-1=6而把a_3誤當首項。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
       },
-      "difficultyReason": "標準：需使用a_n=a_kr^{n-k}避免位置錯位。",
+      "difficultyReason": "標準：需使用a_n=a_krⁿ⁻ᵏ避免位置錯位。",
       "literacyContextNecessity": null,
       "prerequisiteCheck": "使用前置技能「規律觀察列式」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「等比數列中 a_3=20、公比為 2，則 a_7 等於多少？」獨立重算為：a_7=a_3×2^{7-3}=20×16=320。 四選項逐項核對後唯一正解為「320」；邊界檢查：位置差7-3=4。",
-      "reviewContentSha256": "832ab1d2afae7158e243c9bc7cff7bb062141eefedd08f96b2b659256f4779e9"
+      "reviewerNote": "題目「等比數列中 a_3=20、公比為 2，則 a_7 等於多少？」獨立重算為：a_7=a_3×2⁷⁻³=20×16=320。 四選項逐項核對後唯一正解為「320」；邊界檢查：位置差7-3=4。",
+      "reviewContentSha256": "8ddc5849d997b5ea8d11568a9f7306bbd54bf5a318623c979f9a8c308d07c1af"
     },
     {
       "questionId": "u14-s008-v005",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "8b1d6876ec71d9e96f7236a101a4068a702676437761206e7a4a3e471a9c5770",
+      "contentSha256": "d510e426e1dbb2a12b7b285704e90d90c9459087fda30fbcc1174107e2ff2dcd",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "第2到第5項有3個倍率，r^3=8。正項且遞增，r=2。",
+      "independentSolution": "第2到第5項有3個倍率，r³=8。正項且遞增，r=2。",
       "derivedAnswer": "2",
       "storedAnswer": "2",
       "answerMatch": true,
@@ -1428,14 +1428,14 @@ export default {
       "prerequisiteCheck": "使用前置技能「規律觀察列式」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「正項等比數列中 a_2=12、a_5=96，則公比是多少？」獨立重算為：第2到第5項有3個倍率，r^3=8。正項且遞增，r=2。 四選項逐項核對後唯一正解為「2」；邊界檢查：實數立方根唯一為2；正項條件一致。",
-      "reviewContentSha256": "e42ad4133edf17719deda4d8198d2af13f33242b8c9d94ce6b038d1836bfd8f9"
+      "reviewerNote": "題目「正項等比數列中 a_2=12、a_5=96，則公比是多少？」獨立重算為：第2到第5項有3個倍率，r³=8。正項且遞增，r=2。 四選項逐項核對後唯一正解為「2」；邊界檢查：實數立方根唯一為2；正項條件一致。",
+      "reviewContentSha256": "0fa00004608032ee9501f8a20423d37a31ca46f36628a2f92c0a597d2abb7326"
     },
     {
       "questionId": "u14-s008-v006",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "8a1028eb759b0ad318c3a534c1665bd40d46f4e90f3430d24ee36d1f05fa9cca",
+      "contentSha256": "8616f36046b16656f09bf137479c993b1ff8580892bae73a94f7b736685f91f0",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
@@ -1456,15 +1456,15 @@ export default {
         "unitConflict": "答案最簡分數-3/8。；選項均以相同數學對象或相同單位比較。",
         "roundingConflict": "獨立解答得到精確值「-3/8」，沒有近似取整導致第二答案。",
         "domainBoundary": "審查本題定義域、端點與會考範圍：答案最簡分數-3/8。",
-        "alternateReading": "最可能的誤讀是「把(-1/2)^3誤作-1/2^4或忽略括號。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+        "alternateReading": "最可能的誤讀是「把(-1/2)³誤作-1/2⁴或忽略括號。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
       },
       "difficultyReason": "標準：需正確處理括號、奇次方與分數。",
       "literacyContextNecessity": null,
       "prerequisiteCheck": "使用前置技能「規律觀察列式」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「等比數列的通項為 a_n=3(-1/2)^{n-1}，則 a_4 等於多少？」獨立重算為：n-1=3為奇數，所以冪為-1/8；乘3得-3/8。 四選項逐項核對後唯一正解為「-3/8」；邊界檢查：答案最簡分數-3/8。",
-      "reviewContentSha256": "e9b0f5e25ef37568685c9e5809d8da45df218833499e85284346fd21e0f1667e"
+      "reviewerNote": "題目「等比數列的通項為 a_n=3(-1/2)ⁿ⁻¹，則 a_4 等於多少？」獨立重算為：n-1=3為奇數，所以冪為-1/8；乘3得-3/8。 四選項逐項核對後唯一正解為「-3/8」；邊界檢查：答案最簡分數-3/8。",
+      "reviewContentSha256": "1c5088e7600f8682ef1022c18960797dcd1f32a5024c4db15bf416406b01f03d"
     },
     {
       "questionId": "u14-s008-v007",
@@ -1505,7 +1505,7 @@ export default {
       "questionId": "u14-s008-v008",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "00b9de945cf462b6d9731f927128800f23d7f450457df3d060571b474ef1cd5b",
+      "contentSha256": "3ff404c9175e384b6c307ccaa9277c73279fe0b23736ff358ad18d0a92aef71b",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
@@ -1540,11 +1540,11 @@ export default {
       "questionId": "u14-s008-v009",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "405223daf3c4c8fa81a04f1c3072a47a15d4e6644b0d688640fa2794e7253a60",
+      "contentSha256": "dd00702f40bb31218ac1e3a24aca90d63267be8501e83a9b768ab453777be0d3",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "第2到第5項跨3步，r^3=-27，實數r=-3。下一項乘-3得-486。",
+      "independentSolution": "第2到第5項跨3步，r³=-27，實數r=-3。下一項乘-3得-486。",
       "derivedAnswer": "-486",
       "storedAnswer": "-486",
       "answerMatch": true,
@@ -1568,14 +1568,14 @@ export default {
       "prerequisiteCheck": "使用前置技能「規律觀察列式」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「等比數列中 a_2=-6、a_5=162，則 a_6 等於多少？」獨立重算為：第2到第5項跨3步，r^3=-27，實數r=-3。下一項乘-3得-486。 四選項逐項核對後唯一正解為「-486」；邊界檢查：實數立方根-3唯一；a_2非0。",
-      "reviewContentSha256": "33a616b26a91a8cf299dea027e67ff23ad7e427d6273b23ae936493475f05b76"
+      "reviewerNote": "題目「等比數列中 a_2=-6、a_5=162，則 a_6 等於多少？」獨立重算為：第2到第5項跨3步，r³=-27，實數r=-3。下一項乘-3得-486。 四選項逐項核對後唯一正解為「-486」；邊界檢查：實數立方根-3唯一；a_2非0。",
+      "reviewContentSha256": "98a1266e209e2bcc35b4b94cb0d98f7e0c617002ab6238d95b364eada46aa45a"
     },
     {
       "questionId": "u14-s008-v010",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "2d2087b1fbbbcf0cb125ebb5b0e499cdc064a054ad73b8207f5029112cbc5ada",
+      "contentSha256": "a4d782f6293b2921c6ba848f71a2b05a972c5fc8f7ceeba02cbe4a12d90f599e",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
@@ -1610,7 +1610,7 @@ export default {
       "questionId": "u14-s008-v011",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "56fbae546ed06640d11533bc98fc8a27b7b01bc8f1754752901e6989536a9227",
+      "contentSha256": "7bd3c8fca13e397221357332695aecc93f345c8518178a3d6b6892784cc24d13",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
@@ -1645,7 +1645,7 @@ export default {
       "questionId": "u14-s008-v012",
       "unitId": "u14",
       "skillId": "geometric-nth-basic",
-      "contentSha256": "a82485390d878456088c15eefeda8e26e1ed209fbd2ac152a15be1e6fe0437b6",
+      "contentSha256": "6a87fcb3cc6bd6e8a805b884107a9ca7231b0d45a12d234d7dbf8e386f5440c5",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
@@ -1666,7 +1666,7 @@ export default {
         "unitConflict": "答案為單一第8層數量，不是各層總和。；選項均以相同數學對象或相同單位比較。",
         "roundingConflict": "獨立解答得到精確值「384」，沒有近似取整導致第二答案。",
         "domainBoundary": "審查本題定義域、端點與會考範圍：答案為單一第8層數量，不是各層總和。",
-        "alternateReading": "最可能的誤讀是「直接算2^8或3×2^8。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
+        "alternateReading": "最可能的誤讀是「直接算2⁸或3×2⁸。」；依題幹位置、端點與關鍵詞重新解讀後不會形成另一正解。"
       },
       "difficultyReason": "素養：需將層級結構轉成首項3、公比2的等比模型。",
       "literacyContextNecessity": "分枝層級情境使「第8層」不是經過8次倍增，測試層號與變化次數。",
@@ -1674,7 +1674,7 @@ export default {
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一棵模型樹第 1 層有 3 根分枝，之後每一層分枝數都是上一層的 2 倍。第 8 層有幾根分枝？」獨立重算為：從第1層到第8層有7次倍增，3×128=384根。 四選項逐項核對後唯一正解為「384」；邊界檢查：答案為單一第8層數量，不是各層總和。",
-      "reviewContentSha256": "575c103abcfd1c5299dc77d96f7c2cb0668fb0ff9c5a6898e41c7d04643b9823"
+      "reviewContentSha256": "2ccb5af944b7723428739b4d4abb9760cf0ae4a1e15cb86bce95801188091051"
     }
   ],
   "drawingSpecs": []

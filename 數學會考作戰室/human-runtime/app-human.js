@@ -38,7 +38,13 @@
       : symbolNotesFrom(q.text, q.formula, q.concept, q.steps, q.tip, q.trap);
     return notes.length ? `<div class="solution-note symbol-note"><strong>本題符號說明</strong>${symbolListHtml(notes)}</div>` : "";
   };
-  const questionFigureHtml = q => q.figureUrl ? `<figure class="exam-figure"><img src="${esc(q.figureUrl)}" alt="${esc(q.text || q.figureId || "數學圖形")}"><figcaption>${esc(q.figureId || "題目圖形")}</figcaption></figure>` : "";
+  const figureHtml = (figure, className = "exam-figure") => {
+    if (!figure.figureUrl) return "";
+    const description = figure.figureDescription && figure.figureDescription !== figure.figureAlt
+      ? `<span class="figure-description">${mathText(figure.figureDescription)}</span>` : "";
+    return `<figure class="${className}"><img src="${esc(figure.figureUrl)}" alt="${esc(figure.figureAlt || figure.figureCaption || "數學圖形")}"><figcaption><strong>${esc(figure.figureCaption || "題目圖形")}</strong>${description}</figcaption></figure>`;
+  };
+  const questionFigureHtml = q => figureHtml(q);
   const letters = ["A", "B", "C", "D"];
   const viewNames = { home: "學習總覽", exam: "全範圍模擬考", quiz: "單元小考題庫", papers: "我的考卷", handbook: "國中數學全冊講義", atlas: "題型與技巧地圖", analysis: "近十年逐題分析", sources: "資料與技巧審核", archive: "近十年考卷館" , paper: "官方考卷" };
   let toastTimer;
@@ -250,12 +256,14 @@
 
   function renderLectureArticle(lecture, quizId) {
     const examples = lecture.examples.map((example, index) => `<div class="lecture-example"><p><strong>例題 ${index + 1}：</strong>${mathText(example.prompt)}</p><p><strong>答案：</strong>${mathText(example.answer)}</p><p><strong>為什麼：</strong>${mathText(example.why)}</p></div>`).join("");
+    const figures = (lecture.figures || []).map(figure => figureHtml(figure, "lecture-figure")).join("");
     return `<article class="lecture-topic-card" id="lecture-${esc(lecture.skillId)}">
       <header><span class="lecture-chapter">${esc(lecture.skillId)}</span><h3>${esc(lecture.title)}</h3><small>${esc(lecture.summary)}</small></header>
       <div class="lecture-blocks">
         <div class="lecture-text"><h4>觀念</h4><p>${mathText(lecture.concept)}</p></div>
         ${lecture.formula ? `<div class="lecture-formula">${mathBlock(lecture.formula)}</div>` : ""}
         <div class="lecture-text"><h4>解題步驟</h4><ol>${lecture.stepGuide.map(step => `<li>${mathText(step)}</li>`).join("")}</ol></div>
+        ${figures}
         ${examples}
         <div class="lecture-pitfall"><strong>常見錯誤</strong><ul>${lecture.commonMistakes.map(mistake => `<li>${mathText(mistake)}</li>`).join("")}</ul></div>
         ${lecture.fullScoreExtension ? `<div class="clarify-box"><strong>滿分延伸：</strong>${mathText(lecture.fullScoreExtension)}</div>` : ""}

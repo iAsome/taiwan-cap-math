@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u17",
+  "batch": "018-u17-complete",
+  "skills": ["s005", "s006", "s018"],
+  "mc": [
+    {
+      "questionId": "u17-s005-v009",
+      "expectedContentSha256": "3542c0e41e4b2c6ae89dabd55e1ac41bdfe80ae28bd321a2f0b7c91a222fd962",
+      "set": {
+        "text": "a∥b，一對內錯角的度數比為3:3，且其中一個內錯角比它的相鄰角小40°。內錯角是多少？"
+      },
+      "reviewSet": {
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "題幹指定內錯角比相鄰補角小40°，所以180−2x=40唯一得x=70°；110°不符合『內錯角較小』。",
+          "undefinedSymbol": "題幹中的a、b與平行符號均已明確，內錯角和相鄰角也是本技能已定義的對象。",
+          "unitConflict": "角度統一以度表示，比值只表示內錯角相等，沒有單位混用。",
+          "roundingConflict": "題目資料均為精確角度，計算結果為70°，無需四捨五入。",
+          "domainBoundary": "只使用平行線內錯角相等、鄰補角和為180°及一元一次方程。",
+          "alternateReading": "『比相鄰角小40°』已指定差的方向，不能再解讀為內錯角比相鄰角大40°。"
+        },
+        "reviewerNote": "題目「a∥b，一對內錯角的度數比為3:3，且其中一個內錯角比它的相鄰角小40°。內錯角是多少？」中，設內錯角為x，相鄰補角為180−x；依題意得(180−x)−x=40，所以x=70°。逐項核對後只有70°正確。"
+      }
+    },
+    {
+      "questionId": "u17-s006-v006",
+      "expectedContentSha256": "d7797af14274f13bf3e09342e311b2369ebdc9e7803cf1bbe465e5beb82acb4c",
+      "set": {
+        "text": "已知 a∥b，某同位角為103°，與另一交點所求角相鄰的角是它的同位角。所求角是多少？"
+      },
+      "reviewSet": {
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "a∥b保證兩交點的同位角相等，而所求角與103°的對應角鄰補，故唯一為77°。",
+          "undefinedSymbol": "題幹已定義a、b為平行線，並指出同位角與所求角的相鄰關係。",
+          "unitConflict": "題目只使用角度，所有角均以度表示，沒有單位衝突。",
+          "roundingConflict": "依180°−103°得到77°為精確值，無需四捨五入。",
+          "domainBoundary": "只用平行線的同位角相等與鄰補角和為180°，在國中會考範圍內。",
+          "alternateReading": "平行條件與『所求角相鄰的角』已指定關係，不會把103°本身誤當所求角。"
+        },
+        "reviewerNote": "題目明示a∥b，因此另一交點的同位角也為103°。所求角與該角相鄰且為補角，所以所求角=180°−103°=77°。四個選項中只有77°滿足全部條件；再驗算77°+103°=180°，確定沒有第二答案。"
+      }
+    },
+    {
+      "questionId": "u17-s018-v012",
+      "expectedContentSha256": "608a52a9660a967fb30a41f26f9814863c8c02c0b250c6bbab0dac228c9110c7",
+      "replaceText": {
+        "平行四邊形的對角線互相垂直，因此ABCD為菱形": "平行四邊形若對角線互相垂直，則ABCD為菱形"
+      },
+      "reviewSet": {
+        "derivedAnswer": "平行四邊形若對角線互相垂直，則ABCD為菱形",
+        "storedAnswer": "平行四邊形若對角線互相垂直，則ABCD為菱形",
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "已知ABCD為平行四邊形，再配合對角線垂直即符合菱形判定；其餘選項是矩形性質或條件不足。",
+          "undefinedSymbol": "ABCD、AC、BD與垂直關係都已在題幹中明示，無未定義符號。",
+          "unitConflict": "本題只判斷幾何性質，不涉及長度或角度單位換算。",
+          "roundingConflict": "本題為性質判定，無任何近似值或四捨五入問題。",
+          "domainBoundary": "只使用平行四邊形與菱形的國中幾何判定。",
+          "alternateReading": "選項改為『若對角線垂直』，清楚表示這是平行四邊形判定為菱形的附加條件，不是所有平行四邊形的性質。"
+        },
+        "reviewerNote": "題幹先給ABCD是平行四邊形，又給AC⊥BD。在這個前提下，『平行四邊形若對角線互相垂直，則為菱形』是合法判定。四個選項中只有第三項同時使用已知與正確判定；其餘選項不是矩形性質，就是條件不足，不能推出另一答案。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u17-s018-cr002",
+      "expectedContentSha256": "2b55f3aefeadaae8dbf6fa45219ae3358b3c1690f4617939a70b0400e4eec48d",
+      "replaceText": {
+        "又AC⊥BD；平行四邊形的對角線互相垂直，故ABCD為菱形。": "又AC⊥BD；平行四邊形若對角線互相垂直，則為菱形，故ABCD為菱形。"
+      }
+    }
+  ],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

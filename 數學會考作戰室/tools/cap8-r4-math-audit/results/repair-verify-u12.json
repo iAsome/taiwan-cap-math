@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "unitId": "u12",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "013-u12-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-013-u12-complete\",\n  \"unitId\": \"u12\",\n  \"lockedSkillCount\": 10,\n  \"lectureCount\": 10,\n  \"mcQuestionCount\": 120,\n  \"constructedResponseCount\": 20,\n  \"semanticReviewCount\": 120,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 30,\n    \"standard\": 30,\n    \"advanced\": 30,\n    \"literacy\": 30\n  },\n  \"answerIndexCounts\": [\n    30,\n    30,\n    30,\n    30\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"internalExactDuplicateScanVerified\": true,\n  \"numericSkeletonDuplicateScanVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 10,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-013-u12-complete",
+          "unitId": "u12",
+          "lockedSkillCount": 10,
+          "lectureCount": 10,
+          "mcQuestionCount": 120,
+          "constructedResponseCount": 20,
+          "semanticReviewCount": 120,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 30,
+            "standard": 30,
+            "advanced": 30,
+            "literacy": 30
+          },
+          "answerIndexCounts": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "internalExactDuplicateScanVerified": true,
+          "numericSkeletonDuplicateScanVerified": true,
+          "legacyIsolationVerified": true,
+          "stagingPresent": true,
+          "emittedModuleCount": 10,
+          "productionActivationAllowed": false
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-013-u12-complete\",\n  \"unitId\": \"u12\",\n  \"lockedSkillCount\": 10,\n  \"lectureCount\": 10,\n  \"mcQuestionCount\": 120,\n  \"constructedResponseCount\": 20,\n  \"semanticReviewCount\": 120,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 30,\n    \"standard\": 30,\n    \"advanced\": 30,\n    \"literacy\": 30\n  },\n  \"answerIndexCounts\": [\n    30,\n    30,\n    30,\n    30\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"internalExactDuplicateScanVerified\": true,\n  \"numericSkeletonDuplicateScanVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 10,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-013-u12-complete",
+          "unitId": "u12",
+          "lockedSkillCount": 10,
+          "lectureCount": 10,
+          "mcQuestionCount": 120,
+          "constructedResponseCount": 20,
+          "semanticReviewCount": 120,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 30,
+            "standard": 30,
+            "advanced": 30,
+            "literacy": 30
+          },
+          "answerIndexCounts": [
+            30,
+            30,
+            30,
+            30
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "internalExactDuplicateScanVerified": true,
+          "numericSkeletonDuplicateScanVerified": true,
+          "legacyIsolationVerified": true,
+          "stagingPresent": true,
+          "emittedModuleCount": 10,
+          "productionActivationAllowed": false
+        }
+      }
+    }
+  ]
+}

@@ -55,7 +55,8 @@ export const LECTURE = {
     "素養題先辨認「要找什麼」，再選擇因式分解，而不是看到多項式就機械分解。",
     "乘積中的每個因式通常代表每組數量、排數、邊長或共同成本。",
     "代數上等價不代表情境上都可行；負長度、零組數或不整除都要排除。",
-    "資料表與方案比較要用同一標準，清楚寫出分解如何支持決策。"
+    "資料表與方案比較要用同一標準，清楚寫出分解如何支持決策。",
+    "素養題不以看到多項式就分解為目標，而是先讀清楚所求、單位與限制，再選擇能顯示情境結構的乘積形式。因式可能代表排數、每組數量、長寬或方案差的和因式與差因式；代數展開正確後，仍要檢查正值、整數、非零與單位是否可行。若要證明整除，分解應揭露需要的因數；若要比較面積或成本，則須把結果翻回同一量並用完整句子說明決策。"
   ],
   "formalDefinitions": [
     {
@@ -114,39 +115,47 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "活動座位總數 n^2+9n",
+      "prompt": "活動座位總數n²＋9n，解讀一種排列。",
       "solutionSteps": [
-        "n 可解讀為排數。",
-        "每排 n+9 席。"
+        "提出共同因式n，得n(n＋9)。",
+        "將n解讀為排數，n＋9解讀為每排席數。",
+        "檢查n為正整數時兩個計數量皆可行。"
       ],
-      "answer": "n(n+9)"
+      "answer": "n排、每排n＋9席",
+      "why": "乘積形式直接呈現排數乘每排席數，比展開式更能說明配置；n為正整數也保證沒有零排、負排或非整數席數。"
     },
     {
       "exampleId": "L2",
-      "prompt": "正方形外框材料差 52^2-48^2",
+      "prompt": "求正方形材料面積差52²－48²。",
       "solutionSteps": [
-        "用和乘差 100×4。",
-        "避免計算兩個平方。"
+        "辨認為兩個平方的差。",
+        "套公式得(52＋48)(52－48)。",
+        "計算100×4＝400平方單位。"
       ],
-      "answer": "400"
+      "answer": "400平方單位",
+      "why": "平方差公式把兩個較大的平方運算改成和乘差，計算更短且保留面積差意義；結果仍是面積，所以必須使用平方單位。"
     },
     {
       "exampleId": "L3",
-      "prompt": "展示板面積 x^2+11x+24",
+      "prompt": "展示板面積x²＋11x＋24，求可行邊長。",
       "solutionSteps": [
-        "兩邊可能為 x+3、x+8。",
-        "需 x>-3，實際常取 x>0。"
+        "找乘積24且和11的3與8。",
+        "分解為(x＋3)(x＋8)。",
+        "依實際尺寸檢查兩因式都必須大於零。"
       ],
-      "answer": "(x+3)(x+8)"
+      "answer": "邊長可為x＋3與x＋8",
+      "why": "常數因數配對還要同時符合一次項係數，不能只看乘積；將因式解讀為邊長後，再加入正值限制才是完整情境答案。"
     },
     {
       "exampleId": "L4",
-      "prompt": "兩方案成本差 4m^2-25",
+      "prompt": "方案差4m²－25，且m＞3，判斷差值符號。",
       "solutionSteps": [
-        "乘積可用來判斷差值符號。",
-        "還需依 m 的實際範圍判斷。"
+        "用平方差分解為(2m－5)(2m＋5)。",
+        "由m＞3得兩個因式都為正。",
+        "正數相乘為正，所以方案差值為正。"
       ],
-      "answer": "(2m-5)(2m+5)"
+      "answer": "差值為正",
+      "why": "因式內出現減號不代表因式必為負，必須套入變數範圍；分解同時顯示兩個因式的符號，才能支持方案比較結論。"
     }
   ],
   "difficultyConnections": {
@@ -242,7 +251,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "ba61c9e6b5c62120e4f58f0ba3c41a142a6544c2272376aadfd55efafbd15555"
+  "contentSha256": "00bc8bfc0d223e3c02eae6c200e09389be59bd4d819005d26fce1fce9aa757ac"
 };
 
 export const QUESTIONS = [
@@ -270,7 +279,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "展開可得 n²+4n。",
-    "explanation": "總座位數=排數 n×每排 n+4。",
+    "explanation": "總座位數=排數 n×每排 n+4。 總座位數等於排數乘每排席數。排數是n，每排比排數多4席，所以每排為n＋4，乘積應寫成n(n＋4)；展開後是n²＋4n，可回查情境中的兩個量。",
     "steps": [
       "辨認排數。",
       "把「多 4」寫成 n+4。",
@@ -298,7 +307,7 @@ export const QUESTIONS = [
         "reason": "只計算增加的席數，漏原本 n²。"
       }
     ],
-    "misconceptionTarget": "把「多 4」加在總數而非每排。",
+    "misconceptionTarget": "把「多 4」加在總數而非每排。 把每排多四席誤加在總數末尾，沒有先寫出每排n加四。",
     "prerequisiteCheck": "需會乘法計數。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "兩因式為席數計數，乘積為席；精確。",
@@ -317,7 +326,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "f6b43d451e5e0dbf54d7453f98ec72150b3617a9474d88ac1a91ecebe2c51ce7"
+    "contentSha256": "e10167050355d692b33976ce9965628cb87f0971aeb9d556d5b72d9c91d3b412"
   },
   {
     "questionId": "u12-s010-v002",
@@ -343,7 +352,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "正方形兩邊相同。",
-    "explanation": "面積=(x+3)(x+3)=x²+6x+9。",
+    "explanation": "面積=(x+3)(x+3)=x²+6x+9。 正方形長與寬都為x＋3，面積是(x＋3)²。完整展開得到x²＋3x＋3x＋9＝x²＋6x＋9平方公尺，不能只把x與3各自平方而漏掉兩個交叉項；兩個三x必須合併。",
     "steps": [
       "寫長乘寬。",
       "展開四項。",
@@ -371,7 +380,7 @@ export const QUESTIONS = [
         "reason": "這是周長的一半量級，不是面積。"
       }
     ],
-    "misconceptionTarget": "把和的平方當平方和。",
+    "misconceptionTarget": "把和的平方當平方和。 把和的平方誤當成平方和，遺漏兩個三x交叉項。",
     "prerequisiteCheck": "需知道正方形面積。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "公尺平方為平方公尺。",
@@ -390,7 +399,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "814cf479aee1ebda945811b1844a76dacfd28fc2dadd34d75e38064f3f406ffd"
+    "contentSha256": "c9cb94b525007cfd1eed4152c55521ef39765e49a92f3216e406a1b69e452b5d"
   },
   {
     "questionId": "u12-s010-v003",
@@ -416,7 +425,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "展開回總箱數。",
-    "explanation": "6x+9=3(2x+3)。",
+    "explanation": "6x+9=3(2x+3)。 總箱數是6x＋9，兩項都有公因數3。分別除以3得到2x與3，所以可寫成3(2x＋3)箱；展開後回到6x＋9，外面的3表示共同裝箱單位，括號表示單位份數。",
     "steps": [
       "找共同批量 3。",
       "各類換算棧板單位數。",
@@ -444,7 +453,7 @@ export const QUESTIONS = [
         "reason": "展開為 9x+9，不等於 6x+9。"
       }
     ],
-    "misconceptionTarget": "共同批量與剩餘份數混淆。",
+    "misconceptionTarget": "共同批量與剩餘份數混淆。 提出三後未將九正確除以三，或把外部共同單位與括號份數混淆。",
     "prerequisiteCheck": "需會提公因式。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "單位箱；括號為份數。",
@@ -463,7 +472,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "509ef52718bbc786dee10c9f724c93d69a1e77718d9683359a3f0bb1c7d01cfc"
+    "contentSha256": "4761dd827dd053662af9f1bc1464403358c66928c71d8c28e46c1012cdfe8149"
   },
   {
     "questionId": "u12-s010-v004",
@@ -489,7 +498,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x>0 使兩邊正。",
-    "explanation": "x²+9x+20=(x+5)(x+4)，兩邊差 1。",
+    "explanation": "x²+9x+20=(x+5)(x+4)，兩邊差 1。 面積式要找乘積為20且和為9的兩數，得到4與5，因此分解為(x＋4)(x＋5)。兩邊相差1公尺，正好符合規格；面積與邊差兩個條件都必須檢查。",
     "steps": [
       "列 20 因數配對。",
       "找和 9。",
@@ -517,7 +526,7 @@ export const QUESTIONS = [
         "reason": "5·4=20、5+4=9，差 1。"
       }
     ],
-    "misconceptionTarget": "只用差 1 猜尺寸，未核對面積。",
+    "misconceptionTarget": "只用差 1 猜尺寸，未核對面積。 只依兩邊相差一猜尺寸，沒有將候選邊長乘回原面積式。",
     "prerequisiteCheck": "需會首一分解。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "邊長公尺，面積平方公尺。",
@@ -536,7 +545,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3963159624c50da617fd48daf395daac5f982d600f10e095740856f040a579a1"
+    "contentSha256": "6b93457635811a5f422224feed63356a24e5534d358f2f07638e31b067bb32c9"
   },
   {
     "questionId": "u12-s010-v005",
@@ -562,7 +571,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "4096-1296=2800。",
-    "explanation": "64²-36²=100×28=2800。",
+    "explanation": "64²-36²=100×28=2800。 兩個面積的差為64²－36²，可用平方差公式化成(64＋36)(64－36)＝100×28＝2800。所求仍是兩塊材料的面積差，因此答案單位是平方公分，不是公分，量綱必須一致。",
     "steps": [
       "建立面積差。",
       "用和乘差。",
@@ -590,7 +599,7 @@ export const QUESTIONS = [
         "reason": "誤用 100×36。"
       }
     ],
-    "misconceptionTarget": "把面積差當邊長差平方。",
+    "misconceptionTarget": "把面積差當邊長差平方。 把兩個邊長的差二十八再平方，誤認為面積差。",
     "prerequisiteCheck": "需會平方差。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "平方公分；精確。",
@@ -609,7 +618,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "f3d1c138de22b31863efe09fb8006ff9401b3bc41e1a7cbf0e76702a33e94934"
+    "contentSha256": "bbc895b8a8eea3efc48dfa1c5843535a274b29ae50f5c2c11e12dcb8315cda31"
   },
   {
     "questionId": "u12-s010-v006",
@@ -631,11 +640,11 @@ export const QUESTIONS = [
       "(2n+1)(n+3)",
       "(2n+3)(n+1)",
       "(2n+2)(n+1)",
-      "(n+1)(2n+3)"
+      "(2n+3)(n+2)"
     ],
     "answerIndex": 0,
     "independentSolution": "兩因式皆為正整數計數。",
-    "explanation": "2n²+7n+3=(2n+1)(n+3)。",
+    "explanation": "2n²+7n+3=(2n+1)(n+3)。 將2n²＋7n＋3分解時，首項配2n與n、常數配1與3，交叉項6n＋n恰為7n，所以正確乘積是(2n＋1)(n＋3)。展開每個候選並逐項比較，即可排除其餘三項，確認答案唯一。",
     "steps": [
       "配首項 2n、n。",
       "配常數 1、3。",
@@ -645,25 +654,25 @@ export const QUESTIONS = [
       {
         "choice": "(2n+1)(n+3)",
         "truth": true,
-        "reason": "交叉項 6n+n=7n。"
+        "reason": "展開為2n²＋6n＋n＋3＝2n²＋7n＋3。"
       },
       {
         "choice": "(2n+3)(n+1)",
         "truth": false,
-        "reason": "交叉項 2n+3n=5n。"
+        "reason": "展開的一次項係數為5，不是7。"
       },
       {
         "choice": "(2n+2)(n+1)",
         "truth": false,
-        "reason": "展開為 2n²+4n+2。"
+        "reason": "展開為2n²＋4n＋2，三個係數都不完全吻合。"
       },
       {
-        "choice": "(n+1)(2n+3)",
+        "choice": "(2n+3)(n+2)",
         "truth": false,
-        "reason": "展開一次項為 5n。"
+        "reason": "一次項係數雖為7，但常數為6，不是3。"
       }
     ],
-    "misconceptionTarget": "只看常數乘積。",
+    "misconceptionTarget": "只看常數乘積。 只看兩常數的乘積為三，沒有核對兩個交叉乘積合併後必須為七n。",
     "prerequisiteCheck": "需會十字交乘。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "兩因式為計數，乘積為筆；無近似。",
@@ -682,7 +691,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4cb5771d189d80652226d88f9e1c06bee066591b206c5da2f86a0166439abb45"
+    "contentSha256": "fd4aad172efcadb1a2d59191319a56f170a933c9a799e05a9d982da96bb1563d"
   },
   {
     "questionId": "u12-s010-v007",
@@ -708,7 +717,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "不需求特定 m 值即可判斷。",
-    "explanation": "平方差分解後，用 m>3 判斷兩個因式皆正。",
+    "explanation": "平方差分解後，用 m>3 判斷兩個因式皆正。 4m²－25是(2m)²－5²，依平方差分解為(2m－5)(2m＋5)。當m＞3時，2m－5＞1且2m＋5＞11，兩因式都為正，所以其乘積與差值皆為正，符號結論明確。",
     "steps": [
       "分解平方差。",
       "代入範圍判斷因式符號。",
@@ -736,7 +745,7 @@ export const QUESTIONS = [
         "reason": "展開有一次項。"
       }
     ],
-    "misconceptionTarget": "把因式內減號直接當負因式。",
+    "misconceptionTarget": "把因式內減號直接當負因式。 只看到因式中有減五便判定整個因式或乘積為負。",
     "prerequisiteCheck": "需會平方差與不等式符號。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "產量差為件數模型；無近似。",
@@ -755,7 +764,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3e59ae7674409d4c286d554096bbe5271b873c6dceb46e57d3cb0865271536c3"
+    "contentSha256": "01878a107afb2430d486010979a98ab5a8a14c93672552a134f07e151e6a84e5"
   },
   {
     "questionId": "u12-s010-v008",
@@ -781,7 +790,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代數與情境可行性都通過。",
-    "explanation": "先展開驗證，再用範圍檢查實際尺寸。",
+    "explanation": "先展開驗證，再用範圍檢查實際尺寸。 展開廠商尺寸得6x²－3x＋4x－2＝6x²＋x－2，與面積完全吻合。又因x＞1，3x＋2與2x－1都嚴格為正，所以代數面積與實際尺寸可行性都通過。",
     "steps": [
       "展開四項。",
       "合併一次項。",
@@ -809,7 +818,7 @@ export const QUESTIONS = [
         "reason": "展開為 6x²+x-2；x>1 使 2x-1>1。"
       }
     ],
-    "misconceptionTarget": "只驗證面積或只看減號。",
+    "misconceptionTarget": "只驗證面積或只看減號。 只驗證面積式便忽略邊長正值，或看到二x減一就直接判負。",
     "prerequisiteCheck": "需會展開與正值判斷。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "邊長公尺、面積平方公尺。",
@@ -828,7 +837,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8ca32a8bbea9cfaf16a6ca475c55289856444f645dcfaea30170415db1d8cae9"
+    "contentSha256": "4e54e4be2c838ae7cd3eab5d1d8500a4204380fc2ddc482532b017b7c730d3ff"
   },
   {
     "questionId": "u12-s010-v009",
@@ -854,7 +863,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "乘積含 2 與 3 的因數，因此為 6 的倍數。",
-    "explanation": "先提 n，再把 n²+3n+2 分解為 (n+1)(n+2)。",
+    "explanation": "先提 n，再把 n²+3n+2 分解為 (n+1)(n+2)。 先提出公因式n，再把n²＋3n＋2分解為(n＋1)(n＋2)，得到三個連續整數n(n＋1)(n＋2)。連續三整數必含一個偶數與一個三的倍數，所以乘積一定是6的倍數。",
     "steps": [
       "提公因式 n。",
       "分解內部三項式。",
@@ -882,7 +891,7 @@ export const QUESTIONS = [
         "reason": "展開為 6n²+6n。"
       }
     ],
-    "misconceptionTarget": "停在半成品，未暴露足夠因數資訊。",
+    "misconceptionTarget": "停在半成品，未暴露足夠因數資訊。 停在n乘二次式的半分解形式，沒有顯示連續三整數中的二與三因數。",
     "prerequisiteCheck": "需會完整分解與整除。",
     "estimatedTimeSec": 135,
     "unitAndRoundingChecks": "無實際單位；整數精確。",
@@ -901,7 +910,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c9f85943b4581156a9545583d3076eef87e131dea96075eb538362d87c9cdc95"
+    "contentSha256": "8138d2199b5b12c2cb16add7d3bd0d0c45d17272aee6a6112edb41f64a2018b5"
   },
   {
     "questionId": "u12-s010-v010",
@@ -927,7 +936,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "展開回 3k²+15k+18。",
-    "explanation": "共同因式 3 提出後，6 的因數 2、3 和為 5。",
+    "explanation": "共同因式 3 提出後，6 的因數 2、3 和為 5。 三項都有公因數3，先提出得3(k²＋5k＋6)。括號內找乘積6、和5的2與3，再分解為3(k＋2)(k＋3)。三個因式都已不能在整數係數下繼續分解。",
     "steps": [
       "提 3。",
       "分解 k²+5k+6。",
@@ -955,7 +964,7 @@ export const QUESTIONS = [
         "reason": "中間項符號與原式相反。"
       }
     ],
-    "misconceptionTarget": "停在未完成形式。",
+    "misconceptionTarget": "停在未完成形式。 提出公因數三後便停止，沒有把括號內的二次三項式繼續分解。",
     "prerequisiteCheck": "需會兩層分解。",
     "estimatedTimeSec": 135,
     "unitAndRoundingChecks": "貨件為整數計數；k 正整數。",
@@ -974,7 +983,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "912f56ffccd242bb3b930bca0cbaca26b5c27868013000b8c9507754803a36ec"
+    "contentSha256": "d70e8d1ae5f24e1e0f0053b2d35e0552426bbc5fd323b4472a8a8ca24935a92a"
   },
   {
     "questionId": "u12-s010-v011",
@@ -1000,7 +1009,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "分解與符號結論都正確。",
-    "explanation": "9t²-16=(3t)²-4²；範圍使 3t-4≥2。",
+    "explanation": "9t²-16=(3t)²-4²；範圍使 3t-4≥2。 9t²－16是(3t)²－4²，平方差分解為(3t－4)(3t＋4)。當t≥2時，較小因式3t－4至少為2，另一因式也為正，因此兩因式乘積與方案差值都確定為正，結論完整。",
     "steps": [
       "套平方差。",
       "判斷兩因式符號。",
@@ -1028,7 +1037,7 @@ export const QUESTIONS = [
         "reason": "在 t≥2 時兩因式皆正。"
       }
     ],
-    "misconceptionTarget": "看見減號就判差值負。",
+    "misconceptionTarget": "看見減號就判差值負。 看見原式或因式中的減號就判定差值一定為負，未套用t的範圍。",
     "prerequisiteCheck": "需會平方差與範圍判斷。",
     "estimatedTimeSec": 135,
     "unitAndRoundingChecks": "輸出差依模型單位；無近似。",
@@ -1047,7 +1056,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c9954ab3f19c4e2972aba27febe8485d0270f4a223dc9445e03172ed79f648e5"
+    "contentSha256": "bb90a4931fee8e197ce86431ce569ae02378a5289a01d556b1e42f113fe13e53"
   },
   {
     "questionId": "u12-s010-v012",
@@ -1073,7 +1082,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x>0 時兩邊皆正。",
-    "explanation": "2x²+11x+12=(2x+3)(x+4)。",
+    "explanation": "2x²+11x+12=(2x+3)(x+4)。 首項2x²配成2x與x，常數12配成3與4；交叉項8x＋3x＝11x，因此分解為(2x＋3)(x＋4)。若x＞0，兩個邊長都為正，代數面積與場地尺寸皆可行，答案完整符合情境。",
     "steps": [
       "配首項。",
       "配常數 3、4。",
@@ -1101,7 +1110,7 @@ export const QUESTIONS = [
         "reason": "交叉項 8x+3x=11x，常數 12。"
       }
     ],
-    "misconceptionTarget": "只看常數 12 的因數。",
+    "misconceptionTarget": "只看常數 12 的因數。 只選常數乘積為十二的配對，沒有核對交叉項合併後必須為十一x。",
     "prerequisiteCheck": "需會非首一分解。",
     "estimatedTimeSec": 135,
     "unitAndRoundingChecks": "邊長公尺，面積平方公尺。",
@@ -1120,7 +1129,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ce6159215732800a073760b8e235b7dfe009b6c011b4b1b46223d2ffdfc6c6bb"
+    "contentSha256": "794c378ed12233533e6b557f2026ea3e9f9fc5f53b3024503b23e71c211fdc49"
   }
 ];
 
@@ -1142,15 +1151,17 @@ export const CONSTRUCTED_RESPONSES = [
       "說明整除條件。"
     ],
     "fullCreditSolution": [
-      "n²+7n=n(n+7)。",
-      "可排成 n 排，每排 n+7 席（或交換）。",
-      "因 n+7 仍為整數，總數除以非零的 n，商為 n+7，因此是 n 的倍數。"
+      "提出公因式n：n²＋7n＝n(n＋7)。兩因式可解讀為排數與每排席數。",
+      "例如排成n排、每排n＋7席；也可交換成n＋7排、每排n席，總座位數不變。",
+      "因n為正整數，n不為零且n＋7也是整數，總數除以n的商為n＋7，所以總座位數一定是n的倍數。"
     ],
     "alternativeSolutions": [
       "也可解讀為 n+7 排、每排 n 席；乘法交換不改總數。"
     ],
     "reasoningSteps": [
-      "n 正整數同時保證排數正與除數非零。"
+      "從兩個座位數項中提出共同因式n，得到乘積結構。",
+      "把兩個因式分別解讀為排數與每排席數，並說明可交換。",
+      "利用n為正整數確保除數非零且商為整數，完成倍數證明。"
     ],
     "rubric": [
       {
@@ -1181,8 +1192,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "answerOnlyPolicy": "只答 n(n+7) 最高 1 分。",
     "commonErrors": [
-      "把總座位數解讀成 n² 排。",
-      "宣稱含數字 7 所以是 7 的倍數。"
+      "把n平方誤解讀成n平方排，沒有將總數寫成兩個計數量的乘積。",
+      "因式中出現數字七就宣稱是七的倍數，未依整除定義檢查。"
     ],
     "independentReview": {
       "derivedResult": "n(n+7)：n 排、每排 n+7 席，為 n 的倍數。",
@@ -1192,7 +1203,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "285c84fb8e08d3d40b8d26ca214f9ca4cea6e0804708419f8c3a8d6108ed08df"
+    "contentSha256": "15337ff8ac7d21b3152b804035a7d4d1e5a85e441f70f4840874fc80ae707185"
   },
   {
     "questionId": "u12-s010-cr002",
@@ -1212,17 +1223,17 @@ export const CONSTRUCTED_RESPONSES = [
       "解釋尺寸限制與單位。"
     ],
     "fullCreditSolution": [
-      "面積差=(x+6)²-(x-6)²。",
-      "=[(x+6)+(x-6)]·[(x+6)-(x-6)]。",
-      "=2x·12=24x 平方公尺。",
-      "x>6 使內區邊長 x-6>0，外區也必為正。"
+      "兩區面積差為(x＋6)²－(x－6)²，把整個x＋6與x－6視為平方差公式中的兩個量。",
+      "套用平方差得[(x＋6)＋(x－6)]·[(x＋6)－(x－6)]＝2x·12＝24x平方公尺。",
+      "限制x＞6使內區邊長x－6嚴格為正，外區邊長x＋6也為正，因此兩個正方形尺寸皆可行。"
     ],
     "alternativeSolutions": [
       "可分別展開：x²+12x+36-[x²-12x+36]=24x，再用原式回查；但主要方法仍是平方差。"
     ],
     "reasoningSteps": [
-      "公式中的兩個「平方量」是整個 x+6、x-6。",
-      "和為 2x，差為 12。"
+      "先依正方形面積建立外區平方減內區平方。",
+      "以平方差的和因式與差因式化簡，注意減去括號會改變符號。",
+      "檢查內外邊長正值與面積單位，再回到情境作答。"
     ],
     "rubric": [
       {
@@ -1253,8 +1264,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "answerOnlyPolicy": "只答 24x 最高 1 分。",
     "commonErrors": [
-      "把 [(x+6)-(x-6)] 算成 0。",
-      "將 (x-6)² 寫成 x²-36。"
+      "把(x＋6)減(x－6)算成零，忘記減號要分配到第二個括號。",
+      "把(x－6)²誤寫成x²－36，遺漏負十二x交叉項。"
     ],
     "independentReview": {
       "derivedResult": "面積差 24x 平方公尺，且 x>6 確保內區邊長正。",
@@ -1264,7 +1275,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "274013184b53288a299ae1e6bfbdcc758916756a9d23d8ff0689c30e6ca35e65"
+    "contentSha256": "ca4e2f41308734d26c8c8b8394449c24cb1a7835920d5b00683e588cd3e1045e"
   }
 ];
 
@@ -1273,7 +1284,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v001",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "f6b43d451e5e0dbf54d7453f98ec72150b3617a9474d88ac1a91ecebe2c51ce7",
+    "contentSha256": "e10167050355d692b33976ce9965628cb87f0971aeb9d556d5b72d9c91d3b412",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開可得 n²+4n。",
     "derivedAnswer": "n(n+4)",
@@ -1307,7 +1318,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v002",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "814cf479aee1ebda945811b1844a76dacfd28fc2dadd34d75e38064f3f406ffd",
+    "contentSha256": "c9cb94b525007cfd1eed4152c55521ef39765e49a92f3216e406a1b69e452b5d",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "正方形兩邊相同。",
     "derivedAnswer": "x²+6x+9 平方公尺",
@@ -1341,7 +1352,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v003",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "509ef52718bbc786dee10c9f724c93d69a1e77718d9683359a3f0bb1c7d01cfc",
+    "contentSha256": "4761dd827dd053662af9f1bc1464403358c66928c71d8c28e46c1012cdfe8149",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開回總箱數。",
     "derivedAnswer": "3(2x+3) 箱",
@@ -1375,7 +1386,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v004",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "3963159624c50da617fd48daf395daac5f982d600f10e095740856f040a579a1",
+    "contentSha256": "6b93457635811a5f422224feed63356a24e5534d358f2f07638e31b067bb32c9",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "x>0 使兩邊正。",
     "derivedAnswer": "x+5 與 x+4 公尺",
@@ -1409,7 +1420,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v005",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "f3d1c138de22b31863efe09fb8006ff9401b3bc41e1a7cbf0e76702a33e94934",
+    "contentSha256": "bbc895b8a8eea3efc48dfa1c5843535a274b29ae50f5c2c11e12dcb8315cda31",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "4096-1296=2800。",
     "derivedAnswer": "2800 平方公分",
@@ -1443,7 +1454,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v006",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "4cb5771d189d80652226d88f9e1c06bee066591b206c5da2f86a0166439abb45",
+    "contentSha256": "fd4aad172efcadb1a2d59191319a56f170a933c9a799e05a9d982da96bb1563d",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "兩因式皆為正整數計數。",
     "derivedAnswer": "(2n+1)(n+3)",
@@ -1457,7 +1468,7 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "針對題目「一個資料表把總筆數寫成 2n²+7n+3。若要分成「伺服器數×每台筆數」，哪個乘積正確？」逐一展開或回代；正解「(2n+1)(n+3)」成立。「(2n+3)(n+1)」不成立：交叉項 2n+3n=5n。；「(2n+2)(n+1)」不成立：展開為 2n²+4n+2。；「(n+1)(2n+3)」不成立：展開一次項為 5n。",
+      "secondCorrectAnswer": "針對題目「一個資料表把總筆數寫成 2n²+7n+3。若要分成「伺服器數×每台筆數」，哪個乘積正確？」逐一展開或回代；正解「(2n+1)(n+3)」成立。「(2n+3)(n+1)」不成立：交叉項 2n+3n=5n。；「(2n+2)(n+1)」不成立：展開為 2n²+4n+2。；「(2n+3)(n+2)」不成立：展開常數為 6，不是 3。",
       "undefinedSymbol": "題幹已給條件為「n 為正整數。」；所用變數、平方、括號與乘法均由本技能講義定義，目標是「分解非首一二次式。」。",
       "unitConflict": "本題單位審查：兩因式為計數，乘積為筆；無近似。 選項中的單位依同一所求量比較，未把長度與面積或計數混算。",
       "roundingConflict": "本題計算屬精確代數或整數運算；兩因式為計數，乘積為筆；無近似。 題幹沒有近似值、有效位數或四捨五入競爭答案。",
@@ -1477,7 +1488,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v007",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "3e59ae7674409d4c286d554096bbe5271b873c6dceb46e57d3cb0865271536c3",
+    "contentSha256": "01878a107afb2430d486010979a98ab5a8a14c93672552a134f07e151e6a84e5",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "不需求特定 m 值即可判斷。",
     "derivedAnswer": "4m²-25=(2m-5)(2m+5)，且兩因式皆正，所以差值為正",
@@ -1511,7 +1522,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v008",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "8ca32a8bbea9cfaf16a6ca475c55289856444f645dcfaea30170415db1d8cae9",
+    "contentSha256": "4e54e4be2c838ae7cd3eab5d1d8500a4204380fc2ddc482532b017b7c730d3ff",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "代數與情境可行性都通過。",
     "derivedAnswer": "方案正確且兩邊為正",
@@ -1545,7 +1556,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v009",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "c9f85943b4581156a9545583d3076eef87e131dea96075eb538362d87c9cdc95",
+    "contentSha256": "8138d2199b5b12c2cb16add7d3bd0d0c45d17272aee6a6112edb41f64a2018b5",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "乘積含 2 與 3 的因數，因此為 6 的倍數。",
     "derivedAnswer": "n(n+1)(n+2)",
@@ -1579,7 +1590,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v010",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "912f56ffccd242bb3b930bca0cbaca26b5c27868013000b8c9507754803a36ec",
+    "contentSha256": "d70e8d1ae5f24e1e0f0053b2d35e0552426bbc5fd323b4472a8a8ca24935a92a",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開回 3k²+15k+18。",
     "derivedAnswer": "3(k+2)(k+3)",
@@ -1613,7 +1624,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v011",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "c9954ab3f19c4e2972aba27febe8485d0270f4a223dc9445e03172ed79f648e5",
+    "contentSha256": "bb90a4931fee8e197ce86431ce569ae02378a5289a01d556b1e42f113fe13e53",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "分解與符號結論都正確。",
     "derivedAnswer": "差值=(3t-4)(3t+4)，且 t≥2 時差值為正",
@@ -1647,7 +1658,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s010-v012",
     "unitId": "u12",
     "skillId": "factoring-literacy",
-    "contentSha256": "ce6159215732800a073760b8e235b7dfe009b6c011b4b1b46223d2ffdfc6c6bb",
+    "contentSha256": "794c378ed12233533e6b557f2026ea3e9f9fc5f53b3024503b23e71c211fdc49",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "x>0 時兩邊皆正。",
     "derivedAnswer": "2x+3 與 x+4 公尺",

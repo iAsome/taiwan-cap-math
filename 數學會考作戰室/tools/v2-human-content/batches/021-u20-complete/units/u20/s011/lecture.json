@@ -107,6 +107,11 @@
       "step": 4,
       "instruction": "需要面積時，把三邊分別當底。",
       "check": "三個高是否皆為r？"
+    },
+    {
+      "step": 5,
+      "instruction": "完成後用三個垂距或面積分割回查。",
+      "check": "半徑、半周長與面積單位是否一致？"
     }
   ],
   "workedExamples": [
@@ -117,7 +122,8 @@
         "∠B/2=20°。",
         "90°+20°=110°。"
       ],
-      "answer": "110°。"
+      "answer": "110°。",
+      "why": "內心夾角由三角形 AIC 的兩個半角與內角和推出，所以先取 B 的一半再加九十度，能避免漏掉固定項；結果也可代回內角和驗算。"
     },
     {
       "exampleId": "L2",
@@ -126,7 +132,8 @@
         "半周長=12。",
         "K=rs=2×12。"
       ],
-      "answer": "24平方單位。"
+      "answer": "24平方單位。",
+      "why": "三個以原三邊為底的小三角形共用高 r，面積相加等於 r 乘半周長；代入資料即可得到二十四平方單位。"
     }
   ],
   "commonMistakes": [
@@ -144,6 +151,11 @@
       "mistake": "用內心到頂點當半徑。",
       "why": "內切圓與邊相切。",
       "correction": "作邊的垂線。"
+    },
+    {
+      "mistake": "只畫一個看似置中的圓便宣稱是內切圓。",
+      "why": "圓在圖形內不代表同時與三邊相切。",
+      "correction": "由內心向三邊作垂線，確認三段同為半徑且三處相切。"
     }
   ],
   "selfCheck": [
@@ -199,5 +211,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "032ff43c7ca1808b9a81b07204004877f8edc1b72005fef6d0d9cea66d20c9fd"
+  "contentSha256": "94797ead484143932137bd4e16280dea8c73ceb88af0f84c1a7904aeb6e2bc05"
 }

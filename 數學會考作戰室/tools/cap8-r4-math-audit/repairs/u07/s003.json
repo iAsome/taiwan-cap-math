@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u07",
+  "batch": "008-u07-complete",
+  "skills": ["s003"],
+  "mc": [
+    {
+      "questionId": "u07-s003-v001",
+      "expectedContentSha256": "e820fbc74292b19243f6c1228c6e1190ac849535a9c0c7a005fd32b9e564753d",
+      "appendText": {"explanation": "以x=6代回左式15、右式14而成立；x=5兩邊同為13不符合嚴格大於。因此右側大於五的區間才與兩次回代一致。", "misconceptionTarget": "也可能把兩邊同減x誤做成2x-x=2而丟失未知數。"},
+      "appendArray": {"steps": ["代入6與5，核對方向及端點不含。"]}
+    },
+    {
+      "questionId": "u07-s003-v002",
+      "expectedContentSha256": "dd4521ae927b7e6b9eb79985e2daedc9b0eb09d4118fffaa225ab6b1b5aceb92",
+      "appendText": {"explanation": "除數2為正所以方向保持；x=7使兩邊同為31而成立，確認端點含入。範圍外的八使左式三十六大於右式三十四，故不是解。", "misconceptionTarget": "還可能把五x減三x錯算成八x，或漏掉原本的等號。"},
+      "appendArray": {"steps": ["將x=7與8代回，驗證上界方向與端點。"]}
+    },
+    {
+      "questionId": "u07-s003-v003",
+      "expectedContentSha256": "e677418e017e33cfcc00b32868b3b23b6943c16ac6434db7945ce6bbbffab5ad",
+      "appendText": {"explanation": "完整寫成4x+9-9<21-9可看出兩邊做相同運算，沒有任何變號理由。化簡後的左邊只剩四x，右邊為十二。", "misconceptionTarget": "也可能只刪左邊九，卻沒有在右邊扣除同一數。"},
+      "appendArray": {"steps": ["展開兩邊同減9的完整一行，再化簡成4x<12。"]}
+    },
+    {
+      "questionId": "u07-s003-v004",
+      "expectedContentSha256": "e82e8e8ea14243ec06d9b0336d978b020b49569e34a64dbcb24289a6413aafe8",
+      "appendText": {"explanation": "先展開成3x+6>2x+11，再集中同類項得x>5。x=6代入得24>23成立，x=5得21>21為假，故答案是嚴格大於5且範圍向右延伸。", "misconceptionTarget": "還可能把三分配給x卻漏乘括號內的二，導致端點錯。"},
+      "appendArray": {"steps": ["用x=6與5回代原括號式，檢查端點與方向。"]}
+    },
+    {
+      "questionId": "u07-s003-v005",
+      "expectedContentSha256": "521b41585b2d447cc8af6c08a3b3ac801603290ff979c61e1759e786111681fe",
+      "appendText": {"explanation": "把4≥x按未知數在左改寫時須成x≤4；代入4成立、5失敗，驗證方向。這也排除把交換左右位置誤當成保留符號。", "misconceptionTarget": "也可能看到原式有負x就提前套用下一節的變號規則。"},
+      "appendArray": {"steps": ["將結果改寫成x≤4，並用4、5代入原式驗算。"]}
+    },
+    {
+      "questionId": "u07-s003-v006",
+      "expectedContentSha256": "fdc47a7c9384cee0c4a334d811e63a3be716b41be32d6a7472f1f82c1068c265",
+      "appendText": {"explanation": "第一個過程可展開成左右同加5，其餘選項都無法還原為同一等價運算。", "misconceptionTarget": "還可能只背跨邊變號，沒有檢查被搬動項原本是正或負。"},
+      "appendArray": {"steps": ["把四個箭頭各還原為兩邊同加減，判斷只有第一項等價。"]}
+    },
+    {
+      "questionId": "u07-s003-v007",
+      "expectedContentSha256": "6d2def3f7e84a07b4b15645917054a678fe06b6aab2b9469af3c17899ad58b56",
+      "appendText": {"explanation": "展開得六x-2小於等於四x+10，整理得x小於等於六。x=6代入左右皆為34而成立，x=7時左40大於右38而不符合≤。", "misconceptionTarget": "也可能把六x減四x算錯，或把等號端點排除。"},
+      "appendArray": {"steps": ["以6與7代回含括號原式，檢查端點與外部值。"]}
+    },
+    {
+      "questionId": "u07-s003-v008",
+      "expectedContentSha256": "47870f6577bd0b66ae8f2ad19f60c64b0fb508be1acf9ea4bc828c249ead4c4f",
+      "appendText": {"explanation": "括號前的減號使-x與+3同時出現，整理成九大於三x後得x小於三；x=2成立而x=3兩邊相等不成立，方向無誤。", "misconceptionTarget": "還可能把五減括號錯展開成五減x減三，端點因而改變。"},
+      "appendArray": {"steps": ["展開後以x=2與3回代，驗證x<3。"]}
+    },
+    {
+      "questionId": "u07-s003-v009",
+      "expectedContentSha256": "1ae803fc70bccf17ad6a02524f2f2c1401e8d82b524afa22e068a28a9fde1355",
+      "appendText": {"explanation": "先整理一般式得二x小於等於九減a，要使上界為二，九減a必須等於四，所以a=5。代回得4x+5≤2x+9，確實同解。", "misconceptionTarget": "也可能只比較常數a與端點2，沒有先求出一般解集端點。"},
+      "appendArray": {"steps": ["將a=5代回原不等式重新求解，確認端點與方向。"]}
+    },
+    {
+      "questionId": "u07-s003-v010",
+      "expectedContentSha256": "ad02369d41a03c5dcd71710448b781fbc4669ac84ca9428ffc0ba98803456c08",
+      "appendText": {"explanation": "例如c=200時折後700低於750，代入正確式為真，亦驗證折價量須從900扣除。若列成加法，折價越多反而價格越高，不合題意。", "misconceptionTarget": "還可能把折價券金額加到原價，或把低於寫成含等號。"},
+      "appendArray": {"steps": ["以c=200測試四個列式，確認只有900-c<750符合情境。"]}
+    },
+    {
+      "questionId": "u07-s003-v011",
+      "expectedContentSha256": "6a162b1f86079d38df8b3ab386cac0c26723d6ead070cdb08d264435ec3878ce",
+      "appendText": {"explanation": "搭12次餘額116剛好符合至少；搭13次只剩84，故12是最大整數解。次數不能取小數，因此上界的整數詮釋很必要。", "misconceptionTarget": "還可能把最多可搭次數向上取整，或忘記保留額可剛好等於116。"},
+      "appendArray": {"steps": ["比較12與13次的餘額，確認最大可行整數。"]}
+    },
+    {
+      "questionId": "u07-s003-v012",
+      "expectedContentSha256": "d25d4119f64d6e318e17ba2f14f4f3182df14570a2aa33455950b84f59a4f7c1",
+      "appendText": {"explanation": "四分鐘後恰22不符合低於；五分鐘後20.5才成立，因此完整分鐘至少5。時間限定為完整分鐘，不能以分數時間代替。", "misconceptionTarget": "還可能忽略時間須為完整分鐘，或把t>4的最小整數寫成4。"},
+      "appendArray": {"steps": ["計算4與5分鐘後溫度，檢查嚴格門檻。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u07-s003-cr001",
+      "expectedContentSha256": "c665f3786d81040625f0eba2c8f09583705a30986751ac3ee67ed7a35b1587e5",
+      "set": {
+        "fullCreditSolution": ["等價運算寫法：兩邊同減2x得3x-8>13，再兩邊同加8得3x>21。", "因3為正，兩邊同除以3而不改方向，得到x>7。", "移項簡寫為5x-2x>13+8，再化簡成3x>21與x>7。", "把右側2x移到左側變-2x，本質是兩邊同減2x；把左側-8移到右側變+8，本質是兩邊同加8，所以兩種寫法等價。", "用x=8代入原式得32>29成立，x=7兩邊同為27不成立，驗證方向與嚴格端點。"],
+        "reasoningSteps": ["以兩邊同減2x集中未知數。", "以兩邊同加8集中常數。", "除以正三求出x>7。", "把兩個移項分別還原成等價運算。", "以8與7回代原式驗算。"],
+        "commonErrors": ["把右邊的+2x移到左邊仍寫+2x，未做相反運算。", "把同加減項誤認為需要反向不等號，或把每一行錯寫成等號。"]
+      }
+    },
+    {
+      "questionId": "u07-s003-cr002",
+      "expectedContentSha256": "3707095f99561c2ba0ccd10a3f5664bac24ab0c852842ece5ab7da3b6c9daaf7",
+      "set": {
+        "fullCreditSolution": ["先用分配律展開3(2x-5)=6x-15，所以原式為6x-15≤4x+7。", "兩邊同減4x再同加15，得到2x≤22。", "兩邊同除以正數2，方向不變，得到x≤11。", "三階段常見錯誤分別是括號內-5漏乘3、移項未改加減號、除以正數2卻誤反向。", "邊界11使左右都為51而成立，12使左57大於右55而失敗，驗證上界。"],
+        "reasoningSteps": ["完整分配三到括號兩項。", "整理未知數項與常數項。", "除以正二求範圍。", "逐階段辨識不同錯誤。", "用11與12代入驗算。"],
+        "commonErrors": ["把3(2x-5)展開成6x-5，沒有讓3乘到第二項。", "把移項與除負數混淆，或除以正二時不必要地反轉≤。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u07-s003-lecture-r1",
+      "expectedContentSha256": "ab8cb0aab5c65d0ce9275e8194217d63a1ff630b11a48ac3643be0eccc6d6c60",
+      "appendArray": {"conceptNarrative": ["移項後應能逐項還原成左右同加或同減相同式子；完成括號與同類項整理後，再以原式的邊界、內部值及外部值驗證，才能發現漏乘或符號錯誤。"]},
+      "set": {
+        "method": [
+          {"step": 1, "instruction": "有括號時先完整分配並合併同類項。", "check": "括號內每一項都被乘到。"},
+          {"step": 2, "instruction": "把未知數項集中到能得到正係數的一側。", "check": "跨邊加減可還原成等價運算。"},
+          {"step": 3, "instruction": "把常數集中到另一側。", "check": "移項只改該項加減號，不改不等號。"},
+          {"step": 4, "instruction": "除以正係數並把結果寫成x的標準範圍。", "check": "交換左右書寫時維持大小語意。"},
+          {"step": 5, "instruction": "代入邊界、內外各一值回原式驗算。", "check": "端點及射線方向都一致。"}
+        ],
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "解3x-5>x+7。", "solutionSteps": ["兩邊同減x得2x-5>7。", "兩邊同加5得2x>12。", "除正二得x>6並驗算。"], "answer": "x>6。", "why": "先集中未知數再集中常數，每次移項都能還原成兩邊同做相同加減。除數二為正，方向保持；七代入成立而六為端點不成立，確認嚴格大於。"},
+          {"exampleId": "L2", "prompt": "解5x+4≤2x+19。", "solutionSteps": ["兩邊同減2x得3x+4≤19。", "兩邊同減4得3x≤15。", "除正三得x≤5並驗算端點。"], "answer": "x≤5。", "why": "將較小的未知數項移到左側可保留正係數，避免尚未學到的負數除法。端點五使原式左右都為二十九，因≤含等號而應納入。"},
+          {"exampleId": "L3", "prompt": "解2(x+3)<x+10。", "solutionSteps": ["展開為2x+6<x+10。", "同減x與6得x<4。", "用3與4代回原括號式。"], "answer": "x<4。", "why": "分配律必須讓二同時乘到x與三，才得到正確的二x加六。整理後端點四使兩邊相等而不符合，小於四的三成立，因此答案方向正確。"},
+          {"exampleId": "L4", "prompt": "解7-2x≥3-x。", "solutionSteps": ["兩邊同加2x得7≥3+x。", "兩邊同減3得4≥x。", "改寫為x≤4並以4、5驗算。"], "answer": "x≤4。", "why": "先把負未知數移到右側可得到正係數x，無須除以負數。四大於或等於x等價於x小於或等於四；端點四成立、五失敗，證明改寫未反向。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

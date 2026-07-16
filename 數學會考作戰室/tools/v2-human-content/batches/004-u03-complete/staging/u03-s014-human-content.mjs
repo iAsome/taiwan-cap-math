@@ -116,41 +116,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "A=150+5x，B=30+9x。",
+      "answer": "30次同價。",
       "solutionSteps": [
-        "令兩式相等。",
-        "120=4x。",
-        "x=30。"
+        "令兩個完整費用式相等：150+5x=30+9x。",
+        "移項得 120=4x，所以 x=30。",
+        "代入三十次，A 與 B 均為 300 元。"
       ],
-      "answer": "30次同價。"
+      "why": "同價點必須比較兩方案的完整總費用，不能只用基本費差除以某一個單價。這裡基本費差是一百二十元，每次費用差是四元，所以需三十次才抵消；代入兩式同得三百元，證明是精確交點。"
     },
     {
-      "exampleId": "L2",
       "prompt": "A=80+6x，B=120+6x。",
+      "answer": "A永遠便宜40元。",
       "solutionSteps": [
-        "單位費相同。",
-        "A基本費少40。"
+        "比較兩方案每次費，都是 6 元。",
+        "相減 B-A=(120+6x)-(80+6x)=40。",
+        "因差額與 x 無關，判定 A 在任何使用量都便宜 40 元。"
       ],
-      "answer": "A永遠便宜40元。"
+      "why": "兩方案的單位費完全相同，所以使用量每增加一次，兩者都增加六元，費用差不會改變。從基本費可看出 A 已比 B 少四十元；x 項相減後消去，證明兩條費用線平行，不存在同價點。"
     },
     {
-      "exampleId": "L3",
       "prompt": "A=300元不限次，B=50x。",
+      "answer": "6次同價。",
       "solutionSteps": [
-        "300=50x。",
-        "x=6。"
+        "方案 A 為固定 300 元，方案 B 使用 x 次為 50x 元。",
+        "令 300=50x，兩邊除以 50 得 x=6。",
+        "驗算 B 使用 6 次為 50×6=300 元，與 A 相同。"
       ],
-      "answer": "6次同價。"
+      "why": "「不限次」表示方案 A 的總費用不隨次數改變，而方案 B 每使用一次增加五十元。因此同價就是讓 B 的累計費用達到三百元，五十乘六正好是三百；這也說明六次以下 B 較便宜，超過六次 A 較便宜。"
     },
     {
-      "exampleId": "L4",
       "prompt": "兩方案在20次同價，A每次增加4元、B增加7元。",
+      "answer": "x>20選A。",
       "solutionSteps": [
-        "20次後每多一次B多增加3元。",
-        "因此超過20次A較便宜。"
+        "以 20 次為兩方案費用相等的基準點。",
+        "超過 20 次後，每多一次，B 比 A 多增加 7-4=3 元。",
+        "因此 x>20 時 A 較便宜；x=20 時仍同價。"
       ],
-      "answer": "x>20選A。"
+      "why": "既然二十次時兩方案已知同價，判斷交點之後只需比較每次增加量，不再需要基本費。B 的增幅每次比 A 多三元，所以從第二十一次起，B 的總費用會逐次高於 A；因此超過二十次應選 A。"
     }
   ],
   "commonMistakes": [
@@ -236,7 +239,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "065e115ed3c281b1978a1dd6be851f10ba035d06e32d5dbf1c57f81846cdbee1",
+  "contentSha256": "8c24293f78e3fab5e713f7ef5e07e69bed79d287c932fb91fe235cf1be90608d",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 };
@@ -261,7 +264,7 @@ export const QUESTIONS = [
       "14"
     ],
     "answerIndex": 0,
-    "explanation": "令兩費用相等；移項得60=5x；解得12次。所以答案是「12」。",
+    "explanation": "令兩費用相等；移項得60=5x；解得12次。所以答案是「12」。 將兩方案完整費用相減可得基本費差 60 元、每次費差 5 元，所以 60÷5=12。代入 x=12 時，A 與 B 都是 220 元，確認同價。",
     "steps": [
       "令兩費用相等",
       "移項得60=5x",
@@ -289,7 +292,7 @@ export const QUESTIONS = [
         "reason": "代入14時A較便宜。"
       }
     ],
-    "commonMistake": "只比較基本費差。",
+    "commonMistake": "只比較兩方案的基本費差六十元，忽略每次費用也相差五元。",
     "concept": "同價點由兩費用式相等求得。",
     "tags": [
       "代數",
@@ -304,7 +307,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "69a54b50c3d7a869f0ce75b8f586c9d63c8a11093eb435a9b0d7ff98f2ef1b36",
+    "contentSha256": "cb8903bfeb045d771b3070926c96ff214138541ef0d51b59452933152c74b81e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -327,7 +330,7 @@ export const QUESTIONS = [
       "300"
     ],
     "answerIndex": 1,
-    "explanation": "兩式相等；基本費差300；單價差3得100。所以答案是「100」。",
+    "explanation": "兩式相等；基本費差300；單價差3得100。所以答案是「100」。 移項後基本費差是 300 元，單位費差是 3 元，因此 x=100。代入後 A=500+200=700，B=200+500=700，兩方案確實同價，而 x 的單位是使用次數。",
     "steps": [
       "兩式相等",
       "基本費差300",
@@ -355,7 +358,7 @@ export const QUESTIONS = [
         "reason": "300是費用差不是次數。"
       }
     ],
-    "commonMistake": "忽略某一方案的單位費。",
+    "commonMistake": "移項時漏掉其中一方案的每次費，誤用三百直接除以五。",
     "concept": "同價條件仍需完整方程式。",
     "tags": [
       "代數",
@@ -370,7 +373,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "84bc4cd968f20d1ce4bf6c9982a6f56c15ea3cefdff80aa3e1ae57ab4d05ee8c",
+    "contentSha256": "39f6bbf48262e9ca006b1f4c48701a0556a6b33fc77785e1df5fc102b6b25865",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -393,7 +396,7 @@ export const QUESTIONS = [
       "方案A便宜60元"
     ],
     "answerIndex": 2,
-    "explanation": "代入x=20計算A；計算B；比較皆200。所以答案是「兩方案同價」。",
+    "explanation": "代入x=20計算A；計算B；比較皆200。所以答案是「兩方案同價」。 必須把二十次同時代入兩個完整費用式。A=80+6×20=200，B=20+9×20=200，差額為零，所以不是任一方便宜三十或六十元。",
     "steps": [
       "代入x=20計算A",
       "計算B",
@@ -421,7 +424,7 @@ export const QUESTIONS = [
         "reason": "基本費差60被錯當總差。"
       }
     ],
-    "commonMistake": "只比較基本費。",
+    "commonMistake": "只看 A 與 B 的基本費相差六十元，沒有加上二十次的各自變動費用。",
     "concept": "分別代入同一x。",
     "tags": [
       "代數",
@@ -436,7 +439,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d8a6ffb95ba31306a37c672d993bbad7a5090e664b82893a696c3eacaa8c0bb9",
+    "contentSha256": "cad8b577c8d9b82efd9e4535ba1f34590fd5dd7522274c415ecad7bf1579fc6f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -459,7 +462,7 @@ export const QUESTIONS = [
       "方案 A"
     ],
     "answerIndex": 3,
-    "explanation": "先求同價點20；比較超過交點後的單位費；A增幅較小。所以答案是「方案 A」。",
+    "explanation": "先求同價點20；比較超過交點後的單位費；A增幅較小。所以答案是「方案 A」。 在二十次之後，每再增加一次，A 只增加 4 元，B 卻增加 7 元，所以 B 每次會多出 3 元。因此 x>20 時 A 的總費用必較低。",
     "steps": [
       "先求同價點20",
       "比較超過交點後的單位費",
@@ -487,7 +490,7 @@ export const QUESTIONS = [
         "reason": "同價點120+4x=60+7x得x=20；超過20後A每單位增加4元，B增加7元，所以A較便宜。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "只看基本費較低的方案B。",
+    "commonMistake": "只看 B 的基本費較低就選 B，忽略超過交點後 B 的單位費增加得更快。",
     "concept": "超過同價點後單位費低者較便宜。",
     "tags": [
       "代數",
@@ -502,7 +505,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "560554ddf3ec409a22c5a7d579efec8ab4df68f8e1c3dce6936cdcdac9fa2250",
+    "contentSha256": "91072bac778908f3b6410e44abeafd5e87eb9d4f6df4ebfc6b7f7eeca2a783ce",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -525,7 +528,7 @@ export const QUESTIONS = [
       "32"
     ],
     "answerIndex": 1,
-    "explanation": "令總費用相等；移項得200=8x；x=25。所以答案是「25」。",
+    "explanation": "令總費用相等；移項得200=8x；x=25。所以答案是「25」。 同價時不是用 200 除以任一方的單價，而是用基本費 200 除以兩方案每次費差 16-8=8，得 25 次。驗算兩方都是 400 元。",
     "steps": [
       "令總費用相等",
       "移項得200=8x",
@@ -553,7 +556,7 @@ export const QUESTIONS = [
         "reason": "把兩單價相加。"
       }
     ],
-    "commonMistake": "只用固定費除某一單價。",
+    "commonMistake": "只把月費二百元除以方案 B 的每次十六元，忽略方案 A 也有每次八元費用。",
     "concept": "固定費由單價差補回。",
     "tags": [
       "代數",
@@ -568,7 +571,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2d3c13203e4a938430761c6478bda9910bf87c000d40f2385c780090937563d9",
+    "contentSha256": "3f456763259d821251f1fa3f8980f217c3aba20bfb11c13a41c28aa05fada7ab",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -591,7 +594,7 @@ export const QUESTIONS = [
       "費用大小隨x改變"
     ],
     "answerIndex": 2,
-    "explanation": "比較相同斜率4；只剩基本費差20；A永遠便宜。所以答案是「方案 A 永遠便宜 20 元」。",
+    "explanation": "比較相同斜率4；只剩基本費差20；A永遠便宜。所以答案是「方案 A 永遠便宜 20 元」。 相減得 B-A=(100+4x)-(80+4x)=20，x 項完全抵消。因此不論使用多少次，B 都比 A 多 20 元；兩條費用線平行，不會相交。",
     "steps": [
       "比較相同斜率4",
       "只剩基本費差20",
@@ -634,7 +637,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "77a0e1f7b72e0ef1282f5cccfa15a8d38f30011c4a8502f4541d55934f599673",
+    "contentSha256": "a60ad48bf42e1bf83fc8ab946c0f0fe1e5597645e1f747cc80472a1e068c2142",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -657,7 +660,7 @@ export const QUESTIONS = [
       "30"
     ],
     "answerIndex": 3,
-    "explanation": "令兩方案費用相等；移項得150=5x；解得30次。所以答案是「30」。",
+    "explanation": "令兩方案費用相等；移項得150=5x；解得30次。所以答案是「30」。 移項時應比較兩方案的每次費差 11-6=5，所以基本費 150 需用 30 次才抵消。代入後 A=150+180=330，B=330，結果一致。",
     "steps": [
       "令兩方案費用相等",
       "移項得150=5x",
@@ -685,7 +688,7 @@ export const QUESTIONS = [
         "reason": "150+6x=11x，150=5x，所以x=30。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "把固定費150直接除方案B單價11。",
+    "commonMistake": "把方案 A 的基本費一百五十元直接除以 B 的十一元單價，未使用單價差。",
     "concept": "同價時兩總費用式相等。",
     "tags": [
       "代數",
@@ -700,7 +703,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "43aa2f8addb37eb07a68b425135d8b2c63ae3eb5954c5b91a9ff1c1fdc0aa33e",
+    "contentSha256": "86d271918dd35ff4ed512beb6cf391acd7ea8b994b8838510acbe45776f09fd4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -723,7 +726,7 @@ export const QUESTIONS = [
       "需知道基本費才可判斷"
     ],
     "answerIndex": 0,
-    "explanation": "以同價點18為基準；比較每增加一次的費用；A增幅少4元。所以答案是「方案 A」。",
+    "explanation": "以同價點18為基準；比較每增加一次的費用；A增幅少4元。所以答案是「方案 A」。 已知交點是十八次，就足以由交點後的增幅判斷。從十九次起，B 每多一次就比 A 多增 4 元，所以 A 必較便宜，無需再知基本費。",
     "steps": [
       "以同價點18為基準",
       "比較每增加一次的費用",
@@ -766,7 +769,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "80883915b7bdfb5a28779ad6ad2dd4b7e46e8dbb33c6126c7cd98224c6040deb",
+    "contentSha256": "51e70b48d630cba67b58228160eb37e2923a05ccd4f581398f38056cce87aff6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -789,7 +792,7 @@ export const QUESTIONS = [
       "90"
     ],
     "answerIndex": 2,
-    "explanation": "基本費差180；單件費差3；180÷3=60。所以答案是「60」。",
+    "explanation": "基本費差180；單件費差3；180÷3=60。所以答案是「60」。 同價方程式移項後，基本費差為 180 元，每件費差為 3 元，所以 x=60。代入六十件時，A=300+300=600，B=120+480=600，同價無誤。",
     "steps": [
       "基本費差180",
       "單件費差3",
@@ -817,7 +820,7 @@ export const QUESTIONS = [
         "reason": "把兩單價相加。"
       }
     ],
-    "commonMistake": "只計其中一個單價。",
+    "commonMistake": "只用基本費差除以某一方案的單價，沒有以兩個每件費用的差額計算。",
     "concept": "同價件數由固定差與變動差決定。",
     "tags": [
       "代數",
@@ -832,7 +835,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "33e5b3636d901325febb1fc18e45c4812edb7d3db1ca31355774a61ee206fcbe",
+    "contentSha256": "bb1ab9f5c5a27d9bd1a00710ce537936cd0d876a802336bd4ebe5d040caf90b7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -855,7 +858,7 @@ export const QUESTIONS = [
       "20"
     ],
     "answerIndex": 3,
-    "explanation": "從圖表讀兩組費率；列同價方程式；解得20次。所以答案是「20」。",
+    "explanation": "從圖表讀兩組費率；列同價方程式；解得20次。所以答案是「20」。 將圖表中兩個基本費與每次費用同時納入，移項得 80=4x，x=20。代入時 P=120+160=280，Q=40+240=280，所以二十次是精確同價點。",
     "steps": [
       "從圖表讀兩組費率",
       "列同價方程式",
@@ -883,7 +886,7 @@ export const QUESTIONS = [
         "reason": "由圖表列120+8x=40+12x；80=4x，所以x=20。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "只讀基本費未讀每次費。",
+    "commonMistake": "只讀出圖表的基本費，沒有同時使用 P、Q 每次八元與十二元的費用。",
     "concept": "圖表資料直接決定兩個費用式。",
     "tags": [
       "代數",
@@ -898,7 +901,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "必須從方案表格讀取四個費率資料才能建立方程式，圖表不是裝飾。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0fcb6208cfa4fd289f314a22ba41d2d019f294b7fbf90a17fd1a17a7a2e5308d",
+    "contentSha256": "060acef8f14ed28b6dfbaf2e5e3720ec7801ec57d5139d071930889b203f4459",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -921,7 +924,7 @@ export const QUESTIONS = [
       "150"
     ],
     "answerIndex": 0,
-    "explanation": "A費用固定900；B費用150x；解得6次。所以答案是「6」。",
+    "explanation": "A費用固定900；B費用150x；解得6次。所以答案是「6」。 方案 A 的九百元與次數無關，方案 B 則是 150x。令兩者相等得 900=150x，x=6。驗算 B 使用六次為 900 元，恰好與 A 月費相同。",
     "steps": [
       "A費用固定900",
       "B費用150x",
@@ -949,7 +952,7 @@ export const QUESTIONS = [
         "reason": "150是單次費。"
       }
     ],
-    "commonMistake": "把單次費當次數。",
+    "commonMistake": "把方案 B 的每次一百五十元直接當成所求的每月使用次數。",
     "concept": "同價點是固定費除單次費。",
     "tags": [
       "代數",
@@ -964,7 +967,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "不限次月費與按次費屬不同計價方式，情境決定900=150x。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "916143a39300a668d434c63693e018d0cf6ffc75a1c173951956992b2c1c6646",
+    "contentSha256": "cdd993981f33ab69dacd1de0e4ac6feabfc4d342c0dd0d027c9f809f84826b62",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -987,7 +990,7 @@ export const QUESTIONS = [
       "40"
     ],
     "answerIndex": 1,
-    "explanation": "列兩方案總費用；移項得40=2x；解得20公斤。所以答案是「20」。",
+    "explanation": "列兩方案總費用；移項得40=2x；解得20公斤。所以答案是「20」。 移項後基本費差為 40 元，每公斤費用差為 2 元，所以需 20 公斤才抵消。代入後 A=60+80=140，B=20+120=140，單位也是公斤，同價點正確。",
     "steps": [
       "列兩方案總費用",
       "移項得40=2x",
@@ -1015,7 +1018,7 @@ export const QUESTIONS = [
         "reason": "40是基本費差。"
       }
     ],
-    "commonMistake": "把基本費差直接當公斤數。",
+    "commonMistake": "把兩方案的基本費差四十元直接當成公斤數，忽略每公斤費用差二元。",
     "concept": "重量可為連續量，但本題交點恰為20。",
     "tags": [
       "代數",
@@ -1030,7 +1033,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩家運送商的基本費與每公斤費率共同決定同價重量，計價情境不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6cc501c9f0acad1436bbf2a0ab10598192875b31b5bdfde407e771eae97627e6",
+    "contentSha256": "c4e0743435bee0ec8445afd4b2fe40d642abacaa58e6f3ba323f4282721f9e82",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }
@@ -1053,9 +1056,9 @@ export const CONSTRUCTED_RESPONSES = [
       "比較交點後單位費。"
     ],
     "fullCreditSolution": [
-      "A=240+30x，B=50x。",
-      "240+30x=50x，20x=240，x=12小時。",
-      "超過12小時後A每小時只增30元，B增50元，所以A較便宜。"
+      "設租借時間為 x 小時。方案 A 的總費用為 240+30x 元，方案 B 不收基本費，總費用為 50x 元。",
+      "同價時令 240+30x=50x，移項得 20x=240，所以 x=12 小時；代入後兩方案均為 600 元。",
+      "超過 12 小時後，A 每多一小時只增加 30 元，B 卻增加 50 元，所以超過同價點時方案 A 較便宜。"
     ],
     "alternativeSolutions": [
       "可在x=13代入驗證A=630、B=650。"
@@ -1083,15 +1086,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "用240÷50求交點。",
-      "只看A有基本費就判A永遠較貴。"
+      "只用基本費 240 除以 B 的每小時 50 元，漏掉 A 也有每小時 30 元費用。",
+      "看到 A 有基本費就說 A 永遠較貴，沒有比較超過交點後兩方案的單位費。"
     ],
     "independentReview": {
       "derivedResult": "12小時同價；超過12小時選A",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "82fe3f961e8cb301943d466df2544ceb5684ba1355a86538bab69174f73f488f",
+    "contentSha256": "6c6a6e501249a4dff0568b9f925e89c740931610d5f48990431666aa11b40c77",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -1111,9 +1114,9 @@ export const CONSTRUCTED_RESPONSES = [
       "代入90或比較交點後並算差額。"
     ],
     "fullCreditSolution": [
-      "甲80+2x，乙20+3x。",
-      "80+2x=20+3x，x=60張同價。",
-      "90張時甲260元，乙290元，選甲省30元。"
+      "設影印 x 張。甲店總費用為 80+2x 元，乙店總費用為 20+3x 元，兩式中的 x 表示同一張數。",
+      "令 80+2x=20+3x，移項得 x=60，所以六十張時兩店同為 200 元。",
+      "影印 90 張時，甲店費用 80+2×90=260 元，乙店費用 20+3×90=290 元。因此選甲店，可省 290-260=30 元。"
     ],
     "alternativeSolutions": [
       "因90>60且甲單價較低，可先判甲較便宜，再算差額。"
@@ -1141,15 +1144,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "只比較基本費選乙。",
-      "求出60後未用90張資料。"
+      "只比較基本費，看到乙店只收 20 元就直接選乙，未計算九十張的變動費。",
+      "正確求出六十張同價後就停止，沒有再使用題目給定的九十張計算方案與差額。"
     ],
     "independentReview": {
       "derivedResult": "60張同價；90張選甲，省30元",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "ef4d2bd55822d8c687f2d3bc39157c42c0767658ab0c0a33ea4b40942e13fa41",
+    "contentSha256": "27d33a732787ba8d1c6d2dbb950f43648a5f1a65f1b9c40ece3aaaeeecb92c97",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }

@@ -137,7 +137,7 @@ export default {
         "reasoning": "各項為位置的平方。",
         "solutionSteps": [
           "各項為位置的平方。",
-          "a_6=6^2=36。"
+          "a_6=6²=36。"
         ],
         "answer": "36"
       },
@@ -254,7 +254,7 @@ export default {
       "reviewedAt": "2026-07-12",
       "reviewNote": "逐段檢查「數列規律」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
     },
-    "contentSha256": "e7d62a4af54904ffcdcb3a823dae2caadb3d31c6dbda5dbb5bf61b53c072bbb3"
+    "contentSha256": "53a8638eea81bf4d2679eb945324827c9c065fba3bc73cc329887ac2e3a2970f"
   },
   "mcQuestions": [
     {

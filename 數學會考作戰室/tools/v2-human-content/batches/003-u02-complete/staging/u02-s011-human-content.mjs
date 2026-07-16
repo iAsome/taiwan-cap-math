@@ -104,40 +104,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "17/5 化帶分數。",
+      "prompt": "把 17/5 化成帶分數。",
       "solutionSteps": [
-        "17÷5=3餘2。",
-        "分母保持5。"
+        "計算 17÷5，得到商 3、餘數 2。",
+        "以商 3 作整數部分、餘數 2 作分子，分母保留 5，寫成 3又2/5。",
+        "反向計算 3×5＋2＝17，確認可還原原分子。"
       ],
-      "answer": "3又2/5。"
+      "answer": "3又2/5。",
+      "why": "計算 17÷5=3 餘 2，商 3 表示三個完整單位，餘數 2 表示剩兩個五分之一，分母仍為 5，所以結果是 3又2/5；反向化成假分數可回到 17/5。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "4又3/7 化假分數。",
+      "prompt": "把 4又3/7 化成假分數。",
       "solutionSteps": [
-        "4×7+3=31。",
-        "分母7。"
+        "四個完整單位各有七個七分之一，先算 4×7＝28。",
+        "再加原有分子 3，得到新分子 31，分母仍為 7。",
+        "將 31/7 相除得商 4 餘 3，核對原帶分數。"
       ],
-      "answer": "31/7。"
+      "answer": "31/7。",
+      "why": "四個完整單位各含七個七分之一，共有 4×7=28 個，再加原有的 3 個得到 31 個七分之一，因此是假分數 31/7；分母所代表的等份基準不改變。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "3又5/8+2又7/8。",
+      "prompt": "計算 3又5/8+2又7/8。",
       "solutionSteps": [
-        "分數和12/8=1又4/8。",
-        "整數合併並約分。"
+        "先分別相加整數與同分母分數，得到 5又12/8。",
+        "把 12/8 改寫成 1又4/8，向整數部分進位，得到 6又4/8。",
+        "將 4/8 約分為 1/2，最後為 6又1/2。"
       ],
-      "answer": "6又1/2。"
+      "answer": "6又1/2。",
+      "why": "先加整數與同分母分數，得到 5又12/8。分數部分 12/8=1又4/8，需要進位一個完整單位，所以成為 6又4/8，再把 4/8 約分為 1/2。將 6又1/2 化成十三個二分之一，可反向核對總量。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "7-3又4/5。",
+      "prompt": "計算 7−3又4/5。",
       "solutionSteps": [
-        "7改寫成6又5/5。",
-        "6又5/5-3又4/5=3又1/5。"
+        "把 7 寫成 7又0/5；因分數部分不夠減，借 1 改寫為 6又5/5。",
+        "計算 6又5/5－3又4/5，得到 3又1/5。",
+        "把差 3又1/5 加回減數 3又4/5，確認總和為 7。"
       ],
-      "answer": "3又1/5。"
+      "answer": "3又1/5。",
+      "why": "把整數 7 寫成 7又0/5，分數部分不夠減，需借 1 改成 6又5/5。再算 6又5/5−3又4/5=3又1/5，結果小於原來的 7。把差加回減數 3又4/5，正好還原被減數 7。"
     }
   ],
   "commonMistakes": [
@@ -223,7 +227,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "fd81a7d986f1a7a29cd306d41ec137c424f07d0d9a9c4265f41b75a73897dce3",
+  "contentSha256": "6885cb45a930bebc461ce380a867f2065091b15bad512ddcbe79617af6fc44cc",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -247,10 +251,11 @@ export const QUESTIONS = [
       "3又3/4"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：11÷4=2餘3；所以11/4=2又3/4。所以答案是「2又3/4」。",
+    "explanation": "把假分數化成帶分數，要用分子 11 除以分母 4。11÷4=2 餘 3，商 2 是完整單位數，餘數 3 作新分子，分母仍為 4，所以結果是 2又3/4。反向計算 2×4+3=11，也回到原分子。",
     "steps": [
-      "11÷4=2餘3",
-      "所以11/4=2又3/4"
+      "計算 11÷4=2 餘 3。",
+      "把商 2 寫成整數部分，餘數 3 寫成分子。",
+      "保留原分母 4，得到 2又3/4。"
     ],
     "optionAnalysis": [
       {
@@ -274,7 +279,7 @@ export const QUESTIONS = [
         "reason": "商與餘數都錯。"
       }
     ],
-    "commonMistake": "把分子直接拆成整數部分與分數部分。",
+    "commonMistake": "把分子十一任意拆成整數與分數，沒有使用除以分母所得的商與餘數。",
     "concept": "假分數化帶分數用分子除以分母。",
     "tags": [
       "數與量",
@@ -289,7 +294,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cb38e6f4eac8e2ff4bf6c691455bee88fd830ec4c7068da1142a47830a3f2508",
+    "contentSha256": "4c7eca70ac21fbab2c95a7ac73e1c3de2f347d76cd9f1518bf078003d72745f1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -311,10 +316,11 @@ export const QUESTIONS = [
       "11/5"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：3×5+2=17；分母仍為5，所以17/5。所以答案是「17/5」。",
+    "explanation": "3又2/5 包含三個完整的五分之五和另外的五分之二。分子應算 3×5+2=17，分母保持 5，因此假分數是 17/5；還原 17÷5=3 餘 2 可驗證。這也說明分母不能跟著改成其他數。",
     "steps": [
-      "3×5+2=17",
-      "分母仍為5，所以17/5"
+      "用整數部分 3 乘分母 5，得到 15。",
+      "再加原分子 2，得到新分子 17。",
+      "保留分母 5，寫成 17/5 並以除法驗算。"
     ],
     "optionAnalysis": [
       {
@@ -338,7 +344,7 @@ export const QUESTIONS = [
         "reason": "把3×3+2錯算。"
       }
     ],
-    "commonMistake": "整數部分只與分子相加，未乘分母。",
+    "commonMistake": "只把整數三與分子二相加，漏掉每個完整單位都含有五個五分之一。",
     "concept": "帶分數化假分數為(整數×分母+分子)/分母。",
     "tags": [
       "數與量",
@@ -353,7 +359,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8b8eb3bee9681e1390c9595e1ae3c6dc8e584f974cf2c0bfb6b0cfeffce06d61",
+    "contentSha256": "c141a613c36df616f63a56fc0bde53e808f64e09725b5d2fdf942c6ec328d416",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -375,10 +381,11 @@ export const QUESTIONS = [
       "11/7"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：1×7+3=10；所以1又3/7=10/7。所以答案是「10/7」。",
+    "explanation": "1又3/7 等於一個完整的 7/7 再加 3/7，合計 (7+3)/7=10/7。也可用整數乘分母再加分子，1×7+3=10，因此第三個選項正確。把 10/7 重新相除會得商 1 餘 3，正好還原題目。",
     "steps": [
-      "1×7+3=10",
-      "所以1又3/7=10/7"
+      "把整數 1 改寫成 7/7。",
+      "計算 7/7+3/7=10/7。",
+      "確認分母仍為 7，選擇 10/7。"
     ],
     "optionAnalysis": [
       {
@@ -402,7 +409,7 @@ export const QUESTIONS = [
         "reason": "分子多1。"
       }
     ],
-    "commonMistake": "分母也跟著改變。",
+    "commonMistake": "帶分數改成假分數時連分母也一起改變，沒有保留原來的七等份基準。",
     "concept": "等值轉換時分母保持不變。",
     "tags": [
       "數與量",
@@ -417,7 +424,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "41efe2e42e734da78c001544e2442ac69fde62b22eb2e56e849209e8891d9a88",
+    "contentSha256": "2244cfaf6a66dc6b8798f6b7e98b893c204f04454ccdf7ac98a5677e7f38ecf8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -439,11 +446,11 @@ export const QUESTIONS = [
       "17/6，介於 2 和 3 之間"
     ],
     "answerIndex": 3,
-    "explanation": "先以「整數×分母＋分子」得到 17/6，再和 12/6、18/6 比較，可知介於 2 和 3 之間。",
+    "explanation": "先把 2又5/6 化成假分數，分子為 2×6+5=17，所以是 17/6。又因 2=12/6、3=18/6，可得 12/6<17/6<18/6，因此它介於 2 和 3 之間。分子 17 也確實介於同分母的 12 與 18 之間，端點都不會取到。",
     "steps": [
-      "2×6+5=17，所以 2又5/6=17/6。",
-      "2=12/6，3=18/6。",
-      "12/6＜17/6＜18/6。"
+      "計算 2×6+5=17，得到 17/6。",
+      "把相鄰整數 2、3 分別寫成 12/6、18/6。",
+      "比較得 12/6<17/6<18/6，故選第四項。"
     ],
     "optionAnalysis": [
       {
@@ -467,7 +474,7 @@ export const QUESTIONS = [
         "reason": "17/6 等於 2又5/6，且介於 2 和 3 之間。"
       }
     ],
-    "commonMistake": "只做 2+5，沒有以整數部分乘分母。",
+    "commonMistake": "只將整數二與分子五相加，沒有先把兩個完整單位換成十二個六分之一。",
     "concept": "帶分數化假分數後可用相鄰整數的同分母表示判斷位置。",
     "tags": [
       "數與量",
@@ -482,7 +489,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "859d2747a478fda4856b719450da6bf0110f093c4a569ba81fe0b15346aa773c",
+    "contentSha256": "9d879e745f55f04681e1c51302db2587e391d8585ba0ae01a82d95485740e295",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -504,10 +511,11 @@ export const QUESTIONS = [
       "3又4/5"
     ],
     "answerIndex": 0,
-    "explanation": "用 23 除以 5，商 4 是整數部分，餘數 3 是分子，分母仍為 5，所以為 4又3/5。",
+    "explanation": "將 23/5 化為帶分數時，計算 23÷5=4 餘 3。商 4 表示四個完整單位，餘數 3 表示剩三個五分之一，所以結果為 4又3/5；分母仍沿用原來的 5。用 4×5+3 可驗回分子 23。",
     "steps": [
       "計算 23÷5=4 餘 3。",
-      "將商寫成整數部分，餘數寫在原分母 5 上。"
+      "把商 4 作為帶分數的整數部分。",
+      "將餘數 3 放在原分母 5 上，得到 4又3/5。"
     ],
     "optionAnalysis": [
       {
@@ -531,7 +539,7 @@ export const QUESTIONS = [
         "reason": "3×5+4=19，不等於 23。"
       }
     ],
-    "commonMistake": "把除數 5 當成整數部分，或把商與餘數對調。",
+    "commonMistake": "把除數五當成整數部分，或把商四與餘數三的角色互相對調。",
     "concept": "假分數化帶分數時，商為整數部分、餘數為分子。",
     "tags": [
       "數與量",
@@ -546,7 +554,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5ab8d8446bde2cbc7136de1a13e5e30a8c8a8a9687e15aa8d78dbf39ed558123",
+    "contentSha256": "f3b65f46c44fb709dc3cfa7f2e11aa1725ae1ed4bbb19b1ebc935fcf14f3fb27",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -568,11 +576,11 @@ export const QUESTIONS = [
       "3又1/3"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：前兩個完整長方形表示2。；第三個長方形塗1份、共3等份，表示1/3。；合計2+1/3=2又1/3。。所以答案是「2又1/3」。",
+    "explanation": "前兩個相同長方形全部塗色，各表示一個完整單位，合計為 2。第三個長方形分成三等份且只塗一份，表示 1/3，因此全部塗色量是 2+1/3=2又1/3。",
     "steps": [
-      "前兩個完整長方形表示2。",
-      "第三個長方形塗1份、共3等份，表示1/3。",
-      "合計2+1/3=2又1/3。"
+      "前兩個完整塗色長方形合計表示 2。",
+      "第三個只塗三等份中的一份，表示 1/3。",
+      "合併完整量與分數量，得到 2又1/3。"
     ],
     "optionAnalysis": [
       {
@@ -596,7 +604,7 @@ export const QUESTIONS = [
         "reason": "把三個外框都算成完整塗色，與圖不符。"
       }
     ],
-    "commonMistake": "看到三個外框就把第三個也當成完整單位，忽略它只有三分之一塗色。",
+    "commonMistake": "看到三個長方形外框就全部算成完整單位，忽略第三個只有三分之一塗色。",
     "concept": "帶分數由完整單位數與不足一個單位的真分數組成。",
     "tags": [
       "數與量",
@@ -611,7 +619,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5403718a4207c8a17ae2e8610d1f7b277387f796037d8845742d29d27ac61c51",
+    "contentSha256": "f7ddae156250d8a5d5ce236654b532e5204822f5f114027328f56407e471c9bc",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -633,10 +641,11 @@ export const QUESTIONS = [
       "4"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：3又a/8=(24+a)/8；24+a=27，所以a=3。所以答案是「3」。",
+    "explanation": "把 3又a/8 化成假分數，三個完整單位等於 24/8，所以左邊為 (24+a)/8。它等於 27/8，分母相同可比較分子，24+a=27，解得 a=3。將 3 代回後得到 27/8，與右式完全一致。",
     "steps": [
-      "3又a/8=(24+a)/8",
-      "24+a=27，所以a=3"
+      "將整數 3 換成 24/8，寫成 (24+a)/8。",
+      "由 (24+a)/8=27/8 得 24+a=27。",
+      "兩邊減 24，求得 a=3 並代回驗證。"
     ],
     "optionAnalysis": [
       {
@@ -660,7 +669,7 @@ export const QUESTIONS = [
         "reason": "a=4得28/8。"
       }
     ],
-    "commonMistake": "把整數3直接與分子27相減，不先換成24/8。",
+    "commonMistake": "直接拿整數三去減分子二十七，沒有先把三改寫成二十四個八分之一。",
     "concept": "整數部分要換成相同分母。",
     "tags": [
       "數與量",
@@ -675,7 +684,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bccc157b4f266b75c172e9b6850cb0714192e906a2db44276a1ec71594573973",
+    "contentSha256": "4bc68f191f022d5e05d6ed3aacf2d275532f47406a78cf8f3299966bcd548203",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -697,10 +706,11 @@ export const QUESTIONS = [
       "2又2/9"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：5可借1寫成4又9/9；4又9/9-2又7/9=2又2/9。所以答案是「2又2/9」。",
+    "explanation": "整數 5 可視為 5又0/9，但零個九分之一不夠減 7/9，需從整數借 1，改寫成 4又9/9。再算 4又9/9−2又7/9=2又2/9。以 2又2/9 加回 2又7/9，會得到原來的 5，借位並未改變總值。",
     "steps": [
-      "5可借1寫成4又9/9",
-      "4又9/9-2又7/9=2又2/9"
+      "將 5 寫成 5又0/9，判斷分數部分不夠減。",
+      "向整數部分借 1，改寫為 4又9/9。",
+      "分別相減得 2又2/9，並確認結果小於 3。"
     ],
     "optionAnalysis": [
       {
@@ -724,7 +734,7 @@ export const QUESTIONS = [
         "reason": "2又2/9正確。"
       }
     ],
-    "commonMistake": "整數減帶分數時無法借1。",
+    "commonMistake": "整數減帶分數時直接算出負分子，沒有把借來的一個完整單位改成九分之九。",
     "concept": "整數可改寫成前一整數加分母/分母。",
     "tags": [
       "數與量",
@@ -739,7 +749,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bc98926086ba102a70fda5d6c9b9a2695c8607083aba3377c3bdf4d747d87dde",
+    "contentSha256": "514d631657479d2f3754513415ebff6589ad54db8272c27303f9022756ff328a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -761,10 +771,11 @@ export const QUESTIONS = [
       "4又1/12"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：2又3/4=11/4，1又1/3=4/3；11/4×4/3=11/3=3又2/3。所以答案是「3又2/3」。",
+    "explanation": "帶分數相乘前先化成假分數：2又3/4=11/4，1又1/3=4/3。相乘時 11/4×4/3 可約去因數 4，得到 11/3，再化為 3又2/3。兩個因數都大於 1，乘積大於各因數，大小關係也合理。",
     "steps": [
-      "2又3/4=11/4，1又1/3=4/3",
-      "11/4×4/3=11/3=3又2/3"
+      "把兩個帶分數化為 11/4 與 4/3。",
+      "計算 11/4×4/3，約去共同因數 4 得 11/3。",
+      "將 11/3 化成 3又2/3。"
     ],
     "optionAnalysis": [
       {
@@ -788,7 +799,7 @@ export const QUESTIONS = [
         "reason": "乘積估值過大。"
       }
     ],
-    "commonMistake": "帶分數直接把整數部分與分數部分分別相乘。",
+    "commonMistake": "把兩個帶分數的整數部分與分數部分分開相乘，破壞原來的加法結構。",
     "concept": "乘除前先化為假分數。",
     "tags": [
       "數與量",
@@ -803,7 +814,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3b995c21609be8b6d84360d14093e1043a670865abf68f86ec6ed4f4e0dd10f0",
+    "contentSha256": "f1d1c315ccb7866c655e028bc0c97449fd8243b6cc50625012fac77de5782507",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -825,10 +836,11 @@ export const QUESTIONS = [
       "4又3/4 公升"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：6又1/2=6又2/4；6又2/4-2又3/4需借1，得5又6/4-2又3/4=3又3/4。所以答案是「3又3/4 公升」。",
+    "explanation": "先把 1/2 通分為 2/4，原式為 6又2/4−2又3/4。因 2/4 不夠減 3/4，向整數借 1，得到 5又6/4−2又3/4=3又3/4 公升。答案加回用掉的 2又3/4 公升，正好是原有的 6又1/2 公升，單位也一致。",
     "steps": [
-      "6又1/2=6又2/4",
-      "6又2/4-2又3/4需借1，得5又6/4-2又3/4=3又3/4"
+      "通分得到 6又2/4−2又3/4。",
+      "向 6 借 1，將被減數改寫成 5又6/4。",
+      "相減得 3又3/4 公升，並以原量減去結果檢查。"
     ],
     "optionAnalysis": [
       {
@@ -852,7 +864,7 @@ export const QUESTIONS = [
         "reason": "分數未相減。"
       }
     ],
-    "commonMistake": "分數部分2/4小於3/4時直接得到負分數。",
+    "commonMistake": "分數部分二分之四不足時仍直接相減，得到負分數而未進行正確借位。",
     "concept": "帶分數減法可借1個完整單位。",
     "tags": [
       "數與量",
@@ -867,7 +879,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始容量與倒出容量都是帶分數，『剩』明確指定減法與借位。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e343784f2ed8bfd459b1665c1cc8774a081068d0c714ffc3ff9fb35864f4f189",
+    "contentSha256": "520ba1fc03fd441febbe04bfcd372f99b6cee5a339d7ad400b7687514b8c3510",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -889,10 +901,11 @@ export const QUESTIONS = [
       "5又1/4"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：1又1/4=5/4；5/4×4=5。所以答案是「5」。",
+    "explanation": "每盒面積 1又1/4 平方公尺，四盒就是此面積的四倍。先化成 5/4，再計算 5/4×4=5，因此共有 5 平方公尺；四個四分之一也正好合成一個完整單位。",
     "steps": [
-      "1又1/4=5/4",
-      "5/4×4=5"
+      "將 1又1/4 化成假分數 5/4。",
+      "計算 5/4×4，約去分母與整數 4。",
+      "得到 5 平方公尺並附回面積單位。"
     ],
     "optionAnalysis": [
       {
@@ -916,7 +929,7 @@ export const QUESTIONS = [
         "reason": "多加1/4。"
       }
     ],
-    "commonMistake": "整數倍只乘帶分數的整數部分。",
+    "commonMistake": "整數倍只乘帶分數的整數部分一，漏算每盒另外的四分之一平方公尺。",
     "concept": "帶分數乘整數先化假分數最穩定。",
     "tags": [
       "數與量",
@@ -931,7 +944,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每盒面積與盒數共同決定總面積，單位平方公尺必須保留。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "aa09d5d8bfb39eb707b2981fde567d367129e354d38cc368944a2192c6a5cfb1",
+    "contentSha256": "5e7d08f477001e48729d56b92ba92bb3a79ae9b5fa509a94a80e5b0829ed96c1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -953,10 +966,11 @@ export const QUESTIONS = [
       "2又1/2"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：8又1/3=8又2/6；借位為7又8/6，減5又5/6=2又3/6=2又1/2。所以答案是「2又1/2」。",
+    "explanation": "先把 1/3 通分為 2/6，原式為 8又2/6−5又5/6。分數部分不夠減，借 1 後成 7又8/6−5又5/6=2又3/6，再約分為 2又1/2 公里。把路程差加回 5又5/6 公里，可驗得全長 8又1/3 公里。",
     "steps": [
-      "8又1/3=8又2/6",
-      "借位為7又8/6，減5又5/6=2又3/6=2又1/2"
+      "通分成 8又2/6−5又5/6。",
+      "借位後改寫為 7又8/6−5又5/6。",
+      "相減得 2又3/6，約分為 2又1/2 公里。"
     ],
     "optionAnalysis": [
       {
@@ -980,7 +994,7 @@ export const QUESTIONS = [
         "reason": "2又1/2正確。"
       }
     ],
-    "commonMistake": "1/3直接與5/6相減。",
+    "commonMistake": "直接用三分之一減六分之五，既未通分也未從整數部分借一個完整單位。",
     "concept": "異分母且需借位時先通分再借1。",
     "tags": [
       "數與量",
@@ -995,7 +1009,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "步道全長、已走距離與「還剩」共同決定帶分數減法；刪除情境就無法判定兩個帶分數的先後角色。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4146216af394bc6bad981aec41582d99431ed879fba78a954bddacee1063bf66",
+    "contentSha256": "68cdc46c070e136d630a4dd704207038fea0e606eedaafe333aa4616da4f011b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1016,8 +1030,9 @@ export const CONSTRUCTED_RESPONSES = [
       "結果化最簡帶分數。"
     ],
     "fullCreditSolution": [
-      "假分數法：19/3-17/6=38/6-17/6=21/6=3又1/2。",
-      "借位法：6又2/6改為5又8/6，減2又5/6=3又3/6=3又1/2。"
+      "假分數法先換形式：6又1/3=19/3=38/6，2又5/6=17/6，因此相減為 38/6−17/6=21/6=7/2=3又1/2。",
+      "借位法先通分：6又1/3=6又2/6；因 2/6 不夠減 5/6，借 1 後改成 5又8/6。",
+      "再算 5又8/6−2又5/6=3又3/6=3又1/2；兩種方法都得到相同答案。"
     ],
     "alternativeSolutions": [
       "兩種方法次序可交換。"
@@ -1044,16 +1059,16 @@ export const CONSTRUCTED_RESPONSES = [
       "3又1/2與7/2均可作答案，但須依題意呈現帶分數。"
     ],
     "commonErrors": [
-      "假分數法把6又1/3誤化成19/3以外的分數。",
-      "借位時只把整數6改成5，卻沒有把借來的1改成6/6加入分數部分。",
-      "最後3/6未約成1/2。"
+      "把 6又1/3 化假分數時只算 6+1，沒有用 6×3+1 得到分子 19。",
+      "借位時只將整數 6 改為 5，卻沒有把借來的 1 改成 6/6 加入分數部分。",
+      "得到 3又3/6 後未將 3/6 約成 1/2，答案沒有化到最簡形式。"
     ],
     "independentReview": {
       "derivedResult": "3又1/2。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "8cb714470e0f5ac5d71e807ad5d44b7d0328e14158a48aa6bb6b7af996a0e9b9",
+    "contentSha256": "83c85be87a6e0a5c8e0d4f7b5b0716b219dfb585a4d5892475cb997c26eee273",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1072,8 +1087,9 @@ export const CONSTRUCTED_RESPONSES = [
       "單位完整。"
     ],
     "fullCreditSolution": [
-      "12又1/2-3又3/4=12又2/4-3又3/4=8又3/4=35/4。",
-      "35/4÷7=35/28=5/4=1又1/4。"
+      "先求剪下第一段後的剩餘長度：12又1/2−3又3/4=12又2/4−3又3/4。",
+      "分數部分不夠減，借位得 11又6/4−3又3/4=8又3/4=35/4 公尺。",
+      "再把剩餘繩長平均分成 7 段：35/4÷7=35/28=5/4=1又1/4 公尺。"
     ],
     "alternativeSolutions": [
       "可全部化假分數：(25/2-15/4)÷7。"
@@ -1100,15 +1116,16 @@ export const CONSTRUCTED_RESPONSES = [
       "每段長度為正且7段乘回剩餘量。"
     ],
     "commonErrors": [
-      "把總長直接除7。",
-      "帶分數減法未借位。"
+      "直接把原總長 12又1/2 除以 7，漏掉先剪下 3又3/4 公尺的步驟。",
+      "帶分數相減時未通分與借位，直接用 1/2−3/4 得到負分數。",
+      "求得剩餘長度 35/4 後乘以 7，而不是依平均分段使用除法。"
     ],
     "independentReview": {
       "derivedResult": "每段1又1/4公尺。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "7d265fb4bdd4cf114b57498a6dbe644c0bf8deb039990afab60bd980e2fac5e5",
+    "contentSha256": "a77f103297b247ccf06ceafbe037709cd00b2eb8aa07f2f28477bc650e9e5ce1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

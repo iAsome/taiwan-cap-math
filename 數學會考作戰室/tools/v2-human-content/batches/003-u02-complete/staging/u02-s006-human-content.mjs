@@ -44,10 +44,9 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "『最多組且每組相同』表示組數要同時整除各總量，故取GCD。",
-    "『最長小段且不剩』表示段長要同時整除各原長，故取GCD。",
-    "求出GCD後仍要依題目繼續：問每組內容就相除，問總段數就把各商相加，問鋪面塊數就把長寬方向商相乘。",
-    "GCD是中間量還是最終答案，必須由題目問句判斷。"
+    "最大公因數應用的共同結構是「同時整除且要求最大」。最多相同分組時，組數要整除每一類總量；最長等段或最大正方形邊長則要整除每一個原長度。",
+    "求出 GCD 後要辨認它在情境中的單位：可能是包數、隊數、段長或正方形邊長，不一定就是題目最終答案。若問每組內容，要以各總量除以組數；若問總段數，要把各商相加。",
+    "平面鋪面要分別計算長、寬方向塊數後相乘，面積則用邊長平方。多類物品或三個長度必須全部納入 GCD，計算前也要先統一公分、公尺等單位。"
   ],
   "formalDefinitions": [
     {
@@ -69,98 +68,96 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "圈出所有總量或邊長。",
-      "check": "是否同單位？"
+      "instruction": "圈出所有需平均分配的總量或需完整切割的邊長，先統一單位。",
+      "check": "多類物品與每一條邊都已列入，沒有只取其中兩個。"
     },
     {
       "step": 2,
-      "instruction": "找關鍵詞最多、最長、不剩、相同。",
-      "check": "是否符合GCD模型？"
+      "instruction": "由最多、最長、相同且不剩餘等關鍵詞，確認模型是求最大公因數。",
+      "check": "候選量必須同時整除所有原量，而不是求共同倍數。"
     },
     {
       "step": 3,
-      "instruction": "計算GCD。",
-      "check": "結果能否整除全部量？"
+      "instruction": "用質因數分解或短除法計算全部原量的 GCD。",
+      "check": "將結果逐一除回原量，確認每個商都是整數且沒有更大共同因數。"
     },
     {
       "step": 4,
-      "instruction": "依問句做後續除法。",
-      "check": "問組數、每組內容、段數還是面積？"
+      "instruction": "依問句決定後續：求每組內容、各方向段數、總塊數或面積。",
+      "check": "先標記 GCD 的單位，避免把組數、邊長和每組總數混用。"
     },
     {
       "step": 5,
-      "instruction": "放回情境驗算。",
-      "check": "全部是否用完、鋪滿或剪完？"
+      "instruction": "把每組數乘組數或把鋪面排列乘回，驗證全部用完、剪完或鋪滿。",
+      "check": "答案含正確單位，且每一類原量都能由結果完整重建。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "36顆紅球與48顆藍球做最多相同袋。",
+      "exampleId": "u02-s006-example-a",
+      "prompt": "45 枝麥克筆與 75 張貼紙做最多份相同材料包。",
       "solutionSteps": [
-        "gcd(36,48)=12。",
-        "每袋紅3、藍4。"
+        "計算 gcd(45,75)=15，得到最多可做十五包。",
+        "分別計算 45÷15=3、75÷15=5，並乘回核對總量。"
       ],
-      "answer": "12袋，每袋7顆。"
+      "answer": "15 包，每包 3 枝麥克筆與 5 張貼紙。",
+      "why": "最多包數要同時整除四十五與七十五，所以取最大公因數十五。再用兩個總量除以十五，得到每包三枝與五張；乘回可確認全部用完。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "90與150公分繩剪最長等段。",
+      "exampleId": "u02-s006-example-b",
+      "prompt": "108 公分與 180 公分電線剪成最長等段，總共幾段？",
       "solutionSteps": [
-        "gcd=30。",
-        "段數3+5=8。"
+        "求兩長度最大公因數 gcd(108,180)=36，確定最長段長。",
+        "計算 108÷36=3、180÷36=5，再將兩條電線段數相加得八段。"
       ],
-      "answer": "每段30公分，共8段。"
+      "answer": "每段 36 公分，共 8 段。",
+      "why": "最長段長是兩數最大公因數三十六。兩條電線分別可剪三段與五段，題目問總段數，因此要把兩個商相加得到八段，而不是回答三十六段。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "120×168公分牆鋪最大正方形。",
+      "exampleId": "u02-s006-example-c",
+      "prompt": "132×180 公分地面鋪最大正方形磁磚，共需幾塊？",
       "solutionSteps": [
-        "gcd=24。",
-        "長5塊、寬7塊。"
+        "求 gcd(132,180)=12，得到最大正方形邊長十二公分。",
+        "長寬方向分別為 132÷12=11、180÷12=15，總數 11×15=165。"
       ],
-      "answer": "邊長24公分，共35塊。"
+      "answer": "邊長 12 公分，共 165 塊。",
+      "why": "磁磚最大邊長是兩邊長的最大公因數十二。長方向一百三十二除以十二得十一塊，寬方向得十五塊，平面總數為十一乘十五等於一百六十五。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "84、126、210件物品做最多禮盒。",
+      "exampleId": "u02-s006-example-d",
+      "prompt": "150×210 公分展板鋪最大正方形紙片，共需幾張？",
       "solutionSteps": [
-        "三數gcd=42。",
-        "每盒2、3、5件。"
+        "計算 gcd(150,210)=30，最大紙片邊長為三十公分。",
+        "兩方向張數為 150÷30=5、210÷30=7，相乘得 35 張。"
       ],
-      "answer": "42盒，每盒10件。"
+      "answer": "邊長 30 公分，共 35 張。",
+      "why": "最大正方形邊長必須同時整除展板長與寬，所以取一百五十與二百一十的最大公因數三十。五列乘七行，總共需要三十五張。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把GCD當每組物品數。",
-      "why": "未看清GCD代表組數。",
-      "correction": "先寫單位：袋、段或公分。"
+      "mistake": "求出最大公因數後，不看單位就直接當成最終答案。",
+      "correction": "先寫它代表包數、段長或邊長，再依問句完成每組內容、段數或面積。"
     },
     {
-      "mistake": "求段長後未求總段數。",
-      "why": "問句要求第二步。",
-      "correction": "各長度除以段長再加總。"
+      "mistake": "三類物品只取前兩類求最大公因數。",
+      "correction": "最多相同分組必須同時整除全部類別，任何一類遺漏都可能改變答案。"
     },
     {
-      "mistake": "鋪面塊數用長商加寬商。",
-      "why": "平面排列應相乘。",
-      "correction": "長方向塊數×寬方向塊數。"
+      "mistake": "平面長方向與寬方向塊數相加。",
+      "correction": "平面是行列排列，總塊數應以兩方向塊數相乘。"
     },
     {
-      "mistake": "只使用兩個數，漏掉第三類物品。",
-      "why": "多類分組需共同整除全部。",
-      "correction": "計算多數GCD。"
+      "mistake": "選擇能整除的較小數，沒有滿足最多或最長。",
+      "correction": "除了可行性，還要證明候選是共同因數中的最大值。"
     },
     {
-      "mistake": "選到可行但不是最大的數。",
-      "why": "忽略最多或最長。",
-      "correction": "確認沒有更大共同因數。"
+      "mistake": "公尺與公分未統一就直接做整數最大公因數。",
+      "correction": "先換成相同的整數單位，再求 GCD 並把答案單位換回情境。"
     },
     {
-      "mistake": "公分與公尺直接求GCD。",
-      "why": "單位不一致。",
-      "correction": "先換成同一整數單位。"
+      "mistake": "求兩條材料的總段數時，只計算其中一個長度除以段長的商。",
+      "correction": "先分別求每條材料的段數，再依題意把所有段數相加。"
     }
   ],
   "selfCheck": [
@@ -214,7 +211,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "749a9e0dcbf068525cc72f822f7143bc41cfa432b3255f4dae787371e6632017",
+  "contentSha256": "165abdd7938255e9a8441fb2448c2c66af0d46c996aba79d2e6ea66cb86dabea",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -238,10 +235,11 @@ export const QUESTIONS = [
       "24 袋"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：袋數必須同時整除24和36；gcd(24,36)=12。所以答案是「12 袋」。",
+    "explanation": "袋數必須同時整除二十四顆蘋果與三十六顆橘子，才能使每袋內容相同且全部用完。二十四與三十六的最大公因數是十二，因此最多可分十二袋。",
     "steps": [
-      "袋數必須同時整除24和36",
-      "gcd(24,36)=12"
+      "把最多袋數辨認為 24 與 36 的共同因數問題。",
+      "計算 gcd(24,36)=12，並確認 12 同時整除兩數。",
+      "每袋可分得 2 顆蘋果與 3 顆橘子，所以答案為 12 袋。"
     ],
     "optionAnalysis": [
       {
@@ -265,7 +263,7 @@ export const QUESTIONS = [
         "reason": "24不能整除36。"
       }
     ],
-    "commonMistake": "把每袋水果總數當作袋數。",
+    "commonMistake": "只找出可行的六袋就停止，沒有確認還能用更大的共同因數十二。",
     "concept": "最多相同組數等於各數量的 GCD。",
     "tags": [
       "數與量",
@@ -280,7 +278,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f2888477954363f89618281965f6b8299ed4b03dec0e7e0391651e5b829863c0",
+    "contentSha256": "dfd0483f15190a991d07028345afaf5fb84d6f2977b2682eeda67d0dfea1a536",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -302,10 +300,11 @@ export const QUESTIONS = [
       "30 公分"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：段長要同時整除30與45；gcd(30,45)=15。所以答案是「15 公分」。",
+    "explanation": "每段長度要同時整除三十公分與四十五公分，才能使兩條繩子都沒有剩餘；題目又要求最長，所以取兩數的最大公因數十五。每段長十五公分。",
     "steps": [
-      "段長要同時整除30與45",
-      "gcd(30,45)=15"
+      "將等長且最長、不剩餘轉成求 gcd(30,45)。",
+      "列出共同因數並取最大值，得到 gcd(30,45)=15。",
+      "驗算 30÷15=2、45÷15=3，兩條繩子都能完整剪完。"
     ],
     "optionAnalysis": [
       {
@@ -329,7 +328,7 @@ export const QUESTIONS = [
         "reason": "30不能整除45。"
       }
     ],
-    "commonMistake": "看到共同因數就停止，未找最大。",
+    "commonMistake": "選五公分雖然可以剪完，卻忽略題目要求的是所有可行段長中最長者。",
     "concept": "最長等段長是原長度的 GCD。",
     "tags": [
       "數與量",
@@ -344,7 +343,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c17071fa236f817445d7a309607850fa664af57e4f132517571e54f0a6e59f67",
+    "contentSha256": "0c828ff93c37f13a3b9b39cf5853a3db949fa12367aefe608d35b0b7b5ecb598",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -366,10 +365,11 @@ export const QUESTIONS = [
       "28 公分"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：邊長須同時整除42與56；gcd(42,56)=14。所以答案是「14 公分」。",
+    "explanation": "正方形邊長必須同時整除紙張的四十二公分與五十六公分，才可不重疊且無剩餘鋪滿。兩邊長的最大公因數為十四，所以最大正方形邊長是十四公分。",
     "steps": [
-      "邊長須同時整除42與56",
-      "gcd(42,56)=14"
+      "把最大正方形邊長轉成求 gcd(42,56)。",
+      "計算 gcd(42,56)=14，確認沒有更大的共同因數。",
+      "驗算 42÷14=3、56÷14=4，能排成 3×4 個完整正方形。"
     ],
     "optionAnalysis": [
       {
@@ -393,7 +393,7 @@ export const QUESTIONS = [
         "reason": "28不能整除42。"
       }
     ],
-    "commonMistake": "以面積開平方，忽略長寬都要整除。",
+    "commonMistake": "看到二十八是五十六的因數就選它，未檢查二十八不能整除四十二。",
     "concept": "最大正方形邊長是長寬 GCD。",
     "tags": [
       "數與量",
@@ -408,7 +408,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "11525a1b02e9b95b20b2dd4c9ac61f5d7cb6e25324b0a56d904e8a4108e753ec",
+    "contentSha256": "95b3c9601fbe952eb6c6b6b6650f5333b221b5a0a52646dbb7aa1a6ea093c83d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -430,10 +430,11 @@ export const QUESTIONS = [
       "9 枝"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：最多包數gcd(48,60)=12；每包紅4枝、藍5枝，共9枝。所以答案是「9 枝」。",
+    "explanation": "最多相同文具包的包數是四十八與六十的最大公因數十二。每包紅筆四十八除以十二得四枝，藍筆六十除以十二得五枝，合計每包九枝。",
     "steps": [
-      "最多包數gcd(48,60)=12",
-      "每包紅4枝、藍5枝，共9枝"
+      "先求最多包數 gcd(48,60)=12。",
+      "分別計算每包紅筆 48÷12=4 枝、藍筆 60÷12=5 枝。",
+      "題目問每包總數，所以相加 4+5=9 枝。"
     ],
     "optionAnalysis": [
       {
@@ -457,7 +458,7 @@ export const QUESTIONS = [
         "reason": "4+5=9枝。"
       }
     ],
-    "commonMistake": "先求包數後忘記分別除，再相加。",
+    "commonMistake": "求出最大公因數十二後直接當每包枝數，混淆包數與每包內容。",
     "concept": "GCD 決定組數，每組內容用各總量除以組數。",
     "tags": [
       "數與量",
@@ -472,7 +473,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "49309ffa403814a53c047cd91609e382fe80c4a06fc006e4008e10ba4f8f69d9",
+    "contentSha256": "955a8f4e2b15e6818ba6bc497f03cc5ea5967d4867d44dd6325c2b9ae1eb026e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -494,10 +495,11 @@ export const QUESTIONS = [
       "36 隊"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：隊數同時整除72與90；gcd=18。所以答案是「18 隊」。",
+    "explanation": "隊數要同時整除七十二位男生與九十位女生，才能讓每隊男女生人數分別相同。兩數最大公因數為十八，所以最多分十八隊；每隊有四位男生與五位女生。",
     "steps": [
-      "隊數同時整除72與90",
-      "gcd=18"
+      "把最多隊數列為 gcd(72,90)。",
+      "計算 gcd(72,90)=18，確認 18 同時整除兩個總人數。",
+      "驗算每隊 72÷18=4 位男生、90÷18=5 位女生。"
     ],
     "optionAnalysis": [
       {
@@ -521,7 +523,7 @@ export const QUESTIONS = [
         "reason": "36不能整除90。"
       }
     ],
-    "commonMistake": "把每隊人數和隊數混淆。",
+    "commonMistake": "選九隊雖然也能平均分，卻沒有繼續尋找更大的共同因數十八。",
     "concept": "最多相同隊數就是人數的 GCD。",
     "tags": [
       "數與量",
@@ -536,7 +538,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fd560c28ffe69ecee544909f87549086c2c4dca7912a1d738bce5a65de5a6742",
+    "contentSha256": "b4def087fff371464ccb9406fe91a4864bdea0e188f4f250a3936218bcfd738f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -558,10 +560,11 @@ export const QUESTIONS = [
       "14 塊"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：最大邊長gcd(84,60)=12公分；長邊84÷12=7塊。所以答案是「7 塊」。",
+    "explanation": "最大正方形磁磚邊長為八十四與六十的最大公因數十二公分。題目問長邊排列數，因此用長邊八十四除以十二，得到七塊；五塊是寬邊的排列數。",
     "steps": [
-      "最大邊長gcd(84,60)=12公分",
-      "長邊84÷12=7塊"
+      "先求磁磚最大邊長 gcd(84,60)=12 公分。",
+      "辨認題目只問長邊，而長邊長度是 84 公分。",
+      "計算 84÷12=7，得到長邊排 7 塊。"
     ],
     "optionAnalysis": [
       {
@@ -585,7 +588,7 @@ export const QUESTIONS = [
         "reason": "14是錯用6公分。"
       }
     ],
-    "commonMistake": "求出 GCD 後直接把它當塊數。",
+    "commonMistake": "算出寬邊六十除以十二等於五後作答，沒有辨認題目問的是長邊。",
     "concept": "先求最大邊長，再用邊長相除求塊數。",
     "tags": [
       "數與量",
@@ -600,7 +603,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1726ce3846a0a66485a11b411b4601b5df07c1a837fd1ebff20b0a08475969a7",
+    "contentSha256": "983bd0b9b7a8b231f97e1230951cf671458f219e41ce7fab6748c21f77d77cf7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -622,10 +625,11 @@ export const QUESTIONS = [
       "18 段"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：gcd(96,120,168)=24；段數=96÷24+120÷24+168÷24=4+5+7=16。所以答案是「16 段」。",
+    "explanation": "最長等長小段為九十六、一百二十、一百六十八的最大公因數二十四公分。三卷分別剪成四、五、七段，題目問總段數，所以相加得到十六段。",
     "steps": [
-      "gcd(96,120,168)=24",
-      "段數=96÷24+120÷24+168÷24=4+5+7=16"
+      "計算 gcd(96,120,168)=24，得到每段最長 24 公分。",
+      "分別求段數 96÷24=4、120÷24=5、168÷24=7。",
+      "將三卷段數相加 4+5+7=16 段。"
     ],
     "optionAnalysis": [
       {
@@ -649,7 +653,7 @@ export const QUESTIONS = [
         "reason": "18來自錯誤段長。"
       }
     ],
-    "commonMistake": "只求段長，未把三卷各自段數相加。",
+    "commonMistake": "只把前兩卷段數相加，漏掉第三卷一百六十八公分可剪出的七段。",
     "concept": "多數切割先求 GCD，再加總各段數。",
     "tags": [
       "數與量",
@@ -664,7 +668,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9a73fb83a121b7175c89f9431716f943b8bab14993382116c41fe9542786d2b8",
+    "contentSha256": "0db2f0f789895177d0d25c26c28798f4670775e3dfbcb52dc6e306a77bee4aa1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -686,10 +690,11 @@ export const QUESTIONS = [
       "6 塊"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：最大邊長gcd(144,96)=48；長邊3塊、寬邊2塊，共6塊。所以答案是「6 塊」。",
+    "explanation": "最大正方形板材邊長是一百四十四與九十六的最大公因數四十八公分。長方向排三塊、寬方向排兩塊，平面總塊數要相乘，得到六塊。",
     "steps": [
-      "最大邊長gcd(144,96)=48",
-      "長邊3塊、寬邊2塊，共6塊"
+      "求 gcd(144,96)=48，得到板材最大邊長 48 公分。",
+      "計算長方向 144÷48=3 塊、寬方向 96÷48=2 塊。",
+      "平面排列數相乘 3×2=6，得到共需 6 塊。"
     ],
     "optionAnalysis": [
       {
@@ -713,7 +718,7 @@ export const QUESTIONS = [
         "reason": "3×2=6塊。"
       }
     ],
-    "commonMistake": "把長邊與寬邊的塊數相加而不是相乘。",
+    "commonMistake": "把長方向三塊與寬方向兩塊相加，未理解牆面是三列乘兩行的排列。",
     "concept": "鋪滿總塊數等於長方向塊數乘寬方向塊數。",
     "tags": [
       "數與量",
@@ -728,7 +733,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "52cbb3c53075d507835080fc595ea8e70fdac3fab66d613ebf215c42f0d878d5",
+    "contentSha256": "fec279e9bd95a575d5953f4cb4bd92fe47bdbff0749ed6acb7f836c3271564d2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -750,34 +755,35 @@ export const QUESTIONS = [
       "20 顆"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：gcd(105,140,175)=35；每包3+4+5=12顆。所以答案是「12 顆」。",
+    "explanation": "最多組合包數是一百零五、一百四十、一百七十五的最大公因數三十五。每包白珠三顆、黑珠四顆、金珠五顆，三類相加為十二顆。",
     "steps": [
-      "gcd(105,140,175)=35",
-      "每包3+4+5=12顆"
+      "計算 gcd(105,140,175)=35，得到最多 35 包。",
+      "分別計算每包白珠 3 顆、黑珠 4 顆、金珠 5 顆。",
+      "題目問每包總數，將三類相加 3+4+5=12 顆。"
     ],
     "optionAnalysis": [
       {
         "choice": "12 顆",
         "truth": true,
-        "reason": "每包共12顆。"
+        "reason": "gcd(105,140,175)=35；每包白珠3顆、黑珠4顆、金珠5顆，共12顆。"
       },
       {
         "choice": "10 顆",
         "truth": false,
-        "reason": "10少算一種。"
+        "reason": "依最多35包分配後應為3+4+5=12顆，10顆不是三類每包數量的總和。"
       },
       {
         "choice": "15 顆",
         "truth": false,
-        "reason": "15不是各商總和。"
+        "reason": "15顆無法由105÷35、140÷35、175÷35三個商相加得到。"
       },
       {
         "choice": "20 顆",
         "truth": false,
-        "reason": "20過大。"
+        "reason": "20顆不是最多35包時的每包總數，乘回35也不符合三類原始數量。"
       }
     ],
-    "commonMistake": "把最大包數 35 誤當每包珠數。",
+    "commonMistake": "求出三十五包後只計算其中兩種珠子，漏掉第三類便得到錯誤總數。",
     "concept": "GCD 給包數，各類數量除以包數後再加總。",
     "tags": [
       "數與量",
@@ -792,7 +798,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bf296ca2f454ed6adc0a044d8bfc83c2b6b6fe9e475f299e4f97903e04b53d44",
+    "contentSha256": "6ea7cdacff43527b4341402067e4180afacb9236a5a0f5f34f4931fe27559e44",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -814,10 +820,11 @@ export const QUESTIONS = [
       "9盒彩色筆、12本筆記本"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：最多份數gcd(54,72)=18；每份彩色筆54÷18=3盒、筆記本72÷18=4本。所以答案是「3盒彩色筆、4本筆記本」。",
+    "explanation": "最多獎品份數為五十四與七十二的最大公因數十八。每份彩色筆五十四除以十八得三盒，筆記本七十二除以十八得四本，因此每份是三盒與四本。",
     "steps": [
-      "最多份數gcd(54,72)=18",
-      "每份彩色筆54÷18=3盒、筆記本72÷18=4本"
+      "先求最多份數 gcd(54,72)=18。",
+      "計算彩色筆每份 54÷18=3 盒。",
+      "計算筆記本每份 72÷18=4 本，對應正確選項。"
     ],
     "optionAnalysis": [
       {
@@ -841,7 +848,7 @@ export const QUESTIONS = [
         "reason": "這是分成6份。"
       }
     ],
-    "commonMistake": "求出份數後把兩種每份數量對調。",
+    "commonMistake": "把兩種每份數量對調，沒有將五十四與彩色筆、七十二與筆記本正確配對。",
     "concept": "最大獎品份數為 GCD，再分別相除。",
     "tags": [
       "數與量",
@@ -856,7 +863,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩種物品總量、全部用完與最多份數共同決定 GCD，再決定每份內容。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "95d47543eb7fe53d76a71ada60f707b271d2e57561a56cbaea9a5755337c9e97",
+    "contentSha256": "719b3e995d39e43ea274785faa8f6e4bae03ef202e798662564534d076f348a6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -878,10 +885,11 @@ export const QUESTIONS = [
       "2500 平方公分"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：最大邊長gcd(90,150)=30；面積30²=900平方公分。所以答案是「900 平方公分」。",
+    "explanation": "最大正方形桌墊邊長是九十與一百五十的最大公因數三十公分。題目問每塊面積，需用邊長乘邊長，三十平方等於九百平方公分。",
     "steps": [
-      "最大邊長gcd(90,150)=30",
-      "面積30²=900平方公分"
+      "計算 gcd(90,150)=30，得到最大正方形邊長 30 公分。",
+      "套用正方形面積公式，列式 30×30。",
+      "計算 30²=900，附上面積單位平方公分。"
     ],
     "optionAnalysis": [
       {
@@ -905,7 +913,7 @@ export const QUESTIONS = [
         "reason": "50不能整除90。"
       }
     ],
-    "commonMistake": "求出邊長30後忘記平方。",
+    "commonMistake": "求出邊長三十後直接選數值三十，沒有依問句繼續計算正方形面積。",
     "concept": "先用 GCD 求邊長，再平方求面積。",
     "tags": [
       "數與量",
@@ -920,7 +928,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "布的長寬、最大正方形與面積要求形成兩步計算，不能只保留數字。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bb69cf54683570977dfd761aa642fc6198b40dea8c0bd7afda93ca657c2eaf4d",
+    "contentSha256": "17206528962087529ad8cbbc839f7a9acd37c692fdb0ee9e87beac6d52488476",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -942,10 +950,11 @@ export const QUESTIONS = [
       "18 個"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：gcd(80,96,112)=16盒；每盒5+6+7=18個。所以答案是「18 個」。",
+    "explanation": "最多禮盒數為八十、九十六、一百一十二的最大公因數十六。每盒三類甜點分別有五、六、七個，題目問每盒總數，因此相加得到十八個。",
     "steps": [
-      "gcd(80,96,112)=16盒",
-      "每盒5+6+7=18個"
+      "計算 gcd(80,96,112)=16，得到最多 16 盒。",
+      "分別求每盒數量 80÷16=5、96÷16=6、112÷16=7。",
+      "將三類甜點相加 5+6+7=18 個。"
     ],
     "optionAnalysis": [
       {
@@ -969,7 +978,7 @@ export const QUESTIONS = [
         "reason": "5+6+7=18。"
       }
     ],
-    "commonMistake": "把盒數 16 當成每盒甜點數。",
+    "commonMistake": "把最大公因數十六當成每盒總數，混淆盒數與每盒三類甜點的合計。",
     "concept": "三類最大分組後須把每類每盒數量相加。",
     "tags": [
       "數與量",
@@ -984,7 +993,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "三種庫存、相同禮盒、最多盒及求每盒總數共同決定完整兩步解法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bfb1c91e58cf992ff54d896d133a217b75ebb459cd46a8967757e185708d23f1",
+    "contentSha256": "a7238bb5da7ddc0a069f19bdd8dd55a72befe3a65d564abc962a1f3808def5b0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1006,9 +1015,9 @@ export const CONSTRUCTED_RESPONSES = [
       "說明全部用完。"
     ],
     "fullCreditSolution": [
-      "gcd(84,126,210)=42。",
-      "每包鉛筆84÷42=2枝、原子筆126÷42=3枝、橡皮擦210÷42=5塊。",
-      "共42包，每包10件，全部用完。"
+      "最多包數要同時整除三類總量，因此計算 gcd(84,126,210)=42，得到最多 42 包。",
+      "每包鉛筆 84÷42=2 枝、原子筆 126÷42=3 枝、橡皮擦 210÷42=5 塊。",
+      "每包共 2+3+5=10 件；乘回 42 包分別恢復三個總量，證明全部用完。"
     ],
     "alternativeSolutions": [
       "可用質因數分解：共同2×3×7=42。"
@@ -1035,16 +1044,22 @@ export const CONSTRUCTED_RESPONSES = [
       "單位分別為枝、枝、塊。"
     ],
     "commonErrors": [
-      "把42當每包總件數。",
-      "只求兩類GCD。"
+      "把最大公因數四十二當成每包總件數，混淆包數與每包內容。",
+      "只求八十四與一百二十六的最大公因數，沒有檢查橡皮擦也須平均分。",
+      "求出每包二、三、五件後沒有回答包數，或未說明三類都能全部用完。"
     ],
     "independentReview": {
       "derivedResult": "42包；每包2枝鉛筆、3枝原子筆、5塊橡皮擦。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "f8a33ff19261dff5c852fd2d950324c47b4a8f77ee22b8cb3f0de70fe30234ff",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "4e0ccbde866bf8e69205dd9b7280010f780c48946b7c9b543ce31c0403753b13",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "先把最多相同文具包辨認為三個總量的最大公因數。",
+      "用各總量除以包數，求出每包三類文具的數量。",
+      "相加得每包總件數，並用每包數乘包數逐類驗算。"
+    ]
   },
   {
     "questionId": "u02-s006-cr002",
@@ -1062,9 +1077,9 @@ export const CONSTRUCTED_RESPONSES = [
       "總塊數用乘法。"
     ],
     "fullCreditSolution": [
-      "gcd(168,120)=24公分。",
-      "長方向168÷24=7塊，寬方向120÷24=5塊。",
-      "總塊數7×5=35塊。"
+      "最大正方形瓷磚邊長須同時整除 168 與 120，故為 gcd(168,120)=24 公分。",
+      "長方向排 168÷24=7 塊，寬方向排 120÷24=5 塊。",
+      "牆面為七列乘五行，總塊數 7×5=35 塊，且兩方向都沒有剩餘。"
     ],
     "alternativeSolutions": [
       "可先分解168=2³×3×7、120=2³×3×5。"
@@ -1091,16 +1106,22 @@ export const CONSTRUCTED_RESPONSES = [
       "總塊數不是7+5。"
     ],
     "commonErrors": [
-      "答24塊。",
-      "把7與5相加。"
+      "把瓷磚邊長二十四公分誤寫成總共二十四塊。",
+      "將長方向七塊與寬方向五塊相加成十二，未使用平面排列的乘法。",
+      "採用可整除但較小的瓷磚邊長，沒有滿足題目要求的邊長最大。"
     ],
     "independentReview": {
       "derivedResult": "邊長24公分，共35塊。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "f33c38499f2b96a6233f7be7c7b750e5308ee8511f5f5b16bd1e9c9169fe977c",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "1ccb1d9bd0d7f308d1571cf83f1a9bb3283d96c9b86a4f940124113e9af9bcba",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "先用長寬的最大公因數求最大瓷磚邊長。",
+      "分別用牆面長、寬除以瓷磚邊長，得到兩方向塊數。",
+      "將兩方向排列數相乘求平面總塊數，並檢查完全鋪滿。"
+    ]
   }
 ];
 

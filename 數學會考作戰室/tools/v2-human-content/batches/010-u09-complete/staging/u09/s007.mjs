@@ -53,11 +53,9 @@ export default {
       }
     ],
     "conceptDevelopment": [
-      "累積次數會隨組序不減，最後一個累積值就是總數。",
-      "第一組單組次數等於第一個累積值；其餘單組次數用相鄰累積值相減。",
-      "『小於 40』的累積值與『至少 40』互為全體中的補集。",
-      "兩個門檻累積值相減，可得到中間區間人數。",
-      "累積值一直上升是自然結果，不代表每期新增量一直增加。"
+      "累積次數是從第一組開始一路加到目前組別的總和，因此數列必須保持不減，最後一個累積值就是資料總數。反向還原時，第一組次數等於第一個累積值，其餘每組用本組累積減前組累積；所有差值都應是非負整數，且重新累加後必須回到原表，這兩項可作完整驗算。",
+      "區間語句須配合門檻解讀：小於較大上界的累積值減去小於較小上界的累積值，會留下兩門檻之間的人數；至少某門檻則可用全體減去小於該門檻。端點是否包含仍須依題目中的含或不含判定。",
+      "累積量與每期新增量不能混用。累積值上升只表示總量沒有減少，不代表新增速度增加；要比較哪一期新增最多，必須先做相鄰差。累積相對次數則先乘全體筆數還原累積次數，再檢查結果是否符合整數資料。"
     ],
     "definitions": [
       {
@@ -120,27 +118,34 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "單組 3、5、4。",
+        "prompt": "單組次數依序為 3、5、4，求各組累積次數。",
         "solution": [
-          "累積為 3、8、12。"
+          "第一組累積為 3。",
+          "第二組為 3+5=8。",
+          "第三組為 8+4=12。"
         ],
-        "answer": "第二組累積 8。"
+        "answer": "累積次數為 3、8、12。",
+        "why": "累積表的每一格都包含前面資料，所以要沿組序逐步加總；最後十二也等於三組次數總和，可同時驗證沒有漏組或重複計數。"
       },
       {
         "id": "L2",
-        "prompt": "累積 3、10、18、25、30。",
+        "prompt": "累積次數為 3、10、18、25、30，哪組本身次數最多？",
         "solution": [
-          "單組為 3、7、8、7、5。"
+          "相鄰相減得 3、7、8、7、5。",
+          "比較單組次數，最大值 8 在第三組。"
         ],
-        "answer": "第三組次數最多。"
+        "answer": "第三組。",
+        "why": "累積值天然越來越大，直接找最大一定偏向末組；先還原相鄰差才能比較同一意義的單組次數，並能看出第三組八次是唯一最大。"
       },
       {
         "id": "L3",
-        "prompt": "小於 40 有 27，總數 35。",
+        "prompt": "小於 40 有 27 筆，全體 35 筆，求至少 40 的筆數。",
         "solution": [
-          "至少 40=35-27。"
+          "全體分成小於 40 與至少 40 兩個互斥部分。",
+          "35-27=8。"
         ],
-        "answer": "8 筆。"
+        "answer": "8 筆。",
+        "why": "小於四十與至少四十正好覆蓋全體且沒有重疊，所以用補集相減最直接；答案八與二十七相加回到三十五，可檢查門檻方向沒有顛倒。"
       }
     ],
     "commonMistakes": [
@@ -217,7 +222,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "98a3ccc279a21ecaa77bff287adccba85cba02cefa774b616abfafac1d779f1d"
+    "contentSha256": "dcadb6d98650e0fbe68710f1a8bb4ff2ca4561de47c1687aecd50c6f893421aa"
   },
   "mcQuestions": [
     {
@@ -245,9 +250,11 @@ export default {
         "derivedAnswer": "8",
         "trustStoredAnswer": false
       },
-      "explanation": "累積次數是從第一組一路加到指定組。",
+      "explanation": "累積次數是從第一組一路加到指定組。 累積次數表示從第一組一路加到指定組，因此第二組累積值同時包含第一、二組，計算三加五得八；第三組的四次尚未納入。",
       "steps": [
-        "加第一組與第二組。"
+        "加第一組與第二組。",
+        "先確認題目問到第二組為止。",
+        "將第一組三次與第二組五次相加並選八。"
       ],
       "optionAnalysis": [
         {
@@ -271,7 +278,7 @@ export default {
           "reason": "12 是全部累積次數。"
         }
       ],
-      "misconceptionTarget": "只抄該組次數",
+      "misconceptionTarget": "只抄該組次數 只抄第二組次數五，沒有把第一組一併累加。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -289,7 +296,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "07815a8a62d26214e8d621236808d4eab6a5a5697aa48286afcb14086e66af24"
+      "contentSha256": "8d9f061741bfd6aa7e2ac1babd7f4ca551a8cc0654ae124cd2a68172f7c8238d"
     },
     {
       "questionId": "u09-s007-v002",
@@ -316,9 +323,11 @@ export default {
         "derivedAnswer": "20",
         "trustStoredAnswer": false
       },
-      "explanation": "不能把累積次數欄再次全部加總。",
+      "explanation": "不能把累積次數欄再次全部加總。 最後一個累積次數已把前面四組的資料各計一次，所以二十就是全體資料筆數；把四個累積值再相加會重複計入早期資料。",
       "steps": [
-        "找到最後一列累積次數。"
+        "找到最後一列累積次數。",
+        "找出累積表最後一組的數值。",
+        "直接讀得總資料數二十並排除重複加總。"
       ],
       "optionAnalysis": [
         {
@@ -342,7 +351,7 @@ export default {
           "reason": "把累積值再相加會重複計數。"
         }
       ],
-      "misconceptionTarget": "把累積欄再加總",
+      "misconceptionTarget": "把累積欄再加總 將各組累積值再次相加，造成同一資料重複計數。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -360,7 +369,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7fb67acb15a0b5ff1ddafc44322aa5c29d1964792d7830eca3a824c995883ae8"
+      "contentSha256": "8e3c375984156d98ff2dea3199000e1434810377422a4fd0233881a442ad5b6f"
     },
     {
       "questionId": "u09-s007-v003",
@@ -387,9 +396,11 @@ export default {
         "derivedAnswer": "8",
         "trustStoredAnswer": false
       },
-      "explanation": "由累積值還原單組次數要相鄰相減。",
+      "explanation": "由累積值還原單組次數要相鄰相減。 第二個累積值十四包含第一組的六次與第二組本身次數，因此以十四減六還原第二組為八次；十四不是單組次數。",
       "steps": [
-        "用 14 減 6。"
+        "用 14 減 6。",
+        "用第二組累積十四減去前一組累積六。",
+        "得到八並以六加八等於十四驗算。"
       ],
       "optionAnalysis": [
         {
@@ -413,7 +424,7 @@ export default {
           "reason": "14-6=8。"
         }
       ],
-      "misconceptionTarget": "把累積值當單組次數",
+      "misconceptionTarget": "把累積值當單組次數 把第二個累積值十四直接當成第二組本身次數。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -431,7 +442,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8b606904f42dbdb454eb3252ecd949fe0f99507795ede5cdc51cb12af3b783d8"
+      "contentSha256": "652a6f388e78a33e82d09da5db2fa9ef6c262e6a83986cd5e32e8fd58770b367"
     },
     {
       "questionId": "u09-s007-v004",
@@ -458,9 +469,11 @@ export default {
         "derivedAnswer": "14",
         "trustStoredAnswer": false
       },
-      "explanation": "要包含指定組本身。",
+      "explanation": "要包含指定組本身。 第三組累積次數須包含前三組的二、七、五次，依序相加為十四；第四組六次位於指定範圍之後，不能提前加入。",
       "steps": [
-        "依序加前三組。"
+        "依序加前三組。",
+        "圈出第一至第三組三個次數。",
+        "計算二加七加五等於十四並選第二項。"
       ],
       "optionAnalysis": [
         {
@@ -484,7 +497,7 @@ export default {
           "reason": "20 是最後總數。"
         }
       ],
-      "misconceptionTarget": "漏掉指定組或多加後組",
+      "misconceptionTarget": "漏掉指定組或多加後組 只加第二、三組或誤把第四組也納入第三組累積值。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -502,7 +515,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e03445dac66ba26ed481f2185c18c3b3306d35e14d05e509578599ffb204e780"
+      "contentSha256": "204183769554a669de44273ed9e996c499b472f49d91fcfefd8399505d69269f"
     },
     {
       "questionId": "u09-s007-v005",
@@ -529,10 +542,11 @@ export default {
         "derivedAnswer": "20",
         "trustStoredAnswer": false
       },
-      "explanation": "單組次數應加在前一累積值上。",
+      "explanation": "單組次數應加在前一累積值上。 第三組累積值等於前兩組累積十二再加第三組本身八次，所以未知數為二十；最後累積二十五還含第四組，不能用來代替。",
       "steps": [
         "找前一累積 12。",
-        "加第三組次數 8。"
+        "加第三組次數 8。",
+        "以十二加八得二十，再確認二十不超過末累積二十五。"
       ],
       "optionAnalysis": [
         {
@@ -556,7 +570,7 @@ export default {
           "reason": "第三組累積＝第二組累積 12+第三組次數 8=20。"
         }
       ],
-      "misconceptionTarget": "把單組次數直接填入",
+      "misconceptionTarget": "把單組次數直接填入 把第三組單組次數八當成累積值，或直接抄最後累積。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -574,7 +588,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "71a6af5964cc8f627c9ce911ba969137431d4dda4baf8bfd1c89d1c667e53283"
+      "contentSha256": "4aa83b6869db42c92b3a8610e6fd39394ec283b5cbebe8c666d7a557ee5bb98c"
     },
     {
       "questionId": "u09-s007-v006",
@@ -601,10 +615,11 @@ export default {
         "derivedAnswer": "7 人",
         "trustStoredAnswer": false
       },
-      "explanation": "累積門檻相減可得到中間區間人數。",
+      "explanation": "累積門檻相減可得到中間區間人數。 小於二十的十一人已包含小於十的四人，兩個門檻相減正好留下十以上且未滿二十的七人；小於三十的數值與本區間無關。",
       "steps": [
         "辨認兩個門檻。",
-        "用較大門檻累積減較小門檻累積。"
+        "用較大門檻累積減較小門檻累積。",
+        "以十一減四得七，並核對區間端點為十含、二十不含。"
       ],
       "optionAnalysis": [
         {
@@ -628,7 +643,7 @@ export default {
           "reason": "14 是錯誤相加。"
         }
       ],
-      "misconceptionTarget": "把累積人數直接當區間人數",
+      "misconceptionTarget": "把累積人數直接當區間人數 直接抄小於二十的十一人，忘記扣掉小於十者。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -646,7 +661,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d1623fc7277781c5b0ea33ca87018e82117326a671ad8c7081d0482251c42f36"
+      "contentSha256": "eb9c6aae66378b2372fcd1eb6446eb168b1aa9667892ba2a657f878ddcc2b4ce"
     },
     {
       "questionId": "u09-s007-v007",
@@ -673,7 +688,7 @@ export default {
         "derivedAnswer": "第三組",
         "trustStoredAnswer": false
       },
-      "explanation": "比較累積表時需先還原每組，不能直接找最大累積值。",
+      "explanation": "比較累積表時需先還原每組，不能直接找最大累積值。 各組本身次數要由相鄰累積值作差，依序為三、七、八、七、五；最大值八只出現在第三組，因此答案唯一，不是累積值最大的第五組。",
       "steps": [
         "第一組次數等於首累積。",
         "其餘相鄰相減。",
@@ -701,7 +716,7 @@ export default {
           "reason": "第五組 30-25=5。"
         }
       ],
-      "misconceptionTarget": "把最後累積值最大誤認為最後組次數最多",
+      "misconceptionTarget": "把最後累積值最大誤認為最後組次數最多 用累積值大小判單組最多，誤選最後一組而未相減。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -719,7 +734,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "db1b9bfbd8b2052b8817da3039563d97673911652818134d306a2b59921d52d2"
+      "contentSha256": "13a723a8234be7b132931fa49e58726b4ca97b2b7fd2b3d30c6ed4ebe57449a7"
     },
     {
       "questionId": "u09-s007-v008",
@@ -746,10 +761,11 @@ export default {
         "derivedAnswer": "8 筆",
         "trustStoredAnswer": false
       },
-      "explanation": "『至少』與『小於』互為補集。",
+      "explanation": "『至少』與『小於』互為補集。 全體三十五筆可分成小於四十的二十七筆與至少四十的其餘資料，所以用補集得八筆；小於二十的十二筆早已包含於二十七筆。",
       "steps": [
         "找總數 35。",
-        "扣除小於 40 的 27。"
+        "扣除小於 40 的 27。",
+        "以總數三十五減小於四十的二十七，得到至少四十共八筆。"
       ],
       "optionAnalysis": [
         {
@@ -773,7 +789,7 @@ export default {
           "reason": "27 是小於 40。"
         }
       ],
-      "misconceptionTarget": "用錯累積門檻",
+      "misconceptionTarget": "用錯累積門檻 用三十五減十二，錯把至少二十當成至少四十。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -791,7 +807,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8d21ee853ce3d202fe00cb560e87ceaba2322fcab5dd2afb0a5115d7f321844b"
+      "contentSha256": "838949371b5fb62d43102ca2da2f6fcf10342d646fe861694b0f4eee86672cea"
     },
     {
       "questionId": "u09-s007-v009",
@@ -818,7 +834,7 @@ export default {
         "derivedAnswer": "36",
         "trustStoredAnswer": false
       },
-      "explanation": "相對次數乘總數回到實際筆數。",
+      "explanation": "相對次數乘總數回到實際筆數。 累積相對次數零點七二代表到該組占全體百分之七十二，乘總數五十得到三十六筆；三十六是整數，也符合題目條件。",
       "steps": [
         "轉成 72%。",
         "乘 50。",
@@ -846,7 +862,7 @@ export default {
           "reason": "72 是百分數數字。"
         }
       ],
-      "misconceptionTarget": "把百分數數字當筆數",
+      "misconceptionTarget": "把百分數數字當筆數 把零點七二當成七十二筆，沒有乘上總資料數。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -864,7 +880,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b75efaf3ffa3e9915bbad1a8094a16c145e8cd4ee4dd485bc1e1c628f971c8e8"
+      "contentSha256": "591b839afb58b0a704a1396e6b4b6a25456899c495e08fe7052189e4b5c3d96c"
     },
     {
       "questionId": "u09-s007-v010",
@@ -891,10 +907,11 @@ export default {
         "derivedAnswer": "13 人",
         "trustStoredAnswer": false
       },
-      "explanation": "累積資料可求兩門檻間人數。",
+      "explanation": "累積資料可求兩門檻間人數。 十五分鐘內的二十一人包含十分鐘內八人，兩個累積門檻相減得十三，正好保留超過十分鐘且不超過十五分鐘的人。",
       "steps": [
         "辨認上限與下限累積值。",
-        "相減。"
+        "相減。",
+        "依題意用二十一減八得十三人，並核對兩端點描述。"
       ],
       "optionAnalysis": [
         {
@@ -918,7 +935,7 @@ export default {
           "reason": "21-8=13。"
         }
       ],
-      "misconceptionTarget": "直接抄上限累積值",
+      "misconceptionTarget": "直接抄上限累積值 直接讀十五分鐘內二十一人，未扣除十分鐘內八人。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -936,7 +953,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "74060990b1a0db96a1ceab7c20a02f669b89ba251b07744c06d2c8ee50922ab7"
+      "contentSha256": "815ebce178177c394a2fe8528548d8b25364d63d9839cd640b66fb91eb5dd99b"
     },
     {
       "questionId": "u09-s007-v011",
@@ -963,7 +980,7 @@ export default {
         "derivedAnswer": "週二與週三並列，各 55 本",
         "trustStoredAnswer": false
       },
-      "explanation": "累積量不能直接比較單日表現。",
+      "explanation": "累積量不能直接比較單日表現。 逐日新增量須以前後累積值相減，週二與週三都增加五十五本，週四只增加四十八本；因此最大值是並列而非單獨週三。",
       "steps": [
         "還原每日新增量。",
         "比較四個單日值。",
@@ -991,7 +1008,7 @@ export default {
           "reason": "週一 40 小於 55。"
         }
       ],
-      "misconceptionTarget": "把最高累積值當最高單日量",
+      "misconceptionTarget": "把最高累積值當最高單日量 把累積一百九十八當成週四單日量，或漏看並列。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -1009,7 +1026,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ee4264bbd9401e3e2f4cbb337627b5ad12384e7b68406df928745372338b6732"
+      "contentSha256": "2beb19aff6d7a7af1e30a3f97f5be30940c26b518ef057792e7f9025fd22dd5b"
     },
     {
       "questionId": "u09-s007-v012",
@@ -1036,7 +1053,7 @@ export default {
         "derivedAnswer": "不正確，新增人數為 120、140、130、110",
         "trustStoredAnswer": false
       },
-      "explanation": "檢核趨勢敘述時要分析新增量，而非累積曲線本身。",
+      "explanation": "檢核趨勢敘述時要分析新增量，而非累積曲線本身。 累積人數增加只表示總量沒有下降，是否持續加速必須比較每週相鄰差；新增量由一百四十降為一百三十再降為一百一十，故報告不成立。",
       "steps": [
         "將累積值轉為週增量。",
         "比較增量序列。",
@@ -1064,7 +1081,7 @@ export default {
           "reason": "相鄰相減即可判斷。"
         }
       ],
-      "misconceptionTarget": "把累積持續增加誤當新增量持續增加",
+      "misconceptionTarget": "把累積持續增加誤當新增量持續增加 看到累積折線上升，就誤認每週新增量也持續增加。",
       "prerequisiteCheck": {
         "skillIds": [
           "histogram-read"
@@ -1082,7 +1099,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "07200fdb70eb835bc78f6ad1c3b7428d8c88a63d1a77ff382a6e9e7ffbd6dd3f"
+      "contentSha256": "86abfdbb58cdf1d7bba031a33847825dfca6185d39f6e490af65d54394e94d01"
     }
   ],
   "constructedResponses": [
@@ -1107,7 +1124,8 @@ export default {
         "60至未滿70：17-8=9人。",
         "70至未滿80：26-17=9人。",
         "80至未滿90：30-26=4人。",
-        "未滿70分占17/30=56又2/3%（約56.7%）。"
+        "未滿70分占17/30=56又2/3%（約56.7%）。",
+        "四個區間次數加上未滿五十分的三人為三十人，與最後累積值一致；比例分母必須用全體三十人，而不是只用已列出的某一區間。"
       ],
       "alternativeMethod": "可先補上未滿50分3人，得到各組3、5、9、9、4，總和30作檢查。",
       "reasoningSteps": [
@@ -1152,7 +1170,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "f331be880c6797df63a0f2ccfc6dfb434c9cb71e6afa461872ddaa88ddf46901"
+      "contentSha256": "f3dce116329bde5a4087d5f8f3dc453c9976e8f46d277f54ba0924755f73525f",
+      "commonErrors": [
+        "把八、十七、二十六、三十等累積值直接當成各區間次數，未作相鄰相減。",
+        "計算未滿七十分比例時以十七除以二十六，錯把未滿八十分者當全體。"
+      ]
     },
     {
       "questionId": "u09-s007-cr002",
@@ -1219,7 +1241,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "a293bc6e151228ddd12d7532005e484b3da33060ffe02156a6642ed671e1c62c"
+      "contentSha256": "d0ad405143e448b99aba0840ae61c5fc7cfe0050aa52bc9fa4ff997aa17d9b5a",
+      "commonErrors": [
+        "把五天累積值全部相加而重複計入早期報名者，得到二百二十七人。",
+        "相鄰相減後漏看第三、四天同為十八人，錯把新增最多寫成單獨一天。"
+      ]
     }
   ],
   "semanticReviews": [
