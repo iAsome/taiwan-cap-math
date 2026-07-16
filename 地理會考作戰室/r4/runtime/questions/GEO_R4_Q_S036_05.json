@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "河流中心線圖層可以直接回答哪項問題？",
+  "options": [
+    "河段連通與圖上長度",
+    "精確水面面積",
+    "即時水質濃度",
+    "河床每處深度"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "線幾何支援網路與長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水面積需面邊界。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "濃度需監測屬性與日期。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "深度需測量資料。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "幾何能力"
+  ],
+  "representationType": "river-layer",
+  "misconceptionTargets": [
+    "線可直接算面積"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "幾何類型決定可直接計算的空間量，中心線不含河道寬度。 正確選項「河段連通與圖上長度」可由題幹推出，因為線幾何支援網路與長度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若線屬性有水質或深度仍可查，但題目只說中心線圖層。 逐項排除其他選項：「精確水面面積」水面積需面邊界。 這項內容無法支持題幹所要求的地理判斷。；「即時水質濃度」濃度需監測屬性與日期。；「河床每處深度」深度需測量資料。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

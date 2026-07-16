@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S016_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某圖上兩景點直線距離二公分，換算為一公里；導航道路卻標一點六公里。兩資料是否矛盾？",
+  "options": [
+    "不矛盾，因比例尺完全不能量直線",
+    "矛盾，任何兩地只能有一個距離",
+    "不矛盾，道路繞行可比直線長",
+    "矛盾，路程必比直線短"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "有效比例尺可以換算圖上直線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "距離類型不同，可同時成立。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "道路受路網與障礙影響，通常可長於直線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩點間直線是最短平面線段，路程不必更短。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "距離意義"
+  ],
+  "representationType": "navigation",
+  "misconceptionTargets": [
+    "把直線距離等同路程"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目分別給幾何直線距離與沿道路里程，不能用同一標籤比較。 正確選項「不矛盾，道路繞行可比直線長」可由題幹推出，因為道路受路網與障礙影響，通常可長於直線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "導航一點六公里大於直線一公里合乎可能情況，因此不構成矛盾。 逐項排除其他選項：「不矛盾，因比例尺完全不能量直線」有效比例尺可以換算圖上直線。；「矛盾，任何兩地只能有一個距離」距離類型不同，可同時成立。；「矛盾，路程必比直線短」兩點間直線是最短平面線段，路程不必更短。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

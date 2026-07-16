@@ -1,0 +1,129 @@
+{
+  "id": "GEO_R4_L_S030",
+  "subject": "geography",
+  "unitId": "GEO_R4_U05",
+  "skillId": "GEO_R4_S030",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S029"
+  ],
+  "objectives": [
+    "辨識面積、形狀、距離與方向四類投影變形",
+    "由地圖用途判斷需檢查的性質"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S030_SEC01",
+      "title": "四種常見性質",
+      "content": "面積指圖面大小比例，形狀指輪廓與角度，距離指兩地間的長度關係，方向指從一地前往另一地的方位。這四項不能混為一談，例如輪廓看似相近，不代表面積比例或長途距離也正確。"
+    },
+    {
+      "id": "GEO_R4_L_S030_SEC02",
+      "title": "從證據辨識變形",
+      "content": "同一大小的球面格網若在圖上面積不同，代表面積尺度隨位置改變；圓形變成橢圓，顯示形狀變形；同樣實際距離畫成不同長度，顯示距離變形；方位線彎折或角度改變，則要檢查方向是否保留。"
+    },
+    {
+      "id": "GEO_R4_L_S030_SEC03",
+      "title": "不要用一項代替全部",
+      "content": "題目若說地圖保角或局部形狀較準，只能支持形狀與角度相關判斷；若說等積，只能支持面積比較。沒有資料證明的性質不能自行補上。"
+    },
+    {
+      "id": "GEO_R4_L_S030_SEC04",
+      "title": "判讀順序",
+      "content": "先圈出題目要比較的量，再找圖例或說明中的投影性質，接著核對證據是否直接對應。最後排除把圖面外觀當成實際數值、或把局部正確推廣到全圖的選項。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S030_EX01",
+      "prompt": "兩個實際面積相同的區域，在圖上分別占 4 與 9 格。哪一性質沒有一致保留？",
+      "steps": [
+        "固定實際面積相同",
+        "比較圖面格數",
+        "判斷差異所屬性質"
+      ],
+      "answer": "面積。",
+      "why": "相同實際面積在圖上應占相同比例；現在圖面格數不同，表示不同位置的面積被放大或縮小，不能直接比較國土大小。"
+    },
+    {
+      "id": "GEO_R4_L_S030_EX02",
+      "prompt": "地圖上所有小圓在高緯處拉長成橢圓，主要顯示哪種變形？",
+      "steps": [
+        "比較原始小圓與圖上符號",
+        "觀察輪廓改變",
+        "對應形狀性質"
+      ],
+      "answer": "形狀變形。",
+      "why": "測試圖形原本都是圓，到了高緯卻被拉長，改變的是局部輪廓與角度關係，因此證據直接指向形狀變形。"
+    },
+    {
+      "id": "GEO_R4_L_S030_EX03",
+      "prompt": "航線規劃需要最短路徑，僅知道地圖保面積是否足夠？",
+      "steps": [
+        "辨認任務需要距離與路徑",
+        "比對已知只有保面積",
+        "判斷資料是否充分"
+      ],
+      "answer": "不足。",
+      "why": "最短路徑涉及距離與方向，等積只確保面積比例，不能保證航線長度或方位正確，還需適合航行用途的地圖資料。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "輪廓相似就代表國土面積比例正確。",
+      "whyWrong": "形狀與面積是不同性質，可保形狀而改變大小。",
+      "correction": "面積比較要另找等積說明或數值資料。"
+    },
+    {
+      "belief": "圖上直線一定是地球表面的最短路徑。",
+      "whyWrong": "球面最短路徑投影到平面後不一定呈直線。",
+      "correction": "依投影與大圓航線資料判斷，不只看筆直外觀。"
+    },
+    {
+      "belief": "相同緯度的圖面比例就必定完全一致。",
+      "whyWrong": "不同投影的比例變化方式不同，不能只由緯度推定。",
+      "correction": "檢查該圖的投影說明或比例尺度。"
+    },
+    {
+      "belief": "方向正確表示距離也正確。",
+      "whyWrong": "方向與距離可分別被保留或變形。",
+      "correction": "每項判斷都需對應自己的證據。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同面積球面格在圖上大小不同，顯示哪種變形？",
+      "answer": "面積變形。",
+      "reason": "圖面占比未維持相同。"
+    },
+    {
+      "prompt": "小圓變成橢圓，主要檢查哪一性質？",
+      "answer": "形狀。",
+      "reason": "輪廓與角度關係已改變。"
+    },
+    {
+      "prompt": "等積地圖能直接證明任兩地距離準確嗎？",
+      "answer": "不能。",
+      "reason": "等積只處理面積比例。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  }
+}

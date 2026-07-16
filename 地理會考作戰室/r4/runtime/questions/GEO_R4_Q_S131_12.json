@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S131_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "颱風路徑仍不確定，水庫如何兼顧防洪與供水？",
+  "options": [
+    "一開始就假定唯一雨量",
+    "完全不做任何預洩評估",
+    "無論資料都排空水庫",
+    "用集合預報與即時入流滾動調整，保留不同情境方案"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一路徑可能偏差很大。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不評估可能失去防洪時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "全排空會造成不必要供水損失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多情境可把預報不確定性納入決策。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "adaptive-management"
+  ],
+  "representationType": "forecast-operations",
+  "misconceptionTargets": [
+    "預報必然精確"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確選項「用集合預報與即時入流滾動調整，保留不同情境方案」可由題幹推出，因為多情境可把預報不確定性納入決策。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "明確設定操作門檻與下游通知。 逐項排除其他選項：「一開始就假定唯一雨量」單一路徑可能偏差很大。；「完全不做任何預洩評估」不評估可能失去防洪時間。；「無論資料都排空水庫」全排空會造成不必要供水損失。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

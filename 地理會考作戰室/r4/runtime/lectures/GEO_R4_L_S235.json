@@ -1,0 +1,158 @@
+{
+  "id": "GEO_R4_L_S235",
+  "subject": "geography",
+  "unitId": "GEO_R4_U36",
+  "skillId": "GEO_R4_S235",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S234"
+  ],
+  "objectives": [
+    "對齊地圖圖表照片與文字資料的日期期間季節範圍與空間單位",
+    "辨認邊界變更尺度差異和照片視角造成的錯配"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S235_SEC01",
+      "title": "先為每份資料建立時空標籤",
+      "content": "地圖需有製圖或資料年份、涵蓋區域與解析度；圖表需有觀測期間、時間單位和統計範圍；照片需有拍攝日期、位置、方向與取景範圍；文字需辨認描述的是事件當時、長期趨勢或政策生效後。把這些標籤列成表格，才能知道資料是否回答同一問題。沒有日期的照片不能直接證明現在狀況，沒有範圍的平均值也不能定位到某社區。"
+    },
+    {
+      "id": "GEO_R4_L_S235_SEC02",
+      "title": "時間對齊不只看年份",
+      "content": "同一年雨季洪水照片與旱季河川流量不宜直接比較，月平均也不能解釋小時尖峰。政策前後評估要有足夠基準期，並排除季節、週末、疫情或施工等暫時因素。若資料頻率不同，可彙整到共同且不超出原始解析度的時間單位，例如把日資料加總為月資料；不能把月平均反推成每小時變化。"
+    },
+    {
+      "id": "GEO_R4_L_S235_SEC03",
+      "title": "空間對齊要處理邊界與尺度",
+      "content": "行政區改制、里界調整或測站搬遷會讓前後數值涵蓋不同空間。可將資料重算到共同邊界、用人口或面積加權，或限制在未變範圍並說明缺失。大尺度國家平均不能直接代表街區，點測站也不能無條件代表整個流域。聚合尺度改變可能使相關方向改變，需避免把區域統計關係套到每個個體。"
+    },
+    {
+      "id": "GEO_R4_L_S235_SEC04",
+      "title": "照片與文字要回到可定位證據",
+      "content": "照片能呈現地表特徵和現場關係，但鏡頭方向、焦距、遮蔽和選景會影響印象；文字敘述可能省略範圍或混用地名。應以地標、座標、拍攝方向和地圖交叉定位，必要時從固定位置重複拍攝。多來源若無法完全對齊，不必硬合併，可分層呈現並明確標示推論邊界與不確定性。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S235_EX01",
+      "prompt": "用二月空拍照解釋八月洪峰是否合理？",
+      "steps": [
+        "季節不同",
+        "地表植被水量可能改變",
+        "需同季節或長期資料"
+      ],
+      "answer": "不能直接解釋",
+      "why": "照片只能支持拍攝時點可見特徵。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S235_EX02",
+      "prompt": "行政區一分為二後如何比較人口？",
+      "steps": [
+        "找共同舊邊界",
+        "把新兩區加總",
+        "再與舊區比較"
+      ],
+      "answer": "重算共同空間單位",
+      "why": "直接拿其中一個新區會低估。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S235_EX03",
+      "prompt": "街角照片能否代表全市店面空置？",
+      "steps": [
+        "照片是單一位置",
+        "選景可能偏誤",
+        "需系統抽樣與範圍資料"
+      ],
+      "answer": "不能",
+      "why": "可作個案線索但不能估全市比例。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "同一年資料一定可比",
+      "whyWrong": "季節日夜頻率與政策時點仍可能不同",
+      "correction": "對齊到共同時間窗"
+    },
+    {
+      "belief": "同名行政區前後範圍必相同",
+      "whyWrong": "邊界與統計口徑可能改制 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "檢查地理編碼與邊界版本"
+    },
+    {
+      "belief": "照片是真實所以沒有偏誤",
+      "whyWrong": "視角時間選景和遮蔽會改變呈現",
+      "correction": "記錄拍攝元資料並多點重拍"
+    },
+    {
+      "belief": "大區平均可直接套到每個人",
+      "whyWrong": "聚合關係不必然成立於個體或小區",
+      "correction": "限制推論尺度 應依題幹條件與資料證據逐項核對後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "照片至少需哪些元資料？",
+      "answer": "日期位置方向與取景範圍",
+      "reason": "才能與地圖事件對齊"
+    },
+    {
+      "prompt": "月平均能否推小時尖峰？",
+      "answer": "不能",
+      "reason": "時間解析度不足"
+    },
+    {
+      "prompt": "邊界改制如何比較？",
+      "answer": "重算到共同邊界或明示不可比範圍",
+      "reason": "不能只看同名"
+    },
+    {
+      "prompt": "點測站代表流域需什麼？",
+      "answer": "檢查代表性並用多站或空間模型",
+      "reason": "點值不可無條件外推"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

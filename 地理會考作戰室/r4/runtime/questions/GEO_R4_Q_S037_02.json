@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "不同來源圖層疊合前，優先確認哪項？",
+  "options": [
+    "檔名長度相同",
+    "坐標系統、解析度與資料日期",
+    "標題字體相同",
+    "圖層顏色相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "檔名長短與品質無關。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "三項會影響位置對齊與時效。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "字體不保證空間一致。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同色不表示同坐標。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "疊圖前檢查"
+  ],
+  "representationType": "metadata",
+  "misconceptionTargets": [
+    "視覺同色等於資料相容"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "中繼資料檢查是避免漂亮錯圖的第一道門檻。 正確選項「坐標系統、解析度與資料日期」可由題幹推出，因為三項會影響位置對齊與時效。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "之後還要確認欄位定義、缺值與幾何拓撲。 逐項排除其他選項：「檔名長度相同」檔名長短與品質無關。 這項內容無法支持題幹所要求的地理判斷。；「標題字體相同」字體不保證空間一致。 這項內容無法支持題幹所要求的地理判斷。；「圖層顏色相同」同色不表示同坐標。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

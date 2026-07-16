@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S033_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "『兩國在同一張世界地圖上，所以可以直接用圖面大小比實際面積。』這句話忽略什麼？",
+  "options": [
+    "同一張非等積圖的比例也可能隨位置改變",
+    "同一張圖不能出現兩個國家",
+    "世界地圖沒有方向",
+    "國家不具有面積"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "非等積投影即使同一張圖，面積尺度仍可能因位置不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同一圖當然可呈現多國。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "世界地圖可以標示方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "國土可量測面積。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "論證辨誤"
+  ],
+  "representationType": "claim",
+  "misconceptionTargets": [
+    "誤以為同圖就有一致面積尺度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項指出論證缺漏的投影條件。 正確選項「同一張非等積圖的比例也可能隨位置改變」可由題幹推出，因為非等積投影即使同一張圖，面積尺度仍可能因位置不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘皆為錯誤的地圖或國家基本概念。 逐項排除其他選項：「同一張圖不能出現兩個國家」同一圖當然可呈現多國。；「世界地圖沒有方向」世界地圖可以標示方向。；「國家不具有面積」國土可量測面積。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

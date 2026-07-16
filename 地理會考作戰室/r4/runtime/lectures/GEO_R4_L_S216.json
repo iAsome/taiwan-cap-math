@@ -1,0 +1,146 @@
+{
+  "id": "GEO_R4_L_S216",
+  "subject": "geography",
+  "unitId": "GEO_R4_U32",
+  "skillId": "GEO_R4_S216",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BC-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S215"
+  ],
+  "objectives": [
+    "以效率、安全與公平三項準則比較供應調整方案",
+    "設計具有風險分散、透明啟動條件與弱勢支持的可執行政策組合"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S216_SEC01",
+      "title": "三項準則不是三選一",
+      "content": "效率關注平時成本、品質和創新；安全關注中斷時維持關鍵功能的能力；公平關注成本、風險與服務是否由不同地區和群體不成比例承擔。最低價集中採購可能有效率卻暴露單點風險，全面自給可降低部分外部依賴卻帶來高成本與國內單點風險。好的方案先界定哪些功能必須維持，再用最少必要成本取得足夠韌性，並明確處理調整負擔。"
+    },
+    {
+      "id": "GEO_R4_L_S216_SEC02",
+      "title": "依關鍵度選工具而非一體適用",
+      "content": "維生藥品、能源備援與通訊修復的中斷代價高，可採安全庫存、多地合格來源、相容規格和定期演練；一般可替代商品則可依市場調整，避免昂貴囤積。庫存適合短期缺口，來源分散處理特定供應商風險，替代設計降低轉換時間，需求管理在供給不足時保留關鍵用途。每項工具都應對應一個因果鏈弱點。"
+    },
+    {
+      "id": "GEO_R4_L_S216_SEC03",
+      "title": "分散要避免名義多元",
+      "content": "增加供應商前要檢查地理危害、港口、電網、資訊系統與次級投入是否共享。把來源從一國改為同一洪泛區的三家公司，並未取得真正安全。相容的多節點比互不相容的備援更有用；但過度規格統一也可能形成共同漏洞，因此需維持可替換介面、獨立測試與多種恢復路徑。安全指標應測可接替容量與啟用時間，而非只數供應商家數。"
+    },
+    {
+      "id": "GEO_R4_L_S216_SEC04",
+      "title": "把公平與檢討機制寫進方案",
+      "content": "供應重組可能提高消費價格、使原產區工人失業，或把污染轉移到弱勢社區。公平措施包括分級補助、轉職與區域轉型支持、基本用量保障、公開採購標準及受影響群體參與。政策還要設定何時啟動庫存、何時結束配給、誰負擔維持成本與多久檢討一次。可量測的門檻能減少臨時爭奪，也能在風險或技術改變後調整，而不是把應急措施永久化。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S216_EX01",
+      "prompt": "一般文具和急救藥品是否應採相同庫存水準？",
+      "steps": [
+        "比較中斷後果",
+        "比較替代難度",
+        "依關鍵度分級"
+      ],
+      "answer": "不應相同",
+      "why": "急救藥品的生命安全代價與認證時間較高，合理安全量通常更高。"
+    },
+    {
+      "id": "GEO_R4_L_S216_EX02",
+      "prompt": "三家供應商都經同一港口出貨，是否已充分分散？",
+      "steps": [
+        "公司數增加",
+        "共同運輸節點未改變",
+        "港口中斷會同時影響"
+      ],
+      "answer": "沒有",
+      "why": "應加入不同路徑或可轉運節點，並驗證實際接替容量。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S216_EX03",
+      "prompt": "能源備援費用使低所得家庭帳單上升，如何兼顧公平？",
+      "steps": [
+        "保留必要備援",
+        "按負擔能力設基本用量保障",
+        "讓高使用量承擔較多邊際成本"
+      ],
+      "answer": "採分級費率或定向支持",
+      "why": "公平不是取消安全投資，而是避免必要成本對弱勢造成不成比例負擔。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "供應安全等於所有產品國內自給",
+      "whyWrong": "全面自給成本高且仍可能有國內共同風險，應依關鍵度配置多元工具",
+      "correction": "要求比較中斷損失與維持成本"
+    },
+    {
+      "belief": "供應商家數越多就越安全",
+      "whyWrong": "若共享危害、路徑或次級來源，數量增加不等於獨立",
+      "correction": "畫出共同節點和暴露"
+    },
+    {
+      "belief": "公平只是在短缺後平均分配",
+      "whyWrong": "用途急迫度、支付能力與既有暴露不同，公平需保基本需求並處理調整成本",
+      "correction": "比較不同群體的實際負擔"
+    },
+    {
+      "belief": "應急政策越久越安全",
+      "whyWrong": "長期措施可能鎖定高成本、囤積浪費或特定利益，需有退場與檢討",
+      "correction": "查找明確期限和觸發條件"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "效率指標至少包含什麼？",
+      "answer": "平時成本、品質與創新或選擇",
+      "reason": "只看單次採購價會漏掉全生命週期"
+    },
+    {
+      "prompt": "安全指標為何不能只數供應商？",
+      "answer": "供應商可能共享失效來源且接替容量不足",
+      "reason": "要測獨立性和啟用時間"
+    },
+    {
+      "prompt": "公平評估要問誰？",
+      "answer": "誰付成本、誰承擔風險、誰能取得基本服務",
+      "reason": "平均成本會遮蔽群體差異"
+    },
+    {
+      "prompt": "政策為何要有退場條件？",
+      "answer": "避免危機措施在情勢改變後繼續造成不必要成本",
+      "reason": "定期檢討可依證據調整"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BC-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1"
+    ]
+  }
+}

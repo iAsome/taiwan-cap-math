@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S040_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "災後影像在洪峰三天後才拍攝，如何解讀淹水範圍？",
+  "options": [
+    "可忽略河川水位",
+    "代表拍攝瞬間殘留水面，可能小於洪峰最大範圍",
+    "等於洪峰精確範圍",
+    "拍攝越晚水一定越多"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "水位是解釋範圍的重要資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "水可能已退，影像只記錄該時刻。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺洪峰時影像不能直接等同最大值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "晚拍不保證水增加。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "事件時序"
+  ],
+  "representationType": "post-flood",
+  "misconceptionTargets": [
+    "任何災後圖都等於災害最大範圍"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時間戳決定影像回答哪一瞬間，不能用事件名稱抹平時序。 正確選項「代表拍攝瞬間殘留水面，可能小於洪峰最大範圍」可由題幹推出，因為水可能已退，影像只記錄該時刻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "最大淹水可結合多時相、痕跡調查或水位模型重建。 逐項排除其他選項：「可忽略河川水位」水位是解釋範圍的重要資料。；「等於洪峰精確範圍」缺洪峰時影像不能直接等同最大值。；「拍攝越晚水一定越多」晚拍不保證水增加。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

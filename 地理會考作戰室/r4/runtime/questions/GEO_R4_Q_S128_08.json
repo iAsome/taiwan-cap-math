@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S128_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "年雨量圖顯示山區最高，是否能直接判斷每次暴雨都落在同一山區？",
+  "options": [
+    "能，年平均決定每場雨",
+    "能，山區外永不下雨",
+    "不能，因年雨量圖沒有數值",
+    "不能，單次系統路徑與風向會改變雨區"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "颱風或鋒面路徑各異。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "平地也會有暴雨。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "即使有數值仍不能外推每場。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "長期總量與單次事件空間尺度不同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "map-literacy"
+  ],
+  "representationType": "temporal-scale",
+  "misconceptionTargets": [
+    "年平均代表每次事件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確選項「不能，單次系統路徑與風向會改變雨區」可由題幹推出，因為長期總量與單次事件空間尺度不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "使用符合問題時間尺度的資料。 逐項排除其他選項：「能，年平均決定每場雨」颱風或鋒面路徑各異。 這項內容無法支持題幹所要求的地理判斷。；「能，山區外永不下雨」平地也會有暴雨。 這項內容無法支持題幹所要求的地理判斷。；「不能，因年雨量圖沒有數值」即使有數值仍不能外推每場。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

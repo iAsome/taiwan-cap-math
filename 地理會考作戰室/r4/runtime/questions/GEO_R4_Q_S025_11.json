@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S025_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "污染物在支流上游洩漏，地形圖可先支援哪項應變？",
+  "options": [
+    "保證不會滲入地下",
+    "只通知上游更高處",
+    "圈定可能沿支流到匯流後下游的監測路徑",
+    "精確預告每分鐘濃度"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地下滲流需地質與水文資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "主要自然輸送可能朝下游，不能只通知上游。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "流向與河網可界定優先監測位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "濃度時間需要流量、擴散與污染量。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "污染應變"
+  ],
+  "representationType": "spill-response",
+  "misconceptionTargets": [
+    "知道方向等於知道濃度時間"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "地形圖最適合快速建立可能路徑，不等於完整污染模型。 正確選項「圈定可能沿支流到匯流後下游的監測路徑」可由題幹推出，因為流向與河網可界定優先監測位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "應再結合即時水質、雨量、取水口與閘壩資料調整警戒。 逐項排除其他選項：「保證不會滲入地下」地下滲流需地質與水文資料。；「只通知上游更高處」主要自然輸送可能朝下游，不能只通知上游。；「精確預告每分鐘濃度」濃度時間需要流量、擴散與污染量。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

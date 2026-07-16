@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S009_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一地位於 0° 緯線、40°E，最精確的敘述是什麼？",
+  "options": [
+    "位於本初經線上",
+    "只在北半球",
+    "只在南半球",
+    "位於赤道上且在東經地區"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "本初經線應是零度經度，不是 40°E。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "零度緯線是南北分界，不能只歸北半球。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "零度緯線也不能只歸南半球。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "零度緯線為赤道，40°E 則位於東經地區。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "邊界判讀"
+  ],
+  "representationType": "coordinate",
+  "misconceptionTargets": [
+    "強迫赤道歸單一半球"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先處理邊界：緯度零為赤道；再讀經度四十度東，答案唯一。 正確選項「位於赤道上且在東經地區」可由題幹推出，因為零度緯線為赤道，40°E 則位於東經地區。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "選項一、二強迫邊界歸類，選項四混淆零度緯度與零度經度。 逐項排除其他選項：「位於本初經線上」本初經線應是零度經度，不是 40°E。；「只在北半球」零度緯線是南北分界，不能只歸北半球。；「只在南半球」零度緯線也不能只歸南半球。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

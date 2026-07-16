@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S017_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S017"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "比例尺一比五萬，實際兩公里在圖上應畫多長？",
+  "options": [
+    "四公分",
+    "二公分",
+    "十公分",
+    "四十公分"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩公里為二十萬公分，除以五萬得四公分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二公分只代表一公里。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "十公分會代表五公里。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四十公分會代表二十公里。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "反向換算"
+  ],
+  "representationType": "calculation",
+  "misconceptionTargets": [
+    "用實距直接除未統一單位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "由實距求圖距先換成公分再除後項，二十萬除五萬為四。 正確選項「四公分」可由題幹推出，因為兩公里為二十萬公分，除以五萬得四公分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "乘回驗算：四公分乘五萬等於二十萬公分，正是兩公里。 逐項排除其他選項：「二公分」二公分只代表一公里。 這項內容無法支持題幹所要求的地理判斷。；「十公分」十公分會代表五公里。 這項內容無法支持題幹所要求的地理判斷。；「四十公分」四十公分會代表二十公里。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

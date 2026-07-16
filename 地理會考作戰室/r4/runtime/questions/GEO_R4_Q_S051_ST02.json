@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S051_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST051",
+  "stem": "乙站雨量破折號應如何處理？",
+  "options": [
+    "直接當十二毫米",
+    "刪除乙站所有資料",
+    "查資料說明，暫標未知而非零",
+    "直接當零毫米"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有依據抄甲站。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "其餘欄仍可使用。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "破折號語意未定，不能猜值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "零是確定無雨的數值。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "缺值處理"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "缺值就是零雨量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "缺值處理應局部且可追溯，不必把整筆有效觀測刪除。 正確選項「查資料說明，暫標未知而非零」可由題幹推出，因為破折號語意未定，不能猜值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若比較雨量，乙需排除或補正並揭露。 逐項排除其他選項：「直接當十二毫米」沒有依據抄甲站。 這項內容無法支持題幹所要求的地理判斷。；「刪除乙站所有資料」其餘欄仍可使用。 這項內容無法支持題幹所要求的地理判斷。；「直接當零毫米」零是確定無雨的數值。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

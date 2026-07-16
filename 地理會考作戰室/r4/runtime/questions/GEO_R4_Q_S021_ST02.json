@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S021_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST021",
+  "stem": "乙的數值大致正確，但回報仍有何問題？",
+  "options": [
+    "筆直道路不能用比例尺",
+    "公分不能換公里",
+    "小數位超過零點一公分量尺與圖面所支持的精度",
+    "一點五公里一定不合理"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "圖上筆直道路可以按圖距換算。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十萬公分可正確換為一公里。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "輸入只到零點一公分，不支持五位小數公里的外觀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一比五萬的三公分正是一點五公里。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "精度稽核"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "尾隨零越多越精確"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "計算器補出的零不是新增證據，回報一點五公里或約一點五公里較誠實。 正確選項「小數位超過零點一公分量尺與圖面所支持的精度」可由題幹推出，因為輸入只到零點一公分，不支持五位小數公里的外觀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若任務對安全容差敏感，還應提供量尺造成的距離不確定範圍。 逐項排除其他選項：「筆直道路不能用比例尺」圖上筆直道路可以按圖距換算。；「公分不能換公里」十萬公分可正確換為一公里。；「一點五公里一定不合理」一比五萬的三公分正是一點五公里。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

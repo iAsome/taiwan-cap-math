@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S037",
+  "subject": "geography",
+  "unitId": "GEO_R4_U06",
+  "skillId": "GEO_R4_S037",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S036"
+  ],
+  "objectives": [
+    "能疊合地形、人口與交通圖層，依交集、鄰近與連通條件回答空間問題。",
+    "能檢查坐標系統、日期、解析度與統計單位，避免由空間重疊過度推論因果。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S037_SEC01",
+      "title": "疊圖先把問題拆成條件",
+      "content": "例如尋找避難所候選地，可把條件拆成坡度較緩、服務人口較多、距主要道路適中且避開洪水區。每個條件對應一個圖層與可檢查規則，最後取符合條件的空間交集；若只把彩色圖層堆在一起而沒有門檻，就無法重現答案。"
+    },
+    {
+      "id": "GEO_R4_L_S037_SEC02",
+      "title": "對齊坐標與時間",
+      "content": "圖層疊合前應使用相容坐標系統，確認位置精度與解析度；人口資料年份、道路通行狀態和地形資料日期也要與任務相符。坐標錯位會讓道路落入河中，年代不一則可能把新人口配上已拆除交通網，產生看似精密但不可靠的結果。"
+    },
+    {
+      "id": "GEO_R4_L_S037_SEC03",
+      "title": "人口統計有空間單位",
+      "content": "行政區總人口不表示區內每處都同樣密集；分級設色圖也可能因區界大小造成視覺差異。要評估設施服務，可使用較細人口網格、聚落點或可達範圍內的人口統計，並揭露資料單位。不能把行政區平均值直接指定給每一棟房屋。"
+    },
+    {
+      "id": "GEO_R4_L_S037_SEC04",
+      "title": "重疊支持關聯不等於因果",
+      "content": "人口多的地方與道路密集區可能重疊，但疊圖本身不能證明道路是人口增加的唯一原因；地形、產業、歷史和政策也可能共同作用。疊圖適合找空間關係與候選區，因果解釋仍需時間序列、比較研究或其他證據。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S037_EX01",
+      "prompt": "找可服務最多居民的平緩設施地，應疊哪些資料？",
+      "steps": [
+        "由地形層篩坡度",
+        "由人口層估服務人數",
+        "由路網層計可達性"
+      ],
+      "answer": "疊合地形、人口與交通，依明確門檻排序候選地。",
+      "why": "三層分別回答可建性、需求與可達性；最終仍需地質、土地與風險資料。"
+    },
+    {
+      "id": "GEO_R4_L_S037_EX02",
+      "prompt": "人口圖為今年、道路圖為十年前，能直接算現況通勤可達嗎？",
+      "steps": [
+        "人口時點較新",
+        "舊路網可能漏新路或含廢路",
+        "取得同時期或更新交通資料"
+      ],
+      "answer": "不宜直接視為現況結果。",
+      "why": "演算法正確也無法補回時間不一致，應標示限制或更新圖層。"
+    },
+    {
+      "id": "GEO_R4_L_S037_EX03",
+      "prompt": "道路密度高區與人口密度高區重疊，能說道路是唯一原因嗎？",
+      "steps": [
+        "確認疊圖只顯示共現",
+        "列出其他可能因素",
+        "需要時間與對照證據"
+      ],
+      "answer": "不能，只能先說兩者空間上相關。",
+      "why": "因果方向可能雙向，也可能同受地形與都市發展影響。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "圖層看起來對齊就不必查坐標系統。",
+      "whyWrong": "不同坐標或基準可能造成系統偏移，縮小畫面時不易察覺。",
+      "correction": "檢查中繼資料並以控制點驗證。"
+    },
+    {
+      "belief": "行政區人口可均勻分給區內所有位置。",
+      "whyWrong": "人口通常集中於聚落，平均化會誤判山林或工業區。",
+      "correction": "使用適合尺度的人口網格或點資料。"
+    },
+    {
+      "belief": "疊圖顏色越深表示條件一定越好。",
+      "whyWrong": "顏色可能來自不同分類與權重，需讀規則與圖例。",
+      "correction": "保留每項門檻與原始值。"
+    },
+    {
+      "belief": "兩層重疊就證明因果。",
+      "whyWrong": "空間共現只能支持關聯，仍可能有反向或共同原因。",
+      "correction": "以額外證據檢驗因果機制。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "疊圖前最基本的空間檢查？",
+      "answer": "坐標系統與位置精度相容。",
+      "reason": "否則同地物可能錯位。"
+    },
+    {
+      "prompt": "人口總數能否代表區內均勻分布？",
+      "answer": "不能。",
+      "reason": "需看更細空間單位與聚落分布。"
+    },
+    {
+      "prompt": "道路與人口重疊可直接證明因果嗎？",
+      "answer": "不可以。",
+      "reason": "只先支持空間關聯。"
+    },
+    {
+      "prompt": "候選地門檻為何要明確？",
+      "answer": "使結果可重現並可討論取捨。",
+      "reason": "只靠顏色難以查核。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

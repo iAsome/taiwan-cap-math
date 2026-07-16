@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "紙條沿曲線逐段轉動時，哪個操作最容易造成累積誤差？",
+  "options": [
+    "沿中心線轉動",
+    "完成後用直尺讀總刻痕",
+    "每段不從前一刻痕接續且紙條滑動",
+    "標記固定起點"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "中心線是合理共同基準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "最後讀總長是正常步驟。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "接點遺漏或重疊會在多段中累積。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "固定起點能提高一致性。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "操作誤差"
+  ],
+  "representationType": "paper-strip",
+  "misconceptionTargets": [
+    "忽略分段接點累積誤差"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "紙條法把曲線拆成連續小段，連接點的連續性是主要信任條件。 正確選項「每段不從前一刻痕接續且紙條滑動」可由題幹推出，因為接點遺漏或重疊會在多段中累積。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可重測兩次並比較差值，若差異超過需求再縮短分段或更換圖源。 逐項排除其他選項：「沿中心線轉動」中心線是合理共同基準。；「完成後用直尺讀總刻痕」最後讀總長是正常步驟。；「標記固定起點」固定起點能提高一致性。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

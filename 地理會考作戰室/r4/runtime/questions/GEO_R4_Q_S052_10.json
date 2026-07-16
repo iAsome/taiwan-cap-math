@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S052_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "中心最低已畫線一千百帕，等壓距 4 hPa 且未出現九百九十六線。中心氣壓可能範圍為何？",
+  "options": [
+    "低於九百百帕",
+    "高於九百九十六且低於一千百帕",
+    "一定一千百帕",
+    "高於一千零四"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有支持如此低值。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "若降到九百九十六應再畫一線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "中心位於線內通常更低。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "與低壓序列矛盾。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "中心估值"
+  ],
+  "representationType": "pressure-range",
+  "misconceptionTargets": [
+    "最低已畫線就是精確中心值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "閉合線給區間而非精確中心值，除非圖上標中心氣壓。 正確選項「高於九百九十六且低於一千百帕」可由題幹推出，因為若降到九百九十六應再畫一線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "邊界情況依製圖規則，題目採完整標準等壓線。 逐項排除其他選項：「低於九百百帕」沒有支持如此低值。 這項內容無法支持題幹所要求的地理判斷。；「一定一千百帕」中心位於線內通常更低。；「高於一千零四」與低壓序列矛盾。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

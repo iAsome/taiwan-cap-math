@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S022_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某線標四百公尺，沿線繞過山坡後回到原處。途中線上各點高度如何？",
+  "options": [
+    "無法由等高線判斷",
+    "都為四百公尺",
+    "隨紙面向上逐漸升高",
+    "每轉彎增加一個等高距"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "已標數值足以判斷線上高度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "連續同一條等高線保持相同海拔。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "紙面上下不是高度軸。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "線的彎曲不代表跨越相鄰線。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "追蹤等高線"
+  ],
+  "representationType": "complex-contour",
+  "misconceptionTargets": [
+    "沿線轉彎就改變高度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "追線時容易在密集處跳到鄰線，應確認線條連續而非只沿最近方向。 正確選項「都為四百公尺」可由題幹推出，因為連續同一條等高線保持相同海拔。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只要未跨接另一條線，同一條四百公尺線不會自行升降。 逐項排除其他選項：「無法由等高線判斷」已標數值足以判斷線上高度。；「隨紙面向上逐漸升高」紙面上下不是高度軸。 這項內容無法支持題幹所要求的地理判斷。；「每轉彎增加一個等高距」線的彎曲不代表跨越相鄰線。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

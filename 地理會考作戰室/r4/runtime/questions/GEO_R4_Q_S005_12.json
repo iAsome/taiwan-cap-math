@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S005_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S005"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "想比較疫情前後商圈人流，但前期以人工計數、後期以手機訊號估算。應如何處理？",
+  "options": [
+    "直接把兩數相減",
+    "先檢驗兩方法的涵蓋對象與校正關係",
+    "後期科技較新所以一定正確",
+    "刪除方法說明"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不同方法的涵蓋率可能不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "了解取樣與校正後才知道能否形成時間序列。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "新技術仍有持機者與演算法偏差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "隱藏方法會讓誤差無法評估。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "方法一致性評估"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "科技資料天然可比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹的主要斷點是量測方法改變，第二項先建立方法間可比性。 正確選項「先檢驗兩方法的涵蓋對象與校正關係」可由題幹推出，因為了解取樣與校正後才知道能否形成時間序列。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接相減、偏信新技術或刪除說明都會掩蓋系統誤差。 逐項排除其他選項：「直接把兩數相減」不同方法的涵蓋率可能不同。；「後期科技較新所以一定正確」新技術仍有持機者與演算法偏差。；「刪除方法說明」隱藏方法會讓誤差無法評估。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

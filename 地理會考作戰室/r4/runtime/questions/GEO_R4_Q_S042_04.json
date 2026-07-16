@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S042_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "避難所容量空白與容量零有何不同？",
+  "options": [
+    "完全相同",
+    "空白一定比零大",
+    "零表示資料未調查",
+    "空白可能未知，零表示已知無容量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不能混為一類。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未知不能排序大小。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "零通常是已知數值。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩者語意與決策後果不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "零與未知"
+  ],
+  "representationType": "shelter-data",
+  "misconceptionTargets": [
+    "缺值與真零可互換"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "分配系統若把未知當零可能錯過可用設施，反之當大值又可能超載。 正確選項「空白可能未知，零表示已知無容量」可由題幹推出，因為兩者語意與決策後果不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "應由主管來源更新或暫停自動分配。 逐項排除其他選項：「完全相同」不能混為一類。 這項內容無法支持題幹所要求的地理判斷。；「空白一定比零大」未知不能排序大小。 這項內容無法支持題幹所要求的地理判斷。；「零表示資料未調查」零通常是已知數值。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

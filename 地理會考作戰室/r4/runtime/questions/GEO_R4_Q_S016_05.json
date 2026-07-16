@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S016_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "圖上二點四公分代表實際一點二公里，圖上六公分代表多少公里？",
+  "options": [
+    "三公里",
+    "五公里",
+    "七點二公里",
+    "二點四公里"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "六是二點四的二點五倍，實距為一點二乘二點五等於三。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "五是錯把六除以一點二。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "七點二是直接把兩個數相乘，未按圖距比例。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "二點四公里是把圖距數字直接當實距。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "倍數換算"
+  ],
+  "representationType": "proportion",
+  "misconceptionTargets": [
+    "直接相乘給定圖實距"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先求一公分代表零點五公里，再乘六得到三公里最穩定。 正確選項「三公里」可由題幹推出，因為六是二點四的二點五倍，實距為一點二乘二點五等於三。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "也可用比例式六除以二點四等於實距除以一點二，結果一致。 逐項排除其他選項：「五公里」五是錯把六除以一點二。；「七點二公里」七點二是直接把兩個數相乘，未按圖距比例。；「二點四公里」二點四公里是把圖距數字直接當實距。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

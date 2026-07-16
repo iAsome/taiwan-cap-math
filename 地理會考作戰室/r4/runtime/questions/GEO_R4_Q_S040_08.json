@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S040_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "影像拍攝時刻標為 02:00 UTC，使用者在臺灣解讀日照時還需注意什麼？",
+  "options": [
+    "直接當臺灣凌晨兩點",
+    "忽略時區",
+    "把 UTC 改成公里",
+    "換算當地時區並查拍攝日期的太陽方位"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "臺灣時區通常需換算。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "忽略會誤判陰影與日期邊界。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "時間不能換成距離。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "UTC 與當地時間不同，日照需在地時刻。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "時區中繼資料"
+  ],
+  "representationType": "acquisition-time",
+  "misconceptionTargets": [
+    "UTC就是各地當地時間"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "中繼資料應清楚標時區，跨午夜時還可能影響當地日期。 正確選項「換算當地時區並查拍攝日期的太陽方位」可由題幹推出，因為UTC 與當地時間不同，日照需在地時刻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "精確太陽方位可由時間位置計算，但題目只要求先做正確換算。 逐項排除其他選項：「直接當臺灣凌晨兩點」臺灣時區通常需換算。 這項內容無法支持題幹所要求的地理判斷。；「忽略時區」忽略會誤判陰影與日期邊界。；「把 UTC 改成公里」時間不能換成距離。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

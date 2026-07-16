@@ -1,0 +1,77 @@
+{
+  "id": "GEO_R4_ST164",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-2",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "content": {
+    "title": "三條物流方案比較",
+    "prompt": "時間包含等待與換裝；中斷風險為相對等級。",
+    "table": {
+      "columns": [
+        "方案",
+        "路徑",
+        "平均時間",
+        "時間變異",
+        "中斷風險"
+      ],
+      "rows": [
+        [
+          "甲",
+          "單一海峽直達",
+          "4 日",
+          "高",
+          "高"
+        ],
+        [
+          "乙",
+          "海運加替代港",
+          "5 日",
+          "低",
+          "低"
+        ],
+        [
+          "丙",
+          "陸路跨境加渡輪",
+          "6 日",
+          "中",
+          "中，需兩次通關"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "表格比較單一海峽直達、海運替代港與陸路加渡輪三方案的時間、變異及中斷風險。",
+    "longDescription": "甲平均四日最快但時間變異和中斷風險高；乙平均五日，因有替代港而變異與風險低；丙平均六日，變異風險中且需兩次通關。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S164_ST01",
+    "GEO_R4_Q_S164_ST02",
+    "GEO_R4_Q_S164_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-2",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S005_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S005"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲測站在河川上游，乙測站在河口。用兩站水質比較時間變化時，哪個風險最大？",
+  "options": [
+    "把空間位置差異誤當成時間變化",
+    "水質不能有數字",
+    "河川沒有上下游",
+    "測站名稱不同就不能記錄"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "若不同年份採不同站點，水質差可能來自位置而非時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水質可用多項指標量測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "河川具有上下游。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "名稱不同不是不能記錄，而是位置須控制。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "辨識時空混淆"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "不同測站可當時間序列"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目以不同位置代表不同時點，第一項指出混淆變項。 正確選項「把空間位置差異誤當成時間變化」可由題幹推出，因為若不同年份採不同站點，水質差可能來自位置而非時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘選項違反基本地理與測量常識，答案唯一。 逐項排除其他選項：「水質不能有數字」水質可用多項指標量測。；「河川沒有上下游」河川具有上下游。 這項內容無法支持題幹所要求的地理判斷。；「測站名稱不同就不能記錄」名稱不同不是不能記錄，而是位置須控制。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

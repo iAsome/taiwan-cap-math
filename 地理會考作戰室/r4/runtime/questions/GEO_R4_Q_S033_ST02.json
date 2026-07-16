@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S033_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST033",
+  "stem": "若只依截圖像素排序，哪兩區的先後會和實際面積排序相反？",
+  "options": [
+    "甲與乙",
+    "乙與丙",
+    "乙與丁",
+    "甲與丙"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲圖面 140 像素大於乙 120，但實際甲 55 小於乙 95，先後相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙在圖面與實際都大於丙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙在圖面與實際都大於丁。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲在圖面與實際都大於丙。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "雙欄比對"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "不檢查圖面排序是否扭轉實際關係"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐對比較兩欄，只有甲乙的大小關係由圖面與實際得到相反結果。 正確選項「甲與乙」可由題幹推出，因為甲圖面 140 像素大於乙 120，但實際甲 55 小於乙 95，先後相反。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘三對在兩欄中的相對順序一致。 逐項排除其他選項：「乙與丙」乙在圖面與實際都大於丙。；「乙與丁」乙在圖面與實際都大於丁。；「甲與丙」甲在圖面與實際都大於丙。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

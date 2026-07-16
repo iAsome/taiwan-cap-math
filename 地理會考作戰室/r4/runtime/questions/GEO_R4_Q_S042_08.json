@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S042_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "影像六成被雲遮，未見變化區占六成。可說全區六成未變嗎？",
+  "options": [
+    "可以，沒看到就是沒變",
+    "可以，雲代表穩定",
+    "不能，因影像沒有日期",
+    "不能，雲下是未知不是未變"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這會系統性低估變化。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "雲與地表穩定無關。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目問題核心已是雲遮。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "缺觀測不能分類地表變化。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "未知區統計"
+  ],
+  "representationType": "cloud-cover",
+  "misconceptionTargets": [
+    "沒有觀測等於未變"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "變遷統計分母應排除或另列未知區，並報可見覆蓋率。 正確選項「不能，雲下是未知不是未變」可由題幹推出，因為缺觀測不能分類地表變化。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "補影像後再更新，不把空缺寫成確定類別。 逐項排除其他選項：「可以，沒看到就是沒變」這會系統性低估變化。 這項內容無法支持題幹所要求的地理判斷。；「可以，雲代表穩定」雲與地表穩定無關。 這項內容無法支持題幹所要求的地理判斷。；「不能，因影像沒有日期」題目問題核心已是雲遮。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "衛星底圖把小河曲概化成較平滑線，沿圖量得五公里。對實際河道長度應如何解讀？",
+  "options": [
+    "可能低估未畫出的細小彎曲，應視為依該圖估計",
+    "必定精確到一公分",
+    "概化會讓河道實際變直",
+    "應把五公里直接加倍"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "資料概化可省略小彎，量值受圖源解析度限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "圖面与量尺都不支持這種精度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "製圖簡化不會改變現實河道。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有固定加倍的證據。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料概化"
+  ],
+  "representationType": "generalized-river",
+  "misconceptionTargets": [
+    "計算精確可消除來源概化"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比例尺計算正確只能保證換算鏈，不能補回來源中未呈現的幾何。 正確選項「可能低估未畫出的細小彎曲，應視為依該圖估計」可由題幹推出，因為資料概化可省略小彎，量值受圖源解析度限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "回報圖源、日期與約值能讓使用者理解五公里的適用範圍。 逐項排除其他選項：「必定精確到一公分」圖面与量尺都不支持這種精度。；「概化會讓河道實際變直」製圖簡化不會改變現實河道。；「應把五公里直接加倍」沒有固定加倍的證據。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

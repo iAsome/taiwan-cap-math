@@ -1,0 +1,143 @@
+{
+  "id": "GEO_R4_L_S059",
+  "subject": "geography",
+  "unitId": "GEO_R4_U09",
+  "skillId": "GEO_R4_S059",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S058"
+  ],
+  "objectives": [
+    "能用環境氣溫平均每上升100公尺下降約0.6°C作近似推算。",
+    "能說明垂直氣溫變化是近似關係而非固定常數。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S059_SEC1",
+      "title": "高度與氣溫",
+      "content": "在對流層中，地面吸收太陽能後加熱近地空氣。海拔升高時，空氣較稀薄且氣壓較低，環境氣溫通常下降。國中地理常用每升高100公尺約降0.6°C估算同一地區山麓與山地的溫差。"
+    },
+    {
+      "id": "GEO_R4_L_S059_SEC2",
+      "title": "估算方法",
+      "content": "先用兩地海拔相減，再把高度差除以100公尺，乘上0.6°C。由低處往高處要減去溫差；由高處推回低處則加回。若題目另給遞減率，必須使用題目數值。"
+    },
+    {
+      "id": "GEO_R4_L_S059_SEC3",
+      "title": "近似值的界線",
+      "content": "0.6°C是教學用平均估計，不表示每座山、每一小時都完全相同。濕度、雲雨、逆溫與氣團會改變實際垂直溫度分布，因此觀測值與估算值有小幅差異不一定錯誤。"
+    },
+    {
+      "id": "GEO_R4_L_S059_SEC4",
+      "title": "應用與檢核",
+      "content": "海拔氣溫差可解釋高山植被帶、避暑與高地農業，但不能單獨決定降水或作物。算完要檢查方向：較高地點的估算溫度應較低；若反而升高，通常是加減號用反。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S059_EX1",
+      "prompt": "山腳海拔200公尺為24°C，山站海拔1,200公尺，依0.6°C／100公尺估算。",
+      "steps": [
+        "高度差為1,000公尺",
+        "換成10個100公尺",
+        "24減6"
+      ],
+      "answer": "山站約18°C。",
+      "why": "上升1,000公尺約降6°C，因此從山腳24°C扣除6°C，得到18°C。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S059_EX2",
+      "prompt": "海拔2,000公尺處為12°C，估算海拔500公尺處氣溫。",
+      "steps": [
+        "下降高度1,500公尺",
+        "估算回暖9°C",
+        "12加9"
+      ],
+      "answer": "約21°C。",
+      "why": "從高處移向低處，氣溫方向相反而上升；1,500公尺相當於9°C，所以估為21°C。"
+    },
+    {
+      "id": "GEO_R4_L_S059_EX3",
+      "prompt": "估算值18°C，實測17.4°C，能否據此否定海拔遞減概念？",
+      "steps": [
+        "辨認估算率是平均值",
+        "比較誤差大小",
+        "考慮當時大氣條件"
+      ],
+      "answer": "不能。",
+      "why": "0.6°C只是近似率，實際濕度與天氣會使數值偏離；實測仍呈現高處較冷的方向。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "海拔每增加100公尺，任何時候都精確下降0.6°C。",
+      "whyWrong": "實際大氣受濕度與天氣影響。",
+      "correction": "把0.6°C視為題目未另說明時的近似估算率。"
+    },
+    {
+      "belief": "從高地算低地仍然把溫差扣掉。",
+      "whyWrong": "下降高度通常會增溫。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "先用箭頭標出移動方向，再決定加或減。"
+    },
+    {
+      "belief": "兩地海拔直接乘0.6就是溫差。",
+      "whyWrong": "遞減率以每100公尺為單位。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "先求高度差並除以100。"
+    },
+    {
+      "belief": "高山較冷表示一定降水較多。",
+      "whyWrong": "降水還受水氣、風向與地形位置影響。",
+      "correction": "溫度與降水須分別找證據。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "上升500公尺，依平均率氣溫約變化多少？",
+      "answer": "下降3°C。",
+      "reason": "500公尺含5個100公尺，5×0.6=3。"
+    },
+    {
+      "prompt": "海拔差計算要用兩地海拔總和嗎？",
+      "answer": "不用，要用差值。",
+      "reason": "遞減率描述的是上升或下降的高度。"
+    },
+    {
+      "prompt": "算出高處比低處暖，首先檢查什麼？",
+      "answer": "加減方向。",
+      "reason": "一般估算下高度上升應伴隨氣溫下降。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  }
+}

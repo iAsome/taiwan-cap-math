@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S012_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "只提供 70°E，地圖上能確定什麼？",
+  "options": [
+    "唯一城市",
+    "海拔高度",
+    "一條經線",
+    "一條緯線"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同一經線上有許多城市。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "經度不含高度資訊。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "E 表示東經，因此確定東經七十度經線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "緯線應使用 N 或 S。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "資料充分性"
+  ],
+  "representationType": "map",
+  "misconceptionTargets": [
+    "單一座標唯一定位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單一經度對應一條南北延伸的經線，不能縮成唯一點。 正確選項「一條經線」可由題幹推出，因為E 表示東經，因此確定東經七十度經線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "選項一準確說明可確定的範圍，沒有過度定位。 逐項排除其他選項：「唯一城市」同一經線上有許多城市。；「海拔高度」經度不含高度資訊。 這項內容無法支持題幹所要求的地理判斷。；「一條緯線」緯線應使用 N 或 S。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S002_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲圖用舊里界統計人口，乙圖用改制後里界統計。兩圖人口色塊不同，最先應檢查什麼？",
+  "options": [
+    "是否使用相同顏色",
+    "行政區邊界與統計單元是否一致",
+    "地圖紙張是否同樣大小",
+    "圖名是否同樣長"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色可不同，只要分級意義清楚。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "邊界改變會讓人口被重新分組，造成表面分布差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "紙張大小不決定統計值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "圖名字數與人口分布無關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料適切性檢查"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "地圖看似相同即可比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹明示舊里界與新里界，應優先控制空間單元。 正確選項「行政區邊界與統計單元是否一致」可由題幹推出，因為邊界改變會讓人口被重新分組，造成表面分布差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "即使配色與版面完全相同，分區不同仍不能直接比較，故第二項唯一。 逐項排除其他選項：「是否使用相同顏色」顏色可不同，只要分級意義清楚。；「地圖紙張是否同樣大小」紙張大小不決定統計值。；「圖名是否同樣長」圖名字數與人口分布無關。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

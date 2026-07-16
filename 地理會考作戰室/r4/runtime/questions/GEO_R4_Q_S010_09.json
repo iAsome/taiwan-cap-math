@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "由 10°S 沿同一經線一路向北到 15°N，途中會依序經過什麼？",
+  "options": [
+    "先赤道，再到北半球",
+    "先本初經線，再到西半球",
+    "先北極，再到赤道",
+    "全程不跨任何半球分界"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "從南緯向北必先到零度赤道，再進入北半球。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沿同一經線移動不必經過零度經線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "十五度北遠未到北極。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "跨越赤道就是跨南北半球分界。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "移動序列"
+  ],
+  "representationType": "route",
+  "misconceptionTargets": [
+    "混淆跨赤道與跨本初經線"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把緯度視為南北數線，路徑由負側經零到正側，答案索引零。 正確選項「先赤道，再到北半球」可由題幹推出，因為從南緯向北必先到零度赤道，再進入北半球。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "經度保持不變，所以本初經線與東西半球不是必經事件。 逐項排除其他選項：「先本初經線，再到西半球」沿同一經線移動不必經過零度經線。；「先北極，再到赤道」十五度北遠未到北極。 這項內容無法支持題幹所要求的地理判斷。；「全程不跨任何半球分界」跨越赤道就是跨南北半球分界。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

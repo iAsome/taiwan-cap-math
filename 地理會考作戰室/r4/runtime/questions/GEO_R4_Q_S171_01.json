@@ -1,0 +1,82 @@
+{
+  "id": "GEO_R4_Q_S171_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-2",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "人口密度如何求得？",
+  "options": [
+    "人口數除以土地面積",
+    "人口數加土地面積",
+    "出生數除以死亡數",
+    "只看城市名稱"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "密度表示單位面積人口。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相加沒有密度單位。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這是另一種比值。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "名稱不能量化。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "calculation-concept"
+  ],
+  "representationType": "population-density",
+  "misconceptionTargets": [
+    "人口總數等於密度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-2",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "正確選項「人口數除以土地面積」可由題幹推出，因為密度表示單位面積人口。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項排除其他選項：「人口數加土地面積」相加沒有密度單位。 這項內容無法支持題幹所要求的地理判斷。；「出生數除以死亡數」這是另一種比值。 這項內容無法支持題幹所要求的地理判斷。；「只看城市名稱」名稱不能量化。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

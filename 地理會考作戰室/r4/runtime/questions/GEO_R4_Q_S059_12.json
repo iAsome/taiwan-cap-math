@@ -1,0 +1,94 @@
+{
+  "id": "GEO_R4_Q_S059_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要檢驗一座山的實際氣溫遞減率，哪種資料最適合？",
+  "options": [
+    "同一時段多個海拔測站的氣溫與高度",
+    "不同年份各城市的人口",
+    "山腳一張午後照片",
+    "山頂單日雨量總和"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "同時、多高度的配對資料可計算高度每增加100公尺的溫差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人口資料無法量測垂直氣溫。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一地點照片沒有高度對照。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "雨量不是計算氣溫遞減率所需的直接資料。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計觀測"
+  ],
+  "representationType": "method",
+  "misconceptionTargets": [
+    "缺乏同時對照"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "檢驗率需要高度與氣溫兩變項且控制時間，只有選項0完整。 正確選項「同一時段多個海拔測站的氣溫與高度」可由題幹推出，因為同時、多高度的配對資料可計算高度每增加100公尺的溫差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘資料缺少溫度、對照高度或兩者，無法計算。 逐項排除其他選項：「不同年份各城市的人口」人口資料無法量測垂直氣溫。；「山腳一張午後照片」單一地點照片沒有高度對照。；「山頂單日雨量總和」雨量不是計算氣溫遞減率所需的直接資料。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S011_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST011",
+  "stem": "哪兩港的經度差為 55°？",
+  "options": [
+    "乙、丙",
+    "丙、丁",
+    "甲、乙",
+    "甲、丙"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "跨零度為 75 加 15，等於 90 度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同在西經為 120 減 15，等於 105 度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同在東經，75 減 20 等於 55 度。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "跨零度為 20 加 15，等於 35 度。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "經度差計算"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "同側與跨側公式混淆"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐組依同側相減、跨零度相加計算，只有甲乙為五十五度。 正確選項「甲、乙」可由題幹推出，因為同在東經，75 減 20 等於 55 度。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "所有數值皆可由表直接驗算，不需緯度，因此答案索引零。 逐項排除其他選項：「乙、丙」跨零度為 75 加 15，等於 90 度。 這項內容無法支持題幹所要求的地理判斷。；「丙、丁」同在西經為 120 減 15，等於 105 度。 這項內容無法支持題幹所要求的地理判斷。；「甲、丙」跨零度為 20 加 15，等於 35 度。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S164",
+  "subject": "geography",
+  "unitId": "GEO_R4_U24",
+  "skillId": "GEO_R4_S164",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-2",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S163"
+  ],
+  "objectives": [
+    "比較大陸東南亞河谷陸路與島嶼東南亞海空網絡",
+    "用節點、走廊、瓶頸與最後一哩評估交通可達和韌性"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S164_SEC01",
+      "title": "大陸區的縱向與跨境走廊",
+      "content": "中南半島山河多南北延伸，傳統聚落與道路常利用河谷和平原；東西向跨境道路需穿越山地、河流與國界。鐵路公路可連接內陸城市和港口，但軌距、通關、橋梁承載和制度協調會影響實際速度。"
+    },
+    {
+      "id": "GEO_R4_L_S164_SEC02",
+      "title": "群島區的多式運輸",
+      "content": "群島國內跨島貨客運依賴港口、渡輪、貨船和航空，島內再接道路或鐵路。海運適合大量低單價貨物但較慢，航空快速卻成本高；小島航班班次、天候和港口水深會形成可達差異。"
+    },
+    {
+      "id": "GEO_R4_L_S164_SEC03",
+      "title": "國際海峽與轉運節點",
+      "content": "麻六甲海峽連結印度洋與太平洋航線，鄰近港口可發展轉運、倉儲和服務。航道壅塞、事故、海盜、煙霾或極端天氣會影響全球物流；替代航線通常更長，瓶頸價值來自流量集中而非海峽本身生產商品。"
+    },
+    {
+      "id": "GEO_R4_L_S164_SEC04",
+      "title": "公平、成本與韌性",
+      "content": "大型走廊可降低城市間成本，卻可能繞過偏遠聚落或造成徵地、生態破碎。交通評估需看全程時間、換裝、可靠度、票價和最後一哩；重要島嶼或內陸區應有替代港口、道路、通信和緊急庫存。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S164_EX01",
+      "prompt": "兩港海距短，小島物價仍高，還缺什麼資訊？",
+      "steps": [
+        "班次與船型",
+        "港口裝卸",
+        "島內最後一哩"
+      ],
+      "answer": "距離不是全部物流成本",
+      "why": "少量貨、回程空載和天候停航都會提高單位成本。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S164_EX02",
+      "prompt": "新鐵路通車但跨境時間未縮短，原因可能在哪？",
+      "steps": [
+        "查通關",
+        "比較軌距換裝",
+        "檢查班表銜接"
+      ],
+      "answer": "制度與轉運瓶頸",
+      "why": "線路速度提高不能自動消除邊境等待。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S164_EX03",
+      "prompt": "麻六甲海峽中斷，為何遠方工廠也受影響？",
+      "steps": [
+        "追蹤原料航線",
+        "找替代航道",
+        "計算庫存天數"
+      ],
+      "answer": "集中航線傳遞中斷",
+      "why": "全球供應鏈會把節點風險擴散到多國。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有新公路就表示所有人可達",
+      "whyWrong": "票價、接駁、通關與最後一哩仍可能阻礙",
+      "correction": "量全程門到門成本"
+    },
+    {
+      "belief": "群島只需要航空",
+      "whyWrong": "大量貨物和多數日常客運仍依賴海運",
+      "correction": "依速度貨值與距離選運具"
+    },
+    {
+      "belief": "航線最短一定最可靠",
+      "whyWrong": "瓶頸、天候與班次會改變時間變異",
+      "correction": "比較平均與延誤風險"
+    },
+    {
+      "belief": "走廊只帶來經濟利益",
+      "whyWrong": "徵地、污染、棲地與繞過效應也可能出現",
+      "correction": "納入地方受益與成本"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "大陸區交通常沿什麼布設？",
+      "answer": "河谷平原與連接港口的走廊",
+      "reason": "山地會提高橫向成本。"
+    },
+    {
+      "prompt": "跨島物流如何構成？",
+      "answer": "港航或航空加島內陸運與換裝",
+      "reason": "每個節點皆可能延誤。"
+    },
+    {
+      "prompt": "麻六甲海峽為何重要？",
+      "answer": "大量跨洋航線集中通過",
+      "reason": "其風險可傳到全球供應鏈。"
+    },
+    {
+      "prompt": "可達性不能只看距離的原因？",
+      "answer": "班次、成本、可靠度、通關與接駁不同",
+      "reason": "需用門到門尺度。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-2",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  }
+}

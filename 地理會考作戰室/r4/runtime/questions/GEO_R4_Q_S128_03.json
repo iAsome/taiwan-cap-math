@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S128_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "要判斷某地是否有明顯乾季，最適合看哪種資料？",
+  "options": [
+    "地名長度",
+    "單日最高溫",
+    "各月降雨量",
+    "只有全年總雨量"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱與乾季無關。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單日溫度不足以描述年雨季。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "月資料可呈現連續少雨時段。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "年總量會掩蓋時間集中。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "data-selection"
+  ],
+  "representationType": "monthly-rainfall",
+  "misconceptionTargets": [
+    "年雨量足以看乾季"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確選項「各月降雨量」可由題幹推出，因為月資料可呈現連續少雨時段。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項排除其他選項：「地名長度」名稱與乾季無關。 這項內容無法支持題幹所要求的地理判斷。；「單日最高溫」單日溫度不足以描述年雨季。；「只有全年總雨量」年總量會掩蓋時間集中。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

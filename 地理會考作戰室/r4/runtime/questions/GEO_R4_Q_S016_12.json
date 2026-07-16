@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S016_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "社區圖縮印後有人算出相鄰門牌相距四百公里。最適當的下一步為何？",
+  "options": [
+    "把答案改成四百公尺但不留計算",
+    "刪除所有比例尺",
+    "直接發布，因計算機不會錯",
+    "核對縮印倍率、現行比例尺、圖距讀值與單位"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "猜改單位沒有證據，也不能追溯錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除比例尺會讓後續更難驗證。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "工具輸入或比例尺可能錯，異常結果不能直接發布。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四項都是可能造成量級錯誤的關鍵環節。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "錯誤診斷"
+  ],
+  "representationType": "community-map",
+  "misconceptionTargets": [
+    "看到異常就猜改單位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "合理性檢查不是憑感覺改答案，而是回到資料與換算鏈逐步查核。 正確選項「核對縮印倍率、現行比例尺、圖距讀值與單位」可由題幹推出，因為四項都是可能造成量級錯誤的關鍵環節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "選項二保留原始證據並能定位根因，適合需可靠距離的社區應用。 逐項排除其他選項：「把答案改成四百公尺但不留計算」猜改單位沒有證據，也不能追溯錯誤。；「刪除所有比例尺」刪除比例尺會讓後續更難驗證。；「直接發布，因計算機不會錯」工具輸入或比例尺可能錯，異常結果不能直接發布。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

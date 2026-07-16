@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S164_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-2",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "規畫大陸到群島的冷鏈食品運輸，哪種分析最適合？",
+  "options": [
+    "只計海上距離",
+    "只看產地降雨",
+    "忽略換裝斷電",
+    "分解陸運、通關、港口等待、海運與末端冷藏時間溫度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "門到門流程超過海段。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "降雨不是品質唯一控制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "換裝和電力是高風險點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "冷鏈失效可發生在任何節點。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "multimodal-design"
+  ],
+  "representationType": "cold-chain",
+  "misconceptionTargets": [
+    "運輸只需計主要航段"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-2",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確選項「分解陸運、通關、港口等待、海運與末端冷藏時間溫度」可由題幹推出，因為冷鏈失效可發生在任何節點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "備援電力與快速通關需協調。 逐項排除其他選項：「只計海上距離」門到門流程超過海段。 這項內容無法支持題幹所要求的地理判斷。；「只看產地降雨」降雨不是品質唯一控制。；「忽略換裝斷電」換裝和電力是高風險點。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,158 @@
+{
+  "id": "GEO_R4_L_S237",
+  "subject": "geography",
+  "unitId": "GEO_R4_U36",
+  "skillId": "GEO_R4_S237",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S236"
+  ],
+  "objectives": [
+    "運用圖例單位比例尺分母基期與分類方法檢查資料可比性",
+    "正確轉換總量人均百分點實質值與指數後再比較"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S237_SEC01",
+      "title": "圖例先決定符號能說什麼",
+      "content": "分級設色圖的深淺可能代表總量、密度、比例或變化率，點符號可能每點代表一定數量，箭頭寬度可能表示流量。兩張看似同色的圖若分級界線不同，不能直接比較深淺；自然斷點、等距和分位數也會讓相同數值落入不同級。讀圖需引用圖例定義和年份，不把符號大小誤當地理面積。"
+    },
+    {
+      "id": "GEO_R4_L_S237_SEC02",
+      "title": "單位與分母必須一致",
+      "content": "人口總數適合看資源總需求，人均值適合比較平均強度，密度則描述每單位面積集中。百分比從四十升到五十是增加十個百分點，相對增幅為百分之二十五，兩種說法不同。事故率需知道每萬人、每車公里或每次暴露等分母；只比件數會讓人口或活動量大的地區看似更危險。"
+    },
+    {
+      "id": "GEO_R4_L_S237_SEC03",
+      "title": "時間金額與指數要對齊",
+      "content": "不同年份貨幣應處理物價與匯率，名目所得增加不等於購買力增加。指數一百只代表基期，不是實際單位；基期不同的指數需重設共同基期或比較成長率。年度總量、月平均和日尖峰不能混用，累積量與速率也不同。轉換時要保留原資料精度，不因計算產生虛假小數。"
+    },
+    {
+      "id": "GEO_R4_L_S237_SEC04",
+      "title": "比例尺與投影限制空間比較",
+      "content": "大比例尺地圖呈現較小範圍和較多細節，小比例尺呈現較大範圍但細節少。世界地圖投影會扭曲面積、形狀、距離或方向，因此比較國土面積應用等積投影，導航可能重視方向。不同網格或行政區聚合也會改變圖案，需使用共同空間單位或做敏感度分析，不能由粗圖判定單戶。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S237_EX01",
+      "prompt": "失業率由四升到六百分比，增加多少？",
+      "steps": [
+        "新舊相差二",
+        "單位為百分點",
+        "相對增加為二除以四"
+      ],
+      "answer": "二個百分點或相對增加五成",
+      "why": "兩種表述需明確區分。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S237_EX02",
+      "prompt": "甲事故一百件、乙五十件，能否說甲較危險？",
+      "steps": [
+        "件數是總量",
+        "需知道人口或暴露",
+        "計算共同分母率"
+      ],
+      "answer": "不能",
+      "why": "甲可能活動量遠大。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S237_EX03",
+      "prompt": "兩指數都為一百可否說實際量相同？",
+      "steps": [
+        "指數一百是各自基期",
+        "基準值可能不同",
+        "需原量或共同基期"
+      ],
+      "answer": "不能",
+      "why": "指數適合比較相對變化。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "顏色相同代表數值相同",
+      "whyWrong": "不同地圖圖例界線與分類法可能不同",
+      "correction": "逐圖讀圖例 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "總量大代表人均也大",
+      "whyWrong": "人口規模會改變兩者關係 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "依問題選分母 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "百分比增加十等於十個百分點",
+      "whyWrong": "只有新舊比例直接相差才是百分點，相對增幅另算",
+      "correction": "寫出基準分母 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "世界圖上面積可直接量",
+      "whyWrong": "投影可能嚴重扭曲面積 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "依目的選等積或其他投影"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "比例由二十到三十增加幾百分點？",
+      "answer": "十個百分點",
+      "reason": "相對增幅為五成"
+    },
+    {
+      "prompt": "人均值如何算？",
+      "answer": "總量除以人口",
+      "reason": "回答平均強度不是總需求"
+    },
+    {
+      "prompt": "指數一百代表什麼？",
+      "answer": "該序列基期值",
+      "reason": "不是共同實際量"
+    },
+    {
+      "prompt": "比較面積適合何種投影？",
+      "answer": "等積投影",
+      "reason": "仍需共同尺度與邊界"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

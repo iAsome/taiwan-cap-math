@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S034_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S034"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲圖高緯格面積為低緯格的 4 倍，但兩格代表的球面範圍相同。哪項推論較合理？",
+  "options": [
+    "高緯地表面積也是四倍",
+    "甲圖在高緯有較強圖面放大",
+    "低緯格的經緯度不存在",
+    "兩格人口必為 1：4"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩格代表的球面範圍已知相同，不能說實際四倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相同球面範圍呈現四倍圖面，表示高緯放大較強。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "低緯格當然有經緯度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "格面積資料不能推出人口。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "量化推論"
+  ],
+  "representationType": "ratio-data",
+  "misconceptionTargets": [
+    "把圖面倍率當實際倍率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制球面範圍相同後，四倍差只能歸因於圖面尺度。 正確選項「甲圖在高緯有較強圖面放大」可由題幹推出，因為相同球面範圍呈現四倍圖面，表示高緯放大較強。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘選項違反題幹或添加不存在的人口資訊。 逐項排除其他選項：「高緯地表面積也是四倍」兩格代表的球面範圍已知相同，不能說實際四倍。；「低緯格的經緯度不存在」低緯格當然有經緯度。 這項內容無法支持題幹所要求的地理判斷。；「兩格人口必為 1：4」格面積資料不能推出人口。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

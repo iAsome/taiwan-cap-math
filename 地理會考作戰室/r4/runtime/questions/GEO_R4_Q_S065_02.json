@@ -1,0 +1,86 @@
+{
+  "id": "GEO_R4_Q_S065_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一場暴雨雨峰在上午九時，河川洪峰在中午十二時，延遲多久？",
+  "options": [
+    "十二小時",
+    "三小時",
+    "二十一小時",
+    "零小時"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "把時刻當差值。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "十二減九等於三。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "把兩時刻相加。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩峰並不同時。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "峰值時差"
+  ],
+  "representationType": "lag-time",
+  "misconceptionTargets": [
+    "雨峰與洪峰必同時"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "延遲反映水從坡面與支流匯到測站的時間。 正確選項「三小時」可由題幹推出，因為十二減九等於三。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不同集水區的延遲不可只靠面積解釋。 逐項排除其他選項：「十二小時」把時刻當差值。 這項內容無法支持題幹所要求的地理判斷。；「二十一小時」把兩時刻相加。 這項內容無法支持題幹所要求的地理判斷。；「零小時」兩峰並不同時。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

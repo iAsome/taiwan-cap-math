@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "同一路線的端點直線為六公里，沿路曲線為八公里。下列何者合理？",
+  "options": [
+    "曲線距離必小於直線",
+    "兩個距離不能同時成立",
+    "道路繞行使沿路距離較長",
+    "比例尺必定失效"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩點直線是平面最短連線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "直線距離與路程可同時描述同一對端點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "彎曲路線可以長於兩點間直線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩種量測對象不同，不代表比例尺失效。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "距離分類"
+  ],
+  "representationType": "route-comparison",
+  "misconceptionTargets": [
+    "不同距離值必然矛盾"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先確認名稱：六公里是端點直線，八公里是沿路路程，沒有矛盾。 正確選項「道路繞行使沿路距離較長」可由題幹推出，因為彎曲路線可以長於兩點間直線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案不能反推道路一定安全或可通行，題目只提供長度。 逐項排除其他選項：「曲線距離必小於直線」兩點直線是平面最短連線。；「兩個距離不能同時成立」直線距離與路程可同時描述同一對端點。；「比例尺必定失效」兩種量測對象不同，不代表比例尺失效。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

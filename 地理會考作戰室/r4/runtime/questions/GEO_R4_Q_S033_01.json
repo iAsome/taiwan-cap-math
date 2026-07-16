@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S033_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要判斷兩國實際面積大小，哪項證據優先度最高？",
+  "options": [
+    "同單位的可靠面積統計",
+    "地圖上的國名字級",
+    "輪廓離圖框的距離",
+    "地圖紙張尺寸"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "同單位面積統計直接量化實際國土大小。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "字級是排版設計。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "離圖框距離不代表面積。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紙張大小只改變整體顯示尺度。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "證據選擇"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "以排版特徵判斷國土大小"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "四項中只有第一項直接測量所問的實際面積。 正確選項「同單位的可靠面積統計」可由題幹推出，因為同單位面積統計直接量化實際國土大小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘皆為版面特徵，不能作國土面積證據。 逐項排除其他選項：「地圖上的國名字級」字級是排版設計。 這項內容無法支持題幹所要求的地理判斷。；「輪廓離圖框的距離」離圖框距離不代表面積。；「地圖紙張尺寸」紙張大小只改變整體顯示尺度。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "兩次細線量測分別為七點八與八點二公分，比例尺一比十萬。合理的處理為何？",
+  "options": [
+    "認為比例尺不存在",
+    "重測並以約八公里附上量測差異",
+    "任選七點八公里且稱完全精確",
+    "把兩值相乘"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "重測差異不表示比例尺不存在。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩次圖距相差零點四公分，重測與約值能揭露操作變異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "七點八公分可換七點八公里，但不能忽略另一結果與精度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "相乘没有距離量測意義。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "重複量測"
+  ],
+  "representationType": "measurement-series",
+  "misconceptionTargets": [
+    "只挑一個量值假裝精確"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "一比十萬每公分一公里，兩次估值為七點八及八點二公里。 正確選項「重測並以約八公里附上量測差異」可由題幹推出，因為兩次圖距相差零點四公分，重測與約值能揭露操作變異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若方法一致，可把約八公里作摘要並保留範圍，而非製造更多小數位。 逐項排除其他選項：「認為比例尺不存在」重測差異不表示比例尺不存在。；「任選七點八公里且稱完全精確」七點八公分可換七點八公里，但不能忽略另一結果與精度。；「把兩值相乘」相乘没有距離量測意義。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

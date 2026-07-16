@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S034_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S034"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "互動地圖顯示游標所在處的局部比例。使用者發現比例向兩極增大，應如何運用？",
+  "options": [
+    "面積比較時改查等積資料",
+    "認定高緯土地正在擴張",
+    "把游標固定在赤道就能修正全圖",
+    "刪除比例資訊"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "比例向高緯增加會誇大圖面面積，應另用等積資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顯示的是投影尺度，不是土地實際變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "固定游標不會改變其他位置的投影。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "刪除資訊反而失去判讀依據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "數位地圖應用"
+  ],
+  "representationType": "interactive-map-scenario",
+  "misconceptionTargets": [
+    "把局部比例顯示當成實體面積變化"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項把局部比例證據轉成正確的資料選擇。 正確選項「面積比較時改查等積資料」可由題幹推出，因為比例向高緯增加會誇大圖面面積，應另用等積資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他做法混淆實體、誤解互動功能或移除必要資訊。 逐項排除其他選項：「認定高緯土地正在擴張」顯示的是投影尺度，不是土地實際變化。；「把游標固定在赤道就能修正全圖」固定游標不會改變其他位置的投影。；「刪除比例資訊」刪除資訊反而失去判讀依據。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

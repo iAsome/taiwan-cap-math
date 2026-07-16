@@ -1,0 +1,101 @@
+{
+  "id": "GEO_R4_Q_S003_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "衛生單位發現全市疾病率穩定，但兩個里快速上升。下一步最合理的是什麼？",
+  "options": [
+    "因全市穩定而忽略兩里",
+    "以里級資料定位變化，再調查當地環境與人口條件",
+    "刪除兩里資料讓平均一致",
+    "只改用全國平均"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "全市平均可能掩蓋重要局部風險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "小尺度定位後可檢查具體條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除異常值會隱藏需調查的現象。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "更大尺度會進一步掩蓋差異。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "異常辨識",
+    "研究規劃"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "大尺度穩定代表處處安全"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹指出局部上升，應縮小尺度查明位置與原因，第二項合理。 正確選項「以里級資料定位變化，再調查當地環境與人口條件」可由題幹推出，因為小尺度定位後可檢查具體條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "另外三項都擴大或消除差異，與風險監測目的相反。 逐項排除其他選項：「因全市穩定而忽略兩里」全市平均可能掩蓋重要局部風險。；「刪除兩里資料讓平均一致」刪除異常值會隱藏需調查的現象。；「只改用全國平均」更大尺度會進一步掩蓋差異。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S054",
+  "subject": "geography",
+  "unitId": "GEO_R4_U08",
+  "skillId": "GEO_R4_S054",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S053"
+  ],
+  "objectives": [
+    "能由完整月資料計算年溫差與年降水量，正確處理負溫、並列與單位。",
+    "能辨認缺月、統計期間與資料欄位不一致時，年值無法直接完整計算。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S054_SEC01",
+      "title": "年溫差是月均溫極差",
+      "content": "地理氣候圖常用最高月均溫減最低月均溫計算年溫差。例如最高二十八度、最低十二度，年溫差十六度；若最低為負五度，則二十減負五等於二十五度。它不是日最高減日最低，也不是十二月減一月。"
+    },
+    {
+      "id": "GEO_R4_L_S054_SEC02",
+      "title": "年降水量是十二月合計",
+      "content": "把一月至十二月的月降水量全部相加得到年降水量，單位仍為毫米。不能只把最多雨月乘十二，因降水季節分配通常不均；也不能用月平均氣溫參與雨量加總。分組加總後再核對量級可減少漏月。"
+    },
+    {
+      "id": "GEO_R4_L_S054_SEC03",
+      "title": "並列極值不影響差值",
+      "content": "若七月和八月都為最高二十九度，最高值仍取二十九一次；最低值若也並列同理。年溫差只關心最大與最小數值，不把兩個最高月相加。找極值後可在表上標出月份，以便檢查是否誤讀雨量列。"
+    },
+    {
+      "id": "GEO_R4_L_S054_SEC04",
+      "title": "缺值不能假裝完整年值",
+      "content": "若某月雨量未知，已知十一月合計只是下界或部分總量，不能直接標成年雨量；插補需要方法與不確定性。比較兩站還要確定月值使用相同統計期與單位，否則算術正確也可能沒有可比意義。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S054_EX01",
+      "prompt": "最高月均溫三十度、最低月均溫十五度，年溫差多少？",
+      "steps": [
+        "圈出最高三十",
+        "圈出最低十五",
+        "三十減十五"
+      ],
+      "answer": "年溫差十五度。",
+      "why": "差值寫攝氏度或度的溫差，不能把兩個溫度相加。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S054_EX02",
+      "prompt": "最高十八度、最低負六度，年溫差如何算？",
+      "steps": [
+        "寫成十八減括號負六",
+        "減負數等於加六",
+        "得到二十四"
+      ],
+      "answer": "年溫差二十四度。",
+      "why": "忽略負號只算十二度是常見錯誤，可用數線檢查從負六到十八跨二十四格。"
+    },
+    {
+      "id": "GEO_R4_L_S054_EX03",
+      "prompt": "十二月雨量分成四季小計二百、四百、七百、三百毫米，全年多少？",
+      "steps": [
+        "四季涵蓋十二月",
+        "四個小計相加",
+        "保留毫米"
+      ],
+      "answer": "年降水量一千六百毫米。",
+      "why": "先分組可降低漏月，但要確認每月只算一次且無缺值。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "年溫差是十二月溫度減一月溫度。",
+      "whyWrong": "最高最低月不一定在十二月與一月。",
+      "correction": "先掃描十二月找全表極值。"
+    },
+    {
+      "belief": "最高溫月有兩個就把兩值相加。",
+      "whyWrong": "並列最高仍是同一最大數值，差值只取一次。",
+      "correction": "計算最大值減最小值。"
+    },
+    {
+      "belief": "年雨量可用最多雨月乘十二。",
+      "whyWrong": "各月雨量不均，需逐月合計。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "分季小計並核對十二月。"
+    },
+    {
+      "belief": "缺一月雨量可當零完成年總量。",
+      "whyWrong": "未知不等於零，會低估合計。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "標部分合計或明示插補。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "最高二十七、最低十九，年溫差？",
+      "answer": "八度。",
+      "reason": "二十七減十九。"
+    },
+    {
+      "prompt": "最高十、最低負十，年溫差？",
+      "answer": "二十度。",
+      "reason": "十減負十等於二十。"
+    },
+    {
+      "prompt": "年雨量如何算？",
+      "answer": "十二個月雨量相加。",
+      "reason": "單位保留毫米。"
+    },
+    {
+      "prompt": "缺一月可報完整年雨量嗎？",
+      "answer": "不可以。",
+      "reason": "除非有明示插補與不確定性。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

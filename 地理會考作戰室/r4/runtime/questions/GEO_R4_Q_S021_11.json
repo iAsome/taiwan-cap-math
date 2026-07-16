@@ -1,0 +1,79 @@
+{
+  "id": "GEO_R4_Q_S021_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "防災路線換算結果與官方里程差兩倍，檢查順序何者最完整？",
+  "options": [
+    "只相信較小值",
+    "刪除官方資料",
+    "確認是否同一路徑，再查圖面縮放、比例尺、圖距與單位鏈",
+    "直接平均兩數"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數值大小不能決定可信度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "官方資料可作交叉核對，不應無故刪除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "路徑定義與完整計算鏈都可能造成系統差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "平均不同定義或錯誤資料沒有意義。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "差異調查",
+    "防災"
+  ],
+  "representationType": "audit-log",
+  "misconceptionTargets": [
+    "不同結果直接取平均"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩倍差異常提示縮放或路徑問題，但不能未查證就指定單一原因。 正確選項「確認是否同一路徑，再查圖面縮放、比例尺、圖距與單位鏈」可由題幹推出，因為路徑定義與完整計算鏈都可能造成系統差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "選項一從語意到圖源再到算式逐層核對，最容易定位可修正根因。 逐項排除其他選項：「只相信較小值」數值大小不能決定可信度。；「刪除官方資料」官方資料可作交叉核對，不應無故刪除。；「直接平均兩數」平均不同定義或錯誤資料沒有意義。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

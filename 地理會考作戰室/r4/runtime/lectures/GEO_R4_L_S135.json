@@ -1,0 +1,144 @@
+{
+  "id": "GEO_R4_L_S135",
+  "subject": "geography",
+  "unitId": "GEO_R4_U20",
+  "skillId": "GEO_R4_S135",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AD-4-1",
+    "AUTH-SOCIAL-LC-GEO-AD-4-2",
+    "AUTH-SOCIAL-LC-GEO-AD-4-3",
+    "AUTH-SOCIAL-LC-GEO-AD-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-2",
+    "AUTH-SOCIAL-LC-GEO-CA-4-2",
+    "AUTH-SOCIAL-LC-GEO-CA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S134"
+  ],
+  "objectives": [
+    "計算自然增加、社會增加與總人口變動",
+    "由年齡結構與人口金字塔判讀少子化、高齡化和扶養壓力"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S135_SEC01",
+      "title": "人口變動的兩部分",
+      "content": "出生減死亡形成自然增加，移入減移出形成社會增加；兩者相加才是總人口變動。自然減少可被淨移入抵銷，人口增加也不代表出生一定多。"
+    },
+    {
+      "id": "GEO_R4_L_S135_SEC02",
+      "title": "年齡結構",
+      "content": "常用幼年、工作年齡與高齡人口占比描述結構。幼年占比下降顯示未來入學人口可能減少，高齡占比上升會改變醫療、照護、住宅與交通需求。"
+    },
+    {
+      "id": "GEO_R4_L_S135_SEC03",
+      "title": "扶養比與限制",
+      "content": "扶養比常以幼年與高齡人口合計除以工作年齡人口。它是年齡結構的近似，不等於所有工作年齡者都有工作，也不表示幼年或高齡者完全沒有經濟貢獻。"
+    },
+    {
+      "id": "GEO_R4_L_S135_SEC04",
+      "title": "人口金字塔與世代",
+      "content": "底部窄表示近期出生世代較小，中段凸出可能是較大世代，頂部變寬反映存活改善與老化。人口結構變化有慣性，即使生育率短期回升，新生兒成為勞動人口仍需多年。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S135_EX01",
+      "prompt": "出生八千、死亡一萬，淨移入三千，總人口如何變？",
+      "steps": [
+        "自然增加為負二千",
+        "社會增加為正三千",
+        "相加為正一千"
+      ],
+      "answer": "增加一千人",
+      "why": "淨移入超過自然減少。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S135_EX02",
+      "prompt": "金字塔底部逐年縮窄，最直接代表什麼？",
+      "steps": [
+        "底部對應幼年人口",
+        "較新的出生世代變小",
+        "連結未來學齡人口"
+      ],
+      "answer": "少子化趨勢",
+      "why": "不能直接由底部判斷當年所有移民。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S135_EX03",
+      "prompt": "高齡占比上升但總人口不變，服務需求會不會變？",
+      "steps": [
+        "總量相同",
+        "年齡組成改變",
+        "需求類型不同"
+      ],
+      "answer": "會",
+      "why": "照護、醫療與無障礙需求可能增加。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "人口增加等於出生多",
+      "whyWrong": "淨移入也能使人口增加 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "拆分自然與社會增加"
+    },
+    {
+      "belief": "工作年齡人口等於實際就業人口",
+      "whyWrong": "還受就學、失業與勞參影響 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "另看就業和勞動參與"
+    },
+    {
+      "belief": "扶養比能精確計算每戶負擔",
+      "whyWrong": "它是總體年齡比率 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "配合所得、家庭與公共制度"
+    },
+    {
+      "belief": "生育率回升可立即補足勞動力",
+      "whyWrong": "新生兒成長需多年 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "考慮人口慣性與短中長期方案"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "自然增加如何計算？",
+      "answer": "出生人數減死亡人數",
+      "reason": "正值為自然增加，負值為自然減少。"
+    },
+    {
+      "prompt": "社會增加如何計算？",
+      "answer": "移入人數減移出人數",
+      "reason": "它反映遷移淨效果。"
+    },
+    {
+      "prompt": "人口金字塔底部窄表示什麼？",
+      "answer": "近期出生世代較小",
+      "reason": "常與低生育和少子化相關。"
+    },
+    {
+      "prompt": "高齡占比上升需注意什麼？",
+      "answer": "照護、醫療與工作人口結構",
+      "reason": "服務配置會隨年齡需求改變。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AD-4-1",
+      "AUTH-SOCIAL-LC-GEO-AD-4-2",
+      "AUTH-SOCIAL-LC-GEO-AD-4-3",
+      "AUTH-SOCIAL-LC-GEO-AD-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-2",
+      "AUTH-SOCIAL-LC-GEO-CA-4-2",
+      "AUTH-SOCIAL-LC-GEO-CA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  }
+}

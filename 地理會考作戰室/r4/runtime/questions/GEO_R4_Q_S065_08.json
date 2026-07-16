@@ -1,0 +1,86 @@
+{
+  "id": "GEO_R4_Q_S065_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "兩測站水位同為兩公尺，可直接說流量相同嗎？",
+  "options": [
+    "能，水位等於流量",
+    "能，單位都公尺",
+    "不能，因流量無法量測",
+    "不能，河道斷面與流速可能不同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "物理量不同。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同單位只適用水位本身。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "流量可量測估算。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "水位需透過斷面率定轉成流量。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "水位流量"
+  ],
+  "representationType": "stage-discharge",
+  "misconceptionTargets": [
+    "相同水位必有相同流量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同站斷面改變後，水位流量關係也可能變。 正確選項「不能，河道斷面與流速可能不同」可由題幹推出，因為水位需透過斷面率定轉成流量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "跨站比較應使用流量資料或完整率定曲線。 逐項排除其他選項：「能，水位等於流量」物理量不同。 這項內容無法支持題幹所要求的地理判斷。；「能，單位都公尺」同單位只適用水位本身。；「不能，因流量無法量測」流量可量測估算。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

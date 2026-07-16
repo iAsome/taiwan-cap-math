@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S054_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S054"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "下列哪個算法錯把日較差當年溫差？",
+  "options": [
+    "最高月均溫減最低月均溫",
+    "十二個月月均溫中找極值",
+    "以完整月表計最大最小",
+    "日最高溫減日最低溫"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是年溫差公式。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "完整月表是正確資料來源。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "也正確。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "日內差值是日較差，不是年內月均極差。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "指標辨析"
+  ],
+  "representationType": "daily-vs-annual",
+  "misconceptionTargets": [
+    "任何最高減最低都叫年溫差"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時間尺度必須和指標名稱一致。 正確選項「日最高溫減日最低溫」可由題幹推出，因為日內差值是日較差，不是年內月均極差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同一地點可同時有大日較差與不同年溫差，不能混用。 逐項排除其他選項：「最高月均溫減最低月均溫」這是年溫差公式。 這項內容無法支持題幹所要求的地理判斷。；「十二個月月均溫中找極值」完整月表是正確資料來源。；「以完整月表計最大最小」也正確。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

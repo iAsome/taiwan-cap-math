@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S120_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某資料把臺灣標成西經一百二十一度，最可能的錯誤是什麼？",
+  "options": [
+    "經度方向不影響位置",
+    "把東經誤寫成西經，位置會移到另一半球",
+    "把北緯寫得完全正確",
+    "只少標了一個城市"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "經度方向正是東西定位核心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "東西經相反會造成跨越本初子午線的大差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "問題在經度而非緯度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "半球錯置比城市缺標更根本。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "error-detection"
+  ],
+  "representationType": "coordinate-error",
+  "misconceptionTargets": [
+    "東西經可互換"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正確選項「把東經誤寫成西經，位置會移到另一半球」可由題幹推出，因為東西經相反會造成跨越本初子午線的大差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同一度數配不同東西經代表不同地點。 逐項排除其他選項：「經度方向不影響位置」經度方向正是東西定位核心。；「把北緯寫得完全正確」問題在經度而非緯度。 這項內容無法支持題幹所要求的地理判斷。；「只少標了一個城市」半球錯置比城市缺標更根本。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲圖用道路中心線，乙圖用道路用地面。哪項比較正確？",
+  "options": [
+    "乙沒有任何邊界",
+    "甲適合路網長度，乙適合道路占地面積",
+    "兩圖可做完全相同分析",
+    "甲可直接得每處實際寬度"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "面資料本身有封閉邊界。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩種幾何分別支援網路與面積任務。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "幾何內容不同，適用分析不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "中心線若無寬度屬性不能直接得實寬。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "幾何選擇"
+  ],
+  "representationType": "road-representations",
+  "misconceptionTargets": [
+    "一種幾何可回答所有問題"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同一現實地物可建立互補圖層，無需選一種作為永遠真實。 正確選項「甲適合路網長度，乙適合道路占地面積」可由題幹推出，因為兩種幾何分別支援網路與面積任務。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "疊合兩層時還要確認同一版本與坐標系統。 逐項排除其他選項：「乙沒有任何邊界」面資料本身有封閉邊界。；「兩圖可做完全相同分析」幾何內容不同，適用分析不同。；「甲可直接得每處實際寬度」中心線若無寬度屬性不能直接得實寬。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

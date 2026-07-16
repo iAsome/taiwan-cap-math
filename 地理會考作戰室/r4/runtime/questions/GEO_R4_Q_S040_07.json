@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S040_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩期農地影像分別拍於播種前與盛長期，外觀差異可能主要來自什麼？",
+  "options": [
+    "衛星必定故障",
+    "土地所有權自動改變",
+    "作物物候與季節",
+    "農地坐標整體移動"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "正常季節差異不代表故障。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "影像不能直接判所有權。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "生長階段會改變植被覆蓋與反射。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "地塊位置通常不因此平移。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "物候效應"
+  ],
+  "representationType": "crop-timing",
+  "misconceptionTargets": [
+    "外觀差異必是永久土地轉用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若研究永久轉用，應用相近季節或多期序列避免物候混淆。 正確選項「作物物候與季節」可由題幹推出，因為生長階段會改變植被覆蓋與反射。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若研究作物生長，這種季節差異反而是重要訊號。 逐項排除其他選項：「衛星必定故障」正常季節差異不代表故障。；「土地所有權自動改變」影像不能直接判所有權。；「農地坐標整體移動」地塊位置通常不因此平移。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S051_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某欄氣溫以『—』表示，最合理處理為何？",
+  "options": [
+    "一定是負一度",
+    "把它改成最高溫",
+    "查圖例是否為缺值，不直接當零度",
+    "一定是零度"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "破折號不自動是負號。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不能任意補值。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "符號語意需由資料說明。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "零度應有明確數值。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "缺值辨識"
+  ],
+  "representationType": "missing-reading",
+  "misconceptionTargets": [
+    "破折號就是零"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "缺值與零是不同狀態，統計時也不可混用。 正確選項「查圖例是否為缺值，不直接當零度」可由題幹推出，因為符號語意需由資料說明。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若插補資料，方法與不確定性要另行記錄。 逐項排除其他選項：「一定是負一度」破折號不自動是負號。 這項內容無法支持題幹所要求的地理判斷。；「把它改成最高溫」不能任意補值。 這項內容無法支持題幹所要求的地理判斷。；「一定是零度」零度應有明確數值。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

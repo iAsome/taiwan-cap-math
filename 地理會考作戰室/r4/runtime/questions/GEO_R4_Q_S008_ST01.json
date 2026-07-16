@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST008",
+  "stem": "圖書館相對行政大樓位於哪一方？",
+  "options": [
+    "西南方",
+    "東北方",
+    "西北方",
+    "東南方"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩個軸向都與圖書館相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "同時向東與向北，方位為東北。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "西北需要橫軸為負，圖書館為正。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "東南需要縱軸為負，圖書館為正。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "地圖判讀"
+  ],
+  "representationType": "map",
+  "misconceptionTargets": [
+    "混淆軸向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "由原點到圖書館的位移為東二、北二，直接判為東北。 正確選項「東北方」可由題幹推出，因為同時向東與向北，方位為東北。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "依反向檢查，行政大樓在圖書館西南方，與答案一致。 逐項排除其他選項：「西南方」兩個軸向都與圖書館相反。；「西北方」西北需要橫軸為負，圖書館為正。；「東南方」東南需要縱軸為負，圖書館為正。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

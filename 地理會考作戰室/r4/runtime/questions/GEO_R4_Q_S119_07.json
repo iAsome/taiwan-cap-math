@@ -1,0 +1,90 @@
+{
+  "id": "GEO_R4_Q_S119_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-2",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某城市犯罪通報增加，能否直接判定實際犯罪一定增加同幅度？",
+  "options": [
+    "不能，因通報不是數字",
+    "能，且人口必然不變",
+    "不能，還須考慮報案意願、定義與紀錄制度",
+    "能，通報與實際事件永遠完全相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "通報可量化但有測量限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人口變化也可能影響總量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "制度與行為會影響被觀測數值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未通報事件與紀錄變化會造成差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "data-literacy"
+  ],
+  "representationType": "measurement-bias",
+  "misconceptionTargets": [
+    "指標等於現實全貌"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-2",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確選項「不能，還須考慮報案意願、定義與紀錄制度」可由題幹推出，因為制度與行為會影響被觀測數值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "數值變化不一定等於現象同比變化。 逐項排除其他選項：「不能，因通報不是數字」通報可量化但有測量限制。；「能，且人口必然不變」人口變化也可能影響總量。；「能，通報與實際事件永遠完全相同」未通報事件與紀錄變化會造成差異。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

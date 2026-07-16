@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S041_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S041"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST041",
+  "stem": "目前能否宣稱已完成輪椅十五分鐘可達分析？",
+  "options": [
+    "能，只要人口最新",
+    "不能，因人口不能用",
+    "不能，人行網缺無障礙坡度與障礙資料",
+    "能，一般步行網等於輪椅網"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人口時效不能補路網缺口。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人口網格仍有用。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "輪椅可達需坡度、路緣與通行寬度等。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一般步行可走不代表輪椅可走。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "無障礙限制"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "一般步行可達等於所有人可達"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可先算一般步行範圍，但必須標明不適用輪椅。 正確選項「不能，人行網缺無障礙坡度與障礙資料」可由題幹推出，因為輪椅可達需坡度、路緣與通行寬度等。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "取得無障礙路網後應另算而非從一般結果推測。 逐項排除其他選項：「能，只要人口最新」人口時效不能補路網缺口。；「不能，因人口不能用」人口網格仍有用。 這項內容無法支持題幹所要求的地理判斷。；「能，一般步行網等於輪椅網」一般步行可走不代表輪椅可走。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

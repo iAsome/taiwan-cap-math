@@ -1,0 +1,86 @@
+{
+  "id": "GEO_R4_Q_S080_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-2",
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-CA-4-2",
+    "AUTH-SOCIAL-LC-GEO-CA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "兩鎮人口相同，甲高齡占比高、乙大學生多，服務門檻是否完全相同？",
+  "options": [
+    "不一定，因人口無法統計",
+    "不一定，需求結構會改變服務可維持性",
+    "一定，總人口相同就需求相同",
+    "一定，年齡不影響服務"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "可統計。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "醫療教育等需求不同。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "忽略人口組成。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "年齡影響使用頻率。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "需求結構"
+  ],
+  "representationType": "demographic-threshold",
+  "misconceptionTargets": [
+    "總人口相同等於所有服務需求相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-2",
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-CA-4-2",
+      "AUTH-SOCIAL-LC-GEO-CA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "門檻要用潛在使用者而非全人口粗估。 正確選項「不一定，需求結構會改變服務可維持性」可由題幹推出，因為醫療教育等需求不同。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項排除其他選項：「不一定，因人口無法統計」可統計。 這項內容無法支持題幹所要求的地理判斷。；「一定，總人口相同就需求相同」忽略人口組成。 這項內容無法支持題幹所要求的地理判斷。；「一定，年齡不影響服務」年齡影響使用頻率。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S053_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "氣候表六月雨量標 NA，計算年雨量時應如何？",
+  "options": [
+    "把五月值當六月且不說",
+    "刪除單位",
+    "標示資料不足，不把 NA 當零直接加總",
+    "把 NA 當零"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "插補需方法與揭露。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單位仍必要。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "缺月會使全年總量未知或需明示估算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "零是有觀測無雨。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "缺月處理"
+  ],
+  "representationType": "missing-month",
+  "misconceptionTargets": [
+    "NA就是零降水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可報已知十一個月合計並註明不等於完整年量。 正確選項「標示資料不足，不把 NA 當零直接加總」可由題幹推出，因為缺月會使全年總量未知或需明示估算。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若估補六月，應給方法與不確定度。 逐項排除其他選項：「把五月值當六月且不說」插補需方法與揭露。 這項內容無法支持題幹所要求的地理判斷。；「刪除單位」單位仍必要。 這項內容無法支持題幹所要求的地理判斷。；「把 NA 當零」零是有觀測無雨。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,144 @@
+{
+  "id": "GEO_R4_L_S113",
+  "subject": "geography",
+  "unitId": "GEO_R4_U17",
+  "skillId": "GEO_R4_S113",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-2",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S112"
+  ],
+  "objectives": [
+    "區分所得、產值、健康與教育指標所測量的面向",
+    "依研究問題選用總量、人均、比例與結果指標"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S113_SEC01",
+      "title": "先問指標測量什麼",
+      "content": "國內生產毛額描述一地一定期間內生產的最終商品與服務價值；人均所得把所得除以人口。兩者都屬經濟面向，但總量偏規模，人均值偏平均資源。"
+    },
+    {
+      "id": "GEO_R4_L_S113_SEC02",
+      "title": "健康指標",
+      "content": "平均壽命、嬰兒死亡率、可避免死亡與醫療可近性可呈現不同健康結果或條件。嬰兒死亡率較低通常代表母嬰照護、營養與公共衛生較佳，但仍須核對資料品質。"
+    },
+    {
+      "id": "GEO_R4_L_S113_SEC03",
+      "title": "教育指標",
+      "content": "識字率、就學率、平均受教育年數與學習成果回答不同問題。就學率高不保證學習品質相同，平均年數也可能掩蓋性別、地區或世代差距。"
+    },
+    {
+      "id": "GEO_R4_L_S113_SEC04",
+      "title": "單位與方向",
+      "content": "比較前要確認分母、年代、幣值及數值方向。有些指標越高通常越有利，如平均壽命；有些越低通常越有利，如嬰兒死亡率。不能把不同單位直接相加。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S113_EX01",
+      "prompt": "甲乙產值相同，甲人口較少，誰的人均產值較高？",
+      "steps": [
+        "人均值等於總量除人口",
+        "分子相同",
+        "人口較少者商較大"
+      ],
+      "answer": "甲",
+      "why": "相同產值由較少人口分攤，人均值較高。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S113_EX02",
+      "prompt": "要比較母嬰健康結果，總產值與嬰兒死亡率何者較直接？",
+      "steps": [
+        "界定研究問題為健康結果",
+        "比較兩指標測量面向",
+        "選擇直接結果指標"
+      ],
+      "answer": "嬰兒死亡率",
+      "why": "它直接呈現嬰兒存活情況，總產值只能提供間接經濟背景。"
+    },
+    {
+      "id": "GEO_R4_L_S113_EX03",
+      "prompt": "就學率相同能否推論學習成果相同？",
+      "steps": [
+        "就學率測量入學參與",
+        "成果還受教學與資源影響",
+        "需要測驗或完成率等資料"
+      ],
+      "answer": "不能",
+      "why": "參與程度與學習品質是不同面向。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "總產值高代表每個人所得高",
+      "whyWrong": "人口規模與分配會改變個人情況",
+      "correction": "另看人均與分配資料"
+    },
+    {
+      "belief": "所有發展指標都是越高越好",
+      "whyWrong": "死亡率、失學率等是越低通常越佳",
+      "correction": "先確認指標方向 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "就學率等於教育品質",
+      "whyWrong": "它只說明入學參與 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "配合完成率、學習成果與資源"
+    },
+    {
+      "belief": "平均壽命只由醫院數決定",
+      "whyWrong": "營養、環境、收入、安全與公共衛生也有影響",
+      "correction": "以多項條件解釋健康結果"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "GDP 主要測量什麼？",
+      "answer": "一定期間的境內生產價值",
+      "reason": "它是產值總量，不等於每人可得所得。"
+    },
+    {
+      "prompt": "人均所得如何計算？",
+      "answer": "總所得除以人口",
+      "reason": "分母把經濟總量轉為平均尺度。"
+    },
+    {
+      "prompt": "嬰兒死亡率高通常代表什麼？",
+      "answer": "母嬰健康結果較不利",
+      "reason": "此指標方向通常越低越佳。"
+    },
+    {
+      "prompt": "識字率能否代表全部教育品質？",
+      "answer": "不能",
+      "reason": "它只測量基本讀寫能力，未涵蓋所有學習成果。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-2",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  }
+}

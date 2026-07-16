@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S015_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "線段比例尺的相鄰刻度依序是零、五、十、十五公里。待測線與零到十的圖上長度相同，實距為何？",
+  "options": [
+    "五公里",
+    "十公里",
+    "十五公里",
+    "二十公里"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "五公里只是一個刻度間隔。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "零到十跨兩格，累積實距十公里。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "十五公里是線段比例尺全長。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目沒有跨四格。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "累積刻度"
+  ],
+  "representationType": "scale-bar",
+  "misconceptionTargets": [
+    "重複乘上格數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "刻度標的是累積距離，零到十的圖上長度直接對應十公里。 正確選項「十公里」可由題幹推出，因為零到十跨兩格，累積實距十公里。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不必再把十乘以格數，因為刻度十已經包含前兩格。 逐項排除其他選項：「五公里」五公里只是一個刻度間隔。；「十五公里」十五公里是線段比例尺全長。；「二十公里」題目沒有跨四格。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

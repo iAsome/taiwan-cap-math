@@ -1,0 +1,75 @@
+{
+  "id": "GEO_R4_ST014",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "content": {
+    "title": "臺灣某物流中心的四種運送方案",
+    "prompt": "資料為同一批貨物可選方案；天候預報顯示北部海域兩日後可能受颱風影響。",
+    "table": {
+      "columns": [
+        "方案",
+        "跨海時間",
+        "運費指數",
+        "容量與接續"
+      ],
+      "rows": [
+        [
+          "甲：西部港海運",
+          "3日",
+          "1",
+          "容量大；鐵公路接工業區"
+        ],
+        [
+          "乙：北部機場空運",
+          "5小時",
+          "8",
+          "容量小；高速公路接物流中心"
+        ],
+        [
+          "丙：東部港海運",
+          "4日",
+          "2",
+          "容量中；聯外公路施工單線通行"
+        ],
+        [
+          "丁：北部港海運",
+          "2日",
+          "2",
+          "容量大；兩日後可能停航"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "比較四種跨海方案的時間、運費、容量、聯外與颱風風險。",
+    "longDescription": "甲為西部港海運，需三日、運費指數一、容量大且有鐵公路；乙為北部機場空運，需五小時、運費指數八、容量小且有高速公路；丙為東部港海運，需四日、運費指數二、容量中但聯外公路施工；丁為北部港海運，需兩日、運費指數二、容量大，但兩日後可能因颱風停航。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S014_ST01",
+    "GEO_R4_Q_S014_ST02",
+    "GEO_R4_Q_S014_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  }
+}

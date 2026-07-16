@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S021_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST021",
+  "stem": "甲的主要錯誤與正確結果為何？",
+  "options": [
+    "沒有錯",
+    "單位標錯，應為一點二公里直線距離",
+    "乘法錯，應為十二公里",
+    "圖距錯，應為二十四公里"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "回報單位使數量級錯十萬倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "十二萬公分等於一點二公里，且量的是端點直線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二點四乘五萬的乘法正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "圖距是二點四公分，不是二十四。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "單位稽核"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "整個算式錯與單位錯混為一談"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "沿計算鏈可見數值十二萬以前都正確，錯誤發生在公分改標公里。 正確選項「單位標錯，應為一點二公里直線距離」可由題幹推出，因為十二萬公分等於一點二公里，且量的是端點直線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "修正時保留直線標籤，不能因更正單位就改稱道路路程。 逐項排除其他選項：「沒有錯」回報單位使數量級錯十萬倍。；「乘法錯，應為十二公里」二點四乘五萬的乘法正確。；「圖距錯，應為二十四公里」圖距是二點四公分，不是二十四。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

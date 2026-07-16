@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S011",
+  "subject": "geography",
+  "unitId": "GEO_R4_U02",
+  "skillId": "GEO_R4_S011",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S010"
+  ],
+  "objectives": [
+    "能依 E、W 與經度數值判斷地點相對本初經線的東西位置。",
+    "能處理同半球、跨本初經線與一百八十度經線的比較限制。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S011_SEC01",
+      "title": "經度從本初經線量東西",
+      "content": "本初經線為零度經線，向東量到一百八十度標 E，向西量到一百八十度標 W。經線連接兩極，同一條經線上的地點經度相同；但緯度可能不同，所以相同經度不代表同一地點。"
+    },
+    {
+      "id": "GEO_R4_L_S011_SEC02",
+      "title": "同側經度怎麼比較",
+      "content": "同在東經地區，數值較大者通常位於較東的經線；同在西經地區，數值較大者離本初經線更向西，因此較小的西經數值反而較東。例如 20°W 位於 60°W 的東方。"
+    },
+    {
+      "id": "GEO_R4_L_S011_SEC03",
+      "title": "跨零度與一百八十度",
+      "content": "在不跨一百八十度的常見世界圖上，東經地點位於西經地點的東側；跨本初經線的經度差可把兩側度數相加。一百八十度東經與一百八十度西經是同一條經線，不是相距三百六十度的兩條線。"
+    },
+    {
+      "id": "GEO_R4_L_S011_SEC04",
+      "title": "經度能說到哪裡",
+      "content": "經度可描述東西位置、辨認同一經線，也與地方時概念有關；但實際時區會受行政邊界調整，兩經線間地表距離又會隨緯度變化。只知道經度不能推出緯度、完整座標或兩地固定公里數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S011_EX01",
+      "prompt": "甲 25°E、乙 70°E，哪一地較東？",
+      "steps": [
+        "確認同為東經",
+        "東經數值由零度向東增加",
+        "比較七十與二十五"
+      ],
+      "answer": "乙地較東。",
+      "why": "兩地位於本初經線同一側，東經七十度比二十五度離零度更向東。"
+    },
+    {
+      "id": "GEO_R4_L_S011_EX02",
+      "prompt": "丙 15°W、丁 55°W，哪一地較東？",
+      "steps": [
+        "確認同為西經",
+        "西經數值大表示更向西",
+        "十五度較靠近零度"
+      ],
+      "answer": "丙地較東。",
+      "why": "在西經地區不能只說數字大就更東；15°W 比 55°W 更接近本初經線。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S011_EX03",
+      "prompt": "甲 12°E、乙 8°W，兩地跨本初經線的經度差為何？",
+      "steps": [
+        "確認分居零度兩側",
+        "甲到零度十二度",
+        "零度到乙八度並相加"
+      ],
+      "answer": "20°。",
+      "why": "跨本初經線時兩側角距相加；直接相減會錯把相反方向當同側。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "60°W 比 20°W 更東，因為六十較大。",
+      "whyWrong": "西經數值增加的方向是向西，不是向東。",
+      "correction": "同為 W 時，較小數值較靠東。"
+    },
+    {
+      "belief": "相同經度就是同一地點。",
+      "whyWrong": "同一經線從北極延伸到南極，包含許多不同緯度。",
+      "correction": "完整定位還要緯度。"
+    },
+    {
+      "belief": "180°E 與 180°W 是兩條相反經線。",
+      "whyWrong": "東西經在一百八十度會合，兩個標法指同一條經線。",
+      "correction": "把它視為共同終點。"
+    },
+    {
+      "belief": "經度差十五度就永遠相距固定公里數。",
+      "whyWrong": "經線在兩極會聚，同樣經度差的東西距離隨緯度改變。",
+      "correction": "公里距離還需緯度與地球尺度。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "30°E 與 80°E，何者較東？",
+      "answer": "80°E。",
+      "reason": "東經數值較大者較東。"
+    },
+    {
+      "prompt": "10°W 與 45°W，何者較東？",
+      "answer": "10°W。",
+      "reason": "西經數值較小者更靠近本初經線。"
+    },
+    {
+      "prompt": "5°E 與 9°W 跨零度經度差？",
+      "answer": "14°。",
+      "reason": "分居本初經線兩側，要相加。"
+    },
+    {
+      "prompt": "只有 120°E 能否唯一定位？",
+      "answer": "不能。",
+      "reason": "同一經線上仍有不同緯度地點。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  }
+}

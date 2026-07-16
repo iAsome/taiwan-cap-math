@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S056_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST056",
+  "stem": "若要判當地長期年雨量與雨季，三份資料中最有潛力的是哪份？",
+  "options": [
+    "甲，因單月數值最大",
+    "乙，因只有七月平均",
+    "三者都能無條件回答",
+    "丙，因有多年逐月序列，但仍須處理估補與確認完整性"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數值大不代表資訊完整。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺其餘月份。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "各資料限制不同。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多年逐月最接近所需時間與解析度。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料選擇"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "最大單月值就是最佳氣候資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "還應確認丙每年十二月齊全、單位一致及測站條件穩定。 正確選項「丙，因有多年逐月序列，但仍須處理估補與確認完整性」可由題幹推出，因為多年逐月最接近所需時間與解析度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料最合適不等於沒有品質限制。 逐項排除其他選項：「甲，因單月數值最大」數值大不代表資訊完整。；「乙，因只有七月平均」缺其餘月份。 這項內容無法支持題幹所要求的地理判斷。；「三者都能無條件回答」各資料限制不同。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

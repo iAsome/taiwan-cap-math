@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S143_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-1",
+    "AUTH-SOCIAL-LC-GEO-AE-4-2",
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "供應商雖位於不同國家，卻都經過同一狹窄航道運輸。這表示哪種風險仍存在？",
+  "options": [
+    "多國供應已消除全部風險",
+    "各國產品一定相同",
+    "航道會增加陸地面積",
+    "共同物流瓶頸造成的集中風險"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "來源多元但運輸路徑仍集中。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "位置不同不能證明產品完全相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "航道不會增加陸地。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "共同通道受阻會同時影響多個來源。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "網絡推論"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "只看供應國數量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-1",
+      "AUTH-SOCIAL-LC-GEO-AE-4-2",
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "供應地分散而航線重疊，第四項指出隱藏的共同節點。 正確選項「共同物流瓶頸造成的集中風險」可由題幹推出，因為共同通道受阻會同時影響多個來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "網絡節點分析顯示一旦航道中斷，前三個來源仍同受影響。 逐項排除其他選項：「多國供應已消除全部風險」來源多元但運輸路徑仍集中。；「各國產品一定相同」位置不同不能證明產品完全相同。；「航道會增加陸地面積」航道不會增加陸地。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

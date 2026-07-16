@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S010",
+  "subject": "geography",
+  "unitId": "GEO_R4_U02",
+  "skillId": "GEO_R4_S010",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S009"
+  ],
+  "objectives": [
+    "能依 N、S 與緯度數值判斷地點的南北位置。",
+    "能比較同半球與跨赤道地點，區分方向、距赤道遠近與緯度差。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S010_SEC01",
+      "title": "緯度從赤道量南北",
+      "content": "緯度以赤道零度為起點，向北標 N、向南標 S，最大到兩極九十度。數值表示與赤道的角距離，因此 30°N 比 10°N 更北、也離赤道較遠；在南半球則 40°S 比 15°S 更南。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    },
+    {
+      "id": "GEO_R4_L_S010_SEC02",
+      "title": "比較時先分半球",
+      "content": "同在北半球，數值較大者較北；同在南半球，數值較大者反而較南。若一地 N、一地 S，北緯地點必在南緯地點北方。這裡的較大是比較絕對度數，不能把 S 當成負號後機械比較。"
+    },
+    {
+      "id": "GEO_R4_L_S010_SEC03",
+      "title": "緯度差與跨赤道",
+      "content": "同半球兩地的緯度差用大數減小數；跨赤道則把南北兩側度數相加。例如 12°N 與 8°S 相隔二十個緯度。緯度差可比較南北角距離，但不能單獨給出兩地實際地表距離或東西位置。"
+    },
+    {
+      "id": "GEO_R4_L_S010_SEC04",
+      "title": "能推與不能推",
+      "content": "緯度能確定南北半球、距赤道遠近與南北次序，也常是解釋日照與氣候的條件之一；但同緯度地點可能分布在不同經度、海陸與海拔，氣候不一定相同。作答時不要把緯度關係擴張成完整位置或單因氣候結論。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S010_EX01",
+      "prompt": "甲 18°N、乙 42°N，哪一地較北？",
+      "steps": [
+        "確認同為北半球",
+        "北半球緯度數值愈大愈北",
+        "比較 42 與 18"
+      ],
+      "answer": "乙地較北。",
+      "why": "兩地都標 N，可直接比較度數；42°N 比 18°N 更靠近北極。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S010_EX02",
+      "prompt": "丙 12°S、丁 37°S，哪一地更接近赤道？",
+      "steps": [
+        "確認同為南半球",
+        "距赤道看緯度絕對值",
+        "12 小於 37"
+      ],
+      "answer": "丙地更接近赤道。",
+      "why": "S 只說位於赤道以南；度數較小表示離零度赤道較近。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S010_EX03",
+      "prompt": "甲 16°N、乙 9°S，兩地緯度差是多少？",
+      "steps": [
+        "兩地位於赤道兩側",
+        "跨赤道要把兩側角距相加",
+        "16 加 9"
+      ],
+      "answer": "25°。",
+      "why": "若相減只得七度，會忽略從北緯十六度走到赤道的十六度與再向南九度。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "南緯 40 度比南緯 20 度更北，因為 40 較大。",
+      "whyWrong": "在南半球度數愈大愈靠南極，位置更南。",
+      "correction": "先看 N、S，再依所在半球比較。"
+    },
+    {
+      "belief": "同緯度的兩地就是同一地點。",
+      "whyWrong": "同一條緯線環繞地球，還有許多不同經度。",
+      "correction": "定位仍需經度。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "緯度愈高，所有氣候條件一定完全相同。",
+      "whyWrong": "海陸、海拔、洋流與地形也影響氣候。",
+      "correction": "把緯度視為因素之一，不作單因結論。"
+    },
+    {
+      "belief": "跨赤道兩地的緯度差一律用大數減小數。",
+      "whyWrong": "兩地位於零度兩側，南北角距需相加。",
+      "correction": "同半球相減、跨赤道相加。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "25°N 與 40°N，何者較北？",
+      "answer": "40°N。",
+      "reason": "北半球緯度數值較大者較北。"
+    },
+    {
+      "prompt": "8°S 與 30°S，何者離赤道近？",
+      "answer": "8°S。",
+      "reason": "緯度絕對值較小者離赤道較近。"
+    },
+    {
+      "prompt": "10°N 與 15°S 的緯度差？",
+      "answer": "25°。",
+      "reason": "跨赤道要相加兩側度數。"
+    },
+    {
+      "prompt": "只知道 23°N 能否唯一定位？",
+      "answer": "不能。",
+      "reason": "同緯線上仍有不同經度地點。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  }
+}

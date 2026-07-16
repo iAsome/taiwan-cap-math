@@ -1,0 +1,104 @@
+{
+  "id": "GEO_R4_Q_S236_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S236"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST236",
+  "stem": "公司報告與官方夜間峰值是否直接衝突？",
+  "options": [
+    "不衝突，因官方站無資料",
+    "未必，公司量日間月均，時間統計範圍不同",
+    "必衝突，任何數字不同皆衝突",
+    "不衝突，因公司一定正確"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "官方有每小時。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先對齊時段與統計量。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "過度簡化。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "來源身分不足。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "comparability-reading"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "日間月均可證明夜間無峰值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正確選項「未必，公司量日間月均，時間統計範圍不同」可由題幹推出，因為先對齊時段與統計量。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "公司結果只能支持日間月均。 逐項排除其他選項：「不衝突，因官方站無資料」官方有每小時。 這項內容無法支持題幹所要求的地理判斷。；「必衝突，任何數字不同皆衝突」過度簡化。 這項內容無法支持題幹所要求的地理判斷。；「不衝突，因公司一定正確」來源身分不足。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

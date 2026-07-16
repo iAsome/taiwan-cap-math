@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S029_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲圖保面積，乙圖保局部角度。研究者說：『甲圖的任兩點距離也一定比乙圖準確。』應如何評估？",
+  "options": [
+    "正確，因為面積包含距離",
+    "正確，因為甲圖一定較新",
+    "無法由已知條件推出距離優劣",
+    "錯誤，因為乙圖必定保面積"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "面積與距離是不同的投影性質。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目沒有提供地圖年代，且新舊不決定幾何性質。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "已知只說面積與局部角度，沒有任兩點距離資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "保局部角度不等於保面積。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "論證評估",
+    "限制判斷"
+  ],
+  "representationType": "claim",
+  "misconceptionTargets": [
+    "把面積、角度與距離視為同一性質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "論證缺少距離性質，因此只能判定證據不足。 正確選項「無法由已知條件推出距離優劣」可由題幹推出，因為已知只說面積與局部角度，沒有任兩點距離資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐一檢查其餘選項都錯把不同投影性質互相包含。 逐項排除其他選項：「正確，因為面積包含距離」面積與距離是不同的投影性質。；「正確，因為甲圖一定較新」題目沒有提供地圖年代，且新舊不決定幾何性質。；「錯誤，因為乙圖必定保面積」保局部角度不等於保面積。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

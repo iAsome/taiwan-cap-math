@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S019_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S019"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某手機地圖顯示整個縣市，但縮放層級沒有載入巷道。若任務是找巷內診所，應如何做？",
+  "options": [
+    "用縣界推測診所門牌",
+    "刪除目的地",
+    "切換到含巷道與診所圖層的較詳細層級並查更新",
+    "只截圖放大像素"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "縣界無法定位巷內門牌。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "目的地是任務核心，不能刪除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "任務需要巷道與設施點位，且應確認資料現況。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "像素放大不會產生未載入資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "數位選圖"
+  ],
+  "representationType": "mobile-map",
+  "misconceptionTargets": [
+    "把畫面放大當細部資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "電子地圖的選圖同樣要檢查顯示尺度與實際載入圖層。 正確選項「切換到含巷道與診所圖層的較詳細層級並查更新」可由題幹推出，因為任務需要巷道與設施點位，且應確認資料現況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "選項一不是只求畫面更大，而是要求取得支援任務的資料層級。 逐項排除其他選項：「用縣界推測診所門牌」縣界無法定位巷內門牌。；「刪除目的地」目的地是任務核心，不能刪除。；「只截圖放大像素」像素放大不會產生未載入資料。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

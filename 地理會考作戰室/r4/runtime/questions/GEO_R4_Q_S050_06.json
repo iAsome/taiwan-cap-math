@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S050_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "氣候平均溫度二十度，是否表示每天都是二十度？",
+  "options": [
+    "不是，因平均沒有單位",
+    "不是，日夜季節與極端會偏離平均",
+    "是，平均就是每日固定值",
+    "是，測站會控制溫度"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "平均仍有溫度單位。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "平均壓縮多筆不同觀測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "實際數值會變動。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "測站只觀測。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "平均意義"
+  ],
+  "representationType": "average",
+  "misconceptionTargets": [
+    "平均值等於每筆資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "氣候描述應配合變異範圍，避免平均掩蓋熱浪寒流。 正確選項「不是，日夜季節與極端會偏離平均」可由題幹推出，因為平均壓縮多筆不同觀測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "二十度只是一個中心統計，不是每日預報。 逐項排除其他選項：「不是，因平均沒有單位」平均仍有溫度單位。 這項內容無法支持題幹所要求的地理判斷。；「是，平均就是每日固定值」實際數值會變動。 這項內容無法支持題幹所要求的地理判斷。；「是，測站會控制溫度」測站只觀測。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

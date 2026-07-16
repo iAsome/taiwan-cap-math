@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S032_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST032",
+  "stem": "任務三使用丙圖時，哪個距離可由資料直接支持？",
+  "options": [
+    "甲城到乙城",
+    "基地到甲城",
+    "乙城到港口",
+    "甲城到港口"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩端都不是基地，超出中心距離條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "丙圖保證由基地量到各地的距離。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此距離不以基地為端點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此距離同樣不含基地。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "條件應用"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "把中心距離擴成任兩點距離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "丙圖的保留條件明確限定基地為中心，第二項唯一符合。 正確選項「基地到甲城」可由題幹推出，因為丙圖保證由基地量到各地的距離。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "另外三段皆為非中心點之間的距離。 逐項排除其他選項：「甲城到乙城」兩端都不是基地，超出中心距離條件。；「乙城到港口」此距離不以基地為端點。；「甲城到港口」此距離同樣不含基地。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

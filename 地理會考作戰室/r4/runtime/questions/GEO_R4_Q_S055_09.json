@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S055_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "題目把雨季定義為連續至少三個月雨量高於一百毫米。序列四至六月為一百二十、九十、一百三十，能算雨季嗎？",
+  "options": [
+    "不能，五月九十使連續條件中斷",
+    "能，四月與六月都超標",
+    "能，三月數值相加超標",
+    "一定算全年雨季"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三個月都需逐月超標。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "中間月不符。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "門檻針對月值而非三月合計。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料只測一段。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "複合門檻"
+  ],
+  "representationType": "continuous-threshold",
+  "misconceptionTargets": [
+    "首尾達標即可忽略中間月"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同時核對持續長度、連續性與每月門檻。 正確選項「不能，五月九十使連續條件中斷」可由題幹推出，因為三個月都需逐月超標。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若定義改為三月平均高於一百，算法才不同。 逐項排除其他選項：「能，四月與六月都超標」中間月不符。 這項內容無法支持題幹所要求的地理判斷。；「能，三月數值相加超標」門檻針對月值而非三月合計。；「一定算全年雨季」資料只測一段。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

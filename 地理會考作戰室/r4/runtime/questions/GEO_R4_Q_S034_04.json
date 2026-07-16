@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S034_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S034"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某世界地圖把所有經線畫成等距平行直線。越接近兩極，東西方向最可能如何？",
+  "options": [
+    "被拉寬",
+    "完全消失",
+    "必定縮成一點",
+    "不受投影影響"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "球面經線本應向兩極會聚，平面仍等距會把高緯東西方向拉寬。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "圖面仍有寬度，不是完全消失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "縮成一點是球面會聚，不符合題圖平行線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "已知線形改變，不能說不受影響。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "空間轉換"
+  ],
+  "representationType": "described-grid",
+  "misconceptionTargets": [
+    "把平行經線當成地表真實間距"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "將球面會聚與圖面平行比較，可得高緯東西拉寬。 正確選項「被拉寬」可由題幹推出，因為球面經線本應向兩極會聚，平面仍等距會把高緯東西方向拉寬。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他選項忽略題圖的等距平行條件。 逐項排除其他選項：「完全消失」圖面仍有寬度，不是完全消失。；「必定縮成一點」縮成一點是球面會聚，不符合題圖平行線。；「不受投影影響」已知線形改變，不能說不受影響。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲 22°N、乙 7°S。甲相對乙位於哪一方？",
+  "options": [
+    "北方",
+    "南方",
+    "東方",
+    "無法判斷南北"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "北緯地點位於赤道北側，必在南緯地點北方。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲不是在乙南方。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "經度未知，不能判東西，但題目只問南北方。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "N 與 S 已足以確定南北次序。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "跨半球比較"
+  ],
+  "representationType": "coordinate",
+  "misconceptionTargets": [
+    "經度未知就認為全不能判"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "跨赤道時北緯必在南緯北方，不需知道經度即可回答南北關係。 正確選項「北方」可由題幹推出，因為北緯地點位於赤道北側，必在南緯地點北方。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "未知經度只限制東西位置，不影響答案北方。 逐項排除其他選項：「南方」甲不是在乙南方。 這項內容無法支持題幹所要求的地理判斷。；「東方」經度未知，不能判東西，但題目只問南北方。；「無法判斷南北」N 與 S 已足以確定南北次序。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

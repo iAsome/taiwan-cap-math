@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S177_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-2",
+    "AUTH-SOCIAL-LC-GEO-BF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BF-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "兩條管線經不同國家但都通過同一樞紐，算完全分散嗎？",
+  "options": [
+    "算，國家數不同即可",
+    "算，管線不會故障",
+    "不算，因多路線永遠無用",
+    "不算，共同樞紐仍是單點失效"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "需追到完整拓樸。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "事故政治中斷仍可能。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "真正獨立路線可降低風險。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "路線表面不同但上游節點相同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "network-resilience"
+  ],
+  "representationType": "pipeline-hub",
+  "misconceptionTargets": [
+    "管線數多即完全分散"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-2",
+      "AUTH-SOCIAL-LC-GEO-BF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BF-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確選項「不算，共同樞紐仍是單點失效」可由題幹推出，因為路線表面不同但上游節點相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項排除其他選項：「算，國家數不同即可」需追到完整拓樸。 這項內容無法支持題幹所要求的地理判斷。；「算，管線不會故障」事故政治中斷仍可能。 這項內容無法支持題幹所要求的地理判斷。；「不算，因多路線永遠無用」真正獨立路線可降低風險。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

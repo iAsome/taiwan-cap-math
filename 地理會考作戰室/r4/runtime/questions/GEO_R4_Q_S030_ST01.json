@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST030",
+  "stem": "哪張圖最適合直接比較四區的實際面積？",
+  "options": [
+    "甲",
+    "乙",
+    "丙",
+    "丁"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲的等面積格測試通過，能支持面積比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙的面積測試未通過。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙只有中心距離測試通過。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丁未提供任何幾何測試。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "表格判讀"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "用形狀或距離證據代替面積證據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "表中唯有甲對面積測試標示通過。 正確選項「甲」可由題幹推出，因為甲的等面積格測試通過，能支持面積比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘地圖不是面積失敗、只保中心距離，就是證據不足。 逐項排除其他選項：「乙」乙的面積測試未通過。 這項內容無法支持題幹所要求的地理判斷。；「丙」丙只有中心距離測試通過。；「丁」丁未提供任何幾何測試。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

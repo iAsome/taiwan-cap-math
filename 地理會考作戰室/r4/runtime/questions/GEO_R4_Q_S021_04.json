@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S021_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一比五萬圖上六公分，正確結果為三公里。哪個逆運算可驗證？",
+  "options": [
+    "三公里乘五萬得六公分",
+    "六公分除三得五萬",
+    "三公里加六公分得五萬",
+    "三公里換三十萬公分，再除五萬得六公分"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公里與後項不能直接相乘得到公分六。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "六除三等於二，不是五萬且單位混亂。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不同單位不能用加法驗證比例。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "三十萬公分除後項五萬，確實回到圖距六公分。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "逆運算"
+  ],
+  "representationType": "verification",
+  "misconceptionTargets": [
+    "不同單位直接逆算"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逆運算要先把實距恢復為與圖距相同的公分，再除後項。 正確選項「三公里換三十萬公分，再除五萬得六公分」可由題幹推出，因為三十萬公分除後項五萬，確實回到圖距六公分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "能精確回到原圖距，表示乘法與十萬倍換算都一致。 逐項排除其他選項：「三公里乘五萬得六公分」公里與後項不能直接相乘得到公分六。；「六公分除三得五萬」六除三等於二，不是五萬且單位混亂。；「三公里加六公分得五萬」不同單位不能用加法驗證比例。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

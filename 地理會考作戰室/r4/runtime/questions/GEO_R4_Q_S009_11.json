@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S009_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "海上救援訊息只寫「事故在西半球」，為何仍不足以定位？",
+  "options": [
+    "只要知道半球就能找到唯一地點",
+    "西半球不存在",
+    "半球涵蓋範圍太大，還需更精確的緯度與經度",
+    "所有海域都在西半球"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同一半球內有無數地點，不能唯一定位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "西半球是有效的大尺度位置分類。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "半球包含廣大區域，無法提供唯一交會點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "海域分布跨越東西半球。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "尺度評估"
+  ],
+  "representationType": "rescue-message",
+  "misconceptionTargets": [
+    "把半球當精確座標"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "半球只能做粗略分類；救援需要成對經緯度或其他精確位置資訊。 正確選項「半球涵蓋範圍太大，還需更精確的緯度與經度」可由題幹推出，因為半球包含廣大區域，無法提供唯一交會點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此題測試尺度限制，不是否定半球概念，所以答案索引一。 逐項排除其他選項：「只要知道半球就能找到唯一地點」同一半球內有無數地點，不能唯一定位。；「西半球不存在」西半球是有效的大尺度位置分類。；「所有海域都在西半球」海域分布跨越東西半球。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

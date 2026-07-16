@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S038_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同一水田在插秧、成長與收割後影像外觀不同，這說明什麼？",
+  "options": [
+    "土地用途必定每天改變",
+    "季節與物候會改變同一土地覆蓋的光譜與紋理",
+    "地點每季改變坐標",
+    "衛星每次都錯"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "農業用途可持續但覆蓋狀態變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "作物生長階段會改變水面與植被比例。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "坐標不因季節移動。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時序差異可是真實物候。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "季節效應"
+  ],
+  "representationType": "crop-sequence",
+  "misconceptionTargets": [
+    "外觀不同等於用途永久改變"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "分類模型需使用相近季節資料或納入時序特徵。 正確選項「季節與物候會改變同一土地覆蓋的光譜與紋理」可由題幹推出，因為作物生長階段會改變水面與植被比例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若拿不同季節影像直接比變遷，可能把正常農期誤判為土地開發。 逐項排除其他選項：「土地用途必定每天改變」農業用途可持續但覆蓋狀態變化。；「地點每季改變坐標」坐標不因季節移動。 這項內容無法支持題幹所要求的地理判斷。；「衛星每次都錯」時序差異可是真實物候。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

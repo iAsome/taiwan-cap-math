@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S055_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "兩站最少雨月都是十毫米，能判兩站雨季長度相同嗎？",
+  "options": [
+    "能，十毫米等於全年雨量",
+    "不能，因雨量不能比較",
+    "不能，還需其餘月份與判定門檻",
+    "能，只要最小值相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "月值不是年總量。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同單位同期間即可比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "一個極值不保留全年分布。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "其餘十一月可能完全不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "單點限制"
+  ],
+  "representationType": "season-length",
+  "misconceptionTargets": [
+    "最少雨量決定雨季長度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "雨季長度取決於連續達標月份或分布結構。 正確選項「不能，還需其餘月份與判定門檻」可由題幹推出，因為一個極值不保留全年分布。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較時應看完整序列而非只看峰谷。 逐項排除其他選項：「能，十毫米等於全年雨量」月值不是年總量。 這項內容無法支持題幹所要求的地理判斷。；「不能，因雨量不能比較」同單位同期間即可比較。；「能，只要最小值相同」其餘十一月可能完全不同。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

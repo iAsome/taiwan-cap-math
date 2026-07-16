@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S128_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某年颱風為東部帶來極端雨量，能否據此說東部每月都同樣多雨？",
+  "options": [
+    "不能，因颱風不會降雨",
+    "不能，單次事件不能代表月際分布",
+    "能，一天雨量等於每月雨量",
+    "能，颱風全年每天存在"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "颱風確實常帶大量降雨。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "極端事件須放回全年序列。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不同時間尺度不能直接等同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "颱風是短期天氣系統。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "critical-reading"
+  ],
+  "representationType": "extreme-event",
+  "misconceptionTargets": [
+    "一次事件代表全年"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正確選項「不能，單次事件不能代表月際分布」可由題幹推出，因為極端事件須放回全年序列。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項排除其他選項：「不能，因颱風不會降雨」颱風確實常帶大量降雨。；「能，一天雨量等於每月雨量」不同時間尺度不能直接等同。；「能，颱風全年每天存在」颱風是短期天氣系統。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

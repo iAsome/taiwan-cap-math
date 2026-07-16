@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S014_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST014",
+  "stem": "若運送少量且六小時內必須抵達的急救藥品，應優先選哪個方案？",
+  "options": [
+    "丁",
+    "甲",
+    "乙",
+    "丙"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丁需兩日，也超過時限並有停航風險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲需三日，超過六小時。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "乙需五小時，容量雖小但足以配合少量急件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丙需四日且有聯外施工。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制條件"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "只選低運費方案"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "硬性時限先篩選可行方案，只有乙在六小時內完成跨海段。 正確選項「乙」可由題幹推出，因為乙需五小時，容量雖小但足以配合少量急件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "較高運費是代價，但題目給定急救與少量，使速度成為優先條件。 逐項排除其他選項：「丁」丁需兩日，也超過時限並有停航風險。；「甲」甲需三日，超過六小時。 這項內容無法支持題幹所要求的地理判斷。；「丙」丙需四日且有聯外施工。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

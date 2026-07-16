@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S050",
+  "subject": "geography",
+  "unitId": "GEO_R4_U08",
+  "skillId": "GEO_R4_S050",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S049"
+  ],
+  "objectives": [
+    "能依時間尺度、統計方式與敘述內容，區分短期天氣和長期氣候。",
+    "能說明氣候包含平均、季節變化與極端機率，不以單一事件證明或否定長期趨勢。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S050_SEC01",
+      "title": "天氣描述短期大氣狀態",
+      "content": "天氣是某地某時或短期內的氣溫、降水、風、雲量與氣壓狀態，例如今天午後雷雨、明晨低溫或颱風未來路徑。它變化快，預報要依即時觀測和大氣模式；某一天的數值不能直接代表當地整年或多年特徵。"
+    },
+    {
+      "id": "GEO_R4_L_S050_SEC02",
+      "title": "氣候描述長期統計特徵",
+      "content": "氣候以多年資料整理某地常見的平均值、季節節律、變異範圍與極端事件機率，例如夏季通常高溫多雨、冬季乾濕差異或多年年雨量分布。氣候不是每年照表重演，個別年份仍可偏冷、偏暖、偏乾或偏濕。"
+    },
+    {
+      "id": "GEO_R4_L_S050_SEC03",
+      "title": "時間長不等於資料自動可靠",
+      "content": "一年資料雖比一天長，仍可能碰到特殊乾旱或強降雨年；長期氣候分析需連續、品質控制且測站位置儀器相容的多年觀測。若測站遷移或都市化環境改變，也要校正，不能只把所有數字直接平均。"
+    },
+    {
+      "id": "GEO_R4_L_S050_SEC04",
+      "title": "天氣事件與氣候變化的關係",
+      "content": "氣候背景會影響某類天氣事件的機率與強度分布，但單一寒流不能證明長期變冷，單一熱浪也不能單獨證明全部變暖。判長期變化要比較足夠年代的統計趨勢、變異和資料品質，再討論事件是否與背景變化相容。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S050_EX01",
+      "prompt": "『明天下午降雨機率高，沿海風力增強』屬天氣或氣候？",
+      "steps": [
+        "時間指向明天下午",
+        "內容是降雨與風的短期狀態",
+        "需要即時預報"
+      ],
+      "answer": "屬於天氣敘述。",
+      "why": "即使提到常見氣象要素，時間尺度仍是區分關鍵。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S050_EX02",
+      "prompt": "『某地多年資料顯示七至九月平均雨量占全年一半』屬何者？",
+      "steps": [
+        "資料跨多年",
+        "比較季節平均比重",
+        "不是某一場雨"
+      ],
+      "answer": "屬於氣候特徵。",
+      "why": "它描述長期季節分配，個別年度不必剛好一半。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S050_EX03",
+      "prompt": "冬季某日異常高溫，能說當地沒有冬季低溫氣候嗎？",
+      "steps": [
+        "單日屬天氣",
+        "氣候是多年分布",
+        "查看整季與長期資料"
+      ],
+      "answer": "不能，單日異常不足以否定氣候。",
+      "why": "極端暖日可以存在於偏冷季節，需比較頻率和長期趨勢。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "下雨就是氣候，晴天就是天氣。",
+      "whyWrong": "分類依時間尺度與統計，不依氣象現象種類。",
+      "correction": "先找日期、期間與多年平均。"
+    },
+    {
+      "belief": "氣候平均表示每天都等於平均值。",
+      "whyWrong": "平均隱含高低變化，實際每天可偏離很大。",
+      "correction": "同時看變異與極端範圍。"
+    },
+    {
+      "belief": "一年資料就能代表完整氣候。",
+      "whyWrong": "單年可能特殊，長期資料才能估常態與變異。",
+      "correction": "使用品質一致的多年序列。"
+    },
+    {
+      "belief": "一場寒流足以否定長期暖化。",
+      "whyWrong": "單次事件是短期天氣，不能代替長期統計趨勢。",
+      "correction": "比較多年代與事件頻率。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "今天最高溫三十二度屬什麼？",
+      "answer": "天氣。",
+      "reason": "它是單日短期狀態。"
+    },
+    {
+      "prompt": "多年冬季平均溫度屬什麼？",
+      "answer": "氣候。",
+      "reason": "它是長期統計特徵。"
+    },
+    {
+      "prompt": "氣候平均是否每天都出現？",
+      "answer": "不是。",
+      "reason": "平均是多筆觀測的統計。"
+    },
+    {
+      "prompt": "單一極端事件能判長期趨勢嗎？",
+      "answer": "不能。",
+      "reason": "需足夠長且一致的資料序列。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

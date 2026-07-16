@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩城市緯度分別為 25°N 與 25°S。下列何者可確定？",
+  "options": [
+    "兩城經度相同",
+    "兩城分居赤道兩側且距赤道角距相同",
+    "兩城氣候完全相同",
+    "兩城相距五十公里"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "緯度無法提供經度資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "N、S 表示赤道兩側，絕對值同為二十五度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "海陸與環流不同可使氣候不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "五十度是緯度差，不等於五十公里。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "對稱位置"
+  ],
+  "representationType": "coordinate-comparison",
+  "misconceptionTargets": [
+    "緯度差直接當公里"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "座標只保證半球與角距，選項一精確且不過度推論。 正確選項「兩城分居赤道兩側且距赤道角距相同」可由題幹推出，因為N、S 表示赤道兩側，絕對值同為二十五度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "緯度差雖為五十度，實距還需地球尺度換算，排除公里選項。 逐項排除其他選項：「兩城經度相同」緯度無法提供經度資訊。；「兩城氣候完全相同」海陸與環流不同可使氣候不同。；「兩城相距五十公里」五十度是緯度差，不等於五十公里。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

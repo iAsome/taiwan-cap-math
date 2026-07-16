@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S011_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲 35°E、乙 78°E。兩地東西關係何者正確？",
+  "options": [
+    "兩地在同一經線",
+    "無法比較",
+    "甲在乙東方",
+    "乙在甲東方"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩地經度不同，不在同一經線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "經度已足以比較東西次序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "東經三十五度比七十八度更靠西。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同為東經，數值較大的乙位於甲東方。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "東經排序"
+  ],
+  "representationType": "coordinate",
+  "misconceptionTargets": [
+    "經度不足就全不能判"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同一側東經直接比較數值，78 大於 35，所以乙較東。 正確選項「乙在甲東方」可由題幹推出，因為同為東經，數值較大的乙位於甲東方。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "未知緯度不影響東西經線次序，只限制完整位置。 逐項排除其他選項：「兩地在同一經線」兩地經度不同，不在同一經線。；「無法比較」經度已足以比較東西次序。；「甲在乙東方」東經三十五度比七十八度更靠西。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

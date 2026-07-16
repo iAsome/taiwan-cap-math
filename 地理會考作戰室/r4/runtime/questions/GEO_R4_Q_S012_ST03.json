@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S012_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST012",
+  "stem": "若目標改為 20°S、0°，四點中有沒有完全符合者？",
+  "options": [
+    "甲",
+    "乙",
+    "丁",
+    "沒有"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲緯度與經度都不符。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙緯度符合但經度為 40°E。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丁緯度符合但經度為 40°W。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四點都沒有零度經度，因此無完全符合者。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "雙條件篩選"
+  ],
+  "representationType": "mixed",
+  "misconceptionTargets": [
+    "只核對緯度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先找 20°S 得乙丁，再檢查經度零，兩者皆不符，故選沒有。 正確選項「沒有」可由題幹推出，因為四點都沒有零度經度，因此無完全符合者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不能因一項座標符合就認定同地，答案索引三。 逐項排除其他選項：「甲」甲緯度與經度都不符。 這項內容無法支持題幹所要求的地理判斷。；「乙」乙緯度符合但經度為 40°E。 這項內容無法支持題幹所要求的地理判斷。；「丁」丁緯度符合但經度為 40°W。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

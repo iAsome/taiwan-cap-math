@@ -1,0 +1,92 @@
+{
+  "id": "GEO_R4_Q_S229_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "醫院耐震但只有一條外部電力線，地震後停止服務，說明什麼？",
+  "options": [
+    "電力與醫療無關",
+    "地震只影響牆壁",
+    "結構安全仍可能因能源相依單點而失效",
+    "耐震補強沒有任何價值"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "醫療高度依賴電。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "也影響網路。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "系統功能依賴多個節點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍降低倒塌。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infrastructure-dependency"
+  ],
+  "representationType": "hospital-power",
+  "misconceptionTargets": [
+    "建物不倒就能持續服務"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確選項「結構安全仍可能因能源相依單點而失效」可由題幹推出，因為系統功能依賴多個節點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "端到端測試比單項合格完整。 逐項排除其他選項：「電力與醫療無關」醫療高度依賴電。 這項內容無法支持題幹所要求的地理判斷。；「地震只影響牆壁」也影響網路。 這項內容無法支持題幹所要求的地理判斷。；「耐震補強沒有任何價值」仍降低倒塌。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

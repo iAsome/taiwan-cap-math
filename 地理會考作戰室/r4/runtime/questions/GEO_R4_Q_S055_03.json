@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S055_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "七月與八月月均溫都三十度，其他月較低。最高溫月為何？",
+  "options": [
+    "把兩月相加成六十度",
+    "沒有最高月",
+    "七月與八月並列",
+    "只算七月"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "月份極值不相加。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "最大值明確存在。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩月共享最大值。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任意刪除並列。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "並列高溫"
+  ],
+  "representationType": "temperature-maximum",
+  "misconceptionTargets": [
+    "最高月只能有一個"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "極值可有多個對應月份，但最大數值只有三十度。 正確選項「七月與八月並列」可由題幹推出，因為兩月共享最大值。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "表格註記並列有助後續描述季節長度。 逐項排除其他選項：「把兩月相加成六十度」月份極值不相加。 這項內容無法支持題幹所要求的地理判斷。；「沒有最高月」最大值明確存在。 這項內容無法支持題幹所要求的地理判斷。；「只算七月」任意刪除並列。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

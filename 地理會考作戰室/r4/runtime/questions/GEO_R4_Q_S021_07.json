@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S021_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "校園圖算出相鄰教室直線距離二千公里，最合理的第一反應為何？",
+  "options": [
+    "相信結果因為有計算器",
+    "宣布校園跨越兩千公里",
+    "標記量級異常並核對比例尺、圖距與單位",
+    "立刻把數字改成二公尺"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "計算器不能驗證輸入、單位或比例尺。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "情境明顯不支持，但仍要定位根因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "量級是錯誤警報，接著需查證計算鏈。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "直接猜改可能仍錯且無法追溯。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "量級警報"
+  ],
+  "representationType": "school-map",
+  "misconceptionTargets": [
+    "異常時直接猜改答案"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "合理性檢查先發現異常，證據核對才產生可辯護的修正。 正確選項「標記量級異常並核對比例尺、圖距與單位」可由題幹推出，因為量級是錯誤警報，接著需查證計算鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "應保留原圖與錯誤計算，避免修正後無法知道是零位、縮放或讀值問題。 逐項排除其他選項：「相信結果因為有計算器」計算器不能驗證輸入、單位或比例尺。；「宣布校園跨越兩千公里」情境明顯不支持，但仍要定位根因。；「立刻把數字改成二公尺」直接猜改可能仍錯且無法追溯。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,144 @@
+{
+  "id": "GEO_R4_L_S112",
+  "subject": "geography",
+  "unitId": "GEO_R4_U16",
+  "skillId": "GEO_R4_S112",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BA-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S111"
+  ],
+  "objectives": [
+    "依服務種類、門檻、範圍與流向判斷區域中心功能",
+    "比較交通與數位網絡改變後的中心性和服務缺口"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S112_SEC01",
+      "title": "中心要由互動證明",
+      "content": "區域中心是周邊居民取得工作、醫療、教育、行政、金融或批發等服務的重要節點。行政等級或人口可作線索，但通勤、就醫、購物與貨物流向才是直接證據。"
+    },
+    {
+      "id": "GEO_R4_L_S112_SEC02",
+      "title": "門檻與範圍",
+      "content": "門檻人口是維持一項服務所需的最低市場，高階醫療或專業服務通常門檻較高；服務範圍是使用者願意前往的最大距離，低頻而重要的服務常有較大範圍。"
+    },
+    {
+      "id": "GEO_R4_L_S112_SEC03",
+      "title": "服務階層與互補",
+      "content": "小聚落多提供便利商店、初級照護等日常服務；較大城市可提供大學、專科醫院和區域批發。不同中心也可能各有專長，以網絡互補而非單一路線上下支配。"
+    },
+    {
+      "id": "GEO_R4_L_S112_SEC04",
+      "title": "交通與數位重組",
+      "content": "快速運輸可擴大中心腹地，也可能使地方消費外流；遠距醫療與網路服務能降低部分距離障礙，但急救、實體檢查和物流仍需在地節點。評估須看不同群體是否真的能使用。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S112_EX01",
+      "prompt": "某城人口不是最大，卻吸引周邊六縣居民就醫，能否視為醫療中心？",
+      "steps": [
+        "查看跨區就醫流向",
+        "確認提供高階專科",
+        "區分人口與功能中心性"
+      ],
+      "answer": "可視為醫療區域中心",
+      "why": "服務範圍和實際流向比單純人口更直接。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S112_EX02",
+      "prompt": "便利商店和心臟移植中心何者門檻較高？",
+      "steps": [
+        "比較使用頻率",
+        "比較設備與專業成本",
+        "估計所需市場規模"
+      ],
+      "answer": "心臟移植中心",
+      "why": "高成本低頻服務需較廣大人口支持。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S112_EX03",
+      "prompt": "高鐵開通後小城高階購物外流，中心性如何變化？",
+      "steps": [
+        "可達性提高",
+        "居民更易前往大城",
+        "本地高階服務市場縮小"
+      ],
+      "answer": "部分高階零售中心性可能減弱",
+      "why": "交通改善能擴大大城腹地，也會重新分配服務需求。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "人口最多的地方一定是所有功能中心",
+      "whyWrong": "不同功能有不同流向與專業分工",
+      "correction": "逐項檢查服務與互動"
+    },
+    {
+      "belief": "行政首府必然是經濟中心",
+      "whyWrong": "行政名稱不能替代商業與通勤證據",
+      "correction": "用流量資料驗證 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "交通改善只會強化沿線小城",
+      "whyWrong": "也可能使需求流向較大中心",
+      "correction": "比較改善前後雙向流動"
+    },
+    {
+      "belief": "網路可完全取代實體中心",
+      "whyWrong": "急救、物流與面對面服務仍受地點限制",
+      "correction": "區分可數位化與必須到場的環節"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "何種資料最能證明就業中心？",
+      "answer": "由周邊流入的通勤人數與方向",
+      "reason": "流向直接呈現工作吸引範圍。"
+    },
+    {
+      "prompt": "門檻人口高的服務通常有何特性？",
+      "answer": "低頻、專業或固定成本高",
+      "reason": "需要較大市場才能維持。"
+    },
+    {
+      "prompt": "日常服務的服務範圍通常如何？",
+      "answer": "較小",
+      "reason": "使用頻繁，居民不願每次移動很遠。"
+    },
+    {
+      "prompt": "遠距醫療不能取代哪類環節？",
+      "answer": "需實體設備的檢查與緊急處置",
+      "reason": "這些服務仍須患者或設備在場。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BA-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  }
+}

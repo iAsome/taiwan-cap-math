@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S022_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "山頂標高六百三十二公尺，登山口位於一百八十公尺等高線，垂直高差為何？",
+  "options": [
+    "六百三十二公尺",
+    "一百八十公尺",
+    "四百五十二公尺",
+    "八百一十二公尺"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "六百三十二是山頂海拔，不是兩地差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一百八十是登山口海拔。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "六百三十二減一百八十等於四百五十二。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "八百一十二是錯誤相加。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "相對高度"
+  ],
+  "representationType": "elevation-profile",
+  "misconceptionTargets": [
+    "把兩地海拔相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "相對高度使用兩地海拔相減，不需利用水平比例尺。 正確選項「四百五十二公尺」可由題幹推出，因為六百三十二減一百八十等於四百五十二。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結果只描述垂直高差，不能直接當步道長或爬升累計。 逐項排除其他選項：「六百三十二公尺」六百三十二是山頂海拔，不是兩地差。；「一百八十公尺」一百八十是登山口海拔。；「八百一十二公尺」八百一十二是錯誤相加。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

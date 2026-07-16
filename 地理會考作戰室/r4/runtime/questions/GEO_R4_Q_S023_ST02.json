@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S023_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST023",
+  "stem": "乙與丙的平均坡度關係為何？",
+  "options": [
+    "丙較陡",
+    "只看高差無法算",
+    "乙與丙相同",
+    "乙較陡"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙高差與距離同比縮小，不會更陡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表中同時有高差與水平距離，可以計算。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "乙為一百除五百等於零點二，丙為六十除三百也等於零點二。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩者比值相同。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "坡度比值"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "高差較大必較陡"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "不能只見乙高差一百大於丙六十就判乙較陡，還要除以水平距離。 正確選項「乙與丙相同」可由題幹推出，因為乙為一百除五百等於零點二，丙為六十除三百也等於零點二。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩坡平均坡度相同，不代表每一小段局部坡度完全相同。 逐項排除其他選項：「丙較陡」丙高差與距離同比縮小，不會更陡。；「只看高差無法算」表中同時有高差與水平距離，可以計算。；「乙較陡」兩者比值相同。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

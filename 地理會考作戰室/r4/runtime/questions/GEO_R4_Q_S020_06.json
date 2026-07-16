@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "用四段長折線量得九點二公分，改用二十段短折線量得十點一公分。若路徑與起訖相同，哪項解釋較合理？",
+  "options": [
+    "九點二一定是實際公里",
+    "短折線較少切過彎道，可能減少低估",
+    "分段越多必讓實際道路變長",
+    "地圖比例尺自動改變"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "九點二是圖距公分且为粗略量值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "較細分段能貼近曲線，量值常稍增加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "實際道路沒改變，改的是估算方式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "量測分段不會改比例尺。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "方法比較"
+  ],
+  "representationType": "measurement-log",
+  "misconceptionTargets": [
+    "方法改變等於道路改變"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "折線內接曲線常切角，因此分段變細時估值可能向曲線長度增加。 正確選項「短折線較少切過彎道，可能減少低估」可由題幹推出，因為較細分段能貼近曲線，量值常稍增加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "仍不能只因數值較大就斷言二十段絕對正確，需考慮操作與圖面精度。 逐項排除其他選項：「九點二一定是實際公里」九點二是圖距公分且为粗略量值。；「分段越多必讓實際道路變長」實際道路沒改變，改的是估算方式。；「地圖比例尺自動改變」量測分段不會改比例尺。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S024",
+  "subject": "geography",
+  "unitId": "GEO_R4_U04",
+  "skillId": "GEO_R4_S024",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S023"
+  ],
+  "objectives": [
+    "能結合等高線閉合形態與數值增減，辨識山峰、稜線、谷地及鞍部。",
+    "能用線條彎曲方向與兩側地勢說明判斷，不把單一 V 形當成無條件口訣。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S024_SEC01",
+      "title": "閉合線與山峰",
+      "content": "一組閉合等高線若由外向內數值逐漸增加，表示中心地勢升高，通常是山丘或山峰；最高閉合線只給山頂下界，若沒有標高點，峰頂低於下一條尚未出現的等高線。若向內數值降低，則可能是窪地，需配合數值或凹地短線符號。"
+    },
+    {
+      "id": "GEO_R4_L_S024_SEC02",
+      "title": "谷地的尖端指向高處",
+      "content": "等高線穿越溪谷時會向上游、也就是較高地勢彎成 V 或 U 形，水流則朝 V 尖的反方向流向低處。判谷地要同時看兩側高度較高、中央是低槽，不能只看到任何折角就說有河流；谷地可能暫時沒有常流水。"
+    },
+    {
+      "id": "GEO_R4_L_S024_SEC03",
+      "title": "稜線向低處伸出",
+      "content": "稜線是兩側谷地間向外延伸的高地脊線。等高線繞過稜線時，彎曲凸端通常朝向較低處，與谷地尖端朝高處的關係相反。沿稜脊往山峰方向高度上升，往外端下降；判讀時可畫出相鄰線數值，確認凸端內側較高。"
+    },
+    {
+      "id": "GEO_R4_L_S024_SEC04",
+      "title": "鞍部與複合地形",
+      "content": "兩個相鄰山峰之間較低、形似馬鞍的通道稱鞍部，等高線常呈兩組閉合高地中間收窄的形態。鞍部海拔低於兩峰，卻可能高於兩側谷地。真實地形常把山峰、稜線、谷地與鞍部連在一起，應沿高度序列追蹤而非孤立看一小段線。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S024_EX01",
+      "prompt": "等高距五十公尺，閉合線由外到內為兩百、兩百五十、三百，中心無標高，這是什麼且峰頂範圍如何？",
+      "steps": [
+        "向內數值增加",
+        "判中心是高地山峰",
+        "下一可能線為三百五十"
+      ],
+      "answer": "為山峰，峰頂高於三百、低於三百五十公尺。",
+      "why": "最高已畫線不是精確峰高；若峰頂達三百五十，圖上理應再出現三百五十公尺閉合線。"
+    },
+    {
+      "id": "GEO_R4_L_S024_EX02",
+      "prompt": "等高線跨過一條低槽，V 尖所指一側標三百公尺，開口側標兩百公尺，如何判讀？",
+      "steps": [
+        "V 尖側較高",
+        "谷地尖端指上游",
+        "水從高處流向開口低處"
+      ],
+      "answer": "低槽是谷地，可能水流由 V 尖反向流出。",
+      "why": "河流方向要靠高度下降判斷；V 形本身配合三百到兩百的數值，才形成可靠證據。"
+    },
+    {
+      "id": "GEO_R4_L_S024_EX03",
+      "prompt": "兩個四百公尺閉合高地間有三百二十公尺的狹窄通道，通道兩側下切至兩百公尺，該處為何？",
+      "steps": [
+        "辨認兩側各有山峰",
+        "中間通道低於峰頂",
+        "通道又高於側邊谷地"
+      ],
+      "answer": "兩峰之間的三百二十公尺處為鞍部。",
+      "why": "鞍部是沿稜線方向的低點、沿橫向谷地之間的高通道，不能只說它是全區最低處。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有閉合等高線中心都是山峰。",
+      "whyWrong": "向內數值降低或有凹地符號時可能是窪地。",
+      "correction": "追蹤內外數值增減再判高低。"
+    },
+    {
+      "belief": "谷地 V 尖指向下游。",
+      "whyWrong": "谷地等高線尖端通常指向較高的上游，水流方向相反。",
+      "correction": "用高程數值驗證 V 尖側較高。"
+    },
+    {
+      "belief": "看到 V 形一定有河流。",
+      "whyWrong": "稜線也會形成彎曲，谷地也可能沒有常流水。",
+      "correction": "比較兩側高低與中央槽脊形態。"
+    },
+    {
+      "belief": "鞍部是整座山區的最低點。",
+      "whyWrong": "鞍部只在兩峰之間相對較低，仍可能高於周圍谷地與山腳。",
+      "correction": "沿不同方向比較高度角色。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "閉合線向內增高通常表示什麼？",
+      "answer": "山丘或山峰。",
+      "reason": "中心高於外圍。"
+    },
+    {
+      "prompt": "谷地等高線 V 尖通常指向哪裡？",
+      "answer": "上游與較高處。",
+      "reason": "水流通常朝尖端反方向。"
+    },
+    {
+      "prompt": "稜線凸出端大致朝高處或低處？",
+      "answer": "低處。",
+      "reason": "稜脊從山體向外下降延伸。"
+    },
+    {
+      "prompt": "鞍部相對兩側山峰高度如何？",
+      "answer": "較低。",
+      "reason": "它是兩峰間通道，但未必是全區低點。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  }
+}

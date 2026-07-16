@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "11°N 與 24°S 的緯度差為多少？",
+  "options": [
+    "13°",
+    "24°",
+    "35°",
+    "264°"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十三度是錯把跨赤道兩數相減。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二十四度只計南側距離。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "跨赤道相加 11 與 24，得到 35 度。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "把度數相乘沒有地理意義。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "跨赤道計算"
+  ],
+  "representationType": "numeric",
+  "misconceptionTargets": [
+    "跨赤道誤用相減"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "從十一度北到赤道十一度，再到二十四度南二十四度，合計三十五度。 正確選項「35°」可由題幹推出，因為跨赤道相加 11 與 24，得到 35 度。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "用路徑分段可排除相減造成的十三度假答案。 逐項排除其他選項：「13°」十三度是錯把跨赤道兩數相減。；「24°」二十四度只計南側距離。；「264°」把度數相乘沒有地理意義。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

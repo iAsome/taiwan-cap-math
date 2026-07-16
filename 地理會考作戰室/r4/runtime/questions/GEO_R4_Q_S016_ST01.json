@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S016_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST016",
+  "stem": "甲至乙的實際直線距離為多少？",
+  "options": [
+    "一百八十公里",
+    "一點八公里",
+    "三點六公里",
+    "十八公里"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一百八十公里多兩個數量級。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "三點六乘五萬為十八萬公分，即一點八公里。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三點六是圖距數字，不能直接改成公里。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "十八萬公分不是十八公里。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "表格換算"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "圖距數值直接套公里"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "一比五萬等於每公分零點五公里，三點六乘零點五得一點八。 正確選項「一點八公里」可由題幹推出，因為三點六乘五萬為十八萬公分，即一點八公里。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案標為直線距離，與表中端點直線的量測方式一致。 逐項排除其他選項：「一百八十公里」一百八十公里多兩個數量級。；「三點六公里」三點六是圖距數字，不能直接改成公里。；「十八公里」十八萬公分不是十八公里。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S053_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S053"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "氣候圖左軸為攝氏度、右軸為毫米，同一水平高度的線點與柱頂表示什麼？",
+  "options": [
+    "都表示氣壓",
+    "都沒有單位",
+    "分別對應不同軸，數值不可直接視為相同",
+    "兩者數值必相等"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "圖軸明示溫度雨量。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩者都有單位。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "雙軸刻度與單位不同。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "視覺同高不代表數字相同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "雙軸讀法"
+  ],
+  "representationType": "dual-axis",
+  "misconceptionTargets": [
+    "同高度等於同數值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料系列共用橫軸月份，不共用縱軸數值。 正確選項「分別對應不同軸，數值不可直接視為相同」可由題幹推出，因為雙軸刻度與單位不同。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "報告應寫二十八度或二百毫米等完整單位。 逐項排除其他選項：「都表示氣壓」圖軸明示溫度雨量。 這項內容無法支持題幹所要求的地理判斷。；「都沒有單位」兩者都有單位。 這項內容無法支持題幹所要求的地理判斷。；「兩者數值必相等」視覺同高不代表數字相同。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

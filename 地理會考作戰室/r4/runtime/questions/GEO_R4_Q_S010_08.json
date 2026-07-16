@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲乙都在 30°N。下列哪項必然相同？",
+  "options": [
+    "年降水量",
+    "經度",
+    "海拔",
+    "與赤道的角距離"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "降水還受海陸、地形與環流影響。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同緯度仍可位於不同經度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "海拔由地形決定，不由緯度固定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "緯度相同代表與赤道角距離同為三十度。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "必要條件"
+  ],
+  "representationType": "claim-evaluation",
+  "misconceptionTargets": [
+    "同緯度等於同氣候"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同緯度的定義只直接保證與赤道角距離相同，其他條件皆可能不同。 正確選項「與赤道的角距離」可由題幹推出，因為緯度相同代表與赤道角距離同為三十度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "以不同大陸同緯度地點作反例，可排除經度、海拔與降水。 逐項排除其他選項：「年降水量」降水還受海陸、地形與環流影響。；「經度」同緯度仍可位於不同經度。；「海拔」海拔由地形決定，不由緯度固定。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

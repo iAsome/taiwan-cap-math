@@ -1,0 +1,82 @@
+{
+  "id": "GEO_R4_Q_S184_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S184"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-2",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某礦場品位高但距港口兩千公里、道路季節中斷，能否只依品位判定值得開採？",
+  "options": [
+    "可以，品位是唯一條件",
+    "可以，距離不會影響成本",
+    "不能，因高緯地區絕無礦產",
+    "不能，還要計算運輸可靠度、能源、環境與市場價格"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "忽略多項關鍵變數。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "長距離會提高成本與風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "高緯地區確有豐富礦產。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "商業可採性取決於完整成本收益。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "feasibility-analysis"
+  ],
+  "representationType": "remote-mine",
+  "misconceptionTargets": [
+    "高品位必定能開採"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-2",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資源存在與可經濟開採不同。 正確選項「不能，還要計算運輸可靠度、能源、環境與市場價格」可由題幹推出，因為商業可採性取決於完整成本收益。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "價格改變也會改變可採界線。 逐項排除其他選項：「可以，品位是唯一條件」忽略多項關鍵變數。 這項內容無法支持題幹所要求的地理判斷。；「可以，距離不會影響成本」長距離會提高成本與風險。；「不能，因高緯地區絕無礦產」高緯地區確有豐富礦產。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

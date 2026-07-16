@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S041_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S041"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "公開設址結果如何支援無障礙查核？",
+  "options": [
+    "只顯示紅綠總分圖",
+    "只提供滑鼠懸停",
+    "隱藏不利條件",
+    "提供候選地逐層原始值、排除理由、權重、日期與文字說明"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不足且可能無法列印。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "滑鼠限定不支援鍵盤觸控。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "隱藏破壞透明度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "結構資料讓不同使用者重現決策。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "決策可及性"
+  ],
+  "representationType": "accessible-siting",
+  "misconceptionTargets": [
+    "合成圖足以取代規則資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "表格需區分不合格、未知與合格，不能只用顏色。 正確選項「提供候選地逐層原始值、排除理由、權重、日期與文字說明」可由題幹推出，因為結構資料讓不同使用者重現決策。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "還應說明最終決策者與模型不是法定許可。 逐項排除其他選項：「只顯示紅綠總分圖」顏色不足且可能無法列印。；「只提供滑鼠懸停」滑鼠限定不支援鍵盤觸控。；「隱藏不利條件」隱藏破壞透明度。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

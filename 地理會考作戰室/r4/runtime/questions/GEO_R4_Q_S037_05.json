@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "今年人口網格與十年前道路層可否直接當作今年可達性？",
+  "options": [
+    "不宜，交通圖層時點不一致",
+    "可以，路永遠不變",
+    "可以，只要人口最新",
+    "不宜，因人口與道路不能疊合"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "舊路網可能漏新路或保留已廢路。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "道路會增建、封閉或改道。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "另一核心層過舊仍會誤導。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時點一致時兩層可疊合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "時間一致"
+  ],
+  "representationType": "temporal-overlay",
+  "misconceptionTargets": [
+    "一層最新即可代表全部現況"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分析時間由最不符合現況的必要圖層限制。 正確選項「不宜，交通圖層時點不一致」可由題幹推出，因為舊路網可能漏新路或保留已廢路。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若無更新資料，可做歷史情境但不能標為今年現況。 逐項排除其他選項：「可以，路永遠不變」道路會增建、封閉或改道。；「可以，只要人口最新」另一核心層過舊仍會誤導。；「不宜，因人口與道路不能疊合」時點一致時兩層可疊合。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

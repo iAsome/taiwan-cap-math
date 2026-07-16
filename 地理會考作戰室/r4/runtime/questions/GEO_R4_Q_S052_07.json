@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S052_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "兩張天氣圖等壓線紙距相同，能直接判風勢相同嗎？",
+  "options": [
+    "能，所有天氣圖比例相同",
+    "不能，因等壓線與風無關",
+    "不能，需控制比例尺與等壓距",
+    "能，紙距相同即可"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "圖幅尺度可不同。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "等壓線與風勢有關。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "梯度需壓差與實距。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紙面毫米不足。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "跨圖比較"
+  ],
+  "representationType": "map-scale",
+  "misconceptionTargets": [
+    "相同紙距等於相同氣壓梯度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把紙距換成實際距離，並確認每線差幾百帕。 正確選項「不能，需控制比例尺與等壓距」可由題幹推出，因為梯度需壓差與實距。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "非等比例縮放的圖更不能直接視覺比較。 逐項排除其他選項：「能，所有天氣圖比例相同」圖幅尺度可不同。 這項內容無法支持題幹所要求的地理判斷。；「不能，因等壓線與風無關」等壓線與風勢有關。 這項內容無法支持題幹所要求的地理判斷。；「能，紙距相同即可」紙面毫米不足。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

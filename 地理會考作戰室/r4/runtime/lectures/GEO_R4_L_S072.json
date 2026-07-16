@@ -1,0 +1,142 @@
+{
+  "id": "GEO_R4_L_S072",
+  "subject": "geography",
+  "unitId": "GEO_R4_U11",
+  "skillId": "GEO_R4_S072",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AD-4-1",
+    "AUTH-SOCIAL-LC-GEO-AD-4-2",
+    "AUTH-SOCIAL-LC-GEO-AD-4-4",
+    "AUTH-SOCIAL-LC-GEO-BA-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S071"
+  ],
+  "objectives": [
+    "能讀取出生、死亡、出生率、死亡率與自然增加率，正確處理百分率及千分率。",
+    "能區分自然增加與人口總增減，將移入移出納入人口平衡且不以單年粗率直接推論個人風險。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S072_SEC01",
+      "title": "出生死亡是人數，率要除以人口",
+      "content": "粗出生率常以一年出生人數除以年中人口再乘一千，粗死亡率算法相同，單位為千分率。人數多的地方出生數可能多，但若人口基數更大，出生率反而較低。"
+    },
+    {
+      "id": "GEO_R4_L_S072_SEC02",
+      "title": "自然增加只看出生與死亡",
+      "content": "自然增加人數等於出生減死亡；自然增加率約等於粗出生率減粗死亡率。結果為負稱自然減少。人口總變化還要加入淨遷移，也就是移入減移出。"
+    },
+    {
+      "id": "GEO_R4_L_S072_SEC03",
+      "title": "千分率不可當百分率",
+      "content": "十二千分率等於百分之一點二，不是百分之十二。由率估人數時，用人口乘率再除以一千；不同資料若一個用百分率、一個用千分率，必須先統一。"
+    },
+    {
+      "id": "GEO_R4_L_S072_SEC04",
+      "title": "粗率會受年齡結構影響",
+      "content": "高齡人口多的地區粗死亡率可能較高，不代表每個年齡層醫療一定更差。跨地比較健康風險需分齡率或標準化率；趨勢也要看多年而非只看一年波動。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S072_EX01",
+      "prompt": "出生率九千分率、死亡率七千分率，自然增加率多少？",
+      "steps": [
+        "統一千分率",
+        "九減七",
+        "保留單位"
+      ],
+      "answer": "二千分率，即百分之零點二。",
+      "why": "不能寫成百分之二。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S072_EX02",
+      "prompt": "人口二十萬、出生率十千分率，約出生多少人？",
+      "steps": [
+        "十除一千",
+        "乘二十萬",
+        "檢查量級"
+      ],
+      "answer": "約兩千人。",
+      "why": "粗率估算可能因人口基準或四捨五入略有差異。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S072_EX03",
+      "prompt": "自然減少五百人、淨移入八百人，總人口如何變？",
+      "steps": [
+        "把自然變化寫負五百",
+        "加淨移入八百",
+        "得到正三百"
+      ],
+      "answer": "總人口增加三百人。",
+      "why": "自然減少不等於總人口一定下降。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "出生數多就出生率高。",
+      "whyWrong": "率還受總人口分母影響。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "用出生數除人口比較。"
+    },
+    {
+      "belief": "自然增加就是總人口增加。",
+      "whyWrong": "遷移也改變總人口。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "加入淨遷移。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "十千分率等於百分之十。",
+      "whyWrong": "千分率轉百分率要除十。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "十千分率是百分之一。"
+    },
+    {
+      "belief": "粗死亡率高必表示醫療差。",
+      "whyWrong": "年齡結構會顯著影響粗率。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "比較分齡或標準化率。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "自然增加率如何算？",
+      "answer": "出生率減死亡率。",
+      "reason": "兩者單位要一致。"
+    },
+    {
+      "prompt": "淨遷移如何算？",
+      "answer": "移入減移出。",
+      "reason": "正值表示淨移入。"
+    },
+    {
+      "prompt": "十五千分率等於多少百分率？",
+      "answer": "百分之一點五。",
+      "reason": "千分率除十。"
+    },
+    {
+      "prompt": "粗死亡率能直接比健康嗎？",
+      "answer": "不宜。",
+      "reason": "需控制年齡結構。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AD-4-1",
+      "AUTH-SOCIAL-LC-GEO-AD-4-2",
+      "AUTH-SOCIAL-LC-GEO-AD-4-4",
+      "AUTH-SOCIAL-LC-GEO-BA-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  }
+}

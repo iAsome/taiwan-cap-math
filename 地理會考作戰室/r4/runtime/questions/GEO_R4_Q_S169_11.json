@@ -1,0 +1,82 @@
+{
+  "id": "GEO_R4_Q_S169_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-2",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要比較兩個南亞城市的季風洪水風險，哪套資料最完整？",
+  "options": [
+    "只有城市名稱",
+    "只看國界面積",
+    "月雨量、上游流量、地勢排水、土地覆蓋、人口與預警",
+    "只有年雨量總和"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱沒有機制。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "國家面積不是城市排水。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "危害暴露和脆弱需共同評估。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "年總量會掩蓋集中暴雨。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "risk-assessment"
+  ],
+  "representationType": "monsoon-city-risk",
+  "misconceptionTargets": [
+    "年雨量足以判洪災"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-2",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確選項「月雨量、上游流量、地勢排水、土地覆蓋、人口與預警」可由題幹推出，因為危害暴露和脆弱需共同評估。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項排除其他選項：「只有城市名稱」名稱沒有機制。 這項內容無法支持題幹所要求的地理判斷。；「只看國界面積」國家面積不是城市排水。；「只有年雨量總和」年總量會掩蓋集中暴雨。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

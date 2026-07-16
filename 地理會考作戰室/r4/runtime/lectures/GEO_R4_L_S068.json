@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S068",
+  "subject": "geography",
+  "unitId": "GEO_R4_U10",
+  "skillId": "GEO_R4_S068",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S067"
+  ],
+  "objectives": [
+    "能由民生、農業、工業與生態用水資料計算總量、比例及尖峰需求。",
+    "能區分水源不足、設施瓶頸與分配不均，判讀缺水壓力而不只看年降水量。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S068_SEC01",
+      "title": "用水結構先統一單位與期間",
+      "content": "比較各部門用水要確認是每日、每月或每年，並統一立方公尺等單位。部門占比等於該部門用水除以總用水；占比大表示節水潛力可能大，但不代表可無條件全部削減。"
+    },
+    {
+      "id": "GEO_R4_L_S068_SEC02",
+      "title": "缺水是供需在特定時間地點不平衡",
+      "content": "年雨量充足仍可能因降水集中、儲存不足、污染、管線漏水或需求尖峰而缺水。全區總量夠，也可能因輸配能力或上下游分配造成局部短缺。"
+    },
+    {
+      "id": "GEO_R4_L_S068_SEC03",
+      "title": "壓力指標需看可用而非名目水量",
+      "content": "可利用供水要扣除水質不合、必要生態流量、輸水損失與安全保留。供需比若接近一，任何乾旱或設備故障都可能造成風險；歷年變異比單年平均更能反映可靠度。"
+    },
+    {
+      "id": "GEO_R4_L_S068_SEC04",
+      "title": "需求管理要辨認用途與時段",
+      "content": "民生節水可減漏與提高器具效率，農業可改善灌溉排程，工業可回收製程用水。政策應兼顧基本生活需求、糧食生產、就業與河川生態，並以單位產出用水效率評估。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S068_EX01",
+      "prompt": "農業六十、民生二十五、工業十五萬噸每日，各占多少？",
+      "steps": [
+        "總量一百",
+        "各部門除以一百",
+        "換成百分比"
+      ],
+      "answer": "農業百分之六十、民生二十五、工業十五。",
+      "why": "百分比描述結構，不直接表示各部門浪費程度。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S068_EX02",
+      "prompt": "供水一百、需求九十五，漏水十，是否足夠？",
+      "steps": [
+        "先扣漏水得可達九十",
+        "再比需求九十五",
+        "指出缺口五"
+      ],
+      "answer": "不足五個同單位水量。",
+      "why": "若供水一百已是到戶淨量，就不應再扣，需讀清定義。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S068_EX03",
+      "prompt": "年雨量高卻枯季限水，可能原因為何？",
+      "steps": [
+        "查看月分配",
+        "核對庫容與輸配",
+        "比較枯季需求"
+      ],
+      "answer": "降水集中且儲調能力不足可造成季節缺水。",
+      "why": "不能只由年總雨量判全年供水安全。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "年雨量多就不會缺水。",
+      "whyWrong": "時間分配、儲存、水質與需求都重要。",
+      "correction": "改看月供需與可靠度。"
+    },
+    {
+      "belief": "占比最大部門一定最浪費。",
+      "whyWrong": "占比還受生產規模與用途影響。",
+      "correction": "比較單位產出用水與可節省量。"
+    },
+    {
+      "belief": "水庫進水量全都可供人使用。",
+      "whyWrong": "需保留生態、損失與安全庫容。",
+      "correction": "用可利用量做供需分析。"
+    },
+    {
+      "belief": "全區總量平衡就沒有局部短缺。",
+      "whyWrong": "管網與空間分配可形成瓶頸。",
+      "correction": "檢查分區供水與輸配容量。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "部門占比如何算？",
+      "answer": "部門用水除以總用水。",
+      "reason": "期間單位要一致。"
+    },
+    {
+      "prompt": "供水與需求相同就零風險嗎？",
+      "answer": "不是。",
+      "reason": "缺乏安全餘裕。"
+    },
+    {
+      "prompt": "年雨量能否代表枯季供水？",
+      "answer": "不能單獨代表。",
+      "reason": "要看月分配與儲存。"
+    },
+    {
+      "prompt": "占比大等於浪費嗎？",
+      "answer": "不一定。",
+      "reason": "還需效率與必要性證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

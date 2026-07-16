@@ -1,0 +1,129 @@
+{
+  "id": "GEO_R4_L_S033",
+  "subject": "geography",
+  "unitId": "GEO_R4_U05",
+  "skillId": "GEO_R4_S033",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S032"
+  ],
+  "objectives": [
+    "避免把非等積圖的圖面大小當成實際國土面積",
+    "以數值或等積證據驗證面積比較"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S033_SEC01",
+      "title": "圖面大小不是面積證明",
+      "content": "世界地圖上的輪廓面積是投影後的結果。若地圖沒有保面積，同一圖面比例在不同緯度可能代表不同實際面積，因此目測只能形成待驗證的猜測，不能直接作結論。"
+    },
+    {
+      "id": "GEO_R4_L_S033_SEC02",
+      "title": "可靠的比較證據",
+      "content": "實際面積統計、等積投影、或標明各地面積比例的資料，都比未說明投影的視覺印象可靠。比較時要確定數值單位一致，且國界或統計年份相同。"
+    },
+    {
+      "id": "GEO_R4_L_S033_SEC03",
+      "title": "辨認誤導敘述",
+      "content": "『看起來兩倍大，所以實際兩倍大』省略了投影條件；『位在高緯，所以一定被放大』也過度推論，因為不同投影處理方式不同。正確說法會指出使用哪一種面積證據。"
+    },
+    {
+      "id": "GEO_R4_L_S033_SEC04",
+      "title": "檢核流程",
+      "content": "先問地圖是否等積，再核對實際面積數值與單位；若兩者不一致，以適合面積比較的資料為準。最後說明圖面差異可能來自投影，而不是把變形當成地理事實。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S033_EX01",
+      "prompt": "圖上甲國占 8 格、乙國占 6 格，但資料表列甲 70 萬、乙 90 萬平方公里。哪國實際較大？",
+      "steps": [
+        "辨認表格是實際面積",
+        "確認單位一致",
+        "比較 70 與 90"
+      ],
+      "answer": "乙國。",
+      "why": "實際面積表的單位一致，90 萬平方公里大於 70 萬平方公里。圖面格數與數值相反，顯示不能用該圖直接判定面積。"
+    },
+    {
+      "id": "GEO_R4_L_S033_EX02",
+      "prompt": "某學生由未標投影的圖判斷甲國是乙國兩倍大，這個結論缺少什麼？",
+      "steps": [
+        "找出結論依據只有圖面外觀",
+        "檢查投影與面積資料",
+        "指出必要證據"
+      ],
+      "answer": "等積性或實際面積資料。",
+      "why": "未標投影的圖面可能放大或縮小不同區域，沒有等積說明或可靠數值，就不能把圖面比例當成實際面積比。"
+    },
+    {
+      "id": "GEO_R4_L_S033_EX03",
+      "prompt": "兩張世界地圖中的同一國大小不同，是否表示國土面積改變？",
+      "steps": [
+        "確認比較的是同一國",
+        "辨認兩圖投影可能不同",
+        "排除國土自然變大的推論"
+      ],
+      "answer": "不表示。",
+      "why": "同一國在不同投影上的圖面大小可不同，差異先反映製圖方法。除非另有邊界或統計資料，不能說國土面積因此改變。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "眼睛看到的圖面比例就是實際面積比例。",
+      "whyWrong": "非等積投影會改變不同位置的面積尺度。",
+      "correction": "改用等積圖或實際數值。"
+    },
+    {
+      "belief": "面積數值與圖面矛盾時一定是資料表錯。",
+      "whyWrong": "圖面可能因投影而變形。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "先查投影性質、統計來源與單位。"
+    },
+    {
+      "belief": "只要兩國在同一張圖上就可公平比面積。",
+      "whyWrong": "同一張非等積圖的比例也可能隨位置變化。",
+      "correction": "確認全圖是否保面積。"
+    },
+    {
+      "belief": "把輪廓截圖後數像素就能得到實際面積。",
+      "whyWrong": "像素只量圖面大小，仍受投影影響。",
+      "correction": "像素法必須建立在等積投影與一致解析度上。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "未標投影的世界地圖可否作精確國土面積比較？",
+      "answer": "不可。",
+      "reason": "不確定圖面是否維持面積比例。"
+    },
+    {
+      "prompt": "圖面與同單位面積表相反時，應優先採哪項？",
+      "answer": "可靠的實際面積表。",
+      "reason": "數值直接記錄實際面積。"
+    },
+    {
+      "prompt": "同一國在兩種投影上大小不同，最先應懷疑什麼？",
+      "answer": "投影變形。",
+      "reason": "不同投影會改變圖面面積。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  }
+}

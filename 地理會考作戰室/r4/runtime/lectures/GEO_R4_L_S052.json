@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S052",
+  "subject": "geography",
+  "unitId": "GEO_R4_U08",
+  "skillId": "GEO_R4_S052",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S051"
+  ],
+  "objectives": [
+    "能讀取等壓線數值、間隔與閉合中心，判斷高低氣壓分布及氣壓梯度。",
+    "能由等壓線疏密比較可能風勢，並說明地面摩擦、地形與偏向使實際風場不能只靠一條口訣。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S052_SEC01",
+      "title": "等壓線連接相同氣壓",
+      "content": "天氣圖等壓線把同一時刻海平面氣壓相同的地點連起來，常以百帕標示。相鄰線按固定間隔增減，讀值時先找已標數字，再向中心或外圍逐線計算。它表示氣壓而非海拔，不能用來判山坡陡緩。"
+    },
+    {
+      "id": "GEO_R4_L_S052_SEC02",
+      "title": "閉合線內外數值判高低",
+      "content": "閉合等壓線若向中心數值增加，中心是高壓；向中心降低則是低壓。只看到閉合圓形但沒有數值或高低標記，不能直接命名。高低是相對周圍氣壓，中心值也可能位於最高或最低已畫線與下一間隔之間。"
+    },
+    {
+      "id": "GEO_R4_L_S052_SEC03",
+      "title": "線密表示氣壓梯度較大",
+      "content": "同一比例尺天氣圖上，相同氣壓差若集中在短水平距離，氣壓梯度較大，通常風勢較強；線疏則梯度小，風通常較弱。跨不同圖幅或等壓距比較前要統一實際距離與氣壓差，不能只數線條或量紙面毫米。"
+    },
+    {
+      "id": "GEO_R4_L_S052_SEC04",
+      "title": "實際風向不是單純高到低直線",
+      "content": "氣壓梯度力由高壓指向低壓，但地球自轉偏向、地面摩擦與山谷海岸會改變實際風向與速度。近地面風會有穿越等壓線的分量，卻不等於永遠垂直由高直吹低。判特定站風向應以風羽、測站或官方分析為準。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S052_EX01",
+      "prompt": "閉合線由外到內為一千零八、一千零四、一千百帕，中心是高壓或低壓？",
+      "steps": [
+        "向內數值下降",
+        "中心低於周圍",
+        "判為低壓"
+      ],
+      "answer": "中心為低壓。",
+      "why": "等壓距 4 hPa，若沒有下一條九百九十六線，中心可能在九百九十六到一千百帕間。"
+    },
+    {
+      "id": "GEO_R4_L_S052_EX02",
+      "prompt": "甲區四條等壓線擠在兩百公里，乙區同樣氣壓差分布八百公里，何處風勢可能較強？",
+      "steps": [
+        "氣壓差相同",
+        "甲水平距離較短",
+        "甲氣壓梯度較大"
+      ],
+      "answer": "甲區通常風勢較強。",
+      "why": "仍需地形摩擦與實際風觀測，線密是風勢初步指標。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S052_EX03",
+      "prompt": "兩張圖線距都是一公分，可直接判風一樣強嗎？",
+      "steps": [
+        "可能比例尺不同",
+        "可能等壓距不同",
+        "換算每水平距離的氣壓差"
+      ],
+      "answer": "不能只比紙面一公分。",
+      "why": "氣壓梯度是氣壓差除實際距離，兩項都必須一致。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "閉合等壓線中心一定低壓。",
+      "whyWrong": "向內數值增加時中心是高壓。",
+      "correction": "追蹤內外數值增減。"
+    },
+    {
+      "belief": "等壓線密表示海拔坡度陡。",
+      "whyWrong": "等壓線表示氣壓梯度，不是地形高度。",
+      "correction": "用等高線判坡度。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "線條數量多就一定風強。",
+      "whyWrong": "要看相同氣壓差分布的實際水平距離。",
+      "correction": "比較氣壓梯度。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "地面風永遠垂直等壓線從高吹低。",
+      "whyWrong": "偏向、摩擦與地形使風向偏轉。",
+      "correction": "以實際風羽或觀測確認。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "向中心氣壓升高是何系統？",
+      "answer": "高壓。",
+      "reason": "中心高於周圍。"
+    },
+    {
+      "prompt": "同圖等壓線密處風通常如何？",
+      "answer": "較強。",
+      "reason": "氣壓梯度較大。"
+    },
+    {
+      "prompt": "等壓線可判地形坡度嗎？",
+      "answer": "不可以。",
+      "reason": "它連接相同氣壓而非海拔。"
+    },
+    {
+      "prompt": "跨圖比線距先控制什麼？",
+      "answer": "等壓距與地圖比例尺。",
+      "reason": "紙距相同不等於梯度相同。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "道路層向東偏移兩百公尺後與聚落層疊合，最可能造成什麼？",
+  "options": [
+    "人口自動增加",
+    "地形海拔變低",
+    "資料日期自動更新",
+    "可達距離與路口位置判斷錯誤"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "幾何偏移不改人口現實。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "也不改地形高度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "日期須由來源更新。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "系統偏移會讓道路落在錯誤位置。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "坐標錯位"
+  ],
+  "representationType": "misaligned-layers",
+  "misconceptionTargets": [
+    "圖層偏移只影響美觀"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "位置誤差可能把看似鄰近的設施判成隔河或無路。 正確選項「可達距離與路口位置判斷錯誤」可由題幹推出，因為系統偏移會讓道路落在錯誤位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "應查坐標基準並用已知控制點驗證，而非手動任意拖移。 逐項排除其他選項：「人口自動增加」幾何偏移不改人口現實。；「地形海拔變低」也不改地形高度。 這項內容無法支持題幹所要求的地理判斷。；「資料日期自動更新」日期須由來源更新。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

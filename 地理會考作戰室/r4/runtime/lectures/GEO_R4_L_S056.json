@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S056",
+  "subject": "geography",
+  "unitId": "GEO_R4_U08",
+  "skillId": "GEO_R4_S056",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S055"
+  ],
+  "objectives": [
+    "能判斷氣候結論至少需要的時間跨度、變數、單位與統計背景。",
+    "能區分資料直接支持的描述、仍需佐證的解釋與超出證據的斷言。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S056_SEC01",
+      "title": "單月現象不等於氣候常態",
+      "content": "某年某月特別冷、特別乾，是天氣或短期異常的觀測；氣候描述依賴多年統計。即使拿到一整年十二個月，也只能描述該年季節變化，不能自動代表長期常態。"
+    },
+    {
+      "id": "GEO_R4_L_S056_SEC02",
+      "title": "完整性包含時間與變數",
+      "content": "回答年雨量需十二個月雨量，判冷暖節律需十二個月月均溫；比較氣候還要同單位、相近統計期間與相容測站條件。只給最高月或只給一年總量，無法還原月分配。"
+    },
+    {
+      "id": "GEO_R4_L_S056_SEC03",
+      "title": "描述、解釋與預測分層",
+      "content": "資料直接顯示七月雨量最高，屬描述；說因季風或颱風造成，屬機制解釋，需要位置、風向或事件資料；說明年七月一定同值，則是過度預測。作答先標清問題要哪一層。"
+    },
+    {
+      "id": "GEO_R4_L_S056_SEC04",
+      "title": "缺值與代表性要揭露",
+      "content": "測站遷移、儀器更換、都市化與缺測都可能影響長期序列。資料表應保留來源、期間、單位、缺值與品質註記；不能挑一個支持主張的月份，忽略其餘相反資料。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S056_EX01",
+      "prompt": "某地今年一月比去年冷五度，能說氣候已變冷嗎？",
+      "steps": [
+        "辨認只有兩個單月",
+        "區分年際波動與長期趨勢",
+        "要求多年同月序列"
+      ],
+      "answer": "不能，只能說今年一月較冷。",
+      "why": "氣候趨勢需多年資料與統計檢驗，兩點差異不足。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S056_EX02",
+      "prompt": "甲站資料為一九八一至二〇一〇平均，乙站只列二〇二五年，能直接比較常態嗎？",
+      "steps": [
+        "核對統計期間",
+        "辨認多年平均與單年",
+        "限制比較結論"
+      ],
+      "answer": "不能視為同類氣候常態比較。",
+      "why": "可描述數值差，但必須揭露時間基準不同並補相容資料。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S056_EX03",
+      "prompt": "完整月表顯示夏半年多雨，能直接斷定是季風造成嗎？",
+      "steps": [
+        "先確認表支持分配描述",
+        "把成因列為待驗證",
+        "尋找風向位置與環流資料"
+      ],
+      "answer": "可描述夏半年多雨，尚不能只靠月表確定成因。",
+      "why": "同一降水分配可能由不同機制形成。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "今年一場寒流證明長期氣候轉冷。",
+      "whyWrong": "單一事件不代表多年統計趨勢。",
+      "correction": "檢查多年同季序列。"
+    },
+    {
+      "belief": "有十二個月就一定是氣候資料。",
+      "whyWrong": "單年仍可能偏離長期常態。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "確認涵蓋年數與平均方法。"
+    },
+    {
+      "belief": "圖上兩條線不同就是成因關係。",
+      "whyWrong": "同時變化不等於因果。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "補機制與控制變數證據。"
+    },
+    {
+      "belief": "缺值可挑鄰月任意補上。",
+      "whyWrong": "插補會帶入假設與不確定性。",
+      "correction": "揭露方法或限制結論。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "單一颱風雨量能代表年平均嗎？",
+      "answer": "不能。",
+      "reason": "事件值與長期平均尺度不同。"
+    },
+    {
+      "prompt": "單年十二月表可說什麼？",
+      "answer": "可描述該年季節分配。",
+      "reason": "不能自動代表長期氣候常態。"
+    },
+    {
+      "prompt": "雨峰與季風成因是同一層結論嗎？",
+      "answer": "不是。",
+      "reason": "前者描述，後者需機制證據。"
+    },
+    {
+      "prompt": "跨站比較先核對什麼？",
+      "answer": "期間、單位、測站條件與缺值。",
+      "reason": "確保資料可比。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

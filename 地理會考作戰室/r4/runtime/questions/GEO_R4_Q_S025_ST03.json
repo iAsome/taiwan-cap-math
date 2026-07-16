@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S025_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST025",
+  "stem": "要檢驗表中箭頭是否合理，最簡潔的檢查規則為何？",
+  "options": [
+    "所有箭頭都要朝紙面下方",
+    "節點名稱筆畫要減少",
+    "只看河段顏色",
+    "沿每一箭頭海拔都應下降，且匯流關係一致"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "紙面方向未提供且可旋轉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱與水流無關。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "顏色不能替代高程與拓撲。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "自然河網連接應大致由高往低並在丙匯流。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "網路驗證"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "箭頭必須朝頁面下方"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐邊檢查甲到丙、乙到丙、丙到丁都下降，可快速發現反向箭頭。 正確選項「沿每一箭頭海拔都應下降，且匯流關係一致」可由題幹推出，因為自然河網連接應大致由高往低並在丙匯流。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "丁到戊雖也下降，仍因壩體而需另查操作，規則是初步查核不是即時預測。 逐項排除其他選項：「所有箭頭都要朝紙面下方」紙面方向未提供且可旋轉。；「節點名稱筆畫要減少」名稱與水流無關。 這項內容無法支持題幹所要求的地理判斷。；「只看河段顏色」顏色不能替代高程與拓撲。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

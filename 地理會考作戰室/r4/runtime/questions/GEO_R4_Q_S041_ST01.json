@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S041_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S041"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST041",
+  "stem": "哪個圖層最直接支援高洪水潛勢硬性排除？",
+  "options": [
+    "坡度",
+    "洪水潛勢",
+    "人口網格",
+    "人行路網"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "坡度是地形條件但不等同洪水潛勢。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "官方洪水層直接對應排除條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "人口回答需求。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "路網回答時間。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "條件配層"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "坡度層可完整代替洪水圖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "每個門檻應對應明確資料層，避免用坡度或人口代替洪水。 正確選項「洪水潛勢」可由題幹推出，因為官方洪水層直接對應排除條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "仍需讀官方圖層版本與分類定義。 逐項排除其他選項：「坡度」坡度是地形條件但不等同洪水潛勢。；「人口網格」人口回答需求。 這項內容無法支持題幹所要求的地理判斷。；「人行路網」路網回答時間。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

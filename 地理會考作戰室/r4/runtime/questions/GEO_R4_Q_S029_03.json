@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S029_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某投影能維持各區域面積比例。下列哪項仍不能因此保證？",
+  "options": [
+    "各區面積可公平比較",
+    "任兩地距離都準確",
+    "高低緯面積比例一致",
+    "同面積區域在圖上占比相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這正是等積性可支持的判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "保面積不等於保距離，任兩點距離仍可能變形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "等積投影能維持面積比例，不因緯度改變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同實際面積在等積圖上應有相同圖面占比。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨識條件"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "把保留一項性質誤認為保留全部性質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹只給等積條件，距離準確沒有被保證。 正確選項「任兩地距離都準確」可由題幹推出，因為保面積不等於保距離，任兩點距離仍可能變形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項核對等積定義，第一、三、四項都屬面積關係，只有第二項跨到距離。 逐項排除其他選項：「各區面積可公平比較」這正是等積性可支持的判斷。；「高低緯面積比例一致」等積投影能維持面積比例，不因緯度改變。；「同面積區域在圖上占比相同」同實際面積在等積圖上應有相同圖面占比。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

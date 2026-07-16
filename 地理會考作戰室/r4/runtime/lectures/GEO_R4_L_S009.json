@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S009",
+  "subject": "geography",
+  "unitId": "GEO_R4_U02",
+  "skillId": "GEO_R4_S009",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S008"
+  ],
+  "objectives": [
+    "能指出赤道與本初經線各自的度數、延伸方向及所分出的半球。",
+    "能正確處理位於零度緯線或零度經線上的邊界地點。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S009_SEC01",
+      "title": "兩條零度基準線",
+      "content": "赤道是零度緯線，環繞地球東西向延伸，與南、北兩極距離相等；本初經線是零度經線，連接南北兩極，作為東經與西經的起算基準。兩者在地球儀上相交，但用途不可互換。"
+    },
+    {
+      "id": "GEO_R4_L_S009_SEC02",
+      "title": "半球怎麼分",
+      "content": "赤道以北屬北半球、以南屬南半球；本初經線以東至一百八十度通常標為東經，以西至一百八十度通常標為西經。判斷時先看數值是緯度或經度，再看 N、S、E、W 方位字母。"
+    },
+    {
+      "id": "GEO_R4_L_S009_SEC03",
+      "title": "邊界地點的說法",
+      "content": "位於赤道上的地點緯度為零度，不宜硬說只屬北半球或只屬南半球；位於本初經線上的地點經度為零度，也不宜硬說只屬東半球或西半球。它們正位於對應半球的分界線上。"
+    },
+    {
+      "id": "GEO_R4_L_S009_SEC04",
+      "title": "常見混淆與檢查",
+      "content": "緯線大致東西延伸，卻用來表示南北位置；經線南北延伸，卻用來表示東西位置。可用一句話檢查：赤道分南北，本初經線分東西。日期變更線接近一百八十度經線，不是零度本初經線。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S009_EX01",
+      "prompt": "甲地標示 18°N、35°E，分別位於哪些半球？",
+      "steps": [
+        "18°N 表示赤道以北",
+        "35°E 表示本初經線以東",
+        "合併兩項判斷"
+      ],
+      "answer": "北半球、東半球。",
+      "why": "緯度字母決定南北半球，經度字母決定東西半球；兩項判斷彼此獨立。"
+    },
+    {
+      "id": "GEO_R4_L_S009_EX02",
+      "prompt": "乙地為 0°、72°W，能否說乙地位於南半球？",
+      "steps": [
+        "先辨認 0° 是緯度",
+        "零度緯度就是赤道",
+        "赤道是南北半球分界"
+      ],
+      "answer": "不能；乙地在赤道上，並位於西經地區。",
+      "why": "零度緯度沒有 N 或 S，不能因另一項是西經就誤判為南半球。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S009_EX03",
+      "prompt": "丙地為 42°S、0°，如何描述位置？",
+      "steps": [
+        "42°S 判為南半球",
+        "0° 經度判為本初經線",
+        "保留邊界說法"
+      ],
+      "answer": "丙地位於南半球，且在本初經線上。",
+      "why": "零度經度是東西半球分界；不需硬把丙地歸入單一東或西半球。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "赤道是一條經線。",
+      "whyWrong": "赤道環繞地球東西向，是零度緯線，不連接兩極。",
+      "correction": "記住赤道分南北，屬緯線。"
+    },
+    {
+      "belief": "本初經線把地球分成南北半球。",
+      "whyWrong": "本初經線是東經與西經起算線；南北由赤道分。",
+      "correction": "記住本初經線分東西。"
+    },
+    {
+      "belief": "零度緯度必須選北半球或南半球之一。",
+      "whyWrong": "零度緯度正位於赤道，是南北分界。",
+      "correction": "用『在赤道上』描述邊界。"
+    },
+    {
+      "belief": "經線南北延伸，所以表示南北位置。",
+      "whyWrong": "線的延伸方向與其測量方向不同；經度比較東西位置。",
+      "correction": "看 E、W 判東西，不看線條走向猜用途。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "12°S 位於哪個半球？",
+      "answer": "南半球。",
+      "reason": "S 表示赤道以南。"
+    },
+    {
+      "prompt": "0° 經線稱為什麼？",
+      "answer": "本初經線。",
+      "reason": "它是東經與西經的起算基準。"
+    },
+    {
+      "prompt": "赤道上的地點能否只歸為北半球？",
+      "answer": "不能。",
+      "reason": "赤道是南北半球分界。"
+    },
+    {
+      "prompt": "25°N、80°W 位於哪些半球？",
+      "answer": "北半球、西半球。",
+      "reason": "N 判南北，W 判東西。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  }
+}

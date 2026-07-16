@@ -1,0 +1,86 @@
+{
+  "id": "GEO_R4_Q_S065_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "社區要評估新鋪面是否提高洪峰，哪種研究設計較可靠？",
+  "options": [
+    "只問居民印象",
+    "把兩條河不同年份任意相比",
+    "比較鋪面前後多場相近暴雨並控制前期濕度",
+    "只挑改建後最大一場雨"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "印象不能替代流量。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "混入地點與年份差異。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "多事件與控制條件提高可比性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "選極端事件有偏誤。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "影響評估"
+  ],
+  "representationType": "before-after",
+  "misconceptionTargets": [
+    "一場最大雨足以證明鋪面效果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若有對照集水區，可排除同年氣候波動。 正確選項「比較鋪面前後多場相近暴雨並控制前期濕度」可由題幹推出，因為多事件與控制條件提高可比性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結論仍應報不確定性，不把相關當唯一因果。 逐項排除其他選項：「只問居民印象」印象不能替代流量。 這項內容無法支持題幹所要求的地理判斷。；「把兩條河不同年份任意相比」混入地點與年份差異。 這項內容無法支持題幹所要求的地理判斷。；「只挑改建後最大一場雨」選極端事件有偏誤。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

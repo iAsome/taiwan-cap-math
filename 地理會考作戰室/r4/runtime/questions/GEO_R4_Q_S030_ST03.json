@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST030",
+  "stem": "關於丁圖，哪項說法最符合證據原則？",
+  "options": [
+    "丁圖一定保面積",
+    "丁圖一定不保方向",
+    "丁圖比其他圖都準確",
+    "目前資料不足以判定四種性質"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未測試不能推定保面積。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未測試也不能推定方向錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有比較證據支持最準確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四項都未測試，只能判定資料不足。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "不確定性判斷"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "把無資料當成通過或失敗"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "丁列四項皆為未測試，因此唯一合理結論是證據不足。 正確選項「目前資料不足以判定四種性質」可由題幹推出，因為四項都未測試，只能判定資料不足。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前三項都把沒有資料誤寫成肯定判斷。 逐項排除其他選項：「丁圖一定保面積」未測試不能推定保面積。；「丁圖一定不保方向」未測試也不能推定方向錯誤。；「丁圖比其他圖都準確」沒有比較證據支持最準確。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

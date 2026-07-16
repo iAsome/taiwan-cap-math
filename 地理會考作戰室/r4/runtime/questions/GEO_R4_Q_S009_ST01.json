@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S009_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST009",
+  "stem": "哪兩站共同位於東半球？",
+  "options": [
+    "丙、丁",
+    "甲、乙",
+    "甲、丙",
+    "乙、丁"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙為西經，丁在分界線，不能選。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲乙經度皆為 30°E，共同在東經地區。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙為西經，不與甲同在東半球。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丁在本初經線上，不宜硬歸單一東半球。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "表格判讀"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "用緯度判東西半球"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只比較經度欄，30°E 出現在甲、乙兩站，因此答案唯一。 正確選項「甲、乙」可由題幹推出，因為甲乙經度皆為 30°E，共同在東經地區。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "緯度 N、S 不影響東西半球分類，排除受第一欄干擾的組合。 逐項排除其他選項：「丙、丁」丙為西經，丁在分界線，不能選。；「甲、丙」丙為西經，不與甲同在東半球。；「乙、丁」丁在本初經線上，不宜硬歸單一東半球。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

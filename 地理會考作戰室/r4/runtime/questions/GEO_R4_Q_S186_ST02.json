@@ -1,0 +1,82 @@
+{
+  "id": "GEO_R4_Q_S186_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S186"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-2",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST186",
+  "stem": "甲方案若不先改善輸電，最可能發生什麼？",
+  "options": [
+    "生態敏感立刻變為零",
+    "年發電量必定不受任何影響",
+    "強風時部分電力無法送出而被限制發電",
+    "風場會自動移到城市"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "輸電不消除生態影響。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "限電會影響實際電量。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "高壅塞會形成送出瓶頸。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "設施不會自動移動。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "bottleneck-analysis"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "建完風機就一定能全量供電"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-2",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "正確選項「強風時部分電力無法送出而被限制發電」可由題幹推出，因為高壅塞會形成送出瓶頸。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可比較擴線、儲能與需求位置方案。 逐項排除其他選項：「生態敏感立刻變為零」輸電不消除生態影響。 這項內容無法支持題幹所要求的地理判斷。；「年發電量必定不受任何影響」限電會影響實際電量。 這項內容無法支持題幹所要求的地理判斷。；「風場會自動移到城市」設施不會自動移動。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

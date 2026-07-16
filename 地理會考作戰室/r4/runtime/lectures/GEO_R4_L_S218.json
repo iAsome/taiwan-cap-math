@@ -1,0 +1,148 @@
+{
+  "id": "GEO_R4_L_S218",
+  "subject": "geography",
+  "unitId": "GEO_R4_U33",
+  "skillId": "GEO_R4_S218",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BB-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-4",
+    "AUTH-SOCIAL-LC-GEO-BH-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S217"
+  ],
+  "objectives": [
+    "由開採、轉換、運輸與終端使用追蹤能源流向和損耗",
+    "運用淨流量、自給率與路徑集中度解釋生產地和消費地的相互依賴"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S218_SEC01",
+      "title": "能源流不是只畫產地到城市",
+      "content": "一次能源從煤礦、油氣田、日照或風場取得後，常需經煉油廠、發電廠、儲槽與變電站轉換，再由船舶、管線或電網送到工業、運輸、住宅和服務業。每次轉換與輸送都有自用或損耗，因此開採量、可供終端能源與實際有用服務不相等。追蹤時應標明能源形式、數量、時間和方向，避免把原油噸數與電力度數直接相加。"
+    },
+    {
+      "id": "GEO_R4_L_S218_SEC02",
+      "title": "用收支辨認輸出與依賴",
+      "content": "一地的能源供給可簡化為本地生產加輸入，等於本地使用、輸出、庫存變化與損耗之和。淨輸入是輸入減輸出；自給率常以本地生產除以本地消費，但高於百分之百只表示總量有餘，不保證各能源種類和時段都自足。產油區可能進口成品油，電力淨輸出區也可能依賴外地燃料，所以需分能源形式判讀。"
+    },
+    {
+      "id": "GEO_R4_L_S218_SEC03",
+      "title": "節點與路徑塑造能源權力",
+      "content": "海峽、港口、管線交會點、變電站與跨區輸電線是能源流的節點。控制節點可取得轉運收益和議價能力，也承擔事故、污染與中斷風險。來源多元若仍經同一海峽或接收站，路徑集中度仍高；反之，互聯電網可在一地低產時由另一地支援，但也可能把故障與價格波動傳到更遠地區。依賴是雙向的：消費地需要供應，生產地也依賴市場、設備和收入。"
+    },
+    {
+      "id": "GEO_R4_L_S218_SEC04",
+      "title": "終端消費與內含能源",
+      "content": "住宅用電只是終端能源的一部分，鋼、肥料、晶片和運輸服務的生產也消耗能源。進口高耗能產品相當於把部分能源使用與環境負擔留在生產地，稱為商品內含能源；出口地的能源消耗不全是當地居民最終需求。完整比較可同時呈現生產地帳面排放和消費地需求驅動的足跡，但兩種帳法回答不同問題，不能重複相加。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S218_EX01",
+      "prompt": "甲地生產一百單位、輸入三十、輸出五十、損耗十，若庫存不變，本地使用多少？",
+      "steps": [
+        "供給為一百三十",
+        "扣除輸出五十",
+        "再扣損耗十"
+      ],
+      "answer": "七十單位",
+      "why": "能量收支使去向相加等於來源相加。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S218_EX02",
+      "prompt": "產油國大量進口汽油，是否矛盾？",
+      "steps": [
+        "原油與成品油是不同形式",
+        "檢查煉油能力與規格",
+        "可輸出原油並輸入成品"
+      ],
+      "answer": "不矛盾",
+      "why": "資源產量高不代表具有足夠的轉換能力或符合所有產品需求。"
+    },
+    {
+      "id": "GEO_R4_L_S218_EX03",
+      "prompt": "三個供應國都經同一海峽輸入，來源是否充分分散？",
+      "steps": [
+        "國家來源有多個",
+        "運輸路徑共用一個瓶頸",
+        "海峽受阻會同時影響"
+      ],
+      "answer": "來源分散但路徑未分散",
+      "why": "應分開衡量供應商集中與運輸節點集中。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "能源產量高就不需進口",
+      "whyWrong": "不同能源形式、品質、時段與轉換能力可能仍需輸入",
+      "correction": "分能源種類做收支"
+    },
+    {
+      "belief": "供應國多就代表能源安全",
+      "whyWrong": "多國來源可能共用單一路徑、港口或接收設施",
+      "correction": "同時畫來源和運輸節點"
+    },
+    {
+      "belief": "電力輸送沒有損耗",
+      "whyWrong": "線路、變壓和廠內自用會使送端與受端電量不同",
+      "correction": "比較發電端與售電端數據"
+    },
+    {
+      "belief": "進口產品不含本地能源需求",
+      "whyWrong": "消費會驅動生產地使用能源，形成內含能源流",
+      "correction": "追蹤產品供應鏈與最終需求"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "淨輸入如何計算？",
+      "answer": "輸入減輸出",
+      "reason": "正值表示輸入多於輸出"
+    },
+    {
+      "prompt": "自給率高於百分之百代表什麼？",
+      "answer": "總生產量高於總消費量",
+      "reason": "不代表每種能源和每個時段都自足"
+    },
+    {
+      "prompt": "來源與路徑集中有何差別？",
+      "answer": "前者看供應者分布，後者看運輸和接收節點是否共用",
+      "reason": "兩者需分開評估"
+    },
+    {
+      "prompt": "何謂內含能源？",
+      "answer": "生產商品與服務過程投入而隨貿易間接連結的能源",
+      "reason": "它發生在生產地但由最終需求驅動"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BB-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-4",
+      "AUTH-SOCIAL-LC-GEO-BH-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2"
+    ]
+  }
+}

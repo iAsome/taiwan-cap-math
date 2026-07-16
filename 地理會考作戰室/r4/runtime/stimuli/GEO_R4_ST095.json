@@ -1,0 +1,90 @@
+{
+  "id": "GEO_R4_ST095",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-1",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-BA-4-2",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-2",
+    "AUTH-SOCIAL-LC-GEO-CB-4-3",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-1"
+  ],
+  "content": {
+    "title": "某批草莓供應鏈紀錄",
+    "prompt": "重量為進入各節點的公斤數；損耗不含正常加工水分。",
+    "table": {
+      "columns": [
+        "節點",
+        "進貨重量",
+        "損耗",
+        "平均溫度",
+        "紀錄"
+      ],
+      "rows": [
+        [
+          "農場集貨",
+          "1000",
+          "30",
+          "8°C",
+          "批號完整"
+        ],
+        [
+          "分級包裝",
+          "970",
+          "70",
+          "10°C",
+          "去除腐果"
+        ],
+        [
+          "冷藏運輸",
+          "900",
+          "20",
+          "6°C",
+          "超溫2小時"
+        ],
+        [
+          "零售",
+          "880",
+          "110",
+          "5°C",
+          "逾期與外觀淘汰"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "草莓由集貨到零售各節點重量、損耗、溫度與紀錄。",
+    "longDescription": "農場集貨一千公斤、損耗三十、平均八度；分級包裝進九百七十、損耗七十、十度；冷藏運輸進九百、損耗二十、六度且超溫兩小時；零售進八百八十、損耗一百一十、五度，原因為逾期與外觀淘汰。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S095_ST01",
+    "GEO_R4_Q_S095_ST02",
+    "GEO_R4_Q_S095_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-1",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-BA-4-2",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-2",
+      "AUTH-SOCIAL-LC-GEO-CB-4-3",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-1"
+    ]
+  }
+}

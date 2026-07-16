@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S039",
+  "subject": "geography",
+  "unitId": "GEO_R4_U06",
+  "skillId": "GEO_R4_S039",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S038"
+  ],
+  "objectives": [
+    "能比較不同日期影像的同一位置與土地覆蓋面積，辨認增加、減少與轉換。",
+    "能控制季節、感測器、解析度、雲影與幾何配準，區分真實變化、觀測差異及原因推論。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S039_SEC01",
+      "title": "先確認兩張影像可比較",
+      "content": "時序比較應涵蓋相同範圍、使用相容波段與解析度，並把道路、河道或控制點幾何對準。若一張像元十公尺、另一張三十公尺，或位置偏移一個像元，邊界附近會產生大量假變化；不能只把兩張圖透明疊上就開始計數。"
+    },
+    {
+      "id": "GEO_R4_L_S039_SEC02",
+      "title": "季節與拍攝條件會改外觀",
+      "content": "同一農田在插秧、生長與收割後的光譜不同，河川寬度受雨季枯水季影響，日照角度與大氣也會改亮度。比較長期土地開發時，應盡量使用相近季節、相似條件的影像，或用多期資料分離正常季節循環。"
+    },
+    {
+      "id": "GEO_R4_L_S039_SEC03",
+      "title": "變化要有起訖類別",
+      "content": "可靠變遷表不只列某類增加多少，也記每一區從森林轉裸地、農地轉建成或水體轉泥灘等起訖類別。某類淨增加可能同時包含其他地方的增加與損失；只報淨值會隱藏空間位置與轉換方向，因此要保留變化圖與轉換矩陣。"
+    },
+    {
+      "id": "GEO_R4_L_S039_SEC04",
+      "title": "看見變化不等於知道原因",
+      "content": "森林變裸地可能是崩塌、伐採、火災或施工，水面增大可能是降雨、水庫操作或永久工程。影像可定位變化時段與範圍，原因需配合事件紀錄、許可資料、雨量、地形或現勘。變化圖也應附分類準確度與低信心區。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S039_EX01",
+      "prompt": "兩期影像道路整體相差二十公尺，邊界出現成對增減帶，是真實變化嗎？",
+      "steps": [
+        "固定地物也同步位移",
+        "成對邊界帶符合錯位特徵",
+        "先重新幾何配準"
+      ],
+      "answer": "較可能是影像未對準造成的假變化。",
+      "why": "若道路等穩定物也偏移，應修正配準後再分類，而非把所有邊界帶計為土地變遷。"
+    },
+    {
+      "id": "GEO_R4_L_S039_EX02",
+      "prompt": "森林面積由一百降到八十公頃，能說二十公頃都變成建地嗎？",
+      "steps": [
+        "先算淨減二十",
+        "淨減沒有去向類別",
+        "查看轉換矩陣"
+      ],
+      "answer": "不能，只能先說森林淨減二十公頃。",
+      "why": "損失區可能分別轉成裸地、農地或建成區，也可能另有新生森林抵銷更多損失。"
+    },
+    {
+      "id": "GEO_R4_L_S039_EX03",
+      "prompt": "豪雨前後山坡出現新裸地，可直接判為崩塌嗎？",
+      "steps": [
+        "時間與坡位支持崩塌假設",
+        "裸地也可由施工等造成",
+        "疊合雨量、坡度與災情"
+      ],
+      "answer": "可列為疑似變化區，需其他證據確認原因。",
+      "why": "時序影像適合快速篩查，結論語氣須符合尚未現勘的證據強度。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "日期不同的影像都能直接相減。",
+      "whyWrong": "季節、解析度、波段與位置偏移可製造假變化。",
+      "correction": "先標準化與配準再比較。"
+    },
+    {
+      "belief": "面積淨增十公頃表示只有十公頃新增。",
+      "whyWrong": "同時可能有大量增加與損失互相抵銷。",
+      "correction": "查看空間位置與轉換矩陣。"
+    },
+    {
+      "belief": "影像變暗就代表環境惡化。",
+      "whyWrong": "亮度受波段、日照、含水與大氣影響，沒有固定價值方向。",
+      "correction": "按圖例分類並控制拍攝條件。"
+    },
+    {
+      "belief": "看見森林轉裸地就能確定是非法砍伐。",
+      "whyWrong": "崩塌、火災或合法工程也可能造成相似覆蓋。",
+      "correction": "用許可、事件與現地資料判原因。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "時序比較前先做什麼空間處理？",
+      "answer": "幾何配準到相同位置。",
+      "reason": "避免邊界錯位造成假變化。"
+    },
+    {
+      "prompt": "為何盡量比較相近季節？",
+      "answer": "減少物候與水位季節差異。",
+      "reason": "使長期變化不被正常循環混淆。"
+    },
+    {
+      "prompt": "淨變化能否顯示所有轉換方向？",
+      "answer": "不能。",
+      "reason": "需轉換矩陣與空間變化圖。"
+    },
+    {
+      "prompt": "影像可否單獨證明變化原因？",
+      "answer": "通常不能。",
+      "reason": "需事件、許可或現勘交叉驗證。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

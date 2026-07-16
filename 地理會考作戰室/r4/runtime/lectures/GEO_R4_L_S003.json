@@ -1,0 +1,149 @@
+{
+  "id": "GEO_R4_L_S003",
+  "subject": "geography",
+  "unitId": "GEO_R4_U01",
+  "skillId": "GEO_R4_S003",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S002"
+  ],
+  "objectives": [
+    "能依問題選擇街區、行政區、全臺或全球等適當尺度",
+    "能解釋尺度改變如何影響看見的分布與結論"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S003_SEC01",
+      "title": "尺度是觀察範圍",
+      "content": "空間尺度指研究涵蓋的範圍與分析單元。街角、社區與里屬較小範圍；縣市、全臺與全球逐漸擴大。尺度不是題目難度，也不是只看地圖紙張大小。"
+    },
+    {
+      "id": "GEO_R4_L_S003_SEC02",
+      "title": "問題決定尺度",
+      "content": "找危險路口要看街道細節；比較各縣市人口老化可用縣市；研究跨國供應鏈則要放到國家與全球。選得太大會看不見細節，選得太小又可能漏掉完整系統。"
+    },
+    {
+      "id": "GEO_R4_L_S003_SEC03",
+      "title": "分析單元會改變圖像",
+      "content": "同一批資料按里、區或縣市彙整，呈現出的高低值可能不同。大單元的平均值會掩蓋內部差異，不能把縣市平均直接當成每個社區的情況。"
+    },
+    {
+      "id": "GEO_R4_L_S003_SEC04",
+      "title": "多尺度互相補充",
+      "content": "有些問題要先在大尺度找出區域型態，再到小尺度查原因。例如先比較全市淹水熱點，再選兩個街區檢查排水與地勢。結論必須說明適用尺度，避免不當推廣。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S003_EX01",
+      "prompt": "研究校門前行人過街安全，應用哪種尺度？",
+      "steps": [
+        "找出決策對象是路口",
+        "確認需要車道與號誌細節",
+        "選擇街區或路口尺度"
+      ],
+      "answer": "路口或街區尺度。",
+      "why": "安全判斷需要斑馬線、轉彎車流與號誌位置；全市平均無法顯示這些細節。"
+    },
+    {
+      "id": "GEO_R4_L_S003_EX02",
+      "prompt": "比較臺灣各縣市高齡人口比例，應如何分區？",
+      "steps": [
+        "確認比較對象是縣市",
+        "使用同一年人口統計",
+        "保留縣市為分析單元"
+      ],
+      "answer": "全臺範圍、縣市單元。",
+      "why": "研究目的就是縣市差異；若只看全臺單一平均會失去分布，若細到每條街則超出問題所需。"
+    },
+    {
+      "id": "GEO_R4_L_S003_EX03",
+      "prompt": "全區平均綠地很多，能否推論每個里都容易到公園？",
+      "steps": [
+        "辨認平均值的分區尺度",
+        "檢查區內是否可能不均",
+        "要求里級分布與步行距離"
+      ],
+      "answer": "不能。",
+      "why": "區級總量可能集中在少數里；居民可達性要在更小尺度比較公園位置與人口。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "研究範圍愈大，結論一定愈準確。",
+      "whyWrong": "大範圍常把重要的地方差異平均掉。",
+      "correction": "依問題所需細節選尺度，不以大小判優劣。"
+    },
+    {
+      "belief": "行政區平均值代表區內每個地點。",
+      "whyWrong": "同一行政區內仍可能有明顯差異。",
+      "correction": "必要時查看更小分析單元或原始位置。"
+    },
+    {
+      "belief": "同一資料換分區後，結論應完全相同。",
+      "whyWrong": "彙整邊界與單元大小會改變比例和群聚外觀。",
+      "correction": "比較時固定空間單元並說明尺度限制。"
+    },
+    {
+      "belief": "只能選一種尺度完成整個探究。",
+      "whyWrong": "跨尺度能同時掌握區域型態與地方機制。",
+      "correction": "先大範圍篩選，再小範圍查證。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "尋找校園積水點應優先使用哪種尺度？",
+      "answer": "校園內的局部尺度。",
+      "reason": "需要看排水口、坡向與鋪面等細節。"
+    },
+    {
+      "prompt": "縣市平均薪資能代表每位居民嗎？",
+      "answer": "不能。",
+      "reason": "平均值隱藏縣市內職業與地區差異。"
+    },
+    {
+      "prompt": "研究國際航運網路為何不宜只看一座港區？",
+      "answer": "網路跨越多國與多港，地方尺度會漏掉連結。",
+      "reason": "系統範圍必須涵蓋主要節點與路線。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

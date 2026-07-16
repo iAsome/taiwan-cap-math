@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST036",
+  "stem": "要計算各行政區內避難所數量，最直接套疊哪些幾何？",
+  "options": [
+    "只用避難所容量文字",
+    "避難所點與行政區面",
+    "道路線與河川線",
+    "只用行政區中心點"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "容量文字缺空間歸屬。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "點落在哪個面內即可分區計數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩組線無法直接回答避難所數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "中心點不能表示完整行政區包含範圍。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "點面套疊"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "行政區中心點可取代邊界"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "點在面內是典型空間包含分析，前提是位置精度與邊界有效。 正確選項「避難所點與行政區面」可由題幹推出，因為點落在哪個面內即可分區計數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若避難所恰在邊界上，還需明確的歸屬規則。 逐項排除其他選項：「只用避難所容量文字」容量文字缺空間歸屬。 這項內容無法支持題幹所要求的地理判斷。；「道路線與河川線」兩組線無法直接回答避難所數。；「只用行政區中心點」中心點不能表示完整行政區包含範圍。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S019_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S019"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "要尋找社區內每一處消防栓，最適合優先使用哪一類地圖？",
+  "options": [
+    "更新且標示設施的社區大比例尺圖",
+    "只畫國界的世界圖",
+    "跨洲航線圖",
+    "沒有圖例的舊縣市圖"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "範圍與設施細節都符合任務，且強調更新。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "世界圖不會呈現社區設施。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "航線主題與消防栓無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "舊圖且無圖例，點位可信度不足。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "社區選圖"
+  ],
+  "representationType": "map-choice",
+  "misconceptionTargets": [
+    "只看範圍不看主題"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "選圖要同時命中空間範圍、主題與時效，只有選項一具備。 正確選項「更新且標示設施的社區大比例尺圖」可由題幹推出，因為範圍與設施細節都符合任務，且強調更新。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "大比例尺不是唯一理由；若沒有消防栓圖層或已過期，仍不適用。 逐項排除其他選項：「只畫國界的世界圖」世界圖不會呈現社區設施。；「跨洲航線圖」航線主題與消防栓無關。；「沒有圖例的舊縣市圖」舊圖且無圖例，點位可信度不足。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

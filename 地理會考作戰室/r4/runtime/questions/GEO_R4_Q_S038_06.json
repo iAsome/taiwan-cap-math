@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S038_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "假色合成影像把健康植被顯示成紅色，這是否表示植被真的變紅？",
+  "options": [
+    "不表示，因影像沒有任何資訊",
+    "不表示，顏色由波段指定方式決定",
+    "表示，衛星改變植物",
+    "表示，所有紅色都是火災"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "影像仍含光譜資訊。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "假色把不可見或其他波段映到顯示色。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "衛星觀測不會使植物變色。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紅色語意由圖例決定。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "假色影像"
+  ],
+  "representationType": "false-color",
+  "misconceptionTargets": [
+    "顯示色等於現地顏色"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "讀遙測圖先查波段組合與圖例，不能套用自然色常識。 正確選項「不表示，顏色由波段指定方式決定」可由題幹推出，因為假色把不可見或其他波段映到顯示色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "假色常用來增強不同覆蓋的對比，但仍需驗證分類。 逐項排除其他選項：「不表示，因影像沒有任何資訊」影像仍含光譜資訊。 這項內容無法支持題幹所要求的地理判斷。；「表示，衛星改變植物」衛星觀測不會使植物變色。；「表示，所有紅色都是火災」紅色語意由圖例決定。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

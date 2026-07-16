@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S042_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一公里人口網格適合直接定位哪一棟房屋人口嗎？",
+  "options": [
+    "不適合，因人口不能地圖化",
+    "不適合，解析度太粗",
+    "適合，每格就是一棟",
+    "適合，放大即可"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人口可地圖化但受尺度限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一格涵蓋大片範圍，不能定位單棟。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "格內可能有許多建物。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "放大不新增位置。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "解析度限制"
+  ],
+  "representationType": "population-grid",
+  "misconceptionTargets": [
+    "網格平均可指定每戶"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "網格可支援區域需求概況，不能下推個別住戶。 正確選項「不適合，解析度太粗」可由題幹推出，因為一格涵蓋大片範圍，不能定位單棟。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "細部服務分析需更細且符合隱私規範的資料。 逐項排除其他選項：「不適合，因人口不能地圖化」人口可地圖化但受尺度限制。；「適合，每格就是一棟」格內可能有許多建物。 這項內容無法支持題幹所要求的地理判斷。；「適合，放大即可」放大不新增位置。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

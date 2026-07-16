@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "山路平面圖量得沿線十公里，起終點高差很大。下列回報何者最嚴謹？",
+  "options": [
+    "車輪必定正好走十公里",
+    "高差會使實際路面必短於十公里",
+    "比例尺可以直接給行車時間",
+    "圖面水平投影路線約十公里，實際路面長仍受坡度影響"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "圖面概化與坡度使正好十公里過度精確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "有高差的三維線不會因此必短。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "時間還需速度、路況與停留資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "說明圖面結果及未納入的三維坡度，符合證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "三維限制"
+  ],
+  "representationType": "mountain-road",
+  "misconceptionTargets": [
+    "平面曲線等於三維路面"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "平面量測支援的是投影曲線長，不能跳成精確里程或時間。 正確選項「圖面水平投影路線約十公里，實際路面長仍受坡度影響」可由題幹推出，因為說明圖面結果及未納入的三維坡度，符合證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若有逐段坡度與水平距離，可再估三維長度；本題沒有這些資料。 逐項排除其他選項：「車輪必定正好走十公里」圖面概化與坡度使正好十公里過度精確。；「高差會使實際路面必短於十公里」有高差的三維線不會因此必短。；「比例尺可以直接給行車時間」時間還需速度、路況與停留資料。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

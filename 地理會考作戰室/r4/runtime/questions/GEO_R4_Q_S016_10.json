@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S016_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "比例尺標示被裁掉，只知道原稿一比六萬，現圖等比例放大一點五倍。現圖上四公分代表多少公里？",
+  "options": [
+    "六公里",
+    "一點六公里",
+    "二點四公里",
+    "三點六公里"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "六公里把比例尺後項數字誤當距離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "放大一點五倍後後項為六萬除一點五等於四萬，四公分對一點六公里。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二點四公里是未修正放大倍數而沿用六萬。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三點六公里沒有依比例修正。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "縮放換算"
+  ],
+  "representationType": "resized-map",
+  "misconceptionTargets": [
+    "縮放後沿用原後項"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先更新現圖比例尺為一比四萬，再算四乘四萬公分。 正確選項「一點六公里」可由題幹推出，因為放大一點五倍後後項為六萬除一點五等於四萬，四公分對一點六公里。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "也可把現圖四公分除一點五還原原稿圖距，再乘六萬，結果相同。 逐項排除其他選項：「六公里」六公里把比例尺後項數字誤當距離。；「二點四公里」二點四公里是未修正放大倍數而沿用六萬。；「三點六公里」三點六公里沒有依比例修正。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

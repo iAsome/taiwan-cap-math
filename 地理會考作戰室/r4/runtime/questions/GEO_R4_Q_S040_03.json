@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S040_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "影像圖例把白色標為雲，雲下地表應如何記錄？",
+  "options": [
+    "永久積雪",
+    "一定是建成區",
+    "未知或被遮蔽",
+    "沒有變化"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "白色已由圖例定義為雲。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "也不能任意指定覆蓋。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "雲阻擋光學影像對地表的觀測。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未觀測不能判未變。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "雲遮缺值"
+  ],
+  "representationType": "cloud-mask",
+  "misconceptionTargets": [
+    "缺觀測等於未變"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "未知必須和未變、無資料及真實類別分開編碼。 正確選項「未知或被遮蔽」可由題幹推出，因為雲阻擋光學影像對地表的觀測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可尋找較少雲的日期或使用適合的雷達資料補充。 逐項排除其他選項：「永久積雪」白色已由圖例定義為雲。；「一定是建成區」也不能任意指定覆蓋。 這項內容無法支持題幹所要求的地理判斷。；「沒有變化」未觀測不能判未變。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

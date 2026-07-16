@@ -1,0 +1,148 @@
+{
+  "id": "GEO_R4_L_S104",
+  "subject": "geography",
+  "unitId": "GEO_R4_U15",
+  "skillId": "GEO_R4_S104",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-2",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-BB-4-1",
+    "AUTH-SOCIAL-LC-GEO-BB-4-2",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-2",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-2",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S103"
+  ],
+  "objectives": [
+    "能由供應商層級、來源占比、替代性、庫存、前置時間與恢復時間判斷供應鏈依賴及瓶頸。",
+    "能追蹤災害、港口、能源或政策中斷的連鎖影響，評估多元來源、庫存、替代設計與資訊共享的韌性取捨。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S104_SEC01",
+      "title": "依賴不只看直接供應商數量",
+      "content": "企業可能向三家一級供應商採購，三家卻都依賴同一二級晶片廠，實際仍有單點風險。供應鏈圖需穿透多層來源、共用港口、能源與原料，名義多元不等於實質多元。"
+    },
+    {
+      "id": "GEO_R4_L_S104_SEC02",
+      "title": "關鍵度由占比、替代與時間共同決定",
+      "content": "單一零件用量小也可能讓整機停產；來源占比高、替代認證慢、庫存少、前置期長與恢復時間久，都提高脆弱度。低價值螺絲若易替代，風險可能低於高專用晶片。"
+    },
+    {
+      "id": "GEO_R4_L_S104_SEC03",
+      "title": "中斷會沿網絡延遲與放大",
+      "content": "上游停產先消耗下游庫存，之後組裝與交貨才受影響；恐慌重複下單可能造成需求資訊放大，稱長鞭效應。判讀時間序列要區分實際消費、訂單、庫存與出貨。"
+    },
+    {
+      "id": "GEO_R4_L_S104_SEC04",
+      "title": "韌性方案都有成本與適用條件",
+      "content": "多源採購、異地備援、標準化替代、安全庫存、近岸生產與共同資訊可降低中斷，但會增加認證、持有與協調成本。依零件關鍵度配置，不必為所有低風險物料建立昂貴雙重產能。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S104_EX01",
+      "prompt": "三家供應商都用同一座晶圓廠，算分散嗎？",
+      "steps": [
+        "追蹤二級來源",
+        "找共同節點",
+        "重算實質占比"
+      ],
+      "answer": "不算充分分散。",
+      "why": "直接供應商名稱不同仍共享上游風險。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S104_EX02",
+      "prompt": "庫存可用十日、替代需四十日，中斷會如何？",
+      "steps": [
+        "比較庫存覆蓋",
+        "比較替代前置",
+        "算缺口三十日"
+      ],
+      "answer": "若無其他來源，可能出現三十日供應缺口。",
+      "why": "需求下降或緊急運輸會改變實際天數。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S104_EX03",
+      "prompt": "訂單暴增但消費只小增，可能是什麼？",
+      "steps": [
+        "分開訂單與銷售",
+        "檢查重複下單",
+        "追蹤庫存"
+      ],
+      "answer": "可能出現長鞭效應。",
+      "why": "不能把訂單全當最終需求。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "直接供應商多就一定分散。",
+      "whyWrong": "可能共享同一上游節點。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "穿透多層供應。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "零件價格低就不關鍵。",
+      "whyWrong": "缺少小零件也可停線。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "看替代與停產影響。"
+    },
+    {
+      "belief": "庫存越多永遠越好。",
+      "whyWrong": "有資金、過期與倉儲成本。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "按風險設覆蓋天數。"
+    },
+    {
+      "belief": "訂單量等於消費需求。",
+      "whyWrong": "恐慌與重複下單會放大。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "比對實際銷售。 應依題幹條件與資料證據逐項核對後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "多家一級供應商足夠嗎？",
+      "answer": "不一定。",
+      "reason": "需看共同上游。"
+    },
+    {
+      "prompt": "關鍵零件看什麼？",
+      "answer": "占比、替代、庫存與恢復。",
+      "reason": "不只價格。"
+    },
+    {
+      "prompt": "長鞭效應是什麼？",
+      "answer": "上游訂單波動大於最終需求。",
+      "reason": "資訊放大。"
+    },
+    {
+      "prompt": "庫存可無限加嗎？",
+      "answer": "不宜。",
+      "reason": "有持有損耗成本。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-2",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-BB-4-1",
+      "AUTH-SOCIAL-LC-GEO-BB-4-2",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-2",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-2",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2"
+    ]
+  }
+}

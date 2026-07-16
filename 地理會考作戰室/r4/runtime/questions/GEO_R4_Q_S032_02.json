@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S032_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "以消防站為中心畫出 20 公里服務範圍，最重要的是哪項地圖性質？",
+  "options": [
+    "各區面積相等",
+    "由消防站量出的距離正確",
+    "世界各洲輪廓相似",
+    "高緯地區不變形"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "服務範圍由固定半徑決定，不是比較區域面積。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "從消防站到周圍的距離直接決定 20 公里邊界。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "全球洲界與地方服務圈無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任務是局部範圍，不需先處理全球高緯。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "概念應用"
+  ],
+  "representationType": "scenario",
+  "misconceptionTargets": [
+    "把等積與等距混用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "將服務圈轉成中心半徑問題，可唯一選出第二項。 正確選項「由消防站量出的距離正確」可由題幹推出，因為從消防站到周圍的距離直接決定 20 公里邊界。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘性質都不直接決定消防站 20 公里可及範圍。 逐項排除其他選項：「各區面積相等」服務範圍由固定半徑決定，不是比較區域面積。；「世界各洲輪廓相似」全球洲界與地方服務圈無關。；「高緯地區不變形」任務是局部範圍，不需先處理全球高緯。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

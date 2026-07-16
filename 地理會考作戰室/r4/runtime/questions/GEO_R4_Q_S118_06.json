@@ -1,0 +1,90 @@
+{
+  "id": "GEO_R4_Q_S118_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-2",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲方案建設費低但每年維修高，乙建設費較高但維修低。應如何比較？",
+  "options": [
+    "忽略服務年限",
+    "以相同期間估算總生命週期成本與效益",
+    "只看第一年工程費",
+    "只選名稱較短者"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "使用年限會影響總價值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "折算相同年限才能比較不同成本時間分布。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只看初期會偏袒甲。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "名稱無成本效益意義。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "comparison"
+  ],
+  "representationType": "cost-stream",
+  "misconceptionTargets": [
+    "初期成本等於總成本"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-2",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正確選項「以相同期間估算總生命週期成本與效益」可由題幹推出，因為折算相同年限才能比較不同成本時間分布。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "將營運、維修和成果放入同一期間。 逐項排除其他選項：「忽略服務年限」使用年限會影響總價值。；「只看第一年工程費」只看初期會偏袒甲。 這項內容無法支持題幹所要求的地理判斷。；「只選名稱較短者」名稱無成本效益意義。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

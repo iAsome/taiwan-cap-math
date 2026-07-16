@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S015_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一張古地圖沒有比例尺，只有一條道路旁寫『全程十公里』。這項資料能否直接當作全圖比例尺？",
+  "options": [
+    "能，任何距離標註都等於比例尺",
+    "不能，還要確認圖面是否依固定比例繪製及道路圖長",
+    "能，十公里等於一比十",
+    "不能，因公里不能表示距離"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一路段標註不保證全圖採一致縮放。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "固定比例與可量圖長都是建立比例關係的必要證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一比十須同單位，不能由十公里直接得到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "公里當然能表示實際距離，問題在缺比例證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據限制"
+  ],
+  "representationType": "historic-map",
+  "misconceptionTargets": [
+    "把單一路程當全圖比例尺"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "比例尺要求地圖各處的圖距與實距維持可用關係，示意圖未必如此。 正確選項「不能，還要確認圖面是否依固定比例繪製及道路圖長」可由題幹推出，因為固定比例與可量圖長都是建立比例關係的必要證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案二指出信任邊界，避免把路線文字當成全圖可量測的保證。 逐項排除其他選項：「能，任何距離標註都等於比例尺」單一路段標註不保證全圖採一致縮放。；「能，十公里等於一比十」一比十須同單位，不能由十公里直接得到。；「不能，因公里不能表示距離」公里當然能表示實際距離，問題在缺比例證據。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

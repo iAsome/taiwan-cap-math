@@ -1,0 +1,94 @@
+{
+  "id": "GEO_R4_ST104",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S104"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-2",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-BB-4-1",
+    "AUTH-SOCIAL-LC-GEO-BB-4-2",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-2",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-2",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2"
+  ],
+  "content": {
+    "title": "四項零件供應風險",
+    "prompt": "覆蓋為現有庫存可用天數；恢復為主要來源中斷後估計天數。",
+    "table": {
+      "columns": [
+        "零件",
+        "最大來源占比",
+        "庫存覆蓋",
+        "恢復時間",
+        "已認證替代"
+      ],
+      "rows": [
+        [
+          "甲",
+          "90%",
+          "8日",
+          "60日",
+          "無"
+        ],
+        [
+          "乙",
+          "55%",
+          "25日",
+          "20日",
+          "2家"
+        ],
+        [
+          "丙",
+          "80%",
+          "45日",
+          "35日",
+          "1家"
+        ],
+        [
+          "丁",
+          "35%",
+          "6日",
+          "10日",
+          "3家"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "比較四零件來源集中、庫存、恢復與替代認證。",
+    "longDescription": "甲最大來源九成、庫存八日、恢復六十日、無替代；乙五成五、二十五日、二十日、兩家替代；丙八成、四十五日、三十五日、一家；丁三成五、六日、十日、三家。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S104_ST01",
+    "GEO_R4_Q_S104_ST02",
+    "GEO_R4_Q_S104_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-2",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-BB-4-1",
+      "AUTH-SOCIAL-LC-GEO-BB-4-2",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-2",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-2",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2"
+    ]
+  }
+}

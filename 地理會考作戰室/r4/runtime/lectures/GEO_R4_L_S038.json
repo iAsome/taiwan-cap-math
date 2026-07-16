@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S038",
+  "subject": "geography",
+  "unitId": "GEO_R4_U06",
+  "skillId": "GEO_R4_S038",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S037"
+  ],
+  "objectives": [
+    "能綜合影像的色調、紋理、形狀、排列與鄰接情境，辨識主要土地覆蓋差異。",
+    "能區分土地覆蓋與土地利用，說明雲影、季節、解析度及分類驗證的限制。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S038_SEC01",
+      "title": "土地覆蓋是地表看得到的材質",
+      "content": "土地覆蓋描述水體、植被、裸露土壤或建成表面等地表物質；土地利用則是農業、住宅、工業或保育等人類用途。同一片草地可能是公園、牧場或機場綠地，只靠衛星外觀較容易判覆蓋，未必能判精確用途。"
+    },
+    {
+      "id": "GEO_R4_L_S038_SEC02",
+      "title": "判讀要合併多種影像線索",
+      "content": "水體常呈平滑、低反射且順地形延伸，建成區常有規則街廓、直線邊界與粗糙紋理，農地可能呈重複矩形田塊，森林則有連續不規則冠層紋理。實際色彩受波段組合、日照與大氣影響，不能把藍、綠或紅等單一顏色當永久答案。"
+    },
+    {
+      "id": "GEO_R4_L_S038_SEC03",
+      "title": "情境能縮小但不能取代證據",
+      "content": "規則長條靠近跑道可能是建物，曲流旁平滑區可能是水面，山坡上不規則亮斑可能是裸地或崩塌。形狀與鄰接關係能協助判讀，但雲影也可能像水、收割後農田也可能像裸地，需用多時相影像、地形或現地資料交叉驗證。"
+    },
+    {
+      "id": "GEO_R4_L_S038_SEC04",
+      "title": "解析度與混合像元",
+      "content": "像元越大，每格越可能混合屋頂、道路、樹木與水面，細小地物會被平均；放大畫面不會產生新的空間細節。分類結果應有訓練或驗證樣本、拍攝日期、波段與準確度說明，不能把模型每一個像元標籤都當成毫無誤差的現況。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S038_EX01",
+      "prompt": "影像上一片區域有規則矩形分隔、季節間亮暗反覆改變，且有灌溉渠道，最可能何種覆蓋？",
+      "steps": [
+        "規則田塊形狀",
+        "季節性耕作變化",
+        "灌溉情境"
+      ],
+      "answer": "最可能是農地覆蓋。",
+      "why": "三項線索共同支持，但若需判種植作物種類，還要有物候、光譜或農業資料。"
+    },
+    {
+      "id": "GEO_R4_L_S038_EX02",
+      "prompt": "山區平滑暗斑與雲的投影方向一致，能直接判水庫嗎？",
+      "steps": [
+        "暗和平滑可像水",
+        "位置與雲影方向也支持陰影",
+        "查看另一日期或地形水系"
+      ],
+      "answer": "不能，應先排除雲影。",
+      "why": "單一影像色調有多重解釋，多時相影像可看暗斑是否隨雲移動。"
+    },
+    {
+      "id": "GEO_R4_L_S038_EX03",
+      "prompt": "三十公尺像元顯示某格為建成區，能說格內完全沒有樹嗎？",
+      "steps": [
+        "像元涵蓋九百平方公尺",
+        "可能混合屋頂道路與植被",
+        "分類只給主要或模型判定類別"
+      ],
+      "answer": "不能，該格可能是混合像元。",
+      "why": "分類標籤不是每一平方公尺的逐點真相；需要更高解析度或現地資料判細部。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "衛星影像中綠色一定是森林。",
+      "whyWrong": "顏色取決於波段與顯示方式，也可能是農地或假色合成。",
+      "correction": "讀影像圖例、波段並看紋理情境。"
+    },
+    {
+      "belief": "暗色平滑區一定是水體。",
+      "whyWrong": "雲影、山影或深色屋頂也可能暗，需形狀與時相驗證。",
+      "correction": "結合水系地形與另一日期影像。"
+    },
+    {
+      "belief": "看見植被就能判定是公園。",
+      "whyWrong": "植被是覆蓋，公園是用途，森林農地也有植被。",
+      "correction": "用地籍、設施與土地使用圖確認。"
+    },
+    {
+      "belief": "把低解析影像放大就能看清每棟房屋。",
+      "whyWrong": "放大只增大像元，不會補回未拍到的空間細節。",
+      "correction": "取得較高解析度且合法的資料。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "土地覆蓋與土地利用有何差別？",
+      "answer": "前者描述地表材質，後者描述人類用途。",
+      "reason": "植被覆蓋可對應多種利用。"
+    },
+    {
+      "prompt": "規則矩形田塊常提示什麼？",
+      "answer": "農地。",
+      "reason": "還需季節與灌溉等線索驗證。"
+    },
+    {
+      "prompt": "暗斑為何不能直接判水？",
+      "answer": "可能是雲影或地形陰影。",
+      "reason": "需多線索與多時相交叉驗證。"
+    },
+    {
+      "prompt": "混合像元表示什麼？",
+      "answer": "一個像元內含多種地表覆蓋。",
+      "reason": "分類標籤不代表格內完全單一。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

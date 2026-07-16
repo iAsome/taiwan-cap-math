@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S056_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S056"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "報導只挑最熱的一年，忽略前後多年波動，主要問題為何？",
+  "options": [
+    "趨勢只需一點",
+    "選擇性取樣，不能代表完整趨勢",
+    "年份越熱越能代表所有年份",
+    "只要數值真實就沒有問題"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "趨勢至少需時間序列。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "挑選支持主張的單點會扭曲整體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "極端年不等於典型年。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "真實單點仍可能被錯用。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "選樣偏誤"
+  ],
+  "representationType": "cherry-picking",
+  "misconceptionTargets": [
+    "真實單點一定代表趨勢"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "應展示選期規則與完整相關序列。 正確選項「選擇性取樣，不能代表完整趨勢」可由題幹推出，因為挑選支持主張的單點會扭曲整體。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若討論極端事件，也要明確把問題限定為極端。 逐項排除其他選項：「趨勢只需一點」趨勢至少需時間序列。 這項內容無法支持題幹所要求的地理判斷。；「年份越熱越能代表所有年份」極端年不等於典型年。 這項內容無法支持題幹所要求的地理判斷。；「只要數值真實就沒有問題」真實單點仍可能被錯用。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

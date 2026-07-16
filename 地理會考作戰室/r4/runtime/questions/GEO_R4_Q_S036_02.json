@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要分析道路交會與最短路徑，道路最適合先表示為何？",
+  "options": [
+    "照片顏色",
+    "線",
+    "點",
+    "面積統計表"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不能取代網路拓撲。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "線可記錄路段、節點與連通。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "點只能表示路口或設施，不能完整表達路段。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "統計表缺路網幾何。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "線資料"
+  ],
+  "representationType": "network",
+  "misconceptionTargets": [
+    "道路只需路口點"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "最短路徑需要可連接的邊與節點，線資料正好支援。 正確選項「線」可由題幹推出，因為線可記錄路段、節點與連通。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "路口可另為點圖層，但不能單獨取代道路線。 逐項排除其他選項：「照片顏色」顏色不能取代網路拓撲。；「點」點只能表示路口或設施，不能完整表達路段。；「面積統計表」統計表缺路網幾何。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S023_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST023",
+  "stem": "若要安排坡度較緩的步行訓練路線，依表只能先選乙或丙。還需查什麼？",
+  "options": [
+    "只查路名長短",
+    "認為平均坡度相同就所有條件相同",
+    "刪除等高線資料",
+    "道路是否連續可通行、局部最大坡度、路面與距離"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "路名不提供通行證據。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙丙的長度與局部變化可能不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "等高線仍提供有用初篩資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "平均坡度不足以代表急坡、路況與可達性。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "決策限制"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "平均坡度相同等於路線相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "地形表可縮小候選範圍，但實際路線選擇還需道路層級與現場條件。 正確選項「道路是否連續可通行、局部最大坡度、路面與距離」可由題幹推出，因為平均坡度不足以代表急坡、路況與可達性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案一保留平均坡度的用途，也清楚指出不能由它過度推論。 逐項排除其他選項：「只查路名長短」路名不提供通行證據。 這項內容無法支持題幹所要求的地理判斷。；「認為平均坡度相同就所有條件相同」乙丙的長度與局部變化可能不同。；「刪除等高線資料」等高線仍提供有用初篩資訊。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

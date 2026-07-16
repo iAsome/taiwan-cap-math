@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S039_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "監測海岸後退時，哪個流程最可靠？",
+  "options": [
+    "只看浪花最遠處",
+    "把像元放大後報厘米精度",
+    "用相近潮位與季節影像配準海岸線，附位置誤差與多期趨勢",
+    "任選兩張不同潮位照片"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "瞬時浪花不是穩定海岸指標。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "像元解析度不支持厘米。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "控制潮位時點並量化誤差可比較真正趨勢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "潮位差會製造岸線移動。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "海岸監測"
+  ],
+  "representationType": "shoreline-change",
+  "misconceptionTargets": [
+    "任意兩期岸線即可判趨勢"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "海岸是動態邊界，兩期差異需超過定位與判線誤差才可解讀。 正確選項「用相近潮位與季節影像配準海岸線，附位置誤差與多期趨勢」可由題幹推出，因為控制潮位時點並量化誤差可比較真正趨勢。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "多期資料可區分短期擺動與長期後退。 逐項排除其他選項：「只看浪花最遠處」瞬時浪花不是穩定海岸指標。；「把像元放大後報厘米精度」像元解析度不支持厘米。；「任選兩張不同潮位照片」潮位差會製造岸線移動。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

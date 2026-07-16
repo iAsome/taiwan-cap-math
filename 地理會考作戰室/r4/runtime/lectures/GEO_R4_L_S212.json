@@ -1,0 +1,146 @@
+{
+  "id": "GEO_R4_L_S212",
+  "subject": "geography",
+  "unitId": "GEO_R4_U32",
+  "skillId": "GEO_R4_S212",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BC-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S211"
+  ],
+  "objectives": [
+    "由多層供應鏈理解區域分工與相互依賴",
+    "用集中、替代、庫存與恢復時間辨識供應瓶頸"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S212_SEC01",
+      "title": "產品由多地共同完成",
+      "content": "現代商品常由上游原料、中游材料零件、下游組裝、物流、設計與售後服務共同完成。不同環節依礦產、能源、人才、工資、市場、供應商和制度配置於不同區域。最後組裝地不必創造最多價值，出口標籤也不能呈現所有投入來源；應畫出多層供應商和服務連結。"
+    },
+    {
+      "id": "GEO_R4_L_S212_SEC02",
+      "title": "相互依賴既有效率也有風險",
+      "content": "區域專業化可利用規模、技術和比較優勢降低成本，供應地也依賴外部市場、設備與資金。當某關鍵投入高度集中、缺乏替代且恢復時間長，下游再多工廠也無法生產。依賴不是單向弱點，買方和賣方可能互相需要，但議價能力會因替代選項不同而不對稱。"
+    },
+    {
+      "id": "GEO_R4_L_S212_SEC03",
+      "title": "低庫存會放大時間敏感",
+      "content": "即時生產能降低倉儲、資金占用和過時風險，卻要求供貨準時。港口、邊境、工廠或資料系統中斷時，安全庫存天數若短於供應恢復時間，產線就可能停擺。庫存並非越多越好，需依關鍵度、保存成本、需求變動與替代交期設定。"
+    },
+    {
+      "id": "GEO_R4_L_S212_SEC04",
+      "title": "資訊誤差會沿鏈條放大",
+      "content": "消費端小幅需求變動，若各層看不到真實銷售、重複下單或以短期預測擴大採購，可能形成長鞭效應，使上游訂單與庫存劇烈波動。共享可驗證需求、縮短補貨、減少重複訂單和建立供應地圖能降低風險，但需保護商業機密、勞工與個人資料。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S212_EX01",
+      "prompt": "一種零件只占成本百分之一，為何缺貨仍使整機停產？",
+      "steps": [
+        "它不可替代且是完成產品的必要投入",
+        "成本低表示不重要",
+        "整機可缺零件出售"
+      ],
+      "answer": "它不可替代且是完成產品的必要投入",
+      "why": "瓶頸由功能必要性和替代性決定，不由價值占比單獨決定。"
+    },
+    {
+      "id": "GEO_R4_L_S212_EX02",
+      "prompt": "庫存五天、供應恢復二十天，代表什麼？",
+      "steps": [
+        "若無替代，五天後可能有十五天供應缺口",
+        "庫存足以永久生產",
+        "恢復時間與庫存無關"
+      ],
+      "answer": "若無替代，五天後可能有十五天供應缺口",
+      "why": "用庫存覆蓋天數與恢復時間相減即可辨識停線窗口。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S212_EX03",
+      "prompt": "零售需求只增一成，上游訂單卻增五成，可能因什麼？",
+      "steps": [
+        "重複下單、預測與資訊延遲造成長鞭效應",
+        "上游一定知道真實需求",
+        "需求資訊不會傳遞"
+      ],
+      "answer": "重複下單、預測與資訊延遲造成長鞭效應",
+      "why": "各層為自保加碼會讓小變動在上游放大。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "最後組裝國創造全部價值",
+      "whyWrong": "原料、零件、設計、物流和服務來自多地",
+      "correction": "使用附加價值和投入來源表"
+    },
+    {
+      "belief": "成本占比低的零件不重要",
+      "whyWrong": "不可替代的小零件仍能使整機停產",
+      "correction": "用關鍵度而非價格排序"
+    },
+    {
+      "belief": "庫存越少效率一定越高",
+      "whyWrong": "低庫存降低平時成本但提高中斷脆弱度",
+      "correction": "按恢復時間設定安全庫存"
+    },
+    {
+      "belief": "需求變動會如實傳到上游",
+      "whyWrong": "資訊延遲和重複下單可放大波動",
+      "correction": "共享實際銷售並清理重複訂單"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "供應鏈主要層次為何？",
+      "answer": "原料、材料零件、組裝、物流、設計銷售與服務",
+      "reason": "層次可跨國反覆"
+    },
+    {
+      "prompt": "關鍵瓶頸如何判斷？",
+      "answer": "必要性、集中度、替代時間、庫存和恢復時間",
+      "reason": "成本占比不足"
+    },
+    {
+      "prompt": "安全庫存如何設定？",
+      "answer": "依中斷機率、恢復時間、需求與保存成本",
+      "reason": "不是每項同天數"
+    },
+    {
+      "prompt": "長鞭效應如何降低？",
+      "answer": "共享需求、縮短補貨、避免重複下單與穩定規則",
+      "reason": "資訊品質很重要"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BC-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1"
+    ]
+  }
+}

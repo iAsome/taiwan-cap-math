@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S015_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一張地圖標示『圖上二公分代表實際一公里』，下列哪個數字比例尺相同？",
+  "options": [
+    "一比五萬",
+    "一比十萬",
+    "一比五千",
+    "二比一"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "一公里為十萬公分，二比十萬約成一比五萬。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一比十萬會是一公分代表一公里。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一比五千是一公分代表五十公尺。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "二比一表示放大而不是地圖縮小。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "形式轉換"
+  ],
+  "representationType": "text-to-ratio",
+  "misconceptionTargets": [
+    "忘記把圖距約分"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先把一公里換成十萬公分，再把二比十萬的前後同除以二。 正確選項「一比五萬」可由題幹推出，因為一公里為十萬公分，二比十萬約成一比五萬。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "約分後是一比五萬，避免把原句的二公分直接忽略成一公分。 逐項排除其他選項：「一比十萬」一比十萬會是一公分代表一公里。；「一比五千」一比五千是一公分代表五十公尺。；「二比一」二比一表示放大而不是地圖縮小。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

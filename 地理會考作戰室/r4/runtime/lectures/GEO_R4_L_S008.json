@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S008",
+  "subject": "geography",
+  "unitId": "GEO_R4_U02",
+  "skillId": "GEO_R4_S008",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S007"
+  ],
+  "objectives": [
+    "能先指定參考點，再用東、西、南、北及中間方位描述另一地點。",
+    "能依北箭頭或方位標示判讀位置，不受紙面上、下、左、右誤導。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S008_SEC01",
+      "title": "相對位置一定有參考點",
+      "content": "方位句必須同時有參考點與目標點，例如「車站在學校東方」以學校為參考點。若交換兩地，關係要改成「學校在車站西方」。只說某地在東邊而沒有交代相對於哪裡，資訊並不完整。"
+    },
+    {
+      "id": "GEO_R4_L_S008_SEC02",
+      "title": "先找北方再判讀",
+      "content": "地圖紙面上方通常畫成北方，但不是必然規則；必須先讀北箭頭或經緯線。確定北方後，順時針依序是東、南、西；介於兩個基本方位間，可用東北、東南、西南、西北描述。"
+    },
+    {
+      "id": "GEO_R4_L_S008_SEC03",
+      "title": "方位不等於距離與路線",
+      "content": "「甲在乙的東北方」只說明從乙看向甲的大致方向，不能推出兩地很近、道路筆直或能直接通行。若題目問抵達方式，還要讀比例尺、道路、河流與障礙；若只問方位，則不必加入距離想像。"
+    },
+    {
+      "id": "GEO_R4_L_S008_SEC04",
+      "title": "穩定的解題程序",
+      "content": "第一步圈出題目中的參考點，第二步從參考點朝目標點畫出方向，第三步依北箭頭把方向換成方位詞，第四步反向檢查：若甲在乙東方，乙就應在甲西方。這個反向檢查能抓出把主詞與參考點顛倒的錯誤。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S008_EX01",
+      "prompt": "地圖上北方朝上，圖書館在操場右上方。如何描述圖書館相對於操場的位置？",
+      "steps": [
+        "以操場為參考點",
+        "右方是東、上方是北",
+        "合併成東北方"
+      ],
+      "answer": "圖書館在操場東北方。",
+      "why": "方向由操場指向圖書館，同時具有向東與向北的分量，所以使用東北方；不能只寫北方或東方。"
+    },
+    {
+      "id": "GEO_R4_L_S008_EX02",
+      "prompt": "北箭頭指向紙面右方，甲點在乙點的紙面上方。甲在乙的哪一方？",
+      "steps": [
+        "先把紙面右方定為北",
+        "紙面下方因此為南",
+        "紙面上方對應西"
+      ],
+      "answer": "甲在乙的西方。",
+      "why": "地圖已旋轉，不能沿用上北下南；以北箭頭重新建立四方後，紙面上方就是西。"
+    },
+    {
+      "id": "GEO_R4_L_S008_EX03",
+      "prompt": "河流東岸的聚落位於橋梁北側。若以聚落為參考，橋梁在哪一方？",
+      "steps": [
+        "原句以橋梁為參考，聚落在北",
+        "交換參考點與目標點",
+        "北的反向是南"
+      ],
+      "answer": "橋梁在聚落南方。",
+      "why": "交換兩地後方位必須取反；東西岸資訊描述河流位置，並不改變橋梁與聚落的南北關係。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "地圖紙面上方永遠是北方。",
+      "whyWrong": "地圖可以旋轉；北箭頭若指向其他方向，紙面上方就不是北。",
+      "correction": "先找北箭頭或經緯線，再建立方位。"
+    },
+    {
+      "belief": "甲在乙東方，所以乙也在甲東方。",
+      "whyWrong": "相對位置交換參考點後方向相反，東的反向是西。",
+      "correction": "用雙向句檢查主詞與參考點。"
+    },
+    {
+      "belief": "東北方表示一定比東方更遠。",
+      "whyWrong": "東北與東是方向分類，不包含距離大小。",
+      "correction": "距離要另讀比例尺或標示。"
+    },
+    {
+      "belief": "在某地右邊就一定叫東方。",
+      "whyWrong": "右邊只有在北方朝紙面上方時才對應東方。",
+      "correction": "任何地圖都先依北箭頭換算。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "北方朝上，醫院在公園左下方，醫院相對公園在哪一方？",
+      "answer": "西南方。",
+      "reason": "左是西、下是南，合併為西南。"
+    },
+    {
+      "prompt": "甲在乙北方，改以甲為參考時乙在哪一方？",
+      "answer": "南方。",
+      "reason": "交換參考點後取相反方向。"
+    },
+    {
+      "prompt": "一句話只寫「市場在東方」，缺少什麼？",
+      "answer": "缺少參考點。",
+      "reason": "相對方位必須說明市場相對於哪一地點。"
+    },
+    {
+      "prompt": "北箭頭指向左方，紙面上方對應哪一方？",
+      "answer": "東方。",
+      "reason": "北在左時，從北順時針九十度的東就在紙面上方。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S126_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "相同港口位置，某時期轉運量因主要航線改道而下降，說明什麼？",
+  "options": [
+    "地理位置已從地球消失",
+    "航線與港口功能無關",
+    "轉運量只由緯度決定",
+    "位置效應會隨運輸網絡改變"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "港口仍在原座標。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "班輪停靠正影響轉運。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "緯度不能單獨決定貨流。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "相對於實際網絡的位置可以改變。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "relational-reasoning"
+  ],
+  "representationType": "network-change",
+  "misconceptionTargets": [
+    "位置效果永遠固定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "絕對位置穩定，關係位置可變。 正確選項「位置效應會隨運輸網絡改變」可由題幹推出，因為相對於實際網絡的位置可以改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項排除其他選項：「地理位置已從地球消失」港口仍在原座標。 這項內容無法支持題幹所要求的地理判斷。；「航線與港口功能無關」班輪停靠正影響轉運。 這項內容無法支持題幹所要求的地理判斷。；「轉運量只由緯度決定」緯度不能單獨決定貨流。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

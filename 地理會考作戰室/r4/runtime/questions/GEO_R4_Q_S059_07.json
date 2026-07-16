@@ -1,0 +1,94 @@
+{
+  "id": "GEO_R4_Q_S059_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某山地兩站高度差800公尺，低站18°C。依0.6°C／100公尺估算，高站最接近哪一溫度？",
+  "options": [
+    "4.8°C",
+    "13.2°C",
+    "18.8°C",
+    "22.8°C"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "4.8°C是溫差，不是高站氣溫。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "800公尺約降4.8°C，18−4.8=13.2°C。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "18.8°C只增加0.8°C，倍率與方向皆錯。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "22.8°C把4.8°C加到低站溫度。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "多步計算"
+  ],
+  "representationType": "numeric-text",
+  "misconceptionTargets": [
+    "把溫差當實際溫度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先算溫差4.8，再由低往高扣除，得到13.2，選1。 正確選項「13.2°C」可由題幹推出，因為800公尺約降4.8°C，18−4.8=13.2°C。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "檢查所有數值來源，4.8是中間量，22.8是反向加法。 逐項排除其他選項：「4.8°C」4.8°C是溫差，不是高站氣溫。 這項內容無法支持題幹所要求的地理判斷。；「18.8°C」18.8°C只增加0.8°C，倍率與方向皆錯。；「22.8°C」22.8°C把4.8°C加到低站溫度。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

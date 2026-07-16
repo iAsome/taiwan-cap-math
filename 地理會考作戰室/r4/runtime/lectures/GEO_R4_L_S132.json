@@ -1,0 +1,142 @@
+{
+  "id": "GEO_R4_L_S132",
+  "subject": "geography",
+  "unitId": "GEO_R4_U19",
+  "skillId": "GEO_R4_S132",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S131"
+  ],
+  "objectives": [
+    "區分地震、坡地與淹水危害的空間條件",
+    "整合危害、暴露與脆弱度判斷多災害風險"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S132_SEC01",
+      "title": "危害不等於風險",
+      "content": "危害描述地震震動、崩塌或淹水發生的強度與機率；暴露是人、建物與設施位在危害區的程度；脆弱度是承受衝擊的能力。無人高危害區與人口密集高危害區，風險不同。"
+    },
+    {
+      "id": "GEO_R4_L_S132_SEC02",
+      "title": "地震風險空間",
+      "content": "活動斷層、震源距離、地盤放大與液化潛勢影響震動危害；老舊建物、密集人口、維生管線與救援可達性影響後果。離斷層遠也可能受到強震。"
+    },
+    {
+      "id": "GEO_R4_L_S132_SEC03",
+      "title": "坡地風險空間",
+      "content": "陡坡、破碎地質、崩積物、河谷出口與高累積雨量會增加崩塌或土石流危害；坡下聚落、道路和遊憩區形成暴露。歷史災點是線索，不表示未發生處必然安全。"
+    },
+    {
+      "id": "GEO_R4_L_S132_SEC04",
+      "title": "淹水與複合風險",
+      "content": "低窪地、河川氾濫區、排水不足、不透水面、地層下陷與沿海暴潮會造成不同淹水。多災害圖需統一尺度與時間情境，再與人口、弱勢群體和避難路線疊合。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S132_EX01",
+      "prompt": "無人山區崩塌機率高，都市低地淹水中等但人口密集，何者風險高？",
+      "steps": [
+        "危害強度不同",
+        "暴露人口差異大",
+        "不能只用危害排序"
+      ],
+      "answer": "需整合危害與暴露",
+      "why": "中等危害可因暴露高造成重大風險。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S132_EX02",
+      "prompt": "同震度兩社區災損差很多，查什麼？",
+      "steps": [
+        "控制地震危害相近",
+        "比較建物與地盤",
+        "檢查救援能力"
+      ],
+      "answer": "脆弱度與場址條件",
+      "why": "風險不是震度單一函數。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S132_EX03",
+      "prompt": "避難所本身不淹水，但道路會淹，是否可用？",
+      "steps": [
+        "檢查目的地安全",
+        "檢查路徑暴露",
+        "考慮洪水到達時間"
+      ],
+      "answer": "可達性可能失效",
+      "why": "安全節點若無安全路徑仍不能完成避難。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "危害高就必然災損最大",
+      "whyWrong": "暴露與脆弱度也會改變後果",
+      "correction": "用三項共同評估 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "斷層線外就沒有地震風險",
+      "whyWrong": "地震波會傳播且地盤可放大",
+      "correction": "查看震度與場址圖"
+    },
+    {
+      "belief": "沒有歷史崩塌就永久安全",
+      "whyWrong": "環境與土地使用會改變，紀錄也可能不完整",
+      "correction": "以地質、坡度和雨量評估"
+    },
+    {
+      "belief": "避難所安全即可",
+      "whyWrong": "進出道路與弱勢使用者也要可達",
+      "correction": "測試完整避難旅程"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "風險分析的三要素為何？",
+      "answer": "危害、暴露與脆弱度",
+      "reason": "三者共同決定可能損失。"
+    },
+    {
+      "prompt": "液化潛勢與什麼有關？",
+      "answer": "鬆散飽水地盤在震動下失去強度",
+      "reason": "它是場址條件，不等於必然液化。"
+    },
+    {
+      "prompt": "土石流高暴露區常在哪裡？",
+      "answer": "溪谷下游或扇狀堆積區有人居住處",
+      "reason": "流動材料會沿溝谷集中。"
+    },
+    {
+      "prompt": "淹水避難為何要看路線？",
+      "answer": "道路可能比避難所更早淹沒",
+      "reason": "可達性是避難功能的一部分。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

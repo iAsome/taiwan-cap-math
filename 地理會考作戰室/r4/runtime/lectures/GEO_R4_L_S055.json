@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S055",
+  "subject": "geography",
+  "unitId": "GEO_R4_U08",
+  "skillId": "GEO_R4_S055",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S054"
+  ],
+  "objectives": [
+    "能由十二個月氣溫與降水資料指出高低溫月、相對乾濕月及季節分配。",
+    "能說明乾濕判斷所用門檻，避免把最低雨月、零雨月與乾季混為一談。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S055_SEC01",
+      "title": "先找序列的高低值",
+      "content": "讀氣候表先分開處理氣溫與降水：在十二個月月均溫中找最高與最低，在月雨量中找最多與最少。高溫月不一定也是多雨月；若極值並列，需列出全部並列月份。"
+    },
+    {
+      "id": "GEO_R4_L_S055_SEC02",
+      "title": "乾濕月必須交代標準",
+      "content": "最少雨月只能稱相對最乾，是否屬乾月要看題目提供的門檻或氣候圖判讀規則。例如題目定義月雨量低於六十毫米為乾月，就逐月與六十比較；正好六十若寫低於便不算。"
+    },
+    {
+      "id": "GEO_R4_L_S055_SEC03",
+      "title": "雨季是連續分布而非單峰",
+      "content": "雨季通常指一段降水明顯集中的月份，不只最多雨的一個月。可觀察連續高值、各季合計或題目門檻；若一年有兩個分離雨峰，應如實描述雙峰，不能硬合成一段連續雨季。"
+    },
+    {
+      "id": "GEO_R4_L_S055_SEC04",
+      "title": "月份與季節需看半球",
+      "content": "同樣七月高溫，在北半球常對應夏季，在南半球常對應冬季以外的相反節律。僅由月份命名季節前，要確認地點半球；赤道附近年溫差小時，乾濕季可能比冷暖季更醒目。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S055_EX01",
+      "prompt": "月雨量一至六月為二十、三十、五十、八十、一百二十、一百五十毫米，門檻低於六十，哪些月為乾月？",
+      "steps": [
+        "標出門檻六十",
+        "逐月比較",
+        "保留嚴格低於"
+      ],
+      "answer": "一、二、三月為乾月。",
+      "why": "四月八十已超過門檻；若數值正好六十也不符合低於六十。"
+    },
+    {
+      "id": "GEO_R4_L_S055_EX02",
+      "prompt": "七月與八月同為二十九度，哪月最熱？",
+      "steps": [
+        "比較十二月全表",
+        "辨認並列最大值",
+        "列出兩個月份"
+      ],
+      "answer": "七月與八月並列最熱。",
+      "why": "並列不應任選一月，也不把兩個數值相加。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S055_EX03",
+      "prompt": "雨量在五月與十月各有高峰，中間七八月較低，如何描述？",
+      "steps": [
+        "依月份排列",
+        "辨認兩個分離高峰",
+        "不假設連續雨季"
+      ],
+      "answer": "全年呈雙峰降水分配。",
+      "why": "成因仍需位置、風帶或季風資料，單靠曲線只能描述型態。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "最少雨月就是全年完全無雨。",
+      "whyWrong": "相對最少仍可能有降水。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "報數值並說相對最乾。"
+    },
+    {
+      "belief": "雨季只有最多雨的一個月。",
+      "whyWrong": "雨季關注一段集中期。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "檢查相鄰月份與門檻。"
+    },
+    {
+      "belief": "正好六十毫米符合低於六十。",
+      "whyWrong": "低於不包含等於。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "先把比較符號寫成小於。"
+    },
+    {
+      "belief": "七月高溫一定表示北半球。",
+      "whyWrong": "緯度、海陸與資料型態都會影響，單一月份不足定位。",
+      "correction": "結合全年節律與地點證據。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "二月雨量最少但為三十五毫米，可說零雨嗎？",
+      "answer": "不可以。",
+      "reason": "只能說相對最少或最乾。"
+    },
+    {
+      "prompt": "門檻是低於五十，恰好五十算乾月嗎？",
+      "answer": "不算。",
+      "reason": "嚴格低於不含等於。"
+    },
+    {
+      "prompt": "兩個月同為最高溫要如何寫？",
+      "answer": "並列最熱月。",
+      "reason": "列出兩個月份。"
+    },
+    {
+      "prompt": "兩個分離雨峰可直接稱單一連續雨季嗎？",
+      "answer": "不宜。",
+      "reason": "先描述雙峰與中間低谷。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

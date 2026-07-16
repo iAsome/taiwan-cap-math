@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "颱風後要更新避難服務分析，最合理的流程為何？",
+  "options": [
+    "只更改地圖日期文字",
+    "刪除所有圖層",
+    "保留地形背景，更新道路中斷、人口避難位置與設施狀態後重算",
+    "沿用災前所有動態層"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改文字不會改內容。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "地形與未受影響資料仍有用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "穩定與動態資料分開更新，可反映災後現況。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "道路設施與人口位置可能已變。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "災後疊圖"
+  ],
+  "representationType": "emergency-overlay",
+  "misconceptionTargets": [
+    "災前圖層可永久沿用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "分析結果應帶時間戳並能追溯每層版本。 正確選項「保留地形背景，更新道路中斷、人口避難位置與設施狀態後重算」可由題幹推出，因為穩定與動態資料分開更新，可反映災後現況。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若即時資料未核實，標未知或關閉路段比默認可用安全。 逐項排除其他選項：「只更改地圖日期文字」改文字不會改內容。 這項內容無法支持題幹所要求的地理判斷。；「刪除所有圖層」地形與未受影響資料仍有用。；「沿用災前所有動態層」道路設施與人口位置可能已變。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

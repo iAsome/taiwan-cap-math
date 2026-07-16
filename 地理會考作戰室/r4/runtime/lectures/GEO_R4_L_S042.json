@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S042",
+  "subject": "geography",
+  "unitId": "GEO_R4_U06",
+  "skillId": "GEO_R4_S042",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S041"
+  ],
+  "objectives": [
+    "能辨認圖層在範圍、時效、解析度、屬性、定義與缺值上的不足，限定可回答問題。",
+    "能提出最小補充資料、驗證方法與不確定性表達，不把未知誤作零、未變或安全。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S042_SEC01",
+      "title": "先區分沒有資料與數值為零",
+      "content": "圖層空白可能代表地物不存在、尚未調查、被雲遮、超出範圍或資料權限不足，這些語意完全不同。若把未知填成零，平均值、風險圖和候選排序都會偏誤。資料表應用明確缺值代碼與說明，分析時依缺失機制決定排除、補測或區間估計。"
+    },
+    {
+      "id": "GEO_R4_L_S042_SEC02",
+      "title": "尺度與範圍限制結論",
+      "content": "一公里人口網格不能定位單棟住宅，三十公尺高程不能判一公尺坡道，只有市中心範圍的圖也不能外推整縣。輸出空間精度通常不應超過最粗的必要圖層；畫面放大與小數位增加都不會修復來源解析度。"
+    },
+    {
+      "id": "GEO_R4_L_S042_SEC03",
+      "title": "日期與定義必須相容",
+      "content": "人口可能是戶籍、常住或日間人口，道路資料可能表示幾何存在而非現況可通，洪水圖也可能是不同重現期情境。即使欄位名稱相同，定義或年份不同仍不能直接合併。應閱讀中繼資料並在報告中沿用正確名稱與時點。"
+    },
+    {
+      "id": "GEO_R4_L_S042_SEC04",
+      "title": "不足時縮小結論或補資料",
+      "content": "若只有坡度與人口，可做地形需求初篩，不能稱完整安全設址；若影像雲遮百分之六十，只能分析可見區。最小補充應針對會改變決策的缺口，並用現勘、權威圖層或獨立樣本驗證。無法補足時要明說未知與可能方向。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S042_EX01",
+      "prompt": "避難所表容量欄空白，能當容量零嗎？",
+      "steps": [
+        "空白未定義",
+        "可能尚未更新或不公開",
+        "查來源或標未知"
+      ],
+      "answer": "不能直接當零。",
+      "why": "零表示已知不能容納，未知表示尚無證據；兩者會造成完全不同的分配決策。"
+    },
+    {
+      "id": "GEO_R4_L_S042_EX02",
+      "prompt": "三十公尺坡度圖能否判輪椅坡道合規？",
+      "steps": [
+        "坡道遠小於像元",
+        "網格平均會抹平局部縱坡",
+        "需要工程圖或現地量測"
+      ],
+      "answer": "不能，只能提供周邊地形背景。",
+      "why": "放大畫面或內插更多像元不會得到實際坡道坡度。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S042_EX03",
+      "prompt": "只有今年人口與十年前道路，能否報今年通勤時間？",
+      "steps": [
+        "需求時點與交通時點不一致",
+        "道路可能新建封閉",
+        "更新路網或標歷史情境"
+      ],
+      "answer": "不能無限制地稱為今年現況。",
+      "why": "演算法的時間標籤不能比輸入更現代；若只能使用舊路網，應清楚揭露。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "空白欄位一律等於零。",
+      "whyWrong": "空白可能是未知、未調查或不適用。",
+      "correction": "定義缺值代碼並查來源。"
+    },
+    {
+      "belief": "把低解析圖放大就能回答細部問題。",
+      "whyWrong": "顯示放大不新增原始觀測。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "取得符合任務尺度的資料。"
+    },
+    {
+      "belief": "欄位名稱相同就可直接合併。",
+      "whyWrong": "年份、單位、統計對象和方法可能不同。",
+      "correction": "比較資料字典與中繼資料。"
+    },
+    {
+      "belief": "資料不足時仍應給唯一最佳答案。",
+      "whyWrong": "強行排序會隱藏關鍵未知並可能誤導。",
+      "correction": "縮小結論或保留多個候選。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "未知值能否直接填零？",
+      "answer": "不能。",
+      "reason": "零與缺資料的語意不同。"
+    },
+    {
+      "prompt": "輸出精度由哪個圖層限制？",
+      "answer": "最粗且必要的資料。",
+      "reason": "細圖不能補回另一層缺失細節。"
+    },
+    {
+      "prompt": "同名人口欄可直接合併嗎？",
+      "answer": "先查定義與年份。",
+      "reason": "戶籍、常住與日間人口不同。"
+    },
+    {
+      "prompt": "缺災害層時可稱完整設址嗎？",
+      "answer": "不可以。",
+      "reason": "只能標為不含災害的初篩。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

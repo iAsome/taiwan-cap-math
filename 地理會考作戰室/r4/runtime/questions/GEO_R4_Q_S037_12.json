@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "讓非視覺使用者查核疊圖結果，最有效的替代為何？",
+  "options": [
+    "只提供合成熱度顏色",
+    "只說系統已算好",
+    "隱藏未通過條件",
+    "列每候選區各條件原始值、是否通過、來源日期與最終規則"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色無法獨立讀取門檻。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "黑箱結論不能查核。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "隱藏會失去決策透明度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "結構化資料可重現交集與取捨。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "疊圖透明度"
+  ],
+  "representationType": "accessible-overlay",
+  "misconceptionTargets": [
+    "合成顏色可取代原始條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "表格應保留地形、人口、交通各欄，而非只列總分。 正確選項「列每候選區各條件原始值、是否通過、來源日期與最終規則」可由題幹推出，因為結構化資料可重現交集與取捨。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "鍵盤排序與文字狀態也能讓使用者比較候選地。 逐項排除其他選項：「只提供合成熱度顏色」顏色無法獨立讀取門檻。；「只說系統已算好」黑箱結論不能查核。 這項內容無法支持題幹所要求的地理判斷。；「隱藏未通過條件」隱藏會失去決策透明度。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

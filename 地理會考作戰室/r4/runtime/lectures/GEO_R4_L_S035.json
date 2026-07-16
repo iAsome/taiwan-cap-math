@@ -1,0 +1,129 @@
+{
+  "id": "GEO_R4_L_S035",
+  "subject": "geography",
+  "unitId": "GEO_R4_U05",
+  "skillId": "GEO_R4_S035",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S034"
+  ],
+  "objectives": [
+    "用幾何與用途說明單一世界地圖的限制",
+    "比較多圖並陳述投影取捨"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S035_SEC01",
+      "title": "沒有全能世界地圖",
+      "content": "地球是曲面，世界地圖是平面；完整展開時必須改變至少一項空間性質。因此『最準確』必須說明準確的是面積、形狀、距離、方向，還要限定位置或用途。"
+    },
+    {
+      "id": "GEO_R4_L_S035_SEC02",
+      "title": "多圖互補",
+      "content": "研究同一問題時，可以用等積圖比較面積、用適合航向的圖判讀方向，再以球面或距離資料檢核長途路徑。多種表示互相補充，比把單一投影當成真實世界更可靠。"
+    },
+    {
+      "id": "GEO_R4_L_S035_SEC03",
+      "title": "完整陳述取捨",
+      "content": "好的說明會包含三部分：地圖保留的性質、因此適合的任務、以及其他性質可能出現的限制。只說『這張圖比較好』或『另一張圖失真』都不夠具體。"
+    },
+    {
+      "id": "GEO_R4_L_S035_SEC04",
+      "title": "面對不確定資料",
+      "content": "若題目沒有提供投影名稱，仍可由經緯網、面積格或比例變化推論，但應限定結論。看不出的性質要標示資料不足，不可為了選答案而假設全部保留。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S035_EX01",
+      "prompt": "甲圖保面積，乙圖保局部角度。研究全球森林面積與海上航向時應如何使用？",
+      "steps": [
+        "拆成面積與航向兩任務",
+        "分別配對投影性質",
+        "說明不能由單圖包辦"
+      ],
+      "answer": "森林面積用甲圖；航向判讀優先用乙圖並配合航行資料。",
+      "why": "甲圖能公平比較各地面積，乙圖的局部角度較適合方向判讀。兩種需求不同，分別取用比硬選一張全能圖合理。"
+    },
+    {
+      "id": "GEO_R4_L_S035_EX02",
+      "prompt": "某地圖在中心點量距準確，能否說全圖任兩點距離都準確？",
+      "steps": [
+        "辨認準確條件限於中心",
+        "區分中心到各點與任兩點",
+        "避免擴大適用範圍"
+      ],
+      "answer": "不能。",
+      "why": "『由中心量距準確』只涵蓋以該中心為起點的距離；兩個非中心點之間仍可能變形，不能把局部條件推廣到全圖。"
+    },
+    {
+      "id": "GEO_R4_L_S035_EX03",
+      "prompt": "如何反駁『只要地圖夠新，就能同時無誤呈現所有性質』？",
+      "steps": [
+        "區分資料新舊與投影幾何",
+        "指出球面轉平面限制",
+        "提出依用途取捨"
+      ],
+      "answer": "更新資料不能消除投影的幾何取捨。",
+      "why": "新版地圖可以更新道路與國界，但球面仍無法無變形地展平。面積、形狀、距離與方向仍要依用途選擇。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "地圖年代越新，投影變形就會消失。",
+      "whyWrong": "資料更新與球面展平是兩件事。",
+      "correction": "新圖仍要查投影性質。"
+    },
+    {
+      "belief": "只要選最常見的投影就適合所有研究。",
+      "whyWrong": "常見不等於符合每一任務。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "依研究量與範圍選圖。"
+    },
+    {
+      "belief": "兩張地圖結論不同，必有一張繪錯。",
+      "whyWrong": "不同投影可能各自保留不同性質。",
+      "correction": "比較兩圖用途與取捨後再判斷。"
+    },
+    {
+      "belief": "承認變形就表示地圖沒有用。",
+      "whyWrong": "可預期的變形能透過合適投影與多源資料管理。",
+      "correction": "清楚標示限制，地圖仍是有效分析工具。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "單一平面世界地圖能完整保留四種性質嗎？",
+      "answer": "不能。",
+      "reason": "球面轉平面必有取捨。"
+    },
+    {
+      "prompt": "不同研究目的可否使用不同投影？",
+      "answer": "可以。",
+      "reason": "各投影優先保留的性質不同。"
+    },
+    {
+      "prompt": "中心量距準確是否等於全圖任兩點都準確？",
+      "answer": "不等於。",
+      "reason": "準確條件有位置限制。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  }
+}

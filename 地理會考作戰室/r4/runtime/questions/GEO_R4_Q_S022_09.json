@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S022_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一張圖同時標有等高線一百公尺與標高點九十六公尺，這是否必然矛盾？",
+  "options": [
+    "不必然，標高點可位於較低處且不必是等高距整數倍",
+    "必然，所有高度都必須是整百",
+    "必然，標高點只能在山頂",
+    "不必然，因海拔沒有單位"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "標高點直接記特定點，位置與數值可不同於附近等高線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "等高線數值依等高距，不代表所有地點只能整百。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "標高點可設於道路、鞍部或其他測點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "海拔通常有公尺等單位。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "多資料整合"
+  ],
+  "representationType": "topographic-map",
+  "misconceptionTargets": [
+    "標高必須等於等高線整數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "應查看九十六公尺點位於一百公尺線的哪一側與地形趨勢再判。 正確選項「不必然，標高點可位於較低處且不必是等高距整數倍」可由題幹推出，因為標高點直接記特定點，位置與數值可不同於附近等高線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只有空間位置與高低關係不可能同時成立時才構成資料矛盾。 逐項排除其他選項：「必然，所有高度都必須是整百」等高線數值依等高距，不代表所有地點只能整百。；「必然，標高點只能在山頂」標高點可設於道路、鞍部或其他測點。；「不必然，因海拔沒有單位」海拔通常有公尺等單位。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

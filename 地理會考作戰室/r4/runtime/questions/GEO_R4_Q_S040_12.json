@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S040_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "影像教材的文字替代至少應包含什麼中繼資料？",
+  "options": [
+    "只寫衛星圖三字",
+    "只列彩色名稱",
+    "只留發布日期",
+    "圖例類別、拍攝時間與時區、波段、解析度、雲量及來源"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "過於籠統不能支援解讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顏色名無法說明波段與類別。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "發布日不能取代拍攝日。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "這些項目決定影像語意與可用限制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "影像中繼可及性"
+  ],
+  "representationType": "accessible-metadata",
+  "misconceptionTargets": [
+    "發布日期足以描述影像"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若影像承載題目資料，還需用表格列各區特徵與數值。 正確選項「圖例類別、拍攝時間與時區、波段、解析度、雲量及來源」可由題幹推出，因為這些項目決定影像語意與可用限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "長說明與中繼資料共同提供不依視覺的完整判讀入口。 逐項排除其他選項：「只寫衛星圖三字」過於籠統不能支援解讀。；「只列彩色名稱」顏色名無法說明波段與類別。；「只留發布日期」發布日不能取代拍攝日。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

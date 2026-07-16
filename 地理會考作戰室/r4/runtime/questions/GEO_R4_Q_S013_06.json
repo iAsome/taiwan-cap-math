@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S013_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "下列哪組資訊最適合無障礙接送車找到並抵達入口？",
+  "options": [
+    "只給入口海拔",
+    "入口座標加上由主要道路到無障礙坡道的路線",
+    "只寫『在附近』",
+    "只給城市名稱"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "海拔無法提供平面位置與路線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "座標定位入口，相對路線說明實際可達方式，兩者互補。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "附近缺參考距離與方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "城市範圍太大，不能找入口。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資訊整合",
+    "無障礙"
+  ],
+  "representationType": "navigation",
+  "misconceptionTargets": [
+    "精確點位等於可達"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "任務同時包含找到與抵達，必須結合絕對位置和可行相對路徑。 正確選項「入口座標加上由主要道路到無障礙坡道的路線」可由題幹推出，因為座標定位入口，相對路線說明實際可達方式，兩者互補。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案索引零也符合無障礙需求，其他資訊都不足以完成任務。 逐項排除其他選項：「只給入口海拔」海拔無法提供平面位置與路線。；「只寫『在附近』」附近缺參考距離與方向。；「只給城市名稱」城市範圍太大，不能找入口。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

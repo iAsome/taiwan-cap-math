@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S011_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "物流表只列城市經度，能否據此排出由西到東順序？",
+  "options": [
+    "可以同時確定南北順序",
+    "可以直接算出公路公里數",
+    "在未跨一百八十度且經度標示清楚時可以粗排，但不能完整定位",
+    "完全不能比較任何東西位置"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "南北順序需要緯度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "道路距離還需位置、路網與尺度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "經度可比較東西次序，但缺緯度仍不能唯一定位或算路程。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "經度本來就是東西位置資訊。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料適用性"
+  ],
+  "representationType": "logistics",
+  "misconceptionTargets": [
+    "單一座標過度推論"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案保留經度的有效用途，同時清楚限制完整位置與實距。 正確選項「在未跨一百八十度且經度標示清楚時可以粗排，但不能完整定位」可由題幹推出，因為經度可比較東西次序，但缺緯度仍不能唯一定位或算路程。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘選項不是全盤否定，就是超出經度可支持的結論。 逐項排除其他選項：「可以同時確定南北順序」南北順序需要緯度。 這項內容無法支持題幹所要求的地理判斷。；「可以直接算出公路公里數」道路距離還需位置、路網與尺度。；「完全不能比較任何東西位置」經度本來就是東西位置資訊。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

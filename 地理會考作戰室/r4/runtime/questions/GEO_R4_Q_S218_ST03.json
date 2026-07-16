@@ -1,0 +1,94 @@
+{
+  "id": "GEO_R4_Q_S218_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BB-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-4",
+    "AUTH-SOCIAL-LC-GEO-BH-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST218",
+  "stem": "若甲到丁的新線路容量只有二十，甲能否用全部淨輸出四十直接供丁？",
+  "options": [
+    "可以，發電量會取消線路限制",
+    "可以，輸電沒有損耗",
+    "不能，因兩地不能交易",
+    "不能，線路容量二十構成傳輸瓶頸，還需考慮同時供需與損耗"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "物理容量仍存在。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "還有損耗。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "有線路即可交易。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "可傳流量受線路上限限制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "transmission-bottleneck"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "年度餘電可不受線路限制轉移"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BB-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-4",
+      "AUTH-SOCIAL-LC-GEO-BH-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "來源剩餘量和路徑容量取較小者。 正確選項「不能，線路容量二十構成傳輸瓶頸，還需考慮同時供需與損耗」可由題幹推出，因為可傳流量受線路上限限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐時情況可能比年度值更嚴格。 逐項排除其他選項：「可以，發電量會取消線路限制」物理容量仍存在。 這項內容無法支持題幹所要求的地理判斷。；「可以，輸電沒有損耗」還有損耗。 這項內容無法支持題幹所要求的地理判斷。；「不能，因兩地不能交易」有線路即可交易。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

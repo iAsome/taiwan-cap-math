@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S017_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S017"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "線段比例尺圖上全長五公分代表十公里，實際四公里應取多長？",
+  "options": [
+    "一公分",
+    "二公分",
+    "四公分",
+    "八公分"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一公分只代表兩公里。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "四公里是十公里的零點四倍，五公分乘零點四得二。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四公分會代表八公里。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "八公分會超過原全長並代表十六公里。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "線段反算"
+  ],
+  "representationType": "scale-bar",
+  "misconceptionTargets": [
+    "把實距數值直接當圖距"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先求每公分兩公里，再用四公里除以二得到兩公分。 正確選項「二公分」可由題幹推出，因為四公里是十公里的零點四倍，五公分乘零點四得二。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "也可比較比例：實距取全長的五分之二，圖距亦取五公分的五分之二。 逐項排除其他選項：「一公分」一公分只代表兩公里。 這項內容無法支持題幹所要求的地理判斷。；「四公分」四公分會代表八公里。 這項內容無法支持題幹所要求的地理判斷。；「八公分」八公分會超過原全長並代表十六公里。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某導覽寫道：「博物館在車站東方，圖書館在博物館北方。」可推出圖書館相對車站大致在哪一方？",
+  "options": [
+    "東南方",
+    "西北方",
+    "正北方",
+    "東北方"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "東南需要第二段向南，與題意不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "西北需要第一段向西，與題意不符。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "圖書館仍有向東位移，不能只寫正北。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "由車站先向東再向北，合成東北方。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "多句空間整合"
+  ],
+  "representationType": "text-network",
+  "misconceptionTargets": [
+    "忽略中介地點"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把兩句的共同點博物館接起來，車站到圖書館同時向東與向北。 正確選項「東北方」可由題幹推出，因為由車站先向東再向北，合成東北方。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若兩段距離未知，只能說大致東北，不能推精確角度或距離。 逐項排除其他選項：「東南方」東南需要第二段向南，與題意不符。；「西北方」西北需要第一段向西，與題意不符。；「正北方」圖書館仍有向東位移，不能只寫正北。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

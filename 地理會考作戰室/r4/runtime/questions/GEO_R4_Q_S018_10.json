@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S018_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某手機地圖放大畫面後，道路線變粗但沒有載入更細資料。這是否等同取得新的大比例尺詳圖？",
+  "options": [
+    "是，像素變大就新增巷道",
+    "否，只放大既有圖像不會產生原本沒有的地理資訊",
+    "是，任何縮放都會更新調查資料",
+    "否，因電子地圖沒有比例概念"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "視覺放大不能創造未收錄道路。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "畫面變大與資料層級更新是不同事情。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "縮放不等於重新調查或載入圖層。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "電子地圖仍有顯示尺度與資料詳略。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "數位地圖尺度"
+  ],
+  "representationType": "screen-map",
+  "misconceptionTargets": [
+    "把視覺放大當新增資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "真正的詳圖需要相應資料與符號層級，不是把相同圖像拉大。 正確選項「否，只放大既有圖像不會產生原本沒有的地理資訊」可由題幹推出，因為畫面變大與資料層級更新是不同事情。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若系統在縮放時另載入細部圖層，才可能提供新資訊；題目已說沒有載入。 逐項排除其他選項：「是，像素變大就新增巷道」視覺放大不能創造未收錄道路。；「是，任何縮放都會更新調查資料」縮放不等於重新調查或載入圖層。；「否，因電子地圖沒有比例概念」電子地圖仍有顯示尺度與資料詳略。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

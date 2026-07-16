@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S021_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "要讓另一位學生獨立重算地圖距離，紀錄至少應包含什麼？",
+  "options": [
+    "只留最終數字",
+    "只留答案顏色",
+    "只寫我覺得合理",
+    "圖源與版本、有效比例尺、起訖和路徑、圖距讀值、單位運算"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "最終數字無法查來源與算式。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顏色不是計算證據且不具普遍可讀性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主觀感覺不能獨立驗證。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "完整證據鏈讓他人重現並定位差異。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "可重現紀錄"
+  ],
+  "representationType": "review-sheet",
+  "misconceptionTargets": [
+    "只保存答案不保存證據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可重現性是品質門檻：另一人應能從同圖、同路徑與同單位得到相近結果。 正確選項「圖源與版本、有效比例尺、起訖和路徑、圖距讀值、單位運算」可由題幹推出，因為完整證據鏈讓他人重現並定位差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若資料受版權或安全限制，也至少要記錄可核對的來源識別與摘要。 逐項排除其他選項：「只留最終數字」最終數字無法查來源與算式。；「只留答案顏色」顏色不是計算證據且不具普遍可讀性。；「只寫我覺得合理」主觀感覺不能獨立驗證。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

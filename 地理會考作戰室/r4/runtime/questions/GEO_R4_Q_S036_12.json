@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要讓螢幕閱讀器使用者理解點線面圖層，何種替代最完整？",
+  "options": [
+    "只說地圖很漂亮",
+    "只列符號顏色",
+    "只提供無標題畫布",
+    "列每層幾何類型、物件識別、連接或包含關係及關鍵屬性"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "美感摘要不能支援分析。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顏色不提供拓撲且不具普遍可讀性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "無標題畫布缺語意。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "結構資料保留空間角色與可查屬性。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "GIS可及性"
+  ],
+  "representationType": "accessible-gis",
+  "misconceptionTargets": [
+    "顏色圖例足以替代拓撲"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "點可列所在區，線可列起訖節點，面可列包含物件，形成等值關係。 正確選項「列每層幾何類型、物件識別、連接或包含關係及關鍵屬性」可由題幹推出，因為結構資料保留空間角色與可查屬性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料表還應有欄名、單位與日期，讓讀者判斷可用範圍。 逐項排除其他選項：「只說地圖很漂亮」美感摘要不能支援分析。；「只列符號顏色」顏色不提供拓撲且不具普遍可讀性。；「只提供無標題畫布」無標題畫布缺語意。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

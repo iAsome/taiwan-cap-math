@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S042_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "只有市中心圖層，能否推論全縣相同分布？",
+  "options": [
+    "能，只要顏色相同",
+    "不能，因縣沒有地理資料",
+    "不能，資料空間範圍不足",
+    "能，中心必代表全縣"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不證明代表性。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "問題是本資料不足。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "樣本範圍不能無條件外推不同地區。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "郊區地形人口可能不同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "範圍限制"
+  ],
+  "representationType": "coverage",
+  "misconceptionTargets": [
+    "局部圖必代表整體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "報告應限定為市中心範圍，或取得全縣資料。 正確選項「不能，資料空間範圍不足」可由題幹推出，因為樣本範圍不能無條件外推不同地區。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若做抽樣外推，需有抽樣設計與誤差，不是地圖直覺。 逐項排除其他選項：「能，只要顏色相同」顏色不證明代表性。 這項內容無法支持題幹所要求的地理判斷。；「不能，因縣沒有地理資料」問題是本資料不足。 這項內容無法支持題幹所要求的地理判斷。；「能，中心必代表全縣」郊區地形人口可能不同。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

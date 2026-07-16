@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "兩條實際同長的路線在圖上分別為 4 公分與 7 公分，顯示哪項可能未一致保留？",
+  "options": [
+    "方向",
+    "距離",
+    "面積",
+    "海拔"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只有長度資料，不能直接判定方向。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "同長路線畫成不同長度，顯示距離尺度可能改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "路線長度比較不是面積測試。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目未提供高度。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨識"
+  ],
+  "representationType": "quantitative-text",
+  "misconceptionTargets": [
+    "混淆距離與面積變形"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "實際同長而圖長不同，決定性證據是距離比例不一致。 正確選項「距離」可由題幹推出，因為同長路線畫成不同長度，顯示距離尺度可能改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘選項沒有對應到題目測量的線段長度。 逐項排除其他選項：「方向」只有長度資料，不能直接判定方向。；「面積」路線長度比較不是面積測試。；「海拔」題目未提供高度。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

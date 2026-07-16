@@ -1,0 +1,144 @@
+{
+  "id": "GEO_R4_L_S109",
+  "subject": "geography",
+  "unitId": "GEO_R4_U16",
+  "skillId": "GEO_R4_S109",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BA-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S108"
+  ],
+  "objectives": [
+    "正確計算並解讀進出口、貿易差額與貿易依存度",
+    "由商品和夥伴結構評估貿易集中與風險"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S109_SEC01",
+      "title": "基本指標",
+      "content": "出口是本地商品或服務售往境外，進口是由境外購入。貿易差額等於出口減進口，正值為出超、負值為入超；出超本身不等於整體經濟必然健康。"
+    },
+    {
+      "id": "GEO_R4_L_S109_SEC02",
+      "title": "貿易依存度",
+      "content": "常見算法為出口與進口合計後除以國內生產毛額，再乘百分之百。它顯示跨境交易相對於經濟規模的程度，但不能直接告訴我們獲利、所得分配或是否過度依賴單一夥伴。"
+    },
+    {
+      "id": "GEO_R4_L_S109_SEC03",
+      "title": "結構比總額更深入",
+      "content": "除了總金額，還要查看出口商品、進口用途與貿易夥伴占比。出口集中於單一產品，或關鍵原料集中自單一來源，都可能增加價格或供應中斷風險。"
+    },
+    {
+      "id": "GEO_R4_L_S109_SEC04",
+      "title": "比較資料的陷阱",
+      "content": "金額增加可能來自價格上漲而非數量增加；跨年比較宜確認幣值、物價與統計口徑。轉口或加工貿易也會讓進出口總額很高，解讀時須配合產業角色。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S109_EX01",
+      "prompt": "某地出口九百億元、進口七百億元，貿易差額為何？",
+      "steps": [
+        "以出口減進口",
+        "九百減七百",
+        "判讀正負號"
+      ],
+      "answer": "出超二百億元",
+      "why": "差額為正，表示出口金額高於進口。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S109_EX02",
+      "prompt": "出口四百、進口六百、GDP 一千億元，貿易依存度為何？",
+      "steps": [
+        "出口加進口得一千",
+        "除以 GDP 一千",
+        "乘百分之百"
+      ],
+      "answer": "百分之一百",
+      "why": "該指標以進出口總額相對經濟規模表示。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S109_EX03",
+      "prompt": "石油進口金額增加三成，能否直接說進口量也增加三成？",
+      "steps": [
+        "確認資料只有金額",
+        "價格可能上漲",
+        "需要數量或單價"
+      ],
+      "answer": "不能",
+      "why": "金額等於價格乘數量，缺一不能拆解變化來源。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "出超越大，人民生活必然越好",
+      "whyWrong": "差額不呈現產業成本、所得分配或環境代價",
+      "correction": "把貿易差額和其他社經指標一起看"
+    },
+    {
+      "belief": "貿易依存度高等於只依賴一國",
+      "whyWrong": "依存度看總額相對 GDP，不看夥伴集中",
+      "correction": "另算各夥伴占比 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "出口金額成長就是出口量成長",
+      "whyWrong": "價格與匯率也會改變金額 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "對照單價、數量與不變價格資料"
+    },
+    {
+      "belief": "進口全是壞事",
+      "whyWrong": "進口可提供原料、設備與消費選擇",
+      "correction": "依用途與替代性評估效益和風險"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "出口小於進口時，貿易差額為何？",
+      "answer": "負值，即入超",
+      "reason": "出口減進口會得到負數。"
+    },
+    {
+      "prompt": "貿易依存度的分母常用什麼？",
+      "answer": "國內生產毛額",
+      "reason": "用以和整體經濟規模比較。"
+    },
+    {
+      "prompt": "判斷夥伴集中風險要看什麼？",
+      "answer": "各貿易夥伴占比",
+      "reason": "占比可顯示是否集中於少數市場。"
+    },
+    {
+      "prompt": "金額上升而數量下降可能嗎？",
+      "answer": "可能",
+      "reason": "單價上漲幅度若更大，總金額仍會增加。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BA-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  }
+}

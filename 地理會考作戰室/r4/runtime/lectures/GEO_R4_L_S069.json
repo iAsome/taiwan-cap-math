@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S069",
+  "subject": "geography",
+  "unitId": "GEO_R4_U10",
+  "skillId": "GEO_R4_S069",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S068"
+  ],
+  "objectives": [
+    "能比較節水、減漏、調度、再生水、海水淡化與開發水源的效益、成本、時程及環境影響。",
+    "能依缺水成因與情境組合需求管理及供給方案，避免把單一措施視為普遍最佳。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S069_SEC01",
+      "title": "先診斷缺口再選工具",
+      "content": "短期乾旱可用調度、分級節水與備援井；長期需求成長則需減漏、效率投資、再生水或新水源。若問題是管網瓶頸，單純增加遠方原水可能仍送不到缺水區。"
+    },
+    {
+      "id": "GEO_R4_L_S069_SEC02",
+      "title": "需求管理常能較快釋出水量",
+      "content": "修漏、節水器具、灌溉改善與分時用水可降低需求，通常工期較短且少新增環境擾動。效果要以實際節省量而非口號評估，也要保障基本生活與弱勢負擔。"
+    },
+    {
+      "id": "GEO_R4_L_S069_SEC03",
+      "title": "新水源各有條件與代價",
+      "content": "再生水水質可依用途處理，適合部分工業或澆灌；海水淡化供給較不受降雨影響，但耗能、成本與濃鹵水需管理；水庫與跨域引水涉及土地、生態及上下游權益。"
+    },
+    {
+      "id": "GEO_R4_L_S069_SEC04",
+      "title": "用共同指標比較組合方案",
+      "content": "至少比較可靠供水量、單位水成本、完工時間、能源、碳排、生態、災害韌性與分配公平。多元組合可降低單一水源故障風險，但系統管理也較複雜。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S069_EX01",
+      "prompt": "漏損每日十萬噸，修漏可減半，新增可用量多少？",
+      "steps": [
+        "確認基準十",
+        "乘百分之五十",
+        "保留每日單位"
+      ],
+      "answer": "每日節省五萬噸。",
+      "why": "節省量可視為避免取水，仍須扣施工期間與維護效果。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S069_EX02",
+      "prompt": "晶圓廠需要穩定非飲用製程水，附近有污水處理廠，優先評估什麼？",
+      "steps": [
+        "確認水質需求",
+        "評估再生處理與管線",
+        "比較成本可靠度"
+      ],
+      "answer": "可優先評估再生水。",
+      "why": "並非所有製程可直接使用，需依水質分級。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S069_EX03",
+      "prompt": "離島淡水少但能源昂貴，海淡是否必然最佳？",
+      "steps": [
+        "列供水可靠優點",
+        "列能源與濃鹵水代價",
+        "比較節水雨水與運水"
+      ],
+      "answer": "不能只憑位置決定，需多方案比較。",
+      "why": "海淡可作備援或基載，比例由成本與風險決定。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "開發新水源永遠比節水有效。",
+      "whyWrong": "效果取決於缺口、成本與時程。",
+      "correction": "把每單位可靠水量放在同表比較。"
+    },
+    {
+      "belief": "再生水就是未處理污水。",
+      "whyWrong": "再生水經處理並依用途管控水質。",
+      "correction": "核對處理等級與用途。"
+    },
+    {
+      "belief": "海水淡化沒有環境代價。",
+      "whyWrong": "耗能、取排水與濃鹵水需管理。",
+      "correction": "納入全生命週期。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "節水只靠個人縮短洗澡。",
+      "whyWrong": "管網、農業與工業效率也很重要。",
+      "correction": "依用水結構找大宗可行措施。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "管網漏水優先對策是什麼？",
+      "answer": "檢測與修漏。",
+      "reason": "對準設施損失。"
+    },
+    {
+      "prompt": "再生水使用先核對什麼？",
+      "answer": "處理水質與用途需求。",
+      "reason": "用途分級。"
+    },
+    {
+      "prompt": "海淡主要限制有哪些？",
+      "answer": "能源、成本、取排水與濃鹵水。",
+      "reason": "可靠不等於零代價。"
+    },
+    {
+      "prompt": "方案比較可只看最大供水量嗎？",
+      "answer": "不可以。",
+      "reason": "還看成本時程環境與公平。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

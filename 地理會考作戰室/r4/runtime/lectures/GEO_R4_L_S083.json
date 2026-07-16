@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S083",
+  "subject": "geography",
+  "unitId": "GEO_R4_U12",
+  "skillId": "GEO_R4_S083",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-2",
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-CA-4-2",
+    "AUTH-SOCIAL-LC-GEO-CA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S082"
+  ],
+  "objectives": [
+    "能由地價、租金、所得、通勤、運具、密度與土地利用資料分析都市擴張的居住交通問題。",
+    "能辨認平均值與因果限制，從住房供給、區位與交通選擇提出相互配合的改善方向。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S083_SEC01",
+      "title": "住房負擔要比較住宅成本與所得",
+      "content": "房價或租金高不等於每戶負擔相同，常用住房支出占所得比例、可負擔住宅缺口與通勤成本評估。核心地價高可能排擠低收入戶，外圍房價較低卻增加交通時間與費用。"
+    },
+    {
+      "id": "GEO_R4_L_S083_SEC02",
+      "title": "低密度擴張拉長日常旅程",
+      "content": "住宅、工作與服務分離，且道路以汽車為主時，通勤距離、壅塞、能源與基礎設施成本可能上升。新增道路短期紓解後也可能誘發更多駕車，不能只用擴路處理需求。"
+    },
+    {
+      "id": "GEO_R4_L_S083_SEC03",
+      "title": "平均壅塞會掩蓋時空差異",
+      "content": "尖峰與離峰、不同走廊和不同運具時間差很大；平均通勤時間下降也可能只讓有車者受益。交通分析需看可靠度、轉乘、票價、步行安全與無障礙。"
+    },
+    {
+      "id": "GEO_R4_L_S083_SEC04",
+      "title": "土地與交通政策須同步",
+      "content": "在大眾運輸站旁配置混合用途與可負擔住宅，可縮短旅次並提高運量；但若只增密不擴服務，可能加重擁擠，若更新造成租戶迫遷則把受益者趕走。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S083_EX01",
+      "prompt": "月租一萬五、所得五萬，租金占比多少？",
+      "steps": [
+        "一萬五除五萬",
+        "得到零點三",
+        "轉百分之三十"
+      ],
+      "answer": "租金占所得百分之三十。",
+      "why": "還可加入水電與通勤成本。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S083_EX02",
+      "prompt": "外圍房價低但每日通勤兩小時，是否一定較可負擔？",
+      "steps": [
+        "加住房支出",
+        "加交通金錢與時間",
+        "比較總負擔"
+      ],
+      "answer": "不一定，通勤成本可能抵銷房價優勢。",
+      "why": "不同家庭對時間價值與照護需求不同。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S083_EX03",
+      "prompt": "擴路後一年壅塞回升，可能原因？",
+      "steps": [
+        "道路容量增加",
+        "駕車成本下降",
+        "更多旅次與遠距開發"
+      ],
+      "answer": "可能出現誘發交通。",
+      "why": "仍需運量與土地資料驗證。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "郊區房價低就一定負擔低。",
+      "whyWrong": "交通與時間也構成成本。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "算住房交通總負擔。"
+    },
+    {
+      "belief": "擴路可永久消除壅塞。",
+      "whyWrong": "新容量可能誘發更多駕車。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "搭配需求與大眾運輸。"
+    },
+    {
+      "belief": "平均通勤改善代表人人改善。",
+      "whyWrong": "不同地區運具可能分配不均。",
+      "correction": "分群分區檢查。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "站區增密必然公平。",
+      "whyWrong": "地價上升可能迫遷。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "加入可負擔住房保障。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "住房負擔率如何算？",
+      "answer": "住房支出除所得。",
+      "reason": "期間需一致。"
+    },
+    {
+      "prompt": "郊區便宜房還看什麼？",
+      "answer": "交通時間與費用。",
+      "reason": "計算總負擔。"
+    },
+    {
+      "prompt": "擴路必永久減塞嗎？",
+      "answer": "不一定。",
+      "reason": "可能有誘發交通。"
+    },
+    {
+      "prompt": "平均值能代表每群體嗎？",
+      "answer": "不能充分。",
+      "reason": "需分布資料。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-2",
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-CA-4-2",
+      "AUTH-SOCIAL-LC-GEO-CA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  }
+}

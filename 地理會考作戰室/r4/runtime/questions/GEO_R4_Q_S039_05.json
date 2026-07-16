@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S039_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某水庫雨季影像水面比枯水季大，能立即判永久擴建嗎？",
+  "options": [
+    "不能，可能只是季節水位差",
+    "能，水面一變就是工程",
+    "能，雨季沒有降雨",
+    "不能，因影像看不到水"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "蓄水與降雨會造成正常季節波動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "需要多年同季或工程資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "雨季通常正與降雨相關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "影像可判水面但需適當方法。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "水位季節"
+  ],
+  "representationType": "reservoir-sequence",
+  "misconceptionTargets": [
+    "任何面積變化都是永久工程"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較永久變化應用相同水文季節或水位紀錄校正。 正確選項「不能，可能只是季節水位差」可由題幹推出，因為蓄水與降雨會造成正常季節波動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若大水面持續跨多個枯水期，再配合工程資料，證據才較強。 逐項排除其他選項：「能，水面一變就是工程」需要多年同季或工程資料。；「能，雨季沒有降雨」雨季通常正與降雨相關。；「不能，因影像看不到水」影像可判水面但需適當方法。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S162_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-2",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某群島國平均火山風險高，能否推論每座島風險相同？",
+  "options": [
+    "不能，因群島沒有火山",
+    "不能，需看板塊位置、火山活動、暴露和應變能力",
+    "能，全國平均代表每島",
+    "能，島嶼面積相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "部分群島位於活躍火山帶。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "危害與社會條件具有地方差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "平均會掩蓋熱點。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "面積也不必相同。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "scale-analysis"
+  ],
+  "representationType": "island-risk",
+  "misconceptionTargets": [
+    "全國平均等於各島"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-2",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "國家尺度不能直接下放到島嶼。 正確選項「不能，需看板塊位置、火山活動、暴露和應變能力」可由題幹推出，因為危害與社會條件具有地方差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項排除其他選項：「不能，因群島沒有火山」部分群島位於活躍火山帶。；「能，全國平均代表每島」平均會掩蓋熱點。 這項內容無法支持題幹所要求的地理判斷。；「能，島嶼面積相同」面積也不必相同。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S004_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S004"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "地圖顯示甲區事故多於乙區。要比較事故風險，還應優先取得什麼？",
+  "options": [
+    "兩區交通量或人口等暴露資料",
+    "兩區名稱的由來",
+    "地圖印刷紙張重量",
+    "警察制服數量"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "風險需將事故數和可能暴露人次相對比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱由來不影響事故率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "紙張重量與資料無關。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "制服數量不是道路使用暴露量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "補充指標"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "事件總數等於風險"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只看事故總數可能把交通量大的地區判為較危險，應補充分母。 正確選項「兩區交通量或人口等暴露資料」可由題幹推出，因為風險需將事故數和可能暴露人次相對比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘三項無法把事故數轉成可比較風險。 逐項排除其他選項：「兩區名稱的由來」名稱由來不影響事故率。；「地圖印刷紙張重量」紙張重量與資料無關。 這項內容無法支持題幹所要求的地理判斷。；「警察制服數量」制服數量不是道路使用暴露量。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

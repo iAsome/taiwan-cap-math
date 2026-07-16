@@ -1,0 +1,95 @@
+{
+  "id": "GEO_R4_Q_S059_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST059",
+  "stem": "由山腳到中站，依0.6°C／100公尺估算，中站應為多少？",
+  "options": [
+    "17.0°C",
+    "19.0°C",
+    "19.2°C",
+    "31.0°C"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "17.0°C多扣2°C。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "高度差1,000公尺約降6°C，25.0−6.0=19.0°C。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "19.2°C是實測值，不是依指定率所得估算值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "31.0°C把6°C加上。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算",
+    "分辨估測"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "把實測值當估算答案"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目要求估算而非抄實測，計算結果19.0對應索引1。 正確選項「19.0°C」可由題幹推出，因為高度差1,000公尺約降6°C，25.0−6.0=19.0°C。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "以高度差與指定率獨立重算，確認19.2僅是觀測值。 逐項排除其他選項：「17.0°C」17.0°C多扣2°C。 這項內容無法支持題幹所要求的地理判斷。；「19.2°C」19.2°C是實測值，不是依指定率所得估算值。；「31.0°C」31.0°C把6°C加上。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

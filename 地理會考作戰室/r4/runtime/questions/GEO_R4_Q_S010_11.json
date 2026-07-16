@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "航空路線資料只標出各站緯度。規劃由北到南的停靠順序時可以使用，但還缺什麼才能確定站點完整位置？",
+  "options": [
+    "機票顏色",
+    "旅客年齡",
+    "經度",
+    "站名筆畫"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "機票顏色不提供地點。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "旅客年齡與站點位置無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "經度與緯度配對才能唯一定位地表位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "站名筆畫不是空間座標。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料需求"
+  ],
+  "representationType": "route-planning",
+  "misconceptionTargets": [
+    "單一緯度可完整定位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "緯度足以排序南北，卻不能區分同緯線上的東西地點，因此需經度。 正確選項「經度」可由題幹推出，因為經度與緯度配對才能唯一定位地表位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘選項皆非地理定位變數，答案索引零唯一。 逐項排除其他選項：「機票顏色」機票顏色不提供地點。 這項內容無法支持題幹所要求的地理判斷。；「旅客年齡」旅客年齡與站點位置無關。；「站名筆畫」站名筆畫不是空間座標。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

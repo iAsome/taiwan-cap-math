@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S033_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "資料表列甲、乙實際面積比為 1：2，非等積圖上的圖面比卻是 3：2。可支持哪項推論？",
+  "options": [
+    "甲實際大於乙",
+    "圖面比例不能代表這兩地的實際面積比",
+    "面積表一定抄錯",
+    "兩地人口比也是 3：2"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "實際比 1：2，甲小於乙。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "圖面比與實際比不一致，顯示圖面不能直接代表面積。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "差異可由投影解釋，不能直接否定表格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有任何人口資料。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比例比較",
+    "推論"
+  ],
+  "representationType": "ratio-data",
+  "misconceptionTargets": [
+    "遇到圖表矛盾就否定可靠數值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩組比例已知不同，第二項是最小且充分的結論。 正確選項「圖面比例不能代表這兩地的實際面積比」可由題幹推出，因為圖面比與實際比不一致，顯示圖面不能直接代表面積。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他選項違反數值、過度指控資料或跨到人口。 逐項排除其他選項：「甲實際大於乙」實際比 1：2，甲小於乙。 這項內容無法支持題幹所要求的地理判斷。；「面積表一定抄錯」差異可由投影解釋，不能直接否定表格。；「兩地人口比也是 3：2」沒有任何人口資料。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S025_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同一河道甲點海拔五百公尺、乙點二百公尺，沒有人工設施。水流最可能如何？",
+  "options": [
+    "兩點同高所以不流",
+    "固定向北",
+    "甲流向乙",
+    "乙流向甲"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩點相差三百公尺。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有方位資料也不需固定朝北。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲較高、乙較低，符合自然下行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "由低向高需外力且題目未給。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "兩點判流"
+  ],
+  "representationType": "river-points",
+  "misconceptionTargets": [
+    "河水可自然向高處流"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "只需比較同河道高程即可判總體方向。 正確選項「甲流向乙」可由題幹推出，因為甲較高、乙較低，符合自然下行。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "仍不能由兩個點算流速或洪峰到達時間。 逐項排除其他選項：「兩點同高所以不流」兩點相差三百公尺。 這項內容無法支持題幹所要求的地理判斷。；「固定向北」沒有方位資料也不需固定朝北。；「乙流向甲」由低向高需外力且題目未給。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

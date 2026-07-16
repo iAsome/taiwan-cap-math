@@ -1,0 +1,146 @@
+{
+  "id": "GEO_R4_L_S215",
+  "subject": "geography",
+  "unitId": "GEO_R4_U32",
+  "skillId": "GEO_R4_S215",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BC-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S214"
+  ],
+  "objectives": [
+    "建立事件經由節點、投入、產出與需求端擴散的供應中斷因果鏈",
+    "運用庫存、替代性、集中度與恢復時間判斷連鎖衝擊的大小和先後"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S215_SEC01",
+      "title": "從事件追到受阻節點",
+      "content": "供應中斷分析不能停在颱風、戰爭、罷工或資訊系統故障等事件名稱，而要找事件實際破壞的節點與功能。港口封閉會阻斷裝卸，電網故障會中止冷鏈，付款系統失靈會使商品存在卻無法完成交易。第一步要標出地點、開始時間、預估持續期與受阻能力比例，才能把自然或社會事件轉換成可檢驗的供應限制。"
+    },
+    {
+      "id": "GEO_R4_L_S215_SEC02",
+      "title": "區分直接、間接與誘發衝擊",
+      "content": "受阻節點的產量或服務下降是直接衝擊；依賴其投入的下游工廠停工、替代路線壅塞及價格上升是間接衝擊；家庭因所得下降而縮減其他消費，地方商業再受影響，則是誘發衝擊。供應鏈不是單向直線，副產品、維修、金融與資訊服務也可能形成回饋。畫因果鏈時每一箭頭都要有機制和時間順序，不能只把同時出現的現象全部歸因於同一事件。"
+    },
+    {
+      "id": "GEO_R4_L_S215_SEC03",
+      "title": "緩衝條件決定何時轉成缺貨",
+      "content": "企業持有的可用庫存、每日消耗量、替代供應商的認證時間、運輸繞道能力與需求彈性，共同決定中斷是否擴大。庫存可把衝擊延後，卻不能消除長期缺口；替代品若規格不相容或也位於同一風險區，就不是有效備援。關鍵投入即使價值占比低，只要不可替代且所有產品都需要，也可能成為瓶頸。"
+    },
+    {
+      "id": "GEO_R4_L_S215_SEC04",
+      "title": "由時間線比較恢復與連鎖",
+      "content": "評估時可列出事件發生、庫存耗盡、替代來源啟用、受阻節點復原及需求恢復五個時間點。物理設施修好不代表網絡立即復原，積壓訂單、設備重新校準與運價仍可能延續。政策排序應先保護生命維持和不可替代的關鍵服務，再維持資訊透明與公平配給，同時避免重複下單放大短缺。情境推估應明列假設並隨新資料更新。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S215_EX01",
+      "prompt": "港口停七天，工廠原料庫存可用十天，若無其他問題，何時才會因該原料停工？",
+      "steps": [
+        "比較中斷期七天",
+        "比較庫存十天",
+        "庫存涵蓋完整中斷期"
+      ],
+      "answer": "不會僅因這次中斷停工",
+      "why": "庫存緩衝長於中斷，但仍需考慮補運時間和消耗是否符合假設。"
+    },
+    {
+      "id": "GEO_R4_L_S215_EX02",
+      "prompt": "冷凍庫仍有食物，但停電使冷鏈失效，受阻的是什麼？",
+      "steps": [
+        "事件是停電",
+        "受阻節點功能是溫控保存",
+        "商品數量並非唯一限制"
+      ],
+      "answer": "儲運服務能力",
+      "why": "實物存在不表示能安全供應，功能性節點也會成為瓶頸。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S215_EX03",
+      "prompt": "兩家備援廠位於同一洪泛區，是否已充分分散風險？",
+      "steps": [
+        "供應商數量增加",
+        "地理暴露高度相關",
+        "同一事件可能同時中斷"
+      ],
+      "answer": "沒有",
+      "why": "名義上的多來源若共享危害、電網或港口，仍是相關風險。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "事件越大，所有產業衝擊必然越大",
+      "whyWrong": "衝擊取決於事件是否擊中關鍵節點及替代、庫存和需求條件",
+      "correction": "先問受阻功能與依賴關係"
+    },
+    {
+      "belief": "庫存可永久解決中斷",
+      "whyWrong": "庫存只把缺口延後，長期仍需復原、替代或降低需求",
+      "correction": "計算庫存可用天數和中斷期"
+    },
+    {
+      "belief": "有兩家供應商就是風險分散",
+      "whyWrong": "兩家可能共享地點、電網、港口或次級供應商",
+      "correction": "追查共同失效來源"
+    },
+    {
+      "belief": "設施重開即代表供應鏈完全恢復",
+      "whyWrong": "積壓訂單、運輸壅塞與重新認證可使恢復落後",
+      "correction": "分開記錄節點復原與交貨恢復"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "供應鏈分析第一個地理問題是什麼？",
+      "answer": "事件擊中哪個地點與哪項節點功能",
+      "reason": "事件名稱本身不能顯示流量限制"
+    },
+    {
+      "prompt": "何謂間接衝擊？",
+      "answer": "依賴受阻投入的其他產業或路線受到影響",
+      "reason": "它沿網絡關係擴散"
+    },
+    {
+      "prompt": "庫存二十單位、每日用五單位可撐幾天？",
+      "answer": "四天",
+      "reason": "可用天數等於庫存除以每日消耗"
+    },
+    {
+      "prompt": "如何檢查備援是否相關？",
+      "answer": "比較供應商是否共享危害、基礎設施與次級來源",
+      "reason": "公司名稱不同不代表失效來源不同"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BC-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1"
+    ]
+  }
+}

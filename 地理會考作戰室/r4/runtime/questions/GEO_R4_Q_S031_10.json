@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S031_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同一高緯區在圖甲占全圖 9%，在等積圖乙占 3%。若要估計其占全球陸地比例，哪個數值較可用？",
+  "options": [
+    "9%，因圖面較醒目",
+    "3%，因乙圖保面積比例",
+    "兩者相乘得 27%",
+    "兩者相加得 12%"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "醒目程度不是面積準確證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "等積圖的圖面占比可代表實際面積占比。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不同投影占比不能相乘。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "也不能把兩個圖面比例相加。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據加權",
+    "比例判讀"
+  ],
+  "representationType": "percentage-data",
+  "misconceptionTargets": [
+    "任意合併不同投影的圖面比例"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目指定乙為等積圖，3% 是唯一有面積性質支持的估計。 正確選項「3%，因乙圖保面積比例」可由題幹推出，因為等積圖的圖面占比可代表實際面積占比。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他算法缺乏地理與數學意義，9% 又來自未證實等積的圖。 逐項排除其他選項：「9%，因圖面較醒目」醒目程度不是面積準確證據。；「兩者相乘得 27%」不同投影占比不能相乘。；「兩者相加得 12%」也不能把兩個圖面比例相加。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

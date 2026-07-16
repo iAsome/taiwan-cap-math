@@ -1,0 +1,152 @@
+{
+  "id": "GEO_R4_L_S153",
+  "subject": "geography",
+  "unitId": "GEO_R4_U22",
+  "skillId": "GEO_R4_S153",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-AD-4-4",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2C-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S152"
+  ],
+  "objectives": [
+    "用在地基準資料把永續問題轉為可檢驗行動",
+    "設計指標、比較、資料品質與調整門檻"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S153_SEC01",
+      "title": "從問題到可測目標",
+      "content": "先定義地點、對象、問題機制與基準，例如某市場每週混合垃圾量，而非籠統說改善環境。目標需有期限、方向和幅度，並說明為何介入能改變指標。"
+    },
+    {
+      "id": "GEO_R4_L_S153_SEC02",
+      "title": "選擇直接結果指標",
+      "content": "活動人數、海報數是投入；垃圾減量、用水、通勤方式、棲地覆蓋和居民負擔較接近結果。指標要有單位、分母、採樣時間與資料來源，避免只選容易變好的數字。"
+    },
+    {
+      "id": "GEO_R4_L_S153_SEC03",
+      "title": "比較與因果",
+      "content": "行動前後比較可看變化；加入相似未介入地點、分期實施或中斷時間序列，更能排除季節與共同趨勢。小規模試辦應預先設定成功、失敗和停止門檻。"
+    },
+    {
+      "id": "GEO_R4_L_S153_SEC04",
+      "title": "在地資料治理",
+      "content": "感測器需校正，問卷需注意樣本與未回覆，個人移動資料要保護隱私。資料和方法應讓社區可理解、可查核；結果不如預期時調整假設，而不是刪除不利資料。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S153_EX01",
+      "prompt": "『辦淨灘』如何改成可檢驗目標？",
+      "steps": [
+        "量測基準垃圾重量與類型",
+        "找主要來源",
+        "設定三個月減少一次性容器兩成"
+      ],
+      "answer": "以來源減量和重複採樣檢驗",
+      "why": "清除量增加可能只是垃圾更多，不能單獨代表成功。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S153_EX02",
+      "prompt": "節水宣導後用水下降，能否直接歸因？",
+      "steps": [
+        "查季節與價格變化",
+        "比較未宣導相似區",
+        "按戶數和天數標準化"
+      ],
+      "answer": "還需對照",
+      "why": "降雨或入住率也可能改變用水。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S153_EX03",
+      "prompt": "空品感測器突然全面變低，先做什麼？",
+      "steps": [
+        "檢查校正與停機",
+        "與官方站或備援比對",
+        "確認後再解釋"
+      ],
+      "answer": "先排除量測故障",
+      "why": "資料品質是行動判斷的前提。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "活動人數多就是永續成效好",
+      "whyWrong": "參與是投入，不等於環境結果",
+      "correction": "追蹤目標指標 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "行動後改善就是行動造成",
+      "whyWrong": "季節與其他政策也可能影響",
+      "correction": "設基準、對照和多期資料"
+    },
+    {
+      "belief": "感測器有數字就一定正確",
+      "whyWrong": "漂移、位置與缺值會造成偏差",
+      "correction": "校正並紀錄品質 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "失敗資料應刪除",
+      "whyWrong": "不利結果能修正機制與設計",
+      "correction": "完整公開預設指標"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "可檢驗目標包含什麼？",
+      "answer": "對象、指標、基準、幅度與期限",
+      "reason": "讀者才能判定是否達成。"
+    },
+    {
+      "prompt": "投入和結果有何差異？",
+      "answer": "投入是做了什麼，結果是問題是否改善",
+      "reason": "兩者都可記錄但不能混用。"
+    },
+    {
+      "prompt": "對照有何作用？",
+      "answer": "估計沒有介入時可能的共同變化",
+      "reason": "有助排除季節和景氣。"
+    },
+    {
+      "prompt": "資料品質需記錄什麼？",
+      "answer": "方法、單位、校正、缺值、樣本與版本",
+      "reason": "結果才能重現和比較。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-AD-4-4",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2C-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}
