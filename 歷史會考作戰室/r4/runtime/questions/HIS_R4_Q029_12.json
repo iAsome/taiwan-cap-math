@@ -1,0 +1,83 @@
+{
+  "id": "HIS_R4_Q029_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-BB-4-1",
+    "AUTH-SOCIAL-LC-HIS-BB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "新研究發現某港的主要航路曾因戰事改道。原有網絡圖應如何更新？",
+  "options": [
+    "刪除所有舊資料",
+    "保留原圖時段，另標改道年份、原因與新路線",
+    "把兩條路線畫成同時永久存在",
+    "只改標題而不改圖例"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "舊圖仍可描述原時段，不宜刪除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "分時段標示可呈現路線變化與證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料只說戰事後改道，非永久同時。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只改標題無法修正路線資訊。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移",
+    "模型修正"
+  ],
+  "representationType": "historical-model",
+  "misconceptionTargets": [
+    "新證據出現就否定全部舊圖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-BB-4-1",
+      "AUTH-SOCIAL-LC-HIS-BB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保存可用舊證據並加入時間化修正，讓使用者看見網絡的變動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他做法不是抹去歷史資料，就是製造同時性錯誤或未真正更新內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

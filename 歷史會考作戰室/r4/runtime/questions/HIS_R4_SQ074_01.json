@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_SQ074_01",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-FB-4-1",
+    "AUTH-SOCIAL-LC-HIS-FB-4-2",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1"
+  ],
+  "stimulusId": "HIS_R4_ST074",
+  "stem": "由工資與物價資料，作業員購買力最可能如何變化？",
+  "options": [
+    "增加45%",
+    "完全不變",
+    "下降，因名目工資增幅低於物價",
+    "無法比較任何方向"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "百分比不能直接相加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個增幅並不相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項正確比較實質方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "已有足夠資料判斷方向。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用",
+    "實質購買力"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "名目工資上升即生活改善"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-FB-4-1",
+      "AUTH-SOCIAL-LC-HIS-FB-4-2",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項以20%工資增幅對照25%物價增幅。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "精確實質幅度需使用物價指數公式計算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

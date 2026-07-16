@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q044_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一幅口岸圖註明『位置示意，非比例』，可以合理判斷什麼？",
+  "options": [
+    "雞籠到滬尾的精確公里數",
+    "四口大致的南北相對位置",
+    "各港每年出口總值",
+    "船隻實際航行時間"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "非比例圖不能用線段換算距離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "示意圖仍可呈現方位與相對位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "出口總值須由統計表提供。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "航行時間還受距離、風浪與船型影響。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用",
+    "地圖限制"
+  ],
+  "representationType": "map-literacy",
+  "misconceptionTargets": [
+    "用非比例圖測量距離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "『非比例』限制的是精確距離測量，不會取消圖上已標示的北向與點位順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項只使用地圖能支持的相對位置，沒有加入未提供的數量資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "HIS_R4_A001"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "HIS_R4_L041",
+  "subject": "history",
+  "unitId": "HIS_R4_U06",
+  "skillId": "HIS_R4_S041",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-1",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "prerequisites": [
+    "HIS_R4_S040"
+  ],
+  "objectives": [
+    "能由契約、地圖與地方志重建清治地方生活",
+    "能說明三類材料的用途與限制",
+    "能交互檢核土地、空間及社會資訊"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L041_SEC1",
+      "title": "契約提供什麼",
+      "content": "土地、租佃、借貸與買賣契約可記錄當事人、界址、價格、租額與見證者。它們直接呈現書面約定，卻不保證談判平等或完全履行；附記與後續訴訟常能補充實況。"
+    },
+    {
+      "id": "HIS_R4_L041_SEC2",
+      "title": "地圖如何閱讀",
+      "content": "清代地方地圖可能用山川、道路、聚落和官署表示空間關係，有些是示意圖而非現代等比例測繪。方向、比例與符號未必一致，不能用尺直接量出真實距離，仍可和現地及其他圖資比對。"
+    },
+    {
+      "id": "HIS_R4_L041_SEC3",
+      "title": "地方志的視角",
+      "content": "地方志多由官員或地方人士編纂，記行政沿革、物產、人物、風俗與災害。它能提供制度化整理，也反映編者認為值得記錄的內容；婦女、弱勢與非正式活動可能較少出現。"
+    },
+    {
+      "id": "HIS_R4_L041_SEC4",
+      "title": "三類材料互補",
+      "content": "契約可把人和權利放進地圖空間，地方志則補充行政與社會背景。若三者不一致，先檢查年份、地名、製作目的和尺度，不要為了得到單一答案刪除差異。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L041_EX1",
+      "prompt": "契約列出東至溪流、西至大路，如何用地圖協助定位？",
+      "steps": [
+        "辨識界址詞",
+        "尋找同時期溪流道路",
+        "檢查地名與河道變化"
+      ],
+      "answer": "用同時期地圖比對自然與交通標誌，再保留位置誤差。",
+      "why": "契約描述相對界址，地圖能提供空間框架；但河道、道路和地名會改變，因此不能只靠今日地圖精確套合。"
+    },
+    {
+      "id": "HIS_R4_L041_EX2",
+      "prompt": "地方志未記某市場，能否說市場不存在？",
+      "steps": [
+        "辨識地方志編纂重點",
+        "查找稅冊與商人帳簿",
+        "避免由沉默作否定"
+      ],
+      "answer": "不能；未記載可能來自選材或市場非正式。",
+      "why": "地方志不是每項活動的完整清冊。若稅冊、契約或帳簿有交易資料，就應說明不同來源的記錄範圍，而非直接否定。"
+    },
+    {
+      "id": "HIS_R4_L041_EX3",
+      "prompt": "舊地圖把兩村畫得很近，可以直接換算實際里程嗎？",
+      "steps": [
+        "查看比例尺",
+        "判斷是否示意圖",
+        "用道路里程或現地資料補證"
+      ],
+      "answer": "沒有可靠比例尺時不能直接換算距離。",
+      "why": "示意圖常重視相對位置與行政關係，圖面距離會被壓縮或放大。道路里程、航程和現代地形比對可提供另一層證據。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "契約有簽名就代表雙方完全平等且自願。",
+      "whyWrong": "書面形式未呈現全部談判能力、語言與制度壓力。",
+      "correction": "補看價格、翻譯、爭議與履約紀錄。"
+    },
+    {
+      "belief": "古地圖和現代地圖一樣可直接用尺量距離。",
+      "whyWrong": "許多舊圖是示意表達，沒有一致比例尺。",
+      "correction": "先辨識製圖目的與比例，再用其他資料校正。"
+    },
+    {
+      "belief": "地方志沒有寫的事就沒有發生。",
+      "whyWrong": "編纂者會選材，非正式或弱勢活動可能被省略。",
+      "correction": "用契約、帳冊、口述與實物補查。"
+    },
+    {
+      "belief": "三種材料不一致就一定有兩種造假。",
+      "whyWrong": "年份、尺度、名稱與觀察目的不同也會造成差異。",
+      "correction": "先建立來源脈絡，再判斷是否真正矛盾。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "契約可直接讀到哪些內容？",
+      "answer": "當事人、標的、界址與書面約定。",
+      "reason": "公平程度和履行情形仍需後續資料。"
+    },
+    {
+      "prompt": "無比例尺古地圖可直接量里程嗎？",
+      "answer": "不可。",
+      "reason": "示意空間不等於等比例測量。"
+    },
+    {
+      "prompt": "地方志的主要限制是什麼？",
+      "answer": "受編纂者目的與選材影響。",
+      "reason": "未被列入不等於地方活動不存在。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-1",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  }
+}

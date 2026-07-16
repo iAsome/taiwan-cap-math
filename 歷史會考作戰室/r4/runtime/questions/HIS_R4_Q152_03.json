@@ -1,0 +1,79 @@
+{
+  "id": "HIS_R4_Q152_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-NA-4-2",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "城市建有引水道，哪項推論最穩健？",
+  "options": [
+    "每戶用水量完全相同",
+    "城市從未缺水",
+    "城市具備把水輸入部分公共或私人用水點的工程",
+    "所有居民免費使用浴場"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "用水量需要住戶與管線資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "工程存在不保證永不缺水。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "引水道能支持供水工程存在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "浴場費用與使用資格需另查。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "推論",
+    "公共工程"
+  ],
+  "representationType": "artifact-inference",
+  "misconceptionTargets": [
+    "設施存在等於平均服務"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-NA-4-2",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把結論限定在工程功能，避免擴大成平均、永久或免費。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "設施遺跡可證明技術與治理，不能單獨證明分配結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

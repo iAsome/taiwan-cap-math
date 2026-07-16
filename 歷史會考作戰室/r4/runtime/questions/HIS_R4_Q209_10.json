@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q209_10",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QB-4-3",
+    "AUTH-SOCIAL-LC-HIS-QC-4-1",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "家庭日記說『麵包變便宜卻買不起』，物價指數也下降。最佳解讀是什麼？",
+  "options": [
+    "價格下降保證每戶生活改善",
+    "通縮可能與失業、減薪並存，名目價格下降不等於所得足以購買",
+    "日記足以代表全國每個家庭",
+    "物價指數證明沒有經濟危機"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "購買力同時取決於所得與就業。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項連結價格和收入兩面。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "個案需要更大樣本互證。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "通縮可正是需求崩落的表現。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解讀"
+  ],
+  "representationType": "生活與指數",
+  "misconceptionTargets": [
+    "低價必然有利"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QB-4-3",
+      "AUTH-SOCIAL-LC-HIS-QC-4-1",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "物價指數能確認平均價格下降，卻沒有提供該家庭收入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "日記記錄失去購買能力，若再與失業和工資資料相符，就能解釋表面矛盾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

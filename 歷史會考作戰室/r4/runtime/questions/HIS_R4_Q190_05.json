@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q190_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "議會調查中，廠主稱工時合理，工人稱疲勞受傷。研究者首先應怎麼做？",
+  "options": [
+    "辨認雙方位置與利益，再查工時簿、醫療和事故紀錄",
+    "因廠主識字便只接受其說法",
+    "因工人受傷便假定每句細節都無須查核",
+    "把兩份證詞平均後當成精確工時"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "立場分析與獨立紀錄可提高查證力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "識字與社會地位不保證陳述完整。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "重要經驗仍可與其他材料交叉驗證。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "相反陳述不能用數學平均製造事實。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "史料評析"
+  ],
+  "representationType": "調查證詞",
+  "misconceptionTargets": [
+    "史料立場只能擇一"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項既保留兩方材料價值，也提出能直接檢查工時與傷害的外部證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "它避免以身分決定真偽，或把證詞差異當成可任意平均的數字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

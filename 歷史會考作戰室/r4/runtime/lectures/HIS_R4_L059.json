@@ -1,0 +1,138 @@
+{
+  "id": "HIS_R4_L059",
+  "subject": "history",
+  "unitId": "HIS_R4_U09",
+  "skillId": "HIS_R4_S059",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "prerequisites": [
+    "HIS_R4_S058"
+  ],
+  "objectives": [
+    "辨認軍事徵用與產業調整材料",
+    "說明人力物資轉向戰爭需求的證據",
+    "避免由單一文書推論所有人處境"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L059_SEC1",
+      "title": "人力動員的多種形式",
+      "content": "戰時人力可能透過志願制度、徵兵、軍屬勞務或工場徵調投入軍事體系。各制度的資格、時期與強制程度不同，看到名冊時要先確認欄位和法律身分，不能把所有被動員者都稱為同一類。"
+    },
+    {
+      "id": "HIS_R4_L059_SEC2",
+      "title": "物資徵集與生活供應",
+      "content": "金屬、糧食、燃料及交通工具可能因軍需而被統制、收購或徵集。公告能說明政府要求，收據則顯示個別交付，市場價格與家庭帳本可進一步檢驗供應短缺及居民負擔。"
+    },
+    {
+      "id": "HIS_R4_L059_SEC3",
+      "title": "產業轉向軍事需求",
+      "content": "工廠增加軍需品、港口優先運送軍用物資、農業調整作物或交售規則，都可能反映戰時產業配置。產量上升不必然代表民生供應增加，必須追查產品用途、分配對象和實際流向。"
+    },
+    {
+      "id": "HIS_R4_L059_SEC4",
+      "title": "辨識材料而不過度推論",
+      "content": "徵用令、工場生產表與個人家書各自回答不同問題。命令不保證每地完全執行，產量表不等於勞工待遇，家書也不能代表全體。有效結論要讓證據範圍與敘述範圍一致。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L059_EX1",
+      "prompt": "工廠表顯示民用品減少、軍需零件增加，最穩當的判斷是什麼？",
+      "steps": [
+        "比較兩類產品",
+        "確認變化方向",
+        "限制對產業的結論"
+      ],
+      "answer": "該工廠生產配置轉向軍需",
+      "why": "表中同時出現民用品下降與軍需零件上升，足以說明這座工廠的配置改變；單一工廠仍不能代表全臺每個產業。"
+    },
+    {
+      "id": "HIS_R4_L059_EX2",
+      "prompt": "家戶留有金屬器具繳交收據，可直接證明什麼？",
+      "steps": [
+        "辨認收據功能",
+        "找出可確認事件",
+        "排除未記載動機"
+      ],
+      "answer": "該戶曾依紀錄交付所列器具",
+      "why": "收據可確認交付者、物品與日期，卻不能單獨說明當事人是否自願，也不能證明所有家戶交付相同數量。"
+    },
+    {
+      "id": "HIS_R4_L059_EX3",
+      "prompt": "港口貨運總量增加，能否直接判定民生物資更充足？",
+      "steps": [
+        "確認統計單位",
+        "查產品用途",
+        "比較民用供應資料"
+      ],
+      "answer": "不能",
+      "why": "貨運總量可能包含大量軍需品，若不知道品項與流向，就無法推論家庭可取得的食物或燃料增加。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把志願制度、徵兵與勞務徵調全部當成同一法律身分。",
+      "whyWrong": "三者的資格、權利義務與強制程度並不相同。",
+      "correction": "先讀名冊名稱、法令依據和服務內容。"
+    },
+    {
+      "belief": "看到徵用命令就認定每戶已交出完全相同的物品。",
+      "whyWrong": "命令內容與各戶實際執行仍需收據或清冊驗證。",
+      "correction": "比較公告要求與地方交付紀錄。"
+    },
+    {
+      "belief": "軍需產量增加代表居民日用品也同步增加。",
+      "whyWrong": "產品用途和分配對象不同，兩者可能呈反向變化。",
+      "correction": "分開檢查軍用與民用產量及流向。"
+    },
+    {
+      "belief": "一封家書可代表所有勞工的動員經驗。",
+      "whyWrong": "個人處境受職業、地點與家庭條件影響。",
+      "correction": "擴大不同群體材料並與行政統計互證。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "徵用公告能否證明每戶實際交付量？",
+      "answer": "不能",
+      "reason": "實際交付仍須家戶收據或地方清冊確認。"
+    },
+    {
+      "prompt": "軍需零件增加、民用品減少表示什麼？",
+      "answer": "工廠生產配置轉向軍需",
+      "reason": "兩類產品的相反變化直接呈現資源轉用。"
+    },
+    {
+      "prompt": "貨運總量可直接代表民生供應嗎？",
+      "answer": "不能",
+      "reason": "尚須知道貨物品項、用途和配送對象。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q095_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S095"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-HA-4-1",
+    "AUTH-SOCIAL-LC-HIS-HA-4-2",
+    "AUTH-SOCIAL-LC-HIS-HB-4-1",
+    "AUTH-SOCIAL-LC-HIS-IA-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某地有中央駐軍但沒有完整稅冊，最穩妥的結論是？",
+  "options": [
+    "中央對當地完全沒有影響",
+    "存在軍事控制證據，但直接民政程度仍待查",
+    "所有居民都已成為中央官員",
+    "駐軍證明當地沒有地方首領"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "駐軍本身就是中央影響的一項證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "軍事存在明確，民政則因缺少稅冊仍需其他資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "駐軍不會使居民自動取得官職。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "軍事據點也可能和地方首領並存。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "有限推論"
+  ],
+  "representationType": "混合證據",
+  "misconceptionTargets": [
+    "有一項證據就全面斷言"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-HA-4-1",
+      "AUTH-SOCIAL-LC-HIS-HA-4-2",
+      "AUTH-SOCIAL-LC-HIS-HB-4-1",
+      "AUTH-SOCIAL-LC-HIS-IA-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "材料只確認軍事面向，不能填補未知的民政與地方關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把已知和待查部分分開，最符合證據界線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

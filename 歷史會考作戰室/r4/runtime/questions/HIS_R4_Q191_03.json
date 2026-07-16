@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q191_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某城平均家庭所得上升，但中位數所得幾乎不變。最可能的解釋之一為何？",
+  "options": [
+    "所有家庭收入都增加同樣金額",
+    "平均值必定計算錯誤",
+    "少數高所得家庭增幅較大，拉高平均值",
+    "中位數可直接顯示最富家庭財富"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若人人同增，中位數也通常會上移。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個統計可同時正確而呈現不同分布。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "高端增加可提高平均而不大改變中間家庭。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "中位數表示排序中點，不描述頂端財富。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "統計分析"
+  ],
+  "representationType": "平均中位數",
+  "misconceptionTargets": [
+    "平均代表典型家庭"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項提供能同時解釋平均上升與中位停滯的分布情境，並非認定數據矛盾。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這提醒研究者加入所得分位，避免用平均值代表每個家庭。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

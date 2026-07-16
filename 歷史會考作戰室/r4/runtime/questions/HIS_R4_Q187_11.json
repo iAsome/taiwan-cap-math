@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q187_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某公司導入自動設備後產量未升，調查發現停電頻繁、員工未受訓且訂單不足。這與工業革命研究共享哪種方法？",
+  "options": [
+    "把失敗全歸於員工態度",
+    "只比較設備外觀是否新穎",
+    "檢查技術、能源、技能與市場是否形成可運作系統",
+    "因為是現代案例，所以不能使用歷史因果概念"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料列出多項結構條件，不能只怪個人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外觀新舊無法解釋停機與銷售。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "四項因素正對應設備實際採用的不同環節。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "跨時代比較可使用共同分析欄位，但要保留差異。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移"
+  ],
+  "representationType": "現代類比",
+  "misconceptionTargets": [
+    "新設備自動帶來成長"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項運用同一套多因素因果架構，又沒有宣稱兩個時代完全相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "它能解釋設備為何未轉成產量，其他選項則忽略明示證據或拒絕合理比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

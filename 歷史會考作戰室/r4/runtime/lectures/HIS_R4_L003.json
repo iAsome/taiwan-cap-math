@@ -1,0 +1,126 @@
+{
+  "id": "HIS_R4_L003",
+  "subject": "history",
+  "unitId": "HIS_R4_U01",
+  "skillId": "HIS_R4_S003",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "HIS_R4_S002"
+  ],
+  "objectives": [
+    "能根據確切年份、時間範圍與相對時間語句排列事件，並處理同時發生與資料不足。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L003_SEC_1",
+      "title": "先找可定位線索",
+      "content": "明確年份最容易定位；『三年後』『此前』『同年』等相對語句則要連到已知事件。排列前先把每則資料改寫成時間點或時間範圍。"
+    },
+    {
+      "id": "HIS_R4_L003_SEC_2",
+      "title": "同時與先後",
+      "content": "兩件事可能同年發生，不能為了排成直線而任意指定月份。若材料只提供年份，最多能說同年，不能再推論哪件先發生。"
+    },
+    {
+      "id": "HIS_R4_L003_SEC_3",
+      "title": "時段的比較",
+      "content": "改革、戰爭或遷徙可能延續多年。比較時要分清開始、結束與重疊；『A開始早於B』不表示A也一定較早結束。"
+    },
+    {
+      "id": "HIS_R4_L003_SEC_4",
+      "title": "順序不等於因果",
+      "content": "事件先發生只是因果分析的必要條件之一。若沒有機制或證據，不能因A在B之前就斷言A造成B。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L003_EX_1",
+      "prompt": "甲發生於1885年，乙在甲後三年，丙發生於1886年，順序為何？",
+      "steps": [
+        "甲定位1885。",
+        "乙換算為1888。",
+        "把1885、1886、1888排序。"
+      ],
+      "answer": "甲、丙、乙。",
+      "why": "相對時間必須先換成可比較年份；乙是1888年，所以丙位在甲與乙之間。"
+    },
+    {
+      "id": "HIS_R4_L003_EX_2",
+      "prompt": "A戰爭1900年開始、1904年結束；B改革1902年開始、1906年結束，兩者關係為何？",
+      "steps": [
+        "標出兩者起訖。",
+        "比較1902至1904。",
+        "描述重疊而不強加因果。"
+      ],
+      "answer": "兩者在1902至1904年間同時進行。",
+      "why": "A先開始也先結束，B在A尚未結束時展開，因此兩個時段有三年曆年重疊。"
+    },
+    {
+      "id": "HIS_R4_L003_EX_3",
+      "prompt": "兩事件只知道都發生在1919年，能否判定先後？",
+      "steps": [
+        "檢查資料精度。",
+        "年份相同。",
+        "避免補上不存在的月日。"
+      ],
+      "answer": "不能；只能判定同年。",
+      "why": "沒有月份或日期時，材料不足以排出年內順序。歷史排序的精確程度不能超過證據。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到事件列在段落前面，就當作發生較早。",
+      "whyWrong": "敘述次序可能依主題安排，不必然是時間順序。",
+      "correction": "以年份與相對時間詞建立順序。"
+    },
+    {
+      "belief": "兩事件同年就自行猜測月份。",
+      "whyWrong": "材料未提供月日，猜測會製造假精確。",
+      "correction": "標記為同年或先後未定。"
+    },
+    {
+      "belief": "只比較事件開始年就判定整段都較早。",
+      "whyWrong": "時段可能交錯，開始與結束需分別比較。",
+      "correction": "畫出起訖區間並找重疊。"
+    },
+    {
+      "belief": "把先發生直接寫成原因。",
+      "whyWrong": "時間先後本身不能證明作用機制。",
+      "correction": "另找行動、制度或資源如何連結兩事件。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "『乙在甲之前兩年』可提供什麼？",
+      "answer": "乙早於甲兩年。",
+      "reason": "相對語句已直接給出差距與方向。"
+    },
+    {
+      "prompt": "同年資料能否必然排出月份？",
+      "answer": "不能。",
+      "reason": "年份精度不足以決定年內次序。"
+    },
+    {
+      "prompt": "順序能否單獨證明因果？",
+      "answer": "不能。",
+      "reason": "還需要可說明影響的證據與機制。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

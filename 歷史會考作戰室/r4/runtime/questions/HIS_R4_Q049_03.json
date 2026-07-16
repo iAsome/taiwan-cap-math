@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q049_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S049"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "戶口簿只登記戶長為『茶商』，不能直接知道哪項資訊？",
+  "options": [
+    "戶長登記的職業",
+    "該戶和茶業有關",
+    "其他家庭成員是否參與採茶、揀茶或帳務",
+    "資料使用戶為行政單位"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "欄位已明列戶長職業。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "茶商稱謂顯示戶長和茶業相關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "戶長欄沒有列出全家個別勞動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "戶口簿形式可看出登記單位。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "分析",
+    "資料沉默"
+  ],
+  "representationType": "household-record",
+  "misconceptionTargets": [
+    "把戶長職業等同全家分工"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "行政資料以戶長為主要欄位，未必記錄婦女、兒童或其他成員的有薪與無薪工作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項正是資料沉默，須由工資簿、家庭帳冊或口述補足。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

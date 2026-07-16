@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q011_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "研究者發現四篇文章的措辭與錯字完全相同。這最可能提示什麼？",
+  "options": [
+    "文章可能共享同一來源或互相抄錄",
+    "四位作者必然親眼看見同一細節",
+    "錯字能證明事件不存在",
+    "文章數量足以排除其他材料"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "共同錯字是來源依賴的重要線索。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相同措辭反而不支持獨立觀察。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文字錯誤不能否定事件本身。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "來源依賴時數量不等於多重證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "文本來源鏈"
+  ],
+  "representationType": "相似性判讀",
+  "misconceptionTargets": [
+    "重複資料當獨立"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "罕見措辭和相同錯字顯示文本間可能存在抄錄關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項提出可查的來源假設，仍需追查最早版本。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

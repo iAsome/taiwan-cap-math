@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q209_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QB-4-3",
+    "AUTH-SOCIAL-LC-HIS-QC-4-1",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某國失業率與激進政黨得票率同時上升，可直接證明失業是唯一原因嗎？",
+  "options": [
+    "不能，還要檢查時序、地區差異、宣傳、制度與其他共同因素",
+    "能，兩條線同方向便排除所有替代解釋",
+    "能，政治結果永遠只有經濟原因",
+    "不能，因為統計資料一律無用"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "相關提供線索但未排除中介與替代原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同向變化本身不具排除力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "政治選擇還受組織、暴力和制度影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "統計仍可用於檢驗分布與變化。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估"
+  ],
+  "representationType": "相關與因果",
+  "misconceptionTargets": [
+    "同步即單因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QB-4-3",
+      "AUTH-SOCIAL-LC-HIS-QC-4-1",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分區資料可檢查失業較高地是否真的有相同得票變化，而非只看全國趨勢。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "政黨組織、暴力與制度紀錄可獨立測試其他機制，避免唯一原因結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_SQ011_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST011",
+  "stem": "材料丁最適合補充哪方面資訊？",
+  "options": [
+    "橋梁使用者的所有想法",
+    "橋梁損壞後曾投入哪些維修資源",
+    "濃霧是否造成裂縫",
+    "守衛當日說話語氣"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "帳冊不會記錄全體使用者心態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "木料與工資可呈現維修投入。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "材料沒有天候或成因鑑定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "支出紀錄不保留口語語氣。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "互補證據"
+  ],
+  "representationType": "維修帳冊",
+  "misconceptionTargets": [
+    "帳冊回答所有問題"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "維修帳冊直接記錄木料及工資，能補足事件後續處理。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合帳冊欄位，沒有把支出推成損壞原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

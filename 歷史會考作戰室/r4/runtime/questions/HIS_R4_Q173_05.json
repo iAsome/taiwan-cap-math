@@ -1,0 +1,83 @@
+{
+  "id": "HIS_R4_Q173_05",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-OA-4-1",
+    "AUTH-SOCIAL-LC-HIS-OA-4-2",
+    "AUTH-SOCIAL-LC-HIS-OA-4-3",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一份天文表的預測長期偏離觀測，學者改用新模型後誤差降低。最穩健的判斷為何？",
+  "options": [
+    "新模型在這組現象上具有較好的預測表現",
+    "新模型因此永遠不會再被修正",
+    "舊模型從未有任何用途",
+    "觀測值應配合權威修改"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "誤差降低直接支持相對表現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一次改善不保證永久正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "舊模型曾服務計算與曆法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "應檢查模型而非竄改觀測。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論",
+    "模型比較"
+  ],
+  "representationType": "data-comparison",
+  "misconceptionTargets": [
+    "新模型等於永遠正確"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-OA-4-1",
+      "AUTH-SOCIAL-LC-HIS-OA-4-2",
+      "AUTH-SOCIAL-LC-HIS-OA-4-3",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只在題示資料範圍內比較兩個模型，不宣稱終極真理。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "科學判斷重視可比較表現，也承認後續證據可能再修正。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

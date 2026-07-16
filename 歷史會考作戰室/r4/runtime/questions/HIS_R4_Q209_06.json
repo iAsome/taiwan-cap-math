@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q209_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QB-4-3",
+    "AUTH-SOCIAL-LC-HIS-QC-4-1",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "在金本位壓力下，政府為維持匯率而升息、削減支出，可能造成什麼後果？",
+  "options": [
+    "借款成本下降且需求必然增加",
+    "信用與公共需求進一步收縮，使衰退加深",
+    "貨幣政策從此不影響銀行",
+    "失業統計自動歸零"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "升息通常提高而非降低借款成本。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "緊縮會壓低投資與支出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "利率和黃金流動會影響銀行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "統計不會因政策名稱消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論"
+  ],
+  "representationType": "政策機制",
+  "misconceptionTargets": [
+    "緊縮必然復甦"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QB-4-3",
+      "AUTH-SOCIAL-LC-HIS-QC-4-1",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "升息資料可先證明融資成本上升，預算資料則呈現政府需求減少。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若其後投資、產出和就業續降，便有獨立結果支持緊縮加深衰退。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

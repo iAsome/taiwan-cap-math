@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q003_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "研究者只有『甲先於乙，丙晚於乙，丁與甲同年』。哪項必然成立？",
+  "options": [
+    "丙早於甲",
+    "丁晚於乙",
+    "乙先於丁",
+    "丙晚於丁"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙在乙後，甲在乙前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "丁與甲同年，故不晚於乙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丁等同甲年，應早於乙。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "丙在乙後，而丁在乙前。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "關係推理"
+  ],
+  "representationType": "邏輯排序",
+  "misconceptionTargets": [
+    "相對語句串接錯誤"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲與丁同年且都早於乙，丙又晚於乙，因此丙必晚於丁。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐條串成丁等同甲、早於乙、早於丙，第四項成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_Q134_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S134"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-LA-4-1",
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LC-HIS-LB-4-2",
+    "AUTH-SOCIAL-LC-HIS-M-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一份地方糧食報告突然遠高於鄰近各縣，最合理的下一步是？",
+  "options": [
+    "立刻宣布全國豐收",
+    "刪除鄰縣資料",
+    "檢查申報壓力、計量口徑、倉庫與人口消費資料",
+    "把數字改成平均值"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一異常值不能代表全國。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除對照會失去查核機會。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "多項資料可判斷異常值是否可靠。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "擅改平均會掩蓋差異而非解釋。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "異常資料"
+  ],
+  "representationType": "資料評估",
+  "misconceptionTargets": [
+    "官方數字無需查核"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-LA-4-1",
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LC-HIS-LB-4-2",
+      "AUTH-SOCIAL-LC-HIS-M-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "極端數值需查來源及測量方式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項提供可重現的核對路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

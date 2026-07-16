@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q094_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S094"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-HA-4-1",
+    "AUTH-SOCIAL-LC-HIS-HA-4-2",
+    "AUTH-SOCIAL-LC-HIS-HB-4-1",
+    "AUTH-SOCIAL-LC-HIS-IA-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲戶年產一百石納十石，乙戶年產二十石也納十石。哪項判斷正確？",
+  "options": [
+    "乙戶稅負占產量比例較高",
+    "兩戶負擔比例都是百分之十",
+    "甲戶必須交出全部收成",
+    "無法比較任何比例"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲納十分之一，乙納二分之一，乙的比例明顯較高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙戶十除以二十為二分之一，不是百分之十。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲戶只納十石，仍保留九十石。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目已給產量與稅額，可以計算比例。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "數據推理"
+  ],
+  "representationType": "數量資料",
+  "misconceptionTargets": [
+    "只看名目稅額"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-HA-4-1",
+      "AUTH-SOCIAL-LC-HIS-HA-4-2",
+      "AUTH-SOCIAL-LC-HIS-HB-4-1",
+      "AUTH-SOCIAL-LC-HIS-IA-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩戶同納十石，但甲占一成、乙占五成，所以乙負擔較重。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項由題目數字直接算出，其他選項計算或判讀錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "HIS_R4_Q066_08",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-1",
+    "AUTH-SOCIAL-LC-HIS-FA-4-2",
+    "AUTH-SOCIAL-LC-HIS-FA-4-3",
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2C-4-1",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "若統計表只列軍法判決確定者，用它估計白色恐怖影響會漏掉哪類人？",
+  "options": [
+    "所有曾閱讀報紙的人",
+    "每位參加地方選舉者",
+    "未出生的後代人口",
+    "遭監控、失業、短期拘押或受牽連但未判決者"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "閱讀報紙不必然受政治迫害。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "投票者不等於案件受難者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未出生人口不屬當時樣本。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "這些經驗不會進入判決統計。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估",
+    "資料缺席"
+  ],
+  "representationType": "sentencing-statistics",
+  "misconceptionTargets": [
+    "有判決才算受影響"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-1",
+      "AUTH-SOCIAL-LC-HIS-FA-4-2",
+      "AUTH-SOCIAL-LC-HIS-FA-4-3",
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2C-4-1",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項指出以判決為分母所造成的可見範圍限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "判決表仍有價值，但不能獨自代表全部社會影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

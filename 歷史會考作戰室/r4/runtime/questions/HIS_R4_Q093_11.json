@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q093_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-HA-4-1",
+    "AUTH-SOCIAL-LC-HIS-HA-4-2",
+    "AUTH-SOCIAL-LC-HIS-HB-4-1",
+    "AUTH-SOCIAL-LC-HIS-IA-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "學校社團用『只看老師推薦』模擬察舉。要呈現制度限制，最適合再加入什麼？",
+  "options": [
+    "把社團名稱換成朝代名",
+    "讓所有人自動當幹部",
+    "比較推薦者與候選人的關係是否影響結果",
+    "取消候選人資料"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改名稱不會呈現推薦制度的風險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人人自動任職不再是選拔制度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "人際關係可能影響推薦，能模擬徇私與偏差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "取消資料會使選拔無法進行，也不具分析價值。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "模型設計"
+  ],
+  "representationType": "生活轉化",
+  "misconceptionTargets": [
+    "只模擬程序不檢驗偏差"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-HA-4-1",
+      "AUTH-SOCIAL-LC-HIS-HA-4-2",
+      "AUTH-SOCIAL-LC-HIS-HB-4-1",
+      "AUTH-SOCIAL-LC-HIS-IA-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "察舉的限制之一是推薦者判斷可能受關係影響。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓模型可觀察制度風險，且不把歷史等同現代社團。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_Q228_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S228"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LC-HIS-LB-4-2",
+    "AUTH-SOCIAL-LC-HIS-QC-4-3",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一項調查只涵蓋首都居民，哪種結論最符合證據？",
+  "options": [
+    "全國居民意見已完全確定",
+    "首都居民必定代表鄉村",
+    "在該調查樣本中出現某趨勢，能否外推全國仍待其他地區資料",
+    "因樣本有限，所以任何觀察都不能提出"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一城市不能直接代表全國。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "城鄉人口和經驗可能不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項保留局部發現並清楚標示限制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "有限資料仍可支持樣本範圍內的描述。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "推論限制"
+  ],
+  "representationType": "抽樣資料",
+  "misconceptionTargets": [
+    "樣本等於母體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LC-HIS-LB-4-2",
+      "AUTH-SOCIAL-LC-HIS-QC-4-3",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "材料只能支持受訪首都居民的結果，不能越過未觀察地區。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三個結論沒有放棄分析，而是把全國推論保留為待檢驗問題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

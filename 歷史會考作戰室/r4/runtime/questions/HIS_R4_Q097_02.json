@@ -1,0 +1,82 @@
+{
+  "id": "HIS_R4_Q097_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-HA-4-1",
+    "AUTH-SOCIAL-LC-HIS-HA-4-2",
+    "AUTH-SOCIAL-LC-HIS-HB-4-1",
+    "AUTH-SOCIAL-LC-HIS-IA-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一件違法案件可以直接證明什麼？",
+  "options": [
+    "所有人都違法",
+    "特定行為至少在該案件中發生",
+    "法律從未存在",
+    "全國執行情況完全相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一案件不能概括全部人口。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "案件記錄能證明特定違規在該情境出現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "違法概念反而以規則存在為前提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一地一案不能代表全國執行情況。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "有限推論"
+  ],
+  "representationType": "案件紀錄",
+  "misconceptionTargets": [
+    "個案推普遍"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-HA-4-1",
+      "AUTH-SOCIAL-LC-HIS-HA-4-2",
+      "AUTH-SOCIAL-LC-HIS-HB-4-1",
+      "AUTH-SOCIAL-LC-HIS-IA-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "案件只提供特定人事時地證據，第二項控制了推論範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘選項把單一資料擴大成全國或否定法律存在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

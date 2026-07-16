@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_SQ224_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LC-HIS-LB-4-2",
+    "AUTH-SOCIAL-LC-HIS-QC-4-3",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": "HIS_R4_ST224",
+  "stem": "乙地港口停運使丁地缺料，最直接支持哪項推論？",
+  "options": [
+    "跨國分工會使一地中斷傳到其他生產環節",
+    "港口停運必定由戰爭造成",
+    "丁地工人不再需要任何零件",
+    "企業利潤一定增加"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "缺料形成從乙地到丁地的影響鏈。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "材料沒有說明停運原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丁地正因需要零件才停產。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "延誤與利潤方向未提供。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "因果分析"
+  ],
+  "representationType": "共享流程",
+  "misconceptionTargets": [
+    "供應鏈不會傳遞風險"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LC-HIS-LB-4-2",
+      "AUTH-SOCIAL-LC-HIS-QC-4-3",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "乙地零件原本要經港口送往丁地，停運後缺料符合供應鏈相依機制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "材料沒有提供戰爭或利潤，不能在可見因果鏈之外增加結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

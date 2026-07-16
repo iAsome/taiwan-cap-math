@@ -1,0 +1,142 @@
+{
+  "id": "HIS_R4_L011",
+  "subject": "history",
+  "unitId": "HIS_R4_U02",
+  "skillId": "HIS_R4_S011",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "prerequisites": [
+    "HIS_R4_S010"
+  ],
+  "objectives": [
+    "能以兩份以上來源獨立、位置不同的史料交叉查證事件，辨認一致、互補與矛盾，並避免把重複轉載誤當多重證據。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L011_SEC_1",
+      "title": "為何需要交叉查證",
+      "content": "單一來源可能看見局部、記錄錯誤或有特定目的。不同來源若獨立記下相同核心資訊，可提高可信度；若內容不同，也能暴露事件的複雜性與待查問題。"
+    },
+    {
+      "id": "HIS_R4_L011_SEC_2",
+      "title": "來源獨立性",
+      "content": "三篇報紙若都抄自同一通訊稿，實際上仍只有一條資訊來源。查證時要追到材料的形成鏈，分辨親自觀察、採訪、轉述及後來引用。"
+    },
+    {
+      "id": "HIS_R4_L011_SEC_3",
+      "title": "處理矛盾",
+      "content": "日期、數量或責任歸屬不一致時，不應任意取平均。應比較作者位置、記錄時間、計量方式與保存狀況，並把確定部分與未定部分分開。"
+    },
+    {
+      "id": "HIS_R4_L011_SEC_4",
+      "title": "互補證據",
+      "content": "不同材料可能回答不同層面：帳冊呈現交易量，日記記錄感受，法令說明制度。交叉查證不是要求文字完全相同，而是把各自可支持的資訊組合成較完整圖像。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L011_EX_1",
+      "prompt": "兩家報紙都寫港口關閉，但文章均引用同一份政府公告，算幾條獨立證據？",
+      "steps": [
+        "追查兩篇文章的共同來源。",
+        "辨認它們沒有各自採訪。",
+        "把公告本身視為一條來源。"
+      ],
+      "answer": "主要算一條資訊來源。",
+      "why": "版面有兩篇不等於證據獨立；若兩者都只轉載同一公告，就只能證明公告曾如此發布。"
+    },
+    {
+      "id": "HIS_R4_L011_EX_2",
+      "prompt": "商人帳冊記錄貨量下降，居民日記提到道路中斷，兩者如何交叉使用？",
+      "steps": [
+        "先確認年代與地點相符。",
+        "分別辨認數量及生活線索。",
+        "尋找道路中斷影響運輸的其他證據。"
+      ],
+      "answer": "可提出道路中斷與貨量下降可能相關的假設。",
+      "why": "帳冊與日記彼此互補，但仍需運輸紀錄才能證明作用途徑；不能只因同時發生就斷言因果。"
+    },
+    {
+      "id": "HIS_R4_L011_EX_3",
+      "prompt": "甲名冊記120人，乙報告寫約150人，應如何處理？",
+      "steps": [
+        "查兩份材料的統計時間與定義。",
+        "確認是否包含同一群體。",
+        "保留可支持的範圍而不取平均。"
+      ],
+      "answer": "先查計數口徑，再標明人數仍有差異。",
+      "why": "乙的『約』可能是估計，甲也可能漏登。未釐清口徑前，把兩數平均成135人沒有史料依據。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把同一公告的多次轉載當成多份獨立見證。",
+      "whyWrong": "轉載共享同一資訊源，數量增加並未提供新的觀察位置。",
+      "correction": "追查引用鏈並計算真正獨立來源。"
+    },
+    {
+      "belief": "兩份材料數字不同就認定其中一份造假。",
+      "whyWrong": "統計時間、範圍或單位不同也會造成合理差異。",
+      "correction": "先比對定義與形成過程，再評估錯誤或欺瞞。"
+    },
+    {
+      "belief": "遇到矛盾數字便取平均值。",
+      "whyWrong": "平均會製造原資料不存在的新數字，也掩蓋差異原因。",
+      "correction": "保留各數值並說明可確認與待查部分。"
+    },
+    {
+      "belief": "只找支持自己原先想法的材料。",
+      "whyWrong": "選擇性取證會忽略反例，使結論看似穩固卻無法受檢驗。",
+      "correction": "主動搜尋可能否定假設的獨立來源。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "轉載自同一公告的兩篇文章是否獨立？",
+      "answer": "通常不是。",
+      "reason": "資訊形成鏈相同，沒有新增獨立觀察。"
+    },
+    {
+      "prompt": "史料矛盾時可直接平均嗎？",
+      "answer": "不可。",
+      "reason": "應先查口徑、時間與作者位置。"
+    },
+    {
+      "prompt": "不同類型史料一定要文字一致嗎？",
+      "answer": "不必。",
+      "reason": "它們可從數量、制度與經驗等面向互補。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  }
+}

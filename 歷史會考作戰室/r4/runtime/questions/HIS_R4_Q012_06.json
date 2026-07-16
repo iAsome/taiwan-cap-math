@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q012_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某村只有1900年的人口數，能否判斷1880至1920年的長期趨勢？",
+  "options": [
+    "能，一個數字足以畫出趨勢",
+    "不能，至少需要前後多個可比較時間點",
+    "能，只要1900年人口很多",
+    "不能，因人口不能作歷史資料"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一時間點沒有方向資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "多期資料才能辨認增減與波動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "數值大小不等於變化方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人口統計是重要的社會史材料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "時間範圍"
+  ],
+  "representationType": "單點統計",
+  "misconceptionTargets": [
+    "單點推趨勢"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "趨勢必須比較不同時間點，1900年的單一數值只能描述當時規模。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項指出缺少的資料結構，而非否定人口研究。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

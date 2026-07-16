@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_Q215_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-KB-4-2",
+    "AUTH-SOCIAL-LC-HIS-QC-4-1",
+    "AUTH-SOCIAL-LC-HIS-QC-4-2",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "研究破譯情報時，為何不能只看戰後回憶錄？",
+  "options": [
+    "回憶錄完全沒有價值",
+    "記憶與保密可能影響敘述，需與截收電文、解碼紀錄及作戰日誌互證",
+    "同期電文永遠無法閱讀",
+    "情報史不需要事件日期"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "回憶仍可呈現決策者經驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "多源比對可校正記憶及事後誇大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "許多電文和解碼資料後來已解密。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "先後順序決定情報是否來得及使用。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "評估"
+  ],
+  "representationType": "機密情報來源",
+  "misconceptionTargets": [
+    "事後記憶等同全貌"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-KB-4-2",
+      "AUTH-SOCIAL-LC-HIS-QC-4-1",
+      "AUTH-SOCIAL-LC-HIS-QC-4-2",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "截收與解碼檔案提供同期內容和時間戳，能檢查回憶中的具體說法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "部隊日誌另顯示情報何時轉成行動，避免只知解碼存在卻不知效果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

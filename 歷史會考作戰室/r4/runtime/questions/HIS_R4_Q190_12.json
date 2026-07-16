@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q190_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要評估工業化是否改善某城工人生活，哪組材料最完整？",
+  "options": [
+    "只看一座廠房外觀",
+    "只讀一篇廠主演說",
+    "只統計機器總數",
+    "實質工資、工時、家庭預算、職災、住房與工人敘事"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "建築外觀不能呈現家庭生活。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單一管理者觀點代表性有限。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "設備數不等於所得與健康。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此組同時含量化條件與經驗材料。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "研究設計"
+  ],
+  "representationType": "多源評估",
+  "misconceptionTargets": [
+    "單一指標判斷生活"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項可從收入、時間、風險、支出、居住和主體經驗多面向檢驗生活變化。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前三項都只觸及生產或廠方一側，無法回答工人實際福祉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

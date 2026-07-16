@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q005_07",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S005"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某城市十年內人口增加，能否直接推出全國都以同速度成長？",
+  "options": [
+    "能，城市必然代表全國",
+    "能，十年已足夠",
+    "不能，還需其他地區與全國資料",
+    "不能，人口不能研究"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一城市代表性不足。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "時間長不會自動補足空間樣本。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項限定推論範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人口有統計可研究。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "範圍限制"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "局部概括全國"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "城市資料只能直接說明該城市，無法代表不同區域。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項要求補足樣本，而非否定人口研究。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

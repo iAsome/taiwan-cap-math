@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_Q062_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "表格只列官方收購量，能直接知道什麼？",
+  "options": [
+    "農民全部自用量",
+    "黑市交易總量",
+    "官方管道收購的數量",
+    "地方全部產量"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "自用量未列在收購欄。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未登記交易不在官方表內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項正是欄位定義。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "收購只是產量的一部分流向。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "理解",
+    "欄位定義"
+  ],
+  "representationType": "procurement-table",
+  "misconceptionTargets": [
+    "收購等同產量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓結論與表格欄位一致，不把官方收購誤作全部生產。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他流向需要家庭帳本或生產調查。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

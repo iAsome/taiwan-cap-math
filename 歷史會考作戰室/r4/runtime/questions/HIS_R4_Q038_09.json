@@ -1,0 +1,85 @@
+{
+  "id": "HIS_R4_Q038_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-1",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "糖出口額增加兩成、出口量不變，最可能先檢查什麼？",
+  "options": [
+    "糖價、稅率或計價方式是否改變",
+    "甘蔗是否完全消失",
+    "所有船隻是否沉沒",
+    "人口是否歸零"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "同量而金額變動通常與單價或計價有關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "仍有出口量，不能說甘蔗消失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "船隻全沉沒無法解釋持續出口。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "交易存在也否定人口歸零。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析",
+    "價量關係"
+  ],
+  "representationType": "data-inference",
+  "misconceptionTargets": [
+    "出口額增加必是產量增加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-1",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項直接針對金額與數量差異提出可查證變數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他選項與仍有出口的資料互相矛盾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

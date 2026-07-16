@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q010_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要評估『某政策是人口外移的唯一原因』，最重要的改進為何？",
+  "options": [
+    "把『唯一』改成更大的字體",
+    "刪除所有人口統計",
+    "只引用政策制定者的自傳",
+    "比較就業、戰亂、環境等替代因素及遷徙時序"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "字體不會增加因果證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除統計會失去待解釋現象。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "制定者自傳只提供單一位置材料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "主因與唯一原因都須排除替代解釋。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "競爭解釋"
+  ],
+  "representationType": "因果評估",
+  "misconceptionTargets": [
+    "唯一原因未排他"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "『唯一』要求證明其他可行因素不足以解釋外移，且政策作用時序吻合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項建立比較設計，能支持或推翻原主張。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

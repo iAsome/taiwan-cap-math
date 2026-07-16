@@ -1,0 +1,136 @@
+{
+  "id": "HIS_R4_L074",
+  "subject": "history",
+  "unitId": "HIS_R4_U11",
+  "skillId": "HIS_R4_S074",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-FB-4-1",
+    "AUTH-SOCIAL-LC-HIS-FB-4-2",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1"
+  ],
+  "prerequisites": [
+    "HIS_R4_S073"
+  ],
+  "objectives": [
+    "比較成長對勞工、企業、城鄉與性別群體的影響",
+    "區分名目所得、實質所得與分配",
+    "以群體內差異修正平均數敘事"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L074_SEC1",
+      "title": "成長與分配是兩個問題",
+      "content": "總產值增加表示經濟規模擴大，不會直接說明收益落在誰手中。要比較生活改善，需看扣除物價後的實質工資、家庭所得分位、工時、失業與公共服務；平均所得上升也可能與群體差距擴大同時出現。"
+    },
+    {
+      "id": "HIS_R4_L074_SEC2",
+      "title": "勞工與企業的不同位置",
+      "content": "企業可從出口、投資與技術累積獲利，勞工則取得工資和工作機會，也承擔加班、職災及景氣波動。中小企業、家庭代工、大企業與受僱者的議價能力不同，不能用『企業』或『勞工』各當成內部一致群體。"
+    },
+    {
+      "id": "HIS_R4_L074_SEC3",
+      "title": "城鄉與區域差異",
+      "content": "都市聚集工業、學校與醫療，農村可能透過匯款與市場受益，也可能面對青年外流、農地轉用和服務不足。原住民族地區及離島受到交通、土地與就業機會限制，總體成長率難以呈現區域可近性。"
+    },
+    {
+      "id": "HIS_R4_L074_SEC4",
+      "title": "性別與家庭分工",
+      "content": "女性大量進入出口工廠與服務業，提高現金收入及家庭決策資源，卻常集中於較低薪職位，並持續承擔家務與照顧。比較性別影響要同看職類、薪資、升遷、工時及無薪勞動，不能只計就業人數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L074_EX1",
+      "prompt": "工資上升10%，物價上升15%，勞工購買力如何變化？",
+      "steps": [
+        "辨認名目工資",
+        "比較物價漲幅",
+        "判斷實質方向"
+      ],
+      "answer": "實質購買力大致下降",
+      "why": "名目收入增幅低於物價增幅，同樣工資能購買的商品反而減少；只看薪資數字上升會高估生活改善。"
+    },
+    {
+      "id": "HIS_R4_L074_EX2",
+      "prompt": "平均所得上升，但最低所得五分之一停滯，應如何表述？",
+      "steps": [
+        "分開平均與分位",
+        "辨認受益差異",
+        "避免全體化"
+      ],
+      "answer": "整體所得成長未平均分配到最低所得群體",
+      "why": "平均值受到較高所得者成長影響，最低分位停滯表示部分家庭沒有同步改善，兩項資料並不矛盾。"
+    },
+    {
+      "id": "HIS_R4_L074_EX3",
+      "prompt": "女性就業率上升可否證明性別平等已完成？",
+      "steps": [
+        "確認就業參與",
+        "增加職類薪資指標",
+        "檢查無薪照顧"
+      ],
+      "answer": "不能，還需比較工作品質、報酬及家庭分工",
+      "why": "就業率只顯示是否進入勞動市場，無法回答薪資、升遷、職業隔離與照顧負擔是否平等。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "國內生產毛額上升代表每個家庭等量變富。",
+      "whyWrong": "總量沒有呈現所得分位與群體差異。",
+      "correction": "加入中位數、分位、物價與公共服務資料。"
+    },
+    {
+      "belief": "名目工資增加就等於購買力增加。",
+      "whyWrong": "物價若漲得更快，實質工資仍會下降。",
+      "correction": "以物價指數調整工資後再比較。"
+    },
+    {
+      "belief": "所有企業都同樣受益於出口成長。",
+      "whyWrong": "規模、產業、資本與市場風險並不相同。",
+      "correction": "分辨大企業、中小企業、代工與不同產業。"
+    },
+    {
+      "belief": "女性就業增加後，家務照顧自然平均分配。",
+      "whyWrong": "有薪與無薪工作的分工可能不同步。",
+      "correction": "同時調查就業工時及家庭照顧時數。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "比較生活改善為何要使用實質工資？",
+      "answer": "扣除物價變動後才看得出購買力",
+      "reason": "名目金額上升可能被更高的物價抵銷。"
+    },
+    {
+      "prompt": "平均所得能顯示最低所得家庭處境嗎？",
+      "answer": "不能完整顯示",
+      "reason": "必須另看所得分位與中位數資料。"
+    },
+    {
+      "prompt": "性別勞動比較除就業率還需看什麼？",
+      "answer": "職類、薪資、升遷、工時與照顧",
+      "reason": "這些指標反映工作品質及無薪負擔。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-FB-4-1",
+      "AUTH-SOCIAL-LC-HIS-FB-4-2",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1"
+    ]
+  }
+}

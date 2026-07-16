@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q009_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某篇匿名社論沒有日期與報刊名稱。研究者最穩妥的做法是？",
+  "options": [
+    "依語氣猜出作者姓名並當成事實",
+    "把它直接歸入最想研究的年代",
+    "因匿名便宣稱內容全部錯誤",
+    "標示來源資訊不足，只提出可由內文支持的有限判斷"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "語氣只能形成待驗證的作者假設。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺日期時不能任意指定年代。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "匿名不會自動使每項陳述為假。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "有限結論符合現有資訊邊界。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "來源限制"
+  ],
+  "representationType": "匿名文本",
+  "misconceptionTargets": [
+    "填補未知脈絡"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "作者、日期及刊物皆缺失，材料脈絡不完整，結論強度必須縮小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項公開限制並保留可查內在線索，是最可檢驗的處理。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

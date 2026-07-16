@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q044_12",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要檢驗『打狗出口的糖主要來自南部產區』，哪組證據最完整？",
+  "options": [
+    "只看打狗名稱的由來",
+    "只問今日遊客喜歡哪種糖",
+    "只量港口倉庫高度",
+    "比較糖產區、陸運水運路線、商號帳冊與出口清冊"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地名來源不能證明貨物來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "現代偏好與清末商路不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "倉庫高度無法辨識糖的產地。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四類資料可連結生產、運輸、收購與出口。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計",
+    "商路查證"
+  ],
+  "representationType": "evidence-chain",
+  "misconceptionTargets": [
+    "從出口港直接猜產地"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "『主要來自』需要產區和貨物流向的連續證據，不能只靠港口商品總數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項能追蹤糖從生產地經交通與商號到出口清冊的完整鏈條。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

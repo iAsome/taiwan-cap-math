@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q189_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某城人口十年增加四萬。要判斷增加來源，最需要哪組資料？",
+  "options": [
+    "市徽圖案與建築高度",
+    "煤煙顏色與報紙售價",
+    "工廠名稱和街道寬度",
+    "出生、死亡、移入與移出紀錄"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "象徵與高度不能拆分人口來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "污染和售價不提供人口平衡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "名稱及道路形態也無法計算遷移。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四項紀錄可把自然增加與遷移分開。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "研究設計"
+  ],
+  "representationType": "人口資料",
+  "misconceptionTargets": [
+    "淨增加全是移民"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項構成人口平衡所需的完整流量資料，能解釋期初到期末的變化。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其他資料可研究城市文化或環境，卻不能回答四萬人如何增加。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

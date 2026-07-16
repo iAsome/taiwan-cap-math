@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q012_07",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一份軍官日誌未提某場抗議，最合理的判斷是？",
+  "options": [
+    "抗議必然沒有發生",
+    "軍官一定故意說謊",
+    "日誌的沉默不足以單獨證明抗議不存在",
+    "抗議一定發生且規模巨大"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未記載可能有多種形成原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有證據可確定作者蓄意隱瞞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "需查日誌範圍及其他當時材料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沉默也不能反向證明事件存在。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "沉默證據"
+  ],
+  "representationType": "日誌缺載",
+  "misconceptionTargets": [
+    "未記載等於未發生"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "日誌可能未涵蓋抗議地點、作者不知道或選擇省略，因此沉默不是充分反證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項守住可知範圍，也未假定抗議必然存在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

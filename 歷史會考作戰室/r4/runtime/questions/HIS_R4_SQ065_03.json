@@ -1,0 +1,91 @@
+{
+  "id": "HIS_R4_SQ065_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-1",
+    "AUTH-SOCIAL-LC-HIS-FA-4-2",
+    "AUTH-SOCIAL-LC-HIS-FA-4-3",
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2C-4-1",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST065",
+  "stem": "要估計該市受難人數，下一步最適合怎麼做？",
+  "options": [
+    "把米價指數260直接當人數",
+    "整合戶籍、死亡與失蹤名冊、醫療紀錄及家屬申報並去重",
+    "只把會議出席者算成受難者",
+    "由一篇日記推算全市比例"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "物價指數不是人口件數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項建立多源名冊與去重程序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "出席不等於受難身分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一個案無法估計母體。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計",
+    "人口估計"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "以不相干數字代替受難統計"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-1",
+      "AUTH-SOCIAL-LC-HIS-FA-4-2",
+      "AUTH-SOCIAL-LC-HIS-FA-4-3",
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2C-4-1",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項能處理死亡、失蹤、漏列與重複登錄。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "估計成果還須公開受難定義及資料缺漏。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q189_08",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一份全市平均死亡率下降的報告，最不能回答哪個問題？",
+  "options": [
+    "全市平均值是否較前期低",
+    "可否再比較不同年份",
+    "報告可能呈現整體健康趨勢",
+    "各階級與街區是否都以相同幅度改善"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "報告本身可以回答平均數前後差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若有多期數值即可比較年份。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "平均死亡率是整體趨勢的一種指標。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "平均值沒有提供群體與空間分布。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據評估"
+  ],
+  "representationType": "統計報告",
+  "misconceptionTargets": [
+    "平均值代表每個群體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項要求分組資料，而全市平均數會把富裕與貧困街區的差異合併。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其他三項都仍可在平均死亡率的資料層次上合理回答。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

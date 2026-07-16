@@ -1,0 +1,136 @@
+{
+  "id": "HIS_R4_L048",
+  "subject": "history",
+  "unitId": "HIS_R4_U07",
+  "skillId": "HIS_R4_S048",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "prerequisites": [
+    "HIS_R4_S047"
+  ],
+  "objectives": [
+    "能讀取貿易表的年份、單位與品項",
+    "能把商品趨勢和口岸地圖交互判讀",
+    "能分辨總額、比例與成長率所回答的問題"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L048_SEC1",
+      "title": "先確認統計欄位",
+      "content": "歷史貿易表常列年份、商品、數量、價值、口岸或貿易對象。作答前先看單位與是否為名目金額；同一數字若分別代表銀兩、重量或百分比，意義完全不同，也不能直接相加。"
+    },
+    {
+      "id": "HIS_R4_L048_SEC2",
+      "title": "趨勢不等於原因",
+      "content": "某商品出口從低到高，能證明數值在所列期間增加，卻不能單靠表格決定是價格、產量、匯率或記錄方式造成。原因必須由政策、氣候、價格或運輸等其他資料補證。"
+    },
+    {
+      "id": "HIS_R4_L048_SEC3",
+      "title": "地圖與表格互補",
+      "content": "地圖可顯示口岸、產區和路線的空間關係，表格則呈現不同年份的數量變化。兩者合讀時，先確定年代一致，再用地圖提出運輸假設；非比例示意圖仍不能提供精確距離。"
+    },
+    {
+      "id": "HIS_R4_L048_SEC4",
+      "title": "總量與比例要分清",
+      "content": "出口總值上升時，某商品占比仍可能下降，因為其他商品成長更快。反之，占比提高也不必然表示實際數量增加。會考常要求在總量、比例與變化幅度之間作準確區分。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L048_EX1",
+      "prompt": "茶出口值由20增至50，糖由80增至100，哪項成長幅度較大？",
+      "steps": [
+        "分別計算增加量或相對成長",
+        "茶增加30且為原值的2.5倍",
+        "糖增加20且為原值的1.25倍"
+      ],
+      "answer": "茶的增加量與相對成長都較大。",
+      "why": "茶從20增到50，增加30；糖從80增到100，只增加20。若看倍數，茶成為原來2.5倍，也高於糖的1.25倍。"
+    },
+    {
+      "id": "HIS_R4_L048_EX2",
+      "prompt": "總出口由100增為200，樟腦由40增為60。樟腦占比如何變化？",
+      "steps": [
+        "算前期占比40除以100",
+        "算後期占比60除以200",
+        "比較40%與30%"
+      ],
+      "answer": "出口值增加，但占比由40%降為30%。",
+      "why": "樟腦本身增加20，不能據此說占比也增加。總出口成長得更快，所以樟腦在整體中的比例反而下降。"
+    },
+    {
+      "id": "HIS_R4_L048_EX3",
+      "prompt": "地圖顯示北部口岸和茶產區相近，統計又顯示北部茶出口上升，可直接證明運費下降嗎？",
+      "steps": [
+        "確認地圖只提供空間關係",
+        "確認統計只提供出口趨勢",
+        "找出運費資料缺口"
+      ],
+      "answer": "不能；仍需運價、路線或運輸時間資料。",
+      "why": "產區靠近口岸可以提出運輸便利的假設，出口上升也與市場擴張相容，但兩項資料都沒有直接列出運費，因此不能斷定成本下降。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "數值增加就表示所占比例一定增加。",
+      "whyWrong": "比例還取決於總量，總量若成長更快，占比可能下降。",
+      "correction": "分別計算實際值與占總額百分比。"
+    },
+    {
+      "belief": "表格呈現相關，就已證明因果。",
+      "whyWrong": "同步變化可能由價格、產量或其他共同因素造成。",
+      "correction": "用其他來源檢驗可能機制。"
+    },
+    {
+      "belief": "兩張不同年代的地圖可以直接疊合比較。",
+      "whyWrong": "行政範圍、符號與比例可能不同。",
+      "correction": "先核對年代、圖例、範圍與比例。"
+    },
+    {
+      "belief": "金額欄和重量欄可以直接相加。",
+      "whyWrong": "兩欄的計量單位和意義不同。",
+      "correction": "只比較同單位資料，必要時另算單價。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "出口值增加能否單獨證明產量增加？",
+      "answer": "不能。",
+      "reason": "價格上升也可能使出口值增加。"
+    },
+    {
+      "prompt": "表格與地圖合讀前最先檢查什麼？",
+      "answer": "年代、單位、圖例與範圍。",
+      "reason": "條件不一致會造成錯誤對照。"
+    },
+    {
+      "prompt": "占比下降是否表示實際值一定下降？",
+      "answer": "不一定。",
+      "reason": "實際值可增加，但總量成長得更快。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  }
+}

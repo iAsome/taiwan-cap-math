@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_Q201_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S201"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-OB-4-2",
+    "AUTH-SOCIAL-LC-HIS-OB-4-3",
+    "AUTH-SOCIAL-LC-HIS-QB-4-1",
+    "AUTH-SOCIAL-LC-HIS-QB-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "殖民醫院門診人次增加，哪項結論仍不能直接成立？",
+  "options": [
+    "醫院有人使用",
+    "可進一步研究疾病種類",
+    "門診量可按年份比較",
+    "全境每一居民的健康都以相同幅度改善"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人次資料至少證明服務被使用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "病例欄位可能提供疾病資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "同口徑時間序列可以比較使用量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "門診缺少全人口分母、地區與健康結果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "證據界線"
+  ],
+  "representationType": "醫療統計",
+  "misconceptionTargets": [
+    "服務人次等於全民成效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-OB-4-2",
+      "AUTH-SOCIAL-LC-HIS-OB-4-3",
+      "AUTH-SOCIAL-LC-HIS-QB-4-1",
+      "AUTH-SOCIAL-LC-HIS-QB-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項越過了使用者到全體人口，也把不均涵蓋誤寫成相同改善。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "要判斷全境健康，還需死亡率、疾病別、城鄉服務及未就醫人口。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

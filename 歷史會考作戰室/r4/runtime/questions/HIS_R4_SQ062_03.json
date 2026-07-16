@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_SQ062_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": "HIS_R4_ST062",
+  "stem": "能否計算1943年精確人均米量？",
+  "options": [
+    "能，用24,500戶直接當人口",
+    "不能；人口缺值且戶數不能直接代替人口",
+    "能，900噸就是每人量",
+    "不能；因1943年沒有任何數字"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "每戶可能包含不同人數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項正確指出缺少人口分母。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "900噸是總量不是人均。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表中仍有總量與戶數。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評估",
+    "缺漏資料"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "以戶數替代人口"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留1943年的現有數字，也承認人均計算所需人口缺失。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "除非另有每戶人口資料，不能任意換算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q001_09",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S001"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某展板寫『1789年：18世紀80年代』。這項標示如何？",
+  "options": [
+    "正確，兩種時間尺度相符",
+    "錯誤，1789年屬17世紀",
+    "錯誤，應為1790年代",
+    "錯誤，年代不能和世紀並列"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "1789在18世紀且屬1780年代。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "1789年介於1701與1800之間，屬18世紀而非17世紀。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "1780年代涵蓋1780至1789年，所以1789不是1790年代。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "世紀與年代可並列。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "雙尺度判讀"
+  ],
+  "representationType": "展板評析",
+  "misconceptionTargets": [
+    "混淆世紀與年代"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "1701至1800為18世紀，1780至1789為1780年代。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "展板同時給百年與十年尺度，第一項核對無誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

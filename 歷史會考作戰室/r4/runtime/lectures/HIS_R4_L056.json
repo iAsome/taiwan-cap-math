@@ -1,0 +1,138 @@
+{
+  "id": "HIS_R4_L056",
+  "subject": "history",
+  "unitId": "HIS_R4_U08",
+  "skillId": "HIS_R4_S056",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-1",
+    "AUTH-SOCIAL-LC-HIS-EB-4-2",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2"
+  ],
+  "prerequisites": [
+    "HIS_R4_S055"
+  ],
+  "objectives": [
+    "能辨識官方、企業、居民與不同族群史料的觀點",
+    "能區分政策宣稱、量化結果與生活經驗",
+    "能提出有證據範圍且不二分化的殖民治理評估"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L056_SEC1",
+      "title": "誰在說話",
+      "content": "總督府報告重視秩序、產量與政策成果；企業帳冊關注成本和利潤；居民日記、申訴與口述呈現日常使用、限制和衝突。來源差異不是要選一方全信，而是先理解各自位置。"
+    },
+    {
+      "id": "HIS_R4_L056_SEC2",
+      "title": "群體內部也有差異",
+      "content": "『臺灣人』『日本人』『原住民族』都不是內部完全一致的群體。職業、地區、性別、世代和政治立場會影響經驗；一位菁英或一個部落的材料不能替整個群體發言。"
+    },
+    {
+      "id": "HIS_R4_L056_SEC3",
+      "title": "政策成果與權力成本",
+      "content": "建設、衛生和教育可產生可量測成果，也是在殖民統治與不平等權力下推動。好的評估會同時說明誰取得什麼、誰承擔什麼，以及居民如何利用、協商或抵抗。"
+    },
+    {
+      "id": "HIS_R4_L056_SEC4",
+      "title": "寫出可檢驗結論",
+      "content": "避免使用『日治全是現代化』或『所有措施毫無作用』等絕對句。應標明時期、地區、群體和指標，引用相符證據，並在資料不足時保留不確定性。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L056_EX1",
+      "prompt": "官方稱防疫成功，醫院統計顯示病例下降，居民日記記錄強制消毒不便。如何結論？",
+      "steps": [
+        "確認病例趨勢",
+        "辨識居民對執行方式的經驗",
+        "分開政策效果與權力成本"
+      ],
+      "answer": "防疫可能降低病例，同時強制執行給部分居民帶來負擔。",
+      "why": "統計和日記回答不同問題：前者測量結果，後者呈現執行感受。兩者合讀比只稱成功或壓迫更完整。"
+    },
+    {
+      "id": "HIS_R4_L056_EX2",
+      "prompt": "一名受高等教育者讚揚學校，能否代表所有臺灣學生？",
+      "steps": [
+        "辨識作者教育位置",
+        "檢查其他群體入學和退學資料",
+        "限制代表範圍"
+      ],
+      "answer": "不能；他的經驗可證明一種可能，不能代表所有學生。",
+      "why": "能進入高等教育者本身可能是少數，評價也受個人機會影響。需比較不同地區、性別和家庭背景的學生資料。"
+    },
+    {
+      "id": "HIS_R4_L056_EX3",
+      "prompt": "企業帳冊顯示糖業獲利，農戶契約顯示售價受限，應如何評估？",
+      "steps": [
+        "分辨企業和農戶位置",
+        "檢查獲利與契約條款",
+        "說明產業成長中的分配差異"
+      ],
+      "answer": "糖業可擴張並使企業獲利，但農戶議價與銷售選擇可能受限。",
+      "why": "兩份資料並不矛盾，而是揭示產業鏈不同位置的結果。不能用企業獲利證明農戶同等受益，也不能因限制而否定產量變化。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "官方資料一定是假，個人回憶一定真。",
+      "whyWrong": "兩者都受形成目的、記憶與記錄條件影響。",
+      "correction": "按主張逐項以其他資料檢核。"
+    },
+    {
+      "belief": "同一族群每個人的殖民經驗都相同。",
+      "whyWrong": "地區、職業、性別和世代造成內部差異。",
+      "correction": "標明個案身分和可代表範圍。"
+    },
+    {
+      "belief": "建設有效就能證明殖民統治正當。",
+      "whyWrong": "政策結果與統治權力是否平等是不同問題。",
+      "correction": "分別評估成效、權利和成本。"
+    },
+    {
+      "belief": "指出殖民不平等就表示所有建設毫無影響。",
+      "whyWrong": "權力批判不會自動取消可量測的交通衛生變化。",
+      "correction": "同時保留成果、分配與強制證據。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "為何要交叉閱讀官方與居民資料？",
+      "answer": "兩者分別呈現政策目標、結果與生活經驗。",
+      "reason": "單一來源難以涵蓋治理全貌。"
+    },
+    {
+      "prompt": "一位菁英能代表整個群體嗎？",
+      "answer": "不能直接代表。",
+      "reason": "其社會位置與機會可能和多數人不同。"
+    },
+    {
+      "prompt": "殖民治理評估要同時問什麼？",
+      "answer": "誰獲益、誰受限、政策效果與權力如何運作。",
+      "reason": "這些問題可避免單一正負結論。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-1",
+      "AUTH-SOCIAL-LC-HIS-EB-4-2",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2"
+    ]
+  }
+}

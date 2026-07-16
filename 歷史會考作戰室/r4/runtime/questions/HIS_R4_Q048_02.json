@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q048_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某商品出口值由30增為75，增加多少？",
+  "options": [
+    "35",
+    "45",
+    "75",
+    "105"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "75減30不是35。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "75−30等於45。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "75是後期總值，不是增加量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "105是兩期相加，不能表示增量。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "應用",
+    "差值"
+  ],
+  "representationType": "numeric-table",
+  "misconceptionTargets": [
+    "把期末值或總和當增加量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "增加量用後期值減前期值：75−30＝45，因此第二項正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "選75會把期末值當增量，選105則把兩期數值相加，運算意義都不合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

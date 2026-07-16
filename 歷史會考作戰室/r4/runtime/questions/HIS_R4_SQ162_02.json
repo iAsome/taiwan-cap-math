@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_SQ162_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-NB-4-2",
+    "AUTH-SOCIAL-LC-HIS-NB-4-3",
+    "AUTH-SOCIAL-LC-HIS-OA-4-1",
+    "AUTH-SOCIAL-LC-HIS-OA-4-2",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": "HIS_R4_ST162",
+  "stem": "由王室命令與回報，最能判斷哪件事？",
+  "options": [
+    "國王完全沒有徵召權",
+    "國王能發布命令，但地方履行程度並不一致",
+    "所有領主都拒絕出兵",
+    "免役權必定由教宗頒發"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "部分地區按期集合，表示徵召權確實存在。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "不同回應顯示王命與執行力必須分開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "材料同時記錄按期到場者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "段落沒有說明免役權的授予者。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "推論",
+    "命令執行"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "發布命令等於完全控制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-NB-4-2",
+      "AUTH-SOCIAL-LC-HIS-NB-4-3",
+      "AUTH-SOCIAL-LC-HIS-OA-4-1",
+      "AUTH-SOCIAL-LC-HIS-OA-4-2",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "命令文本證明王權主張，集合、談判和少量派兵則提供執行差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第一與第三項忽略已出兵地區，第四項加入資料未提的教宗權限。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

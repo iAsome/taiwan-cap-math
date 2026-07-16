@@ -1,0 +1,86 @@
+{
+  "id": "HIS_R4_SQ228_01",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S228"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LC-HIS-LB-4-2",
+    "AUTH-SOCIAL-LC-HIS-QC-4-3",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": "HIS_R4_ST228",
+  "stem": "2024年9月參與城市由12改為13，最合理的原因是什麼？",
+  "options": [
+    "研究者任意把數字加一",
+    "有一個城市退出且沒有新資料",
+    "所有城市名稱同時改變",
+    "三個遲報城市加入後，又合併兩個重複紀錄"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "修訂原因和算式都明載於材料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "材料說補入遲報城市，沒有退出線索。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "名稱改變不會解釋筆數修訂。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "新增三筆再扣除兩筆重複，淨增加一。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算判讀"
+  ],
+  "representationType": "共享版本紀錄",
+  "misconceptionTargets": [
+    "修訂數字無法解釋"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LC-HIS-LB-4-2",
+      "AUTH-SOCIAL-LC-HIS-QC-4-3",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "初報12筆，加上3個遲報、合併2個重複，得到13個不同城市。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這個變化有可重現的資料處理原因，不應被寫成任意修改或城市退出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_SQ003_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "HIS_R4_ST003",
+  "stem": "僅依材料能否斷言港務調查造成鐵路施工？",
+  "options": [
+    "能，較早一定是原因",
+    "能，所有建設互為因果",
+    "不能，材料只有時序，未提供作用證據",
+    "不能，因年份不可靠"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "先後不等於因果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "材料未說所有建設互動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項守住證據界線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "年份在題內可用，問題是缺機制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "因果限制"
+  ],
+  "representationType": "事件表",
+  "misconceptionTargets": [
+    "時序當因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "調查先於施工只提供時間條件，沒有決策或影響資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項精確指出缺少因果機制，而非否定年份。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

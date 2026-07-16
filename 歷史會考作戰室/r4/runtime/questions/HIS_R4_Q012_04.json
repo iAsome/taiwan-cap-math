@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q012_04",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某會議摘要只記錄最後決議。下列哪個問題不能由它單獨回答？",
+  "options": [
+    "最後通過何項決議",
+    "會議是否形成正式結論",
+    "摘要記錄哪些決定",
+    "每位出席者發言的完整內容"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "摘要通常會列出最後決議。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "有無結論可由決議欄判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文件本身呈現記錄範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "摘要沒有逐字保留所有發言。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "紀錄完整性"
+  ],
+  "representationType": "會議摘要",
+  "misconceptionTargets": [
+    "摘要當逐字稿"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "摘要的製作目的在保留結論，不足以重建每位出席者的完整發言。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項超出材料保存層級，需逐字稿或個人筆記。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

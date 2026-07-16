@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q192_06",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某廠紡紗設備很快，卻因織布速度慢而堆滿紗線。管理者最可能面對什麼？",
+  "options": [
+    "所有產品都已售完",
+    "工序間產能不平衡形成瓶頸",
+    "能源供應必定完全中斷",
+    "市場需求必定無限增加"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "庫存堆積表示尚未完成或售出。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "下游工序速度限制整體完成量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹說紡紗設備仍快速運作。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "庫存不能證明需求無上限。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用"
+  ],
+  "representationType": "生產瓶頸",
+  "misconceptionTargets": [
+    "單機速度等於整體效率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項指出整體產能由最受限制的工序影響，不能只看紡紗機速度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這種瓶頸也能解釋為何工業技術常沿著相連工序持續改良。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

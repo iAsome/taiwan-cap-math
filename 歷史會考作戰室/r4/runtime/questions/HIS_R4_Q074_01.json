@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q074_01",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-FB-4-1",
+    "AUTH-SOCIAL-LC-HIS-FB-4-2",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "名目工資上升8%、物價上升12%，勞工實質購買力最可能如何？",
+  "options": [
+    "下降",
+    "上升20%",
+    "完全不變",
+    "無須物價即可判定大增"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "工資增幅低於物價增幅。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不能把兩個百分比直接相加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩者增幅並不相等。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "購買力必須考慮物價。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "應用",
+    "實質工資"
+  ],
+  "representationType": "wage-price-table",
+  "misconceptionTargets": [
+    "名目工資等同購買力"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-FB-4-1",
+      "AUTH-SOCIAL-LC-HIS-FB-4-2",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項依名目所得與物價的相對變動判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "精確幅度可用實質工資指數進一步計算。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_SQ012_02",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": "HIS_R4_ST012",
+  "stem": "為何不能回答人口是否『持續且逐年下降』？",
+  "options": [
+    "村長沒有姓名",
+    "1905年人口太多",
+    "缺少1906至1909年逐年人口及返鄉紀錄",
+    "戶口表不能記錄人口"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "姓名缺漏不是趨勢判斷的核心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人口規模大小不顯示變化方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "中間年份缺漏，可能有波動或回升。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "戶口表可記特定時間登記人口。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料缺口"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "兩端敘述當連續趨勢"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "『近年有人外出』不等於每年總人口都下降，且返鄉也可能改變數量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項指出判斷逐年趨勢所缺的關鍵資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

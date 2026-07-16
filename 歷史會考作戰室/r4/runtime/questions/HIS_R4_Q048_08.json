@@ -1,0 +1,87 @@
+{
+  "id": "HIS_R4_Q048_08",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-CA-4-1",
+    "AUTH-SOCIAL-LC-HIS-CA-4-2",
+    "AUTH-SOCIAL-LC-HIS-CB-4-2",
+    "AUTH-SOCIAL-LC-HIS-D-4-1",
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲表以公斤記出口量，乙表以銀兩記出口值。哪種比較方式錯誤？",
+  "options": [
+    "分別觀察各表趨勢",
+    "配合價格資料分析量價",
+    "先換算成可比較指標再計算",
+    "直接把兩欄數字相加成『總貿易』"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同表同單位可比較時間趨勢。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "價格能連結重量與價值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "適當換算後才可進一步比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "公斤與銀兩量綱不同，不能直接相加。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估",
+    "單位"
+  ],
+  "representationType": "data-validity",
+  "misconceptionTargets": [
+    "混加不同計量單位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-CA-4-1",
+      "AUTH-SOCIAL-LC-HIS-CA-4-2",
+      "AUTH-SOCIAL-LC-HIS-CB-4-2",
+      "AUTH-SOCIAL-LC-HIS-D-4-1",
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "重量和金額回答不同問題，數字外觀看似同樣也不能直接做加法。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項違反單位一致性；前三項都保留或建立可比較條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

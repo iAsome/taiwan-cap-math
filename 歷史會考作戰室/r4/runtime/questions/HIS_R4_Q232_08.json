@@ -1,0 +1,90 @@
+{
+  "id": "HIS_R4_Q232_08",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S232"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-BB-4-1",
+    "AUTH-SOCIAL-LC-HIS-FA-4-4",
+    "AUTH-SOCIAL-LC-HIS-FB-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LC-HIS-LA-4-2",
+    "AUTH-SOCIAL-LC-HIS-LB-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某出口產業裁員與海外需求下降同時發生。要確認因果，還需查什麼？",
+  "options": [
+    "公司商標",
+    "員工制服",
+    "報紙版面",
+    "訂單、產量、庫存、成本及自動化或外移等替代原因"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "商標不能解釋雇用變動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "服裝與裁員機制無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "新聞版面不是企業生產資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "這些資料可檢查需求傳導並排除其他因素。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "因果評估"
+  ],
+  "representationType": "產業資料",
+  "misconceptionTargets": [
+    "同期發生即唯一因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-BB-4-1",
+      "AUTH-SOCIAL-LC-HIS-FA-4-4",
+      "AUTH-SOCIAL-LC-HIS-FB-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LC-HIS-LA-4-2",
+      "AUTH-SOCIAL-LC-HIS-LB-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "需求下降若是主因，應先反映在訂單、產量和庫存，再傳到雇用。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四組資料也檢查技術或搬遷，避免把時間相近直接當成唯一因果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

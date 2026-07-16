@@ -1,0 +1,89 @@
+{
+  "id": "HIS_R4_SQ062_01",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-EA-4-1",
+    "AUTH-SOCIAL-LC-HIS-EA-4-2",
+    "AUTH-SOCIAL-LC-HIS-EA-4-3",
+    "AUTH-SOCIAL-LC-HIS-EB-4-3",
+    "AUTH-SOCIAL-LC-HIS-G-4-1",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": "HIS_R4_ST062",
+  "stem": "1942年每人米配給量是多少？",
+  "options": [
+    "7.5公斤",
+    "10公斤",
+    "12公斤",
+    "9公斤"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此值不是1,080噸除以12萬人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "10公斤是1941年人均量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "把12萬人口誤讀成每人12公斤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "1,080,000公斤÷120,000人＝9公斤。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算",
+    "人均"
+  ],
+  "representationType": "shared-stimulus",
+  "misconceptionTargets": [
+    "單位或年度用錯"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-EA-4-1",
+      "AUTH-SOCIAL-LC-HIS-EA-4-2",
+      "AUTH-SOCIAL-LC-HIS-EA-4-3",
+      "AUTH-SOCIAL-LC-HIS-EB-4-3",
+      "AUTH-SOCIAL-LC-HIS-G-4-1",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先把1,080噸換成1,080,000公斤，再除以12萬人得到9公斤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用了正確年度與人口分母。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

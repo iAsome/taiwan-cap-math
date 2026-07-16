@@ -1,0 +1,78 @@
+{
+  "id": "HIS_R4_Q002_03",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某年號元年是西元1684年，該年號五年為何年？",
+  "options": [
+    "1685年",
+    "1688年",
+    "1689年",
+    "1679年"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只加一年會得到二年。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "元年加四年即五年。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "直接加五會多一年。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "方向與題意相反。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "年號換算"
+  ],
+  "representationType": "直接提問",
+  "misconceptionTargets": [
+    "元年多算一年"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第5年與元年相隔4年，1684加4得1688。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐列元、二、三、四、五年，也會落在第二項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q189_07",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "地圖顯示霍亂病例多集中在同一公共水泵周邊。最合理的下一步為何？",
+  "options": [
+    "立刻宣布所有疾病都由該水泵造成",
+    "只調查離水泵最遠的一戶",
+    "檢查水源、病例使用紀錄與其他街區作比較",
+    "依建築顏色決定封鎖範圍"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一種疾病分布不能概括所有疾病。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單戶無法檢驗空間群聚。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "水源與對照資料可測試傳播假說。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "牆色與飲水暴露沒有合理機制。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "研究設計"
+  ],
+  "representationType": "疾病地圖",
+  "misconceptionTargets": [
+    "相關分布即完整因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把地圖上的群聚轉成可檢驗的水源假說，並加入個人使用和對照街區。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "它既不把相關性直接當全部證明，也不使用與疾病無關的外觀線索。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

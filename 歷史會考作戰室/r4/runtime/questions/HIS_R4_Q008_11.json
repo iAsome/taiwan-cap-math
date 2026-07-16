@@ -1,0 +1,94 @@
+{
+  "id": "HIS_R4_Q008_11",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "課本引用一段1932年日記並加上作者解說。哪項分類最精確？",
+  "options": [
+    "整頁全部都是1932年第一手史料",
+    "整頁全部都是後人虛構內容",
+    "日記引文是第一手線索，課本解說是後來敘述",
+    "只要印在新課本上，日記便失去史料身分"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "課本解說並非1932年形成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "日記引文有可追查的原始來源。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同頁包含原始引文與現代解說兩層。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "轉載不會自動消除原文的來源關係。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "混合文本分類"
+  ],
+  "representationType": "課本閱讀",
+  "misconceptionTargets": [
+    "以載體決定全部類型"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一頁可同時包含不同層次：日記內容來自當時，解說由後來編者撰寫。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項逐部分分類，避免以新載體抹除原始引文。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,169 @@
+{
+  "id": "HIS_R4_L236",
+  "subject": "history",
+  "unitId": "HIS_R4_U36",
+  "skillId": "HIS_R4_S236",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-D-4-2",
+    "AUTH-SOCIAL-LC-HIS-G-4-2",
+    "AUTH-SOCIAL-LC-HIS-J-4-1",
+    "AUTH-SOCIAL-LC-HIS-M-4-1",
+    "AUTH-SOCIAL-LC-HIS-P-4-1",
+    "AUTH-SOCIAL-LC-HIS-R-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-1",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-1",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-HIS-1C-4-1",
+    "AUTH-SOCIAL-LP-HIS-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-3",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "HIS_R4_S235"
+  ],
+  "objectives": [
+    "能辨認多份資料之間的一致、互補與衝突，追查來源獨立性、定義差異與證據權重。"
+  ],
+  "sections": [
+    {
+      "id": "HIS_R4_L236_SEC_1",
+      "title": "三種關係先分清",
+      "content": "一致證據是不同來源對同一可查事實提供相容資訊；互補證據回答不同面向，例如帳冊給數量、日記給經驗；衝突證據則在同一問題上提出不能同時成立的說法。互補不是矛盾，文字不同也未必真正衝突。"
+    },
+    {
+      "id": "HIS_R4_L236_SEC_2",
+      "title": "篇數不等於獨立性",
+      "content": "三篇報紙若都轉載同一通訊稿，仍主要是一條資訊路徑。判斷獨立性要追查作者如何得知、是否使用同一檔案、是否互相抄錄。只有來源形成彼此獨立，數量增加才真正提高交叉支持。"
+    },
+    {
+      "id": "HIS_R4_L236_SEC_3",
+      "title": "衝突要找形成條件",
+      "content": "官方統計和地方口述可能因分類、時間、空間或目的不同而出現差異。先對齊概念與範圍，再檢查哪項事實衝突；若仍無法解決，就誠實保留多種解釋及尚缺資料，不用權威或多數票強行定案。"
+    },
+    {
+      "id": "HIS_R4_L236_SEC_4",
+      "title": "建立證據矩陣",
+      "content": "可把研究問題列為列，來源列為欄，記錄每份材料支持、反對或未涉及哪些命題。矩陣能看出某結論是否只靠單一來源，也能防止把來源沉默誤認為反對。最後還要評估真實性、相關性和獨立性。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "HIS_R4_L236_EX_1",
+      "prompt": "三家報紙都引同一官署公報，算三份獨立支持嗎？",
+      "steps": [
+        "追查每篇引用來源。",
+        "辨認是否有各自採訪。",
+        "把轉載與新增證據分開。"
+      ],
+      "answer": "主要仍是一份公報被重複傳播，不是三條獨立證據。",
+      "why": "報紙數量增加只提高公報的可見度，沒有增加消息如何被取得的路徑。若某報另有訪談，新增部分才可另行評估。"
+    },
+    {
+      "id": "HIS_R4_L236_EX_2",
+      "prompt": "帳冊顯示米價上漲，日記寫家庭少買米，兩者關係為何？",
+      "steps": [
+        "確認兩份材料同時同地。",
+        "分辨市場價格和家庭經驗。",
+        "檢查所得與替代食物。"
+      ],
+      "answer": "兩份材料可互補：一份呈現價格，一份呈現消費反應。",
+      "why": "它們沒有回答同一欄位，所以不構成衝突。若時間與地點對齊，日記還可提供價格如何影響生活的具體機制。"
+    },
+    {
+      "id": "HIS_R4_L236_EX_3",
+      "prompt": "官方稱參與者500人，地方名冊列420人，怎麼辦？",
+      "steps": [
+        "核對『參與者』定義。",
+        "比較統計時點和重複計算。",
+        "找原始登記或現場影像。"
+      ],
+      "answer": "先確認口徑再判定衝突，必要時保留420至500的範圍。",
+      "why": "官方可能計入臨時參與者，名冊可能只列登記者。定義未對齊前，不能只因官方權威或名冊具名就選一數字。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "資料文字相似，就一定是彼此獨立的證據。",
+      "whyWrong": "相似內容可能共同抄自同一公報或通訊稿。",
+      "correction": "追查資訊來源和引用鏈。"
+    },
+    {
+      "belief": "兩份資料談不同面向，就是互相矛盾。",
+      "whyWrong": "帳冊、地圖與口述常提供互補資訊，並未對同一命題給相反答案。",
+      "correction": "先列每份材料實際回答的問題。"
+    },
+    {
+      "belief": "官方統計與地方說法不同時，官方一定正確。",
+      "whyWrong": "兩者可能使用不同定義、範圍和時點，也都可能有缺漏。",
+      "correction": "對齊口徑並尋找原始紀錄。"
+    },
+    {
+      "belief": "來源沒有提某件事，就等於它明確否定那件事。",
+      "whyWrong": "沉默可能來自材料目的、篇幅或作者不知道。",
+      "correction": "把未涉及與反對分開標記。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "診斷：三篇轉載是否等於三個來源？",
+      "answer": "不一定。",
+      "reason": "共同原稿仍是一條資訊路徑。"
+    },
+    {
+      "prompt": "練習：互補證據有何特徵？",
+      "answer": "它們回答不同面向，可共同擴充解釋。",
+      "reason": "不同內容不等於邏輯衝突。"
+    },
+    {
+      "prompt": "遷移：兩個數字衝突先查什麼？",
+      "answer": "查定義、時間、空間、母體與計算方式。",
+      "reason": "口徑差異常能解釋表面矛盾。"
+    },
+    {
+      "prompt": "補救：若以多數篇數決定真相，應改查什麼？",
+      "answer": "改查來源獨立性、相關性與形成過程。",
+      "reason": "重複轉載不能增加證據權重。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-D-4-2",
+      "AUTH-SOCIAL-LC-HIS-G-4-2",
+      "AUTH-SOCIAL-LC-HIS-J-4-1",
+      "AUTH-SOCIAL-LC-HIS-M-4-1",
+      "AUTH-SOCIAL-LC-HIS-P-4-1",
+      "AUTH-SOCIAL-LC-HIS-R-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-1",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-1",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-HIS-1C-4-1",
+      "AUTH-SOCIAL-LP-HIS-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-3",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

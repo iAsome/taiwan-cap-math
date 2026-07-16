@@ -1,0 +1,80 @@
+{
+  "id": "HIS_R4_Q191_01",
+  "subject": "history",
+  "skillIds": [
+    "HIS_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-HIS-QA-4-2",
+    "AUTH-SOCIAL-LP-HIS-1A-4-2",
+    "AUTH-SOCIAL-LP-HIS-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "工業化後某國棉布總產量大增。單靠這項資料，能確定什麼？",
+  "options": [
+    "棉布生產規模擴大，但不能確定所得如何分配",
+    "每戶家庭收入增加相同比例",
+    "工人每日工時必定下降",
+    "所有環境污染已獲解決"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "總產量直接回答生產規模，未提供分配。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "家庭所得須另有薪資與利潤資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "產量無法單獨決定工作時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "污染狀況也不在產量數據中。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "證據界線"
+  ],
+  "representationType": "產量統計",
+  "misconceptionTargets": [
+    "總量等於全民福祉"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 History content author",
+    "copyrightStatus": "Original wording; official sources used only for scope, factual verification, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-HIS-QA-4-2",
+      "AUTH-SOCIAL-LP-HIS-1A-4-2",
+      "AUTH-SOCIAL-LP-HIS-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "history-evidence-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項完整區分資料能回答的產出問題與不能回答的分配問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "history-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他答案把一個總量指標不當延伸到家庭收入、工時或環境成效。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
