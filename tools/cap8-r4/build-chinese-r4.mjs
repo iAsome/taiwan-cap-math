@@ -79,7 +79,28 @@ function validateWritingTask(value, authorityIds) {
   assert.equal(value.accessibility.language, "zh-Hant-TW");
 }
 
-async function validateUnitSource(source, skills, authorityIds) {
+function validateAsset(value, authorityIds) {
+  exactKeys(value, ["id", "subject", "type", "file", "creator", "source", "license", "transformation", "skillIds", "caption", "alt", "longDescription", "dataTable", "print", "provenance"], value.id);
+  assert.match(value.id, /^CHI_R4_ASSET_\d{3}$/u);
+  assert.equal(value.subject, "chinese");
+  assert(["bar-chart", "line-chart", "pie-chart"].includes(value.type), `${value.id}: unsupported asset type`);
+  assert.equal(value.file, `assets/${value.id}.svg`);
+  assert.equal(value.creator, "Codex R4 Chinese content author");
+  assert.equal(value.license, "CC-BY-4.0");
+  assert(value.caption.length >= 12 && value.alt.length >= 40 && value.longDescription.length >= 40, `${value.id}: incomplete text alternatives`);
+  assert.deepEqual(Object.keys(value.dataTable).sort(ordinal), ["columns", "rows"]);
+  assert.equal(value.dataTable.columns.length, 2);
+  assert.equal(value.dataTable.rows.length, 4);
+  assert(value.dataTable.rows.every((row) => row.length === 2 && typeof row[0] === "string" && Number.isFinite(row[1])), `${value.id}: invalid data table`);
+  assert.deepEqual(Object.keys(value.print).sort(ordinal), ["blackAndWhiteReadable", "colorIndependent", "directLabels", "note"].sort(ordinal));
+  assert.equal(value.print.blackAndWhiteReadable, true);
+  assert.equal(value.print.colorIndependent, true);
+  assert.equal(value.print.directLabels, true);
+  assert(value.skillIds.length === 7 && value.skillIds.every((id) => /^CHI_R4_S(?:218|219|220|221|222|223|224)$/u.test(id)), `${value.id}: invalid skill links`);
+  assert(value.provenance.sourceRefs.every((id) => authorityIds.has(id)), `${value.id}: invalid authority ref`);
+}
+
+async function validateUnitSource(source, skills, authorityIds, assetIds) {
   exactKeys(source, ["schemaVersion", "unitId", "lectures", "questions"], source.unitId);
   assert.equal(source.schemaVersion, SOURCE_SCHEMA);
   assert.match(source.unitId, UNIT_PATTERN);
@@ -90,6 +111,7 @@ async function validateUnitSource(source, skills, authorityIds) {
     assert(skillIds.has(lecture.skillId), `${lecture.id}: lecture belongs to another unit`);
     assert.equal(lecture.unitId, source.unitId);
     assert(lecture.authorityRefs.every((id) => authorityIds.has(id)), `${lecture.id}: invalid authority ref`);
+    assert(lecture.assets.every((id) => assetIds.has(id)), `${lecture.id}: unknown asset`);
     await validateAuthoringRecord("lecture", lecture);
   }
   for (const question of source.questions) {
@@ -97,6 +119,7 @@ async function validateUnitSource(source, skills, authorityIds) {
     assert(question.skillIds.length === 1 && skillIds.has(question.skillIds[0]), `${question.id}: question belongs to another unit`);
     assert.equal(question.stimulusId, null, `${question.id}: skill question cannot use a shared stimulus`);
     assert(question.authorityRefs.every((id) => authorityIds.has(id)), `${question.id}: invalid authority ref`);
+    assert(question.assets.every((id) => assetIds.has(id)), `${question.id}: unknown asset`);
     await validateAuthoringRecord("question", question);
   }
   for (const skill of skills) {
@@ -127,7 +150,8 @@ export async function loadChineseR4Source({ repoRoot = REPO_ROOT } = {}) {
   const stimuli = await readJson(path.join(root, "stimuli.json"));
   const stimulusQuestions = await readJson(path.join(root, "stimulus-questions.json"));
   const writingTasks = await readJson(path.join(root, "writing-tasks.json"));
-  return { units, stimuli, stimulusQuestions, writingTasks };
+  const assets = await readJson(path.join(root, "assets.json"));
+  return { units, stimuli, stimulusQuestions, writingTasks, assets };
 }
 
 export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } = {}) {
@@ -139,14 +163,29 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
   assert.equal(source.stimuli.length, 320, "Chinese requires 320 shared stimuli");
   assert.equal(source.stimulusQuestions.length, 1280, "Chinese requires four questions for each stimulus");
   assert.equal(source.writingTasks.length, 120, "Chinese requires 120 writing tasks");
+  assert.equal(source.assets.length, 12, "Chinese mixed-media practice requires twelve reviewed data assets");
+
+  for (const asset of source.assets) validateAsset(asset, authorityIds);
+  const assetIds = new Set(source.assets.map((asset) => asset.id));
+  assert.equal(assetIds.size, source.assets.length, "duplicate asset ID");
+  for (const asset of source.assets) {
+    const svg = await readFile(path.join(repoRoot, SUBJECT_FOLDER, "r4", "source", asset.file), "utf8");
+    assert.match(svg, /<svg\b[^>]*role="img"[^>]*aria-labelledby="title desc"/u, `${asset.id}: SVG lacks image semantics`);
+    assert.match(svg, /<title id="title">/u, `${asset.id}: SVG lacks title`);
+    assert.match(svg, /<desc id="desc">/u, `${asset.id}: SVG lacks long description`);
+    assert(!/<(?:script|foreignObject)\b|\b(?:href|xlink:href)="https?:/iu.test(svg), `${asset.id}: unsafe or external SVG content`);
+  }
 
   const skillsByUnit = Map.groupBy(skills, (skill) => skill.unitId);
   for (const { name, value } of source.units) {
     assert.equal(name, `${value.unitId}.json`);
-    await validateUnitSource(value, skillsByUnit.get(value.unitId) ?? [], authorityIds);
+    await validateUnitSource(value, skillsByUnit.get(value.unitId) ?? [], authorityIds, assetIds);
   }
 
-  for (const stimulus of source.stimuli) validateStimulus(stimulus, authorityIds);
+  for (const stimulus of source.stimuli) {
+    validateStimulus(stimulus, authorityIds);
+    assert(stimulus.assets.every((id) => assetIds.has(id)), `${stimulus.id}: unknown asset`);
+  }
   const stimulusById = new Map(source.stimuli.map((value) => [value.id, value]));
   for (const question of source.stimulusQuestions) {
     assert.match(question.id, STIMULUS_QUESTION_PATTERN);
@@ -166,6 +205,7 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
     ["question ID", allQuestions.map((value) => value.id)],
     ["stimulus ID", source.stimuli.map((value) => value.id)],
     ["writing-task ID", source.writingTasks.map((value) => value.id)],
+    ["asset ID", source.assets.map((value) => value.id)],
     ["visible question", allQuestions.map(visibleKey)],
     ["question essence", allQuestions.map(essenceKey)],
   ]) assert.equal(new Set(values).size, values.length, `duplicate ${label}`);
@@ -179,7 +219,7 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
     stimuli: source.stimuli.length,
     stimulusQuestions: source.stimulusQuestions.length,
     writingTasks: source.writingTasks.length,
-    assets: 0,
+    assets: source.assets.length,
   };
 }
 
@@ -189,14 +229,19 @@ export async function buildChineseR4({ repoRoot = REPO_ROOT } = {}) {
   const subjectRoot = path.join(repoRoot, SUBJECT_FOLDER, "r4");
   const runtimeRoot = path.join(subjectRoot, "runtime");
   await replaceDirectory(path.join(runtimeRoot, "units"), source.units.map(({ name, value }) => [name, value]));
+  await rm(path.join(runtimeRoot, "assets"), { recursive: true, force: true });
+  await mkdir(path.join(runtimeRoot, "assets"), { recursive: true });
+  await Promise.all(source.assets.map(async (asset) => writeFile(path.join(runtimeRoot, asset.file), await readFile(path.join(subjectRoot, "source", asset.file)))));
   await Promise.all([
     writeFile(path.join(runtimeRoot, "stimuli.json"), json(source.stimuli), "utf8"),
     writeFile(path.join(runtimeRoot, "stimulus-questions.json"), json(source.stimulusQuestions), "utf8"),
     writeFile(path.join(runtimeRoot, "writing-tasks.json"), json(source.writingTasks), "utf8"),
+    writeFile(path.join(runtimeRoot, "assets.json"), json(source.assets), "utf8"),
   ]);
   const sourceHashes = Object.fromEntries(await Promise.all([
     ...source.units.map(async ({ name }) => [name, sha256(await readFile(path.join(subjectRoot, "source", "units", name)))]),
-    ...["stimuli.json", "stimulus-questions.json", "writing-tasks.json"].map(async (name) => [name, sha256(await readFile(path.join(subjectRoot, "source", name)))]),
+    ...["stimuli.json", "stimulus-questions.json", "writing-tasks.json", "assets.json"].map(async (name) => [name, sha256(await readFile(path.join(subjectRoot, "source", name)))]),
+    ...source.assets.map(async ({ file }) => [file, sha256(await readFile(path.join(subjectRoot, "source", file)))]),
   ]));
   const manifest = {
     schemaVersion: "cap8-r4-chinese-static-content-manifest-v1",
@@ -217,4 +262,3 @@ async function main() {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await main();
-

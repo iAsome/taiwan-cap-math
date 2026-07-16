@@ -1795,6 +1795,16 @@ function questionsFor(skill, family, guide) {
   if (fictionQuestions) return fictionQuestions;
   const dramaQuestions = dramaPracticeQuestions(skill);
   if (dramaQuestions) return dramaQuestions;
+  const coreReadingQuestions = coreReadingPracticeQuestions(skill);
+  if (coreReadingQuestions) return coreReadingQuestions;
+  const inferentialQuestions = inferentialPracticeQuestions(skill);
+  if (inferentialQuestions) return inferentialQuestions;
+  const advancedReadingQuestions = advancedReadingPracticeQuestions(skill);
+  if (advancedReadingQuestions) return advancedReadingQuestions;
+  const mediaQuestions = mediaPracticeQuestions(skill);
+  if (mediaQuestions) return mediaQuestions;
+  const informationQuestions = informationPracticeQuestions(skill);
+  if (informationQuestions) return informationQuestions;
   const serial = skill.id.slice(-3);
   return QUESTION_FRAMES.map((frame, questionIndex) => {
     const answerIndex = questionIndex % 4;
@@ -2827,8 +2837,325 @@ function makeLiteraryQuestion(skill, serial, questionIndex, spec, representation
       { reviewerRole: `${reviewerPrefix}-solution-review`, derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
       { reviewerRole: `${reviewerPrefix}-alternative-review`, derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別只憑表面特徵、加入未提供資訊，或忽略動作與後文照應。", status: "pass" },
     ],
-    assets: [],
+    assets: spec.assets ?? [],
   };
+}
+
+const CORE_READING_CASES = Object.freeze([
+  { title: "安靜之外", subject: "圖書館的聲音分區", opening: "新館開放後，有人要求整棟樓完全無聲。", supportA: "一樓親子區允許低聲共讀，入口清楚標示音量範圍。", supportB: "三樓自習區設緩衝門，實測後外部談話聲明顯降低。", turn: "真正需要管理的不是所有聲音，而是讓活動和空間規則彼此相合。", theme: "公共空間可用清楚分區同時容納交流與安靜需求", keyword: "分區", detail: "三樓自習區設有緩衝門" },
+  { title: "鏡片上的霧", subject: "眼鏡起霧的原因與處理", opening: "冬天走進熱食店，眼鏡常突然蒙上一層小水滴。", supportA: "溫暖空氣中的水氣碰到較冷鏡片，會凝結成微小水滴。", supportB: "先讓鏡片溫度逐漸接近室內，霧氣便較快散去。", turn: "用衣角猛擦只能暫時移走水滴，理解溫差才知道如何減少反覆起霧。", theme: "理解水氣凝結與溫差有助於選擇更合適的除霧方法", keyword: "溫差", detail: "水氣碰到較冷鏡片會凝結" },
+  { title: "地圖上的日期", subject: "老街地圖的版本查核", opening: "一張線條清楚的網路地圖，把導覽隊引到封閉巷口。", supportA: "圖檔沒有發布日期，右下角仍標示改建前的舊門牌。", supportB: "學生比對工程告示與現場路牌後，重畫路線並補上版本時間。", turn: "圖畫得清楚不等於資訊仍有效，時效也是地圖內容的一部分。", theme: "使用地圖時應同時核對路線內容與版本時效", keyword: "版本", detail: "原圖仍使用改建前舊門牌" },
+  { title: "不是最小的數字", subject: "市場價格的單位換算", opening: "同一攤位兩張價格牌，一張數字較小，學生卻沒有立刻說它便宜。", supportA: "一張以每台斤標價，另一張以每公斤標價，基準並不相同。", supportB: "換成每公斤後，原先數字較小的一張反而價格較高。", turn: "比較必須先統一單位；只看表面數字，結論可能正好相反。", theme: "價格比較須先統一重量單位才能得到可靠結論", keyword: "單位", detail: "兩張價格牌分別使用台斤與公斤" },
+  { title: "讓種子自己回答", subject: "菜園觀察的控制條件", opening: "薄荷葉捲曲時，組員各自提出光照、澆水和溫度三種解釋。", supportA: "小組固定每天同一時段拍照，並記錄土壤濕度與澆水時間。", supportB: "七日資料顯示正午澆水後濕度下降最快，調整時段後新葉較平展。", turn: "一次印象只能提出猜想，持續而一致的記錄才能比較原因。", theme: "控制觀察時間並累積資料有助於檢驗植物變化原因", keyword: "記錄", detail: "小組固定同一時段拍照" },
+  { title: "看得到還不夠", subject: "圖書館無障礙指引", opening: "設計者認為入口箭頭又大又亮，首次到館者卻三次走向舊櫃臺。", supportA: "箭頭位置高，觸覺地圖起點又和實際入口錯開。", supportB: "實走記錄指出停頓位置後，館員調低指標並重排文字順序。", turn: "指引是否清楚不能只由設計者觀看版面決定，還要回到使用者的實際路徑。", theme: "公共指引應以真實使用測試檢查是否可理解與可到達", keyword: "實走", detail: "首次到館者三次走向舊櫃臺" },
+  { title: "幕後的空格", subject: "舞臺排練的設備依賴", opening: "兩組排練各分到相同時間，現場仍不斷互相等待。", supportA: "兩組同時需要音響，且大型布景只能沿同一通道移動。", supportB: "新流程先列設備切換與人員到場的前後關係，再安排節目。", turn: "公平不只是平均切時間，還要處理工作之間真正的依賴。", theme: "排程須考量共用設備與前後依賴而非只平均分配時間", keyword: "依賴", detail: "大型布景只能走同一通道" },
+  { title: "照片背面的空白", subject: "口述歷史的交叉查核", opening: "兩位長者對老照片年份的記憶相差十年。", supportA: "訪談都被保留，並標記受訪時間與說法差異。", supportB: "改建紀錄和舊報廣告顯示照片中的二樓在某年後才出現。", turn: "尊重記憶不等於停止查證；不同來源能讓模糊年代逐步縮小。", theme: "口述記憶應與可查史料並用以縮小年代範圍", keyword: "交叉", detail: "兩位長者的年份記憶相差十年" },
+  { title: "一個淡掉的小數點", subject: "河川資料的異常值", opening: "水質折線圖有一點突然升高，小組有人想直接刪除。", supportA: "原始單上的小數點顏色很淡，抄錄表又比其他列多一位數。", supportB: "核對採樣地點、單位和原始記錄後，確認是抄錄時漏了小數點。", turn: "異常值不一定是錯誤，但它提醒我們回頭檢查資料從哪裡來。", theme: "面對異常資料應先查原始記錄與單位而非直接刪除", keyword: "異常", detail: "原始單的小數點顏色很淡" },
+  { title: "補丁要承受重量", subject: "布袋修補的功能測試", opening: "工作坊挑到顏色最接近的線，縫好的提把卻一拉就鬆。", supportA: "第二次修補先記錄破損方向，再選擇能分散拉力的針法。", supportB: "布袋裝入相同重量反覆提起，針腳沒有再擴大。", turn: "外觀相近只是選線條件之一，修補是否成功還要由實際功能驗收。", theme: "修補材料與方法應依受力需求選擇並以功能測試驗收", keyword: "驗收", detail: "第二次修補用相同重量反覆提起測試" },
+  { title: "月亮沒有忽然變大", subject: "月亮近地平線時的視覺感受", opening: "月亮剛升起時看似巨大，升高後又像縮小了。", supportA: "用固定大小的圓片在伸直手臂處比對，月面所占視角差異不明顯。", supportB: "地平線附近有房屋與樹木可供比較，天空高處則缺少相同參照物。", turn: "感覺真實存在，卻不必然表示月亮本身在短時間內改變大小。", theme: "月亮大小的視覺感受會受周圍參照物影響", keyword: "參照", detail: "固定圓片比對顯示視角差異不明顯" },
+  { title: "一句話的前後三十秒", subject: "訪談引語的上下文", opening: "校刊把一句強烈的話放大，受訪者卻說那不是自己的主張。", supportA: "錄音前一句是「有人以為」，顯示後文正在轉述別人意見。", supportB: "編輯回聽前後三十秒並取得本人確認後，改正主語與引號。", turn: "引句是否忠實，不能只看被截出的字面，還要保留說話層次與上下文。", theme: "引用訪談內容應核對前後文與真正說話立場", keyword: "上下文", detail: "錄音前一句含有「有人以為」" },
+]);
+
+function coreReadingText(serial, item, index) {
+  if (serial === 171) {
+    const topic = `${item.theme}。`;
+    const sentences = [item.supportA, item.supportB, item.turn];
+    sentences.splice(index % 4, 0, topic);
+    return sentences.join("");
+  }
+  if (serial === 172) return `${item.supportA}${item.supportB}${item.turn}`;
+  if (serial === 175) return `${item.opening}${item.supportA}然而，${item.turn}`;
+  if (serial >= 176 && serial <= 182) return `${item.opening}${item.supportA}${item.supportB}${item.turn}`;
+  return `${item.opening}${item.supportA}${item.supportB}${item.turn}`;
+}
+
+function coreReadingPracticeSpec(serial, item, index) {
+  const text = coreReadingText(serial, item, index);
+  const topicPosition = ["第一句", "第二句", "第三句", "第四句"][index % 4];
+  const bySerial = {
+    169: { stem: `閱讀原創短文〈${item.title}〉：\n${text}\n\n哪項是全文主旨而非局部細節？`, correct: item.theme, wrong: [item.detail, `全文只在介紹「${item.title}」五個字的筆畫。`, `只要記住${item.detail}，其他段落都可刪除。`], reason: "正解涵蓋開頭問題、兩項支持與結尾轉折；局部細節只服務其中一段。" },
+    170: { stem: `閱讀原創段落：\n${item.supportA}${item.keyword}使資料可比較；${item.supportB}${item.turn}\n\n反覆出現的「${item.keyword}」協助歸納哪個段落重點？`, correct: item.theme, wrong: [item.detail, `所有問題都只要多寫「${item.keyword}」便會自動解決。`, "段落主要比較人物姓名與字數。"], reason: `「${item.keyword}」在做法、結果與轉折中反覆連接同一核心概念。` },
+    171: { stem: `閱讀原創段落：\n${text}\n\n明示主題句位於何處？`, correct: topicPosition, wrong: ["第一句", "第二句", "第三句", "第四句"].filter((position) => position !== topicPosition), reason: `「${item.theme}」直接概括其餘支持句，因此它所在的${topicPosition}是明示主題句。` },
+    172: { stem: `閱讀沒有明示主題句的原創段落：\n${text}\n\n由支持句推回，最適合補入哪個主題句？`, correct: `${item.theme}。`, wrong: [`本文只需要記住「${item.detail}」。`, `所有地方遇到${item.subject}都必然有同一結果。`, "段落沒有共同重點，只是隨機排列句子。"], reason: "正解能統攝兩項支持與結尾限制，且沒有擴大成絕對結論。" },
+    173: { stem: `閱讀原創短文〈${item.title}〉：\n${text}\n\n哪個主旨涵蓋全文且沒有過度延伸？`, correct: item.theme, wrong: [item.detail, `這個案例證明全世界所有${item.subject}都只能用同一方法。`, `作者唯一目的在讚美「${item.keyword}」這個詞。`], reason: "正解涵蓋全文並保留個案方法的適用範圍；其餘太窄或過度擴張。" },
+    174: { stem: `標題為〈${item.title}〉，正文如下：\n${text}\n\n標題與主旨的關係，哪項最恰當？`, correct: `標題以具體意象或問題引入「${item.subject}」，主旨則進一步概括為「${item.theme}」。`, wrong: ["標題已包含所有方法、證據與限制，正文完全沒有新增資訊。", "標題和正文談不同事件，彼此毫無關係。", "只要標題較短，就一定比主旨範圍更大。"], reason: "標題是閱讀入口，主旨則統整正文對該題材提出的完整關係與判斷。" },
+    175: { stem: `閱讀原創短文：\n${text}\n\n結尾轉折如何確認作者真正重點？`, correct: `結尾把注意力由「${item.detail}」這個現象轉向「${item.theme}」的判斷。`, wrong: ["結尾取消前文所有資訊，改談完全無關的人物。", "有「然而」便表示作者反對自己寫過的每一句。", "結尾只重複標題，沒有改變理解焦點。"], reason: "轉折並非推翻全文，而是重新界定前文細節應支持到哪個重點。" },
+    176: { stem: `閱讀原創短文：\n${text}\n\n題幹問「${item.detail}」。應優先定位哪一處明示資訊？`, correct: item.detail, wrong: [item.theme, item.title, `文中沒有出現的${item.subject}未來預測`], reason: "題幹關鍵詞與正解在原文形成直接同義或原句對應。" },
+    177: { stem: `閱讀原創短文：\n${text}\n\n哪個選項是原文細節「${item.detail}」的正確改寫？`, correct: `文本明確提供與「${item.detail}」相同的事實，雖然換了說法，條件沒有增加。`, wrong: [`文本說${item.detail}永遠適用於所有情況。`, `文本否認曾有「${item.detail}」這項資訊。`, `文本只憑作者喜好猜測${item.detail}。`], reason: "正解保留人物、範圍與程度，只做同義轉述。" },
+    178: { stem: `閱讀原創短文：\n第一段：${item.supportA}\n第二段：${item.supportB}\n\n整合相隔段落後，哪項結論成立？`, correct: item.theme, wrong: [item.detail, `兩段互相矛盾，所以任何資訊都不能使用。`, `只讀第二段便可證明所有${item.subject}都相同。`], reason: "正解同時使用第一段的方法或條件與第二段的結果。" },
+    179: { stem: `閱讀原創短文：\n${text}\n\n哪一項是文本資訊，而不是選項新增的推測？`, correct: item.detail, wrong: [`作者因此一生都拒絕改變任何決定。`, `所有讀者看到${item.title}都會有完全相同感受。`, `${item.subject}明年必定在每個城市造成相同結果。`], reason: "正解可在原文直接定位；其餘加入終身動機、全體感受或未來預測。" },
+    180: { stem: `某活動要挑一項同時符合「可查來源、明列版本、能重做步驟」的資料。候選甲只有漂亮版面；乙列來源與版本但沒有方法；丙列來源、版本，並說明如何得到「${item.detail}」；丁只有轉傳次數。應選哪一項？`, correct: "丙", wrong: ["甲", "乙", "丁"], reason: "只有丙同時滿足三項條件；乙缺可重做方法，甲與丁都不能補足來源。" },
+    181: { stem: `若要支持結論「${item.theme}」，下列哪段引文最直接？`, correct: `${item.supportA}${item.supportB}`, wrong: [item.opening, `標題只有〈${item.title}〉。`, `一名未出場人物說自己喜歡${item.keyword}。`], reason: "正解同時提供做法或原因與可觀察結果，能直接支持指定結論。" },
+    182: { stem: `閱讀原創短文：\n${text}\n\n答案「${item.theme}」主要依據哪組具體句段？`, correct: `「${item.supportA}」和「${item.supportB}」`, wrong: [`只依標題〈${item.title}〉`, `只依文中沒有出現的作者生平`, "只依讀者自己的類似經驗"], reason: "兩句分別提供條件／做法與結果，能讓答案回扣具體文本。" },
+  };
+  return bySerial[serial];
+}
+
+function coreReadingPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 169 || serial > 182) return null;
+  const representationTypes = ["main-idea-detail", "repeated-concept", "explicit-topic-sentence", "implicit-topic-sentence", "bounded-main-idea", "title-and-theme", "ending-turn", "detail-location", "detail-paraphrase", "cross-paragraph-evidence", "text-versus-inference", "multi-condition-filter", "quotation-support", "sentence-evidence"];
+  return CORE_READING_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, coreReadingPracticeSpec(serial, item, questionIndex), representationTypes[serial - 169], "chinese-core-reading"));
+}
+
+function inferencePracticeSpec(serial, item) {
+  const bySerial = {
+    183: { stem: `閱讀原創片段：\n${item.protagonist}${item.action}；接著，${item.side}。\n\n綜合兩項線索，最合理的隱含結論是什麼？`, correct: `${item.protagonist}的做法具有說服力，旁人因看見具體行動而開始改變原先反應。`, wrong: ["旁人從故事開始便知道所有結果。", "主角沒有做任何事，變化全由天氣造成。", "兩項線索證明世界上所有人都會有相同反應。"], reason: "主角行動與旁人後續反應形成可指出的前後關係。" },
+    184: { stem: `閱讀原創片段：\n${item.appearance}。面對「${item.obstacle}」，${item.protagonist}說：「${item.speech}。」\n\n由反應推論，人物當時的情緒與動機最接近哪項？`, correct: `${item.protagonist}雖有壓力，仍想${item.goal}，因此選擇審慎處理而非逃避。`, wrong: ["人物毫無目標，只想讓問題惡化。", "人物因得知全部未來而完全沒有猶疑。", "外貌細節證明人物一生只會有一種情緒。"], reason: "外在動作、對障礙的回應與明說目標共同支持正解。" },
+    185: { stem: `閱讀原創片段：\n若${item.protagonist}確實${item.action}，且前文線索「${item.foreshadow}」得到核對，最可能造成哪個後果？`, correct: item.payoff, wrong: [`人物立刻忘記${item.goal}，所有線索消失。`, "未核對資料便宣布相反結果。", "場景因此永久不再有任何問題。"], reason: "正解承接行動與伏筆，是同一因果鏈中可預期的結果。" },
+    186: { stem: `閱讀原創片段：\n有人看著尚未核對的資料說：「真周全啊，連原始記錄都不必看！」${item.protagonist}則開始${item.action}。\n\n前一句的言外之意是什麼？`, correct: "說話者以表面稱讚表達批評，認為不看原始記錄其實並不周全。", wrong: ["說話者真心主張刪除所有記錄。", "說話者只在介紹「周全」的字典筆畫。", "句末驚嘆號證明他完全沒有態度。"], reason: "後文的查核行動與前句字面稱讚形成反差，顯示反語。" },
+    187: { stem: `閱讀原創片段：\n${item.protagonist}想${item.goal}，因而${item.action}；後來${item.side}。\n\n哪項屬合理推論，而不是無據猜測？`, correct: item.quality, wrong: ["人物從出生起就預知今天的全部事件。", "所有旁人其實都和主角有親屬關係。", "同樣做法在任何時空都必定成功。"], reason: "正解由目標、行動與旁人反應推出；其餘加入文本沒有的生平或絕對範圍。" },
+    188: { stem: `閱讀原創片段：\n敘事者只寫「${item.side}」，沒有交代旁人的內心獨白。對這項缺席資訊，哪個判斷最恰當？`, correct: "可知道旁人行動改變，但不能確定他心中每一個理由；作者刻意把動機留給後文或讀者保留判斷。", wrong: ["既然沒寫內心，就可任意補成任何動機。", "沒有內心獨白便表示旁人不存在。", "敘事者一定忘記寫作，所以全文沒有可用資訊。"], reason: "缺席資訊限制推論強度，不能用生活想像補成確定事實。" },
+    189: { stem: `某人推論「${item.protagonist}${item.quality}」。下列哪組原文證據最能回扣這項推論？`, correct: `「${item.speech}」與「${item.action}」`, wrong: [`只看${item.protagonist}的姓名`, `只看場景中沒有出現的物品`, "只依讀者自己的個性"], reason: "言語說明判斷原則，行動顯示人物實際如何選擇，兩者共同支持評價。" },
+  };
+  return bySerial[serial];
+}
+
+function purposePracticeSpec(serial, item) {
+  const notice = `【${item.event}通知】對象：${item.recipient}。時間：${item.date}${item.time}。地點：${item.place}。內容：${item.purpose}。完成後將${item.result}。`;
+  const bySerial = {
+    190: { stem: `閱讀原創文本：\n${notice}\n\n由文體與內容判斷，主要寫作目的是什麼？`, correct: `通知${item.recipient}${item.event}的時間、地點與內容，使讀者能準備並參與。`, wrong: ["抒發作者對童年風景的私人感傷。", "虛構一段沒有實際資訊的奇幻冒險。", "只評比字體大小，不傳達任何行動。"], reason: "通知格式、對象欄及時地資訊共同指向告知與安排參與。" },
+    191: { stem: `閱讀原創文本：\n${notice}\n\n這份文本的預期讀者是誰？`, correct: item.recipient, wrong: ["未出生且不可能參加活動的人", "只負責印刷但不閱讀內容的機器", "世界上所有人，不受對象欄限制"], reason: `文本直接標示「對象：${item.recipient}」，活動內容也與其任務相合。` },
+    192: { stem: `原創提醒寫道：「請於${item.date}${item.time}前到${item.place}報到；若無法出席，請先回覆。」這段措辭與標點呈現何種語氣？`, correct: "明確而有禮的指示語氣，以分號分開報到與無法出席時的處理。", wrong: ["憤怒辱罵，因為句中出現「請」。", "完全猶豫，沒有任何時間或行動要求。", "狂喜歡呼，標點表示所有人都已完成。"], reason: "「請、若」保留禮貌與條件，明確時間和動作則使指示可執行。" },
+    193: { stem: `作者評論${item.event}：「只把版面做得醒目仍不夠，還應讓${item.recipient}能核對${item.purpose}。」這句反映何種態度？`, correct: "肯定清楚呈現的價值，但更重視資訊是否可使用與可核對。", wrong: ["反對提供任何資訊。", "認為版面醒目便可取代所有內容。", "作者沒有立場，只隨機排列詞語。"], reason: "「仍不夠、還應」顯示作者的評價基準與補充要求。" },
+    194: { stem: `文本先引用一名參與者：「我只想快點完成。」作者接著寫：「然而，${item.event}仍須先${item.purpose}。」哪項正確？`, correct: "引文呈現參與者重視速度的立場；「然而」後才是作者用來修正或限制它的立場。", wrong: ["引文必然等於作者全部主張。", "作者完全同意可省略活動目的。", "兩句沒有說話層次，可以任意交換。"], reason: "引述標記與轉折詞清楚區分被引用者和作者的評議。" },
+    195: { stem: `原創短文寫：「起初我以為${item.event}只要照舊辦理；然而，看到『${item.experience}』的記錄後，我主張先${item.purpose}。」語氣如何轉變？`, correct: "由沿用舊做法的篤定，轉為因新證據而審慎調整主張。", wrong: ["由反對活動轉為完全不看證據。", "前後立場完全相同，「然而」沒有作用。", "由說明轉成與活動無關的笑話。"], reason: "「起初以為、然而、看到記錄後」標出證據介入前後的態度變化。" },
+    196: { stem: `閱讀原創文本：\n${notice}\n\n哪項目的描述有文本證據支持？`, correct: `讓${item.recipient}知道何時何地參加${item.event}，並理解活動要${item.purpose}。`, wrong: ["邀請讀者購買文中沒有出現的商品。", "說服所有人永久離開該地點。", "只展示作者姓名，刻意隱藏活動資訊。"], reason: "目的描述可逐項回指對象、時間、地點與內容欄。" },
+  };
+  return bySerial[serial];
+}
+
+function structurePracticeSpec(serial, item) {
+  const bySerial = {
+    197: { stem: `閱讀四段摘要：\n甲：${item.opening}\n乙：${item.supportA}\n丙：${item.supportB}\n丁：${item.turn}\n\n四段在起承轉合中的功能，哪項最恰當？`, correct: "甲提出情境；乙承接並提供條件；丙發展結果；丁轉入限制並收束重點。", wrong: ["四段都只重複標題，功能完全相同。", "丁是開頭提出人物，甲才是結論。", "乙與丙都和甲無關，無法構成篇章。"], reason: "每段分別承擔問題、支持、結果與重新界定重點的功能。" },
+    198: { stem: `把下列材料排成合理篇章：甲「${item.supportB}」；乙「${item.opening}」；丙「${item.turn}」；丁「${item.supportA}」。順序應為何？`, correct: "乙→丁→甲→丙", wrong: ["甲→丙→乙→丁", "丙→甲→丁→乙", "丁→丙→乙→甲"], reason: "先提出問題，再交代條件／方法與結果，最後由轉折收束。" },
+    199: { stem: `原創段落先說「${item.theme}」，中間分述「${item.supportA}」「${item.supportB}」，結尾再說「兩項證據共同支持上述原則」。結構為何？`, correct: "總—分—總", wrong: ["時間倒敘", "只有並列細節，沒有統攝句", "問答結構"], reason: "開頭總述、中間分項支持、結尾回扣總旨，符合總分總。" },
+    200: { stem: `原創文章依序寫：「${item.opening}」「原因在於資訊基準不足」「${item.supportA}」「${item.supportB}」。這是哪種結構？`, correct: "提出問題—分析原因—提出方法—呈現結果", wrong: ["人物出生—求學—就業—退休", "只列景物顏色，沒有問題", "先寫答案再刪除所有證據"], reason: "四部分依問題、分析、解法與結果建立明確邏輯。" },
+    201: { stem: `原創段落目前是：①${item.opening}②${item.supportA}③${item.supportB}④${item.turn}。要插入「這項結果只有在前述條件一致時才能比較。」放在哪裡最合適？`, correct: "③後④前", wrong: ["全文標題之前", "①後②前", "④之後另開無關新題"], reason: "插入句中的「這項結果」回指③，又為④的限制性轉折預作銜接。" },
+    202: { stem: `兩段文字為：「${item.supportA}」＿＿「${item.supportB}」；結尾則寫「${item.turn}」。依關係填入哪個承接詞最恰當？`, correct: "因此（第二句呈現前述做法後的結果）", wrong: ["同時刪除前句", "不料（兩句必然互相否定）", "例如（第二句只是前句的同義詞）"], reason: "第二句承接前一做法或條件並呈現結果，因果承接最清楚。" },
+    203: { stem: `閱讀架構：問題「${item.opening}」→方法「${item.supportA}」→結果「${item.supportB}」→限制「${item.turn}」。哪個摘要保留完整架構？`, correct: item.theme, wrong: [item.detail, `只說〈${item.title}〉很有趣，不交代問題與方法。`, `把${item.subject}擴大成沒有例外的世界定律。`], reason: "正解涵蓋問題、方法、結果與限制，且不陷入單一細節。" },
+  };
+  return bySerial[serial];
+}
+
+function inferentialPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial >= 183 && serial <= 189) {
+    const representations = ["multi-clue-inference", "emotion-motive-inference", "causal-prediction", "verbal-irony", "inference-boundary", "withheld-information", "inference-evidence-check"];
+    return FICTION_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, inferencePracticeSpec(serial, item), representations[serial - 183], "chinese-inference"));
+  }
+  if (serial >= 190 && serial <= 196) {
+    const representations = ["writing-purpose", "intended-reader", "tone-from-wording", "author-attitude", "author-versus-quotation", "attitude-shift", "purpose-evidence"];
+    return FUNCTIONAL_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, purposePracticeSpec(serial, item), representations[serial - 190], "chinese-purpose"));
+  }
+  if (serial >= 197 && serial <= 203) {
+    const representations = ["paragraph-function", "paragraph-order", "whole-part-structure", "problem-solution-structure", "sentence-insertion", "cross-paragraph-connector", "structural-summary"];
+    return CORE_READING_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, structurePracticeSpec(serial, item), representations[serial - 197], "chinese-structure"));
+  }
+  return null;
+}
+
+function techniquePracticeSpec(serial, index) {
+  const core = CORE_READING_CASES[index];
+  const fiction = FICTION_CASES[index];
+  const poem = POEM_SEEDS[index];
+  if (serial === 204) {
+    const modes = [
+      { text: `${fiction.protagonist}走進現場，先${fiction.action}，最後${fiction.payoff}。`, label: "敘述", effect: "依先後交代人物行動與結果" },
+      { text: fiction.scene, label: "描寫", effect: "以光線、物件與空間呈現可感場景" },
+      { text: `我望著${poem.image}，心裡${poem.emotion}。`, label: "抒情", effect: "直接表達說話者的內在感受" },
+      { text: `${core.supportA}${core.supportB}`, label: "說明", effect: "交代現象的條件、方法或結果" },
+      { text: `${core.theme}；因為${core.supportA}`, label: "議論", effect: "提出主張並以理由支持" },
+    ];
+    const mode = modes[index % modes.length];
+    return { stem: `閱讀原創語段：「${mode.text}」其主要表達功能為何？`, correct: `${mode.label}，用來${mode.effect}。`, wrong: ["只因有名詞便是定義，其他句子都無功能。", "只要有標點便是劇本舞臺提示。", "句子唯一功能是計算字數。"], reason: `語段的資訊安排符合${mode.label}，主要作用是${mode.effect}。` };
+  }
+  if (serial === 205) return { stem: `閱讀原創片段：\n${fiction.payoff}。故事接著回到數日前：${fiction.protagonist}當時正面對「${fiction.obstacle}」，並${fiction.action}。\n\n先寫結果再回述經過，有何效果？`, correct: "形成倒敘，先讓讀者注意結果，再追問它如何由先前選擇造成。", wrong: ["把兩件毫無關係的故事隨機拼接。", "表示後段發生時間一定晚於首句。", "只為縮短篇幅，與閱讀焦點無關。"], reason: "時間標記「數日前」把敘事拉回結果之前，使原因成為閱讀懸念。" };
+  if (serial === 206) return { stem: `閱讀原創片段：\n${fiction.scene}。${fiction.appearance}；${fiction.side}。\n\n人物、景物與場面描寫共同產生何種作用？`, correct: `場景具體化壓力，主角外在狀態呈現反應，旁人動作再補出群體氣氛，共同推進「${fiction.goal}」的情節。`, wrong: ["三種描寫互相排斥，不能出現在同一段。", "景物自動證明人物一生品格。", "旁人只算背景，所以其動作完全不能提供資訊。"], reason: "三層描寫分別處理環境、主角與他人反應，合力服務同一事件。" };
+  if (serial === 207) return { stem: `比較兩句原創文字：甲「我此刻${poem.emotion}。」乙「${poem.image}${poem.motion}，${poem.sound}停在${poem.place}。」哪項分析正確？`, correct: `甲直接說出情感；乙以意象、動作與聲音間接寄託，讀者須由景物關係體會${poem.emotion}。`, wrong: ["乙沒有情緒詞，所以必然不能抒情。", "甲有「我」字，所以是客觀數據。", "兩句每個詞都相同，安排沒有差別。"], reason: "直接抒情明說感受，間接抒情則讓情感附著在可感意象上。" };
+  if (serial === 208) {
+    const methods = [
+      { text: `${core.keyword}是本文用來指稱「能讓不同資料依同一條件核對」的方法。`, label: "定義", effect: "界定詞語在本文的意義" },
+      { text: `查核${core.subject}時，要看來源、日期、版本與方法，並確認「${core.detail}」。`, label: "列舉", effect: "分項呈現構成條件" },
+      { text: `${core.supportA}相較之下，${core.supportB}`, label: "比較", effect: "以共同基準凸顯前後做法或結果差異" },
+      { text: `例如，${core.detail}，便能看出「${core.theme}」。`, label: "舉例", effect: "用具體個案說明抽象原則" },
+    ];
+    const method = methods[index % methods.length];
+    return { stem: `閱讀原創說明句：「${method.text}」主要使用哪種方法，效果為何？`, correct: `${method.label}，用來${method.effect}。`, wrong: ["倒敘，用來隱藏所有資料來源。", "反語，用來表達與字面相反的嘲諷。", "人物獨白，用來交代未出場者內心。"], reason: `句子結構符合${method.label}，且實際完成「${method.effect}」的資訊功能。` };
+  }
+  if (serial === 209) return { stem: `閱讀原創片段：\n開頭：「${fiction.foreshadow}。」\n結尾：「${fiction.payoff}。」\n\n首尾安排有何作用？`, correct: "開頭細節先成為伏筆，結尾回收並賦予它解題作用，使前後照應。", wrong: ["兩句位置相隔，所以必然不能相關。", "結尾完全照抄開頭才叫照應。", "伏筆必須在首次出現時公布所有答案。"], reason: "同一可辨細節由早期未解狀態轉成後文關鍵證據，構成伏筆與照應。" };
+  return { stem: `比較兩種寫法：甲「${core.supportA}${core.supportB}」乙「事情非常好，大家都知道。」哪項分析最恰當？`, correct: `甲以可核對條件與結果聚焦「${core.theme}」；乙語氣籠統又把「大家」當證據，焦點較模糊。`, wrong: ["乙字數較少，所以必然較精確。", "甲有兩句，所以不能形成焦點。", "兩種寫法提供完全相同的證據與語氣。"], reason: "具體條件和結果能限制結論；籠統評語無法讓讀者複查。" };
+}
+
+function crossTextPracticeSpec(serial, item, index) {
+  const other = CORE_READING_CASES[(index + 5) % CORE_READING_CASES.length];
+  const textA = `甲文：${item.supportA}${item.supportB}${item.turn}`;
+  const textB = `乙文：有人認為處理${item.subject}只要快速即可；作者則主張「${item.theme}」，但也提醒單一案例不能推到所有情況。`;
+  const bySerial = {
+    211: { stem: `比較兩篇原創文本：\n${textA}\n${textB}\n\n主旨有何共同與差異？`, correct: `兩文都關注${item.subject}的可靠判斷；甲重在方法與結果，乙另處理「求快」觀點並界定結論範圍。`, wrong: ["兩文主題完全無關，只因字數相近才放在一起。", "甲乙都主張不必核對任何資料。", "兩文每一句立場都相反，沒有共同議題。"], reason: "共同議題可由關鍵概念確認，差異則來自乙文的反方與限制。" },
+    212: { stem: `比較兩篇原創文本：\n${textA}\n${textB}\n\n兩文選材與證據有何差異？`, correct: `甲選用「${item.detail}」及具體結果作案例證據；乙主要比較兩種主張並補充推論限制。`, wrong: ["兩文都只引用未署名名言，沒有任何其他材料。", "甲只有作者情緒，乙只有天氣。", "證據來源不同便表示兩文必然互相否定。"], reason: "甲呈現可定位個案，乙呈現論點關係與範圍，證據功能不同。" },
+    213: { stem: `甲文寫：「我第一次遇到${item.subject}時，只看見${item.detail}，後來才理解${item.theme}。」乙文寫：「資料顯示，${item.supportA}」兩文觀點與語氣如何？`, correct: "甲採第一人稱回顧，語氣帶自我修正；乙採較客觀的說明語氣，聚焦可查資料。", wrong: ["兩文都是全知敘事，知道所有人物內心。", "甲是統計表，乙是私人日記，因為句子長短不同。", "第一人稱必然沒有證據，說明文必然沒有立場。"], reason: "代詞、時間回顧與資料措辭分別建立兩種觀點位置和語氣。" },
+    214: { stem: `甲文是通知：「請於指定時間依${item.keyword}流程完成${item.subject}。」乙文是議論：「${item.theme}，因為${item.supportA}」兩文如何處理同一議題？`, correct: "甲以對象與行動指示讓讀者執行；乙提出主張與理由，說明為何應採這項原則。", wrong: ["通知和議論功能完全相同，都只抒發私人情感。", "甲沒有讀者，乙沒有任何主張。", "文體不同表示不能討論共同議題。"], reason: "相同議題可依不同文體分別完成行動安排與理由論證。" },
+    215: { stem: `甲文提供：「${item.supportA}」；乙文提供：「${item.supportB}${item.turn}」整合兩文可形成哪項結論？`, correct: item.theme, wrong: [item.detail, `只由甲文便可證明所有${other.subject}也相同。`, "乙文有轉折，所以應刪除甲文全部資訊。"], reason: "甲提供條件或方法，乙補上結果與限制，兩者互補而非互相取消。" },
+    216: { stem: `甲文主張「處理${item.subject}應優先求快」；乙文主張「應先${item.keyword}，即使多花一步」。兩文衝突最可能來自哪裡？`, correct: "兩文採用不同優先標準：甲重時間，乙重可核對性與錯誤後果。", wrong: ["只因兩文標點數量不同。", "兩文其實主張完全相同，只是作者姓名未寫。", "衝突來自讀者不認識標題中的字。"], reason: "分歧在價值排序與證據風險，不在版面或用字表面。" },
+    217: { stem: `主張是「${item.theme}」。甲文記錄「${item.supportA}${item.supportB}」；乙文只介紹「${other.detail}」。哪篇能直接支持主張？`, correct: "甲文，因其方法與結果都直接回應指定主張；乙文談的是另一主題的局部細節。", wrong: ["乙文，因任何細節都能支持任何主張。", "兩文都不能，因具體證據一律無效。", "只看篇名較長者，不必讀內容。"], reason: "支持關係須比對主張中的對象、條件與結果，甲文三者相合。" },
+  };
+  return bySerial[serial];
+}
+
+function advancedReadingPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial >= 204 && serial <= 210) {
+    const representations = ["expression-function", "nonlinear-narration", "description-effect", "direct-indirect-lyric", "expository-technique", "foreshadowing-echo", "style-comparison"];
+    return CORE_READING_CASES.map((_, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, techniquePracticeSpec(serial, questionIndex), representations[serial - 204], "chinese-technique"));
+  }
+  if (serial >= 211 && serial <= 217) {
+    const representations = ["cross-text-theme", "cross-text-evidence", "cross-text-viewpoint", "cross-genre-comparison", "complementary-synthesis", "viewpoint-conflict", "claim-source-match"];
+    return CORE_READING_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, crossTextPracticeSpec(serial, item, questionIndex), representations[serial - 211], "chinese-cross-text"));
+  }
+  return null;
+}
+
+const DATA_ASSET_SPECS = Object.freeze([
+  { id: "CHI_R4_ASSET_001", type: "bar-chart", title: "圖書館四區單日使用人次", unit: "人次", labels: ["親子共讀區", "期刊區", "自習區", "展覽區"], values: [24, 31, 27, 18], note: "同一開館日由入口計數器分區統計；一人進入不同區會分別計次。" },
+  { id: "CHI_R4_ASSET_002", type: "line-chart", title: "菜園盆土同日濕度變化", unit: "百分比", labels: ["上午八時", "上午十時", "中午十二時", "下午二時"], values: [62, 49, 38, 28], note: "同一花盆、同一感測器；上午八時澆水後未再補水。" },
+  { id: "CHI_R4_ASSET_003", type: "pie-chart", title: "七年級學生到校方式比例", unit: "百分比", labels: ["步行", "公車", "自行車", "家人接送"], values: [40, 30, 20, 10], note: "班級匿名問卷共一百份有效回覆，各類互斥且合計百分之百。" },
+  { id: "CHI_R4_ASSET_004", type: "bar-chart", title: "四週志工借還書處理量", unit: "冊", labels: ["第一週", "第二週", "第三週", "第四週"], values: [12, 18, 25, 22], note: "每週皆統計同一服務時段完成上架的冊數。" },
+  { id: "CHI_R4_ASSET_005", type: "line-chart", title: "四次演練平均換景時間", unit: "分鐘", labels: ["第一次", "第二次", "第三次", "第四次"], values: [14, 11, 8, 7], note: "場地與布景相同；第三次起改用設備依賴順序表。" },
+  { id: "CHI_R4_ASSET_006", type: "pie-chart", title: "市場自備袋材質比例", unit: "百分比", labels: ["布袋", "紙袋", "網袋", "其他"], values: [45, 25, 20, 10], note: "在同一入口連續記錄兩百個自備袋，以主要材質歸類。" },
+  { id: "CHI_R4_ASSET_007", type: "bar-chart", title: "四班一週紙類回收重量", unit: "公斤", labels: ["甲班", "乙班", "丙班", "丁班"], values: [32, 44, 51, 47], note: "四班使用同一臺秤，數值四捨五入到整公斤。" },
+  { id: "CHI_R4_ASSET_008", type: "line-chart", title: "校刊四輪校對剩餘錯誤數", unit: "處", labels: ["初校", "二校", "三校", "終校"], values: [18, 12, 6, 4], note: "每輪均依同一份原稿記錄尚未修正的錯字與標點問題。" },
+  { id: "CHI_R4_ASSET_009", type: "pie-chart", title: "地方展覽圖說資料來源比例", unit: "百分比", labels: ["館藏登錄", "報紙檔案", "口述訪談", "現場量測"], values: [35, 30, 25, 10], note: "每則圖說只依主要證據類型歸入一類，共計四十則。" },
+  { id: "CHI_R4_ASSET_010", type: "bar-chart", title: "閱覽室四時段座位使用數", unit: "席", labels: ["上午九時", "中午十二時", "下午三時", "晚上六時"], values: [16, 23, 19, 28], note: "同一日四次瞬間計數，閱覽室共有三十二席。" },
+  { id: "CHI_R4_ASSET_011", type: "line-chart", title: "活動日累計補水瓶數", unit: "瓶", labels: ["上午九時", "上午十一時", "下午一時", "下午三時"], values: [5, 9, 14, 20], note: "數值為當日從開始至各時點的累計量，不是單一時段新增量。" },
+  { id: "CHI_R4_ASSET_012", type: "pie-chart", title: "工作坊四類任務時間比例", unit: "百分比", labels: ["說明", "分組操作", "成果檢核", "回饋修訂"], values: [25, 25, 30, 20], note: "以一百分鐘工作坊換算，各類別互斥且合計百分之百。" },
+]);
+
+function svgEscape(value) {
+  return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+}
+
+function assetLongDescription(asset) {
+  return `${asset.title}，單位為${asset.unit}。${asset.labels.map((label, index) => `${label}${asset.values[index]}${asset.unit}`).join("；")}。${asset.note}`;
+}
+
+function svgForDataAsset(asset) {
+  const title = svgEscape(asset.title);
+  const desc = svgEscape(assetLongDescription(asset));
+  const width = 720;
+  const height = 460;
+  const heading = `<title id="title">${title}</title><desc id="desc">${desc}</desc><rect width="720" height="460" fill="white"/><text x="360" y="32" text-anchor="middle" font-size="22" font-family="sans-serif" fill="black">${title}</text>`;
+  if (asset.type === "bar-chart") {
+    const max = Math.max(...asset.values);
+    const bars = asset.values.map((value, index) => {
+      const barHeight = Math.round(value / max * 280);
+      const x = 95 + index * 145;
+      const y = 370 - barHeight;
+      return `<rect x="${x}" y="${y}" width="72" height="${barHeight}" fill="${index % 2 ? "#777" : "#222"}" stroke="black" stroke-width="2"/><text x="${x + 36}" y="${y - 8}" text-anchor="middle" font-size="17" font-family="sans-serif">${value}</text><text x="${x + 36}" y="400" text-anchor="middle" font-size="15" font-family="sans-serif">${svgEscape(asset.labels[index])}</text>`;
+    }).join("");
+    return `<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 ${width} ${height}">${heading}<line x1="70" y1="370" x2="675" y2="370" stroke="black" stroke-width="2"/><line x1="70" y1="70" x2="70" y2="370" stroke="black" stroke-width="2"/><text x="26" y="78" font-size="15" font-family="sans-serif">${svgEscape(asset.unit)}</text>${bars}<text x="360" y="442" text-anchor="middle" font-size="14" font-family="sans-serif">灰階深淺不代表額外數值；請依標籤與數字閱讀。</text></svg>`;
+  }
+  if (asset.type === "line-chart") {
+    const max = Math.max(...asset.values);
+    const min = Math.min(...asset.values);
+    const range = Math.max(1, max - min);
+    const points = asset.values.map((value, index) => ({ x: 100 + index * 175, y: 345 - ((value - min) / range * 240) }));
+    const pathData = points.map(({ x, y }, index) => `${index ? "L" : "M"}${x},${y}`).join(" ");
+    const labels = points.map(({ x, y }, index) => `<circle cx="${x}" cy="${y}" r="7" fill="white" stroke="black" stroke-width="3"/><text x="${x}" y="${y - 14}" text-anchor="middle" font-size="17" font-family="sans-serif">${asset.values[index]}</text><text x="${x}" y="385" text-anchor="middle" font-size="15" font-family="sans-serif">${svgEscape(asset.labels[index])}</text>`).join("");
+    return `<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 ${width} ${height}">${heading}<line x1="70" y1="360" x2="675" y2="360" stroke="black" stroke-width="2"/><line x1="70" y1="70" x2="70" y2="360" stroke="black" stroke-width="2"/><text x="26" y="78" font-size="15" font-family="sans-serif">${svgEscape(asset.unit)}</text><path d="${pathData}" fill="none" stroke="black" stroke-width="4"/>${labels}<text x="360" y="435" text-anchor="middle" font-size="14" font-family="sans-serif">各點均附直接數字標籤，折線只連接相鄰觀察時點。</text></svg>`;
+  }
+  let angle = -90;
+  const shades = ["#111", "#666", "#aaa", "#fff"];
+  const slices = asset.values.map((value, index) => {
+    const start = angle;
+    const end = angle + value / 100 * 360;
+    angle = end;
+    const point = (degrees) => ({ x: 235 + 145 * Math.cos(degrees * Math.PI / 180), y: 235 + 145 * Math.sin(degrees * Math.PI / 180) });
+    const a = point(start);
+    const b = point(end);
+    const large = end - start > 180 ? 1 : 0;
+    return `<path d="M235,235 L${a.x.toFixed(2)},${a.y.toFixed(2)} A145,145 0 ${large},1 ${b.x.toFixed(2)},${b.y.toFixed(2)} Z" fill="${shades[index]}" stroke="black" stroke-width="2"/>`;
+  }).join("");
+  const legend = asset.labels.map((label, index) => `<rect x="440" y="${115 + index * 65}" width="28" height="28" fill="${shades[index]}" stroke="black" stroke-width="2"/><text x="482" y="${136 + index * 65}" font-size="17" font-family="sans-serif">${svgEscape(label)}：${asset.values[index]}%</text>`).join("");
+  return `<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 ${width} ${height}">${heading}${slices}${legend}<text x="360" y="435" text-anchor="middle" font-size="14" font-family="sans-serif">每一扇區均以文字圖例直接標示分類與百分比，不只靠灰階辨識。</text></svg>`;
+}
+
+const sourceAssets = DATA_ASSET_SPECS.map((asset) => ({
+  id: asset.id,
+  subject: "chinese",
+  type: asset.type,
+  file: `assets/${asset.id}.svg`,
+  creator: "Codex R4 Chinese content author",
+  source: "Original fictional instructional dataset authored for this repository.",
+  license: "CC-BY-4.0",
+  transformation: "SVG generated directly from the reviewed data table; no external image or dataset used.",
+  skillIds: ["CHI_R4_S218", "CHI_R4_S219", "CHI_R4_S220", "CHI_R4_S221", "CHI_R4_S222", "CHI_R4_S223", "CHI_R4_S224"],
+  caption: `${asset.title}（${asset.type === "bar-chart" ? "長條圖" : asset.type === "line-chart" ? "折線圖" : "圓餅圖"}；單位：${asset.unit}）`,
+  alt: assetLongDescription(asset),
+  longDescription: assetLongDescription(asset),
+  dataTable: { columns: ["分類或時點", asset.unit], rows: asset.labels.map((label, index) => [label, asset.values[index]]) },
+  print: { blackAndWhiteReadable: true, colorIndependent: true, directLabels: true, note: "黑白列印使用邊線、灰階與直接數字標籤；答案不依顏色。" },
+  provenance: sourceProvenance(["AUTH-CHINESE-LC-BC-4-1", "AUTH-CHINESE-LP-5-4-4"]),
+}));
+
+function mediaPracticeSpec(serial, asset) {
+  const maxValue = Math.max(...asset.values);
+  const minValue = Math.min(...asset.values);
+  const maxLabel = asset.labels[asset.values.indexOf(maxValue)];
+  const minLabel = asset.labels[asset.values.indexOf(minValue)];
+  const tableText = asset.labels.map((label, index) => `${label}：${asset.values[index]}${asset.unit}`).join("；");
+  const trend = asset.values.at(-1) > asset.values[0] ? "末次高於首次" : asset.values.at(-1) < asset.values[0] ? "末次低於首次" : "末次與首次相同";
+  const bySerial = {
+    218: { stem: `參看附圖「${asset.title}」及文字資料表：${tableText}。哪項正確讀取標題列與資料列？`, correct: `${maxLabel}為${maxValue}${asset.unit}，是表中最高值；${minLabel}為${minValue}${asset.unit}，是最低值。`, wrong: [`${maxLabel}為${minValue}${asset.unit}。`, `表格沒有標題與單位，所以任何數字都不能解讀。`, `每一列的值都等於${maxValue}${asset.unit}。`], reason: "正解同時依標題、分類、單位與資料列比對最高及最低值。" },
+    219: { stem: `參看附圖「${asset.title}」。下列哪項數值或趨勢判讀正確？`, correct: `${asset.labels[0]}為${asset.values[0]}${asset.unit}，${asset.labels.at(-1)}為${asset.values.at(-1)}${asset.unit}，因此${trend}。`, wrong: [`圖中所有值皆為${maxValue}${asset.unit}。`, "只看圖形面積便可忽略直接數字標籤。", `最低值${minValue}${asset.unit}出現在${maxLabel}。`], reason: "正解逐一核對起訖標籤與數值，再用有限語句描述方向。" },
+    220: { stem: `附圖圖說為「${asset.title}（單位：${asset.unit}）」；正文補充：「${asset.note}」整合圖說、圖形與正文後，哪項成立？`, correct: `數值應依${asset.unit}解讀，且結論須保留「${asset.note}」所界定的統計方式。`, wrong: ["正文備註可刪，因圖形形狀已說明所有抽樣條件。", "圖說單位不影響數值意義。", "附圖能證明未觀察到的所有時間與地點。"], reason: "圖說提供題名與單位，正文提供取樣／統計限制，三者缺一都會改變解讀。" },
+    221: { stem: `參看附圖與資料表：${tableText}。哪個文字轉述最不誇大？`, correct: `在本圖所列範圍內，${maxLabel}的${maxValue}${asset.unit}高於${minLabel}的${minValue}${asset.unit}。`, wrong: [`${maxLabel}永遠在所有地方都是最高。`, `${minLabel}的數值為零，因為它是最低。`, "圖中差異證明每個人的原因完全相同。"], reason: "正解保留本圖範圍、比較對象、數值與單位，沒有把最高誤寫成永遠或唯一原因。" },
+    222: { stem: `附圖「${asset.title}」直接標示${maxLabel}${maxValue}${asset.unit}、${minLabel}${minValue}${asset.unit}。哪個結論符合尺度？`, correct: `兩者相差${maxValue - minValue}${asset.unit}；是否構成倍數還須用數值計算，不能只看圖形高度或扇區。`, wrong: [`最高值比最低值多${maxValue + minValue}${asset.unit}。`, "最高圖形看來較大，所以數值必定是一百倍。", "座標或百分比尺度可以任意從視覺猜測。"], reason: "差值由同單位數值相減；正解也避免用視覺面積誇大倍數。" },
+    223: { stem: `正文說：「本次資料最高分類為${maxLabel}。」附圖另提供：${tableText}。兩種媒材的共同與新增資訊為何？`, correct: `共同資訊是${maxLabel}最高；附圖新增各分類的確切數值、單位及彼此差距。`, wrong: ["正文與附圖完全衝突。", "附圖只重複標題，沒有任何新增資料。", "正文已提供每一列數值，所以附圖不能再比較。"], reason: "先找共同結論，再辨認圖表提供的細部數值與差距。" },
+    224: { stem: `生活情境要從「${asset.title}」中挑出目前數值最低的分類，優先進一步調查原因。依附圖應選哪一項？`, correct: `${minLabel}，因其標示為${minValue}${asset.unit}。`, wrong: [`${maxLabel}，因其為${maxValue}${asset.unit}。`, "任選一項，不必查看標籤與單位。", "只依灰階深淺，忽略直接數字。"], reason: "任務條件是選最低值；正解以分類標籤、數值與單位完整回應。" },
+  };
+  return { ...bySerial[serial], assets: [asset.id] };
+}
+
+function mediaPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 218 || serial > 224) return null;
+  const representations = ["table-reading", "chart-value-trend", "figure-caption-text", "bounded-data-paraphrase", "chart-scale-check", "multimodal-comparison", "data-based-decision"];
+  return DATA_ASSET_SPECS.map((asset, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, mediaPracticeSpec(serial, asset), representations[serial - 218], "chinese-media"));
+}
+
+const INFORMATION_CASES = Object.freeze([
+  { topic: "公車站臨時改道", fact: "站務公告標示改道自五月十二日上午六時生效", opinion: "這次改道是全市最貼心的安排", headline: "所有公車永久停駛", content: "只有兩條路線在施工期間改走鄰近道路，其他班次不變", author: "市區客運調度組", date: "五月十一日", method: "列出受影響路線、站點與生效時間", otherAngle: "地方報導訪問兩名通勤者，聚焦轉乘時間增加", ad: "大家都轉傳了，這張舊路線圖一定還有效", strategy: "以轉傳次數代替版本與發布單位", verifyA: "客運公司最新路線公告", verifyB: "現場電子站牌的更新時間" },
+  { topic: "河川水質異常值", fact: "原始採樣單顯示該列小數點顏色較淡", opinion: "這條河看起來一定是最髒的", headline: "河川污染暴增十倍", content: "小組回查後確認抄錄漏了小數點，修正值接近前後時段", author: "校園河川觀察小組", date: "六月三日", method: "公開採樣位置、單位與原始記錄影本", otherAngle: "社群貼文只截取修正前圖表，未附原始單", ad: "驚人折線證明只有本濾水瓶能拯救河川", strategy: "製造恐懼並把單一資料連到未證實商品效果", verifyA: "帶時間與位置的原始採樣單", verifyB: "使用同單位的複測紀錄" },
+  { topic: "老街封閉捷徑", fact: "工程告示寫明巷道自七月一日至十五日封閉", opinion: "繞路的街景一定比原路無聊", headline: "百年老街從此禁止進入", content: "封閉範圍只有一條施工巷道，主要街道與店家仍開放", author: "道路工程承辦單位", date: "六月二十九日", method: "附施工範圍、替代路線與聯絡電話", otherAngle: "旅遊文章介紹仍可到達的店家，但沒有更新施工日期", ad: "下載我們的地圖，就永遠不會走錯任何路", strategy: "使用「永遠、任何」等絕對保證掩蓋版本限制", verifyA: "工程單位最新告示", verifyB: "現場圍籬與替代路線標誌" },
+  { topic: "閱讀志工培訓", fact: "報名頁列出活動日期、三個練習項目與二十人上限", opinion: "參加這場活動的人都會成為最好的老師", headline: "一小時保證學會所有教學方法", content: "活動只練習提問、傾聽與回饋，並未承諾專業資格", author: "學校圖書館志工組", date: "八月二十日", method: "公布課程流程、名額與負責人信箱", otherAngle: "校刊訪問參與者，著重他們第一次練習的困難", ad: "名額快滿，錯過就再也無法學習閱讀", strategy: "以稀缺與錯失恐懼放大活動必要性", verifyA: "主辦單位完整報名頁", verifyB: "課程表與講師說明" },
+  { topic: "布袋承重修補", fact: "同一布袋修補後裝入五公斤物品反覆提起十次", opinion: "這種針法看起來比所有針法漂亮", headline: "一條線修好世界上所有破袋", content: "測試只針對特定破損方向與五公斤負重，其他材質仍須另測", author: "社區修補工作坊", date: "九月七日", method: "記錄材料、針法、重量與重複次數", otherAngle: "生活版報導介紹參與者延長物品使用的經驗", ad: "師傅都用這種線，所以不必再做承重測試", strategy: "訴諸權威並省略適用條件與測試", verifyA: "修補前後承重紀錄", verifyB: "相同材料的重複測試" },
+  { topic: "校園夜間照明", fact: "電表紀錄顯示空教室三晚持續亮燈", opinion: "最後離校的人一定最不負責任", headline: "學生浪費全校一半用電", content: "紀錄只涵蓋一間教室的三個晚上，尚未計算全校比例", author: "班級節能小組", date: "十月四日", method: "列出離室時間、開關分工與每日讀值", otherAngle: "班級會議紀錄聚焦門邊核對卡的改善流程", ad: "貼上本貼紙，保證全校電費立刻減半", strategy: "用誇大保證把局部措施說成整體結果", verifyA: "該教室原始電表讀值", verifyB: "全校同期間用電總表" },
+  { topic: "老照片拍攝年份", fact: "照片中的二樓在改建紀錄所載年份後才出現", opinion: "褪色較深的照片一定更珍貴", headline: "一眼看色澤就能判定所有老照片年代", content: "策展人同時使用訪談、建築紀錄與報紙日期縮小範圍", author: "地方文史展校對組", date: "十一月十八日", method: "逐則列出圖說採用的來源與不確定範圍", otherAngle: "人物專訪聚焦長者對舊市場的生活回憶", ad: "我們的濾鏡能準確還原任何照片的真實年份", strategy: "把影像效果誤當年代證據並作絕對保證", verifyA: "建築改建紀錄", verifyB: "有日期的舊報廣告" },
+  { topic: "圖書館動線指引", fact: "十二名首次到館者中有九人在同一轉角停下", opinion: "新的箭頭造型是全校最好看的設計", headline: "只改箭頭就能解決所有無障礙問題", content: "測試還發現觸覺地圖起點、高度與舊地墊路徑需要一起調整", author: "圖書館使用測試小組", date: "十二月二日", method: "說明參與人數、路線、停頓記錄與修正前後比較", otherAngle: "設計社刊物著重標誌字體與製作過程", ad: "專業外觀證明這套指標不必經過使用者測試", strategy: "以專業外觀取代實際可用性證據", verifyA: "匿名實走停頓紀錄", verifyB: "修正後同路線複測" },
+  { topic: "市場單位價格", fact: "一張價格牌標每台斤，另一張標每公斤", opinion: "數字較小的牌子看起來最划算", headline: "看到最低數字就能省下最多錢", content: "換成同一重量單位後，原先數字較小的品項不一定較便宜", author: "消費教育社", date: "一月十二日", method: "公開單位換算式與兩張原始價格牌", otherAngle: "市場人物報導聚焦攤商如何手寫價格牌", ad: "不必換算，聰明人都直接選最小數字", strategy: "貼群體標籤並刻意省略比較基準", verifyA: "原始價格牌的單位", verifyB: "可重算的重量換算式" },
+  { topic: "校刊訪談引句", fact: "錄音前一句含有「有人以為」，顯示後句在轉述他人", opinion: "截短後的句子讀起來最震撼", headline: "受訪者親口反對整項活動", content: "完整錄音顯示受訪者正在介紹一種他不同意的看法", author: "校刊事實查核編輯", date: "二月十六日", method: "附錄音時間碼、逐字稿與受訪者確認", otherAngle: "版面設計文章只討論引句字級與視覺焦點", ad: "一句最有力的話就代表整場訪談，不必聽前後文", strategy: "斷章取義並把吸引力當成準確性", verifyA: "完整錄音及時間碼", verifyB: "受訪者對逐字稿的確認" },
+  { topic: "舞臺排練時段", fact: "兩組節目在同一時段共用唯一一套音響", opinion: "節目名稱較長的組別應該先排", headline: "平均分時就不可能發生任何等待", content: "即使時數相同，設備切換與布景通道重疊仍會造成阻塞", author: "舞臺管理組", date: "三月九日", method: "列設備、切換時間、人員到場與新舊流程等待量", otherAngle: "演員專訪著重等待時如何調整情緒與走位", ad: "套用這張表，任何規模演出都不必再溝通", strategy: "把單一工具誇大成免除協調的萬用解方", verifyA: "舞臺設備清單與切換時間", verifyB: "新流程的實際聯排紀錄" },
+  { topic: "失物招領隱私", fact: "服務台以證件末兩碼與隊伍記號完成領回核對", opinion: "公開完整照片一定是最快又最好的方法", headline: "保護隱私就永遠找不回失物", content: "公告只寫發現地點，服務台仍在下一場檢錄前找到失主", author: "運動會服務台", date: "四月十日", method: "記錄發現位置、通知方式、核對欄位與簽收時間", otherAngle: "社群討論聚焦公開照片的轉傳速度，未追蹤個資風險", ad: "上傳完整證件即可保證物歸原主，完全沒有風險", strategy: "以保證字眼隱藏隱私成本與冒領可能", verifyA: "服務台招領與簽收紀錄", verifyB: "遮蔽個資公告的發布時間" },
+]);
+
+function informationPracticeSpec(serial, item) {
+  const bySerial = {
+    225: { stem: `關於「${item.topic}」，哪一句是可查證事實而非個人意見？`, correct: item.fact, wrong: [item.opinion, `這件事是有史以來最令人感動的${item.topic}。`, "每個讀者一定都喜歡同一種處理。"], reason: "正解可回到日期、記錄、可觀察物或原始資料查核；其餘使用主觀最高級或全稱感受。" },
+    226: { stem: `訊息標題寫「${item.headline}」；內文實際是「${item.content}」。哪項判斷正確？`, correct: "標題把有限內容誇大或改變範圍，讀者應以內文條件重寫標題。", wrong: ["標題字較大，所以即使與內容不合也必然正確。", "只要標題吸引人，內文可談任何事情。", "內文和標題完全一致，沒有範圍差異。"], reason: "比較主詞、時間、數量與限制即可看出標題超出內文。" },
+    227: { stem: `某資料署名「${item.author}」，發布於${item.date}，並「${item.method}」。評估來源時，哪項最完整？`, correct: `先確認${item.author}是否為相關發布單位，再核對${item.date}是否仍適用，並依「${item.method}」判斷證據能否重做。`, wrong: ["只看版面專業便不必查作者與日期。", "搜尋排名第一就代表方法無誤。", "只要符合自己的想法，匿名且無日期也可信。"], reason: "正解同時檢查作者、日期、方法與問題的距離。" },
+    228: { stem: `同一事件是「${item.topic}」。甲資料由${item.author}提供，重點是「${item.method}」；乙資料則「${item.otherAngle}」。兩媒體取材有何差異？`, correct: "甲偏向可核對的事件流程或資料；乙選取人物經驗或單一角度，兩者用途不同且需分辨缺漏。", wrong: ["兩者名稱不同，所以內容必然完全相反。", "乙有人物便一定虛假，甲有表格便一定完整。", "只需選較短的一篇，不必比較證據。"], reason: "取材差異要看選了哪些人、資料與問題，不按媒體形式直接判真偽。" },
+    229: { stem: `廣告或貼文寫：「${item.ad}」它主要使用哪種說服策略，問題何在？`, correct: `${item.strategy}；這不能代替來源、適用條件與實際效果證據。`, wrong: ["完整呈現研究方法與所有限制。", "只做中性時間通知，沒有說服目的。", "提供可重算原始資料，所以不需查證。"], reason: "正解指出具體措辭如何影響情緒或信任，並說明缺少何種證據。" },
+    230: { stem: `要交叉查證「${item.topic}」，哪組來源最能互補？`, correct: `${item.verifyA}，再比對${item.verifyB}；若兩者版本或條件不同，先說明差異。`, wrong: ["同一匿名貼文轉傳十二次。", "只看一張裁掉日期的截圖。", "詢問一名未參與者的直覺後停止查證。"], reason: "兩個來源分別提供原始或官方資訊與現場／複測證據，可比較而非只重複同一轉傳。" },
+  };
+  return bySerial[serial];
+}
+
+function informationPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 225 || serial > 230) return null;
+  const representations = ["fact-opinion", "headline-content-match", "source-credibility", "media-selection", "persuasion-strategy", "cross-verification"];
+  return INFORMATION_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, informationPracticeSpec(serial, item), representations[serial - 225], "chinese-information"));
 }
 
 const writingSkills = chineseSkills.filter((skill) => Number(skill.id.slice(-3)) >= 303);
@@ -3118,11 +3445,15 @@ for (const [familyIndex, family] of families.entries()) {
 }
 
 await rm(path.join(SUBJECT_ROOT, "source", "units"), { recursive: true, force: true });
+await rm(path.join(SUBJECT_ROOT, "source", "assets"), { recursive: true, force: true });
 await mkdir(path.join(SUBJECT_ROOT, "source", "units"), { recursive: true });
+await mkdir(path.join(SUBJECT_ROOT, "source", "assets"), { recursive: true });
 for (const unit of sourceUnits) await writeFile(path.join(SUBJECT_ROOT, "source", "units", `${unit.unitId}.json`), `${JSON.stringify(unit, null, 2)}\n`, "utf8");
 await Promise.all([
   writeFile(path.join(SUBJECT_ROOT, "source", "stimuli.json"), `${JSON.stringify(stimuli, null, 2)}\n`, "utf8"),
   writeFile(path.join(SUBJECT_ROOT, "source", "stimulus-questions.json"), `${JSON.stringify(stimulusQuestions, null, 2)}\n`, "utf8"),
   writeFile(path.join(SUBJECT_ROOT, "source", "writing-tasks.json"), `${JSON.stringify(writingTasks, null, 2)}\n`, "utf8"),
+  writeFile(path.join(SUBJECT_ROOT, "source", "assets.json"), `${JSON.stringify(sourceAssets, null, 2)}\n`, "utf8"),
+  ...DATA_ASSET_SPECS.map((asset) => writeFile(path.join(SUBJECT_ROOT, "source", "assets", `${asset.id}.svg`), `${svgForDataAsset(asset)}\n`, "utf8")),
 ]);
-console.log(`author-chinese-r4: wrote ${sourceUnits.length} units, ${sourceUnits.flatMap((unit) => unit.lectures).length} lectures, ${sourceUnits.flatMap((unit) => unit.questions).length} skill questions, ${stimuli.length} stimuli, ${stimulusQuestions.length} stimulus questions, ${writingTasks.length} writing tasks`);
+console.log(`author-chinese-r4: wrote ${sourceUnits.length} units, ${sourceUnits.flatMap((unit) => unit.lectures).length} lectures, ${sourceUnits.flatMap((unit) => unit.questions).length} skill questions, ${stimuli.length} stimuli, ${stimulusQuestions.length} stimulus questions, ${writingTasks.length} writing tasks, ${sourceAssets.length} assets`);

@@ -33,13 +33,14 @@ function studentVisibleStrings(source) {
     questions.map(({ stem, options, optionRationales }) => [stem, options, optionRationales.map(({ reason }) => reason)]),
     source.stimuli.map(({ content }) => content),
     source.writingTasks.map(({ title, prompt, taskRequirements, scoringFocus }) => [title, prompt, taskRequirements, scoringFocus]),
+    source.assets.map(({ caption, alt, longDescription, dataTable, print }) => [caption, alt, longDescription, dataTable, print.note]),
   ]);
 }
 
 export async function verifyChineseR4({ repoRoot = REPO_ROOT } = {}) {
   const source = await loadChineseR4Source({ repoRoot });
   const counts = await validateChineseR4Source(source, { repoRoot });
-  const all = [source.units.map(({ value }) => value), source.stimuli, source.stimulusQuestions, source.writingTasks];
+  const all = [source.units.map(({ value }) => value), source.stimuli, source.stimulusQuestions, source.writingTasks, source.assets];
   const text = collectStrings(all).join("\n");
   const studentText = studentVisibleStrings(source).join("\n");
   assert(!/（以下略）|待補|TODO|TBD|placeholder|lorem ipsum/iu.test(text), "unfinished student content");
@@ -66,6 +67,14 @@ export async function verifyChineseR4({ repoRoot = REPO_ROOT } = {}) {
     const sourceBytes = await readFile(path.join(repoRoot, "國文會考作戰室", "r4", "source", "units", name));
     const runtimeBytes = await readFile(path.join(runtimeRoot, "units", name));
     assert.equal(sha256(runtimeBytes), sha256(sourceBytes), `${name}: runtime differs from authoritative source`);
+  }
+  const sourceAssetIndex = await readFile(path.join(repoRoot, "國文會考作戰室", "r4", "source", "assets.json"));
+  const runtimeAssetIndex = await readFile(path.join(runtimeRoot, "assets.json"));
+  assert.equal(sha256(runtimeAssetIndex), sha256(sourceAssetIndex), "runtime asset index differs from authoritative source");
+  for (const asset of source.assets) {
+    const sourceBytes = await readFile(path.join(repoRoot, "國文會考作戰室", "r4", "source", asset.file));
+    const runtimeBytes = await readFile(path.join(runtimeRoot, asset.file));
+    assert.equal(sha256(runtimeBytes), sha256(sourceBytes), `${asset.id}: runtime asset differs from authoritative source`);
   }
   return counts;
 }
