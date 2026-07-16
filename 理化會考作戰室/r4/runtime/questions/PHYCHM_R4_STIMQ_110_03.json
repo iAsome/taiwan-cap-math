@@ -1,0 +1,86 @@
+{
+  "id": "PHYCHM_R4_STIMQ_110_03",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LC-JB-4-3",
+    "AUTH-NATURAL-LC-JD-4-1",
+    "AUTH-NATURAL-LC-JD-4-2",
+    "AUTH-NATURAL-LC-JD-4-3",
+    "AUTH-NATURAL-LC-JD-4-4",
+    "AUTH-NATURAL-LC-JD-4-5",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_110",
+  "stem": "同學根據題組資料提出結論。哪一項最符合「由金屬大理石反應辨識酸性溶液」的條件與限制？",
+  "options": [
+    "採用這個看似直覺的規則：任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性。",
+    "評估報告時先確認「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。」，再標明限制「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與所需額外資料。",
+    "在生活酸鹼安全中直接把「把高濃度等同強酸」當成「由金屬大理石反應辨識酸性溶液」的足夠證據。",
+    "忽略「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」，只根據題幹出現的最大數字宣稱已完成「由金屬大理石反應辨識酸性溶液」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「任何溶液和任何金屬接觸都必然產生同一氣體，可單憑冒泡確認酸性。」，與可驗證命題「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。」，並保留本題條件；評估報告時先確認「酸可能與某些金屬產生氫氣，也可與大理石產生二氧化碳；需再檢驗氣體。」，再標明限制「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把生活酸鹼安全的單一表面線索擴大成結論，並採用「把 pH 8 說成比 pH 12 更鹼」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」和「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "證據評估"
+  ],
+  "representationType": "stimulus-data",
+  "misconceptionTargets": [
+    "把 pH 8 說成比 pH 12 更鹼"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LC-JB-4-3",
+      "AUTH-NATURAL-LC-JD-4-1",
+      "AUTH-NATURAL-LC-JD-4-2",
+      "AUTH-NATURAL-LC-JD-4-3",
+      "AUTH-NATURAL-LC-JD-4-4",
+      "AUTH-NATURAL-LC-JD-4-5",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由金屬大理石反應辨識酸性溶液」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

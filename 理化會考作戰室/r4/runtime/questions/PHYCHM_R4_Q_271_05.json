@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_271_05",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S271"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-4",
+    "AUTH-NATURAL-LC-JC-4-5",
+    "AUTH-NATURAL-LC-KC-4-7",
+    "AUTH-NATURAL-LC-KC-4-8",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "下列哪一項正確說明「分析並聯電路的電流與電壓」的適用界線？",
+  "options": [
+    "採用這個看似直覺的規則：並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆。",
+    "在簡單通路中直接把「伏特計串入主電路」當成「分析並聯電路的電流與電壓」的足夠證據。",
+    "忽略「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」與「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」，只根據題幹出現的最大數字宣稱已完成「分析並聯電路的電流與電壓」。",
+    "保留「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」這項界線，並以下列命題作結論：並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆。」，與可驗證命題「並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把簡單通路的單一表面線索擴大成結論，並採用「安培計直接跨接電源」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」和「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。」，並保留本題條件；保留「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」這項界線，並以下列命題作結論：並聯電路各支路兩端電壓相同，主線電流等於各支路電流之和。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "條件判斷",
+    "分析"
+  ],
+  "representationType": "boundary",
+  "misconceptionTargets": [
+    "並聯電路的電流在每一支路都和主線一樣大，因此合起來不守恆。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-4",
+      "AUTH-NATURAL-LC-JC-4-5",
+      "AUTH-NATURAL-LC-KC-4-7",
+      "AUTH-NATURAL-LC-KC-4-8",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「分析並聯電路的電流與電壓」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

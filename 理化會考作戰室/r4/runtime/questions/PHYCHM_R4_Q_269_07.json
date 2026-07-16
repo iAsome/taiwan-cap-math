@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_269_07",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S269"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-4",
+    "AUTH-NATURAL-LC-JC-4-5",
+    "AUTH-NATURAL-LC-KC-4-7",
+    "AUTH-NATURAL-LC-KC-4-8",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要用串聯電路的觀察支持「使用電壓電流比值求電阻」，哪一份紀錄最有判讀價值？",
+  "options": [
+    "採用這個看似直覺的規則：電阻為 I/V＝0.083 Ω，因為電流應除以電壓。",
+    "在串聯電路中直接把「串聯中電流逐顆用完」當成「使用電壓電流比值求電阻」的足夠證據。",
+    "忽略「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」與「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」，只根據題幹出現的最大數字宣稱已完成「使用電壓電流比值求電阻」。",
+    "在串聯電路中同時記錄條件、觀察量與單位，再以這個專屬判準比對：某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「電阻為 I/V＝0.083 Ω，因為電流應除以電壓。」，與可驗證命題「某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把串聯電路的單一表面線索擴大成結論，並採用「串聯中電流逐顆用完」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」和「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。」，並保留本題條件；在串聯電路中同時記錄條件、觀察量與單位，再以這個專屬判準比對：某元件兩端 6.0 V、通過 0.50 A 時，電阻 R＝V/I＝12 Ω。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "證據判讀",
+    "推論"
+  ],
+  "representationType": "evidence",
+  "misconceptionTargets": [
+    "電阻為 I/V＝0.083 Ω，因為電流應除以電壓。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-4",
+      "AUTH-NATURAL-LC-JC-4-5",
+      "AUTH-NATURAL-LC-KC-4-7",
+      "AUTH-NATURAL-LC-KC-4-8",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「使用電壓電流比值求電阻」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

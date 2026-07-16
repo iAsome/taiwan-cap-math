@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_157_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BB-4-1",
+    "AUTH-NATURAL-LC-BB-4-3",
+    "AUTH-NATURAL-LC-BB-4-4",
+    "AUTH-NATURAL-LC-BB-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同學整理「分析保溫容器同時抑制三種傳熱」時寫下四項關係，哪一項可在題目條件成立時使用？",
+  "options": [
+    "採用這個看似直覺的規則：保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口。",
+    "在海陸風對流中直接把「真空可阻止所有熱輻射」當成「分析保溫容器同時抑制三種傳熱」的足夠證據。",
+    "就「分析保溫容器同時抑制三種傳熱」而言，可使用的具體判準是：保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換。",
+    "忽略「冷空氣下沉是對流的一部分，不代表『冷』是一種向外流動的物質；真空只能消除傳導與對流中的介質路徑。」與「溫度用 °C，時間用 s 或 min；比較傳熱效果時須控制容器、表面積與初溫。」，只根據題幹出現的最大數字宣稱已完成「分析保溫容器同時抑制三種傳熱」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「保溫瓶只要有真空就能完全阻斷一切熱傳，無需考慮輻射與瓶口。」，與可驗證命題「保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把海陸風對流的單一表面線索擴大成結論，並採用「金屬摸起來冷表示本身溫度一定較低」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換。」，並保留本題條件；就「分析保溫容器同時抑制三種傳熱」而言，可使用的具體判準是：保溫瓶的真空層減少傳導與對流，低輻射表面減少輻射，瓶塞也限制空氣交換。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「溫度用 °C，時間用 s 或 min；比較傳熱效果時須控制容器、表面積與初溫。」和「冷空氣下沉是對流的一部分，不代表『冷』是一種向外流動的物質；真空只能消除傳導與對流中的介質路徑。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "關係判讀",
+    "概念理解"
+  ],
+  "representationType": "relation",
+  "misconceptionTargets": [
+    "金屬摸起來冷表示本身溫度一定較低"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BB-4-1",
+      "AUTH-NATURAL-LC-BB-4-3",
+      "AUTH-NATURAL-LC-BB-4-4",
+      "AUTH-NATURAL-LC-BB-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「分析保溫容器同時抑制三種傳熱」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

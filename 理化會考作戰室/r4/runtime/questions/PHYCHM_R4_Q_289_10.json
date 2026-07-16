@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_289_10",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S289"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-1",
+    "AUTH-NATURAL-LC-KC-4-4",
+    "AUTH-NATURAL-LC-KC-4-5",
+    "AUTH-NATURAL-LC-KC-4-6",
+    "AUTH-NATURAL-LC-MC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "針對線圈感應所得資料，下列哪一個關於「由電流磁場受力解釋電動機」的結論沒有超出證據？",
+  "options": [
+    "採用這個看似直覺的規則：電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同。",
+    "在線圈感應中直接把「馬達把力學能轉成電能」當成「由電流磁場受力解釋電動機」的足夠證據。",
+    "現有證據能支持的結論是「電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。」，不再擴張為題組未測的因果。",
+    "忽略「穩定不變的磁場與靜止線圈不會只因『有磁鐵』就持續感應電流；變壓器不能直接用穩定直流維持作用。」與「電壓 V、電流 A、功率 W；裝置圖須標能量輸入、輸出與運動方向。」，只根據題幹出現的最大數字宣稱已完成「由電流磁場受力解釋電動機」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「電動機是靠轉動線圈自動產生電能，它的主要功能和發電機完全相同。」，與可驗證命題「電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把線圈感應的單一表面線索擴大成結論，並採用「馬達把力學能轉成電能」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。」，並保留本題條件；現有證據能支持的結論是「電動機利用載流線圈在磁場中受力產生轉動，主要將電能轉成機械能。」，不再擴張為題組未測的因果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「電壓 V、電流 A、功率 W；裝置圖須標能量輸入、輸出與運動方向。」和「穩定不變的磁場與靜止線圈不會只因『有磁鐵』就持續感應電流；變壓器不能直接用穩定直流維持作用。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "主張評估",
+    "證據評估"
+  ],
+  "representationType": "claim",
+  "misconceptionTargets": [
+    "馬達把力學能轉成電能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-1",
+      "AUTH-NATURAL-LC-KC-4-4",
+      "AUTH-NATURAL-LC-KC-4-5",
+      "AUTH-NATURAL-LC-KC-4-6",
+      "AUTH-NATURAL-LC-MC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「由電流磁場受力解釋電動機」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

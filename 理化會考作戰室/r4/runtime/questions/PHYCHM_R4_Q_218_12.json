@@ -1,0 +1,87 @@
+{
+  "id": "PHYCHM_R4_Q_218_12",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EB-4-1",
+    "AUTH-NATURAL-LC-EB-4-10",
+    "AUTH-NATURAL-LC-EB-4-11",
+    "AUTH-NATURAL-LC-EB-4-12",
+    "AUTH-NATURAL-LC-EB-4-13",
+    "AUTH-NATURAL-LC-EB-4-3",
+    "AUTH-NATURAL-LC-KB-4-1",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某報告用單一觀察就宣稱已證明「合成同一直線上的力並判斷合力」。哪一項評估最適當？",
+  "options": [
+    "採用這個看似直覺的規則：合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N。",
+    "評估報告時先確認「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。」，再標明限制「物體正在移動不表示運動方向上必有合力；慣性不是額外的一種力。」與所需額外資料。",
+    "在作用反作用配對中直接把「把慣性畫成一個力」當成「合成同一直線上的力並判斷合力」的足夠證據。",
+    "忽略「物體正在移動不表示運動方向上必有合力；慣性不是額外的一種力。」與「力與重量用 N，質量用 kg，加速度 m/s²；力圖須標受力物體與箭頭方向。」，只根據題幹出現的最大數字宣稱已完成「合成同一直線上的力並判斷合力」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「合力只需把大小相加，所以向右 8 N 與向左 3 N 的合力是 11 N。」，與可驗證命題「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。」，並保留本題條件；評估報告時先確認「同直線上向右 8 N 與向左 3 N 的合力為向右 5 N；相反方向力要取差並保留方向。」，再標明限制「物體正在移動不表示運動方向上必有合力；慣性不是額外的一種力。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把作用反作用配對的單一表面線索擴大成結論，並採用「混用公斤與牛頓表示重量」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「力與重量用 N，質量用 kg，加速度 m/s²；力圖須標受力物體與箭頭方向。」和「物體正在移動不表示運動方向上必有合力；慣性不是額外的一種力。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "限制評估",
+    "高層推論"
+  ],
+  "representationType": "evaluation",
+  "misconceptionTargets": [
+    "混用公斤與牛頓表示重量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EB-4-1",
+      "AUTH-NATURAL-LC-EB-4-10",
+      "AUTH-NATURAL-LC-EB-4-11",
+      "AUTH-NATURAL-LC-EB-4-12",
+      "AUTH-NATURAL-LC-EB-4-13",
+      "AUTH-NATURAL-LC-EB-4-3",
+      "AUTH-NATURAL-LC-KB-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「合成同一直線上的力並判斷合力」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

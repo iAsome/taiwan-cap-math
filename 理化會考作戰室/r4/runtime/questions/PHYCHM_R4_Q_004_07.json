@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_004_07",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S004"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要用天平歸零的觀察支持「在公制單位間進行合理換算」，哪一份紀錄最有判讀價值？",
+  "options": [
+    "採用這個看似直覺的規則：2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小。",
+    "在天平歸零中直接把「以平均值掩蓋固定偏差」當成「在公制單位間進行合理換算」的足夠證據。",
+    "在天平歸零中同時記錄條件、觀察量與單位，再以這個專屬判準比對：2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。",
+    "忽略「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」，只根據題幹出現的最大數字宣稱已完成「在公制單位間進行合理換算」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小。」，與可驗證命題「2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把天平歸零的單一表面線索擴大成結論，並採用「以平均值掩蓋固定偏差」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。」，並保留本題條件；在天平歸零中同時記錄條件、觀察量與單位，再以這個專屬判準比對：2.35 m＝235 cm；公制換算要保持同一物理量，並讓數值和單位的改變相互補償。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」和「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "證據判讀",
+    "推論"
+  ],
+  "representationType": "evidence",
+  "misconceptionTargets": [
+    "2.35 m＝0.0235 cm，因為換成較小單位時數字也應變小。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「在公制單位間進行合理換算」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

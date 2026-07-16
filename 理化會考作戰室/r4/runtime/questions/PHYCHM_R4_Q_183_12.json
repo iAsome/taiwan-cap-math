@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_183_12",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S183"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-KA-4-7",
+    "AUTH-NATURAL-LC-KA-4-8",
+    "AUTH-NATURAL-LC-KA-4-9",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某報告用單一觀察就宣稱已證明「辨識入射角折射角與法線」。哪一項評估最適當？",
+  "options": [
+    "採用這個看似直覺的規則：入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾。",
+    "在相機鏡頭中直接把「所有凸透鏡像都能投影」當成「辨識入射角折射角與法線」的足夠證據。",
+    "評估報告時先確認「入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。」，再標明限制「垂直入射時速率雖改變，方向可不偏折；透鏡成像性質須同時考慮物距與焦距。」與所需額外資料。",
+    "忽略「垂直入射時速率雖改變，方向可不偏折；透鏡成像性質須同時考慮物距與焦距。」與「焦距、物距、像距使用同一長度單位；角度以 °，作圖需標主軸、焦點與光線方向。」，只根據題幹出現的最大數字宣稱已完成「辨識入射角折射角與法線」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「入射角和折射角都是光線與介面的夾角，法線只是畫圖裝飾。」，與可驗證命題「入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把相機鏡頭的單一表面線索擴大成結論，並採用「只看透鏡名稱不看物距判斷像」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。」，並保留本題條件；評估報告時先確認「入射角是入射光與法線夾角，折射角是折射光與法線夾角，都不從介面量。」，再標明限制「垂直入射時速率雖改變，方向可不偏折；透鏡成像性質須同時考慮物距與焦距。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「焦距、物距、像距使用同一長度單位；角度以 °，作圖需標主軸、焦點與光線方向。」和「垂直入射時速率雖改變，方向可不偏折；透鏡成像性質須同時考慮物距與焦距。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "限制評估",
+    "高層推論"
+  ],
+  "representationType": "evaluation",
+  "misconceptionTargets": [
+    "只看透鏡名稱不看物距判斷像"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-KA-4-7",
+      "AUTH-NATURAL-LC-KA-4-8",
+      "AUTH-NATURAL-LC-KA-4-9",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「辨識入射角折射角與法線」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

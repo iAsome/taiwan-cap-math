@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_169_08",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S169"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-KA-4-3",
+    "AUTH-NATURAL-LC-KA-4-4",
+    "AUTH-NATURAL-LC-KA-4-5",
+    "AUTH-NATURAL-LC-ME-4-7",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一組資料要用來處理「說明聲音傳播需要介質」，下列哪一種推理順序合理？",
+  "options": [
+    "先以「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。」處理題給資料，再用「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」做邊界檢查。",
+    "採用這個看似直覺的規則：真空中的聲音傳得最快，因為沒有空氣阻力。",
+    "在噪音暴露中直接把「真空能傳播聲音」當成「說明聲音傳播需要介質」的足夠證據。",
+    "忽略「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」與「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」，只根據題幹出現的最大數字宣稱已完成「說明聲音傳播需要介質」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。」，並保留本題條件；先以「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。」處理題給資料，再用「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」做邊界檢查。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「真空中的聲音傳得最快，因為沒有空氣阻力。」，與可驗證命題「聲波需要氣體、液體或固體介質傳播；真空中沒有可傳遞振動的介質。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把噪音暴露的單一表面線索擴大成結論，並採用「短暫大聲與長時間暴露風險完全相同」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」和「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "關係應用",
+    "多步驟推理"
+  ],
+  "representationType": "multi-step",
+  "misconceptionTargets": [
+    "短暫大聲與長時間暴露風險完全相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-KA-4-3",
+      "AUTH-NATURAL-LC-KA-4-4",
+      "AUTH-NATURAL-LC-KA-4-5",
+      "AUTH-NATURAL-LC-ME-4-7",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「說明聲音傳播需要介質」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

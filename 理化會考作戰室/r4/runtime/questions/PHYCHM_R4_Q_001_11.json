@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_001_11",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S001"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "把「區分基本物理量與由計算得到的物理量」應用到新的天平歸零問題時，哪一個做法仍成立？",
+  "options": [
+    "採用這個看似直覺的規則：只要答案含有數字，就可把它當成直接測量的基本物理量。",
+    "在天平歸零中直接把「只看數字大小而忽略單位」當成「區分基本物理量與由計算得到的物理量」的足夠證據。",
+    "忽略「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」，只根據題幹出現的最大數字宣稱已完成「區分基本物理量與由計算得到的物理量」。",
+    "新的天平歸零情境仍使用這項不改變的物理或化學依據：長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「只要答案含有數字，就可把它當成直接測量的基本物理量。」，與可驗證命題「長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把天平歸零的單一表面線索擴大成結論，並採用「以平均值掩蓋固定偏差」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」和「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。」，並保留本題條件；新的天平歸零情境仍使用這項不改變的物理或化學依據：長度、質量、時間和溫度可由儀器直接測量；密度、速率與平均值則是用直接測得的量計算而得。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "情境遷移",
+    "應用"
+  ],
+  "representationType": "transfer",
+  "misconceptionTargets": [
+    "只要答案含有數字，就可把它當成直接測量的基本物理量。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「區分基本物理量與由計算得到的物理量」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

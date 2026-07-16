@@ -1,0 +1,85 @@
+{
+  "id": "PHYCHM_R4_Q_030_07",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-3",
+    "AUTH-NATURAL-LC-AB-4-4",
+    "AUTH-NATURAL-LC-CA-4-1",
+    "AUTH-NATURAL-LC-JB-4-1",
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LC-JB-4-4",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要用水質 ppm的觀察支持「讀懂百萬分點濃度的表示」，哪一份紀錄最有判讀價值？",
+  "options": [
+    "在水質 ppm中同時記錄條件、觀察量與單位，再以這個專屬判準比對：5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。",
+    "採用這個看似直覺的規則：5 ppm 和 5% 完全相同，都表示每一百份中有 5 份。",
+    "在水質 ppm中直接把「所有可溶物都形成電解質」當成「讀懂百萬分點濃度的表示」的足夠證據。",
+    "忽略「透明不等於純物質，均勻也不等於只有一種成分；導電強弱還受濃度與離子種類影響。」與「質量須先統一成同一單位；ppm 表示百萬分之一，題目必須說明以何種量作比例。」，只根據題幹出現的最大數字宣稱已完成「讀懂百萬分點濃度的表示」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。」，並保留本題條件；在水質 ppm中同時記錄條件、觀察量與單位，再以這個專屬判準比對：5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「5 ppm 和 5% 完全相同，都表示每一百份中有 5 份。」，與可驗證命題「5 ppm 表示在題目指定的比例基準下，每一百萬份中有 5 份目標成分。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把水質 ppm的單一表面線索擴大成結論，並採用「所有可溶物都形成電解質」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「質量須先統一成同一單位；ppm 表示百萬分之一，題目必須說明以何種量作比例。」和「透明不等於純物質，均勻也不等於只有一種成分；導電強弱還受濃度與離子種類影響。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "證據判讀",
+    "推論"
+  ],
+  "representationType": "evidence",
+  "misconceptionTargets": [
+    "5 ppm 和 5% 完全相同，都表示每一百份中有 5 份。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-3",
+      "AUTH-NATURAL-LC-AB-4-4",
+      "AUTH-NATURAL-LC-CA-4-1",
+      "AUTH-NATURAL-LC-JB-4-1",
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LC-JB-4-4",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「讀懂百萬分點濃度的表示」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

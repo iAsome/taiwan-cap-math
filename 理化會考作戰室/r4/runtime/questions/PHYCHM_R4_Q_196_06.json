@@ -1,0 +1,79 @@
+{
+  "id": "PHYCHM_R4_Q_196_06",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S196"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EB-4-8",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "有人在判斷「以參考點與座標描述物體位置」時犯了常見錯誤，哪一項修正最完整？",
+  "options": [
+    "採用這個看似直覺的規則：只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向。",
+    "不能採用「只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向。」；修正後應為：物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。",
+    "在直線座標中直接把「把平均速率當成每一刻速率」當成「以參考點與座標描述物體位置」的足夠證據。",
+    "忽略「回到起點時位移可為零，但路程通常不為零；平均速率相同不保證運動過程相同。」與「位置與位移用 m 或 km，時間用 s 或 h，速率常用 m/s 或 km/h；1 m/s＝3.6 km/h。」，只根據題幹出現的最大數字宣稱已完成「以參考點與座標描述物體位置」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向。」，與可驗證命題「物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。」，並保留本題條件；不能採用「只給一個數字「200 m」就能唯一決定物體位置，不需參考點與方向。」；修正後應為：物體位置要相對指定參考點、正方向與原點描述；例如「車站東方 200 m」資訊完整。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把直線座標的單一表面線索擴大成結論，並採用「忽略速度的方向」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「位置與位移用 m 或 km，時間用 s 或 h，速率常用 m/s 或 km/h；1 m/s＝3.6 km/h。」和「回到起點時位移可為零，但路程通常不為零；平均速率相同不保證運動過程相同。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "錯誤分析",
+    "分析"
+  ],
+  "representationType": "error-analysis",
+  "misconceptionTargets": [
+    "忽略速度的方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EB-4-8",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「以參考點與座標描述物體位置」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

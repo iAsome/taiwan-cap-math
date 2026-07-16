@@ -1,0 +1,82 @@
+{
+  "id": "PHYCHM_R4_STIMQ_254_01",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S254"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-5",
+    "AUTH-NATURAL-LC-EB-4-2",
+    "AUTH-NATURAL-LC-EB-4-3",
+    "AUTH-NATURAL-LC-EB-4-7",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_254",
+  "stem": "依據題組中的滑輪組紀錄，哪一項最能支持「分析槓桿支點施力點與抗力點」的判斷？",
+  "options": [
+    "採用這個看似直覺的規則：任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關。",
+    "在滑輪組中直接把「定滑輪可省一半力」當成「分析槓桿支點施力點與抗力點」的足夠證據。",
+    "忽略「力臂是支點到作用線的垂直距離，不一定等於手到支點的直線距離；定滑輪主要改變施力方向。」與「力矩 N·m、力 N、力臂 m、功 J；圖中需標支點、作用線與距離。」，只根據題幹出現的最大數字宣稱已完成「分析槓桿支點施力點與抗力點」。",
+    "現有證據能支持的結論是「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。」，不再擴張為題組未測的因果。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「任何槓桿都能同時省力且省距離，支點、施力點和抗力點位置無關。」，與可驗證命題「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把滑輪組的單一表面線索擴大成結論，並採用「定滑輪可省一半力」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「力矩 N·m、力 N、力臂 m、功 J；圖中需標支點、作用線與距離。」和「力臂是支點到作用線的垂直距離，不一定等於手到支點的直線距離；定滑輪主要改變施力方向。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。」，並保留本題條件；現有證據能支持的結論是「槓桿以支點為轉軸，施力點和抗力點的力臂決定省力、省距離或改變方向的效果。」，不再擴張為題組未測的因果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "stimulus-figure-and-data",
+  "misconceptionTargets": [
+    "定滑輪可省一半力"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-5",
+      "AUTH-NATURAL-LC-EB-4-2",
+      "AUTH-NATURAL-LC-EB-4-3",
+      "AUTH-NATURAL-LC-EB-4-7",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「分析槓桿支點施力點與抗力點」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "PHYCHM_R4_ASSET_013"
+  ]
+}

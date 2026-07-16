@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_096_06",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-2",
+    "AUTH-NATURAL-LC-JA-4-1",
+    "AUTH-NATURAL-LC-JA-4-4",
+    "AUTH-NATURAL-LC-JB-4-4",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "有人在判斷「避免用係數直接當成質量比」時犯了常見錯誤，哪一項修正最完整？",
+  "options": [
+    "採用這個看似直覺的規則：係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關。",
+    "不能採用「係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關。」；修正後應為：反應係數表示粒子數比；要轉成質量比，必須再乘以各物質的相對分子量。",
+    "在反應資料表中直接把「混用溶液質量與溶質質量」當成「避免用係數直接當成質量比」的足夠證據。",
+    "忽略「反應物不一定完全用完；若一種反應物過量，生成物量由先耗盡者限制。」與「質量、濃度與粒子比例必須分開記錄；重量百分濃度先換成溶質質量再連到反應。」，只根據題幹出現的最大數字宣稱已完成「避免用係數直接當成質量比」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關。」，與可驗證命題「反應係數表示粒子數比；要轉成質量比，必須再乘以各物質的相對分子量。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「反應係數表示粒子數比；要轉成質量比，必須再乘以各物質的相對分子量。」，並保留本題條件；不能採用「係數 2：1 在任何情況都直接等於質量 2 g：1 g，與物質組成無關。」；修正後應為：反應係數表示粒子數比；要轉成質量比，必須再乘以各物質的相對分子量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把反應資料表的單一表面線索擴大成結論，並採用「用係數比當質量比」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「質量、濃度與粒子比例必須分開記錄；重量百分濃度先換成溶質質量再連到反應。」和「反應物不一定完全用完；若一種反應物過量，生成物量由先耗盡者限制。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "錯誤分析",
+    "分析"
+  ],
+  "representationType": "error-analysis",
+  "misconceptionTargets": [
+    "用係數比當質量比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-2",
+      "AUTH-NATURAL-LC-JA-4-1",
+      "AUTH-NATURAL-LC-JA-4-4",
+      "AUTH-NATURAL-LC-JB-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「避免用係數直接當成質量比」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

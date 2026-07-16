@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_083_12",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-5",
+    "AUTH-NATURAL-LC-JA-4-1",
+    "AUTH-NATURAL-LC-JA-4-2",
+    "AUTH-NATURAL-LC-JA-4-4",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某報告用單一觀察就宣稱已證明「計算反應物與生成物未知質量」。哪一項評估最適當？",
+  "options": [
+    "採用這個看似直覺的規則：未知生成物為 35＋12＝47 g，因為生成物應加在反應物上。",
+    "在反應式配平中直接把「用改下標的方法配平」當成「計算反應物與生成物未知質量」的足夠證據。",
+    "評估報告時先確認「反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。」，再標明限制「質量守恆不要求體積、粒子總個數或物質種類相同；係數比例也不直接等於質量比例。」與所需額外資料。",
+    "忽略「質量守恆不要求體積、粒子總個數或物質種類相同；係數比例也不直接等於質量比例。」與「質量資料先統一為 g 或 kg；係數沒有質量單位。」，只根據題幹出現的最大數字宣稱已完成「計算反應物與生成物未知質量」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「未知生成物為 35＋12＝47 g，因為生成物應加在反應物上。」，與可驗證命題「反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把反應式配平的單一表面線索擴大成結論，並採用「認為反應前後總體積必相等」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。」，並保留本題條件；評估報告時先確認「反應物總質量 35 g，已知一生成物 12 g，且系統密閉，另一生成物為 23 g。」，再標明限制「質量守恆不要求體積、粒子總個數或物質種類相同；係數比例也不直接等於質量比例。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「質量資料先統一為 g 或 kg；係數沒有質量單位。」和「質量守恆不要求體積、粒子總個數或物質種類相同；係數比例也不直接等於質量比例。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "限制評估",
+    "高層推論"
+  ],
+  "representationType": "evaluation",
+  "misconceptionTargets": [
+    "認為反應前後總體積必相等"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-5",
+      "AUTH-NATURAL-LC-JA-4-1",
+      "AUTH-NATURAL-LC-JA-4-2",
+      "AUTH-NATURAL-LC-JA-4-4",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「計算反應物與生成物未知質量」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

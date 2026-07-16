@@ -1,0 +1,84 @@
+{
+  "id": "PHYCHM_R4_STIMQ_029_01",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-3",
+    "AUTH-NATURAL-LC-AB-4-4",
+    "AUTH-NATURAL-LC-CA-4-1",
+    "AUTH-NATURAL-LC-JB-4-1",
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LC-JB-4-4",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_029",
+  "stem": "依據題組中的飲品稀釋紀錄，哪一項最能支持「由濃度與溶液質量求溶質質量」的判斷？",
+  "options": [
+    "採用這個看似直覺的規則：250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量。",
+    "在飲品稀釋中直接把「加水後溶質質量跟著減少」當成「由濃度與溶液質量求溶質質量」的足夠證據。",
+    "現有證據能支持的結論是「250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。」，不再擴張為題組未測的因果。",
+    "忽略「透明不等於純物質，均勻也不等於只有一種成分；導電強弱還受濃度與離子種類影響。」與「質量須先統一成同一單位；ppm 表示百萬分之一，題目必須說明以何種量作比例。」，只根據題幹出現的最大數字宣稱已完成「由濃度與溶液質量求溶質質量」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「250 g、12% 的溶液含溶質 262 g，因為應把百分數直接加上溶液質量。」，與可驗證命題「250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把飲品稀釋的單一表面線索擴大成結論，並採用「加水後溶質質量跟著減少」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。」，並保留本題條件；現有證據能支持的結論是「250 g、12% 的溶液含溶質 30 g，因為溶質質量＝濃度×溶液質量。」，不再擴張為題組未測的因果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「質量須先統一成同一單位；ppm 表示百萬分之一，題目必須說明以何種量作比例。」和「透明不等於純物質，均勻也不等於只有一種成分；導電強弱還受濃度與離子種類影響。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "stimulus-data",
+  "misconceptionTargets": [
+    "加水後溶質質量跟著減少"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-3",
+      "AUTH-NATURAL-LC-AB-4-4",
+      "AUTH-NATURAL-LC-CA-4-1",
+      "AUTH-NATURAL-LC-JB-4-1",
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LC-JB-4-4",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「由濃度與溶液質量求溶質質量」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

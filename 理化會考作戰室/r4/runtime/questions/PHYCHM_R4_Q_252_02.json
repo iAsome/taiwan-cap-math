@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_252_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S252"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-5",
+    "AUTH-NATURAL-LC-EB-4-2",
+    "AUTH-NATURAL-LC-EB-4-3",
+    "AUTH-NATURAL-LC-EB-4-7",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同學整理「由力與力臂計算力矩」時寫下四項關係，哪一項可在題目條件成立時使用？",
+  "options": [
+    "採用這個看似直覺的規則：力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離。",
+    "就「由力與力臂計算力矩」而言，可使用的具體判準是：力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。",
+    "在滑輪組中直接把「省力機械也同時省距離」當成「由力與力臂計算力矩」的足夠證據。",
+    "忽略「力臂是支點到作用線的垂直距離，不一定等於手到支點的直線距離；定滑輪主要改變施力方向。」與「力矩 N·m、力 N、力臂 m、功 J；圖中需標支點、作用線與距離。」，只根據題幹出現的最大數字宣稱已完成「由力與力臂計算力矩」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「力矩是力除以力臂，且力臂只能用施力點到轉軸的斜距離。」，與可驗證命題「力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。」，並保留本題條件；就「由力與力臂計算力矩」而言，可使用的具體判準是：力矩大小為力乘以作用線到轉軸的垂直距離；10 N 作用於 0.30 m 力臂產生 3.0 N·m。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把滑輪組的單一表面線索擴大成結論，並採用「定滑輪可省一半力」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「力矩 N·m、力 N、力臂 m、功 J；圖中需標支點、作用線與距離。」和「力臂是支點到作用線的垂直距離，不一定等於手到支點的直線距離；定滑輪主要改變施力方向。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "關係判讀",
+    "概念理解"
+  ],
+  "representationType": "relation",
+  "misconceptionTargets": [
+    "定滑輪可省一半力"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-5",
+      "AUTH-NATURAL-LC-EB-4-2",
+      "AUTH-NATURAL-LC-EB-4-3",
+      "AUTH-NATURAL-LC-EB-4-7",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由力與力臂計算力矩」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_058_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S058"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-3",
+    "AUTH-NATURAL-LC-AA-4-5",
+    "AUTH-NATURAL-LC-CB-4-1",
+    "AUTH-NATURAL-LC-JA-4-4",
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LP-PC-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同學整理「由化學式辨認元素種類」時寫下四項關係，哪一項可在題目條件成立時使用？",
+  "options": [
+    "採用這個看似直覺的規則：H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種。",
+    "在粒子模型轉換中直接把「忽略元素符號大小寫」當成「由化學式辨認元素種類」的足夠證據。",
+    "忽略「省略的下標代表 1；係數對整個化學式生效，括號外下標則乘入括號內各原子。」與「粒子數與原子個數是計數值；電荷以 +、− 與數字標示，不與質量單位混用。」，只根據題幹出現的最大數字宣稱已完成「由化學式辨認元素種類」。",
+    "就「由化學式辨認元素種類」而言，可使用的具體判準是：H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「H₂SO₄ 含 2＋1＋4＝7 種元素，因為每個原子都算一種。」，與可驗證命題「H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把粒子模型轉換的單一表面線索擴大成結論，並採用「把係數只乘第一個元素」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「粒子數與原子個數是計數值；電荷以 +、− 與數字標示，不與質量單位混用。」和「省略的下標代表 1；係數對整個化學式生效，括號外下標則乘入括號內各原子。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。」，並保留本題條件；就「由化學式辨認元素種類」而言，可使用的具體判準是：H₂SO₄ 含氫、硫、氧三種元素；元素種類由不同元素符號判定，不由下標大小判定。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "關係判讀",
+    "概念理解"
+  ],
+  "representationType": "relation",
+  "misconceptionTargets": [
+    "把係數只乘第一個元素"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-3",
+      "AUTH-NATURAL-LC-AA-4-5",
+      "AUTH-NATURAL-LC-CB-4-1",
+      "AUTH-NATURAL-LC-JA-4-4",
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LP-PC-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「由化學式辨認元素種類」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

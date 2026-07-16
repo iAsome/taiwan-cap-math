@@ -1,0 +1,82 @@
+{
+  "id": "PHYCHM_R4_STIMQ_172_01",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S172"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-KA-4-3",
+    "AUTH-NATURAL-LC-KA-4-4",
+    "AUTH-NATURAL-LC-KA-4-5",
+    "AUTH-NATURAL-LC-ME-4-7",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_172",
+  "stem": "依據題組中的回聲測距紀錄，哪一項最能支持「由反射解釋回聲與測距應用」的判斷？",
+  "options": [
+    "採用這個看似直覺的規則：距離為 340×0.40＝136 m，因為回聲時間只包含單程。",
+    "現有證據能支持的結論是「回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。」，不再擴張為題組未測的因果。",
+    "在回聲測距中直接把「音調較高表示聲音一定較大」當成「由反射解釋回聲與測距應用」的足夠證據。",
+    "忽略「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」與「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」，只根據題幹出現的最大數字宣稱已完成「由反射解釋回聲與測距應用」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「距離為 340×0.40＝136 m，因為回聲時間只包含單程。」，與可驗證命題「回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。」，並保留本題條件；現有證據能支持的結論是「回聲測距的聲波經往返路程；若聲速 340 m/s、往返 0.40 s，距離為 68 m。」，不再擴張為題組未測的因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把回聲測距的單一表面線索擴大成結論，並採用「音調較高表示聲音一定較大」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」和「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "stimulus-figure-and-data",
+  "misconceptionTargets": [
+    "音調較高表示聲音一定較大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-KA-4-3",
+      "AUTH-NATURAL-LC-KA-4-4",
+      "AUTH-NATURAL-LC-KA-4-5",
+      "AUTH-NATURAL-LC-ME-4-7",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由反射解釋回聲與測距應用」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "PHYCHM_R4_ASSET_003"
+  ]
+}

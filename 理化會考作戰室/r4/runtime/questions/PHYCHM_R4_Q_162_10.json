@@ -1,0 +1,79 @@
+{
+  "id": "PHYCHM_R4_Q_162_10",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-KA-4-1",
+    "AUTH-NATURAL-LC-KA-4-2",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "針對彈簧縱波所得資料，下列哪一個關於「由週期與頻率判斷振動快慢」的結論沒有超出證據？",
+  "options": [
+    "採用這個看似直覺的規則：週期越長表示每秒振動次數越多，所以頻率和週期成正比。",
+    "在彈簧縱波中直接把「介質粒子隨波一路移到遠方」當成「由週期與頻率判斷振動快慢」的足夠證據。",
+    "忽略「波形圖的水平軸若是位置才可直接讀波長；若是時間，需先辨認週期。」與「波速 m/s、頻率 Hz、波長 m、週期 s；計算前必須統一單位。」，只根據題幹出現的最大數字宣稱已完成「由週期與頻率判斷振動快慢」。",
+    "現有證據能支持的結論是「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。」，不再擴張為題組未測的因果。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「週期越長表示每秒振動次數越多，所以頻率和週期成正比。」，與可驗證命題「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把彈簧縱波的單一表面線索擴大成結論，並採用「介質粒子隨波一路移到遠方」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「波速 m/s、頻率 Hz、波長 m、週期 s；計算前必須統一單位。」和「波形圖的水平軸若是位置才可直接讀波長；若是時間，需先辨認週期。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。」，並保留本題條件；現有證據能支持的結論是「週期 T 是一次完整振動的時間，頻率 f 是每秒振動次數，兩者關係為 f＝1/T。」，不再擴張為題組未測的因果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "主張評估",
+    "證據評估"
+  ],
+  "representationType": "claim",
+  "misconceptionTargets": [
+    "介質粒子隨波一路移到遠方"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-KA-4-1",
+      "AUTH-NATURAL-LC-KA-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「由週期與頻率判斷振動快慢」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

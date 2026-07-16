@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_291_11",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S291"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-1",
+    "AUTH-NATURAL-LC-KC-4-4",
+    "AUTH-NATURAL-LC-KC-4-5",
+    "AUTH-NATURAL-LC-KC-4-6",
+    "AUTH-NATURAL-LC-MC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "把「比較發電機與電動機能量轉換」應用到新的手搖發電問題時，哪一個做法仍成立？",
+  "options": [
+    "採用這個看似直覺的規則：發電機和電動機都只將電能轉成熱能，與機械能無關。",
+    "新的手搖發電情境仍使用這項不改變的物理或化學依據：發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。",
+    "在手搖發電中直接把「變壓器用直流也能持續正常變壓」當成「比較發電機與電動機能量轉換」的足夠證據。",
+    "忽略「穩定不變的磁場與靜止線圈不會只因『有磁鐵』就持續感應電流；變壓器不能直接用穩定直流維持作用。」與「電壓 V、電流 A、功率 W；裝置圖須標能量輸入、輸出與運動方向。」，只根據題幹出現的最大數字宣稱已完成「比較發電機與電動機能量轉換」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「發電機和電動機都只將電能轉成熱能，與機械能無關。」，與可驗證命題「發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。」，並保留本題條件；新的手搖發電情境仍使用這項不改變的物理或化學依據：發電機主要將機械能轉電能，電動機主要將電能轉機械能，兩者能量流向相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把手搖發電的單一表面線索擴大成結論，並採用「發電機創造能量」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「電壓 V、電流 A、功率 W；裝置圖須標能量輸入、輸出與運動方向。」和「穩定不變的磁場與靜止線圈不會只因『有磁鐵』就持續感應電流；變壓器不能直接用穩定直流維持作用。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "情境遷移",
+    "應用"
+  ],
+  "representationType": "transfer",
+  "misconceptionTargets": [
+    "發電機和電動機都只將電能轉成熱能，與機械能無關。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-1",
+      "AUTH-NATURAL-LC-KC-4-4",
+      "AUTH-NATURAL-LC-KC-4-5",
+      "AUTH-NATURAL-LC-KC-4-6",
+      "AUTH-NATURAL-LC-MC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「比較發電機與電動機能量轉換」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

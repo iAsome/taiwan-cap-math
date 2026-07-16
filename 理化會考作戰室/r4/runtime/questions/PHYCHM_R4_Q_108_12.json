@@ -1,0 +1,87 @@
+{
+  "id": "PHYCHM_R4_Q_108_12",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LC-JB-4-3",
+    "AUTH-NATURAL-LC-JD-4-1",
+    "AUTH-NATURAL-LC-JD-4-2",
+    "AUTH-NATURAL-LC-JD-4-3",
+    "AUTH-NATURAL-LC-JD-4-4",
+    "AUTH-NATURAL-LC-JD-4-5",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某報告用單一觀察就宣稱已證明「使用廣用指示劑判讀酸鹼範圍」。哪一項評估最適當？",
+  "options": [
+    "採用這個看似直覺的規則：一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱。",
+    "在生活酸鹼安全中直接把「把高濃度等同強酸」當成「使用廣用指示劑判讀酸鹼範圍」的足夠證據。",
+    "忽略「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」，只根據題幹出現的最大數字宣稱已完成「使用廣用指示劑判讀酸鹼範圍」。",
+    "評估報告時先確認「廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。」，再標明限制「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與所需額外資料。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「一種指示劑顯現的單一顏色可精確到任意小數 pH，並唯一辨識溶液名稱。」，與可驗證命題「廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把生活酸鹼安全的單一表面線索擴大成結論，並採用「把 pH 8 說成比 pH 12 更鹼」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」和「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。」，並保留本題條件；評估報告時先確認「廣用指示劑的顏色應對照色階判讀 pH 範圍，只能估計區間，不能單憑顏色確定化學身分。」，再標明限制「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與所需額外資料。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "限制評估",
+    "高層推論"
+  ],
+  "representationType": "evaluation",
+  "misconceptionTargets": [
+    "把 pH 8 說成比 pH 12 更鹼"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LC-JB-4-3",
+      "AUTH-NATURAL-LC-JD-4-1",
+      "AUTH-NATURAL-LC-JD-4-2",
+      "AUTH-NATURAL-LC-JD-4-3",
+      "AUTH-NATURAL-LC-JD-4-4",
+      "AUTH-NATURAL-LC-JD-4-5",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「使用廣用指示劑判讀酸鹼範圍」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

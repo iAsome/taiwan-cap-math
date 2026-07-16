@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_059_09",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-3",
+    "AUTH-NATURAL-LC-AA-4-5",
+    "AUTH-NATURAL-LC-CB-4-1",
+    "AUTH-NATURAL-LC-JA-4-4",
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LP-PC-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "班上要比較化學式讀取中的「由下標判斷一個粒子的原子個數」，哪一個實驗設計可形成公平比較？",
+  "options": [
+    "採用這個看似直覺的規則：H₂SO₄ 中未寫下標的 S 表示沒有硫原子。",
+    "在化學式讀取中直接把「忽略元素符號大小寫」當成「由下標判斷一個粒子的原子個數」的足夠證據。",
+    "忽略「省略的下標代表 1；係數對整個化學式生效，括號外下標則乘入括號內各原子。」與「粒子數與原子個數是計數值；電荷以 +、− 與數字標示，不與質量單位混用。」，只根據題幹出現的最大數字宣稱已完成「由下標判斷一個粒子的原子個數」。",
+    "只改一個主要變因並保持其他條件一致，量測結果時依「一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。」判讀。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「H₂SO₄ 中未寫下標的 S 表示沒有硫原子。」，與可驗證命題「一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把化學式讀取的單一表面線索擴大成結論，並採用「配平時任意改化學式下標」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「粒子數與原子個數是計數值；電荷以 +、− 與數字標示，不與質量單位混用。」和「省略的下標代表 1；係數對整個化學式生效，括號外下標則乘入括號內各原子。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。」，並保留本題條件；只改一個主要變因並保持其他條件一致，量測結果時依「一個 H₂SO₄ 粒子含 2 個氫、1 個硫、4 個氧原子，共 7 個原子。」判讀。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "變因控制",
+    "實驗設計"
+  ],
+  "representationType": "experiment",
+  "misconceptionTargets": [
+    "H₂SO₄ 中未寫下標的 S 表示沒有硫原子。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-3",
+      "AUTH-NATURAL-LC-AA-4-5",
+      "AUTH-NATURAL-LC-CB-4-1",
+      "AUTH-NATURAL-LC-JA-4-4",
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LP-PC-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「由下標判斷一個粒子的原子個數」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

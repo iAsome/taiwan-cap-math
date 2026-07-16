@@ -1,0 +1,79 @@
+{
+  "id": "PHYCHM_R4_Q_212_04",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EB-4-11",
+    "AUTH-NATURAL-LC-EB-4-8",
+    "AUTH-NATURAL-LC-EB-4-9",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "以受力與質量比較處理「計算平均加速度的基本情境」時，哪一個步驟安排最合理？",
+  "options": [
+    "採用這個看似直覺的規則：平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加。",
+    "在受力與質量比較中直接把「把位置圖斜率當成加速度」當成「計算平均加速度的基本情境」的足夠證據。",
+    "忽略「正加速度不一定變快，還要看速度方向；零瞬時速度也不必然表示加速度為零。」與「速度 m/s、時間 s、加速度 m/s²；使用公式前要統一速度與時間單位。」，只根據題幹出現的最大數字宣稱已完成「計算平均加速度的基本情境」。",
+    "列出已知量與待求量，先統一單位，再使用「平均加速度＝(末速度−初速度)÷時間。」並檢查結果量級。本題的正確執行依據是：速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 m/s²。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「平均加速度是 (10＋4)/3＝4.67 m/s²，因為速度變化量要相加。」，與可驗證命題「速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 m/s²。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把受力與質量比較的單一表面線索擴大成結論，並採用「把位置圖斜率當成加速度」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「速度 m/s、時間 s、加速度 m/s²；使用公式前要統一速度與時間單位。」和「正加速度不一定變快，還要看速度方向；零瞬時速度也不必然表示加速度為零。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 m/s²。」，並保留本題條件；列出已知量與待求量，先統一單位，再使用「平均加速度＝(末速度−初速度)÷時間。」並檢查結果量級。本題的正確執行依據是：速度由 4 m/s 在 3 s 內均勻變為 10 m/s，平均加速度為 (10−4)/3＝2 m/s²。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "程序選擇",
+    "應用"
+  ],
+  "representationType": "procedure",
+  "misconceptionTargets": [
+    "把位置圖斜率當成加速度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EB-4-11",
+      "AUTH-NATURAL-LC-EB-4-8",
+      "AUTH-NATURAL-LC-EB-4-9",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「計算平均加速度的基本情境」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

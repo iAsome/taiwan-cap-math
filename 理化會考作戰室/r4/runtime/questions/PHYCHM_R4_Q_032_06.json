@@ -1,0 +1,85 @@
+{
+  "id": "PHYCHM_R4_Q_032_06",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-3",
+    "AUTH-NATURAL-LC-AB-4-4",
+    "AUTH-NATURAL-LC-CA-4-1",
+    "AUTH-NATURAL-LC-JB-4-1",
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LC-JB-4-4",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "有人在判斷「由導電實驗區分電解質與非電解質」時犯了常見錯誤，哪一項修正最完整？",
+  "options": [
+    "採用這個看似直覺的規則：任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電。",
+    "不能採用「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電。」；修正後應為：在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。",
+    "在飲品稀釋中直接把「看不見顆粒就判定為純物質」當成「由導電實驗區分電解質與非電解質」的足夠證據。",
+    "忽略「透明不等於純物質，均勻也不等於只有一種成分；導電強弱還受濃度與離子種類影響。」與「質量須先統一成同一單位；ppm 表示百萬分之一，題目必須說明以何種量作比例。」，只根據題幹出現的最大數字宣稱已完成「由導電實驗區分電解質與非電解質」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電。」，與可驗證命題「在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。」，並保留本題條件；不能採用「任何能溶於水的物質都必然產生離子，所以糖水也一定和鹽水同樣導電。」；修正後應為：在相同電路與濃度條件下，水溶液能否導電可用來判斷是否有可移動離子，並輔助區分電解質。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把飲品稀釋的單一表面線索擴大成結論，並採用「加水後溶質質量跟著減少」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「質量須先統一成同一單位；ppm 表示百萬分之一，題目必須說明以何種量作比例。」和「透明不等於純物質，均勻也不等於只有一種成分；導電強弱還受濃度與離子種類影響。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "錯誤分析",
+    "分析"
+  ],
+  "representationType": "error-analysis",
+  "misconceptionTargets": [
+    "加水後溶質質量跟著減少"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-3",
+      "AUTH-NATURAL-LC-AB-4-4",
+      "AUTH-NATURAL-LC-CA-4-1",
+      "AUTH-NATURAL-LC-JB-4-1",
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LC-JB-4-4",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由導電實驗區分電解質與非電解質」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

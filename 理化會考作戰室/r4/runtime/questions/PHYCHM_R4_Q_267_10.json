@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_267_10",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S267"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-4",
+    "AUTH-NATURAL-LC-JC-4-5",
+    "AUTH-NATURAL-LC-KC-4-7",
+    "AUTH-NATURAL-LC-KC-4-8",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "針對電表接法所得資料，下列哪一個關於「區分電流電壓與電阻概念」的結論沒有超出證據？",
+  "options": [
+    "現有證據能支持的結論是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。」，不再擴張為題組未測的因果。",
+    "採用這個看似直覺的規則：電流、電壓與電阻是同一物理量的三個名稱，單位也可互換。",
+    "在電表接法中直接把「伏特計串入主電路」當成「區分電流電壓與電阻概念」的足夠證據。",
+    "忽略「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」與「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」，只根據題幹出現的最大數字宣稱已完成「區分電流電壓與電阻概念」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。」，並保留本題條件；現有證據能支持的結論是「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。」，不再擴張為題組未測的因果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「電流、電壓與電阻是同一物理量的三個名稱，單位也可互換。」，與可驗證命題「電流表示電荷流動率，電壓是每單位電荷的能量差，電阻描述元件對電流的關係與阻礙。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把電表接法的單一表面線索擴大成結論，並採用「伏特計串入主電路」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」和「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "主張評估",
+    "證據評估"
+  ],
+  "representationType": "claim",
+  "misconceptionTargets": [
+    "伏特計串入主電路"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-4",
+      "AUTH-NATURAL-LC-JC-4-5",
+      "AUTH-NATURAL-LC-KC-4-7",
+      "AUTH-NATURAL-LC-KC-4-8",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「區分電流電壓與電阻概念」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

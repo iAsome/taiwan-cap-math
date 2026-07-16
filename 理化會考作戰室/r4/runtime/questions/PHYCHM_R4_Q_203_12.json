@@ -1,0 +1,79 @@
+{
+  "id": "PHYCHM_R4_Q_203_12",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S203"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EB-4-8",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某報告用單一觀察就宣稱已證明「讀取位置時間圖上的位置與時刻」。哪一項評估最適當？",
+  "options": [
+    "採用這個看似直覺的規則：位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑。",
+    "在文字與圖形轉換中直接把「位置圖水平線解讀為等速前進」當成「讀取位置時間圖上的位置與時刻」的足夠證據。",
+    "評估報告時先確認「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。」，再標明限制「水平位置線代表靜止，水平速度線則代表等速度；兩者不能互換解讀。」與所需額外資料。",
+    "忽略「水平位置線代表靜止，水平速度線則代表等速度；兩者不能互換解讀。」與「位置 m、時間 s、速度 m/s、斜率單位依圖種決定；座標刻度須均勻且標示零點。」，只根據題幹出現的最大數字宣稱已完成「讀取位置時間圖上的位置與時刻」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「位置—時間圖上的曲線就是物體在地面上走過的實際曲線路徑。」，與可驗證命題「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把文字與圖形轉換的單一表面線索擴大成結論，並採用「忽略速度負號代表方向」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。」，並保留本題條件；評估報告時先確認「位置—時間圖的橫軸是時間、縱軸是相對參考點的位置，某點座標即表示該時刻位置。」，再標明限制「水平位置線代表靜止，水平速度線則代表等速度；兩者不能互換解讀。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「位置 m、時間 s、速度 m/s、斜率單位依圖種決定；座標刻度須均勻且標示零點。」和「水平位置線代表靜止，水平速度線則代表等速度；兩者不能互換解讀。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "限制評估",
+    "高層推論"
+  ],
+  "representationType": "evaluation",
+  "misconceptionTargets": [
+    "忽略速度負號代表方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EB-4-8",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「讀取位置時間圖上的位置與時刻」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

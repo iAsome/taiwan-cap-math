@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_006_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S006"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同學整理「以多次量測估計平均值與變動」時寫下四項關係，哪一項可在題目條件成立時使用？",
+  "options": [
+    "採用這個看似直覺的規則：三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可。",
+    "在量筒液面中直接把「以平均值掩蓋固定偏差」當成「以多次量測估計平均值與變動」的足夠證據。",
+    "忽略「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」，只根據題幹出現的最大數字宣稱已完成「以多次量測估計平均值與變動」。",
+    "就「以多次量測估計平均值與變動」而言，可使用的具體判準是：量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不應偷刪不同值。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「三次不相同表示實驗失敗，只保留最接近預期的 10.0 s 即可。」，與可驗證命題「量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不應偷刪不同值。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把量筒液面的單一表面線索擴大成結論，並採用「未檢查零點就直接讀值」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」和「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不應偷刪不同值。」，並保留本題條件；就「以多次量測估計平均值與變動」而言，可使用的具體判準是：量得 9.8、10.1、10.0 s 的平均約為 10.0 s，差異可用範圍或離散情形描述，不應偷刪不同值。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "關係判讀",
+    "概念理解"
+  ],
+  "representationType": "relation",
+  "misconceptionTargets": [
+    "未檢查零點就直接讀值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「以多次量測估計平均值與變動」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

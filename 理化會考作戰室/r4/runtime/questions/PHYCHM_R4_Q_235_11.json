@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_235_11",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S235"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EB-4-5",
+    "AUTH-NATURAL-LC-EC-4-1",
+    "AUTH-NATURAL-LC-EC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "把「說明大氣壓力來自空氣重量」應用到新的液壓機問題時，哪一個做法仍成立？",
+  "options": [
+    "採用這個看似直覺的規則：空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺。",
+    "新的液壓機情境仍使用這項不改變的物理或化學依據：大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。",
+    "在液壓機中直接把「吸管把液體主動吸上來」當成「說明大氣壓力來自空氣重量」的足夠證據。",
+    "忽略「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」與「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」，只根據題幹出現的最大數字宣稱已完成「說明大氣壓力來自空氣重量」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺。」，與可驗證命題「大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。」，並保留本題條件；新的液壓機情境仍使用這項不改變的物理或化學依據：大氣壓力來自地球引力下空氣的重量與粒子碰撞，海拔改變時氣壓也會改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把液壓機的單一表面線索擴大成結論，並採用「液體只向下產生壓力」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」和「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "情境遷移",
+    "應用"
+  ],
+  "representationType": "transfer",
+  "misconceptionTargets": [
+    "空氣沒有質量與重量，大氣壓只是溫度計產生的幻覺。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EB-4-5",
+      "AUTH-NATURAL-LC-EC-4-1",
+      "AUTH-NATURAL-LC-EC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「說明大氣壓力來自空氣重量」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

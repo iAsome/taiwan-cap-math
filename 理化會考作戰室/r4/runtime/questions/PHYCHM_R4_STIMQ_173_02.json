@@ -1,0 +1,82 @@
+{
+  "id": "PHYCHM_R4_STIMQ_173_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-KA-4-3",
+    "AUTH-NATURAL-LC-KA-4-4",
+    "AUTH-NATURAL-LC-KA-4-5",
+    "AUTH-NATURAL-LC-ME-4-7",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_173",
+  "stem": "若要提高這份超聲波資料對「區分可聽聲超聲波與人耳限制」的可信度，下一步最適合怎麼做？",
+  "options": [
+    "採用這個看似直覺的規則：人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射。",
+    "在超聲波中直接把「短暫大聲與長時間暴露風險完全相同」當成「區分可聽聲超聲波與人耳限制」的足夠證據。",
+    "忽略「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」與「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」，只根據題幹出現的最大數字宣稱已完成「區分可聽聲超聲波與人耳限制」。",
+    "新的超聲波情境仍使用這項不改變的物理或化學依據：人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射。」，與可驗證命題「人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把超聲波的單一表面線索擴大成結論，並採用「回聲距離漏除以二」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」和「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。」，並保留本題條件；新的超聲波情境仍使用這項不改變的物理或化學依據：人耳可聽頻率有範圍；超聲波是頻率高於人類一般可聽範圍的聲波，仍可傳能與反射。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "實驗改進"
+  ],
+  "representationType": "stimulus-figure-and-data",
+  "misconceptionTargets": [
+    "人耳聽不到的振動不算聲波，也不可能被儀器偵測或反射。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-KA-4-3",
+      "AUTH-NATURAL-LC-KA-4-4",
+      "AUTH-NATURAL-LC-KA-4-5",
+      "AUTH-NATURAL-LC-ME-4-7",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「區分可聽聲超聲波與人耳限制」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "PHYCHM_R4_ASSET_003"
+  ]
+}

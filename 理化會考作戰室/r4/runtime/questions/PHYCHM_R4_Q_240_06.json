@@ -1,0 +1,79 @@
+{
+  "id": "PHYCHM_R4_Q_240_06",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S240"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EB-4-5",
+    "AUTH-NATURAL-LC-EB-4-6",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "有人在判斷「由視重量差求浮力」時犯了常見錯誤，哪一項修正最完整？",
+  "options": [
+    "採用這個看似直覺的規則：浮力為 12＋7＝19 N，因為水中讀值要加回原重量。",
+    "不能採用「浮力為 12＋7＝19 N，因為水中讀值要加回原重量。」；修正後應為：物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。",
+    "在木塊漂浮中直接把「以材質密度不看平均密度判斷船沉浮」當成「由視重量差求浮力」的足夠證據。",
+    "忽略「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」與「浮力與重量用 N，密度 kg/m³ 或 g/cm³，體積 m³ 或 cm³，計算時必須配套。」，只根據題幹出現的最大數字宣稱已完成「由視重量差求浮力」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「浮力為 12＋7＝19 N，因為水中讀值要加回原重量。」，與可驗證命題「物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。」，並保留本題條件；不能採用「浮力為 12＋7＝19 N，因為水中讀值要加回原重量。」；修正後應為：物體在空氣中重 12 N、沒入水中彈簧秤讀值 7 N，浮力為視重量差 5 N。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把木塊漂浮的單一表面線索擴大成結論，並採用「漂浮物沒有受到重力」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「浮力與重量用 N，密度 kg/m³ 或 g/cm³，體積 m³ 或 cm³，計算時必須配套。」和「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "錯誤分析",
+    "分析"
+  ],
+  "representationType": "error-analysis",
+  "misconceptionTargets": [
+    "漂浮物沒有受到重力"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EB-4-5",
+      "AUTH-NATURAL-LC-EB-4-6",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由視重量差求浮力」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

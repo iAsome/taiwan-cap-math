@@ -1,0 +1,85 @@
+{
+  "id": "PHYCHM_R4_Q_116_04",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S116"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-3",
+    "AUTH-NATURAL-LC-JA-4-1",
+    "AUTH-NATURAL-LC-JB-4-3",
+    "AUTH-NATURAL-LC-JD-4-4",
+    "AUTH-NATURAL-LC-JD-4-5",
+    "AUTH-NATURAL-LC-JD-4-6",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "以土壤酸鹼調整處理「依加入量與pH變化判斷過量一方」時，哪一個步驟安排最合理？",
+  "options": [
+    "採用這個看似直覺的規則：酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7。",
+    "在土壤酸鹼調整中直接把「用手觸摸判斷中和放熱」當成「依加入量與pH變化判斷過量一方」的足夠證據。",
+    "忽略「中和不等於消除所有危險；加入過量酸或鹼會使溶液仍呈酸性或鹼性。」與「溶液體積以 mL、質量以 g、溫度以 °C；不同濃度溶液不能只比體積判斷反應量。」，只根據題幹出現的最大數字宣稱已完成「依加入量與pH變化判斷過量一方」。",
+    "先確認資料足以支持哪一層結論，再依「依加入量與pH變化判斷過量一方」逐項排除超出證據的說法。本題的正確執行依據是：逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「酸鹼只要曾混合，無論加入量與濃度，最後 pH 都必等於 7。」，與可驗證命題「逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把土壤酸鹼調整的單一表面線索擴大成結論，並採用「用手觸摸判斷中和放熱」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「溶液體積以 mL、質量以 g、溫度以 °C；不同濃度溶液不能只比體積判斷反應量。」和「中和不等於消除所有危險；加入過量酸或鹼會使溶液仍呈酸性或鹼性。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。」，並保留本題條件；先確認資料足以支持哪一層結論，再依「依加入量與pH變化判斷過量一方」逐項排除超出證據的說法。本題的正確執行依據是：逐滴加鹼時 pH 由 2 升到 9，終點後溶液偏鹼，表示鹼已過量，不可只看混合過就判中性。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "程序選擇",
+    "應用"
+  ],
+  "representationType": "procedure",
+  "misconceptionTargets": [
+    "用手觸摸判斷中和放熱"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-3",
+      "AUTH-NATURAL-LC-JA-4-1",
+      "AUTH-NATURAL-LC-JB-4-3",
+      "AUTH-NATURAL-LC-JD-4-4",
+      "AUTH-NATURAL-LC-JD-4-5",
+      "AUTH-NATURAL-LC-JD-4-6",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「依加入量與pH變化判斷過量一方」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
