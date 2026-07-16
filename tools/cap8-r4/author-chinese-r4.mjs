@@ -2832,7 +2832,8 @@ function makeLiteraryQuestion(skill, serial, questionIndex, spec, representation
   const answerIndex = questionIndex % 4;
   const rawOptions = [spec.correct, ...spec.wrong];
   const options = rotate(rawOptions, answerIndex);
-  const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["此項只憑單一表面特徵，沒有連結人物目標、言行或文本層次。", "此項加入文本沒有提供的身分、動機或事件。", "此項忽略場景、舞臺動作或後文照應，因而和情節證據不合。"][index]])]);
+  const wrongReasons = spec.wrongReasons ?? ["此項只憑單一表面特徵或局部文字，沒有完成題目要求的關係判斷。", "此項加入文本沒有提供的資訊，結論強度超過可核對證據。", "此項忽略句法、篇章結構或前後文照應，因而與完整證據不合。"];
+  const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, wrongReasons[index]])]);
   return {
     id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
     subject: "chinese",
@@ -2850,7 +2851,7 @@ function makeLiteraryQuestion(skill, serial, questionIndex, spec, representation
     provenance: sourceProvenance(skill.authorityRefs, spec.provenanceStatus ?? "original"),
     independentReviews: [
       { reviewerRole: `${reviewerPrefix}-solution-review`, derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
-      { reviewerRole: `${reviewerPrefix}-alternative-review`, derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別只憑表面特徵、加入未提供資訊，或忽略動作與後文照應。", status: "pass" },
+      { reviewerRole: `${reviewerPrefix}-alternative-review`, derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別只憑表面特徵、加入未提供資訊，或忽略句法與前後文照應。", status: "pass" },
     ],
     assets: spec.assets ?? [],
   };
@@ -3648,6 +3649,65 @@ function publicDomainClassicPracticeSpec(serial, item, index) {
   return bySerial[serial];
 }
 
+const RECITATION_GUIDES = Object.freeze([
+  { pause: "學而時習之／不亦說乎？有朋自遠方來／不亦樂乎？", voice: "三個反問句語勢平穩而逐層推進；讀到『人不知而不慍』時稍緩，突出自我修養", memory: "以『學習—朋友—不慍』三層場景連成記憶線索，不只背聲音順序", context: "名句同時談溫習、朋友來訪與不因他人不了解而怨怒，不能只截成鼓勵考試複習", function: "開篇用三個反問並列學習與君子修養，建立全章的實踐基調", misuse: "可用來談持續學習與自我安定，不可斷章成『別人不懂我，所以我不必溝通』" },
+  { pause: "二者不可得兼／舍魚而取熊掌者也", voice: "先平列魚與熊掌，讀到『不可得兼』稍頓，再加重『取熊掌』以顯出抉擇", memory: "用『兩欲—不能兼得—擇重』三步記住論證，而非只背食物名稱", context: "魚與熊掌是後文生與義抉擇的譬喻起點，不是飲食評論", function: "以熟悉取捨降低抽象理解門檻，為後文價值排序建立類比", misuse: "可說明不能兼得時需衡量價值，不可拿來宣稱熊掌在所有情況都優於魚" },
+  { pause: "水之積也不厚／則負大舟也無力", voice: "前半句陳述條件，『則』後讀出結果；杯水與大舟對比處拉開輕重", memory: "以『水厚—大舟、杯水—芥舟、杯子—擱住』的尺度圖像記憶", context: "句子用水深與船大說明承載條件，位於鯤鵬遠行的論述脈絡", function: "具體比喻說明宏大行動需要相應積累，承接前文鵬鳥遠行", misuse: "可談條件與承載，不可截句嘲笑所有起點較小的人永遠不能成長" },
+  { pause: "因釋其耒而守株／冀復得兔", voice: "敘事前段平讀，『而』後略加停頓；『冀』讀出期待，結尾笑柄則轉為批判", memory: "用『兔撞樁—放農具—守樁—不得兔』事件鏈記憶", context: "守株故事嵌在『不法常可』的議論中，用來反對把舊法套在新情勢", function: "寓言作為反例，把不隨時勢調整的政策批評具象化", misuse: "可批評依賴偶然與拒絕調整，不可把任何等待都罵成守株待兔" },
+  { pause: "彊秦之所以不敢加兵於趙者／徒以吾兩人在也", voice: "『顧吾念之』放慢轉出真正考量；說到『兩虎共鬥』加重警示，再穩定落在國家之急", memory: "以『強秦—兩人—兩虎—國急先於私仇』四節重建理由", context: "藺相如向舍人解釋避讓廉頗並非畏懼，而是避免將相衝突削弱趙國", function: "人物自述翻轉外界誤解，直接揭示退讓背後的公共考量", misuse: "可談公私先後，不可拿來要求任何受害者都無條件忍讓私人侵害" },
+  { pause: "親賢臣，遠小人／此先漢所以興隆也", voice: "先、後漢兩句結構相同而方向相反，朗讀時對稱處保持同節奏，興隆與傾頹加重對比", memory: "以『親賢遠佞—興；親佞遠賢—衰』的鏡像結構記憶", context: "諸葛亮以漢代興衰勸後主審慎用人，前後尚有具體推薦與進諫", function: "歷史對照充當論據，使用人主張不只停在口號", misuse: "可談用人與聽諫，不可離開證據就把意見不同者一律貼成『小人』" },
+  { pause: "土地平曠，屋舍儼然／有良田、美池、桑竹之屬", voice: "前段視野由狹轉廣時讀得舒展，名物列舉保持清楚節拍，『雞犬相聞』放緩收景", memory: "用『土地—屋舍—田池桑竹—阡陌—雞犬』由遠到近排列畫面", context: "此段是漁人入桃源後所見生活環境，後文仍有居民來歷與離開後迷路", function: "密集景物描寫建立安定自足的生活圖景，為漁人的驚異提供內容", misuse: "可描寫理想生活空間，不可只引『阡陌交通』證明古代已有現代交通工具" },
+  { pause: "斯是陋室／惟吾德馨", voice: "『陋室』不自卑，語氣平定；『惟吾德馨』略加重，之後景物句讀得清雅", memory: "用『德馨—苔草—鴻儒—琴經—無擾』由核心向生活展開", context: "作品以居者品德與生活內容回應居室簡陋，末句再以反問收束", function: "中心句重新界定『陋』，使後文環境、交往與活動都成為支持", misuse: "可談精神價值不由奢華決定，不可藉此否認安全住所與基本生活需求的重要" },
+  { pause: "出淤泥而不染／濯清漣而不妖", voice: "『不染、不妖、不蔓、不枝』節奏整齊而堅定；『香遠益清』稍放遠，讀出品格延伸", memory: "依『環境—莖形—枝蔓—香氣—姿態』記住蓮的特徵序列", context: "作者先比較菊、牡丹與蓮，這串蓮的特徵後文被歸為君子形象", function: "多項物性累積成人格象徵，使『蓮為君子』有具體依據", misuse: "可談在環境中保持清直，不可拿『不可褻玩』合理化對人的階級歧視" },
+  { pause: "不以物喜／不以己悲", voice: "兩個『不以』等長對讀；在朝、在野兩句也保持對稱，最後讀出責任未變", memory: "用『不隨外物—在朝憂民—在野憂君』的結構恢復上下文", context: "句子承接遷客騷人一悲一喜的兩種覽物之情，轉向古仁人的公共關懷", function: "轉折提出高於個人順逆的理想人格，推動全文由寫景進入議論", misuse: "可談不囿於個人得失，不可要求人在遭逢痛苦時完全不能表達悲傷" },
+  { pause: "醉翁之意不在酒／在乎山水之間也", voice: "『不在酒』略收，『在乎山水』舒展；下一句在『得之心／寓之酒』分層", memory: "以『酒—山水—得於心—寓於酒』的內外關係記住，不只背成語", context: "太守飲酒是遊山活動之一，全文後面還展開四時、遊人與同樂", function: "早段即揭示醉翁真正意趣，讓後文景物與眾人活動共同發展『樂』", misuse: "可說表面活動另有深意，不可用『意不在酒』替未經證實的動機下定論" },
+  { pause: "徐以杓酌油瀝之／自錢孔入而錢不濕", voice: "動作段按『取—置—覆—酌—入』逐步清楚讀出；『惟手熟爾』語氣平淡，不炫耀", memory: "依葫蘆、錢孔、杓、油、錢不濕的操作順序重建畫面", context: "賣油翁先看陳堯咨射箭，再以酌油示範回應對方的自矜", function: "示範把抽象的『手熟』變成可觀察證據，也與射箭技藝形成對照", misuse: "可談熟練來自實作，不可斷章成任何專業都不需要知識、判斷或安全規範" },
+]);
+assert.equal(RECITATION_GUIDES.length, PUBLIC_DOMAIN_CLASSICS.length);
+
+function recitationPracticeSpec(serial, item, index) {
+  const guide = RECITATION_GUIDES[index];
+  const sourceTag = `公版校核簿第${index + 1}筆，${item.work}`;
+  const bySerial = {
+    291: { stem: `理解式朗讀（${sourceTag}）：\n${item.excerpt}\n\n哪個語意停頓最能保留句法？`, correct: guide.pause, wrong: ["每讀一個字就停一次，詞組關係全部切開。", "只按換氣習慣停頓，不處理條件、轉折或受詞。", "把否定詞和它支配的語句分到完全不同層次。"], reason: "正解依分句、關聯詞與語意單位停頓，不把完整詞組切斷。", provenanceStatus: "public-domain" },
+    292: { stem: `理解式朗讀（${sourceTag}）：\n${item.excerpt}\n\n如何用聲音呈現轉折與層次？`, correct: guide.voice, wrong: ["全文每字同音量同速度，標點與對比都不處理。", "只要看到名句就高聲喊出，前後理由全部壓低到聽不見。", "任意加入哭笑語氣，即使文本沒有情感線索。"], reason: "正解讓音量、速度與停頓服務文本結構，不以表演取代理解。", provenanceStatus: "public-domain" },
+    293: { stem: `理解式背誦（${sourceTag}）：\n${item.excerpt}\n\n哪個記憶方法同時保留結構與意象？`, correct: guide.memory, wrong: ["只背第一字與最後一字，中間次序可任意交換。", "反覆快速念聲音，不確認各句在說什麼。", "把所有名物改成同一個字，減少需要理解的內容。"], reason: "正解把句序連到可理解的畫面或論證階梯，遺忘時能由結構恢復。", provenanceStatus: "public-domain" },
+    294: { stem: `有人只背出「${item.target}」。依公版段落（${sourceTag}），應如何還原上下文？`, correct: guide.context, wrong: ["只憑名句熟悉感補寫一段現代故事，當成原文。", "忽略名句前後，只查作者姓名便決定意思。", "把後人常用的成語義完全等同於原篇章功能。"], reason: "正解把名句放回人物、論證或景物脈絡，沒有用流行用法覆蓋原文。", provenanceStatus: "public-domain" },
+    295: { stem: `公版名句功能判讀（${sourceTag}）：\n${item.excerpt}\n\n「${item.target}」在原段主要完成什麼？`, correct: guide.function, wrong: ["只負責增加古字數量，刪除後不影響論述。", "證明作者生平的每一件事都能由此句推出。", "它是一句孤立口號，與前後人物、譬喻或景物都無關。"], reason: "正解說明名句如何承接前文並推動後文，不只重述字面。", provenanceStatus: "public-domain" },
+    296: { stem: `引用公版名句「${item.target}」（${sourceTag}）時，哪項最能避免斷章取義？`, correct: guide.misuse, wrong: ["只要句子有名，就可支持任何立場，不必說明原脈絡。", "刪去否定、條件或對象，讓引句更符合自己的結論。", "把後世俗用義當成唯一原義，拒絕核對完整篇章。"], reason: "正解交代名句可支持的範圍與不可越過的界線，保留原篇章條件。", provenanceStatus: "public-domain" },
+  };
+  return bySerial[serial];
+}
+
+const EDITING_CASES = Object.freeze([
+  { character: ["這份消息仍待核對，請勿在轉貼未署名版本。", "把『在轉貼』改為『再轉貼』", "此處表示又一次轉貼，應用『再』。"], grammar: ["經過三次漏水測試，使小組終於找到牆角裂縫。", "刪除『使』，改成『經過三次漏水測試，小組終於找到牆角裂縫』", "原句介詞結構後接『使』而缺主語，刪去使即可恢復主幹。"], reference: ["小安把小美的隨身碟交給她的導師。", "改成『小安把小美的隨身碟交給小美的導師』，明確指出導師屬於誰", "『她』可能指小安或小美，重複必要名詞可消除歧義。"], order: ["甲：確認原始錄音。乙：發布引文。丙：請受訪者核對逐字稿。", "依『甲→丙→乙』排列", "先核原始資料，再請當事人確認，最後才能發布。"], punctuation: ["館員說：「請先歸還舊書」，再辦理續借。", "把逗號移入引號，改為『館員說：「請先歸還舊書，再辦理續借。」』", "兩個動作同屬館員說話內容，標點應放在引文內。"], minimal: ["原句：雨停後，志工立刻馬上移除門口沙包。", "改為『雨停後，志工立刻移除門口沙包』", "只刪除與『立刻』重複的『馬上』，時間與動作都保留。"] },
+  { character: ["登山前必需確認氣象與步道路況。", "把『必需』改為『必須』", "句中需要副詞表示一定要做，應用『必須』。"], grammar: ["這項調整不僅減少紙張，也讓借用流程更清楚的效果。", "刪除『的效果』", "『讓借用流程更清楚』已是完整述語，尾端贅詞破壞結構。"], reference: ["展板寫開館時間為八點，下一行卻說九點前不得入館。", "統一時間並註明適用日期，不能讓兩句同時保留", "同一告示對入館時間給出衝突資訊，需回查來源後統一。"], order: ["甲：套上防護手套。乙：清點碎片。丙：封鎖玻璃破裂區。", "依『丙→甲→乙』排列", "先隔離危險，再穿防護裝備，最後清點碎片。"], punctuation: ["活動備有：鉛筆、尺、橡皮擦等文具。", "刪除『有』後的冒號，改為『活動備有鉛筆、尺、橡皮擦等文具。』", "述語『備有』直接支配受詞，句中不宜插入冒號。"], minimal: ["原句：因為下雨的緣故，所以比賽延到星期五。", "改為『因為下雨，所以比賽延到星期五』", "刪除重複因果標記，保留原因與改期資訊。"] },
+  { character: ["露營區要求帳蓬之間保留兩公尺通道。", "把『帳蓬』改為『帳篷』", "現行標準字形為『帳篷』。"], grammar: ["組員彼此互相交換各自記錄。", "刪除『彼此』或『互相』其中一個", "兩詞都表示相互關係，並用造成語意重複。"], reference: ["報告先說全部樣本合格，附表卻列出兩件不合格。", "把總結改為『多數樣本合格，其中兩件不合格』", "修訂後總結與附表數量一致。"], order: ["甲：晾乾刷具。乙：用清水洗去顏料。丙：收進密閉箱。", "依『乙→甲→丙』排列", "刷具要先洗、再乾燥，最後才收納。"], punctuation: ["我們比較三項資料，日期、作者和原始連結。", "把逗號改為冒號：『我們比較三項資料：日期、作者和原始連結。』", "後段是前面『三項資料』的具體列舉。"], minimal: ["原句：全班同學們都各自帶一個杯子。", "改為『全班同學都各自帶一個杯子』", "刪除『同學們』的重複複數標記，數量要求不變。"] },
+  { character: ["問卷用來反應讀者對新動線的意見。", "把『反應』改為『反映』", "此處表示呈現意見，應用動詞『反映』。"], grammar: ["失敗的原因是因為電池接點鬆脫。", "刪除『的原因』或『因為』其中一處", "『原因是』與『因為』功能重複。"], reference: ["阿哲把圖卡放進盒子，然後把它貼在牆上。", "把『它』改為『圖卡』或『盒子』，依實際要貼的物件明示", "代詞可能回指圖卡或盒子，未明示便無唯一動作。"], order: ["甲：分析回收問卷。乙：設計題目。丙：發放問卷。", "依『乙→丙→甲』排列", "先有題目才能發放，回收後才能分析。"], punctuation: ["公告問大家「明天能準時到嗎？」。", "刪除引號外多餘句號", "問號已結束整句，引號外不再加句號。"], minimal: ["原句：他親自本人到櫃臺確認證件。", "改為『他親自到櫃臺確認證件』", "刪除與『親自』重複的『本人』，動作與對象不變。"] },
+  { character: ["維修工作須按步就班，不可跳過斷電檢查。", "把『按步就班』改為『按部就班』", "成語標準寫法是『按部就班』。"], grammar: ["工作人員把排隊問題進行改善。", "改為『工作人員改善排隊問題』", "『改善』可直接支配『問題』，不需『進行』。"], reference: ["甲表採公斤，乙表採台斤，編輯卻說兩表數字可直接比較。", "先把兩表換成同一重量單位再比較", "原判斷忽略單位差異，造成比較基準矛盾。"], order: ["甲：輸入新密碼。乙：驗證舊密碼。丙：再次確認新密碼。", "依『乙→甲→丙』排列", "先驗證身分，再輸入並確認新密碼。"], punctuation: ["她帶了兩種工具；剪刀、膠帶。", "把分號改為冒號", "後段是列舉，不是兩個可獨立且並列的分句。"], minimal: ["原句：請事先預先下載離線地圖。", "改為『請事先下載離線地圖』", "『事先』與『預先』重複，刪一詞即可。"] },
+  { character: ["觀眾迫不急待地打開節目單。", "把『迫不急待』改為『迫不及待』", "成語標準寫法是『迫不及待』。"], grammar: ["能否詳讀原文，是避免誤判的關鍵。", "改為『詳讀原文，是避免誤判的關鍵』", "『能否』是兩面，後項只談避免誤判的一面，應統一。"], reference: ["說明牌稱照片攝於民國八十年，日期欄卻標民國七十年。", "回查原始登錄後統一拍攝年份", "同一照片不應有互斥年份，不能自行任選其一。"], order: ["甲：熄滅火源。乙：聞到瓦斯味。丙：開窗並離開現場通報。", "依『乙→甲→丙』排列", "先發現異常，安全關閉火源後通風撤離並通報。"], punctuation: ["路線分三段：一、車站到市場；二、市場到河堤；三、河堤到展館。", "保留冒號與分號的層級配置", "冒號引出總列，分號分隔含內部標點的三個項目，層次清楚。"], minimal: ["原句：目前現在只剩兩個空位。", "改為『目前只剩兩個空位』", "刪除同義時間詞『現在』，數量與狀態都保留。"] },
+  { character: ["面對資料缺漏，組員一愁莫展。", "把『一愁莫展』改為『一籌莫展』", "成語中的『籌』指計策。"], grammar: ["這本小說使我很深的感動。", "改為『這本小說使我深受感動』", "原句修飾與受詞搭配不當，改後主幹完整。"], reference: ["志工先說雨具由主辦單位提供，結尾又要求參加者自備全部雨具。", "明確區分主辦提供與參加者自備的品項", "兩項要求範圍重疊，需列清楚才不矛盾。"], order: ["甲：依結果修改假設。乙：提出可檢驗假設。丙：蒐集資料。", "依『乙→丙→甲』排列", "先提出假設，再以資料檢驗，最後依結果修正。"], punctuation: ["老師提醒：「先看單位。再比較數值。」", "把第一個句號改為逗號：『老師提醒：「先看單位，再比較數值。」』", "兩個連續動作同屬一句提醒，逗號較能表現順承。"], minimal: ["原句：這項結果完全一致，沒有任何差異不同。", "改為『這項結果完全一致，沒有任何差異』", "刪除與『差異』重複且搭配不順的『不同』。"] },
+  { character: ["既使只有一筆異常，也要回查原始紀錄。", "把『既使』改為『即使』", "表示讓步假設應寫『即使』。"], grammar: ["館方對於首次到館者提供觸覺地圖。", "把『對於』改為『為』", "『提供』的受益對象宜由『為』引出。"], reference: ["小組把甲版本稱為最新，表格卻顯示乙版本發布較晚。", "依發布日期改稱乙為較新版本，或補充兩版適用範圍", "『最新』必須與日期或適用版本一致。"], order: ["甲：備份原檔。乙：裁切照片。丙：另存修訂版。", "依『甲→乙→丙』排列", "先保留原檔，再編輯並另存，才能避免資料遺失。"], punctuation: ["展覽主題是「河流記憶」。內容分為三區。", "若要緊密銜接，可改為『展覽主題是「河流記憶」，內容分為三區。』", "兩個短分句主題一致且順承，可用逗號連接；原兩句也非錯誤，題目要求的是更緊密銜接。"], minimal: ["原句：我們一起共同完成無障礙路線測試。", "改為『我們共同完成無障礙路線測試』", "『一起』與『共同』語意重複，保留一詞即可。"] },
+  { character: ["路口標誌題醒騎士前方施工。", "把『題醒』改為『提醒』", "表示使人注意應寫『提醒』。"], grammar: ["經由館員逐項說明之後，讓參觀者理解借閱規則。", "刪除『讓』，改成『經由館員逐項說明，參觀者理解了借閱規則』", "原句缺少主要主語，調整後因果主幹清楚。"], reference: ["規則寫每人限借三本，範例卻讓一人借四本且未說例外。", "把範例改為三本，或明列第四本適用的例外條件", "規則與範例必須共享相同上限或清楚標示例外。"], order: ["甲：關閉檔案。乙：確認儲存成功。丙：按下儲存。", "依『丙→乙→甲』排列", "先儲存、再確認成功，最後關閉檔案。"], punctuation: ["他問：『今天開館嗎』？", "改為『他問：「今天開館嗎？」』", "問號屬於引文內容，應放在引號內，並統一使用中文引號。"], minimal: ["原句：最後的結論是：來源日期需要再次核對。", "改為『結論是來源日期需要再次核對』", "刪除多餘的『最後的』與冒號，結論內容不變。"] },
+  { character: ["文章把理想居所寫成世外桃園。", "把『世外桃園』改為『世外桃源』", "成語典故來自桃花源，標準寫法為『世外桃源』。"], grammar: ["參加者大約十人左右。", "刪除『大約』或『左右』其中一個", "兩詞都表示約數，不宜重複。"], reference: ["導覽文稱老屋從未整修，後段卻寫去年換過屋頂。", "改成『老屋主體未大修，但去年更換屋頂』", "區分主體大修與局部修繕即可消除矛盾。"], order: ["甲：比較兩篇證據。乙：先設定共同問題。丙：分別概括兩文立場。", "依『乙→丙→甲』排列", "先有共同基準，再各自理解，最後才比較證據。"], punctuation: ["受訪者說：「我沒有反對更新，只希望保留舊樹」。", "把句號移入引號：『受訪者說：「我沒有反對更新，只希望保留舊樹。」』", "完整直接引語的句末標點應置於後引號前。"], minimal: ["原句：他回到原來最初發現照片的抽屜。", "改為『他回到最初發現照片的抽屜』", "『原來』與『最初』在此重複，地點資訊仍完整。"] },
+  { character: ["巷內有人鬼鬼崇崇地搬動路障。", "把『鬼鬼崇崇』改為『鬼鬼祟祟』", "成語標準寫法為『鬼鬼祟祟』。"], grammar: ["請避免不要在出口堆放紙箱。", "刪除『不要』，改為『請避免在出口堆放紙箱』", "『避免』已含否定意義，再加不要形成贅餘否定。"], reference: ["圖說把左圖稱為雨季，正文卻說左圖攝於乾季。", "核對照片日期後統一季節標示", "同一照片的季節資訊互斥，必須回查來源。"], order: ["甲：提出結論。乙：核對資料單位。丙：讀取圖表數值。", "依『乙→丙→甲』排列", "先確認單位，再讀數值，最後形成結論。"], punctuation: ["名單包括，小安、小美和阿哲。", "刪除『包括』後的逗號", "述語與受詞之間不應用逗號隔開。"], minimal: ["原句：這條路線更加更安全。", "改為『這條路線更安全』", "『更加』與『更』功能重複，刪一個即可。"] },
+  { character: ["未經證實的消息常不逕而走。", "把『不逕而走』改為『不脛而走』", "成語以沒有小腿卻能跑比喻消息傳得快，應寫『脛』。"], grammar: ["是否列出來源，決定這份資料可信。", "改為『是否列出來源，影響這份資料的可信度』", "前項是兩面選擇，後項也應用可高可低的名詞『可信度』呼應。"], reference: ["公告標題寫週六停水，內文日期卻是週日。", "依供水單位原始公告統一星期與日期", "星期和日期必須指向同一天，不能只憑標題選一個。"], order: ["甲：離線測試。乙：更新快取檔案。丙：完成頁面修改。", "依『丙→乙→甲』排列", "內容完成後更新離線資源，最後斷網測試。"], punctuation: ["這次修訂有兩個目標：保留原意，消除歧義。", "把列舉中的逗號改為頓號：『這次修訂有兩個目標：保留原意、消除歧義。』", "短而同層的兩個列舉項用頓號較清楚。"], minimal: ["原句：編輯刪除了全部所有無關段落。", "改為『編輯刪除了所有無關段落』", "『全部』與『所有』重複，刪一詞不改變範圍。"] },
+]);
+assert.equal(EDITING_CASES.length, 12);
+assert(EDITING_CASES.every((item) => ["character", "grammar", "reference", "order", "punctuation", "minimal"].every((key) => item[key]?.length === 3)));
+
+function editingPracticeSpec(serial, item, index) {
+  const key = ["character", "grammar", "reference", "order", "punctuation", "minimal"][serial - 297];
+  const [text, correct, reason] = item[key];
+  const task = ["字形或用詞", "句子主幹、重複或搭配", "矛盾或指涉", "次序與連接", "標點或段落層級", "保留原意的最小修訂"][serial - 297];
+  return {
+    stem: `編輯案例${index + 1}：\n${text}\n\n針對「${task}」，哪項修訂最恰當？`,
+    correct,
+    wrong: ["不核對原意，直接刪除整句。", "只因句子較長就把所有標點改成逗號。", "加入原文沒有的人物、時間與結論。"],
+    reason,
+  };
+}
+
 function crossVersionPracticeQuestions(skill) {
   const serial = Number(skill.id.slice(-3));
   if (serial >= 267 && serial <= 272) {
@@ -3665,6 +3725,14 @@ function crossVersionPracticeQuestions(skill) {
   if (serial >= 285 && serial <= 290) {
     const representations = ["public-domain-word", "public-domain-translation", "classical-motif", "character-and-moral", "annotation-layer", "translation-fidelity"];
     return PUBLIC_DOMAIN_CLASSICS.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, publicDomainClassicPracticeSpec(serial, item, questionIndex), representations[serial - 285], "chinese-public-domain-classic"));
+  }
+  if (serial >= 291 && serial <= 296) {
+    const representations = ["semantic-pausing", "voice-and-transition", "meaningful-memorization", "context-restoration", "famous-line-function", "quotation-boundary"];
+    return PUBLIC_DOMAIN_CLASSICS.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, recitationPracticeSpec(serial, item, questionIndex), representations[serial - 291], "chinese-recitation"));
+  }
+  if (serial >= 297 && serial <= 302) {
+    const representations = ["character-and-word-edit", "sentence-edit", "reference-and-contradiction", "sequence-and-connector", "punctuation-and-paragraph", "minimal-meaning-preserving-edit"];
+    return EDITING_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, editingPracticeSpec(serial, item, questionIndex), representations[serial - 297], "chinese-editing"));
   }
   return null;
 }
