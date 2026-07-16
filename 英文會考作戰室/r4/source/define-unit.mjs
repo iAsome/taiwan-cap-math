@@ -2,6 +2,16 @@ import assert from "node:assert/strict";
 
 const DIFFICULTIES = ["foundation", "foundation", "foundation", "standard", "standard", "standard", "standard", "advanced", "advanced", "advanced", "transfer", "transfer"];
 
+export function defineChoiceQuestions(cases, { type, operation, misconception }) {
+  return cases.map(([stem, correct, correctReason, distractors], index) => {
+    const choices = [{ value: correct, reason: correctReason, correct: true }, ...distractors.map(([value, reason]) => ({ value, reason, correct: false }))];
+    const shift = index % 4;
+    const rotated = [...choices.slice(shift), ...choices.slice(0, shift)];
+    const answerIndex = rotated.findIndex((choice) => choice.correct);
+    return [stem, rotated.map((choice) => choice.value), answerIndex, rotated[answerIndex].reason, rotated.filter((choice) => !choice.correct).map((choice) => choice.reason), type, operation, misconception];
+  });
+}
+
 export function defineEnglishUnit({ unitId, skills, vocabularyPolicy }) {
   assert.match(unitId, /^ENG_R4_U\d{2}$/);
   const lectures = skills.map((skill) => {
