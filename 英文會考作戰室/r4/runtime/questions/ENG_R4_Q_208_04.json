@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_208_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I baked this bread myself. What can B ask about the bread?",
+  "options": [
+    "Bread is food.",
+    "I took a bus today.",
+    "Did you use a plate?",
+    "How did you make it?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只是分類，沒有延伸經驗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "換到交通。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "盤子不是 baked 的核心。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "詢問製作方式，直接延續話題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u30-s208-ask-process-after-home-baked-bread",
+    "develop-creation-topic-through-how-question"
+  ],
+  "representationType": "conversation-process-follow-up",
+  "misconceptionTargets": [
+    "ask-side-detail-before-central-process"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "myself 顯示製作過程值得追問。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項讓 A 補充方法而非重述成品。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

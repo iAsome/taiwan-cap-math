@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_205_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S205"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You need help from a library worker you do not know.",
+  "options": [
+    "Find this book.",
+    "Excuse me. Could you help me find this book, please?",
+    "Hey, get that book for me.",
+    "This book must be found now."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "直接命令陌生工作人員不合宜。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先取得注意並清楚禮貌提出需求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "語氣命令且開場失禮。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "被動陳述沒有尊重地向對方提出請求。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s205-choose-courteous-librarian-help-request",
+    "combine-attention-getter-with-specific-need"
+  ],
+  "representationType": "register-service-request",
+  "misconceptionTargets": [
+    "use-command-with-unfamiliar-staff"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "librarian you do not know 要求較委婉開場。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項仍保留 find this book 的必要資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_210_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which train reaches Tainan before eight?",
+  "options": [
+    "Train 12 arrives at 7:40.",
+    "The station has four doors.",
+    "Tainan is in south Taiwan.",
+    "Train 8 has blue seats."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "提供班次和符合條件的抵達時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "車站門數無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "地理位置不回答班次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "座位顏色不影響抵達條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u30-s210-select-train-by-arrival-constraint",
+    "provide-identifier-and-evidence-for-schedule-choice"
+  ],
+  "representationType": "information-schedule-filter",
+  "misconceptionTargets": [
+    "choose-transport-detail-unrelated-to-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "before eight 是篩選班次的必要限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項同時給列車編號和到站時刻。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

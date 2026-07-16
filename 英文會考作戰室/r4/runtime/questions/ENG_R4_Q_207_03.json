@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_207_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Lily covers her ears and asks, 'Could you turn the music down?'",
+  "options": [
+    "She wants a different song.",
+    "She wants the music to stop for all time.",
+    "She wants the music to be quieter.",
+    "She wants to leave the room."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有要求換歌。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "turn down 不是永久停止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "語句和摀耳都指向降低音量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有提出離開。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s207-infer-quieter-music-from-ear-covering",
+    "distinguish-volume-reduction-from-song-rejection"
+  ],
+  "representationType": "nonverbal-volume-need",
+  "misconceptionTargets": [
+    "infer-music-dislike-from-covering-ears"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "covers her ears 支持聲音太大的情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項精確對應 turn down 而非 turn off。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

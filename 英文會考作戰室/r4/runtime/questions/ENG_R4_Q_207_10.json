@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_207_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A customer points to one bowl on the menu and says, 'This one, please.'",
+  "options": [
+    "The customer wants every bowl.",
+    "The customer chooses the pointed-to bowl.",
+    "The customer made the menu.",
+    "The customer asks for the price of all food."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "one 和單一指向排除全部。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "手勢補足 this 的具體選項。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有製作菜單資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有 price 問句。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u30-s207-resolve-this-one-menu-selection",
+    "map-pointing-to-single-order-choice"
+  ],
+  "representationType": "nonverbal-menu-choice",
+  "misconceptionTargets": [
+    "ignore-gesture-and-treat-this-as-unknown"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "on the menu 使指向動作成為點餐選擇。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項不加入數量或價格等未說明內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

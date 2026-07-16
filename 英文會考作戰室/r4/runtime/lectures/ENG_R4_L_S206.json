@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S206",
+  "subject": "english",
+  "unitId": "ENG_R4_U30",
+  "skillId": "ENG_R4_S206",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S205"
+  ],
+  "objectives": [
+    "能找出訊息中不清楚的詞、指涉、數量、時間或步驟。",
+    "能提出中立且精確的澄清問題，避免自行猜測。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S206_SEC_01",
+      "title": "澄清不是重問整句",
+      "content": "當訊息有一個不確定點時，問題要直接鎖定該點。Come early 不清楚的是時間，可問 What time should I arrive? 若只說 What?，對方不知道你究竟沒聽見還是不理解。"
+    },
+    {
+      "id": "ENG_R4_L_S206_SEC_02",
+      "title": "聽不清楚時提出有限選項",
+      "content": "電話中 fifteen 和 fifty 容易混淆，可以問 Did you say fifteen or fifty? 這比假裝聽懂更安全。有限選項必須來自實際聽到的可能內容，不能加入毫無根據的新資訊。"
+    },
+    {
+      "id": "ENG_R4_L_S206_SEC_03",
+      "title": "代名詞和地點常需要確認指涉",
+      "content": "Put it there 若前文有多個物品或位置，就缺少明確指涉。可以問 Which box do you mean? 或 Which table should I use? 澄清問題一次可處理最影響行動的資訊。"
+    },
+    {
+      "id": "ENG_R4_L_S206_SEC_04",
+      "title": "確認後要用自己的話回述",
+      "content": "對方補充後，可簡短確認：So I should bring two bottles by nine, right? 回述能讓雙方檢查數量、時間和動作是否一致，但不要把尚未證實的猜測說成事實。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S206_EX_01",
+      "prompt": "Please come early tomorrow.",
+      "steps": [
+        "找出 early 沒有明確時間。",
+        "保留 tomorrow，不重問已知資訊。",
+        "針對到達時間提問。"
+      ],
+      "answer": "What time should I arrive tomorrow?",
+      "why": "tomorrow 已經確定，不需要再問日期；真正缺少的是 early 代表幾點。問題直接要求明確到達時間，能避免雙方對早晚的標準不同。"
+    },
+    {
+      "id": "ENG_R4_L_S206_EX_02",
+      "prompt": "Anna told Mia that she won.",
+      "steps": [
+        "找出 she 可能指兩個人。",
+        "不要任意選最近的人名。",
+        "詢問得勝者是誰。"
+      ],
+      "answer": "Does 'she' mean Anna or Mia?",
+      "why": "句中 Anna 和 Mia 都可能是 she 的指涉對象，單靠距離不能確定。把兩個可能人物都列出，能請說話者補足真正的得勝者。"
+    },
+    {
+      "id": "ENG_R4_L_S206_EX_03",
+      "prompt": "Add some water to the bowl.",
+      "steps": [
+        "確認動作和容器已知。",
+        "找出 some 沒有明確數量。",
+        "詢問需要加入多少水。"
+      ],
+      "answer": "How much water should I add?",
+      "why": "若料理結果受到水量影響，some 並不足以執行。How much 直接要求數量，不必再問已知的容器或動作。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "沒聽懂時只要一直說 What? 就能有效修復。",
+      "whyWrong": "對方不知道需重複哪一部分或改用什麼說法。",
+      "correction": "指出不確定的字、數量、人物或步驟。"
+    },
+    {
+      "belief": "代名詞通常指最近的名詞，所以不必詢問。",
+      "whyWrong": "語法距離不能保證符合真正情境。",
+      "correction": "有兩個合理指涉時，列出人名請對方確認。"
+    },
+    {
+      "belief": "澄清問題可以加入自己猜測的細節。",
+      "whyWrong": "新細節可能引導對方接受原本沒有的內容。",
+      "correction": "只問從訊息中確實產生的不確定點。"
+    },
+    {
+      "belief": "對方回答一次後就不需要回述。",
+      "whyWrong": "多個數字或步驟仍可能被聽錯。",
+      "correction": "在重要安排中，用一句話確認關鍵動作、時間與數量。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Please put it there 最常缺少哪兩類資訊？",
+      "answer": "物品和位置",
+      "reason": "it 與 there 都需由前文找到明確指涉。"
+    },
+    {
+      "prompt": "Did you say fifteen or fifty? 在確認什麼？",
+      "answer": "聽到的數字",
+      "reason": "兩個發音相近的數字會造成不同結果。"
+    },
+    {
+      "prompt": "So we meet at six, right? 有什麼功能？",
+      "answer": "回述確認",
+      "reason": "它讓對方檢查時間是否被正確理解。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_204_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S204"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "I missed your call because I was on the bus. I'm sorry.",
+  "options": [
+    "The speaker asks for another bus.",
+    "The speaker invites someone to call a bus.",
+    "The speaker says sorry for missing the call.",
+    "The speaker thanks someone for calling a bus."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有要求交通工具。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "call 在此指電話，不是叫車。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "missed your call 和 sorry 指出道歉原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子沒有感謝。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u30-s204-resolve-missed-call-apology-with-bus-reason",
+    "disambiguate-call-before-classifying-function"
+  ],
+  "representationType": "speech-function-contextual-apology",
+  "misconceptionTargets": [
+    "misread-call-as-requesting-vehicle"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "because I was on the bus 只解釋漏接原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項不把 call 的多義誤連到交通。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_208_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I loved the movie last night. What can B ask about the movie?",
+  "options": [
+    "What did you like most about it?",
+    "Movies have many seats.",
+    "I finished my math work.",
+    "Was last night a night?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "沿著電影感受要求更多細節。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一般事實沒有回應喜愛原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "突然換到作業。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "重複明顯資訊，無法推進。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s208-follow-up-on-liked-movie-detail",
+    "extend-evaluation-topic-with-focused-question"
+  ],
+  "representationType": "conversation-relevant-follow-up",
+  "misconceptionTargets": [
+    "continue-with-any-grammatical-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "loved the movie 是可追問的核心。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項讓 A 說明具體內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

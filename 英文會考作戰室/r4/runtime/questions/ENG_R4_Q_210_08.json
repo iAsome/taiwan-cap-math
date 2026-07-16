@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_210_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You need help now. Where are you?",
+  "options": [
+    "I often visit this area.",
+    "The weather is warm.",
+    "I left home an hour ago.",
+    "I am at the north entrance of City Park."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "習慣位置不等於目前位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "天氣無法定位。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "離家時間仍缺少現址。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "提供明確地點和入口方向。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u30-s210-give-precise-current-location-for-help",
+    "include-site-and-entrance-in-urgent-location-answer"
+  ],
+  "representationType": "information-current-location",
+  "misconceptionTargets": [
+    "provide-travel-history-instead-of-current-position"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "help now 使目前位置成為首要資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項比只說 park 更容易找到人。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

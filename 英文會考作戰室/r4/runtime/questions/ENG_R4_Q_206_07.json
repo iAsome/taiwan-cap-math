@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_206_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S206"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Anna told Mia that she won the race. What is not clear?",
+  "options": [
+    "Where races began",
+    "Why Anna can speak",
+    "Who 'she' means",
+    "Whether Mia knows Anna"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "起點不是句中歧義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "說話能力不是問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "she 可能指 Anna 或 Mia。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩人是否相識不能解決得勝者。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u30-s206-detect-ambiguous-she-in-reported-win",
+    "avoid-nearest-name-reference-assumption"
+  ],
+  "representationType": "clarification-pronoun-reference",
+  "misconceptionTargets": [
+    "assign-she-to-mia-by-distance"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩個女性人名都可成為代名詞指涉。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項精確指出句意不確定的來源。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

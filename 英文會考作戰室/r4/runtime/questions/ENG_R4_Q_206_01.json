@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_206_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S206"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Meet me by the bank. Two banks are near us. What should you ask?",
+  "options": [
+    "Which bank do you mean?",
+    "Why do banks have money?",
+    "Do you like this town?",
+    "Can we meet another day?"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "直接確認兩家銀行中的位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是一般知識，不能決定集合地。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "喜好與位置無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "another day 反而改變了原來的日期安排。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s206-clarify-which-bank-among-two-locations",
+    "target-location-ambiguity-without-changing-plan"
+  ],
+  "representationType": "clarification-location",
+  "misconceptionTargets": [
+    "ask-unrelated-background-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Two banks are near us 建立真正歧義。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只針對需要執行的地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

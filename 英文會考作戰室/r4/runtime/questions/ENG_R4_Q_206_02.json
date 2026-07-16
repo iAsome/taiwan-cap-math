@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_206_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S206"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Bring the light bag. There is a white bag and a bag that is not heavy.",
+  "options": [
+    "Should I bring every bag?",
+    "Do you mean the bag that is not heavy?",
+    "Why is the room bright?",
+    "Where did you buy a bag?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "要求全部拿來，沒有釐清 light。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "直接確認 light 是否指重量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "room bright 與 bag 無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "購買地點不影響選哪個袋子。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s206-resolve-light-bag-weight-versus-color",
+    "offer-context-supported-sense-for-confirmation"
+  ],
+  "representationType": "clarification-word-sense",
+  "misconceptionTargets": [
+    "choose-first-available-meaning-of-light"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "light 可能指淺色或不重，題幹提供兩種可能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項用明確特徵確認說話者原意。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

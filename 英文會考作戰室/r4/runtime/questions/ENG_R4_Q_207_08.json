@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_207_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben says 'Great' slowly, looks away, and rolls his eyes.",
+  "options": [
+    "He clearly asks for a gift.",
+    "He gives a warm thank-you.",
+    "He invites someone outside.",
+    "His voice and face show he may not be pleased."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "great 和 gift 不同，沒有索取。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "非語言線索不支持溫暖感謝。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "looks away 不是邀請外出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "慢語速和轉眼使字面正面意思受到質疑。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u30-s207-detect-possible-irony-from-tone-and-eye-roll",
+    "use-modal-language-for-conflicting-multimodal-cues"
+  ],
+  "representationType": "nonverbal-irony-candidate",
+  "misconceptionTargets": [
+    "trust-positive-word-while-ignoring-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題幹提供多個與字面 great 相反的線索。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項使用 may 保留合理不確定性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

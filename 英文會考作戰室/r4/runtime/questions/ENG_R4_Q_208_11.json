@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_208_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: The rain ruined our paper signs. What can B offer next?",
+  "options": [
+    "Rain falls from clouds.",
+    "Paper is made in many places.",
+    "Could we make new signs from old boxes?",
+    "I like sunny days."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一般自然知識不能解決問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "紙張產地與損壞無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回應損失並提出相關下一步。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "個人天氣喜好會中斷處理。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u30-s208-advance-ruined-signs-topic-with-box-solution",
+    "turn-problem-report-into-collaborative-next-step"
+  ],
+  "representationType": "conversation-solution-continuation",
+  "misconceptionTargets": [
+    "respond-with-general-weather-comment"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "ruined signs 建立需要替代材料的問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項讓對話由困難進入可行方案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

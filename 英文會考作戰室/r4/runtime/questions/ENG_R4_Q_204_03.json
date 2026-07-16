@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_204_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S204"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "I'm sorry I broke your cup.",
+  "options": [
+    "The speaker is offering a cup.",
+    "The speaker is asking to use a cup.",
+    "The speaker is saying sorry for breaking it.",
+    "The speaker is inviting someone for a drink."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有提供新杯子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "broke 表示已發生的行為，不是借用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "sorry 和 broke your cup 共同構成道歉。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有共同飲用活動。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s204-link-sorry-and-broken-cup-to-apology",
+    "identify-admitted-harm-as-speech-purpose"
+  ],
+  "representationType": "speech-function-apology",
+  "misconceptionTargets": [
+    "classify-sorry-as-general-sadness-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "句子明確承認自己打破對方杯子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項指出道歉所針對的實際影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

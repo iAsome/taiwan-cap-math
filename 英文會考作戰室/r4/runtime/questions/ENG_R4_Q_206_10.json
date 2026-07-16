@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_206_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S206"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Take the second right after the park. You see a bridge near the park.",
+  "options": [
+    "Is the park large?",
+    "Is the turn before or after the bridge?",
+    "Who built the road?",
+    "Can bridges cross water?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "公園大小不決定轉彎點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "用可見地標確認路線位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "道路建造者與方向無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一般橋梁知識不能定位。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u30-s206-clarify-turn-location-against-bridge",
+    "anchor-route-instruction-to-visible-landmark"
+  ],
+  "representationType": "clarification-route-landmark",
+  "misconceptionTargets": [
+    "continue-route-with-uncertain-turn-point"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "bridge near the park 是可用來消除歧義的地標。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項詢問行動所需的前後關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

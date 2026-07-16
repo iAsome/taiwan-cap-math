@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_210_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "How can I get to the post office from here?",
+  "options": [
+    "The post office sells stamps.",
+    "Go straight and turn left at the bank.",
+    "It closes at five.",
+    "My uncle works there."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "功能資訊不能指路。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "提供可執行方向和地標。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "營業時間不回答 how to get there。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "親屬工作資訊無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s210-provide-route-to-post-office",
+    "use-action-sequence-and-landmark-for-how-question"
+  ],
+  "representationType": "information-directions",
+  "misconceptionTargets": [
+    "answer-place-question-with-opening-hours"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "from here 要求一段路線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項包含行進方向與轉彎位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

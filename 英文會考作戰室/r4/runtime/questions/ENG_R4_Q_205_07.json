@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_205_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S205"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A student wants to interrupt a teacher who is speaking.",
+  "options": [
+    "Listen to me now.",
+    "I have a thing.",
+    "I'm sorry to interrupt. May I ask a question?",
+    "My question is more important."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "命令式且不尊重正在說話的人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "內容含糊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "先標示打斷，再禮貌請求發問。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "貶低目前話題，沒有必要。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u30-s205-frame-classroom-interruption-respectfully",
+    "acknowledge-ongoing-turn-before-question"
+  ],
+  "representationType": "register-interruption",
+  "misconceptionTargets": [
+    "interrupt-without-signaling-turn-entry"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "teacher is speaking 是選擇開場語的關鍵。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項清楚說明打斷的目的。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

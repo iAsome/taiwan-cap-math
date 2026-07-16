@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_207_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sam looks at the open window, rubs his arms, and says, 'It's cold in here.'",
+  "options": [
+    "He wants to discuss winter history.",
+    "He says the window is clean.",
+    "He may want the window closed.",
+    "He is asking to go swimming."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有歷史話題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "open 不表示 clean。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "看窗、搓手和 cold 共同支持關窗需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "cold 不導向游泳邀請。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u30-s207-infer-indirect-close-window-request-from-cold-cues",
+    "combine-body-response-gaze-and-literal-comment"
+  ],
+  "representationType": "nonverbal-indirect-request",
+  "misconceptionTargets": [
+    "read-weather-comment-without-contextual-purpose"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "動作與視線把一般陳述連到窗戶。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項用 may 表示這仍是情境推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

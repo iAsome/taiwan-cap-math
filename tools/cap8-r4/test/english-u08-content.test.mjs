@@ -32,6 +32,7 @@ const UNITS = [
   { id: "ENG_R4_U27", firstSkill: 183 },
   { id: "ENG_R4_U28", firstSkill: 190 },
   { id: "ENG_R4_U29", firstSkill: 197 },
+  { id: "ENG_R4_U30", firstSkill: 204 },
 ].map((unit) => ({
   ...unit,
   skills: Array.from({ length: 7 }, (_, index) => `ENG_R4_S${String(index + unit.firstSkill).padStart(3, "0")}`),
@@ -881,6 +882,30 @@ test("U29 collocations and phrasal verbs preserve natural use, meaning, and obje
     ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
     ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
   ]) assert.equal(new Set(values).size, values.length, `U29 duplicate ${label}`);
+});
+
+test("U30 communication questions use contextual functions, bounded inference, and sufficient replies", async () => {
+  const { loadEnglishUnitSource } = await api();
+  const source = await loadEnglishUnitSource("ENG_R4_U30");
+  const question = new Map(source.questions.map((value) => [value.id, value]));
+  assert.equal(question.get("ENG_R4_Q_204_01").options[question.get("ENG_R4_Q_204_01").answerIndex], "Someone to pass the salt");
+  assert.equal(question.get("ENG_R4_Q_205_05").options[question.get("ENG_R4_Q_205_05").answerIndex], "Stop!");
+  assert.equal(question.get("ENG_R4_Q_206_02").options[question.get("ENG_R4_Q_206_02").answerIndex], "Do you mean the bag that is not heavy?");
+  assert.equal(question.get("ENG_R4_Q_207_08").options[question.get("ENG_R4_Q_207_08").answerIndex], "His voice and face show he may not be pleased.");
+  assert.match(question.get("ENG_R4_Q_207_08").options[3], /may not/);
+  assert.equal(question.get("ENG_R4_Q_208_06").options[question.get("ENG_R4_Q_208_06").answerIndex], "That happened to me too. What helped you find the way?");
+  assert.equal(question.get("ENG_R4_Q_209_05").options[question.get("ENG_R4_Q_209_05").answerIndex], "What facts show that it helped everyone?");
+  assert.equal(question.get("ENG_R4_Q_210_07").options[question.get("ENG_R4_Q_210_07").answerIndex], "I finished it, but Leo has not checked it yet.");
+  assert.match(source.lectures.find((value) => value.skillId === "ENG_R4_S207").sections[3].content, /線索不足/);
+  assert.match(source.lectures.find((value) => value.skillId === "ENG_R4_S210").sections[2].title, /足夠不等於/);
+  const questionStems = new Set(source.questions.map((value) => value.stem));
+  assert(source.lectures.flatMap((value) => value.workedExamples).every((value) => !questionStems.has(value.prompt)), "U30 lecture prompt copied as a question");
+  for (const [label, values] of [
+    ["option reasons", source.questions.flatMap((value) => value.reasons)],
+    ["question reviews", source.questions.flatMap((value) => value.reviews)],
+    ["lecture sections", source.lectures.flatMap((value) => value.sections.map((section) => section.content))],
+    ["worked-example whys", source.lectures.flatMap((value) => value.workedExamples.map((example) => example.why))],
+  ]) assert.equal(new Set(values).size, values.length, `U30 duplicate ${label}`);
 });
 
 test("authored English vocabulary is limited to the governed official tables", async () => {

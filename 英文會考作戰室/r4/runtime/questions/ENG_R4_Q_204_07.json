@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_204_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S204"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "I should not have spoken to you that way.",
+  "options": [
+    "The speaker is asking someone to act.",
+    "The speaker is accepting an invitation.",
+    "The speaker says a past action was wrong.",
+    "The speaker is giving thanks."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有要求對方採取行動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有活動或參加決定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "should not have 表示後悔先前說話方式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有收到幫助。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u30-s204-recognize-regret-statement-as-apology-function",
+    "derive-admission-from-should-not-have-spoken"
+  ],
+  "representationType": "speech-function-regret",
+  "misconceptionTargets": [
+    "require-word-sorry-for-all-apologies"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "that way 指向說話者認為不恰當的表達。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留承認錯誤而未額外假設對方反應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

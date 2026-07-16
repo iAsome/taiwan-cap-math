@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_204_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S204"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Would you please close the window?",
+  "options": [
+    "It asks someone to close the window.",
+    "It invites someone to sit by the window.",
+    "It says sorry for opening the window.",
+    "It is thanks for a closed window."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "說話者希望對方關窗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有邀請到窗邊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有承認自己開窗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "窗戶尚待關閉，不是感謝已完成動作。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u30-s204-classify-polite-close-window-as-request",
+    "differentiate-action-request-from-related-window-functions"
+  ],
+  "representationType": "speech-function-polite-request",
+  "misconceptionTargets": [
+    "label-would-you-as-invitation-without-join-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "please 和 close 指出期待的立即行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不被 Would you 的形式帶離請求功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_210_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Have you finished the team report, and has Leo checked it?",
+  "options": [
+    "Reports can be long.",
+    "Leo joined the team.",
+    "I finished it, but Leo has not checked it yet.",
+    "We worked in the library."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "一般長度不回答兩項進度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "加入團隊不等於完成檢查。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分別回答完成和 Leo 檢查狀態。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "工作地點不能說明是否完成。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u30-s210-answer-two-part-report-status",
+    "track-completion-and-review-as-separate-states"
+  ],
+  "representationType": "information-multipart-status",
+  "misconceptionTargets": [
+    "answer-only-first-half-of-compound-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問題包含兩個 yes-or-no 進度點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項用 but 清楚區分已完成與尚未檢查。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

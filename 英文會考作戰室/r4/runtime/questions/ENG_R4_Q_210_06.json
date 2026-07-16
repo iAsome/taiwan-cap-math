@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_210_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Does this cake have nuts in it? I cannot eat them.",
+  "options": [
+    "The cake looks fresh.",
+    "Yes, it has nuts in it, so please do not eat it.",
+    "It was made this morning.",
+    "The plate is clean."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "外觀不能確認成分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "明確回答成分並連到安全行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "製作時間不排除花生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "盤子清潔與食材不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u30-s210-answer-peanut-content-with-safety-consequence",
+    "prioritize-declared-food-restriction-over-side-details"
+  ],
+  "representationType": "information-food-safety",
+  "misconceptionTargets": [
+    "infer-ingredients-from-appearance"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "cannot eat them 使成分資訊具有安全重要性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項沒有用外觀或猜測代替查證結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

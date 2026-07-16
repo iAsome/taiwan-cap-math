@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_206_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S206"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Add some water to the bowl. The amount changes the result.",
+  "options": [
+    "Is the bowl blue?",
+    "Where was the water?",
+    "How much water should I add?",
+    "Why do bowls hold water?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不影響所需水量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "來源不是題幹指出的問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "直接要求會影響結果的數量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "容器的一般功能與本次操作無關。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u30-s206-request-exact-water-amount-for-result",
+    "prioritize-outcome-sensitive-quantity"
+  ],
+  "representationType": "clarification-quantity",
+  "misconceptionTargets": [
+    "treat-some-as-fixed-measure"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "amount changes the result 明確指出 some 不足。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把模糊量詞改成可測量資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_208_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A: I read a report about sleep and memory. What can B ask about the report?",
+  "options": [
+    "Reports have words.",
+    "I sleep in a bed.",
+    "Memory is a word.",
+    "What did the report find?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "形式特徵沒有延伸內容。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只談自己睡覺地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "字詞分類無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "詢問研究發現，直接承接報告主題。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u30-s208-request-finding-from-sleep-memory-report",
+    "focus-follow-up-on-source-conclusion"
+  ],
+  "representationType": "conversation-information-follow-up",
+  "misconceptionTargets": [
+    "reply-to-topic-word-with-personal-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "about sleep and memory 指出報告探討的關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項要求 A 提供最核心的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S210",
+  "subject": "english",
+  "unitId": "ENG_R4_U30",
+  "skillId": "ENG_R4_S210",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S209"
+  ],
+  "objectives": [
+    "能辨認對方真正需要的時間、地點、原因、步驟或限制。",
+    "能用相關、足夠而不過量的資訊完成回答，並在不確定時誠實標示。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S210_SEC_01",
+      "title": "先拆解問題要求的資訊種類",
+      "content": "When does the library close? 要的是時間；How can I get there? 要的是路線。回答前圈出疑問詞和對象，避免提供正確但無關的資料，例如以圖書館藏書量回答關門時間。"
+    },
+    {
+      "id": "ENG_R4_L_S210_SEC_02",
+      "title": "多部分問題要逐項作答",
+      "content": "What should I bring, and where should we meet? 同時要求物品和地點。只回答其中一項仍不完整。可用兩個短句分開回答，讓每項資訊容易核對。"
+    },
+    {
+      "id": "ENG_R4_L_S210_SEC_03",
+      "title": "足夠不等於塞入所有細節",
+      "content": "問路時需要轉彎處、地標和終點，不需要沿路每家商店的介紹。刪除不影響行動的背景故事，保留能讓對方做出下一步決定的資訊。"
+    },
+    {
+      "id": "ENG_R4_L_S210_SEC_04",
+      "title": "不確定時說明界線與查證方式",
+      "content": "若不知道最新時間，不應猜測。可以說 I'm not sure. Let's check the library page. 誠實標示不確定，再指出可靠查證來源，比提供看似完整但可能過時的答案更有用。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S210_EX_01",
+      "prompt": "What time does the last bus leave?",
+      "steps": [
+        "辨認問題要最後一班車的時間。",
+        "排除路線、票價等無關資訊。",
+        "提供明確時刻或說明需查證。"
+      ],
+      "answer": "It leaves at 10:20 p.m.",
+      "why": "回答直接提供最後一班車的離站時間，足以讓對方安排行程。若時刻尚未查證，就應改說不確定並查時刻表，不能自行猜一個時間。"
+    },
+    {
+      "id": "ENG_R4_L_S210_EX_02",
+      "prompt": "What should I bring, and where do we meet?",
+      "steps": [
+        "拆成攜帶物品和集合地點。",
+        "各回答一項。",
+        "確認沒有遺漏其中一問。"
+      ],
+      "answer": "Bring water and a hat. Meet us at the school gate.",
+      "why": "第一句回答要帶什麼，第二句提供集合地點，兩個需求都得到處理。若只說 school gate，對方仍不知道要準備哪些物品。"
+    },
+    {
+      "id": "ENG_R4_L_S210_EX_03",
+      "prompt": "Does this soup have milk in it?",
+      "steps": [
+        "確認問題涉及食物成分。",
+        "不能只憑外觀看起來猜測。",
+        "提供已查證答案或請工作人員確認。"
+      ],
+      "answer": "I'm not sure. Let's ask the cook before you eat it.",
+      "why": "涉及食物成分時，猜測可能造成風險。這個回答誠實指出不確定，並安排向能確認配方的人查證，資訊雖短卻能支持安全決定。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "回答越長就一定越完整。",
+      "whyWrong": "大量無關細節可能掩蓋真正需要的資訊。",
+      "correction": "依疑問詞和行動需求保留必要內容。"
+    },
+    {
+      "belief": "問題有兩部分時，回答較容易的一部分就足夠。",
+      "whyWrong": "另一項需求仍未解決，對方不能完成安排。",
+      "correction": "拆開列出每個要求，回答後逐項核對。"
+    },
+    {
+      "belief": "不知道答案時，給一個可能的數字比空白更有幫助。",
+      "whyWrong": "未標示的猜測可能使對方依錯誤資訊行動。",
+      "correction": "說明不確定，並指出可查證的人或來源。"
+    },
+    {
+      "belief": "只要內容是真的，即使沒有回答問題也算相關。",
+      "whyWrong": "真實資訊仍可能無法滿足對方當下需求。",
+      "correction": "檢查每一句是否協助回答時間、地點、原因、方法或限制。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Where is the station? 主要需要哪一類資訊？",
+      "answer": "地點或路線",
+      "reason": "where 詢問位置，不是時間。"
+    },
+    {
+      "prompt": "回答兩部分問題後應做什麼？",
+      "answer": "逐項核對",
+      "reason": "可確認沒有漏答其中一項。"
+    },
+    {
+      "prompt": "不知道最新時刻時，可以直接猜嗎？",
+      "answer": "不可以",
+      "reason": "應標示不確定並查可靠來源。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S207",
+  "subject": "english",
+  "unitId": "ENG_R4_U30",
+  "skillId": "ENG_R4_S207",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S206"
+  ],
+  "objectives": [
+    "能把表情、手勢、語調與情境視為理解口語的輔助線索。",
+    "能在字面訊息和非語言線索衝突時保留合理的不確定性。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S207_SEC_01",
+      "title": "非語言線索補充說話方式",
+      "content": "同一句 Really? 以升高語調、睜大眼睛說出，常表示驚訝；以平穩語調則可能只是確認。理解時要把說了什麼和怎麼說放在一起，但不能只靠一個表情推斷完整想法。"
+    },
+    {
+      "id": "ENG_R4_L_S207_SEC_02",
+      "title": "手勢可指出字面省略的對象",
+      "content": "說 This one, please 時若同時指向菜單上的湯，手勢補足 this 的指涉。沒有手勢或前文時，this 可能不清楚；題目必須提供足以定位的可見情境。"
+    },
+    {
+      "id": "ENG_R4_L_S207_SEC_03",
+      "title": "身體反應能顯示需求",
+      "content": "有人摀住耳朵並看向音響，接著說 Could you turn it down?，動作和語句共同指向音量。身體線索只能支持情境中可觀察的需求，不能用來診斷情緒或個性。"
+    },
+    {
+      "id": "ENG_R4_L_S207_SEC_04",
+      "title": "文化與個人差異限制推論",
+      "content": "點頭、眼神和說話音量在不同文化或個人之間可能有差異。會考型題目應提供多個一致線索，例如語句、動作和事件結果；若線索不足，最安全的理解是承認無法確定。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S207_EX_01",
+      "prompt": "Nora nods and says, 'Sure, I can help.'",
+      "steps": [
+        "Sure 和 can help 表示同意。",
+        "點頭與字面訊息方向一致。",
+        "判斷她接受協助。"
+      ],
+      "answer": "She agrees to help.",
+      "why": "Sure, I can help 已直接表達同意，點頭再加強這個意思。結論不需要推到她是否喜歡這項工作，只能確認她願意幫忙。"
+    },
+    {
+      "id": "ENG_R4_L_S207_EX_02",
+      "prompt": "During a picture game, Owen points to picture two and says, 'I mean that one.'",
+      "steps": [
+        "that one 需要可見對象。",
+        "手指方向定位第二張圖。",
+        "將指涉連回第二張圖。"
+      ],
+      "answer": "He means the second picture.",
+      "why": "句中的 that one 單獨看不夠明確，手勢把它連到第二張圖。不能因圖片位置再推測他喜歡或不喜歡那張圖。"
+    },
+    {
+      "id": "ENG_R4_L_S207_EX_03",
+      "prompt": "The music is loud. Lily covers her ears and asks, 'Could you turn it down?'",
+      "steps": [
+        "語句要求降低音量。",
+        "摀耳動作和音量問題一致。",
+        "不加入未說明的音樂喜好。"
+      ],
+      "answer": "She wants the music to be quieter.",
+      "why": "turn the music down 已指出要降低音量，摀住耳朵提供相同方向的線索。這不足以證明她討厭歌曲，只能判斷聲音對她太大。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要看到笑容，就能判定對方同意所有內容。",
+      "whyWrong": "笑容可能只是友善，不能取代明確回答。",
+      "correction": "以語句為主，再用一致的表情和動作補充。"
+    },
+    {
+      "belief": "一個手勢在所有文化中都有完全相同的意思。",
+      "whyWrong": "手勢會受文化和個人習慣影響。",
+      "correction": "依題目提供的語句、情境與結果共同判斷。"
+    },
+    {
+      "belief": "語氣和字面衝突時，一定要選和字面相反的意思。",
+      "whyWrong": "衝突可能表示玩笑、懷疑或資訊不足。",
+      "correction": "找更多線索；不足時不要做過度確定的推論。"
+    },
+    {
+      "belief": "看向某物就代表喜歡那個物品。",
+      "whyWrong": "視線可能只是指出位置或確認對象。",
+      "correction": "區分指涉線索和情感評價。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "指向菜單時說 This one，手勢補足什麼？",
+      "answer": "this 的指涉",
+      "reason": "手勢指出說話者選的是哪一項。"
+    },
+    {
+      "prompt": "摀耳朵一定表示討厭某首歌嗎？",
+      "answer": "不一定",
+      "reason": "它也可能只表示音量太大。"
+    },
+    {
+      "prompt": "非語言線索不足時可以假裝確定嗎？",
+      "answer": "不可以",
+      "reason": "應保留不確定並尋找更多情境證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  }
+}

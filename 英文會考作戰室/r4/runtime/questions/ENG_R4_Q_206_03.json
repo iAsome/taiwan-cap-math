@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_206_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S206"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Please come early tomorrow. Which information is still needed?",
+  "options": [
+    "The day",
+    "The speaker's name",
+    "The time to arrive",
+    "The reason for tomorrow"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "tomorrow 已給日期範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "執行到達不一定需要姓名。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "early 沒有指出明確時刻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "即使不知道原因，仍可依時刻到達。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u30-s206-identify-missing-time-behind-early",
+    "separate-essential-schedule-detail-from-background"
+  ],
+  "representationType": "clarification-missing-detail",
+  "misconceptionTargets": [
+    "reask-already-known-day"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題幹要求找阻礙行動的缺漏。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項能把 early 轉成可執行安排。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

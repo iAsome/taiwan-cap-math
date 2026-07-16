@@ -27,6 +27,7 @@ const IRREGULAR = new Map(Object.entries({
   does: "do",
   done: "do",
   drank: "drink",
+  drew: "draw",
   driven: "drive",
   drove: "drive",
   drunk: "drink",
@@ -80,6 +81,7 @@ const IRREGULAR = new Map(Object.entries({
   tying: "tie",
   went: "go",
   won: "win",
+  worst: "bad",
   written: "write",
   wrote: "write",
 }));
@@ -93,13 +95,17 @@ const CONTRACTIONS = new Map(Object.entries({
   "don't": "do",
   "hasn't": "have",
   "haven't": "have",
+  "i'd": "would",
+  "i'm": "am",
   "isn't": "is",
   "mustn't": "must",
   "shouldn't": "should",
   "wasn't": "was",
+  "we're": "are",
   "weren't": "were",
   "won't": "will",
   "wouldn't": "would",
+  "you're": "are",
 }));
 
 function tokenSet(entries) {

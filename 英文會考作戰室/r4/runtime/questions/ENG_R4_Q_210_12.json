@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_210_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-7-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "You are not sure whether the museum is open on Monday.",
+  "options": [
+    "It is certainly open because museums are useful.",
+    "It was open when I was a child.",
+    "Monday is a weekday, so it must be open.",
+    "I'm not sure. Let's check the museum page."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "用途不能證明營業日。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "過去資訊可能已變更。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "平日不保證每座博物館營業。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "誠實標示不確定並提出查證來源。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u30-s210-handle-unknown-museum-hours-with-verification",
+    "distinguish-current-fact-from-assumption-and-memory"
+  ],
+  "representationType": "information-uncertainty",
+  "misconceptionTargets": [
+    "guess-opening-hours-from-weekday-status"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-7-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "not sure 明確禁止把推測包裝成確定答案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項提供可取得最新資訊的下一步。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
