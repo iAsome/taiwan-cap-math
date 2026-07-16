@@ -1,0 +1,80 @@
+{
+  "id": "CHI_R4_Q_019_11",
+  "subject": "chinese",
+  "skillIds": [
+    "CHI_R4_S019"
+  ],
+  "authorityRefs": [
+    "AUTH-CHINESE-LC-AB-4-1",
+    "AUTH-CHINESE-LC-AB-4-4",
+    "AUTH-CHINESE-LP-4-4-2",
+    "AUTH-CHINESE-LP-4-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "同一詞條有「釋義」與「例句」，兩者關係何者正確？",
+  "options": [
+    "例句與釋義互不相關",
+    "例句可推翻詞條全部義項",
+    "釋義概括意義，例句示範該意義如何進入語境",
+    "釋義只用來數字數"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此選項沒有按照題目給定的部首、音義、詞性或工具書欄位完成核對；針對「同一詞條有〔釋義〕與〔例句〕，兩者關係何者正確？」，「例句與釋義互不相關」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此選項把部件、索引入口或另一義項誤當成題中應用的資料；針對「同一詞條有〔釋義〕與〔例句〕，兩者關係何者正確？」，「例句可推翻詞條全部義項」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩欄互相補充，但功能不同；在「同一詞條有〔釋義〕與〔例句〕，兩者關係何者正確？」中，「釋義概括意義，例句示範該意義如何進入語境」能同時符合文本、關係與限制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此判斷略過完整條目與原句語境，不能排除同部、同音或多義候選；針對「同一詞條有〔釋義〕與〔例句〕，兩者關係何者正確？」，「釋義只用來數字數」沒有符合題目要求的完整條件。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "analyze",
+    "evaluate",
+    "transfer"
+  ],
+  "representationType": "source-cross-check",
+  "misconceptionTargets": [
+    "例句與釋義互不相關"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Chinese content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-CHINESE-LC-AB-4-1",
+      "AUTH-CHINESE-LC-AB-4-4",
+      "AUTH-CHINESE-LP-4-4-2",
+      "AUTH-CHINESE-LP-4-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "chinese-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩欄互相補充，但功能不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "chinese-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三個干擾選項各自誤用索引入口、欄位或語境義；依題中資料只能得到所標正解。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

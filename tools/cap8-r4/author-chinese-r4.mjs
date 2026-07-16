@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -13,6 +13,41 @@ const SOURCE_SCHEMA = "cap8-r4-chinese-static-unit-source-v1";
 const DIFFICULTIES = ["foundation", "foundation", "foundation", "standard", "standard", "standard", "standard", "advanced", "advanced", "advanced", "transfer", "transfer"];
 const zhQuote = (value) => String(value).includes("「") ? `『${value}』` : `「${value}」`;
 
+async function replaceTextDirectory(directory, files) {
+  await mkdir(directory, { recursive: true });
+  const expectedNames = new Set(files.map(([name]) => name));
+  for (const name of await readdir(directory)) {
+    if (!expectedNames.has(name)) await rm(path.join(directory, name), { recursive: true, force: true });
+  }
+  for (const [name, content] of files) await writeTextFileIfChanged(path.join(directory, name), content);
+}
+
+async function writeTextFileIfChanged(file, content) {
+  try {
+    if (await readFile(file, "utf8") === content) return;
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+  await writeFile(file, content, "utf8");
+}
+
+function rationaleCue(value) {
+  const compact = String(value).replace(/[「『]/gu, "〔").replace(/[」』]/gu, "〕").replace(/\s+/gu, " ").trim();
+  return compact.length <= 72 ? compact : `${compact.slice(0, 34)}……${compact.slice(-34)}`;
+}
+
+function contextualWrongRationale(reason, stem, option) {
+  const questionCue = rationaleCue(stem);
+  const optionCue = rationaleCue(option);
+  return `${String(reason).replace(/。$/u, "")}；針對${zhQuote(questionCue)}，${zhQuote(optionCue)}沒有符合題目要求的完整條件。`;
+}
+
+function contextualCorrectRationale(reason, stem, option) {
+  const questionCue = rationaleCue(stem);
+  const optionCue = rationaleCue(option);
+  return `${String(reason).replace(/。$/u, "")}；在${zhQuote(questionCue)}中，${zhQuote(optionCue)}能同時符合文本、關係與限制。`;
+}
+
 function strengthenQuestionExplanation(question) {
   const correctOption = question.options[question.answerIndex];
   const correctRationale = question.optionRationales.find(({ optionIndex }) => optionIndex === question.answerIndex);
@@ -20,6 +55,12 @@ function strengthenQuestionExplanation(question) {
   if (current.length < 12 || current === String(correctOption).trim()) {
     const factualLead = current && current !== String(correctOption).trim() ? `${current.replace(/[；。]$/u, "")}；` : "";
     correctRationale.reason = `${factualLead}${zhQuote(correctOption)}能回應題幹所問；代回題幹後，內容、形式與前後條件一致。`;
+  }
+  correctRationale.reason = contextualCorrectRationale(correctRationale.reason, question.stem, correctOption);
+  for (const rationale of question.optionRationales) {
+    if (!rationale.isCorrect && !String(rationale.reason).includes("；針對")) {
+      rationale.reason = contextualWrongRationale(rationale.reason, question.stem, question.options[rationale.optionIndex]);
+    }
   }
   for (const review of question.independentReviews) {
     const evidence = String(review.evidence ?? "").trim();
@@ -1674,7 +1715,7 @@ function concreteFoundationQuestions(skill) {
       stem,
       options,
       answerIndex,
-      optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: reasons.get(option) })),
+      optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: optionIndex === answerIndex ? reasons.get(option) : contextualWrongRationale(reasons.get(option), stem, option) })),
       difficulty: DIFFICULTIES[questionIndex],
       cognitiveProcess: questionIndex < 3 ? ["identify", "explain"] : questionIndex < 7 ? ["apply", "analyze"] : ["analyze", "evaluate", "transfer"],
       representationType: isPronunciation
@@ -2084,27 +2125,27 @@ function stimulusQuestionsFor(stimulus, index) {
   const specs = {
     narrative: [
       { stem: `面對${focus}引起的問題，${person}的做法出現哪一項關鍵轉折？`, correct: `沒有採取「${rejected}」，而改為${action}。`, wrong: [`一開始就知道「${result}」而沒有採取行動。`, `離開${place}，把問題完全交給陌生人。`, `刪除${evidence}，避免別人追問。`], reason: "人物放棄原先有人主張的捷徑，改採文中明寫的行動，推動事件發展。" },
-      { stem: `文中列出「${evidence}」，最能幫助讀者理解什麼？`, correct: `理解${person}處理${focus}的判斷並非只靠印象，而有具體依據。`, wrong: [`證明${person}在行動以前就已確定「${result}」。`, `暗示只要列出和${focus}有關的資料，任何結論都可成立。`, `只補充${place}的背景，和這次事件轉折沒有關係。`], reason: "這些細節位在行動與結果之間，用來交代人物如何排除錯誤判斷。" },
+      { stem: `為理解${person}處理${focus}的判斷，文中列出「${evidence}」有何幫助？`, correct: `理解${person}處理${focus}的判斷並非只靠印象，而有具體依據。`, wrong: [`證明${person}在行動以前就已確定「${result}」。`, `暗示只要列出和${focus}有關的資料，任何結論都可成立。`, `只補充${place}的背景，和這次事件轉折沒有關係。`], reason: "這些細節位在行動與結果之間，用來交代人物如何排除錯誤判斷。" },
       { stem: `根據全文，最適合形容${person}處理${focus}時的表現的是什麼？`, correct: `${person}願意放慢判斷，並兼顧處理${focus}的後果。`, wrong: [`${person}只重視能否迅速得到「${result}」，不在意過程。`, `${person}主要依從${place}多數人的意見，沒有自己的判準。`, `${person}雖保留資料，最後仍採取「${rejected}」的做法。`], reason: "人物以具體行動回應問題，且沒有用方便但不可靠的作法草率結案。" },
-      { stem: `結尾寫到「${result}」，對這篇敘事最主要的作用是什麼？`, correct: `以「${result}」收束${focus}引起的衝突，顯示人物選擇帶來的改變。`, wrong: [`把「${result}」當成${focus}出現的原因，顛倒前後因果。`, `證明「${rejected}」其實也能得到「${result}」。`, `只總結${evidence}的數量，沒有回應${person}的選擇。`], reason: "結尾直接承接人物行動，讓轉折後的影響可被看見。" },
+      { stem: `在${focus}的事件中，結尾寫到「${result}」主要發揮什麼作用？`, correct: `以「${result}」收束${focus}引起的衝突，顯示人物選擇帶來的改變。`, wrong: [`把「${result}」當成${focus}出現的原因，顛倒前後因果。`, `證明「${rejected}」其實也能得到「${result}」。`, `只總結${evidence}的數量，沒有回應${person}的選擇。`], reason: "結尾直接承接人物行動，讓轉折後的影響可被看見。" },
     ],
     expository: [
-      { stem: `這篇說明文字主要要讓讀者了解什麼？`, correct: `處理${focus}時，如何從${action}逐步得到「${result}」的結果。`, wrong: [`${person}在${place}的個人興趣排行。`, `${place}所有工作的歷史沿革。`, `為什麼「${rejected}」適用於每一種問題。`], reason: "全文依序交代問題、方法、核對資料與結果，重點在說明處理流程。" },
-      { stem: `依照文中的流程，在得出結論以前最需要核對哪一項資料？`, correct: evidence, wrong: [`「${action}」這項操作步驟本身`, `「${result}」這項完成後才出現的結果`, `「${rejected}」這項已被排除的做法`], reason: "文本明確把這組資料放在方法與結論之間，作為檢查依據。" },
-      { stem: `作者提到「${rejected}」，在說明上有什麼功能？`, correct: `以「${rejected}」和「${action}」對照，凸顯實際流程的必要。`, wrong: [`把「${rejected}」列為處理${focus}唯一推薦的方法。`, `證明${place}所有省時的作法都必然錯誤。`, `從${focus}轉入${person}的生平介紹。`], reason: "不採做法和實際流程形成對照，幫助讀者看出判斷條件。" },
+      { stem: `這篇關於${focus}的說明文字，主要要讓讀者了解什麼？`, correct: `處理${focus}時，如何從${action}逐步得到「${result}」的結果。`, wrong: [`${person}在${place}的個人興趣排行。`, `${place}所有工作的歷史沿革。`, `為什麼「${rejected}」適用於每一種問題。`], reason: "全文依序交代問題、方法、核對資料與結果，重點在說明處理流程。" },
+      { stem: `依照${place}處理${focus}的流程，在得出結論以前最需要核對哪一項資料？`, correct: evidence, wrong: [`「${action}」這項操作步驟本身`, `「${result}」這項完成後才出現的結果`, `「${rejected}」這項已被排除的做法`], reason: "文本明確把這組資料放在方法與結論之間，作為檢查依據。" },
+      { stem: `說明${focus}時，作者提到「${rejected}」有什麼功能？`, correct: `以「${rejected}」和「${action}」對照，凸顯實際流程的必要。`, wrong: [`把「${rejected}」列為處理${focus}唯一推薦的方法。`, `證明${place}所有省時的作法都必然錯誤。`, `從${focus}轉入${person}的生平介紹。`], reason: "不採做法和實際流程形成對照，幫助讀者看出判斷條件。" },
       { stem: `說明${focus}的這篇文字，組織方式最接近下列何者？`, correct: `先提出${focus}的待處理情況，說明步驟與${evidence}，再交代結果。`, wrong: [`先主張「${rejected}」，再用全文證明它正確。`, `只比較${person}與其他人的個性，未交代如何處理${focus}。`, `先列「${result}」，再依時間追述${place}的歷史。`], reason: "段落由問題推進到方法與結果，前後資訊有明確承接。" },
     ],
     argumentative: [
-      { stem: "這篇議論文字最主要支持哪一項主張？", correct: `處理${focus}時，應讓判斷有足夠依據，而不能只採「${rejected}」。`, wrong: [`凡是在${place}處理${focus}的決定都不會出錯。`, `只要採取「${action}」的步驟越多，做法就必然越好。`, `${person}處理${focus}的任何選擇都不需要接受檢驗。`], reason: "全文以一個具體案例比較兩種做法，主張判斷應與可支持它的資料相稱。" },
-      { stem: `「${result}」最適合被視為這篇文章中的哪一種材料？`, correct: `支持「處理${focus}須有依據」這項主張的實際結果。`, wrong: [`文章一開始提出、尚未獲${evidence}支持的主要主張。`, `對「${rejected}」這項做法所作的讓步。`, `用來界定「${focus}」詞義的抽象定義。`], reason: "結果顯示文中建議的做法確實回應原問題，因而成為論據的一部分。" },
-      { stem: `若要反駁「${rejected}最省事，所以最好」的說法，文中哪項資訊最有力？`, correct: `${action}，並以${evidence}核對後得到可說明的結果。`, wrong: [`重複「${rejected}」這項說法，但不比較後果。`, `只指出${person}負責處理，未說明採用何種資料。`, `只列「${result}」，卻不交代它和哪一做法有關。`], reason: "反駁必須回到兩種做法的可靠程度與後果，不能用無關的文字特徵代替。" },
+      { stem: `針對${place}處理${focus}的案例，這篇議論文字最主要支持哪一項主張？`, correct: `處理${focus}時，應讓判斷有足夠依據，而不能只採「${rejected}」。`, wrong: [`凡是在${place}處理${focus}的決定都不會出錯。`, `只要採取「${action}」的步驟越多，做法就必然越好。`, `${person}處理${focus}的任何選擇都不需要接受檢驗。`], reason: "全文以一個具體案例比較兩種做法，主張判斷應與可支持它的資料相稱。" },
+      { stem: `在論證${focus}的處理原則時，「${result}」最適合被視為哪一種材料？`, correct: `支持「處理${focus}須有依據」這項主張的實際結果。`, wrong: [`文章一開始提出、尚未獲${evidence}支持的主要主張。`, `對「${rejected}」這項做法所作的讓步。`, `用來界定「${focus}」詞義的抽象定義。`], reason: "結果顯示文中建議的做法確實回應原問題，因而成為論據的一部分。" },
+      { stem: `若要反駁處理${focus}時「${rejected}最省事，所以最好」的說法，文中哪項資訊最有力？`, correct: `${action}，並以${evidence}核對後得到可說明的結果。`, wrong: [`重複「${rejected}」這項說法，但不比較後果。`, `只指出${person}負責處理，未說明採用何種資料。`, `只列「${result}」，卻不交代它和哪一做法有關。`], reason: "反駁必須回到兩種做法的可靠程度與後果，不能用無關的文字特徵代替。" },
       { stem: `依全文來看，作者對查核${focus}的範圍抱持什麼態度？`, correct: `和${focus}直接相關的資料要足以支持判斷，但不必無限追查。`, wrong: [`處理${focus}時資料越多越好，即使侵犯隱私也無妨。`, `判斷${focus}只能靠${place}多數人表決，不需${evidence}。`, `只要「${result}」碰巧出現，處理過程完全不必說明。`], reason: "文章肯定有依據的判斷，同時沒有把查核擴張為不受限制的要求。" },
     ],
     practical: [
       { stem: `這份${place}文字最主要的用途是什麼？`, correct: `交代${focus}的處理方式、核對項目與目前結果。`, wrong: [`說服讀者改採「${rejected}」，不必留下紀錄。`, `只公告「${result}」，不讓後續承辦者知道依據。`, `介紹${person}的經歷，並把${focus}當作旁例。`], reason: "標題、欄位或段落都圍繞一件待處理事項，並提供可採取的資訊。" },
       { stem: `收到這份關於${focus}的文字後，若有新資料，最合宜的做法是什麼？`, correct: `附上和${focus}有關的具體來源與時間，交由${place}更新紀錄。`, wrong: [`刪除${focus}的舊紀錄，只保留自己的說法。`, `在未核對${evidence}前公開指責相關人員。`, `改動「${result}」的紀錄後不留下版本資訊。`], reason: "應用文本明確要求新資料保留來源並回到既有流程處理。" },
-      { stem: `文件特別提醒不要「${rejected}」，主要是為了避免什麼？`, correct: `避免未核對${evidence}便作成影響${focus}的判斷。`, wrong: [`避免讀者知道${focus}是在${place}處理。`, `避免關於${focus}的文件出現任何標點符號。`, `避免${person}完成「${action}」這項已列工作。`], reason: "提醒語直接對應待處理問題，限制讀者採取不可靠或不合宜的行動。" },
-      { stem: `下列何者同時包含這份文件明列的核對依據與處理結果？`, correct: `${evidence}，以及「${result}」的處理結果。`, wrong: [`「${action}」的步驟，以及尚未查證的新猜測。`, `「${rejected}」的做法，以及${person}的個人偏好。`, `${place}的名稱，以及文件未記載的後續發展。`], reason: "可交接資訊必須來自文件明列的核對項目與處理結果。" },
+      { stem: `關於${focus}的文件特別提醒不要「${rejected}」，主要是為了避免什麼？`, correct: `避免未核對${evidence}便作成影響${focus}的判斷。`, wrong: [`避免讀者知道${focus}是在${place}處理。`, `避免關於${focus}的文件出現任何標點符號。`, `避免${person}完成「${action}」這項已列工作。`], reason: "提醒語直接對應待處理問題，限制讀者採取不可靠或不合宜的行動。" },
+      { stem: `在${place}處理${focus}的文件中，下列何者同時包含明列的核對依據與處理結果？`, correct: `${evidence}，以及「${result}」的處理結果。`, wrong: [`「${action}」的步驟，以及尚未查證的新猜測。`, `「${rejected}」的做法，以及${person}的個人偏好。`, `${place}的名稱，以及文件未記載的後續發展。`], reason: "可交接資訊必須來自文件明列的核對項目與處理結果。" },
     ],
   }[genre];
   return specs.map((spec, questionIndex) => {
@@ -2123,7 +2164,7 @@ function stimulusQuestionsFor(stimulus, index) {
       optionRationales: options.map((option, optionIndex) => ({
         optionIndex,
         isCorrect: optionIndex === answerIndex,
-        reason: optionIndex === answerIndex ? spec.reason : `文本沒有提供足以支持${zhQuote(option)}的資訊；這個說法也沒有回答題幹所問的${{ narrative: "人物、因果或篇章作用", expository: "說明重點或組織", argumentative: "主張與論據", practical: "目的、條件或可採行資訊" }[genre]}。`,
+        reason: optionIndex === answerIndex ? `${spec.reason.replace(/。$/u, "")}；本題須同時核對${focus}、${evidence}與${result}的前後關係。` : `文本沒有提供足以支持${zhQuote(option)}的資訊；這個說法也沒有回答題幹所問的${{ narrative: "人物、因果或篇章作用", expository: "說明重點或組織", argumentative: "主張與論據", practical: "目的、條件或可採行資訊" }[genre]}。`,
       })),
       difficulty: ["standard", "foundation", "advanced", "transfer"][questionIndex],
       cognitiveProcess: [["comprehend"], ["locate"], ["infer"], ["analyze-structure"]][questionIndex],
@@ -2373,14 +2414,15 @@ function readingPracticeQuestions(skill) {
     const answerIndex = questionIndex % 4;
     const rawOptions = [spec.correct, ...spec.wrong];
     const options = rotate(rawOptions, answerIndex);
-    const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["這項說法顛倒或遺漏選文的明示關係。", "這項說法加入選文沒有提供的人物動機、範圍或事實。", "這項說法把有限個案過度擴大，或使用與問題無關的線索。"][index]])]);
+    const fullStem = `【選文】${practiceText}\n\n${spec.stem}`;
+    const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, contextualWrongRationale(["這項說法顛倒或遺漏選文的明示關係。", "這項說法加入選文沒有提供的人物動機、範圍或事實。", "這項說法把有限個案過度擴大，或使用與問題無關的線索。"][index], fullStem, option)])]);
     return {
       id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
       subject: "chinese",
       skillIds: [skill.id],
       authorityRefs: [...skill.authorityRefs],
       stimulusId: null,
-      stem: `【選文】${practiceText}\n\n${spec.stem}`,
+      stem: fullStem,
       options,
       answerIndex,
       optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: rationaleByOption.get(option) })),
@@ -3019,7 +3061,7 @@ function makeLiteraryQuestion(skill, serial, questionIndex, spec, representation
   const rawOptions = [spec.correct, ...spec.wrong];
   const options = rotate(rawOptions, answerIndex);
   const wrongReasons = spec.wrongReasons ?? ["此項只憑單一表面特徵或局部文字，沒有完成題目要求的關係判斷。", "此項加入文本沒有提供的資訊，結論強度超過可核對證據。", "此項忽略句法、篇章結構或前後文照應，因而與完整證據不合。"];
-  const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, wrongReasons[index]])]);
+  const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, contextualWrongRationale(wrongReasons[index], spec.stem, option)])]);
   return {
     id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
     subject: "chinese",
@@ -4239,18 +4281,19 @@ for (const [familyIndex, family] of families.entries()) {
   sourceUnits.push({ schemaVersion: SOURCE_SCHEMA, unitId, lectures, questions });
 }
 
-await rm(path.join(SUBJECT_ROOT, "source", "units"), { recursive: true, force: true });
-await rm(path.join(SUBJECT_ROOT, "source", "assets"), { recursive: true, force: true });
-await mkdir(path.join(SUBJECT_ROOT, "source", "units"), { recursive: true });
-await mkdir(path.join(SUBJECT_ROOT, "source", "assets"), { recursive: true });
-for (const unit of sourceUnits) await writeFile(path.join(SUBJECT_ROOT, "source", "units", `${unit.unitId}.json`), `${JSON.stringify(unit, null, 2)}\n`, "utf8");
+await replaceTextDirectory(
+  path.join(SUBJECT_ROOT, "source", "units"),
+  sourceUnits.map((unit) => [`${unit.unitId}.json`, `${JSON.stringify(unit, null, 2)}\n`]),
+);
+await replaceTextDirectory(path.join(SUBJECT_ROOT, "source", "assets"), [
+  ...DATA_ASSET_SPECS.map((asset) => [`${asset.id}.svg`, `${svgForDataAsset(asset)}\n`]),
+  ...CALLIGRAPHY_ASSET_SPECS.map((asset) => [`${asset.id}.svg`, `${svgForCalligraphyAsset(asset)}\n`]),
+]);
 await Promise.all([
-  writeFile(path.join(SUBJECT_ROOT, "source", "stimuli.json"), `${JSON.stringify(stimuli, null, 2)}\n`, "utf8"),
-  writeFile(path.join(SUBJECT_ROOT, "source", "stimulus-questions.json"), `${JSON.stringify(stimulusQuestions, null, 2)}\n`, "utf8"),
-  writeFile(path.join(SUBJECT_ROOT, "source", "writing-tasks.json"), `${JSON.stringify(writingTasks, null, 2)}\n`, "utf8"),
-  writeFile(path.join(SUBJECT_ROOT, "source", "assets.json"), `${JSON.stringify(sourceAssets, null, 2)}\n`, "utf8"),
-  writeFile(path.join(SUBJECT_ROOT, "source", "catalog.json"), `${JSON.stringify(sourceCatalog, null, 2)}\n`, "utf8"),
-  ...DATA_ASSET_SPECS.map((asset) => writeFile(path.join(SUBJECT_ROOT, "source", "assets", `${asset.id}.svg`), `${svgForDataAsset(asset)}\n`, "utf8")),
-  ...CALLIGRAPHY_ASSET_SPECS.map((asset) => writeFile(path.join(SUBJECT_ROOT, "source", "assets", `${asset.id}.svg`), `${svgForCalligraphyAsset(asset)}\n`, "utf8")),
+  writeTextFileIfChanged(path.join(SUBJECT_ROOT, "source", "stimuli.json"), `${JSON.stringify(stimuli, null, 2)}\n`),
+  writeTextFileIfChanged(path.join(SUBJECT_ROOT, "source", "stimulus-questions.json"), `${JSON.stringify(stimulusQuestions, null, 2)}\n`),
+  writeTextFileIfChanged(path.join(SUBJECT_ROOT, "source", "writing-tasks.json"), `${JSON.stringify(writingTasks, null, 2)}\n`),
+  writeTextFileIfChanged(path.join(SUBJECT_ROOT, "source", "assets.json"), `${JSON.stringify(sourceAssets, null, 2)}\n`),
+  writeTextFileIfChanged(path.join(SUBJECT_ROOT, "source", "catalog.json"), `${JSON.stringify(sourceCatalog, null, 2)}\n`),
 ]);
 console.log(`author-chinese-r4: wrote ${sourceUnits.length} units, ${sourceUnits.flatMap((unit) => unit.lectures).length} lectures, ${sourceUnits.flatMap((unit) => unit.questions).length} skill questions, ${stimuli.length} stimuli, ${stimulusQuestions.length} stimulus questions, ${writingTasks.length} writing tasks, ${sourceAssets.length} assets`);

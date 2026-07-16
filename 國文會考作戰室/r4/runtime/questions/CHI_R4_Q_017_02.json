@@ -1,0 +1,79 @@
+{
+  "id": "CHI_R4_Q_017_02",
+  "subject": "chinese",
+  "skillIds": [
+    "CHI_R4_S017"
+  ],
+  "authorityRefs": [
+    "AUTH-CHINESE-LC-AB-4-1",
+    "AUTH-CHINESE-LC-AB-4-4",
+    "AUTH-CHINESE-LP-4-4-2",
+    "AUTH-CHINESE-LP-4-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "已知「語」歸言部、部首外七畫。哪個查找順序正確？",
+  "options": [
+    "吾部→部首外七畫→語",
+    "言部→部首外七畫→語",
+    "口部→總畫七畫→語",
+    "言部→總畫七畫→語"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此選項沒有按照題目給定的部首、音義、詞性或工具書欄位完成核對；針對「已知〔語〕歸言部、部首外七畫。哪個查找順序正確？」，「吾部→部首外七畫→語」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先定位言部，再以不含部首的七畫縮小候選；在「已知〔語〕歸言部、部首外七畫。哪個查找順序正確？」中，「言部→部首外七畫→語」能同時符合文本、關係與限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "此選項把部件、索引入口或另一義項誤當成題中應用的資料；針對「已知〔語〕歸言部、部首外七畫。哪個查找順序正確？」，「口部→總畫七畫→語」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此判斷略過完整條目與原句語境，不能排除同部、同音或多義候選；針對「已知〔語〕歸言部、部首外七畫。哪個查找順序正確？」，「言部→總畫七畫→語」沒有符合題目要求的完整條件。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "identify",
+    "explain"
+  ],
+  "representationType": "dictionary-entry",
+  "misconceptionTargets": [
+    "吾部→部首外七畫→語"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Chinese content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-CHINESE-LC-AB-4-1",
+      "AUTH-CHINESE-LC-AB-4-4",
+      "AUTH-CHINESE-LP-4-4-2",
+      "AUTH-CHINESE-LP-4-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "chinese-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先定位言部，再以不含部首的七畫縮小候選。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "chinese-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "三個干擾選項各自誤用索引入口、欄位或語境義；依題中資料只能得到所標正解。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "CHI_R4_Q_261_03",
+  "subject": "chinese",
+  "skillIds": [
+    "CHI_R4_S261"
+  ],
+  "authorityRefs": [
+    "AUTH-CHINESE-LP-1-4-4",
+    "AUTH-CHINESE-LP-2-4-4",
+    "AUTH-CHINESE-LP-4-4-3",
+    "AUTH-CHINESE-LP-5-4-4",
+    "AUTH-CHINESE-LP-5-4-6",
+    "AUTH-CHINESE-LP-6-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "查詢目的：「了解凝結現象的基本概念與生活例子」最適合先使用哪種工具？",
+  "options": [
+    "只看無來源社群留言",
+    "只按搜尋廣告排序",
+    "有作者與修訂日期的科學百科條目",
+    "詢問與問題無關的陌生人"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此項只憑單一表面特徵或局部文字，沒有完成題目要求的關係判斷；針對「查詢目的：〔了解凝結現象的基本概念與生活例子〕最適合先使用哪種工具？」，「只看無來源社群留言」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項加入文本沒有提供的資訊，結論強度超過可核對證據；針對「查詢目的：〔了解凝結現象的基本概念與生活例子〕最適合先使用哪種工具？」，「只按搜尋廣告排序」沒有符合題目要求的完整條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "「有作者與修訂日期的科學百科條目」的資料欄位能直接回答查詢目的；在「查詢目的：〔了解凝結現象的基本概念與生活例子〕最適合先使用哪種工具？」中，「有作者與修訂日期的科學百科條目」能同時符合文本、關係與限制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此項忽略句法、篇章結構或前後文照應，因而與完整證據不合；針對「查詢目的：〔了解凝結現象的基本概念與生活例子〕最適合先使用哪種工具？」，「詢問與問題無關的陌生人」沒有符合題目要求的完整條件。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "comprehend",
+    "identify"
+  ],
+  "representationType": "reference-tool-choice",
+  "misconceptionTargets": [
+    "只看無來源社群留言"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Chinese content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-CHINESE-LP-1-4-4",
+      "AUTH-CHINESE-LP-2-4-4",
+      "AUTH-CHINESE-LP-4-4-3",
+      "AUTH-CHINESE-LP-5-4-4",
+      "AUTH-CHINESE-LP-5-4-6",
+      "AUTH-CHINESE-LP-6-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "chinese-reference-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「有作者與修訂日期的科學百科條目」的資料欄位能直接回答查詢目的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "chinese-reference-alternative-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三個干擾項分別只憑表面特徵、加入未提供資訊，或忽略句法與前後文照應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

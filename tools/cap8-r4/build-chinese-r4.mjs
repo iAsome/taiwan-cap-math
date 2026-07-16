@@ -9,6 +9,8 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..");
 const GRAPH_PATH = path.join(HERE, "authority", "frozen-authority-graph.json");
 const SUBJECT_FOLDER = "國文會考作戰室";
+const CONTENT_VERSION = "4.0.0";
+const UI_FILES = ["index.html", "app.js", "r4-client.js", "styles.css", "service-worker.js"];
 const UNIT_PATTERN = /^CHI_R4_U\d{2}$/u;
 const QUESTION_PATTERN = /^CHI_R4_Q_\d{3}_\d{2}$/u;
 const STIMULUS_QUESTION_PATTERN = /^CHI_R4_SQ_\d{3}_\d$/u;
@@ -139,10 +141,27 @@ async function validateUnitSource(source, skills, authorityIds, assetIds) {
   }
 }
 
-async function replaceDirectory(directory, files) {
-  await rm(directory, { recursive: true, force: true });
+async function replaceDirectory(directory, files, serialize = json) {
   await mkdir(directory, { recursive: true });
-  for (const [name, value] of files) await writeFile(path.join(directory, name), json(value), "utf8");
+  const expectedNames = new Set(files.map(([name]) => name));
+  for (const name of await readdir(directory)) {
+    if (!expectedNames.has(name)) await rm(path.join(directory, name), { recursive: true, force: true });
+  }
+  for (const [name, value] of files) await writeFileIfChanged(path.join(directory, name), await serialize(value));
+}
+
+async function writeFileIfChanged(file, value) {
+  const bytes = Buffer.isBuffer(value) ? value : Buffer.from(value, "utf8");
+  try {
+    if ((await readFile(file)).equals(bytes)) return;
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+  await writeFile(file, bytes);
+}
+
+async function artifactDescriptor(repoRoot, id, type, repositoryPath) {
+  return { id, type, path: repositoryPath, sha256: sha256(await readFile(path.join(repoRoot, ...repositoryPath.split("/")))) };
 }
 
 export async function loadChineseR4Source({ repoRoot = REPO_ROOT } = {}) {
@@ -234,12 +253,12 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
 export async function buildChineseR4({ repoRoot = REPO_ROOT } = {}) {
   const source = await loadChineseR4Source({ repoRoot });
   const counts = await validateChineseR4Source(source, { repoRoot });
-  const graph = await readJson(path.join(repoRoot, "tools", "cap8-r4", "authority", "frozen-authority-graph.json"));
+  const graphBytes = await readFile(path.join(repoRoot, "tools", "cap8-r4", "authority", "frozen-authority-graph.json"));
+  const graph = JSON.parse(graphBytes);
   const subjectRoot = path.join(repoRoot, SUBJECT_FOLDER, "r4");
   const runtimeRoot = path.join(subjectRoot, "runtime");
-  await replaceDirectory(path.join(runtimeRoot, "units"), source.units.map(({ name, value }) => [name, value]));
-  await replaceDirectory(path.join(runtimeRoot, "skills"), graph.skills.filter(({ subject }) => subject === "chinese").map((skill) => [`${skill.id}.json`, skill]));
-  await replaceDirectory(path.join(runtimeRoot, "authority"), graph.nodes.filter(({ reviewedSubjects }) => reviewedSubjects.includes("chinese")).map((node) => [`${node.id}.json`, {
+  const skills = graph.skills.filter(({ subject }) => subject === "chinese");
+  const authority = graph.nodes.filter(({ reviewedSubjects }) => reviewedSubjects.includes("chinese")).map((node) => ({
     id: node.id,
     subject: "chinese",
     kind: node.kind,
@@ -247,16 +266,27 @@ export async function buildChineseR4({ repoRoot = REPO_ROOT } = {}) {
     text: node.text,
     sourceIds: [node.sourceId],
     applicable: true,
-  }]));
-  await rm(path.join(runtimeRoot, "assets"), { recursive: true, force: true });
-  await mkdir(path.join(runtimeRoot, "assets"), { recursive: true });
-  await Promise.all(source.assets.map(async (asset) => writeFile(path.join(runtimeRoot, asset.file), await readFile(path.join(subjectRoot, "source", asset.file)))));
+  }));
+  const lectures = source.units.flatMap(({ value }) => value.lectures);
+  const questions = [...source.units.flatMap(({ value }) => value.questions), ...source.stimulusQuestions];
+  await replaceDirectory(path.join(runtimeRoot, "units"), source.units.map(({ name, value }) => [name, value]));
+  await replaceDirectory(path.join(runtimeRoot, "skills"), skills.map((value) => [`${value.id}.json`, value]));
+  await replaceDirectory(path.join(runtimeRoot, "authority"), authority.map((value) => [`${value.id}.json`, value]));
+  await replaceDirectory(path.join(runtimeRoot, "lectures"), lectures.map((value) => [`${value.id}.json`, value]));
+  await replaceDirectory(path.join(runtimeRoot, "questions"), questions.map((value) => [`${value.id}.json`, value]));
+  await replaceDirectory(path.join(runtimeRoot, "stimuli"), source.stimuli.map((value) => [`${value.id}.json`, value]));
+  await replaceDirectory(path.join(runtimeRoot, "writing-tasks"), source.writingTasks.map((value) => [`${value.id}.json`, value]));
+  await replaceDirectory(
+    path.join(runtimeRoot, "assets"),
+    await Promise.all(source.assets.map(async (asset) => [path.basename(asset.file), await readFile(path.join(subjectRoot, "source", asset.file))])),
+    (value) => value,
+  );
   await Promise.all([
-    writeFile(path.join(runtimeRoot, "stimuli.json"), json(source.stimuli), "utf8"),
-    writeFile(path.join(runtimeRoot, "stimulus-questions.json"), json(source.stimulusQuestions), "utf8"),
-    writeFile(path.join(runtimeRoot, "writing-tasks.json"), json(source.writingTasks), "utf8"),
-    writeFile(path.join(runtimeRoot, "assets.json"), json(source.assets), "utf8"),
-    writeFile(path.join(runtimeRoot, "catalog.json"), json(source.catalog), "utf8"),
+    writeFileIfChanged(path.join(runtimeRoot, "stimuli.json"), json(source.stimuli)),
+    writeFileIfChanged(path.join(runtimeRoot, "stimulus-questions.json"), json(source.stimulusQuestions)),
+    writeFileIfChanged(path.join(runtimeRoot, "writing-tasks.json"), json(source.writingTasks)),
+    writeFileIfChanged(path.join(runtimeRoot, "assets.json"), json(source.assets)),
+    writeFileIfChanged(path.join(runtimeRoot, "catalog.json"), json(source.catalog)),
   ]);
   const sourceHashes = Object.fromEntries(await Promise.all([
     ...source.units.map(async ({ name }) => [name, sha256(await readFile(path.join(subjectRoot, "source", "units", name)))]),
@@ -272,8 +302,41 @@ export async function buildChineseR4({ repoRoot = REPO_ROOT } = {}) {
     counts,
     sourceHashes,
   };
-  await writeFile(path.join(runtimeRoot, "manifest.json"), json(manifest), "utf8");
-  return manifest;
+  await writeFileIfChanged(path.join(runtimeRoot, "manifest.json"), json(manifest));
+
+  const atomic = [
+    ...await Promise.all(authority.map(({ id }) => artifactDescriptor(repoRoot, id, "authority", `${SUBJECT_FOLDER}/r4/runtime/authority/${id}.json`))),
+    ...await Promise.all(skills.map(({ id }) => artifactDescriptor(repoRoot, id, "skill", `${SUBJECT_FOLDER}/r4/runtime/skills/${id}.json`))),
+    ...await Promise.all(lectures.map(({ id }) => artifactDescriptor(repoRoot, id, "lecture", `${SUBJECT_FOLDER}/r4/runtime/lectures/${id}.json`))),
+    ...await Promise.all(questions.map(({ id }) => artifactDescriptor(repoRoot, id, "question", `${SUBJECT_FOLDER}/r4/runtime/questions/${id}.json`))),
+    ...await Promise.all(source.stimuli.map(({ id }) => artifactDescriptor(repoRoot, id, "stimulus", `${SUBJECT_FOLDER}/r4/runtime/stimuli/${id}.json`))),
+    // ponytail: schema v4 has no writing-task type; use its audited ui carrier until the shared schema adds one.
+    ...await Promise.all(source.writingTasks.map(({ id }) => artifactDescriptor(repoRoot, id, "ui", `${SUBJECT_FOLDER}/r4/runtime/writing-tasks/${id}.json`))),
+    ...await Promise.all(source.assets.map(({ id }) => artifactDescriptor(repoRoot, id, "asset", `${SUBJECT_FOLDER}/r4/runtime/assets/${id}.svg`))),
+    ...await Promise.all(UI_FILES.map((name) => artifactDescriptor(repoRoot, `CHI_R4_UI_${name.replace(/[^A-Za-z0-9]+/gu, "_").toUpperCase()}`, "ui", `${SUBJECT_FOLDER}/${name}`))),
+  ];
+  assert.equal(new Set(atomic.map(({ id }) => id)).size, atomic.length, "duplicate content-manifest artifact ID");
+  assert.equal(new Set(atomic.map(({ path: value }) => value)).size, atomic.length, "duplicate content-manifest artifact path");
+  const contentManifest = {
+    schemaVersion: "cap8-content-manifest-v4",
+    subjectId: "chinese",
+    contentVersion: CONTENT_VERSION,
+    authorityGraphSha256: sha256(graphBytes),
+    artifacts: atomic,
+    counts: {
+      authorityNodes: counts.authorityNodes,
+      skills: counts.skills,
+      lectures: counts.lectures,
+      skillQuestions: counts.skillQuestions,
+      stimulusQuestions: counts.stimulusQuestions,
+      stimuli: counts.stimuli,
+      assets: counts.assets,
+      writingTasks: counts.writingTasks,
+    },
+    buildSha256: sha256(Buffer.from(JSON.stringify(atomic), "utf8")),
+  };
+  await writeFileIfChanged(path.join(subjectRoot, "content-manifest-v4.json"), json(contentManifest));
+  return contentManifest;
 }
 
 async function main() {

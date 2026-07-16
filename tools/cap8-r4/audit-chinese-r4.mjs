@@ -4,19 +4,18 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateAuthoringRecord } from "./authoring-validator.mjs";
 import { loadChineseR4Source, validateChineseR4Source } from "./build-chinese-r4.mjs";
-import { sha256 } from "./r4-core.mjs";
+import { auditRecordSha256 as hashAuditRecord, sha256 } from "./r4-core.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..");
 const SUBJECT = "國文會考作戰室";
 const SUBJECT_ROOT = path.join(ROOT, SUBJECT, "r4");
 const EVIDENCE_ROOT = path.join(HERE, "evidence", "chinese");
-const REVIEWED_AT = "2026-07-16T00:00:00+08:00";
+const REVIEWED_AT = "2026-07-17T00:00:00+08:00";
 const REVIEWER = "Codex R4 Chinese final semantic reviewer";
 const UI_FILES = ["index.html", "app.js", "r4-client.js", "styles.css", "service-worker.js"];
 
 const json = (value) => `${JSON.stringify(value, null, 2)}\n`;
-const canonicalBytes = (value) => Buffer.from(JSON.stringify(value), "utf8");
 const csvCell = (value) => `"${String(value).replaceAll('"', '""')}"`;
 const csv = (rows) => `${rows.map((row) => row.map(csvCell).join(",")).join("\n")}\n`;
 
@@ -53,39 +52,48 @@ function htmlText(value) {
   return value.replace(/<script\b[\s\S]*?<\/script>/giu, " ").replace(/<style\b[\s\S]*?<\/style>/giu, " ").replace(/<[^>]+>/gu, " ").replaceAll("&times;", "×").replaceAll("&nbsp;", " ").replaceAll("&amp;", "＆").replace(/\s+/gu, " ").trim();
 }
 
-async function uiArtifact() {
-  const files = await Promise.all(UI_FILES.map(async (name) => [name, await readFile(path.join(ROOT, SUBJECT, name), "utf8")]));
-  const html = files.find(([name]) => name === "index.html")[1];
+async function uiArtifacts() {
+  const files = await Promise.all(UI_FILES.map(async (name) => [name, await readFile(path.join(ROOT, SUBJECT, name))]));
+  const text = new Map(files.map(([name, bytes]) => [name, bytes.toString("utf8")]));
+  const html = text.get("index.html");
   const start = html.indexOf('<section class="view" id="view-r4"');
   const end = html.indexOf('<section class="view"', start + 1);
   assert(start >= 0 && end > start, "R4 UI section not found");
   const dynamicLabels = ["圖表完整文字與資料表", "來源與授權", "敘事反思", "完整寫作", "作答要求", "評分焦點", "這個單元沒有符合的技能", "完整示例", "迷思澄清", "診斷與遷移", "必要圖像", "已掌握", "標記為已掌握", "做 12 題技能練習", "已取消掌握標記", "已記錄為掌握技能"];
-  const app = files.find(([name]) => name === "app.js")[1];
+  const app = text.get("app.js");
   for (const label of dynamicLabels) assert(app.includes(label), `missing R4 UI label: ${label}`);
-  return {
-    id: "CHI_R4_UI_MAIN",
+  return files.map(([name, bytes]) => ({
+    id: `CHI_R4_UI_${name.replace(/[^A-Za-z0-9]+/gu, "_").toUpperCase()}`,
     type: "ui",
-    path: `${SUBJECT}/index.html`,
-    value: Object.fromEntries(files),
-    visible: `${htmlText(html.slice(start, end))}\n${dynamicLabels.join("\n")}`,
-  };
+    semanticType: "ui",
+    path: `${SUBJECT}/${name}`,
+    bytes,
+    value: text.get(name),
+    visible: name === "index.html" ? htmlText(html.slice(start, end)) : name === "app.js" ? dynamicLabels.join("\n") : "",
+  }));
 }
 
 async function artifactsFor(source) {
   const artifacts = [];
-  for (const { name, value } of source.units) {
-    const artifactPath = `${SUBJECT}/r4/source/units/${name}`;
-    for (const lecture of value.lectures) artifacts.push({ id: lecture.id, type: "lecture", path: artifactPath, value: lecture, visible: visibleLecture(lecture) });
-    for (const question of value.questions) artifacts.push({ id: question.id, type: "question", path: artifactPath, value: question, visible: visibleQuestion(question) });
+  const addJson = async (id, type, semanticType, relative, value, visible) => {
+    const bytes = await readFile(path.join(ROOT, ...relative.split("/")));
+    assert.deepEqual(JSON.parse(bytes.toString("utf8")), value, `${id}: runtime atomic artifact drift`);
+    artifacts.push({ id, type, semanticType, path: relative, bytes, value, visible });
+  };
+  for (const { value } of source.units) {
+    for (const lecture of value.lectures) await addJson(lecture.id, "lecture", "lecture", `${SUBJECT}/r4/runtime/lectures/${lecture.id}.json`, lecture, visibleLecture(lecture));
+    for (const question of value.questions) await addJson(question.id, "question", "question", `${SUBJECT}/r4/runtime/questions/${question.id}.json`, question, visibleQuestion(question));
   }
-  for (const question of source.stimulusQuestions) artifacts.push({ id: question.id, type: "question", path: `${SUBJECT}/r4/source/stimulus-questions.json`, value: question, visible: visibleQuestion(question) });
-  for (const stimulus of source.stimuli) artifacts.push({ id: stimulus.id, type: "stimulus", path: `${SUBJECT}/r4/source/stimuli.json`, value: stimulus, visible: stimulus.content });
-  for (const task of source.writingTasks) artifacts.push({ id: task.id, type: "writing-task", path: `${SUBJECT}/r4/source/writing-tasks.json`, value: task, visible: visibleWriting(task) });
+  for (const question of source.stimulusQuestions) await addJson(question.id, "question", "question", `${SUBJECT}/r4/runtime/questions/${question.id}.json`, question, visibleQuestion(question));
+  for (const stimulus of source.stimuli) await addJson(stimulus.id, "stimulus", "stimulus", `${SUBJECT}/r4/runtime/stimuli/${stimulus.id}.json`, stimulus, stimulus.content);
+  // ponytail: schema v4 carries writing tasks as ui; semanticType preserves the stricter Chinese audit rules.
+  for (const task of source.writingTasks) await addJson(task.id, "ui", "writing-task", `${SUBJECT}/r4/runtime/writing-tasks/${task.id}.json`, task, visibleWriting(task));
   for (const asset of source.assets) {
-    const svg = await readFile(path.join(SUBJECT_ROOT, "source", asset.file), "utf8");
-    artifacts.push({ id: asset.id, type: "asset", path: `${SUBJECT}/r4/source/${asset.file}`, value: { metadata: asset, svg }, visible: visibleAsset(asset) });
+    const bytes = await readFile(path.join(SUBJECT_ROOT, "runtime", asset.file));
+    assert((await readFile(path.join(SUBJECT_ROOT, "source", asset.file))).equals(bytes), `${asset.id}: runtime SVG drift`);
+    artifacts.push({ id: asset.id, type: "asset", semanticType: "asset", path: `${SUBJECT}/r4/runtime/${asset.file}`, bytes, value: asset, visible: visibleAsset(asset) });
   }
-  artifacts.push(await uiArtifact());
+  artifacts.push(...await uiArtifacts());
   return artifacts.sort((a, b) => a.id.localeCompare(b.id, "en"));
 }
 
@@ -102,6 +110,11 @@ function validateQuestions(questions) {
     assert.equal(new Set(question.independentReviews.map(({ reviewerRole }) => reviewerRole)).size, 2, `${question.id}: review roles are not independent`);
     assert(question.independentReviews.every(({ derivedAnswerIndex, evidence, status }) => derivedAnswerIndex === question.answerIndex && evidence.trim().length >= 12 && status === "pass"), `${question.id}: independent solution evidence failed`);
   }
+  assert.equal(new Set(questions.map(({ stem }) => stem.trim())).size, questions.length, "duplicate question stems");
+  assert.equal(new Set(questions.flatMap(({ optionRationales }) => optionRationales.map(({ reason }) => reason.trim()))).size, questions.length * 4, "repeated option-rationale template");
+  const shared = questions.filter(({ stimulusId }) => stimulusId);
+  const skeleton = (value) => value.normalize("NFKC").replace(/「[^」]*」|『[^』]*』/gu, "「#」").replace(/[0-9０-９一二三四五六七八九十百千]+/gu, "#").replace(/\s+/gu, "");
+  assert.equal(new Set(shared.map(({ stem }) => skeleton(stem))).size, shared.length, "repeated shared-text question skeleton");
 }
 
 function validateLectures(lectures) {
@@ -136,14 +149,30 @@ function validateWriting(tasks) {
   assert.equal(new Set(tasks.map(({ title }) => title)).size, tasks.length, "writing titles repeat");
   assert.equal(new Set(tasks.map(({ prompt }) => prompt)).size, tasks.length, "writing prompts repeat");
   const compatible = { "narrative-reflection": /敘寫|經驗|反思/u, "explanation-analysis": /說明|分析/u, comparison: /比較/u, "argument-with-limits": /主張|立場|論證/u, "material-integration": /材料|整合/u };
-  for (const task of tasks) assert(compatible[task.mode].test(`${task.title}${task.prompt}`), `${task.id}: writing mode and prompt are incompatible`);
+  for (const task of tasks) {
+    assert(compatible[task.mode].test(`${task.title}${task.prompt}`), `${task.id}: writing mode and prompt are incompatible`);
+    assert.deepEqual(task.scoringFocus, ["立意取材", "結構組織", "遣詞造句", "錯別字、格式與標點符號"], `${task.id}: official holistic scoring dimensions drift`);
+    assert(!/至少\s*\d+\s*字|固定\s*[三四五六]\s*段|成語.*(?:至少|越多越好)|名言.*(?:至少|越多越好)/u.test(task.prompt), `${task.id}: invented writing-score rule`);
+  }
+}
+
+function validateFinalAssets(artifacts) {
+  const assets = artifacts.filter(({ type }) => type === "asset");
+  assert.equal(new Set(assets.map(({ bytes }) => sha256(bytes))).size, assets.length, "duplicate final SVG artwork");
+  for (const artifact of assets) {
+    const svg = artifact.bytes.toString("utf8");
+    assert(/<svg\b[^>]*role="img"[^>]*aria-labelledby="title desc"/u.test(svg), `${artifact.id}: final SVG semantics missing`);
+    assert(/<title id="title">/u.test(svg) && /<desc id="desc">/u.test(svg), `${artifact.id}: final SVG text alternative missing`);
+    assert(!/<(?:script|foreignObject)\b|\b(?:href|xlink:href)="https?:/iu.test(svg), `${artifact.id}: final SVG contains active or external content`);
+    assert.equal(artifact.value.print.blackAndWhiteReadable && artifact.value.print.colorIndependent && artifact.value.print.directLabels, true, `${artifact.id}: print or color-independent gate failed`);
+  }
 }
 
 function validateStudentText(artifacts) {
   const forbidden = /\uFFFD|TODO|TBD|placeholder|lorem ipsum|「「|」」|[。！？]{2}|先先|再再|並並|(?<!目)的的|於於|讓讓|把把|由由|與與|[，；：][。！？]|時，(?:因此|實際上|當然)|所有(?:一張|一份|一個)/iu;
   for (const artifact of artifacts) {
     assert(!forbidden.test(artifact.visible), `${artifact.id}: unfinished or unnatural student text`);
-    if (["lecture", "question", "stimulus", "writing-task"].includes(artifact.type)) assert(!/[A-Za-z]{2,}/u.test(artifact.visible), `${artifact.id}: student-visible English template label`);
+    if (["lecture", "question", "stimulus", "writing-task"].includes(artifact.semanticType)) assert(!/[A-Za-z]{2,}/u.test(artifact.visible), `${artifact.id}: student-visible English template label`);
     assert.equal((artifact.visible.match(/「/gu) ?? []).length, (artifact.visible.match(/」/gu) ?? []).length, `${artifact.id}: unbalanced quotation marks`);
   }
 }
@@ -168,7 +197,7 @@ async function validateOriginality(artifacts) {
   const normalizedReference = normalize(reference);
   let compared = 0;
   for (const artifact of artifacts) {
-    if (!["lecture", "question", "stimulus", "writing-task"].includes(artifact.type) || artifact.value.provenance.status === "public-domain") continue;
+    if (!["lecture", "question", "stimulus", "writing-task"].includes(artifact.semanticType) || artifact.value.provenance.status === "public-domain") continue;
     compared++;
     const value = normalize(artifact.visible);
     for (let index = 0; index + 40 <= value.length; index += 10) assert(!normalizedReference.includes(value.slice(index, index + 40)), `${artifact.id}: 40-Han-character overlap with legacy or official review text`);
@@ -187,10 +216,11 @@ async function semanticAudit() {
   validateWriting(source.writingTasks);
   const artifacts = await artifactsFor(source);
   validateStudentText(artifacts);
+  validateFinalAssets(artifacts);
   const authorityNodes = await validateAuthority(source);
   const originalityCompared = await validateOriginality(artifacts);
   assert.equal(new Set(artifacts.map(({ id }) => id)).size, artifacts.length, "duplicate final artifact ID");
-  return { source, counts, artifacts, checks: { lectures: lectures.length, questions: questions.length, stimuli: source.stimuli.length, writingTasks: source.writingTasks.length, assets: source.assets.length, ui: 1, authorityNodes, originalityCompared } };
+  return { source, counts, artifacts, checks: { lectures: lectures.length, questions: questions.length, stimuli: source.stimuli.length, writingTasks: source.writingTasks.length, assets: source.assets.length, ui: UI_FILES.length, authorityNodes, originalityCompared } };
 }
 
 async function evidenceFor(result) {
@@ -199,9 +229,9 @@ async function evidenceFor(result) {
   const ranges = [];
   let offset = 0;
   for (const [index, artifact] of result.artifacts.entries()) {
-    const artifactSha256 = sha256(canonicalBytes(artifact.value));
+    const artifactSha256 = sha256(artifact.bytes);
     const body = { artifactId: artifact.id, artifactType: artifact.type, artifactSha256, status: "accepted", reviewerRole: REVIEWER, reviewedAt: REVIEWED_AT, fullRead: true, renderedContextInspected: true, independentSolveOrEvidenceCheck: true, allFindingsResolved: true, findings: [] };
-    const audit = { ...body, auditRecordSha256: sha256(canonicalBytes(body)) };
+    const audit = { ...body, auditRecordSha256: hashAuditRecord(body) };
     await validateAuthoringRecord("finalAudit", audit);
     audits.push(audit);
     const block = Buffer.from(`===== ${artifact.id} | ${artifact.type} =====\n${artifact.visible.trim()}\n`, "utf8");
@@ -222,7 +252,9 @@ async function evidenceFor(result) {
     "student-visible-corpus.txt": corpus,
     "student-visible-corpus-audit-ledger.csv": Buffer.from(csv([rangeHeader, ...rangeRows]), "utf8"),
     "final-semantic-audit-ledger.csv": Buffer.from(csv([semanticHeader, ...semanticRows]), "utf8"),
+    "final-audit-records.json": Buffer.from(json(audits), "utf8"),
     "final-exhaustive-audit-records.jsonl": Buffer.from(`${audits.map((value) => JSON.stringify(value)).join("\n")}\n`, "utf8"),
+    "student-visible-corpus-ranges.json": Buffer.from(json(ranges.map(({ auditRecordId: _auditRecordId, ...range }) => range)), "utf8"),
     "final-gate-report.json": Buffer.from(json(report), "utf8"),
   };
 }
