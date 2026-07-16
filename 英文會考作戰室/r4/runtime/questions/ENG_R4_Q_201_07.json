@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_201_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S201"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence keeps 'listen to' together before its object?",
+  "options": [
+    "Listen the message to again.",
+    "Listen it to again.",
+    "Listen to the message again.",
+    "Listen the message again to."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "message 不能插進 listen to。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "代名詞也不能拆開這個搭配。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "listen to 保持相連，受詞接在 to 後。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "to 不能移到句尾。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s201-preserve-listen-to-before-message",
+    "exclude-again-from-object-placement-rule"
+  ],
+  "representationType": "inseparable-phrasal-full-sentence",
+  "misconceptionTargets": [
+    "move-to-after-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "again 是重複修飾語，不影響片語邊界。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把 the message 放在完整片語後。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

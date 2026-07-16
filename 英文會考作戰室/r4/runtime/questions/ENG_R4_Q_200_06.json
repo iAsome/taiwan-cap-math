@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_200_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S200"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Please turn down the radio; the baby is sleeping. What should change?",
+  "options": [
+    "The station",
+    "The sound",
+    "The song",
+    "The power"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "turn down 不要求換電台。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "睡眠情境下表示把聲音調小。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹未要求換歌。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "若關閉電源應使用 turn off。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s200-map-turn-down-radio-to-volume-reduction",
+    "use-sleeping-context-to-select-phrasal-sense"
+  ],
+  "representationType": "phrasal-verb-device-control",
+  "misconceptionTargets": [
+    "interpret-down-as-physical-direction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "baby is sleeping 是降低聲音的原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合 radio 作受詞時的常見片語義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_202_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Use a pronoun for the coin in 'She picked up the coin.'",
+  "options": [
+    "She it picked up.",
+    "She picked up it.",
+    "She picked it up.",
+    "She picked the it up."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "代名詞不能放在主詞和動詞間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "可分片語不把 it 留在 up 後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "picked it up 是正確代名詞位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the 不能和 it 並用成名詞片語。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s202-transform-picked-up-coin-to-picked-it-up",
+    "retain-past-tense-during-pronoun-substitution"
+  ],
+  "representationType": "separable-object-rewrite",
+  "misconceptionTargets": [
+    "retain-determiner-before-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "coin 已被提到，所以可改成單數 it。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保留時態並只更換受詞形式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

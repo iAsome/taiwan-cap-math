@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_200_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S200"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Please look after the baby while I cook. What should you do?",
+  "options": [
+    "Take care of the baby.",
+    "Search for the baby.",
+    "Look only at the baby.",
+    "Wake the baby up."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "look after 在此表示照顧嬰兒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "search for 是尋找，題幹沒有走失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只觀看不足以表達照料責任。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有要求叫醒。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s200-paraphrase-look-after-baby-as-care",
+    "bound-phrasal-meaning-by-temporary-care-context"
+  ],
+  "representationType": "phrasal-verb-paraphrase-care",
+  "misconceptionTargets": [
+    "read-look-after-literally"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "while I cook 說明說話者暫時交付照顧工作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留責任內容，沒有加入未說明動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

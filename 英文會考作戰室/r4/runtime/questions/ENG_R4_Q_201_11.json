@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_201_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S201"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which pair shows both possible positions for the same noun object?",
+  "options": [
+    "Look the dog after. / Look after the dog.",
+    "Wait the bus for. / Wait for the bus.",
+    "Turn the fan off. / Turn off the fan.",
+    "Listen the song to. / Listen to the song."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "look after 不可分，第一句錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "wait for 不可分，第一句錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "turn off 可分，兩個名詞位置都成立。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "listen to 不可分，第一句錯誤。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u29-s201-compare-paired-orders-to-find-separable-turn-off",
+    "require-both-members-of-option-to-be-valid"
+  ],
+  "representationType": "separability-pair-comparison",
+  "misconceptionTargets": [
+    "assume-all-two-word-verbs-separable"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "斜線兩側都必須是可接受句子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項展示同一名詞受詞的兩種位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

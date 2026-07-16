@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_202_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Why is 'Turn off it' not used here?",
+  "options": [
+    "The verb must be longer.",
+    "The sentence needs two objects.",
+    "The word 'off' must come first.",
+    "The pronoun belongs between 'turn' and 'off'."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "動詞長度不是問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "被關掉的事物只有一個受詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "off 不放在 turn 前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "可分片語的代名詞受詞應置中。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u29-s202-diagnose-turn-off-it-pronoun-position",
+    "exclude-tense-and-valency-as-error-causes"
+  ],
+  "representationType": "separable-object-error-diagnosis",
+  "misconceptionTargets": [
+    "repair-with-off-turn-it"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "錯誤來自受詞位置，不是動詞長度或受詞數量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項精確說明 turn it off 的結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

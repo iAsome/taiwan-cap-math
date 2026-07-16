@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_202_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Put the clean cups away before lunch. Which sentence uses a pronoun?",
+  "options": [
+    "Put them away before lunch.",
+    "Put away before lunch them.",
+    "Put they away before lunch.",
+    "Put their away before lunch."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "them 是複數受格，且放在 put 與 away 間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "時間片語和代名詞位置都被打亂。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "they 是主格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "their 是所有格，需接名詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u29-s202-replace-clean-cups-with-them-in-put-away",
+    "choose-object-case-while-preserving-adjunct"
+  ],
+  "representationType": "separable-object-case-and-order",
+  "misconceptionTargets": [
+    "use-subject-pronoun-as-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "clean cups 是複數受詞，不是句子主詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項保留 before lunch 的時間功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,133 @@
+{
+  "id": "ENG_R4_L_S203",
+  "subject": "english",
+  "unitId": "ENG_R4_U29",
+  "skillId": "ENG_R4_S203",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S202"
+  ],
+  "objectives": [
+    "能辨認逐字翻譯形成的不自然英文搭配。",
+    "能以常見英文語塊重新表達相同生活意思，而不擅自增加資訊。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S203_SEC_01",
+      "title": "相同概念在兩種語言中切分方式不同",
+      "content": "中文說法不能逐字替換成英文，例如『吃藥』常用 take medicine，『下大雨』用 rain heavily 或 heavy rain。直譯可能每個字都認識，整組卻不是英語慣用表達。"
+    },
+    {
+      "id": "ENG_R4_L_S203_SEC_02",
+      "title": "動詞選擇取決於英文搭配",
+      "content": "英文說 have breakfast、make friends、ask a question、tell a story。這些動詞不是各自唯一的中文翻譯，而是和後面的名詞一起完成自然意思。"
+    },
+    {
+      "id": "ENG_R4_L_S203_SEC_03",
+      "title": "形式和情境必須同時成立",
+      "content": "play the piano 需要冠詞 the，ride a bike 使用 ride 而不是 drive。選項即使傳達大致概念，只要搭配、冠詞或受詞關係不標準，就不是最佳答案。"
+    },
+    {
+      "id": "ENG_R4_L_S203_SEC_04",
+      "title": "用可靠例句修正直譯",
+      "content": "遇到不確定搭配時，可查官方字表例句、學習字典或已審核語料中的完整片語。記錄時保留前後一小段情境，才能知道同一名詞在不同意思下是否換動詞。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S203_EX_01",
+      "prompt": "The doctor told me to ___ this medicine after dinner. (eat / take)",
+      "steps": [
+        "受詞是醫師指示使用的 medicine。",
+        "英文慣用 take medicine。",
+        "after dinner 只說明服用時間。"
+      ],
+      "answer": "take",
+      "why": "醫師指示的是服藥，英文使用 take medicine。eat 通常描述咀嚼食物，不能依中文『吃藥』逐字選入。"
+    },
+    {
+      "id": "ENG_R4_L_S203_EX_02",
+      "prompt": "It rained ___ all night. (heavily / largely)",
+      "steps": [
+        "rained 是動作。",
+        "空格要描述雨勢強。",
+        "方式副詞 heavily 與 rain 自然搭配。"
+      ],
+      "answer": "heavily",
+      "why": "句子描述整夜雨勢很大，rained heavily 是自然說法。largely 多表示主要地或大部分，不用來直接描述下雨強度。"
+    },
+    {
+      "id": "ENG_R4_L_S203_EX_03",
+      "prompt": "I ___ breakfast at seven every day. (have / make)",
+      "steps": [
+        "breakfast 指日常用餐。",
+        "一般吃早餐用 have breakfast。",
+        "every day 要求現在式。"
+      ],
+      "answer": "have",
+      "why": "句子說每天七點吃早餐，標準搭配是 have breakfast。make breakfast 會改成準備早餐，不一定表示自己吃了。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要每個中文字都有對應英文，照順序翻譯就會自然。",
+      "whyWrong": "兩種語言的慣用動詞和語塊切分不同。",
+      "correction": "以完整英文搭配表達概念，不逐字拼接。"
+    },
+    {
+      "belief": "make breakfast 和 have breakfast 完全相同。",
+      "whyWrong": "前者偏向準備，後者表示吃這一餐。",
+      "correction": "利用人物行動與後續結果判斷要表達哪個事件。"
+    },
+    {
+      "belief": "中文說大雨，英文就一定用 big rain。",
+      "whyWrong": "英文通常使用 heavy rain 或 rain heavily。",
+      "correction": "把天氣強度和常見形容詞、副詞一起記憶。"
+    },
+    {
+      "belief": "看到樂器名稱就能直接接在 play 後，不需要冠詞。",
+      "whyWrong": "一般表示演奏樂器時常用 play the piano 等形式。",
+      "correction": "把冠詞視為搭配的一部分，而不是可省略裝飾。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "make friends 表示製作朋友嗎？",
+      "answer": "不是",
+      "reason": "整組表示和別人成為朋友。"
+    },
+    {
+      "prompt": "tell a story 和 say a story 哪個是常見搭配？",
+      "answer": "tell a story",
+      "reason": "tell 常和 story 組合表示講故事。"
+    },
+    {
+      "prompt": "wear glasses 描述哪個日常狀態？",
+      "answer": "戴眼鏡",
+      "reason": "英文以 wear 表示衣物或眼鏡在身上的狀態。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

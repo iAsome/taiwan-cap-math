@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_199_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I was ___ and left my keys on the table.",
+  "options": [
+    "in a hurry",
+    "on time",
+    "by the way",
+    "in fact"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "in a hurry 可解釋匆忙造成遺漏。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "on time 表準時，不能解釋忘帶鑰匙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "by the way 是話題標記。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "in fact 是訊息組織語。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s199-infer-in-a-hurry-from-forgotten-keys",
+    "connect-state-chunk-to-plausible-consequence"
+  ],
+  "representationType": "fixed-chunk-causal-context",
+  "misconceptionTargets": [
+    "select-on-time-because-leaving-is-timed"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "left my keys 是匆忙時可能出現的後果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項提供行動狀態而非談話功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

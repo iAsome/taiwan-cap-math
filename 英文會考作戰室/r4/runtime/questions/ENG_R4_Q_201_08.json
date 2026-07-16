@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_201_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S201"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I picked the package up at noon. Which part may move after 'up'?",
+  "options": [
+    "I",
+    "picked",
+    "at noon",
+    "the package"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "主詞 I 不能移到片語後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "主要動詞 picked 不能移除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at noon 是時間片語，不是被撿起的受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "名詞受詞 the package 可改放成 picked up the package。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u29-s201-identify-movable-noun-object-of-picked-up",
+    "distinguish-object-from-subject-verb-time"
+  ],
+  "representationType": "separable-phrasal-constituent-identification",
+  "misconceptionTargets": [
+    "move-time-phrase-as-if-object"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "問題鎖定可分片語的名詞受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是實際受到 picked up 動作的事物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

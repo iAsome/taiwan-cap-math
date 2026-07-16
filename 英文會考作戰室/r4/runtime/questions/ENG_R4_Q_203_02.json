@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_203_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S203"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The road was closed after the ___ last night.",
+  "options": [
+    "big rain",
+    "heavy rain",
+    "large rain",
+    "high rain"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "big rain 是依中文大小直譯的不自然組合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "heavy rain 是大雨的自然搭配。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "large 通常描述尺寸或數量，不直接修飾 rain。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "high 不用來表示雨勢強。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s203-replace-big-rain-with-heavy-rain",
+    "map-weather-intensity-to-natural-adjective"
+  ],
+  "representationType": "natural-collocation-weather",
+  "misconceptionTargets": [
+    "translate-big-rain"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "road was closed 提供強降雨造成影響的情境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項使用英語慣用強度形容詞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

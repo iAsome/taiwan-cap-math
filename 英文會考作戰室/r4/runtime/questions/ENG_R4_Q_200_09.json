@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_200_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S200"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "My cousin grew up in a small town near the sea. What does 'grew up' describe?",
+  "options": [
+    "A person's childhood in that town",
+    "A plant becoming taller",
+    "A town becoming larger",
+    "A trip to the sea"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "主詞是 cousin，grew up 描述這個人在當地度過童年。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cousin 是人，不是長高的植物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "town 不是 grew up 的主詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "near the sea 只說明小鎮位置，不表示旅行。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u29-s200-interpret-person-grew-up-as-childhood-location",
+    "track-phrasal-subject-before-selecting-sense"
+  ],
+  "representationType": "phrasal-verb-life-stage",
+  "misconceptionTargets": [
+    "apply-plant-growth-sense-to-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "My cousin 是片語的主詞，in a small town 是成長地點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不把 near the sea 誤成旅行事件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

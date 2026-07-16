@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_202_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The team set up a table near the door. Which shorter form points to the table?",
+  "options": [
+    "set up them",
+    "set it up",
+    "set its up",
+    "set up itself"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "them 不符合單數且位置不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "set it up 正確指回單數 table。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "its 是所有格，不能單獨作受詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "itself 會改成反身意思且位置仍不合。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u29-s202-shorten-set-up-table-to-set-it-up",
+    "ignore-location-phrase-when-resolving-object"
+  ],
+  "representationType": "separable-object-concision",
+  "misconceptionTargets": [
+    "use-possessive-pronoun-in-object-slot"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "near the door 是地點，不改變 table 的單數指涉。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項以最短形式保留原動作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

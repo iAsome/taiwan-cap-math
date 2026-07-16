@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_202_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The two jackets are too warm. Which sentence points to both jackets?",
+  "options": [
+    "Take it off.",
+    "Take off it.",
+    "Take them off.",
+    "Take off them."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 只指單數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "it 數量不合且位置錯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "them 指兩件外套，置於 take 與 off 間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "them 不應放在 off 後。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u29-s202-select-take-them-off-for-two-jackets",
+    "evaluate-number-and-separation-jointly"
+  ],
+  "representationType": "separable-object-dual-constraint",
+  "misconceptionTargets": [
+    "fix-number-but-not-position"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "both jackets 強制使用複數代名詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是唯一在數量和位置上都正確的要求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

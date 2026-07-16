@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_200_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S200"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "After many tries, the team did not give up. What happened?",
+  "options": [
+    "They gave the work to someone else.",
+    "They stopped after the first try.",
+    "They continued trying.",
+    "They forgot the goal."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "give up 不表示轉交工作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "did not give up 排除停止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "否定放棄表示繼續嘗試。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有忘記目標。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s200-infer-continued-effort-from-not-give-up",
+    "apply-negation-to-phrasal-meaning"
+  ],
+  "representationType": "phrasal-verb-negation-inference",
+  "misconceptionTargets": [
+    "translate-give-as-transfer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "many tries 與 did not 共同支持持續努力。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項是由否定片語可推出的最小結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

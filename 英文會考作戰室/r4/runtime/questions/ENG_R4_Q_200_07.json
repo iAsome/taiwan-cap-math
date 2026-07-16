@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_200_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S200"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The lights went out during the storm. What happened?",
+  "options": [
+    "They became brighter.",
+    "They moved outside.",
+    "They stopped shining.",
+    "They changed color."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "went out 不表示變亮。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "out 不是移到戶外。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "lights went out 表示燈熄滅。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有顏色資訊。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s200-interpret-lights-went-out-as-stopped-shining",
+    "avoid-overinferring-storm-caused-power-failure"
+  ],
+  "representationType": "phrasal-verb-state-change",
+  "misconceptionTargets": [
+    "read-go-out-as-leave-home"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "during the storm 支持停電或熄燈情境，但不指定原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項只陳述可由片語確定的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_203_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S203"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The doctor said I should ___ this medicine after dinner.",
+  "options": [
+    "take",
+    "eat",
+    "drink",
+    "use up"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "take medicine 是服藥的常見搭配。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "中文可說吃藥，但英文不以 eat 表一般服藥。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "藥不一定是液體，題幹也沒有說明喝。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "use up 表示用完，改變醫師指示。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s203-select-take-medicine-after-doctor-instruction",
+    "reject-literal-eat-and-unstated-liquid-form"
+  ],
+  "representationType": "natural-collocation-medicine",
+  "misconceptionTargets": [
+    "translate-eat-medicine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "after dinner 是服用時間，不是藥物形態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項不從中文動詞逐字翻譯。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

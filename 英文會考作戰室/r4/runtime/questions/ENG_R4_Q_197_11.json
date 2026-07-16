@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_197_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S197"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I ___ the train because I reached the station too late.",
+  "options": [
+    "caught",
+    "rode",
+    "missed",
+    "left"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "caught 表示趕上，和 too late 矛盾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "rode 表示乘坐，前提是已搭上。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "missed the train 表示沒有趕上。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "left 需要不同主詞角色，通常是 train left。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u29-s197-infer-missed-train-from-late-arrival",
+    "check-transport-collocation-against-result"
+  ],
+  "representationType": "transport-result-collocation",
+  "misconceptionTargets": [
+    "ignore-contradiction-between-caught-and-late"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "too late 是未搭上列車的直接證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項和結果一致，沒有倒置行動者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

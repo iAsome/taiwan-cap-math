@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_198_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S198"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence says that the bag has many books in it?",
+  "options": [
+    "The bag is good at books.",
+    "The bag is ready for books.",
+    "The bag is afraid of books.",
+    "The bag is full of books."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "good at 描述能力，不能描述袋子內容。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "ready for 不表示已裝有書。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "afraid of 把袋子錯當成有恐懼感。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "full of 明確表示袋中有許多書。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u29-s198-map-contains-many-to-full-of",
+    "reject-semantic-category-errors-in-adjective-frames"
+  ],
+  "representationType": "adjective-preposition-paraphrase",
+  "misconceptionTargets": [
+    "match-preposition-without-subject-sense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "問題指定袋內有許多書，需找內容關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項是唯一不擬人化且語意完整的描述。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

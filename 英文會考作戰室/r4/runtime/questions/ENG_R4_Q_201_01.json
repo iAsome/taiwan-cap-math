@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_201_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S201"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The room is dark. Please turn the light on. Which order is also possible?",
+  "options": [
+    "Please turn on the light.",
+    "Please turn the on light.",
+    "Please the light turn on.",
+    "Please turn on it the light."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "turn on 可分，名詞受詞也可放在整組後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "on 不能插在冠詞與名詞間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "命令句動詞應在主詞省略後直接出現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "it 與 the light 重複受詞且位置錯誤。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s201-transform-turn-light-on-to-postparticle-noun",
+    "preserve-imperative-and-single-object"
+  ],
+  "representationType": "separable-phrasal-noun-alternate",
+  "misconceptionTargets": [
+    "split-determiner-from-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原句已展示名詞置中，題目要求另一個可接受順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只移動完整名詞受詞，沒有增刪資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_199_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "You need ___ two bottles of water for the walk.",
+  "options": [
+    "at least",
+    "at first",
+    "in fact",
+    "by the way"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "at least two 表示兩瓶是最低數量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "at first 表開始階段。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "in fact 不修飾數量下限。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "by the way 是談話轉折。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u29-s199-interpret-at-least-two-as-minimum-water",
+    "preserve-open-upper-bound-in-quantity-chunk"
+  ],
+  "representationType": "fixed-chunk-minimum",
+  "misconceptionTargets": [
+    "read-at-least-as-exactly"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "need 和數量共同建立最低需求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項仍允許攜帶超過兩瓶。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

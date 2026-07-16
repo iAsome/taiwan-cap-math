@@ -42,12 +42,14 @@ const IRREGULAR = new Map(Object.entries({
   given: "give",
   gone: "go",
   got: "get",
+  grew: "grow",
   had: "have",
   has: "have",
   heard: "hear",
   held: "hold",
   knew: "know",
   known: "know",
+  kept: "keep",
   left: "leave",
   lent: "lend",
   lost: "lose",
@@ -59,9 +61,11 @@ const IRREGULAR = new Map(Object.entries({
   ran: "run",
   rang: "ring",
   ridden: "ride",
+  rode: "ride",
   said: "say",
   sat: "sit",
   saw: "see",
+  sang: "sing",
   seen: "see",
   sent: "send",
   slept: "sleep",
@@ -136,8 +140,13 @@ function candidateLemmas(rawToken) {
       add(`${base}e`);
       if (base.at(-1) === base.at(-2)) add(base.slice(0, -1));
     }
+    if (token.length > 5 && token.endsWith("ily")) add(`${token.slice(0, -3)}y`);
     if (token.length > 4 && token.endsWith("ly")) add(token.slice(0, -2));
-    if (token.length > 4 && token.endsWith("er")) add(token.slice(0, -2));
+    if (token.length > 4 && token.endsWith("ier")) add(`${token.slice(0, -3)}y`);
+    if (token.length > 4 && token.endsWith("er")) {
+      add(token.slice(0, -2));
+      add(token.slice(0, -1));
+    }
     if (token.length > 5 && token.endsWith("est")) add(token.slice(0, -3));
   }
   return [...values];

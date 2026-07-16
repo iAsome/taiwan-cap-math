@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_201_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S201"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I am looking ___ my blue cap, but I cannot find it.",
+  "options": [
+    "it for",
+    "for",
+    "my cap for",
+    "for it my cap"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "look it for 把不可分片語拆開。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "look for my blue cap 表示尋找帽子。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "my cap for 顛倒受詞位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "it 和 my cap 重複指同一受詞。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s201-keep-look-for-before-blue-cap",
+    "reject-object-insertion-in-inseparable-phrasal"
+  ],
+  "representationType": "inseparable-phrasal-cloze",
+  "misconceptionTargets": [
+    "separate-look-for"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "cannot find it 證明 look for 是尋找義。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項讓完整名詞受詞接在 for 後。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

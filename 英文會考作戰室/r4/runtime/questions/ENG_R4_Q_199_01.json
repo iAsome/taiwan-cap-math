@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_199_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The movie starts at 6:30, so please be there ___.",
+  "options": [
+    "on time",
+    "by the way",
+    "at first",
+    "once in a while"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "on time 表示符合預定時間到達。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "by the way 用於轉換話題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at first 表示起初。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "once in a while 描述低頻率，與準時無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s199-select-on-time-for-fixed-movie-start",
+    "match-time-chunk-to-scheduled-event"
+  ],
+  "representationType": "fixed-chunk-schedule",
+  "misconceptionTargets": [
+    "confuse-on-time-with-frequency"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "6:30 是明確的預定開始時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項回應不得遲到的要求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

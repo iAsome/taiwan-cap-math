@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_201_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S201"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The nurse looked after the child. Use a pronoun for 'the child.'",
+  "options": [
+    "The nurse looked her after.",
+    "The nurse looked after her.",
+    "The nurse her looked after.",
+    "The nurse looked after she."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "look after 不可分，不能把 her 放中間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "her 是介系詞 after 後的受格代名詞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "受詞不能放在主詞和動詞間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "she 是主格，不作 after 的受詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s201-replace-child-with-her-after-look-after",
+    "coordinate-inseparability-with-object-case"
+  ],
+  "representationType": "inseparable-phrasal-pronoun-replacement",
+  "misconceptionTargets": [
+    "apply-separable-rule-to-look-after"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "片語結構與代名詞格位都要正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項保留 look after 完整相連。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

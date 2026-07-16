@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_199_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The soup is burning. Turn off the stove ___.",
+  "options": [
+    "as usual",
+    "right away",
+    "for example",
+    "at least"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "as usual 表示照常，無法回應危險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "right away 表示立刻採取行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "for example 用來舉例。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "at least 表示最低限度。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u29-s199-select-right-away-for-burning-soup",
+    "rank-chunks-by-urgent-response-function"
+  ],
+  "representationType": "fixed-chunk-urgency",
+  "misconceptionTargets": [
+    "treat-as-usual-as-neutral-time-adverb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "burning 顯示需要立即處理。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項是唯一符合緊急時間需求的語塊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

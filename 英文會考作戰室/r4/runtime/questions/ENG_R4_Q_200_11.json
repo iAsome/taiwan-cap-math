@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_200_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S200"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I cannot hear the video. Can you turn it up?",
+  "options": [
+    "Play it again from the start.",
+    "Make the screen brighter.",
+    "Make the sound louder.",
+    "Choose a different video."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "turn up 不必重新播放。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "hear 指向聲音，不是螢幕亮度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "turn up 在此表示調高音量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有要求換影片。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u29-s200-infer-turn-up-video-as-increase-sound",
+    "use-sensory-verb-hear-to-select-control-dimension"
+  ],
+  "representationType": "phrasal-verb-pronoun-context",
+  "misconceptionTargets": [
+    "treat-up-as-screen-position"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "cannot hear 是選擇 louder 的直接證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項把 it 正確連回 video 的聲音設定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

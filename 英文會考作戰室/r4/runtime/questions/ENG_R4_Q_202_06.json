@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_202_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A: Should I leave the signs here? B: No, please take ___ down.",
+  "options": [
+    "it",
+    "them",
+    "down it",
+    "the signs them"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 不符合複數 signs。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "take them down 表示把標示取下。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "down it 的代名詞位置錯誤且數量不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the signs 和 them 不能同時充當同一受詞。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s202-resolve-dialogue-signs-to-take-them-down",
+    "carry-object-number-across-speaker-turns"
+  ],
+  "representationType": "separable-object-dialogue-reference",
+  "misconceptionTargets": [
+    "lose-plural-reference-across-dialogue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "對話中的 signs 是 B 回應的受詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項同時符合複數指涉與 take down 結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

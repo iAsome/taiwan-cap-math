@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_203_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S203"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Before bed, the father often ___ his child a short story.",
+  "options": [
+    "speaks",
+    "tells",
+    "talks",
+    "says"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "speak 不使用 story 作此直接受詞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "tell someone a story 是講故事給某人聽。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "talk 通常需介系詞，不形成 talk a story。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "say 不能直接採雙受詞 child a story。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s203-select-tells-child-story-before-bed",
+    "match-tell-to-listener-and-content-objects"
+  ],
+  "representationType": "natural-collocation-story",
+  "misconceptionTargets": [
+    "use-say-someone-a-story"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "his child 是聽者，a short story 是內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項符合 tell 的雙受詞結構。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

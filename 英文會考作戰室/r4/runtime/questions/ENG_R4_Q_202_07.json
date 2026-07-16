@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_202_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-3-4-5",
+    "AUTH-ENGLISH-LP-5-4-1",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "I borrowed two maps from the desk. I must give ___ back tomorrow.",
+  "options": [
+    "it",
+    "the desk",
+    "them",
+    "back them"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "it 不能指 two maps。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "desk 是來源地點，不是要歸還的東西。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "give them back 正確承接複數 maps。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "代名詞不能留在 back 後。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u29-s202-link-borrowed-maps-to-give-them-back",
+    "reject-nearest-noun-desk-as-wrong-referent"
+  ],
+  "representationType": "separable-object-reference-chain",
+  "misconceptionTargets": [
+    "choose-nearest-noun-as-pronoun-source"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-3-4-5",
+      "AUTH-ENGLISH-LP-5-4-1",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "borrowed 的受詞 maps 才是之後歸還的物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項排除較近但語意不合的 desk。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
