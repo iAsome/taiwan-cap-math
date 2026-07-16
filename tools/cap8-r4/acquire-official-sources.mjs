@@ -248,8 +248,7 @@ async function acquire() {
   };
 }
 
-async function repairExistingMetadata() {
-  const register = JSON.parse(await readFile(REGISTER_PATH, "utf8"));
+export function repairOfficialSourceMetadata(register) {
   let repaired = 0;
   for (const file of register.files) {
     const filename = repairHeaderText(file.filename);
@@ -257,7 +256,20 @@ async function repairExistingMetadata() {
       file.filename = filename;
       repaired += 1;
     }
+    if (file.cacheRelativePath) {
+      const cacheRelativePath = path.posix.join(path.posix.dirname(file.cacheRelativePath), file.filename);
+      if (cacheRelativePath !== file.cacheRelativePath) {
+        file.cacheRelativePath = cacheRelativePath;
+        repaired += 1;
+      }
+    }
   }
+  return repaired;
+}
+
+async function repairExistingMetadata() {
+  const register = JSON.parse(await readFile(REGISTER_PATH, "utf8"));
+  const repaired = repairOfficialSourceMetadata(register);
   await writeFile(REGISTER_PATH, `${JSON.stringify(register, null, 2)}\n`, "utf8");
   return repaired;
 }
@@ -265,12 +277,13 @@ async function repairExistingMetadata() {
 async function main() {
   if (process.argv[2] === "--repair-metadata") {
     const repaired = await repairExistingMetadata();
-    process.stdout.write(`acquire-official-sources: repaired ${repaired} metadata filenames without changing source bytes\n`);
+    process.stdout.write(`acquire-official-sources: repaired ${repaired} metadata fields without changing source bytes\n`);
     return;
   }
   assert.equal(process.argv.length, 2, "Usage: node acquire-official-sources.mjs [--repair-metadata]");
   const result = await acquire();
   const output = REGISTER_PATH;
+  await writeFile(output, `${JSON.stringify(result, null, 2)}\n`, "utf8");
   process.stdout.write(
     `${JSON.stringify({ pages: result.pages.length, yearlyPages: result.yearlyPages.length, files: result.files.length, output: path.relative(REPO_ROOT, output).replaceAll("\\", "/") })}\n`,
   );
