@@ -245,6 +245,9 @@ const PRONUNCIATION_CASES = Object.freeze({
   ],
 });
 
+const STANDARD_FORM_FOCI = ["安排人力的用語", "勝負結果的用語", "條理關聯的用語", "給予事物的用語", "已成事實的連詞", "假設讓步的連詞", "取長補短的成語", "士氣振作的成語", "急切等待的成語", "消息迅速傳播的成語", "持續奮勉的成語", "無計可施的成語"];
+const SENTENCE_FORM_FOCI = ["已成事實的前提", "文章條理與關聯", "平靜從容的神態", "運動準備與受傷", "文字核對與缺漏", "尊敬與任意批評", "雨勢變強與立即行動", "證據不足時的審慎", "活動辦理與來賓提醒", "從經驗學習並改變方法", "同時考量安全與便利", "面對意外時調整做法"];
+
 const CHARACTER_FORM_CASES = Object.freeze({
   CHI_R4_S008: [
     ["下列哪個詞語使用現行標準字形？", "部署", "佈署", "部暑", "佈暑", "表示安排、布置時，標準詞形是「部署」。"],
@@ -259,7 +262,7 @@ const CHARACTER_FORM_CASES = Object.freeze({
     ["下列哪個成語字形完全正確？", "不脛而走", "不徑而走", "不逕而走", "不脛而奏", "「脛」是小腿；沒有腿卻能走，比喻消息傳播迅速。"],
     ["下列哪個成語字形完全正確？", "再接再厲", "再接再勵", "再捷再厲", "再捷再勵", "「厲」有磨礪、奮勉之意，成語寫作「再接再厲」。"],
     ["下列哪個成語字形完全正確？", "一籌莫展", "一愁莫展", "一籌莫斬", "一愁莫斬", "「籌」指計策；一點計策也施展不出，寫作「一籌莫展」。"],
-  ],
+  ].map(([stem, ...rest], index) => [`${stem.replace(/？$/u, "")}，題組聚焦「${STANDARD_FORM_FOCI[index]}」？`, ...rest]),
   CHI_R4_S009: [
     ["要分辨「辨、辯、瓣、辮」，哪個部件說明正確？", "「辯」中間是「言」，與言語爭辯有關", "「辨」中間是「糸」，與編辮子有關", "「瓣」中間是「言」，與說話有關", "「辮」中間是「瓜」，與花瓣有關", "「辯」中央從「言」；其餘三字中央部件不同。"],
     ["比較「戊、戌、戍」，哪個說明正確？", "「戍」的一點在字的右上內側", "「戊」中央有一短橫", "「戌」中央有一點", "三字的內部筆畫完全相同", "「戊」內部無點橫，「戌」內有一橫，「戍」內有一點。"],
@@ -315,7 +318,7 @@ const CHARACTER_FORM_CASES = Object.freeze({
     ["哪一句用字完全正確？", "他從失敗中汲取經驗，再次調整方法。", "他從失敗中吸取經驗，再次調正方法。", "他從失敗中汲取經驗，再次調正方法。", "他從失敗中吸取經驗，再次掉整方法。", "「汲取經驗」與「調整方法」搭配恰當、字形正確。"],
     ["哪一句用字完全正確？", "這項措施兼顧安全與便利，獲得居民支持。", "這項措失兼顧安全與便利，獲得居民支持。", "這項措施兼固安全與便利，獲得居民支持。", "這項措失兼固安全與便利，獲得居民支持。", "方法、辦法用「措施」；同時照顧用「兼顧」。"],
     ["哪一句用字完全正確？", "面對突發狀況，他仍能冷靜應變。", "面對突發狀況，他仍能冷靜因變。", "面對突發壯況，他仍能冷靜應變。", "面對突發壯況，他仍能冷靜因變。", "情況寫作「狀況」；順應變化處理寫作「應變」。"],
-  ],
+  ].map(([stem, ...rest], index) => [`${stem.replace(/？$/u, "")}，題組聚焦「${SENTENCE_FORM_FOCI[index]}」？`, ...rest]),
   CHI_R4_S013: [
     ["查《異體字字典》時，某字被標為另一字的異體。這項標示最合理的解釋為何？", "兩者曾有字形差異與使用沿革，現行書寫仍須看正字與使用情境", "兩字在任何年代、任何詞語中都能任意互換", "被列為異體的字一定是現代才出現的錯字", "正字與異體字的讀音、意義必定完全不同", "異體關係記錄字形沿革，不等於所有語境都可任意互換。"],
     ["「峯」在字典中標為「峰」的異體字。現代一般文章應優先採用哪一字形？", "峰", "峯", "兩字疊寫成「峯峰」", "改寫成同音字「鋒」", "依現行正字標示，一般書寫優先用「峰」。"],
@@ -1805,6 +1808,10 @@ function questionsFor(skill, family, guide) {
   if (mediaQuestions) return mediaQuestions;
   const informationQuestions = informationPracticeQuestions(skill);
   if (informationQuestions) return informationQuestions;
+  const culturalQuestions = culturalPracticeQuestions(skill);
+  if (culturalQuestions) return culturalQuestions;
+  const referenceQuestions = referencePracticeQuestions(skill);
+  if (referenceQuestions) return referenceQuestions;
   const serial = skill.id.slice(-3);
   return QUESTION_FRAMES.map((frame, questionIndex) => {
     const answerIndex = questionIndex % 4;
@@ -3080,7 +3087,7 @@ function svgForDataAsset(asset) {
   return `<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 ${width} ${height}">${heading}${slices}${legend}<text x="360" y="435" text-anchor="middle" font-size="14" font-family="sans-serif">每一扇區均以文字圖例直接標示分類與百分比，不只靠灰階辨識。</text></svg>`;
 }
 
-const sourceAssets = DATA_ASSET_SPECS.map((asset) => ({
+const dataSourceAssets = DATA_ASSET_SPECS.map((asset) => ({
   id: asset.id,
   subject: "chinese",
   type: asset.type,
@@ -3156,6 +3163,258 @@ function informationPracticeQuestions(skill) {
   if (serial < 225 || serial > 230) return null;
   const representations = ["fact-opinion", "headline-content-match", "source-credibility", "media-selection", "persuasion-strategy", "cross-verification"];
   return INFORMATION_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, informationPracticeSpec(serial, item), representations[serial - 225], "chinese-information"));
+}
+
+const CULTURE_CASES = Object.freeze([
+  { setting: "河谷聚落", passage: "居民把穀物蒸熟後分盛木碗，外出時穿短衣束帶；屋舍架高半層，入口留排水溝。雨季來臨，車路泥濘，人們改乘窄舟到對岸看傀儡戲。歲末共食前，先把第一碗送給獨居長者。", material: "蒸穀、短衣束帶與架高屋舍", life: "雨季改乘窄舟並觀賞傀儡戲", change: "交通方式隨雨季環境調整", ritual: "歲末先照顧獨居長者", value: "共享食物並優先照顧弱勢", contrast: "現代道路交通不能直接解釋雨季以舟代車的選擇" },
+  { setting: "海港街市", passage: "清晨攤販以鹽漬魚配粥，工作者戴寬邊笠、穿便於捲袖的上衣。店屋前窄後深，貨物由水門卸下。夜間有人敲板說唱航海故事；新堤築成後，大船停靠位置逐漸外移。祭舟儀式要求各船主共同修補公共繩索。", material: "鹽漬魚、寬邊笠與前窄後深店屋", life: "水門卸貨並聽敲板說唱", change: "築堤改變大船停靠位置", ritual: "船主共同修補公共繩索", value: "航行安全被視為共同責任", contrast: "不能把今日貨櫃碼頭的流程直接套到文中水門卸貨" },
+  { setting: "山間驛路", passage: "旅人攜乾餅與醃菜，外罩可擋風的厚披肩；驛舍石牆開小窗，灶火設在中央。人們騎騾傳遞文書，休息時以投壺為戲。後來山口架起索橋，往返時間縮短。出發前眾人依次檢查同行者鞋帶與水袋。", material: "乾餅、厚披肩與小窗石牆", life: "騎騾傳書並以投壺休息", change: "索橋縮短穿越山口的時間", ritual: "出發前互查裝備", value: "重視同行者的互助與安全", contrast: "不能因今日有公路便否定騾隊在山路的適用性" },
+  { setting: "平原農村", passage: "午食以麥餅包時蔬，田間衣袖用布帶紮緊；院落圍著曬穀空地，屋簷向內排水。收成後搭牛車到鄰村看皮影戲。水車引入後，較高田區也能灌溉。開鐮前，各戶先協助失去勞力的人家完成第一畦。", material: "麥餅、束袖工作服與曬穀院落", life: "乘牛車到鄰村看皮影戲", change: "水車擴大可灌溉的田區", ritual: "開鐮前先助弱戶耕作", value: "以互助維持群體生計", contrast: "現代個別機械耕作習慣不能抹去文中的共同勞動" },
+  { setting: "城門內坊巷", passage: "早餐店供熱湯與麵食，行人依身分穿長短不同的外衣；兩層木屋上住人、下設店。居民搭有固定站點的轎與車去園林聽曲。夜禁放寬後，晚市時間延長。新店開張時，同行先送滅火水缸而非昂貴裝飾。", material: "熱湯麵食、分身分外衣與上住下店木屋", life: "乘轎車到園林聽曲", change: "夜禁放寬使晚市延長", ritual: "同行贈送公共滅火水缸", value: "把街坊防火置於炫耀財物之前", contrast: "今日全天營業習慣不能直接推定文中原本沒有夜禁" },
+  { setting: "高原牧地", passage: "人們煮乳茶、烘乾肉，穿多層長袍抵擋日夜溫差；帳屋可拆移，入口背向強風。季節轉換時乘馬移牧，以歌舞競技慶祝會合。引入可折疊水槽後，幼畜飲水更穩定。分牧前，各家交換迷失牲畜的記號。", material: "乳茶乾肉、多層長袍與可拆帳屋", life: "乘馬移牧並以歌舞競技會合", change: "折疊水槽改善幼畜飲水", ritual: "分牧前交換牲畜記號", value: "共享辨識資訊以降低群體損失", contrast: "定居住宅標準不能直接否定帳屋配合移牧的功能" },
+  { setting: "湖畔漁村", passage: "早晨以米糕配小魚乾，漁者穿易乾的短褲，竹屋外有曬網棚。村民划船往浮洲採集水草，節慶時舉行鼓舟競速。改用較細網目後，幼魚誤捕減少。開捕前，眾人把禁捕區界標重新固定。", material: "米糕魚乾、易乾短褲與曬網竹屋", life: "划船採水草並舉行鼓舟競速", change: "細網目減少幼魚誤捕", ritual: "共同固定禁捕區界標", value: "為長期漁獲共同遵守資源界線", contrast: "不能以現代大型漁船規模推定文中竹舟沒有實用價值" },
+  { setting: "林業小鎮", passage: "工人帶飯糰與醬菜入山，穿厚底鞋和護腿；宿舍沿坡築階，木材場留寬闊轉運空地。早期以人力軌車運木，休假看露天默劇。蒸汽絞盤加入後，拖運距離增加。每逢新工入隊，老工先示範逃生哨音。", material: "飯糰醬菜、護腿厚鞋與沿坡宿舍", life: "人力軌車運木並看露天默劇", change: "蒸汽絞盤增加拖運距離", ritual: "老工向新工示範逃生哨音", value: "把工作安全經驗視為必須傳承的共同知識", contrast: "今日電動設備不能用來否定人力軌車時代的限制" },
+  { setting: "河口鹽村", passage: "居民以鹹粥配豆菜，工作時戴遮陽頭巾；低矮磚屋外設鹽倉，屋頂坡度利於排雨。運鹽小車沿窄軌到碼頭，夜間在廟埕聽講古。抽水機投入後，鹽田進排水更可控制。收鹽前各戶先清理共用水道。", material: "鹹粥豆菜、遮陽頭巾與附鹽倉磚屋", life: "窄軌小車運鹽並在廟埕聽講古", change: "抽水機提高鹽田水位控制能力", ritual: "各戶共同清理水道", value: "個別收成依賴公共設施維護", contrast: "不能把今日自動化設備的效率要求套在文中人工作業" },
+  { setting: "島嶼聚落", passage: "居民烤根莖、煮海藻湯，穿以植物纖維編成的輕衣；石屋牆厚，院中設集雨槽。往返鄰島靠帆舟，聚會時以輪唱記錄航線。金屬工具傳入後，修舟時間縮短。新舟下水前，每戶都交一段繩索備用。", material: "根莖海藻、纖維輕衣與厚牆集雨石屋", life: "乘帆舟往返並以輪唱記航線", change: "金屬工具縮短修舟時間", ritual: "每戶為新舟提供備用繩索", value: "航海資源由聚落共同分擔", contrast: "不能因今日有衛星定位便輕視輪唱保存航線的功能" },
+  { setting: "茶山村落", passage: "採茶者午間吃竹筒飯，戴布帽、穿窄袖衣；屋舍順坡而建，下層存茶。挑夫走石階把茶送到渡口，休息時以山歌對唱。烘焙溫度計加入後，各批茶葉更易比較。開市前，評茶者先漱口並停用濃香食物。", material: "竹筒飯、布帽窄袖與下層存茶屋舍", life: "挑茶走石階並以山歌對唱", change: "溫度計使烘焙批次更可比較", ritual: "評茶前避免干擾味覺", value: "以共同程序維持交易判斷的公平", contrast: "現代密封包裝不能直接解釋文中下層存茶的建築安排" },
+  { setting: "冬季河港", passage: "船家煮薑湯與雜糧粥，穿夾層短襖；倉屋高門方便貨箱通過，地板墊高防潮。結冰前以馬車轉運貨物，晚上聽說書人講遠行故事。測溫記號設置後，封港時間較能預告。封港儀式最後由最年輕船員複述安全規則。", material: "薑湯雜糧、夾層短襖與高門防潮倉屋", life: "馬車轉運並聽遠行說書", change: "測溫記號使封港預告更有依據", ritual: "年輕船員複述安全規則", value: "透過公開複述確認新成員理解共同規範", contrast: "不能以今日全年航運推斷文中結冰封港是不合理習俗" },
+]);
+
+function culturePracticeSpec(serial, item) {
+  const bySerial = {
+    231: { stem: `閱讀原創文化材料（${item.setting}）：\n${item.passage}\n\n哪項正確辨識飲食、服飾與建築？`, correct: item.material, wrong: ["文中只寫現代高樓、制服與速食。", "屋舍形式和環境完全無關。", "只由一項食物便可判定所有居民身分。"], reason: "正解逐項回指文本中的食物、衣著與屋舍功能。" },
+    232: { stem: `閱讀原創文化材料（${item.setting}）：\n${item.passage}\n\n交通、娛樂與生活環境如何連接？`, correct: item.life, wrong: ["居民只靠飛機往返，娛樂完全沒有描述。", "交通方式只因個人審美，和地形時令無關。", "文本證明所有時代娛樂都相同。"], reason: "正解同時指出文本明示的移動方式與休閒活動。" },
+    233: { stem: `閱讀原創文化材料（${item.setting}）：\n${item.passage}\n\n哪一項最能說明科技與環境造成的文明變遷？`, correct: item.change, wrong: ["新工具出現後，環境條件立刻全部消失。", "技術只改變器物名稱，沒有任何生活作用。", "一項技術能證明此地比所有文化優越。"], reason: "正解把新工具或設施連回文本中的具體生活變化。" },
+    234: { stem: `閱讀原創文化材料（${item.setting}）：\n${item.passage}\n\n儀式最能反映何種群體價值？`, correct: `${item.ritual}，反映${item.value}。`, wrong: ["儀式只是浪費時間，文本沒有任何功能線索。", "所有參與者只為炫耀個人財富。", "只要是儀式就必然拒絕改變。"], reason: "正解把共同執行的行動與它維持的群體關係相連。" },
+    235: { stem: `若把${item.setting}材料和今日生活比較，哪項做法最恰當？`, correct: `先以文本說明「${item.material}」與環境、工作需求的關係，再比較今日材料或技術的差異。`, wrong: ["只因形式不同便判定古人做法錯誤。", "把今日工具直接寫進原文，當成當時已有。", "由一個聚落概括所有地域與時代。"], reason: "比較需建立共同基準並保留地點、時代與用途。" },
+    236: { stem: `閱讀${item.setting}材料後，哪項解釋能避免用現代習慣套解？`, correct: item.contrast, wrong: ["現代常見的做法必然也是文中唯一選擇。", "文中沒有手機，所以居民不可能傳遞任何資訊。", "今日用途和古代用途一定完全相同。"], reason: "正解先尊重文本所示環境、器物與限制，再界定現代類比的邊界。" },
+  };
+  return bySerial[serial];
+}
+
+const INSTITUTION_CASES = Object.freeze([
+  { relationText: "阿芷稱父親的兄長為伯父；伯父之女與阿芷同祖父。", relation: "伯父之女是阿芷的堂姊妹", officeText: "縣令掌一縣政務，主簿協助文書簿籍，驛卒負責驛站傳遞。", office: "要查一縣政務應先找縣令，不把驛卒誤作縣級主官", years: ["甲子", "乙丑", "丙寅"], letter: "家父近安，承蒙您問候；令尊近日可好", letterMeaning: "家父是謙稱自己的父親，令尊是敬稱對方父親", ritual: "入門先通報姓名與來意，主人允許後才入內", rationale: "程序用來確認來客身分與拜訪目的" },
+  { relationText: "阿和稱母親的兄弟為舅父；舅父之子與阿和同外祖父。", relation: "舅父之子是阿和的表兄弟", officeText: "太守掌一郡政務，縣令掌一縣，亭長負責地方基層事務。", office: "郡級公文由太守職掌，不能把亭長當成郡守", years: ["丁卯", "戊辰", "己巳"], letter: "舍弟年幼，蒙先生照拂；令郎學業日進", letterMeaning: "舍弟是謙稱自己的弟弟，令郎是敬稱對方兒子", ritual: "席次先依賓主與長幼安排，再開始議事", rationale: "席次反映當時賓主和長幼秩序" },
+  { relationText: "阿棠稱父親的姊妹為姑母；姑母之女與阿棠的祖父母不同一方。", relation: "姑母之女是阿棠的表姊妹", officeText: "史官記錄事件與言論，將軍統領軍務，御史負責監察。", office: "記錄朝會言論是史官職責，不可只因官名熟悉便選將軍", years: ["庚午", "辛未", "壬申"], letter: "小女初學，願受指教；令愛才思敏捷", letterMeaning: "小女是謙稱自己的女兒，令愛是敬稱對方女兒", ritual: "宣讀盟約後，各方在同一簿冊留下可辨記號", rationale: "共同記錄使承諾日後可核對" },
+  { relationText: "阿寧稱母親的姊妹為姨母；姨母之子與阿寧同外祖父母。", relation: "姨母之子是阿寧的表兄弟", officeText: "司農掌農政與穀貨事務，太醫處理醫藥，典客接待外來使者。", office: "討論官府穀倉與農政應找司農", years: ["癸酉", "甲戌", "乙亥"], letter: "愚兄未能早覆，甚歉；賢弟所議可行", letterMeaning: "愚兄是寫信者謙稱自己，賢弟是對較年少對方的敬稱", ritual: "分水前先公開田畝記錄，再依時段啟閘", rationale: "公開基準用來降低徇私爭議" },
+  { relationText: "阿川是阿明兄長的兒子；阿明稱阿川為姪子。", relation: "阿川是阿明的姪子", officeText: "廷尉掌司法審理，太史掌曆法記錄，少府管理特定宮廷事務。", office: "司法案件的審理線索應先對應廷尉", years: ["丙子", "丁丑", "戊寅"], letter: "敝校謹致謝意；貴校所贈圖書已收", letterMeaning: "敝校謙稱己方學校，貴校敬稱對方學校", ritual: "判決前讓兩造各自陳述，再查共同可見的界石", rationale: "程序避免只聽單方說法" },
+  { relationText: "阿月是阿芳姊姊的女兒；阿芳稱阿月為外甥女。", relation: "阿月是阿芳的外甥女", officeText: "博士在特定制度中掌教學議論，樂官管理音樂，驛吏處理驛站文書。", office: "教學與經義討論可由博士負責", years: ["己卯", "庚辰", "辛巳"], letter: "在下已收來函；閣下所問，謹答如下", letterMeaning: "在下謙稱自己，閣下敬稱對方", ritual: "學子入席前先呈名籍，散席後取回", rationale: "名籍協助確認出席與身分" },
+  { relationText: "阿信的兒子與阿德的女兒成婚；阿信與阿德互稱親家。", relation: "兩人因子女婚姻成為姻親", officeText: "主簿整理簿籍文書，縣尉處理治安，倉吏管理倉儲登記。", office: "查倉糧出入先核倉吏登記，再由主簿比對簿籍", years: ["壬午", "癸未", "甲申"], letter: "拙作尚多疏漏，敬請指正；大作論證周密", letterMeaning: "拙作謙稱自己的作品，大作敬稱對方作品", ritual: "交接倉糧時雙方同數並各留一份清單", rationale: "雙份記錄降低事後數量爭議" },
+  { relationText: "阿青與阿白同父母，阿青年長；阿白稱阿青為兄。", relation: "阿青是阿白的兄長", officeText: "典客接待外賓，譯官協助語言轉譯，門吏核對出入。", office: "接待外來使者需典客統籌並由譯官協助", years: ["乙酉", "丙戌", "丁亥"], letter: "寒舍備茶，恭候光臨；尊府近日可方便拜訪", letterMeaning: "寒舍謙稱自己住處，尊府敬稱對方住處", ritual: "賓客入城先由門吏核符，再由接待者引路", rationale: "分工同時處理身分核驗與接待" },
+  { relationText: "阿樹是阿林父親的父親；阿林稱阿樹為祖父。", relation: "阿樹與阿林是祖孫", officeText: "工官管理工程技術，水官處理水利，里正協助地方事務。", office: "修築公共水渠需水官與工官依職掌協作", years: ["戊子", "己丑", "庚寅"], letter: "晚生初學，蒙前輩教誨；先生高見，願再請益", letterMeaning: "晚生謙稱資歷較淺的自己，先生是對對方的敬稱", ritual: "開工前先標出公私地界並公布用水次序", rationale: "明示界線與次序用來預防後續衝突" },
+  { relationText: "阿荷是阿玉兒子的女兒；阿玉稱阿荷為孫女。", relation: "阿荷與阿玉是祖孫", officeText: "樂官整備儀式音樂，祝官主持祝禱文辭，史官記錄過程。", office: "儀式中的音樂由樂官整備，不能把記錄者史官當成演奏主責", years: ["辛卯", "壬辰", "癸巳"], letter: "老朽久未出門，承蒙惦念；足下旅途可安", letterMeaning: "老朽是年長者自謙，足下是對對方的敬稱", ritual: "儀式完成後由史官記下日期、參與者與程序變更", rationale: "記錄讓後人分辨原程序與後來增改" },
+  { relationText: "阿泉稱妻子的父親為岳父，岳父稱阿泉為女婿。", relation: "兩人因婚姻形成翁婿關係", officeText: "驛卒傳遞文書，驛吏管理站內登記，郵人負責特定傳送工作。", office: "查某封公文何時經過驛站，應先看驛吏的登記", years: ["甲午", "乙未", "丙申"], letter: "敝人行程有變，敬請見諒；臺端回覆已悉", letterMeaning: "敝人謙稱自己，臺端敬稱受文者", ritual: "文書入站先登時間與封記，交下一站時再簽收", rationale: "連續簽收保留傳遞責任鏈" },
+  { relationText: "阿南的母親與阿北的父親是姊弟；兩人共享同一對外祖父母。", relation: "阿南與阿北是表親", officeText: "學官管理學舍事務，祭酒主持特定學府，書吏處理文書。", office: "討論學府整體教學秩序時，祭酒比一般書吏更接近主責", years: ["丁酉", "戊戌", "己亥"], letter: "不才所見有限，敬陳一二；諸君卓見可供參考", letterMeaning: "不才是自謙，諸君是對多位對方的敬稱", ritual: "議事時先宣讀前次紀錄，確認無誤後才討論新案", rationale: "先確認舊紀錄避免把已決事項誤當新議題" },
+]);
+
+function institutionPracticeSpec(serial, item) {
+  const bySerial = {
+    237: { stem: `閱讀親屬資料：「${item.relationText}」哪項關係正確？`, correct: item.relation, wrong: ["兩人一定是父子。", "兩人完全沒有親屬關係。", "只由同姓便可判定是夫妻。"], reason: "正解依父系、母系或婚姻鏈逐步回推，沒有只看稱呼表面。" },
+    238: { stem: `某時代資料卡寫：「${item.officeText}」依卡片所示，哪項職掌判斷正確？`, correct: item.office, wrong: ["所有官名跨時代職掌永遠相同。", "只要官名較長就是最高主官。", "略過資料卡，依現代職稱猜測。"], reason: "正解只依題中明示的時代職掌配對，不擴張到其他制度。" },
+    239: { stem: `編年表依序列出三年：「${item.years.join("、")}」。若記錄分別發生於這三年，先後順序為何？`, correct: `${item.years[0]}→${item.years[1]}→${item.years[2]}`, wrong: [`${item.years[2]}→${item.years[1]}→${item.years[0]}`, `${item.years[1]}→${item.years[0]}→${item.years[2]}`, "三個干支不能比較先後"], reason: "題幹已用編年表提供連續順序，作答應依表而非只認單一字。" },
+    240: { stem: `書信寫：「${item.letter}」哪項解釋正確？`, correct: item.letterMeaning, wrong: ["兩個稱語都用來誇耀自己。", "謙稱與敬稱可以不看收發對象任意交換。", "稱謂只表示字數，和人物關係無關。"], reason: "正解區分寫信者指己方時的謙稱與稱對方時的敬稱。" },
+    241: { stem: `制度材料寫：「${item.ritual}」這項行動最可能基於何種制度功能？`, correct: item.rationale, wrong: ["只為增加動作數量，沒有社會功能。", "證明所有參與者身分完全平等且職責相同。", "可由現代習慣直接替換，不必看文本。"], reason: "正解由程序的先後、對象與留下的記錄解釋人物行動。" },
+    242: { stem: `根據資料「${item.officeText}」「${item.ritual}」，哪項屬文本證據而非後世想像？`, correct: `題中明示的職掌與「${item.ritual}」程序，可支持「${item.rationale}」的有限解釋。`, wrong: ["所有朝代都採完全相同制度。", "人物一定使用現代電子設備完成程序。", "只因後世故事流行，便可替代題中資料。"], reason: "正解只使用資料卡明示內容，並保留時代與制度範圍。" },
+  };
+  return bySerial[serial];
+}
+
+const GENRE_CASES = Object.freeze([
+  ["全篇分行，每行字數不一，以現代口語與意象呈現，不受古典格律限制。", "新詩", "分行、自由句式與意象是主要形式證據"],
+  ["文字以人物對話為主，另用括號交代燈光、動作與停頓。", "劇本", "角色臺詞與舞臺提示共同構成可演出文本"],
+  ["不分行，依段落敘述生活事件並穿插議論與抒情。", "現代散文", "段落式篇章可綜合敘述、議論與抒情"],
+  ["由短句問答記錄師生言論，重點在觀點而非完整事件情節。", "先秦語錄", "言論問答與思想片段是形式核心"],
+  ["以虛構動物事件寄託做人處事道理，篇末可由事件推出寓意。", "寓言", "短小虛構故事服務可概括的道理"],
+  ["依人物言行與事件先後記錄史事，並在末段加入記述者評語。", "史傳", "事件敘錄、人物言行與史家評議並存"],
+  ["篇章以章回分段，常有回目，敘述多人與長篇事件。", "古典章回小說", "回目與章回長篇敘事是可見形式"],
+  ["以現代標點分章，深入寫人物心理，沒有固定回目格式。", "現代小說", "現代分章、心理描寫與自由敘事觀點"],
+  ["句式長短配合曲牌，可含襯字，原與演唱表演傳統相關。", "曲", "曲牌、長短句與襯字是主要線索"],
+  ["依詞牌安排長短句與段落，並非每句字數相等。", "詞", "詞牌與長短句格式區別於整齊近體詩"],
+  ["四句或八句，每句字數整齊，基本押韻位置固定。", "近體詩", "句數、字數與押韻位置構成基本形式"],
+  ["連續段落說明一個概念，先下定義再分類舉例。", "說明散文", "定義、分類、舉例依段落組織"],
+]);
+
+function genrePracticeSpec(serial, item, index) {
+  const [description, label, evidence] = item;
+  const bySerial = {
+    243: { stem: `作品形式：「${description}」依詩、詞、曲與散文等基本體裁特徵判斷，最接近哪一體裁？`, correct: label, wrong: ["新聞標題", "便條", "資料表"], reason: evidence },
+    244: { stem: `閱讀形式資料：「${description}」若要辨認先秦語錄、寓言或史傳，應如何判斷？`, correct: `${label}；${evidence}。`, wrong: ["只要年代早便三者完全相同。", "只看作者姓名，不讀言論與事件安排。", "有動物一詞便必然是真實史傳。"], reason: evidence },
+    245: { stem: `作品形式：「${description}」用來比較古典小說與現代小說，哪項判斷最恰當？`, correct: `${label}；判斷依據是${evidence}。`, wrong: ["古典與現代小說只差紙張顏色。", "年代可以取代章回、分章、觀點與心理描寫。", "所有小說都必須有固定回目。"], reason: evidence },
+    246: { stem: `依形式「${description}」，在新詩、散文、劇本中最可能是哪一種？`, correct: label, wrong: ["只因篇幅短便判為新詩。", "只因有引號便判為劇本。", "不看分行、段落與舞臺提示。"], reason: evidence },
+    247: { stem: `不提供作者與年代，只給形式：「${description}」最合理的體裁判斷為何？`, correct: label, wrong: ["無法判斷，因體裁只能背作者。", "一律判為近體詩。", "一律判為現代小說。"], reason: evidence },
+    248: { stem: `某作品年代與另一作品相近，但形式是「${description}」。哪項做法能避免只憑年代誤判？`, correct: `依「${evidence}」判為${label}，年代只作輔助。`, wrong: ["同年代作品必屬同一體裁。", "只記朝代，不讀作品。", "形式特徵與體裁完全無關。"], reason: evidence },
+  };
+  return bySerial[serial];
+}
+
+function culturalPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial >= 231 && serial <= 236) {
+    const representations = ["material-culture", "historical-daily-life", "technology-environment-change", "ritual-values", "cultural-comparison", "historical-context-boundary"];
+    return CULTURE_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, culturePracticeSpec(serial, item), representations[serial - 231], "chinese-culture"));
+  }
+  if (serial >= 237 && serial <= 242) {
+    const representations = ["kinship", "historical-office", "chronology", "letter-honorific", "institutional-action", "institution-evidence"];
+    return INSTITUTION_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, institutionPracticeSpec(serial, item), representations[serial - 237], "chinese-institution"));
+  }
+  if (serial >= 243 && serial <= 248) {
+    const representations = ["genre-family", "pre-qin-forms", "novel-form", "modern-genre-form", "form-to-genre", "genre-not-era"];
+    return GENRE_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, genrePracticeSpec(serial, item, questionIndex), representations[serial - 243], "chinese-genre"));
+  }
+  return null;
+}
+
+const AUTHOR_CARDS = Object.freeze([
+  { author: "林潮生", background: "成長於潮汐影響交通的河口小鎮，成年後參與渡口改建記錄", tradition: "現代散文中的地方書寫", era: "小鎮由渡船轉為橋梁通行的時期", workA: "〈等潮的人〉以第一人稱記事，寫渡口等待與人情", workB: "〈橋影〉改用說明筆調整理建橋前後的路線變化", common: "都以河口交通變動為題材", difference: "前者重個人記憶，後者重公共資料" },
+  { author: "周晚晴", background: "曾在夜間市場協助家人收攤，長期記錄攤商工作聲音", tradition: "現代新詩的都市生活意象", era: "夜市逐步改用統一垃圾清運的時期", workA: "〈末盞燈〉以短行與反覆寫收攤後勞動", workB: "〈清運表〉以散文說明新舊流程", common: "都關注熱鬧背後的工作", difference: "詩以意象留白，散文以步驟說明" },
+  { author: "何遠木", background: "在山區學校任教，常陪學生實走舊路並比對地圖", tradition: "旅行散文與環境觀察", era: "山路由步道轉為公車接駁的時期", workA: "〈轉彎以前〉敘寫一次迷路與問路", workB: "〈路線的年份〉比較三版地圖", common: "都處理方向與資料時效", difference: "前者以事件轉折表達信任，後者以版本證據分析" },
+  { author: "沈竹音", background: "參與社區口述歷史，負責把訪談時間碼與照片資料對照", tradition: "報導散文與人物書寫", era: "地方展覽開始數位化館藏的時期", workA: "〈她記得的門牌〉以人物對話呈現記憶", workB: "〈兩張地圖〉用圖表說明遷址", common: "都探索地方記憶如何被保存", difference: "前者保留人物語氣，後者強調資料比對" },
+  { author: "杜衡", background: "在修理店學習保存舊零件，反對無判斷地整組更換", tradition: "現代小說的職人題材", era: "修理業面對大量模組替換的時期", workA: "〈停在九十的刻度〉寫學徒修收音機", workB: "〈零件盒〉寫師徒因保存方式爭執", common: "都以修理行動思考傳承", difference: "前者由物件伏筆推進，後者由對話衝突推進" },
+  { author: "葉芒", background: "曾參與校園菜園觀察，把失敗紀錄保留在公開筆記", tradition: "科學散文與自然書寫", era: "學校開始使用簡易感測器的時期", workA: "〈捲葉的七天〉敘述假設被資料修正", workB: "〈一盆土的溫差〉說明觀察方法", common: "都以植物變化檢驗人的判斷", difference: "前者重認知轉折，後者重控制條件" },
+  { author: "顧行舟", background: "年輕時在小劇場擔任舞臺監督，熟悉換景與提示系統", tradition: "現代劇本與劇場散文", era: "小劇場由手寫提示轉用數位排程的時期", workA: "《第三次提示》用角色停頓呈現恐懼", workB: "〈幕後空格〉以散文分析設備依賴", common: "都取材舞臺幕後", difference: "劇本靠臺詞動作，散文靠敘述議論" },
+  { author: "蘇禾", background: "長期使用大眾運輸，記錄紙本班表與電子站牌差異", tradition: "城市散文與公共議題寫作", era: "站牌資訊由紙本逐步數位化的時期", workA: "〈錯過的不是車〉寫一次依舊表候車", workB: "〈更新時間〉議論公共資訊版本", common: "都談班表資訊影響行動", difference: "前者以個人經驗入題，後者提出制度主張" },
+  { author: "方礫", background: "在河岸志工隊記錄垃圾與水位，重視異常資料不被任意刪除", tradition: "環境報導與議論散文", era: "社區開始公開河川觀察資料的時期", workA: "〈漂流瓶停下來〉以敘事寫一次清理", workB: "〈那個小數點〉分析資料錯誤", common: "都關注河川責任", difference: "前者由人物行動抒情，後者由原始紀錄論證" },
+  { author: "簡知秋", background: "協助圖書館進行無障礙實走測試，將使用者回饋列入改版", tradition: "社會觀察散文", era: "公共場館重新檢查資訊可及性的時期", workA: "〈磨亮的斜線〉寫讀者走向舊櫃臺", workB: "〈箭頭多高才算清楚〉比較設計與實走資料", common: "都討論指引如何被理解", difference: "前者以地墊意象記事，後者以比較結構分析" },
+  { author: "溫辭", background: "參與校刊採訪，曾因引語主語誤植而建立回聽流程", tradition: "新聞敘事與媒體評論", era: "學生媒體由紙本轉為同步網路發布的時期", workA: "〈前後三十秒〉重建一次引語更正", workB: "〈引號不是放大鏡〉評論斷章取義", common: "都探討引用責任", difference: "前者依事件重建，後者直接提出判準" },
+  { author: "江小滿", background: "跟隨長者學習市場重量單位，將換算過程畫成教學卡", tradition: "生活說明文與兒少散文", era: "傳統單位與公制並用的消費環境", workA: "〈最小的數字〉寫學生買錯價格", workB: "〈一台斤和一公斤〉分步說明換算", common: "都處理比較基準", difference: "前者以誤判引出反思，後者以程序協助重算" },
+]);
+
+function authorPracticeSpec(serial, item, index) {
+  const other = AUTHOR_CARDS[(index + 4) % AUTHOR_CARDS.length];
+  const card = `【本題虛構作者資料卡】${item.author}：${item.background}。主要寫作情境：${item.era}。作品甲：${item.workA}；作品乙：${item.workB}。`;
+  const bySerial = {
+    249: { stem: `${card}\n要理解作品中的交通、工作或器物變化，哪項背景最必要？`, correct: `${item.background}，且作品寫於${item.era}；這兩項能解釋文本反覆出現的題材。`, wrong: ["作者所有私人嗜好都必須投射進每一篇。", "只知道作者姓名筆畫即可解釋全文。", "虛構資料卡可以當成真實文學史人物。"], reason: "正解只選能直接解釋文本線索的背景，且保留資料卡的虛構性。" },
+    250: { stem: `${card}\n哪項正確區分生平資料與文本可證內容？`, correct: `「${item.background}」屬資料卡背景；作品是否主張某事仍須回到「${item.workA}」「${item.workB}」的具體內容。`, wrong: ["作者經歷過某事，兩篇作品便必然逐字自傳。", "作品標題可以證明作者一生所有思想。", "生平資料與作品文字完全相同，無須區分。"], reason: "背景提供解讀可能，文本主張仍需作品內證據。" },
+    251: { stem: `${card}\n作品與哪種文學傳統連結最有依據？`, correct: `${item.tradition}；作品形式與題材都由資料卡所列內容支持。`, wrong: ["只因年代相近便判為近體詩。", "沒有分行也沒有臺詞，仍一律判為劇本。", "文學傳統只能由作者名氣決定。"], reason: "正解同時使用體裁形式與題材脈絡，不只靠時代。" },
+    252: { stem: `${card}\n時代背景如何影響作品題材？`, correct: `${item.era}使「${item.common}」成為兩篇可觀察的共同題材。`, wrong: ["時代背景決定每個字，作者沒有任何選材。", "作品完全不可能反映公共環境變化。", "只要背景相同，所有作者作品都一樣。"], reason: "正解指出背景提供題材條件，但沒有把影響說成機械決定。" },
+    253: { stem: `${card}\n比較同一作者兩篇作品，哪項特色可由資料卡證明？`, correct: `共同點是${item.common}；差異是${item.difference}。`, wrong: ["兩篇每一句都相同。", "兩篇體裁與取材完全無法比較。", "只由作者相同便推定主旨相同。"], reason: "正解分開共同題材與不同形式／證據安排。" },
+    254: { stem: `核對虛構資料卡：${item.author}的作品為「${item.workA}」「${item.workB}」；${other.author}另有自己的作品。哪項配對正確？`, correct: `${item.author}—${item.workA}`, wrong: [`${other.author}—${item.workA}`, `${item.author}—${other.workA}`, "兩位作者與所有作品可以任意互換"], reason: "正解逐字回到資料卡的作者—作品欄，避免張冠李戴。" },
+  };
+  return bySerial[serial];
+}
+
+const CALLIGRAPHY_CASES = Object.freeze([
+  { script: "篆書", observable: "字形較縱長，轉折多呈圓轉，部件排列勻稱，筆畫粗細變化不明顯", stroke: "線條圓轉而均勻，結構偏對稱", medium: "石刻拓本，紙面墨色呈現刻線輪廓，局部可見石面斑駁", layout: "縱向成行，字距均勻，行距略寬", style: "整飭、古樸且節奏均勻", limit: "只能由圓轉、縱長與均稱描述風格，不能斷言作者當時心情" },
+  { script: "隸書", observable: "字形較扁，橫向伸展明顯，部分橫畫收筆向上挑出", stroke: "橫勢較強，常見起收筆的波勢", medium: "墨跡紙本，可直接看出落筆濃淡與收筆速度變化", layout: "橫向字勢彼此呼應，行距大於字距", style: "舒展、開張而有橫向節奏", limit: "可描述扁方與波勢，不能只憑一筆猜作者身分" },
+  { script: "楷書", observable: "點畫交代清楚，轉折分明，字形端正且各部件位置穩定", stroke: "筆畫彼此分開，起行收界線清楚", medium: "碑刻拓本，字口受刻石與拓印影響，墨色不是原筆墨濃淡", layout: "縱行整齊，字距與行距規律", style: "端整、清晰且便於辨讀", limit: "可從點畫與結構判讀，不能把端整直接等同作者性格" },
+  { script: "行書", observable: "多數字仍可辨認，部分筆畫連帶，書寫次序形成流動走向", stroke: "連筆增加但未大幅省略基本結構", medium: "墨跡手卷，可見墨色乾濕與行筆速度", layout: "橫向展開，字距隨語意與筆勢略有疏密", style: "流動、自然且兼顧辨識", limit: "可說連帶使節奏流動，不能聲稱每個連筆都有固定情緒" },
+  { script: "草書", observable: "筆畫大量連寫與省略，字形變化大，需熟悉草法才能辨讀", stroke: "連綿迅疾，部件常以簡化符號替代", medium: "墨跡立軸，濃淡枯潤與飛白直接保留", layout: "縱向行氣連續，字距忽密忽疏但整行仍有走勢", style: "奔放、迅疾而富變化", limit: "可描述連綿與疏密，不能把難辨直接評成書寫錯誤" },
+  { script: "楷書", observable: "橫豎撇捺各自完整，部件界線清楚，重心落在方整格內", stroke: "提按適中，筆畫斷開而呼應", medium: "墨跡冊頁，可見原筆鋒及墨色深淺", layout: "每頁數行，字距稍密、行距清楚", style: "沉著、穩定且層次分明", limit: "可由可見點畫說穩定，不能推定作者從不急躁" },
+  { script: "隸書", observable: "多數字取扁方，長橫向左右展開，撇捺較有張力", stroke: "橫畫起伏形成波磔，縱畫相對收斂", medium: "碑刻拓本，缺角可能來自石面損傷而非原書漏筆", layout: "字字獨立，橫向伸展使行內節奏開闊", style: "雄厚、開闊而有古意", limit: "需區分石損與原筆畫，不能把拓本缺口當書體特徵" },
+  { script: "行書", observable: "字形大小略有變化，相鄰筆畫偶爾牽絲，多數部件仍完整", stroke: "提按與連帶交替，速度比楷書自由", medium: "墨跡信札，折痕與墨色可見實際書寫載體", layout: "行距不等，遇到長詞時字距變密", style: "親切、活潑而有行氣", limit: "可由信札形式說行氣自然，不能臆測收信者反應" },
+  { script: "篆書", observable: "部件常左右均衡，線條彎轉連續，字形較狹長", stroke: "粗細接近，轉角少見明顯方折", medium: "石刻拓本，線條邊緣略粗糙，須和原刻形狀分辨", layout: "縱列整齊，每字中心線穩定", style: "莊重、均衡且裝飾性強", limit: "可從均衡和線條說莊重，不可據此判斷作品用途" },
+  { script: "草書", observable: "上下字勢相接，許多部件化為短點與長弧，辨讀依上下文", stroke: "速度快，墨線有枯濕與粗細突變", medium: "墨跡長卷，接筆與飛白能直接觀察", layout: "橫卷行氣連續，空白在急密處後突然放大", style: "跌宕、強烈且節奏變化大", limit: "可描述節奏變化，不能把每處空白解成固定故事" },
+  { script: "楷書", observable: "筆畫次序清楚，結體略長但仍方正，偏旁比例穩定", stroke: "方折與圓轉並用，點畫各有起止", medium: "碑帖影印本，已經攝影與印刷，應區分原碑、拓本及再製層次", layout: "每行字數一致，行列秩序清楚", style: "規整、清峻且易於臨習", limit: "可描述再製品可見特徵，不能假裝直接看到原碑墨色" },
+  { script: "行書", observable: "基本字形可辨，轉折處常順勢帶到下一筆，少量省筆不妨礙閱讀", stroke: "連帶柔和，粗細隨速度自然變化", medium: "墨跡題跋，可見後加文字與主體作品位置不同", layout: "短行依畫面空白安排，行距配合主體構圖", style: "靈活、含蓄且能融入畫面", limit: "可說布局配合空白，不可推定作者一定在同日完成全部內容" },
+]);
+
+const CALLIGRAPHY_ASSET_SPECS = Object.freeze(CALLIGRAPHY_CASES.map((item, index) => ({
+  id: `CHI_R4_ASSET_${String(index + 13).padStart(3, "0")}`,
+  type: "calligraphy-observation",
+  title: `書法觀察卡${["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二"][index]}`,
+  item,
+})));
+
+function calligraphyCardLongDescription(asset) {
+  const { item } = asset;
+  return `${asset.title}為原創書體特徵示意，不是古帖臨摹或真蹟鑑定樣本。可見字形與筆畫：${item.observable}；線條：${item.stroke}；行款：${item.layout}；載體提示：${item.medium}。`;
+}
+
+function calligraphySvgText(label, value, y) {
+  const chunks = [];
+  const characters = [...`${label}：${value}`];
+  while (characters.length) chunks.push(characters.splice(0, 14).join(""));
+  return `<text x="465" y="${y}" font-size="14" font-family="sans-serif">${chunks.map((chunk, index) => `<tspan x="465" dy="${index ? 21 : 0}">${svgEscape(chunk)}</tspan>`).join("")}</text>`;
+}
+
+function svgForCalligraphyAsset(asset) {
+  const { item } = asset;
+  const strokes = {
+    篆書: '<path d="M150 80 Q235 35 320 80 Q365 145 320 205 Q235 250 150 205 Q105 145 150 80 Z" fill="none" stroke="black" stroke-width="13" stroke-linecap="round"/><path d="M190 92 Q235 130 280 92 M190 195 Q235 155 280 195" fill="none" stroke="black" stroke-width="13" stroke-linecap="round"/>',
+    隸書: '<path d="M115 105 C145 86 315 86 355 112" fill="none" stroke="black" stroke-width="18" stroke-linecap="square"/><path d="M155 72 L155 225 M300 72 L300 220" stroke="black" stroke-width="13"/><path d="M105 218 C170 245 305 245 370 205" fill="none" stroke="black" stroke-width="20" stroke-linecap="round"/>',
+    楷書: '<path d="M145 78 L320 78 M235 48 L235 232 M145 135 L320 135 M130 225 L340 225" fill="none" stroke="black" stroke-width="15" stroke-linecap="square"/><path d="M155 145 L125 205 M310 145 L345 205" stroke="black" stroke-width="13"/>',
+    行書: '<path d="M135 85 C205 50 305 75 330 105 C280 105 215 110 165 140 C210 155 285 145 315 170 C270 195 195 205 125 225" fill="none" stroke="black" stroke-width="15" stroke-linecap="round"/><path d="M235 55 C220 115 245 165 210 235" fill="none" stroke="black" stroke-width="10"/>',
+    草書: '<path d="M120 115 C190 45 325 65 280 125 C245 165 155 125 170 185 C185 240 315 225 355 165" fill="none" stroke="black" stroke-width="18" stroke-linecap="round"/><path d="M305 70 C250 130 245 185 205 235" fill="none" stroke="black" stroke-width="9"/>',
+  }[item.script];
+  const title = svgEscape(asset.title);
+  const desc = svgEscape(calligraphyCardLongDescription(asset));
+  return `<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 720 460"><title id="title">${title}</title><desc id="desc">${desc}</desc><rect width="720" height="460" fill="white"/><text x="360" y="32" text-anchor="middle" font-size="22" font-family="sans-serif" fill="black">${title}（原創特徵示意）</text><rect x="70" y="55" width="360" height="300" fill="white" stroke="black" stroke-width="2"/><line x1="250" y1="55" x2="250" y2="355" stroke="#bbb"/><line x1="70" y1="205" x2="430" y2="205" stroke="#bbb"/>${strokes}${calligraphySvgText("字形", item.observable, 78)}${calligraphySvgText("筆勢", item.stroke, 175)}${calligraphySvgText("行款", item.layout, 260)}<text x="360" y="405" text-anchor="middle" font-size="14" font-family="sans-serif">示意線條只呈現觀察維度；辨識須合併字形、筆畫、結構與載體，不依顏色。</text><text x="360" y="435" text-anchor="middle" font-size="13" font-family="sans-serif">黑白列印可讀；不是古代真蹟、拓本複製或特定作者作品。</text></svg>`;
+}
+
+const calligraphySourceAssets = CALLIGRAPHY_ASSET_SPECS.map((asset) => ({
+  id: asset.id,
+  subject: "chinese",
+  type: asset.type,
+  file: `assets/${asset.id}.svg`,
+  creator: "Codex R4 Chinese content author",
+  source: "Original schematic observation card; no historical artwork or external font asset reproduced.",
+  license: "CC-BY-4.0",
+  transformation: "Original SVG stroke schematic composed for visible-feature practice; explicitly not a facsimile or authentication sample.",
+  skillIds: ["CHI_R4_S255", "CHI_R4_S256", "CHI_R4_S257", "CHI_R4_S258", "CHI_R4_S259", "CHI_R4_S260"],
+  caption: `${asset.title}（原創書體特徵示意，不作真蹟鑑定）`,
+  alt: calligraphyCardLongDescription(asset),
+  longDescription: calligraphyCardLongDescription(asset),
+  dataTable: { columns: ["觀察維度", "可見內容"], rows: [["字形", asset.item.observable], ["筆畫", asset.item.stroke], ["行款", asset.item.layout], ["載體", asset.item.medium]] },
+  print: { blackAndWhiteReadable: true, colorIndependent: true, directLabels: true, note: "黑白線條、方格與直接文字標籤；題目不依顏色判斷。" },
+  provenance: sourceProvenance(["AUTH-CHINESE-LC-BC-4-3", "AUTH-CHINESE-LP-5-4-4"]),
+}));
+
+const sourceAssets = [...dataSourceAssets, ...calligraphySourceAssets];
+
+function calligraphyPracticeSpec(serial, item, index) {
+  const bySerial = {
+    255: { stem: `書法觀察卡：「${item.observable}」最接近哪一書體？`, correct: item.script, wrong: ["印刷黑體", "拉丁字母草寫", "無法依任何可見特徵描述"], reason: `「${item.observable}」與${item.script}的基本可見特徵相合。` },
+    256: { stem: `觀察卡標示「${item.script}：${item.stroke}」用筆畫與結構比較時，哪項正確？`, correct: `應以「${item.stroke}」和其他書體逐項比較，不能只用快慢或好看概括。`, wrong: ["所有書體的筆畫結構完全相同。", "只要字大就是草書。", "不看部件便可由作者年代判定。"], reason: "正解提出可見、可逐項比較的筆畫與結構證據。" },
+    257: { stem: `作品載體資料：「${item.medium}」哪項判斷最恰當？`, correct: `${item.medium}；判讀時須區分書寫本身、刻石／拓印或影印再製造成的效果。`, wrong: ["拓本與墨跡能保留完全相同的墨色濃淡。", "任何缺口都必然是原作者故意漏筆。", "載體不影響我們能觀察到的特徵。"], reason: "正解區分原書寫、刻製、拓印與再製的證據層次。" },
+    258: { stem: `行款資料：「${item.layout}」哪項描述最符合可見布局？`, correct: item.layout, wrong: ["只數單字筆畫，不看字距行距。", "任何空白都等於文章結束。", "行距不同便證明作品損壞。"], reason: "正解直接描述行向、字距、行距與空白分布。" },
+    259: { stem: `依觀察「${item.stroke}；${item.layout}」，哪個風格描述有可見證據？`, correct: item.style, wrong: ["作者一定因某件未記載事件而悲傷。", "作品價值只由售價決定。", "看不出任何線條與布局特徵。"], reason: `「${item.style}」可回扣線條、疏密與行氣，沒有補作者心理。` },
+    260: { stem: `欣賞觀察卡「${item.observable}」時，哪項解釋最守證據邊界？`, correct: item.limit, wrong: ["由一筆便確定作者全部意圖。", "把後世傳說當成眼前可見筆畫。", "只說喜歡或不喜歡，不描述任何特徵。"], reason: "正解以可見特徵為起點，並明說不能推出的作者意圖。" },
+  };
+  return { ...bySerial[serial], assets: [CALLIGRAPHY_ASSET_SPECS[index].id] };
+}
+
+const TOOL_CASES = Object.freeze([
+  { purpose: "確認單字「載」在「刊載」中的讀音與義項", tool: "教育部國語辭典的單字條目", guide: "條目先列字音，再分義項與例詞；符號「例」後接例句", keyword: "載 刊載 讀音", author: "教育部語文資料編輯單位", date: "本次查詢頁所示更新日期", publisher: "教育部網站", first: "辭典單字條目與例詞", second: "未署名貼文轉述讀音", conflict: "轉述把另一義項讀音套入刊載" },
+  { purpose: "查成語「緣木求魚」的整體義與使用情境", tool: "教育部成語典的成語條目", guide: "凡例以「釋義」說整體義，「典源」列早期文獻，「用法」示例", keyword: "緣木求魚 釋義 用法", author: "成語典編輯單位", date: "條目版本日期", publisher: "教育部成語典", first: "成語典完整條目", second: "只拆解四個單字的留言", conflict: "留言把成語解成真的爬樹捕魚活動" },
+  { purpose: "了解凝結現象的基本概念與生活例子", tool: "有作者與修訂日期的科學百科條目", guide: "條目分定義、形成條件、例子與參考資料", keyword: "水氣 凝結 溫差", author: "科學百科編輯與審查者", date: "最近修訂日期", publisher: "學術教育機構", first: "具審查者與參考資料的百科原條目", second: "轉傳的除霧偏方摘要", conflict: "摘要宣稱任何起霧都只需猛擦" },
+  { purpose: "確認老街某條巷道目前是否封閉", tool: "工程主管單位的最新公告與地圖", guide: "公告欄標示發布日、生效期間、範圍與聯絡資訊", keyword: "老街 巷道 封閉 日期", author: "道路工程承辦單位", date: "公告發布與生效日期", publisher: "地方政府公告系統", first: "主管單位施工公告", second: "沒有日期的旅遊地圖截圖", conflict: "截圖仍畫出公告已封閉路段" },
+  { purpose: "比較每台斤與每公斤價格", tool: "可查單位定義並能重算的換算資料", guide: "凡例註明單位名稱、換算基準與有效位數", keyword: "台斤 公斤 換算", author: "度量衡主管機關", date: "現行換算說明日期", publisher: "官方度量衡資料頁", first: "主管機關換算定義", second: "匿名購物心得", conflict: "心得直接比較數字，未統一單位" },
+  { purpose: "找一篇訪談引語的完整上下文", tool: "附時間碼的原始錄音與逐字稿", guide: "逐字稿凡例標示說話者、停頓、省略與時間碼", keyword: "受訪者姓名 引句 關鍵詞", author: "採訪與逐字稿整理者", date: "錄音日期與逐字稿版本", publisher: "校刊原始資料庫", first: "原始錄音及完整逐字稿", second: "社群轉貼的一句引文", conflict: "轉貼省略「有人以為」而改變主語" },
+  { purpose: "查古典作品一個句段的完整上下文", tool: "有篇名、作者、版本與校注說明的全文資料", guide: "凡例區分原文、校記、注釋與白話解說", keyword: "篇名 關鍵句 上下文", author: "古籍整理與校注者", date: "所用版本出版日期", publisher: "具編校資訊的古籍資料庫", first: "標明底本與校記的全文", second: "只收一句名言的語錄圖", conflict: "語錄圖把後人解說排成原文" },
+  { purpose: "確認某張老照片可能拍攝年代", tool: "照片原件、建築改建紀錄與有日期報紙", guide: "檔案凡例說明館藏號、來源、推定日期與不確定標記", keyword: "建築名稱 改建 年份 老照片", author: "館藏登錄與檔案編輯者", date: "各資料原始日期及登錄日期", publisher: "地方文史館藏系統", first: "照片原件與改建檔案", second: "依褪色深淺猜年代的短文", conflict: "短文給確切年份卻沒有任何可查來源" },
+  { purpose: "了解一個官職在特定時代的職掌", tool: "標明朝代範圍與引文來源的歷史辭典", guide: "條目先標時代，再列職掌變化與文獻例證", keyword: "官職名 朝代 職掌", author: "歷史辭典編者", date: "辭典版次與出版年", publisher: "學術出版社", first: "引用制度原始文獻的辭典條目", second: "戲劇角色台詞", conflict: "戲劇把不同朝代職掌混為一談" },
+  { purpose: "確認植物名稱是否符合實際特徵", tool: "附檢索表、照片日期與形態描述的植物圖鑑", guide: "凡例說明葉序、葉脈、花果等檢索欄位與分布符號", keyword: "葉序 葉脈 果實 地區", author: "圖鑑作者與審訂者", date: "圖鑑版次與觀察日期", publisher: "自然教育機構", first: "可依特徵檢索的圖鑑", second: "識圖軟體第一張結果截圖", conflict: "截圖只看葉形，忽略果實與分布" },
+  { purpose: "查一項圖表數據的原始定義", tool: "附資料表、欄位說明與調查方法的原始報告", guide: "凡例定義分母、單位、缺值符號與抽樣期間", keyword: "圖表標題 指標名稱 年份", author: "調查執行單位", date: "調查期間與發布日期", publisher: "原始報告發布機構", first: "原始資料表與方法章", second: "媒體只截最高點的圖片", conflict: "截圖省略分母與時間範圍" },
+  { purpose: "找適合特定讀者的書籍基本資訊", tool: "館藏目錄與出版社書目頁", guide: "目錄凡例說明作者、版次、主題標目、適讀註記與館藏狀態", keyword: "主題 作者 適讀 版次", author: "圖書館編目者與出版社", date: "出版年與館藏更新時間", publisher: "圖書館館藏系統", first: "書籍版權頁與館藏紀錄", second: "匿名推薦清單", conflict: "推薦清單把不同版次頁數與內容混在一起" },
+]);
+
+function toolPracticeSpec(serial, item) {
+  const bySerial = {
+    261: { stem: `查詢目的：「${item.purpose}」最適合先使用哪種工具？`, correct: item.tool, wrong: ["只看無來源社群留言", "只按搜尋廣告排序", "詢問與問題無關的陌生人"], reason: `「${item.tool}」的資料欄位能直接回答查詢目的。` },
+    262: { stem: `工具書凡例寫：「${item.guide}」使用時哪項做法正確？`, correct: "先依凡例理解欄位與符號，再讀條目內容，避免把注釋或例句當正文。", wrong: ["凡例可以完全略過，所有符號都自行猜。", "任何縮寫都表示資料不可靠。", "只讀第一行便概括所有義項。"], reason: "凡例界定資料層次與縮寫，用錯會改變條目意思。" },
+    263: { stem: `要縮小「${item.purpose}」的搜尋範圍，哪組關鍵詞最有效？`, correct: item.keyword, wrong: ["好東西 最新 必看", "所有資料", "只輸入一個沒有辨識力的助詞"], reason: "正解包含對象、條件或欄位名稱，能排除同名與無關結果。" },
+    264: { stem: `為了「${item.purpose}」而採用資料時，哪筆來源紀錄最完整？`, correct: `${item.author}；${item.date}；${item.publisher}；查詢目的為「${item.purpose}」。`, wrong: ["網路上看到，日期不詳。", "朋友轉傳，作者不明。", "只抄標題，不記版本與發布單位。"], reason: "正解記錄作者／單位、日期、出版資訊與使用目的，可供重查。" },
+    265: { stem: `比較第一手「${item.first}」與轉述「${item.second}」，哪項判斷正確？`, correct: "第一手資料距原事件或原記錄較近；轉述可提供整理觀點，但仍應回查它是否忠實引用。", wrong: ["所有轉述都比原始資料更完整。", "第一手資料永遠不必檢查方法與版本。", "兩者來源距離完全相同。"], reason: "正解區分證據距離，也沒有把第一手等同絕對無誤。" },
+    266: { stem: `兩資料互相矛盾：「${item.conflict}」。哪項處理最可靠？`, correct: `回到${item.first}，核對${item.author}、${item.date}與凡例；若差異來自版本或範圍，明確記錄。`, wrong: ["選版面較漂亮者。", "兩者各取半句拼成第三種說法。", "刪除來源欄便視為沒有矛盾。"], reason: "正解以原始資料、作者、日期與適用範圍定位矛盾來源。" },
+  };
+  return bySerial[serial];
+}
+
+function referencePracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial >= 249 && serial <= 254) {
+    const representations = ["necessary-background", "biography-versus-text", "literary-tradition", "historical-context-and-theme", "same-author-comparison", "author-work-attribution"];
+    return AUTHOR_CARDS.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, authorPracticeSpec(serial, item, questionIndex), representations[serial - 249], "chinese-author-context"));
+  }
+  if (serial >= 255 && serial <= 260) {
+    const representations = ["script-identification", "stroke-structure-comparison", "rubbing-versus-ink", "calligraphy-layout", "calligraphy-style", "visible-evidence-boundary"];
+    return CALLIGRAPHY_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, calligraphyPracticeSpec(serial, item, questionIndex), representations[serial - 255], "chinese-calligraphy"));
+  }
+  if (serial >= 261 && serial <= 266) {
+    const representations = ["reference-tool-choice", "reference-guide", "search-keywords", "source-metadata", "primary-secondary-source", "source-conflict"];
+    return TOOL_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, toolPracticeSpec(serial, item), representations[serial - 261], "chinese-reference"));
+  }
+  return null;
 }
 
 const writingSkills = chineseSkills.filter((skill) => Number(skill.id.slice(-3)) >= 303);
@@ -3455,5 +3714,6 @@ await Promise.all([
   writeFile(path.join(SUBJECT_ROOT, "source", "writing-tasks.json"), `${JSON.stringify(writingTasks, null, 2)}\n`, "utf8"),
   writeFile(path.join(SUBJECT_ROOT, "source", "assets.json"), `${JSON.stringify(sourceAssets, null, 2)}\n`, "utf8"),
   ...DATA_ASSET_SPECS.map((asset) => writeFile(path.join(SUBJECT_ROOT, "source", "assets", `${asset.id}.svg`), `${svgForDataAsset(asset)}\n`, "utf8")),
+  ...CALLIGRAPHY_ASSET_SPECS.map((asset) => writeFile(path.join(SUBJECT_ROOT, "source", "assets", `${asset.id}.svg`), `${svgForCalligraphyAsset(asset)}\n`, "utf8")),
 ]);
 console.log(`author-chinese-r4: wrote ${sourceUnits.length} units, ${sourceUnits.flatMap((unit) => unit.lectures).length} lectures, ${sourceUnits.flatMap((unit) => unit.questions).length} skill questions, ${stimuli.length} stimuli, ${stimulusQuestions.length} stimulus questions, ${writingTasks.length} writing tasks, ${sourceAssets.length} assets`);

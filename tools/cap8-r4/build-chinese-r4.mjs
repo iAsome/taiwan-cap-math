@@ -83,7 +83,7 @@ function validateAsset(value, authorityIds) {
   exactKeys(value, ["id", "subject", "type", "file", "creator", "source", "license", "transformation", "skillIds", "caption", "alt", "longDescription", "dataTable", "print", "provenance"], value.id);
   assert.match(value.id, /^CHI_R4_ASSET_\d{3}$/u);
   assert.equal(value.subject, "chinese");
-  assert(["bar-chart", "line-chart", "pie-chart"].includes(value.type), `${value.id}: unsupported asset type`);
+  assert(["bar-chart", "line-chart", "pie-chart", "calligraphy-observation"].includes(value.type), `${value.id}: unsupported asset type`);
   assert.equal(value.file, `assets/${value.id}.svg`);
   assert.equal(value.creator, "Codex R4 Chinese content author");
   assert.equal(value.license, "CC-BY-4.0");
@@ -91,12 +91,13 @@ function validateAsset(value, authorityIds) {
   assert.deepEqual(Object.keys(value.dataTable).sort(ordinal), ["columns", "rows"]);
   assert.equal(value.dataTable.columns.length, 2);
   assert.equal(value.dataTable.rows.length, 4);
-  assert(value.dataTable.rows.every((row) => row.length === 2 && typeof row[0] === "string" && Number.isFinite(row[1])), `${value.id}: invalid data table`);
+  assert(value.dataTable.rows.every((row) => row.length === 2 && typeof row[0] === "string" && (typeof row[1] === "string" || Number.isFinite(row[1]))), `${value.id}: invalid data table`);
   assert.deepEqual(Object.keys(value.print).sort(ordinal), ["blackAndWhiteReadable", "colorIndependent", "directLabels", "note"].sort(ordinal));
   assert.equal(value.print.blackAndWhiteReadable, true);
   assert.equal(value.print.colorIndependent, true);
   assert.equal(value.print.directLabels, true);
-  assert(value.skillIds.length === 7 && value.skillIds.every((id) => /^CHI_R4_S(?:218|219|220|221|222|223|224)$/u.test(id)), `${value.id}: invalid skill links`);
+  const validSkillLink = value.type === "calligraphy-observation" ? /^CHI_R4_S(?:255|256|257|258|259|260)$/u : /^CHI_R4_S(?:218|219|220|221|222|223|224)$/u;
+  assert(value.skillIds.length === (value.type === "calligraphy-observation" ? 6 : 7) && value.skillIds.every((id) => validSkillLink.test(id)), `${value.id}: invalid skill links`);
   assert(value.provenance.sourceRefs.every((id) => authorityIds.has(id)), `${value.id}: invalid authority ref`);
 }
 
@@ -163,7 +164,7 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
   assert.equal(source.stimuli.length, 320, "Chinese requires 320 shared stimuli");
   assert.equal(source.stimulusQuestions.length, 1280, "Chinese requires four questions for each stimulus");
   assert.equal(source.writingTasks.length, 120, "Chinese requires 120 writing tasks");
-  assert.equal(source.assets.length, 12, "Chinese mixed-media practice requires twelve reviewed data assets");
+  assert.equal(source.assets.length, 24, "Chinese mixed-media practice requires twelve data and twelve calligraphy assets");
 
   for (const asset of source.assets) validateAsset(asset, authorityIds);
   const assetIds = new Set(source.assets.map((asset) => asset.id));
@@ -206,6 +207,7 @@ export async function validateChineseR4Source(source, { repoRoot = REPO_ROOT } =
     ["stimulus ID", source.stimuli.map((value) => value.id)],
     ["writing-task ID", source.writingTasks.map((value) => value.id)],
     ["asset ID", source.assets.map((value) => value.id)],
+    ["skill-question stem", skillQuestions.map((value) => value.stem.trim())],
     ["visible question", allQuestions.map(visibleKey)],
     ["question essence", allQuestions.map(essenceKey)],
   ]) assert.equal(new Set(values).size, values.length, `duplicate ${label}`);
