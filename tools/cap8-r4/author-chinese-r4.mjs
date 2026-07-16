@@ -11,6 +11,22 @@ const WRITING_CALIBRATION = JSON.parse(await readFile(path.join(HERE, "ledger", 
 const PUBLIC_DOMAIN_CLASSICS = JSON.parse(await readFile(path.join(HERE, "ledger", "chinese-public-domain-classics.json"), "utf8")).entries;
 const SOURCE_SCHEMA = "cap8-r4-chinese-static-unit-source-v1";
 const DIFFICULTIES = ["foundation", "foundation", "foundation", "standard", "standard", "standard", "standard", "advanced", "advanced", "advanced", "transfer", "transfer"];
+const zhQuote = (value) => String(value).includes("「") ? `『${value}』` : `「${value}」`;
+
+function strengthenQuestionExplanation(question) {
+  const correctOption = question.options[question.answerIndex];
+  const correctRationale = question.optionRationales.find(({ optionIndex }) => optionIndex === question.answerIndex);
+  const current = String(correctRationale.reason ?? "").trim();
+  if (current.length < 12 || current === String(correctOption).trim()) {
+    const factualLead = current && current !== String(correctOption).trim() ? `${current.replace(/[；。]$/u, "")}；` : "";
+    correctRationale.reason = `${factualLead}${zhQuote(correctOption)}能回應題幹所問；代回題幹後，內容、形式與前後條件一致。`;
+  }
+  for (const review of question.independentReviews) {
+    const evidence = String(review.evidence ?? "").trim();
+    if (evidence.length < 12 || evidence === String(correctOption).trim()) review.evidence = correctRationale.reason;
+  }
+  return question;
+}
 
 const GUIDES = [
   ["字音須同時核對字形、詞義與語境，標準注音是最後依據。", "同一字在不同詞語中可能改變讀音，不能把最熟的音套用到所有義項。", "教育部字典的音讀、詞義與例詞"],
@@ -722,7 +738,7 @@ const toneRows = [
 const contextualMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue, wrongMeanings }) => [`句子「${sentence}」中的「${target}」最接近哪個意思？`, meaning, ...wrongMeanings, `${clue}，所以此處取「${meaning}」義。`]);
 const literalDerivedRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`比較「${literal}」與「${sentence}」，哪項分析正確？`, `前句「${target}」取「${literalMeaning}」義，後句引申為「${meaning}」`, `兩句「${target}」完全同義且都取「${literalMeaning}」`, `「${literal}」是引申義；「${sentence}」只能按字面解釋`, `兩句都有完整上下文，卻仍不能判斷「${target}」的意思`, `同一詞由「${literalMeaning}」延伸到「${meaning}」，語境使義項不同。`]);
 const sameWordRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`「${literal}」「${sentence}」兩句都有「${target}」，哪項關係正確？`, `字形相同，但前句指「${literalMeaning}」，後句指「${meaning}」`, `兩句都有「${target}」，所以整句意思完全一樣`, `「${target}」在兩句讀音必定不同，所以是兩個字`, `「${sentence}」沒有任何可判斷「${target}」意義的搭配`, `前後受詞與情境不同，使「${target}」分別對應兩個義項。`]);
-const collocationMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue }) => [`要判斷「${sentence}」中「${target}」的義項，哪個線索最直接？`, clue, `「${target}」的筆畫數`, `「${sentence}」的總字數`, `讀者看見「${target}」時最先想到的畫面`, `「${clue}」直接限制此處只能解作「${meaning}」。`]);
+const collocationMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue }) => [`要判斷「${sentence}」中「${target}」的義項，哪個線索最直接？`, clue, `「${target}」的筆畫數`, `「${sentence}」的總字數`, `讀者看見「${target}」時最先想到的畫面`, `${zhQuote(clue)}直接限制此處只能解作「${meaning}」。`]);
 const abstractUseRows = polysemyContexts.map(({ target, sentence, meaning, literalMeaning }) => [`哪項正確說明「${sentence}」中的抽象用法？`, `「${target}」由「${literalMeaning}」轉用來表示「${meaning}」`, `句中真的出現了「${literalMeaning}」所指的實物或動作`, `「${target}」只是多餘裝飾，從「${sentence}」刪去也不影響`, `「${target}」既是抽象用法，就可不管搭配而任意解釋`, `原句保留與本義的關聯，並由搭配把意義限定為「${meaning}」。`]);
 const substitutionRows = polysemyContexts.map(({ target, sentence, meaning, substitute, wrongSubstitutes }) => [`若不改變「${sentence}」的主要句意，哪個詞最適合替換「${target}」？`, substitute, ...wrongSubstitutes, `「${substitute}」在此可保留「${meaning}」的語境義，其餘詞只適用別的義項。`]);
 
@@ -1026,7 +1042,7 @@ const connectorRows = [
   ["他「從」原始紀錄找到線索。", "介詞，引出來源或起點", "連詞，表示選擇", "代名詞，代替線索", "形容詞，描述紀錄"],
   ["「不但」修正錯字，「而且」補上來源。", "關聯詞連接遞進的兩項行動", "兩者都是處所介詞", "兩者都表示假設", "兩者只連接人物"],
   ["報告「關於」河岸照明提出建議。", "介詞，引出報告涉及的主題", "連詞，表示結果", "代名詞，代替河岸", "副詞，表示次數"],
-].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`判斷「${sentence}」中引號詞的介詞或連詞功能，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`判斷${zhQuote(sentence)}中引號詞的介詞或連詞功能，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
 
 const flexiblePosRows = [
   ["他完成一項「研究」。／小組正在「研究」原因。", "前句作名詞，後句作動詞", "兩句都只能作名詞", "兩句都只能作形容詞", "前句是副詞、後句是連詞"],
@@ -1492,7 +1508,7 @@ const punctuationCorrectionRows = [
   ["資料有三項；日期；單位；來源。", "總說後用冒號，短列舉用頓號：資料有三項：日期、單位、來源。", "分號越多越清楚", "把所有符號改問號", "刪去三項內容"],
   ["真的是這樣！嗎？", "疑問與驚嘆可依主要語氣選一個合宜句末符號，不應任意疊成「！嗎？」", "所有符號都保留才強烈", "改成頓號", "改用書名號"],
   ["編輯問「你確定嗎？」？", "提示語與完整引問構成一句，通常不在右引號後再重複加問號", "右引號後再加三個問號", "把內問號改頓號", "把引號改書名號"],
-].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`訂正「${sentence}」的標點與引文層次，哪項最恰當？`, correct, wrongA, wrongB, wrongC, correct]);
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`訂正${zhQuote(sentence)}的標點與引文層次，哪項最恰當？`, correct, wrongA, wrongB, wrongC, correct]);
 
 const PUNCTUATION_CASES = Object.freeze({
   CHI_R4_S092: commaEnumerationRows,
@@ -1737,9 +1753,9 @@ function lectureFor(skill, family, guide, questions) {
     const question = questions[questionIndex];
     const wrongIndex = question.options.findIndex((_, optionIndex) => optionIndex !== question.answerIndex);
     return {
-      belief: `誤以為「${question.options[wrongIndex]}」也能回答「${question.stem}」。`,
+      belief: `題幹：${question.stem}\n錯誤想法：把選項${zhQuote(question.options[wrongIndex])}當成答案。`,
       whyWrong: question.optionRationales[wrongIndex].reason,
-      correction: `應改選「${question.options[question.answerIndex]}」；${question.optionRationales[question.answerIndex].reason}`,
+      correction: `正確選項：${zhQuote(question.options[question.answerIndex])}\n理由：${question.optionRationales[question.answerIndex].reason}`,
     };
   });
   misconceptionItems.push({
@@ -1976,7 +1992,7 @@ function stimulusFor(index) {
       `「有根據再說。」這句話在${place}出現了兩次。第一次，是${person}阻止大家採用「${rejected}」處理${focus}；第二次，是${person}${action}並攤開${evidence}之後。兩次之間，事情從爭論走向${result}。`,
       `工作紀錄本來只是冷冰冰的欄位，卻留下了一段經過：${person}遇到${focus}，沒有${rejected}；他${action}，並把${evidence}逐項記下。幾行文字之後，${result}，也讓下一位接手者知道問題如何被解開。`,
       `${person}心想，若現在${rejected}，事情也許能暫時結束，卻沒有人能說明為什麼。他於是在${place}${action}。看見${evidence}相互支持後，他才放心接受「${result}」這個結果。`,
-      `${place}裡有人查資料、有人記時間，也有人保留不同意見。${person}把眾人的工作接起來，先${action}，再共同比對${evidence}。分工沒有讓責任消失，反而使${result}。`,
+      `${place}裡有人查資料、有人記時間，也有人保留不同意見。${person}把眾人的工作接起來，先${action.replace(/^先/u, "")}，再共同比對${evidence}。分工沒有讓責任消失，反而使${result}。`,
       `${result}後，${place}安靜下來。${person}沒有把功勞攬在自己身上，只把${evidence}整理好。回想有人曾要他${rejected}，他更確定：真正重要的不是最快結案，而是${action}。`,
       `因為${focus}，有人提出${rejected}；因為這項建議留下疑問，${person}決定${action}；又因${evidence}能回應疑問，最後${result}。這一連串因果，使事件的每一步都能從前文找到來由。`,
     ],
@@ -2107,7 +2123,7 @@ function stimulusQuestionsFor(stimulus, index) {
       optionRationales: options.map((option, optionIndex) => ({
         optionIndex,
         isCorrect: optionIndex === answerIndex,
-        reason: optionIndex === answerIndex ? spec.reason : `文本沒有提供足以支持「${option}」的資訊；這個說法也沒有回答題幹所問的${{ narrative: "人物、因果或篇章作用", expository: "說明重點或組織", argumentative: "主張與論據", practical: "目的、條件或可採行資訊" }[genre]}。`,
+        reason: optionIndex === answerIndex ? spec.reason : `文本沒有提供足以支持${zhQuote(option)}的資訊；這個說法也沒有回答題幹所問的${{ narrative: "人物、因果或篇章作用", expository: "說明重點或組織", argumentative: "主張與論據", practical: "目的、條件或可採行資訊" }[genre]}。`,
       })),
       difficulty: ["standard", "foundation", "advanced", "transfer"][questionIndex],
       cognitiveProcess: [["comprehend"], ["locate"], ["infer"], ["analyze-structure"]][questionIndex],
@@ -2125,7 +2141,7 @@ function stimulusQuestionsFor(stimulus, index) {
 
 const rawStimuli = Array.from({ length: 320 }, (_, index) => stimulusFor(index));
 const stimuli = rawStimuli.map(({ facts, ...stimulus }) => stimulus);
-const stimulusQuestions = rawStimuli.flatMap((stimulus, index) => stimulusQuestionsFor(stimulus, index));
+const stimulusQuestions = rawStimuli.flatMap((stimulus, index) => stimulusQuestionsFor(stimulus, index)).map(strengthenQuestionExplanation);
 
 const READING_REPRESENTATIONS = Object.freeze({
   106: "narrative-elements", 107: "narrative-causality", 108: "narrative-order", 109: "narrative-viewpoint",
@@ -2189,6 +2205,7 @@ function narrativePracticeSpec(serial, stimulus) {
 
 function expositoryPracticeSpec(serial, stimulus, questionIndex) {
   const { person, place, focus, action, evidence, result, rejected, variant } = stimulus.facts;
+  const focusObject = focus.replace(/^(?:一張|一個|一份|一則|一段|一支|一件|一場|一次|一名|一位)/u, "");
   const methods = ["舉例並依步驟說明", "比較兩種做法", "問題—解決", "問答分層"];
   const structures = ["操作順序：提出原則後依序交代做法、核對與結果。", "比較結構：先並列兩種做法，再說明差異與結果。", "問題—解決：先指出資訊混雜，再提出查核方法與成效。", "問答結構：以連續問題分別說明禁忌、做法與成效。"][variant];
   const before = 8 + (questionIndex % 4);
@@ -2232,8 +2249,8 @@ function expositoryPracticeSpec(serial, stimulus, questionIndex) {
     },
     119: {
       stem: `由這篇關於${focus}的資料，最多可以支持哪一項結論？`,
-      correct: `在${place}這個案例中，${action}並核對${evidence}，促成「${result}」。`,
-      wrong: [`任何情境採「${action}」都必然得到和「${result}」完全相同的結果。`, `${person}處理${focus}的方法證明往後不必再更新任何資料。`, `只要反對「${rejected}」的人，其所有${focus}判斷都正確。`],
+      correct: `在${place}這個案例中，採取「${action}」，查驗項目包括${evidence}，因而促成「${result}」。`,
+      wrong: [`任何情境採「${action}」都必然得到和「${result}」完全相同的結果。`, `${person}處理${focus}的方法證明往後不必再更新任何資料。`, `只要反對「${rejected}」的人，其所有${focusObject}判斷都正確。`],
       reason: "正解保留人物、地點、做法與結果的個案範圍，沒有把單例推成普遍定律。",
     },
   };
@@ -2912,7 +2929,7 @@ function fictionPracticeSpec(serial, item) {
     156: `${item.protagonist}${item.action}。${item.side}。沒有人直接說他做得對，但旁人的動作改變了。`,
     157: `${item.protagonist}原想${item.goal}，卻遇到「${item.obstacle}」。他先猶疑，後來${item.action}，於是${item.change}。`,
     158: `${item.scene}。在這個場景裡，${item.protagonist}正面對「${item.obstacle}」，最後${item.action}。`,
-    159: `開頭寫：「${item.foreshadow}。」${item.protagonist}當時沒有多想。事件發展後，「${item.payoff}」。`,
+    159: `開頭寫：${zhQuote(`${item.foreshadow}。`)}${item.protagonist}當時沒有多想。事件發展後，${zhQuote(`${item.payoff}。`)}`,
     160: `敘事者寫：「${item.scene}。」${item.protagonist}卻想：「${item.thought}。」旁人沒有說出自己的內心。`,
     161: `${item.appearance}；他說「${item.speech}」，並且${item.action}。事後，${item.side}。`,
   };
@@ -2922,7 +2939,7 @@ function fictionPracticeSpec(serial, item) {
     156: { stem: `閱讀本題原創小說片段：\n${text}\n\n旁人的反應在人物刻畫上有何作用？`, correct: `以「${item.side}」從側面顯示${item.protagonist}的行動改變了旁人的判斷。`, wrong: ["證明旁人才是唯一主角，前文行動可以刪去。", "旁人沒有說話，所以這段完全沒有資訊。", "只用來交代天氣，和人物行動無關。"], reason: "旁人的動作承接主角行動，是側面烘托而非無關插曲。" },
     157: { stem: `閱讀本題原創小說片段：\n${text}\n\n人物目標、衝突與轉變如何連接？`, correct: `${item.protagonist}想${item.goal}，受「${item.obstacle}」阻礙；採取行動後，${item.change}。`, wrong: ["人物沒有目標，也沒有遇到任何阻礙。", "衝突在故事開始前已完全解決，後文沒有變化。", "人物只改變外表，做法與理解始終相反。"], reason: "正解依序連起目標、阻礙、選擇與理解變化。" },
     158: { stem: `閱讀本題原創小說片段：\n${text}\n\n場景描寫對情節有什麼作用？`, correct: `「${item.scene}」具體化人物面對的壓力或線索，使後續「${item.action}」更有情境依據。`, wrong: ["場景只為增加字數，刪除後所有線索完全相同。", "場景證明人物能知道所有人的內心。", "場景和事件發生在不同作品，彼此無關。"], reason: "場景中的物件、光線或空間直接參與人物判斷與行動。" },
-    159: { stem: `閱讀本題原創小說片段：\n${text}\n\n開頭細節與後文如何形成伏筆照應？`, correct: `「${item.foreshadow}」先留下可疑細節，後文「${item.payoff}」再使它成為可解釋結果的線索。`, wrong: ["兩句用字不同，所以不可能互相照應。", "伏筆必須在開頭直接公布完整結局。", "後文只是重複人物姓名，沒有回收任何細節。"], reason: "前文細節在後文得到新意義，符合伏筆被回收的安排。" },
+    159: { stem: `閱讀本題原創小說片段：\n${text}\n\n開頭細節與後文如何形成伏筆照應？`, correct: `${zhQuote(item.foreshadow)}先留下可疑細節，後文${zhQuote(item.payoff)}再使它成為可解釋結果的線索。`, wrong: ["兩句用字不同，所以不可能互相照應。", "伏筆必須在開頭直接公布完整結局。", "後文只是重複人物姓名，沒有回收任何細節。"], reason: "前文細節在後文得到新意義，符合伏筆被回收的安排。" },
     160: { stem: `閱讀本題原創小說片段：\n${text}\n\n哪項正確區分敘事者與人物觀點？`, correct: `敘事者描述可見場景；「${item.thought}」只屬於${item.protagonist}的內心，不能當成所有人的共同想法。`, wrong: ["敘事者與所有人物必定知道完全相同資訊。", "引號中的內心句是客觀天氣報告。", "旁人未說內心，便可任意替他補上動機。"], reason: "正解依敘述層次限制資訊來源，沒有把單一人物觀點擴成全知事實。" },
     161: { stem: `閱讀本題原創小說片段：\n${text}\n\n哪項人物評價有充分細節支持？`, correct: `${item.protagonist}${item.quality}；話語、行動及旁人反應共同支持這項評價。`, wrong: ["人物一定自私，因為片段沒有介紹他的生日。", "人物從未採取行動，只靠運氣完成一切。", "人物的全部性格只能由外貌一項永久決定。"], reason: `「${item.speech}」「${item.action}」與旁人反應共同支持「${item.quality}」。` },
   };
@@ -3036,17 +3053,17 @@ function coreReadingPracticeSpec(serial, item, index) {
     169: { stem: `閱讀原創短文〈${item.title}〉：\n${text}\n\n哪項是全文主旨而非局部細節？`, correct: item.theme, wrong: [item.detail, `全文只在介紹「${item.title}」五個字的筆畫。`, `只要記住${item.detail}，其他段落都可刪除。`], reason: "正解涵蓋開頭問題、兩項支持與結尾轉折；局部細節只服務其中一段。" },
     170: { stem: `閱讀原創段落：\n${item.supportA}${item.keyword}使資料可比較；${item.supportB}${item.turn}\n\n反覆出現的「${item.keyword}」協助歸納哪個段落重點？`, correct: item.theme, wrong: [item.detail, `所有問題都只要多寫「${item.keyword}」便會自動解決。`, "段落主要比較人物姓名與字數。"], reason: `「${item.keyword}」在做法、結果與轉折中反覆連接同一核心概念。` },
     171: { stem: `閱讀原創段落：\n${text}\n\n明示主題句位於何處？`, correct: topicPosition, wrong: ["第一句", "第二句", "第三句", "第四句"].filter((position) => position !== topicPosition), reason: `「${item.theme}」直接概括其餘支持句，因此它所在的${topicPosition}是明示主題句。` },
-    172: { stem: `閱讀沒有明示主題句的原創段落：\n${text}\n\n由支持句推回，最適合補入哪個主題句？`, correct: `${item.theme}。`, wrong: [`本文只需要記住「${item.detail}」。`, `所有地方遇到${item.subject}都必然有同一結果。`, "段落沒有共同重點，只是隨機排列句子。"], reason: "正解能統攝兩項支持與結尾限制，且沒有擴大成絕對結論。" },
+    172: { stem: `閱讀沒有明示主題句的原創段落：\n${text}\n\n由支持句推回，最適合補入哪個主題句？`, correct: `${item.theme}。`, wrong: [`本文只需要記住${zhQuote(item.detail)}。`, `所有地方遇到${item.subject}都必然有同一結果。`, "段落沒有共同重點，只是隨機排列句子。"], reason: "正解能統攝兩項支持與結尾限制，且沒有擴大成絕對結論。" },
     173: { stem: `閱讀原創短文〈${item.title}〉：\n${text}\n\n哪個主旨涵蓋全文且沒有過度延伸？`, correct: item.theme, wrong: [item.detail, `這個案例證明全世界所有${item.subject}都只能用同一方法。`, `作者唯一目的在讚美「${item.keyword}」這個詞。`], reason: "正解涵蓋全文並保留個案方法的適用範圍；其餘太窄或過度擴張。" },
     174: { stem: `標題為〈${item.title}〉，正文如下：\n${text}\n\n標題與主旨的關係，哪項最恰當？`, correct: `標題以具體意象或問題引入「${item.subject}」，主旨則進一步概括為「${item.theme}」。`, wrong: ["標題已包含所有方法、證據與限制，正文完全沒有新增資訊。", "標題和正文談不同事件，彼此毫無關係。", "只要標題較短，就一定比主旨範圍更大。"], reason: "標題是閱讀入口，主旨則統整正文對該題材提出的完整關係與判斷。" },
-    175: { stem: `閱讀原創短文：\n${text}\n\n結尾轉折如何確認作者真正重點？`, correct: `結尾把注意力由「${item.detail}」這個現象轉向「${item.theme}」的判斷。`, wrong: ["結尾取消前文所有資訊，改談完全無關的人物。", "有「然而」便表示作者反對自己寫過的每一句。", "結尾只重複標題，沒有改變理解焦點。"], reason: "轉折並非推翻全文，而是重新界定前文細節應支持到哪個重點。" },
-    176: { stem: `閱讀原創短文：\n${text}\n\n題幹問「${item.detail}」。應優先定位哪一處明示資訊？`, correct: item.detail, wrong: [item.theme, item.title, `文中沒有出現的${item.subject}未來預測`], reason: "題幹關鍵詞與正解在原文形成直接同義或原句對應。" },
-    177: { stem: `閱讀原創短文：\n${text}\n\n哪個選項是原文細節「${item.detail}」的正確改寫？`, correct: `文本明確提供與「${item.detail}」相同的事實，雖然換了說法，條件沒有增加。`, wrong: [`文本說${item.detail}永遠適用於所有情況。`, `文本否認曾有「${item.detail}」這項資訊。`, `文本只憑作者喜好猜測${item.detail}。`], reason: "正解保留人物、範圍與程度，只做同義轉述。" },
+    175: { stem: `閱讀原創短文：\n${text}\n\n結尾轉折如何確認作者真正重點？`, correct: `結尾把注意力由${zhQuote(item.detail)}這個現象轉向${zhQuote(item.theme)}的判斷。`, wrong: ["結尾取消前文所有資訊，改談完全無關的人物。", "有「然而」便表示作者反對自己寫過的每一句。", "結尾只重複標題，沒有改變理解焦點。"], reason: "轉折並非推翻全文，而是重新界定前文細節應支持到哪個重點。" },
+    176: { stem: `閱讀原創短文：\n${text}\n\n題幹問${zhQuote(item.detail)}。應優先定位哪一處明示資訊？`, correct: item.detail, wrong: [item.theme, item.title, `文中沒有出現的${item.subject}未來預測`], reason: "題幹關鍵詞與正解在原文形成直接同義或原句對應。" },
+    177: { stem: `閱讀原創短文：\n${text}\n\n哪個選項是原文細節${zhQuote(item.detail)}的正確改寫？`, correct: `文本明確提供與${zhQuote(item.detail)}相同的事實，雖然換了說法，條件沒有增加。`, wrong: [`文本說${item.detail}永遠適用於所有情況。`, `文本否認曾有${zhQuote(item.detail)}這項資訊。`, `文本只憑作者喜好猜測${item.detail}。`], reason: "正解保留人物、範圍與程度，只做同義轉述。" },
     178: { stem: `閱讀原創短文：\n第一段：${item.supportA}\n第二段：${item.supportB}\n\n整合相隔段落後，哪項結論成立？`, correct: item.theme, wrong: [item.detail, `兩段互相矛盾，所以任何資訊都不能使用。`, `只讀第二段便可證明所有${item.subject}都相同。`], reason: "正解同時使用第一段的方法或條件與第二段的結果。" },
     179: { stem: `閱讀原創短文：\n${text}\n\n哪一項是文本資訊，而不是選項新增的推測？`, correct: item.detail, wrong: [`作者因此一生都拒絕改變任何決定。`, `所有讀者看到${item.title}都會有完全相同感受。`, `${item.subject}明年必定在每個城市造成相同結果。`], reason: "正解可在原文直接定位；其餘加入終身動機、全體感受或未來預測。" },
-    180: { stem: `某活動要挑一項同時符合「可查來源、明列版本、能重做步驟」的資料。候選甲只有漂亮版面；乙列來源與版本但沒有方法；丙列來源、版本，並說明如何得到「${item.detail}」；丁只有轉傳次數。應選哪一項？`, correct: "丙", wrong: ["甲", "乙", "丁"], reason: "只有丙同時滿足三項條件；乙缺可重做方法，甲與丁都不能補足來源。" },
+    180: { stem: `某活動要挑一項同時符合「可查來源、明列版本、能重做步驟」的資料。候選甲只有漂亮版面；乙列來源與版本但沒有方法；丙列來源、版本，並說明如何得到${zhQuote(item.detail)}；丁只有轉傳次數。應選哪一項？`, correct: "丙", wrong: ["甲", "乙", "丁"], reason: "只有丙同時滿足三項條件；乙缺可重做方法，甲與丁都不能補足來源。" },
     181: { stem: `若要支持結論「${item.theme}」，下列哪段引文最直接？`, correct: `${item.supportA}${item.supportB}`, wrong: [item.opening, `標題只有〈${item.title}〉。`, `一名未出場人物說自己喜歡${item.keyword}。`], reason: "正解同時提供做法或原因與可觀察結果，能直接支持指定結論。" },
-    182: { stem: `閱讀原創短文：\n${text}\n\n答案「${item.theme}」主要依據哪組具體句段？`, correct: `「${item.supportA}」和「${item.supportB}」`, wrong: [`只依標題〈${item.title}〉`, `只依文中沒有出現的作者生平`, "只依讀者自己的類似經驗"], reason: "兩句分別提供條件／做法與結果，能讓答案回扣具體文本。" },
+    182: { stem: `閱讀原創短文：\n${text}\n\n答案${zhQuote(item.theme)}主要依據哪組具體句段？`, correct: `${zhQuote(item.supportA)}和${zhQuote(item.supportB)}`, wrong: [`只依標題〈${item.title}〉`, `只依文中沒有出現的作者生平`, "只依讀者自己的類似經驗"], reason: "兩句分別提供條件／做法與結果，能讓答案回扣具體文本。" },
   };
   return bySerial[serial];
 }
@@ -3062,7 +3079,7 @@ function inferencePracticeSpec(serial, item) {
   const bySerial = {
     183: { stem: `閱讀原創片段：\n${item.protagonist}${item.action}；接著，${item.side}。\n\n綜合兩項線索，最合理的隱含結論是什麼？`, correct: `${item.protagonist}的做法具有說服力，旁人因看見具體行動而開始改變原先反應。`, wrong: ["旁人從故事開始便知道所有結果。", "主角沒有做任何事，變化全由天氣造成。", "兩項線索證明世界上所有人都會有相同反應。"], reason: "主角行動與旁人後續反應形成可指出的前後關係。" },
     184: { stem: `閱讀原創片段：\n${item.appearance}。面對「${item.obstacle}」，${item.protagonist}說：「${item.speech}。」\n\n由反應推論，人物當時的情緒與動機最接近哪項？`, correct: `${item.protagonist}雖有壓力，仍想${item.goal}，因此選擇審慎處理而非逃避。`, wrong: ["人物毫無目標，只想讓問題惡化。", "人物因得知全部未來而完全沒有猶疑。", "外貌細節證明人物一生只會有一種情緒。"], reason: "外在動作、對障礙的回應與明說目標共同支持正解。" },
-    185: { stem: `閱讀原創片段：\n若${item.protagonist}確實${item.action}，且前文線索「${item.foreshadow}」得到核對，最可能造成哪個後果？`, correct: item.payoff, wrong: [`人物立刻忘記${item.goal}，所有線索消失。`, "未核對資料便宣布相反結果。", "場景因此永久不再有任何問題。"], reason: "正解承接行動與伏筆，是同一因果鏈中可預期的結果。" },
+    185: { stem: `閱讀原創片段：\n若${item.protagonist}確實${item.action}，且前文線索${zhQuote(item.foreshadow)}得到核對，最可能造成哪個後果？`, correct: item.payoff, wrong: [`人物立刻忘記${item.goal}，所有線索消失。`, "未核對資料便宣布相反結果。", "場景因此永久不再有任何問題。"], reason: "正解承接行動與伏筆，是同一因果鏈中可預期的結果。" },
     186: { stem: `閱讀原創片段：\n有人看著尚未核對的資料說：「真周全啊，連原始記錄都不必看！」${item.protagonist}則開始${item.action}。\n\n前一句的言外之意是什麼？`, correct: "說話者以表面稱讚表達批評，認為不看原始記錄其實並不周全。", wrong: ["說話者真心主張刪除所有記錄。", "說話者只在介紹「周全」的字典筆畫。", "句末驚嘆號證明他完全沒有態度。"], reason: "後文的查核行動與前句字面稱讚形成反差，顯示反語。" },
     187: { stem: `閱讀原創片段：\n${item.protagonist}想${item.goal}，因而${item.action}；後來${item.side}。\n\n哪項屬合理推論，而不是無據猜測？`, correct: item.quality, wrong: ["人物從出生起就預知今天的全部事件。", "所有旁人其實都和主角有親屬關係。", "同樣做法在任何時空都必定成功。"], reason: "正解由目標、行動與旁人反應推出；其餘加入文本沒有的生平或絕對範圍。" },
     188: { stem: `閱讀原創片段：\n敘事者只寫「${item.side}」，沒有交代旁人的內心獨白。對這項缺席資訊，哪個判斷最恰當？`, correct: "可知道旁人行動改變，但不能確定他心中每一個理由；作者刻意把動機留給後文或讀者保留判斷。", wrong: ["既然沒寫內心，就可任意補成任何動機。", "沒有內心獨白便表示旁人不存在。", "敘事者一定忘記寫作，所以全文沒有可用資訊。"], reason: "缺席資訊限制推論強度，不能用生活想像補成確定事實。" },
@@ -3091,7 +3108,7 @@ function structurePracticeSpec(serial, item) {
     198: { stem: `把下列材料排成合理篇章：甲「${item.supportB}」；乙「${item.opening}」；丙「${item.turn}」；丁「${item.supportA}」。順序應為何？`, correct: "乙→丁→甲→丙", wrong: ["甲→丙→乙→丁", "丙→甲→丁→乙", "丁→丙→乙→甲"], reason: "先提出問題，再交代條件／方法與結果，最後由轉折收束。" },
     199: { stem: `原創段落先說「${item.theme}」，中間分述「${item.supportA}」「${item.supportB}」，結尾再說「兩項證據共同支持上述原則」。結構為何？`, correct: "總—分—總", wrong: ["時間倒敘", "只有並列細節，沒有統攝句", "問答結構"], reason: "開頭總述、中間分項支持、結尾回扣總旨，符合總分總。" },
     200: { stem: `原創文章依序寫：「${item.opening}」「原因在於資訊基準不足」「${item.supportA}」「${item.supportB}」。這是哪種結構？`, correct: "提出問題—分析原因—提出方法—呈現結果", wrong: ["人物出生—求學—就業—退休", "只列景物顏色，沒有問題", "先寫答案再刪除所有證據"], reason: "四部分依問題、分析、解法與結果建立明確邏輯。" },
-    201: { stem: `原創段落目前是：①${item.opening}②${item.supportA}③${item.supportB}④${item.turn}。要插入「這項結果只有在前述條件一致時才能比較。」放在哪裡最合適？`, correct: "③後④前", wrong: ["全文標題之前", "①後②前", "④之後另開無關新題"], reason: "插入句中的「這項結果」回指③，又為④的限制性轉折預作銜接。" },
+    201: { stem: `原創段落目前是：①${item.opening}②${item.supportA}③${item.supportB}④${item.turn}要插入「這項結果只有在前述條件一致時才能比較。」放在哪裡最合適？`, correct: "③後④前", wrong: ["全文標題之前", "①後②前", "④之後另開無關新題"], reason: "插入句中的「這項結果」回指③，又為④的限制性轉折預作銜接。" },
     202: { stem: `兩段文字為：「${item.supportA}」＿＿「${item.supportB}」；結尾則寫「${item.turn}」。依關係填入哪個承接詞最恰當？`, correct: "因此（第二句呈現前述做法後的結果）", wrong: ["同時刪除前句", "不料（兩句必然互相否定）", "例如（第二句只是前句的同義詞）"], reason: "第二句承接前一做法或條件並呈現結果，因果承接最清楚。" },
     203: { stem: `閱讀架構：問題「${item.opening}」→方法「${item.supportA}」→結果「${item.supportB}」→限制「${item.turn}」。哪個摘要保留完整架構？`, correct: item.theme, wrong: [item.detail, `只說〈${item.title}〉很有趣，不交代問題與方法。`, `把${item.subject}擴大成沒有例外的世界定律。`], reason: "正解涵蓋問題、方法、結果與限制，且不陷入單一細節。" },
   };
@@ -3153,12 +3170,12 @@ function crossTextPracticeSpec(serial, item, index) {
   const textB = `乙文：有人認為處理${item.subject}只要快速即可；作者則主張「${item.theme}」，但也提醒單一案例不能推到所有情況。`;
   const bySerial = {
     211: { stem: `比較兩篇原創文本：\n${textA}\n${textB}\n\n主旨有何共同與差異？`, correct: `兩文都關注${item.subject}的可靠判斷；甲重在方法與結果，乙另處理「求快」觀點並界定結論範圍。`, wrong: ["兩文主題完全無關，只因字數相近才放在一起。", "甲乙都主張不必核對任何資料。", "兩文每一句立場都相反，沒有共同議題。"], reason: "共同議題可由關鍵概念確認，差異則來自乙文的反方與限制。" },
-    212: { stem: `比較兩篇原創文本：\n${textA}\n${textB}\n\n兩文選材與證據有何差異？`, correct: `甲選用「${item.detail}」及具體結果作案例證據；乙主要比較兩種主張並補充推論限制。`, wrong: ["兩文都只引用未署名名言，沒有任何其他材料。", "甲只有作者情緒，乙只有天氣。", "證據來源不同便表示兩文必然互相否定。"], reason: "甲呈現可定位個案，乙呈現論點關係與範圍，證據功能不同。" },
-    213: { stem: `甲文寫：「我第一次遇到${item.subject}時，只看見${item.detail}，後來才理解${item.theme}。」乙文寫：「資料顯示，${item.supportA}」兩文觀點與語氣如何？`, correct: "甲採第一人稱回顧，語氣帶自我修正；乙採較客觀的說明語氣，聚焦可查資料。", wrong: ["兩文都是全知敘事，知道所有人物內心。", "甲是統計表，乙是私人日記，因為句子長短不同。", "第一人稱必然沒有證據，說明文必然沒有立場。"], reason: "代詞、時間回顧與資料措辭分別建立兩種觀點位置和語氣。" },
+    212: { stem: `比較兩篇原創文本：\n${textA}\n${textB}\n\n兩文選材與證據有何差異？`, correct: `甲選用${zhQuote(item.detail)}及具體結果作案例證據；乙主要比較兩種主張並補充推論限制。`, wrong: ["兩文都只引用未署名名言，沒有任何其他材料。", "甲只有作者情緒，乙只有天氣。", "證據來源不同便表示兩文必然互相否定。"], reason: "甲呈現可定位個案，乙呈現論點關係與範圍，證據功能不同。" },
+    213: { stem: `甲文寫：${zhQuote(`我第一次遇到${item.subject}時，只看見${item.detail}，後來才理解${item.theme}。`)}乙文寫：${zhQuote(`資料顯示，${item.supportA}`)}兩文觀點與語氣如何？`, correct: "甲採第一人稱回顧，語氣帶自我修正；乙採較客觀的說明語氣，聚焦可查資料。", wrong: ["兩文都是全知敘事，知道所有人物內心。", "甲是統計表，乙是私人日記，因為句子長短不同。", "第一人稱必然沒有證據，說明文必然沒有立場。"], reason: "代詞、時間回顧與資料措辭分別建立兩種觀點位置和語氣。" },
     214: { stem: `甲文是通知：「請於指定時間依${item.keyword}流程完成${item.subject}。」乙文是議論：「${item.theme}，因為${item.supportA}」兩文如何處理同一議題？`, correct: "甲以對象與行動指示讓讀者執行；乙提出主張與理由，說明為何應採這項原則。", wrong: ["通知和議論功能完全相同，都只抒發私人情感。", "甲沒有讀者，乙沒有任何主張。", "文體不同表示不能討論共同議題。"], reason: "相同議題可依不同文體分別完成行動安排與理由論證。" },
-    215: { stem: `甲文提供：「${item.supportA}」；乙文提供：「${item.supportB}${item.turn}」整合兩文可形成哪項結論？`, correct: item.theme, wrong: [item.detail, `只由甲文便可證明所有${other.subject}也相同。`, "乙文有轉折，所以應刪除甲文全部資訊。"], reason: "甲提供條件或方法，乙補上結果與限制，兩者互補而非互相取消。" },
+    215: { stem: `甲文提供：${zhQuote(item.supportA)}；乙文提供：${zhQuote(`${item.supportB}${item.turn}`)}整合兩文可形成哪項結論？`, correct: item.theme, wrong: [item.detail, `只由甲文便可證明所有${other.subject}也相同。`, "乙文有轉折，所以應刪除甲文全部資訊。"], reason: "甲提供條件或方法，乙補上結果與限制，兩者互補而非互相取消。" },
     216: { stem: `甲文主張「處理${item.subject}應優先求快」；乙文主張「應先${item.keyword}，即使多花一步」。兩文衝突最可能來自哪裡？`, correct: "兩文採用不同優先標準：甲重時間，乙重可核對性與錯誤後果。", wrong: ["只因兩文標點數量不同。", "兩文其實主張完全相同，只是作者姓名未寫。", "衝突來自讀者不認識標題中的字。"], reason: "分歧在價值排序與證據風險，不在版面或用字表面。" },
-    217: { stem: `主張是「${item.theme}」。甲文記錄「${item.supportA}${item.supportB}」；乙文只介紹「${other.detail}」。哪篇能直接支持主張？`, correct: "甲文，因其方法與結果都直接回應指定主張；乙文談的是另一主題的局部細節。", wrong: ["乙文，因任何細節都能支持任何主張。", "兩文都不能，因具體證據一律無效。", "只看篇名較長者，不必讀內容。"], reason: "支持關係須比對主張中的對象、條件與結果，甲文三者相合。" },
+    217: { stem: `主張是${zhQuote(item.theme)}。甲文記錄${zhQuote(`${item.supportA}${item.supportB}`)}；乙文只介紹${zhQuote(other.detail)}。哪篇能直接支持主張？`, correct: "甲文，因其方法與結果都直接回應指定主張；乙文談的是另一主題的局部細節。", wrong: ["乙文，因任何細節都能支持任何主張。", "兩文都不能，因具體證據一律無效。", "只看篇名較長者，不必讀內容。"], reason: "支持關係須比對主張中的對象、條件與結果，甲文三者相合。" },
   };
   return bySerial[serial];
 }
@@ -3848,9 +3865,9 @@ function editingPracticeSpec(serial, item, index) {
     stem: `編輯案例${index + 1}：\n${text}\n\n針對「${task}」，哪項修訂最恰當？`,
     correct,
     wrong: [
-      `保留「${text}」原樣，因為句子看得懂就不必處理${task}問題。`,
-      `只調整「${text}」的字數與換行，不核對${task}。`,
-      `把「${text}」整段換成未交代的新事件，避開原句的${task}問題。`,
+      `保留${zhQuote(text)}原樣，因為句子看得懂就不必處理${task}問題。`,
+      `只調整${zhQuote(text)}的字數與換行，不核對${task}。`,
+      `把${zhQuote(text)}整段換成未交代的新事件，避開原句的${task}問題。`,
     ],
     reason,
   };
@@ -4181,7 +4198,7 @@ for (const [familyIndex, family] of families.entries()) {
   const skills = chineseSkills.filter((skill) => skill.unitId === unitId);
   const guide = GUIDES[familyIndex];
   const localizedFamily = { ...family, title: FAMILY_LABELS[familyIndex] };
-  const questions = skills.flatMap((skill) => questionsFor(skill, localizedFamily, guide));
+  const questions = skills.flatMap((skill) => questionsFor(skill, localizedFamily, guide)).map(strengthenQuestionExplanation);
   const lectureQuestions = Map.groupBy(questions, (question) => question.skillIds[0]);
   const lectures = skills.map((skill) => lectureFor(skill, localizedFamily, guide, lectureQuestions.get(skill.id)));
   sourceUnits.push({ schemaVersion: SOURCE_SCHEMA, unitId, lectures, questions });
