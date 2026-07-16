@@ -1,18 +1,18 @@
 :root {
   --ink: #173a35;
   --ink-2: #294b46;
-  --muted: #6f817d;
+  --muted: #526762;
   --paper: #fffdf8;
   --cream: #f4f1e8;
   --line: #d9ded8;
   --green: #1f675c;
   --green-2: #2d8073;
   --green-soft: #e2f0ea;
-  --coral: #da735d;
+  --coral: #a84332;
   --coral-soft: #f9e7e1;
   --gold: #c18a28;
   --gold-soft: #f7edcf;
-  --blue: #557d92;
+  --blue: #385f73;
   --blue-soft: #e6eff3;
   --red: #b64d45;
   --shadow: 0 18px 50px rgba(35, 65, 58, .10);
@@ -26,6 +26,7 @@ button, input, select, textarea { color: inherit; font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
 a { color: var(--green); }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid #b64d45; outline-offset: 3px; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2 { font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, sans-serif; letter-spacing: -.035em; overflow-wrap: anywhere; }
 .skip-link { position: fixed; z-index: 999; left: 16px; top: -60px; background: #fff; padding: 12px 16px; border-radius: 8px; }
@@ -321,6 +322,53 @@ input:focus, select:focus, textarea:focus { border-color: var(--green); box-shad
 .complete-button.done { background: #74857f; }
 .unit-empty { min-height: 360px; display: grid; place-items: center; border: 1px dashed #b8c5be; border-radius: 12px; color: var(--muted); }
 
+.r4-heading, .r4-filterbar, .r4-layout, .r4-facts, .r4-writing { max-width: 1260px; margin-inline: auto; }
+.r4-progress { width: 210px; display: grid; gap: 6px; }
+.r4-progress strong { font-family: Georgia, serif; font-size: 1.45rem; }
+.r4-progress span { color: var(--muted); font-size: .7rem; }
+.r4-progress > div { height: 7px; overflow: hidden; border-radius: 99px; background: #d9e0dc; }
+.r4-progress i { display: block; width: 0; height: 100%; background: var(--green); }
+.r4-facts { display: grid; grid-template-columns: repeat(4, 1fr); margin-bottom: 24px; border: 1px solid var(--line); border-radius: 11px; background: var(--paper); }
+.r4-facts div { display: grid; gap: 3px; border-right: 1px solid var(--line); padding: 15px 18px; }
+.r4-facts div:last-child { border: 0; }
+.r4-facts strong { font-family: Georgia, serif; font-size: 1.45rem; }
+.r4-facts span { color: var(--muted); font-size: .68rem; }
+.r4-filterbar > label:first-child { display: grid; gap: 6px; color: var(--muted); font-size: .7rem; font-weight: 800; }
+.r4-filterbar select { min-width: 310px; }
+.r4-layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); align-items: start; gap: 20px; }
+.r4-skill-list { position: sticky; top: 96px; max-height: calc(100vh - 118px); overflow: auto; border: 1px solid #ccd4cf; border-radius: 11px; background: rgba(255,253,248,.74); padding: 9px; }
+.r4-skill-list button { width: 100%; display: grid; grid-template-columns: 30px 1fr auto; align-items: center; gap: 8px; border: 0; border-radius: 7px; background: transparent; padding: 10px; text-align: left; }
+.r4-skill-list button:hover, .r4-skill-list button.active { background: var(--green-soft); }
+.r4-skill-list button span { width: 26px; height: 26px; display: grid; place-items: center; border: 1px solid #c6d2cc; border-radius: 50%; font-size: .6rem; }
+.r4-skill-list button b { font-size: .72rem; line-height: 1.5; }
+.r4-skill-list button i { color: var(--green); font-style: normal; }
+.r4-lesson { min-width: 0; }
+.r4-lesson-card .unit-hero::after { display: none; }
+.r4-example-list, .r4-misconceptions { display: grid; gap: 12px; }
+.r4-example-list article, .r4-misconceptions article, .r4-checks details { border: 1px solid var(--line); border-radius: 9px; background: #faf9f4; padding: 16px; }
+.r4-example-list article p:last-child, .r4-misconceptions article p:last-child { margin-bottom: 0; }
+.r4-checks { display: grid; gap: 8px; }
+.r4-checks summary { cursor: pointer; font-size: .8rem; font-weight: 800; line-height: 1.7; }
+.r4-checks details p:last-child { margin-bottom: 0; }
+.r4-lesson-actions { display: grid; grid-template-columns: 1fr auto; }
+.r4-lesson-actions .primary { display: grid; place-items: center; border-radius: 0; text-decoration: none; }
+.r4-asset { margin: 18px 0; }
+.r4-asset img { display: block; max-width: 100%; height: auto; margin: 0 auto; border: 1px solid var(--line); background: white; }
+.r4-asset figcaption { margin-top: 7px; color: var(--ink-2); font-size: .76rem; line-height: 1.6; }
+.r4-asset details { margin-top: 8px; }
+.r4-asset summary { cursor: pointer; font-weight: 800; }
+.r4-asset table { width: 100%; margin: 10px 0; border-collapse: collapse; }
+.r4-asset th, .r4-asset td { border: 1px solid var(--line); padding: 8px; text-align: left; }
+.r4-writing { margin-top: 55px; border-top: 1px solid var(--line); padding-top: 34px; }
+.writing-card { border: 1px solid var(--line); border-radius: 12px; background: var(--paper); padding: clamp(22px, 4vw, 38px); }
+.writing-card > div:first-child { display: flex; justify-content: space-between; color: var(--coral); font-size: .7rem; font-weight: 900; }
+.writing-card h3 { margin: 16px 0 12px; font-size: 1.7rem; }
+.writing-card > p { max-width: 900px; color: var(--ink-2); line-height: 1.95; }
+.writing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 22px; }
+.writing-grid section { border: 1px solid var(--line); border-radius: 9px; background: #faf9f4; padding: 18px; }
+.writing-grid li { color: var(--ink-2); font-size: .8rem; line-height: 1.8; }
+.question-assets { border-bottom: 1px solid var(--line); background: #f7f3e9; padding: 22px 30px; }
+
 .domain-grid { max-width: 1260px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; margin: 0 auto 35px; }
 .domain-card { min-height: 250px; border: 1px solid #ccd4cf; border-radius: 11px; background: var(--paper); padding: 22px; }
 .domain-card > span { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; color: var(--green); background: var(--green-soft); font-family: Georgia, serif; }
@@ -510,7 +558,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1
 .toast { position: fixed; z-index: 200; left: 50%; bottom: 24px; transform: translate(-50%, 20px); min-width: 250px; max-width: calc(100vw - 30px); opacity: 0; pointer-events: none; border-radius: 8px; color: white; background: var(--ink); padding: 12px 16px; box-shadow: var(--shadow); text-align: center; font-size: .75rem; transition: .25s ease; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
-body.dark { --ink: #e5efeb; --ink-2: #c3d3ce; --muted: #94aaa4; --paper: #183a35; --cream: #102b27; --line: #31514a; --green: #72b8a8; --green-2: #85c6b7; --green-soft: #234b43; --coral-soft: #50362f; --gold-soft: #4c422b; --blue-soft: #29434e; --shadow: 0 18px 50px rgba(0,0,0,.22); }
+body.dark { --ink: #e5efeb; --ink-2: #c3d3ce; --muted: #b1c2bd; --paper: #183a35; --cream: #102b27; --line: #52726b; --green: #8bd3c2; --green-2: #96daca; --green-soft: #234b43; --coral: #f0a08b; --coral-soft: #50362f; --gold: #ebc375; --gold-soft: #4c422b; --blue: #9ac9dc; --blue-soft: #29434e; --shadow: 0 18px 50px rgba(0,0,0,.22); }
 body.dark .topbar { background: rgba(16,43,39,.92); }
 body.dark input, body.dark select, body.dark textarea, body.dark .choice { color: var(--ink); background: #15342f; }
 body.dark .paper-instructions, body.dark .quiz-paper-scope, body.dark .lesson-content .tip-list li, body.dark .solution-note { background: #183a35; }
@@ -519,6 +567,10 @@ body.dark .quiz-cap-tags { background: #15342f; border-color: #31514a; }
 body.dark .unit-cap-list i, body.dark .quiz-cap-preview span { color: var(--ink); }
 body.dark .quiz-track[open] summary { background: #15342f; }
 body.dark .paper-history-empty { background: #15342f; }
+body.dark .r4-skill-list, body.dark .r4-example-list article, body.dark .r4-misconceptions article, body.dark .r4-checks details, body.dark .writing-grid section { background: #15342f; }
+body.dark .primary, body.dark .complete-button { color: #102b27; }
+body.dark .complete-button.done { color: white; background: #526762; }
+body.dark .secondary, body.dark .quiet-button { color: var(--ink); background: #15342f; }
 
 @media (max-width: 1120px) {
   :root { --sidebar: 210px; }
@@ -560,6 +612,8 @@ body.dark .paper-history-empty { background: #15342f; }
   .rail-legend { display: none; }
   .handbook-layout { grid-template-columns: 1fr; }
   .unit-index { position: static; max-height: 280px; }
+  .r4-layout { grid-template-columns: 1fr; }
+  .r4-skill-list { position: static; max-height: 310px; }
   .domain-grid { grid-template-columns: repeat(2, 1fr); }
   .nonchoice-playbook { grid-template-columns: repeat(2, 1fr); }
 }
@@ -611,6 +665,12 @@ body.dark .paper-history-empty { background: #15342f; }
   .filterbar { display: grid; }
   .chip-group { overflow-x: auto; }
   .handbook-progress { margin-top: 18px; }
+  .r4-progress { margin-top: 18px; }
+  .r4-facts { grid-template-columns: repeat(2, 1fr); }
+  .r4-facts div:nth-child(2) { border-right: 0; }
+  .r4-facts div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .r4-filterbar select { min-width: 0; width: 100%; }
+  .r4-lesson-actions, .writing-grid { grid-template-columns: 1fr; }
   .lesson-block { grid-template-columns: 1fr; gap: 10px; padding: 23px 19px; }
   .unit-hero { padding: 25px 19px; }
   .tip-list { grid-template-columns: 1fr; }
@@ -645,11 +705,7 @@ body.dark .paper-history-empty { background: #15342f; }
 .paper-view-note { color: var(--muted); font-size: .82rem; margin-top: 10px; line-height: 1.6; }
 .archive-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
-/* Text-only visual safety: no student-facing SVG or question images. */
-.paper .question img,
-.lecture-example img {
-  display: none !important;
-}
+/* R4 necessary visuals always retain an equivalent text description and table. */
 
 .text-only-notice {
   display: flex;

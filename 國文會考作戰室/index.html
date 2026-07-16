@@ -22,6 +22,7 @@
       </button>
       <nav id="mainNav">
         <button data-view="home" class="active"><span>⌂</span>總覽</button>
+        <button data-view="r4"><span>文</span>R4 技能課程</button>
         <button data-view="exam"><span>✎</span>模擬考</button>
         <button data-view="quiz" class="nav-sub"><span>↳</span>小考</button>
         <button data-view="papers"><span>▣</span>我的考卷</button>
@@ -53,23 +54,23 @@
             <div class="hero-copy">
               <p class="eyebrow">TAIWAN CAP CHINESE · 106–115</p>
               <h1 id="homeTitle">把會考國文，整理成一條看得見的路。</h1>
-              <p>28 個國中單元、五大內容類別、近十年官方題本，一個地方練完。每份模考依現行官方題本結構組卷，交卷後逐題拆解「為什麼」。</p>
+              <p>320 項第四學習階段技能、5,120 題靜態原創選擇題與 120 個作文任務，一個地方練完。模考只依種子挑選與排序已審核題目，交卷後逐題拆解「為什麼」。</p>
               <div class="hero-actions">
-                <button class="primary" data-view="exam">生成一份完整模考 <span>→</span></button>
-                <button class="secondary" data-view="handbook">打開全冊講義</button>
+                <button class="primary" data-view="exam">選取一份完整模考 <span>→</span></button>
+                <button class="secondary" data-view="r4">打開 R4 技能課程</button>
               </div>
               <div class="hero-facts" aria-label="考試規格">
                 <div><strong>42</strong><span>選擇題</span></div>
                 <div><strong>5</strong><span>內容類別</span></div>
                 <div><strong>70</strong><span>分鐘</span></div>
-                <div><strong>28</strong><span>單元全冊講義</span></div>
+                <div><strong>320</strong><span>技能講義</span></div>
               </div>
             </div>
             <div class="hero-board" aria-label="今日準備建議">
               <div class="board-top"><span>今日路線</span><span class="live-pill">全範圍</span></div>
               <div class="score-ring"><span><strong id="homeProgress">0</strong><small>% 講義完成</small></span></div>
               <div class="board-list">
-                <button data-view="handbook"><i>01</i><span><strong>先補觀念</strong><small>從未完成的單元開始</small></span><b>→</b></button>
+                <button data-view="r4"><i>01</i><span><strong>先補觀念</strong><small>從未完成的技能開始</small></span><b>→</b></button>
                 <button data-view="exam"><i>02</i><span><strong>再做模考</strong><small>70 分鐘還原正式節奏</small></span><b>→</b></button>
                 <button data-view="archive"><i>03</i><span><strong>最後看歷屆</strong><small>106–115 官方題本</small></span><b>→</b></button>
               </div>
@@ -82,8 +83,8 @@
               <p>沒有藏在多層選單裡。國文範圍夠廣了，網站不必再繞路。</p>
             </div>
             <div class="feature-grid">
-              <button class="feature-card coral" data-view="exam"><span class="feature-icon">✎</span><small>EXAM</small><h3>全範圍模擬考</h3><p>依現行官方結構生成，含計時、答案卡與逐題詳解。</p><b>開始生成 →</b></button>
-              <button class="feature-card green" data-view="handbook"><span class="feature-icon">▤</span><small>HANDBOOK</small><h3>國一到國三講義</h3><p>28 單元的觀念澄清、判斷方法、標準流程、陷阱與單元小測。</p><b>閱讀講義 →</b></button>
+              <button class="feature-card coral" data-view="exam"><span class="feature-icon">✎</span><small>EXAM</small><h3>全範圍模擬考</h3><p>依現行官方結構選取靜態題目，含計時、答案卡與逐題詳解。</p><b>開始選題 →</b></button>
+              <button class="feature-card green" data-view="r4"><span class="feature-icon">▤</span><small>R4 COURSE</small><h3>320 項技能講義</h3><p>每項含零基礎講解、至少三個示例、四個真實迷思、診斷與遷移練習。</p><b>閱讀講義 →</b></button>
               <button class="feature-card blue" data-view="atlas"><span class="feature-icon">◇</span><small>ATLAS</small><h3>題型與技巧地圖</h3><p>五大內容類別、常見題型與最短、最穩的判斷方法。</p><b>查看地圖 →</b></button>
               <button class="feature-card gold" data-view="archive"><span class="feature-icon">◷</span><small>ARCHIVE</small><h3>近十年官方考卷</h3><p>106–115 年國文題本、參考答案與官方試題說明集中入口。</p><b>打開考卷館 →</b></button>
             </div>
@@ -100,13 +101,12 @@
             <div><p class="eyebrow" id="examEyebrow">模擬考</p><h1 id="examTitle">會考國文模擬考</h1><p id="examDescription">42 題四選一，共 70 分鐘。依現行官方題本結構與五大內容類別組卷。</p></div>
             <div class="exam-controls" id="examSetup">
               <label>卷別種子<input id="seedInput" type="number" min="1" max="999999" value="11527"></label>
-              <label>難度強度<select id="levelSelect"><option value="1">穩固基礎</option><option value="2" selected>會考平衡</option><option value="3">高鑑別度</option></select></label>
-              <button class="primary" id="generateExam">生成新考卷</button>
+              <button class="primary" id="generateExam">依種子選取考卷</button>
             </div>
             <div class="exam-controls hidden" id="quizExamSetup"><button class="secondary" id="backToListButton" data-view="quiz">返回小考題庫</button><button class="primary" id="switchFullExam">切換完整模考</button></div>
           </div>
           <div id="examEmpty" class="exam-empty">
-            <div class="empty-mark">42</div><h2>準備好再按開始。</h2><p>系統會依種子挑選題目變體與洗牌選項；同一種子可重現同一份試卷。</p><button class="primary" id="startDefaultExam">生成並開始</button>
+            <div class="empty-mark">42</div><h2>準備好再按開始。</h2><p>系統只會依種子挑選與排序已審核的靜態題目；同一種子可重現同一份試卷。</p><button class="primary" id="startDefaultExam">選取並開始</button>
           </div>
           <div id="examWorkspace" class="exam-workspace hidden">
             <aside class="exam-rail">
@@ -122,9 +122,29 @@
           <div id="resultPanel" class="result-panel hidden"></div>
         </section>
 
+        <section class="view" id="view-r4" aria-labelledby="r4Title">
+          <div class="page-heading r4-heading">
+            <div><p class="eyebrow">第四學習階段完整課程</p><h1 id="r4Title">R4 國文技能課程</h1><p>48 個單元、320 項技能。每項技能都有完整講義、至少三個示例、四個迷思澄清與 12 題靜態原創練習。</p></div>
+            <div class="r4-progress" aria-live="polite"><strong id="r4Completed">0 / 320</strong><span>技能已掌握</span><div><i id="r4ProgressBar"></i></div></div>
+          </div>
+          <div class="r4-facts" aria-label="R4 內容數量"><div><strong>320</strong><span>技能講義</span></div><div><strong>3,840</strong><span>技能題</span></div><div><strong>320 × 4</strong><span>共用選文題</span></div><div><strong>120</strong><span>作文任務</span></div></div>
+          <div class="filterbar r4-filterbar">
+            <label>選擇單元<select id="r4UnitSelect" aria-label="選擇 R4 單元"></select></label>
+            <label class="search"><span>⌕</span><input id="r4SkillSearch" type="search" placeholder="搜尋技能名稱"></label>
+          </div>
+          <div class="r4-layout">
+            <aside class="r4-skill-list" id="r4SkillList" aria-label="技能清單"></aside>
+            <div id="r4Lesson" class="r4-lesson" aria-live="polite"><p class="unit-empty">正在載入 R4 靜態課程……</p></div>
+          </div>
+          <section class="r4-writing" aria-labelledby="r4WritingTitle">
+            <div class="section-heading"><div><p class="eyebrow">作文學習系統</p><h2 id="r4WritingTitle">獨立作文任務</h2></div><button class="secondary" id="r4WritingNext">換一題</button></div>
+            <div id="r4WritingTask" aria-live="polite"><p>正在載入作文任務……</p></div>
+          </section>
+        </section>
+
         <section class="view" id="view-quiz" aria-labelledby="quizTitle">
           <div class="page-heading">
-            <div><p class="eyebrow">GRADE-SPECIFIC QUIZZES</p><h1 id="quizTitle">國一至國三單元小考題庫</h1><p>先選年級，再點上學期、下學期或總複習。上／下學期會列出該學期所有單元小考；總複習會列出上學期總複習、下學期總複習與全年總複習。</p></div>
+            <div><p class="eyebrow">R4 STATIC QUIZZES</p><h1 id="quizTitle">第四學習階段單元小考題庫</h1><p>48 個單元各有 12 題小考；系統只依種子選取與排序已審核靜態題目，不在瀏覽器中造題。</p></div>
           </div>
           <div class="quiz-basis"><strong>範圍邊界</strong><p>會考範圍以國家教育研究院《十二年國教語文領域課程綱要》與國中教育會考官方網站為最高依據；單元切分依本站規劃的五大內容類別。每張單元卡片標註凍結逐題分析中的主概念題號，公開資料只用於校準題幹長度與難度，不擴張官方範圍。</p><a href="https://www.naer.edu.tw/PageSyllabus?fid=52" target="_blank" rel="noopener">開啟官方語文領域課綱 ↗</a></div>
           <div id="quizCatalog" class="quiz-catalog"></div>
@@ -216,7 +236,7 @@
           <div id="paperViewer" class="paper-viewer"></div>
         </section>
       </main>
-      <footer><span>會考國文作戰室 · 公開版</span><span>生成題為原創練習，非官方預測題；正式資訊以會考官方公告為準。</span></footer>
+      <footer><span>會考國文作戰室 · R4</span><span>靜態題庫為原創練習，非官方預測題；正式資訊以會考官方公告為準。</span></footer>
     </div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -226,7 +246,7 @@
   <script src="../shared/text-only-policy.js?v=20260712b"></script>
   <script src="../shared/paper-history-ui.js?v=20260712b"></script>
   <script src="../shared/exam-choice-ui.js?v=20260712b"></script>
-  <script src="questions.js?v=20260712b"></script>
-  <script src="app.js?v=20260712b"></script>
+  <script src="r4-client.js?v=20260716"></script>
+  <script src="app.js?v=20260716"></script>
 </body>
 </html>
