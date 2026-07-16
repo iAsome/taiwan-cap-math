@@ -1,0 +1,86 @@
+{
+  "id": "CIV_R4_Q_S112_09",
+  "subject": "civics",
+  "skillIds": [
+    "CIV_R4_S112"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-CIV-CB-4-1",
+    "AUTH-SOCIAL-LC-CIV-CB-4-2",
+    "AUTH-SOCIAL-LC-CIV-CC-4-1",
+    "AUTH-SOCIAL-LC-CIV-DE-4-1",
+    "AUTH-SOCIAL-LC-CIV-DE-4-2",
+    "AUTH-SOCIAL-LP-CIV-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "進行「以多來源資料判斷公共意見」時，哪一種做法最能用反例檢驗「用網路按讚數代表全體人口」這項說法？",
+  "options": [
+    "只因事實查核出現一項表面線索，就以「只看標題不看資料來源」完成「以多來源資料判斷公共意見」的反例檢驗，不再核對其他條件。",
+    "以反例檢驗處理事實查核，卻把局部情況直接解讀成「忽略民調時間與樣本」，並當作「以多來源資料判斷公共意見」在所有案例都成立的規則。",
+    "進行反例檢驗時先接受「把評論與查證事實混為一談」，只留下事實查核中支持該想法的資料作為「以多來源資料判斷公共意見」證據。",
+    "提出一個不符合「以多來源資料判斷公共意見」主張的事實查核情境，用來檢查「用網路按讚數代表全體人口」是否過度概括。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "反例檢驗：以「只看標題不看資料來源」作答會忽略「民意會隨議題、資訊與時間改變；民調、新聞與社群聲量採用不同資料，不能互相替代」；事實查核的一項線索不足以完成「以多來源資料判斷公共意見」。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "反例檢驗：在「以多來源資料判斷公共意見」中把「忽略民調時間與樣本」由事實查核局部情況擴張成通則，與「聲量高不代表全體民意，單一報導框架也不是事件全貌」的適用界線衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "反例檢驗：接受「把評論與查證事實混為一談」就沒有依「檢查樣本、題目措辭、調查時間、誤差、資料來源與被省略的觀點」檢查支持與反對資料，故「以多來源資料判斷公共意見」結論無法重現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "用事實查核反例檢查「用網路按讚數代表全體人口」，可以判斷該說法能否通過「以多來源資料判斷公共意見」的界線。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "反例檢驗"
+  ],
+  "representationType": "counterexample",
+  "misconceptionTargets": [
+    "用網路按讚數代表全體人口"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 公民科內容作者",
+    "copyrightStatus": "全部題文與講義為原創；官方資料僅用於範圍、現行事實與題型校準。",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-CIV-CB-4-1",
+      "AUTH-SOCIAL-LC-CIV-CB-4-2",
+      "AUTH-SOCIAL-LC-CIV-CC-4-1",
+      "AUTH-SOCIAL-LC-CIV-DE-4-1",
+      "AUTH-SOCIAL-LC-CIV-DE-4-2",
+      "AUTH-SOCIAL-LP-CIV-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "CIVICS_SRC_NAER_SOCIAL",
+      "CIVICS_SRC_CEC"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "civics-rule-and-evidence-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "CIV_R4_Q_S112_09：依「民意會隨議題、資訊與時間改變；民調、新聞與社群聲量採用不同資料，不能互相替代。」對「以多來源資料判斷公共意見」執行counterexample作答；「提出一個不符合「以多來源資料判斷公共意見」主張的事實查核情境，用來檢查「用網路按讚數代表全體人口」是否過度概括。」是唯一同時使用必要判準與證據的選項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "civics-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "CIV_R4_Q_S112_09：以「聲量高不代表全體民意，單一報導框架也不是事件全貌」逐項反證其餘三項；選項4成立，其餘選項各有題目所列的概念、界線或證據缺口。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

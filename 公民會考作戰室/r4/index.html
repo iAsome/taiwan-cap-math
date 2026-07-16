@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b5d4b">
+  <title>公民會考作戰室 R4</title>
+  <link rel="icon" href="data:,">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到主要內容</a>
+  <header class="topbar">
+    <div><strong>公民會考作戰室</strong><span>R4 靜態課程</span></div>
+    <div class="top-actions"><span id="offlineStatus" role="status" aria-live="polite"></span><button id="copyLink" type="button">複製目前連結</button></div>
+  </header>
+  <div class="workspace">
+    <aside aria-label="課程導覽">
+      <label for="skillSearch">搜尋技能</label>
+      <input id="skillSearch" type="search" autocomplete="off" placeholder="輸入關鍵字">
+      <label for="unitSelect">主題單元</label>
+      <select id="unitSelect"></select>
+      <p id="progressSummary" class="progress-summary" role="status" aria-live="polite"></p>
+      <nav id="skillList" aria-label="技能清單"></nav>
+    </aside>
+    <main id="content" tabindex="-1">
+      <div id="loading" role="status">正在載入公民科靜態內容…</div>
+      <section id="skillView" hidden>
+        <p class="eyebrow" id="unitLabel"></p>
+        <h1 id="skillTitle"></h1>
+        <div class="tabs" role="tablist" aria-label="學習內容">
+          <button type="button" role="tab" id="tabLecture" aria-controls="lecturePanel" aria-selected="true">講義</button>
+          <button type="button" role="tab" id="tabDiagnostic" aria-controls="diagnosticPanel" aria-selected="false" tabindex="-1">診斷</button>
+          <button type="button" role="tab" id="tabPractice" aria-controls="practicePanel" aria-selected="false">單元練習</button>
+          <button type="button" role="tab" id="tabStimulus" aria-controls="stimulusPanel" aria-selected="false" tabindex="-1">遷移題組</button>
+          <button type="button" role="tab" id="tabRemediation" aria-controls="remediationPanel" aria-selected="false" tabindex="-1">補救複習</button>
+        </div>
+        <section id="lecturePanel" role="tabpanel" aria-labelledby="tabLecture"></section>
+        <section id="diagnosticPanel" role="tabpanel" aria-labelledby="tabDiagnostic" hidden></section>
+        <section id="practicePanel" role="tabpanel" aria-labelledby="tabPractice" hidden></section>
+        <section id="stimulusPanel" role="tabpanel" aria-labelledby="tabStimulus" hidden></section>
+        <section id="remediationPanel" role="tabpanel" aria-labelledby="tabRemediation" hidden></section>
+      </section>
+    </main>
+  </div>
+  <template id="assessmentControls">
+    <div class="assessment-tools">
+      <label>種子碼 <input class="seed-input" inputmode="numeric" value="1"></label>
+      <button class="reorder" type="button">依種子重新排序</button>
+      <button class="submit" type="button">交卷並看詳解</button>
+    </div>
+  </template>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

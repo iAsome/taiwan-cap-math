@@ -1,0 +1,85 @@
+{
+  "id": "CIV_R4_Q_S176_11",
+  "subject": "civics",
+  "skillIds": [
+    "CIV_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-CIV-BL-4-1",
+    "AUTH-SOCIAL-LC-CIV-BL-4-2",
+    "AUTH-SOCIAL-LC-CIV-BL-4-3",
+    "AUTH-SOCIAL-LC-CIV-BL-4-5",
+    "AUTH-SOCIAL-LC-CIV-BM-4-1",
+    "AUTH-SOCIAL-LC-CIV-BM-4-2",
+    "AUTH-SOCIAL-LP-CIV-1A-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "把「列出選擇中可行且互斥的方案」運用到另一個家庭預算案例時，哪一項作法仍符合原判準？",
+  "options": [
+    "只因家庭預算出現一項表面線索，就以「忽略不同人的偏好會改變成本」完成「列出選擇中可行且互斥的方案」的遷移應用，不再核對其他條件。",
+    "把「列出選擇中可行且互斥的方案」的原判準移到新的家庭預算情境，仍依相同條件檢查而不改變定義。",
+    "以遷移應用處理家庭預算，卻把局部情況直接解讀成「把機會成本只算成現金支出」，並當作「列出選擇中可行且互斥的方案」在所有案例都成立的規則。",
+    "進行遷移應用時先接受「把所有沒選方案全部相加」，只留下家庭預算中支持該想法的資料作為「列出選擇中可行且互斥的方案」證據。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "遷移應用：以「忽略不同人的偏好會改變成本」作答會忽略「資源有限而欲望多元時必須選擇；機會成本是放棄方案中價值最高者，不只等於支付的金錢」；家庭預算的一項線索不足以完成「列出選擇中可行且互斥的方案」。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "新家庭預算案例仍沿用「列出選擇中可行且互斥的方案」的原條件，因此是概念遷移而非改寫定義。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "遷移應用：在「列出選擇中可行且互斥的方案」中把「把機會成本只算成現金支出」由家庭預算局部情況擴張成通則，與「已經無法收回的成本不必然影響下一步選擇；機會成本也不是所有放棄方案價值的總和」的適用界線衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遷移應用：接受「把所有沒選方案全部相加」就沒有依「列出可行且互斥方案，依決策者當時重視的價值找出最佳被放棄選項」檢查支持與反對資料，故「列出選擇中可行且互斥的方案」結論無法重現。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移應用"
+  ],
+  "representationType": "new-context-transfer",
+  "misconceptionTargets": [
+    "用已付沉沒成本決定繼續投入"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 公民科內容作者",
+    "copyrightStatus": "全部題文與講義為原創；官方資料僅用於範圍、現行事實與題型校準。",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-CIV-BL-4-1",
+      "AUTH-SOCIAL-LC-CIV-BL-4-2",
+      "AUTH-SOCIAL-LC-CIV-BL-4-3",
+      "AUTH-SOCIAL-LC-CIV-BL-4-5",
+      "AUTH-SOCIAL-LC-CIV-BM-4-1",
+      "AUTH-SOCIAL-LC-CIV-BM-4-2",
+      "AUTH-SOCIAL-LP-CIV-1A-4-1",
+      "CIVICS_SRC_NAER_SOCIAL"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "civics-rule-and-evidence-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "CIV_R4_Q_S176_11：依「資源有限而欲望多元時必須選擇；機會成本是放棄方案中價值最高者，不只等於支付的金錢。」對「列出選擇中可行且互斥的方案」執行new-context-transfer作答；「把「列出選擇中可行且互斥的方案」的原判準移到新的家庭預算情境，仍依相同條件檢查而不改變定義。」是唯一同時使用必要判準與證據的選項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "civics-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "CIV_R4_Q_S176_11：以「已經無法收回的成本不必然影響下一步選擇；機會成本也不是所有放棄方案價值的總和」逐項反證其餘三項；選項2成立，其餘選項各有題目所列的概念、界線或證據缺口。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
