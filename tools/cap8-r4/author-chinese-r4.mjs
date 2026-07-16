@@ -1787,6 +1787,14 @@ function questionsFor(skill, family, guide) {
   if (functionalQuestions) return functionalQuestions;
   const poetryQuestions = poetryPracticeQuestions(skill);
   if (poetryQuestions) return poetryQuestions;
+  const classicalPoetryQuestions = classicalPoetryPracticeQuestions(skill);
+  if (classicalPoetryQuestions) return classicalPoetryQuestions;
+  const classicalProseQuestions = classicalProsePracticeQuestions(skill);
+  if (classicalProseQuestions) return classicalProseQuestions;
+  const fictionQuestions = fictionPracticeQuestions(skill);
+  if (fictionQuestions) return fictionQuestions;
+  const dramaQuestions = dramaPracticeQuestions(skill);
+  if (dramaQuestions) return dramaQuestions;
   const serial = skill.id.slice(-3);
   return QUESTION_FRAMES.map((frame, questionIndex) => {
     const answerIndex = questionIndex % 4;
@@ -2419,6 +2427,408 @@ function poetryPracticeQuestions(skill) {
       assets: [],
     };
   });
+}
+
+const FIVE_CHARACTER_LINES = Object.freeze([
+  "山雨入空亭", "微燈照客程", "葉響知風近", "雲開見遠城",
+  "潮平沙鳥下", "月淡釣舟橫", "石徑苔痕冷", "松門晚磬清",
+  "野渡浮春草", "孤村起暮笙", "竹影移書案", "茶煙繞短楹",
+  "江闊帆初遠", "天低雁自鳴", "窗前花落盡", "階上雨新晴",
+]);
+
+const SEVEN_CHARACTER_LINES = Object.freeze([
+  "晚風移影過長橋", "一盞漁燈照晚潮", "遠寺鐘聲穿竹徑", "歸人步履入山寮",
+  "細雨初收苔色潤", "疏雲漸散月痕高", "小院茶香留夜客", "隔溪犬吠認歸橈",
+  "野店微光明古道", "長堤柳線拂輕袍", "晨鐘未動村煙起", "石岸先聞拍水濤",
+  "書頁半開風自過", "窗花一落夢初消", "行人回首城門遠", "只把鄉音寄暮簫",
+]);
+
+const CLASSICAL_FORM_CASES = Object.freeze([
+  ["篇中各句字數不整齊，句數也不固定，不受近體詩固定八句或四句限制。", "古體詩"],
+  ["題目沿用樂府舊題，原與歌唱配樂傳統相關，句式可長短參差。", "樂府詩"],
+  ["全篇四句，每句五字，形成凝練的短句節奏。", "五言絕句"],
+  ["全篇四句，每句七字，句幅較長而可容納較多層次。", "七言絕句"],
+  ["全篇八句，每句五字，以短句型展開起承轉合。", "五言律詩"],
+  ["全篇八句，每句七字，以較長句幅鋪陳全篇。", "七言律詩"],
+  ["篇幅可長可短，換韻與句式比近體詩自由。", "古體詩"],
+  ["作品採樂府題名，內容以可歌的敘事與問答推進。", "樂府詩"],
+  ["二十個字分成四個五字句，讀來停頓簡潔。", "五言絕句"],
+  ["二十八個字分成四個七字句，每句可形成較長語意單位。", "七言絕句"],
+  ["四十個字分成八個五字句，短句分聯推進。", "五言律詩"],
+  ["五十六個字分成八個七字句，長句分聯鋪展。", "七言律詩"],
+]);
+
+const CLASSICAL_SCENES = Object.freeze([
+  { scene: "寒江月色平", motion: "孤雁過蘆汀", human: "客衣沾夜露", turn: "忽聞故里笛", ending: "回首路冥冥", emotion: "思鄉而惆悵", theme: "羈旅中因鄉音觸發思歸" },
+  { scene: "春水繞孤村", motion: "新燕剪柴門", human: "老叟扶鋤立", turn: "卻看兒女笑", ending: "泥香滿夕昏", emotion: "安閒而喜悅", theme: "在平凡農家景象中感受生機" },
+  { scene: "空山雨乍收", motion: "石澗送清流", human: "獨坐松陰下", turn: "唯餘一葉舟", ending: "隨水向江洲", emotion: "清寂中略帶孤單", theme: "由雨後空山體會幽靜與獨處" },
+  { scene: "古驛夕陽斜", motion: "風翻一樹花", human: "行人催瘦馬", turn: "不見故人車", ending: "塵起沒天涯", emotion: "等待落空的失落", theme: "旅途中盼友不至的惆悵" },
+  { scene: "曉霧鎖長堤", motion: "漁舟近岸低", human: "童子提魚簍", turn: "忽笑鞋沾泥", ending: "歌聲過柳西", emotion: "輕快而自在", theme: "晨間勞動裡的質樸歡樂" },
+  { scene: "秋院菊初黃", motion: "疏簾受晚涼", human: "展書人未語", turn: "卻有桂風香", ending: "清意滿書床", emotion: "沉靜而舒展", theme: "秋日讀書時由細微景物得到安定" },
+  { scene: "江城鼓角殘", motion: "宿鳥避風寒", human: "守卒添燈火", turn: "忽傳家信到", ending: "一讀夜將闌", emotion: "驚喜中含長久牽掛", theme: "戍守者因家書暫解思念" },
+  { scene: "野橋霜未融", motion: "溪水響淙淙", human: "樵者擔薪過", turn: "卻讓病翁從", ending: "相扶入古松", emotion: "敬重而溫暖", theme: "寒晨讓路扶人呈現體恤" },
+  { scene: "暮雪壓柴扉", motion: "寒鴉繞樹飛", human: "鄰婦分薪至", turn: "不問幾時歸", ending: "爐紅照布衣", emotion: "困頓中的感激", theme: "風雪中鄰里互助帶來暖意" },
+  { scene: "溪亭荷葉稀", motion: "細雨濕蓑衣", human: "釣者收竿晚", turn: "忽見小魚歸", ending: "放手入清漪", emotion: "不捨後轉為釋然", theme: "在取與捨之間選擇珍惜生命" },
+  { scene: "廢園草自深", motion: "舊井照浮陰", human: "訪者尋碑字", turn: "唯存半姓名", ending: "拂土久沉吟", emotion: "追懷而感慨", theme: "由殘存遺跡思索記憶消逝" },
+  { scene: "海門朝日生", motion: "群帆帶浪行", human: "少年扶舵立", turn: "不懼遠潮鳴", ending: "一線向天明", emotion: "昂揚而堅定", theme: "面對未知仍勇於啟程" },
+]);
+
+const CLASSICAL_PARALLEL_PAIRS = Object.freeze([
+  [["雲低", "鳥急"], ["岸闊", "潮平"]],
+  [["風清", "月白"], ["樹古", "泉幽"]],
+  [["花開", "鳥語"], ["雨歇", "雲收"]],
+  [["城高", "野闊"], ["帆遠", "雁低"]],
+  [["松聲", "竹影"], ["石徑", "柴門"]],
+  [["晨鐘", "暮鼓"], ["遠浦", "長亭"]],
+  [["霜重", "露寒"], ["日落", "潮生"]],
+  [["客路", "鄉關"], ["孤舟", "短笛"]],
+  [["茶煙", "燈影"], ["書卷", "琴聲"]],
+  [["山明", "水靜"], ["柳暗", "花深"]],
+  [["漁歌", "樵唱"], ["沙鳥", "渚雲"]],
+  [["春草", "秋蘆"], ["新燕", "暮鴉"]],
+]);
+
+function classicalPoetryPracticeSpec(serial, index) {
+  const formCase = CLASSICAL_FORM_CASES[index];
+  const scene = CLASSICAL_SCENES[index];
+  if (serial === 141) return {
+    stem: `某詩的形式資料如下：「${formCase[0]}」最合宜的體裁判斷是什麼？`,
+    correct: formCase[1],
+    wrong: ["現代散文", "劇本", "新聞稿"],
+    reason: `題述形式特徵與「${formCase[1]}」的基本範圍相符。`,
+  };
+  if (serial === 142) {
+    const layouts = [[5, 4, "五言絕句"], [7, 4, "七言絕句"], [5, 8, "五言律詩"], [7, 8, "七言律詩"]];
+    const [characters, lineCount, label] = layouts[index % layouts.length];
+    const pool = characters === 5 ? FIVE_CHARACTER_LINES : SEVEN_CHARACTER_LINES;
+    const lines = Array.from({ length: lineCount }, (_, offset) => pool[(index + offset) % pool.length]);
+    return {
+      stem: `閱讀本題原創詩形：\n${lines.join("\n")}\n\n若只依每句字數與全篇句數判斷，這首詩的形式是什麼？`,
+      correct: label,
+      wrong: ["五言絕句", "七言絕句", "五言律詩", "七言律詩"].filter((option) => option !== label),
+      reason: `全篇${lineCount}句、每句${characters}字，因此形式為${label}。`,
+    };
+  }
+  if (serial === 143) {
+    const rhymeSets = [["亭", "程", "城"], ["潮", "寮", "簫"], ["清", "明", "聲"], ["山", "間", "還"]];
+    const rhymes = rhymeSets[index % rhymeSets.length];
+    const [pairA, pairB] = CLASSICAL_PARALLEL_PAIRS[index];
+    return {
+      stem: `某首近體詩的第二、四、六、八句韻腳依序為「${rhymes[0]}、${rhymes[1]}、${rhymes[0]}、${rhymes[2]}」；中間兩聯分別出現「${pairA[0]}／${pairA[1]}」與「${pairB[0]}／${pairB[1]}」的對應。哪項判斷最恰當？`,
+      correct: "偶數句使用同一韻部的字；對仗還須比較相對位置的詞性與語意關係，不能只看字數。",
+      wrong: ["只要每句最後一字完全相同，才叫押韻。", "近體詩每一句都必須換不同韻部。", "兩句字數相同便必然構成工整對仗，不必看詞性與意義。"],
+      reason: "正解同時說明基本押韻位置與判斷對仗所需的對應條件，沒有把規則絕對化。",
+    };
+  }
+  const poemBySerial = {
+    144: `${scene.scene}\n${scene.motion}\n${scene.ending}`,
+    145: `${scene.motion}\n${scene.human}\n景落人心裡\n${scene.ending}`,
+    146: `${scene.scene}\n${scene.human}\n${scene.turn}\n${scene.ending}`,
+    147: `${scene.motion}\n${scene.scene}\n${scene.human}\n${scene.ending}`,
+  };
+  const bySerial = {
+    144: {
+      stem: `閱讀本題原創仿古短詩：\n${poemBySerial[144]}\n\n由景物意象判斷，詩中情感最接近哪一項？`,
+      correct: scene.emotion,
+      wrong: ["因獲得鉅額獎賞而狂喜", "對科學數據感到懷疑", "因比賽規則不公而憤怒"],
+      reason: `「${scene.scene}」「${scene.motion}」和結尾共同營造${scene.emotion}的情境。`,
+    },
+    145: {
+      stem: `閱讀本題原創仿古短詩：\n${poemBySerial[145]}\n\n哪項最能說明詩中的情景關係？`,
+      correct: `景物不是獨立清單；「${scene.motion}」經人物感受轉入結尾，形成${scene.emotion}的情景交融。`,
+      wrong: ["全詩只報告地理位置，人物感受與景物毫無關係。", "只要寫到自然景物，就一定沒有抒情。", "結尾推翻前文所有景物，兩者完全不相干。"],
+      reason: "景物描寫經由人物位置與結尾回應情感，不能拆成互不相干的兩部分。",
+    },
+    146: {
+      stem: `閱讀本題原創仿古短詩：\n${poemBySerial[146]}\n\n「${scene.turn.slice(0, 1)}」字在詩意發展中有何作用？`,
+      correct: `把視線由前兩句的景與人轉向「${scene.turn.slice(1)}」，使後句的${scene.emotion}更明確。`,
+      wrong: ["表示前兩句全部是錯字，應予刪除。", "只用來計算字數，前後語意沒有變化。", "證明事件必定相隔數十年。"],
+      reason: "轉折字引入新的發現或限制，改變讀者對前景的理解並導向結尾。",
+    },
+    147: {
+      stem: `閱讀本題原創仿古短詩：\n${poemBySerial[147]}\n\n把詩句連成完整情境，哪項敘述最合理？`,
+      correct: scene.theme,
+      wrong: [`詩人只在列出${scene.scene}的字典義，沒有事件或感受。`, "詩中人物因看見景物便立刻成為朝廷官員。", "全詩主要介紹一項現代機器的操作步驟。"],
+      reason: "正解依景物、人物行動與結尾串成同一情境，沒有補入詩句不存在的情節。",
+    },
+  };
+  return bySerial[serial];
+}
+
+function classicalPoetryPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 141 || serial > 147) return null;
+  const representationType = ["classical-form", "line-count-form", "rhyme-and-parallelism", "classical-imagery", "scene-emotion", "poetic-turn", "classical-situation"][serial - 141];
+  return CLASSICAL_SCENES.map((_, questionIndex) => {
+    const spec = classicalPoetryPracticeSpec(serial, questionIndex);
+    const answerIndex = questionIndex % 4;
+    const rawOptions = [spec.correct, ...spec.wrong];
+    const options = rotate(rawOptions, answerIndex);
+    const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["此項所列形式條件和題目中的字數、句數或篇章類型不合。", "此項只抓一個表面詞，沒有連起意象、人物與轉折。", "此項加入詩句沒有提供的情節，或把有限形式線索絕對化。"][index]])]);
+    return {
+      id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
+      subject: "chinese",
+      skillIds: [skill.id],
+      authorityRefs: [...skill.authorityRefs],
+      stimulusId: null,
+      stem: spec.stem,
+      options,
+      answerIndex,
+      optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: rationaleByOption.get(option) })),
+      difficulty: DIFFICULTIES[questionIndex],
+      cognitiveProcess: questionIndex < 3 ? ["identify", "comprehend"] : questionIndex < 7 ? ["apply", "analyze"] : ["analyze", "interpret", "transfer"],
+      representationType,
+      misconceptionTargets: [spec.wrong[0]],
+      provenance: sourceProvenance(skill.authorityRefs),
+      independentReviews: [
+        { reviewerRole: "chinese-classical-poetry-solution-review", derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
+        { reviewerRole: "chinese-classical-poetry-alternative-review", derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別誤判形式、割裂情景，或加入詩句沒有的情節。", status: "pass" },
+      ],
+      assets: [],
+    };
+  });
+}
+
+const CLASSICAL_SYNTAX_CASES = Object.freeze([
+  ["仲衡見溪水盛，乃伐木為梁。", "仲衡看見溪水正盛，於是砍木架橋。", "「乃」承接仲衡的行動，後句省略的主語仍是仲衡。"],
+  ["季蘭收濕粟，明日復曝之。", "季蘭收起受潮的穀物，第二天又把它拿去曬。", "「復曝之」省略主語季蘭，「之」指受潮的穀物。"],
+  ["伯寧以繩量地，而後定界。", "伯寧用繩丈量土地，然後確定界線。", "「以繩」表示所用工具，翻譯時置於動作「量地」之前。"],
+  ["守門者告眾以故。", "守門人把事情的緣故告訴眾人。", "「以故」補充告知的內容，白話需調整為「把緣故告訴眾人」。"],
+  ["客問其所從來。", "客人詢問他從哪裡來。", "「所從來」合指來處，不能逐字倒譯成不通順語序。"],
+  ["眾莫能決，子修獨察其跡。", "眾人沒有人能判定，只有子修仔細察看那些痕跡。", "「莫」在此表示沒有人，「其」回指前文事物留下的痕跡。"],
+  ["二村爭水，景和乃分渠與之。", "兩村爭用水，景和便分開水渠給他們使用。", "「之」指兩村之人；需依前文補出受詞，不能譯成景和自己。"],
+  ["夜聞警鼓，士皆起而視。", "夜裡聽見警鼓，士兵們都起身察看。", "後句主語由「士」承接，兩個動作以「而」連接。"],
+  ["舟重將覆，舟子去其餘載。", "船太重將要翻覆，船夫卸下多餘的載物。", "「去」在此是除去，不是前往；「其餘載」指多餘載物。"],
+  ["童見巢在枝端，請緩伐焉。", "孩子看見鳥巢在枝梢，請求延後砍那棵樹。", "「焉」依語境指涉樹木所在，白話需補出適當受詞。"],
+  ["書為雨濕，文若置紙於風處。", "書被雨淋濕，文若把紙張放在通風處。", "前句為被動，後句主語文若承接並採取處理。"],
+  ["商旅失印，玄度循簿而求之。", "商旅遺失印章，玄度依登記簿追查它。", "「循簿」是依循簿冊線索，「之」指遺失的印章。"],
+]);
+
+const CLASSICAL_SENTENCE_FORM_CASES = Object.freeze([
+  ["季川者，南村人也。", "判斷句", "以「者……也」說明季川的身分。"],
+  ["何患之有？", "賓語前置", "疑問賓語「何患」置於動詞「有」之前，意為「有什麼禍患」。"],
+  ["舟為風所覆。", "被動句", "「為……所……」表示船被風弄翻。"],
+  ["此誠危道也。", "判斷句", "以「也」收束，判斷這確實是危險的道路。"],
+  ["客何為者？", "疑問賓語前置", "「何為」須依白話語序理解為「做什麼」。"],
+  ["糧見雨敗。", "被動句", "「見」表被動，意為糧食被雨水毀壞。"],
+  ["守橋者，仲衡也。", "判斷句", "以「者……也」判定守橋的人是仲衡。"],
+  ["何以知之？", "介詞賓語前置", "「何以」依白話語序是「憑什麼」。"],
+  ["印為童子所拾。", "被動句", "「為童子所拾」表示印章被孩子撿到。"],
+  ["此乃舊界石。", "判斷句", "「乃」在此用來判定眼前之物就是舊界石。"],
+  ["安在其證？", "疑問倒裝", "依白話語序應理解為「他的證據在哪裡」。"],
+  ["書被水漬。", "被動句", "「被」明示書受到水浸。"],
+]);
+
+const CLASSICAL_HISTORY_CASES = Object.freeze([
+  { person: "仲衡", problem: "里橋圮，溪水方盛，眾欲徑涉", quote: "水盛流急，不可輕渡", action: "止眾，伐木為梁", result: "眾由梁而過，無傷者", quality: "審慎並顧全眾人安全", evaluation: "仲衡先察其險，而後圖其濟，可謂慎矣" },
+  { person: "季蘭", problem: "倉粟受雨，吏欲棄之", quote: "未察濕之深淺，何可盡棄", action: "分層取樣，曝其可用者", result: "十之七得全，簿數亦明", quality: "查明程度後再作處置", evaluation: "季蘭不以一見廢全粟，能審實也" },
+  { person: "伯寧", problem: "兩家爭田界，各執一詞", quote: "口說不足據，當求舊記", action: "訪耆老，復以繩量舊石", result: "界定而兩家皆服", quality: "重視證據且公平處理爭議", evaluation: "伯寧舍忿言而求實跡，平矣" },
+  { person: "景和", problem: "二村旱而爭渠水", quote: "先計田數與水勢，而後分之", action: "記各村田畝，分時啟閘", result: "苗皆得灌，爭遂息", quality: "按可查條件公平分配", evaluation: "景和不徇親村，以數定分，公矣" },
+  { person: "子修", problem: "夜聞警鼓，眾言盜至", quote: "鼓聲一發，未可遽信", action: "察門鎖與足跡，復問守卒", result: "知風落木觸鼓，眾乃安", quality: "遇急訊仍先核實", evaluation: "子修臨驚不亂，驗跡而後言，明矣" },
+  { person: "玄度", problem: "商旅失印，眾疑新至之客", quote: "無跡而疑人，是重其罪也", action: "循入門簿與座次逐處尋之", result: "印得於席隙，客免受誣", quality: "保護無證據下遭懷疑的人", evaluation: "玄度慎疑而全人之名，仁且明也" },
+  { person: "文若", problem: "學舍書籍為雨所濕", quote: "急曝烈日，紙將卷裂", action: "分頁吸水，置於通風之處", result: "多數書頁得平，字跡未散", quality: "理解材料特性並採取適當方法", evaluation: "文若知物性而徐救之，能也" },
+  { person: "允中", problem: "舟載過重而風作", quote: "貪載一物，或失一舟", action: "記貨主姓名，先卸非急之載", result: "舟得穩泊，貨後續運", quality: "在風險中取捨並留下紀錄", evaluation: "允中去小利以全眾命，斷矣" },
+  { person: "阿棠", problem: "園工將伐枯枝，見枝端有巢", quote: "幼鳥未飛，可緩數日", action: "標記危枝，另設圍繩護人", result: "幼鳥離巢後始安全修枝", quality: "兼顧生命與公共安全", evaluation: "阿棠非徒惜鳥，亦能設防，周矣" },
+  { person: "道安", problem: "客售藥粉，稱可治百病", quote: "一言無驗，不可使眾服之", action: "索其來源與用法而不得", result: "乃止其售，請醫者辨之", quality: "不受誇大宣稱影響", evaluation: "道安拒無據之說，慎於眾疾，當矣" },
+  { person: "元直", problem: "祠後有煙，眾以為野霧", quote: "霧不獨出於瓦隙", action: "取水登視，見餘燼未熄", result: "火滅而屋得保", quality: "從異常細節及早辨識危險", evaluation: "元直察微而防大患，敏矣" },
+  { person: "少儀", problem: "舊路圖引旅人至崩坡", quote: "圖有年歲，不可泥古", action: "核新告示，實走安全之徑", result: "重繪路圖並註更新日期", quality: "尊重舊資料但會查核時效", evaluation: "少儀知舊圖有界，能通變也" },
+]);
+
+function historyPassage(item, serial) {
+  if (serial === 150) return `${item.problem}。${item.person}曰：「${item.quote}。」乃${item.action}。${item.result}。`;
+  if (serial === 151) return `${item.problem}。${item.person}曰：「${item.quote}。」乃${item.action}。${item.result}。記者曰：「${item.evaluation}。」`;
+  if (serial === 152) return `因${item.problem}，眾議紛然。${item.person}初聞之，未遽從，曰：「${item.quote}。」乃${item.action}；故${item.result}。`;
+  if (serial === 153) return `${item.problem}。或勸其速決，${item.person}不從，曰：「${item.quote}。」既而${item.action}，卒使${item.result}。`;
+  return `${item.problem}。${item.person}${item.action}，故${item.result}。史論曰：「${item.evaluation}。」`;
+}
+
+function classicalProsePracticeSpec(serial, index) {
+  if (serial === 148) {
+    const [sentence, correct, reason] = CLASSICAL_SYNTAX_CASES[index];
+    return { stem: `閱讀文言句「${sentence}」補足省略並調整語序後，哪個翻譯最準確？`, correct, wrong: ["只按每一字的現代常用義排列，不補主語或指涉。", "把句中先後關係全部顛倒，並加入未出現的人物。", "略去主要動作，只翻譯地名與器物。"], reason };
+  }
+  if (serial === 149) {
+    const [sentence, correct, reason] = CLASSICAL_SENTENCE_FORM_CASES[index];
+    return { stem: `文言句「${sentence}」主要呈現哪一種句式？`, correct, wrong: ["一般敘述句，沒有任何判斷、倒裝或被動標記", "假設複句", "現代白話疑問句"], reason };
+  }
+  const item = CLASSICAL_HISTORY_CASES[index];
+  const passage = historyPassage(item, serial);
+  const bySerial = {
+    150: {
+      stem: `閱讀本題原創仿古短文：\n${passage}\n\n哪一項最完整整理事件？`,
+      correct: `${item.problem}→${item.person}提出「${item.quote}」→${item.action}→${item.result}。`,
+      wrong: [`${item.result}→眾人故意造成${item.problem}。`, `${item.person}未發一言，也沒有採取行動。`, `作者只評論人物，全文沒有事件經過。`],
+      reason: "正解依原文連起問題、人物言論、行動與結果。",
+    },
+    151: {
+      stem: `閱讀本題原創仿古短文：\n${passage}\n\n哪項正確區分人物言論與記述者評語？`,
+      correct: `「${item.quote}」是${item.person}的話；「${item.evaluation}」是記述者對事件的評語。`,
+      wrong: [`兩句都是${item.person}在同一段對話中自我稱讚。`, "兩句都是地點描寫，沒有任何說話者。", "記者曰之後仍是前一人物的直接引語，不必區分。"],
+      reason: "引號前的主語與「記者曰」清楚標示兩個不同發言層次。",
+    },
+    152: {
+      stem: `閱讀本題原創仿古短文：\n${passage}\n\n哪條因果與轉折關係最符合原文？`,
+      correct: `因${item.problem}而起爭議；${item.person}沒有立刻附和，轉而${item.action}，所以${item.result}。`,
+      wrong: [`因${item.result}，所以眾人先造成問題。`, `${item.person}一開始便相信所有傳言，沒有查核。`, "原文只有並列景物，沒有任何因果或轉折。"],
+      reason: "「因、未遽從、乃、故」依序標出起因、轉折行動與結果。",
+    },
+    153: {
+      stem: `閱讀本題原創仿古短文：\n${passage}\n\n由言行推論，${item.person}最明顯的品格是什麼？`,
+      correct: item.quality,
+      wrong: ["只求快速而不願核對任何線索", "為了私利故意擴大眾人損失", "遇到問題便離開，從未作出選擇"],
+      reason: `「${item.quote}」與「${item.action}」共同支持「${item.quality}」的評價。`,
+    },
+    154: {
+      stem: `閱讀本題原創仿古短文：\n${passage}\n\n史論評語與事件證據的關係，哪項最恰當？`,
+      correct: `評語「${item.evaluation}」可由${item.person}${item.action}並得到「${item.result}」的事件支持。`,
+      wrong: ["評語只因人物姓名好聽，和事件無關。", "事件顯示人物採取相反做法，因此完全推翻評語。", "只要寫成史論，任何評價都不需要文本證據。"],
+      reason: "正解把抽象評語逐一連回人物的可見行動與結果。",
+    },
+  };
+  return bySerial[serial];
+}
+
+function classicalProsePracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 148 || serial > 154) return null;
+  const representationType = ["classical-ellipsis", "classical-sentence-form", "historical-event-chain", "narrator-and-quotation", "historical-causality", "character-choice", "historical-evaluation"][serial - 148];
+  return CLASSICAL_HISTORY_CASES.map((_, questionIndex) => {
+    const spec = classicalProsePracticeSpec(serial, questionIndex);
+    const answerIndex = questionIndex % 4;
+    const rawOptions = [spec.correct, ...spec.wrong];
+    const options = rotate(rawOptions, answerIndex);
+    const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["此項沒有依文言語序補足主語、受詞或指涉。", "此項顛倒事件關係，或混淆人物引語與記述者評語。", "此項加入原文沒有的動機，無法由人物言行支持。"][index]])]);
+    return {
+      id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
+      subject: "chinese",
+      skillIds: [skill.id],
+      authorityRefs: [...skill.authorityRefs],
+      stimulusId: null,
+      stem: spec.stem,
+      options,
+      answerIndex,
+      optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: rationaleByOption.get(option) })),
+      difficulty: DIFFICULTIES[questionIndex],
+      cognitiveProcess: questionIndex < 3 ? ["translate", "identify"] : questionIndex < 7 ? ["comprehend", "analyze"] : ["analyze", "evaluate", "transfer"],
+      representationType,
+      misconceptionTargets: [spec.wrong[0]],
+      provenance: sourceProvenance(skill.authorityRefs),
+      independentReviews: [
+        { reviewerRole: "chinese-classical-prose-solution-review", derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
+        { reviewerRole: "chinese-classical-prose-alternative-review", derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別漏補句法、顛倒敘事層次，或加入文中沒有的動機。", status: "pass" },
+      ],
+      assets: [],
+    };
+  });
+}
+
+const FICTION_CASES = Object.freeze([
+  { protagonist: "子晴", goal: "把撿到的筆記送還失主又不翻閱私密內頁", obstacle: "同伴主張逐頁找姓名", appearance: "她把濕髮別到耳後，手一直停在封面外", speech: "先登記發現地點，讓失主自己說封面特徵", thought: "若為找人而看完內容，歸還也失去分寸", action: "拍下封面與發現位置後交櫃臺封存", side: "原先催她翻頁的同伴慢慢把手收回", scene: "雨水沿圖書館窗面滑下，櫃臺燈照著未掀開的封面", foreshadow: "封面右下有一道月牙形墨痕", payoff: "來人先說出月牙墨痕，沒有要求查看內頁便通過核對", change: "從只想快速找人，轉為先保護物主隱私", quality: "謹慎而尊重他人界線" },
+  { protagonist: "宇安", goal: "修好祖父留下的舊收音機", obstacle: "機器打開後有三條外觀相近的斷線", appearance: "他鼻尖沾著灰，卻把螺絲依位置排成一列", speech: "先畫接線位置，不要猜哪條都一樣", thought: "若只求立刻有聲音，也許會燒壞真正完好的部分", action: "逐條測試導通並標記原位置", side: "修理師原本抱臂旁觀，後來遞給他更細的測試筆", scene: "店裡十幾座鐘各走各的秒，收音機始終沉默", foreshadow: "刻度盤在九十的位置有一道小刮痕", payoff: "聲音恢復時正停在祖父常聽的九十刻度", change: "從急著換零件，轉為理解並保存原有結構", quality: "耐心且重視可逆的修復" },
+  { protagonist: "庭瑄", goal: "在朗讀演出中說完第一段獨白", obstacle: "每次幕布將升起，她便忘記開頭", appearance: "她握著道具信封，指節因用力而發白", speech: "別替我念第一句，只要在側臺數到三", thought: "害怕沒有消失，但我可以借同伴的節奏跨出去", action: "把呼吸記號寫在臺詞轉折處並完成排練", side: "總想代讀的同伴改在黑暗中輕敲三下", scene: "側臺只亮一盞藍燈，幕繩在風口微微摩擦", foreshadow: "道具信封背面寫著小小的「三」", payoff: "正式演出前，她摸到那個字便跟著三下敲聲開口", change: "從等待恐懼消失，轉為帶著恐懼行動", quality: "能承認害怕並尋找可行支點" },
+  { protagonist: "柏翰", goal: "更正校刊中斷章取義的訪談引句", obstacle: "截短的句子讀來響亮，編輯不願撤換", appearance: "他把耳機壓得很低，反覆停在同一個時間碼", speech: "這句前面有『有人以為』，不是受訪者自己的主張", thought: "漂亮版面若建立在錯主語上，只會讓錯誤傳得更快", action: "整理前後三十秒逐字稿並請受訪者確認", side: "主編看完回覆後，默默把放大的引號縮回正文", scene: "校刊室的印表機吐出一張張試印紙，紅筆停在引號旁", foreshadow: "錄音檔名後綴著第二版日期", payoff: "追查後發現初稿引用的是第一版剪輯，第二版保留完整主語", change: "從只想改一句，轉為建立全篇引語核對表", quality: "求真且願意修正共同流程" },
+  { protagonist: "雅文", goal: "找出菜園薄荷捲葉的原因", obstacle: "組員都認為只要多澆水", appearance: "她蹲在花盆旁，袖口沾滿乾土", speech: "先固定時間記錄，不要今天早上和昨天中午相比", thought: "一片葉子不能替七天作證", action: "連續記錄溫度、濕度與澆水時間", side: "總提著水壺的組員開始先看紀錄表", scene: "正午白光壓在菜園棚頂，盆土表面很快失去深色", foreshadow: "第一天照片角落的時鐘正指十二點", payoff: "七日照片顯示正午澆水後濕度下降最快", change: "從爭論單一原因，轉為控制條件比較", quality: "細心且能用持續觀察修正假設" },
+  { protagonist: "承恩", goal: "替老照片展覽核對正確年份", obstacle: "兩位長者的回憶相差十年", appearance: "他拿著放大鏡，沒有在任何一張照片背面寫死答案", speech: "記憶都先保留，再看建築哪一年加了二樓", thought: "尊重受訪者不等於把每句回憶都當成同一層證據", action: "比對訪談時間碼、改建紀錄與報紙日期", side: "堅持自己記得最清楚的長者也湊近看報紙影本", scene: "活動中心牆上排著無年份照片，膠帶旁只留鉛筆空格", foreshadow: "遠處屋頂露出半面新招牌", payoff: "報紙廣告證明招牌在某年才出現，照片年份因此縮小範圍", change: "從尋找唯一權威，轉為讓不同證據彼此校正", quality: "尊重記憶又不放棄查證" },
+  { protagonist: "品妤", goal: "讓兩組舞臺排練不再互相等待", obstacle: "布景與音響同時被兩組預約", appearance: "她把彩色便利貼全翻成同一面，只留下文字", speech: "先排設備依賴，不按節目名稱長短", thought: "若只把時間切半，換景仍會在同一刻堵住", action: "畫出布景、音響與人員到場的前後關係", side: "最先反對改表的組長看見等待空格後拿起筆補資料", scene: "空舞臺中央堆著兩套布景，黑膠帶畫出的通道只容一車通過", foreshadow: "排練單上兩個音響圖示被圈在同一時段", payoff: "新表把共用音響的節目錯開，圈線不再重疊", change: "從平均分配時間，轉為處理真正的依賴關係", quality: "善於看見系統衝突並協調" },
+  { protagonist: "祐晨", goal: "重畫一張不會把旅人引到封閉路段的老街地圖", obstacle: "網路流傳圖清楚美觀卻沒有年份", appearance: "他背著畫筒，在每個轉角停下核對門牌", speech: "線條畫得直，不表示路現在還通", thought: "更新地圖也要留下舊路為何消失的說明", action: "比對門牌整編、工程告示與實地路牌", side: "原本只想照抄圖片的同學開始替每張圖補發布日期", scene: "老街一端傳來鑽牆聲，地圖上的捷徑已被新圍籬截斷", foreshadow: "舊名片角落印著已廢止的三位數門牌", payoff: "門牌對照表說明遷址年份，也證明捷徑標線早於改建", change: "從追求圖面好看，轉為標示版本與變動原因", quality: "重視資料時效與歷史脈絡" },
+  { protagonist: "思妍", goal: "改善圖書館入口到服務臺的觸覺動線", obstacle: "設計者認為地圖看起來已很清楚", appearance: "她把筆記本貼近胸前，只記錄使用者真正停下的位置", speech: "先別提醒方向，我們要知道指引在哪裡失效", thought: "替人說出困難，比不上讓當事人的路徑留下證據", action: "邀請使用者實走並記錄停頓與回頭", side: "站在終點的館員看見三次回頭後，移到錯誤轉角重新體驗", scene: "一樓光線明亮，牆面箭頭卻高過伸手可觸的範圍", foreshadow: "入口地墊有一條被鞋尖磨亮的斜線", payoff: "實走者都沿磨亮斜線走向舊櫃臺，顯示動線仍受過去配置影響", change: "從替使用者猜測，轉為共同測試與修正", quality: "願意讓真實使用經驗改變設計" },
+  { protagonist: "冠宇", goal: "查出河川資料中異常高的一筆讀值", obstacle: "小組想直接刪掉離群數字", appearance: "他捲起褲管站在岸邊，手裡夾著三張不同顏色的原始單", speech: "異常不等於錯誤，先找採樣位置和小數點", thought: "刪掉不順眼的數字，圖表會整齊卻不會更真", action: "核對採水點、天氣、單位與抄錄欄", side: "負責畫圖的同學把橡皮擦放下，改拿原始單逐格對照", scene: "雨後水流混濁，觀察站刻度只露出最上方兩格", foreshadow: "那筆數字的小數點比同欄其他點更淡", payoff: "放大原始單後發現小數點漏抄，修正值回到合理區間", change: "從把異常當麻煩，轉為把它當查核入口", quality: "誠實面對不合預期的資料" },
+  { protagonist: "雨潔", goal: "在口述歷史圖說中分清舊址與現址", obstacle: "同名店家搜尋結果只顯示今天地址", appearance: "她用鉛筆在兩張透明地圖上各畫一個圈", speech: "同名不等於同址，先看門牌整編年份", thought: "若把今天地址貼回舊照片，展覽就會抹掉遷移本身", action: "疊合舊報廣告、地籍圖與門牌對照表", side: "負責排版的人把原本唯一的定位圖改成前後兩張", scene: "文史室桌面鋪滿半透明地圖，窗光讓兩條街線交疊", foreshadow: "老名片背面手寫著『遷至橋東』", payoff: "對照表證實橋東地址是後期現址，手寫字成為遷移線索", change: "從尋找單一正確地點，轉為呈現地方移動的時間線", quality: "能辨認同名資料背後的時空差異" },
+  { protagonist: "昱廷", goal: "設計不公開個資的失物招領流程", obstacle: "有人提議把完整證件照片貼上社群", appearance: "他用紙條遮住證件姓名，只露出號碼末兩碼", speech: "要讓失主證明自己，不是讓所有人先看答案", thought: "招領越公開未必越安全", action: "記錄發現位置，由服務台依名冊私下通知並簽收", side: "原本舉著手機的人放下鏡頭，改寫不含個資的公告", scene: "跑道邊人聲沸騰，服務台抽屜卻安靜鎖著證件", foreshadow: "證件背面貼有隊伍才知道的顏色記號", payoff: "領回者同時說出姓名、隊伍與顏色記號，完成核對", change: "從追求最快擴散，轉為兼顧可驗證與隱私", quality: "能在效率與保護之間設計界線" },
+]);
+
+function fictionPracticeSpec(serial, item) {
+  const texts = {
+    155: `${item.appearance}。他說：「${item.speech}。」接著${item.action}，心想：「${item.thought}。」`,
+    156: `${item.protagonist}${item.action}。${item.side}。沒有人直接說他做得對，但旁人的動作改變了。`,
+    157: `${item.protagonist}原想${item.goal}，卻遇到「${item.obstacle}」。他先猶疑，後來${item.action}，於是${item.change}。`,
+    158: `${item.scene}。在這個場景裡，${item.protagonist}正面對「${item.obstacle}」，最後${item.action}。`,
+    159: `開頭寫：「${item.foreshadow}。」${item.protagonist}當時沒有多想。事件發展後，「${item.payoff}」。`,
+    160: `敘事者寫：「${item.scene}。」${item.protagonist}卻想：「${item.thought}。」旁人沒有說出自己的內心。`,
+    161: `${item.appearance}；他說「${item.speech}」，並且${item.action}。事後，${item.side}。`,
+  };
+  const text = texts[serial];
+  const bySerial = {
+    155: { stem: `閱讀本題原創小說片段：\n${text}\n\n哪項分析同時使用外貌、語言、行動與心理描寫？`, correct: `${item.appearance}呈現當下狀態；話語與「${item.action}」顯示做法；內心句則揭示「${item.thought}」。`, wrong: ["只由衣著顏色便斷定人物一生品格。", "人物說出口的話必定等於所有旁人的想法。", "行動與心理互相無關，不必放在同一情境理解。"], reason: "正解分別指出四種描寫的文本位置與功能。" },
+    156: { stem: `閱讀本題原創小說片段：\n${text}\n\n旁人的反應在人物刻畫上有何作用？`, correct: `以「${item.side}」從側面顯示${item.protagonist}的行動改變了旁人的判斷。`, wrong: ["證明旁人才是唯一主角，前文行動可以刪去。", "旁人沒有說話，所以這段完全沒有資訊。", "只用來交代天氣，和人物行動無關。"], reason: "旁人的動作承接主角行動，是側面烘托而非無關插曲。" },
+    157: { stem: `閱讀本題原創小說片段：\n${text}\n\n人物目標、衝突與轉變如何連接？`, correct: `${item.protagonist}想${item.goal}，受「${item.obstacle}」阻礙；採取行動後，${item.change}。`, wrong: ["人物沒有目標，也沒有遇到任何阻礙。", "衝突在故事開始前已完全解決，後文沒有變化。", "人物只改變外表，做法與理解始終相反。"], reason: "正解依序連起目標、阻礙、選擇與理解變化。" },
+    158: { stem: `閱讀本題原創小說片段：\n${text}\n\n場景描寫對情節有什麼作用？`, correct: `「${item.scene}」具體化人物面對的壓力或線索，使後續「${item.action}」更有情境依據。`, wrong: ["場景只為增加字數，刪除後所有線索完全相同。", "場景證明人物能知道所有人的內心。", "場景和事件發生在不同作品，彼此無關。"], reason: "場景中的物件、光線或空間直接參與人物判斷與行動。" },
+    159: { stem: `閱讀本題原創小說片段：\n${text}\n\n開頭細節與後文如何形成伏筆照應？`, correct: `「${item.foreshadow}」先留下可疑細節，後文「${item.payoff}」再使它成為可解釋結果的線索。`, wrong: ["兩句用字不同，所以不可能互相照應。", "伏筆必須在開頭直接公布完整結局。", "後文只是重複人物姓名，沒有回收任何細節。"], reason: "前文細節在後文得到新意義，符合伏筆被回收的安排。" },
+    160: { stem: `閱讀本題原創小說片段：\n${text}\n\n哪項正確區分敘事者與人物觀點？`, correct: `敘事者描述可見場景；「${item.thought}」只屬於${item.protagonist}的內心，不能當成所有人的共同想法。`, wrong: ["敘事者與所有人物必定知道完全相同資訊。", "引號中的內心句是客觀天氣報告。", "旁人未說內心，便可任意替他補上動機。"], reason: "正解依敘述層次限制資訊來源，沒有把單一人物觀點擴成全知事實。" },
+    161: { stem: `閱讀本題原創小說片段：\n${text}\n\n哪項人物評價有充分細節支持？`, correct: `${item.protagonist}${item.quality}；話語、行動及旁人反應共同支持這項評價。`, wrong: ["人物一定自私，因為片段沒有介紹他的生日。", "人物從未採取行動，只靠運氣完成一切。", "人物的全部性格只能由外貌一項永久決定。"], reason: `「${item.speech}」「${item.action}」與旁人反應共同支持「${item.quality}」。` },
+  };
+  return bySerial[serial];
+}
+
+function fictionPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 155 || serial > 161) return null;
+  const representationType = ["characterization", "direct-and-indirect-characterization", "character-arc", "setting-function", "foreshadowing", "narrator-viewpoint", "character-evidence"][serial - 155];
+  return FICTION_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, fictionPracticeSpec(serial, item), representationType, "chinese-fiction"));
+}
+
+const DRAMA_CASES = Object.freeze([
+  { a: "指導老師", b: "學生", event: "是否替忘詞的演員直接代讀", aView: "應保留學生自己完成臺詞的機會", bView: "擔心停頓會拖累全組", aLine: "我會在側臺給提示，但第一句仍由你說", bLine: "如果我又停住呢", stage: "老師把提示卡壓低，等學生抬頭", pause: "學生仍害怕，卻在等待可依靠的方法", next: "那就看提示燈，先呼吸，再說第一個詞", conflict: "如何在演出進度與學生自主完成之間取捨", relation: "老師引導學生而非替他完成" },
+  { a: "姊姊", b: "弟弟", event: "是否公開撿到的證件照片", aView: "應交服務台私下核對", bView: "認為公開照片找人最快", aLine: "讓失主說出特徵，不要先把答案貼出去", bLine: "可是轉傳的人越多，不就越快嗎", stage: "弟弟舉著手機，姊姊伸手遮住姓名欄", pause: "弟弟開始意識到速度可能帶來隱私風險", next: "我們只公告發現地點，完整資料交服務台保管", conflict: "招領效率與個人資料保護的衝突", relation: "手足共同處理失物但判斷不同" },
+  { a: "主編", b: "採訪者", event: "是否保留截短後更有力的引句", aView: "版面吸引力重要", bView: "必須恢復引句原有主語", aLine: "這一句放大後，讀者一定會停下來", bLine: "但原音說的是『有人以為』，不是他自己的主張", stage: "採訪者把錄音停在引句前三秒，主編移開紅筆", pause: "主編被證據迫使重新評估原決定", next: "先聽完前後文，再決定標題和引號", conflict: "版面效果與引語準確之間的衝突", relation: "主編負責決策，採訪者提供原始證據" },
+  { a: "隊長", b: "隊員", event: "是否刪除異常水質讀值", aView: "先查採樣與抄錄過程", bView: "想讓圖表看起來整齊", aLine: "離群不等於錯，原始單還沒核對", bLine: "可是留著這一點，整條線都不好看", stage: "隊長攤開原始單，隊員把橡皮擦放回桌上", pause: "隊員暫停刪除，開始接受查核優先", next: "先看小數點和單位，確認後再決定是否註記", conflict: "資料外觀整齊與保留異常證據的衝突", relation: "隊長要求隊員依程序查核" },
+  { a: "館員", b: "首次到館者", event: "入口指標是否真的清楚", aView: "原設計看起來醒目", bView: "實走時三次走向舊櫃臺", aLine: "箭頭已經放得很大了", bLine: "我看得到箭頭，卻摸不到它指向的起點", stage: "到館者沿磨亮地墊回走，館員跟在後面記下停頓", pause: "館員由觀看圖面轉為理解實際使用路徑", next: "請讓我再走一次，你先不要提示方向", conflict: "設計者的視覺判斷與使用者實際動線的差距", relation: "館員向使用者取得改善服務的證據" },
+  { a: "祖母", b: "孫女", event: "老照片的年份應以誰的記憶為準", aView: "記得照片在市場改建前拍攝", bView: "想用報紙與建築紀錄交叉核對", aLine: "那時屋頂還沒有第二層，我記得", bLine: "我相信這是線索，也想查第二層何時加建", stage: "祖母摸著照片邊角，孫女沒有立刻寫下年份", pause: "孫女尊重記憶但保留查證空間", next: "我們把您的回憶和改建資料並排標註", conflict: "個人記憶與可交叉核對年代資料如何並用", relation: "祖孫合作整理家族與地方記憶" },
+  { a: "舞臺監督", b: "演員", event: "共用音響的排練時段衝突", aView: "依設備切換順序重排", bView: "希望自己的節目仍維持原時段", aLine: "你的時段沒少，但要等另一組拆完接線", bLine: "節目表早就印好了，不能只照原表嗎", stage: "監督指向兩條重疊的音響線，演員低頭看自己的進場點", pause: "演員看見原表忽略的設備依賴", next: "把我的走位先排，音響測試移到接線完成後", conflict: "既定節目表與實際設備依賴之間的衝突", relation: "監督協調全場資源，演員關注自己節目" },
+  { a: "攤商", b: "學生", event: "兩張不同重量單位的價格牌如何比較", aView: "習慣用每台斤標價", bView: "需要換成同一單位", aLine: "這張數字小，看起來當然便宜", bLine: "一張每台斤、一張每公斤，不能只比數字", stage: "學生在紙上寫換算式，攤商把兩張牌並排", pause: "攤商發現原先比較基準不同", next: "先換成每公斤，再把計算寫給顧客看", conflict: "表面價格數字與一致比較基準的衝突", relation: "學生向攤商說明單位換算" },
+  { a: "圖書館員", b: "工讀生", event: "錯架科普書應放在哪裡", aView: "應依索書號與館藏系統", bView: "想按封面圖案選相似書架", aLine: "封面像動物書，不代表分類號相同", bLine: "可是放在那排看起來最順", stage: "館員翻到書背號碼，工讀生比較相鄰書標", pause: "工讀生從視覺相似轉向分類證據", next: "我先查館藏狀態，再依號碼順序放回去", conflict: "封面印象與圖書分類依據的衝突", relation: "館員訓練工讀生完成正確上架" },
+  { a: "長者", b: "導覽學生", event: "老店舊址與現址應如何標示", aView: "記得店曾在橋西", bView: "搜尋結果只顯示橋東", aLine: "橋東是後來遷去的，舊門牌不一樣", bLine: "但地圖只找到今天這個地址", stage: "長者把舊名片翻到背面，學生停在手寫的遷址字樣", pause: "學生發現同名搜尋結果不足以代表歷史位置", next: "我會查門牌對照表，把舊址與現址分開標", conflict: "今日搜尋結果與歷史遷址資料的衝突", relation: "長者提供地方記憶，學生負責查證與導覽" },
+  { a: "站務員", b: "旅客", event: "月臺更改應相信哪一則訊息", aView: "以現場最新公告、螢幕與廣播為準", bView: "手機照片由朋友轉傳所以可信", aLine: "照片沒有拍到更新時間，這班車已改到第三月臺", bLine: "朋友剛傳給我，怎麼會過期", stage: "廣播重念班次號碼，旅客看向照片裁掉的右下角", pause: "旅客注意到轉傳照片缺少版本資訊", next: "我先核對班次號碼和螢幕，再移動月臺", conflict: "無版本轉傳照片與現場最新資訊的衝突", relation: "站務員協助旅客核對乘車資訊" },
+  { a: "營養師", b: "值日生", event: "多出的餐點能否直接帶走", aView: "先核對保存時間與調配規定", bView: "認為未拆封便可自行處理", aLine: "未拆封還要看冷藏時間和需要的班級", bLine: "盒子都完整，帶回家不是更省嗎", stage: "營養師指著配送單，值日生放下已提起的餐袋", pause: "值日生理解完整包裝不等於可忽略食品安全程序", next: "我先核對出席人數，再請您依規定調配", conflict: "避免浪費的好意與餐食安全規範的衝突", relation: "營養師指導值日生依規定處理餐點" },
+]);
+
+function dramaPracticeSpec(serial, item) {
+  const script = `【${item.stage}】\n${item.a}：${item.aLine}\n${item.b}：（停頓）${item.bLine}`;
+  const bySerial = {
+    162: { stem: `閱讀本題原創劇本：\n${script}\n\n哪項正確區分臺詞與舞臺提示？`, correct: `「${item.aLine}」是${item.a}臺詞；「${item.stage}」是舞臺提示，用來交代可見動作。`, wrong: ["方括號內是角色大聲念給觀眾的臺詞。", "角色名稱是布景說明，臺詞沒有說話者。", "停頓表示劇本缺字，演員應任意補話。"], reason: "角色名後是發言內容；括號或方括號文字提供演出動作、聲音與節奏。" },
+    163: { stem: `閱讀本題原創劇本：\n${script}\n\n由對話內容推論，兩名角色關係最接近哪一項？`, correct: item.relation, wrong: ["彼此完全不認識，也沒有共同事件。", "兩人都是沒有發言能力的布景。", "後一角色正在審判前一角色的犯罪。"], reason: `稱謂、資訊分工與對「${item.event}」的共同處理支持正解。` },
+    164: { stem: `閱讀本題原創劇本：\n${script}\n\n${item.b}臺詞前的「停頓」最可能表示什麼態度？`, correct: item.pause, wrong: ["角色已離開舞臺，不可能再說下一句。", "角色完全沒聽見前一句，後文也與事件無關。", "停頓固定代表贊成，無須看動作和後續臺詞。"], reason: "停頓位在前一角色提出證據或限制之後，後續臺詞仍回應同一衝突。" },
+    165: { stem: `閱讀本題原創劇本：\n${script}\n\n兩名角色對「${item.event}」的觀點有何差異？`, correct: `${item.a}認為${item.aView}；${item.b}則${item.bView}。`, wrong: ["兩人從頭到尾說完全相同的理由。", "兩人只在討論天氣，沒有共同事件。", "前一角色支持後一角色未說出口的相反做法。"], reason: "兩句臺詞分別說明判斷標準與疑慮，可直接比較。" },
+    166: { stem: `閱讀本題原創劇本：\n${script}\n\n舞臺提示如何影響對臺詞的理解？`, correct: `「${item.stage}」把抽象立場轉成可見動作，顯示角色正在重新評估${item.event}，而非只做口頭爭辯。`, wrong: ["舞臺提示證明兩句臺詞發生在不同年代。", "刪除所有臺詞後，提示仍能交代每項理由。", "提示只規定服裝顏色，和態度沒有關係。"], reason: "動作與道具回應臺詞中的證據或猶疑，改變語氣強度與人物態度。" },
+    167: { stem: `閱讀本題原創劇本：\n${script}\n\n若要讓${item.b}的下一句符合角色目的與情境，哪句最合適？`, correct: item.next, wrong: ["我們改談一件完全無關的夢，原問題不用處理。", "既然有衝突，就把所有紀錄刪掉。", "我沒有看任何資料，但所有人一定都同意我。"], reason: "正解承接前句證據，也讓後一角色採取能處理當前衝突的行動。" },
+    168: { stem: `閱讀本題原創劇本：\n${script}\n\n從對話衝突歸納，劇情核心問題是什麼？`, correct: item.conflict, wrong: ["角色姓名筆畫誰比較多。", "舞臺上能否出現任何括號。", "兩人是否來自完全相同的出生地。"], reason: "正解涵蓋兩名角色互相牴觸的目標與判斷標準。" },
+  };
+  return bySerial[serial];
+}
+
+function dramaPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 162 || serial > 168) return null;
+  const representationType = ["script-conventions", "dramatic-relationship", "pause-and-subtext", "dramatic-viewpoints", "stage-direction-effect", "dialogue-completion", "dramatic-conflict"][serial - 162];
+  return DRAMA_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, dramaPracticeSpec(serial, item), representationType, "chinese-drama"));
+}
+
+function makeLiteraryQuestion(skill, serial, questionIndex, spec, representationType, reviewerPrefix) {
+  const answerIndex = questionIndex % 4;
+  const rawOptions = [spec.correct, ...spec.wrong];
+  const options = rotate(rawOptions, answerIndex);
+  const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["此項只憑單一表面特徵，沒有連結人物目標、言行或文本層次。", "此項加入文本沒有提供的身分、動機或事件。", "此項忽略場景、舞臺動作或後文照應，因而和情節證據不合。"][index]])]);
+  return {
+    id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
+    subject: "chinese",
+    skillIds: [skill.id],
+    authorityRefs: [...skill.authorityRefs],
+    stimulusId: null,
+    stem: spec.stem,
+    options,
+    answerIndex,
+    optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: rationaleByOption.get(option) })),
+    difficulty: DIFFICULTIES[questionIndex],
+    cognitiveProcess: questionIndex < 3 ? ["comprehend", "identify"] : questionIndex < 7 ? ["analyze", "infer"] : ["analyze", "evaluate", "transfer"],
+    representationType,
+    misconceptionTargets: [spec.wrong[0]],
+    provenance: sourceProvenance(skill.authorityRefs),
+    independentReviews: [
+      { reviewerRole: `${reviewerPrefix}-solution-review`, derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
+      { reviewerRole: `${reviewerPrefix}-alternative-review`, derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別只憑表面特徵、加入未提供資訊，或忽略動作與後文照應。", status: "pass" },
+    ],
+    assets: [],
+  };
 }
 
 const writingSkills = chineseSkills.filter((skill) => Number(skill.id.slice(-3)) >= 303);
