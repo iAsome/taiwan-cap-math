@@ -1935,7 +1935,7 @@ const SCENARIOS = [
   { place: "天文社觀測場", focus: "一張把東西方向印反的星圖", action: "以觀測時間和地平線方向實地比對", evidence: "星圖版本、方位標記與當晚觀察筆記", result: "社團換回正確版本並在護貝角落加註方向", rejected: "因圖案漂亮就繼續使用" },
   { place: "文化節翻譯組", focus: "一句可能有兩種理解的導覽譯文", action: "回到原文語境並請母語使用者試讀", evidence: "前後段落、展品功能與試讀回饋", result: "譯文改成不會誤解動線的說法", rejected: "逐字對換而不看句子用途" },
   { place: "辯論社資料室", focus: "一段沒有標明上下文的名人引語", action: "查找原始演講並閱讀前後段", evidence: "演講日期、完整逐字稿與主題", result: "社員發現原句立場被截斷，因而撤換論據", rejected: "因引語符合己方立場就直接使用" },
-  { place: "志工服務臺", focus: "一份漏列無障礙協助需求的分工表", action: "重新確認每位參與者需求並調整動線工作", evidence: "報名表勾選、場地入口與志工可支援時段", result: "接待組安排適當協助且不公開個人隱私", rejected: "用外表猜誰需要幫助" },
+  { place: "志工服務臺", focus: "一份漏列無障礙協助需求的分工表", action: "重新確認每位參與者需求並調整動線與工作分配", evidence: "報名表勾選、場地入口與志工可支援時段", result: "接待組安排適當協助且不公開個人隱私", rejected: "用外表猜誰需要幫助" },
   { place: "轉運站失物處", focus: "一只內有多張卡片的零錢包", action: "封存內容並由櫃臺依外觀特徵核對失主", evidence: "拾獲地點、外觀磨痕與失主主動描述", result: "零錢包在不公開卡片資料的情況下歸還", rejected: "把證件照片貼到公開社群尋人" },
   { place: "自行車道入口", focus: "一張沒有標出施工終點的改道路線圖", action: "向工程單位索取完整範圍並現場走查", evidence: "施工起迄點、替代道路寬度與路口標誌", result: "新版圖清楚畫出繞行段和回到原線的位置", rejected: "只畫一個箭頭讓騎士自行找路" },
   { place: "公園管理站", focus: "一則沒有日期的修樹通知", action: "補上施工時段、影響區域與聯絡窗口", evidence: "核准工單、圍設範圍與承辦人資料", result: "居民能避開封閉步道，也知道如何詢問", rejected: "只貼『近期施工』而不列任何範圍" },
@@ -1975,76 +1975,76 @@ function stimulusFor(index) {
   const variant = (index + genreIndex * 5) % 20;
   const contentByGenre = {
     narrative: [
-      `${person}在${place}發現${focus}時，旁人已經為該怎麼處理爭了起來。${person}不採信最大聲的說法，而是${action}。核對${evidence}後，${result}。回頭看，真正讓事情前進的不是猜得快，而是把每個判斷都留下可查的根據。`,
-      `${result}。事後${person}才向大家說起經過：當時在${place}見到${focus}，有人主張${rejected}。${person}改採${action}，並以${evidence}逐步排除誤判。先寫結果再回顧原因，更突出查證步驟才是轉折點。`,
+      `${person}在${place}發現${focus}時，旁人已經為該怎麼處理爭了起來。${person}不採信最大聲的說法，而是${action}。核對${evidence}後，${result}。回頭看，${focus}能獲得妥善處理，不是因為猜得快，而是每個判斷都留下可查的根據。`,
+      `${result}。事後${person}才向大家說起經過：當時在${place}見到${focus}，有人主張${rejected}。${person}改採${action}，並以${evidence}逐步排除誤判。先寫「${result}」再回顧原因，更突出${person}查證的步驟才是轉折點。`,
       `「反正大家都這麼說。」有人指著${focus}下了結論。${person}在${place}追問：「我們能回到哪一項紀錄？」接著${action}，將${evidence}寫在同一張核對表上。最後${result}；原本的爭論也從比聲量，轉成比證據。`,
-      `${person}的觀察筆記寫著：「地點：${place}；對象：${focus}。」第二行並沒有寫猜測，而是寫下${action}。待${evidence}相互吻合，筆記末端才補上：「${result}。」這份先記事實、後寫結論的紀錄，也讓後來的人能重新檢驗過程。`,
-      `天色漸晚，${place}的工作即將告一段落，${focus}卻仍沒有妥善處理。有人催促${person}${rejected}，${person}卻停下來${action}。等到${evidence}一一對上，${result}。那個看似多花的幾分鐘，反而免去事後重做。`,
-      `「先別動。」${person}說。面對${focus}，其他人原想${rejected}；${person}把工作拆開：${action}，再請大家共同查看${evidence}。不久，${result}。原本急著做決定的人，也開始把理由寫進紀錄。`,
+      `${person}的觀察筆記寫著：「地點：${place}；對象：${focus}。」第二行並沒有寫猜測，而是寫下${action}。待${evidence}相互吻合，筆記末端才補上：「${result}。」這份保留${evidence}、先記事實再下結論的紀錄，也讓後來的人能重新檢驗過程。`,
+      `天色漸晚，${place}的工作即將告一段落，${focus}卻仍沒有妥善處理。有人催促${person}${rejected}，${person}卻停下來${action}。等到${evidence}一一對上，${result}。為了${focus}多花的幾分鐘，反而免去事後重做。`,
+      `「先別動。」${person}說。面對${focus}，其他人原想${rejected}；${person}把工作拆開：${action}，再請大家共同查看${evidence}。不久，${result}。面對${focus}，原本急著做決定的人也開始把理由寫進紀錄。`,
       `起初，${person}只覺得${focus}是${place}裡一件普通的小事。直到有人提出${rejected}，${person}才發現這個選擇可能影響別人。於是${person}${action}，循著${evidence}確認。事情最後變成：${result}。`,
       `面對${focus}，在場的人看見的並不相同。有人主張${rejected}，${person}則主張${action}。兩種做法僵持不下，直到${evidence}提供共同的比較基準，眾人才接受結果：${result}。`,
       `${result}之後，${person}回到${place}收拾桌面，仍把${evidence}留在原檔案中。一天前，大家面對${focus}時還想${rejected}；正是${person}${action}，才讓結局不再只靠運氣。`,
-      `${person}寫給夥伴的短箋只有三行：「我們遇到的是${focus}。我沒有${rejected}，而是${action}。因為${evidence}能讓別人重新查看，所以最後${result}。」短箋不長，卻把選擇和後果都說清楚了。`,
+      `${person}寫給夥伴的短箋只有三行：「我們遇到的是${focus}。我沒有${rejected}，而是${action}。因為${evidence}能讓別人重新查看，所以最後${result}。」這張寫給${place}夥伴的短箋不長，卻把選擇和後果都說清楚了。`,
       `上午，${focus}讓${place}的工作停了下來；中午，仍有人建議${rejected}；傍晚，${person}${action}，逐項核對${evidence}。時間往後推進，問題也一步步縮小，直到${result}。`,
-      `${person}再次看見${focus}時，想起自己差點接受「${rejected}」的建議。他回頭${action}，才從${evidence}看出先前遺漏的關係。後來，${result}；這次回頭成了全篇真正的轉折。`,
+      `${person}再次看見${focus}時，想起自己差點接受「${rejected}」的建議。${person}回頭${action}，才從${evidence}看出先前遺漏的關係。後來，${result}；這次回頭成了全篇真正的轉折。`,
       `${focus}始終放在${place}最醒目的位置，像是在等一個答案。${person}沒有急著移開它，而是${action}。當${evidence}逐漸完整，${result}，原先令人困惑的問題也有了清楚處理方向。`,
-      `大家先不知道事情會如何收場，只知道${person}拒絕${rejected}。他在${place}${action}，其間反覆查看${evidence}。直到最後一句「${result}」出現，讀者才明白前面的耐心沒有白費。`,
+      `大家先不知道事情會如何收場，只知道${person}拒絕${rejected}。${person}在${place}${action}，其間反覆查看${evidence}。直到最後一句「${result}」出現，讀者才明白前面的耐心沒有白費。`,
       `「有根據再說。」這句話在${place}出現了兩次。第一次，是${person}阻止大家採用「${rejected}」處理${focus}；第二次，是${person}${action}並攤開${evidence}之後。兩次之間，事情從爭論走向${result}。`,
       `工作紀錄本來只是冷冰冰的欄位，卻留下了一段經過：${person}遇到${focus}，沒有${rejected}；他${action}，並把${evidence}逐項記下。幾行文字之後，${result}，也讓下一位接手者知道問題如何被解開。`,
-      `${person}心想，若現在${rejected}，事情也許能暫時結束，卻沒有人能說明為什麼。他於是在${place}${action}。看見${evidence}相互支持後，他才放心接受「${result}」這個結果。`,
+      `${person}心想，若現在${rejected}，事情也許能暫時結束，卻沒有人能說明為什麼。${person}於是在${place}${action}。看見${evidence}相互支持後，${person}才放心接受「${result}」這個結果。`,
       `${place}裡有人查資料、有人記時間，也有人保留不同意見。${person}把眾人的工作接起來，先${action.replace(/^先/u, "")}，再共同比對${evidence}。分工沒有讓責任消失，反而使${result}。`,
       `${result}後，${place}安靜下來。${person}沒有把功勞攬在自己身上，只把${evidence}整理好。回想有人曾要他${rejected}，他更確定：真正重要的不是最快結案，而是${action}。`,
-      `因為${focus}，有人提出${rejected}；因為這項建議留下疑問，${person}決定${action}；又因${evidence}能回應疑問，最後${result}。這一連串因果，使事件的每一步都能從前文找到來由。`,
+      `因為${focus}，有人提出${rejected}；因為這項建議留下疑問，${person}決定${action}；又因${evidence}能回應疑問，最後${result}。圍繞${focus}的這一連串因果，使事件的每一步都能從前文找到來由。`,
     ],
     expository: [
-      `${person}整理的說明指出：處理${focus}時，「看起來最合理」不是充分依據。以${place}的這次紀錄為例：第一步是${action}；第二步是比較${evidence}；最後才能得到「${result}」的結果。這個流程的重點是把觀察、推測和結論分開。`,
+      `${person}整理的說明指出：處理${focus}時，「看起來最合理」不是充分依據。以${place}的這次紀錄為例：第一步是${action}；第二步是比較${evidence}；最後才能得到「${result}」的結果。這個處理${focus}的流程，重點是把觀察、推測和結論分開。`,
       `關於${focus}，常見有兩種做法。一種是${rejected}，它省時，卻沒有辦法讓別人複查。另一種是${person}在${place}採用的方法：${action}，再核對${evidence}。後者雖多一道手續，卻得到「${result}」的可驗證結果。`,
-      `${place}遇到的問題是：大家對${focus}有不同說法，卻把猜測和記錄混在一起。解決方式不是少留資料，而是由${person}${action}，並把${evidence}列成可對照項目。於是${result}。從問題到方法再到結果，每一段都回答上一段留下的疑問。`,
-      `問：發現${focus}後，為什麼不能${rejected}？答：因為這樣無法檢驗資料的來源與適用範圍。問：${person}在${place}怎麼做？答：${action}，並核對${evidence}。問：這些步驟有什麼成效？答：${result}。這組問答把做法、理由與結果清楚分層。`,
+      `${place}遇到的問題是：大家對${focus}有不同說法，卻把猜測和記錄混在一起。解決方式不是少留資料，而是由${person}${action}，並把${evidence}列成可對照項目。於是${result}。從${focus}的問題到方法再到結果，每一段都回答上一段留下的疑問。`,
+      `問：發現${focus}後，為什麼不能${rejected}？答：因為那樣無法檢驗${focus}相關資料的來源與適用範圍。問：${person}在${place}怎麼做？答：${action}，並核對${evidence}。問：這些步驟有什麼成效？答：${result}。這組關於${focus}的問答，把做法、理由與結果清楚分層。`,
       `處理${focus}可分為三個環節：先${action}；再整理${evidence}；最後才根據兩者說明結果。${place}的紀錄顯示，照此順序進行後，${result}。若改成${rejected}，第二個環節便無從核對。`,
       `${focus}的處理不是單純的「快或慢」問題。${person}在${place}先界定要回答的問題，再${action}，最後用${evidence}檢查。這三層分別是目的、方法與依據，合起來才得到「${result}」。`,
-      `常見誤解是：面對${focus}，只要${rejected}就能完成工作。實際上，這種做法缺少可確認的中間資料。${place}採用的修正方式是由${person}${action}，並保留${evidence}，因此${result}。`,
+      `常見誤解是：面對${focus}，只要${rejected}就能完成工作。實際上，「${rejected}」缺少可確認的中間資料。${place}採用的修正方式是由${person}${action}，並保留${evidence}，因此${result}。`,
       `【流程卡】輸入：${focus}與現有紀錄。處理：${person}在${place}${action}。檢查：比對${evidence}。輸出：${result}。流程卡把每一步所需資訊分開，可避免用「${rejected}」跳過必要檢查。`,
       `若把這次${place}的案例畫成因果鏈，起點是${focus}造成資訊不一致；中段是${person}${action}；能連接前後的是${evidence}；終點則是${result}。其中任何一段缺漏，都可能讓讀者誤以為${rejected}也可行。`,
-      `案例摘要：${place}需要處理${focus}。${person}沒有${rejected}，而是${action}。由於${evidence}可供重查，工作最後達成「${result}」。這個案例用具體情況示範：結論要能回到方法與資料。`,
-      `比較表的左欄寫「${rejected}」，優點只有省時，缺點是無法說明依據；右欄寫「${action}」，並附上${evidence}。${place}採右欄做法後，${result}。兩欄使用同一標準，差異便清楚可見。`,
-      `${person}為${place}寫的解說先界定對象：${focus}；接著說明方法：${action}；再列出核對資料：${evidence}。末段才寫「${result}」。這種由對象到方法、再到結果的次序，方便讀者重做同一流程。`,
-      `一、不採「${rejected}」。二、${action}。三、確認${evidence}。四、記錄結果。這份四步說明在${place}實際使用後，得到「${result}」。編號不是裝飾，而是避免把後一步誤當前一步。`,
-      `這次處理可用「現況—限制—方法—結果」理解。現況是${focus}；限制是不能${rejected}；方法是${person}${action}；核對資料是${evidence}；結果是${result}。各項資訊分別回答不同問題。`,
+      `案例摘要：${place}需要處理${focus}。${person}沒有${rejected}，而是${action}。由於${evidence}可供重查，工作最後達成「${result}」。${place}的這個案例用具體情況示範：結論要能回到方法與資料。`,
+      `比較表的左欄寫「${rejected}」，優點只有省時，缺點是無法說明依據；右欄寫「${action}」，並附上${evidence}。${place}採右欄做法後，${result}。針對${focus}，兩欄使用同一標準，差異便清楚可見。`,
+      `${person}為${place}寫的解說先界定對象：${focus}；接著說明方法：${action}；再列出核對資料：${evidence}。末段才寫「${result}」。這種說明${focus}時由對象到方法、再到結果的次序，方便讀者重做同一流程。`,
+      `一、不採「${rejected}」。二、${action}。三、確認${evidence}。四、記錄結果。這份四步說明在${place}實際使用後，得到「${result}」。在${focus}的說明中，編號不是裝飾，而是避免把後一步誤當前一步。`,
+      `這次處理${focus}可用「現況—限制—方法—結果」理解。現況是${focus}；限制是不能${rejected}；方法是${person}${action}；核對資料是${evidence}；結果是${result}。關於${focus}的各項資訊，分別回答不同問題。`,
       `為什麼${place}要留下${evidence}？因為${person}${action}後，仍需讓下一位承辦者知道結論從何而來。這些資料使「${result}」不只是口頭宣告，也說明了為何不能${rejected}。`,
       `從資料處理角度看，${focus}是待判定項目，${evidence}是核對條件，${action}是操作步驟。${person}在${place}依此完成後，${result}。三者功能不同，不能用「${rejected}」一次取代。`,
       `簡短報告分成兩段。第一段記錄${person}如何在${place}${action}，第二段用${evidence}解釋為何可得到「${result}」。報告另列${rejected}為未採方式，提醒讀者不能用缺乏依據的做法取代流程。`,
       `要重做這項工作，讀者不必複製${person}的每個動作，只須掌握三個條件：對象是${focus}，操作是${action}，核對時使用${evidence}。符合這三點，才能檢查是否也能得到「${result}」。`,
-      `說明書中的警語寫著：「不得${rejected}。」警語後緊接兩項資訊：做法是${action}；依據是${evidence}。它不只告訴讀者別做什麼，也提供可行替代。${place}依此處理後，${result}。`,
+      `說明書中的警語寫著：「不得${rejected}。」警語後緊接兩項資訊：做法是${action}；依據是${evidence}。這則關於${focus}的警語不只告訴讀者別做什麼，也提供可行替代。${place}依此處理後，${result}。`,
       `${place}的觀察紀錄沒有把所有細節等量排列，而是挑出和${focus}直接相關的三項：${action}的步驟、${evidence}的條件，以及「${result}」的結果。這種取捨使主題集中，也排除了${rejected}的捷徑。`,
     ],
     argumentative: [
-      `有人認為，處理${focus}時，${rejected}最有效率。但${person}在${place}的經驗顯示，快並不等於可靠。${person}${action}，再以${evidence}查核，結果是${result}。因此，若一項決定會影響他人，至少應讓核心證據可被重新檢查。`,
-      `${place}這次關於${focus}的處理，支持了一個主張：先保留證據，再得出結論，往往比依賴印象有效。理由不只是${person}選擇了${action}，更在於${evidence}能供別人獨立核對，最後也確實使${result}。單一事例不足以證明所有情況，但它能說明這套原則為何值得優先採用。`,
-      `當然，每件小事都要追查到底，可能浪費時間。然而，這不代表處理${focus}時可以${rejected}。${person}在${place}做的是有界線的查核：${action}，只比對與判斷直接相關的${evidence}。這個範圍已足以使${result}。關鍵不是「查得越多越好」，而是證據是否足以支持當下決定。`,
-      `評估${focus}的處理方式，可以用三個標準：是否保護當事人、證據是否可複查、結果是否回應問題。「${rejected}」至少沒有通過第二項。相較之下，${person}在${place}${action}，參考資料包括${evidence}，最後${result}。依同一組標準比較，才不會只因個人偏好就改變結論。`,
+      `有人認為，處理${focus}時，${rejected}最有效率。但${person}在${place}的經驗顯示，快並不等於可靠。${person}${action}，再以${evidence}查核，結果是${result}。因此，${person}在${place}的做法顯示：若一項決定會影響他人，至少應讓核心證據可被重新檢查。`,
+      `${place}這次處理${focus}的過程，支持了一個主張：先保留證據，再得出結論，往往比依賴印象有效。理由不只是${person}選擇了${action}，更在於${evidence}能供別人獨立核對，最後也確實使${result}。${place}的單一事例不足以證明所有情況，但它能說明這套原則為何值得優先採用。`,
+      `當然，把${focus}的每個細節都追查到底，可能浪費時間。然而，這不代表可以${rejected}。${person}在${place}做的是有界線的查核：${action}，只比對與判斷直接相關的${evidence}。這個範圍已足以使${result}。處理${focus}時，關鍵不是「查得越多越好」，而是證據是否足以支持當下決定。`,
+      `評估如何處理${focus}，可以用三個標準：是否保護當事人、證據是否可複查、結果是否回應問題。「${rejected}」至少沒有通過第二項。相較之下，${person}在${place}${action}，參考資料包括${evidence}，最後${result}。在這次${place}的評估中，依同一組標準比較，才不會只因個人偏好就改變結論。`,
       `面對${focus}，真正的選擇不是「馬上做」或「什麼都不做」。${place}的經驗提出第三條路：由${person}${action}，並以${evidence}限制判斷範圍。這樣既能推進工作，也使${result}；反而是${rejected}最容易留下後患。`,
-      `若只比較花費時間，${rejected}似乎占優勢；若把誤判後的重做成本也算進來，結論便不同。${person}在${place}${action}，核對${evidence}後，${result}。因此，效率應包含結果是否可靠，而不只看第一步多快。`,
-      `有人反問：「為${focus}留下${evidence}，是否太麻煩？」這個疑問值得考慮，但${place}的案例顯示，${person}${action}並未無限擴大查核，卻足以使${result}。必要範圍內的說明，不等於事事追究。`,
-      `判斷一項做法是否合理，可以先問：它能否讓受影響的人知道依據？「${rejected}」無法回答；${person}在${place}${action}並列出${evidence}，則能回答。最後${result}，也證明公開依據有實際作用。`,
+      `若只比較花費時間，${rejected}似乎占優勢；若把誤判後的重做成本也算進來，結論便不同。${person}在${place}${action}，核對${evidence}後，${result}。因此，這次查核${focus}的效率應包含結果是否可靠，而不只看第一步多快。`,
+      `有人反問：「為${focus}留下${evidence}，是否太麻煩？」這個疑問值得考慮，但${place}的案例顯示，${person}採取「${action}」；這並未無限擴大查核，卻足以使${result}。就${place}這次處理而言，必要範圍內的說明不等於事事追究。`,
+      `判斷${place}這次做法是否合理，可以先問：它能否讓受影響的人知道依據？「${rejected}」無法回答。${person}在${place}採取的做法是「${action}」，所列依據是${evidence}；這些資訊則能回答。最後${result}，也證明公開依據有實際作用。`,
       `${place}對${focus}的爭議不是誰的聲音大，而是哪個理由能承受核對。${person}主張${action}，理由是${evidence}可重查；另一方則主張「${rejected}」。當${result}，較完整的理由自然更有說服力。`,
-      `「只要結果對，過程不必說明」看似實用，卻禁不起${place}的例子。${person}若只碰巧得到答案，別人無法重做；他選擇${action}並保留${evidence}，才使${result}成為可說明的成果。`,
-      `討論${focus}時，${person}沒有把自己的做法說成唯一真理。他只指出：和${rejected}相比，${action}能以${evidence}接受檢查，並確實帶來「${result}」。這是一項有條件的主張，而非把單一案例誇大成普遍定律。`,
-      `如果${place}接受${rejected}，短期可能少一道程序，長期卻可能無法解釋錯誤。${person}${action}，用${evidence}建立交接基礎，最後${result}。從前後影響比較，後者更符合負責任的決策。`,
-      `一項結論的可信度，不會因說話者身分而自動提高。處理${focus}時，${person}在${place}提出的是可檢查的做法：${action}；支持它的是${evidence}；結果則是${result}。這三者比「${rejected}」更值得採納。`,
-      `反對者擔心查核會拖慢進度。回應這項擔心，不能只說「查核很重要」，而要看實際範圍。針對${focus}，${person}採取${action}，查核範圍只包括${evidence}，便使${result}。案例顯示，有界線的查核可以兼顧進度。`,
-      `從公平角度看，${rejected}可能讓未被詢問的人承擔後果。${person}在${place}${action}，並用${evidence}說明判斷，最後${result}。讓依據公開，不只提高正確率，也降低任意歸責。`,
-      `是否採用一項方法，應先確定評量標準。若標準是「能處理${focus}、可由他人核對、沒有不必要傷害」，${rejected}明顯不足；${action}搭配${evidence}則較完整，且實際達成${result}。`,
-      `問「誰說的」有時有用，卻不能取代「根據什麼」。${place}處理${focus}時，${person}沒有要求大家只相信個人判斷，而是${action}，並提出${evidence}。正因如此，「${result}」不是靠權威命令得到的。`,
-      `只因${rejected}比較方便，就把方便等同正確，是把兩種標準混在一起。${person}在${place}${action}，再用${evidence}檢查，結果${result}。案例提醒我們：方便可列入考量，但不能遮蔽可靠性。`,
+      `「只要結果對，過程不必說明」看似實用，卻禁不起${place}的例子。${person}若只碰巧得到答案，別人無法重做；${person}選擇${action}並保留${evidence}，才讓「${result}」成為可說明、可重做的成果。`,
+      `討論${focus}時，${person}沒有把自己的做法說成唯一真理。他只指出：和${rejected}相比，${action}能以${evidence}接受檢查，並確實帶來「${result}」。這項主張只直接說明${place}如何處理${focus}，不能把單一案例誇大成普遍定律。`,
+      `如果${place}接受${rejected}，短期可能少一道程序，長期卻可能無法解釋錯誤。${person}${action}，用${evidence}建立交接基礎，最後${result}。比較${place}採用兩種做法的前後影響，在${focus}這件事上，後者更符合負責任的決策。`,
+      `結論是否可信，不會因說話者身分而自動提高；以${place}處理${focus}為例，${person}提出的是可檢查的做法：${action}。支持它的是${evidence}；結果則是${result}。這三者比「${rejected}」更值得採納。`,
+      `反對者擔心查核${focus}會拖慢進度。回應「查核${evidence}太花時間」這項擔心，不能只說「查核很重要」，而要看實際範圍。${person}採取${action}，查核範圍只包括${evidence}，便使${result}。${place}的案例顯示，有界線的查核可以兼顧進度。`,
+      `從公平角度看，${rejected}可能讓未被詢問的人承擔後果。${person}在${place}${action}，並用${evidence}說明判斷，最後${result}。公開處理${focus}時採用的依據，不只提高正確率，也降低任意歸責。`,
+      `要處理${focus}，應先確定用什麼標準評估可採方法。若標準是「能處理問題、可由他人核對、沒有不必要傷害」，${rejected}明顯不足；${action}搭配${evidence}則較完整，且實際使${result}。`,
+      `判斷${place}這次做法時，問「誰說的」有時有用，卻不能取代「根據什麼」。${person}沒有要求大家只相信個人判斷，而是${action}，並提出${evidence}。正因如此，「${result}」不是靠權威命令得到的。`,
+      `只因${rejected}比較方便，就把方便等同正確，是把兩種標準混在一起。${person}在${place}${action}，再用${evidence}檢查，結果${result}。${place}的案例提醒我們：方便可列入考量，但不能遮蔽可靠性。`,
       `這個案例能支持的結論有限：它不能證明每次遇到${focus}都必須用同一程序，卻能反駁「${rejected}永遠足夠」。至少在${place}，${person}${action}並核對${evidence}後，${result}。`,
-      `好的決策規則應讓不同的人在相同資料下得到相近判斷。${person}處理${focus}時，把規則落實為${action}，資料則是${evidence}。這使${place}最後${result}，比憑個人偏好${rejected}更可交代。`,
+      `處理${focus}時，好的規則應讓不同的人在相同資料下得到相近判斷。${person}把規則落實為${action}，資料則是${evidence}。這使${place}最後${result}，比憑個人偏好${rejected}更可交代。`,
     ],
     practical: [
       `【${place}處理通知】對象：${focus}。負責人：${person}。步驟：${action}。核對項目：${evidence}。處理結果：${result}。請勿${rejected}；如有新資料，請附上來源與時間，交由原負責單位更新。`,
       `【工作紀錄】地點：${place}。記錄者：${person}。問題：${focus}引發的資訊不一致。已完成：${action}。核對依據：${evidence}。結案：${result}。未採做法：${rejected}，因為無法留下可複查依據。`,
-      `主旨：${focus}處理說明（${place}）。您好，我是${person}。現場原有說法尚未足以判斷，因此我已${action}，並依${evidence}完成核對。目前${result}。為避免混淆，請不要${rejected}。若您有相關紀錄，請回覆具體日期與來源。`,
-      `【會議決議摘要】案由：如何處理${place}的${focus}。與會者不採「${rejected}」，改由${person}${action}。驗收依據為${evidence}。執行後，${result}。後續若收到新資料，應在同一紀錄中附上版本時間，不口頭覆蓋原紀錄。`,
+      `主旨：${focus}處理說明（${place}）。您好，我是${person}。現場原有說法尚未足以判斷，因此我已${action}，並依${evidence}完成核對。目前${result}。為避免混淆，請不要${rejected}。若您有與${focus}相關的紀錄，請回覆具體日期與來源。`,
+      `【會議決議摘要】案由：如何處理${place}的${focus}。與會者不採「${rejected}」，改由${person}${action}。驗收依據為${evidence}。執行後，${result}。後續若收到關於${focus}的新資料，應在同一紀錄中附上版本時間，不口頭覆蓋原紀錄。`,
       `【交接單】事項：${focus}。地點：${place}。前手已由${person}${action}；附件包含${evidence}。目前狀態：${result}。接手者若需變更，請保留原紀錄；不得${rejected}。`,
       `【修正公告】原文件涉及${focus}，部分資訊不足。修正方式：${person}${action}，並重新核對${evidence}。修正後：${result}。舊版保留更正標記，請勿再${rejected}。`,
       `【服務案件】編號：${String(number).padStart(3, "0")}。受理地點：${place}。案件內容：${focus}。承辦${person}已${action}。查核資料：${evidence}。回覆：${result}。備註：不採「${rejected}」。`,
@@ -2139,7 +2139,32 @@ function stimulusQuestionsFor(stimulus, index) {
   });
 }
 
-const rawStimuli = Array.from({ length: 320 }, (_, index) => stimulusFor(index));
+function contextualizeRepeatedStimulusSentences(records) {
+  const chunksFor = ({ content }) => content.match(/[^。！？]*[。！？]|[^。！？]+$/gu) ?? [];
+  const sentenceKey = (chunk) => chunk.replace(/[。！？]$/u, "").trim();
+  const occurrences = new Map();
+  for (const record of records) for (const chunk of chunksFor(record)) {
+    const key = sentenceKey(chunk);
+    if (key.length < 12) continue;
+    occurrences.set(key, (occurrences.get(key) ?? 0) + 1);
+  }
+  return records.map((record) => ({
+    ...record,
+    content: chunksFor(record).map((chunk) => {
+      const key = sentenceKey(chunk);
+      if ((occurrences.get(key) ?? 0) < 2) return chunk;
+      const punctuation = chunk.match(/[。！？]$/u)?.[0] ?? "";
+      const leading = key.match(/^[」』]/u)?.[0] ?? "";
+      const body = key.slice(leading.length);
+      const contextual = body.startsWith("答：")
+        ? `答：就${record.facts.focus}而言，${body.slice(2)}`
+        : `${record.facts.place}處理${record.facts.focus}時，${body}`;
+      return `${leading}${contextual}${punctuation}`;
+    }).join(""),
+  }));
+}
+
+const rawStimuli = contextualizeRepeatedStimulusSentences(Array.from({ length: 320 }, (_, index) => stimulusFor(index)));
 const stimuli = rawStimuli.map(({ facts, ...stimulus }) => stimulus);
 const stimulusQuestions = rawStimuli.flatMap((stimulus, index) => stimulusQuestionsFor(stimulus, index)).map(strengthenQuestionExplanation);
 
@@ -2312,9 +2337,9 @@ function practiceTextFor(genre, facts, variant) {
   const { person, place, focus, action, evidence, result, rejected } = facts;
   const texts = {
     narrative: [
-      `${person}在${place}發現${focus}引起爭論，先沒有跟著眾人猜測，而是${action}。等到${evidence}相互吻合，${result}。他這才明白，判斷得快不如留下能回頭查的依據。`,
-      `${result}。幾天後，${person}才說起事情的開端：他在${place}遇到${focus}，有人提議${rejected}。他沒有照做，改成${action}，並以${evidence}一步步排除誤判。`,
-      `「先照大家說的做，不就好了？」有人指著${focus}問。${person}站在${place}回答：「至少先看看留下了什麼紀錄。」他隨後${action}，把${evidence}逐項標記；最後，${result}。`,
+      `${person}在${place}發現${focus}引起爭論，先沒有跟著眾人猜測，而是${action}。等到${evidence}相互吻合，${result}。${person}這才明白，判斷得快不如留下能回頭查的依據。`,
+      `${result}。幾天後，${person}才說起事情的開端：${person}在${place}遇到${focus}，有人提議${rejected}。${person}沒有照做，改成${action}，並以${evidence}一步步排除誤判。`,
+      `「先照大家說的做，不就好了？」有人指著${focus}問。${person}站在${place}回答：「至少先看看留下了什麼紀錄。」${person}隨後${action}，把${evidence}逐項標記；最後，${result}。`,
       `${person}的紀錄分成三欄。第一欄寫「地點：${place}；對象：${focus}」；第二欄才記「${action}」；直到核對${evidence}後，第三欄才補上「${result}」。事實與結論因此沒有混在一起。`,
     ],
     expository: [
@@ -3497,15 +3522,25 @@ function calligraphySvgText(label, value, y) {
   return `<text x="465" y="${y}" font-size="14" font-family="sans-serif">${chunks.map((chunk, index) => `<tspan x="465" dy="${index ? 21 : 0}">${svgEscape(chunk)}</tspan>`).join("")}</text>`;
 }
 
+const CALLIGRAPHY_STROKES = Object.freeze([
+  '<path d="M150 80 Q235 35 320 80 Q365 145 320 205 Q235 250 150 205 Q105 145 150 80 Z" fill="none" stroke="black" stroke-width="13" stroke-linecap="round"/><path d="M190 92 Q235 130 280 92 M190 195 Q235 155 280 195" fill="none" stroke="black" stroke-width="13" stroke-linecap="round"/>',
+  '<path d="M115 105 C145 86 315 86 355 112" fill="none" stroke="black" stroke-width="18" stroke-linecap="square"/><path d="M155 72 L155 225 M300 72 L300 220" stroke="black" stroke-width="13"/><path d="M105 218 C170 245 305 245 370 205" fill="none" stroke="black" stroke-width="20" stroke-linecap="round"/>',
+  '<path d="M145 78 L320 78 M235 48 L235 232 M145 135 L320 135 M130 225 L340 225" fill="none" stroke="black" stroke-width="15" stroke-linecap="square"/><path d="M155 145 L125 205 M310 145 L345 205" stroke="black" stroke-width="13"/>',
+  '<path d="M135 85 C205 50 305 75 330 105 C280 105 215 110 165 140 C210 155 285 145 315 170 C270 195 195 205 125 225" fill="none" stroke="black" stroke-width="15" stroke-linecap="round"/><path d="M235 55 C220 115 245 165 210 235" fill="none" stroke="black" stroke-width="10"/>',
+  '<path d="M120 115 C190 45 325 65 280 125 C245 165 155 125 170 185 C185 240 315 225 355 165" fill="none" stroke="black" stroke-width="18" stroke-linecap="round"/><path d="M305 70 C250 130 245 185 205 235" fill="none" stroke="black" stroke-width="9"/>',
+  '<path d="M120 92 L350 92 M170 55 L170 235 M292 55 L292 235 M120 150 L350 150 M105 230 L365 230" fill="none" stroke="black" stroke-width="14" stroke-linecap="square"/><path d="M200 110 L260 210 M270 110 L210 210" stroke="black" stroke-width="11"/>',
+  '<path d="M110 92 C170 62 295 68 360 105 M128 145 C185 125 292 126 342 150 M105 218 C185 250 292 244 375 198" fill="none" stroke="black" stroke-width="17" stroke-linecap="round"/><path d="M235 60 L235 222" stroke="black" stroke-width="12"/>',
+  '<path d="M115 82 C175 45 305 55 345 92 C285 100 198 95 150 128 C200 146 302 128 330 160 C285 184 198 185 135 218" fill="none" stroke="black" stroke-width="14" stroke-linecap="round"/><path d="M295 55 C255 105 265 164 218 228 M330 188 Q350 215 370 188" fill="none" stroke="black" stroke-width="9"/>',
+  '<path d="M145 70 Q235 42 330 78 L330 215 Q235 245 145 215 Z" fill="none" stroke="black" stroke-width="13" stroke-linejoin="round"/><path d="M205 80 Q275 115 205 145 Q155 172 265 205 M275 78 L275 212" fill="none" stroke="black" stroke-width="12" stroke-linecap="round"/>',
+  '<path d="M112 110 C175 42 330 62 270 128 C230 170 145 128 170 188 C195 245 325 212 370 145" fill="none" stroke="black" stroke-width="17" stroke-linecap="round"/><path d="M325 70 C285 110 260 155 245 230 M128 205 Q95 225 120 242" fill="none" stroke="black" stroke-width="9"/>',
+  '<path d="M125 95 L235 45 L350 95 M155 105 L155 225 M315 105 L315 225 M155 155 L315 155 M125 230 L350 230" fill="none" stroke="black" stroke-width="14" stroke-linecap="square"/><path d="M205 112 L270 205 M275 112 L205 205" stroke="black" stroke-width="10"/>',
+  '<path d="M115 88 C175 48 295 58 340 92 C285 103 205 98 150 130 C205 150 315 138 342 170 C280 190 205 188 120 230" fill="none" stroke="black" stroke-width="14" stroke-linecap="round"/><path d="M245 48 C230 105 255 155 208 238 M340 205 Q365 225 382 195" fill="none" stroke="black" stroke-width="9"/>',
+]);
+assert.equal(new Set(CALLIGRAPHY_STROKES).size, 12);
+
 function svgForCalligraphyAsset(asset) {
   const { item } = asset;
-  const strokes = {
-    篆書: '<path d="M150 80 Q235 35 320 80 Q365 145 320 205 Q235 250 150 205 Q105 145 150 80 Z" fill="none" stroke="black" stroke-width="13" stroke-linecap="round"/><path d="M190 92 Q235 130 280 92 M190 195 Q235 155 280 195" fill="none" stroke="black" stroke-width="13" stroke-linecap="round"/>',
-    隸書: '<path d="M115 105 C145 86 315 86 355 112" fill="none" stroke="black" stroke-width="18" stroke-linecap="square"/><path d="M155 72 L155 225 M300 72 L300 220" stroke="black" stroke-width="13"/><path d="M105 218 C170 245 305 245 370 205" fill="none" stroke="black" stroke-width="20" stroke-linecap="round"/>',
-    楷書: '<path d="M145 78 L320 78 M235 48 L235 232 M145 135 L320 135 M130 225 L340 225" fill="none" stroke="black" stroke-width="15" stroke-linecap="square"/><path d="M155 145 L125 205 M310 145 L345 205" stroke="black" stroke-width="13"/>',
-    行書: '<path d="M135 85 C205 50 305 75 330 105 C280 105 215 110 165 140 C210 155 285 145 315 170 C270 195 195 205 125 225" fill="none" stroke="black" stroke-width="15" stroke-linecap="round"/><path d="M235 55 C220 115 245 165 210 235" fill="none" stroke="black" stroke-width="10"/>',
-    草書: '<path d="M120 115 C190 45 325 65 280 125 C245 165 155 125 170 185 C185 240 315 225 355 165" fill="none" stroke="black" stroke-width="18" stroke-linecap="round"/><path d="M305 70 C250 130 245 185 205 235" fill="none" stroke="black" stroke-width="9"/>',
-  }[item.script];
+  const strokes = CALLIGRAPHY_STROKES[Number(asset.id.slice(-3)) - 13];
   const title = svgEscape(asset.title);
   const desc = svgEscape(calligraphyCardLongDescription(asset));
   return `<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 720 460"><title id="title">${title}</title><desc id="desc">${desc}</desc><rect width="720" height="460" fill="white"/><text x="360" y="32" text-anchor="middle" font-size="22" font-family="sans-serif" fill="black">${title}（原創特徵示意）</text><rect x="70" y="55" width="360" height="300" fill="white" stroke="black" stroke-width="2"/><line x1="250" y1="55" x2="250" y2="355" stroke="#bbb"/><line x1="70" y1="205" x2="430" y2="205" stroke="#bbb"/>${strokes}${calligraphySvgText("字形", item.observable, 78)}${calligraphySvgText("筆勢", item.stroke, 175)}${calligraphySvgText("行款", item.layout, 260)}<text x="360" y="405" text-anchor="middle" font-size="14" font-family="sans-serif">示意線條只呈現觀察維度；辨識須合併字形、筆畫、結構與載體，不依顏色。</text><text x="360" y="435" text-anchor="middle" font-size="13" font-family="sans-serif">黑白列印可讀；不是古代真蹟、拓本複製或特定作者作品。</text></svg>`;
