@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_238_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S238"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Jay broke the cup and then hid it. That made the problem worse. What made the problem worse?",
+  "options": [
+    "the cup alone",
+    "hiding the broken cup",
+    "the table",
+    "buying a new cup"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the cup alone：杯子是問題對象，但後句評論的是 Jay 的後續行動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "hiding the broken cup：隱瞞破杯使問題惡化，that 概括前述處理方式。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the table：table 未出現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "buying a new cup：原文沒有購買新杯，且那會改善而非惡化。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "resolve-demonstrative-proposition",
+    "select-action-causing-worse-result"
+  ],
+  "representationType": "result-reference",
+  "misconceptionTargets": [
+    "select-object-not-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「this 或 that 後的評論對哪一整句成立」可推出 hiding the broken cup；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 hiding the broken cup 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_261_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S261"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A volunteer is a person who chooses to help without being paid. Who is a volunteer?",
+  "options": [
+    "a worker who must be paid",
+    "any person waiting for help",
+    "a customer choosing a product",
+    "someone who helps by choice without pay"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "a worker who must be paid：與 without being paid 相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "any person waiting for help：角色由 helper 變成受助者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a customer choosing a product：選擇購物不等於志願協助。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "someone who helps by choice without pay：完整保留 chooses、help、without paid。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-word-from-definition",
+    "replace-word-with-definition"
+  ],
+  "representationType": "same-sentence-definition",
+  "misconceptionTargets": [
+    "choose-topic-related-meaning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「同句的 is、means、or、that is 等定義訊號」可推出 someone who helps by choice without pay；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 someone who helps by choice without pay 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

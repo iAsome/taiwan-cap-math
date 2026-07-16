@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_Q_320_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S320"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "You hear: A: 'This soup has nuts.' B: 'I can't eat nuts.' A: 'The rice dish is nut-free.' B: 'I'll have that.' What does B order?",
+  "options": [
+    "both dishes",
+    "nothing because rice has no name",
+    "the rice dish",
+    "the soup"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "both dishes：只選 that。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "nothing because rice has no name：有 rice dish。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the rice dish：that 回指最近 nut-free rice dish。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the soup：含過敏原。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-multiturn-problem-decision",
+    "track-proposals-eliminations-constraints-and-agreement"
+  ],
+  "representationType": "listening-multiturn-decision",
+  "misconceptionTargets": [
+    "select-first-proposal-before-final-agreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「多輪對話中的初始問題、被排除方案、限制與明確同意共同決定最後選擇」可推出 the rice dish；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 the rice dish 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

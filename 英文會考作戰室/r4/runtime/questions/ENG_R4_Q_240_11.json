@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_240_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S240"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The first plan cost too much. Instead, the club used a free room. What does Instead show?",
+  "options": [
+    "replacement of the first plan",
+    "proof that both plans were used",
+    "a reason the room was costly",
+    "an example of the first plan"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "replacement of the first plan：免費房間取代昂貴的第一方案。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "proof that both plans were used：Instead 表改用，不是兩案並行。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a reason the room was costly：free 與 costly 相反，且昂貴原因未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "an example of the first plan：後句是替代方案，不是原案例子。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "use-discourse-marker",
+    "identify-alternative-plan"
+  ],
+  "representationType": "replacement-marker",
+  "misconceptionTargets": [
+    "read-instead-as-addition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「標記詞宣告的轉折、因果或例證功能」可推出 replacement of the first plan；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 replacement of the first plan 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

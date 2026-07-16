@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_027_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "___ a box of old photos under the bed.",
+  "options": [
+    "There are",
+    "There were",
+    "There be",
+    "There is"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "There are：誤由 photos 控制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "There were：無過去時間線索。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "There be：缺少屈折形式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "There is：核心名詞 box 單數，of photos 不控制 be。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "form-present-existence-with-there",
+    "introduce-entity-and-agree-with-postverbal-head"
+  ],
+  "representationType": "present-existence",
+  "misconceptionTargets": [
+    "treat-there-as-place-or-use-have"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「以 There is／There are 引入新存在物，並讓 be 與後方名詞片語的單複數一致。」可推出 There is；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 There is 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

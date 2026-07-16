@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_296_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S296"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "stimulusId": null,
+  "stem": "A delivery box had the wrong address. Nora called the shop, and a driver collected it before it reached the wrong home. Which is the best summary?",
+  "options": [
+    "Nora reported an address error, so the box was redirected in time.",
+    "Nora saw a brown box with a white label.",
+    "A driver owned a very large truck.",
+    "The box was certainly the best delivery ever."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Nora reported an address error, so the box was redirected in time.：保留問題、關鍵行動與結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nora saw a brown box with a white label.：只留裝飾細節。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A driver owned a very large truck.：未提且非主線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The box was certainly the best delivery ever.：加入無證據評價。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "build-causal-story-summary",
+    "compress-problem-action-result-chain"
+  ],
+  "representationType": "causal-summary",
+  "misconceptionTargets": [
+    "list-details-without-causal-spine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「摘要保留初始目標或問題、關鍵因果轉折與結果，刪除不影響因果鏈的細節」可推出 Nora reported an address error, so the box was redirected in time.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Nora reported an address error, so the box was redirected in time. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

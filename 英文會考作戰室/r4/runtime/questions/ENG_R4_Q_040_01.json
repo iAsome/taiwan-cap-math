@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_040_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "We bought ___ oranges for the picnic.",
+  "options": [
+    "some",
+    "any",
+    "much",
+    "a"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "some：肯定句表示若干複數橘子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "any：缺少任一或否定語意。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "much：不搭複數可數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "a：不能直接搭複數 oranges。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "choose-some-or-any-by-meaning",
+    "classify-assertion-negation-neutral-question-offer-or-free-choice"
+  ],
+  "representationType": "some-any-polarity-function",
+  "misconceptionTargets": [
+    "select-any-from-question-mark-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「依肯定、否定、一般問句及期待肯定的提議／請求語意，選 some 或 any，並維持名詞可數性。」可推出 some；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 some 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

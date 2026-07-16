@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Please bring the green folder and your student card.\nWhich two things are needed?",
+  "options": [
+    "A red folder and a ticket",
+    "A card and some money",
+    "The green folder and a student card",
+    "Two student cards"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色與第二項都不符合原文。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原文沒有付款要求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩個名詞完整對應訊息。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "student card 只出現一張，另一項是資料夾。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s220-collect-two-required-items",
+    "preserve-object-color-and-count"
+  ],
+  "representationType": "message-item-list",
+  "misconceptionTargets": [
+    "drop-one-linked-item"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "and 連接兩個都必須攜帶的物品。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案沒有改變數量或顏色。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,190 @@
+{
+  "id": "ENG_R4_L_315",
+  "subject": "english",
+  "unitId": "ENG_R4_U48",
+  "skillId": "ENG_R4_S315",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "prerequisites": [
+    "ENG_R4_S314"
+  ],
+  "objectives": [
+    "辨認詢問資訊、請求、邀請與道歉。",
+    "選擇回答所問功能的自然口語。",
+    "排除語法可行但不回應的句子。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S315_SEC_1",
+      "title": "先判功能",
+      "content": "Could you...? 是請求；Would you like...? 是邀請；How long...? 要時長。先決定答案類型。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S315_SEC_2",
+      "title": "充分而不多答",
+      "content": "Where 問地點，回答 At the east gate 即足夠；不需加入無關故事。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S315_SEC_3",
+      "title": "禮貌對禮貌",
+      "content": "道歉常回 That's all right；感謝常回 You're welcome。不能只做字面配對。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S315_SEC_4",
+      "title": "時態與人物一致",
+      "content": "Did you...? 用過去回答；Can you...? 回能力或接受，不把主詞角色交換。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S315_EX_1",
+      "prompt": "Could you open the window?",
+      "steps": [
+        "功能請求。",
+        "可接受或拒絕。",
+        "選 Sure。"
+      ],
+      "answer": "Sure, I'll do it.",
+      "why": "直接回應且禮貌。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S315_EX_2",
+      "prompt": "How long is the trip?",
+      "steps": [
+        "how long 要時長。",
+        "不是距離地點。",
+        "給 two hours。"
+      ],
+      "answer": "About two hours.",
+      "why": "答案類型正確。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S315_EX_3",
+      "prompt": "I'm sorry I'm late.",
+      "steps": [
+        "辨道歉。",
+        "可接受。",
+        "不回答時間。"
+      ],
+      "answer": "That's all right.",
+      "why": "社交配對。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "抓相同單字就選。",
+      "whyWrong": "自然回應可能不用原詞。",
+      "correction": "判功能。"
+    },
+    {
+      "belief": "文法正確就算回應。",
+      "whyWrong": "可能完全不答。",
+      "correction": "做對話接續測試。"
+    },
+    {
+      "belief": "Could you 只問能力。",
+      "whyWrong": "常是禮貌請求。",
+      "correction": "依情境回應行動。"
+    },
+    {
+      "belief": "答案越長越好。",
+      "whyWrong": "冗長可能離題。",
+      "correction": "選最小充分。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "How long 要哪類答案？",
+      "answer": "時間長度",
+      "reason": "不是地點。"
+    },
+    {
+      "prompt": "Could you 常是什麼？",
+      "answer": "禮貌請求",
+      "reason": "可用 Sure 回。"
+    },
+    {
+      "prompt": "道歉常見回應？",
+      "answer": "接受或安撫",
+      "reason": "如 That's all right。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  }
+}

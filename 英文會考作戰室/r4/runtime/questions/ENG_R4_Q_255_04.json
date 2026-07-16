@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_255_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S255"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The train board showed DELAYED. Mia sat down and called that she would arrive late. What can be inferred?",
+  "options": [
+    "She decided not to travel again",
+    "The delay affected Mia's arrival time",
+    "Mia missed the train on purpose",
+    "The train was canceled"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "She decided not to travel again：只談此次遲到。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The delay affected Mia's arrival time：board delayed 與 late call 形成同一結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Mia missed the train on purpose：意圖未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The train was canceled：delayed 不等於 canceled。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-from-two-explicit-clues",
+    "intersect-explicit-clues"
+  ],
+  "representationType": "two-clue-inference",
+  "misconceptionTargets": [
+    "infer-from-one-clue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「兩項各自不足的明示線索合併後只支持一個結果」可推出 The delay affected Mia's arrival time；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The delay affected Mia's arrival time 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

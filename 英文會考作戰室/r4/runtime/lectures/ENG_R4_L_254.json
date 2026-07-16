@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_254",
+  "subject": "english",
+  "unitId": "ENG_R4_U37",
+  "skillId": "ENG_R4_S254",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "prerequisites": [
+    "ENG_R4_S253"
+  ],
+  "objectives": [
+    "依 first、after、before、then、finally 建立事件線。",
+    "沒有時間詞時使用必要條件判斷先後。",
+    "回答 before、after、next 等問題時保持參考事件正確。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S254_SEC_1",
+      "title": "先找時間路標",
+      "content": "first、then、later、after、before、finally 是直接路標。將事件寫成簡短動作並排入時間線。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S254_SEC_2",
+      "title": "用必要條件補空白",
+      "content": "沒有路標時，open the box 必須先於 take out the key；arrive at the stop 先於 board the bus。問哪件事要先成立。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S254_SEC_3",
+      "title": "參考點不能換",
+      "content": "What happened after the call? 要以 call 為中心找下一事件，不是找全文最後一件事。before/after 的方向要在草稿畫箭頭。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S254_SEC_4",
+      "title": "區分同時與接著",
+      "content": "while 表同時，after 表後續。若兩人同時做事，不能硬排成一前一後；只依文本提供的關係。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S254_EX_1",
+      "prompt": "Nora washed the cups. After they dried, she put them away.",
+      "steps": [
+        "wash 先。",
+        "dry 在 after 子句。",
+        "put away 最後。"
+      ],
+      "answer": "She put them away after they dried.",
+      "why": "回答 next 時不可跳回 washing。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S254_EX_2",
+      "prompt": "The bus arrived. Ben got on and found a seat.",
+      "steps": [
+        "公車先抵達。",
+        "之後才能上車。",
+        "上車後找座位。"
+      ],
+      "answer": "arrive → board → find a seat",
+      "why": "現實必要條件補足未寫 then 的順序。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S254_EX_3",
+      "prompt": "While Mia read the map, Leo checked the signs.",
+      "steps": [
+        "while 表同時。",
+        "兩人動作並行。",
+        "不能宣稱其中一人先完成。"
+      ],
+      "answer": "The actions happened at the same time.",
+      "why": "文本未提供先後。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "段落最後一句就是 next 的答案。",
+      "whyWrong": "next 取決於題目參考事件。",
+      "correction": "在時間線上找緊接一格。"
+    },
+    {
+      "belief": "沒有 then 就沒有順序。",
+      "whyWrong": "事件必要條件也能排序。",
+      "correction": "問哪一步必須先成立。"
+    },
+    {
+      "belief": "while 表先後。",
+      "whyWrong": "while 通常表示同時。",
+      "correction": "除非另有時間線索，不硬排。"
+    },
+    {
+      "belief": "after A, B 表 B 在 A 前。",
+      "whyWrong": "after 引出較早參考事件，主要事件在後。",
+      "correction": "畫 A → B。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "after the show, we ate 中誰先？",
+      "answer": "the show",
+      "reason": "吃飯發生在表演後。"
+    },
+    {
+      "prompt": "while 連接的動作可直接判先後嗎？",
+      "answer": "通常不可",
+      "reason": "它表同時進行。"
+    },
+    {
+      "prompt": "next 題應找全文最後還是參考事件下一步？",
+      "answer": "參考事件下一步",
+      "reason": "保持問題中心。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  }
+}

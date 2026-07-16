@@ -1,0 +1,145 @@
+{
+  "id": "ENG_R4_L_299",
+  "subject": "english",
+  "unitId": "ENG_R4_U45",
+  "skillId": "ENG_R4_S299",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S298"
+  ],
+  "objectives": [
+    "找出程序起始材料與最後觀察。",
+    "利用 before、after、then 排序。",
+    "依物理必要條件檢查步驟。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S299_SEC_1",
+      "title": "先找準備步驟",
+      "content": "measure、label、place 常建立初始狀態。沒有材料就不能先 observe result。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S299_SEC_2",
+      "title": "代名詞提供接續",
+      "content": "it、the mixture 需前文先建立對象；the cooled water 必須在 cooling 之後。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S299_SEC_3",
+      "title": "控制變因要先設定",
+      "content": "比較實驗先讓容器、時間等條件一致，再改一個變因。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S299_SEC_4",
+      "title": "最後才記錄結果",
+      "content": "wait、observe、record 通常在處理之後。不可先寫結果再做處理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S299_EX_1",
+      "prompt": "Label cups; add water; place one in sun; record",
+      "steps": [
+        "先 label。",
+        "再準備 water。",
+        "處理 sun。",
+        "最後 record。"
+      ],
+      "answer": "label → add → place → record",
+      "why": "物件狀態逐步建立。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S299_EX_2",
+      "prompt": "Heat water; let it cool; measure cooled water",
+      "steps": [
+        "cooled 回指需先 cool。",
+        "cool 需先 heat。",
+        "measure 最後。"
+      ],
+      "answer": "heat → cool → measure",
+      "why": "詞形提供順序。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S299_EX_3",
+      "prompt": "Compare seeds with same water",
+      "steps": [
+        "先分組。",
+        "設定 same water。",
+        "再改 light。"
+      ],
+      "answer": "control first, treatment second",
+      "why": "控制條件先建立。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "照句子長短排序。",
+      "whyWrong": "長短與程序無關。",
+      "correction": "追蹤材料狀態。"
+    },
+    {
+      "belief": "record 可放第一。",
+      "whyWrong": "尚無結果可記錄。",
+      "correction": "處理與等待後記錄。"
+    },
+    {
+      "belief": "after 前後可任意交換。",
+      "whyWrong": "時間方向固定。",
+      "correction": "畫箭頭。"
+    },
+    {
+      "belief": "比較實驗可一次改多項。",
+      "whyWrong": "無法判斷原因。",
+      "correction": "只改一個變因。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "record result 通常在何時？",
+      "answer": "處理與觀察之後",
+      "reason": "先有結果才能記錄。"
+    },
+    {
+      "prompt": "cooled water 需要哪個先前步驟？",
+      "answer": "cool the water",
+      "reason": "狀態詞需被建立。"
+    },
+    {
+      "prompt": "公平比較一次改幾個主要變因？",
+      "answer": "一個",
+      "reason": "其他條件控制。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

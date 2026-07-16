@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S220",
+  "subject": "english",
+  "unitId": "ENG_R4_U32",
+  "skillId": "ENG_R4_S220",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "prerequisites": [
+    "ENG_R4_S219"
+  ],
+  "objectives": [
+    "能從訊息中分別擷取時間、地點、人物和待辦事項。",
+    "能整合變更、期限與先後順序，判斷收件者下一步。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S220_SEC_01",
+      "title": "把資訊分成四個問題",
+      "content": "閱讀時可依序問 When、Where、Who 和 What to do。不同資訊可能分散在數句中，先各自記下再組合，能避免把星期、時刻或教室接到錯誤活動。"
+    },
+    {
+      "id": "ENG_R4_L_S220_SEC_02",
+      "title": "新資訊取代被明確改掉的部分",
+      "content": "Meet at 3:00 in Room 2. The room is now Room 5 只改地點，三點仍保留。若寫 The meeting is moved to Friday，才改日期；沒有被提到的欄位不能自行更動。"
+    },
+    {
+      "id": "ENG_R4_L_S220_SEC_03",
+      "title": "期限和活動時間要分開",
+      "content": "Send the form by Tuesday; the trip is Friday 同時有繳交期限與活動日。Tuesday 回答何時交表，Friday 回答何時出發；看到較晚日期不代表前一個期限失效。"
+    },
+    {
+      "id": "ENG_R4_L_S220_SEC_04",
+      "title": "下一步取決於目前狀態",
+      "content": "訊息若說 I am outside，收件者可能要開門；若說 I will arrive at five，則不該在四點就判定對方已到。時態與時間副詞會改變可採取的行動。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S220_EX_01",
+      "prompt": "Meet me at the bus stop at 4:20. Bring the blue bag.",
+      "steps": [
+        "找出地點。",
+        "找出時刻。",
+        "記錄要攜帶的物品。"
+      ],
+      "answer": "Go to the bus stop at 4:20 with the blue bag.",
+      "why": "bus stop 是會合地點，4:20 是會合時間，bring 指出還要帶藍色袋子。若只回答時間，就沒有完成訊息中的物品要求。"
+    },
+    {
+      "id": "ENG_R4_L_S220_EX_02",
+      "prompt": "Practice is still Tuesday at five, but we will use the hall instead of Room 4.",
+      "steps": [
+        "保留 still 後的時間。",
+        "找出 but 後的新地點。",
+        "排除被取代的舊教室。"
+      ],
+      "answer": "Practice is Tuesday at five in the hall.",
+      "why": "still 表示星期二五點沒有改，but 後只把地點改為會堂。Room 4 是舊資訊，不能與新地點並列為兩個可選場所。"
+    },
+    {
+      "id": "ENG_R4_L_S220_EX_03",
+      "prompt": "Please call me after you get home. I will be free after seven.",
+      "steps": [
+        "先找完成回家這個條件。",
+        "再找七點後的時間限制。",
+        "合併兩個條件安排通話。"
+      ],
+      "answer": "Call after getting home and after seven.",
+      "why": "通話要同時滿足回家後與七點後兩項條件。若六點已到家，仍要等到七點以後，不能只符合其中一項。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到第一個時間就把它套到所有事件。",
+      "whyWrong": "一則訊息可能同時有期限、出發與回程時間。",
+      "correction": "將每個時間寫在對應動作旁。"
+    },
+    {
+      "belief": "地點改變時日期和時刻也自動改變。",
+      "whyWrong": "沒有被更新的資訊通常維持原安排。",
+      "correction": "只替換訊息明確改動的欄位。"
+    },
+    {
+      "belief": "活動日比繳交期限晚，所以可以活動當天再交。",
+      "whyWrong": "by 所標出的待辦期限獨立存在。",
+      "correction": "分開記錄待辦截止與活動時程。"
+    },
+    {
+      "belief": "I will arrive 表示對方現在已在現場。",
+      "whyWrong": "will 指向未來，抵達尚未發生。",
+      "correction": "用時態確認事件目前是否完成。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Bring your card 回答時間、地點還是待辦？",
+      "answer": "待辦",
+      "reason": "它要求攜帶一項物品。"
+    },
+    {
+      "prompt": "Room 2, not Room 1 中哪一個是新地點？",
+      "answer": "Room 2",
+      "reason": "not 後排除第一教室。"
+    },
+    {
+      "prompt": "by Monday 和 on Friday 可以分別表示什麼？",
+      "answer": "期限與活動日",
+      "reason": "兩個日期連到不同動作。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Mia sends a quick note to her close friend Amy. Which opening is natural?",
+  "options": [
+    "Dear School Office,",
+    "Hi Amy,",
+    "Dear Sir or Madam,",
+    "Mr. Amy,"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "收件者不是學校辦公室。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "熟悉朋友間可用 Hi 加名字。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "已知朋友姓名時不需要不具名正式稱呼。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Amy 不是題目提供的姓氏或男性稱謂。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s221-choose-close-friend-salutation",
+    "avoid-overformal-address-for-known-peer"
+  ],
+  "representationType": "message-greeting-friend",
+  "misconceptionTargets": [
+    "assume-longer-greeting-is-always-better"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "朋友關係允許簡短自然的開頭。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "已知姓名時不應改用身分不明稱呼。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

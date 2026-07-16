@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'There, each bag was weighed before it was loaded.' Text: Farmers brought rice to the town center. [A] A truck carried the bags to the train station. [B] The train left at noon. [C] Buyers received the rice that evening. [D] Where should the sentence go?",
+  "options": [
+    "A",
+    "C",
+    "B",
+    "D"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "At A 時 There 會回指 town center，但後句說 truck 前往車站，無法確定裝載在哪裡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "在火車離開後才秤重裝載，時間太晚。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "接在到達 train station 後，There 清楚回指車站，且裝載先於列車離開。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "買家收到米後才裝上火車，事件顛倒。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s277-q11-place-there-weighing-at-station",
+    "combine-location-reference-with-loading-sequence"
+  ],
+  "representationType": "logistics-insertion",
+  "misconceptionTargets": [
+    "resolve-there-to-nearest-place-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "地點副詞與程序先後都指向 train station 後。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項建立運送、秤重裝載、發車的完整鏈。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

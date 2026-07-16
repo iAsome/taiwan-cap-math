@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_025_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Is the train late? Which response gives a negative answer plus useful detail?",
+  "options": [
+    "No, they wasn't.",
+    "No, it isn't. It is on time.",
+    "No, the train does.",
+    "Yes, it isn't late."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No, they wasn't.：數與 be 形式皆錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "No, it isn't. It is on time.：先短答再補充相反狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "No, the train does.：助動詞與極性不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Yes, it isn't late.：yes 與否定內容矛盾。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-and-answer-be-questions",
+    "invert-be-and-maintain-person-number-time"
+  ],
+  "representationType": "be-question-short-answer",
+  "misconceptionTargets": [
+    "add-do-or-copy-question-person"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「將 be 移到主詞前形成一般問句，並以相同人稱、數、時態提供 Yes/No 短答或必要補充。」可推出 No, it isn't. It is on time.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 No, it isn't. It is on time. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

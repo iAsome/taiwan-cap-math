@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The science club now meets in Room 6, not Room 3. Please tell Nina before lunch.\nWhich description includes the whole purpose?",
+  "options": [
+    "It asks Nina to choose a lunch.",
+    "It explains how to enter Room 3.",
+    "It reports only the old room.",
+    "It reports a room change and asks the reader to share it."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "午餐前是轉告期限，不是選餐要求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第三教室被列為舊地點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "訊息的重點包含新地點，不能只留舊資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "第一句告知變更，第二句要求轉告 Nina。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s219-combine-update-and-forwarding-purpose",
+    "preserve-both-functions-in-multi-action-message"
+  ],
+  "representationType": "message-purpose-combined",
+  "misconceptionTargets": [
+    "report-background-but-omit-request"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "雙重目的需要同時保留更新與行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完整答案不會漏掉 please 後的請求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

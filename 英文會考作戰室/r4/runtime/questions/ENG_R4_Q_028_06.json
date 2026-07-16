@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_028_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S028"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence correctly contrasts then and now?",
+  "options": [
+    "There were one shop before, but there is four now.",
+    "There is one shop before, but there were four now.",
+    "There was shops before, but there are one now.",
+    "There was one shop before, but there are four shops now."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "There were one shop before, but there is four now.：兩邊數都不一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "There is one shop before, but there were four now.：兩邊時態顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "There was shops before, but there are one now.：兩邊名詞數與 be 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "There was one shop before, but there are four shops now.：前項過去單數，後項現在複數，各自一致。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-existence-by-number-and-time",
+    "coordinate-postverbal-number-with-local-time"
+  ],
+  "representationType": "existence-number-time",
+  "misconceptionTargets": [
+    "choose-be-from-time-or-nearest-item-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「依存在物核心名詞的數與事件時間，選擇 there is/are 或 there was/were，並在多項清單中保持資訊精確。」可推出 There was one shop before, but there are four shops now.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 There was one shop before, but there are four shops now. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

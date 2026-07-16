@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Please leave the blue key at the front desk.\nReply: I left the red key at the front desk.\nWhat changed incorrectly?",
+  "options": [
+    "The action",
+    "The place",
+    "The time",
+    "The key color"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩段都是 leave 或 left 這個動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "front desk 也一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原訊息沒有指定時刻可供比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "blue 被回覆改成 red，物品辨識不符。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s224-detect-object-color-mismatch",
+    "compare-modifier-on-requested-item"
+  ],
+  "representationType": "message-reply-object-conflict",
+  "misconceptionTargets": [
+    "check-place-but-ignore-item-attribute"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "相同地點不能抵銷物品屬性的錯誤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較時要逐欄確認顏色修飾的對象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

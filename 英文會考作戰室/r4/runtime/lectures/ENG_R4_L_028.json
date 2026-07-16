@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_028",
+  "subject": "english",
+  "unitId": "ENG_R4_U04",
+  "skillId": "ENG_R4_S028",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S027"
+  ],
+  "objectives": [
+    "整合單複數與現在／過去存在句。",
+    "處理清單、量詞與 of 片語的核心名詞。",
+    "避免第一項就近一致造成誤讀。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S028_SEC_1",
+      "title": "兩個維度同時決定",
+      "content": "現在單數 is、現在複數 are、過去單數 was、過去複數 were。先圈時間，再找核心名詞。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S028_SEC_2",
+      "title": "量詞幫助辨數",
+      "content": "one/a/every 加單數；two/many/several 加複數；some 需看後方名詞可數性。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S028_SEC_3",
+      "title": "清單可改寫避免爭議",
+      "content": "There is a pen and two books 在口語可見，但正式學習可改成 There are two books and a pen，或拆成兩句以清楚一致。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S028_SEC_4",
+      "title": "存在改變要分時點",
+      "content": "There was a store here last year, but there are apartments now。每個子句依自己的時間與名詞決定 be。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S028_EX_1",
+      "prompt": "___ two trees here last year.",
+      "steps": [
+        "last year 表過去。",
+        "two trees 為複數。",
+        "選 there were。"
+      ],
+      "answer": "There were",
+      "why": "過去複數存在。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S028_EX_2",
+      "prompt": "___ one answer now.",
+      "steps": [
+        "now 表現在。",
+        "one answer 單數。",
+        "選 there is。"
+      ],
+      "answer": "There is",
+      "why": "現在單數存在。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S028_EX_3",
+      "prompt": "A cafe existed before; offices exist now.",
+      "steps": [
+        "前項過去單數。",
+        "後項現在複數。",
+        "分別選 was 與 are。"
+      ],
+      "answer": "There was a cafe; there are offices now.",
+      "why": "兩個時間點各自一致。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "last year 只要出現就用 was。",
+      "whyWrong": "複數過去應用 were。",
+      "correction": "時態與數必須同時判斷。"
+    },
+    {
+      "belief": "some 一定搭 are。",
+      "whyWrong": "some 可修飾不可數名詞。",
+      "correction": "看 some 後的核心名詞。"
+    },
+    {
+      "belief": "清單只看最後一項。",
+      "whyWrong": "就近規則可能造成不穩定或歧義。",
+      "correction": "重排複數項或拆句。"
+    },
+    {
+      "belief": "but 前後只能用相同 be。",
+      "whyWrong": "兩子句可能有不同時間與數。",
+      "correction": "分別分析每個存在結構。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "yesterday 加 three chairs 應用什麼？",
+      "answer": "There were。",
+      "reason": "過去加複數。"
+    },
+    {
+      "prompt": "now 加 one reason 應用什麼？",
+      "answer": "There is。",
+      "reason": "現在加單數。"
+    },
+    {
+      "prompt": "some water 搭配 is 或 are？",
+      "answer": "is。",
+      "reason": "water 為不可數核心。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_255_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S255"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Ben's lunch box was empty, and he asked whether any rice was left. What is likely?",
+  "options": [
+    "He had not brought a lunch box",
+    "The kitchen had closed forever",
+    "Ben wanted more food",
+    "Ben dislikes rice"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "He had not brought a lunch box：原文明示 his lunch box。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The kitchen had closed forever：詢問剩飯不能推出永久。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Ben wanted more food：empty box 與詢問剩飯共同支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Ben dislikes rice：他反而詢問 rice。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-from-two-explicit-clues",
+    "intersect-explicit-clues"
+  ],
+  "representationType": "two-clue-inference",
+  "misconceptionTargets": [
+    "infer-from-one-clue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「兩項各自不足的明示線索合併後只支持一個結果」可推出 Ben wanted more food；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Ben wanted more food 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

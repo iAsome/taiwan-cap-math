@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_251",
+  "subject": "english",
+  "unitId": "ENG_R4_U37",
+  "skillId": "ENG_R4_S251",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "prerequisites": [
+    "ENG_R4_S250"
+  ],
+  "objectives": [
+    "逐詞核對選項是否完全受原文支持。",
+    "辨認合理推測、常識與作者未說的因果。",
+    "排除半真半假的選項。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S251_SEC_1",
+      "title": "明示等於文本可指出",
+      "content": "正確選項中的人物、動作、時間與程度都應能在文中找到。只要多加一個原文沒有的理由或結果，就不再是純明示。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S251_SEC_2",
+      "title": "合理不等於有寫",
+      "content": "看到 dark clouds 可以合理猜會下雨，但若原文只說雲變黑，明示答案不能說 rain began。把推論留給 inference 題。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S251_SEC_3",
+      "title": "小心半真選項",
+      "content": "選項前半可能照抄原文，後半偷偷換時間、增加目的或使用 always。逐段核對，不因熟悉開頭就接受整項。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S251_SEC_4",
+      "title": "用最小承諾作答",
+      "content": "兩項都看似合理時，選只重述原文、承諾較少者。明示題不需要替作者補空白。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S251_EX_1",
+      "prompt": "Text: The shop closed at five. Choice: It closed early because workers were tired.",
+      "steps": [
+        "closed at five 有支持。",
+        "early 未比較平常時間。",
+        "workers tired 完全未提。"
+      ],
+      "answer": "The choice adds information.",
+      "why": "一半正確不能救回新增理由。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S251_EX_2",
+      "prompt": "Text: Mia carried an umbrella. Choice: Mia expected rain.",
+      "steps": [
+        "有 umbrella。",
+        "沒有 stated expectation。",
+        "屬合理推測。"
+      ],
+      "answer": "Not explicit.",
+      "why": "帶傘原因需由文中另給證據。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S251_EX_3",
+      "prompt": "Text: The bus arrived at 8:10. Choice: The bus arrived at 8:10.",
+      "steps": [
+        "人物相同。",
+        "動作相同。",
+        "時間相同。"
+      ],
+      "answer": "Explicit.",
+      "why": "每一部分都可直接對應。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "符合常識就是明示。",
+      "whyWrong": "明示要求文字證據。",
+      "correction": "把常識與文本分開。"
+    },
+    {
+      "belief": "選項有一半照抄就可選。",
+      "whyWrong": "另一半可能新增錯誤。",
+      "correction": "核對整個選項。"
+    },
+    {
+      "belief": "比較級可由單一數值推出。",
+      "whyWrong": "需要比較基準。",
+      "correction": "原文沒有基準就不加 earlier、better 等。"
+    },
+    {
+      "belief": "作者沒否定就代表肯定。",
+      "whyWrong": "未提不等於成立。",
+      "correction": "只接受文中說出的內容。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "原文未說原因，選項可自行補 because 嗎？",
+      "answer": "不可",
+      "reason": "新增因果不屬明示。"
+    },
+    {
+      "prompt": "半真半假的選項算正確嗎？",
+      "answer": "不算",
+      "reason": "所有部分都需有證據。"
+    },
+    {
+      "prompt": "明示題應偏好承諾較多還是較少的選項？",
+      "answer": "較少且完整受支持",
+      "reason": "避免擴張作者內容。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_L_S278",
+  "subject": "english",
+  "unitId": "ENG_R4_U41",
+  "skillId": "ENG_R4_S278",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S277"
+  ],
+  "objectives": [
+    "能辨認開頭、發展、轉折與結尾段落的功能。",
+    "能依段落間的承接關係建立全文架構並排除細節堆列。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S278_SEC_01",
+      "title": "先為每段寫功能標籤",
+      "content": "讀完一段後，用短語標記功能，例如 introduce a problem、give two examples、show a change、state the result。功能標籤比抄整段更容易看出全文如何推進。"
+    },
+    {
+      "id": "ENG_R4_L_S278_SEC_02",
+      "title": "開頭建立主題與閱讀問題",
+      "content": "開頭段常介紹人物、情境、主題或待回答問題。若第一段已直接說 In the past, the river was dirty，後段才能說居民採取什麼行動以及現在有何改變。"
+    },
+    {
+      "id": "ENG_R4_L_S278_SEC_03",
+      "title": "中段負責發展而非重說",
+      "content": "中段可用例子、原因、比較或步驟展開主題。兩段若功能完全相同且資訊重複，可能需要合併；若一段提出方法、下一段提供結果，則兩者各有必要。"
+    },
+    {
+      "id": "ENG_R4_L_S278_SEC_04",
+      "title": "結尾回收全文但不新增大主題",
+      "content": "結尾常回答開頭問題、概括結果或提出由全文支持的提醒。若最後突然介紹未曾出現的新人物和新事件，通常破壞架構；若回到主題並整合前文，則能完成全文。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S278_EX_01",
+      "prompt": "Part 1: A town had too much street trash. Part 2: Shops offered boxes for used cups. Part 3: Street trash fell by half.",
+      "steps": [
+        "第一段提出問題。",
+        "第二段說明方法。",
+        "第三段提供結果。"
+      ],
+      "answer": "Problem → action → result.",
+      "why": "三段各負責一項必要功能，且後段逐步回答前段提出的問題。"
+    },
+    {
+      "id": "ENG_R4_L_S278_EX_02",
+      "prompt": "P1 introduces two kinds of school trips. P2 explains day trips. P3 explains trips with one night away. P4 compares their costs.",
+      "steps": [
+        "第一段建立兩類。",
+        "第二、三段平行分說。",
+        "第四段在已介紹兩類後比較。"
+      ],
+      "answer": "Opening → type A → type B → comparing.",
+      "why": "讀者先知道分類，再分別理解每一類，最後才有足夠資訊比較成本。"
+    },
+    {
+      "id": "ENG_R4_L_S278_EX_03",
+      "prompt": "A reading asks why the lake looks green, explains tiny plants in the water, and ends by saying the color can change with plant numbers.",
+      "steps": [
+        "開頭提出 why 問題。",
+        "中段提供科學解釋。",
+        "結尾把植物數量連回顏色變化。"
+      ],
+      "answer": "Question → reason → supported final idea.",
+      "why": "結尾沒有另開新題，而是用中段資訊回答開頭問題並限定結論。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "全文架構就是把每一個小細節照抄一次。",
+      "whyWrong": "細節清單看不出段落之間的功能關係。",
+      "correction": "先用問題、方法、例子、結果等功能詞概括。"
+    },
+    {
+      "belief": "只要是第一段，就一定是結論。",
+      "whyWrong": "多數文章先建立主題或問題。",
+      "correction": "看該段是否提出後文要發展的內容。"
+    },
+    {
+      "belief": "兩個中段都談同一主題，所以功能必定相同。",
+      "whyWrong": "一段可能說原因，另一段可能說結果。",
+      "correction": "比較每段在全文中完成的任務。"
+    },
+    {
+      "belief": "結尾越多新資訊越好。",
+      "whyWrong": "未鋪陳的大主題會使全文失去收束。",
+      "correction": "結尾應整合或回應前文，新增內容只能是自然延伸。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "問題、方法、結果三段中，哪一段通常先出現？",
+      "answer": "問題",
+      "reason": "讀者先知道阻礙，才理解方法為何需要。"
+    },
+    {
+      "prompt": "段落功能標籤應抄整段還是用短語概括？",
+      "answer": "用短語概括",
+      "reason": "短功能詞能顯示段落間的關係。"
+    },
+    {
+      "prompt": "結尾可以完全離開全文主題嗎？",
+      "answer": "不可以",
+      "reason": "結尾需回收已建立的問題、發展或證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

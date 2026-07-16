@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_240_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S240"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The town has several ways to travel without a car. ___, people can rent bikes near the station.",
+  "options": [
+    "For example",
+    "However",
+    "Therefore",
+    "Instead"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "For example：租腳踏車是無車旅行方式的具體例子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "However：後句沒有反駁 several ways。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Therefore：有多種方式不必然造成租車站存在，重點是例證。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Instead：Instead 需要被取代的前方案。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "use-discourse-marker",
+    "select-example-connector"
+  ],
+  "representationType": "example-cloze",
+  "misconceptionTargets": [
+    "use-therefore-for-topic-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「標記詞宣告的轉折、因果或例證功能」可推出 For example；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 For example 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

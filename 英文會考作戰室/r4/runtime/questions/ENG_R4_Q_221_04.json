@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The school office answered Leo's question. Which ending clearly thanks them and shows who replied?",
+  "options": [
+    "See you at lunch, Amy",
+    "Dear Leo,",
+    "The school office",
+    "Thank you,\nLeo"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "內容加入未提到的午餐，也用了錯誤姓名。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是寫給 Leo 的開頭稱呼，不是 Leo 的結尾。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單寫單位沒有表達感謝或署名。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Thank you 表達謝意，Leo 標明回覆來源。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s221-pair-thanks-with-correct-signature",
+    "evaluate-closing-for-purpose-and-identity"
+  ],
+  "representationType": "email-closing-office",
+  "misconceptionTargets": [
+    "choose-greeting-or-wrong-signature-as-closing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結尾同時完成語氣與身分辨識。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "署名使用原情境中的寫信者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

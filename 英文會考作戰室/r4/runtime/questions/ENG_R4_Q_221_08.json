@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "A music club sends one message to all members. Which opening names the group clearly?",
+  "options": [
+    "Hi one person,",
+    "Dear Mr. Music,",
+    "To my family,",
+    "Dear Club Members,"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "收件者不只一人，這個說法也不自然。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Music 不是提供的人名。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "社團成員不等於家人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Dear Club Members 清楚稱呼整個收件團體。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s221-address-known-recipient-group",
+    "separate-group-label-from-personal-title"
+  ],
+  "representationType": "email-greeting-group",
+  "misconceptionTargets": [
+    "force-group-message-into-personal-greeting"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "群體訊息應以共同身分稱呼讀者。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不用為團體虛構一個人的姓名。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

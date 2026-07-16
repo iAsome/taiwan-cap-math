@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_298",
+  "subject": "english",
+  "unitId": "ENG_R4_U45",
+  "skillId": "ENG_R4_S298",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S297"
+  ],
+  "objectives": [
+    "辨認 is called、for example、because 與 therefore。",
+    "由句子功能而非位置分類。",
+    "區分原因與結果的方向。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S298_SEC_1",
+      "title": "定義說 X 是什麼",
+      "content": "is called、means、refers to 常引定義；它建立概念邊界。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S298_SEC_2",
+      "title": "例子把概念具體化",
+      "content": "for example、such as 後列個案，不等於完整定義。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S298_SEC_3",
+      "title": "原因回答 why",
+      "content": "because、since 常引原因；結果回答 what happened，常由 so、therefore 引出。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S298_SEC_4",
+      "title": "沒有標記也可判斷",
+      "content": "A caused B 的方向可由機制看出。先問哪一項先促成另一項。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S298_EX_1",
+      "prompt": "Condensation is water vapor becoming liquid.",
+      "steps": [
+        "X is Y 結構。",
+        "說明概念。",
+        "非個案。"
+      ],
+      "answer": "definition",
+      "why": "建立 condensation 意義。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S298_EX_2",
+      "prompt": "For example, dew forms on grass.",
+      "steps": [
+        "for example。",
+        "具體現象。",
+        "支持概念。"
+      ],
+      "answer": "example",
+      "why": "不是說所有 condensation 都在 grass。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S298_EX_3",
+      "prompt": "The air cooled, so drops formed.",
+      "steps": [
+        "cooling 在前。",
+        "so 引結果。",
+        "drops 是結果。"
+      ],
+      "answer": "cause then result",
+      "why": "方向清楚。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第二句一定是例子。",
+      "whyWrong": "功能不由位置決定。",
+      "correction": "看語言與關係。"
+    },
+    {
+      "belief": "because 後是結果。",
+      "whyWrong": "because 後通常是原因。",
+      "correction": "畫 cause → result。"
+    },
+    {
+      "belief": "一個例子就是完整定義。",
+      "whyWrong": "個案不能涵蓋邊界。",
+      "correction": "找 is/means。"
+    },
+    {
+      "belief": "therefore 後仍是原因。",
+      "whyWrong": "therefore 引推論結果。",
+      "correction": "核對方向。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "means 常引哪種功能？",
+      "answer": "定義",
+      "reason": "說明詞義。"
+    },
+    {
+      "prompt": "for example 後是？",
+      "answer": "例子",
+      "reason": "具體化概念。"
+    },
+    {
+      "prompt": "because 後通常是？",
+      "answer": "原因",
+      "reason": "解釋主要句。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_033",
+  "subject": "english",
+  "unitId": "ENG_R4_U05",
+  "skillId": "ENG_R4_S033",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S032"
+  ],
+  "objectives": [
+    "穩定使用近單 this 與遠單 that。",
+    "理解距離取決於說話者建立的視角。",
+    "處理電話辨識與前後話語指涉。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S033_SEC_1",
+      "title": "實體近遠",
+      "content": "手上或眼前通常用 this；房間另一端或畫面遠處通常用 that。兩者都只指單數。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S033_SEC_2",
+      "title": "說話者視角最重要",
+      "content": "同一物對不同位置的人可能分別是 this 或 that。題目需找出誰正在說話。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S033_SEC_3",
+      "title": "電話中的慣用法",
+      "content": "自我辨識可說 This is Mei；詢問對方可說 Is that Ken? 這是對話距離的慣用視角。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S033_SEC_4",
+      "title": "話語中的 this/that",
+      "content": "This 可引出即將說明的想法；that 可回指對方剛說的內容。仍需以篇章線索判斷。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S033_EX_1",
+      "prompt": "A key is in my palm.",
+      "steps": [
+        "單一 key。",
+        "在說話者手中。",
+        "選 this。"
+      ],
+      "answer": "this key",
+      "why": "近單。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S033_EX_2",
+      "prompt": "A bell is on the far roof.",
+      "steps": [
+        "單一 bell。",
+        "距離說話者遠。",
+        "選 that。"
+      ],
+      "answer": "that bell",
+      "why": "遠單。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S033_EX_3",
+      "prompt": "Phone: ___ is Ana. Is ___ Bo?",
+      "steps": [
+        "自我辨識慣用 this。",
+        "對方辨識慣用 that。",
+        "兩者皆單數。"
+      ],
+      "answer": "This is Ana. Is that Bo?",
+      "why": "電話視角慣用配對。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "this 一定在左邊。",
+      "whyWrong": "左右不是核心區分。",
+      "correction": "判斷相對說話者的近遠。"
+    },
+    {
+      "belief": "that 表示說話者討厭對象。",
+      "whyWrong": "沒有態度線索時只表示遠或回指。",
+      "correction": "不要額外推論情緒。"
+    },
+    {
+      "belief": "電話中只能用 I am。",
+      "whyWrong": "I am 可用，但 This is 是常見自我辨識。",
+      "correction": "依電話慣用語選擇。"
+    },
+    {
+      "belief": "前一句提過就一定用 this。",
+      "whyWrong": "回指他人剛說內容常用 that。",
+      "correction": "觀察說話輪次與篇章功能。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "手中的單一物通常用什麼？",
+      "answer": "this。",
+      "reason": "相對說話者近。"
+    },
+    {
+      "prompt": "遠處單一物通常用什麼？",
+      "answer": "that。",
+      "reason": "相對說話者遠。"
+    },
+    {
+      "prompt": "電話問對方 Is this Ken? 一定錯嗎？",
+      "answer": "不一定，但 Is that Ken? 是本單元目標慣用法。",
+      "reason": "需理解語用而非絕對禁令。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

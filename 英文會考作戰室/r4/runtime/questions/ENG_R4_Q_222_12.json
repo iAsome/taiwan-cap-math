@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Do you want to join the game, and if so, which team will you play on?\nWhich reply is fully responsive?",
+  "options": [
+    "Games are exciting.",
+    "The red team won yesterday.",
+    "I have sports shoes.",
+    "Yes, I will join the blue team."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "個人感受沒有回答參加與隊伍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "過去賽果不是自己的選擇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "擁有球鞋仍不表示是否參賽。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "yes 回答參加，blue team 回答第二問。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s222-answer-conditional-team-choice",
+    "resolve-participation-before-dependent-detail"
+  ],
+  "representationType": "message-reply-conditional",
+  "misconceptionTargets": [
+    "mention-sport-related-item-without-decision"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "條件式第二問只有在答應參加後才需回答。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確句用最少文字完成兩個溝通目標。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

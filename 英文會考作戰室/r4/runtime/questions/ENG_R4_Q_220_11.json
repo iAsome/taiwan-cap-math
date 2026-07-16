@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The game will be Saturday. We will share the place tomorrow.\nWhat is not known yet?",
+  "options": [
+    "Whether there is a game",
+    "The day of the game",
+    "When more news will come",
+    "The place of the game"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一句確認有比賽。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "星期六已提供日期。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "tomorrow 說明更新時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "地點要等明天才公布，目前未知。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s220-identify-pending-event-location",
+    "distinguish-update-time-from-missing-detail"
+  ],
+  "representationType": "message-information-gap",
+  "misconceptionTargets": [
+    "treat-future-update-time-as-event-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "已知資訊與待公布資訊要分開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "tomorrow 是公布時間，不是比賽地點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

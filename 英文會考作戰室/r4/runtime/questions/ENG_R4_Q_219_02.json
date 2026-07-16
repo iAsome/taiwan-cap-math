@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "I took your notebook home by mistake. I am sorry. I will bring it back tomorrow.\nWhat is the writer doing?",
+  "options": [
+    "Asking to keep the notebook",
+    "Saying sorry and offering to return it",
+    "Inviting the reader home",
+    "Giving homework"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "寫信者承諾歸還，沒有要求保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "承認誤拿、道歉與歸還承諾構成完整目的。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "home 說明物品被帶回家，不是邀請地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "內容沒有指定任何作業。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s219-identify-apology-with-repair",
+    "distinguish-home-as-location-from-invitation"
+  ],
+  "representationType": "message-purpose-apology",
+  "misconceptionTargets": [
+    "read-return-promise-as-borrowing-request"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "道歉句需和錯誤行動及補救一起解讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "單一地點字不能改變整段目的。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

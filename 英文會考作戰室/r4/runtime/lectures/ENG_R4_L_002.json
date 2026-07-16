@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_002",
+  "subject": "english",
+  "unitId": "ENG_R4_U01",
+  "skillId": "ENG_R4_S002",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "prerequisites": [
+    "ENG_R4_S001"
+  ],
+  "objectives": [
+    "區分字母名稱與字母音。",
+    "由常見例字辨認起首音。",
+    "避免把規則說成所有字中都相同。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S002_SEC_1",
+      "title": "名稱與聲音是兩件事",
+      "content": "B 的名稱讀作 bee，但在 bag 常代表 /b/。題目問 name 或 sound 時答案類型不同。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S002_SEC_2",
+      "title": "例字限定聲音",
+      "content": "C 在 cat 常是 /k/，在 city 可不同。本技能只依題目例字，不宣稱永遠唯一。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S002_SEC_3",
+      "title": "先看位置",
+      "content": "問 beginning sound 就讀第一個音，不被中間字母吸引。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S002_SEC_4",
+      "title": "用口形與例字核對",
+      "content": "/m/ 可由 lips closed 的 man 起音感受；仍以標準示範與例字為準。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S002_EX_1",
+      "prompt": "Letter B; word bus",
+      "steps": [
+        "name 是 B。",
+        "bus 起音 /b/。",
+        "分兩層。"
+      ],
+      "answer": "B commonly spells /b/ here",
+      "why": "限定 here。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S002_EX_2",
+      "prompt": "Letter C; word city",
+      "steps": [
+        "看例字 city。",
+        "起音 /s/。",
+        "不套 cat。"
+      ],
+      "answer": "/s/ in city",
+      "why": "例字優先。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S002_EX_3",
+      "prompt": "Letter M; word map",
+      "steps": [
+        "抓首音。",
+        "雙唇 /m/。",
+        "不讀字母名稱 em。"
+      ],
+      "answer": "/m/",
+      "why": "名稱聲音不同。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "字母名稱就是字母音。",
+      "whyWrong": "name 與 sound 不同。",
+      "correction": "用例字分辨。"
+    },
+    {
+      "belief": "一字母永遠只有一音。",
+      "whyWrong": "英文有多種對應。",
+      "correction": "以指定例字為準。"
+    },
+    {
+      "belief": "看到字母就不讀單字。",
+      "whyWrong": "例字決定此處聲音。",
+      "correction": "先發整字。"
+    },
+    {
+      "belief": "首音等於第一個字母名稱。",
+      "whyWrong": "音不是名稱。",
+      "correction": "聽實際起音。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "B 的名稱與 /b/ 相同嗎？",
+      "answer": "不同",
+      "reason": "一個是 name，一個是 sound。"
+    },
+    {
+      "prompt": "C 在 city 用哪個例字判？",
+      "answer": "city 本身",
+      "reason": "不可套其他字。"
+    },
+    {
+      "prompt": "beginning sound 在哪？",
+      "answer": "單字最前面的音",
+      "reason": "依發音。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  }
+}

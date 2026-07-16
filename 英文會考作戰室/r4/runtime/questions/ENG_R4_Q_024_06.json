@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_024_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which contraction matches 'The keys are not here'?",
+  "options": [
+    "The keys isn't here.",
+    "The keys wasn't here.",
+    "The keys amn't here.",
+    "The keys aren't here."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The keys isn't here.：複數 keys 不搭 is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The keys wasn't here.：數與時態改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The keys amn't here.：am 與主詞皆不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "The keys aren't here.：are not 正確縮寫為 aren't。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "form-be-affirmative-or-negative",
+    "preserve-subject-time-and-complement-while-changing-polarity"
+  ],
+  "representationType": "be-polarity",
+  "misconceptionTargets": [
+    "insert-do-or-mismatch-contraction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「依陳述是否肯定某狀態或否定某狀態，在正確 be 後加入 not，並保持縮寫與原意一致。」可推出 The keys aren't here.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 The keys aren't here. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

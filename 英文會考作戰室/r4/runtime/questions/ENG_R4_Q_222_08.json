@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The meeting moved from Tuesday to Wednesday. Please tell me if you can still come.\nWhich reply fits?",
+  "options": [
+    "Tuesday comes before Wednesday.",
+    "Meetings need chairs.",
+    "I read the old message.",
+    "Yes, I can come on Wednesday."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "日期順序常識沒有表示能否出席。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物品需求未在來訊中提出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "讀過舊訊息不能回答新安排。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "回覆承認新日期並清楚確認出席。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s222-respond-to-updated-meeting-date",
+    "confirm-attendance-against-current-not-old-plan"
+  ],
+  "representationType": "message-reply-change-confirmation",
+  "misconceptionTargets": [
+    "acknowledge-message-without-new-decision"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "變更後的回覆必須使用新資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "still can 的問題由 yes 加新日期完整回答。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

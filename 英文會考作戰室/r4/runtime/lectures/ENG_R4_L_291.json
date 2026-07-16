@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_291",
+  "subject": "english",
+  "unitId": "ENG_R4_U44",
+  "skillId": "ENG_R4_S291",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "prerequisites": [
+    "ENG_R4_S290"
+  ],
+  "objectives": [
+    "辨認故事的背景、人物、主要事件與結局。",
+    "區分開頭條件與後續結果。",
+    "用文本資訊回答而不補故事外細節。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S291_SEC_1",
+      "title": "背景回答何時何地",
+      "content": "先找 on Friday、at the station 等時間地點。天氣只有影響事件時才是重要背景。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S291_SEC_2",
+      "title": "人物不等於所有名詞",
+      "content": "角色會採取行動或做決定；被搬動的箱子是物件，不是人物。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S291_SEC_3",
+      "title": "主要事件推動故事",
+      "content": "列出改變情況的動作，略過衣服顏色等裝飾細節。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S291_SEC_4",
+      "title": "結局看最後新狀態",
+      "content": "故事結局不是最後一句的每個字，而是問題是否解決、目標是否達成或人物最後做了什麼。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S291_EX_1",
+      "prompt": "At the station, Leo found a lost ticket and returned it. The traveler thanked him.",
+      "steps": [
+        "背景 station。",
+        "人物 Leo/traveler。",
+        "主要事件歸還票。"
+      ],
+      "answer": "The ticket was returned.",
+      "why": "最後的新狀態是失票回到旅客手中。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S291_EX_2",
+      "prompt": "On a rainy morning, Mia's umbrella broke, so she waited under a shop roof until Ben came.",
+      "steps": [
+        "背景 rainy morning。",
+        "問題 umbrella broke。",
+        "結局 Ben came。"
+      ],
+      "answer": "Mia received help after waiting.",
+      "why": "事件鏈完整。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S291_EX_3",
+      "prompt": "Nora baked bread, but it burned. She changed the timer and the second loaf was fine.",
+      "steps": [
+        "第一次失敗。",
+        "改 timer。",
+        "第二次成功。"
+      ],
+      "answer": "The second loaf succeeded.",
+      "why": "結局由最後結果決定。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第一句一定是主要事件。",
+      "whyWrong": "第一句常只是背景。",
+      "correction": "找造成變化的動作。"
+    },
+    {
+      "belief": "最後出現的名詞就是結局。",
+      "whyWrong": "結局是狀態或結果。",
+      "correction": "用完整句回答。"
+    },
+    {
+      "belief": "每個細節都同等重要。",
+      "whyWrong": "裝飾細節不推動事件。",
+      "correction": "追蹤問題與解決。"
+    },
+    {
+      "belief": "可用常識補人物動機。",
+      "whyWrong": "題目只接受文本。",
+      "correction": "指出原句證據。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "背景通常回答哪兩問？",
+      "answer": "何時與何地",
+      "reason": "建立故事舞台。"
+    },
+    {
+      "prompt": "主要事件有何特徵？",
+      "answer": "改變故事狀況",
+      "reason": "會推動後續。"
+    },
+    {
+      "prompt": "結局從哪裡判斷？",
+      "answer": "最後形成的新狀態",
+      "reason": "不只看最後一個名詞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  }
+}

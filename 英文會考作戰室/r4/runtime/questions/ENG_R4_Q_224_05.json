@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Meet at 4:30 by the north gate.\nReply: I will be at the north gate at 3:40.\nWhat does the reply get wrong?",
+  "options": [
+    "The meeting time",
+    "The gate",
+    "The direction",
+    "The plan to meet"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "3:40 與原定 4:30 不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩段都寫 north gate。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "north 方向沒有改變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "回覆仍表示會前往會面。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s224-compare-transposed-meeting-times",
+    "hold-matching-location-constant"
+  ],
+  "representationType": "message-reply-time-conflict",
+  "misconceptionTargets": [
+    "overlook-reversed-time-digits"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "數字順序相似仍必須精確比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "只有時刻欄發生衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

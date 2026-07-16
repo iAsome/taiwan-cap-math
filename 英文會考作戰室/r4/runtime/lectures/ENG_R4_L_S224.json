@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S224",
+  "subject": "english",
+  "unitId": "ENG_R4_U32",
+  "skillId": "ENG_R4_S224",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "prerequisites": [
+    "ENG_R4_S223"
+  ],
+  "objectives": [
+    "能逐項比對原訊息與回覆，判斷問題是否都被回答。",
+    "能找出回覆中的遺漏、矛盾、錯置對象或未確認假設。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S224_SEC_01",
+      "title": "把原訊息拆成核對清單",
+      "content": "若來訊問 Can you come? Which time is better?，清單就有能否參加與偏好時間兩項。閱讀回覆時逐項打勾，比只憑句子長短判斷完整更可靠。"
+    },
+    {
+      "id": "ENG_R4_L_S224_SEC_02",
+      "title": "相關不代表已回答",
+      "content": "原訊息問 Which room?，回覆說 I will be there at four 雖然談同一活動，仍沒有提供教室。回覆必須對應問題所需的資訊類型。"
+    },
+    {
+      "id": "ENG_R4_L_S224_SEC_03",
+      "title": "完整回覆也不能自相矛盾",
+      "content": "來訊說 the library is closed Sunday，回覆卻約 Sunday at the library，就和已知條件衝突。比對時除了找遺漏，也要檢查日期、地點、人物與否定資訊是否一致。"
+    },
+    {
+      "id": "ENG_R4_L_S224_SEC_04",
+      "title": "不把沉默當成同意",
+      "content": "回覆沒有反對某項安排，不等於已接受。只有明確的 yes、can、will 或等值表達才能支持同意；若語意仍不確定，答案應指出需要再確認。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S224_EX_01",
+      "prompt": "Message: Can you meet Tuesday or Wednesday? Where should we meet?\nReply: Wednesday is good for me.",
+      "steps": [
+        "列出日期選擇問題。",
+        "列出地點問題。",
+        "檢查回覆只完成第一項。"
+      ],
+      "answer": "The day is answered, but the meeting place is missing.",
+      "why": "Wednesday 明確回應日期選擇，卻沒有說要在哪裡見面。回覆與原訊息有關，但仍缺少第二個問題要求的地點。"
+    },
+    {
+      "id": "ENG_R4_L_S224_EX_02",
+      "prompt": "Message: Bring the red bag to Room 5 before noon.\nReply: I will take the red bag to Room 5 at eleven.",
+      "steps": [
+        "核對物品。",
+        "核對地點。",
+        "比較十一點與中午期限。"
+      ],
+      "answer": "The reply covers every required detail.",
+      "why": "紅色袋子和第五教室都正確對應，十一點也早於中午。回覆沒有改動物品、地點或期限，因此可直接完成安排。"
+    },
+    {
+      "id": "ENG_R4_L_S224_EX_03",
+      "prompt": "Message: The game is canceled.\nReply: Great, I will see you at the game.",
+      "steps": [
+        "找出 canceled 的否定狀態。",
+        "讀取回覆仍準備到場。",
+        "判定兩者互相矛盾。"
+      ],
+      "answer": "The reply does not match the message.",
+      "why": "原訊息表示比賽不舉行，回覆卻仍安排在比賽見面。問題不是少了時間，而是回覆忽略取消資訊，做出相反行動。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "回覆句子很長就一定完整。",
+      "whyWrong": "長句仍可能漏掉原訊息的一個問題。",
+      "correction": "依問題項目核對，不依字數判斷。"
+    },
+    {
+      "belief": "提到同一活動就算回答問題。",
+      "whyWrong": "時間問題需要時間，地點問題需要地點。",
+      "correction": "確認回覆提供正確資訊類型。"
+    },
+    {
+      "belief": "只檢查有沒有遺漏，不檢查矛盾。",
+      "whyWrong": "回覆可能包含完整欄位卻違反原訊息條件。",
+      "correction": "比對每項值以及肯定、否定方向。"
+    },
+    {
+      "belief": "沒有說不就是默認同意。",
+      "whyWrong": "沉默或模糊回覆不能證明接受安排。",
+      "correction": "尋找明確同意、拒絕或仍需確認的語句。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "原訊息問兩題，回覆只回答一題，算完整嗎？",
+      "answer": "不完整",
+      "reason": "仍有一項必要資訊缺漏。"
+    },
+    {
+      "prompt": "回覆提供地點但原文問時間，算直接對應嗎？",
+      "answer": "不算",
+      "reason": "資訊類型與問題不同。"
+    },
+    {
+      "prompt": "沒有反對一項安排就等於明確同意嗎？",
+      "answer": "不等於",
+      "reason": "仍需肯定語句或進一步確認。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  }
+}

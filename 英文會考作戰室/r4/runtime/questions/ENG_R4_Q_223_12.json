@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_223_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S223"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Post: The library added twenty seats this week. I hope it will stay quiet.\nWhich description is accurate?",
+  "options": [
+    "Both sentences report completed actions.",
+    "Both sentences give official library rules.",
+    "The first is only a hope, and the second is a count.",
+    "The first reports a change; the second expresses a hope."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "hope 指向期待，不是已完成行動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩句都不是規則公告。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩句功能被顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "新增座位是已報告變更，安靜則是個人願望。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s223-contrast-completed-change-with-future-hope",
+    "avoid-reading-personal-hope-as-institutional-policy"
+  ],
+  "representationType": "social-post-event-and-hope",
+  "misconceptionTargets": [
+    "reverse-fact-and-wish-functions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時態與 hope 能區分事件和反應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案沒有把願望提升為圖書館承諾。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_042",
+  "subject": "english",
+  "unitId": "ENG_R4_U06",
+  "skillId": "ENG_R4_S042",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S041"
+  ],
+  "objectives": [
+    "a lot of 同時搭複數可數與不可數。",
+    "辨識 enough + noun 與 adjective + enough。",
+    "以需求門檻而非主觀大量判斷足夠。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U06_ENG_R4_S042_SEC_1",
+      "title": "a lot of 表大量",
+      "content": "a lot of books、a lot of rain 都可。它描述量多，但不直接保證能完成某任務。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S042_SEC_2",
+      "title": "enough 放在名詞前",
+      "content": "enough chairs、enough water。它表示達到相關需求，不指定一定很多。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S042_SEC_3",
+      "title": "enough 放在形容詞後",
+      "content": "warm enough、large enough。位置與修飾對象不同：enough warm 非目標標準順序。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S042_SEC_4",
+      "title": "充足需要比較門檻",
+      "content": "四把椅子對三人是 enough，對六人不是。題目若未提供需求，不能只由 a lot of 推成 enough。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U06_ENG_R4_S042_EX_1",
+      "prompt": "We have ___ food for ten guests.",
+      "steps": [
+        "需求是十人。",
+        "現有量已達需求。",
+        "選 enough。"
+      ],
+      "answer": "enough food",
+      "why": "表達充足。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S042_EX_2",
+      "prompt": "The bag is ___ to hold the ball.",
+      "steps": [
+        "修飾形容詞 large。",
+        "enough 放在形容詞後。",
+        "選 large enough。"
+      ],
+      "answer": "large enough",
+      "why": "位置正確。"
+    },
+    {
+      "id": "ENG_R4_U06_ENG_R4_S042_EX_3",
+      "prompt": "The garden gets ___ sunlight.",
+      "steps": [
+        "描述大量。",
+        "sunlight 不可數。",
+        "使用 a lot of。"
+      ],
+      "answer": "a lot of sunlight",
+      "why": "a lot of 可搭不可數。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "a lot of 一定等於 enough。",
+      "whyWrong": "大量仍可能低於需求。",
+      "correction": "將現有量與明示門檻比較。"
+    },
+    {
+      "belief": "enough 只能修飾不可數。",
+      "whyWrong": "也可說 enough chairs。",
+      "correction": "看名詞類型但功能是充足。"
+    },
+    {
+      "belief": "enough 放在所有修飾詞前。",
+      "whyWrong": "修飾形容詞時通常後置。",
+      "correction": "enough water；warm enough。"
+    },
+    {
+      "belief": "足夠代表剛好相等。",
+      "whyWrong": "enough 表至少達門檻，可能超過。",
+      "correction": "不要推論精確相等。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "大量書可說什麼？",
+      "answer": "a lot of books。",
+      "reason": "可搭複數可數。"
+    },
+    {
+      "prompt": "足夠時間可說什麼？",
+      "answer": "enough time。",
+      "reason": "enough 放在名詞前。"
+    },
+    {
+      "prompt": "夠高如何排列？",
+      "answer": "tall enough。",
+      "reason": "enough 放形容詞後。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

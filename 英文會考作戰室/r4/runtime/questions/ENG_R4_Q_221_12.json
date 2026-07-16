@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The writer knows only that the message will reach a city office. Which opening is safest?",
+  "options": [
+    "Dear Mr. City,",
+    "Hi my friend,",
+    "Dear Mrs. Office,",
+    "Dear Sir or Madam,"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "City 不是人物姓氏。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不能假設辦公室人員是朋友。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Office 不是婚姻稱謂後的姓氏。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此稱呼不猜姓名或性別，適合未知的正式收件者。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s221-choose-safe-city-office-salutation",
+    "apply-no-guessing-rule-to-unknown-addressee"
+  ],
+  "representationType": "email-greeting-limited-information",
+  "misconceptionTargets": [
+    "turn-place-name-into-person-title"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資訊不足時選擇不虛構身分的稱呼。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "安全稱呼仍需讓讀者理解它是正式開頭。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

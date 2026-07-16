@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_301_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S301"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The gym was too hot in the afternoon. Reflective window film and timed fans lowered the indoor temperature. What would be lost if the first sentence were removed?",
+  "options": [
+    "the definition of temperature",
+    "the problem that the later actions solve",
+    "a classification rule",
+    "a comparison between three gyms"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the definition of temperature：未定義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the problem that the later actions solve：後續措施是為回應 too hot。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a classification rule：未分類。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "a comparison between three gyms：只一 gym。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "recognize-expository-structure",
+    "identify-comparison-classification-or-problem-solution"
+  ],
+  "representationType": "text-structure",
+  "misconceptionTargets": [
+    "label-structure-from-one-word-without-paragraph-relation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「連接語與段落內容呈現比較、分類或問題解決的組織關係」可推出 the problem that the later actions solve；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 the problem that the later actions solve 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

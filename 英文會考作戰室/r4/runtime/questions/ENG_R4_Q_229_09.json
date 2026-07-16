@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_229_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A. I am sorry; I took it by mistake.\nB. This blue umbrella looks like mine.\nC. That's all right. Mine is still by the door.\nD. Is this your umbrella, Rosa?\nWhich order makes sense?",
+  "options": [
+    "D-B-A-C",
+    "B-D-C-A",
+    "A-C-D-B",
+    "D-A-B-C"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "先詢問所有者、說明相似、道歉，再接受道歉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B 不應先於詢問所有者的 D。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "道歉在物品問題前沒有來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A 道歉時尚未說明拿錯原因。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "arrange-mistaken-umbrella-apology"
+  ],
+  "representationType": "apology-resolution-sequence",
+  "misconceptionTargets": [
+    "apologize-before-object-identified"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "it 在道歉句中承接已辨認的雨傘。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "Mine is still by the door 解釋失誤可被接受。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_253_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S253"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Trail rules: Blue—bikes yes, dogs no; Green—bikes no, dogs yes; Red—bikes yes, dogs yes. Sam has a bike and a dog. Which trail may he use?",
+  "options": [
+    "Red",
+    "Blue",
+    "Green",
+    "Blue or Green"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Red：Red 同時允許 bikes 與 dogs。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Blue：dogs no。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Green：bikes no。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Blue or Green：兩條各缺一允許。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "verify-list-constraints",
+    "apply-all-list-constraints"
+  ],
+  "representationType": "constraint-list",
+  "misconceptionTargets": [
+    "accept-most-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「清單每一欄與題目限制逐項核對後全部通過」可推出 Red；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Red 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

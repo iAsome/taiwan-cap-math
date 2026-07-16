@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_258",
+  "subject": "english",
+  "unitId": "ENG_R4_U38",
+  "skillId": "ENG_R4_S258",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S257"
+  ],
+  "objectives": [
+    "為推論建立可追溯證據鏈。",
+    "辨認選項新增的身份、動機、永久結果或絕對語氣。",
+    "在證據不足時選擇保留不確定的說法。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S258_SEC_1",
+      "title": "推論仍要有腳印",
+      "content": "每一步都应能指出原文。若答案需要『也許他是醫生』這類新身份才能成立，就是猜測。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S258_SEC_2",
+      "title": "警覺故事性細節",
+      "content": "選項常加 brother、last year、because he was angry 等生動內容。生動不等於有證據。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S258_SEC_3",
+      "title": "保留可能性語氣",
+      "content": "likely、may、probably 常適合有限推論；must、always、never 需要極強文字。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S258_SEC_4",
+      "title": "問少了哪個前提",
+      "content": "對每個選項問：要讓它成立，我還需假設什麼？正確推論需要的額外假設最少。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S258_EX_1",
+      "prompt": "Wet umbrella + rain sound → probably raining.",
+      "steps": [
+        "兩項文本證據。",
+        "结论一般。",
+        "无需新身份。"
+      ],
+      "answer": "reasonable inference",
+      "why": "不能加台风名称。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S258_EX_2",
+      "prompt": "A man wears a white coat → he is a doctor.",
+      "steps": [
+        "只有衣著。",
+        "多职业可穿。",
+        "需要新前提。"
+      ],
+      "answer": "unsupported guess",
+      "why": "不能唯一判身份。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S258_EX_3",
+      "prompt": "No reply for one hour → she will never reply.",
+      "steps": [
+        "只有一小時。",
+        "never 是永久。",
+        "强度超出。"
+      ],
+      "answer": "unsupported",
+      "why": "最多說尚未回。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "可能發生就算合理推論。",
+      "whyWrong": "需由文本提高可能性。",
+      "correction": "列證據鏈。"
+    },
+    {
+      "belief": "細節多的選項較真。",
+      "whyWrong": "新增細節可能是陷阱。",
+      "correction": "問每個細節來源。"
+    },
+    {
+      "belief": "must 比 may 更有力所以更好。",
+      "whyWrong": "强度需匹配证据。",
+      "correction": "有限证据用保留语气。"
+    },
+    {
+      "belief": "沒有否定就可肯定。",
+      "whyWrong": "未提不等於支持。",
+      "correction": "不填作者空白。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "合理推論需能做什麼？",
+      "answer": "逐步連回文本",
+      "reason": "保有證據腳印。"
+    },
+    {
+      "prompt": "never 需要何種證據？",
+      "answer": "極強且跨時間的證據",
+      "reason": "否則過度。"
+    },
+    {
+      "prompt": "生動細節可無來源加入嗎？",
+      "answer": "不可",
+      "reason": "它會變猜測。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

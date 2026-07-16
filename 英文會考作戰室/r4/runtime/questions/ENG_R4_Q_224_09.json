@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Are you coming, and should I save a seat for Nina too?\nReply: Yes, I am coming, and please save one for Nina.\nWhat is true?",
+  "options": [
+    "The reply answers both questions.",
+    "The reply forgets Nina.",
+    "The reply says no one is coming.",
+    "The reply asks for two seats for Nina."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "第一部分確認出席，第二部分回覆替 Nina 留位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nina 在回覆中被明確提到。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "yes 與此敘述相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "one 指一個座位，不是兩個。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s224-verify-two-question-reply-with-pronoun",
+    "resolve-one-as-single-seat-reference"
+  ],
+  "representationType": "message-reply-complete-correspondence",
+  "misconceptionTargets": [
+    "miss-pronoun-reference-in-second-answer"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩個協調連接的問句都有對應內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "代名詞 one 回指單數 seat。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

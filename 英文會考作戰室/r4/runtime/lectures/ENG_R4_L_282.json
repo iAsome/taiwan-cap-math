@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_282",
+  "subject": "english",
+  "unitId": "ENG_R4_U42",
+  "skillId": "ENG_R4_S282",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S281"
+  ],
+  "objectives": [
+    "讀取長條、折線與圓餅圖標示值。",
+    "以相同單位比較差值、總和或倍數。",
+    "區分最高值、增減方向與比例點差。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S282_SEC_1",
+      "title": "先讀標題與單位",
+      "content": "people、kg、% 不可互換。圓餅圖的 10 表示十個百分點，不一定是十人。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S282_SEC_2",
+      "title": "標籤與數值成對",
+      "content": "沿著長條、折線點或圓餅圖例讀值。不要把相鄰類別的數字交換。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S282_SEC_3",
+      "title": "把比較詞翻成運算",
+      "content": "how many more 用大減小，total 用加法，twice 表乘二。先寫兩個原值再運算。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S282_SEC_4",
+      "title": "折線只描述已給區間",
+      "content": "由 Mon 到 Tue 上升，只能描述這段資料；不能推成每天都會繼續上升。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S282_EX_1",
+      "prompt": "10 AM 35; 9 AM 20",
+      "steps": [
+        "單位都是 people。",
+        "用 35 - 20。",
+        "保留時間標籤。"
+      ],
+      "answer": "15 more people",
+      "why": "同圖同單位可直接相減。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S282_EX_2",
+      "prompt": "Mystery 40%; Science 25%",
+      "steps": [
+        "確認百分比。",
+        "40 - 25 = 15。",
+        "稱 percentage points。"
+      ],
+      "answer": "15 percentage points",
+      "why": "百分比相減得到百分點差。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S282_EX_3",
+      "prompt": "Tue 24; Wed 12",
+      "steps": [
+        "比較 24 與 12。",
+        "24 = 2 × 12。",
+        "寫倍數方向。"
+      ],
+      "answer": "Tuesday is twice Wednesday.",
+      "why": "兩值皆為 walkers。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到熟悉單字就選，不核對列欄。",
+      "whyWrong": "同一單字可能出現在不同區塊。",
+      "correction": "先定位區塊、欄名與同一列。"
+    },
+    {
+      "belief": "圖中最大圖形一定是答案。",
+      "whyWrong": "尺寸可能只是版面，數值與標籤才有意義。",
+      "correction": "讀數字、單位與圖例。"
+    },
+    {
+      "belief": "附註可以忽略。",
+      "whyWrong": "附註常改變資格、時間或可用方式。",
+      "correction": "最後把 NOTE 套回候選答案。"
+    },
+    {
+      "belief": "不同列的資訊可以自由拼接。",
+      "whyWrong": "跨列拼接會製造不存在的組合。",
+      "correction": "用手指沿同一列橫向核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "40% 減 25% 得到什麼？",
+      "answer": "15 個百分點",
+      "reason": "這是比例之差。"
+    },
+    {
+      "prompt": "how many more 使用哪個運算？",
+      "answer": "大值減小值",
+      "reason": "差值回答多多少。"
+    },
+    {
+      "prompt": "折線上升可保證未來也上升嗎？",
+      "answer": "不可",
+      "reason": "只能描述資料區間。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

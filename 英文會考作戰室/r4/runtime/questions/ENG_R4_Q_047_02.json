@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_047_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S047"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which question asks who owns these gloves?",
+  "options": [
+    "Who's are these gloves?",
+    "Whose is this gloves?",
+    "Who do these gloves?",
+    "Whose are these gloves?"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Who's are these gloves?：who's 與 are 重複。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Whose is this gloves?：多處數不一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Who do these gloves?：助動詞與意義錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Whose are these gloves?：whose 獨立，複數 gloves 搭 are/these。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "ask-and-answer-whose",
+    "form-owner-information-gap-and-answer-with-possessive"
+  ],
+  "representationType": "whose-owner-question",
+  "misconceptionTargets": [
+    "confuse-whose-with-who-is-or-answer-as-polar-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「用 Whose + noun 或 Whose is/are ... 詢問擁有者，並以名詞所有格或所有代名詞回答而不混淆 who's。」可推出 Whose are these gloves?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Whose are these gloves? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

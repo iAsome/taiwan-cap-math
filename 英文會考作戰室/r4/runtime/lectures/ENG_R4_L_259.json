@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_259",
+  "subject": "english",
+  "unitId": "ENG_R4_U38",
+  "skillId": "ENG_R4_S259",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S258"
+  ],
+  "objectives": [
+    "先讀圖中標籤、位置、圖例與形狀。",
+    "再與題幹文字條件取交集。",
+    "使用 alt、long description 或資料表時能得到完全相同答案。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S259_SEC_1",
+      "title": "圖與文各負責一部分",
+      "content": "圖可能給時間、位置或数量，题干给人物需要。只有把两者合并才能作答。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S259_SEC_2",
+      "title": "不只看颜色",
+      "content": "本单元所有图以文字、形状、线型与点纹重复编码；黑白列印仍可分辨。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S259_SEC_3",
+      "title": "先读标籤再看关系",
+      "content": "確認 START、箭頭、FULL 等标签，再解释位置与方向。不要凭图像外观猜故事。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S259_SEC_4",
+      "title": "替代资料必须等价",
+      "content": "若看不到图，可用完整图形说明与资料表作答；答案不能依赖替代资料缺少的细节。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S259_EX_1",
+      "prompt": "图标 8:20 SCHOOL；题干说 Mia must arrive before 8:15.",
+      "steps": [
+        "图给车时刻。",
+        "文给 deadline。",
+        "8:20 太晚。"
+      ],
+      "answer": "She cannot use that bus.",
+      "why": "需图文共同。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S259_EX_2",
+      "prompt": "图示 bridge crossed out and Green Street arrow.",
+      "steps": [
+        "叉号表封闭。",
+        "箭头指替代线。",
+        "读标签到 park。"
+      ],
+      "answer": "Use Green Street.",
+      "why": "不靠颜色。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S259_EX_3",
+      "prompt": "图中 FULL 3:00、OPEN 4:30；文说 after four.",
+      "steps": [
+        "图给状态与时间。",
+        "文给 after four。",
+        "选 4:30 OPEN。"
+      ],
+      "answer": "Room B at 4:30",
+      "why": "两条件交集。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只读题干不看图。",
+      "whyWrong": "会缺时间或位置。",
+      "correction": "列出图文各一证据。"
+    },
+    {
+      "belief": "只凭图像颜色。",
+      "whyWrong": "颜色可能无法列印或辨识。",
+      "correction": "用标签、纹理与形状。"
+    },
+    {
+      "belief": "图中最近元素就是答案。",
+      "whyWrong": "关系由箭头与标签决定。",
+      "correction": "按图例阅读。"
+    },
+    {
+      "belief": "alt 可以比图少信息。",
+      "whyWrong": "替代必须等价。",
+      "correction": "用资料表核对。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "图文题至少需哪两类证据？",
+      "answer": "图形与文字",
+      "reason": "答案来自交集。"
+    },
+    {
+      "prompt": "黑白图如何避免只靠颜色？",
+      "answer": "标签、形状与纹理",
+      "reason": "多重编码。"
+    },
+    {
+      "prompt": "资料表 fallback 应支持同一答案吗？",
+      "answer": "应",
+      "reason": "可及性等价。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

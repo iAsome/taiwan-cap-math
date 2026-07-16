@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_273_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S273"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The class reached the hill at nine. Half an hour later, they began to draw the view. They left at eleven. How long after arriving did they start drawing?",
+  "options": [
+    "Two hours",
+    "Thirty minutes",
+    "Nine minutes",
+    "Eleven minutes"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩小時接近整段停留，不是開始等待。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "half an hour 等於三十分鐘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "九是抵達時刻，不是經過時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "十一是離開時刻的一部分。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s273-q06-convert-half-hour-delay",
+    "separate-clock-time-from-duration"
+  ],
+  "representationType": "elapsed-time-in-narrative",
+  "misconceptionTargets": [
+    "subtract-unrelated-departure-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時間詞直接給出抵達到作畫的間隔。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時鐘數字與經過時間已分開處理。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

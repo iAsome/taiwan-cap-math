@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_236_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S236"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "The school trip needs one adult for every six students. There are seventeen students and two adults. Before leaving, the group must ___ .",
+  "options": [
+    "find one more adult",
+    "send five students home",
+    "ask one adult to watch all seventeen",
+    "remove both adults"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "find one more adult：十七名學生需要三名成人；目前兩名，尚缺一名。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "send five students home：送五人回家會變十二人、兩成人可行但不符合旅行保留全體學生的合理目標，且找一成人即可。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "ask one adult to watch all seventeen：一成人只能負責六人，不能照看十七人。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "remove both adults：移除成人會使比例更不符合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "integrate-cross-sentence-evidence",
+    "compute-required-supervision"
+  ],
+  "representationType": "multi-step-rule-application",
+  "misconceptionTargets": [
+    "use-floor-instead-of-ceiling"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「至少兩句共同限制出的唯一內容」可推出 find one more adult；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 find one more adult 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

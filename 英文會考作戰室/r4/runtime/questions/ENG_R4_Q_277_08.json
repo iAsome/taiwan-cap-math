@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'The second route is longer, but it passes the hospital.' Text: Two buses go from the station to the lake. [A] Route 1 takes twenty minutes. [B] Route 2 takes thirty minutes. [C] Sick travelers sometimes choose Route 2. [D] Where should the sentence go?",
+  "options": [
+    "A",
+    "B",
+    "Before the first sentence",
+    "C"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "在 Route 1 後提 second route，但尚未提供 Route 2 的時間比較基準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "在 Route 2 時間前先稱 longer，讀者尚未看到三十分鐘資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "second route 在兩路線被介紹前無法辨認。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "接在兩個時間後可比較 longer，後句再說醫院路線的使用者。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u41-s277-q08-insert-route-comparison-before-user-choice",
+    "use-both-prior-times-and-next-reason"
+  ],
+  "representationType": "comparison-insertion",
+  "misconceptionTargets": [
+    "place-comparison-before-comparable-data"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "插入句需同時依賴兩條路線的時間資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "C 位置也讓 hospital 成為病患選第二路線的理由。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_Q_316_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S316"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "You hear: A: 'Is Ben fixing the printer?' B: 'No, Ben is calling support while Jay checks the printer.' What is Ben doing?",
+  "options": [
+    "leaving the office",
+    "calling support",
+    "checking the printer",
+    "printing a report"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "leaving the office：未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "calling support：B 明示 Ben 的行動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "checking the printer：這是 Jay。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "printing a report：未提。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "extract-short-dialogue-detail",
+    "retain-corrected-role-bound-detail"
+  ],
+  "representationType": "listening-short-dialogue-detail",
+  "misconceptionTargets": [
+    "select-first-mentioned-value-before-correction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「人物、物品、時間或地點的關鍵修正句決定短對話情境」可推出 calling support；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 calling support 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

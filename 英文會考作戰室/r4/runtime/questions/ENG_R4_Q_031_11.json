@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_031_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which contrast is correct?",
+  "options": [
+    "A coffee is all coffee; the coffee means none.",
+    "Coffee and the coffee can never differ.",
+    "I like coffee; the coffee in this cup is cold.",
+    "I like the coffee everywhere; coffee in this cup is the."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A coffee is all coffee; the coffee means none.：冠詞意義說反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Coffee and the coffee can never differ.：一般與特定指涉可以不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "I like coffee; the coffee in this cup is cold.：前者談咖啡一般，後者由 in this cup 限定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I like the coffee everywhere; coffee in this cup is the.：限定與語序錯誤。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "recognize-zero-article-context",
+    "distinguish-general-class-proper-name-and-specific-instance"
+  ],
+  "representationType": "zero-article-generality",
+  "misconceptionTargets": [
+    "apply-zero-article-from-countability-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「在複數或不可數名詞表一般類別、專有名詞與固定制度性用法時辨識零冠詞，並與特定 the 用法對比。」可推出 I like coffee; the coffee in this cup is cold.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 I like coffee; the coffee in this cup is cold. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

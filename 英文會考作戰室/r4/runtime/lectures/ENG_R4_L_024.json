@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_024",
+  "subject": "english",
+  "unitId": "ENG_R4_U04",
+  "skillId": "ENG_R4_S024",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S023"
+  ],
+  "objectives": [
+    "建立 be 肯定句與否定句的基本結構。",
+    "正確使用 isn't、aren't、wasn't、weren't 等縮寫。",
+    "辨識 not 的作用範圍與雙重否定問題。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S024_SEC_1",
+      "title": "肯定結構",
+      "content": "主詞加 be 再接名詞、形容詞或地點：She is ready；They are at home。be 本身就是謂語核心。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S024_SEC_2",
+      "title": "否定只加一個 not",
+      "content": "She is not ready；They were not late。不可再加入 don't，因為 be 不需要 do 支援。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S024_SEC_3",
+      "title": "縮寫要保留配對",
+      "content": "is not 可縮成 isn't，are not 可縮成 aren't；I am not 通常縮為 I'm not，而不是 amn't。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S024_SEC_4",
+      "title": "not 的範圍決定意思",
+      "content": "All rooms are not open 可能有歧義；No room is open 清楚表示零間開放。根據原意選精確表達。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S024_EX_1",
+      "prompt": "He ___ hungry now. (not)",
+      "steps": [
+        "主詞 he 單數。",
+        "現在式用 is。",
+        "否定加 not。"
+      ],
+      "answer": "He is not hungry now.",
+      "why": "be 後直接放 not。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S024_EX_2",
+      "prompt": "They ___ absent yesterday. (negative)",
+      "steps": [
+        "主詞 they 複數。",
+        "過去式用 were。",
+        "縮寫為 weren't。"
+      ],
+      "answer": "They weren't absent yesterday.",
+      "why": "weren't 同時保留過去、複數與否定。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S024_EX_3",
+      "prompt": "I am ready. Change to negative.",
+      "steps": [
+        "保留主詞 I。",
+        "保留 am。",
+        "加入 not。"
+      ],
+      "answer": "I'm not ready.",
+      "why": "自然縮寫是 I'm not。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "be 否定句要加 don't。",
+      "whyWrong": "be 可直接承載否定。",
+      "correction": "寫 is not，不寫 doesn't be。"
+    },
+    {
+      "belief": "isn't 與 aren't 可隨意互換。",
+      "whyWrong": "縮寫仍保留主詞數的限制。",
+      "correction": "先配主詞，再決定縮寫。"
+    },
+    {
+      "belief": "not 出現兩次會更否定。",
+      "whyWrong": "雙重否定可能改義或不合標準用法。",
+      "correction": "用一個清楚的否定結構。"
+    },
+    {
+      "belief": "肯定句只要刪掉 not 就一定正確。",
+      "whyWrong": "還需檢查 be 的人稱、數與時態。",
+      "correction": "完成轉換後重新核對整句。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "They are ready 的否定句是什麼？",
+      "answer": "They are not ready.",
+      "reason": "在 are 後加 not。"
+    },
+    {
+      "prompt": "I am not 的常見縮寫是什麼？",
+      "answer": "I'm not.",
+      "reason": "標準學習用法不採 amn't。"
+    },
+    {
+      "prompt": "be 否定是否需要 do？",
+      "answer": "不需要。",
+      "reason": "be 直接與 not 結合。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

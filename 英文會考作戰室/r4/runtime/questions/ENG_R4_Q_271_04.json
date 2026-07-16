@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_271_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S271"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence is a recommendation rather than a fact?",
+  "options": [
+    "The report lists three dark areas",
+    "The town should add lights near the bridge",
+    "There are two lights near the bridge",
+    "The bridge opened in 2010"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The report lists three dark areas：報告內容可查。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The town should add lights near the bridge：should 表政策建議。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "There are two lights near the bridge：數量可查。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The bridge opened in 2010：年份可查。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "distinguish-fact-and-opinion",
+    "classify-verifiable-versus-evaluative"
+  ],
+  "representationType": "fact-opinion",
+  "misconceptionTargets": [
+    "treat-number-as-automatic-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「陳述能否由可查資料驗證，或包含個人評價與偏好」可推出 The town should add lights near the bridge；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The town should add lights near the bridge 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

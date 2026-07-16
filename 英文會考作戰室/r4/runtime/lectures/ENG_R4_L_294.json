@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_294",
+  "subject": "english",
+  "unitId": "ENG_R4_U44",
+  "skillId": "ENG_R4_S294",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "prerequisites": [
+    "ENG_R4_S293"
+  ],
+  "objectives": [
+    "由行動與對話推論人物特質。",
+    "以至少兩項文本行為支持標籤。",
+    "控制特質強度，不用單一事件過度概括。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S294_SEC_1",
+      "title": "先描述行為再貼標籤",
+      "content": "writes every step、checks twice 可先描述為仔細，再選 careful。不要從名字或外表猜。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S294_SEC_2",
+      "title": "找跨動作一致性",
+      "content": "分享工具又留下協助新同學，兩項都支持 helpful；一項偶然行為較弱。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S294_SEC_3",
+      "title": "特質要最小充分",
+      "content": "一次願意嘗試可支持 brave in this situation，不足以證明 never afraid。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S294_SEC_4",
+      "title": "對話語氣也是行動",
+      "content": "I can try again 顯示 persistence；Thank you for pointing that out 顯示接受回饋。仍需配合情境。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S294_EX_1",
+      "prompt": "Checked every address twice and corrected one",
+      "steps": [
+        "重複核對。",
+        "發現並修正。",
+        "選 careful。"
+      ],
+      "answer": "careful",
+      "why": "兩項行為同向。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S294_EX_2",
+      "prompt": "Shared lunch and showed a new student the room",
+      "steps": [
+        "分享資源。",
+        "主動帶路。",
+        "選 helpful。"
+      ],
+      "answer": "helpful",
+      "why": "不是只靠一句稱讚。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S294_EX_3",
+      "prompt": "Voice shook, but she reported the fire",
+      "steps": [
+        "有害怕證據。",
+        "仍採必要行動。",
+        "選 brave in the moment。"
+      ],
+      "answer": "brave",
+      "why": "勇敢不等於毫無恐懼。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "微笑一定代表友善特質。",
+      "whyWrong": "可能只是當下反應。",
+      "correction": "找更多行動。"
+    },
+    {
+      "belief": "一次錯誤代表 careless。",
+      "whyWrong": "需看是否有反覆模式。",
+      "correction": "控制概括範圍。"
+    },
+    {
+      "belief": "brave 等於從不害怕。",
+      "whyWrong": "勇敢可伴隨恐懼。",
+      "correction": "看是否仍行動。"
+    },
+    {
+      "belief": "用自己的喜好評價角色。",
+      "whyWrong": "特質需文本證據。",
+      "correction": "列出兩個行為。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "可靠特質最好有幾項行為？",
+      "answer": "至少兩項",
+      "reason": "避免單點概括。"
+    },
+    {
+      "prompt": "害怕仍行動可支持什麼？",
+      "answer": "勇敢",
+      "reason": "勇敢不是無恐懼。"
+    },
+    {
+      "prompt": "外表可直接證明個性嗎？",
+      "answer": "不可",
+      "reason": "需行動與對話。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  }
+}

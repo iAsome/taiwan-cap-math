@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'They carried the boxes to the school hall.' Text: Students collected books from each classroom. [ ] In the hall, the books were placed on long tables. Where does the sentence belong?",
+  "options": [
+    "Before students collected books",
+    "After the books were placed on tables",
+    "Between the two given sentences",
+    "The sentence cannot belong in this text"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "They 在段首沒有已介紹的 students 可回指。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "放到最後會先在會堂擺書，再把箱子搬過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "They 回指學生，the boxes 承接收集結果，且帶出 hall。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "句子正好補上教室到會堂的移動。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s274-q07-insert-pronoun-location-bridge",
+    "connect-students-boxes-and-hall"
+  ],
+  "representationType": "reference-based-insertion",
+  "misconceptionTargets": [
+    "check-only-pronoun-not-next-location"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "插入句前後各有一個清楚接點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項維持人物、物品與地點的資訊推進。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

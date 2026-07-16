@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_248",
+  "subject": "english",
+  "unitId": "ENG_R4_U36",
+  "skillId": "ENG_R4_S248",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "prerequisites": [
+    "ENG_R4_S247"
+  ],
+  "objectives": [
+    "辨認 but、however、although 等轉折位置。",
+    "分開背景期待與轉折後主要主張。",
+    "避免把轉折前的讓步或舊觀點誤當作者結論。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S248_SEC_1",
+      "title": "轉折會調整預期",
+      "content": "A but B 通常先承認 A，再把讀者注意力轉向 B。主旨不一定只等於 B，但作者最終判斷常由 B 決定。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S248_SEC_2",
+      "title": "however 可跨句改方向",
+      "content": "前句看似給出結論，However 後可能加入限制。讀到標記時要暫停，重新評估作者是否修正、反駁或平衡先前說法。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S248_SEC_3",
+      "title": "although 子句常是讓步背景",
+      "content": "Although A, B 中 A 是承認的困難或反面事實，B 是仍然成立的主要命題。不要因 A 在句首就把它當中心。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S248_SEC_4",
+      "title": "轉折後仍要看全段",
+      "content": "有些文章在最後再次轉回。每遇一個轉折都更新立場，最後以整段結論與證據確認作者真正強調的主張。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S248_EX_1",
+      "prompt": "The room is small, but it works well for short meetings.",
+      "steps": [
+        "small 是限制。",
+        "but 改變負面預期。",
+        "後半給出作者實際評價。"
+      ],
+      "answer": "The room is useful for short meetings despite its size.",
+      "why": "中心保留限制，但強調仍有用途。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S248_EX_2",
+      "prompt": "Many liked the plan. However, it cost more than expected.",
+      "steps": [
+        "先給正面反應。",
+        "However 引入重要問題。",
+        "作者提醒成本限制。"
+      ],
+      "answer": "The plan was popular but had a cost problem.",
+      "why": "不能只選 popular。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S248_EX_3",
+      "prompt": "Although the walk was long, the signs made it easy to follow.",
+      "steps": [
+        "長是讓步背景。",
+        "主要子句在逗點後。",
+        "強調路線仍易走。"
+      ],
+      "answer": "Clear signs made a long walk easy to follow.",
+      "why": "主張落在 although 子句之外。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第一個觀點一定是作者結論。",
+      "whyWrong": "轉折後可能修正。",
+      "correction": "讀到 but/however 後更新判斷。"
+    },
+    {
+      "belief": "but 後內容完全取消前文。",
+      "whyWrong": "常是保留 A 同時強調 B。",
+      "correction": "主旨可整合限制與主要結論。"
+    },
+    {
+      "belief": "although 子句因為較長所以更重要。",
+      "whyWrong": "句長不決定篇章焦點。",
+      "correction": "辨認主要子句。"
+    },
+    {
+      "belief": "看到一個轉折就不用讀後面。",
+      "whyWrong": "後文可能再平衡或收束。",
+      "correction": "追蹤到全文結尾。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A but B 通常把較強焦點放在哪裡？",
+      "answer": "B",
+      "reason": "but 後修正原先預期。"
+    },
+    {
+      "prompt": "Although A, B 的主要子句是哪一部分？",
+      "answer": "B",
+      "reason": "A 是讓步子句。"
+    },
+    {
+      "prompt": "轉折後可完全忽略前文嗎？",
+      "answer": "不可",
+      "reason": "主旨可能同時保留限制與結論。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  }
+}

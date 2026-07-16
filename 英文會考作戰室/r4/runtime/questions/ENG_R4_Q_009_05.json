@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_009_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "The command is 'Compare your answers, then correct one mistake.' What is the order?",
+  "options": [
+    "compare first, correct second",
+    "correct before seeing any answers",
+    "only compare",
+    "correct every answer"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "compare first, correct second：then 建立先比較後修正。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "correct before seeing any answers：顛倒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "only compare：漏第二步。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "correct every answer：範圍過大。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "sequence-two-action-command",
+    "extract-two-actions-and-order"
+  ],
+  "representationType": "two-step-classroom-command",
+  "misconceptionTargets": [
+    "perform-only-last-or-reverse-sequence"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「and、then、before、after 建立兩個課堂動作的先後或並列關係」可推出 compare first, correct second；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 compare first, correct second 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

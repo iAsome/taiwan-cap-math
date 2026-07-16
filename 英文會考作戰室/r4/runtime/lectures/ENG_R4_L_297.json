@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_297",
+  "subject": "english",
+  "unitId": "ENG_R4_U45",
+  "skillId": "ENG_R4_S297",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S296"
+  ],
+  "objectives": [
+    "區分主題與過窄細節。",
+    "利用重複概念找核心說明。",
+    "選擇涵蓋全文但不超出範圍的主旨。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S297_SEC_1",
+      "title": "主題先回答談什麼",
+      "content": "找各句共同指向的名詞，例如 urban trees。單一例子如 one park 只是細節。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S297_SEC_2",
+      "title": "核心概念再回答說什麼",
+      "content": "文章可能說樹如何降溫、蜜蜂如何溝通。主旨需包含對象與主要說明。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S297_SEC_3",
+      "title": "用涵蓋測試",
+      "content": "把候選主旨套到每句；若只涵蓋一段就太窄，若加入文外政策就太廣。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S297_SEC_4",
+      "title": "標題是線索不是答案",
+      "content": "標題可能只給主題，仍需正文決定作者強調的關係。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S297_EX_1",
+      "prompt": "Trees shade walls, cool streets, and reduce indoor heat.",
+      "steps": [
+        "重複 cool/heat。",
+        "對象 trees。",
+        "合成作用。"
+      ],
+      "answer": "Trees can reduce city heat.",
+      "why": "涵蓋三項細節。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S297_EX_2",
+      "prompt": "Bees dance to show direction and distance.",
+      "steps": [
+        "對象 bees/dance。",
+        "功能 show information。",
+        "不只 distance。"
+      ],
+      "answer": "Bee dances communicate food location.",
+      "why": "完整涵蓋。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S297_EX_3",
+      "prompt": "Title: Small Drops; text explains water carving rock",
+      "steps": [
+        "標題模糊。",
+        "正文重複 water/rock/change。",
+        "選過程主旨。"
+      ],
+      "answer": "Water can slowly shape rock.",
+      "why": "由全文而非標題猜。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第一句必定是主旨。",
+      "whyWrong": "可能是例子或提問。",
+      "correction": "檢查所有句。"
+    },
+    {
+      "belief": "最有趣的細節就是核心。",
+      "whyWrong": "生動不等於涵蓋。",
+      "correction": "做涵蓋測試。"
+    },
+    {
+      "belief": "主旨越廣越好。",
+      "whyWrong": "會加入文外範圍。",
+      "correction": "控制到本文對象。"
+    },
+    {
+      "belief": "標題可取代閱讀正文。",
+      "whyWrong": "標題常只給主題。",
+      "correction": "用正文決定說明重點。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "主題與主旨差在哪？",
+      "answer": "主旨還說明文章對主題的核心訊息",
+      "reason": "需包含對象與重點。"
+    },
+    {
+      "prompt": "只涵蓋一例的選項如何？",
+      "answer": "太窄",
+      "reason": "無法代表全文。"
+    },
+    {
+      "prompt": "每句都能連回候選主旨是什麼測試？",
+      "answer": "涵蓋測試",
+      "reason": "檢查範圍。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

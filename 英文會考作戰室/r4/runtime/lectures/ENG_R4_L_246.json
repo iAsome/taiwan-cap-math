@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_246",
+  "subject": "english",
+  "unitId": "ENG_R4_U36",
+  "skillId": "ENG_R4_S246",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "prerequisites": [
+    "ENG_R4_S245"
+  ],
+  "objectives": [
+    "以全文涵蓋與範圍邊界選主旨。",
+    "辨認含 always、everyone 等過度字眼的擴張選項。",
+    "分開排除過窄、過廣、因果顛倒與主題偏移。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S246_SEC_1",
+      "title": "主旨的兩道門",
+      "content": "第一道問是否涵蓋全文，第二道問是否只說原文有證據的範圍。只通過其中一道仍不是答案。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S246_SEC_2",
+      "title": "警覺絕對語氣",
+      "content": "always、never、everyone、the only way 常把有限觀察放大成普遍規則。除非原文明確證明，應視為過度延伸。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S246_SEC_3",
+      "title": "保留限定範圍",
+      "content": "文章若談 one town、this class、during the test，主旨也要保留相近範圍，不能擴成 every city、all students、for life。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S246_SEC_4",
+      "title": "檢查因果強度",
+      "content": "原文只說 two things happened together，答案不能擅自說 A caused B。選用 helped、may、was linked to 等符合證據強度的表達。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U36_ENG_R4_S246_EX_1",
+      "prompt": "One class tried a no-phone lunch and talked more.",
+      "steps": [
+        "範圍是一個班級一次嘗試。",
+        "結果是交談增加。",
+        "避免推成全國規定。"
+      ],
+      "answer": "A no-phone lunch helped one class talk more.",
+      "why": "保留 one class 與 helped 的有限因果。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S246_EX_2",
+      "prompt": "Three riders said the new path felt safer.",
+      "steps": [
+        "證據只有三人感受。",
+        "不能說所有人。",
+        "不能說事故歸零。"
+      ],
+      "answer": "Some riders felt safer on the new path.",
+      "why": "some 與 felt 都符合證據。"
+    },
+    {
+      "id": "ENG_R4_U36_ENG_R4_S246_EX_3",
+      "prompt": "A passage lists two benefits and one problem of online study.",
+      "steps": [
+        "全文有正反兩面。",
+        "不能只選好處。",
+        "也不能宣稱全面最好。"
+      ],
+      "answer": "Online study has benefits and a challenge.",
+      "why": "範圍與平衡都吻合。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "語氣越強越像主旨。",
+      "whyWrong": "強語氣常超過證據。",
+      "correction": "讓答案強度與原文一致。"
+    },
+    {
+      "belief": "涵蓋很多就算正確。",
+      "whyWrong": "過廣答案可涵蓋但也加入未談內容。",
+      "correction": "要求既完整又有邊界。"
+    },
+    {
+      "belief": "作者舉一例就支持普遍規則。",
+      "whyWrong": "單一案例只證明該案例。",
+      "correction": "保留 one、some 或 may 等限定。"
+    },
+    {
+      "belief": "同時發生就可寫造成。",
+      "whyWrong": "相關不一定因果。",
+      "correction": "除非有因果證據，避免 caused。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "原文說 some，答案可改 everyone 嗎？",
+      "answer": "不可",
+      "reason": "範圍被不當擴張。"
+    },
+    {
+      "prompt": "主旨只重述一個例子有何問題？",
+      "answer": "過窄",
+      "reason": "不能涵蓋全文其他證據。"
+    },
+    {
+      "prompt": "原文只觀察同時變化，可直接寫 caused 嗎？",
+      "answer": "不可",
+      "reason": "因果強度超出證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  }
+}

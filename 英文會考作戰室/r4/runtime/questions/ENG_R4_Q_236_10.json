@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_236_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S236"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Eva usually walks her dog after dinner. Tonight the dog hurt its foot, so Eva ___ instead.",
+  "options": [
+    "let it rest at home",
+    "made it run farther",
+    "forgot that she had a dog",
+    "bought dinner after the walk"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "let it rest at home：腳受傷時休息能取代平常散步並保護狗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "made it run farther：跑更遠會加重受傷，與 so 的結果不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "forgot that she had a dog：前句清楚顯示她記得狗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "bought dinner after the walk：晚餐後才是平常散步時間，且買晚餐不能處理受傷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "integrate-cross-sentence-evidence",
+    "choose-safe-response-to-injury"
+  ],
+  "representationType": "routine-exception",
+  "misconceptionTargets": [
+    "repeat-normal-routine-despite-change"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「至少兩句共同限制出的唯一內容」可推出 let it rest at home；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 let it rest at home 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

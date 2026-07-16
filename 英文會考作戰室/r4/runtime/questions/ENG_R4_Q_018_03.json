@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_018_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence describes a regular daily activity?",
+  "options": [
+    "I am feeding it right now.",
+    "I fed one cat once.",
+    "I feed my cat before breakfast every day.",
+    "I may feed a cat next year."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "I am feeding it right now.：這是當下動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "I fed one cat once.：這是一次過去事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "I feed my cat before breakfast every day.：every day 與 before breakfast 建立固定作息。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I may feed a cat next year.：這是未來可能性。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "describe-interests-and-daily-activities",
+    "separate-preference-activity-and-frequency"
+  ],
+  "representationType": "interest-routine-description",
+  "misconceptionTargets": [
+    "infer-current-action-from-general-preference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「以喜好動詞、活動名稱與頻率線索描述興趣或日常活動，並區分喜好與實際作息。」可推出 I feed my cat before breakfast every day.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 I feed my cat before breakfast every day. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

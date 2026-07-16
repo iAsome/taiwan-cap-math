@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_273_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S273"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A repair note says: 8:10 — problem reported; 8:25 — worker arrived; 8:40 — power turned off; 9:15 — repair finished. What was the last event before the repair work could safely begin?",
+  "options": [
+    "The problem was reported.",
+    "The repair was finished.",
+    "The power was turned off.",
+    "The worker arrived."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "通報是最早事件，仍未處理電源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "修理完成在工作開始之後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "關閉電源是安全開始修理前最後列出的事件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "工作者到場早於關閉電源。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s273-q11-integrate-log-times-with-safety",
+    "identify-final-prerequisite-event"
+  ],
+  "representationType": "service-log-sequence",
+  "misconceptionTargets": [
+    "choose-worker-arrival-as-automatic-start"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間表須結合安全前置條件判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案找的是開始工作前最後必要步驟，不是最早準備。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "I cannot find my red sports bag. Please call me if you see it.\nWhy is this message being shared?",
+  "options": [
+    "To ask for help finding a bag",
+    "To give away sports clothes",
+    "To announce a game",
+    "To return a phone call"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "遺失狀態與看見後來電的請求共同指向協尋。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物品沒有被贈送。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "sports 只描述袋子，沒有比賽公告。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "call me 是找到線索後的行動，不是回覆舊電話。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s219-integrate-lost-item-and-contact-request",
+    "distinguish-sports-object-from-sports-event"
+  ],
+  "representationType": "message-purpose-lost-item",
+  "misconceptionTargets": [
+    "focus-on-call-without-condition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "目的要整合問題和讀者行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "物品修飾語不能被誤當成活動主題。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

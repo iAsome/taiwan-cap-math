@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_284_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S284"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Mia reaches Harbor Day at 10:50 without a workshop booking. Can she still make a booking?",
+  "options": [
+    "No, booking closed at 10:20.",
+    "Yes, because the Museum time was 10:40.",
+    "Yes, because three workshop markers exist.",
+    "No, because the Market is full."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "No, booking closed at 10:20.：實際抵達 10:50 晚於附註截止 10:20。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Yes, because the Museum time was 10:40.：忽略延誤與截止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yes, because three workshop markers exist.：數量不取消預約截止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "No, because the Market is full.：Market 狀態與 workshop booking 無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "solve-with-chart-and-note",
+    "apply-table-chart-and-note-constraints"
+  ],
+  "representationType": "integrated-information-sheet",
+  "misconceptionTargets": [
+    "ignore-note-after-finding-table-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「主表或圖表提供的數值與 NOTE 限制同時套用後只剩一個可行方案」可推出 No, booking closed at 10:20.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 No, booking closed at 10:20. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_01"
+  ]
+}

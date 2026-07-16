@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Please bring two chairs to Room 7 before class.\nWhich reply confirms the exact task?",
+  "options": [
+    "Room 2 has seven chairs.",
+    "I will bring two chairs to Room 7 before class.",
+    "I can sit before class.",
+    "The class has many rooms."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數量與教室都被顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "回覆保留兩張椅子、第七教室和課前期限。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "坐下不是搬椅子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一般描述沒有承諾行動。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s222-confirm-exact-delivery-task",
+    "preserve-quantity-destination-and-deadline"
+  ],
+  "representationType": "message-reply-task-confirmation",
+  "misconceptionTargets": [
+    "swap-numbers-across-fields"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "確認句不可更動數字與目的地。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案重述任務是為了消除執行歧義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

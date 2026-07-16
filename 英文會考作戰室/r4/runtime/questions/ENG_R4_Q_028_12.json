@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_028_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S028"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A park has no benches now, but it had six last year. Which sentence reports the change?",
+  "options": [
+    "There be benches before and no now.",
+    "There are no benches now, but there were six last year.",
+    "There is no benches now, but there was six last year.",
+    "There were no benches now, but there are six last year."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "There be benches before and no now.：缺少時態與完整結構。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "There are no benches now, but there were six last year.：現在複數否定與過去複數分別用 are、were。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "There is no benches now, but there was six last year.：兩個複數都誤用單數 be。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "There were no benches now, but there are six last year.：時態顛倒。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "select-existence-by-number-and-time",
+    "coordinate-postverbal-number-with-local-time"
+  ],
+  "representationType": "existence-number-time",
+  "misconceptionTargets": [
+    "choose-be-from-time-or-nearest-item-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依存在物核心名詞的數與事件時間，選擇 there is/are 或 there was/were，並在多項清單中保持資訊精確。」可推出 There are no benches now, but there were six last year.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 There are no benches now, but there were six last year. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

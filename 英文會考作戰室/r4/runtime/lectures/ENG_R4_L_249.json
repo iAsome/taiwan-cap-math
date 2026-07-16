@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_249",
+  "subject": "english",
+  "unitId": "ENG_R4_U37",
+  "skillId": "ENG_R4_S249",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "prerequisites": [
+    "ENG_R4_S248"
+  ],
+  "objectives": [
+    "從題目圈出人物、動作、對象與限制詞。",
+    "在原文找相同字或同義改寫，不要求逐字一致。",
+    "將定位句與前後一句一起讀，確認答案角色正確。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S249_SEC_1",
+      "title": "先拆題目關鍵詞",
+      "content": "不要把整個問句拿去逐字搜尋。先圈人物、核心動作與時間或地點限制，例如 How did Mia solve the problem? 可拆成 Mia、solve、problem。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S249_SEC_2",
+      "title": "預期作者會改寫",
+      "content": "題目中的 buy 可能在原文寫 get、purchase 或 pay for；問題中的 reason 可能由 because、so 或事件結果呈現。找概念相同，不只找相同拼字。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S249_SEC_3",
+      "title": "定位後讀一個小窗口",
+      "content": "找到關鍵字後，至少讀該句與相鄰一句。代名詞、否定與真正受詞可能在旁邊；只看單一字容易把誰做什麼配錯。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S249_SEC_4",
+      "title": "以原文證據作答",
+      "content": "答案要能指出原文哪一段支持。若選項只是常識上合理但找不到對應句，就不能當作明示資訊。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S249_EX_1",
+      "prompt": "Question: How did Leo fix the dark path? Text: He placed small lights beside it.",
+      "steps": [
+        "圈 fix 與 dark path。",
+        "原文未重複 fix，而以 placed lights 表示解法。",
+        "核對 it 回指 path。"
+      ],
+      "answer": "He added lights.",
+      "why": "added lights 是 placed small lights 的等義概括。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S249_EX_2",
+      "prompt": "Question: Why was the trip delayed? Text: Heavy rain kept the bus from leaving.",
+      "steps": [
+        "圈 why 與 delayed。",
+        "kept ... from leaving 表示延誤。",
+        "原因是 heavy rain。"
+      ],
+      "answer": "Because of heavy rain.",
+      "why": "問題與原文以不同字呈現同一因果。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S249_EX_3",
+      "prompt": "Question: Where can visitors leave coats? Text: Use the room next to the front desk.",
+      "steps": [
+        "圈 leave coats 與 where。",
+        "原文以 use 指示可放置地點。",
+        "保留完整位置。"
+      ],
+      "answer": "In the room next to the front desk.",
+      "why": "不能只答 front desk，因原文說的是旁邊房間。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "找不到題目原字就表示沒有答案。",
+      "whyWrong": "閱讀題常使用同義改寫。",
+      "correction": "搜尋概念、角色與因果，而非只比拼字。"
+    },
+    {
+      "belief": "看到一個相同字就立即選。",
+      "whyWrong": "同字可能出現在錯的人物或時間。",
+      "correction": "讀定位句前後並核對限制。"
+    },
+    {
+      "belief": "常識合理就等於原文明示。",
+      "whyWrong": "明示題只接受文本證據。",
+      "correction": "要求自己指出支持句。"
+    },
+    {
+      "belief": "題目問 why，只找 because。",
+      "whyWrong": "原因也可用 so、結果或事件鏈表達。",
+      "correction": "辨認因果功能，不限單一標記詞。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "題目寫 purchase，原文寫 buy，能互相定位嗎？",
+      "answer": "能",
+      "reason": "兩字在此表相同購買行動。"
+    },
+    {
+      "prompt": "定位到關鍵詞後最少還要讀什麼？",
+      "answer": "該句前後的小範圍",
+      "reason": "用來確認代名詞、否定與角色。"
+    },
+    {
+      "prompt": "明示題可用原文沒有的常識作答嗎？",
+      "answer": "不可",
+      "reason": "必須有可指出的文本證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  }
+}

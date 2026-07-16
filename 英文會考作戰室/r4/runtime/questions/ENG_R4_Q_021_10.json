@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_021_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "Why is 'How about you?' incomplete after 'Where do you live?'",
+  "options": [
+    "It contains too many city names.",
+    "It is always a farewell.",
+    "It asks about the weather only.",
+    "It returns the question without giving an answer."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "It contains too many city names.：句中沒有城市名。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "It is always a farewell.：它通常是回問。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "It asks about the weather only.：沒有 weather 線索。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "It returns the question without giving an answer.：回問前仍需先提供自己的居住地。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "manage-natural-first-meeting-turns",
+    "respond-extend-and-close-from-prior-turn"
+  ],
+  "representationType": "first-meeting-turn-sequence",
+  "misconceptionTargets": [
+    "deliver-script-without-answering-previous-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「以招呼、介紹、回應、追問與收束的功能鏈安排輪次，並讓每一輪承接前一輪的新資訊。」可推出 It returns the question without giving an answer.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 It returns the question without giving an answer. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

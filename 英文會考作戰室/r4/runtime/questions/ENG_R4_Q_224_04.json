@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Tell me how many tickets you need and whether you want the morning show.\nReply: Yes, the morning show.\nWhich detail is still needed?",
+  "options": [
+    "The theater name",
+    "The movie title",
+    "The ticket price",
+    "The number of tickets"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "場所名稱未被詢問。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "片名也不在兩個問題中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "票價不是收件者要提供的資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "回覆選了場次，但沒有說需要幾張票。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s224-identify-missing-ticket-quantity",
+    "distinguish-requested-detail-from-contextual-extras"
+  ],
+  "representationType": "message-reply-partial-coverage",
+  "misconceptionTargets": [
+    "invent-missing-detail-not-requested"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩部分要求中只有 morning show 已回答。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "缺少的是數量，不是其他常見購票資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

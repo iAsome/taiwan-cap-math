@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S222",
+  "subject": "english",
+  "unitId": "ENG_R4_U32",
+  "skillId": "ENG_R4_S222",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "prerequisites": [
+    "ENG_R4_S221"
+  ],
+  "objectives": [
+    "能找出來訊中需要回覆的問題與限制。",
+    "能選擇包含必要資訊、語意明確且不加入無關內容的簡短回覆。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S222_SEC_01",
+      "title": "先列出對方真正問了什麼",
+      "content": "Can you come? What time works for you? 含兩個問題：能否參加和可行時間。回覆若只寫 Yes，仍缺時間；先數清問題，再逐一作答最可靠。"
+    },
+    {
+      "id": "ENG_R4_L_S222_SEC_02",
+      "title": "回覆要能讓對方採取下一步",
+      "content": "若對方要安排接送，I can go 不足以決定何時接人；I can go at five 才提供可用資訊。必要內容由情境決定，不是每封訊息都要寫相同細節。"
+    },
+    {
+      "id": "ENG_R4_L_S222_SEC_03",
+      "title": "簡短不等於模糊",
+      "content": "Maybe、OK 或 Fine 在某些對話可成立，但面對二選一或具體問題時可能不清楚。能用一句完整回答人物、時間、地點或選擇，就不必用多句無關禮貌話填滿。"
+    },
+    {
+      "id": "ENG_R4_L_S222_SEC_04",
+      "title": "不能答應無法完成的條件",
+      "content": "若收件者六點才下課，回覆 I will meet you at five 與已知資訊矛盾。好回覆不只格式完整，也要和來訊及自己的限制一致。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S222_EX_01",
+      "prompt": "Can you help at the book sale Saturday? Please tell me yes or no by Thursday.",
+      "steps": [
+        "找出能否協助的問題。",
+        "注意星期四前要回覆。",
+        "選擇直接表明決定的句子。"
+      ],
+      "answer": "Yes, I can help on Saturday.",
+      "why": "回覆明確說可以協助，並重述星期六以連回活動。只寫 Saturday 沒有表達答應或拒絕，寫 Maybe 也不能完成對方要求的決定。"
+    },
+    {
+      "id": "ENG_R4_L_S222_EX_02",
+      "prompt": "Which bus will you take, the 4:10 or the 4:40 bus?",
+      "steps": [
+        "辨認二選一問題。",
+        "保留其中一個完整時間。",
+        "指出選擇的是公車班次。"
+      ],
+      "answer": "I will take the 4:40 bus.",
+      "why": "來訊要求在兩個班次中選一個，回覆直接指定四點四十分。只說 later 可能可猜，但沒有直接保留對方提供的準確時間。"
+    },
+    {
+      "id": "ENG_R4_L_S222_EX_03",
+      "prompt": "I left your blue bag at the office. Can you get it before five?",
+      "steps": [
+        "確認物品與地點。",
+        "找出五點前的期限。",
+        "同時回答能否領取。"
+      ],
+      "answer": "Yes, I will get the blue bag from the office before five.",
+      "why": "完整回覆保留藍色袋子、辦公室與五點前領取三項必要資訊。只寫 Thank you 很有禮貌，卻沒有讓對方知道是否能按時取走。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "回覆有 Yes 就一定完整。",
+      "whyWrong": "原訊息可能還問時間、地點或選擇。",
+      "correction": "逐一核對每個問句與限制。"
+    },
+    {
+      "belief": "加入越多背景故事，回覆越好。",
+      "whyWrong": "無關內容可能掩蓋真正決定。",
+      "correction": "只保留能回答問題或安排下一步的資訊。"
+    },
+    {
+      "belief": "OK 在任何情況都足夠清楚。",
+      "whyWrong": "面對多個問題時，不知道 OK 回應哪一項。",
+      "correction": "重述必要的時間、物品或選擇。"
+    },
+    {
+      "belief": "可以忽略自己已知的時間限制。",
+      "whyWrong": "與情境矛盾的答覆無法實際完成。",
+      "correction": "送出前比對來訊要求與可行條件。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "對方問能否來以及幾點來，只答 Yes 完整嗎？",
+      "answer": "不完整",
+      "reason": "仍缺可行時間。"
+    },
+    {
+      "prompt": "二選一問題的回覆最好保留什麼？",
+      "answer": "明確選項",
+      "reason": "對方才能知道實際決定。"
+    },
+    {
+      "prompt": "禮貌結尾可以取代必要時間嗎？",
+      "answer": "不可以",
+      "reason": "時間是安排下一步所需資訊。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_021_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "A: 'I like mystery stories.' B wants to continue. What should B ask?",
+  "options": [
+    "Why did you say no name?",
+    "Who is your favorite mystery writer?",
+    "What size is the classroom clock?",
+    "Are mysteries a kind of breakfast?"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Why did you say no name?：對方沒有被問姓名。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Who is your favorite mystery writer?：問題延伸故事喜好。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "What size is the classroom clock?：與故事喜好無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Are mysteries a kind of breakfast?：分類錯誤。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "manage-natural-first-meeting-turns",
+    "respond-extend-and-close-from-prior-turn"
+  ],
+  "representationType": "first-meeting-turn-sequence",
+  "misconceptionTargets": [
+    "deliver-script-without-answering-previous-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「以招呼、介紹、回應、追問與收束的功能鏈安排輪次，並讓每一輪承接前一輪的新資訊。」可推出 Who is your favorite mystery writer?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Who is your favorite mystery writer? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

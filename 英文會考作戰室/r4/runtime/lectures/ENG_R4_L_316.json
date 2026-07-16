@@ -1,0 +1,190 @@
+{
+  "id": "ENG_R4_L_316",
+  "subject": "english",
+  "unitId": "ENG_R4_U48",
+  "skillId": "ENG_R4_S316",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "prerequisites": [
+    "ENG_R4_S315"
+  ],
+  "objectives": [
+    "辨認對話中的問題焦點。",
+    "抓取更正後的關鍵細節。",
+    "區分提議與最後資訊。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S316_SEC_1",
+      "title": "先分說話者",
+      "content": "A 提問、B 回答時，不把 B 的物品當 A 的。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S316_SEC_2",
+      "title": "更正詞優先",
+      "content": "not Tuesday—Wednesday、actually Room 3 會取代先前猜測。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S316_SEC_3",
+      "title": "問題決定要記什麼",
+      "content": "若問 where，只記地點；其餘價格或感受是干擾。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S316_SEC_4",
+      "title": "最後確認覆蓋提議",
+      "content": "Maybe 3:00 是提議；Let's make it 3:30 是決定。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S316_EX_1",
+      "prompt": "A: Tuesday? B: No, Wednesday.",
+      "steps": [
+        "先有猜測 Tuesday。",
+        "No 否定。",
+        "保留 Wednesday。"
+      ],
+      "answer": "Wednesday",
+      "why": "更正後資訊。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S316_EX_2",
+      "prompt": "A: Room 2? B: Actually Room 5.",
+      "steps": [
+        "actually 修正。",
+        "問地點。",
+        "選 Room 5。"
+      ],
+      "answer": "Room 5",
+      "why": "不保留舊值。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S316_EX_3",
+      "prompt": "Maybe bus; no, train is quicker",
+      "steps": [
+        "bus 是提議。",
+        "no 轉折。",
+        "train 為結論。"
+      ],
+      "answer": "They choose the train.",
+      "why": "追蹤最終資訊。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "記住最先聽到的值。",
+      "whyWrong": "後文可能修正。",
+      "correction": "找 no/actually。"
+    },
+    {
+      "belief": "把兩人角色交換。",
+      "whyWrong": "會錯物品行動。",
+      "correction": "標 A/B。"
+    },
+    {
+      "belief": "所有細節都記。",
+      "whyWrong": "工作記憶負擔大。",
+      "correction": "依問題篩選。"
+    },
+    {
+      "belief": "maybe 當最後決定。",
+      "whyWrong": "只是提議。",
+      "correction": "找 agree/let's。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "actually 常有何功能？",
+      "answer": "修正或補充真實資訊",
+      "reason": "覆蓋猜測。"
+    },
+    {
+      "prompt": "maybe 是確定決定嗎？",
+      "answer": "不是",
+      "reason": "仍是提議。"
+    },
+    {
+      "prompt": "問 where 應優先記？",
+      "answer": "地點",
+      "reason": "其他降權。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  }
+}

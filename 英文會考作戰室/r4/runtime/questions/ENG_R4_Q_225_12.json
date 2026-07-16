@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_225_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S225"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: The note says the room changes at three, not the meeting time.\nB: ___.\nA: Yes, we should be there by two thirty.",
+  "options": [
+    "Room three is on the first floor.",
+    "The note was written in blue.",
+    "Meetings can be useful.",
+    "I see. I read the note the wrong way."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第三號房不是 at three 的意思。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "墨水顏色不能解釋時間誤會。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "會議用途沒有回應更正。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "承認誤讀自然引出確認兩點半到場。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "acknowledge-room-change-time-misreading"
+  ],
+  "representationType": "correction-dialogue-gap",
+  "misconceptionTargets": [
+    "treat-number-as-room-without-syntax"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "not the meeting time 明確修正先前理解。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項承接更正，後句再確認正確安排。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

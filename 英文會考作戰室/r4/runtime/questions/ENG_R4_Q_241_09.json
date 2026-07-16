@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_241_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S241"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A paragraph moves from buses to public transport and then to ways to travel together. What happens to the topic?",
+  "options": [
+    "It becomes broader",
+    "It changes to food",
+    "It becomes one exact bus",
+    "It disappears"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "It becomes broader：public transport 與 shared travel 是 buses 的較廣概念。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "It changes to food：沒有食物詞鏈。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "It becomes one exact bus：發展方向由具體 bus 走向更廣，而非更窄。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "It disappears：概念仍被上位詞承接。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "track-topic-by-lexical-chain",
+    "recognize-broadening-chain"
+  ],
+  "representationType": "topic-development",
+  "misconceptionTargets": [
+    "treat-rewording-as-topic-loss"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「重複詞、同義改寫與上位概念形成的詞鏈」可推出 It becomes broader；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 It becomes broader 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

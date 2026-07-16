@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Meet me beside the ticket office at four.\nWhere should the reader go?",
+  "options": [
+    "To the bus stop",
+    "Beside the ticket office",
+    "Home at four",
+    "Inside a classroom"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "訊息沒有公車站。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "beside the ticket office 明確提供會合位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "four 是時刻，不是回家指示。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "也沒有教室資訊。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s220-locate-meeting-place-after-beside",
+    "map-location-question-to-prepositional-phrase"
+  ],
+  "representationType": "message-place-detail",
+  "misconceptionTargets": [
+    "answer-where-with-time"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "where 對應介系詞後的地點短語。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時刻和場所沒有混在同一欄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

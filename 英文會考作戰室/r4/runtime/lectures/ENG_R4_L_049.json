@@ -1,0 +1,132 @@
+{
+  "id": "ENG_R4_L_049",
+  "subject": "english",
+  "unitId": "ENG_R4_U07",
+  "skillId": "ENG_R4_S049",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S048"
+  ],
+  "objectives": [
+    "移除所有代名詞中的多餘撇號。",
+    "用 it is/has 測試 it's，用 who is/has 測試 who's。",
+    "區分名詞所有格規則與代名詞詞形。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U07_ENG_R4_S049_SEC_1",
+      "title": "所有代名詞不是名詞+'s",
+      "content": "mine、yours、his、hers、ours、theirs 都是完整詞形，不寫 your's、her's、our's、their's。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S049_SEC_2",
+      "title": "its 特別容易混淆",
+      "content": "its 表所有且修飾名詞：its tail；it's = it is/has：It's raining、It's been repaired。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S049_SEC_3",
+      "title": "whose 與 who's 同理",
+      "content": "whose 問所有關係；who's 展開為 who is/has。撇號代表省略字母，不代表所有。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S049_SEC_4",
+      "title": "展開測試最可靠",
+      "content": "把 it's 換成 it is/has，句子通順才用撇號；若需要所有關係，使用 its。不要套用一般名詞 's。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U07_ENG_R4_S049_EX_1",
+      "prompt": "The red bag is her's.",
+      "steps": [
+        "空格為獨立所有代名詞。",
+        "her 的獨立形式是 hers。",
+        "不加撇號。"
+      ],
+      "answer": "The red bag is hers.",
+      "why": "所有代名詞已完整。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S049_EX_2",
+      "prompt": "The bird moved ___ wings.",
+      "steps": [
+        "後接 wings。",
+        "擁有者為 it。",
+        "使用 its。"
+      ],
+      "answer": "its",
+      "why": "不是 it's。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S049_EX_3",
+      "prompt": "___ been at the door?",
+      "steps": [
+        "需要 Who has。",
+        "撇號標示省略。",
+        "選 Who's。"
+      ],
+      "answer": "Who's",
+      "why": "不是 Whose。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有關係一定有撇號。",
+      "whyWrong": "代名詞所有格多為獨立詞形。",
+      "correction": "名詞 's 規則不能套到 hers/theirs。"
+    },
+    {
+      "belief": "it's 看起來像所有格所以等於 its。",
+      "whyWrong": "it's 是縮寫。",
+      "correction": "用展開測試。"
+    },
+    {
+      "belief": "whose 因為表所有也應寫 who's。",
+      "whyWrong": "who's 的撇號表示省略。",
+      "correction": "問所有者用 whose。"
+    },
+    {
+      "belief": "撇號讓語氣更正式。",
+      "whyWrong": "撇號有語法功能，不是風格裝飾。",
+      "correction": "只在縮寫或名詞所有格規則需要時使用。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "theirs 是否有撇號？",
+      "answer": "沒有。",
+      "reason": "它是完整所有代名詞。"
+    },
+    {
+      "prompt": "it's 可展開為什麼？",
+      "answer": "it is 或 it has。",
+      "reason": "可用來檢查句意。"
+    },
+    {
+      "prompt": "問這是誰的用 whose 還是 who's？",
+      "answer": "whose。",
+      "reason": "詢問所有關係。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

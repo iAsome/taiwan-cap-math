@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_289_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S289"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Find a book that is nonfiction, under 200 pages, and in stock. A: History, 180, IN STOCK. B: Novel, 150, IN STOCK. C: Science, 240, IN STOCK.",
+  "options": [
+    "Novel",
+    "Science",
+    "Novel and Science",
+    "History"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Novel：fiction。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Science：頁數超過二百。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Novel and Science：各缺一條。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "History：History 為 nonfiction、180 頁且有庫存。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "filter-options-by-multiple-conditions",
+    "intersect-all-explicit-constraints"
+  ],
+  "representationType": "multi-condition-options",
+  "misconceptionTargets": [
+    "accept-option-that-meets-only-some-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「候選方案逐一通過時間、價格、資格與狀態等全部明示條件」可推出 History；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 History 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

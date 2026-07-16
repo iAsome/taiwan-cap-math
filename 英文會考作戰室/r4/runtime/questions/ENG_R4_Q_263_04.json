@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_263_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S263"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The path was blocked by a fallen tree; therefore, the hikers turned back. What does blocked mean?",
+  "options": [
+    "open only to hikers",
+    "not possible to pass",
+    "easy to follow",
+    "shorter than expected"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "open only to hikers：hikers 本人也 turned back。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "not possible to pass：turned back 是無法通過的結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "easy to follow：若 easy 不需回頭。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "shorter than expected：長度不能解釋 fallen tree 阻路。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-word-from-cause-effect",
+    "infer-minimal-cause-from-result"
+  ],
+  "representationType": "cause-effect-vocabulary",
+  "misconceptionTargets": [
+    "ignore-result-clue"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「陌生字所在原因與後句結果形成可驗證的事件鏈」可推出 not possible to pass；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 not possible to pass 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

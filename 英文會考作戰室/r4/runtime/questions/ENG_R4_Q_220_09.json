@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Ben, please take the art box to Ms. Wu before lunch.\nWho must carry the box?",
+  "options": [
+    "Ben",
+    "Ms. Wu",
+    "The art class",
+    "The lunch workers"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "句首被直接稱呼的 Ben 是執行者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Ms. Wu 是接收物品的人。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "art 只修飾箱子用途。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "lunch 提供期限，不是人物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s220-identify-addressed-person-as-agent",
+    "separate-agent-recipient-and-deadline"
+  ],
+  "representationType": "message-who-does-what",
+  "misconceptionTargets": [
+    "choose-person-after-to-as-agent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "稱呼、動作與接收人需分別定位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "時間詞沒有被誤判為工作人員。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "A student knows the reader is Mrs. Chen, the school nurse. Which opening is supported?",
+  "options": [
+    "Hi Doctor Wang,",
+    "Dear Miss Chen,",
+    "Dear Mrs. Chen,",
+    "Dear Sir,"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "職稱與姓氏都未由題目提供。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目明確是 Mrs.，不能換成 Miss。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "這個稱呼保留已知稱謂與姓氏。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "已知收件者時不必使用泛稱。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s221-match-nurse-recipient-title-exactly",
+    "avoid-title-generalization-by-occupation"
+  ],
+  "representationType": "email-greeting-context",
+  "misconceptionTargets": [
+    "substitute-occupation-or-wrong-title"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "已知關係不表示可以改寫對方正式稱謂。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案只使用題目提供的身分資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

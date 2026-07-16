@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_285_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S285"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Poster: Saturday river cleanup. Text message: See you at the river this Saturday. What is common?",
+  "options": [
+    "The river is closed all week.",
+    "The event is at the river on Saturday.",
+    "The event ends on Sunday.",
+    "Everyone receives boots."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The river is closed all week.：未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The event is at the river on Saturday.：兩份文件都含 river 與 Saturday。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The event ends on Sunday.：未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Everyone receives boots.：未提用品。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "find-cross-document-overlap",
+    "intersect-explicit-information"
+  ],
+  "representationType": "paired-documents",
+  "misconceptionTargets": [
+    "treat-one-document-detail-as-shared"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「兩份文件各自明示同一人物、地點、時間或規則」可推出 The event is at the river on Saturday.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The event is at the river on Saturday. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

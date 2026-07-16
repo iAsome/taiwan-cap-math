@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_037_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which list contains only irregular plurals?",
+  "options": [
+    "boys, keys, toys",
+    "mice, feet, children",
+    "books, chairs, cups",
+    "boxes, dishes, watches"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "boys, keys, toys：三者都是母音+y 加 -s。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "mice, feet, children：三者都不是一般加 -s/-es。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "books, chairs, cups：三者都是規則 -s。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "boxes, dishes, watches：三者都是規則 -es。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "retrieve-irregular-plural-forms",
+    "retrieve-lexical-plural-and-confirm-with-agreement"
+  ],
+  "representationType": "irregular-plural-retrieval",
+  "misconceptionTargets": [
+    "regularize-or-double-mark-irregular-plural"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「辨識不規則變形、零變化與外來複數，並以數量詞和句法一致性確認詞形，而非自造規則。」可推出 mice, feet, children；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 mice, feet, children 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

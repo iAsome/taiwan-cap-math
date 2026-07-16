@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_289_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S289"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Select a route that avoids stairs, is under 30 minutes, and remains open. A: 25 min LIFT OPEN. B: 20 min STAIRS OPEN. C: 35 min LIFT OPEN.",
+  "options": [
+    "Route C",
+    "Routes B and C",
+    "Route A",
+    "Route B"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Route C：超過三十分鐘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Routes B and C：各不合一項。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Route A：A 有 lift、25 分鐘且 OPEN。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Route B：需走 stairs。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "filter-options-by-multiple-conditions",
+    "intersect-all-explicit-constraints"
+  ],
+  "representationType": "multi-condition-options",
+  "misconceptionTargets": [
+    "accept-option-that-meets-only-some-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「候選方案逐一通過時間、價格、資格與狀態等全部明示條件」可推出 Route A；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Route A 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

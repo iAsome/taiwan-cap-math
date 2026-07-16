@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Can you help on Friday or Saturday?\nReply: Yes, I can help.\nWhy is the reply incomplete?",
+  "options": [
+    "It has no reason for helping.",
+    "It does not name the work.",
+    "It is written in English.",
+    "It does not choose a day."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原訊息沒有要求理由。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "工作內容不需要由收件者重述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "使用英文不是資訊缺漏。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "yes 回答意願，但 Friday 或 Saturday 尚未選定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s224-diagnose-ambiguous-yes-with-day-choice",
+    "separate-acceptance-from-option-selection"
+  ],
+  "representationType": "message-reply-ambiguity",
+  "misconceptionTargets": [
+    "accept-general-yes-for-multiple-choice-request"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答應一件事不一定回答了所有限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "二選一日期仍需明確決定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

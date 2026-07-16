@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_218_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "From: Lily\nTo: Eric\nSubject: New bus time\nWhich part gives the topic before the full message is read?",
+  "options": [
+    "From: Lily",
+    "To: Eric",
+    "Subject: New bus time",
+    "The missing signature"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "寄件欄只說明誰寫信。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "收件欄只指出信件送給誰。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "主旨用 New bus time 概括話題。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目沒有顯示缺少署名，也不能靠缺漏提供主題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s218-choose-topic-bearing-header",
+    "compare-functions-of-three-email-fields"
+  ],
+  "representationType": "email-header-comparison",
+  "misconceptionTargets": [
+    "use-nearest-header-with-name"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "三種標頭欄位各自回答不同問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "主題線索來自 Subject 而非人物欄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

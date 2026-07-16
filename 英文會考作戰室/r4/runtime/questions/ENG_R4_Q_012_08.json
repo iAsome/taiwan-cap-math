@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_012_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Teacher: 'Do you need more time?' You do. How can you answer?",
+  "options": [
+    "At the clock.",
+    "Yes, please.",
+    "No, I needed less tomorrow.",
+    "Time needs me."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "At the clock.：未答需要。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Yes, please.：接受更多時間的自然簡答。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "No, I needed less tomorrow.：語意時態錯。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Time needs me.：角色錯。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "respond-to-rollcall-and-class-question",
+    "match-prompt-type-and-auxiliary"
+  ],
+  "representationType": "rollcall-classroom-response",
+  "misconceptionTargets": [
+    "use-yes-no-for-information-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「點名、是非問句與簡短資訊問句各要求人物一致且功能充分的口語回應」可推出 Yes, please.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Yes, please. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

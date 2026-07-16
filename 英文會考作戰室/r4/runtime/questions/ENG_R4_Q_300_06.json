@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_300_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S300"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A text says the shaded box stayed cooler. At noon: shaded 24°C; unshaded 31°C. What is the key comparison?",
+  "options": [
+    "The shaded box was 7°C warmer.",
+    "Both boxes were 31°C.",
+    "Shade removed all heat.",
+    "The shaded box was 7°C cooler."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The shaded box was 7°C warmer.：方向顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Both boxes were 31°C.：shaded 是 24。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Shade removed all heat.：仍有 24°C。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "The shaded box was 7°C cooler.：31 減 24 為 7°C。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-explanation-and-data",
+    "test-text-claim-against-all-values"
+  ],
+  "representationType": "explanation-plus-data",
+  "misconceptionTargets": [
+    "infer-trend-from-one-number-or-overstate-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「文字提出的關係需由數據方向、差值與單位共同驗證」可推出 The shaded box was 7°C cooler.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 The shaded box was 7°C cooler. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

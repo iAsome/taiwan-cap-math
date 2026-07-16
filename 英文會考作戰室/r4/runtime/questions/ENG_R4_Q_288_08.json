@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_288_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S288"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Lunch is served at noon. B: No food will be served today. What relation exists?",
+  "options": [
+    "A describes breakfast.",
+    "The documents conflict about today's lunch service.",
+    "B only changes the menu.",
+    "They agree on noon service."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A describes breakfast.：A 明說 Lunch。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The documents conflict about today's lunch service.：同一天一說供餐、一說無餐。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B only changes the menu.：B 是 no food。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "They agree on noon service.：B 否定供餐。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-document-relation",
+    "test-same-proposition-for-complement-or-conflict"
+  ],
+  "representationType": "document-relation",
+  "misconceptionTargets": [
+    "label-any-difference-as-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「比較兩份文件對同一命題的內容，判定補充、重複或直接衝突」可推出 The documents conflict about today's lunch service.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The documents conflict about today's lunch service. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

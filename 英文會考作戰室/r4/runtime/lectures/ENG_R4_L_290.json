@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_290",
+  "subject": "english",
+  "unitId": "ENG_R4_U43",
+  "skillId": "ENG_R4_S290",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S289"
+  ],
+  "objectives": [
+    "把結論拆成所需證據。",
+    "判斷哪份文件直接支持而非只相關。",
+    "在沒有支持時選擇 neither。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S290_SEC_1",
+      "title": "先改寫要證明的句子",
+      "content": "要證明 free，需要價格或 no charge；只說 open 不足。把結論中的關鍵命題圈出。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S290_SEC_2",
+      "title": "直接支持優先",
+      "content": "A 明說 closes at six，B 只列地址，關門時間由 A 支持。相關主題不等於證據。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S290_SEC_3",
+      "title": "可能需要兩份共同支持",
+      "content": "若結論含地點與時間，A 給地點、B 給時間，答案可能是 both together。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S290_SEC_4",
+      "title": "允許 neither",
+      "content": "兩份都未提結論時，不用常識補。選 neither 是證據紀律，不是漏答。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S290_EX_1",
+      "prompt": "Claim: free. A: No charge. B: Open daily.",
+      "steps": [
+        "claim 需要價格。",
+        "A 明說 no charge。",
+        "B 只談時間。"
+      ],
+      "answer": "Document A",
+      "why": "只有 A 直接支持。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S290_EX_2",
+      "prompt": "Claim: at Room 3 at 4. A: Room 3. B: Starts at 4.",
+      "steps": [
+        "拆成地點與時間。",
+        "A 支持地點。",
+        "B 支持時間。"
+      ],
+      "answer": "Both together",
+      "why": "完整結論需兩份。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S290_EX_3",
+      "prompt": "Claim: best in town. A: address. B: price.",
+      "steps": [
+        "best 是評價。",
+        "A、B 都無比較。",
+        "不加個人意見。"
+      ],
+      "answer": "Neither",
+      "why": "相關資料不足以證明最佳。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "談同一主題就能支持。",
+      "whyWrong": "相關不等於命題相同。",
+      "correction": "對照結論關鍵詞。"
+    },
+    {
+      "belief": "一定要選 A 或 B。",
+      "whyWrong": "可能 both 或 neither。",
+      "correction": "依證據數量決定。"
+    },
+    {
+      "belief": "價格低就支持 best。",
+      "whyWrong": "best 需明確標準與比較。",
+      "correction": "避免價值跳躍。"
+    },
+    {
+      "belief": "兩份各支持一半時任選一份。",
+      "whyWrong": "單份不足完整結論。",
+      "correction": "選 both together。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Open 能直接證明 free 嗎？",
+      "answer": "不能",
+      "reason": "開放與價格不同。"
+    },
+    {
+      "prompt": "A 給地點、B 給時間，完整結論由誰支持？",
+      "answer": "兩份共同",
+      "reason": "各提供必要一半。"
+    },
+    {
+      "prompt": "都未提結論時選什麼？",
+      "answer": "neither",
+      "reason": "不可補常識。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

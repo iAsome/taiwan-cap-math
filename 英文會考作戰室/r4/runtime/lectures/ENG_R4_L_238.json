@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_238",
+  "subject": "english",
+  "unitId": "ENG_R4_U35",
+  "skillId": "ENG_R4_S238",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S237"
+  ],
+  "objectives": [
+    "辨認 this、that 概括前句事件的用法。",
+    "區分單一名詞指涉與整句命題指涉。",
+    "利用評價、結果與距離觀點確認唯一內容。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S238_SEC_1",
+      "title": "指物還是指事情",
+      "content": "this book 中 this 直接限定名詞；This was unexpected 中 this 可獨立概括前句。先看後面是否有名詞，沒有時再測試整句事件。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S238_SEC_2",
+      "title": "把前句變成一個名詞片語",
+      "content": "若前句是 The train arrived early，可暫時改成 the train's early arrival，再讀 This helped us。能順接 help 的是提早到達事件。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S238_SEC_3",
+      "title": "that 可帶距離或回顧",
+      "content": "對話中的 that 常回指對方剛說的話；敘事中的 this 常承接作者正聚焦的事件。距離色彩是輔助，核心仍是後句語意。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S238_SEC_4",
+      "title": "避免只抓最後一字",
+      "content": "前句尾端名詞常是誘餌。後文若評論是否公平、令人驚訝或造成結果，通常需要一整個行動或事實，而不是尾端物件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S238_EX_1",
+      "prompt": "The team shared its food with visitors. This made the coach proud.",
+      "steps": [
+        "This 後無名詞。",
+        "made proud 需要一個行為原因。",
+        "概括分享食物事件。"
+      ],
+      "answer": "This = the team's sharing food.",
+      "why": "分享行動而非 food 這個名詞造成教練驕傲。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S238_EX_2",
+      "prompt": "'I finished the work early.' 'That is good news.'",
+      "steps": [
+        "That 位於回應中。",
+        "它回指對方整句話。",
+        "good news 評論完成工作。"
+      ],
+      "answer": "That = finishing the work early.",
+      "why": "對話者把剛聽到的事視為好消息。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S238_EX_3",
+      "prompt": "Nora chose this chair.",
+      "steps": [
+        "this 後直接有 chair。",
+        "它是限定詞。",
+        "不是獨立概括前句。"
+      ],
+      "answer": "this chair",
+      "why": "this 與名詞組成同一名詞片語。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "this 一定只指最近名詞。",
+      "whyWrong": "獨立 this 常概括整個事件。",
+      "correction": "檢查後文是否在評論行動或事實。"
+    },
+    {
+      "belief": "that 一定表示很遠的物品。",
+      "whyWrong": "對話中也常回指剛說的內容。",
+      "correction": "依語境判定空間距離或篇章回指。"
+    },
+    {
+      "belief": "this 後有名詞也要找前句事件。",
+      "whyWrong": "this book 類形式直接限定名詞。",
+      "correction": "先辨認 this 的句法位置。"
+    },
+    {
+      "belief": "只要重複前句最後一字就能解釋。",
+      "whyWrong": "後句評價可能要求完整命題。",
+      "correction": "把候選放入後句，檢查能否造成該結果。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "This was unfair 中 this 後有被限定名詞嗎？",
+      "answer": "沒有",
+      "reason": "this 在此獨立作主詞。"
+    },
+    {
+      "prompt": "前句事件如何方便地測試為先行內容？",
+      "answer": "改寫成事件名詞片語",
+      "reason": "再看它能否承接後句評價。"
+    },
+    {
+      "prompt": "That sounds great 常回指什麼？",
+      "answer": "對方剛說的內容",
+      "reason": "sounds great 是對整個消息的評價。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

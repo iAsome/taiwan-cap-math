@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Can you meet Tuesday or Wednesday? Where should we meet?\nReply: Wednesday is good for me.\nWhat is missing from the reply?",
+  "options": [
+    "The meeting place",
+    "The chosen day",
+    "The writer's name",
+    "The month"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "回覆選了 Wednesday，卻沒有回答會面地點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "星期三已清楚提供。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原訊息沒有要求署名。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "月份也不是問題的一部分。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s224-find-unanswered-meeting-place",
+    "map-original-questions-to-reply-coverage"
+  ],
+  "representationType": "message-reply-gap",
+  "misconceptionTargets": [
+    "mark-already-answered-day-as-missing"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐問核對可看出第二問未回覆。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "缺漏判斷只針對原訊息真正要求的資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_241",
+  "subject": "english",
+  "unitId": "ENG_R4_U35",
+  "skillId": "ENG_R4_S241",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S240"
+  ],
+  "objectives": [
+    "以重複關鍵詞辨認段落持續主題。",
+    "把同義詞與較概括說法連回同一概念。",
+    "排除只出現一次但不承接後文的醒目細節。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S241_SEC_1",
+      "title": "找詞鏈而非單字",
+      "content": "作者會避免每句重複同一字，而用 bike、this vehicle、the two-wheeled ride 等方式承接。將指向同一概念的字圈成一條鏈，比只數單字可靠。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S241_SEC_2",
+      "title": "主題通常跨多句",
+      "content": "一個地名或數字可能只出現一次。真正主題會在多句中被重述、解釋、比較或以代名詞承接。看哪個概念控制最多句子。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S241_SEC_3",
+      "title": "同義不必完全相等",
+      "content": "help 與 support、buy 與 purchase 在特定上下文可承接；但近義字仍有用法差異。要以該段事件確認它們是否真的談同一事。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S241_SEC_4",
+      "title": "用主題句驗證",
+      "content": "試著用一個短名詞片語概括整段。若某句完全無法放入，就檢查它是例子、結果，還是主題其實選錯。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S241_EX_1",
+      "prompt": "The town opened a bike path. The new route keeps riders away from cars. This safer way is popular.",
+      "steps": [
+        "bike path 首次介紹。",
+        "new route 改寫同一設施。",
+        "safer way 再次承接。"
+      ],
+      "answer": "the bike path",
+      "why": "三個不同表達形成同一詞鏈。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S241_EX_2",
+      "prompt": "Mia joined a food drive. The project collected rice. This activity helped families.",
+      "steps": [
+        "food drive 是活動。",
+        "project 與 activity 都可重述。",
+        "收集食物與幫助家庭延伸同一主題。"
+      ],
+      "answer": "the food drive",
+      "why": "同義上位詞讓主題跨句延續。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S241_EX_3",
+      "prompt": "A paragraph mentions 8:00 once but repeats buses, drivers, and routes.",
+      "steps": [
+        "8:00 是單一細節。",
+        "交通詞群跨多句。",
+        "主題應涵蓋整段。"
+      ],
+      "answer": "the bus service",
+      "why": "醒目數字不是主題；多句詞鏈才是。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "重複次數最多的完全相同單字一定是主題。",
+      "whyWrong": "同義詞與代名詞也會承接。",
+      "correction": "把相同概念的不同表達合併計算。"
+    },
+    {
+      "belief": "第一句的每個名詞都同樣重要。",
+      "whyWrong": "後文只會持續發展其中核心概念。",
+      "correction": "追蹤哪個名詞有後續詞鏈。"
+    },
+    {
+      "belief": "數字很具體，所以是主題。",
+      "whyWrong": "數字常只是支持細節。",
+      "correction": "用能涵蓋所有句子的概念作主題。"
+    },
+    {
+      "belief": "近義字在任何文章都完全相同。",
+      "whyWrong": "詞義取決於語境。",
+      "correction": "確認兩字是否承接同一人物、物件或行動。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "route 可在交通段落中承接 path 嗎？",
+      "answer": "可以，若兩者指同一路線",
+      "reason": "要由上下文確認同一對象。"
+    },
+    {
+      "prompt": "只出現一次的日期通常是主題還是細節？",
+      "answer": "細節",
+      "reason": "除非整段都在發展該日期。"
+    },
+    {
+      "prompt": "主題短語應能涵蓋多少句？",
+      "answer": "整個段落",
+      "reason": "包括例子與結果都要能連回它。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

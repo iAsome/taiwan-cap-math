@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_262_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S262"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The guide asked for durable shoes, such as strong boots that can be used on many long walks. What does durable mean?",
+  "options": [
+    "brightly colored",
+    "cheap to replace",
+    "able to last through much use",
+    "worn only once"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "brightly colored：顏色未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "cheap to replace：價格與替換未定義耐用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "able to last through much use：strong、many long walks 共同指耐用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "worn only once：與 many walks 相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-word-from-example-or-contrast",
+    "generalize-examples-or-invert-contrast"
+  ],
+  "representationType": "example-contrast-vocabulary",
+  "misconceptionTargets": [
+    "copy-one-example"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「for example、such as 或 but/unlike 建立的例證與對比」可推出 able to last through much use；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 able to last through much use 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

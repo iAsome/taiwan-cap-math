@@ -1,0 +1,142 @@
+{
+  "id": "ENG_R4_L_303",
+  "subject": "english",
+  "unitId": "ENG_R4_U46",
+  "skillId": "ENG_R4_S303",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S302"
+  ],
+  "objectives": [
+    "辨認作者要讀者接受的主張。",
+    "區分主張與支持理由。",
+    "檢查理由是否直接回應主張。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S303_SEC_1",
+      "title": "主張可以被同意或反對",
+      "content": "should、best、more useful 等常標示可爭論立場。單純日期或數量通常是背景事實。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S303_SEC_2",
+      "title": "理由回答 why",
+      "content": "把 why 放在主張後，能直接回答的句子才是理由。because 只是常見標記，沒有標記也可有理由。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S303_SEC_3",
+      "title": "證據與理由層級",
+      "content": "reason 可能是 safety；evidence 可能是 accident count。兩者都需連回 claim。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S303_SEC_4",
+      "title": "不要把例外當主張",
+      "content": "however 後的限制可能修正強度，不一定推翻作者主要立場。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U46_ENG_R4_S303_EX_1",
+      "prompt": "Schools should plant trees because shade lowers heat.",
+      "steps": [
+        "should 標 claim。",
+        "because 後為 reason。",
+        "熱與植樹連結。"
+      ],
+      "answer": "claim: plant trees; reason: shade lowers heat",
+      "why": "兩端功能清楚。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S303_EX_2",
+      "prompt": "The hall has 80 seats. Therefore, reserve early.",
+      "steps": [
+        "80 seats 是事實。",
+        "reserve early 是建議主張。",
+        "有限容量支撐。"
+      ],
+      "answer": "Reserve early is the claim.",
+      "why": "不只看第一句。"
+    },
+    {
+      "id": "ENG_R4_U46_ENG_R4_S303_EX_3",
+      "prompt": "I prefer buses; they cost less on this route.",
+      "steps": [
+        "prefer 是立場。",
+        "cost less 是理由。",
+        "限 this route。"
+      ],
+      "answer": "The price supports the preference.",
+      "why": "理由範圍有限。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第一句一定是主張。",
+      "whyWrong": "可能先給背景。",
+      "correction": "找可爭論立場。"
+    },
+    {
+      "belief": "because 後是主張。",
+      "whyWrong": "通常是理由。",
+      "correction": "問 why。"
+    },
+    {
+      "belief": "任何相關事實都支持。",
+      "whyWrong": "需直接連回立場。",
+      "correction": "說出推理橋。"
+    },
+    {
+      "belief": "作者承認限制就沒有主張。",
+      "whyWrong": "限制可使主張更精確。",
+      "correction": "保留範圍。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "should 常提示什麼？",
+      "answer": "主張或建議",
+      "reason": "可被同意反對。"
+    },
+    {
+      "prompt": "理由回答哪一問？",
+      "answer": "為什麼",
+      "reason": "解釋主張。"
+    },
+    {
+      "prompt": "相關但無連結的事實可當支持嗎？",
+      "answer": "不可",
+      "reason": "需回應主張。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

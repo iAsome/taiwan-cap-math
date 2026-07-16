@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_236_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S236"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Kim needed a quiet room for an online test. Room A was empty but had no internet. Room B had internet, and no one was using it. She chose ___ .",
+  "options": [
+    "Room B",
+    "Room A",
+    "the hall during a concert",
+    "the outdoor market"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Room B：Room B 同時滿足安靜可用與有網路兩項要求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Room A：Room A 缺少線上測驗必要的網路。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the hall during a concert：音樂會中的 hall 不安靜。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the outdoor market：戶外市場既非指定房間也通常不安靜。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-cross-sentence-evidence",
+    "satisfy-all-room-requirements"
+  ],
+  "representationType": "constraint-integration",
+  "misconceptionTargets": [
+    "choose-first-matching-constraint"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「至少兩句共同限制出的唯一內容」可推出 Room B；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 Room B 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

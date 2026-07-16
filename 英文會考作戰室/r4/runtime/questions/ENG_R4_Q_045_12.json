@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_045_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which correction fixes 'mine jacket is beside her's'?",
+  "options": [
+    "Me jacket is beside she.",
+    "My jacket is beside hers.",
+    "Mine jacket is beside her.",
+    "My jacket is beside her's."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Me jacket is beside she.：兩邊格位錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "My jacket is beside hers.：名詞前用 My，獨立位置用 hers。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Mine jacket is beside her.：第一空仍錯且 her 變受格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "My jacket is beside her's.：所有代名詞不加撇號。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "distinguish-possessive-adjective-and-pronoun",
+    "select-dependent-or-independent-possessive-form"
+  ],
+  "representationType": "possessive-adjective-pronoun",
+  "misconceptionTargets": [
+    "choose-by-emphasis-or-add-noun-after-possessive-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依後方是否緊接名詞，在 my/your/his/her/its/our/their 與 mine/yours/his/hers/ours/theirs 間選擇，避免重複名詞。」可推出 My jacket is beside hers.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 My jacket is beside hers. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

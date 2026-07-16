@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_249_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S249"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Mia left her bike at the shop. The worker replaced the broken chain and called her at noon. What repair did the worker make?",
+  "options": [
+    "He changed both wheels",
+    "He put in a new chain",
+    "He fixed the phone",
+    "He painted the bike"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "He changed both wheels：原文明確是 chain，不是 wheels。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "He put in a new chain：replaced the broken chain 即換上新鏈條。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "He fixed the phone：called her 不等於修 phone。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "He painted the bike：原文沒有 paint。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-explicit-paraphrase",
+    "match-question-wording-to-source"
+  ],
+  "representationType": "explicit-paraphrase",
+  "misconceptionTargets": [
+    "require-exact-word-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「題目關鍵概念與原文同義改寫指向同一資訊」可推出 He put in a new chain；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 He put in a new chain 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

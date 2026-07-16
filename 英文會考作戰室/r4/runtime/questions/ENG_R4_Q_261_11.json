@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_261_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S261"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The medicine may cause drowsiness, a state of feeling sleepy. What is drowsiness?",
+  "options": [
+    "strong pain",
+    "better hearing",
+    "sleepiness",
+    "hunger"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "strong pain：原文沒有 pain。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "better hearing：感官未提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "sleepiness：逗點後 a state of feeling sleepy 是定義。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "hunger：沒有 food 或 hunger 線索。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "infer-word-from-definition",
+    "replace-word-with-definition"
+  ],
+  "representationType": "same-sentence-definition",
+  "misconceptionTargets": [
+    "choose-topic-related-meaning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「同句的 is、means、or、that is 等定義訊號」可推出 sleepiness；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 sleepiness 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

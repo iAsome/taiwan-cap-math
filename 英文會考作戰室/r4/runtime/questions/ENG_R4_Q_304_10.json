@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_304_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S304"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "The river reached 3.1 meters at noon, which was a frightening sight. What is the opinion portion?",
+  "options": [
+    "the river reached",
+    "3.1 meters",
+    "at noon",
+    "it was a frightening sight"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the river reached：事件可觀察。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "3.1 meters：可測數值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "at noon：可查時間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "it was a frightening sight：frightening 是感受評價。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "distinguish-fact-and-opinion",
+    "test-verifiability-and-evaluative-language"
+  ],
+  "representationType": "fact-opinion",
+  "misconceptionTargets": [
+    "classify-by-agreement-or-source-prestige"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「可由公共資料或觀察核對的陳述是事實；依價值標準或偏好的判斷是意見」可推出 it was a frightening sight；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 it was a frightening sight 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

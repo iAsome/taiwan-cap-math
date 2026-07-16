@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_251_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S251"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Text: The town planted fifty trees last spring; forty-seven are still growing. Which statement is explicit?",
+  "options": [
+    "The town planted the most trees in the country",
+    "Three of the trees are no longer growing",
+    "The three trees died from heat",
+    "This spring will have more trees"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The town planted the most trees in the country：沒有全國比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Three of the trees are no longer growing：50 減 47 得 3，完全由明示數量推出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The three trees died from heat：原因 heat 未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "This spring will have more trees：未提供本春計畫。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "separate-explicit-from-added-information",
+    "verify-every-part-of-choice"
+  ],
+  "representationType": "explicit-versus-added",
+  "misconceptionTargets": [
+    "accept-plausible-addition"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「選項每一部分都能由原文字句直接支持」可推出 Three of the trees are no longer growing；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Three of the trees are no longer growing 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

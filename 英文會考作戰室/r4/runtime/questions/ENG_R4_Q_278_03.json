@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_278_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S278"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A text opens by asking why some city streets are cooler. It then explains tree shade and water leaving leaves. Which closing sentence best completes the text?",
+  "options": [
+    "Many streets have names from old people.",
+    "Cars can be different colors.",
+    "Trees can cool streets by blocking sun and releasing water.",
+    "The writer planted a tree on a birthday."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "街名未在解釋中出現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "車色與街道溫度機制無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "結尾整合 shade 與 leaf water 兩項已說明原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "個人種樹故事是未鋪陳的新主題。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s278-q03-select-supported-tree-cooling-close",
+    "synthesize-two-explanations-into-answer"
+  ],
+  "representationType": "closing-sentence-selection",
+  "misconceptionTargets": [
+    "end-with-related-tree-anecdote"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結尾應回答開頭 why 問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項回收兩個中段機制而未擴張到所有街道。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

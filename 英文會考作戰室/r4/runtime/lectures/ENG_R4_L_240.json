@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_240",
+  "subject": "english",
+  "unitId": "ENG_R4_U35",
+  "skillId": "ENG_R4_S240",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S239"
+  ],
+  "objectives": [
+    "辨認 however、therefore、for example 等標記功能。",
+    "用標記詞預測下一句角色。",
+    "跨句核對關係方向並排除錯誤標記。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S240_SEC_1",
+      "title": "標記詞是路標",
+      "content": "however 通常預告轉折，therefore 或 as a result 引出結果，for example 引出前述概念的具體例子。先看到路標，就先預測後句要完成哪種工作。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S240_SEC_2",
+      "title": "看清方向",
+      "content": "because 引原因，therefore 引結果；for example 後面較具體，前面較一般。若方向顛倒，即使兩句內容相關也不能選。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S240_SEC_3",
+      "title": "標點提供邊界",
+      "content": "句首副詞標記常以逗點隔開，例如 However, ...。連接兩個完整句時要注意標點，但考題核心仍是邏輯，不應只靠逗點猜。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S240_SEC_4",
+      "title": "標記詞不能創造不存在的關係",
+      "content": "兩句若只在同一主題下增加資訊，also 可能比 therefore 合理。必須先證明前句確實造成、對比或舉例後句。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S240_EX_1",
+      "prompt": "The walk is easy. For example, even young children can finish it.",
+      "steps": [
+        "前句提出一般評價 easy。",
+        "後句是具體證據。",
+        "for example 功能吻合。"
+      ],
+      "answer": "example",
+      "why": "兒童也能走完是『容易』的具體例子。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S240_EX_2",
+      "prompt": "The shop was closed. Therefore, we came back later.",
+      "steps": [
+        "closed 是情況。",
+        "come back later 是應對結果。",
+        "therefore 引出結果。"
+      ],
+      "answer": "result",
+      "why": "後句由前句直接導出。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S240_EX_3",
+      "prompt": "The room is small. However, it feels comfortable.",
+      "steps": [
+        "small 常帶負面限制。",
+        "comfortable 是正面感受。",
+        "however 標示落差。"
+      ],
+      "answer": "contrast",
+      "why": "兩項評價方向不同。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有先後順序就能用 therefore。",
+      "whyWrong": "先後不一定是因果。",
+      "correction": "確認前句是否真的造成後句。"
+    },
+    {
+      "belief": "for example 前後一樣具體也可以。",
+      "whyWrong": "例證通常由一般概念走向具體案例。",
+      "correction": "找出上位說法與實例。"
+    },
+    {
+      "belief": "however 等於 because。",
+      "whyWrong": "however 表轉折，不表原因。",
+      "correction": "先比較兩句方向是否相反。"
+    },
+    {
+      "belief": "看到逗點就選句首標記。",
+      "whyWrong": "多個標記都能帶逗點。",
+      "correction": "用句意關係決定。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "therefore 後通常是原因還是結果？",
+      "answer": "結果",
+      "reason": "它表示由前文推出的後果。"
+    },
+    {
+      "prompt": "for instance 的功能是什麼？",
+      "answer": "舉例",
+      "reason": "它把一般說法具體化。"
+    },
+    {
+      "prompt": "however 預告兩句關係如何？",
+      "answer": "轉折",
+      "reason": "後句與前句形成預期落差。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

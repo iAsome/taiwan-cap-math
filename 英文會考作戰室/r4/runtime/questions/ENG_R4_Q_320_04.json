@@ -1,0 +1,141 @@
+{
+  "id": "ENG_R4_Q_320_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S320"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "You hear: A: 'The red jacket is cheaper.' B: 'But it isn't waterproof.' A: 'We need one for the rain, so let's take the black jacket.' What is the decision based on?",
+  "options": [
+    "avoiding all jackets",
+    "water protection",
+    "choosing the cheapest item only",
+    "the color matching a bus"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "avoiding all jackets：相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "water protection：need for rain 與 waterproof 決定 black。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "choosing the cheapest item only：反而排除 cheaper red。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the color matching a bus：未提。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "integrate-multiturn-problem-decision",
+    "track-proposals-eliminations-constraints-and-agreement"
+  ],
+  "representationType": "listening-multiturn-decision",
+  "misconceptionTargets": [
+    "select-first-proposal-before-final-agreement"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「多輪對話中的初始問題、被排除方案、限制與明確同意共同決定最後選擇」可推出 water protection；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 water protection 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

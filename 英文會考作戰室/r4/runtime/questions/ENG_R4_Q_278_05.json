@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_278_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S278"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Paragraph 1 describes a dark unused lot. Paragraph 2 tells how neighbors cleaned it and added seats. Paragraph 3 describes children reading there today. What does Paragraph 2 do?",
+  "options": [
+    "It shows the change from the old problem to the present use.",
+    "It introduces a different neighborhood.",
+    "It proves every child likes reading.",
+    "It gives the final date of the lot sale."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "清理與加座位把舊空地轉成今日閱讀空間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三段都在同一個 lot。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第三段有兒童閱讀，但不能證明每位兒童喜歡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文本沒有出售日期。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s278-q05-label-transformation-middle-paragraph",
+    "bridge-before-and-after-states"
+  ],
+  "representationType": "middle-paragraph-role",
+  "misconceptionTargets": [
+    "summarize-only-present-scene"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "中段是舊狀態與新用途之間的轉換橋梁。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項描述功能，不把方法誤當最終結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

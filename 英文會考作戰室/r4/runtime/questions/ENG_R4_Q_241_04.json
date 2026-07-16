@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_241_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S241"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The text says 'older people,' later 'these adults,' and finally 'the group.' Who remains the topic?",
+  "options": [
+    "the older people",
+    "children",
+    "three different groups",
+    "the writer"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the older people：these adults 與 the group 都承接 older people。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "children：沒有 children 線索。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "three different groups：指示詞 these 顯示承接而非新群體。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the writer：writer 未成為 group 的成員。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-topic-by-lexical-chain",
+    "trace-group-rewording"
+  ],
+  "representationType": "participant-chain",
+  "misconceptionTargets": [
+    "assume-new-noun-means-new-group"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「重複詞、同義改寫與上位概念形成的詞鏈」可推出 the older people；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 the older people 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

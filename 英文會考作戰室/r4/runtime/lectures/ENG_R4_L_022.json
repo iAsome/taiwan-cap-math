@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_022",
+  "subject": "english",
+  "unitId": "ENG_R4_U04",
+  "skillId": "ENG_R4_S022",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S021"
+  ],
+  "objectives": [
+    "分辨 I、you、he、she、it、we、they 的指稱特徵。",
+    "以語法與語意排除不可能先行詞。",
+    "發現歧義時用名詞改寫而非猜測。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S022_SEC_1",
+      "title": "代名詞需要先行詞",
+      "content": "he 與 she 通常指人，it 常指單一事物，they 可指複數人事物。先標記每個候選名詞的數與類型。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S022_SEC_2",
+      "title": "最近不等於一定正確",
+      "content": "最近名詞只是線索，仍要通過語意檢查。The cup is by Leo because he washed it 中 he 指 Leo，it 指 cup。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S022_SEC_3",
+      "title": "主格與受格也提供證據",
+      "content": "He called Mina 與 Mina called him 的人物角色不同。代名詞的位置決定它是動作者或承受者。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S022_SEC_4",
+      "title": "兩個候選都合理就是歧義",
+      "content": "When Ana met Lily, she smiled 中 she 可能指兩人。若文本無其他線索，應承認不明並重複姓名修正。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U04_ENG_R4_S022_EX_1",
+      "prompt": "The dog chased the ball until it stopped.",
+      "steps": [
+        "it 是單數。",
+        "dog 與 ball 都可為單數。",
+        "stopped 與被追逐的 ball 最相容。"
+      ],
+      "answer": "it refers to the ball",
+      "why": "語意角色使球停止最連貫。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S022_EX_2",
+      "prompt": "Ben thanked Mia because she helped him.",
+      "steps": [
+        "she 是女性主格。",
+        "him 是男性受格。",
+        "依人稱與角色配對。"
+      ],
+      "answer": "she is Mia; him is Ben",
+      "why": "性別與語法位置共同支持。"
+    },
+    {
+      "id": "ENG_R4_U04_ENG_R4_S022_EX_3",
+      "prompt": "Eva spoke to June after she arrived.",
+      "steps": [
+        "兩位都是女性。",
+        "she 可與任一人相容。",
+        "沒有額外到達線索。"
+      ],
+      "answer": "the reference is unclear",
+      "why": "不能在證據不足時硬選一人。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "代名詞永遠指最近名詞。",
+      "whyWrong": "最近名詞可能在數、性別或語意上不合。",
+      "correction": "依序檢查特徵、角色與上下文。"
+    },
+    {
+      "belief": "it 只能指無生命物。",
+      "whyWrong": "it 也可指動物或情況，視語境而定。",
+      "correction": "以文本的分類與說話者用法判斷。"
+    },
+    {
+      "belief": "him 與 he 可以互換。",
+      "whyWrong": "he 是主格，him 是受格。",
+      "correction": "先看代名詞在句中的語法位置。"
+    },
+    {
+      "belief": "有兩個合理候選時選第一個。",
+      "whyWrong": "這只是猜測，無法建立唯一證據。",
+      "correction": "標示歧義並以姓名重寫。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "They 通常要求先行詞有何特徵？",
+      "answer": "複數。",
+      "reason": "數的一致性先排除單數候選。"
+    },
+    {
+      "prompt": "him 在句中通常是什麼角色？",
+      "answer": "受詞。",
+      "reason": "受格形式不能直接作一般主詞。"
+    },
+    {
+      "prompt": "兩個先行詞都合理時應怎麼做？",
+      "answer": "承認歧義並改寫。",
+      "reason": "不能以位置規則假裝唯一。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

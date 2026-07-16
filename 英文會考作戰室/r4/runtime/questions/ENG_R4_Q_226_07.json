@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_226_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S226"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: How much are the four notebooks together?\nB: ___",
+  "options": [
+    "Four notebooks.",
+    "On the second shelf.",
+    "They are twelve dollars in all.",
+    "They are for my classmates."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "重複數量沒有提供總價。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "書架位置不回答金額。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "十二元總計直接回答 together 的價格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "用途不是費用。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "calculate-response-type-for-total-price"
+  ],
+  "representationType": "shopping-total-question",
+  "misconceptionTargets": [
+    "repeat-item-count-instead-of-cost"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "How much 在購物語境中要求金額。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "in all 對應四本合計而非單價。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

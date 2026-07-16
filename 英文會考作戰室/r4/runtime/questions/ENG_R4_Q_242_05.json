@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_242_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S242"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora found a photo in an old box. It showed her father as a child. What showed the father?",
+  "options": [
+    "the photo",
+    "the box",
+    "Nora",
+    "the finding"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the photo：photo 能 show 圖像內容；box 只是容器。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the box：box 不呈現照片中的人物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nora：Nora 是觀看者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the finding：finding 是事件，不會直接顯示影像。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "reject-near-but-incompatible-antecedent",
+    "select-content-over-near-container"
+  ],
+  "representationType": "container-content-reference",
+  "misconceptionTargets": [
+    "choose-nearest-container"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「候選與後句動作、數量及因果的相容性」可推出 the photo；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 the photo 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

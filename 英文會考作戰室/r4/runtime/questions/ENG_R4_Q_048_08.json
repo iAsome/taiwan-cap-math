@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_048_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which rewrite preserves 'the wheels of the bus'?",
+  "options": [
+    "the bus wheels's",
+    "the bus's wheels",
+    "the wheels' bus",
+    "the buses wheel's"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the bus wheels's：標記放在被擁有物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "the bus's wheels：bus 作整體，wheels 為其部分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the wheels' bus：方向顛倒。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the buses wheel's：數與標記錯誤。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "use-of-phrase-for-relations",
+    "identify-focus-and-source-as-part-content-measure-or-relation"
+  ],
+  "representationType": "of-phrase-relation",
+  "misconceptionTargets": [
+    "treat-every-of-as-ownership-or-reverse-x-of-y"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「以 of 片語表部分—整體、內容、度量或無生命名詞關係，並在自然度與清晰度需要時和 's 所有格互換。」可推出 the bus's wheels；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 the bus's wheels 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

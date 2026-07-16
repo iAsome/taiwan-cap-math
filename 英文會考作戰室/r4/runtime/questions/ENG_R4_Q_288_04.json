@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_288_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S288"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Pickup is at Gate A. B: Updated pickup: use Gate C instead. Which interpretation is best?",
+  "options": [
+    "A replaces B.",
+    "B replaces A's location with Gate C.",
+    "Both gates must be used.",
+    "Gate C is closed."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A replaces B.：版本方向相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "B replaces A's location with Gate C.：updated 與 instead 明示更新。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Both gates must be used.：instead 表取代。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Gate C is closed.：未提。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-document-relation",
+    "test-same-proposition-for-complement-or-conflict"
+  ],
+  "representationType": "document-relation",
+  "misconceptionTargets": [
+    "label-any-difference-as-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「比較兩份文件對同一命題的內容，判定補充、重複或直接衝突」可推出 B replaces A's location with Gate C.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 B replaces A's location with Gate C. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_018_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "Nora enjoys making small cakes. Which statement is supported?",
+  "options": [
+    "Nora is baking at this moment.",
+    "Nora sells cakes every morning.",
+    "Nora dislikes all food.",
+    "Baking is one of Nora's interests."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nora is baking at this moment.：沒有現在進行的時間線索。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nora sells cakes every morning.：句中沒有銷售資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Nora dislikes all food.：與 enjoys 相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Baking is one of Nora's interests.：enjoys making 表示烘焙是她的興趣。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "describe-interests-and-daily-activities",
+    "separate-preference-activity-and-frequency"
+  ],
+  "representationType": "interest-routine-description",
+  "misconceptionTargets": [
+    "infer-current-action-from-general-preference"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「以喜好動詞、活動名稱與頻率線索描述興趣或日常活動，並區分喜好與實際作息。」可推出 Baking is one of Nora's interests.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Baking is one of Nora's interests. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

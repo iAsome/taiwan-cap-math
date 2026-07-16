@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_236_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S236"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A museum ticket is free for children under twelve. Leo is twelve, and his sister is ten. According to the rule, ___ .",
+  "options": [
+    "only his sister gets a free ticket",
+    "both children get free tickets",
+    "only Leo gets a free ticket",
+    "neither child may enter"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "only his sister gets a free ticket：under twelve 不包含十二歲；十歲的妹妹符合免費條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "both children get free tickets：Leo 正好十二，不符合 under twelve。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "only Leo gets a free ticket：免費條件不是年滿十二，Leo 不符合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "neither child may enter：規則只談票價，沒有禁止入場。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "integrate-cross-sentence-evidence",
+    "apply-exclusive-age-limit"
+  ],
+  "representationType": "rule-boundary",
+  "misconceptionTargets": [
+    "treat-under-as-at-most"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「至少兩句共同限制出的唯一內容」可推出 only his sister gets a free ticket；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 only his sister gets a free ticket 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

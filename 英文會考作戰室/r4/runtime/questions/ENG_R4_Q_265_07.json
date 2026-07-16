@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_265_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S265"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "run: (1) move quickly on foot; (2) manage or operate. 'Nora runs the community cafe.' Which sense fits?",
+  "options": [
+    "both",
+    "neither",
+    "sense 2",
+    "sense 1"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "both：本文只啟動 manage 義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "neither：manage the cafe 可替換。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "sense 2：run 帶 cafe 受詞表示經營。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "sense 1：不能在 cafe 這個受詞上跑步。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-contextual-dictionary-sense",
+    "choose-one-sense-by-context"
+  ],
+  "representationType": "dictionary-sense-selection",
+  "misconceptionTargets": [
+    "always-use-first-dictionary-sense"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「字典多個義項中只有一項符合本文詞性、搭配與事件」可推出 sense 2；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 sense 2 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

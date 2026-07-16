@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: Bring the red bag to Room 5 before noon.\nReply: I will take the red bag to Room 5 at eleven.\nHow well does the reply match?",
+  "options": [
+    "It changes the bag color.",
+    "It covers every required detail.",
+    "It uses the wrong room.",
+    "It is too late."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "red bag 在兩段中一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "物品、地點和十一點早於中午都符合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Room 5 沒有被改動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "十一點仍在中午以前。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s224-verify-complete-task-correspondence",
+    "interpret-eleven-as-within-noon-deadline"
+  ],
+  "representationType": "message-reply-full-match",
+  "misconceptionTargets": [
+    "treat-nonidentical-time-wording-as-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完整對應需檢查物品、地點與期限。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不同時間表達仍可符合 before noon。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

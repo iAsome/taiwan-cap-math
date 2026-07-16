@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_044_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "The bikes belong to several girls. Which phrase is correct?",
+  "options": [
+    "the girls' bikes",
+    "the girl's bikes",
+    "the girls's bikes",
+    "the girlss' bikes"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the girls' bikes：girls 是規則複數，撇號放 s 後。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the girl's bikes：表示一位女孩。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the girls's bikes：規則複數後不再加 s。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the girlss' bikes：重複複數 s。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "form-regular-plural-possessive",
+    "form-owner-number-before-placing-apostrophe"
+  ],
+  "representationType": "plural-noun-possessive",
+  "misconceptionTargets": [
+    "append-s-after-every-apostrophe-or-link-owner-number-to-item-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「先建立規則複數，再將撇號放在複數 s 後，並以一位或多位擁有者的語意區分 student's 與 students'。」可推出 the girls' bikes；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 the girls' bikes 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

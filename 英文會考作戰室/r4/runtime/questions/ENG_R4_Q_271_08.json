@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_271_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S271"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence is an opinion even if reasons follow it?",
+  "options": [
+    "Three classes use it each week",
+    "The school ought to keep the garden",
+    "The garden covers 200 square meters",
+    "Students grew tomatoes last year"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Three classes use it each week：頻率可查。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The school ought to keep the garden：ought to 是價值主張。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The garden covers 200 square meters：面積可測。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Students grew tomatoes last year：事件可查。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "distinguish-fact-and-opinion",
+    "classify-verifiable-versus-evaluative"
+  ],
+  "representationType": "fact-opinion",
+  "misconceptionTargets": [
+    "treat-number-as-automatic-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「陳述能否由可查資料驗證，或包含個人評價與偏好」可推出 The school ought to keep the garden；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The school ought to keep the garden 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

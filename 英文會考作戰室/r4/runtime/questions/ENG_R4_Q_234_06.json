@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_234_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S234"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A red bus passed a blue car. It was moving slowly, so the car soon went ahead. What does It refer to?",
+  "options": [
+    "the bus",
+    "the car",
+    "the road",
+    "the color blue"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "the bus：後句說 car 因此超前，表示原本慢的是 bus。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the car：若 car 慢，就不能由此推出 car 超前。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the road：road 不是 moving 的車輛主體。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the color blue：顏色 blue 不能移動。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-pronoun-reference",
+    "infer-referent-from-result"
+  ],
+  "representationType": "causal-reference",
+  "misconceptionTargets": [
+    "always-pick-nearest-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「代名詞前的名詞與單複數角色」可推出 the bus；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一放回原文，只有 the bus 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

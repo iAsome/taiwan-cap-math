@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Would you like rice or noodles, and can you arrive by noon?\nWhich reply gives both decisions?",
+  "options": [
+    "Noodles, and I can arrive before noon.",
+    "Rice is grown on farms.",
+    "Noon is twelve o'clock.",
+    "I will eat after I arrive."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "選擇麵並回答能在中午前到達。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是食物知識，未做選擇。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只解釋時間，沒有承諾或餐點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "到達後吃飯仍沒說吃什麼或能否準時。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s222-combine-meal-choice-and-arrival-deadline",
+    "answer-preference-and-feasibility-together"
+  ],
+  "representationType": "message-reply-dual-decision",
+  "misconceptionTargets": [
+    "respond-with-definition-instead-of-choice"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩項問題分別需要餐點與到達答覆。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "before noon 符合 by noon 的期限。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

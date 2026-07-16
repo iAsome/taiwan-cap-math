@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_253",
+  "subject": "english",
+  "unitId": "ENG_R4_U37",
+  "skillId": "ENG_R4_S253",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "prerequisites": [
+    "ENG_R4_S252"
+  ],
+  "objectives": [
+    "將清單項目轉成固定欄位比較。",
+    "先套用硬限制，再比較偏好。",
+    "在多個候選中保留同時符合全部條件者。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S253_SEC_1",
+      "title": "把題目變成檢查表",
+      "content": "例如 under $100、after 4、for beginners 各是一欄。每個選項逐欄打勾或叉，不要靠整體印象。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S253_SEC_2",
+      "title": "硬限制先處理",
+      "content": "must、only、closed、not allowed 先篩掉不合者；cheaper、closer、preferred 等偏好只在剩餘候選中比較。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S253_SEC_3",
+      "title": "邊界字要精確",
+      "content": "under 12 不含 12，by Friday 通常含 Friday，after 3 不含正好 3。將邊界寫成簡單比較可防止直覺誤判。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S253_SEC_4",
+      "title": "允許答案是無或多個",
+      "content": "若題目問 Which options，可能不只一個；若問 Which one，仍可能由資料得出 none。不要為了湊一項而放寬限制。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S253_EX_1",
+      "prompt": "Need: under $50, open Sunday. A: $45 closed Sunday. B: $55 open Sunday.",
+      "steps": [
+        "A 價格合但日期不合。",
+        "B 日期合但價格不合。",
+        "沒有交集。"
+      ],
+      "answer": "Neither",
+      "why": "不能把兩項各自的優點拼成一個候選。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S253_EX_2",
+      "prompt": "Rule: age under 12. Leo is 12.",
+      "steps": [
+        "under 表嚴格小於。",
+        "12 不小於 12。",
+        "排除。"
+      ],
+      "answer": "Leo does not qualify.",
+      "why": "under 12 不等於 12 or under。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S253_EX_3",
+      "prompt": "Need: 20 seats, projector. Room A: 25/no projector. Room B: 20/projector.",
+      "steps": [
+        "先檢查容量。",
+        "再檢查設備。",
+        "B 兩欄皆合。"
+      ],
+      "answer": "Room B",
+      "why": "A 的容量優勢不能抵消設備缺少。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "候選符合大部分條件就可以。",
+      "whyWrong": "硬限制要求全部通過。",
+      "correction": "逐欄核對交集。"
+    },
+    {
+      "belief": "under 與 at most 相同。",
+      "whyWrong": "at most 含邊界，under 不含。",
+      "correction": "將字詞改成數學比較。"
+    },
+    {
+      "belief": "較便宜一定優先。",
+      "whyWrong": "便宜不能抵消日期或功能不合。",
+      "correction": "先硬限制、後偏好。"
+    },
+    {
+      "belief": "清單題一定有一個答案。",
+      "whyWrong": "資料可能顯示 none 或 multiple。",
+      "correction": "忠於檢查結果。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "by May 5 通常包含 May 5 嗎？",
+      "answer": "包含",
+      "reason": "它表示不晚於該日。"
+    },
+    {
+      "prompt": "符合三項中的兩項可通過 must 條件嗎？",
+      "answer": "不可",
+      "reason": "must 條件需全部符合。"
+    },
+    {
+      "prompt": "偏好應在何時比較？",
+      "answer": "硬限制篩選後",
+      "reason": "先確保候選可行。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_280",
+  "subject": "english",
+  "unitId": "ENG_R4_U42",
+  "skillId": "ENG_R4_S280",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S279"
+  ],
+  "objectives": [
+    "沿同一列整合品項、價格與標籤。",
+    "辨認 VEGAN、NUT-FREE 與 CONTAINS 等限制詞。",
+    "計算簡單合計並檢查預算。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S280_SEC_1",
+      "title": "限制先於喜好",
+      "content": "若題目說 must avoid nuts，先刪除 CONTAINS NUTS，再比較價格。不能因最便宜而忽略安全標籤。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S280_SEC_2",
+      "title": "價格要跟著品項",
+      "content": "ITEM、PRICE、LABEL 是同一列資訊。沿表格橫讀，避免把便宜價格接到另一個品項。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S280_SEC_3",
+      "title": "合計逐項列式",
+      "content": "買兩樣時先寫每項價格，再做加法。若 under $8，答案必須小於八，不包含八。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S280_SEC_4",
+      "title": "沒有標示就不自行保證",
+      "content": "VEGAN 不自動等於 NUT-FREE；表格只支持明示標籤。對未標示條件保留未知。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S280_EX_1",
+      "prompt": "Fruit Cup $3 NUT-FREE",
+      "steps": [
+        "先找 nut 限制。",
+        "同列確認 NUT-FREE。",
+        "再讀價格。"
+      ],
+      "answer": "The $3 Fruit Cup fits.",
+      "why": "限制與價格均由同列提供。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S280_EX_2",
+      "prompt": "Tea $2 + Sandwich $5",
+      "steps": [
+        "列出 2 與 5。",
+        "相加得 7。",
+        "比較 $8 預算。"
+      ],
+      "answer": "$7, so it is under $8.",
+      "why": "under 表嚴格小於。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S280_EX_3",
+      "prompt": "Pie $5 CONTAINS NUTS",
+      "steps": [
+        "看到 contains。",
+        "確認受限成分 nuts。",
+        "即使在預算內也排除。"
+      ],
+      "answer": "Do not choose the pie for a nut allergy.",
+      "why": "安全限制優先。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到熟悉單字就選，不核對列欄。",
+      "whyWrong": "同一單字可能出現在不同區塊。",
+      "correction": "先定位區塊、欄名與同一列。"
+    },
+    {
+      "belief": "圖中最大圖形一定是答案。",
+      "whyWrong": "尺寸可能只是版面，數值與標籤才有意義。",
+      "correction": "讀數字、單位與圖例。"
+    },
+    {
+      "belief": "附註可以忽略。",
+      "whyWrong": "附註常改變資格、時間或可用方式。",
+      "correction": "最後把 NOTE 套回候選答案。"
+    },
+    {
+      "belief": "不同列的資訊可以自由拼接。",
+      "whyWrong": "跨列拼接會製造不存在的組合。",
+      "correction": "用手指沿同一列橫向核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "CONTAINS NUTS 對堅果過敏者表示什麼？",
+      "answer": "不可選",
+      "reason": "標籤明示含有過敏原。"
+    },
+    {
+      "prompt": "under $5 包含 $5 嗎？",
+      "answer": "不包含",
+      "reason": "under 是嚴格小於。"
+    },
+    {
+      "prompt": "VEGAN 一定代表無堅果嗎？",
+      "answer": "不一定",
+      "reason": "需另有 NUT-FREE 資訊。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

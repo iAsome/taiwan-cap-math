@@ -1,0 +1,149 @@
+{
+  "id": "ENG_R4_L_S227",
+  "subject": "english",
+  "unitId": "ENG_R4_U33",
+  "skillId": "ENG_R4_S227",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S226"
+  ],
+  "objectives": [
+    "能在多輪對話中建立人物、物品、時間與地點的對應。",
+    "能依代名詞與動作鏈更新資訊，不把早先狀態當成最後狀態。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S227_SEC_01",
+      "title": "建立小型資訊表",
+      "content": "對話出現多人多物時，可在心中記 who、what、where、when。Amy 把 map 給 Ben，Ben 把 it 放進 bag，it 就是 map。若只記最後一個名詞 bag，容易誤以為 Ben 把袋子放進袋子。人物和物品要分欄追蹤。"
+    },
+    {
+      "id": "ENG_R4_L_S227_SEC_02",
+      "title": "每個代名詞都要有條件",
+      "content": "he、she 需要人物與性別一致，they 可能指複數人物或物品，it 通常指單一物品或事件。this afternoon 與 there 也需對應已提到的時間和地點。先找形式可配的候選，再以動作是否合理排除。"
+    },
+    {
+      "id": "ENG_R4_L_S227_SEC_03",
+      "title": "狀態會隨動作改變",
+      "content": "The key was on the desk. Leo picked it up and gave it to Mia. 最後持有者是 Mia，不再是桌子或 Leo。閱讀時用動詞更新位置、所有者和計畫，題目若問 now、finally 或 after that，必須回答最新狀態。"
+    },
+    {
+      "id": "ENG_R4_L_S227_SEC_04",
+      "title": "相同名稱仍要分清角色",
+      "content": "對話可能同時談 meeting place、bus stop 和 home。Mia asks Leo to meet at the stop，說話者是 Mia，接收要求的人是 Leo，碰面地點是 stop。不要因某個名字離答案最近，就忽略句法角色。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S227_EX_01",
+      "prompt": "Nina gave Omar a note. He read it and put it under the cup.",
+      "steps": [
+        "He 對應 Omar。",
+        "第一個 it 指 note。",
+        "第二個 it 仍是被放置的 note。"
+      ],
+      "answer": "The note is under the cup.",
+      "why": "動作鏈從交付、閱讀到放置都作用在 note；cup 只是最後的位置參照，不會變成被閱讀的物品。"
+    },
+    {
+      "id": "ENG_R4_L_S227_EX_02",
+      "prompt": "Ben will meet Kim at the station at four. She will bring the tickets.",
+      "steps": [
+        "兩人是 Ben 與 Kim。",
+        "she 只能對應 Kim。",
+        "at four 修飾碰面時間。"
+      ],
+      "answer": "Kim will bring the tickets to the four o'clock meeting.",
+      "why": "代名詞與人物資訊共同確定攜票者，station 與 four 則分別提供地點和時間。"
+    },
+    {
+      "id": "ENG_R4_L_S227_EX_03",
+      "prompt": "The blue box was in Room 5. David moved it to Room 8 before lunch.",
+      "steps": [
+        "辨認初始位置 Room 5。",
+        "moved 表示位置改變。",
+        "before lunch 是移動完成時間。"
+      ],
+      "answer": "Before lunch, the blue box was moved to Room 8.",
+      "why": "題目問更新後狀態時要採用 Room 8；Room 5 只描述移動以前，不能當成目前位置。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "代名詞一定指前面最近的名詞。",
+      "whyWrong": "最近名詞可能在單複數或語意角色上不合。",
+      "correction": "同時核對形式、人物身分與動作合理性。"
+    },
+    {
+      "belief": "物品最初的位置就是整段對話的答案。",
+      "whyWrong": "後續動詞可能已改變位置。",
+      "correction": "看到 take、give、move、leave 時更新狀態。"
+    },
+    {
+      "belief": "每次出現 it 都一定指同一個東西。",
+      "whyWrong": "新句可能引入另一個單數對象。",
+      "correction": "逐次回到當句動詞確認受詞。"
+    },
+    {
+      "belief": "人物姓名出現在句末就一定是動作者。",
+      "whyWrong": "句末姓名也可能是接受者或碰面對象。",
+      "correction": "依主詞、動詞、受詞的位置判定角色。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Leo gave the key to Mia 之後，誰持有鑰匙？",
+      "answer": "Mia",
+      "reason": "give A to B 使 B 成為接收者。"
+    },
+    {
+      "prompt": "The cup was on the table, but Ben put it in the sink. 最後在哪裡？",
+      "answer": "水槽裡",
+      "reason": "but 後的移動更新了杯子位置。"
+    },
+    {
+      "prompt": "they 指向單一人物是否合理？",
+      "answer": "通常不合理",
+      "reason": "在本單元的基本對話中 they 用來承接複數對象。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  }
+}

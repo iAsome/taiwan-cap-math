@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: The office is closed today. Please come tomorrow after ten.\nReply: I will come today at eleven.\nWhich summary is accurate?",
+  "options": [
+    "The reply follows the time and day.",
+    "Only the hour is wrong.",
+    "The office opens today after ten.",
+    "The hour fits, but the day conflicts with the message."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "today 與 tomorrow 不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十一點符合 after ten，錯的是日期。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "原文說今天關閉。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "十一點在十點後，但回覆選了不能前往的今天。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s224-evaluate-partly-matching-day-and-hour",
+    "separate-day-conflict-from-valid-hour-range"
+  ],
+  "representationType": "message-reply-partial-conflict",
+  "misconceptionTargets": [
+    "mark-whole-time-expression-correct-from-hour-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "複合時間資訊可出現一部分符合、一部分衝突。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案精確指出日期問題，沒有誤判時刻。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

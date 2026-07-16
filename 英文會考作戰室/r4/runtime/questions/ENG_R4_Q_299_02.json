@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_299_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S299"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Which order is logical for making salt crystals? A. Leave the solution to cool. B. Dissolve salt in hot water. C. Observe crystals later.",
+  "options": [
+    "A → C → B",
+    "C → B → A",
+    "B → C → A",
+    "B → A → C"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A → C → B：尚未有 solution。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "C → B → A：先觀察無結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "B → C → A：冷卻前不應先觀察 later crystals。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "B → A → C：先溶解，再冷卻，最後觀察晶體。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "sequence-scientific-procedure",
+    "order-state-dependent-and-controlled-steps"
+  ],
+  "representationType": "science-procedure",
+  "misconceptionTargets": [
+    "sequence-by-sentence-length-or-guess"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「步驟的材料狀態、代名詞回指與時間標記形成不可顛倒的程序」可推出 B → A → C；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 B → A → C 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

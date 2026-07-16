@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_259_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S259"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora will be outside on Friday. Which preparation best matches the weather card?",
+  "options": [
+    "Bring snow shoes for deep snow",
+    "Take a raincoat and prepare for cool wind",
+    "Wear only summer clothes for 35°C",
+    "Expect a dry, windless day"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Bring snow shoes for deep snow：图没有 snow。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Take a raincoat and prepare for cool wind：图同时给雨、14°C、WINDY。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Wear only summer clothes for 35°C：温度与图相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Expect a dry, windless day：雨图与 WINDY 相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-from-visual-and-text",
+    "combine-figure-and-written-condition"
+  ],
+  "representationType": "visual-text-inference",
+  "misconceptionTargets": [
+    "answer-from-one-modality"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「圖形提供的非文字關係與題幹條件合併後得到唯一情境」可推出 Take a raincoat and prepare for cool wind；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Take a raincoat and prepare for cool wind 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_259_04"
+  ]
+}

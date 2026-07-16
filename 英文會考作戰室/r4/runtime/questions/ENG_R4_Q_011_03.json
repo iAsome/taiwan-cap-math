@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_011_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "A new word is unclear. Which question asks for its meaning?",
+  "options": [
+    "Where did the word sit?",
+    "Could the word close the door?",
+    "What does this word mean?",
+    "How many words are blue?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Where did the word sit?：不自然。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Could the word close the door?：無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "What does this word mean?：直接詢問詞義。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "How many words are blue?：無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "request-repetition-clarification",
+    "match-understanding-gap-to-polite-repair"
+  ],
+  "representationType": "classroom-clarification-request",
+  "misconceptionTargets": [
+    "use-generic-repeat-request-for-every-gap"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「禮貌問句明確指出沒聽清、不了解詞義或需要例子，回應修復特定理解缺口」可推出 What does this word mean?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 What does this word mean? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

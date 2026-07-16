@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_271",
+  "subject": "english",
+  "unitId": "ENG_R4_U40",
+  "skillId": "ENG_R4_S271",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S270"
+  ],
+  "objectives": [
+    "辨認可由日期、數量、紀錄驗證的事實陳述。",
+    "辨認 best、beautiful、should 等評價與建議。",
+    "分開『有證據的意見』與『事實』。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S271_SEC_1",
+      "title": "事實可查真偽",
+      "content": "The park opened in 2024 可查紀錄，無論目前是否知道答案，它仍是事實型陳述。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S271_SEC_2",
+      "title": "意見含評價標準",
+      "content": "The park is beautiful 取決於觀點；should build more seats 是建議。best、boring、too expensive 常帶主觀標準。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S271_SEC_3",
+      "title": "數字不自動變事實",
+      "content": "Only 20 people came 是可查數量；20 is a disappointing number 加入 disappointing 評價，整句含意見。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S271_SEC_4",
+      "title": "有理由的意見仍是意見",
+      "content": "作者可用數據支持 should，但規範性結論仍需價值判斷。分類看句子功能，不看它是否合理。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S271_EX_1",
+      "prompt": "The room has 30 seats.",
+      "steps": [
+        "座位可數。",
+        "可現場核對。",
+        "無評價。"
+      ],
+      "answer": "fact",
+      "why": "資料可能真或假，但型態可驗證。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S271_EX_2",
+      "prompt": "Thirty seats are far too few.",
+      "steps": [
+        "有數字。",
+        "too few 依需求判斷。",
+        "含 opinion。"
+      ],
+      "answer": "opinion",
+      "why": "數字不消除評價。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S271_EX_3",
+      "prompt": "The town should add a bus.",
+      "steps": [
+        "should 是建議。",
+        "需要價值與政策選擇。",
+        "非單純資料。"
+      ],
+      "answer": "opinion",
+      "why": "可有證據支持但仍是主張。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有數字就是事實。",
+      "whyWrong": "數字旁可加入評價。",
+      "correction": "找 best、too、should 等。"
+    },
+    {
+      "belief": "我同意的句子就是事實。",
+      "whyWrong": "同意不改變可驗證性。",
+      "correction": "依句子功能分類。"
+    },
+    {
+      "belief": "有證據支持就不再是意見。",
+      "whyWrong": "規範與評價仍是意見。",
+      "correction": "證據只提升可信度。"
+    },
+    {
+      "belief": "事實一定已被證明為真。",
+      "whyWrong": "題型分類看是否可客觀查驗。",
+      "correction": "不要混淆 truth 與 statement type。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "opened on May 3 是可驗證嗎？",
+      "answer": "是",
+      "reason": "可查紀錄。"
+    },
+    {
+      "prompt": "the best park 屬於哪類？",
+      "answer": "意見",
+      "reason": "best 需要評價標準。"
+    },
+    {
+      "prompt": "should 通常提示什麼？",
+      "answer": "建議或主張",
+      "reason": "屬 opinion。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

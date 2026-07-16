@@ -1,0 +1,190 @@
+{
+  "id": "ENG_R4_L_320",
+  "subject": "english",
+  "unitId": "ENG_R4_U48",
+  "skillId": "ENG_R4_S320",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "prerequisites": [
+    "ENG_R4_S319"
+  ],
+  "objectives": [
+    "追蹤問題與候選方案。",
+    "記錄方案被排除的原因。",
+    "由同意語與最後確認判斷決定。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S320_SEC_1",
+      "title": "建立方案表",
+      "content": "每出現一個方案寫 A/B，旁邊記 cost、time、open 等限制。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S320_SEC_2",
+      "title": "否定後劃掉",
+      "content": "too late、full、can't 會排除前案，不能因先聽到而保留。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S320_SEC_3",
+      "title": "同意語鎖定決定",
+      "content": "That works、Let's do that、Good, I'll book it 表方案定案。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S320_SEC_4",
+      "title": "問題與決定都要回答",
+      "content": "問 why chose 時需說被選方案如何解決原問題，而非只報名稱。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S320_EX_1",
+      "prompt": "A bus late; B train costs more; agree train",
+      "steps": [
+        "問題 time。",
+        "bus 排除。",
+        "接受 train。"
+      ],
+      "answer": "They choose train for time.",
+      "why": "最後同意覆蓋早案。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S320_EX_2",
+      "prompt": "Room A full; Room B at 4; That's fine",
+      "steps": [
+        "A 刪除。",
+        "B 可行。",
+        "同意詞鎖定。"
+      ],
+      "answer": "Room B at 4",
+      "why": "條件完整。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S320_EX_3",
+      "prompt": "Buy now? wait for sale? Need today",
+      "steps": [
+        "候選 wait。",
+        "限制 need today。",
+        "因此 buy now。"
+      ],
+      "answer": "buy now",
+      "why": "用限制解決決策。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "第一個方案就是答案。",
+      "whyWrong": "後文常排除。",
+      "correction": "維護方案表。"
+    },
+    {
+      "belief": "maybe 等於定案。",
+      "whyWrong": "仍是提議。",
+      "correction": "找同意語。"
+    },
+    {
+      "belief": "只聽最後一句不追原因。",
+      "whyWrong": "可能不知 why。",
+      "correction": "保留限制鏈。"
+    },
+    {
+      "belief": "被否定方案仍與答案並列。",
+      "whyWrong": "明確否定應刪除。",
+      "correction": "標 X。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "too late 對方案表示？",
+      "answer": "排除或不合",
+      "reason": "劃掉。"
+    },
+    {
+      "prompt": "That's fine 常表示？",
+      "answer": "接受前述方案",
+      "reason": "鎖定。"
+    },
+    {
+      "prompt": "問 why chose 需回答？",
+      "answer": "方案如何符合限制",
+      "reason": "不只名稱。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  }
+}

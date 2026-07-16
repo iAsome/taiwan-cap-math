@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_296_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S296"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "stimulusId": null,
+  "stem": "A puppy slipped through an open gate. Jay followed its muddy prints and found it beside the pond. Which summary avoids unnecessary detail?",
+  "options": [
+    "The puppy planned a dangerous adventure.",
+    "Jay used the puppy's tracks to find it after it escaped.",
+    "The gate was metal and the pond was blue.",
+    "Jay walked past three stones and two trees."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "The puppy planned a dangerous adventure.：加入動機。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Jay used the puppy's tracks to find it after it escaped.：保留逃走、追蹤、找回。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The gate was metal and the pond was blue.：非必要且 pond color 未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Jay walked past three stones and two trees.：未提供且堆細節。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "build-causal-story-summary",
+    "compress-problem-action-result-chain"
+  ],
+  "representationType": "causal-summary",
+  "misconceptionTargets": [
+    "list-details-without-causal-spine"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「摘要保留初始目標或問題、關鍵因果轉折與結果，刪除不影響因果鏈的細節」可推出 Jay used the puppy's tracks to find it after it escaped.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Jay used the puppy's tracks to find it after it escaped. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

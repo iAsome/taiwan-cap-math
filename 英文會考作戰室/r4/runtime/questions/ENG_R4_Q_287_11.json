@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_287_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S287"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Announcement: Children may join only sessions labeled FAMILY. Schedule: 1:00 FAMILY; 2:00 ADULT; 3:00 FULL. Which session can a child join?",
+  "options": [
+    "the 3:00 session",
+    "all three sessions",
+    "the 1:00 session",
+    "the 2:00 session"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "the 3:00 session：FULL。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "all three sessions：兩場不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "the 1:00 session：1:00 同列 FAMILY 且未滿。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the 2:00 session：標 ADULT。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "combine-announcement-and-schedule",
+    "apply-notice-constraint-to-schedule"
+  ],
+  "representationType": "announcement-plus-timetable",
+  "misconceptionTargets": [
+    "choose-schedule-row-without-announcement-rule"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「公告條件套入時刻表的時間、地點與狀態後判斷方案是否可行」可推出 the 1:00 session；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 the 1:00 session 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

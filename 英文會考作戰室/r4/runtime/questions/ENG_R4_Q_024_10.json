@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_024_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence correctly denies a past location?",
+  "options": [
+    "Leo did not at school yesterday.",
+    "Leo is not at school yesterday.",
+    "Leo were no at school yesterday.",
+    "Leo was not at school yesterday."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo did not at school yesterday.：缺少位置句需要的 be。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Leo is not at school yesterday.：現在 be 與過去時間不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Leo were no at school yesterday.：數與否定形式皆錯。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Leo was not at school yesterday.：was not 否定過去位置。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "form-be-affirmative-or-negative",
+    "preserve-subject-time-and-complement-while-changing-polarity"
+  ],
+  "representationType": "be-polarity",
+  "misconceptionTargets": [
+    "insert-do-or-mismatch-contraction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「依陳述是否肯定某狀態或否定某狀態，在正確 be 後加入 not，並保持縮寫與原意一致。」可推出 Leo was not at school yesterday.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Leo was not at school yesterday. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

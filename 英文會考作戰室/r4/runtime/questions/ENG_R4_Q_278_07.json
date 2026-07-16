@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_278_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S278"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Opening question: 'Can a shorter school day give students more rest without reducing learning time?' The text explains that lessons were shortened but practice time was added at home. Which fact must the conclusion consider?",
+  "options": [
+    "The school walls are white.",
+    "Some students carry blue bags.",
+    "Learning time includes both shorter lessons and added home practice.",
+    "The town has three other schools."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "牆色不影響開頭問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "書包顏色與休息或學習時間無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "結論必須把校內縮短與在家增加一起計算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "其他學校數量未回答此方案效果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s278-q07-identify-required-conclusion-factor",
+    "track-compensating-time-across-text"
+  ],
+  "representationType": "question-to-conclusion-link",
+  "misconceptionTargets": [
+    "answer-opening-question-from-one-side-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "開頭用 without 設定兩項需同時評估的條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項防止只看 school day 而漏掉轉移到家的時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

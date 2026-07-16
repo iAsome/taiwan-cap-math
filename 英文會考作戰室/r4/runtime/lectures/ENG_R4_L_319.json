@@ -1,0 +1,190 @@
+{
+  "id": "ENG_R4_L_319",
+  "subject": "english",
+  "unitId": "ENG_R4_U48",
+  "skillId": "ENG_R4_S319",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "prerequisites": [
+    "ENG_R4_S318"
+  ],
+  "objectives": [
+    "辨認廣播對象與場所。",
+    "抓取 must、do not、instead 等行動限制。",
+    "區分原因與實際指示。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S319_SEC_1",
+      "title": "先抓呼語",
+      "content": "Passengers、visitors、students 指定誰需行動。不是所有聽者都同樣受影響。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S319_SEC_2",
+      "title": "動詞是核心",
+      "content": "leave、wait、use Gate B 是要做；do not enter 是禁止。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S319_SEC_3",
+      "title": "更新詞取代舊路線",
+      "content": "instead、now、has moved 代表新指示優先。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S319_SEC_4",
+      "title": "原因不能取代行動",
+      "content": "because of repairs 解釋原因，真正答案仍是 use east door。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S319_EX_1",
+      "prompt": "Passengers for Bus 4, use Stop B.",
+      "steps": [
+        "對象 Bus 4。",
+        "動作 use。",
+        "地點 B。"
+      ],
+      "answer": "use Stop B",
+      "why": "完整指示。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S319_EX_2",
+      "prompt": "Do not enter; use side door instead.",
+      "steps": [
+        "禁止 front。",
+        "instead 新方案。",
+        "選 side door。"
+      ],
+      "answer": "use side door",
+      "why": "不是只回答 repairs。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S319_EX_3",
+      "prompt": "Due to rain, event moves inside.",
+      "steps": [
+        "原因 rain。",
+        "變更 moves。",
+        "行動 go inside。"
+      ],
+      "answer": "go indoors",
+      "why": "原因與指示分開。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "聽到地名就選。",
+      "whyWrong": "可能是被禁地點。",
+      "correction": "先看動詞否定。"
+    },
+    {
+      "belief": "原因就是行動。",
+      "whyWrong": "why 與 what to do 不同。",
+      "correction": "圈祈使動詞。"
+    },
+    {
+      "belief": "忽略 instead。",
+      "whyWrong": "會選舊方案。",
+      "correction": "更新詞優先。"
+    },
+    {
+      "belief": "廣播對所有人。",
+      "whyWrong": "常只限指定群體。",
+      "correction": "找呼語。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "instead 表什麼？",
+      "answer": "改用新方案",
+      "reason": "取代前述。"
+    },
+    {
+      "prompt": "because of 後通常是？",
+      "answer": "原因",
+      "reason": "不是行動本身。"
+    },
+    {
+      "prompt": "Passengers for Bus 4 限誰？",
+      "answer": "Bus 4 乘客",
+      "reason": "對象明示。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  }
+}

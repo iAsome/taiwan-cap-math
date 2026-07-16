@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_014_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Feedback says, 'Your examples do not support the claim.' What should be reviewed?",
+  "options": [
+    "whether claims have page numbers",
+    "how each example connects to the claim",
+    "the font color only",
+    "unrelated vocabulary lists"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "whether claims have page numbers：非核心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "how each example connects to the claim：回饋直接指 support relation。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the font color only：非邏輯缺口。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "unrelated vocabulary lists：範圍錯。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "organize-preview-review-from-task",
+    "align-task-deadline-error-and-evidence"
+  ],
+  "representationType": "preview-review-planning",
+  "misconceptionTargets": [
+    "equate-time-spent-or-rereading-with-mastery"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「課堂任務的目標、截止與錯誤回饋分別決定預習內容、練習重點與複習證據」可推出 how each example connects to the claim；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 how each example connects to the claim 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

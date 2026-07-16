@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_254_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S254"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "First, Mia cut the paper. Then she folded it. Finally, she wrote a name on it. What happened after the paper was cut?",
+  "options": [
+    "Mia folded it",
+    "She wrote a name",
+    "She bought the paper",
+    "She cut it again"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Mia folded it：then 直接標示 cut 後的下一步。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "She wrote a name：這是 finally 的較後一步，不是緊接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "She bought the paper：原文沒有購買。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "She cut it again：原文只說 first cut。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "answer-event-sequence",
+    "locate-relative-event-order"
+  ],
+  "representationType": "event-sequence",
+  "misconceptionTargets": [
+    "choose-final-event-instead-of-next"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「時間標記、代名詞與必要動作建立的事件先後」可推出 Mia folded it；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Mia folded it 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

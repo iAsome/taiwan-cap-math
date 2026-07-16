@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_010",
+  "subject": "english",
+  "unitId": "ENG_R4_U02",
+  "skillId": "ENG_R4_S010",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "prerequisites": [
+    "ENG_R4_S009"
+  ],
+  "objectives": [
+    "看懂 choose、complete、rewrite 等指示。",
+    "讀取數量與格式限制。",
+    "區分題目內容與操作語。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U02_ENG_R4_S010_SEC_1",
+      "title": "指示動詞不是文章內容",
+      "content": "Explain the reason 中 explain 是操作；reason 才是輸出內容。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S010_SEC_2",
+      "title": "數量詞是硬限制",
+      "content": "Write two examples 不能交一例或三例。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S010_SEC_3",
+      "title": "格式詞決定產出",
+      "content": "in a full sentence、in order、in the chart 會限制答案形式。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S010_SEC_4",
+      "title": "多個限制取交集",
+      "content": "Choose one and explain why 需選一項再給理由。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U02_ENG_R4_S010_EX_1",
+      "prompt": "Complete the chart.",
+      "steps": [
+        "動詞 complete。",
+        "目標 chart。",
+        "填缺格。"
+      ],
+      "answer": "fill missing chart information",
+      "why": "不是畫新圖。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S010_EX_2",
+      "prompt": "Rewrite in past tense.",
+      "steps": [
+        "rewrite。",
+        "形式 past tense。",
+        "意思保留。"
+      ],
+      "answer": "change tense, not event",
+      "why": "格式控制。"
+    },
+    {
+      "id": "ENG_R4_U02_ENG_R4_S010_EX_3",
+      "prompt": "Give two reasons.",
+      "steps": [
+        "輸出 reasons。",
+        "數量 two。",
+        "不只一個。"
+      ],
+      "answer": "two reasons",
+      "why": "硬限制。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把操作語當文章資訊。",
+      "whyWrong": "會答錯內容。",
+      "correction": "圈 task verb。"
+    },
+    {
+      "belief": "忽略數量。",
+      "whyWrong": "產出不合。",
+      "correction": "先標 one/two/all。"
+    },
+    {
+      "belief": "rewrite 等於抄原句。",
+      "whyWrong": "需依指定改寫。",
+      "correction": "核對格式。"
+    },
+    {
+      "belief": "choose and explain 只做 choose。",
+      "whyWrong": "漏理由。",
+      "correction": "拆兩產出。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "task verb 有何作用？",
+      "answer": "指定操作",
+      "reason": "如 choose/rewrite。"
+    },
+    {
+      "prompt": "in a full sentence 限制什麼？",
+      "answer": "答案格式",
+      "reason": "不能只寫單字。"
+    },
+    {
+      "prompt": "two 可交三項嗎？",
+      "answer": "不可",
+      "reason": "數量固定。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  }
+}

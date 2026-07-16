@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_268_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S268"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "To bike riders: The river path is closed after 6 p.m. Please use Green Street. Who needs this notice most?",
+  "options": [
+    "workers repairing every road",
+    "people planning to ride bikes on the river path",
+    "people swimming in the river",
+    "all drivers in town"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "workers repairing every road：通知是給使用者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "people planning to ride bikes on the river path：To bike riders、path 與 alternate street 精確限定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "people swimming in the river：不是 path riders。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "all drivers in town：範圍過廣且媒介不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-intended-audience",
+    "match-address-and-reader-action"
+  ],
+  "representationType": "intended-audience",
+  "misconceptionTargets": [
+    "confuse-mentioned-person-with-reader"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「稱呼、先備資訊、媒介與讀者可採取的行動」可推出 people planning to ride bikes on the river path；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 people planning to ride bikes on the river path 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

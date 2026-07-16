@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_270_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S270"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: Could you maybe check this answer once more? B: Sure. How does A sound?",
+  "options": [
+    "certain the answer is right",
+    "uninterested",
+    "polite and somewhat unsure",
+    "commanding and angry"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "certain the answer is right：要求再查顯示保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "uninterested：主動請求檢查。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "polite and somewhat unsure：Could、maybe、once more 是委婉請求與不確定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "commanding and angry：語氣非命令。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-speaker-emotion",
+    "combine-utterance-and-response"
+  ],
+  "representationType": "dialogue-emotion",
+  "misconceptionTargets": [
+    "judge-emotion-from-punctuation-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「語調標記、內容、標點與對方回應共同顯示的當下情緒」可推出 polite and somewhat unsure；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 polite and somewhat unsure 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

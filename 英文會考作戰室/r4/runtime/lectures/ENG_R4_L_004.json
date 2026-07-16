@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_004",
+  "subject": "english",
+  "unitId": "ENG_R4_U01",
+  "skillId": "ENG_R4_S004",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "prerequisites": [
+    "ENG_R4_S003"
+  ],
+  "objectives": [
+    "辨認 a/e/i/o/u 常見短母音。",
+    "依首中尾合成 CVC 字。",
+    "用意思與拼字檢查唯一答案。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S004_SEC_1",
+      "title": "三音滑讀",
+      "content": "cat 可分 /k/ /æ/ /t/，再連成 cat。不要停在逐音不合成。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S004_SEC_2",
+      "title": "中間字母決定短母音",
+      "content": "pin、pen、pan 只有中間母音不同，意思與聲音一起變。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S004_SEC_3",
+      "title": "拼讀需配合真實字",
+      "content": "規則幫解碼，但答案仍需是題目指定的常見字，不造不存在拼法。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S004_SEC_4",
+      "title": "例外留到後續",
+      "content": "本技能使用明確 CVC 例字，不宣稱所有單字都遵循同一規則。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S004_EX_1",
+      "prompt": "c-a-t",
+      "steps": [
+        "/k/。",
+        "/æ/。",
+        "/t/。"
+      ],
+      "answer": "cat",
+      "why": "三音合成。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S004_EX_2",
+      "prompt": "p-e-n",
+      "steps": [
+        "首 /p/。",
+        "短 e /e/。",
+        "尾 /n/。"
+      ],
+      "answer": "pen",
+      "why": "不選 pin。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S004_EX_3",
+      "prompt": "s-u-n",
+      "steps": [
+        "首 /s/。",
+        "短 u /ʌ/。",
+        "尾 /n/。"
+      ],
+      "answer": "sun",
+      "why": "以例字核對。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看首尾就能猜。",
+      "whyWrong": "中間母音區分詞。",
+      "correction": "必讀三音。"
+    },
+    {
+      "belief": "母音永遠念字母名稱。",
+      "whyWrong": "短母音不同。",
+      "correction": "看 CVC 位置。"
+    },
+    {
+      "belief": "逐音後不用合成。",
+      "whyWrong": "無法辨完整字。",
+      "correction": "滑讀連音。"
+    },
+    {
+      "belief": "規則適用所有英文詞。",
+      "whyWrong": "有例外與其他型。",
+      "correction": "限本題常見 CVC。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "CVC 中 V 在哪？",
+      "answer": "中間母音",
+      "reason": "決定核心音。"
+    },
+    {
+      "prompt": "pen 與 pin 差哪？",
+      "answer": "短 e 與短 i",
+      "reason": "中間音。"
+    },
+    {
+      "prompt": "逐音後還要做什麼？",
+      "answer": "合成完整字",
+      "reason": "確認意思。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  }
+}

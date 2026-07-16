@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_273_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S273"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "(A) At last, the kite rose above the trees. (B) First, Ken fixed the broken string. (C) Next, he waited for a strong wind. Which order tells the event correctly?",
+  "options": [
+    "A → B → C",
+    "B → C → A",
+    "C → A → B",
+    "B → A → C"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "風箏升起是結果，不能在修線以前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先修線、再等風、最後升起符合路標。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "先等風不能解釋之後才修斷線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "at last 應放在 next 事件之後。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u41-s273-q02-order-three-marked-events",
+    "align-first-next-at-last"
+  ],
+  "representationType": "sentence-order-set",
+  "misconceptionTargets": [
+    "place-at-last-first"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "三個明示時間詞建立唯一排列。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "事件必要關係也支持第二個選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

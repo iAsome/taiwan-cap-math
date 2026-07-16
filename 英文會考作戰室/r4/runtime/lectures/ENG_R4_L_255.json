@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_255",
+  "subject": "english",
+  "unitId": "ENG_R4_U38",
+  "skillId": "ENG_R4_S255",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S254"
+  ],
+  "objectives": [
+    "分別指出至少兩項明示線索。",
+    "合併線索推出最小充分結論。",
+    "排除只用一項線索或加入新故事的選項。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S255_SEC_1",
+      "title": "一項線索通常不夠",
+      "content": "推論題常刻意讓單句留下多種可能。把人物狀態、時間、物件或後續結果各列一項，再找共同交集。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S255_SEC_2",
+      "title": "用加法而非想像",
+      "content": "Clue 1 + Clue 2 應直接縮小答案，不應再加原文沒有的 Clue 3。推論是受約束的組合，不是自由創作。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S255_SEC_3",
+      "title": "選最小充分結論",
+      "content": "若文本只支持 Ben likely missed the bus，就不能升級成 he lost his job。答案強度應停在兩線索能證明的位置。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S255_SEC_4",
+      "title": "反向檢查",
+      "content": "選定後問：若答案為真，能同時解釋兩線索嗎？其餘選項各與哪一項衝突？"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S255_EX_1",
+      "prompt": "The lights were off. The door was locked during open hours.",
+      "steps": [
+        "open hours 排除正常關門。",
+        "lights off + locked。",
+        "最小推論為臨時未營業。"
+      ],
+      "answer": "The shop was probably not operating then.",
+      "why": "不能推知永久停業。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S255_EX_2",
+      "prompt": "Mia's shoes were wet. An umbrella dripped by the door.",
+      "steps": [
+        "wet shoes。",
+        "dripping umbrella。",
+        "共同支持外面下雨。"
+      ],
+      "answer": "It was likely raining.",
+      "why": "不需推風暴。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S255_EX_3",
+      "prompt": "The plate was empty. Ben asked for another bowl.",
+      "steps": [
+        "empty plate 表已吃完。",
+        "asks another 表仍想吃。",
+        "推出仍餓。"
+      ],
+      "answer": "Ben was probably still hungry.",
+      "why": "不能推出他沒吃午餐的具體原因。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到一項線索就選。",
+      "whyWrong": "單線索可能有多解。",
+      "correction": "至少合併兩項。"
+    },
+    {
+      "belief": "推論越具體越好。",
+      "whyWrong": "細節可能無證據。",
+      "correction": "採最小充分結論。"
+    },
+    {
+      "belief": "常識可取代第二線索。",
+      "whyWrong": "題目要求文本證據。",
+      "correction": "指出兩個原文位置。"
+    },
+    {
+      "belief": "答案只要解釋一項。",
+      "whyWrong": "正確推論需同時涵蓋。",
+      "correction": "做反向檢查。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "可靠推論至少結合幾項線索？",
+      "answer": "兩項",
+      "reason": "各自限制可能。"
+    },
+    {
+      "prompt": "答案可加入第三個未明示原因嗎？",
+      "answer": "不可",
+      "reason": "會超出證據。"
+    },
+    {
+      "prompt": "最小充分結論有何好處？",
+      "answer": "避免過度推論",
+      "reason": "強度與證據一致。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

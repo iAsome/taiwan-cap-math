@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_288_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S288"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: The course lasts four weeks. B: Classes meet every Wednesday. What can the reader do?",
+  "options": [
+    "Treat Wednesday as four weeks long.",
+    "Find a conflict in duration.",
+    "Combine the length with the weekly meeting day.",
+    "Conclude the course was cancelled."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Treat Wednesday as four weeks long.：單位混淆。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Find a conflict in duration.：B 未提總期間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Combine the length with the weekly meeting day.：期間與上課日互補。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Conclude the course was cancelled.：未提。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "classify-document-relation",
+    "test-same-proposition-for-complement-or-conflict"
+  ],
+  "representationType": "document-relation",
+  "misconceptionTargets": [
+    "label-any-difference-as-conflict"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「比較兩份文件對同一命題的內容，判定補充、重複或直接衝突」可推出 Combine the length with the weekly meeting day.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Combine the length with the weekly meeting day. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

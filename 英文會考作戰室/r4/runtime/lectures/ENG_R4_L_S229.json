@@ -1,0 +1,149 @@
+{
+  "id": "ENG_R4_L_S229",
+  "subject": "english",
+  "unitId": "ENG_R4_U33",
+  "skillId": "ENG_R4_S229",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S228"
+  ],
+  "objectives": [
+    "能依開場、回應、追問、決定與收束排列對話。",
+    "能利用代名詞、時間詞與禮貌語判斷句子先後。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S229_SEC_01",
+      "title": "先找不能憑空出現的句子",
+      "content": "Thanks for telling me 必須在有人提供資訊之後；Yes, that time works 要先有一個時間提議；What color is it? 要先知道正在找某個物品。這些依賴前文的句子通常不是開頭，可用來建立固定的先後邊。"
+    },
+    {
+      "id": "ENG_R4_L_S229_SEC_02",
+      "title": "用溝通目的畫出小流程",
+      "content": "借物對話常是提出需求、確認物品、答應或拒絕、致謝；約時間常是邀請、提出時段、確認、收束。先辨認整段要完成什麼，再排列功能，比逐句只看文法更可靠。"
+    },
+    {
+      "id": "ENG_R4_L_S229_SEC_03",
+      "title": "代名詞和指示詞需要先行詞",
+      "content": "it、that one、there、then 不能在沒有對象時自然出現。若一句說 I left it there，前面應先提到物品和地點。排列後逐一檢查每個短詞是否都有清楚來源。"
+    },
+    {
+      "id": "ENG_R4_L_S229_SEC_04",
+      "title": "最後一句通常完成而非重開任務",
+      "content": "Great, see you then、Thanks, I will do that、All right, we have a plan 都能收束。若最後一句又問出尚未回答的新問題，對話可能尚未完成；除非題目刻意呈現新的話題，否則要重新檢查排序。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S229_EX_01",
+      "prompt": "A. At the front desk. B. Where can I get a map? C. Thanks, I will go there. D. You are welcome.",
+      "steps": [
+        "B 先提出問題。",
+        "A 提供地點。",
+        "C 以 there 承接並致謝，D 回應感謝。"
+      ],
+      "answer": "B-A-C-D",
+      "why": "問地點必須先於地點答案，there 需要 front desk 作先行資訊，You are welcome 則自然放在 Thanks 後。"
+    },
+    {
+      "id": "ENG_R4_L_S229_EX_02",
+      "prompt": "A. Saturday morning is fine. B. Would you like to study together? C. Good. I will bring my notes. D. How about Saturday morning?",
+      "steps": [
+        "B 發出邀請。",
+        "D 提議具體時間。",
+        "A 接受該時間，C 完成安排。"
+      ],
+      "answer": "B-D-A-C",
+      "why": "fine 必須回應一個已提出的時段；Good 又承接同意並說明下一步，因此功能順序唯一。"
+    },
+    {
+      "id": "ENG_R4_L_S229_EX_03",
+      "prompt": "A. It is blue with a white star. B. I lost my lunch bag. C. What does it look like? D. I will check the office for it.",
+      "steps": [
+        "B 先提出遺失物。",
+        "C 追問外觀。",
+        "A 回答特徵，D 承諾查找。"
+      ],
+      "answer": "B-C-A-D",
+      "why": "it 在 C 中指 lunch bag，A 的顏色回答外觀，最後才能根據完整資訊去查找。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有問號的句子一定是第一句。",
+      "whyWrong": "追問也有問號，且需要前文。",
+      "correction": "判斷問句是否已依賴某個人物、物品或提議。"
+    },
+    {
+      "belief": "Thanks 一定是整段最後一句。",
+      "whyWrong": "對方可能再回 You are welcome。",
+      "correction": "把致謝和回應致謝視為一組。"
+    },
+    {
+      "belief": "只要每兩句能接，整體順序就正確。",
+      "whyWrong": "代名詞可能仍沒有來源，任務也可能尚未完成。",
+      "correction": "完成局部排列後，再從頭檢查整體目的。"
+    },
+    {
+      "belief": "句子較長就應排在後面。",
+      "whyWrong": "長度與溝通階段沒有必然關係。",
+      "correction": "依開場、資訊交換與收束功能排序。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Yes, Friday works 之前至少要出現什麼？",
+      "answer": "星期五的提議或詢問",
+      "reason": "works 是對已提出時段的接受。"
+    },
+    {
+      "prompt": "I put it there 需要哪兩類先行資訊？",
+      "answer": "物品與地點",
+      "reason": "it 和 there 分別承接兩種資訊。"
+    },
+    {
+      "prompt": "You are welcome 通常排在 Thanks 前還是後？",
+      "answer": "後",
+      "reason": "它用來回應對方的感謝。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  }
+}

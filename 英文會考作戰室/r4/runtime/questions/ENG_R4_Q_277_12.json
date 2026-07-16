@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'For example, the moon is made of green glass.' Text: The science club checks ideas with simple tests. [A] Members write what they think will happen. [B] They compare the result with the idea. [C] Claims without test results are not accepted. [D] What is the best decision?",
+  "options": [
+    "Put it at A.",
+    "Put it at B.",
+    "Put it at C.",
+    "Do not insert it because it is an unsupported claim, not an example of the stated process."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未經測試的月亮材料主張不例證寫預測的程序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "它也沒有提供比較結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "放在不接受無證據主張前仍會把錯誤內容當真。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "該句缺少測試與結果，且與科學社所述標準衝突。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u41-s277-q12-reject-unsupported-insertion",
+    "evaluate-content-fit-beyond-discourse-marker"
+  ],
+  "representationType": "no-valid-insertion",
+  "misconceptionTargets": [
+    "force-any-for-example-into-text"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "插入題也可能沒有語意合格的位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項依全文規則評估句子內容，而非只靠 For example。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

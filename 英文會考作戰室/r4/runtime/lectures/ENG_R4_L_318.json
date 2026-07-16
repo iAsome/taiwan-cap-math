@@ -1,0 +1,190 @@
+{
+  "id": "ENG_R4_L_318",
+  "subject": "english",
+  "unitId": "ENG_R4_U48",
+  "skillId": "ENG_R4_S318",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-3",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-4",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-C-4-1",
+    "AUTH-ENGLISH-LC-C-4-2",
+    "AUTH-ENGLISH-LC-C-4-3",
+    "AUTH-ENGLISH-LC-C-4-4",
+    "AUTH-ENGLISH-LC-C-4-5",
+    "AUTH-ENGLISH-LP-1-4-11",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-1-4-5",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-14",
+    "AUTH-ENGLISH-LP-2-4-5",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-8",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-8-4-1",
+    "AUTH-ENGLISH-LP-8-4-2",
+    "AUTH-ENGLISH-LP-8-4-3",
+    "AUTH-ENGLISH-LP-8-4-4",
+    "AUTH-ENGLISH-LP-8-4-5",
+    "AUTH-ENGLISH-LP-8-4-6"
+  ],
+  "prerequisites": [
+    "ENG_R4_S317"
+  ],
+  "objectives": [
+    "抓取 who、when、where、what。",
+    "區分出發時間與事件時間。",
+    "不把提及地點誤當主要發生地。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S318_SEC_1",
+      "title": "四格筆記",
+      "content": "聽第一遍只記人、時、地、事的關鍵詞，不抄整句。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S318_SEC_2",
+      "title": "時間可能有兩個",
+      "content": "left at eight、arrived at nine 要依問題選 departure 或 arrival。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S318_SEC_3",
+      "title": "地點看事件落點",
+      "content": "from the station 是起點，at the clinic 是主要事件地；問 where happened 需選動作所在。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S318_SEC_4",
+      "title": "代名詞回指人物",
+      "content": "she/he/they 回最近合理角色，不把物件當施事者。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U48_ENG_R4_S318_EX_1",
+      "prompt": "Nora left at 8 and arrived at 9.",
+      "steps": [
+        "人物 Nora。",
+        "兩時間。",
+        "依問 arrival 選 9。"
+      ],
+      "answer": "9 for arrival",
+      "why": "不混出發。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S318_EX_2",
+      "prompt": "From school, Ben walked to clinic and met doctor.",
+      "steps": [
+        "from 起點。",
+        "at clinic 會面。",
+        "主要事件 clinic。"
+      ],
+      "answer": "clinic",
+      "why": "動作落點。"
+    },
+    {
+      "id": "ENG_R4_U48_ENG_R4_S318_EX_3",
+      "prompt": "Mia gave Eva a key; she opened door.",
+      "steps": [
+        "she 需語境判。",
+        "能 open 的接受者 Eva。",
+        "追角色。"
+      ],
+      "answer": "Eva opens it",
+      "why": "代名詞合理。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只記第一個時間。",
+      "whyWrong": "問題可能問第二事件。",
+      "correction": "標事件-時間配對。"
+    },
+    {
+      "belief": "聽到的第一個地點就是答案。",
+      "whyWrong": "可能只是起點。",
+      "correction": "看主要動作。"
+    },
+    {
+      "belief": "每個代名詞都回第一人。",
+      "whyWrong": "需最近合理先行詞。",
+      "correction": "用角色行動檢查。"
+    },
+    {
+      "belief": "數字越大越重要。",
+      "whyWrong": "重要性由問題決定。",
+      "correction": "先看問項。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "兩個時間如何記？",
+      "answer": "分別綁定事件",
+      "reason": "避免混淆。"
+    },
+    {
+      "prompt": "from 常標什麼？",
+      "answer": "起點",
+      "reason": "不一定主要地點。"
+    },
+    {
+      "prompt": "代名詞回指怎麼檢查？",
+      "answer": "用最近合理角色與行動",
+      "reason": "語意一致。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-3",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-4",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-C-4-1",
+      "AUTH-ENGLISH-LC-C-4-2",
+      "AUTH-ENGLISH-LC-C-4-3",
+      "AUTH-ENGLISH-LC-C-4-4",
+      "AUTH-ENGLISH-LC-C-4-5",
+      "AUTH-ENGLISH-LP-1-4-11",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-1-4-5",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-14",
+      "AUTH-ENGLISH-LP-2-4-5",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-8",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-8-4-1",
+      "AUTH-ENGLISH-LP-8-4-2",
+      "AUTH-ENGLISH-LP-8-4-3",
+      "AUTH-ENGLISH-LP-8-4-4",
+      "AUTH-ENGLISH-LP-8-4-5",
+      "AUTH-ENGLISH-LP-8-4-6"
+    ]
+  }
+}

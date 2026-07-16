@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_283_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S283"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Which English sentence preserves the waste trend?",
+  "options": [
+    "Sunday produced more waste than Friday.",
+    "Waste dropped from 12 kg on Friday to 5 kg on Sunday.",
+    "Waste rose to 12 kg on Sunday.",
+    "Waste stayed at 8 kg every day."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Sunday produced more waste than Friday.：方向相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Waste dropped from 12 kg on Friday to 5 kg on Sunday.：句子正確對應起終值與下降方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Waste rose to 12 kg on Sunday.：Sunday 是 5 kg。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Waste stayed at 8 kg every day.：只有 Saturday 是 8。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "verbalize-chart-evidence",
+    "align-subject-comparison-value-and-scope"
+  ],
+  "representationType": "chart-to-sentence",
+  "misconceptionTargets": [
+    "overstate-or-reverse-chart-trend"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「英文句中的主詞、比較方向、數值與範圍全部對應圖表」可推出 Waste dropped from 12 kg on Friday to 5 kg on Sunday.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 Waste dropped from 12 kg on Friday to 5 kg on Sunday. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_04"
+  ]
+}

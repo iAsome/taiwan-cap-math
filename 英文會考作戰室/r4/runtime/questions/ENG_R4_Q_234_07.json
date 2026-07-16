@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_234_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S234"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Leo showed Sam two photos. He had taken them at the beach. What does them refer to?",
+  "options": [
+    "Leo and Sam",
+    "two photos",
+    "the beach",
+    "one camera"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Leo and Sam：兩個人不是在海灘被拍下的唯一合理受詞，且前句焦點是照片。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "two photos：them 是複數受格，作 taken 的受詞，指 two photos。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the beach：the beach 是單數地點，不能用 them。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "one camera：camera 未在原文出現且是單數。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "track-pronoun-reference",
+    "track-object-pronoun"
+  ],
+  "representationType": "multi-pronoun-reference",
+  "misconceptionTargets": [
+    "match-plural-with-any-pair"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「代名詞前的名詞與單複數角色」可推出 two photos；再核對句中每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一放回原文，只有 two photos 能同時滿足句法與全文意思；另外三項各有列明的衝突，沒有第二個合理答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

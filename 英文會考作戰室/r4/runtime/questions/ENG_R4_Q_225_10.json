@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_225_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S225"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: What did the doctor tell you?\nB: ___.\nA: Then do not carry that heavy box.",
+  "options": [
+    "The hospital has a new door.",
+    "My arm needs to rest for two days.",
+    "I met Eric near the bus stop.",
+    "The box belongs to our team."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "醫院的門不是醫囑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "手臂需休息直接引出不要搬重物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "遇見朋友沒有健康建議。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "所有權不會改變手臂負擔。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "recover-medical-advice-from-heavy-box-response"
+  ],
+  "representationType": "advice-and-consequence-dialogue",
+  "misconceptionTargets": [
+    "choose-location-fact-from-doctor-setting"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Then 表示 A 依醫囑提出保護行動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "兩天休息是唯一能解釋避免重物的內容。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "A student writes to Mr. Wang, a teacher. Which opening fits?",
+  "options": [
+    "Dear Mr. Wang,",
+    "Hi Wang boy,",
+    "Dear Friend Teacher,",
+    "Hello student,"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "已知對方是王老師，Dear 加稱謂和姓氏合宜。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這種稱呼省略老師身分且語意不自然。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "英文不把 Friend Teacher 當成姓名稱謂。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "收件者是老師，不是學生。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s221-select-known-teacher-greeting",
+    "match-title-and-family-name-to-recipient"
+  ],
+  "representationType": "email-greeting-teacher",
+  "misconceptionTargets": [
+    "use-invented-or-reversed-title"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "稱呼依已知身分與姓氏選擇。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "禮貌不靠堆疊不自然的身分字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

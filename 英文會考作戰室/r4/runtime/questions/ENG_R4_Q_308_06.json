@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_308_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S308"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Source: 'Keep the west gate clear for emergency vehicles.' What action follows the source?",
+  "options": [
+    "Close every emergency service.",
+    "Park there for quick shopping.",
+    "Use the gate as a picnic area.",
+    "Do not park at the west gate."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Close every emergency service.：相反且過度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Park there for quick shopping.：違反 clear。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Use the gate as a picnic area.：會阻塞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Do not park at the west gate.：保持 clear 對 vehicle 的直接行動是勿停車。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "evaluate-source-bound-option",
+    "verify-every-option-word-against-source"
+  ],
+  "representationType": "source-bound-evaluation",
+  "misconceptionTargets": [
+    "choose-option-by-personal-agreement-or-added-assumption"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「選項必須逐字受來源內容支持，不能因符合讀者個人立場而增加來源未說的理由」可推出 Do not park at the west gate.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Do not park at the west gate. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

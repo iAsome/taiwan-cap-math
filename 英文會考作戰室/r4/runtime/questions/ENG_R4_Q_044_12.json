@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_044_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S044"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which correction fixes 'three actors's costumes'?",
+  "options": [
+    "three actorss' costume",
+    "three actors' costumes",
+    "three actor's costumes",
+    "three actors costumes's"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "three actorss' costume：重複 s 且改變物品數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "three actors' costumes：actors 已是 s 結尾規則複數，只加撇號。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "three actor's costumes：three 與單數 actor 不合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "three actors costumes's：標記放錯名詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "form-regular-plural-possessive",
+    "form-owner-number-before-placing-apostrophe"
+  ],
+  "representationType": "plural-noun-possessive",
+  "misconceptionTargets": [
+    "append-s-after-every-apostrophe-or-link-owner-number-to-item-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「先建立規則複數，再將撇號放在複數 s 後，並以一位或多位擁有者的語意區分 student's 與 students'。」可推出 three actors' costumes；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 three actors' costumes 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

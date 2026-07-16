@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_223_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S223"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Nina writes, 'The show began at seven. In my view, the ending was too long.'\nWhich statement is supported?",
+  "options": [
+    "Everyone disliked the ending.",
+    "Nina thought the ending was too long.",
+    "The show ended at seven.",
+    "The ending lasted seven hours."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Nina 的看法不能代表所有人。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "in my view 明確把評價限定為 Nina 的反應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "七點是開始時刻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時間數字沒有表示片長。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s223-attribute-opinion-to-named-writer",
+    "distinguish-start-clock-time-from-duration"
+  ],
+  "representationType": "social-post-view-attribution",
+  "misconceptionTargets": [
+    "universalize-one-writers-opinion"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "觀點持有人和時間欄位都需精確追蹤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正確答案不把個人判斷擴成集體結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

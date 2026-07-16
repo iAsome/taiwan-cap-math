@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_275_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S275"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A report says, 'One student used the new path and reached school five minutes sooner.' Which conclusion goes too far?",
+  "options": [
+    "The path helped that student on that trip.",
+    "The student reached school sooner than usual.",
+    "The report gives one example of path use.",
+    "The path always saves every student five minutes."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一案例直接支持這次有幫助。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "五分鐘較快就是 sooner 的具體結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "文本確實只提供一位學生的案例。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "one student 不能支持 always 與 every student。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s275-q04-detect-overgeneralization-from-one-student",
+    "compare-evidence-scope-with-every-always"
+  ],
+  "representationType": "evidence-scope",
+  "misconceptionTargets": [
+    "treat-one-example-as-universal-proof"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結論強度需受樣本數與時間範圍限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項同時把個案擴張成人群與永久規則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

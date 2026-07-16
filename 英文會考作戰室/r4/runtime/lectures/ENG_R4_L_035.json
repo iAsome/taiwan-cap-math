@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_035",
+  "subject": "english",
+  "unitId": "ENG_R4_U05",
+  "skillId": "ENG_R4_S035",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S034"
+  ],
+  "objectives": [
+    "排列限定詞、形容詞與核心名詞。",
+    "維持冠詞、指示詞、數量與名詞數一致。",
+    "用介系詞或關係片語精確限定指涉。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S035_SEC_1",
+      "title": "核心順序",
+      "content": "常見結構是限定詞 + 數量 + 形容詞 + 名詞 + 後置限定：those two red bags by the door。不是每個位置都必須填。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S035_SEC_2",
+      "title": "中央限定詞通常互斥",
+      "content": "不能說 the my bag 或 a this pen。冠詞、指示詞、所有格通常擇一作核心限定。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S035_SEC_3",
+      "title": "數與形式連動",
+      "content": "one old box；three old boxes；this useful guide；these useful guides。每次改數量要同步改指示詞、名詞與 be。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S035_SEC_4",
+      "title": "後置片語提供辨認線索",
+      "content": "the girl with a blue hat 與 the note on page six 都在核心名詞後縮小範圍。不要把介系詞片語拆散。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S035_EX_1",
+      "prompt": "door / by / those / bags / two",
+      "steps": [
+        "核心名詞 bags 複數。",
+        "those 與 two 放前。",
+        "by the door 放後。"
+      ],
+      "answer": "those two bags by the door",
+      "why": "順序與數一致。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S035_EX_2",
+      "prompt": "my / the / notebook",
+      "steps": [
+        "the 與 my 都想占中央限定位置。",
+        "所有格已建立特定性。",
+        "刪除 the。"
+      ],
+      "answer": "my notebook",
+      "why": "避免限定詞重疊。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S035_EX_3",
+      "prompt": "a / interesting / story",
+      "steps": [
+        "story 單數非特定。",
+        "冠詞緊接 interesting。",
+        "起始音為母音。"
+      ],
+      "answer": "an interesting story",
+      "why": "同時套用發音與片語順序。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "限定詞越多越精確。",
+      "whyWrong": "中央限定詞重疊會不合語法。",
+      "correction": "the、my、this 等通常擇一。"
+    },
+    {
+      "belief": "形容詞放在冠詞前。",
+      "whyWrong": "一般屬性形容詞置於限定詞後。",
+      "correction": "寫 a small bag。"
+    },
+    {
+      "belief": "數量改變只需改名詞。",
+      "whyWrong": "指示詞與 be 也可能要改。",
+      "correction": "整組做數的一致性檢查。"
+    },
+    {
+      "belief": "後置限定可以放在任何詞間。",
+      "whyWrong": "拆散核心片語會造成語序錯誤。",
+      "correction": "先組核心名詞，再接完整後置片語。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "the my book 哪裡有問題？",
+      "answer": "中央限定詞重疊。",
+      "reason": "保留 the book 或 my book。"
+    },
+    {
+      "prompt": "three blue box 應如何修正？",
+      "answer": "three blue boxes。",
+      "reason": "three 要求複數名詞。"
+    },
+    {
+      "prompt": "on the table 通常放在核心名詞前或後？",
+      "answer": "後。",
+      "reason": "它作後置限定或位置片語。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

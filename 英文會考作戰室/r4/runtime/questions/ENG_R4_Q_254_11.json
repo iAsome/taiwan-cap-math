@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_254_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S254"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Mia found a wallet under a chair. She asked the cafe worker for help, and together they called the owner. What did Mia do before calling the owner?",
+  "options": [
+    "She left the cafe",
+    "She called before finding it",
+    "She asked the worker for help",
+    "She gave the wallet to the owner"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "She left the cafe：原文沒有。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "She called before finding it：順序相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "She asked the worker for help：ask worker 位於 found 與 called 之間，直接先於 call。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "She gave the wallet to the owner：後續歸還未寫。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "answer-event-sequence",
+    "locate-relative-event-order"
+  ],
+  "representationType": "event-sequence",
+  "misconceptionTargets": [
+    "choose-final-event-instead-of-next"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「時間標記、代名詞與必要動作建立的事件先後」可推出 She asked the worker for help；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 She asked the worker for help 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

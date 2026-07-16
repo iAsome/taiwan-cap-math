@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_038_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "How should 'five advice' be corrected?",
+  "options": [
+    "much five advice",
+    "five pieces of advice",
+    "five advices",
+    "an five advice"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "much five advice：量詞重疊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "five pieces of advice：加入可數單位 pieces。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "five advices：直接複數化不合標準目標。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "an five advice：冠詞與數量衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "classify-count-and-noncount-uses",
+    "identify-unitized-individual-or-mass-meaning"
+  ],
+  "representationType": "countability-in-context",
+  "misconceptionTargets": [
+    "assign-fixed-countability-or-pluralize-mass-noun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依語境中的可分單位、可直接計數性與量詞搭配，判斷名詞是可數、不可數或具雙重用法。」可推出 five pieces of advice；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 five pieces of advice 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

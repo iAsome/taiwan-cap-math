@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_012_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "Teacher: 'Is Mia your partner?' She is. Which answer works?",
+  "options": [
+    "Yes, she is.",
+    "Yes, I am.",
+    "Yes, she does.",
+    "Yes, Mia were."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Yes, she is.：Is Mia 對應 she is。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Yes, I am.：主詞錯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Yes, she does.：助動詞錯。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Yes, Mia were.：一致錯。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "respond-to-rollcall-and-class-question",
+    "match-prompt-type-and-auxiliary"
+  ],
+  "representationType": "rollcall-classroom-response",
+  "misconceptionTargets": [
+    "use-yes-no-for-information-question"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「點名、是非問句與簡短資訊問句各要求人物一致且功能充分的口語回應」可推出 Yes, she is.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Yes, she is. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

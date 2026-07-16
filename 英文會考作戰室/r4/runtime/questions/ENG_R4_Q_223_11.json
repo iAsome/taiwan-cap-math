@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_223_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S223"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Post: It rained during the game, and we moved inside. The change made the game more fun for me.\nWhich part explains what the group did?",
+  "options": [
+    "more fun for me",
+    "during the game",
+    "we moved inside",
+    "It rained"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是個人對變更的反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這只是事件發生的時間背景。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "we moved inside 說明團體採取的行動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "下雨是原因，不是團體所做的事。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s223-locate-group-action-in-mixed-post",
+    "separate-cause-action-and-personal-result"
+  ],
+  "representationType": "social-post-action-role",
+  "misconceptionTargets": [
+    "choose-cause-instead-of-group-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "人物動作需和天氣原因、個人感受分開。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "主詞 we 鎖定題目所問的 group。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

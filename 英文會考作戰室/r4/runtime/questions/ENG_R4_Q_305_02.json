@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_305_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S305"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-6-4-3",
+    "AUTH-ENGLISH-LP-6-4-4",
+    "AUTH-ENGLISH-LP-6-4-6",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-7-4-4",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Claim: Short practice sessions can improve accuracy. Which case is relevant support?",
+  "options": [
+    "A player wore new shoes during a game.",
+    "A coach prefers morning games.",
+    "A ball was placed in a bag.",
+    "A player practiced ten minutes daily and made fewer passing errors."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A player wore new shoes during a game.：無 practice/accuracy 關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A coach prefers morning games.：是意見。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "A ball was placed in a bag.：無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "A player practiced ten minutes daily and made fewer passing errors.：短時練習與 accuracy improvement 都有。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "evaluate-example-relevance",
+    "match-claim-conditions-and-outcome-direction"
+  ],
+  "representationType": "claim-example-fit",
+  "misconceptionTargets": [
+    "accept-topically-related-but-logically-irrelevant-example"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-6-4-3",
+      "AUTH-ENGLISH-LP-6-4-4",
+      "AUTH-ENGLISH-LP-6-4-6",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-7-4-4",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「例子必須具備主張中的關鍵條件，且結果方向能作為該主張的具體個案」可推出 A player practiced ten minutes daily and made fewer passing errors.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 A player practiced ten minutes daily and made fewer passing errors. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

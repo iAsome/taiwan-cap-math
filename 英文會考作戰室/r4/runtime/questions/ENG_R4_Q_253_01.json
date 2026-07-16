@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_253_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S253"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Need: a room for at least 30 people with a screen. Cedar: 35, screen yes. Pine: 40, screen no. Lake: 25, screen yes. Which room works?",
+  "options": [
+    "Cedar",
+    "Pine",
+    "Lake",
+    "Pine and Lake"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Cedar：35≥30 且有 screen。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Pine：容量合但沒有 screen。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Lake：有 screen 但 25 不足 30。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Pine and Lake：兩者各缺一硬條件。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "verify-list-constraints",
+    "apply-all-list-constraints"
+  ],
+  "representationType": "constraint-list",
+  "misconceptionTargets": [
+    "accept-most-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「清單每一欄與題目限制逐項核對後全部通過」可推出 Cedar；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Cedar 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

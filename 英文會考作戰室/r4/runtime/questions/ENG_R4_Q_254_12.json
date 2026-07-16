@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_254_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S254"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "At noon, the team tested the model. It failed, so they changed one part. The second test worked at three. What happened between the two tests?",
+  "options": [
+    "They waited until the next day",
+    "The team changed a part",
+    "They built a different team",
+    "The first test worked"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "They waited until the next day：第二次在同日 three。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "The team changed a part：失敗後、第二測試前明示 changed one part。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "They built a different team：changed 的是 part。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The first test worked：原文說 failed。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "answer-event-sequence",
+    "locate-relative-event-order"
+  ],
+  "representationType": "event-sequence",
+  "misconceptionTargets": [
+    "choose-final-event-instead-of-next"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「時間標記、代名詞與必要動作建立的事件先後」可推出 The team changed a part；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 The team changed a part 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

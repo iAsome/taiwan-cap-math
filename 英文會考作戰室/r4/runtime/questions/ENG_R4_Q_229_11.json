@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_229_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A. I did, and I put them in the top drawer.\nB. Great. Now we can give them to the new students.\nC. Did you finish the welcome cards?\nD. Which drawer did you use?\nWhich line order makes sense?",
+  "options": [
+    "D-A-C-B",
+    "C-D-A-B",
+    "C-A-D-B",
+    "A-C-B-D"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Which drawer 在 cards 尚未出現前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "D 問抽屜時尚未知道 cards 已完成並收起。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "先確認完成與位置，再追問抽屜，最後說明用途。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A 的 them 沒有先行詞。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "sequence-card-completion-and-storage"
+  ],
+  "representationType": "object-reference-ordering",
+  "misconceptionTargets": [
+    "ask-specific-location-before-location-mentioned"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "them 從 welcome cards 延續到抽屜與發放。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "D 是根據 A 提到 drawer 產生的追問。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

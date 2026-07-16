@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_035_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S035"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A speaker wants one non-specific unusual idea. Which phrase is correct?",
+  "options": [
+    "an unusual idea",
+    "a unusual idea",
+    "the an unusual idea",
+    "an unusual ideas"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "an unusual idea：idea 單數非特定，unusual 以母音音素開頭。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "a unusual idea：發音規則不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "the an unusual idea：限定詞重疊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "an unusual ideas：an 不搭複數。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "assemble-integrated-noun-phrase",
+    "order-determiner-quantity-modifier-head-and-postmodifier"
+  ],
+  "representationType": "integrated-noun-phrase",
+  "misconceptionTargets": [
+    "stack-determiners-or-update-only-head-number"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「依限定詞互斥、數量、形容詞位置與後置限定順序，組成語意清楚且一致的完整名詞片語。」可推出 an unusual idea；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 an unusual idea 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_224_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S224"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Message: The trip leaves at eight. Be at school twenty minutes early.\nReply: I will reach school at 7:40.\nHow does the reply relate to the message?",
+  "options": [
+    "It is twenty minutes late.",
+    "It changes the trip to 7:40.",
+    "It follows the arrival instruction.",
+    "It says the trip leaves from home."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "七點四十分比八點早二十分鐘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "7:40 是到校時間，不是旅程出發時間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回覆正好符合提前二十分鐘到校。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "出發地點仍是 school，沒有 home。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s224-derive-required-early-arrival-match",
+    "separate-arrival-time-from-departure-time"
+  ],
+  "representationType": "message-reply-derived-time-match",
+  "misconceptionTargets": [
+    "treat-arrival-time-as-new-departure"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "早到要求需要用減法核對。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一回覆中的 arrive 與 leave 時刻功能不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

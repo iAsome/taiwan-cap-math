@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_223_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S223"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "My picture received 200 likes. This proves it is the best picture here.\nWhich response is careful?",
+  "options": [
+    "Two hundred likes prove every viewer agrees.",
+    "The picture must be the oldest one.",
+    "A popular picture can never be good.",
+    "The number of likes does not prove it is the best."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "按讚數不能代表每位觀看者意見一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "貼文沒有上傳日期或作品年代。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "受歡迎與品質並非互斥，這句也過度否定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "數量是可見資料，但最高品質結論仍需要其他標準。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s223-evaluate-likes-as-insufficient-proof",
+    "limit-popularity-metric-inference"
+  ],
+  "representationType": "social-post-evidence-limit",
+  "misconceptionTargets": [
+    "equate-many-likes-with-objective-best"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "社群反應數與作品評價不是同一種證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "謹慎回答不否定數字，只限制它能支持的結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

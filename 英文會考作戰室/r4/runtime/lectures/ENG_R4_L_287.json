@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_287",
+  "subject": "english",
+  "unitId": "ENG_R4_U43",
+  "skillId": "ENG_R4_S287",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S286"
+  ],
+  "objectives": [
+    "把公告中的限制轉成篩選條件。",
+    "在時刻表中找同時符合的列。",
+    "處理延誤、截止與交通間隔。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S287_SEC_1",
+      "title": "公告先變成條件",
+      "content": "after 3、before noon、not on Monday 都可寫成時間篩選器。先列條件，再查表。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S287_SEC_2",
+      "title": "可行要同時滿足",
+      "content": "列中時間合格但狀態 FULL，仍不可行；地點合格但公告禁止該日，也不可行。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S287_SEC_3",
+      "title": "保留移動時間",
+      "content": "若 A 結束 2:40、B 開始 2:45，但題目說需十分鐘移動，就不可行。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S287_SEC_4",
+      "title": "答案說明被哪條排除",
+      "content": "選 no 時指出衝突的公告或時刻表格，避免只說 too late 而無證據。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S287_EX_1",
+      "prompt": "Notice: after 3. Schedule: 2:30 / 3:20",
+      "steps": [
+        "條件大於三點。",
+        "刪除 2:30。",
+        "保留 3:20。"
+      ],
+      "answer": "3:20 is feasible.",
+      "why": "時間與公告同時符合。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S287_EX_2",
+      "prompt": "Notice: Room A closed. Table: 4:00 Room A; 4:30 Room B",
+      "steps": [
+        "排除 Room A。",
+        "核對 Room B。",
+        "保留 4:30。"
+      ],
+      "answer": "Choose 4:30 in Room B.",
+      "why": "地點限制優先。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S287_EX_3",
+      "prompt": "Trip ends 1:50; bus 2:00; walk 15 minutes",
+      "steps": [
+        "可用間隔十分鐘。",
+        "所需十五分鐘。",
+        "比較後不足。"
+      ],
+      "answer": "The bus is not feasible.",
+      "why": "需計入移動。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要時間看起來接近就可行。",
+      "whyWrong": "還需狀態、地點與移動時間。",
+      "correction": "逐項打勾。"
+    },
+    {
+      "belief": "公告與表格衝突時相信表格。",
+      "whyWrong": "公告可能是更新規則。",
+      "correction": "以兩份文件共同判斷。"
+    },
+    {
+      "belief": "FULL 仍可排入方案。",
+      "whyWrong": "FULL 表無名額。",
+      "correction": "視為不可行。"
+    },
+    {
+      "belief": "截止時間等於開始時間。",
+      "whyWrong": "deadline 可能早於活動。",
+      "correction": "分開記錄。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "after 3 包含 3:00 嗎？",
+      "answer": "通常不包含",
+      "reason": "after 表晚於。"
+    },
+    {
+      "prompt": "OPEN 但公告禁止該日可選嗎？",
+      "answer": "不可",
+      "reason": "需同時符合。"
+    },
+    {
+      "prompt": "行程間隔需考慮什麼？",
+      "answer": "移動所需時間",
+      "reason": "不能只比兩個鐘點。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

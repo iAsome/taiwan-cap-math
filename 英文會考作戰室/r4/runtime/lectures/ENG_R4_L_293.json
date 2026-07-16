@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_293",
+  "subject": "english",
+  "unitId": "ENG_R4_U44",
+  "skillId": "ENG_R4_S293",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-1",
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-6",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10",
+    "AUTH-ENGLISH-LP-5-4-8"
+  ],
+  "prerequisites": [
+    "ENG_R4_S292"
+  ],
+  "objectives": [
+    "找出 before 與 after 狀態的差異。",
+    "辨認造成方向改變的關鍵事件。",
+    "排除只增加氣氛但未改變情節的細節。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S293_SEC_1",
+      "title": "先寫原路線",
+      "content": "人物原先計畫做什麼？若沒有中斷，故事會怎麼走？這是 turning point 前的路線。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S293_SEC_2",
+      "title": "找迫使改變的事件",
+      "content": "lost key、unexpected call、bridge closed 等會改變可行方案。事件之後的行動要能由它解釋。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S293_SEC_3",
+      "title": "轉折不是最吵的句子",
+      "content": "大雨可能只是背景；若人物本來就在室內且計畫不變，它不是轉折。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S293_SEC_4",
+      "title": "用因果測試",
+      "content": "刪掉候選事件後，後續是否仍會相同？若刪掉就失去改變理由，它很可能是關鍵轉折。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U44_ENG_R4_S293_EX_1",
+      "prompt": "Planned picnic; storm began; moved to hall",
+      "steps": [
+        "原計畫 outdoor。",
+        "storm 阻止。",
+        "後續改 indoor。"
+      ],
+      "answer": "the storm",
+      "why": "刪掉 storm 就缺換地理由。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S293_EX_2",
+      "prompt": "Walked home; found injured bird; took it to clinic",
+      "steps": [
+        "原路線 home。",
+        "found bird 中斷。",
+        "改去 clinic。"
+      ],
+      "answer": "finding the bird",
+      "why": "它改變目的地。"
+    },
+    {
+      "id": "ENG_R4_U44_ENG_R4_S293_EX_3",
+      "prompt": "Studied all day; wore a red shirt; passed test",
+      "steps": [
+        "red shirt 不改準備或結果。",
+        "沒有後續因它而變。",
+        "排除裝飾。"
+      ],
+      "answer": "The shirt is not a turning point.",
+      "why": "因果測試不成立。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "最戲劇化的詞就是轉折。",
+      "whyWrong": "需改變情節方向。",
+      "correction": "做刪除測試。"
+    },
+    {
+      "belief": "故事開頭就是轉折。",
+      "whyWrong": "開頭通常建立原狀。",
+      "correction": "比較 before/after。"
+    },
+    {
+      "belief": "每個新人物出現都是轉折。",
+      "whyWrong": "若不影響計畫就不是。",
+      "correction": "看後續是否因他改變。"
+    },
+    {
+      "belief": "結果本身一定是轉折。",
+      "whyWrong": "結果可能只是先前轉折的後果。",
+      "correction": "找最早造成方向變化的事件。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "轉折前要先找什麼？",
+      "answer": "原本計畫或狀態",
+      "reason": "才能看出改變。"
+    },
+    {
+      "prompt": "刪除測試問什麼？",
+      "answer": "沒有此事件後續是否仍相同",
+      "reason": "檢驗因果必要性。"
+    },
+    {
+      "prompt": "裝飾細節會改情節嗎？",
+      "answer": "通常不會",
+      "reason": "不可只因生動就選。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-1",
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-6",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10",
+      "AUTH-ENGLISH-LP-5-4-8"
+    ]
+  }
+}

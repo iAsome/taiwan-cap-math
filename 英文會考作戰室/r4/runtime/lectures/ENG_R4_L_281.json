@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_281",
+  "subject": "english",
+  "unitId": "ENG_R4_U42",
+  "skillId": "ENG_R4_S281",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S280"
+  ],
+  "objectives": [
+    "由圖例代碼找到對應意義。",
+    "區分代碼種類與出現數量。",
+    "使用文字與紋理而非顏色辨識。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S281_SEC_1",
+      "title": "先讀圖例，不猜圖形",
+      "content": "代碼本身不保證意思；TRIANGLE 可能代表任何事物。先在 MAP LEGEND 找同一代碼，再讀右側服務名稱。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S281_SEC_2",
+      "title": "括號數字是數量",
+      "content": "Workshop (3) 表示三個工作坊標記，不是第三號工作坊。問題若問 how many，回答括號數字。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S281_SEC_3",
+      "title": "比較要保持同一單位",
+      "content": "比較 Experiment 與 Build Area 時都使用圖例 count。不要把活動時間或價格拿來比較。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S281_SEC_4",
+      "title": "替代資料與圖例等價",
+      "content": "黑白紋理、印出的代碼與 fallback 表格都保留代碼、意義、數量；任何方式都應得到同一答案。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S281_EX_1",
+      "prompt": "TRIANGLE: Workshop (3)",
+      "steps": [
+        "找 TRIANGLE。",
+        "讀冒號後意義。",
+        "讀括號數量。"
+      ],
+      "answer": "TRIANGLE means Workshop, and there are 3.",
+      "why": "代碼、意義、數量完整對齊。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S281_EX_2",
+      "prompt": "CROSS: First Aid (1)",
+      "steps": [
+        "不要把 cross 當取消。",
+        "以圖例定義 First Aid。",
+        "確認數量一。"
+      ],
+      "answer": "one First Aid point",
+      "why": "圖例會覆蓋日常符號猜測。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S281_EX_3",
+      "prompt": "FLASK 4; GEAR 2",
+      "steps": [
+        "兩者單位皆為 count。",
+        "計算 4 - 2。",
+        "保留服務名稱。"
+      ],
+      "answer": "There are 2 more Experiment points.",
+      "why": "同單位比較才能相減。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到熟悉單字就選，不核對列欄。",
+      "whyWrong": "同一單字可能出現在不同區塊。",
+      "correction": "先定位區塊、欄名與同一列。"
+    },
+    {
+      "belief": "圖中最大圖形一定是答案。",
+      "whyWrong": "尺寸可能只是版面，數值與標籤才有意義。",
+      "correction": "讀數字、單位與圖例。"
+    },
+    {
+      "belief": "附註可以忽略。",
+      "whyWrong": "附註常改變資格、時間或可用方式。",
+      "correction": "最後把 NOTE 套回候選答案。"
+    },
+    {
+      "belief": "不同列的資訊可以自由拼接。",
+      "whyWrong": "跨列拼接會製造不存在的組合。",
+      "correction": "用手指沿同一列橫向核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "圖例代碼可只靠形狀猜意思嗎？",
+      "answer": "不可",
+      "reason": "需讀明示對照。"
+    },
+    {
+      "prompt": "括號中的 3 通常表示什麼？",
+      "answer": "該代碼的數量",
+      "reason": "不是時間或價格。"
+    },
+    {
+      "prompt": "黑白列印時靠什麼辨識？",
+      "answer": "代碼、文字、形狀與紋理",
+      "reason": "不依賴顏色。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

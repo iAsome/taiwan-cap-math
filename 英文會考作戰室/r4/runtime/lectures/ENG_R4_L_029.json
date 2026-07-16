@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_029",
+  "subject": "english",
+  "unitId": "ENG_R4_U05",
+  "skillId": "ENG_R4_S029",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S028"
+  ],
+  "objectives": [
+    "辨識 a/an 的單數、可數與非特定功能。",
+    "依實際發音選 a 或 an。",
+    "處理 hour、uniform 等字母與起始音不一致的詞。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S029_SEC_1",
+      "title": "a/an 的使用條件",
+      "content": "第一次提到一個非特定的單數可數名詞時，可用 a/an：I saw a bird。複數或不可數名詞不能直接使用。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S029_SEC_2",
+      "title": "選擇取決於聲音",
+      "content": "後接母音音素用 an，子音音素用 a。an apple 與 a book 是基本配對。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S029_SEC_3",
+      "title": "字母不能取代發音",
+      "content": "an hour 的 h 不發音；a uniform 的 u 發 /juː/，開頭是子音音素。要念出完整後接詞。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S029_SEC_4",
+      "title": "形容詞會成為判斷點",
+      "content": "a red apple 依 red 的起始音；an old book 依 old。冠詞判斷緊接在後的發音。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U05_ENG_R4_S029_EX_1",
+      "prompt": "___ orange",
+      "steps": [
+        "orange 是單數可數。",
+        "非特定。",
+        "起始音為母音。"
+      ],
+      "answer": "an orange",
+      "why": "an 與母音音素相接。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S029_EX_2",
+      "prompt": "___ useful tool",
+      "steps": [
+        "tool 單數可數。",
+        "判斷緊接的 useful。",
+        "useful 以 /j/ 子音音素開頭。"
+      ],
+      "answer": "a useful tool",
+      "why": "字母 u 不保證使用 an。"
+    },
+    {
+      "id": "ENG_R4_U05_ENG_R4_S029_EX_3",
+      "prompt": "___ honest answer",
+      "steps": [
+        "answer 單數可數。",
+        "honest 的 h 不發音。",
+        "起始音為母音。"
+      ],
+      "answer": "an honest answer",
+      "why": "依發音而非 h 字母。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到母音字母就用 an。",
+      "whyWrong": "u、e 等字母可能以子音音素開頭。",
+      "correction": "實際念出下一個詞。"
+    },
+    {
+      "belief": "所有單數名詞都要 a/an。",
+      "whyWrong": "特定名詞可能用 the，專有名詞通常不用。",
+      "correction": "先判斷指涉與可數性。"
+    },
+    {
+      "belief": "a/an 要看核心名詞的發音。",
+      "whyWrong": "若中間有形容詞，冠詞緊接形容詞。",
+      "correction": "看冠詞後第一個發音。"
+    },
+    {
+      "belief": "不可數名詞前可直接放 a。",
+      "whyWrong": "a/an 表一個可數單位。",
+      "correction": "加單位詞或改用 some。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "hour 前用哪個冠詞？",
+      "answer": "an。",
+      "reason": "h 不發音。"
+    },
+    {
+      "prompt": "university 前用哪個冠詞？",
+      "answer": "a。",
+      "reason": "起始音為 /j/。"
+    },
+    {
+      "prompt": "a/an 可直接修飾複數名詞嗎？",
+      "answer": "不可以。",
+      "reason": "它標示單數。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

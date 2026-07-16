@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_257",
+  "subject": "english",
+  "unitId": "ENG_R4_U38",
+  "skillId": "ENG_R4_S257",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S256"
+  ],
+  "objectives": [
+    "辨認原因、處理與結果的角色。",
+    "區分先後與真正因果。",
+    "用反事實問題檢查關係方向。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S257_SEC_1",
+      "title": "先後不等於因果",
+      "content": "A before B 只保證時間順序。還要問 A 如何造成 B，文本是否有 so、because 或可理解機制。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S257_SEC_2",
+      "title": "找中間機制",
+      "content": "lights added → path visible → walkers feel safer。中間的 visible 讓因果不是只靠同時變化。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S257_SEC_3",
+      "title": "方向要正確",
+      "content": "wet road causes slower driving，不是 slower driving causes rain。將原因與結果各寫一邊。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S257_SEC_4",
+      "title": "做反事實檢查",
+      "content": "若沒有 A，B 是否仍可由本文同樣發生？這不能證明所有現實因果，但能幫助檢查文本提出的機制。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U38_ENG_R4_S257_EX_1",
+      "prompt": "The sign was too small, so drivers missed the turn.",
+      "steps": [
+        "small 是問題。",
+        "missed turn 是結果。",
+        "可見性為機制。"
+      ],
+      "answer": "Small sign → missed turn",
+      "why": "方向不可倒。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S257_EX_2",
+      "prompt": "After lights were added, evening use increased because people could see the path.",
+      "steps": [
+        "有 after 但也有 because。",
+        "see path 是機制。",
+        "支持 lights effect。"
+      ],
+      "answer": "Lights helped increase evening use.",
+      "why": "不宣稱唯一原因。"
+    },
+    {
+      "id": "ENG_R4_U38_ENG_R4_S257_EX_3",
+      "prompt": "Rain began and the game moved indoors.",
+      "steps": [
+        "時間相鄰。",
+        "outdoor game 受 rain 影響。",
+        "機制合理。"
+      ],
+      "answer": "Rain caused the move indoors.",
+      "why": "不是室內移動造成下雨。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "較早事件一定是原因。",
+      "whyWrong": "可能只是先發生。",
+      "correction": "找機制與因果詞。"
+    },
+    {
+      "belief": "結果可反過來當原因。",
+      "whyWrong": "方向會破壞事件鏈。",
+      "correction": "畫箭頭。"
+    },
+    {
+      "belief": "一個原因必定是唯一原因。",
+      "whyWrong": "文本可能只支持 helped。",
+      "correction": "控制因果強度。"
+    },
+    {
+      "belief": "because 後是結果。",
+      "whyWrong": "because 後通常引原因。",
+      "correction": "核對方向。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A before B 足以證明因果嗎？",
+      "answer": "不足",
+      "reason": "還需機制。"
+    },
+    {
+      "prompt": "because 後通常是哪一角色？",
+      "answer": "原因",
+      "reason": "主要句呈結果。"
+    },
+    {
+      "prompt": "helped 與 caused 哪個較保守？",
+      "answer": "helped",
+      "reason": "適合有限證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "What time can you meet, and where should we wait?\nWhich reply answers both questions?",
+  "options": [
+    "I can meet at six by the library door.",
+    "The library has many books.",
+    "Six people can come.",
+    "I will wait for your next message."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "六點回答時間，圖書館門口回答地點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只描述場所，沒有時間或會合位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "six 被誤作人數，也未給地點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "等待新訊息沒有回答目前兩個問題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s222-cover-time-and-place-questions",
+    "map-two-wh-requests-to-two-reply-details"
+  ],
+  "representationType": "message-reply-two-part",
+  "misconceptionTargets": [
+    "answer-only-one-of-two-questions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "多問句回覆要逐一覆蓋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同一句可以簡潔提供兩項必要資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

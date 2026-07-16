@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S218",
+  "subject": "english",
+  "unitId": "ENG_R4_U32",
+  "skillId": "ENG_R4_S218",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "prerequisites": [
+    "ENG_R4_S217"
+  ],
+  "objectives": [
+    "能辨認電子郵件與簡短訊息中寄件者、收件者、主旨和正文。",
+    "能依欄位與排列判斷每段文字的功能，不把格式標記當內容。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S218_SEC_01",
+      "title": "先讀 From、To 和 Subject",
+      "content": "From 指寄件者，To 指收件者，Subject 用短語說明信件主題。三個欄位回答誰寫、寫給誰和談什麼；不能因人名最先出現，就把寄件者誤認成收件者。"
+    },
+    {
+      "id": "ENG_R4_L_S218_SEC_02",
+      "title": "正文位於稱呼與署名之間",
+      "content": "Dear Mr. Lin 或 Hi Amy 是開頭稱呼，接下來的句子才是正文。最後的 Best wishes、Thank you 和姓名用來收束訊息；署名指出寫信者，不是新的收件人。"
+    },
+    {
+      "id": "ENG_R4_L_S218_SEC_03",
+      "title": "簡訊常省略完整欄位",
+      "content": "手機訊息可能只顯示人名、時間和幾句對話，沒有 Subject。此時要看畫面上的姓名標記與對話方向，判斷誰傳送哪一句，不能套用電子郵件的完整格式。"
+    },
+    {
+      "id": "ENG_R4_L_S218_SEC_04",
+      "title": "格式提供定位，不直接保證內容",
+      "content": "Subject: Trip plan 能說明信件談旅行計畫，卻不能證明行程已確定。欄位協助快速找到資訊，但真正的日期、決定與要求仍要從正文讀取。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S218_EX_01",
+      "prompt": "From: Amy\nTo: Ben\nSubject: Library books",
+      "steps": [
+        "找到 From 後的人名。",
+        "找到 To 後的人名。",
+        "把 Subject 當成主題。"
+      ],
+      "answer": "Amy writes to Ben about library books.",
+      "why": "From 後的 Amy 是寄件者，To 後的 Ben 是收件者；Library books 只說明信件主題。三個欄位各有不同功能，不能把主旨當成人名。"
+    },
+    {
+      "id": "ENG_R4_L_S218_EX_02",
+      "prompt": "Hi Mia,\nThe bus will leave at nine.\nSee you,\nLeo",
+      "steps": [
+        "辨認開頭稱呼。",
+        "讀取中間的正文。",
+        "由最後姓名找出寄件者。"
+      ],
+      "answer": "Leo sends the message to Mia.",
+      "why": "Hi Mia 指出訊息寫給 Mia，最後的 Leo 是署名。中間一句提供公車時間，因此不能因 Mia 位於第一行就認為她是寫信者。"
+    },
+    {
+      "id": "ENG_R4_L_S218_EX_03",
+      "prompt": "10:15  Ken: I am at the front door.\n10:16  You: I will come down.",
+      "steps": [
+        "用姓名標記分辨兩方。",
+        "依時間排列訊息。",
+        "確認第二句由畫面使用者傳送。"
+      ],
+      "answer": "Ken is waiting at the front door.",
+      "why": "Ken 的訊息直接說他在前門，下一分鐘的回覆表示收訊者會下樓。You 是畫面使用者，不是名叫 You 的第三個人。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "把 To 後的人名當成寫信者。",
+      "whyWrong": "To 標示訊息要送給誰，寄件者在 From 欄。",
+      "correction": "先固定欄位功能，再讀人名。"
+    },
+    {
+      "belief": "看到 Subject 就認為主旨內容已經發生。",
+      "whyWrong": "主旨只概括話題，實際狀態要由正文確認。",
+      "correction": "把主旨當索引，不把它當完整結論。"
+    },
+    {
+      "belief": "署名是下一位說話者。",
+      "whyWrong": "信末姓名通常表示前文的寫作者。",
+      "correction": "先找稱呼與正文邊界，再判讀信末姓名。"
+    },
+    {
+      "belief": "簡訊沒有 From 和 To 就無法辨認說話者。",
+      "whyWrong": "姓名標記、左右方向或 You 仍能指出訊息來源。",
+      "correction": "使用畫面提供的人名與時間線索。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "電子郵件中的 Subject 是人名還是主題？",
+      "answer": "主題",
+      "reason": "它用短語概括正文內容。"
+    },
+    {
+      "prompt": "信末的 Best wishes 後接 Leo，Leo 通常是誰？",
+      "answer": "寄件者",
+      "reason": "結尾後的姓名是署名。"
+    },
+    {
+      "prompt": "簡訊中的 You 一定是第三個人的名字嗎？",
+      "answer": "不一定",
+      "reason": "它常代表正在看畫面的使用者。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  }
+}

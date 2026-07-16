@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_276_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S276"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The bus arrived late because a tree blocked the road. As a result, Maya missed the opening song. Which chain is correct?",
+  "options": [
+    "Missed song → blocked road → late bus",
+    "Late bus → missed song → blocked road",
+    "Blocked road → late bus → missed song",
+    "Blocked road → missed song → bus arrived early"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "結果被錯放成最早原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "道路阻塞應先於公車延誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "樹阻路造成晚到，晚到再造成錯過歌曲。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文本說公車晚到，不是早到。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s276-q07-order-two-stage-causal-chain",
+    "combine-because-and-as-a-result"
+  ],
+  "representationType": "multi-step-cause-chain",
+  "misconceptionTargets": [
+    "reverse-causal-direction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩組因果詞串成三節鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項保持每一箭頭的原因與結果方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

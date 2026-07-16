@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_023_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "A pair of gloves ___ in my bag before lunch.",
+  "options": [
+    "am",
+    "was",
+    "were",
+    "are"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "am：主詞不是 I。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "was：核心主詞 pair 單數，before lunch 在敘事中指過去。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "were：誤由 gloves 控制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "are：數與時態不合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "select-be-by-subject-and-time",
+    "identify-head-subject-number-and-event-time"
+  ],
+  "representationType": "be-subject-time-agreement",
+  "misconceptionTargets": [
+    "agree-with-nearest-noun-or-time-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「以主詞的人稱與數決定 be 形式，再以明確時間線索區分現在 am/is/are 與過去 was/were。」可推出 was；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 was 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

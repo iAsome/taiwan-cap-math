@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'For this reason, the team practiced indoors.' Text: Strong wind made the field unsafe. [A] The players used the school hall. [B] They worked on short passes. [C] The coach ended practice at five. [D] Which position is best?",
+  "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "For this reason 回指強風危險，並先概括改到室內，再由 hall 具體化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "放在 hall 後會重說已知地點，且原因與決定被隔開。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "短傳練習已在室內，之後才說決定順序太晚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "結束練習後才說室內決定不合時間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s277-q05-insert-for-this-reason-after-hazard",
+    "connect-cause-to-location-decision"
+  ],
+  "representationType": "reason-result-insertion",
+  "misconceptionTargets": [
+    "delay-result-until-after-details"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原因句後應立即接由此產生的主要決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "A 位置讓 hall 與 indoor 形成總說到細節。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

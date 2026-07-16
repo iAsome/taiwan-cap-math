@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_275_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S275"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Paragraph topic: Ways a school cuts food waste. Which sentence does not belong?",
+  "options": [
+    "Students take only the amount they can eat.",
+    "The gym floor was painted blue last summer.",
+    "Unopened fruit is placed on a share table.",
+    "The kitchen counts what is left each day."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "控制取餐量能減少剩食。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "體育館地板顏色與食物浪費無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "分享未開封水果可避免丟棄。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "記錄剩餘量有助掌握浪費。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s275-q06-remove-off-topic-school-detail",
+    "separate-shared-setting-from-paragraph-purpose"
+  ],
+  "representationType": "irrelevant-detail-detection",
+  "misconceptionTargets": [
+    "keep-any-sentence-about-school"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不相關句即使是學校資訊，也不支持指定主題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項缺少 food 或 waste 的功能連結。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

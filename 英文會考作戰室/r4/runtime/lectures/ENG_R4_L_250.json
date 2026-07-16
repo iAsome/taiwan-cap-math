@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_250",
+  "subject": "english",
+  "unitId": "ENG_R4_U37",
+  "skillId": "ENG_R4_S250",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "prerequisites": [
+    "ENG_R4_S249"
+  ],
+  "objectives": [
+    "依題目所問類型快速掃讀專有名稱與數字。",
+    "辨認相鄰數字的單位與欄位，不交換日期、價格或時間。",
+    "定位後回讀整列或整句確認限制。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S250_SEC_1",
+      "title": "先知道要掃什麼",
+      "content": "who 找人名，when 找日期或時間，where 找地點，how much 找價格或數量。先決定資料類型，眼睛才不會被其他數字帶走。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S250_SEC_2",
+      "title": "數字必須帶單位",
+      "content": "15 可能是日期、年齡、分鐘或價格。掃到數字後，把前後單位與欄名一起讀，不能只抄數字。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S250_SEC_3",
+      "title": "同列資料不可串錯",
+      "content": "行程表常同時有地點與時間。找到 Green Park 後，要沿同一列讀 departure，不可跳到下一列的時間。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S250_SEC_4",
+      "title": "最後核對限定詞",
+      "content": "題目可能問 first、last、under 12、after noon。找到資料後再檢查比較或邊界，避免答成最醒目但不符合條件的項目。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U37_ENG_R4_S250_EX_1",
+      "prompt": "List: May 4—Hall A; May 6—Hall B. Where is the May 6 event?",
+      "steps": [
+        "掃日期 May 6。",
+        "沿同一項讀地點。",
+        "不取 May 4 的 Hall A。"
+      ],
+      "answer": "Hall B",
+      "why": "日期與地點保持同項。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S250_EX_2",
+      "prompt": "Prices: child $40; adult $80. How much is one adult ticket?",
+      "steps": [
+        "題目鎖定 adult。",
+        "沿該列找 price。",
+        "保留貨幣單位。"
+      ],
+      "answer": "$80",
+      "why": "$40 是另一類票價。"
+    },
+    {
+      "id": "ENG_R4_U37_ENG_R4_S250_EX_3",
+      "prompt": "Bus 1: 8:10; Bus 2: 8:35. Which leaves later?",
+      "steps": [
+        "掃兩個時間。",
+        "比較小時相同時的分鐘。",
+        "35 晚於 10。"
+      ],
+      "answer": "Bus 2",
+      "why": "8:35 比 8:10 晚。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到第一個數字就抄。",
+      "whyWrong": "文章可能有多種數值。",
+      "correction": "先定位題目欄位與單位。"
+    },
+    {
+      "belief": "同一表格的資訊可以跨列組合。",
+      "whyWrong": "每列通常是一筆完整資料。",
+      "correction": "沿同一列或同一項核對。"
+    },
+    {
+      "belief": "較大的數字一定代表較晚。",
+      "whyWrong": "日期、時間與價格需依單位比較。",
+      "correction": "先判斷數值類型。"
+    },
+    {
+      "belief": "掃讀等於不用回讀。",
+      "whyWrong": "掃讀只負責定位。",
+      "correction": "找到後仍需讀完整欄位與限制。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "題目問 where，優先掃哪類資訊？",
+      "answer": "地點名稱",
+      "reason": "再讀其所在整項。"
+    },
+    {
+      "prompt": "找到 20 後還要檢查什麼？",
+      "answer": "單位與欄位",
+      "reason": "20 可能代表多種資料。"
+    },
+    {
+      "prompt": "表格中可把 A 列地點配 B 列時間嗎？",
+      "answer": "不可",
+      "reason": "應維持同一筆資料。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  }
+}

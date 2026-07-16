@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Can you pick up Ben at the station at 5:30 and call me after you meet him?\nWhich reply accepts every part?",
+  "options": [
+    "Ben likes the station.",
+    "I can call at 5:30 without going there.",
+    "Yes. I will meet Ben at the station at 5:30 and call you afterward.",
+    "I will ask Ben to pick up the station."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人物喜好與接送任務無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只打電話並未接人，而且 after 條件被忽略。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回覆包含人物、地點、時間和見面後來電。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "station 不能成為被接送的物件，人物角色也顛倒。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s222-accept-pickup-and-followup-call",
+    "preserve-agent-person-place-time-and-sequence"
+  ],
+  "representationType": "message-reply-sequenced-task",
+  "misconceptionTargets": [
+    "complete-followup-but-skip-main-task"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "複合任務需保留先後次序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "afterward 清楚連回見到 Ben 之後。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

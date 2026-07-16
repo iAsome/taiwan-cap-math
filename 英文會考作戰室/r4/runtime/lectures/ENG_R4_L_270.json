@@ -1,0 +1,130 @@
+{
+  "id": "ENG_R4_L_270",
+  "subject": "english",
+  "unitId": "ENG_R4_U40",
+  "skillId": "ENG_R4_S270",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S269"
+  ],
+  "objectives": [
+    "從感嘆、停頓、反問與回應推論情緒。",
+    "區分說話內容與說話者感受。",
+    "避免只靠單一驚嘆號判斷過強情緒。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S270_SEC_1",
+      "title": "內容先於標點",
+      "content": "驚嘆號可表喜悅、驚訝、憤怒或警告。先讀說了什麼，再用標點調整強度。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S270_SEC_2",
+      "title": "回應能確認語調",
+      "content": "A 說 I lost the key again，B 回 Don't worry，顯示 A 可能焦急或挫折。對方的安慰、祝賀或道歉是重要證據。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S270_SEC_3",
+      "title": "停頓與修正",
+      "content": "Well...、I guess、maybe 常顯示猶豫；At last!、We did it! 常顯示如釋重負或興奮。仍要結合事件。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S270_SEC_4",
+      "title": "採最小充分情緒",
+      "content": "若只支持 worried，就不要升成 terrified；若說話者既驚訝又高興，可選 pleasantly surprised，而非單一極端。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U40_ENG_R4_S270_EX_1",
+      "prompt": "A: I can't find my ticket. B: Stay calm; we'll check your bag.",
+      "steps": [
+        "A 遺失入場物。",
+        "B 說 stay calm。",
+        "推出 worried。"
+      ],
+      "answer": "worried",
+      "why": "不是 bored。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S270_EX_2",
+      "prompt": "We finished before the rain—what a relief!",
+      "steps": [
+        "有壓力事件。",
+        "成功避雨。",
+        "relief 明示。"
+      ],
+      "answer": "relieved",
+      "why": "可帶高興但核心是放心。"
+    },
+    {
+      "id": "ENG_R4_U40_ENG_R4_S270_EX_3",
+      "prompt": "Well... I may need more time.",
+      "steps": [
+        "Well 與省略號。",
+        "may 弱化。",
+        "顯示 hesitant。"
+      ],
+      "answer": "hesitant",
+      "why": "不是 confidently refusing。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "驚嘆號一定是生氣。",
+      "whyWrong": "也可表喜悅或警告。",
+      "correction": "先讀內容。"
+    },
+    {
+      "belief": "只看第一位說話者。",
+      "whyWrong": "對方回應可確認情緒。",
+      "correction": "讀完整對話。"
+    },
+    {
+      "belief": "worry 可以直接推成 terror。",
+      "whyWrong": "強度需有額外證據。",
+      "correction": "選最小充分情緒。"
+    },
+    {
+      "belief": "猶豫等於拒絕。",
+      "whyWrong": "可能尚未決定。",
+      "correction": "保留不確定程度。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Stay calm 常回應哪類情緒？",
+      "answer": "緊張或擔心",
+      "reason": "安撫語確認。"
+    },
+    {
+      "prompt": "Well... may 顯示什麼？",
+      "answer": "猶豫或不確定",
+      "reason": "語氣被弱化。"
+    },
+    {
+      "prompt": "驚嘆號能單獨決定情緒嗎？",
+      "answer": "不能",
+      "reason": "需配合內容。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

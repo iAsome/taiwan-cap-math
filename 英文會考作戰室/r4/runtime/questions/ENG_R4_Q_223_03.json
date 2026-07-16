@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_223_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S223"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Post: The school band played three songs. I loved the last one.\nWhat does the post include?",
+  "options": [
+    "Only a personal feeling",
+    "Only a number with no event",
+    "An event detail and a personal reaction",
+    "Proof that the last song was best"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一句還提供表演與曲數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "three songs 連到樂團演奏事件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "第一句是事件資訊，第二句是個人喜愛。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一個人的喜愛不能證明歌曲客觀最佳。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s223-classify-mixed-fact-and-reaction-post",
+    "avoid-turning-preference-into-proof"
+  ],
+  "representationType": "social-post-mixed-content",
+  "misconceptionTargets": [
+    "force-whole-post-into-one-category"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩句在同一貼文中扮演不同功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反應可真實表達，卻不等於普遍證明。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

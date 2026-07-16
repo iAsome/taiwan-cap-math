@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_285",
+  "subject": "english",
+  "unitId": "ENG_R4_U43",
+  "skillId": "ENG_R4_S285",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S284"
+  ],
+  "objectives": [
+    "分別圈出兩份文件的關鍵資訊。",
+    "找出語意相同但措辭不同的共同點。",
+    "排除只出現在單一文件的細節。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S285_SEC_1",
+      "title": "先各讀一次",
+      "content": "把 A 與 B 當兩個證據欄。各自寫下 who、where、when、what，再比對交集。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S285_SEC_2",
+      "title": "同義不必同字",
+      "content": "opens at nine 與 from 9:00 都表示九點開始；不能因字面不同而錯過共同資訊。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S285_SEC_3",
+      "title": "共同資訊要兩邊都有",
+      "content": "A 有 free drinks、B 沒提飲料，就不能稱為共同點。答案必須能指出 A 與 B 的各一處。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S285_SEC_4",
+      "title": "控制結論範圍",
+      "content": "兩份文件都說 Saturday，只能推出共同日期，不能再推天氣、參加人數或活動品質。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S285_EX_1",
+      "prompt": "A: The shop opens at 9. B: Service hours: 9:00–17:00.",
+      "steps": [
+        "A 找 opens at 9。",
+        "B 找時段起點 9:00。",
+        "取共同開始時間。"
+      ],
+      "answer": "Both say service begins at 9:00.",
+      "why": "不同格式表達同一時間。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S285_EX_2",
+      "prompt": "A: Meet at East Gate. B: Bus pickup—East Gate.",
+      "steps": [
+        "圈地點。",
+        "確認都是 East Gate。",
+        "不加入不同目的。"
+      ],
+      "answer": "East Gate is common.",
+      "why": "meet 與 pickup 功能不同，但地點相同。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S285_EX_3",
+      "prompt": "A: Bring a bottle. B: Water bottles are required.",
+      "steps": [
+        "找物品 bottle。",
+        "required 強度包含 bring。",
+        "保留必要物品。"
+      ],
+      "answer": "A bottle is needed.",
+      "why": "兩份文件共同支持。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "共同資訊必須使用完全相同單字。",
+      "whyWrong": "文件常用同義句。",
+      "correction": "比較意思而非表面字串。"
+    },
+    {
+      "belief": "A 提過就算共同點。",
+      "whyWrong": "共同需 B 也支持。",
+      "correction": "每個答案標 A、B 兩個位置。"
+    },
+    {
+      "belief": "兩份文件有同主題就所有細節都共同。",
+      "whyWrong": "同主題仍可能有不同規則。",
+      "correction": "只取明示交集。"
+    },
+    {
+      "belief": "共同資訊可以用常識補足。",
+      "whyWrong": "常識不是第二份文件證據。",
+      "correction": "答案限於兩份文字。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "共同資訊需要幾份文件支持？",
+      "answer": "兩份",
+      "reason": "每份都要有明示證據。"
+    },
+    {
+      "prompt": "同義句可算共同嗎？",
+      "answer": "可以",
+      "reason": "語意相同即可。"
+    },
+    {
+      "prompt": "只在 A 出現的價格可選嗎？",
+      "answer": "不可",
+      "reason": "不是交集。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

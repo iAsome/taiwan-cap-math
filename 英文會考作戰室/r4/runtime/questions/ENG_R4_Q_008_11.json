@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_008_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "The instruction reads, 'Check one box.' How many boxes should be marked?",
+  "options": [
+    "two",
+    "all boxes",
+    "one",
+    "none"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "two：超出。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "all boxes：超出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "one：one 明示數量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "none：未執行。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "execute-one-step-classroom-command",
+    "map-imperative-verb-object-position"
+  ],
+  "representationType": "single-classroom-command",
+  "misconceptionTargets": [
+    "act-on-mentioned-object-with-wrong-verb"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「祈使句的核心動詞與受詞直接指定一個可觀察課堂動作」可推出 one；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 one 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

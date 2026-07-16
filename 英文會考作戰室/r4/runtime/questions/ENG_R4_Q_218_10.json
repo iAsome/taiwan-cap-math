@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_218_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S218"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Thank you for the pictures.\nBest wishes,\nOmar\nWhat does Omar's name show?",
+  "options": [
+    "The topic",
+    "The writer",
+    "The receiver",
+    "The time"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "主題是感謝照片，不是 Omar 這個姓名。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "結尾語後的 Omar 是署名，指出寫信者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "收件者沒有在這段節錄中出現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "姓名不表示傳送時刻。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "u32-s218-interpret-name-after-signoff",
+    "avoid-inferring-omitted-recipient"
+  ],
+  "representationType": "email-signature-role",
+  "misconceptionTargets": [
+    "treat-final-name-as-addressee"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "署名功能可由它在結尾後的位置確認。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "節錄沒有提供的收件者不能猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

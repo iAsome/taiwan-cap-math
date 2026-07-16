@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_277_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S277"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Sentence to insert: 'It also has a low shelf for children.' Text: The waiting room has a table with free magazines. [A] The windows face the garden. [B] Tea is sold near the door. [C] Families often wait here. [D] Where should it go?",
+  "options": [
+    "After A",
+    "After B",
+    "After C",
+    "At A"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "在窗戶句後，It 容易錯指 windows 或 garden。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "在茶販售句後，It 的先行詞不清楚。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "在 families 後，It 可能被誤讀成 waiting place，但距 table 太遠。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "緊接第一句時 It 明確回指 waiting room，also 增加另一項設施。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s277-q04-place-also-facility-near-room",
+    "avoid-intervening-antecedent-confusion"
+  ],
+  "representationType": "pronoun-based-insertion",
+  "misconceptionTargets": [
+    "insert-near-any-family-word"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "插入句需要 waiting room 作單數地點先行詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第一個空格讓 also 與已有 table 形成設施並列。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

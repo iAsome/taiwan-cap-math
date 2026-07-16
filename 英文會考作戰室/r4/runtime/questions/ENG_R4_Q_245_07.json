@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_245_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S245"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-10"
+  ],
+  "stimulusId": null,
+  "stem": "The river path used to end at a busy road. The town built a short bridge over the traffic. Now riders can reach the park without leaving the bike path.\nWhich answer is supported by the full text?",
+  "options": [
+    "No rider ever uses a road",
+    "The park moved across town",
+    "A bridge made the bike route safer and more complete",
+    "The bridge is short"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No rider ever uses a road：原文只談這一路線的新選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The park moved across town：改變的是路線，不是公園位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "A bridge made the bike route safer and more complete：開頭路線中斷與結尾連到公園由橋解決。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The bridge is short：長度只是設備細節。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "confirm-center-with-opening-and-ending",
+    "connect-initial-state-to-final-result"
+  ],
+  "representationType": "opening-ending-reading",
+  "misconceptionTargets": [
+    "copy-opening-or-ending-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-10"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「開頭設定的問題或主題與結尾給出的結果互相呼應」可推出 A bridge made the bike route safer and more complete；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 A bridge made the bike route safer and more complete 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

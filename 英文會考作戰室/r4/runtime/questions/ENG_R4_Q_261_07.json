@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_261_07",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S261"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-6-4-5",
+    "AUTH-ENGLISH-LP-7-4-1",
+    "AUTH-ENGLISH-LP-9-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "The water is shallow, or not deep enough to cover an adult's knees. What does shallow mean?",
+  "options": [
+    "unsafe to drink",
+    "far from shore",
+    "not deep",
+    "moving quickly"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "unsafe to drink：水質未提。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "far from shore：位置未提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "not deep：or 後直接改述 not deep。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "moving quickly：流速未提。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "infer-word-from-definition",
+    "replace-word-with-definition"
+  ],
+  "representationType": "same-sentence-definition",
+  "misconceptionTargets": [
+    "choose-topic-related-meaning"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-6-4-5",
+      "AUTH-ENGLISH-LP-7-4-1",
+      "AUTH-ENGLISH-LP-9-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「同句的 is、means、or、that is 等定義訊號」可推出 not deep；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 not deep 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,142 @@
+{
+  "id": "ENG_R4_L_231",
+  "subject": "english",
+  "unitId": "ENG_R4_U34",
+  "skillId": "ENG_R4_S231",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S230"
+  ],
+  "objectives": [
+    "先找空格前後的功能字，再判斷缺少的詞性。",
+    "分開檢查句法位置與整句意思，不用只靠中文翻譯猜答案。",
+    "能說明其餘三項為何無法放入同一位置。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U34_ENG_R4_S231_SEC_1",
+      "title": "從位置開始",
+      "content": "克漏空格不是孤立的洞。先看前一字與後一字：冠詞後、名詞前常需要形容詞；主詞後常需要動詞；介系詞後常接名詞或 V-ing。先決定功能，才看選項。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S231_SEC_2",
+      "title": "畫出最小骨架",
+      "content": "把長句縮成主詞、動詞與必要受詞。例如 The young cook works carefully 可縮成 cook works；若空格在 works 後，便檢查是否修飾動作。這一步能排除字根相同但詞性不同的選項。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S231_SEC_3",
+      "title": "句法與語意都要過",
+      "content": "位置只告訴你需要哪一類字，最後仍要放回整句讀一次。The soup smells good 的 good 描述湯的狀態；carefully 則修飾動作。兩道檢查缺一不可。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S231_SEC_4",
+      "title": "四步作答",
+      "content": "一圈功能字，二標主詞與動詞，三預測詞性，四逐項代入。遇到不熟的字時，仍可利用 a、to、be、very 等可見線索縮小範圍。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U34_ENG_R4_S231_EX_1",
+      "prompt": "The ___ dog waited by the door. (quiet / quietly / quietness)",
+      "steps": [
+        "The 後已有空格，dog 是名詞。",
+        "空格要直接描述 dog。",
+        "選能放在名詞前的形容詞。"
+      ],
+      "answer": "quiet",
+      "why": "quiet 放在 dog 前描述狗；quietly 通常修飾動作。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S231_EX_2",
+      "prompt": "Mia spoke ___. (clear / clearly / clearness)",
+      "steps": [
+        "spoke 已是完整動詞。",
+        "空格說明說話的方式。",
+        "選修飾動詞的副詞。"
+      ],
+      "answer": "clearly",
+      "why": "clearly 回答『怎麼說』，功能正確。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S231_EX_3",
+      "prompt": "We plan to ___ early. (leave / left / leaving)",
+      "steps": [
+        "plan to 後看 to 的功能。",
+        "這裡的 to 接動詞原形。",
+        "選 leave。"
+      ],
+      "answer": "leave",
+      "why": "to leave 組成正確結構；left 與 leaving 都不能直接接在此處。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到同字根就選最熟的字。",
+      "whyWrong": "字根接近不等於句法功能相同。",
+      "correction": "先說出空格需要名詞、動詞、形容詞或副詞，再選字形。"
+    },
+    {
+      "belief": "中文翻起來差不多就都可以。",
+      "whyWrong": "英文位置有固定功能限制。",
+      "correction": "把選項逐一代入並檢查左右相接方式。"
+    },
+    {
+      "belief": "be 後一定接副詞。",
+      "whyWrong": "be 常連接主詞與狀態，後面常用形容詞。",
+      "correction": "先判斷 be 是連綴功能還是進行式的一部分。"
+    },
+    {
+      "belief": "to 後一定接名詞。",
+      "whyWrong": "to 可能是介系詞，也可能是不定詞標記。",
+      "correction": "依前面的搭配判斷 to 後要名詞、V-ing 或動詞原形。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A ___ train arrived. 空格最可能需要哪一類字？",
+      "answer": "形容詞",
+      "reason": "空格位於冠詞與名詞 train 之間，用來描述 train。"
+    },
+    {
+      "prompt": "The child smiled happily. happily 修飾什麼？",
+      "answer": "smiled",
+      "reason": "它回答孩子怎麼笑，修飾動作。"
+    },
+    {
+      "prompt": "can 後的主要動詞應用哪種形式？",
+      "answer": "動詞原形",
+      "reason": "情態動詞 can 後直接接動詞原形。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

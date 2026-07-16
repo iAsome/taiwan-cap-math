@@ -1,0 +1,93 @@
+{
+  "id": "ENG_R4_Q_274_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-6",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-10",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-13",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Rita told Eva that she had won the photo contest. The sentence alone does not say who won. Which revision makes Eva the winner?",
+  "options": [
+    "Rita told Eva about the contest.",
+    "She told her that the contest was over.",
+    "Rita, who won, told Eva the news.",
+    "Rita said to Eva, 'You won the photo contest.'"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這個改寫刪除了得獎者資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩個代名詞仍未指定得獎者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "關係子句明確把 Rita 設為得獎者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "直接引語中的 You 指向 Eva，清楚指定她得獎。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u41-s274-q04-revise-ambiguous-winner",
+    "replace-unclear-pronoun-with-direct-address"
+  ],
+  "representationType": "ambiguity-repair",
+  "misconceptionTargets": [
+    "assume-nearest-female-antecedent"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-6",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-10",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-13",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "修訂目標是消除 she 的雙重可能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第四項利用說話對象與第二人稱提供唯一指涉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

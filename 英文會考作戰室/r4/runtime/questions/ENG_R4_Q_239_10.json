@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_239_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S239"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The red paper is too dark. Do we have a lighter one? What is requested?",
+  "options": [
+    "a lighter piece of paper",
+    "a lamp",
+    "a smaller room",
+    "less time"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "a lighter piece of paper：one 替代 paper，lighter 與 red paper 的深色形成對比。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "a lamp：light 可聯想到燈，但 one 的先行名詞是 paper。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a smaller room：room 未出現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "less time：time 不可由 a ... one 在此替代。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "resolve-substitution-form",
+    "use-context-not-wordplay"
+  ],
+  "representationType": "adjective-one-substitution",
+  "misconceptionTargets": [
+    "interpret-lighter-as-object-weight-only"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「替代形式保留的名詞或動作內容」可推出 a lighter piece of paper；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 a lighter piece of paper 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

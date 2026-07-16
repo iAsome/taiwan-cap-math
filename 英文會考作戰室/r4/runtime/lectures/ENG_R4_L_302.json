@@ -1,0 +1,144 @@
+{
+  "id": "ENG_R4_L_302",
+  "subject": "english",
+  "unitId": "ENG_R4_U45",
+  "skillId": "ENG_R4_S302",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S301"
+  ],
+  "objectives": [
+    "把結論拆成可核對命題。",
+    "檢查 every、always、causes 等強詞。",
+    "選擇數據與方法實際支持的有限結論。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S302_SEC_1",
+      "title": "圈出強度詞",
+      "content": "all、never、proves、causes 需要很強證據。小樣本或單次觀察通常只支持 may、in this test。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S302_SEC_2",
+      "title": "核對樣本範圍",
+      "content": "研究三盆植物不能代表 every plant everywhere。結論對象不得大於樣本。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S302_SEC_3",
+      "title": "區分觀察與實驗",
+      "content": "控制實驗可較強談處理影響；單純一起出現只支持 association。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S302_SEC_4",
+      "title": "找反例與替代解釋",
+      "content": "只要資料中一個反例就能否定 every。若多項條件同時變，就不能歸因單一原因。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U45_ENG_R4_S302_EX_1",
+      "prompt": "3 plants grew more in light",
+      "steps": [
+        "樣本三盆。",
+        "有控制才談 test。",
+        "不擴張 all plants。"
+      ],
+      "answer": "In this test, the lit plants grew more.",
+      "why": "範圍匹配。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S302_EX_2",
+      "prompt": "Survey of 20 students",
+      "steps": [
+        "是自報觀察。",
+        "只代表受訪者。",
+        "不用 causes。"
+      ],
+      "answer": "Most surveyed students preferred A.",
+      "why": "不推全校。"
+    },
+    {
+      "id": "ENG_R4_U45_ENG_R4_S302_EX_3",
+      "prompt": "One exception to every",
+      "steps": [
+        "找反例。",
+        "every 被否定。",
+        "改為 most/some。"
+      ],
+      "answer": "The universal claim is unsupported.",
+      "why": "量詞需精確。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有數字就證明因果。",
+      "whyWrong": "數字也可能只是觀察。",
+      "correction": "檢查方法。"
+    },
+    {
+      "belief": "小樣本可代表所有人。",
+      "whyWrong": "範圍過大。",
+      "correction": "限於樣本。"
+    },
+    {
+      "belief": "多數等於全部。",
+      "whyWrong": "仍可能有反例。",
+      "correction": "保留 most。"
+    },
+    {
+      "belief": "結果符合預測就排除其他原因。",
+      "whyWrong": "可能有混淆變因。",
+      "correction": "看控制條件。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "三個樣本可推 every 嗎？",
+      "answer": "不可",
+      "reason": "範圍不足。"
+    },
+    {
+      "prompt": "觀察資料較適合用 causes 還是 associated with？",
+      "answer": "associated with",
+      "reason": "因果需控制。"
+    },
+    {
+      "prompt": "一個反例對 every 有何影響？",
+      "answer": "足以否定",
+      "reason": "every 不容例外。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

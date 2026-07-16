@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_257_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S257"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Nora practiced the difficult part slowly. A week later she played it without stopping. What likely helped the improvement?",
+  "options": [
+    "focused practice",
+    "avoiding the music",
+    "changing to an easier part",
+    "the week alone, without practice"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "focused practice：同一 difficult part 的慢练与后续流畅连接。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "avoiding the music：與 practiced 相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "changing to an easier part：原文仍是 difficult part。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the week alone, without practice：忽略机制。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "infer-causal-relation",
+    "identify-direction-and-mechanism"
+  ],
+  "representationType": "causal-inference",
+  "misconceptionTargets": [
+    "equate-sequence-with-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「事件先後、機制與結果共同支持原因方向」可推出 focused practice；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 focused practice 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

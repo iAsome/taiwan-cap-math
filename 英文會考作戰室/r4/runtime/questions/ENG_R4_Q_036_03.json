@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_036_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Several ___ joined the clean-up. Choose the plural of 'family'.",
+  "options": [
+    "familyes",
+    "family",
+    "families",
+    "familys"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "familyes：變化位置錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "family：several 要求複數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "families：子音 l 加 y 結尾，改 y 為 i 加 -es。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "familys：忽略子音+y 規則。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "form-regular-count-noun-plurals",
+    "apply-ending-rule-and-sentence-number-agreement"
+  ],
+  "representationType": "regular-plural-formation",
+  "misconceptionTargets": [
+    "append-s-without-checking-ending-or-context"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「依可數名詞字尾拼寫與語音規則形成 -s、-es、子音+y→-ies 等規則複數，並使限定詞與動詞一致。」可推出 families；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 families 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

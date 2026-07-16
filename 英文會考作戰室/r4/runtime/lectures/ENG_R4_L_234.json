@@ -1,0 +1,142 @@
+{
+  "id": "ENG_R4_L_234",
+  "subject": "english",
+  "unitId": "ENG_R4_U34",
+  "skillId": "ENG_R4_S234",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-4",
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S233"
+  ],
+  "objectives": [
+    "以單複數、人物與物件特徵找代名詞先行詞。",
+    "追蹤跨句指涉，不把最近的名詞自動當答案。",
+    "用事件角色與全文意思排除形式相合但語意錯誤的選項。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U34_ENG_R4_S234_SEC_1",
+      "title": "先看代名詞特徵",
+      "content": "he、she 指單一人物，it 指單一事物，they 可指複數人事物。先用這些特徵排除數量不合者，再處理語意。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S234_SEC_2",
+      "title": "不要只選最近名詞",
+      "content": "代名詞常指前句主題，不一定是距離最近的字。問自己：誰做了後面的動作？哪個名詞能合理承接？"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S234_SEC_3",
+      "title": "受格與所有格也有線索",
+      "content": "him、her、them 放在動詞或介系詞後；his、her、their 表所有。選項除了對象正確，也要使用位置要求的形式。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S234_SEC_4",
+      "title": "跨句建立小表格",
+      "content": "人物多時，可記成『誰—做什麼—擁有什麼』。每遇到代名詞便回表格核對，直到每個動作都有清楚執行者。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U34_ENG_R4_S234_EX_1",
+      "prompt": "Mia found a key. It was under the desk. It 指什麼？",
+      "steps": [
+        "列出 Mia 與 a key。",
+        "It 指單一物件。",
+        "能在桌下的是 key。"
+      ],
+      "answer": "the key",
+      "why": "單數物件與事件位置都支持 key。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S234_EX_2",
+      "prompt": "Ben and Leo carried the table. They moved slowly. They 指誰？",
+      "steps": [
+        "They 是複數。",
+        "前句有兩位搬桌者。",
+        "後句動作延續。"
+      ],
+      "answer": "Ben and Leo",
+      "why": "複數人物與移動事件都一致。"
+    },
+    {
+      "id": "ENG_R4_U34_ENG_R4_S234_EX_3",
+      "prompt": "Nora gave Amy her book. 若書屬於 Nora，如何避免不清楚？",
+      "steps": [
+        "her 可能指兩人。",
+        "直接重複所有者。",
+        "改寫所有格片語。"
+      ],
+      "answer": "Nora gave Amy Nora's book.",
+      "why": "重述 Nora 可消除 her 的雙重可能。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "代名詞一定指前面最近的名詞。",
+      "whyWrong": "距離近只是提示，不是規則。",
+      "correction": "同時檢查數量、人物類型與事件角色。"
+    },
+    {
+      "belief": "they 只能指人。",
+      "whyWrong": "they 也能指複數事物。",
+      "correction": "看先行詞的數量，不以人或物單獨判斷。"
+    },
+    {
+      "belief": "her 只有一種功能。",
+      "whyWrong": "her 可作受格，也可放在名詞前表所有。",
+      "correction": "看 her 後面是否緊接名詞。"
+    },
+    {
+      "belief": "段落換句後指涉就重設。",
+      "whyWrong": "主題常跨句延續。",
+      "correction": "保留前句角色表，直到文章明確換主題。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "books 後以哪個代名詞代替？",
+      "answer": "they 或 them",
+      "reason": "主格或受格依位置選用，但都保持複數。"
+    },
+    {
+      "prompt": "it 能指兩個箱子嗎？",
+      "answer": "不能",
+      "reason": "兩個箱子應用 they 或 them。"
+    },
+    {
+      "prompt": "判斷指涉時，距離與語意哪個更重要？",
+      "answer": "語意與句法共同證據",
+      "reason": "最近名詞若無法完成事件，就不能成為先行詞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-4",
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

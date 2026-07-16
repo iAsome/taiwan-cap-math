@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_284_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S284"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Can a 10:50 tour visitor get an audio guide before the desk closes?",
+  "options": [
+    "No, the Garden is closed at 12:20.",
+    "Yes, because Nature has 48 visits.",
+    "Yes, the tour begins 55 minutes before the 11:45 closing time.",
+    "No, the desk closes at 10:45."
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "No, the Garden is closed at 12:20.：Garden 狀態不影響較早 audio desk。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Yes, because Nature has 48 visits.：圖表數值不是開放依據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Yes, the tour begins 55 minutes before the 11:45 closing time.：10:50 到 11:45 相差五十五分鐘，仍在關閉前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "No, the desk closes at 10:45.：附註是 11:45。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "solve-with-chart-and-note",
+    "apply-table-chart-and-note-constraints"
+  ],
+  "representationType": "integrated-information-sheet",
+  "misconceptionTargets": [
+    "ignore-note-after-finding-table-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「主表或圖表提供的數值與 NOTE 限制同時套用後只剩一個可行方案」可推出 Yes, the tour begins 55 minutes before the 11:45 closing time.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Yes, the tour begins 55 minutes before the 11:45 closing time. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_11"
+  ]
+}

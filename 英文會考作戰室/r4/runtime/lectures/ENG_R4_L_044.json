@@ -1,0 +1,132 @@
+{
+  "id": "ENG_R4_L_044",
+  "subject": "english",
+  "unitId": "ENG_R4_U07",
+  "skillId": "ENG_R4_S044",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "prerequisites": [
+    "ENG_R4_S043"
+  ],
+  "objectives": [
+    "形成規則複數所有格 s'。",
+    "由上下文區分單數與複數擁有者。",
+    "保持被擁有名詞的數不受所有者數機械控制。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U07_ENG_R4_S044_SEC_1",
+      "title": "兩步形成規則複數所有格",
+      "content": "student→students→students'。先確認複數已含 s，再把撇號放在 s 後。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S044_SEC_2",
+      "title": "一位與多位擁有者",
+      "content": "one student's desk；two students' desks。撇號位置提供擁有者數的線索。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S044_SEC_3",
+      "title": "擁有者數不決定物品數",
+      "content": "the teachers' office 可能是多位老師共用一間辦公室；the teacher's books 是一位老師的多本書。兩邊分開判斷。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S044_SEC_4",
+      "title": "不規則複數另用 's",
+      "content": "children's games、men's room。因複數不以 s 結尾，仍加 's；不能套規則 s'。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U07_ENG_R4_S044_EX_1",
+      "prompt": "the lockers of three students",
+      "steps": [
+        "student 先變 students。",
+        "複數以 s 結尾。",
+        "在 s 後加撇號。"
+      ],
+      "answer": "the students' lockers",
+      "why": "擁有者為多位。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S044_EX_2",
+      "prompt": "a room for teachers",
+      "steps": [
+        "teachers 為規則複數。",
+        "表示多位教師共用。",
+        "使用 teachers'。"
+      ],
+      "answer": "the teachers' room",
+      "why": "room 可保持單數。"
+    },
+    {
+      "id": "ENG_R4_U07_ENG_R4_S044_EX_3",
+      "prompt": "books for children",
+      "steps": [
+        "children 是不規則複數。",
+        "字尾不是 s。",
+        "加 's。"
+      ],
+      "answer": "children's books",
+      "why": "不是 childrens'。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "複數所有格一律加 's。",
+      "whyWrong": "規則複數 s 結尾通常只加撇號。",
+      "correction": "students'，不是 students's。"
+    },
+    {
+      "belief": "撇號後一定要有 s。",
+      "whyWrong": "規則複數所有格是 s'。",
+      "correction": "先看複數是否已以 s 結尾。"
+    },
+    {
+      "belief": "多位擁有者一定有多件物品。",
+      "whyWrong": "所有者數與物品數獨立。",
+      "correction": "由後方名詞本身判斷。"
+    },
+    {
+      "belief": "children 以 n 結尾所以不是複數。",
+      "whyWrong": "它是不規則複數。",
+      "correction": "children's 使用複數語意加 's。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "多位學生的教室如何寫？",
+      "answer": "the students' classroom。",
+      "reason": "students 已以 s 結尾，只加撇號。"
+    },
+    {
+      "prompt": "一位學生的教室如何寫？",
+      "answer": "the student's classroom。",
+      "reason": "單數 student 加 's。"
+    },
+    {
+      "prompt": "children 的所有格是什麼？",
+      "answer": "children's。",
+      "reason": "不規則複數不以 s 結尾。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  }
+}

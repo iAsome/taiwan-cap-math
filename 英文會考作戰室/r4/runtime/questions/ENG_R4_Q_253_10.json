@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_253_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S253"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Phone plans: Light—5 GB $300; Plus—10 GB $450; Max—20 GB $700. Need at least 10 GB under $500. Which plan works?",
+  "options": [
+    "Light",
+    "Max",
+    "Light and Max",
+    "Plus"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Light：價格合但只有 5 GB。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Max：資料量合但 $700 超標。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Light and Max：各缺一條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Plus：10 GB 達下限且 $450 低於 $500。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "verify-list-constraints",
+    "apply-all-list-constraints"
+  ],
+  "representationType": "constraint-list",
+  "misconceptionTargets": [
+    "accept-most-conditions"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「清單每一欄與題目限制逐項核對後全部通過」可推出 Plus；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Plus 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

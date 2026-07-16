@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_283",
+  "subject": "english",
+  "unitId": "ENG_R4_U42",
+  "skillId": "ENG_R4_S283",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "prerequisites": [
+    "ENG_R4_S282"
+  ],
+  "objectives": [
+    "把圖表值轉述為語法完整的英文句。",
+    "選擇與資料強度一致的比較語句。",
+    "避免把局部資料擴張成永遠或所有情況。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S283_SEC_1",
+      "title": "主詞先對標籤",
+      "content": "句子主詞必須是圖中類別。10 AM had 35 visitors 的 35 不可接到 9 AM。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S283_SEC_2",
+      "title": "動詞選擇符合圖型",
+      "content": "長條圖可用 had、was；折線有時間順序時可用 rose 或 fell；圓餅圖用 accounted for 或 had a share of。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S283_SEC_3",
+      "title": "比較方向不能顛倒",
+      "content": "higher than 前是大值，lower than 前是小值。先寫原值，再決定比較詞。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S283_SEC_4",
+      "title": "只說資料支持的範圍",
+      "content": "圖只涵蓋三天，就說 during the three days；不能使用 always、never 或 every future day。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U42_ENG_R4_S283_EX_1",
+      "prompt": "Fri 12 kg; Sat 8 kg; Sun 5 kg",
+      "steps": [
+        "依時間讀三值。",
+        "數值持續下降。",
+        "限制在 Friday to Sunday。"
+      ],
+      "answer": "Waste fell each day from Friday to Sunday.",
+      "why": "方向與範圍都符合。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S283_EX_2",
+      "prompt": "Photo 45%; Clay 30%; Print 25%",
+      "steps": [
+        "找最高值 Photo。",
+        "保留 45%。",
+        "不用 every visitor。"
+      ],
+      "answer": "Photo received the largest share, at 45%.",
+      "why": "largest 與數值皆正確。"
+    },
+    {
+      "id": "ENG_R4_U42_ENG_R4_S283_EX_3",
+      "prompt": "Nature 48; Design 40",
+      "steps": [
+        "主詞 Nature 對 48。",
+        "比較方向為高。",
+        "差值八非必要。"
+      ],
+      "answer": "Nature had more visits than Design.",
+      "why": "句子不增加圖外原因。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到熟悉單字就選，不核對列欄。",
+      "whyWrong": "同一單字可能出現在不同區塊。",
+      "correction": "先定位區塊、欄名與同一列。"
+    },
+    {
+      "belief": "圖中最大圖形一定是答案。",
+      "whyWrong": "尺寸可能只是版面，數值與標籤才有意義。",
+      "correction": "讀數字、單位與圖例。"
+    },
+    {
+      "belief": "附註可以忽略。",
+      "whyWrong": "附註常改變資格、時間或可用方式。",
+      "correction": "最後把 NOTE 套回候選答案。"
+    },
+    {
+      "belief": "不同列的資訊可以自由拼接。",
+      "whyWrong": "跨列拼接會製造不存在的組合。",
+      "correction": "用手指沿同一列橫向核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "圖表只有三天，可說 always 嗎？",
+      "answer": "不可",
+      "reason": "範圍超出資料。"
+    },
+    {
+      "prompt": "higher than 前放哪個值？",
+      "answer": "較大值的類別",
+      "reason": "比較方向由主詞決定。"
+    },
+    {
+      "prompt": "圓餅圖 45% 可說 every visitor 嗎？",
+      "answer": "不可",
+      "reason": "45% 不是全部。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  }
+}

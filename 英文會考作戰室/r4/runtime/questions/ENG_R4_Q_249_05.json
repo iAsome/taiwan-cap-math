@@ -1,0 +1,89 @@
+{
+  "id": "ENG_R4_Q_249_05",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S249"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-3-4-9",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-5-4-8",
+    "AUTH-ENGLISH-LP-5-4-9"
+  ],
+  "stimulusId": null,
+  "stem": "Library message: Books due on May 8 may be returned by May 10 without an extra charge. What is the last free return date?",
+  "options": [
+    "May 10",
+    "May 8",
+    "May 18",
+    "any day in May"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "May 10：by May 10 without an extra charge 直接界定免費期限。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "May 8：May 8 是原到期日，不是寬限後最後日期。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "May 18：原文沒有這個日期。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "any day in May：原文明確限制到 May 10。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "locate-explicit-paraphrase",
+    "match-question-wording-to-source"
+  ],
+  "representationType": "explicit-paraphrase",
+  "misconceptionTargets": [
+    "require-exact-word-match"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-3-4-9",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-5-4-8",
+      "AUTH-ENGLISH-LP-5-4-9"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「題目關鍵概念與原文同義改寫指向同一資訊」可推出 May 10；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 May 10 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

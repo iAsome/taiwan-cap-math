@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_258_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S258"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-3-4-11",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Text: The umbrella by the door is wet, and rain can be heard outside. Which is a reasonable inference?",
+  "options": [
+    "It is probably raining",
+    "A typhoon will destroy the town",
+    "The umbrella belongs to Nora",
+    "It will rain forever"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "It is probably raining：兩項獨立線索直接支持。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "A typhoon will destroy the town：災害規模未提。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "The umbrella belongs to Nora：所有者未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "It will rain forever：永久語氣無證據。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "separate-inference-from-guess",
+    "minimize-unstated-premises"
+  ],
+  "representationType": "inference-versus-guess",
+  "misconceptionTargets": [
+    "choose-vivid-unsupported-detail"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-3-4-11",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「合理推論能逐步連回文本，猜測需加入未提供的新前提」可推出 It is probably raining；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 It is probably raining 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

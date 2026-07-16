@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "The club meeting is now on Thursday, not Wednesday.\nWhat is the main purpose?",
+  "options": [
+    "To invite a new member",
+    "To describe the club",
+    "To ask for a room",
+    "To report a schedule change"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "內容沒有邀請語。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "訊息沒有介紹社團活動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "地點未被詢問。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "now 與 not 對比新舊日期，目的是告知變更。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s219-detect-date-change-purpose",
+    "use-not-contrast-to-identify-update"
+  ],
+  "representationType": "message-purpose-change",
+  "misconceptionTargets": [
+    "treat-club-mention-as-description"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "新舊資訊對比比一般活動字更能決定目的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案只陳述已被明確更改的時程。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_219_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S219"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Subject: Saturday picnic\nWould you like to join us at the river park?\nWhy did the writer send this?",
+  "options": [
+    "To invite someone to a picnic",
+    "To report a lost bag",
+    "To ask for money",
+    "To cancel a trip"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "詢問是否願意同行，功能是邀請。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "訊息沒有遺失物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "內容沒有付款或借錢要求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "野餐仍被提出，沒有取消語句。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s219-infer-invitation-from-would-like",
+    "exclude-unmentioned-request-types"
+  ],
+  "representationType": "message-purpose-invitation",
+  "misconceptionTargets": [
+    "label-any-event-message-as-cancellation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "主旨與問句共同指出邀請目的。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "活動被提及不代表它已取消。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

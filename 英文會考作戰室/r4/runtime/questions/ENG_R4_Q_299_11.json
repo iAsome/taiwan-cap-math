@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_299_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S299"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A soil test requires adding equal water to three soil samples before timing the drainage. What makes the comparison fair?",
+  "options": [
+    "starting each sample on a different day",
+    "changing both soil and water amount",
+    "using the same amount of water",
+    "using three different timers"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "starting each sample on a different day：條件不一致。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "changing both soil and water amount：無法歸因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "using the same amount of water：相同輸入才能比較土壤排水。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "using three different timers：增加誤差。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "sequence-scientific-procedure",
+    "order-state-dependent-and-controlled-steps"
+  ],
+  "representationType": "science-procedure",
+  "misconceptionTargets": [
+    "sequence-by-sentence-length-or-guess"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「步驟的材料狀態、代名詞回指與時間標記形成不可顛倒的程序」可推出 using the same amount of water；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 using the same amount of water 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

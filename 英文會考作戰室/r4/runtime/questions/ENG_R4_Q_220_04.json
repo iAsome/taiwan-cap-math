@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Send the meal form by Tuesday. The class dinner is Friday.\nWhat must happen by Tuesday?",
+  "options": [
+    "The dinner must end.",
+    "The class must cook.",
+    "The meal must be eaten.",
+    "The form must be sent."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "星期二不是晚餐結束時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "句子沒有烹飪任務。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "晚餐安排在星期五。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "by Tuesday 直接限制 send the form 這個動作。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "u32-s220-link-deadline-to-form-action",
+    "separate-submission-date-from-event-date"
+  ],
+  "representationType": "message-deadline-detail",
+  "misconceptionTargets": [
+    "attach-first-date-to-later-event"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "期限要連回它修飾的動詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "活動日與繳交日已分開。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

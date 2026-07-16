@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_237_10",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S237"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A note was under the books. They covered most of it. What do They and it refer to?",
+  "options": [
+    "They=books; it=note",
+    "They=note; it=books",
+    "They=books; it=table",
+    "They=notes; it=book"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "They=books; it=note：They 承接複數 books，it 承接單數 note，且書能蓋住紙條。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "They=note; it=books：note 是單數不能配 They，books 是複數不能配 it。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "They=books; it=table：table 未出現，it 有明確單數 note。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "They=notes; it=book：原文只有一張 note 且有複數 books，形式全反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "resolve-pronoun-antecedent",
+    "resolve-two-linked-pronouns"
+  ],
+  "representationType": "dual-pronoun-reference",
+  "misconceptionTargets": [
+    "resolve-pronouns-independently-without-action"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「代名詞的數量、類型與後續動作」可推出 They=books; it=note；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 They=books; it=note 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

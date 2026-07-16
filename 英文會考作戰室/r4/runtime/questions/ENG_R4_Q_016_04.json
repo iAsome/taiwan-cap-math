@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_016_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "A classmate asks, 'Where do you live?' Which reply is suitable and safe?",
+  "options": [
+    "My name lives in a book.",
+    "I live in Kaohsiung.",
+    "My full door code is 5271.",
+    "I am twelve years old."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "My name lives in a book.：句意不合理。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "I live in Kaohsiung.：城市層級足以回答且不過度揭露。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "My full door code is 5271.：這是敏感且無必要的資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I am twelve years old.：這是年齡。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "exchange-basic-personal-information",
+    "map-question-focus-to-safe-answer"
+  ],
+  "representationType": "basic-personal-information",
+  "misconceptionTargets": [
+    "confuse-age-grade-name-or-place"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「從問句焦點辨識姓名、年齡、年級與居住地，並用對應格式提供適量個人資訊。」可推出 I live in Kaohsiung.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 I live in Kaohsiung. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

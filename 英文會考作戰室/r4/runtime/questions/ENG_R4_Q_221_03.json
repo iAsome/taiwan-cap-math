@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_221_03",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S221"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "A student asks an office for information but does not know the reader's name. Which opening avoids guessing?",
+  "options": [
+    "Dear Mr. Lee,",
+    "Hi Nina,",
+    "Dear Sir or Madam,",
+    "My good friend,"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題目沒有提供 Lee 這個姓氏。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Nina 是未經根據猜出的姓名。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "這個稱呼不預設特定姓名，可用於身分不明的正式收件者。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "辦公室人員不一定是寫信者的朋友。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s221-use-neutral-unknown-recipient-opening",
+    "avoid-unsupported-name-and-relationship"
+  ],
+  "representationType": "email-greeting-unknown-recipient",
+  "misconceptionTargets": [
+    "guess-recipient-name-or-gender"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "不知道姓名時應避免虛構個人資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案仍保有正式訊息所需的稱呼功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

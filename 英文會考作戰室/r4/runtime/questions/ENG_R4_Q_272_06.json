@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_272_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S272"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Sadly, another old tree was lost, even though earlier care could have saved it. What tone?",
+  "options": [
+    "celebratory",
+    "neutral",
+    "amused",
+    "regretful and critical"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "celebratory：與 Sadly 相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "neutral：評價明確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "amused：沒有幽默。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "regretful and critical：Sadly 顯遺憾，could have saved 指責照顧不足。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "select-evidence-based-tone",
+    "require-two-tone-signals"
+  ],
+  "representationType": "evidence-based-tone",
+  "misconceptionTargets": [
+    "infer-tone-from-topic-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「語氣標籤能由至少兩個具體詞句支持且強度不超過文本」可推出 regretful and critical；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 regretful and critical 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

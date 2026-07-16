@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_282_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S282"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "Which comparison between Tuesday and Wednesday is correct?",
+  "options": [
+    "Wednesday had twice as many walkers.",
+    "They differed by 24 walkers.",
+    "They had the same number.",
+    "Tuesday had twice as many walkers."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Wednesday had twice as many walkers.：倍數方向顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "They differed by 24 walkers.：差值是十二。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "They had the same number.：數值不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Tuesday had twice as many walkers.：24 是 12 的兩倍。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "compare-chart-values",
+    "read-label-unit-and-compute-comparison"
+  ],
+  "representationType": "bar-line-pie-chart",
+  "misconceptionTargets": [
+    "compare-unmatched-labels-or-units"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「圖表標籤、數值與單位支持排序、差值、總和或比例」可推出 Tuesday had twice as many walkers.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Tuesday had twice as many walkers. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_02"
+  ]
+}

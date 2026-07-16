@@ -1,0 +1,83 @@
+{
+  "id": "ENG_R4_Q_049_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S049"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which sentence contains a correct possessive pronoun?",
+  "options": [
+    "That umbrella is you're.",
+    "That umbrella is yours.",
+    "That umbrella is your's.",
+    "That is yours umbrella."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "That umbrella is you're.：you're = you are。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "That umbrella is yours.：yours 獨立且無撇號。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "That umbrella is your's.：多餘撇號。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "That is yours umbrella.：yours 不能直接修飾名詞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "avoid-apostrophes-in-possessive-pronouns",
+    "distinguish-lexical-possessive-from-contracted-auxiliary"
+  ],
+  "representationType": "possessive-pronoun-apostrophe",
+  "misconceptionTargets": [
+    "apply-noun-apostrophe-rule-to-pronoun"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「辨識 hers、yours、ours、theirs、its 等所有格形式本身已完整，不加撇號；並以縮寫展開測試區分 its/it's、whose/who's。」可推出 That umbrella is yours.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 That umbrella is yours. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

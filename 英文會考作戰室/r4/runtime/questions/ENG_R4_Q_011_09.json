@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_011_09",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-2",
+    "AUTH-ENGLISH-LP-1-4-1",
+    "AUTH-ENGLISH-LP-1-4-2",
+    "AUTH-ENGLISH-LP-2-4-1",
+    "AUTH-ENGLISH-LP-2-4-3",
+    "AUTH-ENGLISH-LP-6-4-1",
+    "AUTH-ENGLISH-LP-6-4-2",
+    "AUTH-ENGLISH-LP-7-4-5"
+  ],
+  "stimulusId": null,
+  "stem": "You understand steps one and two but not step three. Which sentence is best?",
+  "options": [
+    "Could you explain step three once more?",
+    "Please repeat all of today's lessons.",
+    "Step three is definitely useless.",
+    "I do not need any step."
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "Could you explain step three once more?：精確限定 step three。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Please repeat all of today's lessons.：範圍過大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Step three is definitely useless.：無證據評價。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "I do not need any step.：相反。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "request-repetition-clarification",
+    "match-understanding-gap-to-polite-repair"
+  ],
+  "representationType": "classroom-clarification-request",
+  "misconceptionTargets": [
+    "use-generic-repeat-request-for-every-gap"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-2",
+      "AUTH-ENGLISH-LP-1-4-1",
+      "AUTH-ENGLISH-LP-1-4-2",
+      "AUTH-ENGLISH-LP-2-4-1",
+      "AUTH-ENGLISH-LP-2-4-3",
+      "AUTH-ENGLISH-LP-6-4-1",
+      "AUTH-ENGLISH-LP-6-4-2",
+      "AUTH-ENGLISH-LP-7-4-5"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「禮貌問句明確指出沒聽清、不了解詞義或需要例子，回應修復特定理解缺口」可推出 Could you explain step three once more?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 Could you explain step three once more? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

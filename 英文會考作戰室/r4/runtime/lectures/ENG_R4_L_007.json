@@ -1,0 +1,138 @@
+{
+  "id": "ENG_R4_L_007",
+  "subject": "english",
+  "unitId": "ENG_R4_U01",
+  "skillId": "ENG_R4_S007",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AA-4-1",
+    "AUTH-ENGLISH-LC-AB-4-2",
+    "AUTH-ENGLISH-LC-AB-4-3",
+    "AUTH-ENGLISH-LP-1-4-10",
+    "AUTH-ENGLISH-LP-3-4-1",
+    "AUTH-ENGLISH-LP-3-4-2",
+    "AUTH-ENGLISH-LP-4-4-1",
+    "AUTH-ENGLISH-LP-5-4-4",
+    "AUTH-ENGLISH-LP-5-4-5"
+  ],
+  "prerequisites": [
+    "ENG_R4_S006"
+  ],
+  "objectives": [
+    "依首中尾音檢查拼字。",
+    "發現漏字、倒序與錯母音。",
+    "用常見正字法確認而非只靠外觀。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S007_SEC_1",
+      "title": "逐段對照",
+      "content": "把 fish 分 /f/ /ɪ/ /ʃ/，再檢查 f-i-sh 是否每段都有。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S007_SEC_2",
+      "title": "找常見錯誤類型",
+      "content": "漏掉 h、交換字母、短母音選錯都會讓聲音或正字法不合。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S007_SEC_3",
+      "title": "讀回完整字",
+      "content": "選完後從拼字讀回；若讀成另一常見字，如 pen/pin，就需修正。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S007_SEC_4",
+      "title": "規則與記憶合作",
+      "content": "拼讀提供檢查，但英語正字法有例外；基本字仍需累積正確字形。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U01_ENG_R4_S007_EX_1",
+      "prompt": "/f/ /ɪ/ /ʃ/",
+      "steps": [
+        "f 對 /f/。",
+        "i 對短 /ɪ/。",
+        "sh 對 /ʃ/。"
+      ],
+      "answer": "fish",
+      "why": "三段完整。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S007_EX_2",
+      "prompt": "map vs mab",
+      "steps": [
+        "尾音 /p/。",
+        "p 非 b。",
+        "讀回 map。"
+      ],
+      "answer": "map",
+      "why": "清濁核對。"
+    },
+    {
+      "id": "ENG_R4_U01_ENG_R4_S007_EX_3",
+      "prompt": "ship vs sip",
+      "steps": [
+        "首音 /ʃ/。",
+        "需 sh。",
+        "sip 首音 /s/。"
+      ],
+      "answer": "ship",
+      "why": "避免漏 h。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "字母都有就順序不重要。",
+      "whyWrong": "順序改變讀音。",
+      "correction": "逐段由左到右。"
+    },
+    {
+      "belief": "近似外觀就是正確。",
+      "whyWrong": "需音與正字法。",
+      "correction": "讀回。"
+    },
+    {
+      "belief": "digraph 可漏一字。",
+      "whyWrong": "會變成另一音。",
+      "correction": "把組合整塊檢查。"
+    },
+    {
+      "belief": "只要規則可拼就一定是真字。",
+      "whyWrong": "還需常見字形與意思。",
+      "correction": "做詞義核對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "檢查拼字的三步？",
+      "answer": "分音、對字母、讀回",
+      "reason": "雙向驗證。"
+    },
+    {
+      "prompt": "ship 漏 h 會怎樣？",
+      "answer": "變成 sip 的首音",
+      "reason": "組合破壞。"
+    },
+    {
+      "prompt": "順序重要嗎？",
+      "answer": "重要",
+      "reason": "字母序決定拼讀。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AA-4-1",
+      "AUTH-ENGLISH-LC-AB-4-2",
+      "AUTH-ENGLISH-LC-AB-4-3",
+      "AUTH-ENGLISH-LP-1-4-10",
+      "AUTH-ENGLISH-LP-3-4-1",
+      "AUTH-ENGLISH-LP-3-4-2",
+      "AUTH-ENGLISH-LP-4-4-1",
+      "AUTH-ENGLISH-LP-5-4-4",
+      "AUTH-ENGLISH-LP-5-4-5"
+    ]
+  }
+}

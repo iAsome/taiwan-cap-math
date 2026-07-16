@@ -1,0 +1,135 @@
+{
+  "id": "ENG_R4_L_S223",
+  "subject": "english",
+  "unitId": "ENG_R4_U32",
+  "skillId": "ENG_R4_S223",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "prerequisites": [
+    "ENG_R4_S222"
+  ],
+  "objectives": [
+    "能區分社群貼文中的可核對事件與作者個人感受。",
+    "能辨認文字沒有支持的推論，不把按讚或情緒當成客觀證據。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_L_S223_SEC_01",
+      "title": "事實可由貼文內容或資料核對",
+      "content": "The game starts at three、We planted ten trees 都描述可核對的時間或事件。若題目只給貼文，能確認的是作者明確陳述的內容，不代表外部世界一定沒有錯誤。"
+    },
+    {
+      "id": "ENG_R4_L_S223_SEC_02",
+      "title": "反應常帶有感受或評價",
+      "content": "I loved the music、This was the best day 表達作者的喜好與判斷。它們可以是真實感受，但不同讀者可能不同意，因此不能當成所有人的共同結論。"
+    },
+    {
+      "id": "ENG_R4_L_S223_SEC_03",
+      "title": "同一貼文可能同時有兩類句子",
+      "content": "We walked five kilometers, and I was very tired 前半是距離資訊，後半是身體感受。作答時要依問題選句，不能因兩句相鄰就把性質混在一起。"
+    },
+    {
+      "id": "ENG_R4_L_S223_SEC_04",
+      "title": "數量反應不證明原因",
+      "content": "A post got many likes 只能說收到許多按讚，不能證明內容正確、每個人同意或某個原因造成流行。若沒有留言或調查，對讀者想法的推論應保持有限。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_L_S223_EX_01",
+      "prompt": "Our class picked up twelve bags of trash today. I felt proud of everyone.",
+      "steps": [
+        "找出可計數的事件。",
+        "找出第一人稱感受。",
+        "分開事實與反應。"
+      ],
+      "answer": "Twelve bags is event information; feeling proud is a personal reaction.",
+      "why": "十二袋垃圾是貼文明確提供的可計數結果，proud 則描述作者的感受。不能由作者自豪推論每位同學都有相同心情。"
+    },
+    {
+      "id": "ENG_R4_L_S223_EX_02",
+      "prompt": "The new park opens Monday. It looks wonderful in the morning light.",
+      "steps": [
+        "辨認日期資訊。",
+        "找出帶評價的形容詞。",
+        "避免把評價變成共同事實。"
+      ],
+      "answer": "Monday is stated information; wonderful is the writer's view.",
+      "why": "開放日可直接從第一句核對，wonderful 則是作者對景象的評價。貼文沒有提供所有訪客的意見，所以不能說人人都喜歡。"
+    },
+    {
+      "id": "ENG_R4_L_S223_EX_03",
+      "prompt": "My picture received 200 likes. This proves it is the best picture here.",
+      "steps": [
+        "確認按讚數是已述資訊。",
+        "辨認 proves 後的擴大結論。",
+        "檢查是否有比較標準。"
+      ],
+      "answer": "The number of likes does not prove the picture is the best.",
+      "why": "兩百個按讚是貼文提供的數字，但沒有列出其他作品、評分方式或評審結果。受歡迎不能單獨證明作品是最好。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "句子有數字就一定完全正確。",
+      "whyWrong": "數字仍可能只是作者聲稱的資訊，需看題目要求的證據層級。",
+      "correction": "先判斷文字陳述，再避免擴大成外部查證。"
+    },
+    {
+      "belief": "作者說 best 就代表大家共同認定。",
+      "whyWrong": "最高級可能只是個人評價。",
+      "correction": "尋找評選標準或其他人的證據。"
+    },
+    {
+      "belief": "事實句和感受句相鄰就屬於同一類。",
+      "whyWrong": "一句可描述事件，下一句可表達反應。",
+      "correction": "逐句判斷能否客觀核對。"
+    },
+    {
+      "belief": "按讚多能證明貼文中的因果關係。",
+      "whyWrong": "按讚數沒有說明人們按讚的原因。",
+      "correction": "不從反應數量推導未提供的原因。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "I was happy 是事件資料還是個人反應？",
+      "answer": "個人反應",
+      "reason": "它描述作者感受。"
+    },
+    {
+      "prompt": "The bus left at nine 是可核對的資訊嗎？",
+      "answer": "是",
+      "reason": "它提出具體事件與時間。"
+    },
+    {
+      "prompt": "按讚很多能單獨證明內容正確嗎？",
+      "answer": "不能",
+      "reason": "按讚原因與查證結果都未提供。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  }
+}

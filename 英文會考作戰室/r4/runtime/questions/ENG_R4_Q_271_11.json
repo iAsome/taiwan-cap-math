@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_271_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S271"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "Which statement is verifiable rather than a personal judgment?",
+  "options": [
+    "It is too heavy for a project",
+    "It should win first prize",
+    "The model weighs 1.2 kilograms",
+    "The model looks ugly"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "It is too heavy for a project：too heavy 依用途標準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "It should win first prize：should win 是主張。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "The model weighs 1.2 kilograms：重量可用工具測得。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "The model looks ugly：ugly 是審美評價。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "distinguish-fact-and-opinion",
+    "classify-verifiable-versus-evaluative"
+  ],
+  "representationType": "fact-opinion",
+  "misconceptionTargets": [
+    "treat-number-as-automatic-fact"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「陳述能否由可查資料驗證，或包含個人評價與偏好」可推出 The model weighs 1.2 kilograms；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 The model weighs 1.2 kilograms 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

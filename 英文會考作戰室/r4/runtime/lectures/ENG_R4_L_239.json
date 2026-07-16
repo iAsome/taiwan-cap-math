@@ -1,0 +1,134 @@
+{
+  "id": "ENG_R4_L_239",
+  "subject": "english",
+  "unitId": "ENG_R4_U35",
+  "skillId": "ENG_R4_S239",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "prerequisites": [
+    "ENG_R4_S238"
+  ],
+  "objectives": [
+    "辨認 one、ones、do so、did 等避免重複的形式。",
+    "還原替代內容並保持單複數與時態。",
+    "排除只匹配最近字卻不符合句法角色的答案。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S239_SEC_1",
+      "title": "one 與 ones 替代名詞",
+      "content": "one 替代可數單數名詞，ones 替代複數名詞。I need a pen. Do you have one? 中 one 保留 pen 的概念，但不是同一支已知的筆。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S239_SEC_2",
+      "title": "do so 替代動作",
+      "content": "do so 可替代剛提到的動作片語。The sign asks us to wait, so we should do so 中 do so 等於 wait，而不是替代 sign。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S239_SEC_3",
+      "title": "助動詞也能代替",
+      "content": "Mia can swim, and Nora can, too 中第二個 can 省略重複的 swim。還原時要保留主詞與助動詞所標示的時間、可能性或否定。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S239_SEC_4",
+      "title": "先還原再作答",
+      "content": "把 one、do so 或助動詞暫時換回完整內容，重讀整句。若還原後數量、時態或意思不合，就不是正確先行內容。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U35_ENG_R4_S239_EX_1",
+      "prompt": "This cup is dirty. Please bring me a clean one.",
+      "steps": [
+        "one 是可數單數。",
+        "前文單數名詞為 cup。",
+        "clean 與 dirty 形成對比。"
+      ],
+      "answer": "one = cup",
+      "why": "需要另一個乾淨杯子，而非重複 cup 一字作代名詞。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S239_EX_2",
+      "prompt": "The teacher asked us to sit down, and we did so.",
+      "steps": [
+        "did so 替代動作。",
+        "往前找 asked 後的行動。",
+        "時態由 did 標成過去。"
+      ],
+      "answer": "did so = sat down",
+      "why": "全班執行了坐下的要求。"
+    },
+    {
+      "id": "ENG_R4_U35_ENG_R4_S239_EX_3",
+      "prompt": "Leo did not finish, but Amy did.",
+      "steps": [
+        "第二個 did 是替代用法。",
+        "前文動作是 finish。",
+        "Amy 的 did 為肯定。"
+      ],
+      "answer": "Amy finished.",
+      "why": "第二句省略 finish，但保留完成的肯定意思。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "one 永遠表示數字一。",
+      "whyWrong": "它也能替代可數單數名詞。",
+      "correction": "看 one 是否位在需要名詞的位置。"
+    },
+    {
+      "belief": "do so 指前面最近的名詞。",
+      "whyWrong": "它替代動作片語。",
+      "correction": "往前找可被執行的動作。"
+    },
+    {
+      "belief": "助動詞省略後沒有時態。",
+      "whyWrong": "did、can、will 等仍保留時間或語氣。",
+      "correction": "還原動作時保留助動詞資訊。"
+    },
+    {
+      "belief": "ones 可替代不可數名詞。",
+      "whyWrong": "ones 通常替代複數可數名詞。",
+      "correction": "先檢查先行名詞是否可數且為複數。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "a blue one 中 one 最常替代哪一類名詞？",
+      "answer": "可數單數名詞",
+      "reason": "a 與 one 都標出單數。"
+    },
+    {
+      "prompt": "do so 應往前找名詞還是動作？",
+      "answer": "動作",
+      "reason": "do so 是動作替代形式。"
+    },
+    {
+      "prompt": "Nora can, too 中 can 後省略什麼？",
+      "answer": "前文相同動作",
+      "reason": "助動詞保留，主要動詞可省略。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  }
+}

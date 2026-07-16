@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_220_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S220"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Meet at the south gate at 3:20. Bring two bottles of water, and call Nina when you arrive.\nWhich plan follows every instruction?",
+  "options": [
+    "Go to the north gate at 3:20 with water.",
+    "Go to the south gate at 2:30 and call Nina.",
+    "Go to the south gate at 3:20 with one bottle.",
+    "Go to the south gate at 3:20 with two bottles and call Nina after arriving."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地點方向錯誤，也漏了聯絡動作。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "時刻錯成兩點半，且沒有水。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "物品數量不足，也漏掉電話。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "地點、時間、數量與抵達後聯絡都完整符合。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "u32-s220-integrate-place-time-item-and-followup",
+    "verify-all-message-instructions-together"
+  ],
+  "representationType": "message-multi-detail-plan",
+  "misconceptionTargets": [
+    "accept-option-meeting-most-but-not-all-details"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "整合題必須逐項核對四個限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確選項沒有提前打電話或改變瓶數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

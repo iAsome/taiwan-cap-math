@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_279_08",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S279"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-2",
+    "AUTH-ENGLISH-LC-B-4-6",
+    "AUTH-ENGLISH-LP-2-4-10",
+    "AUTH-ENGLISH-LP-3-4-4",
+    "AUTH-ENGLISH-LP-4-4-2",
+    "AUTH-ENGLISH-LP-4-4-4",
+    "AUTH-ENGLISH-LP-5-4-11"
+  ],
+  "stimulusId": null,
+  "stem": "The Main Stage is delayed by twenty minutes. When should it begin?",
+  "options": [
+    "15:30",
+    "16:50",
+    "16:10",
+    "16:30"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "15:30：表中沒有此開始時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "16:50：16:30 加二十分鐘為 16:50。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "16:10：反向相減。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "16:30：未套用 delay。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "read-timetable-row-and-column",
+    "bind-row-column-and-status"
+  ],
+  "representationType": "timetable",
+  "misconceptionTargets": [
+    "combine-cells-from-different-rows"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-2",
+      "AUTH-ENGLISH-LC-B-4-6",
+      "AUTH-ENGLISH-LP-2-4-10",
+      "AUTH-ENGLISH-LP-3-4-4",
+      "AUTH-ENGLISH-LP-4-4-2",
+      "AUTH-ENGLISH-LP-4-4-4",
+      "AUTH-ENGLISH-LP-5-4-11"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「TIME、PLACE、STATUS 三欄同一列與延誤標示共同決定實際資訊」可推出 16:50；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 16:50 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "ENG_R4_FIG_42_08"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_021_11",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AC-4-3",
+    "AUTH-ENGLISH-LC-B-4-1",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-2",
+    "AUTH-ENGLISH-LP-2-4-4",
+    "AUTH-ENGLISH-LP-2-4-6",
+    "AUTH-ENGLISH-LP-2-4-7"
+  ],
+  "stimulusId": null,
+  "stem": "A: 'My name is Ian, and I draw comics.' Which reply uses both details?",
+  "options": [
+    "Draw my name and leave.",
+    "Good night, unknown singer.",
+    "Nice to meet you, Ian. What kind of comics do you draw?",
+    "Who is Ian if names are comics?"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "Draw my name and leave.：命令且未自然回應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Good night, unknown singer.：人物與活動都不合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "Nice to meet you, Ian. What kind of comics do you draw?：稱呼姓名並追問活動，完整承接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "Who is Ian if names are comics?：把姓名與作品混淆。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "manage-natural-first-meeting-turns",
+    "respond-extend-and-close-from-prior-turn"
+  ],
+  "representationType": "first-meeting-turn-sequence",
+  "misconceptionTargets": [
+    "deliver-script-without-answering-previous-speaker"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AC-4-3",
+      "AUTH-ENGLISH-LC-B-4-1",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-2",
+      "AUTH-ENGLISH-LP-2-4-4",
+      "AUTH-ENGLISH-LP-2-4-6",
+      "AUTH-ENGLISH-LP-2-4-7"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先遮住選項，依「以招呼、介紹、回應、追問與收束的功能鏈安排輪次，並讓每一輪承接前一輪的新資訊。」可推出 Nice to meet you, Ian. What kind of comics do you draw?；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把四個選項逐一代回原文，只有 Nice to meet you, Ian. What kind of comics do you draw? 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

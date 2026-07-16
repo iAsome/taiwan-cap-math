@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_270_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S270"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-7",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-1-4-9",
+    "AUTH-ENGLISH-LP-3-4-15",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A: We found the lost dog! B: That's wonderful news. How does A sound?",
+  "options": [
+    "disappointed",
+    "uncertain whether a dog exists",
+    "angry with B",
+    "excited and relieved"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "disappointed：與 found/wonderful 相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "uncertain whether a dog exists：A 明確宣告 found。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "angry with B：沒有衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "excited and relieved：找到失犬、驚嘆號與 wonderful 共同支持。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "infer-speaker-emotion",
+    "combine-utterance-and-response"
+  ],
+  "representationType": "dialogue-emotion",
+  "misconceptionTargets": [
+    "judge-emotion-from-punctuation-alone"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-7",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-1-4-9",
+      "AUTH-ENGLISH-LP-3-4-15",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「語調標記、內容、標點與對方回應共同顯示的當下情緒」可推出 excited and relieved；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 excited and relieved 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

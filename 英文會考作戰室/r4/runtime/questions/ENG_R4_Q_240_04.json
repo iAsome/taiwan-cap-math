@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_240_04",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S240"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "The library added more seats. As a result, fewer students had to stand. What is the result?",
+  "options": [
+    "fewer students stood",
+    "the library existed",
+    "students asked for books",
+    "the seats were removed"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "fewer students stood：增加座位直接使站立人數減少。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "the library existed：圖書館存在是背景，不是新增座位的後果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "students asked for books：借書需求未提。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "the seats were removed：removed 與 added 相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "use-discourse-marker",
+    "extract-clause-after-result-marker"
+  ],
+  "representationType": "result-identification",
+  "misconceptionTargets": [
+    "reverse-cause-and-result"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「標記詞宣告的轉折、因果或例證功能」可推出 fewer students stood；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 fewer students stood 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

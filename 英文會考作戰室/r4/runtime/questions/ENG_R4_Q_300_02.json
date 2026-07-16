@@ -1,0 +1,95 @@
+{
+  "id": "ENG_R4_Q_300_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S300"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-5",
+    "AUTH-ENGLISH-LC-AE-4-8",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-1-4-7",
+    "AUTH-ENGLISH-LP-1-4-8",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-7-4-2",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "Watering levels were 50, 100, and 150 mL. Plant heights were 8, 12, and 11 cm. Which summary uses all results?",
+  "options": [
+    "More water always produced taller plants.",
+    "The 50 mL group was tallest.",
+    "All plants were 12 cm.",
+    "Height rose to 100 mL, then fell slightly at 150 mL."
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "More water always produced taller plants.：150 組低於 100。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "The 50 mL group was tallest.：8 最低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "All plants were 12 cm.：數值不一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "Height rose to 100 mL, then fell slightly at 150 mL.：8→12→11 是先升後小降。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "integrate-explanation-and-data",
+    "test-text-claim-against-all-values"
+  ],
+  "representationType": "explanation-plus-data",
+  "misconceptionTargets": [
+    "infer-trend-from-one-number-or-overstate-causation"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-5",
+      "AUTH-ENGLISH-LC-AE-4-8",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-1-4-7",
+      "AUTH-ENGLISH-LP-1-4-8",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-7-4-2",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先遮住選項，依「文字提出的關係需由數據方向、差值與單位共同驗證」可推出 Height rose to 100 mL, then fell slightly at 150 mL.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把四個選項逐一代回原文，只有 Height rose to 100 mL, then fell slightly at 150 mL. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

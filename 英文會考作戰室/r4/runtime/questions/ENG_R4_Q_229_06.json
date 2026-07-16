@@ -1,0 +1,100 @@
+{
+  "id": "ENG_R4_Q_229_06",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S229"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-B-4-3",
+    "AUTH-ENGLISH-LC-B-4-5",
+    "AUTH-ENGLISH-LC-B-4-7",
+    "AUTH-ENGLISH-LC-B-4-8",
+    "AUTH-ENGLISH-LP-1-4-4",
+    "AUTH-ENGLISH-LP-2-4-11",
+    "AUTH-ENGLISH-LP-2-4-12",
+    "AUTH-ENGLISH-LP-2-4-13",
+    "AUTH-ENGLISH-LP-2-4-9",
+    "AUTH-ENGLISH-LP-3-4-7",
+    "AUTH-ENGLISH-LP-5-4-3",
+    "AUTH-ENGLISH-LP-5-4-6",
+    "AUTH-ENGLISH-LP-5-4-7",
+    "AUTH-ENGLISH-LP-7-4-3",
+    "AUTH-ENGLISH-LP-7-4-4"
+  ],
+  "stimulusId": null,
+  "stem": "A. I can help after I finish lunch.\nB. Could you move these chairs with me?\nC. Thanks. I will start with the small ones.\nD. That is fine; the meeting begins at two.\nWhich order makes sense?",
+  "options": [
+    "A-D-B-C",
+    "B-A-D-C",
+    "B-D-A-C",
+    "C-B-A-D"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "答應協助在請求前。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先請求，再說可協助時間、確認來得及、致謝並開始。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "D 先判定 fine，卻沒有時間提議。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "致謝與行動成為無來源開場。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "arrange-delayed-chair-help-request"
+  ],
+  "representationType": "request-with-time-condition",
+  "misconceptionTargets": [
+    "confirm-condition-before-condition-stated"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-B-4-3",
+      "AUTH-ENGLISH-LC-B-4-5",
+      "AUTH-ENGLISH-LC-B-4-7",
+      "AUTH-ENGLISH-LC-B-4-8",
+      "AUTH-ENGLISH-LP-1-4-4",
+      "AUTH-ENGLISH-LP-2-4-11",
+      "AUTH-ENGLISH-LP-2-4-12",
+      "AUTH-ENGLISH-LP-2-4-13",
+      "AUTH-ENGLISH-LP-2-4-9",
+      "AUTH-ENGLISH-LP-3-4-7",
+      "AUTH-ENGLISH-LP-5-4-3",
+      "AUTH-ENGLISH-LP-5-4-6",
+      "AUTH-ENGLISH-LP-5-4-7",
+      "AUTH-ENGLISH-LP-7-4-3",
+      "AUTH-ENGLISH-LP-7-4-4"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "That is fine 回應 after lunch 的時間限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "最後一行表示請求者接受並先自行開始。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ENG_R4_Q_222_02",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S222"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AE-4-4",
+    "AUTH-ENGLISH-LP-3-4-8",
+    "AUTH-ENGLISH-LP-4-4-3",
+    "AUTH-ENGLISH-LP-4-4-5",
+    "AUTH-ENGLISH-LP-4-4-6",
+    "AUTH-ENGLISH-LP-4-4-7",
+    "AUTH-ENGLISH-LP-4-4-8",
+    "AUTH-ENGLISH-LP-5-4-12"
+  ],
+  "stimulusId": null,
+  "stem": "Which bus will you take, the 4:10 or the 4:40 bus?\nWhich reply gives the needed choice?",
+  "options": [
+    "The bus stop is near my house.",
+    "I will take the 4:40 bus.",
+    "Buses can be crowded.",
+    "I have a ticket."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地點沒有回答二選一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "回覆清楚選擇四點四十分的公車。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一般評論沒有指出班次。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "有票也不表示搭哪班車。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "u32-s222-select-one-offered-bus-time",
+    "distinguish-choice-response-from-related-facts"
+  ],
+  "representationType": "message-reply-choice",
+  "misconceptionTargets": [
+    "mention-bus-without-selecting-service"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AE-4-4",
+      "AUTH-ENGLISH-LP-3-4-8",
+      "AUTH-ENGLISH-LP-4-4-3",
+      "AUTH-ENGLISH-LP-4-4-5",
+      "AUTH-ENGLISH-LP-4-4-6",
+      "AUTH-ENGLISH-LP-4-4-7",
+      "AUTH-ENGLISH-LP-4-4-8",
+      "AUTH-ENGLISH-LP-5-4-12"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "選擇題式來訊要回覆指定選項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案保留正確交通工具和時刻。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

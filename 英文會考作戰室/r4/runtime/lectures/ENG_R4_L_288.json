@@ -1,0 +1,136 @@
+{
+  "id": "ENG_R4_L_288",
+  "subject": "english",
+  "unitId": "ENG_R4_U43",
+  "skillId": "ENG_R4_S288",
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LC-D-4-4",
+    "AUTH-ENGLISH-LP-3-4-14",
+    "AUTH-ENGLISH-LP-3-4-16",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3",
+    "AUTH-ENGLISH-LP-9-4-4"
+  ],
+  "prerequisites": [
+    "ENG_R4_S287"
+  ],
+  "objectives": [
+    "辨認第二份文件補充的新細節。",
+    "找出相同命題的相反敘述。",
+    "區分真正衝突與談不同面向。"
+  ],
+  "sections": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S288_SEC_1",
+      "title": "先寫共同命題",
+      "content": "只有兩份都談同一時間、地點、規則，才可能衝突。A 談價格、B 談時間通常是互補。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S288_SEC_2",
+      "title": "相反值才是衝突",
+      "content": "open/closed、Monday/Tuesday、must/must not 對同一對象形成衝突。單純多一個細節不是衝突。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S288_SEC_3",
+      "title": "互補能合成更完整答案",
+      "content": "A 給地點、B 給攜帶物，就能形成 where + what 的方案。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S288_SEC_4",
+      "title": "更新需有版本線索",
+      "content": "updated、new time、instead 表後文取代前文；沒有這些詞時，只能指出不一致，不自行選真偽。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "ENG_R4_U43_ENG_R4_S288_EX_1",
+      "prompt": "A: Meet at 3. B: Bring an ID.",
+      "steps": [
+        "命題面向不同。",
+        "可同時成立。",
+        "合成完整指示。"
+      ],
+      "answer": "complementary",
+      "why": "一份補時間、一份補物品。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S288_EX_2",
+      "prompt": "A: Open Monday. B: Closed Monday.",
+      "steps": [
+        "同一對象與日期。",
+        "open/closed 相反。",
+        "判為衝突。"
+      ],
+      "answer": "conflicting",
+      "why": "兩句不能同時為真。"
+    },
+    {
+      "id": "ENG_R4_U43_ENG_R4_S288_EX_3",
+      "prompt": "A: Room 2. B: Updated: Room 5 instead.",
+      "steps": [
+        "同談地點。",
+        "B 有 updated/instead。",
+        "新資訊取代舊資訊。"
+      ],
+      "answer": "B updates A.",
+      "why": "版本詞決定採新地點。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "資訊不同就一定衝突。",
+      "whyWrong": "不同面向可互補。",
+      "correction": "先寫共同命題。"
+    },
+    {
+      "belief": "第二份一定比較新。",
+      "whyWrong": "需有 updated 等版本證據。",
+      "correction": "不要只憑順序。"
+    },
+    {
+      "belief": "多一個細節等於否定前文。",
+      "whyWrong": "補充可與前文並存。",
+      "correction": "測試能否同時為真。"
+    },
+    {
+      "belief": "衝突時靠常識選一份。",
+      "whyWrong": "題目若無權威線索只能指出衝突。",
+      "correction": "不自行裁決。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "A 給時間、B 給地點通常是何關係？",
+      "answer": "互補",
+      "reason": "可合成完整資訊。"
+    },
+    {
+      "prompt": "open 與 closed 同日同地是？",
+      "answer": "衝突",
+      "reason": "不能同時為真。"
+    },
+    {
+      "prompt": "何時可把 B 視為更新？",
+      "answer": "B 有 updated、instead 等線索",
+      "reason": "需版本證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LC-D-4-4",
+      "AUTH-ENGLISH-LP-3-4-14",
+      "AUTH-ENGLISH-LP-3-4-16",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3",
+      "AUTH-ENGLISH-LP-9-4-4"
+    ]
+  }
+}

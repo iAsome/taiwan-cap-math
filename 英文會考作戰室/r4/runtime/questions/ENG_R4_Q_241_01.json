@@ -1,0 +1,85 @@
+{
+  "id": "ENG_R4_Q_241_01",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S241"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-D-4-1",
+    "AUTH-ENGLISH-LC-D-4-2",
+    "AUTH-ENGLISH-LC-D-4-3",
+    "AUTH-ENGLISH-LP-3-4-12",
+    "AUTH-ENGLISH-LP-9-4-1",
+    "AUTH-ENGLISH-LP-9-4-2",
+    "AUTH-ENGLISH-LP-9-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "A passage uses 'a free meal program,' 'the service,' and 'this project.' What likely links the three phrases?",
+  "options": [
+    "They name the same program",
+    "They describe three meals",
+    "They are unrelated dates",
+    "They name three schools"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "They name the same program：service 與 project 在同段承接首次介紹的 meal program。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "They describe three meals：三詞是不同稱呼，不是三餐數量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "They are unrelated dates：沒有日期詞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "They name three schools：沒有三所學校的證據。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "track-topic-by-lexical-chain",
+    "link-program-service-project"
+  ],
+  "representationType": "lexical-chain",
+  "misconceptionTargets": [
+    "treat-rewording-as-new-topic"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-D-4-1",
+      "AUTH-ENGLISH-LC-D-4-2",
+      "AUTH-ENGLISH-LC-D-4-3",
+      "AUTH-ENGLISH-LP-3-4-12",
+      "AUTH-ENGLISH-LP-9-4-1",
+      "AUTH-ENGLISH-LP-9-4-2",
+      "AUTH-ENGLISH-LP-9-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先遮住選項，依「重複詞、同義改寫與上位概念形成的詞鏈」可推出 They name the same program；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把四個選項逐一代回原文，只有 They name the same program 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

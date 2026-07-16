@@ -1,0 +1,81 @@
+{
+  "id": "ENG_R4_Q_024_12",
+  "subject": "english",
+  "skillIds": [
+    "ENG_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-ENGLISH-LC-AD-4-1",
+    "AUTH-ENGLISH-LC-B-4-2",
+    "AUTH-ENGLISH-LP-1-4-3",
+    "AUTH-ENGLISH-LP-3-4-6",
+    "AUTH-ENGLISH-LP-5-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "Which correction fixes 'They doesn't be ready'?",
+  "options": [
+    "They wasn't ready.",
+    "They aren't ready.",
+    "They isn't ready.",
+    "They don't are ready."
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "They wasn't ready.：數與時態不合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "They aren't ready.：they 搭 are，be 後直接用 not。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "They isn't ready.：數不一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "They don't are ready.：do 與 are 重複。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "form-be-affirmative-or-negative",
+    "preserve-subject-time-and-complement-while-changing-polarity"
+  ],
+  "representationType": "be-polarity",
+  "misconceptionTargets": [
+    "insert-do-or-mismatch-contraction"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 English content author",
+    "copyrightStatus": "Original wording; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-ENGLISH-LC-AD-4-1",
+      "AUTH-ENGLISH-LC-B-4-2",
+      "AUTH-ENGLISH-LP-1-4-3",
+      "AUTH-ENGLISH-LP-3-4-6",
+      "AUTH-ENGLISH-LP-5-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "english-grammar-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先遮住選項，依「依陳述是否肯定某狀態或否定某狀態，在正確 be 後加入 not，並保持縮寫與原意一致。」可推出 They aren't ready.；再核對題面每個線索，答案索引一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "english-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把四個選項逐一代回原文，只有 They aren't ready. 能同時滿足句法與全文意思；另外三項各有明確衝突，沒有第二答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

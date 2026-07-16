@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const VOCABULARY_PATH = path.join(HERE, "authority", "english-vocabulary-authority.json");
-const TOKEN_PATTERN = /[A-Za-z]+(?:['’][A-Za-z]+)?/g;
+export const ENGLISH_TOKEN_PATTERN = /[A-Za-z]+(?:['’][A-Za-z]+)?/g;
 const IRREGULAR = new Map(Object.entries({
   ate: "eat",
   began: "begin",
@@ -17,6 +17,7 @@ const IRREGULAR = new Map(Object.entries({
   broke: "break",
   broken: "break",
   built: "build",
+  rebuilt: "rebuild",
   bought: "buy",
   came: "come",
   caught: "catch",
@@ -35,22 +36,30 @@ const IRREGULAR = new Map(Object.entries({
   eaten: "eat",
   felt: "feel",
   fell: "fall",
+  fallen: "fall",
+  feet: "foot",
   flown: "fly",
+  flew: "fly",
   found: "find",
   forgot: "forget",
   forgotten: "forget",
+  frozen: "freeze",
+  forbidden: "forbid",
   gave: "give",
   given: "give",
   gone: "go",
   got: "get",
   grew: "grow",
+  grown: "grow",
   had: "have",
   has: "have",
   heard: "hear",
   held: "hold",
+  hid: "hide",
   knew: "know",
   known: "know",
   kept: "keep",
+  led: "lead",
   left: "leave",
   lent: "lend",
   lost: "lose",
@@ -69,21 +78,32 @@ const IRREGULAR = new Map(Object.entries({
   sang: "sing",
   seen: "see",
   sent: "send",
+  shook: "shake",
+  shown: "show",
   slept: "sleep",
+  sold: "sell",
   spoke: "speak",
   spoken: "speak",
+  spent: "spend",
+  stood: "stand",
+  swam: "swim",
   taught: "teach",
   taken: "take",
   teeth: "tooth",
   thought: "think",
   told: "tell",
   took: "take",
+  threw: "throw",
   tying: "tie",
   went: "go",
   won: "win",
+  wore: "wear",
+  worn: "wear",
   worst: "bad",
+  worse: "bad",
   written: "write",
   wrote: "write",
+  rewrote: "rewrite",
 }));
 const CONTRACTIONS = new Map(Object.entries({
   "aren't": "are",
@@ -102,17 +122,18 @@ const CONTRACTIONS = new Map(Object.entries({
   "shouldn't": "should",
   "wasn't": "was",
   "we're": "are",
+  "we'll": "will",
   "weren't": "were",
   "won't": "will",
   "wouldn't": "would",
   "you're": "are",
 }));
 
-function tokenSet(entries) {
-  return new Set(entries.flatMap((entry) => entry.forms.flatMap((form) => form.toLowerCase().match(TOKEN_PATTERN) ?? [])));
+export function englishVocabularyTokenSet(entries) {
+  return new Set(entries.flatMap((entry) => entry.forms.flatMap((form) => form.toLowerCase().match(ENGLISH_TOKEN_PATTERN) ?? [])));
 }
 
-function candidateLemmas(rawToken) {
+export function candidateEnglishLemmas(rawToken) {
   const first = rawToken.toLowerCase().replaceAll("’", "'");
   const values = new Set([first]);
   const queue = [first];
@@ -173,26 +194,29 @@ function studentVisibleStrings(source) {
 
 export async function inspectEnglishVocabularyScope(source, policy, { vocabularyPath = VOCABULARY_PATH } = {}) {
   const index = JSON.parse(await readFile(vocabularyPath, "utf8"));
-  const basic = tokenSet(index.tables.basic1200.entries);
-  const additional = tokenSet(index.tables.additional800.entries);
+  const basic = englishVocabularyTokenSet(index.tables.basic1200.entries);
+  const additional = englishVocabularyTokenSet(index.tables.additional800.entries);
   const names = new Set(policy.properNames.map((value) => value.toLowerCase()));
-  const notation = new Set(policy.grammarNotation.flatMap((value) => value.toLowerCase().match(TOKEN_PATTERN) ?? []));
+  const notation = new Set(policy.grammarNotation.flatMap((value) => value.toLowerCase().match(ENGLISH_TOKEN_PATTERN) ?? []));
   const malformed = new Set(policy.malformedDistractors.map((value) => value.toLowerCase()));
   const governedAdditional = new Set(policy.additionalLearningTerms.map((value) => value.toLowerCase()));
-  const report = { basic: new Set(), additional: new Set(), names: new Set(), notation: new Set(), malformed: new Set(), unknown: new Set() };
+  const contextualizedAboveRange = new Set((policy.contextualizedAboveRangeTerms ?? []).map((value) => value.toLowerCase()));
+  const report = { basic: new Set(), additional: new Set(), contextualizedAboveRange: new Set(), names: new Set(), notation: new Set(), malformed: new Set(), unknown: new Set() };
   for (const value of studentVisibleStrings(source)) {
-    for (const rawToken of value.match(TOKEN_PATTERN) ?? []) {
+    for (const rawToken of value.match(ENGLISH_TOKEN_PATTERN) ?? []) {
       const token = rawToken.toLowerCase().replaceAll("’", "'");
       const possessiveName = token.endsWith("'s") ? token.slice(0, -2) : null;
       if (names.has(token) || (possessiveName && names.has(possessiveName))) report.names.add(possessiveName ?? token);
       else if (malformed.has(token)) report.malformed.add(token);
       else if (notation.has(token)) report.notation.add(token);
       else {
-        const candidates = candidateLemmas(token);
+        const candidates = candidateEnglishLemmas(token);
         const basicLemma = candidates.find((candidate) => basic.has(candidate));
         const additionalLemma = candidates.find((candidate) => additional.has(candidate));
+        const contextualizedTerm = candidates.find((candidate) => contextualizedAboveRange.has(candidate));
         if (basicLemma) report.basic.add(basicLemma);
         else if (additionalLemma && governedAdditional.has(additionalLemma)) report.additional.add(additionalLemma);
+        else if (contextualizedTerm) report.contextualizedAboveRange.add(contextualizedTerm);
         else if (additionalLemma) report.unknown.add(`${token}->${additionalLemma}:table2-not-governed`);
         else report.unknown.add(token);
       }
@@ -204,12 +228,19 @@ export async function inspectEnglishVocabularyScope(source, policy, { vocabulary
 export async function validateEnglishVocabularyScope(source, policy, options) {
   assert.equal(policy.capQuestionBasis, "appendix-5-table-1");
   assert.equal(new Set(policy.additionalLearningTerms.map((value) => value.toLowerCase())).size, policy.additionalLearningTerms.length);
+  const contextualizedAboveRangeTerms = policy.contextualizedAboveRangeTerms ?? [];
+  assert.equal(new Set(contextualizedAboveRangeTerms.map((value) => value.toLowerCase())).size, contextualizedAboveRangeTerms.length);
   const report = await inspectEnglishVocabularyScope(source, policy, options);
   assert.deepEqual(report.unknown, [], `${source.unitId}: English vocabulary outside governed official tables:\n${report.unknown.join("\n")}`);
   assert.deepEqual(
     report.additional,
     [...policy.additionalLearningTerms].map((value) => value.toLowerCase()).sort(),
     `${source.unitId}: governed Table 2 terms must exactly match actual use`,
+  );
+  assert.deepEqual(
+    report.contextualizedAboveRange,
+    contextualizedAboveRangeTerms.map((value) => value.toLowerCase()).sort(),
+    `${source.unitId}: contextualized above-range terms must exactly match actual use`,
   );
   return report;
 }
