@@ -15,44 +15,46 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": null,
-  "stem": "班上要比較廣用指示劑中的「比較pH值與酸鹼強度方向」，哪一個實驗設計可形成公平比較？",
+  "stem": "重新核對生活酸鹼安全結果，哪項說法正確？",
   "options": [
-    "採用這個看似直覺的規則：pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸。",
-    "在廣用指示劑中直接把「僅靠一種指示劑顏色指定物質」當成「比較pH值與酸鹼強度方向」的足夠證據。",
-    "忽略「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」，只根據題幹出現的最大數字宣稱已完成「比較pH值與酸鹼強度方向」。",
-    "只改一個主要變因並保持其他條件一致，量測結果時依「在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。」判讀。"
+    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
+    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
+    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
+    "pH 12 比 pH 9 鹼性強"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "這是本技能專屬陷阡：「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸。」，與可驗證命題「在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。」相衝突。"
+      "reason": "「高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性」不成立；濃度是溶質所佔比例，酸鹼強弱涉及物質在水中的離子行為；兩者不可完全畫上等號。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這項說法把廣用指示劑的單一表面線索擴大成結論，並採用「pH 0 代表完全沒有氫離子」的迷思。"
+      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這項結論同時忽略「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」和「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」，題給證據無法支持。"
+      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "此選項符合已審核的技能命題「在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。」，並保留本題條件；只改一個主要變因並保持其他條件一致，量測結果時依「在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。」判讀。"
+      "reason": "判讀依據是「在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強」。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "變因控制",
-    "實驗設計"
+    "證據判讀",
+    "分析"
   ],
-  "representationType": "experiment",
+  "representationType": "evidence-check",
   "misconceptionTargets": [
-    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸。"
+    "高濃度永遠等於強酸或強鹼，稀溶液永遠不具危險性",
+    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸",
+    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關"
   ],
   "provenance": {
     "status": "original",
@@ -73,13 +75,13 @@
     {
       "reviewerRole": "physics-chemistry-independent-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項依「比較pH值與酸鹼強度方向」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "evidence": "逐項核對定義、關係、單位與條件，只有選項 D 符合。",
       "status": "pass"
     },
     {
       "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
       "derivedAnswerIndex": 3,
-      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 D。",
       "status": "pass"
     }
   ],

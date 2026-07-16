@@ -188,7 +188,7 @@ noscript { display: block; padding: 1rem; color: #fff; background: var(--bad); }
   .site-header { display: block; padding: 0 0 .5rem; color: #000; background: #fff; border-bottom: 2px solid #000; }
   .app-layout { display: block; width: auto; margin: 0; padding: 0; }
   .workspace { border: 0; box-shadow: none; padding: 0; }
-  .lecture-section, .worked-example, .misconception, .check-card, .stimulus-card, .question-card, .figure-card { box-shadow: none; border-color: #555; }
+  .lecture-section, .worked-example, .misconception, .check-card, .stimulus-card, .question-card, .figure-card { box-shadow: none; border-color: #555; break-inside: avoid; page-break-inside: avoid; }
   .answer-review { display: none; }
   a { color: #000; text-decoration: none; }
   @page { margin: 1.5cm; }

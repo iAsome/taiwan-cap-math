@@ -15,43 +15,45 @@
     "AUTH-NATURAL-LP-PE-4-2"
   ],
   "stimulusId": "PHYCHM_R4_STIM_106",
-  "stem": "若要提高這份酸與金屬資料對「依pH值判斷酸性中性與鹼性」的可信度，下一步最適合怎麼做？",
+  "stem": "檢查表中關於pH值判斷酸性中性與鹼性的說法，哪項判讀正確？",
   "options": [
-    "新的酸與金屬情境仍使用這項不改變的物理或化學依據：pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。",
-    "採用這個看似直覺的規則：pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定。",
-    "在酸與金屬中直接把「把 pH 8 說成比 pH 12 更鹼」當成「依pH值判斷酸性中性與鹼性」的足夠證據。",
-    "忽略「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」，只根據題幹出現的最大數字宣稱已完成「依pH值判斷酸性中性與鹼性」。"
+    "pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位",
+    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
+    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
+    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
   ],
   "answerIndex": 0,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": true,
-      "reason": "此選項符合已審核的技能命題「pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。」，並保留本題條件；新的酸與金屬情境仍使用這項不改變的物理或化學依據：pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
+      "reason": "判讀依據是「pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位」。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "這是本技能專屬陷阡：「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定。」，與可驗證命題「pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。」相衝突。"
+      "reason": "「pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目…」不成立；pH＜7 為酸性、pH＝7 為中性、pH＞7 為鹼性；pH 本身沒有單位。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "這項說法把酸與金屬的單一表面線索擴大成結論，並採用「僅靠一種指示劑顏色指定物質」的迷思。"
+      "reason": "「酸和鹼只由溶液顏色定義，和水溶液中的離子無關」不成立；在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "這項結論同時忽略「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」和「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」，題給證據無法支持。"
+      "reason": "「pH 數字越大一定代表酸性越強，所以 pH 5 比 pH …」不成立；在同種、相近條件下，pH 2 的溶液比 pH 5 酸性強；pH 12 比 pH 9 鹼性強。"
     }
   ],
   "difficulty": "advanced",
   "cognitiveProcess": [
-    "實驗改進"
+    "資料判讀"
   ],
   "representationType": "stimulus-data",
   "misconceptionTargets": [
-    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定。"
+    "pH 小於 7 表示鹼性，大於 7 表示酸性，方向可由題目自由決定",
+    "酸和鹼只由溶液顏色定義，和水溶液中的離子無關",
+    "pH 數字越大一定代表酸性越強，所以 pH 5 比 pH 2 更酸"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +74,13 @@
     {
       "reviewerRole": "physics-chemistry-independent-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項依「依pH值判斷酸性中性與鹼性」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "evidence": "逐項核對定義、關係、單位與條件，只有選項 A 符合。",
       "status": "pass"
     },
     {
       "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
       "derivedAnswerIndex": 0,
-      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "evidence": "其餘選項各含錯誤運算、錯誤因果或過度推論，答案為 A。",
       "status": "pass"
     }
   ],
