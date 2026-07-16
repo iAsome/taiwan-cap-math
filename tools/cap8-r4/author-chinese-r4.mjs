@@ -8,6 +8,7 @@ const ROOT = path.resolve(HERE, "..", "..");
 const SUBJECT_ROOT = path.join(ROOT, "國文會考作戰室", "r4");
 const GRAPH = JSON.parse(await readFile(path.join(HERE, "authority", "frozen-authority-graph.json"), "utf8"));
 const WRITING_CALIBRATION = JSON.parse(await readFile(path.join(HERE, "ledger", "chinese-writing-calibration.json"), "utf8"));
+const PUBLIC_DOMAIN_CLASSICS = JSON.parse(await readFile(path.join(HERE, "ledger", "chinese-public-domain-classics.json"), "utf8")).entries;
 const SOURCE_SCHEMA = "cap8-r4-chinese-static-unit-source-v1";
 const DIFFICULTIES = ["foundation", "foundation", "foundation", "standard", "standard", "standard", "standard", "advanced", "advanced", "advanced", "transfer", "transfer"];
 
@@ -80,6 +81,9 @@ const FAMILY_LABELS = [
 ];
 
 assert.equal(FAMILY_LABELS.length, 48);
+assert.equal(PUBLIC_DOMAIN_CLASSICS.length, 12);
+assert.equal(new Set(PUBLIC_DOMAIN_CLASSICS.map(({ excerpt }) => excerpt)).size, 12);
+assert(PUBLIC_DOMAIN_CLASSICS.every(({ copyrightStatus, sourceUrl }) => copyrightStatus === "public-domain" && sourceUrl.startsWith("https://")));
 
 const QUESTION_FRAMES = [
   (title, family) => `同學正在練習「${title}」。下列哪一項做法最能完成這項任務？`,
@@ -3602,6 +3606,48 @@ function newPoemPracticeSpec(serial, item, index) {
   return bySerial[serial];
 }
 
+const UNSEEN_CLASSICAL_CASES = Object.freeze([
+  { title: "橋滑", text: "里有木橋，雨後甚滑。老者載沙至，布之橋面。行人謝之，老者曰：『吾亦日由此過，非獨為人也。』", keyword: "布", keywordMeaning: "鋪撒", modernContrast: "『謝』在句中是向老者致謝，不是拒絕或凋謝", omission: "『布之橋面』省略主語『老者』，『之』指沙", eventSpeech: "老者鋪沙防滑，並說自己每天也走此橋，說明助人同時改善共同通行", lesson: "文章先寫危險，再寫處置與回答，觀點是公共改善也會回到行動者自身", method: "先以『老者載沙』補足後句主語，再由『非獨為人』修正只為別人的解讀" },
+  { title: "借燈", text: "生夜讀，膏將盡。鄰媼見其窗暗，持燈與之，曰：『火可分，而明不減。』生受燈，旦日還之。", keyword: "膏", keywordMeaning: "燈油", modernContrast: "『旦日』指第二天，不是每個早晨", omission: "『持燈與之』省略受詞內容的補語，『之』指夜讀的書生", eventSpeech: "鄰媼把燈借給書生，說火光分享後不會減少；書生次日歸還", lesson: "短文以燈火可分說明資源分享，又以按時歸還補足互信", method: "先確認『膏、旦日、之』在句中的功能，再依借與還的事件鏈翻譯" },
+  { title: "雨市", text: "市人方列果，驟雨至。販梨者先覆鄰攤之桃，而後收己物。或問其故，答曰：『桃易傷，梨猶可待。』", keyword: "方", keywordMeaning: "正、正在", modernContrast: "『或』指有人，不是表示選擇的連接詞", omission: "『而後收己物』省略主語『販梨者』，『己物』指自己的梨", eventSpeech: "販梨者先護較易受損的鄰攤桃子，再收自己的梨，回答交代理由", lesson: "行動次序依物品受損急迫性安排，表現臨事能分辨輕重", method: "把『先—而後』列成事件順序，再以回答中的桃、梨特性驗證原因" },
+  { title: "護苗", text: "童見苗弱，欲引之使長。農者止曰：『根未固而強拔之，長一寸，傷一季矣。』童乃釋手，以土培根。", keyword: "引", keywordMeaning: "拉、牽引", modernContrast: "『固』在此是穩固，不是表示轉折的『固然』", omission: "『長一寸，傷一季』共同省略主語『苗』，說明拔高的短利與長害", eventSpeech: "孩童想拔苗助長，農者制止並說明根未穩固；孩童改用培土", lesson: "真正幫助要順應生長條件，不能為眼前高度破壞根基", method: "用『欲—止—乃』整理行動改變，再依根、拔、培的因果判斷" },
+  { title: "問路", text: "客迷於岐路，見樵者，問邑所向。樵者指溪上白石曰：『循水行，見雙松乃左。』客謝而從之，果至。", keyword: "循", keywordMeaning: "沿著、依循", modernContrast: "『果』是果然，表示結果符合指示，不是水果", omission: "『見雙松乃左』省略主語『客』與動詞『轉行』，應理解為見雙松後向左", eventSpeech: "樵者以白石、溪流與雙松分段指路，旅人依指示抵達", lesson: "有效指示要提供可依序辨識的地標，接受者也須按條件行動", method: "依『白石—循水—雙松—左轉』還原路線，不把『左』只當方位名詞" },
+  { title: "還書", text: "友借書，期以五日。比還，封面微濕，友謝曰：『護之未周，願易紙重裝。』主人不責，使同修之。", keyword: "比", keywordMeaning: "等到、及", modernContrast: "『謝』在此是道歉，不是致謝", omission: "『比還』省略主語『友』；『使同修之』的『之』指受潮的書", eventSpeech: "借書者因保護不周道歉並願重裝，主人沒有責罵而邀他一起修書", lesson: "責任不只在準時歸還，也在面對損傷並共同補救", method: "先分清『期、比、謝、易』的語境義，再連接借、損、歉、修四步" },
+  { title: "掃葉", text: "寺童晨掃階，風起，葉復滿。童悵然，僧曰：『掃者非禁葉落，乃使來者有徑可行。』童聞之，復執帚。", keyword: "徑", keywordMeaning: "小路、可通行的路徑", modernContrast: "『復』在兩處都指再、又，不是現代常用的恢復名詞", omission: "『葉復滿』省略處所受詞，可依前句補為葉又落滿臺階", eventSpeech: "孩童因落葉再滿而沮喪，僧人說清掃不是阻止落葉，而是讓人有路可走", lesson: "反覆工作未必無效，應以它當下服務的目的判斷價值", method: "用『非……乃……』找出被否定與被肯定的目的，避免只看結果重複" },
+  { title: "試舟", text: "舟新成，眾欲即載米渡江。匠曰：『未知其性，請先空舟近岸試之。』眾從其言，果見一隙滲水，補之乃行。", keyword: "性", keywordMeaning: "此處指船的性能與狀況", modernContrast: "『即』指立即，不是『就是』的判斷詞", omission: "『補之乃行』省略主語『眾人或船匠』，『之』指船身滲水處", eventSpeech: "眾人想立刻載米，船匠主張先空船近岸測試，因而發現漏隙後修補", lesson: "面對未知性能，先做低風險測試能避免把人貨置於更大危險", method: "辨認『欲—請—從—見—補』的決策鏈，再判斷試驗和安全的關係" },
+  { title: "遺錢", text: "童行市中，得錢一緡。守於故處久之，乃見老者反求。童問其數，合，遂歸之。", keyword: "故", keywordMeaning: "原來的、先前的", modernContrast: "『反』通返，指回來，不是相反", omission: "『合』省略主語『老者所說的數目』，意思是與撿到的錢數相合", eventSpeech: "孩童留在原處等候，核對老者所說錢數後才歸還", lesson: "歸還失物仍須核對可驗證特徵，善意與審慎可以並行", method: "先確定『故處、反求、其數、合』的指涉，再還原核對程序" },
+  { title: "量布", text: "商量布與客，尺將盡，覺少半寸。客未察，商更量之，曰：『利可薄，信不可虧。』", keyword: "薄", keywordMeaning: "減少、微薄", modernContrast: "『更』指重新、再一次，不是程度更高", omission: "『覺少半寸』省略主語『商人』，所少的是量給客人的布長", eventSpeech: "商人發現布少半寸，客人尚未察覺仍主動重量，說利益可少而信用不可損", lesson: "誠信在沒有人提醒時仍成立，短期小利不應破壞長期信任", method: "以『客未察』檢查人物選擇，再比較『利可薄／信不可虧』的價值層次" },
+  { title: "修鐘", text: "寺鐘聲忽啞，徒欲易其鐘。師聽良久，曰：『鐘未病，繫槌之革鬆耳。』緊其革，一擊而聲復清。", keyword: "易", keywordMeaning: "更換", modernContrast: "『病』在此比喻器物有故障，不是說鐘會生理患病", omission: "『緊其革』省略主語『師或師徒』，『其』指繫鐘槌的皮帶", eventSpeech: "徒弟想換鐘，師傅先聽辨，發現只是皮帶鬆，收緊後鐘聲恢復", lesson: "處理故障要先定位問題層級，不能把局部鬆動直接判成整體報廢", method: "比較徒弟的『易鐘』與師傅的『聽—判—緊』，用修後結果驗證診斷" },
+  { title: "冬井", text: "冬寒，井口輒結薄冰。村人晨汲，必先碎之。少年取草覆井，曰：『夜護其口，旦可少勞。』明日視之，冰果薄。", keyword: "輒", keywordMeaning: "總是、每每", modernContrast: "『被』未出現；『覆』在此是覆蓋，不是翻覆", omission: "『明日視之』省略主語『村人』，『之』指被草覆護的井口", eventSpeech: "眾人天天碎冰，少年改在夜裡覆井，隔日冰層果然較薄", lesson: "由事後反覆處理轉向事前預防，可以減少共同勞力", method: "整理『結冰—碎冰—覆井—冰薄』的時間順序，區分預防和補救" },
+]);
+
+function unseenClassicalPracticeSpec(serial, item, index) {
+  const lead = ["閱讀本題原創仿古短文", "初見下列原創文言短文", "不套用背過的課文，細讀本題原創短文", "校刊以原創仿古文設題"][index % 4];
+  const bySerial = {
+    279: { stem: `${lead}〈${item.title}〉：\n${item.text}\n\n「${item.keyword}」在本段的語境義為何？`, correct: item.keywordMeaning, wrong: [`只取「${item.keyword}」的現代常見義，不看前後動作`, `把「${item.keyword}」當成文中人物姓名`, `認為「${item.keyword}」沒有意義，可以直接刪去`], reason: `依句法位置與事件關係，「${item.keyword}」應解為${item.keywordMeaning}。` },
+    280: { stem: `${lead}〈${item.title}〉：\n${item.text}\n\n哪項能正確處理古今詞義？`, correct: item.modernContrast, wrong: ["每個字都直接套用現代第一個常用義。", "只要字形沒有改變，古今意義必定完全相同。", "遇到古今義差異，就可忽略整句事件關係。"], reason: "正解把詞放回本句角色、時間或動作中，清楚排除現代慣用義的誤套。" },
+    281: { stem: `${lead}〈${item.title}〉：\n${item.text}\n\n補足省略後，哪項最符合句法與上下文？`, correct: item.omission, wrong: ["所有省略處都補成一名未出場的官員。", "代詞一律指距離最近的字，不必核對事件。", "文言可省略成分，所以任何人物都能任意補入。"], reason: "正解利用前句主語、代詞與後續結果共同補足，沒有新增人物。" },
+    282: { stem: `${lead}〈${item.title}〉：\n${item.text}\n\n如何整合事件與人物說話？`, correct: item.eventSpeech, wrong: ["只摘出引號內一句，前後發生什麼都不必處理。", "人物一開口就表示他的說法一定和行動相反。", "只依最後一字推測全篇，忽略事件先後。"], reason: "正解同時保留行動次序與話語所說明的原因或原則。" },
+    283: { stem: `${lead}〈${item.title}〉：\n${item.text}\n\n由結構歸納觀點，哪項最恰當？`, correct: item.lesson, wrong: ["只要短文有對話，主旨必然是讚美說話聲音。", "文末結果取消前面所有原因，兩者無法連接。", "把單一事件擴大成任何時代、任何人都必然如此。"], reason: "正解由問題、處置、話語與結果歸納，結論強度沒有超過個案。" },
+    284: { stem: `${lead}〈${item.title}〉：\n${item.text}\n\n哪個解讀程序最能避免背誦版本干擾？`, correct: item.method, wrong: ["先猜它像哪篇課文，再照背過的答案作答。", "每個實詞固定只背一個意思，句法位置可以忽略。", "翻譯時逐字維持原序，即使人物與事件顛倒也不調整。"], reason: "正解只使用本段可核對的詞義、句法與事件鏈，不依賴篇名熟悉度。" },
+  };
+  return bySerial[serial];
+}
+
+function publicDomainClassicPracticeSpec(serial, item, index) {
+  const lead = ["核對公版原文", "閱讀校核簿所錄公版文本", "將原文、注釋與白話分層閱讀", "依公版全文頁節錄"][index % 4];
+  const sourceTag = `公版校核簿第${index + 1}筆，${item.work}`;
+  const bySerial = {
+    285: { stem: `${lead}（${sourceTag}）：\n${item.excerpt}\n\n「${item.keyword}」在此意為何？`, correct: item.keywordMeaning, wrong: [`只照「${item.keyword}」的現代第一常用義，不理句法`, `把「${item.keyword}」當作後人注者姓名`, `認為「${item.keyword}」只標示標點，不參與句意`], reason: `公版原文中「${item.keyword}」依上下文解為${item.keywordMeaning}。`, provenanceStatus: "public-domain" },
+    286: { stem: `${lead}（${sourceTag}）：\n${item.excerpt}\n\n「${item.target}」最合適的語譯是什麼？`, correct: item.contextTranslation, wrong: [`把「${item.target}」譯成與原文關係完全相反的命令`, `只逐字搬動「${item.keyword}」，不補現代語序`, `加入原文沒有的年代、姓名與結局`], reason: "正解保留原句主詞、動作、條件與語氣，沒有增譯情節。", provenanceStatus: "public-domain" },
+    287: { stem: `${lead}（${sourceTag}）：\n${item.excerpt}\n\n這段所呈現的文化或思想母題，哪項有文本依據？`, correct: item.motif, wrong: ["只因作品年代久遠，就斷定當時人人生活完全相同。", "把現代網路習慣直接套成原文器物與制度。", "只看作者姓名，不處理節錄中的物件、行動或對照。"], reason: "正解由節錄中的具體物件、行動與對照歸納，沒有用單一例子概括整個時代。", provenanceStatus: "public-domain" },
+    288: { stem: `${lead}（${sourceTag}）：\n${item.excerpt}\n\n由人物、行動或論述推回，哪項最接近本段觀點？`, correct: item.moral, wrong: ["本段證明只要背出名句，就不需要理解前後文。", "作者主張所有情境都只能採同一選擇，沒有條件差異。", "本段只在炫示古字，沒有任何可討論的判斷關係。"], reason: "正解以節錄內的人物選擇、譬喻或論證為證據，並守住段落範圍。", provenanceStatus: "public-domain" },
+    289: { stem: `${lead}（${sourceTag}）：\n原文：${item.excerpt}\n${item.annotation}\n\n原文與注釋的層次，哪項判斷正確？`, correct: item.annotationRole, wrong: ["注釋中的每個字都是古代作者原本寫在正文內的句子。", "有注釋便表示原文可以不讀，只背注者結論即可。", "注釋若解釋一字，就能任意改寫原文其餘事件。"], reason: "正解清楚分開公版原文與本題原創注釋，並交代注釋能支持到哪一層。", provenanceStatus: "public-domain" },
+    290: { stem: `${lead}（${sourceTag}）：\n${item.excerpt}\n\n哪段白話最忠實保留原文關係？`, correct: item.faithful, wrong: ["把原文改成沒有條件、人人永遠適用的絕對規則。", "刪去主要動作與對照，只留下作者作品名稱。", "加入公版節錄沒有交代的心理獨白、年代與後續結果。"], reason: "正解保留原文事件或論證的完整關係；題目與白話為本題原創，來源原文為公版。", provenanceStatus: "public-domain" },
+  };
+  return bySerial[serial];
+}
+
 function crossVersionPracticeQuestions(skill) {
   const serial = Number(skill.id.slice(-3));
   if (serial >= 267 && serial <= 272) {
@@ -3611,6 +3657,14 @@ function crossVersionPracticeQuestions(skill) {
   if (serial >= 273 && serial <= 278) {
     const representations = ["cross-version-poetry-method", "imagery-and-emotion", "syntax-and-blank", "poetic-device", "title-and-content", "evidence-boundary"];
     return NEW_POEM_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, newPoemPracticeSpec(serial, item, questionIndex), representations[serial - 273], "chinese-cross-version-poetry"));
+  }
+  if (serial >= 279 && serial <= 284) {
+    const representations = ["unseen-classical-word", "ancient-modern-meaning", "classical-ellipsis", "event-and-speech", "structure-and-viewpoint", "version-independent-method"];
+    return UNSEEN_CLASSICAL_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, unseenClassicalPracticeSpec(serial, item, questionIndex), representations[serial - 279], "chinese-unseen-classical"));
+  }
+  if (serial >= 285 && serial <= 290) {
+    const representations = ["public-domain-word", "public-domain-translation", "classical-motif", "character-and-moral", "annotation-layer", "translation-fidelity"];
+    return PUBLIC_DOMAIN_CLASSICS.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, publicDomainClassicPracticeSpec(serial, item, questionIndex), representations[serial - 285], "chinese-public-domain-classic"));
   }
   return null;
 }
