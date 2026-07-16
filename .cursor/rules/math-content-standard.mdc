@@ -8,4 +8,4 @@ alwaysApply: false
 `math-tw-v1.mjs` is only its deterministic adapter; do not maintain policy prose there.
 ChatGPT owns mathematics, pedagogy, terminology, notation, acceptance, migration, and release decisions.
 Executors must use fixed refs and declared file scope and must not autonomously change content.
-If required validation fails, do not commit or push. Report the result and stop; do not create a PR or merge.
+If required validation fails, do not commit or push. For an isolated mathematics task, report the result and stop; during the active R4 one-shot task, continue all unaffected work and resolve repairable failures before release. Do not create a PR or merge.

@@ -13,8 +13,18 @@ import {
   verifyOfficialReviewShardEvidence,
   verifyPublisherReferenceEvidence,
   verifyPublisherPublicResourceEvidence,
+  verifyR4GovernanceAndLegacyIsolation,
   verifyUserRequirements,
 } from "../run-full-release-gate.mjs";
+
+test("R4 supersedes stale stop/publish rules and excludes the legacy text-only policy", async () => {
+  const result = await verifyR4GovernanceAndLegacyIsolation();
+  assert.deepEqual(
+    { taskId: result.taskId, mainFrozen: result.mainFrozen, publicSiteFrozen: result.publicSiteFrozen },
+    { taskId: "CAP8-R4-ONE-SHOT", mainFrozen: true, publicSiteFrozen: true },
+  );
+  assert(result.scannedR4Files > 0);
+});
 
 test("user requirements make Math part of the final exhaustive audit", async () => {
   const requirements = await verifyUserRequirements();

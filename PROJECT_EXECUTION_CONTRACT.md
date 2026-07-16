@@ -2,6 +2,12 @@
 
 Normative rules governing math-v2 QA tooling work in this repository.
 
+## 0. CAP R4 one-shot supersession
+
+When `AGENTS.md` identifies `CAP8-R4-ONE-SHOT` as the active task, the archived R4 package is the newer task instruction and governs that dedicated branch. Passing a subject checkpoint requires a scoped commit, validation, state update, and push to the R4 branch, then execution continues immediately with the next subject. Sections 2, 5, 8, 15, and 16 remain safeguards for isolated math-v2 tasks, but they must not stop the continuous R4 subject sequence or trigger an intermediate report.
+
+While `tools/cap8-r4/execution-state.json` has `mainFrozen` or `publicSiteFrozen` set to `true`, no checkpoint may update `main`, publish GitHub Pages, create the release tag, or replace the public runtime. Those actions are authorized only after the complete R4 global release gate passes from the exact clean release commit.
+
 ## 1. Authority and decision ownership
 
 ChatGPT owns all content, pedagogy, mathematics, architecture, UI, acceptance, and release decisions.

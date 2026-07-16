@@ -614,6 +614,62 @@ async function verifyInventoryEvidence(repoRoot) {
   return { records: current.records.length, counts: current.counts };
 }
 
+async function listFiles(root) {
+  const files = [];
+  for (const entry of (await readdir(root, { withFileTypes: true })).sort((a, b) =>
+    a.name.localeCompare(b.name, "en"),
+  )) {
+    const absolute = path.join(root, entry.name);
+    assert(!entry.isSymbolicLink(), `symlink is forbidden during R4 runtime discovery: ${absolute}`);
+    if (entry.isDirectory()) files.push(...(await listFiles(absolute)));
+    else if (entry.isFile()) files.push(absolute);
+  }
+  return files;
+}
+
+export async function verifyR4GovernanceAndLegacyIsolation(repoRoot = REPO_ROOT) {
+  const [agentsBytes, contractBytes, publishRuleBytes, mathRuleBytes, state, floor] = await Promise.all([
+    readRepositoryFile(repoRoot, "AGENTS.md"),
+    readRepositoryFile(repoRoot, "PROJECT_EXECUTION_CONTRACT.md"),
+    readRepositoryFile(repoRoot, ".cursor/rules/publish-after-update.mdc"),
+    readRepositoryFile(repoRoot, ".cursor/rules/math-content-standard.mdc"),
+    readJson(repoRoot, "tools/cap8-r4/execution-state.json"),
+    productionFloor(),
+  ]);
+  const [agents, contract, publishRule, mathRule] = [agentsBytes, contractBytes, publishRuleBytes, mathRuleBytes].map(
+    (value) => value.toString("utf8"),
+  );
+  assert.equal(state.taskId, "CAP8-R4-ONE-SHOT");
+  assert.equal(state.mainFrozen, true, "main must remain frozen before the complete R4 release gate");
+  assert.equal(state.publicSiteFrozen, true, "the public site must remain frozen before the complete R4 release gate");
+  assert.match(agents, /active R4 package supersedes isolated-task/);
+  assert.match(contract, /CAP R4 one-shot supersession/);
+  assert.match(publishRule, /mainFrozen/);
+  assert.match(publishRule, /push checkpoints only to `codex\/cap-eight-subject-one-shot-r4`/);
+  assert.match(mathRule, /active R4 one-shot task/);
+
+  const forbiddenRuntimeMarkers = ["shared/text-only-policy.js", "TEXT_ONLY_POLICY", "verify-no-student-images"];
+  const scanned = [];
+  for (const subject of SUBJECTS) {
+    const r4Root = path.join(repoRoot, floor[subject].folder, "r4");
+    try {
+      if (!(await stat(r4Root)).isDirectory()) continue;
+    } catch (error) {
+      if (error?.code === "ENOENT") continue;
+      throw error;
+    }
+    for (const file of await listFiles(r4Root)) {
+      if (!/\.(?:css|html|js|json|md|mjs)$/i.test(file)) continue;
+      const text = await readFile(file, "utf8");
+      for (const marker of forbiddenRuntimeMarkers) {
+        assert(!text.includes(marker), `${path.relative(repoRoot, file)} imports obsolete student text-only policy marker ${marker}`);
+      }
+      scanned.push(path.relative(repoRoot, file).replaceAll("\\", "/"));
+    }
+  }
+  return { taskId: state.taskId, mainFrozen: true, publicSiteFrozen: true, scannedR4Files: scanned.length };
+}
+
 export function runMathV2ReleaseGate(repoRoot = REPO_ROOT) {
   const script = path.join(repoRoot, "數學會考作戰室", "tools", "run-v2-full-release-gate.mjs");
   const result = spawnSync(process.execPath, [script], {
@@ -676,6 +732,7 @@ export async function runFullReleaseGate({
     verifyPackageEvidence,
     verifySourceEvidence,
     verifyInventoryEvidence,
+    verifyR4GovernanceAndLegacyIsolation,
     verifyUserRequirements,
     verifyAppendixEvidence,
     verifyAuthorityNodeReview,
@@ -716,6 +773,13 @@ export async function runFullReleaseGate({
   checks.push(await checked("frozen-authority-graph", () => use.verifyAuthorityGraphEvidence(repoRoot), repoRoot));
   checks.push(await checked("complete-official-106-115-ledger", () => use.verifyOfficialLedgerEvidence(repoRoot), repoRoot));
   checks.push(await checked("current-site-inventory", () => use.verifyInventoryEvidence(repoRoot), repoRoot));
+  checks.push(
+    await checked(
+      "r4-governance-and-legacy-isolation",
+      () => use.verifyR4GovernanceAndLegacyIsolation(repoRoot),
+      repoRoot,
+    ),
+  );
   checks.push(
     await checked(
       "math-final-audit-inventory",

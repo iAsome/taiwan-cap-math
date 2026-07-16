@@ -10,6 +10,7 @@
 - Final questions and lectures must be statically materialized. Runtime code may select or order reviewed IDs but must not create student-facing prose, vary numbers, splice sentences, or fabricate fallback questions.
 - Official fourth-learning-stage curriculum material defines scope. Official CAP 106-115 material calibrates assessment form and demand. Publisher and cram-school resources are secondary references only: they may reveal omissions or teaching approaches but must not expand official scope, and unlicensed content must not be copied.
 - `main` and the public website remain frozen until the complete R4 global release gate passes from a clean checkout.
+- The active R4 package supersedes isolated-task "report and stop" rules: after each validated checkpoint, continue immediately with the next subject until the global release and live-site checks are complete.
 
 ## Required Workflow
 
@@ -34,4 +35,4 @@
 - Executors may modify mathematics content only through an explicitly authorized task with fixed refs and declared file scope.
 - Previously accepted mathematics content is not exempt from a newer policy version or policy hash.
 - A required validation failure prohibits commit and push.
-- Completion means reporting results and stopping; executors must not autonomously begin another task, create a pull request or merge.
+- For an explicitly isolated mathematics task, completion means reporting results and stopping; this does not interrupt the active R4 one-shot sequence. Executors must not create a pull request or merge without authorization.
