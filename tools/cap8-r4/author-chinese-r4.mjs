@@ -1884,45 +1884,169 @@ const SCENARIOS = [
   { place: "運動會服務台", focus: "一張掉在跑道邊的選手證", action: "記錄號碼與發現位置，由服務台對照選手名冊通知", evidence: "證件號碼、隊伍名冊與領回人提供的姓名", result: "選手在下一場檢錄前領回證件，也完成簽收", rejected: "在社群公開完整姓名與證件照片" },
   { place: "學校圖書館", focus: "一本被放進錯誤書車的科普書", action: "對照書背索書號、館藏系統與書架區間", evidence: "分類號層級、館藏狀態與相鄰書籍排序", result: "書本回到正確書架，工讀生也補上錯架檢查步驟", rejected: "只看封面圖案與哪一排比較像" },
   { place: "校園步道", focus: "一株尚未掛牌的常綠樹", action: "分日拍攝葉序、樹皮與果實，再查植物圖鑑", evidence: "有日期的特徵照片、葉脈描述與兩本圖鑑的共同特徵", result: "自然社排除了只在葉形相像的種類，完成可複查的樹牌", rejected: "用第一張識圖軟體截圖直接定名" },
-  { place: "傳統市場", focus: "同一摊位上兩張不同單位的價格牌", action: "把「每台斤」與「每公斤」先換成同一基準再比較", evidence: "價格牌單位、重量換算與實際稱重單", result: "同學發現看似較低的數字換算後並不較便宜", rejected: "直接選數字較小的價格牌" },
+  { place: "傳統市場", focus: "同一攤位上兩張不同單位的價格牌", action: "把「每台斤」與「每公斤」先換成同一基準再比較", evidence: "價格牌單位、重量換算與實際稱重單", result: "同學發現看似較低的數字換算後並不較便宜", rejected: "直接選數字較小的價格牌" },
   { place: "地方文史室", focus: "一張標位置與現址不同的老店名片", action: "比對門牌整編資料、舊報廣告和地籍圖", evidence: "各資料的年份、舊新門牌對照表與可定位地標", result: "展覽同時標出舊址與今日位置，沒有把遷址誤寫成同一家店", rejected: "以現在搜尋到的第一個同名地址代替舊址" },
+  { place: "社區廣播站", focus: "一段標錯受訪日期的節目錄音", action: "回查節目表、原始檔名與訪談開場白", evidence: "錄音建立時間、來賓行程與節目播出紀錄", result: "重播檔改回正確日期，節目摘要也補上更正說明", rejected: "只憑主持人的模糊印象填入日期" },
+  { place: "陶藝教室", focus: "兩批燒成後色澤不同的杯子", action: "分開記錄泥料批次、釉藥編號與窯燒位置", evidence: "製作卡、窯溫曲線與出窯照片", result: "學員找到混用釉藥編號的環節，重做時恢復預期色澤", rejected: "把所有差異都歸因於拍照光線" },
+  { place: "河口溼地", focus: "一筆數量突然增加的候鳥紀錄", action: "核對觀察時段、重複飛返個體與相鄰樣區紀錄", evidence: "帶時間的照片、樣區位置與觀察者筆記", result: "調查表刪除重複計數，保留可確認的個體數", rejected: "把每次飛入視野都算成新的個體" },
+  { place: "社區劇場", focus: "一只在演出前找不到的道具箱", action: "依場次清單逐區確認最後交接人與存放位置", evidence: "道具借還表、舞臺監督筆記與箱側編號", result: "道具在另一組卸景區被找到，下一場也改用雙人簽收", rejected: "未查清楚就指責最晚離開的演員" },
+  { place: "自行車維修站", focus: "一輛煞車仍會摩擦輪圈的公用車", action: "先停止借用，再逐項檢查輪組位置與煞車皮間距", evidence: "維修前後測試、零件規格與技師簽認", result: "車輛調整後通過測試才重新上架", rejected: "只把異音處噴油便立刻借出" },
+  { place: "社區廚房", focus: "一張沒有標明過敏原的點心配方", action: "請製作者逐項列出原料並和包裝標示核對", evidence: "原料外包裝、配方版本與分裝標籤", result: "活動桌牌補齊花生與乳製品資訊，另備替代點心", rejected: "用『應該沒問題』代替成分確認" },
+  { place: "健康中心候診區", focus: "兩張時間互相衝突的講座通知", action: "向主辦單位確認最新場次並撤下舊版", evidence: "通知版本日期、場地登記與主辦人回覆", result: "報名者收到統一時間，現場也沒有重複排程", rejected: "任由讀者自行猜哪張通知較新" },
+  { place: "動物收容所", focus: "一份把兩隻相似犬隻資料混在一起的送養卡", action: "按晶片尾碼與健康紀錄重新分卡", evidence: "晶片掃描結果、入所照片與獸醫紀錄編號", result: "兩份送養資訊各自對應正確犬隻", rejected: "只看毛色就合併資料" },
+  { place: "資源回收站", focus: "一袋混入一般回收物的廢電池", action: "戴手套分離後放入專用容器並回報管理員", evidence: "分類告示、容器標籤與交接紀錄", result: "電池依規定暫存，志工也增設入口提醒", rejected: "把電池和金屬罐一起壓縮" },
+  { place: "校園氣象站", focus: "一筆遠高於其他日期的雨量數據", action: "檢查量筒刻度、倒水時間與當日值勤紀錄", evidence: "原始讀值照片、相鄰測站資料與儀器檢查表", result: "小組確認抄錄時小數點錯位並完成更正", rejected: "為了讓曲線平順而直接刪除最高值" },
+  { place: "音樂教室", focus: "一只貼錯姓名的樂器盒", action: "對照盒內序號、借用單與使用者保養記錄", evidence: "樂器序號、借用日期與盒內配件", result: "兩位同學取回自己的樂器，標籤也重新黏貼", rejected: "只依樂器盒外觀判斷所有人" },
+  { place: "港口遊客中心", focus: "一張把潮汐時刻抄成去年日期的活動單", action: "查當年度公告並標出活動適用日期", evidence: "官方時刻表、活動日期與版本註記", result: "導覽改到安全時段，舊表也從下載區撤下", rejected: "沿用檔名相同的舊文件" },
+  { place: "體驗農園", focus: "兩畦蔬菜澆水量差異過大的紀錄", action: "統一量杯並在固定時段重測一週", evidence: "每日用水量、土壤表面狀況與澆水人簽名", result: "小組分辨出量具不同造成的紀錄落差", rejected: "看到葉片大小不同就任意補寫用水量" },
+  { place: "夜市自治會", focus: "一張沒有完成檢查欄位的攤位設備表", action: "逐攤補查設備位置並由攤主確認", evidence: "檢查日期、攤位編號與缺漏欄位", result: "自治會完成可追蹤的設備清冊", rejected: "把空白欄一律視為已檢查" },
+  { place: "校園播客社", focus: "一段背景音樂來源不明的試播檔", action: "暫停發布並回查素材授權與製作者註記", evidence: "下載頁授權條款、檔案來源與剪輯紀錄", result: "社團換成可合法使用的音檔並補列來源", rejected: "因片段很短就省略授權確認" },
+  { place: "攝影展籌備室", focus: "一張未取得展出同意的人像照片", action: "先撤下預覽並聯絡被攝者確認用途", evidence: "拍攝約定、回覆紀錄與展覽範圍", result: "策展組改用已獲同意的照片並更新清單", rejected: "只因照片拍得好就直接公開" },
+  { place: "學校溫室", focus: "一盤標籤脫落的幼苗", action: "依播種表、盆格位置與葉片紀錄逐盤核對", evidence: "播種日期、種子包編號與每日照片", result: "園藝社找回正確品種並改用防水標籤", rejected: "只看幼苗顏色猜品種" },
+  { place: "工藝市集", focus: "一張把機織品標成手織品的說明牌", action: "詢問製作者並核對製程照片與工具", evidence: "製作步驟、使用機具與作者說明", result: "攤位改成如實標示混合製程", rejected: "因售價較高就寫成全手工" },
+  { place: "登山口", focus: "一張已過期的步道封閉公告", action: "掃描公告來源並向管理單位確認現況", evidence: "公告日期、最新路況頁與現場封鎖設施", result: "服務台換上當日路況並保留封閉路段警示", rejected: "看到有人進入就假定步道已開放" },
+  { place: "青少年活動中心", focus: "兩個團隊同時登記的排練教室", action: "比對線上表單時間戳與紙本簽核", evidence: "申請時間、核准人與可替代場地", result: "較早核准者保留原時段，另一組接受替代教室", rejected: "讓人數較多的團隊直接取得場地" },
+  { place: "郵局服務臺", focus: "一件地址缺少巷號的退回包裹", action: "依寄件人留存資料聯絡補正，不自行猜填", evidence: "寄件收據、收件人回覆與地址格式", result: "包裹補齊地址後重新寄出", rejected: "照網路同姓名資料任意補上地址" },
+  { place: "美術教室", focus: "兩罐外觀相近卻用途不同的透明媒材", action: "查看瓶身批號與使用說明後分區放置", evidence: "產品標籤、領用表與作品測試紀錄", result: "學生不再混用，材料櫃也補上大字標籤", rejected: "聞氣味判斷內容物" },
+  { place: "創客教室", focus: "一件找不到原作者檔案的列印模型", action: "核對共用資料夾版本與列印排程", evidence: "檔案建立者、修改時間與機臺工作紀錄", result: "模型回到正確專題，展示牌也補上作者", rejected: "把最後登入電腦的人當成作者" },
+  { place: "游泳池服務臺", focus: "兩副同款但度數不同的泳鏡", action: "請領回人說明盒上記號並核對失物時間", evidence: "盒側貼紙、拾獲地點與使用者描述", result: "兩副泳鏡分別交還正確失主", rejected: "讓先到的人任選一副" },
+  { place: "合唱教室", focus: "一張缺少換位註記的聲部座位圖", action: "對照排練錄影與指揮筆記補回箭頭", evidence: "排練日期、聲部分組與進出場順序", result: "演出時換位不再互相阻擋", rejected: "只按身高重新排列所有人" },
+  { place: "校園合作社", focus: "兩張單位不同的影印紙價牌", action: "先換算每包張數與總價再比較", evidence: "包裝張數、促銷期限與結帳明細", result: "價牌補上每百張單價，學生不再被表面數字誤導", rejected: "直接把標價較小者寫成較便宜" },
+  { place: "飲水機巡查點", focus: "一筆沒有註明測量時間的水量紀錄", action: "回查巡檢表並在相同秒數下重新測量", evidence: "測量時長、容器刻度與機臺編號", result: "新的紀錄可和其他樓層公平比較", rejected: "拿不同時間收集的水量直接排序" },
+  { place: "社區讀書會", focus: "一本混有兩位讀者批註的共讀書", action: "依筆色與借閱日期請原批註者確認", evidence: "借閱順序、筆跡樣本與本人回覆", result: "摘錄表分清兩人的觀點，引用也各自署名", rejected: "把所有批註都算在主持人名下" },
+  { place: "溪流調查站", focus: "兩組使用不同單位的混濁度紀錄", action: "先確認量測方法與單位，再分表呈現", evidence: "儀器型號、原始讀值與採樣位置", result: "報告不再把不能直接相比的數字排成高低", rejected: "只依數字大小判定哪處較混濁" },
+  { place: "天文社觀測場", focus: "一張把東西方向印反的星圖", action: "以觀測時間和地平線方向實地比對", evidence: "星圖版本、方位標記與當晚觀察筆記", result: "社團換回正確版本並在護貝角落加註方向", rejected: "因圖案漂亮就繼續使用" },
+  { place: "文化節翻譯組", focus: "一句可能有兩種理解的導覽譯文", action: "回到原文語境並請母語使用者試讀", evidence: "前後段落、展品功能與試讀回饋", result: "譯文改成不會誤解動線的說法", rejected: "逐字對換而不看句子用途" },
+  { place: "辯論社資料室", focus: "一段沒有標明上下文的名人引語", action: "查找原始演講並閱讀前後段", evidence: "演講日期、完整逐字稿與主題", result: "社員發現原句立場被截斷，因而撤換論據", rejected: "因引語符合己方立場就直接使用" },
+  { place: "志工服務臺", focus: "一份漏列無障礙協助需求的分工表", action: "重新確認每位參與者需求並調整動線工作", evidence: "報名表勾選、場地入口與志工可支援時段", result: "接待組安排適當協助且不公開個人隱私", rejected: "用外表猜誰需要幫助" },
+  { place: "轉運站失物處", focus: "一只內有多張卡片的零錢包", action: "封存內容並由櫃臺依外觀特徵核對失主", evidence: "拾獲地點、外觀磨痕與失主主動描述", result: "零錢包在不公開卡片資料的情況下歸還", rejected: "把證件照片貼到公開社群尋人" },
+  { place: "自行車道入口", focus: "一張沒有標出施工終點的改道路線圖", action: "向工程單位索取完整範圍並現場走查", evidence: "施工起迄點、替代道路寬度與路口標誌", result: "新版圖清楚畫出繞行段和回到原線的位置", rejected: "只畫一個箭頭讓騎士自行找路" },
+  { place: "公園管理站", focus: "一則沒有日期的修樹通知", action: "補上施工時段、影響區域與聯絡窗口", evidence: "核准工單、圍設範圍與承辦人資料", result: "居民能避開封閉步道，也知道如何詢問", rejected: "只貼『近期施工』而不列任何範圍" },
+  { place: "食物分享站", focus: "一批外盒日期標示方式不同的乾糧", action: "請管理員依品項逐一辨識日期欄位", evidence: "包裝標示、入庫日與保存說明", result: "物資按可使用期限排序並清楚分架", rejected: "把所有數字都當成到期日" },
+  { place: "行動圖書車", focus: "一張少列臨時停靠點的時刻表", action: "對照司機路線單與當週公告補入站點", evidence: "停靠日期、站點名稱與服務時間", result: "讀者依新版時刻表順利到站借書", rejected: "沿用上月時刻而不標示變動" },
+  { place: "校園廣播室", focus: "一首沒有列出演奏者的午間音樂", action: "回查音檔來源並補齊作品與演出資訊", evidence: "音檔標籤、節目單與授權頁", result: "播出紀錄完整標示來源與演奏者", rejected: "只寫曲名而把演出者省略" },
+  { place: "博物館教育區", focus: "一件未標明為複製品的觸摸展件", action: "核對館藏編號並重寫用途說明", evidence: "展件底標、館藏系統與教育活動清單", result: "說明牌清楚區分原件與教學複製品", rejected: "因外觀相似就稱它為原件" },
+  { place: "社區講堂", focus: "一張把報名人數當成實到人數的成果圖", action: "分開整理報名、取消與簽到資料", evidence: "報名表、取消紀錄與現場簽到", result: "成果報告同時呈現三項數據，不再混稱參與人數", rejected: "挑最大的數字放進標題" },
+  { place: "垃圾清運公告欄", focus: "一張星期與日期對不起來的收運表", action: "對照年度日曆和清潔隊最新公告", evidence: "日期、星期、路線與公告版本", result: "里辦公室更正錯列的一天並通知住戶", rejected: "只改星期而不再核對日期" },
+  { place: "海岸淨灘集合處", focus: "兩隊使用不同方式秤重的垃圾統計", action: "分開容器重量並統一使用公斤記錄", evidence: "空袋重量、各類廢棄物淨重與秤具", result: "總表呈現可比較的淨重，不把袋重算入成果", rejected: "直接相加所有秤面數字" },
+  { place: "戲劇社排練場", focus: "一段未確認能否公開的排練側拍", action: "先詢問入鏡者並標記可用片段", evidence: "同意回覆、影片時間碼與發布範圍", result: "宣傳片只使用已獲同意的畫面", rejected: "認為社團活動就能公開所有人的影像" },
+  { place: "運動會服務組", focus: "一張沒有納入高溫休息時段的賽程", action: "依主辦單位安全規劃重新排入休息與補水", evidence: "活動時程、場地遮蔭與緊急聯絡流程", result: "新版賽程明列休息點與服務站", rejected: "為了準時結束而刪掉全部休息時間" },
+  { place: "棋藝社比賽場", focus: "一份把同校選手重複配對的對戰表", action: "回查輪次規則與前輪紀錄重新排定", evidence: "選手編號、已對戰名單與輪次", result: "修正版排除重複對戰並保留原成績", rejected: "只把兩個名字任意互換" },
+  { place: "自然教室", focus: "一臺鏡頭有裂痕卻未登記的顯微鏡", action: "停止使用並依器材編號回查借用紀錄", evidence: "借用時段、歸還檢查與裂痕照片", result: "管理員完成損壞紀錄並安排檢修", rejected: "把儀器放回櫃中等待別人發現" },
+  { place: "學生自治會", focus: "一份只收到少數班級回覆的午休問卷", action: "分班統計回覆率並補做未回覆班級說明", evidence: "各班人數、有效問卷與未回覆原因", result: "報告清楚標出樣本限制，不把少數意見說成全校共識", rejected: "直接用最高比例代表所有學生" },
+  { place: "圖書館安靜區", focus: "一筆未註明測量距離的音量紀錄", action: "固定與聲源距離和測量時段後重測", evidence: "測量位置、時間長度與儀器設定", result: "館員得到可比較的數據再調整提醒方式", rejected: "拿走廊與桌邊不同位置的數字直接相比" },
+  { place: "環保社堆肥區", focus: "一張把華氏讀值當成攝氏的溫度表", action: "確認溫度計刻度並保留原始單位換算", evidence: "儀器面板、每日讀值與換算紀錄", result: "曲線回到合理範圍，報告也註明單位", rejected: "把超出預期的數字全刪掉" },
+  { place: "老屋修復展場", focus: "一片來源未明的舊屋瓦", action: "比對捐贈紀錄、尺寸與拆卸位置照片", evidence: "捐贈日期、屋瓦紋樣與現場編號", result: "展牌改為『來源待確認』並列出已知資訊", rejected: "因紋樣相似就指定它來自某棟老屋" },
+  { place: "渡輪候船室", focus: "一張把開航時間與登船截止混寫的看板", action: "分列兩個時間並補上適用航班", evidence: "船班公告、票面提醒與現場廣播", result: "旅客能分辨報到與開航，不再誤讀", rejected: "只留下較晚的時間以免版面擁擠" },
+  { place: "山屋物資站", focus: "一箱沒有登記領用人的備用乾糧", action: "清點剩餘數量並回查輪值與領用簿", evidence: "箱號、入庫數、各日領用和結餘", result: "管理員補回正確結餘並改成當場簽記", rejected: "把短少全部算在最後一位值班者身上" },
+  { place: "社區管弦樂團", focus: "兩份小節編號不同的分譜", action: "以總譜版本與修訂日期統一分發", evidence: "檔名版本、頁碼與指揮註記", result: "排練改用同一版本，換段時不再錯位", rejected: "讓每位團員繼續使用手上版本" },
+  { place: "地方語言採集小組", focus: "一段未記錄受訪同意範圍的語音檔", action: "暫停公開並回訪確認保存與使用方式", evidence: "訪談日期、同意內容與檔案用途", result: "語音檔依受訪者選擇限制使用並補登紀錄", rejected: "因內容有研究價值就直接上網" },
+  { place: "故事競賽報到處", focus: "一張沒有列出超時處理方式的規則表", action: "請主辦人補上計時起點與提醒方式", evidence: "競賽辦法、主持流程與評審共識", result: "所有參賽者在賽前取得相同規則", rejected: "比賽中才臨時決定怎麼處理" },
+  { place: "獨立書店", focus: "兩筆同名讀者的預購資料", action: "以訂單末碼與聯絡方式分開核對", evidence: "下單時間、書名數量與訂單末碼", result: "店員通知正確讀者且未公開完整資料", rejected: "只看姓名就把兩筆訂單合併" },
+  { place: "防災演練集合點", focus: "一張把施工封閉通道仍列為出口的路線圖", action: "依現場圍籬與最新樓層圖重畫動線", evidence: "可用出口、集合點容量與引導員位置", result: "演練改走暢通出口並完成分區點名", rejected: "沿用去年路線以節省重畫時間" },
 ];
-assert.equal(SCENARIOS.length, 22);
+assert.equal(SCENARIOS.length, 80);
 const GENRES = ["narrative", "expository", "argumentative", "practical"];
 
 function stimulusFor(index) {
   const number = index + 1;
-  const person = NAMES[Math.floor(index / SCENARIOS.length) % NAMES.length];
-  const scenario = SCENARIOS[index % SCENARIOS.length];
+  const genreIndex = Math.floor(index / SCENARIOS.length);
+  const person = NAMES[(index * 7 + genreIndex) % NAMES.length];
+  const scenario = SCENARIOS[(index + genreIndex * 19) % SCENARIOS.length];
   const { place, focus, action, evidence, result, rejected } = scenario;
-  const genre = GENRES[index % GENRES.length];
-  const variant = Math.floor((index % NAMES.length) / GENRES.length);
+  const genre = GENRES[genreIndex];
+  const variant = (index + genreIndex * 5) % 20;
   const contentByGenre = {
     narrative: [
       `${person}在${place}發現${focus}時，旁人已經為該怎麼處理爭了起來。${person}不採信最大聲的說法，而是${action}。核對${evidence}後，${result}。回頭看，真正讓事情前進的不是猜得快，而是把每個判斷都留下可查的根據。`,
-      `${result}。事後${person}才向大家說起經過：當時在${place}見到${focus}，有人主張${rejected}。${person}改採${action}，並以${evidence}逐步排除誤判。先寫結果再回頧原因，更突出查證步驟才是轉折點。`,
+      `${result}。事後${person}才向大家說起經過：當時在${place}見到${focus}，有人主張${rejected}。${person}改採${action}，並以${evidence}逐步排除誤判。先寫結果再回顧原因，更突出查證步驟才是轉折點。`,
       `「反正大家都這麼說。」有人指著${focus}下了結論。${person}在${place}追問：「我們能回到哪一項紀錄？」接著${action}，將${evidence}寫在同一張核對表上。最後${result}；原本的爭論也從比聲量，轉成比證據。`,
       `${person}的觀察筆記寫著：「地點：${place}；對象：${focus}。」第二行並沒有寫猜測，而是寫下${action}。待${evidence}相互吻合，筆記末端才補上：「${result}。」這份先記事實、後寫結論的紀錄，也讓後來的人能重新檢驗過程。`,
+      `天色漸晚，${place}的工作即將告一段落，${focus}卻仍沒有妥善處理。有人催促${person}${rejected}，${person}卻停下來${action}。等到${evidence}一一對上，${result}。那個看似多花的幾分鐘，反而免去事後重做。`,
+      `「先別動。」${person}說。面對${focus}，其他人原想${rejected}；${person}把工作拆開：${action}，再請大家共同查看${evidence}。不久，${result}。原本急著做決定的人，也開始把理由寫進紀錄。`,
+      `起初，${person}只覺得${focus}是${place}裡一件普通的小事。直到有人提出${rejected}，${person}才發現這個選擇可能影響別人。於是${person}${action}，循著${evidence}確認。事情最後變成：${result}。`,
+      `面對${focus}，在場的人看見的並不相同。有人主張${rejected}，${person}則主張${action}。兩種做法僵持不下，直到${evidence}提供共同的比較基準，眾人才接受結果：${result}。`,
+      `${result}之後，${person}回到${place}收拾桌面，仍把${evidence}留在原檔案中。一天前，大家面對${focus}時還想${rejected}；正是${person}${action}，才讓結局不再只靠運氣。`,
+      `${person}寫給夥伴的短箋只有三行：「我們遇到的是${focus}。我沒有${rejected}，而是${action}。因為${evidence}能讓別人重新查看，所以最後${result}。」短箋不長，卻把選擇和後果都說清楚了。`,
+      `上午，${focus}讓${place}的工作停了下來；中午，仍有人建議${rejected}；傍晚，${person}${action}，逐項核對${evidence}。時間往後推進，問題也一步步縮小，直到${result}。`,
+      `${person}再次看見${focus}時，想起自己差點接受「${rejected}」的建議。他回頭${action}，才從${evidence}看出先前遺漏的關係。後來，${result}；這次回頭成了全篇真正的轉折。`,
+      `${focus}始終放在${place}最醒目的位置，像是在等一個答案。${person}沒有急著移開它，而是${action}。當${evidence}逐漸完整，${result}，原先令人困惑的問題也有了清楚處理方向。`,
+      `大家先不知道事情會如何收場，只知道${person}拒絕${rejected}。他在${place}${action}，其間反覆查看${evidence}。直到最後一句「${result}」出現，讀者才明白前面的耐心沒有白費。`,
+      `「有根據再說。」這句話在${place}出現了兩次。第一次，是${person}阻止大家採用「${rejected}」處理${focus}；第二次，是${person}${action}並攤開${evidence}之後。兩次之間，事情從爭論走向${result}。`,
+      `工作紀錄本來只是冷冰冰的欄位，卻留下了一段經過：${person}遇到${focus}，沒有${rejected}；他${action}，並把${evidence}逐項記下。幾行文字之後，${result}，也讓下一位接手者知道問題如何被解開。`,
+      `${person}心想，若現在${rejected}，事情也許能暫時結束，卻沒有人能說明為什麼。他於是在${place}${action}。看見${evidence}相互支持後，他才放心接受「${result}」這個結果。`,
+      `${place}裡有人查資料、有人記時間，也有人保留不同意見。${person}把眾人的工作接起來，先${action}，再共同比對${evidence}。分工沒有讓責任消失，反而使${result}。`,
+      `${result}後，${place}安靜下來。${person}沒有把功勞攬在自己身上，只把${evidence}整理好。回想有人曾要他${rejected}，他更確定：真正重要的不是最快結案，而是${action}。`,
+      `因為${focus}，有人提出${rejected}；因為這項建議留下疑問，${person}決定${action}；又因${evidence}能回應疑問，最後${result}。這一連串因果，使事件的每一步都能從前文找到來由。`,
     ],
     expository: [
       `${person}整理的說明指出：處理${focus}時，「看起來最合理」不是充分依據。以${place}的這次紀錄為例：第一步是${action}；第二步是比較${evidence}；最後才能得到「${result}」的結果。這個流程的重點是把觀察、推測和結論分開。`,
       `關於${focus}，常見有兩種做法。一種是${rejected}，它省時，卻沒有辦法讓別人複查。另一種是${person}在${place}採用的方法：${action}，再核對${evidence}。後者雖多一道手續，卻得到「${result}」的可驗證結果。`,
       `${place}遇到的問題是：大家對${focus}有不同說法，卻把猜測和記錄混在一起。解決方式不是少留資料，而是由${person}${action}，並把${evidence}列成可對照項目。於是${result}。從問題到方法再到結果，每一段都回答上一段留下的疑問。`,
       `問：發現${focus}後，為什麼不能${rejected}？答：因為這樣無法檢驗資料的來源與適用範圍。問：${person}在${place}怎麼做？答：${action}，並核對${evidence}。問：這些步驟有什麼成效？答：${result}。這組問答把做法、理由與結果清楚分層。`,
+      `處理${focus}可分為三個環節：先${action}；再整理${evidence}；最後才根據兩者說明結果。${place}的紀錄顯示，照此順序進行後，${result}。若改成${rejected}，第二個環節便無從核對。`,
+      `${focus}的處理不是單純的「快或慢」問題。${person}在${place}先界定要回答的問題，再${action}，最後用${evidence}檢查。這三層分別是目的、方法與依據，合起來才得到「${result}」。`,
+      `常見誤解是：面對${focus}，只要${rejected}就能完成工作。實際上，這種做法缺少可確認的中間資料。${place}採用的修正方式是由${person}${action}，並保留${evidence}，因此${result}。`,
+      `【流程卡】輸入：${focus}與現有紀錄。處理：${person}在${place}${action}。檢查：比對${evidence}。輸出：${result}。流程卡把每一步所需資訊分開，可避免用「${rejected}」跳過必要檢查。`,
+      `若把這次${place}的案例畫成因果鏈，起點是${focus}造成資訊不一致；中段是${person}${action}；能連接前後的是${evidence}；終點則是${result}。其中任何一段缺漏，都可能讓讀者誤以為${rejected}也可行。`,
+      `案例摘要：${place}需要處理${focus}。${person}沒有${rejected}，而是${action}。由於${evidence}可供重查，工作最後達成「${result}」。這個案例用具體情況示範：結論要能回到方法與資料。`,
+      `比較表的左欄寫「${rejected}」，優點只有省時，缺點是無法說明依據；右欄寫「${action}」，並附上${evidence}。${place}採右欄做法後，${result}。兩欄使用同一標準，差異便清楚可見。`,
+      `${person}為${place}寫的解說先界定對象：${focus}；接著說明方法：${action}；再列出核對資料：${evidence}。末段才寫「${result}」。這種由對象到方法、再到結果的次序，方便讀者重做同一流程。`,
+      `一、不採「${rejected}」。二、${action}。三、確認${evidence}。四、記錄結果。這份四步說明在${place}實際使用後，得到「${result}」。編號不是裝飾，而是避免把後一步誤當前一步。`,
+      `這次處理可用「現況—限制—方法—結果」理解。現況是${focus}；限制是不能${rejected}；方法是${person}${action}；核對資料是${evidence}；結果是${result}。各項資訊分別回答不同問題。`,
+      `為什麼${place}要留下${evidence}？因為${person}${action}後，仍需讓下一位承辦者知道結論從何而來。這些資料使「${result}」不只是口頭宣告，也說明了為何不能${rejected}。`,
+      `從資料處理角度看，${focus}是待判定項目，${evidence}是核對條件，${action}是操作步驟。${person}在${place}依此完成後，${result}。三者功能不同，不能用「${rejected}」一次取代。`,
+      `簡短報告分成兩段。第一段記錄${person}如何在${place}${action}，第二段用${evidence}解釋為何可得到「${result}」。報告另列${rejected}為未採方式，提醒讀者不能用缺乏依據的做法取代流程。`,
+      `要重做這項工作，讀者不必複製${person}的每個動作，只須掌握三個條件：對象是${focus}，操作是${action}，核對時使用${evidence}。符合這三點，才能檢查是否也能得到「${result}」。`,
+      `說明書中的警語寫著：「不得${rejected}。」警語後緊接兩項資訊：做法是${action}；依據是${evidence}。它不只告訴讀者別做什麼，也提供可行替代。${place}依此處理後，${result}。`,
+      `${place}的觀察紀錄沒有把所有細節等量排列，而是挑出和${focus}直接相關的三項：${action}的步驟、${evidence}的條件，以及「${result}」的結果。這種取捨使主題集中，也排除了${rejected}的捷徑。`,
     ],
     argumentative: [
       `有人認為，處理${focus}時，${rejected}最有效率。但${person}在${place}的經驗顯示，快並不等於可靠。${person}${action}，再以${evidence}查核，結果是${result}。因此，若一項決定會影響他人，至少應讓核心證據可被重新檢查。`,
       `${place}這次關於${focus}的處理，支持了一個主張：先保留證據，再得出結論，往往比依賴印象有效。理由不只是${person}選擇了${action}，更在於${evidence}能供別人獨立核對，最後也確實使${result}。單一事例不足以證明所有情況，但它能說明這套原則為何值得優先採用。`,
       `當然，每件小事都要追查到底，可能浪費時間。然而，這不代表處理${focus}時可以${rejected}。${person}在${place}做的是有界線的查核：${action}，只比對與判斷直接相關的${evidence}。這個範圍已足以使${result}。關鍵不是「查得越多越好」，而是證據是否足以支持當下決定。`,
-      `評估${focus}的處理方式，可以用三個標準：是否保護當事人、證據是否可複查、結果是否回應問題。「${rejected}」至少沒有通過第二項。相較之下，${person}在${place}${action}，並以${evidence}說明決定，最後${result}。依同一組標準比較，才不會只因個人偏好就改變結論。`,
+      `評估${focus}的處理方式，可以用三個標準：是否保護當事人、證據是否可複查、結果是否回應問題。「${rejected}」至少沒有通過第二項。相較之下，${person}在${place}${action}，參考資料包括${evidence}，最後${result}。依同一組標準比較，才不會只因個人偏好就改變結論。`,
+      `面對${focus}，真正的選擇不是「馬上做」或「什麼都不做」。${place}的經驗提出第三條路：由${person}${action}，並以${evidence}限制判斷範圍。這樣既能推進工作，也使${result}；反而是${rejected}最容易留下後患。`,
+      `若只比較花費時間，${rejected}似乎占優勢；若把誤判後的重做成本也算進來，結論便不同。${person}在${place}${action}，核對${evidence}後，${result}。因此，效率應包含結果是否可靠，而不只看第一步多快。`,
+      `有人反問：「為${focus}留下${evidence}，是否太麻煩？」這個疑問值得考慮，但${place}的案例顯示，${person}${action}並未無限擴大查核，卻足以使${result}。必要範圍內的說明，不等於事事追究。`,
+      `判斷一項做法是否合理，可以先問：它能否讓受影響的人知道依據？「${rejected}」無法回答；${person}在${place}${action}並列出${evidence}，則能回答。最後${result}，也證明公開依據有實際作用。`,
+      `${place}對${focus}的爭議不是誰的聲音大，而是哪個理由能承受核對。${person}主張${action}，理由是${evidence}可重查；另一方則主張「${rejected}」。當${result}，較完整的理由自然更有說服力。`,
+      `「只要結果對，過程不必說明」看似實用，卻禁不起${place}的例子。${person}若只碰巧得到答案，別人無法重做；他選擇${action}並保留${evidence}，才使${result}成為可說明的成果。`,
+      `討論${focus}時，${person}沒有把自己的做法說成唯一真理。他只指出：和${rejected}相比，${action}能以${evidence}接受檢查，並確實帶來「${result}」。這是一項有條件的主張，而非把單一案例誇大成普遍定律。`,
+      `如果${place}接受${rejected}，短期可能少一道程序，長期卻可能無法解釋錯誤。${person}${action}，用${evidence}建立交接基礎，最後${result}。從前後影響比較，後者更符合負責任的決策。`,
+      `一項結論的可信度，不會因說話者身分而自動提高。處理${focus}時，${person}在${place}提出的是可檢查的做法：${action}；支持它的是${evidence}；結果則是${result}。這三者比「${rejected}」更值得採納。`,
+      `反對者擔心查核會拖慢進度。回應這項擔心，不能只說「查核很重要」，而要看實際範圍。針對${focus}，${person}採取${action}，查核範圍只包括${evidence}，便使${result}。案例顯示，有界線的查核可以兼顧進度。`,
+      `從公平角度看，${rejected}可能讓未被詢問的人承擔後果。${person}在${place}${action}，並用${evidence}說明判斷，最後${result}。讓依據公開，不只提高正確率，也降低任意歸責。`,
+      `是否採用一項方法，應先確定評量標準。若標準是「能處理${focus}、可由他人核對、沒有不必要傷害」，${rejected}明顯不足；${action}搭配${evidence}則較完整，且實際達成${result}。`,
+      `問「誰說的」有時有用，卻不能取代「根據什麼」。${place}處理${focus}時，${person}沒有要求大家只相信個人判斷，而是${action}，並提出${evidence}。正因如此，「${result}」不是靠權威命令得到的。`,
+      `只因${rejected}比較方便，就把方便等同正確，是把兩種標準混在一起。${person}在${place}${action}，再用${evidence}檢查，結果${result}。案例提醒我們：方便可列入考量，但不能遮蔽可靠性。`,
+      `這個案例能支持的結論有限：它不能證明每次遇到${focus}都必須用同一程序，卻能反駁「${rejected}永遠足夠」。至少在${place}，${person}${action}並核對${evidence}後，${result}。`,
+      `好的決策規則應讓不同的人在相同資料下得到相近判斷。${person}處理${focus}時，把規則落實為${action}，資料則是${evidence}。這使${place}最後${result}，比憑個人偏好${rejected}更可交代。`,
     ],
     practical: [
       `【${place}處理通知】對象：${focus}。負責人：${person}。步驟：${action}。核對項目：${evidence}。處理結果：${result}。請勿${rejected}；如有新資料，請附上來源與時間，交由原負責單位更新。`,
       `【工作紀錄】地點：${place}。記錄者：${person}。問題：${focus}引發的資訊不一致。已完成：${action}。核對依據：${evidence}。結案：${result}。未採做法：${rejected}，因為無法留下可複查依據。`,
-      `主旨：${place}的${focus}處理說明。您好，我是${person}。現場原有說法尚未足以判斷，因此我已${action}，並依${evidence}完成核對。目前${result}。為避免混淆，請不要${rejected}。若您有相關紀錄，請回覆具體日期與來源。`,
+      `主旨：${focus}處理說明（${place}）。您好，我是${person}。現場原有說法尚未足以判斷，因此我已${action}，並依${evidence}完成核對。目前${result}。為避免混淆，請不要${rejected}。若您有相關紀錄，請回覆具體日期與來源。`,
       `【會議決議摘要】案由：如何處理${place}的${focus}。與會者不採「${rejected}」，改由${person}${action}。驗收依據為${evidence}。執行後，${result}。後續若收到新資料，應在同一紀錄中附上版本時間，不口頭覆蓋原紀錄。`,
+      `【交接單】事項：${focus}。地點：${place}。前手已由${person}${action}；附件包含${evidence}。目前狀態：${result}。接手者若需變更，請保留原紀錄；不得${rejected}。`,
+      `【修正公告】原文件涉及${focus}，部分資訊不足。修正方式：${person}${action}，並重新核對${evidence}。修正後：${result}。舊版保留更正標記，請勿再${rejected}。`,
+      `【服務案件】編號：${String(number).padStart(3, "0")}。受理地點：${place}。案件內容：${focus}。承辦${person}已${action}。查核資料：${evidence}。回覆：${result}。備註：不採「${rejected}」。`,
+      `【操作檢核表】□ 確認${focus}。□ 由${person}${action}。□ 比對${evidence}。□ 記錄「${result}」。禁止事項：${rejected}。本表供${place}後續承辦者逐項簽認。`,
+      `【常見問題】問：遇到${focus}可否${rejected}？答：不可，請由${person}${action}。問：要帶哪些資料？答：${evidence}。問：完成後如何確認？答：結果應為「${result}」。`,
+      `【內部備忘】給${place}同仁：關於${focus}，${person}已${action}，核對範圍為${evidence}。目前${result}。請沿用同一版本記錄，不要${rejected}；需要補件時請註明日期。`,
+      `【任務卡】任務名稱：處理${focus}。執行者：${person}。執行地點：${place}。工作內容：${action}。完成證據：${evidence}。驗收結果：${result}。風險提醒：不得${rejected}。`,
+      `【狀態更新】${focus}｜處理中→已完成。更新人：${person}。本次動作：${action}。參照資料：${evidence}。更新結果：${result}。若有人提議${rejected}，請先回到本紀錄核對。`,
+      `【回覆函】您詢問的${focus}已由${place}受理。承辦人${person}${action}，並查核${evidence}；目前結果為：${result}。基於資料正確與當事人權益，我們未採「${rejected}」的方式。`,
+      `【版本說明】文件主題：${focus}。第 1 版曾出現資訊不足；第 2 版由${person}${action}並加入${evidence}。最新版結果為「${result}」。辨識版本時，請勿${rejected}。`,
+      `【風險提示】處理${focus}時，${rejected}可能造成誤判。${place}採取的控制方式是由${person}${action}，必要核對資料為${evidence}。完成後應確認：${result}。`,
+      `【查核收據】查核項目：${focus}。查核人：${person}。查核地點：${place}。已執行：${action}。所見資料：${evidence}。結論：${result}。本收據不支持${rejected}。`,
+      `【排程附註】${focus}已列入本次${place}工作。${person}負責${action}；開始前須備妥${evidence}，完成條件為「${result}」。若資料未齊，不得先${rejected}。`,
+      `【布告欄更新】原主題：${focus}。更新內容：${person}${action}。可查資料：${evidence}。目前公告：${result}。請讀者以本版為準，不要${rejected}；疑問請向${place}提出。`,
+      `【結案報告】${place}已完成${focus}案件。${person}採取${action}，依${evidence}確認後，${result}。未解決事項：無。未採「${rejected}」是為避免缺乏依據的處置。`,
+      `【資料補正單】補正對象：${focus}。缺漏處置：由${person}${action}。補正依據：${evidence}。核准結果：${result}。補正只處理已列項目，不得自行改成「${rejected}」的處理方式。`,
     ],
   };
+  for (const values of Object.values(contentByGenre)) assert.equal(values.length, 20);
   const content = contentByGenre[genre][variant];
   return {
     id: `CHI_R4_STIM_${String(number).padStart(3, "0")}`,
@@ -1940,13 +2064,32 @@ function stimulusFor(index) {
 function stimulusQuestionsFor(stimulus, index) {
   const skill = readingSkills[index % readingSkills.length];
   const { person, place, focus, action, evidence, result, rejected, genre } = stimulus.facts;
-  const form = { narrative: "敘事", expository: "說明", argumentative: "議論", practical: "應用文" }[genre];
-  const specs = [
-    { stem: `這篇${form}文本的核心重點是什麼？`, correct: `處理${focus}時，${person}以可複查的證據代替未經查證的猜測。`, wrong: [`處理${focus}時，只要多數人贊成就不必再查證。`, `${place}任何問題都會在當天完全解決。`, `文本主要在比較${person}與其他人的身分高低。`], reason: "全文的做法、證據與結果都繞著「可複查的判斷」展開。" },
-    { stem: `根據文本，${person}處理${focus}時實際做了什麼？`, correct: action, wrong: [rejected, `只記下${place}的地名就宣布結案`, "刪除與自己想法不同的原始資料"], reason: `文本明確把「${action}」列為${person}的處理步驟。` },
-    { stem: `為什麼文中特別列出「${evidence}」？`, correct: "這些資料能讓別人依同一標準重新核對結論。", wrong: ["這些資料字數較多，所以必然比其他資料正確。", "這些資料只是為了讓版面看起來專業。", `這些資料證明${person}從一開始就知道所有答案。`], reason: "文本把這些資料當作核對項目，不是裝飾，也不是以篇幅取信。" },
-    { stem: `「${result}」這項結果，在${person}處理${place}問題的全文中有什麼作用？`, correct: "回應前文的問題與方法，讓讀者看見查證後的具體影響。", wrong: ["另開一個與前文無關的議題。", `證明「${rejected}」才是最好的做法。`, "只重複標題，沒有增加任何資訊。"], reason: "結果承接處理步驟，將抽象的方法轉成可觀察的後果。" },
-  ];
+  const specs = {
+    narrative: [
+      { stem: `面對${focus}引起的問題，${person}的做法出現哪一項關鍵轉折？`, correct: `沒有採取「${rejected}」，而改為${action}。`, wrong: [`一開始就知道「${result}」而沒有採取行動。`, `離開${place}，把問題完全交給陌生人。`, `刪除${evidence}，避免別人追問。`], reason: "人物放棄原先有人主張的捷徑，改採文中明寫的行動，推動事件發展。" },
+      { stem: `文中列出「${evidence}」，最能幫助讀者理解什麼？`, correct: `理解${person}的判斷並非只靠印象，而有具體依據。`, wrong: [`證明${person}在行動以前就已確定「${result}」。`, `暗示只要列出的資料夠多，任何結論都可成立。`, `補充${place}的背景，但和事件轉折沒有關係。`], reason: "這些細節位在行動與結果之間，用來交代人物如何排除錯誤判斷。" },
+      { stem: `根據全文，最適合形容${person}處理${focus}時的表現的是什麼？`, correct: "願意放慢判斷，並兼顧事情的後果。", wrong: [`只重視能否迅速得到「${result}」，不在意過程。`, `主要依從現場多數人的意見，沒有自己的判準。`, `雖保留資料，最後仍採取「${rejected}」的做法。`], reason: "人物以具體行動回應問題，且沒有用方便但不可靠的作法草率結案。" },
+      { stem: `結尾寫到「${result}」，對這篇敘事最主要的作用是什麼？`, correct: "收束前文衝突，顯示人物選擇帶來的具體改變。", wrong: [`把結果當成事件起因，顛倒前後因果。`, `證明「${rejected}」其實也能得到相同結果。`, `只總結${evidence}的數量，沒有回應人物選擇。`], reason: "結尾直接承接人物行動，讓轉折後的影響可被看見。" },
+    ],
+    expository: [
+      { stem: `這篇說明文字主要要讓讀者了解什麼？`, correct: `處理${focus}時，如何從${action}逐步得到「${result}」的結果。`, wrong: [`${person}在${place}的個人興趣排行。`, `${place}所有工作的歷史沿革。`, `為什麼「${rejected}」適用於每一種問題。`], reason: "全文依序交代問題、方法、核對資料與結果，重點在說明處理流程。" },
+      { stem: `依照文中的流程，在得出結論以前最需要核對哪一項資料？`, correct: evidence, wrong: [`「${action}」這項操作步驟本身`, `「${result}」這項完成後才出現的結果`, `「${rejected}」這項已被排除的做法`], reason: "文本明確把這組資料放在方法與結論之間，作為檢查依據。" },
+      { stem: `作者提到「${rejected}」，在說明上有什麼功能？`, correct: `用一個不可靠的做法作對照，凸顯「${action}」的必要。`, wrong: ["把它列為全文唯一推薦的方法。", "證明所有省時的作法都必然錯誤。", "轉入一段與主題無關的人物傳記。"], reason: "不採做法和實際流程形成對照，幫助讀者看出判斷條件。" },
+      { stem: `說明${focus}的這篇文字，組織方式最接近下列何者？`, correct: "提出待處理情況，說明步驟與依據，再交代結果。", wrong: [`先主張「${rejected}」，再用全文證明它正確。`, `只比較${person}與其他人的個性，未交代方法。`, `先列「${result}」，再依時間追述${place}的歷史。`], reason: "段落由問題推進到方法與結果，前後資訊有明確承接。" },
+    ],
+    argumentative: [
+      { stem: "這篇議論文字最主要支持哪一項主張？", correct: `處理${focus}時，應讓判斷有足夠依據，而不能只採「${rejected}」。`, wrong: [`凡是在${place}做的決定都不會出錯。`, "步驟越多的做法必然越好。", `${person}的任何選擇都不需要接受檢驗。`], reason: "全文以一個具體案例比較兩種做法，主張判斷應與可支持它的資料相稱。" },
+      { stem: `「${result}」最適合被視為這篇文章中的哪一種材料？`, correct: "支持主張的實際結果。", wrong: [`文章一開始提出、尚未獲支持的主要主張。`, `對「${rejected}」所作的讓步。`, `用來界定「${focus}」詞義的抽象定義。`], reason: "結果顯示文中建議的做法確實回應原問題，因而成為論據的一部分。" },
+      { stem: `若要反駁「${rejected}最省事，所以最好」的說法，文中哪項資訊最有力？`, correct: `${action}，並以${evidence}核對後得到可說明的結果。`, wrong: [`重複「${rejected}」這項說法，但不比較後果。`, `只指出${person}負責處理，未說明採用何種資料。`, `只列「${result}」，卻不交代它和哪一做法有關。`], reason: "反駁必須回到兩種做法的可靠程度與後果，不能用無關的文字特徵代替。" },
+      { stem: `依全文來看，作者對查核${focus}的範圍抱持什麼態度？`, correct: "資料要足以支持當下判斷，但不表示任何小事都要無限追查。", wrong: ["資料越多越好，即使侵犯隱私也無妨。", "任何判斷都只能靠多數表決。", "只要結果碰巧正確，過程完全不必說明。"], reason: "文章肯定有依據的判斷，同時沒有把查核擴張為不受限制的要求。" },
+    ],
+    practical: [
+      { stem: `這份${place}文字最主要的用途是什麼？`, correct: `交代${focus}的處理方式、核對項目與目前結果。`, wrong: [`說服讀者改採「${rejected}」，不必留下紀錄。`, `只公告「${result}」，不讓後續承辦者知道依據。`, `介紹${person}的經歷，並把${focus}當作旁例。`], reason: "標題、欄位或段落都圍繞一件待處理事項，並提供可採取的資訊。" },
+      { stem: `收到這份關於${focus}的文字後，若有新資料，最合宜的做法是什麼？`, correct: "附上具體來源與時間，交由原負責單位更新紀錄。", wrong: ["刪除舊紀錄，只保留自己的說法。", "在未核對前公開指責相關人員。", "改動文件後不留下版本資訊。"], reason: "應用文本明確要求新資料保留來源並回到既有流程處理。" },
+      { stem: `文件特別提醒不要「${rejected}」，主要是為了避免什麼？`, correct: "避免未經核對便作成可能影響他人的判斷。", wrong: [`避免讀者知道${place}的名稱。`, "避免文件出現任何標點符號。", `避免${person}完成已列出的工作。`], reason: "提醒語直接對應待處理問題，限制讀者採取不可靠或不合宜的行動。" },
+      { stem: `下列何者同時包含這份文件明列的核對依據與處理結果？`, correct: `${evidence}，以及「${result}」的處理結果。`, wrong: [`「${action}」的步驟，以及尚未查證的新猜測。`, `「${rejected}」的做法，以及${person}的個人偏好。`, `${place}的名稱，以及文件未記載的後續發展。`], reason: "可交接資訊必須來自文件明列的核對項目與處理結果。" },
+    ],
+  }[genre];
   return specs.map((spec, questionIndex) => {
     const answerIndex = (index + questionIndex) % 4;
     const raw = [spec.correct, ...spec.wrong];
@@ -1963,7 +2106,7 @@ function stimulusQuestionsFor(stimulus, index) {
       optionRationales: options.map((option, optionIndex) => ({
         optionIndex,
         isCorrect: optionIndex === answerIndex,
-        reason: optionIndex === answerIndex ? spec.reason : `文中沒有支持「${option}」的資訊，且這個說法與事件次序或結尾重點不符。`,
+        reason: optionIndex === answerIndex ? spec.reason : `文本沒有提供足以支持「${option}」的資訊；這個說法也沒有回答題幹所問的${{ narrative: "人物、因果或篇章作用", expository: "說明重點或組織", argumentative: "主張與論據", practical: "目的、條件或可採行資訊" }[genre]}。`,
       })),
       difficulty: ["standard", "foundation", "advanced", "transfer"][questionIndex],
       cognitiveProcess: [["comprehend"], ["locate"], ["infer"], ["analyze-structure"]][questionIndex],
