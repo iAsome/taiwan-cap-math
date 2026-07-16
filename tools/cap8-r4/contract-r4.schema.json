@@ -194,6 +194,112 @@
         "sourceRefs": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
       }
     },
+    "dataFallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary", "columns", "rows"],
+      "properties": {
+        "summary": { "type": "string", "minLength": 1 },
+        "columns": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "anyOf": [{ "type": "string" }, { "type": "number" }] }
+          }
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "skillIds", "type", "path", "sha256", "creator", "source", "license", "originality", "transformationRecord", "calibrationRefs", "caption", "altText", "longDescription", "accessibility", "technical"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "subject": { "$ref": "#/$defs/subject" },
+        "skillIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "type": { "enum": ["figure", "map", "graph", "table", "science-diagram", "audio"] },
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/hash" },
+        "creator": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "originality": { "enum": ["original", "public-domain", "licensed"] },
+        "transformationRecord": { "type": "string", "minLength": 1 },
+        "calibrationRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "caption": { "type": "string", "minLength": 1 },
+        "altText": { "type": "string", "minLength": 1 },
+        "longDescription": { "type": "string", "minLength": 20 },
+        "dataFallback": { "$ref": "#/$defs/dataFallback" },
+        "transcript": { "type": "string", "minLength": 1 },
+        "accessibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["colorIndependent", "printSafe"],
+          "properties": {
+            "colorIndependent": { "const": true },
+            "printSafe": { "const": true }
+          }
+        },
+        "technical": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "drawingMode": { "enum": ["schematic", "to-scale"] },
+            "labels": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+            "units": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+            "scale": { "type": "string", "minLength": 1 },
+            "orientation": { "type": "string", "minLength": 1 },
+            "legend": { "type": "string", "minLength": 1 },
+            "projection": { "type": "string", "minLength": 1 },
+            "mapContext": { "enum": ["contemporary", "historical", "data"] },
+            "dateOrYear": { "type": "string", "minLength": 1 },
+            "uncertaintyNote": { "type": "string", "minLength": 1 },
+            "dataSource": { "type": "string", "minLength": 1 },
+            "axes": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } },
+            "significantFigures": { "type": "string", "minLength": 1 },
+            "controlledVariables": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+            "headers": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "scriptSha256": { "$ref": "#/$defs/hash" },
+            "voice": { "type": "string", "minLength": 1 },
+            "rate": { "type": "string", "minLength": 1 },
+            "pausePattern": { "type": "string", "minLength": 1 }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "audio" } }, "required": ["type"] },
+          "then": {
+            "required": ["transcript"],
+            "properties": { "technical": { "type": "object", "required": ["scriptSha256", "voice", "rate", "pausePattern"] } }
+          },
+          "else": { "required": ["dataFallback"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "map" } }, "required": ["type"] },
+          "then": { "properties": { "technical": { "type": "object", "required": ["scale", "orientation", "legend", "projection", "mapContext"] } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "graph" } }, "required": ["type"] },
+          "then": { "properties": { "technical": { "type": "object", "required": ["axes", "units", "legend", "significantFigures", "controlledVariables", "dataSource"] } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "table" } }, "required": ["type"] },
+          "then": { "properties": { "technical": { "type": "object", "required": ["headers", "units", "dataSource"] } } }
+        },
+        {
+          "if": { "properties": { "type": { "enum": ["figure", "science-diagram"] } }, "required": ["type"] },
+          "then": { "properties": { "technical": { "type": "object", "required": ["drawingMode", "labels"] } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "science-diagram" } }, "required": ["type"] },
+          "then": { "properties": { "technical": { "type": "object", "required": ["units", "controlledVariables"] } } }
+        }
+      ]
+    },
     "finalAudit": {
       "type": "object",
       "additionalProperties": false,

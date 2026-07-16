@@ -6,14 +6,14 @@ import Ajv2020 from "ajv/dist/2020.js";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const CONTRACT_PATH = path.join(HERE, "contract-r4.schema.json");
-const SUPPORTED = new Set(["source", "authority", "skill", "lecture", "question", "finalAudit", "corpusRange"]);
+const SUPPORTED = new Set(["source", "authority", "skill", "lecture", "question", "asset", "finalAudit", "corpusRange"]);
 let compiledPromise;
 
 async function compiled() {
   if (!compiledPromise) {
     compiledPromise = (async () => {
       const schema = JSON.parse(await readFile(CONTRACT_PATH, "utf8"));
-      const ajv = new Ajv2020({ allErrors: true, strict: true, formats: { uri: true } });
+      const ajv = new Ajv2020({ allErrors: true, strict: true, strictRequired: false, formats: { uri: true } });
       ajv.addSchema(schema);
       return Object.fromEntries(
         [...SUPPORTED].map((kind) => [kind, ajv.compile({ $ref: `${schema.$id}#/$defs/${kind}` })]),
@@ -36,6 +36,34 @@ function invariantQuestion(question) {
   }
 }
 
+function invariantAsset(asset) {
+  assert(!path.isAbsolute(asset.path), `${asset.id}: asset path must be repository-relative`);
+  assert(!asset.path.split(/[\\/]+/u).includes(".."), `${asset.id}: asset path must not escape the repository`);
+  const extension = path.extname(asset.path).toLowerCase();
+  const allowedExtensions = asset.type === "audio" ? new Set([".mp3", ".ogg", ".wav"]) : new Set([".svg", ".html"]);
+  assert(allowedExtensions.has(extension), `${asset.id}: asset path extension does not match ${asset.type}`);
+  assert.notEqual(asset.caption.trim(), asset.altText.trim(), `${asset.id}: alt text must describe more than the caption`);
+
+  if (asset.dataFallback) {
+    const width = asset.dataFallback.columns.length;
+    assert(
+      asset.dataFallback.rows.every((row) => row.length === width),
+      `${asset.id}: data fallback rows must match the declared columns`,
+    );
+  }
+
+  if (asset.type === "map") {
+    if (asset.technical.mapContext === "historical") {
+      assert(asset.technical.dateOrYear, `${asset.id}: historical map needs a date or year`);
+      assert(asset.technical.uncertaintyNote, `${asset.id}: historical map needs an uncertainty note`);
+    }
+    if (asset.technical.mapContext === "data") {
+      assert(asset.technical.dateOrYear, `${asset.id}: data map needs a data year`);
+      assert(asset.technical.dataSource, `${asset.id}: data map needs a data source`);
+    }
+  }
+}
+
 export async function validateAuthoringRecord(kind, value) {
   assert(SUPPORTED.has(kind), `unsupported authoring record kind: ${kind}`);
   const validate = (await compiled())[kind];
@@ -45,6 +73,7 @@ export async function validateAuthoringRecord(kind, value) {
     );
   }
   if (kind === "question") invariantQuestion(value);
+  if (kind === "asset") invariantAsset(value);
   if (kind === "corpusRange") assert(value.startByte < value.endByte, "corpus range must be non-empty");
   return true;
 }
