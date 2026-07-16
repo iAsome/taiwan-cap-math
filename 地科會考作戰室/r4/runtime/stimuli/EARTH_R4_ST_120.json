@@ -1,0 +1,76 @@
+{
+  "id": "EARTH_R4_ST_120",
+  "subject": "earth_science",
+  "unitId": "EARTH_R4_U16",
+  "skillIds": [
+    "EARTH_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-IB-4-1",
+    "AUTH-NATURAL-LC-IB-4-2",
+    "AUTH-NATURAL-LC-IB-4-3",
+    "AUTH-NATURAL-LC-IB-4-4",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "type": "accessible-figure-and-data",
+  "content": {
+    "title": "讀取地面天氣圖的高低氣壓與等壓線資料組",
+    "scenario": "由連續三張天氣圖追蹤冷鋒",
+    "table": {
+      "columns": [
+        "時刻",
+        "氣溫°C",
+        "氣壓hPa",
+        "風向",
+        "降雨"
+      ],
+      "rows": [
+        [
+          "09時",
+          25,
+          1008,
+          "南",
+          "無"
+        ],
+        [
+          "12時",
+          22,
+          1010,
+          "西北",
+          "強"
+        ],
+        [
+          "15時",
+          19,
+          1015,
+          "北",
+          "弱"
+        ]
+      ]
+    },
+    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
+    "skillSpecificCriterion": "本資料組用來檢驗「讀取地面天氣圖的高低氣壓與等壓線」；判準為「地面天氣圖、連續測站資料、衛星雲圖與雷達回波需對齊時間後共同判讀」。"
+  },
+  "accessibility": {
+    "textAlternative": "讀取地面天氣圖的高低氣壓與等壓線資料表。欄位為時刻、氣溫°C、氣壓hPa、風向、降雨；共有3列。單張雲圖不能唯一決定鋒面種類；雷達回波強也不等於地面風一定最大。",
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "assets": [
+    "EARTH_R4_ASSET_WEATHER_MAP"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-IB-4-1",
+      "AUTH-NATURAL-LC-IB-4-2",
+      "AUTH-NATURAL-LC-IB-4-3",
+      "AUTH-NATURAL-LC-IB-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  }
+}

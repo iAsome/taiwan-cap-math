@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a6259">
+  <title>地科會考作戰室 R4</title>
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="topbar">
+    <div>
+      <strong>地科會考作戰室</strong>
+      <span class="version">R4</span>
+    </div>
+    <div class="top-actions">
+      <label for="seed">種子碼</label>
+      <input id="seed" inputmode="numeric" value="1" aria-label="練習種子碼">
+      <button id="practice" type="button" disabled>開始 20 題練習</button>
+    </div>
+  </header>
+  <div class="workspace">
+    <aside aria-label="地科內容導覽">
+      <h2 class="side-title">30 個單元</h2>
+      <nav id="unit-list" aria-label="單元"></nav>
+      <h2 class="side-title">學習重點</h2>
+      <nav id="skill-list" aria-label="目前單元的學習重點"></nav>
+      <details class="official-library">
+        <summary>106–115 官方題本</summary>
+        <ul>
+          <li><a href="../official-data/106/106-exam.pdf">106 題本</a>｜<a href="../official-data/106/106-answer.pdf">答案</a></li>
+          <li><a href="../official-data/107/107-exam.pdf">107 題本</a>｜<a href="../official-data/107/107-answer.pdf">答案</a></li>
+          <li><a href="../official-data/108/108-exam.pdf">108 題本</a>｜<a href="../official-data/108/108-answer.pdf">答案</a></li>
+          <li><a href="../official-data/109/109-exam.pdf">109 題本</a>｜<a href="../official-data/109/109-answer.pdf">答案</a></li>
+          <li><a href="../official-data/110/110-exam.pdf">110 題本</a>｜<a href="../official-data/110/110-answer.pdf">答案</a></li>
+          <li><a href="../official-data/111/111-exam.pdf">111 題本</a>｜<a href="../official-data/111/111-answer.pdf">答案</a></li>
+          <li><a href="../official-data/112/112-exam.pdf">112 題本</a>｜<a href="../official-data/112/112-answer.pdf">答案</a></li>
+          <li><a href="../official-data/113/113-exam.pdf">113 題本</a>｜<a href="../official-data/113/113-answer.pdf">答案</a></li>
+          <li><a href="../official-data/114/114-exam.pdf">114 題本</a>｜<a href="../official-data/114/114-answer.pdf">答案</a></li>
+          <li><a href="../official-data/115/115-exam.pdf">115 題本</a>｜<a href="../official-data/115/115-answer.pdf">答案</a></li>
+        </ul>
+      </details>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div id="status" role="status" aria-live="polite" tabindex="-1">正在載入地科內容…</div>
+      <section id="content"></section>
+    </main>
+  </div>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

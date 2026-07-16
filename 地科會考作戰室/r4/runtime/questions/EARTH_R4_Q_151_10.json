@@ -1,0 +1,84 @@
+{
+  "id": "EARTH_R4_Q_151_10",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FB-4-1",
+    "AUTH-NATURAL-LC-ID-4-1",
+    "AUTH-NATURAL-LC-ID-4-2",
+    "AUTH-NATURAL-LC-ID-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "情境：由日出日落算晝長。附表提供「由地球自轉解釋晝夜交替」相關資料。開始比較前，哪個做法正確？",
+  "options": [
+    "就「由地球自轉解釋晝夜交替」而言，先核對表格欄位、單位與觀測範圍，再先判定半球與日期位置。",
+    "就「由地球自轉解釋晝夜交替」而言，只找全表最大數字，不管它屬於哪個欄位。",
+    "就「由地球自轉解釋晝夜交替」而言，把缺值視為零，且不在結論中說明。",
+    "就「由地球自轉解釋晝夜交替」而言，只要資料列很多，就省略來源與取樣方式。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "表格判讀必須先確認資料語意、技能判準與可比較性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同欄位可能是不同變因與單位。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺值不是量測到零，會扭曲比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "樣本數無法補救來源不明或系統偏差。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "interpret-structured-data"
+  ],
+  "representationType": "data-table",
+  "misconceptionTargets": [
+    "全球同一天的晝長完全相等"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FB-4-1",
+      "AUTH-NATURAL-LC-ID-4-1",
+      "AUTH-NATURAL-LC-ID-4-2",
+      "AUTH-NATURAL-LC-ID-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項代回「由地球自轉解釋晝夜交替」的定義與證據鏈，只有「就「由地球自轉解釋晝夜交替」而言，先核對表格欄位、單位與觀測範圍，再先判定半球與日期位置。」符合；太陽高度、日出日落時刻、日照角度與南北半球資料可檢驗季節模型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「由地球自轉解釋晝夜交替」而言，先核對表格欄位、單位與觀測範圍，再先判定半球與日期位置。」。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "EARTH_R4_ASSET_SKY"
+  ]
+}

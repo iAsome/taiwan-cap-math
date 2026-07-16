@@ -1,0 +1,78 @@
+{
+  "id": "EARTH_R4_ST_143",
+  "subject": "earth_science",
+  "unitId": "EARTH_R4_U19",
+  "skillIds": [
+    "EARTH_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-IA-4-2",
+    "AUTH-NATURAL-LC-IA-4-3",
+    "AUTH-NATURAL-LC-IA-4-4",
+    "AUTH-NATURAL-LC-MD-4-4",
+    "AUTH-NATURAL-LC-MD-4-5",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "type": "accessible-figure-and-data",
+  "content": {
+    "title": "整合地質圖雨量圖與聚落資料評估風險資料組",
+    "scenario": "由地層傾向和坡向辨認順向坡",
+    "table": {
+      "columns": [
+        "區域",
+        "坡度度",
+        "24小時雨量mm",
+        "地層條件",
+        "聚落戶數"
+      ],
+      "rows": [
+        [
+          "甲",
+          32,
+          420,
+          "順向坡",
+          180
+        ],
+        [
+          "乙",
+          18,
+          390,
+          "逆向坡",
+          420
+        ],
+        [
+          "丙",
+          28,
+          210,
+          "岩盤完整",
+          90
+        ]
+      ]
+    },
+    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
+    "skillSpecificCriterion": "本資料組用來檢驗「整合地質圖雨量圖與聚落資料評估風險」；判準為「地質圖、斷層、震源、坡度、地層傾向、雨量與聚落資料需疊合才能評估風險」。"
+  },
+  "accessibility": {
+    "textAlternative": "整合地質圖雨量圖與聚落資料評估風險資料表。欄位為區域、坡度度、24小時雨量mm、地層條件、聚落戶數；共有3列。順向坡或活動斷層附近代表風險條件之一，不表示每次都必然發生災害。",
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "assets": [
+    "EARTH_R4_ASSET_TAIWAN_HAZARD"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-IA-4-2",
+      "AUTH-NATURAL-LC-IA-4-3",
+      "AUTH-NATURAL-LC-IA-4-4",
+      "AUTH-NATURAL-LC-MD-4-4",
+      "AUTH-NATURAL-LC-MD-4-5",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

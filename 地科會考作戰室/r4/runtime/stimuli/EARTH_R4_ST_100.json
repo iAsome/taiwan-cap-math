@@ -1,0 +1,71 @@
+{
+  "id": "EARTH_R4_ST_100",
+  "subject": "earth_science",
+  "unitId": "EARTH_R4_U13",
+  "skillIds": [
+    "EARTH_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FA-4-1",
+    "AUTH-NATURAL-LC-FA-4-3",
+    "AUTH-NATURAL-LC-FA-4-4",
+    "AUTH-NATURAL-LC-ING-4-1",
+    "AUTH-NATURAL-LC-ING-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "type": "data-table-and-scenario",
+  "content": {
+    "title": "說明臭氧層位置與吸收紫外線作用資料組",
+    "scenario": "比較乾濕空氣中的水氣比例",
+    "table": {
+      "columns": [
+        "高度公里",
+        "溫度°C",
+        "判讀"
+      ],
+      "rows": [
+        [
+          0,
+          24,
+          "近地面"
+        ],
+        [
+          10,
+          -50,
+          "對流層上部"
+        ],
+        [
+          20,
+          -42,
+          "平流層"
+        ],
+        [
+          30,
+          -30,
+          "平流層"
+        ]
+      ]
+    },
+    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
+    "skillSpecificCriterion": "本資料組用來檢驗「說明臭氧層位置與吸收紫外線作用」；判準為「臭氧層主要位於平流層但臭氧並非大氣主成分」。"
+  },
+  "accessibility": {
+    "textAlternative": "說明臭氧層位置與吸收紫外線作用資料表。欄位為高度公里、溫度°C、判讀；共有4列。大氣分層不是以氧氣突然消失為界；臭氧層主要位於平流層但臭氧並非大氣主成分。",
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FA-4-1",
+      "AUTH-NATURAL-LC-FA-4-3",
+      "AUTH-NATURAL-LC-FA-4-4",
+      "AUTH-NATURAL-LC-ING-4-1",
+      "AUTH-NATURAL-LC-ING-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  }
+}

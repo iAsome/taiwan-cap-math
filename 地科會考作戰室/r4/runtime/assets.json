@@ -1,0 +1,999 @@
+[
+  {
+    "id": "EARTH_R4_ASSET_WEATHER_MAP",
+    "subject": "earth_science",
+    "type": "map",
+    "path": "地科會考作戰室/r4/assets/weather-map.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "北半球地面天氣圖，含高低壓、等壓線與冷暖鋒。",
+    "altText": "北半球教學天氣圖：西側1028百帕高壓，東側996百帕低壓，並標出冷鋒、暖鋒與北向。",
+    "longDescription": "上方為北。西側高壓中心為1028 hPa，等壓線向外為1024、1020與1016 hPa；東側低壓中心為996 hPa，等壓線向外為1000、1004與1008 hPa。三角符號表示冷鋒移動方向，半圓符號表示暖鋒移動方向。圖為教學合成，不可量距。",
+    "dataFallback": {
+      "summary": "地面氣壓與鋒面位置的文字表。",
+      "columns": [
+        "區域",
+        "中心氣壓hPa",
+        "周圍等壓線hPa",
+        "鋒面"
+      ],
+      "rows": [
+        [
+          "西側高壓",
+          1028,
+          "1024、1020、1016",
+          "無"
+        ],
+        [
+          "東側低壓",
+          996,
+          "1000、1004、1008",
+          "冷鋒與暖鋒"
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "scale": "教學示意，無可量測線性比例",
+      "orientation": "上北、右東",
+      "legend": "H高壓；L低壓；三角冷鋒；半圓暖鋒；等壓距4 hPa",
+      "projection": "非等距平面示意",
+      "mapContext": "data",
+      "dateOrYear": "2026-07-16 08:00 teaching synthesis",
+      "dataSource": "CAP R4 original synthetic weather data"
+    },
+    "skillIds": [
+      "EARTH_R4_S109",
+      "EARTH_R4_S110",
+      "EARTH_R4_S111",
+      "EARTH_R4_S112",
+      "EARTH_R4_S113",
+      "EARTH_R4_S114",
+      "EARTH_R4_S115",
+      "EARTH_R4_S116",
+      "EARTH_R4_S117",
+      "EARTH_R4_S118",
+      "EARTH_R4_S119",
+      "EARTH_R4_S120",
+      "EARTH_R4_S121",
+      "EARTH_R4_S122"
+    ],
+    "sha256": "a8e2172b9233ef850fb8863b264ae3575a66a5d09fd2345cd4ed350e9ff19f1d",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-IB-4-1",
+      "AUTH-NATURAL-LC-IB-4-2",
+      "AUTH-NATURAL-LC-IB-4-3",
+      "AUTH-NATURAL-LC-IB-4-4",
+      "AUTH-NATURAL-LC-ING-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_STRATIGRAPHY",
+    "subject": "earth_science",
+    "type": "science-diagram",
+    "path": "地科會考作戰室/r4/assets/stratigraphy.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "地層剖面，顯示沉積層、岩脈、斷層與侵蝕面。",
+    "altText": "西東向地層剖面：A、B、C三層被岩脈D切穿，斷層F再切過岩脈和地層，侵蝕面上覆E層。",
+    "longDescription": "剖面由西向東且不按比例。A、B、C為具有不同黑白紋理的沉積層；岩脈D切過三層，斷層F又切過岩脈與地層。波狀侵蝕面截切下方單元，其上沉積E層。事件先後須依疊置、截切與不整合關係判讀。",
+    "dataFallback": {
+      "summary": "剖面中各地質單元與接觸關係。",
+      "columns": [
+        "單元",
+        "關係"
+      ],
+      "rows": [
+        [
+          "A、B、C",
+          "依序疊置的沉積層"
+        ],
+        [
+          "岩脈D",
+          "截切A、B、C"
+        ],
+        [
+          "斷層F",
+          "截切岩脈與地層"
+        ],
+        [
+          "E層",
+          "覆蓋侵蝕面"
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "drawingMode": "schematic",
+      "labels": [
+        "A層",
+        "B層",
+        "C層",
+        "E層",
+        "岩脈D",
+        "斷層F",
+        "侵蝕面",
+        "西",
+        "東"
+      ],
+      "units": [],
+      "controlledVariables": [
+        "截切關係",
+        "疊置關係",
+        "剖面方向"
+      ]
+    },
+    "skillIds": [
+      "EARTH_R4_S065",
+      "EARTH_R4_S066",
+      "EARTH_R4_S067",
+      "EARTH_R4_S068",
+      "EARTH_R4_S069",
+      "EARTH_R4_S070",
+      "EARTH_R4_S071",
+      "EARTH_R4_S072"
+    ],
+    "sha256": "6dfda9d3356f12416e1e2f14ebb13e23a6264ed9036cff8cd56108bc4acf641c",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-HB-4-1",
+      "AUTH-NATURAL-LC-HB-4-2",
+      "AUTH-NATURAL-LC-IA-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_PLATE",
+    "subject": "earth_science",
+    "type": "science-diagram",
+    "path": "地科會考作戰室/r4/assets/plate-boundaries.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "張裂、聚合與錯動三類板塊邊界剖面。",
+    "altText": "三面板板塊剖面，依序以箭頭和符號標出張裂海嶺、隱沒海溝火山弧、水平錯動及地震分布。",
+    "longDescription": "左面板板塊向兩側分離，中央為海嶺與新地殼，地震淺。中面板海洋板塊向下隱沒，形成海溝、火山弧與由淺至深斜列的震源。右面板兩板塊水平反向錯移，震源沿邊界排列且以淺源為主。圖中粗灰帶為板塊，箭頭為相對運動。",
+    "dataFallback": {
+      "summary": "三類板塊邊界的運動與現象。",
+      "columns": [
+        "邊界",
+        "相對運動",
+        "主要現象"
+      ],
+      "rows": [
+        [
+          "張裂",
+          "分離",
+          "海嶺、新地殼、淺震"
+        ],
+        [
+          "聚合",
+          "靠近並隱沒",
+          "海溝、火山弧、深淺震"
+        ],
+        [
+          "錯動",
+          "水平錯移",
+          "線狀淺震"
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "drawingMode": "schematic",
+      "labels": [
+        "張裂邊界",
+        "聚合邊界",
+        "錯動邊界",
+        "海嶺",
+        "海溝",
+        "火山弧",
+        "震源"
+      ],
+      "units": [],
+      "controlledVariables": [
+        "相對運動方向",
+        "震源深度分布",
+        "剖面類型"
+      ]
+    },
+    "skillIds": [
+      "EARTH_R4_S041",
+      "EARTH_R4_S042",
+      "EARTH_R4_S043",
+      "EARTH_R4_S044",
+      "EARTH_R4_S045",
+      "EARTH_R4_S046",
+      "EARTH_R4_S047",
+      "EARTH_R4_S048"
+    ],
+    "sha256": "4fd77f8d4e0820a2e64f2c2184c7078f8ce2f6dcc742a60c022241bdf7143cb3",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-IA-4-2",
+      "AUTH-NATURAL-LC-IA-4-3",
+      "AUTH-NATURAL-LC-IA-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_SEISMIC",
+    "subject": "earth_science",
+    "type": "graph",
+    "path": "地科會考作戰室/r4/assets/seismic.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "P波與S波到時地震紀錄。",
+    "altText": "地震波形時間圖：P波8秒到達、S波20秒到達，P減S為12秒；S波後振幅較大。",
+    "longDescription": "橫軸為0至40秒，縱軸為相對振幅。0至8秒近基線；8秒P波抵達後出現小振幅；20秒S波抵達後振幅明顯增大。虛線標示兩到時，差值12秒。波形只供到時判讀，不能直接當成規模或震度。",
+    "dataFallback": {
+      "summary": "測站甲的地震波到時。",
+      "columns": [
+        "事件",
+        "到時秒",
+        "相對振幅"
+      ],
+      "rows": [
+        [
+          "P波",
+          8,
+          "較小"
+        ],
+        [
+          "S波",
+          20,
+          "較大"
+        ],
+        [
+          "P-S差",
+          12,
+          "不適用"
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "axes": [
+        "時間（s）",
+        "相對振幅（無量綱）"
+      ],
+      "units": [
+        "s",
+        "relative amplitude"
+      ],
+      "legend": "實線為波形；虛線為P、S到時",
+      "significantFigures": "到時取整秒",
+      "controlledVariables": [
+        "同一測站",
+        "同一事件",
+        "相同時間軸"
+      ],
+      "dataSource": "CAP R4 original synthetic seismogram"
+    },
+    "skillIds": [
+      "EARTH_R4_S033",
+      "EARTH_R4_S034",
+      "EARTH_R4_S035",
+      "EARTH_R4_S036",
+      "EARTH_R4_S037",
+      "EARTH_R4_S038",
+      "EARTH_R4_S039",
+      "EARTH_R4_S040",
+      "EARTH_R4_S049",
+      "EARTH_R4_S050",
+      "EARTH_R4_S051",
+      "EARTH_R4_S052",
+      "EARTH_R4_S053",
+      "EARTH_R4_S054",
+      "EARTH_R4_S055",
+      "EARTH_R4_S056"
+    ],
+    "sha256": "cd9862ca35ca7d90a73a3aac6fb85b8431dbeeb74fe2dc17f6c68a593c4cd72d",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-IA-4-2",
+      "AUTH-NATURAL-LC-IA-4-3",
+      "AUTH-NATURAL-LC-IA-4-4",
+      "AUTH-NATURAL-LC-MD-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_SKY",
+    "subject": "earth_science",
+    "type": "map",
+    "path": "地科會考作戰室/r4/assets/sky-observation.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "臺灣觀察者的地平座標星空圖。",
+    "altText": "半球天空圖：外圈標示東南西北，高度圈30、60、90度；甲星在東南高度30度，乙星在南方高度60度。",
+    "longDescription": "圖以觀察者為中心，中心是天頂90度，外圈是地平線0度。上北、右東、下南、左西。甲星位於東南方、高度30度；乙星位於南方、高度60度。觀測位置北緯24度，時間2026年7月16日20時。圖上直線距離不代表天體真實距離。",
+    "dataFallback": {
+      "summary": "兩顆星的方位與高度角。",
+      "columns": [
+        "天體",
+        "方位",
+        "高度角度"
+      ],
+      "rows": [
+        [
+          "甲星",
+          "東南",
+          30
+        ],
+        [
+          "乙星",
+          "南",
+          60
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "scale": "角度圈30°、60°、90°",
+      "orientation": "上北、右東、下南、左西",
+      "legend": "外圈為地平線；內圈為等高度圈；星形為天體",
+      "projection": "地平座標半球示意",
+      "mapContext": "data",
+      "dateOrYear": "2026-07-16 20:00 at 24°N",
+      "dataSource": "CAP R4 original synthetic sky positions"
+    },
+    "skillIds": [
+      "EARTH_R4_S144",
+      "EARTH_R4_S145",
+      "EARTH_R4_S146",
+      "EARTH_R4_S147",
+      "EARTH_R4_S148",
+      "EARTH_R4_S149",
+      "EARTH_R4_S150",
+      "EARTH_R4_S151",
+      "EARTH_R4_S152",
+      "EARTH_R4_S153",
+      "EARTH_R4_S154",
+      "EARTH_R4_S155",
+      "EARTH_R4_S156",
+      "EARTH_R4_S157",
+      "EARTH_R4_S186",
+      "EARTH_R4_S187",
+      "EARTH_R4_S188",
+      "EARTH_R4_S189",
+      "EARTH_R4_S190",
+      "EARTH_R4_S191",
+      "EARTH_R4_S192"
+    ],
+    "sha256": "ec9504dedd6885956af44f8f9ed1832e5568a4ebf80b96f4bf472e8930c6f7ce",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-ED-4-1",
+      "AUTH-NATURAL-LC-ED-4-2",
+      "AUTH-NATURAL-LC-FB-4-1",
+      "AUTH-NATURAL-LC-FB-4-3",
+      "AUTH-NATURAL-LC-FB-4-4",
+      "AUTH-NATURAL-LC-ID-4-1",
+      "AUTH-NATURAL-LC-ID-4-2",
+      "AUTH-NATURAL-LC-ID-4-3",
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_MOON_PHASES",
+    "subject": "earth_science",
+    "type": "science-diagram",
+    "path": "地科會考作戰室/r4/assets/moon-phases.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "日月地相對位置與八個月相。",
+    "altText": "俯視北極上空的月球軌道圖：太陽在左、陽光向右，月球逆時針繞地；從靠近日側的朔依序到上弦、望、下弦。",
+    "longDescription": "太陽位於左方，陽光向右照射，地球在中央。月球自靠太陽一側開始逆時針公轉，八位置依序標為朔或新月、眉月、上弦月、盈凸月、望或滿月、虧凸月、下弦月、殘月。距離與天體大小皆不按比例，月相名稱代表地球觀察者所見。",
+    "dataFallback": {
+      "summary": "月球軌道位置與地球所見月相。",
+      "columns": [
+        "序位",
+        "相對位置",
+        "月相"
+      ],
+      "rows": [
+        [
+          1,
+          "日地之間",
+          "朔／新月"
+        ],
+        [
+          3,
+          "日地連線垂直位置一",
+          "上弦月"
+        ],
+        [
+          5,
+          "地球背日側",
+          "望／滿月"
+        ],
+        [
+          7,
+          "日地連線垂直位置二",
+          "下弦月"
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "drawingMode": "schematic",
+      "labels": [
+        "太陽",
+        "地球",
+        "陽光方向",
+        "朔",
+        "上弦月",
+        "望",
+        "下弦月",
+        "逆時針公轉"
+      ],
+      "units": [],
+      "controlledVariables": [
+        "北極上空視角",
+        "陽光方向",
+        "地球觀察位置"
+      ]
+    },
+    "skillIds": [
+      "EARTH_R4_S158",
+      "EARTH_R4_S159",
+      "EARTH_R4_S160",
+      "EARTH_R4_S161",
+      "EARTH_R4_S162",
+      "EARTH_R4_S163",
+      "EARTH_R4_S164"
+    ],
+    "sha256": "a1f0778e3aac1789efef69b387bca1ffe09c78ddddf752fea92dc65fca4c84da",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-FB-4-3",
+      "AUTH-NATURAL-LC-FB-4-4",
+      "AUTH-NATURAL-LC-IC-4-1",
+      "AUTH-NATURAL-LC-IC-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_TIDE",
+    "subject": "earth_science",
+    "type": "graph",
+    "path": "地科會考作戰室/r4/assets/tide-graph.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "甲港24小時潮位曲線。",
+    "altText": "潮位圖：3時與15時約2.8公尺滿潮，9時與21時約0.5公尺乾潮，相鄰滿潮約隔12小時。",
+    "longDescription": "橫軸為0至24時，縱軸潮位0至3公尺。空心圓標出兩次滿潮與兩次乾潮：3時及15時為2.8公尺，9時及21時為0.5公尺。資料每小時量測，曲線僅連接觀測點，不代表能推論圖外日期。",
+    "dataFallback": {
+      "summary": "甲港滿乾潮時刻與潮位。",
+      "columns": [
+        "時刻",
+        "狀態",
+        "潮位m"
+      ],
+      "rows": [
+        [
+          3,
+          "滿潮",
+          2.8
+        ],
+        [
+          9,
+          "乾潮",
+          0.5
+        ],
+        [
+          15,
+          "滿潮",
+          2.8
+        ],
+        [
+          21,
+          "乾潮",
+          0.5
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "axes": [
+        "時間（時）",
+        "潮位（m）"
+      ],
+      "units": [
+        "h",
+        "m"
+      ],
+      "legend": "實線連接每小時觀測；空心圓標滿乾潮",
+      "significantFigures": "潮位0.1 m、時間1 h",
+      "controlledVariables": [
+        "甲港",
+        "同一24小時",
+        "相同潮位基準"
+      ],
+      "dataSource": "CAP R4 original synthetic tide observations"
+    },
+    "skillIds": [
+      "EARTH_R4_S088",
+      "EARTH_R4_S089",
+      "EARTH_R4_S090",
+      "EARTH_R4_S091",
+      "EARTH_R4_S092",
+      "EARTH_R4_S093",
+      "EARTH_R4_S094",
+      "EARTH_R4_S158",
+      "EARTH_R4_S159",
+      "EARTH_R4_S160",
+      "EARTH_R4_S161",
+      "EARTH_R4_S162",
+      "EARTH_R4_S163",
+      "EARTH_R4_S164"
+    ],
+    "sha256": "2c507a9825185c42eb682cac9e3774ed8d65f7368446494afae9194f23d609af",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-FA-4-5",
+      "AUTH-NATURAL-LC-FB-4-3",
+      "AUTH-NATURAL-LC-FB-4-4",
+      "AUTH-NATURAL-LC-IA-4-1",
+      "AUTH-NATURAL-LC-IC-4-1",
+      "AUTH-NATURAL-LC-IC-4-2",
+      "AUTH-NATURAL-LC-IC-4-3",
+      "AUTH-NATURAL-LC-IC-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_CLIMATE_GRAPH",
+    "subject": "earth_science",
+    "type": "graph",
+    "path": "地科會考作戰室/r4/assets/climate-graph.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "甲地月均溫與月降水氣候圖。",
+    "altText": "雙軸氣候圖：斜線柱為月降水，黑線為月均溫；7至9月雨量較多，1月16度、7月29度。",
+    "longDescription": "橫軸為1至12月，左軸降水0至400毫米，右軸氣溫0至32°C。斜線柱表示降水，黑色折線表示均溫。7至9月降水較多，7月均溫29°C，1月16°C。資料為1991至2020基準期的教學合成值。",
+    "dataFallback": {
+      "summary": "甲地逐月氣溫與降水。",
+      "columns": [
+        "月",
+        "降水mm",
+        "均溫°C"
+      ],
+      "rows": [
+        [
+          1,
+          80,
+          16
+        ],
+        [
+          4,
+          140,
+          23
+        ],
+        [
+          7,
+          280,
+          29
+        ],
+        [
+          9,
+          260,
+          26
+        ],
+        [
+          12,
+          87,
+          17
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "axes": [
+        "月份",
+        "左軸月降水（mm）與右軸月均溫（°C）"
+      ],
+      "units": [
+        "month",
+        "mm",
+        "°C"
+      ],
+      "legend": "斜線柱為降水；黑色折線為均溫",
+      "significantFigures": "降水整毫米、均溫整攝氏度",
+      "controlledVariables": [
+        "甲地",
+        "1991–2020基準期",
+        "月尺度"
+      ],
+      "dataSource": "CAP R4 original synthetic climate normals"
+    },
+    "skillIds": [
+      "EARTH_R4_S130",
+      "EARTH_R4_S131",
+      "EARTH_R4_S132",
+      "EARTH_R4_S133",
+      "EARTH_R4_S134",
+      "EARTH_R4_S135",
+      "EARTH_R4_S136",
+      "EARTH_R4_S200",
+      "EARTH_R4_S201",
+      "EARTH_R4_S202",
+      "EARTH_R4_S203",
+      "EARTH_R4_S204",
+      "EARTH_R4_S205",
+      "EARTH_R4_S206"
+    ],
+    "sha256": "d3a8afc7779004135478d17455d4dd516daca07d1d43ee14d1c2ad6cb2167cde",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-IB-4-6",
+      "AUTH-NATURAL-LC-IC-4-2",
+      "AUTH-NATURAL-LC-ID-4-1",
+      "AUTH-NATURAL-LC-ID-4-2",
+      "AUTH-NATURAL-LC-ID-4-3",
+      "AUTH-NATURAL-LC-ING-4-2",
+      "AUTH-NATURAL-LC-ING-4-3",
+      "AUTH-NATURAL-LC-ING-4-4",
+      "AUTH-NATURAL-LC-ING-4-5",
+      "AUTH-NATURAL-LC-ING-4-6",
+      "AUTH-NATURAL-LC-ING-4-7",
+      "AUTH-NATURAL-LC-ING-4-8",
+      "AUTH-NATURAL-LC-ING-4-9",
+      "AUTH-NATURAL-LC-NB-4-2",
+      "AUTH-NATURAL-LC-NB-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_TAIWAN_HAZARD",
+    "subject": "earth_science",
+    "type": "map",
+    "path": "地科會考作戰室/r4/assets/taiwan-hazard.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "臺灣坡地雨量、斷層與聚落風險圖。",
+    "altText": "臺灣示意圖含北箭頭、50公里比例尺、山地點紋、高雨量斜紋、活動斷層虛線及甲乙丙三聚落。",
+    "longDescription": "上北。臺灣輪廓內以點紋表示中央山地，斜紋表示24小時雨量至少400毫米，粗虛線表示活動斷層。甲聚落位於高雨量順向坡；乙聚落坡緩但戶數多；丙聚落雨量較低。比例尺0至50公里，投影僅供教學位置比較。",
+    "dataFallback": {
+      "summary": "三聚落的危害、暴露與地形條件。",
+      "columns": [
+        "聚落",
+        "雨量",
+        "坡地條件",
+        "暴露特徵"
+      ],
+      "rows": [
+        [
+          "甲",
+          "高",
+          "順向坡",
+          "一般"
+        ],
+        [
+          "乙",
+          "一般",
+          "坡緩",
+          "戶數多"
+        ],
+        [
+          "丙",
+          "較低",
+          "坡地",
+          "一般"
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "scale": "圖示0–50 km比例尺",
+      "orientation": "上北、右東",
+      "legend": "點紋山地；斜紋高雨量；粗虛線活動斷層；三種符號為聚落",
+      "projection": "蘭伯特方位教學示意",
+      "mapContext": "data",
+      "dateOrYear": "2026 teaching synthesis",
+      "dataSource": "CAP R4 original synthetic Taiwan hazard data"
+    },
+    "skillIds": [
+      "EARTH_R4_S137",
+      "EARTH_R4_S138",
+      "EARTH_R4_S139",
+      "EARTH_R4_S140",
+      "EARTH_R4_S141",
+      "EARTH_R4_S142",
+      "EARTH_R4_S143",
+      "EARTH_R4_S207",
+      "EARTH_R4_S208",
+      "EARTH_R4_S209",
+      "EARTH_R4_S210",
+      "EARTH_R4_S211",
+      "EARTH_R4_S212",
+      "EARTH_R4_S213"
+    ],
+    "sha256": "af4cdbc5ba6bea4c43196ebc71b9f9c11e1289878fceb29968a152412ce10531",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-IA-4-2",
+      "AUTH-NATURAL-LC-IA-4-3",
+      "AUTH-NATURAL-LC-IA-4-4",
+      "AUTH-NATURAL-LC-ING-4-5",
+      "AUTH-NATURAL-LC-ING-4-6",
+      "AUTH-NATURAL-LC-ING-4-8",
+      "AUTH-NATURAL-LC-ING-4-9",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-2",
+      "AUTH-NATURAL-LC-MD-4-3",
+      "AUTH-NATURAL-LC-MD-4-4",
+      "AUTH-NATURAL-LC-MD-4-5",
+      "AUTH-NATURAL-LC-NA-4-6",
+      "AUTH-NATURAL-LC-NA-4-7",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_CARBON",
+    "subject": "earth_science",
+    "type": "science-diagram",
+    "path": "地科會考作戰室/r4/assets/carbon-cycle.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "全球碳庫與自然、人為碳通量系統圖。",
+    "altText": "碳循環方框箭頭圖：大氣、陸地、表層海洋、深海及岩石化石碳庫間有光合、呼吸、海氣交換、沉降、地質作用與燃燒。",
+    "longDescription": "五個方框分別代表大氣、陸地生物與土壤、表層海洋、深海與沉積物、岩石與化石燃料碳庫。箭頭標出光合作用、呼吸分解、海氣交換、沉降及地質作用。化石燃料燃燒以粗字標示，表示人為快速將地質碳移入大氣；箭頭不代表精確通量。",
+    "dataFallback": {
+      "summary": "主要碳庫與碳移動過程。",
+      "columns": [
+        "來源碳庫",
+        "過程",
+        "目的碳庫"
+      ],
+      "rows": [
+        [
+          "大氣",
+          "光合作用",
+          "陸地生物"
+        ],
+        [
+          "陸地生物",
+          "呼吸與分解",
+          "大氣"
+        ],
+        [
+          "大氣",
+          "海氣交換",
+          "表層海洋"
+        ],
+        [
+          "表層海洋",
+          "沉降",
+          "深海"
+        ],
+        [
+          "化石燃料",
+          "燃燒",
+          "大氣"
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "drawingMode": "schematic",
+      "labels": [
+        "大氣碳庫",
+        "陸地生物與土壤",
+        "表層海洋",
+        "深海與沉積物",
+        "岩石與化石燃料",
+        "光合作用",
+        "呼吸分解",
+        "海氣交換",
+        "燃燒"
+      ],
+      "units": [],
+      "controlledVariables": [
+        "全球系統邊界",
+        "長期碳循環",
+        "箭頭方向"
+      ]
+    },
+    "skillIds": [
+      "EARTH_R4_S200",
+      "EARTH_R4_S201",
+      "EARTH_R4_S202",
+      "EARTH_R4_S203",
+      "EARTH_R4_S204",
+      "EARTH_R4_S205",
+      "EARTH_R4_S206"
+    ],
+    "sha256": "8b0c830627034f8bc8559e276f3b59855f48ea86b9a284578ad71f5fc35a7430",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-ING-4-2",
+      "AUTH-NATURAL-LC-ING-4-3",
+      "AUTH-NATURAL-LC-ING-4-4",
+      "AUTH-NATURAL-LC-ING-4-5",
+      "AUTH-NATURAL-LC-ING-4-6",
+      "AUTH-NATURAL-LC-ING-4-7",
+      "AUTH-NATURAL-LC-ING-4-8",
+      "AUTH-NATURAL-LC-ING-4-9",
+      "AUTH-NATURAL-LC-NB-4-2",
+      "AUTH-NATURAL-LC-NB-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  {
+    "id": "EARTH_R4_ASSET_DATA_REASONING",
+    "subject": "earth_science",
+    "type": "graph",
+    "path": "地科會考作戰室/r4/assets/data-reasoning.svg",
+    "creator": "Codex R4 Earth Science content author",
+    "source": "Original diagram and teaching data created for CAP R4; no source artwork or official item was copied.",
+    "license": "Project-owned original; licensed for use and redistribution with this project.",
+    "originality": "original",
+    "transformationRecord": "Created from first principles as a new monochrome vector; labels and synthetic data were authored for this project.",
+    "caption": "雨量、坡度與崩塌面積跨資料對齊圖。",
+    "altText": "三站資料圖：甲430毫米、34度、8.2公頃；乙410毫米、18度、1.1公頃；丙250毫米、36度、2.5公頃且完整率72%。",
+    "longDescription": "橫向比較甲乙丙三站。斜線寬柱標雨量，反斜線窄柱標坡度，空心圓旁標崩塌面積；三種變因量尺不同，須讀數字而不能比較圖形高度。甲站資料完整率98%、乙站100%、丙站72%，因此丙站結論須特別標示缺值限制。",
+    "dataFallback": {
+      "summary": "三站雨量、坡度、崩塌與資料完整率。",
+      "columns": [
+        "站點",
+        "雨量mm",
+        "坡度度",
+        "崩塌ha",
+        "完整率%"
+      ],
+      "rows": [
+        [
+          "甲",
+          430,
+          34,
+          8.2,
+          98
+        ],
+        [
+          "乙",
+          410,
+          18,
+          1.1,
+          100
+        ],
+        [
+          "丙",
+          250,
+          36,
+          2.5,
+          72
+        ]
+      ]
+    },
+    "accessibility": {
+      "colorIndependent": true,
+      "printSafe": true
+    },
+    "technical": {
+      "axes": [
+        "站點",
+        "24小時雨量（mm）；坡度與崩塌以標值呈現"
+      ],
+      "units": [
+        "mm",
+        "degree",
+        "ha",
+        "%"
+      ],
+      "legend": "斜線寬柱雨量；反斜線窄柱坡度；空心圓崩塌面積",
+      "significantFigures": "雨量1 mm、坡度1°、面積0.1 ha、完整率1%",
+      "controlledVariables": [
+        "同一降雨事件",
+        "站點空間單位",
+        "24小時雨量窗"
+      ],
+      "dataSource": "CAP R4 original synthetic aligned Earth data"
+    },
+    "skillIds": [
+      "EARTH_R4_S214",
+      "EARTH_R4_S215",
+      "EARTH_R4_S216",
+      "EARTH_R4_S217",
+      "EARTH_R4_S218",
+      "EARTH_R4_S219",
+      "EARTH_R4_S220"
+    ],
+    "sha256": "573493c763f65b5716d69b052eee6a70ac59df1c18e15b332c8d1a54c3dcbc3a",
+    "calibrationRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+]

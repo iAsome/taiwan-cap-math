@@ -1,0 +1,85 @@
+{
+  "id": "EARTH_R4_SQ_161_03",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FB-4-3",
+    "AUTH-NATURAL-LC-FB-4-4",
+    "AUTH-NATURAL-LC-IC-4-1",
+    "AUTH-NATURAL-LC-IC-4-4",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "EARTH_R4_ST_161",
+  "stem": "根據「判斷日食發生時的天體排列」資料組，哪一項後續檢驗最適當？",
+  "options": [
+    "就「判斷日食發生時的天體排列」而言，換掉全部變因後只測一次。",
+    "就「判斷日食發生時的天體排列」而言，刪除不合預期的資料後重畫圖。",
+    "就「判斷日食發生時的天體排列」而言，只問同意原結論的人。",
+    "就「判斷日食發生時的天體排列」而言，再執行「固定陽光方向並畫日月地位置」。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同時改變多個變因且無重複，不能判斷原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未說明就刪除資料會造成偏誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這不是獨立觀測或公平檢驗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "後續檢驗保留本技能判準、變因、資料與結論間的可重現關係。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "design-follow-up-check"
+  ],
+  "representationType": "shared-data-table",
+  "misconceptionTargets": [
+    "日食時地球位於日月之間"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FB-4-3",
+      "AUTH-NATURAL-LC-FB-4-4",
+      "AUTH-NATURAL-LC-IC-4-1",
+      "AUTH-NATURAL-LC-IC-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項代回「判斷日食發生時的天體排列」的定義與證據鏈，只有「就「判斷日食發生時的天體排列」而言，再執行「固定陽光方向並畫日月地位置」。」符合；月相、出沒時刻、方向與潮位具有規律，但食只有軌道接近交點且排列合適時才發生。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「判斷日食發生時的天體排列」而言，再執行「固定陽光方向並畫日月地位置」。」。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "EARTH_R4_ASSET_MOON_PHASES",
+    "EARTH_R4_ASSET_TIDE"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "EARTH_R4_ST_161",
+  "subject": "earth_science",
+  "unitId": "EARTH_R4_U22",
+  "skillIds": [
+    "EARTH_R4_S161"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FB-4-3",
+    "AUTH-NATURAL-LC-FB-4-4",
+    "AUTH-NATURAL-LC-IC-4-1",
+    "AUTH-NATURAL-LC-IC-4-4",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "type": "accessible-figure-and-data",
+  "content": {
+    "title": "判斷日食發生時的天體排列資料組",
+    "scenario": "用出沒時刻反推月相",
+    "table": {
+      "columns": [
+        "日期",
+        "月相",
+        "滿潮公尺",
+        "乾潮公尺",
+        "潮差公尺"
+      ],
+      "rows": [
+        [
+          "初一",
+          "朔",
+          3.1,
+          0.4,
+          2.7
+        ],
+        [
+          "初八",
+          "上弦",
+          2.3,
+          1,
+          1.3
+        ],
+        [
+          "十五",
+          "望",
+          3.2,
+          0.3,
+          2.9
+        ]
+      ]
+    },
+    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
+    "skillSpecificCriterion": "本資料組用來檢驗「判斷日食發生時的天體排列」；判準為「月相、出沒時刻、方向與潮位具有規律，但食只有軌道接近交點且排列合適時才發生」。"
+  },
+  "accessibility": {
+    "textAlternative": "判斷日食發生時的天體排列資料表。欄位為日期、月相、滿潮公尺、乾潮公尺、潮差公尺；共有3列。月相不是地球影子造成；每逢朔望也不一定發生日月食。",
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "assets": [
+    "EARTH_R4_ASSET_MOON_PHASES",
+    "EARTH_R4_ASSET_TIDE"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FB-4-3",
+      "AUTH-NATURAL-LC-FB-4-4",
+      "AUTH-NATURAL-LC-IC-4-1",
+      "AUTH-NATURAL-LC-IC-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  }
+}

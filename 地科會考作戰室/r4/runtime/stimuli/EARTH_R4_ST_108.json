@@ -1,0 +1,74 @@
+{
+  "id": "EARTH_R4_ST_108",
+  "subject": "earth_science",
+  "unitId": "EARTH_R4_U14",
+  "skillIds": [
+    "EARTH_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-IB-4-1",
+    "AUTH-NATURAL-LC-IB-4-2",
+    "AUTH-NATURAL-LC-IB-4-4",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "type": "data-table-and-scenario",
+  "content": {
+    "title": "比較地面觀測雷達與衛星資料的用途資料組",
+    "scenario": "規劃校園氣象站放置位置",
+    "table": {
+      "columns": [
+        "時間",
+        "氣溫°C",
+        "氣壓hPa",
+        "相對濕度%",
+        "風向"
+      ],
+      "rows": [
+        [
+          "06時",
+          21,
+          1016,
+          86,
+          "東北"
+        ],
+        [
+          "12時",
+          27,
+          1012,
+          68,
+          "東"
+        ],
+        [
+          "18時",
+          24,
+          1013,
+          77,
+          "東南"
+        ]
+      ]
+    },
+    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
+    "skillSpecificCriterion": "本資料組用來檢驗「比較地面觀測雷達與衛星資料的用途」；判準為「逐時表格、折線圖、雷達與衛星資料各有不同時空尺度，合併前要核對時間、位置與單位」。"
+  },
+  "accessibility": {
+    "textAlternative": "比較地面觀測雷達與衛星資料的用途資料表。欄位為時間、氣溫°C、氣壓hPa、相對濕度%、風向；共有3列。單次讀值只代表當時當地；把氣溫計放在日照下會量到受輻射影響的錯誤值。",
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-IB-4-1",
+      "AUTH-NATURAL-LC-IB-4-2",
+      "AUTH-NATURAL-LC-IB-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

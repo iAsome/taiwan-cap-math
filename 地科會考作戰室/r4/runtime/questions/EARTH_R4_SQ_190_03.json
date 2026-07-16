@@ -1,0 +1,86 @@
+{
+  "id": "EARTH_R4_SQ_190_03",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-ED-4-1",
+    "AUTH-NATURAL-LC-ED-4-2",
+    "AUTH-NATURAL-LC-FB-4-1",
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "EARTH_R4_ST_190",
+  "stem": "根據「考量緯度季節與光害規劃觀測」資料組，哪一項後續檢驗最適當？",
+  "options": [
+    "就「考量緯度季節與光害規劃觀測」而言，再執行「先定觀測目標和波段」。",
+    "就「考量緯度季節與光害規劃觀測」而言，換掉全部變因後只測一次。",
+    "就「考量緯度季節與光害規劃觀測」而言，刪除不合預期的資料後重畫圖。",
+    "就「考量緯度季節與光害規劃觀測」而言，只問同意原結論的人。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "後續檢驗保留本技能判準、變因、資料與結論間的可重現關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同時改變多個變因且無重複，不能判斷原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未說明就刪除資料會造成偏誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這不是獨立觀測或公平檢驗。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "design-follow-up-check"
+  ],
+  "representationType": "shared-data-table",
+  "misconceptionTargets": [
+    "星圖在任何緯度時間都完全相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-ED-4-1",
+      "AUTH-NATURAL-LC-ED-4-2",
+      "AUTH-NATURAL-LC-FB-4-1",
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項代回「考量緯度季節與光害規劃觀測」的定義與證據鏈，只有「就「考量緯度季節與光害規劃觀測」而言，再執行「先定觀測目標和波段」。」符合；望遠鏡口徑影響集光能力，曝光與大氣擾動影響影像；太陽觀測必須使用合格專用濾鏡。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「考量緯度季節與光害規劃觀測」而言，再執行「先定觀測目標和波段」。」。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "EARTH_R4_ASSET_SKY"
+  ]
+}

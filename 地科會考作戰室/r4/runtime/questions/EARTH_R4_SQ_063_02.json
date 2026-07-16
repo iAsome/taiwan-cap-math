@@ -1,0 +1,80 @@
+{
+  "id": "EARTH_R4_SQ_063_02",
+  "subject": "earth_science",
+  "skillIds": [
+    "EARTH_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-IA-4-3",
+    "AUTH-NATURAL-LC-IA-4-4",
+    "AUTH-NATURAL-LC-ING-4-1",
+    "AUTH-NATURAL-LC-MD-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "EARTH_R4_ST_063",
+  "stem": "根據「說明休眠狀態不代表未來沒有活動」資料組，哪一項限制最需要寫入報告？",
+  "options": [
+    "就「說明休眠狀態不代表未來沒有活動」而言，同時標示限制：休眠不等於永久停止",
+    "就「說明休眠狀態不代表未來沒有活動」而言，資料列超過兩列，因此沒有任何不確定性。",
+    "就「說明休眠狀態不代表未來沒有活動」而言，圖表是電腦產生，所以來源必定正確。",
+    "就「說明休眠狀態不代表未來沒有活動」而言，結果符合預期，所以不必檢查反例。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "這是由本技能判準、資料與模型範圍直接導出的必要限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "樣本列數不會消除量測與取樣不確定性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "工具不會自動保證來源與推論品質。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍須檢查替代解釋與反例。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "evaluate-shared-data-limit"
+  ],
+  "representationType": "shared-data-table",
+  "misconceptionTargets": [
+    "沒有冒煙就證明火山已永久熄滅"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-IA-4-3",
+      "AUTH-NATURAL-LC-IA-4-4",
+      "AUTH-NATURAL-LC-ING-4-1",
+      "AUTH-NATURAL-LC-MD-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "earth-science-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項代回「說明休眠狀態不代表未來沒有活動」的定義與證據鏈，只有「就「說明休眠狀態不代表未來沒有活動」而言，同時標示限制：休眠不等於永久停止」符合；熔岩、火山灰、火山氣體、地形與監測資料都是證據；全球分布常與板塊邊界或熱點相連。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "earth-science-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "另從反例與邊界條件檢查四項，答案不依選項位置或語病，仍唯一指向「就「說明休眠狀態不代表未來沒有活動」而言，同時標示限制：休眠不等於永久停止」。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

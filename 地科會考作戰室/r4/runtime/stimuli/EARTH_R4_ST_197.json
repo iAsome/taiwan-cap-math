@@ -1,0 +1,70 @@
+{
+  "id": "EARTH_R4_ST_197",
+  "subject": "earth_science",
+  "unitId": "EARTH_R4_U27",
+  "skillIds": [
+    "EARTH_R4_S197"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FB-4-1",
+    "AUTH-NATURAL-LC-FB-4-2",
+    "AUTH-NATURAL-LC-ING-4-6",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-PC-4-1"
+  ],
+  "type": "data-table-and-scenario",
+  "content": {
+    "title": "評估太空探索資料的證據與不確定性資料組",
+    "scenario": "用地面測站校正遙測雨量",
+    "table": {
+      "columns": [
+        "任務",
+        "軌道",
+        "重訪特性",
+        "主要限制"
+      ],
+      "rows": [
+        [
+          "氣象全盤觀測",
+          "地球同步",
+          "近連續",
+          "高緯解析較差"
+        ],
+        [
+          "高解析地表",
+          "低地球軌道",
+          "數日或星座縮短",
+          "覆蓋間歇"
+        ],
+        [
+          "全球定位",
+          "中地球軌道星座",
+          "持續多星",
+          "遮蔽與電離層誤差"
+        ]
+      ]
+    },
+    "readingGuide": "先讀欄位、單位、時間與資料範圍；圖形資訊均有下列資料表替代。",
+    "skillSpecificCriterion": "本資料組用來檢驗「評估太空探索資料的證據與不確定性」；判準為「先定任務問題與所需尺度，再選軌道、感測器和資料傳輸，最後評估誤差、資源與環境影響」。"
+  },
+  "accessibility": {
+    "textAlternative": "評估太空探索資料的證據與不確定性資料表。欄位為任務、軌道、重訪特性、主要限制；共有3列。衛星影像不是即時且無誤差的全景照片；雲、解析度、重訪時間與演算法都有限制。",
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Earth Science content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FB-4-1",
+      "AUTH-NATURAL-LC-FB-4-2",
+      "AUTH-NATURAL-LC-ING-4-6",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-PC-4-1"
+    ]
+  }
+}
