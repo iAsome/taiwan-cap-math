@@ -296,7 +296,10 @@ const CHARACTER_FORM_CASES = Object.freeze({
     ["文章把「辯論」寫成「辨論」，應如何訂正？", "把「辨」改成「辯」", "把「論」改成「倫」", "兩字都不必改", "把「辨」改成「瓣」", "以言語爭論、申說，中央部件從「言」，寫作「辯論」。"],
     ["說明把「裝訂」寫成「裝釘」，應如何訂正？", "把「釘」改成「訂」", "把「裝」改成「妝」", "兩字都不必改", "把「釘」改成「盯」", "把散頁依序裝成冊寫作「裝訂」。"],
     ["作文把「氣概」寫成「氣慨」，應如何訂正？", "把「慨」改成「概」", "把「氣」改成「汽」", "兩字都不必改", "把「慨」改成「溉」", "氣度、節操寫作「氣概」；「慨」多見於感慨、慷慨。"],
-  ],
+  ].map(([stem, correct, wrongA, wrongB, wrongC, reason]) => {
+    const writtenForm = stem.match(/寫成「([^」]+)」/u)?.[1];
+    return [stem, correct, wrongA, `維持題中「${writtenForm}」的寫法，兩字都不必改`, wrongC, reason];
+  }),
   CHI_R4_S011: [
     ["「末」和「未」的字形差別為何？", "「末」上橫較長，「未」下橫較長", "「末」下橫較長，「未」上橫較長", "「末」比「未」多一點", "兩字字形完全相同", "兩字都從木形；可用上下兩橫的長短辨別。"],
     ["「土」和「士」的字形差別為何？", "「土」下橫較長，「士」上橫較長", "「土」上橫較長，「士」下橫較長", "「土」比「士」多一點", "兩字只差讀音", "「土」下寬，「士」上寬。"],
@@ -614,7 +617,7 @@ const shapeErrorRows = [
   ["倉庫裡堆著一袋袋栗米。", "把「栗」改成「粟」", "把「袋」改成「代」", "把「庫」改成「褲」", "原句不必改", "穀物小米寫作「粟米」；「栗」指栗子。"],
   ["隊伍終於嬴得決賽冠軍。", "把「嬴」改成「贏」", "把「冠」改成「寇」", "把「決」改成「絕」", "原句不必改", "取得勝利寫作「贏得」；「嬴」是古姓。"],
   ["夜暮降臨，工作人員拉上布墓。", "把「夜暮」改成「夜幕」，「布墓」改成「布幕」", "只把「暮」改成「墓」", "只把「墓」改成「慕」", "原句不必改", "夜色像幕降下寫作「夜幕」；舞臺遮布寫作「布幕」。"],
-].map(([sentence, correct, wrongA, wrongB, wrongC, reason]) => [`句子「${sentence}」含有形近誤寫，應如何訂正？`, correct, wrongA, wrongB, wrongC, reason]);
+].map(([sentence, correct, wrongA, wrongB, wrongC, reason]) => [`句子「${sentence}」含有形近誤寫，應如何訂正？`, correct, wrongA, wrongB, wrongC === "原句不必改" ? `原句「${sentence}」不必改` : wrongC, reason]);
 
 const soundErrorRows = [
   ["這項規定保障學生表達意見的權力。", "把「權力」改成「權利」", "把「規定」改成「規訂」", "把「保障」改成「保章」", "原句不必改", "依法享有的利益是「權利」；「權力」指支配力量。"],
@@ -629,7 +632,7 @@ const soundErrorRows = [
   ["會議決議暫時保留原案。", "原句不必改", "把「決議」改成「絕意」", "把「暫時」改成「站時」", "把「原案」改成「園案」", "「決議、暫時、原案」的音形義與句意都相合。"],
   ["工作人員逐一核對來賓名冊。", "原句不必改", "把「核對」改成「合對」", "把「名冊」改成「名策」", "把「逐一」改成「竹一」", "三個詞的字形與搭配都正確。"],
   ["編輯刪除了重覆出現的段落。", "把「重覆」改成「重複」", "把「刪除」改成「珊除」", "把「段落」改成「鍛落」", "原句不必改", "現行標準詞形寫作「重複」。"],
-].map(([sentence, correct, wrongA, wrongB, wrongC, reason]) => [`檢查句子「${sentence}」的音近用字，哪個判斷正確？`, correct, wrongA, wrongB, wrongC, reason]);
+].map(([sentence, correct, wrongA, wrongB, wrongC, reason]) => [`檢查句子「${sentence}」的音近用字，哪個判斷正確？`, correct === "原句不必改" ? `原句「${sentence}」不必改` : correct, wrongA, wrongB, wrongC === "原句不必改" ? `原句「${sentence}」不必改` : wrongC, reason]);
 
 const wordOriginRows = [
   ["名列前茅", "古代以茅草作旗標示隊伍前端，所以寫「茅」", "因為煩惱而寫「矛」", "表示房屋所以寫「茆」", "只因三字同音任選"],
@@ -687,18 +690,18 @@ const HOMOPHONE_CASES = Object.freeze({
 });
 
 const polysemyContexts = [
-  { target: "抓", sentence: "他很快抓到報告的重點。", meaning: "掌握", literal: "孩子抓住搖晃的欄杆。", literalMeaning: "用手握住", clue: "與「重點」搭配，表示理解主要內容", substitute: "掌握" },
-  { target: "轉", sentence: "午後雨勢逐漸轉小。", meaning: "改變", literal: "他轉動門把推門而入。", literalMeaning: "旋動", clue: "前後連接雨勢由大到小的變化", substitute: "變得" },
-  { target: "重", sentence: "老師今天說話很重。", meaning: "語氣嚴厲", literal: "這只木箱比想像中重。", literalMeaning: "重量大", clue: "修飾說話方式而非物體重量", substitute: "嚴厲" },
-  { target: "冷", sentence: "一句無心的話讓現場氣氛冷下來。", meaning: "變得不熱絡", literal: "山泉入口十分冰冷。", literalMeaning: "溫度低", clue: "主語是人際互動的「氣氛」", substitute: "沉寂" },
-  { target: "骨架", sentence: "寫文章前先搭好骨架。", meaning: "主要結構", literal: "博物館展示完整的動物骨架。", literalMeaning: "骨骼組成的支架", clue: "與寫文章、安排內容搭配", substitute: "架構" },
-  { target: "窗口", sentence: "服務窗口將在五點停止受理。", meaning: "辦理業務的接洽單位", literal: "陽光從窗口照進室內。", literalMeaning: "牆上的窗戶開口", clue: "與「受理」及時間搭配", substitute: "服務櫃臺" },
-  { target: "席捲", sentence: "這股閱讀風潮正席捲校園。", meaning: "迅速廣泛影響", literal: "工作人員把地上的席子捲起。", literalMeaning: "捲收席子", clue: "主語是風潮，受影響範圍是校園", substitute: "迅速影響" },
-  { target: "消化", sentence: "讀完資料後，他還需要時間消化。", meaning: "理解並整理", literal: "胃腸會消化吃下的食物。", literalMeaning: "分解吸收食物", clue: "受詞是資料而不是食物", substitute: "吸收" },
-  { target: "落地", sentence: "討論多月的計畫終於落地。", meaning: "開始實際執行", literal: "紙飛機越過桌面後落地。", literalMeaning: "掉到地面", clue: "主語是計畫，前文說長期討論", substitute: "實施" },
-  { target: "根", sentence: "小組決定追查問題的根。", meaning: "根本原因", literal: "強風吹斷了樹的一條根。", literalMeaning: "植物吸收水分的器官", clue: "與「問題、追查」搭配", substitute: "根源" },
-  { target: "門", sentence: "這份新證據替協商打開了一道門。", meaning: "解決或前進的途徑", literal: "他推開門走進教室。", literalMeaning: "建築物出入口", clue: "受詞是抽象的協商進展", substitute: "途徑" },
-  { target: "火花", sentence: "兩人的追問碰出了新的想法火花。", meaning: "突然產生的靈感", literal: "金屬碰撞時迸出火花。", literalMeaning: "燃燒發光的微粒", clue: "前有「想法」，來源是彼此追問", substitute: "靈感" },
+  { target: "抓", sentence: "他很快抓到報告的重點。", meaning: "掌握", literal: "孩子抓住搖晃的欄杆。", literalMeaning: "用手握住", clue: "與「重點」搭配，表示理解主要內容", substitute: "掌握", wrongMeanings: ["逮捕", "搔癢", "匆忙取得"], wrongSubstitutes: ["握住", "逮住", "搔動"] },
+  { target: "轉", sentence: "午後雨勢逐漸轉小。", meaning: "改變", literal: "他轉動門把推門而入。", literalMeaning: "旋動", clue: "前後連接雨勢由大到小的變化", substitute: "變得", wrongMeanings: ["轉身離開", "轉交物品", "繞行一圈"], wrongSubstitutes: ["旋動", "轉交", "繞過"] },
+  { target: "重", sentence: "老師今天說話很重。", meaning: "語氣嚴厲", literal: "這只木箱比想像中重。", literalMeaning: "重量大", clue: "修飾說話方式而非物體重量", substitute: "嚴厲", wrongMeanings: ["分量很大", "次數再次", "程度重要"], wrongSubstitutes: ["沉重", "重要", "再次"] },
+  { target: "冷", sentence: "一句無心的話讓現場氣氛冷下來。", meaning: "變得不熱絡", literal: "山泉入口十分冰冷。", literalMeaning: "溫度低", clue: "主語是人際互動的「氣氛」", substitute: "沉寂", wrongMeanings: ["溫度下降", "態度冷酷", "顏色偏冷"], wrongSubstitutes: ["冰涼", "冷酷", "降溫"] },
+  { target: "骨架", sentence: "寫文章前先搭好骨架。", meaning: "主要結構", literal: "博物館展示完整的動物骨架。", literalMeaning: "骨骼組成的支架", clue: "與寫文章、安排內容搭配", substitute: "架構", wrongMeanings: ["動物骨骼", "支撐帳篷的金屬架", "尚未上色的模型"], wrongSubstitutes: ["骨骼", "支架", "標題"] },
+  { target: "窗口", sentence: "服務窗口將在五點停止受理。", meaning: "辦理業務的接洽單位", literal: "陽光從窗口照進室內。", literalMeaning: "牆上的窗戶開口", clue: "與「受理」及時間搭配", substitute: "服務櫃臺", wrongMeanings: ["牆面開口", "電腦畫面中的視窗", "可利用的短暫時間"], wrongSubstitutes: ["窗戶", "螢幕視窗", "空檔"] },
+  { target: "席捲", sentence: "這股閱讀風潮正席捲校園。", meaning: "迅速廣泛影響", literal: "工作人員把地上的席子捲起。", literalMeaning: "捲收席子", clue: "主語是風潮，受影響範圍是校園", substitute: "迅速影響", wrongMeanings: ["收起坐席", "逐一清點座位", "只在一處短暫出現"], wrongSubstitutes: ["捲起席子", "清點座位", "短暫停留"] },
+  { target: "消化", sentence: "讀完資料後，他還需要時間消化。", meaning: "理解並整理", literal: "胃腸會消化吃下的食物。", literalMeaning: "分解吸收食物", clue: "受詞是資料而不是食物", substitute: "吸收", wrongMeanings: ["分解食物", "把文件銷毀", "縮短閱讀時間"], wrongSubstitutes: ["咀嚼", "銷毀", "略讀"] },
+  { target: "落地", sentence: "討論多月的計畫終於落地。", meaning: "開始實際執行", literal: "紙飛機越過桌面後落地。", literalMeaning: "掉到地面", clue: "主語是計畫，前文說長期討論", substitute: "實施", wrongMeanings: ["物體掉到地面", "抵達某處下車", "失去原有內容"], wrongSubstitutes: ["墜落", "下車", "落空"] },
+  { target: "根", sentence: "小組決定追查問題的根。", meaning: "根本原因", literal: "強風吹斷了樹的一條根。", literalMeaning: "植物吸收水分的器官", clue: "與「問題、追查」搭配", substitute: "根源", wrongMeanings: ["植物的根部", "計量細長物的量詞", "數學中的方根"], wrongSubstitutes: ["根部", "一根", "方根"] },
+  { target: "門", sentence: "這份新證據替協商打開了一道門。", meaning: "解決或前進的途徑", literal: "他推開門走進教室。", literalMeaning: "建築物出入口", clue: "受詞是抽象的協商進展", substitute: "途徑", wrongMeanings: ["房屋出入口", "學術分類", "大砲的計量單位"], wrongSubstitutes: ["入口", "學門", "門板"] },
+  { target: "火花", sentence: "兩人的追問碰出了新的想法火花。", meaning: "突然產生的靈感", literal: "金屬碰撞時迸出火花。", literalMeaning: "燃燒發光的微粒", clue: "前有「想法」，來源是彼此追問", substitute: "靈感", wrongMeanings: ["燃燒的微粒", "爭吵的徵兆", "煙火的圖案"], wrongSubstitutes: ["火星", "衝突", "煙火"] },
 ];
 
 const toneRows = [
@@ -716,12 +719,12 @@ const toneRows = [
   ["他把未查證的猜測說成事實，這不是直率而是「冒進」。", "貶義，批評未衡量風險便前進", "褒義，稱讚積極", "中性，只表示先發言", "表示冒險運動"],
 ].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`判斷句子「${sentence}」中引號詞語的感情色彩，哪項正確？`, correct, wrongA, wrongB, wrongC, `${correct}；評價來自詞語與全句行動結果的共同限制。`]);
 
-const contextualMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue }) => [`句子「${sentence}」中的「${target}」最接近哪個意思？`, meaning, "字典中另一個常見義項", "只依字面形狀作解釋", "與句中搭配無關的生活聯想", `${clue}，所以此處取「${meaning}」義。`]);
-const literalDerivedRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`比較「${literal}」與「${sentence}」，哪項分析正確？`, `前句「${target}」取「${literalMeaning}」義，後句引申為「${meaning}」`, `兩句「${target}」完全同義且都取「${literalMeaning}」`, `前句是引申義，後句只能按字面解釋`, "兩句都沒有上下文，無法判斷", `同一詞由「${literalMeaning}」延伸到「${meaning}」，語境使義項不同。`]);
-const sameWordRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`「${literal}」「${sentence}」兩句都有「${target}」，哪項關係正確？`, `字形相同，但前句指「${literalMeaning}」，後句指「${meaning}」`, "字形相同便代表句義完全一樣", "兩句讀音不同，所以必是兩個字", "後句沒有任何可判義的搭配", `前後受詞與情境不同，使「${target}」分別對應兩個義項。`]);
-const collocationMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue }) => [`要判斷「${sentence}」中「${target}」的義項，哪個線索最直接？`, clue, "這個字的筆畫數", "句子的總字數", "讀者最先想到的畫面", `「${clue}」直接限制此處只能解作「${meaning}」。`]);
-const abstractUseRows = polysemyContexts.map(({ target, sentence, meaning, literalMeaning }) => [`哪項正確說明「${sentence}」中的抽象用法？`, `「${target}」由「${literalMeaning}」轉用來表示「${meaning}」`, `句中真的出現了${literalMeaning}`, `「${target}」只是多餘裝飾，刪去不影響`, "只要是抽象用法便可任意解釋", `原句保留與本義的關聯，並由搭配把意義限定為「${meaning}」。`]);
-const substitutionRows = polysemyContexts.map(({ target, sentence, meaning, substitute }) => [`若不改變「${sentence}」的主要句意，哪個詞最適合替換「${target}」？`, substitute, "碰觸", "重量", "門窗", `「${substitute}」在此可保留「${meaning}」的語境義，其餘詞只適用別的義項。`]);
+const contextualMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue, wrongMeanings }) => [`句子「${sentence}」中的「${target}」最接近哪個意思？`, meaning, ...wrongMeanings, `${clue}，所以此處取「${meaning}」義。`]);
+const literalDerivedRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`比較「${literal}」與「${sentence}」，哪項分析正確？`, `前句「${target}」取「${literalMeaning}」義，後句引申為「${meaning}」`, `兩句「${target}」完全同義且都取「${literalMeaning}」`, `「${literal}」是引申義；「${sentence}」只能按字面解釋`, `兩句都有完整上下文，卻仍不能判斷「${target}」的意思`, `同一詞由「${literalMeaning}」延伸到「${meaning}」，語境使義項不同。`]);
+const sameWordRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`「${literal}」「${sentence}」兩句都有「${target}」，哪項關係正確？`, `字形相同，但前句指「${literalMeaning}」，後句指「${meaning}」`, `兩句都有「${target}」，所以整句意思完全一樣`, `「${target}」在兩句讀音必定不同，所以是兩個字`, `「${sentence}」沒有任何可判斷「${target}」意義的搭配`, `前後受詞與情境不同，使「${target}」分別對應兩個義項。`]);
+const collocationMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue }) => [`要判斷「${sentence}」中「${target}」的義項，哪個線索最直接？`, clue, `「${target}」的筆畫數`, `「${sentence}」的總字數`, `讀者看見「${target}」時最先想到的畫面`, `「${clue}」直接限制此處只能解作「${meaning}」。`]);
+const abstractUseRows = polysemyContexts.map(({ target, sentence, meaning, literalMeaning }) => [`哪項正確說明「${sentence}」中的抽象用法？`, `「${target}」由「${literalMeaning}」轉用來表示「${meaning}」`, `句中真的出現了「${literalMeaning}」所指的實物或動作`, `「${target}」只是多餘裝飾，從「${sentence}」刪去也不影響`, `「${target}」既是抽象用法，就可不管搭配而任意解釋`, `原句保留與本義的關聯，並由搭配把意義限定為「${meaning}」。`]);
+const substitutionRows = polysemyContexts.map(({ target, sentence, meaning, substitute, wrongSubstitutes }) => [`若不改變「${sentence}」的主要句意，哪個詞最適合替換「${target}」？`, substitute, ...wrongSubstitutes, `「${substitute}」在此可保留「${meaning}」的語境義，其餘詞只適用別的義項。`]);
 
 const POLYSEMY_CASES = Object.freeze({
   CHI_R4_S036: contextualMeaningRows,
@@ -746,7 +749,7 @@ const nearSynonymRows = [
   ["維持", "保持", "都表示讓某狀態繼續存在", "修理", "保存"],
   ["協助", "幫助", "都表示給予他人助力", "合作", "協商"],
   ["查核", "核對", "都表示依資料檢查是否正確一致", "核准", "調查"],
-].map(([word, correct, relation, wrongA, wrongB]) => [`哪個詞在「${word}」的常用語境中意義最相近？`, correct, wrongA, wrongB, "沒有上下文便可任意替換的所有同音詞", `${relation}；實際替換仍須核對句中搭配。`]);
+].map(([word, correct, relation, wrongA, wrongB]) => [`哪個詞在「${word}」的常用語境中意義最相近？`, correct, wrongA, wrongB, `只因讀音或字數相近，就把「${wrongA}」和「${wrongB}」都當成「${word}」`, `${relation}；實際替換仍須核對句中搭配。`]);
 
 const degreeRows = [
   ["微笑／大笑", "「大笑」的動作與聲音程度通常較強", "兩詞程度完全相同", "「微笑」一定帶貶義", "「大笑」只能形容天氣"],
@@ -863,12 +866,16 @@ const idiomRecords = [
   { idiom: "雪中送炭", meaning: "在他人急需時給予實際幫助", story: "寒雪中送去可取暖的炭，比喻援助正處困難的人", tone: "褒義", use: "設備突然故障時，鄰組立即借出唯一可替代的工具", misuse: "得獎者已有多份禮物，又收到裝飾品，這一定是雪中送炭" },
 ];
 
-const idiomMeaningRows = idiomRecords.map(({ idiom, meaning }) => [`「${idiom}」的整體慣用義最接近哪一項？`, meaning, "把成語四個字逐字拼成的表面動作", "只用來指典故人物的姓名", "任何與動物或物品有關的情況", `「${idiom}」慣用來表示「${meaning}」，不能只按字面拆解。`]);
-const idiomUseRows = idiomRecords.map(({ idiom, meaning, use }) => [`哪個情境最適合用「${idiom}」？`, use, `只因句中出現與典故相同的物品，便使用「${idiom}」`, `事情結果與「${meaning}」相反的情境`, "沒有行動、對象或結果可供判斷的情境", `題述情境完整呈現「${meaning}」。`]);
-const idiomLiteralRows = idiomRecords.map(({ idiom, meaning, story }) => [`讀到「${idiom}」時，哪項能正確區分字面與慣用義？`, `典故表面事件是「${story}」；慣用義則是「${meaning}」`, `只要現代句中沒有典故原物，成語便不能使用`, "慣用義就是把每個字各選第一個字典義相加", "字面事件與寓意完全沒有關係", `典故事件提供寓意來源，但現代使用要看「${meaning}」是否符合情境。`]);
-const idiomStoryRows = idiomRecords.map(({ idiom, meaning, story }) => [`根據「${story}」，「${idiom}」最適合概括哪個寓意？`, meaning, "任何努力都不會成功", "只要模仿古人就能解決問題", "成語只能用來重述故事情節", `故事中的因果關係支持「${meaning}」，不是只記人物或物件。`]);
-const idiomToneRows = idiomRecords.map(({ idiom, tone, meaning }) => [`「${idiom}」在一般使用中帶有哪種語氣或評價？`, `${tone}，因為它常用來表示「${meaning}」`, "永遠是最高程度的讚美", "永遠完全中性，不含任何評價", "只由句末標點決定褒貶", `「${idiom}」通常為${tone}；放回完整句子仍要核對說話者態度。`]);
-const idiomCorrectionRows2 = idiomRecords.map(({ idiom, misuse, meaning }) => [`句子「${misuse}」使用「${idiom}」不當，哪個訂正理由最準確？`, `題中情境不符合「${meaning}」，應改用能描述實際行動的詞語`, "只要把成語移到句首就會正確", "成語字形正確，所以不可能誤用", "在成語後加驚嘆號即可", `問題在適用情境與「${meaning}」不合，不是位置或標點。`]);
+const otherIdiomValues = (index, field) => [1, 4, 7].map((offset) => idiomRecords[(index + offset) % idiomRecords.length][field]);
+const idiomMeaningRows = idiomRecords.map(({ idiom, meaning }, index) => [`「${idiom}」的整體慣用義最接近哪一項？`, meaning, ...otherIdiomValues(index, "meaning"), `「${idiom}」慣用來表示「${meaning}」，不能只按字面拆解。`]);
+const idiomUseRows = idiomRecords.map(({ idiom, meaning, use }, index) => [`哪個情境最適合用「${idiom}」？`, use, ...otherIdiomValues(index, "use"), `題述情境完整呈現「${meaning}」。`]);
+const idiomLiteralRows = idiomRecords.map(({ idiom, meaning, story }, index) => {
+  const wrongRecords = [1, 4, 7].map((offset) => idiomRecords[(index + offset) % idiomRecords.length]);
+  return [`讀到「${idiom}」時，哪項能正確區分字面與慣用義？`, `典故表面事件是「${story}」；慣用義則是「${meaning}」`, ...wrongRecords.map((record) => `典故表面事件是「${record.story}」；慣用義為「${record.meaning}」`), `典故事件提供寓意來源，但現代使用要看「${meaning}」是否符合情境。`];
+});
+const idiomStoryRows = idiomRecords.map(({ idiom, meaning, story }, index) => [`根據「${story}」，「${idiom}」最適合概括哪個寓意？`, meaning, ...otherIdiomValues(index, "meaning"), `故事中的因果關係支持「${meaning}」，不是只記人物或物件。`]);
+const idiomToneRows = idiomRecords.map(({ idiom, tone, meaning }) => [`「${idiom}」在一般使用中帶有哪種語氣或評價？`, `${tone}，因為它常用來表示「${meaning}」`, `「${idiom}」一律是最高程度的讚美，不必看情境`, `「${idiom}」永遠完全中性，不含任何評價`, `「${idiom}」的褒貶只由句末標點決定`, `「${idiom}」通常為${tone}；放回完整句子仍要核對說話者態度。`]);
+const idiomCorrectionRows2 = idiomRecords.map(({ idiom, misuse, meaning }) => [`句子「${misuse}」使用「${idiom}」不當，哪個訂正理由最準確？`, `題中情境不符合「${meaning}」，應改用能描述實際行動的詞語`, `只要把「${idiom}」移到句首，原情境便會符合成語義`, `「${idiom}」字形正確，所以「${misuse}」不可能誤用`, `在「${idiom}」後加驚嘆號，就能改變原有事件關係`, `問題在適用情境與「${meaning}」不合，不是位置或標點。`]);
 const idiomSelectionRows = idiomRecords.map(({ idiom, use, meaning }, index) => {
   const wrongs = [1, 4, 7].map((offset) => idiomRecords[(index + offset) % idiomRecords.length].idiom);
   return [`情境「${use}」最適合用哪個成語概括？`, idiom, ...wrongs, `情境的行動、原因與結果符合「${idiom}」所表示的「${meaning}」。`];
@@ -899,7 +906,7 @@ const classicalWordRecords = [
   { text: "過而不改，是謂過矣。", target: "過", meaning: "犯錯或過錯", modern: "經過", translation: "犯了錯卻不改正，這才叫作真正的過錯。" },
 ];
 
-const classicalMeaningRows = classicalWordRecords.map(({ text, target, meaning }) => [`文句「${text}」中的「${target}」最接近哪個意思？`, meaning, "直接套用最常見的現代義", "只按字形猜測而不看句法", "把上下兩句意思顛倒", `依句法位置與上下文，「${target}」應解作「${meaning}」。`]);
+const classicalMeaningRows = classicalWordRecords.map(({ text, target, meaning, modern }) => [`文句「${text}」中的「${target}」最接近哪個意思？`, meaning, `直接套用「${target}」最常見的現代義「${modern}」`, `只按「${target}」的字形猜測，不看「${text}」的句法`, `把「${text}」的前後關係顛倒，再猜「${target}」的意思`, `依句法位置與上下文，「${target}」應解作「${meaning}」。`]);
 
 const functionWordRecords = [
   ["學而時習之", "而", "連接前後動作，可譯為「並且、而且」", "表示轉折「但是」", "代替學習內容", "表示處所"],
@@ -948,8 +955,8 @@ const omissionRows = [
   ["過中不至，太丘舍去。", "前句省略相約友人為主語；太丘因友人過午未到而離開", "太丘自己遲到", "「中」是人物姓名", "兩句沒有因果關係"],
 ].map(([text, correct, wrongA, wrongB, wrongC]) => [`補足文句「${text}」的省略成分，哪項最合理？`, correct, wrongA, wrongB, wrongC, correct]);
 
-const classicalTranslationRows = classicalWordRecords.map(({ text, translation }) => [`文句「${text}」譯成白話，哪項最恰當？`, translation, "依古文原字序逐字替換，忽略省略與語氣", "加入原文沒有的人物、原因與結果", "只翻譯最後一字，略去前後關係", `正解保留原句事件、邏輯與語氣：${translation}`]);
-const modernTrapRows = classicalWordRecords.map(({ text, target, meaning, modern }) => [`同學把「${text}」中的「${target}」直接解作「${modern}」。哪個訂正正確？`, `應依古句搭配改解為「${meaning}」`, `現代常用義一定適用，不必訂正`, "古文每個字都沒有意思", "只改讀音，不需處理句義", `把「${meaning}」放回全句才能形成通順一致的解釋。`]);
+const classicalTranslationRows = classicalWordRecords.map(({ text, translation }) => [`文句「${text}」譯成白話，哪項最恰當？`, translation, `照「${text}」的古文字序逐字替換，不補省略成分或語氣`, `替「${text}」加入原文沒有的人物、原因與結果`, `只翻譯「${text}」的最後一字，略去前後關係`, `正解保留原句事件、邏輯與語氣：${translation}`]);
+const modernTrapRows = classicalWordRecords.map(({ text, target, meaning, modern }) => [`同學把「${text}」中的「${target}」直接解作「${modern}」。哪個訂正正確？`, `應依古句搭配改解為「${meaning}」`, `「${target}」的現代常用義「${modern}」一定適用，不必訂正`, `因為「${target}」是古文用字，所以它在句中沒有意思`, `只改「${target}」的讀音，不必處理「${text}」的句義`, `把「${meaning}」放回全句才能形成通順一致的解釋。`]);
 
 const CLASSICAL_WORD_CASES = Object.freeze({
   CHI_R4_S057: classicalMeaningRows,
@@ -1091,9 +1098,9 @@ const sentenceStructureRecords = [
   { sentence: "主辦單位公布修正後的活動流程。", subject: "主辦單位", predicate: "公布修正後的活動流程", verb: "公布", object: "修正後的活動流程", modifier: "修正後的、活動", center: "流程", expanded: "收到場地變更通知並完成風險檢查的主辦單位，在官網公布修正後且附版本時間的完整活動流程" },
 ];
 
-const subjectPredicateRows = sentenceStructureRecords.map(({ sentence, subject, predicate }) => [`分析句子「${sentence}」，哪項主語與述語的劃分正確？`, `主語「${subject}」；述語「${predicate}」`, `主語「${predicate}」；述語「${subject}」`, "只把句首第一個字當主語", "全句都是主語，沒有述語", `「${subject}」是被陳述對象，「${predicate}」說明它的動作或狀態。`]);
-const verbObjectRows = sentenceStructureRecords.map(({ sentence, verb, object }) => [`分析句子「${sentence}」的動賓關係，哪項正確？`, `動詞「${verb}」支配受詞「${object}」`, `受詞「${verb}」支配動詞「${object}」`, "句中動詞沒有涉及任何對象", "只要位於句末便一定是動詞", `問「${verb}什麼」可得到「${object}」，兩者形成支配關係。`]);
-const modifierCenterRows = sentenceStructureRecords.map(({ sentence, modifier, center }) => [`分析句子「${sentence}」中的名詞短語，哪項修飾與中心關係正確？`, `「${modifier}」修飾中心語「${center}」`, `「${center}」修飾「${modifier}」`, "所有帶「的」的詞都是句子主語", "修飾語可以完全取代中心語而不看語境", `刪去修飾語仍保留中心「${center}」；修飾語負責限定範圍或性質。`]);
+const subjectPredicateRows = sentenceStructureRecords.map(({ sentence, subject, predicate }) => [`分析句子「${sentence}」，哪項主語與述語的劃分正確？`, `主語「${subject}」；述語「${predicate}」`, `主語「${predicate}」；述語「${subject}」`, `只把「${sentence}」句首第一個字當主語`, `把「${sentence}」全句都當主語，認為沒有述語`, `「${subject}」是被陳述對象，「${predicate}」說明它的動作或狀態。`]);
+const verbObjectRows = sentenceStructureRecords.map(({ sentence, verb, object }) => [`分析句子「${sentence}」的動賓關係，哪項正確？`, `動詞「${verb}」支配受詞「${object}」`, `受詞「${verb}」支配動詞「${object}」`, `認為「${verb}」沒有涉及「${object}」或其他對象`, `只因「${object}」位於句末，就把它當作動詞`, `問「${verb}什麼」可得到「${object}」，兩者形成支配關係。`]);
+const modifierCenterRows = sentenceStructureRecords.map(({ sentence, modifier, center }) => [`分析句子「${sentence}」中的名詞短語，哪項修飾與中心關係正確？`, `「${modifier}」修飾中心語「${center}」`, `「${center}」修飾「${modifier}」`, `把「${modifier}」中所有帶「的」的詞都當成句子主語`, `認為「${modifier}」可完全取代中心語「${center}」`, `刪去修飾語仍保留中心「${center}」；修飾語負責限定範圍或性質。`]);
 
 const phraseTypeRows = [
   ["老師和學生", "並列短語", "偏正短語", "動賓短語", "主謂短語"],
@@ -1140,7 +1147,7 @@ const mismatchRows = [
   ["團隊履行了事前的承諾。", "原句搭配正確，「履行承諾」表示照約定實行", "把履行改成旅行", "承諾只能完成不能履行", "刪去團隊"],
 ].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`檢查句子「${sentence}」的詞語搭配，哪項判斷正確？`, correct, wrongA, wrongB, wrongC, correct]);
 
-const contractionRows = sentenceStructureRecords.map(({ expanded, subject, verb, object }) => [`把長句「${expanded}。」縮成保留主幹的句子，哪項最恰當？`, `${subject}${verb}${object}。`, `只保留「${object}」而刪去動作`, `只保留修飾語，刪去「${subject}」`, "因句子很長，所以任意保留最前與最後三字", `刪去時間、處所與層層修飾後，主幹仍是「${subject}${verb}${object}」。`]);
+const contractionRows = sentenceStructureRecords.map(({ expanded, subject, verb, object }) => [`把長句「${expanded}。」縮成保留主幹的句子，哪項最恰當？`, `${subject}${verb}${object}。`, `只保留「${object}」而刪去動作「${verb}」`, `只保留修飾語，刪去主語「${subject}」`, `只因原句很長，就保留「${expanded.slice(0, 3)}……${expanded.slice(-3)}」`, `刪去時間、處所與層層修飾後，主幹仍是「${subject}${verb}${object}」。`]);
 
 const SENTENCE_STRUCTURE_CASES = Object.freeze({
   CHI_R4_S071: subjectPredicateRows,
@@ -1726,12 +1733,20 @@ function optionsFor(skill, guide, questionIndex, siblingTitles) {
 function lectureFor(skill, family, guide, questions) {
   const serial = skill.id.slice(-3);
   const [core, boundary, evidence] = guide;
-  const misconceptionTexts = [
-    mistakeVariants[(Number(serial) + 1) % mistakeVariants.length],
-    `把「${family.skills[(family.skills.indexOf(skill.title) + 1) % family.skills.length]}」與本技能視為完全相同，因而選錯判斷標準。`,
-    `看到熟悉詞語便直接下結論，沒有指出${evidence}。`,
-    `答案雖可能合理，卻把證據能支持的範圍擴大，忽略「${boundary.replace(/[。；]$/u, "")}」。`,
-  ];
+  const misconceptionItems = [0, 5, 10].map((questionIndex) => {
+    const question = questions[questionIndex];
+    const wrongIndex = question.options.findIndex((_, optionIndex) => optionIndex !== question.answerIndex);
+    return {
+      belief: `誤以為「${question.options[wrongIndex]}」也能回答「${question.stem}」。`,
+      whyWrong: question.optionRationales[wrongIndex].reason,
+      correction: `應改選「${question.options[question.answerIndex]}」；${question.optionRationales[question.answerIndex].reason}`,
+    };
+  });
+  misconceptionItems.push({
+    belief: `只記住「${skill.title}」的一個例子，就把規則套到所有情況，忽略「${boundary.replace(/[。；]$/u, "")}」。`,
+    whyWrong: `單一例子不能取代${evidence}，也不能越過本技能的適用邊界。`,
+    correction: `每次都回到${evidence}重新判斷，並把結論限制在資料能支持的範圍。`,
+  });
   return {
     id: `CHI_R4_L_S${serial}`,
     subject: "chinese",
@@ -1763,21 +1778,7 @@ function lectureFor(skill, family, guide, questions) {
         why: question.optionRationales[question.answerIndex].reason,
       };
     }),
-    misconceptions: misconceptionTexts.map((belief, index) => ({
-      belief,
-      whyWrong: [
-        `這樣沒有使用${evidence}，答案無法由別人重新核對。`,
-        `相近技能可能共享部分線索，但作答任務與限制並不相同。`,
-        "熟悉感不是文本證據，遇到多義或省略時尤其容易誤判。",
-        "把可能說成必然會產生過度推論，無法排除其他合理情況。",
-      ][index],
-      correction: [
-        `把判斷理由寫成可指出的${evidence}。`,
-        "先列出兩項技能各自要回答的問題，再選正確標準。",
-        "回到完整語境，標示真正限制答案的詞句。",
-        "把結論強度調整到證據能支持的範圍。",
-      ][index],
-    })),
+    misconceptions: misconceptionItems,
     checks: [1, 6, 11].map((questionIndex) => {
       const question = questions[questionIndex];
       return { prompt: question.stem, answer: question.options[question.answerIndex], reason: question.optionRationales[question.answerIndex].reason };
@@ -2067,26 +2068,26 @@ function stimulusQuestionsFor(stimulus, index) {
   const specs = {
     narrative: [
       { stem: `面對${focus}引起的問題，${person}的做法出現哪一項關鍵轉折？`, correct: `沒有採取「${rejected}」，而改為${action}。`, wrong: [`一開始就知道「${result}」而沒有採取行動。`, `離開${place}，把問題完全交給陌生人。`, `刪除${evidence}，避免別人追問。`], reason: "人物放棄原先有人主張的捷徑，改採文中明寫的行動，推動事件發展。" },
-      { stem: `文中列出「${evidence}」，最能幫助讀者理解什麼？`, correct: `理解${person}的判斷並非只靠印象，而有具體依據。`, wrong: [`證明${person}在行動以前就已確定「${result}」。`, `暗示只要列出的資料夠多，任何結論都可成立。`, `補充${place}的背景，但和事件轉折沒有關係。`], reason: "這些細節位在行動與結果之間，用來交代人物如何排除錯誤判斷。" },
-      { stem: `根據全文，最適合形容${person}處理${focus}時的表現的是什麼？`, correct: "願意放慢判斷，並兼顧事情的後果。", wrong: [`只重視能否迅速得到「${result}」，不在意過程。`, `主要依從現場多數人的意見，沒有自己的判準。`, `雖保留資料，最後仍採取「${rejected}」的做法。`], reason: "人物以具體行動回應問題，且沒有用方便但不可靠的作法草率結案。" },
-      { stem: `結尾寫到「${result}」，對這篇敘事最主要的作用是什麼？`, correct: "收束前文衝突，顯示人物選擇帶來的具體改變。", wrong: [`把結果當成事件起因，顛倒前後因果。`, `證明「${rejected}」其實也能得到相同結果。`, `只總結${evidence}的數量，沒有回應人物選擇。`], reason: "結尾直接承接人物行動，讓轉折後的影響可被看見。" },
+      { stem: `文中列出「${evidence}」，最能幫助讀者理解什麼？`, correct: `理解${person}處理${focus}的判斷並非只靠印象，而有具體依據。`, wrong: [`證明${person}在行動以前就已確定「${result}」。`, `暗示只要列出和${focus}有關的資料，任何結論都可成立。`, `只補充${place}的背景，和這次事件轉折沒有關係。`], reason: "這些細節位在行動與結果之間，用來交代人物如何排除錯誤判斷。" },
+      { stem: `根據全文，最適合形容${person}處理${focus}時的表現的是什麼？`, correct: `${person}願意放慢判斷，並兼顧處理${focus}的後果。`, wrong: [`${person}只重視能否迅速得到「${result}」，不在意過程。`, `${person}主要依從${place}多數人的意見，沒有自己的判準。`, `${person}雖保留資料，最後仍採取「${rejected}」的做法。`], reason: "人物以具體行動回應問題，且沒有用方便但不可靠的作法草率結案。" },
+      { stem: `結尾寫到「${result}」，對這篇敘事最主要的作用是什麼？`, correct: `以「${result}」收束${focus}引起的衝突，顯示人物選擇帶來的改變。`, wrong: [`把「${result}」當成${focus}出現的原因，顛倒前後因果。`, `證明「${rejected}」其實也能得到「${result}」。`, `只總結${evidence}的數量，沒有回應${person}的選擇。`], reason: "結尾直接承接人物行動，讓轉折後的影響可被看見。" },
     ],
     expository: [
       { stem: `這篇說明文字主要要讓讀者了解什麼？`, correct: `處理${focus}時，如何從${action}逐步得到「${result}」的結果。`, wrong: [`${person}在${place}的個人興趣排行。`, `${place}所有工作的歷史沿革。`, `為什麼「${rejected}」適用於每一種問題。`], reason: "全文依序交代問題、方法、核對資料與結果，重點在說明處理流程。" },
       { stem: `依照文中的流程，在得出結論以前最需要核對哪一項資料？`, correct: evidence, wrong: [`「${action}」這項操作步驟本身`, `「${result}」這項完成後才出現的結果`, `「${rejected}」這項已被排除的做法`], reason: "文本明確把這組資料放在方法與結論之間，作為檢查依據。" },
-      { stem: `作者提到「${rejected}」，在說明上有什麼功能？`, correct: `用一個不可靠的做法作對照，凸顯「${action}」的必要。`, wrong: ["把它列為全文唯一推薦的方法。", "證明所有省時的作法都必然錯誤。", "轉入一段與主題無關的人物傳記。"], reason: "不採做法和實際流程形成對照，幫助讀者看出判斷條件。" },
-      { stem: `說明${focus}的這篇文字，組織方式最接近下列何者？`, correct: "提出待處理情況，說明步驟與依據，再交代結果。", wrong: [`先主張「${rejected}」，再用全文證明它正確。`, `只比較${person}與其他人的個性，未交代方法。`, `先列「${result}」，再依時間追述${place}的歷史。`], reason: "段落由問題推進到方法與結果，前後資訊有明確承接。" },
+      { stem: `作者提到「${rejected}」，在說明上有什麼功能？`, correct: `以「${rejected}」和「${action}」對照，凸顯實際流程的必要。`, wrong: [`把「${rejected}」列為處理${focus}唯一推薦的方法。`, `證明${place}所有省時的作法都必然錯誤。`, `從${focus}轉入${person}的生平介紹。`], reason: "不採做法和實際流程形成對照，幫助讀者看出判斷條件。" },
+      { stem: `說明${focus}的這篇文字，組織方式最接近下列何者？`, correct: `先提出${focus}的待處理情況，說明步驟與${evidence}，再交代結果。`, wrong: [`先主張「${rejected}」，再用全文證明它正確。`, `只比較${person}與其他人的個性，未交代如何處理${focus}。`, `先列「${result}」，再依時間追述${place}的歷史。`], reason: "段落由問題推進到方法與結果，前後資訊有明確承接。" },
     ],
     argumentative: [
-      { stem: "這篇議論文字最主要支持哪一項主張？", correct: `處理${focus}時，應讓判斷有足夠依據，而不能只採「${rejected}」。`, wrong: [`凡是在${place}做的決定都不會出錯。`, "步驟越多的做法必然越好。", `${person}的任何選擇都不需要接受檢驗。`], reason: "全文以一個具體案例比較兩種做法，主張判斷應與可支持它的資料相稱。" },
-      { stem: `「${result}」最適合被視為這篇文章中的哪一種材料？`, correct: "支持主張的實際結果。", wrong: [`文章一開始提出、尚未獲支持的主要主張。`, `對「${rejected}」所作的讓步。`, `用來界定「${focus}」詞義的抽象定義。`], reason: "結果顯示文中建議的做法確實回應原問題，因而成為論據的一部分。" },
+      { stem: "這篇議論文字最主要支持哪一項主張？", correct: `處理${focus}時，應讓判斷有足夠依據，而不能只採「${rejected}」。`, wrong: [`凡是在${place}處理${focus}的決定都不會出錯。`, `只要採取「${action}」的步驟越多，做法就必然越好。`, `${person}處理${focus}的任何選擇都不需要接受檢驗。`], reason: "全文以一個具體案例比較兩種做法，主張判斷應與可支持它的資料相稱。" },
+      { stem: `「${result}」最適合被視為這篇文章中的哪一種材料？`, correct: `支持「處理${focus}須有依據」這項主張的實際結果。`, wrong: [`文章一開始提出、尚未獲${evidence}支持的主要主張。`, `對「${rejected}」這項做法所作的讓步。`, `用來界定「${focus}」詞義的抽象定義。`], reason: "結果顯示文中建議的做法確實回應原問題，因而成為論據的一部分。" },
       { stem: `若要反駁「${rejected}最省事，所以最好」的說法，文中哪項資訊最有力？`, correct: `${action}，並以${evidence}核對後得到可說明的結果。`, wrong: [`重複「${rejected}」這項說法，但不比較後果。`, `只指出${person}負責處理，未說明採用何種資料。`, `只列「${result}」，卻不交代它和哪一做法有關。`], reason: "反駁必須回到兩種做法的可靠程度與後果，不能用無關的文字特徵代替。" },
-      { stem: `依全文來看，作者對查核${focus}的範圍抱持什麼態度？`, correct: "資料要足以支持當下判斷，但不表示任何小事都要無限追查。", wrong: ["資料越多越好，即使侵犯隱私也無妨。", "任何判斷都只能靠多數表決。", "只要結果碰巧正確，過程完全不必說明。"], reason: "文章肯定有依據的判斷，同時沒有把查核擴張為不受限制的要求。" },
+      { stem: `依全文來看，作者對查核${focus}的範圍抱持什麼態度？`, correct: `和${focus}直接相關的資料要足以支持判斷，但不必無限追查。`, wrong: [`處理${focus}時資料越多越好，即使侵犯隱私也無妨。`, `判斷${focus}只能靠${place}多數人表決，不需${evidence}。`, `只要「${result}」碰巧出現，處理過程完全不必說明。`], reason: "文章肯定有依據的判斷，同時沒有把查核擴張為不受限制的要求。" },
     ],
     practical: [
       { stem: `這份${place}文字最主要的用途是什麼？`, correct: `交代${focus}的處理方式、核對項目與目前結果。`, wrong: [`說服讀者改採「${rejected}」，不必留下紀錄。`, `只公告「${result}」，不讓後續承辦者知道依據。`, `介紹${person}的經歷，並把${focus}當作旁例。`], reason: "標題、欄位或段落都圍繞一件待處理事項，並提供可採取的資訊。" },
-      { stem: `收到這份關於${focus}的文字後，若有新資料，最合宜的做法是什麼？`, correct: "附上具體來源與時間，交由原負責單位更新紀錄。", wrong: ["刪除舊紀錄，只保留自己的說法。", "在未核對前公開指責相關人員。", "改動文件後不留下版本資訊。"], reason: "應用文本明確要求新資料保留來源並回到既有流程處理。" },
-      { stem: `文件特別提醒不要「${rejected}」，主要是為了避免什麼？`, correct: "避免未經核對便作成可能影響他人的判斷。", wrong: [`避免讀者知道${place}的名稱。`, "避免文件出現任何標點符號。", `避免${person}完成已列出的工作。`], reason: "提醒語直接對應待處理問題，限制讀者採取不可靠或不合宜的行動。" },
+      { stem: `收到這份關於${focus}的文字後，若有新資料，最合宜的做法是什麼？`, correct: `附上和${focus}有關的具體來源與時間，交由${place}更新紀錄。`, wrong: [`刪除${focus}的舊紀錄，只保留自己的說法。`, `在未核對${evidence}前公開指責相關人員。`, `改動「${result}」的紀錄後不留下版本資訊。`], reason: "應用文本明確要求新資料保留來源並回到既有流程處理。" },
+      { stem: `文件特別提醒不要「${rejected}」，主要是為了避免什麼？`, correct: `避免未核對${evidence}便作成影響${focus}的判斷。`, wrong: [`避免讀者知道${focus}是在${place}處理。`, `避免關於${focus}的文件出現任何標點符號。`, `避免${person}完成「${action}」這項已列工作。`], reason: "提醒語直接對應待處理問題，限制讀者採取不可靠或不合宜的行動。" },
       { stem: `下列何者同時包含這份文件明列的核對依據與處理結果？`, correct: `${evidence}，以及「${result}」的處理結果。`, wrong: [`「${action}」的步驟，以及尚未查證的新猜測。`, `「${rejected}」的做法，以及${person}的個人偏好。`, `${place}的名稱，以及文件未記載的後續發展。`], reason: "可交接資訊必須來自文件明列的核對項目與處理結果。" },
     ],
   }[genre];
@@ -2166,20 +2167,20 @@ function narrativePracticeSpec(serial, stimulus) {
     },
     110: {
       stem: `由${person}面對${focus}爭議時的行動，最能推知他當下抱持何種態度？`,
-      correct: `審慎而克制，先保存線索並查核，再接受結論。`,
-      wrong: [`急於取悅旁人，所以不看資料就附和。`, `冷漠逃避，從頭到尾拒絕處理事件。`, `得意自滿，因為一開始就掌握所有人的想法。`],
+      correct: `${person}審慎而克制，先保存${focus}的線索並查核，再接受結論。`,
+      wrong: [`${person}急於取悅${place}旁人，所以不看${evidence}就附和。`, `${person}冷漠逃避，從頭到尾拒絕處理${focus}。`, `${person}得意自滿，以為一開始就掌握所有人對${focus}的想法。`],
       reason: `「${action}」顯示${person}沒有被爭論帶著走，而是審慎核對。`,
     },
     111: {
       stem: `哪個事件是這篇敘事由爭議轉向解決的關鍵？（對象：${focus}）`,
       correct: `${person}不再比較誰的聲音大，轉而${action}並核對${evidence}。`,
-      wrong: [`有人一開始主張「${rejected}」。`, `${place}原本就存在，且名稱沒有改變。`, `事件結束後，讀者才看見文章最後一個句號。`],
+      wrong: [`有人一開始主張「${rejected}」，但尚未改變${focus}的處理方式。`, `${place}原本就存在，名稱也沒有因${focus}而改變。`, `敘事結尾出現句號，卻沒有說明${person}如何處理${focus}。`],
       reason: "查核行動改變了判斷方式，也直接導向後文的具體結果。",
     },
     112: {
       stem: `用關鍵事件概括${person}處理${focus}的主旨，哪項最完整？`,
-      correct: `面對影響他人的判斷，保留並核對可複查證據，比依聲量或印象下結論可靠。`,
-      wrong: [`只要在${place}發生的事，都應由${person}一人決定。`, `任何問題都必須蒐集無限多資料，永遠不能結案。`, `${focus}本身證明所有人的第一印象一定錯誤。`],
+      correct: `面對${focus}這類會影響他人的判斷，保留並核對${evidence}，比依聲量或印象下結論可靠。`,
+      wrong: [`只要在${place}發生的事，都應由${person}一人決定。`, `處理${focus}必須蒐集無限多資料，永遠不能結案。`, `${focus}本身證明所有人的第一印象一定錯誤。`],
       reason: "正解統整了爭議、查核與結果，且把結論限在文本能支持的範圍。",
     },
   };
@@ -2208,19 +2209,19 @@ function expositoryPracticeSpec(serial, stimulus, questionIndex) {
     115: {
       stem: `下列哪一項最能描述這篇${focus}說明的整體架構？`,
       correct: structures,
-      wrong: ["人物傳記：依年代交代出生、求學與工作。", "景物描寫：只按遠近排列顏色與聲音。", "抒情轉折：由歡樂突然轉為哀傷，沒有說明步驟。"],
+      wrong: [`人物傳記：依年代交代${person}出生、求學與工作。`, `景物描寫：只按遠近排列${place}的顏色與聲音。`, `抒情轉折：面對${focus}時由歡樂突然轉為哀傷，沒有說明步驟。`],
       reason: `選文第${variant + 1}種變式的句間關係，正是答案所述的組織方式。`,
     },
     116: {
       stem: `把選文與資料表一起讀：同類案件需重新查核的項目｜只憑印象：${before}項｜採「${action}」：${after}項。哪項解讀最恰當？`,
       correct: `在這批同類案件中，採可複查流程後需重查項目由${before}項降為${after}項；這與選文重視${evidence}的方向一致。`,
-      wrong: [`所有地方只要採此流程，重查項目必定永遠為零。`, `表中${before}比${after}大，所以${focus}本身一定有害。`, `資料表沒有列人物心情，因此完全不能和正文互相參照。`],
+      wrong: [`所有地方只要以「${action}」處理${focus}，重查項目必定永遠為零。`, `表中${before}比${after}大，所以${focus}本身一定有害。`, `資料表沒有列${person}的心情，因此不能和正文的${evidence}互相參照。`],
       reason: "正解同時保留表格的比較基準、數值與個案範圍，並連回正文方法。",
     },
     117: {
       stem: `關於${person}處理${focus}的說明，哪一句屬於可直接查核的客觀資訊？`,
       correct: `${person}核對的項目包括${evidence}。`,
-      wrong: [`${person}的做法是世上最完美的方法。`, `${focus}顯然是${place}最討厭的東西。`, `每位讀者都一定覺得查核過程十分感人。`],
+      wrong: [`${person}處理${focus}的做法是世上最完美的方法。`, `${focus}顯然是${place}所有人最討厭的事物。`, `每位讀者都一定覺得核對${evidence}的過程十分感人。`],
       reason: "正解可回到選文列出的核對項目；其他選項都是未提供標準的評價。",
     },
     118: {
@@ -2232,7 +2233,7 @@ function expositoryPracticeSpec(serial, stimulus, questionIndex) {
     119: {
       stem: `由這篇關於${focus}的資料，最多可以支持哪一項結論？`,
       correct: `在${place}這個案例中，${action}並核對${evidence}，促成「${result}」。`,
-      wrong: [`任何情境採相同步驟都必然得到完全相同結果。`, `${person}的方法證明往後不必再更新任何資料。`, `只要反對「${rejected}」的人，其所有判斷都正確。`],
+      wrong: [`任何情境採「${action}」都必然得到和「${result}」完全相同的結果。`, `${person}處理${focus}的方法證明往後不必再更新任何資料。`, `只要反對「${rejected}」的人，其所有${focus}判斷都正確。`],
       reason: "正解保留人物、地點、做法與結果的個案範圍，沒有把單例推成普遍定律。",
     },
   };
@@ -2245,25 +2246,25 @@ function argumentativePracticeSpec(serial, stimulus) {
     120: {
       stem: `閱讀${place}處理${focus}的議論，哪項正確區分論點、論據與論證？`,
       correct: `論點是重要決定應讓核心證據可複查；論據是${person}核對${evidence}後得到「${result}」；作者以個案說明原則的可行性。`,
-      wrong: [`論點是${evidence}；論據是「快並不可靠」；兩者沒有關係。`, `論點和論據都是${person}的姓名，論證則是${place}地名。`, `只要文中有結論句，其他做法與資料都不算論據。`],
+      wrong: [`論點是${evidence}；論據是「快並不可靠」；兩者沒有說明如何支持${focus}的判斷。`, `論點和論據都是${person}的姓名，論證則只是${place}地名。`, `只要${focus}一文有結論句，其他做法與${evidence}都不算論據。`],
       reason: "正解分別指出主張、可查事例及兩者間的支持關係。",
     },
     121: {
       stem: `在這篇${focus}議論中，哪一項屬於事實論據而不是原則性主張？`,
       correct: `${person}${action}，核對${evidence}後，實際出現「${result}」的結果。`,
-      wrong: ["影響他人的決定都應保留可複查證據。", "可靠比快速更值得優先考量。", "判斷標準不應隨個人偏好任意改變。"],
+      wrong: [`處理${focus}等會影響他人的決定，都應保留可複查證據。`, `在${place}的案例裡，可靠比快速更值得優先考量。`, `判斷${focus}的標準不應隨個人偏好任意改變。`],
       reason: "正解是文本記錄的個案行動與結果；其餘三項都是作者提出的規範或評價。",
     },
     122: {
       stem: `若要支持「處理${focus}時應先查核再下結論」，哪項證據與論點最相關？`,
       correct: `${person}以${evidence}核對後，${result}。`,
-      wrong: [`${place}的名稱共有${place.length}個字。`, `${person}偏好的顏色沒有寫在文章裡。`, `另一個城市去年舉辦過與本文無關的運動會。`],
+      wrong: [`${place}的名稱共有${place.length}個字，和查核${focus}的效果無關。`, `${person}偏好的顏色沒有寫在${focus}文章裡。`, `另一個城市去年舉辦過與${focus}無關的運動會。`],
       reason: "正解直接呈現查核行動及其效果，能支持題述論點。",
     },
     123: {
       stem: `若作者要用比喻補強${focus}一文中「證據支撐判斷」的關係，哪句作用最清楚？`,
-      correct: "證據像橋墩；每一根都能核對，結論這座橋才承受得住追問。",
-      wrong: ["證據像天空，因為兩者都可以是藍色。", "結論像鞋子，所以任何尺寸都適合任何人。", "查核像音樂，因此只要好聽就必然正確。"],
+      correct: `核對${focus}的證據像橋墩；每一根都能複查，結論這座橋才承受得住追問。`,
+      wrong: [`${focus}的證據像天空，因為兩者都可以是藍色。`, `關於${focus}的結論像鞋子，所以任何尺寸都適合任何人。`, `核對${evidence}像音樂，因此只要好聽就必然正確。`],
       reason: "橋墩與橋的承重關係，能具體說明證據如何共同支撐可檢驗的結論。",
     },
     124: {
@@ -3846,7 +3847,11 @@ function editingPracticeSpec(serial, item, index) {
   return {
     stem: `編輯案例${index + 1}：\n${text}\n\n針對「${task}」，哪項修訂最恰當？`,
     correct,
-    wrong: ["不核對原意，直接刪除整句。", "只因句子較長就把所有標點改成逗號。", "加入原文沒有的人物、時間與結論。"],
+    wrong: [
+      `保留「${text}」原樣，因為句子看得懂就不必處理${task}問題。`,
+      `只調整「${text}」的字數與換行，不核對${task}。`,
+      `把「${text}」整段換成未交代的新事件，避開原句的${task}問題。`,
+    ],
     reason,
   };
 }
@@ -4096,7 +4101,7 @@ function writingRowsFor(skill) {
     const secondCycle = index >= 6;
     const focus = secondCycle ? variant.focus : profile.observedPattern;
     const step = secondCycle ? variant.step : profile.nextStep;
-    return [`一篇草稿目前接近${profile.level}級分，這次診斷發現「${focus}」哪項回饋最適合作為第二稿的下一步？`, step, "先加入更多成語與名言，不必改動材料關係。", "把全文硬改成固定三段，其他問題暫時忽略。", next.nextStep, `這項回饋直接對應題述的${profile.level}級分缺口，能形成可執行修改。`];
+    return [`一篇草稿目前接近${profile.level}級分，這次診斷發現「${focus}」哪項回饋最適合作為第二稿的下一步？`, step, `針對「${focus}」只加入成語與名言，不改動材料關係。`, `把這篇${profile.level}級分草稿硬改成固定三段，暫時忽略「${focus}」。`, next.nextStep, `這項回饋直接對應題述的${profile.level}級分缺口，能形成可執行修改。`];
   });
 
   const allTasks = MODES.flatMap((mode) => WRITING_TASK_SPECS[mode].map(([title, situation]) => ({ mode, title, situation })));
@@ -4110,9 +4115,9 @@ function writingRowsFor(skill) {
     const keys = WRITING_MODE_KEYS[task.mode];
     const stemPrefix = `題目「${task.title}」說明：${task.situation}`;
     const commonWrong = [
-      "先找一則華麗名言當開頭，再把任何生活故事接在後面。",
-      "只要題材真實感人，即使沒有回應題目限制也算完成任務。",
-      "先決定固定三段格式，再刪去所有放不進格式的題目要求。",
+      `只從「${task.title}」挑一個名詞寫熟悉故事，不處理「${keys}」。`,
+      `材料只要感人就算完成「${task.title}」，即使沒有做到「${action}」。`,
+      `先套固定三段，再刪去與格式衝突的「${keys}」要求。`,
     ];
     const bySkill = {
       303: [`${stemPrefix}哪個審題結果最完整？`, `以「${task.title}」為焦點，${action}，並遵守情境中明示的範圍。`, ...commonWrong, `正解同時指出焦點、寫作行動與限制，沒有把題目縮成單一關鍵字。`],
