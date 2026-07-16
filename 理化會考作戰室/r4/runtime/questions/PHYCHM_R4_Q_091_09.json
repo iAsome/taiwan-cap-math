@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_091_09",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-2",
+    "AUTH-NATURAL-LC-JA-4-1",
+    "AUTH-NATURAL-LC-JA-4-4",
+    "AUTH-NATURAL-LC-JB-4-4",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "班上要比較分子量加總中的「用質量守恆補足反應資料表」，哪一個實驗設計可形成公平比較？",
+  "options": [
+    "採用這個看似直覺的規則：生成物乙應為 29 g，因為要把已知生成物加到反應物上。",
+    "在分子量加總中直接把「忽略過量反應物」當成「用質量守恆補足反應資料表」的足夠證據。",
+    "忽略「反應物不一定完全用完；若一種反應物過量，生成物量由先耗盡者限制。」與「質量、濃度與粒子比例必須分開記錄；重量百分濃度先換成溶質質量再連到反應。」，只根據題幹出現的最大數字宣稱已完成「用質量守恆補足反應資料表」。",
+    "只改一個主要變因並保持其他條件一致，量測結果時依「密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。」判讀。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「生成物乙應為 29 g，因為要把已知生成物加到反應物上。」，與可驗證命題「密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把分子量加總的單一表面線索擴大成結論，並採用「把化學式下標直接當成克數」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「質量、濃度與粒子比例必須分開記錄；重量百分濃度先換成溶質質量再連到反應。」和「反應物不一定完全用完；若一種反應物過量，生成物量由先耗盡者限制。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。」，並保留本題條件；只改一個主要變因並保持其他條件一致，量測結果時依「密閉系統反應物共 18 g，已知生成物甲 11 g，資料表的乙應補為 7 g。」判讀。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "變因控制",
+    "實驗設計"
+  ],
+  "representationType": "experiment",
+  "misconceptionTargets": [
+    "生成物乙應為 29 g，因為要把已知生成物加到反應物上。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-2",
+      "AUTH-NATURAL-LC-JA-4-1",
+      "AUTH-NATURAL-LC-JA-4-4",
+      "AUTH-NATURAL-LC-JB-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「用質量守恆補足反應資料表」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

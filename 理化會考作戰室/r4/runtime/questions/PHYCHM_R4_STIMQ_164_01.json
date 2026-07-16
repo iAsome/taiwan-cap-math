@@ -1,0 +1,80 @@
+{
+  "id": "PHYCHM_R4_STIMQ_164_01",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-KA-4-1",
+    "AUTH-NATURAL-LC-KA-4-2",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_164",
+  "stem": "依據題組中的彈簧縱波紀錄，哪一項最能支持「區分橫波與縱波的振動方向」的判斷？",
+  "options": [
+    "採用這個看似直覺的規則：橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關。",
+    "現有證據能支持的結論是「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。」，不再擴張為題組未測的因果。",
+    "在彈簧縱波中直接把「介質粒子隨波一路移到遠方」當成「區分橫波與縱波的振動方向」的足夠證據。",
+    "忽略「波形圖的水平軸若是位置才可直接讀波長；若是時間，需先辨認週期。」與「波速 m/s、頻率 Hz、波長 m、週期 s；計算前必須統一單位。」，只根據題幹出現的最大數字宣稱已完成「區分橫波與縱波的振動方向」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「橫波與縱波由波形畫得漂亮與否決定，和振動與傳播方向無關。」，與可驗證命題「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。」，並保留本題條件；現有證據能支持的結論是「橫波的介質振動方向與波傳方向垂直；縱波的振動方向與傳播方向平行。」，不再擴張為題組未測的因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把彈簧縱波的單一表面線索擴大成結論，並採用「介質粒子隨波一路移到遠方」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「波速 m/s、頻率 Hz、波長 m、週期 s；計算前必須統一單位。」和「波形圖的水平軸若是位置才可直接讀波長；若是時間，需先辨認週期。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "stimulus-figure-and-data",
+  "misconceptionTargets": [
+    "介質粒子隨波一路移到遠方"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-KA-4-1",
+      "AUTH-NATURAL-LC-KA-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「區分橫波與縱波的振動方向」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "PHYCHM_R4_ASSET_002"
+  ]
+}

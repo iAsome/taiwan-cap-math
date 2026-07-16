@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_121_04",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-JE-4-1",
+    "AUTH-NATURAL-LC-JE-4-2",
+    "AUTH-NATURAL-LC-JE-4-3",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "以可逆反應平衡處理「由反應物消耗或生成物形成判斷速率」時，哪一個步驟安排最合理？",
+  "options": [
+    "先確認資料足以支持哪一層結論，再依「由反應物消耗或生成物形成判斷速率」逐項排除超出證據的說法。本題的正確執行依據是：反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。",
+    "採用這個看似直覺的規則：反應速率只能由最後生成物總量判斷，和所需時間無關。",
+    "在可逆反應平衡中直接把「速率較快就保證產量較高」當成「由反應物消耗或生成物形成判斷速率」的足夠證據。",
+    "忽略「反應較快不代表最後生成物一定較多；平衡也不是反應停止。」與「依觀察量使用 g/s、mL/s 或濃度/時間，所有比較組須使用一致單位與時間區間。」，只根據題幹出現的最大數字宣稱已完成「由反應物消耗或生成物形成判斷速率」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。」，並保留本題條件；先確認資料足以支持哪一層結論，再依「由反應物消耗或生成物形成判斷速率」逐項排除超出證據的說法。本題的正確執行依據是：反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「反應速率只能由最後生成物總量判斷，和所需時間無關。」，與可驗證命題「反應速率可用單位時間內反應物的減少量，或生成物的增加量表示。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把可逆反應平衡的單一表面線索擴大成結論，並採用「速率較快就保證產量較高」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「依觀察量使用 g/s、mL/s 或濃度/時間，所有比較組須使用一致單位與時間區間。」和「反應較快不代表最後生成物一定較多；平衡也不是反應停止。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "程序選擇",
+    "應用"
+  ],
+  "representationType": "procedure",
+  "misconceptionTargets": [
+    "速率較快就保證產量較高"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-JE-4-1",
+      "AUTH-NATURAL-LC-JE-4-2",
+      "AUTH-NATURAL-LC-JE-4-3",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「由反應物消耗或生成物形成判斷速率」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

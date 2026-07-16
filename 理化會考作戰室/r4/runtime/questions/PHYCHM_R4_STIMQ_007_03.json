@@ -1,0 +1,82 @@
+{
+  "id": "PHYCHM_R4_STIMQ_007_03",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S007"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_007",
+  "stem": "同學根據題組資料提出結論。哪一項最符合「區分系統性偏差與隨機變動」的條件與限制？",
+  "options": [
+    "採用這個看似直覺的規則：只要重複次數足夠多，未歸零造成的固定偏差就會自動消失。",
+    "在秒表重複計時中直接把「未檢查零點就直接讀值」當成「區分系統性偏差與隨機變動」的足夠證據。",
+    "評估報告時先確認「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。」，再標明限制「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與所需額外資料。",
+    "忽略「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」，只根據題幹出現的最大數字宣稱已完成「區分系統性偏差與隨機變動」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「只要重複次數足夠多，未歸零造成的固定偏差就會自動消失。」，與可驗證命題「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把秒表重複計時的單一表面線索擴大成結論，並採用「只看數字大小而忽略單位」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。」，並保留本題條件；評估報告時先確認「天平未歸零使所有讀值同方向偏移，屬系統性偏差；反應時差引起的忽大忽小屬隨機變動。」，再標明限制「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」和「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "證據評估"
+  ],
+  "representationType": "stimulus-data",
+  "misconceptionTargets": [
+    "只看數字大小而忽略單位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「區分系統性偏差與隨機變動」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

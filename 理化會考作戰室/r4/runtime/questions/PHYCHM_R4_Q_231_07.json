@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_231_07",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S231"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EB-4-5",
+    "AUTH-NATURAL-LC-EC-4-1",
+    "AUTH-NATURAL-LC-EC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要用液壓機的觀察支持「由作用力與面積計算固體壓力」，哪一份紀錄最有判讀價值？",
+  "options": [
+    "採用這個看似直覺的規則：固體壓力是力乘面積，所以面積越大壓力必然越大。",
+    "在液壓機中同時記錄條件、觀察量與單位，再以這個專屬判準比對：固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。",
+    "在液壓機中直接把「液體只向下產生壓力」當成「由作用力與面積計算固體壓力」的足夠證據。",
+    "忽略「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」與「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」，只根據題幹出現的最大數字宣稱已完成「由作用力與面積計算固體壓力」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「固體壓力是力乘面積，所以面積越大壓力必然越大。」，與可驗證命題「固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。」，並保留本題條件；在液壓機中同時記錄條件、觀察量與單位，再以這個專屬判準比對：固體壓力 p＝F/A；100 N 均勻作用在 0.020 m² 面積上，壓力為 5000 Pa。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把液壓機的單一表面線索擴大成結論，並採用「液體只向下產生壓力」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」和「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "證據判讀",
+    "推論"
+  ],
+  "representationType": "evidence",
+  "misconceptionTargets": [
+    "固體壓力是力乘面積，所以面積越大壓力必然越大。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EB-4-5",
+      "AUTH-NATURAL-LC-EC-4-1",
+      "AUTH-NATURAL-LC-EC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由作用力與面積計算固體壓力」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

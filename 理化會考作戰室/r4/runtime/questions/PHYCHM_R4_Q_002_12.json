@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_002_12",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某報告用單一觀察就宣稱已證明「依量測尺度選擇合適儀器」。哪一項評估最適當？",
+  "options": [
+    "採用這個看似直覺的規則：儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺。",
+    "評估報告時先確認「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。」，再標明限制「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與所需額外資料。",
+    "在秒表重複計時中直接把「未檢查零點就直接讀值」當成「依量測尺度選擇合適儀器」的足夠證據。",
+    "忽略「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」，只根據題幹出現的最大數字宣稱已完成「依量測尺度選擇合適儀器」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「儀器量程越大一定越準，所以測鉛筆時應優先用 50 m 捲尺。」，與可驗證命題「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。」，並保留本題條件；評估報告時先確認「量約 12 cm 的鉛筆適合用毫米刻度直尺；儀器量程要大於待測量，最小刻度要能分辨所需差異。」，再標明限制「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把秒表重複計時的單一表面線索擴大成結論，並採用「只看數字大小而忽略單位」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「依待測量選用 m、cm、mm、kg、g、s、mL 或 °C，禁止把不同種類的單位直接換算。」和「估讀只能到最小刻度的下一位；數字位數增加不等於量測必然更準確。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "限制評估",
+    "高層推論"
+  ],
+  "representationType": "evaluation",
+  "misconceptionTargets": [
+    "只看數字大小而忽略單位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「依量測尺度選擇合適儀器」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "PHYCHM_R4_Q_274_10",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S274"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-1",
+    "AUTH-NATURAL-LC-BA-4-4",
+    "AUTH-NATURAL-LC-KC-4-8",
+    "AUTH-NATURAL-LC-MC-4-5",
+    "AUTH-NATURAL-LC-MC-4-6",
+    "AUTH-NATURAL-LC-MC-4-7",
+    "AUTH-NATURAL-LC-NA-4-2",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "針對電費估算所得資料，下列哪一個關於「由功率與時間計算用電量」的結論沒有超出證據？",
+  "options": [
+    "採用這個看似直覺的規則：1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間。",
+    "在電費估算中直接把「只看功率不看使用時間」當成「由功率與時間計算用電量」的足夠證據。",
+    "忽略「功率大不代表一定比較耗電，還要看時間；接地線主要提供故障電流安全路徑，不取代斷路器。」與「功率 W 或 kW、時間 h、用電量 kWh、電壓 V、電流 A。」，只根據題幹出現的最大數字宣稱已完成「由功率與時間計算用電量」。",
+    "現有證據能支持的結論是「1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。」，不再擴張為題組未測的因果。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「1000 W 電器使用 2 h 消耗 500 kWh，因為電能是功率除以時間。」，與可驗證命題「1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把電費估算的單一表面線索擴大成結論，並採用「只看功率不看使用時間」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「功率 W 或 kW、時間 h、用電量 kWh、電壓 V、電流 A。」和「功率大不代表一定比較耗電，還要看時間；接地線主要提供故障電流安全路徑，不取代斷路器。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。」，並保留本題條件；現有證據能支持的結論是「1000 W 電器使用 2 h 消耗 2 kWh；電能等於功率乘以使用時間。」，不再擴張為題組未測的因果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "主張評估",
+    "證據評估"
+  ],
+  "representationType": "claim",
+  "misconceptionTargets": [
+    "只看功率不看使用時間"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-1",
+      "AUTH-NATURAL-LC-BA-4-4",
+      "AUTH-NATURAL-LC-KC-4-8",
+      "AUTH-NATURAL-LC-MC-4-5",
+      "AUTH-NATURAL-LC-MC-4-6",
+      "AUTH-NATURAL-LC-MC-4-7",
+      "AUTH-NATURAL-LC-NA-4-2",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「由功率與時間計算用電量」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#173f5f">
+  <title>CAP R4 理化會考作戰室</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">跳到學習內容</a>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">CAP R4 · 第四學習階段</p>
+      <h1>理化會考作戰室</h1>
+      <p>300 項原子技能、3,600 題技能練習與 300 組資料題，全數為已審核靜態內容。</p>
+    </div>
+    <p id="appStatus" class="status" role="status" aria-live="polite">正在載入靜態題庫…</p>
+  </header>
+
+  <main class="app-layout">
+    <aside class="control-panel" aria-labelledby="navigationHeading">
+      <h2 id="navigationHeading">學習導覽</h2>
+      <label for="unitSelect">單元</label>
+      <select id="unitSelect" disabled></select>
+      <label for="skillSelect">原子技能</label>
+      <select id="skillSelect" disabled></select>
+
+      <fieldset class="mode-picker">
+        <legend>學習模式</legend>
+        <label><input type="radio" name="mode" value="lecture" checked> 零基礎講義</label>
+        <label><input type="radio" name="mode" value="practice"> 12 題技能練習</label>
+        <label><input type="radio" name="mode" value="stimulus"> 資料題組</label>
+      </fieldset>
+
+      <label for="seedInput">題目順序種子</label>
+      <input id="seedInput" type="number" inputmode="numeric" min="1" max="2147483647" value="20260716">
+      <p class="hint">種子只排序已審核題目 ID，不會改寫題幹、選項或答案。</p>
+
+      <section aria-labelledby="progressHeading">
+        <h3 id="progressHeading">本機進度</h3>
+        <p id="progressSummary">尚未完成技能</p>
+        <div class="button-row">
+          <button id="exportProgress" type="button">匯出進度</button>
+          <label class="file-button" for="importProgress">匯入進度</label>
+          <input id="importProgress" class="visually-hidden" type="file" accept="application/json">
+        </div>
+      </section>
+
+      <section aria-labelledby="offlineHeading">
+        <h3 id="offlineHeading">離線使用</h3>
+        <button id="cacheAll" type="button" disabled>儲存完整離線題庫</button>
+        <p id="offlineStatus" class="hint" aria-live="polite">開啟後會先快取應用外殼；已讀取的內容可離線再開。</p>
+      </section>
+    </aside>
+
+    <section id="workspace" class="workspace" tabindex="-1" aria-labelledby="workspaceHeading">
+      <h2 id="workspaceHeading">正在載入</h2>
+      <p>題庫僅從版本化 JSON 載入；若第一次開啟較慢，請稍候完成內容驗證。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>範圍依臺灣第四學習階段課綱與 106–115 年官方會考資料校準；題文與科學圖為本專案原創。</p>
+  </footer>
+
+  <noscript>此作戰室需要 JavaScript 來讀取本地靜態 JSON 題庫，不會在瀏覽器即時造題。</noscript>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

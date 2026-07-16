@@ -1,0 +1,89 @@
+{
+  "id": "PHYCHM_R4_Q_137_08",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一組資料要用來處理「依實驗目的選擇量測與加熱器材」，下列哪一種推理順序合理？",
+  "options": [
+    "先以「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。」處理題給資料，再用「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」做邊界檢查。",
+    "採用這個看似直覺的規則：所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具。",
+    "在異常數據處理中直接把「只做一次就宣稱規律成立」當成「依實驗目的選擇量測與加熱器材」的足夠證據。",
+    "忽略「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」與「記錄表標題、變項名稱與單位不可缺漏；危害標示與個人防護依實際藥品與操作決定。」，只根據題幹出現的最大數字宣稱已完成「依實驗目的選擇量測與加熱器材」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。」，並保留本題條件；先以「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。」處理題給資料，再用「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」做邊界檢查。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「所有玻璃器材的測量精度與耐熱性都一樣，燒杯可代替任何量測工具。」，與可驗證命題「量取 25 mL 溶液適合用量筒而非燒杯；加熱需選可受熱器材並依藥品性質選熱源。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把異常數據處理的單一表面線索擴大成結論，並採用「試管口朝向自己或他人加熱」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「記錄表標題、變項名稱與單位不可缺漏；危害標示與個人防護依實際藥品與操作決定。」和「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "關係應用",
+    "多步驟推理"
+  ],
+  "representationType": "multi-step",
+  "misconceptionTargets": [
+    "試管口朝向自己或他人加熱"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「依實驗目的選擇量測與加熱器材」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

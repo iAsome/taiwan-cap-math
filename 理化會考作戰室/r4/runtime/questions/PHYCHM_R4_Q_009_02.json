@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_009_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AB-4-3",
+    "AUTH-NATURAL-LC-CA-4-2",
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同學整理「由質量與體積計算密度」時寫下四項關係，哪一項可在題目條件成立時使用？",
+  "options": [
+    "採用這個看似直覺的規則：密度是體積除以質量，所以答案為 20÷54 g/cm³。",
+    "在不規則石塊排水中直接把「排水後水面讀值就是物體體積」當成「由質量與體積計算密度」的足夠證據。",
+    "就「由質量與體積計算密度」而言，可使用的具體判準是：質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。",
+    "忽略「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」與「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」，只根據題幹出現的最大數字宣稱已完成「由質量與體積計算密度」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「密度是體積除以質量，所以答案為 20÷54 g/cm³。」，與可驗證命題「質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把不規則石塊排水的單一表面線索擴大成結論，並採用「同材質切小後密度變小」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。」，並保留本題條件；就「由質量與體積計算密度」而言，可使用的具體判準是：質量 54 g、體積 20 cm³ 的物體密度為 2.7 g/cm³，計算式是 ρ＝m/V。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」和「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "關係判讀",
+    "概念理解"
+  ],
+  "representationType": "relation",
+  "misconceptionTargets": [
+    "同材質切小後密度變小"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AB-4-3",
+      "AUTH-NATURAL-LC-CA-4-2",
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「由質量與體積計算密度」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

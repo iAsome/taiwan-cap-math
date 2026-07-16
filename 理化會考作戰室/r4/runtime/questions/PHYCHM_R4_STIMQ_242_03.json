@@ -1,0 +1,80 @@
+{
+  "id": "PHYCHM_R4_STIMQ_242_03",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S242"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EB-4-5",
+    "AUTH-NATURAL-LC-EB-4-6",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_242",
+  "stem": "同學根據題組資料提出結論。哪一項最符合「由平均密度判斷浮沉狀態」的條件與限制？",
+  "options": [
+    "採用這個看似直覺的規則：浮沉只由物體總質量大小決定，體積與平均密度完全不重要。",
+    "評估報告時先確認「物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。」，再標明限制「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」與所需額外資料。",
+    "在船的平均密度中直接把「漂浮物沒有受到重力」當成「由平均密度判斷浮沉狀態」的足夠證據。",
+    "忽略「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」與「浮力與重量用 N，密度 kg/m³ 或 g/cm³，體積 m³ 或 cm³，計算時必須配套。」，只根據題幹出現的最大數字宣稱已完成「由平均密度判斷浮沉狀態」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「浮沉只由物體總質量大小決定，體積與平均密度完全不重要。」，與可驗證命題「物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。」，並保留本題條件；評估報告時先確認「物體平均密度小於液體時可上浮並漂浮，等於時可懸浮，大於時在無其他力下下沉。」，再標明限制「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」與所需額外資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把船的平均密度的單一表面線索擴大成結論，並採用「以材質密度不看平均密度判斷船沉浮」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「浮力與重量用 N，密度 kg/m³ 或 g/cm³，體積 m³ 或 cm³，計算時必須配套。」和「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "證據評估"
+  ],
+  "representationType": "stimulus-figure-and-data",
+  "misconceptionTargets": [
+    "以材質密度不看平均密度判斷船沉浮"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EB-4-5",
+      "AUTH-NATURAL-LC-EB-4-6",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由平均密度判斷浮沉狀態」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "PHYCHM_R4_ASSET_012"
+  ]
+}

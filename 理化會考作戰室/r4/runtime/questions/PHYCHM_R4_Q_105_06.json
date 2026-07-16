@@ -1,0 +1,87 @@
+{
+  "id": "PHYCHM_R4_Q_105_06",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-JB-4-2",
+    "AUTH-NATURAL-LC-JB-4-3",
+    "AUTH-NATURAL-LC-JD-4-1",
+    "AUTH-NATURAL-LC-JD-4-2",
+    "AUTH-NATURAL-LC-JD-4-3",
+    "AUTH-NATURAL-LC-JD-4-4",
+    "AUTH-NATURAL-LC-JD-4-5",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "有人在判斷「由水溶液中離子概念區分酸與鹼」時犯了常見錯誤，哪一項修正最完整？",
+  "options": [
+    "採用這個看似直覺的規則：酸和鹼只由溶液顏色定義，和水溶液中的離子無關。",
+    "在pH 計操作中直接把「把 pH 8 說成比 pH 12 更鹼」當成「由水溶液中離子概念區分酸與鹼」的足夠證據。",
+    "不能採用「酸和鹼只由溶液顏色定義，和水溶液中的離子無關。」；修正後應為：在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。",
+    "忽略「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」與「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」，只根據題幹出現的最大數字宣稱已完成「由水溶液中離子概念區分酸與鹼」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「酸和鹼只由溶液顏色定義，和水溶液中的離子無關。」，與可驗證命題「在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把pH 計操作的單一表面線索擴大成結論，並採用「把高濃度等同強酸」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。」，並保留本題條件；不能採用「酸和鹼只由溶液顏色定義，和水溶液中的離子無關。」；修正後應為：在課程模型中，酸性水溶液的酸性與氫離子有關，鹼性水溶液的鹼性與氫氧根離子有關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「pH 沒有單位；金屬或大理石反應的體積、時間等觀察量須另標單位。」和「pH 值不能直接告訴未知溶液的化學身分；濃度高低與酸鹼強弱是不同概念。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "錯誤分析",
+    "分析"
+  ],
+  "representationType": "error-analysis",
+  "misconceptionTargets": [
+    "把高濃度等同強酸"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-JB-4-2",
+      "AUTH-NATURAL-LC-JB-4-3",
+      "AUTH-NATURAL-LC-JD-4-1",
+      "AUTH-NATURAL-LC-JD-4-2",
+      "AUTH-NATURAL-LC-JD-4-3",
+      "AUTH-NATURAL-LC-JD-4-4",
+      "AUTH-NATURAL-LC-JD-4-5",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「由水溶液中離子概念區分酸與鹼」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

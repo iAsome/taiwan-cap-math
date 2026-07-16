@@ -1,0 +1,84 @@
+{
+  "id": "PHYCHM_R4_STIMQ_268_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S268"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-4",
+    "AUTH-NATURAL-LC-JC-4-5",
+    "AUTH-NATURAL-LC-KC-4-7",
+    "AUTH-NATURAL-LC-KC-4-8",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_268",
+  "stem": "若要提高這份串聯電路資料對「正確連接安培計與伏特計」的可信度，下一步最適合怎麼做？",
+  "options": [
+    "採用這個看似直覺的規則：安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過。",
+    "在串聯電路中直接把「並聯支路電壓按電阻分配」當成「正確連接安培計與伏特計」的足夠證據。",
+    "新的串聯電路情境仍使用這項不改變的物理或化學依據：安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。",
+    "忽略「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」與「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」，只根據題幹出現的最大數字宣稱已完成「正確連接安培計與伏特計」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過。」，與可驗證命題「安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把串聯電路的單一表面線索擴大成結論，並採用「串聯中電流逐顆用完」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。」，並保留本題條件；新的串聯電路情境仍使用這項不改變的物理或化學依據：安培計串聯在待測支路中，伏特計並聯在待測元件兩端，並選適當量程與極性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」和「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "實驗改進"
+  ],
+  "representationType": "stimulus-figure-and-data",
+  "misconceptionTargets": [
+    "安培計應直接並聯電源兩端，伏特計則應串聯以便所有電流通過。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-4",
+      "AUTH-NATURAL-LC-JC-4-5",
+      "AUTH-NATURAL-LC-KC-4-7",
+      "AUTH-NATURAL-LC-KC-4-8",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「正確連接安培計與伏特計」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "PHYCHM_R4_ASSET_014"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "PHYCHM_R4_Q_143_08",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一組資料要用來處理「處理破損灑漏燙傷等實驗室事件」，下列哪一種推理順序合理？",
+  "options": [
+    "採用這個看似直覺的規則：小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷。",
+    "在異常數據處理中直接把「只做一次就宣稱規律成立」當成「處理破損灑漏燙傷等實驗室事件」的足夠證據。",
+    "先以「器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。」處理題給資料，再用「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」做邊界檢查。",
+    "忽略「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」與「記錄表標題、變項名稱與單位不可缺漏；危害標示與個人防護依實際藥品與操作決定。」，只根據題幹出現的最大數字宣稱已完成「處理破損灑漏燙傷等實驗室事件」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「小型灑漏或燙傷應先自行隱瞞，用手快速擦乾，以免實驗被中斷。」，與可驗證命題「器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把異常數據處理的單一表面線索擴大成結論，並採用「試管口朝向自己或他人加熱」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。」，並保留本題條件；先以「器材破損、藥品灑漏或燙傷應立即停止操作、警告周遭並通知教師，依規程處理，不徒手清理。」處理題給資料，再用「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」做邊界檢查。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「記錄表標題、變項名稱與單位不可缺漏；危害標示與個人防護依實際藥品與操作決定。」和「相關變化不自動證明因果；對照組也必須接受除自變項外相同的處理。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "關係應用",
+    "多步驟推理"
+  ],
+  "representationType": "multi-step",
+  "misconceptionTargets": [
+    "試管口朝向自己或他人加熱"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「處理破損灑漏燙傷等實驗室事件」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

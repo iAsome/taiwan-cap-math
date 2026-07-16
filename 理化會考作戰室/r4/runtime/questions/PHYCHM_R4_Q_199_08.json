@@ -1,0 +1,79 @@
+{
+  "id": "PHYCHM_R4_Q_199_08",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S199"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EB-4-8",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一組資料要用來處理「在速率常用單位間換算」，下列哪一種推理順序合理？",
+  "options": [
+    "採用這個看似直覺的規則：72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘。",
+    "在速率單位換算中直接把「把路程與位移視為同一量」當成「在速率常用單位間換算」的足夠證據。",
+    "先以「72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都要換算。」處理題給資料，再用「回到起點時位移可為零，但路程通常不為零；平均速率相同不保證運動過程相同。」做邊界檢查。",
+    "忽略「回到起點時位移可為零，但路程通常不為零；平均速率相同不保證運動過程相同。」與「位置與位移用 m 或 km，時間用 s 或 h，速率常用 m/s 或 km/h；1 m/s＝3.6 km/h。」，只根據題幹出現的最大數字宣稱已完成「在速率常用單位間換算」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「72 km/h＝72×1000×3600 m/s，分子分母的換算都應相乘。」，與可驗證命題「72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都要換算。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把速率單位換算的單一表面線索擴大成結論，並採用「把平均速率當成每一刻速率」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都要換算。」，並保留本題條件；先以「72 km/h＝20 m/s，因為 1 km＝1000 m、1 h＝3600 s；長度與時間都要換算。」處理題給資料，再用「回到起點時位移可為零，但路程通常不為零；平均速率相同不保證運動過程相同。」做邊界檢查。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「位置與位移用 m 或 km，時間用 s 或 h，速率常用 m/s 或 km/h；1 m/s＝3.6 km/h。」和「回到起點時位移可為零，但路程通常不為零；平均速率相同不保證運動過程相同。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "關係應用",
+    "多步驟推理"
+  ],
+  "representationType": "multi-step",
+  "misconceptionTargets": [
+    "把平均速率當成每一刻速率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EB-4-8",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「在速率常用單位間換算」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

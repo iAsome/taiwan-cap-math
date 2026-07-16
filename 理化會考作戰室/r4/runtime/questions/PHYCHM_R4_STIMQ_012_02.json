@@ -1,0 +1,82 @@
+{
+  "id": "PHYCHM_R4_STIMQ_012_02",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AB-4-3",
+    "AUTH-NATURAL-LC-CA-4-2",
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_012",
+  "stem": "若要提高這份同材質樣品比較資料對「由密度與質量求體積」的可信度，下一步最適合怎麼做？",
+  "options": [
+    "採用這個看似直覺的規則：體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大。",
+    "在同材質樣品比較中直接把「只改質量單位卻不改體積單位」當成「由密度與質量求體積」的足夠證據。",
+    "新的同材質樣品比較情境仍使用這項不改變的物理或化學依據：質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。",
+    "忽略「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」與「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」，只根據題幹出現的最大數字宣稱已完成「由密度與質量求體積」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大。」，與可驗證命題「質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把同材質樣品比較的單一表面線索擴大成結論，並採用「排水後水面讀值就是物體體積」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。」，並保留本題條件；新的同材質樣品比較情境仍使用這項不改變的物理或化學依據：質量 135 g、密度 2.7 g/cm³ 的樣品體積為 50 cm³，使用 V＝m/ρ。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」和「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "實驗改進"
+  ],
+  "representationType": "stimulus-data",
+  "misconceptionTargets": [
+    "體積是 135×2.7＝364.5 cm³，因為密度越大體積一定越大。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AB-4-3",
+      "AUTH-NATURAL-LC-CA-4-2",
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「由密度與質量求體積」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

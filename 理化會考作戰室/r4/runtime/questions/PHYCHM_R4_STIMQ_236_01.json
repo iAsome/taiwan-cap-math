@@ -1,0 +1,82 @@
+{
+  "id": "PHYCHM_R4_STIMQ_236_01",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S236"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EB-4-5",
+    "AUTH-NATURAL-LC-EC-4-1",
+    "AUTH-NATURAL-LC-EC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": "PHYCHM_R4_STIM_236",
+  "stem": "依據題組中的水壩深度紀錄，哪一項最能支持「由氣壓差解釋生活裝置」的判斷？",
+  "options": [
+    "採用這個看似直覺的規則：用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與。",
+    "現有證據能支持的結論是「吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。」，不再擴張為題組未測的因果。",
+    "在水壩深度中直接把「容器水量多底部壓力就必大」當成「由氣壓差解釋生活裝置」的足夠證據。",
+    "忽略「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」與「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」，只根據題幹出現的最大數字宣稱已完成「由氣壓差解釋生活裝置」。"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「用吸管時嘴巴會從上方把液體直接拉起，外界大氣壓不參與。」，與可驗證命題「吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。」，並保留本題條件；現有證據能支持的結論是「吸管、滴管等裝置是先降低內部壓力，外界較大大氣壓才將液體推向低壓處。」，不再擴張為題組未測的因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把水壩深度的單一表面線索擴大成結論，並採用「容器水量多底部壓力就必大」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」和「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "stimulus-figure-and-data",
+  "misconceptionTargets": [
+    "容器水量多底部壓力就必大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EB-4-5",
+      "AUTH-NATURAL-LC-EC-4-1",
+      "AUTH-NATURAL-LC-EC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項依「由氣壓差解釋生活裝置」的定義與關係式核對，只有選項 2 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 1。",
+      "status": "pass"
+    }
+  ],
+  "assets": [
+    "PHYCHM_R4_ASSET_011"
+  ]
+}

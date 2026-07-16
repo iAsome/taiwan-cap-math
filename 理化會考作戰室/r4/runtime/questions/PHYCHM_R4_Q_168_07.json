@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_168_07",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-KA-4-3",
+    "AUTH-NATURAL-LC-KA-4-4",
+    "AUTH-NATURAL-LC-KA-4-5",
+    "AUTH-NATURAL-LC-ME-4-7",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要用超聲波的觀察支持「說明聲音由物體振動產生」，哪一份紀錄最有判讀價值？",
+  "options": [
+    "採用這個看似直覺的規則：物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定。",
+    "在超聲波中直接把「回聲距離漏除以二」當成「說明聲音由物體振動產生」的足夠證據。",
+    "在超聲波中同時記錄條件、觀察量與單位，再以這個專屬判準比對：音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。",
+    "忽略「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」與「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」，只根據題幹出現的最大數字宣稱已完成「說明聲音由物體振動產生」。"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定。」，與可驗證命題「音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把超聲波的單一表面線索擴大成結論，並採用「回聲距離漏除以二」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。」，並保留本題條件；在超聲波中同時記錄條件、觀察量與單位，再以這個專屬判準比對：音叉、鼓面與聲帶發聲時都在振動；停止振動後，持續產生的聲波也會停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「頻率 Hz、時間 s、聲速 m/s；分貝 dB 是聲音強度級的表示，不能當作線性倍數直接相減解讀。」和「人耳聽不到不代表沒有聲波；噪音風險同時與聲音強度和暴露時間有關。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "證據判讀",
+    "推論"
+  ],
+  "representationType": "evidence",
+  "misconceptionTargets": [
+    "物體可在完全不振動的情況下持續發聲，聲音只由物體形狀決定。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-KA-4-3",
+      "AUTH-NATURAL-LC-KA-4-4",
+      "AUTH-NATURAL-LC-KA-4-5",
+      "AUTH-NATURAL-LC-ME-4-7",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐項依「說明聲音由物體振動產生」的定義與關係式核對，只有選項 3 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 2。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

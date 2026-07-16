@@ -1,0 +1,87 @@
+{
+  "id": "PHYCHM_R4_Q_251_09",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S251"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-1",
+    "AUTH-NATURAL-LC-BA-4-2",
+    "AUTH-NATURAL-LC-BA-4-5",
+    "AUTH-NATURAL-LC-BA-4-6",
+    "AUTH-NATURAL-LC-BA-4-7",
+    "AUTH-NATURAL-LC-INA-4-1",
+    "AUTH-NATURAL-LC-INA-4-2",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "班上要比較搬運重物中的「由功與時間計算功率」，哪一個實驗設計可形成公平比較？",
+  "options": [
+    "採用這個看似直覺的規則：功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W。",
+    "在搬運重物中直接把「摩擦使能量消失」當成「由功與時間計算功率」的足夠證據。",
+    "忽略「手持重物靜止時對物體的力學功為零；有摩擦時機械能可轉為內能，不能說能量消失。」與「功與能量 J、力 N、距離 m、功率 W、時間 s。」，只根據題幹出現的最大數字宣稱已完成「由功與時間計算功率」。",
+    "只改一個主要變因並保持其他條件一致，量測結果時依「完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。」判讀。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W。」，與可驗證命題「完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把搬運重物的單一表面線索擴大成結論，並採用「有施力就一定作功」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「功與能量 J、力 N、距離 m、功率 W、時間 s。」和「手持重物靜止時對物體的力學功為零；有摩擦時機械能可轉為內能，不能說能量消失。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。」，並保留本題條件；只改一個主要變因並保持其他條件一致，量測結果時依「完成 1200 J 的功耗時 30 s，平均功率 P＝W/t＝40 W；功率比較做功快慢。」判讀。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "變因控制",
+    "實驗設計"
+  ],
+  "representationType": "experiment",
+  "misconceptionTargets": [
+    "功率是功乘時間，所以 1200 J 在 30 s 內的功率為 36000 W。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-1",
+      "AUTH-NATURAL-LC-BA-4-2",
+      "AUTH-NATURAL-LC-BA-4-5",
+      "AUTH-NATURAL-LC-BA-4-6",
+      "AUTH-NATURAL-LC-BA-4-7",
+      "AUTH-NATURAL-LC-INA-4-1",
+      "AUTH-NATURAL-LC-INA-4-2",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「由功與時間計算功率」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

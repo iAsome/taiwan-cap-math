@@ -1,0 +1,79 @@
+{
+  "id": "PHYCHM_R4_Q_244_08",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S244"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EB-4-5",
+    "AUTH-NATURAL-LC-EB-4-6",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一組資料要用來處理「連結船潛水艇與密度調整應用」，下列哪一種推理順序合理？",
+  "options": [
+    "採用這個看似直覺的規則：鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水。",
+    "在船的平均密度中直接把「越深浮力一定越大」當成「連結船潛水艇與密度調整應用」的足夠證據。",
+    "忽略「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」與「浮力與重量用 N，密度 kg/m³ 或 g/cm³，體積 m³ 或 cm³，計算時必須配套。」，只根據題幹出現的最大數字宣稱已完成「連結船潛水艇與密度調整應用」。",
+    "先以「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。」處理題給資料，再用「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」做邊界檢查。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「鋼製船能漂浮是因船上每一小塊鋼的材料密度都小於水。」，與可驗證命題「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把船的平均密度的單一表面線索擴大成結論，並採用「以材質密度不看平均密度判斷船沉浮」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「浮力與重量用 N，密度 kg/m³ 或 g/cm³，體積 m³ 或 cm³，計算時必須配套。」和「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。」，並保留本題條件；先以「船以中空結構降低整體平均密度；潛水艇藉壓載水量調整平均密度與浮沉。」處理題給資料，再用「浮力不由物體本身重量直接決定；完全浸沒後若排開體積不再變，深度增加不使浮力必然增加。」做邊界檢查。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "關係應用",
+    "多步驟推理"
+  ],
+  "representationType": "multi-step",
+  "misconceptionTargets": [
+    "以材質密度不看平均密度判斷船沉浮"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EB-4-5",
+      "AUTH-NATURAL-LC-EB-4-6",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「連結船潛水艇與密度調整應用」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

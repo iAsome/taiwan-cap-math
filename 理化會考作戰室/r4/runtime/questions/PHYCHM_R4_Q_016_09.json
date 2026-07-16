@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_016_09",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AB-4-3",
+    "AUTH-NATURAL-LC-CA-4-2",
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "班上要比較金屬塊鑑別中的「分析量測誤差對密度結果的影響」，哪一個實驗設計可形成公平比較？",
+  "options": [
+    "只改一個主要變因並保持其他條件一致，量測結果時依「若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。」判讀。",
+    "採用這個看似直覺的規則：只要有量測誤差，質量和體積必會相互抵銷，密度不受影響。",
+    "在金屬塊鑑別中直接把「排水後水面讀值就是物體體積」當成「分析量測誤差對密度結果的影響」的足夠證據。",
+    "忽略「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」與「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」，只根據題幹出現的最大數字宣稱已完成「分析量測誤差對密度結果的影響」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。」，並保留本題條件；只改一個主要變因並保持其他條件一致，量測結果時依「若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。」判讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「只要有量測誤差，質量和體積必會相互抵銷，密度不受影響。」，與可驗證命題「若質量讀值偏大而體積正確，由 ρ＝m/V 可知密度結果偏大；要依誤差方向分析。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把金屬塊鑑別的單一表面線索擴大成結論，並採用「較重的物體密度一定較大」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」和「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "變因控制",
+    "實驗設計"
+  ],
+  "representationType": "experiment",
+  "misconceptionTargets": [
+    "只要有量測誤差，質量和體積必會相互抵銷，密度不受影響。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AB-4-3",
+      "AUTH-NATURAL-LC-CA-4-2",
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「分析量測誤差對密度結果的影響」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "PHYCHM_R4_Q_234_06",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S234"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EB-4-5",
+    "AUTH-NATURAL-LC-EC-4-1",
+    "AUTH-NATURAL-LC-EC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "有人在判斷「用帕斯卡原理解釋液壓裝置」時犯了常見錯誤，哪一項修正最完整？",
+  "options": [
+    "採用這個看似直覺的規則：液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量。",
+    "在水壩深度中直接把「吸管把液體主動吸上來」當成「用帕斯卡原理解釋液壓裝置」的足夠證據。",
+    "忽略「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」與「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」，只根據題幹出現的最大數字宣稱已完成「用帕斯卡原理解釋液壓裝置」。",
+    "不能採用「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量。」；修正後應為：帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量。」，與可驗證命題「帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。」相衝突。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這項說法把水壩深度的單一表面線索擴大成結論，並採用「容器水量多底部壓力就必大」的迷思。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「壓力 Pa、力 N、面積 m²；若用 cm² 必須先一致換算。」和「受力較大不保證壓力較大，還要比較面積；液體壓力不由容器總水量單獨決定。」，題給證據無法支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。」，並保留本題條件；不能採用「液壓機能將小力變大而完全不增加作用距離，因此可無限創造能量。」；修正後應為：帕斯卡原理說明密閉流體上的壓力變化可傳至各處；液壓機可以大面積活塞得到較大力。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "錯誤分析",
+    "分析"
+  ],
+  "representationType": "error-analysis",
+  "misconceptionTargets": [
+    "容器水量多底部壓力就必大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EB-4-5",
+      "AUTH-NATURAL-LC-EC-4-1",
+      "AUTH-NATURAL-LC-EC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項依「用帕斯卡原理解釋液壓裝置」的定義與關係式核對，只有選項 4 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 3。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

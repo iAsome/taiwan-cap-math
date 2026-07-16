@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_010_11",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AB-4-3",
+    "AUTH-NATURAL-LC-CA-4-2",
+    "AUTH-NATURAL-LC-EA-4-1",
+    "AUTH-NATURAL-LC-EA-4-2",
+    "AUTH-NATURAL-LC-EA-4-3",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "把「在密度常用單位間換算」應用到新的同材質樣品比較問題時，哪一個做法仍成立？",
+  "options": [
+    "新的同材質樣品比較情境仍使用這項不改變的物理或化學依據：1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。",
+    "採用這個看似直覺的規則：1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變。",
+    "在同材質樣品比較中直接把「只改質量單位卻不改體積單位」當成「在密度常用單位間換算」的足夠證據。",
+    "忽略「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」與「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」，只根據題幹出現的最大數字宣稱已完成「在密度常用單位間換算」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。」，並保留本題條件；新的同材質樣品比較情境仍使用這項不改變的物理或化學依據：1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變。」，與可驗證命題「1.20 g/cm³＝1200 kg/m³；質量和體積的換算倍率需一起納入。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把同材質樣品比較的單一表面線索擴大成結論，並採用「排水後水面讀值就是物體體積」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「固體常用 g/cm³，液體常用 g/mL；換算時 1 cm³＝1 mL。」和「用密度鑑別物質時必須考慮純度、溫度與量測不確定性，密度相近不能單獨證明物質相同。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "情境遷移",
+    "應用"
+  ],
+  "representationType": "transfer",
+  "misconceptionTargets": [
+    "1.20 g/cm³＝1.20 kg/m³，因為單位名稱雖改變，數值不必變。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AB-4-3",
+      "AUTH-NATURAL-LC-CA-4-2",
+      "AUTH-NATURAL-LC-EA-4-1",
+      "AUTH-NATURAL-LC-EA-4-2",
+      "AUTH-NATURAL-LC-EA-4-3",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「在密度常用單位間換算」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

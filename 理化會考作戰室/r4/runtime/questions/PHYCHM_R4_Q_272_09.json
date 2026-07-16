@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_272_09",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S272"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BA-4-4",
+    "AUTH-NATURAL-LC-JC-4-5",
+    "AUTH-NATURAL-LC-KC-4-7",
+    "AUTH-NATURAL-LC-KC-4-8",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "班上要比較簡單通路中的「由電路圖判斷短路斷路與元件狀態」，哪一個實驗設計可形成公平比較？",
+  "options": [
+    "只改一個主要變因並保持其他條件一致，量測結果時依「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。」判讀。",
+    "採用這個看似直覺的規則：短路和斷路都只會使電流完全為零，不可能出現過大電流。",
+    "在簡單通路中直接把「串聯中電流逐顆用完」當成「由電路圖判斷短路斷路與元件狀態」的足夠證據。",
+    "忽略「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」與「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」，只根據題幹出現的最大數字宣稱已完成「由電路圖判斷短路斷路與元件狀態」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。」，並保留本題條件；只改一個主要變因並保持其他條件一致，量測結果時依「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。」判讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「短路和斷路都只會使電流完全為零，不可能出現過大電流。」，與可驗證命題「斷路使回路不連續而無電流；短路是低電阻路徑繞過用電器，可產生過大電流與發熱風險。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把簡單通路的單一表面線索擴大成結論，並採用「安培計直接跨接電源」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「電流 A、電壓 V、電阻 Ω；電路圖使用標準符號並標節點。」和「電阻不等於單次量得的電壓或電流；量表接法錯誤可能造成短路或讀不到正確值。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "變因控制",
+    "實驗設計"
+  ],
+  "representationType": "experiment",
+  "misconceptionTargets": [
+    "短路和斷路都只會使電流完全為零，不可能出現過大電流。"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BA-4-4",
+      "AUTH-NATURAL-LC-JC-4-5",
+      "AUTH-NATURAL-LC-KC-4-7",
+      "AUTH-NATURAL-LC-KC-4-8",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「由電路圖判斷短路斷路與元件狀態」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

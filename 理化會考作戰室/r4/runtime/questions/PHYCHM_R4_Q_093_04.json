@@ -1,0 +1,83 @@
+{
+  "id": "PHYCHM_R4_Q_093_04",
+  "subject": "physics_chemistry",
+  "skillIds": [
+    "PHYCHM_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-AA-4-2",
+    "AUTH-NATURAL-LC-JA-4-1",
+    "AUTH-NATURAL-LC-JA-4-4",
+    "AUTH-NATURAL-LC-JB-4-4",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "以濃度與反應量處理「由已知反應資料判斷未反應物質」時，哪一個步驟安排最合理？",
+  "options": [
+    "先確認資料足以支持哪一層結論，再依「由已知反應資料判斷未反應物質」逐項排除超出證據的說法。本題的正確執行依據是：若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消耗 6 g 並剩 4 g。",
+    "採用這個看似直覺的規則：反應物初始質量較少的一方永遠是過量物，因此 3 g A 會剩下。",
+    "在濃度與反應量中直接把「混用溶液質量與溶質質量」當成「由已知反應資料判斷未反應物質」的足夠證據。",
+    "忽略「反應物不一定完全用完；若一種反應物過量，生成物量由先耗盡者限制。」與「質量、濃度與粒子比例必須分開記錄；重量百分濃度先換成溶質質量再連到反應。」，只根據題幹出現的最大數字宣稱已完成「由已知反應資料判斷未反應物質」。"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "此選項符合已審核的技能命題「若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消耗 6 g 並剩 4 g。」，並保留本題條件；先確認資料足以支持哪一層結論，再依「由已知反應資料判斷未反應物質」逐項排除超出證據的說法。本題的正確執行依據是：若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消耗 6 g 並剩 4 g。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這是本技能專屬陷阡：「反應物初始質量較少的一方永遠是過量物，因此 3 g A 會剩下。」，與可驗證命題「若 A 與 B 的完全消耗比是 1：2，提供 3 g A、10 g B 時 A 先用完，B 消耗 6 g 並剩 4 g。」相衝突。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這項說法把濃度與反應量的單一表面線索擴大成結論，並採用「混用溶液質量與溶質質量」的迷思。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這項結論同時忽略「質量、濃度與粒子比例必須分開記錄；重量百分濃度先換成溶質質量再連到反應。」和「反應物不一定完全用完；若一種反應物過量，生成物量由先耗盡者限制。」，題給證據無法支持。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "程序選擇",
+    "應用"
+  ],
+  "representationType": "procedure",
+  "misconceptionTargets": [
+    "混用溶液質量與溶質質量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 physics and chemistry content author",
+    "copyrightStatus": "Original wording and records; official curriculum and CAP materials used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-AA-4-2",
+      "AUTH-NATURAL-LC-JA-4-1",
+      "AUTH-NATURAL-LC-JA-4-4",
+      "AUTH-NATURAL-LC-JB-4-4",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "physics-chemistry-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項依「由已知反應資料判斷未反應物質」的定義與關係式核對，只有選項 1 同時符合條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "physics-chemistry-alternative-answer-and-scope-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向檢查其餘三項後，均可定位到單位遺漏、證據過度延伸或既有迷思；答案索引維持 0。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
