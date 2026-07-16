@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S009_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一位學生說「越過赤道後，經度會由東經變西經」。如何評價？",
+  "options": [
+    "正確，所有座標都同時改變",
+    "錯誤，越過赤道後緯度也不會變",
+    "正確，赤道控制東西經",
+    "錯誤，越過赤道只會改變南北緯；經度是否改變要看東西移動"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沿同一經線過赤道時經度不必改變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "跨越赤道必從一側緯度到另一側，緯度符號會改變。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "赤道是緯度基準，不控制東西經。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "南北越過赤道使 N、S 改變；若經線方向不變，經度可保持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "反例推理"
+  ],
+  "representationType": "movement",
+  "misconceptionTargets": [
+    "混淆緯度與經度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把移動拆成南北與東西分量，跨赤道影響緯度而非必然影響經度。 正確選項「錯誤，越過赤道只會改變南北緯；經度是否改變要看東西移動」可由題幹推出，因為南北越過赤道使 N、S 改變；若經線方向不變，經度可保持。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "沿 120°E 經線從北向南穿越赤道就是反例，證明答案索引一。 逐項排除其他選項：「正確，所有座標都同時改變」沿同一經線過赤道時經度不必改變。；「錯誤，越過赤道後緯度也不會變」跨越赤道必從一側緯度到另一側，緯度符號會改變。；「正確，赤道控制東西經」赤道是緯度基準，不控制東西經。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S012_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "手機座標已定位某點，但要判斷輪椅是否能到達，還需疊合什麼資料？",
+  "options": [
+    "只有經度即可",
+    "只看城市人口",
+    "只看當日日期",
+    "坡度、道路與無障礙設施"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "經度不能描述坡度與路線。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人口不直接表示個別路段可及性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "日期可能影響施工，但單獨不足以判定通行。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "座標確定位置，通行性還需地形與路網等資料。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "圖層整合",
+    "無障礙"
+  ],
+  "representationType": "navigation",
+  "misconceptionTargets": [
+    "座標等於可達性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "將絕對位置與任務需求分開，無障礙到達要補坡度及設施圖層。 正確選項「坡度、道路與無障礙設施」可由題幹推出，因為座標確定位置，通行性還需地形與路網等資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案索引零提供直接相關資料，其餘皆無法完成可及性判斷。 逐項排除其他選項：「只有經度即可」經度不能描述坡度與路線。；「只看城市人口」人口不直接表示個別路段可及性。；「只看當日日期」日期可能影響施工，但單獨不足以判定通行。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

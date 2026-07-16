@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S187",
+  "subject": "geography",
+  "unitId": "GEO_R4_U28",
+  "skillId": "GEO_R4_S187",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-2",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S186"
+  ],
+  "objectives": [
+    "由緯度、氣壓帶、洋流與地形解釋非洲氣候分布",
+    "利用季節雨量和高度資料判斷氣候差異與限制"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S187_SEC01",
+      "title": "以赤道為中心的帶狀分布",
+      "content": "赤道橫越非洲中部，太陽輻射與熱帶輻合帶的季節移動，使氣候大致呈現由赤道濕潤、向南北兩側轉為莽原與乾燥區的帶狀變化。剛果盆地和幾內亞灣沿岸較濕潤，撒哈拉位於北回歸線附近。這種對稱只是大尺度趨勢，不能忽略海陸與地形。"
+    },
+    {
+      "id": "GEO_R4_L_S187_SEC02",
+      "title": "雨季隨氣壓帶移動",
+      "content": "熱帶輻合帶附近氣流上升，較易形成對流雨；它隨太陽直射位置南北移動，使熱帶莽原常有明顯雨季與乾季。接近赤道地區一年可能出現兩個降水高峰，離赤道較遠則常集中為一個雨季。實際時間仍受季風、地形與海溫影響。"
+    },
+    {
+      "id": "GEO_R4_L_S187_SEC03",
+      "title": "副熱帶高壓與洋流",
+      "content": "撒哈拉、納米比與喀拉哈里等乾燥區，與副熱帶下沉氣流、內陸位置或寒流影響有關。西北岸加那利寒流與西南岸本吉拉寒流使近海空氣較穩定，抑制旺盛對流；沿岸可能有霧卻少雨。寒流不是唯一原因，必須與緯度、風向和地形共同判讀。"
+    },
+    {
+      "id": "GEO_R4_L_S187_SEC04",
+      "title": "高原使熱帶出現涼爽差異",
+      "content": "非洲東部高原與山地海拔較高，氣溫隨高度上升而降低，因此即使位於低緯，部分高地仍較涼爽，農業與聚落分布也與鄰近平原不同。迎風坡受抬升可能較濕，背風坡較乾。南北端部分沿海則受冬季西風影響，具有地中海型冬雨特徵。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S187_EX01",
+      "prompt": "赤道附近某地一年有兩個雨量高峰，最可能如何形成？",
+      "steps": [
+        "熱帶輻合帶一年兩度移經附近",
+        "全年受副熱帶高壓下沉",
+        "位於極圈內"
+      ],
+      "answer": "熱帶輻合帶一年兩度移經附近",
+      "why": "太陽直射點南北移動時，赤道附近可能在北移與南返各迎來一次上升雨帶。"
+    },
+    {
+      "id": "GEO_R4_L_S187_EX02",
+      "prompt": "納米比沿岸常有霧但年雨量極低，應如何解釋？",
+      "steps": [
+        "寒流使近地空氣穩定，水氣不易形成深厚對流雨",
+        "有霧必定代表年雨量很高",
+        "因當地位於赤道低壓帶"
+      ],
+      "answer": "寒流使近地空氣穩定，水氣不易形成深厚對流雨",
+      "why": "霧是近地層凝結，和能否形成深厚降雨雲系不是同一件事。"
+    },
+    {
+      "id": "GEO_R4_L_S187_EX03",
+      "prompt": "東非高地比同緯度低地涼，哪項因素最直接？",
+      "steps": [
+        "海拔較高使氣溫下降",
+        "離赤道較遠",
+        "全年沒有日照"
+      ],
+      "answer": "海拔較高使氣溫下降",
+      "why": "同緯度比較時應控制太陽輻射差異，海拔是高地低溫的主要直接因素。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "非洲全境都是炎熱沙漠",
+      "whyWrong": "赤道雨林、莽原、高地與地中海型氣候都存在",
+      "correction": "用緯度剖面和雨量圖檢查多樣性"
+    },
+    {
+      "belief": "帶狀氣候在每個經度完全對稱",
+      "whyWrong": "洋流、海陸距離和地形會使帶狀分布變形",
+      "correction": "大尺度規律與地方例外要同時解釋"
+    },
+    {
+      "belief": "有霧的地方一定多雨",
+      "whyWrong": "霧可由近地冷卻形成，不必伴隨深厚上升雲雨",
+      "correction": "分辨凝結高度和降水機制"
+    },
+    {
+      "belief": "低緯地區海拔不影響氣溫",
+      "whyWrong": "氣溫通常隨高度上升而降低",
+      "correction": "同緯度比較高地與低地"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "非洲氣候為何大致南北帶狀？",
+      "answer": "緯線橫跨廣且氣壓風帶隨緯度排列",
+      "reason": "帶狀仍會被洋流地形改變"
+    },
+    {
+      "prompt": "莽原乾濕季如何形成？",
+      "answer": "熱帶輻合帶季節移入帶來雨季，移出後較乾",
+      "reason": "時間會因所在半球不同"
+    },
+    {
+      "prompt": "本吉拉寒流如何影響西南岸？",
+      "answer": "冷卻低層空氣並穩定大氣，使沿岸少雨",
+      "reason": "仍須配合副熱帶高壓判讀"
+    },
+    {
+      "prompt": "東非高地為何較涼？",
+      "answer": "海拔升高使氣溫下降",
+      "reason": "高度可改變低緯地區的熱量條件"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-2",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-2"
+    ]
+  }
+}

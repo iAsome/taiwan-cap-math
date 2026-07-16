@@ -1,0 +1,149 @@
+{
+  "id": "GEO_R4_L_S005",
+  "subject": "geography",
+  "unitId": "GEO_R4_U01",
+  "skillId": "GEO_R4_S005",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S004"
+  ],
+  "objectives": [
+    "能檢查資料年份、期間、空間範圍與分區是否對應研究問題",
+    "能辨識邊界、定義與更新頻率造成的不可比性"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S005_SEC01",
+      "title": "先讀資料說明",
+      "content": "使用資料前先讀年份、調查期間、空間範圍、統計單元、單位與定義。圖看起來相似不代表可直接比較；資料說明就是判斷適切性的入口。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    },
+    {
+      "id": "GEO_R4_L_S005_SEC02",
+      "title": "時間要對準現象",
+      "content": "研究某次豪雨應用該事件前後資料，不能用多年平均代替當次雨量。季節性現象也要比較相同季節，避免把季節循環誤認為長期變化。"
+    },
+    {
+      "id": "GEO_R4_L_S005_SEC03",
+      "title": "空間要同範圍同單元",
+      "content": "行政邊界調整、測站位置不同或分區層級不同，都會影響數值。比較前可重整為共同邊界，或清楚註明只能做有限度的趨勢觀察。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    },
+    {
+      "id": "GEO_R4_L_S005_SEC04",
+      "title": "定義與更新也要一致",
+      "content": "同名指標可能採不同分母或分類，例如『都市人口』的界定可能改變。若無法統一，不能硬算成同一序列；應保留原定義並限制結論。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S005_EX01",
+      "prompt": "用2010年道路圖分析2025年新捷運站可達性是否適合？",
+      "steps": [
+        "確認研究時點",
+        "檢查道路與捷運更新",
+        "尋找接近2025年的路網"
+      ],
+      "answer": "不適合直接使用。",
+      "why": "十五年間道路與站點可能改變，舊圖無法代表研究時點；除非目的就是比較變遷。"
+    },
+    {
+      "id": "GEO_R4_L_S005_EX02",
+      "prompt": "兩年人口資料的里界不同，如何比較？",
+      "steps": [
+        "取得兩期邊界",
+        "辨認分割或合併區",
+        "轉換成共同空間單元或限制比較"
+      ],
+      "answer": "先統一邊界後再比較。",
+      "why": "里界改變會讓居民被重新分組；即使人口不變，地圖色塊也可能改變。"
+    },
+    {
+      "id": "GEO_R4_L_S005_EX03",
+      "prompt": "以年雨量解釋某日下午積水是否足夠？",
+      "steps": [
+        "對準積水事件時間",
+        "取得短時降雨強度",
+        "搭配排水與地勢資料"
+      ],
+      "answer": "不足。",
+      "why": "積水常受短時強降雨影響，全年總量無法表示該時段雨勢，也不能單獨說明排水條件。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "資料來自官方就一定適合任何問題。",
+      "whyWrong": "官方資料也有特定年份、範圍與定義。",
+      "correction": "依研究問題檢查中介資料說明。"
+    },
+    {
+      "belief": "年份相同即可直接比較。",
+      "whyWrong": "同年資料仍可能使用不同邊界、單位或調查期間。",
+      "correction": "時間與空間條件都要核對。"
+    },
+    {
+      "belief": "多年平均能代表每一次事件。",
+      "whyWrong": "平均會平滑極端值與短時變化。",
+      "correction": "事件研究應使用相符時段資料。"
+    },
+    {
+      "belief": "行政區名稱相同，邊界就一定沒變。",
+      "whyWrong": "同名行政區也可能調整界線。",
+      "correction": "核對邊界版本與面積。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "研究2024年人口，使用2000年資料合適嗎？",
+      "answer": "不合適，除非研究變遷且另有2024年可比資料。",
+      "reason": "單一舊年份不能代表新時點。"
+    },
+    {
+      "prompt": "兩圖都標2020年便可直接比較嗎？",
+      "answer": "不一定。",
+      "reason": "還要核對範圍、分區、單位與定義。"
+    },
+    {
+      "prompt": "事件資料為何不能只用年平均？",
+      "answer": "年平均會掩蓋事件發生時的強度。",
+      "reason": "時間尺度與問題不相符。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

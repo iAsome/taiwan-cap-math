@@ -1,0 +1,137 @@
+{
+  "id": "GEO_R4_L_S143",
+  "subject": "geography",
+  "unitId": "GEO_R4_U21",
+  "skillId": "GEO_R4_S143",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-1",
+    "AUTH-SOCIAL-LC-GEO-AE-4-2",
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S142"
+  ],
+  "objectives": [
+    "能解釋出口、進口與全球生產網絡的關係。",
+    "能由供應鏈資料判斷單一節點中斷如何傳遞到其他地區。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S143_SEC01",
+      "title": "貿易不是只有成品",
+      "content": "國際貿易包含原料、零組件、設備、成品與服務的跨境交換。臺灣企業可能進口能源或零件，在臺加工後出口，也可能把設計、製造、組裝與銷售分布在多個國家。"
+    },
+    {
+      "id": "GEO_R4_L_S143_SEC02",
+      "title": "全球生產網絡",
+      "content": "一項產品從研發到售後服務可拆成許多環節，各地依人才、成本、市場、技術與交通條件分工。判讀網絡要追蹤投入從哪裡來、在哪裡加工、送往哪個市場，以及誰掌握關鍵技術。"
+    },
+    {
+      "id": "GEO_R4_L_S143_SEC03",
+      "title": "依賴與風險",
+      "content": "分工可利用各地優勢、擴大市場，但若關鍵零件只由少數地區供應，災害、港口中斷或政策改變會沿供應鏈影響其他節點。增加供應來源或適量庫存可提高韌性，卻也增加成本。"
+    },
+    {
+      "id": "GEO_R4_L_S143_SEC04",
+      "title": "避免貿易誤讀",
+      "content": "出口增加不等於全部收益都在國內，因產品可能包含進口零件；進口增加也不必然表示產業衰退，可能是生產擴張所需的設備或原料。必須結合商品種類與價值鏈位置判斷。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_EX_S143_01",
+      "prompt": "某產品在臺灣設計、甲國製造零件、乙國組裝，再銷往多國，呈現何種現象？",
+      "steps": [
+        "辨認生產活動跨越多國",
+        "確認各地負責不同環節",
+        "判定為全球生產網絡"
+      ],
+      "answer": "全球生產網絡中的跨國分工。",
+      "why": "產品並非在單一地點完成，而是依各地條件拆分設計、零件與組裝。這種安排顯示企業以跨境物流和資訊流連結多個生產節點。"
+    },
+    {
+      "id": "GEO_R4_EX_S143_02",
+      "prompt": "關鍵零件只由一地供應，該地港口停擺可能造成什麼結果？",
+      "steps": [
+        "找出供應來源高度集中",
+        "沿零件流向追蹤後續工廠",
+        "判斷組裝節點可能缺料"
+      ],
+      "answer": "其他地區的組裝可能因缺料而減產。",
+      "why": "後續工廠即使未受港口事件直接影響，也依賴該地零件。當替代來源不足，衝擊會沿供應鏈向下游傳遞，形成跨區域的連鎖效果。"
+    },
+    {
+      "id": "GEO_R4_EX_S143_03",
+      "prompt": "企業增加第二個零件供應地，主要提升哪項能力？",
+      "steps": [
+        "比較單一與多元供應",
+        "判斷中斷時是否有替代來源",
+        "連結到供應鏈韌性"
+      ],
+      "answer": "面對局部中斷的供應鏈韌性。",
+      "why": "第二供應地讓企業在原供應地受阻時仍可能取得零件，降低完全停工風險。不過重複認證與較小採購量也可能提高平時成本。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "出口商品一定全部使用本地原料。",
+      "whyWrong": "出口品可能含進口能源、設備或零組件。",
+      "correction": "追蹤商品各環節的來源與增加價值。"
+    },
+    {
+      "belief": "進口增加必然代表國內產業衰退。",
+      "whyWrong": "進口可能是擴大生產所需的原料與機器。",
+      "correction": "先看進口品種類及其用途。"
+    },
+    {
+      "belief": "災害只影響發生地的工廠。",
+      "whyWrong": "全球分工使缺料與延遲沿供應鏈傳到其他地區。",
+      "correction": "沿上游、下游與物流節點追蹤間接影響。"
+    },
+    {
+      "belief": "供應來源越多，任何情況下都不增加成本。",
+      "whyWrong": "多元供應需要額外認證、協調和較分散的訂單。",
+      "correction": "在韌性收益與平時成本間比較。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "國際貿易為何不能只看成品？",
+      "answer": "因原料、零件、設備與服務也會跨境流動。",
+      "reason": "價值鏈各環節可能分布在不同國家。"
+    },
+    {
+      "prompt": "單一來源供應的主要風險是什麼？",
+      "answer": "該節點中斷時缺乏替代來源。",
+      "reason": "下游會因關鍵投入不足而受影響。"
+    },
+    {
+      "prompt": "進口設備增加可能代表什麼？",
+      "answer": "可能代表企業正在更新或擴充產能。",
+      "reason": "須依商品用途判斷，不能直接推論衰退。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-1",
+      "AUTH-SOCIAL-LC-GEO-AE-4-2",
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  }
+}

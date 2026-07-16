@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "北方朝上，甲在乙東北方，丙又在甲正西方。沒有距離資料時，丙相對乙的方位能否唯一確定？",
+  "options": [
+    "不能唯一確定",
+    "一定與乙重合",
+    "一定在北方",
+    "一定在西北方"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩段距離未知，水平合位移不確定，無法唯一判方位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只有特定距離組合才可能重合，題目未提供。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "若甲到丙向西距離不同，丙可能在北、東北或西北。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只有向西距離超過甲乙東向分量時才是西北。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "不確定性判斷"
+  ],
+  "representationType": "spatial-reasoning",
+  "misconceptionTargets": [
+    "只看方向不看未知距離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "以向量想像：北向分量保留，但東西分量取決於第二段距離，答案不唯一。 正確選項「不能唯一確定」可由題幹推出，因為兩段距離未知，水平合位移不確定，無法唯一判方位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "選項一也不是必然，因丙可能仍位於乙的東北方；因此只有不能確定成立。 逐項排除其他選項：「一定與乙重合」只有特定距離組合才可能重合，題目未提供。；「一定在北方」若甲到丙向西距離不同，丙可能在北、東北或西北。；「一定在西北方」只有向西距離超過甲乙東向分量時才是西北。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

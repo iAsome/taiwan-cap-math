@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST036",
+  "stem": "若要分析最新河岸變動，表中河川層可直接視為現況嗎？",
+  "options": [
+    "可以，線資料永遠不過時",
+    "可以，坐標相同就代表日期相同",
+    "不宜，因河川不能用任何 GIS 表示",
+    "不宜，資料三年前且只有中心線，需較新河岸面或影像"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "河道可能變動。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "坐標系統一致只支援對齊，不保證時效。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "河川可用線或面依目的表示。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "日期與幾何都不符合最新河岸範圍任務。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "圖層適用性"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "坐標一致等於內容最新"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "來源目錄讓使用者在分析前發現資料不足，而不是產生看似精確的錯圖。 正確選項「不宜，資料三年前且只有中心線，需較新河岸面或影像」可由題幹推出，因為日期與幾何都不符合最新河岸範圍任務。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "應取得較新遙測影像、河岸面與調查日期，再做變遷比較。 逐項排除其他選項：「可以，線資料永遠不過時」河道可能變動。 這項內容無法支持題幹所要求的地理判斷。；「可以，坐標相同就代表日期相同」坐標系統一致只支援對齊，不保證時效。；「不宜，因河川不能用任何 GIS 表示」河川可用線或面依目的表示。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

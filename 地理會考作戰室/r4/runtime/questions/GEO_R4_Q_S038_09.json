@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S038_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "低解析影像放大十倍後，為何仍不能辨識原本小於像元的巷道？",
+  "options": [
+    "放大只放大像元，未新增原始空間資訊",
+    "巷道一定移動",
+    "顏色變多就會隱藏道路",
+    "比例尺失去所有意義"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "未取樣的細節不能由顯示放大恢復。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "現實巷道不因操作移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "顯示插值不等於真實細節。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "影像仍有尺度，只是解析度不足。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解析度"
+  ],
+  "representationType": "zoomed-image",
+  "misconceptionTargets": [
+    "畫面放大等於資料解析度提高"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若算法銳化或生成細節，也不能把推測當作實測位置。 正確選項「放大只放大像元，未新增原始空間資訊」可由題幹推出，因為未取樣的細節不能由顯示放大恢復。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "需要更高解析度來源或現地測繪回答巷道級問題。 逐項排除其他選項：「巷道一定移動」現實巷道不因操作移動。；「顏色變多就會隱藏道路」顯示插值不等於真實細節。；「比例尺失去所有意義」影像仍有尺度，只是解析度不足。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

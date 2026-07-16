@@ -1,0 +1,129 @@
+{
+  "id": "GEO_R4_L_S032",
+  "subject": "geography",
+  "unitId": "GEO_R4_U05",
+  "skillId": "GEO_R4_S032",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S031"
+  ],
+  "objectives": [
+    "依地圖任務選擇需要優先保留的性質",
+    "說明不同用途不能共用單一最佳投影"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S032_SEC01",
+      "title": "先問用途",
+      "content": "投影沒有脫離用途的絕對最佳答案。面積統計重視等積，局部航向與角度可能重視方向或保角，從某中心量距可重視特定距離。選圖的第一步不是看外觀，而是列出任務需要。"
+    },
+    {
+      "id": "GEO_R4_L_S032_SEC02",
+      "title": "性質與任務配對",
+      "content": "人口密度或森林占比需要公平的面積基礎；比較國家輪廓要關注形狀；航線與方位判讀要確認方向與路徑；救援半徑則需可靠的距離。題目若同時有多項需求，應標出優先順序與可接受誤差。"
+    },
+    {
+      "id": "GEO_R4_L_S032_SEC03",
+      "title": "範圍也會影響選擇",
+      "content": "同一投影在某中心或小範圍可能表現良好，離開該範圍後變形增加。因此選圖還要看涵蓋區域，不可把適合單一城市的圖法直接推廣到全球。"
+    },
+    {
+      "id": "GEO_R4_L_S032_SEC04",
+      "title": "評估選項",
+      "content": "把任務轉成『要比較什麼量』，再檢查候選地圖保留的性質與適用範圍。若選項宣稱一圖適合所有用途，通常忽略投影取捨；合理答案會明確連結用途與性質。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S032_EX01",
+      "prompt": "製作各洲森林占陸地面積比例圖，最需優先保留哪一性質？",
+      "steps": [
+        "找出分母是土地面積",
+        "確認要跨區比較比例",
+        "選擇面積比例公平的投影"
+      ],
+      "answer": "面積。",
+      "why": "森林占比需要用圖上區域面積代表實際面積；若高緯區被放大，視覺比例會誤導，因此應優先採等積表現。"
+    },
+    {
+      "id": "GEO_R4_L_S032_EX02",
+      "prompt": "以基地為中心畫出 100 公里救援範圍，最需檢查哪一性質？",
+      "steps": [
+        "辨認任務以基地為中心",
+        "找出固定半徑 100 公里",
+        "配對中心距離性質"
+      ],
+      "answer": "從基地量出的距離。",
+      "why": "救援範圍由固定距離決定，地圖必須讓基地到周圍各點的距離可比較；只保面積或形狀不能保證半徑正確。"
+    },
+    {
+      "id": "GEO_R4_L_S032_EX03",
+      "prompt": "一張等積圖可否直接作為精密海上航向圖？",
+      "steps": [
+        "確認航向需要方向與角度",
+        "核對等積圖只承諾面積",
+        "判定用途是否相符"
+      ],
+      "answer": "不能只憑等積性判定適合。",
+      "why": "等積圖保障面積比例，不必然保留航向所需的局部角度或方向。必須另查航海圖的投影與航行資訊。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "外觀最像地球儀的地圖一定最適合所有任務。",
+      "whyWrong": "相似外觀不能同時保證面積、距離與方向。",
+      "correction": "依任務所需量選擇投影。"
+    },
+    {
+      "belief": "等積地圖既然公平，就最適合導航。",
+      "whyWrong": "等積不等於方向或角度準確。",
+      "correction": "導航要另檢查航向、距離和適用範圍。"
+    },
+    {
+      "belief": "只要比例尺相同，不同投影就能互換。",
+      "whyWrong": "比例尺不能消除投影造成的性質差異。",
+      "correction": "同時檢查比例尺與投影目的。"
+    },
+    {
+      "belief": "投影選擇只與美觀有關。",
+      "whyWrong": "選擇會影響資料判讀與結論。",
+      "correction": "把投影當成分析方法的一部分。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "人口密度分布圖最需公平呈現哪一量？",
+      "answer": "面積。",
+      "reason": "人口密度以單位面積計算。"
+    },
+    {
+      "prompt": "固定救援半徑主要依賴哪一性質？",
+      "answer": "距離。",
+      "reason": "半徑是由中心量出的實際長度。"
+    },
+    {
+      "prompt": "是否存在適合一切用途的世界投影？",
+      "answer": "不存在。",
+      "reason": "不同任務需要不同性質取捨。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  }
+}

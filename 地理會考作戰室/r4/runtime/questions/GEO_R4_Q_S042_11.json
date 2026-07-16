@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S042_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "災後資料不足時，哪種決策表達最可靠？",
+  "options": [
+    "把所有未知填安全",
+    "刪除不確定候選",
+    "列已知、未知、暫時假設、備援方案與更新時間",
+    "給唯一答案且不說來源"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未知不能默認安全。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "候選可作備援。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "透明紀錄支援更新與風險控制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "黑箱唯一答案可能誤導。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "不確定決策"
+  ],
+  "representationType": "emergency-table",
+  "misconceptionTargets": [
+    "急迫時應隱藏未知"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間壓力不取消證據邊界，反而更需清楚標未知。 正確選項「列已知、未知、暫時假設、備援方案與更新時間」可由題幹推出，因為透明紀錄支援更新與風險控制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "隨新資料到達應重新計算並保留版本差異。 逐項排除其他選項：「把所有未知填安全」未知不能默認安全。 這項內容無法支持題幹所要求的地理判斷。；「刪除不確定候選」候選可作備援。 這項內容無法支持題幹所要求的地理判斷。；「給唯一答案且不說來源」黑箱唯一答案可能誤導。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

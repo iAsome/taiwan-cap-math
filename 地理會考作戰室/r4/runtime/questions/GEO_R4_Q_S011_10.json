@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S011_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同樣相差 10° 經度，位於赤道附近與接近北極的兩組地點，東西實距是否必然相同？",
+  "options": [
+    "必然相同",
+    "不必然；經線向兩極會聚",
+    "北極附近必然較大",
+    "只要經度差相同就與緯度無關"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "經度角差相同不代表沿緯線實距相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "高緯經線較接近，實際東西距離通常較小。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "北極附近不是較大，而是趨近零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此說忽略緯度造成的經線間距變化。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "尺度與球面"
+  ],
+  "representationType": "globe",
+  "misconceptionTargets": [
+    "角度差直接當固定距離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "用地球儀觀察經線於兩極交會，可知高緯十度經差實距較小。 正確選項「不必然；經線向兩極會聚」可由題幹推出，因為高緯經線較接近，實際東西距離通常較小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目問必然性，存在明確緯度反例，所以答案索引一。 逐項排除其他選項：「必然相同」經度角差相同不代表沿緯線實距相同。；「北極附近必然較大」北極附近不是較大，而是趨近零。；「只要經度差相同就與緯度無關」此說忽略緯度造成的經線間距變化。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

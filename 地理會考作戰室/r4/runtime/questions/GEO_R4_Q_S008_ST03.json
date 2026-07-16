@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST008",
+  "stem": "若從體育館先到行政大樓，再到校門，兩段移動的大致方向依序為何？",
+  "options": [
+    "西南、北",
+    "東北、南",
+    "東南、北",
+    "東南、南"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "第一段不是西南，第二段也不是北。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "體育館到原點的縱向是南，不是北。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第二段由原點到校門是南，不是北。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "體育館到原點向東且向南，再由原點正南到校門。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "路徑分段"
+  ],
+  "representationType": "map",
+  "misconceptionTargets": [
+    "把總位移當分段方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第一段位移為東二、南一，第二段為南三，所以依序東南、南。 正確選項「東南、南」可由題幹推出，因為體育館到原點向東且向南，再由原點正南到校門。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "題目問分段路徑而非體育館到校門的總方位，不能合併成一個答案。 逐項排除其他選項：「西南、北」第一段不是西南，第二段也不是北。；「東北、南」體育館到原點的縱向是南，不是北。；「東南、北」第二段由原點到校門是南，不是北。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "GEO_R4_ST052",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S052"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "content": {
+    "title": "兩區等壓線剖面",
+    "prompt": "兩區來自同一比例尺天氣圖，等壓距均為 4 hPa。",
+    "table": {
+      "columns": [
+        "區域",
+        "由西向東的氣壓序列",
+        "跨距",
+        "測站觀測"
+      ],
+      "rows": [
+        [
+          "甲",
+          "1012、1008、1004、1000 hPa",
+          "300公里",
+          "平均風8 m/s"
+        ],
+        [
+          "乙",
+          "1012、1008、1004、1000 hPa",
+          "900公里",
+          "平均風3 m/s"
+        ],
+        [
+          "丙中心",
+          "外1008、內1004、最內1000 hPa",
+          "閉合線",
+          "中心值未標"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "比較相同十二百帕氣壓差分布在三百與九百公里的甲乙區，以及向內降低的丙閉合低壓。",
+    "longDescription": "甲由西到東一千零一十二、一千零八、一千零四、一千百帕，跨三百公里、平均風每秒八公尺；乙相同序列跨九百公里、風每秒三公尺；丙閉合線由外一千零八、內一千零四、最內一千百帕，中心未標。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S052_ST01",
+    "GEO_R4_Q_S052_ST02",
+    "GEO_R4_Q_S052_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

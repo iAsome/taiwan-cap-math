@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S007_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S007"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "居民支持率：甲案70%，乙案55%；但甲案受訪者只來自受益區。最合理的處理是什麼？",
+  "options": [
+    "直接依70%選甲",
+    "補訪可能承擔成本的地區，再比較支持與影響",
+    "刪除乙案",
+    "認定未受訪者都支持甲"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "樣本偏向受益者，比例可能高估。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "納入受影響區可呈現利害分布。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除方案沒有解決取樣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不能替未受訪者臆測立場。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "取樣與公平評估"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "多數比例不看樣本位置"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "支持率的空間樣本不平衡，第二項是直接修正方式。 正確選項「補訪可能承擔成本的地區，再比較支持與影響」可由題幹推出，因為納入受影響區可呈現利害分布。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他選項沿用偏誤、移除比較或虛構意見。 逐項排除其他選項：「直接依70%選甲」樣本偏向受益者，比例可能高估。；「刪除乙案」刪除方案沒有解決取樣。；「認定未受訪者都支持甲」不能替未受訪者臆測立場。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

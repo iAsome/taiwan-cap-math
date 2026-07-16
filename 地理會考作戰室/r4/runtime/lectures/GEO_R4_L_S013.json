@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S013",
+  "subject": "geography",
+  "unitId": "GEO_R4_U02",
+  "skillId": "GEO_R4_S013",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S012"
+  ],
+  "objectives": [
+    "能區分以座標表達的絕對位置與以其他地點、路線或區域關係表達的相對位置。",
+    "能依定位、導航、區域解釋等任務選用或合併兩種位置資訊。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S013_SEC01",
+      "title": "絕對位置回答在哪個點",
+      "content": "絕對位置使用共同座標系，例如緯度與經度，讓不同使用者可在同一基準下找到地表交點。它適合精確定位、資料疊合與重複觀測；但座標本身不會告訴使用者附近有什麼、是否容易到達或與其他區域如何互動。"
+    },
+    {
+      "id": "GEO_R4_L_S013_SEC02",
+      "title": "相對位置回答與誰有何關係",
+      "content": "相對位置以另一地點或空間系統為參考，例如「市場在車站北方」、「港口靠近航道」、「聚落位於河流上游」。它可說明方向、鄰近、交通與區域關係，但敘述會隨參考點、路網或社會條件改變。"
+    },
+    {
+      "id": "GEO_R4_L_S013_SEC03",
+      "title": "兩者不是互相排斥",
+      "content": "救援可先用經緯度精確定位，再用「橋梁東側、沿產業道路可達」協助接近；區域研究可用座標疊圖，也用鄰近市場與交通節點解釋發展。好的位置描述常把精確點位與有意義的相對關係組合。"
+    },
+    {
+      "id": "GEO_R4_L_S013_SEC04",
+      "title": "時間與尺度限制",
+      "content": "地點座標通常不因新道路而改變，但「距市中心二十分鐘」會隨交通方式與壅塞改變；「位於城市外圍」也可能隨都市擴張改變。判讀相對位置必須確認參考點、時間與衡量方式，不能把它當永久不變的座標。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S013_EX01",
+      "prompt": "露營隊要把受傷位置傳給救援中心，哪種資訊最先需要？",
+      "steps": [
+        "使用手機取得成對經緯度",
+        "核對 N、S、E、W",
+        "再補附近步道與障礙"
+      ],
+      "answer": "先給絕對座標，再補相對路徑。",
+      "why": "座標可避免『大樹旁』等重複地標造成誤認，相對路徑則協助救援者從道路接近。"
+    },
+    {
+      "id": "GEO_R4_L_S013_EX02",
+      "prompt": "某店原本距車站步行五分鐘，施工封路後需十五分鐘。店的位置是否移動？",
+      "steps": [
+        "區分地表點位與可達時間",
+        "店的座標未變",
+        "路網改變相對可達性"
+      ],
+      "answer": "絕對位置未變，相對交通位置變差。",
+      "why": "步行時間是由路線條件形成的相對位置指標，不等於店面坐標。"
+    },
+    {
+      "id": "GEO_R4_L_S013_EX03",
+      "prompt": "研究港口發展只列座標，還缺哪類位置證據？",
+      "steps": [
+        "找主要航道與腹地市場",
+        "比較陸路連結與鄰近港口",
+        "說明這些關係的年份"
+      ],
+      "answer": "補充相對於航道、市場與交通網的關係。",
+      "why": "港口座標能定位，卻不能單獨解釋貨運優勢；發展機制需相對位置與網絡證據。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "相對位置比較不精確，所以沒有地理價值。",
+      "whyWrong": "鄰近市場、上游下游與交通連結常直接影響地理現象。",
+      "correction": "依問題選用，不以單一精確度排序。"
+    },
+    {
+      "belief": "座標相同就代表交通條件永遠相同。",
+      "whyWrong": "道路、運具、邊界與壅塞會改變可達性。",
+      "correction": "把絕對點位與相對可達性分開。"
+    },
+    {
+      "belief": "『東方』是一個不需要參考點的絕對位置。",
+      "whyWrong": "方位敘述必須相對某地或共同座標方向。",
+      "correction": "補上參考點與北方基準。"
+    },
+    {
+      "belief": "描述位置只能選絕對或相對其中一種。",
+      "whyWrong": "兩者回答不同問題，組合常更完整。",
+      "correction": "定位用座標、解釋與導航補相對關係。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "25°N、121°E 屬哪種位置？",
+      "answer": "絕對位置。",
+      "reason": "它使用共同經緯度座標。"
+    },
+    {
+      "prompt": "『學校在河流西岸』屬哪種位置？",
+      "answer": "相對位置。",
+      "reason": "它以河流為參考。"
+    },
+    {
+      "prompt": "新道路開通最可能先改變哪一種位置資訊？",
+      "answer": "相對可達性。",
+      "reason": "地點座標不變，交通時間可縮短。"
+    },
+    {
+      "prompt": "救援資訊為何常同時給座標與地標？",
+      "answer": "座標精確定位，地標與路徑協助抵達。",
+      "reason": "兩者功能互補。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  }
+}

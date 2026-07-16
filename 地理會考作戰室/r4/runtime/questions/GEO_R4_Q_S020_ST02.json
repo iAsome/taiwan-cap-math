@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST020",
+  "stem": "依細線法，步道圖面估計實距約多少？",
+  "options": [
+    "三十二公里",
+    "零點三二公里",
+    "三點二公里",
+    "八公里"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三十二公里多十倍。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "八乘四萬為三十二萬公分，不是三萬二千。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "三十二萬公分等於三點二公里。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "八是圖距公分，不能直接當公里。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "表格換算"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "圖距八公分直接寫八公里"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "每公分在一比四萬圖上代表零點四公里，八公分即三點二公里。 正確選項「三點二公里」可由題幹推出，因為三十二萬公分等於三點二公里。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結果以約值表達，因線寬、圖面概化與細線操作仍限制精度。 逐項排除其他選項：「三十二公里」三十二公里多十倍。 這項內容無法支持題幹所要求的地理判斷。；「零點三二公里」八乘四萬為三十二萬公分，不是三萬二千。；「八公里」八是圖距公分，不能直接當公里。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S025_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "供視障者判斷河網流向的資料表，哪項資訊最必要？",
+  "options": [
+    "只列河流藍色色碼",
+    "只說河很彎",
+    "只提供照片亮度",
+    "各節點海拔、支流匯合順序與河段連接"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "色碼不能提供方向且不具普遍可讀性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "彎曲程度不表示上下游。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "亮度不是河網高程資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "高程與網路拓撲足以追蹤高到低及匯流。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "河網可及性"
+  ],
+  "representationType": "accessible-network",
+  "misconceptionTargets": [
+    "顏色可以替代流向資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "等值替代需保留可推理的節點、邊與高度，不只是圖像摘要。 正確選項「各節點海拔、支流匯合順序與河段連接」可由題幹推出，因為高程與網路拓撲足以追蹤高到低及匯流。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若另列 V 尖側與開口側高度，可再提供形態交叉驗證。 逐項排除其他選項：「只列河流藍色色碼」色碼不能提供方向且不具普遍可讀性。；「只說河很彎」彎曲程度不表示上下游。；「只提供照片亮度」亮度不是河網高程資料。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

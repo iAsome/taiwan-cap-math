@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S013_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "登山者通報『我在瀑布旁』，救援中心為何仍可能找不到人？",
+  "options": [
+    "所有瀑布都在同一座標",
+    "相對位置一定比座標精確",
+    "瀑布不是地理現象",
+    "相對地標可能重複且缺少共同座標"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "各瀑布分布在不同位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相對位置精確度取決於參考物，並非必然較高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "瀑布是可用地標，但資訊可能不足。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "未指定哪座瀑布與方位，無法唯一定位。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資訊充分性"
+  ],
+  "representationType": "rescue-message",
+  "misconceptionTargets": [
+    "地標一定唯一"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "『瀑布旁』缺少唯一參考與方向，補座標可解除歧義。 正確選項「相對地標可能重複且缺少共同座標」可由題幹推出，因為未指定哪座瀑布與方位，無法唯一定位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案索引一指出實際資訊缺口，其他選項皆過度絕對。 逐項排除其他選項：「所有瀑布都在同一座標」各瀑布分布在不同位置。；「相對位置一定比座標精確」相對位置精確度取決於參考物，並非必然較高。；「瀑布不是地理現象」瀑布是可用地標，但資訊可能不足。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

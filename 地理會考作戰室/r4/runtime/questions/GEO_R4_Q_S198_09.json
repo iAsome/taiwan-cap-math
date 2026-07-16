@@ -1,0 +1,82 @@
+{
+  "id": "GEO_R4_Q_S198_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S198"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "單一晶片供應商成本最低，但停產機率高，哪種決策最合理？",
+  "options": [
+    "比較節省成本與停線損失，考慮第二來源和安全庫存",
+    "只選最低單價",
+    "假定停產沒有下游影響",
+    "取消供應商監測"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "用期望損失評估效率韌性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "忽略重大尾端風險。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "關鍵零件會停線。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "降低可見性。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "risk-adjusted-cost"
+  ],
+  "representationType": "chip-sourcing",
+  "misconceptionTargets": [
+    "最低採購價就是最低總成本"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "正確選項「比較節省成本與停線損失，考慮第二來源和安全庫存」可由題幹推出，因為用期望損失評估效率韌性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項排除其他選項：「只選最低單價」忽略重大尾端風險。 這項內容無法支持題幹所要求的地理判斷。；「假定停產沒有下游影響」關鍵零件會停線。 這項內容無法支持題幹所要求的地理判斷。；「取消供應商監測」降低可見性。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

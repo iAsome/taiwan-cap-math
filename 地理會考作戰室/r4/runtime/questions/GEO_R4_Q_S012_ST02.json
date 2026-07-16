@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S012_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST012",
+  "stem": "甲與乙有哪項共同位置條件？",
+  "options": [
+    "同一南北半球",
+    "同一緯線",
+    "同一經線",
+    "同一地點"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲北乙南，不同南北半球。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩地緯度一北一南，不同緯線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "經度同為 40°E，位於同一經線。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "緯度不同所以不是同一點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "共同線判讀"
+  ],
+  "representationType": "mixed",
+  "misconceptionTargets": [
+    "經度相同誤作同地"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較第二欄經度即可確認共同經線；第一欄差異排除同地。 正確選項「同一經線」可由題幹推出，因為經度同為 40°E，位於同一經線。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案索引一只主張資料能支持的共同條件。 逐項排除其他選項：「同一南北半球」甲北乙南，不同南北半球。；「同一緯線」兩地緯度一北一南，不同緯線。；「同一地點」緯度不同所以不是同一點。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

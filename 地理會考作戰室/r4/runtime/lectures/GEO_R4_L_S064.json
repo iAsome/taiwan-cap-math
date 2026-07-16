@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S064",
+  "subject": "geography",
+  "unitId": "GEO_R4_U10",
+  "skillId": "GEO_R4_S064",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S063"
+  ],
+  "objectives": [
+    "能由地形、水流方向與匯流關係辨認集水區、分水嶺、主流、支流與出口。",
+    "能以集水區而非行政區界定水文事件的上游來源與可能影響範圍。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S064_SEC01",
+      "title": "集水區把水送往共同出口",
+      "content": "落在同一集水區的降水，會沿地表或地下路徑匯向共同河段或出口。集水區界線由地勢控制，不必與縣市、道路或經緯線重合；題圖可從出口逆向追蹤所有相連上游支流。"
+    },
+    {
+      "id": "GEO_R4_L_S064_SEC02",
+      "title": "分水嶺多沿相鄰高地",
+      "content": "分水嶺是兩側水流分向不同集水區的地形界線，常沿山脊或高地連線。等高線圖上可先判坡向與河谷，再在相鄰谷地之間找高處；不能把河道本身當分水嶺。"
+    },
+    {
+      "id": "GEO_R4_L_S064_SEC03",
+      "title": "主支流以匯流關係判讀",
+      "content": "支流匯入主流的地點稱匯流處，河水由上游向下游通過出口。線條較粗不一定就是主流，除非圖例如此定義；可靠方法是沿箭頭、海拔降低與連通方向追蹤。"
+    },
+    {
+      "id": "GEO_R4_L_S064_SEC04",
+      "title": "事件分析需看上下游連通",
+      "content": "上游污染、崩塌或暴雨可沿水系向下游傳遞，但通常不會自行越過分水嶺流入另一集水區。評估受影響取水口時，要核對污染點是否在同一水系且位於取水口上游。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S064_EX01",
+      "prompt": "山脊兩側小溪分別向東西流，山脊代表什麼？",
+      "steps": [
+        "確認兩側流向相反",
+        "連接相鄰高點",
+        "辨認兩個出口"
+      ],
+      "answer": "山脊是兩集水區間的分水嶺。",
+      "why": "分水嶺是地形高界，不是河水聚集的低谷。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S064_EX02",
+      "prompt": "甲溪與乙溪在丙點會合後流向海，乙溪在此水系扮演何種角色？",
+      "steps": [
+        "沿乙溪追至丙點",
+        "確認它匯入共同河段",
+        "辨認匯流處"
+      ],
+      "answer": "乙溪是匯入主河道的支流。",
+      "why": "名稱或線寬若無圖例不能取代連通方向。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S064_EX03",
+      "prompt": "工廠位於取水口下游，正常河流方向下是否會先污染該取水口？",
+      "steps": [
+        "標出河流箭頭",
+        "比較兩點上下游",
+        "沿下游方向追蹤"
+      ],
+      "answer": "通常不會逆流先到上游取水口。",
+      "why": "潮汐、回水或抽水等特殊情況需另有資料，基本題依正常流向。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "行政區界就是集水區界。",
+      "whyWrong": "行政界是治理劃分，水文界由地勢決定。",
+      "correction": "沿高地與流向重畫界線。"
+    },
+    {
+      "belief": "河道是分水嶺。",
+      "whyWrong": "河谷匯水，分水嶺位於相鄰谷地間高處。",
+      "correction": "先區分高地與低地。"
+    },
+    {
+      "belief": "圖上最長線一定是主流。",
+      "whyWrong": "需依連通、流向或圖例判斷。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "從出口逆追所有支流。"
+    },
+    {
+      "belief": "下游污染會自然逆流到所有上游。",
+      "whyWrong": "一般水流傳輸方向由上游往下游。",
+      "correction": "標箭頭再判受影響點。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同一集水區的共同特徵是什麼？",
+      "answer": "水匯向共同出口。",
+      "reason": "界線由地形控制。"
+    },
+    {
+      "prompt": "兩谷地之間的高脊可能是什麼？",
+      "answer": "分水嶺。",
+      "reason": "兩側流向不同出口。"
+    },
+    {
+      "prompt": "支流匯入主流的點稱什麼？",
+      "answer": "匯流處。",
+      "reason": "水系在此合流。"
+    },
+    {
+      "prompt": "判污染影響先核對什麼？",
+      "answer": "是否同一水系及上下游位置。",
+      "reason": "流向決定傳輸路徑。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

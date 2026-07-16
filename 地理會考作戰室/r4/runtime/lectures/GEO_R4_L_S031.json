@@ -1,0 +1,129 @@
+{
+  "id": "GEO_R4_L_S031",
+  "subject": "geography",
+  "unitId": "GEO_R4_U05",
+  "skillId": "GEO_R4_S031",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S030"
+  ],
+  "objectives": [
+    "比較高低緯區域在不同世界地圖上的面積表現",
+    "用實際面積資料校正圖面直覺"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S031_SEC01",
+      "title": "高緯放大的由來",
+      "content": "某些常見長方形世界地圖為了保留局部方向與角度，越接近兩極，圖面比例會越大。高緯區域可能看起來遠比實際面積大，這是投影尺度隨緯度改變的結果。"
+    },
+    {
+      "id": "GEO_R4_L_S031_SEC02",
+      "title": "公平比較的方法",
+      "content": "比較國家或大洲面積時，優先使用等積地圖、實際面積數值，或在同一可靠尺度下的資料。不能把不同投影中的圖面格數直接互比，也不能只看一張未說明投影的世界地圖。"
+    },
+    {
+      "id": "GEO_R4_L_S031_SEC03",
+      "title": "緯度不是唯一答案",
+      "content": "高緯放大是特定投影的常見現象，不代表每一種投影都以同樣方式放大。題目必須提供投影特徵、格網或面積數據，才能判斷變形方向與程度。"
+    },
+    {
+      "id": "GEO_R4_L_S031_SEC04",
+      "title": "資料判讀",
+      "content": "先確認比較的是實際面積還是圖面面積，再觀察不同緯度同面積格網的大小。若高緯格網顯著較大，圖面視覺會高估高緯區域；結論仍應回到實際數值驗證。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S031_EX01",
+      "prompt": "甲位於 70°N、乙位於赤道附近，實際面積相同；某圖上甲占 12 格、乙占 5 格。哪一地被圖面放大？",
+      "steps": [
+        "確認實際面積相同",
+        "比較圖面格數",
+        "指出圖面占比較大的區域"
+      ],
+      "answer": "甲地。",
+      "why": "甲、乙實際面積相同，但甲在圖上占更多格，表示該投影把高緯的甲地放大；不能因此判定甲實際較大。"
+    },
+    {
+      "id": "GEO_R4_L_S031_EX02",
+      "prompt": "要製作各國面積比較圖，應優先選等積圖還是保角圖？",
+      "steps": [
+        "辨認任務是面積比較",
+        "對照兩種投影優先性質",
+        "選擇直接保留面積者"
+      ],
+      "answer": "等積圖。",
+      "why": "比較各國實際面積需要維持面積比例，等積投影正是為此取捨；保角圖適合局部方向與形狀，不保證面積公平。"
+    },
+    {
+      "id": "GEO_R4_L_S031_EX03",
+      "prompt": "一張圖未標投影，只看格陵蘭與南美洲的圖面輪廓，能否精確判定兩者面積比？",
+      "steps": [
+        "檢查是否有投影資訊",
+        "辨認比較需要面積尺度",
+        "判斷證據充分性"
+      ],
+      "answer": "不能。",
+      "why": "未知道投影是否保面積，圖面大小可能受緯度放大影響；必須改用等積地圖或實際面積資料，才可作精確比較。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "高緯地區實際面積都比低緯地區大。",
+      "whyWrong": "緯度只描述位置，不能決定區域面積。",
+      "correction": "用實際面積資料比較，不由緯度推論大小。"
+    },
+    {
+      "belief": "所有世界地圖都同樣放大高緯地區。",
+      "whyWrong": "投影方法不同，變形分布也不同。",
+      "correction": "先讀投影性質與格網，再判斷變形。"
+    },
+    {
+      "belief": "圖面占格較多就是實際面積較大。",
+      "whyWrong": "非等積投影中的格數會受比例變化影響。",
+      "correction": "確認等積性或使用官方面積數值。"
+    },
+    {
+      "belief": "把高緯圖形縮小就能同時修正所有變形。",
+      "whyWrong": "縮放可能改善面積外觀，卻不必然修正形狀、距離與方向。",
+      "correction": "按用途選投影，不能靠單一縮放解決全部問題。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "比較國土面積時應優先採何種投影性質？",
+      "answer": "等積。",
+      "reason": "等積能維持各區面積比例。"
+    },
+    {
+      "prompt": "高緯地在某圖上較大，能直接說其實際較大嗎？",
+      "answer": "不能。",
+      "reason": "可能是投影放大造成。"
+    },
+    {
+      "prompt": "沒有投影說明時，圖面面積是否足以精確比較？",
+      "answer": "不足。",
+      "reason": "缺少比例變形資訊。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  }
+}

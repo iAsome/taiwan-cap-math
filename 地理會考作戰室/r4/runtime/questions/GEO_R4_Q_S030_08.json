@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一張地圖能準確顯示從中心到各地的距離。下列哪項仍需另行驗證？",
+  "options": [
+    "中心到甲地的距離",
+    "中心到乙地的距離",
+    "甲地到乙地的距離",
+    "中心到丙地的距離"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹已保證由中心量到各地的距離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙地同樣屬於由中心量距。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲、乙都不是中心，兩者間距離不在保證範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丙地仍是由中心量距。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "條件範圍判斷"
+  ],
+  "representationType": "logical-text",
+  "misconceptionTargets": [
+    "把局部距離條件擴張成任兩點距離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "精確條件限於『中心到各地』，只有甲乙間距離超出條件。 正確選項「甲地到乙地的距離」可由題幹推出，因為甲、乙都不是中心，兩者間距離不在保證範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "另外三項都有中心作為其中一端，受題幹保證。 逐項排除其他選項：「中心到甲地的距離」題幹已保證由中心量到各地的距離。；「中心到乙地的距離」乙地同樣屬於由中心量距。；「中心到丙地的距離」丙地仍是由中心量距。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

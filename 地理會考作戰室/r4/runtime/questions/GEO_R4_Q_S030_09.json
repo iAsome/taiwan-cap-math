@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某圖保持局部角度，卻讓高緯等面積格顯著變大。用它判讀何種資訊風險最高？",
+  "options": [
+    "港口附近航向",
+    "各國國土面積排名",
+    "城市街道交角",
+    "局部海岸線走向"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "局部航向可受保角性質支持。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "高緯面積被放大，會扭曲跨國面積排名。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "局部街道交角與保角性質相符。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "局部走向較能由角度關係判讀。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "風險評估"
+  ],
+  "representationType": "scenario",
+  "misconceptionTargets": [
+    "忽略地圖性質與用途是否匹配"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "已知面積變形明顯，面積排名是最直接受害的任務。 正確選項「各國國土面積排名」可由題幹推出，因為高緯面積被放大，會扭曲跨國面積排名。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘三項都偏向局部角度或方向，正是題圖較能保留的資訊。 逐項排除其他選項：「港口附近航向」局部航向可受保角性質支持。；「城市街道交角」局部街道交角與保角性質相符。；「局部海岸線走向」局部走向較能由角度關係判讀。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

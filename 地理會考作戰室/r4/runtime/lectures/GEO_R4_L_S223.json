@@ -1,0 +1,142 @@
+{
+  "id": "GEO_R4_L_S223",
+  "subject": "geography",
+  "unitId": "GEO_R4_U34",
+  "skillId": "GEO_R4_S223",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BC-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-4",
+    "AUTH-SOCIAL-LC-GEO-BI-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S222"
+  ],
+  "objectives": [
+    "依時間尺度區分天氣、氣候常態、自然變率與長期氣候變化",
+    "運用一致長期資料判斷單次事件與氣候趨勢的關係"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S223_SEC01",
+      "title": "天氣描述當下，氣候描述分布",
+      "content": "天氣是某地數小時到數日的溫度、雨量、風與雲等狀態；氣候則是較長期間內這些變量的平均、季節循環、極端頻率與完整分布。說某地冬季通常乾燥是氣候特徵，說明日下午有雷雨是天氣預報。氣候不只是一個平均值，同樣平均溫度的兩地仍可能有不同日夜差、降雨季節性和極端事件。"
+    },
+    {
+      "id": "GEO_R4_L_S223_SEC02",
+      "title": "變率會讓趨勢線上下波動",
+      "content": "年際海氣變化、火山噴發、太陽變化和區域環流會使單年或數年偏冷偏暖，這是氣候變率；長期氣候變化則是平均或分布持續移動。上升趨勢中仍可出現冷年，下降趨勢中也可有暖年。判讀不能任選起訖年，而應使用足夠長、連續且方法一致的時間序列，並呈現趨勢的不確定性。"
+    },
+    {
+      "id": "GEO_R4_L_S223_SEC03",
+      "title": "單次極端不是單獨歸因證據",
+      "content": "某場暴雨、熱浪或寒流是否受長期氣候變化影響，需要比較有無特定外力情境下事件發生機率或強度，並考慮自然變率和地方條件。單次事件本身不能證明整個氣候趨勢，也不能因仍有寒流就否定平均升溫。較恰當的說法是某類事件的機率、強度、持續時間或發生季節是否改變。"
+    },
+    {
+      "id": "GEO_R4_L_S223_SEC04",
+      "title": "觀測一致性先於計算",
+      "content": "測站遷移、都市化、儀器更換、觀測時刻與資料缺漏可能造成非氣候跳變。研究者會做品質控制、同質化並與鄰站、衛星或再分析資料交叉核對。比較兩時段時要使用相同季節、單位和統計方式；十年平均可降低部分短期雜訊，但期間太短仍可能被變率主導。原始資料、調整方法與敏感度分析應透明。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S223_EX01",
+      "prompt": "今天比昨天冷五度，能否稱氣候降溫？",
+      "steps": [
+        "兩天屬短期天氣",
+        "沒有長期分布",
+        "需多年一致觀測"
+      ],
+      "answer": "不能",
+      "why": "短期溫差只能描述天氣變化。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S223_EX02",
+      "prompt": "三十年平均升溫但其中五年轉冷，趨勢是否矛盾？",
+      "steps": [
+        "趨勢是長期方向",
+        "年際值可上下波動",
+        "比較回歸與不確定性"
+      ],
+      "answer": "不矛盾",
+      "why": "短期冷段可疊加在長期升溫上。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S223_EX03",
+      "prompt": "測站搬離市中心後溫度突然下降，應先判斷什麼？",
+      "steps": [
+        "檢查遷站日期",
+        "比較鄰站與儀器",
+        "分離非氣候跳變"
+      ],
+      "answer": "觀測同質性",
+      "why": "位置改變可能造成序列斷點，不能直接解讀為區域氣候轉冷。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "一次寒流證明全球沒有暖化",
+      "whyWrong": "局地短期天氣可在全球長期升溫背景下出現",
+      "correction": "比較尺度與長期分布"
+    },
+    {
+      "belief": "氣候就是多年平均溫度",
+      "whyWrong": "氣候還包含降水、季節循環、變率與極端分布",
+      "correction": "要求描述多個統計特徵"
+    },
+    {
+      "belief": "連續數年變冷就一定是長期反轉",
+      "whyWrong": "短段可能受自然變率與起訖年選擇影響",
+      "correction": "延長序列並做趨勢檢定"
+    },
+    {
+      "belief": "測站數據都是可直接相接的",
+      "whyWrong": "遷站、儀器和觀測方法改變可能造成非氣候斷點",
+      "correction": "先做同質性檢查 應依題幹條件與資料證據逐項核對後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "明日降雨機率屬天氣或氣候？",
+      "answer": "天氣",
+      "reason": "描述特定短期狀態"
+    },
+    {
+      "prompt": "氣候趨勢中能否有反向單年？",
+      "answer": "可以",
+      "reason": "變率疊加在趨勢上"
+    },
+    {
+      "prompt": "極端事件歸因比較什麼？",
+      "answer": "有無特定外力時事件機率或強度的差異",
+      "reason": "不是只看一次事件"
+    },
+    {
+      "prompt": "測站搬遷為何要校正？",
+      "answer": "位置改變可能產生非氣候跳變",
+      "reason": "需與鄰站和元資料核對"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BC-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-4",
+      "AUTH-SOCIAL-LC-GEO-BI-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2"
+    ]
+  }
+}

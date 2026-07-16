@@ -1,0 +1,129 @@
+{
+  "id": "GEO_R4_L_S034",
+  "subject": "geography",
+  "unitId": "GEO_R4_U05",
+  "skillId": "GEO_R4_S034",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S033"
+  ],
+  "objectives": [
+    "由經緯線間距與形態找出投影變形集中位置",
+    "區分經線、緯線形態與實際距離"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S034_SEC01",
+      "title": "經緯網是診斷工具",
+      "content": "地球儀上經線在兩極相交，緯線彼此平行且周長向兩極縮小。投影後若經線保持平行、緯線間距向高緯增加，就表示高緯圖面尺度被拉大；若線條彎曲，則要觀察網格面積與形狀如何改變。"
+    },
+    {
+      "id": "GEO_R4_L_S034_SEC02",
+      "title": "看網格而非只看國界",
+      "content": "國界形狀不規則，容易混入地理輪廓差異；等經緯度網格提供一致的比較單位。觀察同樣經緯跨度的格子在不同位置是否等大、等形，可推測變形分布。"
+    },
+    {
+      "id": "GEO_R4_L_S034_SEC03",
+      "title": "圖面間距不等於地表距離",
+      "content": "一度經度在赤道附近的實際東西距離最大，向兩極縮短。若平面圖把各經線畫成等距平行線，高緯東西方向就會被拉寬，不能把圖上等距理解成地表等距。"
+    },
+    {
+      "id": "GEO_R4_L_S034_SEC04",
+      "title": "判讀限制",
+      "content": "經緯網能指出可能的變形位置，但若缺少比例尺或投影說明，通常不能算出精確變形量。答案應區分『可判斷趨勢』與『可求得數值』。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S034_EX01",
+      "prompt": "某圖經線互相平行且等距，緯線間距向兩極增加，哪裡的網格最可能被拉大？",
+      "steps": [
+        "比較不同緯度網格",
+        "注意高緯緯線間距增加",
+        "判定變形集中位置"
+      ],
+      "answer": "高緯地區。",
+      "why": "高緯網格在南北方向變高，經線又未向兩極收斂，東西方向也偏寬，因此越接近兩極圖面放大越明顯。"
+    },
+    {
+      "id": "GEO_R4_L_S034_EX02",
+      "prompt": "兩個格子都跨 10° 經度，位於赤道與 70°N；地表東西距離是否相同？",
+      "steps": [
+        "辨認經度跨度相同",
+        "回想經線向兩極會聚",
+        "比較實際東西距離"
+      ],
+      "answer": "不相同，赤道附近較長。",
+      "why": "經線在兩極相交，同樣 10° 經度在高緯涵蓋的實際東西距離較短；圖面若畫成等寬，便會放大高緯。"
+    },
+    {
+      "id": "GEO_R4_L_S034_EX03",
+      "prompt": "只看到高緯網格變大，能否算出其面積被放大幾倍？",
+      "steps": [
+        "確認只有形態觀察",
+        "檢查是否有尺度數值",
+        "判斷可得結論層級"
+      ],
+      "answer": "不能精確算出。",
+      "why": "網格形態能支持變形趨勢，但沒有比例尺度、投影公式或面積數值，無法計算確切倍數，只能指出高緯較易被放大。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "圖上經線等距表示地表各地經度距離相同。",
+      "whyWrong": "地球儀上的經線向兩極會聚。",
+      "correction": "同經度差的實際距離會隨緯度改變。"
+    },
+    {
+      "belief": "只看國界輪廓就比經緯網更能判斷投影。",
+      "whyWrong": "國界本來就不規則，缺少一致比較基準。",
+      "correction": "優先比較相同經緯跨度的網格。"
+    },
+    {
+      "belief": "緯線畫成直線就代表緯線在地球上也是直線。",
+      "whyWrong": "緯線在球面上是圓，直線是投影結果。",
+      "correction": "區分球面線與平面呈現。"
+    },
+    {
+      "belief": "看出變形位置就一定能算出變形倍數。",
+      "whyWrong": "精確倍數需要尺度或投影數據。",
+      "correction": "證據不足時只陳述方向與相對程度。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同經度差在赤道與高緯的實際東西距離相同嗎？",
+      "answer": "不同。",
+      "reason": "經線向兩極會聚。"
+    },
+    {
+      "prompt": "經線平行、網格向高緯變大，最可能哪裡放大？",
+      "answer": "高緯。",
+      "reason": "圖面尺度向兩極增加。"
+    },
+    {
+      "prompt": "只有網格形態能否求精確變形倍數？",
+      "answer": "通常不能。",
+      "reason": "仍缺比例或投影數值。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  }
+}

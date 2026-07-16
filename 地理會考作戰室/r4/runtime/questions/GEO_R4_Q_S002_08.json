@@ -1,0 +1,101 @@
+{
+  "id": "GEO_R4_Q_S002_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S002"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某圖顯示甲區人口多、商店也多。僅憑這張圖，最合理的敘述是什麼？",
+  "options": [
+    "人口增加必然造成商店增加",
+    "商店增加必然吸引所有人口",
+    "兩者在甲區呈現共同集中的分布，因果仍需其他證據",
+    "兩者完全沒有任何關係"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "共同集中不能證明人口是唯一原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "也不能反向斷言商店必然造成所有人口集中。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "先忠實描述分布，再保留因果檢驗，是證據所能支持的程度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "圖上有共同空間型態，不能說完全無關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制推論",
+    "證據判讀"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "相關等於因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "單張分布圖只能支持共現，第三項正確限制推論強度。 正確選項「兩者在甲區呈現共同集中的分布，因果仍需其他證據」可由題幹推出，因為先忠實描述分布，再保留因果檢驗，是證據所能支持的程度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第一、二項都把關聯說成必然因果，第四項又否定已觀察到的共同集中。 逐項排除其他選項：「人口增加必然造成商店增加」共同集中不能證明人口是唯一原因。；「商店增加必然吸引所有人口」也不能反向斷言商店必然造成所有人口集中。；「兩者完全沒有任何關係」圖上有共同空間型態，不能說完全無關。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

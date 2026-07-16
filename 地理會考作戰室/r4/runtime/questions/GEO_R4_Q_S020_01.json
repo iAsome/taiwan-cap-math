@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S020_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "要估算彎曲河道的沿河距離，最合適的圖上量法為何？",
+  "options": [
+    "用細線沿河道中心貼合後拉直量長",
+    "只量起點終點直線",
+    "量河道最寬處",
+    "數河流名稱字數"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "細線可貼合曲線，中心線提供一致量測基準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "端點直線會省略彎曲。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "河寬不是沿河長度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "文字長度與地理距離無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "曲線量法"
+  ],
+  "representationType": "river-map",
+  "misconceptionTargets": [
+    "用端點直線代替河道"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "量測工具要跟隨題目指定路徑，細線法能近似圖面河曲。 正確選項「用細線沿河道中心貼合後拉直量長」可由題幹推出，因為細線可貼合曲線，中心線提供一致量測基準。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "完成圖距後仍需依有效比例尺換算，不能把細線公分直接當實際公里。 逐項排除其他選項：「只量起點終點直線」端點直線會省略彎曲。 這項內容無法支持題幹所要求的地理判斷。；「量河道最寬處」河寬不是沿河長度。 這項內容無法支持題幹所要求的地理判斷。；「數河流名稱字數」文字長度與地理距離無關。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

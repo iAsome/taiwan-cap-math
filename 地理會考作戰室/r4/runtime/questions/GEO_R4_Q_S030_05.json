@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某圖在城市附近的小圓仍近似圓形，但遠離城市後被拉扁。最合理的結論為何？",
+  "options": [
+    "城市附近的局部形狀較準",
+    "遠處的實際地形都是扁平的",
+    "全圖面積一定完全正確",
+    "只有城市附近存在經緯度"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "測試圓在城市附近維持輪廓，可支持局部形狀較準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "測試圖形變扁是投影表現，不是實際地形證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "形狀測試不能證明面積性質。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "經緯度適用於全球。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "限制推論"
+  ],
+  "representationType": "described-map",
+  "misconceptionTargets": [
+    "把局部形狀測試推廣為全圖無誤"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "證據只支持局部形狀表現，第一項陳述範圍恰當。 正確選項「城市附近的局部形狀較準」可由題幹推出，因為測試圓在城市附近維持輪廓，可支持局部形狀較準。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他項分別把圖面當實體、跨性質推論或陳述錯誤事實。 逐項排除其他選項：「遠處的實際地形都是扁平的」測試圖形變扁是投影表現，不是實際地形證據。；「全圖面積一定完全正確」形狀測試不能證明面積性質。；「只有城市附近存在經緯度」經緯度適用於全球。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "北方朝上，從甲先向東走到乙，再向北走同樣距離到丙。丙相對甲的大致方位為何？",
+  "options": [
+    "東北方",
+    "東南方",
+    "西北方",
+    "西南方"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "總位移同時向東與向北，因此為東北方。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "東南需要向南移動，題目是向北。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "西北需要向西移動，題目是向東。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "西南與兩段移動方向都相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "路徑整合"
+  ],
+  "representationType": "route",
+  "misconceptionTargets": [
+    "只看最後一段路線"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把兩段位移合成：水平向東、垂直向北，合方向為東北。 正確選項「東北方」可由題幹推出，因為總位移同時向東與向北，因此為東北方。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目問甲到丙的相對位置，不是最後一段乙到丙的北方。 逐項排除其他選項：「東南方」東南需要向南移動，題目是向北。；「西北方」西北需要向西移動，題目是向東。；「西南方」西南與兩段移動方向都相反。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

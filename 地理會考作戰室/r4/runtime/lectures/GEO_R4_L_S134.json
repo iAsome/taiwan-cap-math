@@ -1,0 +1,144 @@
+{
+  "id": "GEO_R4_L_S134",
+  "subject": "geography",
+  "unitId": "GEO_R4_U20",
+  "skillId": "GEO_R4_S134",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AD-4-1",
+    "AUTH-SOCIAL-LC-GEO-AD-4-2",
+    "AUTH-SOCIAL-LC-GEO-AD-4-3",
+    "AUTH-SOCIAL-LC-GEO-AD-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-2",
+    "AUTH-SOCIAL-LC-GEO-CA-4-2",
+    "AUTH-SOCIAL-LC-GEO-CA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S133"
+  ],
+  "objectives": [
+    "由地形、交通與產業解釋臺灣人口分布的一般格局",
+    "辨認總人口、密度與日夜人口對分布判讀的差異"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S134_SEC01",
+      "title": "西部平原與都會集中",
+      "content": "臺灣較多人口集中於西部平原、盆地及都市帶，平坦土地、交通幹線、產業和公共服務相互強化。這是一般趨勢，不表示西部每處都密集或東部完全無城市。"
+    },
+    {
+      "id": "GEO_R4_L_S134_SEC02",
+      "title": "山地與東部較稀",
+      "content": "中央山地坡陡、可建地少且交通成本高，人口密度通常低；東部山海相逼、平地較狹窄，人口多集中在花東縱谷、河口平地和交通節點。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    },
+    {
+      "id": "GEO_R4_L_S134_SEC03",
+      "title": "產業與交通的累積作用",
+      "content": "製造、商業與專業服務聚集創造職位，交通又擴大通勤與市場，吸引人口和更多設施。產業轉型、快速運輸或遠距工作也可能重組分布，地形不是唯一原因。"
+    },
+    {
+      "id": "GEO_R4_L_S134_SEC04",
+      "title": "人口圖的分母與時段",
+      "content": "人口總數顯示規模，人口密度以人口除面積，可比較空間集中；戶籍、常住、白天活動與夜間人口可能不同。商業區白天密度高，住宅區夜間人口多，防災與服務規畫需選對資料。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S134_EX01",
+      "prompt": "甲乙人口同為十萬，甲面積較小，何者密度高？",
+      "steps": [
+        "密度等於人口除面積",
+        "分子相同",
+        "面積小者商較大"
+      ],
+      "answer": "甲",
+      "why": "總人口相同不代表空間集中相同。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S134_EX02",
+      "prompt": "東部人口是否平均散布各處？",
+      "steps": [
+        "山地廣且平地狹",
+        "聚落偏向縱谷和節點",
+        "避免東部皆空白"
+      ],
+      "answer": "不是",
+      "why": "人口在可建平地與交通節點內仍有明顯集中。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S134_EX03",
+      "prompt": "商業中心戶籍少、白天人潮多，應用哪種人口？",
+      "steps": [
+        "研究目標是日間服務與避難",
+        "戶籍未涵蓋通勤者",
+        "使用行動或就業活動人口"
+      ],
+      "answer": "白天活動人口",
+      "why": "資料時段需與政策問題相符。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "人口多就密度高",
+      "whyWrong": "密度還需除以面積 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "分開總量與密度 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "東部完全無人口集中",
+      "whyWrong": "縱谷與城市節點仍形成聚落",
+      "correction": "用局部尺度查看 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "人口分布只由地形決定",
+      "whyWrong": "就業、交通、服務、歷史與政策也重要",
+      "correction": "比較自然與人文機制"
+    },
+    {
+      "belief": "戶籍人口等於任一時段實際人口",
+      "whyWrong": "通勤、就學與旅遊會改變活動人口",
+      "correction": "依用途選常住或日夜資料"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "人口密度如何計算？",
+      "answer": "人口數除以土地面積",
+      "reason": "須使用同單位面積比較。"
+    },
+    {
+      "prompt": "臺灣人口一般集中哪類地形？",
+      "answer": "西部平原、盆地與都市化低地",
+      "reason": "平坦、交通和就業條件較有利。"
+    },
+    {
+      "prompt": "東部人口常集中在哪裡？",
+      "answer": "花東縱谷、河口平地和城市節點",
+      "reason": "山地間有限平地形成集中。"
+    },
+    {
+      "prompt": "白天人口為何與夜間不同？",
+      "answer": "通勤和就學使人員移動",
+      "reason": "活動中心和住宅區有不同時段需求。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AD-4-1",
+      "AUTH-SOCIAL-LC-GEO-AD-4-2",
+      "AUTH-SOCIAL-LC-GEO-AD-4-3",
+      "AUTH-SOCIAL-LC-GEO-AD-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-2",
+      "AUTH-SOCIAL-LC-GEO-CA-4-2",
+      "AUTH-SOCIAL-LC-GEO-CA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  }
+}

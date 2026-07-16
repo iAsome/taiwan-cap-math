@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S012_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩份資料都寫『24、121』，一份欄名為緯度經度，另一份未標欄名。能否直接認定兩者同地？",
+  "options": [
+    "能，數字相同就一定同地",
+    "不能；第二份缺少欄序與方位字母，無法確認",
+    "能，所有座標都在北半球東半球",
+    "不能，因座標永遠不能定位"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺方位與欄序時，相同數字仍可能有不同解讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "必須知道 24 是 N 或 S、121 是 E 或 W 及欄位順序。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未標資料無法推出半球。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "完整合法座標可以定位，不能全盤否定。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料品質"
+  ],
+  "representationType": "metadata",
+  "misconceptionTargets": [
+    "忽略座標中繼資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二份資料缺少信任邊界所需的欄名與方位，不能自動配對。 正確選項「不能；第二份缺少欄序與方位字母，無法確認」可由題幹推出，因為必須知道 24 是 N 或 S、121 是 E 或 W 及欄位順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案索引一指出具體缺口，也保留補資料後可定位的可能。 逐項排除其他選項：「能，數字相同就一定同地」缺方位與欄序時，相同數字仍可能有不同解讀。；「能，所有座標都在北半球東半球」未標資料無法推出半球。；「不能，因座標永遠不能定位」完整合法座標可以定位，不能全盤否定。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

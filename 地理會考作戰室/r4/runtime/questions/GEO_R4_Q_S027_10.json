@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S027_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "候選聚落甲地平坦但只有單一路橋，乙地稍有坡度卻有兩條聯外路。防災角度如何評估？",
+  "options": [
+    "兩地都不需災害資料",
+    "需比較洪水、坡度與聯外備援，不能只選最平甲地",
+    "甲一定最佳因平坦",
+    "乙一定最佳因道路多"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "防災選址必須有風險證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "平坦與備援各有優劣，還有不同風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一橋梁可能形成中斷點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "道路多不抵銷所有坡災或水患。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "多條件選址"
+  ],
+  "representationType": "settlement-network",
+  "misconceptionTargets": [
+    "最平地點無條件最佳"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把聯外網路納入地形選址，可避免只看基地內部坡度。 正確選項「需比較洪水、坡度與聯外備援，不能只選最平甲地」可由題幹推出，因為平坦與備援各有優劣，還有不同風險。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "應模擬不同災害下哪些路段同時失效，再評估實際韌性。 逐項排除其他選項：「兩地都不需災害資料」防災選址必須有風險證據。；「甲一定最佳因平坦」單一橋梁可能形成中斷點。；「乙一定最佳因道路多」道路多不抵銷所有坡災或水患。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

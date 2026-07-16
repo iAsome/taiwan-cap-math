@@ -1,0 +1,95 @@
+{
+  "id": "GEO_R4_Q_S059_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "登山隊從海拔600公尺、22°C處上升到2,100公尺，若只用平均率準備衣物，應預估目的地約幾度？",
+  "options": [
+    "7°C",
+    "13°C",
+    "19°C",
+    "31°C"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "7°C多扣了6°C。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "高度差1,500公尺約降9°C，22−9=13°C。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "19°C只扣3°C，等於僅算500公尺。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "31°C把溫差加上去，方向相反。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "生活應用",
+    "計算"
+  ],
+  "representationType": "decision-scenario",
+  "misconceptionTargets": [
+    "忽略高度差倍率"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "1,500公尺換成15個100公尺，降9後得到13，選1。 正確選項「13°C」可由題幹推出，因為高度差1,500公尺約降9°C，22−9=13°C。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "生活決策仍按題定近似計算；逐項反算只有13符合。 逐項排除其他選項：「7°C」7°C多扣了6°C。 這項內容無法支持題幹所要求的地理判斷。；「19°C」19°C只扣3°C，等於僅算500公尺。 這項內容無法支持題幹所要求的地理判斷。；「31°C」31°C把溫差加上去，方向相反。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

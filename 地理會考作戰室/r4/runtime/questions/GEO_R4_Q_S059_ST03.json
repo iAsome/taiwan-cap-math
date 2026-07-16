@@ -1,0 +1,95 @@
+{
+  "id": "GEO_R4_Q_S059_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST059",
+  "stem": "若同日新增海拔1,800公尺測站，依鄰近資料估計其氣溫最可能落在哪個範圍？",
+  "options": [
+    "5至7°C",
+    "15至17°C",
+    "22至24°C",
+    "28至30°C"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "1,800公尺位於中、高站之間，不應低到5至7°C。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "由中站再升500公尺約降3°C，19.2−3約16.2°C。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "22至24°C高於中站，不符合上升降溫趨勢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "28至30°C甚至高於山腳，明顯不合理。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "內插",
+    "雙向驗證"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "不依鄰近區間估值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "以中站19.2°C向上500公尺內插得約16.2°C，落在選項1。 正確選項「15至17°C」可由題幹推出，因為由中站再升500公尺約降3°C，19.2−3約16.2°C。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "也可由高站13.1°C向下500公尺加3°C，約16.1°C，兩路結果一致。 逐項排除其他選項：「5至7°C」1,800公尺位於中、高站之間，不應低到5至7°C。；「22至24°C」22至24°C高於中站，不符合上升降溫趨勢。；「28至30°C」28至30°C甚至高於山腳，明顯不合理。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

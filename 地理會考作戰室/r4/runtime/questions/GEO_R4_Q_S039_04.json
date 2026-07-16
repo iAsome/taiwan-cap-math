@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S039_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩期影像所有道路都向東偏一個像元，最可能的問題是什麼？",
+  "options": [
+    "全市道路同時搬移",
+    "森林面積必增加",
+    "拍攝季節完全相同",
+    "幾何配準或坐標偏移"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "現實道路不會整體平移。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不能由道路偏移推森林。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "季節相同不會造成空間位移。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "固定物整體同向偏移是系統性對準問題。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "假變化診斷"
+  ],
+  "representationType": "shifted-image",
+  "misconceptionTargets": [
+    "固定物偏移是真實環境變化"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "應先用控制點修正偏移，再重做變遷分類。 正確選項「幾何配準或坐標偏移」可由題幹推出，因為固定物整體同向偏移是系統性對準問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若不修，線性地物兩側會出現一增一減的假變化帶。 逐項排除其他選項：「全市道路同時搬移」現實道路不會整體平移。；「森林面積必增加」不能由道路偏移推森林。；「拍攝季節完全相同」季節相同不會造成空間位移。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

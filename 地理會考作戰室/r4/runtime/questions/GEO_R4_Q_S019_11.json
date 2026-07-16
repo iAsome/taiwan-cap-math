@@ -1,0 +1,79 @@
+{
+  "id": "GEO_R4_Q_S019_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S019"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "地震後救援隊要選可通行道路。地圖比例尺與範圍都合適，但來源不明且無日期。最可靠的處理為何？",
+  "options": [
+    "把未知日期改成本日",
+    "只看線條畫得是否漂亮",
+    "先與官方更新或現場回報交叉核對再採用",
+    "因比例尺正確就直接使用"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不得自行竄改資料日期。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "美觀不能作為可通行證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "災後道路狀態變動快，需可信且新的證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "比例尺正確不證明道路現況。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "來源核對",
+    "防災"
+  ],
+  "representationType": "damage-map",
+  "misconceptionTargets": [
+    "比例尺正確等於資料可信"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "高風險選圖除了空間適配，還要通過來源與時效的信任檢查。 正確選項「先與官方更新或現場回報交叉核對再採用」可由題幹推出，因為災後道路狀態變動快，需可信且新的證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "選項一保留不確定性並尋求可驗證資料，避免過度相信無來源地圖。 逐項排除其他選項：「把未知日期改成本日」不得自行竄改資料日期。；「只看線條畫得是否漂亮」美觀不能作為可通行證據。；「因比例尺正確就直接使用」比例尺正確不證明道路現況。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "地形層解析度三十公尺，卻宣稱能判定每一個一公尺寬坡道的坡度。問題何在？",
+  "options": [
+    "只要放大畫面就會新增細節",
+    "資料解析度不足以支援如此細的結論",
+    "三十公尺一定比一公尺詳細",
+    "坡度不需地形資料"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "視覺放大不創造資料。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "網格大小遠大於坡道，局部變化被平均。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三十公尺是較粗單元。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "坡度需實測或更細高程。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解析度限制"
+  ],
+  "representationType": "terrain-grid",
+  "misconceptionTargets": [
+    "放大低解析資料即可精確判斷"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "分析輸出不能比最粗必要圖層更精細而不揭露不確定性。 正確選項「資料解析度不足以支援如此細的結論」可由題幹推出，因為網格大小遠大於坡道，局部變化被平均。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "無障礙坡道應用現地測量或工程圖，而非區域數值高程模型。 逐項排除其他選項：「只要放大畫面就會新增細節」視覺放大不創造資料。 這項內容無法支持題幹所要求的地理判斷。；「三十公尺一定比一公尺詳細」三十公尺是較粗單元。 這項內容無法支持題幹所要求的地理判斷。；「坡度不需地形資料」坡度需實測或更細高程。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

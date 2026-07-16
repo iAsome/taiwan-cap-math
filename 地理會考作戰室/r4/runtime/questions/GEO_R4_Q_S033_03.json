@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S033_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "在非等積世界地圖上數輪廓像素，所得結果代表什麼？",
+  "options": [
+    "圖面面積",
+    "實際國土面積",
+    "人口總數",
+    "平均海拔"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "像素只量到影像中的圖面占比。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若非等積，圖面像素不能直接換成實際面積。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "像素數沒有提供人口。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "輪廓面積也不是高度資料。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "量測意義"
+  ],
+  "representationType": "digital-tool",
+  "misconceptionTargets": [
+    "把像素面積等同實際面積"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "量測工具處理的是影像像素，因此唯一直接結果是圖面面積。 正確選項「圖面面積」可由題幹推出，因為像素只量到影像中的圖面占比。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "實際面積、人口、海拔都需額外資料。 逐項排除其他選項：「實際國土面積」若非等積，圖面像素不能直接換成實際面積。；「人口總數」像素數沒有提供人口。 這項內容無法支持題幹所要求的地理判斷。；「平均海拔」輪廓面積也不是高度資料。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

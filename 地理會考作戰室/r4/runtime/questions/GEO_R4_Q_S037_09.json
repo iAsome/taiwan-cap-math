@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩圖坐標相同，但人口為夜間常住、交通流量為白天尖峰。可直接解釋通勤需求嗎？",
+  "options": [
+    "需小心，時間定義不同且人口不含日間流入",
+    "可以，坐標相同就完全相容",
+    "可以，夜間人口等於白天人口",
+    "不可以，因任何時間資料都無用"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩層的時間語意不同，需通勤或日間人口補充。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "空間對齊不能解決概念時點差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "商業區日夜人口可能差異大。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時間資料有用但要匹配問題。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "時間語意"
+  ],
+  "representationType": "day-night-data",
+  "misconceptionTargets": [
+    "坐標相同等於概念相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "中繼資料不只看年份，也看一天中的統計時段與定義。 正確選項「需小心，時間定義不同且人口不含日間流入」可由題幹推出，因為兩層的時間語意不同，需通勤或日間人口補充。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "可改用手機流量、就業人口或交通起訖資料，但須查隱私與代表性。 逐項排除其他選項：「可以，坐標相同就完全相容」空間對齊不能解決概念時點差異。；「可以，夜間人口等於白天人口」商業區日夜人口可能差異大。；「不可以，因任何時間資料都無用」時間資料有用但要匹配問題。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

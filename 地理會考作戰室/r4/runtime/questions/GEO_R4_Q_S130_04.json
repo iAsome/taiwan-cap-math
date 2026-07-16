@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S130_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某區供水一百單位、漏水二十單位，修漏一半後可到用戶的水增加多少？",
+  "options": [
+    "二十單位",
+    "五十單位",
+    "零單位",
+    "十單位"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二十是原漏水總量。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "修漏一半不是增加五十。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "損失減少會增加到戶水。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "漏水由二十降為十，因此多送達十。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "calculation"
+  ],
+  "representationType": "leakage",
+  "misconceptionTargets": [
+    "減漏不增加可用水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確選項「十單位」可由題幹推出，因為漏水由二十降為十，因此多送達十。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不需增加取水就能提高有效供給。 逐項排除其他選項：「二十單位」二十是原漏水總量。 這項內容無法支持題幹所要求的地理判斷。；「五十單位」修漏一半不是增加五十。；「零單位」損失減少會增加到戶水。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

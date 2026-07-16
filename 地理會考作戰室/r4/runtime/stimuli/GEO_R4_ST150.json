@@ -1,0 +1,95 @@
+{
+  "id": "GEO_R4_ST150",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-AD-4-4",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2C-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "content": {
+    "title": "三區資源與環境流量",
+    "prompt": "正值輸出表示該區向外供應；廢棄物輸入表示接收外區處理量。",
+    "table": {
+      "columns": [
+        "區域",
+        "供水淨輸出",
+        "電力淨輸出",
+        "廢棄物輸入",
+        "既有環境負擔",
+        "人口"
+      ],
+      "rows": [
+        [
+          "甲山區",
+          "+60",
+          "+10",
+          "5",
+          "水源限建",
+          "低"
+        ],
+        [
+          "乙都市",
+          "-55",
+          "-40",
+          "-30",
+          "交通空污",
+          "高"
+        ],
+        [
+          "丙沿海",
+          "-5",
+          "+30",
+          "+25",
+          "工業與下陷",
+          "中"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "表格比較山區、都市與沿海的水電輸出、廢棄物處理與既有負擔。",
+    "longDescription": "甲大量輸出水、少量輸出電、接收少量垃圾並受水源限建；乙輸入水電且把垃圾送出，已有交通空污；丙輸入少量水、輸出電、接收大量垃圾，已有工業和地層下陷。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S150_ST01",
+    "GEO_R4_Q_S150_ST02",
+    "GEO_R4_Q_S150_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-AD-4-4",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2C-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

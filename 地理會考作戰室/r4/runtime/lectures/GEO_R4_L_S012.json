@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S012",
+  "subject": "geography",
+  "unitId": "GEO_R4_U02",
+  "skillId": "GEO_R4_S012",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S011"
+  ],
+  "objectives": [
+    "能把成對緯度、經度放到正確半球並找出兩線交點。",
+    "能檢查座標順序、度數範圍與 N、S、E、W，排除無效或不完整位置。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S012_SEC01",
+      "title": "一個座標需要兩條線",
+      "content": "地表定位通常同時給緯度與經度，常寫成緯度在前、經度在後，例如 23°N、121°E。第一項決定南北位置，第二項決定東西位置；兩條線的交點才是目標地點。只給其中一項會留下整條線，不能唯一定位。"
+    },
+    {
+      "id": "GEO_R4_L_S012_SEC02",
+      "title": "先選半球再找度數",
+      "content": "讀到 N 就在赤道以北找緯線，S 在赤道以南；E 就在本初經線以東找經線，W 在其以西。先確定象限可避免把相同數值放到錯誤半球，再沿兩線找到唯一交點。"
+    },
+    {
+      "id": "GEO_R4_L_S012_SEC03",
+      "title": "檢查合法範圍與邊界",
+      "content": "緯度只可能在 0° 到 90°，經度在 0° 到 180°。95°N 是無效緯度；200°E 也是無效經度。零度緯度在赤道、零度經度在本初經線，九十度緯度位於極點，極點的經線會合。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    },
+    {
+      "id": "GEO_R4_L_S012_SEC04",
+      "title": "座標與其他位置資料",
+      "content": "經緯度提供絕對位置，但不直接說明海拔、地址、行政區、道路或抵達時間。實際任務可先用座標定位，再疊合地形、交通與行政圖層。若圖表欄位順序不同，應讀欄名而不是死背第一個數值必為緯度。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S012_EX01",
+      "prompt": "在標準經緯網定位 20°N、60°E。",
+      "steps": [
+        "在赤道北側找北緯二十度",
+        "在本初經線東側找東經六十度",
+        "標出兩線交點"
+      ],
+      "answer": "位於北半球、東經地區的交點。",
+      "why": "N 與 E 先決定象限，再用數值選線，可避免誤放到 20°S、60°W。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S012_EX02",
+      "prompt": "資料表欄名依序為『經度、緯度』，一列寫 75°W、12°S，應如何定位？",
+      "steps": [
+        "先依欄名辨認第一項是經度",
+        "在西經七十五度找經線",
+        "與南緯十二度緯線相交"
+      ],
+      "answer": "定位於 12°S、75°W。",
+      "why": "座標常規順序不能取代欄名；這列明確將經度放前，改寫時才恢復緯度在前。"
+    },
+    {
+      "id": "GEO_R4_L_S012_EX03",
+      "prompt": "學生要標 100°N、30°E，為何無法完成？",
+      "steps": [
+        "檢查緯度範圍",
+        "北極已是九十度北緯",
+        "判定第一項無效"
+      ],
+      "answer": "100°N 不存在，資料必須更正。",
+      "why": "緯度從赤道到極點最多九十度，不能因經度合法就忽略無效緯度。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只知道緯度就能找到唯一地點。",
+      "whyWrong": "同一條緯線環繞地球，包含許多不同經度。",
+      "correction": "至少再配對經度。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "座標中的第一個數字永遠是經度。",
+      "whyWrong": "常規寫法通常緯度在前，且資料表可能自行標欄。",
+      "correction": "讀 N、S、E、W 與欄名。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "任何大於九十度的數都不能出現在座標。",
+      "whyWrong": "經度可到一百八十度，只有緯度上限九十度。",
+      "correction": "分開檢查緯度與經度範圍。"
+    },
+    {
+      "belief": "經緯度能直接告訴海拔與行車時間。",
+      "whyWrong": "座標只確定地表水平位置，沒有高度與路網。",
+      "correction": "另疊合地形和交通資料。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "30°S、50°E 位於哪個象限？",
+      "answer": "南半球、東經地區。",
+      "reason": "S 判南，E 判東。"
+    },
+    {
+      "prompt": "只有 40°N 能否唯一定位？",
+      "answer": "不能。",
+      "reason": "還缺經度。"
+    },
+    {
+      "prompt": "92°S、20°W 是否有效？",
+      "answer": "無效。",
+      "reason": "緯度不能超過九十度。"
+    },
+    {
+      "prompt": "表格先列經度再列緯度時應怎麼辦？",
+      "answer": "依欄名解讀。",
+      "reason": "欄名比常規排列更直接。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "GEO_R4_Q_S065_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "只看到河川流量下降，就能斷定是降雨減少嗎？",
+  "options": [
+    "不能，因降雨從不影響流量",
+    "不能，取水、水庫操作與蒸發等也可能影響",
+    "能，流量只受降雨",
+    "能，水庫不影響河川"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "降雨通常是重要來源。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "多種自然與人為因素可改變流量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單因假設過窄。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "放蓄水會改變下游。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "多因歸因"
+  ],
+  "representationType": "causal-audit",
+  "misconceptionTargets": [
+    "流量下降只能是少雨"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "可比對雨量、入庫量、放水與用水紀錄。 正確選項「不能，取水、水庫操作與蒸發等也可能影響」可由題幹推出，因為多種自然與人為因素可改變流量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時間尺度也要一致，日流量不能直接與年雨量相減。 逐項排除其他選項：「不能，因降雨從不影響流量」降雨通常是重要來源。 這項內容無法支持題幹所要求的地理判斷。；「能，流量只受降雨」單因假設過窄。 這項內容無法支持題幹所要求的地理判斷。；「能，水庫不影響河川」放蓄水會改變下游。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

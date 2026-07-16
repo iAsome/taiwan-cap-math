@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "圖上方位角與地球儀量得的方位角不同，應優先檢查哪種投影性質？",
+  "options": [
+    "面積",
+    "方向",
+    "國界",
+    "降水"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "方位角差異不直接測量面積。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "方位角是方向資訊，差異顯示方向可能變形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "國界不是一種投影保留性質。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "降水與方位角無關。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "概念配對"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "混淆方向與形狀"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "方位角是方向的量化表示，因此第二項唯一對應。 正確選項「方向」可由題幹推出，因為方位角是方向資訊，差異顯示方向可能變形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "另外三項不能由方位角差異得到。 逐項排除其他選項：「面積」方位角差異不直接測量面積。；「國界」國界不是一種投影保留性質。；「降水」降水與方位角無關。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,158 @@
+{
+  "id": "GEO_R4_L_S240",
+  "subject": "geography",
+  "unitId": "GEO_R4_U36",
+  "skillId": "GEO_R4_S240",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S239"
+  ],
+  "objectives": [
+    "依探究問題選擇地圖圖表與文字的分工並清楚呈現結論",
+    "確保圖例軸線來源不確定性與無障礙替代完整且圖文一致"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S240_SEC01",
+      "title": "每種媒介回答不同問題",
+      "content": "地圖適合呈現位置、範圍、流向和空間差異；圖表適合比較數量、時間趨勢與關係；文字負責說明問題、方法、機制、限制和結論。好的探究摘要不把同一資料重複三次，而是讓讀者依序看到『在哪裡』『差多少或怎麼變』『這代表什麼以及不能代表什麼』。先寫一句可檢驗主張，再選最少且足以支持它的視覺。"
+    },
+    {
+      "id": "GEO_R4_L_S240_SEC02",
+      "title": "圖表必須誠實且可重現",
+      "content": "標題要描述變量與範圍，座標軸標單位和期間，圖例說明符號，資料來源和處理方法可追溯。長條圖比較量值時通常從零起點，若截斷需醒目說明；時間圖間隔應一致，地圖分級不可為了戲劇效果任意改門檻。有效數字不得超過資料精度，缺值與估計值應有不同標記。"
+    },
+    {
+      "id": "GEO_R4_L_S240_SEC03",
+      "title": "結論貼近證據並標示限制",
+      "content": "圖中相關不等於因果，三個地點的關係不能直接推到全國。文字應引用具體圖表結果、寫出比較基準，並用範圍、信心水準或質性等級表達不確定性。反例、資料缺漏和其他合理解釋應放在結論附近，而非藏在附錄。標註政策建議時要分清證據發現與價值選擇。"
+    },
+    {
+      "id": "GEO_R4_L_S240_SEC04",
+      "title": "無障礙與印刷是內容正確的一部分",
+      "content": "顏色不能是唯一編碼，應加紋理、形狀、直接標籤和足夠對比；地圖需方位、尺度和長文字說明，圖表需資料表替代與完整軸線，照片需描述與結論相關的可見內容。文字閱讀順序、標題層級與鍵盤焦點要合理，黑白列印和窄螢幕不能截掉資料。替代文字傳達同等關係，不只寫『一張圖』。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S240_EX01",
+      "prompt": "要呈現三區淹水位置和戶數，如何分工？",
+      "steps": [
+        "地圖顯示範圍",
+        "長條圖比較戶數",
+        "文字解釋原因限制"
+      ],
+      "answer": "三者互補",
+      "why": "不需在每個媒介重複全部數據。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S240_EX02",
+      "prompt": "長條圖從九十五起顯示九十六與九十八，問題為何？",
+      "steps": [
+        "視覺差被放大",
+        "若非必要不截斷",
+        "必要時標斷軸"
+      ],
+      "answer": "可能誤導",
+      "why": "量值比較應讓視覺比例符合數值比例。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S240_EX03",
+      "prompt": "只用紅綠表示安全危險可行嗎？",
+      "steps": [
+        "色覺差異",
+        "黑白列印失去資訊",
+        "加紋理符號文字"
+      ],
+      "answer": "不可只靠顏色",
+      "why": "無障礙設計也是資訊完整性。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "圖越多越有說服力",
+      "whyWrong": "多餘視覺會重複或增加認知負擔",
+      "correction": "每圖對應一個問題"
+    },
+    {
+      "belief": "圖表本身會說話不需來源",
+      "whyWrong": "軸線單位期間方法來源缺一都可能誤解",
+      "correction": "附可追溯元資料 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "相關圖可直接證明原因",
+      "whyWrong": "還需時間順序機制與排除替代解釋",
+      "correction": "限制因果用語 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "替代文字只需寫圖表名稱",
+      "whyWrong": "需傳達趨勢數值空間關係和限制",
+      "correction": "提供等價資料表長說明"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "地圖最適合回答什麼？",
+      "answer": "位置範圍流向與空間差異",
+      "reason": "數量精確比較可用圖表補充"
+    },
+    {
+      "prompt": "長條圖為何常從零起？",
+      "answer": "讓長度比例對應量值比例",
+      "reason": "截斷需明示"
+    },
+    {
+      "prompt": "結論如何引用證據？",
+      "answer": "指出圖表中的具體比較與範圍並附限制",
+      "reason": "不只說如圖所示"
+    },
+    {
+      "prompt": "色彩無障礙最低要求？",
+      "answer": "資訊另有紋理形狀標籤且對比足夠",
+      "reason": "黑白仍可讀"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

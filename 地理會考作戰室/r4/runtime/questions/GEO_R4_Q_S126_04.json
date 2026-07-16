@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S126_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "臺灣位於東亞海空路線附近，能否證明所有貨物都必經臺灣？",
+  "options": [
+    "能，地圖位置決定每艘船",
+    "能，且其他港口都不存在",
+    "不能，因臺灣沒有任何港口",
+    "不能，路線仍依起訖、成本、班次與政策選擇"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "位置不能強迫所有運具。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "東亞有眾多港口。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "臺灣實際有國際港口。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "物流會比較多個可行節點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "critical-reading"
+  ],
+  "representationType": "route-choice",
+  "misconceptionTargets": [
+    "所有航線必經臺灣"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "避免把有利位置說成唯一通道。 正確選項「不能，路線仍依起訖、成本、班次與政策選擇」可由題幹推出，因為物流會比較多個可行節點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "實際流量才可驗證樞紐程度。 逐項排除其他選項：「能，地圖位置決定每艘船」位置不能強迫所有運具。；「能，且其他港口都不存在」東亞有眾多港口。 這項內容無法支持題幹所要求的地理判斷。；「不能，因臺灣沒有任何港口」臺灣實際有國際港口。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

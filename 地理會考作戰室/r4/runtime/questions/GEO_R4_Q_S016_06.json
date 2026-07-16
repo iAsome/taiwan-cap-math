@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S016_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "地圖上甲乙直線長四公分，比例尺一比七萬五千。甲乙實距為何？",
+  "options": [
+    "三百公尺",
+    "三公里",
+    "三十公里",
+    "零點三公里"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "四乘七萬五千為三十萬公分，不是三萬公分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "三十萬公分等於三公里。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三十公里等於三百萬公分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "零點三公里只有三百公尺。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "非整十比例尺"
+  ],
+  "representationType": "calculation",
+  "misconceptionTargets": [
+    "數量級多一個零"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "計算四乘七萬五千得到三十萬公分，再除十萬得到三公里。 正確選項「三公里」可由題幹推出，因為三十萬公分等於三公里。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "乘法與單位換算可分兩行，避免把三十萬公分誤讀為三十公里。 逐項排除其他選項：「三百公尺」四乘七萬五千為三十萬公分，不是三萬公分。；「三十公里」三十公里等於三百萬公分。；「零點三公里」零點三公里只有三百公尺。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

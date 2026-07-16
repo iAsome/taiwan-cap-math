@@ -1,0 +1,92 @@
+{
+  "id": "GEO_R4_Q_S215_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BC-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "港口停三天，工廠有五天原料庫存，但船舶恢復後還需四天清理積壓，最合理的判斷為何？",
+  "options": [
+    "總補運延遲可能超過庫存而造成短暫停工",
+    "港口重開當天一定完全復原",
+    "五天庫存可涵蓋七天延遲",
+    "積壓不影響交貨"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三加四可能達七天，大於五天。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "網絡恢復有落差。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "計算不符。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "積壓會延後到貨。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "recovery-lag"
+  ],
+  "representationType": "port-backlog",
+  "misconceptionTargets": [
+    "設施重開等於供應恢復"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BC-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分開記錄設施重開與交貨恢復。 正確選項「總補運延遲可能超過庫存而造成短暫停工」可由題幹推出，因為三加四可能達七天，大於五天。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐項排除其他選項：「港口重開當天一定完全復原」網絡恢復有落差。 這項內容無法支持題幹所要求的地理判斷。；「五天庫存可涵蓋七天延遲」計算不符。 這項內容無法支持題幹所要求的地理判斷。；「積壓不影響交貨」積壓會延後到貨。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

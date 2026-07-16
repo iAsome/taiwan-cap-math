@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S040_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S040"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST040",
+  "stem": "比較颱風前後且兼顧雲量與相容性，優先選哪一組？",
+  "options": [
+    "只有丁",
+    "甲與丙",
+    "甲與丁",
+    "乙與丁"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丁沒有災後影像。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲為災前、丙為災後，波段解析度相同且雲少。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩張都在颱風前且解析度波段不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乙多雲、丁又是較早災前且不同資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "影像配對"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "發布較晚就是災後"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "甲丙控制了資料規格並降低雲遮，最適合直接比較。 正確選項「甲與丙」可由題幹推出，因為甲為災前、丙為災後，波段解析度相同且雲少。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "丙在颱風後三天，結果仍代表七月十八日而非洪峰瞬間。 逐項排除其他選項：「只有丁」丁沒有災後影像。 這項內容無法支持題幹所要求的地理判斷。；「甲與丁」兩張都在颱風前且解析度波段不同。；「乙與丁」乙多雲、丁又是較早災前且不同資料。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S032_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST032",
+  "stem": "若要同時完成任務一與任務二，最合理的資料策略為何？",
+  "options": [
+    "只用甲圖並假設形狀正確",
+    "只用乙圖並假設面積正確",
+    "分別使用甲圖與乙圖",
+    "放棄兩個任務"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲圖只承諾面積，不能補上形狀假設。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙圖只承諾局部形狀，不能補上面積假設。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩任務分別對應甲、乙性質，可用多圖互補。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "已有合適資料，不需放棄。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "多源整合"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "硬用單圖完成不同性質任務"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項尊重兩張圖的取捨並完成兩種任務。 正確選項「分別使用甲圖與乙圖」可由題幹推出，因為兩任務分別對應甲、乙性質，可用多圖互補。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "前兩項都添加未被保證的性質，第四項則忽略可行解法。 逐項排除其他選項：「只用甲圖並假設形狀正確」甲圖只承諾面積，不能補上形狀假設。；「只用乙圖並假設面積正確」乙圖只承諾局部形狀，不能補上面積假設。；「放棄兩個任務」已有合適資料，不需放棄。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

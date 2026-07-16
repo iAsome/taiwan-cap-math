@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S025_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "河口受潮汐影響，短時間觀測到水面向內陸移動。這是否推翻等高線判定的總體下游方向？",
+  "options": [
+    "不推翻，因潮汐與水無關",
+    "不推翻，潮汐可造成短時逆向，總體地勢仍向海降低",
+    "推翻，河流以後永遠向上游",
+    "推翻，等高線數值必全部錯"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "潮汐正是海水運動的影響。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "潮汐是時間性邊界條件，可疊加在長期下游方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "短時現象不等於永久反轉。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不需因此否定地形高程。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "例外條件"
+  ],
+  "representationType": "estuary",
+  "misconceptionTargets": [
+    "短時逆流代表地勢流向錯誤"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "答案同時容納地形與動態水位兩種尺度，不把其中一項絕對化。 正確選項「不推翻，潮汐可造成短時逆向，總體地勢仍向海降低」可由題幹推出，因為潮汐是時間性邊界條件，可疊加在長期下游方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若問某一時刻污染移動，必須使用潮位與流速觀測，不能只靠等高線。 逐項排除其他選項：「不推翻，因潮汐與水無關」潮汐正是海水運動的影響。；「推翻，河流以後永遠向上游」短時現象不等於永久反轉。；「推翻，等高線數值必全部錯」不需因此否定地形高程。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

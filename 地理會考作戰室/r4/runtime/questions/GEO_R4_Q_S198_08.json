@@ -1,0 +1,82 @@
+{
+  "id": "GEO_R4_Q_S198_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S198"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某產品出口額一百億元，其中進口零件六十億元，不能推論什麼？",
+  "options": [
+    "產品含跨境中間投入",
+    "附加價值小於出口總額",
+    "供應鏈涉及多地",
+    "一百億元全部是出口國新創造的價值"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "由題幹可知。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "至少需扣中間投入。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "零件來自外部。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "總額包含六十億元進口投入。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "value-added-trade"
+  ],
+  "representationType": "gross-export",
+  "misconceptionTargets": [
+    "出口總額等於本國附加價值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "傳統貿易總額會重複計算中間品。 正確選項「一百億元全部是出口國新創造的價值」可由題幹推出，因為總額包含六十億元進口投入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "精確附加價值還需其他成本資料。 逐項排除其他選項：「產品含跨境中間投入」由題幹可知。 這項內容無法支持題幹所要求的地理判斷。；「附加價值小於出口總額」至少需扣中間投入。 這項內容無法支持題幹所要求的地理判斷。；「供應鏈涉及多地」零件來自外部。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S012_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲 15°N、30°W；乙 45°S、30°W。下列何者正確？",
+  "options": [
+    "乙在甲東方",
+    "同一緯線",
+    "同一經線，甲在乙北方",
+    "同一地點"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "經度相同，不能說乙在甲東方。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩地緯度不同，不同緯線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "經度同為 30°W，且北緯甲在南緯乙北方。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "緯度不同所以不是同一點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "多欄比較"
+  ],
+  "representationType": "coordinate-pair",
+  "misconceptionTargets": [
+    "相同經度當同緯線"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第二項經度相同確定同經線，N 與 S 再確定甲北乙南。 正確選項「同一經線，甲在乙北方」可由題幹推出，因為經度同為 30°W，且北緯甲在南緯乙北方。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此題可以不計距離，座標關係已足以支持答案索引一。 逐項排除其他選項：「乙在甲東方」經度相同，不能說乙在甲東方。；「同一緯線」兩地緯度不同，不同緯線。；「同一地點」緯度不同所以不是同一點。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

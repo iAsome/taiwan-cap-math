@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S033_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST033",
+  "stem": "要改善這份簡報，哪項修改最能防止觀眾誤判？",
+  "options": [
+    "刪除實際面積欄",
+    "把所有像素數四捨五入",
+    "改用等積底圖並保留實際數值",
+    "依國名筆畫排序"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪除數值會失去查核基準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "四捨五入不能修正投影造成的相對偏差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "等積底圖與實際數值同時提供公平視覺和可核對資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "筆畫排序與面積判讀無關。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料呈現改進"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "用格式調整代替投影修正"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "第三項直接處理失真的圖面面積，並保留量化證據。 正確選項「改用等積底圖並保留實際數值」可由題幹推出，因為等積底圖與實際數值同時提供公平視覺和可核對資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘修改不是移除證據，就是做無關的數值或排序處理。 逐項排除其他選項：「刪除實際面積欄」刪除數值會失去查核基準。；「把所有像素數四捨五入」四捨五入不能修正投影造成的相對偏差。；「依國名筆畫排序」筆畫排序與面積判讀無關。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

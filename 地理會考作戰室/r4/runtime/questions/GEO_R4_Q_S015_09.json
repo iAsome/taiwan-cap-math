@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S015_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某線段比例尺左端為零，右端為八公里，中間分四格；但掃描後圖面橫向拉長、縱向不變。能否用它量任意方向距離？",
+  "options": [
+    "不可以，非等比例變形使不同方向縮放率不同",
+    "可以，因右端仍印八公里",
+    "只要把公里改成公分即可",
+    "可以，任何變形都不影響"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "橫向和縱向縮放率不同，單一線段不能代表任意方向。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刻度文字未變不能修復圖面變形。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "改單位也無法消除非等比例變形。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單向拉伸破壞各方向一致的比例關係。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比例失真"
+  ],
+  "representationType": "distorted-map",
+  "misconceptionTargets": [
+    "誤以為線段比例尺永遠有效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "線段比例尺可隨等比例縮放保真，但不保證承受單向拉伸或扭曲。 正確選項「不可以，非等比例變形使不同方向縮放率不同」可由題幹推出，因為橫向和縱向縮放率不同，單一線段不能代表任意方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若只量與比例尺同方向的線仍須另行確認，題目問任意方向所以應否定。 逐項排除其他選項：「可以，因右端仍印八公里」刻度文字未變不能修復圖面變形。；「只要把公里改成公分即可」改單位也無法消除非等比例變形。；「可以，任何變形都不影響」單向拉伸破壞各方向一致的比例關係。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

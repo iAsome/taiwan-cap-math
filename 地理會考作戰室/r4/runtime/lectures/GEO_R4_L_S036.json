@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S036",
+  "subject": "geography",
+  "unitId": "GEO_R4_U06",
+  "skillId": "GEO_R4_S036",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S035"
+  ],
+  "objectives": [
+    "能依分析目的區分地理資訊圖層中的點、線與面幾何資料。",
+    "能說明幾何位置與屬性表的關係，以及同一地物隨比例尺與目的改變表示方式。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S036_SEC01",
+      "title": "點線面是空間表示",
+      "content": "點資料用一個位置表示離散地物，如小比例尺圖上的車站或測站；線資料表示具有延伸與連接關係的道路、河流或管線；面資料表示有邊界與範圍的行政區、湖泊或土地使用區。這是資料模型，不表示現實車站真的沒有面積、道路真的沒有寬度。"
+    },
+    {
+      "id": "GEO_R4_L_S036_SEC02",
+      "title": "選幾何要看問題與尺度",
+      "content": "同一所學校在全市設施分布圖可用點，在校園土地使用圖則可用面；河流在區域水系圖常用中心線，在洪水分析中河道與水面範圍可用面。選擇取決於要定位、計長、分析網路或計算面積，也受圖幅與資料解析度影響。"
+    },
+    {
+      "id": "GEO_R4_L_S036_SEC03",
+      "title": "屬性表回答它是什麼",
+      "content": "幾何資料記錄在哪裡與形狀，屬性欄位則可記名稱、類型、容量、日期或狀態。每一筆空間物件應以穩定識別碼連到正確屬性；只看地圖符號可能知道位置，卻不能保證知道設施是否開放、道路速限或資料更新時間。"
+    },
+    {
+      "id": "GEO_R4_L_S036_SEC04",
+      "title": "拓撲與資料品質",
+      "content": "線是否相接會影響路徑分析，面是否重疊或留縫會影響面積統計，點若座標偏移則可能落在錯誤行政區。資料使用前要查坐標系統、精度、日期與幾何規則；把不同來源疊合時，外觀看似接近不代表位置已可靠對齊。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S036_EX01",
+      "prompt": "全市公共自行車站分布要計算每區站數，站點應先用何種幾何？",
+      "steps": [
+        "每站是離散位置",
+        "任務要計數與行政區套疊",
+        "站體面積不是此層重點"
+      ],
+      "answer": "以點資料表示較合適。",
+      "why": "點可與行政區面做空間套疊並計數；若另要規劃站內動線，才需更細的面資料。"
+    },
+    {
+      "id": "GEO_R4_L_S036_EX02",
+      "prompt": "要計算河川從上游到下游的連通路徑，河川適合何種資料？",
+      "steps": [
+        "需要延伸方向",
+        "需要支流匯合節點",
+        "路徑長與網路關係重要"
+      ],
+      "answer": "使用線資料。",
+      "why": "中心線能表達連接與長度；若要計算水面面積，需另有河道面圖層。"
+    },
+    {
+      "id": "GEO_R4_L_S036_EX03",
+      "prompt": "同一校舍在全國學校圖是點，在校園圖是面，是否矛盾？",
+      "steps": [
+        "兩圖尺度不同",
+        "全國圖重位置與數量",
+        "校園圖重建物範圍"
+      ],
+      "answer": "不矛盾，是分析目的與尺度不同。",
+      "why": "地物可用不同幾何概化；報告要說明資料層級，避免用點圖計算真實建物面積。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "點資料代表現實物體完全沒有面積。",
+      "whyWrong": "點只是特定尺度與目的下的概化表示。",
+      "correction": "先說明圖層用途與解析度。"
+    },
+    {
+      "belief": "道路只能用線，永遠不能用面。",
+      "whyWrong": "交通網路常用線，精細道路範圍或用地分析可用面。",
+      "correction": "依要算連通、長度或面積選幾何。"
+    },
+    {
+      "belief": "有地圖符號就不需要屬性表。",
+      "whyWrong": "符號難以承載日期、容量、狀態與來源等完整資料。",
+      "correction": "以識別碼連結幾何和屬性。"
+    },
+    {
+      "belief": "兩條線畫得很近就必定相接。",
+      "whyWrong": "拓撲連通需共享節點或合格容差，視覺接近不等於可通。",
+      "correction": "執行幾何與拓撲檢查。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "全市消防栓分布通常用哪種幾何？",
+      "answer": "點。",
+      "reason": "任務重離散位置與數量。"
+    },
+    {
+      "prompt": "公路路網最常用哪種幾何？",
+      "answer": "線。",
+      "reason": "需要延伸、長度與連通關係。"
+    },
+    {
+      "prompt": "行政區範圍最常用哪種幾何？",
+      "answer": "面。",
+      "reason": "需要封閉邊界與區域統計。"
+    },
+    {
+      "prompt": "幾何位置之外的名稱容量放哪裡？",
+      "answer": "屬性表。",
+      "reason": "以識別碼對應每筆空間物件。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

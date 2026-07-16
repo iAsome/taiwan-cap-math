@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "消防栓點偏移到河對岸行政區，會造成哪項風險？",
+  "options": [
+    "分區計數與最近道路分析錯誤",
+    "點會自動變成面",
+    "河流改變流向",
+    "人口資料自動更新"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "位置偏移會導致錯誤套疊與服務判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "座標錯不會改變幾何類型。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料點不改變現實河流。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人口更新需另有來源。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "位置精度"
+  ],
+  "representationType": "mislocated-point",
+  "misconceptionTargets": [
+    "點的微小偏移永遠無影響"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "小位置誤差在邊界附近可能造成分類跳區，影響資源配置。 正確選項「分區計數與最近道路分析錯誤」可由題幹推出，因為位置偏移會導致錯誤套疊與服務判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "應查坐標系統、定位精度與原始記錄，而非只把點拖到看起來順眼的位置。 逐項排除其他選項：「點會自動變成面」座標錯不會改變幾何類型。；「河流改變流向」資料點不改變現實河流。；「人口資料自動更新」人口更新需另有來源。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

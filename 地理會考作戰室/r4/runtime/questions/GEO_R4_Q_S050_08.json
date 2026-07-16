@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S050_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "測站搬到都市屋頂後溫度升高，分析長期氣候時應怎麼做？",
+  "options": [
+    "直接全部當氣候變暖",
+    "刪除所有舊資料",
+    "忽略測站資料",
+    "檢查遷站與環境改變，進行品質控制與校正"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不能未校正便歸因。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "舊資料仍可經處理使用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料有價值但需品質控管。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "非氣候性改變可能造成序列斷點。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料同質性"
+  ],
+  "representationType": "station-move",
+  "misconceptionTargets": [
+    "所有序列變化都是真實氣候"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同質化處理能區分觀測環境變更與真實區域趨勢。 正確選項「檢查遷站與環境改變，進行品質控制與校正」可由題幹推出，因為非氣候性改變可能造成序列斷點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "方法與不確定性要公開，不能手動任意改值。 逐項排除其他選項：「直接全部當氣候變暖」不能未校正便歸因。 這項內容無法支持題幹所要求的地理判斷。；「刪除所有舊資料」舊資料仍可經處理使用。；「忽略測站資料」資料有價值但需品質控管。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

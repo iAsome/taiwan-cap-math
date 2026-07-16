@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S027_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "山區道路若在短距離內跨越很多等高線，通常代表什麼？",
+  "options": [
+    "路段坡度較陡",
+    "路段完全水平",
+    "道路一定較寬",
+    "人口一定密集"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "跨線多且距離短表示高差集中。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水平道路大致沿同高線而非連跨多線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "等高線不提供道路寬度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人口需其他圖層。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "道路坡度"
+  ],
+  "representationType": "road-contour",
+  "misconceptionTargets": [
+    "跨線多表示道路平坦"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "道路與等高線交會角度及線距可初判縱坡。 正確選項「路段坡度較陡」可由題幹推出，因為跨線多且距離短表示高差集中。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "仍需道路設計高程，因橋梁或隧道可能不貼合地表。 逐項排除其他選項：「路段完全水平」水平道路大致沿同高線而非連跨多線。；「道路一定較寬」等高線不提供道路寬度。；「人口一定密集」人口需其他圖層。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S017_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S017"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "文字比例尺寫圖上一公分代表兩百公尺，實際一公里應畫幾公分？",
+  "options": [
+    "零點五公分",
+    "五公分",
+    "二公分",
+    "二十公分"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "零點五公分只代表一百公尺。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一公里為一千公尺，一千除二百等於五。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二公分只代表四百公尺。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "二十公分會代表四千公尺。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "文字反算"
+  ],
+  "representationType": "text-scale",
+  "misconceptionTargets": [
+    "把一公里當一百公尺"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把實距換成比例尺所用的公尺後，求它包含幾個兩百公尺。 正確選項「五公分」可由題幹推出，因為一公里為一千公尺，一千除二百等於五。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "五個代表單位就需要五個一公分，因此圖距五公分。 逐項排除其他選項：「零點五公分」零點五公分只代表一百公尺。；「二公分」二公分只代表四百公尺。；「二十公分」二十公分會代表四千公尺。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

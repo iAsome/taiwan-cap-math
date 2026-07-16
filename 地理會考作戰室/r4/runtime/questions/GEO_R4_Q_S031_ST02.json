@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S031_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST031",
+  "stem": "哪個區域的圖面放大最可能造成最強的面積錯覺？",
+  "options": [
+    "甲",
+    "乙",
+    "丙",
+    "丁"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲每 10 萬平方公里約占 0.33 格。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙每 10 萬平方公里約占 0.38 格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙每 10 萬平方公里約占 0.33 格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "丁 70 萬平方公里卻占 9 格，單位實際面積的圖面格數遠高於其他區。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比例比較",
+    "推論"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "只比圖面格數，不考慮實際面積"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較圖面格數相對實際面積，丁的 9/70 比例最高。 正確選項「丁」可由題幹推出，因為丁 70 萬平方公里卻占 9 格，單位實際面積的圖面格數遠高於其他區。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "即使丙圖面格數多，丙實際面積也最大；相對放大不及丁。 逐項排除其他選項：「甲」甲每 10 萬平方公里約占 0.33 格。；「乙」乙每 10 萬平方公里約占 0.38 格。；「丙」丙每 10 萬平方公里約占 0.33 格。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

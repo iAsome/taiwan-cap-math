@@ -1,0 +1,152 @@
+{
+  "id": "GEO_R4_L_S151",
+  "subject": "geography",
+  "unitId": "GEO_R4_U22",
+  "skillId": "GEO_R4_S151",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-AD-4-4",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2C-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S150"
+  ],
+  "objectives": [
+    "以資源再生、污染吸收與服務容量判斷環境承載",
+    "把長期、不可逆與跨世代分配納入方案評估"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S151_SEC01",
+      "title": "承載是條件式門檻",
+      "content": "環境承載描述在特定時間、技術、行為和管理下，資源與系統能維持的活動程度。水量、垃圾處理、棲地干擾與交通各有不同門檻，不能只用一個固定人數代表全部。"
+    },
+    {
+      "id": "GEO_R4_L_S151_SEC02",
+      "title": "存量、流量與恢復",
+      "content": "可再生資源若使用速率長期超過補充，存量仍會下降；污染排放若超過環境與設施處理能力，就會累積。短期看似未崩潰，不代表跨年可持續。"
+    },
+    {
+      "id": "GEO_R4_L_S151_SEC03",
+      "title": "世代公平",
+      "content": "當代取得收益卻把污染、債務、資源耗竭和維護成本留給未來，便產生跨世代不公平。評估要公開期間、折現假設、不可逆性與誰承擔風險，而非只最大化當年淨收益。"
+    },
+    {
+      "id": "GEO_R4_L_S151_SEC04",
+      "title": "監測與調適",
+      "content": "以基準值、警戒門檻和停止門檻管理容量，例如地下水位、珊瑚覆蓋、垃圾量或供水備援。資訊不確定且損害可能不可逆時，可採預警原則、分期試辦及可逆設計。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S151_EX01",
+      "prompt": "島上每日供水一千噸、基本居民需八百噸，觀光可用多少？",
+      "steps": [
+        "先保留基本需求",
+        "可用餘量二百噸",
+        "再考慮備援和漏水"
+      ],
+      "answer": "少於二百噸的安全額度",
+      "why": "承載需留不確定與乾旱緩衝，不能把理論餘量用滿。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S151_EX02",
+      "prompt": "森林每年自然增加十單位，長期砍十五單位會怎樣？",
+      "steps": [
+        "流出大於補充",
+        "每年淨減五",
+        "存量逐年下降"
+      ],
+      "answer": "不可持續",
+      "why": "可再生不等於無限。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S151_EX03",
+      "prompt": "礦產收益高但修復需百年，如何看世代公平？",
+      "steps": [
+        "當代獲利",
+        "未來承擔長期損害",
+        "比較替代和保證金"
+      ],
+      "answer": "需把長期不可逆成本納入",
+      "why": "不能只靠短期財務折現淡化後代負擔。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "承載量是永久不變的精確數字",
+      "whyWrong": "季節、行為、技術與恢復力會改變",
+      "correction": "用多指標動態調整"
+    },
+    {
+      "belief": "可再生資源可以無限使用",
+      "whyWrong": "使用超過補充仍會耗竭 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "比較長期收支 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "未來成本折現後接近零就可忽略",
+      "whyWrong": "不可逆權利與生態損失不能只由財務折現決定",
+      "correction": "呈現多種期間與倫理底線"
+    },
+    {
+      "belief": "沒有立即災害代表未超載",
+      "whyWrong": "地下水、土壤與生態退化可累積",
+      "correction": "監測趨勢和領先指標"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "承載評估至少看什麼？",
+      "answer": "需求強度、資源供給、處理能力與恢復速度",
+      "reason": "單一人數不足。"
+    },
+    {
+      "prompt": "可再生資源何時仍會耗竭？",
+      "answer": "使用長期超過補充時",
+      "reason": "存量會逐期下降。"
+    },
+    {
+      "prompt": "世代公平關心什麼？",
+      "answer": "收益與長期成本在不同世代間的分配",
+      "reason": "未來無法參與今日決策。"
+    },
+    {
+      "prompt": "預警門檻有何用途？",
+      "answer": "在不可逆損害前觸發減量或停止",
+      "reason": "門檻需配合監測和責任。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-AD-4-4",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2C-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

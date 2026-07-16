@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S051_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "日最高溫與下午兩點氣溫可以視為同一欄位嗎？",
+  "options": [
+    "不能，因下午沒有氣溫",
+    "不能，前者是全天極值，後者是定時觀測",
+    "能，最高溫必在兩點",
+    "能，任何溫度都同義"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "下午可觀測氣溫。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "統計時間與定義不同。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "最高時刻不固定。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "溫度欄位語意可不同。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "統計定義"
+  ],
+  "representationType": "temperature-fields",
+  "misconceptionTargets": [
+    "固定時刻等於日極值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "欄名需保留極值或觀測時刻，否則比較會誤導。 正確選項「不能，前者是全天極值，後者是定時觀測」可由題幹推出，因為統計時間與定義不同。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若研究人體熱暴露，還可能需要濕度與體感指標。 逐項排除其他選項：「不能，因下午沒有氣溫」下午可觀測氣溫。 這項內容無法支持題幹所要求的地理判斷。；「能，最高溫必在兩點」最高時刻不固定。 這項內容無法支持題幹所要求的地理判斷。；「能，任何溫度都同義」溫度欄位語意可不同。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

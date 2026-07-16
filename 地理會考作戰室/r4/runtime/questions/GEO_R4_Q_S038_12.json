@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S038_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "影像分類圖要提供等值非視覺資訊，哪項最完整？",
+  "options": [
+    "只列顯示顏色",
+    "只說有衛星圖",
+    "刪除低信心區",
+    "各區類別、判讀特徵、面積、日期、解析度與不確定度表"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不提供完整語意。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "籠統描述不能重現判讀。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "低信心應揭露而非隱藏。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "結構資料保留分類、尺度與品質。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遙測可及性"
+  ],
+  "representationType": "accessible-imagery",
+  "misconceptionTargets": [
+    "顏色圖例足以替代分類資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若題目需比較區域，資料表還應有穩定區域識別與同單位面積。 正確選項「各區類別、判讀特徵、面積、日期、解析度與不確定度表」可由題幹推出，因為結構資料保留分類、尺度與品質。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "長說明可描述空間鄰接，但不應取代可計算數值表。 逐項排除其他選項：「只列顯示顏色」顏色不提供完整語意。 這項內容無法支持題幹所要求的地理判斷。；「只說有衛星圖」籠統描述不能重現判讀。；「刪除低信心區」低信心應揭露而非隱藏。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

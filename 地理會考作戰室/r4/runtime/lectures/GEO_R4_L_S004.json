@@ -1,0 +1,149 @@
+{
+  "id": "GEO_R4_L_S004",
+  "subject": "geography",
+  "unitId": "GEO_R4_U01",
+  "skillId": "GEO_R4_S004",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S003"
+  ],
+  "objectives": [
+    "能依研究問題選擇地圖、統計、觀察或訪查資料",
+    "能以多種資料互相補充而不混淆其功能"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S004_SEC01",
+      "title": "地圖回答空間位置",
+      "content": "地圖適合呈現地點、範圍、距離、方向與分布。選圖時要看比例尺、圖例、年份與繪製目的；一張行政區圖不一定能顯示街道路況。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    },
+    {
+      "id": "GEO_R4_L_S004_SEC02",
+      "title": "統計比較數量",
+      "content": "統計表與圖能比較人口、產量、比例或時間變化，但數值必須有單位、年份、定義與空間單元。總量和比率回答不同問題，不可互相替代。 判讀時要先確認資料的時間、空間範圍、比較基準與指標定義，再把每一項證據連回題目所問的地理關係，最後檢查結論是否能排除其他解釋，不能只憑單一印象或熟悉地名作答。"
+    },
+    {
+      "id": "GEO_R4_L_S004_SEC03",
+      "title": "觀察與訪查各有用途",
+      "content": "實地觀察能記錄現場狀態與行為，訪談或問卷則能取得經驗、選擇原因及感受。受訪者說法不能取代客觀位置量測，現場照片也不能自動代表長期狀況。"
+    },
+    {
+      "id": "GEO_R4_L_S004_SEC04",
+      "title": "三角檢證",
+      "content": "同一結論若能由不同資料支持，可信度較高。例如用路線圖量步行距離、現場計時，再訪問居民說明障礙。資料結果衝突時應查定義與取樣，不可只挑支持預設的部分。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S004_EX01",
+      "prompt": "要找近五年新增建物的位置，應選什麼資料？",
+      "steps": [
+        "確認要比較地表變化",
+        "固定相同季節與範圍",
+        "選擇兩期航空影像或建物圖層"
+      ],
+      "answer": "同範圍、可比日期的兩期影像或建物圖。",
+      "why": "兩期空間資料能直接定位新增區；單一年人口統計只能說數量，無法指出建物在哪裡。"
+    },
+    {
+      "id": "GEO_R4_L_S004_EX02",
+      "prompt": "要了解居民不搭公車的原因，應用什麼資料？",
+      "steps": [
+        "用路線與班距資料掌握服務",
+        "設計涵蓋不同居民的訪查",
+        "把說法和實際服務條件比對"
+      ],
+      "answer": "公車服務資料搭配居民訪查。",
+      "why": "路線與班距說明客觀供給，訪查補足轉乘、照護或安全等選擇原因，兩者不能互相取代。"
+    },
+    {
+      "id": "GEO_R4_L_S004_EX03",
+      "prompt": "想比較各區人口壓力，總人口還是人口密度較適合？",
+      "steps": [
+        "確認是否比較單位面積負荷",
+        "取得同年人口與面積",
+        "計算或使用人口密度"
+      ],
+      "answer": "人口密度較適合，但仍應視問題保留總人口。",
+      "why": "面積差很大的區只比總人口會誤判擁擠程度；密度把人口除以面積，能進行較公平的空間比較。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有地圖就能回答所有地理問題。",
+      "whyWrong": "地圖常缺少原因、感受或精確時序。",
+      "correction": "依問題搭配統計、觀察或訪查。"
+    },
+    {
+      "belief": "受訪者說的話一定比統計真實。",
+      "whyWrong": "訪談反映經驗，可能受記憶與樣本影響。",
+      "correction": "查樣本並和可觀察資料交叉檢證。"
+    },
+    {
+      "belief": "資料數量愈多就愈適合。",
+      "whyWrong": "大量但年份、範圍或定義不符的資料仍不能回答問題。",
+      "correction": "先看問題與資料欄位是否對應。"
+    },
+    {
+      "belief": "總量與比率可以任意替換。",
+      "whyWrong": "兩者的分母與解讀不同，可能產生相反排名。",
+      "correction": "依要比較規模或相對程度選指標。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "查店家位置最直接使用哪類資料？",
+      "answer": "店址點位圖或可定位的地址資料。",
+      "reason": "問題要回答空間位置。"
+    },
+    {
+      "prompt": "了解搬家原因只看戶籍遷移數夠嗎？",
+      "answer": "不夠。",
+      "reason": "數量看得出變動，原因需訪查或其他證據。"
+    },
+    {
+      "prompt": "為何地圖要確認年份？",
+      "answer": "地表與行政邊界會改變。",
+      "reason": "舊圖可能不符合研究時點。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

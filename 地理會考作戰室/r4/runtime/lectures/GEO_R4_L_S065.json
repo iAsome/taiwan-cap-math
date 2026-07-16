@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S065",
+  "subject": "geography",
+  "unitId": "GEO_R4_U10",
+  "skillId": "GEO_R4_S065",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S064"
+  ],
+  "objectives": [
+    "能由降水、集水區地形與土地覆蓋解釋河川流量及到達時間的變化。",
+    "能讀取流量歷線的基流、上升段、洪峰與時間延遲，並限制因果推論。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S065_SEC01",
+      "title": "流量是單位時間通過的水量",
+      "content": "河川流量常以立方公尺每秒表示，水位高低與流量相關但不相等；同一水位在不同河道斷面可能對應不同流量。比較測站時要核對單位、斷面與統計時段。"
+    },
+    {
+      "id": "GEO_R4_L_S065_SEC02",
+      "title": "降水先轉成逕流再到河道",
+      "content": "降水強度大、歷時長或前期土壤已濕，較容易增加地表逕流與洪峰。降雨停止後流量仍可能因坡面、支流與地下水補注而延後上升或緩慢退水。"
+    },
+    {
+      "id": "GEO_R4_L_S065_SEC03",
+      "title": "集水區條件改變洪峰反應",
+      "content": "坡陡、河網密、地表不透水比例高，通常使水較快集中；森林與滲透良好土壤常延緩部分逕流，但不能保證任何暴雨下都不淹水。集水區大也可能收集更多水，反應時間則受形狀與河網影響。"
+    },
+    {
+      "id": "GEO_R4_L_S065_SEC04",
+      "title": "流量變化不能只怪單一因素",
+      "content": "季節雨量、融雪、蒸發、取水、水庫操作與土地利用都可影響流量。兩條歷線不同時，應先列可能因素，再用相同暴雨、前期含水與操作紀錄逐一控制。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S065_EX01",
+      "prompt": "暴雨在十時達峰，河川流量十三時達峰，如何描述？",
+      "steps": [
+        "分別找兩峰時間",
+        "計算十三減十",
+        "說明水流匯集需時"
+      ],
+      "answer": "流量洪峰較雨峰延遲三小時。",
+      "why": "延遲不代表測量錯誤，是集水區反應的重要指標。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S065_EX02",
+      "prompt": "同雨量下，停車場增加後洪峰更早更高，可能原因為何？",
+      "steps": [
+        "辨認不透水面增加",
+        "連結入滲減少",
+        "比較逕流集中速度"
+      ],
+      "answer": "更多雨水快速成為地表逕流。",
+      "why": "仍需控制排水工程與前期土壤，不能只由一場事件定論。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S065_EX03",
+      "prompt": "雨停後流量仍高，是否矛盾？",
+      "steps": [
+        "區分降雨與出口流量",
+        "考慮上游傳遞時間",
+        "加入地下水與坡面退水"
+      ],
+      "answer": "不矛盾，集水區儲水仍可持續補注河道。",
+      "why": "流量歷線通常比雨量歷線晚且退水較慢。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "雨停後河流應立刻回到原流量。",
+      "whyWrong": "集水區與河道仍在傳遞先前降水。",
+      "correction": "觀察退水段與時間延遲。"
+    },
+    {
+      "belief": "水位公尺就是流量立方公尺每秒。",
+      "whyWrong": "兩者是不同物理量與單位。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "核對流量率定與斷面。"
+    },
+    {
+      "belief": "森林可完全消除所有洪水。",
+      "whyWrong": "極端雨量仍可能超過土壤與河道容量。",
+      "correction": "把效果寫成降低或延緩部分逕流。"
+    },
+    {
+      "belief": "洪峰較高必定只因雨量較大。",
+      "whyWrong": "前期濕度、土地覆蓋與操作也會改變反應。",
+      "correction": "控制其他條件再比較。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "流量常用什麼單位？",
+      "answer": "立方公尺每秒。",
+      "reason": "表示單位時間水量。"
+    },
+    {
+      "prompt": "雨峰後才出現流量峰正常嗎？",
+      "answer": "正常。",
+      "reason": "逕流匯集需要時間。"
+    },
+    {
+      "prompt": "不透水面增加常如何改變洪峰？",
+      "answer": "較快且可能較高。",
+      "reason": "入滲與暫存減少。"
+    },
+    {
+      "prompt": "比較兩事件要控制什麼？",
+      "answer": "雨量、前期含水、集水區與人為操作。",
+      "reason": "避免單因歸因。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

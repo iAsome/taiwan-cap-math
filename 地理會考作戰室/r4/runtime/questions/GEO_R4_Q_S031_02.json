@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S031_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "比較高緯與低緯區域實際面積，哪項資料最可靠？",
+  "options": [
+    "未標投影的世界地圖",
+    "等積地圖或同單位面積統計",
+    "國名在地圖上的字體大小",
+    "各區離頁面邊緣的距離"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未標投影無法確認面積比例。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "等積圖與一致單位統計可直接支持實際面積比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "字體大小是排版，不是面積資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "頁面位置與實際面積無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "資料選擇"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "依地圖排版判斷國土大小"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項提供可驗證的面積比例或數值。 正確選項「等積地圖或同單位面積統計」可由題幹推出，因為等積圖與一致單位統計可直接支持實際面積比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘資訊都可能受製圖與排版影響，不能公平比較面積。 逐項排除其他選項：「未標投影的世界地圖」未標投影無法確認面積比例。；「國名在地圖上的字體大小」字體大小是排版，不是面積資料。；「各區離頁面邊緣的距離」頁面位置與實際面積無關。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,146 @@
+{
+  "id": "GEO_R4_L_S230",
+  "subject": "geography",
+  "unitId": "GEO_R4_U35",
+  "skillId": "GEO_R4_S230",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S229"
+  ],
+  "objectives": [
+    "由圖名圖例方位尺度與分區值判讀災害風險空間差異",
+    "疊合危害人口設施和路網資料選擇避難與減災優先區"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S230_SEC01",
+      "title": "先讀地圖語言再讀位置",
+      "content": "災害地圖判讀先確認圖名與日期，辨認呈現的是危害、暴露或綜合風險，再讀圖例分類、北箭、比例尺、座標和資料來源。相同顏色在不同圖不一定同義，分級界線也可能代表水深、機率或綜合分數。若沒有單位與期間，就不能把深色直接說成每年一定受災；黑白印刷時還需用線紋、符號和標籤區分類別。"
+    },
+    {
+      "id": "GEO_R4_L_S230_SEC02",
+      "title": "圖層疊合才形成風險判讀",
+      "content": "危害分區顯示物理影響可能，人口與土地使用顯示暴露，建物、年齡、交通和服務顯示脆弱度與能力。高危害無人區不一定是人員損失熱點，低危害的大型醫院也可能因服務人口多而需要備援。疊合時要維持相同投影、尺度和日期，避免將不同年份的聚落與危害圖當成同一時點。"
+    },
+    {
+      "id": "GEO_R4_L_S230_SEC03",
+      "title": "路徑判讀要檢查瓶頸",
+      "content": "避難所位於低危害區不代表路線安全，居民可能需穿越高危害帶、唯一橋梁或陡坡。應沿實際道路逐段檢查危害、容量、無障礙、行程時間與替代路線。直線距離最近的避難所未必可達，河川兩岸、鐵路和封閉道路都會改變網路距離。關鍵設施還需考慮供電、供水和通訊是否共用同一危害區。"
+    },
+    {
+      "id": "GEO_R4_L_S230_SEC04",
+      "title": "地圖有解析度與不確定性",
+      "content": "網格或分區是模型概括，邊界附近的單一房屋不能由粗圖精確判定。地形資料誤差、降雨情境、河道變化和未登記人口都會改變結果。決策可用地圖篩選優先調查區，再以現勘和更細資料確認；更新土地使用後也要重算。地圖應附資料表替代與長文字說明，讓無法看圖者取得相同空間關係。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S230_EX01",
+      "prompt": "深斜線標示淹水機率區，能否說每年都淹？",
+      "steps": [
+        "讀出是機率分區",
+        "事件不會每年必發",
+        "需查重現期"
+      ],
+      "answer": "不能",
+      "why": "圖例定義決定推論範圍。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S230_EX02",
+      "prompt": "避難所近但唯一橋在高危害區，能否只用直線距離推薦？",
+      "steps": [
+        "畫實際路線",
+        "橋梁是瓶頸",
+        "比較替代路"
+      ],
+      "answer": "不能",
+      "why": "可達性取決於路網。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S230_EX03",
+      "prompt": "高危害空地與中危害醫院何者先查？",
+      "steps": [
+        "空地危害高",
+        "醫院服務後果大",
+        "需結合暴露功能"
+      ],
+      "answer": "不能只看危害",
+      "why": "關鍵設施可有更高風險。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "深色就是實際災損最高",
+      "whyWrong": "深色可能只代表危害，仍需疊合暴露脆弱度",
+      "correction": "先讀圖名圖例 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "最近避難所就是最佳",
+      "whyWrong": "道路危害橋梁容量和無障礙會改變可達性",
+      "correction": "使用路網時間 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "分區邊界絕對精確",
+      "whyWrong": "模型解析度與資料誤差使風險常為漸變",
+      "correction": "邊界附近細查 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "一張風險圖永久有效",
+      "whyWrong": "人口建物河道氣候與設施會改變",
+      "correction": "設定更新週期 應依題幹條件與資料證據逐項核對後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "判圖第一步是什麼？",
+      "answer": "確認圖名日期圖例單位和圖層類型",
+      "reason": "先知道地圖量什麼"
+    },
+    {
+      "prompt": "為何疊合人口圖？",
+      "answer": "把危害轉成受影響人口暴露",
+      "reason": "危害不含人口"
+    },
+    {
+      "prompt": "避難路線要檢查什麼？",
+      "answer": "逐段危害容量時間無障礙和替代路",
+      "reason": "直線距離不足"
+    },
+    {
+      "prompt": "粗尺度圖能否判單戶？",
+      "answer": "通常不能，需細圖與現勘",
+      "reason": "應說明解析度"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

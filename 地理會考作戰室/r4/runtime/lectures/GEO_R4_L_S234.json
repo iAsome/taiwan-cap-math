@@ -1,0 +1,146 @@
+{
+  "id": "GEO_R4_L_S234",
+  "subject": "geography",
+  "unitId": "GEO_R4_U35",
+  "skillId": "GEO_R4_S234",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2A-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S233"
+  ],
+  "objectives": [
+    "運用服務下降幅度、恢復時間、備援接替與分群資料評估韌性",
+    "由事件與近失資料找出根因、修正方案並驗證改善"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S234_SEC01",
+      "title": "韌性要量功能曲線",
+      "content": "事件前功能基準、事件時最低服務、恢復速度和達到可接受門檻的時間，共同描述系統韌性。只記設備損壞數會漏掉供水、醫療、交通與通訊是否持續；只記完全修復日也會漏掉最初衝擊多深。可用服務人口、供應量、等待時間或關鍵任務完成率繪製恢復曲線，但不同服務的最低安全門檻需分別定義。"
+    },
+    {
+      "id": "GEO_R4_L_S234_SEC02",
+      "title": "備援要以接替結果而非名單判斷",
+      "content": "兩套設備共用電源或同一洪泛區，名義冗餘仍會共同失效。備援柴油機存在卻缺燃料、插頭不合或人員不會切換，也無法提供功能。事件資料應記錄啟動時間、可供容量、持續時間、失敗原因和人工替代，並在平時演練端到端流程。未被使用的備援不能直接算成功，需有測試證據。"
+    },
+    {
+      "id": "GEO_R4_L_S234_SEC03",
+      "title": "比較成效要有對照與分布",
+      "content": "事件強度不同，不能因今年損失低於去年就全歸功方案；需校正危害、暴露與人口變化，或比較相似未採措施區域。全市平均恢復兩天也可能與偏遠社區停水十天並存，所以要分地區、群體與關鍵設施。避免只挑成功指標，預先定義目標、資料來源與缺漏處理，才能減少事後選擇偏誤。"
+    },
+    {
+      "id": "GEO_R4_L_S234_SEC04",
+      "title": "近失與失敗都要轉成可驗證修正",
+      "content": "近失是差點造成重大後果但因偶然或臨時處置未發生的事件，例如備援僅剩一小時燃料才恢復供電。沒有傷亡不等於系統安全，近失可揭露薄弱環節。事後檢討應重建時間線、區分直接原因和制度根因、指定修正責任期限與成效指標，再於下一次演練驗證；目的不是只找個人代罪，而是防止同一失效重演。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S234_EX01",
+      "prompt": "甲供水降到四成後兩天恢復，乙降到八成後五天恢復，誰更有韌性？",
+      "steps": [
+        "甲衝擊深但恢復快",
+        "乙衝擊淺但恢復慢",
+        "需依最低安全門檻和累積服務缺口"
+      ],
+      "answer": "不能只用單一指標",
+      "why": "應比較完整功能曲線與關鍵需求。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S234_EX02",
+      "prompt": "兩台發電機同在地下室被淹，算有效備援嗎？",
+      "steps": [
+        "設備數為二",
+        "共同暴露同一危害",
+        "同時失效"
+      ],
+      "answer": "不算",
+      "why": "冗餘需有功能和地理獨立性。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S234_EX03",
+      "prompt": "災害無傷亡但警報晚五分鐘，是否值得檢討？",
+      "steps": [
+        "結果可能受偶然低暴露",
+        "警報延遲是真實弱點",
+        "下次可能造成後果"
+      ],
+      "answer": "值得",
+      "why": "近失資料可提前修正。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "設備沒倒就是系統有韌性",
+      "whyWrong": "功能可能因電力人員路網或資訊相依中斷",
+      "correction": "測端到端服務 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "備援清單越長越可靠",
+      "whyWrong": "備援可能共享失效來源或缺乏切換能力",
+      "correction": "演練實際接替 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "今年損失低證明新政策有效",
+      "whyWrong": "事件強度暴露可能不同，需要對照與校正",
+      "correction": "建立可比情境 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "沒有傷亡就不用檢討",
+      "whyWrong": "近失可能只是運氣避免後果，仍揭露系統弱點",
+      "correction": "記錄安全裕度 應依題幹條件與資料證據逐項核對後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "韌性曲線至少含什麼？",
+      "answer": "事件前基準最低功能恢復速度和門檻時間",
+      "reason": "不只完全修復日"
+    },
+    {
+      "prompt": "有效備援如何證明？",
+      "answer": "在主系統失效情境實際接替所需容量與時間",
+      "reason": "名單不夠"
+    },
+    {
+      "prompt": "為何需校正危害？",
+      "answer": "不同事件強度會改變損失，否則無法歸因政策",
+      "reason": "可用對照或模型"
+    },
+    {
+      "prompt": "近失為何有價值？",
+      "answer": "揭露差點造成重大後果的薄弱環節",
+      "reason": "可在災難前修正"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2A-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

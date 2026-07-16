@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S051_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一小時雨量十二毫米與六小時雨量十八毫米，哪段平均雨強較大？",
+  "options": [
+    "無法因雨量有單位",
+    "一小時十二毫米",
+    "六小時十八毫米",
+    "兩者相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料足以計算。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "前者每小時十二，後者平均每小時三。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "總量較大但時間更長。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "平均率不同。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "雨強比較"
+  ],
+  "representationType": "rain-rate",
+  "misconceptionTargets": [
+    "總雨量大就雨勢強"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把累積量除以時數再比較，避免只看十八大於十二。 正確選項「一小時十二毫米」可由題幹推出，因為前者每小時十二，後者平均每小時三。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "短時強雨對排水風險可能更重要，但實際警戒依官方標準。 逐項排除其他選項：「無法因雨量有單位」資料足以計算。 這項內容無法支持題幹所要求的地理判斷。；「六小時十八毫米」總量較大但時間更長。 這項內容無法支持題幹所要求的地理判斷。；「兩者相同」平均率不同。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

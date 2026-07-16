@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S026_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某地中央海拔三百公尺，周圍山峰超過一千公尺，東側有河流出口。它仍可能是盆地嗎？",
+  "options": [
+    "不可能，盆地必完全封閉",
+    "不可能，三百公尺一定是山峰",
+    "可能，因所有河流都位於盆地",
+    "可能，盆地可有排水缺口且中心不必低於海平面"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "許多盆地有河谷出口。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單一三百公尺數字不能判山峰。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "河流存在不是盆地充分條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "相對周圍低且多面環繞是核心，缺口不排除。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "盆地邊界"
+  ],
+  "representationType": "basin-profile",
+  "misconceptionTargets": [
+    "有缺口就不是盆地"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案需同時讀中央與周邊高差，不可用海平面或完全封閉作硬門檻。 正確選項「可能，盆地可有排水缺口且中心不必低於海平面」可由題幹推出，因為相對周圍低且多面環繞是核心，缺口不排除。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "河流缺口反而可解釋盆地如何對外排水。 逐項排除其他選項：「不可能，盆地必完全封閉」許多盆地有河谷出口。 這項內容無法支持題幹所要求的地理判斷。；「不可能，三百公尺一定是山峰」單一三百公尺數字不能判山峰。；「可能，因所有河流都位於盆地」河流存在不是盆地充分條件。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

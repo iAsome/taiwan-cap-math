@@ -1,0 +1,158 @@
+{
+  "id": "GEO_R4_L_S239",
+  "subject": "geography",
+  "unitId": "GEO_R4_U36",
+  "skillId": "GEO_R4_S239",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S238"
+  ],
+  "objectives": [
+    "以共同目標基準和多準則證據比較方案",
+    "透過情境範圍敏感度和可逆性標示不確定性"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S239_SEC01",
+      "title": "先確立共同問題與比較邊界",
+      "content": "方案必須在相同服務目標、期間、人口、空間範圍和基準情境下比較，例如都要保護同樣洪水情境下的居民，而不是一案報建造成本、另一案報終身效益。應列出不作為基準、資本與維護成本、實際減損、環境社會副作用及誰得誰失。共同邊界不能保證答案唯一，但能避免不公平比較。"
+    },
+    {
+      "id": "GEO_R4_L_S239_SEC02",
+      "title": "準則與權重包含價值判斷",
+      "content": "成本、減排、保護人口、可及性、不可逆生態影響、地方權利與實施時間可能互相取捨。權重應公開來源並讓受影響者參與，健康或權利底線不宜只靠加權平均被高分抵銷。可先排除不合底線方案，再在可接受方案中比較。總分適合整理，不應取代原始指標和分配結果。"
+    },
+    {
+      "id": "GEO_R4_L_S239_SEC03",
+      "title": "不確定性有不同來源",
+      "content": "測量誤差可用範圍表示，模型結構可用多模型比較，未來排放、人口和技術屬情境不確定，價值權重則是規範選擇。把所有不確定都塞進一個誤差棒會失去意義。情境分析展示不同未來下結果，敏感度分析則改變關鍵假設或權重，檢查方案排名是否穩健。"
+    },
+    {
+      "id": "GEO_R4_L_S239_SEC04",
+      "title": "穩健方案不必是單一預測下最佳",
+      "content": "若某方案在多數合理情境均達最低功能、可分階段升級且失敗後可修正，可能比只在單一預測得分最高的僵化工程更穩健。決策可設觸發點和監測，例如水位達門檻才啟動下一階段。仍需說明剩餘風險、不可逆損失與資訊價值，並在新資料出現時更新，而非把不確定性當成不行動理由。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S239_EX01",
+      "prompt": "甲成本報一年、乙報三十年，能直接比較嗎？",
+      "steps": [
+        "期間不同",
+        "維護折舊未對齊",
+        "重算共同生命週期"
+      ],
+      "answer": "不能",
+      "why": "比較邊界需一致。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S239_EX02",
+      "prompt": "總分最高但違反飲水健康底線，能否選？",
+      "steps": [
+        "辨認不可交易底線",
+        "高分不能抵銷",
+        "先排除不合規"
+      ],
+      "answer": "不能只按總分",
+      "why": "加權工具不取代法定或倫理底線。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S239_EX03",
+      "prompt": "權重稍變排名就反轉，表示什麼？",
+      "steps": [
+        "結果高度依賴價值假設",
+        "排名不穩健",
+        "需公開取捨或蒐集證據"
+      ],
+      "answer": "敏感度高",
+      "why": "不應宣稱唯一明顯最佳。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "最低成本方案必最佳",
+      "whyWrong": "需同看效果分布維護和副作用",
+      "correction": "使用共同生命週期準則"
+    },
+    {
+      "belief": "總分是完全客觀事實",
+      "whyWrong": "準則選擇和權重包含價值判斷",
+      "correction": "公開原始指標與權重"
+    },
+    {
+      "belief": "不確定性代表不能決策",
+      "whyWrong": "可採穩健可逆分階段措施並監測",
+      "correction": "比較多情境 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "誤差範圍越窄方案必越好",
+      "whyWrong": "精確估計的差方案仍可能不合目標",
+      "correction": "先看結果與底線 應依題幹條件與資料證據逐項核對後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "共同比較邊界含什麼？",
+      "answer": "服務目標期間空間人口和基準情境",
+      "reason": "成本效果需同口徑"
+    },
+    {
+      "prompt": "敏感度分析做什麼？",
+      "answer": "改變假設參數或權重看結論是否改變",
+      "reason": "檢查穩健性"
+    },
+    {
+      "prompt": "為何保留原始指標？",
+      "answer": "總分會遮蔽取捨分配與底線",
+      "reason": "讀者需追溯"
+    },
+    {
+      "prompt": "何謂穩健方案？",
+      "answer": "在多種合理情境仍達核心目標且可調整",
+      "reason": "不必每種情境最高分"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

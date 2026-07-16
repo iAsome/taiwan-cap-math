@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S143_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-1",
+    "AUTH-SOCIAL-LC-GEO-AE-4-2",
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "一家公司想縮短交貨時間，卻把所有倉庫移到距主要市場更遠處。若仍要評估方案，最重要的是什麼？",
+  "options": [
+    "只比較地租，不看配送",
+    "比較總物流時間、成本與中斷率",
+    "只計算倉庫門窗數",
+    "假設距離變遠必然所有成本下降"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地租只是總成本的一部分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此組指標直接檢查交貨目標與代價。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "門窗數不是供應鏈績效。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "距離增加不支持成本必降。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "方案評估"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "只看地租決定物流"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-1",
+      "AUTH-SOCIAL-LC-GEO-AE-4-2",
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "方案目標是交貨，第二項同時量測時間、成本和可靠度。 正確選項「比較總物流時間、成本與中斷率」可由題幹推出，因為此組指標直接檢查交貨目標與代價。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "目標對齊檢核顯示其餘選項不是忽略關鍵成本，就是沒有因果依據。 逐項排除其他選項：「只比較地租，不看配送」地租只是總成本的一部分。；「只計算倉庫門窗數」門窗數不是供應鏈績效。；「假設距離變遠必然所有成本下降」距離增加不支持成本必降。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

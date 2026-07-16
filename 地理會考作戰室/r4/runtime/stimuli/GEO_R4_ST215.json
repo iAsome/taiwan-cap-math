@@ -1,0 +1,93 @@
+{
+  "id": "GEO_R4_ST215",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S215"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BC-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1"
+  ],
+  "content": {
+    "title": "醫療耗材供應中斷時間線",
+    "prompt": "每日需求固定一百箱；可用庫存不含安全保留量。替代來源啟用後每日可供應六十箱。",
+    "table": {
+      "columns": [
+        "日次",
+        "事件或狀態",
+        "主要來源供應",
+        "可用庫存"
+      ],
+      "rows": [
+        [
+          "第0日",
+          "港口設備故障",
+          "每日0箱",
+          "500箱"
+        ],
+        [
+          "第3日",
+          "替代來源完成品質審查",
+          "仍為0箱",
+          "200箱"
+        ],
+        [
+          "第4日",
+          "替代來源開始交貨",
+          "每日60箱",
+          "100箱"
+        ],
+        [
+          "第8日",
+          "港口設備修復",
+          "積壓待清",
+          "0箱"
+        ],
+        [
+          "第10日",
+          "主要來源恢復每日100箱",
+          "每日100箱",
+          "0箱"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "時間線列出港口故障後耗材庫存、替代來源與主要來源恢復。",
+    "longDescription": "第零日主要來源歸零且庫存五百箱；每日需求一百箱。第三日庫存二百箱；第四日替代來源每日供六十箱、庫存一百箱；第八日港口修復但仍有積壓且庫存為零；第十日主要來源才恢復每日一百箱。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S215_ST01",
+    "GEO_R4_Q_S215_ST02",
+    "GEO_R4_Q_S215_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BC-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1"
+    ]
+  }
+}

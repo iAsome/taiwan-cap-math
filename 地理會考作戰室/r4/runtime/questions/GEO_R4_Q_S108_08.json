@@ -1,0 +1,90 @@
+{
+  "id": "GEO_R4_Q_S108_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BA-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BD-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲港裝卸速度快，但通往工業區的道路每日塞車。貨主的總物流時間最可能如何？",
+  "options": [
+    "必然只等於裝卸時間",
+    "與道路狀況完全無關",
+    "一定比航空更快",
+    "仍受港外道路瓶頸拖延"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只看裝卸會低估總時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "工業區貨物必須使用聯外路網。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料不足以與航空作絕對比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "全程時間包含貨櫃離港後的陸運。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "systems-reasoning"
+  ],
+  "representationType": "bottleneck",
+  "misconceptionTargets": [
+    "只擴港內即可"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BA-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BD-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "正確選項「仍受港外道路瓶頸拖延」可由題幹推出，因為全程時間包含貨櫃離港後的陸運。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項排除其他選項：「必然只等於裝卸時間」只看裝卸會低估總時間。；「與道路狀況完全無關」工業區貨物必須使用聯外路網。；「一定比航空更快」資料不足以與航空作絕對比較。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

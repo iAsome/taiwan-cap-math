@@ -1,0 +1,144 @@
+{
+  "id": "GEO_R4_L_S115",
+  "subject": "geography",
+  "unitId": "GEO_R4_U17",
+  "skillId": "GEO_R4_S115",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-2",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S114"
+  ],
+  "objectives": [
+    "辨識平均值無法呈現的所得、服務與空間差距",
+    "依分布型態選用中位數、分位數與分組資料"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S115_SEC01",
+      "title": "平均數是摘要不是全貌",
+      "content": "算術平均把總量平均分配到每個觀察值，容易受少數極高或極低值影響。平均所得提高時，可能只有少數高所得者增加，多數人的處境未必改善。"
+    },
+    {
+      "id": "GEO_R4_L_S115_SEC02",
+      "title": "中位數與分位數",
+      "content": "中位數把排序後資料分成兩半，較不受極端值影響；最高與最低分位所得、百分位差或倍數能呈現分布兩端。不同統計回答不同問題，不能互相完全替代。"
+    },
+    {
+      "id": "GEO_R4_L_S115_SEC03",
+      "title": "拆分群體與地區",
+      "content": "全區平均可能掩蓋城鄉、性別、年齡、族群或行政區差異。分析者應在保護隱私前提下拆分資料，並同時呈現各組人口規模，避免小群體被大群體淹沒。"
+    },
+    {
+      "id": "GEO_R4_L_S115_SEC04",
+      "title": "空間尺度效應",
+      "content": "把街區合併成大區會平滑極端值，縮小看似差距；改用小尺度又可能造成數值不穩或揭露個人。地圖分級與行政界線也會改變視覺印象，需說明尺度與分類法。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S115_EX01",
+      "prompt": "五人所得為二、二、三、三、四十萬元，平均與中位數何者較接近典型所得？",
+      "steps": [
+        "平均為十萬元",
+        "中位數為三萬元",
+        "辨認四十萬元為極端值"
+      ],
+      "answer": "中位數三萬元",
+      "why": "少數高值把平均拉高，中位數較接近多數人。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S115_EX02",
+      "prompt": "全縣平均就醫距離十公里，能否說每個鄉都差不多？",
+      "steps": [
+        "平均只摘要全體",
+        "山區可能遠、都市近",
+        "需要鄉鎮分布"
+      ],
+      "answer": "不能",
+      "why": "相反的地區差距可在總平均中互相抵銷。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S115_EX03",
+      "prompt": "兩地平均所得相同，甲每戶接近平均，乙高低差很大，如何分辨？",
+      "steps": [
+        "保留平均",
+        "加入中位數與分位資料",
+        "比較分布範圍"
+      ],
+      "answer": "查看分布指標",
+      "why": "平均相同不代表內部結構相同。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "平均提高表示每個人都提高",
+      "whyWrong": "平均可由少數高值拉升 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "查看中位數與各分位變化"
+    },
+    {
+      "belief": "中位數永遠比平均好",
+      "whyWrong": "不同問題需要總量、平均或分布的不同資訊",
+      "correction": "依研究目的選指標"
+    },
+    {
+      "belief": "全區平均可代表每個街區",
+      "whyWrong": "空間差異會被合併平滑 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "拆到合適尺度並顯示人口"
+    },
+    {
+      "belief": "地圖顏色差異就是客觀差距大小",
+      "whyWrong": "分級界線與色階會放大或壓縮視覺差異",
+      "correction": "檢查原始值、分類法和圖例"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "何時中位數特別有用？",
+      "answer": "資料偏斜且有極端值時",
+      "reason": "排序中央值較不受少數極端觀察影響。"
+    },
+    {
+      "prompt": "最高分位與最低分位比較可看什麼？",
+      "answer": "分布兩端差距",
+      "reason": "它比單一平均更能呈現不均。"
+    },
+    {
+      "prompt": "拆分資料為何要附人口規模？",
+      "answer": "避免小組百分比被誤當成大量人口",
+      "reason": "同一比例的實際人數可能差很多。"
+    },
+    {
+      "prompt": "大尺度地圖為何常看起來較均勻？",
+      "answer": "區內高低值被平均",
+      "reason": "空間聚合會平滑局部差距。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-2",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  }
+}

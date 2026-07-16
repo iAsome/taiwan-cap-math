@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S053",
+  "subject": "geography",
+  "unitId": "GEO_R4_U08",
+  "skillId": "GEO_R4_S053",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S052"
+  ],
+  "objectives": [
+    "能讀取氣候圖月份、月均溫與月降水量，正確對應折線、柱狀與雙座標軸。",
+    "能由完整十二月序列比較高低、季節分配與缺值，避免把軸高或月份直接當數值。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S053_SEC01",
+      "title": "先讀圖例和兩側座標軸",
+      "content": "氣候圖常用折線表示月均溫、柱狀表示月降水，但不是不可改變的規則，必須先看圖例。左右縱軸可能分別標攝氏度與毫米，刻度間隔不同；折線高度要對溫度軸，柱頂要對雨量軸，不能拿同一水平高度直接比較兩種量。"
+    },
+    {
+      "id": "GEO_R4_L_S053_SEC02",
+      "title": "橫軸月份與資料點",
+      "content": "橫軸通常依一月至十二月排列，每個折線點代表該月多年平均溫度，每根柱代表該月多年平均或累積降水。若圖只列部分月份、資料點落在刻度間或有缺值，就按圖面精度估讀並標約值，不自行補齊看不到的月份。"
+    },
+    {
+      "id": "GEO_R4_L_S053_SEC03",
+      "title": "看序列而不是只挑極值",
+      "content": "最高溫月與最多雨月不必相同；連續幾個月的高溫或多雨更能顯示季節分配。比較兩地時要使用相同統計期間、單位與圖軸，因自動縮放的兩張圖可能讓相同差異看起來一大一小。"
+    },
+    {
+      "id": "GEO_R4_L_S053_SEC04",
+      "title": "月份與季節需依地點判讀",
+      "content": "北半球七月常屬夏季，南半球七月則常屬冬季，赤道附近季節也可能以乾濕為主。不能看到七月高溫便無條件說所有地點皆如此；先查緯度與地理位置，再用溫度和雨量序列判當地季節。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S053_EX01",
+      "prompt": "七月折線點對左軸二十八度、柱頂對右軸二百毫米，如何讀？",
+      "steps": [
+        "依圖例確認折線是溫度",
+        "左軸讀二十八度",
+        "右軸柱讀二百毫米"
+      ],
+      "answer": "七月月均溫二十八度、月降水二百毫米。",
+      "why": "兩值共用月份但使用不同軸，不能把柱高讀成二十八毫米。"
+    },
+    {
+      "id": "GEO_R4_L_S053_EX02",
+      "prompt": "甲圖溫度軸零至四十、乙圖十五至三十，兩條線視覺起伏誰大？",
+      "steps": [
+        "軸範圍不同會放大外觀",
+        "讀實際最高最低值",
+        "計算年溫差再比"
+      ],
+      "answer": "不能只由線條視覺起伏判。",
+      "why": "乙軸截短會讓小差異看起來大，必須讀數值。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S053_EX03",
+      "prompt": "某月柱狀缺一根且表格標 NA，能當零雨量嗎？",
+      "steps": [
+        "NA 表示缺值",
+        "零雨量是有效數值",
+        "查來源或排除該月"
+      ],
+      "answer": "不能，應標該月降水未知。",
+      "why": "把未知當零會低估年降水量，也可能錯判乾季。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "折線永遠表示溫度，柱狀永遠表示雨量。",
+      "whyWrong": "圖表設計可反轉或使用其他變數，必須讀圖例。",
+      "correction": "先確認系列名稱與單位。"
+    },
+    {
+      "belief": "左右軸同一高度表示數值相同。",
+      "whyWrong": "兩軸單位和刻度不同，水平位置無法直接比較數字。",
+      "correction": "各自投影到對應軸。"
+    },
+    {
+      "belief": "七月必定是所有地點最熱月。",
+      "whyWrong": "半球與海陸位置不同，季節時相也不同。",
+      "correction": "讀實際十二月序列。"
+    },
+    {
+      "belief": "缺柱就是零降水。",
+      "whyWrong": "可能是遺漏資料，零值應有明確標示。",
+      "correction": "查缺值符號與來源。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "讀折線前先看什麼？",
+      "answer": "圖例與對應座標軸。",
+      "reason": "確定變數、單位與刻度。"
+    },
+    {
+      "prompt": "同高柱與線能直接比數值嗎？",
+      "answer": "不能。",
+      "reason": "兩者通常使用不同單位軸。"
+    },
+    {
+      "prompt": "NA 月份可算零嗎？",
+      "answer": "不可以。",
+      "reason": "未知與零值不同。"
+    },
+    {
+      "prompt": "南半球七月通常是什麼季節？",
+      "answer": "冬季。",
+      "reason": "季節與北半球相反。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

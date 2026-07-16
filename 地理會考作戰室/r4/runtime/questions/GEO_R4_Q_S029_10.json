@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S029_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要判斷某世界地圖是否適合精確比較國土面積，最關鍵還需取得哪項資訊？",
+  "options": [
+    "印刷紙張的厚度",
+    "地圖使用的字體",
+    "投影是否保留面積比例",
+    "出版者辦公室的位置"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "紙張厚度不決定投影面積性質。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "字體只影響標示可讀性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "等積性直接決定能否公平比較圖面面積。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "辦公地點與地圖幾何無關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資訊需求判斷"
+  ],
+  "representationType": "scenario",
+  "misconceptionTargets": [
+    "以製圖外觀資訊代替投影性質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "任務是比較面積，所需資訊必須直接指向等積性。 正確選項「投影是否保留面積比例」可由題幹推出，因為等積性直接決定能否公平比較圖面面積。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他資訊即使存在，也不能檢驗國土圖面面積是否失真。 逐項排除其他選項：「印刷紙張的厚度」紙張厚度不決定投影面積性質。；「地圖使用的字體」字體只影響標示可讀性。；「出版者辦公室的位置」辦公地點與地圖幾何無關。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

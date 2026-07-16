@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "北箭頭磨損，只看得出一條緯線與一條經線。要判斷兩點方位，哪項資訊最有幫助？",
+  "options": [
+    "兩點旁的字體大小",
+    "圖紙價格",
+    "緯度數值向哪一側增加、經度數值向哪一側增加",
+    "地圖出版者姓名長短"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "字體大小通常表示標示層級，不是方位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "價格與方位系統沒有關聯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "數值增減可辨認南北與東西，重建地圖方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "出版者姓名不能指示北方。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "使用經緯線判向"
+  ],
+  "representationType": "map",
+  "misconceptionTargets": [
+    "只依紙面方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "緯度向北或向南增加、經度向東或向西增加，可替代缺損北箭頭判讀方向。 正確選項「緯度數值向哪一側增加、經度數值向哪一側增加」可由題幹推出，因為數值增減可辨認南北與東西，重建地圖方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他三項都不提供空間方向證據，因此無法成為合理替代答案。 逐項排除其他選項：「兩點旁的字體大小」字體大小通常表示標示層級，不是方位。；「圖紙價格」價格與方位系統沒有關聯。；「地圖出版者姓名長短」出版者姓名不能指示北方。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

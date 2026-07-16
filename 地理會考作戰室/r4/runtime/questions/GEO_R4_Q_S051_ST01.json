@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S051_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": "GEO_R4_ST051",
+  "stem": "只比較海平面氣壓，哪站較低？",
+  "options": [
+    "甲丙相同",
+    "乙",
+    "甲",
+    "丙"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料不同。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "乙一千百帕低於甲一千零四。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲較高。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丙是未校正測站氣壓，不能直接列入。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "欄位一致"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "所有氣壓欄可直接排序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先篩選欄位定義相同的甲乙，再比較數值。 正確選項「乙」可由題幹推出，因為乙一千百帕低於甲一千零四。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "丙站壓低很大部分来自海拔，不能與海平面氣壓直接排序。 逐項排除其他選項：「甲丙相同」資料不同。 這項內容無法支持題幹所要求的地理判斷。；「甲」甲較高。 這項內容無法支持題幹所要求的地理判斷。；「丙」丙是未校正測站氣壓，不能直接列入。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

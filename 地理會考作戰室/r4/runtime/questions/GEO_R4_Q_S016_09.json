@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S016_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S016"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一張地圖的線段比例尺零至五公里在紙上長二公分，某曲線以直線端點量為三公分。能得到什麼？",
+  "options": [
+    "端點直線距離七點五公里",
+    "曲線全程一定七點五公里",
+    "端點直線距離三公里",
+    "曲線一定短於端點直線"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三公分是刻度長二公分的一點五倍，端點直線為七點五公里。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "直尺只量端點，彎曲路程通常更長。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "圖距三公分不能直接當三公里。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "曲線路程不會因彎曲而必然更短。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "量測對象"
+  ],
+  "representationType": "curved-route",
+  "misconceptionTargets": [
+    "把端點直線當曲線長"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "線段比例尺可以換算所量的三公分，但結果名稱必須限定為端點直線距離。 正確選項「端點直線距離七點五公里」可由題幹推出，因為三公分是刻度長二公分的一點五倍，端點直線為七點五公里。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題目沒有提供曲線圖長，故不能把七點五公里標成曲線全程。 逐項排除其他選項：「曲線全程一定七點五公里」直尺只量端點，彎曲路程通常更長。；「端點直線距離三公里」圖距三公分不能直接當三公里。；「曲線一定短於端點直線」曲線路程不會因彎曲而必然更短。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

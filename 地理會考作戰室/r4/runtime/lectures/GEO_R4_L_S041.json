@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S041",
+  "subject": "geography",
+  "unitId": "GEO_R4_U06",
+  "skillId": "GEO_R4_S041",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S040"
+  ],
+  "objectives": [
+    "能把設施目的、服務對象、可達性、安全、土地與環境條件轉為必要 GIS 圖層。",
+    "能區分硬性排除、最低門檻與偏好排序，檢查圖層時效、尺度及合法適用性。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S041_SEC01",
+      "title": "從設施任務反推資料",
+      "content": "醫療站、消防站、垃圾處理場與公園的服務需求不同，所需圖層也不同。先說明誰要使用、服務時限、基地大小與不能接受的風險，再選人口、路網、地形、災害、土地使用、權屬及環境敏感區等資料，而非把現有圖層全部堆入模型。"
+    },
+    {
+      "id": "GEO_R4_L_S041_SEC02",
+      "title": "可達性要用路網而非直線",
+      "content": "設施到居民的直線距離不會反映河流、鐵路、單行道、橋梁與坡度。救護或消防服務宜用具通行狀態、速度與轉向限制的路網計時間；步行服務還需人行穿越與無障礙資訊。人口需求則應與可達範圍相交，而非只看行政區中心。"
+    },
+    {
+      "id": "GEO_R4_L_S041_SEC03",
+      "title": "排除條件與排序條件分開",
+      "content": "法定禁建、洪水高危或基地面積不足可設為硬性排除；人口服務量、成本或距道路遠近可作排序。若把所有條件平均成一個分數，極高災害風險可能被人口優勢抵銷。模型應公開門檻、權重與例外審核規則。"
+    },
+    {
+      "id": "GEO_R4_L_S041_SEC04",
+      "title": "圖層品質限制模型品質",
+      "content": "地籍與土地使用要有合法來源與更新日期，災害圖需符合分析尺度，人口資料要保護隱私並說明統計時點。缺少關鍵圖層時應標記無法完成或只作初篩，不能用無關替代資料填補；最終設址還需現勘、法規和社區參與。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S041_EX01",
+      "prompt": "選消防站要達成八分鐘服務，必要圖層是什麼？",
+      "steps": [
+        "取得可行基地與土地限制",
+        "用最新道路速度與轉向建路網",
+        "疊合人口建物及災害暴露"
+      ],
+      "answer": "至少需要基地、路網、需求人口與災害土地限制圖層。",
+      "why": "只用直線圓形服務區會跨越不可通行障礙，不能代表實際八分鐘。"
+    },
+    {
+      "id": "GEO_R4_L_S041_EX02",
+      "prompt": "公園候選地人口多但位於法定保護核心區，可用高人口分數抵銷嗎？",
+      "steps": [
+        "確認保護核心是硬性限制",
+        "不與偏好條件平均",
+        "排除後再比較其他地"
+      ],
+      "answer": "不能，以硬性排除規則處理。",
+      "why": "門檻與偏好分開能避免數學總分掩蓋法規或安全底線。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S041_EX03",
+      "prompt": "只有行政區人口和道路中心線，能完成無障礙診所設址嗎？",
+      "steps": [
+        "人口分布太粗",
+        "路網缺坡度人行障礙",
+        "土地與災害條件也缺"
+      ],
+      "answer": "不能完成，只能作非常初步的範圍篩查。",
+      "why": "應列出缺失圖層及其可能改變結論的方式，再取得資料。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "設址模型圖層越多越準。",
+      "whyWrong": "無關、過舊或重複圖層會增加噪音與不透明權重。",
+      "correction": "每層都對應明確決策問題。"
+    },
+    {
+      "belief": "直線最近就代表到達最快。",
+      "whyWrong": "路網障礙、速限與轉向會改變旅行時間。",
+      "correction": "用符合運具的可達網路。"
+    },
+    {
+      "belief": "高需求可抵銷任何安全禁建條件。",
+      "whyWrong": "硬性排除不應被偏好分數平均掉。",
+      "correction": "先排除，再對合格地排序。"
+    },
+    {
+      "belief": "缺關鍵圖層時填零就表示低風險。",
+      "whyWrong": "缺值是未知，填零會把未調查誤作安全。",
+      "correction": "標未知並停止需要該層的結論。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "服務時間應用直線圈或路網？",
+      "answer": "路網。",
+      "reason": "它能反映實際通行與速度。"
+    },
+    {
+      "prompt": "法定禁建通常是排除或偏好？",
+      "answer": "硬性排除。",
+      "reason": "不應由其他高分抵銷。"
+    },
+    {
+      "prompt": "人口圖層為何要適合尺度？",
+      "answer": "行政區總數可能掩蓋區內需求位置。",
+      "reason": "需與實際服務範圍相交。"
+    },
+    {
+      "prompt": "缺災害圖層可否默認安全？",
+      "answer": "不可以。",
+      "reason": "未知不等於低風險。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

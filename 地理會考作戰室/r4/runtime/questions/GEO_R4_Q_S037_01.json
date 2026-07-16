@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "尋找坡度緩、人口多且道路可達的候選地，最直接需要哪些圖層？",
+  "options": [
+    "地形、人口與交通",
+    "只要行政區名稱",
+    "只要衛星雲圖",
+    "只要海洋深度"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三層分別對應可建性、需求與可達性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱不能給坡度人口路網。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "雲圖不直接提供三項條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "海深與陸上候選地無關。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "圖層選擇"
+  ],
+  "representationType": "overlay",
+  "misconceptionTargets": [
+    "單一圖層回答所有條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把自然與人文條件拆成可量圖層，再取符合門檻的交集。 正確選項「地形、人口與交通」可由題幹推出，因為三層分別對應可建性、需求與可達性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "實際設址還需土地、災害與環境圖層，本題只問直接三項。 逐項排除其他選項：「只要行政區名稱」名稱不能給坡度人口路網。；「只要衛星雲圖」雲圖不直接提供三項條件。；「只要海洋深度」海深與陸上候選地無關。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

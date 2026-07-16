@@ -1,0 +1,90 @@
+{
+  "id": "GEO_R4_Q_S115_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BB-4-2",
+    "AUTH-SOCIAL-LC-GEO-BB-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-3",
+    "AUTH-SOCIAL-LC-GEO-BH-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲地平均所得高於乙地，但甲的中位數低於乙地，最可能的分布是什麼？",
+  "options": [
+    "兩地所有所得必然相等",
+    "甲有少數極高所得者拉高平均",
+    "甲每個人都比乙高",
+    "乙沒有中位數"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "平均與中位數差異否定完全相等。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "高端極端值可讓平均高而典型所得較低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "若人人較高，中位數通常不會較低。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任何有排序資料的群體都有中位數概念。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "inference"
+  ],
+  "representationType": "skewed-distribution",
+  "misconceptionTargets": [
+    "平均較高等於人人較高"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BB-4-2",
+      "AUTH-SOCIAL-LC-GEO-BB-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-3",
+      "AUTH-SOCIAL-LC-GEO-BH-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "平均與中位數交叉可揭示偏斜。 正確選項「甲有少數極高所得者拉高平均」可由題幹推出，因為高端極端值可讓平均高而典型所得較低。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項排除其他選項：「兩地所有所得必然相等」平均與中位數差異否定完全相等。；「甲每個人都比乙高」若人人較高，中位數通常不會較低。；「乙沒有中位數」任何有排序資料的群體都有中位數概念。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

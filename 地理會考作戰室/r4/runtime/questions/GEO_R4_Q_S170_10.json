@@ -1,0 +1,82 @@
+{
+  "id": "GEO_R4_Q_S170_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-2",
+    "AUTH-SOCIAL-LC-GEO-BE-4-3",
+    "AUTH-SOCIAL-LC-GEO-BE-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "雨季預報準確度有限，仍有什麼價值？",
+  "options": [
+    "不需公開不確定性",
+    "可支援分批播種、庫存與情境準備，但不能當確定命令",
+    "沒有百分之百就完全無用",
+    "預報能保證不歉收"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "使用者需理解範圍。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "機率資訊可改善風險決策。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "決策不要求完全確定。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍有病蟲害市場等因素。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "uncertainty"
+  ],
+  "representationType": "seasonal-forecast",
+  "misconceptionTargets": [
+    "預報不是完美就沒價值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-2",
+      "AUTH-SOCIAL-LC-GEO-BE-4-3",
+      "AUTH-SOCIAL-LC-GEO-BE-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正確選項「可支援分批播種、庫存與情境準備，但不能當確定命令」可由題幹推出，因為機率資訊可改善風險決策。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項排除其他選項：「不需公開不確定性」使用者需理解範圍。 這項內容無法支持題幹所要求的地理判斷。；「沒有百分之百就完全無用」決策不要求完全確定。 這項內容無法支持題幹所要求的地理判斷。；「預報能保證不歉收」仍有病蟲害市場等因素。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

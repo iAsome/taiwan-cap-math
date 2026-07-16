@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S033_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "學生要用影像軟體量各國像素面積。什麼前提下結果才較能代表實際面積比？",
+  "options": [
+    "底圖採等積投影且解析度一致",
+    "每國填上不同顏色",
+    "國名全部刪除",
+    "把螢幕亮度調到最高"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "等積投影使圖面面積比例對應實際面積，解析度一致才能公平數像素。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顏色差只利於辨識。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪國名不會修正面積尺度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "亮度與幾何比例無關。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "研究設計"
+  ],
+  "representationType": "digital-method",
+  "misconceptionTargets": [
+    "以影像工具取代投影前提"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "像素法成立需先有等積幾何與一致影像尺度，第一項完整。 正確選項「底圖採等積投影且解析度一致」可由題幹推出，因為等積投影使圖面面積比例對應實際面積，解析度一致才能公平數像素。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他操作只改視覺呈現，不建立面積換算關係。 逐項排除其他選項：「每國填上不同顏色」顏色差只利於辨識。 這項內容無法支持題幹所要求的地理判斷。；「國名全部刪除」刪國名不會修正面積尺度。；「把螢幕亮度調到最高」亮度與幾何比例無關。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

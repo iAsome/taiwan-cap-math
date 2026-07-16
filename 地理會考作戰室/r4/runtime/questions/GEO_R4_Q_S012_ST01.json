@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S012_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST012",
+  "stem": "目標座標對應哪個候選點？",
+  "options": [
+    "乙",
+    "丙",
+    "丁",
+    "甲"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙的緯度與經度方位都不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "丙的 20°N、40°W 與目標完全相同。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丁緯度為 S，不符合 N。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲的經度為 E，不符合 W。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "座標配對"
+  ],
+  "representationType": "mixed",
+  "misconceptionTargets": [
+    "忽略方位字母"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐欄比對緯度與經度，只有丙兩項及方位字母都一致。 正確選項「丙」可由題幹推出，因為丙的 20°N、40°W 與目標完全相同。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "數值相同仍需檢查 N、S、E、W，因此答案索引二。 逐項排除其他選項：「乙」乙的緯度與經度方位都不符。；「丁」丁緯度為 S，不符合 N。 這項內容無法支持題幹所要求的地理判斷。；「甲」甲的經度為 E，不符合 W。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

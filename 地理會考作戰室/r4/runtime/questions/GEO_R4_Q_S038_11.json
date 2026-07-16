@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S038_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "災後快速辨識淹水範圍，哪種流程較可靠？",
+  "options": [
+    "把所有陰影算成水",
+    "忽略拍攝時間",
+    "比較災前後同類影像，排除雲影並以地形與現場回報驗證",
+    "只看災後任何暗色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "陰影不是水面。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水位和雲況隨時間快速變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "多時相與輔助資料可降低誤判。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "暗色可能是雲影建物。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "淹水判釋"
+  ],
+  "representationType": "flood-image",
+  "misconceptionTargets": [
+    "暗色像元皆為淹水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "快速製圖仍需時間戳、資料來源與不確定區標記。 正確選項「比較災前後同類影像，排除雲影並以地形與現場回報驗證」可由題幹推出，因為多時相與輔助資料可降低誤判。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "救災決策應與官方水情及現場資訊交叉核對。 逐項排除其他選項：「把所有陰影算成水」陰影不是水面。 這項內容無法支持題幹所要求的地理判斷。；「忽略拍攝時間」水位和雲況隨時間快速變化。；「只看災後任何暗色」暗色可能是雲影建物。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

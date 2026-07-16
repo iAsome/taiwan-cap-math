@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S030_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "救難隊有兩圖：甲保中心距離，乙保全球面積。任務是畫出基地 200 公里可達範圍，應如何選？",
+  "options": [
+    "選甲，因任務以基地為中心量距",
+    "選乙，因面積較公平",
+    "任選其一，投影性質不影響",
+    "把兩圖的國界相加"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "固定基地半徑正需要由中心量距的性質。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "等積不保證基地到周圍距離。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "投影性質直接影響半徑判讀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "相加國界沒有地理意義。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "任務配對",
+    "決策"
+  ],
+  "representationType": "operational-scenario",
+  "misconceptionTargets": [
+    "不依任務選擇投影性質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "將任務轉為『基地到各地的距離』，甲的性質恰好匹配。 正確選項「選甲，因任務以基地為中心量距」可由題幹推出，因為固定基地半徑正需要由中心量距的性質。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "乙只處理面積，另外兩項不符合任何有效製圖方法。 逐項排除其他選項：「選乙，因面積較公平」等積不保證基地到周圍距離。；「任選其一，投影性質不影響」投影性質直接影響半徑判讀。；「把兩圖的國界相加」相加國界沒有地理意義。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

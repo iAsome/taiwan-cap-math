@@ -1,0 +1,158 @@
+{
+  "id": "GEO_R4_L_S236",
+  "subject": "geography",
+  "unitId": "GEO_R4_U36",
+  "skillId": "GEO_R4_S236",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S235"
+  ],
+  "objectives": [
+    "辨認多來源資訊的一致互補衝突與不可比關係",
+    "依來源鏈方法獨立性利益與可重現性評估證據"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S236_SEC01",
+      "title": "多來源不是單純投票",
+      "content": "兩份資料若引用同一原始報告，不能算兩個獨立證據；十篇新聞轉載同一數字也不會提高量測可靠度。整理時應追到原始資料，記錄作者、日期、方法、範圍、資助與版本。來源多樣性的價值在於不同方法或觀點能交叉檢查盲點，而不是以數量多決定真假。官方、企業、社區與學術來源都需按可查方法判斷。"
+    },
+    {
+      "id": "GEO_R4_L_S236_SEC02",
+      "title": "一致互補與衝突要分清",
+      "content": "兩測站在相同期間顯示同方向趨勢屬一致；地圖顯示污染位置、訪談解釋居民如何暴露，屬互補；同地同時同指標卻數值超出誤差範圍，才是明確衝突。若一份報年度平均、一份報事件尖峰，兩者回答不同問題，不宜先判矛盾。建立對照表可先排除時間、空間、單位、定義與樣本不同。"
+    },
+    {
+      "id": "GEO_R4_L_S236_SEC03",
+      "title": "衝突是檢查方法的入口",
+      "content": "遇到衝突先查校準、抽樣、缺值、尺度、分類門檻和版本，再看利益關係與是否可取得原始資料。企業資助不會自動使數據錯誤，居民經驗也不因樣本小而毫無價值；前者需獨立複核，後者可揭露監測未涵蓋的時間地點。若仍無法解決，應並列結果、說明哪個結論仍可成立並提出能區分兩種解釋的新資料。"
+    },
+    {
+      "id": "GEO_R4_L_S236_SEC04",
+      "title": "證據鏈需要可追蹤與可反駁",
+      "content": "結論旁應標示支持來源和推論步驟，例如衛星顯示地表變化、土地紀錄確認開發時點、水位站顯示事件響應。每一箭頭都要有證據，不能讓相關性自動變成因果。可信分析也說明什麼結果會使結論改變，並保留不利或無效果資料，避免只挑支持預期的來源。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S236_EX01",
+      "prompt": "三篇文章都引用同一測站，算三份獨立證據嗎？",
+      "steps": [
+        "追查引用鏈",
+        "原始數據只有一組",
+        "轉載沒有新增量測"
+      ],
+      "answer": "不算",
+      "why": "可作傳播來源但不能重複計權。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S236_EX02",
+      "prompt": "年平均正常、居民反映夜間刺鼻，是否衝突？",
+      "steps": [
+        "平均與短時峰值尺度不同",
+        "居民指出夜間時段",
+        "需夜間連續監測"
+      ],
+      "answer": "未必",
+      "why": "兩者可互補揭露時間缺口。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S236_EX03",
+      "prompt": "兩實驗室同樣本結果不同怎麼辦？",
+      "steps": [
+        "核對單位與偵測極限",
+        "檢查採樣保存校準",
+        "盲樣複測"
+      ],
+      "answer": "先查方法再判",
+      "why": "來源聲望不能取代方法核對。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "來源越多數就越真",
+      "whyWrong": "多份轉載可能共享同一原始資料",
+      "correction": "畫出來源依賴鏈 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "數字不同就是衝突",
+      "whyWrong": "期間範圍單位和指標不同可能各自正確",
+      "correction": "先對齊可比性 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "有利益關係的資料必為假",
+      "whyWrong": "利益需揭露並增加獨立查核，真偽仍看方法",
+      "correction": "取得原始資料複核"
+    },
+    {
+      "belief": "無法解決衝突就任選一方",
+      "whyWrong": "應並列不確定性並設計可區分解釋的新觀測",
+      "correction": "限制結論強度 應依題幹條件與資料證據逐項核對後再判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "何謂獨立來源？",
+      "answer": "未共用同一量測或轉載鏈，方法資料有相對獨立性",
+      "reason": "作者數不等於獨立"
+    },
+    {
+      "prompt": "何謂互補資訊？",
+      "answer": "不同資料回答因果鏈或尺度的不同部分",
+      "reason": "不需數值相同"
+    },
+    {
+      "prompt": "衝突第一步查什麼？",
+      "answer": "時間空間單位定義樣本和方法",
+      "reason": "先排除不可比"
+    },
+    {
+      "prompt": "無法解決衝突如何寫？",
+      "answer": "並列結果範圍與不確定性，提出新資料需求",
+      "reason": "不隱藏反例"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-3"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "GEO_R4_ST021",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "content": {
+    "title": "比例尺計算稽核表",
+    "prompt": "三位學生使用同一張一比五萬、未縮放的地圖；原始圖距皆由直尺讀到零點一公分。",
+    "table": {
+      "columns": [
+        "學生",
+        "圖距與目標",
+        "計算紀錄",
+        "回報"
+      ],
+      "rows": [
+        [
+          "甲",
+          "2.4公分，端點直線",
+          "2.4×50,000＝120,000公分",
+          "120,000公里"
+        ],
+        [
+          "乙",
+          "3.0公分，沿筆直道路",
+          "150,000公分÷100,000",
+          "1.50000公里"
+        ],
+        [
+          "丙",
+          "4.2公分，沿彎曲河道",
+          "用直尺連兩端後乘50,000",
+          "2.1公里沿河距離"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "列出三位學生在一比五萬地圖上的圖距、算式與回報，用於辨認單位、精度與量法錯誤。",
+    "longDescription": "甲的端點直線圖距二點四公分，正確算到十二萬公分，卻回報十二萬公里；乙沿筆直道路三點零公分，算得一點五公里但保留五位小數；丙要量彎曲河道，卻以直尺連端點，回報二點一公里沿河距離。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S021_ST01",
+    "GEO_R4_Q_S021_ST02",
+    "GEO_R4_Q_S021_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

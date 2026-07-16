@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "四個測試結果為：面積通過、形狀未通過、距離無資料、方向無資料。下列報告何者不超出證據？",
+  "options": [
+    "此圖只證實可比較面積",
+    "此圖所有距離都正確",
+    "此圖方向一定錯誤",
+    "此圖完全沒有用途"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "面積測試通過，且其他性質未證實，這是限定範圍的結論。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "距離根本沒有資料，不能宣稱正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "方向無資料不等於一定錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "圖仍可用於面積比較，不能說毫無用途。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據界線"
+  ],
+  "representationType": "test-results",
+  "misconceptionTargets": [
+    "把未測量性質當成已知"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第一項只陳述已通過的面積證據，沒有把未知項目補成結論。 正確選項「此圖只證實可比較面積」可由題幹推出，因為面積測試通過，且其他性質未證實，這是限定範圍的結論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其他三項都將無資料誤當成正確、錯誤或無用。 逐項排除其他選項：「此圖所有距離都正確」距離根本沒有資料，不能宣稱正確。；「此圖方向一定錯誤」方向無資料不等於一定錯誤。；「此圖完全沒有用途」圖仍可用於面積比較，不能說毫無用途。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

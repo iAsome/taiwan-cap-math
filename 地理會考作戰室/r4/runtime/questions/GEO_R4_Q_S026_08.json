@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S026_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同一地區在全臺圖標為山地，在地方詳圖中標出山間盆地，兩者是否矛盾？",
+  "options": [
+    "矛盾，地區只能有一個名稱",
+    "矛盾，盆地不能位於山區",
+    "不矛盾，因地圖不需符合現實",
+    "不矛盾，分類尺度不同可同時成立"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地形可巢狀存在。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "山間盆地正是高地中的局部低地。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不矛盾仍基於真實尺度關係，不是否定地圖。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "廣域概括與局部形態處理不同空間層級。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "尺度效應"
+  ],
+  "representationType": "nested-landform",
+  "misconceptionTargets": [
+    "不同尺度命名必有一個錯"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "全臺圖可能概化小盆地，地方圖則能呈現其周圍高地。 正確選項「不矛盾，分類尺度不同可同時成立」可由題幹推出，因為廣域概括與局部形態處理不同空間層級。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "回答地形問題前應確認題目關注的尺度與圖幅。 逐項排除其他選項：「矛盾，地區只能有一個名稱」地形可巢狀存在。 這項內容無法支持題幹所要求的地理判斷。；「矛盾，盆地不能位於山區」山間盆地正是高地中的局部低地。；「不矛盾，因地圖不需符合現實」不矛盾仍基於真實尺度關係，不是否定地圖。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

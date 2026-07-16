@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b4f72'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='40' fill='white'%3E%E5%9C%B0%3C/text%3E%3C/svg%3E">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="依臺灣國中教育會考範圍製作的地理零基礎講義、靜態原創題庫與閱讀資料題組。">
+  <title>地理會考作戰室 R4</title>
+  <link rel="stylesheet" href="styles.css?v=4.0.0-final-5">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="地理單元導覽">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">地</span>
+        <div><strong>地理會考作戰室</strong><small>CAP R4 · 240 skills</small></div>
+      </div>
+      <label class="search-box" for="skillSearch">
+        <span>搜尋技能</span>
+        <input id="skillSearch" type="search" autocomplete="off" placeholder="輸入地理概念">
+      </label>
+      <nav id="unitNav" class="unit-nav" aria-label="36 個地理單元"></nav>
+      <a class="official-link" href="https://cap.rcpet.edu.tw/examination.html" target="_blank" rel="noopener">官方歷屆試題</a>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button id="menuButton" class="icon-button mobile-only" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="開啟單元選單" title="開啟單元選單">☰</button>
+        <div class="title-block"><small id="unitLabel">載入課程中</small><h1 id="skillTitle">地理會考作戰室</h1></div>
+        <div class="top-actions">
+          <span id="progressLabel" class="progress-label">0 / 240</span>
+          <button id="themeButton" class="icon-button" type="button" title="切換明暗模式" aria-label="切換明暗模式">◐</button>
+        </div>
+      </header>
+
+      <nav class="view-tabs" aria-label="學習功能">
+        <button type="button" data-view="lecture" aria-current="page">講義</button>
+        <button type="button" data-view="practice">單元練習</button>
+        <button type="button" data-view="stimulus">資料題組</button>
+        <button type="button" data-view="mock">地理自訂模考</button>
+        <button type="button" data-view="official">歷屆官方</button>
+      </nav>
+
+      <main id="main" tabindex="-1">
+        <div id="loading" class="status-panel" role="status">正在載入地理 R4 靜態內容…</div>
+        <div id="content" hidden></div>
+      </main>
+    </div>
+  </div>
+  <div id="liveRegion" class="sr-only" aria-live="polite"></div>
+  <script type="module" src="app.js?v=4.0.0-final-5"></script>
+</body>
+</html>

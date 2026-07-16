@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S014_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "災後一座港口停用，救援隊要把海外物資送入島內山區。哪個規劃最符合完整交通鏈概念？",
+  "options": [
+    "只比較臺灣與海外的直線距離",
+    "忽略山區道路，假設物資會自行到達",
+    "只決定物資抵達海岸即可",
+    "改用可運作的機場或港口，並確認接續公路是否暢通"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "直線距離不足以表示節點與道路可用性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "末端道路是交通鏈不可省略的部分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "到達海岸仍未完成山區末端配送。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "替代跨海節點並檢查島內接續，涵蓋全程。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "交通鏈整合",
+    "防災"
+  ],
+  "representationType": "relief-network",
+  "misconceptionTargets": [
+    "只規劃跨海段"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "對外區位要落實為起點、跨海節點、島內接續與目的地的完整鏈。 正確選項「改用可運作的機場或港口，並確認接續公路是否暢通」可由題幹推出，因為替代跨海節點並檢查島內接續，涵蓋全程。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "選項二同時處理港口停用與山區可達性，是唯一可操作的方案。 逐項排除其他選項：「只比較臺灣與海外的直線距離」直線距離不足以表示節點與道路可用性。；「忽略山區道路，假設物資會自行到達」末端道路是交通鏈不可省略的部分。；「只決定物資抵達海岸即可」到達海岸仍未完成山區末端配送。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

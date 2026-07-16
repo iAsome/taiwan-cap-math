@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S041_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S041"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "把洪水高風險扣十分、人口高需求加二十分後仍選中洪水區，模型可能有何問題？",
+  "options": [
+    "洪水沒有任何風險",
+    "加法不能用於任何模型",
+    "硬性安全限制被平均分數抵銷",
+    "人口資料一定錯"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "洪水層正指出風險。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "加權可用於偏好排序。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "若高風險不可接受，應先排除而非扣分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人口數可正確但規則設計不當。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "權重陷阱"
+  ],
+  "representationType": "weighted-score",
+  "misconceptionTargets": [
+    "總分最高永遠合規安全"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "規則設計比計算公式外觀更重要，要分清底線與取捨。 正確選項「硬性安全限制被平均分數抵銷」可由題幹推出，因為若高風險不可接受，應先排除而非扣分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若政策允許特定減災例外，也需明確審核而非自動總分。 逐項排除其他選項：「洪水沒有任何風險」洪水層正指出風險。 這項內容無法支持題幹所要求的地理判斷。；「加法不能用於任何模型」加權可用於偏好排序。 這項內容無法支持題幹所要求的地理判斷。；「人口資料一定錯」人口數可正確但規則設計不當。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

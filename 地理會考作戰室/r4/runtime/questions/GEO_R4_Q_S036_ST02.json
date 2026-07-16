@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S036_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST036",
+  "stem": "規劃今日可通行路徑時，哪個屬性最重要？",
+  "options": [
+    "行政區顏色",
+    "避難所點大小",
+    "道路通行狀態與更新時間",
+    "河名長度"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不是路網狀態。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "點符號大小不能替代道路資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "路徑可用性取決於路段現況且需最新。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "河名不決定道路通行。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "屬性選擇"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "幾何有路就一定可走"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "道路線幾何提供網路，今日通行狀態則限制哪些邊可走。 正確選項「道路通行狀態與更新時間」可由題幹推出，因為路徑可用性取決於路段現況且需最新。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "仍要核對避難所是否開放，完整任務需兩類動態屬性。 逐項排除其他選項：「行政區顏色」顏色不是路網狀態。 這項內容無法支持題幹所要求的地理判斷。；「避難所點大小」點符號大小不能替代道路資訊。；「河名長度」河名不決定道路通行。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

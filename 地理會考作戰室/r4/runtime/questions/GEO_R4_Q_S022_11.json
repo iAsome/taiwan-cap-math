@@ -1,0 +1,81 @@
+{
+  "id": "GEO_R4_Q_S022_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "救援隊只有等高距二十公尺的圖，傷者位置在二百與二百二十公尺線間。回報何者最安全誠實？",
+  "options": [
+    "海拔完全未知",
+    "把紙面距離換成海拔",
+    "海拔約在二百至二百二十公尺間，需定位設備取得更精確值",
+    "海拔必為二百一十點零零公尺"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩線已提供高度範圍。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水平比例尺不能把線間紙距直接變垂直高度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "區間符合圖面證據，也指出精確定位需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "等高線資料不支持到小數位。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "風險溝通",
+    "救援"
+  ],
+  "representationType": "rescue-location",
+  "misconceptionTargets": [
+    "緊急時應製造精確數字"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "高風險情境更需要揭露不確定性，而不是填入看似精確的中值。 正確選項「海拔約在二百至二百二十公尺間，需定位設備取得更精確值」可由題幹推出，因為區間符合圖面證據，也指出精確定位需求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若搜救系統要求單值，可另標估計規則與誤差，不能隱藏來源限制。 逐項排除其他選項：「海拔完全未知」兩線已提供高度範圍。 這項內容無法支持題幹所要求的地理判斷。；「把紙面距離換成海拔」水平比例尺不能把線間紙距直接變垂直高度。；「海拔必為二百一十點零零公尺」等高線資料不支持到小數位。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

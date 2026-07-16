@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST010",
+  "stem": "乙與丙的緯度差是多少？",
+  "options": [
+    "35°",
+    "20°",
+    "15°",
+    "55°"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三十五度只算乙到赤道。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二十度只算丙到赤道。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "十五度是錯把跨赤道兩數相減。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩地分居赤道兩側，35 加 20 得 55 度。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "跨赤道運算"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "跨赤道誤相減"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "跨赤道分段計算為乙至赤道三十五度，加赤道至丙二十度。 正確選項「55°」可由題幹推出，因為兩地分居赤道兩側，35 加 20 得 55 度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "表格已給足緯度，經度未知不影響南北角距答案。 逐項排除其他選項：「35°」三十五度只算乙到赤道。；「20°」二十度只算丙到赤道。 這項內容無法支持題幹所要求的地理判斷。；「15°」十五度是錯把跨赤道兩數相減。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

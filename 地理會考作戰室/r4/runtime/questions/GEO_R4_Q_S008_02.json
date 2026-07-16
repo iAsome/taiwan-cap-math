@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲地在乙地的西南方。若改以甲地為參考，乙地在哪一方？",
+  "options": [
+    "西南方",
+    "東北方",
+    "西北方",
+    "東南方"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "交換參考點後不能保留原方位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "西南的反向是東北，符合雙向位置關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "西北只有東西反向，南北沒有反向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "東南只有東西反向，南北沒有反向。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "相對位置"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "交換參考點卻不改方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "將原箭頭由乙指向甲反轉，方向由西南改為東北。 正確選項「東北方」可由題幹推出，因為西南的反向是東北，符合雙向位置關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "四組相反方位配對為東西、南北、東北西南及西北東南。 逐項排除其他選項：「西南方」交換參考點後不能保留原方位。；「西北方」西北只有東西反向，南北沒有反向。；「東南方」東南只有東西反向，南北沒有反向。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

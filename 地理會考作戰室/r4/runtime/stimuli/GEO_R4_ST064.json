@@ -1,0 +1,76 @@
+{
+  "id": "GEO_R4_ST064",
+  "subject": "geography",
+  "type": "map",
+  "skillIds": [
+    "GEO_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "content": {
+    "title": "簡化河川水系關係圖",
+    "prompt": "箭頭表示水流方向；虛線為分水嶺。",
+    "table": {
+      "columns": [
+        "河段或點",
+        "關係",
+        "海拔或註記"
+      ],
+      "rows": [
+        [
+          "甲溪",
+          "向南流，於P點匯入丙河",
+          "上游600 m"
+        ],
+        [
+          "乙溪",
+          "向東流，於Q點匯入丙河",
+          "上游450 m"
+        ],
+        [
+          "丙河",
+          "P、Q下游通往R出口",
+          "R為50 m"
+        ],
+        [
+          "丁溪",
+          "虛線分水嶺另一側，通往S出口",
+          "不與丙河相連"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "表列甲乙兩支流匯入丙河後通往R，丁溪位於分水嶺另一側通往S。",
+    "longDescription": "甲溪向南在P點匯入丙河，乙溪向東在Q點匯入丙河，丙河由P與Q下游流向海拔五十公尺的R出口；丁溪在虛線分水嶺另一側，流往S出口，與丙河不相連。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S064_ST01",
+    "GEO_R4_Q_S064_ST02",
+    "GEO_R4_Q_S064_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

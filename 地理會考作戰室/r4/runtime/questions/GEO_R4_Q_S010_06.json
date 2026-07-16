@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S010_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "8°N 與 26°N 的緯度差為多少？",
+  "options": [
+    "26°",
+    "18°",
+    "34°",
+    "8°"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二十六度只是第二地緯度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "同在北半球，以 26 減 8 得 18 度。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三十四度是跨赤道相加才會得到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "八度只是第一地緯度。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "緯度差計算"
+  ],
+  "representationType": "numeric",
+  "misconceptionTargets": [
+    "同半球誤用相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同半球的南北角距取大數減小數，計算為十八度。 正確選項「18°」可由題幹推出，因為同在北半球，以 26 減 8 得 18 度。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目沒有跨越赤道，不能把兩數相加，故答案索引零。 逐項排除其他選項：「26°」二十六度只是第二地緯度。；「34°」三十四度是跨赤道相加才會得到。；「8°」八度只是第一地緯度。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

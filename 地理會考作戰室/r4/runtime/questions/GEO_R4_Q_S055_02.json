@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S055_02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "題目定義月雨量低於四十毫米為乾月，某月恰為四十毫米。該月如何分類？",
+  "options": [
+    "資料無單位也可判",
+    "不算乾月，因低於不含等於",
+    "算乾月，因四十等於低於四十",
+    "一定是雨季"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "門檻與月值必須同單位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "嚴格小於不包含臨界值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "混淆小於與小於等於。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不符合乾月不等於雨季核心。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "門檻邊界"
+  ],
+  "representationType": "threshold",
+  "misconceptionTargets": [
+    "低於包含等於"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把文字門檻改寫成不等式可避免邊界錯誤。 正確選項「不算乾月，因低於不含等於」可由題幹推出，因為嚴格小於不包含臨界值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若規則寫不高於四十，結論才會改變。 逐項排除其他選項：「資料無單位也可判」門檻與月值必須同單位。；「算乾月，因四十等於低於四十」混淆小於與小於等於。 這項內容無法支持題幹所要求的地理判斷。；「一定是雨季」不符合乾月不等於雨季核心。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

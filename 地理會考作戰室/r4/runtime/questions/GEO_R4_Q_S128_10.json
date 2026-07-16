@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S128_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "甲地年雨量增加但連續無雨日也增加，如何可能同時發生？",
+  "options": [
+    "連續無雨日會自動產生降雨",
+    "雨量更集中於少數強降雨事件",
+    "兩項在數學上不能並存",
+    "年雨量增加代表每天有雨"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "無雨日不會自行變成雨量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "強降雨可提高總量，同時事件間隔變長。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "總量與頻率是不同統計。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "年總量無法告訴每日分布。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "statistical-reasoning"
+  ],
+  "representationType": "rainfall-intensity",
+  "misconceptionTargets": [
+    "總量增加等於雨日增加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "正確選項「雨量更集中於少數強降雨事件」可由題幹推出，因為強降雨可提高總量，同時事件間隔變長。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "水資源和災害可同時受影響。 逐項排除其他選項：「連續無雨日會自動產生降雨」無雨日不會自行變成雨量。；「兩項在數學上不能並存」總量與頻率是不同統計。；「年雨量增加代表每天有雨」年總量無法告訴每日分布。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

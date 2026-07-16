@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S025",
+  "subject": "geography",
+  "unitId": "GEO_R4_U04",
+  "skillId": "GEO_R4_S025",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S024"
+  ],
+  "objectives": [
+    "能由河道交會等高線的 V 形、高程點與支流關係，判斷自然河流可能流向。",
+    "能指出地形圖推論的一般條件，辨認人工渠道、潮汐與壩體可能造成的例外。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S025_SEC01",
+      "title": "最可靠原則是由高往低",
+      "content": "自然水流受重力影響，河道通常由較高海拔流向較低海拔。判流向時先沿河道找標高點、等高線數值或河口位置，再排出高到低的順序。紙面上、下、東、西都不是固定流向，河名文字的書寫方向也不能當證據。"
+    },
+    {
+      "id": "GEO_R4_L_S025_SEC02",
+      "title": "V 形尖端指向上游",
+      "content": "等高線橫越谷地時向較高的上游彎曲，因此河水大致朝 V 尖的反方向流。使用這個口訣仍要以線值驗證：尖端側應有較高等高線，開口側較低；若圖被旋轉，V 形與高程關係不變，無須假定上游位於紙面上方。"
+    },
+    {
+      "id": "GEO_R4_L_S025_SEC03",
+      "title": "支流網與分水嶺可交叉檢查",
+      "content": "支流從較高谷地匯入幹流，匯流後河道繼續朝較低處；相鄰流域之間的稜線是分水嶺，水分別流向兩側谷地。若一個推定方向會要求水跨越稜線向上流，或使下游標高反而增加，就應回查追線與數值。"
+    },
+    {
+      "id": "GEO_R4_L_S025_SEC04",
+      "title": "一般規則有適用邊界",
+      "content": "水庫壩體會阻蓄水流，人工運河可由閘門、抽水或調水控制，河口潮汐也可能短時間出現逆向流動。等高線能判自然地勢所支持的總體下游方向，不能單獨預測某時刻流速、水量、污染抵達時間或人工設施操作狀態。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S025_EX01",
+      "prompt": "河道上甲點三百公尺、乙點二百二十公尺、丙點一百四十公尺，三點依河道連續，可能流向為何？",
+      "steps": [
+        "確認三點都在同一河道",
+        "排列海拔由高到低",
+        "由甲經乙到丙"
+      ],
+      "answer": "水流可能由甲流向乙，再流向丙。",
+      "why": "高程連續下降符合重力流；沒有泵站或潮汐等例外資料時，這是最合理方向。"
+    },
+    {
+      "id": "GEO_R4_L_S025_EX02",
+      "prompt": "等高線穿河形成 V，尖端側標四百公尺、開口側標三百公尺，箭頭應畫哪向？",
+      "steps": [
+        "V 尖側是高地上游",
+        "水往較低的開口側",
+        "箭頭與 V 尖方向相反"
+      ],
+      "answer": "由四百公尺尖端側畫向三百公尺開口側。",
+      "why": "口訣與數值一致；若只看紙面上下可能在旋轉地圖中畫反。"
+    },
+    {
+      "id": "GEO_R4_L_S025_EX03",
+      "prompt": "污染點在兩支流匯合前的甲支流，下游監測站在匯流後，能否只用地形圖算到達時間？",
+      "steps": [
+        "可判水可能朝匯流點與下游站移動",
+        "時間還需流速、流量與距離",
+        "人工攔水也可能改變"
+      ],
+      "answer": "可判可能路徑，不能只靠等高線算到達時間。",
+      "why": "地形圖提供方向與圖距，但瞬時水文條件不在等高線中，必須另有監測資料。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "河水一定從地圖上方流到下方。",
+      "whyWrong": "地圖可旋轉，流向由海拔下降決定。",
+      "correction": "沿河讀高程，不用紙面上下猜。"
+    },
+    {
+      "belief": "谷地 V 尖就是下游箭頭。",
+      "whyWrong": "V 尖通常指較高上游，水流朝相反方向。",
+      "correction": "用尖端側與開口側線值驗證。"
+    },
+    {
+      "belief": "支流匯入幹流後會往兩個方向同時流。",
+      "whyWrong": "一般自然河網在匯流後沿較低幹流繼續下行。",
+      "correction": "追蹤匯流後的高程遞減。"
+    },
+    {
+      "belief": "知道流向就能知道污染幾小時到達。",
+      "whyWrong": "到達時間還受距離、流速、流量、阻蓄與降雨影響。",
+      "correction": "把方向推論與時間預測分開。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "同河道兩點三百與一百公尺，通常由哪點流向哪點？",
+      "answer": "由三百流向一百公尺。",
+      "reason": "自然水流沿重力勢能下降。"
+    },
+    {
+      "prompt": "谷地 V 尖通常指上游還是下游？",
+      "answer": "上游。",
+      "reason": "尖端側海拔較高。"
+    },
+    {
+      "prompt": "分水嶺位於谷地或稜線？",
+      "answer": "稜線。",
+      "reason": "水從高脊分向兩側流域。"
+    },
+    {
+      "prompt": "等高線可直接給河川即時流速嗎？",
+      "answer": "不能。",
+      "reason": "流速需水文與河道條件資料。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  }
+}

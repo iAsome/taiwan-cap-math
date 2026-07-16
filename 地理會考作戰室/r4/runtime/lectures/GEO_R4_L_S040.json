@@ -1,0 +1,138 @@
+{
+  "id": "GEO_R4_L_S040",
+  "subject": "geography",
+  "unitId": "GEO_R4_U06",
+  "skillId": "GEO_R4_S040",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S039"
+  ],
+  "objectives": [
+    "能依影像圖例、波段組合、拍攝日期時刻、解析度與雲量，解讀遙測影像。",
+    "能說明日照陰影、季節物候、水位與事件時序對判讀的影響，區分拍攝、處理及發布時間。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S040_SEC01",
+      "title": "圖例定義顯示色的語意",
+      "content": "自然色影像盡量接近人眼可見色，假色影像則把近紅外等波段指定到紅綠藍顯示通道，以凸顯植被、水分或其他差異。同一地物在不同波段組合可能顯示不同顏色，因此先讀圖例、波段與處理方式，再解釋紅、綠、暗或亮。"
+    },
+    {
+      "id": "GEO_R4_L_S040_SEC02",
+      "title": "拍攝時間決定當下狀態",
+      "content": "拍攝日期可連結季節、作物生長、水庫水位與災害前後；拍攝時刻和太陽方位會影響建物與山體陰影。發布日只是資料上架時間，處理日則是分類或校正時間，兩者都不能取代感測器真正觀測地表的拍攝時間。"
+    },
+    {
+      "id": "GEO_R4_L_S040_SEC03",
+      "title": "解析度與雲量是可見範圍",
+      "content": "空間解析度說明像元代表多大地面範圍，時間解析度說明多久可能再觀測；雲量與雲影會遮蔽地表。圖例若把雲、影與未分類區分開，使用者才不會把沒有觀測誤稱為無變化或某種土地覆蓋。"
+    },
+    {
+      "id": "GEO_R4_L_S040_SEC04",
+      "title": "事件判讀要建立時間順序",
+      "content": "要評估颱風後淹水，影像必須拍在事件後且時間足夠接近；若拍在颱風前，就只能當基準。兩張災後影像也可能因水已退而範圍不同。報告應列拍攝時刻、時區、感測器、處理版本和適用限制，讓讀者知道它代表哪個瞬間。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S040_EX01",
+      "prompt": "假色圖例寫健康植被為亮紅，影像紅區能說現地樹葉紅嗎？",
+      "steps": [
+        "確認使用近紅外假色",
+        "亮紅是波段映射結果",
+        "解讀為植被反射特徵"
+      ],
+      "answer": "不能說現地顏色紅，只能依圖例判為健康植被候選。",
+      "why": "顯示色是分析編碼；若要知道人眼顏色需自然色影像或現地資料。"
+    },
+    {
+      "id": "GEO_R4_L_S040_EX02",
+      "prompt": "影像發布於八月，拍攝於五月，研究六月洪水可用它當災後圖嗎？",
+      "steps": [
+        "區分發布與拍攝日期",
+        "五月早於六月洪水",
+        "只能作事件前基準"
+      ],
+      "answer": "不能當六月洪水災後影像。",
+      "why": "上架較晚不代表觀測較晚；事件時序必須以拍攝日期判。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S040_EX03",
+      "prompt": "山區暗斑與所有山峰陰影方向一致，拍攝時太陽在東南方，如何處理？",
+      "steps": [
+        "暗斑可能是陰影",
+        "檢查其是否隨地形背光分布",
+        "用其他時刻影像驗證"
+      ],
+      "answer": "先標為可能地形陰影，不直接判水體。",
+      "why": "日照方位與地形能解釋暗斑，另一時刻影像若陰影移動可進一步確認。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "假色影像紅色就是現地紅色物體。",
+      "whyWrong": "紅色可能代表近紅外反射強的植被等類別。",
+      "correction": "先讀波段組合與圖例。"
+    },
+    {
+      "belief": "發布日期就是地表被拍攝日期。",
+      "whyWrong": "資料可在觀測數日或數月後處理發布。",
+      "correction": "以拍攝時間建立事件順序。"
+    },
+    {
+      "belief": "雲下標成未知等於地表沒有變化。",
+      "whyWrong": "未知是缺觀測，不能替代未變。",
+      "correction": "補其他日期或感測器資料。"
+    },
+    {
+      "belief": "解析度數字越大代表越精細。",
+      "whyWrong": "以每像元公尺表示時，數字越小通常越細。",
+      "correction": "讀清楚解析度定義與單位。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "讀影像顏色前先查什麼？",
+      "answer": "圖例與波段組合。",
+      "reason": "顯示色語意不是固定常識。"
+    },
+    {
+      "prompt": "判災前災後應用哪個日期？",
+      "answer": "拍攝日期。",
+      "reason": "發布與處理時間不代表觀測時點。"
+    },
+    {
+      "prompt": "雲遮區應標未變或未知？",
+      "answer": "未知。",
+      "reason": "沒有地表觀測不能判變化。"
+    },
+    {
+      "prompt": "十公尺與三十公尺像元何者通常較細？",
+      "answer": "十公尺。",
+      "reason": "每格涵蓋地面範圍較小。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

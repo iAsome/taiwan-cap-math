@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S067",
+  "subject": "geography",
+  "unitId": "GEO_R4_U10",
+  "skillId": "GEO_R4_S067",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S066"
+  ],
+  "objectives": [
+    "能用入庫、出庫、蒸發與蓄水變化理解水庫水量平衡及供水限制。",
+    "能說明集水區侵蝕如何造成淤積、有效容量下降，並比較水庫功能與環境代價。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S067_SEC01",
+      "title": "水庫把時間不均的來水暫存",
+      "content": "水庫可在豐水期蓄水，於枯水期供應民生、農業或工業，也可能兼具防洪、發電與遊憩。功能間會有取捨：保留空庫容利於防洪，蓄得較滿則利於供水，需依預報與操作規則調度。"
+    },
+    {
+      "id": "GEO_R4_L_S067_SEC02",
+      "title": "蓄水量遵守水量平衡",
+      "content": "期末蓄水約等於期初蓄水加入庫，減放水、取水、蒸發與滲漏。蓄水率是現有蓄水量占有效容量的比例，不等於可供應天數；需求量與保留庫容也要一起考慮。"
+    },
+    {
+      "id": "GEO_R4_L_S067_SEC03",
+      "title": "泥砂會占據有效容量",
+      "content": "上游侵蝕與崩塌產生泥砂，河水進入水庫後流速下降，較易沉積。長期淤積使有效容量減少，也可能磨損設備；集水區保育、排砂與清淤可減緩，但各有成本與下游影響。"
+    },
+    {
+      "id": "GEO_R4_L_S067_SEC04",
+      "title": "興建水庫不是只有工程效益",
+      "content": "水庫可能淹沒聚落與棲地、改變河川泥砂與生態連續性，也牽涉遷移、公平與下游用水。評估需比較地點、容量、風險、替代方案與全生命週期，不可只看壩高。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S067_EX01",
+      "prompt": "期初六十、入庫二十、出庫十五億立方公尺，忽略其他項，期末多少？",
+      "steps": [
+        "先加期初與入庫",
+        "再減出庫",
+        "保留相同單位"
+      ],
+      "answer": "期末六十五億立方公尺。",
+      "why": "若題目另列蒸發或取水，也必須扣除。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S067_EX02",
+      "prompt": "原有效容量一億立方公尺，淤積一千萬，剩多少？",
+      "steps": [
+        "統一單位",
+        "容量減淤積",
+        "計算百分比"
+      ],
+      "answer": "剩九千萬立方公尺，容量減少百分之十。",
+      "why": "淤積量不是蓄水量，不能說水庫當下只剩九成蓄水。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S067_EX03",
+      "prompt": "颱風前為何可能預先放水？",
+      "steps": [
+        "確認預報入流",
+        "保留防洪庫容",
+        "兼顧下游承受能力"
+      ],
+      "answer": "降低水庫滿溢與壩上游洪水風險。",
+      "why": "放水時機與量也可能增加下游風險，需依規則預警。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "蓄水率百分之五十就一定能用半年。",
+      "whyWrong": "可用天數取決於需求、入流與限制。",
+      "correction": "用可用量除每日淨需求。"
+    },
+    {
+      "belief": "水庫越滿防洪效果必越好。",
+      "whyWrong": "滿庫缺少容納洪水的空間。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "區分供水與防洪庫容。"
+    },
+    {
+      "belief": "淤積只讓水變混濁，不影響容量。",
+      "whyWrong": "沉積泥砂占據庫容。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "比較歷年有效容量。"
+    },
+    {
+      "belief": "興建水庫沒有下游影響。",
+      "whyWrong": "會改變流量、泥砂與生態。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "納入上下游與生命週期評估。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "期末蓄水計算先做什麼？",
+      "answer": "列入庫與所有出庫項。",
+      "reason": "遵守水量平衡。"
+    },
+    {
+      "prompt": "淤積如何影響供水？",
+      "answer": "降低有效容量。",
+      "reason": "可儲水空間變少。"
+    },
+    {
+      "prompt": "滿庫對防洪有何限制？",
+      "answer": "可用防洪庫容較少。",
+      "reason": "不易再容納洪水。"
+    },
+    {
+      "prompt": "水庫評估除供水還看什麼？",
+      "answer": "生態、社會、泥砂、安全與替代方案。",
+      "reason": "效益成本要完整。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

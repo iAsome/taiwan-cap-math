@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S013_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "外送平台把『直線距離最近』當唯一派單依據，哪項改進最符合位置概念？",
+  "options": [
+    "刪除所有座標",
+    "只依店名長短",
+    "把所有地點視為同一位置",
+    "加入道路、河流、坡度與即時交通形成的可達時間"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "座標仍是路網計算的定位基礎。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "店名長短與運送無關。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "地點差異正是派單必須處理的資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "相對可達性比單一直線距離更接近實際運送任務。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "決策改善"
+  ],
+  "representationType": "delivery-network",
+  "misconceptionTargets": [
+    "直線最近等於時間最短"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此情境需由絕對點位疊合動態路網，答案索引零最完整。 正確選項「加入道路、河流、坡度與即時交通形成的可達時間」可由題幹推出，因為相對可達性比單一直線距離更接近實際運送任務。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "改進不是拋棄座標，而是補上任務相關的相對位置資料。 逐項排除其他選項：「刪除所有座標」座標仍是路網計算的定位基礎。；「只依店名長短」店名長短與運送無關。 這項內容無法支持題幹所要求的地理判斷。；「把所有地點視為同一位置」地點差異正是派單必須處理的資訊。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

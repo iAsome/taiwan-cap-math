@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S055_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S055"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "某氣候圖只標每季平均雨量，未列月值。可以精確指出最乾月份嗎？",
+  "options": [
+    "可以，任選該季一月",
+    "可以，把季平均最小月當一月",
+    "可以，由溫度線決定",
+    "不可以，只能比較季平均"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "任選沒有證據。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "季平均不是某月值。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "溫度不提供月雨量。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "季平均沒有季內月序列。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解析度限制"
+  ],
+  "representationType": "temporal-resolution",
+  "misconceptionTargets": [
+    "季平均可還原每月極值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料時間解析度限制結論精細度。 正確選項「不可以，只能比較季平均」可由題幹推出，因為季平均沒有季內月序列。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若要找最乾月，至少需要逐月雨量。 逐項排除其他選項：「可以，任選該季一月」任選沒有證據。 這項內容無法支持題幹所要求的地理判斷。；「可以，把季平均最小月當一月」季平均不是某月值。 這項內容無法支持題幹所要求的地理判斷。；「可以，由溫度線決定」溫度不提供月雨量。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

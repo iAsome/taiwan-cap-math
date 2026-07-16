@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S022_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S022"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某點落在一百四十與一百六十公尺等高線之間，沒有標高點。最嚴謹的說法為何？",
+  "options": [
+    "海拔介於一百四十與一百六十公尺",
+    "海拔一定一百五十公尺",
+    "海拔一定一百四十公尺",
+    "無法知道任何高度資訊"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩條線提供上下界。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "紙面位置不能保證坡面線性，無法精確內插。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不在線上一百四十線。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍可知道二十公尺區間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "線間估讀"
+  ],
+  "representationType": "contour-band",
+  "misconceptionTargets": [
+    "線間中點必為高度中點"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "線間點可讀範圍但不宜製造個位公尺精度。 正確選項「海拔介於一百四十與一百六十公尺」可由題幹推出，因為兩條線提供上下界。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若題目另說等坡面且點在水平距離中點，才可能估一百五十，這裡沒有。 逐項排除其他選項：「海拔一定一百五十公尺」紙面位置不能保證坡面線性，無法精確內插。；「海拔一定一百四十公尺」不在線上一百四十線。 這項內容無法支持題幹所要求的地理判斷。；「無法知道任何高度資訊」仍可知道二十公尺區間。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

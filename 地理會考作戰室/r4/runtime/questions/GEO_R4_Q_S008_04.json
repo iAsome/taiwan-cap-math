@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S008_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S008"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一張校園圖的北箭頭指向紙面右方，福利社畫在教室紙面上方。福利社在教室哪一方？",
+  "options": [
+    "北方",
+    "南方",
+    "東方",
+    "西方"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "北方是紙面右方，不是上方。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "南方是紙面左方，不是上方。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "東方是紙面下方，不是上方。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "北在右方時，紙面上方對應西方。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "旋轉地圖判讀"
+  ],
+  "representationType": "rotated-map",
+  "misconceptionTargets": [
+    "預設上北下南"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "依北箭頭把紙面右方設為北，逆時針九十度的紙面上方就是西。 正確選項「西方」可由題幹推出，因為北在右方時，紙面上方對應西方。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若福利社在教室西方，反向便是教室在福利社東方，四向關係一致。 逐項排除其他選項：「北方」北方是紙面右方，不是上方。；「南方」南方是紙面左方，不是上方。；「東方」東方是紙面下方，不是上方。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

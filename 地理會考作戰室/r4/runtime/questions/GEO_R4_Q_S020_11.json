@@ -1,0 +1,79 @@
+{
+  "id": "GEO_R4_Q_S020_11",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "救援隊需比較兩條彎路，甲圖用中心線量、乙圖只用端點直線。能直接比較兩數值嗎？",
+  "options": [
+    "能，端點直線一定等於路程",
+    "不能，因比例尺永遠無法換算",
+    "不能，應用相同路徑定義與方法重測",
+    "能，任何距離都可直接比"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "彎路端點直線通常短於路程。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "有效比例尺仍能換算，問題在方法。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "不同量測對象會造成系統性差異，需先統一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "數值名稱不同，直接比較會誤導。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "公平比較",
+    "救援"
+  ],
+  "representationType": "route-options",
+  "misconceptionTargets": [
+    "不同定義的距離可直接排序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "公平比較要求兩路都沿可通行中心線、使用有效比例尺和相近精度。 正確選項「不能，應用相同路徑定義與方法重測」可由題幹推出，因為不同量測對象會造成系統性差異，需先統一。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "重測後還應納入道路狀態與坡度，距離最短不必然是最快或最安全。 逐項排除其他選項：「能，端點直線一定等於路程」彎路端點直線通常短於路程。；「不能，因比例尺永遠無法換算」有效比例尺仍能換算，問題在方法。；「能，任何距離都可直接比」數值名稱不同，直接比較會誤導。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

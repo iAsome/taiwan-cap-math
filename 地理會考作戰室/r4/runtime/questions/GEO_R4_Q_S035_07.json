@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S035_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S035"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "『此圖從中心量距正確』不能支持哪項敘述？",
+  "options": [
+    "中心到甲地距離可用",
+    "中心到乙地距離可用",
+    "甲地到乙地距離一定正確",
+    "可用來畫中心固定半徑圈"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "這正落在中心量距條件內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙地同樣由中心量起。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩端都不是中心，超出保證。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "固定半徑由中心向外量距。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "條件辨識"
+  ],
+  "representationType": "logical-text",
+  "misconceptionTargets": [
+    "將限定條件泛化"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "唯一超出中心條件的是甲乙兩非中心點間距離。 正確選項「甲地到乙地距離一定正確」可由題幹推出，因為兩端都不是中心，超出保證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘三項都明確以中心作起點。 逐項排除其他選項：「中心到甲地距離可用」這正落在中心量距條件內。；「中心到乙地距離可用」乙地同樣由中心量起。 這項內容無法支持題幹所要求的地理判斷。；「可用來畫中心固定半徑圈」固定半徑由中心向外量距。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

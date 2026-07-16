@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S032_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某投影只保證『從臺北量到各地的距離』。下列哪個任務超出保證範圍？",
+  "options": [
+    "比較臺北到東京與臺北到馬尼拉的距離",
+    "畫臺北 1,000 公里半徑圈",
+    "估計東京到馬尼拉的距離",
+    "找出距臺北較近的城市"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩段距離都以臺北為起點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "半徑圈也是由臺北向外量距。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "東京與馬尼拉都不是臺北，兩地間距離未被保證。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍是比較臺北到各城市的距離。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "條件限制"
+  ],
+  "representationType": "logical-scenario",
+  "misconceptionTargets": [
+    "將中心距離誤作任兩點距離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "保證條件限定臺北為端點，第三項唯一不含臺北。 正確選項「估計東京到馬尼拉的距離」可由題幹推出，因為東京與馬尼拉都不是臺北，兩地間距離未被保證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘任務皆可轉成由臺北量出的距離。 逐項排除其他選項：「比較臺北到東京與臺北到馬尼拉的距離」兩段距離都以臺北為起點。；「畫臺北 1,000 公里半徑圈」半徑圈也是由臺北向外量距。；「找出距臺北較近的城市」仍是比較臺北到各城市的距離。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

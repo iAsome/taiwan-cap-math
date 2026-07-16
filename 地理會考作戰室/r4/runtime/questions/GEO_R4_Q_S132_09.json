@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S132_09",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "地震危害圖與人口圖解析度不同，直接疊合可能有何問題？",
+  "options": [
+    "尺度不一致會造成錯置與假精確",
+    "解析度永遠不影響結果",
+    "人口圖不含空間資料",
+    "疊合會改變地震規模"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "粗細網格需先統一或說明不確定性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "尺度會影響歸屬與極值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "人口圖本身有空間分布。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "分析不會改變物理地震。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "data-literacy"
+  ],
+  "representationType": "spatial-resolution",
+  "misconceptionTargets": [
+    "地圖可任意疊合"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "多圖層分析先校準座標與尺度。 正確選項「尺度不一致會造成錯置與假精確」可由題幹推出，因為粗細網格需先統一或說明不確定性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "結果精度不能高於最弱資料。 逐項排除其他選項：「解析度永遠不影響結果」尺度會影響歸屬與極值。；「人口圖不含空間資料」人口圖本身有空間分布。；「疊合會改變地震規模」分析不會改變物理地震。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S011_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST011",
+  "stem": "只依表格，能否判定乙港與丁港的實際航程？",
+  "options": [
+    "能，東經港到西經港固定一千公里",
+    "不能，因經度完全沒有空間意義",
+    "能，經度差就是航程公里數",
+    "不能；還缺緯度、航線、地球尺度與通航條件"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不存在跨東西經固定一千公里規則。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "經度可比較東西位置，只是不足以求航程。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "經度差是角度，不是航線公里數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "完整航程需兩點位置及實際可行路線等資料。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料限制"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "經度差直接當航程"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案索引一正確區分經度資訊與實際運輸路程需求。 正確選項「不能；還缺緯度、航線、地球尺度與通航條件」可由題幹推出，因為完整航程需兩點位置及實際可行路線等資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "選項四過度否定經度用途，也不能成為替代答案。 逐項排除其他選項：「能，東經港到西經港固定一千公里」不存在跨東西經固定一千公里規則。；「不能，因經度完全沒有空間意義」經度可比較東西位置，只是不足以求航程。；「能，經度差就是航程公里數」經度差是角度，不是航線公里數。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

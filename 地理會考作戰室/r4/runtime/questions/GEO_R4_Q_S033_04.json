@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S033_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S033"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "圖上甲國看似比乙國大，但統計為甲 45 萬、乙 62 萬平方公里。哪個判斷正確？",
+  "options": [
+    "甲實際較大",
+    "乙實際較大",
+    "兩國一定相同",
+    "無法比較，因數值都有單位"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "45 小於 62，甲實際較小。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "同單位比較 62 大於 45，乙實際較大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩數值不同。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "相同單位正是可直接比較的條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "數值比較"
+  ],
+  "representationType": "paired-data",
+  "misconceptionTargets": [
+    "圖面直覺凌駕統計數值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "比較同單位數值可得乙大於甲，圖面直覺需被校正。 正確選項「乙實際較大」可由題幹推出，因為同單位比較 62 大於 45，乙實際較大。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他選項不是數值比較錯誤，就是誤解單位功能。 逐項排除其他選項：「甲實際較大」45 小於 62，甲實際較小。 這項內容無法支持題幹所要求的地理判斷。；「兩國一定相同」兩數值不同。 這項內容無法支持題幹所要求的地理判斷。；「無法比較，因數值都有單位」相同單位正是可直接比較的條件。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

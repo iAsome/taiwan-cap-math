@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S003_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩份人口密度圖一份以縣市分區，一份以鄉鎮分區。解讀時應注意什麼？",
+  "options": [
+    "鄉鎮圖一定錯",
+    "縣市圖一定比較精確",
+    "不同分區會呈現不同細節，不宜直接比較色塊數量",
+    "只要顏色相同就能完全互換"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "鄉鎮圖只是較細，不代表錯誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "縣市圖較概括，未必更精確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分析單元大小不同會改變平均值與分布外觀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "配色相同不能消除分區差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "比較地圖尺度"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "細分圖必然較真實"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩圖的主要差別是空間單元，第三項正確指出可比性限制。 正確選項「不同分區會呈現不同細節，不宜直接比較色塊數量」可由題幹推出，因為分析單元大小不同會改變平均值與分布外觀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "精細與正確不是同義，顏色也不能讓不同邊界的數值互換。 逐項排除其他選項：「鄉鎮圖一定錯」鄉鎮圖只是較細，不代表錯誤。；「縣市圖一定比較精確」縣市圖較概括，未必更精確。；「只要顏色相同就能完全互換」配色相同不能消除分區差異。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,142 @@
+{
+  "id": "GEO_R4_L_S128",
+  "subject": "geography",
+  "unitId": "GEO_R4_U19",
+  "skillId": "GEO_R4_S128",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-3",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S127"
+  ],
+  "objectives": [
+    "比較臺灣南北東西部降水的總量與季節分配",
+    "由季風風向、地形與天氣系統解釋區域雨量差異"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S128_SEC01",
+      "title": "北部與東北部",
+      "content": "冬季東北季風越過海面後迎向北部、東北部山坡，使這些地區冬半年仍常有雨；夏季也受鋒面、對流和颱風影響，全年分配通常比西南部均勻。"
+    },
+    {
+      "id": "GEO_R4_L_S128_SEC02",
+      "title": "中南部西側",
+      "content": "西南部冬季常位於東北季風背風側，乾季較明顯；暖季西南氣流、梅雨鋒面、午後對流與颱風帶來主要雨量，因此年雨量可能不少，卻高度集中。"
+    },
+    {
+      "id": "GEO_R4_L_S128_SEC03",
+      "title": "東部與山區",
+      "content": "東部面向太平洋，受東北季風、颱風與山地抬升影響，部分地區雨量多；中央山地迎風坡雨量常高，山脈另一側則可能有雨影。地形使短距離內差異顯著。"
+    },
+    {
+      "id": "GEO_R4_L_S128_SEC04",
+      "title": "讀圖要看時間尺度",
+      "content": "年雨量圖適合看總水量，月雨量圖能看乾濕季，單次暴雨圖則看極端事件。不能由某次颱風雨量代表全年，也不能由年總量判斷每月都有水。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S128_EX01",
+      "prompt": "甲乙年雨量都兩千毫米，甲冬季幾乎無雨，誰乾季缺水壓力較高？",
+      "steps": [
+        "年總量相同",
+        "甲雨量季節更集中",
+        "儲水需跨越長乾季"
+      ],
+      "answer": "甲",
+      "why": "時間分配會改變可用水的連續性。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S128_EX02",
+      "prompt": "冬季東北部雨量高於西南部，如何解釋？",
+      "steps": [
+        "東北風帶來海上水氣",
+        "東北部迎風抬升",
+        "西南部多位背風"
+      ],
+      "answer": "季風與地形共同作用",
+      "why": "不是單純因東北部緯度較高。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S128_EX03",
+      "prompt": "某山脈東坡雨多、西坡少，風向最可能從哪側來？",
+      "steps": [
+        "迎風坡先受濕氣",
+        "東坡雨多",
+        "反推來風方向"
+      ],
+      "answer": "偏東側來風",
+      "why": "氣流先在東坡抬升降雨，越山後變乾。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "年雨量高就沒有乾季",
+      "whyWrong": "雨量可能集中在少數月份 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "同看月分配與儲水"
+    },
+    {
+      "belief": "北部每一天都下雨",
+      "whyWrong": "全年較均勻不等於每日降雨",
+      "correction": "區分氣候平均與天氣事件"
+    },
+    {
+      "belief": "東西部雨量差只由離海遠近決定",
+      "whyWrong": "山地迎背風與季風更直接 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "用風向、坡向與海拔解釋"
+    },
+    {
+      "belief": "一次颱風雨量可代表全年",
+      "whyWrong": "極端事件只是全年序列的一部分",
+      "correction": "比較多年與月尺度資料"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "西南部乾季通常較明顯在哪個時段？",
+      "answer": "冬半年",
+      "reason": "東北季風下多居背風側。"
+    },
+    {
+      "prompt": "北部冬季為何仍常有雨？",
+      "answer": "東北季風帶濕氣遇地形抬升",
+      "reason": "迎風位置使冬雨明顯。"
+    },
+    {
+      "prompt": "年雨量相同為何缺水風險不同？",
+      "answer": "季節集中與儲水條件不同",
+      "reason": "長乾季會增加跨季調度需求。"
+    },
+    {
+      "prompt": "判斷迎風坡要先看什麼？",
+      "answer": "當時的盛行風向",
+      "reason": "迎風是氣流相對地形的關係。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-3",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

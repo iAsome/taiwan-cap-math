@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S030_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "地圖甲把所有等面積格畫成同樣大小，但格子的輪廓隨位置改變。甲圖優先保留什麼？",
+  "options": [
+    "面積",
+    "形狀",
+    "任兩點距離",
+    "所有方向"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "等面積格維持同圖面大小，表示面積比例被保留。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "輪廓已隨位置改變，形狀未完整保留。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目沒有路線距離測試。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "格網資料不能證明所有方向正確。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料解釋"
+  ],
+  "representationType": "described-grid",
+  "misconceptionTargets": [
+    "把等大格網誤認為形狀也相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同面積格同樣大是等積性的直接證據。 正確選項「面積」可由題幹推出，因為等面積格維持同圖面大小，表示面積比例被保留。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "形狀已知變形，距離與方向又缺乏證據，故其餘皆不成立。 逐項排除其他選項：「形狀」輪廓已隨位置改變，形狀未完整保留。；「任兩點距離」題目沒有路線距離測試。；「所有方向」格網資料不能證明所有方向正確。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

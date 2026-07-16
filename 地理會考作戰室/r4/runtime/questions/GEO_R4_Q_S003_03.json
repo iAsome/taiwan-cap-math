@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S003_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S003"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "將里級人口資料合併為全市一個數值，最可能失去什麼？",
+  "options": [
+    "市內人口分布差異",
+    "全市人口總數",
+    "統計年份",
+    "城市名稱"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "合併後看不到哪些里人口較多或較少。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "各里加總仍可保留全市總數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "年份可在資料說明中保留。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "城市名稱不因彙整而消失。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "理解尺度效果"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "總量等於分布"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "從多個里縮成單一總值，直接損失的是內部分布。 正確選項「市內人口分布差異」可由題幹推出，因為合併後看不到哪些里人口較多或較少。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "總數、年份與名稱都可隨彙整保存，只有第一項必然被平均或隱藏。 逐項排除其他選項：「全市人口總數」各里加總仍可保留全市總數。；「統計年份」年份可在資料說明中保留。；「城市名稱」城市名稱不因彙整而消失。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

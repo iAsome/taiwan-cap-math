@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S025_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某河道 V 尖朝西，西側等高線四百公尺、東側二百公尺。河水最可能往哪方？",
+  "options": [
+    "向西",
+    "向北",
+    "無法因地圖有方位而判",
+    "向東"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "向西是由低往高或朝 V 尖。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有南北高程變化證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "方位與高程資料足以判大致向東。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "V 尖西側是高處上游，水朝反方向東側低處。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "方位與流向"
+  ],
+  "representationType": "oriented-map",
+  "misconceptionTargets": [
+    "V尖方向就是流水方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先用高程判由四百到二百，再把圖面方向翻成向東。 正確選項「向東」可由題幹推出，因為V 尖西側是高處上游，水朝反方向東側低處。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩條獨立線索一致，因此比只記 V 尖反向更可靠。 逐項排除其他選項：「向西」向西是由低往高或朝 V 尖。；「向北」沒有南北高程變化證據。；「無法因地圖有方位而判」方位與高程資料足以判大致向東。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

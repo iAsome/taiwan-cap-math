@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S009_ST02",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST009",
+  "stem": "哪一站位於赤道上？",
+  "options": [
+    "甲",
+    "乙",
+    "丙",
+    "丁"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲緯度 20°N，不在赤道。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙緯度 15°S，不在赤道。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "丙緯度為 0°，正位於赤道。 這項證據可直接支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丁的零度是經度，表示本初經線。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "欄位辨識"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "只看零度不看緯經"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "赤道要查緯度欄的零度，只有丙符合。 正確選項「丙」可由題幹推出，因為丙緯度為 0°，正位於赤道。 這項證據可直接支持題幹所要求的地理判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "丁雖也有零度，但位於經度欄，不能把本初經線誤作赤道。 逐項排除其他選項：「甲」甲緯度 20°N，不在赤道。 這項內容無法支持題幹所要求的地理判斷。；「乙」乙緯度 15°S，不在赤道。 這項內容無法支持題幹所要求的地理判斷。；「丁」丁的零度是經度，表示本初經線。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

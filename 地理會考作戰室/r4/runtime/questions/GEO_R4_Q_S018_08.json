@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S018_08",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S018"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "兩張紙面大小不同的地圖，甲一比一萬、乙一比五萬。只憑比例尺能確定何者涵蓋範圍較大嗎？",
+  "options": [
+    "兩者必相同",
+    "一定是甲",
+    "一定是乙",
+    "不能，還需比較兩圖實際圖幅"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "比例不同且紙面不同，沒有相同保證。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲若圖幅非常大，也可能涵蓋較廣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙通常同圖幅涵蓋大，但本題圖幅不同且未給尺寸。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "涵蓋範圍由比例尺與可用圖幅共同決定。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "控制變因"
+  ],
+  "representationType": "map-pair",
+  "misconceptionTargets": [
+    "忽略圖幅不同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "常見規則『小比例尺範圍大』需要同圖幅前提，本題刻意取消它。 正確選項「不能，還需比較兩圖實際圖幅」可由題幹推出，因為涵蓋範圍由比例尺與可用圖幅共同決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先取得兩圖可量長寬再換算實距，才能比較真正涵蓋範圍。 逐項排除其他選項：「兩者必相同」比例不同且紙面不同，沒有相同保證。；「一定是甲」甲若圖幅非常大，也可能涵蓋較廣。；「一定是乙」乙通常同圖幅涵蓋大，但本題圖幅不同且未給尺寸。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

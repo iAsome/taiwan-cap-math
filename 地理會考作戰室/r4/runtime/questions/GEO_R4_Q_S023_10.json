@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S023_10",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AB-4-1",
+    "AUTH-SOCIAL-LC-GEO-AB-4-2",
+    "AUTH-SOCIAL-LC-GEO-AB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一張等高線圖被橫向拉長兩倍、縱向不變。還能直接以線疏密比較各方向坡度嗎？",
+  "options": [
+    "不能，因高度也必加倍",
+    "不能，非等比例變形改變不同方向的水平尺度",
+    "能，等高線數值沒有改字",
+    "能，拉長會讓所有坡都同樣陡"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "垂直海拔數值未必改變，問題是水平尺度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "不同方向紙距遭不同倍率改變，視覺疏密失真。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "數值沒改不能修復水平幾何。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "坡度不會因影像處理變成相同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "圖面失真"
+  ],
+  "representationType": "distorted-contours",
+  "misconceptionTargets": [
+    "數值標籤未變就可判坡"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AB-4-1",
+      "AUTH-SOCIAL-LC-GEO-AB-4-2",
+      "AUTH-SOCIAL-LC-GEO-AB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "等高線坡度判讀依賴圖面水平距離，故只容許已知的等比例縮放。 正確選項「不能，非等比例變形改變不同方向的水平尺度」可由題幹推出，因為不同方向紙距遭不同倍率改變，視覺疏密失真。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "可回到原圖或取得變形參數重建距離，不能直接沿用拉伸圖。 逐項排除其他選項：「不能，因高度也必加倍」垂直海拔數值未必改變，問題是水平尺度。；「能，等高線數值沒有改字」數值沒改不能修復水平幾何。；「能，拉長會讓所有坡都同樣陡」坡度不會因影像處理變成相同。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

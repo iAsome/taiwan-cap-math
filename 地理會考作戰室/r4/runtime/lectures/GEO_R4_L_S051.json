@@ -1,0 +1,134 @@
+{
+  "id": "GEO_R4_L_S051",
+  "subject": "geography",
+  "unitId": "GEO_R4_U08",
+  "skillId": "GEO_R4_S051",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-AC-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "prerequisites": [
+    "GEO_R4_S050"
+  ],
+  "objectives": [
+    "能讀取氣溫、降水、風向風速與氣壓的數值、單位、方向及觀測時段。",
+    "能區分累積量、瞬時值、平均值、機率與缺值，避免跨不同定義直接比較。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S051_SEC01",
+      "title": "每個氣象要素都有單位",
+      "content": "氣溫常用攝氏度，氣壓常用百帕，降水量常用毫米，風速可用公尺每秒或公里每小時。讀表時先看欄名與單位，再讀數值；同一風速若單位不同需換算，不能因數字較大就直接說風較強。"
+    },
+    {
+      "id": "GEO_R4_L_S051_SEC02",
+      "title": "風向說風從哪裡來",
+      "content": "北風表示風由北方吹向南方，東南風表示風由東南吹向西北；風向標箭頭或圖例可能有自己的指向規則，必須讀圖例。描述污染下風處時，還要把來向轉成去向，不能把北風誤說污染往北移。"
+    },
+    {
+      "id": "GEO_R4_L_S051_SEC03",
+      "title": "降水量要連同累積期間",
+      "content": "一小時雨量二十毫米與二十四小時雨量二十毫米代表不同強度；降雨機率百分之七十也不等於雨量七十毫米。毫米雨量可理解為均勻落在水平面上的水深，若要算體積還需乘集水面積，不能把毫米直接改成公升。"
+    },
+    {
+      "id": "GEO_R4_L_S051_SEC04",
+      "title": "瞬時平均極值與缺值",
+      "content": "某時氣溫是瞬時或定時觀測，日均溫與日最高溫是不同統計；氣壓也可能校正到海平面或保留測站氣壓。空白、破折號或品質旗標須查圖例，不能自動當零。比較前要讓時間、單位與定義一致。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S051_EX01",
+      "prompt": "表中北風、每秒六公尺，煙霧大致往哪裡移？",
+      "steps": [
+        "北風來自北方",
+        "去向與來向相反",
+        "若地形不阻擋則往南"
+      ],
+      "answer": "煙霧大致向南移動。",
+      "why": "實際擴散還受風場高度、穩定度和地形影響，地面一筆風向只作初步判斷。"
+    },
+    {
+      "id": "GEO_R4_L_S051_EX02",
+      "prompt": "一小時雨量十五毫米與十二小時雨量十八毫米，哪段平均雨強較大？",
+      "steps": [
+        "前者每小時十五",
+        "後者平均每小時一點五",
+        "統一每小時比較"
+      ],
+      "answer": "一小時十五毫米那段較強。",
+      "why": "只看總量十八較大會誤判，時間分母是強度比較必要條件。"
+    },
+    {
+      "id": "GEO_R4_L_S051_EX03",
+      "prompt": "山站氣壓八百九十百帕、平地站一千百帕，能直接說山站一定有更強低壓天氣嗎？",
+      "steps": [
+        "站高不同會影響測站氣壓",
+        "先比較海平面校正氣壓",
+        "查同時天氣場"
+      ],
+      "answer": "不能直接比較未校正測站氣壓。",
+      "why": "氣壓隨高度降低，必須確認欄位定義與校正方式。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "北風表示風往北方吹。",
+      "whyWrong": "氣象風向以來向命名，北風由北往南。",
+      "correction": "把風向反轉得到下風方向。"
+    },
+    {
+      "belief": "降雨機率百分之八十等於雨量八十毫米。",
+      "whyWrong": "機率描述是否降雨的不確定性，不是累積水深。",
+      "correction": "分開讀機率與雨量欄。"
+    },
+    {
+      "belief": "總雨量較大表示雨勢一定較強。",
+      "whyWrong": "強度還取決於累積時間，長時小雨總量可較大。",
+      "correction": "換成相同時間率再比。"
+    },
+    {
+      "belief": "空白氣溫就是零度。",
+      "whyWrong": "空白可能未觀測或資料缺失，零度是有效觀測。",
+      "correction": "查缺值符號與品質旗標。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "東風從哪裡吹向哪裡？",
+      "answer": "由東吹向西。",
+      "reason": "風向以來向命名。"
+    },
+    {
+      "prompt": "雨量常用什麼單位？",
+      "answer": "毫米。",
+      "reason": "表示水平面累積水深。"
+    },
+    {
+      "prompt": "百分之六十降雨機率是否等於六十毫米？",
+      "answer": "不是。",
+      "reason": "一個是機率，一個是雨量。"
+    },
+    {
+      "prompt": "山地和平地氣壓比較先查什麼？",
+      "answer": "是測站氣壓或海平面校正氣壓。",
+      "reason": "高度會影響測站氣壓。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-AC-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  }
+}

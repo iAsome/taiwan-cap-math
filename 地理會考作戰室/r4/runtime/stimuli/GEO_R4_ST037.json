@@ -1,0 +1,77 @@
+{
+  "id": "GEO_R4_ST037",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "content": {
+    "title": "三個服務站候選區疊圖結果",
+    "prompt": "規則為坡度低於8度、十五分鐘路網可達人口至少8,000人、不得位於洪水高潛勢區。",
+    "table": {
+      "columns": [
+        "候選區",
+        "平均坡度",
+        "可達人口",
+        "洪水潛勢",
+        "道路資料"
+      ],
+      "rows": [
+        [
+          "甲",
+          "5度",
+          "9,200",
+          "低",
+          "本月"
+        ],
+        [
+          "乙",
+          "3度",
+          "12,500",
+          "高",
+          "本月"
+        ],
+        [
+          "丙",
+          "10度",
+          "8,700",
+          "低",
+          "五年前"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "列出三候選區坡度、十五分鐘可達人口、洪水潛勢與道路資料日期，並給明確篩選規則。",
+    "longDescription": "門檻是坡度小於八度、可達人口至少八千、非洪水高潛勢。甲為五度、九千二百人、低潛勢、道路本月更新；乙三度、一萬二千五百人但高潛勢；丙十度、八千七百人、低潛勢且道路層五年前。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S037_ST01",
+    "GEO_R4_Q_S037_ST02",
+    "GEO_R4_Q_S037_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

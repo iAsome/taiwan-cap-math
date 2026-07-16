@@ -1,0 +1,77 @@
+{
+  "id": "GEO_R4_ST203",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S203"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LC-GEO-BI-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3"
+  ],
+  "content": {
+    "title": "某雨林道路周邊五年變化",
+    "prompt": "距離為地塊到主幹道最近距離；砍伐率為五年間森林轉換比例。",
+    "table": {
+      "columns": [
+        "距道路",
+        "砍伐率",
+        "新支線密度",
+        "火災次數",
+        "合法許可占砍伐"
+      ],
+      "rows": [
+        [
+          "0至5公里",
+          "22%",
+          "高",
+          "48次",
+          "35%"
+        ],
+        [
+          "5至20公里",
+          "11%",
+          "中",
+          "21次",
+          "52%"
+        ],
+        [
+          "20公里以上",
+          "3%",
+          "低",
+          "6次",
+          "68%"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "表格顯示越靠近道路，砍伐率、支線密度和火災較高，合法許可占比反而較低。",
+    "longDescription": "道路五公里內砍伐百分之二十二、支線高、火災四十八次、合法許可占百分之三十五；五至二十公里砍伐百分之十一、支線中、火災二十一次、合法占百分之五十二；二十公里外砍伐百分之三、支線低、火災六次、合法占百分之六十八。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S203_ST01",
+    "GEO_R4_Q_S203_ST02",
+    "GEO_R4_Q_S203_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LC-GEO-BI-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S037_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S037"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "道路密度與人口密度高區重疊，最穩當的結論是什麼？",
+  "options": [
+    "人口必完全由道路造成",
+    "兩者沒有任何關係",
+    "兩者在此資料中呈空間相關，因果需另證",
+    "道路必是人口唯一原因"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "因果也可能反向或雙向。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "重疊至少支持關聯。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "疊圖直接支持共現但非因果方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍可能有產業地形等因素。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "關聯因果"
+  ],
+  "representationType": "density-overlay",
+  "misconceptionTargets": [
+    "空間重疊證明唯一因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "語句要把觀察層級限定在此資料與空間關聯。 正確選項「兩者在此資料中呈空間相關，因果需另證」可由題幹推出，因為疊圖直接支持共現但非因果方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間序列、政策變化或可比較地區可進一步檢驗機制。 逐項排除其他選項：「人口必完全由道路造成」因果也可能反向或雙向。；「兩者沒有任何關係」重疊至少支持關聯。 這項內容無法支持題幹所要求的地理判斷。；「道路必是人口唯一原因」仍可能有產業地形等因素。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

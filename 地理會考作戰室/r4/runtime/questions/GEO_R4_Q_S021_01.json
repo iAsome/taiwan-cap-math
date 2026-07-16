@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S021_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一公里等於多少公分？",
+  "options": [
+    "十萬公分",
+    "一萬公分",
+    "一千公分",
+    "一百公分"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "一公里為一千公尺，每公尺一百公分，共十萬。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一萬公分只有一百公尺。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一千公分只有十公尺。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百公分只有一公尺。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "單位基準"
+  ],
+  "representationType": "unit-chain",
+  "misconceptionTargets": [
+    "公里公分只差一千倍"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "建立一公里乘一千公尺再乘一百公分的單位鏈，可得十萬。 正確選項「十萬公分」可由題幹推出，因為一公里為一千公尺，每公尺一百公分，共十萬。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比例尺題常以公分計算，這個十萬倍是檢查零位的基準。 逐項排除其他選項：「一萬公分」一萬公分只有一百公尺。；「一千公分」一千公分只有十公尺。 這項內容無法支持題幹所要求的地理判斷。；「一百公分」一百公分只有一公尺。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

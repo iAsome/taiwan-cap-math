@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S038_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S038"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一個影像區暗且平滑，能立即確定是水體嗎？",
+  "options": [
+    "能，只要位於紙面下方",
+    "不能，因衛星永遠看不到水",
+    "不能，雲影或地形陰影也可能相似",
+    "能，暗色永遠是水"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "紙面位置不決定覆蓋。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "衛星可觀察水體但需適當波段。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "單一色調具有多重可能解釋。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "水色會隨波段與混濁度變。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "多義判讀"
+  ],
+  "representationType": "dark-patch",
+  "misconceptionTargets": [
+    "暗平滑無條件等於水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "應加入形狀、水系位置、雲投影和另一日期影像。 正確選項「不能，雲影或地形陰影也可能相似」可由題幹推出，因為單一色調具有多重可能解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若暗斑隨雲移動而消失，就更支持陰影而非固定水體。 逐項排除其他選項：「能，只要位於紙面下方」紙面位置不決定覆蓋。 這項內容無法支持題幹所要求的地理判斷。；「不能，因衛星永遠看不到水」衛星可觀察水體但需適當波段。；「能，暗色永遠是水」水色會隨波段與混濁度變。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

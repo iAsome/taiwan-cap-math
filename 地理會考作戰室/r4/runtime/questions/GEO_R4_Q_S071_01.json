@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S071_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AD-4-1",
+    "AUTH-SOCIAL-LC-GEO-AD-4-2",
+    "AUTH-SOCIAL-LC-GEO-AD-4-4",
+    "AUTH-SOCIAL-LC-GEO-BA-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-3",
+    "AUTH-SOCIAL-LC-GEO-BI-4-2",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某區人口十二萬、面積六十平方公里，人口密度為何？",
+  "options": [
+    "每平方公里2000人",
+    "每平方公里720萬人",
+    "每平方公里0.0005人",
+    "只有十二萬人"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "十二萬除以六十等於兩千。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "誤用乘法。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "顛倒除法。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這是總人口。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "密度計算"
+  ],
+  "representationType": "density",
+  "misconceptionTargets": [
+    "人口數就是密度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AD-4-1",
+      "AUTH-SOCIAL-LC-GEO-AD-4-2",
+      "AUTH-SOCIAL-LC-GEO-AD-4-4",
+      "AUTH-SOCIAL-LC-GEO-BA-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-3",
+      "AUTH-SOCIAL-LC-GEO-BI-4-2",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "密度必須同時使用人口與面積。 正確選項「每平方公里2000人」可由題幹推出，因為十二萬除以六十等於兩千。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較時確認面積單位都是平方公里。 逐項排除其他選項：「每平方公里720萬人」誤用乘法。 這項內容無法支持題幹所要求的地理判斷。；「每平方公里0.0005人」顛倒除法。 這項內容無法支持題幹所要求的地理判斷。；「只有十二萬人」這是總人口。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

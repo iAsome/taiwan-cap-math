@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S021_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "由實際距離反求圖距時，哪個流程正確？",
+  "options": [
+    "後項除以實距且不管單位",
+    "只憑地名猜長度",
+    "實距先換成圖距單位，再除比例尺後項",
+    "實距直接乘後項"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "順序與單位都不符合比例關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "地名不能代替距離計算。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同單位後用縮小的除法得到圖距。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乘後項會把實距放得更大。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "流程檢查"
+  ],
+  "representationType": "formula",
+  "misconceptionTargets": [
+    "反向換算仍用乘法"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反向流程可用乘回驗證：圖距乘後項應還原原實距。 正確選項「實距先換成圖距單位，再除比例尺後項」可由題幹推出，因為同單位後用縮小的除法得到圖距。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把算法寫成帶單位的一行，能同時防止乘除和換算兩類錯誤。 逐項排除其他選項：「後項除以實距且不管單位」順序與單位都不符合比例關係。；「只憑地名猜長度」地名不能代替距離計算。；「實距直接乘後項」乘後項會把實距放得更大。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

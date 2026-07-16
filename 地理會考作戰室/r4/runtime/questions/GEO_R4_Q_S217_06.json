@@ -1,0 +1,94 @@
+{
+  "id": "GEO_R4_Q_S217_06",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S217"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-BB-4-4",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-3",
+    "AUTH-SOCIAL-LC-GEO-BG-4-4",
+    "AUTH-SOCIAL-LC-GEO-BH-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-2B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2B-4-3",
+    "AUTH-SOCIAL-LP-SOC-2C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "太陽能中午高產、晚間需求高峰，最直接的系統問題是什麼？",
+  "options": [
+    "輸電只在中午存在",
+    "供給時間與需求時間不完全吻合",
+    "太陽能屬非再生",
+    "晚間需求一定為零"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "電網全天存在。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "需儲能、需求反應或其他來源銜接。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "太陽能屬再生。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "材料指出晚間高峰。 這項內容無法支持題幹所要求的地理判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "temporal-mismatch"
+  ],
+  "representationType": "solar-peak",
+  "misconceptionTargets": [
+    "年總量足夠就沒有缺電"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-BB-4-4",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-3",
+      "AUTH-SOCIAL-LC-GEO-BG-4-4",
+      "AUTH-SOCIAL-LC-GEO-BH-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-2B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2B-4-3",
+      "AUTH-SOCIAL-LP-SOC-2C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同年發電量仍可能有逐時落差。 正確選項「供給時間與需求時間不完全吻合」可由題幹推出，因為需儲能、需求反應或其他來源銜接。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐項排除其他選項：「輸電只在中午存在」電網全天存在。 這項內容無法支持題幹所要求的地理判斷。；「太陽能屬非再生」太陽能屬再生。 這項內容無法支持題幹所要求的地理判斷。；「晚間需求一定為零」材料指出晚間高峰。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

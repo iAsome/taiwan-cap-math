@@ -1,0 +1,143 @@
+{
+  "id": "GEO_R4_L_S058",
+  "subject": "geography",
+  "unitId": "GEO_R4_U09",
+  "skillId": "GEO_R4_S058",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "prerequisites": [
+    "GEO_R4_S057"
+  ],
+  "objectives": [
+    "能說明海洋與陸地受熱、散熱速度不同所造成的年溫差差異。",
+    "能從月均溫資料判斷海洋性或大陸性影響。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S058_SEC1",
+      "title": "海陸熱性質",
+      "content": "陸地受熱與散熱較快，海水升溫與降溫較慢。相同緯度下，深入大陸的地區夏季容易較熱、冬季容易較冷；沿海因海洋調節，月均溫變化通常較和緩。"
+    },
+    {
+      "id": "GEO_R4_L_S058_SEC2",
+      "title": "用年溫差判讀",
+      "content": "年溫差是最熱月平均氣溫減去最冷月平均氣溫。比較時要用同一單位與同一統計方式；沿海年溫差常較小，內陸常較大，但緯度、海流與地形也可能改變數值。"
+    },
+    {
+      "id": "GEO_R4_L_S058_SEC3",
+      "title": "距海近不等於一定受海洋影響",
+      "content": "盛行風若由陸地吹向海洋，沿岸接受的海洋調節可能較弱；山脈也可能阻擋海洋氣團。因此判斷時不能只看直線距海遠近，還要檢查風向與地形通道。"
+    },
+    {
+      "id": "GEO_R4_L_S058_SEC4",
+      "title": "資料解題",
+      "content": "先確認兩地緯度與海拔是否相近，接著算最熱月與最冷月之差，再連結距海、風向與地形。若無法判斷，先用「夏不過熱、冬不過冷」辨認海洋調節，再查是否有其他因素干擾。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S058_EX1",
+      "prompt": "同緯度的甲沿海城最冷月8°C、最熱月24°C；乙內陸城最冷月−4°C、最熱月28°C。",
+      "steps": [
+        "分別計算年溫差",
+        "比較16°C與32°C",
+        "連結海洋調節"
+      ],
+      "answer": "甲受海洋調節較明顯。",
+      "why": "甲的年溫差只有16°C，冬夏變化較緩；乙達32°C，呈現陸地快速受熱與散熱的特徵。"
+    },
+    {
+      "id": "GEO_R4_L_S058_EX2",
+      "prompt": "某沿岸地區冬季盛行由海洋吹來的風，冬溫可能有何特徵？",
+      "steps": [
+        "確認風的來向",
+        "判斷海水冬季降溫較慢",
+        "推論沿岸氣溫"
+      ],
+      "answer": "冬季較同緯度內陸溫和。",
+      "why": "冬季海水保留較多熱量，海風把較溫和的空氣帶向陸地，因而減弱低溫。"
+    },
+    {
+      "id": "GEO_R4_L_S058_EX3",
+      "prompt": "兩地年溫差相同，能否直接斷定距海距離相同？",
+      "steps": [
+        "辨認年溫差只是結果",
+        "列出其他控制因素",
+        "判斷證據是否充分"
+      ],
+      "answer": "不能。",
+      "why": "緯度、海拔、洋流、地形與盛行風都會影響月均溫；相同年溫差可能由不同因素組合形成。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "靠海地區一年四季的氣溫都比內陸低。",
+      "whyWrong": "海洋調節是減小冬夏差異，不是全年固定降溫。",
+      "correction": "夏季沿海常較涼，冬季則可能比同緯度內陸溫和。"
+    },
+    {
+      "belief": "年溫差就是最高日溫減最低日溫。",
+      "whyWrong": "氣候判讀通常比較最熱月與最冷月的月均溫。",
+      "correction": "先確認資料欄位，再用月均溫計算年溫差。"
+    },
+    {
+      "belief": "地圖上離海近就一定是海洋性氣候。",
+      "whyWrong": "離岸風與山地屏障會削弱海洋氣團影響。",
+      "correction": "距海、盛行風與地形必須一起判讀。"
+    },
+    {
+      "belief": "內陸年溫差大是因為每天日夜溫差都大。",
+      "whyWrong": "日溫差與年溫差是不同時間尺度。",
+      "correction": "年溫差比較季節，不能用單日變化代替。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "最熱月26°C、最冷月6°C，年溫差多少？",
+      "answer": "20°C。",
+      "reason": "以26減6。"
+    },
+    {
+      "prompt": "同緯度同海拔下，沿海與內陸何者年溫差通常較小？",
+      "answer": "沿海。",
+      "reason": "海水受熱與散熱速度較慢。"
+    },
+    {
+      "prompt": "只憑距海遠近能否完成海陸性判斷？",
+      "answer": "不能。",
+      "reason": "還要考慮盛行風與地形阻隔。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  }
+}

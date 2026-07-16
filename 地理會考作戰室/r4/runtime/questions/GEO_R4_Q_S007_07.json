@@ -1,0 +1,100 @@
+{
+  "id": "GEO_R4_Q_S007_07",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S007"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-2",
+    "AUTH-SOCIAL-LP-SOC-1A-4-1",
+    "AUTH-SOCIAL-LP-SOC-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3A-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3C-4-2",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩條自行車路線：甲較短但坡陡，乙較長但平緩。若主要服務日常通勤初學者，較合理的判斷是什麼？",
+  "options": [
+    "一律選最短的甲",
+    "優先評估乙，並確認增加路程是否仍可接受",
+    "因乙較長所以必定危險",
+    "無需調查使用者"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "初學者可能受坡度影響，不能只看距離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "平緩符合對象需求，但仍需檢查時間成本。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "路線長不等於危險。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "目標使用者是判準來源。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "情境權衡"
+  ],
+  "representationType": "text",
+  "misconceptionTargets": [
+    "最短路徑必定最佳"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-2",
+      "AUTH-SOCIAL-LP-SOC-1A-4-1",
+      "AUTH-SOCIAL-LP-SOC-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3A-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3C-4-2",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第二項把服務對象、坡度與額外距離一起納入，結論有條件。 正確選項「優先評估乙，並確認增加路程是否仍可接受」可由題幹推出，因為平緩符合對象需求，但仍需檢查時間成本。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第一與第三項皆單因決定，第四項忽略需求證據。 逐項排除其他選項：「一律選最短的甲」初學者可能受坡度影響，不能只看距離。；「因乙較長所以必定危險」路線長不等於危險。 這項內容無法支持題幹所要求的地理判斷。；「無需調查使用者」目標使用者是判準來源。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,79 @@
+{
+  "id": "GEO_R4_ST036",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "content": {
+    "title": "城市 GIS 圖層目錄",
+    "prompt": "工作小組要進行避難服務分析，各圖層坐標系統相同。",
+    "table": {
+      "columns": [
+        "圖層",
+        "幾何",
+        "主要屬性",
+        "更新日期"
+      ],
+      "rows": [
+        [
+          "避難所",
+          "點",
+          "名稱、容量、開放狀態",
+          "本月"
+        ],
+        [
+          "道路",
+          "線",
+          "路名、速限、通行狀態",
+          "今日"
+        ],
+        [
+          "行政區",
+          "面",
+          "區名、人口",
+          "今年"
+        ],
+        [
+          "河川",
+          "線",
+          "河名、河段編號",
+          "三年前"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "列出避難所、道路、行政區與河川四圖層的幾何、屬性及更新日期。",
+    "longDescription": "避難所是點，含本月容量與開放狀態；道路是線，含今日速限與通行狀態；行政區是面，含今年區名人口；河川是線，含三年前河名與河段編號。所有圖層使用相同坐標系統。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S036_ST01",
+    "GEO_R4_Q_S036_ST02",
+    "GEO_R4_Q_S036_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  }
+}

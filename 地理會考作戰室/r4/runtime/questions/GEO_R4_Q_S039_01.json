@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S039_01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "比較兩期衛星影像前，最重要的空間處理之一為何？",
+  "options": [
+    "把相同地點幾何配準對齊",
+    "把日期刪除",
+    "任意改變顏色",
+    "只放大較舊影像"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "對齊可避免固定邊界被誤判位移。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "日期是時序分析必要資訊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "任意配色不能提升幾何一致。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "放大不新增解析度或對齊。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "影像配準"
+  ],
+  "representationType": "change-detection",
+  "misconceptionTargets": [
+    "透明疊圖就自動對齊"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "道路與河道等控制點應在兩期落到相同位置。 正確選項「把相同地點幾何配準對齊」可由題幹推出，因為對齊可避免固定邊界被誤判位移。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "配準後仍要統一解析度、波段與分類方法。 逐項排除其他選項：「把日期刪除」日期是時序分析必要資訊。；「任意改變顏色」任意配色不能提升幾何一致。；「只放大較舊影像」放大不新增解析度或對齊。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

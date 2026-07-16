@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S011_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲 18°W、乙 62°W。甲相對乙位於哪一方？",
+  "options": [
+    "東方",
+    "西方",
+    "北方",
+    "無法判斷東西"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "西經十八度較靠近本初經線，位於六十二度西的東方。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙才在甲的西方。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "緯度未知不能判南北，但題目問東西。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同為西經且數值明確，可以比較。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "西經排序"
+  ],
+  "representationType": "coordinate",
+  "misconceptionTargets": [
+    "西經方向顛倒"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "在西經數線上由 62°W 向零度移動會先到 18°W，故甲在東。 正確選項「東方」可由題幹推出，因為西經十八度較靠近本初經線，位於六十二度西的東方。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "將本初經線設為零即可排除把西經大數判東的錯誤。 逐項排除其他選項：「西方」乙才在甲的西方。 這項內容無法支持題幹所要求的地理判斷。；「北方」緯度未知不能判南北，但題目問東西。；「無法判斷東西」同為西經且數值明確，可以比較。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

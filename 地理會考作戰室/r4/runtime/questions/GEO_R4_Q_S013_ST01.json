@@ -1,0 +1,80 @@
+{
+  "id": "GEO_R4_Q_S013_ST01",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AA-4-1",
+    "AUTH-SOCIAL-LC-GEO-AA-4-2",
+    "AUTH-SOCIAL-LC-GEO-AA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1"
+  ],
+  "stimulusId": "GEO_R4_ST013",
+  "stem": "哪一筆是完整的平面絕對位置？",
+  "options": [
+    "丁",
+    "甲",
+    "乙",
+    "丙"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丁只有高度，不能定位平面點位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲提供成對緯度經度，可定位交點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙以衛生所為參考，屬相對位置。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丙以舊站為參考且已失效。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料分類"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "把海拔當完整座標"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AA-4-1",
+      "AUTH-SOCIAL-LC-GEO-AA-4-2",
+      "AUTH-SOCIAL-LC-GEO-AA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "平面絕對位置需成對座標，只有甲符合。 正確選項「甲」可由題幹推出，因為甲提供成對緯度經度，可定位交點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "海拔是垂直位置屬性，不能與經緯度座標並列為完整平面定位。 逐項排除其他選項：「丁」丁只有高度，不能定位平面點位。；「乙」乙以衛生所為參考，屬相對位置。；「丙」丙以舊站為參考且已失效。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

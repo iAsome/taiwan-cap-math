@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S017_04",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S017"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "一比二十五萬的地圖要表示實際十五公里，線段應長多少公分？",
+  "options": [
+    "十五公分",
+    "六十公分",
+    "三公分",
+    "六公分"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十五是實距公里數，不能直接當圖距。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "六十公分會代表一百五十公里。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三公分只代表七點五公里。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "十五公里為一百五十萬公分，除二十五萬得六。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "比例反算"
+  ],
+  "representationType": "regional-map",
+  "misconceptionTargets": [
+    "把實距數值直接作圖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先認出一公分代表二點五公里，十五除二點五得到六公分。 正確選項「六公分」可由題幹推出，因為十五公里為一百五十萬公分，除二十五萬得六。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "使用每公分代表值比處理一百五十萬更簡潔，兩種算法結果一致。 逐項排除其他選項：「十五公分」十五是實距公里數，不能直接當圖距。；「六十公分」六十公分會代表一百五十公里。；「三公分」三公分只代表七點五公里。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

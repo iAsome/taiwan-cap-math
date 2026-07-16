@@ -1,0 +1,88 @@
+{
+  "id": "GEO_R4_Q_S142_ST03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S142"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-1",
+    "AUTH-SOCIAL-LC-GEO-AE-4-2",
+    "AUTH-SOCIAL-LC-GEO-AE-4-3",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-CA-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "stimulusId": "GEO_R4_ST142",
+  "stem": "表中沒有哪項資料，因此無法直接判斷三地的環境負荷？",
+  "options": [
+    "研發人才",
+    "土地成本",
+    "供應商連結",
+    "污染排放與資源使用量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人才資料已列出。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "土地成本已列出。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "供應商連結已列出。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "表內未提供排放、耗水量或能源量。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "辨認資料限制"
+  ],
+  "representationType": "table",
+  "misconceptionTargets": [
+    "把區位條件當環境績效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-1",
+      "AUTH-SOCIAL-LC-GEO-AE-4-2",
+      "AUTH-SOCIAL-LC-GEO-AE-4-3",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-CA-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料缺口檢查顯示環境負荷所需的排放與資源量並未出現。 正確選項「污染排放與資源使用量」可由題幹推出，因為表內未提供排放、耗水量或能源量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "前三項皆可在表格找到，只有第四項是評估環境時必要但缺少的變數。 逐項排除其他選項：「研發人才」人才資料已列出。 這項內容無法支持題幹所要求的地理判斷。；「土地成本」土地成本已列出。 這項內容無法支持題幹所要求的地理判斷。；「供應商連結」供應商連結已列出。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,140 @@
+{
+  "id": "GEO_R4_L_S082",
+  "subject": "geography",
+  "unitId": "GEO_R4_U12",
+  "skillId": "GEO_R4_S082",
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AF-4-1",
+    "AUTH-SOCIAL-LC-GEO-AF-4-2",
+    "AUTH-SOCIAL-LC-GEO-AF-4-3",
+    "AUTH-SOCIAL-LC-GEO-CA-4-2",
+    "AUTH-SOCIAL-LC-GEO-CA-4-3",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-2"
+  ],
+  "prerequisites": [
+    "GEO_R4_S081"
+  ],
+  "objectives": [
+    "能由都市人口、總人口與建成區資料計算都市化程度、變化量與速度。",
+    "能區分都市化率高低與都市化速度快慢，核對都市定義、邊界和自然增加遷移等成因。"
+  ],
+  "sections": [
+    {
+      "id": "GEO_R4_L_S082_SEC01",
+      "title": "都市化程度是都市人口占比",
+      "content": "都市化率常以都市人口除以總人口乘百分之百。它描述人口居住於被定義為都市地區的比例，不等於都市人口數，也不直接表示生活品質或經濟發展程度。"
+    },
+    {
+      "id": "GEO_R4_L_S082_SEC02",
+      "title": "都市化速度看一段時間的變化",
+      "content": "都市化率由百分之四十升至五十，增加十個百分點；若歷時十年，平均每年增加一個百分點。都市化率很高的地方仍可能變化慢，起點較低的地方則可能快速上升。"
+    },
+    {
+      "id": "GEO_R4_L_S082_SEC03",
+      "title": "分子分母都會改變",
+      "content": "都市人口可因鄉城遷移、都市內自然增加、邊界擴張或聚落重新分類而增加；農村人口也可能同時增長。只看比例無法唯一判定哪個機制，需人口流動與行政口徑資料。"
+    },
+    {
+      "id": "GEO_R4_L_S082_SEC04",
+      "title": "建成區擴張不等於人口同比增長",
+      "content": "低密度蔓延可使建成面積增速高於人口，都市也可能在原範圍內增密而面積變化小。跨國比較要確認都市門檻、年份與是否以行政區或連續建成區定義。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "GEO_R4_L_S082_EX01",
+      "prompt": "都市人口六十萬、總人口八十萬，都市化率多少？",
+      "steps": [
+        "六十除八十",
+        "得到零點七五",
+        "轉百分之七十五"
+      ],
+      "answer": "都市化率百分之七十五。",
+      "why": "總人口是分母。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S082_EX02",
+      "prompt": "率由六十升六十八，如何報變化？",
+      "steps": [
+        "六十八減六十",
+        "得到八",
+        "寫百分點"
+      ],
+      "answer": "增加八個百分點。",
+      "why": "相對增幅則是八除以六十，兩者不同。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    },
+    {
+      "id": "GEO_R4_L_S082_EX03",
+      "prompt": "都市人口不變、總人口下降，都市化率可能如何？",
+      "steps": [
+        "分子固定",
+        "分母變小",
+        "比值上升"
+      ],
+      "answer": "都市化率可能上升。",
+      "why": "所以率升不必等於都市人口增。 這樣能把題幹線索與地理概念逐項對照，答案便可由證據推出，而不是只靠印象猜測。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "都市化率就是都市人口數。",
+      "whyWrong": "率是都市人口占總人口比例。",
+      "correction": "先找分子分母。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "都市化率高表示速度快。",
+      "whyWrong": "程度與變化速度不同。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "比較多個年份。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "率升必因鄉村人口移入都市。",
+      "whyWrong": "自然增加、改界與重分類也可能。",
+      "correction": "補人口平衡資料。 應依題幹條件與資料證據逐項核對後再判斷。"
+    },
+    {
+      "belief": "建成區擴張率等於人口增長率。",
+      "whyWrong": "密度變化可使兩者脫鉤。 這會忽略題幹中的條件與證據，因而導出不可靠的地理判斷。",
+      "correction": "同時計算人口與面積。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "都市化率公式為何？",
+      "answer": "都市人口除總人口乘百分之百。",
+      "reason": "總人口為分母。"
+    },
+    {
+      "prompt": "率高等於增速快嗎？",
+      "answer": "不等於。",
+      "reason": "需比較時序。"
+    },
+    {
+      "prompt": "百分之四十到五十增加多少？",
+      "answer": "十個百分點。",
+      "reason": "不是百分之十相對增幅。"
+    },
+    {
+      "prompt": "率升只有遷移原因嗎？",
+      "answer": "不是。",
+      "reason": "改界自然增加也可能。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AF-4-1",
+      "AUTH-SOCIAL-LC-GEO-AF-4-2",
+      "AUTH-SOCIAL-LC-GEO-AF-4-3",
+      "AUTH-SOCIAL-LC-GEO-CA-4-2",
+      "AUTH-SOCIAL-LC-GEO-CA-4-3",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-2"
+    ]
+  }
+}

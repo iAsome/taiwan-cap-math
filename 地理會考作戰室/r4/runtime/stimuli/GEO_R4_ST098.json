@@ -1,0 +1,87 @@
+{
+  "id": "GEO_R4_ST098",
+  "subject": "geography",
+  "type": "table",
+  "skillIds": [
+    "GEO_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AE-4-1",
+    "AUTH-SOCIAL-LC-GEO-AE-4-4",
+    "AUTH-SOCIAL-LC-GEO-BA-4-2",
+    "AUTH-SOCIAL-LC-GEO-CB-4-1",
+    "AUTH-SOCIAL-LC-GEO-CB-4-2",
+    "AUTH-SOCIAL-LC-GEO-CB-4-3",
+    "AUTH-SOCIAL-LC-GEO-CB-4-4",
+    "AUTH-SOCIAL-LP-GEO-1A-4-2",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-SOC-2A-4-1"
+  ],
+  "content": {
+    "title": "中央廚房異常調查",
+    "prompt": "同日供應甲乙丙三批餐盒。",
+    "table": {
+      "columns": [
+        "批次",
+        "供應人數",
+        "發病人數",
+        "共同配菜",
+        "冷藏紀錄",
+        "生產線"
+      ],
+      "rows": [
+        [
+          "甲",
+          "400",
+          "96",
+          "蛋沙拉",
+          "12°C共4小時",
+          "線1"
+        ],
+        [
+          "乙",
+          "380",
+          "4",
+          "燙青菜",
+          "5°C",
+          "線2"
+        ],
+        [
+          "丙",
+          "420",
+          "88",
+          "蛋沙拉",
+          "11°C共3小時",
+          "線1"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "summary": "甲丙發病比例高且共有蛋沙拉、超溫與生產線一；乙發病少且冷藏正常。",
+    "longDescription": "甲供應四百人、九十六人發病，共同配菜蛋沙拉，十二度四小時，生產線一；乙三百八十人、四人發病，燙青菜、五度、線二；丙四百二十人、八十八人發病，蛋沙拉、十一度三小時、線一。"
+  },
+  "assets": [],
+  "questionIds": [
+    "GEO_R4_Q_S098_ST01",
+    "GEO_R4_Q_S098_ST02",
+    "GEO_R4_Q_S098_ST03"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AE-4-1",
+      "AUTH-SOCIAL-LC-GEO-AE-4-4",
+      "AUTH-SOCIAL-LC-GEO-BA-4-2",
+      "AUTH-SOCIAL-LC-GEO-CB-4-1",
+      "AUTH-SOCIAL-LC-GEO-CB-4-2",
+      "AUTH-SOCIAL-LC-GEO-CB-4-3",
+      "AUTH-SOCIAL-LC-GEO-CB-4-4",
+      "AUTH-SOCIAL-LP-GEO-1A-4-2",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-SOC-2A-4-1"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "GEO_R4_Q_S015_03",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3"
+  ],
+  "stimulusId": null,
+  "stem": "線段比例尺零到十二公里分成四個等長格，一格代表多少公里？",
+  "options": [
+    "八公里",
+    "十二公里",
+    "三公里",
+    "四公里"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "八公里沒有由總距離除以格數得到。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十二公里是全長，不是單格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "十二公里平均分成四格，每格三公里。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四是格數，不是每格公里數。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "刻度判讀"
+  ],
+  "representationType": "scale-bar",
+  "misconceptionTargets": [
+    "把格數當距離"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "讀線段比例尺先確認總刻度，再用十二除以四得到單格三公里。 正確選項「三公里」可由題幹推出，因為十二公里平均分成四格，每格三公里。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若待測線跨兩格才是六公里，不能把全長或格數直接當單格值。 逐項排除其他選項：「八公里」八公里沒有由總距離除以格數得到。；「十二公里」十二公里是全長，不是單格。；「四公里」四是格數，不是每格公里數。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

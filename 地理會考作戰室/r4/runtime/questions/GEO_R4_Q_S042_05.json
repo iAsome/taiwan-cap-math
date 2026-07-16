@@ -1,0 +1,84 @@
+{
+  "id": "GEO_R4_Q_S042_05",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S042"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1",
+    "AUTH-SOCIAL-LP-GEO-1C-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-1",
+    "AUTH-SOCIAL-LP-SOC-3B-4-2",
+    "AUTH-SOCIAL-LP-SOC-3B-4-3",
+    "AUTH-SOCIAL-LP-SOC-3D-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "三十公尺高程網格輸出坡道坡度到小數三位，主要問題是什麼？",
+  "options": [
+    "來源尺度不支持一公尺設施與過多小數",
+    "小數越多一定越準",
+    "高程完全不能算坡度",
+    "坡道必長三十公尺"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "粗像元與設施尺度不匹配且是假精確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "輸出位數不新增資訊。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "高程可算區域坡度。 這項內容無法支持題幹所要求的地理判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "像元大小不決定坡道長。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "假精確"
+  ],
+  "representationType": "slope-output",
+  "misconceptionTargets": [
+    "計算器小數等於空間精度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1",
+      "AUTH-SOCIAL-LP-GEO-1C-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-1",
+      "AUTH-SOCIAL-LP-SOC-3B-4-2",
+      "AUTH-SOCIAL-LP-SOC-3B-4-3",
+      "AUTH-SOCIAL-LP-SOC-3D-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "應改用工程圖或現地量測，并依工具精度回報。 正確選項「來源尺度不支持一公尺設施與過多小數」可由題幹推出，因為粗像元與設施尺度不匹配且是假精確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "區域網格可作背景但需標示不適用合規判定。 逐項排除其他選項：「小數越多一定越準」輸出位數不新增資訊。 這項內容無法支持題幹所要求的地理判斷。；「高程完全不能算坡度」高程可算區域坡度。 這項內容無法支持題幹所要求的地理判斷。；「坡道必長三十公尺」像元大小不決定坡道長。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

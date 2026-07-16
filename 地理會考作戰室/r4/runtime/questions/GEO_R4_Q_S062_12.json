@@ -1,0 +1,94 @@
+{
+  "id": "GEO_R4_Q_S062_12",
+  "subject": "geography",
+  "skillIds": [
+    "GEO_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-SOCIAL-LC-GEO-AC-4-1",
+    "AUTH-SOCIAL-LC-GEO-AC-4-2",
+    "AUTH-SOCIAL-LC-GEO-BA-4-1",
+    "AUTH-SOCIAL-LC-GEO-BC-4-1",
+    "AUTH-SOCIAL-LC-GEO-BD-4-1",
+    "AUTH-SOCIAL-LC-GEO-BE-4-1",
+    "AUTH-SOCIAL-LC-GEO-BF-4-1",
+    "AUTH-SOCIAL-LC-GEO-BG-4-1",
+    "AUTH-SOCIAL-LC-GEO-BH-4-1",
+    "AUTH-SOCIAL-LC-GEO-BI-4-1",
+    "AUTH-SOCIAL-LP-GEO-1A-4-1",
+    "AUTH-SOCIAL-LP-GEO-1B-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "學生只有六個月資料，想判斷完整氣候型。最負責任的做法為何？",
+  "options": [
+    "直接宣布分類且忽略缺月",
+    "補齊至少完整逐月資料並確認多年代表性",
+    "用一張風景照取代所有數據",
+    "把六個月數值重複一次當成全年"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "缺少半年的季節資訊，直接分類風險高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "完整逐月且具多年代表性的資料才能呈現溫雨季節型態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "風景照不能量化全年氣溫與雨量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "複製資料會捏造未觀測月份。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "資料品質評估"
+  ],
+  "representationType": "method",
+  "misconceptionTargets": [
+    "用不完整月份推全年"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Geography content author",
+    "copyrightStatus": "Original wording and data presentation; official sources used only for scope, facts, and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-SOCIAL-LC-GEO-AC-4-1",
+      "AUTH-SOCIAL-LC-GEO-AC-4-2",
+      "AUTH-SOCIAL-LC-GEO-BA-4-1",
+      "AUTH-SOCIAL-LC-GEO-BC-4-1",
+      "AUTH-SOCIAL-LC-GEO-BD-4-1",
+      "AUTH-SOCIAL-LC-GEO-BE-4-1",
+      "AUTH-SOCIAL-LC-GEO-BF-4-1",
+      "AUTH-SOCIAL-LC-GEO-BG-4-1",
+      "AUTH-SOCIAL-LC-GEO-BH-4-1",
+      "AUTH-SOCIAL-LC-GEO-BI-4-1",
+      "AUTH-SOCIAL-LP-GEO-1A-4-1",
+      "AUTH-SOCIAL-LP-GEO-1B-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "geography-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "氣候分類要求完整季節循環與長期性，答案1。 正確選項「補齊至少完整逐月資料並確認多年代表性」可由題幹推出，因為完整逐月且具多年代表性的資料才能呈現溫雨季節型態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "geography-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其餘方法不是忽略資料缺口，就是製造虛假資料。 逐項排除其他選項：「直接宣布分類且忽略缺月」缺少半年的季節資訊，直接分類風險高。；「用一張風景照取代所有數據」風景照不能量化全年氣溫與雨量。；「把六個月數值重複一次當成全年」複製資料會捏造未觀測月份。；因此沒有同樣成立的替代答案。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
