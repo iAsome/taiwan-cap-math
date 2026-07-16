@@ -15,7 +15,7 @@
   "stimulusId": null,
   "stem": "圖表沒有標示資料來源與分母，最合理評價為何？",
   "options": [
-    "色彩漂亮所以可信",
+    "圖中百分比加總剛好為一百",
     "一定由官方製作",
     "無法確認比例如何計算",
     "分母永遠不重要"
@@ -25,7 +25,7 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "視覺設計不會補回樣本與計算方式。"
+      "reason": "加總正確仍無法知道分母、樣本來源與各比例如何計算。"
     },
     {
       "optionIndex": 1,
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "biology-independent-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "可重算性核對要求由人數重建比例，缺分母就無法完成。",
+      "evidence": "要求由人數重建比例，缺分母就無法完成。",
       "status": "pass"
     },
     {
       "reviewerRole": "biology-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "可追溯性核對另要求原始資料來源，避免只對圖形本身產生信任。",
+      "evidence": "另要求原始資料來源，避免只對圖形本身產生信任。",
       "status": "pass"
     }
   ],

@@ -7,7 +7,7 @@ const question = (id, skillId, difficulty, answerIndex, stem, options, reasons, 
 });
 
 const stimulus = (id, skillId, type, content, accessibility, questions) => ({
-  id, skillId, type, content, accessibility, questions,
+  id, skillId, type, content, accessibility: { ...accessibility, dataFallback: { columns: [...content.columns], rows: structuredClone(content.rows) } }, questions,
 });
 
 const lectures = [];
