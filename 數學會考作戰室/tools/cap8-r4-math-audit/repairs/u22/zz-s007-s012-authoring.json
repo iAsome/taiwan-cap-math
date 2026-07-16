@@ -1,0 +1,1185 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u22",
+  "batch": "023-u22-complete",
+  "skills": [
+    "s007",
+    "s008",
+    "s009",
+    "s010",
+    "s011",
+    "s012"
+  ],
+  "mc": [
+    {
+      "questionId": "u22-s007-v001",
+      "expectedContentSha256": "f0a317633b5be422d07061a2d3c1eb08fd2c3f4f8a440b602947194169a70e9a",
+      "appendText": {
+        "explanation": "先把不超過20的8人視為已包含在不超過30的15人中，後者扣除前者才會留下題目指定的半開半閉區間，且8+7=15可回查。"
+      },
+      "appendArray": {
+        "steps": [
+          "寫成區間次數15-8。",
+          "以8+7=15驗算累積總數。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v002",
+      "expectedContentSha256": "ec52ea0c7f010ddc6c97b35f62807c63ad8f6fe342a24ed7c826008a2a33956b",
+      "appendText": {
+        "explanation": "最後一個上界已涵蓋先前所有區間，故末點不是最後一組單獨增加量；若要最後一組次數，仍須再減去前一個累積值。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認末點對應最大的組上界。",
+          "將末點縱座標解讀為全部資料筆數。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v003",
+      "expectedContentSha256": "078b9d991b89ba429e3a0d97b5a8f6071179f09903265fed40e9b642e991167b",
+      "appendText": {
+        "explanation": "累積9已含第一組3筆，所以第二組只能取新增的6筆；把各組依序拆回3、6、5、6後再累加，會恢復3、9、14、20。"
+      },
+      "appendArray": {
+        "steps": [
+          "以第二個累積值9減第一個3。",
+          "用3+6=9檢查第二個累積值。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v004",
+      "expectedContentSha256": "8a292e70435ed7e8eff3684fb5148ac46ed0fb1618af81506cb312f0f7018ada",
+      "appendText": {
+        "explanation": "40筆資料的下半部共有20筆，Q1由其中第10、11筆決定；累積11已同時包含這兩個位置，而中位數的第20、21筆尚未到達。"
+      },
+      "appendArray": {
+        "steps": [
+          "核對累積11已涵蓋第10與第11筆。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v005",
+      "expectedContentSha256": "95a04902f8f34d69e0516e331e233c72f98bd725236fc5f83ffc6bbf4d6560ea",
+      "appendText": {
+        "explanation": "判斷所在組要同時比較中央位置與前後兩個累積門檻；13<16、17≤25，兩個中央位置皆被同一區間夾住，結論才唯一。",
+        "misconceptionTarget": "只找最接近16的累積值會忽略區間夾住關係，也可能錯置第17筆。"
+      }
+    },
+    {
+      "questionId": "u22-s007-v006",
+      "expectedContentSha256": "85052cafbe2028c9e73b86eec781750e1d336aae46194ac7be4db9036ede516e",
+      "appendText": {
+        "explanation": "題目指定60到70分，應比較相鄰上界70與60的累積值；50分的6人已包含在兩者內，不應再次扣除或改用跨兩組差。",
+        "misconceptionTarget": "跨到50分會把50到60分的人也算入，所得並非題目指定的一組。"
+      },
+      "appendArray": {
+        "steps": [
+          "讀出70分累積27人與60分累積18人。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v007",
+      "expectedContentSha256": "b75890be4e46f9cb6b9967cd0bf2f560a54744441833081b9e4e57fb7974cae2",
+      "appendText": {
+        "explanation": "每往下一個上界，原先累積的資料仍然存在，因此數列必須非遞減；12到10代表新增人數為負2，與次數不能為負相矛盾。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算相鄰差10-12=-2。",
+          "以區間次數不得為負判定資料有誤。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v008",
+      "expectedContentSha256": "4a1ee8305f333850dc7e666de515187eebcf0241d4e72622de07b4d1ad2fd91f",
+      "appendText": {
+        "explanation": "60筆的上半部30筆中位位置為全體第45、46筆；兩者都大於29且不超過47，所以落在這兩個上界所界定的同一組。",
+        "misconceptionTarget": "45與46是資料排序位置，不是Q3在橫軸上的實際數值。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認第45、46筆皆滿足29<位置≤47。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v009",
+      "expectedContentSha256": "8f00701cfb1ccaa3248386d298dfd7407b274d94f54cefb47ce6766b63e9b799",
+      "appendText": {
+        "explanation": "先用36-12得到該組24筆，再以12<24、25≤36定位中央兩筆；兩個判斷都成立，才可同時主張組次數與中位數位置。"
+      },
+      "appendArray": {
+        "steps": [
+          "比較中央第24、25筆與累積12、36。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v010",
+      "expectedContentSha256": "d85e42a466cd62ebd7b185b6bcd1fac89b229f673207a6419b4036a6725c2569",
+      "appendText": {
+        "explanation": "不超過5冊的44人已含不超過2冊的18人，兩個累積門檻相減只保留3、4、5冊；總數50包含6冊以上者，不能用來替代44。"
+      },
+      "appendArray": {
+        "steps": [
+          "把3到5冊寫成累積門檻之差44-18。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v011",
+      "expectedContentSha256": "ba8eb50fd82a5a4b3ef2802c4cf506dc984652a636489502b11352113ee19b4d",
+      "appendText": {
+        "explanation": "圖上兩點的縱座標都是截至該分數的總人數，34與22之差才是新增加的70到80分組；22+12=34亦可驗證讀圖。",
+        "misconceptionTarget": "直接讀34會把70分以下22人一併算入，不是相鄰區間的實際次數。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算34-22=12並標明單位為人。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s007-v012",
+      "expectedContentSha256": "b28552f85ca5f582728df5d91b369568f9b89a0a272af8d8b11b54b37b10c95d",
+      "appendText": {
+        "explanation": "最快前10名是排序位置而非時間的百分比；累積8尚未到第10名，下一門檻26已超過，因此分界必在30分鐘後至45分鐘內。",
+        "misconceptionTarget": "把25%套在分鐘數上會混淆人數比例與橫軸時間，無法定位第10名。"
+      },
+      "appendArray": {
+        "steps": [
+          "核對8<10≤26，確定第10名所在組。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v001",
+      "expectedContentSha256": "930a33d081914f7f24d89c81aad375b2d0578ee2d1d5c2908f19095adecd17c3",
+      "appendText": {
+        "explanation": "全距量的是資料兩端之間的距離，必須以最大值19減最小值4；兩端相加得到23沒有分散意義，也不會反映跨度。",
+        "misconceptionTarget": "把19直接作答只是抄最大值，沒有計算最大與最小之間的距離。"
+      },
+      "appendArray": {
+        "steps": [
+          "辨認最大值19與最小值4。",
+          "計算19-4=15並保留原資料單位。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v002",
+      "expectedContentSha256": "d59003102770fb9e97030b1c46b7abfe16513a0b556b6ee055cf183f73515f87",
+      "appendText": {
+        "explanation": "四分位距描述中間50%的跨度，端點必須依右端Q3減左端Q1；16-7=9，並非把兩個四分位數相加或抄其中一端。",
+        "misconceptionTarget": "IQR是兩個四分位數的差，不是Q1、Q3任一端點或兩者總和。"
+      },
+      "appendArray": {
+        "steps": [
+          "辨認箱體左端Q1=7與右端Q3=16。",
+          "計算16-7=9。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v003",
+      "expectedContentSha256": "a6b0460c43a10a3db5a3acd23840d575a16eeec077a94320c1758e111ae42d56",
+      "appendText": {
+        "explanation": "若最大值單獨向右移動，最大值減最小值會等量增加；Q1、中位數與Q3可能仍不動，因此全距是四個選項中最直接受影響者。"
+      },
+      "appendArray": {
+        "steps": [
+          "指出全距公式含最大值。",
+          "設最大值增加後比較新舊全距。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v004",
+      "expectedContentSha256": "802743aebe475e768508837ec97a0636532f4519702a310e2dad7903c5e51578",
+      "appendText": {
+        "explanation": "兩個指標回答不同問題：A的20顯示全部資料端點跨度較大，B的11顯示中間一半跨度較大；不能把它們合成單一的全面排名。"
+      }
+    },
+    {
+      "questionId": "u22-s008-v005",
+      "expectedContentSha256": "f4fbc81e3cf1fe96535efee24683531a210b64b26378fbf138ee8cfb979936c4",
+      "appendText": {
+        "explanation": "新數只改寫最大值，最小值不變，所以全距增加；題目又明定Q1、Q3不變，兩者差值也必保持原值，兩項結論各有獨立依據。"
+      },
+      "appendArray": {
+        "steps": [
+          "分別寫出新全距與原全距的端點差。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v006",
+      "expectedContentSha256": "cb985ca14ecb51f8b62514a6e1fe43df46585e8cf2cc671510ad7a2bf313e079",
+      "appendText": {
+        "explanation": "相同IQR只保證Q1到Q3的寬度相同，甲較大的全距必來自箱外左鬚、右鬚或兩者合計較長，不能推成箱內較分散。",
+        "misconceptionTarget": "IQR相同只保留一個摘要量，無法推出兩組每一筆資料或整個分布相同。"
+      },
+      "appendArray": {
+        "steps": [
+          "由IQR相同判定中間跨度相同。",
+          "把全距差定位到箱外端點區域。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v007",
+      "expectedContentSha256": "f8f9f5a2744d30459d28609f8a60f6d08b8b9a9beb40da10e9a152e9e28717f1",
+      "appendText": {
+        "explanation": "正數倍縮放會把最大減最小與Q3減Q1中的每個差都乘3，因此兩個分散量都按相同比例改成原來三倍。",
+        "misconceptionTarget": "只放大全距會忽略四分位數也隨所有資料同步乘3，IQR同樣要乘3。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算30×3=90。",
+          "計算12×3=36並配對作答。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v008",
+      "expectedContentSha256": "c0e6b580b4c6a62a19738cb82605b37845cacf3a60c233e8d1633501888d1bf1",
+      "appendText": {
+        "explanation": "A的端點差40遠大於B的14，但A箱體寬14-10=4小於B的16-8=8；這正顯示整體跨度與中段跨度可朝相反方向。"
+      }
+    },
+    {
+      "questionId": "u22-s008-v009",
+      "expectedContentSha256": "5a78b81bb05e32b6e82949cf6d8f28f7bc69ce7cb50548317e4ae3a0de3c2909",
+      "appendText": {
+        "explanation": "可將全距拆成(Q1-min)+(Q3-Q1)+(max-Q3)；若它等於中間的IQR，兩個非負外段只能同時為0。"
+      },
+      "appendArray": {
+        "steps": [
+          "寫出全距的三段分解。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v010",
+      "expectedContentSha256": "991cb6a2f1ca8159a3cae6b308e145bf310b7aabe10526b63d284390db29fbc3",
+      "appendText": {
+        "explanation": "題目關心大多數訂單，應以中間50%的IQR衡量；8小於12支持甲較集中，但50分鐘全距仍提醒少數端點風險。"
+      },
+      "appendArray": {
+        "steps": [
+          "將「大多數穩定」對應IQR而非全距。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-v011",
+      "expectedContentSha256": "e759c8664208d00cb3102079a1eb38f1155119ed6d40789ad2b08ef9f782e607",
+      "appendText": {
+        "explanation": "角色允許偶發極端，因此先以IQR比較通常表現，6小於10支持A；但A全距28較大，只能說中段較穩而非每場都較穩。",
+        "misconceptionTarget": "IQR較小只描述中間一半的場次，不能擴張成A所有場次都比B穩定。"
+      }
+    },
+    {
+      "questionId": "u22-s008-v012",
+      "expectedContentSha256": "c0db2370924a9cfe8dc41c87f41ed178791439e430c9ec9fc6d8bef69580708c",
+      "appendText": {
+        "explanation": "兩批IQR同為0.4只代表中段跨度一致，第二批多出的全距來自箱外端點；報告應檢查離群、量測或條件，而非直接判平均。"
+      },
+      "appendArray": {
+        "steps": [
+          "把兩批IQR相同比較為中段相近。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v001",
+      "expectedContentSha256": "26909232d2dc84b3620ce0a632c658e7d1d450e71795cb76a6993bcd2f1914e1",
+      "appendText": {
+        "explanation": "中位數只描述各組排序中央的位置，24大於20可支持乙的中心較高；它不包含平均、筆數或所有個別資料的資訊。"
+      },
+      "appendArray": {
+        "steps": [
+          "讀出甲中位20與乙中位24。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v002",
+      "expectedContentSha256": "f5f81f7cd30fadf2c60de58abe3c3547339efff94a581802616a7b7165395f78",
+      "appendText": {
+        "explanation": "IQR就是箱體寬度，數值越小代表Q1到Q3越接近；甲的5比乙的9小，所以只有中間50%較集中這一結論成立。",
+        "misconceptionTarget": "IQR大小表示中間資料的跨度，不代表資料筆數較多或較少。"
+      },
+      "appendArray": {
+        "steps": [
+          "把IQR解讀為Q1至Q3的跨度。",
+          "比較5<9後選甲。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v003",
+      "expectedContentSha256": "3a99fe794f3e24142d3517578d4797582c14d83e09507cb38250af482c7db343",
+      "appendText": {
+        "explanation": "題目已限定只比較最小到最大的整體跨度，因此直接比較全距即可；30大於18，無須知道兩組中心位置或箱體寬度。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認比較指標是全距。",
+          "以30>18判定甲較大。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v004",
+      "expectedContentSha256": "88d162ea2aef3fca0b979f5f0442455666c42f5bdeee0464ff91f0751976b250",
+      "appendText": {
+        "explanation": "先分開讀中心與箱寬：乙中位15比甲14高，乙的21-9=12也比甲的18-10=8大，兩個條件同時指向第三項。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算甲IQR=18-10=8。",
+          "計算乙IQR=21-9=12並比較中位數。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v005",
+      "expectedContentSha256": "8a20d18c3755c394a09876ccc169c6f36ecb74ea454fe2b766527db24ec0e4e5",
+      "appendText": {
+        "explanation": "箱體左、右端分別代表Q1與Q3；甲整個箱體在右側，連甲的左端都超過乙的右端，故能確定Q1甲>Q3乙。"
+      },
+      "appendArray": {
+        "steps": [
+          "辨認甲箱體左端為Q1甲。",
+          "辨認乙箱體右端為Q3乙並寫出不等式。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v006",
+      "expectedContentSha256": "8673ea1ef6711bc628ddde70798bfb299f526e925d2baa3621d54bacf4a0fbd6",
+      "appendText": {
+        "explanation": "箱寬與箱外鬚長描述不同區域：甲箱寬小只支持中段較集中，乙兩鬚總長小只支持端點離箱體較近，不能互相取代。"
+      },
+      "appendArray": {
+        "steps": [
+          "把甲箱寬較小翻成甲IQR較小。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v007",
+      "expectedContentSha256": "cdad1d063948cd5d6b1c0a5fec43d7580ca0d37bebb524a4f1254aebf2fdd1eb",
+      "appendText": {
+        "explanation": "逐項計算可見兩組中位皆11；A箱寬12-10=2小於B的14-8=6，但A端點差40大於B的12，故選項敘述唯一，也證實不能只看一種圖形寬度。",
+        "misconceptionTarget": "只看A的端點很遠會漏掉它的箱體反而較窄，必須分開比較IQR與全距。"
+      }
+    },
+    {
+      "questionId": "u22-s009-v008",
+      "expectedContentSha256": "196c789497c1fff736297939be25afa2180b742a8bd84dd892891b963acca92c",
+      "appendText": {
+        "explanation": "盒狀圖只保留最小值、Q1、中位數、Q3、最大值；同五數下，箱內排列、重複次數與樣本數仍可不同，摘要不能還原原始資料。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出五數摘要能固定的三個比較量。",
+          "指出摘要未保存筆數與內部資料位置。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v009",
+      "expectedContentSha256": "11d6d017f80422e21ed1d16504b214af3d32724939452ac7a62cfce86cac8c1d",
+      "appendText": {
+        "explanation": "圖上格數必須先乘各自刻度；甲4格是8單位，乙2格是10單位，因此雖然乙格數少，實際箱寬仍較大，數值單位才是比較基準。"
+      },
+      "appendArray": {
+        "steps": [
+          "換算甲4×2=8。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v010",
+      "expectedContentSha256": "efba5842519dc94cac38fe1dd10431fc03e87fde0eac22bec2b87c1a7ec4531a",
+      "appendText": {
+        "explanation": "乙的中央位置74高於70，且最大減最小為88-55=33，小於甲的94-50=44；兩個指定需求都由乙滿足。",
+        "misconceptionTarget": "只挑最高分或Q3會漏掉題目同時要求的中位數與全距兩項指標。"
+      }
+    },
+    {
+      "questionId": "u22-s009-v011",
+      "expectedContentSha256": "fb54d003345271f4810e8c1b26a3173c2f38244bb5ada198f7fd49d9de41eb68",
+      "appendText": {
+        "explanation": "準時一致著重典型波動，乙較小的IQR較符合；但乙中位時間稍長，若超過交期門檻仍可能不合格，因此結論須保留限制。",
+        "misconceptionTarget": "中位數較短只代表典型速度，不能取代IQR對一致性與波動的衡量。"
+      },
+      "appendArray": {
+        "steps": [
+          "再檢查乙的中位時間是否符合交期上限。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s009-v012",
+      "expectedContentSha256": "ca29b23a4ccca0c0148cc6dcf90200464ba56f0152c6933fc597736f1135bceb",
+      "appendText": {
+        "explanation": "盒狀圖右移支持甲的中位數較高，但重疊範圍表示甲、乙仍可能出現交錯值；群體中心差異不能推成逐日必然。"
+      }
+    },
+    {
+      "questionId": "u22-s010-v001",
+      "expectedContentSha256": "e9555f134c196a0350e5526fcda353d282ec799005a7e6bccc1258ec1d4e6afa",
+      "appendText": {
+        "explanation": "公平骰的六個面各自等可能，偶數事件正好包含其中三面；分子必數有利結果2、4、6，分母仍是完整樣本空間六面。",
+        "misconceptionTarget": "分母必須使用全部六個等可能面，不能只用三個偶數結果。"
+      }
+    },
+    {
+      "questionId": "u22-s010-v002",
+      "expectedContentSha256": "40e112f0d4a1d83576eb9e83af7978de2865524141059d1e2e4221df73c7db1d",
+      "appendText": {
+        "explanation": "條件是嚴格大於7，因此從1到10中只有8、9、10符合；7本身不得列入，而十張卡片都同樣可能被抽到。",
+        "misconceptionTarget": "若把大於誤讀成大於等於，會多算編號7並把分子錯寫成4。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認7不屬於嚴格大於7。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s010-v003",
+      "expectedContentSha256": "38fb51e86ae3ad96e333ffef567af0e666710f1a14e39556cba953b3af6e09a3",
+      "appendText": {
+        "explanation": "題目明定轉盤等分且公平，所以每一格才是基本等可能結果；藍色雖只有一種顏色，實際佔三格，須按格數計算。",
+        "misconceptionTarget": "機率依等面積格數計算，不是把藍色與非藍色兩類各判為二分之一。"
+      },
+      "appendArray": {
+        "steps": [
+          "數出藍色區域共3格。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s010-v004",
+      "expectedContentSha256": "d4aa7235dc033478911d054bde5236ffd99a7f9a3bb852354eb69c0119c1b7e2",
+      "appendText": {
+        "explanation": "兩顆骰子可區分，第一顆與第二顆的點數順序屬於結果的一部分；六個互換配對各自不同，除以36後約成1/6。",
+        "misconceptionTarget": "將互換配對合併會少算一半有利結果，因兩顆骰子的身分可區分。"
+      }
+    },
+    {
+      "questionId": "u22-s010-v005",
+      "expectedContentSha256": "da9104f19c13d8101f3a45bab9c73ea9e92e1be5a709cc5b5c05065bfdf731f4",
+      "appendText": {
+        "explanation": "非紅球事件同時包含白球與黑球，合計4顆；所有球大小相同使八顆等可能，因此4/8約分後才得到1/2。"
+      }
+    },
+    {
+      "questionId": "u22-s010-v006",
+      "expectedContentSha256": "1397f2d876704ca29421dcaa80234aa9a81181aab93bd27b4a3c1b657b0bc34d",
+      "appendText": {
+        "explanation": "質數必須是大於1且只有兩個正因數的整數，所以0與1均排除；2、3、5、7四個有利數仍要除以0到9共十個結果。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認0與1都不是質數。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s010-v007",
+      "expectedContentSha256": "6f3a784650446330af043753f93826313c69828f3ba57107179b6b4cc4cc4d3e",
+      "appendText": {
+        "explanation": "兩類倍數的交集是15的倍數；1到20中只有15被兩份清單同時計入，所以使用容斥6+4-1可避免重複。"
+      }
+    },
+    {
+      "questionId": "u22-s010-v008",
+      "expectedContentSha256": "44a02a86106a4a85a5798b7836074711c8edb89269e3bff5e963cc1bc151b46a",
+      "appendText": {
+        "explanation": "基本結果是六張可抽取的實體卡片，不是A、B、C三個標籤；三張C各有相同抽中機會，故有利結果佔六張中的三張。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認六張卡片大小與抽取機會相同。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s010-v009",
+      "expectedContentSha256": "10cd03b3eacb29ff8c2c5c204f8caa46698f3e0f7aa268263a5f5628fdd3038b",
+      "appendText": {
+        "explanation": "等可能模型下P(A)=有利數除以全部數，故12/N=3/8；交叉相乘後N=32，且12/32確實約成3/8可驗算；樣本數也確為大於12的正整數。",
+        "misconceptionTarget": "反推樣本數時應固定12為有利數，不能把比值分子分母顛倒。"
+      }
+    },
+    {
+      "questionId": "u22-s010-v010",
+      "expectedContentSha256": "389c89fe804948b946ca7028f493c9e99ec347864f76d437e36eabe22b45c6ae",
+      "appendText": {
+        "explanation": "單次抽票的樣本空間是50張票，中獎事件含8張；先寫8/50，再以最大公因數2約成4/25，不能用未中獎42張當分母。",
+        "misconceptionTarget": "42只是未中獎票數，不是全部票數；樣本空間分母仍須是50。"
+      }
+    },
+    {
+      "questionId": "u22-s010-v011",
+      "expectedContentSha256": "e60d184e1cbdc5e76e44820fe8fd7dd7ec493ad794881d48cd6433e4a0e9d139",
+      "appendText": {
+        "explanation": "整數分鐘模型明列0到9共十個等可能結果；不超過3包含端點3也包含等待0分鐘，故有利數為四而非三。",
+        "misconceptionTarget": "漏掉0會把十個等可能等待時間少算一個有利結果，得到錯誤的3/10。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認有利集合為{0,1,2,3}。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s010-v012",
+      "expectedContentSha256": "d6f0d2159bddd04848e3b18587062961616857d9530d0f6148c8de2a53738f40",
+      "appendText": {
+        "explanation": "4與6的公倍數是12的倍數，100以內有8個同時被前兩類計數；扣除一次後得到33個不同編號，分母為100。",
+        "misconceptionTarget": "容斥後33與100沒有共同因數，不能為了形式再做錯誤約分。"
+      }
+    },
+    {
+      "questionId": "u22-s011-v001",
+      "expectedContentSha256": "f564c9f1ebaa154f03fef90af633a618971c2f6e2d67d1fe1e72ae32ab679ea5",
+      "appendText": {
+        "explanation": "A發生與A不發生互斥且合起來涵蓋全部結果，因此兩者機率和為1；用1減0.35得到0.65，也位於合理範圍內。",
+        "misconceptionTarget": "忘記以1為總機率會把原事件與餘事當成彼此無關的數值。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算1-0.35=0.65。",
+          "驗算0.35+0.65=1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v002",
+      "expectedContentSha256": "64bc86395e03087752345526384f143a445eb65d536cfa919f5b5c08e22244a2",
+      "appendText": {
+        "explanation": "一次擲骰中，是6與不是6恰好分割六個面；是6只有一面，餘下五面都是不是6，故可直接得到5/6。",
+        "misconceptionTarget": "若把是6的1/6直接作答，就把原事件與題目要求的餘事對調。"
+      },
+      "appendArray": {
+        "steps": [
+          "驗算1/6+5/6=1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v003",
+      "expectedContentSha256": "39d94cd1ce05857d0fd966a36d38e4175d542e4da0cdf2c88842e42fb29cb6c3",
+      "appendText": {
+        "explanation": "沒有抽到紅球就是落在其餘五顆白球中；七顆球等可能，所以可直接數5/7，也可用1-2/7得到相同結果。",
+        "misconceptionTarget": "文字中的沒有表示完整否定紅球事件，不是把紅球數改成負數。"
+      },
+      "appendArray": {
+        "steps": [
+          "辨認非紅事件等同抽到白球。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v004",
+      "expectedContentSha256": "9403dc2176e755c4a6774876e2df07552e73fa3af7135914e12f8f0bb0753424",
+      "appendText": {
+        "explanation": "機率3/10描述長期相對可能性，不保證固定次數；其完整否定事件機率只需由1減去3/10，得到7/10。",
+        "misconceptionTarget": "機率分數不是每十次必定發生三次的短期次數保證。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算1-3/10=7/10。",
+          "以3/10+7/10=1驗算。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v005",
+      "expectedContentSha256": "bf21f20af8f6cd933c44ec7c98940ec60a2a25e3558287a2cc04668189e24cb3",
+      "appendText": {
+        "explanation": "先數3的倍數共4個較簡單，其餘8個即為題目事件；4/12與8/12互補，約分後分別是1/3與2/3，也可直接列八個非倍數驗算。",
+        "misconceptionTarget": "直接列非倍數若漏掉1、2等端點，會使有利結果數不足八個。"
+      }
+    },
+    {
+      "questionId": "u22-s011-v006",
+      "expectedContentSha256": "4c26ca9179f9ea3cef346dc6d3da84c2c9451845157e457cf800b7a7f89b2d79",
+      "appendText": {
+        "explanation": "題目把所有產品只分成瑕疵與合格兩類，因此兩事件互為餘事；若另有待判定類別才不能直接用1減。",
+        "misconceptionTarget": "只有在兩類互斥且涵蓋全部產品時，0.96才可解讀為合格機率。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算1-0.04=0.96。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v007",
+      "expectedContentSha256": "a591203af849b2aa042af54216d2be47dfbc677f294a662b9c395e5483537e7b",
+      "appendText": {
+        "explanation": "至少一次正面包含恰一次與兩次正面三條路徑；改算唯一餘事反反只需1/4，再以1減即可避免漏算或重複。",
+        "misconceptionTarget": "把至少一次縮成恰好一次會漏掉正正這條同樣符合條件的路徑。"
+      }
+    },
+    {
+      "questionId": "u22-s011-v008",
+      "expectedContentSha256": "93fd164f74ea09065ddcbae908f9bdbee8b157ef0f975f17c7ca44063d777d59",
+      "appendText": {
+        "explanation": "獨立假設允許將兩天都不故障的機率相乘；其餘所有路徑都屬至少一天故障，所以1-0.9604給出精確聯集機率。"
+      }
+    },
+    {
+      "questionId": "u22-s011-v009",
+      "expectedContentSha256": "aa22e46d6ca7bc0386802e906657b799185aea774b1802d1f6997df2ee3768aa",
+      "appendText": {
+        "explanation": "A與餘事機率和為1，比例條件又說餘事是A的兩倍；把總和分成三份後，A只佔一份，故為1/3；代回可得餘事2/3，確實是兩倍。",
+        "misconceptionTarget": "若把比例方向倒成p=2(1-p)，會把A誤認為較大的那一份。"
+      },
+      "appendArray": {
+        "steps": [
+          "將p+2p=1整理成3p=1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v010",
+      "expectedContentSha256": "46b169f95f362684682617a34e41fff8721a2640a11f21606f55a1eac925e807",
+      "appendText": {
+        "explanation": "題目已限定只有下雨與不下雨兩類，兩者互斥且完備；百分率以100%為總和，因此不下雨是剩餘70%。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算100%-30%=70%。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v011",
+      "expectedContentSha256": "6169e7dd7dd362d6df03dd2c159ae6449f18e2a0f96db09fdfae1bda5dc62d55",
+      "appendText": {
+        "explanation": "至少中一次的直接情況有多條，餘事只有兩次都不中；獨立使其機率為0.8×0.8，再用1減得0.36。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算1-0.64=0.36。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-v012",
+      "expectedContentSha256": "8b7c1b22b0eaa2ea12e06013c8d92c7eb47e29071be5c5d9dc7ac4c7d9290177",
+      "appendText": {
+        "explanation": "依四分位位置，Q1到Q3約涵蓋排序中央的一半資料；題目排除大量重複值造成的邊界問題，所以箱外約為另一半。",
+        "misconceptionTarget": "箱外包含Q1左側與Q3右側兩端，各約四分之一，不能只取單側。"
+      },
+      "appendArray": {
+        "steps": [
+          "將箱內比例寫成約1/2。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v001",
+      "expectedContentSha256": "2c2ac0af8c82e4c68b34f998c09e6d73b498e0d826acfa04632c326c353f05ce",
+      "appendText": {
+        "explanation": "樹的層次依試驗順序排列，第一個動作只有擲硬幣；骰子的六種結果必須等到每個正反分支之後才展開。",
+        "misconceptionTarget": "把骰子六面提前放在第一層，會混淆兩個階段的先後與分支意義。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認根節點下一步是硬幣。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v002",
+      "expectedContentSha256": "8d675e940f0679e912b17742ee8da4433d4d7b908c8efce3f3c780060c1d6c78",
+      "appendText": {
+        "explanation": "每條完整路徑要同時決定顏色與大小，紅、藍各自都能配大、小兩種；因此末端為紅大、紅小、藍大、藍小四種。",
+        "misconceptionTarget": "兩階段的組合數應沿分支相乘，不能把兩種顏色與兩種大小只相加。"
+      }
+    },
+    {
+      "questionId": "u22-s012-v003",
+      "expectedContentSha256": "6fd0e43cc2d884b64872f7c0e4ebdd8759eb9a7d2ce1514d09cc718f0cda4e3d",
+      "appendText": {
+        "explanation": "根到末端的路徑依序記錄每一階段的選擇，合起來才是一個完整樣本結果；中途的一條分支仍缺後續資訊。"
+      },
+      "appendArray": {
+        "steps": [
+          "確認路徑從根節點走到末端。",
+          "把沿途各層標籤合併成完整結果。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v004",
+      "expectedContentSha256": "9e085db40992416e21577742c85cc184f97b62b427bd3ebba6d3f20ddd25f6b1",
+      "appendText": {
+        "explanation": "路徑同時要求先到A且再成功，兩個分支條件必須接續成立，所以沿路相乘；1/3×1/2=1/6且小於任一分支機率。",
+        "misconceptionTarget": "沿同一路徑表示且，機率要相乘；相加會把不同條件誤當互斥選擇。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算(1/3)(1/2)=1/6。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v005",
+      "expectedContentSha256": "b2e19c2ddd4d8d0c6c015bfc6caf51d52f517e612498b677601b5bc1b283ccc4",
+      "appendText": {
+        "explanation": "三條成功路徑互斥，單次試驗不會同時到達兩個末端，所以可相加；同分母只加分子，6/8再約成3/4。",
+        "misconceptionTarget": "同分母分數相加時分母仍為8，不能把三個分母也相加成24。"
+      }
+    },
+    {
+      "questionId": "u22-s012-v006",
+      "expectedContentSha256": "75a9fb97087992bb883a4e23fbcb847d2b0e1d48678342040977abf81ea8774a",
+      "appendText": {
+        "explanation": "從同一節點出發的三支必須涵蓋該節點後全部可能結果，條件機率總和為1；已知兩支共0.7，剩餘為0.3。",
+        "misconceptionTarget": "同層互斥分支要相加至1，不能把0.2與0.5相乘來找缺少分支。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算已知分支和0.2+0.5=0.7。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v007",
+      "expectedContentSha256": "bbffe2e2ae7df7063824917602c7b552bd783ed996b037c095d562a1ef5e5603",
+      "appendText": {
+        "explanation": "三個第一層子樹的末端數不同，不能套3乘固定分支數；逐一數得2、1、4條，再把互斥子樹末端相加為7。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算2+1+4=7。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v008",
+      "expectedContentSha256": "f4ed4b00bc91f9535915c6ab17d6f178f53ad3d97f0c1ad55747efa8bb5687bd",
+      "appendText": {
+        "explanation": "事件E由兩條不同末端路徑構成，兩路徑互斥所以機率相加；通分到12後為3/12+2/12=5/12，且合計仍小於1，範圍合理；兩條路徑也沒有重疊。",
+        "misconceptionTarget": "不同互斥路徑合成同一事件時應相加，不能將1/4與1/6相乘。"
+      },
+      "appendArray": {
+        "steps": [
+          "將1/4通分成3/12。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v009",
+      "expectedContentSha256": "5c388b2ad598080a276b2855dba1d6dce3a3a6a6e5f4722a04f82ed60a6aaa11",
+      "appendText": {
+        "explanation": "一條完整路徑要求三階段依序都發生，故三個條件機率全要相乘；交叉約分後6/40=3/20，漏一層會放大答案；分子分母以2約分即可。",
+        "misconceptionTarget": "三階段路徑必須使用三個分支機率，漏乘1/2會錯得3/10。"
+      },
+      "appendArray": {
+        "steps": [
+          "計算(2×3×1)/(5×4×2)=6/40。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-v010",
+      "expectedContentSha256": "c9a28d743dddaf655e2578ad8ffdf34aab274b6c6fc3c855b7cd65874ff23a51",
+      "appendText": {
+        "explanation": "每種主餐都能與三種飲料各配一次，兩層末端是所有有序搭配；2×3得到6，而2+3只是在數選項類別。",
+        "misconceptionTarget": "加法只得到選項種類總數5，未計入每種主餐可搭配三種飲料。"
+      }
+    },
+    {
+      "questionId": "u22-s012-v011",
+      "expectedContentSha256": "8e6134aec46cca0cef363cc44628c5ccb7695be80727cdad64649ec616c5fb6d",
+      "appendText": {
+        "explanation": "流程到通過即停止，所以通過本身是一個完整末端；只有未通過再分成可修、報廢，末端總數是1+2而非2×2。"
+      }
+    },
+    {
+      "questionId": "u22-s012-v012",
+      "expectedContentSha256": "03812f3eb5841e782c53e191635b6178e746924992a2c2a851e6cc488a490904",
+      "appendText": {
+        "explanation": "成功可由紅後成功或藍後成功兩條互斥路徑達成；各路徑先沿路相乘得1/6，再把兩個末端相加為1/3。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u22-s008-cr001",
+      "expectedContentSha256": "385554b6f64afdba6e3baa2f226fa994f7ac203db2dd3cb7d54f8c75381c3ffb",
+      "appendArray": {
+        "standardSolution": [
+          "比較時應把兩個指標分開解讀：甲的全距多12表示箱外端點跨度較大，乙的IQR多4則表示Q1到Q3的中間一半較分散，不能合併成單一排名。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s008-cr002",
+      "expectedContentSha256": "03658b7da1bc6498cbde0e68e9f4495076cf16c5d05d406a28b064052559c7e2",
+      "appendArray": {
+        "standardSolution": [
+          "驗算修正後100-10=90，而Q3-Q1仍為30-20=10；因此所謂較穩健是對單一端點更動較不敏感，不是因為IQR數值必然較小。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s010-cr001",
+      "expectedContentSha256": "e060eb591e5866495d79342f9b5b70e174b2d62d9bcc36f25864ba3966da60e5",
+      "appendArray": {
+        "standardSolution": [
+          "列樣本空間可同時驗證公平骰六面等可能，且1不是質數；有利集合只含2、3、5三面，所以有利數3除以全部數6，約分才得到1/2。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s010-cr002",
+      "expectedContentSha256": "8c44d5cc3876cf7c0f930f73b05a70a8e7b2f4825f856999246fe0cc0634ef47",
+      "appendArray": {
+        "standardSolution": [
+          "能用顆數作比值的理由是八顆球除顏色外相同，隨機抽取時每顆機會相等；非藍事件須把紅4顆與綠1顆合併，不能把三種顏色各當1/3。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-cr001",
+      "expectedContentSha256": "be37b7af1e89fbf296d4824cafbfba60e8a462465a1113de15d7ced995534861",
+      "appendArray": {
+        "standardSolution": [
+          "再以0.37+0.63=1驗算；A發生與A不發生不會同時成立，且每次試驗必落在其中一類，所以兩者確實構成互斥又完備的餘事。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s011-cr002",
+      "expectedContentSha256": "2082cba137502154c9f81435d561116174ac306ac0afb087594843b65dd26254",
+      "appendArray": {
+        "standardSolution": [
+          "三次都反面是至少一次正面的唯一餘事，公平且獨立使其機率為三個1/2相乘；用1減1/8會一次涵蓋恰一正、恰兩正與三正所有路徑。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-cr001",
+      "expectedContentSha256": "69b4f6683f732d24c60af0a8a631f329bcbd41742b256214844640edf606f46f",
+      "appendArray": {
+        "standardSolution": [
+          "兩條成功路徑A且成功、B且成功互斥，應各自沿路相乘後再相加；兩者各為1/6，合計1/3，且不能直接把條件成功率1/2與1/4相加。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s012-cr002",
+      "expectedContentSha256": "b64b2393a20943b5c7554247282ead8be797fb1c63c347d4e1439e8386bd5cc0",
+      "appendArray": {
+        "standardSolution": [
+          "第一次抽紅後袋中剩1紅1藍，故第二次紅的條件機率是1/2；第一次若抽唯一藍球，第二次已無藍球，藍藍路徑機率為0，兩條同色路徑合計仍為1/3。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u22-s007-lecture-r1",
+      "expectedContentSha256": "31d71537ae0e574d8f1e7c5441e2a946226e24b11f5aeb8b508d2233edf835da",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "累積8與15",
+            "solutionSteps": [
+              "該相鄰組次數7。"
+            ],
+            "answer": "該相鄰組次數7。",
+            "why": "後一個累積15已包含前一門檻的8筆，只有新增部分屬於相鄰組；因此用15-8得到7，並可用8+7=15回查累積關係，前後完全一致。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "32筆，累積到20為13、到30為25",
+            "solutionSteps": [
+              "中位第16、17筆位於20到30組。"
+            ],
+            "answer": "中位第16、17筆位於20到30組。",
+            "why": "32筆的中央位置是第16與17筆；兩者都大於前累積13且不超過後累積25，所以必被20到30這一組夾住，而非只找最接近16的數。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "60筆，累積29到47",
+            "solutionSteps": [
+              "Q3約第45筆，位於該組。"
+            ],
+            "answer": "Q3約第45筆，位於該組。",
+            "why": "60筆上半部的中央位置是全體第45、46筆；29<45、46≤47，兩個位置都落在同一相鄰組，因此只能定位組別，不能把45當成資料值。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "序列5、12、10、19",
+            "solutionSteps": [
+              "12降到10，資料不可能。"
+            ],
+            "answer": "12降到10，資料不可能。",
+            "why": "累積值到下一上界時仍包含先前所有資料，所以只能持平或上升；12降成10等同新增次數為-2，與次數不能為負直接矛盾。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s008-lecture-r1",
+      "expectedContentSha256": "209463060c0674ea236342430945c94afc153a43b871a58b3d05f2757e6a00aa",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "A:R20,IQR8；B:R15,IQR11",
+            "solutionSteps": [
+              "A整體跨度大，B中段跨度大。"
+            ],
+            "answer": "A整體跨度大，B中段跨度大。",
+            "why": "全距比較最小到最大，20>15支持A端點總跨度較大；IQR比較Q1到Q3，11>8支持B中間50%較分散，兩種結論可以同時成立，不能互相取代。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "A五數0、10、12、14、40",
+            "solutionSteps": [
+              "R40、IQR4，端點遠但中段集中。"
+            ],
+            "answer": "R40、IQR4，端點遠但中段集中。",
+            "why": "端點差40-0=40很大，但箱體寬14-10=4很小；兩者並不衝突，而是顯示外側端點離得遠、典型中間一半仍集中，須分區域解讀。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩量乘3",
+            "solutionSteps": [
+              "R與IQR都乘3。"
+            ],
+            "answer": "R與IQR都乘3。",
+            "why": "所有資料乘正數3時，最大、最小、Q1與Q3都同步縮放；任兩位置的差也乘3，所以全距與IQR都必成為原來三倍，且順序保持不變。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "R=IQR",
+            "solutionSteps": [
+              "左右鬚總長0，所以Q1=min、Q3=max。"
+            ],
+            "answer": "左右鬚總長0，所以Q1=min、Q3=max。",
+            "why": "全距可拆成左外段、IQR與右外段三個非負長度；若總長等於中間的IQR，兩個外段總和只能為0，故各自都必為0。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s009-lecture-r1",
+      "expectedContentSha256": "32becafdc25f6c61d21196528848f8e0d7ba72ab6cca4bb14e5dabe792d2f478",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "甲五數5、10、14、18、25；乙6、9、15、21、24",
+            "solutionSteps": [
+              "乙中位高1且IQR大4。"
+            ],
+            "answer": "乙中位高1且IQR大4。",
+            "why": "甲、乙中位數分別14、15，所以乙高1；箱寬分別18-10=8與21-9=12，所以乙IQR大4，中心與分散須分開計算，兩項都可獨立驗算，且各自使用正確端點。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "A 0、10、11、12、40；B 5、8、11、14、17",
+            "solutionSteps": [
+              "中位相同；A IQR小、全距大。"
+            ],
+            "answer": "中位相同；A IQR小、全距大。",
+            "why": "兩組中位都為11；A的IQR=2小於B的6，但A全距=40大於B的12，顯示A中段更集中、箱外端點波動卻更大，不能概括成全面較穩。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "甲每格2、箱4格；乙每格5、箱2格",
+            "solutionSteps": [
+              "IQR甲8、乙10。"
+            ],
+            "answer": "IQR甲8、乙10。",
+            "why": "不同數軸不能直接比較圖上格數；甲4格乘每格2得8，乙2格乘每格5得10，換成相同數值單位後才能判定乙箱寬較大。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "箱體完全分離但鬚線重疊",
+            "solutionSteps": [
+              "只能說中間50%位置分離。"
+            ],
+            "answer": "只能說中間50%位置分離。",
+            "why": "箱體代表Q1到Q3，完全分離只保證兩組中間50%的位置不重疊；鬚線仍重疊表示外側資料可能交錯，不能說每一筆都較高。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s010-lecture-r1",
+      "expectedContentSha256": "a7c9c7c38f28a7c5e5e29d201806bcd22d35672c251033f43a7632e11dc1efef",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "公平骰出偶數",
+            "solutionSteps": [
+              "3/6=1/2。"
+            ],
+            "answer": "3/6=1/2。",
+            "why": "公平骰六面各自等可能，偶數事件含2、4、6三面；有利數3除以全部數6才是機率，約分後為1/2，並非因只有奇偶兩類就直接猜。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "1到20選3或5的倍數",
+            "solutionSteps": [
+              "6+4-1=9個，機率9/20。"
+            ],
+            "answer": "6+4-1=9個，機率9/20。",
+            "why": "3的倍數6個、5的倍數4個，但15同時屬於兩類；用容斥扣回一次可得9個不同有利數，再除以20個等可能整數，避免重複計數。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩骰和7",
+            "solutionSteps": [
+              "6個有序配對，機率6/36=1/6。"
+            ],
+            "answer": "6個有序配對，機率6/36=1/6。",
+            "why": "兩顆骰子可區分時共有6×6個有序配對，(1,6)與(6,1)不同；和為7恰有六條配對，所以6/36約成1/6，順序不能合併，並可列六組逐一核對。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "A、A、B、C、C、C卡片抽C",
+            "solutionSteps": [
+              "3張C除6張=1/2。"
+            ],
+            "answer": "3張C除6張=1/2。",
+            "why": "基本等可能結果是六張實體卡片，不是三個不同字母；其中三張標C，每張抽取機會相同，故有利結果佔3/6。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s011-lecture-r1",
+      "expectedContentSha256": "35c995492965475f8e1ef39393fd94751d5dffae65345245b8f17297d1da60ef",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "P(A)=0.35",
+            "solutionSteps": [
+              "餘事0.65。"
+            ],
+            "answer": "餘事0.65。",
+            "why": "A與其餘事互斥又涵蓋全部結果，所以機率總和固定為1；用1-0.35得到0.65，並以兩者相加回1檢查，也符合機率範圍。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "兩次硬幣至少一正",
+            "solutionSteps": [
+              "1-P(反反)=1-1/4=3/4。"
+            ],
+            "answer": "1-P(反反)=1-1/4=3/4。",
+            "why": "至少一正包含正反、反正與正正三條路徑，直接列舉較繁；唯一餘事反反的機率為1/4，用1減即可一次涵蓋全部有利路徑。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩天不故障率0.98且獨立",
+            "solutionSteps": [
+              "至少一天故障=1-0.98²=0.0396。"
+            ],
+            "answer": "至少一天故障=1-0.98²=0.0396。",
+            "why": "獨立使兩天都不故障的機率可相乘為0.9604；這是至少一天故障的完整餘事，所以用1減得到精確值0.0396，無須逐路徑相加。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "P(A餘)=2P(A)",
+            "solutionSteps": [
+              "1-p=2p，p=1/3。"
+            ],
+            "answer": "1-p=2p，p=1/3。",
+            "why": "設A機率為p，其餘事便是1-p；比例條件給1-p=2p，表示總機率分成三等份且A佔一份，所以p=1/3，代回後餘事為2/3，兩者相加也正好為1。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s012-lecture-r1",
+      "expectedContentSha256": "084cdc93b970474505de1af02f0714b8bb45d3c8c2471b60bf709fabe0aff366",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "硬幣後骰子",
+            "solutionSteps": [
+              "第一層2支，完整路徑12。"
+            ],
+            "answer": "第一層2支，完整路徑12。",
+            "why": "第一層只記硬幣正反兩支，每支再接骰子六面；完整結果必同時包含兩階段，因此末端數是2×6=12，而不是2+6。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "A機率1/3，A後成功1/2",
+            "solutionSteps": [
+              "A且成功1/6。"
+            ],
+            "answer": "A且成功1/6。",
+            "why": "這條路徑要求先選到A且隨後成功，兩個分支必須接續發生；沿路相乘(1/3)(1/2)=1/6，結果也不會大於任一分支機率。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "三條成功路徑1/8、2/8、3/8",
+            "solutionSteps": [
+              "合計3/4。"
+            ],
+            "answer": "合計3/4。",
+            "why": "三條路徑終止於不同末端，彼此互斥但都屬成功事件；因此將路徑機率相加得6/8，再約分為3/4，且結果落在0到1之間。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "通過停止，未通過分可修與報廢",
+            "solutionSteps": [
+              "完整末端3種。"
+            ],
+            "answer": "完整末端3種。",
+            "why": "通過後流程已結束，本身是一個末端；只有未通過支再分成可修與報廢兩末端，所以總數是1+2，不能把每支都機械延長。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": [
+    {
+      "path": "figures/u22/fig-u22-tree-conditional.svg",
+      "replacements": [
+        {
+          "from": "<text x=\"610\" y=\"70\" font-size=\"15\">路徑=1/6</text>",
+          "to": "<text x=\"610\" y=\"70\" font-size=\"15\">此支為成功</text>"
+        },
+        {
+          "from": "<text x=\"610\" y=\"260\" font-size=\"15\">路徑=1/6</text>",
+          "to": "<text x=\"610\" y=\"260\" font-size=\"15\">此支為成功</text>"
+        },
+        {
+          "from": "<text x=\"610\" y=\"220\" font-size=\"15\">成功總和=1/3</text>",
+          "to": "<text x=\"610\" y=\"220\" font-size=\"15\">將兩條成功路徑相加</text>"
+        }
+      ]
+    }
+  ]
+}

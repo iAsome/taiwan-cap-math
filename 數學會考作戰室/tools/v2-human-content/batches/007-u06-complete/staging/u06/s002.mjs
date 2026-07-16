@@ -61,11 +61,10 @@ export default {
       }
     ],
     "conceptNarrative": [
-      "比例式要求同一種比較順序。若左邊是長:寬，右邊也必須是長:寬。",
-      "交叉相乘不是背箭頭，而是等式兩邊同乘兩個分母：a/b=c/d 同乘 bd 後得到 ad=bc。",
-      "未知數可能在任一位置。先寫乘積等式，再用一元一次方程式方法整理。",
-      "若未知數出現在分母，先記錄不能使分母為 0 的值，解完仍要代回。",
-      "情境題中數學解還要符合正數、整數、件數等條件。"
+      "比例式 a:b=c:d 表示兩個比值相等，也就是 a/b=c/d，其中 b、d 不能為零。對應順序必須一致，不能只因四個數相同便任意交換位置。",
+      "比例式可利用外項積等於內項積：ad=bc。交叉相乘不是口訣，而是等式兩邊同乘非零的 bd；若項中含括號，乘積必須作用於整個代數式。",
+      "求未知數前先檢查含未知數的後項不可為零。解出候選值後代回原比例，比較兩邊比值並核對定義域；若化簡成矛盾式，表示沒有解。",
+      "固定速率、相同比例尺與不變配方都能列比例式，但須保持同類量前後對應。例如圖上長對實際長、頁數對時間，兩組資料的順序必須相同。"
     ],
     "formalDefinitions": [
       {
@@ -105,98 +104,102 @@ export default {
     "method": [
       {
         "step": 1,
-        "instruction": "標出兩邊比的比較順序。",
-        "check": "相同位置是否代表同類量？"
+        "instruction": "標記兩個比的前後項，確認同類量上下或左右對應。",
+        "check": "兩組資料使用相同順序，後項單位與角色一致。"
       },
       {
         "step": 2,
-        "instruction": "寫出分母不為 0 的限制。",
-        "check": "未知數是否在後項或分母？"
+        "instruction": "列出所有後項非零的定義域限制。",
+        "check": "含未知數的分母或比後項不會因候選值變成零。"
       },
       {
         "step": 3,
-        "instruction": "交叉相乘形成一元一次方程式。",
-        "check": "左上乘右下、左下乘右上是否正確？"
+        "instruction": "利用外項積等於內項積建立一元方程式。",
+        "check": "交叉配對正確，括號中的每一項都受外部係數作用。"
       },
       {
         "step": 4,
-        "instruction": "解方程式並整理。",
-        "check": "負號、括號、分數是否處理完整？"
+        "instruction": "解方程式並保留精確分數，不任意取近似值。",
+        "check": "移項、分配律與符號運算均合法，解值符合限制。"
       },
       {
         "step": 5,
-        "instruction": "代回原比例式與情境驗算。",
-        "check": "兩邊比值是否相同，答案是否符合量的限制？"
+        "instruction": "把解代回原比例，比較兩個比值或交叉乘積。",
+        "check": "原式有定義且左右相等；矛盾或恆等情形有明確判讀。"
       }
     ],
     "workedExamples": [
       {
-        "exampleId": "L1",
-        "prompt": "解 4:x=6:15。",
+        "exampleId": "u06-s002-example-a",
+        "prompt": "解比例式 x:8=9:12。",
         "solutionSteps": [
-          "寫成 4/x=6/15，且 x≠0。",
-          "交叉相乘得 60=6x，所以 x=10。"
+          "交叉相乘得 12x=72。",
+          "兩邊同除以十二，x=6。"
         ],
-        "answer": "x=10。"
+        "answer": "x=6。",
+        "why": "x/8 與 9/12 對應，交叉相乘得到十二 x 等於七十二。代回六比八可約為三比四，與九比十二相同，前後對應與解值均正確。"
       },
       {
-        "exampleId": "L2",
-        "prompt": "解 (x+1):9=4:6。",
+        "exampleId": "u06-s002-example-b",
+        "prompt": "解 5:(y-1)=2:6，並列限制。",
         "solutionSteps": [
-          "交叉相乘得 6(x+1)=36。",
-          "x+1=6，所以 x=5。"
+          "先寫 y≠1。",
+          "交叉相乘得 30=2(y-1)，解得 y=16。"
         ],
-        "answer": "x=5。"
+        "answer": "y=16。",
+        "why": "y-1 是比例後項，必須非零。解得十六後後項為十五，左比五比十五與右比二比六都可化為一比三，定義域與比值同時通過。"
       },
       {
-        "exampleId": "L3",
-        "prompt": "解 0.8:1.2=x:9。",
+        "exampleId": "u06-s002-example-c",
+        "prompt": "解 (2x+3):5=7:10。",
         "solutionSteps": [
-          "0.8/1.2=2/3。",
-          "x/9=2/3，所以 3x=18，x=6。"
+          "交叉相乘得 10(2x+3)=35。",
+          "整理 20x=5，得到 x=1/4。"
         ],
-        "answer": "x=6。"
+        "answer": "x=1/4。",
+        "why": "十必須乘括號內整個二 x 加三，展開後為二十 x 加三十。精確解四分之一代回，兩邊比值皆為十分之七。"
       },
       {
-        "exampleId": "L4",
-        "prompt": "解 5:(x-2)=3:6。",
+        "exampleId": "u06-s002-example-d",
+        "prompt": "判斷 (x+1):4=(2x+3):8 是否有解。",
         "solutionSteps": [
-          "先記 x≠2。",
-          "30=3(x-2)，得 x=12；12 不違反限制。"
+          "交叉相乘得 8(x+1)=4(2x+3)。",
+          "展開後 8x+8=8x+12，得到矛盾 8=12。"
         ],
-        "answer": "x=12。"
+        "answer": "無解。",
+        "why": "未知數項完全消去後留下不可能等式，表示任何 x 都不能同時滿足兩個比值。這不是零後項問題，而是兩側關係彼此矛盾。"
       }
     ],
     "commonMistakes": [
       {
-        "mistake": "把 3:x=6:10 寫成 3x=60。",
-        "why": "交叉配對錯誤。",
-        "correction": "3×10=6x。"
+        "mistake": "兩組比的對應順序不一致。",
+        "why": "同類量被放在不同位置。",
+        "correction": "列式前先標記每一項代表的量。"
       },
       {
-        "mistake": "左右兩比的量次序不一致。",
-        "why": "只看數字，未標示量的名稱。",
-        "correction": "先寫單位或量名再列式。"
+        "mistake": "交叉相乘配成相鄰項乘積。",
+        "why": "未理解外項積等於內項積。",
+        "correction": "寫成分式後沿對角線配對。"
       },
       {
-        "mistake": "解出 x 後不代回。",
-        "why": "容易漏掉算術錯誤或分母限制。",
-        "correction": "比較代回後兩邊比值。"
+        "mistake": "括號外係數只乘第一項。",
+        "why": "違反分配律。",
+        "correction": "係數須乘括號內每一項。"
       },
       {
-        "mistake": "5:(x-2) 中忘記 x≠2。",
-        "why": "忽略後項不可為 0。",
-        "correction": "列式時先寫限制。"
+        "mistake": "未檢查後項為零。",
+        "why": "候選值可能使原比例無定義。",
+        "correction": "解題前列限制，解後再核對。"
       },
       {
-        "mistake": "把 0.6:1.5 當成 6:15 後直接令 x=9。",
-        "why": "沒有完成比例求解。",
-        "correction": "先化簡為 2:5，再依對應比例求值。"
+        "mistake": "矛盾式判成無限多解。",
+        "why": "混淆永假與恆等結果。",
+        "correction": "非零常數不可能相等表示無解。"
       },
       {
-        "mistake": "得到負的箱數仍接受。",
-        "why": "只看代數，不檢查情境。",
-        "correction": "量的性質也屬答案條件。"
+        "mistake": "情境比例混用不同順序。",
+        "why": "第一組與第二組的量互換位置。",
+        "correction": "兩組皆使用相同的『量一:量二』順序。"
       }
     ],
     "selfCheck": [
@@ -251,7 +254,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "8eef71b04cad20d81ad28776ca60ef3e7223926d1bdd1ecabf23408725d724ee"
+    "contentSha256": "4652b487db1181252d70b759ca02931631d8764403accbf1170af786c07e0c00"
   },
   "mcQuestions": [
     {
@@ -276,11 +279,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "右比6/15=2/5，因此x/5=2/5，x=2。",
       "mainExplanation": "交叉相乘：15x=5×6=30，x=2。",
-      "explanation": "交叉相乘：15x=5×6=30，x=2。",
+      "explanation": "比例式 x:5=6:15 可寫成 x/5=6/15。右邊同除以三為 2/5，因此 x/5=2/5，分母相同可得 x=2；代回 2:5 與 6:15 等值，兩邊約分後完全相同，前後對應與解值都正確。",
       "steps": [
-        "x/5=6/15",
-        "15x=30",
-        "x=2"
+        "把比例式寫成 x/5=6/15。",
+        "將 6/15 約分成 2/5。",
+        "比較得 x=2，並代回驗證比值相同。"
       ],
       "optionAnalysis": [
         {
@@ -304,7 +307,7 @@ export default {
           "reason": "直接取右比前項。"
         }
       ],
-      "misconceptionTarget": "交叉乘積配錯或未解方程式。",
+      "misconceptionTarget": "把五移到右邊時誤用加法，或只約分比例的一側。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -325,7 +328,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0a5790ebefc1bd496aee20dbdd661734636f3db5eabd9bcf0b7da3807cc16716"
+      "contentSha256": "42151b75aadcdbe81eb4f21ba8635f969c6970c57666f41cf92d37a4d5eb8c63"
     },
     {
       "questionId": "u06-s002-v002",
@@ -349,11 +352,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "4/10=2/5，而6/15=2/5，故x=10。",
       "mainExplanation": "外項乘積4×15等於內項x×6。",
-      "explanation": "外項乘積4×15等於內項x×6。",
+      "explanation": "由 4:x=6:15 交叉相乘，得到 4×15=6x，也就是 60=6x。兩邊同除以六得 x=10；代回 4:10=2:5，與 6:15 約分後相同，未知數後項也不是零，原比例式有定義且成立，因此答案唯一。",
       "steps": [
-        "先列x≠0",
-        "60=6x",
-        "x=10"
+        "確認對應順序，交叉相乘列出 4×15=6x。",
+        "化簡為 60=6x。",
+        "求得 x=10，代回比較兩個比值。"
       ],
       "optionAnalysis": [
         {
@@ -377,7 +380,7 @@ export default {
           "reason": "15把未知數直接等同右後項。"
         }
       ],
-      "misconceptionTarget": "把 x 與 15 對應相等。",
+      "misconceptionTarget": "把相鄰項相乘而非交叉相乘，或把未知數位置對應錯誤。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -398,7 +401,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f76507de213fd6174903ee497fb99abf3068aae3069b6b19b95a91072fecb3a2"
+      "contentSha256": "f59d4afb1b87bf89416f52549bd9e727a37d351d7852f1ccfaeb083ebe7beb87"
     },
     {
       "questionId": "u06-s002-v003",
@@ -422,11 +425,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "18是6的3倍，前項5也乘3得15。",
       "mainExplanation": "由5/6=x/18，交叉相乘6x=90。",
-      "explanation": "由5/6=x/18，交叉相乘6x=90。",
+      "explanation": "5:6=x:18 表示 5/6=x/18，交叉相乘得 6x=5×18=90。兩邊同除以六，x=15；驗算 15:18 同除以三為 5:6，兩組比的前後對應順序一致，外項積與內項積也同為九十，因此答案唯一。",
       "steps": [
-        "5×18=90",
-        "6x=90",
-        "x=15"
+        "把比寫成 5/6=x/18。",
+        "交叉相乘得到 6x=90。",
+        "解得 x=15，代回約分驗證。"
       ],
       "optionAnalysis": [
         {
@@ -450,7 +453,7 @@ export default {
           "reason": "6x=90，x=15。"
         }
       ],
-      "misconceptionTarget": "只看後項倍率卻對前項做錯運算。",
+      "misconceptionTarget": "用十八減六求未知數，沒有維持兩組對應比值相等。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -471,7 +474,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "42084e8563afb8c1af3eaf3ac43c1e9a7a0f0d1199da5c886de4034e0d70b366"
+      "contentSha256": "a239e217dba31e30ed2bca7ee2c82b08a7cc4a5e1925465e00e68ab2683ed117"
     },
     {
       "questionId": "u06-s002-v004",
@@ -495,11 +498,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "右比5/14，所以(x+2)/7=5/14，得x+2=5/2，x=1/2。",
       "mainExplanation": "先求整個前項x+2，再還原x。",
-      "explanation": "先求整個前項x+2，再還原x。",
+      "explanation": "比例式 (x+2):7=5:14 交叉相乘為 14(x+2)=35。兩邊同除以十四得 x+2=5/2，再減二，所以 x=1/2；括號中的整個 x+2 是前項，不能只讓十四乘未知數，代回也能得到相同比值。",
       "steps": [
-        "14(x+2)=35",
-        "x+2=5/2",
-        "x=1/2"
+        "依比例對應交叉相乘，列出 14(x+2)=35。",
+        "同除以 14，得到 x+2=5/2。",
+        "兩邊同減 2，求得 x=1/2 並代回。"
       ],
       "optionAnalysis": [
         {
@@ -523,7 +526,7 @@ export default {
           "reason": "5/2是x+2的值，不是x。"
         }
       ],
-      "misconceptionTarget": "求出括號值後未減回常數。",
+      "misconceptionTarget": "交叉相乘時十四只乘 x，漏掉括號內常數二。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -544,7 +547,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "44c7cddcf995be3d5e150202d172602c6a53e302ecb66a08f65e981ba6689125"
+      "contentSha256": "a0c4f9012c6b4814f793a4fa09f7f384575bd2d044745fada9dda8c552b7f2ca"
     },
     {
       "questionId": "u06-s002-v005",
@@ -568,11 +571,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "設實際長度為 x 公尺，4:6=6:x。交叉相乘得 4x=36，所以 x=9。",
       "mainExplanation": "建立「圖上長度:實際長度」的同順序比例，再交叉相乘。",
-      "explanation": "建立「圖上長度:實際長度」的同順序比例，再交叉相乘。",
+      "explanation": "在同一比例尺下，圖上長:實際長的對應不變。由 4 公分對 6 公尺，圖上六公分是原來的 6÷4=1.5 倍，實際長也為 6×1.5=9 公尺，兩種長度同步使用相同倍數。",
       "steps": [
-        "依序寫成圖上:實際=4:6=6:x。",
-        "交叉相乘得4x=36。",
-        "解得x=9並代回比值。"
+        "保持圖上長與實際長的對應順序。",
+        "求圖上長放大倍數 6÷4=1.5。",
+        "將實際六公尺同乘 1.5，得到九公尺。"
       ],
       "optionAnalysis": [
         {
@@ -596,7 +599,7 @@ export default {
           "reason": "13.5使用了錯誤放大倍數。"
         }
       ],
-      "misconceptionTarget": "比例兩側單位順序不一致或把倍率倒置。",
+      "misconceptionTarget": "把圖上公分直接與實際公尺相加，或兩邊使用不同倍數。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -617,7 +620,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "64e8747982d30ff1a82ef185762040d9ffed5f7da06d679235943f6f6b96d6de"
+      "contentSha256": "49cc86be08842e52f2a2182506e1149c31bc60d0c728954ebe0f4fc4c049b317"
     },
     {
       "questionId": "u06-s002-v006",
@@ -641,12 +644,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "代入x=4，左比3/20；右比9/60=3/20。",
       "mainExplanation": "把比改寫成分數等式，再交叉相乘。",
-      "explanation": "把比改寫成分數等式，再交叉相乘。",
+      "explanation": "將 3/5:x=9/10:6 寫成 (3/5)/x=(9/10)/6。交叉相乘可得 (3/5)×6=(9/10)x，即 18/5=9x/10；乘十後 36=9x，所以 x=4。代回後左右兩個比值相等，且未知後項保持非零，答案完整符合原比例，也沒有其他解。",
       "steps": [
-        "(3/5)/x=(9/10)/6",
-        "3/(5x)=3/20",
-        "60=15x",
-        "x=4"
+        "依原順序寫成兩個分式相等。",
+        "交叉相乘得到 (3/5)×6=(9/10)x。",
+        "清除分母並化簡，求得 x=4，再代回。"
       ],
       "optionAnalysis": [
         {
@@ -670,7 +672,7 @@ export default {
           "reason": "右比(9/10)÷6=3/20；(3/5)/x=3/20，故12=3x，x=4。"
         }
       ],
-      "misconceptionTarget": "連續分數除法處理錯誤。",
+      "misconceptionTarget": "把分數前項的分母五誤當成比例式的後項，破壞對應順序。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -691,7 +693,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ef6fa42c9ebec5622ae0d0a4c0868c8e89dbcab28d6ed5f4a7678dd1be30b765"
+      "contentSha256": "46e92891732d2e490d7dd684fe5ce283949b1f3630f1a087a18b1e015423d676"
     },
     {
       "questionId": "u06-s002-v007",
@@ -715,12 +717,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "代入12後左比5:10=1:2，右比3:6=1:2。",
       "mainExplanation": "交叉相乘並記得最後加回2。",
-      "explanation": "交叉相乘並記得最後加回2。",
+      "explanation": "原比例式要求 x-2≠0。由 5:(x-2)=3:6 交叉相乘得 30=3(x-2)，同除以三得 x-2=10，所以 x=12；此值不等於二，分母合法，代回兩比都等於二分之一，驗算通過，因此答案唯一。",
       "steps": [
-        "限制x≠2",
-        "5×6=3(x-2)",
-        "x-2=10",
-        "x=12"
+        "先記錄後項限制 x≠2。",
+        "交叉相乘列出 5×6=3(x-2)。",
+        "解得 x=12，代回確認後項十非零且比例成立。"
       ],
       "optionAnalysis": [
         {
@@ -744,7 +745,7 @@ export default {
           "reason": "10是x-2的值。"
         }
       ],
-      "misconceptionTarget": "忘記分母限制或把x-2當最後答案。",
+      "misconceptionTarget": "忽略比例後項不可為零，或展開 3(x-2) 時漏乘負二。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -765,7 +766,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "fafd825b9e8f055f1411b840f3ab8b64cb866ead003362a3cfa53a4cccb83ca1"
+      "contentSha256": "c6dc24b272d7d86100958ba959913e7af152baf5d83dc3685bffbcc3530bbeac"
     },
     {
       "questionId": "u06-s002-v008",
@@ -789,12 +790,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "代入x=7/3：左側(11/3):9=11/27，右側(22/3):18=11/27。",
       "mainExplanation": "兩邊都有未知數，交叉相乘後展開括號並合併同類項。",
-      "explanation": "兩邊都有未知數，交叉相乘後展開括號並合併同類項。",
+      "explanation": "交叉相乘得 18(2x-1)=9(x+5)。展開為 36x-18=9x+45，移項後 27x=63，所以 x=63/27=7/3；代回兩個後項九、十八都非零，左右比值也確實相同，分數解維持精確且無需近似。",
       "steps": [
-        "18(2x-1)=9(x+5)",
-        "36x-18=9x+45",
-        "27x=63",
-        "x=7/3"
+        "交叉相乘列出 18(2x-1)=9(x+5)。",
+        "完整展開並整理為 27x=63。",
+        "約分得 x=7/3，代回檢查兩個比值。"
       ],
       "optionAnalysis": [
         {
@@ -818,7 +818,7 @@ export default {
           "reason": "7漏除以係數27。"
         }
       ],
-      "misconceptionTarget": "展開括號或最後除法錯誤。",
+      "misconceptionTarget": "括號外係數只乘第一項，導致常數項沒有同步放大。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -839,7 +839,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f93fcf7e86740743a39b3e112b549677d287e55d107a0859fbed993e5120af1e"
+      "contentSha256": "f8b56d0cfc23cc4cdd8f91fed698de9ad6c5471b05a2a0d19225c4b27b421321"
     },
     {
       "questionId": "u06-s002-v009",
@@ -863,11 +863,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "代入5：左4/4=1，右10/10=1。",
       "mainExplanation": "兩邊都有x時，交叉相乘後按一元一次方程式整理。",
-      "explanation": "兩邊都有x時，交叉相乘後按一元一次方程式整理。",
+      "explanation": "由 (x-1):4=(x+5):10 交叉相乘，得到 10(x-1)=4(x+5)。展開為 10x-10=4x+20，所以 6x=30，求得 x=5；代回左右比皆為一，兩個括號也都完整接受外部係數，原式確實成立，線性方程只有此解。",
       "steps": [
-        "10x-10=4x+20",
-        "6x=30",
-        "x=5"
+        "依對應項交叉相乘列出 10(x-1)=4(x+5)。",
+        "展開括號並整理為 6x=30。",
+        "求得 x=5，代回原比例驗算。"
       ],
       "optionAnalysis": [
         {
@@ -891,7 +891,7 @@ export default {
           "reason": "10(x-1)=4(x+5)，10x-10=4x+20，6x=30，x=5。"
         }
       ],
-      "misconceptionTarget": "交叉相乘後同類項移錯邊。",
+      "misconceptionTarget": "交叉相乘時交換 x-1 與 x+5 的位置，或漏展開常數。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -912,7 +912,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9814e5f04474dada5e35fb5fd725f530c33cf5843ee0ffc74ecd9b6fc8d45952"
+      "contentSha256": "1ef61717233fdf00eba32f52e0c76f4cd3555bfcddd47885a3267ea7bfbb2ae8"
     },
     {
       "questionId": "u06-s002-v010",
@@ -936,11 +936,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "12:18=30:t，12t=540，t=45。",
       "mainExplanation": "每頁18/12=1.5秒，30頁需45秒。",
-      "explanation": "每頁18/12=1.5秒，30頁需45秒。",
+      "explanation": "影印速度固定，頁數與時間同比例增加。三十頁是十二頁的 30÷12=2.5 倍，因此時間也是 18×2.5=45 秒；每頁一點五秒的單位率也能得到相同結果。",
       "steps": [
-        "求每頁時間1.5秒",
-        "乘30頁",
-        "得45秒"
+        "確認固定速度下頁數:時間的比保持不變。",
+        "求頁數放大倍數 30÷12=2.5。",
+        "將十八秒同乘 2.5，得到四十五秒。"
       ],
       "optionAnalysis": [
         {
@@ -964,7 +964,7 @@ export default {
           "reason": "54秒把倍數當3。"
         }
       ],
-      "misconceptionTarget": "未維持固定速度或倍數算錯。",
+      "misconceptionTarget": "只用三十減十二再加到時間，沒有依固定速度使用比例倍數。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -985,7 +985,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e9d0bee7cc0b61cb8ec98dc539403830b3ebedf8ff2cb2477c6a3e3ab28b7d4f"
+      "contentSha256": "47d53e11ff0b5cdbee94cd739dd89d0dad5e6bdafb5d090167463190d3f64542"
     },
     {
       "questionId": "u06-s002-v011",
@@ -1009,10 +1009,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "比例式4:600=10:x，4x=6000，x=1500。",
       "mainExplanation": "每人高湯150毫升，10人需1500毫升。",
-      "explanation": "每人高湯150毫升，10人需1500毫升。",
+      "explanation": "配方比例不變時，每人份高湯為 600÷4=150 毫升。十人份需要 150×10=1500 毫升；也可用 4:600=10:x 交叉相乘得到同一答案，單位全程都是毫升且配方倍數一致。",
       "steps": [
-        "600÷4=150",
-        "150×10=1500"
+        "先求每人份 600÷4=150 毫升。",
+        "用每份量乘十人，得到 1500 毫升。",
+        "以 4:600=10:1500 回驗比例相同。"
       ],
       "optionAnalysis": [
         {
@@ -1036,7 +1037,7 @@ export default {
           "reason": "2400把10/4誤成4。"
         }
       ],
-      "misconceptionTarget": "人份與材料量對應順序錯誤。",
+      "misconceptionTarget": "把增加六人直接加六百毫升，沒有先求每人份的固定量。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -1057,7 +1058,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ff2296451880261bffc719e1dde1d2d1a26d0818a3b6ee2622931d72353684df"
+      "contentSha256": "8168e5ab65abc5bcd8f28279f8e29eb6c72b5969e32b9dfcdd529c76f4d962ed"
     },
     {
       "questionId": "u06-s002-v012",
@@ -1081,11 +1082,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "3:1.2=7.5:x，3x=9，x=3。",
       "mainExplanation": "同一比例尺下圖上距離與實際距離成正比。",
-      "explanation": "同一比例尺下圖上距離與實際距離成正比。",
+      "explanation": "同一比例尺下，每一圖上公分代表 1.2÷3=0.4 公里。圖上七點五公分對應 7.5×0.4=3 公里；圖上與實際長度的對應順序前後一致，換算所得也是精確距離。",
       "steps": [
-        "求圖上倍率2.5",
-        "實際距離同乘2.5",
-        "得3公里"
+        "求單位比例 1.2÷3=0.4 公里/公分。",
+        "將圖上 7.5 公分乘單位實際距離。",
+        "得到三公里，代回比例尺核對。"
       ],
       "optionAnalysis": [
         {
@@ -1109,7 +1110,7 @@ export default {
           "reason": "4來自錯誤相加。"
         }
       ],
-      "misconceptionTarget": "把公分與公里直接約分為數值比而忽略對應。",
+      "misconceptionTarget": "把七點五與一點二直接相加，或公分、公里的對應位置放反。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-simplify"
@@ -1130,7 +1131,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "14c6f1269588c833ec41f3752485d027988977f9a840b658abc18bfa9764fb0b"
+      "contentSha256": "de29570eff013d25ad64dd76ed07aaacbb4df7ba9d5b9420c3e12525642f7c6a"
     }
   ],
   "constructedResponses": [
@@ -1151,17 +1152,17 @@ export default {
         "代回比較兩邊比值。"
       ],
       "fullCreditSolution": [
-        "因x-3不可為0，所以x≠3。",
-        "5×10=4(x-3)，50=4x-12，4x=62，x=31/2。",
-        "代回x-3=25/2，左比5÷(25/2)=2/5，右比4/10=2/5。"
+        "比例後項 x-3 不可為零，所以定義域限制為 x≠3。",
+        "由 5:(x-3)=4:10 交叉相乘得 50=4(x-3)，展開為 50=4x-12，故 4x=62、x=31/2。",
+        "代回 x-3=25/2，左比 5÷(25/2)=2/5，右比 4÷10=2/5，且後項非零；左右比值完全相同，候選值通過原式驗算。"
       ],
       "alternativeSolutions": [
         "可先把4:10化為2:5，再由5:(x-3)=2:5求得2(x-3)=25。"
       ],
       "reasoningSteps": [
-        "因x-3不可為0，所以x≠3。",
-        "5×10=4(x-3)，50=4x-12，4x=62，x=31/2。",
-        "代回x-3=25/2，左比5÷(25/2)=2/5，右比4/10=2/5。"
+        "先從比例式後項寫出 x≠3 的限制。",
+        "交叉相乘並完整展開括號，解一元一次方程式。",
+        "把所得分數代回，核對比值與非零條件。"
       ],
       "rubric": [
         {
@@ -1189,9 +1190,9 @@ export default {
       "unitNotationRules": "x可寫31/2或15.5；代回分母不得為0。",
       "answerOnlyPolicy": "只答x=15.5，最多1分。",
       "commonErrors": [
-        "漏寫x≠3。",
-        "50=4x-3。",
-        "把x-3解成x。"
+        "未先排除 x=3，使比例式可能出現零後項。",
+        "展開括號時漏乘負三，錯把四倍的整體寫成只放大未知數。",
+        "代回時把除以二十五分之二誤作乘以二十五分之二。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1206,7 +1207,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "c02254be95034bf17754995f4775168ad0f5f6b53a7e0047493d2955d9ddc048"
+      "contentSha256": "4852639850e54a61d71159087e44e3b458165500ed21534d9b5dac95fd7c9652"
     },
     {
       "questionId": "u06-s002-cr002",
@@ -1225,17 +1226,17 @@ export default {
         "用完整句子說明解集合。"
       ],
       "fullCreditSolution": [
-        "3(2x+1)=6(x-2)。",
-        "6x+3=6x-12，消去6x後得到3=-12，矛盾。",
-        "因此沒有任何x能使原比例式成立；固定後項6、3均非0。"
+        "由 (2x+1):6=(x-2):3 交叉相乘，得到 3(2x+1)=6(x-2)。",
+        "展開為 6x+3=6x-12，兩邊同減 6x 後得到 3=-12，這是不可能等式。",
+        "因此沒有任何 x 能使原比例成立；固定後項六與三皆非零，無解不是由定義域造成。"
       ],
       "alternativeSolutions": [
         "也可比較兩邊比值：(2x+1)/6 與 (x-2)/3，通分後分子相差固定15，不可能相等。"
       ],
       "reasoningSteps": [
-        "3(2x+1)=6(x-2)。",
-        "6x+3=6x-12，消去6x後得到3=-12，矛盾。",
-        "因此沒有任何x能使原比例式成立；固定後項6、3均非0。"
+        "依比例式對應順序交叉相乘。",
+        "完整展開兩側並消去相同的 6x。",
+        "由矛盾式判定無解，並區分於後項為零的情形。"
       ],
       "rubric": [
         {
@@ -1263,9 +1264,9 @@ export default {
       "unitNotationRules": "使用『無解』或『沒有任何實數解』皆可；本題不需單位。",
       "answerOnlyPolicy": "只寫無解最多1分。",
       "commonErrors": [
-        "把6x消去後寫15=0卻未判矛盾。",
-        "錯把矛盾當任意解。",
-        "直接令對應分子相等。"
+        "看到兩側 6x 消去就寫 x=0，沒有處理剩餘常數。",
+        "展開括號時只把六乘未知數，沒有把常數負二也乘六。",
+        "把矛盾式三等於負十二解讀成有無限多解。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1280,7 +1281,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "f1a1ad26ad649a892b7936e1fd6d7ebbd2849edf95d57e9deb05939d9e625a51"
+      "contentSha256": "2a1add2d6bc2280e367b1de95f03dabfa3ed5b6bd4890914fe555b09d9c8ef34"
     }
   ],
   "semanticReviews": [
@@ -1289,7 +1290,7 @@ export default {
       "questionId": "u06-s002-v001",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "0a5790ebefc1bd496aee20dbdd661734636f3db5eabd9bcf0b7da3807cc16716",
+      "contentSha256": "42151b75aadcdbe81eb4f21ba8635f969c6970c57666f41cf92d37a4d5eb8c63",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1326,7 +1327,7 @@ export default {
       "questionId": "u06-s002-v002",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "f76507de213fd6174903ee497fb99abf3068aae3069b6b19b95a91072fecb3a2",
+      "contentSha256": "f59d4afb1b87bf89416f52549bd9e727a37d351d7852f1ccfaeb083ebe7beb87",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1363,7 +1364,7 @@ export default {
       "questionId": "u06-s002-v003",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "42084e8563afb8c1af3eaf3ac43c1e9a7a0f0d1199da5c886de4034e0d70b366",
+      "contentSha256": "a239e217dba31e30ed2bca7ee2c82b08a7cc4a5e1925465e00e68ab2683ed117",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1400,7 +1401,7 @@ export default {
       "questionId": "u06-s002-v004",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "44c7cddcf995be3d5e150202d172602c6a53e302ecb66a08f65e981ba6689125",
+      "contentSha256": "a0c4f9012c6b4814f793a4fa09f7f384575bd2d044745fada9dda8c552b7f2ca",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1437,7 +1438,7 @@ export default {
       "questionId": "u06-s002-v005",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "64e8747982d30ff1a82ef185762040d9ffed5f7da06d679235943f6f6b96d6de",
+      "contentSha256": "49cc86be08842e52f2a2182506e1149c31bc60d0c728954ebe0f4fc4c049b317",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1474,7 +1475,7 @@ export default {
       "questionId": "u06-s002-v006",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "ef6fa42c9ebec5622ae0d0a4c0868c8e89dbcab28d6ed5f4a7678dd1be30b765",
+      "contentSha256": "46e92891732d2e490d7dd684fe5ce283949b1f3630f1a087a18b1e015423d676",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1511,7 +1512,7 @@ export default {
       "questionId": "u06-s002-v007",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "fafd825b9e8f055f1411b840f3ab8b64cb866ead003362a3cfa53a4cccb83ca1",
+      "contentSha256": "c6dc24b272d7d86100958ba959913e7af152baf5d83dc3685bffbcc3530bbeac",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1548,7 +1549,7 @@ export default {
       "questionId": "u06-s002-v008",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "f93fcf7e86740743a39b3e112b549677d287e55d107a0859fbed993e5120af1e",
+      "contentSha256": "f8b56d0cfc23cc4cdd8f91fed698de9ad6c5471b05a2a0d19225c4b27b421321",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1585,7 +1586,7 @@ export default {
       "questionId": "u06-s002-v009",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "9814e5f04474dada5e35fb5fd725f530c33cf5843ee0ffc74ecd9b6fc8d45952",
+      "contentSha256": "1ef61717233fdf00eba32f52e0c76f4cd3555bfcddd47885a3267ea7bfbb2ae8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1622,7 +1623,7 @@ export default {
       "questionId": "u06-s002-v010",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "e9d0bee7cc0b61cb8ec98dc539403830b3ebedf8ff2cb2477c6a3e3ab28b7d4f",
+      "contentSha256": "47d53e11ff0b5cdbee94cd739dd89d0dad5e6bdafb5d090167463190d3f64542",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1659,7 +1660,7 @@ export default {
       "questionId": "u06-s002-v011",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "ff2296451880261bffc719e1dde1d2d1a26d0818a3b6ee2622931d72353684df",
+      "contentSha256": "8168e5ab65abc5bcd8f28279f8e29eb6c72b5969e32b9dfcdd529c76f4d962ed",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1696,7 +1697,7 @@ export default {
       "questionId": "u06-s002-v012",
       "unitId": "u06",
       "skillId": "proportion-solve",
-      "contentSha256": "14c6f1269588c833ec41f3752485d027988977f9a840b658abc18bfa9764fb0b",
+      "contentSha256": "de29570eff013d25ad64dd76ed07aaacbb4df7ba9d5b9420c3e12525642f7c6a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

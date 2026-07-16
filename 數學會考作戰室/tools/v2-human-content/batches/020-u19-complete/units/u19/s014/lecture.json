@@ -130,7 +130,8 @@
         "總和4π。"
       ],
       "answer": "4π。",
-      "level": "basic"
+      "level": "basic",
+      "why": "直徑4的整圓周是4π，每個半圓弧只占一半而為2π；兩段首尾相接後總長回到4π，題目又未要求直徑。兩段合成整圓亦可作為交叉驗算。"
     },
     {
       "exampleId": "s014-L2",
@@ -140,7 +141,8 @@
         "直徑10。"
       ],
       "answer": "10+5π。",
-      "level": "standard"
+      "level": "standard",
+      "why": "半圓弧長為直徑10所對整圓周10π的一半，即5π；邊界另含直徑10，所以兩種不同線段必須相加。沿邊界走一圈可確認沒有漏段或重複。"
     },
     {
       "exampleId": "s014-L3",
@@ -150,7 +152,8 @@
         "半圓弧4π。"
       ],
       "answer": "24+4π。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "正方形上邊成為半圓的接合直徑後不再外露，剩下三邊共24；再加入直徑8的半圓弧4π，才是完整外周。答案同時保留直線與曲線兩種外露部分。"
     },
     {
       "exampleId": "s014-L4",
@@ -160,7 +163,8 @@
         "內洞圓周4π。"
       ],
       "answer": "16π。",
-      "level": "connection"
+      "level": "connection",
+      "why": "挖孔不會讓邊界長度相減，反而新增內圓周4π；外圓周12π與內圈都可接觸，所以總邊界為16π。內外兩圈相加才真正涵蓋所有邊界。"
     }
   ],
   "difficultyConnections": {
@@ -210,7 +214,7 @@
     {
       "figureId": "u19-s014-fig001",
       "purpose": "長方形兩端各接半圓形成膠囊形，內部共邊以虛線、實際外邊界以粗線表示。",
-      "altText": "長方形兩端各接半圓形成膠囊形，內部共邊以虛線、實際外邊界以粗線表示。，不可按比例目測。"
+      "altText": "長方形兩端各接半圓形成膠囊形，內部共邊以虛線、實際外邊界以粗線表示，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -245,5 +249,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "a4fa451e9f4f5b6527bc810073648725ed4337d352927fd48f9a2e0a0abadfdb"
+  "contentSha256": "2f88d3fba238d42a17653164ce205c953d0bf8422b02f11200f68569a4e9730f"
 }

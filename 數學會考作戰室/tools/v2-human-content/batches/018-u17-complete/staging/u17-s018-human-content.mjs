@@ -1026,7 +1026,7 @@ export const QUESTIONS = [
     "choices": [
       "對角線等長，因此為菱形",
       "一角90°，因此為菱形",
-      "平行四邊形的對角線互相垂直，因此ABCD為菱形",
+      "平行四邊形若對角線互相垂直，則ABCD為菱形",
       "四角相等，因此為菱形"
     ],
     "answerIndex": 2,
@@ -1034,28 +1034,28 @@ export const QUESTIONS = [
     "explanation": "在已知是平行四邊形的前提下，對角線垂直是菱形判定之一。",
     "steps": [
       "在已知是平行四邊形的前提下，對角線垂直是菱形判定之一。",
-      "因此選擇「平行四邊形的對角線互相垂直，因此ABCD為菱形」。"
+      "因此選擇「平行四邊形若對角線互相垂直，則ABCD為菱形」。"
     ],
     "optionAnalysis": [
       {
         "choice": "對角線等長，因此為菱形",
         "truth": false,
-        "reason": "選項「對角線等長，因此為菱形」不符合題意；依菱形的對角線判定。應得到「平行四邊形的對角線互相垂直，因此ABCD為菱形」，此錯誤常源自：混入矩形的等長性質。"
+        "reason": "選項「對角線等長，因此為菱形」不符合題意；依菱形的對角線判定。應得到「平行四邊形若對角線互相垂直，則ABCD為菱形」，此錯誤常源自：混入矩形的等長性質。"
       },
       {
         "choice": "一角90°，因此為菱形",
         "truth": false,
-        "reason": "選項「一角90°，因此為菱形」不符合題意；依菱形的對角線判定。應得到「平行四邊形的對角線互相垂直，因此ABCD為菱形」，此錯誤常源自：混入矩形的等長性質。"
+        "reason": "選項「一角90°，因此為菱形」不符合題意；依菱形的對角線判定。應得到「平行四邊形若對角線互相垂直，則ABCD為菱形」，此錯誤常源自：混入矩形的等長性質。"
       },
       {
-        "choice": "平行四邊形的對角線互相垂直，因此ABCD為菱形",
+        "choice": "平行四邊形若對角線互相垂直，則ABCD為菱形",
         "truth": true,
         "reason": "依獨立重算「在已知是平行四邊形的前提下，對角線垂直是菱形判定之一。」，此選項正確回答所求。"
       },
       {
         "choice": "四角相等，因此為菱形",
         "truth": false,
-        "reason": "選項「四角相等，因此為菱形」不符合題意；依菱形的對角線判定。應得到「平行四邊形的對角線互相垂直，因此ABCD為菱形」，此錯誤常源自：混入矩形的等長性質。"
+        "reason": "選項「四角相等，因此為菱形」不符合題意；依菱形的對角線判定。應得到「平行四邊形若對角線互相垂直，則ABCD為菱形」，此錯誤常源自：混入矩形的等長性質。"
       }
     ],
     "misconceptionTarget": "混入矩形的等長性質。",
@@ -1063,7 +1063,7 @@ export const QUESTIONS = [
     "estimatedTimeSec": 120,
     "unitCheck": "角度或長度單位依題意一致",
     "roundingCheck": "本題數值皆視為精確值；除題幹明示外不需四捨五入。",
-    "ambiguityAudit": "題目明確要求「選擇正確特殊判定。」；四個選項互異，只有平行四邊形的對角線互相垂直，因此ABCD為菱形符合獨立重算。",
+    "ambiguityAudit": "題目明確要求「選擇正確特殊判定。」；四個選項互異，只有平行四邊形若對角線互相垂直，則ABCD為菱形符合獨立重算。",
     "boundaryAudit": "只使用國中會考平面幾何、一次方程、比例、周長與面積；不使用向量、座標距離或高中證明工具。",
     "difficultyReason": "需注意前提已是平行四邊形。",
     "literacyContextNecessity": "證明目標與已知垂直資料直接對應。；移除情境後將無法判斷實際所求量、有效尺寸或施工限制。",
@@ -1075,7 +1075,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "608a52a9660a967fb30a41f26f9814863c8c02c0b250c6bbab0dac228c9110c7"
+    "contentSha256": "fa0aa0aafcceab4f5478f25964d950a48887162b9253d144c10c2541697dc8ac"
   }
 ];
 
@@ -1164,7 +1164,7 @@ export const CONSTRUCTED_RESPONSES = [
     "standardSolution": [
       "AO=OC且BO=OD，所以兩對角線互相平分。",
       "因此ABCD為平行四邊形。",
-      "又AC⊥BD；平行四邊形的對角線互相垂直，故ABCD為菱形。"
+      "又AC⊥BD；平行四邊形若對角線互相垂直，則為菱形，故ABCD為菱形。"
     ],
     "alternativeMethods": [
       [
@@ -1174,7 +1174,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reasoningSteps": [
       "AO=OC且BO=OD，所以兩對角線互相平分。",
       "因此ABCD為平行四邊形。",
-      "又AC⊥BD；平行四邊形的對角線互相垂直，故ABCD為菱形。"
+      "又AC⊥BD；平行四邊形若對角線互相垂直，則為菱形，故ABCD為菱形。"
     ],
     "rubric": [
       {
@@ -1206,13 +1206,13 @@ export const CONSTRUCTED_RESPONSES = [
     "drawingSpecRef": "units/u17/s018/drawing-specs.jsonl#u17-s018-fig001",
     "independentReview": {
       "derivedResult": "ABCD為菱形",
-      "recalculation": "AO=OC且BO=OD，所以兩對角線互相平分。；因此ABCD為平行四邊形。；又AC⊥BD；平行四邊形的對角線互相垂直，故ABCD為菱形。",
+      "recalculation": "AO=OC且BO=OD，所以兩對角線互相平分。；因此ABCD為平行四邊形。；又AC⊥BD；平行四邊形若對角線互相垂直，則為菱形，故ABCD為菱形。",
       "ambiguity": "所求量與評分焦點「對角線資料的分階段證明」明確；替代方法不改變標準結果。",
       "decision": "pass"
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "2b55f3aefeadaae8dbf6fa45219ae3358b3c1690f4617939a70b0400e4eec48d"
+    "contentSha256": "3d1bbffcff072bce9df9318c6e6841169a8f79a0afacae9b6ea268a13b32e54f"
   }
 ];
 

@@ -1,0 +1,733 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u13",
+  "batch": "014-u13-complete",
+  "skills": ["s011", "s012", "s013", "s014", "s015"],
+  "mc": [
+    {
+      "questionId": "u13-s011-v001",
+      "expectedContentSha256": "f152a0e556981a496369d001b51d8229b0a9d03201af9ad6c69d23f17eed51c3",
+      "appendText": {
+        "explanation": "判別式為二十五，所以平方根是五；兩個分支分別是負三加五與負三減五，再整體除以二，得到一與負四，代回原式均為零。",
+        "misconceptionTarget": "容易只算負三加減五，卻忘記整個分子都要除以二。"
+      },
+      "appendArray": {"steps": ["分別計算兩個分支後代回 x²+3x-4，兩者均得零。"]}
+    },
+    {
+      "questionId": "u13-s011-v002",
+      "expectedContentSha256": "888439df96a458eee85c96b4357e7f58dee033eb897d65533fdc69efdca58772",
+      "appendText": {
+        "explanation": "因為 b=-4，公式中的 -b 是正四；判別式二十可寫成四乘五，故根號二十化為二根號五。整體除以二後得二加減根號五，不能把根號五寫成五。",
+        "misconceptionTarget": "負的一次項係數會造成雙重負號，根式化簡也不能丟掉根號。"
+      },
+      "appendArray": {"steps": ["將根式與分母同時化簡，再以兩根之和為四檢查符號。"]}
+    },
+    {
+      "questionId": "u13-s011-v003",
+      "expectedContentSha256": "c9544220c898e99614b5f4a8a8a5965ea7ae112213023a0609de43ba9fbbd1c5",
+      "appendText": {
+        "explanation": "判別式是負三的平方減四乘二乘負二，等於二十五。公式分母必須是四，兩分支三加五與三減五整體除四，正確得到二與負二分之一。",
+        "misconceptionTarget": "若把分母寫成二，就是漏了係數 a=2，會使兩個根同時錯誤。"
+      },
+      "appendArray": {"steps": ["把 x=2 與 x=-1/2 分別代回，二次式都化為零。"]}
+    },
+    {
+      "questionId": "u13-s011-v004",
+      "expectedContentSha256": "cd2ef8a0b017a02ae40dadb29d07017873c489c4547cf3586bab3ba9444b7cbd",
+      "appendText": {
+        "explanation": "判別式為一減四乘三乘負一，所以等於十三；分子是負一加減根號十三，分母是六。十三沒有大於一的平方因數，因此根式已經最簡。",
+        "misconceptionTarget": "會把判別式十三直接當成根號的值，或將二乘三的分母錯寫成三。"
+      },
+      "appendArray": {"steps": ["確認根號十三無法抽出平方因數，分子與六也不能約分。"]}
+    },
+    {
+      "questionId": "u13-s011-v005",
+      "expectedContentSha256": "14463fc4fb8f6e8ac7a3d1a6b9ec580002addec4f673ace686f662c8a3a32cb4",
+      "appendText": {
+        "explanation": "判別式三十二的平方根是四根號二，不是二根號二。將負二加減四根號二整體除以二，常數項與根式係數都要約分，才得負一加減二根號二。",
+        "misconceptionTarget": "根號三十二應先抽出十六，若只抽出四會少一個係數二。"
+      },
+      "appendArray": {"steps": ["將根號三十二改寫為四根號二，再使分子每一項同除以二。"]}
+    },
+    {
+      "questionId": "u13-s011-v006",
+      "expectedContentSha256": "27ad11b60fcf3fecd9d62321a254e18ea6c8c9dd42c40177734b17168760eb63",
+      "appendText": {
+        "explanation": "判別式六十四的平方根為八，分母是二乘四等於八。正分支得十二分之八即二分之三，負分支得負四分之八即負二分之一，必須分別約分。",
+        "misconceptionTarget": "不能只把根號項除以八，分數線上方的整個分子才是被除數。"
+      },
+      "appendArray": {"steps": ["以兩根之積負四分之三核對 c/a=-3/4，確認約分無誤。"]}
+    },
+    {
+      "questionId": "u13-s011-v007",
+      "expectedContentSha256": "b501fd95d50d0cdba7580af0fb5c2c4df71edd59f4bba08efef06a229d3e1b82",
+      "appendText": {
+        "explanation": "判別式是四加六十，根號為八；因此公式得負二加減八再除以十。兩個分支是六分之十與負十分之十，分別化簡為五分之三和負一。",
+        "misconceptionTarget": "把負二加減八寫成負二加減八分之十，會改變分數線的作用範圍。"
+      },
+      "appendArray": {"steps": ["將三分之五與負一代回原式，或核對兩根之積為負五分之三。"]}
+    },
+    {
+      "questionId": "u13-s011-v008",
+      "expectedContentSha256": "dcf2256820aeb0beb293fd04ce05b92376f99149d1336ae393c4e9eb08c4ed95",
+      "appendText": {
+        "explanation": "一次項係數為五，所以分子開頭必須是負五；判別式二十五減八等於十七，分母是四。十七不含可抽出的平方因數，因此負五加減根號十七再除四已是最簡。",
+        "misconceptionTarget": "容易遗漏根號，或把二乘 a 錯當成單純的二，都會使兩根不符原式。"
+      },
+      "appendArray": {"steps": ["檢查根式不可再化簡，並確認兩根之和為負二分之五。"]}
+    },
+    {
+      "questionId": "u13-s011-v009",
+      "expectedContentSha256": "cdbb94ad6287e11e472b6edd7d7458ad03fb73cb9b6ae0be2101f9e2322a543b",
+      "appendText": {
+        "explanation": "直接代入時分母為負四，分子是負七加減五，故兩分支為負二除以負四與負十二除以負四，得二分之一與三。若先全式乘負一，也必須同時改變三個係數。",
+        "misconceptionTarget": "首項係數為負時，常有人只改首項符號，導致新方程已不等價。"
+      },
+      "appendArray": {"steps": ["分別把三與二分之一代回負二倍平方加七倍再減三，均得零。"]}
+    },
+    {
+      "questionId": "u13-s011-v010",
+      "expectedContentSha256": "fd66558a9e135c9ac19c16bc9172a5af7c756b89271af40f82998ded13f21eb7",
+      "appendText": {
+        "explanation": "乘以負一後得 t²-6t-7=0，可分解為 (t-7)(t+1)=0。代數上負一也是根，但題目把 t 限定為非負時間，因此只有七秒能作為模型中的時間答案。",
+        "misconceptionTarget": "方程式的兩個代數根不一定都是情境答案，負時間必須排除。"
+      },
+      "appendArray": {"steps": ["以 t≥0 篩選根，並代回確認負 49 加 42 加 7 為零。"]}
+    },
+    {
+      "questionId": "u13-s011-v011",
+      "expectedContentSha256": "652db94ee3a4e72ebf2f6fb67820b533cdf4e3e3154166811dc8f1c2240111e2",
+      "appendText": {
+        "explanation": "判別式八十一的平方根是九，兩分支為二十除以四與二除以四，即五和二分之一。題目不只要 q 為正數，還要求整數，因此正的分數根仍然不合格。",
+        "misconceptionTarget": "只檢查根是否大於零並不足夠，批量 q 的整數性也是必須同時檢查的條件。"
+      },
+      "appendArray": {"steps": ["將五與二分之一逐一對照正整數限制，只保留 q=5。"]}
+    },
+    {
+      "questionId": "u13-s011-v012",
+      "expectedContentSha256": "bec13ae9ad1634def6f51427e5394ae3722553d22130aab38871ce0654260d8d",
+      "appendText": {
+        "explanation": "判別式為負二的平方減四乘三乘負八，等於一百，所以兩根是十二除六與負八除六，即二與負四分之三。距離 d 必須大於零，故負根不能採用。",
+        "misconceptionTarget": "不能把負四分之三的負號移除後當成另一個正距離解。"
+      },
+      "appendArray": {"steps": ["以 d>0 排除負四分之三，再代回 d=2 確認 12-4-8=0。"]}
+    },
+    {
+      "questionId": "u13-s012-v001",
+      "expectedContentSha256": "2963d8df00ffb86847ec96bb26922321f4359ba03502e704637f5f3c7c941b6a",
+      "appendText": {
+        "explanation": "由「正數 x 與 x+3 的乘積」直接列 x(x+3)=40，整理後兩個代數根是五與負八。五乘八正好是四十，而負八違反 x>0，所以只有五符合全部條件。",
+        "misconceptionTarget": "解出負八後必須回到「正數」條件，不能因它是方程式根就保留。"
+      },
+      "appendArray": {"steps": ["代回正根檢查 5(5+3)=40，並以 x>0 排除負八。"]}
+    },
+    {
+      "questionId": "u13-s012-v002",
+      "expectedContentSha256": "403229a1e1a9f232bd28d9731110fc02124c47e99ede6b10804e303a4027eb5c",
+      "appendText": {
+        "explanation": "「平方比五倍多二十四」表示 x²=5x+24，不是平方再乘二十四。移項後因式為 (x-8)(x+3)，候選根八與負三中，只有八是題目指定的正數。",
+        "misconceptionTarget": "「多二十四」是加法差額，不是倍數；翻譯錯誤會導致完全不同的方程式。"
+      },
+      "appendArray": {"steps": ["將 x=8 代回驗算：64 比 40 多 24，語句與數值一致。"]}
+    },
+    {
+      "questionId": "u13-s012-v003",
+      "expectedContentSha256": "3c72a49d29d021c6018585742f78413f220349e54f52e7766a033197d2aac877",
+      "appendText": {
+        "explanation": "設較小數為 x，「相差四」使較大數成為 x+4，所以乘積式是 x(x+4)=45。解得五與負九，負九不是正數；五與九的差為四、乘積為四十五，且題目問的正是較小數。",
+        "misconceptionTarget": "求出五後還要區分較小數與較大數，不能把 x+4=9 當成所求。"
+      },
+      "appendArray": {"steps": ["以數對 (5,9) 同時檢查正數、差為四與乘積四十五。"]}
+    },
+    {
+      "questionId": "u13-s012-v004",
+      "expectedContentSha256": "43bbbdbb5ec518f9e38446a92e0c91f7ea2b14c445420e87bd1ae018d9cb0777",
+      "appendText": {
+        "explanation": "題目問乙，因此設乙為 x 最直接，甲就是 x+3。年齡乘積七十給出 x(x+3)=70，根為七與負十。年齡必須是正整數，故乙七歲、甲十歲，兩者乘積七十。",
+        "misconceptionTarget": "人物定義若對調，十歲雖是同一組年齡，卻不是題目所問的乙。"
+      },
+      "appendArray": {"steps": ["將乙七歲與甲十歲代回，確認年齡差三歲且乘積為七十。"]}
+    },
+    {
+      "questionId": "u13-s012-v005",
+      "expectedContentSha256": "eb03151b579b793182fb6637148cdbd116eb3f7018ddca3d33f19f57eb1b9818",
+      "appendText": {
+        "explanation": "貼紙總數等於排數乘每排張數，因此應列 x(x+2)=48，而不是將四十八直接除以二。方程式根六與負八中，排數必須是正整數，所以取六；此時每排八張，總數正好四十八。",
+        "misconceptionTarget": "總數與「多兩張」不是平均分配關係，不能用四十八除以二代替列式。"
+      },
+      "appendArray": {"steps": ["以六排、每排八張回算 6×8=48，並確認八比六多二。"]}
+    },
+    {
+      "questionId": "u13-s012-v006",
+      "expectedContentSha256": "8b0955a16958d1f19a515d0b080a6fbcda50eb6d497a58b1ebc6dd91b99faaa1",
+      "appendText": {
+        "explanation": "文字關係是 x²+x=72，移項後因式為 (x+9)(x-8)，因此代數根是負九與八。題幹已說明 x 為正數，故只留八；回算八的平方六十四再加八，確實等於七十二。",
+        "misconceptionTarget": "「平方與 x 的和」是 x²+x，不能把七十二直接當成 x。"
+      },
+      "appendArray": {"steps": ["套用 x>0 排除負九，再以 8²+8=72 回到原語句驗算。"]}
+    },
+    {
+      "questionId": "u13-s012-v007",
+      "expectedContentSha256": "233c14c88132bbae5247f762b47037645d0af83c814548848eef1d25fd9b21a4",
+      "appendText": {
+        "explanation": "原時間是 120/x，加速後是 120/(x+10)，「少一小時」必須寫成原時間減新時間等於一。清分母後的正根三十使兩段時間分別為四小時與三小時，正好差一；負四十不是可能速度。",
+        "misconceptionTarget": "時間應是距離除以速度，而且差式順序必須是原時間減較短的新時間。"
+      },
+      "appendArray": {"steps": ["以原速三十回算 120/30-120/40=4-3=1 小時。"]}
+    },
+    {
+      "questionId": "u13-s012-v008",
+      "expectedContentSha256": "861cb279aef4e11f3ebf78f0cd21fe29d538dffff144bcd00e69b76d41ee2814",
+      "appendText": {
+        "explanation": "組數是 n，每組人數是 n-2，故總人數給出 n(n-2)=80。分解後得十與負八，但組數必須為整數且大於二，因此只有十；此時每組八人，乘積正好八十。",
+        "misconceptionTarget": "除了排除負組數，還要檢查 n-2 所代表的每組人數是否為正。"
+      },
+      "appendArray": {"steps": ["將 n=10 代回得十組、每組八人，同時符合整數與 n>2。"]}
+    },
+    {
+      "questionId": "u13-s012-v009",
+      "expectedContentSha256": "d73e465c470ddf1a800bcae144c590da1f1d5d62a1ddca7c3dee29276bedae54",
+      "appendText": {
+        "explanation": "排數 x 與每排 x+1 是兩個連續正整數，乘積一百三十二導出根十一與負十二。負根不能代表排數；取十一時每排十二張，乘積正是一百三十二。",
+        "misconceptionTarget": "十二是每排張數而非排數，角色對調雖不改變乘積，卻會答非所問。"
+      },
+      "appendArray": {"steps": ["根據 x 的定義取排數十一，再驗算 11×12=132。"]}
+    },
+    {
+      "questionId": "u13-s012-v010",
+      "expectedContentSha256": "55aff6a94848365f2259925090894dca2ba5858df87aa2e61398934359e9f05e",
+      "appendText": {
+        "explanation": "總收入是人數乘每人收費，所以列 n(300-5n)=4000，方程式的二十與四十都是代數根。但場地最多三十人，四十人的方案不可執行；二十人時單價二百元，收入正好四千元。",
+        "misconceptionTarget": "容量上限三十只是篩選條件，不是方程式的自動答案。"
+      },
+      "appendArray": {"steps": ["逐根比較 n≤30，再以 20×(300-5×20)=4000 驗算。"]}
+    },
+    {
+      "questionId": "u13-s012-v011",
+      "expectedContentSha256": "1f8c9102600045f106073464bb4e6ff248774d0cb185ee705c05b81e5bc9ea4e",
+      "appendText": {
+        "explanation": "總件數等於列數 q 乘每列 q-5 件，因此 q(q-5)=84。因式分解給出十二與負七，其中只有十二是大於五的整數；代回後是十二列、每列七件，總共八十四件。",
+        "misconceptionTarget": "「每列少五件」是 q-5，不能只用差五去猜列數。"
+      },
+      "appendArray": {"steps": ["將 q=12 代回 12(12-5)=84，並確認 q>5。"]}
+    },
+    {
+      "questionId": "u13-s012-v012",
+      "expectedContentSha256": "aa3a77ece37c8cacede852c56111841acd94ab5767e0dd1a6338bd9504201174",
+      "appendText": {
+        "explanation": "會員人數為 n，每人點數為 n+4，所以總點數關係是 n(n+4)=96。根八與負十二中，只有八是正整數人數；此時每人十二點，八人總計九十六點，同時驗證了兩個量的角色。",
+        "misconceptionTarget": "固定增加四點是加在每人點數，不是把總點數直接除以四。"
+      },
+      "appendArray": {"steps": ["以 n=8 回算每人十二點，且 8×12=96，再排除負人數。"]}
+    },
+    {
+      "questionId": "u13-s013-v001",
+      "expectedContentSha256": "8c9e36fffbdc701500a315f65d9a0cc65c4341ae557b971c49dfc7443e2097b3",
+      "appendText": {
+        "explanation": "圖中垂直邊是寬 x，水平邊是長 x+4，因此面積式為 x(x+4)=60。根六與負十中，只有六可作為邊長；此時長為十公分，六乘十正好是六十平方公分，且題目問的是寬。",
+        "misconceptionTarget": "圖上的 x+4 代表長而不是所求的寬，負根也不能當成線段長度。"
+      },
+      "appendArray": {"steps": ["回圖核對寬六、長十，再以 6×10=60 驗證面積。"]}
+    },
+    {
+      "questionId": "u13-s013-v002",
+      "expectedContentSha256": "9a58c05316c96eb64a16aac51bbc78ff9e6128d7641e1eff67d471a553f0f9ab",
+      "appendText": {
+        "explanation": "正方形面積是邊長的平方，所以 s²=121 的代數解為正負十一。幾何中的邊長不能為負，故只留十一公尺；十一乘十一等於一百二十一，也說明不能把面積數值直接當邊長。",
+        "misconceptionTarget": "開平方時會產生正負兩個代數值，但邊長情境必須明確排除負值。"
+      },
+      "appendArray": {"steps": ["將邊長十一公尺平方回算面積，並以長度非負性篩根。"]}
+    },
+    {
+      "questionId": "u13-s013-v003",
+      "expectedContentSha256": "e2dcc65d0696a4ab02a4796717e8945e1018b40508c9b89455dca4a289e670bf",
+      "appendText": {
+        "explanation": "設寬為 x，長比寬多三公尺，所以長是 x+3，面積關係為 x(x+3)=54。根六與負九中只有六是正邊長；寬六、長九的面積是五十四，而九公尺是長，不是題目所問的寬。",
+        "misconceptionTarget": "即使六與九屬於同一個長方形，仍要根據 x 的定義回答較短的寬。"
+      },
+      "appendArray": {"steps": ["以寬六、長九回算邊長差三且面積五十四。"]}
+    },
+    {
+      "questionId": "u13-s013-v004",
+      "expectedContentSha256": "1a931c68fb7fde0e81f8619a3d8d4212c5c31839ea873c5eeff3c2d40525204c",
+      "appendText": {
+        "explanation": "題目比較的是面積數值 x² 與周長數值 4x，「多四十五」表示 x²-4x=45。解得九與負五，邊長只能取九；回算面積八十一、周長三十六，兩個數值的差確實是四十五。",
+        "misconceptionTarget": "面積與周長的量綱不同，題幹特別比較數值；列式時仍不能混用兩個公式。"
+      },
+      "appendArray": {"steps": ["將 x=9 代回，檢查 9²-4×9=81-36=45。"]}
+    },
+    {
+      "questionId": "u13-s013-v005",
+      "expectedContentSha256": "313d6726ef461b93440e1db9edb557e4ae7b78b8d7de4db73111fb8a89064b72",
+      "appendText": {
+        "explanation": "兩邊相乘時必須完整展開 (x+4)(x+2)=x²+6x+8，再與四十八比較。方程式根四與負十中，負十會使兩條邊都為負，必須排除；取四時邊長八與六，面積正好四十八。",
+        "misconceptionTarget": "展開時若漏掉交叉項或常數八，得到的根就不會對應原長方形。"
+      },
+      "appendArray": {"steps": ["以 x=4 得兩邊八與六，回算正值與面積 8×6=48。"]}
+    },
+    {
+      "questionId": "u13-s013-v006",
+      "expectedContentSha256": "e86092bbcd82f2575fde1ef1fec68a7f59c80a8d13d07f0bc8e66c8cf62edc99",
+      "appendText": {
+        "explanation": "周長二十八表示長加寬為十四，所以當一邊是 x 時，另一邊是 14-x。面積方程式 x(14-x)=48 有六與八兩根，這兩個值正是同一個長方形的兩條邊；因為 x 可代表任一邊，兩者都要保留。",
+        "misconceptionTarget": "不能因為長方形只有一個就刪掉其中一根；兩根對應的是邊的角色交換。"
+      },
+      "appendArray": {"steps": ["檢查兩根都得到邊長六與八，其和十四、乘積四十八。"]}
+    },
+    {
+      "questionId": "u13-s013-v007",
+      "expectedContentSha256": "c9b0402cd38ef0560de9a2d32f671b3f1647b2d88be008846e289d5cadb2e334",
+      "appendText": {
+        "explanation": "四周向外各加 x，水平方向有左右兩側，所以外長是 10+2x；垂直方向同理為 6+2x。令外部大長方形總面積為一百九十二，解得三與負十一；只有三公尺是正的外擴寬度，此時外尺寸為十六乘十二。",
+        "misconceptionTarget": "每個方向都有兩側外擴，只加一個 x 會低估外框尺寸與四角面積。"
+      },
+      "appendArray": {"steps": ["以 x=3 回圖計算外長十六、外寬十二，驗算 16×12=192。"]}
+    },
+    {
+      "questionId": "u13-s013-v008",
+      "expectedContentSha256": "7854a0245eb273bf897143d646d0d7a4a2e5615fcc2f0c0880a457c405e92ac6",
+      "appendText": {
+        "explanation": "切除的小長方形面積是十二平方公分，因此原正方形總面積是八十四加十二等於九十六。邊長是根號九十六，抽出十六後為四根號六；邊長只取正值，且約九點七九公分足以容納三乘四的切除區。",
+        "misconceptionTarget": "八十四是切除後的剩餘面積，不是開平方時應直接使用的總面積。"
+      },
+      "appendArray": {"steps": ["將 4√6 平方得九十六，再減去十二驗算剩餘面積八十四。"]}
+    },
+    {
+      "questionId": "u13-s013-v009",
+      "expectedContentSha256": "ea5252ba238c51d745fefd35db5f21540bda4bbcbe6d10572e195ce6f1343884",
+      "appendText": {
+        "explanation": "面積關係先求出寬 x=7，另一條邊就是十二。但題目的目標是周長，不能停在 x 或邊長；應再算兩倍的長寬和，即 2(7+12)=38。十九只是半周長，八十四則是面積。",
+        "misconceptionTarget": "解出未知數七不等於完成作答，必須回看題目要求的是周長。"
+      },
+      "appendArray": {"steps": ["由邊長七與十二計算 2(7+12)=38，並核對面積 7×12=84。"]}
+    },
+    {
+      "questionId": "u13-s013-v010",
+      "expectedContentSha256": "4356e5206b9bf5aaac0b2caf36412d49efae47a1bf4439bc151af2b6c2f81d02",
+      "appendText": {
+        "explanation": "寬為 x，長為 x+6，所以面積一百六十導出 x(x+6)=160。因式分解後的十與負十六中，只有十能當寬；另一條邊是十六公尺，但題目問的是寬，因此不能回答十六。",
+        "misconceptionTarget": "十六雖是正確的教室長，但不是 x 所代表的寬，必須區分邊長角色。"
+      },
+      "appendArray": {"steps": ["以寬十、長十六回算 10×16=160，並確認長比寬多六。"]}
+    },
+    {
+      "questionId": "u13-s013-v011",
+      "expectedContentSha256": "a236c91621ba7ce2363efbc02156614cb8e9636a84285e7f05cffbd17c920787",
+      "appendText": {
+        "explanation": "展開 (x+4)(x+10) 得 x²+14x+40，與二百一十六比較後的根是八與負二十二。負二十二會使兩條邊同為負，所以排除；取 x=8 時寬十二、長十八，乘積正好二百一十六。",
+        "misconceptionTarget": "二項式相乘時常漏掉常數四十或中間係數十四，必須完整展開。"
+      },
+      "appendArray": {"steps": ["將 x=8 代回邊長 12 與 18，驗算 12×18=216。"]}
+    },
+    {
+      "questionId": "u13-s013-v012",
+      "expectedContentSha256": "f98d6e574d0db90ae076e18e1edeb6bd7574e5fe8b7f0b467ae22404d084ff7c",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "reviewSet": {
+        "difficultyReason": "需區分中央邊長與外正方形邊長，並排除負根。",
+        "literacyNecessityReview": "題幹文字已完整提供中央與外框邊長關係和外面積，無須依賴圖形或目測比例。"
+      },
+      "appendText": {
+        "explanation": "外正方形邊長是 x+2，由外面積一百可知 x+2 的正值為十。代數上也可得 x+2=-10，但這會使外邊長為負，必須排除；因此中央區邊長 x=8，不是外邊長十。",
+        "misconceptionTarget": "容易把開平方後的外邊長十公尺直接當成中央區邊長，忘記再減二。"
+      },
+      "appendArray": {"steps": ["將中央邊長八代回，外邊長為十且外面積 10²=100。"]}
+    },
+    {
+      "questionId": "u13-s014-v001",
+      "expectedContentSha256": "7ee9c40ef0ac61fd346b819a95e70d2d8a56c5c14649831d68b3cb38a4828340",
+      "appendText": {
+        "explanation": "設較小數為 x，連續整數的下一個是 x+1，故乘積關係為 x(x+1)=56。候選組為七、八與負八、負七，題幹指定兩數皆正，因此取七、八；這組不僅乘積五十六，也正好相差一。",
+        "misconceptionTarget": "四與十四雖然乘積也是五十六，但不是連續整數，不能只驗乘積。"
+      },
+      "appendArray": {"steps": ["以數對七、八回算差為一且 7×8=56，再確認皆為正整數。"]}
+    },
+    {
+      "questionId": "u13-s014-v002",
+      "expectedContentSha256": "b0b0a652a05455db7514144695d70414b3486845b7c57cf219d92e548d8f1639",
+      "appendText": {
+        "explanation": "將較小數設為 x 後，方程式 x(x+1)=90 得 x=9 或負十。負組不符合正整數，因此兩數為九與十；題目問較小數，應回答九而不是十。回算九乘十正好是九十。",
+        "misconceptionTarget": "求得數對後若沒有回看「較小數」，容易把較大的十當成答案。"
+      },
+      "appendArray": {"steps": ["從正整數組九、十中按 x 的定義取較小數九。"]}
+    },
+    {
+      "questionId": "u13-s014-v003",
+      "expectedContentSha256": "95cdb3ca29ce7ae7642f99a70838e32be272c4a4cb4b60cd705f1e3d8e20b482",
+      "appendText": {
+        "explanation": "先用 x(x+1)=72 找到連續正整數八與九，然後才處理題目所問的「和」。八加九等於十七；十八是把較大數九加了兩次，七十二則仍是乘積，都沒有回答目標量。",
+        "misconceptionTarget": "解出較小數八後仍需先寫出另一數九，再相加，不能停在方程式根。"
+      },
+      "appendArray": {"steps": ["將數對八、九的乘積與連續性驗證後，計算所求和 8+9=17。"]}
+    },
+    {
+      "questionId": "u13-s014-v004",
+      "expectedContentSha256": "6c5174d236ffdc40cad592f7a1af556243ad7f4bd1eb2ed782251ccd70aaaaa1",
+      "appendText": {
+        "explanation": "連續偶數在數線上相差二，因此設較小偶數 x，另一數是 x+2。解 x(x+2)=48 得六與負八，題幹要求正偶數，故取六、八；七、八雖相鄰，但不是兩個偶數。",
+        "misconceptionTarget": "「連續偶數」不是連續整數，必須同時檢查相差二與兩數的偶性。"
+      },
+      "appendArray": {"steps": ["以六、八檢查兩數均為正偶數、差為二且乘積四十八。"]}
+    },
+    {
+      "questionId": "u13-s014-v005",
+      "expectedContentSha256": "5d8941e345b745983741c6e06cab313a68a54b0cce64398758e71c07a2eb05b8",
+      "appendText": {
+        "explanation": "連續奇數也相差二，所以列 x(x+2)=63。方程式根七與負九對應正組七、九與負組負九、負七，題目指定正奇數，因此取七、九。兩數皆為奇數且 7×9=63。",
+        "misconceptionTarget": "只檢查相差二不足以說明是奇數組，仍要確認兩數的奇偶性與正值限制。"
+      },
+      "appendArray": {"steps": ["將七、九代回驗證奇性、相差二與乘積六十三。"]}
+    },
+    {
+      "questionId": "u13-s014-v006",
+      "expectedContentSha256": "eb8288ecd4361ab42b81b01fb781a34022af4da9336b115615e12c3adbd75c49",
+      "appendText": {
+        "explanation": "設較小數為 x，解 x(x+1)=156 得正組十二、十三。這一題不是問 x，而是問較大數，所以應將 x+1=13 作為答案。十二雖是正確的方程式根，卻只代表較小數。",
+        "misconceptionTarget": "未知數 x 的值不一定就是題目最終所求，要根據「較大數」再加一。"
+      },
+      "appendArray": {"steps": ["由 x=12 寫出完整數對十二、十三，驗算乘積一百五十六後取較大數。"]}
+    },
+    {
+      "questionId": "u13-s014-v007",
+      "expectedContentSha256": "794aca0183ba06fc1e89ad3258a971b503258d67625f11b563d2470433c7dc29",
+      "appendText": {
+        "explanation": "題幹沒有先限定正整數，所以 x(x+1)=30 的兩根五與負六都要轉成數對。正組五、六的和是十一，負組負六、負五的和是負十一；附加條件「和為正」恰好選出五、六。",
+        "misconceptionTarget": "乘積為正只能說明兩數同號，不能自動推斷兩數都是正。"
+      },
+      "appendArray": {"steps": ["分別計算兩個候選數對的和，以和為正排除負六、負五。"]}
+    },
+    {
+      "questionId": "u13-s014-v008",
+      "expectedContentSha256": "64576a57ea7c6e9d8c0e147ada5451c9c92162fff67fe74d77f9104f4fa626cd",
+      "appendText": {
+        "explanation": "將三個連續整數寫成 x、x+1、x+2，題意給的是首尾乘積，因此列 x(x+2)=80。根八與負十分別對應八、九、十與負十、負九、負八；題幹要求正整數，所以取前者。",
+        "misconceptionTarget": "方程式只使用第一與第三數，作答時仍必須把中間的 x+1 一併回報。"
+      },
+      "appendArray": {"steps": ["以八、九、十檢查三數連續且首尾乘積 8×10=80。"]}
+    },
+    {
+      "questionId": "u13-s014-v009",
+      "expectedContentSha256": "955b0197c236e954e93059bfbdb6b2ceaf8fc80ab1dba4d6aa5c95934d27aae2",
+      "appendText": {
+        "explanation": "較小正偶數為 x，另一數為 x+2，因此 x(x+2)=168。解得十二與負十四，取正根十二後，完整數對是十二、十四。題目問較小數，所以十四雖也在正確數對中，仍不是答案。",
+        "misconceptionTarget": "十四是較大偶數，不能因它出現在數對中就忽略題目問的較小數。"
+      },
+      "appendArray": {"steps": ["檢查 12×14=168 且兩數皆為正偶數，再取較小數十二。"]}
+    },
+    {
+      "questionId": "u13-s014-v010",
+      "expectedContentSha256": "ffe29264e8571862b32ab600d5b070723cc7e25f7d8337c86b5da4f45209c378",
+      "appendText": {
+        "explanation": "編號為連續正整數，設較小號為 x，便有 x(x+1)=552。根二十三與負二十四中取正根，得編號二十三、二十四；題目問較小編號，所以選二十三。23×24=552 也完整驗證乘積。",
+        "misconceptionTarget": "用乘積除以二猜平均值不會得到連續整數，必須依序列關係列式。"
+      },
+      "appendArray": {"steps": ["將二十三、二十四代回，檢查連續性、正整數與乘積五百五十二。"]}
+    },
+    {
+      "questionId": "u13-s014-v011",
+      "expectedContentSha256": "f6f8b49cfafd1114ef94eaf39c9f4f3dad05f6812dfbab970debc14173b54c88",
+      "appendText": {
+        "explanation": "設較少一層為 x 盆，另一層是 x+1 盆，x(x+1)=420 的正根是二十。因此兩層分別有二十與二十一盆；題目問「合計」，需再相加得四十一盆。二十或二十一都只是單層數量。",
+        "misconceptionTarget": "方程式根二十只代表較少的一層，不能在尚未計算合計前就停止。"
+      },
+      "appendArray": {"steps": ["從二十、二十一的乘積四百二十確認數對，再計算合計四十一。"]}
+    },
+    {
+      "questionId": "u13-s014-v012",
+      "expectedContentSha256": "ab413d42a0b85dfe13587654afc4591d8a7bafdd4538ddc256871a418818c73a",
+      "appendText": {
+        "explanation": "連續整數乘積二十有正組四、五與負組負五、負四，因為兩個負數的乘積也為正。題幹明說兩天最低溫均低於零度，所以只能選負五度與負四度；兩溫度相差一且乘積二十。",
+        "misconceptionTarget": "乘積為正不表示兩個因數一定都正，題目的低於零條件才是選擇負組的依據。"
+      },
+      "appendArray": {"steps": ["列出正負兩組後，以兩溫度均小於 0°C 保留負五、負四。"]}
+    },
+    {
+      "questionId": "u13-s015-v001",
+      "expectedContentSha256": "68ec1127d58260fb69cad3a6f00730b4a9252bc611fa4e2e660bc3cc3cf3b9f6",
+      "appendText": {
+        "explanation": "圖示的垂直方向是 n 排，水平方向是每排 n+2 人，所以總數關係為 n(n+2)=48。正整數根 n=6 只是排數，題目問的是每排人數，還要計算 n+2=8；六排每排八人正好共四十八人。",
+        "misconceptionTarget": "圖中的 n 是排數，不是每排人數；求得 n=6 後還要加二才回答。"
+      },
+      "appendArray": {"steps": ["回圖核對六排、每排八人，以 6×8=48 驗算總人數。"]}
+    },
+    {
+      "questionId": "u13-s015-v002",
+      "expectedContentSha256": "47da904cec04a18e110f46053898984649d49f581dd2d2e381e2b4c72b22ec3a",
+      "appendText": {
+        "explanation": "總收入為 n(50-n)=600，代數上的二十與三十都使收入為六百元。然而系統容量限制 n≤25，三十位使用者的方案不可接受；二十人時每人三十元，收入 20×30=600，完全符合。",
+        "misconceptionTarget": "二十五只是允許的最大容量，不是方程式的根；必須先求根再篩選。"
+      },
+      "appendArray": {"steps": ["逐根套用 n≤25，對保留的 n=20 回算每人費用與總收入。"]}
+    },
+    {
+      "questionId": "u13-s015-v003",
+      "expectedContentSha256": "22ef44e70caeb868da46c94d9dc05c20efabc8a6a3146ee68681ab8836e72c6d",
+      "appendText": {
+        "explanation": "令高度 h=0，將全式乘以負一後得 t²-8t-9=0=(t-9)(t+1)。代數根九與負一分別代表模型的兩個零點，但時間限制 t≥0，因此高度降為零的可接受時間只有九秒。",
+        "misconceptionTarget": "四秒是拋物線對稱軸的時間，不是高度等於零的時間；負一秒也不符定義域。"
+      },
+      "appendArray": {"steps": ["以 t≥0 排除負一，再代回 h(9)=-81+72+9=0。"]}
+    },
+    {
+      "questionId": "u13-s015-v004",
+      "expectedContentSha256": "43d1edf42f0b9c15572e6828ed4229ef2e1cdfa401dac386b49f12ce9c3d699a",
+      "appendText": {
+        "explanation": "圖中外框水平邊為 x+6、垂直邊為 x+2，虛線只是配置示意，不增加面積條件。由 (x+2)(x+6)=96 得 x=6 或負十四，正值限制使得 x=6；此時外框邊長八與十二，面積正好九十六。",
+        "misconceptionTarget": "不能把內部虛線當成第二個可計算區域，它沒有提供任何邊長或面積。"
+      },
+      "appendArray": {"steps": ["將 x=6 回圖得外框八公尺乘十二公尺，驗算總面積九十六。"]}
+    },
+    {
+      "questionId": "u13-s015-v005",
+      "expectedContentSha256": "c9af881b30f6a56a79bbbe338b417d478b78c0f2c46cde89c6c60727672e4553",
+      "appendText": {
+        "explanation": "開平方得 x-3=±2√5，所以方程式有兩個代數根。因為 2√5 大於四且小於五，較小根小於負一，較大根大於七，兩者都不在零到五的閉區間。因此可接受的解數量是零，不是代數根的個數二。",
+        "misconceptionTarget": "方程式有兩個實根不代表限制區間內也有兩個可接受解。"
+      },
+      "appendArray": {"steps": ["將兩根分別與下界零、上界五比較，確認沒有根位於閉區間。"]}
+    },
+    {
+      "questionId": "u13-s015-v006",
+      "expectedContentSha256": "10dbed50212cbcb2bb03901c66b9533f9f478564a792bfefbbd8e3ffb1b3d02c",
+      "appendText": {
+        "explanation": "固定距離一百八十公里下，原時間與新時間的差為 180/v-180/(v+15)=1。清分母後的根四十五與負六十中，速度只取正根；原速四十五時需四小時，加速至六十時需三小時，差正好一。",
+        "misconceptionTarget": "時間差必須用距離除以速度建立，負六十雖是根也不是合理的原速。"
+      },
+      "appendArray": {"steps": ["以 v=45 回算 180/45-180/60=4-3=1 小時。"]}
+    },
+    {
+      "questionId": "u13-s015-v007",
+      "expectedContentSha256": "c69c1eae4e9f1be3c1d20291042bb4d80f09d2e3a1218da8dc0be99815715daa",
+      "appendText": {
+        "explanation": "將模型分解得候選批量五與十三，兩者都是整數，但政策還要求 n≥10。五低於下限而被排除，十三同時是方程式根且符合範圍；十只是政策的最小允許值，代回原式並不等於零。",
+        "misconceptionTarget": "範圍下限是篩選根的標準，不是讀到 n≥10 就直接回答十。"
+      },
+      "appendArray": {"steps": ["把根五與十三逐一對照整數和 n≥10 兩項政策條件。"]}
+    },
+    {
+      "questionId": "u13-s015-v008",
+      "expectedContentSha256": "740fbe0cfce71e74f1a614b470e25a309c30c54df4abf48c66103f3a29e6e3a8",
+      "appendText": {
+        "explanation": "剩餘面積四十八加上切去的十二，才是原長方形面積六十，因此 x(x+4)=60。根六與負十中只有六是正邊長；取六時原面積六十，減去十二後正好剩四十八，所有量相符。",
+        "misconceptionTarget": "四十八是切除後的剩餘面積，列式時不能忘記將十二的切除區加回。"
+      },
+      "appendArray": {"steps": ["以 x=6 回算 6(6+4)-12=60-12=48，並排除負邊長。"]}
+    },
+    {
+      "questionId": "u13-s015-v009",
+      "expectedContentSha256": "a2c189e0d84855dce180ff6259f3bbaaa3142d68a2f30c55a31984456089bf67",
+      "appendText": {
+        "explanation": "排數為 x、每排為 x+5，故總攤位數給出 x(x+5)=104。方程式根八與負十三中，排數必須是正整數，所以取八；此時每排十三個，八乘十三正好是一百零四，也驗證了每排比排數多五。",
+        "misconceptionTarget": "把總數除以二無法保留「每排多五」的關係，必須以乘積建模。"
+      },
+      "appendArray": {"steps": ["將 x=8 代回得每排十三個，驗算 8×13=104。"]}
+    },
+    {
+      "questionId": "u13-s015-v010",
+      "expectedContentSha256": "f58b2992103b83eaf0a09dc5abf9575aadd6b66af39d5cde4e7d53f817a2b270",
+      "appendText": {
+        "explanation": "方程式分解得 t=4 與 t=10，兩者都是非負時間，也都使警示模型等於零。但題目問「第一次」警示，必須在合格根中比較先後，較小的四才是答案；十是第二次零點。",
+        "misconceptionTarget": "得到兩個時間根後還要根據「較早」比較大小，不能任意取一根。"
+      },
+      "appendArray": {"steps": ["確認四與十皆大於等於零後，以 4<10 選出第一次警示。"]}
+    },
+    {
+      "questionId": "u13-s015-v011",
+      "expectedContentSha256": "9e9265a956523c48ee90e4b6b7b1765f921d19322bfee1d66a4fb3d68a8cf9f8",
+      "appendText": {
+        "explanation": "由 x²=6x 移項可寫成 x(x-6)=0，零乘積性質給出 x=0 或 x=6。原報告直接除以 x，等於先假設 x≠0，因而把原本合法的零根刪掉。代回可見零與六都使左右兩邊相等。",
+        "misconceptionTarget": "含未知數的因式可能為零，未先分情況就直接約去會造成漏根。"
+      },
+      "appendArray": {"steps": ["將 x=0 與 x=6 分別代回 x²=6x，確認兩個都是原方程式根。"]}
+    },
+    {
+      "questionId": "u13-s015-v012",
+      "expectedContentSha256": "9cd85c68640eda684d59da3fb4b2106f467bafa432e63fd15bdc4933ad2c0bf0",
+      "appendText": {
+        "explanation": "將 n(n-3)=40 整理並分解得 n=8 或負五。正整數條件先排除負五，但還不能停止；每組人數是 n-3，對 n=8 而言恰為五，符合至少五人。八乘五也正好回到總關係四十。",
+        "misconceptionTarget": "取正根後仍要對每組人數 n-3 檢查下限，不能只確認 n 本身為正。"
+      },
+      "appendArray": {"steps": ["對 n=8 計算 n-3=5，同時驗證至少五人與 8×5=40。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u13-s011-cr001",
+      "expectedContentSha256": "d60ae8fc3989142e8bed39b3841cc7b9f1bec9871dbd4d05d59173446c68cef2",
+      "appendArray": {
+        "fullCreditSolution": ["完整代入為 x=(-1±√[1²-4·3·(-2)])/(2·3)=(-1±5)/6。正分支得 4/6=2/3，負分支得 -6/6=-1；將兩根分別代回 3x²+x-2，均得零，因此化簡與符號無誤。", "驗根時需分別處理分數根與負數根；兩者都使左邊回到零，所以不能任意捨去其中一根。"],
+        "reasoningSteps": ["把兩個分支化簡後分別代回原式驗根。"],
+        "commonErrors": ["把 c=-2 誤讀成正二，會使判別式與兩個根全部改變。"]
+      }
+    },
+    {
+      "questionId": "u13-s011-cr002",
+      "expectedContentSha256": "7f1255c3315d51e2aa7d7725ce8ce980ad63ca51a787b641688c296c6c9d3620",
+      "appendArray": {
+        "fullCreditSolution": ["判別式二十四可寫成四乘六，故根號二十四等於二根號六。分子與分母同除以二後得 x=(1±√6)/5；因為根號六不為零，正負兩分支不同，故是兩個相異實根。"]
+      }
+    },
+    {
+      "questionId": "u13-s012-cr001",
+      "expectedContentSha256": "ca69ffc0d15c815321bf93942daaab43e4d3ad950357376cc0bc9665e210794d",
+      "appendArray": {
+        "fullCreditSolution": ["「x 比 x² 少七十二」的等量關係是 x=x²-72，移項後才是 x²-x-72=0。因式分解得九與負八；代回可見 9²-9=72，而題目限定正整數，所以唯一答案為九。"],
+        "commonErrors": ["把「比平方少七十二」列成 x-x²=72，會將大小關係完全颠倒。"]
+      }
+    },
+    {
+      "questionId": "u13-s012-cr002",
+      "expectedContentSha256": "0fd79f304082ae96280382ba859d62fbe81abdb3b0059a923e853e55180b3fbe",
+      "appendArray": {
+        "fullCreditSolution": ["固定距離一百二十公里下，原時間減加速後時間為 120/v-120/(v+20)=1。在 v≠0、v≠-20 下清分母，得根四十與負六十；速度取正，且 120/40-120/60=3-2=1，故原速為每小時四十公里。"],
+        "commonErrors": ["把新時間減原時間列為正一，會與「加速後少一小時」的先後關係相反。"]
+      }
+    },
+    {
+      "questionId": "u13-s013-cr001",
+      "expectedContentSha256": "882ff09e37521dfd1c4d38e520c2b04fe9c6fa4109deffe993dd35f6e6a4adf1",
+      "appendArray": {
+        "fullCreditSolution": ["長方形寬為 x、長為 x+4，面積關係導出 x(x+4)=60。方程式的六與負十都是代數根，但負十不能當線段長；取 x=6 時寬六公尺、長十公尺，乘積六十，完整回答兩條邊。"],
+        "commonErrors": ["只寫 x=6 卻沒有再計算 x+4=10，會漏掉題目要求的長邊。"]
+      }
+    },
+    {
+      "questionId": "u13-s013-cr002",
+      "expectedContentSha256": "46579ec4fe0c82afbba5e714b26f8f2a4e5688e012183fb5c2f5ce47e446ea79",
+      "appendArray": {
+        "fullCreditSolution": ["因左右與上下各有兩側寬度 x，外框尺寸必須是 10+2x 與 6+2x。將外部大長方形總面積設為一百九十二後，得 x=3 或負十一；外擴寬度取三公尺，外尺寸十六乘十二的面積正好驗算結果。"]
+      }
+    },
+    {
+      "questionId": "u13-s014-cr001",
+      "expectedContentSha256": "6d4891795753a40e515f38d1d8d4dfdb33f96ceab521236b257d4f5001a24b00",
+      "appendArray": {
+        "fullCreditSolution": ["連續整數相差一，因此設較小正整數 n，較大數必為 n+1。解 n(n+1)=210 得 n=14 或負十五，正整數限制排除後者；完整數對為十四、十五，兩數相差一且乘積二百一十。"],
+        "commonErrors": ["只回答較小數十四，沒有寫出下一個連續整數十五，屬於作答不完整。"]
+      }
+    },
+    {
+      "questionId": "u13-s014-cr002",
+      "expectedContentSha256": "4314321aea0a942483a11ccf3add1c5e9fa9c771ca702e230e27416f06b26765",
+      "appendArray": {
+        "fullCreditSolution": ["乘積四十二為正不代表兩數必為正；方程式 n(n+1)=42 的兩根分別產生六、七與負七、負六兩組。前組的和為十三，後組的和為負十三；題目以和為負選出負七、負六，且順序仍由小到大。"]
+      }
+    },
+    {
+      "questionId": "u13-s015-cr001",
+      "expectedContentSha256": "18ef352ae64b09f6af1afe0a4f068ff0cc990530ae64b7f03ab142342ed656a4",
+      "appendArray": {
+        "fullCreditSolution": ["圖文中的 n 代表排數，n+2 代表每排座位數，所以不能對調兩者的作答角色。由 n(n+2)=48 得 n=6 或負八，排數取正整數六，再算每排八個；六排乘每排八個正好是四十八個座位。"]
+      }
+    },
+    {
+      "questionId": "u13-s015-cr002",
+      "expectedContentSha256": "19fd44bc7114d2c3d17b5f6f8c4df668c0d48915b6649e37a26cca4eb780b7dd",
+      "appendArray": {
+        "fullCreditSolution": ["同一個 n 同時影響參加人數與每人票價，因此收入模型必須是 n(80-n)=1200。兩個代數根二十與六十都可使收入成立，但場地只容納三十人，故只留二十；此時票價六十元，二十乘六十正好一千二百元。"],
+        "commonErrors": ["把場地上限三十人當成方程式的根，而沒有先求出二十與六十兩個候選。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u13-s011-lecture-r1",
+      "expectedContentSha256": "1b9760017ab6fd371efade24f68980253ed60c831488fb10f10fcaabd44d6c8d",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "解 x²+3x-4=0。",
+            "solutionSteps": ["a=1，b=3，c=-4，Δ=3²-4·1·(-4)=25。", "代入公式得 x=(-3±5)/2。", "分別化簡兩個分支，得 x=1 或 x=-4，代回均成立。"],
+            "answer": "x=1 或 x=-4。",
+            "why": "係數必須連同符號記錄，c 是負四，因此判別式中的負四倍 ac 會增加十六。兩個正負分支都要整體除以二，再代回原式才能確認沒有符號或分母錯誤。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "解 x²-4x-1=0。",
+            "solutionSteps": ["a=1，b=-4，c=-1，Δ=(-4)²-4·1·(-1)=20。", "x=(4±√20)/2=(4±2√5)/2。", "分子每項同除以二，得 x=2±√5。"],
+            "answer": "x=2±√5。",
+            "why": "b 為負數時，公式的 -b 會成為正四，這與 b² 的平方運算是兩個不同步驟。根號二十先抽出四得二根號五，再讓整個分子除以二，才會得到最簡根式。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "解 2x²-3x-2=0。",
+            "solutionSteps": ["a=2，b=-3，c=-2，Δ=(-3)²-4·2·(-2)=25。", "x=(3±5)/4。", "正分支得二，負分支得負二分之一，兩者代回皆成立。"],
+            "answer": "x=2 或 x=-1/2。",
+            "why": "首項係數為二，所以公式分母必須是二 a 等於四，不能只寫二。正負分支要分別化簡，三減五得負二，除以四後是負二分之一，這個分數根不可遗漏。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "解 3x²+x-1=0。",
+            "solutionSteps": ["a=3，b=1，c=-1，Δ=1²-4·3·(-1)=13。", "代入公式得 x=(-1±√13)/6。", "十三沒有可抽出的平方因數，分子與六也不能整體約分。"],
+            "answer": "x=(-1±√13)/6。",
+            "why": "判別式十三大於零，所以正負分支給出兩個相異實根。由於十三不含四、九等平方因數，根號十三已是最簡；分子的負一與根式也不能各自任意除以分母。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "解 -2x²+7x-3=0。",
+            "solutionSteps": ["a=-2，b=7，c=-3，Δ=7²-4·(-2)·(-3)=25。", "x=(-7±5)/(-4)。", "兩分支分別得二分之一與三，代回負首項原式驗根。"],
+            "answer": "x=3 或 x=1/2。",
+            "why": "直接使用 a=-2 時，分母為負四，負的分子再除以負分母會得正根。也可先將全式乘以負一，但必須同時改變三個係數；兩種做法都應得到三與二分之一。"
+          }
+        ]
+      },
+      "appendArray": {
+        "conceptNarrative": ["求根公式的穩定用法是把係數辯識、判別式、正負兩分支與最後化簡分開處理。一次項或常數項為負時，a、b、c 都要連同符號代入；根式先抽出完全平方因數，分數線則覆蓋整個分子。答案化簡後再代回原方程式，可同時發現負號、分母與根式係數的錯誤。"]
+      }
+    },
+    {
+      "lectureId": "u13-s012-lecture-r1",
+      "expectedContentSha256": "f0e1ee8941fbf82708f84350a76aea258869c1ab6131a33f98021295236d882e",
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"正數 x 與 x+3 的乘積為 40，求 x。","solutionSteps":["由乘積列 x(x+3)=40。","整理為 (x+8)(x-5)=0，得 x=-8 或 5。","以 x>0 排除負八，再驗算 5×8=40。"],"answer":"x=5。","why":"「x+3」是比 x 多三的另一個量，因此兩者相乘而不是相加。方程式的負八雖是代數根，卻違反正數條件；五與八的乘積回到四十，才能確認五是情境中的唯一答案。"},
+          {"exampleId":"L2","prompt":"兩個相差 4 的正數乘積為 45，求較小數。","solutionSteps":["設較小數 x，較大數為 x+4。","x(x+4)=45，整理為 (x+9)(x-5)=0。","取正根 x=5，數對為五與九，差四、乘積四十五。"],"answer":"較小數為 5。","why":"「相差四」是加法關係，較大數應寫成 x+4，不是四倍 x。解出五後還要回到 x 所代表的較小數，九雖是同一組中的正確較大數，卻不是題目所問的量。"},
+          {"exampleId":"L3","prompt":"速度增加 10 km/h 後，120 km 行程少 1 小時，求原速。","solutionSteps":["設原速 x>0，原時間與新時間為 120/x、120/(x+10)。","列 120/x-120/(x+10)=1，清分母得 x²+10x-1200=0。","根為三十與負四十，速度取正，且四小時減三小時等於一。"],"answer":"原速 30 km/h。","why":"距離固定時，時間是距離除以速度，而「加速後少一小時」表示原時間減新時間等於一。清分母得到的負四十不能代表速度；三十與四十公里每小時對應的時間差恰為一小時。"},
+          {"exampleId":"L4","prompt":"每人收費 300-5n 元，共 n 人，收入 4000 元，且 n≤30，求 n。","solutionSteps":["以人數乘每人收費，列 n(300-5n)=4000。","整理得 n²-60n+800=0，根為二十與四十。","以場地容量 n≤30 排除四十，二十人時收費二百元，收入四千元。"],"answer":"n=20。","why":"人數與單價都含同一個 n，因此總收入是二次模型。二十與四十雖然都使代數收入成立，但容量上限是額外情境條件，必須在求出所有根後再篩選，不能直接把三十當成答案。"}
+        ]
+      },
+      "appendArray": {"conceptNarrative": ["文字應用題的關鍵是把同一情境中各個量的角色、單位與限制分開。先說明未知數代表什麼，再用加法表示差額、用乘法表示總量，或用距離除以速度表示時間。方程式的所有根都要先求出，然後逐一檢查正值、整數、容量與分母不為零等條件，最後才用原問法與適當單位作答。"]}
+    },
+    {
+      "lectureId": "u13-s013-lecture-r1",
+      "expectedContentSha256": "ebd99cf90c607c46aea17e78bd0b0e846106816db003109cbd3eb2de4fce2975",
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"長方形寬 x、長 x+4，面積 60，求邊長。","solutionSteps":["由長乘寬列 x(x+4)=60。","整理為 (x+10)(x-6)=0，得 x=-10 或 6。","邊長取正，寬六、長十，驗算面積六十。"],"answer":"寬 6、長 10。","why":"長比寬多四，因此以 x 代表寬時，長必須寫成 x+4。負十雖是代數根，卻不能當作線段長；取六後還要回答長與寬兩個目標量，並以六乘十驗證面積條件。"},
+          {"exampleId":"L2","prompt":"長方形周長固定為 28，面積 48，求可能的寬 x。","solutionSteps":["由周長得長加寬為十四，另一邊為 14-x。","列 x(14-x)=48，整理得 x²-14x+48=0。","因式分解得 x=6 或 8，兩值都對應同一長方形的邊角色交換。"],"answer":"邊長為 6 與 8。","why":"周長二十八代表兩倍長寬和，所以半周長才是十四。方程式的六與八不是兩個不同長方形，而是 x 可代表任一邊時的兩種角色；兩者的和十四、乘積四十八，因此都應保留。"},
+          {"exampleId":"L3","prompt":"10 m×6 m 長方形四周外擴 x m，外部大長方形總面積 192 m²。","solutionSteps":["外長與外寬各增加兩側，列 (10+2x)(6+2x)=192。","展開並除以四，得 x²+8x-33=0=(x-3)(x+11)。","外擴寬度取 x=3 m，外尺寸十六乘十二，面積一百九十二。"],"answer":"x=3 m。","why":"每個方向都有兩側外擴，所以外長與外寬各增加二 x，只加一 x 會漏算另一側。題目給的是外部大長方形總面積，應直接用外尺寸相乘；負十一不可當寬度，三公尺可用十六乘十二驗算。"},
+          {"exampleId":"L4","prompt":"正方形切去 3 cm×4 cm 小長方形後剩 84 cm²，求正方形邊長。","solutionSteps":["設邊長 x，切去面積十二，列 x²-12=84。","得 x²=96，x=±√96=±4√6。","線段長度取正，所以 x=4√6 cm，平方後減十二為八十四。"],"answer":"x=4√6 cm。","why":"八十四是切除後的剩餘面積，必須先加回三乘四的十二平方公分，才得到原正方形面積九十六。開平方後代數上有正負兩值，但幾何邊長只取正值，根號九十六再化簡為四根號六。","capabilityConnection":"需排除負平方根並保留精確根式。"}
+        ]
+      },
+      "appendArray": {"conceptNarrative": ["面積題先把圖上每條邊用同一未知數表示，再依區域關係決定是長乘寬、總面積減切除面積，或外框面積。「長比寬多」是單邊加法，「四周外擴」則使水平與垂直尺寸各增加兩側。解得根後需回圖檢查所有線段為正、單位與所求量一致，並以實際邊長重算面積，不得依示意圖比例猜測。"]}
+    },
+    {
+      "lectureId": "u13-s014-lecture-r1",
+      "expectedContentSha256": "b18db10d570878b902ea6f9a7c7382a8bbe8ae742bf1f4dd72e42a3dda4f5c3b",
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"兩個連續正整數乘積為 56。","solutionSteps":["設較小數 x，另一數為 x+1，列 x(x+1)=56。","整理為 (x+8)(x-7)=0，得 x=-8 或 7。","以正整數條件取 x=7，完整數對為七、八。"],"answer":"7、8。","why":"連續整數的關係是相差一，因此另一數寫成 x+1，不是二 x。方程式也會給出負八、負七這組連續負整數，但題幹要求正整數，故取七、八；作答時需寫出兩個數而非只寫 x。"},
+          {"exampleId":"L2","prompt":"兩個連續整數乘積為 20，且兩數皆負。","solutionSteps":["設較小數 x，列 x(x+1)=20。","解得 x=4 或 -5，候選數對為四、五與負五、負四。","以兩數皆負的條件選出負五、負四。"],"answer":"-5、-4。","why":"乘積為正時，兩個因數可以同為正或同為負，因此未有正整數限制時不能擅自刪掉負組。方程式的兩根分別是兩組的較小數，再用「兩數皆負」選出負五、負四，且其順序仍是由小到大。"},
+          {"exampleId":"L3","prompt":"兩個連續偶數乘積為 48。","solutionSteps":["設較小正偶數 x，另一數為 x+2，列 x(x+2)=48。","整理為 (x+8)(x-6)=0，得 x=-8 或 6。","取正偶數 x=6，完整數對為六、八。"],"answer":"6、8。","why":"連續偶數與連續奇數都相差二，不是相差一。設 x 為較小偶數後，x+2 自然保持偶性；解出六後還要寫出八並檢查兩數均為正偶數。負八會對應負八、負六，不符題幹中的正值設定。"},
+          {"exampleId":"L4","prompt":"三個連續正整數中，第一個與第三個乘積為 80。","solutionSteps":["設三數為 x、x+1、x+2，列首尾乘積 x(x+2)=80。","整理得 (x-8)(x+10)=0，x=8 或 -10。","以正整數條件取 x=8，三數為八、九、十。"],"answer":"8、9、10。","why":"題目雖只用第一與第三個數建立乘積，作答仍必須回報完整的三個連續整數。根八對應八、九、十，根負十對應負十、負九、負八；正整數條件選出前者，且首尾八乘十正好為八十。"}
+        ]
+      },
+      "appendArray": {"conceptNarrative": ["連續整數問題要先固定順序與步長：連續整數寫成 x、x+1，連續偶數或奇數則寫成 x、x+2，三個連續整數為 x、x+1、x+2。當乘積為正而題幹沒有限制正整數時，正組與負組都可能成立，需由和、溫度或其他附加條件篩選。解出 x 後還要恢復完整數對或數列，再同時檢查整數性、奇偶性、順序與乘積。"]}
+    },
+    {
+      "lectureId": "u13-s015-lecture-r1",
+      "expectedContentSha256": "8aa02bc716ebdee5b55bdb4183e6f0cab92b5f30d03e6e799bd924b81fef8b46",
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"座位共有 n 排、每排 n+2 人，總人數 48，求排數與每排人數。","solutionSteps":["由排數乘每排人數列 n(n+2)=48。","分解得 n=6 或 -8，排數取正整數六。","再算 n+2=8，驗算六排乘每排八人等於四十八人。"],"answer":"6 排，每排 8 人。","why":"圖文中 n 與 n+2 分別代表排數與每排人數，兩個角色不能對調。求得 n=6 只完成第一個目標，題目還要求每排人數，因此必須再加二得八。圖使用省略號而不畫出完整六乘八陣列，計算只能依標示。"},
+          {"exampleId":"L2","prompt":"商品有 n 位購買者，每人價格 50-n 元，收入 600 元且 n≤25。","solutionSteps":["收入是人數乘單價，列 n(50-n)=600。","整理後根為二十與三十。","容量 n≤25 保留二十；此時單價三十元，收入六百元。"],"answer":"n=20。","why":"購買者越多時單價同時降低，因此總收入必須用 n 乘以 50-n，不能把六百元直接除以五十。二十與三十都使代數收入成立，但容量上限排除三十；二十人的單價與收入回算也完全相符。"},
+          {"exampleId":"L3","prompt":"高度模型 h=-t²+8t+9，求高度降為零的正時間。","solutionSteps":["令 h=0，得 -t²+8t+9=0。","乘以負一後分解為 (t-9)(t+1)=0，根為九與負一。","時間取正，得 t=9 秒，代回後高度為零。"],"answer":"9 秒。","why":"要找高度降為零的時間，必須令模型的 h 等於零，不是直接使用一次項係數八或對稱軸時間四。負一秒是方程式的代數根，但不在題目要求的正時間範圍；九秒代回後確實使高度為零。"},
+          {"exampleId":"L4","prompt":"評分模型 (x-3)²=20，規定 0≤x≤5。","solutionSteps":["開平方得 x-3=±2√5，因此 x=3±2√5。","由 4<2√5<5，可知兩根分別小於負一與大於七。","兩根都不在閉區間 [0,5]，因此沒有符合規定的 x。"],"answer":"沒有符合規定的 x。","why":"方程式有兩個相異實根，但模型還要求 x 位於零到五的閉區間。比較根與邊界後，一個根低於零，另一個高於五，因此正確結論是「無符合方案」，不能為了得到答案而任意選較接近區間的根。"},
+          {"exampleId":"L5","prompt":"180 km 行程提速 15 km/h 後少 1 小時，求原速。","solutionSteps":["設原速 v>0，列 180/v-180/(v+15)=1。","清分母得 v²+15v-2700=0=(v-45)(v+60)。","速度取正根四十五；原時間四小時、新時間三小時。"],"answer":"45 km/h。","why":"原速與新速共用同一段一百八十公里距離，所以時間要分別以距離除以 v 與 v+15計算。方程式的負六十根不能代表速度；取四十五後，加速至六十公里每小時，兩段所需時間恰差一小時。"}
+        ]
+      },
+      "appendArray": {"conceptNarrative": ["素養整合題的數學核心仍是一元二次方程式，但必須先從圖、表或文字中分出已知量、未知量、等量關係與限制。建模時只使用會改變方程式的必要資料，同時維持單位與角色一致。求出所有代數根後，需逐條套用時間、容量、整數、區間與先後等限制；兩根都不合時應明確結論無可行方案，不得用圖形比例或近似值強行選根。"]}
+    }
+  ]
+}

@@ -50,7 +50,8 @@ export const LECTURE = {
     "「移項變號」不是魔法規則；它是左右兩邊同時加上相反項後，省略中間步驟。",
     "兩邊都有 x 時，通常先把 x 項集中一邊、常數集中另一邊。",
     "括號存在時先正確展開，再合併同類項。",
-    "哪一邊放 x 都可以，但選擇能使係數為正，通常較不易在最後遇到負數除法。"
+    "哪一邊放 x 都可以，但選擇能使係數為正，通常較不易在最後遇到負數除法。",
+    "移項後應能逐項還原成左右同加或同減相同式子；完成括號與同類項整理後，再以原式的邊界、內部值及外部值驗證，才能發現漏乘或符號錯誤。"
   ],
   "formalDefinitions": [
     {
@@ -87,66 +88,74 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先去括號並合併各邊同類項。",
-      "check": "分配律是否乘到每一項？"
+      "instruction": "有括號時先完整分配並合併同類項。",
+      "check": "括號內每一項都被乘到。"
     },
     {
       "step": 2,
-      "instruction": "選擇把 x 項集中到一側。",
-      "check": "是否能讓最後係數為正？"
+      "instruction": "把未知數項集中到能得到正係數的一側。",
+      "check": "跨邊加減可還原成等價運算。"
     },
     {
       "step": 3,
       "instruction": "把常數集中到另一側。",
-      "check": "每個跨越的不完整項是否正確改符號？"
+      "check": "移項只改該項加減號，不改不等號。"
     },
     {
       "step": 4,
-      "instruction": "除以係數並寫解集。",
-      "check": "若係數為負，是否記得變號？"
+      "instruction": "除以正係數並把結果寫成x的標準範圍。",
+      "check": "交換左右書寫時維持大小語意。"
     },
     {
       "step": 5,
-      "instruction": "代回原式檢查。",
-      "check": "是否代入尚未整理的原式？"
+      "instruction": "代入邊界、內外各一值回原式驗算。",
+      "check": "端點及射線方向都一致。"
     }
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "解 3x−5>x+7。",
+      "prompt": "解3x-5>x+7。",
       "solutionSteps": [
-        "兩邊同減 x：2x−5>7。",
-        "兩邊同加 5：2x>12，再除以 2。"
+        "兩邊同減x得2x-5>7。",
+        "兩邊同加5得2x>12。",
+        "除正二得x>6並驗算。"
       ],
-      "answer": "x>6。"
+      "answer": "x>6。",
+      "why": "先集中未知數再集中常數，每次移項都能還原成兩邊同做相同加減。除數二為正，方向保持；七代入成立而六為端點不成立，確認嚴格大於。"
     },
     {
       "exampleId": "L2",
-      "prompt": "解 5x+4≤2x+19。",
+      "prompt": "解5x+4≤2x+19。",
       "solutionSteps": [
-        "兩邊同減 2x，得 3x+4≤19。",
-        "兩邊同減 4，再除以 3。"
+        "兩邊同減2x得3x+4≤19。",
+        "兩邊同減4得3x≤15。",
+        "除正三得x≤5並驗算端點。"
       ],
-      "answer": "x≤5。"
+      "answer": "x≤5。",
+      "why": "將較小的未知數項移到左側可保留正係數，避免尚未學到的負數除法。端點五使原式左右都為二十九，因≤含等號而應納入。"
     },
     {
       "exampleId": "L3",
-      "prompt": "解 2(x+3)<x+10。",
+      "prompt": "解2(x+3)<x+10。",
       "solutionSteps": [
-        "展開為 2x+6<x+10。",
-        "移項得 x<4。"
+        "展開為2x+6<x+10。",
+        "同減x與6得x<4。",
+        "用3與4代回原括號式。"
       ],
-      "answer": "x<4。"
+      "answer": "x<4。",
+      "why": "分配律必須讓二同時乘到x與三，才得到正確的二x加六。整理後端點四使兩邊相等而不符合，小於四的三成立，因此答案方向正確。"
     },
     {
       "exampleId": "L4",
-      "prompt": "解 7−2x≥3−x。",
+      "prompt": "解7-2x≥3-x。",
       "solutionSteps": [
-        "兩邊同加 2x：7≥3+x。",
-        "兩邊同減 3：4≥x，改寫為 x≤4。"
+        "兩邊同加2x得7≥3+x。",
+        "兩邊同減3得4≥x。",
+        "改寫為x≤4並以4、5驗算。"
       ],
-      "answer": "x≤4。"
+      "answer": "x≤4。",
+      "why": "先把負未知數移到右側可得到正係數x，無須除以負數。四大於或等於x等價於x小於或等於四；端點四成立、五失敗，證明改寫未反向。"
     }
   ],
   "commonMistakes": [
@@ -234,7 +243,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "ab8cb0aab5c65d0ce9275e8194217d63a1ff630b11a48ac3643be0eccc6d6c60"
+  "contentSha256": "71932aa6f352ac22e32c63cb3666a6c445b8b5647104f802dd29850f03d8df67"
 };
 
 export const QUESTIONS = [
@@ -264,10 +273,11 @@ export const QUESTIONS = [
       "result": "x>5",
       "answerIndexVerified": 2
     },
-    "explanation": "兩邊同減 x 得 x+3>8，再同減 3，得到 x>5。",
+    "explanation": "兩邊同減 x 得 x+3>8，再同減 3，得到 x>5。 以x=6代回左式15、右式14而成立；x=5兩邊同為13不符合嚴格大於。因此右側大於五的區間才與兩次回代一致。",
     "steps": [
       "兩邊同減 x",
-      "兩邊同減 3"
+      "兩邊同減 3",
+      "代入6與5，核對方向及端點不含。"
     ],
     "optionAnalysis": [
       {
@@ -291,7 +301,7 @@ export const QUESTIONS = [
         "reason": "錯納入端點 5。"
       }
     ],
-    "misconceptionTarget": "移項時未改項的加減號，或誤加等號。",
+    "misconceptionTarget": "移項時未改項的加減號，或誤加等號。 也可能把兩邊同減x誤做成2x-x=2而丟失未知數。",
     "prerequisiteCheck": "需會基本同加減。",
     "estimatedTimeSec": "65",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -307,7 +317,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e820fbc74292b19243f6c1228c6e1190ac849535a9c0c7a005fd32b9e564753d"
+    "contentSha256": "8d1353e39934e3368b3ec8d0de544ecd01db8659bb558abd0d817561420634df"
   },
   {
     "questionId": "u07-s003-v002",
@@ -335,10 +345,11 @@ export const QUESTIONS = [
       "result": "x≤7",
       "answerIndexVerified": 3
     },
-    "explanation": "兩邊同減 3x 得 2x−4≤10；同加 4 得 2x≤14；除以正數 2，得 x≤7。",
+    "explanation": "兩邊同減 3x 得 2x−4≤10；同加 4 得 2x≤14；除以正數 2，得 x≤7。 除數2為正所以方向保持；x=7使兩邊同為31而成立，確認端點含入。範圍外的八使左式三十六大於右式三十四，故不是解。",
     "steps": [
       "集中 x 項",
-      "移常數並除正係數"
+      "移常數並除正係數",
+      "將x=7與8代回，驗證上界方向與端點。"
     ],
     "optionAnalysis": [
       {
@@ -362,7 +373,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「x≤7」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "係數相減或常數移項錯誤。",
+    "misconceptionTarget": "係數相減或常數移項錯誤。 還可能把五x減三x錯算成八x，或漏掉原本的等號。",
     "prerequisiteCheck": "需會合併同類項。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "無單位；14÷2 精確。",
@@ -378,7 +389,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "dd4521ae927b7e6b9eb79985e2daedc9b0eb09d4118fffaa225ab6b1b5aceb92"
+    "contentSha256": "1ce5a3753c848016b655e550fcb2783e9835f060285107b28ba120218f4ff2ec"
   },
   {
     "questionId": "u07-s003-v003",
@@ -406,10 +417,11 @@ export const QUESTIONS = [
       "result": "4x<12",
       "answerIndexVerified": 0
     },
-    "explanation": "移去 +9 等同兩邊同減 9，因此右邊為 21−9=12，不等號方向不變，得到 4x<12。",
+    "explanation": "移去 +9 等同兩邊同減 9，因此右邊為 21−9=12，不等號方向不變，得到 4x<12。 完整寫成4x+9-9<21-9可看出兩邊做相同運算，沒有任何變號理由。化簡後的左邊只剩四x，右邊為十二。",
     "steps": [
       "兩邊同減 9",
-      "保持 < 方向"
+      "保持 < 方向",
+      "展開兩邊同減9的完整一行，再化簡成4x<12。"
     ],
     "optionAnalysis": [
       {
@@ -433,7 +445,7 @@ export const QUESTIONS = [
         "reason": "漏掉係數 4。"
       }
     ],
-    "misconceptionTarget": "把移項簡記誤成任意改符號或漏項。",
+    "misconceptionTarget": "把移項簡記誤成任意改符號或漏項。 也可能只刪左邊九，卻沒有在右邊扣除同一數。",
     "prerequisiteCheck": "需會整數減法。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -449,7 +461,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e677418e017e33cfcc00b32868b3b23b6943c16ac6434db7945ce6bbbffab5ad"
+    "contentSha256": "6e61948b97836ada5c2d8132ade8ce2329ad1c98d9753f8be6f1915b72561fa8"
   },
   {
     "questionId": "u07-s003-v004",
@@ -477,10 +489,11 @@ export const QUESTIONS = [
       "result": "x>5",
       "answerIndexVerified": 1
     },
-    "explanation": "先展開得 3x+6>2x+11；兩邊同減 2x，再同減 6，得到 x>5。",
+    "explanation": "先展開得 3x+6>2x+11；兩邊同減 2x，再同減 6，得到 x>5。 先展開成3x+6>2x+11，再集中同類項得x>5。x=6代入得24>23成立，x=5得21>21為假，故答案是嚴格大於5且範圍向右延伸。",
     "steps": [
       "用分配律展開",
-      "集中 x 項與常數"
+      "集中 x 項與常數",
+      "用x=6與5回代原括號式，檢查端點與方向。"
     ],
     "optionAnalysis": [
       {
@@ -504,7 +517,7 @@ export const QUESTIONS = [
         "reason": "嚴格大於不含 5。"
       }
     ],
-    "misconceptionTarget": "分配律漏乘 2，或端點誤含。",
+    "misconceptionTarget": "分配律漏乘 2，或端點誤含。 還可能把三分配給x卻漏乘括號內的二，導致端點錯。",
     "prerequisiteCheck": "需會分配律與移項。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -520,7 +533,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e82e8e8ea14243ec06d9b0336d978b020b49569e34a64dbcb24289a6413aafe8"
+    "contentSha256": "3c494a6cd48ecd695051c46bfdf15f9b96f3d4469db8540d069b158d3851647d"
   },
   {
     "questionId": "u07-s003-v005",
@@ -548,10 +561,11 @@ export const QUESTIONS = [
       "result": "x≤4",
       "answerIndexVerified": 3
     },
-    "explanation": "兩邊同加 2x 得 8≥4+x；再同減 4 得 4≥x，改寫為 x≤4。",
+    "explanation": "兩邊同加 2x 得 8≥4+x；再同減 4 得 4≥x，改寫為 x≤4。 把4≥x按未知數在左改寫時須成x≤4；代入4成立、5失敗，驗證方向。這也排除把交換左右位置誤當成保留符號。",
     "steps": [
       "先使 x 係數為正",
-      "將 4≥x 改寫為 x≤4"
+      "將 4≥x 改寫為 x≤4",
+      "將結果改寫成x≤4，並用4、5代入原式驗算。"
     ],
     "optionAnalysis": [
       {
@@ -575,7 +589,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「x≤4」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "將 4≥x 改寫時不等號方向錯誤。",
+    "misconceptionTarget": "將 4≥x 改寫時不等號方向錯誤。 也可能看到原式有負x就提前套用下一節的變號規則。",
     "prerequisiteCheck": "需會交換不等式左右。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "無單位。",
@@ -591,7 +605,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "521b41585b2d447cc8af6c08a3b3ac801603290ff979c61e1759e786111681fe"
+    "contentSha256": "f5e4fd01e6d75099fdb3624a9ae66d19d5c2ffde4eb441e668987a196651b53a"
   },
   {
     "questionId": "u07-s003-v006",
@@ -619,10 +633,11 @@ export const QUESTIONS = [
       "result": "2x−5>9 ⇒ 2x>9+5",
       "answerIndexVerified": 0
     },
-    "explanation": "第一項把左邊的 −5 移除，相當於兩邊同加 5，因此右邊成 9+5，且同加不改不等號。",
+    "explanation": "第一項把左邊的 −5 移除，相當於兩邊同加 5，因此右邊成 9+5，且同加不改不等號。 第一個過程可展開成左右同加5，其餘選項都無法還原為同一等價運算。",
     "steps": [
       "辨認要消去的是 −5",
-      "兩邊同加 5"
+      "兩邊同加 5",
+      "把四個箭頭各還原為兩邊同加減，判斷只有第一項等價。"
     ],
     "optionAnalysis": [
       {
@@ -646,7 +661,7 @@ export const QUESTIONS = [
         "reason": "除了算式錯還不應變號。"
       }
     ],
-    "misconceptionTarget": "只背「移項變號」但未判斷原項符號。",
+    "misconceptionTarget": "只背「移項變號」但未判斷原項符號。 還可能只背跨邊變號，沒有檢查被搬動項原本是正或負。",
     "prerequisiteCheck": "需理解同加同減。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -662,7 +677,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "fdc47a7c9384cee0c4a334d811e63a3be716b41be32d6a7472f1f82c1068c265"
+    "contentSha256": "f8c560a42c218402fa1626153ab797339d426bbfd63a8a9eac8d3c1775613cd8"
   },
   {
     "questionId": "u07-s003-v007",
@@ -690,10 +705,11 @@ export const QUESTIONS = [
       "result": "x≤6",
       "answerIndexVerified": 1
     },
-    "explanation": "展開得 6x−2≤4x+10；移項得 2x≤12；除以 2，得到 x≤6。",
+    "explanation": "展開得 6x−2≤4x+10；移項得 2x≤12；除以 2，得到 x≤6。 展開得六x-2小於等於四x+10，整理得x小於等於六。x=6代入左右皆為34而成立，x=7時左40大於右38而不符合≤。",
     "steps": [
       "完整展開括號",
-      "合併後除正係數"
+      "合併後除正係數",
+      "以6與7代回含括號原式，檢查端點與外部值。"
     ],
     "optionAnalysis": [
       {
@@ -717,7 +733,7 @@ export const QUESTIONS = [
         "reason": "12÷2 不是 4。"
       }
     ],
-    "misconceptionTarget": "分配律或係數相減錯誤。",
+    "misconceptionTarget": "分配律或係數相減錯誤。 也可能把六x減四x算錯，或把等號端點排除。",
     "prerequisiteCheck": "需會分配律與同類項。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -733,7 +749,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6d2def3f7e84a07b4b15645917054a678fe06b6aab2b9469af3c17899ad58b56"
+    "contentSha256": "338208b2aaff36902b7f9f602873b8b99eedc5d7335715ea5ed25636a17e9403"
   },
   {
     "questionId": "u07-s003-v008",
@@ -761,10 +777,11 @@ export const QUESTIONS = [
       "result": "x<3",
       "answerIndexVerified": 2
     },
-    "explanation": "先去括號：5−x+3>2x−1，即 8−x>2x−1。移項得 9>3x，所以 x<3。",
+    "explanation": "先去括號：5−x+3>2x−1，即 8−x>2x−1。移項得 9>3x，所以 x<3。 括號前的減號使-x與+3同時出現，整理成九大於三x後得x小於三；x=2成立而x=3兩邊相等不成立，方向無誤。",
     "steps": [
       "負號分配進括號",
-      "集中 x 項與常數"
+      "集中 x 項與常數",
+      "展開後以x=2與3回代，驗證x<3。"
     ],
     "optionAnalysis": [
       {
@@ -788,7 +805,7 @@ export const QUESTIONS = [
         "reason": "嚴格不等號不含 3。"
       }
     ],
-    "misconceptionTarget": "括號前負號未改變括號內 −3 的符號。",
+    "misconceptionTarget": "括號前負號未改變括號內 −3 的符號。 還可能把五減括號錯展開成五減x減三，端點因而改變。",
     "prerequisiteCheck": "需會去括號與移項。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "無單位。",
@@ -804,7 +821,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "47870f6577bd0b66ae8f2ad19f60c64b0fb508be1acf9ea4bc828c249ead4c4f"
+    "contentSha256": "bbdffc33bcebebf38a9877ae6d43ba0b0d49d689e24c69aaa2b89b622ce7cfcb"
   },
   {
     "questionId": "u07-s003-v009",
@@ -832,10 +849,11 @@ export const QUESTIONS = [
       "result": "5",
       "answerIndexVerified": 0
     },
-    "explanation": "移項得 2x≤9−a，所以 x≤(9−a)/2。解集端點為 2，因此 (9−a)/2=2，解得 a=5。",
+    "explanation": "移項得 2x≤9−a，所以 x≤(9−a)/2。解集端點為 2，因此 (9−a)/2=2，解得 a=5。 先整理一般式得二x小於等於九減a，要使上界為二，九減a必須等於四，所以a=5。代回得4x+5≤2x+9，確實同解。",
     "steps": [
       "求一般端點",
-      "令端點等於 2"
+      "令端點等於 2",
+      "將a=5代回原不等式重新求解，確認端點與方向。"
     ],
     "optionAnalysis": [
       {
@@ -859,7 +877,7 @@ export const QUESTIONS = [
         "reason": "a=1 時端點 4。"
       }
     ],
-    "misconceptionTarget": "把參數直接與端點相等，未先整理不等式。",
+    "misconceptionTarget": "把參數直接與端點相等，未先整理不等式。 也可能只比較常數a與端點2，沒有先求出一般解集端點。",
     "prerequisiteCheck": "需會參數方程與移項。",
     "estimatedTimeSec": "110",
     "unitAndRoundingCheck": "無單位；a 為實數。",
@@ -875,7 +893,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1ae803fc70bccf17ad6a02524f2f2c1401e8d82b524afa22e068a28a9fde1355"
+    "contentSha256": "e42031d95ab364b497da88f6f39e95e5a6f5397a252c0508b1ebdc443b2cd6b1"
   },
   {
     "questionId": "u07-s003-v010",
@@ -903,10 +921,11 @@ export const QUESTIONS = [
       "result": "900−c<750",
       "answerIndexVerified": 1
     },
-    "explanation": "折後價格是 900−c；「低於 750」為嚴格小於，因此 900−c<750。",
+    "explanation": "折後價格是 900−c；「低於 750」為嚴格小於，因此 900−c<750。 例如c=200時折後700低於750，代入正確式為真，亦驗證折價量須從900扣除。若列成加法，折價越多反而價格越高，不合題意。",
     "steps": [
       "辨認折後價格式",
-      "將低於翻成 <"
+      "將低於翻成 <",
+      "以c=200測試四個列式，確認只有900-c<750符合情境。"
     ],
     "optionAnalysis": [
       {
@@ -930,7 +949,7 @@ export const QUESTIONS = [
         "reason": "把價格與折扣角色顛倒。"
       }
     ],
-    "misconceptionTarget": "只抓「折價」卻未正確建立價格式。",
+    "misconceptionTarget": "只抓「折價」卻未正確建立價格式。 還可能把折價券金額加到原價，或把低於寫成含等號。",
     "prerequisiteCheck": "需理解固定價減折扣與低於語意。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "金額單位均為元。",
@@ -946,7 +965,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ad02369d41a03c5dcd71710448b781fbc4669ac84ca9428ffc0ba98803456c08"
+    "contentSha256": "42df2accc7025cb9391e5019dffb6d6c8bf447e32af873830048d2a6e10438a7"
   },
   {
     "questionId": "u07-s003-v011",
@@ -974,10 +993,11 @@ export const QUESTIONS = [
       "result": "12 次",
       "answerIndexVerified": 2
     },
-    "explanation": "餘額為 500−32x，條件 500−32x≥116。移項得 384≥32x，所以 x≤12，最多 12 次。",
+    "explanation": "餘額為 500−32x，條件 500−32x≥116。移項得 384≥32x，所以 x≤12，最多 12 次。 搭12次餘額116剛好符合至少；搭13次只剩84，故12是最大整數解。次數不能取小數，因此上界的整數詮釋很必要。",
     "steps": [
       "建立餘額不等式",
-      "移項並除以正數 32"
+      "移項並除以正數 32",
+      "比較12與13次的餘額，確認最大可行整數。"
     ],
     "optionAnalysis": [
       {
@@ -1001,7 +1021,7 @@ export const QUESTIONS = [
         "reason": "14 次更不足。"
       }
     ],
-    "misconceptionTarget": "移項負的變動項時方向或取整錯誤。",
+    "misconceptionTarget": "移項負的變動項時方向或取整錯誤。 還可能把最多可搭次數向上取整，或忘記保留額可剛好等於116。",
     "prerequisiteCheck": "需會餘額模型與整數上界。",
     "estimatedTimeSec": "100",
     "unitAndRoundingCheck": "單位皆為元與次；32×12=384 精確。",
@@ -1017,7 +1037,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6a162b1f86079d38df8b3ab386cac0c26723d6ead070cdb08d264435ec3878ce"
+    "contentSha256": "34f61f7635c817d868c62ff7b62ecd5f2fb6624d68ff5bea077d668d6550329d"
   },
   {
     "questionId": "u07-s003-v012",
@@ -1045,10 +1065,11 @@ export const QUESTIONS = [
       "result": "5 分鐘",
       "answerIndexVerified": 3
     },
-    "explanation": "t 分鐘後溫度為 28−1.5t，需 28−1.5t<22。移項得 6<1.5t，所以 t>4；完整分鐘最小為 5。",
+    "explanation": "t 分鐘後溫度為 28−1.5t，需 28−1.5t<22。移項得 6<1.5t，所以 t>4；完整分鐘最小為 5。 四分鐘後恰22不符合低於；五分鐘後20.5才成立，因此完整分鐘至少5。時間限定為完整分鐘，不能以分數時間代替。",
     "steps": [
       "建立下降量模型",
-      "解嚴格下界並取整數"
+      "解嚴格下界並取整數",
+      "計算4與5分鐘後溫度，檢查嚴格門檻。"
     ],
     "optionAnalysis": [
       {
@@ -1072,7 +1093,7 @@ export const QUESTIONS = [
         "reason": "5 分鐘為 20.5°C，是正確最小值。"
       }
     ],
-    "misconceptionTarget": "把低於寫成 ≤，或把 t>4 回答為 4。",
+    "misconceptionTarget": "把低於寫成 ≤，或把 t>4 回答為 4。 還可能忽略時間須為完整分鐘，或把t>4的最小整數寫成4。",
     "prerequisiteCheck": "需會小數乘法與負項移項。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "溫度單位 °C、時間分鐘；不四捨五入完整分鐘。",
@@ -1088,7 +1109,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d25d4119f64d6e318e17ba2f14f4f3182df14570a2aa33455950b84f59a4f7c1"
+    "contentSha256": "483471fb1e86374878578f18a04ec80e659a2bf6039c4cc23543306449085c23"
   }
 ];
 
@@ -1107,18 +1128,21 @@ export const CONSTRUCTED_RESPONSES = [
       "說明移項口訣的本質"
     ],
     "fullCreditSolution": [
-      "等價運算法：兩邊同減 2x，得 3x−8>13；兩邊同加 8，得 3x>21；同除以 3，得 x>7。",
-      "移項寫法：5x−2x>13+8，得 3x>21，所以 x>7。",
-      "右邊的 2x 移到左邊變 −2x，左邊的 −8 移到右邊變 +8，分別對應兩邊同減 2x 與同加 8，因此兩法等價。"
+      "等價運算寫法：兩邊同減2x得3x-8>13，再兩邊同加8得3x>21。",
+      "因3為正，兩邊同除以3而不改方向，得到x>7。",
+      "移項簡寫為5x-2x>13+8，再化簡成3x>21與x>7。",
+      "把右側2x移到左側變-2x，本質是兩邊同減2x；把左側-8移到右側變+8，本質是兩邊同加8，所以兩種寫法等價。",
+      "用x=8代入原式得32>29成立，x=7兩邊同為27不成立，驗證方向與嚴格端點。"
     ],
     "alternativeMethod": [
       "也可先移常數再移未知數，只要每次都可解釋成兩邊同加減同一式，最後仍為 x>7。"
     ],
     "reasoningSteps": [
-      "整理未知數項",
-      "整理常數項",
-      "除以正係數",
-      "連結口訣與等價運算"
+      "以兩邊同減2x集中未知數。",
+      "以兩邊同加8集中常數。",
+      "除以正三求出x>7。",
+      "把兩個移項分別還原成等價運算。",
+      "以8與7回代原式驗算。"
     ],
     "rubric": [
       {
@@ -1143,8 +1167,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "最後接受 x>7 或 7<x；每行需維持不等式而非改寫成等號。",
     "answerOnlyPolicy": "只寫 x>7，未展示兩種方法，最多 1 分。",
     "commonErrors": [
-      "把 +2x 移成 +2x 未變號",
-      "把不等號當等號書寫"
+      "把右邊的+2x移到左邊仍寫+2x，未做相反運算。",
+      "把同加減項誤認為需要反向不等號，或把每一行錯寫成等號。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1157,7 +1181,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c665f3786d81040625f0eba2c8f09583705a30986751ac3ee67ed7a35b1587e5"
+    "contentSha256": "409edd86e240aea046a2b13fa1b7ea077e87e5341e6539775ce94dd36d987f9d"
   },
   {
     "questionId": "u07-s003-cr002",
@@ -1174,19 +1198,21 @@ export const CONSTRUCTED_RESPONSES = [
       "列出三階段的具體錯誤"
     ],
     "fullCreditSolution": [
-      "展開得 6x−15≤4x+7。",
-      "兩邊同減 4x 並同加 15，得 2x≤22。",
-      "兩邊同除以正數 2，得 x≤11。",
-      "常見錯誤可分別是漏乘 −5、移項未改加減號、除以正數卻反向不等號。"
+      "先用分配律展開3(2x-5)=6x-15，所以原式為6x-15≤4x+7。",
+      "兩邊同減4x再同加15，得到2x≤22。",
+      "兩邊同除以正數2，方向不變，得到x≤11。",
+      "三階段常見錯誤分別是括號內-5漏乘3、移項未改加減號、除以正數2卻誤反向。",
+      "邊界11使左右都為51而成立，12使左57大於右55而失敗，驗證上界。"
     ],
     "alternativeMethod": [
       "可先把 4x 移到左邊、−15 移到右邊，寫 6x−4x≤7+15，再化簡；錯誤分析只要對應三階段且具體即可。"
     ],
     "reasoningSteps": [
-      "分配律展開",
-      "同類項跨邊整理",
-      "依除數正負決定方向",
-      "反思步驟風險"
+      "完整分配三到括號兩項。",
+      "整理未知數項與常數項。",
+      "除以正二求範圍。",
+      "逐階段辨識不同錯誤。",
+      "用11與12代入驗算。"
     ],
     "rubric": [
       {
@@ -1211,8 +1237,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "最後範圍需保留 ≤；不需要單位。",
     "answerOnlyPolicy": "只有答案 x≤11 而無步驟與錯誤分析，最多 1 分。",
     "commonErrors": [
-      "分配律只乘第一項",
-      "正係數除法不必要地變號"
+      "把3(2x-5)展開成6x-5，沒有讓3乘到第二項。",
+      "把移項與除負數混淆，或除以正二時不必要地反轉≤。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1225,7 +1251,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3707095f99561c2ba0ccd10a3f5664bac24ab0c852842ece5ab7da3b6c9daaf7"
+    "contentSha256": "3db68bb0b31170f9cb08790771408efbffaf819175640e5ee309e4b10bd51a1a"
   }
 ];
 
@@ -1236,7 +1262,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "e820fbc74292b19243f6c1228c6e1190ac849535a9c0c7a005fd32b9e564753d",
+    "contentSha256": "8d1353e39934e3368b3ec8d0de544ecd01db8659bb558abd0d817561420634df",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "2x+3>x+8；扣掉共同的 x 後 x+3>8，再扣 3 得 x>5。測 x=6 成立。",
@@ -1268,7 +1294,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "dd4521ae927b7e6b9eb79985e2daedc9b0eb09d4118fffaa225ab6b1b5aceb92",
+    "contentSha256": "1ce5a3753c848016b655e550fcb2783e9835f060285107b28ba120218f4ff2ec",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "5x−4≤3x+10 ⇒ 2x−4≤10 ⇒ 2x≤14 ⇒ x≤7。端點代回為相等，應納入。",
@@ -1300,7 +1326,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "e677418e017e33cfcc00b32868b3b23b6943c16ac6434db7945ce6bbbffab5ad",
+    "contentSha256": "6e61948b97836ada5c2d8132ade8ce2329ad1c98d9753f8be6f1915b72561fa8",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "在 4x+9<21 兩側各減 9：4x+9−9<21−9，化簡為 4x<12。",
@@ -1332,7 +1358,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "e82e8e8ea14243ec06d9b0336d978b020b49569e34a64dbcb24289a6413aafe8",
+    "contentSha256": "3c494a6cd48ecd695051c46bfdf15f9b96f3d4469db8540d069b158d3851647d",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "先展開為 3x+6>2x+11；兩邊同減 2x，再同減 6，得 x>5。",
@@ -1364,7 +1390,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "521b41585b2d447cc8af6c08a3b3ac801603290ff979c61e1759e786111681fe",
+    "contentSha256": "f5e4fd01e6d75099fdb3624a9ae66d19d5c2ffde4eb441e668987a196651b53a",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "加 2x：8≥4+x；減 4：4≥x。語意是 x 不大於 4，即 x≤4。",
@@ -1396,7 +1422,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "fdc47a7c9384cee0c4a334d811e63a3be716b41be32d6a7472f1f82c1068c265",
+    "contentSha256": "f8c560a42c218402fa1626153ab797339d426bbfd63a8a9eac8d3c1775613cd8",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "選項 0 可還原為兩邊加 5；其餘三項無法由同一加減操作得到，因此不等價。",
@@ -1428,7 +1454,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "6d2def3f7e84a07b4b15645917054a678fe06b6aab2b9469af3c17899ad58b56",
+    "contentSha256": "338208b2aaff36902b7f9f602873b8b99eedc5d7335715ea5ed25636a17e9403",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "左式為 6x−2。扣掉 4x：2x−2≤10；加 2：2x≤12；除 2：x≤6。",
@@ -1460,7 +1486,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "47870f6577bd0b66ae8f2ad19f60c64b0fb508be1acf9ea4bc828c249ead4c4f",
+    "contentSha256": "bbdffc33bcebebf38a9877ae6d43ba0b0d49d689e24c69aaa2b89b622ce7cfcb",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "5−(x−3)=8−x。原式 8−x>2x−1；加 x、加 1 得 9>3x；除 3 得 3>x，即 x<3。",
@@ -1492,7 +1518,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "1ae803fc70bccf17ad6a02524f2f2c1401e8d82b524afa22e068a28a9fde1355",
+    "contentSha256": "e42031d95ab364b497da88f6f39e95e5a6f5397a252c0508b1ebdc443b2cd6b1",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "4x+a≤2x+9 ⇒ 2x≤9−a ⇒ x≤(9−a)/2。與 x≤2 同解，故 9−a=4，a=5。",
@@ -1524,7 +1550,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "ad02369d41a03c5dcd71710448b781fbc4669ac84ca9428ffc0ba98803456c08",
+    "contentSha256": "42df2accc7025cb9391e5019dffb6d6c8bf447e32af873830048d2a6e10438a7",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "若 c=200，折後 700 元應符合；代入 900−c<750 得 700<750 真。其他選項無法同時表達減價與嚴格上限。",
@@ -1556,7 +1582,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "6a162b1f86079d38df8b3ab386cac0c26723d6ead070cdb08d264435ec3878ce",
+    "contentSha256": "34f61f7635c817d868c62ff7b62ecd5f2fb6624d68ff5bea077d668d6550329d",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "至少留 116，最多可花 500−116=384 元；每次 32 元，384÷32=12。第 13 次會多花 32 元而低於保留額。",
@@ -1588,7 +1614,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-transposition",
-    "contentSha256": "d25d4119f64d6e318e17ba2f14f4f3182df14570a2aa33455950b84f59a4f7c1",
+    "contentSha256": "483471fb1e86374878578f18a04ec80e659a2bf6039c4cc23543306449085c23",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "運轉 4 分鐘降 6°C，恰為 22°C，尚未低於；5 分鐘降 7.5°C，成 20.5°C。故至少 5 分鐘。",

@@ -50,10 +50,11 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "連續描述的是相鄰差，不是所有數都設成同一個x。",
-    "連續偶數與連續奇數的相鄰差都是2，不能誤寫成只差1。",
+    "連續描述的是相鄰差，不是所有數都設成同一個 x。",
+    "連續偶數與連續奇數的相鄰差都是 2，不能誤寫成只差 1。",
     "奇數個對稱連續數的平均數等於中間數，可快速列式。",
-    "負數仍依數線由小到大每次加1或2。"
+    "負數仍依數線由小到大每次加 1 或 2。",
+    "解出代表數後，必須回代列出全部數值，再同時檢查數量個數、相鄰間隔、奇偶性與題目給定的總和或關係。"
   ],
   "formalDefinitions": [
     {
@@ -116,40 +117,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "三個連續整數和為72。",
+      "answer": "23、24、25。",
       "solutionSteps": [
-        "設中間數x。",
-        "3x=72，x=24。"
+        "設中間數為 x，三數是 x-1、x、x+1。",
+        "相加得 3x=72，所以 x=24。",
+        "列出 23、24、25，驗算總和為 72。"
       ],
-      "answer": "23、24、25。"
+      "why": "用中間數表示三個連續整數時，前後的減一與加一會在總和中抵消，因此總和直接等於中間數的三倍。解得二十四後仍要列出首尾兩數，才能檢查連續與總和。"
     },
     {
-      "exampleId": "L2",
       "prompt": "兩個連續奇數和為48。",
+      "answer": "23、25。",
       "solutionSteps": [
-        "設較小x，另一個x+2。",
-        "2x+2=48，x=23。"
+        "設較小奇數為 x，另一數為 x+2。",
+        "列 x+(x+2)=48，化簡得 2x=46。",
+        "解得 x=23，另一數為 25，總和是 48。"
       ],
-      "answer": "23、25。"
+      "why": "連續奇數在數線上中間會隔一個偶數，所以相鄰差是二而不是一。以 x 與 x+2 列式可同時保留連續與奇數條件；二十三、二十五皆為奇數，總和也精確為四十八。"
     },
     {
-      "exampleId": "L3",
       "prompt": "五個連續整數平均為6。",
+      "answer": "4、5、6、7、8。",
       "solutionSteps": [
-        "中間數為6。",
-        "向兩側各取兩個。"
+        "五個數對稱排列，中間數等於平均數 6。",
+        "由 6 向左取 5、4，向右取 7、8。",
+        "驗算五數總和 30，30÷5=6。"
       ],
-      "answer": "4、5、6、7、8。"
+      "why": "奇數個的連續整數以中間數為對稱中心，左右等距的數互相平衡，所以平均數就是中間數。中間為六時，向兩側各取兩個即得四到八；相鄰差與平均驗算都通過。"
     },
     {
-      "exampleId": "L4",
       "prompt": "三個連續負偶數和為-30。",
+      "answer": "-12、-10、-8。",
       "solutionSteps": [
-        "設中間數x，3x=-30。",
-        "x=-10。"
+        "設中間負偶數為 x，前後數為 x-2、x+2。",
+        "三數和為 3x=-30，所以 x=-10。",
+        "列出 -12、-10、-8，驗算均為偶數且和為 -30。"
       ],
-      "answer": "-12、-10、-8。"
+      "why": "負偶數的連續關係仍是沿數線每次加二，不能因為有負號就倒過來排列。以中間數表示時，前後的減二與加二抵消，所以中間數為負十；負十二、負十、負八的間隔與總和均正確。"
     }
   ],
   "commonMistakes": [
@@ -235,7 +240,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "70210f58083932091035b94cb2702db1c8b2a20501a2f03f67127d3438c43dfa",
+  "contentSha256": "0f007b6038248af8765b76c6bdbad15b3595e978c39ac81b708af37a6634565b",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 };
@@ -260,7 +265,7 @@ export const QUESTIONS = [
       "9、12、15"
     ],
     "answerIndex": 0,
-    "explanation": "以x、x+1、x+2表示；列3x+3=36；得到11、12、13。所以答案是「11、12、13」。",
+    "explanation": "設三個連續整數的中間數為 x，前後兩數分別為 x-1、x+1。三數和為 3x=36，所以 x=12，這三數是 11、12、13。相鄰差均為 1，且 11+12+13=36，條件全部成立。 中間數也確實是總和除以三所得的 12。",
     "steps": [
       "以x、x+1、x+2表示",
       "列3x+3=36",
@@ -288,7 +293,7 @@ export const QUESTIONS = [
         "reason": "不是連續整數。"
       }
     ],
-    "commonMistake": "把三個數都設成x。",
+    "commonMistake": "把三個連續整數都設成同一個 x，忽略前後各差一的關係。",
     "concept": "相鄰連續整數相差1。",
     "tags": [
       "代數",
@@ -303,7 +308,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "95a3f02dcc8fdb81b1d75c48e760751315e7b5016303a3ba3c9bd6f479579d23",
+    "contentSha256": "c746679032b5e48e3215c9155e31f86fcd8dd9dd51bbb3f3e9513a1c1be020e2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -326,7 +331,7 @@ export const QUESTIONS = [
       "40"
     ],
     "answerIndex": 1,
-    "explanation": "列2x+1=41；2x=40；x=20。所以答案是「20」。",
+    "explanation": "設較小的整數為 x，另一個連續整數就是 x+1。依總和列 x+(x+1)=41，化簡為 2x+1=41，得 x=20。因此兩數是 20、21，相差 1 且總和恰為 41，較小者為 20。 這是精確整數解，不是把平均數任意取整。",
     "steps": [
       "列2x+1=41",
       "2x=40",
@@ -369,7 +374,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b25a2b0b39d79976cdfad7f4c20c5966f61ce3fd224155c93aa2a6109e0519fe",
+    "contentSha256": "7e26941651e01de024b030994bc182fa881461c5dee4998784b7123071cd7fc6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -392,7 +397,7 @@ export const QUESTIONS = [
       "21、23、25"
     ],
     "answerIndex": 2,
-    "explanation": "奇數相差2；列3x+6=63；得到19、21、23。所以答案是「19、21、23」。",
+    "explanation": "連續奇數相鄰差 2。設最小奇數為 x，另兩數為 x+2、x+4，總和 3x+6=63，所以 x=19。三數為 19、21、23，都是奇數、相鄰差 2，而且 19+21+23=63，因此答案唯一。 中間奇數為 21，也等於三數的平均。",
     "steps": [
       "奇數相差2",
       "列3x+6=63",
@@ -420,7 +425,7 @@ export const QUESTIONS = [
         "reason": "總和69。"
       }
     ],
-    "commonMistake": "把連續奇數寫成x、x+1、x+2。",
+    "commonMistake": "把連續奇數誤寫成 x、x+1、x+2，忽略奇數之間應相差二。",
     "concept": "連續奇數不是相差1。",
     "tags": [
       "代數",
@@ -435,7 +440,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3ec67cc4467e949384f2d1f57604f9512606fd09de8fc719b9a1e4c298c4efb0",
+    "contentSha256": "260af444d2c66e4238aee5dccc6b4f0ee18b7fbcbaf8a2466cc67eaeaca32359",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -458,7 +463,7 @@ export const QUESTIONS = [
       "12"
     ],
     "answerIndex": 3,
-    "explanation": "四數為x到x+3；常數和1+2+3=6；解得12。所以答案是「12」。",
+    "explanation": "設最小整數為 x，四數依序是 x、x+1、x+2、x+3。相加得 4x+6=54，所以 4x=48、x=12。四數 12、13、14、15 依序連續，而且總和為 54，因此最小數是 12。 四數的平均雖是 13.5，題目所求仍是最小整數 12。",
     "steps": [
       "四數為x到x+3",
       "常數和1+2+3=6",
@@ -486,7 +491,7 @@ export const QUESTIONS = [
         "reason": "設最小x，四數和4x+6=54，4x=48，x=12。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "漏加部分常數差。",
+    "commonMistake": "相加四個數時漏掉一、二、三的部分常數，把總和錯寫成 4x。",
     "concept": "n個連續數可由最小數逐次加1。",
     "tags": [
       "代數",
@@ -501,7 +506,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e99043c011951cb4428fb34bd71c563587a477fbc51ef4030437a6bca09155d3",
+    "contentSha256": "490a98c79a7090f261d3ff619ecc720ff1ebe1cf1809e83feb817b5ec5a13175",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -524,7 +529,7 @@ export const QUESTIONS = [
       "38"
     ],
     "answerIndex": 1,
-    "explanation": "偶數相差2；列2x+2=74；解得36。所以答案是「36」。",
+    "explanation": "連續偶數相鄰差 2。設較小偶數為 x，較大者為 x+2，依總和列 x+(x+2)=74。化簡得 2x=72，x=36，另一數是 38。36 與 38 皆為偶數、相差 2，總和為 74，故較小者是 36。 所求是較小者 36，而 38 是同組的較大偶數。",
     "steps": [
       "偶數相差2",
       "列2x+2=74",
@@ -552,7 +557,7 @@ export const QUESTIONS = [
         "reason": "38是較大者。"
       }
     ],
-    "commonMistake": "把兩數寫成x與x+1。",
+    "commonMistake": "把兩個連續偶數寫成 x 與 x+1，與偶數間隔應為二的條件不符。",
     "concept": "必須同時符合偶數與連續。",
     "tags": [
       "代數",
@@ -567,7 +572,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "581c89607285f3d0bf97ba965663c3caf091567d99637e6a01746657e39a1ed9",
+    "contentSha256": "007119be1ba14d889aaff6b9ec66c0eae2107e57973e03e2f4e63f690f4c431d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -590,7 +595,7 @@ export const QUESTIONS = [
       "14"
     ],
     "answerIndex": 2,
-    "explanation": "把最大數表示為x+2；列x+2=2x-8；解得x=10。所以答案是「10」。",
+    "explanation": "設最小整數為 x，三數依序是 x、x+1、x+2，所以最大數是 x+2。依「最大數等於最小數的兩倍減八」列 x+2=2x-8，解得 x=10。三數為 10、11、12，而 2×10-8=12，關係成立。 因此最小數確實是 10，不是同組的最大數 12。",
     "steps": [
       "把最大數表示為x+2",
       "列x+2=2x-8",
@@ -618,7 +623,7 @@ export const QUESTIONS = [
         "reason": "14不滿足關係。"
       }
     ],
-    "commonMistake": "把最大數也設成x。",
+    "commonMistake": "把最大數也設成 x，沒有用 x+2 表示它與最小數相差二。",
     "concept": "最大與最小相差2。",
     "tags": [
       "代數",
@@ -633,7 +638,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f8c04ef72a55134a87443abe937bb1be421b985c070ef60ddd5414720a3cafa7",
+    "contentSha256": "bf95bf3fb2ae4213ede8eace10bd4784bfe42ad0c7d6a67ab7e24f9d91612a9f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -656,7 +661,7 @@ export const QUESTIONS = [
       "24"
     ],
     "answerIndex": 3,
-    "explanation": "只取第一與第三數；列2x+2=50；解得24。所以答案是「24」。",
+    "explanation": "設最小整數為 x，由於共有三個連續整數，最大數為 x+2。題目只要最小與最大相加，所以 x+(x+2)=50，得 2x=48、x=24。三數是 24、25、26，首尾和 24+26=50，故最小數為 24。",
     "steps": [
       "只取第一與第三數",
       "列2x+2=50",
@@ -684,7 +689,7 @@ export const QUESTIONS = [
         "reason": "設最小x，最大x+2；x+x+2=50，2x=48，x=24。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "把三個數都加進條件。",
+    "commonMistake": "把中間數也加入題目只要求的首尾總和，因而建立不同的方程式。",
     "concept": "最大數為x+2。",
     "tags": [
       "代數",
@@ -699,7 +704,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2b6a619013f696604e3b08ae76ff1659c387efa235af82bc1414af888c550a78",
+    "contentSha256": "9349cb2eb65abe3a99ad61215fad0dff3f5f0a3e2170f34ecfc4997814984566",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -722,7 +727,7 @@ export const QUESTIONS = [
       "-6、-5、-4、-3、-2"
     ],
     "answerIndex": 0,
-    "explanation": "平均數為中間數-3；向前兩個為-5、-4；向後兩個為-2、-1。所以答案是「－5、－4、－3、－2、－1」。",
+    "explanation": "五個連續整數對稱排列時，中間數就是平均數。平均為 -3，所以中間數是 -3，左右各取兩個相鄰整數，得 -5、-4、-3、-2、-1。五數總和 -15，除以 5 確實為 -3，順序與間隔也正確。",
     "steps": [
       "平均數為中間數-3",
       "向前兩個為-5、-4",
@@ -750,7 +755,7 @@ export const QUESTIONS = [
         "reason": "平均為-4。"
       }
     ],
-    "commonMistake": "負數排列方向錯誤。",
+    "commonMistake": "排列負整數時把絕對值較大者誤當成數值較大，因而顫倒數線順序。",
     "concept": "對稱數列平均等於中央數。",
     "tags": [
       "代數",
@@ -765,7 +770,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1a3fd2033552e398fc373abfb063ba4c4d924d604196ad5366a9e5b244a5b253",
+    "contentSha256": "39480766e9a8c86e908eb5d1fd105f0199a465704b87ace75c2e8e73e4175d6f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -788,7 +793,7 @@ export const QUESTIONS = [
       "103"
     ],
     "answerIndex": 2,
-    "explanation": "以中間座號表示兩側；常數互相抵消；306÷3=102。所以答案是「102」。",
+    "explanation": "設中間座號為 x，三個連續座號依序是 x-1、x、x+1。相加時前後的減一與加一抵消，得 3x=306，x=102。三個座號 101、102、103 連續，而且總和為 306，所以中間座號是 102。",
     "steps": [
       "以中間座號表示兩側",
       "常數互相抵消",
@@ -816,7 +821,7 @@ export const QUESTIONS = [
         "reason": "103是右側座號。"
       }
     ],
-    "commonMistake": "把306÷3後再加1。",
+    "commonMistake": "已用三百零六除以三得到中間座號後，又多加一而誤選右側座號。",
     "concept": "對稱表示可消去常數。",
     "tags": [
       "代數",
@@ -831,7 +836,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "10dd5c4fc2b6e17087885df0cbf9cd0ee2bf6b16e36da30f275fd78021a05759",
+    "contentSha256": "4964e871a7659f0229c462e9e34568931def993943f890f50b3807aa80ad802e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -854,7 +859,7 @@ export const QUESTIONS = [
       "17"
     ],
     "answerIndex": 3,
-    "explanation": "四日期為x至x+3；列4x+6=74；解得17。所以答案是「17」。",
+    "explanation": "設最早日期為 x，四個連續日期為 x、x+1、x+2、x+3。總和 4x+6=74，所以 4x=68、x=17。四天是 17、18、19、20 日，合計 74，因此最早日期是 17 日；這組日期也不涉及跨月。 所求為最早日期 17，不是四日的非整數平均值。",
     "steps": [
       "四日期為x至x+3",
       "列4x+6=74",
@@ -882,7 +887,7 @@ export const QUESTIONS = [
         "reason": "設最早x，4x+6=74，4x=68，x=17。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "忽略日期不可跨月的題幹假設。",
+    "commonMistake": "把四個日期全都設為同一個 x，漏掉後三天分別增加一、二、三日。",
     "concept": "同一月份內連續日期相差1。",
     "tags": [
       "代數",
@@ -897,7 +902,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "題目明定同一月份的連續日期，日曆順序使四個數必為相差1的整數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "548e0a85b262682a538c2d0acf6cf43cf2525522e81338bca9a280502bcc7eaf",
+    "contentSha256": "292bfcd7161b2bc8b2a5f67041d9e584e16cc71d8f2d77cd549753aeb640fd74",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -920,7 +925,7 @@ export const QUESTIONS = [
       "35"
     ],
     "answerIndex": 0,
-    "explanation": "奇數間隔2；以中間數表示；99÷3=33。所以答案是「33」。",
+    "explanation": "設中間奇數為 x，前後兩個連續奇數為 x-2、x+2。三個號碼總和為 3x=99，因此 x=33。完整號碼是 31、33、35，均為奇數、相鄰差 2，且總和為 99，所以中間號碼是 33。",
     "steps": [
       "奇數間隔2",
       "以中間數表示",
@@ -948,7 +953,7 @@ export const QUESTIONS = [
         "reason": "35是較大號碼。"
       }
     ],
-    "commonMistake": "把奇數間隔當1。",
+    "commonMistake": "把連續奇數的間隔當成一，寫出含偶數的號碼組合，不符題意。",
     "concept": "前後分別相差2。",
     "tags": [
       "代數",
@@ -963,7 +968,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "置物櫃號碼被指定為連續奇數，這個分類資訊決定相鄰差為2。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a7b4929befaef9ce4b273b50260e9d7dd65254eb0fc2f4d12cd8164b3e0e336c",
+    "contentSha256": "236be5555e8adab29f1266f4ea19ccbf814f89bac1ddcf69c6967baf8dfe2185",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -986,7 +991,7 @@ export const QUESTIONS = [
       "-6、-4、-2"
     ],
     "answerIndex": 1,
-    "explanation": "以x-1、x、x+1表示；3x=-12；得到-5、-4、-3。所以答案是「－5、－4、－3」。",
+    "explanation": "設中間樓層標號為 x，三個連續整數為 x-1、x、x+1。總和化簡為 3x=-12，所以 x=-4，三個標號為 -5、-4、-3。它們在數線上依序相差 1，且總和恰為 -12，因此這組答案正確。",
     "steps": [
       "以x-1、x、x+1表示",
       "3x=-12",
@@ -1014,7 +1019,7 @@ export const QUESTIONS = [
         "reason": "不是連續整數。"
       }
     ],
-    "commonMistake": "認為負數越遠離0越大。",
+    "commonMistake": "誤認負數離零越遠數值越大，導致地下樓層的數線順序顛倒。",
     "concept": "負樓層仍按每次加1排列。",
     "tags": [
       "代數",
@@ -1029,7 +1034,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "地下樓層標號包含負數且連續，建築情境決定順序與符號，不能只取絕對值。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7c19d6f0c70f2a15e18c37af1d4b90dad4703719a311c5c080e8e8a8cf5cdd30",
+    "contentSha256": "dcf0fdecf30ac4705b386030744415c10452f0f78901a311ce2a4ec409ad1e0f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }
@@ -1052,9 +1057,9 @@ export const CONSTRUCTED_RESPONSES = [
       "列出全部並驗算總和。"
     ],
     "fullCreditSolution": [
-      "設中間奇數為x，五數為x-4、x-2、x、x+2、x+4。",
-      "總和5x=215，x=43。",
-      "五數為39、41、43、45、47，總和215。"
+      "設五個連續奇數的中間數為 x，由於奇數相鄰差 2，五數依序為 x-4、x-2、x、x+2、x+4。",
+      "五數相加時常數互相抵消，得 5x=215。兩邊同除以 5，得中間奇數 x=43。",
+      "代回得五個數為 39、41、43、45、47。它們皆為奇數、相鄰差 2，且總和 39+41+43+45+47=215。"
     ],
     "alternativeSolutions": [
       "設最小數n，列n+(n+2)+(n+4)+(n+6)+(n+8)=215。"
@@ -1082,15 +1087,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "把連續奇數寫成相差1。",
-      "只回答中間數43。"
+      "把連續奇數寫成每次加 1，用了連續整數的間隔。",
+      "只解出中間數 43，未依題意列出其餘四個奇數並驗算總和。"
     ],
     "independentReview": {
       "derivedResult": "39、41、43、45、47",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "e522ff1cd309de13f4837ac126c96d151b7f9cd5a7fc315544b9c10e5903328b",
+    "contentSha256": "31a7233605dd803063b6b11d4cf74604d0c5e29d947a14652517ba72a240224c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -1110,10 +1115,10 @@ export const CONSTRUCTED_RESPONSES = [
       "列出三個數並驗算。"
     ],
     "fullCreditSolution": [
-      "三數為x、x+1、x+2。",
-      "2(x+2)=3x+7。",
-      "2x+4=3x+7，x=-3。",
-      "三數為-3、-2、-1；最大數2倍=-2，最小數3倍=-9，前者多7。"
+      "設最小整數為 x，三個連續整數依序為 x、x+1、x+2，因此最大數是 x+2。",
+      "「最大數的 2 倍比最小數的 3 倍多 7」表示 2(x+2)=3x+7，不能把多 7 的方向寫反。",
+      "展開得 2x+4=3x+7，移項得 x=-3，所以三數為 -3、-2、-1。",
+      "驗算最大數的 2 倍為 -2，最小數的 3 倍為 -9，而 -2-(-9)=7，前者確實多 7。"
     ],
     "alternativeSolutions": [
       "可設最大數y，最小數y-2。"
@@ -1141,15 +1146,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "把「多7」方向寫反。",
-      "最大數誤寫成x+1。"
+      "把「前者比後者多 7」寫成 2(x+2)+7=3x，將比較方向寫反。",
+      "只寫 x、x+1 兩個數，或把最大數誤寫成 x+1，未完整表示三個連續整數。"
     ],
     "independentReview": {
       "derivedResult": "-3、-2、-1",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "09fa741155dab1b336f1f8c099a79895ea857a4304bab898d66053e93c830433",
+    "contentSha256": "91d73b310ef993f5364f7d405ae76a098e0acbf88166915105976388f6470dfb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }

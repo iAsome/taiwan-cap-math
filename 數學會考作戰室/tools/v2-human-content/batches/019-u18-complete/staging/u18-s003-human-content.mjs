@@ -616,8 +616,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "兩條平行線被三條截線所截。第一條截線上的兩段長為 4、6；第二條截線上對應的上段長為 10，則下段長為何？",
-    "text": "兩條平行線被三條截線所截。第一條截線上的兩段長為 4、6；第二條截線上對應的上段長為 10，則下段長為何？",
+    "prompt": "三條平行線被兩條截線所截。第一條截線在相鄰平行線間的上、下兩段長為 4、6；第二條截線的對應上段長為 10，則下段長為何？",
+    "text": "三條平行線被兩條截線所截。第一條截線在相鄰平行線間的上、下兩段長為 4、6；第二條截線的對應上段長為 10，則下段長為何？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -670,7 +670,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7b390d422e047d70f61bef56d36733be7e4c09a9087a6ffc848c12e60490baa2"
+    "contentSha256": "04742cd3263a5954322faa1b246d146b610654dcda03862f44cab3d2c0ef18e4"
   },
   {
     "questionId": "u18-s003-v007",
@@ -1360,7 +1360,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "proportion-segment",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "7b390d422e047d70f61bef56d36733be7e4c09a9087a6ffc848c12e60490baa2",
+    "contentSha256": "04742cd3263a5954322faa1b246d146b610654dcda03862f44cab3d2c0ef18e4",
     "independentSolution": "第二截線的上段是第一截線上段的 10/4=2.5 倍，所以下段為 6×2.5=15。",
     "derivedAnswer": "15",
     "storedAnswer": "15",
@@ -1373,10 +1373,10 @@ export const SEMANTIC_REVIEWS = [
       false
     ],
     "ambiguityChecks": {
-      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
-      "units": "題目量綱一致，答案不需另行四捨五入。",
-      "scope": "只使用國中會考範圍內的「比例線段」概念，未要求高中延伸。"
+      "wording": "題幹明示三條平行線與兩條截線，並指定兩條截線上、下段的對應順序。",
+      "boundary": "只比較相鄰平行線之間的對應線段，不把整條截線或斜邊當成分段長。",
+      "units": "四個長度量使用同一單位，比值可直接建立。",
+      "scope": "只使用國中會考範圍的平行線截比性質與比例計算。"
     },
     "difficultyReason": "把三角形內比例推廣到平行線截線情境。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",

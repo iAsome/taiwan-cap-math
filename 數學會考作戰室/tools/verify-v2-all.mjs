@@ -14,8 +14,8 @@ const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const mathDir = path.resolve(toolsDir, "..");
 const repoDir = path.resolve(mathDir, "..");
 const reviewDir = path.join(toolsDir, "review-output", "full-v2-production");
-const manifestDir = path.join(toolsDir, "v2-qa", "manifests");
-const v2Dir = path.join(mathDir, "v2");
+const defaultManifestDir = path.join(toolsDir, "v2-qa", "manifests");
+const defaultArtifactDir = path.join(mathDir, "v2");
 const EXPECTED_POLICY_HASH = "72384ef7b0a3ab549d676c8e9f4af044aa694807d1ee36d3b016d8a3ce13d271";
 const REQUIRED_QUESTION_FIELDS = ["questionId", "unitId", "numericUnitId", "topicId", "skillId", "difficulty", "type", "visualMode", "sourceScope", "text", "choices", "answerIndex", "explanation", "steps", "commonMistake", "concept", "tags", "estimatedTimeSec"];
 const REQUIRED_LECTURE_FIELDS = ["unitId", "topicId", "skillId", "title", "concept", "formula", "stepGuide", "examples", "commonMistakes", "quizLink"];
@@ -120,7 +120,7 @@ function assertDependencyClosure() {
   }
 }
 
-export async function verifyV2All() {
+export async function verifyV2All({ artifactDir = defaultArtifactDir, manifestDir = defaultManifestDir } = {}) {
   assert.equal(hashPolicy(), EXPECTED_POLICY_HASH, "policy hash changed");
   assert.equal(syllabus.units.length, productionProfile.units);
   assert.equal(UNIT_INVENTORY.length, productionProfile.units);
@@ -196,14 +196,25 @@ export async function verifyV2All() {
   assert.equal(migrationSource.filter(row => row.status !== "mapped-to-v2-skill").length, 0, "unmapped legacy topics");
   assertDependencyClosure();
 
-  for (const [name, bytes] of built.artifacts) assert(fs.readFileSync(path.join(v2Dir, name), "utf8") === bytes, `stale generated artifact ${name}`);
+  for (const [name, bytes] of built.artifacts) assert(fs.readFileSync(path.join(artifactDir, name), "utf8") === bytes, `stale generated artifact ${name}`);
   for (const manifest of built.qaManifests) assert.deepEqual(JSON.parse(fs.readFileSync(path.join(manifestDir, `${manifest.unitId}.production.json`), "utf8")), manifest, `stale ${manifest.unitId} manifest`);
   assert(fs.existsSync(path.join(repoDir, "MATH_V2_PRODUCTION_PROFILE.md")));
   return { policyHash: EXPECTED_POLICY_HASH, contentVersion: built.contentVersion, inventory: built.inventory, policyFindings, normalizedDuplicateGroups: duplicateReview.length, acceptedHistoricalHumanReview: ["u01-s004-v002", "u01-s006-v004"] };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const result = await verifyV2All();
+  const args = process.argv.slice(2);
+  const value = name => {
+    const index = args.indexOf(name);
+    return index >= 0 ? args[index + 1] : null;
+  };
+  if (args.some((arg, index) => index % 2 === 0 && !["--artifact-dir", "--manifest-dir"].includes(arg))) {
+    throw new Error("Usage: node verify-v2-all.mjs [--artifact-dir path] [--manifest-dir path]");
+  }
+  const result = await verifyV2All({
+    artifactDir: path.resolve(value("--artifact-dir") || defaultArtifactDir),
+    manifestDir: path.resolve(value("--manifest-dir") || defaultManifestDir)
+  });
   console.log(`verify-v2-all: OK — ${result.inventory.units} units, ${result.inventory.skills} skills, ${result.inventory.questions} questions, ${result.inventory.lectures} lectures`);
   console.log(JSON.stringify(result));
 }

@@ -136,23 +136,33 @@ export const LECTURE = {
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "先判斷題目要邊界還是內部。",
+      "instruction": "先判斷題目要測量邊界還是內部覆蓋。",
       "check": "圍、框、繞一圈多為周長；鋪、塗、覆蓋多為面積。"
     },
     {
       "step": 2,
-      "instruction": "辨認圖形與必要長度。",
-      "check": "面積特別找垂直高。"
+      "instruction": "辨認圖形與公式所需的邊長、底及對應高。",
+      "check": "面積公式中的高是否垂直於所選底？"
     },
     {
       "step": 3,
-      "instruction": "統一長度單位後代入公式。",
-      "check": "避免公尺與公分混算。"
+      "instruction": "在代入前統一所有長度單位。",
+      "check": "公尺與公分是否仍混在同一算式？"
     },
     {
       "step": 4,
-      "instruction": "檢查答案單位。",
-      "check": "周長用長度單位，面積用平方單位。"
+      "instruction": "依圖形套用周長或面積公式並保留運算順序。",
+      "check": "三角形、梯形是否正確除以二？"
+    },
+    {
+      "step": 5,
+      "instruction": "情境題將面積再乘每單位用量或密度。",
+      "check": "平方單位是否與每平方單位正確抵消？"
+    },
+    {
+      "step": 6,
+      "instruction": "檢查數值量級與答案單位。",
+      "check": "周長用長度單位，面積用平方單位，材料量用題目指定單位。"
     }
   ],
   "workedExamples": [
@@ -163,16 +173,18 @@ export const LECTURE = {
         "周長=2×(8+5)=26 公分。",
         "面積=8×5=40 平方公分。"
       ],
-      "answer": "周長 26 公分；面積 40 平方公分。"
+      "answer": "周長 26 公分；面積 40 平方公分。",
+      "why": "同一組長寬可回答不同幾何量，但周長加總一維邊界、面積計算二維覆蓋；兩個公式與公分、平方公分單位必須分開。"
     },
     {
       "exampleId": "L2",
       "prompt": "三角形底 12 公分、高 7 公分，面積多少？",
       "solutionSteps": [
-        "使用底×高÷2。",
+        "確認七公分是對應底的垂直高。",
         "12×7÷2=42。"
       ],
-      "answer": "42 平方公分。"
+      "answer": "42 平方公分。",
+      "why": "三角形面積是同底同高平行四邊形的一半，因此底乘高後必須除以二；確認垂直高也能避免拿斜邊代入。"
     },
     {
       "exampleId": "L3",
@@ -181,7 +193,8 @@ export const LECTURE = {
         "面積只需底與垂直高。",
         "9×4=36。"
       ],
-      "answer": "36 平方公分。"
+      "answer": "36 平方公分。",
+      "why": "斜邊六公分會影響周長，卻不在指定底九公分的面積公式中；底乘垂直高四公分才表示實際覆蓋大小。"
     },
     {
       "exampleId": "L4",
@@ -190,7 +203,8 @@ export const LECTURE = {
         "兩底和 5+11=16。",
         "16×6÷2=48。"
       ],
-      "answer": "48 平方公分。"
+      "answer": "48 平方公分。",
+      "why": "梯形面積以兩條平行底的平均長度乘高，等價於兩底和乘高再除以二；非平行腰長不需要出現在計算中。"
     }
   ],
   "levelConnections": {
@@ -261,7 +275,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "1611f6112501cd47f704deeefb19593119d455698922e5e72967ff2c87d337db"
+  "contentSha256": "0d686abe03db88214699b2e088a0e070c8f5e85edaa59efee0510caff1165b24"
 };
 
 export const QUESTIONS = [
@@ -291,9 +305,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "周長 24 公分。",
-    "explanation": "沿邊界加總四邊。",
+    "explanation": "正方形四條邊都長六公分，周長是沿邊界一圈的總長，所以 6+6+6+6=24 公分，也可寫 4×6=24 公分。三十六平方公分是面積，單位與本題所問周長不同。",
     "steps": [
-      "4×6=24。"
+      "由正方形性質確定四邊都長六公分。",
+      "把四條邊相加，或用 4×6 計算。",
+      "得到二十四公分，檢查使用長度單位。"
     ],
     "optionAnalysis": [
       {
@@ -317,7 +333,7 @@ export const QUESTIONS = [
         "reason": "只算三邊。"
       }
     ],
-    "misconceptionTarget": "把面積或不完整邊數當周長。",
+    "misconceptionTarget": "把六乘六算成面積，誤用三十六平方公分回答周長。",
     "prerequisiteCheck": "能做乘法並理解周長。",
     "estimatedTimeSec": 90,
     "unitCheck": "周長使用公分，不使用平方公分。",
@@ -329,7 +345,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "61163dc3988418f2c5c4114a3e255c1e2d3842af1f8c92c2d12cb63bd2b36e69"
+    "contentSha256": "c8bd4d7d8eea4cbe9a9cb794a55720a0899d12371f2d9660048f55a15a98c7d0"
   },
   {
     "questionId": "u08-s009-v002",
@@ -358,9 +374,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "面積 36 平方公分。",
-    "explanation": "求內部覆蓋大小。",
+    "explanation": "長方形面積等於長乘寬，因此 9×4=36。題目兩個長度都以公分表示，相乘後單位是平方公分，所以答案為三十六平方公分；二十六公分是周長計算結果且單位也不符。",
     "steps": [
-      "9×4=36。"
+      "辨認題目要求內部覆蓋大小，使用面積。",
+      "將長九公分乘寬四公分，得到三十六。",
+      "把單位寫成平方公分，排除周長型選項。"
     ],
     "optionAnalysis": [
       {
@@ -384,7 +402,7 @@ export const QUESTIONS = [
         "reason": "長方形面積=長×寬=9×4=36。"
       }
     ],
-    "misconceptionTarget": "混淆周長與面積。",
+    "misconceptionTarget": "把長寬相加再乘二求周長，或面積答案仍寫成公分。",
     "prerequisiteCheck": "能做長乘寬。",
     "estimatedTimeSec": 90,
     "unitCheck": "長與寬均為公分，乘積單位為平方公分。",
@@ -396,7 +414,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c0fdda49c1a155d15bbe026a49e6b72fc02740193deef122a44207fd37af0622"
+    "contentSha256": "1f4babd91bae7d80481405b2d3c629c29c434dd5446a05ff633b32e2ce21615c"
   },
   {
     "questionId": "u08-s009-v003",
@@ -425,10 +443,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "面積 40 平方公分。",
-    "explanation": "三角形是同底同高平行四邊形的一半。",
+    "explanation": "三角形面積為底乘對應高再除以二。代入底十公分、高八公分，10×8÷2=40 平方公分；八十平方公分是同底同高平行四邊形面積，少了除以二。",
     "steps": [
-      "10×8=80。",
-      "80÷2=40。"
+      "確認八公分是對底十公分的垂直高。",
+      "套用三角形面積公式 10×8÷2。",
+      "算得四十平方公分，並檢查平方單位。"
     ],
     "optionAnalysis": [
       {
@@ -452,7 +471,7 @@ export const QUESTIONS = [
         "reason": "把底高相加且單位錯。"
       }
     ],
-    "misconceptionTarget": "忘記除以 2 或單位漏平方。",
+    "misconceptionTarget": "忘記三角形公式要除以二，直接回答八十平方公分。",
     "prerequisiteCheck": "能辨認底與高。",
     "estimatedTimeSec": 90,
     "unitCheck": "底與高同為公分，答案平方公分。",
@@ -464,7 +483,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "066128e9a99a6499fef80229cad9edd8bef6ccd71efdae85ad74ae94010ca0b2"
+    "contentSha256": "5884db097ea8f030318d510a1b1c0ad39db22eb0ab27ed43408cd46580980cc0"
   },
   {
     "questionId": "u08-s009-v004",
@@ -493,10 +512,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "周長 38 公尺。",
-    "explanation": "四邊加總。",
+    "explanation": "長方形有兩條十二公尺長邊與兩條七公尺寬邊，周長為 12+7+12+7=38 公尺，也可寫 2×(12+7)。八十四平方公尺是面積，不能用來表示外框一圈長度。",
     "steps": [
-      "12+7=19。",
-      "2×19=38。"
+      "列出長方形四邊為十二、七、十二、七公尺。",
+      "相加或計算 2×(12+7)。",
+      "得到三十八公尺，確認答案為長度單位。"
     ],
     "optionAnalysis": [
       {
@@ -520,7 +540,7 @@ export const QUESTIONS = [
         "reason": "誤算 4×長。"
       }
     ],
-    "misconceptionTarget": "只算長加寬或用面積。",
+    "misconceptionTarget": "只算十二加七的一半周界，或把長乘寬的面積當周長。",
     "prerequisiteCheck": "能使用周長公式。",
     "estimatedTimeSec": 90,
     "unitCheck": "周長為一次方公尺。",
@@ -532,7 +552,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "2f82e7145cff87184cab3f9b5a33c4cf7e2e5a7a67c7f32c11d5066e28d879e5"
+    "contentSha256": "618d389447aa8e07bfc0be10b5f3550a10c01b07e08bf341aa84b1cfb808613d"
   },
   {
     "questionId": "u08-s009-v005",
@@ -562,11 +582,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "面積 90 平方公分。",
-    "explanation": "斜邊長不是高度。",
+    "explanation": "平行四邊形面積只使用底與對應的垂直高，故 15×6=90 平方公分。斜邊九公分不是對底十五公分的垂直距離，不能拿來代替高；一百三十五正是誤用斜邊所得。",
     "steps": [
-      "辨認底 15。",
-      "辨認高 6。",
-      "15×6=90。"
+      "從三個長度中找出底十五與垂直高六。",
+      "套用平行四邊形面積底乘高。",
+      "算得九十平方公分，並說明斜邊九與面積無關。"
     ],
     "optionAnalysis": [
       {
@@ -590,7 +610,7 @@ export const QUESTIONS = [
         "reason": "多乘 2。"
       }
     ],
-    "misconceptionTarget": "把斜邊當高度。",
+    "misconceptionTarget": "看到斜邊九公分就當作高度，錯算十五乘九。",
     "prerequisiteCheck": "能理解高度垂直於底。",
     "estimatedTimeSec": 90,
     "unitCheck": "底高同單位，答案平方公分。",
@@ -602,7 +622,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "6bf87b6aef437ba452078f09a8d880df07d38cf59bd0f27ffad45ecd5f210435"
+    "contentSha256": "7e3790dd58adb81e18dc127080a7f452f56640633b682d9bc4a7cd8b975d8735"
   },
   {
     "questionId": "u08-s009-v006",
@@ -631,11 +651,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "長方形面積=11×5=55；梯形面積=(8+14)×5÷2=55，所以兩者相等。",
-    "explanation": "分別使用長方形與梯形面積公式，兩者都得到 55 平方公分。",
+    "explanation": "長方形面積為 11×5=55 平方公分。梯形面積為 (8+14)×5÷2=55 平方公分；兩個公式各自使用正確尺寸，結果相同，所以兩圖形面積相等，不是相差二十五。",
     "steps": [
-      "長方形：11×5=55 平方公分。",
-      "梯形：(8+14)×5÷2=55 平方公分。",
-      "比較後可知面積相等。"
+      "計算長方形面積，得到五十五平方公分。",
+      "計算梯形兩底和乘高再除以二，也得到五十五。",
+      "比較兩個數值，判定面積相等。"
     ],
     "optionAnalysis": [
       {
@@ -659,7 +679,7 @@ export const QUESTIONS = [
         "reason": "兩圖形計算面積所需資料都已提供。"
       }
     ],
-    "misconceptionTarget": "只計算其中一個圖形，或忘記梯形公式要除以 2。",
+    "misconceptionTarget": "梯形面積漏除以二，或只比較邊長而未分別計算面積。",
     "prerequisiteCheck": "能使用長方形與梯形面積公式。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有長度為公分，面積為平方公分。",
@@ -671,7 +691,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "b4edbc6b38d8820e62428ac3511ce08208567981aa18184b89abdb428f2c2b6f"
+    "contentSha256": "db54fce8bfd66fd76e1115fd601f1936ad26db1d0fdb8cd975ab4535fb8e583f"
   },
   {
     "questionId": "u08-s009-v007",
@@ -701,11 +721,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "乙面積較大 3 平方公分。",
-    "explanation": "同周長下仍需實算面積。",
+    "explanation": "甲面積為 8×4=32 平方公分，乙面積為 7×5=35 平方公分。雖然兩者周長都為二十四公分，相同周長不保證相同面積；乙比甲多三平方公分，因此第四項正確。",
     "steps": [
-      "算甲 32。",
-      "算乙 35。",
-      "35>32。"
+      "分別用長乘寬求甲面積三十二。",
+      "求乙面積三十五。",
+      "比較三十五與三十二，判定乙較大三平方公分。"
     ],
     "optionAnalysis": [
       {
@@ -729,7 +749,7 @@ export const QUESTIONS = [
         "reason": "甲面積 8×4=32，乙面積 7×5=35，所以乙較大。"
       }
     ],
-    "misconceptionTarget": "以為同周長必同面積。",
+    "misconceptionTarget": "因兩個長方形周長相同就直接判面積相同，沒有實際相乘。",
     "prerequisiteCheck": "能分別計算周長與面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "尺寸為公分，面積為平方公分。",
@@ -741,7 +761,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "69bd8f867c856b26cb689056183fd71dd09aa9fa26b6f156bd73c07c0086eb3b"
+    "contentSha256": "0e7bd98b6a55707b35c4595fa92dd139be6c92757747e8587805c444412881dc"
   },
   {
     "questionId": "u08-s009-v008",
@@ -769,11 +789,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "平行四邊形是三角形的 2 倍。",
-    "explanation": "同底同高直接比較公式。",
+    "explanation": "設共同底為 b、共同高為 h，平行四邊形面積是 b×h，三角形面積是 b×h÷2。前者除以後者等於二，所以在同底同高條件下，平行四邊形面積恰為三角形兩倍。",
     "steps": [
-      "A平=bh。",
-      "A三=bh/2。",
-      "A平÷A三=2。"
+      "寫出平行四邊形面積為底乘高。",
+      "寫出三角形面積為底乘高再除以二。",
+      "比較兩式，得到平行四邊形是兩倍。"
     ],
     "optionAnalysis": [
       {
@@ -797,7 +817,7 @@ export const QUESTIONS = [
         "reason": "公式只差一個因數 2。"
       }
     ],
-    "misconceptionTarget": "把倍數方向倒置。",
+    "misconceptionTarget": "忽略三角形公式中的二分之一，誤判兩個圖形面積相同。",
     "prerequisiteCheck": "能理解兩個面積公式。",
     "estimatedTimeSec": 90,
     "unitCheck": "比值無單位。",
@@ -809,7 +829,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "53412d1b4eeb9213634cec9f648317587c3a79162fb568b92772ec5fa1b0c70f"
+    "contentSha256": "da67f51ea4c7a7f3151b6a515468b70c8e4ea61e584e81c1f57d74855b8dc8c7"
   },
   {
     "questionId": "u08-s009-v009",
@@ -838,11 +858,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "寬 8 公分，周長 40 公分。",
-    "explanation": "先由面積反求尺寸，再求周長。",
+    "explanation": "長方形面積等於長乘寬，所以寬為 96÷12=8 公分。再用周長公式 2×(12+8)=40 公分；二十公分只是一組長寬和，不是完整周長，且寬與周長的單位都應為公分。",
     "steps": [
-      "96÷12=8。",
-      "12+8=20。",
-      "2×20=40。"
+      "用面積九十六除以長十二，反求寬八公分。",
+      "將長與寬相加後乘二，求周長四十公分。",
+      "把八、四十代回面積與周長公式驗算。"
     ],
     "optionAnalysis": [
       {
@@ -866,7 +886,7 @@ export const QUESTIONS = [
         "reason": "12×4 只有 48。"
       }
     ],
-    "misconceptionTarget": "把面積與長度直接相減。",
+    "misconceptionTarget": "求得寬後只算十二加八，漏乘二而把二十當成周長。",
     "prerequisiteCheck": "能使用長方形面積與周長公式。",
     "estimatedTimeSec": 90,
     "unitCheck": "面積除長度得到公分，周長仍為公分。",
@@ -878,7 +898,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1e5fc7e7381afa515911b178bff27b23d5d9aacf6a4244366f7324fcf08bdf20"
+    "contentSha256": "7514cc776a2623d9fa2a37eb29064a3a5ec663d977b007b8dda18a7586133f7f"
   },
   {
     "questionId": "u08-s009-v010",
@@ -907,11 +927,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "至少需 93 公尺圍欄。",
-    "explanation": "圍欄沿邊界但入口缺口不鋪設。",
+    "explanation": "花圃完整周長為 2×(30+18)=96 公尺。入口三公尺位於外圍且不設圍欄，所以從完整周長扣除三公尺，得到 96−3=93 公尺；面積五百四十平方公尺與圍欄長度無關。",
     "steps": [
-      "求周長 96。",
-      "扣入口 3。",
-      "得 93。"
+      "先求長方形完整外圍周長九十六公尺。",
+      "辨認三公尺入口是邊界缺口。",
+      "用九十六減三，得到至少九十三公尺圍欄。"
     ],
     "optionAnalysis": [
       {
@@ -935,7 +955,7 @@ export const QUESTIONS = [
         "reason": "只算長加寬後再扣入口。"
       }
     ],
-    "misconceptionTarget": "求成面積或忘記扣入口。",
+    "misconceptionTarget": "用長乘寬求圍欄，或算完完整周長後忘記扣除入口缺口。",
     "prerequisiteCheck": "能計算長方形周長。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有邊界長度以公尺表示，答案公尺。",
@@ -947,7 +967,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "8496f4bdabe8e19970b305b1bbf66f944fd89d12ddf7a122b0e2ddb3bf8dd9fb"
+    "contentSha256": "3641c95870100fb939647d427ebfdb46efb2b876b2adf5dfe47428bf0a16445b"
   },
   {
     "questionId": "u08-s009-v011",
@@ -976,10 +996,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "共需 192 片。",
-    "explanation": "先求覆蓋面積再轉成材料數量。",
+    "explanation": "教室地板面積為 8×6=48 平方公尺。每一平方公尺需要四片地墊，所以總片數為 48×4=192 片；四是面積密度，不能只與長或寬相乘，且最終單位應為片。",
     "steps": [
-      "8×6=48 m²。",
-      "48×4=192。"
+      "先用長乘寬求地板面積四十八平方公尺。",
+      "把每平方公尺四片乘上四十八平方公尺。",
+      "得到一百九十二片，檢查面積單位已抵消。"
     ],
     "optionAnalysis": [
       {
@@ -1003,7 +1024,7 @@ export const QUESTIONS = [
         "reason": "以周長 28×8 誤算。"
       }
     ],
-    "misconceptionTarget": "把周長當鋪設面積或漏乘需求率。",
+    "misconceptionTarget": "把長與寬相加後乘四，或只用其中一個邊長計算地墊片數。",
     "prerequisiteCheck": "能求長方形面積並使用單位率。",
     "estimatedTimeSec": 90,
     "unitCheck": "48 平方公尺×4 片/平方公尺=192 片。",
@@ -1015,7 +1036,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "699ea5b4011006067e4f6648211ebee53651ccc703d15eec8acc1964db5a8331"
+    "contentSha256": "6f63ed24e5802491fdd84d837359d08f25462a58517fa9a52e24f9762cf4b667"
   },
   {
     "questionId": "u08-s009-v012",
@@ -1045,10 +1066,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "總重 3.36 公斤。",
-    "explanation": "先求三角形面積，再乘面密度。",
+    "explanation": "三角形帆布面積為 5.6×3÷2=8.4 平方公尺。每平方公尺重零點四公斤，所以總重是 8.4×0.4=3.36 公斤；六點七二公斤是面積忘記除以二所造成的結果。",
     "steps": [
-      "5.6×3÷2=8.4。",
-      "8.4×0.4=3.36。"
+      "用底五點六乘高三再除以二，求面積八點四。",
+      "將面積乘每平方公尺零點四公斤。",
+      "算得三點三六公斤，並核對最終為重量單位。"
     ],
     "optionAnalysis": [
       {
@@ -1072,7 +1094,7 @@ export const QUESTIONS = [
         "reason": "面積=5.6×3÷2=8.4 平方公尺；重量=8.4×0.4=3.36 公斤。"
       }
     ],
-    "misconceptionTarget": "忘記除以 2 或把面積當重量。",
+    "misconceptionTarget": "三角形面積漏除以二，或把每平方公尺重量直接乘底長。",
     "prerequisiteCheck": "能求三角形面積並使用單位率。",
     "estimatedTimeSec": 90,
     "unitCheck": "平方公尺乘公斤/平方公尺得到公斤。",
@@ -1084,7 +1106,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "be4bb77228d8c025ab60e25b7955ca93dae04ad3147e3cd2ec6cdd9b15791bbe"
+    "contentSha256": "ff6883985896ce0ab1d06c048f5925a506c663ec816e70b1b36bacbe7d24f887"
   }
 ];
 
@@ -1108,18 +1130,18 @@ export const CONSTRUCTED_RESPONSES = [
       "解釋長度單位與平方單位。"
     ],
     "standardSolution": [
-      "圍繩長度是周長：2×(12+7)=38公尺。",
-      "鋪土面積：12×7=84平方公尺。",
-      "周長量測一維邊界，用公尺；面積量測二維覆蓋，用平方公尺。"
+      "圍繩沿花圃外圍一圈，求的是周長：2×(12+7)=38 公尺。",
+      "鋪土覆蓋花圃內部，求的是面積：12×7=84 平方公尺。",
+      "周長是一維邊界長度，因此用公尺；面積是二維覆蓋大小，因此用平方公尺，兩者數值與單位都不能互換。"
     ],
     "alternativeMethods": [
       "周長可逐邊相加12+7+12+7；面積仍用長×寬。"
     ],
     "reasoningSteps": [
-      "由『外圍』辨認周長。",
-      "由『全部鋪』辨認面積。",
-      "分別計算。",
-      "核對單位維度。"
+      "由沿外圍辨認第一問需要周長。",
+      "由內部全部鋪土辨認第二問需要面積。",
+      "分別計算三十八公尺與八十四平方公尺。",
+      "依一維與二維量核對公尺、平方公尺單位。"
     ],
     "rubric": [
       {
@@ -1146,8 +1168,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "周長用公尺，面積用平方公尺，不可互換。",
     "answerOnlyPolicy": "只答兩個數值但無過程與單位最高1分。",
     "commonErrors": [
-      "用12+7=19當完整周長。",
-      "把84寫成84公尺。"
+      "只算 12+7=19 公尺，漏掉長方形另外一組長與寬。",
+      "把面積八十四寫成公尺，沒有使用平方公尺。",
+      "用長乘寬回答圍繩長度，混淆邊界與內部覆蓋。"
     ],
     "independentReview": {
       "derivedResult": "圍繩38公尺；鋪土84平方公尺。",
@@ -1163,7 +1186,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d2beace34d7ce43fdbf803ba5a7398872760b8220b0f833387b2bc14d3c1a460"
+    "contentSha256": "ecd4363981ab7e9203278e328aea2c95761ef3f5d2af23bb269bc92bee9dbbfe"
   },
   {
     "questionId": "u08-s009-cr002",
@@ -1184,19 +1207,18 @@ export const CONSTRUCTED_RESPONSES = [
       "說明底高不變時三角形面積不變。"
     ],
     "standardSolution": [
-      "三角形面積=10×6÷2=30平方公分。",
-      "平行四邊形面積=10×6=60平方公分。",
-      "60÷30=2，所以是2倍。",
-      "三角形斜邊改變但指定底與對應高不變，面積仍為30平方公分。"
+      "三角形面積為 10×6÷2=30 平方公分；平行四邊形面積為 10×6=60 平方公分。",
+      "用六十除以三十得到二，所以同底同高時，平行四邊形面積是三角形的兩倍。",
+      "三角形面積只由所選底與其對應垂直高決定；若斜邊改變但底十公分與高六公分不變，面積仍是三十平方公分。"
     ],
     "alternativeMethods": [
       "可將平行四邊形沿對角線分成兩個同底高三角形，直接看出倍數2。"
     ],
     "reasoningSteps": [
-      "確認同一組底與垂直高。",
-      "計算30與60。",
-      "用比值或分割比較。",
-      "檢查斜邊不是公式中的獨立量。"
+      "確認兩圖形使用相同底與對應垂直高。",
+      "分別套用三角形與平行四邊形面積公式。",
+      "比較六十與三十，得到倍數二。",
+      "檢查斜邊不是面積公式中的獨立量，回答面積不變。"
     ],
     "rubric": [
       {
@@ -1223,8 +1245,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "面積用平方公分；倍數無單位。",
     "answerOnlyPolicy": "只寫30、60、2倍、不變而無公式最高2分。",
     "commonErrors": [
-      "平行四邊形也除以2。",
-      "把斜邊當作高度。"
+      "平行四邊形面積也除以二，誤判兩圖形面積相同。",
+      "把三角形斜邊當作對應高，忽略高必須垂直於底。",
+      "比較倍數時用三十除以六十，將兩倍顛倒成二分之一倍。"
     ],
     "independentReview": {
       "derivedResult": "三角形30平方公分；平行四邊形60平方公分；2倍；三角形面積不變。",
@@ -1240,7 +1263,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c95405dd1e6137492e898165bb74ede1043755ca701aece3f48d02f8042fdb2f"
+    "contentSha256": "b95a39030afa84389fe8b15ce5a6793a9988781a6b7583dbe4076a2ed9107863"
   }
 ];
 
@@ -1249,7 +1272,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v001",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "61163dc3988418f2c5c4114a3e255c1e2d3842af1f8c92c2d12cb63bd2b36e69",
+    "contentSha256": "c8bd4d7d8eea4cbe9a9cb794a55720a0899d12371f2d9660048f55a15a98c7d0",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立相加 6+6+6+6=24。",
@@ -1284,7 +1307,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v002",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "c0fdda49c1a155d15bbe026a49e6b72fc02740193deef122a44207fd37af0622",
+    "contentSha256": "1f4babd91bae7d80481405b2d3c629c29c434dd5446a05ff633b32e2ce21615c",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "以 9 列、每列 4 個單位正方形理解，共 36。",
@@ -1319,7 +1342,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v003",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "066128e9a99a6499fef80229cad9edd8bef6ccd71efdae85ad74ae94010ca0b2",
+    "contentSha256": "5884db097ea8f030318d510a1b1c0ad39db22eb0ab27ed43408cd46580980cc0",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以 10×(8÷2)=40 重算。",
@@ -1354,7 +1377,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v004",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "2f82e7145cff87184cab3f9b5a33c4cf7e2e5a7a67c7f32c11d5066e28d879e5",
+    "contentSha256": "618d389447aa8e07bfc0be10b5f3550a10c01b07e08bf341aa84b1cfb808613d",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立相加 12+7+12+7=38。",
@@ -1389,7 +1412,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v005",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "6bf87b6aef437ba452078f09a8d880df07d38cf59bd0f27ffad45ecd5f210435",
+    "contentSha256": "7e3790dd58adb81e18dc127080a7f452f56640633b682d9bc4a7cd8b975d8735",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "使用垂直高而排除斜邊。",
@@ -1424,7 +1447,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v006",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "b4edbc6b38d8820e62428ac3511ce08208567981aa18184b89abdb428f2c2b6f",
+    "contentSha256": "db54fce8bfd66fd76e1115fd601f1936ad26db1d0fdb8cd975ab4535fb8e583f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "長方形面積為 11×5=55；梯形兩底的平均長度是 (8+14)÷2=11，再乘高 5 也得到 55，所以兩者面積相等。",
@@ -1459,7 +1482,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v007",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "69bd8f867c856b26cb689056183fd71dd09aa9fa26b6f156bd73c07c0086eb3b",
+    "contentSha256": "0e7bd98b6a55707b35c4595fa92dd139be6c92757747e8587805c444412881dc",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立核對兩者周長皆 24，面積不同。",
@@ -1494,7 +1517,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v008",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "53412d1b4eeb9213634cec9f648317587c3a79162fb568b92772ec5fa1b0c70f",
+    "contentSha256": "da67f51ea4c7a7f3151b6a515468b70c8e4ea61e584e81c1f57d74855b8dc8c7",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "以任意正 b、h 消去後得 2。",
@@ -1529,7 +1552,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v009",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "1e5fc7e7381afa515911b178bff27b23d5d9aacf6a4244366f7324fcf08bdf20",
+    "contentSha256": "7514cc776a2623d9fa2a37eb29064a3a5ec663d977b007b8dda18a7586133f7f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "回代面積 12×8=96 且四邊和 40。",
@@ -1564,7 +1587,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v010",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "8496f4bdabe8e19970b305b1bbf66f944fd89d12ddf7a122b0e2ddb3bf8dd9fb",
+    "contentSha256": "3641c95870100fb939647d427ebfdb46efb2b876b2adf5dfe47428bf0a16445b",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立沿四邊總長扣除未設欄區段。",
@@ -1599,7 +1622,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v011",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "699ea5b4011006067e4f6648211ebee53651ccc703d15eec8acc1964db5a8331",
+    "contentSha256": "6f63ed24e5802491fdd84d837359d08f25462a58517fa9a52e24f9762cf4b667",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "面積與單位需求率相乘，平方公尺消去。",
@@ -1634,7 +1657,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s009-v012",
     "unitId": "u08",
     "skillId": "perimeter-area-basic",
-    "contentSha256": "be4bb77228d8c025ab60e25b7955ca93dae04ad3147e3cd2ec6cdd9b15791bbe",
+    "contentSha256": "ff6883985896ce0ab1d06c048f5925a506c663ec816e70b1b36bacbe7d24f887",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以 (5.6÷2)×3×0.4 重算。",

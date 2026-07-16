@@ -132,7 +132,8 @@
       "solutionSteps": [
         "平面切到兩條母線與兩條底面直徑。"
       ],
-      "answer": "長方形。"
+      "answer": "長方形。",
+      "why": "含軸切面會在上下底各留下直徑，並以兩條互相平行的母線連接；直徑垂直母線，所以四邊構成長方形，而非底面圓。"
     },
     {
       "exampleId": "L2",
@@ -140,7 +141,8 @@
       "solutionSteps": [
         "兩條母線會聚於頂點，底邊是底圓直徑。"
       ],
-      "answer": "等腰三角形。"
+      "answer": "等腰三角形。",
+      "why": "軸截面通過圓錐頂點與底圓直徑，左右兩邊是等長母線，因此形成以底圓直徑為底的等腰三角形；扇形則是側面展開圖。"
     },
     {
       "exampleId": "L3",
@@ -149,7 +151,8 @@
         "端點處退化為點。",
         "靠近球心圓變大，過球心後再變小。"
       ],
-      "answer": "由0增至最大圓，再減至0。"
+      "answer": "由0增至最大圓，再減至0。",
+      "why": "截面半徑由球心到切面的距離決定；切面靠近球心時半徑增大，通過球心達最大，之後依球的對稱性縮小，兩端退化為點。"
     },
     {
       "exampleId": "L4",
@@ -157,7 +160,8 @@
       "solutionSteps": [
         "圓柱、圓錐與球均可能有圓截面。"
       ],
-      "answer": "不能。"
+      "answer": "不能。",
+      "why": "平行底面切圓柱或圓錐，以及任意穿過球內部的平面，都可能產生圓形截面；缺少切片方向與尺寸變化時，單一形狀不足以唯一反推。"
     }
   ],
   "commonMistakes": [
@@ -212,13 +216,7 @@
       "立體幾何素養題會以切片資料判讀實物。"
     ]
   },
-  "figureReferences": [
-    {
-      "figureId": "u23-s008-fig001",
-      "purpose": "並列直圓柱與直圓錐的軸截面。",
-      "altText": "左側直圓柱被通過軸的平面切出長方形，右側直圓錐被通過軸的平面切出等腰三角形。"
-    }
-  ],
+  "figureReferences": [],
   "practiceLinks": {
     "mcQuestionIds": [
       "u23-s008-v001",
@@ -251,5 +249,5 @@
     "reviewedAt": "2026-07-12"
   },
   "canonicalization": "JSON keys sorted recursively; contentSha256 field excluded.",
-  "contentSha256": "87c235ae5fcce96608c52b72bb8aeda3c284bf0085a9b1ac487c30b162fe95a3"
+  "contentSha256": "a8b6a2aeeca36e019bcedf18b2297b1ae10f7dcf34c825a025ae0203ce62da9d"
 }

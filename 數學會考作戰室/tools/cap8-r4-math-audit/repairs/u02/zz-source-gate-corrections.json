@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u02",
+  "batch": "003-u02-complete",
+  "skills": ["s001", "s003", "s004", "s005"],
+  "mc": [],
+  "constructedResponse": [
+    {
+      "questionId": "u02-s001-cr002",
+      "expectedContentSha256": "0c81638a8b3d81b28de96e5c96956683fe8f2ddefa80c14451b4b6aaf594f21a",
+      "set": {
+        "commonErrors": [
+          "把最小值十四誤當成唯一答案，沒有繼續逐一列出其倍數。",
+          "只列出二十四而漏掉同樣符合條件的其他整數。",
+          "把上界九十六也列入，忽略題目要求必須小於九十六。"
+        ]
+      }
+    },
+    {
+      "questionId": "u02-s003-cr001",
+      "expectedContentSha256": "b0e293eb2fc7a6e081b55b171f40fb496bece4f1a73f96cd6fa0d49e87a589a5",
+      "set": {
+        "commonErrors": [
+          "分解時漏掉第二個質因數二，使乘回結果不再等於原數。",
+          "把三十五誤判為質數而停止，沒有再分解成五乘以七。"
+        ]
+      }
+    },
+    {
+      "questionId": "u02-s004-cr001",
+      "expectedContentSha256": "c8fa9f5441173da0a0d0f8e8a7f2f49d4d6978493f4ade80bd70a5a129718ea6",
+      "set": {
+        "commonErrors": [
+          "把只出現在其中一個數的質因數五或七也納入最大公因數。",
+          "共同質因數二的指數誤取較大的四，而不是兩數中的較小值。"
+        ]
+      }
+    },
+    {
+      "questionId": "u02-s004-cr002",
+      "expectedContentSha256": "cd1e19796548892ae60a5c29a088606ff8145172507a00e5d3c9bd5a891cadfe",
+      "set": {
+        "commonErrors": [
+          "選四十二時沒有回算，實際最大公因數會變成四十二而不是十四。",
+          "選七十時忽略它與原數的共同因數仍只有十四，需逐項驗算條件。"
+        ]
+      }
+    },
+    {
+      "questionId": "u02-s005-cr001",
+      "expectedContentSha256": "6e16eca30e9075eb53869611cc4ddd6eb6792c520f1eea21d16931f3caf0a811",
+      "set": {
+        "commonErrors": [
+          "求最小公倍數時漏掉質因數五，所得數便不能被含五的原數整除。",
+          "質因數二的指數誤取較小值，混用了最大公因數的選取規則。"
+        ]
+      }
+    },
+    {
+      "questionId": "u02-s005-cr002",
+      "expectedContentSha256": "ddc03a3d88c1c5fcc16d8664418a04b309268913fa82f918296607d4af7fbef8",
+      "set": {
+        "commonErrors": [
+          "只列出十五而沒有依題目範圍繼續檢查十五的其他倍數。",
+          "列入二十五會帶入質因數五的平方，與指定的最小公倍數不符。"
+        ]
+      }
+    }
+  ],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

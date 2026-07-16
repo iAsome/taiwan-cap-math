@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u19",
+  "batch": "020-u19-complete",
+  "skills": ["s008", "s009", "s010", "s011"],
+  "mc": [
+    {
+      "questionId": "u19-s008-v005",
+      "expectedContentSha256": "ae14b4077f1cac034754533f2a5389ec2eea21aed9d512ca864c45812cb0e24b",
+      "appendText": {
+        "explanation": "半徑必須為正，且這段弧長小於半徑12公分的全圓周24π公分，亦符合120°只占整圓三分之一。"
+      }
+    },
+    {
+      "questionId": "u19-s008-v011",
+      "expectedContentSha256": "f25099a8d2e35060bbc0f774cf48770d4d76b155957acefedf760b3b1eb7c670",
+      "appendText": {
+        "explanation": "門外端的移動軌跡是以門軸為圓心的圓弧，因此應計算弧長，而不是扇形面積。"
+      }
+    },
+    {
+      "questionId": "u19-s009-v004",
+      "expectedContentSha256": "d02b57086002abc4b6c0d090053f6e074aeba20e8578d420f3e61e632bddb47b",
+      "appendText": {
+        "explanation": "直徑所對的圓周角固定為直角，這是列出其餘兩角和為90°的關鍵依據。"
+      }
+    },
+    {
+      "questionId": "u19-s009-v009",
+      "expectedContentSha256": "f2ebfec5a9648c3affc6751cf05bcaeea001a8c5323cb6571e7ee6d09b7fe27b",
+      "appendText": {
+        "explanation": "點D位於弧AC上，使射線BD把∠ABC分成相鄰兩角，所以兩個已知角必須先相加。"
+      }
+    },
+    {
+      "questionId": "u19-s010-v005",
+      "expectedContentSha256": "b19460edf80109926ec093f62d2a58269ef3fca11129a8faf6a07c1549c74d7c",
+      "appendText": {
+        "explanation": "題目給的是面積，所以半徑在公式中以平方出現；求得r²後還要開平方並排除負值。"
+      }
+    },
+    {
+      "questionId": "u19-s011-v008",
+      "expectedContentSha256": "f5fff708a4893cfdb9bd32fe7bded1e2828f22dac8c6f8e3d8d0ff8eeef56f1b",
+      "appendText": {
+        "explanation": "圓環面積是外圓面積減內圓面積，半徑比代入後要先平方，不能直接以5－1計算。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

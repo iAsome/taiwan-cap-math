@@ -626,7 +626,7 @@ export const QUESTIONS = [
       {
         "choice": "60%",
         "truth": false,
-        "reason": "只考虑一個方向。"
+        "reason": "只考慮一個方向。"
       },
       {
         "choice": "40%",
@@ -658,7 +658,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "696c841549b5d7f1f4d65cafa76ae92b351f19e7aedb2f89efc6b7452a262af2"
+    "contentSha256": "22b4a8b3fcaf893464d3bd54bee6e09ab51002a204cb09c1a74fe807698ef251"
   },
   {
     "questionId": "u18-s011-v007",
@@ -982,10 +982,10 @@ export const QUESTIONS = [
     "misconceptionTarget": "材料用量只按邊長倍率變化。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
-    "unitAndRoundingCheck": "墨量以 g，覆盖率相同，無額外損耗。",
+    "unitAndRoundingCheck": "墨量以 g，覆蓋率相同，無額外損耗。",
     "ambiguityAndBoundaryAudit": "題目明確每單位面積用墨相同，排除厚度或底色差異。",
-    "difficultyReason": "把几何面積比轉成實際材料用量。",
-    "literacyContextNecessity": "印刷墨量由覆盖面積决定，必須使用面積倍率而非周長倍率。",
+    "difficultyReason": "把幾何面積比轉成實際材料用量。",
+    "literacyContextNecessity": "印刷墨量由覆蓋面積決定，必須使用面積倍率而非周長倍率。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -993,7 +993,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "822512aa9db5d0684724f8b1be749f5c12900710bc080e9d83f5c53a17978d72"
+    "contentSha256": "86ad972d963de3eb9c1070b3d24df1e1b5503a3d114cae2ffe1d2604e7a06abe"
   },
   {
     "questionId": "u18-s011-v012",
@@ -1017,8 +1017,8 @@ export const QUESTIONS = [
       "4/9 倍"
     ],
     "answerIndex": 1,
-    "independentSolution": "同一水深只影響水面轮廓，不是比較體積；面積按兩個水平方向縮放。",
-    "explanation": "水面覆盖是平面面積，倍率=(3/2)²=9/4。",
+    "independentSolution": "同一水深只影響水面輪廓，不是比較體積；面積按兩個水平方向縮放。",
+    "explanation": "水面覆蓋是平面面積，倍率=(3/2)²=9/4。",
     "steps": [
       "辨認所求為水面面積。",
       "取大/小線性倍率 3/2。",
@@ -1050,7 +1050,7 @@ export const QUESTIONS = [
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "答案為無單位倍數。",
-    "ambiguityAndBoundaryAudit": "只比較平面水面覆盖，不考虑池壁斜度與體積。",
+    "ambiguityAndBoundaryAudit": "只比較平面水面覆蓋，不考慮池壁斜度與體積。",
     "difficultyReason": "在立體情境中辨認實際所求仍為二維面積。",
     "literacyContextNecessity": "情境明確比較同一水深的水面面積而非蓄水體積，尺度維度判斷是核心。",
     "visualMode": "text-only",
@@ -1060,7 +1060,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "32a2bae80258bf65719c6497475a66d044c636c667320a563148e951643a8518"
+    "contentSha256": "79e7c040cebffe8809afa034075df54d7cbb646b71b338ab30a3d7e8d2713529"
   }
 ];
 
@@ -1348,7 +1348,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-area",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "696c841549b5d7f1f4d65cafa76ae92b351f19e7aedb2f89efc6b7452a262af2",
+    "contentSha256": "22b4a8b3fcaf893464d3bd54bee6e09ab51002a204cb09c1a74fe807698ef251",
     "independentSolution": "若長和寬都乘 0.6，面積乘 0.6×0.6=0.36。",
     "derivedAnswer": "36%",
     "storedAnswer": "36%",
@@ -1503,7 +1503,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-area",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "822512aa9db5d0684724f8b1be749f5c12900710bc080e9d83f5c53a17978d72",
+    "contentSha256": "86ad972d963de3eb9c1070b3d24df1e1b5503a3d114cae2ffe1d2604e7a06abe",
     "independentSolution": "小墨 180 對應 9 份，每份 20 g，大海報 25 份用 500 g。",
     "derivedAnswer": "500 g",
     "storedAnswer": "500 g",
@@ -1518,11 +1518,11 @@ export const SEMANTIC_REVIEWS = [
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
       "boundary": "題目明確每單位面積用墨相同，排除厚度或底色差異。",
-      "units": "墨量以 g，覆盖率相同，無額外損耗。",
+      "units": "墨量以 g，覆蓋率相同，無額外損耗。",
       "scope": "只使用國中會考範圍內的「相似比與面積比」概念，未要求高中延伸。"
     },
-    "difficultyReason": "把几何面積比轉成實際材料用量。",
-    "literacyNecessityReview": "印刷墨量由覆盖面積决定，必須使用面積倍率而非周長倍率。",
+    "difficultyReason": "把幾何面積比轉成實際材料用量。",
+    "literacyNecessityReview": "印刷墨量由覆蓋面積決定，必須使用面積倍率而非周長倍率。",
     "reviewerNote": "重新由已知條件獨立計算：小墨 180 對應 9 份，每份 20 g，大海報 25 份用 500 g。 四個選項逐一核對後，只有「500 g」符合；主要排除點是「材料用量只按邊長倍率變化。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
@@ -1534,8 +1534,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-area",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "32a2bae80258bf65719c6497475a66d044c636c667320a563148e951643a8518",
-    "independentSolution": "同一水深只影響水面轮廓，不是比較體積；面積按兩個水平方向縮放。",
+    "contentSha256": "79e7c040cebffe8809afa034075df54d7cbb646b71b338ab30a3d7e8d2713529",
+    "independentSolution": "同一水深只影響水面輪廓，不是比較體積；面積按兩個水平方向縮放。",
     "derivedAnswer": "9/4 倍",
     "storedAnswer": "9/4 倍",
     "answerMatch": true,
@@ -1548,13 +1548,13 @@ export const SEMANTIC_REVIEWS = [
     ],
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "只比較平面水面覆盖，不考虑池壁斜度與體積。",
+      "boundary": "只比較平面水面覆蓋，不考慮池壁斜度與體積。",
       "units": "答案為無單位倍數。",
       "scope": "只使用國中會考範圍內的「相似比與面積比」概念，未要求高中延伸。"
     },
     "difficultyReason": "在立體情境中辨認實際所求仍為二維面積。",
     "literacyNecessityReview": "情境明確比較同一水深的水面面積而非蓄水體積，尺度維度判斷是核心。",
-    "reviewerNote": "重新由已知條件獨立計算：同一水深只影響水面轮廓，不是比較體積；面積按兩個水平方向縮放。 四個選項逐一核對後，只有「9/4 倍」符合；主要排除點是「看到蓄水池就誤用體積立方倍率。」。",
+    "reviewerNote": "重新由已知條件獨立計算：同一水深只影響水面輪廓，不是比較體積；面積按兩個水平方向縮放。 四個選項逐一核對後，只有「9/4 倍」符合；主要排除點是「看到蓄水池就誤用體積立方倍率。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }

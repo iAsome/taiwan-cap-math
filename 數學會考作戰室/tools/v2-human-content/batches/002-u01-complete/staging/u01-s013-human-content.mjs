@@ -57,10 +57,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "aᵐ·aⁿ 中共有 m+n 個 a，因此等於 aᵐ⁺ⁿ。",
-    "aᵐ÷aⁿ 透過約去 n 個共同因數，m≥n 時得到 aᵐ⁻ⁿ；底數不能為 0。",
-    "(aᵐ)ⁿ 表示把 aᵐ 相乘 n 次，所以總共有 mn 個 a，指數相乘。",
-    "指數律主要處理乘除，不適用於 aᵐ+aⁿ；加法不能直接把指數相加。"
+    "指數表示同一因數重複相乘的次數。aᵐ×aⁿ 合併後共有 m+n 個因數 a，所以同底數相乘時底數不變、指數相加。",
+    "aᵐ÷aⁿ 可由分子、分母約去共同因數理解；底數 a 必須非 0，且在目前非負指數範圍內，m≥n 時結果為 aᵐ⁻ⁿ。",
+    "(aᵐ)ⁿ 表示把 aᵐ 重複相乘 n 次，因此共有 mn 個因數 a，指數要相乘；積的乘方則要讓括號內每個因數都取得同一指數。",
+    "指數律處理乘法、除法與冪的乘方，不可把 aᵐ+aⁿ 的加法直接改成 aᵐ⁺ⁿ。不同底數時，應先判斷能否改寫成共同底數再合併。"
   ],
   "formalDefinitions": [
     {
@@ -146,44 +146,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "化簡 3⁴×3²。",
-      "solutionSteps": [
-        "同底數相乘。",
-        "指數相加 4+2=6。",
-        "得到 3⁶。"
-      ],
-      "answer": "3⁶。"
+      "answer": "3⁶。",
+      "why": "兩個冪的底數都是 3，相乘時底數保持 3，指數相加為 4+2=6，所以得到 3⁶。展開後共有六個因數 3，也能確認不是把底數改成 9。"
     },
     {
-      "exampleId": "L2",
       "prompt": "化簡 5⁷÷5³。",
-      "solutionSteps": [
-        "同底數相除且底數非 0。",
-        "指數相減 7-3=4。",
-        "得到 5⁴。"
-      ],
-      "answer": "5⁴。"
+      "answer": "5⁴。",
+      "why": "底數 5 非 0，分子、分母可約去三個共同因數 5，原有七個因數便剩四個。因此同底數相除用 7−3=4，結果是 5⁴，不是用 7÷3。"
     },
     {
-      "exampleId": "L3",
       "prompt": "化簡 (2³)⁴。",
-      "solutionSteps": [
-        "這是冪的乘方。",
-        "指數相乘 3×4=12。",
-        "得到 2¹²。"
-      ],
-      "answer": "2¹²。"
+      "answer": "2¹²。",
+      "why": "(2³)⁴ 表示四份 2³ 相乘，每份含三個因數 2，合計有 3×4=12 個 2。因此冪的乘方指數相乘，得到 2¹²，而不是把 3 與 4 相加；展開四份括號也可逐一驗證。"
     },
     {
-      "exampleId": "L4",
       "prompt": "化簡 4³×2⁵。",
-      "solutionSteps": [
-        "4³=(2²)³=2⁶。",
-        "2⁶×2⁵=2¹¹。",
-        "完成共同底數化簡。"
-      ],
-      "answer": "2¹¹。"
+      "answer": "2¹¹。",
+      "why": "先利用 4=2² 把底數統一，4³=(2²)³=2⁶；再算 2⁶×2⁵=2¹¹。改寫後可看出共有十一個因數 2，避免因表面底數不同而直接相加原指數。"
     }
   ],
   "commonMistakes": [
@@ -270,7 +250,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "9956a6debe64ec9be2d25b9efe5124d5d90f677ffad6b6b9524e52ee8d24cd52",
+  "contentSha256": "2df070584d2ce4ebda7a8ace67be1ff076990b5403553dfd6d55b6581e294fa3",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -294,7 +274,7 @@ export const QUESTIONS = [
       "2¹"
     ],
     "answerIndex": 0,
-    "explanation": "同底數相乘，底數不變，指數相加3+4=7。",
+    "explanation": "2³ 與 2⁴ 的底數同為 2，相乘時底數保持不變，指數相加為 3+4=7，所以化簡成 2⁷。展開檢查時共有七個 2 相乘；4⁷ 改了底數，2¹² 則誤把指數相乘。",
     "steps": [
       "確認底數都是2。",
       "相乘用指數相加。",
@@ -304,7 +284,7 @@ export const QUESTIONS = [
       {
         "choice": "2⁷",
         "truth": true,
-        "reason": "2^(3+4)=2⁷。"
+        "reason": "同底數相乘時指數相加，3+4=7，所以得到 2⁷。"
       },
       {
         "choice": "4⁷",
@@ -322,7 +302,7 @@ export const QUESTIONS = [
         "reason": "錯作相減。"
       }
     ],
-    "commonMistake": "把底數也變成4。",
+    "commonMistake": "同底數冪相乘時把底數二也相加成四，因而錯寫成四的七次方。",
     "concept": "同底數乘法指數相加。",
     "tags": [
       "數與量",
@@ -337,7 +317,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "df8c3eb8a3f63077a059e8c1efefa74953b5480095b34e295fb140d35606681c",
+    "contentSha256": "1f014eb4b989863ee4831b25da0f569ba76155767bbc90ea4677a42866e42714",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -359,7 +339,7 @@ export const QUESTIONS = [
       "5²⁴"
     ],
     "answerIndex": 1,
-    "explanation": "同底數相除，指數相減8-3=5，得到5⁵。",
+    "explanation": "5⁸÷5³ 是同底數冪相除，且底數 5 不為 0，因此底數保留 5，指數用 8−3=5，得到 5⁵。展開後約去分子、分母共有的三個 5，也確實剩五個 5，與第二個選項相符。",
     "steps": [
       "底數同為5且非0。",
       "除法指數相減。",
@@ -374,7 +354,7 @@ export const QUESTIONS = [
       {
         "choice": "5⁵",
         "truth": true,
-        "reason": "5^(8-3)=5⁵。"
+        "reason": "同底數相除時指數相減，8-3=5，所以得到 5⁵。"
       },
       {
         "choice": "1⁵",
@@ -387,7 +367,7 @@ export const QUESTIONS = [
         "reason": "把指數相乘。"
       }
     ],
-    "commonMistake": "把8÷3當成指數。",
+    "commonMistake": "把同底數相除誤當成指數相除，直接計算八除以三作為新指數。",
     "concept": "同底數除法指數相減。",
     "tags": [
       "數與量",
@@ -402,7 +382,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4bc7dcc4fb05a3f1848d2b47bcb3a58c57464e34ac1fb3078b6db8b86ca1d6e3",
+    "contentSha256": "036a85831f23ff982d1d008280289fa3f43974ce9f3d4df9c65db4cea1ed8d01",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -424,7 +404,7 @@ export const QUESTIONS = [
       "9⁴⁰"
     ],
     "answerIndex": 2,
-    "explanation": "冪的乘方，指數相乘2×4=8，得到3⁸。",
+    "explanation": "(3²)⁴ 表示把 3² 連乘四次，每一份都有兩個因數 3，因此總共有 2×4=8 個 3，化簡為 3⁸。冪的乘方要乘指數，不是把 2 與 4 相加成 6；逐項展開也會得到相同結果。",
     "steps": [
       "辨認冪的乘方。",
       "指數2×4。",
@@ -444,7 +424,7 @@ export const QUESTIONS = [
       {
         "choice": "3⁸",
         "truth": true,
-        "reason": "3^(2×4)=3⁸。"
+        "reason": "冪的乘方要把指數相乘，2×4=8，所以得到 3⁸。"
       },
       {
         "choice": "9⁴⁰",
@@ -452,7 +432,7 @@ export const QUESTIONS = [
         "reason": "無此規則。"
       }
     ],
-    "commonMistake": "把2與4相加成6。",
+    "commonMistake": "把冪的乘方套成同底數相乘，將二與四相加而錯得三的六次方。",
     "concept": "冪的乘方指數相乘。",
     "tags": [
       "數與量",
@@ -467,7 +447,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "afb2df2d524d52692cc6cdcf09fa81a8a0e7e976e68ea5ec86ac1368a62c71bb",
+    "contentSha256": "57a1fb45195d67232e06f514f8a214cd813f17e654052c94e54cf3f8845b8e83",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -489,7 +469,7 @@ export const QUESTIONS = [
       "2³×5³"
     ],
     "answerIndex": 3,
-    "explanation": "積的乘方要讓每個因數都取三次方：(2×5)³=2³×5³。",
+    "explanation": "(2×5)³ 是整個乘積取三次方，可展開為 (2×5)(2×5)(2×5)。整理相同因數後，2 與 5 都各出現三次，所以等於 2³×5³，而不是只讓其中一個因數帶指數。",
     "steps": [
       "整個乘積取三次方。",
       "2與5各出現三次。",
@@ -514,7 +494,7 @@ export const QUESTIONS = [
       {
         "choice": "2³×5³",
         "truth": true,
-        "reason": "(2×5)^3=2^3×5^3。"
+        "reason": "積的三次方可分配到每個因數，因此 (2×5)³=2³×5³。"
       }
     ],
     "commonMistake": "只把指數分配給其中一個因數。",
@@ -532,7 +512,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "50a72c2e11646eac580e84024a7f042b82d858a1d75d6b7d47ad985e8ba86881",
+    "contentSha256": "dfc381a8b1ee26c96c4f5a531af0614840e1518bac6e8c76019a9d44ec6498b0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -554,7 +534,7 @@ export const QUESTIONS = [
       "2²³"
     ],
     "answerIndex": 0,
-    "explanation": "4³=(2²)³=2⁶，再2⁶×2⁵=2¹¹。",
+    "explanation": "要合併成 2 的單一冪，先把 4 改寫為 2²，因此 4³=(2²)³=2⁶。再用同底數相乘的指數律，2⁶×2⁵=2⁶⁺⁵=2¹¹，所以答案是 2¹¹。展開三個 4 後，每個 4 都提供兩個因數 2，可再次核對。",
     "steps": [
       "把4改寫2²。",
       "冪的乘方得2⁶。",
@@ -582,7 +562,7 @@ export const QUESTIONS = [
         "reason": "把數值混合。"
       }
     ],
-    "commonMistake": "看到4與2底數不同就直接把3+5=8。",
+    "commonMistake": "看到四與二的底數表面不同，未先把四改寫成二的平方就直接相加指數。",
     "concept": "先改寫共同底數再使用指數律。",
     "tags": [
       "數與量",
@@ -597,7 +577,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "808fa451db677a6e38ec151b3bd5a1e5dc430baf33d3023f38ef89c35165b5bd",
+    "contentSha256": "e939de0fac1104a425c0ffb092e41b6ec2dd5a36378e5de3b6cab28de07c2207",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -619,7 +599,7 @@ export const QUESTIONS = [
       "3⁸"
     ],
     "answerIndex": 1,
-    "explanation": "分母3⁴×3²=3⁶，所以3⁹÷3⁶=3³。",
+    "explanation": "先處理分母的乘法，3⁴×3²=3⁴⁺²=3⁶。原式成為 3⁹÷3⁶，再以同底數相除將指數相減，9−6=3，故結果是 3³；分母的兩個冪都必須納入，逐個約分也會得到相同餘數。",
     "steps": [
       "先合併分母指數4+2=6。",
       "再9-6=3。",
@@ -634,7 +614,7 @@ export const QUESTIONS = [
       {
         "choice": "3³",
         "truth": true,
-        "reason": "3^(9-4-2)=3³。"
+        "reason": "分母兩個同底數因數都要扣除，9-4-2=3，所以得到 3³。"
       },
       {
         "choice": "3⁷",
@@ -647,7 +627,7 @@ export const QUESTIONS = [
         "reason": "只減1。"
       }
     ],
-    "commonMistake": "只把9減4，漏掉分母的3²。",
+    "commonMistake": "只用分子的指數九減去分母第一項的四，漏掉分母還有三的二次方。",
     "concept": "括號內先合併，再做同底數除法。",
     "tags": [
       "數與量",
@@ -662,7 +642,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f098c66aa883f6c216d26fb3b234a6ca74ffd774451c09bd25a7d1a68f92bcba",
+    "contentSha256": "585b1ee8c1ec347f74a1ca1d694b6845def7f10a417fb103757fc63ea971664a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -684,7 +664,7 @@ export const QUESTIONS = [
       "27"
     ],
     "answerIndex": 2,
-    "explanation": "同底數相乘指數相加，所以x+3=9，x=6。",
+    "explanation": "等式兩邊底數都是 2，可比較指數。同底數相乘時指數相加，所以左邊為 2ˣ⁺³，得到 x+3=9。等式兩邊同減 3，求得 x=6；代回後 2⁶×2³=2⁹，只有第三個選項符合。",
     "steps": [
       "建立x+3=9。",
       "兩邊減3。",
@@ -712,7 +692,7 @@ export const QUESTIONS = [
         "reason": "把2³與2⁹數值相除後誤讀。"
       }
     ],
-    "commonMistake": "把x×3=9。",
+    "commonMistake": "把同底數相乘的指數關係誤寫成三乘以未知數等於九。",
     "concept": "冪相乘對應指數相加。",
     "tags": [
       "數與量",
@@ -727,7 +707,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "419479e2b46043a8fef2d235c8e8a7a8ef582cf17119cf53af0b85a084e5c89f",
+    "contentSha256": "17691c5e39d74ec9c2228fb760d1903d68091460a185ae3006fb56b1588c1ff7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -749,7 +729,7 @@ export const QUESTIONS = [
       "5²"
     ],
     "answerIndex": 3,
-    "explanation": "(5²)³=5⁶，再5⁶÷5⁴=5²。",
+    "explanation": "先處理冪的乘方，(5²)³=5²ˣ³=5⁶；再以同底數相除，5⁶÷5⁴=5⁶⁻⁴=5²。兩條指數律的順序不可混用，先把 2 與 3 相加會得到錯誤中間式，最後仍保留底數 5。",
     "steps": [
       "冪的乘方2×3=6。",
       "同底數相除6-4=2。",
@@ -774,10 +754,10 @@ export const QUESTIONS = [
       {
         "choice": "5²",
         "truth": true,
-        "reason": "5^(2×3-4)=5²。"
+        "reason": "先將冪的乘方指數相乘，再做同底數相除；2×3-4=2，所以得到 5²。"
       }
     ],
-    "commonMistake": "把(5²)³先寫5⁵。",
+    "commonMistake": "把冪的乘方中二與三相加成五，導致後續除法的指數也跟著錯誤。",
     "concept": "先冪的乘方，再同底數除法。",
     "tags": [
       "數與量",
@@ -792,7 +772,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "516000ba349cf25ca6ebb70fa4663a37fa7260290e6c1f856e743ea5f3064f10",
+    "contentSha256": "2e74a1e51f8adf80c773c3d0e15f89ebdc45558feaa62d07b3ff0002aa6a5e31",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -814,7 +794,7 @@ export const QUESTIONS = [
       "(4²)³=4⁵"
     ],
     "answerIndex": 0,
-    "explanation": "同底數指數相加只適用乘法，不適用加法，所以第一項正確。",
+    "explanation": "指數相加只適用同底數冪相乘，2³+2⁴ 是加法，不能直接合成 2⁷，因此第一個敘述正確。其餘選項分別改錯底數、把冪的乘方指數相加，均不符合指數律。",
     "steps": [
       "辨認第一式是加法。",
       "檢查其他指數律。",
@@ -857,7 +837,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b57bed01f8a4ffc7b727461cc49e9dea6a872ff5bbee2439aa350957f196c784",
+    "contentSha256": "2d94c52b5c7d0de9a5d81c655a3bbf5a43131de3d4ba102a15835a88b1de9d0f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -879,7 +859,7 @@ export const QUESTIONS = [
       "2¹"
     ],
     "answerIndex": 1,
-    "explanation": "前段倍數2³，後段2⁴，連續相乘為2³×2⁴=2⁷。",
+    "explanation": "每次變為原來 2 倍就是乘以 2。前三次的總倍率為 2³，後四次為 2⁴；兩段依序發生，所以總倍率相乘為 2³×2⁴=2³⁺⁴=2⁷，表示共經歷七次倍增。",
     "steps": [
       "前段2³。",
       "後段2⁴。",
@@ -894,7 +874,7 @@ export const QUESTIONS = [
       {
         "choice": "2⁷",
         "truth": true,
-        "reason": "2^(3+4)=2⁷。"
+        "reason": "同底數相乘時指數相加，3+4=7，所以得到 2⁷。"
       },
       {
         "choice": "4⁷",
@@ -907,7 +887,7 @@ export const QUESTIONS = [
         "reason": "把指數相減。"
       }
     ],
-    "commonMistake": "把3次與4次相乘得到12次倍增。",
+    "commonMistake": "把前後兩段的次數三與四相乘成十二，誤以為總共發生十二次倍增。",
     "concept": "連續同倍率階段的次數相加。",
     "tags": [
       "數與量",
@@ -922,7 +902,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩段倍增次數與相同倍率2共同決定2³×2⁴。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "81c098496d7a138174b2b36a8b4f52b64c8a946880e697cc79293bd6e7d6c5f9",
+    "contentSha256": "bab7a81df6f0bf237c6796becba7f5134601a5ee28a66698ba2b55f1b9959cc3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -944,7 +924,7 @@ export const QUESTIONS = [
       "30²"
     ],
     "answerIndex": 2,
-    "explanation": "每輪倍率10²，三輪為(10²)³=10⁶。",
+    "explanation": "每一輪面積都乘以 10²，連續三輪就是把 10² 相乘三次，可寫成 (10²)³。依冪的乘方，指數相乘為 2×3=6，所以總倍率是 10⁶，而不是把 10 與輪數相乘。",
     "steps": [
       "三輪重複乘10²。",
       "寫成冪的乘方。",
@@ -964,7 +944,7 @@ export const QUESTIONS = [
       {
         "choice": "10⁶",
         "truth": true,
-        "reason": "(10²)³=10^(2×3)=10⁶。"
+        "reason": "冪的乘方要把指數相乘，2×3=6，因此 (10²)³=10⁶。"
       },
       {
         "choice": "30²",
@@ -972,7 +952,7 @@ export const QUESTIONS = [
         "reason": "把倍率當加法。"
       }
     ],
-    "commonMistake": "把(10²)³寫成10⁵。",
+    "commonMistake": "把冪的乘方誤用指數相加，將二與三相加而寫成十的五次方。",
     "concept": "相同冪重複相乘形成冪的乘方。",
     "tags": [
       "數與量",
@@ -987,7 +967,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每輪倍率與輪數都是必要條件。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2b8fa4d38d5419b0abcf8943117a4e37548a16fdfb3f7bdf1f9f2842db809a76",
+    "contentSha256": "444d88135889ddf1634cd340354012b554d62d404d8df96e927be65b94c4dc5f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1009,7 +989,7 @@ export const QUESTIONS = [
       "2¹³"
     ],
     "answerIndex": 3,
-    "explanation": "4⁵=(2²)⁵=2¹⁰，再乘2³得2¹³。",
+    "explanation": "先把 4⁵ 改成共同底數：4⁵=(2²)⁵=2¹⁰。再乘原有的 2³，同底數相乘時指數相加，得到 2¹⁰×2³=2¹³。若直接把 4⁵ 當成 2⁵，會少算每個 4 含有的兩個 2，因此第四個選項正確。",
     "steps": [
       "把4改成2²。",
       "冪的乘方得2¹⁰。",
@@ -1037,7 +1017,7 @@ export const QUESTIONS = [
         "reason": "(2²)⁵×2³=2¹⁰×2³=2¹³。"
       }
     ],
-    "commonMistake": "直接把4⁵看成2⁵。",
+    "commonMistake": "把四的五次方直接改寫成二的五次方，沒有先將四表示成二的平方。",
     "concept": "不同底數先轉為共同底數。",
     "tags": [
       "數與量",
@@ -1052,7 +1032,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "原式兩個不同底數與要求「全部寫成2的冪」共同決定轉換。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "99715fc1947520c3b0cfee4580e3e8bad2129d134be0524580988d1e0e7b1f4e",
+    "contentSha256": "e2be0b64a6129dab0455f7fbc86bd87ef3c600c48829e6009c76a840b9672bb6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1073,12 +1053,12 @@ export const CONSTRUCTED_RESPONSES = [
       "指出除法指數相減。"
     ],
     "fullCreditSolution": [
-      "2⁵×2³=2⁸（同底數乘法）。",
-      "2⁸÷2⁴=2⁴（同底數除法）。",
-      "結果2⁴=16。"
+      "先處理同底數相乘：2⁵×2³=2⁵⁺³=2⁸，因為底數 2 保持不變，指數相加。",
+      "再處理同底數相除：2⁸÷2⁴=2⁸⁻⁴=2⁴；底數非 0，指數應相減。",
+      "最後計算 2⁴=16。展開檢查時，八個因數 2 約去四個後正好剩四個，與 2⁴ 一致。"
     ],
     "alternativeSolutions": [
-      "可直接寫2^(5+3-4)=2⁴，但須標明兩條規則。"
+      "可直接把指數合併為 5+3-4=4，寫成 2⁴，但須標明使用同底數乘除兩條規則。"
     ],
     "rubric": [
       {
@@ -1102,16 +1082,16 @@ export const CONSTRUCTED_RESPONSES = [
       "底數2保持不變。"
     ],
     "commonErrors": [
-      "寫4⁴。",
-      "5×3÷4。",
-      "只算5+3。"
+      "把同底數相乘時的底數也相乘，將 2⁵×2³ 錯寫成 4⁸。",
+      "把除法誤作指數相除，用 8÷4 得到 2²，而不是使用指數相減。",
+      "只完成 5+3=8 就停止，漏掉原式後面還要除以 2⁴。"
     ],
     "independentReview": {
       "derivedResult": "2⁴=16。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "c80d2e18637ccd7b5ea16d2158e37031f9ea12f0eecc7c12a904fd808ce389e8",
+    "contentSha256": "2cdd8d44e3baf0d2e806ed249a96f955d05b91b5b4b565ff5f2fb9d079f288e4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1130,10 +1110,10 @@ export const CONSTRUCTED_RESPONSES = [
       "說明因數個數。"
     ],
     "fullCreditSolution": [
-      "8⁴=(2³)⁴=2¹²。",
-      "4³=(2²)³=2⁶。",
-      "2¹²÷2⁶×2⁵=2^(12-6+5)=2¹¹。",
-      "展開觀點：12個2約去6個，再加入5個，共11個。"
+      "先改寫共同底數：8⁴=(2³)⁴=2¹²，因為冪的乘方使指數 3×4=12。",
+      "同理，4³=(2²)³=2⁶，原式成為 2¹²÷2⁶×2⁵。",
+      "依原來乘除順序合併指數，12−6+5=11，所以結果為 2¹¹。",
+      "以因數個數檢查：十二個 2 約去六個後剩六個，再加入五個，共有十一個 2。"
     ],
     "alternativeSolutions": [
       "可先合併8⁴×2⁵後再除，答案相同。"
@@ -1160,16 +1140,16 @@ export const CONSTRUCTED_RESPONSES = [
       "連續乘除的指數為12-6+5。"
     ],
     "commonErrors": [
-      "把8⁴寫2⁷。",
-      "把除法指數相加。",
-      "漏掉2⁵。"
+      "把 8⁴ 的底數與指數直接相加，誤寫成 2⁷，沒有使用 8=2³。",
+      "遇到除法仍把分母指數六相加，將 12−6+5 錯算成 23。",
+      "合併前兩項後就停止，漏掉原式最後仍要乘以 2⁵。"
     ],
     "independentReview": {
       "derivedResult": "2¹¹。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "b2aba9cb721491fd07b70fe18d0e4fa023ca7fb552359a1d470b21c7f99a6528",
+    "contentSha256": "b03bbc98d5ca54c2527b2f77c19c908ee3ccf87ace605dc2559b5d43e8030e76",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

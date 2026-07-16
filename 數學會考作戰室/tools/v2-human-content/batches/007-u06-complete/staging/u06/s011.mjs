@@ -142,7 +142,8 @@ export default {
           "實際距離 7.2×50000=360000 公分=3.6 公里。",
           "時間 3.6÷60=0.06 小時=3.6 分鐘。"
         ],
-        "answer": "3.6 分鐘。"
+        "answer": "3.6 分鐘。",
+        "why": "這題連接比例尺、速率與時間兩層關係。先將圖上距離換成三點六公里，再以每小時六十公里求零點零六小時；最後乘六十換成三點六分鐘，單位才一致。"
       },
       {
         "exampleId": "L2",
@@ -151,7 +152,8 @@ export default {
           "14 人份需 450×14/6=1050 克。",
           "每袋 700 克不足一次 14 人份，因此 0 次完整份量；若問需幾袋則要 2 袋。"
         ],
-        "answer": "0 次完整份量。"
+        "answer": "0 次完整份量。",
+        "why": "先按人數比例求出一次十四人份需一千零五十克，再比較一袋七百克的容量。題目問可完成幾次，材料不足一次時是零次；這與問至少購買幾袋的向上取整不同。"
       },
       {
         "exampleId": "L3",
@@ -160,7 +162,8 @@ export default {
           "最後價=原價×4/5×9/10=原價×18/25。",
           "原價=720×25/18=1000。"
         ],
-        "answer": "1000 元。"
+        "answer": "1000 元。",
+        "why": "兩次折扣依序作用，因此最後價是原價乘二十五分之十八。已知最後七百二十元時要除以這個總倍率，也就是乘二十五分之十八的倒數，才能回推原價一千元。"
       },
       {
         "exampleId": "L4",
@@ -169,7 +172,8 @@ export default {
           "令每份 k，甲 3k，乙原 5k、保留 4k。",
           "保留合計 7k=8400，k=1200；原總 8k=9600。"
         ],
-        "answer": "9600 元。"
+        "answer": "9600 元。",
+        "why": "捐款只改變乙的保留額，甲仍保留三份，乙由五份留下四份，所以保留合計是七份。七份等於八千四百元可求每份，再用原本總共八份回推總獎金。"
       }
     ],
     "commonMistakes": [
@@ -256,7 +260,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "5317824b005a973b76b9dc24000283927be530d45e080c500d4468ee4bb35eb4"
+    "contentSha256": "9ce67d21a9d7c96174672b1922254a19b204c1e2e5a0b42b96ffeaa7caa7deb9"
   },
   "mcQuestions": [
     {
@@ -280,11 +284,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "原價1000時最後720，比例18/25。",
-      "mainExplanation": "第二次折扣作用在第一次後價格。",
-      "explanation": "第二次折扣作用在第一次後價格。",
+      "mainExplanation": "第一次售價是原價的五分之四，第二次九折作用在第一次折後價，因此總倍率為五分之四乘十分之九，化簡成二十五分之十八。兩次折扣不可把折數直接相加或相減。",
+      "explanation": "第一次售價是原價的五分之四，第二次九折作用在第一次折後價，因此總倍率為五分之四乘十分之九，化簡成二十五分之十八。兩次折扣不可把折數直接相加或相減。",
       "steps": [
-        "4/5×9/10",
-        "=18/25"
+        "寫出第一次折後倍率 4/5。",
+        "第二次再乘 9/10，得到 4/5×9/10=36/50。",
+        "將 36/50 約分為 18/25，確認小於一。"
       ],
       "optionAnalysis": [
         {
@@ -308,7 +313,7 @@ export default {
           "reason": "分數乘積未約且倒置。"
         }
       ],
-      "misconceptionTarget": "連續折扣直接相加。",
+      "misconceptionTarget": "把兩次折扣的折數直接相加，沒有依序乘上每一階段的價格倍率。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -329,7 +334,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "094f17747ab3bcf4aa2d66feb307657d71f468f7fa81de3a0743c387505f036c"
+      "contentSha256": "6a4df3ed2811b98a72504293161d1922386ca561d114d5cf2dad66089509569a"
     },
     {
       "questionId": "u06-s011-v002",
@@ -352,12 +357,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "60公里/時等於1公里/分，3公里需3分。",
-      "mainExplanation": "先比例尺，再速度時間。",
-      "explanation": "先比例尺，再速度時間。",
+      "mainExplanation": "圖上六公分在一比五萬的比例尺下代表三十萬公分，也就是三公里。每小時六十公里等於每分鐘一公里，所以三公里需要三分鐘；距離與速率的時間單位已統一。",
+      "explanation": "圖上六公分在一比五萬的比例尺下代表三十萬公分，也就是三公里。每小時六十公里等於每分鐘一公里，所以三公里需要三分鐘；距離與速率的時間單位已統一。",
       "steps": [
-        "6×50000=300000公分=3公里",
-        "3/60小時",
-        "×60=3分鐘"
+        "算實際距離 6×50,000=300,000 公分。",
+        "將 300,000 公分換成 3 公里。",
+        "由 60 公里／時=1 公里／分，求時間 3÷1=3 分鐘。"
       ],
       "optionAnalysis": [
         {
@@ -381,7 +386,7 @@ export default {
           "reason": "多一個10。"
         }
       ],
-      "misconceptionTarget": "小時分鐘未轉換。",
+      "misconceptionTarget": "求得三公里後直接除以六十卻把小時結果當分鐘，漏做時間單位換算。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -402,7 +407,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "cdcf8239a96ca42276dc6760f8f41c292546be7e0fa5fe655740caa08dd516a5"
+      "contentSha256": "5cbce16a3c92a42b558354db1a7cdec7c0088bdc082df1b5481afa88b96c58a4"
     },
     {
       "questionId": "u06-s011-v003",
@@ -425,11 +430,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "備用量105公克，合1155。",
-      "mainExplanation": "先按人份放大，再按新需求加10%。",
-      "explanation": "先按人份放大，再按新需求加10%。",
+      "mainExplanation": "先按人數由六人份放大到十四人份，麵粉需求為四百五十乘十四除以六，等於一千零五十公克。備用百分之十以這個新需求為基準，所以再乘一點一，得到一千一百五十五公克。",
+      "explanation": "先按人數由六人份放大到十四人份，麵粉需求為四百五十乘十四除以六，等於一千零五十公克。備用百分之十以這個新需求為基準，所以再乘一點一，得到一千一百五十五公克。",
       "steps": [
-        "450×14/6=1050",
-        "1050×1.1=1155"
+        "先求人份放大倍率 14÷6。",
+        "計算十四人份基本需求 450×14÷6=1050 公克。",
+        "加備用量：1050×1.10=1155 公克。"
       ],
       "optionAnalysis": [
         {
@@ -453,7 +459,7 @@ export default {
           "reason": "14人份1050公克，再乘1.1得1155。"
         }
       ],
-      "misconceptionTarget": "10%基準用成原6人份。",
+      "misconceptionTarget": "把備用百分之十仍以原六人份四百五十公克為基準，少算放大後備料。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -474,7 +480,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "26201ce0908307648f220518240235f6c40e6002cb3c5f59dadc843eec11a010"
+      "contentSha256": "c23497257030050f49fccdacfda10baf800e4616961a0e990945cff1f2af61fa"
     },
     {
       "questionId": "u06-s011-v004",
@@ -497,12 +503,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "3200+800=4000，分配與捐款兩步一致。",
-      "mainExplanation": "先按3:5分配總額，再對乙的所得乘0.8。",
-      "explanation": "先按3:5分配總額，再對乙的所得乘0.8。",
+      "mainExplanation": "甲乙共八份，乙占五份，所以乙原得六千四百乘八分之五，等於四千元。乙捐出所得的百分之二十後保留百分之八十，四千乘零點八等於三千二百元。",
+      "explanation": "甲乙共八份，乙占五份，所以乙原得六千四百乘八分之五，等於四千元。乙捐出所得的百分之二十後保留百分之八十，四千乘零點八等於三千二百元。",
       "steps": [
-        "乙原得4000",
-        "捐出800",
-        "保留3200"
+        "由 3:5 求乙占總額的 5/8。",
+        "算乙原得 6400×5/8=4000 元。",
+        "乙保留 4000×(1-20%)=3200 元。"
       ],
       "optionAnalysis": [
         {
@@ -526,7 +532,7 @@ export default {
           "reason": "4000元是乙捐前所得。"
         }
       ],
-      "misconceptionTarget": "把20%作用於總額或未區分捐出與保留。",
+      "misconceptionTarget": "把乙捐出的百分之二十套在獎金總額，或把捐出八百誤當保留金額。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -547,7 +553,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d589b7ed260e194fb136d776614c0ce3bdba010a9418bae9456b0b2f6dbd6218"
+      "contentSha256": "03d965a123cf5b3395c4f27233d5ff4d8f5e9a9613619ccc7512ae27bdbe6dae"
     },
     {
       "questionId": "u06-s011-v005",
@@ -570,12 +576,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "5與31互質，且5/31=0.5/3.1。",
-      "mainExplanation": "原總量6份，每份0.5L；更新水量後同乘10化整數。",
-      "explanation": "原總量6份，每份0.5L；更新水量後同乘10化整數。",
+      "mainExplanation": "原液與水共六份，三公升飲料的每份是零點五公升，因此原液零點五、水二點五公升。再加零點六公升水後，水成三點一公升，零點五比三點一同乘十為五比三十一。",
+      "explanation": "原液與水共六份，三公升飲料的每份是零點五公升，因此原液零點五、水二點五公升。再加零點六公升水後，水成三點一公升，零點五比三點一同乘十為五比三十一。",
       "steps": [
-        "濃縮液0.5L",
-        "水2.5+0.6=3.1L",
-        "0.5:3.1=5:31"
+        "由總量三公升除以六份，得每份 0.5 公升。",
+        "原液為 0.5 公升，水由 2.5 增至 3.1 公升。",
+        "將 0.5:3.1 同乘十，化成最簡整數比 5:31。"
       ],
       "optionAnalysis": [
         {
@@ -599,7 +605,7 @@ export default {
           "reason": "6:31把濃縮液錯算0.6L。"
         }
       ],
-      "misconceptionTarget": "把新增實量直接加到份數或提前近似。",
+      "misconceptionTarget": "把新增的零點六公升直接加在原本五份上，混用實際量與比例份數。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -620,7 +626,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b1b5e88a2ee09e051e5657a802a70c6fdbe69f02eeadf8e662ca5e22939c88d8"
+      "contentSha256": "652d72423203d18477a62540327ef59410b103e40884df222add28b1a5ab558d"
     },
     {
       "questionId": "u06-s011-v006",
@@ -643,11 +649,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "若模型為5×15公分，實物2×6公尺，面積12平方公尺。",
-      "mainExplanation": "比例尺作用於兩個長度方向，所以面積倍率平方。",
-      "explanation": "比例尺作用於兩個長度方向，所以面積倍率平方。",
+      "mainExplanation": "比例尺一比四十表示每個長度方向都放大四十倍，所以面積要放大四十的平方，即一千六百倍。七十五平方公分乘一千六百得十二萬平方公分，再除以一萬換成十二平方公尺。",
+      "explanation": "比例尺一比四十表示每個長度方向都放大四十倍，所以面積要放大四十的平方，即一千六百倍。七十五平方公分乘一千六百得十二萬平方公分，再除以一萬換成十二平方公尺。",
       "steps": [
-        "75×1600=120000平方公分",
-        "120000÷10000=12平方公尺"
+        "由長度倍率四十求面積倍率 40²=1600。",
+        "實物面積為 75×1600=120,000 平方公分。",
+        "用 1 平方公尺=10,000 平方公分，換得 12 平方公尺。"
       ],
       "optionAnalysis": [
         {
@@ -671,7 +678,7 @@ export default {
           "reason": "平方公分轉平方公尺少除10。"
         }
       ],
-      "misconceptionTarget": "忘記平方倍率或平方單位換算。",
+      "misconceptionTarget": "面積只乘一次四十，或把平方公分換平方公尺時只除以一百。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -692,7 +699,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b60f202bcb4375e245cf6010d97e99d149ab273d21e726d18d1d50f7d3fb7db9"
+      "contentSha256": "581108a98f36bda9bab10017a81363006691b30ef4736d1e5172167e57443fa2"
     },
     {
       "questionId": "u06-s011-v007",
@@ -715,13 +722,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "總時間12天，完成量48+72=120人日。",
-      "mainExplanation": "工作量分段計算。",
-      "explanation": "工作量分段計算。",
+      "mainExplanation": "工程總量是八人乘十五天，共一百二十人日。前六天八人完成四十八人日，剩下七十二人日；增至十二人後，需要七十二除以十二，等於六天，前後合計完成全部工程。",
+      "explanation": "工程總量是八人乘十五天，共一百二十人日。前六天八人完成四十八人日，剩下七十二人日；增至十二人後，需要七十二除以十二，等於六天，前後合計完成全部工程。",
       "steps": [
-        "8×15=120",
-        "8×6=48",
-        "剩72",
-        "72/12=6"
+        "求總工作量 8×15=120 人日。",
+        "前段完成 8×6=48 人日，剩 120-48=72 人日。",
+        "十二人完成剩餘工作需 72÷12=6 天。"
       ],
       "optionAnalysis": [
         {
@@ -745,7 +751,7 @@ export default {
           "reason": "只用15-6。"
         }
       ],
-      "misconceptionTarget": "忽略已完成工作。",
+      "misconceptionTarget": "直接把十五天依八人與十二人作全程反比，沒有扣除前六天已做工作。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -766,7 +772,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d457d71115da5c09c559a077ee31de7817f4cb738713bf1200deda5e608b38bc"
+      "contentSha256": "fe964b84c1e9dd689b16537f85cbed821756343aea8ec8181e482ced744b428c"
     },
     {
       "questionId": "u06-s011-v008",
@@ -789,12 +795,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "10瓶用7.5L，剩0.6L；11瓶需8.25L不足。",
-      "mainExplanation": "先求總飲料，再向下取整裝滿瓶數。",
-      "explanation": "先求總飲料，再向下取整裝滿瓶數。",
+      "mainExplanation": "原液二份是一點八公升，所以每份零點九公升，九份飲料總量為八點一公升。八點一除以每瓶零點七五得十點八，但只能計算裝滿的瓶數，因此向下取整為十瓶，餘零點六公升。",
+      "explanation": "原液二份是一點八公升，所以每份零點九公升，九份飲料總量為八點一公升。八點一除以每瓶零點七五得十點八，但只能計算裝滿的瓶數，因此向下取整為十瓶，餘零點六公升。",
       "steps": [
-        "總量8.1L",
-        "除0.75=10.8",
-        "向下取整10"
+        "由原液二份等於 1.8 公升，求每份 0.9 公升。",
+        "總份數九份，飲料總量為 9×0.9=8.1 公升。",
+        "計算 8.1÷0.75=10.8，向下取整得十瓶。"
       ],
       "optionAnalysis": [
         {
@@ -818,7 +824,7 @@ export default {
           "reason": "原液2份1.8，每份0.9，總9份8.1公升；8.1÷0.75=10.8，最多裝滿10瓶。"
         }
       ],
-      "misconceptionTarget": "向上取整或只看小數。",
+      "misconceptionTarget": "把十點八瓶向上取整成十一瓶，忽略題目問的是能完全裝滿的瓶數。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -839,7 +845,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a5503c06a2dcbad38e74f7d8ea877cb27f261875f7540cd642279e5fdfe18f3a"
+      "contentSha256": "c54f309d519040558826ad473250016b0bdb4074fa7a9b5b9feb6160c67356bb"
     },
     {
       "questionId": "u06-s011-v009",
@@ -862,11 +868,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "若A單價400、售10張，B單價700、售6張，收入4000與4200。",
-      "mainExplanation": "收入同時受票價與票數影響，倍率相乘。",
-      "explanation": "收入同時受票價與票數影響，倍率相乘。",
+      "mainExplanation": "收入等於票價乘票數。A、B 的收入比為四乘五比七乘三，也就是二十比二十一；A 收入四千元對應二十份，每份二百元，所以 B 的二十一份收入為四千二百元。",
+      "explanation": "收入等於票價乘票數。A、B 的收入比為四乘五比七乘三，也就是二十比二十一；A 收入四千元對應二十份，每份二百元，所以 B 的二十一份收入為四千二百元。",
       "steps": [
-        "收入比4×5:7×3=20:21",
-        "B=4200"
+        "把票價比與票數比相乘，得收入比 4×5:7×3。",
+        "化成 A:B 收入比 20:21。",
+        "由 A 的二十份等於四千元，算 B=4000×21÷20=4200 元。"
       ],
       "optionAnalysis": [
         {
@@ -890,7 +897,7 @@ export default {
           "reason": "把兩比相乘錯。"
         }
       ],
-      "misconceptionTarget": "只使用一個比。",
+      "misconceptionTarget": "只使用票價比或票數比中的一組，沒有認出收入同時受兩個因素影響。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -911,7 +918,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "05dff5d05a285281b59c298ca43c18bf4682e446272df7a09135108753ddd7f2"
+      "contentSha256": "e0419dfe0fb886d03d9838181ba0236f4e417770f0f6d214406b222f7b27a0e7"
     },
     {
       "questionId": "u06-s011-v010",
@@ -934,12 +941,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "75×96=7200公尺。",
-      "mainExplanation": "比例尺、路線增量、速率三步。",
-      "explanation": "比例尺、路線增量、速率三步。",
+      "mainExplanation": "圖上八公分按比例尺換得直線距離六公里。沿路距離比直線多百分之二十，所以是七點二公里，即七千二百公尺；以每分鐘七十五公尺步行，時間為七千二百除以七十五，等於九十六分鐘。",
+      "explanation": "圖上八公分按比例尺換得直線距離六公里。沿路距離比直線多百分之二十，所以是七點二公里，即七千二百公尺；以每分鐘七十五公尺步行，時間為七千二百除以七十五，等於九十六分鐘。",
       "steps": [
-        "8×75000=600000cm=6km",
-        "×1.2=7.2km",
-        "7200/75=96"
+        "換算直線距離：8×75,000=600,000 公分=6 公里。",
+        "求沿路距離：6×1.2=7.2 公里=7200 公尺。",
+        "求步行時間：7200÷75=96 分鐘。"
       ],
       "optionAnalysis": [
         {
@@ -963,7 +970,7 @@ export default {
           "reason": "直線6公里；沿路7.2公里=7200公尺；7200÷75=96。"
         }
       ],
-      "misconceptionTarget": "漏掉起伏倍率或單位。",
+      "misconceptionTarget": "漏乘沿路增加的百分之二十，或用公里直接除以每分鐘公尺而混淆單位。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -984,7 +991,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ca2504e39fcc22e9b8b9424136b8f624091e0ddb29baba3a17ac0eb2ccd04350"
+      "contentSha256": "0684fd13f8434cee1af36b6f72896d8139c1b16e1993eff75ff616f041137e05"
     },
     {
       "questionId": "u06-s011-v011",
@@ -1007,12 +1014,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "方案一440元，方案二440元。",
-      "mainExplanation": "此題不是純正比，需拆固定費與變動費。",
-      "explanation": "此題不是純正比，需拆固定費與變動費。",
+      "mainExplanation": "設用量為 x，第一方案總費用是固定一百二十元加每單位八元，即一百二十加八 x；第二方案是十一 x。令兩式相等得三 x 等於一百二十，所以 x 等於四十，兩方案均為四百四十元。",
+      "explanation": "設用量為 x，第一方案總費用是固定一百二十元加每單位八元，即一百二十加八 x；第二方案是十一 x。令兩式相等得三 x 等於一百二十，所以 x 等於四十，兩方案均為四百四十元。",
       "steps": [
-        "列兩總費用",
-        "120+8x=11x",
-        "x=40"
+        "設用量 x，列第一方案 120+8x、第二方案 11x。",
+        "令費用相同：120+8x=11x，整理得 3x=120。",
+        "求 x=40，代回兩式都得 440 元。"
       ],
       "optionAnalysis": [
         {
@@ -1036,7 +1043,7 @@ export default {
           "reason": "把固定費當用量。"
         }
       ],
-      "misconceptionTarget": "把有固定費方案仍當正比。",
+      "misconceptionTarget": "只比較每單位八元與十一元，忽略第一方案另有一百二十元固定費。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -1057,7 +1064,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "eb948234ff8746eeeac2346e93d435637a79029ab397b254e6f12c81157b01dd"
+      "contentSha256": "fc3e2de3636b7ef061bafe6cc3a3e79ae58333eb1ac8407640aacdd0ca4908d9"
     },
     {
       "questionId": "u06-s011-v012",
@@ -1080,12 +1087,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "逆推74.52/0.9=82.8。",
-      "mainExplanation": "損耗與分配依序處理。",
-      "explanation": "損耗與分配依序處理。",
+      "mainExplanation": "原料先損耗百分之八，剩一百五十乘零點九二，等於一百三十八公斤。乙按二比三分配取得五分之三，即八十二點八公斤；乙再損耗百分之十後保留九成，得到七十四點五二公斤。",
+      "explanation": "原料先損耗百分之八，剩一百五十乘零點九二，等於一百三十八公斤。乙按二比三分配取得五分之三，即八十二點八公斤；乙再損耗百分之十後保留九成，得到七十四點五二公斤。",
       "steps": [
-        "150×0.92=138",
-        "138×3/5=82.8",
-        "82.8×0.9=74.52"
+        "先算總原料損耗後剩 150×0.92=138 公斤。",
+        "乙分得 138×3/5=82.8 公斤。",
+        "乙再保留 90%，得 82.8×0.9=74.52 公斤。"
       ],
       "optionAnalysis": [
         {
@@ -1109,7 +1116,7 @@ export default {
           "reason": "用原料150的60%。"
         }
       ],
-      "misconceptionTarget": "把兩次百分比直接相減或順序錯。",
+      "misconceptionTarget": "把兩次損耗百分率直接相加，或先分配原始一百五十公斤再處理總損耗。",
       "prerequisiteCheck": {
         "skillIds": [
           "continued-ratio-preview"
@@ -1130,7 +1137,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "76d916e65244bbd934b89250e2d235031ca5eb4a504a57dc66c08ac007aeed80"
+      "contentSha256": "92660cc8457a3dbaad879e09b20b74cd2d230eda063d19fdef6d1f383c4007eb"
     }
   ],
   "constructedResponses": [
@@ -1151,17 +1158,18 @@ export default {
         "用步速求時間。"
       ],
       "fullCreditSolution": [
-        "平面距離9×60000=540000公分=5.4公里。",
-        "實際路線5.4×1.1=5.94公里=5940公尺。",
-        "時間5940÷75=79.2分鐘。"
+        "圖上九公分按一比六萬換得平面距離 9×60,000=540,000 公分，也就是五點四公里。",
+        "實際路線比平面距離多百分之十，所以路線長為 5.4×1.1=5.94 公里，換成五千九百四十公尺。",
+        "步行時間為 5940÷75=79.2 分鐘。",
+        "回查每分鐘七十五公尺走七十九點二分鐘，路程正好五千九百四十公尺。"
       ],
       "alternativeSolutions": [
         "可先算75公尺/分=4.5公里/時，再以5.94÷4.5小時轉分鐘。"
       ],
       "reasoningSteps": [
-        "平面距離9×60000=540000公分=5.4公里。",
-        "實際路線5.4×1.1=5.94公里=5940公尺。",
-        "時間5940÷75=79.2分鐘。"
+        "依比例尺把圖上公分換為實際公里。",
+        "以平面距離為基準增加百分之十，再把公里換成公尺。",
+        "用實際路線距離除以每分鐘步速，求得分鐘數並回查。"
       ],
       "rubric": [
         {
@@ -1188,9 +1196,9 @@ export default {
       "unitNotationRules": "公里需換公尺後才能除以公尺/分鐘；最後單位分鐘。",
       "answerOnlyPolicy": "只寫79.2分鐘最多2分。",
       "commonErrors": [
-        "比例尺分母當公里。",
-        "增加率基準用5.94。",
-        "小時分鐘混淆。"
+        "把比例尺分母六萬直接當成公里數，沒有維持公分單位。",
+        "增加百分之十時誤以五點九四公里為基準，形成重複增加。",
+        "用公尺除以每小時速率或把七十九點二分鐘誤寫成七十九點二小時。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1205,7 +1213,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "fa47007240bf6c32f6fa42687d47006276e4ee5f5357e2683341d27035e562c2"
+      "contentSha256": "0228b3a52c8b5f04be37d98220290c0296cfdc0e504a2b2b57d5e57d5b08cd4d"
     },
     {
       "questionId": "u06-s011-cr002",
@@ -1224,19 +1232,18 @@ export default {
         "只對甲加20%並重算比。"
       ],
       "fullCreditSolution": [
-        "損耗後200×0.95=190公斤。",
-        "甲=190×2/5=76公斤，乙=190×3/5=114公斤。",
-        "甲加輔料後=76×1.2=91.2公斤。",
-        "最後比91.2:114=912:1140=4:5。"
+        "原料先損耗百分之五，剩餘重量為 200×0.95=190 公斤。",
+        "按甲:乙=2:3 分配，甲得 190×2/5=76 公斤，乙得 190×3/5=114 公斤。",
+        "只有甲加入自身重量百分之二十的輔料，所以甲最後為 76×1.2=91.2 公斤，乙仍為一百一十四公斤。",
+        "最後比為 91.2:114，同乘十並約分得 912:1140=4:5。"
       ],
       "alternativeSolutions": [
         "可用份數每份38公斤，甲76、乙114，再處理甲。"
       ],
       "reasoningSteps": [
-        "損耗後200×0.95=190公斤。",
-        "甲=190×2/5=76公斤，乙=190×3/5=114公斤。",
-        "甲加輔料後=76×1.2=91.2公斤。",
-        "最後比91.2:114=912:1140=4:5。"
+        "先處理整批原料的百分之五損耗。",
+        "將剩餘一百九十公斤依二比三分給甲乙。",
+        "只對甲乘一點二，再把兩個最後重量化成最簡比。"
       ],
       "rubric": [
         {
@@ -1263,9 +1270,9 @@ export default {
       "unitNotationRules": "重量用公斤；比的兩項同單位後可省略單位。",
       "answerOnlyPolicy": "只寫4:5最多1分。",
       "commonErrors": [
-        "20%以原總量為基準。",
-        "乙也乘1.2。",
-        "損耗後仍用200分配。"
+        "把甲增加的百分之二十以原總量二百公斤為基準。",
+        "誤以為乙也要乘一點二，使兩者比仍維持二比三。",
+        "忽略先發生的整批損耗，仍直接用二百公斤進行分配。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1280,7 +1287,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "a21819f9b1713c8fa783fd0aa9e37ba00ae17b8966cb66f54d1d9b52129b56aa"
+      "contentSha256": "ee395f3aaf7777084590cb0b04717f3aae545e24d520e3e7bb2e8d33f9dc364a"
     }
   ],
   "semanticReviews": [
@@ -1289,7 +1296,7 @@ export default {
       "questionId": "u06-s011-v001",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "094f17747ab3bcf4aa2d66feb307657d71f468f7fa81de3a0743c387505f036c",
+      "contentSha256": "6a4df3ed2811b98a72504293161d1922386ca561d114d5cf2dad66089509569a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1326,7 +1333,7 @@ export default {
       "questionId": "u06-s011-v002",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "cdcf8239a96ca42276dc6760f8f41c292546be7e0fa5fe655740caa08dd516a5",
+      "contentSha256": "5cbce16a3c92a42b558354db1a7cdec7c0088bdc082df1b5481afa88b96c58a4",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1363,7 +1370,7 @@ export default {
       "questionId": "u06-s011-v003",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "26201ce0908307648f220518240235f6c40e6002cb3c5f59dadc843eec11a010",
+      "contentSha256": "c23497257030050f49fccdacfda10baf800e4616961a0e990945cff1f2af61fa",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1400,7 +1407,7 @@ export default {
       "questionId": "u06-s011-v004",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "d589b7ed260e194fb136d776614c0ce3bdba010a9418bae9456b0b2f6dbd6218",
+      "contentSha256": "03d965a123cf5b3395c4f27233d5ff4d8f5e9a9613619ccc7512ae27bdbe6dae",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1437,7 +1444,7 @@ export default {
       "questionId": "u06-s011-v005",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "b1b5e88a2ee09e051e5657a802a70c6fdbe69f02eeadf8e662ca5e22939c88d8",
+      "contentSha256": "652d72423203d18477a62540327ef59410b103e40884df222add28b1a5ab558d",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1474,7 +1481,7 @@ export default {
       "questionId": "u06-s011-v006",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "b60f202bcb4375e245cf6010d97e99d149ab273d21e726d18d1d50f7d3fb7db9",
+      "contentSha256": "581108a98f36bda9bab10017a81363006691b30ef4736d1e5172167e57443fa2",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1511,7 +1518,7 @@ export default {
       "questionId": "u06-s011-v007",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "d457d71115da5c09c559a077ee31de7817f4cb738713bf1200deda5e608b38bc",
+      "contentSha256": "fe964b84c1e9dd689b16537f85cbed821756343aea8ec8181e482ced744b428c",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1548,7 +1555,7 @@ export default {
       "questionId": "u06-s011-v008",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "a5503c06a2dcbad38e74f7d8ea877cb27f261875f7540cd642279e5fdfe18f3a",
+      "contentSha256": "c54f309d519040558826ad473250016b0bdb4074fa7a9b5b9feb6160c67356bb",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1585,7 +1592,7 @@ export default {
       "questionId": "u06-s011-v009",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "05dff5d05a285281b59c298ca43c18bf4682e446272df7a09135108753ddd7f2",
+      "contentSha256": "e0419dfe0fb886d03d9838181ba0236f4e417770f0f6d214406b222f7b27a0e7",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1622,7 +1629,7 @@ export default {
       "questionId": "u06-s011-v010",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "ca2504e39fcc22e9b8b9424136b8f624091e0ddb29baba3a17ac0eb2ccd04350",
+      "contentSha256": "0684fd13f8434cee1af36b6f72896d8139c1b16e1993eff75ff616f041137e05",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1659,7 +1666,7 @@ export default {
       "questionId": "u06-s011-v011",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "eb948234ff8746eeeac2346e93d435637a79029ab397b254e6f12c81157b01dd",
+      "contentSha256": "fc3e2de3636b7ef061bafe6cc3a3e79ae58333eb1ac8407640aacdd0ca4908d9",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1696,7 +1703,7 @@ export default {
       "questionId": "u06-s011-v012",
       "unitId": "u06",
       "skillId": "ratio-composite-problem",
-      "contentSha256": "76d916e65244bbd934b89250e2d235031ca5eb4a504a57dc66c08ac007aeed80",
+      "contentSha256": "92660cc8457a3dbaad879e09b20b74cd2d230eda063d19fdef6d1f383c4007eb",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

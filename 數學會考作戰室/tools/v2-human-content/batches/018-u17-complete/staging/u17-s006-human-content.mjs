@@ -590,7 +590,7 @@ export const QUESTIONS = [
     "type": "mc",
     "itemType": "single-choice",
     "sourceScope": "CAP_108_JUNIOR_MATH",
-    "text": "某同位角為103°，與另一交點所求角相鄰的是它的同位角。所求角是多少？",
+    "text": "已知 a∥b，某同位角為103°，與另一交點所求角相鄰的角是它的同位角。所求角是多少？",
     "givenConditions": [
       "所有平行、垂直、等長與角度條件均以題幹或圖上記號為準。"
     ],
@@ -647,7 +647,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d7797af14274f13bf3e09342e311b2369ebdc9e7803cf1bbe465e5beb82acb4c"
+    "contentSha256": "924d372cb9355d075d070f660d7fa3c3e7a723574867d0830cf0f15afd2e091a"
   },
   {
     "questionId": "u17-s006-v007",

@@ -14,7 +14,8 @@ export const LECTURE = {
     "能說明 x 截距與 y 截距的意義。",
     "能以 y=0 求 x 截距。",
     "能以 x=0 求 y 截距。",
-    "能區分截距值與截距點坐標。"
+    "能區分截距值與截距點坐標。",
+    "能判斷兩個互不相同的截距點才足以唯一決定直線。"
   ],
   "prerequisites": [
     {
@@ -59,10 +60,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "截距的規則來自坐標軸上的點，而不是需要死背的交換法。",
-    "求 x 截距時，找直線在 x 軸上的點，所以令 y=0；求 y 截距時令 x=0。",
-    "『x 截距為 3』指數值 3；『x 截距點』則必須寫成 (3,0)。",
-    "通過原點的直線兩種截距值都為 0，兩個截距點其實是同一個原點。"
+    "截距的規則來自坐標軸上的點。求 x 截距時找直線在 x 軸上的交點，所以令 y=0；求 y 截距時令 x=0。截距是非零分量的數值，截距點則必須寫成完整有序數對。",
+    "若一條直線分別與兩坐標軸交於兩個互不相同的點，這兩個截距點就是兩個不同點，足以唯一決定直線。關鍵是『兩個不同點』，不是只因資料名稱中出現兩種截距。",
+    "通過原點的非軸直線，其 x 截距與 y 截距都為零，兩個截距點其實同為 (0,0)。這只提供一個不同點，無法判定是哪一條過原點直線，必須再找線上另一個不同點。",
+    "水平線與垂直線還要檢查是否平行或重合於坐標軸。設零若產生矛盾，表示沒有該軸截距；若整條直線與軸重合，交點不是唯一，不能硬套一般截距點規則。"
   ],
   "formalDefinitions": [
     {
@@ -91,10 +92,11 @@ export const LECTURE = {
     }
   ],
   "nonApplicableCases": [
-    "垂直線 x=a 沒有唯一 y 截距，除非 a=0 且整條線為 y 軸；本單元以一般會考語境處理。",
-    "水平線 y=b 沒有唯一 x 截距，除非 b=0。",
-    "截距值不是有序數對。",
-    "截距點不可漏寫另一個 0 分量。"
+    "垂直線 x=a 沒有唯一 y 截距；若 a=0，整條線與 y 軸重合，交點更不是單一點。",
+    "水平線 y=b 沒有唯一 x 截距；若 b=0，整條線與 x 軸重合。",
+    "截距值不是有序數對，截距點不可漏寫另一個零分量。",
+    "單一截距點不足以唯一決定直線。",
+    "通過原點時兩截距點重合，須另找一個不同線上點才可唯一決定直線。"
   ],
   "method": [
     {
@@ -128,64 +130,77 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "2x+3y=12 的 x 截距。",
       "solutionSteps": [
-        "令 y=0，得 2x=12。",
-        "x=6。"
+        "令 y=0，得到 2x=12。",
+        "解得 x=6，截距點為 (6,0)。",
+        "代回確認十二等於右邊，但單一點尚不足以唯一畫直線。"
       ],
-      "answer": "x 截距為 6，截距點為 (6,0)。"
+      "answer": "x 截距為 6，截距點為 (6,0)。",
+      "why": "x 軸上的點縱坐標為零，所以令 y=0 後解出橫坐標六。題目只求一種截距；這個結果確定直線經過 (6,0)，但沒有第二個不同條件時仍有許多直線可通過此點。"
     },
     {
       "exampleId": "L2",
       "prompt": "4x-y=8 的 y 截距點。",
       "solutionSteps": [
-        "令 x=0，得 -y=8。",
-        "y=-8。"
+        "令 x=0，得到 -y=8。",
+        "解得 y=-8，寫成點 (0,-8)。",
+        "把點代回原式，左邊為八。"
       ],
-      "answer": "(0,-8)。"
+      "answer": "(0,-8)。",
+      "why": "y 軸上的點橫坐標為零，因此由負 y 等於八得到 y=-8。負號與分量位置都要保留；截距值是負八，題目要求點時才寫成 (0,-8)。"
     },
     {
       "exampleId": "L3",
       "prompt": "x+2y=0 的兩種截距。",
       "solutionSteps": [
-        "令 y=0 得 x=0。",
-        "令 x=0 得 y=0。"
+        "令 y=0 得 x=0，x 截距點為原點。",
+        "令 x=0 得 y=0，y 截距點仍是原點。",
+        "兩次所得是同一個點，須另找例如 (2,-1) 才能唯一畫出此直線。"
       ],
-      "answer": "兩種截距皆為 0，交點都是原點。"
+      "answer": "兩種截距皆為 0，交點都是原點；僅靠截距不能唯一決定直線。",
+      "why": "兩種截距值雖都存在，但對應的截距點完全重合，只提供原點這一個不同點。所有過原點的非軸直線都有相同截距，因此必須再取得另一個線上點才能唯一決定本題直線。"
     },
     {
       "exampleId": "L4",
       "prompt": "3x+6y=9 的兩截距點。",
       "solutionSteps": [
-        "y=0 得 x=3。",
-        "x=0 得 y=3/2。"
+        "令 y=0 得 x=3，所以 x 截距點為 (3,0)。",
+        "令 x=0 得 y=3/2，所以 y 截距點為 (0,3/2)。",
+        "兩點互不相同且都代回成立，因此可用它們唯一畫出直線。"
       ],
-      "answer": "(3,0) 與 (0,3/2)。"
+      "answer": "(3,0) 與 (0,3/2)。",
+      "why": "兩次設零得到的截距點位於不同坐標軸且互不重合，正好構成兩個不同點。平面上兩個不同點唯一決定一直線，所以本例可用截距點作圖；這項結論不適用於兩點同為原點的情形。"
     }
   ],
   "commonMistakes": [
     {
       "mistake": "求 x 截距時令 x=0。",
       "why": "把軸名與設零變數混淆。",
-      "correction": "x 軸上的點是 y=0。"
+      "correction": "x 軸上的點是 y=0，所以應令另一個變數 y 為零。"
     },
     {
-      "mistake": "截距為 6 卻寫成 (6,0) 而題目只問值。",
-      "why": "未分清值與點。",
-      "correction": "先看題目用『截距』或『截距點』。"
+      "mistake": "題目只問截距值，卻直接寫截距點。",
+      "why": "未分清單一數值與有序數對。",
+      "correction": "先辨認題目使用『截距』或『截距點』，再選擇表示方式。"
     },
     {
       "mistake": "把 -y=8 解成 y=8。",
-      "why": "漏掉負號。",
-      "correction": "兩邊同乘 -1 得 y=-8。"
+      "why": "除以負一時漏掉負號。",
+      "correction": "兩邊同除以負一，得到 y=-8，並代回檢查。"
     },
     {
-      "mistake": "認為通過原點有兩個不同交點。",
-      "why": "忽略兩截距點重合。",
-      "correction": "(0,0) 同時在兩軸。"
+      "mistake": "認為通過原點有兩個不同截距點。",
+      "why": "把 x 截距點與 y 截距點的名稱差異誤當成位置差異。",
+      "correction": "兩點都寫出坐標後會發現同為 (0,0)。"
+    },
+    {
+      "mistake": "知道 x、y 兩種截距就認為一定唯一決定直線。",
+      "why": "若兩截距點重合，只得到一個不同點，仍有許多直線符合。",
+      "correction": "確認兩截距點互不相同；若重合，另找一個不同線上點。"
     },
     {
       "mistake": "對水平或垂直特殊線硬求兩個一般截距。",
-      "why": "忽略平行或重合情形。",
-      "correction": "先辨認 x=常數、y=常數。"
+      "why": "忽略直線可能與坐標軸平行或重合。",
+      "correction": "先判斷是否有唯一交點，再使用設零程序。"
     }
   ],
   "selfCheck": [
@@ -195,16 +210,17 @@ export const LECTURE = {
     "特殊水平垂直線是否另行判斷？"
   ],
   "summary": [
-    "x 截距：令 y=0。",
-    "y 截距：令 x=0。",
-    "值與點要分開表達。",
-    "通過原點時兩截距點重合。"
+    "x 截距令 y=0，y 截距令 x=0。",
+    "截距值與截距點要分開表達。",
+    "只有兩個互不相同的截距點才足以唯一決定直線。",
+    "通過原點時兩截距點重合，必須另找一個不同點。",
+    "水平線、垂直線與坐標軸重合情形要另行判斷。"
   ],
   "connections": {
     "previous": "承接點在線上的代入判定與軸上點的零分量。",
     "next": [
       "下一節用聯立方程式找兩直線共同的交點。",
-      "截距也可提供畫直線的兩個代表點。"
+      "兩個互不相同的截距點可用來唯一畫出直線；若截距點重合，須另找第二個不同點。"
     ]
   },
   "practiceLinks": {
@@ -236,13 +252,13 @@ export const LECTURE = {
     "examplesNotCopiedFromBank": true,
     "symbolDefinitionsComplete": true,
     "futureUnitKnowledgeAvoided": true,
-    "reviewNote": "重新計算四個方程式的設零、符號與分數結果；人工區分截距值和截距點，並加入通過原點及特殊直線的邊界說明。",
+    "reviewNote": "重新計算四個方程式的設零、符號與分數結果；除區分截距值與截距點外，並明確複核唯一性條件：只有取得兩個互不相同的點時才足以唯一決定直線，通過原點使兩截距點重合時必須另找第二個不同點。",
     "reviewVersion": "human-lecture-review-u05-r1.0",
     "reviewedAt": "2026-07-12"
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "cf69b7d6b8ecebc6ceadea87c8003b21464a678ee77e1c26e66d7b85df9ebf1e"
+  "contentSha256": "a5201af6cbc95b1747f0429c6b689ea2c26da1bd77c862bce754e5905a22da67"
 };
 
 export const QUESTIONS = [
@@ -270,10 +286,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "求 x 截距令 y=0，得 2x=8，所以 x=4。",
-    "explanation": "求 x 截距令 y=0，得 2x=8，所以 x=4。",
+    "explanation": "x 截距是直線與 x 軸交點的橫坐標，而 x 軸上的點滿足 y=0。代入 2x+y=8 得 2x=8，所以 x=4，截距值為四、截距點為 (4,0)。單一截距點本身並不足以唯一決定整條直線。",
     "steps": [
-      "令 y=0。",
-      "解 2x=8。"
+      "利用 x 軸上 y=0，將 y 設為零。",
+      "解 2x=8，得到 x=4。",
+      "依題目只問截距值，回答四並以 (4,0) 回代。"
     ],
     "optionAnalysis": [
       {
@@ -297,7 +314,7 @@ export const QUESTIONS = [
         "reason": "錯把係數當答案。"
       }
     ],
-    "misconceptionTarget": "求 x 截距時未令 y=0。",
+    "misconceptionTarget": "求 x 截距時錯把 x 設為零，或把單一截距點誤認為已唯一決定直線。",
     "prerequisiteCheck": "需知道 x 軸上 y=0。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -310,7 +327,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c380a3460c0a2ae85513ea14176d4f2de7d84aa1b88c63086163d3fd867b35a7"
+    "contentSha256": "14320204bcb983caef0cd69bae3f6c466d83af9e5df46ca34e4e73f9d7c2b65c"
   },
   {
     "questionId": "u05-s010-v002",
@@ -336,10 +353,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "求 y 截距令 x=0，得 -3y=6，y=-2，所以點為 (0,-2)。",
-    "explanation": "求 y 截距令 x=0，得 -3y=6，y=-2，所以點為 (0,-2)。",
+    "explanation": "y 截距點位於 y 軸，所以橫坐標 x=0。代入 x-3y=6 得 -3y=6，兩邊除以負三後 y=-2。題目要求的是點坐標，因此寫成 (0,-2)，不能只寫負二，也不能把分量交換。",
     "steps": [
-      "令 x=0。",
-      "解 y=-2 並寫成點。"
+      "利用 y 軸上 x=0，將 x 設為零。",
+      "解 -3y=6，得到 y=-2。",
+      "把截距值放在第二分量，寫成點 (0,-2)。"
     ],
     "optionAnalysis": [
       {
@@ -363,7 +381,7 @@ export const QUESTIONS = [
         "reason": "這是 x 截距點。"
       }
     ],
-    "misconceptionTarget": "截距值與截距點或負號混淆。",
+    "misconceptionTarget": "把 y 截距點的非零分量放到第一格，或負係數除法時漏掉負號。",
     "prerequisiteCheck": "需會軸上點。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -376,7 +394,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "97846362f6735f5a840dc8c632cc6a9a9cb0436680519a2a21f67b34d50aea5a"
+    "contentSha256": "50d7a34d95cf124ee9306efa5ad001d8465544b80bd4f34dedb65326f3592f1c"
   },
   {
     "questionId": "u05-s010-v003",
@@ -402,10 +420,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "x 截距是交點的橫坐標，且 x 軸上 y=0，所以交點 (-5,0)。",
-    "explanation": "x 截距是交點的橫坐標，且 x 軸上 y=0，所以交點 (-5,0)。",
+    "explanation": "x 截距負五是直線與 x 軸交點的橫坐標；x 軸上縱坐標固定為零，因此交點是 (-5,0)。負號必須保留，且不能寫成 (0,-5)。這項資料只給一個點，若沒有其他條件仍不能唯一決定直線。",
     "steps": [
-      "把截距值放第一分量。",
-      "第二分量寫 0。"
+      "辨認 x 截距值是交點的第一分量負五。",
+      "利用 x 軸上 y=0，補上第二分量零。",
+      "寫成 (-5,0)，並確認負號與分量順序。"
     ],
     "optionAnalysis": [
       {
@@ -429,7 +448,7 @@ export const QUESTIONS = [
         "reason": "負號遺失。"
       }
     ],
-    "misconceptionTarget": "把截距名稱當成非零分量位置交換。",
+    "misconceptionTarget": "把 x 截距值放在第二分量，或認為一個截距點就能唯一決定直線。",
     "prerequisiteCheck": "需理解有序數對。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -442,7 +461,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6439953fa8cfbc0c9adcd5c823a1d3d0775a42272ad1e6e13d5fa5c085939acd"
+    "contentSha256": "aa3bd50e7f379f46caecc1c3eff9c450c9cce0ddf6b4b14bc0bbc775fa0b66a6"
   },
   {
     "questionId": "u05-s010-v004",
@@ -468,10 +487,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "令 y=0 得 x=4；令 x=0 得 y=6，所以兩點為 (4,0)、(0,6)。",
-    "explanation": "令 y=0 得 x=4；令 x=0 得 y=6，所以兩點為 (4,0)、(0,6)。",
+    "explanation": "求 x 截距時令 y=0，得到 3x=12、x=4，所以點為 (4,0)。求 y 截距時令 x=0，得到 2y=12、y=6，所以點為 (0,6)。兩點互不相同，因此在本題中確實足以唯一畫出這條直線。",
     "steps": [
-      "求 x 截距點。",
-      "求 y 截距點。"
+      "令 y=0，求得 x 截距點 (4,0)。",
+      "令 x=0，求得 y 截距點 (0,6)。",
+      "將兩點代回，並確認它們是兩個不同點。"
     ],
     "optionAnalysis": [
       {
@@ -495,7 +515,7 @@ export const QUESTIONS = [
         "reason": "兩次設零皆正確。"
       }
     ],
-    "misconceptionTarget": "算出截距值後放錯分量。",
+    "misconceptionTarget": "把係數直接當截距，或算出兩個值後放錯坐標分量與忽略點是否互異。",
     "prerequisiteCheck": "需會一次方程式。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -508,7 +528,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e4101c6a7c061b304b87ee50f7d3e5965431fc248ddec63ccc5519c56a15fbc8"
+    "contentSha256": "6906bb5f3c9d2b2893956609ab1690a57ec2c2d3c000424bbdb1fe48ee1761a6"
   },
   {
     "questionId": "u05-s010-v005",
@@ -534,10 +554,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "令 x=0 得 -10y=20，所以 y=-2。",
-    "explanation": "令 x=0 得 -10y=20，所以 y=-2。",
+    "explanation": "y 截距是在 y 軸上的交點，因此令 x=0。代入 5x-10y=20 得 -10y=20，兩邊除以負十得到 y=-2。題目問截距值，所以答案是負二；若問截距點才寫 (0,-2)，負號不可省略。",
     "steps": [
-      "令 x=0。",
-      "除以 -10。"
+      "依 y 截距規則令 x=0。",
+      "由 -10y=20 除以負十，求 y=-2。",
+      "分清題目問值而非點，回答負二並回代。"
     ],
     "optionAnalysis": [
       {
@@ -561,7 +582,7 @@ export const QUESTIONS = [
         "reason": "誤用 x 係數。"
       }
     ],
-    "misconceptionTarget": "負係數除法錯誤。",
+    "misconceptionTarget": "除以負十時漏掉負號，或把 x 係數五用來計算 y 截距。",
     "prerequisiteCheck": "需會整數除法。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -574,7 +595,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7f1c41b902e26f87e4c5ed54f7365800e382e59f1c2dc738200b560a337561a8"
+    "contentSha256": "e52bf8256a807d39f42d425005ff3f802e486a4dd1424d7f5c9b7346dda5457f"
   },
   {
     "questionId": "u05-s010-v006",
@@ -600,10 +621,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "x 截距點為 (6,0)。代入得 6a=12，所以 a=2。",
-    "explanation": "x 截距點為 (6,0)。代入得 6a=12，所以 a=2。",
+    "explanation": "x 截距六代表截距點 (6,0)，而不是係數 a 等於六。把此點代入 ax+3y=12，得到 6a+0=12，所以 a=2。此時方程式為 2x+3y=12，令 y=0 的確再次得到 x=6，參數與原截距條件一致。",
     "steps": [
-      "把截距轉成點 (6,0)。",
-      "代入求 a。"
+      "將 x 截距六改寫為點 (6,0)。",
+      "代入參數方程式，列出 6a=12。",
+      "求 a=2，並用新方程式重新計算截距驗證。"
     ],
     "optionAnalysis": [
       {
@@ -627,7 +649,7 @@ export const QUESTIONS = [
         "reason": "左邊為 36。"
       }
     ],
-    "misconceptionTarget": "把截距值直接當係數。",
+    "misconceptionTarget": "把截距值六直接當成 x 的係數 a，沒有先轉成軸上點代入。",
     "prerequisiteCheck": "需會點在線判定。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -640,7 +662,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "49a77949ea2f12e0fddc778b43739e21689cabb05f916f4d9ba90d28cca2394c"
+    "contentSha256": "499c2512b4906dd9baa312101bbc3034f9e783a39d37073a54a2c569f46a6879"
   },
   {
     "questionId": "u05-s010-v007",
@@ -666,10 +688,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "將 (4,0) 代入得 4(m-1)=8，m-1=2，所以 m=3。",
-    "explanation": "將 (4,0) 代入得 4(m-1)=8，m-1=2，所以 m=3。",
+    "explanation": "x 截距四代表點 (4,0)。代入 (m-1)x+2y=8 得 4(m-1)=8，除以四後 m-1=2，因此 m=3。此時 x 的係數為二，截距為 8÷2=4；m=1 會使 x 項消失，並不符合有限截距四，邊界也已排除。",
     "steps": [
-      "截距點為 (4,0)。",
-      "解 4(m-1)=8。"
+      "把截距值四轉成點 (4,0) 並代入。",
+      "解 4(m-1)=8，得到 m=3。",
+      "檢查 m=3 時截距為四，並排除 m=1 的邊界。"
     ],
     "optionAnalysis": [
       {
@@ -693,7 +716,7 @@ export const QUESTIONS = [
         "reason": "係數 m-1=2，截距為 4。"
       }
     ],
-    "misconceptionTarget": "展開括號或截距點代入錯誤。",
+    "misconceptionTarget": "展開 m-1 時漏括號，或忽略參數使 x 項消失而截距不存在的邊界。",
     "prerequisiteCheck": "需會代數方程式。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -706,7 +729,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1941d38559df203ee178c3f04b8715073528191fa231b2dd2b5408002e50fe31"
+    "contentSha256": "a2e8294557cc2a51b9063b627e762b2946c1438be7a5f13704215991e9b558f3"
   },
   {
     "questionId": "u05-s010-v008",
@@ -732,10 +755,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "令 y=0 得 x=0；令 x=0 且 b≠0 得 y=0。因此兩種截距值皆為 0，截距點同為原點。",
-    "explanation": "令 y=0 得 x=0；令 x=0 且 b≠0 得 y=0。因此兩種截距值皆為 0，截距點同為原點。",
+    "explanation": "令 y=0 得 2x=0，所以 x 截距為零；令 x=0 得 by=0，因 b 不等於零而有 y=0，所以 y 截距也為零。兩個截距點都重合於原點。它們只有一個不同點，不能僅憑這兩個截距唯一決定是哪一條過原點直線。",
     "steps": [
-      "分別令 y=0 與 x=0。",
-      "確認 b≠0 可解出 y=0。"
+      "令 y=0，求得 x 截距值零。",
+      "令 x=0 且利用 b 不為零，求得 y 截距值零。",
+      "指出兩截距點同為原點，並非兩個不同決定點。"
     ],
     "optionAnalysis": [
       {
@@ -759,7 +783,7 @@ export const QUESTIONS = [
         "reason": "原點確實是交點。"
       }
     ],
-    "misconceptionTarget": "認為兩個截距點相同就等於不存在。",
+    "misconceptionTarget": "認為兩個截距點重合就等於截距不存在，或仍把同一點當成兩個決定點。",
     "prerequisiteCheck": "需理解原點與截距。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -772,7 +796,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "18ebf9c49b8004434300a2bf20dad2f75ba3097d88fe8f848d7af439dbc100c5"
+    "contentSha256": "fd30b826d27ea932914c9318b7c879c5d333ba1cf24c4053a32b3f80a6844d1e"
   },
   {
     "questionId": "u05-s010-v009",
@@ -798,10 +822,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x 截距為 16÷4=4；y 截距為 16/k。條件 4=2(16/k)，得 4=32/k，k=8。",
-    "explanation": "x 截距為 16÷4=4；y 截距為 16/k。條件 4=2(16/k)，得 4=32/k，k=8。",
+    "explanation": "令 y=0 得 4x=16，所以 x 截距為四；令 x=0 得 ky=16，所以 y 截距為 16/k。題意說 x 截距是 y 截距的兩倍，列 4=2×(16/k)，解得 k=8。此時 y 截距二，四正是二的兩倍，比例方向完全符合題意。",
     "steps": [
-      "求兩截距值。",
-      "依倍數關係解 k。"
+      "分別令另一變數為零，求兩個截距的參數式。",
+      "依倍數方向列 4=2×(16/k)。",
+      "解得 k=8，回算兩截距為四與二。"
     ],
     "optionAnalysis": [
       {
@@ -825,7 +850,7 @@ export const QUESTIONS = [
         "reason": "y 截距 2，x 截距 4，正好 2 倍。"
       }
     ],
-    "misconceptionTarget": "把『x 截距是 y 截距的 2 倍』方向寫反。",
+    "misconceptionTarget": "把『x 截距是 y 截距的兩倍』方向顛倒，或求截距時設錯零變數。",
     "prerequisiteCheck": "需會分式方程式。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -838,7 +863,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "131cb3837e926acb972431562b60929354c807aee6af7770209553aec52eef7e"
+    "contentSha256": "fc9a334be85269d479f64047d5b2aa9da9462a86a1c009c046ce21f36bc7de57"
   },
   {
     "questionId": "u05-s010-v010",
@@ -864,10 +889,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "主幹道 y=0 是 x 軸。代入道路式得 3x=18，x=6，交會點 (6,0)。",
-    "explanation": "主幹道 y=0 是 x 軸。代入道路式得 3x=18，x=6，交會點 (6,0)。",
+    "explanation": "東西向主幹道 y=0 就是 x 軸，因此道路與主幹道的交會點是道路的 x 截距點。把 y=0 代入 3x+2y=18，得到 3x=18、x=6，所以交會位置是 (6,0)，不是 y 軸上的點。",
     "steps": [
-      "把主幹道條件寫成 y=0。",
-      "解出交點。"
+      "把東西向主幹道條件辨認為 y=0。",
+      "代入道路方程式，解 3x=18 得 x=6。",
+      "依 x 軸點格式寫成交會點 (6,0)。"
     ],
     "optionAnalysis": [
       {
@@ -891,7 +917,7 @@ export const QUESTIONS = [
         "reason": "寫成 y 軸上的點。"
       }
     ],
-    "misconceptionTarget": "未辨認道路交 x 軸就是 x 截距。",
+    "misconceptionTarget": "未把東西向主幹道辨認為 x 軸，或把 x 截距點寫到 y 軸上。",
     "prerequisiteCheck": "需會截距。",
     "estimatedTimeSec": 150,
     "unitCheck": "坐標單位未另給，答案以地圖坐標表示。",
@@ -904,7 +930,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "fa334771e9a40f41202661f66b1e68fb798981f1c0543ffb396386a56875c8db"
+    "contentSha256": "3df12190378d94d48575471c7860f4f90aff624160d024126f9b29f967464ad3"
   },
   {
     "questionId": "u05-s010-v011",
@@ -930,10 +956,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "產量為 0 即 x=0，代入得 y=50。",
-    "explanation": "產量為 0 即 x=0，代入得 y=50。",
+    "explanation": "情境定義 x 為產量，產量為零就是令 x=0。代入 5x+y=50 得 y=50，所以 y 截距值為五十，截距點為 (0,50)。被設為零的是橫坐標 x，不能因此把 y 截距答案也寫成零。",
     "steps": [
-      "令 x=0。",
-      "讀出 y=50。"
+      "把『產量為零』翻成 x=0。",
+      "代入方程式，得到 y=50。",
+      "依題目問截距值回答五十，並以點 (0,50) 檢查。"
     ],
     "optionAnalysis": [
       {
@@ -957,7 +984,7 @@ export const QUESTIONS = [
         "reason": "求成 x 截距。"
       }
     ],
-    "misconceptionTarget": "把被設為 0 的變數值當成截距答案。",
+    "misconceptionTarget": "把被設成零的產量 x 當成 y 截距答案，或誤取 x 的係數五。",
     "prerequisiteCheck": "需會代入。",
     "estimatedTimeSec": 150,
     "unitCheck": "x 與 y 單位不同，但只依方程式代入，不做不相容單位相加。",
@@ -970,7 +997,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "75ab00ecb737ab6b8075c17aeb11064b87759b312b2d4df88862ec11d17c5053"
+    "contentSha256": "1159acc7c518cbdf102582d1c3cb1df6e2837d691db8f375efe5e3f5fcc83d6f"
   },
   {
     "questionId": "u05-s010-v012",
@@ -996,10 +1023,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "令 y=0 得 x=12；令 x=0 得 -4y=24，y=-6。",
-    "explanation": "令 y=0 得 x=12；令 x=0 得 -4y=24，y=-6。",
+    "explanation": "航線與 x 軸交點令 y=0，得 2x=24、x=12，所以第一標記是 (12,0)。與 y 軸交點令 x=0，得 -4y=24、y=-6，所以第二標記是 (0,-6)。兩點符號與分量都要保留，且代回皆得二十四。",
     "steps": [
-      "求 x 截距點 (12,0)。",
-      "求 y 截距點 (0,-6)。"
+      "令 y=0，解出 x 截距點 (12,0)。",
+      "令 x=0，解出 y 截距點 (0,-6)。",
+      "把兩點代回航線方程式，確認都使左邊等於二十四。"
     ],
     "optionAnalysis": [
       {
@@ -1023,7 +1051,7 @@ export const QUESTIONS = [
         "reason": "兩個符號都反。"
       }
     ],
-    "misconceptionTarget": "除法係數與負 y 截距錯誤。",
+    "misconceptionTarget": "截距除錯係數、漏掉負 y 截距，或把兩個非零分量放到錯誤坐標格。",
     "prerequisiteCheck": "需會截距。",
     "estimatedTimeSec": 150,
     "unitCheck": "坐標值沿各軸使用同一地圖單位。",
@@ -1036,7 +1064,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ab2655486379c8a99ffc6ea4518aa2b31cc4e903f18ad807790d9ea3facced13"
+    "contentSha256": "1f8335efa529999839de5f92f86d5d254c6ca426fc06f49c43bf52f54695b3eb"
   }
 ];
 
@@ -1057,15 +1085,18 @@ export const CONSTRUCTED_RESPONSES = [
       "同時寫數值與點坐標。"
     ],
     "fullCreditSolution": [
-      "令 y=0：4x=12，x=3，所以 x 截距為 3，截距點 (3,0)。",
-      "令 x=0：-3y=12，y=-4，所以 y 截距為 -4，截距點 (0,-4)。"
+      "求 x 截距時令 y=0：4x=12，所以 x=3。x 截距值是三，截距點是 (3,0)。",
+      "求 y 截距時令 x=0：-3y=12，所以 y=-4。y 截距值是負四，截距點是 (0,-4)。",
+      "將兩點代回：4×3-3×0=12，4×0-3×(-4)=12，兩點都在直線上。",
+      "截距值是單一數，截距點是有序數對。本題兩個截距點互不相同，因此它們足以唯一決定這條直線。"
     ],
     "alternativeSolutions": [
       "可先求兩個軸上解點，再讀出非零分量作為截距值。"
     ],
     "reasoningSteps": [
-      "令 y=0：4x=12，x=3，所以 x 截距為 3，截距點 (3,0)。",
-      "令 x=0：-3y=12，y=-4，所以 y 截距為 -4，截距點 (0,-4)。"
+      "分別利用 x 軸上 y=0 與 y 軸上 x=0 求兩個截距值。",
+      "依題目要求，把每個值改寫成正確分量位置的截距點。",
+      "將兩點代回，並確認是兩個不同點後才說可唯一決定直線。"
     ],
     "rubric": [
       {
@@ -1092,8 +1123,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "x 截距值寫 3、點寫 (3,0)；y 截距值寫 -4、點寫 (0,-4)，值與點不得混寫。",
     "answerOnlyPolicy": "只寫兩個截距點而未區分截距值與點，最高給 2 分。",
     "commonErrors": [
-      "把 y 截距寫 4。",
-      "把 (3,0) 寫成 (0,3)。"
+      "求 y 截距時令 y=0，混淆軸名與應設為零的另一分量。",
+      "由 -3y=12 得 y=4，負係數除法時漏掉負號。",
+      "把截距值三、負四與截距點 (3,0)、(0,-4) 混寫。"
     ],
     "independentReview": {
       "derivedResult": "一種截距錯不影響另一種。",
@@ -1103,7 +1135,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "d1a96d0a9ae3d29c925fd5c0db83c7899eec2353ed44fbf065bdf94d937b9ac9"
+    "contentSha256": "cd1fa3aaabf8a511a38bdf9daf6b22f7fca3f75dabc714364b2efb6a503f72bc"
   },
   {
     "questionId": "u05-s010-cr002",
@@ -1122,17 +1154,18 @@ export const CONSTRUCTED_RESPONSES = [
       "代入驗證兩點。"
     ],
     "fullCreditSolution": [
-      "x 截距點為 (4,0)，代入得 4a=12，所以 a=3。",
-      "方程式為 3x+2y=12。令 x=0 得 y=6，所以 y 截距為 6，點為 (0,6)。",
-      "驗證：(4,0) 代入得 12；(0,6) 代入也得 12。"
+      "x 截距四代表點 (4,0)。代入 ax+2y=12 得 4a=12，所以 a=3。",
+      "方程式成為 3x+2y=12。求 y 截距時令 x=0，得到 2y=12、y=6，因此截距值為六、點為 (0,6)。",
+      "驗證 (4,0)：3×4+2×0=12；驗證 (0,6)：3×0+2×6=12，兩個截距點都在直線上。",
+      "兩點 (4,0)、(0,6) 互不相同，配合直線條件可唯一決定本題直線；若兩截距點重合，則還需另一個不同點。"
     ],
     "alternativeSolutions": [
       "可由截距式的實際點逐一代入，不需使用高中截距式。"
     ],
     "reasoningSteps": [
-      "x 截距點為 (4,0)，代入得 4a=12，所以 a=3。",
-      "方程式為 3x+2y=12。令 x=0 得 y=6，所以 y 截距為 6，點為 (0,6)。",
-      "驗證：(4,0) 代入得 12；(0,6) 代入也得 12。"
+      "把 x 截距值轉成軸上點，代入含參數方程式求 a。",
+      "以求得的方程式令 x=0，求 y 截距值與截距點。",
+      "分別代回兩點，並檢查它們互異及完整符合直線。"
     ],
     "rubric": [
       {
@@ -1159,8 +1192,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "參數寫 a=3；y 截距值寫 6，截距點分別寫 (4,0)、(0,6)。",
     "answerOnlyPolicy": "只寫 a=3、y 截距 6 而沒有兩點代入檢查，最高給 2 分。",
     "commonErrors": [
-      "令 x=4 但把 y 留作未知。",
-      "求 y 截距時令 y=0。"
+      "只令 x=4 卻未同時使用截距點的 y=0，導致參數方程式仍有兩未知量。",
+      "求 y 截距時再次令 y=0，實際上算成 x 截距。",
+      "只檢查其中一個截距點，或未確認兩個決定點是否互不相同。"
     ],
     "independentReview": {
       "derivedResult": "若 a 算錯但使用自己的 a 正確求 y 截距，可給方法分，但最終值分不給。",
@@ -1170,14 +1204,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f5492a60a0719fe410a00e8705aee26c7a088ee84b40bcd7e37c13ab9658ee8f"
+    "contentSha256": "cd5b9ed18772408fccd232b76395467a8dc8c3b7240f4054abd48830f3ace39f"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s010-v001",
-    "contentSha256": "c380a3460c0a2ae85513ea14176d4f2de7d84aa1b88c63086163d3fd867b35a7",
+    "contentSha256": "14320204bcb983caef0cd69bae3f6c466d83af9e5df46ca34e4e73f9d7c2b65c",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "求 x 截距令 y=0，得 2x=8，所以 x=4。",
     "derivedAnswer": "4",
@@ -1209,7 +1243,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v002",
-    "contentSha256": "97846362f6735f5a840dc8c632cc6a9a9cb0436680519a2a21f67b34d50aea5a",
+    "contentSha256": "50d7a34d95cf124ee9306efa5ad001d8465544b80bd4f34dedb65326f3592f1c",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "求 y 截距令 x=0，得 -3y=6，y=-2，所以點為 (0,-2)。",
     "derivedAnswer": "(0,-2)",
@@ -1241,7 +1275,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v003",
-    "contentSha256": "6439953fa8cfbc0c9adcd5c823a1d3d0775a42272ad1e6e13d5fa5c085939acd",
+    "contentSha256": "aa3bd50e7f379f46caecc1c3eff9c450c9cce0ddf6b4b14bc0bbc775fa0b66a6",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x 截距是交點的橫坐標，且 x 軸上 y=0，所以交點 (-5,0)。",
     "derivedAnswer": "(-5,0)",
@@ -1273,7 +1307,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v004",
-    "contentSha256": "e4101c6a7c061b304b87ee50f7d3e5965431fc248ddec63ccc5519c56a15fbc8",
+    "contentSha256": "6906bb5f3c9d2b2893956609ab1690a57ec2c2d3c000424bbdb1fe48ee1761a6",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "令 y=0 得 x=4；令 x=0 得 y=6，所以兩點為 (4,0)、(0,6)。",
     "derivedAnswer": "(4,0) 與 (0,6)",
@@ -1305,7 +1339,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v005",
-    "contentSha256": "7f1c41b902e26f87e4c5ed54f7365800e382e59f1c2dc738200b560a337561a8",
+    "contentSha256": "e52bf8256a807d39f42d425005ff3f802e486a4dd1424d7f5c9b7346dda5457f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "令 x=0 得 -10y=20，所以 y=-2。",
     "derivedAnswer": "-2",
@@ -1337,7 +1371,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v006",
-    "contentSha256": "49a77949ea2f12e0fddc778b43739e21689cabb05f916f4d9ba90d28cca2394c",
+    "contentSha256": "499c2512b4906dd9baa312101bbc3034f9e783a39d37073a54a2c569f46a6879",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x 截距點為 (6,0)。代入得 6a=12，所以 a=2。",
     "derivedAnswer": "2",
@@ -1369,7 +1403,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v007",
-    "contentSha256": "1941d38559df203ee178c3f04b8715073528191fa231b2dd2b5408002e50fe31",
+    "contentSha256": "a2e8294557cc2a51b9063b627e762b2946c1438be7a5f13704215991e9b558f3",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "將 (4,0) 代入得 4(m-1)=8，m-1=2，所以 m=3。",
     "derivedAnswer": "3",
@@ -1401,7 +1435,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v008",
-    "contentSha256": "18ebf9c49b8004434300a2bf20dad2f75ba3097d88fe8f848d7af439dbc100c5",
+    "contentSha256": "fd30b826d27ea932914c9318b7c879c5d333ba1cf24c4053a32b3f80a6844d1e",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "令 y=0 得 x=0；令 x=0 且 b≠0 得 y=0。因此兩種截距值皆為 0，截距點同為原點。",
     "derivedAnswer": "x 截距與 y 截距都為 0",
@@ -1433,7 +1467,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v009",
-    "contentSha256": "131cb3837e926acb972431562b60929354c807aee6af7770209553aec52eef7e",
+    "contentSha256": "fc9a334be85269d479f64047d5b2aa9da9462a86a1c009c046ce21f36bc7de57",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x 截距為 16÷4=4；y 截距為 16/k。條件 4=2(16/k)，得 4=32/k，k=8。",
     "derivedAnswer": "8",
@@ -1465,7 +1499,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v010",
-    "contentSha256": "fa334771e9a40f41202661f66b1e68fb798981f1c0543ffb396386a56875c8db",
+    "contentSha256": "3df12190378d94d48575471c7860f4f90aff624160d024126f9b29f967464ad3",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "主幹道 y=0 是 x 軸。代入道路式得 3x=18，x=6，交會點 (6,0)。",
     "derivedAnswer": "(6,0)",
@@ -1497,7 +1531,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v011",
-    "contentSha256": "75ab00ecb737ab6b8075c17aeb11064b87759b312b2d4df88862ec11d17c5053",
+    "contentSha256": "1159acc7c518cbdf102582d1c3cb1df6e2837d691db8f375efe5e3f5fcc83d6f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "產量為 0 即 x=0，代入得 y=50。",
     "derivedAnswer": "50",
@@ -1529,7 +1563,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s010-v012",
-    "contentSha256": "ab2655486379c8a99ffc6ea4518aa2b31cc4e903f18ad807790d9ea3facced13",
+    "contentSha256": "1f8335efa529999839de5f92f86d5d254c6ca426fc06f49c43bf52f54695b3eb",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "令 y=0 得 x=12；令 x=0 得 -4y=24，y=-6。",
     "derivedAnswer": "(12,0) 與 (0,-6)",

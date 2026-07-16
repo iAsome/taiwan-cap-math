@@ -1,0 +1,34 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u12",
+  "batch":"013-u12-complete",
+  "skills":["s003"],
+  "mc":[
+    {"questionId":"u12-s003-v001","expectedContentSha256":"3d72517d0a9a6813f6aeba94d07e5c7da067a6055360018b7d1676f9e6ee7f2d","appendText":{"explanation":"首項係數為一時，兩個常數既要相乘得到六，也要相加得到五；只有二與三同時符合。把兩因式展開後，兩個交叉項合為五倍未知數，首項和常數也吻合。","misconceptionTarget":"常數因數除了乘積要正確，兩個交叉項合併後也必須等於中間項。"}},
+    {"questionId":"u12-s003-v002","expectedContentSha256":"c19f544961ba6095b70e87863afd90ff42c25bd03d4c735232176feddf00a0be","appendText":{"explanation":"常數負十二表示兩個常數因數異號，且它們的和要成為負一；正三與負四的乘積為負十二、和為負一，展開兩因式便得到正三倍與負四倍交叉項。"}},
+    {"questionId":"u12-s003-v003","expectedContentSha256":"3d2983a1a2f95c0028fbca6475fc0be8f50600dcdb7905da5d2b243769de7e25","appendText":{"explanation":"二次項由二倍未知數與未知數相乘，常數由一與三相乘；把一放在二倍未知數旁、三放在另一因式後，交叉項六倍未知數與一倍未知數相加正好為七倍。"}},
+    {"questionId":"u12-s003-v004","expectedContentSha256":"379d5d444ed72605ed6256fb4bec0015b2930a42904e9886d20e68b9c781d05c","appendText":{"explanation":"首項配成三倍未知數乘未知數，常數負四需異號；把正一與三倍未知數同括號、負四與未知數同括號後，交叉積為正一倍與負十二倍，和為負十一倍。"}},
+    {"questionId":"u12-s003-v005","expectedContentSha256":"d4a68c5737e2245f8ab93599f4d61120aea71c4193577a37eb03fd53766d332c","appendText":{"explanation":"六倍平方項取三倍未知數與二倍未知數，常數負二取正二與負一；此排列的交叉項是正四倍與負三倍未知數，相加為一倍，並且首尾乘積也完全符合。"}},
+    {"questionId":"u12-s003-v006","expectedContentSha256":"a8b05cf43f0261d5297763c086df6ac4e9ea0abfe1ddc6977665747c50875a7b","appendText":{"explanation":"兩個首項都取二倍未知數，常數取正三與負五；交叉積正六倍與負十倍未知數相加為負四倍，常數乘積負十五，展開後三個係數都與原式一致。","misconceptionTarget":"首項係數不為一時，常數的差不能直接當中間係數，必須計算交叉乘積。"}},
+    {"questionId":"u12-s003-v007","expectedContentSha256":"2700933018349accaa67a4b30ead28e3d89de5bd9a911c1ac46b6ffe4ddd29a3","appendText":{"explanation":"展開兩個首一因式時，一次項來自六倍未知數與三倍未知數相加，所以中間係數為九；常數三乘六另得十八，兩者用途不同，不能把常數積當成一次項係數。","misconceptionTarget":"中間係數來自兩個交叉項相加，不是常數因數的乘積或其中一個因數。"}},
+    {"questionId":"u12-s003-v008","expectedContentSha256":"1dec0271aef91e46571133e1662d67d4f36a09a9da82c2838887040f92b80aec","appendText":{"explanation":"右式的交叉項分別是正十八倍未知數與負四倍未知數，合併為正十四倍；首項六倍平方與常數負十二也同時吻合，因此與左式比對可確定參數為正十四。","misconceptionTarget":"計算交叉和時必須保留負二乘二倍未知數所得的負四倍未知數。"}},
+    {"questionId":"u12-s003-v009","expectedContentSha256":"00d7ed963bd927b8171bb254fdd133580a382f24f3ead1e7e32b2d5ec865a1c4","appendText":{"explanation":"先展開已知兩因式，交叉項四倍與四倍未知數合成八倍，所以參數為八；但第一因式二倍未知數加四仍可提出二，最完整形式應為二乘未知數加二的平方。"}},
+    {"questionId":"u12-s003-v010","expectedContentSha256":"d27c50dade6dbe146db8abd8e46ab8f4da03f5f00bf049885298c1a8d3f0db59","appendText":{"explanation":"常數十五的正因數中，三與五的和正好為八，因此面積式分成未知數加三與未知數加五；題設未知數為正，使兩個邊長皆為正，乘回也恢復原面積。","misconceptionTarget":"幾何邊長必須同時符合常數乘積、中間係數與正值條件，不能只配常數。"}},
+    {"questionId":"u12-s003-v011","expectedContentSha256":"aa8ff3697ad790185c98ef86e9c2252a4e902ade4a7025dbb6797b7d4e61be10","appendText":{"explanation":"首項配成三倍數量乘數量，常數八配成四乘二；此排列的交叉項是六倍與四倍數量，合計十倍。交換四與二的位置會得到十四倍，所以只有原排列正確。"}},
+    {"questionId":"u12-s003-v012","expectedContentSha256":"b1959ffd4c578e830b4df570f3d5d4c7016c16957e2fc9a588aa71a6cda57204","appendText":{"explanation":"將排數與每排席數相乘，四個乘積依序為二倍平方、八倍一次、一次與四；兩個一次項合成九倍，與座位總數模型完全相同，因此對所有正整數都成立。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u12-s003-cr001","expectedContentSha256":"5943ee44b3ff10798a5be31e05d4ffbf5c37d419667380e405677f77d700df66","appendArray":{"fullCreditSolution":["選三倍未知數與二倍未知數使首項為六倍平方，再選正一與負三使常數為負三；兩個交叉積為正二倍與負九倍未知數，和為負七倍。完整展開兩因式即可依序得到六倍平方、負七倍一次與負三。"]}},
+    {"questionId":"u12-s003-cr002","expectedContentSha256":"856152bd225718eeeedd810d52746a84a5bfce5f9d25fdd899bc63371654c9b4","appendArray":{"fullCreditSolution":["展開右式時，首項四倍未知數乘二倍未知數得到八倍平方；交叉項為正四倍與負六倍未知數，合併成負二倍，所以參數等於負二；常數負三乘一仍為負三，三個係數都與左式逐項一致。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u12-s003-lecture-r1","expectedContentSha256":"270f3f0159421ed0d1cd4408a461a37ebcdadb9803f9e30c1175e2a55b18244f","set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"x²+9x+20","solutionSteps":["4·5=20。","4+5=9。"],"answer":"(x+4)(x+5)","why":"首項係數為一，所以只需找兩個常數乘積二十且和為九；四與五同時符合。展開兩因式時交叉項為四倍與五倍未知數，正好合成九倍。"},
+      {"exampleId":"L2","prompt":"x²-2x-15","solutionSteps":["3·(-5)=-15。","3+(-5)=-2。"],"answer":"(x+3)(x-5)","why":"常數負十五表示兩數異號，正三與負五的乘積為負十五、和為負二；展開時正三倍與負五倍未知數合為負二倍，三項都吻合。"},
+      {"exampleId":"L3","prompt":"6x²+11x+3","solutionSteps":["首項 3x·2x=6x²。","交叉和 9x+2x=11x。","常數 1·3=3。"],"answer":"(3x+1)(2x+3)","why":"首項非首一時不能只加常數，必須把三倍與二倍未知數交叉乘常數；九倍與二倍未知數相加成十一倍，同時首項乘積六、常數乘積三。"},
+      {"exampleId":"L4","prompt":"8y²-2y-3","solutionSteps":["交叉和 4y-6y=-2y。","首末項也吻合。"],"answer":"(4y-3)(2y+1)","why":"四倍未知數乘二倍未知數得到八倍平方，負三與正一得到負三；交叉積正四倍與負六倍未知數相加為負二倍，故符號與三個係數都正確。"}
+    ]},"appendArray":{"conceptNarrative":["十字交乘的本質是把候選兩因式完整展開並比對三個係數。若寫成甲倍未知數加常數與乙倍未知數加常數相乘，首項乘積要等於二次項係數，常數乘積要等於常數項，而兩個交叉乘積的和才是一次項係數。常數正負可先縮小同號或異號的候選，但因數放在哪一個括號仍會改變交叉和；找到組合後必須展開，並再檢查各因式是否還含公因數。"]}}
+  ],
+  "drawingSpecs":[],
+  "textFiles":[]
+}

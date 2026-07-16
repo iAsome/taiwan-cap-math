@@ -93,66 +93,74 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "標出原坐標。",
-      "check": "哪個是 x，哪個是 y？"
+      "instruction": "先確認題目中的坐標軸正向、每單位尺度與起點，並把方位指令翻成左右上下。",
+      "check": "情境題若使用東西南北，題幹已有軸向與單位約定。"
     },
     {
       "step": 2,
-      "instruction": "把方向翻成 Δx、Δy。",
-      "check": "左右是否只影響 x？"
+      "instruction": "把向右、向上記為正改變量，向左、向下記為負改變量。",
+      "check": "水平改變只對應x，垂直改變只對應y。"
     },
     {
       "step": 3,
-      "instruction": "分量相加。",
-      "check": "負數加減是否正確？"
+      "instruction": "將水平改變量加到原x，垂直改變量加到原y，保留帶號數運算。",
+      "check": "跨越零時直接計算，不用絕對值猜新坐標。"
     },
     {
       "step": 4,
-      "instruction": "若要求原點，改用逆向平移。",
-      "check": "是否把方向反過來？"
+      "instruction": "連續平移先分別合併水平與垂直淨改變；反推則將兩個方向都反轉。",
+      "check": "沒有把總路程誤當淨位移，也沒有只反轉一個方向。"
     },
     {
       "step": 5,
-      "instruction": "比較前後差。",
-      "check": "終點減起點是否等於位移？"
+      "instruction": "用終點減起點重算Δx、Δy，核對方向、距離與坐標順序。",
+      "check": "驗算所得改變量與原指令完全一致。"
     }
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "A=(2,-3) 向右 5。",
+      "prompt": "A=(2,-3)向右5單位，求終點。",
       "solutionSteps": [
-        "x=2+5=7。",
-        "y 保持 -3。"
+        "向右只改x，計算2＋5＝7。",
+        "y保持-3，所以終點是(7,-3)。",
+        "終點減起點得Δx＝5、Δy＝0，與指令一致。"
       ],
-      "answer": "(7,-3)。"
+      "answer": "(7,-3)。",
+      "why": "水平向右平移只增加橫坐標，縱坐標不應改動。把五加到原x得到七，再保留原y負三；用終點減起點驗算，改變量正好是水平正五、垂直零。"
     },
     {
       "exampleId": "L2",
-      "prompt": "B=(-4,6) 向下 9。",
+      "prompt": "B=(-4,6)向下9單位，求終點。",
       "solutionSteps": [
-        "x 保持 -4。",
-        "y=6-9=-3。"
+        "向下只改y，計算6－9＝-3。",
+        "x保持-4，所以終點是(-4,-3)。",
+        "驗算Δx＝0、Δy＝-9，方向與距離正確。"
       ],
-      "answer": "(-4,-3)。"
+      "answer": "(-4,-3)。",
+      "why": "垂直向下表示縱坐標減少九，即使跨過零也仍用帶號數相減。橫坐標保持負四，新的縱坐標是負三；驗算得到垂直改變量負九，確實代表向下九單位。"
     },
     {
       "exampleId": "L3",
-      "prompt": "C=(1,2) 先左 3 再上 4。",
+      "prompt": "C=(1,2)先向左3，再向上4，求終點。",
       "solutionSteps": [
-        "x=1-3=-2。",
-        "y=2+4=6。"
+        "向左3使x＝1－3＝-2。",
+        "向上4使y＝2＋4＝6。",
+        "終點為(-2,6)，整體改變量是(-3,+4)。"
       ],
-      "answer": "(-2,6)。"
+      "answer": "(-2,6)。",
+      "why": "兩段平移分別作用在不同分量，先後順序不會讓左移改到y或上移改到x。從一減三得到負二，二加四得到六；終點與起點的差也回到左三、上四。"
     },
     {
       "exampleId": "L4",
-      "prompt": "D 平移右 7、下 2 後為 (5,-1)，求 D。",
+      "prompt": "D向右7、向下2後為(5,-1)，求D原坐標。",
       "solutionSteps": [
-        "原 x=5-7=-2。",
-        "原 y=-1+2=1。"
+        "反推需從終點向左7，所以原x＝5－7＝-2。",
+        "反推需從終點向上2，所以原y＝-1＋2＝1。",
+        "將(-2,1)依原指令右7、下2，確實回到(5,-1)。"
       ],
-      "answer": "D=(-2,1)。"
+      "answer": "D=(-2,1)。",
+      "why": "已知終點求起點必須使用逆位移：右七的逆向是左七，下二的逆向是上二。算得原點後再照原指令正向驗算，可以避免反推時仍做同方向的錯誤。"
     }
   ],
   "commonMistakes": [
@@ -236,7 +244,8 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "951e244a23cf8b18ffa07f1e6028535844bd0bec5acc163150e17887709f2481"
+  "contentSha256": "9f20e24afe56eb1588e8f8a4fcbb0852413a9a2046379c6d6b34c3eebbe81d98",
+  "concept": "點的平移是把每個點按照相同方向與距離移動。向右或向左只改橫坐標，分別加上或減去水平距離；向上或向下只改縱坐標，分別加上或減去垂直距離。連續平移可把各方向帶正負號的改變量相加，反推起點則使用相反位移。計算後可用終點減起點驗證水平與垂直改變量，並確認坐標順序始終是先x後y。"
 };
 
 export const QUESTIONS = [
@@ -264,10 +273,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "向右只增加 x：-1+6=5；y 保持 4。",
-    "explanation": "向右只增加 x：-1+6=5；y 保持 4。",
+    "explanation": "向右平移只改變橫坐標，且橫坐標增加六；縱坐標保持原來的四。因此新的橫坐標為負一加六等於五，終點是(5,4)。把六加到縱坐標或同時改兩個分量，都不符合水平平移。",
     "steps": [
-      "更新 x=-1+6。",
-      "保留 y=4。"
+      "辨認向右是水平方向，只處理橫坐標x。",
+      "計算新橫坐標-1＋6＝5。",
+      "保留縱坐標4，依(x,y)順序寫成(5,4)。"
     ],
     "optionAnalysis": [
       {
@@ -304,7 +314,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "2f748e58ee5f456479f71fb145dc5cfb77cd45bdd0e7bbbfa998f723457917c8"
+    "contentSha256": "f5bcde48131f6f9a6b5ea90188dcd6d36d50e0dcdeb7266f3ce9ccec9707c3b3",
+    "commonMistake": "把向右六單位同時加到橫、縱坐標，誤認兩個分量都會改變。"
   },
   {
     "questionId": "u05-s005-v002",
@@ -330,10 +341,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "向下只使 y 減 5：-2-5=-7，x 不變。",
-    "explanation": "向下只使 y 減 5：-2-5=-7，x 不變。",
+    "explanation": "向下平移只讓縱坐標減少五，橫坐標三不變。原縱坐標是負二，再向下五單位要算負二減五等於負七，因此終點為(3,-7)。負數向下會離零更遠，不是變成正三。",
     "steps": [
-      "保留 x=3。",
-      "計算 y=-2-5。"
+      "辨認向下是垂直方向，橫坐標仍為3。",
+      "計算縱坐標-2－5＝-7。",
+      "按橫、縱順序組成終點(3,-7)。"
     ],
     "optionAnalysis": [
       {
@@ -370,7 +382,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "bd22bd64f2806e78ded79d728ff3ba0b91620c32c8d0bddf76eef0d1f2326f8b"
+    "contentSha256": "1fd82d44d6232016a6c57308fe7c37b89203a4468e3a3aca45f82a7de4d468ce",
+    "commonMistake": "看到負二就把向下五誤算成加五，以為向下會使負數靠近零。"
   },
   {
     "questionId": "u05-s005-v003",
@@ -396,10 +409,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "x 不變，y 由 7 降到 1，減少 6，因此向下 6。",
-    "explanation": "x 不變，y 由 7 降到 1，減少 6，因此向下 6。",
+    "explanation": "起點與終點的橫坐標都等於二，表示沒有水平移動；縱坐標由七變成一，改變量是一減七等於負六。負號代表向下，所以這次平移是向下六單位，而不是只看距離六就猜方向。",
     "steps": [
-      "比較 x：無變化。",
-      "比較 y：1-7=-6。"
+      "比較橫坐標2與2，確認水平改變量為0。",
+      "計算縱坐標改變量1－7＝-6。",
+      "把負的垂直改變量翻成向下6單位。"
     ],
     "optionAnalysis": [
       {
@@ -436,7 +450,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "429ea690448e1fbcfa824975d307a4bb4ca0ed4a8ebddcc4521a8c6cd342f2b5"
+    "contentSha256": "0a6fcb0b71831e3cbc0a15db0927c7c5596f9566b2ab39efd072671090c667e3",
+    "commonMistake": "只算縱坐標差的絕對值六，卻沒有由負號判斷實際方向是向下。"
   },
   {
     "questionId": "u05-s005-v004",
@@ -462,10 +477,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x=-4+9=5，y=3-7=-4，所以終點 (5,-4)。",
-    "explanation": "x=-4+9=5，y=3-7=-4，所以終點 (5,-4)。",
+    "explanation": "先向右九單位，使橫坐標由負四變成負四加九等於五；再向下七單位，使縱坐標由三變成三減七等於負四。兩段移動作用在不同分量，最後得到(5,-4)，跨過坐標軸也仍依帶號數運算。",
     "steps": [
-      "水平右移得 x=5。",
-      "垂直下移得 y=-4。"
+      "向右9，只改x：-4＋9＝5。",
+      "向下7，只改y：3－7＝-4。",
+      "將兩個新分量依序寫成終點(5,-4)。"
     ],
     "optionAnalysis": [
       {
@@ -502,7 +518,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e9436e5e5ccfc411e72ff571c1eae821bbd98b5456081df55d8083ef1bff15d5"
+    "contentSha256": "942b24f597670167747a19147044e20105f96937d42fa1da0ac36a1613c727bc",
+    "commonMistake": "跨越零時把右移或下移方向做反，造成兩個新坐標的正負號錯誤。"
   },
   {
     "questionId": "u05-s005-v005",
@@ -528,10 +545,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "向左 3 後橫坐標 a-3=5，所以 a=8。",
-    "explanation": "向左 3 後橫坐標 a-3=5，所以 a=8。",
+    "explanation": "點D向左三單位後，橫坐標由a變成a－3，題目給終點橫坐標為五，所以列a－3＝5。等式兩邊同加三得a＝8；驗算八向左三確實到五，縱坐標則一直是負一。",
     "steps": [
-      "列 a-3=5。",
-      "兩邊加 3。"
+      "把向左3翻成終點橫坐標a－3。",
+      "依終點列方程式a－3＝5。",
+      "兩邊同加3得a＝8，代回平移檢查。"
     ],
     "optionAnalysis": [
       {
@@ -568,7 +586,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "107b3ae82a6487f55ba0259b32a5c47d1e3af3b4ade918d32cebcaa9d3e74d20"
+    "contentSha256": "91b06763b4e8119a465ba8658b17a085fc6415c2f7d75f29461b5b5628872634",
+    "commonMistake": "由終點反推起點時仍減三，沒有用相反方向加三回到原位置。"
   },
   {
     "questionId": "u05-s005-v006",
@@ -594,10 +613,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "平移不改 x，所以 m=3；檢查 y：2m+4=6+4=10，成立。",
-    "explanation": "平移不改 x，所以 m=3；檢查 y：2m+4=6+4=10，成立。",
+    "explanation": "向上平移不改橫坐標，所以起點橫坐標m必須等於終點橫坐標三，得到m＝3。再檢查縱坐標：起點為2m＝6，向上四後成為十，與終點一致；兩個分量共同支持同一答案。",
     "steps": [
-      "由 x 不變得 m=3。",
-      "代入 y 驗證。"
+      "利用向上只改y，從橫坐標不變得到m＝3。",
+      "把m＝3代入原縱坐標2m，得到6。",
+      "計算6＋4＝10，核對終點兩個分量皆吻合。"
     ],
     "optionAnalysis": [
       {
@@ -634,7 +654,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "444a3c6d6ed7f623ba906bd23b7d35a83d5992073b73c0928df87dac5f080d46"
+    "contentSha256": "6ceb823222501105554ac4b3e3d60a26c52c7b050cc6a816c877b264c6a1914f",
+    "commonMistake": "只由縱坐標列式而不檢查橫坐標，或誤認向上也會改變x。"
   },
   {
     "questionId": "u05-s005-v007",
@@ -660,10 +681,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "水平淨改變 5-8=-3，垂直淨改變 2-6=-4，所以等同左 3、下 4。",
-    "explanation": "水平淨改變 5-8=-3，垂直淨改變 2-6=-4，所以等同左 3、下 4。",
+    "explanation": "水平改變量要帶方向合併：向右五記為正五、向左八記為負八，淨值為負三，所以向左三。垂直方向向上二、向下六的淨值是負四，所以向下四；整體等同左三、下四。",
     "steps": [
-      "合併水平改變量 -3。",
-      "合併垂直改變量 -4。"
+      "合併水平改變量：+5－8＝-3。",
+      "合併垂直改變量：+2－6＝-4。",
+      "把兩個負號翻成方向，得到向左3、向下4。"
     ],
     "optionAnalysis": [
       {
@@ -700,7 +722,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "8bd3853243454167a11692f2c5343637167cfaaaa0efdd6996f47f672197af50"
+    "contentSha256": "3b5127c1e5fd361f2e71dbbf77b2c707e5a3adcc9e1789a498e38b798e4e5be0",
+    "commonMistake": "把所有移動距離直接相加成總路程，沒有計算相反方向抵銷後的淨位移。"
   },
   {
     "questionId": "u05-s005-v008",
@@ -726,10 +749,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "逆向操作為向右 4、向下 7：(1+4,2-7)=(5,-5)。",
-    "explanation": "逆向操作為向右 4、向下 7：(1+4,2-7)=(5,-5)。",
+    "explanation": "已知的是平移後的終點，要求原點必須做逆向操作。原平移向左四、向上七，逆向就是從(1,2)向右四、向下七，得到橫坐標五、縱坐標負五，因此F原來是(5,-5)。",
     "steps": [
-      "逆向水平：1+4=5。",
-      "逆向垂直：2-7=-5。"
+      "將原平移的左4、上7反轉為右4、下7。",
+      "由終點計算原橫坐標1＋4＝5。",
+      "計算原縱坐標2－7＝-5，寫成F＝(5,-5)。"
     ],
     "optionAnalysis": [
       {
@@ -766,7 +790,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c16030b715e49c7e2fe044d3450296ee7f8a06054561b08acaf39c70c5dcfacc"
+    "contentSha256": "8682f39bda38b98f1d29ce74ec493bf2db2d78b951d9c7c13cd92edefa1965cd",
+    "commonMistake": "反推時把原指令再做一次，或只反轉水平而沒有同時反轉垂直方向。"
   },
   {
     "questionId": "u05-s005-v009",
@@ -792,10 +817,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "平移後為 (k+3,-1-k)。令 k+3=6 得 k=3；第二分量 -1-3=-4，驗證成立。",
-    "explanation": "平移後為 (k+3,-1-k)。令 k+3=6 得 k=3；第二分量 -1-3=-4，驗證成立。",
+    "explanation": "向右二使橫坐標k＋1變成k＋3，向下三使縱坐標2－k變成-1－k，所以平移後為(k＋3,-1－k)。令第一分量等於六得k＝3，再代入第二分量得到負四，兩個條件一致。",
     "steps": [
-      "寫平移後坐標。",
-      "由第一分量求 k 並用第二分量驗證。"
+      "把平移作用到代數坐標，寫成(k＋3,-1－k)。",
+      "由k＋3＝6解得k＝3。",
+      "代入第二分量-1－3＝-4，確認終點一致。"
     ],
     "optionAnalysis": [
       {
@@ -832,7 +858,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c397ff7f15c3d7d24b4a53e631d3ec60c3fddfdba1076212ad8505d0cf6eeeff"
+    "contentSha256": "b847eb6ded0f6ea01ec9d34a8cc0b45a16a888a1153e51917e019d75763d3b3c",
+    "commonMistake": "沒有先把平移作用到整個代數式，或只用一個分量求值而未驗證另一分量。"
   },
   {
     "questionId": "u05-s005-v010",
@@ -845,7 +872,7 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
-    "text": "倉庫機器人由 (-3,2) 收到指令「E7、S4」，其中 E 為向東、S 為向南。執行後坐標為何？",
+    "text": "在x軸正向代表東、y軸正向代表北，且指令數字表示坐標單位的倉庫平面上，機器人由(-3,2)收到「E7、S4」，其中E為向東、S為向南。執行後坐標為何？",
     "givenConditions": [
       "題幹所列坐標、方程式與移動條件均為精確值。"
     ],
@@ -858,10 +885,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "E7 使 x=-3+7=4；S4 使 y=2-4=-2。",
-    "explanation": "E7 使 x=-3+7=4；S4 使 y=2-4=-2。",
+    "explanation": "題幹已明定東是x軸正向、北是y軸正向，且指令數字就是坐標單位。E7使橫坐標由負三增加七成為四，S4使縱坐標由二減少四成為負二，因此終點唯一是(4,-2)。",
     "steps": [
-      "把 E7 轉成 x+7。",
-      "把 S4 轉成 y-4。"
+      "依坐標軸約定，把E7翻成橫坐標加7。",
+      "計算-3＋7＝4，再把S4翻成縱坐標減4。",
+      "計算2－4＝-2，依(x,y)順序寫成(4,-2)。"
     ],
     "optionAnalysis": [
       {
@@ -898,7 +926,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "849b4b8d9f1f4d6f7456a2776708fd6b7848132a874c709f6fb9d7db86f56cf6"
+    "contentSha256": "e3a4b41295e988768f1348d8a495e0adae1d3cb89c114e8ba693cbb44b83f1a9",
+    "commonMistake": "未先確認題幹的軸向與單位約定，就憑日常地圖方向自行套用正負號。"
   },
   {
     "questionId": "u05-s005-v011",
@@ -924,10 +953,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "左移使 x=6-2=4；上移使 y=-1+5=4。",
-    "explanation": "左移使 x=6-2=4；上移使 y=-1+5=4。",
+    "explanation": "每個坐標單位就是一公尺，因此左移二公尺等於橫坐標六減二，得到四；上移五公尺等於縱坐標負一加五，也得到四。兩段移動分別作用在x、y，最後位置是(4,4)。",
     "steps": [
-      "計算 x=4。",
-      "計算 y=4。"
+      "依每單位1公尺，把左移2轉成x＝6－2＝4。",
+      "把上移5轉成y＝-1＋5＝4。",
+      "依坐標順序組成終點(4,4)，核對單位換算。"
     ],
     "optionAnalysis": [
       {
@@ -964,7 +994,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4b58f669368f8f47b84b763beb88ce37fe514ee598311b159382c2b4c4855545"
+    "contentSha256": "d22b21b0c25295d6fcdfacd2932396924fb8f31642ac72b799d60362a0ad2d8c",
+    "commonMistake": "把控制器的左、上方向做反，或將兩段距離加到同一個坐標分量。"
   },
   {
     "questionId": "u05-s005-v012",
@@ -990,10 +1021,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "A 到 B 的改變量為 (-4-2,1-5)=(-6,-4)。套到 C 得 (7-6,-3-4)=(1,-7)。",
-    "explanation": "A 到 B 的改變量為 (-4-2,1-5)=(-6,-4)。套到 C 得 (7-6,-3-4)=(1,-7)。",
+    "explanation": "先用終點減起點求A到B的共同平移量：橫向為負四減二等於負六，縱向為一減五等於負四。把同一改變量加到C=(7,-3)，得到(7－6,-3－4)＝(1,-7)。",
     "steps": [
-      "求共同水平改變 -6。",
-      "求共同垂直改變 -4 並套到 C。"
+      "計算A到B的水平改變量-4－2＝-6。",
+      "計算垂直改變量1－5＝-4。",
+      "把(-6,-4)套到C，得到(7－6,-3－4)＝(1,-7)。"
     ],
     "optionAnalysis": [
       {
@@ -1030,7 +1062,8 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b280218c3dc66aa63dee726b504539dc42fb8a3aaba91c4c000a5ac6e3116cea"
+    "contentSha256": "a1773a6c4e233e73ff6520905eaf858078585be8f6eb4b35b5a2ae1c11279565",
+    "commonMistake": "把B的終點坐標直接加到C，而不是先求出A到B的平移改變量。"
   }
 ];
 
@@ -1051,17 +1084,19 @@ export const CONSTRUCTED_RESPONSES = [
       "寫出 Δx、Δy。"
     ],
     "fullCreditSolution": [
-      "向左 5：x=2-5=-3。",
-      "向上 9：y=-4+9=5。",
-      "終點為 (-3,5)，整體改變量為 Δx=-5、Δy=+9。"
+      "起點A的橫坐標為二，向左五單位只改x，所以新橫坐標是2－5＝-3。",
+      "起點縱坐標為負四，向上九單位只改y，所以新縱坐標是-4＋9＝5。",
+      "平移後坐標為(-3,5)；終點減起點可得水平改變量Δx＝-3－2＝-5。",
+      "垂直改變量Δy＝5－(-4)＝+9，與題目的左五、上九一致。"
     ],
     "alternativeSolutions": [
       "可直接寫 (2-5,-4+9)=(-3,5)。"
     ],
     "reasoningSteps": [
-      "向左 5：x=2-5=-3。",
-      "向上 9：y=-4+9=5。",
-      "終點為 (-3,5)，整體改變量為 Δx=-5、Δy=+9。"
+      "把向左五翻成橫坐標減五，計算新的x。",
+      "把向上九翻成縱坐標加九，計算新的y。",
+      "依(x,y)順序寫出終點，並以終點減起點求兩個改變量。",
+      "核對改變量的正負號與原指令方向一致。"
     ],
     "rubric": [
       {
@@ -1088,8 +1123,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "終點寫成有序對；整體改變量寫為 Δx=-5、Δy=9，或等義的向左 5、向上 9。",
     "answerOnlyPolicy": "只寫終點 (-3,5) 而沒有水平與垂直改變量，最高給 2 分。",
     "commonErrors": [
-      "向左寫 Δx=5。",
-      "把兩個改變量加到同一分量。"
+      "把向左五寫成Δx＝+5，或因起點橫坐標為正就忽略左移會跨越零。",
+      "將左五與上九都作用在同一分量，沒有分別更新橫坐標與縱坐標。"
     ],
     "independentReview": {
       "derivedResult": "一個分量的早期算術錯不影響另一分量得分。",
@@ -1099,7 +1134,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c10bc9e29fa00f32710a119357aeaf71296fc7b04ec94faad95a538165b1db15"
+    "contentSha256": "7e0a9469ddface6be9246af405f7a58f25573cce7a704ce1c0d0648cd0c6bd8a"
   },
   {
     "questionId": "u05-s005-cr002",
@@ -1117,19 +1152,19 @@ export const CONSTRUCTED_RESPONSES = [
       "由兩分量分別求或驗證 m。"
     ],
     "fullCreditSolution": [
-      "平移後坐標為 (m+3,2m-5)。",
-      "由 m+3=8 得 m=5。",
-      "第二分量檢查：2×5-5=5，與終點縱坐標相同。",
-      "所以 m=5。"
+      "向右三使橫坐標m變成m＋3；向下四使縱坐標2m－1變成2m－5，因此終點為(m＋3,2m－5)。",
+      "比較第一分量：m＋3＝8，兩邊同減三得到m＝5。",
+      "用第二分量獨立檢查：2m－5＝5，代入m＝5得到10－5＝5，與終點縱坐標一致。",
+      "兩個分量都給出同一個m，所以答案為m＝5。"
     ],
     "alternativeSolutions": [
       "也可先由 2m-5=5 求 m=5，再檢查第一分量。"
     ],
     "reasoningSteps": [
-      "平移後坐標為 (m+3,2m-5)。",
-      "由 m+3=8 得 m=5。",
-      "第二分量檢查：2×5-5=5，與終點縱坐標相同。",
-      "所以 m=5。"
+      "分別把向右三與向下四作用在原坐標的兩個分量。",
+      "由終點橫坐標建立一次方程式並求m。",
+      "把所得m代入平移後縱坐標，檢查是否等於五。",
+      "確認兩個分量沒有矛盾後作答。"
     ],
     "rubric": [
       {
@@ -1156,8 +1191,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "須分別列出 m+3=8 與 2m-1-4=5，參數答案寫成 m=5。",
     "answerOnlyPolicy": "只寫 m=5 而沒有由兩個分量檢查一致性，最高給 1 分。",
     "commonErrors": [
-      "向下後寫 2m+3。",
-      "忽略第一分量也含 m。"
+      "把向下四錯加到2m－1，寫成2m＋3，導致第二分量方程式錯誤。",
+      "只用其中一個分量求m而完全忽略另一分量，未發現可能的資料不一致。"
     ],
     "independentReview": {
       "derivedResult": "若一條方程式解算錯但另一條正確得到 m=5，可給 2 分並指出不一致。",
@@ -1167,14 +1202,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ddea04299485bb221dee20f08afe47acda5a0dfe476213f129dae7569616cf9f"
+    "contentSha256": "d49488887c02c50e6ca31c567a427b3eda93cb2acc36dfa75b3ca85f3d5aec9e"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s005-v001",
-    "contentSha256": "2f748e58ee5f456479f71fb145dc5cfb77cd45bdd0e7bbbfa998f723457917c8",
+    "contentSha256": "f5bcde48131f6f9a6b5ea90188dcd6d36d50e0dcdeb7266f3ce9ccec9707c3b3",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "向右只增加 x：-1+6=5；y 保持 4。",
     "derivedAnswer": "(5,4)",
@@ -1206,7 +1241,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v002",
-    "contentSha256": "bd22bd64f2806e78ded79d728ff3ba0b91620c32c8d0bddf76eef0d1f2326f8b",
+    "contentSha256": "1fd82d44d6232016a6c57308fe7c37b89203a4468e3a3aca45f82a7de4d468ce",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "向下只使 y 減 5：-2-5=-7，x 不變。",
     "derivedAnswer": "(3,-7)",
@@ -1238,7 +1273,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v003",
-    "contentSha256": "429ea690448e1fbcfa824975d307a4bb4ca0ed4a8ebddcc4521a8c6cd342f2b5",
+    "contentSha256": "0a6fcb0b71831e3cbc0a15db0927c7c5596f9566b2ab39efd072671090c667e3",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x 不變，y 由 7 降到 1，減少 6，因此向下 6。",
     "derivedAnswer": "向下 6 單位",
@@ -1270,7 +1305,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v004",
-    "contentSha256": "e9436e5e5ccfc411e72ff571c1eae821bbd98b5456081df55d8083ef1bff15d5",
+    "contentSha256": "942b24f597670167747a19147044e20105f96937d42fa1da0ac36a1613c727bc",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=-4+9=5，y=3-7=-4，所以終點 (5,-4)。",
     "derivedAnswer": "(5,-4)",
@@ -1302,7 +1337,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v005",
-    "contentSha256": "107b3ae82a6487f55ba0259b32a5c47d1e3af3b4ade918d32cebcaa9d3e74d20",
+    "contentSha256": "91b06763b4e8119a465ba8658b17a085fc6415c2f7d75f29461b5b5628872634",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "向左 3 後橫坐標 a-3=5，所以 a=8。",
     "derivedAnswer": "8",
@@ -1334,7 +1369,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v006",
-    "contentSha256": "444a3c6d6ed7f623ba906bd23b7d35a83d5992073b73c0928df87dac5f080d46",
+    "contentSha256": "6ceb823222501105554ac4b3e3d60a26c52c7b050cc6a816c877b264c6a1914f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "平移不改 x，所以 m=3；檢查 y：2m+4=6+4=10，成立。",
     "derivedAnswer": "3",
@@ -1366,7 +1401,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v007",
-    "contentSha256": "8bd3853243454167a11692f2c5343637167cfaaaa0efdd6996f47f672197af50",
+    "contentSha256": "3b5127c1e5fd361f2e71dbbf77b2c707e5a3adcc9e1789a498e38b798e4e5be0",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "水平淨改變 5-8=-3，垂直淨改變 2-6=-4，所以等同左 3、下 4。",
     "derivedAnswer": "向左 3、向下 4",
@@ -1398,7 +1433,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v008",
-    "contentSha256": "c16030b715e49c7e2fe044d3450296ee7f8a06054561b08acaf39c70c5dcfacc",
+    "contentSha256": "8682f39bda38b98f1d29ce74ec493bf2db2d78b951d9c7c13cd92edefa1965cd",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "逆向操作為向右 4、向下 7：(1+4,2-7)=(5,-5)。",
     "derivedAnswer": "(5,-5)",
@@ -1430,7 +1465,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v009",
-    "contentSha256": "c397ff7f15c3d7d24b4a53e631d3ec60c3fddfdba1076212ad8505d0cf6eeeff",
+    "contentSha256": "b847eb6ded0f6ea01ec9d34a8cc0b45a16a888a1153e51917e019d75763d3b3c",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "平移後為 (k+3,-1-k)。令 k+3=6 得 k=3；第二分量 -1-3=-4，驗證成立。",
     "derivedAnswer": "3",
@@ -1462,7 +1497,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v010",
-    "contentSha256": "849b4b8d9f1f4d6f7456a2776708fd6b7848132a874c709f6fb9d7db86f56cf6",
+    "contentSha256": "e3a4b41295e988768f1348d8a495e0adae1d3cb89c114e8ba693cbb44b83f1a9",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "E7 使 x=-3+7=4；S4 使 y=2-4=-2。",
     "derivedAnswer": "(4,-2)",
@@ -1478,9 +1513,9 @@ export const SEMANTIC_REVIEWS = [
     "ambiguityChecks": {
       "secondCorrectAnswer": "重新計算得到「(4,-2)」；其餘三項逐項檢查：「(-10,-2)」不成立，東移誤做西移。；「(4,6)」不成立，南移誤做北移。；「(-7,-4)」不成立，直接以指令數字替換坐標。",
       "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「點的平移」講義中定義，坐標固定以 (x,y) 表示。",
-      "unitConflict": "每個指令數字代表格數，答案為格線坐標。",
+      "unitConflict": "題幹明定每個指令數字代表坐標單位，答案為格線坐標。",
       "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-      "domainBoundary": "東、南方向由指令明確定義。",
+      "domainBoundary": "題幹明定x軸正向為東、y軸正向為北，因此東移增加x、南移減少y。",
       "alternateReading": "常見誤讀是「未解碼方位字母或忽略起點。」；依題幹完整條件重算後不會形成另一個正確答案。"
     },
     "difficultyReason": "控制碼與起點資訊共同決定答案，屬素養。",
@@ -1488,13 +1523,13 @@ export const SEMANTIC_REVIEWS = [
     "prerequisiteCheck": "需會方位與坐標正負。",
     "languageCheck": "題幹所求為「依導航碼執行平移」，方向、軸名、截距值或交點坐標均有明確指稱。",
     "reviewerDecision": "pass",
-    "reviewerNote": "針對「倉庫機器人由 (-3,2) 收到指令「E7、S4」，其中 E 為向東、S 為向南。執行後坐標為何？」重新依序處理：E7 使 x=-3+7=4；S4 使 y=2-4=-2。 正確選項為「(4,-2)」。三個干擾項均對應不同錯誤：「(-10,-2)」不成立，東移誤做西移。；「(4,6)」不成立，南移誤做北移。；「(-7,-4)」不成立，直接以指令數字替換坐標。。邊界審查：東、南方向由指令明確定義。 難度理由：控制碼與起點資訊共同決定答案，屬素養。",
+    "reviewerNote": "針對「在x軸正向代表東、y軸正向代表北，且指令數字表示坐標單位的倉庫平面上，機器人由(-3,2)收到「E7、S4」，其中E為向東、S為向南。執行後坐標為何？」重新依序處理：E7 使 x=-3+7=4；S4 使 y=2-4=-2。 正確選項為「(4,-2)」。三個干擾項均對應不同錯誤：「(-10,-2)」不成立，東移誤做西移。；「(4,6)」不成立，南移誤做北移。；「(-7,-4)」不成立，直接以指令數字替換坐標。。邊界審查：題幹明定x軸正向為東、y軸正向為北，因此東移增加x、南移減少y。 難度理由：控制碼與起點資訊共同決定答案，屬素養。",
     "reviewedAt": "2026-07-12",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u05-s005-v011",
-    "contentSha256": "4b58f669368f8f47b84b763beb88ce37fe514ee598311b159382c2b4c4855545",
+    "contentSha256": "d22b21b0c25295d6fcdfacd2932396924fb8f31642ac72b799d60362a0ad2d8c",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "左移使 x=6-2=4；上移使 y=-1+5=4。",
     "derivedAnswer": "(4,4)",
@@ -1526,7 +1561,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s005-v012",
-    "contentSha256": "b280218c3dc66aa63dee726b504539dc42fb8a3aaba91c4c000a5ac6e3116cea",
+    "contentSha256": "a1773a6c4e233e73ff6520905eaf858078585be8f6eb4b35b5a2ae1c11279565",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "A 到 B 的改變量為 (-4-2,1-5)=(-6,-4)。套到 C 得 (7-6,-3-4)=(1,-7)。",
     "derivedAnswer": "(1,-7)",

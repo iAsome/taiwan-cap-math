@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u15",
+  "batch": "016-u15-complete",
+  "skills": ["s010"],
+  "mc": [
+    {
+      "questionId": "u15-s010-mc01",
+      "expectedContentSha256": "25267c9145beb8e4efeb2454ec86ca485cfa72217387446be01388335b82735d",
+      "appendText": {
+        "explanation": "函數圖上的點依序記成輸入與輸出；第一坐標二代入括號，第二坐標五就是函數值。因此應讀成輸入二時輸出五，選五後還可用原點的坐標順序回查。",
+        "misconceptionTarget": "不可把第一坐標當函數值，或把點的兩個坐標交換後再作答。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc02",
+      "expectedContentSha256": "f0cb37d7d7f403d239f3235b87bde69f83c195685f3f5100e5c217b770098730",
+      "appendText": {
+        "explanation": "點的第一坐標是負三，負號屬於輸入且不能省略；第二坐標四是對應輸出，所以正確敘述是輸入負三時函數值四。其餘選項不是交換坐標，就是擅自改掉負號。",
+        "misconceptionTarget": "須同時保留輸入的負號與坐標順序，不能只抄兩個數字。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc03",
+      "expectedContentSha256": "30da57df38cf6036935c89473de56f9f2ade74016e2c0c6aaf6da624056b7694",
+      "appendText": {
+        "explanation": "任何在橫軸上的點，其縱坐標都是零；交點寫成六、零，表示輸入六時輸出零。因此零是函數值而不是輸入，不能改讀成輸入零時輸出六。",
+        "misconceptionTarget": "要分清橫軸零點與縱軸截距，不能把六和零的位置顛倒。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc04",
+      "expectedContentSha256": "068c9eb3840c4854d9770262b53934d5bd3391f1cfcba91e67b6945d9d331b48",
+      "appendText": {
+        "explanation": "兩點的水平差四、垂直差八，所以直線每向右一單位上升二。從零走到二共前進兩單位，輸出由一增加四而成五；也可用兩端中點的縱坐標五驗算。",
+        "misconceptionTarget": "不能只把兩個縱坐標相減，還要依水平距離求每單位變化。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc05",
+      "expectedContentSha256": "5a4ba42375968c4b292b491e8b8ff3d5d2c00796056a75b0421d94ecd39d9c25",
+      "appendText": {
+        "explanation": "由兩個標示點直接得到輸入負一時輸出三、輸入三時輸出負一。比較函數值就是比較三與負一，正數必大於負數，所以前者較大，不必另外由斜率推測。",
+        "misconceptionTarget": "比較的是兩個輸出值，不能把負的輸入也拿來和輸出混比。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc06",
+      "expectedContentSha256": "387e10af83d65fb5f90cc436f7ed3929f47c2f6c2f4c98eca7896fed0ce9794a",
+      "appendText": {
+        "explanation": "同一直線從輸出零到四時，輸入由負二均勻增加到零。輸出二正好是兩端輸出的中點，所以相應輸入也是負二與零的中點負一；代回線性變化可確認輸出為二。",
+        "misconceptionTarget": "反讀指定輸出時要沿水平線找輸入，並保留中點負一的負號。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc07",
+      "expectedContentSha256": "3c77171714d14a0694179166cc20e7d68a6e749ff2f3949079513c6e2c9c69ed",
+      "appendText": {
+        "explanation": "兩圖交於三、七，表示它們在同一輸入三時都到達共同輸出七，因此兩個函數值各自等於七。交點只保證這個輸入下相等，不能推成所有輸入都相等。",
+        "misconceptionTarget": "交點的第一坐標是共同輸入，第二坐標是共同輸出，且只描述該點。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc08",
+      "expectedContentSha256": "df0e0f67528c3f9fedb379e26cec6081124483821d7a6b763d85c20c15333e84",
+      "appendText": {
+        "explanation": "直線在輸入二時位於橫軸，函數值為零；斜率為負代表向右走輸出下降。因此在二的左側圖形位於橫軸上方，函數值為正，而二本身不符合嚴格大於零。",
+        "misconceptionTarget": "不能只找到零點，還要用負斜率判斷哪一側在橫軸上方。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc09",
+      "expectedContentSha256": "1c805d29a18866a2a1bb285c0f8855ef92f850e694cd07889dc213400c4c9a15",
+      "appendText": {
+        "explanation": "輸入由一到五增加四，輸出由四降到負八，共減十二，所以每增加一單位便減三。從一到三增加二，輸出應由四減六得到負二；代入兩端的中點也得到同值。",
+        "misconceptionTarget": "斜率是垂直差除以水平差，負十二不能直接當每單位變化。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc10",
+      "expectedContentSha256": "4fc92e591f9dcdf67ce8f36680a486cf74035cf597ef67024a50b4a2e6a2b9ff",
+      "appendText": {
+        "explanation": "先依坐標軸單位讀點：橫坐標十二代表十二分鐘，縱坐標三點六代表累積距離三點六公里。這個點只描述某時刻的距離，沒有計算垂直差除以水平差，不能直接稱為速率。",
+        "misconceptionTarget": "坐標值要連同軸名與單位解讀，不能交換時間、距離或把點當速率。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc11",
+      "expectedContentSha256": "5c6f004850438b9b6ec4237fbbd99bf2e3e6112011f3672991a8283b67e71f35",
+      "appendText": {
+        "explanation": "六時到十二時共六小時，氣溫由十八升到二十七，共升九度，直線段表示每小時升一點五度。十時比六時晚四小時，因此增加六度而估得二十四度。",
+        "misconceptionTarget": "線性內插要按經過時間比例分配九度，不能只取兩端氣溫平均。"
+      }
+    },
+    {
+      "questionId": "u15-s010-mc12",
+      "expectedContentSha256": "f0573536e8a8fb37555747390719f581902946def11408f73eff07c24a318a0e",
+      "appendText": {
+        "explanation": "縱軸是累積用電量，圖形水平表示八時與十時的累積值相同，這兩小時內沒有新增用電量。水平線的高度可以不是零，所以不能把十時的累積總量誤判成零。",
+        "misconceptionTarget": "必須區分累積總量與每小時新增量，水平只表示該段增量為零。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u15-s010-cr01",
+      "expectedContentSha256": "9636567a188033f2b3043eff04daa67e366a5d8c89fd4c876167a36bac2ef31b",
+      "appendText": {
+        "standardSolution": "三個已知點的斜率皆為二，且輸入零時輸出四，因此函數式為 f(x)=2x+4。代入負一得二；令輸出六可得輸入一。零點是負二且直線遞增，所以只有負二右側的函數值為正，端點本身等於零不得納入。"
+      },
+      "set": {
+        "commonErrors": [
+          "求得零點負二後誤寫成 x≥-2，忽略題目要求的是嚴格大於零。",
+          "由圖讀 f(-1) 時漏掉輸入負號，或解 f(x)=6 時把六直接當成輸入。"
+        ]
+      }
+    },
+    {
+      "questionId": "u15-s010-cr02",
+      "expectedContentSha256": "6561c5bb5b925f530ad287233f46a6042f191d9f411352eebab944b1a72ed691",
+      "appendText": {
+        "standardSolution": "第一條線由兩點得斜率負一、截距六，所以 f(x)=-x+6；第二條線斜率二且過原點，所以 g(x)=2x。令兩輸出相等得三倍 x 等於六，故交點為 (2,4)。代回兩式都得四，驗證輸入二時兩函數同值。"
+      },
+      "set": {
+        "commonErrors": [
+          "只解出 x=2 就停止，沒有代回求共同輸出四，因此未完整寫成交點。",
+          "把交點解釋成兩函數在所有輸入都相等，而不是只在輸入二時同為四。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u15-s010-lecture",
+      "expectedContentSha256": "be8aed07e1f1ed386a4b9c695dec89ed4c4c42cc6b9bfab4aaa3fefd8400db59",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "s010-ex01",
+            "title": "讀函數值",
+            "prompt": "函數圖形上標示點 (2,5)。由圖讀出 f(2)，並說明橫坐標與縱坐標的角色。",
+            "solution": "圖上有點 (2,5)，所以 f(2)=5；二是輸入，五是對應輸出。",
+            "solutionSteps": ["先確認橫軸表示輸入 x、縱軸表示輸出。", "讀點的第一坐標二並代入函數括號。", "讀第二坐標五，寫成 f(2)=5 並用原點回查。"],
+            "why": "函數圖上的序對固定先寫輸入再寫輸出；把二放進括號、五放在等號右邊，能同時核對坐標順序，避免把同一點誤寫成 f(5)=2。",
+            "level": "basic"
+          },
+          {
+            "exampleId": "s010-ex02",
+            "title": "反找輸入",
+            "prompt": "水平線 y=4 與某函數圖形交於 x=-1、3。由圖找出方程 f(x)=4 的所有解。",
+            "solution": "水平線與圖形有兩個交點，所以解為 x=-1 或 x=3。",
+            "solutionSteps": ["先在縱軸標出指定輸出四並作水平線。", "讀出水平線與圖形兩個交點的橫坐標負一與三。", "把兩個輸入都列為解，逐一確認函數值均為四。"],
+            "why": "反找輸入時固定的是輸出，因此要沿水平線尋找全部交點；若只讀第一個交點會漏解，而把四當成橫坐標則改變了原方程。",
+            "level": "standard"
+          },
+          {
+            "exampleId": "s010-ex03",
+            "title": "讀交點",
+            "prompt": "函數 f 與 g 的圖形交於 (1,2)。寫出此交點對 f(1) 與 g(1) 的意義。",
+            "solution": "交點表示輸入一時兩個函數的輸出都為二，即 f(1)=g(1)=2。",
+            "solutionSteps": ["讀交點第一坐標一作為兩函數共同輸入。", "讀第二坐標二作為兩圖的共同輸出。", "寫成 f(1)=g(1)=2，並限定結論只針對此交點。"],
+            "why": "交點同時位於兩個函數圖形上，所以同一序對必須滿足兩個函數；這只證明輸入一時相等，不能延伸成兩函數在所有輸入都相同。",
+            "level": "advanced"
+          },
+          {
+            "exampleId": "s010-ex04",
+            "title": "讀正負",
+            "prompt": "由圖判讀函數值正負：圖形位於 x 軸上方、x 軸上及下方時，f(x) 分別與 0 有何關係？",
+            "solution": "圖形在 x 軸上方時 f(x)>0，在 x 軸上時 f(x)=0，在下方時 f(x)<0。",
+            "solutionSteps": ["把橫軸視為所有縱坐標等於零的位置。", "比較指定輸入處的圖形高度與橫軸高度。", "依上方、軸上、下方分別寫出大於、等於、小於零。"],
+            "why": "函數值就是圖上點的縱坐標，橫軸提供零的基準；三種相對位置正好對應正、零、負，判讀時不需要用線段長短猜測數值。",
+            "level": "connection"
+          }
+        ]
+      },
+      "appendArray": {
+        "conceptDevelopment": [
+          "讀圖必須把坐標、刻度與單位一起處理：指定 f(a) 時固定輸入 a 垂直找圖，指定 f(x)=b 時固定輸出 b 水平找出所有交點。兩圖交點表示同一輸入下輸出相等；圖形相對 x 軸的位置則分別表示函數值為正、零或負，端點與定義域也不能由外觀任意延伸。"
+        ],
+        "stepByStepMethod": [
+          "最後把讀得的序對改寫成函數等式，或代回直線關係檢查坐標、負號、單位與解的個數。"
+        ],
+        "selfChecks": [
+          {"prompt": "圖形與 x 軸交於 (-2,0)，這個點應寫成哪個函數等式？", "answer": "f(-2)=0。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

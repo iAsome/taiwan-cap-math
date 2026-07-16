@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "cap8-r4-math-final-duplicate-reference-audit-r1",
+  "generatedAt": "2026-07-16T18:06:08.815Z",
+  "status": "PASS",
+  "scope": {
+    "units": [
+      "u01",
+      "u02",
+      "u03",
+      "u04",
+      "u05",
+      "u06",
+      "u07",
+      "u08",
+      "u09",
+      "u10",
+      "u11",
+      "u12",
+      "u13",
+      "u14",
+      "u15",
+      "u16",
+      "u17",
+      "u18",
+      "u19",
+      "u20",
+      "u21",
+      "u22",
+      "u23"
+    ],
+    "source": "current authoritative skill directories under tools/v2-human-content/batches after full U23 central apply",
+    "gitHead": "52e63f82f51d39d0298a899e266614eca229c709",
+    "counts": {
+      "batches": 24,
+      "skills": 339,
+      "lectures": 339,
+      "mcQuestions": 4068,
+      "constructedResponses": 678,
+      "semanticReviews": 4068,
+      "drawingSpecs": 178,
+      "svgFigures": 178
+    },
+    "parseErrorCount": 0
+  },
+  "method": {
+    "exactPrompt": "NFKC, whitespace and punctuation normalized; MC and constructed response scanned separately",
+    "numberSwap": "prompt plus choices with Arabic, fraction, percent and Chinese numerals normalized",
+    "normalizedPrompt": "prompt numerals and point/variable labels normalized before grouping",
+    "nearPair": "within-unit normalized character-trigram Jaccard threshold 0.72 with length-ratio floor 0.72",
+    "sameValueRename": "same numeric sequence across skills with normalized context similarity threshold 0.62",
+    "reference": "all supported figureReferences/figureRefs/figures, figureId/figureRef, drawingSpecId/drawingSpecReference/drawingSpecRef and drawingSpecReferences/drawingRefs forms resolved by unit",
+    "figureLeak": "visible SVG text and alt text checked for direct answer/correct markers; every drawing's explicit answer-leak review evidence was also checked",
+    "policy": "candidates were manually adjudicated; no question was deleted or modified by this audit"
+  },
+  "duplicateAudit": {
+    "exactMcPromptGroups": {
+      "rawCount": 0,
+      "trueIssueCount": 0
+    },
+    "exactConstructedResponseGroups": {
+      "rawCount": 0,
+      "trueIssueCount": 0
+    },
+    "crossUnitPromptSkeletonGroups": {
+      "rawCount": 0,
+      "trueIssueCount": 0
+    },
+    "numberSwapCandidateGroups": {
+      "rawCount": 22,
+      "itemCount": 54,
+      "reviewedCount": 22,
+      "legitimateDistinctCapabilityCount": 22,
+      "trueIssueCount": 0,
+      "matchesPriorAdjudicatedIdSets": true,
+      "priorEvidence": "數學會考作戰室/tools/v2-human-content/global-repair/wave-1b/evidence/duplicate-adjudication-report.json",
+      "priorEvidenceStatus": "PASS_DUPLICATE_ADJUDICATION",
+      "priorUnresolvedGroupCount": 0
+    },
+    "normalizedPromptCandidateGroups": {
+      "rawCount": 33,
+      "itemCount": 77,
+      "reviewedCount": 33,
+      "legitimatePracticeCount": 33,
+      "trueIssueCount": 0
+    },
+    "nearPairCandidates": {
+      "rawCount": 236,
+      "sameSkillCount": 126,
+      "crossSkillCount": 110,
+      "reviewedCount": 236,
+      "legitimatePracticeCount": 236,
+      "trueIssueCount": 0
+    },
+    "sameNumericStructureCrossSkillCandidates": {
+      "rawCount": 1,
+      "reviewedCount": 1,
+      "legitimateDistinctTargetCount": 1,
+      "trueIssueCount": 0,
+      "retained": [
+        {
+          "ids": [
+            "u19-s004-v002",
+            "u19-s010-v002"
+          ],
+          "decision": "RETAIN_DISTINCT_CAPABILITY",
+          "rationale": "Both use radius 8 m and a quarter circle, but one asks arc length and the other asks sector area; the target quantity, dimension and formula differ."
+        }
+      ]
+    },
+    "candidateCountsAreNotAdditive": true,
+    "manualAdjudicationSummary": "Repeated practice was retained only where sign cases, boundary cases, representation, formula target or locked capability differed. No current pair is the same mathematical task with only names, labels or context changed."
+  },
+  "referenceAudit": {
+    "referenceOccurrences": 587,
+    "byKind": {
+      "figureId": 402,
+      "drawingSpecIdOrReference": 185
+    },
+    "byOwner": {
+      "lecture": 157,
+      "mcQuestion": 273,
+      "constructedResponse": 157
+    },
+    "uniqueOwnerCount": 388,
+    "uniqueTargetEncodingCount": 252,
+    "missingFigureReferenceCount": 0,
+    "missingDrawingReferenceCount": 0,
+    "textOnlyResidualReferenceCount": 0,
+    "figureModeWithoutReferenceCount": 0,
+    "unreferencedDrawingSpecCount": 0,
+    "missingSvgCount": 0,
+    "drawingAltTextMissingCount": 0,
+    "svgTitleDescRoleOrLongDescriptionMissingCount": 0,
+    "answerLeakReviewEvidenceCount": 178,
+    "answerLeakCandidateCount": 0,
+    "trueIssueCount": 0
+  },
+  "u23PostCentralApply": {
+    "skills": 20,
+    "mcQuestions": 240,
+    "constructedResponses": 40,
+    "drawingSpecs": 11,
+    "svgFigures": 11,
+    "referenceOccurrences": 37,
+    "exactMcPromptGroups": 0,
+    "exactConstructedResponseGroups": 0,
+    "normalizedPromptCandidateGroups": 0,
+    "nearPairCandidates": 0,
+    "sameNumericStructureCrossSkillCandidates": 0,
+    "missingFigureReferenceCount": 0,
+    "missingDrawingReferenceCount": 0,
+    "textOnlyResidualReferenceCount": 0,
+    "unreferencedDrawingSpecCount": 0,
+    "missingSvgCount": 0,
+    "answerLeakCandidateCount": 0,
+    "trueIssueCount": 0
+  },
+  "closedDuringAudit": [
+    {
+      "kind": "TRUE_ESSENTIAL_DUPLICATE",
+      "ids": [
+        "u13-s004-v012",
+        "u13-s009-v012"
+      ],
+      "resolution": "u13-s009-v012 was re-authored to use n²-2pn+(p²-4)=0 with discriminant constantly 16; current rescan no longer groups the two items.",
+      "currentIssueCount": 0
+    },
+    {
+      "kind": "TEXT_ONLY_RESIDUAL_DRAWING_REFERENCE",
+      "ids": [
+        "u17-s008-v001",
+        "u17-s010-v001",
+        "u17-s011-v001"
+      ],
+      "resolution": "drawingSpecRef was set to null while visualMode remained text-only; current rescan finds no residual reference.",
+      "currentIssueCount": 0
+    }
+  ],
+  "supportingChecks": {
+    "globalDuplicateScanner": {
+      "exactMcPromptGroups": 0,
+      "crossUnitPromptSkeletonGroups": 0,
+      "numberSwapCandidateGroups": 22,
+      "exactConstructedResponseGroups": 0
+    },
+    "sourceDepthReferenceSubset": {
+      "status": "PASS",
+      "units": 23,
+      "blockerCount": 0,
+      "highCount": 0,
+      "mediumCount": 0,
+      "lowCount": 0,
+      "figureReferenceMissingCount": 0,
+      "drawingSpecReferenceMissingCount": 0
+    }
+  },
+  "perUnitColumns": [
+    "unitId",
+    "skills",
+    "mc",
+    "cr",
+    "drawingSpecs",
+    "referenceOccurrences",
+    "numberSwapGroups",
+    "normalizedPromptGroups",
+    "nearPairs",
+    "sameValueCrossSkillCandidates",
+    "trueIssues"
+  ],
+  "perUnit": [
+    ["u01", 15, 180, 30, 5, 5, 9, 12, 43, 0, 0],
+    ["u02", 15, 180, 30, 3, 3, 4, 4, 14, 0, 0],
+    ["u03", 15, 180, 30, 3, 3, 3, 3, 36, 0, 0],
+    ["u04", 14, 168, 28, 0, 0, 0, 1, 7, 0, 0],
+    ["u05", 12, 144, 24, 0, 0, 0, 0, 3, 0, 0],
+    ["u06", 12, 144, 24, 3, 5, 2, 3, 4, 0, 0],
+    ["u07", 12, 144, 24, 3, 6, 0, 0, 20, 0, 0],
+    ["u08", 14, 168, 28, 4, 12, 0, 0, 0, 0, 0],
+    ["u09", 16, 192, 32, 7, 29, 0, 0, 2, 0, 0],
+    ["u10", 13, 156, 26, 4, 14, 0, 2, 33, 0, 0],
+    ["u11", 16, 192, 32, 9, 31, 0, 2, 5, 0, 0],
+    ["u12", 10, 120, 20, 3, 10, 0, 0, 8, 0, 0],
+    ["u13", 15, 180, 30, 4, 11, 0, 2, 27, 0, 0],
+    ["u14", 12, 144, 24, 4, 9, 4, 4, 18, 0, 0],
+    ["u15", 13, 156, 26, 14, 22, 0, 0, 5, 0, 0],
+    ["u16", 18, 216, 36, 18, 48, 0, 0, 1, 0, 0],
+    ["u17", 18, 216, 36, 18, 72, 0, 0, 3, 0, 0],
+    ["u18", 16, 192, 32, 11, 33, 0, 0, 3, 0, 0],
+    ["u19", 18, 216, 36, 18, 124, 0, 0, 2, 1, 0],
+    ["u20", 15, 180, 30, 16, 52, 0, 0, 1, 0, 0],
+    ["u21", 12, 144, 24, 12, 24, 0, 0, 0, 0, 0],
+    ["u22", 18, 216, 36, 8, 37, 0, 0, 1, 0, 0],
+    ["u23", 20, 240, 40, 11, 37, 0, 0, 0, 0, 0]
+  ],
+  "trueIssues": [],
+  "finalDecision": "PASS: all duplicate and figure/drawing-reference candidates were reviewed; current true issue count is zero."
+}

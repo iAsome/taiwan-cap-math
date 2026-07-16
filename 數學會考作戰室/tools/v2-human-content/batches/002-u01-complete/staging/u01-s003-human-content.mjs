@@ -124,44 +124,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "數線每格 1，A 在原點左邊 5 格。A 的坐標？",
-      "solutionSteps": [
-        "原點是 0。",
-        "向左每格減 1。",
-        "0 向左五格到 -5。"
-      ],
-      "answer": "-5。"
+      "prompt": "數線每格 1，A 在原點左邊 5 格。A 的坐標是多少？",
+      "answer": "A 的坐標是 −5。",
+      "why": "原點坐標為 0，題目又說每格代表 1。從原點向左每走一格坐標減 1，連走五格依序到 −1、−2、−3、−4、−5，所以坐標必須帶負號。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "數線上 -4 與 2 相隔三格，每格代表多少？",
-      "solutionSteps": [
-        "數值差為 2－(-4)=6。",
-        "共有三格。",
-        "6÷3=2。"
-      ],
-      "answer": "每格 2。"
+      "prompt": "數線上 −4 與 2 相隔三格，每格代表多少？",
+      "answer": "每格代表 2。",
+      "why": "先求兩個已知坐標的數值差，2−(−4)=6，這段長度被平均分成三格，所以每格代表 6÷3=2。格數與坐標差是不同的量，不能看到三格就回答 3。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "B 從 -3 向右移 7 單位，終點坐標？",
-      "solutionSteps": [
-        "向右記 +7。",
-        "新坐標=-3+7。",
-        "結果為 4。"
-      ],
-      "answer": "4。"
+      "prompt": "B 從 −3 向右移 7 單位，終點坐標是多少？",
+      "answer": "終點坐標是 4。",
+      "why": "在通常向右為正的數線上，向右移 7 單位要把 +7 加到起點 −3，得到 −3+7=4。移動會跨過原點，先走三單位到 0，再走四單位到 4。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "C 在坐標 6，向左移 9 單位。",
-      "solutionSteps": [
-        "向左記 -9。",
-        "6+(-9)=-3。",
-        "終點在原點左側 3 單位。"
-      ],
-      "answer": "-3。"
+      "prompt": "C 在坐標 6，向左移 9 單位，終點坐標是多少？",
+      "answer": "終點坐標是 −3。",
+      "why": "向左移 9 單位的帶號移動量是 −9，所以新坐標為 6+(−9)=−3。因移動距離大於起點到原點的 6 單位，終點會跨過 0 並落在原點左側 3 單位。"
     }
   ],
   "commonMistakes": [
@@ -248,7 +228,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "a220caa78add28dd6f08478b88a9ad6ae9d6bc6f5a9641b96ab2b0b4071c2072",
+  "contentSha256": "9ce0a715535d3a73edf55eae46633713ad9ab430c11ef6582c74b9a5e2d998d4",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -272,7 +252,7 @@ export const QUESTIONS = [
       "-5"
     ],
     "answerIndex": 0,
-    "explanation": "原點左側是負方向，距離 4 個單位，因此坐標為 -4。",
+    "explanation": "數線以原點為 0，通常向右是正方向、向左是負方向。點 A 在原點左側，故坐標必須帶負號；它與原點相距 4 個單位，所以 A 的坐標是 −4，而不是只表示距離的 4。",
     "steps": [
       "以原點為 0。",
       "向左四格。",
@@ -315,7 +295,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "be38d6c82647269e8567126250dbec703f7db488c143f430af74300ed8687475",
+    "contentSha256": "dc0a3c18d035f5627da6c4a38fa8df71f0ca62dc98e470e2ce345ed2c3d1cc54",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -337,7 +317,7 @@ export const QUESTIONS = [
       "原點"
     ],
     "answerIndex": 1,
-    "explanation": "+6 是正坐標，位於原點右側 6 個單位。",
+    "explanation": "題目採用通常向右為正的數線，因此正坐標位於原點右側。+6 的正號指出方向向右，數字 6 表示離原點 6 個單位，所以位置是原點右側 6 單位。",
     "steps": [
       "正號表示正方向。",
       "通常正方向向右。",
@@ -365,7 +345,7 @@ export const QUESTIONS = [
         "reason": "原點坐標是0。"
       }
     ],
-    "commonMistake": "把正號與左方向配對。",
+    "commonMistake": "把正號誤配成向左方向，因而把加六畫在原點左側。",
     "concept": "正坐標位於原點的正方向。",
     "tags": [
       "數與量",
@@ -380,7 +360,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "07e7b4c71fd2a4eaaf3d32b3259e0ce3609faec6918c4dde3801b8df2e739ca9",
+    "contentSha256": "9eb9a6cffc38f6771727c86348f2920200a793a749e64e18ef4722db424e2548",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -402,7 +382,7 @@ export const QUESTIONS = [
       "3"
     ],
     "answerIndex": 2,
-    "explanation": "圖中每格代表 1，P 位在原點左側三格，所以坐標為 -3。",
+    "explanation": "先從圖上的相鄰刻度確認每格代表 1，再以標示的 0 為原點讀位置。P 位在原點左側三格，左側坐標要帶負號，因此依圖讀得 P=−3；3 只表示距離，不能作為坐標。",
     "steps": [
       "找到刻度 0。",
       "確認每格 1。",
@@ -445,7 +425,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9c42da0e4d6a64dc726f6c374e69ee6e2f872a49d8304471585ea54c2c02e3d5",
+    "contentSha256": "418506db530e740c6785b97dbeec658a46e149c09d73f935fd4cfb7f6c4030c4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -467,7 +447,7 @@ export const QUESTIONS = [
       "3"
     ],
     "answerIndex": 3,
-    "explanation": "向右移 5 記為 +5，新坐標=-2+5=3。",
+    "explanation": "向右移動 5 個單位要記成 +5，並加在起始坐標 −2 上。計算 −2+5 時先由 −2 向右走 2 單位到 0，再走 3 單位到 3，所以終點坐標為 3。終點在原點右側，也符合移動方向。",
     "steps": [
       "起點 -2。",
       "向右移動量 +5。",
@@ -510,7 +490,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d6d0c882dbb73f00181dff18bd965de18566676a5bae757de62929e5d9296453",
+    "contentSha256": "3b47f6aba7398749733b65bcd0563dbf2ee10d3e6be037693e9697ef046322b9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -532,7 +512,7 @@ export const QUESTIONS = [
       "4"
     ],
     "answerIndex": 0,
-    "explanation": "中點坐標是兩端坐標平均：(-6+2)÷2=-4÷2=-2。",
+    "explanation": "中點坐標等於兩端坐標的平均數，因此 (−6+2)÷2=−4÷2=−2。也可從 −6 向右走兩端距離 8 的一半 4 個單位，會到 −2，與平均數計算相符。檢查 −2 到兩端的距離都同為 4。",
     "steps": [
       "兩坐標相加 -4。",
       "除以2。",
@@ -575,7 +555,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "731ae9fa08cfaa9280712ef6625dd1450ba224e909a637b0a931fef1428a29da",
+    "contentSha256": "82f8fc14d6bfee1950b522d3462be07d3fab5501a10b8de7678412e743d3b290",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -597,7 +577,7 @@ export const QUESTIONS = [
       "2"
     ],
     "answerIndex": 1,
-    "explanation": "圖上相鄰刻度相差 2，Q 正好位於標示 4 的刻度，因此坐標是 4。",
+    "explanation": "讀圖時先用已標刻度判斷單位，圖上相鄰刻度的數值相差 2，所以一格代表 2 而不是 1。點 Q 正好落在標示 4 的刻度上，因此它的坐標是 4；不能把到原點的格數 2 當答案。",
     "steps": [
       "讀出刻度序列每格2。",
       "找到Q所在刻度。",
@@ -640,7 +620,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1ccb1f7c872f7316c0deacf0ffaa8e1084ba687fe26f2dab43214705987c5638",
+    "contentSha256": "423a19cf136418cc1828d7385388956a4c8359c0420a4dfa04b59c271187b9a3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -662,7 +642,7 @@ export const QUESTIONS = [
       "5"
     ],
     "answerIndex": 2,
-    "explanation": "對稱中心 1 是兩點中點。P 距離 1 有 5 單位，所以 Q 在 1 右側 5 單位，即 6。",
+    "explanation": "關於坐標 1 的點對稱表示 1 是 P、Q 的中點。P=−4 到 1 的距離是 1−(−4)=5，所以 Q 要在 1 的另一側同樣距離 5，得到 1+5=6；不能只對 −4 取相反數。代回後 −4 與 6 的平均數確為 1。",
     "steps": [
       "算P到1的距離 1-(-4)=5。",
       "向中心另一側移5。",
@@ -705,7 +685,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3aafafbf7870d881d95d62f4b87327f413d8d663c1ccf74db3941cad11efc82a",
+    "contentSha256": "913679d0c682a7f94c471057e676bd6fac4f895b7ecdc765fcd2a3bb109921d8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -727,7 +707,7 @@ export const QUESTIONS = [
       "0"
     ],
     "answerIndex": 3,
-    "explanation": "AB 中點=(-7+3)÷2=-2，再向右2單位得0。",
+    "explanation": "先求 A、B 的中點坐標：(−7+3)÷2=−4÷2=−2。題目還說 C 在中點右側 2 個單位，因此要再算 −2+2=0；−2 只是中點，不是 C 的最後坐標。結果 0 位於 −2 右側，方向也符合題意。",
     "steps": [
       "求中點 -2。",
       "向右記 +2。",
@@ -755,7 +735,7 @@ export const QUESTIONS = [
         "reason": "中點-2，右移2到0。"
       }
     ],
-    "commonMistake": "求出中點 -2 後忘記再向右移 2。",
+    "commonMistake": "求出中點負二後立即作答，漏掉還要向右移二個單位。",
     "concept": "複合位置題先找中點，再套用位移。",
     "tags": [
       "數與量",
@@ -770,7 +750,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0b004c9d4edae22935e5f6dd4e671dc2af3a885912c1c28af291b87f7495191e",
+    "contentSha256": "f71eacdad6bbc6a481981300a9efbd031657678631d9995e34e85be14dc2f964",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -792,7 +772,7 @@ export const QUESTIONS = [
       "-4"
     ],
     "answerIndex": 0,
-    "explanation": "位於 -1 右方 5 單位，所以 -1+5=4。左方另一個等距點是 -6，但不符合右方條件。",
+    "explanation": "與 −1 距離 5 的位置原有左右兩個：右方是 −1+5=4，左方是 −1−5=−6。題目明確限制該點位於 −1 的右方，所以保留坐標 4，排除左方的 −6。檢查 |4−(−1)|=5，距離條件也成立。",
     "steps": [
       "固定點 -1。",
       "右方移動 +5。",
@@ -835,7 +815,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a23dc449967a9288e4298853deb3d9424a6c053a15ceaf9a4f532bfa1cbb14d3",
+    "contentSha256": "73910fb32ca258cc64e30dcb08fed1967d4abc7d7aafb03dcabfc13827b215ec",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -857,7 +837,7 @@ export const QUESTIONS = [
       "9"
     ],
     "answerIndex": 1,
-    "explanation": "向東 +8、向西 -4，最後=-3+8-4=1。",
+    "explanation": "依倉庫規則，向東移 8 格記 +8，向西移 4 格記 −4。從起點 −3 依序計算 −3+8−4：先到 5 號位，再向西到 1 號位，因此最後位置是 1。由起點看淨東移 4 格，−3+4 也得到 1。",
     "steps": [
       "起點 -3。",
       "東移8到5。",
@@ -885,7 +865,7 @@ export const QUESTIONS = [
         "reason": "忽略起點。"
       }
     ],
-    "commonMistake": "只計算 8-4=4，忘記加上起始位置 -3。",
+    "commonMistake": "只計算兩段移動的淨值四格，忘記還要從起點負三開始。",
     "concept": "連續位移要從起點累加帶號移動量。",
     "tags": [
       "數與量",
@@ -900,7 +880,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "閘門基準、東西正負規則、起點與兩段移動都影響答案。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "227a3a3ce614f0e8f6350dcf98351059cde9fe02a37d2b7f9b8b578db919813d",
+    "contentSha256": "649cd3460d0b9b1d932d771ef075ac2a86652e844659d2b629960cd710a3c631",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -922,7 +902,7 @@ export const QUESTIONS = [
       "17 公里"
     ],
     "answerIndex": 2,
-    "explanation": "東方為正方向，從 -12 向東 5 公里：-12+5=-7 公里。",
+    "explanation": "中央站為 0 且向西記負，因此 A 的位置是 −12 公里。B 在 A 的東方 5 公里，東移要加 5，故 B=−12+5=−7 公里；+5 只是相對 A 的位移量，不是 B 的位置。−7 仍在中央站西方，且比 A 更靠東。",
     "steps": [
       "A在-12。",
       "東移記+5。",
@@ -965,7 +945,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "中央站基準、向西為負、A位置與B相對位移都是必要資訊。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "27edc30420aa586cc638d6514c1cc1fca106bf921c39312b53147109c54b5a0c",
+    "contentSha256": "a4a4dfedd3bfae68fa009b395f6435d11662223dca42db98aaa435125633e260",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -987,7 +967,7 @@ export const QUESTIONS = [
       "-3"
     ],
     "answerIndex": 3,
-    "explanation": "左移9記 -9，右移2記 +2：4-9+2=-3。",
+    "explanation": "每格 1 分，向左移 9 格記為 −9，向右移 2 格記為 +2。從原來的 4 分依序計算 4−9+2：第一回合到 −5，第二回合再到 −3，所以最後位置是 −3。兩回合的淨移動為向左 7 格，結果相同。",
     "steps": [
       "起點4。",
       "左移9到-5。",
@@ -1030,7 +1010,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始分數、左右方向、兩回合移動與每格單位共同決定結果。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3b1607641c602d0d417bc81d4faa48e484ee58e97603543ba972fc3b49991cd7",
+    "contentSha256": "d43e8296f6f06fad171dd3645dec73d20a7d98c29ae2f05123628dda99aeb201",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1052,9 +1032,9 @@ export const CONSTRUCTED_RESPONSES = [
       "寫出 B 的帶號計算。"
     ],
     "fullCreditSolution": [
-      "A 在原點左側 3 格，因為每格 2。",
-      "向右 5 格等於 +10。",
-      "B=-6+10=4。"
+      "每格代表 2，坐標 −6 表示從原點向左 6 個單位，所以 A 應標在原點左側 6÷2=3 格處。",
+      "從 A 向右移 5 格等於向右移 5×2=10 個單位，帶號移動量為 +10。",
+      "因此 B 的坐標為 −6+10=4；檢查圖上 B 應在原點右側 2 格，正好對應坐標 4。"
     ],
     "alternativeSolutions": [
       "可直接從 -6 依序讀 -4、-2、0、2、4，得到 B=4。"
@@ -1091,7 +1071,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "0a3c2fca98cf17aeb5efb562da5d8152408e2a56b13bada240bccb23a09e8014",
+    "contentSha256": "28abd84d1d5862731ba7129ba8f5971b1b140c93f6e8b281231929b2a1bb4016",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1110,9 +1090,9 @@ export const CONSTRUCTED_RESPONSES = [
       "檢查 R 到 P、Q 等距。"
     ],
     "fullCreditSolution": [
-      "R=(-5+7)÷2=1。",
-      "S=1-4=-3。",
-      "檢查：R 到 P 距離6，到Q距離6；S位於R左側4。"
+      "R 是 P、Q 的中點，所以 R=(−5+7)÷2=2÷2=1，而不是只取兩端距離的一半 6 當坐標。",
+      "S 在 R 的左側 4 單位，向左記負，因此 S=1−4=−3。",
+      "檢查：R 到 P 的距離 |1−(−5)|=6，到 Q 的距離 |7−1|=6；S=−3 也確實位於 R=1 左側 4 單位。"
     ],
     "alternativeSolutions": [
       "可在數線上從 -5 到 7 共12單位，走一半6單位到1，再左移4到-3。"
@@ -1140,16 +1120,16 @@ export const CONSTRUCTED_RESPONSES = [
       "距離檢查可用文字或算式。"
     ],
     "commonErrors": [
-      "把R寫6。",
-      "把S寫5。",
-      "中點後向右移。"
+      "把端點距離 12 的一半 6 誤寫成中點坐標，忽略坐標起點不是 0。",
+      "由 R=1 向左移 4 單位時反而做加法，將 S 誤寫成 5。",
+      "只列出 R、S 數值，沒有用兩端等距與左右位置完成檢查。"
     ],
     "independentReview": {
       "derivedResult": "R=1，S=-3。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "a16d8caa2ffcf33a2f1563be39bc5f84407dbb34c51b7c193dc39f568245a0fb",
+    "contentSha256": "5887fa5826c9d6a6b90a5303f1ed0f5b132b8d30e38e8bb0d0ee63a43d8a73fc",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

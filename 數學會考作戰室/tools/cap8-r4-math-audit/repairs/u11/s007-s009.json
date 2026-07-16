@@ -1,0 +1,76 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u11",
+  "batch":"012-u11-complete",
+  "skills":["s007","s008","s009"],
+  "mc":[
+    {"questionId":"u11-s007-v001","expectedContentSha256":"de6bcbded08ae2df396e2c8493d274a0932fa8e66487632b291fc6c33c626d58","appendText":{"explanation":"有理化必須讓分子分母同乘同一個非零數，乘 √2/√2 不改變原值；分母 √2·√2=2，分子成 √2，所以最簡結果是 √2/2。","misconceptionTarget":"只把分母根號平方成二，卻沒有同步將分子乘 √2。"}},
+    {"questionId":"u11-s007-v002","expectedContentSha256":"4865ef5e624c89289c2f6cd905112a62aed38cf2c089de27353c5fa84ff3730c","appendText":{"explanation":"乘數必須等於一才保持原值，而 √5/√5 正好等於一；同乘後原分母 √5 變成五，分子則成 3√5，完成有理化。","misconceptionTarget":"選一個能消去根號但不等於一的分數，造成原式數值改變。"}},
+    {"questionId":"u11-s007-v003","expectedContentSha256":"7e2fcd8b5ee90f6aa45c24cd566cb8b3788e6bb2396e89c03d86cfc599289938","appendText":{"explanation":"等值分數要求分子、分母同乘相同非零數；只把 √3 改成三會改變數值。正確應同乘 √3，得到 2√3/3。","misconceptionTarget":"把有理化誤解成只改寫分母，忽略等值變形必須同步處理分子。"}},
+    {"questionId":"u11-s007-v004","expectedContentSha256":"61f35e89872c8a8837105727d33f6087fa70e7f280b710edefdec4f973ced3f5","appendText":{"explanation":"先用根式商法則約成 √(3/6)=1/√2，再同乘 √2/√2，得到 √2/2；選項 1/√2 雖等值但分母仍未有理化。","misconceptionTarget":"停在分母仍有根號的等值形式，沒有完成題目要求。"}},
+    {"questionId":"u11-s007-v005","expectedContentSha256":"d8fb336a3c3e0adf53b31cc72efe4f8b954146104531c01c7115f5d469a22682","appendText":{"explanation":"分子分母同乘 √3 後，分子為 5√3，分母為 2·3=6；五與六沒有公因數，因此最簡有理化形式為 5√3/6。","misconceptionTarget":"只將 √3 平方卻漏掉原分母係數二，或有理化後未化最簡。"}},
+    {"questionId":"u11-s007-v006","expectedContentSha256":"19799deb37bb55071a02ed6fa0e96529b54d66957319300cb5c142f60d2384ab","appendText":{"explanation":"√12=√(4·3)=2√3，所以分子 2√3 與分母 2√3 完全相同，商為一；此題先化簡根式比直接有理化更短。","misconceptionTarget":"沒有先化簡 √12，將分子分母中的共同因數視為不能約分。"}},
+    {"questionId":"u11-s007-v007","expectedContentSha256":"ac4dfe39b224e6c946693872a98e80334865563f008223628816496e207388b5","appendText":{"explanation":"同乘 √7 後得到 7√7/21，分子分母仍有公因數七，約分後為 √7/3；有理化完成不代表已經是最簡形式。","misconceptionTarget":"停在 7√7/21，未檢查係數七與二十一還可約分。"}},
+    {"questionId":"u11-s007-v008","expectedContentSha256":"05398827a4fcd28f2f753945431018fb992cb9cf1cd22458ba09398cd1179c95","appendText":{"explanation":"√8=2√2，先與分母係數二約去後成 √2/√5；同乘 √5 得 √10/5，且十沒有平方因數可再提出。","misconceptionTarget":"有理化後保留可約係數，或把 √8 與二視為不能先化簡。"}},
+    {"questionId":"u11-s007-v009","expectedContentSha256":"0341b65c28a9dc2d86f05c04d12c839dfec90bdabf3ba7037c6a1f2fe67dc8bd","appendText":{"explanation":"第一項有理化為 √2/2；√8=2√2，所以第二項為 √2/4。通分後 2√2/4+√2/4=3√2/4。","misconceptionTarget":"直接把兩個根式分母相加，或把 √8 誤化為四。"}},
+    {"questionId":"u11-s007-v010","expectedContentSha256":"acd9a5e937926f9df4b31b50a4cec9c1803f7315289b6f923e5f84504f751660","appendText":{"explanation":"同乘 √3 後為 6√3/3，再以三約分得到 2√3 分鐘；有理化只改表示形式，不會改變完成工作的實際時間與單位。","misconceptionTarget":"把六除以根號三直接寫成二，漏掉有理化後分子的 √3。"}},
+    {"questionId":"u11-s007-v011","expectedContentSha256":"bbd493f7f13df820ad699e9f953d1c73c70fb029d1fcc75e81b82cf928e13fd5","appendText":{"explanation":"同乘 √5 得 15√5/10 元，係數十五與十可同除以五，最簡為 3√5/2 元；單位元不參與代數約分。","misconceptionTarget":"停在未約分的 15√5/10，或錯把根號五也與係數五約掉。"}},
+    {"questionId":"u11-s007-v012","expectedContentSha256":"ac9c055185cbd3c5108f12ed67cb3f4c279aef45a48c3c360b5ef2ed1760c0f9","appendText":{"explanation":"正根下可先合併為 √(6/15)=√(2/5)=√2/√5，再同乘 √5 得 √10/5；答案保留速率單位公尺每秒。","misconceptionTarget":"把 √6/√15 約成 √2/5，僅化簡分子而未正確處理根式商。"}},
+
+    {"questionId":"u11-s008-v001","expectedContentSha256":"8001ba47ef1e814f80727b219cb2ecda2a31235494c4358236d81dce7e40f92f","appendText":{"explanation":"兩者皆非負，可比較平方：√11 的平方為十一，三的平方為九；十一大於九，所以 √11 大於三，不需使用小數近似。","misconceptionTarget":"看到十一與三直接比較，或誤認根號一定使數值小於三。"}},
+    {"questionId":"u11-s008-v002","expectedContentSha256":"e1c14701e61fe89e8bb2f6b965e5bf82379d8fb796f0a3d64d44534b6c2389c8","appendText":{"explanation":"平方根函數在非負數上保持大小，五十大於四十九，因此 √50 大於 √49=7；不能把 √50 與原被開方數四十九直接比較。","misconceptionTarget":"由五十只比四十九大一，誤判其平方根仍小於或等於七。"}},
+    {"questionId":"u11-s008-v003","expectedContentSha256":"508957a18ff30c1fed17de958eb7c33f630986c2b45cf7dfc6c0f224c525ce4b","appendText":{"explanation":"四數皆非負，平方後依序為九、八、十、八；最大平方是十，故最大數為 √10。2√2 與 √8 其實相等。","misconceptionTarget":"只看係數二就選 2√2，未把各數平方到共同尺度比較。"}},
+    {"questionId":"u11-s008-v004","expectedContentSha256":"703ddc615055f64a43c88466b86541e2a22f8dfd11239b678bcf72f210261bc0","appendText":{"explanation":"兩數皆正，可平方比較：(2√3)²=12，而 (√13)²=13，所以 2√3 小於 √13；係數二也必須一起平方。","misconceptionTarget":"只比較被開方數三與十三，或漏平方外面的係數二。"}},
+    {"questionId":"u11-s008-v005","expectedContentSha256":"334aa43bdea1cc334de36a44de57055c89547c811077b5bb7b2ad5a46dbdc4fe","appendText":{"explanation":"兩數為正，平方後 (3√2)²=18、(√17)²=17；十八大於十七，所以原來 3√2 大於 √17。","misconceptionTarget":"只以二小於十七判斷，忽略三的平方會乘在被開方數上。"}},
+    {"questionId":"u11-s008-v006","expectedContentSha256":"0bd774945dbf36152463e9c17c32342587d5acbc12825accd29ae6d41c3c08fc","appendText":{"explanation":"先比較正值：√5 大於二；同時取負後數線方向反轉，因此 -√5 小於 -2，較大的絕對值反而落在更左側。","misconceptionTarget":"比較負數時仍沿用正值順序，誤認 -√5 大於 -2。"}},
+    {"questionId":"u11-s008-v007","expectedContentSha256":"9723df011dbea3ac1f4aade11ead4043adca19dd05b038966be3b475e50bb919","appendText":{"explanation":"平方後 √7 對應七、2√2 對應八、三對應九，三者均非負，所以順序是 √7<2√2<3。","misconceptionTarget":"把 2√2 誤認為 √4，或只看被開方數二而排在 √7 前。"}},
+    {"questionId":"u11-s008-v008","expectedContentSha256":"d4af707b5184862447a0f9a59b90962ca542b14f62337655c60a3626071e1b8b","appendText":{"explanation":"已知 a>0，兩邊非負，可將 √a<5 平方得 a<25；合併原條件即 0<a<25，端點零與二十五都不包含。","misconceptionTarget":"只把根號去掉寫 a<5，或平方後漏保留原本 a>0。"}},
+    {"questionId":"u11-s008-v009","expectedContentSha256":"6cebb9fc9809cc269f08ea949673e1cd5fc9931d7625f07499186b6166a34090","appendText":{"explanation":"√18=3√2、√8=2√2，總和為 5√2；平方比較得 (5√2)²=50>49=7²，所以原和大於七。","misconceptionTarget":"把 √18+√8 合併成 √26，或只用粗略小數而未精確判斷。"}},
+    {"questionId":"u11-s008-v010","expectedContentSha256":"b356fe226e0628190cd121cc320da1aa52c0048a0a2f359b37f812a200e354cf","appendText":{"explanation":"兩邊皆正，平方比較：30 與 5.4²=29.16；三十大於二十九點一六，所以 √30 公分較長，無須先把根號近似。","misconceptionTarget":"把 √30 粗估成五點四，或比較三十與五點四而混淆平方尺度。"}},
+    {"questionId":"u11-s008-v011","expectedContentSha256":"83ada130d69007b6443584824d1418dca7baeb30450111f368f82557d94c6ed5","appendText":{"explanation":"√65 與 8.1 均正，平方後比較六十五與 8.1²=65.61；√65 較小，因此導航應推薦 A 路線。","misconceptionTarget":"看到六十五大於八點一就判 A 較長，沒有先統一為平方尺度。"}},
+    {"questionId":"u11-s008-v012","expectedContentSha256":"2b0ec1254dbe69a9191128b75f6c17ea1dc833c24053de010d89775bff97e59f","appendText":{"explanation":"兩指標非負，平方後 (4√3)²=48，而 (√47)²=47，所以 4√3 較大；外係數四平方後是十六。","misconceptionTarget":"只比較被開方數三與四十七，忽略外係數四也要平方。"}},
+
+    {"questionId":"u11-s009-v001","expectedContentSha256":"63ca0eda475a56f7dd3fd1f4fc2b4b4843ca9c093a30ea60b2d8aeebb3943c5f","appendText":{"explanation":"三、四是直角兩股，斜邊平方為 3²+4²=9+16=25；斜邊是正長度，取 √25=5，圖中斜邊位於直角對面。","misconceptionTarget":"直接相加兩股得七，或算到二十五後忘記開平方。"}},
+    {"questionId":"u11-s009-v002","expectedContentSha256":"797021a786ad86f7b58f68cd1533c3b9311282d8f1e7c6799ce145b4bf403fd4","appendText":{"explanation":"求斜邊須將兩股平方相加再開正平方根，√(5²+12²)=√169=13；相減是已知斜邊求股時才使用。","misconceptionTarget":"把兩股直接相加，或誤用平方差公式求斜邊。"}},
+    {"questionId":"u11-s009-v003","expectedContentSha256":"0887cebd39111e17d7f9d265e3097afab7a1aa4fcf8969d07b9786877ac1ada0","appendText":{"explanation":"畢氏定理只對直角三角形成立，兩股平方和等於斜邊平方，即 a²+b²=c²；c 必須是直角對面的最長邊。","misconceptionTarget":"把邊長直接相加，或未辨認斜邊便把平方放錯位置。"}},
+    {"questionId":"u11-s009-v004","expectedContentSha256":"ad12aee05e6f3deef96d7159320e20491222a0efeb59344559dbd0d92f6032d2","appendText":{"explanation":"斜邊平方為 (√7)²+3²=7+9=16，取正平方根得四；長度不能取負值，且 √16+3 是錯誤加法。","misconceptionTarget":"把根式與整數直接相加，或算得十六後未開平方。"}},
+    {"questionId":"u11-s009-v005","expectedContentSha256":"269276fe4029a0b1c0351a8d49f98db0fc31d4367544fb98c9cd2b91c40715ec","appendText":{"explanation":"兩股平方和就是斜邊平方，所以 c²=169；邊長 c>0，只取正平方根十三，不取負十三也不把平方值當長度。","misconceptionTarget":"回答斜邊平方一百六十九，或把長度寫成正負十三。"}},
+    {"questionId":"u11-s009-v006","expectedContentSha256":"c6e44c072d0303c06d9ff887ee8cbe0ae182bdcaa8eabf0d5fa038253ff9d8fe","appendText":{"explanation":"兩股皆六，斜邊平方為 36+36=72，開平方並提出平方因數三十六得 √72=6√2。","misconceptionTarget":"直接把兩股相加成十二，或把平方和七十二誤化成 √12。"}},
+    {"questionId":"u11-s009-v007","expectedContentSha256":"ea9ba975872e7646ae08c589b8e8d29a18d8a031817e9976550f7114b9fde93a","appendText":{"explanation":"兩股平方分別為 (2√3)²=12 與 (√13)²=13，斜邊平方二十五，取正根得五。","misconceptionTarget":"漏平方外係數二，或將兩個根式直接相加而未用平方和。"}},
+    {"questionId":"u11-s009-v008","expectedContentSha256":"cc2fce87947e6f79d17090eface3e0562f8c7788480b5576cccad7ecc716caef","appendText":{"explanation":"題目已直接給兩股平方和四百，依畢氏定理這就是斜邊平方；斜邊為正，所以取 √400=20。","misconceptionTarget":"把平方和四百直接當斜邊，或用三比四另算成二十五。"}},
+    {"questionId":"u11-s009-v009","expectedContentSha256":"6b420a8cf6f1b4097e96bb5e684c81c7d15b45c5a08bbaced3b0a5d7ef08bbaa","appendText":{"explanation":"由畢氏定理 a²+b²=61，又知 a²-b²=11；兩式相加得 2a²=72，所以 a²=36。","misconceptionTarget":"把平方差十一直接從斜邊平方六十一扣除，漏除以二。"}},
+    {"questionId":"u11-s009-v010","expectedContentSha256":"0bcf6afb60921d026c630cbc7f11df8f26efa9f3f3b7c02ce51bab42d423f156","appendText":{"explanation":"矩形兩邊九與十二互相垂直，對角線為斜邊；長度 √(9²+12²)=√225=15 公分。","misconceptionTarget":"直接相加長寬得二十一，或把面積一百零八當剪線長。"}},
+    {"questionId":"u11-s009-v011","expectedContentSha256":"f465f83841f4b7f6916cb53e31d5cabbbb1b1f8b6518b1203c1c3d89561638df","appendText":{"explanation":"兩測量邊在直角轉角相互垂直，拉索跨越兩端為斜邊；√(8²+15²)=√289=17 公尺。","misconceptionTarget":"將兩直角邊直接相加成二十三，未建立斜邊平方和。"}},
+    {"questionId":"u11-s009-v012","expectedContentSha256":"2dfb456a91c5e6b4ac7120f452ed0f6948bd1312181032f9d258b1e87ce9dcb2","appendText":{"explanation":"正方形對角線把圖形分成兩股各十的直角三角形，故 d²=100+100=200，d=10√2 公分。","misconceptionTarget":"把兩邊直接相加成二十，或把面積平方公分誤當對角線長。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u11-s007-cr001","expectedContentSha256":"299002783d71a530c58a6e050b694863e83ac1ae8f040987a687c240964b1ae6","appendArray":{"fullCreditSolution":["同乘 √3/√3 是乘以一，因此保持原值；分母成十五後仍須將十二與十五同除以三，最後 4√3/5 的分母為有理數且係數互質。"]},"set":{"commonErrors":["只將分母 5√3 改成十五，卻沒有同步將分子十二乘 √3。","得到 12√3/15 後停止，沒有再以公因數三約成最簡形式。"]}},
+    {"questionId":"u11-s007-cr002","expectedContentSha256":"10fec4f459233c72d16c78fb855eea8a4acb605b8f374b3a742ec5169f4e9c86","appendArray":{"fullCreditSolution":["兩個分母先各自提出平方因數後都化為 2√2 或 3√2，使兩項各等於 √2/2；相加為 √2，結果分母已是有理數且根式最簡。"]},"set":{"commonErrors":["直接把 √8 與 √18 相加成共同分母，沒有先分別化簡每一項。","只將第一項有理化，第二項仍保留根號分母便進行相加。"]}},
+    {"questionId":"u11-s008-cr001","expectedContentSha256":"c6886bd60a52cbd41a7276388b475da2d38e54e7fb50cf38394b46929d598b2b","appendArray":{"fullCreditSolution":["因兩數皆非負，平方函數在此範圍保持大小；四十五大於四十四便可反推原正值 3√5 大於 √44，過程是精確比較而非小數估算。"]},"set":{"commonErrors":["只比較被開方數五與四十四，漏掉外係數三平方後會乘九。","未先確認兩數皆非負便任意平方比較，沒有交代平方不改變順序的條件。"]}},
+    {"questionId":"u11-s008-cr002","expectedContentSha256":"8de8a7f1c98be4be4d0b8ed9e62ae329efaf6257a635913485ab3ffb6d6846f0","appendArray":{"fullCreditSolution":["可用平方精確驗證正值順序：12>9>8，所以 √12>3>2√2；三者同取負號後數線方向反轉，故由小到大為 -√12、-3、-2√2。"]},"set":{"commonErrors":["比較完正值後直接加負號而維持原方向，忘記乘負一會反轉不等號。","把 √12 錯化成 2√6，或用不充分的小數位數造成錯誤排序。"]}},
+    {"questionId":"u11-s009-cr001","expectedContentSha256":"1aa91747fd9658f5aed393db060cb25e9fa2f356fd94c292d237176e6c2911c2","appendArray":{"fullCreditSolution":["圖中的九、四十為直角兩股，c 在直角對面才是斜邊；平方和一千六百八十一開正平方根為四十一，並應保留長度單位公分。"]},"set":{"commonErrors":["把兩股九與四十直接相加得到四十九，沒有使用平方和。","算到 c²=1681 就停止，將斜邊平方誤當斜邊長或漏寫公分。"]}},
+    {"questionId":"u11-s009-cr002","expectedContentSha256":"e28934630e10f96df23cd3e2d2224187a4eec7ef7cc943d525b5080ab696e1d2","appendArray":{"fullCreditSolution":["由 c²=2a² 得 c=√2·√(a²)=√2·|a|；題設 a>0，所以 |a|=a，故斜邊唯一為 a√2，而不是正負兩值。"]},"set":{"commonErrors":["把兩股 a 直接相加成 2a，忽略畢氏定理使用平方和。","由 √(a²)=a 未引用 a>0；一般情況應為 |a|，長度條件才可化成 a。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u11-s007-lecture-r1","expectedContentSha256":"b549e81df77f630ee747b055a113a947e9fcc2c3bab6b9f941db7d6e0f3dc930","set":{"conceptNarrative":["分母有理化的核心是等值乘法：分子與分母同乘相同的非零根式，也就是乘以一，讓分母的根式自乘成有理數。只改分母會改變原值。完成後還要化簡根式並檢查係數公因數，直到分母沒有根號、分子分母不能再約，才是最簡有理化形式。","運算前先化簡常能縮短步驟，例如 √3/√6 可先約成 1/√2，2√3/√12 則因 √12=2√3 可直接約成一。多項相加時應先把每一項化為相容形式，再通分或合併同類根式，不能把不同根式分母直接相加。","情境題中的分鐘、元或公尺每秒只是量的單位，不參與根式有理化；代數部分完成後要把原單位附回。可用反向乘回原分母或小數估值檢查等值，但正式答案仍依題意保留精確根式。"],"workedExamples":[
+      {"exampleId":"L1","prompt":"將 4/√7 分母有理化。","solutionSteps":["分子分母同乘 √7。","得到 4√7/7。"],"answer":"4√7/7。","why":"√7/√7 等於一，所以原值不變；分母 √7·√7 變成七，且四與七互質，答案已同時符合分母有理與最簡兩項要求，可反向驗算。"},
+      {"exampleId":"L2","prompt":"將 9/(2√3) 分母有理化。","solutionSteps":["同乘 √3 得 9√3/6。","分子分母係數同除以三。"],"answer":"3√3/2。","why":"有理化後仍要檢查係數公因數；九與六可同除三，所以停在 9√3/6 並不最簡，而根號三不能當成一般係數約掉。"},
+      {"exampleId":"L3","prompt":"化簡 √5/√20。","solutionSteps":["√20=2√5。","上下約去非零的 √5。"],"answer":"1/2。","why":"先提出平方因數可直接看見分子分母共同的 √5，約分後分母已是整數二；此法比先同乘 √20 更短，也不產生多餘大根式。"},
+      {"exampleId":"L4","prompt":"化簡 1/√3+2/√3。","solutionSteps":["同分母先合併成 3/√3。","同乘 √3 或直接約得 √3。"],"answer":"√3。","why":"兩項分母相同，可先合併分子以減少兩次有理化；3/√3 等於 √3，因三可寫成 √3·√3，最後沒有根號分母，且根式已最簡。"}
+    ]}},
+    {"lectureId":"u11-s008-lecture-r1","expectedContentSha256":"12e48ff5f1210d24f1bc95b3f3c3041a854c65545d3cab42220b874ebd393e1c","set":{"conceptNarrative":["比較非負根式時，可把兩數平方到共同尺度，因平方函數在非負範圍保持大小。整數 k 可寫成 √(k²)，外係數 m√n 平方後為 m²n，不能只比較 n。平方比較前必須先確認兩邊非負；若兩邊皆負，先比較其正值，再因乘負一而反轉順序。","同為平方根且被開方數非負時，可直接比較被開方數；形式不同則先化簡或平方。例如 √18+√8 先化成 5√2，再與七平方比較。含小數時也可平方成精確有限小數，避免粗略近似在數值接近時改變結論。","不等式中的端點要保留原條件。由 a>0 且 √a<5 平方可得 a<25，合併為 0<a<25；不能漏掉正值限制，也不能把嚴格小於改成小於等於。情境中的公分、公里或承載指標只在同量比較時保留。"],"workedExamples":[
+      {"exampleId":"L1","prompt":"比較 √15 與 4。","solutionSteps":["兩數皆非負。","比較平方十五與十六。"],"answer":"√15<4。","why":"四可寫成 √16，平方後十五小於十六，所以原非負數保持同一順序；這是精確比較，不需要先估算 √15 的小數。"},
+      {"exampleId":"L2","prompt":"比較 2√5 與 √21。","solutionSteps":["平方分別為二十與二十一。","兩原數皆為正。"],"answer":"2√5<√21。","why":"外係數二平方後成四，故左平方是四乘五等於二十；若只比較五與二十一會忽略係數，無法正確代表原數大小。"},
+      {"exampleId":"L3","prompt":"比較 -√10 與 -3。","solutionSteps":["先比較正值 √10>3。","同取負後反轉方向。"],"answer":"-√10<-3。","why":"√10 的絕對值較大，但負數絕對值越大在數線上越左；先得到正值順序再乘負一，能清楚交代不等號反轉原因。"},
+      {"exampleId":"L4","prompt":"將 √6、√8、√7 由小到大排列。","solutionSteps":["三者皆非負且同為平方根。","直接比較被開方數 6<7<8。"],"answer":"√6<√7<√8。","why":"平方根函數在非負被開方數上保持順序，所以同型根式可直接按六、七、八排列；不必把每個根式轉成近似小數。"}
+    ]}},
+    {"lectureId":"u11-s009-lecture-r1","expectedContentSha256":"19bbe1d42e23ff09f675c122fda044c2527ed59de7320a83dbcb50da28b386f9","set":{"conceptNarrative":["畢氏定理只適用於直角三角形。套公式前先找直角，直角對面的最長邊才是斜邊 c，另外兩邊是股 a、b；邊長方向或圖形旋轉不影響角色。公式 a²+b²=c² 描述平方和，不是邊長直接相加。求得 c² 後還要開平方，因長度為正只取正根並附單位。","若已知斜邊與一股求另一股，才使用平方差；已知兩股求斜邊則用平方和。根式邊長也依相同規則先平方，例如 (2√3)²=12。等腰直角三角形兩股 a 會得到 c²=2a²，再依 a>0 化為 c=a√2。","圖形與替代文字應明示直角、兩股及斜邊位置，但不得直接寫出特定題目的答案。常見三四五、五十二十三等數組可加速驗算，仍須確認最大邊平方等於另兩邊平方和，不能只因數值熟悉便套用。"],"workedExamples":[
+      {"exampleId":"L1","prompt":"直角三角形兩股為 7、24，求斜邊。","solutionSteps":["c²=7²+24²=49+576=625。","c=25。"],"answer":"25。","why":"七與二十四是直角兩股，所以使用平方和；六百二十五是斜邊平方，仍須開正平方根。二十五也大於任一股，符合斜邊最長。"},
+      {"exampleId":"L2","prompt":"直角三角形兩股為 √6、√10，求斜邊。","solutionSteps":["c²=6+10=16。","c=4。"],"answer":"4。","why":"根式邊長平方後正好還原被開方數六與十，平方和十六再開正根得四；不能把 √6 與 √10 直接合併成 √16，代回平方和成立。"},
+      {"exampleId":"L3","prompt":"等腰直角三角形股長為 8，求斜邊。","solutionSteps":["c²=8²+8²=128。","√128=8√2。"],"answer":"8√2。","why":"兩股相等但仍各自貢獻六十四，平方和一百二十八提出平方因數六十四得八根號二；直接把兩股相加成十六不是直線斜邊。"},
+      {"exampleId":"L4","prompt":"兩股平方分別為 20、29，求斜邊。","solutionSteps":["斜邊平方為 20+29=49。","斜邊取正根。"],"answer":"7。","why":"題目已給平方值，不需先求兩股本身；依畢氏定理直接相加得四十九，再由長度為正取七，不取負七。"}
+    ]}}
+  ],
+  "drawingSpecs":[],
+  "textFiles":[]
+}

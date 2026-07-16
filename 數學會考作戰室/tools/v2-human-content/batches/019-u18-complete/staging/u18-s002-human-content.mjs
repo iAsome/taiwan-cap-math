@@ -479,42 +479,42 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "三段路程比為 5:7:9，第三段比第一段長 32 公裡，第二段長多少公裡？",
-    "text": "三段路程比為 5:7:9，第三段比第一段長 32 公裡，第二段長多少公裡？",
+    "prompt": "三段路程比為 5:7:9，第三段比第一段長 32 公里，第二段長多少公里？",
+    "text": "三段路程比為 5:7:9，第三段比第一段長 32 公里，第二段長多少公里？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
-      "56 公裡",
-      "28 公裡",
-      "40 公裡",
-      "72 公裡"
+      "56 公里",
+      "28 公里",
+      "40 公里",
+      "72 公里"
     ],
     "answerIndex": 0,
     "independentSolution": "設三段為 5k、7k、9k；(9-5)k=32，k=8，第二段 56。",
-    "explanation": "第三段與第一段差 9-5=4 份，4 份為 32 公裡，每份 8 公裡，第二段 7×8=56 公裡。",
+    "explanation": "第三段與第一段差 9-5=4 份，4 份為 32 公里，每份 8 公里，第二段 7×8=56 公里。",
     "steps": [
       "求差份數 4。",
-      "32÷4=8 公裡/份。",
+      "32÷4=8 公里/份。",
       "第二段 7×8。"
     ],
     "optionAnalysis": [
       {
-        "choice": "56 公裡",
+        "choice": "56 公里",
         "truth": true,
-        "reason": "依獨立推導可得到 56 公裡，符合所有已知條件。"
+        "reason": "依獨立推導可得到 56 公里，符合所有已知條件。"
       },
       {
-        "choice": "28 公裡",
+        "choice": "28 公里",
         "truth": false,
-        "reason": "只取 7 份的 4 公裡，單位份量算錯。"
+        "reason": "只取 7 份的 4 公里，單位份量算錯。"
       },
       {
-        "choice": "40 公裡",
+        "choice": "40 公里",
         "truth": false,
         "reason": "這是第一段長。"
       },
       {
-        "choice": "72 公裡",
+        "choice": "72 公里",
         "truth": false,
         "reason": "這是第三段長。"
       }
@@ -522,7 +522,7 @@ export const QUESTIONS = [
     "misconceptionTarget": "差量條件卻用總份數。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
-    "unitAndRoundingCheck": "所有路程以公裡表示；答案為 56 公裡。",
+    "unitAndRoundingCheck": "所有路程以公里表示；答案為 56 公里。",
     "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
     "difficultyReason": "要由兩項差求單位份量，再求第三項。",
     "literacyContextNecessity": null,
@@ -533,7 +533,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5b629929fa77045784fd9dfaa353d64fb29bedbbc256ecd82b1d28fffbb4746d"
+    "contentSha256": "97d725194e363fb830576ca0d391c1a79cfca714b854f9fd42129d6dcd781001"
   },
   {
     "questionId": "u18-s002-v005",
@@ -1295,10 +1295,10 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "continued-ratio-application",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "5b629929fa77045784fd9dfaa353d64fb29bedbbc256ecd82b1d28fffbb4746d",
+    "contentSha256": "97d725194e363fb830576ca0d391c1a79cfca714b854f9fd42129d6dcd781001",
     "independentSolution": "設三段為 5k、7k、9k；(9-5)k=32，k=8，第二段 56。",
-    "derivedAnswer": "56 公裡",
-    "storedAnswer": "56 公裡",
+    "derivedAnswer": "56 公里",
+    "storedAnswer": "56 公里",
     "answerMatch": true,
     "uniqueCorrectAnswer": true,
     "optionTruth": [
@@ -1310,12 +1310,12 @@ export const SEMANTIC_REVIEWS = [
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
       "boundary": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
-      "units": "所有路程以公裡表示；答案為 56 公裡。",
+      "units": "所有路程以公里表示；答案為 56 公里。",
       "scope": "只使用國中會考範圍內的「連比應用」概念，未要求高中延伸。"
     },
     "difficultyReason": "要由兩項差求單位份量，再求第三項。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
-    "reviewerNote": "重新由已知條件獨立計算：設三段為 5k、7k、9k；(9-5)k=32，k=8，第二段 56。 四個選項逐一核對後，只有「56 公裡」符合；主要排除點是「差量條件卻用總份數。」。",
+    "reviewerNote": "重新由已知條件獨立計算：設三段為 5k、7k、9k；(9-5)k=32，k=8，第二段 56。 四個選項逐一核對後，只有「56 公里」符合；主要排除點是「差量條件卻用總份數。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },

@@ -118,38 +118,45 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "兩種活動票共 80 張，成人每張 250 元、學生 150 元，收入 15600 元。",
       "solutionSteps": [
-        "設成人 x、學生 y。",
-        "x+y=80、250x+150y=15600。"
+        "設成人票 x 張、學生票 y 張，列 x+y=80。",
+        "依票價列 250x+150y=15600。",
+        "減去 150(x+y)=12000，得 100x=3600，所以 x=36、y=44。"
       ],
-      "answer": "成人 36、學生 44。"
+      "answer": "成人 36、學生 44。",
+      "why": "票數與收入是兩個獨立條件，票價須分別乘自己的張數。求得成人三十六、學生四十四時，張數合計八十，收入九千加六千六百恰為一萬五千六百元。"
     },
     {
       "exampleId": "L2",
       "prompt": "某方案基本費 100 元，每次 20 元；另一方案基本費 220 元，每次 10 元。何時同價？",
       "solutionSteps": [
-        "100+20x=220+10x。",
-        "10x=120。"
+        "使用 x 次時，兩方案費用分別為 100+20x 與 220+10x。",
+        "同價列 100+20x=220+10x，整理得 10x=120。",
+        "求得 x=12，代回兩式都為三百四十元。"
       ],
-      "answer": "12 次時同價。"
+      "answer": "12 次時同價。",
+      "why": "兩方案一個固定費低但單位費高，另一個相反，交點需由完整費用式相等求得。十二次時兩式確實同為三百四十元，不能只比較每次費用。"
     },
     {
       "exampleId": "L3",
       "prompt": "表格顯示兩種餐盒的熱量與蛋白質，需選共 5 盒且蛋白質 90 克。",
       "solutionSteps": [
-        "設兩種盒數 x、y。",
-        "以盒數總和和蛋白質總和列式。",
-        "熱量欄可用來計算解後總熱量。"
+        "先定義兩種盒數，將總盒數五與蛋白質九十克選為必要條件。",
+        "用各餐盒蛋白質乘盒數建立第二式，解出兩種盒數。",
+        "盒數確定後，才把各盒熱量乘盒數相加，回答延伸的總熱量。"
       ],
-      "answer": "先由必要欄求盒數，再用冗餘欄回答延伸問題。"
+      "answer": "先由必要欄求盒數，再用冗餘欄回答延伸問題。",
+      "why": "表格中的每一欄都有意義，但不必同時放入求盒數的兩個方程式。先用盒數與蛋白質兩欄求解，可避免單位混雜；熱量欄保留到解後計算延伸結果。"
     },
     {
       "exampleId": "L4",
       "prompt": "判斷「每超過 10 次後單價改變」是否可直接用一條一次式。",
       "solutionSteps": [
-        "單價分段改變。",
-        "需分情況，不能用單一固定斜率。"
+        "找出十次是費率改變的分界點。",
+        "比較分界前後每增加一次的費用，確認增加率不同。",
+        "依使用量分成兩個區間表示，不能用同一固定斜率涵蓋。"
       ],
-      "answer": "不屬單一線性規則。"
+      "answer": "不屬單一線性規則。",
+      "why": "單一一次式要求每增加一單位時費用增量固定，但題目在十次後更換單價，增加率已改變。必須分別表示前十次與超過部分，否則會把所有次數都用錯誤費率計算。"
     }
   ],
   "commonMistakes": [
@@ -211,7 +218,40 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "78caf834182d850f0cc4c667300c833180b1fa8b9c1515780b811cc255b2db95"
+  "contentSha256": "b55b4e8266e3e4d5248372b97959a3015c8df13905ef0492afc3012ed6a780be",
+  "conceptNarrative": [
+    "聯立方程式素養題先考資訊辨識，再考運算。應先寫清楚所求的兩個量及單位，從文字、表格或費率規則中挑出能形成兩個獨立等式的資料；數字多不代表每個數字都要放進方程式。",
+    "表格欄名與複合單位能協助建模。例如元／次乘次得到元，每盒蛋白質乘盒數得到克。只有單位相容的量才能相加，熱量、蛋白質、盒數等不同欄位不可混成同一總量。",
+    "方案費用常是固定費加單位費乘用量。求出同價點只表示兩方案在該點相等；要判斷哪一側較便宜，還須比較單位費造成的增加速度，並留意『超過』是否排除交點本身。",
+    "兩個方程式必須提供獨立資訊。若第二式只是第一式的倍數，會有多組解；若費率在門檻前後改變，規則則是分段的，不能用一條固定斜率的一次式涵蓋所有用量。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "圈出題目真正所求，定義兩個未知數並附上單位。",
+      "check": "答案對象明確，變數不會在不同欄位間改變意義。"
+    },
+    {
+      "step": 2,
+      "instruction": "整理表格欄名、固定費、單位費、總量與限制，區分必要及延伸資訊。",
+      "check": "沒有為了使用所有數字而混加不同單位。"
+    },
+    {
+      "step": 3,
+      "instruction": "以單位分析建立兩個線性等式，並檢查兩式是否彼此獨立。",
+      "check": "第二式不是第一式的倍數，也沒有漏掉固定費。"
+    },
+    {
+      "step": 4,
+      "instruction": "解聯立方程式；若是方案比較，先求交點再判斷交點兩側。",
+      "check": "嚴格超過、至少、整數與非負等限制已正確處理。"
+    },
+    {
+      "step": 5,
+      "instruction": "回到情境回答比較、價差或延伸欄位，並將答案代回原資料。",
+      "check": "不只報數字，單位、對象與決策理由都完整。"
+    }
+  ]
 };
 
 export const QUESTIONS = [
@@ -236,11 +276,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "固定費只收一次，變動費為 20×x。",
-    "explanation": "線性方案=固定費+單位費×用量。",
+    "explanation": "基本費一百元只收一次，不會隨使用次數改變；每次二十元使用 x 次，變動費是 20x 元。兩部分相加得到 100+20x。寫成 120x 會把基本費也錯誤地按每次重複收取。",
     "steps": [
-      "寫固定費 100。",
-      "寫變動費 20x。",
-      "相加。"
+      "辨認固定不變的基本費為一百元。",
+      "用每次二十元乘使用次數 x，得到 20x。",
+      "將固定費與變動費相加，得到 100+20x。"
     ],
     "optionAnalysis": [
       {
@@ -264,7 +304,7 @@ export const QUESTIONS = [
         "reason": "漏掉金額係數。"
       }
     ],
-    "misconceptionTarget": "把固定費重複計費",
+    "misconceptionTarget": "把基本費一百元也乘使用次數，誤當成每次都要重複收取。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "元。",
@@ -277,7 +317,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6bb0848032bee8ba514bf0758c6efcc256310a83a7036fa48f842048e682c047"
+    "contentSha256": "ab62045f9b2cf4f8481ae42ffc88fd99eb9c41de55ba0474b7f7fef6ea2bd393"
   },
   {
     "questionId": "u04-s014-v002",
@@ -300,10 +340,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(元/次)×次=元。",
-    "explanation": "單位分析可檢查費用模型。",
+    "explanation": "每次多少元的單位是元／次，乘上使用次數後，(元／次)×次中的『次』相消，只留下元。因此結果代表總費用。單位分析也能檢查是否誤把乘法寫成除法或遺漏單價係數。",
     "steps": [
-      "約去次。",
-      "保留元。"
+      "寫出單位乘法 (元／次)×次。",
+      "將分母與乘數中相同的『次』約去。",
+      "確認剩下的單位是表示總費用的元。"
     ],
     "optionAnalysis": [
       {
@@ -327,7 +368,7 @@ export const QUESTIONS = [
         "reason": "單位會約掉“次”但保留元。"
       }
     ],
-    "misconceptionTarget": "忽略複合單位",
+    "misconceptionTarget": "忽略元／次是複合單位，誤以為所有單位會一起消失或變成次。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -340,7 +381,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f0b0010c4161ecb16684d149e127d1d458f32267a4702d61da6fff6c28493d0e"
+    "contentSha256": "3f5af1321cfcb57961960a466066c3d126ed740c32d19c11a7739c1d6d642ff6"
   },
   {
     "questionId": "u04-s014-v003",
@@ -363,10 +404,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "兩個未知量通常需兩個不相依的一次方程式。",
-    "explanation": "重點是獨立而非資料條數。",
+    "explanation": "兩個未知數通常需要兩個彼此獨立的線性條件，才能把可能解限制為唯一一組。重點不是文字有兩句或資料很多，而是第二個方程式不能只是第一個的倍數；若兩式相依，仍只提供同一項資訊。",
     "steps": [
-      "辨認未知數數量。",
-      "檢查條件是否相依。"
+      "先辨認問題中有兩個未知量。",
+      "把可用資訊分別改寫成線性方程式。",
+      "檢查兩式不成整體倍數，確認條件彼此獨立。"
     ],
     "optionAnalysis": [
       {
@@ -390,7 +432,7 @@ export const QUESTIONS = [
         "reason": "仍只有一個條件。"
       }
     ],
-    "misconceptionTarget": "以句子數量代替條件獨立性",
+    "misconceptionTarget": "用句子或數字的數量判斷條件夠不夠，沒有檢查兩方程式是否相依。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -403,7 +445,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "23a2979817af237d2005e0357eb87e31d15b4d366ef1c4b8b5d3e11dbee6283e"
+    "contentSha256": "d4dfd40534968a61e11b85e982621ea461ac62672718bee7b79dcc858d5243a5"
   },
   {
     "questionId": "u04-s014-v004",
@@ -426,10 +468,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "100+20x=220+10x，10x=120，x=12。",
-    "explanation": "同價點由兩費用式相等求得。",
+    "explanation": "同價時兩個費用式相等，列 100+20x=220+10x。移項後得 10x=120，所以 x=12 次。代回檢查，方案 A 為一百加二百四十、方案 B 為二百二十加一百二十，皆為三百四十元。",
     "steps": [
-      "設兩式相等。",
-      "移項求 x。"
+      "將兩方案費用設為相等，列 100+20x=220+10x。",
+      "移項整理成 10x=120，求得 x=12。",
+      "把十二次代回兩方案，確認費用都為三百四十元。"
     ],
     "optionAnalysis": [
       {
@@ -453,7 +496,7 @@ export const QUESTIONS = [
         "reason": "兩方案費用都為 340 元。"
       }
     ],
-    "misconceptionTarget": "只比較單位費",
+    "misconceptionTarget": "只比較每次費用而忽略基本費，或把兩個固定費相加來求同價次數。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -466,7 +509,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "852e93b58084819442175fa28dbccb2f59d70a4e25be05a03a7adab2e3881713"
+    "contentSha256": "5caab261f5a0d2ec775fc48729651082731205f2a3468a8ed33cde99f12604a0"
   },
   {
     "questionId": "u04-s014-v005",
@@ -489,11 +532,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x+y=6，20x+10y=90。減 10(x+y)=60 得 10x=30，x=3。",
-    "explanation": "盒數欄與蛋白質欄形成兩條件。",
+    "explanation": "設 A、B 餐盒為 x、y 盒，總盒數給出 x+y=6，蛋白質總量給出 20x+10y=90。減去十倍盒數式得到 10x=30，所以 A 餐盒三盒，B 也三盒；回算蛋白質六十加三十等於九十克。",
     "steps": [
-      "列盒數。",
-      "列蛋白質。",
-      "消去。"
+      "依餐盒種類列總盒數式 x+y=6。",
+      "依每盒蛋白質列 20x+10y=90。",
+      "消去 y 得 x=3，並回算總蛋白質。"
     ],
     "optionAnalysis": [
       {
@@ -517,7 +560,7 @@ export const QUESTIONS = [
         "reason": "3 盒各類時蛋白質 60+30=90 克。"
       }
     ],
-    "misconceptionTarget": "把每盒數值直接相加",
+    "misconceptionTarget": "把每盒二十克與十克直接相加，沒有分別乘上兩種餐盒盒數。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "克/盒×盒=克。",
@@ -530,7 +573,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "098511b02ad14c6267bc087d8af0572f0424d4fd8b4bbb234b0fd80c97484332"
+    "contentSha256": "eb0cc6fefceecfbf6e2cca2467c3ef049db89a39979dbd3f85730c727b28f51c"
   },
   {
     "questionId": "u04-s014-v006",
@@ -553,11 +596,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "全學生收入 7200，多 2400；每成人多 120，成人 20，學生 20。",
-    "explanation": "活動收費表是票價模型。",
+    "explanation": "若四十人全是學生，收入為 40×180=7200 元，比實際少二千四百元。每把一名學生換成成人會增加一百二十元，因此成人有 2400÷120=20 人，剩下的學生也是二十人；題目所求是學生。",
     "steps": [
-      "算全學生基準。",
-      "求成人 20。",
-      "由總數求學生。"
+      "計算全為學生的基準收入 40×180=7200 元。",
+      "求實際多出的收入 9600-7200=2400 元。",
+      "除以票價差求成人二十人，再由總數得學生二十人。"
     ],
     "optionAnalysis": [
       {
@@ -581,7 +624,7 @@ export const QUESTIONS = [
         "reason": "收入 8160。"
       }
     ],
-    "misconceptionTarget": "求出成人後答錯物件",
+    "misconceptionTarget": "由價差先求出成人數後直接作答，沒有回到題目指定的學生人數。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -594,7 +637,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b0a85396d5e43c4a9a1956c8efcb1fdecd0ac167c80e1948e6c504aea12e1f72"
+    "contentSha256": "914f8601680c7fd03a9794c7447734004e9b3ca2f27e2fee6c8034c8c97f9783"
   },
   {
     "questionId": "u04-s014-v007",
@@ -617,11 +660,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "同價點 80+15x=200+5x，x=12。因為 A 每 GB 增加更快，x>12 時 B 較便宜。",
-    "explanation": "求交點後還要判斷兩側。",
+    "explanation": "先求同價點：80+15x=200+5x，整理得 10x=120，所以十二 GB 時兩方案同價。A 每增加一 GB 比 B 多增加十元，因此使用量大於十二 GB 後 A 費用較高，B 才是較便宜方案；等於十二時不能說較便宜。",
     "steps": [
-      "求同價點。",
-      "比較單位費斜率。",
-      "回答嚴格超過。"
+      "把兩方案費用設相等，求得同價點十二 GB。",
+      "比較單位費，A 每 GB 比 B 多增加十元。",
+      "判斷十二 GB 之後 B 較便宜，回答嚴格超過十二。"
     ],
     "optionAnalysis": [
       {
@@ -645,7 +688,7 @@ export const QUESTIONS = [
         "reason": "B 從 12 後即較便宜，不必等到 20。"
       }
     ],
-    "misconceptionTarget": "求出交點就當作較便宜區間",
+    "misconceptionTarget": "求出十二的交點就當成 B 已較便宜，忽略同價與嚴格不等的差別。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -658,7 +701,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "ed5a000b8cbf1952fe91dc36f8cba3fdbefdd8410c2dc19bb51d95fb24e20626"
+    "contentSha256": "dd6990a1e28ae5a67c5e1bb872949b224c7e168937aea229c12f979bfa086093"
   },
   {
     "questionId": "u04-s014-v008",
@@ -681,10 +724,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "400(x+y)=3200 與第一式完全相同。",
-    "explanation": "不同欄位可能沒有提供獨立資訊。",
+    "explanation": "第二式 400x+400y=3200 可提出四百，化為 400(x+y)=3200，再除以四百就是 x+y=8，與第一式完全相同。因此兩欄只提供同一條件，(4,4)、(8,0) 等都可能，不能唯一決定各盒數。",
     "steps": [
-      "比較整式倍數。",
-      "判斷資訊重複。"
+      "將第二式提出公因數四百，寫成 400(x+y)=3200。",
+      "兩邊除以四百，得到 x+y=8。",
+      "比較後確認兩式相依，判定無法唯一求解。"
     ],
     "optionAnalysis": [
       {
@@ -708,7 +752,7 @@ export const QUESTIONS = [
         "reason": "兩式相容。"
       }
     ],
-    "misconceptionTarget": "認為不同單位欄必然獨立",
+    "misconceptionTarget": "看到表格有兩欄就認定條件獨立，沒有檢查第二式只是第一式的倍數。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -721,7 +765,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "65460847845fd0cd03f5be660804ad495b0589e63c3da95b9460442044943ae0"
+    "contentSha256": "d9ba9ec2aec25a51e297eccc4f2801aa66f7ffa3b1a3dd91bc2303f0670ee0c6"
   },
   {
     "questionId": "u04-s014-v009",
@@ -744,10 +788,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "x≤10 與 x>10 的費用增加率不同，需區間表示。",
-    "explanation": "單一線性式要求單位增量固定。",
+    "explanation": "前十次每次二十元，但第十一次起的超過部分每次十二元，費用增加率在十次處改變。單一式 20x 假設每一次都收二十元，只適用前十次；超過十次後須分成前十次費用與超過部分費用。",
     "steps": [
-      "找費率改變點。",
-      "判斷分段。"
+      "找出費率改變的分界點為十次。",
+      "辨認十次前後每增加一次的費用不同。",
+      "判定規則必須分段表示，不能全程使用 20x。"
     ],
     "optionAnalysis": [
       {
@@ -771,7 +816,7 @@ export const QUESTIONS = [
         "reason": "大小本身不是不能用一次式的理由。"
       }
     ],
-    "misconceptionTarget": "看到單價就直接寫單價×次數",
+    "misconceptionTarget": "看到題目出現單價就一律寫單價乘總次數，忽略費率在門檻後改變。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -784,7 +829,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6b32a82bb399c2d69b5127daa27463b39ab78dd0bca7cb6250ae5d3537bcdb89"
+    "contentSha256": "94c0a14a664fd5c71d1753d567050a47df08b04416a395fab69bac32fb6e9fde"
   },
   {
     "questionId": "u04-s014-v010",
@@ -807,11 +852,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "A=10+2x，B=3x；10+2x=3x，x=10。",
-    "explanation": "基本費與每分鐘費共同決定同價時間。",
+    "explanation": "騎 x 分鐘時，A 的費用為 10+2x，B 無基本費所以為 3x。同價條件 10+2x=3x，解得 x=10 分鐘。代回時 A 為十加二十、B 為三十，兩者都是三十元。這也確認基本費只收一次，沒有被錯誤按分鐘重複計算。",
     "steps": [
-      "建立兩費用式。",
-      "設相等。",
-      "解 x。"
+      "依基本費與每分鐘費建立 A=10+2x、B=3x。",
+      "把兩式設為相等，列 10+2x=3x。",
+      "解得 x=10，並代回確認兩方案都是三十元。"
     ],
     "optionAnalysis": [
       {
@@ -835,7 +880,7 @@ export const QUESTIONS = [
         "reason": "A=70、B=90。"
       }
     ],
-    "misconceptionTarget": "忽略基本費",
+    "misconceptionTarget": "忽略 A 的十元基本費，只比較每分鐘二元與三元便判斷同價時間。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "分鐘。",
@@ -848,7 +893,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "0af75966912b910f9ea0a8e8a1dc11303c9b1a6196adbc95b0b0cb3f0945df26"
+    "contentSha256": "c37f382d5b705e7928fc237d5bba3926bf049dee4403144e861b60fe3c66d00e"
   },
   {
     "questionId": "u04-s014-v011",
@@ -871,10 +916,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "x+y=10，2x+3y=24。減 2(x+y)=20 得 y=4。",
-    "explanation": "人數欄在本問可作為解後檢查，不是求乙組所必需。",
+    "explanation": "設甲組 x 組、乙組 y 組，總組數列 x+y=10，佔地列 2x+3y=24。減去兩倍總組數式得 y=4，所以乙組四組、甲組六組。座位數欄不是求盒數所必需，可在解後算總座位作延伸檢查。",
     "steps": [
-      "列組數與佔地。",
-      "消去 x。"
+      "從資料中選出總組數與總佔地兩個必要條件。",
+      "列 x+y=10 與 2x+3y=24。",
+      "減去兩倍第一式求 y=4，並回算佔地。"
     ],
     "optionAnalysis": [
       {
@@ -898,7 +944,7 @@ export const QUESTIONS = [
         "reason": "總佔地 28。"
       }
     ],
-    "misconceptionTarget": "把所有欄都強行放入方程式",
+    "misconceptionTarget": "把座位數等所有欄位都強行塞入方程式，沒有先篩選與所求相關的條件。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "平方公尺/組×組=平方公尺。",
@@ -911,7 +957,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7066a78e26b31b923e0086a91f27bb60d6cd534da135b744eb811de45a9dad6a"
+    "contentSha256": "c70d3edf7201cc533390a475c30f822567b68424d4f74121e41b322f2af50df6"
   },
   {
     "questionId": "u04-s014-v012",
@@ -934,11 +980,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x+y=14，5x+3y=58。減 3(x+y)=42 得 2x=16，x=8。",
-    "explanation": "執行時間與單位耗電量建立加權總量。",
+    "explanation": "設甲、乙運作時間為 x、y 小時，列 x+y=14、5x+3y=58。用耗電式減去三倍時間式，得到 2x=16，所以甲運作八小時、乙六小時。回算耗電四十加十八等於五十八度。",
     "steps": [
-      "列總時間。",
-      "列總耗電。",
-      "消去。"
+      "依總運作時間列 x+y=14。",
+      "依每小時耗電量列 5x+3y=58。",
+      "消去 y 得 x=8，並以乙六小時回算總耗電。"
     ],
     "optionAnalysis": [
       {
@@ -962,7 +1008,7 @@ export const QUESTIONS = [
         "reason": "甲 8 小時耗 40，乙 6 小時耗 18，共 58。"
       }
     ],
-    "misconceptionTarget": "平均分配時數",
+    "misconceptionTarget": "把十四小時平均分給兩裝置，忽略兩者每小時耗電量不同。",
     "prerequisiteCheck": "只需先備 system-mixture-basic，並使用本技能「聯立方程式素養題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "度/小時×小時=度。",
@@ -975,7 +1021,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "cea5f44e2fc55082f20eeb19c30f26ebe56af0e406280468519234412200a9af"
+    "contentSha256": "8d41be45d34e53e175527a79bb4bf5ab023158614461c95e34c37fb46e206345"
   }
 ];
 
@@ -994,18 +1040,17 @@ export const CONSTRUCTED_RESPONSES = [
       "求交點後比較20GB。"
     ],
     "standardSolution": [
-      "A=80+15x，B=200+5x。",
-      "同價：80+15x=200+5x，10x=120，x=12GB。",
-      "20GB時 A=380元，B=300元。",
-      "B較便宜80元。"
+      "設使用量為 x GB。方案 A 費用為 80+15x 元，方案 B 費用為 200+5x 元。",
+      "同價時列 80+15x=200+5x，整理得 10x=120，所以 x=12；代回可得兩方案皆為二百六十元。",
+      "使用二十 GB 時，A 費用為 80+15×20=380 元，B 費用為 200+5×20=300 元，因此 B 較便宜 380-300=80 元。"
     ],
     "alternativeMethods": [
       "可先觀察交點後 A 每GB 比B多增加10元；20比12多8GB，因此B便宜80元。"
     ],
     "reasoningSteps": [
-      "建模。",
-      "求交點。",
-      "代入指定用量並解釋。"
+      "依固定費與每 GB 費用建立兩個線性費用式。",
+      "令兩方案費用相等，求同價用量並代回驗證。",
+      "把二十 GB 代入兩式，明確比較較便宜方案與價差。"
     ],
     "rubric": [
       {
@@ -1043,7 +1088,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "9246c65c3c28357bb2b155a12f62ac965f0cf363e5e71ad7e8a4d55ba19b8f36"
+    "contentSha256": "f73db5d6b4aa95a5a8ba6de9458cf2edea46341370b97735fa7e9e177391f956",
+    "commonErrors": [
+      "只比較每 GB 十五元與五元，完全漏掉兩方案固定費。",
+      "求得十二 GB 同價後直接說 B 已較便宜，沒有區分相等與較小。",
+      "二十 GB 時計算價差只減單位費，沒有先求兩方案完整總費用。"
+    ]
   },
   {
     "questionId": "u04-s014-cr002",
@@ -1059,18 +1109,17 @@ export const CONSTRUCTED_RESPONSES = [
       "熱量欄用於解後計算。"
     ],
     "standardSolution": [
-      "設A x盒、B y盒。",
-      "x+y=8，20x+10y=120。",
-      "減10(x+y)=80，10x=40，x=4，y=4。",
-      "總熱量=500×4+350×4=3400大卡。"
+      "設 A 餐盒 x 盒、B 餐盒 y 盒。由總盒數列 x+y=8；由蛋白質總量列 20x+10y=120。",
+      "將盒數式乘十得 10x+10y=80，與蛋白質式相減得 10x=40，所以 x=4、y=4。",
+      "盒數求出後再使用熱量欄：總熱量為 500×4+350×4=2000+1400=3400 大卡。回算盒數八盒、蛋白質一百二十克。"
     ],
     "alternativeMethods": [
       "蛋白質平均15克/盒，正好是20與10中點，所以兩種等量，各4盒。"
     ],
     "reasoningSteps": [
-      "篩選必要欄。",
-      "求盒數。",
-      "使用熱量欄回答延伸問題。"
+      "先篩選總盒數與蛋白質欄，建立求盒數所需的兩式。",
+      "用消去法求得 A、B 各四盒，並回代兩個必要條件。",
+      "再使用尚未用到的熱量欄，計算八盒的總熱量。"
     ],
     "rubric": [
       {
@@ -1108,7 +1157,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7a40938bf47c2d874d5e83ff73fc9674c1e7fb2eafec9d349e310e5e69458b10"
+    "contentSha256": "28dde81a738a45fba6216003ace836b5d0a7714be4e812b3d3c500c6018440e2",
+    "commonErrors": [
+      "一開始把盒數、蛋白質與熱量三欄全塞進同一式，造成單位混雜。",
+      "蛋白質式只寫二十加十，沒有分別乘 A、B 盒數。",
+      "求得各四盒後就停止，漏答題目要求的總熱量三千四百大卡。"
+    ]
   }
 ];
 

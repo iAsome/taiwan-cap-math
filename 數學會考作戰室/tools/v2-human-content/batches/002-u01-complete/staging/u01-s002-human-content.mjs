@@ -128,44 +128,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "以海平面為 0，燈塔頂端高 42 公尺、潛水員低 18 公尺，如何記錄？",
-      "solutionSteps": [
-        "海平面是基準 0。",
-        "高於海平面屬正方向，所以燈塔記 +42 公尺。",
-        "低於海平面屬負方向，所以潛水員記 -18 公尺。"
-      ],
-      "answer": "燈塔 +42 公尺；潛水員 -18 公尺。"
+      "answer": "燈塔 +42 公尺；潛水員 −18 公尺。",
+      "why": "兩個位置共用海平面這個基準，數字部分表示離基準的距離，符號表示方向。高於海平面採正號、低於海平面採負號，因此分別記 +42 與 −18 公尺。"
     },
     {
-      "exampleId": "L2",
       "prompt": "商品標準重量為 500 克，實際 493 克，偏差是多少？",
-      "solutionSteps": [
-        "偏差＝實際量－基準量。",
-        "493－500＝-7。",
-        "負號表示少於標準。"
-      ],
-      "answer": "-7 克。"
+      "answer": "偏差是 −7 克。",
+      "why": "偏差必須用實際量減基準量，493−500=−7 克。算出的負號不是重量本身為負，而是說明實際商品比標準少 7 克；把 493 直接當偏差會混淆兩種量。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "某帳戶以 0 元為基準，先記 +800 元，再記 -250 元，兩筆紀錄各代表什麼？",
-      "solutionSteps": [
-        "+800 表示收入或增加 800 元。",
-        "-250 表示支出或減少 250 元。",
-        "正負號描述方向，不是兩筆金額的大小。"
-      ],
-      "answer": "增加 800 元；減少 250 元。"
+      "prompt": "某帳戶以 0 元為基準，先記 +800 元，再記 −250 元，兩筆紀錄各代表什麼？",
+      "answer": "第一筆增加 800 元；第二筆減少 250 元。",
+      "why": "帳戶紀錄中的正負號描述餘額變化方向，+800 表示存入或收入而增加，−250 表示支出而減少。兩筆金額的大小仍分別是 800 與 250，不能把符號解讀成好壞。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "測站以 20°C 為基準，紀錄為 -6°C，實際溫度是多少？",
-      "solutionSteps": [
-        "實際量＝20＋(-6)。",
-        "20－6＝14。",
-        "紀錄的 -6 是偏差，不是實際溫度。"
-      ],
-      "answer": "14°C。"
+      "prompt": "測站以 20°C 為基準，紀錄偏差為 −6°C，實際溫度是多少？",
+      "answer": "實際溫度是 14°C。",
+      "why": "偏差 −6°C 表示比 20°C 基準低 6°C，不是實際溫度本身。依實際量＝基準量＋帶號偏差，20+(−6)=14°C，代回也確實比基準少 6°C。所以負號只描述相對方向，不能直接當成實際讀值。"
     }
   ],
   "commonMistakes": [
@@ -252,7 +232,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "2300285a0335accabe80c87ea6ee4c35464d6bf3a9a53aef98b69e8b360a401e",
+  "contentSha256": "d7b7a41321ab665a3471dc4dcfebe16698f20c2208ae7b8a9a5c2ca4d4c5b700",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -276,7 +256,7 @@ export const QUESTIONS = [
       "0 公尺"
     ],
     "answerIndex": 0,
-    "explanation": "海平面下方是相對基準的負方向，距離為 35 公尺，所以帶號紀錄是 -35 公尺。",
+    "explanation": "題目把海平面定為 0 公尺，因此位置在海平面上方記正號、下方記負號。潛水艇在下方 35 公尺，距離大小是 35、方向是負，所以完整帶號紀錄為 −35 公尺。",
     "steps": [
       "確認基準是海平面 0 公尺。",
       "「下方」代表負方向。",
@@ -319,7 +299,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a4bbe4307647c10b5139d33ebf5a7a155d3768a18e5062c2a11aace2edcb29e0",
+    "contentSha256": "889676d00e3adcec424cfbcff2125ae46c602ad2af8ed1b8eb356937570bfbf5",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -341,7 +321,7 @@ export const QUESTIONS = [
       "+1 元"
     ],
     "answerIndex": 1,
-    "explanation": "存入使帳戶餘額增加，若增加方向約定為正，變化量是 +500 元。",
+    "explanation": "以餘額不變為基準時，存入款項會使餘額增加，因此變化方向應記為正。這一筆增加的金額是 500 元，所以帶號變化量為 +500 元；−500 元反而表示支出或減少。",
     "steps": [
       "辨認事件是存入。",
       "存入使餘額增加。",
@@ -369,7 +349,7 @@ export const QUESTIONS = [
         "reason": "+1 與金額不符。"
       }
     ],
-    "commonMistake": "把「存入」和「支出」方向弄反。",
+    "commonMistake": "把存入誤當成支出，將增加五百元錯記為負五百元。",
     "concept": "增加量通常以正數表示。",
     "tags": [
       "數與量",
@@ -384,7 +364,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "972a03805300070fdc00a22d03230e4dbf4832b7f43e7403fa6d9564b9478135",
+    "contentSha256": "af33e2f0953e1b68e5b06b1916945a9e71d8a8ac0e8027442d4a54501ea0b4ae",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -406,7 +386,7 @@ export const QUESTIONS = [
       "+2 克"
     ],
     "answerIndex": 2,
-    "explanation": "偏差＝實際重量－標準重量＝98－100＝-2 克，負號表示少於標準。",
+    "explanation": "偏差要用實際量減去基準量，而不是直接抄實際重量。依題意計算 98−100=−2 克，負號表示零件比標準少 2 克，因此相對標準的偏差是 −2 克。",
     "steps": [
       "寫偏差＝98－100。",
       "計算得到 -2。",
@@ -434,7 +414,7 @@ export const QUESTIONS = [
         "reason": "+2 表示重於標準。"
       }
     ],
-    "commonMistake": "把實際重量 98 直接當作偏差。",
+    "commonMistake": "直接把實際重量九十八克當成相對標準的偏差，沒有先減基準。",
     "concept": "帶號偏差＝實際量－基準量。",
     "tags": [
       "數與量",
@@ -449,7 +429,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8cdd02c0f6b52637b23a6a0548f7df533c000b314357c015c1ba2281ac71b39f",
+    "contentSha256": "6d8c776b270562e39c36016f506f6bd084e2ff41811f831747dd05c8dd0f6929",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -471,7 +451,7 @@ export const QUESTIONS = [
       "14°C"
     ],
     "answerIndex": 3,
-    "explanation": "實際溫度＝基準溫度＋偏差＝20＋(-6)=14°C。-6°C 是偏差，不是實際值。",
+    "explanation": "紀錄的 −6°C 是相對 20°C 基準的偏差，不是實際溫度。用實際量＝基準量＋偏差，可得 20+(−6)=14°C；代回檢查，14°C 確實比基準低 6°C，方向與題目給的負偏差完全一致。",
     "steps": [
       "辨認 20°C 是基準。",
       "把偏差 -6°C 加到基準。",
@@ -499,7 +479,7 @@ export const QUESTIONS = [
         "reason": "正確還原實際溫度。"
       }
     ],
-    "commonMistake": "把偏差 -6°C 誤當成溫度本身。",
+    "commonMistake": "把負六度的偏差直接當成實際溫度，忘記加回二十度基準。",
     "concept": "實際量＝基準量＋帶號偏差。",
     "tags": [
       "數與量",
@@ -514,7 +494,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4420c38a4617e5dc71cdc71bbeff00679edd5e3eb07612dc9f497f20537847db",
+    "contentSha256": "f7104c33c597a7dcfdcf7ffdcacc9b9b2ddef9e37e71a241dec8dc91993f1e5f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -536,7 +516,7 @@ export const QUESTIONS = [
       "+8 公里、+3 公里"
     ],
     "answerIndex": 0,
-    "explanation": "向東為正，所以向西為負。甲在西方 8 公里記 -8，乙在東方 3 公里記 +3。",
+    "explanation": "題目明定向東為正方向，因此相反的向西就是負方向。甲在基準點西方 8 公里，記為 −8 公里；乙在東方 3 公里，記為 +3 公里，兩個符號都要依同一約定判斷。",
     "steps": [
       "讀出向東為正。",
       "西方是負方向，甲記 -8。",
@@ -579,7 +559,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "87a2eac02798434d3fe4986c042b319d7ff3494aa25ae7fcd2e741890ddb327a",
+    "contentSha256": "d34a0c83a2e4a93148680257fb364ae31b1d0754eff68ef29c953466ae2d434d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -601,7 +581,7 @@ export const QUESTIONS = [
       "13°C"
     ],
     "answerIndex": 1,
-    "explanation": "最後溫度＝起始溫度＋變化量＝-4+9=5°C。",
+    "explanation": "最後溫度要把帶號變化量加到起始溫度，而不能只抄變化量。起始為 −4°C，升高 9°C 記作 +9°C，因此 −4+9=5°C；結果跨過 0°C 後停在 5°C，也確實比起始溫度高 9°C。",
     "steps": [
       "起始量是 -4°C。",
       "升高 9°C 記 +9°C。",
@@ -629,7 +609,7 @@ export const QUESTIONS = [
         "reason": "把絕對值相加。"
       }
     ],
-    "commonMistake": "把「變化量 +9」誤認為最後溫度 9°C。",
+    "commonMistake": "只把正九度當成最後溫度，漏算起始溫度負四度。",
     "concept": "最後量＝起始量＋帶號變化。",
     "tags": [
       "數與量",
@@ -644,7 +624,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ae0670ebb2bc82d07256b89e28431e44eb6c6045072c6991578f2a19be3f568d",
+    "contentSha256": "5268a3da67c31634d83d7137a83b32dc999fd9df1e4109af3b7f864d2d2827d0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -666,7 +646,7 @@ export const QUESTIONS = [
       "169 公分"
     ],
     "answerIndex": 2,
-    "explanation": "甲為 150+12=162 公分，乙為 150-7=143 公分，相差 162-143=19 公分。",
+    "explanation": "先還原兩人的實際長度：甲為 150+12=162 公分，乙為 150−7=143 公分。題目問相差多少，要用較大值減較小值，162−143=19 公分；共同基準不會另外算進差距。",
     "steps": [
       "還原甲：162 公分。",
       "還原乙：143 公分。",
@@ -709,7 +689,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "70472d7d272f031b7bd991fe253bdc3e0daeb19f888bfb7782a7175603dc7308",
+    "contentSha256": "e7d50137d1c6c5d2066c078e778d64dad006fa6cda263968f20de1f2af645ae3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -731,7 +711,7 @@ export const QUESTIONS = [
       "乙實際值比甲大 2"
     ],
     "answerIndex": 3,
-    "explanation": "甲實際值 40-5=35；乙實際值 35+2=37，所以乙比甲大 2。不同基準不能直接比較 -5 與 +2。",
+    "explanation": "兩筆紀錄使用不同基準，不能直接比較 −5 與 +2。甲的實際值是 40+(−5)=35，乙的實際值是 35+2=37；還原後再比較可得 37−35=2，所以乙比甲大 2。這也說明偏差大小不等於實際值大小。",
     "steps": [
       "還原甲為 35。",
       "還原乙為 37。",
@@ -774,7 +754,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8323a409e7836e56128ff7bfded9e1da78f2dfaa600933011dffe24da0f640e8",
+    "contentSha256": "aaae5ac27b52d5a1239212aaa38e52f71606fa66619a743a243a18f52066e23c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -796,7 +776,7 @@ export const QUESTIONS = [
       "+9"
     ],
     "answerIndex": 0,
-    "explanation": "總變化＝-4+7-6。先 -4+7=3，再 3-6=-3。",
+    "explanation": "總變化要保留每一次校正的方向，依序列式為 −4+7+(−6)。先算 −4+7=3，再算 3−6=−3；結果為負表示三次校正合計使設備比原狀態減少 3 個單位。",
     "steps": [
       "依序列出 -4+7+(-6)。",
       "前兩項合成 3。",
@@ -839,7 +819,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3fc2754b2853deb6fbb712847f09f4bd45c60666642b6e15da8602decf0c8088",
+    "contentSha256": "1d87fcf9b23378e42984a526a05613cd6696461ef740b32e3285594080d074ba",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -861,7 +841,7 @@ export const QUESTIONS = [
       "甲、乙都低於標準且相差 1°C"
     ],
     "answerIndex": 1,
-    "explanation": "甲=-18+3=-15°C；乙=-18-2=-20°C。-15 比 -20 高 5°C。",
+    "explanation": "標準溫度本身是 −18°C，必須分別加上感測器偏差。甲為 −18+3=−15°C，乙為 −18+(−2)=−20°C；因 −15 大於 −20，甲比乙高，溫差是 5°C。甲在標準上方、乙在標準下方，也與兩個偏差符號相符。",
     "steps": [
       "以 -18°C 為共同基準。",
       "分別加上 +3 與 -2。",
@@ -904,7 +884,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "冷鏈標準值、兩個感測器偏差與溫度安全比較缺一不可。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ab0f70778fc19c96cd67a5ac9db5f6a04ac3d8149ed6282c86ff0dad65d5666e",
+    "contentSha256": "217da44e961fc70566d21d4af6f554729bdec573807fd3cd22c0876e8ddf67c1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -926,7 +906,7 @@ export const QUESTIONS = [
       "上升 257 公分"
     ],
     "answerIndex": 2,
-    "explanation": "上午實際 232 公分，傍晚 257 公分；後值減前值＝257-232=25 公分，為上升。也可直接算 +7-(-18)=25。",
+    "explanation": "上午水位是 250−18=232 公分，傍晚水位是 250+7=257 公分。從上午到傍晚的變化為後值減前值，257−232=25 公分，正值表示上升；也可直接算 7−(−18)=25。兩種算法都反映水位跨過警戒基準。",
     "steps": [
       "還原上午與傍晚，或直接比較偏差。",
       "計算後值－前值。",
@@ -969,7 +949,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "警戒基準與上午、傍晚兩筆相對紀錄共同決定變化量。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f141f2b530d3aaeaed46d2204e9dadbb0f1e678c0a626b0b99d69e7d47bba3ec",
+    "contentSha256": "48be17e33b3d0b7cc968a484fbe84cb9ef17b194d126ac735f5ef8c11acb3056",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -991,7 +971,7 @@ export const QUESTIONS = [
       "5,000 元"
     ],
     "answerIndex": 3,
-    "explanation": "甲支出 53,200 元，乙支出 48,200 元，相差 5,000 元。共同基準在差距中抵消。",
+    "explanation": "先把偏差加回共同預算：甲實際支出為 50,000+3,200=53,200 元，乙為 50,000−1,800=48,200 元。兩者相差 53,200−48,200=5,000 元。也可直接比較兩側偏差，3,200−(−1,800)=5,000；共同基準會在相減時抵消。",
     "steps": [
       "甲＝50000+3200。",
       "乙＝50000-1800。",
@@ -1034,7 +1014,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "預算基準、超支與節省偏差及實際支出比較都是必要資訊。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "75cc3bd1ea29510ab5f3582147b1c1f96b4a95755cda5fdc414f321de5fedec6",
+    "contentSha256": "1cfde9d5501783e65d5f4d1368b787e01c66ba339d76cc20bcdb41d0f6fdd1d4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1056,9 +1036,9 @@ export const CONSTRUCTED_RESPONSES = [
       "說明正號、負號與 0 的意義。"
     ],
     "fullCreditSolution": [
-      "A：492-500=-8 克，表示少於標準 8 克。",
-      "B：505-500=+5 克，表示多於標準 5 克。",
-      "C：500-500=0 克，表示正好等於標準。"
+      "偏差都用實際重量減標準重量。A 包為 492−500=−8 克，負號表示少於標準 8 克。",
+      "B 包為 505−500=+5 克，正號表示多於標準 5 克，正號雖可省略但方向說明不能省略。",
+      "C 包為 500−500=0 克，表示實際重量恰等於標準，既沒有高於也沒有低於標準。"
     ],
     "alternativeSolutions": [
       "可用數線或「低於／高於標準」文字說明，但三個偏差必須相同。"
@@ -1095,7 +1075,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "8fe26142e498f3ca2e05c8dc5de60055cd31f5d23c39404150f2d9b9adcf5ef0",
+    "contentSha256": "a7678cdb02c779582078305257c5d88b4160f3eeeb9bc358135a27c0159d613a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1114,9 +1094,9 @@ export const CONSTRUCTED_RESPONSES = [
       "答案須包含較高者與差距。"
     ],
     "fullCreditSolution": [
-      "甲點實際高度＝100+(-12)=88 公尺。",
-      "乙點實際高度＝80+5=85 公尺。",
-      "甲點較高，88-85=3 公尺。"
+      "甲測站的紀錄是相對 100 公尺的偏差，因此甲點實際高度為 100+(−12)=88 公尺。",
+      "乙測站使用另一個 80 公尺基準，乙點實際高度為 80+5=85 公尺，不能直接比較兩筆偏差。",
+      "還原後 88>85，所以甲點較高；兩點的無方向高度差為 88−85=3 公尺。"
     ],
     "alternativeSolutions": [
       "也可先列成 (100-12)-(80+5)=3，再指出甲較高。"
@@ -1153,7 +1133,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "9c2ce08d3dcb33a1efc008461d7c4935b786e1c41de2e603c15d93950718b75e",
+    "contentSha256": "cf480013844228bc86e190297a611adae3fe566664cbd70f70dd2c0ce886b786",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u12",
+  "batch": "013-u12-complete",
+  "skills": ["s010"],
+  "mc": [
+    {"questionId":"u12-s010-v001","expectedContentSha256":"f6b43d451e5e0dbf54d7453f98ec72150b3617a9474d88ac1a91ecebe2c51ce7","appendText":{"explanation":"總座位數等於排數乘每排席數。排數是n，每排比排數多4席，所以每排為n＋4，乘積應寫成n(n＋4)；展開後是n²＋4n，可回查情境中的兩個量。","misconceptionTarget":"把每排多四席誤加在總數末尾，沒有先寫出每排n加四。"}},
+    {"questionId":"u12-s010-v002","expectedContentSha256":"814cf479aee1ebda945811b1844a76dacfd28fc2dadd34d75e38064f3f406ffd","appendText":{"explanation":"正方形長與寬都為x＋3，面積是(x＋3)²。完整展開得到x²＋3x＋3x＋9＝x²＋6x＋9平方公尺，不能只把x與3各自平方而漏掉兩個交叉項；兩個三x必須合併。","misconceptionTarget":"把和的平方誤當成平方和，遺漏兩個三x交叉項。"}},
+    {"questionId":"u12-s010-v003","expectedContentSha256":"509ef52718bbc786dee10c9f724c93d69a1e77718d9683359a3f0bb1c7d01cfc","appendText":{"explanation":"總箱數是6x＋9，兩項都有公因數3。分別除以3得到2x與3，所以可寫成3(2x＋3)箱；展開後回到6x＋9，外面的3表示共同裝箱單位，括號表示單位份數。","misconceptionTarget":"提出三後未將九正確除以三，或把外部共同單位與括號份數混淆。"}},
+    {"questionId":"u12-s010-v004","expectedContentSha256":"3963159624c50da617fd48daf395daac5f982d600f10e095740856f040a579a1","appendText":{"explanation":"面積式要找乘積為20且和為9的兩數，得到4與5，因此分解為(x＋4)(x＋5)。兩邊相差1公尺，正好符合規格；面積與邊差兩個條件都必須檢查。","misconceptionTarget":"只依兩邊相差一猜尺寸，沒有將候選邊長乘回原面積式。"}},
+    {"questionId":"u12-s010-v005","expectedContentSha256":"f3d1c138de22b31863efe09fb8006ff9401b3bc41e1a7cbf0e76702a33e94934","appendText":{"explanation":"兩個面積的差為64²－36²，可用平方差公式化成(64＋36)(64－36)＝100×28＝2800。所求仍是兩塊材料的面積差，因此答案單位是平方公分，不是公分，量綱必須一致。","misconceptionTarget":"把兩個邊長的差二十八再平方，誤認為面積差。"}},
+    {"questionId":"u12-s010-v006","expectedContentSha256":"4cb5771d189d80652226d88f9e1c06bee066591b206c5da2f86a0166439abb45","appendText":{"explanation":"將2n²＋7n＋3分解時，首項配2n與n、常數配1與3，交叉項6n＋n恰為7n，所以正確乘積是(2n＋1)(n＋3)。展開每個候選並逐項比較，即可排除其餘三項，確認答案唯一。","misconceptionTarget":"只看兩常數的乘積為三，沒有核對兩個交叉乘積合併後必須為七n。"},"set":{"choices":["(2n+1)(n+3)","(2n+3)(n+1)","(2n+2)(n+1)","(2n+3)(n+2)"],"optionAnalysis":[{"choice":"(2n+1)(n+3)","truth":true,"reason":"展開為2n²＋6n＋n＋3＝2n²＋7n＋3。"},{"choice":"(2n+3)(n+1)","truth":false,"reason":"展開的一次項係數為5，不是7。"},{"choice":"(2n+2)(n+1)","truth":false,"reason":"展開為2n²＋4n＋2，三個係數都不完全吻合。"},{"choice":"(2n+3)(n+2)","truth":false,"reason":"一次項係數雖為7，但常數為6，不是3。"}]},"reviewReplaceText":{"「(n+1)(2n+3)」不成立：展開一次項為 5n。":"「(2n+3)(n+2)」不成立：展開常數為 6，不是 3。"}},
+    {"questionId":"u12-s010-v007","expectedContentSha256":"3e59ae7674409d4c286d554096bbe5271b873c6dceb46e57d3cb0865271536c3","appendText":{"explanation":"4m²－25是(2m)²－5²，依平方差分解為(2m－5)(2m＋5)。當m＞3時，2m－5＞1且2m＋5＞11，兩因式都為正，所以其乘積與差值皆為正，符號結論明確。","misconceptionTarget":"只看到因式中有減五便判定整個因式或乘積為負。"}},
+    {"questionId":"u12-s010-v008","expectedContentSha256":"8ca32a8bbea9cfaf16a6ca475c55289856444f645dcfaea30170415db1d8cae9","appendText":{"explanation":"展開廠商尺寸得6x²－3x＋4x－2＝6x²＋x－2，與面積完全吻合。又因x＞1，3x＋2與2x－1都嚴格為正，所以代數面積與實際尺寸可行性都通過。","misconceptionTarget":"只驗證面積式便忽略邊長正值，或看到二x減一就直接判負。"}},
+    {"questionId":"u12-s010-v009","expectedContentSha256":"c9f85943b4581156a9545583d3076eef87e131dea96075eb538362d87c9cdc95","appendText":{"explanation":"先提出公因式n，再把n²＋3n＋2分解為(n＋1)(n＋2)，得到三個連續整數n(n＋1)(n＋2)。連續三整數必含一個偶數與一個三的倍數，所以乘積一定是6的倍數。","misconceptionTarget":"停在n乘二次式的半分解形式，沒有顯示連續三整數中的二與三因數。"}},
+    {"questionId":"u12-s010-v010","expectedContentSha256":"912f56ffccd242bb3b930bca0cbaca26b5c27868013000b8c9507754803a36ec","appendText":{"explanation":"三項都有公因數3，先提出得3(k²＋5k＋6)。括號內找乘積6、和5的2與3，再分解為3(k＋2)(k＋3)。三個因式都已不能在整數係數下繼續分解。","misconceptionTarget":"提出公因數三後便停止，沒有把括號內的二次三項式繼續分解。"}},
+    {"questionId":"u12-s010-v011","expectedContentSha256":"c9954ab3f19c4e2972aba27febe8485d0270f4a223dc9445e03172ed79f648e5","appendText":{"explanation":"9t²－16是(3t)²－4²，平方差分解為(3t－4)(3t＋4)。當t≥2時，較小因式3t－4至少為2，另一因式也為正，因此兩因式乘積與方案差值都確定為正，結論完整。","misconceptionTarget":"看見原式或因式中的減號就判定差值一定為負，未套用t的範圍。"}},
+    {"questionId":"u12-s010-v012","expectedContentSha256":"ce6159215732800a073760b8e235b7dfe009b6c011b4b1b46223d2ffdfc6c6bb","appendText":{"explanation":"首項2x²配成2x與x，常數12配成3與4；交叉項8x＋3x＝11x，因此分解為(2x＋3)(x＋4)。若x＞0，兩個邊長都為正，代數面積與場地尺寸皆可行，答案完整符合情境。","misconceptionTarget":"只選常數乘積為十二的配對，沒有核對交叉項合併後必須為十一x。"}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u12-s010-cr001","expectedContentSha256":"285c84fb8e08d3d40b8d26ca214f9ca4cea6e0804708419f8c3a8d6108ed08df","set":{"fullCreditSolution":["提出公因式n：n²＋7n＝n(n＋7)。兩因式可解讀為排數與每排席數。","例如排成n排、每排n＋7席；也可交換成n＋7排、每排n席，總座位數不變。","因n為正整數，n不為零且n＋7也是整數，總數除以n的商為n＋7，所以總座位數一定是n的倍數。"],"reasoningSteps":["從兩個座位數項中提出共同因式n，得到乘積結構。","把兩個因式分別解讀為排數與每排席數，並說明可交換。","利用n為正整數確保除數非零且商為整數，完成倍數證明。"],"commonErrors":["把n平方誤解讀成n平方排，沒有將總數寫成兩個計數量的乘積。","因式中出現數字七就宣稱是七的倍數，未依整除定義檢查。"]}},
+    {"questionId":"u12-s010-cr002","expectedContentSha256":"274013184b53288a299ae1e6bfbdcc758916756a9d23d8ff0689c30e6ca35e65","set":{"fullCreditSolution":["兩區面積差為(x＋6)²－(x－6)²，把整個x＋6與x－6視為平方差公式中的兩個量。","套用平方差得[(x＋6)＋(x－6)]·[(x＋6)－(x－6)]＝2x·12＝24x平方公尺。","限制x＞6使內區邊長x－6嚴格為正，外區邊長x＋6也為正，因此兩個正方形尺寸皆可行。"],"reasoningSteps":["先依正方形面積建立外區平方減內區平方。","以平方差的和因式與差因式化簡，注意減去括號會改變符號。","檢查內外邊長正值與面積單位，再回到情境作答。"],"commonErrors":["把(x＋6)減(x－6)算成零，忘記減號要分配到第二個括號。","把(x－6)²誤寫成x²－36，遺漏負十二x交叉項。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u12-s010-lecture-r1","expectedContentSha256":"ba61c9e6b5c62120e4f58f0ba3c41a142a6544c2272376aadfd55efafbd15555","appendArray":{"conceptNarrative":["素養題不以看到多項式就分解為目標，而是先讀清楚所求、單位與限制，再選擇能顯示情境結構的乘積形式。因式可能代表排數、每組數量、長寬或方案差的和因式與差因式；代數展開正確後，仍要檢查正值、整數、非零與單位是否可行。若要證明整除，分解應揭露需要的因數；若要比較面積或成本，則須把結果翻回同一量並用完整句子說明決策。"]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"活動座位總數n²＋9n，解讀一種排列。","solutionSteps":["提出共同因式n，得n(n＋9)。","將n解讀為排數，n＋9解讀為每排席數。","檢查n為正整數時兩個計數量皆可行。"],"answer":"n排、每排n＋9席","why":"乘積形式直接呈現排數乘每排席數，比展開式更能說明配置；n為正整數也保證沒有零排、負排或非整數席數。"},
+      {"exampleId":"L2","prompt":"求正方形材料面積差52²－48²。","solutionSteps":["辨認為兩個平方的差。","套公式得(52＋48)(52－48)。","計算100×4＝400平方單位。"],"answer":"400平方單位","why":"平方差公式把兩個較大的平方運算改成和乘差，計算更短且保留面積差意義；結果仍是面積，所以必須使用平方單位。"},
+      {"exampleId":"L3","prompt":"展示板面積x²＋11x＋24，求可行邊長。","solutionSteps":["找乘積24且和11的3與8。","分解為(x＋3)(x＋8)。","依實際尺寸檢查兩因式都必須大於零。"],"answer":"邊長可為x＋3與x＋8","why":"常數因數配對還要同時符合一次項係數，不能只看乘積；將因式解讀為邊長後，再加入正值限制才是完整情境答案。"},
+      {"exampleId":"L4","prompt":"方案差4m²－25，且m＞3，判斷差值符號。","solutionSteps":["用平方差分解為(2m－5)(2m＋5)。","由m＞3得兩個因式都為正。","正數相乘為正，所以方案差值為正。"],"answer":"差值為正","why":"因式內出現減號不代表因式必為負，必須套入變數範圍；分解同時顯示兩個因式的符號，才能支持方案比較結論。"}
+    ]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

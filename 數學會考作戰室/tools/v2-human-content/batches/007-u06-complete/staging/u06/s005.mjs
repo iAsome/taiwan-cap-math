@@ -103,66 +103,74 @@ export default {
     "method": [
       {
         "step": 1,
-        "instruction": "確認比較的是同一對變數。",
-        "check": "x、y 的單位與意義固定嗎？"
+        "instruction": "先確認題目明示兩量成正比，或有足夠資料可以檢查比值。",
+        "check": "不能只因兩量同增就宣稱正比。"
       },
       {
         "step": 2,
-        "instruction": "用一組 x≠0 的資料算 k=y/x。",
-        "check": "除法順序是否一致？"
+        "instruction": "選取x不為零的數對，依固定方向計算k=y÷x。",
+        "check": "除法順序與y=kx一致。"
       },
       {
         "step": 3,
-        "instruction": "用其他資料檢查同一 k。",
-        "check": "每組比值都相同嗎？"
+        "instruction": "把求得的常數寫入y=kx，必要時代入另一組資料檢查。",
+        "check": "關係式沒有題目未給的固定加項。"
       },
       {
         "step": 4,
-        "instruction": "寫 y=kx 並求未知數。",
-        "check": "代入單位後是否合理？"
+        "instruction": "求新對應值時代入已知量，保留分數或精確小數到最後。",
+        "check": "單位與百分率倍率已統一。"
       },
       {
         "step": 5,
-        "instruction": "用倍數變化或原點特徵驗算。",
-        "check": "x 乘倍數時 y 是否同倍變化？"
+        "instruction": "用新數對重算y÷x，或列比例式交叉相乘完成驗算。",
+        "check": "所有成對資料得到相同常數。"
       }
     ],
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "y 與 x 成正比，x=4 時 y=10，求 k。",
+        "prompt": "y與x成正比，x=4時y=10，求k。",
         "solutionSteps": [
-          "k=y/x=10/4。",
-          "化簡得 k=5/2。"
+          "由正比寫k=y÷x。",
+          "代入得到k=10÷4=5/2。",
+          "檢查(5/2)×4=10。"
         ],
-        "answer": "k=5/2。"
+        "answer": "k=5/2。",
+        "why": "正比常數的方向是y除以x，且必須使用x不為零的資料。代回y=kx得到原來的十，證明約分後的五分之二沒有顛倒，也沒有把差值誤當常數。"
       },
       {
         "exampleId": "L2",
-        "prompt": "承上，x=14 時求 y。",
+        "prompt": "承上，x=14時求y。",
         "solutionSteps": [
-          "寫 y=(5/2)x。",
-          "代入 14 得 y=35。"
+          "沿用y=(5/2)x。",
+          "代入x=14得y=35。",
+          "驗算35÷14=5/2。"
         ],
-        "answer": "35。"
+        "answer": "35。",
+        "why": "同一個正比關係中的k不可改變，因此直接把新x代入既有關係式。反算三十五除以十四仍為五分之二，確認新數對與原數對屬於同一正比。"
       },
       {
         "exampleId": "L3",
-        "prompt": "表格資料 (2,6)、(5,15)、(8,25) 是否正比？",
+        "prompt": "資料(2,6)、(5,15)、(8,25)是否正比？",
         "solutionSteps": [
-          "前三組比值分別為 3、3、25/8。",
-          "比值不全相同。"
+          "計算前兩組y÷x皆為3。",
+          "第三組25÷8不等於3。",
+          "因比值不全相同，判定不是正比。"
         ],
-        "answer": "不是正比。"
+        "answer": "不是正比。",
+        "why": "多組資料必須全部通過固定比值檢查，不能看到前兩組成立就停止。第三組乘積或差值即使看似接近也不重要，二十五除以八不是三便足以否定正比。"
       },
       {
         "exampleId": "L4",
-        "prompt": "固定每公尺布 120 元，買 x 公尺付 y 元，寫關係式。",
+        "prompt": "每公尺布120元且無其他費用，買x公尺付y元，寫關係式。",
         "solutionSteps": [
-          "每一公尺都增加 120 元，無基本費。",
-          "總價=120×長度。"
+          "辨認固定單價120元/公尺。",
+          "列總價=單價×長度。",
+          "寫成y=120x並檢查x=0時y=0。"
         ],
-        "answer": "y=120x。"
+        "answer": "y=120x。",
+        "why": "沒有基本費時，每增加一公尺只增加固定的一百二十元，且零公尺對應零元，因此總價與長度的比值固定。若另有運費，關係式便會多出常數項而不再是正比。"
       }
     ],
     "commonMistakes": [
@@ -249,7 +257,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "c96945152af982db06609a8c8b3ebee129f440506778955b45f5f7d3c5e46bf4"
+    "contentSha256": "d5ee6be3423955872879f35a48c3c5189d1c9a89421e74bdbf4d286321ba26ed"
   },
   "mcQuestions": [
     {
@@ -274,10 +282,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "檢查12=3×4。",
       "mainExplanation": "由y=kx得k=12÷4。",
-      "explanation": "由y=kx得k=12÷4。",
+      "explanation": "正比關係可寫成y=kx；因x=4不為零，所以正比常數k=y÷x=12÷4=3。代回原式得到12=3×4，與已知資料完全相符，因此答案是3，而不是把除法順序倒置成四分之一。",
       "steps": [
-        "k=12/4",
-        "k=3"
+        "由成正比寫出y=kx。",
+        "利用x不為零，計算k=12÷4=3。",
+        "代回檢查3×4=12，確認常數與資料一致。"
       ],
       "optionAnalysis": [
         {
@@ -301,7 +310,7 @@ export default {
           "reason": "16是12+4。"
         }
       ],
-      "misconceptionTarget": "把正比常數當差值。",
+      "misconceptionTarget": "把正比常數誤當兩量的差，或將y÷x顛倒算成x÷y。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -322,7 +331,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d4fe090534120a19f68857c4ec00e1c704c7a8861e031dad18e097bae6120cdf"
+      "contentSha256": "c8f3544ae44e71891ebbc7ede0ed182db99c4380b62047ef8f31cb638d172d36"
     },
     {
       "questionId": "u06-s005-v002",
@@ -346,10 +355,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "35/7=5，符合常數。",
       "mainExplanation": "直接代入正比關係式。",
-      "explanation": "直接代入正比關係式。",
+      "explanation": "關係式已明確給出y=5x，把x=7代入便得y=5×7=35。再以35÷7=5核對，所得比值仍等於正比常數5，所以35是唯一符合關係式的選項，其他數值都無法通過代入檢查。",
       "steps": [
-        "y=5×7",
-        "y=35"
+        "辨認正比常數為5。",
+        "將x=7代入y=5x，算得y=35。",
+        "用35÷7=5驗算固定比值。"
       ],
       "optionAnalysis": [
         {
@@ -373,7 +383,7 @@ export default {
           "reason": "42把係數當6。"
         }
       ],
-      "misconceptionTarget": "把乘法看成加法。",
+      "misconceptionTarget": "把式中的乘法看成加法，或只使用係數5而漏掉x的數值。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -394,7 +404,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b4bf6f9bd449ae160fd08600fe7d48955a9a85a3b02478fd1408d66d59de6c43"
+      "contentSha256": "c07e5b17e3032f62b42582e0aebcb35b738ff7ff21714a229a1acb2072d5903a"
     },
     {
       "questionId": "u06-s005-v003",
@@ -418,11 +428,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "把各組 y 除以 x：6÷2=3、9÷3=3、15÷5=3，所以比值固定為3，可寫成 y=3x。",
       "mainExplanation": "逐組計算y/x，只有第一組全部相同。",
-      "explanation": "逐組計算y/x，只有第一組全部相同。",
+      "explanation": "判斷正比要逐一檢查每個數對的y÷x。第二個選項依序得到6÷2=3、15÷5=3、24÷8=3，比值全都相同，因此可寫成y=3x。其餘選項至少有一組比值不同，不能只因數值大致同增或差值規律就判為正比。",
       "steps": [
-        "6/2=3",
-        "15/5=3",
-        "24/8=3"
+        "依(x,y)順序計算每組y÷x。",
+        "第二個選項的三個比值都是3。",
+        "檢查其餘選項皆有不同比值，確認第二項唯一成立。"
       ],
       "optionAnalysis": [
         {
@@ -446,7 +456,7 @@ export default {
           "reason": "第三組28/9≠3。"
         }
       ],
-      "misconceptionTarget": "只看大致增加或固定差。",
+      "misconceptionTarget": "只看數值同時增加或固定差，而沒有逐組核對y÷x是否固定。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -467,7 +477,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bec570cc2d1e44a875e6563fb4073e35c90508d908076d6945a99eb9d26a454c"
+      "contentSha256": "4814419fb6d37f45decc159d7fdaba5b9d45ac5535a085c1b8de56aa2cf915a0"
     },
     {
       "questionId": "u06-s005-v004",
@@ -491,11 +501,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "6:15=14:35，交叉積均210。",
       "mainExplanation": "先求固定比值，再代入新x。",
-      "explanation": "先求固定比值，再代入新x。",
+      "explanation": "先由已知數對求正比常數：k=15÷6=5/2。當x=14時，y=(5/2)×14=35。也可列6:15=14:35，兩邊交叉積都是210，驗證35符合相同比值且為唯一答案；不能把兩量的增加量當成固定差。",
       "steps": [
-        "k=5/2",
-        "y=5/2×14",
-        "y=35"
+        "計算k=15÷6=5/2。",
+        "代入x=14，得到y=(5/2)×14=35。",
+        "以6×35=15×14=210驗算比例式。"
       ],
       "optionAnalysis": [
         {
@@ -519,7 +529,7 @@ export default {
           "reason": "k=15/6=5/2，y=(5/2)×14=35。"
         }
       ],
-      "misconceptionTarget": "以固定差取代固定比。",
+      "misconceptionTarget": "把x增加的差直接加到y，忽略正比維持的是倍數與比值。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -540,7 +550,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f00d1e3c4193b5e424d067dcea8cd8aadd3d7171aeab7bab38c8cb666e1e9369"
+      "contentSha256": "43fe868945f92e6c7b0eefb9fa82264525fb4a23d1971dd2a1646fb0f0a41fff"
     },
     {
       "questionId": "u06-s005-v005",
@@ -564,10 +574,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "20/(-5)=-4，與原比值相同。",
       "mainExplanation": "正比常數可為負，代入時注意符號。",
-      "explanation": "正比常數可為負，代入時注意符號。",
+      "explanation": "由x=3、y=-12求得k=-12÷3=-4，因此關係式是y=-4x。把x=-5代入，y=(-4)×(-5)=20；負數乘負數為正。最後用20÷(-5)=-4驗算，確實維持同一正比常數，答案的符號與大小都符合題設。",
       "steps": [
-        "k=-4",
-        "y=(-4)(-5)=20"
+        "由已知數對算得k=-4。",
+        "將x=-5代入y=-4x，算得y=20。",
+        "用20÷(-5)=-4檢查比值不變。"
       ],
       "optionAnalysis": [
         {
@@ -591,7 +602,7 @@ export default {
           "reason": "8計算錯誤。"
         }
       ],
-      "misconceptionTarget": "負號乘法錯誤。",
+      "misconceptionTarget": "在負正比常數下漏用負負得正，或只比較數值的絕對值。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -612,7 +623,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "25a89caff44b9b4fc87caaa23694e327c808f9212cb784e627fa323dfebb477e"
+      "contentSha256": "2d1e54fb9788634151918c1131d5068fe9672753417ad87489dae83462d89548"
     },
     {
       "questionId": "u06-s005-v006",
@@ -623,9 +634,9 @@ export default {
       "difficulty": "standard",
       "itemType": "multiple-choice",
       "type": "mc",
-      "prompt": "已知 y 與 x 成正比，x 增加 40% 時，y 如何變化？",
-      "text": "已知 y 與 x 成正比，x 增加 40% 時，y 如何變化？",
-      "givenConditions": "k固定。",
+      "prompt": "已知 x>0、y>0 且 y 與 x 成正比；x 增加 40% 時，y 如何變化？",
+      "text": "已知 x>0、y>0 且 y 與 x 成正比；x 增加 40% 時，y 如何變化？",
+      "givenConditions": "x>0、y>0且正比常數固定。",
       "target": "判斷正比百分比變化",
       "choices": [
         "增加40%",
@@ -636,10 +647,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "y的新舊比為1.4。",
       "mainExplanation": "用y=kx比較變化前後。",
-      "explanation": "用y=kx比較變化前後。",
+      "explanation": "設原來為y₁=kx₁。x增加40%後，x₂=1.4x₁，因此y₂=kx₂=1.4kx₁=1.4y₁。題幹已限制y>0，所以新值比原值多0.4y₁，語意上就是增加40%，不會出現負值大小方向的歧義，也不需要另加四十個單位。",
       "steps": [
-        "x2=1.4x1",
-        "y2=1.4y1"
+        "把增加40%寫成x₂=1.4x₁。",
+        "利用y=kx推得y₂=1.4y₁。",
+        "因y₁>0，確認y增加量為0.4y₁，即增加40%。"
       ],
       "optionAnalysis": [
         {
@@ -663,7 +675,7 @@ export default {
           "reason": "方向錯誤。"
         }
       ],
-      "misconceptionTarget": "把百分點與倍率混淆。",
+      "misconceptionTarget": "未把百分率轉成1.4倍，或忽略正值條件而混淆負數的增減語意。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -684,7 +696,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "755f427875866933bb5e1ca958d17b9c263ce6cb29856ffb4ef417ac24dc4001"
+      "contentSha256": "8b0a9acbcbdfc8ad5c4dcc0d5e4c91dfb942d809a729623a05e9fbcd60576646"
     },
     {
       "questionId": "u06-s005-v007",
@@ -708,10 +720,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "代入x=4得y=-10，且x=0時y=0。",
       "mainExplanation": "正比式無常數項，係數由非零點求得。",
-      "explanation": "正比式無常數項，係數由非零點求得。",
+      "explanation": "正比關係必為y=kx且沒有固定加項。利用非零點(4,-10)，可得k=-10÷4=-5/2，所以關係式為y=-(5/2)x。代入原點與(4,-10)都成立，也排除符號、倒數及多加截距的選項。",
       "steps": [
-        "k=-10/4=-5/2",
-        "y=kx"
+        "由正比特徵寫成y=kx。",
+        "用點(4,-10)算得k=-5/2。",
+        "代回兩個已知點，確認y=-(5/2)x。"
       ],
       "optionAnalysis": [
         {
@@ -735,7 +748,7 @@ export default {
           "reason": "k=−10/4=−5/2。"
         }
       ],
-      "misconceptionTarget": "斜率倒置或加截距。",
+      "misconceptionTarget": "把斜率倒置、漏掉負號，或把正比直線錯寫成含截距的一次函數。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -756,7 +769,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "73484946c85b6c0ebca6fc27af591866d0eeac7b6040254030541f2a68b62de8"
+      "contentSha256": "73ec5d2f3ef5a4bfa8b520b46bc03314565dff15a5be5c379ad10b63120ef19b"
     },
     {
       "questionId": "u06-s005-v008",
@@ -780,10 +793,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "8:18=4:9。",
       "mainExplanation": "維持x:y=4:9，y由9份變18所以每份2。",
-      "explanation": "維持x:y=4:9，y由9份變18所以每份2。",
+      "explanation": "已知x:y=4:9，當y由9份變成18時，倍率是18÷9=2，所以x也要由4份乘2成為8。用另一方法核對：x=18×(4/9)=8，且8:18約分後正是4:9，兩種算法都維持題目指定的比例方向。",
       "steps": [
-        "每份2",
-        "x=4×2=8"
+        "由y=18求每一份為18÷9=2。",
+        "計算x=4×2=8。",
+        "把8:18約分為4:9，驗證比例方向。"
       ],
       "optionAnalysis": [
         {
@@ -807,7 +821,7 @@ export default {
           "reason": "40.5把比倒置。"
         }
       ],
-      "misconceptionTarget": "把正比常數方向搞反。",
+      "misconceptionTarget": "把x:y誤讀為y:x，或把比例中的份數4直接當作實際的x。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -828,7 +842,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1d91d7b883e30715e0e912db7dba29a43329974ed9b6b3726c41684daa19557a"
+      "contentSha256": "0478f704aec708d9f35e8a51459746c86bfd405b72bc7c989d6953e845e4a015"
     },
     {
       "questionId": "u06-s005-v009",
@@ -852,11 +866,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "兩組比值18/a與15/a不同。",
       "mainExplanation": "比較倍數即可發現矛盾。",
-      "explanation": "比較倍數即可發現矛盾。",
+      "explanation": "若兩點屬於同一正比關係，x從a變成2a時是加倍，y也必須從18加倍為36，但題目給的是30。等價地，兩組比值18/a與30/(2a)=15/a在a不為零時不相等，因此不存在同一個k。",
       "steps": [
-        "x由a變2a",
-        "正比要求y由18變36",
-        "實際30"
+        "比較兩點的x，確認由a加倍成2a。",
+        "正比要求y由18加倍成36，但實際為30。",
+        "再比較18/a與15/a，確定兩組常數矛盾。"
       ],
       "optionAnalysis": [
         {
@@ -880,7 +894,7 @@ export default {
           "reason": "若正比，x加倍時y應加倍為36，不會是30。"
         }
       ],
-      "misconceptionTarget": "只用其中一組資料求k。",
+      "misconceptionTarget": "只用其中一個數對求k，沒有檢查另一數對是否維持相同比值。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -901,7 +915,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e4b3055198841df0e1af3b2fc48c09ac30c8eeec888545afb6b217b0529c796f"
+      "contentSha256": "83ff7c46c82296e800f9db9d34be571cb8bbd62571d4dd77188413a667233cf2"
     },
     {
       "questionId": "u06-s005-v010",
@@ -925,10 +939,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "y/x=1.8固定。",
       "mainExplanation": "每增加一張增加1.8元，且0張為0元。",
-      "explanation": "每增加一張增加1.8元，且0張為0元。",
+      "explanation": "每張固定1.8元且沒有基本費或其他費用，影印x張的總價就是1.8×x元，因此y=1.8x。當x=0時y也為0，且x>0時y/x=1.8固定，兩項都符合正比而非含固定加項的關係。",
       "steps": [
-        "辨認單價1.8",
-        "寫y=1.8x"
+        "辨認每張單價1.8元是固定比值。",
+        "依總價=單價×張數寫成y=1.8x。",
+        "以0張0元及y/x=1.8檢查正比條件。"
       ],
       "optionAnalysis": [
         {
@@ -952,7 +967,7 @@ export default {
           "reason": "虛構基本費1元。"
         }
       ],
-      "misconceptionTarget": "忽略不收基本費。",
+      "misconceptionTarget": "把單價當成固定加項，或自行加入題目未給的基本費與手續費。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -973,7 +988,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f1a9b2445c1e4b400ec6be4010fc1a1ee529f1c1aa0d378ebdcd0b580babe1b8"
+      "contentSha256": "b90795949f372fcc05648fa7e0a0575be5e08911cba135e9e0c358b67f89ddd4"
     },
     {
       "questionId": "u06-s005-v011",
@@ -997,11 +1012,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "120/16=7.5。",
       "mainExplanation": "固定流量下水量與時間成正比。",
-      "explanation": "固定流量下水量與時間成正比。",
+      "explanation": "流量固定為每分鐘7.5公升，總水量與時間成正比。開16分鐘的水量是7.5×16=7.5×(10+6)=75+45=120公升；再以120÷16=7.5公升/分鐘驗算，單位率與題設一致，沒有額外的固定水量。",
       "steps": [
-        "7.5×10=75",
-        "7.5×6=45",
-        "合120"
+        "列出總量=流量×時間。",
+        "計算7.5×16=120公升。",
+        "用120÷16=7.5公升/分鐘反算驗證。"
       ],
       "optionAnalysis": [
         {
@@ -1025,7 +1040,7 @@ export default {
           "reason": "127.5多加一分鐘。"
         }
       ],
-      "misconceptionTarget": "小數乘法錯誤。",
+      "misconceptionTarget": "小數乘法錯位，或誤用十五、十七分鐘而造成相鄰選項的結果。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -1046,7 +1061,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0a697ec4b8eea45e81faad2bad6b93a5745d74ff6d9a69556bb30f4cb366524c"
+      "contentSha256": "cefff064e494dcb846311a66150504f30af1faafee9ba66541a62d22edce3e7f"
     },
     {
       "questionId": "u06-s005-v012",
@@ -1070,11 +1085,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "5333步對應約3.99975公里。",
       "mainExplanation": "比例式2400:1.8=x:4。",
-      "explanation": "比例式2400:1.8=x:4。",
+      "explanation": "平均步幅不變時，步數與路程成正比。列2400:1.8=x:4，得到x=2400×4÷1.8=5333.333…步；依題意最後才四捨五入為5333步。反算5333×1.8÷2400=3.99975公里，確實約為4公里，也符合題目要求的整步精度。",
       "steps": [
-        "1.8x=9600",
-        "x=5333.333…",
-        "取整5333"
+        "依步數與路程正比列2400:1.8=x:4。",
+        "求得x=5333.333…步。",
+        "四捨五入成5333步並反算約3.99975公里。"
       ],
       "optionAnalysis": [
         {
@@ -1098,7 +1113,7 @@ export default {
           "reason": "把1.8近似2造成偏差。"
         }
       ],
-      "misconceptionTarget": "過早近似。",
+      "misconceptionTarget": "過早把1.8近似為2，或在中途先取整導致最後步數偏離正確值。",
       "prerequisiteCheck": {
         "skillIds": [
           "proportion-property"
@@ -1119,7 +1134,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "46cd8223aa50a8bc00db26e944e0ad114cc6be892797962f1868f2b95377b0f5"
+      "contentSha256": "2700bed75b46f72d8c3aaa9560a0dee0a74a5999446e1c13872c7883e547faf8"
     }
   ],
   "constructedResponses": [
@@ -1140,17 +1155,19 @@ export default {
         "代入新x並驗算。"
       ],
       "fullCreditSolution": [
-        "k=18/8=9/4。",
-        "關係式y=(9/4)x。",
-        "x=20時y=(9/4)×20=45；45/20=9/4。"
+        "由y與x成正比可寫y=kx；利用x=8、y=18，算得k=18÷8=9/4。",
+        "因此唯一的關係式為y=(9/4)x；係數也可寫成2.25，但不可增加固定項。",
+        "代入x=20，得到y=(9/4)×20=45。",
+        "最後計算45÷20=9/4，與原資料18÷8相同，完成獨立驗算。"
       ],
       "alternativeSolutions": [
         "可列8:18=20:y，交叉相乘得y=45，再由一組資料補寫關係式。"
       ],
       "reasoningSteps": [
-        "k=18/8=9/4。",
-        "關係式y=(9/4)x。",
-        "x=20時y=(9/4)×20=45；45/20=9/4。"
+        "由非零數對求正比常數k=9/4。",
+        "把常數代入標準式y=kx。",
+        "用新x=20求出y=45。",
+        "比較新舊兩組y/x，確認比值固定。"
       ],
       "rubric": [
         {
@@ -1178,9 +1195,8 @@ export default {
       "unitNotationRules": "無單位；分數係數可寫2.25。",
       "answerOnlyPolicy": "只寫45最多1分，因題目還要求關係式。",
       "commonErrors": [
-        "k方向顛倒。",
-        "寫y=(9/4)x+常數。",
-        "x增加12就y增加12。"
+        "把k算成x÷y=4/9，導致關係式方向顛倒。",
+        "把x增加十二誤解成y也增加十二，錯用固定差代替固定比。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1195,7 +1211,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "1ee9612b7bed9303450b9092742086c4f6726b0a8e25c495b2c2391ccfe244c5"
+      "contentSha256": "b9f305da9fd325e2e36e7619b6f1ffe967bed543c14dff4eb2b756253f923e4c"
     },
     {
       "questionId": "u06-s005-cr002",
@@ -1214,17 +1230,19 @@ export default {
         "指出至少一個破壞正比的現實條件。"
       ],
       "fullCreditSolution": [
-        "每公里150÷6=25元。",
-        "14公里車資25×14=350元。",
-        "若有起跳費、等候費、分段費率或夜間加成，總價不再單純與距離成正比。"
+        "題幹明示無起跳費且車資與距離成正比，所以每公里單價為150÷6=25元/公里。",
+        "行駛14公里的車資是25×14=350元；也可列6:150=14:y求得相同結果。",
+        "用350÷14=25元/公里反算，確認與六公里時的單價一致。",
+        "若實際方案加入起跳費、等候費、夜間加成或分段費率，車資與距離的比值就不再固定，此正比模型便會失效。"
       ],
       "alternativeSolutions": [
         "可列6:150=14:x求x=350。"
       ],
       "reasoningSteps": [
-        "每公里150÷6=25元。",
-        "14公里車資25×14=350元。",
-        "若有起跳費、等候費、分段費率或夜間加成，總價不再單純與距離成正比。"
+        "由六公里150元算出固定單價25元/公里。",
+        "以固定單價乘十四公里，求得350元。",
+        "反算每公里單價以驗證正比。",
+        "指出會破壞固定比值的具體現實費用。"
       ],
       "rubric": [
         {
@@ -1252,9 +1270,8 @@ export default {
       "unitNotationRules": "車資用元，距離用公里；單價為元/公里。",
       "answerOnlyPolicy": "只寫350元最多2分。",
       "commonErrors": [
-        "忽略無起跳費條件。",
-        "把150加14。",
-        "限制舉例與費率無關。"
+        "忽略無起跳費條件，任意把固定費加到正比式。",
+        "只寫現實可能不同，卻沒有指出何種費用會使每公里平均車資改變。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1269,7 +1286,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "e683b91aa7e61672f3f0af5dd4c2b0a4265c096dc53340a38441068f4e92e98d"
+      "contentSha256": "d15d008c369c48357714190134ce57a0d8c68f31650cdf40433db4845e97bc1b"
     }
   ],
   "semanticReviews": [
@@ -1278,7 +1295,7 @@ export default {
       "questionId": "u06-s005-v001",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "d4fe090534120a19f68857c4ec00e1c704c7a8861e031dad18e097bae6120cdf",
+      "contentSha256": "c8f3544ae44e71891ebbc7ede0ed182db99c4380b62047ef8f31cb638d172d36",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1315,7 +1332,7 @@ export default {
       "questionId": "u06-s005-v002",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "b4bf6f9bd449ae160fd08600fe7d48955a9a85a3b02478fd1408d66d59de6c43",
+      "contentSha256": "c07e5b17e3032f62b42582e0aebcb35b738ff7ff21714a229a1acb2072d5903a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1352,7 +1369,7 @@ export default {
       "questionId": "u06-s005-v003",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "bec570cc2d1e44a875e6563fb4073e35c90508d908076d6945a99eb9d26a454c",
+      "contentSha256": "4814419fb6d37f45decc159d7fdaba5b9d45ac5535a085c1b8de56aa2cf915a0",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1389,7 +1406,7 @@ export default {
       "questionId": "u06-s005-v004",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "f00d1e3c4193b5e424d067dcea8cd8aadd3d7171aeab7bab38c8cb666e1e9369",
+      "contentSha256": "43fe868945f92e6c7b0eefb9fa82264525fb4a23d1971dd2a1646fb0f0a41fff",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1426,7 +1443,7 @@ export default {
       "questionId": "u06-s005-v005",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "25a89caff44b9b4fc87caaa23694e327c808f9212cb784e627fa323dfebb477e",
+      "contentSha256": "2d1e54fb9788634151918c1131d5068fe9672753417ad87489dae83462d89548",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1463,7 +1480,7 @@ export default {
       "questionId": "u06-s005-v006",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "755f427875866933bb5e1ca958d17b9c263ce6cb29856ffb4ef417ac24dc4001",
+      "contentSha256": "8b0a9acbcbdfc8ad5c4dcc0d5e4c91dfb942d809a729623a05e9fbcd60576646",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1485,14 +1502,14 @@ export default {
         "方向錯誤。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「判斷正比百分比變化」，已明示必要條件：k固定。，不存在需猜測的隱藏量。",
+        "wording": "題幹中的所求量為「判斷正比百分比變化」，已明示必要條件：x>0、y>0且正比常數固定。，不存在需猜測的隱藏量。",
         "units": "單位審查結果：百分率。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：x原值非0時百分比有意義。，未超出 U06 鎖定技能邊界。",
+        "boundary": "範圍審查結果：x、y皆為正數，百分比增減的方向沒有負值歧義。，未超出 U06 鎖定技能邊界。",
         "rounding": "近似與取整審查：無近似。。"
       },
       "difficultyReason": "比例變化推理。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：y的新舊比為1.4。 正確選項為「增加40%」。逐項檢查後，唯一為真的理由是「正比中兩量乘相同倍率；x乘1.4，y也乘1.4。」；其餘三項分別因「20%沒有依據。」、「把40%重複計入。」、「方向錯誤。」而排除。邊界與語意再檢查：x原值非0時百分比有意義。",
+      "reviewerNote": "獨立重算：y的新舊比為1.4。 正確選項為「增加40%」。逐項檢查後，唯一為真的理由是「正比中兩量乘相同倍率；x乘1.4，y也乘1.4。」；其餘三項分別因「20%沒有依據。」、「把40%重複計入。」、「方向錯誤。」而排除。邊界與語意再檢查：x、y皆為正數，百分比增減的方向沒有負值歧義。",
       "reviewerDecision": "pass"
     },
     {
@@ -1500,7 +1517,7 @@ export default {
       "questionId": "u06-s005-v007",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "73484946c85b6c0ebca6fc27af591866d0eeac7b6040254030541f2a68b62de8",
+      "contentSha256": "73ec5d2f3ef5a4bfa8b520b46bc03314565dff15a5be5c379ad10b63120ef19b",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1537,7 +1554,7 @@ export default {
       "questionId": "u06-s005-v008",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "1d91d7b883e30715e0e912db7dba29a43329974ed9b6b3726c41684daa19557a",
+      "contentSha256": "0478f704aec708d9f35e8a51459746c86bfd405b72bc7c989d6953e845e4a015",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1574,7 +1591,7 @@ export default {
       "questionId": "u06-s005-v009",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "e4b3055198841df0e1af3b2fc48c09ac30c8eeec888545afb6b217b0529c796f",
+      "contentSha256": "83ff7c46c82296e800f9db9d34be571cb8bbd62571d4dd77188413a667233cf2",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1611,7 +1628,7 @@ export default {
       "questionId": "u06-s005-v010",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "f1a9b2445c1e4b400ec6be4010fc1a1ee529f1c1aa0d378ebdcd0b580babe1b8",
+      "contentSha256": "b90795949f372fcc05648fa7e0a0575be5e08911cba135e9e0c358b67f89ddd4",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1648,7 +1665,7 @@ export default {
       "questionId": "u06-s005-v011",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "0a697ec4b8eea45e81faad2bad6b93a5745d74ff6d9a69556bb30f4cb366524c",
+      "contentSha256": "cefff064e494dcb846311a66150504f30af1faafee9ba66541a62d22edce3e7f",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1685,7 +1702,7 @@ export default {
       "questionId": "u06-s005-v012",
       "unitId": "u06",
       "skillId": "direct-variation",
-      "contentSha256": "46cd8223aa50a8bc00db26e944e0ad114cc6be892797962f1868f2b95377b0f5",
+      "contentSha256": "2700bed75b46f72d8c3aaa9560a0dee0a74a5999446e1c13872c7883e547faf8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

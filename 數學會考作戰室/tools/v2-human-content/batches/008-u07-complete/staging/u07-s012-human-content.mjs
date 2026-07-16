@@ -55,11 +55,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "素養題先不要立刻計算，先標記所求量、單位、規則區間與限制。",
-    "表格中的每一列未必都要用；只選與目前方案、區間和問題相關的資料。",
-    "分段費率必須先確認 x 落在哪一段，再使用該段公式，最後檢查算出的 x 是否仍在那一段。",
-    "多重限制以「且」取交集，例如預算上限、容量上限與最低需求。",
-    "比較方案時應在相同 x 或相同服務條件下比較，不可混用不同基準。"
+    "不等式素養題先讀問題，再整理資料。先標出所求是最大值、最小值、範圍或方案比較，接著辨認變數單位、固定量、每單位變化量與邊界詞。表格中的資料不一定全都使用，只有會影響模型或驗算的資訊才是必要資訊。",
+    "遇到分段收費或分段規則，必須先提出候選分段，再用該段公式求解。算出的答案若不在公式適用區間，代表模型與結果不自洽，必須改用另一段重新計算；不能直接接受，也不能任意把答案改成門檻值。",
+    "容量上限、最低需求、預算上限與整數條件常同時出現。每一條限制先各自翻譯成不等式，再以且取交集；至少與最多通常包含端點。若解集為整數範圍，應清楚列出上下界並用題目單位解釋。",
+    "方案比較要在相同用量與相同服務條件下比較完整總費用，而不是只比固定費或單價。解出臨界值後，還要檢查等號是否包含、相鄰用量的費用順序，以及情境是否另有限制，才能回答從多少用量起或哪個方案較合適。"
   ],
   "formalDefinitions": [
     {
@@ -101,103 +100,116 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "寫下問題真正要求的量與單位。",
-      "check": "是最大、最少、範圍還是方案比較？"
+      "instruction": "先圈出問題所求與答案單位。",
+      "check": "題目問最大、最少、範圍還是臨界點？"
     },
     {
       "step": 2,
-      "instruction": "整理必要數據與規則。",
-      "check": "有無門檻、分段、容量或時間限制？"
+      "instruction": "從文字或表格擷取必要資料與邊界詞。",
+      "check": "哪些數字真正影響所求，哪些只是背景？"
     },
     {
       "step": 3,
-      "instruction": "選擇正確規則並建立不等式。",
-      "check": "公式適用範圍是否已滿足？"
+      "instruction": "判斷分段、方案與公式的適用範圍。",
+      "check": "選用的規則與候選答案位於同一段嗎？"
     },
     {
       "step": 4,
-      "instruction": "求解並與其他限制取交集。",
-      "check": "整數、非負、上下界是否完整？"
+      "instruction": "逐條建立不等式並依正確規則求解。",
+      "check": "固定量、變動量、單位換算是否正確？"
     },
     {
       "step": 5,
-      "instruction": "回到表格或規則驗證答案與相鄰值。",
-      "check": "是否跨段、超支或違反容量？"
+      "instruction": "加入整數、非負、容量與最低需求後取交集。",
+      "check": "所有條件是否同時成立，端點是否包含？"
     },
     {
       "step": 6,
-      "instruction": "用完整句子解釋結果。",
-      "check": "是否回答了情境中的實際問題？"
+      "instruction": "以臨界值和相鄰值回到原規則驗算。",
+      "check": "是否跨段、超支、超容量或未達最低需求？"
+    },
+    {
+      "step": 7,
+      "instruction": "用完整句子回答情境問題。",
+      "check": "答案是否包含數值、單位與可行性說明？"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "方案 A 月費 120 元、每 GB 30 元，預算 300 元，可用多少 GB？",
+      "exampleId": "u07-s012-example-a",
+      "prompt": "表格列出健身方案固定費 150 元、每次 25 元。預算 425 元時，最多使用幾次？",
       "solutionSteps": [
-        "120+30g≤300。",
-        "30g≤180，g≤6，且 g≥0。"
+        "列 150+25x≤425。",
+        "得到 25x≤275，所以 x≤11。",
+        "十一次剛好四百二十五元。"
       ],
-      "answer": "最多 6 GB。"
+      "answer": "最多十一次。",
+      "why": "從表格只擷取固定費、每次費與預算三項必要資訊；模型保留一次固定費，所得整數十一代回恰達上限，完整回應最大次數。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "教室最多 36 人，活動至少 24 人才舉辦，參加人數範圍為何？",
+      "exampleId": "u07-s012-example-b",
+      "prompt": "遊覽車最多載 42 人，至少 26 人才出發，已有 4 位領隊，學生人數 s 的範圍為何？",
       "solutionSteps": [
-        "至少 24：n≥24。",
-        "最多 36：n≤36。"
+        "總容量給 4+s≤42，所以 s≤38。",
+        "最低出發人數給 4+s≥26，所以 s≥22。",
+        "取交集得 22≤s≤38。"
       ],
-      "answer": "24≤n≤36，且 n 為整數。"
+      "answer": "學生可為二十二至三十八人。",
+      "why": "領隊同時占容量也計入最低總人數，兩條限制都必須保留；各自求得學生上下界後取交集，才能得到真正可行的人數範圍。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "前 5 公里每公里 20 元，超過 5 公里後另有規則；若算得 7 公里卻仍用前段公式，問題在哪？",
+      "exampleId": "u07-s012-example-c",
+      "prompt": "停車前 1 小時 50 元，超過後每半小時 20 元。預算 130 元，最多停多久？",
       "solutionSteps": [
-        "前段公式只適用 d≤5。",
-        "7 超出適用區間，必須改用後段規則。"
+        "剩餘預算為 130−50=80 元。",
+        "可買四個額外半小時，也就是兩小時。",
+        "加回前一小時，共三小時；下一時段需一百五十元。"
       ],
-      "answer": "模型與分段範圍不一致。"
+      "answer": "最多三小時。",
+      "why": "先確認預算足以進入第二段，再把額外半小時換成小時並加回前段；驗算下一個半小時超支，也確認答案仍符合所用分段。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "方案 A：50+12x；方案 B：110+6x。何時 B 不比 A 貴？",
+      "exampleId": "u07-s012-example-d",
+      "prompt": "方案甲為 90+14x，方案乙為 150+8x。使用量至少多少時，乙不比甲貴？",
       "solutionSteps": [
-        "110+6x≤50+12x。",
-        "60≤6x，所以 x≥10。"
+        "列 150+8x≤90+14x。",
+        "得到 60≤6x，所以 x≥10。",
+        "十單位時兩方案都為二百三十元。"
       ],
-      "answer": "使用量至少 10 單位時。"
+      "answer": "至少十單位。",
+      "why": "以相同使用量比較完整總費用，臨界點十包含等號；九單位時乙仍較貴，十單位相等，之後乙的較低單價才形成優勢。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "看到較低單價就直接選方案。",
-      "why": "忽略固定費與使用量。",
-      "correction": "以同一 x 比較總費用。"
+      "mistake": "看到表格就把所有數字都放進算式。",
+      "why": "沒有依問題判斷資料是否必要。",
+      "correction": "先寫所求量，再選會影響模型與驗算的資訊。"
     },
     {
-      "mistake": "使用前段公式得到跨段答案仍接受。",
-      "why": "未做分段一致性檢查。",
-      "correction": "答案跨門檻時改用對應規則。"
+      "mistake": "使用某段公式算出跨段答案仍直接接受。",
+      "why": "忽略公式有適用區間。",
+      "correction": "把候選答案代回分段條件，不符就改用另一段。"
     },
     {
-      "mistake": "把容量上限與最低需求相加。",
-      "why": "誤解多重限制。",
-      "correction": "兩者以且形成區間。"
+      "mistake": "把至少與最多兩個限制用或連接。",
+      "why": "誤解兩項規則必須同時成立。",
+      "correction": "分別求解後以且取共同範圍。"
     },
     {
-      "mistake": "表格每個數據都納入算式。",
-      "why": "未區分必要與冗餘資訊。",
-      "correction": "只使用影響所問量的資料。"
+      "mistake": "只比較兩方案的每單位價格。",
+      "why": "較低單價可能伴隨較高固定費。",
+      "correction": "在相同用量下比較兩個完整總費用。"
     },
     {
-      "mistake": "方案比較只比單價。",
-      "why": "忽略固定費。",
-      "correction": "比較完整總費用函數。"
+      "mistake": "算出 x≥10 只回答十。",
+      "why": "把臨界值誤當唯一解。",
+      "correction": "說明十及以上符合，再套用情境中的其他上限。"
     },
     {
-      "mistake": "得到 x≥10 卻回答 x=10。",
-      "why": "把範圍誤成單一臨界點。",
-      "correction": "10 及以上都符合，還需受情境上限限制。"
+      "mistake": "半小時時段數直接當成小時數。",
+      "why": "沒有完成時間單位換算。",
+      "correction": "每兩個半小時才是一小時，並加回前段時間。"
     }
   ],
   "selfCheck": [
@@ -253,7 +265,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "919d8d4f55e264586d7897847de9547ed0adc9048dfe4e7e6def0e224d380027"
+  "contentSha256": "8757e542a83d455f9a8370d97dc9160884cf486ae88450f247e03ed4a147e9f3"
 };
 
 export const QUESTIONS = [
@@ -283,10 +295,11 @@ export const QUESTIONS = [
       "result": "100+20x",
       "answerIndexVerified": 1
     },
-    "explanation": "固定費只付一次為 100，每單位 20 元共 20x，所以總費用 100+20x。",
+    "explanation": "固定費一百元不隨用量改變，所以只加一次；每單位二十元，使用 x 單位就是 20x 元，總費用為 100+20x。令 x=0 時仍需付一百元，且每增加一單位總費增加二十元，兩項都符合表格。",
     "steps": [
-      "辨認固定費",
-      "辨認每單位變動費"
+      "從表格辨認一百元是與用量無關的固定費。",
+      "把每單位二十元乘上用量 x，得到變動費 20x。",
+      "相加得 100+20x，再用零用量與增加一單位檢查。"
     ],
     "optionAnalysis": [
       {
@@ -310,7 +323,7 @@ export const QUESTIONS = [
         "reason": "把固定費與單價相加後全乘。"
       }
     ],
-    "misconceptionTarget": "未區分固定與變動資訊。",
+    "misconceptionTarget": "把固定費乘上用量，沒有分清一次性費用與每單位費用。",
     "prerequisiteCheck": "需理解一次式模型。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "金額元。",
@@ -326,7 +339,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "18020fc14292f4580f90d7550a4268106857a2022f87e167afbb61cf2e70fe92"
+    "contentSha256": "7db27522c008aec64f383bc80ae669912dd4cf547200f01a992bf67d47c1c519"
   },
   {
     "questionId": "u07-s012-v002",
@@ -354,10 +367,11 @@ export const QUESTIONS = [
       "result": "18≤n≤30",
       "answerIndexVerified": 2
     },
-    "explanation": "至少與最多都包含邊界，且兩條件同時成立，所以 18≤n≤30。",
+    "explanation": "至少十八人表示 n≥18，最多三十人表示 n≤30；兩條規則必須同時成立，所以取交集為 18≤n≤30。兩個端點都包含：十八人已達最低要求，三十人也沒有超過容量，因此不能寫成嚴格不等號。",
     "steps": [
-      "翻譯下界與上界",
-      "取且的交集"
+      "把至少十八人翻譯成下界 n≥18。",
+      "把最多三十人翻譯成上界 n≤30。",
+      "以且取共同範圍，合併成 18≤n≤30 並檢查端點。"
     ],
     "optionAnalysis": [
       {
@@ -381,7 +395,7 @@ export const QUESTIONS = [
         "reason": "錯排除 30。"
       }
     ],
-    "misconceptionTarget": "多重規則連接詞與端點錯誤。",
+    "misconceptionTarget": "把至少或最多的等號漏掉，或用或連接兩個必須同時成立的限制。",
     "prerequisiteCheck": "需理解至少、最多、且。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "單位人。",
@@ -397,7 +411,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "40d96bb011e5b5d8685c02aed4d64e2b4e8d522e4c21504bb3d2f8458e36c0b3"
+    "contentSha256": "1567e4f71cda0e14260226b9462d98d9ecaefc48dd3fd1a8000feb8a4acfb4df"
   },
   {
     "questionId": "u07-s012-v003",
@@ -425,10 +439,11 @@ export const QUESTIONS = [
       "result": "結果超出公式適用範圍，必須改用其他規則",
       "answerIndexVerified": 0
     },
-    "explanation": "公式只適用 x≤5，算得 7 與前提衝突，不能直接使用；應改用 x>5 對應規則再計算。",
+    "explanation": "該公式的前提是 x≤5，但算出的七不滿足 7≤5，因此這個結果與所用分段自相矛盾，不能直接接受，也不能任意改成五。正確做法是查找 x>5 時適用的另一段規則，再重新建立模型與求解。",
     "steps": [
-      "比較答案與適用區間",
-      "拒絕不自洽的分段結果"
+      "把算得的 x=7 代入原公式適用條件 x≤5。",
+      "判定七不在該分段內，因此拒絕這個分段產生的候選答案。",
+      "改用超過五時的規則重新計算，而不是自行截成邊界五。"
     ],
     "optionAnalysis": [
       {
@@ -452,7 +467,7 @@ export const QUESTIONS = [
         "reason": "其他分段可能有解。"
       }
     ],
-    "misconceptionTarget": "只算公式，不檢查分段一致性。",
+    "misconceptionTarget": "只完成公式運算就接受答案，沒有檢查結果是否仍落在公式適用區間。",
     "prerequisiteCheck": "需理解條件範圍。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "無單位。",
@@ -468,7 +483,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4a7d8941c4e7b60bcaba450e8320e41b88ca900f190de2245953f6f20f1e4ea1"
+    "contentSha256": "359822bc72de2aa1888183985996b8412679368edc6da43f650c197690ab0bf1"
   },
   {
     "questionId": "u07-s012-v004",
@@ -496,10 +511,11 @@ export const QUESTIONS = [
       "result": "10",
       "answerIndexVerified": 3
     },
-    "explanation": "80+12x≤200，得 12x≤120，所以 x≤10，最多 10 單位。",
+    "explanation": "方案總費用為 80+12x，預算限制給 80+12x≤200。扣除固定費八十元後，12x≤120，再除以正數十二得 x≤10；用量為完整整數，十單位費用剛好二百元，十一單位需二百一十二元，所以最多十。",
     "steps": [
-      "建立預算式",
-      "解整數上界"
+      "把方案費用與預算合併成 80+12x≤200。",
+      "移去固定費並除以十二，求得 x≤10。",
+      "代入十與十一，確認十可行而十一超支。"
     ],
     "optionAnalysis": [
       {
@@ -523,7 +539,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「10」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "漏固定費或未找最大值。",
+    "misconceptionTarget": "只用二百元除以十二而漏掉固定費，或沒有判斷題目要求最大整數。",
     "prerequisiteCheck": "需會固定費預算。",
     "estimatedTimeSec": "65",
     "unitAndRoundingCheck": "金額元。",
@@ -539,7 +555,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "7e0e6ca93a082f3aa1e46a269f189cc08773744dee32486b13a9af36d72f09f6"
+    "contentSha256": "973562ae181ab567a4d72712704623203bdba4b4e3401b566e1897c285ebed1c"
   },
   {
     "questionId": "u07-s012-v005",
@@ -567,10 +583,11 @@ export const QUESTIONS = [
       "result": "10",
       "answerIndexVerified": 2
     },
-    "explanation": "110+9x≤50+15x，得 60≤6x，所以 x≥10；從 10 單位起。",
+    "explanation": "B 不比 A 貴表示 110+9x≤50+15x。兩邊同減 50+9x，得到 60≤6x，因此 x≥10；在十單位時兩方案都為二百元，九單位時 A 為一百八十五元、B 為一百九十一元，所以確實從十單位起。",
     "steps": [
-      "比較完整總費用",
-      "移項求交叉點"
+      "把不比 A 貴翻譯成 B 的完整總費用不大於 A。",
+      "整理 110+9x≤50+15x，得到 x≥10。",
+      "比較九與十單位的兩方案總價，確認臨界點包含等號。"
     ],
     "optionAnalysis": [
       {
@@ -594,7 +611,7 @@ export const QUESTIONS = [
         "reason": "可行但不是最早。"
       }
     ],
-    "misconceptionTarget": "只比較每單位費，忽略固定費。",
+    "misconceptionTarget": "只看到 B 的單位費較低就立即選 B，忽略 B 較高的固定費與臨界用量。",
     "prerequisiteCheck": "需會兩邊含 x 的不等式。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "金額元。",
@@ -610,7 +627,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ea8fe61f58426a8304d8fef704dc8b2f6650c909f7692a43ffbedbbf350e4259"
+    "contentSha256": "643b2edad9cd2a7b5738087dd9b9566be6029b6bb8b44bcbd22c06b738d69aaf"
   },
   {
     "questionId": "u07-s012-v006",
@@ -638,11 +655,11 @@ export const QUESTIONS = [
       "result": "2 組",
       "answerIndexVerified": 0
     },
-    "explanation": "19+3g≥24 得 g≥5/3，最少整數 2。此時 25 人不超過 40，故 2 組可行。",
+    "explanation": "目前十九人，每組新增三人。要達最低二十四人需 19+3g≥24，得 g≥5÷3，最小整數為二組；新增兩組後共有二十五人，不超過四十人容量，而一組只有二十二人仍不足，所以最少二組且可行。",
     "steps": [
-      "先滿足最低人數",
-      "取最小整數",
-      "檢查容量上限"
+      "由最低開課人數列 19+3g≥24。",
+      "解出 g≥5÷3，依整組招募向上取最小整數二。",
+      "驗算一組未達標、兩組為二十五人且不超過容量四十。"
     ],
     "optionAnalysis": [
       {
@@ -666,7 +683,7 @@ export const QUESTIONS = [
         "reason": "新增後 43 人超容量。"
       }
     ],
-    "misconceptionTarget": "只解最低需求或只看容量，未同時驗證。",
+    "misconceptionTarget": "只滿足最低人數卻未檢查容量，或把一點多組錯誤向下取成一組。",
     "prerequisiteCheck": "需會固定量與且。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "單位人、組；每組 3 人。",
@@ -682,7 +699,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "094364e589123aa937cd4fdbc5e05ce2fd97f53f760d26fb24905209318ba177"
+    "contentSha256": "f71c588efa602e518fc9bf329b7ed8f31733dc193cb10bf3bbf5b44513d03d00"
   },
   {
     "questionId": "u07-s012-v007",
@@ -710,11 +727,11 @@ export const QUESTIONS = [
       "result": "9 公里",
       "answerIndexVerified": 3
     },
-    "explanation": "若 d>3，費用 90+25(d−3)≤240。得 25(d−3)≤150，所以 d−3≤6，d≤9；最多 9 公里。",
+    "explanation": "超過三公里後，前段九十元已包含前三公里，只對超出的 d−3 公里加費。因此 90+25(d−3)≤240，得 d−3≤6，所以 d≤9；九公里費二百四十元，十公里費二百六十五元，最多九公里且仍在第二段。",
     "steps": [
-      "選擇超過 3 公里的分段公式",
-      "解距離上界",
-      "檢查結果仍 >3"
+      "辨認答案會超過三公里，選用第二段費用公式。",
+      "列 90+25(d−3)≤240，解得 d≤9。",
+      "驗算九公里剛好符合、十公里超支，且九公里確實大於三。"
     ],
     "optionAnalysis": [
       {
@@ -738,7 +755,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「9 公里」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把 25d 直接加在 90 上，重複計費前 3 公里。",
+    "misconceptionTarget": "把每公里二十五元乘全部里程再加九十元，重複計收前三公里。",
     "prerequisiteCheck": "需會分段式與括號。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "金額元、距離公里。",
@@ -754,7 +771,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1f74a9a16aeceb88088d63c5e7d69523d3fba6a3cb94765dbdd33bca198707e5"
+    "contentSha256": "1b631c8d936f35cba494e9bd8b09ab3ad1a7eade42d806c1c5988cb7a135388f"
   },
   {
     "questionId": "u07-s012-v008",
@@ -782,11 +799,11 @@ export const QUESTIONS = [
       "result": "120 度",
       "answerIndexVerified": 1
     },
-    "explanation": "前 100 度費 200 元，剩 60 元可付超額，每度 3 元，可再用 20 度，所以最多 120 度。",
+    "explanation": "前一百度先按每度二元計費，共二百元；預算還剩六十元。超過一百度的部分每度三元，所以可再用 60÷3=20 度，總量為一百二十度；再多一度要二百六十三元，故最大值正確。",
     "steps": [
-      "算前段固定累積費",
-      "用剩餘預算算第二段",
-      "合併用量"
+      "先算前一百度的累積費用為二百元。",
+      "用剩餘六十元除以第二段單價三元，得到二十度超額量。",
+      "把兩段用量相加為一百二十度，再檢查下一度會超支。"
     ],
     "optionAnalysis": [
       {
@@ -810,7 +827,7 @@ export const QUESTIONS = [
         "reason": "未用完預算。"
       }
     ],
-    "misconceptionTarget": "把所有度數都用第二段費率或忽略前段累積。",
+    "misconceptionTarget": "把所有用電量都套第二段費率，或算出超額二十度後忘記加回前一百度。",
     "prerequisiteCheck": "需會分段累積。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "金額元、用量度。",
@@ -826,7 +843,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ab92a8d634cad9d9562a516619da2c32e433b978cee9949e24192530755ecdd6"
+    "contentSha256": "0868035f9d22485ce947a958dde52d1e169a60f093f02a720a580bbf6b14f9b9"
   },
   {
     "questionId": "u07-s012-v009",
@@ -854,11 +871,11 @@ export const QUESTIONS = [
       "result": "5≤n≤6",
       "answerIndexVerified": 0
     },
-    "explanation": "45+22n≤180 得 22n≤135，n≤6.13…，整數 n≤6。與 n≥5 取交集，得 5≤n≤6。",
+    "explanation": "時間限制為 45+22n≤180，化簡得 n≤135÷22，約為 6.13；整數單元數至多六個。再與至少五個單元的 n≥5 取交集，得到 5≤n≤6；五、六個都可行，七個則需一百九十九分鐘而超時。",
     "steps": [
-      "求時間上界",
-      "加入最低單元數",
-      "取整數交集"
+      "由固定流程與每單元時間列出 45+22n≤180。",
+      "解得整數上界六個單元。",
+      "與 n≥5 取交集，並以七個單元總時間驗證上界。"
     ],
     "optionAnalysis": [
       {
@@ -882,7 +899,7 @@ export const QUESTIONS = [
         "reason": "5、6 均可行。"
       }
     ],
-    "misconceptionTarget": "只解其中一個限制或錯誤取整。",
+    "misconceptionTarget": "只列時間上限而漏掉至少五個單元，或把六點多向上取成七。",
     "prerequisiteCheck": "需會固定時間模型與且。",
     "estimatedTimeSec": "110",
     "unitAndRoundingCheck": "時間均為分鐘。",
@@ -898,7 +915,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "0f15c78ee1aa6137fa620c20fbd1304a11da2788c16fe4ea9bbb23a3660b9e39"
+    "contentSha256": "3b4d176200895a68fdffa20e44af39ed5adcbb0a2a42648311ffd367a0235d10"
   },
   {
     "questionId": "u07-s012-v010",
@@ -926,11 +943,11 @@ export const QUESTIONS = [
       "result": "6 GB",
       "answerIndexVerified": 3
     },
-    "explanation": "319+20g≤199+40g，得 120≤20g，所以 g≥6；至少 6 GB。",
+    "explanation": "B 的總費用不高於 A 應列 319+20g≤199+40g。整理得 120≤20g，所以 g≥6；六 GB 時兩方案都為四百三十九元，五 GB 時 B 為四百一十九元而 A 為三百九十九元，故至少六 GB 才成立。",
     "steps": [
-      "比較完整費用",
-      "求臨界用量",
-      "檢查等號"
+      "以相同用量 g 寫出兩個方案的完整總費用。",
+      "解 319+20g≤199+40g，得到 g≥6。",
+      "代入五與六 GB 比較總價，確認等號臨界值包含六。"
     ],
     "optionAnalysis": [
       {
@@ -954,7 +971,7 @@ export const QUESTIONS = [
         "reason": "正確，6 GB 兩者皆 439。"
       }
     ],
-    "misconceptionTarget": "只看 B 每 GB 較便宜就立即選 B。",
+    "misconceptionTarget": "只比較每 GB 單價，忽略較高月租需要足夠用量才能抵銷。",
     "prerequisiteCheck": "需會兩邊有未知數的移項。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "金額元、流量 GB。",
@@ -970,7 +987,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "fa6d83ff437f58d50297a2114a208dea5f539a1cc366e6060674973d11625348"
+    "contentSha256": "6b3b53790b42f857f6dce05091f4762f5d666d4ece9bce582e299f3eef55b563"
   },
   {
     "questionId": "u07-s012-v011",
@@ -998,10 +1015,11 @@ export const QUESTIONS = [
       "result": "4 趟",
       "answerIndexVerified": 1
     },
-    "explanation": "365+28t≤500，得 28t≤135，t≤4.82…；完整趟數最多 4。",
+    "explanation": "倉庫剩餘容量為 500−365=135 箱，每趟必須整車卸下二十八箱。由 365+28t≤500 得 t≤135÷28，約為 4.82；四趟送一百一十二箱可收，五趟送一百四十箱超過剩餘容量，故最多四趟。",
     "steps": [
-      "建立容量上限",
-      "取最大完整趟數"
+      "用總容量減現有箱數，求得剩餘一百三十五箱。",
+      "列 28t≤135，得到趟數上界約為 4.82。",
+      "依完整趟數向下取四，並驗算第五趟會超過容量。"
     ],
     "optionAnalysis": [
       {
@@ -1025,7 +1043,7 @@ export const QUESTIONS = [
         "reason": "選項「6 趟」更超量。，與獨立解得的「4 趟」不一致。"
       }
     ],
-    "misconceptionTarget": "把 4.82 四捨五入為 5，忽略整車卸下。",
+    "misconceptionTarget": "把四點八二四捨五入成五趟，忽略最後一趟也必須完整卸下。",
     "prerequisiteCheck": "需會容量模型與取整。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "單位箱、趟；每趟 28 箱。",
@@ -1041,7 +1059,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e12bae07a3e898fbfe6d8d9a7b358831c96a74dc4e90c1a75e6020da03242938"
+    "contentSha256": "4e87e0a593b8cfa495ff6d474b0456ebbb2e2c27773e8981a2780c0376da58a3"
   },
   {
     "questionId": "u07-s012-v012",
@@ -1069,11 +1087,11 @@ export const QUESTIONS = [
       "result": "4 小時",
       "answerIndexVerified": 2
     },
-    "explanation": "前 2 小時 100 元，剩 140 元可買 4 個半小時時段，共再 2 小時，所以最多 4 小時。答案為 4 小時。",
+    "explanation": "前兩小時先付一百元，預算剩一百四十元；每個完整半小時三十五元，恰可買四個時段，也就是額外兩小時。加回原先兩小時得總共四小時；下一個半小時需二百七十五元，因此最多四小時。",
     "steps": [
-      "扣除前段費用",
-      "計算額外時段數",
-      "換成總小時"
+      "先扣除前兩小時的一百元固定費用。",
+      "以剩餘一百四十元除三十五，得到四個完整半小時。",
+      "把四個半小時換成兩小時並加回前段，再驗算下一時段。"
     ],
     "optionAnalysis": [
       {
@@ -1097,7 +1115,7 @@ export const QUESTIONS = [
         "reason": "4.5 小時需 5 個額外時段共 275 元。"
       }
     ],
-    "misconceptionTarget": "時段換算或正確選項索引錯誤。",
+    "misconceptionTarget": "把半小時時段誤當整小時，或忘記把超額時間加回原有兩小時。",
     "prerequisiteCheck": "需會分段、整數時段與時間換算。",
     "estimatedTimeSec": "115",
     "unitAndRoundingCheck": "35 元／30 分鐘；4 個時段=2 小時。",
@@ -1113,7 +1131,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "bdad10b8642c9c9f2e838b6e9576d3f2cb75dfcc15aad490828f36379d75b15d"
+    "contentSha256": "b5960f62ae00afbb3e2167d640e3581bb28aec8f689c4f3f7d6f191f35acfb27"
   }
 ];
 
@@ -1134,20 +1152,19 @@ export const CONSTRUCTED_RESPONSES = [
       "檢查下一時段"
     ],
     "fullCreditSolution": [
-      "360 元足以支付前 2 小時，因此使用第二段規則。",
-      "剩餘 360−120=240 元，可支付 240÷40=6 個完整 30 分鐘。",
-      "6 個半小時為 3 小時，加前 2 小時，共 5 小時。",
-      "5 小時費用 120+6×40=360；5.5 小時需 7 個時段，費用 400，超支。"
+      "小美的三百六十元足以支付前兩小時一百二十元，因此最大使用時間必須檢查超過兩小時的第二段規則。",
+      "設超過前段的完整半小時時段數為 n，可列 120+40n≤360，解得 n≤6；所以最多六個完整半小時。",
+      "六個半小時合計三小時，加回前兩小時，總使用時間為五小時。",
+      "五小時的費用是 120+6×40=360 元；五點五小時需七個加價時段，共四百元，故最多五小時。"
     ],
     "alternativeMethod": [
       "可設超額半小時時段數 n：120+40n≤360，得 n≤6，再用總時間 2+0.5n。"
     ],
     "reasoningSteps": [
-      "選擇正確分段",
-      "處理固定前段費",
-      "離散時段取整",
-      "單位換算",
-      "相鄰邊界驗證"
+      "先用預算與前段價格判斷答案落在超過兩小時的分段。",
+      "扣除前段費用，求可支付的完整三十分鐘時段數。",
+      "把六個半小時換算為三小時，再加回前段兩小時。",
+      "比較五小時與下一個五點五小時的費用，驗證唯一最大值。"
     ],
     "rubric": [
       {
@@ -1172,8 +1189,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "金額元、時間小時；30 分鐘=0.5 小時。最終寫 5 小時。",
     "answerOnlyPolicy": "只寫 5 小時，最多 1 分。",
     "commonErrors": [
-      "把每 30 分鐘誤當每小時",
-      "超額時間未加回前 2 小時"
+      "把每三十分鐘加收四十元誤讀成每一小時才加收四十元。",
+      "算出六個半小時後直接回答三小時，忘記加回前段兩小時。",
+      "將全部三百六十元直接除以四十，重複忽略前段收費規則。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1186,7 +1204,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d308e602bf2ee4cfca42767b02e1cde34368ed9f142fbd598409c71555b60091"
+    "contentSha256": "79db9aaed005eb8a5109c8d2e6dc6fe79b5b2bb27670de9f9c53338bd8bbc7f0"
   },
   {
     "questionId": "u07-s012-cr002",
@@ -1204,19 +1222,19 @@ export const CONSTRUCTED_RESPONSES = [
       "代入 10 組驗證"
     ],
     "fullCreditSolution": [
-      "容量限制為 18+6g≤72，故 6g≤54，g≤9。",
-      "成行限制為 g≥7。",
-      "兩條件同時成立，所以 7≤g≤9，且 g 為整數。",
-      "10 組時總人數 18+60=78>72，因此不能安排。"
+      "容量限制必須包含十八位工作人員，故 18+6g≤72。化簡得 6g≤54，所以 g≤9。",
+      "成行條件是至少七組，因此另有 g≥7，而且 g 必須是整數。",
+      "兩個限制同時成立，取交集得到 7≤g≤9，也就是可安排七、八或九組。",
+      "若安排十組，總人數為 18+6×10=78 人，超過七十二人的容量，所以十組不可行。"
     ],
     "alternativeMethod": [
       "也可先算參加者容量 72−18=54，人數可容納 54÷6=9 組，再與至少 7 組合併。"
     ],
     "reasoningSteps": [
-      "從資料擷取固定人數與每組人數",
-      "求最大組數",
-      "加入最低需求",
-      "判斷特定方案"
+      "從題目擷取固定工作人員、每組人數與場地容量。",
+      "建立容量不等式並求出最多九組。",
+      "加入至少七組的下界，以且取整數交集。",
+      "將十組代回總人數，明確判斷其超過容量。"
     ],
     "rubric": [
       {
@@ -1241,8 +1259,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "g 的單位為組且為非負整數；人數單位為人。",
     "answerOnlyPolicy": "只回答「不能 10 組」而無範圍，最多 1 分。",
     "commonErrors": [
-      "忽略 18 位工作人員",
-      "把至少成行條件當成可選條件"
+      "只用七十二除以每組六人，完全忽略十八位工作人員也占容量。",
+      "把至少七組誤寫成 g≤7，導致下界方向顛倒。",
+      "分別得到上下界後用或連接，沒有取同時成立的共同範圍。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1255,7 +1274,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "35fc69dbce8dfb39c72221c1486c0b75774509584558378d16b0dfa5de6b687b"
+    "contentSha256": "db13face357bb4ccf4e9b3dc036c2d6591c13f31d0d0197f73f2371473bf7f05"
   }
 ];
 
@@ -1266,7 +1285,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "18020fc14292f4580f90d7550a4268106857a2022f87e167afbb61cf2e70fe92",
+    "contentSha256": "7db27522c008aec64f383bc80ae669912dd4cf547200f01a992bf67d47c1c519",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "當 x=0 時仍應付 100，只有 100+20x 保留固定費；每增加 1 單位增加 20，也符合。",
@@ -1298,7 +1317,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "40d96bb011e5b5d8685c02aed4d64e2b4e8d522e4c21504bb3d2f8458e36c0b3",
+    "contentSha256": "1567e4f71cda0e14260226b9462d98d9ecaefc48dd3fd1a8000feb8a4acfb4df",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "n≥18 且 n≤30，合併成 18≤n≤30。",
@@ -1330,7 +1349,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "4a7d8941c4e7b60bcaba450e8320e41b88ca900f190de2245953f6f20f1e4ea1",
+    "contentSha256": "359822bc72de2aa1888183985996b8412679368edc6da43f650c197690ab0bf1",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "代入適用條件：7≤5 為假，所以用該公式得到的 7 不能作為最終答案；需查看另一段規則。",
@@ -1362,7 +1381,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "7e0e6ca93a082f3aa1e46a269f189cc08773744dee32486b13a9af36d72f09f6",
+    "contentSha256": "973562ae181ab567a4d72712704623203bdba4b4e3401b566e1897c285ebed1c",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "可用變動費 120 元，每單位 12 元，120÷12=10。",
@@ -1394,7 +1413,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "ea8fe61f58426a8304d8fef704dc8b2f6650c909f7692a43ffbedbbf350e4259",
+    "contentSha256": "643b2edad9cd2a7b5738087dd9b9566be6029b6bb8b44bcbd22c06b738d69aaf",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "B−A=(110−50)+(9−15)x=60−6x。要求 B−A≤0，即 x≥10。",
@@ -1426,7 +1445,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "094364e589123aa937cd4fdbc5e05ce2fd97f53f760d26fb24905209318ba177",
+    "contentSha256": "f71c588efa602e518fc9bf329b7ed8f31733dc193cb10bf3bbf5b44513d03d00",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "還差 5 人；一組 3 人不夠，兩組增 6 人到 25，且 25≤40，所以最少 2 組。",
@@ -1458,7 +1477,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "1f74a9a16aeceb88088d63c5e7d69523d3fba6a3cb94765dbdd33bca198707e5",
+    "contentSha256": "1b631c8d936f35cba494e9bd8b09ab3ad1a7eade42d806c1c5988cb7a135388f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "超額里程可花 240−90=150 元，每公里 25，可多搭 6 公里；加前 3 公里共 9。",
@@ -1490,7 +1509,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "ab92a8d634cad9d9562a516619da2c32e433b978cee9949e24192530755ecdd6",
+    "contentSha256": "0868035f9d22485ce947a958dde52d1e169a60f093f02a720a580bbf6b14f9b9",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "100 度先花 200；剩 60 能買 60÷3=20 度超額量，總用量 120。",
@@ -1522,7 +1541,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "0f15c78ee1aa6137fa620c20fbd1304a11da2788c16fe4ea9bbb23a3660b9e39",
+    "contentSha256": "3b4d176200895a68fdffa20e44af39ed5adcbb0a2a42648311ffd367a0235d10",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "最多 floor((180−45)/22)=floor(135/22)=6；至少 5，所以 n 只能 5 或 6。",
@@ -1554,7 +1573,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "fa6d83ff437f58d50297a2114a208dea5f539a1cc366e6060674973d11625348",
+    "contentSha256": "6b3b53790b42f857f6dce05091f4762f5d666d4ece9bce582e299f3eef55b563",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "B比A多固定費 120，但每 GB 省 20；需 120÷20=6 GB 才抵銷，之後 B 不高於 A。",
@@ -1586,7 +1605,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "e12bae07a3e898fbfe6d8d9a7b358831c96a74dc4e90c1a75e6020da03242938",
+    "contentSha256": "4e87e0a593b8cfa495ff6d474b0456ebbb2e2c27773e8981a2780c0376da58a3",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "剩餘容量 135 箱；4 趟送 112，仍可收；5 趟送 140，超過 135。因此最多 4 趟。",
@@ -1618,7 +1637,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-literacy",
     "skillId": "inequality-literacy",
-    "contentSha256": "bdad10b8642c9c9f2e838b6e9576d3f2cb75dfcc15aad490828f36379d75b15d",
+    "contentSha256": "b5960f62ae00afbb3e2167d640e3581bb28aec8f689c4f3f7d6f191f35acfb27",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "240−100=140，140÷35=4 個額外半小時，共 2 小時；加原 2 小時得 4 小時。",

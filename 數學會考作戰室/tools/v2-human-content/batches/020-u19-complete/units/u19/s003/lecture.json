@@ -114,6 +114,11 @@
       "step": 4,
       "instruction": "解方程並檢查角度介於 0° 與 180°。",
       "check": "完成此步後，確認仍在「圓內接四邊形」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "遇到外角時先找相鄰內角，再用對角互補建立外角等於內對角。",
+      "check": "外角、相鄰內角與內對角的頂點是否辨認正確？"
     }
   ],
   "workedExamples": [
@@ -125,7 +130,8 @@
         "180°−72°=108°。"
       ],
       "answer": "108°。",
-      "level": "basic"
+      "level": "basic",
+      "why": "A、C 是依序內接四邊形中不共邊的一組對角，兩角必互補；因此從 180° 減 72° 得 108°，而不是把相鄰角誤當成指定對角。"
     },
     {
       "exampleId": "s003-L2",
@@ -135,7 +141,8 @@
         "180°−95°=85°。"
       ],
       "answer": "85°。",
-      "level": "standard"
+      "level": "standard",
+      "why": "在頂點順序 A、B、C、D 中，B 與 D 相隔一個頂點而互為對角；內接四邊形對角和為 180°，所以 95° 的補角 85° 就是角 D，相鄰的 A、C 並非所求配對。"
     },
     {
       "exampleId": "s003-L3",
@@ -145,7 +152,8 @@
         "5x+30=180，x=30。"
       ],
       "answer": "x=30。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "兩個代數角分別位於 A、C，必須先列 3x+10+2x+20=180；解得 x=30 後，兩角為 100° 與 80°，回代總和正好 180°。兩個結果都是合法內角，且彼此確實互補。"
     },
     {
       "exampleId": "s003-L4",
@@ -155,7 +163,8 @@
         "∠C 也與 ∠A 互補。"
       ],
       "answer": "∠C=112°。",
-      "level": "connection"
+      "level": "connection",
+      "why": "A 點外角與內角 A 互補，而內角 C 也與 A 互補；同一個角的補角相等，所以外角 112° 直接等於內對角 C，而非等於內角 A。"
     }
   ],
   "difficultyConnections": {
@@ -205,7 +214,7 @@
     {
       "figureId": "u19-s003-fig001",
       "purpose": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示。",
-      "altText": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示。，不可按比例目測。"
+      "altText": "四點 A、B、C、D 位於同一圓周並依序連線，對角 A 與 C 以弧線標示，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -240,5 +249,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "6d2e69f9c21d45065cbd87df596e48f66f2bb1338e4c9ea761815fa6b0c46114"
+  "contentSha256": "dbaa386cea5290c82287268fd69a371c45556efab682b727f76cf8739440a3b1"
 }

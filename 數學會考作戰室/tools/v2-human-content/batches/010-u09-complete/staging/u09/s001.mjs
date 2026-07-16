@@ -59,7 +59,8 @@ export default {
       "同一個 20 可能是 20 人、20 元或 20%，意義由單位決定。",
       "總計列是檢查工具，不是一定可信；原始列加總後應與總計一致。",
       "比較資料前要確認觀察期間、單位與分母相同。",
-      "腳註常決定能否公平比較，例如月份天數不同就不能直接用總量代表每日量。"
+      "腳註常決定能否公平比較，例如月份天數不同就不能直接用總量代表每日量。",
+      "完整判讀資料表時，先用表名界定資料主題，再把列標題、欄標題與單位組成每個數值的完整名稱；若題目要求比較、補缺值或檢查摘要，還要確認所選資料來自相同期間與相同分母，並用總計或逆運算回查。這套流程能避免沿錯列、混用單位、重複加入總計，以及把腳註所揭示的天數差異忽略掉。"
     ],
     "definitions": [
       {
@@ -125,9 +126,10 @@ export default {
         "prompt": "A 線 24 公里票價 36 元，B 線 30 公里票價 42 元，哪線較長？",
         "solution": [
           "先依欄位把 24、30 解讀為公里數。",
-          "30>24，所以 B 線較長 6 公里。"
+          "30＞24，所以 B 線較長 6 公里。"
         ],
-        "answer": "B 線，長 6 公里。"
+        "answer": "B 線，長 6 公里。",
+        "why": "每列同時有公里數與票價，若只看數字而不看欄名，就可能拿二十四元和三十元比較。先鎖定全程公里數欄，再以三十減二十四，才能讓比較對象與六公里的單位一致。"
       },
       {
         "id": "L2",
@@ -136,16 +138,18 @@ export default {
           "剩餘＝原有－售出。",
           "80－27＝53。"
         ],
-        "answer": "53 枝。"
+        "answer": "53 枝。",
+        "why": "空格位於剩餘欄，表示要由原有量扣除已流出的售出量，而不是把兩欄相加。五十三枝加回二十七枝正好恢復八十枝，這項逆運算可同時核對數值與欄位關係。"
       },
       {
         "id": "L3",
         "prompt": "四次測量 12.4、12.6、12.5、12.5，摘要寫平均 12.8。",
         "solution": [
           "原始資料總和 50.0。",
-          "50.0÷4=12.5，摘要列不一致。"
+          "50.0÷4＝12.5，摘要列不一致。"
         ],
-        "answer": "正確平均 12.5。"
+        "answer": "正確平均 12.5。",
+        "why": "摘要列是由原始資料計算出的結論，不應被視為第五筆測量或無條件相信。把四筆數值重新相加並除以四，所得十二點五與摘要十二點八不同，因此可確定摘要抄錄有誤。"
       }
     ],
     "commonMistakes": [
@@ -222,7 +226,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "376497afd756b1eb6d3f2ea8c932be92da7afbd21bde15044234fb5b5750ccbd"
+    "contentSha256": "a571d0e5a28af28264a7b340fcae77ecbed83ca9ddc9d1cccdef1090782d2bac"
   },
   "mcQuestions": [
     {
@@ -250,10 +254,11 @@ export default {
         "derivedAnswer": "5 本",
         "trustStoredAnswer": false
       },
-      "explanation": "資料表要先對準列標題與欄標題；乙對應的數值是 5。",
+      "explanation": "資料表要先對準列標題與欄標題；乙對應的數值是 5。 題目只問乙的借書本數，沿乙列與借書欄交會處讀得五本；甲、丙、丁的數字分屬其他列，不能因排列較前就選取。",
       "steps": [
         "確認列標題是學生姓名。",
-        "沿乙所在列讀到借書本數 5。"
+        "沿乙所在列讀到借書本數 5。",
+        "將答案五本放回乙列核對，確認姓名、數值與單位完全對應。"
       ],
       "optionAnalysis": [
         {
@@ -277,7 +282,7 @@ export default {
           "reason": "4 是丁的資料。"
         }
       ],
-      "misconceptionTarget": "看見第一個數就作答",
+      "misconceptionTarget": "看見第一個數就作答 未同時對準學生列與借書欄，讀成相鄰學生的資料。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -293,7 +298,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0fb07e0920e35c29effd9b053a61fd94563f1460f456c02a4e4590796cb67636"
+      "contentSha256": "f950c102c875b3a9ed965a5618978b1cfc12857b9e35ffe030781a447102d106"
     },
     {
       "questionId": "u09-s001-v002",
@@ -320,7 +325,7 @@ export default {
         "derivedAnswer": "星期四",
         "trustStoredAnswer": false
       },
-      "explanation": "判讀表格時，最大數值與其列標籤必須一起回答。",
+      "explanation": "判讀表格時，最大數值與其列標籤必須一起回答。 五天人數依序是二、三、二、四、三，最大值四只出現在星期四；答案須回到該數值的日期標籤，而不是只寫四人。",
       "steps": [
         "列出各日人數。",
         "找最大值 4。",
@@ -348,7 +353,7 @@ export default {
           "reason": "星期五為 3 人，小於 4。"
         }
       ],
-      "misconceptionTarget": "只寫最大值而忘記類別",
+      "misconceptionTarget": "只寫最大值而忘記類別 找到最大數值後沒有回讀日期標籤，或把相同的三人列當最大。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -364,7 +369,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "99415e148ba7fb36460a4685f12ddcf769397535fc515e8837880a3ba8ab1028"
+      "contentSha256": "d720be13e7a11dfed19d870e08fe3f812806032b905b18d9b0e34f3c4573aaa0"
     },
     {
       "questionId": "u09-s001-v003",
@@ -391,7 +396,7 @@ export default {
         "derivedAnswer": "65 杯",
         "trustStoredAnswer": false
       },
-      "explanation": "表中沒有總計列時，應確認每一類都只加一次。",
+      "explanation": "表中沒有總計列時，應確認每一類都只加一次。 四種飲料互不重疊，總杯數要把十八、十五、二十二、十各加一次，得到六十五；結果大於任何單項且未把總計重複納入。",
       "steps": [
         "核對四個品項。",
         "依序加總。",
@@ -419,7 +424,7 @@ export default {
           "reason": "把其中一項重複計入。"
         }
       ],
-      "misconceptionTarget": "漏加或重複加一列",
+      "misconceptionTarget": "漏加或重複加一列 加總時漏掉果茶或重複計入奶茶，沒有逐類勾選已使用資料。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -435,7 +440,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "6c24b9de2abf1c269ad09cc0d52db32b42871b01cf37bf77ca60fdf141e32746"
+      "contentSha256": "86e4f8451eeb4cc27fd454e9a73fec68e1ea03d8c5a29b3602a3a995c43400c3"
     },
     {
       "questionId": "u09-s001-v004",
@@ -462,7 +467,7 @@ export default {
         "derivedAnswer": "9°C",
         "trustStoredAnswer": false
       },
-      "explanation": "「高多少」求差，不是求和；要先選對兩個時點。",
+      "explanation": "「高多少」求差，不是求和；要先選對兩個時點。 十二時的二十七度是比較終值，八時的十八度是基準值，以終值減基準值才得到升高九度；兩溫度相加沒有溫差意義。",
       "steps": [
         "定位 12 時與 8 時。",
         "用較高值減較低值。",
@@ -490,7 +495,7 @@ export default {
           "reason": "27-18=9°C。"
         }
       ],
-      "misconceptionTarget": "把「高多少」誤算為相加",
+      "misconceptionTarget": "把「高多少」誤算為相加 把升高多少誤解成兩時刻溫度總和，或顛倒相減得到負值。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -506,7 +511,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d45d810e31117ce1728876ad13d516c9041409278cc3690b0bfc1608a072e3a5"
+      "contentSha256": "78c282ac7b78f155b7cb2bc4d4ce413999d68fcde88945c7d17d8b08239adea0"
     },
     {
       "questionId": "u09-s001-v005",
@@ -533,7 +538,7 @@ export default {
         "derivedAnswer": "53 枝",
         "trustStoredAnswer": false
       },
-      "explanation": "空格的位置由欄標題「剩餘」決定應做減法。",
+      "explanation": "空格的位置由欄標題「剩餘」決定應做減法。 剩餘量是原有庫存扣除已售數量，八十減二十七為五十三；再驗算五十三加二十七回到八十，證明欄位關係一致。",
       "steps": [
         "讀懂三欄關係。",
         "以 80 減 27。",
@@ -561,7 +566,7 @@ export default {
           "reason": "減法計算錯誤。"
         }
       ],
-      "misconceptionTarget": "不看欄意義而任意相加",
+      "misconceptionTarget": "不看欄意義而任意相加 未讀剩餘欄的意義而把原有與售出相加，得到不可能超過原有的庫存。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -577,7 +582,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e2acae7f8452d6660f65bf08ebdcb96a22d6cf79380fd7fd60f1b4abce723806"
+      "contentSha256": "98c03ece295369192de35381f6148feb7c4b1e75a2b8fcbf9dc4cf8f2683deec"
     },
     {
       "questionId": "u09-s001-v006",
@@ -604,7 +609,7 @@ export default {
         "derivedAnswer": "B 線比 A 線長 6 公里",
         "trustStoredAnswer": false
       },
-      "explanation": "沒有格線時更要依欄位標題確認數字的意義。",
+      "explanation": "沒有格線時更要依欄位標題確認數字的意義。 欄位順序使二十四、三十都代表公里數，三十減二十四為六公里；三十與二十四不是票價，兩票價四十二與三十六也只差六元。",
       "steps": [
         "重建每列兩個欄位。",
         "分別檢查四個敘述。",
@@ -632,7 +637,7 @@ export default {
           "reason": "42-36=6 元，不是 12 元。"
         }
       ],
-      "misconceptionTarget": "把同列第一個數當票價",
+      "misconceptionTarget": "把同列第一個數當票價 忽略欄位順序，把每列第一個數誤讀成票價或跨欄相減。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -648,7 +653,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "162f47e96c8535773faaa4c8ccb650344796b28092435b9ebd7bf887ff3c2471"
+      "contentSha256": "a2b71b88b8d6bd808ac869e121722ba52a255b59e61fcab760d54f60dc6ec273"
     },
     {
       "questionId": "u09-s001-v007",
@@ -675,7 +680,7 @@ export default {
         "derivedAnswer": "平均列可能抄錯，因四次平均是 12.5 公分",
         "trustStoredAnswer": false
       },
-      "explanation": "判讀資料表也包含檢查摘要列是否與資料一致。",
+      "explanation": "判讀資料表也包含檢查摘要列是否與資料一致。 四筆原始值相加為五十，除以四得到十二點五；摘要十二點八不是原始測量，也不能拿來當最大值或再加入平均計算。",
       "steps": [
         "只取四次原始測量。",
         "重新計算平均。",
@@ -703,7 +708,7 @@ export default {
           "reason": "12.8 是摘要列，不是一次測量值。"
         }
       ],
-      "misconceptionTarget": "盲目信任表格摘要",
+      "misconceptionTarget": "盲目信任表格摘要 把摘要列視為不可質疑的原始資料，沒有用四筆測量重新驗證平均。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -719,7 +724,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7f98cc230c8b62f5f498eec5721232eca918b6c7b2415764ff1ec05d70fc46f0"
+      "contentSha256": "8c28b06a2709beee34693ef1f2d998715f6b2806dc9a9fb9c6482d28725ba674"
     },
     {
       "questionId": "u09-s001-v008",
@@ -746,7 +751,7 @@ export default {
         "derivedAnswer": "三天總來客數兩店相同",
         "trustStoredAnswer": false
       },
-      "explanation": "比較多列資料時不能只看單日，敘述「三天總數」要完整加總。",
+      "explanation": "比較多列資料時不能只看單日，敘述「三天總數」要完整加總。 甲店三日合計一百五十，乙店三日也合計一百五十；逐日高低雖不同，題目所述的三天總數仍完全相同，其他敘述可由單日數值排除。",
       "steps": [
         "辨識敘述所需範圍。",
         "計算兩店三日總數。",
@@ -774,7 +779,7 @@ export default {
           "reason": "甲總數 150，乙總數也 150。"
         }
       ],
-      "misconceptionTarget": "以單一天的大小代替整體比較",
+      "misconceptionTarget": "以單一天的大小代替整體比較 只挑某一天比較大小，便把局部高低錯當三日合計的整體結論。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -790,7 +795,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f6c0cec6a95c77f9ce05031878ea21bf349e95fb1badbc0aadc53debb81b046d"
+      "contentSha256": "21465dd953a74790b4f258c584283a7a668fe122914d643f2372b22159ae4fec"
     },
     {
       "questionId": "u09-s001-v009",
@@ -817,7 +822,7 @@ export default {
         "derivedAnswer": "85",
         "trustStoredAnswer": false
       },
-      "explanation": "利用總計列回推缺值時，要先加已知項，再由總數扣除。",
+      "explanation": "利用總計列回推缺值時，要先加已知項，再由總數扣除。 四個已知分數七十二、八十八、九十一、七十九合計三百三十，以總分四百一十五扣除後得到八十五；代回五人總分正好吻合。",
       "steps": [
         "加總已知四項得 330。",
         "以總分 415 減 330。",
@@ -845,7 +850,7 @@ export default {
           "reason": "若為 95，總分會是 425。"
         }
       ],
-      "misconceptionTarget": "把總分除以人數當成缺值",
+      "misconceptionTarget": "把總分除以人數當成缺值 把總分直接除以五當缺值，混淆全班平均與單一學生分數。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -861,7 +866,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "fc87b696f8a858e957f1b189911949a5e94bce2f658f24b15cb058985440b5fe"
+      "contentSha256": "5809723611bee2db826ed8b62b9611a9d750e226b4f122b70203f7412ac488a7"
     },
     {
       "questionId": "u09-s001-v010",
@@ -888,7 +893,7 @@ export default {
         "derivedAnswer": "各月用水量分別除以該月天數再比較",
         "trustStoredAnswer": false
       },
-      "explanation": "備註中的天數是必要條件，決定合理的標準化方式。",
+      "explanation": "備註中的天數是必要條件，決定合理的標準化方式。 各月天數不同，總用水量不能直接代表每日用量；一月與三月各除三十一日，二月除二十八日，所得商才具有相同的每日基準。",
       "steps": [
         "辨認比較目標是每日。",
         "讀取各月天數備註。",
@@ -916,7 +921,7 @@ export default {
           "reason": "忽略 2 月不能回答三月比較。"
         }
       ],
-      "misconceptionTarget": "忽略腳註而直接比較總量",
+      "misconceptionTarget": "忽略腳註而直接比較總量 忽略二月天數註記，直接以月總量或統一除以三十日比較。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -932,7 +937,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "01a7ba4cbcd08fbd2119e22a6049bb37a464180e44671253604b8f8b02cc3383"
+      "contentSha256": "e99cc3f0bbd9ecadc1eaeae2fce850bae121087bb28fee9a212930d1b6769f02"
     },
     {
       "questionId": "u09-s001-v011",
@@ -959,7 +964,7 @@ export default {
         "derivedAnswer": "30 人",
         "trustStoredAnswer": false
       },
-      "explanation": "欄位名稱描述人流方向；必須先加上車、再減下車。",
+      "explanation": "欄位名稱描述人流方向；必須先加上車、再減下車。 站前二十六人是起始量，上車七人使人數增加，下車三人使人數減少，因此站後為三十人；以三十減七再加三也能回到站前量。",
       "steps": [
         "讀出站前基準 26。",
         "加入上車 7。",
@@ -987,7 +992,7 @@ export default {
           "reason": "把上車與下車都加上。"
         }
       ],
-      "misconceptionTarget": "不辨認流入與流出方向",
+      "misconceptionTarget": "不辨認流入與流出方向 沒有分辨上車是流入、下車是流出，把兩個人數都加上或都減去。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -1003,7 +1008,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1d158f5b2950c7606237d3c3324004113a23d4b06ed35765ad3fa5cafc55d522"
+      "contentSha256": "0d3b314fa899436a76116b54782066dc30edaf1f2b964fdc34a8662e4704619e"
     },
     {
       "questionId": "u09-s001-v012",
@@ -1030,7 +1035,7 @@ export default {
         "derivedAnswer": "20 公克",
         "trustStoredAnswer": false
       },
-      "explanation": "營養表同時含『每份』與『每包』，不能只抄單一格。",
+      "explanation": "營養表同時含『每份』與『每包』，不能只抄單一格。 每份八公克是單份糖量，整包共有二點五份，故完整食用量為八乘二點五等於二十公克；每份三十公克是食品重量，不是糖量。",
       "steps": [
         "辨認每份糖 8 公克。",
         "辨認整包 2.5 份。",
@@ -1058,7 +1063,7 @@ export default {
           "reason": "8×2.5=20 公克。"
         }
       ],
-      "misconceptionTarget": "混淆每份數值與整包數值",
+      "misconceptionTarget": "混淆每份數值與整包數值 只抄每份糖量，或把每份食品重量三十公克誤當整包糖量。",
       "prerequisiteCheck": {
         "skillIds": [],
         "evidence": "只需運用已鎖定先備概念；未借用後續技能。"
@@ -1074,7 +1079,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "84fc13760a79e1a4a02e877c932abeb4b4876eb60789c0d989ba61eb9fa01521"
+      "contentSha256": "adb8531c3a11bec79af68b37d5c939a92feea549c979529195c65c9ce8b040ba"
     }
   ],
   "constructedResponses": [
@@ -1097,7 +1102,8 @@ export default {
       "standardSolution": [
         "本學期人數：科學35、美術30、籃球40、閱讀36，所以籃球社最多。",
         "變化量：科學+7、美術-2、籃球+15、閱讀0。",
-        "敘述錯誤；美術社減少2人，閱讀社也沒有增加。"
+        "敘述錯誤；美術社減少2人，閱讀社也沒有增加。",
+        "用本學期欄再核對可得最大值四十只屬籃球社；變化量的正、負、零也分別對應增加、減少、不變，因此美術與閱讀兩列已足以反駁「所有社團都增加」。"
       ],
       "alternativeMethod": "也可先逐列標記「增加、減少、不變」，再比較本學期欄最大值。",
       "reasoningSteps": [
@@ -1142,7 +1148,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "807d295c72d4d437675c0de19963566d0f9d00a8b1a2e21469b8f7cf60862861"
+      "contentSha256": "81157066677d548032afaff29923c162fcb6aec5cbe2617f9695cfaf0c2421d0",
+      "commonErrors": [
+        "把兩學期欄位顛倒，以前期減後期而反轉各社團變化量。",
+        "只看到科學社與籃球社增加，就忽略美術社減少及閱讀社不變，錯誤接受全稱敘述。"
+      ]
     },
     {
       "questionId": "u09-s001-cr002",
@@ -1164,7 +1174,8 @@ export default {
         "七個已知格總和=120+180+150+210+240+200+260=1,360。",
         "週六下午=1,660-1,360=300人。",
         "週六總數=240+300=540人；週日總數=200+260=460人。",
-        "週六比週日多80人。"
+        "週六比週日多80人。",
+        "代回八個時段後總數為一千六百六十，週六五百四十也確實比週日四百六十多八十人；缺值、日合計與比較結果三層驗算一致。"
       ],
       "alternativeMethod": "可先求除週六外三日總數1,120，再由1,660-1,120=540得週六全日，最後扣上午240得下午300。",
       "reasoningSteps": [
@@ -1209,7 +1220,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "522f5745843afd9ec46499590b8cb0ef46efbb6a931f4f7c954dc10d0e4dbca0"
+      "contentSha256": "9e5e3c54036293848eb5463ddca92d01f2c4aa4c3e21144fee48096919a1b45f",
+      "commonErrors": [
+        "把四日總計再加入七個已知格，或漏加其中一個時段而求錯週六下午。",
+        "求得週六下午三百人後直接和週日總數比較，沒有先算週六單日總數五百四十。"
+      ]
     }
   ],
   "semanticReviews": [

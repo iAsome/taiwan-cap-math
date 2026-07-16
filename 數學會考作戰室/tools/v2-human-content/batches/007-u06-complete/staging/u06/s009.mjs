@@ -143,7 +143,8 @@ export default {
           "每公斤 210÷3=70 元。",
           "5 公斤為 70×5=350 元。"
         ],
-        "answer": "350 元。"
+        "answer": "350 元。",
+        "why": "單價不變時，價格與重量成正比。先把已知總價換成每公斤七十元，再乘目標的五公斤，可避免只憑公斤差任意加價；回除後仍是每公斤七十元。"
       },
       {
         "exampleId": "L2",
@@ -152,7 +153,8 @@ export default {
           "杯數放大 10/4=2.5 倍。",
           "糖量 60×2.5=150 克。"
         ],
-        "answer": "150 克。"
+        "answer": "150 克。",
+        "why": "配方不變表示杯數與糖量使用同一放大倍率。十杯是四杯的二點五倍，糖量也乘二點五；若只增加六十克，就無法維持每杯十五克的固定配方。"
       },
       {
         "exampleId": "L3",
@@ -161,7 +163,8 @@ export default {
           "路程固定為 72×5=360 公里。",
           "時間 360÷90=4 小時。"
         ],
-        "answer": "4 小時。"
+        "answer": "4 小時。",
+        "why": "題目固定的是總路程，不是時間。先求三百六十公里，再除以新速度，才能得到四小時；速度由七十二提高到九十，時間縮短也符合反比方向。"
       },
       {
         "exampleId": "L4",
@@ -170,7 +173,8 @@ export default {
           "總份數 5，原液占 1/5。",
           "2.5×1/5=0.5 公升。"
         ],
-        "answer": "0.5 公升。"
+        "answer": "0.5 公升。",
+        "why": "一比四描述原液一份、水四份，總量共有五份，因此原液占總量五分之一。把二點五公升分成五等份得零點五公升，餘下二公升正好是水的四份。"
       }
     ],
     "commonMistakes": [
@@ -257,7 +261,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "e8d3e78eacf0033438ea9519e4428b6f09a898b95bf6a81b4bd65e66d6fddac6"
+    "contentSha256": "c908456562f067f77a4b9d154dc628b05d7185e5d4814291a86f838c524f8eeb"
   },
   "mcQuestions": [
     {
@@ -281,11 +285,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "3:210=5:350。",
-      "mainExplanation": "用單位價格或比例式。",
-      "explanation": "用單位價格或比例式。",
+      "mainExplanation": "先由三公斤二百一十元求出每公斤七十元；單價固定，所以五公斤的價格是七十乘五，等於三百五十元。把三百五十除以五也回到每公斤七十元，比例前後一致。",
+      "explanation": "先由三公斤二百一十元求出每公斤七十元；單價固定，所以五公斤的價格是七十乘五，等於三百五十元。把三百五十除以五也回到每公斤七十元，比例前後一致。",
       "steps": [
-        "210÷3=70",
-        "70×5=350"
+        "計算每公斤單價：210÷3=70 元。",
+        "依固定單價計算五公斤：70×5=350 元。",
+        "用 350÷5=70 回查單價，確認答案為三百五十元。"
       ],
       "optionAnalysis": [
         {
@@ -309,7 +314,7 @@ export default {
           "reason": "6公斤價格。"
         }
       ],
-      "misconceptionTarget": "比例倍率計算錯。",
+      "misconceptionTarget": "只看公斤數增加二公斤便任意加價，沒有先求固定的每公斤單價。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -330,7 +335,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7636ac54398707f196976c63278dcecda28d5cdd629a70513aa6b505c008619a"
+      "contentSha256": "ab9165164ca191e4f059bf304eff7f75b589e476d1e026b087b5c931ee73b984"
     },
     {
       "questionId": "u06-s009-v002",
@@ -353,11 +358,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "4:60=10:150。",
-      "mainExplanation": "杯數與糖量成正比。",
-      "explanation": "杯數與糖量成正比。",
+      "mainExplanation": "配方不變表示每杯所需糖量固定。六十公克除以四杯得每杯十五公克，十杯便需要十五乘十，等於一百五十公克；回查四杯時仍是六十公克。",
+      "explanation": "配方不變表示每杯所需糖量固定。六十公克除以四杯得每杯十五公克，十杯便需要十五乘十，等於一百五十公克；回查四杯時仍是六十公克。",
       "steps": [
-        "60/4=15",
-        "15×10=150"
+        "由四杯用糖六十公克，求每杯 60÷4=15 公克。",
+        "十杯所需糖量為 15×10=150 公克。",
+        "驗算 150÷10=15，與原配方每杯用糖量相同。"
       ],
       "optionAnalysis": [
         {
@@ -381,7 +387,7 @@ export default {
           "reason": "每杯15公克，10杯150公克。"
         }
       ],
-      "misconceptionTarget": "把總份數與倍率混淆。",
+      "misconceptionTarget": "只把十減四的六杯乘上錯誤數值，或只改杯數而未等比例改糖量。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -402,7 +408,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ec1042dfb992e2241edb286b5e82fe448c37ef6381eb8195d2bab05bb6ad25e9"
+      "contentSha256": "ce172f4431b0635bc30436f637306cc1af4b5e69f073ff64da824ee41376a7fd"
     },
     {
       "questionId": "u06-s009-v003",
@@ -425,11 +431,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "90×4=360。",
-      "mainExplanation": "固定路程下速度與時間反比。",
-      "explanation": "固定路程下速度與時間反比。",
+      "mainExplanation": "原行程的固定路程是七十二乘五，等於三百六十公里。改以每小時九十公里行駛時，所需時間為三百六十除以九十，等於四小時；速度提高而時間縮短，方向也合理。",
+      "explanation": "原行程的固定路程是七十二乘五，等於三百六十公里。改以每小時九十公里行駛時，所需時間為三百六十除以九十，等於四小時；速度提高而時間縮短，方向也合理。",
       "steps": [
-        "72×5=360",
-        "360/90=4"
+        "先求固定路程：72×5=360 公里。",
+        "用新速度求時間：360÷90=4 小時。",
+        "檢查 90×4=360，與原路程相同。"
       ],
       "optionAnalysis": [
         {
@@ -453,7 +460,7 @@ export default {
           "reason": "反比方向錯。"
         }
       ],
-      "misconceptionTarget": "把速度時間當正比。",
+      "misconceptionTarget": "把固定路程下的速度與時間誤當正比，速度增加時反而把時間放大。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -474,7 +481,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e580b381dd5c59ba4a6fdfca8ded8268ff1982116f342336dcecd4addbf20bcb"
+      "contentSha256": "a1570105c50f1f436ff38cd683e6663875025f24d8d2908c0f952a9de922ac94"
     },
     {
       "questionId": "u06-s009-v004",
@@ -497,11 +504,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "原液0.6、水2.4，合3且比1:4。",
-      "mainExplanation": "份數法求成分。",
-      "explanation": "份數法求成分。",
+      "mainExplanation": "原液與水的份數比是一比四，所以整杯飲料共有五份，原液占其中一份。三公升除以五得每份零點六公升，因此原液是零點六公升、水是二點四公升，兩者相加正好三公升。",
+      "explanation": "原液與水的份數比是一比四，所以整杯飲料共有五份，原液占其中一份。三公升除以五得每份零點六公升，因此原液是零點六公升、水是二點四公升，兩者相加正好三公升。",
       "steps": [
-        "把3：5改寫成部分占總量的分率3/5",
-        "3÷5=0.6，所以百分率為60%"
+        "把原液一份與水四份相加，得到總份數 1+4=5 份。",
+        "用總量三公升除以五份，得每份 3÷5=0.6 公升。",
+        "原液占一份，所以為 0.6 公升；水為 2.4 公升，合計三公升。"
       ],
       "optionAnalysis": [
         {
@@ -525,7 +533,7 @@ export default {
           "reason": "2.4是水量。"
         }
       ],
-      "misconceptionTarget": "把水量與總量混淆。",
+      "misconceptionTarget": "把原液與水的一比四誤讀成原液占總量四分之一，而忽略總份數是五。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -546,7 +554,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f31901178b9dc71f0e32b2cdf21ddcc7f48fa14af22f60269996f540608f08e6"
+      "contentSha256": "677fc021a0d7f30d3630b3a19d03f69a3afd5665fa3b2ec6e2834b3fd371afa5"
     },
     {
       "questionId": "u06-s009-v005",
@@ -569,11 +577,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "7.2×250000=1800000公分。",
-      "mainExplanation": "統一單位並用實際/圖上求縮小倍數。",
-      "explanation": "統一單位並用實際/圖上求縮小倍數。",
+      "mainExplanation": "比例尺兩邊必須使用相同長度單位。十八公里等於一百八十萬公分，實際距離除以圖上七點二公分得二十五萬，因此圖上一公分代表實際二十五萬公分，比例尺是一比二十五萬。",
+      "explanation": "比例尺兩邊必須使用相同長度單位。十八公里等於一百八十萬公分，實際距離除以圖上七點二公分得二十五萬，因此圖上一公分代表實際二十五萬公分，比例尺是一比二十五萬。",
       "steps": [
-        "先把18 km換成1,800,000 cm",
-        "1,800,000÷7.2=250,000，所以比例尺為1：250,000"
+        "將 18 公里換成 1,800,000 公分。",
+        "計算縮小倍數 1,800,000÷7.2=250,000。",
+        "寫成圖上距離比實際距離 1:250,000，並回乘驗算。"
       ],
       "optionAnalysis": [
         {
@@ -597,7 +606,7 @@ export default {
           "reason": "18公里=1800000公分，7.2:1800000=1:250000。"
         }
       ],
-      "misconceptionTarget": "公里轉公分錯。",
+      "misconceptionTarget": "公里沒有先換成公分便直接相除，造成比例尺分母少了長度單位換算倍數。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -618,7 +627,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8d958b1a5e18e8088e7a8389ea5dab263698fc13b722d6fd4838b5317bfcd5bc"
+      "contentSha256": "47a5f0990350a18fd575189ea18afe67071a4c58ef10c1ff2e744ba420a10ac5"
     },
     {
       "questionId": "u06-s009-v006",
@@ -641,11 +650,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "14公升×14公里/公升=196公里。",
-      "mainExplanation": "油量與路程在耗油率固定時成正比。",
-      "explanation": "油量與路程在耗油率固定時成正比。",
+      "mainExplanation": "耗油率固定時，可先求每公升能行駛的距離。八十四除以六得每公升十四公里，因此行駛一百九十六公里需用一百九十六除以十四，等於十四公升；回乘可得原路程。",
+      "explanation": "耗油率固定時，可先求每公升能行駛的距離。八十四除以六得每公升十四公里，因此行駛一百九十六公里需用一百九十六除以十四，等於十四公升；回乘可得原路程。",
       "steps": [
-        "84/6=14公里/公升",
-        "196/14=14公升"
+        "求單位油量的路程：84÷6=14 公里／公升。",
+        "求所需油量：196÷14=14 公升。",
+        "驗算 14 公升×14 公里／公升=196 公里。"
       ],
       "optionAnalysis": [
         {
@@ -669,7 +679,7 @@ export default {
           "reason": "把196/84乘9。"
         }
       ],
-      "misconceptionTarget": "單位率方向顛倒。",
+      "misconceptionTarget": "把每公升公里數與每公里耗油量顛倒，導致用路程乘錯單位率。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -690,7 +700,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "06863c7c132242e28c6a7c80580fe6aa5f6962f7fa8aaa55c582e64ab93d6aca"
+      "contentSha256": "03a3d1b4d8391f9f0f6e1b46e582b4459b945d14bbdd0d1113dd4444914fdba5"
     },
     {
       "questionId": "u06-s009-v007",
@@ -713,11 +723,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "90/750=0.12。",
-      "mainExplanation": "百分率是部分/總量。",
-      "explanation": "百分率是部分/總量。",
+      "mainExplanation": "濃度百分之十二表示糖占糖水總重的零點一二。以七百五十公克乘零點一二，得到九十公克；再以九十除以七百五十，確實等於零點一二，所以糖量與濃度相符。",
+      "explanation": "濃度百分之十二表示糖占糖水總重的零點一二。以七百五十公克乘零點一二，得到九十公克；再以九十除以七百五十，確實等於零點一二，所以糖量與濃度相符。",
       "steps": [
-        "12%=0.12",
-        "750×0.12=90"
+        "把 12% 改寫為小數 0.12。",
+        "計算糖量 750×0.12=90 公克。",
+        "驗算 90÷750=0.12，也就是 12%。"
       ],
       "optionAnalysis": [
         {
@@ -741,7 +752,7 @@ export default {
           "reason": "660是水量。"
         }
       ],
-      "misconceptionTarget": "把百分數當除數。",
+      "misconceptionTarget": "把百分之十二當成十二直接相乘，或把總重量除以十二而非乘零點一二。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -762,7 +773,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a372a4c12ae5ec8905dd5873239fb388a4fa26ec2299339e06a00682fe125ddf"
+      "contentSha256": "3c413b2aac27d3ef60dc21180b7a768b14dedae80ba05d6b94122369a19ae1ce"
     },
     {
       "questionId": "u06-s009-v008",
@@ -785,11 +796,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "A18、B30，比3:5。",
-      "mainExplanation": "由已知成分反求總量。",
-      "explanation": "由已知成分反求總量。",
+      "mainExplanation": "混合比三比五表示總共八份，已知的甲米十八公斤對應三份，所以每份是六公斤。混合總重為八份乘六，等於四十八公斤；其中乙米三十公斤，與甲米十八公斤化簡仍為三比五。",
+      "explanation": "混合比三比五表示總共八份，已知的甲米十八公斤對應三份，所以每份是六公斤。混合總重為八份乘六，等於四十八公斤；其中乙米三十公斤，與甲米十八公斤化簡仍為三比五。",
       "steps": [
-        "18/3=6",
-        "6×8=48"
+        "由甲米三份等於十八公斤，求每份 18÷3=6 公斤。",
+        "總份數為 3+5=8 份，所以總重 8×6=48 公斤。",
+        "回查乙米為 5×6=30 公斤，18:30 化簡為 3:5。"
       ],
       "optionAnalysis": [
         {
@@ -813,7 +825,7 @@ export default {
           "reason": "總份數錯。"
         }
       ],
-      "misconceptionTarget": "把B量當總量。",
+      "misconceptionTarget": "只算出乙米五份的三十公斤便當成混合總重，漏加已知的甲米。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -834,7 +846,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b18032a4ca56b8f6930b2b5c7933686305859273b5e5d6d68f68b64555c52f71"
+      "contentSha256": "50cdb2a80ddec339a75a6c04676256b797e7fccbad2112748e8f618158129d31"
     },
     {
       "questionId": "u06-s009-v009",
@@ -857,14 +869,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "60+125=185，且每一段產量均為整件。",
-      "mainExplanation": "分段計算，速度改變後不能用單一全程比例。",
-      "explanation": "分段計算，速度改變後不能用單一全程比例。",
+      "mainExplanation": "原速率是每分鐘二十件。前三分鐘仍以原速完成六十件；之後速率提高百分之二十五，變成每分鐘二十五件，後五分鐘完成一百二十五件，合計一百八十五件。兩段不能用同一速率。",
+      "explanation": "原速率是每分鐘二十件。前三分鐘仍以原速完成六十件；之後速率提高百分之二十五，變成每分鐘二十五件，後五分鐘完成一百二十五件，合計一百八十五件。兩段不能用同一速率。",
       "steps": [
-        "160÷8=20件/分",
-        "前3分60件",
-        "新速25件/分",
-        "後5分125件",
-        "合185件"
+        "先求原速率：160÷8=20 件／分。",
+        "前三分鐘完成 20×3=60 件；新速率為 20×1.25=25 件／分。",
+        "後五分鐘完成 25×5=125 件，總數為 60+125=185 件。"
       ],
       "optionAnalysis": [
         {
@@ -888,7 +898,7 @@ export default {
           "reason": "全程8分鐘都用提高後速度。"
         }
       ],
-      "misconceptionTarget": "全程誤用同一速率或提高比例算錯。",
+      "misconceptionTarget": "把提高百分之二十五套在全部八分鐘，或忘記前三分鐘仍使用原來速率。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -909,7 +919,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "29ab396f8cbea1f5204d1beae445afe941f844ad4e874dd3582d891e1154a2e2"
+      "contentSha256": "ec0728ad28691732b5267838de8cb82c2d4360ada9c983b15b224f3e728b6998"
     },
     {
       "questionId": "u06-s009-v010",
@@ -932,11 +942,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "乙每100克少1元。",
-      "mainExplanation": "統一到每100公克比較。",
-      "explanation": "統一到每100公克比較。",
+      "mainExplanation": "包裝重量不同，必須換成相同的一百公克基準。甲每一百公克是九十六除以六，等於十六元；乙每一百公克是百三十五除以九，等於十五元，因此乙每一百公克便宜一元。",
+      "explanation": "包裝重量不同，必須換成相同的一百公克基準。甲每一百公克是九十六除以六，等於十六元；乙每一百公克是百三十五除以九，等於十五元，因此乙每一百公克便宜一元。",
       "steps": [
-        "96/600×100=16",
-        "135/900×100=15"
+        "甲有六個一百公克，計算 96÷6=16 元／百公克。",
+        "乙有九個一百公克，計算 135÷9=15 元／百公克。",
+        "在相同基準下比較，乙比甲便宜一元。"
       ],
       "optionAnalysis": [
         {
@@ -960,7 +971,7 @@ export default {
           "reason": "乙單價不是16元。"
         }
       ],
-      "misconceptionTarget": "只看總價或包裝重量。",
+      "misconceptionTarget": "只比較九十六元與一百三十五元的總價，忽略兩包重量並不相同。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -981,7 +992,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d6b31f88c761dc55c72656316e9374ee5cf787ca3c6c63403c97a5db298f925b"
+      "contentSha256": "a6f7caa4394fd30caefc29f62503181335b9de0497aa702c063b8ae031b99b10"
     },
     {
       "questionId": "u06-s009-v011",
@@ -1004,12 +1015,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "3箱容量90足夠，2箱不足。",
-      "mainExplanation": "先求每箱容量，再向上取整。",
-      "explanation": "先求每箱容量，再向上取整。",
+      "mainExplanation": "每盒裝六份、每箱裝五盒，所以每箱可裝三十份。八十四除以三十等於二點八箱，但箱子只能取整數且必須裝下全部點心，因此要向上取整為三箱；兩箱只能裝六十份。",
+      "explanation": "每盒裝六份、每箱裝五盒，所以每箱可裝三十份。八十四除以三十等於二點八箱，但箱子只能取整數且必須裝下全部點心，因此要向上取整為三箱；兩箱只能裝六十份。",
       "steps": [
-        "6×5=30份/箱",
-        "84/30=2.8",
-        "向上取整3"
+        "先求每箱容量：6×5=30 份。",
+        "計算理論箱數：84÷30=2.8 箱。",
+        "因箱數須為整數且要全部裝下，向上取整為三箱。"
       ],
       "optionAnalysis": [
         {
@@ -1033,7 +1044,7 @@ export default {
           "reason": "每箱30份，84÷30=2.8，至少需3箱。"
         }
       ],
-      "misconceptionTarget": "將純比例結果直接當實際箱數。",
+      "misconceptionTarget": "把二點八箱四捨五入或直接當可購買箱數，沒有檢查整箱限制與容量。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -1054,7 +1065,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4485c1f0d5abc2269528aa7202e093dac35ce2668f6462813bebbd5dac89bab2"
+      "contentSha256": "859e10738a8187d9fb70fd210e6a5cb989d03d220ff1aa3bc20dc1858ec9ebfc"
     },
     {
       "questionId": "u06-s009-v012",
@@ -1077,13 +1088,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "完成量前段1/3、後段2/3。",
-      "mainExplanation": "分段用固定總工作量。",
-      "explanation": "分段用固定總工作量。",
+      "mainExplanation": "四支水管注滿九小時，總工作量是三十六管時。前段四支開三小時完成十二管時，尚餘二十四管時；增加為六支後需要二十四除以六，等於四小時，前後完成量合計正好注滿。",
+      "explanation": "四支水管注滿九小時，總工作量是三十六管時。前段四支開三小時完成十二管時，尚餘二十四管時；增加為六支後需要二十四除以六，等於四小時，前後完成量合計正好注滿。",
       "steps": [
-        "總36管時",
-        "已做12",
-        "剩24",
-        "24/6=4"
+        "以管時表示總工作量：4×9=36 管時。",
+        "前三小時完成 4×3=12 管時，尚餘 36-12=24 管時。",
+        "增加到六支後需 24÷6=4 小時。"
       ],
       "optionAnalysis": [
         {
@@ -1107,7 +1117,7 @@ export default {
           "reason": "未考慮增加水管。"
         }
       ],
-      "misconceptionTarget": "直接用全程反比忽略前段。",
+      "misconceptionTarget": "直接把九小時按四支與六支作全程反比，忽略前三小時已完成的工作量。",
       "prerequisiteCheck": {
         "skillIds": [
           "scale-drawing"
@@ -1128,7 +1138,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "6fb3eebd7a1fb965ffaa5a3cd4b07325bb1bedd24c5959a057204eb8f943c10d"
+      "contentSha256": "1c68367513a55007e883c409c53d176d135e25095d56c9551667c9e425f2f7b6"
     }
   ],
   "constructedResponses": [
@@ -1149,19 +1159,18 @@ export default {
         "檢查配方比保持。"
       ],
       "fullCreditSolution": [
-        "放大倍率15/6=5/2=2.5。",
-        "麵粉420×2.5=1050公克。",
-        "牛奶300×2.5=750毫升。",
-        "兩種材料都乘同一倍率，所以配方不變。"
+        "由六人份改成十五人份，共同放大倍率為 15÷6=2.5；兩種材料都必須乘相同倍率，配方比例才會保持不變。",
+        "麵粉用量為 420×2.5=1050 公克。",
+        "牛奶用量為 300×2.5=750 毫升。",
+        "回查 1050÷420=750÷300=2.5，確認兩種材料使用同一倍率。"
       ],
       "alternativeSolutions": [
         "可先求每人麵粉70公克、牛奶50毫升，再乘15。"
       ],
       "reasoningSteps": [
-        "放大倍率15/6=5/2=2.5。",
-        "麵粉420×2.5=1050公克。",
-        "牛奶300×2.5=750毫升。",
-        "兩種材料都乘同一倍率，所以配方不變。"
+        "先用目標人數除以原人數，求共同放大倍率二點五。",
+        "把麵粉與牛奶分別乘二點五，得到新用量。",
+        "比較新舊用量的倍率，確認配方比例沒有改變。"
       ],
       "rubric": [
         {
@@ -1189,9 +1198,9 @@ export default {
       "unitNotationRules": "麵粉用公克、牛奶用毫升。",
       "answerOnlyPolicy": "只寫兩答案最多2分。",
       "commonErrors": [
-        "把15/6寫成1.5。",
-        "只增加9人份的固定量。",
-        "交換材料單位。"
+        "把十五除以六誤算成一點五，導致兩種材料都不足。",
+        "只把其中一種材料乘倍率，破壞原配方的材料比例。",
+        "將公克與毫升的單位互換，雖數字計算正確仍答錯物理量。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1206,7 +1215,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "57f06d0a8d47f052b33fc9b93f5ba462f2542c3a47fd063a340603e5192d8f1e"
+      "contentSha256": "648a03eba91472b1f36a01a996fb9adeeac8cec86fca175135bc2af97903535d"
     },
     {
       "questionId": "u06-s009-cr002",
@@ -1225,17 +1234,18 @@ export default {
         "比較錯誤的算術平均速度模型。"
       ],
       "fullCreditSolution": [
-        "總路程80×3=240公里，每半120公里。",
-        "乙前半時間120÷60=2小時，後半120÷120=1小時，總3小時。",
-        "若用90公里/時會得240÷90=8/3小時，不等於3小時；相同距離兩段不能直接以速度算術平均代替。"
+        "固定路程由甲車資料求得 80×3=240 公里，因此乙車前、後半段各行駛一百二十公里。",
+        "乙車前半段時間為 120÷60=2 小時，後半段為 120÷120=1 小時，總時間是三小時。",
+        "若直接使用速度算術平均九十公里／時，會得到 240÷90=8/3 小時，與分段計算的三小時不同。",
+        "兩段路程相同但所花時間不同，速度不能直接作算術平均後替代實際分段時間。"
       ],
       "alternativeSolutions": [
         "可由總時間3小時得到全程平均速度240÷3=80公里/時。"
       ],
       "reasoningSteps": [
-        "總路程80×3=240公里，每半120公里。",
-        "乙前半時間120÷60=2小時，後半120÷120=1小時，總3小時。",
-        "若用90公里/時會得240÷90=8/3小時，不等於3小時；相同距離兩段不能直接以速度算術平均代替。"
+        "先由甲車速度與時間求固定總路程，再分成相同的前後半路程。",
+        "分別以每段路程除以該段速度，求兩段時間後相加。",
+        "另算使用九十公里／時的結果，與三小時比較並解釋差異。"
       ],
       "rubric": [
         {
@@ -1263,9 +1273,9 @@ export default {
       "unitNotationRules": "速度公里/時、路程公里、時間小時。",
       "answerOnlyPolicy": "只寫3小時最多2分。",
       "commonErrors": [
-        "直接平均速度。",
-        "把一半理解為一半時間。",
-        "前後段時間相乘。"
+        "把六十與一百二十直接平均成九十，未考慮兩段行駛時間不同。",
+        "把一半路程誤讀成一半時間，逕自令兩段各一點五小時。",
+        "求出兩段時間後相乘，沒有依總時間應相加的意義處理。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1280,7 +1290,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "3b22bbb3b18d636d8a6c5a2a49316e4d12132b9a1b01a3c5c33907dea63a7420"
+      "contentSha256": "c7a6fff7f38c52e17c684932b1d74438f6e075d979753aceb43181894c212639"
     }
   ],
   "semanticReviews": [
@@ -1289,7 +1299,7 @@ export default {
       "questionId": "u06-s009-v001",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "7636ac54398707f196976c63278dcecda28d5cdd629a70513aa6b505c008619a",
+      "contentSha256": "ab9165164ca191e4f059bf304eff7f75b589e476d1e026b087b5c931ee73b984",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1326,7 +1336,7 @@ export default {
       "questionId": "u06-s009-v002",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "ec1042dfb992e2241edb286b5e82fe448c37ef6381eb8195d2bab05bb6ad25e9",
+      "contentSha256": "ce172f4431b0635bc30436f637306cc1af4b5e69f073ff64da824ee41376a7fd",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1363,7 +1373,7 @@ export default {
       "questionId": "u06-s009-v003",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "e580b381dd5c59ba4a6fdfca8ded8268ff1982116f342336dcecd4addbf20bcb",
+      "contentSha256": "a1570105c50f1f436ff38cd683e6663875025f24d8d2908c0f952a9de922ac94",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1400,7 +1410,7 @@ export default {
       "questionId": "u06-s009-v004",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "f31901178b9dc71f0e32b2cdf21ddcc7f48fa14af22f60269996f540608f08e6",
+      "contentSha256": "677fc021a0d7f30d3630b3a19d03f69a3afd5665fa3b2ec6e2834b3fd371afa5",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1437,7 +1447,7 @@ export default {
       "questionId": "u06-s009-v005",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "8d958b1a5e18e8088e7a8389ea5dab263698fc13b722d6fd4838b5317bfcd5bc",
+      "contentSha256": "47a5f0990350a18fd575189ea18afe67071a4c58ef10c1ff2e744ba420a10ac5",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1474,7 +1484,7 @@ export default {
       "questionId": "u06-s009-v006",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "06863c7c132242e28c6a7c80580fe6aa5f6962f7fa8aaa55c582e64ab93d6aca",
+      "contentSha256": "03a3d1b4d8391f9f0f6e1b46e582b4459b945d14bbdd0d1113dd4444914fdba5",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1511,7 +1521,7 @@ export default {
       "questionId": "u06-s009-v007",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "a372a4c12ae5ec8905dd5873239fb388a4fa26ec2299339e06a00682fe125ddf",
+      "contentSha256": "3c413b2aac27d3ef60dc21180b7a768b14dedae80ba05d6b94122369a19ae1ce",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1548,7 +1558,7 @@ export default {
       "questionId": "u06-s009-v008",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "b18032a4ca56b8f6930b2b5c7933686305859273b5e5d6d68f68b64555c52f71",
+      "contentSha256": "50cdb2a80ddec339a75a6c04676256b797e7fccbad2112748e8f618158129d31",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1585,7 +1595,7 @@ export default {
       "questionId": "u06-s009-v009",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "29ab396f8cbea1f5204d1beae445afe941f844ad4e874dd3582d891e1154a2e2",
+      "contentSha256": "ec0728ad28691732b5267838de8cb82c2d4360ada9c983b15b224f3e728b6998",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1622,7 +1632,7 @@ export default {
       "questionId": "u06-s009-v010",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "d6b31f88c761dc55c72656316e9374ee5cf787ca3c6c63403c97a5db298f925b",
+      "contentSha256": "a6f7caa4394fd30caefc29f62503181335b9de0497aa702c063b8ae031b99b10",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1659,7 +1669,7 @@ export default {
       "questionId": "u06-s009-v011",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "4485c1f0d5abc2269528aa7202e093dac35ce2668f6462813bebbd5dac89bab2",
+      "contentSha256": "859e10738a8187d9fb70fd210e6a5cb989d03d220ff1aa3bc20dc1858ec9ebfc",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1696,7 +1706,7 @@ export default {
       "questionId": "u06-s009-v012",
       "unitId": "u06",
       "skillId": "ratio-word-problem",
-      "contentSha256": "6fb3eebd7a1fb965ffaa5a3cd4b07325bb1bedd24c5959a057204eb8f943c10d",
+      "contentSha256": "1c68367513a55007e883c409c53d176d135e25095d56c9551667c9e425f2f7b6",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

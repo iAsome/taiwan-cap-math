@@ -114,36 +114,45 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "10% 與 30% 食鹽水配成 20% 共 500 克。",
       "solutionSteps": [
-        "x+y=500。",
-        "0.1x+0.3y=100。"
+        "設兩種原液為 x、y 克，列 x+y=500。",
+        "目標食鹽量為一百克，列 0.1x+0.3y=100。",
+        "減去低濃度基準式得 0.2y=50，所以 x=y=250。"
       ],
-      "answer": "各 250 克。"
+      "answer": "各 250 克。",
+      "why": "總量式與食鹽量式同時成立才是完整模型。目標百分之二十恰在兩濃度中點，因此等量結果合理；回算食鹽量二十五加七十五等於一百克。"
     },
     {
       "exampleId": "L2",
       "prompt": "每公斤 60 元與 90 元米混成每公斤 72 元共 20 公斤。",
       "solutionSteps": [
-        "x+y=20。",
-        "60x+90y=72×20。"
+        "設便宜米 x 公斤、較貴米 y 公斤，列 x+y=20。",
+        "目標成本為 72×20=1440，列 60x+90y=1440。",
+        "減去 60(x+y)=1200，得 30y=240，所以 y=8、x=12。"
       ],
-      "answer": "便宜米 12 公斤、較貴米 8 公斤。"
+      "answer": "便宜米 12 公斤、較貴米 8 公斤。",
+      "why": "平均單價須先乘二十公斤轉成總成本。全用便宜米比目標少二百四十元，每公斤高價米補三十元差額，所以需要八公斤，回算總成本為一千四百四十元。"
     },
     {
       "exampleId": "L3",
       "prompt": "20% 溶液與清水配成 8% 共 300 克。",
       "solutionSteps": [
-        "清水濃度 0%。",
-        "x+y=300、0.2x=24。"
+        "設百分之二十原液 x 克、清水 y 克，列 x+y=300。",
+        "目標成分量為 0.08×300=24 克，清水貢獻為零。",
+        "由 0.2x=24 得 x=120，再求 y=180。"
       ],
-      "answer": "20% 溶液 120 克、清水 180 克。"
+      "answer": "20% 溶液 120 克、清水 180 克。",
+      "why": "清水在題設成分的濃度為百分之零，因此所有二十四克成分都由原液提供。原液一百二十克含二十四克成分，加入一百八十克水後總量三百克，濃度正為百分之八。"
     },
     {
       "exampleId": "L4",
       "prompt": "40% 與 60% 溶液能否配出 70%？",
       "solutionSteps": [
-        "混合後濃度應介於兩者之間。"
+        "先找兩種原液濃度範圍為百分之四十到百分之六十。",
+        "目標百分之七十高於兩種原液的最高濃度。",
+        "依非負加權平均的範圍性質，判定沒有可行用量。"
       ],
-      "answer": "不能以非負用量配出。"
+      "answer": "不能以非負用量配出。",
+      "why": "兩種非負用量的混合濃度只能位於原濃度之間，無法超過百分之六十。若硬解方程式出現負用量，那只是代數形式的結果，不符合實際混合情境。"
     }
   ],
   "commonMistakes": [
@@ -205,7 +214,40 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "9a24dad26d60facae8807270b8e845d631e9b78b6d9294d894fa9f8351ad3cd7"
+  "contentSha256": "8f6485c792abd2c11cfdbc9269ce358dd55b446627798b5ed8727da36930373b",
+  "conceptNarrative": [
+    "混合問題同時使用總量守恆與成分量守恆。若兩種溶液用量為 x、y，總量為 T，先列 x+y=T；再把每種濃度化成小數，分別乘自己的用量後相加，等於混合後的成分量。",
+    "濃度不能直接相加或任意平均。只有兩種用量相等時，混合濃度才是兩濃度的算術平均；一般情況必須依用量加權。清水對題設成分的濃度視為百分之零。",
+    "以非負用量混合時，結果濃度必在原液最低與最高濃度之間。列式前先做範圍檢查，可立刻排除百分之四十與百分之六十配出百分之七十等不可能資料，也能拒絕負用量。",
+    "價格調配與濃度混合具有相同結構：總成本等於各單價乘重量後相加，平均單價乘總重量就是目標總成本。基準差法與消去法等價，但仍應回算總量及加權總值。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "定義兩種原液或材料用量，統一克、公斤、公升或毫升等單位。",
+      "check": "兩變數與總量使用同一單位，且用量可接受非負限制。"
+    },
+    {
+      "step": 2,
+      "instruction": "建立總量守恆式 x+y=T。",
+      "check": "沒有把濃度、單價或成分量混入總量方程式。"
+    },
+    {
+      "step": 3,
+      "instruction": "將百分率化成小數，計算目標成分量或目標總成本。",
+      "check": "百分之二十寫成零點二，平均單價已乘總重量。"
+    },
+    {
+      "step": 4,
+      "instruction": "建立成分量或總成本守恆式，使用消去法或基準差求解。",
+      "check": "每個濃度或單價只乘自己的用量，兩式彼此獨立。"
+    },
+    {
+      "step": 5,
+      "instruction": "回算總量與成分量，並檢查濃度範圍、平均價格與用量非負。",
+      "check": "結果落在原值範圍內，沒有接受負用量或答錯材料。"
+    }
+  ]
 };
 
 export const QUESTIONS = [
@@ -230,10 +272,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "0.2×200=40 克。",
-    "explanation": "成分量=濃度×總量。",
+    "explanation": "百分之二十要先改寫成小數零點二，成分量等於濃度乘溶液總量。計算 0.2×200=40 克，所以成分為四十克；二十克是把百分率數字直接當重量，四千公克則忘了除以一百。",
     "steps": [
-      "20%=0.2。",
-      "乘 200。"
+      "把百分之二十改寫為小數零點二。",
+      "用濃度乘總量，列出 0.2×200。",
+      "計算得四十克，並檢查小於總量二百克。"
     ],
     "optionAnalysis": [
       {
@@ -257,7 +300,7 @@ export const QUESTIONS = [
         "reason": "未把百分率除以 100。"
       }
     ],
-    "misconceptionTarget": "百分率未轉小數",
+    "misconceptionTarget": "沒有把百分率除以一百，或直接把百分之二十當成二十克。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "比例×克=克。",
@@ -270,7 +313,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "be9d5248c8e1306280e87c92c5eb576ffcf93f59195b2de2492368447ba64a18"
+    "contentSha256": "cf5eae839239efaf030053139635ca0ac712ed8afc50c9169e699bdf8b10e2e3"
   },
   {
     "questionId": "u04-s013-v002",
@@ -293,10 +336,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "若討論鹽或糖的濃度，清水所含該成分為 0。",
-    "explanation": "清水可作為 0% 溶液。",
+    "explanation": "濃度是題目指定成分占溶液總量的比例。討論食鹽或糖時，清水不含該成分，成分量為零，因此在基本混合模型中視為百分之零溶液；百分之百則代表純成分，不是純水。",
     "steps": [
-      "確認所討論成分。",
-      "設濃度 0。"
+      "先確認濃度所指的是食鹽、糖等題設成分。",
+      "判斷清水中該成分量為零。",
+      "用零除以清水總量，得到濃度百分之零。"
     ],
     "optionAnalysis": [
       {
@@ -320,7 +364,7 @@ export const QUESTIONS = [
         "reason": "100% 代表純成分。"
       }
     ],
-    "misconceptionTarget": "把純水誤為 100% 溶質",
+    "misconceptionTarget": "把『純水』的純誤解為百分之百溶質，沒有先確認濃度所指成分。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -333,7 +377,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "0e85bdfe92075c1825b098d490ef4c07036785a92937c577cb5ea2de7aed5714"
+    "contentSha256": "6ab5a73399a135ab8f00224820d9abd302f2a6cf79d989da06aaa9ee8b331352"
   },
   {
     "questionId": "u04-s013-v003",
@@ -356,10 +400,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "非負用量混合的加權平均必須介於原濃度 10% 與 30% 之間。",
-    "explanation": "範圍檢查可先排除不可能目標。",
+    "explanation": "以非負用量混合百分之十與百分之三十溶液，混合濃度是兩者的加權平均，必須介於百分之十與百分之三十之間。百分之十五、二十、二十五都有可能，百分之三十五高於原液最高濃度，因此不可能。",
     "steps": [
-      "找原濃度最小與最大。",
-      "檢查目標範圍。"
+      "找出兩種原液濃度的下界百分之十與上界百分之三十。",
+      "用加權平均必在兩端之間的性質檢查選項。",
+      "排除高於百分之三十的百分之三十五。"
     ],
     "optionAnalysis": [
       {
@@ -383,7 +428,7 @@ export const QUESTIONS = [
         "reason": "35% 高於兩種原液的最高濃度。"
       }
     ],
-    "misconceptionTarget": "認為濃度可以直接相加",
+    "misconceptionTarget": "把兩種濃度直接相加，誤認混合後濃度可以高於所有原液。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -396,7 +441,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "aa36149971c2bec77ddfbce44fbc922acf1ae0779220e7cdd16b45fcccd32e71"
+    "contentSha256": "022e0637329d84ba7c0bcf6ad42d3e7e7358a4f34aa20eb418845fc48c5f2bd9"
   },
   {
     "questionId": "u04-s013-v004",
@@ -419,11 +464,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "設 10% 為 x、30% 為 y：x+y=500，0.1x+0.3y=100。減 0.1(x+y)=50 得 0.2y=50，y=250。",
-    "explanation": "目標濃度正好居中，因此等量。",
+    "explanation": "設百分之十溶液 x 克、百分之三十溶液 y 克，列 x+y=500。目標食鹽量是 0.2×500=100 克，所以 0.1x+0.3y=100。減去 0.1(x+y)=50 得 0.2y=50，因此 y=250 克。另一種也為二百五十克，兩者食鹽量相加正好一百克。",
     "steps": [
-      "列總量式。",
-      "列鹽量式。",
-      "消去求 y。"
+      "列總量式 x+y=500，並算目標食鹽量一百克。",
+      "列成分式 0.1x+0.3y=100。",
+      "減去低濃度基準式，解得百分之三十溶液二百五十克。"
     ],
     "optionAnalysis": [
       {
@@ -447,7 +492,7 @@ export const QUESTIONS = [
         "reason": "混合濃度為 22%。"
       }
     ],
-    "misconceptionTarget": "直接平均但未確認等量",
+    "misconceptionTarget": "因目標濃度位於中點就直接平分，卻沒有用總量與成分量驗證等量條件。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "克。",
@@ -460,7 +505,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "9792b9e3cb83c3f7e91156b5f4ed2e6e7601a4eae637e5a831f61070ef005bc9"
+    "contentSha256": "68b8b53995d0707b4067dbf604fbe099eb04c752843466d738e18a8bcaacbd10"
   },
   {
     "questionId": "u04-s013-v005",
@@ -483,10 +528,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "最終成分量 0.08×300=24 克，來自 20% 溶液；0.2x=24，x=120。",
-    "explanation": "清水貢獻 0 成分。",
+    "explanation": "三百克百分之八溶液含成分 0.08×300=24 克。清水不提供該成分，所以這二十四克全來自百分之二十原液。設原液 x 克，0.2x=24，解得 x=120 克，其餘一百八十克是水。",
     "steps": [
-      "算目標成分 24。",
-      "解 0.2x=24。"
+      "計算混合後成分量 0.08×300=24 克。",
+      "因清水濃度為零，列出 0.2x=24。",
+      "解得原液一百二十克，並求清水一百八十克驗算。"
     ],
     "optionAnalysis": [
       {
@@ -510,7 +556,7 @@ export const QUESTIONS = [
         "reason": "成分量過多。"
       }
     ],
-    "misconceptionTarget": "把清水也計成分",
+    "misconceptionTarget": "把清水也算成含有溶質，或把百分之八直接當作八十克原液。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "克。",
@@ -523,7 +569,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "691edd634294d6ff88a367a76f27dacc94b2f09ec36a7c77a8b1eba3d95be1c1"
+    "contentSha256": "5647037511be14b9b12c7c3a8eea28ea3a03b597ed593e0d2adcd671847a0714"
   },
   {
     "questionId": "u04-s013-v006",
@@ -546,11 +592,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "全 60 元米成本 1200；目標成本 1440，多 240；每公斤貴米多 30，所以 8 公斤。",
-    "explanation": "價格混合與濃度混合同為加權總量。",
+    "explanation": "目標總成本為 20×72=1440 元。若二十公斤全是六十元米，成本一千二百元，實際多二百四十元；每換成一公斤九十元米多三十元，因此高價米為 240÷30=8 公斤。",
     "steps": [
-      "算目標總成本。",
-      "求額外成本。",
-      "除價差。"
+      "以平均單價乘總重量，算目標總成本一千四百四十元。",
+      "計算全用六十元米的基準成本一千二百元。",
+      "以成本差除每公斤價差，求得九十元米八公斤。"
     ],
     "optionAnalysis": [
       {
@@ -574,7 +620,7 @@ export const QUESTIONS = [
         "reason": "12×60+8×90=1440。"
       }
     ],
-    "misconceptionTarget": "把平均價直接當數量",
+    "misconceptionTarget": "把平均單價七十二直接當成重量，或忘記先換成二十公斤的總成本。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "公斤。",
@@ -587,7 +633,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "3de50fe0a976ce84604fe713c39b3a52976176c9873f59ce1a64e0ab80d913b3"
+    "contentSha256": "d22741269e6d109751b30e1303edfd99e83533ea4c06d23a9478d75eaf116ff7"
   },
   {
     "questionId": "u04-s013-v007",
@@ -610,10 +656,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "目標 30% 正好是 15% 與 45% 的中點，所以兩種用量相等；總量 800，各 400。",
-    "explanation": "可用對稱加權或聯立驗證。",
+    "explanation": "目標百分之三十到百分之十五與百分之四十五的距離都為十五個百分點，所以兩種原液必須等量，才能讓加權平均落在正中點。總量八百克平分後各四百克，成分量為六十加一百八十等於二百四十克。",
     "steps": [
-      "比較目標到兩端距離相等。",
-      "由總量平分。"
+      "比較目標到兩端濃度的距離，確認都是十五個百分點。",
+      "由對稱加權判定兩種溶液用量相等。",
+      "將八百克平分，得到兩種各四百克並驗算成分量。"
     ],
     "optionAnalysis": [
       {
@@ -637,7 +684,7 @@ export const QUESTIONS = [
         "reason": "混合濃度 41.25%。"
       }
     ],
-    "misconceptionTarget": "看到中點卻仍按濃度比例分配錯誤",
+    "misconceptionTarget": "看到濃度數字後按十五比四十五分配，忽略目標正好是兩端中點。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -650,7 +697,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "189dff4195b662fa1c8f64f55f1f5be2ef3c3aaad4a0ad7b10d9982553c44b0d"
+    "contentSha256": "8cb474a507c69adbda87638cfc8509a63a47c3fb092aa94ca71f4e060700135d"
   },
   {
     "questionId": "u04-s013-v008",
@@ -673,11 +720,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "x+y=400；0.25x+0.10y=64。減 0.10(x+y)=40，得 0.15x=24，x=160。",
-    "explanation": "以低濃度為基準消去。",
+    "explanation": "總量式為 x+y=400，目標成分量是 0.16×400=64 克，所以 0.25x+0.10y=64。減去 0.10(x+y)=40，得到 0.15x=24，故百分之二十五溶液 x=160 克，另一種為二百四十克。回算兩份成分量為四十克與二十四克，合計六十四克。",
     "steps": [
-      "列總量與成分量。",
-      "作基準相減。",
-      "求 x。"
+      "列 x+y=400，並計算目標成分量六十四克。",
+      "列 0.25x+0.10y=64。",
+      "減去低濃度基準式，解得 x=160 克。"
     ],
     "optionAnalysis": [
       {
@@ -701,7 +748,7 @@ export const QUESTIONS = [
         "reason": "混合濃度過高。"
       }
     ],
-    "misconceptionTarget": "把 16% 與兩濃度簡單平均",
+    "misconceptionTarget": "把百分之十六當作兩濃度的簡單平均，沒有依兩種實際用量加權。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -714,7 +761,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "56df6f3f2e590199011fd0befbe4c2c5afd642b9aa2829102f63d5e402cf7eed"
+    "contentSha256": "6162fc4281d48cbbdcc4f083167f6c629099c2afa5cbcf1434bdfe2d4c071410"
   },
   {
     "questionId": "u04-s013-v009",
@@ -737,10 +784,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "70% 超過原液最高 60%，非負加權平均無法達到。",
-    "explanation": "先做範圍檢查，無需列式。",
+    "explanation": "百分之四十與百分之六十溶液以非負用量混合，結果是兩濃度的加權平均，最高只能到百分之六十。目標百分之七十超過最高原液，因此沒有可行解；若代數算出負用量，也應由情境限制排除。",
     "steps": [
-      "比較目標與範圍。",
-      "判不可行。"
+      "確定原液濃度範圍為百分之四十至百分之六十。",
+      "比較目標百分之七十，發現高於範圍上界。",
+      "依用量非負判定無可行解，不接受負用量。"
     ],
     "optionAnalysis": [
       {
@@ -764,7 +812,7 @@ export const QUESTIONS = [
         "reason": "會使濃度更低。"
       }
     ],
-    "misconceptionTarget": "機械列式後接受負用量",
+    "misconceptionTarget": "機械解方程式後接受負的溶液用量，沒有先做濃度範圍檢查。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -777,7 +825,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "919a89eed5eb659a2d79975cd84d6132dde65dc34ca557ba8f5958fca8f5bb57"
+    "contentSha256": "186e1fb86edc4a8a47f6bf01877aa86040d8a75f4a61e79ea31b2a86809fcb14"
   },
   {
     "questionId": "u04-s013-v010",
@@ -800,10 +848,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "目標 20% 是兩濃度中點，因此兩種液體等量，各 1 公升。",
-    "explanation": "配方表中的濃度與總量都必要。",
+    "explanation": "目標百分之二十恰為百分之十與百分之三十的中點，因此高、低濃度飲料須等量，才能得到中間濃度。總量二公升平分為各一公升；成分量為 0.3×1+0.1×1=0.4 公升，占總量二公升的百分之二十。",
     "steps": [
-      "確認對稱。",
-      "將 2 公升平分。"
+      "比較目標到百分之十與百分之三十的距離，確認相等。",
+      "由等距判定兩種液體用量相同。",
+      "將二公升平分，得到高濃度果汁一公升並驗算。"
     ],
     "optionAnalysis": [
       {
@@ -827,7 +876,7 @@ export const QUESTIONS = [
         "reason": "1 公升各自提供 0.3 與 0.1 公升成分，共 0.4/2=20%。"
       }
     ],
-    "misconceptionTarget": "只看總量或只看濃度",
+    "misconceptionTarget": "只把濃度數字相加或只平分總量，卻沒有確認中點與等量加權的關係。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "公升。",
@@ -840,7 +889,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4e1fdfdf7c24411ebff3a8efe3296c1ef03c4831f3d102a94e967a05b17d90a4"
+    "contentSha256": "74156b352299cadd6a5f8844e8a0b9f990c05902705b6339726781286e1c22eb"
   },
   {
     "questionId": "u04-s013-v011",
@@ -863,11 +912,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "目標總成本 6200；全 500 元豆 5000，多 1200；每公斤高價豆多 300，故 4 公斤。",
-    "explanation": "價格配方需要加權總成本。",
+    "explanation": "十公斤、平均每公斤六百二十元，目標總成本是六千二百元。全用五百元豆的基準成本是五千元，尚差一千二百元；每換一公斤八百元豆增加三百元，所以高價豆為四公斤。",
     "steps": [
-      "算目標成本。",
-      "算基準成本。",
-      "除價差。"
+      "計算目標總成本 10×620=6200 元。",
+      "計算全用五百元豆的基準成本五千元與差額一千二百元。",
+      "以 1200÷(800-500)=4，求得八百元豆四公斤。"
     ],
     "optionAnalysis": [
       {
@@ -891,7 +940,7 @@ export const QUESTIONS = [
         "reason": "平均價 740。"
       }
     ],
-    "misconceptionTarget": "平均價直接除單價",
+    "misconceptionTarget": "直接用平均單價除某一單價猜重量，沒有把平均價格換算成總成本。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "公斤。",
@@ -904,7 +953,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "741e06d099cb94c771cd124bf74d0eac35ae47c6f0349d619dad2fccf216e54b"
+    "contentSha256": "800a83d428270ca50cd5a39c3d28f14961702fa19d581fa01b6c8f166deec4ed"
   },
   {
     "questionId": "u04-s013-v012",
@@ -927,11 +976,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "0.2x=60，x=300；加水 200，合計 500。",
-    "explanation": "標籤直接給成分量時先用成分式。",
+    "explanation": "有效成分六十毫升全部由百分之二十原液提供。設原液 x 毫升，列 0.2x=60，解得 x=300 毫升。配製總量五百毫升，因此再加水二百毫升；驗算原液確實含六十毫升有效成分。",
     "steps": [
-      "設原液 x。",
-      "解 20%×x=60。",
-      "檢查總量。"
+      "設需要百分之二十原液 x 毫升。",
+      "由成分量列 0.2x=60，解得 x=300。",
+      "用 500-300=200 求加水量，並回算成分量。"
     ],
     "optionAnalysis": [
       {
@@ -952,10 +1001,10 @@ export const QUESTIONS = [
       {
         "choice": "440 毫升",
         "truth": false,
-        "reason": "把加水量與原液量混淆。"
+        "reason": "把總量五百直接減有效成分六十，忽略原液中還有非有效成分。"
       }
     ],
-    "misconceptionTarget": "把成分量直接當溶液量",
+    "misconceptionTarget": "把有效成分六十毫升直接當成原液量，或用總量減成分量當加水量。",
     "prerequisiteCheck": "只需先備 system-rate-problem，並使用本技能「基礎混合問題」。",
     "estimatedTimeSec": 90,
     "unitCheck": "毫升。",
@@ -968,7 +1017,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e3901ee0dc0d26fc5141d604323338963c0a484da46e3390ec98b69aabd33579"
+    "contentSha256": "b9206771a470d54438972ceff3d0a8ad433dbbf921c4199ef67afa3cb2b62d56"
   }
 ];
 
@@ -987,18 +1036,17 @@ export const CONSTRUCTED_RESPONSES = [
       "百分率轉小數。"
     ],
     "standardSolution": [
-      "設10%為 x 克、30%為 y 克。",
-      "x+y=600，0.1x+0.3y=0.2×600=120。",
-      "減0.1(x+y)=60，得0.2y=60，y=300，x=300。",
-      "驗算鹽量30+90=120克。"
+      "設百分之十食鹽水 x 克、百分之三十食鹽水 y 克。總量六百克給出 x+y=600。",
+      "目標食鹽量為 0.2×600=120 克，所以 0.1x+0.3y=120。減去 0.1(x+y)=60，得 0.2y=60，因此 y=300、x=300。",
+      "驗算總量 300+300=600 克；食鹽量為 0.1×300+0.3×300=30+90=120 克，濃度為 120÷600=20%。"
     ],
     "alternativeMethods": [
       "目標20%是兩濃度中點，所以等量，再用總量得各300克。"
     ],
     "reasoningSteps": [
-      "總量。",
-      "成分量。",
-      "求解與驗算。"
+      "以兩種原液重量建立總量守恆方程式。",
+      "計算目標食鹽量並建立成分量守恆式，解出兩種用量。",
+      "回算總重量、食鹽量與最終濃度三項結果。"
     ],
     "rubric": [
       {
@@ -1036,7 +1084,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "d170f5671216aa947911a8ede5303ac0543d2ac5e236beb9ec7eb4d37b9b7d24"
+    "contentSha256": "2bf11f048740d45a1f16365eda08380931195abed793a31514cc4bbc06c582b0",
+    "commonErrors": [
+      "把百分之十與百分之三十直接相加成百分之四十，沒有依用量加權。",
+      "成分式右邊誤寫成二十，未計算六百克的百分之二十是一百二十克。",
+      "只驗算兩種用量相加為六百，沒有再核對食鹽量守恆。"
+    ]
   },
   {
     "questionId": "u04-s013-cr002",
@@ -1052,18 +1105,17 @@ export const CONSTRUCTED_RESPONSES = [
       "列總量與總價。"
     ],
     "standardSolution": [
-      "設500元豆 x、800元豆 y。",
-      "x+y=15，500x+800y=620×15=9300。",
-      "減500(x+y)=7500，300y=1800，y=6，x=9。",
-      "620介於500與800之間，且兩用量非負，合理。"
+      "設每公斤五百元咖啡豆 x 公斤、每公斤八百元咖啡豆 y 公斤。由總重量列 x+y=15。",
+      "目標總成本為 620×15=9300 元，所以 500x+800y=9300。減去 500(x+y)=7500 得 300y=1800，因此 y=6、x=9。",
+      "驗算總成本 9×500+6×800=4500+4800=9300 元，平均為 9300÷15=620 元／公斤。六百二十介於五百與八百之間，且兩用量都非負，結果合理。"
     ],
     "alternativeMethods": [
       "全用低價豆為基準，多1800元，每公斤高價豆多300元，所以高價豆6公斤。"
     ],
     "reasoningSteps": [
-      "計算目標成本。",
-      "求解。",
-      "範圍與非負檢查。"
+      "先把平均單價乘總重量，換算成目標總成本。",
+      "以總重量與總成本建立聯立方程式，求兩種咖啡豆重量。",
+      "檢查平均價格落在兩單價之間，並回算成本與非負限制。"
     ],
     "rubric": [
       {
@@ -1101,7 +1153,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "2e2904864ac8e28ebb40844db9e3a770410f537061407991df48aab04623d010"
+    "contentSha256": "b4be6c8470a9329f7d94382df58ac7cd33b93e36dab2b4414aff5e1ceb808a10",
+    "commonErrors": [
+      "把平均每公斤六百二十元直接當成總成本，漏乘十五公斤。",
+      "列成本式時把五百與八百直接相加，沒有各自乘相應重量。",
+      "算出代數解後未檢查平均價範圍與重量非負，可能接受不合理結果。"
+    ]
   }
 ];
 

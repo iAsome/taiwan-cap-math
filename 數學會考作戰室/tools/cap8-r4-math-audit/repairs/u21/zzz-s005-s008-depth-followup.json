@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u21",
+  "batch": "022-u21-complete",
+  "skills": ["s005", "s006", "s007", "s008"],
+  "mc": [
+    {"questionId":"u21-s005-v003","expectedContentSha256":"95f688910b0aff1a734e94cb23b7096bab3ac2c77a041d6343d414100ff1c254","appendText":{"explanation":"用a=-3<0再確認開口向下，可排除只看原式第一個4x²的誤判。"}},
+    {"questionId":"u21-s005-v007","expectedContentSha256":"6419c61f610abadaab58441d13db223c0cbe5d49520c18a860d47042b4000ece","appendText":{"explanation":"最後二次項係數為-1小於0，故整體開口向下；一次項與常數項不改變此判定。"}},
+    {"questionId":"u21-s006-v001","expectedContentSha256":"342c0e00c0743ea2f6abd2278fd2e6bf8d258592b5abd77c4a7ebc97fe83833e","appendText":{"explanation":"任取相反方向的相同距離都會等高，這也直接驗證鏡射性。"}},
+    {"questionId":"u21-s006-v002","expectedContentSha256":"576a9604b6c04e262c9883bf0b6340df1ede258c048920b123ebacd38368e337","appendText":{"explanation":"代入x=-6時平方項恰為0，能再次確認頂點橫座標及對稱軸。"}},
+    {"questionId":"u21-s006-v003","expectedContentSha256":"0490cda37724ef9aabca2ed3cb6493a36c5b6194ca6c3246063071affdaaf8ce","appendText":{"explanation":"把x=2左右各取相同距離代入，所得函數值相等，也能驗證計算結果。"}},
+    {"questionId":"u21-s006-v004","expectedContentSha256":"73c0d79eacb43bf6959bde4704c18648712fca3e460f9635b241b7ea49c3ec67","appendText":{"explanation":"兩側距離相同且縱座標已知相同，正好符合拋物線的對稱條件。"}},
+    {"questionId":"u21-s006-v006","expectedContentSha256":"fe403303380d643fd375db9b4519f3e37f739704e61f532e597a5bc93332b1a1","appendText":{"explanation":"分子分母同為負數所以商為正，這一步可避免把軸誤算成-2。"}},
+    {"questionId":"u21-s006-v007","expectedContentSha256":"a34d46b1734ccf3f7822b0732a27612a10698313268fbcb03a31efb0f9b8a903","appendText":{"explanation":"零點中點法與一般式公式得到同一結果，形成兩條互相獨立的驗算。"}},
+    {"questionId":"u21-s006-v008","expectedContentSha256":"1aba5bd10241381d19aaeb816ae71647b9f1a1b461a95dde7db5e1a0079b40e9","appendText":{"explanation":"特別檢查m不為0，可確保原式仍是二次函數且分母有意義。"}},
+    {"questionId":"u21-s006-v009","expectedContentSha256":"5abe570bd8278f35422b311ea68ffc93b98fa727c8b33a58a23c09b23d71326a","appendText":{"explanation":"先保留分子前的負號再解方程，能避免把b的符號反向判錯；代回式中仍得3，前後一致。"}},
+    {"questionId":"u21-s006-v012","expectedContentSha256":"23f2fe802687ed1892df0da29e958b77838ac3af32b6cde7ef69185f63a35d6c","appendText":{"explanation":"係數0.5為正，中心線也通過最低點，符合槽底剖面開口向上的情境。"}},
+    {"questionId":"u21-s007-v001","expectedContentSha256":"fbfb0aee8f9cfe07adb19a19918ba46cbbcb7b4f237db4f9073d7040f2cbc60b","appendText":{"explanation":"因a為正，其他x都使平方項增加，所以(2,-4)確實是唯一最低點。"}},
+    {"questionId":"u21-s007-v002","expectedContentSha256":"b21546dc7f61cee5a6f1c81adb6c65fdd5de789c4951517b3618e85217b0b2a9","appendText":{"explanation":"將頂點橫座標代回括號得到0，也能排除把符號直接讀成正5的錯誤。"}},
+    {"questionId":"u21-s007-v003","expectedContentSha256":"1357e8fb83cdff4f77e792fcea4a1808ba9610df81414f9c7d682587b29528b0","appendText":{"explanation":"頂點、軸與開口三個條件須一起核對，不能只憑其中一項選圖。"}},
+    {"questionId":"u21-s007-v004","expectedContentSha256":"1f305202964b5742279a1f349f3196a6f2eb04351713a4173af89e545b7496d7","appendText":{"explanation":"依運算順序先算括號、平方、乘法再減3，能穩定得到點P(4,15)。"}},
+    {"questionId":"u21-s007-v006","expectedContentSha256":"d922aa31f4fa02963b4f099caf38e3a93cc65f605a6c97dbed47a64d1ae38369","appendText":{"explanation":"令x=0時兩種形式都得到-1，可用來快速驗證展開後的常數項。"}},
+    {"questionId":"u21-s007-v007","expectedContentSha256":"6ec74cff21ab9242d1d0e9cfae7959e17a16b04f8f2375e5a40d82263071f0c1","appendText":{"explanation":"將a=2代回便恢復9，並確認不是把水平距離2直接當成乘數。"}},
+    {"questionId":"u21-s007-v008","expectedContentSha256":"cc4eeb236c1726e1e04bc674ce452fd7f717278def222aa76295d0010574e114","appendText":{"explanation":"負係數表示由頂點向兩側下降，也與已知點的高度低於5一致；代回已知點可再次驗算。"}},
+    {"questionId":"u21-s007-v009","expectedContentSha256":"1f35d820111b416647bc2a094a5896c00c8da9f450f722dc3cda8e0d621a57ba","appendText":{"explanation":"把m=4/9代回原點後兩項相消為0，可驗證分數與符號都正確，也證明圖形確實通過原點。"}},
+    {"questionId":"u21-s007-v011","expectedContentSha256":"78dd7d2523fd3b8fde890495ac15f35f1cce35d789ae579e703290ac7e046ecd","appendText":{"explanation":"20也位於可行整數範圍內，所以頂點不是僅有代數意義而不可採用。"}},
+    {"questionId":"u21-s007-v012","expectedContentSha256":"91228cce34695bdc97bce0662f181ef592459b15a04013cfcaeb677c5e2ec398","appendText":{"explanation":"題目問的是最小函數值，因此答案應取縱座標-1，不是橫座標-2。"}},
+    {"questionId":"u21-s008-v001","expectedContentSha256":"ed8294ebeef3aa3b58942293386e425fa9687ae05b6c710b6ae81c30e6d484a7","appendText":{"explanation":"連續整數讓表格容易比較，也能立即檢查左右等距點是否等高。"}},
+    {"questionId":"u21-s008-v002","expectedContentSha256":"e0a834eea6c83af40ad0563b1258fa18b3d9566bda2a7502b71eec8d24c4c426","appendText":{"explanation":"平方項歸零後外係數不再產生貢獻，故函數值只剩常數3。"}},
+    {"questionId":"u21-s008-v003","expectedContentSha256":"bf1009ae1d6f0f7d1b501781c389c32e19d1c1bdcde288dd4283f0b65a1feb99","appendText":{"explanation":"這種等距檢查不必重新展開函數，並能避免代入負數時的符號失誤。"}},
+    {"questionId":"u21-s008-v004","expectedContentSha256":"5a56c2b35ac17580c2483b31f960fd3b92a6382a69755ae5d40104a55f3d212e","appendText":{"explanation":"正確點應為(2,0)，並與(-2,0)共同形成關於y軸的對稱點。"}},
+    {"questionId":"u21-s008-v005","expectedContentSha256":"abb0812b315f6db2a9aa283df769979e7f75e2a43977cf911af00575c03888a3","appendText":{"explanation":"外部係數與常數對兩點完全相同，因此最後函數值必然一致。"}},
+    {"questionId":"u21-s008-v006","expectedContentSha256":"365883cab4e7ec8805384d8b4aaf4a876124aecd98be1662741f42e26fbe585c","appendText":{"explanation":"把數值依距軸遠近排列，可同時確認最低點為-1且左右兩欄成對。"}},
+    {"questionId":"u21-s008-v007","expectedContentSha256":"be4089743625880a6515b175740973f7849d74a63b3134d0431e5aa78ed8f82c","appendText":{"explanation":"配對時應先比較到軸的距離，不能只把橫座標取相反數。"}},
+    {"questionId":"u21-s008-v008","expectedContentSha256":"820f5b46fbd84830cabb2710ef44446b9dc71f7028510078de7490283e238af6","appendText":{"explanation":"左右數值成對也證實x=2是對稱軸，而不是只憑中央欄猜測。"}},
+    {"questionId":"u21-s008-v010","expectedContentSha256":"453d503d1068657978e09eab4510b5b57be9cf1efab1559ad48f5c7dffd370a4","appendText":{"explanation":"三個值依速度增加而加速上升，與開口向上的二次關係一致。"}},
+    {"questionId":"u21-s008-v011","expectedContentSha256":"4c8046e18b46c287608fab66ffd9eb0d2036dd634ce8a71a9b38bffb57660007","appendText":{"explanation":"也可用(6+2)÷2=4驗證兩個橫座標的中點正是對稱軸。"}}
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId":"u21-s005-lecture-r1",
+      "expectedContentSha256":"cca1537df55470f5e95100d659837bcb9416501a0c2ec6738f0cc34d9dbb8b5d",
+      "set":{"workedExamples":[
+        {"exampleId":"L1","prompt":"判斷 y=-4x²+7x-1 的開口。","solutionSteps":["x² 係數 a=-4。","a<0。"],"answer":"開口向下。","why":"當|x|增大時，最高次項-4x²主導函數值並使兩端下降；一次項7x與常數項只影響位置，不會改變開口方向。這也說明判定時須先找最高次項，不能受7x的正號干擾。"},
+        {"exampleId":"L2","prompt":"判斷 y=3(x+2)²-5 的開口。","solutionSteps":["平方項外係數 a=3。","a>0。"],"answer":"開口向上。","why":"(x+2)²恆為非負，乘上正數3後仍非負，因此y至少為-5且在x=-2取到；頂點最低正好表示開口向上。代入頂點兩側等距的數也會得到同高點，可進一步驗證。"},
+        {"exampleId":"L3","prompt":"整理 y=5x²-(8x²+2x) 後判斷開口。","solutionSteps":["合併二次項得 -3x²-2x。","a=-3<0。"],"answer":"開口向下。","why":"括號前的負號要同時分配給8x²與2x，整理後二次項係數是5-8=-3；不能只看原式最先出現的5。完成分配與同類項合併後再讀a，才不會漏掉外部負號。"},
+        {"exampleId":"L4","prompt":"某拋物線頂點為 (1,-9) 且開口向上，a 的符號？","solutionSteps":["開口向上直接對應 a>0。","頂點 y=-9 不影響符號。"],"answer":"a>0。","why":"頂點縱座標-9只把整條拋物線上下平移，開口方向仍由平方項係數決定；已知向上便能直接判定a為正。"},
+        {"exampleId":"L5","prompt":"y=-(x-6)²+20 為何有最大值？","solutionSteps":["a=-1<0，開口向下。","頂點是最高點。"],"answer":"因開口向下，最大值在頂點。","why":"因為(x-6)²≥0，所以-(x-6)²≤0，進而y≤20；只有x=6時平方項為0並取到20，故20是最大值。其餘任何x都會扣掉一個正數，函數值必小於20，這也證明最大值唯一在頂點取得。"}
+      ]}
+    },
+    {
+      "lectureId":"u21-s006-lecture-r1",
+      "expectedContentSha256":"482ef9f2b654edff06d0ed74087563cc6ccb8ccd4e634f2484c85d2fd20da5a3",
+      "set":{"workedExamples":[
+        {"exampleId":"L1","prompt":"求 y=2(x-5)²+1 的對稱軸。","solutionSteps":["頂點式中 h=5。","軸為 x=h。"],"answer":"x=5。","why":"x=5會使平方項為0並給出頂點；離5等距的兩個x值平方後相同，所以圖形左右互為鏡射，對稱軸就是x=5。外係數2與常數1雖改變寬窄和高度，仍不會移動這條軸。"},
+        {"exampleId":"L2","prompt":"求 y=-3(x+4)²+7 的對稱軸。","solutionSteps":["x+4=x-(-4)，所以 h=-4。","軸為 x=-4。"],"answer":"x=-4。","why":"括號在x=-4時才等於0，因此頂點橫座標是-4；把括號內的+4直接讀成軸x=4會忽略頂點式的反號規則。令x=-4+d與-4-d代入會得到相同值，也能驗證這條軸。"},
+        {"exampleId":"L3","prompt":"求 y=2x²-12x+5 的對稱軸。","solutionSteps":["a=2、b=-12。","x=-(-12)/(2×2)=3。"],"answer":"x=3。","why":"一般式的軸為x=-b/(2a)，代入a=2、b=-12得到3；常數項c只上下平移圖形，不會進入對稱軸公式。分子-b為正12且分母為4，分別確認符號與倍數可避免算成-3或6。"},
+        {"exampleId":"L4","prompt":"同高點 x=-7 與 x=1，求軸。","solutionSteps":["平均為 (-7+1)/2=-3。","兩點到 -3 都是 4 單位。"],"answer":"x=-3。","why":"拋物線上等高的兩點會分居對稱軸兩側且距離相同，因此軸在橫座標中點；-7與1的中點為-3，可用兩側距離皆4驗算。"},
+        {"exampleId":"L5","prompt":"圖形與 x 軸交於 x=2、x=8，求軸。","solutionSteps":["兩交點 y 都是 0，屬等高點。","平均 (2+8)/2=5。"],"answer":"x=5。","why":"兩個零點的縱座標同為0，所以必為一對等高對稱點；其橫座標平均是5，且2與8到5的距離都為3。這個中點不受開口向上或向下影響，兩種情形都使用同一條對稱軸。"}
+      ]}
+    },
+    {
+      "lectureId":"u21-s007-lecture-r1",
+      "expectedContentSha256":"cb6e02194ca38fade1de23f296c17e49d11e3a142fae9e4d75834b51e390340e",
+      "set":{"workedExamples":[
+        {"exampleId":"L1","prompt":"讀取 y=2(x-3)²-5 的頂點與軸。","solutionSteps":["h=3、k=-5。","頂點 (3,-5)，軸 x=3。"],"answer":"頂點 (3,-5)，對稱軸 x=3。","why":"令x=3會使平方項為0，得到唯一最低值-5，因此頂點是(3,-5)；左右等距的輸入會給相同函數值，軸就是x=3。正的外係數還能確認此頂點是最低點，而不是最高點。"},
+        {"exampleId":"L2","prompt":"讀取 y=-(x+4)²+1。","solutionSteps":["x+4=x-(-4)，h=-4。","a=-1，開口向下，k=1。"],"answer":"頂點 (-4,1)，軸 x=-4，開口向下。","why":"x+4在x=-4時為0，所以頂點橫座標是-4；平方項外係數為負使其他函數值都不超過1，故頂點最高且開口向下。代入軸兩側等距點時平方相同，也會得到相同高度。"},
+        {"exampleId":"L3","prompt":"頂點 (2,3)，且圖過 (4,11)，求函數。","solutionSteps":["設 y=a(x-2)²+3。","11=4a+3，得 a=2。"],"answer":"y=2(x-2)²+3。","why":"已知頂點先固定h=2、k=3，再用非頂點(4,11)決定伸縮係數；水平距離2平方為4，所以11-3=4a並得a=2。把a代回後同時恢復頂點與已知點，兩項條件都滿足才算完成。"},
+        {"exampleId":"L4","prompt":"展開 y=(x-1)²-4。","solutionSteps":["(x-1)²=x²-2x+1。","再減 4 得 x²-2x-3。"],"answer":"y=x²-2x-3。","why":"平方公式中的中間項是2·x·(-1)=-2x，不能只平方首尾兩項；最後把常數1與-4合併才得到-3。令x=0時原式與展開式都得-3，可快速檢查常數項。"},
+        {"exampleId":"L5","prompt":"y=-3(x-2)²+8 的最大值。","solutionSteps":["a<0，頂點是最高點。","頂點 y=k=8。"],"answer":"最大值 8。","why":"(x-2)²≥0，乘以-3後不大於0，所以y不可能超過8；當x=2時平方項為0且恰好取到8，因此最大值為8。其他輸入都會從8扣掉正數，故不可能出現另一個更大的值。"}
+      ]}
+    },
+    {
+      "lectureId":"u21-s008-lecture-r1",
+      "expectedContentSha256":"621967387b8354be6e3107e22fb50ded5ff74e5e57aa04efe414d1f9fba4d07b",
+      "set":{"workedExamples":[
+        {"exampleId":"L1","prompt":"為 y=(x-2)²-1 選五個最方便的 x。","solutionSteps":["對稱軸 x=2。","選 0、1、2、3、4。"],"answer":"x=0,1,2,3,4。","why":"以對稱軸x=2為中心，各向左右選兩個等距整數，可同時呈現頂點與兩組對稱點；這樣計算少且最容易檢查表格是否左右一致。"},
+        {"exampleId":"L2","prompt":"完成上題 y 值。","solutionSteps":["距軸 2、1、0、1、2。","平方後減 1 得 3、0、-1、0、3。"],"answer":"y=3,0,-1,0,3。","why":"函數值只取決於到x=2的距離平方，因此距離序列2、1、0、1、2必產生對稱的縱座標序列，可用首尾與次首尾相等驗算。"},
+        {"exampleId":"L3","prompt":"y=-2(x+1)²+4 在 x=-3 與 x=1 的值。","solutionSteps":["兩者距軸 x=-1 都是 2。","y=-2×4+4=-4。"],"answer":"兩者皆 -4。","why":"-3與1分別在軸x=-1左右2單位，代入後括號值雖一正一負，平方都為4；因此兩點等高且函數值同為-4。先比較到軸距離再計算，可避免在負數括號中發生符號錯誤。"},
+        {"exampleId":"L4","prompt":"表格左右不對稱：x=1,2,4，能否作圖？","solutionSteps":["可以逐點代入。","但若補上 x=0 與 x=3 等對稱點，形狀更可靠。"],"answer":"可以，但宜補對稱點。","why":"三點可以提供位置線索，但若取樣偏向同一側，曲線外形較難核對；補上關於對稱軸成對的點，可立即檢查等高關係並降低作圖誤差。"},
+        {"exampleId":"L5","prompt":"若點 (2,-1) 是向上拋物線最低點，連線時要注意什麼？","solutionSteps":["曲線在該點改變下降與上升方向。","兩側應平滑上升，不可穿過更低 y。"],"answer":"以 (2,-1) 為頂點平滑向上延伸。","why":"頂點既是最低點，曲線接近它時應先下降、通過後再上升，且兩側平滑對稱；若畫成折線或穿到y<-1，便違反向上拋物線的頂點性質。"}
+      ]}
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

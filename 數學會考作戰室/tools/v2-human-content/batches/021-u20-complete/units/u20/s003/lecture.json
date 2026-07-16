@@ -103,6 +103,11 @@
       "step": 4,
       "instruction": "把理由代回句子閱讀。",
       "check": "能否自然回答『為什麼』？"
+    },
+    {
+      "step": 5,
+      "instruction": "用完整的「因為…所以…」句子重讀該步。",
+      "check": "所選理由是否正好以前句為條件並推出後句，而非方向相反？"
     }
   ],
   "workedExamples": [
@@ -110,19 +115,23 @@
       "exampleId": "L1",
       "prompt": "M是AB中點，為何AM＝MB？",
       "solutionSteps": [
-        "關鍵詞是中點。",
-        "中點定義包含兩段等長。"
+        "找出前提中的關鍵名詞「中點」。",
+        "展開中點會把原線段分成兩段等長的定義。",
+        "配對到AB兩側，得到AM＝MB。"
       ],
-      "answer": "中點的定義。"
+      "answer": "中點的定義。",
+      "why": "AM＝MB是把「M為AB中點」直接展開所得，不需要平行、垂直或全等條件；選最直接的中點定義，能精確對應這一步的前提與結論。"
     },
     {
       "exampleId": "L2",
       "prompt": "已知△ABC≅△DEF，為何BC＝EF？",
       "solutionSteps": [
-        "依全等式B↔E、C↔F。",
-        "BC與EF為對應邊。"
+        "由全等式順序讀出B↔E、C↔F。",
+        "確認BC的兩端分別對應E、F，所以對應邊為EF。",
+        "使用全等三角形對應邊相等得到BC＝EF。"
       ],
-      "answer": "全等三角形對應邊相等。"
+      "answer": "全等三角形對應邊相等。",
+      "why": "全等只保證正確配對的對應邊相等；先按全等式順序找出B、C各自的對應點，才不會因圖形旋轉或字母位置而選錯邊。"
     }
   ],
   "commonMistakes": [
@@ -140,6 +149,11 @@
       "mistake": "全等式配錯對應邊。",
       "why": "未按頂點順序。",
       "correction": "先寫頂點配對。"
+    },
+    {
+      "mistake": "選了名稱正確但方向相反的性質。",
+      "why": "例如平行推出等角與等角判定平行的前提、結論正好互換。",
+      "correction": "先標出本步已有條件與要得到的敘述，再選方向一致的理由。"
     }
   ],
   "selfCheck": [
@@ -194,5 +208,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "dd29ee7672d22335109dc630f8225a955a9ab93e37eb20b839c2ab5839a1e218"
+  "contentSha256": "5cc73c38250763d07872204bcf01268600570ffbb5e16804b201b8e9f5331bdb"
 }

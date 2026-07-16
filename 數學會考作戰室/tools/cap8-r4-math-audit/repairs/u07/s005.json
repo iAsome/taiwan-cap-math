@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u07",
+  "batch": "008-u07-complete",
+  "skills": ["s005"],
+  "mc": [
+    {
+      "questionId": "u07-s005-v001",
+      "expectedContentSha256": "115d5086e0b70cf38936c83a5302968f607779dc7a567da0cd42f633bbe185b5",
+      "appendText": {"explanation": "端點-4使左右相等而不符合嚴格大於；取-5時左式15>12成立，驗證向左範圍，而較大的零代入不成立。", "misconceptionTarget": "也可能正確反向後把十二除負三的端點錯算成正四。"},
+      "appendArray": {"steps": ["用-5與-4代回原式，檢查方向及端點排除。"]}
+    },
+    {
+      "questionId": "u07-s005-v002",
+      "expectedContentSha256": "904501e3ab10322432e512b78d915481aceb3aeb816384844e382897fca6d4a3",
+      "appendText": {"explanation": "x=-7使兩邊相等而成立，x=-8也成立，x=0亦成立，確認是含端點的右向範圍。負號消去等同兩邊同乘負一並反向。", "misconceptionTarget": "還可能只把-x改為x，卻忘記右邊七也要乘負一。"},
+      "appendArray": {"steps": ["代入-7、-8與0，交叉確認x≥-7。"]}
+    },
+    {
+      "questionId": "u07-s005-v003",
+      "expectedContentSha256": "f7d0aa9494ea5303aa1c7272fc3dc86bd1906429fc69b3e02ae19f9db086c81f",
+      "appendText": {"explanation": "數線上-8位於-2左側，故原來較大的4乘負二後反而變成較小的-8。這正是負數乘法反轉大小次序的具體例子。", "misconceptionTarget": "也可能把兩邊乘積算成正八與正二，漏掉乘數的負號。"},
+      "appendArray": {"steps": ["計算兩乘積並在數線比較-8與-2的位置。"]}
+    },
+    {
+      "questionId": "u07-s005-v004",
+      "expectedContentSha256": "94e6978d56651612d11a17f250f8f09712bb02c93cd27bde9e8e010f834dfd7e",
+      "appendText": {"explanation": "原式先同減五得負二x大於等於六，再除負二得x小於等於負三。x=-3代入左式11而成立，x=-2使左式9不足11。", "misconceptionTarget": "還可能只反向不等號，卻把六除負二的端點寫成正三。"},
+      "appendArray": {"steps": ["代入-3與-2驗證端點及x≤-3方向。"]}
+    },
+    {
+      "questionId": "u07-s005-v005",
+      "expectedContentSha256": "6d546546c8f9cf90fb88e1467532fea61c78704b6759a8d80c5068d39d55285b",
+      "appendText": {"explanation": "x=-4使左右同為15而不符合嚴格小於，x=0使-1<15成立，確認向右且空心，所以解集從負四右方開始。", "misconceptionTarget": "還可能只求出端點-4，沒有用測試值決定射線方向。"},
+      "appendArray": {"steps": ["用-4與0代入原式，檢查嚴格端點和右向範圍。"]}
+    },
+    {
+      "questionId": "u07-s005-v006",
+      "expectedContentSha256": "5d7e9cf575768fee67b30cf1eff5db34f1f749cf4bb492bb72b093e6cad42c2e",
+      "appendText": {"explanation": "加減負數仍是平移且保序；只有除以負三會把數線左右次序翻轉。", "misconceptionTarget": "還可能認為同乘正四也變號，未依乘除因子的正負分類。"},
+      "appendArray": {"steps": ["逐項分類為加減、乘正數與除負數，找唯一反序操作。"]}
+    },
+    {
+      "questionId": "u07-s005-v007",
+      "expectedContentSha256": "110cea5456b048fbd3129795f9207d08e7dae0280026755c3481babd94970875",
+      "appendText": {"explanation": "整理得負四x大於十二，除負四得x小於負三。x=-4代入左式-20、右式-24而成立；端點-3兩邊同為-17不符合。", "misconceptionTarget": "還可能把三x減七x算成正四x，導致端點與方向都錯。"},
+      "appendArray": {"steps": ["以-4與-3回代原式，驗證x<-3。"]}
+    },
+    {
+      "questionId": "u07-s005-v008",
+      "expectedContentSha256": "1a158fdcc3e2680fe75036b0c1aa274fd2d4b3e84a1a58117a7fa920c8385092",
+      "appendText": {"explanation": "展開為負六x加十小於等於四，整理得x大於等於一。x=1使左式4與右式相等而成立，x=0使左式10>4失敗。", "misconceptionTarget": "還可能只把負二乘到三x，漏乘括號內的負五。"},
+      "appendArray": {"steps": ["代入1與0檢查端點包含及x≥1方向。"]}
+    },
+    {
+      "questionId": "u07-s005-v009",
+      "expectedContentSha256": "0c461759e53318e746d8111e8d29b9a7dfa1d8818e5d0d7d33e4f152b7467bff",
+      "appendText": {"explanation": "因負a實為負係數，除法後方向必須反轉。a=5時原式-5x>10，除負五得到x<-2，與題給解集完全相同。", "misconceptionTarget": "也可能只看到a>0就當除數正數，忽略實際係數是-a<0。"},
+      "appendArray": {"steps": ["把a=5代回並重新除以-5，驗證方向與端點。"]}
+    },
+    {
+      "questionId": "u07-s005-v010",
+      "expectedContentSha256": "357c48a33e6077fb1b100fe3c7a0cf7735f890304719e25621d7828863ff481a",
+      "appendText": {"explanation": "四小時後恰-20不符合低於，五小時後-23才成立，故完整小時最少5，整數時數必須越過四的端點。", "misconceptionTarget": "還可能把溫度越負誤認為越高，或將t>4的整數答案寫4。"},
+      "appendArray": {"steps": ["比較4與5小時後溫度，驗證嚴格門檻和取整。"]}
+    },
+    {
+      "questionId": "u07-s005-v011",
+      "expectedContentSha256": "089cb1ec633f6dbc48b37a6e3ee9efabf04cb35c495fea9eee319cc6065468ed",
+      "appendText": {"explanation": "六分鐘高度-24尚未達標，七分鐘恰-28且≤包含等號，所以最少7分鐘。下降量乘時間應從零高度扣除。", "misconceptionTarget": "還可能把下降四公尺寫成高度加四，讓情境方向相反。"},
+      "appendArray": {"steps": ["用6與7分鐘的高度做相鄰整數檢查。"]}
+    },
+    {
+      "questionId": "u07-s005-v012",
+      "expectedContentSha256": "5b2c246ae06a9021dce34764291818c2d4807250eca2cc1d011a8f0e278e37cf",
+      "appendText": {"explanation": "五日後餘450仍大於300，六日後恰300而失敗；故最大非負整數日數為5。完整日限制排除分數天的解釋。", "misconceptionTarget": "還可能看到d<6就回答端點六，沒有套用嚴格條件與完整日。"},
+      "appendArray": {"steps": ["比較第5與第6日餘額，確認最大整數解。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u07-s005-cr001",
+      "expectedContentSha256": "6011b406ef4ded192a7fa8f3f679f5d97f8e3bec0e436d138830ca0f8f4b8e85",
+      "set": {
+        "fullCreditSolution": ["由-4x+5≥17兩邊同減5，得到-4x≥12。", "兩邊同除以負數-4時大小次序反轉，≥改為≤，所以x≤-3。", "取解集內x=-4，左式21≥17為真。", "取解集外x=0，左式5≥17為假；內外測試共同排除錯向x≥-3。", "端點x=-3使左式17與右式相等，因含等號而成立。"],
+        "reasoningSteps": ["同減5整理常數。", "除負四並反向求出x≤-3。", "用-4檢查解集內值。", "用0檢查解集外值。", "用-3確認端點包含。"],
+        "commonErrors": ["兩邊除以-4後仍保留≥，沒有反轉大小次序。", "代回x=-4時把負四乘負四算成負十六，導致正確解被誤判。"]
+      }
+    },
+    {
+      "questionId": "u07-s005-cr002",
+      "expectedContentSha256": "076078c7e737a45136100d3bad2e3a9b8399ef59ab18480912ce9032b987b3c7",
+      "set": {
+        "fullCreditSolution": ["第一題x-6<2只需兩邊同加6，得到x<8；加減相同數是平移，不改大小次序。", "第二題-3x<12要兩邊同除以負數-3，因此<反向成>，得到x>-4。", "所以小明的說法錯在只看式子是否出現負號，而沒有辨認實際操作。", "精確規則是：只有不等式兩邊同乘或同除同一負數時必須反向；同加減任意數及乘除正數都不反向。", "以x=0驗算兩題都成立，可檢查x<8與x>-4的方向。"],
+        "reasoningSteps": ["解加減型例題並保持方向。", "解負係數例題並於除負數時反向。", "比較兩題的操作種類。", "寫出限定乘除負數的精確規則。", "選測試值回原式驗算。"],
+        "commonErrors": ["看到x-6中的負號就反向，混淆減法與除以負數。", "把規則寫成所有除法都變號，沒有明定乘數或除數必須為負。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u07-s005-lecture-r1",
+      "expectedContentSha256": "4eb9bdf939159c8219d3ad606d53eb66f3c0eb994fdecb9703d22d15caa509ed",
+      "appendArray": {"conceptNarrative": ["變號規則應由實際操作判斷而非負號外觀；完成除法後要同時計算端點正負，並用解集內、端點及解集外的數回代原式，確認方向沒有翻錯。"]},
+      "set": {
+        "method": [
+          {"step": 1, "instruction": "先以同加減整理出未知數項。", "check": "移項本身不反向不等號。"},
+          {"step": 2, "instruction": "辨認最後乘數或除數的正負。", "check": "只有負數乘除需要反向。"},
+          {"step": 3, "instruction": "除以負係數時同步反向並計算端點。", "check": "數值正負和符號方向都已處理。"},
+          {"step": 4, "instruction": "把結果改寫成x在左的標準範圍。", "check": "交換左右仍維持同一大小語意。"},
+          {"step": 5, "instruction": "取解集內、端點及外部值回原式驗算。", "check": "三個測試值的真假符合答案。"}
+        ],
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "解-2x>8。", "solutionSteps": ["兩邊同除以-2。", "因除負數將>反成<。", "得到x<-4並用-5、-4驗算。"], "answer": "x<-4。", "why": "除以負二會把數線左右次序翻轉，因此必須同時反向不等號。負五代入使十>八成立，端點負四使兩邊相等而不成立，驗證嚴格向左範圍。"},
+          {"exampleId": "L2", "prompt": "解6-3x≤15。", "solutionSteps": ["同減6得-3x≤9。", "除以-3並把≤反成≥。", "得到x≥-3，以-3、-4驗算。"], "answer": "x≥-3。", "why": "整理常數的同減六不會變號，真正需要反向的是最後除以負三。端點負三讓兩邊相等而成立，負四則使左式十八大於十五而失敗。"},
+          {"exampleId": "L3", "prompt": "解4x-7>6x+1。", "solutionSteps": ["同減6x得-2x-7>1。", "同加7得-2x>8。", "除以-2反向得x<-4並驗算。"], "answer": "x<-4。", "why": "兩邊有未知數時先集中會得到負係數，但前兩次同加減仍不改方向。只有除以負二時才反向；以負五及負四代入可確認端點和方向。"},
+          {"exampleId": "L4", "prompt": "說明為何-5<-2。", "solutionSteps": ["從已知5>2開始。", "兩邊同乘-1得到-5與-2。", "負數乘法翻轉次序，所以改成-5<-2。"], "answer": "乘負數使大小順序反轉。", "why": "乘負一相當於把數線上的點關於零鏡射，原來右側的五會移到更左的負五，原來的二移到負二。因此原本的大於必須改成小於，才能保持真值。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

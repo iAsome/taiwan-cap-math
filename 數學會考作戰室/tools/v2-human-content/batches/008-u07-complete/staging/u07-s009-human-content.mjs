@@ -129,7 +129,8 @@ export const LECTURE = {
         "設買 x 本，28x≤200。",
         "x≤50/7≈7.14；x 為非負整數。"
       ],
-      "answer": "最多 7 本。"
+      "answer": "最多 7 本。",
+      "why": "總價等於單價乘本數，不超過預算形成上界。七本花一百九十六元可行，八本花二百二十四元超支，因此要依最大可行整數向下取七。"
     },
     {
       "exampleId": "L2",
@@ -138,7 +139,8 @@ export const LECTURE = {
         "35+8t≥99。",
         "8t≥64，t≥8。"
       ],
-      "answer": "至少 8 分鐘。"
+      "answer": "至少 8 分鐘。",
+      "why": "原有水量是固定部分，每分鐘加水是變動部分；至少九十九建立下界。八分鐘時正好九十九公升，而七分鐘不足，所以八是最小可行時間。"
     },
     {
       "exampleId": "L3",
@@ -147,7 +149,8 @@ export const LECTURE = {
         "70+25d≤320。",
         "25d≤250，d≤10，且 d≥0。"
       ],
-      "answer": "0≤d≤10 公里。"
+      "answer": "0≤d≤10 公里。",
+      "why": "基本費即使零公里也存在，不能漏掉；預算給出里程上界十公里，距離本身又不能為負。兩項限制取交集後才是完整情境範圍。"
     },
     {
       "exampleId": "L4",
@@ -156,7 +159,8 @@ export const LECTURE = {
         "1400+180n>5000。",
         "180n>3600，所以 n>20；n 為整數。"
       ],
-      "answer": "至少 21 人。"
+      "answer": "至少 21 人。",
+      "why": "超過五千使用嚴格大於，二十人只會使總額剛好五千元而不符合。人數是整數，因此下一個二十一人才是最少可行人數。"
     }
   ],
   "commonMistakes": [
@@ -244,7 +248,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "5e0b0b7c57455e7727c4726150e15341653aa248ab358d35b266051b438eaa61"
+  "contentSha256": "3c56ed1fa026438e5fc873d68bb91c8b63e4d78dd44cd79698fc9ae3a6c293d7"
 };
 
 export const QUESTIONS = [
@@ -274,10 +278,11 @@ export const QUESTIONS = [
       "result": "18x≤100",
       "answerIndexVerified": 1
     },
-    "explanation": "x 枝的總價為 18x，不可超支表示總價不超過 100，所以 18x≤100。",
+    "explanation": "每枝筆十八元，買 x 枝的總價是十八乘 x。不可超支表示總價不能超過一百元，包含剛好花完一百元的情況，所以正確模型是 18x≤100。",
     "steps": [
-      "單價乘數量",
-      "總價與預算比較"
+      "設 x 為購買筆的枝數。",
+      "以單價乘數量，寫出總價 18x。",
+      "把總價與預算比較，列 18x≤100。"
     ],
     "optionAnalysis": [
       {
@@ -301,7 +306,7 @@ export const QUESTIONS = [
         "reason": "角色完全顛倒。"
       }
     ],
-    "misconceptionTarget": "單價與數量關係建模錯誤。",
+    "misconceptionTarget": "把單價與數量相加成十八加 x，沒有依總價等於單價乘數量建立模型。",
     "prerequisiteCheck": "需會乘法與不超過。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "金額皆為元。",
@@ -317,7 +322,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c204ce1919dd5fef64574f86b1d28a4770630b862de87de592baab7ee7c4015d"
+    "contentSha256": "7bffd482df74b8da7717fdc00b80d0154b4a5a0909b4d9cfa340cec704b4056f"
   },
   {
     "questionId": "u07-s009-v002",
@@ -345,10 +350,11 @@ export const QUESTIONS = [
       "result": "5 盒",
       "answerIndexVerified": 0
     },
-    "explanation": "設盒數 b，12+5b≥37。得 5b≥25，所以 b≥5，最少 5 盒。",
+    "explanation": "原有十二顆，再加 b 盒時增加五 b 顆。至少三十七顆表示 12+5b≥37，移項得 b≥5；盒數為整數且五盒剛好達標，所以最少需要五盒，四盒只有三十二顆而不足。",
     "steps": [
-      "列總數下限",
-      "解 b≥5"
+      "設盒數為 b，總數寫成 12+5b。",
+      "依至少三十七列 12+5b≥37，解得 b≥5。",
+      "檢查五盒得三十七顆，確定最少五盒。"
     ],
     "optionAnalysis": [
       {
@@ -372,7 +378,7 @@ export const QUESTIONS = [
         "reason": "可行但非最少。"
       }
     ],
-    "misconceptionTarget": "漏掉原有 12 顆或把至少寫錯。",
+    "misconceptionTarget": "漏掉原有十二顆，或把至少三十七寫成嚴格大於而多要求一盒。",
     "prerequisiteCheck": "需會兩步不等式。",
     "estimatedTimeSec": "65",
     "unitAndRoundingCheck": "單位顆與盒關係明確。",
@@ -388,7 +394,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b95c15e0538de38f731904ba77b4fd0418f7772403aa719c3915a8a6d66a3efa"
+    "contentSha256": "d741b407ed30ea4a5263c188d66425e8457ef2c3bf804b868b053a4cff28c13f"
   },
   {
     "questionId": "u07-s009-v003",
@@ -416,10 +422,11 @@ export const QUESTIONS = [
       "result": "5 段",
       "answerIndexVerified": 3
     },
-    "explanation": "15+8x≤55，得 8x≤40，所以 x≤5，最多 5 段。",
+    "explanation": "搭 x 段的費用包含十五元基本費與每段八元，故列 15+8x≤55。扣除基本費後得 8x≤40，所以 x≤5；五段剛好五十五元，六段要六十三元而超支，因此最大值確為五。",
     "steps": [
-      "列固定費加段費",
-      "解上界"
+      "把總費用寫成 15+8x。",
+      "依不超過五十五列不等式並解得 x≤5。",
+      "代入五段與六段，驗證最多五段。"
     ],
     "optionAnalysis": [
       {
@@ -443,7 +450,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「5 段」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "固定費漏算或最大整數解錯誤。",
+    "misconceptionTarget": "只計算每段費而漏掉基本費，或解出上界後未取最大整數段數。",
     "prerequisiteCheck": "需會固定費模型。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "金額元、段數整數。",
@@ -459,7 +466,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8cdd81db4bb7fc77afb0151bd0b29402043063618166b54338e101634023aab3"
+    "contentSha256": "03bfaa41fe3e91eefc72da4d09969e2b4c5d0e0b62f47d771ca55056f8b39df8"
   },
   {
     "questionId": "u07-s009-v004",
@@ -487,11 +494,11 @@ export const QUESTIONS = [
       "result": "6",
       "answerIndexVerified": 2
     },
-    "explanation": "剩餘 90−12x≥18，得 −12x≥−72；除以 −12 變號，x≤6，所以最大為 6。",
+    "explanation": "剪 x 段後剩餘長度為九十減十二 x，至少十八公分表示 90−12x≥18。移項得負十二 x 不小於負七十二，除以負十二須變號，得到 x≤6，所以最大整數是六。",
     "steps": [
-      "建立剩餘量",
-      "解負係數不等式",
-      "取最大整數"
+      "建立剩餘長度 90−12x。",
+      "列 90−12x≥18，整理成 −12x≥−72。",
+      "除以負十二並變號，得 x≤6，取最大整數六。"
     ],
     "optionAnalysis": [
       {
@@ -515,7 +522,7 @@ export const QUESTIONS = [
         "reason": "選項「8」更不符合。，與獨立解得的「6」不一致。"
       }
     ],
-    "misconceptionTarget": "剩餘量模型或負數變號錯誤。",
+    "misconceptionTarget": "把剪掉長度當剩餘長度，或除以負十二時沒有將不等號方向反轉。",
     "prerequisiteCheck": "需會負係數解法。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "長度皆為公分。",
@@ -531,7 +538,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "226778623179f965cc8dc89a4b37bfef27cf9d1a51279c79a0e34b059bcb0642"
+    "contentSha256": "280bd99b7247a4b1db684de54219acadf9471e226240c9bebde1970f63d1ea9d"
   },
   {
     "questionId": "u07-s009-v005",
@@ -559,11 +566,11 @@ export const QUESTIONS = [
       "result": "9 題",
       "answerIndexVerified": 0
     },
-    "explanation": "28+4n>60，得 4n>32，所以 n>8；整數最小為 9。",
+    "explanation": "再答對 n 題後總分為二十八加四 n。超過六十分使用嚴格大於，列 28+4n>60，解得 n>8；八題只能剛好六十分，不符合，最小整數是九題。",
     "steps": [
-      "列嚴格下限",
-      "解 n>8",
-      "取最小整數 9"
+      "寫出總分 28+4n。",
+      "依超過六十列 28+4n>60，解得 n>8。",
+      "檢查八題為六十分、九題為六十四分，取九題。"
     ],
     "optionAnalysis": [
       {
@@ -587,7 +594,7 @@ export const QUESTIONS = [
         "reason": "可行但非最少。"
       }
     ],
-    "misconceptionTarget": "把超過寫成 ≥，回答 8。",
+    "misconceptionTarget": "把超過六十誤寫成至少六十，因而讓剛好答對八題也被判為符合。",
     "prerequisiteCheck": "需會嚴格下界。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "分數與題數關係明確。",
@@ -603,7 +610,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ce4255593126076435c453e727ab34d228ab38e0a76d24c713f86f4b147a732d"
+    "contentSha256": "bc40792308139e32ae86b80f6aa76235b1f00f3bb1d5653d27f85387bc41bdd0"
   },
   {
     "questionId": "u07-s009-v006",
@@ -631,10 +638,11 @@ export const QUESTIONS = [
       "result": "13 分鐘",
       "answerIndexVerified": 2
     },
-    "explanation": "42+6t≤120，得 6t≤78，所以 t≤13，最多 13 分鐘。",
+    "explanation": "加水 t 分鐘後水量為四十二加六 t，避免溢出表示不超過容量一百二十。解 42+6t≤120 得 t≤13；十三分鐘正好一百二十公升，十四分鐘會超過。",
     "steps": [
-      "列容量上限",
-      "解 t≤13"
+      "寫出加水後水量 42+6t。",
+      "列容量限制 42+6t≤120，解得 t≤13。",
+      "檢查十三分鐘剛好裝滿、十四分鐘溢出。"
     ],
     "optionAnalysis": [
       {
@@ -658,7 +666,7 @@ export const QUESTIONS = [
         "reason": "選項「15 分鐘」更超量。，與獨立解得的「13 分鐘」不一致。"
       }
     ],
-    "misconceptionTarget": "忽略已有水量或把容量上限排除。",
+    "misconceptionTarget": "忽略原有四十二公升，或把剛好達容量也誤判為已經溢出。",
     "prerequisiteCheck": "需會固定量加速率。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "公升與分鐘單位一致。",
@@ -674,7 +682,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ad30ced9e49dbd1724a918304c58fdebcb540cae86bf2d0224ea367cf7dbbdef"
+    "contentSha256": "1974ca692ac172f7b6e04d7b27d12a208eac81a8a5a85202ad0c3ac027e91d1d"
   },
   {
     "questionId": "u07-s009-v007",
@@ -702,11 +710,11 @@ export const QUESTIONS = [
       "result": "6 件",
       "answerIndexVerified": 1
     },
-    "explanation": "未回收成本為 240−35x<65。得 −35x<−175；除以 −35 變號，x>5，所以至少 6 件。",
+    "explanation": "售出 x 件後尚未回收成本為二百四十減三十五 x。少於六十五要列 240−35x<65，整理得負三十五 x 小於負一百七十五；除負三十五變號，x>5，故至少六件。",
     "steps": [
-      "建立剩餘成本",
-      "負數除法變號",
-      "取最小整數"
+      "建立尚未回收成本 240−35x。",
+      "列 240−35x<65 並整理成 −35x<−175。",
+      "除以負三十五變號得 x>5，取最小整數六。"
     ],
     "optionAnalysis": [
       {
@@ -730,7 +738,7 @@ export const QUESTIONS = [
         "reason": "可行但非最少。"
       }
     ],
-    "misconceptionTarget": "嚴格剩餘上界與負數變號處理錯。",
+    "misconceptionTarget": "把尚未回收與已回收成本混淆，或負數除法未變號而得到錯誤件數方向。",
     "prerequisiteCheck": "需會負變動量。",
     "estimatedTimeSec": "100",
     "unitAndRoundingCheck": "金額元；忽略其他費用已明示於模型。",
@@ -746,7 +754,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "99498377f147def5e127397946f7fc945e76a6fbb3860b61304da73a7af947a9"
+    "contentSha256": "85b4b9c75d7e10b3129bd31ae0c611567b0880ff64563dd641782ace1f9c55c3"
   },
   {
     "questionId": "u07-s009-v008",
@@ -774,11 +782,11 @@ export const QUESTIONS = [
       "result": "0<w≤17",
       "answerIndexVerified": 3
     },
-    "explanation": "周長 2(8+w)≤50，得 16+2w≤50，所以 w≤17。寬必須為正，因此 0<w≤17。",
+    "explanation": "長八、寬 w 的長方形周長是 2(8+w)，不超過五十得 2(8+w)≤50，解出 w≤17。寬是幾何長度還必須大於零，因此完整範圍為 0<w≤17；端點十七可取，零不可取。",
     "steps": [
-      "建立周長式",
-      "解上界",
-      "加入長度為正"
+      "以周長公式寫出 2(8+w)≤50。",
+      "展開並解得 w≤17。",
+      "加入寬為正的自然限制 w>0，合併範圍。"
     ],
     "optionAnalysis": [
       {
@@ -802,7 +810,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「0<w≤17」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "只解代數而忘記幾何量必須為正。",
+    "misconceptionTarget": "只完成代數上界而忘記寬不能等於零或為負數，留下不合幾何意義的解。",
     "prerequisiteCheck": "需知道長方形周長。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "長度單位公分一致。",
@@ -818,7 +826,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "03328bf11bda84cd611e8083b1009a7b4cc7adcbd6f886d8ebbd4689c1eb7213"
+    "contentSha256": "129dd828da49ac996ff1970402e34aaaef78f2c8239e5c254b1a0499eb3020f5"
   },
   {
     "questionId": "u07-s009-v009",
@@ -846,10 +854,11 @@ export const QUESTIONS = [
       "result": "6 天",
       "answerIndexVerified": 2
     },
-    "explanation": "80+25d≥170+10d，得 15d≥90，所以 d≥6，至少 6 天。",
+    "explanation": "d 天後甲有 80+25d 元，乙有 170+10d 元。不少於表示甲至少與乙相等，列 80+25d≥170+10d，整理得 15d≥90，所以 d≥6，最少六天。第六天兩人各有二百三十元，第五天甲仍少十五元。",
     "steps": [
-      "建立兩個一次式比較",
-      "移項求 d≥6"
+      "分別寫出甲、乙 d 天後的金額。",
+      "列 80+25d≥170+10d。",
+      "解得 d≥6，並檢查第六天兩人同為二百三十元。"
     ],
     "optionAnalysis": [
       {
@@ -873,7 +882,7 @@ export const QUESTIONS = [
         "reason": "可行但非最少。"
       }
     ],
-    "misconceptionTarget": "比較兩個變動量時只看每日增加量。",
+    "misconceptionTarget": "只比較每天存款二十五與十元，忽略兩人起始金額相差九十元。",
     "prerequisiteCheck": "需會兩邊有未知數的移項。",
     "estimatedTimeSec": "100",
     "unitAndRoundingCheck": "金額元、時間天。",
@@ -889,7 +898,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4725fbcecf69ed9f24842c93907058cd43ee51e23cd16424f006664800496461"
+    "contentSha256": "95a973e441e450fdae351237650c685c05962077c10cf1ed4eb8ff3a554a2f91"
   },
   {
     "questionId": "u07-s009-v010",
@@ -917,11 +926,11 @@ export const QUESTIONS = [
       "result": "5 個",
       "answerIndexVerified": 3
     },
-    "explanation": "40+25n≤180，得 25n≤140，n≤5.6。n 為整數，所以最多 5 個時段。",
+    "explanation": "租 n 個完整時段的費用是四十元基本費加二十五 n 元。列 40+25n≤180 得 n≤5.6；時段數必須是整數且問最多，所以取不超過五點六的最大整數五。",
     "steps": [
-      "列基本費加時段費",
-      "求實數上界 5.6",
-      "取最大整數 5"
+      "建立費用式 40+25n。",
+      "列預算上限並解得 n≤5.6。",
+      "依完整時段限制向下取整，檢查五時段可行、六時段超支。"
     ],
     "optionAnalysis": [
       {
@@ -945,7 +954,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「5 個」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把 5.6 四捨五入為 6。",
+    "misconceptionTarget": "把五點六一般四捨五入成六，沒有用完整時段與預算可行性決定取整。",
     "prerequisiteCheck": "需會預算不等式與取整。",
     "estimatedTimeSec": "90",
     "unitAndRoundingCheck": "金額元；時間以 30 分鐘時段計，不需換算為分鐘回答。",
@@ -961,7 +970,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ffd9cc2ce4c10d5199d19049a9532b77c20b29aa316199e5d359e48e3609ee74"
+    "contentSha256": "253c7d1884bce6504e5da81c20d8e956e827e3535455a34c35f14f3e88e80cfc"
   },
   {
     "questionId": "u07-s009-v011",
@@ -989,10 +998,11 @@ export const QUESTIONS = [
       "result": "7 組",
       "answerIndexVerified": 1
     },
-    "explanation": "11+3g≥32，得 3g≥21，所以 g≥7，至少 7 組。",
+    "explanation": "目前十一人，邀請 g 組後增加三 g 人。至少三十二人列 11+3g≥32，解得 3g≥21、g≥7；七組增加二十一人，總數剛好三十二，所以最少七組，六組只有二十九人。",
     "steps": [
-      "建立人數下限",
-      "解最小整數"
+      "寫出邀請後人數 11+3g。",
+      "依至少成團列 11+3g≥32，解得 g≥7。",
+      "代入七組得三十二人，確認剛好達標。"
     ],
     "optionAnalysis": [
       {
@@ -1016,7 +1026,7 @@ export const QUESTIONS = [
         "reason": "選項「9 組」更非最少。，與獨立解得的「7 組」不一致。"
       }
     ],
-    "misconceptionTarget": "漏算目前人數或錯誤向上取整。",
+    "misconceptionTarget": "漏算現有十一人，或將至少三十二誤成超過三十二而多邀請一組。",
     "prerequisiteCheck": "需會固定量與每組增量。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "單位人與組。",
@@ -1032,7 +1042,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ea4d568bcb4400f8f4ff418a8009087b5ef631fb7cb330eb711ab87cf246f7d4"
+    "contentSha256": "0a0dda570acb16f876d11e344a6f1df591639373ebd633008d2ff3835935d89d"
   },
   {
     "questionId": "u07-s009-v012",
@@ -1060,11 +1070,11 @@ export const QUESTIONS = [
       "result": "4 盤",
       "answerIndexVerified": 0
     },
-    "explanation": "14+8p>45，得 8p>31，所以 p>3.875；完整盤數最小為 4。",
+    "explanation": "再烤 p 盤後共有十四加八 p 個。訂單要求超過四十五，列 14+8p>45，得到 p>3.875；盤數只能取完整整數，最小符合值是四，總數四十六個。",
     "steps": [
-      "列嚴格下限",
-      "解實數下界",
-      "取最小完整盤數"
+      "建立總數 14+8p。",
+      "列嚴格下限 14+8p>45，解得 p>3.875。",
+      "依完整盤數向上取到四，並驗算 14+8×4=46。"
     ],
     "optionAnalysis": [
       {
@@ -1088,7 +1098,7 @@ export const QUESTIONS = [
         "reason": "選項「6 盤」更非最少。，與獨立解得的「4 盤」不一致。"
       }
     ],
-    "misconceptionTarget": "將超過 45 誤成至少 45，或對完整盤數取整錯誤。",
+    "misconceptionTarget": "把超過四十五誤成至少四十五，或對最小完整盤數採用不合可行性的取整。",
     "prerequisiteCheck": "需會小數上取整概念。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "單位個與盤；不拆盤。",
@@ -1104,7 +1114,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9d9836756655f98d371d1db17f1e9614bc5d8fe3c70ccb2dc721bdfa2cda7373"
+    "contentSha256": "8c0757abe55413f194ec080d5ca9a179463ec5bc4a73378541fad3cd36d1f42b"
   }
 ];
 
@@ -1124,19 +1134,18 @@ export const CONSTRUCTED_RESPONSES = [
       "檢查最大值與下一值"
     ],
     "fullCreditSolution": [
-      "總人數為 17+4x，故 17+4x≤45。",
-      "4x≤28，所以 x≤7。",
-      "x 為非負整數，最多 7 站。",
-      "7 站後 45 人；8 站後 49 人，超載。"
+      "經過 x 站後總人數為原有十七人加每站四人，即 17+4x。",
+      "仍未超載表示人數不超過四十五，故列 17+4x≤45。",
+      "解得 4x≤28、x≤7；站數是非負整數，所以最多七站。",
+      "驗算七站後四十五人可行，八站後四十九人超載。"
     ],
     "alternativeMethod": [
       "也可先算剩餘座位 45−17=28，再以每站 4 人求 28÷4=7；仍需寫出不等式或說明上限。"
     ],
     "reasoningSteps": [
-      "辨認固定人數",
-      "建立每站增量",
-      "解容量不等式",
-      "情境整數化"
+      "辨認固定人數與每站增加量，建立總人數。",
+      "依載客上限列不等式並求站數上界。",
+      "套用整數限制，代入七與八驗證最大性。"
     ],
     "rubric": [
       {
@@ -1161,8 +1170,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "x 的單位為站，且 x≥0、x 為整數；人數不可為小數。",
     "answerOnlyPolicy": "只寫 7 站，最多 1 分。",
     "commonErrors": [
-      "漏掉已有 17 人",
-      "把「最多」寫成 ≥"
+      "漏掉車上已有十七人，只用每站四人與四十五比較。",
+      "把最多可載四十五人寫成總人數不小於四十五。",
+      "解得七後只驗證七站可行，沒有用八站確認七是最大值。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1175,7 +1185,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d0da3d97210a2f2b783db1446b8e6951df9e740c2fca6f228877783b868d22af"
+    "contentSha256": "4ba1071beba0640581fc12134b019c5f2f7e2c4733b41adc27471039ad5af503"
   },
   {
     "questionId": "u07-s009-cr002",
@@ -1192,19 +1202,18 @@ export const CONSTRUCTED_RESPONSES = [
       "用下一個整數驗證"
     ],
     "fullCreditSolution": [
-      "360+28n≤1200。",
-      "28n≤840，所以 n≤30。",
-      "最大可製作 30 個。",
-      "本題剛好為整數；一般若上界為 30.8，因 31 個會超過預算，仍須向下取 30，不能四捨五入。"
+      "製作 n 個的總成本為固定版費三百六十元加材料費二十八 n 元，故列 360+28n≤1200。",
+      "移項得 28n≤840，再除以二十八得 n≤30。",
+      "n 為非負整數，所以最大製作量是三十個；代入總成本正好一千二百元。",
+      "最大完整個數必須不超過上界；若上界是三十點八，三十一仍超支，所以應向下取三十而非四捨五入。"
     ],
     "alternativeMethod": [
       "先扣固定費 1200−360=840，再算 840÷28=30；用總費用 360+28×30=1200 驗證。"
     ],
     "reasoningSteps": [
-      "保留固定成本",
-      "解預算上限",
-      "辨認物品數為整數",
-      "解釋向下取整的原因"
+      "保留固定版費並建立總成本式。",
+      "解預算上限，得到製作量實數範圍。",
+      "加入整數限制並以相鄰值解釋向下取整。"
     ],
     "rubric": [
       {
@@ -1229,8 +1238,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "金額為元、n 的單位為個且為非負整數。",
     "answerOnlyPolicy": "只寫 30 個，最多 1 分。",
     "commonErrors": [
-      "漏固定版費",
-      "把最大完整個數用四捨五入決定"
+      "漏算三百六十元固定版費，導致可製作量被高估。",
+      "把物品數的小數上界用一般四捨五入，可能選到超出預算的數量。",
+      "只寫三十個而未代回檢查總成本是否恰好符合上限。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1243,7 +1253,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3dfbb561f235889939d32556f680716ff6d77c9a9b579d892143457d9426be7a"
+    "contentSha256": "1afc66a1bf9a76f5b5bc1bd3f869b8b02bb1d5e8f4c0e140f3838cdf92bb3e87"
   }
 ];
 
@@ -1254,7 +1264,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "c204ce1919dd5fef64574f86b1d28a4770630b862de87de592baab7ee7c4015d",
+    "contentSha256": "7bffd482df74b8da7717fdc00b80d0154b4a5a0909b4d9cfa340cec704b4056f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "每枝 18 元，x 枝即 18x 元；不超過 100 的符號是 ≤，故 18x≤100。",
@@ -1286,7 +1296,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "b95c15e0538de38f731904ba77b4fd0418f7772403aa719c3915a8a6d66a3efa",
+    "contentSha256": "d741b407ed30ea4a5263c188d66425e8457ef2c3bf804b868b053a4cff28c13f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "還差 37−12=25 顆，每盒 5 顆，25÷5=5；因至少允許剛好達標，最少 5 盒。",
@@ -1318,7 +1328,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "8cdd81db4bb7fc77afb0151bd0b29402043063618166b54338e101634023aab3",
+    "contentSha256": "03bfaa41fe3e91eefc72da4d09969e2b4c5d0e0b62f47d771ca55056f8b39df8",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "可用於段費的金額 55−15=40；40÷8=5。第 5 段剛好用完，第 6 段超支。",
@@ -1350,7 +1360,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "226778623179f965cc8dc89a4b37bfef27cf9d1a51279c79a0e34b059bcb0642",
+    "contentSha256": "280bd99b7247a4b1db684de54219acadf9471e226240c9bebde1970f63d1ea9d",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "最多可剪掉 90−18=72 公分；每段 12 公分，72÷12=6，故最多 6 段。",
@@ -1382,7 +1392,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "ce4255593126076435c453e727ab34d228ab38e0a76d24c713f86f4b147a732d",
+    "contentSha256": "bc40792308139e32ae86b80f6aa76235b1f00f3bb1d5653d27f85387bc41bdd0",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "答對 8 題增加 32 分，總分 60，不符合「超過」；答對 9 題得 64，故最少 9。",
@@ -1414,7 +1424,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "ad30ced9e49dbd1724a918304c58fdebcb540cae86bf2d0224ea367cf7dbbdef",
+    "contentSha256": "1974ca692ac172f7b6e04d7b27d12a208eac81a8a5a85202ad0c3ac027e91d1d",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "可再加入 120−42=78 公升；每分鐘 6 公升，78÷6=13。第 13 分鐘可達滿容量而不溢出。",
@@ -1446,7 +1456,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "99498377f147def5e127397946f7fc945e76a6fbb3860b61304da73a7af947a9",
+    "contentSha256": "85b4b9c75d7e10b3129bd31ae0c611567b0880ff64563dd641782ace1f9c55c3",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "回收 5 件為 175 元，尚餘 65，未達「少於」；第 6 件後餘 30，故至少 6。",
@@ -1478,7 +1488,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "03328bf11bda84cd611e8083b1009a7b4cc7adcbd6f886d8ebbd4689c1eb7213",
+    "contentSha256": "129dd828da49ac996ff1970402e34aaaef78f2c8239e5c254b1a0499eb3020f5",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "2(8+w)≤50 ⇒ 8+w≤25 ⇒ w≤17。又寬不能為 0 或負數，故 0<w≤17。",
@@ -1510,7 +1520,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "4725fbcecf69ed9f24842c93907058cd43ee51e23cd16424f006664800496461",
+    "contentSha256": "95a973e441e450fdae351237650c685c05962077c10cf1ed4eb8ff3a554a2f91",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "初始差 90 元，甲每天比乙多存 15 元；90÷15=6。第 6 天追平，故至少 6 天。",
@@ -1542,7 +1552,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "ffd9cc2ce4c10d5199d19049a9532b77c20b29aa316199e5d359e48e3609ee74",
+    "contentSha256": "253c7d1884bce6504e5da81c20d8e956e827e3535455a34c35f14f3e88e80cfc",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "扣除基本費後剩 140 元；可付 140÷25=5.6 個時段，但只能租完整時段，故最多 5。",
@@ -1574,7 +1584,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "ea4d568bcb4400f8f4ff418a8009087b5ef631fb7cb330eb711ab87cf246f7d4",
+    "contentSha256": "0a0dda570acb16f876d11e344a6f1df591639373ebd633008d2ff3835935d89d",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "還差 32−11=21 人；每組 3 人，需要 21÷3=7 組，且剛好達標可成團。",
@@ -1606,7 +1616,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-applications",
     "skillId": "inequality-word-problem",
-    "contentSha256": "9d9836756655f98d371d1db17f1e9614bc5d8fe3c70ccb2dc721bdfa2cda7373",
+    "contentSha256": "8c0757abe55413f194ec080d5ca9a179463ec5bc4a73378541fad3cd36d1f42b",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "還需超過 31 個；3 盤增加 24 不夠，4 盤增加 32，總數 46，故至少 4。",

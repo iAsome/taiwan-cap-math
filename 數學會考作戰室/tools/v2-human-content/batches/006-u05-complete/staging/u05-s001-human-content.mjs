@@ -58,10 +58,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "坐標平面把位置拆成兩次移動：先沿水平方向決定 x，再沿垂直方向決定 y。",
-    "正的 x 在原點右側，負的 x 在原點左側；正的 y 在原點上方，負的 y 在原點下方。",
-    "括號內的兩個數不是可交換的集合；(2,-3) 與 (-3,2) 通常是不同點。",
-    "原點是所有坐標讀法的共同基準，不能從任意位置開始計算。"
+    "平面上的點以有序數對 (x,y) 表示，第一分量 x 是橫坐標，說明相對原點的左右位置；第二分量 y 是縱坐標，說明上下位置。順序固定，交換分量通常會得到另一個點。",
+    "在一般坐標平面中，x 正向向右、負向向左，y 正向向上、負向向下。坐標的絕對值表示沿該軸離原點的單位數，正負號則只決定方向。",
+    "把位置描述轉成坐標時，必須分別辨認水平與垂直位移。『向左五、向下五』代表兩軸各移動五單位，不能模糊寫成『左下五單位』再暗自決定是斜距或逐軸距離。",
+    "兩個點相同表示對應分量各自相等。若分量含參數，可先由其中一個分量求候選值，再用另一分量驗證；情境地圖則先讀取題目對原點、正向與格距的明確定義。"
   ],
   "formalDefinitions": [
     {
@@ -96,93 +96,102 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "找基準：確認原點與兩軸。",
-      "check": "是否知道右、左、上、下各代表哪個正負方向？"
+      "instruction": "確認原點、x 與 y 的正向，以及每一坐標單位所代表的量。",
+      "check": "方向和格距都來自題幹或標準坐標定義，沒有使用未寫出的假設。"
     },
     {
       "step": 2,
-      "instruction": "讀第一個數。",
-      "check": "第一個數是否只控制左右？"
+      "instruction": "將水平方向轉成第一分量，右為正、左為負。",
+      "check": "橫坐標的大小與水平位移一致，正負號符合左右方向。"
     },
     {
       "step": 3,
-      "instruction": "讀第二個數。",
-      "check": "第二個數是否只控制上下？"
+      "instruction": "將垂直方向轉成第二分量，上為正、下為負。",
+      "check": "縱坐標的大小與垂直位移一致，沒有和第一分量交換。"
     },
     {
       "step": 4,
-      "instruction": "合併成完整位置敘述。",
-      "check": "是否把正負號也說清楚？"
+      "instruction": "依 (x,y) 順序寫出有序數對，或反向讀成完整位置敘述。",
+      "check": "括號、逗號、分量順序與各自負號均保留。"
     },
     {
       "step": 5,
-      "instruction": "反向檢查。",
-      "check": "把位置敘述還原成 (x,y) 是否一致？"
+      "instruction": "若含參數或兩點相同，逐分量列式並用另一分量回驗。",
+      "check": "同一參數同時滿足兩個分量，位置與題幹方向一致。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "點 A=(4,-2) 在原點哪個方向？",
+      "exampleId": "u05-s001-example-a",
+      "prompt": "描述點 H=(-6,4) 相對原點的位置。",
       "solutionSteps": [
-        "x=4>0，所以在右側。",
-        "y=-2<0，所以在下方。"
+        "x=-6 表示向左六單位。",
+        "y=4 表示向上四單位。"
       ],
-      "answer": "A 在原點右方 4 單位、下方 2 單位。"
+      "answer": "H 在原點左六單位、上四單位。",
+      "why": "第一分量控制左右，負六表示左方；第二分量控制上下，正四表示上方。依固定順序讀取可避免把點誤寫成左四、上六。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "把「由原點向左 3 單位、向上 5 單位」寫成坐標。",
+      "exampleId": "u05-s001-example-b",
+      "prompt": "由原點向右七單位、再向下二單位，寫出終點。",
       "solutionSteps": [
-        "向左使 x=-3。",
-        "向上使 y=5。"
+        "向右七給 x=7。",
+        "向下二給 y=-2。"
       ],
-      "answer": "(-3,5)。"
+      "answer": "終點為 (7,-2)。",
+      "why": "水平正向是右方，所以第一分量為正七；垂直向下使用負號，所以第二分量為負二。兩段位移分屬不同坐標軸，不可互換。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "比較 P=(2,-6) 與 Q=(-6,2)。",
+      "exampleId": "u05-s001-example-c",
+      "prompt": "P=(2k+1,k-1) 與 Q=(7,2) 是同一點，求 k。",
       "solutionSteps": [
-        "P 的 x 正、y 負。",
-        "Q 的 x 負、y 正。"
+        "比較第一分量得 2k+1=7，所以 k=3。",
+        "檢查第二分量 3-1=2。"
       ],
-      "answer": "兩點位置不同，不能交換坐標順序。"
+      "answer": "k=3。",
+      "why": "同一點要求對應分量逐一相等。第一分量給出候選值三，第二分量回驗也得到二，因此不是只憑單一方程式碰巧符合。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "哪個點的橫坐標為 0、縱坐標為 -7？",
+      "exampleId": "u05-s001-example-d",
+      "prompt": "地圖以東、北為正向，據點在基地西三格、南五格，求坐標。",
       "solutionSteps": [
-        "第一個數放 0。",
-        "第二個數放 -7。"
+        "西三格使 x=-3。",
+        "南五格使 y=-5。"
       ],
-      "answer": "(0,-7)。"
+      "answer": "據點坐標為 (-3,-5)。",
+      "why": "題幹已明定東、北為正向，因此西與南分別對應負的橫、縱坐標。把方向定義先寫清楚，答案便不依賴地圖慣例。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把 (3,-5) 讀成先下 5 再右 3。",
-      "why": "忽略有序數對的固定順序。",
-      "correction": "口訣只用來檢查：先 x 左右，再 y 上下。"
+      "mistake": "把 (x,y) 讀成先縱後橫。",
+      "why": "忽略有序數對的固定分量順序。",
+      "correction": "每次先讀水平 x，再讀垂直 y。"
     },
     {
-      "mistake": "把負號當成距離為負。",
-      "why": "位置方向與距離大小混淆。",
-      "correction": "負號表示方向；移動長度仍是正的 5 單位。"
+      "mistake": "左方或下方仍寫正坐標。",
+      "why": "只記距離大小，沒有加入方向符號。",
+      "correction": "左、下分別使用負 x、負 y。"
     },
     {
-      "mistake": "把 (0,4) 說成原點。",
-      "why": "只看到一個分量是 0。",
-      "correction": "原點必須兩個分量都為 0。"
+      "mistake": "把負號理解為負的距離。",
+      "why": "混淆位置方向與長度。",
+      "correction": "負號只標示方向，絕對值才是沿軸單位數。"
     },
     {
-      "mistake": "把括號當成乘法。",
-      "why": "不熟悉坐標記號。",
-      "correction": "(x,y) 是有序數對，不是 x×y。"
+      "mistake": "把『左下五』自行解成兩軸各五。",
+      "why": "題句沒有區分逐軸位移與斜距。",
+      "correction": "要求題幹分別明示向左與向下的單位數。"
     },
     {
-      "mistake": "從某個點而不是原點讀坐標。",
-      "why": "忘記坐標的共同基準。",
-      "correction": "未另行說明時一律從原點讀。"
+      "mistake": "兩點比較只驗一個分量。",
+      "why": "一個分量相同不足以證明同一點。",
+      "correction": "同一參數須通過橫、縱兩個分量。"
+    },
+    {
+      "mistake": "情境地圖沿用未寫出的方向。",
+      "why": "不同系統可能採不同軸向與格距。",
+      "correction": "先讀題目對原點、正向與每格單位的定義。"
     }
   ],
   "selfCheck": [
@@ -239,7 +248,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "2989642b9ba4da1499b5ed3c784e699dd2614cd7a87932925536693a122dd967"
+  "contentSha256": "81164580c86f82ad2fae79b9e5204bfd0853a07ecac0ee105733d1a440772b6f"
 };
 
 export const QUESTIONS = [
@@ -267,10 +276,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "第一分量 4 表示向右 4 單位；第二分量 -3 表示向下 3 單位，因此是右 4、下 3。",
-    "explanation": "第一分量 4 表示向右 4 單位；第二分量 -3 表示向下 3 單位，因此是右 4、下 3。",
+    "explanation": "坐標 (4,-3) 的第一分量四表示由原點向右四單位，第二分量負三表示由原點向下三單位。依先讀橫坐標、再讀縱坐標的順序，A 位於右四、下三的位置。",
     "steps": [
-      "讀 x=4：向右 4。",
-      "讀 y=-3：向下 3。"
+      "讀取橫坐標 x=4，判定向右四單位。",
+      "讀取縱坐標 y=-3，判定向下三單位。",
+      "按 x、y 順序合併為右四單位、下三單位。"
     ],
     "optionAnalysis": [
       {
@@ -294,7 +304,7 @@ export const QUESTIONS = [
         "reason": "同時對調數值並誤判正負方向。"
       }
     ],
-    "misconceptionTarget": "把坐標順序或正負方向讀反。",
+    "misconceptionTarget": "交換兩個分量，或把縱坐標負三誤讀成向上三單位。",
     "prerequisiteCheck": "僅需整數正負方向與有序數對順序。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -307,7 +317,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "de3d56147ba755de2261172b1a8b73e9c99d0c9e547dad73fb7b50a8aab9fc2c"
+    "contentSha256": "7598dc5bd97de3c80e35ca7a69dc3128607a4ef9e32d4409fbffadd7d8947c2f"
   },
   {
     "questionId": "u05-s001-v002",
@@ -333,10 +343,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "向左使橫坐標為 -6，向上使縱坐標為 2，所以坐標是 (-6,2)。",
-    "explanation": "向左使橫坐標為 -6，向上使縱坐標為 2，所以坐標是 (-6,2)。",
+    "explanation": "從原點向左六單位使橫坐標成為 -6，向上二單位使縱坐標成為 2。坐標固定先寫水平方向的 x，再寫垂直方向的 y，所以到達點為 (-6,2)。",
     "steps": [
-      "左右決定 x=-6。",
-      "上下決定 y=2。"
+      "由向左六單位寫出 x=-6。",
+      "由向上二單位寫出 y=2。",
+      "依橫坐標在前、縱坐標在後寫成 (-6,2)。"
     ],
     "optionAnalysis": [
       {
@@ -360,7 +371,7 @@ export const QUESTIONS = [
         "reason": "對調步數且把方向符號也反轉。"
       }
     ],
-    "misconceptionTarget": "把方向符號漏掉或把 x、y 對調。",
+    "misconceptionTarget": "依移動語句順序之外的直覺交換分量，寫成 (2,-6)。",
     "prerequisiteCheck": "使用上一題所建立的 x 左右、y 上下規則。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -373,7 +384,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f3a311bb62cb33761375ad810fd4de619c9565c90d7dd77cd537afffd9ef7be1"
+    "contentSha256": "6cb6cfb2fd8a19fb350d0bf5087bec5c3273eef13bfbb33edcb39aec6e0cd1a7"
   },
   {
     "questionId": "u05-s001-v003",
@@ -399,10 +410,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "橫坐標放在第一個位置，縱坐標放在第二個位置，因此為 (-5,7)。",
-    "explanation": "橫坐標放在第一個位置，縱坐標放在第二個位置，因此為 (-5,7)。",
+    "explanation": "橫坐標是有序數對的第一分量，題目指定為負五；縱坐標是第二分量，指定為七。因此兩個值按固定順序組成 (-5,7)，負號只屬於第一分量。",
     "steps": [
-      "第一分量寫 -5。",
-      "第二分量寫 7。"
+      "把橫坐標 -5 放在第一個位置。",
+      "把縱坐標 7 放在第二個位置。",
+      "加上有序數對括號，得到 (-5,7)。"
     ],
     "optionAnalysis": [
       {
@@ -426,7 +438,7 @@ export const QUESTIONS = [
         "reason": "數值與位置均錯置。"
       }
     ],
-    "misconceptionTarget": "把橫坐標與縱坐標位置互換。",
+    "misconceptionTarget": "把橫、縱坐標順序顛倒，或將負號錯誤放到第二分量。",
     "prerequisiteCheck": "已理解橫坐標為第一分量。",
     "estimatedTimeSec": 75,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -439,7 +451,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "727d1e6c3e6acd8933566afcc7fe0f0537a93105a562750c834c7e67c4c65d3e"
+    "contentSha256": "54c6b9d3a060f02e9cf228d3bb0d68d2d48afd2b42761ee8e77ad7040d53b6d5"
   },
   {
     "questionId": "u05-s001-v004",
@@ -465,10 +477,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "右方表示橫坐標為正，因此 a>0；第二分量 -4 已保證在下方。",
-    "explanation": "右方表示橫坐標為正，因此 a>0；第二分量 -4 已保證在下方。",
+    "explanation": "P=(a,-4) 的縱坐標負四已表示位於原點下方；要同時位於右方，橫坐標 a 必須為正數。因此必要條件是 a>0，若 a=0 會落在 y 軸而非右方。",
     "steps": [
-      "由右方判斷 x>0。",
-      "把 x=a 代入得到 a>0。"
+      "由第二分量 -4 確認點在原點下方。",
+      "把原點右方轉成橫坐標為正。",
+      "寫出必要條件 a>0，並排除 a=0。"
     ],
     "optionAnalysis": [
       {
@@ -492,7 +505,7 @@ export const QUESTIONS = [
         "reason": "右半平面的橫坐標為正。"
       }
     ],
-    "misconceptionTarget": "只看固定的 -4，忽略 a 控制左右。",
+    "misconceptionTarget": "只看到縱坐標負四就選負數條件，忽略 a 控制左右方向。",
     "prerequisiteCheck": "需能由坐標讀法判斷正負方向。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -505,7 +518,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "708f179972717f5e9acf024179875adab17a8e0a878ac8b90587b0833d4130a0"
+    "contentSha256": "aeeb5c97286c6439ba1406f5bb236b44b317b1d7db0f6d97509292bcedd11df1"
   },
   {
     "questionId": "u05-s001-v005",
@@ -531,10 +544,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "Q 的第二分量 b 表示上下位置；上方 9 單位使 b=9。",
-    "explanation": "Q 的第二分量 b 表示上下位置；上方 9 單位使 b=9。",
+    "explanation": "Q 的第一分量 -2 已對應原點左方二單位；題目又說位於上方九單位，所以第二分量 b 應為正九。因而 b=9，坐標 Q=(-2,9) 與位置描述完全一致。",
     "steps": [
-      "第一分量 -2 已對應左 2。",
-      "上方 9 對應 b=9。"
+      "核對左方二單位對應 x=-2。",
+      "把上方九單位轉成縱坐標 y=9。",
+      "比較 Q=(-2,b) 的第二分量，得到 b=9。"
     ],
     "optionAnalysis": [
       {
@@ -558,7 +572,7 @@ export const QUESTIONS = [
         "reason": "直接重複使用橫坐標。"
       }
     ],
-    "misconceptionTarget": "把水平資訊重複用在縱坐標。",
+    "misconceptionTarget": "因第一分量是負數，就連帶把上方九單位也寫成負九。",
     "prerequisiteCheck": "需掌握有序數對中第二分量的意義。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -571,7 +585,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "dd38b20db734813933c7e2c33b9f3cec06f230ba288e3c7a62c95a6a60845dd3"
+    "contentSha256": "4c439775f2fd0b54de48e812dbd0b127e21536a70cf35cdbdbe088cfbef5c714"
   },
   {
     "questionId": "u05-s001-v006",
@@ -597,10 +611,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "R 的 x 正、y 負，所以在右下；S 的 x 負、y 正，所以在左上。交換坐標會得到不同位置。",
-    "explanation": "R 的 x 正、y 負，所以在右下；S 的 x 負、y 正，所以在左上。交換坐標會得到不同位置。",
+    "explanation": "R=(3,-8) 的橫坐標為正、縱坐標為負，所以在原點右下方；S=(-8,3) 的橫坐標為負、縱坐標為正，所以在左上方。分量數值相同但順序不同，位置也不同。",
     "steps": [
-      "分別讀 R 的兩個符號。",
-      "分別讀 S 的兩個符號並比較。"
+      "讀 R 的符號 (+,-)，判定右下方。",
+      "讀 S 的符號 (-,+)，判定左上方。",
+      "比較兩點方向，選出 R 右下、S 左上的敘述。"
     ],
     "optionAnalysis": [
       {
@@ -624,7 +639,7 @@ export const QUESTIONS = [
         "reason": "忽略 S 的第一分量為負、第二分量為正。"
       }
     ],
-    "misconceptionTarget": "把有序數對當成無序集合。",
+    "misconceptionTarget": "認為兩點只是交換三與八，位置關係不受有序分量影響。",
     "prerequisiteCheck": "需能逐點讀出左右與上下。",
     "estimatedTimeSec": 100,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -637,7 +652,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c932f4fbf9ade9119ba24baebccf40713ea4bce9e7507269abbbcefa799ddf38"
+    "contentSha256": "9a342c9d80704dd13f2c801d788c9dea0eede35da1c97306bdd3662041dd8a8f"
   },
   {
     "questionId": "u05-s001-v007",
@@ -650,7 +665,7 @@ export const QUESTIONS = [
     "visualMode": "text-only",
     "figureId": null,
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_COORDINATE_GEOMETRY",
-    "text": "若點 T 的坐標兩個分量相等，且 T 在原點左下方 5 單位的位置，則 T 為何？",
+    "text": "若點 T 的兩個坐標分量相等，且由原點向左 5 單位、再向下 5 單位可到達 T，則 T 為何？",
     "givenConditions": [
       "題幹所列坐標、方程式與移動條件均為精確值。"
     ],
@@ -663,10 +678,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "左方 5 使 x=-5，下方 5 使 y=-5；兩分量確實相等。",
-    "explanation": "左方 5 使 x=-5，下方 5 使 y=-5；兩分量確實相等。",
+    "explanation": "向左五單位使橫坐標為 -5，向下五單位使縱坐標也為 -5，因此 T=(-5,-5)。題幹分別指定水平與垂直位移，不是指點到原點的斜線距離為五。",
     "steps": [
-      "左 5 得 x=-5。",
-      "下 5 得 y=-5。"
+      "把向左五單位轉成 x=-5。",
+      "把向下五單位轉成 y=-5。",
+      "確認兩分量相等，寫出 T=(-5,-5)。"
     ],
     "optionAnalysis": [
       {
@@ -690,12 +706,12 @@ export const QUESTIONS = [
         "reason": "位於右下且分量不相等。"
       }
     ],
-    "misconceptionTarget": "只看『相等』而忽略左下方向。",
+    "misconceptionTarget": "把兩軸各五單位誤讀成斜線距離五，或忽略左下方向的負號。",
     "prerequisiteCheck": "需理解坐標分量與方向。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
     "roundingCheck": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-    "ambiguityBoundaryAudit": "『左下方 5 單位』在本題明確指左右、上下各 5 單位，不指斜距。",
+    "ambiguityBoundaryAudit": "題幹已分別明示向左五單位與向下五單位，兩數是水平、垂直位移，不是原點到 T 的斜距。",
     "difficultyReason": "需同時使用位置、距離與相等條件，屬進階整合。",
     "literacyContextNecessity": null,
     "authoringIntent": "整合方向與分量相等條件",
@@ -703,7 +719,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1debf521f977ec7dd0e8f5e739e144969230489736855d2ecf6f1d1e1fa91194"
+    "contentSha256": "21ceeae7fa9ef09a91d9c04e8cdd9324dc0bd1e0fc13588c72e6396da83e028a"
   },
   {
     "questionId": "u05-s001-v008",
@@ -729,10 +745,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "由第一分量 m+1=4 得 m=3；第二分量 2m-3=3 也得到 m=3，兩個分量一致。",
-    "explanation": "由第一分量 m+1=4 得 m=3；第二分量 2m-3=3 也得到 m=3，兩個分量一致。",
+    "explanation": "同一點的兩個對應分量必須分別相等。由第一分量 m+1=4 可得 m=3；再檢查第二分量 2m-3=2×3-3=3，也與目標點的縱坐標三相同，兩個分量條件一致。",
     "steps": [
-      "比較第一分量：m+1=4。",
-      "驗證第二分量：2×3-3=3。"
+      "比較第一分量，列出 m+1=4。",
+      "解得 m=3。",
+      "代入第二分量，驗算 2×3-3=3。"
     ],
     "optionAnalysis": [
       {
@@ -756,7 +773,7 @@ export const QUESTIONS = [
         "reason": "同時滿足兩個分量等式。"
       }
     ],
-    "misconceptionTarget": "只比較一個分量或把有序數對當整體相加。",
+    "misconceptionTarget": "只比較一個分量就作答，沒有確認同一個 m 也符合另一分量。",
     "prerequisiteCheck": "需會解簡單一元一次方程式。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -769,7 +786,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4c845f440bc38be118f812f7f62b97925eae0cf91ef53eddbc94cc9e6546fe2f"
+    "contentSha256": "aa61fdf16572d03266d6b83f711729568d8800f452bca67bf39f8529f3f2aec7"
   },
   {
     "questionId": "u05-s001-v009",
@@ -795,10 +812,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "位於 y 軸上表示橫坐標為 0，所以 2-k=0，解得 k=2；此時 U=(0,-3)，確實在 y 軸上。",
-    "explanation": "位於 y 軸上表示橫坐標為 0，所以 2-k=0，解得 k=2；此時 U=(0,-3)，確實在 y 軸上。",
+    "explanation": "點在 y 軸上的必要條件是橫坐標等於零，因此令 2-k=0，解得 k=2。此時 U=(0,-3)，第一分量確為零；縱坐標可以是非零數，不影響它位於 y 軸。",
     "steps": [
-      "令橫坐標 2-k=0。",
-      "解得 k=2 並回代為 (0,-3)。"
+      "辨認 U 的橫坐標是 2-k。",
+      "依 y 軸條件列出 2-k=0，解得 k=2。",
+      "代回得 U=(0,-3)，確認在 y 軸上。"
     ],
     "optionAnalysis": [
       {
@@ -822,7 +840,7 @@ export const QUESTIONS = [
         "reason": "橫坐標為 -3。"
       }
     ],
-    "misconceptionTarget": "誤把 y 軸條件寫成縱坐標為 0。",
+    "misconceptionTarget": "誤把 y 軸條件寫成縱坐標為零，因而解錯參數。",
     "prerequisiteCheck": "需理解橫坐標控制左右位置。",
     "estimatedTimeSec": 135,
     "unitCheck": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
@@ -835,7 +853,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "5e5c11093152252eb47f9a7a2e79884e118cde0ea5a0c4e2f7f0e7c08c2df3bb"
+    "contentSha256": "249ff80a5a1eca615b70150b66b4df751f49ea72887b32eccbecc046110c5dd2"
   },
   {
     "questionId": "u05-s001-v010",
@@ -861,10 +879,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "西方對應 x 負，所以 x=-4；南方對應 y 負，所以 y=-1，坐標為 (-4,-1)。",
-    "explanation": "西方對應 x 負，所以 x=-4；南方對應 y 負，所以 y=-1，坐標為 (-4,-1)。",
+    "explanation": "題目已定義東方為 x 正向、北方為 y 正向，所以西方四格對應 x=-4，南方一格對應 y=-1。由警衛室原點出發，保健室坐標就是 (-4,-1)，方向與分量順序都已明確。",
     "steps": [
-      "依題目方向把西轉成 x=-4。",
-      "把南轉成 y=-1。"
+      "把西方四格轉成橫坐標 -4。",
+      "把南方一格轉成縱坐標 -1。",
+      "依 x、y 順序寫出 (-4,-1)。"
     ],
     "optionAnalysis": [
       {
@@ -888,7 +907,7 @@ export const QUESTIONS = [
         "reason": "把西、南都誤判為正向。"
       }
     ],
-    "misconceptionTarget": "未先依題目建立東西南北與坐標正負的對應。",
+    "misconceptionTarget": "把西、南當成正向，或依語句順序之外的直覺交換兩個分量。",
     "prerequisiteCheck": "僅使用本技能的方向與有序數對。",
     "estimatedTimeSec": 150,
     "unitCheck": "坐標單位是格；答案是位置坐標，不另乘實際公尺。",
@@ -901,7 +920,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "321aa8b9309f089b995a76457d45824161e5f0bbe1d5d046c185da32f49bd79d"
+    "contentSha256": "e12843cea705aae2f3235e0ac5d20a271694278135978298da49674ff5428ce0"
   },
   {
     "questionId": "u05-s001-v011",
@@ -927,10 +946,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "第一分量 3 表示向右 3 欄；第二分量 5 表示向內 5 列。",
-    "explanation": "第一分量 3 表示向右 3 欄；第二分量 5 表示向內 5 列。",
+    "explanation": "貨架規則明定向右一欄使 x 增加一，向內一列使 y 增加一。因此位置 (3,5) 表示從入口向右三欄、再向內五列；兩個分量不可依數值大小互換。",
     "steps": [
-      "讀取 x=3 對應右 3 欄。",
-      "讀取 y=5 對應內 5 列。"
+      "由第一分量 3 對應向右三欄。",
+      "由第二分量 5 對應向內五列。",
+      "依貨架欄列定義組成完整位置敘述。"
     ],
     "optionAnalysis": [
       {
@@ -954,7 +974,7 @@ export const QUESTIONS = [
         "reason": "把 y 正向讀成外。"
       }
     ],
-    "misconceptionTarget": "忽略情境自訂的正方向或交換欄列。",
+    "misconceptionTarget": "把欄與列對調，或把正坐標誤讀成向入口外側移動。",
     "prerequisiteCheck": "需掌握坐標第一、第二分量。",
     "estimatedTimeSec": 150,
     "unitCheck": "x 使用欄、y 使用列，兩者不可互換；答案保留各自單位名稱。",
@@ -967,7 +987,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "81eccca06e75ac90b28c0024ab9c63f5d8e6f3fb3a8cfcbe355f5255bea5b13a"
+    "contentSha256": "2e5bfa3f1ebc94bc178ab2f7065a5f72296c489895752488f83fe4e3b92c99b5"
   },
   {
     "questionId": "u05-s001-v012",
@@ -993,10 +1013,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "x=-7 表示向左 7 格；y=2 表示向上 2 格，所以應左 7、上 2。",
-    "explanation": "x=-7 表示向左 7 格；y=2 表示向上 2 格，所以應左 7、上 2。",
+    "explanation": "地圖規定向右為 x 正向、向上為 y 正向。紀錄 (-7,2) 的負橫坐標表示從出生點向左七格，正縱坐標表示向上二格，所以尋找指示應為左七、上二。",
     "steps": [
-      "將 -7 解讀為左 7。",
-      "將 2 解讀為上 2。"
+      "讀取 x=-7，轉成向左七格。",
+      "讀取 y=2，轉成向上二格。",
+      "按水平、垂直方向合併為尋找路線。"
     ],
     "optionAnalysis": [
       {
@@ -1020,7 +1041,7 @@ export const QUESTIONS = [
         "reason": "負 x 與正 y 的方向、格數皆正確。"
       }
     ],
-    "misconceptionTarget": "在具體路線中把負號當成不能移動，或交換 x、y。",
+    "misconceptionTarget": "忽略橫坐標負號，或把第二分量二誤當成向下二格。",
     "prerequisiteCheck": "需能由坐標完整描述相對位置。",
     "estimatedTimeSec": 150,
     "unitCheck": "坐標單位與地圖格一致，答案以格數表達。",
@@ -1033,7 +1054,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "240b80189f6b135abafff72486148d3530abe6d2a60ecc094c77ac01539a875a"
+    "contentSha256": "083d3481ec9ae314049113bbd290a81983a28fd0d22a07e1b2d96ed27786ba2b"
   }
 ];
 
@@ -1054,17 +1075,17 @@ export const CONSTRUCTED_RESPONSES = [
       "說明第一分量與第二分量的方向意義。"
     ],
     "fullCreditSolution": [
-      "向左表示橫坐標為 -4。",
-      "向下表示縱坐標為 -7。",
-      "所以 A=(-4,-7)；第一個負號表示位於原點左側，第二個負號表示位於原點下方。"
+      "由原點向左四單位，表示橫坐標為 -4；負號說明點位於 y 軸左側。",
+      "由原點向下七單位，表示縱坐標為 -7；第二個負號說明點位於 x 軸下方。",
+      "坐標按橫坐標、縱坐標順序寫成 A=(-4,-7)，兩個負號分別控制左右與上下方向。"
     ],
     "alternativeSolutions": [
       "也可先寫 x=-4、y=-7，再合併成 (x,y)。"
     ],
     "reasoningSteps": [
-      "向左表示橫坐標為 -4。",
-      "向下表示縱坐標為 -7。",
-      "所以 A=(-4,-7)；第一個負號表示位於原點左側，第二個負號表示位於原點下方。"
+      "先把水平描述向左四轉成第一分量 -4。",
+      "再把垂直描述向下七轉成第二分量 -7。",
+      "依 x、y 固定順序組成坐標，逐一解釋負號的幾何意義。"
     ],
     "rubric": [
       {
@@ -1091,8 +1112,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "坐標必須寫成有序對 A=(x,y)；本題各移動量以「單位」表示，不另寫長度單位。",
     "answerOnlyPolicy": "只寫 A=(-4,-7) 而未解釋兩個負號，最高給 2 分。",
     "commonErrors": [
-      "把 -4、-7 對調。",
-      "把負號說成距離為負。"
+      "把向左四、向下七都寫成正數，忽略方向由正負號表示。",
+      "交換橫、縱坐標順序，將答案錯寫成 (-7,-4)。",
+      "只說兩個負號都代表負數，沒有分別說明左側與下方。"
     ],
     "independentReview": {
       "derivedResult": "若第一分量算錯但第二分量與方向說明正確，可保留相應部分分；不以錯誤第一分量連帶扣除第二分量。",
@@ -1102,7 +1124,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "faa059759777248e20841a018c6fb54748f9ee3ac9ba70f062b2feae7aa15981"
+    "contentSha256": "a8ecdc11f0e1474cf319d393323bac85c8b8c2b50f1693d4dba04346c49d3842"
   },
   {
     "questionId": "u05-s001-cr002",
@@ -1121,17 +1143,17 @@ export const CONSTRUCTED_RESPONSES = [
       "用另一分量驗證一致性。"
     ],
     "fullCreditSolution": [
-      "由第一分量 2m-1=7，得 2m=8，m=4。",
-      "檢查第二分量：m+4=4+4=8，與 Q 的第二分量相同。",
-      "因此 m=4，且兩個分量條件一致。"
+      "同一點的第一分量相等，所以 2m-1=7，整理得 2m=8，因此 m=4。",
+      "第二分量也必須相等；代入 m=4，得到 m+4=8，確實等於 Q 的縱坐標八。",
+      "故 m=4。只比較第一分量可得到候選值，仍須檢查第二分量，才能確認兩個有序數對代表同一點。"
     ],
     "alternativeSolutions": [
       "也可先由 m+4=8 得 m=4，再檢查 2m-1=7。"
     ],
     "reasoningSteps": [
-      "由第一分量 2m-1=7，得 2m=8，m=4。",
-      "檢查第二分量：m+4=4+4=8，與 Q 的第二分量相同。",
-      "因此 m=4，且兩個分量條件一致。"
+      "依坐標順序比較第一分量，列出並解 2m-1=7。",
+      "把所得 m=4 代入第二分量 m+4。",
+      "確認第二分量也是八，再下結論兩點相同。"
     ],
     "rubric": [
       {
@@ -1158,8 +1180,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "參數寫成 m=數值；比較坐標時須分別列出 x 分量相等與 y 分量相等。",
     "answerOnlyPolicy": "只寫 m=4 而沒有比較與檢查過程，最高給 1 分。",
     "commonErrors": [
-      "把 2m-1 與 8 比較。",
-      "認為有序數對總和相等即可。"
+      "解出 m=4 後直接停止，沒有檢查第二分量是否相符。",
+      "把第一分量與第二分量交叉比較，列出不對應的方程式。",
+      "計算 2m-1=7 時把負一移項成負數，錯得 m=3。"
     ],
     "independentReview": {
       "derivedResult": "若第一個方程式有單一算術錯，但學生把所得 m 正確代入另一分量並指出不一致，可給 1 分的檢查證據。",
@@ -1169,14 +1192,14 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "75d1860b77c262f278fa374b37566098a1c4ca1df243cfa9985726bd37ac4833"
+    "contentSha256": "2f6286ab3b160917c86b956e5b152dc4ef58b55d5fd1adb61d4fb58d188c863a"
   }
 ];
 
 export const SEMANTIC_REVIEWS = [
   {
     "questionId": "u05-s001-v001",
-    "contentSha256": "de3d56147ba755de2261172b1a8b73e9c99d0c9e547dad73fb7b50a8aab9fc2c",
+    "contentSha256": "7598dc5bd97de3c80e35ca7a69dc3128607a4ef9e32d4409fbffadd7d8947c2f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "第一分量 4 表示向右 4 單位；第二分量 -3 表示向下 3 單位，因此是右 4、下 3。",
     "derivedAnswer": "右 4 單位、下 3 單位",
@@ -1208,7 +1231,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v002",
-    "contentSha256": "f3a311bb62cb33761375ad810fd4de619c9565c90d7dd77cd537afffd9ef7be1",
+    "contentSha256": "6cb6cfb2fd8a19fb350d0bf5087bec5c3273eef13bfbb33edcb39aec6e0cd1a7",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "向左使橫坐標為 -6，向上使縱坐標為 2，所以坐標是 (-6,2)。",
     "derivedAnswer": "(-6,2)",
@@ -1240,7 +1263,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v003",
-    "contentSha256": "727d1e6c3e6acd8933566afcc7fe0f0537a93105a562750c834c7e67c4c65d3e",
+    "contentSha256": "54c6b9d3a060f02e9cf228d3bb0d68d2d48afd2b42761ee8e77ad7040d53b6d5",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "橫坐標放在第一個位置，縱坐標放在第二個位置，因此為 (-5,7)。",
     "derivedAnswer": "(-5,7)",
@@ -1272,7 +1295,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v004",
-    "contentSha256": "708f179972717f5e9acf024179875adab17a8e0a878ac8b90587b0833d4130a0",
+    "contentSha256": "aeeb5c97286c6439ba1406f5bb236b44b317b1d7db0f6d97509292bcedd11df1",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "右方表示橫坐標為正，因此 a>0；第二分量 -4 已保證在下方。",
     "derivedAnswer": "a>0",
@@ -1304,7 +1327,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v005",
-    "contentSha256": "dd38b20db734813933c7e2c33b9f3cec06f230ba288e3c7a62c95a6a60845dd3",
+    "contentSha256": "4c439775f2fd0b54de48e812dbd0b127e21536a70cf35cdbdbe088cfbef5c714",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "Q 的第二分量 b 表示上下位置；上方 9 單位使 b=9。",
     "derivedAnswer": "9",
@@ -1336,7 +1359,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v006",
-    "contentSha256": "c932f4fbf9ade9119ba24baebccf40713ea4bce9e7507269abbbcefa799ddf38",
+    "contentSha256": "9a342c9d80704dd13f2c801d788c9dea0eede35da1c97306bdd3662041dd8a8f",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "R 的 x 正、y 負，所以在右下；S 的 x 負、y 正，所以在左上。交換坐標會得到不同位置。",
     "derivedAnswer": "R 在右下方，S 在左上方",
@@ -1368,7 +1391,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v007",
-    "contentSha256": "1debf521f977ec7dd0e8f5e739e144969230489736855d2ecf6f1d1e1fa91194",
+    "contentSha256": "21ceeae7fa9ef09a91d9c04e8cdd9324dc0bd1e0fc13588c72e6396da83e028a",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "左方 5 使 x=-5，下方 5 使 y=-5；兩分量確實相等。",
     "derivedAnswer": "(-5,-5)",
@@ -1382,25 +1405,25 @@ export const SEMANTIC_REVIEWS = [
     ],
     "uniqueCorrectAnswer": true,
     "ambiguityChecks": {
-      "secondCorrectAnswer": "重新計算得到「(-5,-5)」；其餘三項逐項檢查：「(5,5)」不成立，位於右上。；「(-5,5)」不成立，位於左上且分量不相等。；「(5,-5)」不成立，位於右下且分量不相等。",
-      "undefinedSymbol": "本題只使用本技能已介紹的坐標、象限、距離或一次方程式記號；所有記號均在「坐標讀法與點的位置」講義中定義，坐標固定以 (x,y) 表示。",
-      "unitConflict": "坐標分量、距離或面積單位依題意一致；沒有把點坐標誤寫成單一數值。",
-      "roundingConflict": "本題使用精確整數、分數或坐標，不需要四捨五入。",
-      "domainBoundary": "『左下方 5 單位』在本題明確指左右、上下各 5 單位，不指斜距。",
-      "alternateReading": "常見誤讀是「只看『相等』而忽略左下方向。」；依題幹完整條件重算後不會形成另一個正確答案。"
+      "secondCorrectAnswer": "依題幹分段位移，橫坐標必為 -5、縱坐標必為 -5，只有 (-5,-5) 同時符合兩軸位移與分量相等。",
+      "undefinedSymbol": "題幹直接使用坐標分量與水平、垂直位移，T 與原點均有明確定義，沒有未定義的距離記號。",
+      "unitConflict": "向左與向下都使用相同的坐標單位，兩個分量可直接寫成 -5。",
+      "roundingConflict": "本題位移皆為精確整數，不需要近似或四捨五入。",
+      "domainBoundary": "題幹逐軸指定向左五單位、再向下五單位，已排除把『左下五單位』理解為斜距五的讀法。",
+      "alternateReading": "若改讀成到原點的歐幾里得距離五，選項 (-5,-5) 不會符合；新題幹已明示兩軸各移動五單位，因此沒有此歧義。"
     },
     "difficultyReason": "需同時使用位置、距離與相等條件，屬進階整合。",
     "literacyContextNecessity": null,
     "prerequisiteCheck": "需理解坐標分量與方向。",
     "languageCheck": "題幹所求為「整合方向與分量相等條件」，方向、軸名、截距值或交點坐標均有明確指稱。",
     "reviewerDecision": "pass",
-    "reviewerNote": "針對「若點 T 的坐標兩個分量相等，且 T 在原點左下方 5 單位的位置，則 T 為何？」重新依序處理：左方 5 使 x=-5，下方 5 使 y=-5；兩分量確實相等。 正確選項為「(-5,-5)」。三個干擾項均對應不同錯誤：「(5,5)」不成立，位於右上。；「(-5,5)」不成立，位於左上且分量不相等。；「(5,-5)」不成立，位於右下且分量不相等。。邊界審查：『左下方 5 單位』在本題明確指左右、上下各 5 單位，不指斜距。 難度理由：需同時使用位置、距離與相等條件，屬進階整合。",
+    "reviewerNote": "重新依修正後題幹獨立驗算：由原點向左五單位得到 x=-5，再向下五單位得到 y=-5，兩個分量相等，唯一答案為 (-5,-5)。其他選項至少有一個方向符號錯誤。題幹現在逐軸列出水平與垂直位移，沒有把『左下五單位』偷偷解讀成兩軸各五，也明確排除斜距五的替代讀法。",
     "reviewedAt": "2026-07-12",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
     "questionId": "u05-s001-v008",
-    "contentSha256": "4c845f440bc38be118f812f7f62b97925eae0cf91ef53eddbc94cc9e6546fe2f",
+    "contentSha256": "aa61fdf16572d03266d6b83f711729568d8800f452bca67bf39f8529f3f2aec7",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "由第一分量 m+1=4 得 m=3；第二分量 2m-3=3 也得到 m=3，兩個分量一致。",
     "derivedAnswer": "3",
@@ -1432,7 +1455,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v009",
-    "contentSha256": "5e5c11093152252eb47f9a7a2e79884e118cde0ea5a0c4e2f7f0e7c08c2df3bb",
+    "contentSha256": "249ff80a5a1eca615b70150b66b4df751f49ea72887b32eccbecc046110c5dd2",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "位於 y 軸上表示橫坐標為 0，所以 2-k=0，解得 k=2；此時 U=(0,-3)，確實在 y 軸上。",
     "derivedAnswer": "2",
@@ -1464,7 +1487,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v010",
-    "contentSha256": "321aa8b9309f089b995a76457d45824161e5f0bbe1d5d046c185da32f49bd79d",
+    "contentSha256": "e12843cea705aae2f3235e0ac5d20a271694278135978298da49674ff5428ce0",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "西方對應 x 負，所以 x=-4；南方對應 y 負，所以 y=-1，坐標為 (-4,-1)。",
     "derivedAnswer": "(-4,-1)",
@@ -1496,7 +1519,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v011",
-    "contentSha256": "81eccca06e75ac90b28c0024ab9c63f5d8e6f3fb3a8cfcbe355f5255bea5b13a",
+    "contentSha256": "2e5bfa3f1ebc94bc178ab2f7065a5f72296c489895752488f83fe4e3b92c99b5",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "第一分量 3 表示向右 3 欄；第二分量 5 表示向內 5 列。",
     "derivedAnswer": "從入口向右 3 欄、向內 5 列",
@@ -1528,7 +1551,7 @@ export const SEMANTIC_REVIEWS = [
   },
   {
     "questionId": "u05-s001-v012",
-    "contentSha256": "240b80189f6b135abafff72486148d3530abe6d2a60ecc094c77ac01539a875a",
+    "contentSha256": "083d3481ec9ae314049113bbd290a81983a28fd0d22a07e1b2d96ed27786ba2b",
     "reviewVersion": "human-review-u05-r1.0",
     "independentSolution": "x=-7 表示向左 7 格；y=2 表示向上 2 格，所以應左 7、上 2。",
     "derivedAnswer": "從出生點向左 7 格、向上 2 格",

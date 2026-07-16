@@ -823,7 +823,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "可構造邊長成 1 倍與 2 倍的兩個三角形，角度相同而大小不同，說明相似不必全等。",
-    "explanation": "三組對應角相等使形状相同，必相似；邊長尺度未知，所以不一定全等。",
+    "explanation": "三組對應角相等使形狀相同，必相似；邊長尺度未知，所以不一定全等。",
     "steps": [
       "確認角集合相同。",
       "依角配對建立相似。",
@@ -833,7 +833,7 @@ export const QUESTIONS = [
       {
         "choice": "兩三角形必全等",
         "truth": false,
-        "reason": "角度只决定形状，不决定大小。"
+        "reason": "角度只決定形狀，不決定大小。"
       },
       {
         "choice": "兩三角形不一定相似",
@@ -865,7 +865,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a04fd5ddff3a318340df0699b08fc5859f98d18f2e1b008c58acc5dfd4d2e4bb"
+    "contentSha256": "053250b5e927cd6ed4035fce288bebecc57b5f13fd132d55124f48add4a96f64"
   },
   {
     "questionId": "u18-s006-v010",
@@ -889,11 +889,11 @@ export const QUESTIONS = [
       "△ACB∼△DFE"
     ],
     "answerIndex": 0,
-    "independentSolution": "從左侧依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。",
+    "independentSolution": "從左側依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。",
     "explanation": "按 A↔D、B↔F、C↔E 的順序，應寫 △ABC∼△DFE。",
     "steps": [
       "列配對 A-D、B-F、C-E。",
-      "依 ABC 順序排列右侧。",
+      "依 ABC 順序排列右側。",
       "得到 DFE。"
     ],
     "optionAnalysis": [
@@ -915,16 +915,16 @@ export const QUESTIONS = [
       {
         "choice": "△ACB∼△DFE",
         "truth": false,
-        "reason": "左侧第二位 C 對應 E，右侧第二位却是 F。"
+        "reason": "左側第二位 C 對應 E，右側第二位卻是 F。"
       }
     ],
     "misconceptionTarget": "依圖形左右位置而非頂點配對寫順序。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
-    "unitAndRoundingCheck": "本題無單位與舍入。",
+    "unitAndRoundingCheck": "本題無單位與捨入。",
     "ambiguityAndBoundaryAudit": "頂點對應關系逐一明示，不需要根據圖形外觀推斷。",
-    "difficultyReason": "必須從圖示配對信息建立規範相似记號。",
-    "literacyContextNecessity": "圖示中的旋轉位置会誤導，僅靠文字配對才能正確记錄工程圖的對應順序。",
+    "difficultyReason": "必須從圖示配對資訊建立規範相似記號。",
+    "literacyContextNecessity": "圖示中的旋轉位置會誤導，僅靠文字配對才能正確記錄工程圖的對應順序。",
     "visualMode": "figure-supported",
     "figureId": "u18-similar-q010",
     "drawingSpecReference": "figures/u18/u18-similar-q010.svg",
@@ -932,7 +932,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "99ee71b697ce12a955b9162568b284b5c607fc9717b073d986fda7879821b108"
+    "contentSha256": "a5be602dc9344320ea56b70ff8c4cca22af882a529796495e30ea05bcbf3ef7c"
   },
   {
     "questionId": "u18-s006-v011",
@@ -1012,8 +1012,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "屏幕上的三角形圖標等比縮放後，原邊長 24、32、40 像素，新圖標最長邊為 70 像素。新圖標周長為多少像素？",
-    "text": "屏幕上的三角形圖標等比縮放後，原邊長 24、32、40 像素，新圖標最長邊為 70 像素。新圖標周長為多少像素？",
+    "prompt": "螢幕上的三角形圖標等比縮放後，原邊長 24、32、40 像素，新圖標最長邊為 70 像素。新圖標周長為多少像素？",
+    "text": "螢幕上的三角形圖標等比縮放後，原邊長 24、32、40 像素，新圖標最長邊為 70 像素。新圖標周長為多少像素？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -1057,8 +1057,8 @@ export const QUESTIONS = [
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "像素作為線性單位，答案為整數像素。",
     "ambiguityAndBoundaryAudit": "『等比縮放』保證三個方向使用同一倍率。",
-    "difficultyReason": "由單一输出規格反求整組相似尺寸與周長。",
-    "literacyContextNecessity": "圖標導出需要精確像素周長，最長邊規格决定整組等比尺寸。",
+    "difficultyReason": "由單一輸出規格反求整組相似尺寸與周長。",
+    "literacyContextNecessity": "圖標導出需要精確像素周長，最長邊規格決定整組等比尺寸。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -1066,7 +1066,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "43edb0a3e87a69133266f0a4d7bec3956f5260cf1c384a9e54f0d3e69d264980"
+    "contentSha256": "cca546243b69b3b2fff86a639caf62b8d15354c1cd776c782b493c521cf2e154"
   }
 ];
 
@@ -1447,7 +1447,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-triangles",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "a04fd5ddff3a318340df0699b08fc5859f98d18f2e1b008c58acc5dfd4d2e4bb",
+    "contentSha256": "053250b5e927cd6ed4035fce288bebecc57b5f13fd132d55124f48add4a96f64",
     "independentSolution": "可構造邊長成 1 倍與 2 倍的兩個三角形，角度相同而大小不同，說明相似不必全等。",
     "derivedAnswer": "兩三角形必相似，但不一定全等",
     "storedAnswer": "兩三角形必相似，但不一定全等",
@@ -1478,8 +1478,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-triangles",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "99ee71b697ce12a955b9162568b284b5c607fc9717b073d986fda7879821b108",
-    "independentSolution": "從左侧依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。",
+    "contentSha256": "a5be602dc9344320ea56b70ff8c4cca22af882a529796495e30ea05bcbf3ef7c",
+    "independentSolution": "從左側依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。",
     "derivedAnswer": "△ABC∼△DFE",
     "storedAnswer": "△ABC∼△DFE",
     "answerMatch": true,
@@ -1493,12 +1493,12 @@ export const SEMANTIC_REVIEWS = [
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
       "boundary": "頂點對應關系逐一明示，不需要根據圖形外觀推斷。",
-      "units": "本題無單位與舍入。",
+      "units": "本題無單位與捨入。",
       "scope": "只使用國中會考範圍內的「相似三角形」概念，未要求高中延伸。"
     },
-    "difficultyReason": "必須從圖示配對信息建立規範相似记號。",
-    "literacyNecessityReview": "圖示中的旋轉位置会誤導，僅靠文字配對才能正確记錄工程圖的對應順序。",
-    "reviewerNote": "重新由已知條件獨立計算：從左侧依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。 四個選項逐一核對後，只有「△ABC∼△DFE」符合；主要排除點是「依圖形左右位置而非頂點配對寫順序。」。",
+    "difficultyReason": "必須從圖示配對資訊建立規範相似記號。",
+    "literacyNecessityReview": "圖示中的旋轉位置會誤導，僅靠文字配對才能正確記錄工程圖的對應順序。",
+    "reviewerNote": "重新由已知條件獨立計算：從左側依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。 四個選項逐一核對後，只有「△ABC∼△DFE」符合；主要排除點是「依圖形左右位置而非頂點配對寫順序。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
@@ -1540,7 +1540,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-triangles",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "43edb0a3e87a69133266f0a4d7bec3956f5260cf1c384a9e54f0d3e69d264980",
+    "contentSha256": "cca546243b69b3b2fff86a639caf62b8d15354c1cd776c782b493c521cf2e154",
     "independentSolution": "新三邊分別 42、56、70，合計 168 像素。",
     "derivedAnswer": "168 像素",
     "storedAnswer": "168 像素",
@@ -1558,8 +1558,8 @@ export const SEMANTIC_REVIEWS = [
       "units": "像素作為線性單位，答案為整數像素。",
       "scope": "只使用國中會考範圍內的「相似三角形」概念，未要求高中延伸。"
     },
-    "difficultyReason": "由單一输出規格反求整組相似尺寸與周長。",
-    "literacyNecessityReview": "圖標導出需要精確像素周長，最長邊規格决定整組等比尺寸。",
+    "difficultyReason": "由單一輸出規格反求整組相似尺寸與周長。",
+    "literacyNecessityReview": "圖標導出需要精確像素周長，最長邊規格決定整組等比尺寸。",
     "reviewerNote": "重新由已知條件獨立計算：新三邊分別 42、56、70，合計 168 像素。 四個選項逐一核對後，只有「168 像素」符合；主要排除點是「只縮放最長邊或誤用非線性倍率。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"

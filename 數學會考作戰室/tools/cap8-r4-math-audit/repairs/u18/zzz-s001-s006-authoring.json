@@ -1,0 +1,1517 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u18",
+  "batch": "019-u18-complete",
+  "skills": [
+    "s001",
+    "s002",
+    "s003",
+    "s004",
+    "s005",
+    "s006"
+  ],
+  "mc": [
+    {
+      "questionId": "u18-s001-v001",
+      "expectedContentSha256": "22a006597472879da1005b74210e8a7a683d1247435f7379cad9855349c46425",
+      "appendText": {
+        "explanation": "直接計算 24÷12=2、36÷12=3、60÷12=5，因此最簡比是 2:3:5。 依獨立推導可得到 2:3:5，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "直接計算 24÷12=2、36÷12=3、60÷12=5，因此最簡比是 2:3:5。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v002",
+      "expectedContentSha256": "b880e2512669e52604d9d6fb1927f099c22bab1744d2dd176a2a86c80bbb71f2",
+      "appendText": {
+        "explanation": "把每項乘 6：1/3×6=2、1/2×6=3、5/6×6=5，故為 2:3:5。 依獨立推導可得到 2:3:5，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "把每項乘 6：1/3×6=2、1/2×6=3、5/6×6=5，故為 2:3:5。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v003",
+      "expectedContentSha256": "d0292e67dea6a4550118ec6605fbf6c2f0568b1f7d43ce18852032b7c3a83ef8",
+      "appendText": {
+        "explanation": "0.18、0.27、0.45 分別是 0.09 的 2、3、5 倍，所以最簡比為 2:3:5。 依獨立推導可得到 2:3:5，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "0.18、0.27、0.45 分別是 0.09 的 2、3、5 倍，所以最簡比為 2:3:5。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v004",
+      "expectedContentSha256": "dfedccfdad246b1302895612734af69aba2287d7757b9d9893054d0819a6beef",
+      "appendText": {
+        "explanation": "原比三項同除 3 得 2:3:5；只有 14:21:35 可三項同除 7 得相同結果。 依獨立推導可得到 14:21:35，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "第三項若同乘 2 應為 30，不是 25。"
+      },
+      "appendArray": {
+        "steps": [
+          "原比三項同除 3 得 2:3:5；只有 14:21:35 可三項同除 7 得相同結果。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v005",
+      "expectedContentSha256": "b1137987dd731dc9c13eb557f31c51c57f98c8a22bab9a0933149bddd5234f4b",
+      "appendText": {
+        "explanation": "從第三項也可得倍率 25÷15=5/3，因此中項應為 9×5/3=15。 依獨立推導可得到 15，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "從第三項也可得倍率 25÷15=5/3，因此中項應為 9×5/3=15。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v006",
+      "expectedContentSha256": "aa250ba022fda19e9e7c987765121afe84823405b8e21e43c55bcb4393189460",
+      "appendText": {
+        "explanation": "三量換成公分後是 120、90、60；最大公因數 30，故比為 4:3:2。 依獨立推導可得到 4:3:2，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "直接取數字，沒有統一公尺與公分。"
+      },
+      "appendArray": {
+        "steps": [
+          "三量換成公分後是 120、90、60；最大公因數 30，故比為 4:3:2。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v007",
+      "expectedContentSha256": "5e7329e859f8f788c677b67c498edf08a3078f4b027ce43ac5408be8dacb0883",
+      "appendText": {
+        "explanation": "最大公因數為 6，最簡份數依序是 3、5、7，所以總份數 15。 依獨立推導可得到 15，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "最大公因數為 6，最簡份數依序是 3、5、7，所以總份數 15。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v008",
+      "expectedContentSha256": "8610cf609a02856cb503a93c404ff5aa698dbbf6469f1f714ef2ec7a32d3fd2a",
+      "appendText": {
+        "explanation": "令 a:b:c=2:3:5 測試，只有三項同乘 7 仍化回 2:3:5。 依獨立推導可得到 三項同乘 7，符合所有已知條件。",
+        "misconceptionTarget": "只改一項會改變相對倍數。"
+      },
+      "appendArray": {
+        "steps": [
+          "令 a:b:c=2:3:5 測試，只有三項同乘 7 仍化回 2:3:5。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v009",
+      "expectedContentSha256": "afe88261842d747cdd54eb84c45630af4765982233e46136ee3a4e8cafa2d4a9",
+      "appendText": {
+        "explanation": "以 24 同乘後得到 18、20、21；第二項減第一項是 2。 依獨立推導可得到 2，符合所有已知條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "以 24 同乘後得到 18、20、21；第二項減第一項是 2。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v010",
+      "expectedContentSha256": "e7e07b5f30dacbfe85290c88b71738cb0f30c8513d8df2f9461ba2f09b351b1d",
+      "appendText": {
+        "explanation": "0.24、0.18、1.08 都可除以 0.06，所得份數依序為 4、3、18。 依獨立推導可得到 4:3:18，符合所有已知條件。 題目明示配方順序，且三個數值均為正，不存在零份材料的解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "0.24、0.18、1.08 都可除以 0.06，所得份數依序為 4、3、18。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v011",
+      "expectedContentSha256": "7daec7920c2528ffd98dc2f31cb5590abe0514fe2928bd4d221beb33cadd3771",
+      "appendText": {
+        "explanation": "2 分 30 秒=150 秒、3 分 45 秒=225 秒、5 分=300 秒；比值化簡為 2:3:4。 依獨立推導可得到 2:3:4，符合所有已知條件。 『2 分 30 秒』按時間複合單位解讀，不是小數 2.30 分鐘。",
+        "misconceptionTarget": "前兩段用秒的餘數，第三段用分鐘，單位不一致。"
+      },
+      "appendArray": {
+        "steps": [
+          "2 分 30 秒=150 秒、3 分 45 秒=225 秒、5 分=300 秒；比值化簡為 2:3:4。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-v012",
+      "expectedContentSha256": "902a502176eb08568db7ecfa369c7a66211c84bcea11d8f47ccd1cc7741b230e",
+      "appendText": {
+        "explanation": "全部以毫升表示後為 250、400、600；共同除數 50，得 5:8:12。 依獨立推導可得到 5:8:12，符合所有已知條件。 三種溶液均以體積比較，沒有質量濃度或混合後體積收縮的額外因素。"
+      },
+      "appendArray": {
+        "steps": [
+          "全部以毫升表示後為 250、400、600；共同除數 50，得 5:8:12。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v001",
+      "expectedContentSha256": "20b46b25101dfab65869610f786dfe30b952a69f8d770c01b7d6bf764e2cef58",
+      "appendText": {
+        "explanation": "設甲=2k、乙=3k、丙=5k，則 10k=80，k=8，乙=24。 依獨立推導可得到 24，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "這是甲的 2 份，不是乙的 3 份。"
+      },
+      "appendArray": {
+        "steps": [
+          "設甲=2k、乙=3k、丙=5k，則 10k=80，k=8，乙=24。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v002",
+      "expectedContentSha256": "48e12e45f98df15a8decf97a7a8a651f74e8eee21e3bf5ac3ff7338de84e7214",
+      "appendText": {
+        "explanation": "設三色球為 4k、5k、7k；16k=96 得 k=6，因此紅球 24 顆。 依獨立推導可得到 24 顆，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "設三色球為 4k、5k、7k；16k=96 得 k=6，因此紅球 24 顆。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v003",
+      "expectedContentSha256": "34882e2d21b81f2fb3f0ca9bef21bf2612e68579f413c7a3a154d247e70fe741",
+      "appendText": {
+        "explanation": "B=4k=28，所以 k=7；C=6×7=42。 依獨立推導可得到 42，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "把 C 與 A 的份數比 6:3 誤套在 B 上。"
+      },
+      "appendArray": {
+        "steps": [
+          "B=4k=28，所以 k=7；C=6×7=42。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v004",
+      "expectedContentSha256": "97d725194e363fb830576ca0d391c1a79cfca714b854f9fd42129d6dcd781001",
+      "appendText": {
+        "explanation": "設三段為 5k、7k、9k；(9-5)k=32，k=8，第二段 56。 依獨立推導可得到 56 公里，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "只取 7 份的 4 公里，單位份量算錯。"
+      },
+      "appendArray": {
+        "steps": [
+          "設三段為 5k、7k、9k；(9-5)k=32，k=8，第二段 56。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v005",
+      "expectedContentSha256": "73de87da6d57bac561010285e2fe0e09e9ce666eb89be06b4105f95fea131f18",
+      "appendText": {
+        "explanation": "2k+5k=2100，故 7k=2100、k=300，8k=2400。 依獨立推導可得到 2400 元，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "把 2100 誤當 3.5 份後重複放大。"
+      },
+      "appendArray": {
+        "steps": [
+          "2k+5k=2100，故 7k=2100、k=300，8k=2400。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v006",
+      "expectedContentSha256": "141b8b4d67a375e1ca95b9b0f0bad5700a848a6a236edbb9928216efb30cb6b2",
+      "appendText": {
+        "explanation": "設三角為 2k、3k、4k；9k=180 得 k=20，最大角 80°。 依獨立推導可得到 80°，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "設三角為 2k、3k、4k；9k=180 得 k=20，最大角 80°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v007",
+      "expectedContentSha256": "d184aba4eccefc611253a43d6878ebc5d974d277d362db82deee820b4f514abe",
+      "appendText": {
+        "explanation": "設 A=4k、B=7k、C=11k；7k=35，k=5，故 A+B=11k=55。 依獨立推導可得到 55，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "把已知差直接當所求和。"
+      },
+      "appendArray": {
+        "steps": [
+          "設 A=4k、B=7k、C=11k；7k=35，k=5，故 A+B=11k=55。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v008",
+      "expectedContentSha256": "81e59b42ab3eb269e5e6c8c9248799714177701d74ec9c820bf1a7d180dda92c",
+      "appendText": {
+        "explanation": "設三數 3k、5k、8k；11k=66，k=6，中間數 30。 依獨立推導可得到 30，符合所有已知條件。 題目明示三個正整數並依 3:5:8 排序，因此最小與最大對應唯一。"
+      },
+      "appendArray": {
+        "steps": [
+          "設三數 3k、5k、8k；11k=66，k=6，中間數 30。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v009",
+      "expectedContentSha256": "e2ad7d28bbc2e5d8533ffb26c6e8caf3f556b686f3c6e3b49bc79edc0a557288",
+      "appendText": {
+        "explanation": "設現在年齡 4k、5k、7k；六年後總和 16k+18=114，k=6，乙=30。 依獨立推導可得到 30 歲，符合所有已知條件。",
+        "misconceptionTarget": "把 6 年只加給乙後反推。"
+      },
+      "appendArray": {
+        "steps": [
+          "設現在年齡 4k、5k、7k；六年後總和 16k+18=114，k=6，乙=30。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v010",
+      "expectedContentSha256": "91c9fb62494743b701e9432ae84b8aa4732681f332bff7a517d9d29b2c1990c3",
+      "appendText": {
+        "explanation": "設三組餐費 5k、4k、3k；12k=4200，k=350，乙組 1400。 依獨立推導可得到 1400 元，符合所有已知條件。 題目指依人數比直接分配全部 4200 元，沒有保留款或上限條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "設三組餐費 5k、4k、3k；12k=4200，k=350，乙組 1400。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v011",
+      "expectedContentSha256": "3464b03fce10b4b2741a594e99ed587167087839fbe7102eada32b1c1272b20d",
+      "appendText": {
+        "explanation": "每份為 3.5÷10=0.35 公斤，鋅 2 份即 0.7 公斤，等於 700 公克。 依獨立推導可得到 700 公克，符合所有已知條件。 假設合金總質量等於三種金屬質量總和，沒有損耗。",
+        "misconceptionTarget": "把公斤轉公克漏乘 1000。"
+      },
+      "appendArray": {
+        "steps": [
+          "每份為 3.5÷10=0.35 公斤，鋅 2 份即 0.7 公斤，等於 700 公克。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-v012",
+      "expectedContentSha256": "559484fc769b818ceee6d20c95a864ab1d828360a03d73e08d74bcf70adff998",
+      "appendText": {
+        "explanation": "設節水前為 6k、5k、4k；節水後總量 15k-36=189，故 15k=225、k=15，第一區 90。 依獨立推導可得到 90 噸，符合所有已知條件。 『都各減少 12 噸』表示三區各自減少，不是總共減少 12 噸。"
+      },
+      "appendArray": {
+        "steps": [
+          "設節水前為 6k、5k、4k；節水後總量 15k-36=189，故 15k=225、k=15，第一區 90。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v001",
+      "expectedContentSha256": "ac14093d13caf2afbc1dc2f8bb1de3bbb1d17f3d03825653b895d5fa3cc14ab8",
+      "appendText": {
+        "explanation": "4/6 等於 2/3，因此 8/EC 也為 2/3，EC=8×3/2=12。 依獨立推導可得到 12，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "把 AE 與已知線段相加而非用比例。"
+      },
+      "appendArray": {
+        "steps": [
+          "4/6 等於 2/3，因此 8/EC 也為 2/3，EC=8×3/2=12。"
+        ]
+      },
+      "replaceText": {
+        "4/6 約為 2/3": "4/6 等於 2/3"
+      },
+      "reviewReplaceText": {
+        "4/6 約為 2/3": "4/6 等於 2/3"
+      }
+    },
+    {
+      "questionId": "u18-s003-v002",
+      "expectedContentSha256": "0dd786af4b1eea797db96002990406cbe47c25aa9f079ed5281e86dce7c9768b",
+      "appendText": {
+        "explanation": "小三角形對大三角形比為 1/3，故 AE 是 AC 的 1/3，即 7。 依獨立推導可得到 7，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "交叉相乘後漏除以 15。"
+      },
+      "appendArray": {
+        "steps": [
+          "小三角形對大三角形比為 1/3，故 AE 是 AC 的 1/3，即 7。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v003",
+      "expectedContentSha256": "4c2db7169882e22a9cde5b875823fc54a859a6b4eaa807eca3a5f868cda38a63",
+      "appendText": {
+        "explanation": "12:8 同除 4 得 3:2，恰與 AD:DB 相同，因此 DE 平行 BC。 依獨立推導可得到 DE∥BC，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "12:8 同除 4 得 3:2，恰與 AD:DB 相同，因此 DE 平行 BC。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v004",
+      "expectedContentSha256": "b4fd1540bf5882817cc7e3ec8aae9f901056a637cc4d778386be01911893b24b",
+      "appendText": {
+        "explanation": "上段:下段=3:2，AE=9 對應 3 份，每份 3，EC=6，整段 AC=15。 依獨立推導可得到 15，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "把 AE 直接乘 AB/AD 而未理解結果其實是 15；此值為錯誤重算。"
+      },
+      "appendArray": {
+        "steps": [
+          "上段:下段=3:2，AE=9 對應 3 份，每份 3，EC=6，整段 AC=15。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v005",
+      "expectedContentSha256": "a9eb2ca723e2a3123c1bd6bd278f4d2cbee3a68361f962c746980ebda4b783ea",
+      "appendText": {
+        "explanation": "DE 的 8 代表 2 份，每份 4；BC 為 5 份，等於 20。 依獨立推導可得到 20，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "DE 的 8 代表 2 份，每份 4；BC 為 5 份，等於 20。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v006",
+      "expectedContentSha256": "04742cd3263a5954322faa1b246d146b610654dcda03862f44cab3d2c0ef18e4",
+      "appendText": {
+        "explanation": "第二截線的上段是第一截線上段的 10/4=2.5 倍，所以下段為 6×2.5=15。 依獨立推導可得到 15，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "第二截線的上段是第一截線上段的 10/4=2.5 倍，所以下段為 6×2.5=15。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v007",
+      "expectedContentSha256": "6e4c46c43e63131ab4260879106d5bf8125bc3feb52b932971e4d29ee418d1a8",
+      "appendText": {
+        "explanation": "右側 6/4=1.5，所以 AD=5×1.5=7.5；由 AD=x+1 得 x=6.5。 依獨立推導可得到 6.5，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。"
+      },
+      "appendArray": {
+        "steps": [
+          "右側 6/4=1.5，所以 AD=5×1.5=7.5；由 AD=x+1 得 x=6.5。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v008",
+      "expectedContentSha256": "f5b56fc7fa4335a8fe86e9fd9578e8b059558c93d277833a56ee718f25ac11ee",
+      "appendText": {
+        "explanation": "8/12 與 10/15 都等於 2/3，故連接兩分點的 DE 平行 BC。 依獨立推導可得到 DE∥BC，符合所有已知條件。 D、E 明確位於三角形兩邊內部，分段皆為正，逆敘述適用。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "判定看分段比，不要求對應線段等長。"
+      },
+      "appendArray": {
+        "steps": [
+          "8/12 與 10/15 都等於 2/3，故連接兩分點的 DE 平行 BC。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v009",
+      "expectedContentSha256": "2d2968e7c035e148a3bd4f9b2015011eb6e8ea0a04054d335402e8266311becc",
+      "appendText": {
+        "explanation": "小三角形縮放到大三角形的倍率是 AB/AD=5/2，周長同乘 5/2，得 35。 依獨立推導可得到 35，符合所有已知條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "小三角形縮放到大三角形的倍率是 AB/AD=5/2，周長同乘 5/2，得 35。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v010",
+      "expectedContentSha256": "07c6b226340729350e0ee328b9a9305bdd9b2e6aadea4303cbd5f2a0cbeca8ac",
+      "appendText": {
+        "explanation": "18:12=3:2；AE=15 對應 3 份，每份 5，EC 為 2 份即 10 cm。 依獨立推導可得到 10 cm，符合所有已知條件。 題目把 D、E 的位置與平行關係明示，不依圖面視覺比例判讀。 所有圖上長度均為 cm；答案 10 cm，不需比例尺換算。"
+      },
+      "appendArray": {
+        "steps": [
+          "18:12=3:2；AE=15 對應 3 份，每份 5，EC 為 2 份即 10 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v011",
+      "expectedContentSha256": "12e6bd92e15ea350f8ec0cd3f6e120bdaea571ec22aa9ff977e363cbfbf4379d",
+      "appendText": {
+        "explanation": "右側相對左側的縮放為 22/30=11/15，因此第二段 45×11/15=33 m。 依獨立推導可得到 33 m，符合所有已知條件。 『相鄰兩段』依從共同端點向外的順序對應，沒有交換解讀。",
+        "misconceptionTarget": "把 22 乘 45/20，使用錯誤分母。"
+      },
+      "appendArray": {
+        "steps": [
+          "右側相對左側的縮放為 22/30=11/15，因此第二段 45×11/15=33 m。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-v012",
+      "expectedContentSha256": "7d871255939428b26eac12ff7aae5f1de114d22a55f9761e478894a2223de14c",
+      "appendText": {
+        "explanation": "右側斜邊分成 5k 與 3k；5k=20 得 k=4，整段 8k=32 cm。 依獨立推導可得到 32 cm，符合所有已知條件。 題目中的 5:3 明確指上段:下段，非內框:外框。",
+        "misconceptionTarget": "這是右側下段，非總長。"
+      },
+      "appendArray": {
+        "steps": [
+          "右側斜邊分成 5k 與 3k；5k=20 得 k=4，整段 8k=32 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v001",
+      "expectedContentSha256": "e25051e6ff0c7d8f17a75e9f296162601037bb748ebd1215067245f6f45bbaeb",
+      "appendText": {
+        "explanation": "前比 2:3 同乘 4 得 8:12；後比 4:5 同乘 3 得 12:15，故答案 8:12:15。 依獨立推導可得到 8:12:15，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "沒有先讓共同量乙的份數相同。"
+      },
+      "appendArray": {
+        "steps": [
+          "前比 2:3 同乘 4 得 8:12；後比 4:5 同乘 3 得 12:15，故答案 8:12:15。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v002",
+      "expectedContentSha256": "2bb8787684d721011b69af3bb0d3cf7bb237c8c8800a8d3ab554f708c2a6c6a3",
+      "appendText": {
+        "explanation": "B 在第二比是 4 份，因此把 3:2 同乘 2，得到 A:B=6:4，再接 C=7。 依獨立推導可得到 6:4:7，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "B 在第二比是 4 份，因此把 3:2 同乘 2，得到 A:B=6:4，再接 C=7。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v003",
+      "expectedContentSha256": "20a6ede1bbcb7fc32e766e3995ed7b849b485fcfebe48ad4efa52309d9fb5363",
+      "appendText": {
+        "explanation": "令乙為 5 份，甲比乙多 1 份即 6 份，丙由乙:丙=5:6 也是 6 份。 依獨立推導可得到 6:5:6，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "只取增加的 20% 為 1 份。"
+      },
+      "appendArray": {
+        "steps": [
+          "令乙為 5 份，甲比乙多 1 份即 6 份，丙由乙:丙=5:6 也是 6 份。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v004",
+      "expectedContentSha256": "e74c9f64532ba71b491306e85d426b15ff33439aa4667673b6d9a530affc05ca",
+      "appendText": {
+        "explanation": "設甲=6k、乙=14k、丙=5k；25k=250，k=10，甲=60。 依獨立推導可得到 60，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "把前比未放大就使用總份數 3+7+5。"
+      },
+      "appendArray": {
+        "steps": [
+          "設甲=6k、乙=14k、丙=5k；25k=250，k=10，甲=60。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v005",
+      "expectedContentSha256": "c9dae02e23937b1d0ccbf4c3e8fdaf510af32c43f456cd5fb143028cefa1e723",
+      "appendText": {
+        "explanation": "可設 P=15k、Q=24k、R=14k，所以 (P+R):Q=29k:24k=29:24。 依獨立推導可得到 29:24，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。"
+      },
+      "appendArray": {
+        "steps": [
+          "可設 P=15k、Q=24k、R=14k，所以 (P+R):Q=29k:24k=29:24。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v006",
+      "expectedContentSha256": "d007fa514d60e19ae4ed2ada4ff90b882488d7a157be0300219d4f26c16f19d5",
+      "appendText": {
+        "explanation": "令乙=5 份，甲為乙的 0.8 倍即 4 份；乙又是丙的 1.25 倍，所以丙=4 份。 依獨立推導可得到 4:5:4，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "令乙=5 份，甲為乙的 0.8 倍即 4 份；乙又是丙的 1.25 倍，所以丙=4 份。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v007",
+      "expectedContentSha256": "7dd0610edd58816a7af0573b893dfd9e6657da966ce26a3b632af496050f3654",
+      "appendText": {
+        "explanation": "設 A=8k、B=18k、C=15k；7k=14，k=2，B=36。 依獨立推導可得到 36，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。"
+      },
+      "appendArray": {
+        "steps": [
+          "設 A=8k、B=18k、C=15k；7k=14，k=2，B=36。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v008",
+      "expectedContentSha256": "3ff4bd6333569b9adc9cb59d2bac14f71d391b0d808697c7c75b67194da506a1",
+      "appendText": {
+        "explanation": "設 X=21k、Y=12k、Z=10k；22k=88，k=4，故 X=84。 依獨立推導可得到 84，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。"
+      },
+      "appendArray": {
+        "steps": [
+          "設 X=21k、Y=12k、Z=10k；22k=88，k=4，故 X=84。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v009",
+      "expectedContentSha256": "982f56d6290ba012660ee290c84a93d96d9d125b046a3d24225c1363d27d474b",
+      "appendText": {
+        "explanation": "三數可寫 6k、15k、20k，k 為正整數；總和 41k<50，只能 k=1，所以 41。 依獨立推導可得到 41，符合所有已知條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "三數可寫 6k、15k、20k，k 為正整數；總和 41k<50，只能 k=1，所以 41。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v010",
+      "expectedContentSha256": "ddf15d941a3dfc9279d3e8c990c545d7d2d349c3897447117850cacd53bf0755",
+      "appendText": {
+        "explanation": "設麵粉、糖、奶油為 15k、6k、8k 公克；29k=1740，k=60，麵粉=900 公克。 依獨立推導可得到 900 公克，符合所有已知條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "設麵粉、糖、奶油為 15k、6k、8k 公克；29k=1740，k=60，麵粉=900 公克。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v011",
+      "expectedContentSha256": "15da2a94d6f67591c76acfdfdfff4cb638ae3df1ccc10a79d39f67974221c41e",
+      "appendText": {
+        "explanation": "設三類人數為 14k、10k、3k；11k=44，k=4，女生 40。 依獨立推導可得到 40 人，符合所有已知條件。 候補生視為第三個互斥群體，不含在男生或女生中。"
+      },
+      "appendArray": {
+        "steps": [
+          "設三類人數為 14k、10k、3k；11k=44，k=4，女生 40。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-v012",
+      "expectedContentSha256": "9eb5c4ff0b5c720640a927b4a8e74d784bcff99769f9aaefca6e288ead15d8ec",
+      "appendText": {
+        "explanation": "原比例下維運 630×5/19≈165.8 萬元，大於 160 萬元，因此限制滿足。 依獨立推導可得到 原比例分配符合最低維運限制，符合所有已知條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "原比例下維運 630×5/19≈165.8 萬元，大於 160 萬元，因此限制滿足。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v001",
+      "expectedContentSha256": "c6ea0b42dee487cdba0aeea71d0f4462a86005716dfa1ba954bc2b1a3509f640",
+      "appendText": {
+        "explanation": "設 A=2k、B=3k、C=5k，則 A+B=5k，故 (A+B):C=5k:5k=1:1。 依獨立推導可得到 1:1，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "等值但未化成最簡比。"
+      },
+      "appendArray": {
+        "steps": [
+          "設 A=2k、B=3k、C=5k，則 A+B=5k，故 (A+B):C=5k:5k=1:1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v002",
+      "expectedContentSha256": "1f7dc4af98754a6b6e2b9ba2fce14909de833a76a7f91fa0379aa7ad94ef27b7",
+      "appendText": {
+        "explanation": "令 X=4k、Y=k、Z=5k，則 Y/(X+Y+Z)=k/(10k)=1/10。 依獨立推導可得到 1/10，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。"
+      },
+      "appendArray": {
+        "steps": [
+          "令 X=4k、Y=k、Z=5k，則 Y/(X+Y+Z)=k/(10k)=1/10。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v003",
+      "expectedContentSha256": "9b1b51de887ca54423a9f7e4112dbc62cd3428298d242df8a88d60bd6b97ee3f",
+      "appendText": {
+        "explanation": "設三量為 7k、4k、2k；兩差分別 3k、2k，共同 k 約去得到 3:2。 依獨立推導可得到 3:2，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "設三量為 7k、4k、2k；兩差分別 3k、2k，共同 k 約去得到 3:2。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v004",
+      "expectedContentSha256": "ead709de08f847548618b23f0ab6f0a499a3f336c63e569c559a74e27e8a1cdb",
+      "appendText": {
+        "explanation": "取 k=1 測試，p=3、q=8、r=5，故 r:p:q=5:3:8。 依獨立推導可得到 5:3:8，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。"
+      },
+      "appendArray": {
+        "steps": [
+          "取 k=1 測試，p=3、q=8、r=5，故 r:p:q=5:3:8。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v005",
+      "expectedContentSha256": "2781d73b47213601f55be420ec5e3f004d5c2a1a17853aa4f5227347405a029b",
+      "appendText": {
+        "explanation": "設 A=5k、B=7k、C=9k，B+C=16k，所以 5k:16k=5:16。 依獨立推導可得到 5:16，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "把 B+C 誤作 7+9=2 的末位數。"
+      },
+      "appendArray": {
+        "steps": [
+          "設 A=5k、B=7k、C=9k，B+C=16k，所以 5k:16k=5:16。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v006",
+      "expectedContentSha256": "0b931c8204d0704d46cdbe40d3a2888f55898c5e78354ffd927da9631959a350",
+      "appendText": {
+        "explanation": "令共同倍數 k 約去，第一式為 6k/16k=3/8；其餘數值分別 2/5、21/10、9/4。 依獨立推導可得到 A/(A+B)=3/8，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "令共同倍數 k 約去，第一式為 6k/16k=3/8；其餘數值分別 2/5、21/10、9/4。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v007",
+      "expectedContentSha256": "efd34bd9e28f6cdff0609e016cf82ad601b1dac42181b481597ad8b3a5f44a59",
+      "appendText": {
+        "explanation": "設 A=2k、B=5k、C=7k，14k=84 得 k=6，C-A=5k=30。 依獨立推導可得到 30，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。"
+      },
+      "appendArray": {
+        "steps": [
+          "設 A=2k、B=5k、C=7k，14k=84 得 k=6，C-A=5k=30。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v008",
+      "expectedContentSha256": "29da40e3718ea06db009f5d0633e8e30dd04bce9da452f0da6785c4991151c80",
+      "appendText": {
+        "explanation": "原比 4:6:9 加 1 後為 5:7:10，無法用同一倍率從原比得到，所以不一定相等。",
+        "misconceptionTarget": "三項同乘 -1，代數比值相同；若限定正量則表達需另說明。"
+      },
+      "appendArray": {
+        "steps": [
+          "原比 4:6:9 加 1 後為 5:7:10，無法用同一倍率從原比得到，所以不一定相等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v009",
+      "expectedContentSha256": "e501202109d897d22efce505e93f61a9ca157a9b005a0105180cdb3714297007",
+      "appendText": {
+        "explanation": "設 A=3k、B=4k、C=6k，則比為 9k/10k=9/10=27/30。 依獨立推導可得到 可能，因為 9/10=27/30，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "設 A=3k、B=4k、C=6k，則比為 9k/10k=9/10=27/30。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v010",
+      "expectedContentSha256": "ee061bf5b30e5d7426b6f50180575c367d58372de8a582ed83e93e24d1b11fe1",
+      "appendText": {
+        "explanation": "可設三項為 3k、2k、7k；脂肪占比 2k/(12k)=1/6。 依獨立推導可得到 1/6，符合所有已知條件。 『只計這三項』排除水分與其他成分，分母範圍明確。 同為質量，單位約去；答案為比例。"
+      },
+      "appendArray": {
+        "steps": [
+          "可設三項為 3k、2k、7k；脂肪占比 2k/(12k)=1/6。"
+        ]
+      },
+      "replaceText": {
+        "没有": "沒有"
+      },
+      "reviewReplaceText": {
+        "没有": "沒有"
+      }
+    },
+    {
+      "questionId": "u18-s005-v011",
+      "expectedContentSha256": "ebd26c70bda0db0c0dcc089f2be65d128ed828cf15048159202fa4bf749f986b",
+      "appendText": {
+        "explanation": "設原張數 8k、3k、k；移除 k 後剩 8k 與 3k，比仍為 8:3。 依獨立推導可得到 8:3，符合所有已知條件。 題目是取消贈票而非改發給其他票種，因此普通與優待數量不變。"
+      },
+      "appendArray": {
+        "steps": [
+          "設原張數 8k、3k、k；移除 k 後剩 8k 與 3k，比仍為 8:3。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-v012",
+      "expectedContentSha256": "1aedaa8849d5a8f13c97fc00ca4b3cb4209931c8320981674a198b52b7f6b15d",
+      "appendText": {
+        "explanation": "設原水量為5k、4k、3k，其中k>0。若加10公升後仍為5:4，則(5k+10):(4k+10)=5:4，交叉相乘20k+40=20k+50，得到40=50矛盾，所以不可能維持原比。",
+        "misconceptionTarget": "同加10是固定加法，不是把各項乘上同一倍數。"
+      },
+      "appendArray": {
+        "steps": [
+          "設原水量為5k、4k、3k，其中k>0。若加10公升後仍為5:4，則(5k+10):(4k+10)=5:4，交叉相乘20k+40=20k+50，得到40=50矛盾，所以不可能維持原比。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v001",
+      "expectedContentSha256": "342960583c40953d99c78ecf3d6a6259119cc6211d14f67f3237d50c83851290",
+      "appendText": {
+        "explanation": "直接按位置配對，△ABC 的第二個字母 B 對 △DEF 的第二個字母 E。 依獨立推導可得到 E，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。"
+      },
+      "appendArray": {
+        "steps": [
+          "直接按位置配對，△ABC 的第二個字母 B 對 △DEF 的第二個字母 E。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v002",
+      "expectedContentSha256": "52123d7c6a14c8feb300e87c15bb04568843a80ea1f93acdc95184d12171ab47",
+      "appendText": {
+        "explanation": "從 AB 到 DE 放大 9/6=3/2，因此 BC=8 對應 EF=8×3/2=12。 依獨立推導可得到 12，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "把相似比方向反寫成 9/6=8/EF。"
+      },
+      "appendArray": {
+        "steps": [
+          "從 AB 到 DE 放大 9/6=3/2，因此 BC=8 對應 EF=8×3/2=12。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v003",
+      "expectedContentSha256": "f658dd733307e0eb699e1c620ecace6ab8261822a6efb1550fd13a1c9da88cc4",
+      "appendText": {
+        "explanation": "兩個已知角和 110°，第三角 70°；相似三角形對應角相等，故 Z=70°。 依獨立推導可得到 70°，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "未用三角形內角和求第三角。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩個已知角和 110°，第三角 70°；相似三角形對應角相等，故 Z=70°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v004",
+      "expectedContentSha256": "c981d486fe56c96067e03fa3e5e02d13f1d0585eec52d2a4448c9142e2b14e84",
+      "appendText": {
+        "explanation": "7.5÷5=1.5，較大對應邊是 12×1.5=18 cm。 依獨立推導可得到 18 cm，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 邊長均為 cm，答案 18 cm。",
+        "misconceptionTarget": "以邊長差 7 加到 7.5。"
+      },
+      "appendArray": {
+        "steps": [
+          "7.5÷5=1.5，較大對應邊是 12×1.5=18 cm。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v005",
+      "expectedContentSha256": "87efd6e9666d5d808cd6fbb4176ce3f0341051b6b223b117f2b6bb2a2c8155a6",
+      "appendText": {
+        "explanation": "10 與 15 同除 5 得 2:3，和給定相似比完全相同。 依獨立推導可得到 一致，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "相似只要求成比例，不要求等長。"
+      },
+      "appendArray": {
+        "steps": [
+          "10 與 15 同除 5 得 2:3，和給定相似比完全相同。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v006",
+      "expectedContentSha256": "b098d07c987e8c5ca45414d7f06b80092711886b9498eaaf0909db1693c134ae",
+      "appendText": {
+        "explanation": "取 3-4-5 與 6-8-10 三角形作例，它們相似但邊、周長、面積均不同，只有對應角相等。",
+        "misconceptionTarget": "這是全等的條件，不是一般相似。"
+      },
+      "appendArray": {
+        "steps": [
+          "取 3-4-5 與 6-8-10 三角形作例，它們相似但邊、周長、面積均不同，只有對應角相等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v007",
+      "expectedContentSha256": "ef3e787f4b82ae7068ac73e1f1d21d3f91e90b3f12bd5b039dfbd457c40320d5",
+      "appendText": {
+        "explanation": "對應邊從 4 變 10，所有邊及周長都乘 5/2；17×5/2=42.5。 依獨立推導可得到 42.5，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。",
+        "misconceptionTarget": "只把小三角形周長 17 加 10。"
+      },
+      "appendArray": {
+        "steps": [
+          "對應邊從 4 變 10，所有邊及周長都乘 5/2；17×5/2=42.5。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v008",
+      "expectedContentSha256": "71b231b98655e18a2e98f24558e2c1ce6dd476f74a5d107750fdde4845662ee8",
+      "appendText": {
+        "explanation": "大三角形對應邊 EF=12×5/3=20，因此 x+4=20，x=16。 依獨立推導可得到 16，符合所有已知條件。 題意限定比較順序與資料範圍，沒有其他合理解讀。 題目量綱一致，答案不需另行四捨五入。",
+        "misconceptionTarget": "用倍率 5/3 後忘記減 4。"
+      },
+      "appendArray": {
+        "steps": [
+          "大三角形對應邊 EF=12×5/3=20，因此 x+4=20，x=16。"
+        ]
+      },
+      "replaceText": {
+        "忘记": "忘記"
+      },
+      "reviewReplaceText": {
+        "忘记": "忘記"
+      }
+    },
+    {
+      "questionId": "u18-s006-v009",
+      "expectedContentSha256": "053250b5e927cd6ed4035fce288bebecc57b5f13fd132d55124f48add4a96f64",
+      "appendText": {
+        "explanation": "可構造邊長成 1 倍與 2 倍的兩個三角形，角度相同而大小不同，說明相似不必全等。",
+        "misconceptionTarget": "角度只決定形狀，不決定大小。"
+      },
+      "appendArray": {
+        "steps": [
+          "可構造邊長成 1 倍與 2 倍的兩個三角形，角度相同而大小不同，說明相似不必全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v010",
+      "expectedContentSha256": "a5be602dc9344320ea56b70ff8c4cca22af882a529796495e30ea05bcbf3ef7c",
+      "appendText": {
+        "explanation": "從左側依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。 依獨立推導可得到 △ABC∼△DFE，符合所有已知條件。 頂點對應關系逐一明示，不需要根據圖形外觀推斷。"
+      },
+      "appendArray": {
+        "steps": [
+          "從左側依次讀 A、B、C，對應字母依次為 D、F、E，因此是 △DFE。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v011",
+      "expectedContentSha256": "0f1eeb9784930e81b4cf6000044c02502c00ebb79786740188f3804c10ed2c84",
+      "appendText": {
+        "explanation": "最短邊從 9 cm 到 360 cm 是 40 倍，故其他邊 480 cm 與 600 cm，即 4.8 m、6 m。 依獨立推導可得到 4.8 m、6 m，符合所有已知條件。 三邊按由短到長對應，3.6 m 明確對應 9 cm。 1 m=100 cm；最終依題意用 m。"
+      },
+      "appendArray": {
+        "steps": [
+          "最短邊從 9 cm 到 360 cm 是 40 倍，故其他邊 480 cm 與 600 cm，即 4.8 m、6 m。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-v012",
+      "expectedContentSha256": "cca546243b69b3b2fff86a639caf62b8d15354c1cd776c782b493c521cf2e154",
+      "appendText": {
+        "explanation": "新三邊分別 42、56、70，合計 168 像素。 依獨立推導可得到 168 像素，符合所有已知條件。 『等比縮放』保證三個方向使用同一倍率。"
+      },
+      "appendArray": {
+        "steps": [
+          "新三邊分別 42、56、70，合計 168 像素。"
+        ]
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u18-s001-cr001",
+      "expectedContentSha256": "6314e0fcb3f848e9d01579ac0a9335307c455d849a48865af387c915c2c1b3a6",
+      "set": {
+        "commonErrors": [
+          "只消去小數或分母就停止，未繼續以三項共同因數化簡；也不可讓三項分別乘除不同數。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "三項必須同乘同一個數，才不會改變彼此的相對倍數。把小數與帶分數改寫後同乘20，可同時消去分母得到15：24：45；再用三項共同因數3約分，最後5、8、15已無共同因數。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認三項同乘 20 得 15：24：45，再同除以 3，最簡為 5：8：15。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s001-cr002",
+      "expectedContentSha256": "0a28170a3088b41468ffdfc2cb69fbd1224be09d0dabbb278b015d1c6f78eb2a",
+      "set": {
+        "commonErrors": [
+          "把b的36直接當共同倍數k，或求出a、c後沒有把21：36：45化簡回原比驗證。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "連比7：12：15表示三數可由同一倍數k同步放大。已知b是36而它對應12份，所以每份為3；a與c分別是7份與15份，得到21與45，三數同除3確實回到原連比。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認驗證 21：36：45 同除以 3 為 7：12：15。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-cr001",
+      "expectedContentSha256": "8e254b5946b36e98bc8392c6b5278fa47dfea07afa4b017f8e5f3903585f349e",
+      "set": {
+        "commonErrors": [
+          "把全班當成第三個獨立群體而計成18份，忽略第三項其實等於男生與女生人數之和。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "第三項全班不是與男、女生並列的新群體，而是前兩群的總和，因此4＋5必須等於9。全班9份對應36人，每份4人，男生16人、女生20人，兩者相加也正好回到36人。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認9 份對應 36 人，每份 4 人，所以男生 16 人、女生 20 人。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s002-cr002",
+      "expectedContentSha256": "42b30ca770e4c21be5276f4dda35cc5d8b10ecd0d234ee93c7fadcec3bce31a2",
+      "set": {
+        "commonErrors": [
+          "只補加B企圖追上過量的C，卻沒有注意A固定後比例尺度也固定，C已超過唯一允許值。",
+          "只寫「無解」沒有理由，給 1 分；只寫一組新增量且不驗證比例，不給滿分。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "A的240毫升固定了比例尺度，每份只能是120毫升，因此原配方的B與C應為360、600毫升。額外加入C後已達780毫升；只再增加B或C都不能把C降回600，所以在不得增加A或移除C時無解。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認故題目條件下無解，必須增加 A 與 B 或移除 C。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-cr001",
+      "expectedContentSha256": "1ea5557a88c1772fcfb2b8cc5c00cba0adaddfe2a2b6e01fd604dc082aa6f548",
+      "set": {
+        "commonErrors": [
+          "把3：5誤認為AC比整段AB，或求得兩段後未檢查12＋20是否等於完整的32公分。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "C把線段AB分成3份與5份，完整線段共有8份。由32公分除以8得每份4公分，所以AC為12公分、CB為20公分；兩段相加32公分，同時驗證分段與整段資料一致。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認總份數 3+5=8，每份 32÷8=4 cm，所以 AC=12 cm、CB=20 cm；12+20=32。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s003-cr002",
+      "expectedContentSha256": "e9e4bb703e2880d2c25e60b228c5e7536c4d6af422c6e665c7c03f0f1937c8fd",
+      "set": {
+        "commonErrors": [
+          "把AD：DB與AE：AC混在同一比例式，或求得AC為15後忘記題目要的是下段EC。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "DE平行BC使兩組對應角相等，因此小三角形ADE與大三角形ABC相似。左側整段AB為10，列AD比AB等於AE比AC，解得AC為15；最後用整段扣AE，得到EC為6。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認因 DE∥BC，△ADE∼△ABC，所以 AD/AB=AE/AC，即 6/10=9/AC，得 AC=15，因此 EC=15−9=6。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-cr001",
+      "expectedContentSha256": "b7a6637c17f136b5c643ac1de269802d84cecd364c5e80a9ebf626ea41a7c6cb",
+      "set": {
+        "commonErrors": [
+          "直接把3：4與6：5拼成三項比，或算出每份7600/31後未說明整數元限制下資料不相容。",
+          "只列三個近似小數而未說明不能整除，最高 1 分。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "先把共同量乙統一為12份，得到甲、乙、丙為9：12：10，總份數31。7600除以31不是整數，所以若獎金限定整數元就不相容；若允許分數元，三人的精確金額仍按9、12、10份計算。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認若獎金必須以整數元分配，題目資料不相容；若允許分數元，三人分別為 68400/31、91200/31、76000/31 元。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s004-cr002",
+      "expectedContentSha256": "29fb57de0ace14e741dacec8ec1feb80b491b39f7b340b1d7a641ffa2e517c45",
+      "set": {
+        "commonErrors": [
+          "把份數2、3、4直接當位數，或求得4、6、8後沒有檢查個別數字範圍與百位不可為0。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "三個位數依2：3：4可設為2k、3k、4k，總份數9對應數字和18，所以k為2。依百、十、個位順序得到4、6、8並組成468；三數都在0至9且百位不為0，確為合法三位數。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認9k=18，k=2，數字為4、6、8，所以三位數是468；三個數字都在0到9且百位非0。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-cr001",
+      "expectedContentSha256": "0e8ccc30b2f50feee0d45d3af5fd85b14db8ab80fa1e1fb76ca9f56cfe253a90",
+      "set": {
+        "commonErrors": [
+          "分別約去不同倍數，或把三個部分和的順序寫錯，使所得連比不再對應題目的三個式子。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "連比允許把x、y、z寫成同一非零倍數k的4k、7k、9k。三個指定部分和依序是11k、16k、13k；三項同時約去共同因數k後，得到11：16：13，順序與題目完全一致。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認則 x+y=11k、y+z=16k、z+x=13k，所以所求連比為11：16：13。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s005-cr002",
+      "expectedContentSha256": "12d025c37f4df6490d283d6b03c3cd2e09c7a7f367c14ac92829899b9940c55e",
+      "set": {
+        "commonErrors": [
+          "代入時漏掉係數3或2，或把負c誤作加c，導致共同倍數與最後總和都不正確。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "把a、b、c分別寫成2k、5k、7k後，線性條件成為6k＋10k－7k＝9k。由9k＝18得k＝2，三數總和則是14k＝28；代回原式也得到18，完成驗算。 這個線性條件同時使用三個量，代入後的係數必須逐項保留正負號：3a給6k、2b給10k、減c給負7k，合併才是9k。求得k為2後，a、b、c分別為4、10、14，總和28，且3×4＋2×10－14確實等於18。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認a+b+c=(2+5+7)k=14×2=28。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-cr001",
+      "expectedContentSha256": "0458077b71048505150321aaf9ec5ffc1e4659491e669051435eb248f4368919",
+      "set": {
+        "commonErrors": [
+          "只依圖形位置配邊，或倍率7/4算對後把小比大仍寫成7：4，混淆比的方向。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "相似記號的頂點順序先確定AB對DE、BC對EF、AC對DF。DE除以AB得到大對小倍率7/4，所以EF為17.5、DF為21；若題目要求小比大，方向必須倒寫成4：7。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認小：大相似比為4：7。"
+        ]
+      }
+    },
+    {
+      "questionId": "u18-s006-cr002",
+      "expectedContentSha256": "dca4a8009cd3a2d20909caa2cd7c02c73c1947ed3c0f5c5035f487b340757e95",
+      "set": {
+        "commonErrors": [
+          "只檢查兩組邊倍率就判定SSS相似，或把面積比誤寫成與周長比相同的1：2。",
+          "只寫正確答案但沒有必要推理，最高給 1 分；若題目只要求數值且推理可由答案唯一確認，依評分規準調整。"
+        ]
+      },
+      "appendText": {
+        "standardSolution": "將兩組邊由小到大一一配對，三個大邊除以小邊都等於2，因此以SSS判定相似。線性量與相似比相同，所以周長比為1：2；面積按倍率平方，故小比大為1：4。"
+      },
+      "appendArray": {
+        "reasoningSteps": [
+          "最後依題意與單位核對完整結果，確認小：大相似比與周長比都是1：2，面積比為1：4。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u18-s001-lecture-r1",
+      "expectedContentSha256": "2f41d53140086698b4d2ad7cfa1d84a9efc78428e9ee2630e1c65169dc4cb8c3",
+      "appendArray": {
+        "learningOutcomes": [
+          "能以共同乘除數說明連比等值，並依序處理單位、小數、分數與最大公因數的化簡。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "化簡 18:30:42。",
+            "solutionSteps": [
+              "三項最大公因數是 6。",
+              "三項同除 6，得 3:5:7。",
+              "3、5、7 沒有共同因數。",
+              "以6×3、6×5、6×7還原18、30、42作反向驗算。"
+            ],
+            "answer": "3:5:7",
+            "why": "三個整數必須同除共同因數才保持相對倍數；最大公因數6一次化成3：5：7，而三項已無共同因數，因此是最簡整數連比。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "化簡 1/2:3/4:5/6。",
+            "solutionSteps": [
+              "分母 2、4、6 的最小公倍數是 12。",
+              "三項同乘 12，得 6:9:10。",
+              "6、9、10 的最大公因數為 1。",
+              "將6：9：10除回12，確認原分數依序為二分之一、四分之三、六分之五。"
+            ],
+            "answer": "6:9:10",
+            "why": "同乘分母最小公倍數12會同時消去三項分母而不改變比值；所得6、9、10沒有共同因數，所以不應再局部約分。 所得「6:9:10」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "化簡 0.45:0.6:1.05。",
+            "solutionSteps": [
+              "三項同乘 100，得 45:60:105。",
+              "最大公因數是 15。",
+              "同除 15，得 3:4:7。",
+              "把3：4：7同乘15，確認回到45：60：105。"
+            ],
+            "answer": "3:4:7",
+            "why": "小數三項先同乘100轉成整數，再以共同因數15化簡；兩次操作都作用在每一項上，因此前後連比等值。 所得「3:4:7」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "判斷 4:6:10 與 10:15:25 是否相等。",
+            "solutionSteps": [
+              "4:6:10 化簡為 2:3:5。",
+              "10:15:25 化簡也為 2:3:5。",
+              "兩者可由同一最簡連比表示。",
+              "確認兩組連比都能由2：3：5乘同一正數取得。"
+            ],
+            "answer": "相等",
+            "why": "分別化簡到同一個最簡連比，是判斷兩連比等值的可靠方法；不能只比較前兩項而忽略第三項。 所得「相等」也可由題目原始比例與單位反向驗算。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s002-lecture-r1",
+      "expectedContentSha256": "8cecc1d3bfa488547cfde66989239e7894d45e5680aa1e74ca1abffac0558499",
+      "appendArray": {
+        "learningOutcomes": [
+          "能辨認總和、部分和、差量或單一已知量各自對應的份數，並檢查情境中的整數與單位限制。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "紅、藍、綠球數比為 2:3:5，共 80 顆，各有多少？",
+            "solutionSteps": [
+              "總份數 2+3+5=10。",
+              "每份 80÷10=8 顆。",
+              "各為 16、24、40 顆。",
+              "用16＋24＋40＝80核對三色球總數。"
+            ],
+            "answer": "16 顆、24 顆、40 顆",
+            "why": "總量80對應2＋3＋5共10份，每份8顆；三個結果同用這一份量計算，最後加總可確認沒有漏項或換錯順序。 所得「16 顆、24 顆、40 顆」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "甲乙丙獎金比 4:6:9，丙比甲多 2500 元，求乙。",
+            "solutionSteps": [
+              "丙與甲相差 9-4=5 份。",
+              "每份 2500÷5=500 元。",
+              "乙為 6×500=3000 元。",
+              "以4500－2000＝2500驗證丙比甲多五份。"
+            ],
+            "answer": "3000 元",
+            "why": "差量2500只對應9－4的五份，而不是全部19份；求出每份500後，乙的六份就是3000元。 所得「3000 元」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "三段繩長比 3:5:7，第二段長 45 公分，求總長。",
+            "solutionSteps": [
+              "5 份是 45 公分，所以每份 9 公分。",
+              "總份數 15。",
+              "總長 15×9=135 公分。",
+              "把27、45、63公分同除9，確認回到3：5：7。"
+            ],
+            "answer": "135 公分",
+            "why": "第二段45公分對應五份，所以每份9公分；總長用全部15份計算，不能把已知的五份重複加入。 所得「135 公分」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "A:B:C=1:2:4，且 A+B=24，求 C。",
+            "solutionSteps": [
+              "A+B 代表 3 份。",
+              "每份 24÷3=8。",
+              "C=4×8=32。",
+              "以A＝8、B＝16、C＝32代回A＋B＝24。"
+            ],
+            "answer": "32",
+            "why": "部分和A＋B只代表1＋2共三份，求得每份8後再取C的四份；代回可同時驗證連比與已知部分和。 所得「32」也可由題目原始比例與單位反向驗算。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s003-lecture-r1",
+      "expectedContentSha256": "ece78dafee721567969b00deaed696c07932e8b0368de5e7d1ba48b4e9a8b60e",
+      "appendArray": {
+        "learningOutcomes": [
+          "能先標明整段、上段與下段，再由平行線建立一致的相似對應與比例方向。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "DE∥BC，AD=4、DB=6、AE=5，求 EC。",
+            "solutionSteps": [
+              "AD/DB=AE/EC。",
+              "4/6=5/EC。",
+              "4EC=30，所以 EC=7.5。",
+              "以4：6與5：7.5同為2：3驗證分段位置。"
+            ],
+            "answer": "7.5",
+            "why": "DE平行BC時，左右兩腰的上段比下段相等；4比6對應5比EC，交叉相乘得到7.5，不能把整段混入。 所得「7.5」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "DE∥BC，AD=6、AB=15、AC=20，求 AE。",
+            "solutionSteps": [
+              "AD/AB=AE/AC。",
+              "6/15=AE/20。",
+              "AE=8。",
+              "把AE＝8代回6/15＝8/20檢查比例。"
+            ],
+            "answer": "8",
+            "why": "小三角形對大三角形的比例在兩腰上相同，AD比AB等於AE比AC；使用整段20後可唯一求出AE為8。 所得「8」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "DE∥BC，AE=9、EC=6、BC=20，求 DE。",
+            "solutionSteps": [
+              "AC=9+6=15。",
+              "AE/AC=DE/BC。",
+              "9/15=DE/20，所以 DE=12。",
+              "以DE/BC＝12/20＝3/5核對AE/AC。"
+            ],
+            "answer": "12",
+            "why": "先把右腰整段AC算成15，AE占3/5；平行線使小、大三角形相似，所以底邊DE也占BC的3/5而為12。 所得「12」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "D、E 在 AB、AC 上，AD:DB=3:2，AE=12、EC=8，能否判定 DE∥BC？",
+            "solutionSteps": [
+              "AE:EC=12:8=3:2。",
+              "兩邊分段比相等。",
+              "由逆敘述可判定平行。",
+              "由3：2與12：8同值，逐項確認上段對上段、下段對下段。"
+            ],
+            "answer": "可以",
+            "why": "基本比例定理的逆敘述要求兩腰分段比相等；兩比都化成3：2且位置一致，因此足以判定DE平行BC。 所得「可以」也可由題目原始比例與單位反向驗算。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s004-lecture-r1",
+      "expectedContentSha256": "099eecf49f530484a657ad715568c6aaaec653510da1979415db4887ce03d6d8",
+      "appendArray": {
+        "learningOutcomes": [
+          "能以共同量統一兩個二項比，並在得到連比後檢查總量、整數性與情境限制。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "甲:乙=2:5，乙:丙=3:4，求甲:乙:丙。",
+            "solutionSteps": [
+              "乙份數 5 與 3 的最小公倍數是 15。",
+              "前比乘 3 得 6:15；後比乘 5 得 15:20。",
+              "合併為 6:15:20。",
+              "確認乙的15份在前後兩比中是同一尺度。"
+            ],
+            "answer": "6:15:20",
+            "why": "兩個二項比不能直接拼接，必須先把共同量乙統一為最小公倍數15份；此時甲6份、丙20份才可同時比較。 所得「6:15:20」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "甲比乙多 25%，乙:丙=2:3，求甲:乙:丙。",
+            "solutionSteps": [
+              "甲:乙=125:100=5:4。",
+              "乙:丙=2:3，將後比乘 2 得 4:6。",
+              "合併為 5:4:6。",
+              "以甲＝6、乙＝5、丙＝6檢查甲確實比乙多20%。"
+            ],
+            "answer": "5:4:6",
+            "why": "多25%表示甲是乙的1.25倍，所以甲乙比為5：4；再把乙丙的2：3放大成4：6，橋接後得到5：4：6。 所得「5:4:6」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "三班人數比由甲:乙=4:5、乙:丙=10:9 得到，總人數 138，求甲班。",
+            "solutionSteps": [
+              "把甲:乙 放大 2 倍得 8:10。",
+              "連比為 8:10:9，總份數 27。",
+              "每份 138÷27=46/9，不是整數，因此資料不可能代表整數人數。",
+              "指出138無法由27份平均分成整數人數。"
+            ],
+            "answer": "資料不相容，無整數解",
+            "why": "合併後總份數27，而班級人數必須是整數；138除27不是整數，所以應判斷資料不相容，不能硬做四捨五入。 所得「資料不相容，無整數解」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "A 是 B 的 3/2 倍，B 是 C 的 4/5，求 A:B:C。",
+            "solutionSteps": [
+              "A:B=3:2。",
+              "B:C=4:5。",
+              "把前比乘 2 得 6:4，合併為 6:4:5。",
+              "以A/B＝6/4＝3/2及B/C＝4/5雙重驗算。"
+            ],
+            "answer": "6:4:5",
+            "why": "倍數敘述先轉為A比B等於3比2，再將共同量B統一為4份；所得6：4：5同時滿足兩句條件。 所得「6:4:5」也可由題目原始比例與單位反向驗算。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s005-lecture-r1",
+      "expectedContentSha256": "1d12ef0b58ef674176575685b658d56e499c0a7b1bea050972bf7f4444d35431",
+      "appendArray": {
+        "learningOutcomes": [
+          "能以共同倍數表示三量，正確處理重排、部分和差、指定整體占比與等值連比。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "A:B:C=3:4:8，求 (A+B):C。",
+            "solutionSteps": [
+              "設 A=3k、B=4k、C=8k。",
+              "A+B=7k。",
+              "(A+B):C=7k:8k=7:8。",
+              "將7k：8k約去共同非零因數k。"
+            ],
+            "answer": "7:8",
+            "why": "A與B的份數必須先相加成7份，再與C的8份比較；共同倍數k會同時出現在兩項，可合法約去得到7：8。 所得「7:8」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "X:Y:Z=5:2:3，求 Y 占總量的比例。",
+            "solutionSteps": [
+              "總份數 5+2+3=10。",
+              "Y 為 2 份。",
+              "占比 2/10=1/5。",
+              "以實例5、2、3確認Y占總量為2/10。"
+            ],
+            "answer": "1/5",
+            "why": "占比的分母必須是三項總和10份，分子是Y的2份；化簡成1/5後仍代表同一整體中的比例。 所得「1/5」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "P:Q:R=7:4:2，求 (P-Q):(Q-R)。",
+            "solutionSteps": [
+              "P-Q 為 3 份。",
+              "Q-R 為 2 份。",
+              "比為 3:2。",
+              "檢查P－Q＝3k、Q－R＝2k且兩差皆為正。"
+            ],
+            "answer": "3:2",
+            "why": "差的順序由題目固定，7份減4份與4份減2份分別是3份、2份；約去共同倍數後得到3：2。 所得「3:2」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "a:b:c=2:6:9，若改寫成 c:a:b，結果為何？",
+            "solutionSteps": [
+              "原對應是 a=2k、b=6k、c=9k。",
+              "依新順序列 c、a、b。",
+              "得到 9:2:6。",
+              "依c、a、b的量名順序讀出9、2、6。"
+            ],
+            "answer": "9:2:6",
+            "why": "連比重排時數值必須跟著所代表的量一起移動；原來c是9份、a是2份、b是6份，所以新比唯一為9：2：6。 所得「9:2:6」也可由題目原始比例與單位反向驗算。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u18-s006-lecture-r1",
+      "expectedContentSha256": "edb7122e7c62ffaa17368da315a74f3afc7b0ff634e1204daa63fbabcd4cf63e",
+      "appendArray": {
+        "learningOutcomes": [
+          "能由頂點順序建立角與邊的唯一對應，並區分邊長、周長與面積所使用的倍率。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "若 △ABC∼△DEF，AB=6、DE=9、BC=8，求 EF。",
+            "solutionSteps": [
+              "AB/DE=BC/EF。",
+              "6/9=8/EF。",
+              "6EF=72，所以 EF=12。",
+              "把EF＝12代回6/9＝8/12驗證兩組邊比。"
+            ],
+            "answer": "12",
+            "why": "相似記號給出AB對DE、BC對EF，兩組比例方向必須一致；交叉相乘得到12後，代回兩比都等於2/3。 所得「12」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "若 △PQR∼△XYZ，∠P=48°、∠Q=67°，求 ∠Z。",
+            "solutionSteps": [
+              "三角形內角和為 180°。",
+              "∠R=180°-48°-67°=65°。",
+              "R 對應 Z，所以 ∠Z=65°。",
+              "以48°＋67°＋65°＝180°檢查第三角。"
+            ],
+            "answer": "65°",
+            "why": "先用三角形內角和求R角65°，再依相似記號第三個頂點R對Z；不能把已知的P或Q角直接搬到Z。 所得「65°」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩三角形邊長分別為 3、4、5 與 6、8、10，是否相似？",
+            "solutionSteps": [
+              "依大小配對，3/6=4/8=5/10=1/2。",
+              "三組對應邊同一比值。",
+              "因此相似。",
+              "以三組大邊除小邊皆為2完成SSS核對。"
+            ],
+            "answer": "相似",
+            "why": "三組對應邊都具有同一倍率，符合SSS相似判定；只驗兩組邊仍可能改變夾角，因此必須三組全查。 所得「相似」也可由題目原始比例與單位反向驗算。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "△ABC∼△KLM，且 A↔K、B↔L，邊 AC 對應哪一邊？",
+            "solutionSteps": [
+              "剩餘頂點 C↔M。",
+              "AC 的端點 A、C 分別對 K、M。",
+              "所以 AC 對 KM。",
+              "由A對K、C對M，核對線段兩端只能組成KM。"
+            ],
+            "answer": "KM",
+            "why": "對應邊由兩個端點的對應頂點決定；AC的A對K且C對M，所以只能對應KM，不能依圖上左右位置猜測。 所得「KM」也可由題目原始比例與單位反向驗算。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

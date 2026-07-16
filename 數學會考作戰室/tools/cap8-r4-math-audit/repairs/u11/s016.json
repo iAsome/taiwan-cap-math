@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u11",
+  "batch": "012-u11-complete",
+  "skills": ["s016"],
+  "mc": [
+    {"questionId":"u11-s016-v001","expectedContentSha256":"3dd7723527b8c5ea7ea605e07390c4849cf6311ae605c3076728fc1517cbf6f7","appendText":{"explanation":"正方形邊長設為s，面積給出s²＝50。邊長取正值，s＝√50＝√(25×2)＝5√2，因此答案為五根號二公分，平方後也確實回到五十平方公分。","misconceptionTarget":"把面積五十直接當成邊長，或開根號後漏掉正確化簡。"}},
+    {"questionId":"u11-s016-v002","expectedContentSha256":"123eb8156b321505ba7f55b6198515f465e57ad7f240440696ddf2240d3ff90a","appendText":{"explanation":"正方形面積等於邊長平方，所以邊長滿足s²＝81。雖然代數方程有正負根，但幾何長度不可為負，故只取s＝9，並以九平方等於八十一驗算。","misconceptionTarget":"把邊長寫成正負九，忽略實際長度不可為負。"}},
+    {"questionId":"u11-s016-v003","expectedContentSha256":"061421ddcfe8adc97ec44f63f39f9b375bc6c12ef95bb18d6d93caff4a07aada","appendText":{"explanation":"地圖上橫向差三格、縱向差四格，格數直線距離為√(3²＋4²)＝5格。每格代表二公尺，所以實際距離為5×2＝10公尺。","misconceptionTarget":"求出五格後忘記乘比例尺，或先把三與四各乘錯誤單位。"}},
+    {"questionId":"u11-s016-v004","expectedContentSha256":"89267e3d1299377b060fb36c2df4872b0974cdcbccee98a41d36727bae415a85","appendText":{"explanation":"比較√72與8時可平方比較正數：72大於8²＝64，所以√72大於8，路線A較長；也可化簡√72＝6√2約為8.49，兩種方法結論一致，且不會改變大小關係。","misconceptionTarget":"把根號七十二看成七十二，或誤認根號一定小於根號內的數字選項。"}},
+    {"questionId":"u11-s016-v005","expectedContentSha256":"06ed57179b245eac775eeb682e3fc30ceb320f31279c9ef610f75696de5369f6","appendText":{"explanation":"正方形對角線是兩股皆為十二的直角三角形斜邊，長為√(12²＋12²)＝√288＝12√2公分；結果大於邊長十二且小於二十四，量感合理。","misconceptionTarget":"把兩條邊直接相加成二十四，或化簡根號二百八十八時漏掉十二。"}},
+    {"questionId":"u11-s016-v006","expectedContentSha256":"d5082e2c28c86175827009f0482035a7bf906f4469c08324eb6e22f7338c7db2","appendText":{"explanation":"因9²＝81、10²＝100，√90介於九與十之間。進一步估算9.4²＝88.36、9.5²＝90.25，四捨五入到小數第一位為9.5，而不是直接截去後續位數；指定精度必須保留。","misconceptionTarget":"把根號九十粗略當成九，沒有依指定小數位檢查四捨五入。"}},
+    {"questionId":"u11-s016-v007","expectedContentSha256":"f7c21ef03084df579d141f1631b078f9201aa45b1eb77d06c228ea3cc52b9f68","appendText":{"explanation":"兩正方形邊長分別為√32＝4√2與√50＝5√2，因此邊長差為5√2－4√2＝√2；要先由面積開根號得到邊長，才能相減，不能直接相減面積。","misconceptionTarget":"直接用面積五十減三十二當邊長差，或把根號差合併成根號十八。"}},
+    {"questionId":"u11-s016-v008","expectedContentSha256":"0e0276d28552576255520c51122b80c1abb5951a57af0f1d94118d2695e52981","appendText":{"explanation":"座標橫差六格、縱差八格，圖上直線距離為√(6²＋8²)＝10格。每格代表三公尺，實際距離是10×3＝30公尺，最後單位應為公尺而非格。","misconceptionTarget":"只回答圖上的十格，遺漏每格三公尺的尺度換算。"}},
+    {"questionId":"u11-s016-v009","expectedContentSha256":"0845433005595f4627785c5de7c929d62ab770e178fc0881f3312f27a578141a","appendText":{"explanation":"最長邊為√65。較短兩邊平方和是(√20)²＋(√45)²＝20＋45＝65，正好等於(√65)²，所以是直角三角形，直角位於√65的對面。","misconceptionTarget":"先把各根號取粗略值再比較，因近似誤差破壞原本精確的等式。"}},
+    {"questionId":"u11-s016-v010","expectedContentSha256":"a898bc037d65d1b66a0251391178082fc2df3435b16f8c9bd0e04ef601711fe6","appendText":{"explanation":"路線A長十四公里且每公里成本一，總成本14；路線B直達十公里但每公里成本1.3，總成本13。因此應選成本較低的路線B。","misconceptionTarget":"只比較距離或只比較每公里費率，沒有先算兩條路線的總成本。"}},
+    {"questionId":"u11-s016-v011","expectedContentSha256":"5cac45b0b60a5802a633717cd0c713da84ebaf242feaba5c02518f83d3f4333a","appendText":{"explanation":"門框對角線為√(1.4²＋2²)＝√5.96，約2.441公尺，大於長2.4公尺的細桿，因此在理想平面模型下可以通過。","misconceptionTarget":"只拿桿長與門高二公尺比較，忽略傾斜通過時可利用對角線。"}},
+    {"questionId":"u11-s016-v012","expectedContentSha256":"53c2aa4410c70b16f56212a9ba31cbd9065f233caf3d5bca02093f300b4a8f41","appendText":{"explanation":"比較正數可平方：6.9²＝47.61，小於48，所以6.9＜√48；又7²＝49大於48，所以√48＜7，排序為6.9＜√48＜7。平方比較成立是因三者皆非負，大小順序不會反轉，結論可以直接還原。","misconceptionTarget":"憑小數外觀猜順序，或平方比較時忘記三者皆為非負數。"}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u11-s016-cr001","expectedContentSha256":"b2a53a3fd786182e38673cf8be649cda37e98ac38072523ac7ca30a6a195beb1","set":{"standardSolution":["路線A沿兩垂直方向走，距離為9＋12＝21公里；每公里成本一，總成本21。","路線B為直線，距離√(9²＋12²)＝15公里；每公里成本1.35，總成本15×1.35＝20.25。","因20.25＜21，所以選路線B，且比路線A少0.75個成本單位。"],"commonErrorTargets":["只比較十五與二十一公里就選路線B，沒有把不同的每公里成本計入。","把1.35加到十五而非相乘，導致路線B總成本計算錯誤。"]}},
+    {"questionId":"u11-s016-cr002","expectedContentSha256":"36d505d1efe9876c3254b40147c0d54da2bfa291cca08553a03e981b0b9edded","set":{"standardSolution":["門框對角線平方為1.2²＋2.1²＝1.44＋4.41＝5.85，所以對角線為√5.85公尺。","細桿長2.4公尺，其平方5.76小於5.85，因此2.4＜√5.85，理想化判斷為可以通過。","此模型假設門框與桿在同一平面、桿無厚度且沒有門檻或五金阻擋；實際仍需保留間隙。"],"commonErrorTargets":["只比較桿長二點四與門高二點一，未利用門框對角線判斷。","宣稱實際一定可通過，沒有說明平面、無厚度與無障礙物等模型限制。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u11-s016-lecture-r1","expectedContentSha256":"2421f6b45a9907802f85d216c800e79bc51980ded9840401fc0689e1b8b29679","appendArray":{"conceptNarrative":["根號量在應用題中常代表尚未取近似的真實長度。先保留精確根式完成化簡、平方比較與尺度換算，只有題目指定小數位或情境需要時才近似，可避免中途四捨五入累積誤差。面積開根號求邊長時取正值；座標或格線距離先用勾股定理求格數，再乘每格尺度；比較路線則要看題目問距離、時間或成本，不能只選較短者。門框等幾何模型還應交代平面、厚度與障礙物假設，讓數學結論不超出模型能力。"]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"正方形面積為七十二平方公分，求邊長的最簡根式。","solutionSteps":["設邊長為s，依面積得s²＝72。","邊長取正值，所以s＝√72。","分解72＝36×2，化簡得s＝6√2公分。"],"answer":"6√2公分","why":"面積單位開根號後成為長度單位，且幾何邊長只取正根；先化為最簡根式能保留精確值，避免過早近似。"},
+      {"exampleId":"L2","prompt":"地圖橫差九格、縱差十二格，每格二公尺，實際直線距離多少？","solutionSteps":["格線上的兩個方向互相垂直。","圖上距離為√(9²＋12²)＝15格。","乘每格二公尺，實際距離為15×2＝30公尺。"],"answer":"30公尺","why":"勾股定理先得到的是圖上的格數，不是實際公尺數；最後乘比例尺才能完成單位換算，也可避免把尺度重複平方。"},
+      {"exampleId":"L3","prompt":"路線甲長十公里、每公里成本1.4；路線乙長十三公里、每公里成本1，選何者？","solutionSteps":["路線甲總成本為10×1.4＝14。","路線乙總成本為13×1＝13。","比較14與13，選總成本較低的路線乙。"],"answer":"路線乙","why":"題目目標是成本而不是距離，較短路線不一定較便宜；分別將距離乘單位成本後，才是在比較同一種總量。"},
+      {"exampleId":"L4","prompt":"寬一點五公尺、高二公尺的門框，長二點四公尺的細桿能否斜著通過？","solutionSteps":["門框對角線為√(1.5²＋2²)＝√6.25。","算得對角線長2.5公尺。","因2.4＜2.5，理想平面且無厚度模型下可以通過。"],"answer":"理想模型下可以通過","why":"傾斜時可利用的是門框對角線而非只看高度；但數學模型忽略桿的厚度、門框深度與障礙物，因此結論需附帶假設。"}
+    ]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -1,0 +1,938 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": ["s007", "s008", "s009", "s010", "s011", "s012"],
+  "mc": [
+    {
+      "questionId": "u16-s007-v001",
+      "expectedContentSha256": "bde4514c55361e2a697249ff5f47468317517256010965ed8832f145a19786a5",
+      "set": {
+        "explanation": "等邊三角形三邊相等，所以依等邊對等角可知三個內角也相等。三角形內角和為180°，平均分成三份得到180°÷3＝60°；45°、90°與120°都無法讓三個相等內角合計180°。",
+        "steps": ["由三邊相等推出三個內角彼此相等。", "使用三角形內角和180°。", "計算180°÷3＝60°，再以3×60°＝180°驗算。"],
+        "misconceptionTarget": "把等邊三角形與正方形的90°混淆，或沒有用內角和檢查三個相等角。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v002",
+      "expectedContentSha256": "e634af968314d995a05a8afc8bf9f9338877607a4e079ba59750ed194db6a38a",
+      "set": {
+        "explanation": "由AB＝AC可得∠B＝∠C，由AB＝BC可得∠A＝∠C，因此三角相等。三角形內角和180°再平均分配，三角都為60°；只證兩角相等尚未用完三邊相等的完整條件。",
+        "steps": ["用AB＝AC推出∠B＝∠C。", "用AB＝BC推出∠A＝∠C，合併得三角相等。", "以180°÷3＝60°求每個內角，確認第一個選項。"],
+        "misconceptionTarget": "只套用一次等腰三角形性質便停止，沒有由第三邊相等完成三角相等。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v003",
+      "expectedContentSha256": "6b5ea8c9bc9c8b25d7f5b338551c8ed44c9b85a06b9e9fa60efdd7fbb4caac02",
+      "set": {
+        "explanation": "三個內角都是60°，任取兩角都相等，依等角對等邊即可得到各自的對邊相等。連續比較三組角後，三邊全相等，所以不只是等腰，而能唯一判定為等邊三角形。",
+        "steps": ["由∠A＝∠B推出其對邊BC＝CA。", "再由∠B＝∠C推出其對邊CA＝AB。", "合併三邊相等，判定△ABC為等邊三角形。"],
+        "misconceptionTarget": "認為等角只能推出一組等邊，沒有把第三個60°也納入比較。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v004",
+      "expectedContentSha256": "ed5a5a9e8bb0807b7ce97ec28e8106c78e9d77460631fa70d4b93f7ab82a087a",
+      "set": {
+        "explanation": "等邊三角形的三條邊一樣長，設每邊為s，周長就是3s。由3s＝36公分可得s＝36÷3＝12公分；18公分是只分兩份，36公分則把整個周長誤當單邊。",
+        "steps": ["設等邊三角形每一邊長為s公分。", "依三邊相等寫出3s＝36。", "計算s＝12公分，並以12＋12＋12＝36驗算。"],
+        "misconceptionTarget": "把等邊三角形當成只有兩條等腰，或直接將周長當作一條邊長。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v005",
+      "expectedContentSha256": "82c548a717e38fb33650b8613f9a378a3893fa4cad928210e24db9d9d0270c8f",
+      "set": {
+        "explanation": "等邊三角形的頂角∠A為60°。D是BC中點，所以AD是從等腰三角形頂點連到底邊中點的中線；依三線合一，AD也平分∠A，因此∠BAD＝60°÷2＝30°。圖中的高線只提供結構，不直接標出所求30°。",
+        "steps": ["由等邊性質求得∠A＝60°。", "由D為BC中點確定AD是底邊中線。", "使用等腰三角形三線合一，計算∠BAD＝30°。"],
+        "misconceptionTarget": "把AD與BC的90°誤當∠BAD，或只知道D是中點卻未使用三線合一。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v006",
+      "expectedContentSha256": "9c5555d7a7f0fba14944cb152ac0999580a93ebcfa24cca37a27c305cbd4d16c",
+      "set": {
+        "explanation": "等邊△ABC可視為AB＝AC的等腰三角形。從頂點A向底邊BC作高AD時，高線同時也是中線，所以D平分BC；已知BC＝10，故BD＝DC＝10÷2＝5。這項結論來自等腰三角形頂角平分線、高線與中線重合。",
+        "steps": ["以AB＝AC把△ABC視為等腰三角形。", "由AD是頂點高線套用三線合一，得D為BC中點。", "計算BD＝BC÷2＝10÷2＝5。"],
+        "misconceptionTarget": "把一般三角形的高線性質套入而說無法判斷，忘記題目另有等邊條件。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v007",
+      "expectedContentSha256": "6019cc53bd01d1646212c10a12d67d901dfa187cc7437d920c96ab7521068c8a",
+      "set": {
+        "explanation": "等腰三角形兩個底角相等，頂角60°以外的角度和為180°－60°＝120°，兩底角各為60°。三個角全是60°，再由等角對等邊推出三邊相等，因此它必為等邊三角形。",
+        "steps": ["求兩底角的總和180°－60°＝120°。", "利用兩底角相等，得每個底角120°÷2＝60°。", "由三角皆60°推出三邊相等，選擇第四項。"],
+        "misconceptionTarget": "把剩餘120°各分成30°，或認為等腰三角形的底邊必定不同於兩腰。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v008",
+      "expectedContentSha256": "f936be7ee88cdbdf76fe7b9feeeda5306be8874665133e56e5522292da081e7d",
+      "set": {
+        "explanation": "等邊三角形從任一頂點出發都可視為等腰三角形的頂點中線，因此每一條中線也同時是高線、角平分線與對稱軸。三條線分別由不同頂點出發並在中心交會，不是重合、平行或只有一條有效。",
+        "steps": ["分別從三個頂點向各自對邊中點作中線。", "對每一頂點套用等腰三角形三線合一。", "確認三條不同直線在同一中心交會，而非彼此重合或平行。"],
+        "misconceptionTarget": "把「三線合一」誤解成整個三角形的三條中線合成同一條直線。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v009",
+      "expectedContentSha256": "9150cad05c58a34aa44165b13661a7ee82cecb1701119d19879e0a5309d73559",
+      "set": {
+        "explanation": "D為BC中點，而等邊三角形的頂點中線AD同時垂直BC，所以△ABD與△ACD都是直角三角形。兩者斜邊AB、AC皆為8，一股BD、DC皆為4，正好符合斜邊與一股分別相等的RHS判定。",
+        "steps": ["由等邊性質得斜邊AB＝AC＝8。", "由D為BC中點得一股BD＝DC＝4，並由三線合一得兩個直角。", "以斜邊與一股分別相等套用RHS，證明兩小三角形全等。"],
+        "misconceptionTarget": "無法辨認兩個直角三角形中的斜邊與股，或把共用的AD誤當斜邊。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v010",
+      "expectedContentSha256": "f47cbeb055cb7dc597a85342a2a632f9dd72b93212237c219a40920b56e03012",
+      "set": {
+        "explanation": "警告牌三邊都是75公分，符合等邊三角形定義。等邊三角形三角相等且內角和180°，因此每角固定為60°；邊長75只決定牌子的大小，不會改變角度。",
+        "steps": ["由三邊同為75公分判定圖形為等邊三角形。", "由等邊性質得三個內角相等。", "計算180°÷3＝60°，確認角度與邊長數值無關。"],
+        "misconceptionTarget": "把75公分的長度數值直接當成75°，或認為等邊三角形變大後角度也改變。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v011",
+      "expectedContentSha256": "d740500b5f7bcd15068cfaeb8e795155da7a6af8f1647724e88313660f002695",
+      "set": {
+        "explanation": "正三角形就是等邊三角形，三條邊等長。周長24公尺平均分給三邊，單邊長為24÷3＝8公尺；題目問的是一邊，不是兩邊和或整個周長。",
+        "steps": ["辨認正三角形的三邊長度相等。", "把周長寫成邊長的三倍。", "計算24÷3＝8公尺，並以3×8＝24公尺驗算。"],
+        "misconceptionTarget": "把正三角形誤當四邊形除以4，或只因它也等腰便將周長分成兩份。"
+      }
+    },
+    {
+      "questionId": "u16-s007-v012",
+      "expectedContentSha256": "41ab7c76b7f7c19ed5e708e12ac3e1757b51407fd29955256432f10142de4cd9",
+      "set": {
+        "explanation": "等邊△ABC的頂角為60°，D又是對邊BC中點，所以AD是頂點中線。依三線合一，AD同時垂直BC並平分∠A，故∠BAD與∠DAC各30°；這兩個定位性質同時成立。",
+        "steps": ["由等邊性質求得∠A＝60°。", "由D是BC中點確定AD為頂點中線。", "套用三線合一，得AD⊥BC且兩半角各30°。"],
+        "misconceptionTarget": "只保留中線平分底邊的功能，或把整個60°誤當AD與BC的夾角。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v001",
+      "expectedContentSha256": "09ea2e916a362edbba7a8050df60bf959c26f0058b61c49bafcc01daa04efd1a",
+      "set": {
+        "explanation": "純尺規作圖中的直尺沒有刻度，只能通過兩個已知點畫直線或把既有線段延長；量出5公分、量出60°或固定圓規開口都不是無刻度直尺的功能。因此合法操作是通過兩點畫直線或延長線。",
+        "steps": ["先區分無刻度直尺與圓規的功能。", "刪去量長、量角及固定圓規開口等不屬於直尺的操作。", "保留連接兩點或延長既有直線的操作。"],
+        "misconceptionTarget": "把日常使用的有刻度直尺功能帶入純尺規作圖；純尺規的直尺不能讀取長度或角度。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v002",
+      "expectedContentSha256": "7434ad761ae3f819751a8f6cca167a22a9ed3e96e16f74b4051fec882039b3be",
+      "set": {
+        "explanation": "弧以A為圓心、AB為半徑，所以弧上任一點P到圓心A的距離都等於半徑，即AP＝AB。BP＝AB、AP⊥AB或P是中點都不能只由P在此弧上推出，因為這些敘述還需要其他幾何條件。",
+        "steps": ["確認圓心是A。", "確認圓規開口所取的半徑是AB。", "由P在弧上得到AP等於半徑AB。"],
+        "misconceptionTarget": "把弧上點到非圓心B的距離也誤當成半徑；半徑關係只連結圓心A與弧上點P。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v003",
+      "expectedContentSha256": "0913ede42acd387c2b9708eb7a44df0411e9bc2785e9276b02ff0ee265a921b3",
+      "set": {
+        "explanation": "以A、B為圓心且使用相同半徑畫弧時，交點P同時在兩弧上，因此PA＝PB；另一交點Q也有QA＝QB。兩個交點都到A、B等距，正是作出AB中垂線的依據。",
+        "steps": ["由P在兩弧上寫出PA與PB分別等於同一圓規開口。", "得到PA＝PB；同理QA＝QB。", "因此P、Q都位於到A、B等距的軌跡上。"],
+        "misconceptionTarget": "只憑圖形看似左右對稱就判斷；真正保證中垂線的是兩次圓規開口相同所造成的等距關係。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v004",
+      "expectedContentSha256": "349420f9ed1c75fa7782cd9ec2f84766212cb9b0dc0fbcad59d629de2f5d5efa",
+      "set": {
+        "explanation": "要在射線PX上搬移已知長度AB，先讓圓規開口等於AB，再以新線段的起點P為圓心畫弧；弧與射線的交點Q滿足PQ＝AB。全程不必也不能用無刻度直尺讀取AB。",
+        "steps": ["用圓規取得已知線段AB的長度。", "保持開口不變，以P為圓心畫弧。", "把弧與射線PX的交點命名為Q，便有PQ＝AB。"],
+        "misconceptionTarget": "圓心沒有放在新線段的起點P，或先用直尺量數值；兩者都無法形成合格的距離搬移。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v005",
+      "expectedContentSha256": "a2bb92e1d13f7da2e712f9be20b749fed7e7f18e5e5d2c54031af9c49ae9bab5",
+      "set": {
+        "explanation": "兩弧可視為圓心在A、B且半徑相同的兩圓。若共同半徑小於AB的一半，兩個半徑的和就小於圓心距離AB，兩圓彼此分離，無法取得作中垂線所需的兩個交點。",
+        "steps": ["設共同半徑為r，題意給r＜AB÷2。", "所以2r＜AB，也就是兩半徑和小於圓心距離。", "判定兩圓不相交，不能得到兩個弧交點。"],
+        "misconceptionTarget": "只記得兩次半徑要相同，卻忽略半徑還必須大於AB的一半，才能在AB兩側形成兩個交點。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v006",
+      "expectedContentSha256": "67bb02565068b90b1109ed302af8de551ce1eddbc0a69fe16c1d500aa7d1c90a",
+      "set": {
+        "explanation": "第一弧使OC＝OD；再以C、D為圓心、相同半徑畫弧交於P，使CP＝DP。△OCP與△ODP還共用OP，依SSS全等，故∠COP＝∠POD，所以應作射線OP。這也說明最後答案線必須通過原角頂點O。",
+        "steps": ["保留第一弧與角兩邊的交點C、D，得到OC＝OD。", "以C、D為圓心且相同半徑畫弧，取得交點P並得到CP＝DP。", "連結O、P；由兩三角形SSS全等證明OP平分原角。"],
+        "misconceptionTarget": "把第一弧的弦CD直接當成角平分線；角平分線必須通過角的頂點O。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v007",
+      "expectedContentSha256": "38dd27f6219bf4e4dc39f83e4d21968920a462a2d1ce3c681739e1e7dddab109",
+      "set": {
+        "explanation": "若以A、B為圓心時使用不同半徑r₁、r₂，交點P只滿足PA＝r₁、PB＝r₂；當r₁≠r₂時便沒有PA＝PB。失去到A、B等距的條件，就不能保證兩交點連線是AB的中垂線。",
+        "steps": ["寫出P到兩圓心的距離：PA＝r₁、PB＝r₂。", "比較不同圓規開口，得到r₁≠r₂。", "判定PA≠PB，等距軌跡的驗證失敗。"],
+        "misconceptionTarget": "認為只要兩弧有交點、畫法外觀相似就成立；中垂線需要的是同半徑所保證的等距。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v008",
+      "expectedContentSha256": "94141ff050416bc5872ce195baa3f6ef33877bc7500bb831ae92d4140f691e5e",
+      "set": {
+        "explanation": "以A、B為圓心、AB為半徑的兩弧有上下兩個交點C₁、C₂。兩者都滿足AC＝BC＝AB，因此形成的兩個三角形三邊分別相等，依SSS全等；它們位於AB兩側並互為鏡射。",
+        "steps": ["對任一交點C寫出AC＝AB且BC＝AB。", "上下兩個三角形的三邊都等於AB，依SSS全等。", "觀察兩交點在AB兩側，判定兩圖互為關於AB的鏡射。"],
+        "misconceptionTarget": "把朝向不同誤認成大小或形狀不同；鏡射會改變方向，但保留所有長度與角度。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v009",
+      "expectedContentSha256": "a6f08e1acfbdbc4ed651c9584965f820088dc5ed693149a86a37508c6eb50abe",
+      "set": {
+        "explanation": "共同半徑若恰等於AB的一半，兩圓的半徑和等於圓心距離，兩圓只在AB中點M外切。雖然找到了中點，但通過M仍可畫無數直線；缺少第二個不在AB上的等距交點，不能確定垂直方向。",
+        "steps": ["由2r＝AB判定兩圓外切。", "唯一交點M位於AB上且是中點。", "指出一個點不足以決定中垂線方向，仍需另一等距點。"],
+        "misconceptionTarget": "把找到線段中點等同於已作出整條垂直平分線；還必須確定通過中點的垂直方向。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v010",
+      "expectedContentSha256": "b7dda55c47217ab0eac27d4771e77d59a4a08ffdb62fda1b8d2c9e2c5608dc11",
+      "set": {
+        "explanation": "已知AB＝1.8公分只是描述幾何距離；純尺規作圖應直接用圓規保存AB的長度，保持開口不變移到P，以P為圓心畫弧截射線。交點Q自然滿足PQ＝AB，不需讀取1.8。",
+        "steps": ["把圓規兩腳放在A、B，取得長度AB。", "不改開口，把圓心移到P並畫弧。", "以弧與射線的交點Q作新端點，驗證PQ＝AB。"],
+        "misconceptionTarget": "誤以為必須先把長度化成數值再重畫；圓規本身就能無刻度地搬移幾何距離。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v011",
+      "expectedContentSha256": "ead90b81ebb6e31ad8891273208c7f53642b8b92ca1dfac4a8ada18555dbd117",
+      "set": {
+        "explanation": "前兩步用A、B為圓心的同半徑弧取得P、Q，使PA＝PB且QA＝QB。AB只是原線段；真正由兩個等距點決定的直線是PQ，所以最後必須連接P、Q，而不是再次連A、B。",
+        "steps": ["確認兩弧交點P、Q都到A、B等距。", "到A、B等距的點位於AB的垂直平分線。", "連接兩個等距點P、Q，得到所求中垂線。"],
+        "misconceptionTarget": "只檢查畫弧過程而忽略最後輸出的線；連AB只會重畫原線段，不會得到中垂線。"
+      }
+    },
+    {
+      "questionId": "u16-s008-v012",
+      "expectedContentSha256": "28d9c1e727ca3742c06b03590e4a32bb443e9c8d0ec838de9676f27e68a20165",
+      "set": {
+        "explanation": "設基地為A、B，位置P到兩基地等距可寫成PA＝PB。平面上所有滿足此條件的點，恰好構成線段AB的垂直平分線，因此符合條件的位置軌跡是AB的中垂線。",
+        "steps": ["把文字條件轉成距離等式PA＝PB。", "套用『到線段兩端點等距的點在其中垂線上』。", "判定所有可能點的集合是線段AB的垂直平分線。"],
+        "misconceptionTarget": "把兩基地的連線AB本身當作等距軌跡；AB上只有中點同時到A、B等距。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v001",
+      "expectedContentSha256": "b97c431fbd5108547a7185765ad4a271857d69f61fb964ee9d97852bff7c58af",
+      "set": {
+        "explanation": "以原角頂點O為圓心畫一道弧，弧與兩角邊交於C、D。因C、D同在以O為圓心的弧上，所以OC＝OD；這一步建立兩個到O等距的截點，並用弦CD記錄原角的張開程度，不能直接讀出角度數值。",
+        "steps": ["確認第一弧的圓心是原角頂點O。", "把弧與兩角邊的交點命名為C、D。", "由同圓半徑得OC＝OD，並保留弦CD供後續搬移。"],
+        "misconceptionTarget": "以為圓弧能像量角器直接讀出角度；尺規複製角是保存半徑與弦長，不是量度數。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v002",
+      "expectedContentSha256": "9f76613635473da097ffc2ad54e107f7baf8418ebca1d841726d7aab7fabd86f",
+      "set": {
+        "explanation": "第一弧用共同半徑OC＝OD固定兩腰，原角的張開程度則由兩截點間的弦CD保存。到新頂點作出同半徑弧後，必須再搬移CD，才能以三邊相等固定相同的圓心角。",
+        "steps": ["在原角用同一弧取得C、D。", "辨認OC、OD只是共同半徑，尚不能單獨固定夾角。", "量取弦CD並在新弧上搬移，保存原角大小。"],
+        "misconceptionTarget": "只搬移半徑OC或OD，忘記半徑固定的圓上仍有許多點，會形成不同大小的角。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v003",
+      "expectedContentSha256": "2266710ac07e7f262da5d71e9b0a613369ec1f8bedcf66990dc905f6eee967b8",
+      "set": {
+        "explanation": "新弧以P為圓心，圓規開口保持為原來的OC；E是新弧與基準射線PX的交點。因此PE是新弧半徑，必有PE＝OC。EX、OE等距離都不是這個圓的半徑。",
+        "steps": ["確認新弧圓心為P。", "確認圓規開口沿用原弧半徑OC。", "由E在新弧上得到PE＝OC。"],
+        "misconceptionTarget": "把弧上交點E到非圓心X或O的距離誤當半徑；半徑必須從圓心P量到弧上點E。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v004",
+      "expectedContentSha256": "6ac1e5d4e7d1d29a6fe1c3fbdb5c23cfe1c278b99937bdf8abc56856ac475baf",
+      "set": {
+        "explanation": "原、新兩個小三角形中，OC＝PE、OD＝PF來自相同半徑，CD＝EF來自搬移弦長，三組對應邊分別相等，所以應以SSS判定全等，再由對應角相等得到複製角相等。",
+        "steps": ["列出第一組半徑OC＝PE。", "列出第二組半徑OD＝PF及弦CD＝EF。", "三組邊相等，使用SSS而不是先假設角相等。"],
+        "misconceptionTarget": "為了使用SAS先把待證的兩角當成已知相等，形成循環論證；作圖直接提供的是三組邊。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v005",
+      "expectedContentSha256": "8461c4463145a13c0ff2958c32bebfd8503b59f466b616cd99b5f7469d429669",
+      "set": {
+        "explanation": "E是新弧上已固定的第一個截點。要使另一交點F滿足EF＝CD，應把圓規開口改成原弦CD，以E為圓心畫弧，和以P為圓心的新弧相交於F；P只負責建立新弧半徑。",
+        "steps": ["先在基準射線上取得新弧交點E。", "用圓規量取原弦CD，保持此開口。", "以E為圓心截新弧於F，得到EF＝CD。"],
+        "misconceptionTarget": "把新頂點P誤當每一道弧的圓心；若第二次仍以P為圓心，就不能從E搬移弦CD。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v006",
+      "expectedContentSha256": "91773a9ddfa5d170b582d110ebfaf494ba570a4f0ae898b6754b0eba38c32131",
+      "set": {
+        "explanation": "複製角的頂點指定為P，一邊是既有基準射線PX，另一邊必須也從P出發並通過定位完成的F。因此最後作射線PF；連EF只會得到弦，直線CD和射線OP都不在新角的位置。",
+        "steps": ["確認新角頂點是P。", "確認新角第一邊沿射線PX，第二個定位點為F。", "連接P、F並由P向F延伸成射線PF。"],
+        "misconceptionTarget": "把用來保存角大小的弦EF當成角邊；角的兩邊都必須以同一頂點P為端點。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v007",
+      "expectedContentSha256": "cd2d6b9c9f68f4baa7cbf00cb11476058e5235077a447b591554c7c26eb257c0",
+      "set": {
+        "explanation": "原小三角形三邊為R、R、CD，新小三角形三邊為r、r、CD。若r≠R，只有弦CD相同，三組邊並未對應相等，不能用SSS保證圓心角相同；同一弦在不同半徑的圓上通常對應不同圓心角。",
+        "steps": ["列出原三角形邊長R、R、CD。", "列出新三角形邊長r、r、CD。", "由r≠R判定SSS條件不足，複製角不一定相等。"],
+        "misconceptionTarget": "認為弦長單獨決定角度；圓心角還取決於所在圓的半徑。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v008",
+      "expectedContentSha256": "36ef323c32398a96c9e1ab9b465b99096cc7b4339620378ba84e46139433c6bc",
+      "set": {
+        "explanation": "以E為圓心截新弧時可能得到位於基準射線兩側的兩個交點，它們形成大小相等但方向互為鏡射的角。題目指定新角在射線PX上方，所以必須選上方交點作F，不能任選或同時連兩點。",
+        "steps": ["辨認基準射線PX的方向。", "比較兩候選交點F₁、F₂位於射線的哪一側。", "依『上方』位置條件選取上方交點F。"],
+        "misconceptionTarget": "只檢查角度大小而忽略題目指定的側別；鏡射角雖等大，位置條件仍能排除其中一個。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v009",
+      "expectedContentSha256": "9373d69120783aebcaf4c74b2e8f890c972044d5d6d4fcdda3c6a3e911bc8071",
+      "set": {
+        "explanation": "完整驗證要列出OC＝PE、OD＝PF及CD＝EF。前兩組來自使用相同半徑，第三組來自搬移原弦；因此△OCD與△PEF依SSS全等，圓心處的對應角才相等。只寫半徑或弦都不足。",
+        "steps": ["由作圖寫出兩組對應半徑相等。", "由第二次圓規開口寫出對應弦CD＝EF。", "依SSS證兩三角形全等，再用對應角相等完成證明。"],
+        "misconceptionTarget": "把圖形看起來相同或只列部分等長關係當成證明；全等需要完整的三組對應邊。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v010",
+      "expectedContentSha256": "fae6cbc2fde7a0f6b810ddb1b74f4bffbabad2d8fb46f7b592fbd8a6803ca2f9",
+      "set": {
+        "explanation": "製作可搬移的角模板時，要保存第一弧的半徑以及弧上兩截點間的弦長。半徑形成等腰三角形的兩腰，弦形成第三邊，三者以SSS唯一固定角的大小；射線本身沒有固定長度。",
+        "steps": ["以原角頂點為圓心，用同一半徑截兩角邊。", "保存這個截弧半徑。", "再保存兩截點間的弦長，讓三邊共同固定角。"],
+        "misconceptionTarget": "以為兩條角邊的畫出長度或模板周長能定義角；射線可任意延長，關鍵是半徑與弦。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v011",
+      "expectedContentSha256": "a8c09e856efbb2bd41b33677190f0185a4b55db204fd7fb64c67ca0352174455",
+      "set": {
+        "explanation": "以P為圓心、OC為半徑的第一道新弧已建立PE＝OC。下一道以E為圓心的弧目的不同，是把原弦CD搬到新弧上，因此圓規開口應改為CD；若仍用OC，就沒有EF＝CD的保證。",
+        "steps": ["分辨第一開口OC用來建立新圓半徑。", "確認E是新弧上與基準射線相交的已知點。", "第二次改取弦CD，以E為圓心截得F。"],
+        "misconceptionTarget": "把不同階段的兩個圓規開口混為一談；OC負責半徑，CD負責保存角的張開程度。"
+      }
+    },
+    {
+      "questionId": "u16-s009-v012",
+      "expectedContentSha256": "840ffaf6fb582c9765deec5d98b9962b6044649e107778374005324288839dea",
+      "set": {
+        "explanation": "基準射線兩側的交點可形成互為鏡射的兩個角。鏡射保留角度，所以若原角是70°，另一側仍是70°而非110°；題目未指定側別時，兩個位置通常都符合複製等角的要求。",
+        "steps": ["確認兩側作圖都保留相同半徑與弦長。", "由SSS判定兩個候選角都與原角相等。", "檢查題目沒有指定上方或下方，故鏡射位置也合法。"],
+        "misconceptionTarget": "把方向相反誤認成角度改變或自動取補角；只有額外的側別條件才會排除鏡射解。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v001",
+      "expectedContentSha256": "32bfb254504984e61023404f92a5da460d0b5c549219b5d5d89da4d86ad92e0e",
+      "set": {
+        "explanation": "P已在直線ℓ上。先以P為圓心畫一個與ℓ相交的弧，弧在P兩側交ℓ於A、B；因A、B在同一個以P為圓心的圓上，所以PA＝PB，P成為AB中點，之後才能作AB的中垂線。",
+        "steps": ["把第一道弧的圓心設為指定點P。", "選取正半徑畫弧，使它與直線ℓ在P兩側交於A、B。", "由同圓半徑確認PA＝PB。"],
+        "misconceptionTarget": "先使用尚未定義的A、B或任意外點Q，或目測90°畫線；第一步應先建立P兩側的等距截點。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v002",
+      "expectedContentSha256": "9161aab9a0c5bc731fcda295b92b9c25980d6d9bdb9df66d717603ef8e4affd4",
+      "set": {
+        "explanation": "此方法需要直線ℓ上的兩個不同點A、B，並使PA＝PB，才能把所求垂線轉成線段AB的中垂線。因此以P為圓心的圓應穿過ℓ並與它有兩個交點，而不是相切成一點。",
+        "steps": ["辨認後續作圖需要不同的A、B兩端點。", "讓以P為圓心的圓穿過直線ℓ。", "判定圓與直線應有2個交點。"],
+        "misconceptionTarget": "認為圓與直線相切所得的一個點就是垂足且足以完成標準流程；一點不能形成線段AB。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v003",
+      "expectedContentSha256": "a682c30cf0f7cc3042d8f2549d70b00c3e116af2e4f14992429ac4daeb4728e9",
+      "set": {
+        "explanation": "PA＝PB表示P到線段AB兩端點的距離相等。平面上到A、B等距的點所形成的軌跡就是AB的垂直平分線，所以P位於AB的中垂線上；它不必位於直線AB本身。",
+        "steps": ["把PA＝PB讀成P到A、B等距。", "套用線段垂直平分線的等距軌跡性質。", "判定P在AB的垂直平分線上。"],
+        "misconceptionTarget": "把到A、B等距的點全放在線段AB上；AB上只有中點等距，其他等距點分布在中垂線上。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v004",
+      "expectedContentSha256": "0e60afbdbf71a9e5b63882b8a7c4799aaf5c7cff319b30156999868aa83f4a2a",
+      "set": {
+        "figureId": null,
+        "visualMode": "text-only",
+        "explanation": "由PA＝PB可知P在AB的中垂線上；由QA＝QB可知Q也在同一條中垂線上。兩個不同點決定唯一一直線，因此通過P、Q的直線PQ就是AB的中垂線。",
+        "steps": ["用PA＝PB判定P位於AB的中垂線。", "用QA＝QB判定Q也位於AB的中垂線。", "連接兩個等距點P、Q，得到直線PQ。"],
+        "misconceptionTarget": "把弧的圓心A、B與答案線上的點混淆；答案線應通過兩個到A、B等距的點P、Q。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v005",
+      "expectedContentSha256": "d560c12083704371d6756c789f64a20fb1f99fe65a12ac9d3fa226152d523e00",
+      "set": {
+        "explanation": "第一道以P為圓心的弧保證PA＝PB；以A、B為圓心且相同半徑的兩弧又保證QA＝QB。因此P、Q都在AB的中垂線上，直線PQ就是AB的中垂線，故與包含AB的直線ℓ垂直。",
+        "steps": ["由第一弧寫出PA＝PB。", "由第二組同半徑弧寫出QA＝QB。", "用兩個等距點決定AB中垂線，推出PQ⊥ℓ。"],
+        "misconceptionTarget": "用『看起來豎直』作證，或從等腰三角形直接說頂角是90°；垂直性來自中垂線性質。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v006",
+      "expectedContentSha256": "f217d29b08fba2ef1f73906c4d5f772345db2c6a4961f8c026a6d6c538ecee92",
+      "set": {
+        "explanation": "若以P為圓心的圓只與ℓ相切於A，標準等距中垂線流程就只有一個截點，無法形成兩端點不同的線段AB。應增大半徑，使圓穿過直線ℓ並產生兩個交點A、B，再繼續作圖。",
+        "steps": ["辨認目前圓與ℓ相切，只有一個交點A。", "指出標準流程缺少另一截點B。", "增大半徑直到圓與ℓ相交於兩點。"],
+        "misconceptionTarget": "把相切所隱含的幾何性質，誤當成題目指定之標準尺規流程已可直接執行；此流程仍需A、B兩點。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v007",
+      "expectedContentSha256": "1a24e3f3d942ef820f0047dc63b89157b0ae0eb96900eb973554ace2a061eaee",
+      "set": {
+        "explanation": "P仍因PA＝PB而在AB的中垂線上，但若以A、B為圓心畫弧時半徑不同，交點Q只滿足QA＝r₁、QB＝r₂。當r₁≠r₂便不能推出QA＝QB，所以Q未必在中垂線上，直線PQ的方向也無法保證。",
+        "steps": ["保留P到A、B等距的已知條件。", "寫出Q到A、B的距離分別等於兩個不同半徑。", "判定只有P確定在中垂線上，一點不足以決定答案線。"],
+        "misconceptionTarget": "以為一個等距點P加任意另一點Q就能畫出中垂線；第二點也必須到A、B等距。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v008",
+      "expectedContentSha256": "f12035b1f862599a0542d719e33fd7ced6a2fd634a84026725c539b273e777bb",
+      "set": {
+        "explanation": "任取ℓ上的A、B時，AB的中垂線一定通過AB中點M，但P只是ℓ上的指定點，未必等於M。只有當PA＝PB，也就是P恰為AB中點時，AB的中垂線才會通過P。",
+        "steps": ["設M為AB中點，確認中垂線通過M。", "比較P與M；P在ℓ上不代表P＝M。", "用PA＝PB作為P＝M、從而通過P的必要條件。"],
+        "misconceptionTarget": "把『P在原直線ℓ上』誤當成『P是任選線段AB的中點』；位置在線上不保證等距。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v009",
+      "expectedContentSha256": "02494d1a76d70ad85c022d6642e36a3370c55f3a1176e998ca8f57a4ee11bef7",
+      "set": {
+        "explanation": "三角形從頂點A向對邊BC所在直線所作的垂線就是A邊對應的高線。因此應套用『過指定點A作已知直線BC的垂線』流程；作BC中垂線或平分角A都是不同的幾何目標。",
+        "steps": ["由高線定義選定頂點A。", "把對邊所在直線BC視為已知直線。", "過A作BC的垂線，所得直線即含所求高線。"],
+        "misconceptionTarget": "把三角形高線與邊的垂直平分線或角平分線混淆；高線不必平分對邊或頂角。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v010",
+      "expectedContentSha256": "e5473c326b68ffa83b8a60cd88dde75a971a6b9c5a061661bcd5486ea8ef0d9c",
+      "set": {
+        "explanation": "把道路模型化為直線ℓ、住家為線外點P。點到直線的最短線段必與直線垂直，因此過P作ℓ的垂線，垂線與ℓ的交點就是最近道路點；平行線或任意斜線都不會給最短距離。",
+        "steps": ["把道路抽象成直線ℓ，住家抽象成點P。", "使用過線外點P作ℓ垂線的尺規流程。", "把垂足辨認為ℓ上距P最近的點。"],
+        "misconceptionTarget": "把線段中垂線與點到直線的垂線混淆，或任選道路上一點連P；最短距離必沿垂線。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v011",
+      "expectedContentSha256": "ed9d79a74673da40995744aa3aa462ca96cd35f077554e3e867308aad04740ff",
+      "set": {
+        "explanation": "設P到直線ℓ的垂直距離為d。以P為圓心、半徑r畫圓時，若r＜d，連圓上最接近ℓ的點都到不了ℓ，整個圓與ℓ分離，所以交點數為0，無法取得A、B。",
+        "steps": ["把點P到直線ℓ的最短距離記為d。", "比較作圖半徑r與d，題意給r＜d。", "判定圓與ℓ沒有交點，不能產生A、B。"],
+        "misconceptionTarget": "混淆r＜d、r＝d、r＞d三種情況；分別對應0個、1個相切點、2個交點。"
+      }
+    },
+    {
+      "questionId": "u16-s010-v012",
+      "expectedContentSha256": "6ed3f4210023ee30880b9f936e7e9cba3da70529a99888e4520e6311d4703983",
+      "set": {
+        "explanation": "保留的弧痕可辨認每道弧的圓心與共同開口，因而驗證P、Q分別到A、B等距。這些等距關係支持PQ是AB的垂直平分線，而不是靠目測90°；弧痕本身也不會直接量出角度。",
+        "steps": ["由第一組弧痕辨認P到A、B等距。", "由第二組同半徑弧痕辨認Q到A、B等距。", "用兩個等距點證明PQ為中垂線並得到垂直。"],
+        "misconceptionTarget": "把作圖弧痕視為可刪除的多餘線條；它們是第三人重建等距證明的重要依據。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v001",
+      "expectedContentSha256": "6f8e1244f1b22d756a15d9c036580591d4fbb4c7259131a8efb59bd5a1dfd784",
+      "set": {
+        "explanation": "『以C、D為圓心畫弧』只有在C、D已由先前步驟產生後才能執行。應先找出建立C、D的作圖，例如讓第一弧與原角兩邊相交，再使用它們作圓心；不能先連OP、量角或直接刪除圓弧。",
+        "steps": ["列出本步需要的輸入點C、D。", "向前檢查C、D是否已有明確的產生步驟。", "若尚未定義，先執行能產生C、D的作圖，再回到本步。"],
+        "misconceptionTarget": "允許符號先使用、後定義，或自行猜測C、D位置；尺規步驟必須依既有點逐步建構。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v002",
+      "expectedContentSha256": "ea3e2e7e8e2adfe103b63abb4180700df3e4f736c229148e60f3d309bf94ab23",
+      "set": {
+        "explanation": "步驟③以O為圓心畫弧，先產生C、D；步驟②才可用C、D為圓心畫弧，產生P；步驟①最後才有O、P兩端點可連。因此依存順序是③→②→①，每一步使用的點都已由前一步明確建立。",
+        "steps": ["標出②依賴尚未產生的C、D。", "標出①依賴尚未產生的P。", "從沒有新點依賴的③開始，排成③→②→①。"],
+        "misconceptionTarget": "按題目編號、句子長短或熟悉感猜順序；應建立每一步所需點的依存關係。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v003",
+      "expectedContentSha256": "a77afd1d0a838a6195d87ac4a6d7100d3f26c67ddd8d908351e3ab364adef0ed",
+      "set": {
+        "explanation": "以A、B為圓心且同半徑的弧交於P、Q，所以PA＝PB且QA＝QB。P、Q都是到線段AB兩端點等距的點，兩點連線PQ即為AB的垂直平分線，作圖目的不是複製角或切線。",
+        "steps": ["由P在兩個同半徑弧上得PA＝PB。", "同理由Q得到QA＝QB。", "連接兩個等距點P、Q，辨認為AB的中垂線。"],
+        "misconceptionTarget": "只看到兩個圓弧就猜任意尺規作圖名稱；應從圓心、半徑與最後連線判斷所得性質。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v004",
+      "expectedContentSha256": "bda25da5f9676493934176f6f6b172ea8b17e92008ad8f55b9b03897354a0d16",
+      "set": {
+        "explanation": "第一弧使C、D位於原角兩邊且OC＝OD；第二組同半徑弧使PC＝PD。△OCP與△ODP還共用OP，依SSS全等，所以∠COP＝∠POD，射線OP平分∠AOB。這是角平分線的完整作圖驗證。",
+        "steps": ["辨認C、D是原角兩邊上的同半徑截點。", "由第二組弧寫出PC＝PD，並注意OP共用。", "用SSS全等推出兩半角相等，判定OP為角平分線。"],
+        "misconceptionTarget": "把角平分線流程與複製角混淆；此處最後連原角頂點O與角內交點P，沒有新頂點與基準射線。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v005",
+      "expectedContentSha256": "02e556cc0365cb5c708bad4b27cf660923f9e94b64eb1209fd0312860c02bf46",
+      "set": {
+        "explanation": "要作線段或直線PQ，P、Q都必須先由已知點與圓弧或直線的交點明確產生。若前文只定義了P而沒有任何步驟產生Q，『連PQ』就無法執行；不能任選Q或把P重複命名。",
+        "steps": ["逐一掃描所有點第一次出現的位置。", "確認P已有來源，但找不到Q的產生步驟。", "判定步驟缺漏，必須先補出Q才能連線。"],
+        "misconceptionTarget": "對未定義符號自行猜測位置，或認為任何紙上點都可代入；作圖敘述必須完整指定來源。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v006",
+      "expectedContentSha256": "5f61c27677b1730717174f42741859d51479380ec63642ee71abdfa435ece0e0",
+      "set": {
+        "explanation": "以A、B為圓心的同半徑弧若相切，通常共同半徑等於AB的一半，只得到AB中點的一個交點，不能由兩點決定中垂線方向。應保持兩次開口相同並把半徑增大到大於AB的一半，取得兩個不同交點P、Q再連PQ。",
+        "steps": ["辨認兩弧相切時只有一個交點。", "把共同半徑從AB÷2增大，但兩次開口仍保持相同。", "取得AB兩側的P、Q並連接成中垂線。"],
+        "misconceptionTarget": "只為增加交點而讓兩次半徑不同；這會破壞PA＝PB、QA＝QB的等距條件。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v007",
+      "expectedContentSha256": "2da8c8968af28058f923798bd654c91c61c4eb3e56a8994274dc62f640ae925d",
+      "set": {
+        "explanation": "複製角時，原弦CD必先由原角第一弧的兩截點C、D產生；接著以新頂點的同半徑弧與基準射線取得E；最後才能以E為圓心、CD為半徑截新弧於F。F同時依賴E和CD，不能提前產生。",
+        "steps": ["先在原角作第一弧，產生C、D及弦CD。", "在新頂點作同半徑弧，與基準射線交於E。", "以E為圓心、CD為半徑截新弧產生F。"],
+        "misconceptionTarget": "只追蹤點名而忽略圓規開口資料也有依存關係；沒有先得到CD，就不能正確產生F。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v008",
+      "expectedContentSha256": "12e4ee94f8294ea482330377ccbcad24a44923d12e03f0140372909f922e088d",
+      "set": {
+        "explanation": "同半徑弧的兩交點P、Q都到A、B等距，所以兩者都在AB的中垂線上，最後應作直線PQ。A是原線段端點，本身通常不到A、B等距；連AQ不會得到所求中垂線。",
+        "steps": ["保留以A、B為圓心的同半徑弧。", "確認P、Q分別滿足PA＝PB、QA＝QB。", "把錯誤的AQ改為通過兩等距點的直線PQ。"],
+        "misconceptionTarget": "認為任一圓心連到弧交點都可成為答案線；中垂線由兩個等距交點決定。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v009",
+      "expectedContentSha256": "e777cc48c08e18d4f5fe2353995a686bc63903de892767a30da46370066bf344",
+      "set": {
+        "explanation": "由OC＝OD可知O到C、D等距，由PC＝PD可知P也到C、D等距，所以OP是弦CD的中垂線。同時△OCP與△ODP依SSS全等，使∠COP＝∠POD，因此OP也平分∠AOB；兩種性質並不矛盾，而是同一組等距條件的兩種表述。",
+        "steps": ["用OC＝OD、PC＝PD判定O、P皆在CD中垂線上。", "因此直線OP是CD的中垂線。", "再用SSS全等推出兩半角相等，判定OP為原角平分線。"],
+        "misconceptionTarget": "把『角平分線』與『某線段的中垂線』當成互斥名稱；同一直線可相對不同幾何對象具有多種性質。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v010",
+      "expectedContentSha256": "01b3e51afc095707929bbc9e9655a9d68a34e6fc626b79378b4ac4452caabb40",
+      "set": {
+        "explanation": "丙以O為圓心畫弧，先建立C、D；乙必須等C、D存在後才能以它們為圓心畫弧並產生P；甲最後才有O、P可連。因此正確順序為丙→乙→甲。",
+        "steps": ["建立依存：C、D由丙產生。", "P由乙使用C、D產生。", "OP由甲使用P完成，故排成丙→乙→甲。"],
+        "misconceptionTarget": "把文字步驟視為可任意交換，未檢查每一步所用圓心與交點是否已存在。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v011",
+      "expectedContentSha256": "02eb0d42658e7d86b81955b29e2cb33667f215e818cbc78469d2722ba6bec643",
+      "set": {
+        "explanation": "設以A、B為圓心的半徑為rA、rB。交點P滿足PA＝rA、PB＝rB；只有rA＝rB時才能推出PA＝PB，Q亦同。這些等距關係才保證P、Q位於AB的中垂線上，相同半徑不是美觀用語。",
+        "steps": ["把兩次圓規開口分別記為rA、rB。", "由交點在兩弧上寫出PA＝rA、PB＝rB。", "指出必須rA＝rB才能得到等距並完成中垂線判定。"],
+        "misconceptionTarget": "把『相同半徑』視為可省略的文字潤飾；它是等距證明不可缺少的技術條件。"
+      }
+    },
+    {
+      "questionId": "u16-s011-v012",
+      "expectedContentSha256": "0266ec9f382be5d0df5d3681f37427ea978c66ee822a29f3f18526588aa6a6a7",
+      "set": {
+        "explanation": "只看成品中OP位於角中央，沒有足夠資訊證明兩半角相等。必須保留或說明以O為圓心的同半徑截點C、D，以及以C、D為圓心的同半徑弧交於P，才能由OC＝OD、CP＝DP與共用OP作SSS證明。",
+        "steps": ["檢查圖上或文字中可用的作圖證據。", "指出目前缺少OC＝OD、CP＝DP等半徑資訊。", "判定不能僅憑目測，需補弧痕或完整作圖說明。"],
+        "misconceptionTarget": "把示意圖外觀當成精確條件；射線畫在大致中央或長短不同都不能取代等角證明。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v001",
+      "expectedContentSha256": "ffac02f6ee52dfe2b6125507d84df96543e136e034ffffcbefd56ae8674de3ef",
+      "set": {
+        "explanation": "對三個正長度，只需找最長邊並檢查另外兩邊和是否嚴格大於它。4、6、9中最長邊是9，且4＋6＝10＞9，所以能形成非退化三角形；其他各組的兩短邊和都不大於最長邊。",
+        "steps": ["逐組找出最長邊。", "計算另外兩邊的和並與最長邊比較。", "只有4＋6＞9成立，選4、6、9。"],
+        "misconceptionTarget": "把兩短邊和等於最長邊也當成可形成三角形；等號只會使三點共線。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v002",
+      "expectedContentSha256": "518ec33fd36e80c806a4ac2b55920d447d089056498b6aaa139d269632ed4f94",
+      "set": {
+        "explanation": "已知兩邊5、8，第三邊x必須同時滿足兩邊差小於x、x小於兩邊和，即|8－5|＜x＜8＋5。計算得3＜x＜13；兩個端點都會使三邊排成一直線，所以使用嚴格不等號。",
+        "steps": ["計算兩已知邊的差|8－5|＝3。", "計算兩已知邊的和8＋5＝13。", "寫成開區間3＜x＜13。"],
+        "misconceptionTarget": "只寫上界、忘記差的下界，或把端點納入；第三邊範圍兩端都不能取等號。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v003",
+      "expectedContentSha256": "8223290bbed912f37bceba4c7001d00dc6b52c0637d10a2b51c278355d6c608b",
+      "set": {
+        "explanation": "三邊3、4、7的最長邊為7，而另外兩邊和3＋4＝7，沒有嚴格大於最長邊。此時三段只能首尾排成一直線，是面積為0的退化情形，不能稱為三角形。",
+        "steps": ["找出最長邊7。", "計算另外兩邊和3＋4＝7。", "因只得到等號，判定為共線退化，不能成三角形。"],
+        "misconceptionTarget": "把三角形不等式誤記成『大於或等於』；非退化三角形必須嚴格大於。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v004",
+      "expectedContentSha256": "6548ba85e50ae8ea28b2e450374cf4466343dee17be8f3222ba782dfa456e7db",
+      "set": {
+        "explanation": "兩已知邊為7、12時，第三邊x滿足|12－7|＜x＜12＋7，即5＜x＜19。正整數因此是6到18，共有18－6＋1＝13個；5、19皆為退化端點，不能形成有面積的三角形，因此計數時兩端都必須排除。",
+        "steps": ["算出差5與和19，得到5＜x＜19。", "列出範圍內正整數6、7、…、18。", "用末項減首項再加1，得到13種。"],
+        "misconceptionTarget": "連續整數計數時少加1，或把開區間端點5、19也列入。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v005",
+      "expectedContentSha256": "7098bf778f3f200bc3c94516aba23aefb9e67b123ea4ac412c80bdae5e1c9d10",
+      "set": {
+        "explanation": "三個長度都是正數時，先找最長邊15；只要檢查其餘兩邊8、11的和即可。8＋11＝19＞15，所以能形成三角形。檢查8＋15＞11雖然也成立，卻不是最有效且關鍵的一式。",
+        "steps": ["比較三邊，找出最大值15。", "把另外兩邊相加：8＋11＝19。", "由19＞15判定三角形不等式成立。"],
+        "misconceptionTarget": "隨便挑一組兩邊和檢查；應針對最長邊，否則可能漏掉唯一會失敗的不等式。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v006",
+      "expectedContentSha256": "6f402e639c6caf070f90e6a4094d452bead3df9a36e8370fc363e62c7762cfe5",
+      "set": {
+        "explanation": "已知兩邊4、10時，x不只要小於4＋10＝14，還要使4＋x＞10，因此x＞6。合併得到6＜x＜14；漏掉下界會錯誤納入不能與4、10成三角形的短邊，也會包含共線的退化情形。",
+        "steps": ["由4＋x＞10化簡得x＞6。", "由x＜4＋10得到x＜14。", "合併為6＜x＜14。"],
+        "misconceptionTarget": "只記得第三邊小於兩邊和，忘記第三邊還必須大於兩邊差。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v007",
+      "expectedContentSha256": "88b1e1109b806cef91f34ca4045a20eef1deffe9fe99666042cc58ae696811c6",
+      "set": {
+        "explanation": "兩已知邊為9、14時，第三邊x滿足|14－9|＜x＜14＋9，即5＜x＜23。選項中的偶數6、14、22都在開區間內，24超過上界23，所以24不可能，因為兩已知邊和不足以跨越它。",
+        "steps": ["計算範圍5＜x＜23。", "逐一檢查選項是否為偶數且位於此開區間。", "判定24不符合x＜23。"],
+        "misconceptionTarget": "只檢查x是偶數而未檢查三角形上界，或把大於上界的24納入。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v008",
+      "expectedContentSha256": "8f4b1f28457d83dafe95f3a4aa54eef34158ec8537c83f176645d447b676023e",
+      "set": {
+        "explanation": "三邊為x＋1、x＋4、2x＋2且長度為正。關鍵不等式是(x＋1)＋(2x＋2)＞x＋4，化簡得2x＞1，也就是x＞1÷2；另外兩個兩邊和不等式在此範圍內自動成立，因此完整限制是x＞1÷2。",
+        "steps": ["列出三組兩邊和大於第三邊的不等式。", "化簡最有限制力的一式3x＋3＞x＋4，得到2x＞1。", "確認其餘不等式與正長度條件未增加限制，得x＞1÷2。"],
+        "misconceptionTarget": "只比較代數式表面係數、只試整數，或未逐式確認；x可以是實數，臨界值是1÷2。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v009",
+      "expectedContentSha256": "354e30ce131ee1f259a24863419c6ea17706b92efd8452c8b5e27768d167e211",
+      "set": {
+        "explanation": "兩已知邊10、17給第三邊範圍|17－10|＜x＜17＋10，即7＜x＜27。此開區間內的質數是11、13、17、19、23，共5個；7本身是端點，不能列入，27也不是質數且同為端點，篩選後答案唯一為5個。",
+        "steps": ["由三角形不等式得到7＜x＜27。", "列出區間內質數11、13、17、19、23。", "逐一計數，得到5個。"],
+        "misconceptionTarget": "把開區間端點7或27列入，或誤把合數9、15、21、25當質數。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v010",
+      "expectedContentSha256": "708c382065cf1f2ce9eef96edaa0dffc50a17ec6a59e2a2df7393b3c5e39e0f3",
+      "set": {
+        "explanation": "AB＝7、BC＝11，而AC＝18，故AB＋BC＝7＋11＝18＝AC。折線路徑長等於直達距離只會發生在A、B、C共線且方向一致時，與題設三點不共線矛盾，因此不可能；非共線時應嚴格大於。",
+        "steps": ["比較經B路程AB＋BC與直達距離AC。", "計算7＋11＝18，恰與AC相等。", "指出等號代表共線退化，違反三點不共線條件。"],
+        "misconceptionTarget": "把三角形不等式寫成大於或等於，卻不處理等號條件；非共線時兩邊和必須嚴格較大。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v011",
+      "expectedContentSha256": "1caff9ab3d7be4b6b0b3eefb09016f1324fbb8a1a3e30ac65c64f452181eaa01",
+      "set": {
+        "explanation": "兩已知邊1.2公尺、1.8公尺已同單位，第三邊x滿足|1.8－1.2|＜x＜1.8＋1.2，故0.6＜x＜3.0。取0.6或3.0都只能排成一直線，不能形成穩定的非退化三角形，因此兩端均須排除。",
+        "steps": ["確認所有長度統一用公尺。", "計算差0.6與和3.0。", "以嚴格不等式寫成0.6＜x＜3.0。"],
+        "misconceptionTarget": "在材料情境中把臨界端點也視為可行；數值有單位並不改變等號為退化的事實。"
+      }
+    },
+    {
+      "questionId": "u16-s012-v012",
+      "expectedContentSha256": "e2f88498e360758164e517adf6a055e19eb8f6f0243ef029988ac28a5a07acfd",
+      "set": {
+        "explanation": "兩已知距離6、9公里時，第三段d必須滿足|9－6|＜d＜9＋6，即3＜d＜15。四個選項中只有10公里位於此開區間；3、15是退化端點，16超過上界，所以三者皆不合條件。",
+        "steps": ["算出兩邊差3作下界。", "算出兩邊和15作上界。", "逐項代入開區間，只有10符合。"],
+        "misconceptionTarget": "把上下界3、15納入，或只檢查距離為正而忽略三角形不等式。"
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u16-s007-cr001",
+      "expectedContentSha256": "7c5bbc07aa6ebda8c1c6e5ff420246cebb16a24f52da7a9ccf9b43a3d9b13924",
+      "appendArray": {
+        "fullCreditSolution": ["完整證明先由三邊相等逐次套用等邊對等角，得到三個內角彼此相等；再設共同角度為x，使用三角形內角和寫成3x＝180°，解得x＝60°。這條推理不是直接假設角相等，而是清楚交代由邊推角的依據。"]
+      },
+      "set": {
+        "commonErrors": ["沒有由三邊相等說明三角相等，直接把待證結論當成已知。", "把120°外角混入三角形內角和，因而得到錯誤的共同角度。"]
+      }
+    },
+    {
+      "questionId": "u16-s007-cr002",
+      "expectedContentSha256": "25ecdb8eac423ceb6bef01746882ff1726965336e991b93fd4a520534f63e441",
+      "replaceText": {
+        "AD亦是BC的垂直平分線之一部分": "AD所在直線是BC的垂直平分線"
+      },
+      "appendArray": {
+        "fullCreditSolution": ["因等邊三角形可視為AB＝AC的等腰三角形，頂點A向底邊作高時可用三線合一，故D同時是BC中點且AD平分∠A。於是BD＝6 cm、∠BAD＝30°；精確說法是AD所在直線為BC的垂直平分線，而AD本身同時是中線、高線與角平分線。"]
+      },
+      "set": {
+        "commonErrors": ["把頂角60°的外角120°拿來平分，錯把∠BAD算成60°。", "未使用等邊條件便宣稱任意高線都會通過底邊中點。"]
+      }
+    },
+    {
+      "questionId": "u16-s008-cr001",
+      "expectedContentSha256": "21ae0483e2b45a7b588d8a22cbe00a98b921befe346fbe531266fd00a5e1f5f6",
+      "appendArray": {
+        "fullCreditSolution": ["令共同半徑r大於AB的一半，分別以A、B為圓心且保持圓規開口r不變，在AB兩側畫弧交於P、Q，再用無刻度直尺連接P、Q。因PA＝PB且QA＝QB，P、Q都是到A、B等距的點，均位於AB的垂直平分線；兩點決定的直線PQ因此就是AB的垂直平分線，故PQ垂直AB並通過AB中點。"]
+      },
+      "set": {
+        "commonErrors": ["兩次畫弧任意改變圓規開口，因而無法推出PA＝PB、QA＝QB。", "半徑只取AB的一半或更小，導致兩弧相切或不相交，無法得到AB兩側的兩個交點。", "只找到一個弧交點便畫線；單一點不能決定垂直方向。"]
+      }
+    },
+    {
+      "questionId": "u16-s008-cr002",
+      "expectedContentSha256": "8a674df9fed50aa5e9e6f2680c597e1ed65c68dc8fc79f10cf87b460e480d523",
+      "appendArray": {
+        "fullCreditSolution": ["純尺規作圖的直尺沒有刻度，只允許連接兩點或延長直線，所以不能『量出AB的一半』。合格方法是取大於AB一半的圓規開口，分別以A、B為圓心畫同半徑弧，連接兩弧的上下交點得到AB的垂直平分線；該線與AB的交點M才是由作圖確定的中點。"]
+      },
+      "set": {
+        "commonErrors": ["把日常有刻度直尺的讀值功能帶入無刻度直尺。", "以目測或折紙猜測AB的一半，沒有留下可驗證的尺規作圖依據。", "雖改用圓規，卻未說明兩次圓心、共同半徑及最後交點連線。"]
+      }
+    },
+    {
+      "questionId": "u16-s009-cr001",
+      "expectedContentSha256": "41716c82dcab93d03fb78890af4e34acd1a32dfbdf54bf93f85c9492a3306d9e",
+      "appendArray": {
+        "fullCreditSolution": ["先以O為圓心畫弧交OA、OB於C、D。保持此半徑，以P為圓心畫弧交基準射線PX於E。接著把圓規開口改為弦CD，以E為圓心截新弧於指定側的F，最後作射線PF。因OC＝PE、OD＝PF且CD＝EF，△OCD與△PEF依SSS全等，所以對應的圓心角∠AOB＝∠XPF。"]
+      },
+      "set": {
+        "commonErrors": ["只搬移半徑而在新弧任取F，沒有保存原弦CD，角度便不固定。", "把弦CD誤當成原角兩邊的長度，或把弧長當作圓規開口。", "最後連接E、F形成弦，而未從新角頂點P作射線PF。"]
+      }
+    },
+    {
+      "questionId": "u16-s009-cr002",
+      "expectedContentSha256": "d486e635329deeb2e3b7377f03c1dce18beb497aae09beb29d217a9c459b7a2c",
+      "appendArray": {
+        "fullCreditSolution": ["錯誤在於同一半徑的圓弧上有許多點，任取一點會產生不同的圓心角。應先記錄原弧與原角兩邊交點間的弦長CD；在新頂點的同半徑弧上取得基準射線交點E後，以E為圓心、CD為半徑截新弧於F，再連接新頂點與F。如此新、舊小三角形有兩組半徑及一組弦分別相等，可用SSS驗證兩角相等。"]
+      },
+      "set": {
+        "commonErrors": ["把原弧兩截點間的直線距離（弦長）誤寫成弧長。", "仍在新弧任意挑點，沒有用圓規截出EF＝CD。", "補了弦長步驟卻沒有說明相同半徑與SSS驗證。"]
+      }
+    },
+    {
+      "questionId": "u16-s010-cr001",
+      "expectedContentSha256": "3bac288752e8650c8089af3d83f5a8c78ba37ee8e1fa07a6941b1a0013e94d7b",
+      "appendArray": {
+        "fullCreditSolution": ["以P為圓心任取正半徑畫弧，使弧在P兩側交直線ℓ於A、B，因此PA＝PB。再以A、B為圓心、相同且足夠大的半徑畫弧，取一個不在ℓ上的交點Q，故QA＝QB。因P、Q都是到A、B等距的點，直線PQ就是AB的垂直平分線；AB位於ℓ上，所以PQ⊥ℓ且通過P。"]
+      },
+      "set": {
+        "commonErrors": ["在ℓ上任取A、B而未以P為圓心取得，不能保證PA＝PB。", "以A、B為圓心畫弧時改變圓規開口，不能保證QA＝QB。", "最後連接Q與A或B，而不是連接兩個等距點P、Q。"]
+      }
+    },
+    {
+      "questionId": "u16-s010-cr002",
+      "expectedContentSha256": "7204ab970569ee8c2cc01666e8dcc846539bd11512eee85102d7c7c1c97fabae",
+      "appendArray": {
+        "fullCreditSolution": ["選大於P到ℓ之垂直距離的半徑，以P為圓心畫弧，使它與ℓ交於兩個不同點A、B，故PA＝PB。再以A、B為圓心、相同且足夠大的半徑畫弧，取與P不同的交點Q，作直線PQ。由PA＝PB、QA＝QB知P、Q都在AB的中垂線上，所以PQ⊥AB，也就是PQ⊥ℓ。若第一弧只與ℓ相交一次，圓與ℓ相切，沒有兩端點不同的AB可供中垂線流程使用，必須加大半徑。"]
+      },
+      "set": {
+        "commonErrors": ["半徑小於點到直線距離仍聲稱有兩個截點；此時其實沒有交點。", "第一弧與ℓ相切後把唯一交點重複當成A、B。", "把P與任一截點直接相連便宣稱垂直，沒有等距或中垂線證明。"]
+      }
+    },
+    {
+      "questionId": "u16-s011-cr001",
+      "expectedContentSha256": "d44d41eebe6d32881825351d5834dbf6faa3c73951b43563b61b7eaef4209dfb",
+      "set": {
+        "figureId": null,
+        "visualMode": "text-only",
+        "commonErrors": ["依題號排列成①→②→③→④，沒有先檢查圓心、半徑與交點的依存。", "把以A、B畫弧的先後次序誤當唯一；只要先選半徑且兩次開口相同，③、②可互換。", "未先選大於AB一半的半徑，導致兩弧可能相切或不相交。"]
+      },
+      "appendArray": {
+        "fullCreditSolution": ["正確順序可為④→③→②→①，也可在保持其餘依存不變時交換③、②。先選大於AB一半的共同半徑，確保兩圓有位於AB兩側的兩個交點；再以A、B為圓心且保持圓規開口不變畫弧，取得P、Q，使PA＝PB、QA＝QB；最後連接P、Q。因P、Q均到A、B等距，直線PQ就是AB的垂直平分線。"]
+      }
+    },
+    {
+      "questionId": "u16-s011-cr002",
+      "expectedContentSha256": "fc0553f982bc7cbe94a4c8bb5c0051aee8231afab718f56682e8f00841356700",
+      "appendArray": {
+        "fullCreditSolution": ["此作圖是在新頂點P、既有基準射線PC處複製以O為頂點的原角。第一弧給OA＝OB；新弧沿用相同半徑，故PC＝PD＝OA；再由以C為圓心、AB為半徑截弧得CD＝AB。因此△OAB與△PCD有OA＝PC、OB＝PD、AB＝CD，依SSS全等，對應的圓心角∠AOB＝∠CPD，作射線PD即完成複製角。"]
+      },
+      "set": {
+        "commonErrors": ["把原弦AB誤當第一道弧的半徑；它在後段用來固定新角張開程度。", "認為只要兩個圓半徑相同，任取弧上點就會形成相同圓心角。", "沒有列出三組對應邊便直接宣稱兩角看起來相等。"]
+      }
+    },
+    {
+      "questionId": "u16-s012-cr001",
+      "expectedContentSha256": "fedbcadc8ac9745732b480065c6448555b6ffb9f18f84014f51581d4f8dcd903",
+      "appendArray": {
+        "fullCreditSolution": ["由三角形第三邊範圍得|12－7|＜x＜12＋7，也就是5＜x＜19。因x為整數，所以x可為6、7、8、9、10、11、12、13、14、15、16、17、18，共13個值。若x＝5，則5＋7＝12；若x＝19，則7＋12＝19，兩種情況的兩短邊和都只等於最長邊，三段只能排成一直線，故端點不能取。"]
+      },
+      "set": {
+        "commonErrors": ["把兩邊差寫成7－12＝－5，而未取絕對值。", "把開區間端點5或19納入可能值。", "列出6到18後計數少加1，誤報12個。"]
+      }
+    },
+    {
+      "questionId": "u16-s012-cr002",
+      "expectedContentSha256": "859f122715a49cad47471d5a62d436d5fd5cf37f094267946a106917fa299026",
+      "appendArray": {
+        "fullCreditSolution": ["工人的說法不正確：4＋9＝13只達到等號，三根木條只能首尾排成一直線，不能圍成有面積的三角形。題目要求整公分修改量，最小正修改是1公分。例如把13公尺木條縮短1公分為12.99公尺，便有4＋9＝13＞12.99，另外兩個不等式也成立；或把4公尺、9公尺任一根加長1公分，也可使兩短邊和嚴格大於13公尺。0公分不能改變退化狀態，所以最小修改量確為1公分。"]
+      },
+      "set": {
+        "commonErrors": ["把兩短邊和等於最長邊視為『剛好可以』，忽略三角形不等式必須嚴格大於。", "把最小整公分修改誤讀成整公尺，因而多改100倍。", "只提出1公分修改卻未重新檢查三個長度確實滿足不等式。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u16-s007-lecture-r1",
+      "expectedContentSha256": "c72a6a57dfddf5b543b697530caa31c437d7e746ebc87ee8c33e7eb1755795b7",
+      "appendArray": {
+        "learningOutcomes": ["能以等邊與等角的雙向性質處理周長、角度及頂點中線問題，並清楚區分三條不同的合一線。"]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"△ABC為等邊三角形，求∠A。","solutionSteps":["由三邊相等推出三個內角相等。","使用三角形內角和180°。","計算∠A＝180°÷3＝60°，並以三角合計驗算。"],"answer":"60°。","why":"等邊提供的是三角相等的依據，內角和再決定共同角度；兩個條件缺一不可，因此不是只憑圖形外觀看出60°。"},
+          {"exampleId":"L2","prompt":"一個三角形三角皆為60°，可判定什麼？","solutionSteps":["由∠A＝∠B推出兩條對邊相等。","再把∠C與其餘角比較，推出第三邊也相等。","合併三邊相等，判定為等邊三角形。"],"answer":"為等邊三角形。","why":"任兩角相等就能推出其對邊相等；三個60°提供足夠的兩次比較，所以結論比「至少等腰」更強，能確定三邊全相等。"},
+          {"exampleId":"L3","prompt":"等邊△ABC中，D為BC中點。說明AD的性質。","solutionSteps":["把△ABC視為AB＝AC的等腰三角形。","AD是由頂點A連到底邊中點D的中線。","套用三線合一，得AD⊥BC且∠BAD＝∠DAC＝30°。"],"answer":"AD是中線、高線與角平分線。","why":"三線合一是針對同一頂點與其對邊而言；D為中點讓AD成為中線，等腰結構才進一步保證它也垂直底邊並平分頂角。"},
+          {"exampleId":"L4","prompt":"等邊三角形周長27公分，求邊長。","solutionSteps":["設每一邊長為s公分。","由三邊相等寫出3s＝27。","解得s＝9，並以9＋9＋9＝27驗算。"],"answer":"9公分。","why":"等邊三角形的周長由三條相等邊組成，因此周長除以3才是單邊；保留公分單位可避免把長度與角度混淆。"},
+          {"exampleId":"L5","prompt":"等腰三角形頂角為60°，判斷是否等邊。","solutionSteps":["兩底角相等，總和為180°－60°＝120°。","每個底角為120°÷2＝60°。","三個內角皆60°，由等角對等邊判定三邊相等。"],"answer":"是等邊三角形。","why":"等腰條件固定兩底角相等，頂角60°又使剩餘角度恰好平均成兩個60°；三角相等後可反推三邊相等，故結論唯一。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s008-lecture-r1",
+      "expectedContentSha256": "e6d8287e0c3edb9bb10813dc9d30d571c2c3d9f0f4cc5eb4dad9cae247f1cd6a",
+      "appendArray": {
+        "learningOutcomes": ["能在作圖完成後，用同圓半徑相等、等距軌跡或SSS全等逐步驗證答案線，並指出半徑過小、開口改變或連錯點時失敗的條件。"]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"在射線PX上作PQ＝AB。","solutionSteps":["把圓規兩腳分別放在A、B，取得開口AB。","保持開口不變，以P為圓心畫弧，與射線PX交於Q。","由Q在以P為圓心、AB為半徑的弧上，驗證PQ＝AB。"],"answer":"Q即所求點，且PQ＝AB。","why":"圓規能直接保存並搬移幾何距離，不需也不能用無刻度直尺讀出AB的數值；把圓心設在P才能使新半徑PQ等於已知長度AB。"},
+          {"exampleId":"L2","prompt":"作線段AB的垂直平分線。","solutionSteps":["取大於AB一半的圓規開口，分別以A、B為圓心，在AB兩側畫弧交於P、Q。","保持兩次開口相同，以確保PA＝PB且QA＝QB。","用直尺連接P、Q；由等距軌跡判定直線PQ垂直AB且通過AB中點。"],"answer":"直線PQ為AB的垂直平分線。","why":"P、Q都是到A、B等距的點，因此都在AB的中垂線上；兩個不同點決定唯一一直線。半徑必須大於AB的一半，才能取得兩個交點。"},
+          {"exampleId":"L3","prompt":"作∠AOB的角平分線。","solutionSteps":["以O為圓心畫弧，分別交OA、OB於C、D，故OC＝OD。","以C、D為圓心且用相同半徑畫弧，在角內交於P，故CP＝DP。","作射線OP；△OCP與△ODP因SSS全等，所以∠COP＝∠POD。"],"answer":"射線OP平分∠AOB。","why":"角平分線必須通過角頂點O。兩組相等半徑加上共用邊OP，提供可核對的SSS全等理由，而不是只靠圖看似對稱。"},
+          {"exampleId":"L4","prompt":"以已知線段AB為邊，用尺規作等邊三角形。","solutionSteps":["以A為圓心、AB為半徑畫弧。","以B為圓心、同樣以BA為半徑畫弧，任取一個交點C。","連接AC、BC；由同圓半徑得AC＝AB且BC＝BA。"],"answer":"AB＝AC＝BC，所以△ABC為等邊三角形。","why":"兩弧交點可能在AB上方或下方，所得三角形互為鏡射但依SSS全等；方向不同不影響三邊相等，也不改變等邊三角形的判定。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s009-lecture-r1",
+      "expectedContentSha256": "a6dd21195bf004d3fc74691691df7b02abe2c6dba1c5ebff75430cf8ea023628",
+      "appendArray": {
+        "learningOutcomes": ["能依題目指定的基準射線與側別選取正確交點，並判斷未指定側別時互為鏡射的兩個等角作圖都可成立。"]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"說明複製∠AOB時第一道圓弧的作用。","solutionSteps":["以O為圓心畫弧，同時交OA、OB於C、D。","由C、D同在此弧上，得到OC＝OD。","保留截弧半徑OC與弦CD，前者建立兩腰、後者記錄原角張開程度。"],"answer":"第一弧建立相同半徑的兩個截點，弦CD用來保存角的大小。","why":"只知道兩截點到O等距仍不能決定角；同一半徑下再固定弦CD，才可用三邊固定原角的小三角形，並在新位置以SSS重建相同角度。"},
+          {"exampleId":"L2","prompt":"新角頂點為P，基準射線為PX。第一個新截點E應如何取得？","solutionSteps":["保持第一道原弧的半徑OC不變。","以P為圓心畫新弧，讓它與射線PX相交。","把交點命名為E，由半徑關係驗證PE＝OC。"],"answer":"E為以P為圓心、OC為半徑的弧與PX之交點。","why":"新小三角形必須先複製原小三角形的一組半徑；若另取半徑，之後即使弦相同也不能保證角相等。"},
+          {"exampleId":"L3","prompt":"為何複製角時必須搬移弦CD？","solutionSteps":["指出只有PE＝PF時，F仍可在同一圓弧上移動，形成許多不同角。","用圓規量取原弦CD。","以E為圓心截新弧於F，使EF＝CD，於是三組邊都被固定。"],"answer":"搬移CD可固定新弧兩截點的距離，從而固定新角大小。","why":"半徑只決定圓的大小，不能決定弧上第二點的位置；弦長提供SSS所需的第三邊，使新、舊兩個小三角形可判定全等。"},
+          {"exampleId":"L4","prompt":"作完後如何證明∠AOB＝∠XPF？","solutionSteps":["列出OC＝PE與OD＝PF，兩組皆為相同作圖半徑。","列出CD＝EF，這是搬移弦長所得。","依SSS判定△OCD≅△PEF，再由對應角相等得到∠AOB＝∠XPF。"],"answer":"由三組對應邊相等的SSS全等，可得兩個圓心角相等。","why":"證明只使用作圖直接保證的邊長關係，沒有把待證的角相等先當成條件，因此不是循環論證，也能讓第三人逐項核對。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s010-lecture-r1",
+      "expectedContentSha256": "157c6cb7a0d7c1b6b71fe1a902a488c8d2afe24112c613901cf9d997b392574e",
+      "appendArray": {
+        "learningOutcomes": ["能比較作圖半徑與點到直線距離，判斷0個、1個或2個截點的情況，並選擇足以完成等距中垂線流程的半徑。"]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"P在線ℓ上，如何先取得對稱點A、B？","solutionSteps":["以P為圓心任取正半徑畫弧。","把弧與ℓ在P兩側的交點命名為A、B。","由A、B在同一個以P為圓心的圓上，驗證PA＝PB，所以P為AB中點。"],"answer":"A、B位於P兩側且PA＝PB。","why":"後續要把所求垂線視為AB的中垂線，第一步就必須確保指定點P是AB中點；任取A、B不能保證此條件，也無法證明答案線通過P。"},
+          {"exampleId":"L2","prompt":"P在線外，以P為圓心的第一圓弧半徑有何要求？","solutionSteps":["令d為P到直線ℓ的垂直距離。","若半徑r＜d則無交點，r＝d則只有一個相切點。","選r＞d，使圓穿過ℓ並取得兩個不同交點A、B。"],"answer":"半徑須大於P到ℓ的距離。","why":"標準流程要由PA＝PB建立P在AB中垂線上，因此需要ℓ上的兩個端點A、B；相切的一個點仍不足以建立線段及其方向。"},
+          {"exampleId":"L3","prompt":"線外作圖得到A、B、Q，為何PQ垂直ℓ？","solutionSteps":["第一弧以P為圓心，故PA＝PB，P在AB中垂線上。","第二組以A、B為圓心的同半徑弧交於Q，故QA＝QB，Q也在AB中垂線上。","P、Q決定AB的中垂線；AB位於ℓ上，所以PQ⊥ℓ。"],"answer":"直線PQ通過P且垂直ℓ。","why":"垂直不是由圖形看起來直立判定，而是由P、Q兩個等距點共同決定AB的垂直平分線，推論不依賴圖形比例。"},
+          {"exampleId":"L4","prompt":"作圖後只畫線段PQ是否足夠？","solutionSteps":["先讀題目要求的是線段、射線或直線。","若要求『過P作垂線』，答案應是通過P、Q的整條直線。","用無刻度直尺把PQ向兩端延長，保留原弧痕供驗證。"],"answer":"應作或延長為通過P、Q的直線。","why":"線段PQ只呈現答案線的一部分；延長不改變其方向，弧痕則保留PA＝PB、QA＝QB的作圖證據，便於驗證垂直性與完整答案線。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s011-lecture-r1",
+      "expectedContentSha256": "43d04f15af0a995b69a8010b9ad6aeb8fb38b3ab22493ec32e84944e2c2d3d0e",
+      "appendArray": {
+        "learningOutcomes": ["能建立『已知點與開口→圓弧→交點→答案線』依存表，辨識可互換的獨立步驟與不可提前執行的相依步驟。"]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"步驟：以A、B為圓心作同半徑弧交於P、Q；連接PQ。所得為何？","solutionSteps":["由P同時在兩個同半徑弧上，得到PA＝PB。","同理由Q得到QA＝QB。","P、Q都是到A、B等距的點，故直線PQ是AB的中垂線。"],"answer":"直線PQ是AB的垂直平分線。","why":"辨認作圖目的要從圓心、開口、交點及最後連線推理，而不是只看見兩個圓弧就猜名稱；等距關係才是判定依據。"},
+          {"exampleId":"L2","prompt":"排序：①連接OP；②以C、D為圓心作同半徑弧交於P；③以O為圓心作弧交角邊於C、D。","solutionSteps":["③不依賴新點，先由原角產生C、D。","②依賴C、D，接著用它們產生P。","①依賴P，最後連接O、P；由SSS可判定OP平分原角。"],"answer":"③→②→①，作出原角的角平分線。","why":"順序由資料依存決定：每一步的圓心或端點都必須已存在。編號本身不代表執行順序，應逐點追蹤來源。"},
+          {"exampleId":"L3","prompt":"某步驟先寫『以E為圓心、CD為半徑作弧』，但E尚未定義，問題何在？","solutionSteps":["列出本步所需輸入為點E與長度CD。","確認CD可能已由原角取得，但E沒有任何來源。","先以新頂點為圓心作同半徑弧，令它與基準射線交於E，再執行原步驟。"],"answer":"依存順序錯誤；必須先產生E。","why":"尺規作圖只能使用已知或先前作出的點與距離。自行猜一個E會讓後續結果失去可驗證性，也無法讓他人重作。"},
+          {"exampleId":"L4","prompt":"以A、B為圓心的同半徑弧只有一個交點，能否連兩交點作中垂線？","solutionSteps":["辨認兩弧相切，所以只有一個等距點。","一個點不能決定中垂線方向。","保持兩次開口相同，將共同半徑增大到大於AB的一半，取得兩交點P、Q再連線。"],"answer":"不能；應增大共同半徑，使兩弧有兩個不同交點。","why":"修正時既要增加交點數，也要保留同半徑所提供的PA＝PB、QA＝QB；不能任意改成兩個不同半徑，否則等距條件與中垂線證明都會失效。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s012-lecture-r1",
+      "expectedContentSha256": "b0d823dfdcd8357b00993464f6a4b76630a4b2d9595dbbb08b28df2c6a7e7a57",
+      "appendArray": {
+        "learningOutcomes": ["能在整數、質數、偶數與實務單位限制下，先求第三邊開區間再篩選候選值，並以端點退化檢查避免納入等號。"]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId":"L1","prompt":"長度4、7、10能形成三角形嗎？","solutionSteps":["找出最長邊10。","計算另外兩邊和4＋7＝11。","因11＞10，最關鍵的三角形不等式成立。"],"answer":"可以形成非退化三角形。","why":"三邊皆為正數時，若兩短邊和大於最長邊，其餘兩組不等式自然成立；因此針對最長邊檢查最快，也不會漏掉失敗條件。"},
+          {"exampleId":"L2","prompt":"長度3、5、8能形成三角形嗎？","solutionSteps":["找出最長邊8。","計算另外兩邊和3＋5＝8。","因只得到等號，三段只能排成一直線，面積為0。"],"answer":"不可以，這是退化情形。","why":"三角形不等式使用嚴格大於；等號不是臨界可行，而是三點共線，所得圖形面積為零且不是三角形。"},
+          {"exampleId":"L3","prompt":"兩邊長6、11，求第三邊x的範圍。","solutionSteps":["計算兩邊差|11－6|＝5，作為嚴格下界。","計算兩邊和11＋6＝17，作為嚴格上界。","合併得到5＜x＜17，並檢查兩端皆使三邊退化。"],"answer":"5＜x＜17。","why":"下界防止最長的已知邊不小於另外兩邊和，上界則防止x本身不小於兩已知邊和；兩端都必須使用嚴格不等號。"},
+          {"exampleId":"L4","prompt":"兩邊長5、9，第三邊為正整數，共有幾種？","solutionSteps":["先求實數範圍|9－5|＜x＜9＋5，即4＜x＜14。","依正整數條件列出5、6、7、8、9、10、11、12、13。","由13－5＋1＝9，得到9種。"],"answer":"9種。","why":"應先完成開區間，再套整數條件；連續整數計數要用末項減首項再加1，且不能包含端點4、14，才能避免多算或少算。"},
+          {"exampleId":"L5","prompt":"A到C直線距離12公里，經B的路程AB＋BC可能也為12公里嗎？已知三點不共線。","solutionSteps":["三點不共線，可視為非退化三角形的三個頂點。","套用兩邊和大於第三邊，得AB＋BC＞AC。","代入AC＝12公里，得到AB＋BC必須大於12公里。"],"answer":"不可能等於12公里，經B路程必須大於12公里。","why":"兩點之間直線最短；只有A、B、C共線且B位於直達路徑上時才可能取等號，但題目已排除此情形，所以繞行必定較長。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u16-fig-007-equilateral-properties",
+      "expectedContentSha256": "be6cadd27d3a89dbe939922a7b5d51e48eeabcccbde0f157362e9d7265feb900",
+      "set": {
+        "longDescription": "黑白示意圖中，三角形頂點在上、水平底邊在下，三條邊各有一個相同刻痕，三個內角均標示60°。由上方頂點向底邊畫一條虛線，通過底邊中點；交會處有直角符號，底邊下方標示「中點」。圖形不按比例，學生應依刻痕、角度與直角標記判讀。"
+      },
+      "appendArray": {
+        "svgAssertions": ["M225 190 v-12"]
+      }
+    },
+    {
+      "figureId": "u16-fig-008-construction-tools",
+      "expectedContentSha256": "4f599336adef30d8fbdde7aaddc2582740b6c99695da350c26d11551e29c3366",
+      "set": {
+        "longDescription": "黑白示意圖分成左右兩區。左區是一把沒有刻度線的直尺，下方標出兩點A、B與通過兩點的直線，表示直尺只用於連點或延長直線。右區是一支圓規，兩腳張開並配有圓弧，表示圓規可保存及搬移距離。圖中央與底部的警示指出不可直接量長度或角度；圖形不按比例，所有判斷以工具規則及文字標示為準。"
+      }
+    },
+    {
+      "figureId": "u16-fig-009-copy-angle",
+      "expectedContentSha256": "11f22a50edd3e3d501993ccaaaa1109a27f5260bc3bb10af5ba25777ba035575",
+      "set": {
+        "longDescription": "黑白圖左側畫原角，頂點為O，第一道圓弧以O為圓心並交兩角邊於A、B，粗線段AB表示原弦。右側畫以P為頂點、水平向右的基準射線；使用與原圖相同的半徑畫弧，交基準射線於C，再以原弦AB為開口從C截新弧於D，粗線段CD表示已搬移的同長弦。最後由P通過D形成複製角；圖不按比例，等角依相同半徑與相同弦長判定。"
+      }
+    },
+    {
+      "figureId": "u16-fig-010-perpendicular",
+      "expectedContentSha256": "413459d906888330427774d7e9444466d158ffa00e66be16be3da71ad0f9334d",
+      "set": {
+        "longDescription": "黑白圖分成左右兩種過點作垂線的情況。左圖中水平直線ℓ通過點P，P兩側有等距截點A、B；以A、B為圓心的同半徑弧在上方交於Q，通過P、Q的直線垂直ℓ。右圖中點R位於水平直線m上方，以R為圓心的弧交m於C、D，再以C、D為圓心的同半徑弧取得另一等距點，通過R的中垂線垂直m。所有線條與弧痕為黑白列印設計，圖不按比例，垂直性以等距與中垂線性質判定。"
+      }
+    },
+    {
+      "figureId": "u16-fig-011-construction-sequence",
+      "expectedContentSha256": "0edb91b12231f90a8162d37336d7b171ca67f143384e9b049e410d1877c50340",
+      "set": {
+        "longDescription": "黑白四格流程圖由左至右顯示作線段AB垂直平分線的完整順序。第一格先選大於AB一半的共同半徑；第二格以A為圓心畫弧；第三格保持圓規開口，以B為圓心畫弧，兩弧在AB兩側交於兩點；第四格連接這兩個交點，形成AB的垂直平分線。格間箭頭只表示依存順序，第二、第三格的兩個圓心畫弧次序可交換；圖不按比例，正確性由相同且足夠大的半徑與等距性質判定。"
+      }
+    },
+    {
+      "figureId": "u16-fig-012-triangle-inequality",
+      "expectedContentSha256": "ed719bd3b22d76b38e561f6654c785dee60eccb4f3c71cb2d4092ac4226f9eef",
+      "set": {
+        "longDescription": "黑白圖上方把兩條較短線段a、b首尾相接，下方畫一條比較線段c；右側文字寫出a＋b必須大於c。圖另以文字提醒：若a＋b＝c，三段只能排成一直線，屬於退化情形，不能形成三角形。線段長短僅作概念示意且不按比例，判斷應依給定數值與嚴格不等式，不可由視覺估長。"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u16/u16-fig-007-equilateral-properties.svg",
+      "replacements": [
+        {
+          "from": "<path d=\"M116 115 l10 7\"/><path d=\"M244 115 l-10 7\"/><path d=\"M174 190 v-12\"/>",
+          "to": "<path d=\"M116 115 l10 7\"/><path d=\"M244 115 l-10 7\"/><path d=\"M225 190 v-12\"/><path d=\"M174 190 v-12\"/>",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

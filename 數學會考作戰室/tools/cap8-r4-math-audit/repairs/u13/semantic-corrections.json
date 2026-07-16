@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u13",
+  "batch": "014-u13-complete",
+  "skills": ["s013", "s015"],
+  "mc": [
+    {
+      "questionId": "u13-s013-v007",
+      "expectedContentSha256": "c9b0402cd38ef0560de9a2d32f671b3f1647b2d88be008846e289d5cadb2e334",
+      "replaceText": { "外框總面積": "外部大長方形總面積" },
+      "reviewReplaceText": { "外框總面積": "外部大長方形總面積" }
+    },
+    {
+      "questionId": "u13-s015-v003",
+      "expectedContentSha256": "22ef44e70caeb868da46c94d9dc05c20efabc8a6a3146ee68681ab8836e72c6d",
+      "replaceText": { "起飛後再次到地面時": "此模型預測高度降為 0 時" },
+      "reviewReplaceText": { "起飛後再次到地面時": "此模型預測高度降為 0 時" }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u13-s013-cr002",
+      "expectedContentSha256": "46579ec4fe0c82afbba5e714b26f8f2a4e5688e012183fb5c2f5ce47e446ea79",
+      "replaceText": { "外框總面積": "外部大長方形總面積" }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u13-s013-lecture-r1",
+      "expectedContentSha256": "ebd99cf90c607c46aea17e78bd0b0e846106816db003109cbd3eb2de4fce2975",
+      "replaceText": { "四周外擴 x m，總面積 192 m²": "四周外擴 x m，外部大長方形總面積 192 m²" }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u13-fig-uniform-border",
+      "expectedContentSha256": "153522be9c1de2667cca0879f65b57f7d88baae7db7901731d878e4d0b99dceb",
+      "replaceText": { "外框面積": "外部大長方形面積" }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u13/u13-fig-uniform-border.svg",
+      "replacements": [
+        { "from": "外框面積 192 m²", "to": "外部大長方形面積 192 m²", "count": 1 }
+      ]
+    }
+  ]
+}

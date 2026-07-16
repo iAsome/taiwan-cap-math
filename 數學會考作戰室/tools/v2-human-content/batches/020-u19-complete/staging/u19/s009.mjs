@@ -439,7 +439,7 @@ export const u19_s009 = {
       "estimatedTimeSec": 55,
       "unitCheck": "所有選項皆為角度，且較小圓心角 108° 位於 0° 到 180° 之間。",
       "roundingCheck": "角度為整數，不需近似；已確認不會因四捨五入產生第二答案。",
-      "ambiguityAudit": "題幹指定求較小 ∠AOC，且 AB 是直徑；對應弧 AC 與圓周角 ∠ABC 唯一，不會誤取反角 252°。",
+      "ambiguityAudit": "題幹指定求較小 ∠AOC，且 AB 是直徑；對應弧 AC 與圓周角 ∠ABC 唯一，不會誤取優角 252°。",
       "boundaryAudit": "只使用直徑所對圓周角為 90°、三角形內角和與同弧圓心角倍數，均屬國中會考範圍。",
       "difficultyReason": "basic：雖有三個簡短步驟，但每一步都是本 skill 的基本連結，能區分單純對角互補的重複題。",
       "literacyContextNecessity": null,
@@ -448,7 +448,7 @@ export const u19_s009 = {
       "noTemplateDeclaration": true,
       "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "966281d2afe15aa4f5a63c5cff50bcd33a125f5c9bc29299d40777fb6ac5a0b7"
+      "contentSha256": "d7ec15fde8312cf52ad1b8ccb131f0cb8068b59227d7015ac287548a751e2b3f"
     },
     {
       "questionId": "u19-s009-v004",
@@ -1280,7 +1280,7 @@ export const u19_s009 = {
     },
     {
       "questionId": "u19-s009-v003",
-      "contentSha256": "966281d2afe15aa4f5a63c5cff50bcd33a125f5c9bc29299d40777fb6ac5a0b7",
+      "contentSha256": "d7ec15fde8312cf52ad1b8ccb131f0cb8068b59227d7015ac287548a751e2b3f",
       "reviewVersion": "central-human-review-r1.1",
       "independentSolution": "先不看儲存答案。因 AB 是直徑，∠ACB=90°，所以 ∠ABC=180°−90°−36°=54°。∠ABC 所對弧 AC，較小圓心角 ∠AOC=2×54°=108°。",
       "derivedAnswer": "108°",
@@ -1299,7 +1299,7 @@ export const u19_s009 = {
         "unitConflict": "所有選項皆為角度，且較小圓心角 108° 位於 0° 到 180° 之間。",
         "roundingConflict": "角度為整數，不需近似；已確認不會因四捨五入產生第二答案。",
         "domainBoundary": "只使用直徑所對圓周角為 90°、三角形內角和與同弧圓心角倍數，均屬國中會考範圍。",
-        "alternateReading": "題幹指定求較小 ∠AOC，且 AB 是直徑；對應弧 AC 與圓周角 ∠ABC 唯一，不會誤取反角 252°。"
+        "alternateReading": "題幹指定求較小 ∠AOC，且 AB 是直徑；對應弧 AC 與圓周角 ∠ABC 唯一，不會誤取優角 252°。"
       },
       "difficultyReason": "basic：雖有三個簡短步驟，但每一步都是本 skill 的基本連結，能區分單純對角互補的重複題。",
       "literacyContextNecessity": null,

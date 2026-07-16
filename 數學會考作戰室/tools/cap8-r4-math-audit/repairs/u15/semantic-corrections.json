@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u15",
+  "batch": "016-u15-complete",
+  "skills": ["s003", "s004", "s012"],
+  "mc": [
+    {
+      "questionId": "u15-s004-mc11",
+      "expectedContentSha256": "40c747d546503d293c37331562e623db44b3e9494acbc39de24f204bf7546af4",
+      "set": {
+        "choices": ["340 元", "430 元", "400 元", "370 元"],
+        "optionAnalysis": [
+          { "index": 0, "choice": "340 元", "truth": false, "reason": "把 30 元優惠券重複扣除兩次，才會由 400 元誤算成 340 元。" },
+          { "index": 1, "choice": "430 元", "truth": false, "reason": "把減 30 當加 30。" },
+          { "index": 2, "choice": "400 元", "truth": false, "reason": "只做八折，漏優惠券。" },
+          { "index": 3, "choice": "370 元", "truth": true, "reason": "此選項與獨立推導的結果一致；C(500)=0.8×500-30=400-30=370 元。" }
+        ]
+      },
+      "reviewReplaceText": {
+        "數值雖對但缺少情境單位，在完整選項中不如「370 元」。": "把 30 元優惠券重複扣除兩次，才會由 400 元誤算成 340 元。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [
+    {
+      "lectureId": "u15-s003-lecture",
+      "expectedContentSha256": "7b0ab9d117ec2831cfc121b46173f2de07395168bf48e9602dfff91bceaf7e0f",
+      "replaceText": { "公周長": "圓周長" }
+    },
+    {
+      "lectureId": "u15-s012-lecture",
+      "expectedContentSha256": "d1715ce7b60329b110974e9cb5e2a1f914c89b3f1ed1980f5865a653f3f841dd",
+      "replaceText": {
+        "A=4x+60、B=6x+20，同價於 x=10。": "令 4x+60=6x+20，解得 x=20；代回兩式皆為 140，所以交點 (20,140) 表示購買 20 單位時兩方案同價 140 元。"
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "unitId": "u18",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "019-u18-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u18\",\n  \"skillCount\": 16,\n  \"lectureCount\": 16,\n  \"mcQuestionCount\": 192,\n  \"constructedResponseCount\": 32,\n  \"semanticReviewCount\": 192,\n  \"figureCount\": 11,\n  \"difficultyCounts\": {\n    \"basic\": 48,\n    \"standard\": 48,\n    \"advanced\": 48,\n    \"literacy\": 48\n  },\n  \"answerIndexCounts\": [\n    48,\n    48,\n    48,\n    48\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"uniqueIdsAndPromptsVerified\": true,\n  \"normalizedNearDuplicateScanVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"constructedResponseRubricsVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 16\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u18",
+          "skillCount": 16,
+          "lectureCount": 16,
+          "mcQuestionCount": 192,
+          "constructedResponseCount": 32,
+          "semanticReviewCount": 192,
+          "figureCount": 11,
+          "difficultyCounts": {
+            "basic": 48,
+            "standard": 48,
+            "advanced": 48,
+            "literacy": 48
+          },
+          "answerIndexCounts": [
+            48,
+            48,
+            48,
+            48
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "uniqueIdsAndPromptsVerified": true,
+          "normalizedNearDuplicateScanVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "constructedResponseRubricsVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "stagingPresent": true,
+          "emittedModuleCount": 16
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u18\",\n  \"skillCount\": 16,\n  \"lectureCount\": 16,\n  \"mcQuestionCount\": 192,\n  \"constructedResponseCount\": 32,\n  \"semanticReviewCount\": 192,\n  \"figureCount\": 11,\n  \"difficultyCounts\": {\n    \"basic\": 48,\n    \"standard\": 48,\n    \"advanced\": 48,\n    \"literacy\": 48\n  },\n  \"answerIndexCounts\": [\n    48,\n    48,\n    48,\n    48\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"uniqueIdsAndPromptsVerified\": true,\n  \"normalizedNearDuplicateScanVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"constructedResponseRubricsVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 16\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u18",
+          "skillCount": 16,
+          "lectureCount": 16,
+          "mcQuestionCount": 192,
+          "constructedResponseCount": 32,
+          "semanticReviewCount": 192,
+          "figureCount": 11,
+          "difficultyCounts": {
+            "basic": 48,
+            "standard": 48,
+            "advanced": 48,
+            "literacy": 48
+          },
+          "answerIndexCounts": [
+            48,
+            48,
+            48,
+            48
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "uniqueIdsAndPromptsVerified": true,
+          "normalizedNearDuplicateScanVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "constructedResponseRubricsVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "stagingPresent": true,
+          "emittedModuleCount": 16
+        }
+      }
+    }
+  ]
+}

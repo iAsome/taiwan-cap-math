@@ -47,15 +47,14 @@ export const LECTURE = {
       "meaning": "等於 -a+b，也等於 b-a。"
     },
     {
-      "symbol": "(a-b)^2",
-      "meaning": "展開為 a^2-2ab+b^2。"
+      "symbol": "(a-b)²",
+      "meaning": "展開為 a²-2ab+b²。"
     }
   ],
   "conceptNarrative": [
-    "負號乘進括號時，每一項都要改號。",
-    "a-b 與 b-a 不相等，而是互為相反式；這常決定分組能否成功。",
-    "常數為正的二次三項式若中間項為負，兩個常數因數通常同負。",
-    "最可靠的除錯不是看外觀，而是展開後比較每一項。"
+    "負號與括號的錯誤應以運算範圍來處理，而不是憑外觀猜符號。提出負公因式時，每一項都要除以同一個負數，因此原本為正的項在括號內會變負，原本為負的項會變正。負號乘進括號也必須改變其中每一項，最後以完整展開逐項核對係數。",
+    "兩個差式若只交換前後順序就互為相反式，例如第二個字母減第一個字母等於第一個字母減第二個字母的相反數。分組分解時，必須先把括號方向統一，再提出共同括號；改寫本身產生的負號還要和原有係數相乘。",
+    "完全平方與平方差也常造成符號混淆。差的平方展開含有負的兩倍乘積與正的末項平方；平方差則是兩個平方直接相減，可分成和與差的乘積。最可靠的除錯方式是展開候選式，找出第一個與原式不一致的係數。"
   ],
   "formalDefinitions": [
     {
@@ -72,7 +71,7 @@ export const LECTURE = {
       "meaning": "相反式關係。"
     },
     {
-      "formula": "(a-b)^2=a^2-2ab+b^2",
+      "formula": "(a-b)²=a²-2ab+b²",
       "conditions": [
         "中間項必為負 2ab"
       ],
@@ -114,39 +113,47 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "-8x^2+12x",
+      "prompt": "提出負公因式：−8x²+12x。",
       "solutionSteps": [
-        "-8x^2÷(-4x)=2x。",
-        "12x÷(-4x)=-3。"
+        "兩項共同因式為四倍未知數，依題意提出負四倍未知數。",
+        "逐項相除得到 2x 與 −3。",
+        "寫成 −4x(2x−3) 並展開。"
       ],
-      "answer": "-4x(2x-3)"
+      "answer": "−4x(2x−3)",
+      "why": "提出負數後不能直接抄原式符號；正十二倍未知數除以負四倍未知數得到負三。乘回時兩個負號相乘為正，才能還原第二項。"
     },
     {
       "exampleId": "L2",
-      "prompt": "x(a-b)-3(b-a)",
+      "prompt": "分解 x(a−b)−3(b−a)。",
       "solutionSteps": [
-        "b-a=-(a-b)。",
-        "-3(b-a)=+3(a-b)。"
+        "辨認 b−a=−(a−b)。",
+        "第二項改成正三倍的共同差式。",
+        "提出 a−b 得 (a−b)(x+3)。"
       ],
-      "answer": "(a-b)(x+3)"
+      "answer": "(a−b)(x+3)",
+      "why": "兩個括號方向相反，不能直接視為相同；改寫會產生一個負號，再與原來的負三相乘成正三。統一方向後才有真正的共同因式。"
     },
     {
       "exampleId": "L3",
-      "prompt": "y^2-10y+25",
+      "prompt": "分解 y²−10y+25。",
       "solutionSteps": [
-        "中間項為負。",
-        "兩括號都用 -5。"
+        "首末項是 y 與五的平方。",
+        "中間項是兩者乘積的負兩倍。",
+        "套差的完全平方得 (y−5)²。"
       ],
-      "answer": "(y-5)^2"
+      "answer": "(y−5)²",
+      "why": "末項為正只能判斷兩常數同號，還要由中間項負號決定兩者都取負五。展開正解會得到負十倍未知數，與和的平方不同。"
     },
     {
       "exampleId": "L4",
-      "prompt": "-2m^2-7m-3",
+      "prompt": "完整分解 −2m²−7m−3。",
       "solutionSteps": [
-        "先提出 -1。",
-        "2m^2+7m+3=(2m+1)(m+3)。"
+        "先提出負一，使括號首項為正。",
+        "將 2m²+7m+3 分成 (2m+1)(m+3)。",
+        "保留外層負號並展開。"
       ],
-      "answer": "-(2m+1)(m+3)"
+      "answer": "−(2m+1)(m+3)",
+      "why": "內部兩個交叉項是一倍與六倍未知數，合成七倍；外層負一再使三項全變負。若只寫內部因式，會遺失原式整體的負號。"
     }
   ],
   "difficultyConnections": {
@@ -167,7 +174,7 @@ export const LECTURE = {
       "correction": "每項除以 -g。"
     },
     {
-      "mistake": "負中間項卻用 (x+p)^2。",
+      "mistake": "負中間項卻用 (x+p)²。",
       "why": "只看末項正。",
       "correction": "中間項決定括號符號。"
     },
@@ -236,7 +243,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "3349b30710567e855899003cbf1777179cb674962ddd6b74ac8310326235b20e"
+  "contentSha256": "2ea91f6a6a9ab97fac7cf31d3ec82d773f2baeada1d7ac568a023bdc8bdb5d29"
 };
 
 export const QUESTIONS = [
@@ -264,7 +271,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "-3·2x=-6x，-3·(-3)=+9。",
-    "explanation": "-6x+9=-3(2x-3)。",
+    "explanation": "-6x+9=-3(2x-3)。 提出負三等同將每一項分別除以負三：負六倍未知數的商是正二倍未知數，正九的商是負三。把負三乘回兩個括號項，符號與係數都回到原式，所以括號為二倍未知數減三。",
     "steps": [
       "每項除以 -3。",
       "兩個商分別 2x、-3。",
@@ -311,7 +318,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "395bb1b3ccb08978e172c2fb35fd5d0b1a687fc5c104d66d13749dc4d9de4161"
+    "contentSha256": "2aacccc38500b53c1cb8e253ea63d27327eb294174ebd42da467fdc1835058c9"
   },
   {
     "questionId": "u12-s006-v002",
@@ -337,7 +344,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "等式對所有 a、b 成立。",
-    "explanation": "-(a-b)=-a+b=b-a。",
+    "explanation": "-(a-b)=-a+b=b-a。 負號乘進差式後，括號中的兩項都要改號，得到負的第一個字母加第二個字母；交換加法次序就是第二個字母減第一個字母。這個等式對任意兩數成立，其餘選項都有漏改號或錯誤括號。",
     "steps": [
       "把負號乘入兩項。",
       "重新排列為 b-a。",
@@ -384,7 +391,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5b4e7d8b2ca4a99a428d6aca25a40d55fdd00965d4bad6446457a2042876e17e"
+    "contentSha256": "8d1ba8752bdbf95e064b83d0876607764dc63a6394e89f3d5109097ece94141a"
   },
   {
     "questionId": "u12-s006-v003",
@@ -410,7 +417,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(x-4)²=x²-8x+16。",
-    "explanation": "首末項是 x²、4²，中間項為負兩倍乘積。",
+    "explanation": "首末項是 x²、4²，中間項為負兩倍乘積。 首項與末項分別是未知數和四的平方，而一次項負八倍未知數等於未知數與四乘積的負兩倍，因此應套用差的完全平方。展開正解得到平方項、負八倍一次項與正十六，逐項吻合。",
     "steps": [
       "找平方根 x、4。",
       "用中間負號選差的平方。",
@@ -438,7 +445,7 @@ export const QUESTIONS = [
         "reason": "中間項 -10x，常數 16。"
       }
     ],
-    "misconceptionTarget": "只看末項正就使用加號。",
+    "misconceptionTarget": "只看末項正就使用加號。 還要核對中間項的符號與兩倍乘積，不能只看末項。",
     "prerequisiteCheck": "需會公式法。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "無單位與近似。",
@@ -457,7 +464,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ca2de22f1dd0f5f44c4ceb8ebb0194bf24c9feec056828e2ef1509473902833a"
+    "contentSha256": "9900d83fc9034dad35088631ea1d9e6f80edebc88b4bcdc0ca0207db1d2fcf65"
   },
   {
     "questionId": "u12-s006-v004",
@@ -483,7 +490,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "展開 (a-b)(x+2)=x(a-b)+2(a-b)=x(a-b)-2(b-a)。",
-    "explanation": "將 b-a 改寫為 -(a-b)，原式成 x(a-b)+2(a-b)。",
+    "explanation": "將 b-a 改寫為 -(a-b)，原式成 x(a-b)+2(a-b)。 第二個差式與第一個差式方向相反，所以先把它改寫為第一個差式的相反數；原有負二再乘這個負號成正二。兩項因此具有共同括號，提出後得到一次式加二，展開可還原原式。",
     "steps": [
       "標記兩括號互為相反式。",
       "把第二組轉成共同 a-b。",
@@ -530,7 +537,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1397823990c4f895f3e57bddb6dae85c4564420a0aacfc5d7abaa3cb30009c7d"
+    "contentSha256": "9ae33c2d7cdb04416323175697aa86e1837ec8e73f7c45b105fb73d2f21edcb8"
   },
   {
     "questionId": "u12-s006-v005",
@@ -556,7 +563,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "原式的第二項是負，但外層已負，因此括號常數需正。",
-    "explanation": "-4x²÷(-4x)=x，-12x÷(-4x)=3，所以 -4x(x+3)。",
+    "explanation": "-4x²÷(-4x)=x，-12x÷(-4x)=3，所以 -4x(x+3)。 判斷括號內容應以逐項除法而非抄寫原符號。第二項負十二倍未知數除以外層負四倍未知數，商為正三；若寫負三，展開會產生正十二倍未知數，與原式的負號相反。",
     "steps": [
       "逐項除以 -4x。",
       "注意負除負為正。",
@@ -603,7 +610,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9d3cf03696b9f733850a5cc086f3c148b20599e52a34195cc10a50ff0957ecc3"
+    "contentSha256": "d5626313f949ef409103d8090f7774e64771c5e1bcc686d48791459dd8186492"
   },
   {
     "questionId": "u12-s006-v006",
@@ -629,7 +636,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開內部為 2m²+7m+3，再乘 -1 得原式。",
-    "explanation": "-2m²-7m-3=-(2m²+7m+3)=-(2m+1)(m+3)。",
+    "explanation": "-2m²-7m-3=-(2m²+7m+3)=-(2m+1)(m+3)。 先提出負一後，括號內三項全部改為正係數。二倍未知數加一與未知數加三的交叉項合計七倍未知數，常數為三；再乘回外層負一，三項符號全部恢復為負，答案完整。",
     "steps": [
       "提出 -1。",
       "對正三項式做十字交乘。",
@@ -676,7 +683,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3d708714906a7fbc24f35e45ef1181685f197daa102c54e0ed05dc1836999672"
+    "contentSha256": "1c933895057d6fafe1a49c5db3ecdb7fec9082415e183132151d7008db9f6b32"
   },
   {
     "questionId": "u12-s006-v007",
@@ -702,7 +709,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(x-4)(x-5)=x²-9x+20。",
-    "explanation": "比較係數得 p+q=9、pq=20；實際配對為 4、5。",
+    "explanation": "比較係數得 p+q=9、pq=20；實際配對為 4、5。 展開兩個差式可得平方項減兩常數和倍的未知數，再加兩常數的乘積；與原式比較，一次項係數直接給出兩正整數的和為九，常數項則驗證乘積二十，實際配對四與五唯一。",
     "steps": [
       "展開一般式。",
       "比對一次項係數。",
@@ -730,7 +737,7 @@ export const QUESTIONS = [
         "reason": "只是另一個可能因數。"
       }
     ],
-    "misconceptionTarget": "把常數乘積當因數和。",
+    "misconceptionTarget": "把常數乘積當因數和。 常數項二十代表乘積；一次項負九才代表兩正數的和。",
     "prerequisiteCheck": "需會一般展開與係數比對。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位。",
@@ -749,7 +756,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "2005523ddeb28ce5b613975f282eef9b809cf6278ad50f3a665c8aebaa8d2c8c"
+    "contentSha256": "6b168a6f39149ff638b4a9bcb612095dd7b5bd41fdfdb62037b1b9d7c9cf7f07"
   },
   {
     "questionId": "u12-s006-v008",
@@ -775,7 +782,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "正解同時也給首項 6x²、常數 -3。",
-    "explanation": "逐一算交叉項，只有 (3x+1)(2x-3) 得 -7x。",
+    "explanation": "逐一算交叉項，只有 (3x+1)(2x-3) 得 -7x。 正解的兩個交叉項為負九倍未知數與正二倍未知數，合併後正好是負七倍；同時首項為六倍平方項、常數為負三。其他候選雖也可能有異號常數，交叉和並不等於負七。",
     "steps": [
       "不只看常數異號。",
       "計算兩個交叉乘積。",
@@ -822,7 +829,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3b9a75ab55e7fc0271f942032250d3b6bba727e4f80f52cc44da6726fc35aaa6"
+    "contentSha256": "9db31c6151fc8e7221910a54d02d262ee214697924c9d7708521e9f49aba15aa"
   },
   {
     "questionId": "u12-s006-v009",
@@ -848,7 +855,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "兩個結果分別正確且一般不相等。",
-    "explanation": "展開 A 得 4x²-20x+25；B 是 (2x)²-5²。",
+    "explanation": "展開 A 得 4x²-20x+25；B 是 (2x)²-5²。 差的平方展開必須包含負的兩倍乘積，所以第一式具有一次項；平方差公式則直接分成和與差的乘積，沒有一次項。兩式雖使用相同的二倍未知數與五，代數結構不同，不能互換。",
     "steps": [
       "對 A 使用差的平方。",
       "對 B 使用平方差。",
@@ -876,7 +883,7 @@ export const QUESTIONS = [
         "reason": "A 漏交叉項，B 公式錯。"
       }
     ],
-    "misconceptionTarget": "把 (a-b)² 與 a²-b² 混為一談。",
+    "misconceptionTarget": "把 (a-b)² 與 a²-b² 混為一談。 差的平方含交叉項，平方差只有兩平方相減，兩者公式不同。",
     "prerequisiteCheck": "需會兩種公式。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "無單位或近似。",
@@ -895,7 +902,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4d626688380f9701e93340514ba0765fb6bd4d37bab207119152142bfac15458"
+    "contentSha256": "1b9c14b692a569c33e00a01e90fd98ab62d5c9519463e6042ac5b314b8b20800"
   },
   {
     "questionId": "u12-s006-v010",
@@ -921,7 +928,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "修正版展開為 -12y+18。",
-    "explanation": "-12y÷(-6)=2y，18÷(-6)=-3。",
+    "explanation": "-12y÷(-6)=2y，18÷(-6)=-3。 第一項除以負六確實得到正二倍未知數，但常數正十八除以負六必為負三。原紀錄只核對第一項而漏查常數符號；將修正版展開，負六乘負三才會還原正十八。",
     "steps": [
       "逐項除以 -6。",
       "檢查兩項符號。",
@@ -968,7 +975,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "70bf7cfe5891a0d66c27def041b29f0dfc76743d1ca7e36e00d784464671938e"
+    "contentSha256": "34bf3d02c452c39d4d09aae7c780206f8ad2a0ec949a3316aac81c6d1227b874"
   },
   {
     "questionId": "u12-s006-v011",
@@ -994,7 +1001,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "結果保留淨調整方向，且括號首項 n 為正。",
-    "explanation": "兩項除以 -3n，商為 n、-5。",
+    "explanation": "兩項除以 -3n，商為 n、-5。 依題意提出負三倍未知數後，第一項的商為正未知數，第二項正十五倍未知數的商為負五。括號首項因此為正且常數為負；展開時外層負值使第二項恢復正號，符合淨庫存式。",
     "steps": [
       "辨認共同 3n。",
       "依指定提出負值。",
@@ -1041,7 +1048,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "04b51f19a5c6213fc5e2f7f6ec167f04c1937f2917f6a40e7a34c21aa512930e"
+    "contentSha256": "48f8b4bea2a1d510d20b7b511d5886662acfe94851d11041c31e41f91c6b7247"
   },
   {
     "questionId": "u12-s006-v012",
@@ -1067,7 +1074,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "展開修正版回到原式。",
-    "explanation": "a(b-c)+d(c-b)=a(b-c)-d(b-c)=(a-d)(b-c)。",
+    "explanation": "a(b-c)+d(c-b)=a(b-c)-d(b-c)=(a-d)(b-c)。 第二項的括號方向與第一項相反，改寫時會多出負號，因此它等於負的第二個係數乘共同差式。兩項合併後共同括號外的係數是第一個字母減第二個字母，展開修正版可逐項還原。",
     "steps": [
       "標出 c-b 的相反關係。",
       "把第二項轉成共同 b-c。",
@@ -1114,7 +1121,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "99f35bed3f41c707f8a9989245748d60e009aa59020eb73111f0a58e4853f5d3"
+    "contentSha256": "c1f2442ed10813f674df60b607cc645e383261ef57e0f69eec0bd3e6e9668600"
   }
 ];
 
@@ -1140,14 +1147,16 @@ export const CONSTRUCTED_RESPONSES = [
       "原候選展開第二項為 -20x，與原式 +20x 不符。",
       "20x÷(-4x)=-5。",
       "正確為 -4x(2x-5)。",
-      "展開為 -8x²+20x。"
+      "展開為 -8x²+20x。",
+      "錯誤源於提出負因式後未改變第二項的符號。逐項相除可確認括號中的常數必為負五；把正確乘積展開時，負四倍未知數乘負五才會得到正二十倍未知數，與原式一致。"
     ],
     "alternativeSolutions": [
       "也可提出 4x 得 4x(-2x+5)，但題目以修正原形式為主。"
     ],
     "reasoningSteps": [
       "負公因式使第二個商改號。",
-      "完整驗證兩項。"
+      "完整驗證兩項。",
+      "以第二項的商與展開後符號交叉驗證，排除括號寫正五的錯誤。"
     ],
     "rubric": [
       {
@@ -1189,7 +1198,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1ccf6fbbb2b8e0b04a2ff2e3f50a4f7f8ed8fdfdc51b4971de3fac543c78075a"
+    "contentSha256": "a6954bad1e2ef84ce0ccf64955626378f6de77571b5b13fcc97f4ba35ea584c1"
   },
   {
     "questionId": "u12-s006-cr002",
@@ -1211,14 +1220,16 @@ export const CONSTRUCTED_RESPONSES = [
       "r-q=-(q-r)。",
       "-4(r-q)=+4(q-r)。",
       "A=p(q-r)+4(q-r)=(p+4)(q-r)。",
-      "展開回 p(q-r)-4(r-q)。"
+      "展開回 p(q-r)-4(r-q)。",
+      "兩個差式只交換順序便互為相反式，所以第二項同時含原有負四與改寫產生的負一，乘起來成正四。轉成相同方向後才可提出共同括號；展開結果分別是第一個係數乘差式與負四乘反向差式。"
     ],
     "alternativeSolutions": [
       "也可共同改用 r-q：p(q-r)=-p(r-q)，所以 A=-(p+4)(r-q)。"
     ],
     "reasoningSteps": [
       "兩種最終形式互為等價。",
-      "雙重負號是核心。"
+      "雙重負號是核心。",
+      "最後展開共同因式，確認雙重負號與兩個括號方向都和原式相符。"
     ],
     "rubric": [
       {
@@ -1260,7 +1271,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c95f058d5b6abeae43adfbd444436af5a853b76532e73e61dd8b99b38da4c942"
+    "contentSha256": "8fafd50525c6d2af8fdff16bfbfe4609923c9f63fea84edae146caa6923479c1"
   }
 ];
 
@@ -1269,7 +1280,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v001",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "395bb1b3ccb08978e172c2fb35fd5d0b1a687fc5c104d66d13749dc4d9de4161",
+    "contentSha256": "2aacccc38500b53c1cb8e253ea63d27327eb294174ebd42da467fdc1835058c9",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "-3·2x=-6x，-3·(-3)=+9。",
     "derivedAnswer": "2x-3",
@@ -1303,7 +1314,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v002",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "5b4e7d8b2ca4a99a428d6aca25a40d55fdd00965d4bad6446457a2042876e17e",
+    "contentSha256": "8d1ba8752bdbf95e064b83d0876607764dc63a6394e89f3d5109097ece94141a",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "等式對所有 a、b 成立。",
     "derivedAnswer": "b-a=-(a-b)",
@@ -1337,7 +1348,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v003",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "ca2de22f1dd0f5f44c4ceb8ebb0194bf24c9feec056828e2ef1509473902833a",
+    "contentSha256": "9900d83fc9034dad35088631ea1d9e6f80edebc88b4bcdc0ca0207db1d2fcf65",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(x-4)²=x²-8x+16。",
     "derivedAnswer": "(x-4)²",
@@ -1371,7 +1382,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v004",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "1397823990c4f895f3e57bddb6dae85c4564420a0aacfc5d7abaa3cb30009c7d",
+    "contentSha256": "9ae33c2d7cdb04416323175697aa86e1837ec8e73f7c45b105fb73d2f21edcb8",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開 (a-b)(x+2)=x(a-b)+2(a-b)=x(a-b)-2(b-a)。",
     "derivedAnswer": "(a-b)(x+2)",
@@ -1405,7 +1416,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v005",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "9d3cf03696b9f733850a5cc086f3c148b20599e52a34195cc10a50ff0957ecc3",
+    "contentSha256": "d5626313f949ef409103d8090f7774e64771c5e1bcc686d48791459dd8186492",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "原式的第二項是負，但外層已負，因此括號常數需正。",
     "derivedAnswer": "括號內應為 x+3",
@@ -1439,7 +1450,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v006",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "3d708714906a7fbc24f35e45ef1181685f197daa102c54e0ed05dc1836999672",
+    "contentSha256": "1c933895057d6fafe1a49c5db3ecdb7fec9082415e183132151d7008db9f6b32",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開內部為 2m²+7m+3，再乘 -1 得原式。",
     "derivedAnswer": "-(2m+1)(m+3)",
@@ -1473,7 +1484,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v007",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "2005523ddeb28ce5b613975f282eef9b809cf6278ad50f3a665c8aebaa8d2c8c",
+    "contentSha256": "6b168a6f39149ff638b4a9bcb612095dd7b5bd41fdfdb62037b1b9d7c9cf7f07",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(x-4)(x-5)=x²-9x+20。",
     "derivedAnswer": "9",
@@ -1507,7 +1518,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v008",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "3b9a75ab55e7fc0271f942032250d3b6bba727e4f80f52cc44da6726fc35aaa6",
+    "contentSha256": "9db31c6151fc8e7221910a54d02d262ee214697924c9d7708521e9f49aba15aa",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "正解同時也給首項 6x²、常數 -3。",
     "derivedAnswer": "(3x+1)(2x-3)",
@@ -1541,7 +1552,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v009",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "4d626688380f9701e93340514ba0765fb6bd4d37bab207119152142bfac15458",
+    "contentSha256": "1b9c14b692a569c33e00a01e90fd98ab62d5c9519463e6042ac5b314b8b20800",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "兩個結果分別正確且一般不相等。",
     "derivedAnswer": "A=4x²-20x+25，B=(2x+5)(2x-5)",
@@ -1575,7 +1586,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v010",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "70bf7cfe5891a0d66c27def041b29f0dfc76743d1ca7e36e00d784464671938e",
+    "contentSha256": "34bf3d02c452c39d4d09aae7c780206f8ad2a0ec949a3316aac81c6d1227b874",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "修正版展開為 -12y+18。",
     "derivedAnswer": "括號內常數應為 -3",
@@ -1609,7 +1620,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v011",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "04b51f19a5c6213fc5e2f7f6ec167f04c1937f2917f6a40e7a34c21aa512930e",
+    "contentSha256": "48f8b4bea2a1d510d20b7b511d5886662acfe94851d11041c31e41f91c6b7247",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "結果保留淨調整方向，且括號首項 n 為正。",
     "derivedAnswer": "-3n(n-5)",
@@ -1643,7 +1654,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s006-v012",
     "unitId": "u12",
     "skillId": "factoring-common-mistake-sign",
-    "contentSha256": "99f35bed3f41c707f8a9989245748d60e009aa59020eb73111f0a58e4853f5d3",
+    "contentSha256": "c1f2442ed10813f674df60b607cc645e383261ef57e0f69eec0bd3e6e9668600",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開修正版回到原式。",
     "derivedAnswer": "不正確，應為 (a-d)(b-c)",

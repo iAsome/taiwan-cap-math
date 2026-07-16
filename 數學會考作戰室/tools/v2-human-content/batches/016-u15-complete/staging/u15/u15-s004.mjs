@@ -932,7 +932,7 @@ export default {
       "givenConditions": "題目以「先打八折，再折抵 30 元；500 元符合適用門檻。」界定可用資訊；另經檢查 輸入範圍與符號皆依題目明示，沒有隱藏端點。本題的條件審查焦點是「用函數記號解讀雙重折扣」。",
       "target": "用函數記號解讀雙重折扣",
       "choices": [
-        "370",
+        "340 元",
         "430 元",
         "400 元",
         "370 元"
@@ -957,9 +957,9 @@ export default {
       "optionAnalysis": [
         {
           "index": 0,
-          "choice": "370",
+          "choice": "340 元",
           "truth": false,
-          "reason": "數值雖對但缺少情境單位，在完整選項中不如「370 元」。"
+          "reason": "把 30 元優惠券重複扣除兩次，才會由 400 元誤算成 340 元。"
         },
         {
           "index": 1,
@@ -992,7 +992,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
       "canonicalization": "sorted-keys-json-utf8-v1",
-      "contentSha256": "40c747d546503d293c37331562e623db44b3e9494acbc39de24f204bf7546af4"
+      "contentSha256": "985bb8406d452e05563b74a75d88c13f127c7f7d40f3bfeb3b01576015493b9c"
     },
     {
       "questionId": "u15-s004-mc12",
@@ -1523,7 +1523,7 @@ export default {
       "skillId": "function-notation",
       "reviewVersion": "human-review-u15-r1",
       "reviewedAt": "2026-07-12T16:00:00+08:00",
-      "contentSha256": "40c747d546503d293c37331562e623db44b3e9494acbc39de24f204bf7546af4",
+      "contentSha256": "985bb8406d452e05563b74a75d88c13f127c7f7d40f3bfeb3b01576015493b9c",
       "answerMatch": true,
       "uniqueCorrectAnswer": true,
       "derivedAnswer": "370 元",
@@ -1542,7 +1542,7 @@ export default {
       },
       "difficultyReason": "需處理百分比、固定折抵與門檻，屬素養。",
       "literacyNecessityReview": "折扣順序與適用門檻是計算 C(p) 的必要資訊。",
-      "reviewerNote": "針對 u15-s004-mc11，審查者未讀取存答而依序完成：確認 500 符合 p≥200；計算八折 400；再減 30 得 370。重算結果為「370 元」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「數值雖對但缺少情境單位，在完整選項中不如「370 元」。；把減 30 當加 30。；只做八折，漏優惠券。」，故答案唯一。",
+      "reviewerNote": "針對 u15-s004-mc11，審查者未讀取存答而依序完成：確認 500 符合 p≥200；計算八折 400；再減 30 得 370。重算結果為「370 元」。再逐項核對三個干擾選項，確認它們分別對應具體錯誤「把 30 元優惠券重複扣除兩次，才會由 400 元誤算成 340 元。；把減 30 當加 30。；只做八折，漏優惠券。」，故答案唯一。",
       "reviewerDecision": "pass",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
     },

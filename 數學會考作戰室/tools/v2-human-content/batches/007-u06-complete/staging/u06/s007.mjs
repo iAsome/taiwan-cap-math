@@ -103,66 +103,74 @@ export default {
     "method": [
       {
         "step": 1,
-        "instruction": "讀出關係式的 k。",
-        "check": "是 y=12/x 還是 y=-12/x？"
+        "instruction": "先讀清楚關係式中的非零反比常數k，不用曲線外觀代替資料。",
+        "check": "題目與所用圖形的k必須一致。"
       },
       {
         "step": 2,
-        "instruction": "用 xy=k 檢查標示點。",
-        "check": "負號與座標順序正確嗎？"
+        "instruction": "判斷點時直接計算xy，或把x代入y=k/x。",
+        "check": "乘積須精確等於k。"
       },
       {
         "step": 3,
-        "instruction": "由 k 的符號判象限。",
-        "check": "x、y 應同號還是異號？"
+        "instruction": "用k的正負列出x、y同號或異號，判定兩個象限。",
+        "check": "完整代數圖形含兩個分支。"
       },
       {
         "step": 4,
-        "instruction": "描述變化趨勢。",
-        "check": "限定在哪一個象限與 x 範圍？"
+        "instruction": "由x≠0及k≠0推出y≠0，說明圖形不碰兩軸。",
+        "check": "靠近座標軸不等於相交。"
       },
       {
         "step": 5,
-        "instruction": "確認不通過座標軸並避免目測。",
-        "check": "是否把靠近誤說成相交？"
+        "instruction": "遇到不按比例圖，只採標示座標與關係式完成驗算。",
+        "check": "沒有用像素距離或目測曲率讀答案。"
       }
     ],
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "點 (3,4) 是否在 y=12/x 上？",
+        "prompt": "點(3,4)是否在y=12/x上？",
         "solutionSteps": [
-          "計算 3×4=12。",
-          "乘積等於 k。"
+          "計算3×4=12。",
+          "比較乘積與k=12。",
+          "再代入12÷3=4確認。"
         ],
-        "answer": "在圖形上。"
+        "answer": "在圖形上。",
+        "why": "點是否在反比圖形上由代數關係決定，不需要也不應依靠示意圖目測。這個點的兩座標乘積正好是十二，代入關係式也得到縱坐標四，因此判斷有雙重驗證。"
       },
       {
         "exampleId": "L2",
-        "prompt": "y=-8/x 的圖形在哪些象限？",
+        "prompt": "y=-8/x的圖形在哪些象限？",
         "solutionSteps": [
-          "k=-8<0，x、y 異號。",
-          "異號點位於第二、第四象限。"
+          "由k=-8<0判斷x、y異號。",
+          "列(-,+)與(+,-)兩種組合。",
+          "對應到第二、第四象限。"
         ],
-        "answer": "第二與第四象限。"
+        "answer": "第二與第四象限。",
+        "why": "乘積為負時兩因數必須異號，負的x與正的y落在第二象限，正的x與負的y落在第四象限。反比圖有兩個分支，所以兩個象限都必須寫出。"
       },
       {
         "exampleId": "L3",
-        "prompt": "在 y=24/x 的第一象限分支上，x 從 4 變 8，y 如何變？",
+        "prompt": "在y=24/x第一象限分支上，x從4變8，y如何變？",
         "solutionSteps": [
-          "x=4 時 y=6；x=8 時 y=3。",
-          "x 加倍，y 減半。"
+          "代入x=4得y=6。",
+          "代入x=8得y=3。",
+          "比較得y由6減為3，且乘積都為24。"
         ],
-        "answer": "由 6 變 3。"
+        "answer": "由6變3。",
+        "why": "指定第一象限排除了符號混淆，但精確數值仍應代入式子而非從曲線量取。x加倍後y減半，使兩個數對的乘積都保持二十四，符合反比。"
       },
       {
         "exampleId": "L4",
-        "prompt": "反比圖形能否經過 (0,5)？",
+        "prompt": "反比圖形能否經過(0,5)？",
         "solutionSteps": [
-          "代入需計算 y=k/0，沒有定義。",
-          "因此任何 x=0 的點都不在圖上。"
+          "注意該點的x=0。",
+          "代入y=k/0會遇到除以零。",
+          "因此任何x=0的點都不在圖形上。"
         ],
-        "answer": "不能。"
+        "answer": "不能。",
+        "why": "反比式的分母不能為零，所以y軸上的任何點都排除在定義域外。這不是曲線畫得夠不夠遠的問題，而是代數關係根本沒有對應值，因而不可能相交。"
       }
     ],
     "commonMistakes": [
@@ -251,7 +259,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "5ce28e4df230707b88ae05a67c7b3ed38f4e33fa7bfc8014841125eef63f5101"
+    "contentSha256": "31b2f8fae68a66973f8e040c2530269e0d9d1c3a1d8b800cda8363af66103702"
   },
   "mcQuestions": [
     {
@@ -276,10 +284,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "代入y=12/3=4。",
       "mainExplanation": "用乘積而非目測判點。",
-      "explanation": "用乘積而非目測判點。",
+      "explanation": "判斷點是否在反比圖形上必須代入關係式，不能依示意圖目測。將x=3代入y=12/x，得到y=12÷3=4，恰好等於該點的縱坐標；等價地3×4=12，所以(3,4)確實在圖形上。",
       "steps": [
-        "計算3×4",
-        "等於12"
+        "把點的x=3代入y=12/x。",
+        "計算12÷3=4，與點的y相同。",
+        "再以3×4=12檢查固定乘積。"
       ],
       "optionAnalysis": [
         {
@@ -303,7 +312,7 @@ export default {
           "reason": "k>0時第一象限有圖形。"
         }
       ],
-      "misconceptionTarget": "用和或座標相等判點。",
+      "misconceptionTarget": "用座標相加、比較兩座標是否相等，或依圖形外觀猜測點是否在線上。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -316,15 +325,15 @@ export default {
       "ambiguityBoundaryAudit": "點座標明確。",
       "difficultyReason": "需從圖上指定點檢查乘積，屬於反比圖形的基礎辨識。",
       "literacyContextNecessity": null,
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-inverse-graph-01",
-      "drawingSpecRef": "units/u06/s007/drawing-specs.jsonl#u06-fig-inverse-graph-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a471d750a5c39ba906b37180119b87c802840494af7a732a7d079e98372329cc"
+      "contentSha256": "bfd136f55e0927e47edca0faa65486ef2e4c8c3e86697001931c783cc9d0195c"
     },
     {
       "questionId": "u06-s007-v002",
@@ -348,10 +357,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "選點(2,-4)、(-2,4)驗證。",
       "mainExplanation": "由乘積xy=−8判斷符號組合。",
-      "explanation": "由乘積xy=−8判斷符號組合。",
+      "explanation": "y=-8/x等價於xy=-8，乘積為負表示x、y異號。x<0、y>0的點位於第二象限；x>0、y<0的點位於第四象限。取(-2,4)與(2,-4)代入都成立，因此圖形位於第二、第四象限。",
       "steps": [
-        "(+,-)在第四象限",
-        "(-,+)在第二象限"
+        "由xy=-8判斷兩座標必須異號。",
+        "列出(-,+)在第二象限、(+,-)在第四象限。",
+        "以(-2,4)和(2,-4)驗證兩個分支。"
       ],
       "optionAnalysis": [
         {
@@ -375,7 +385,7 @@ export default {
           "reason": "第三象限乘積為正。"
         }
       ],
-      "misconceptionTarget": "把k正負與象限配錯。",
+      "misconceptionTarget": "把k為負誤配到同號象限，或只寫出其中一個圖形分支。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -396,7 +406,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bd6dc48fabb416869dc7831ca43171667656514dd9d99783dce89d2fdcc102eb"
+      "contentSha256": "ba90dcfe4b8e0a357dc3eaa1b08290d33b3801688fe369d74776f05327d954cb"
     },
     {
       "questionId": "u06-s007-v003",
@@ -420,10 +430,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "xy=5在(0,0)時乘積0，不等於5。",
       "mainExplanation": "檢查原點代入關係式。",
-      "explanation": "檢查原點代入關係式。",
+      "explanation": "反比式y=5/x中的分母x不能為0，所以圖形不可能有x=0的點，也就不會經過原點。從乘積看，原點使xy=0，與非零常數5不同；因此不論從定義域或固定乘積判斷，答案都是不會。",
       "steps": [
-        "原點x=0",
-        "5/0無定義"
+        "檢查原點的x=0會使5/x無定義。",
+        "另算原點乘積0，不等於反比常數5。",
+        "確認圖形不經過原點或任一座標軸。"
       ],
       "optionAnalysis": [
         {
@@ -447,7 +458,7 @@ export default {
           "reason": "x=0時5/x無定義，因此原點不在圖形上。"
         }
       ],
-      "misconceptionTarget": "認為所有函數圖形都過原點。",
+      "misconceptionTarget": "把正比直線通過原點的特徵錯套到反比圖形，忽略除以零無定義。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -468,7 +479,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "05be040a722f14731afa37c872060ddebbbe8e9b75da75578006092efe03718d"
+      "contentSha256": "17e7053a4415da46b30ffff07d5b3757f231000a41086c8beac0ae6e0dbd1fb8"
     },
     {
       "questionId": "u06-s007-v004",
@@ -492,10 +503,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "x加倍時y減半，乘積仍24。",
       "mainExplanation": "分別代入兩個x值。",
-      "explanation": "分別代入兩個x值。",
+      "explanation": "題目給的是y=24/x，應以式子計算而不依不相容的共用示意圖讀值。x=4時y=24÷4=6；x=8時y=24÷8=3。因此x加倍時y減半，由6減為3，兩個數對的乘積都等於24。",
       "steps": [
-        "24/4=6",
-        "24/8=3"
+        "代入x=4，算得y=6。",
+        "代入x=8，算得y=3。",
+        "比較兩值並以4×6=8×3=24驗算。"
       ],
       "optionAnalysis": [
         {
@@ -519,7 +531,7 @@ export default {
           "reason": "把y誤當x的一半。"
         }
       ],
-      "misconceptionTarget": "只依曲線方向猜數值。",
+      "misconceptionTarget": "從別的反比常數圖形讀值，或只依曲線下降外觀猜數字而未代入。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -532,15 +544,15 @@ export default {
       "ambiguityBoundaryAudit": "兩個x值均非0。",
       "difficultyReason": "標準變化判讀。",
       "literacyContextNecessity": null,
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-inverse-graph-01",
-      "drawingSpecRef": "units/u06/s007/drawing-specs.jsonl#u06-fig-inverse-graph-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "202a0fb764d80ff391cf47c68d68f8f7958d1932b39631729614cb6d09c2dfda"
+      "contentSha256": "7b532ff419e442bebce59a0c8a59b21e15992f3a53c2b7d2d858e1ae200fdd81"
     },
     {
       "questionId": "u06-s007-v005",
@@ -564,10 +576,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "代入x=6應得y=3，不是4。",
       "mainExplanation": "逐點檢查xy。",
-      "explanation": "逐點檢查xy。",
+      "explanation": "圖形y=18/x上的每個點都要滿足xy=18。四個選項的乘積依序為24、18、18、18，只有(6,4)的乘積不是18；也可代入x=6求得y應為3而不是4，因此它唯一不在圖形上。",
       "steps": [
-        "計算四個乘積",
-        "只有(6,4)不符"
+        "把每個選項的x、y相乘。",
+        "得到24、18、18、18。",
+        "確認(6,4)乘積不符，並以18÷6=3反查。"
       ],
       "optionAnalysis": [
         {
@@ -591,7 +604,7 @@ export default {
           "reason": "9×2=18。"
         }
       ],
-      "misconceptionTarget": "只看點大致靠近曲線。",
+      "misconceptionTarget": "只看點的座標大小是否接近曲線，沒有逐點檢查xy是否等於18。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -612,7 +625,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "65abf9ddaf5ccc73850e98348d944a7b3f3df346d2b5dd8b169ea7a2e72b025e"
+      "contentSha256": "bdb03fd2bf48b4f656a5dc1c4f0dba3a5ca531058e7425c300f321b24eeb8101"
     },
     {
       "questionId": "u06-s007-v006",
@@ -636,10 +649,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "代入x=-4得y=3。",
       "mainExplanation": "由一個非零點求k。",
-      "explanation": "由一個非零點求k。",
+      "explanation": "反比圖形通過(-4,3)，所以反比常數k=xy=(-4)×3=-12。標準式為y=k/x，因此關係式是y=-12/x。代入x=-4可得y=(-12)÷(-4)=3，與已知點一致，也排除直線式、倒數式與符號錯誤。",
       "steps": [
-        "k=-12",
-        "寫y=k/x"
+        "用點的乘積求k=(-4)×3=-12。",
+        "把k代入y=k/x，寫成y=-12/x。",
+        "以x=-4代回得到y=3。"
       ],
       "optionAnalysis": [
         {
@@ -663,7 +677,7 @@ export default {
           "reason": "以直線連點。"
         }
       ],
-      "misconceptionTarget": "把座標相加或套直線式。",
+      "misconceptionTarget": "把座標相加求常數、漏掉負號，或誤把彎曲反比圖形寫成一次函數。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -684,7 +698,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a023931f34045885a66dfde1ef3670631d06334c18dc8c76c601a2a53e4a7f75"
+      "contentSha256": "80521ca59f92c799268e3ca6bb2f722852de32eb8e81450edc56e2b39c5fb4de"
     },
     {
       "questionId": "u06-s007-v007",
@@ -708,11 +722,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "選點(3,4)、(-3,-4)證明兩分支。",
       "mainExplanation": "同時使用象限與定義域判斷。",
-      "explanation": "同時使用象限與定義域判斷。",
+      "explanation": "y=12/x的反比常數為正，所以xy>0，x、y必須同號，完整代數圖形位於第一、第三象限。又因x不能為0且12不為0時y也不會為0，圖形不與兩座標軸相交；它是兩條彎曲分支而非直線。",
       "steps": [
-        "k=12>0",
-        "同號分支",
-        "排除座標軸"
+        "由k=12>0判斷x、y同號。",
+        "把同號組合對應到第一、第三象限。",
+        "用x≠0、y≠0說明兩分支不碰座標軸。"
       ],
       "optionAnalysis": [
         {
@@ -736,7 +750,7 @@ export default {
           "reason": "代數範圍也有負值分支。"
         }
       ],
-      "misconceptionTarget": "混淆正比圖形或只看生活正值。",
+      "misconceptionTarget": "只看生活情境的正值分支，或把反比圖形誤認為通過原點的直線。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -749,15 +763,15 @@ export default {
       "ambiguityBoundaryAudit": "敘述中的『不碰』指沒有座標軸交點。",
       "difficultyReason": "多特徵整合。",
       "literacyContextNecessity": null,
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-inverse-graph-01",
-      "drawingSpecRef": "units/u06/s007/drawing-specs.jsonl#u06-fig-inverse-graph-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "917be142d9c6d7797c34ff162bfbb598291cc1417444f9f62424d30917db5647"
+      "contentSha256": "c71e9b4da568b5a27b6d419021e10ffbc909313c857995b659fec9c872064f9a"
     },
     {
       "questionId": "u06-s007-v008",
@@ -781,11 +795,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "(4,3)乘積12。",
       "mainExplanation": "同一圖形上的每點乘積相同。",
-      "explanation": "同一圖形上的每點乘積相同。",
+      "explanation": "由點(2,6)可得反比常數k=2×6=12。同一圖形上的點(a,3)也要滿足3a=12，所以a=4。代回(4,3)的乘積為12，與第一點一致，因此4是唯一可能值，其他選項都無法維持相同乘積。",
       "steps": [
-        "k=12",
-        "3a=12",
-        "a=4"
+        "利用(2,6)算得k=12。",
+        "對點(a,3)列3a=12。",
+        "解得a=4並檢查4×3=12。"
       ],
       "optionAnalysis": [
         {
@@ -809,7 +823,7 @@ export default {
           "reason": "k=2×6=12，再由3a=12得a=4。"
         }
       ],
-      "misconceptionTarget": "把點的座標跨組直接相等。",
+      "misconceptionTarget": "把兩個數對的同位置座標直接設相等，或用座標和代替固定乘積。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -830,7 +844,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c0468e1ac22d8f63f96ade9e52839ad84d28a1456283aec8fd6d98d14a2b7110"
+      "contentSha256": "355a1af8bcdac66b889527ff7c05d3e8cfed478bf5b6c1e97bfcecac884b0da8"
     },
     {
       "questionId": "u06-s007-v009",
@@ -854,10 +868,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "例k=12，x=2時y=6，x=4時y=3。",
       "mainExplanation": "可設0<xP<xQ，取倒數後1/xP>1/xQ。",
-      "explanation": "可設0<xP<xQ，取倒數後1/xP>1/xQ。",
+      "explanation": "第一象限中xP、xQ皆為正，且0<xP<xQ。正數取倒數後不等號反向，所以1/xP>1/xQ；再乘正數k仍得k/xP>k/xQ，也就是P的y座標大於Q的y座標。此結論依賴第一象限與k為正兩項限制。",
       "steps": [
-        "兩者皆正",
-        "乘k>0不改不等號方向"
+        "寫出0<xP<xQ且k>0。",
+        "取倒數得到1/xP>1/xQ。",
+        "乘以k，推出yP>yQ。"
       ],
       "optionAnalysis": [
         {
@@ -881,7 +896,7 @@ export default {
           "reason": "條件足以比較。"
         }
       ],
-      "misconceptionTarget": "未限定象限或誤用正比。",
+      "misconceptionTarget": "未使用第一象限與k為正的限制，就把正比的同向大小關係套到反比。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -902,7 +917,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "232e681f83cd53640866ce5b3bf74efc6377f0e65c32d41351cad24ceee4e469"
+      "contentSha256": "7d48b4d3163d177a47015fa36b88c16cf0c1768cfc6b75cf496eb5b371c4da26"
     },
     {
       "questionId": "u06-s007-v010",
@@ -926,12 +941,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "四點均在y=12/x。",
       "mainExplanation": "不按比例時只能依標示座標與關係式。",
-      "explanation": "不按比例時只能依標示座標與關係式。",
+      "explanation": "題幹已列出四點座標，即使示意圖未按比例，仍可直接計算乘積：2×6、3×4、4×3、6×2全都等於12。距離與線段外觀不能可靠量測，反比曲線也不會在圖外與x軸相交，因此只有固定乘積的判斷成立。",
       "steps": [
-        "2×6=12",
-        "3×4=12",
-        "4×3=12",
-        "6×2=12"
+        "忽略不按比例圖形的視覺距離。",
+        "逐點計算xy，四個結果皆為12。",
+        "依反比不碰座標軸排除交點敘述，選固定乘積。"
       ],
       "optionAnalysis": [
         {
@@ -955,7 +969,7 @@ export default {
           "reason": "座標數值可計算，四點乘積都是12；目測距離不可靠。"
         }
       ],
-      "misconceptionTarget": "依草圖外觀推論長度或交點。",
+      "misconceptionTarget": "把未按比例示意圖的視覺距離當成數學證據，或認為曲線延伸後會碰座標軸。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -968,15 +982,15 @@ export default {
       "ambiguityBoundaryAudit": "明示圖未按比例，排除目測。",
       "difficultyReason": "圖形素養。",
       "literacyContextNecessity": "不按比例警告使座標計算成為唯一可靠依據。",
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-inverse-graph-01",
-      "drawingSpecRef": "units/u06/s007/drawing-specs.jsonl#u06-fig-inverse-graph-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0cd039dce62e4eb63201a26a6e6d622ab4f4ac790cfa24c8914fcae73c0358dc"
+      "contentSha256": "9f733d95daa2bd15ecb54c2ceeba8df3431569fa65916cf08be581ee0b1fd332"
     },
     {
       "questionId": "u06-s007-v011",
@@ -1000,10 +1014,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "15×16=240。",
       "mainExplanation": "圖形資訊等價於乘積固定。",
-      "explanation": "圖形資訊等價於乘積固定。",
+      "explanation": "資料點符合PV=240，所以壓力與體積的乘積固定。將V=15代入，得到15P=240，故P=240÷15=16。反算15×16=240，符合曲線所代表的關係；不能只從曲線下降趨勢估讀。",
       "steps": [
-        "15P=240",
-        "P=16"
+        "由PV=240寫15P=240。",
+        "計算P=240÷15=16。",
+        "以15×16=240驗證資料點。"
       ],
       "optionAnalysis": [
         {
@@ -1027,7 +1042,7 @@ export default {
           "reason": "把兩量相乘而非解未知數。"
         }
       ],
-      "misconceptionTarget": "只從曲線下降趨勢估值。",
+      "misconceptionTarget": "只依曲線下降方向猜壓力值，沒有使用圖形明示的固定乘積方程。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -1048,7 +1063,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d081fa2d8cde7d5f120382d9c83ee52514c1d35c66a0b683fe65d823a6c4faa5"
+      "contentSha256": "57984552d80606a6ecb2815b5a895571c86cd1330dab1c74498707e7e70d606e"
     },
     {
       "questionId": "u06-s007-v012",
@@ -1072,11 +1087,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "8×15=120且無剩餘。",
       "mainExplanation": "曲線代表xy固定，且完整分組要求整數。",
-      "explanation": "曲線代表xy固定，且完整分組要求整數。",
+      "explanation": "點(5,24)表示總人數為5×24=120人。若每組8人，組數=120÷8=15組；8×15=120且沒有剩餘，符合完整分組條件。38.4雖來自錯誤倍率，且非整數，也不可能是完整組數。",
       "steps": [
-        "總量120",
-        "8y=120",
-        "y=15"
+        "由(5,24)算總人數5×24=120。",
+        "計算120÷8=15組。",
+        "用8×15=120並檢查整數與無剩餘條件。"
       ],
       "optionAnalysis": [
         {
@@ -1100,7 +1115,7 @@ export default {
           "reason": "38.4把比例方向反。"
         }
       ],
-      "misconceptionTarget": "只看圖形下降或忽略完整分組。",
+      "misconceptionTarget": "只看圖形下降趨勢估值，或忽略完整分組要求組數必須是非負整數。",
       "prerequisiteCheck": {
         "skillIds": [
           "inverse-variation"
@@ -1121,7 +1136,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "cf55e82e8c3325d0a5e017e721aa1c700c56f21495281d413920629ea6743fb9"
+      "contentSha256": "18e1240e40bb12f7011b6e30f676d4fc10126f708ddfc5a00e6fd0e01249fdaa"
     }
   ],
   "constructedResponses": [
@@ -1134,7 +1149,7 @@ export default {
       "difficulty": "standard",
       "itemType": "constructed-response",
       "type": "constructed-response",
-      "prompt": "圖中曲線為y=12/x，標有A(2,6)、B(3,4)、C(4,3)、D(6,2)。說明四點為何都在圖上，並說明圖形為何不經過座標軸。",
+      "prompt": "已知反比關係 y=12/x，並給四點 A(2,6)、B(3,4)、C(4,3)、D(6,2)。說明四點為何都滿足此關係，並說明圖形為何不經過座標軸。",
       "target": "反比圖形點與座標軸",
       "requiredWork": [
         "逐點或概括驗證乘積。",
@@ -1142,17 +1157,19 @@ export default {
         "說明k≠0時y也不為0。"
       ],
       "fullCreditSolution": [
-        "四點的xy分別為12、12、12、12，所以都滿足y=12/x。",
-        "若在y軸上則x=0，而12/0無定義。",
-        "若在x軸上則y=0，會使xy=0，不等於12，因此圖形不經過兩軸。"
+        "逐點計算可得2×6=12、3×4=12、4×3=12、6×2=12，所以A、B、C、D都滿足xy=12，也就是y=12/x。",
+        "若點在y軸上，x=0，但12÷0沒有定義，因此圖形不會與y軸相交。",
+        "若點在x軸上，y=0，則xy=0，不可能等於非零常數12，因此也不會與x軸相交。",
+        "兩條座標軸的排除理由不同，均由反比定義而非圖形外觀得到。"
       ],
       "alternativeSolutions": [
         "可逐一代入y=12/x，得到6、4、3、2。"
       ],
       "reasoningSteps": [
-        "四點的xy分別為12、12、12、12，所以都滿足y=12/x。",
-        "若在y軸上則x=0，而12/0無定義。",
-        "若在x軸上則y=0，會使xy=0，不等於12，因此圖形不經過兩軸。"
+        "計算四點乘積並確認全為12。",
+        "由x=0時除法無定義排除y軸。",
+        "由y=0會使乘積為0排除x軸。",
+        "整理成不依賴目測的完整說明。"
       ],
       "rubric": [
         {
@@ -1180,13 +1197,12 @@ export default {
       "unitNotationRules": "座標無單位；使用x軸、y軸名稱需正確。",
       "answerOnlyPolicy": "只寫『因為是反比』最多1分。",
       "commonErrors": [
-        "把x+y當常數。",
-        "說靠近軸就是相交。",
-        "只處理第一象限。"
+        "只說四點看起來在線上，沒有用座標乘積提供證據。",
+        "認為曲線靠近座標軸最後就會相交，或只說明其中一條座標軸。"
       ],
-      "visualMode": "figure-supported",
-      "figureId": "u06-fig-inverse-graph-01",
-      "drawingSpecRef": "units/u06/s007/drawing-specs.jsonl#u06-fig-inverse-graph-01",
+      "visualMode": "text-only",
+      "figureId": null,
+      "drawingSpecRef": null,
       "independentReview": {
         "derivedResult": "四點乘積皆12，且曲線不經兩軸。",
         "ambiguity": "圖示座標明確，無需量測。",
@@ -1197,7 +1213,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "7f7ebce1e0eaea326f18a95d6f89ac7ab09461123187f1e9ff3d9628c98a4f7e"
+      "contentSha256": "1f50552f0f87d924f31b1a446257c04a5827a52307b4c9e72e870923b3f18ce8"
     },
     {
       "questionId": "u06-s007-cr002",
@@ -1216,17 +1232,19 @@ export default {
         "代入x=8求y。"
       ],
       "fullCreditSolution": [
-        "k=xy=(−6)×4=−24。",
-        "k<0，所以x、y異號，圖形在第二與第四象限。",
-        "x=8時y=−24/8=−3，因此點為(8,−3)。"
+        "點P(-6,4)在y=k/x上，所以k=xy=(-6)×4=-24，非零常數由這個已知點唯一決定。",
+        "因k<0，x、y必須異號，完整圖形位於第二與第四象限，兩個分支都不能遺漏。",
+        "當x=8時，y=-24÷8=-3，因此所求點依(x,y)順序寫為(8,-3)。",
+        "驗算8×(-3)=-24，與P點的乘積一致，證明新點在同一反比圖形上。"
       ],
       "alternativeSolutions": [
         "可先寫y=−24/x，再分別回答象限與座標。"
       ],
       "reasoningSteps": [
-        "k=xy=(−6)×4=−24。",
-        "k<0，所以x、y異號，圖形在第二與第四象限。",
-        "x=8時y=−24/8=−3，因此點為(8,−3)。"
+        "由P點求反比常數k=-24。",
+        "用k的負號判斷兩座標異號及象限。",
+        "代入x=8求y=-3。",
+        "以新點乘積核對k。"
       ],
       "rubric": [
         {
@@ -1254,9 +1272,8 @@ export default {
       "unitNotationRules": "座標寫(8,−3)，負號清楚。",
       "answerOnlyPolicy": "只寫三個答案無過程最多2分。",
       "commonErrors": [
-        "負負號判斷錯。",
-        "只寫一個象限。",
-        "把點寫成(-3,8)。"
+        "計算負數乘積時漏掉負號，連帶選錯第一、第三象限。",
+        "把所求點寫成(-3,8)，顛倒題目指定的x、y坐標順序。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1271,7 +1288,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "868c9a00eefc8d67050c107c4bb774640a233a8c5b39e88e984f50ef996abc36"
+      "contentSha256": "d670b080d51f452b06214050f408e76070265d7ca914ab7e428d340582c36480"
     }
   ],
   "semanticReviews": [
@@ -1280,7 +1297,7 @@ export default {
       "questionId": "u06-s007-v001",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "a471d750a5c39ba906b37180119b87c802840494af7a732a7d079e98372329cc",
+      "contentSha256": "bfd136f55e0927e47edca0faa65486ef2e4c8c3e86697001931c783cc9d0195c",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1317,7 +1334,7 @@ export default {
       "questionId": "u06-s007-v002",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "bd6dc48fabb416869dc7831ca43171667656514dd9d99783dce89d2fdcc102eb",
+      "contentSha256": "ba90dcfe4b8e0a357dc3eaa1b08290d33b3801688fe369d74776f05327d954cb",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1354,7 +1371,7 @@ export default {
       "questionId": "u06-s007-v003",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "05be040a722f14731afa37c872060ddebbbe8e9b75da75578006092efe03718d",
+      "contentSha256": "17e7053a4415da46b30ffff07d5b3757f231000a41086c8beac0ae6e0dbd1fb8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1391,7 +1408,7 @@ export default {
       "questionId": "u06-s007-v004",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "202a0fb764d80ff391cf47c68d68f8f7958d1932b39631729614cb6d09c2dfda",
+      "contentSha256": "7b532ff419e442bebce59a0c8a59b21e15992f3a53c2b7d2d858e1ae200fdd81",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1428,7 +1445,7 @@ export default {
       "questionId": "u06-s007-v005",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "65abf9ddaf5ccc73850e98348d944a7b3f3df346d2b5dd8b169ea7a2e72b025e",
+      "contentSha256": "bdb03fd2bf48b4f656a5dc1c4f0dba3a5ca531058e7425c300f321b24eeb8101",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1465,7 +1482,7 @@ export default {
       "questionId": "u06-s007-v006",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "a023931f34045885a66dfde1ef3670631d06334c18dc8c76c601a2a53e4a7f75",
+      "contentSha256": "80521ca59f92c799268e3ca6bb2f722852de32eb8e81450edc56e2b39c5fb4de",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1502,7 +1519,7 @@ export default {
       "questionId": "u06-s007-v007",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "917be142d9c6d7797c34ff162bfbb598291cc1417444f9f62424d30917db5647",
+      "contentSha256": "c71e9b4da568b5a27b6d419021e10ffbc909313c857995b659fec9c872064f9a",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1539,7 +1556,7 @@ export default {
       "questionId": "u06-s007-v008",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "c0468e1ac22d8f63f96ade9e52839ad84d28a1456283aec8fd6d98d14a2b7110",
+      "contentSha256": "355a1af8bcdac66b889527ff7c05d3e8cfed478bf5b6c1e97bfcecac884b0da8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1576,7 +1593,7 @@ export default {
       "questionId": "u06-s007-v009",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "232e681f83cd53640866ce5b3bf74efc6377f0e65c32d41351cad24ceee4e469",
+      "contentSha256": "7d48b4d3163d177a47015fa36b88c16cf0c1768cfc6b75cf496eb5b371c4da26",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1613,7 +1630,7 @@ export default {
       "questionId": "u06-s007-v010",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "0cd039dce62e4eb63201a26a6e6d622ab4f4ac790cfa24c8914fcae73c0358dc",
+      "contentSha256": "9f733d95daa2bd15ecb54c2ceeba8df3431569fa65916cf08be581ee0b1fd332",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1650,7 +1667,7 @@ export default {
       "questionId": "u06-s007-v011",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "d081fa2d8cde7d5f120382d9c83ee52514c1d35c66a0b683fe65d823a6c4faa5",
+      "contentSha256": "57984552d80606a6ecb2815b5a895571c86cd1330dab1c74498707e7e70d606e",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1687,7 +1704,7 @@ export default {
       "questionId": "u06-s007-v012",
       "unitId": "u06",
       "skillId": "inverse-variation-graph",
-      "contentSha256": "cf55e82e8c3325d0a5e017e721aa1c700c56f21495281d413920629ea6743fb9",
+      "contentSha256": "18e1240e40bb12f7011b6e30f676d4fc10126f708ddfc5a00e6fd0e01249fdaa",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1784,11 +1801,11 @@ export default {
       "ticksUnitsArrows": "座標軸只有正向箭頭，無等距刻度與物理單位；點座標直接標示。",
       "toScale": false,
       "visualInferenceWarning": "曲線為概念示意，未標示的座標值不得靠視覺估讀；應使用 xy＝12 計算。",
-      "altText": "第一象限反比曲線 y 等於 12 除以 x，標出一逗號十二、二逗號六、三逗號四、四逗號三和六逗號二，曲線遞減並靠近兩軸。",
+      "altText": "第一象限座標示意圖：黑色遞減曲線靠近但不接觸兩軸，曲線上標出(1,12)、(2,6)、(3,4)、(4,3)、(6,2)，圖下提醒不可由外觀估讀未標數值。",
       "svgTitle": "反比關係 y 等於 12 除以 x 的第一象限示意圖",
-      "svgDesc": "第一象限中五個乘積均為十二的點與遞減反比曲線。",
-      "mobileReadabilityReview": "畫布縮到手機寬度時，座標標籤彼此保持至少 20 px 原始間距；底部警語可換行顯示而不遮圖。",
-      "answerLeakageReview": "圖提供定義性座標以便判讀，但不直接寫出任何題目的選項答案；題目仍須檢查乘積或圖形特徵。",
+      "svgDesc": "第一象限座標示意圖：黑色遞減曲線靠近但不接觸兩軸，曲線上標出(1,12)、(2,6)、(3,4)、(4,3)、(6,2)，圖下提醒不可由外觀估讀未標數值。",
+      "mobileReadabilityReview": "以360 px寬顯示時，五個座標標籤與曲線保有可辨間距，底部警語可換行且不遮住座標軸或標示點。",
+      "answerLeakageReview": "此圖只由講義引用，用於說明第一象限反比分支；題庫題目已移除共用figureId，因此替代文字與座標標籤不會直接揭露任何選項答案。",
       "manualVisualInspection": {
         "status": "pass-after-two-repairs",
         "inspectionNote": "第一次轉譯修正透明背景；第二次轉譯發現點未貼合曲線，重設座標與路徑後，五點均落在線上，標籤不重疊，兩軸箭頭與底部警語完整可見。"
@@ -1802,10 +1819,11 @@ export default {
       ],
       "figureReview": {
         "decision": "pass",
-        "reviewNote": "實際轉譯共修正背景可讀性與點線不一致兩項問題；最終五點皆滿足 xy＝12 且落在遞減曲線上，曲線未碰觸座標軸，也未提供未標座標的精確讀值。"
+        "reviewNote": "逐項核對SVG與drawing spec的五個座標、曲線、兩軸和警語；alt與desc描述同一第一象限內容，手機及黑白列印均不依賴色彩，且題庫不再引用此講義圖。"
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "contentSha256": "bea7f40268a57c5a7d8495e04d4673dce64dc2912edc05d9cf4ba06f3f55122d"
+      "contentSha256": "293755239996657fc0d096ba2b62ee3177259c0d963cbc5bc7c7436f483fa315",
+      "printReadabilityReview": "以A4黑白列印並縮至版心寬度時，4 px曲線、3 px座標軸與實心標示點仍可區分；所有資訊不依賴顏色，文字維持可讀對比。"
     }
   ]
 };

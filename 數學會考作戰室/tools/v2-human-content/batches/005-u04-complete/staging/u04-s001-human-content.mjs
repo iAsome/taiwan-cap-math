@@ -120,59 +120,76 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "判斷 3x-2y=7。",
+      "exampleId": "u04-s001-example-a",
+      "prompt": "判斷 4a-3b=9 是否為二元一次方程式。",
       "solutionSteps": [
-        "有等號。",
-        "未知數為 x、y。",
-        "x、y 都是一次且沒有相乘。"
+        "式中有等號，未知數為 a、b。",
+        "a、b 都只以一次項出現，係數皆不為零。"
       ],
-      "answer": "是二元一次方程式。"
+      "answer": "是二元一次方程式。",
+      "why": "等號、兩種未知數與一次項三項條件都成立；負係數不影響一次性質，也沒有未知數相乘、位於分母或高次項，因此符合完整定義。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "判斷 x+y=xy。",
+      "exampleId": "u04-s001-example-b",
+      "prompt": "判斷 r+s²=10 的類型。",
       "solutionSteps": [
-        "右邊含 xy。",
-        "xy 是兩個未知數相乘，總次數為 2。"
+        "確認有 r、s 兩個未知數與等號。",
+        "辨認 s² 的最高次數為二。"
       ],
-      "answer": "不是二元一次方程式。"
+      "answer": "不是二元一次方程式。",
+      "why": "雖然式中確實有兩個未知數，但 s 以平方項出現，違反每個未知數最高次數為一的要求。未知數種類正確不足以補救次數錯誤。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "判斷 2(x+y)-x=5。",
+      "exampleId": "u04-s001-example-c",
+      "prompt": "先化簡 3(m+n)-2m=7，再判斷類型。",
       "solutionSteps": [
-        "展開得 2x+2y-x=5。",
-        "合併成 x+2y=5。"
+        "展開為 3m+3n-2m=7。",
+        "合併為 m+3n=7，再檢查未知數與次數。"
       ],
-      "answer": "整理後仍是二元一次方程式。"
+      "answer": "整理後是二元一次方程式。",
+      "why": "括號展開與同類項合併後，m、n 都仍保留，且各自只以一次項出現。判斷整理後形式可避免把括號錯當成非一次的理由。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "判斷 x+y=x-y+4。",
+      "exampleId": "u04-s001-example-d",
+      "prompt": "方程式 (c+1)p-4q=8 要實際含 p、q，c 有何限制？",
       "solutionSteps": [
-        "兩邊同減 x 得 y=-y+4。",
-        "整理成 2y=4，只剩 y。"
+        "q 的係數 -4 已不為零。",
+        "要求 p 的係數 c+1≠0，所以 c≠-1。"
       ],
-      "answer": "整理後不是實際含兩元的方程式。"
+      "answer": "c 不可等於 -1。",
+      "why": "當 c=-1 時，p 的係數變成零，方程式只剩 -4q=8，不再實際包含兩元。其他 c 值保留 p、q，且兩者次數仍為一，這正是參數邊界需要另行檢查的原因。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "只看到 x、y 就判定是二元一次",
-      "correction": "還要檢查等號與次數。"
+      "mistake": "只看到兩個不同字母就判定為二元一次。",
+      "why": "沒有檢查等號、未知數次數與乘積。",
+      "correction": "先化簡，再逐一核對等號、種類及最高次數。"
     },
     {
-      "mistake": "把 xy 當成兩個一次項",
-      "correction": "xy 是乘積，不是 x 項加 y 項。"
+      "mistake": "把分數係數視為分母含未知數。",
+      "why": "混淆數字係數與未知數所在位置。",
+      "correction": "確認分母若只是數字，仍可形成合法的一次項。"
     },
     {
-      "mistake": "不先化簡",
-      "correction": "化簡後可能有未知數消失。"
+      "mistake": "看到括號就判定不是一次。",
+      "why": "未使用分配律確認括號展開後的次數。",
+      "correction": "完整展開並合併同類項後再分類。"
     },
     {
-      "mistake": "認為係數是分數就不是一次",
-      "correction": "係數可為整數、分數或小數，只要未知數次數為 1。"
+      "mistake": "忽略等式兩邊相同項可能抵消。",
+      "why": "只依原式外觀計算未知數種類。",
+      "correction": "把方程式整理到等價的簡式再檢查實際未知數。"
+    },
+    {
+      "mistake": "參數係數為零時仍算該未知數存在。",
+      "why": "把符號位置誤當成非零項。",
+      "correction": "求出每個參數係數為零的值並排除。"
+    },
+    {
+      "mistake": "因為題目有生活情境就不做代數分類。",
+      "why": "把文字背景誤當成方程式性質。",
+      "correction": "完成建模後仍依相同的等號、種類與次數判準。"
     }
   ],
   "selfCheck": [
@@ -216,7 +233,40 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "1b312439695d757e953bfc7616955f6c98399d993047767a9a883fa9df93e8d1"
+  "contentSha256": "20aa7171ff4c371ff02be66c1aa94582dd053df7b439ebf1e0da7edf565e85eb",
+  "conceptNarrative": [
+    "二元一次方程式是含有等號的代數關係，整理後實際包含兩種未知數，而且每個未知數都只以一次項出現。判斷對象是整個方程式化簡後的結構，不是只數表面出現幾個字母。",
+    "係數可以是正數、負數、分數、小數或參數；係數形式不會改變一次的性質。但未知數不能相乘、不能出現在分母，也不能有平方等高次項，否則不符合一次方程式。",
+    "括號與等式兩邊的同類項可能遮住真正形式，所以應先用分配律展開、合併同類項，再做分類。有時整理後某個未知數完全抵消，原本看似二元的式子就只剩一元。",
+    "在本單元採用「實際含兩元」的判準，因此 ax+by=c 中 a、b 都須不為零。若參數使任一係數為零，對應未知數便消失；情境題仍須依相同代數判準，不因文字背景而例外。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "先確認式子具有等號，因為沒有等號的代數式不是方程式。",
+      "check": "左右兩邊及等號位置都已辨認，沒有把運算符號誤當等號。"
+    },
+    {
+      "step": 2,
+      "instruction": "用分配律展開括號並合併等號同側的同類項。",
+      "check": "括號外係數已乘每一項，合併後仍維持等式等價。"
+    },
+    {
+      "step": 3,
+      "instruction": "必要時在等式兩邊做相同運算，觀察是否有未知數抵消。",
+      "check": "沒有只移動單邊項目，整理後未知數種類已確定。"
+    },
+    {
+      "step": 4,
+      "instruction": "檢查保留的未知數是否恰有兩種，且最高次數都是一。",
+      "check": "已排除平方、未知數乘積與未知數位於分母的情形。"
+    },
+    {
+      "step": 5,
+      "instruction": "若係數含參數，再找出會使任一未知數係數為零的邊界值。",
+      "check": "所有排除值都已代回確認，結論符合實際含兩元的判準。"
+    }
+  ]
 };
 
 export const QUESTIONS = [
@@ -241,11 +291,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "逐項檢查後，只有 2x+3y=7 有等號、兩個未知數且皆為一次。",
-    "explanation": "二元一次方程式必須有兩種未知數、等號，且沒有平方或未知數相乘。",
+    "explanation": "二元一次方程式須有等號、實際包含兩種未知數，且每個未知數的次數都是一。選項 2x+3y=7 同時符合；其餘分別缺等號、含平方項或含未知數乘積，因此只有第一項正確。",
     "steps": [
-      "先找等號。",
-      "確認未知數是 x、y。",
-      "檢查每個未知數次數均為 1。"
+      "逐項確認是否具有等號。",
+      "檢查是否實際含 x、y 兩種未知數。",
+      "排除含平方項或 xy 乘積的式子，選出 2x+3y=7。"
     ],
     "optionAnalysis": [
       {
@@ -269,7 +319,7 @@ export const QUESTIONS = [
         "reason": "含未知數乘積 xy。"
       }
     ],
-    "misconceptionTarget": "只看到兩個字母就忽略次數",
+    "misconceptionTarget": "只數出兩個字母，卻沒有檢查等號、次數與未知數乘積。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -282,7 +332,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "8fcce3c756b89c6a32de102d215991bbbe7ffae553c835585d80f0ef1899a38c"
+    "contentSha256": "5013046211ac4c3b003b53a49da501633c5b9e0ae7298efcf48a20bc6297ed5b"
   },
   {
     "questionId": "u04-s001-v002",
@@ -305,10 +355,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "未知數字母只有 a、b，因此共有 2 種。",
-    "explanation": "係數與常數不算未知數；只數不同的未知數字母。",
+    "explanation": "式中的字母 a 與 b 是待定的未知數，所以共有兩種未知數。數字五、二是係數，九是常數；它們雖然都是方程式的一部分，卻不是未知數，不能一起計入種類數。",
     "steps": [
-      "列出字母 a、b。",
-      "排除數字係數與常數。"
+      "找出式中出現的字母 a、b。",
+      "確認 a 與 b 是兩個不同的未知數。",
+      "排除係數 5、2 與常數 9，得到兩種。"
     ],
     "optionAnalysis": [
       {
@@ -332,7 +383,7 @@ export const QUESTIONS = [
         "reason": "把係數 5 當未知數種類。"
       }
     ],
-    "misconceptionTarget": "把係數或常數視為未知數",
+    "misconceptionTarget": "把係數五、二或等號右邊的常數九也算成未知數。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -345,7 +396,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "fc58b60fb69165529f33cdc82054a5da8e1176de098d6548515cb72e0cc66d75"
+    "contentSha256": "d3e8ca2003e9ae5fcccc851624bcd5030cdd64bd1bb10192d3e092bd58661d4c"
   },
   {
     "questionId": "u04-s001-v003",
@@ -368,11 +419,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "y² 表示 y 的最高次數為 2，違反一次條件。",
-    "explanation": "一次方程式中未知數最高次數必須是 1。",
+    "explanation": "x+y²=4 有等號，也含 x、y 兩種未知數，但 y 的指數為二。二元一次方程式要求每個未知數的最高次數都是一，因此平方項 y² 已使它成為非一次方程式。",
     "steps": [
-      "辨認 y²。",
-      "判定 y 的次數為 2。",
-      "因此排除。"
+      "確認式中有等號與 x、y 兩種未知數。",
+      "辨認 y² 表示 y 的次數是二。",
+      "依一次方程式的次數判準排除這個式子。"
     ],
     "optionAnalysis": [
       {
@@ -396,7 +447,7 @@ export const QUESTIONS = [
         "reason": "常數項可以是任何數。"
       }
     ],
-    "misconceptionTarget": "誤認只要有兩個未知數就符合",
+    "misconceptionTarget": "看到 x、y 兩個未知數就直接判定為二元一次，忽略 y²。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -409,7 +460,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "215b08f58f93e4b43302a188c0375d8a0ecb9e711d85315c8ce8a36a9c95a6fa"
+    "contentSha256": "28aca66c5f51600dd3678ac4d5443b1941585de54b767e2b8352eb1c13fde507"
   },
   {
     "questionId": "u04-s001-v004",
@@ -432,11 +483,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開得 2x+2y-x=5，即 x+2y=5，仍含 x、y 且皆一次。",
-    "explanation": "應先展開與合併同類項，再依整理後形式判斷。",
+    "explanation": "先以分配律展開 2(x+y)-x=5，得到 2x+2y-x=5，再合併 x 的同類項為 x+2y=5。整理後有等號、含 x 與 y，兩者皆為一次，所以是二元一次方程式。括號只是運算結構，不會自行提高未知數次數。",
     "steps": [
-      "展開括號。",
-      "合併 x 項。",
-      "檢查未知數種類與次數。"
+      "展開括號，寫成 2x+2y-x=5。",
+      "合併 x 項，化為 x+2y=5。",
+      "檢查兩種未知數皆為一次，判定類型。"
     ],
     "optionAnalysis": [
       {
@@ -460,7 +511,7 @@ export const QUESTIONS = [
         "reason": "化簡為 x+2y=5，符合定義。"
       }
     ],
-    "misconceptionTarget": "只看原式括號而不化簡",
+    "misconceptionTarget": "未先展開與合併同類項，只憑原式有括號就誤判類型。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -473,7 +524,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4e834e0724aba06a0ecb7740c8bc932c17749624ff17be6c1754d4bb67b58152"
+    "contentSha256": "59dee34ca4ec3b7c6f59eed877052921857d09a652a427f3953369a535a170db"
   },
   {
     "questionId": "u04-s001-v005",
@@ -496,11 +547,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "兩邊同減 x 得 y=-y+4，再兩邊同加 y 得 2y=4。",
-    "explanation": "化簡後 x 消失，只剩一元方程式。",
+    "explanation": "等式 x+y=x-y+4 的兩邊同減 x，可得 y=-y+4；接著兩邊同加 y，得到 2y=4。x 項在合法的等量運算中抵消，所以化簡結果只剩未知數 y。回代 y=2 可再次核對原等式兩邊相等。",
     "steps": [
-      "兩邊同減 x。",
-      "兩邊同加 y。",
-      "得到 2y=4。"
+      "在等式兩邊同減 x，得到 y=-y+4。",
+      "在等式兩邊同加 y，得到 y+y=4。",
+      "合併同類項，寫成 2y=4。"
     ],
     "optionAnalysis": [
       {
@@ -524,7 +575,7 @@ export const QUESTIONS = [
         "reason": "y 項不會全部消失。"
       }
     ],
-    "misconceptionTarget": "移項時未對兩邊做同樣運算",
+    "misconceptionTarget": "移項時只改某一邊或漏改符號，因而留下不應存在的 x 項。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -537,7 +588,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f0f5e556187268ae5b08696c614d45f094c7634169321a7d052bb693c7f4b1e2"
+    "contentSha256": "b7575c64488208e99c0730a2ce0b167c0cc5998e1cf55e7f6d0b2a85f40a1cac"
   },
   {
     "questionId": "u04-s001-v006",
@@ -560,10 +611,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "x/y 中 y 位於分母，不能整理成兩未知數皆一次的 ax+by=c。",
-    "explanation": "係數可以是分數或小數，但未知數不可出現在分母。",
+    "explanation": "係數可以是整數、分數或小數，因此 (1/2)x+3y=4、0.3m-n=8 與 -p+5q=0 都可為二元一次方程式。x/y+2x=3 把未知數 y 放在分母，不能整理成兩未知數皆一次的形式。",
     "steps": [
-      "區分「分數係數」與「未知數在分母」。",
-      "檢查 x/y。"
+      "先接受分數與小數都可作為係數。",
+      "逐式檢查未知數是否只以一次項出現。",
+      "找出 y 位於分母的 x/y+2x=3。"
     ],
     "optionAnalysis": [
       {
@@ -587,7 +639,7 @@ export const QUESTIONS = [
         "reason": "負係數仍可。"
       }
     ],
-    "misconceptionTarget": "看到分數線就一律判錯",
+    "misconceptionTarget": "把分數係數和未知數位於分母混為一談，看到分數線就排除。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -600,7 +652,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4c77945ace13312acc96a772b75b14f87055d8b9fad1e5ae2979aa553395408b"
+    "contentSha256": "55b9e05375ade3cd9b29706acad62baa7fc3964121d18a10540adcb323685da5"
   },
   {
     "questionId": "u04-s001-v007",
@@ -623,11 +675,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "x 的係數 k-2 必須非 0；k-2=0 得 k=2。",
-    "explanation": "若 x 係數變成 0，整理後只剩 y，不再實際含兩元。",
+    "explanation": "要讓方程式實際包含 x，x 的係數 k-2 必須不為零；y 的係數三已確定不為零。當 k=2 時，k-2=0，x 項消失而只剩 3y=7，所以應排除 k=2。其餘選項都讓 x 係數保持非零。",
     "steps": [
-      "令 x 係數不為 0。",
-      "找使 k-2=0 的值。",
-      "排除 k=2。"
+      "辨認 x 的係數是 k-2。",
+      "求出使 k-2=0 的數值為 k=2。",
+      "確認此時 x 項消失，因此 k 不可等於二。"
     ],
     "optionAnalysis": [
       {
@@ -651,7 +703,7 @@ export const QUESTIONS = [
         "reason": "k=-2 時 x 係數為 -4。"
       }
     ],
-    "misconceptionTarget": "忽略係數可能為零",
+    "misconceptionTarget": "只看到原式寫有 x、y，沒有檢查參數是否會使 x 係數變成零。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -664,7 +716,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "9fae0a84671f19c6d4f1e19a34e3d0806d8682f2660effcb2fe923ff694b7364"
+    "contentSha256": "0ecea71d1672d6f8c4ca757eaa0a501a72b6107013e36e82b9ef9ff8b7f18eb5"
   },
   {
     "questionId": "u04-s001-v008",
@@ -687,11 +739,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "乘法公式得 x²-y²=5，含二次項。",
-    "explanation": "括號相乘可能產生高次項，必須展開判斷。",
+    "explanation": "利用乘法公式展開 (x+y)(x-y)，結果是 x²-y²，因此原方程式成為 x²-y²=5。雖然每個括號內看似只有一次項，括號相乘後產生平方項，故不是二元一次方程式。",
     "steps": [
-      "展開乘積。",
-      "辨認 x²、y²。",
-      "判定非一次。"
+      "展開兩個括號的乘積。",
+      "整理得 x²-y²=5。",
+      "指出 x、y 的最高次數為二，因此排除一次類型。"
     ],
     "optionAnalysis": [
       {
@@ -715,7 +767,7 @@ export const QUESTIONS = [
         "reason": "乘積展開產生二次項。"
       }
     ],
-    "misconceptionTarget": "只看每個括號內都是一次就誤判",
+    "misconceptionTarget": "分別查看括號內都是一次項，卻沒有展開括號相乘後的平方項。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -728,7 +780,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "17be58c6da8dde73781953f261114a3fdb972d9e7b791583943dedc991ac70fa"
+    "contentSha256": "e69b2bb401ba7870a7fa978d6c7bfa9cd30f52b427efc4911edaebdb32b4de9f"
   },
   {
     "questionId": "u04-s001-v009",
@@ -751,11 +803,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "實際含 x、y 要求 a、b 皆非 0；a=0、b=5 只剩 5y=6。",
-    "explanation": "兩個係數中任一為 0 都會使對應未知數消失。",
+    "explanation": "依題目所採的「實際含兩元」判準，x 與 y 的係數都必須不為零。當 a=0、b=5 時，方程式化為 5y=6，x 項完全消失，只剩一個未知數，所以一定不符合。",
     "steps": [
-      "檢查 a 是否為 0。",
-      "檢查 b 是否為 0。",
-      "確認兩元都實際出現。"
+      "把 a=0、b=5 代入一般式 ax+by=6。",
+      "化簡為 5y=6，觀察 x 項已消失。",
+      "依實際含 x、y 的要求判定這組不符合。"
     ],
     "optionAnalysis": [
       {
@@ -779,7 +831,7 @@ export const QUESTIONS = [
         "reason": "分數與負係數皆可。"
       }
     ],
-    "misconceptionTarget": "誤以為一般形式允許任一係數為零仍算實際兩元",
+    "misconceptionTarget": "誤以為一般式中寫了 ax，就算 a=0 仍然實際包含未知數 x。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -792,7 +844,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "72bcd0814efe917b35aea6fd952aa23a02ff40e36c1a0fedd07887733e393d83"
+    "contentSha256": "cddc19405c0a473f187859cb84720ad706aa34eb58425ca64012e99aea04d0f8"
   },
   {
     "questionId": "u04-s001-v010",
@@ -815,11 +867,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "成人費用為 120x，學生費用為 80y，總收入相加為 4000。",
-    "explanation": "情境中的「單價×人數」形成一次項，兩類費用相加。",
+    "explanation": "成人每人一百二十元且有 x 人，成人費用是 120x；學生每人八十元且有 y 人，學生費用是 80y。兩類費用相加等於總額四千元，所以模型為 120x+80y=4000。",
     "steps": [
-      "定義兩類人數。",
-      "各自乘單價。",
-      "總額設為 4000。"
+      "以單價乘人數，寫出成人費用 120x。",
+      "寫出學生費用 80y。",
+      "把兩類費用相加並令其等於 4000。"
     ],
     "optionAnalysis": [
       {
@@ -843,7 +895,7 @@ export const QUESTIONS = [
         "reason": "把兩類人數相乘。"
       }
     ],
-    "misconceptionTarget": "忽略單價與人數的配對",
+    "misconceptionTarget": "把單價直接相加，或沒有讓成人、學生單價與各自人數正確配對。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "120 元/人×人與 80 元/人×人皆為元，左右單位一致。",
@@ -856,7 +908,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "3bbfffcd5bd701481d1f9222ba56cbd371bc0a6f5649e80970c94d5fdc72a023"
+    "contentSha256": "890f79fdc971f368cca6634b1797d8606d546fc75d9d91f216a2aa80d6095fff"
   },
   {
     "questionId": "u04-s001-v011",
@@ -879,11 +931,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "2 箱 A 重 2x，3 箱 B 重 3y，合計 41。",
-    "explanation": "箱數乘每箱重量後相加，得到方程式。",
+    "explanation": "A 箱每箱重 x 公斤，兩箱的重量是 2x；B 箱每箱重 y 公斤，三箱的重量是 3y。兩批箱子的總重量為四十一公斤，因此應寫成 2x+3y=41。等式左右兩邊的單位都同為公斤。",
     "steps": [
-      "辨認每箱重量。",
-      "乘上箱數。",
-      "合計等於 41。"
+      "用兩箱乘每箱重量，得到 A 箱總重 2x。",
+      "用三箱乘每箱重量，得到 B 箱總重 3y。",
+      "相加並對應總重，列出 2x+3y=41。"
     ],
     "optionAnalysis": [
       {
@@ -907,7 +959,7 @@ export const QUESTIONS = [
         "reason": "缺少等號與總重量。"
       }
     ],
-    "misconceptionTarget": "把箱數忽略或把兩重量相乘",
+    "misconceptionTarget": "忽略箱數只寫 x+y，或把兩類重量錯誤相乘成 xy。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "箱×公斤/箱=公斤，左右皆為公斤。",
@@ -920,7 +972,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "48dbb056e305b7984cce9a3f55d5324f3be9c94c7c427fb24b1ba5f072aee435"
+    "contentSha256": "a5ed5145bb5c17c67f227ae25930031577ea5b2a0a1141fc86e61fd89d13eeae"
   },
   {
     "questionId": "u04-s001-v012",
@@ -943,11 +995,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "xy=200 含兩未知數相乘，總次數為 2；x+y=30 是一次。",
-    "explanation": "試算表中的乘積符號改變了模型類型。",
+    "explanation": "x+y=30 的兩個未知數都只以一次項出現，符合二元一次方程式。xy=200 則含 x 與 y 的乘積，其總次數為二，商品數量的情境不會改變代數結構，所以第二欄不是。",
     "steps": [
-      "逐欄檢查。",
-      "辨認 xy 是乘積。",
-      "保留 x+y=30。"
+      "檢查 x+y=30，確認兩項皆為一次。",
+      "辨認 xy=200 含未知數相乘。",
+      "依代數結構判定 xy=200 不是二元一次方程式。"
     ],
     "optionAnalysis": [
       {
@@ -971,7 +1023,7 @@ export const QUESTIONS = [
         "reason": "未知數乘積 xy 不符合一次形式。"
       }
     ],
-    "misconceptionTarget": "把商品情境誤當成所有公式都線性",
+    "misconceptionTarget": "因為兩欄都描述商品數量，就忽略 xy 是乘積而把兩式視為同類。",
     "prerequisiteCheck": "只需先備 等號與一次式基本概念，並使用本技能「二元一次方程式的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -984,7 +1036,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "760934fc66c251761ea431cb81c796287bde864aadcf3c008851a45a943746a4"
+    "contentSha256": "6b2fb4d13c92f191e7889588d7cc9750205fe8059211568f28d6d0cf66d1f32a"
   }
 ];
 
@@ -1003,20 +1055,17 @@ export const CONSTRUCTED_RESPONSES = [
       "理由必須指出等號、未知數種類或次數。"
     ],
     "standardSolution": [
-      "①是：含 x、y，皆一次且有等號。",
-      "②否：含 x²。",
-      "③否：沒有等號。",
-      "④否：n 在分母。",
-      "⑤是：化簡為 p+2q=6。",
-      "⑥否：化簡為 2y=4，只剩一元。"
+      "① 3x-2y=7 是二元一次方程式：具有等號，且 x、y 都只以一次項出現。② x²+y=4 不是，因為 x 的最高次數是二。",
+      "③ 2a+5b 不是方程式，因為缺少等號。④ m/n+n=1 不是二元一次方程式，因為未知數 n 出現在分母。",
+      "⑤ 2(p+q)-p=6 展開後為 p+2q=6，確實是二元一次方程式。⑥ x+y=x-y+4 化簡為 2y=4，實際只剩一元，因此不符合本單元判準。"
     ],
     "alternativeMethods": [
       "可將所有式子整理成 ax+by=c 再檢查兩係數是否非 0。"
     ],
     "reasoningSteps": [
-      "逐式檢查等號。",
-      "整理括號與同類項。",
-      "檢查未知數是否恰有兩種且皆一次。"
+      "逐式先確認是否有等號，再辨認實際保留的未知數種類。",
+      "展開括號、合併同類項與消去等號兩邊的相同項後，再看整理後形式。",
+      "檢查未知數是否皆為一次，且沒有平方、未知數乘積或未知數位於分母。"
     ],
     "rubric": [
       {
@@ -1054,7 +1103,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "2ec85abefd796b61dc0af6b8134f6aa1fd871d27de3af4ade4505ceb4b4f3d20"
+    "contentSha256": "4800f675ecb1f7723409d5fc2218bfbdc2f2b009b29ee0bf6c0d66236fbb66d6",
+    "commonErrors": [
+      "看到式中有兩個字母就判定為二元一次，沒有檢查等號與次數。",
+      "把未知數位於分母誤當成一般分數係數，因而錯判第四式。",
+      "未化簡第五、六式便依原本外觀判斷，忽略未知數可能合併或消失。"
+    ]
   },
   {
     "questionId": "u04-s001-cr002",
@@ -1070,16 +1124,17 @@ export const CONSTRUCTED_RESPONSES = [
       "答案用不等於條件表示。"
     ],
     "standardSolution": [
-      "x 係數 k-1≠0，所以 k≠1。",
-      "y 係數 k+2≠0，所以 k≠-2。",
-      "因此 k≠1 且 k≠-2。"
+      "要實際包含 x，x 的係數 k-1 必須不為零，因此 k-1≠0，可得 k≠1。",
+      "要實際包含 y，y 的係數 k+2 也必須不為零，因此 k+2≠0，可得 k≠-2。",
+      "兩項限制須同時成立，所以答案是 k≠1 且 k≠-2；其他 k 值都使兩個未知數保留且次數為一。"
     ],
     "alternativeMethods": [
       "可分情況說明 k=1 時只剩 y，k=-2 時只剩 x，其餘均為二元一次。"
     ],
     "reasoningSteps": [
-      "把“實際含兩元”轉成兩係數非 0。",
-      "分別解兩個不等式。"
+      "把「實際含 x、y 兩元」轉換成兩個未知數的係數皆不為零。",
+      "分別解 k-1≠0 與 k+2≠0，得到兩個應排除的參數值。",
+      "取兩項限制的交集，並代入邊界值確認各自會使一個未知數消失。"
     ],
     "rubric": [
       {
@@ -1117,7 +1172,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6ad93cbce9f0f380f4caf86a4554713d689fc7bcbb6a7cede2704f91d93ea9f1"
+    "contentSha256": "da65de997e5348d44f9b829bb91623386a2e4997c0f53a5cde449b467112a237",
+    "commonErrors": [
+      "只限制 k-1 不為零，忘記 y 的係數 k+2 也可能等於零。",
+      "解 k+2≠0 時把排除值寫成正二，移項符號處理錯誤。",
+      "以為 x、y 寫在原式中就一定存在，沒有檢查係數為零的情形。"
+    ]
   }
 ];
 

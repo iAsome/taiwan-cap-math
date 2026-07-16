@@ -1,0 +1,34 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u08",
+  "batch":"009-u08-complete",
+  "skills":["s014"],
+  "mc":[
+    {"questionId":"u08-s014-v001","expectedContentSha256":"6718aa12fadf674613a4399c175ddf5887d0a6cbdc29bc24b9552d4284f0b461","appendText":{"explanation":"長方形有兩條八十公尺邊與兩條五十公尺邊，周長二百六十公尺；四千是面積，不能作為一維欄杆長度。","misconceptionTarget":"也可能只加長與寬得到一百三十，漏掉對邊各有兩條。"},"appendArray":{"steps":["將四邊長八十、五十、八十、五十相加。","以長度單位公尺排除面積選項。"]}},
+    {"questionId":"u08-s014-v002","expectedContentSha256":"5973e433dee59a64037e4f315f23a8e93a849a45c4dc905d1f9aad1122f56c0c","appendText":{"explanation":"到線段兩端距離相同的所有平面點恰形成垂直平分線；中點只是這條線上的一點，任意垂線或圓都不能保證同時等距。","misconceptionTarget":"還可能只選甲乙中點，忽略救援站的可能位置是一整條軌跡。"},"appendArray":{"steps":["把兩村視為線段的兩個端點。","用等距軌跡的正反性質核對垂直平分線。"]}},
+    {"questionId":"u08-s014-v003","expectedContentSha256":"a9b1b6c11d9d9070c3d679d283f86a76ddf2fbeda572ecdc21374832a796ea67","appendText":{"explanation":"地墊要覆蓋地面內部區域，需求量與面積成正比；九乘七得六十三平方公尺，周長只描述邊界長度。","misconceptionTarget":"也可能因題目給長與寬便計算周長，沒有先辨認鋪滿的語意。"},"appendArray":{"steps":["由鋪滿判定量的種類是面積。","檢查九公尺乘七公尺的單位為平方公尺。"]}},
+    {"questionId":"u08-s014-v004","expectedContentSha256":"3b96819da5ded6b8881ad8e4466ae5b24ae811be827b5595017580ac52d52fa2","appendText":{"explanation":"整板面積二十四平方公尺，開口換成零點八乘零點五公尺後面積零點四；兩者相減為二十三點六，反加開口可回到二十四。","misconceptionTarget":"也可能把八十乘五十直接從二十四扣除，混合平方公分與平方公尺。"},"appendArray":{"steps":["以相同平方公尺單位相減。","用剩餘二十三點六加開口零點四驗證整板面積。"]}},
+    {"questionId":"u08-s014-v005","expectedContentSha256":"463064d5ecc1f33e52da7f984478b85277d58072ed00e18eff103190c89633f9","appendText":{"explanation":"六邊形內角和為四乘一百八十等於七百二十度，正六邊形六角相等，再除六得每角一百二十度。","misconceptionTarget":"也可能把每個外角六十度直接當內角，忽略兩者互為補角。"},"appendArray":{"steps":["先由邊數六求內角和。","利用正六邊形等角條件平均分配。"]}},
+    {"questionId":"u08-s014-v006","expectedContentSha256":"1337588b84093291c91a0c74eed71e3d154321cde387fd4d2416523686bc51dc","appendText":{"explanation":"正視保留長十二與高五，俯視保留長十二與寬八，側視保留寬八與高五；三組恰是三個方向的兩兩配對。","misconceptionTarget":"也可能認為正視一定採最大面，無視題目已指定長乘高為正面。"},"appendArray":{"steps":["每個視圖刪去沿視線的一個方向。","檢查三種兩兩配對各出現一次且沒有重複。"]}},
+    {"questionId":"u08-s014-v007","expectedContentSha256":"a1f20ba2b9892a35f262abc08c630ae8536b71879b3e56397329f63bac2e2ce7","appendText":{"explanation":"長的允許區間是三點九八到四點零二，四點零一在內；寬的區間是二點四八到二點五二，二點四七低於下限，所以只有寬不合格。","misconceptionTarget":"也可能把兩邊誤差合併成一個總誤差，沒有逐一檢查長與寬。"},"appendArray":{"steps":["分別建立兩個含端點的閉區間。","將兩個量測值各自與對應上下限比較。"]}},
+    {"questionId":"u08-s014-v008","expectedContentSha256":"fd8b62b9ad2314b3aaca73dd7d4f5c90ad07dd6751a74f50f36f0ec12fe28d6b","appendText":{"explanation":"外側一公尺使總長左右各增一而成十二，總寬上下各增一而成八；外框九十六扣花圃六十，得到步道三十六平方公尺。","misconceptionTarget":"也可能只在長與寬各加一，漏掉步道位於原花圃的兩側。"},"appendArray":{"steps":["由四周環繞判斷每個方向增加兩公尺。","以面積差計算角落區域，不用周長乘寬近似。"]}},
+    {"questionId":"u08-s014-v009","expectedContentSha256":"7dda035c72ef947fe5cd6a9be991fa178a915d2ec94932dc724464dafce42782","appendText":{"explanation":"俯視六個占用位置各至少含一個方塊，最低已是六；設計宣稱只有五塊直接違反下界，無須再使用最高三層安排。","misconceptionTarget":"也可能看到兩個最高值都是三便以為五塊能透過遮蔽達成。"},"appendArray":{"steps":["用占用格數建立不可低於六的下界。","比較宣稱總數五並判定矛盾。"]}},
+    {"questionId":"u08-s014-v010","expectedContentSha256":"923030bc007d5152b87f4a60f62913efec8f3e7ab18ed47e7005303db2ebf289","appendText":{"explanation":"等距條件給出甲乙連線的垂直平分線，施工條件給出指定步道；候選點必同時屬於兩者，所以取交點，沒有交點時就沒有可行位置。","misconceptionTarget":"也可能只找甲乙中點，卻沒有檢查該點是否位於指定步道。"},"appendArray":{"steps":["把兩項條件分別表示成兩個點集合。","取集合交集並補充平行無交點時無方案。"]}},
+    {"questionId":"u08-s014-v011","expectedContentSha256":"2dcbd55089d7cd6657f04ce55be3b7284985ffe2fdea70097b978cfd16b2babb","set":{"independentSolution":"令四格座標為(x,y)。取h(1,2)=3、h(2,1)=2，另兩格各1，則正視欄高為[3,2]、側視列高為[2,3]，總數3+2+1+1=7。"},"appendText":{"explanation":"四格底層先用四個，三高堆增加二個，另一交叉位置的二高堆增加一個，總數七；明示座標的配置可同時重算兩個指定序列。","misconceptionTarget":"也可能給出矩陣卻未定義列欄方向，造成實際輪廓與文字序列互換。"},"appendArray":{"steps":["指定三高堆在第一欄第二列、二高堆在第二欄第一列。","逐欄與逐列取最大值，驗證兩序列沒有互換。"]}},
+    {"questionId":"u08-s014-v012","expectedContentSha256":"1b82292ff6bbc0487c9221f4c8019701c9c5543bba758754699425c81a5f622c","appendText":{"explanation":"廣場九十六平方公尺扣花圃八平方公尺，實鋪八十八；除每箱五得十七點六，十七箱只鋪八十五不足，十八箱可鋪九十而達標。","misconceptionTarget":"也可能向下取整以避免剩料，卻忽略至少足夠鋪完的限制。"},"appendArray":{"steps":["比較十七箱覆蓋八十五與需求八十八。","確認十八是第一個覆蓋量不少於需求的整數箱數。"]}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u08-s014-cr001","expectedContentSha256":"af4f2ffa1e0ae070972d9435f12883e58426909315e4c3d47147cc948bb932d5","appendArray":{"standardSolution":["以反向檢查：五百七十六除每平方公尺三塊等於一百九十二平方公尺；圍欄六十公尺則等於兩倍的長寬和。"],"reasoningSteps":["分別用覆蓋量與四邊總長反查兩個結果。"],"commonErrors":["把中央花圃的周長從外圍圍欄扣掉，混淆內部保留區與最外邊界。"]}},
+    {"questionId":"u08-s014-cr002","expectedContentSha256":"844c022bd415cd4eea91f5b21be6eca3d1738be26d00992e15c139fb03f34f09","appendArray":{"standardSolution":["以座標配置h(1,2)=3、h(2,1)=2、其餘各1，逐欄得三、二，逐列得二、三；七乘零點零四確為零點二八平方公尺。"],"reasoningSteps":["用明示座標與乘法反查視圖及材料量。"],"commonErrors":["配置總數雖為七，卻把三高與二高放在同一列或欄而破壞指定輪廓。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u08-s014-lecture-r1","expectedContentSha256":"f8a480939a7b3f7566cb30ea77991fd6c123c13af086aff00df6127277befb92","appendArray":{"conceptDevelopment":["完成建模後應用單位維度、邊界值與可達配置三種方式驗證：長度不能與面積相加，規格端點要依是否含等號判斷，三視圖界值則須有實際配置可達。"],"stepByStepMethod":[{"step":5,"instruction":"用量綱、邊界值或可達配置做獨立驗證。","check":"數值正確之外，單位、限制詞與實際可行性也全部符合。"}]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"操場長 80 公尺、寬 50 公尺，只在外圍設置欄杆，需求量是哪一種幾何量？","solutionSteps":["圈出關鍵詞外圍與欄杆。","判定材料沿封閉邊界而非覆蓋內部。","因此選周長，若求數值則算二乘八十加五十。"],"answer":"周長。","why":"欄杆用量具有一維長度單位，對應四邊總長；面積具有平方單位且描述內部覆蓋，量綱檢查能排除誤用長乘寬。"},
+      {"exampleId":"L2","prompt":"兩村設置到兩村距離相同的救援點，其可能位置如何描述？","solutionSteps":["把兩村視為線段的兩個端點。","把到兩端等距寫成同一點到兩端距離相等。","套用等距點軌跡，得到連線的垂直平分線。"],"answer":"位於兩村連線的垂直平分線上。","why":"垂直平分線上的每一點都到兩端等距，反之等距點也必在此線上；答案是一整條可能位置集合，不只中點。"},
+      {"exampleId":"L3","prompt":"一塊 6 m×4 m 板材挖去 80 cm×50 cm 開口，求剩餘面積。","solutionSteps":["把八十公分、五十公分換成零點八公尺、零點五公尺。","整板面積二十四平方公尺，開口面積零點四平方公尺。","相減得二十三點六平方公尺，反加開口驗證。"],"answer":"23.6 平方公尺。","why":"兩個面積必須先用相同單位才能相減；先換長度再相乘可保證平方倍率正確，反加零點四也能核對區域分割。"},
+      {"exampleId":"L4","prompt":"某堆疊正視最高 4 層，但側視文字說每列最高至多 3 層，設計是否可行？","solutionSteps":["正視最高四表示存在一個實際四高堆。","該堆必定落在某一側視列中。","此列最高至少四，與側視每列至多三矛盾。"],"answer":"不可行。","why":"正視與側視雖從不同方向觀看，仍投影同一組高度；全域最高堆必在兩方向輪廓出現，所以四與至多三不能同時成立。"}
+    ]}}
+  ],
+  "drawingSpecs":[],
+  "textFiles":[]
+}

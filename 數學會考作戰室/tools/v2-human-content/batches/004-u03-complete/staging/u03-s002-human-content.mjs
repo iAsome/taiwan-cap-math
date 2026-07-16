@@ -50,10 +50,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "化簡不是求出未知數，而是把等價的項整理在一起。",
-    "只有同類項能合併，例如3x與-2x可合併，3x與4不能。",
-    "括號外的數要乘括號內每一項；括號前是負號時可視為乘-1。",
-    "情境式先按物件層級列出，再化簡，不能為了簡短而改變每份與總共的關係。"
+    "化簡一元一次式是把原式改寫成較精簡但對所有允許的未知數值都相等的式子，不是在求某個特定的 x，也不能為了簡短而任意刪除項。",
+    "只有未知數部分完全相同的同類項才能合併。ax 與 bx 可合成 (a+b)x，但含 x 的一次項與不含 x 的常數項必須分開保留。",
+    "分配律要求括號外係數乘到括號內每一項；括號前只有負號時可視為乘以負一。去括號後，每一項都要連同前方正負號一起整理。",
+    "情境列式要先分清每份與總共的層級，再進行化簡。完成後可選一個簡單數值代入原式與化簡式，比較兩者是否同值來檢查。"
   ],
   "formalDefinitions": [
     {
@@ -90,99 +90,102 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先展開每一個括號。",
-      "check": "外係數是否乘到每一項？"
+      "instruction": "先辨認每個括號外的係數與負號作用範圍。",
+      "check": "係數會乘到括號內每一項，沒有只作用於第一項。"
     },
     {
       "step": 2,
-      "instruction": "按未知數項與常數項分類。",
-      "check": "是否誤把不同類項放一起？"
+      "instruction": "由內向外展開括號，將每一項連同符號完整抄寫。",
+      "check": "負數乘負數的項已正確變成正數。"
     },
     {
       "step": 3,
-      "instruction": "分別計算係數與常數。",
-      "check": "負號是否保留？"
+      "instruction": "把相同未知數的一次項與常數項分別歸類。",
+      "check": "沒有把未知數項和常數項當成同類項。"
     },
     {
       "step": 4,
-      "instruction": "依ax+b順序書寫。",
-      "check": "係數1與-1的寫法是否正確？"
+      "instruction": "分別計算未知數項係數與常數和，寫成最簡式。",
+      "check": "係數一、負一與零的表示都符合代數慣例。"
     },
     {
       "step": 5,
-      "instruction": "代入一個簡單值驗證前後相等。",
-      "check": "原式與化簡式是否同值？"
+      "instruction": "選一個簡單值代入原式及化簡式進行等值驗證。",
+      "check": "兩式得到相同數值，情境單位與層級也未改變。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "化簡6x-4x+7。",
+      "exampleId": "u03-s002-example-a",
+      "prompt": "化簡 9x-4x+6。",
       "solutionSteps": [
-        "6x-4x=2x。",
-        "常數7保留。"
+        "合併同類的 x 項，9x-4x=5x。",
+        "常數六保留，寫成 5x+6。"
       ],
-      "answer": "2x+7。"
+      "answer": "5x+6。",
+      "why": "九 x 與負四 x 的未知數部分相同，所以係數可相減成五；常數六不含 x，不能再和五 x 合併，必須保留為另一項。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "化簡3(2y-5)+y。",
+      "exampleId": "u03-s002-example-b",
+      "prompt": "化簡 2(3y-4)-y。",
       "solutionSteps": [
-        "展開為6y-15+y。",
-        "合併為7y-15。"
+        "分配外係數，得到 6y-8-y。",
+        "合併 y 項，得到 5y-8。"
       ],
-      "answer": "7y-15。"
+      "answer": "5y-8。",
+      "why": "外係數二必須同時乘三 y 與負四，先得到六 y 減八；再把負 y 視為係數負一的同類項，六減一得到五，常數負八保持不變。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "化簡4a-[2a-(3-a)]。",
+      "exampleId": "u03-s002-example-c",
+      "prompt": "化簡 5a-[2a-(4-a)]。",
       "solutionSteps": [
-        "內括號2a-3+a=3a-3。",
-        "4a-(3a-3)=a+3。"
+        "先化最內層，2a-(4-a)=3a-4。",
+        "計算 5a-(3a-4)=2a+4。"
       ],
-      "answer": "a+3。"
+      "answer": "2a+4。",
+      "why": "內層減號先使四與負 a 變成負四與正 a，得到三 a 減四；外層再減整個括號，負四因此改成正四，最後合併為二 a 加四。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "每袋有x顆球，買5袋後送出2袋各少3顆的數量，求剩餘式。",
+      "exampleId": "u03-s002-example-d",
+      "prompt": "六箱零件每箱 x 個，送出兩箱且每箱另附三個，求剩餘數量式。",
       "solutionSteps": [
-        "原有5x。",
-        "送出2(x-3)=2x-6。",
-        "剩餘5x-(2x-6)=3x+6。"
+        "原有量為 6x，送出量為 2(x+3)。",
+        "相減得 6x-2x-6=4x-6。"
       ],
-      "answer": "3x+6顆。"
+      "answer": "4x-6 個。",
+      "why": "送出的兩箱各包含 x 個零件與三個附件，所以三也要乘二。剩餘量用原有六 x 減去完整送出量，不能只減兩 x。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把3x+4合併成7x。",
-      "why": "常數與未知數項不是同類項。",
-      "correction": "保留為3x+4。"
+      "mistake": "把 3x+4 合併成 7x。",
+      "why": "常數與含 x 的項不是同類項。",
+      "correction": "未知數項與常數項分開保留。"
     },
     {
-      "mistake": "把2(x+5)寫成2x+5。",
-      "why": "外係數漏乘常數。",
-      "correction": "寫成2x+10。"
+      "mistake": "把 2(x+5) 展開成 2x+5。",
+      "why": "括號外二漏乘常數五。",
+      "correction": "逐項分配成 2x+10。"
     },
     {
-      "mistake": "把-(x-4)寫成-x-4。",
-      "why": "只改第一項符號。",
-      "correction": "兩項都變號成-x+4。"
+      "mistake": "把 -(x-4) 寫成 -x-4。",
+      "why": "只改了括號第一項的符號。",
+      "correction": "視為乘負一，得到 -x+4。"
     },
     {
-      "mistake": "合併係數時忽略負號。",
-      "why": "只看絕對值。",
-      "correction": "將每項連同前方符號一起抄寫。"
+      "mistake": "合併係數時只看絕對值。",
+      "why": "每項前方符號本來就是係數的一部分。",
+      "correction": "先把每項寫成帶號係數再相加。"
     },
     {
-      "mistake": "看到括號就先把內部異類項相加。",
-      "why": "誤認任何項都可合併。",
-      "correction": "只能先做合法運算或分配。"
+      "mistake": "巢狀括號由外層直接拆除。",
+      "why": "內層符號尚未確定就套用外層負號。",
+      "correction": "先化簡最內層，再逐層向外。"
     },
     {
-      "mistake": "情境中把每一個的增減當成總共增減。",
-      "why": "未區分括號內外層級。",
-      "correction": "確認變化是每份發生還是整體一次發生。"
+      "mistake": "把每份減三誤成總量只減三。",
+      "why": "沒有區分括號內的每份變化與括號外份數。",
+      "correction": "先列份數乘每份量，再展開化簡。"
     }
   ],
   "selfCheck": [
@@ -236,7 +239,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "693ed2628abc522a47eded05b96c3e24dd1e7da5492e7b86d1bae46a91f06251",
+  "contentSha256": "ea40c872408abc82775049ec9bbee603a9a8c4e2a5a7319eb62be853d1874f98",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 };
@@ -261,11 +264,11 @@ export const QUESTIONS = [
       "2x"
     ],
     "answerIndex": 0,
-    "explanation": "確認兩項都是x的一次項；係數相加3+5=8；保留x得到8x。所以答案是「8x」。",
+    "explanation": "3x 與 5x 都是 x 的一次項，屬於同類項，因此只需把係數三與五相加。係數和為八，未知數 x 保留，化簡結果是 8x；不能把 x 一併消去。",
     "steps": [
-      "確認兩項都是x的一次項",
-      "係數相加3+5=8",
-      "保留x得到8x"
+      "辨認 3x 與 5x 都是 x 的同類項。",
+      "相加係數 3+5=8。",
+      "保留共同未知數，寫成 8x。"
     ],
     "optionAnalysis": [
       {
@@ -289,7 +292,7 @@ export const QUESTIONS = [
         "reason": "把5x移到另一邊般相減。"
       }
     ],
-    "commonMistake": "把係數相加後漏掉未知數。",
+    "commonMistake": "係數相加得到八後漏寫 x，把代數式誤化成常數八。",
     "concept": "同類項只加係數，未知數部分不變。",
     "tags": [
       "代數",
@@ -304,7 +307,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1e6adb6cce06cfc3623fc36f6bfbab2d5ccf6571eb2a999069d53150a3b3d793",
+    "contentSha256": "12145cb0afb00369466e38f50c23d4cc57b959a875212723ce61356f307f63cb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -327,11 +330,11 @@ export const QUESTIONS = [
       "5a＋2"
     ],
     "answerIndex": 1,
-    "explanation": "合併a項得5a；常數4原樣保留；寫成5a+4。所以答案是「5a＋4」。",
+    "explanation": "7a 與 -2a 是同類項，係數相加為 7-2=5，所以合併成 5a。常數四不含 a，不能與 5a 再合併，因此最簡式是 5a+4，而不是單一項。用簡單數值代入前後也會同值。",
     "steps": [
-      "合併a項得5a",
-      "常數4原樣保留",
-      "寫成5a+4"
+      "把 a 項 7a-2a 分在同一組。",
+      "計算係數差 7-2=5，得到 5a。",
+      "保留不同類的常數 4，寫成 5a+4。"
     ],
     "optionAnalysis": [
       {
@@ -355,7 +358,7 @@ export const QUESTIONS = [
         "reason": "把常數4與係數2相減。"
       }
     ],
-    "commonMistake": "把常數與a項係數直接合併。",
+    "commonMistake": "把常數四當成 a 的係數一起相加，混淆未知數項與常數項。",
     "concept": "不同類項不能合併。",
     "tags": [
       "代數",
@@ -370,7 +373,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "693126d8e8ce7f8c75414c42cd2b84d58ab6915aed9d7fbad953e2d43d51cc8d",
+    "contentSha256": "fcf6b17fbd30c56b945cd63125c28e5541e4949d00d79fac2a1b0adcb6351032",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -393,11 +396,11 @@ export const QUESTIONS = [
       "8x＋12"
     ],
     "answerIndex": 2,
-    "explanation": "用分配律乘第一項得8x；乘第二項得-12；合併寫成8x-12。所以答案是「8x－12」。",
+    "explanation": "依分配律，括號外的四要分別乘 2x 與 -3。第一項為 8x，第二項為 -12，所以展開後得到 8x-12；外係數不能只作用在含 x 的第一項。代入任意 x 前後皆同值。",
     "steps": [
-      "用分配律乘第一項得8x",
-      "乘第二項得-12",
-      "合併寫成8x-12"
+      "用 4 乘第一項 2x，得到 8x。",
+      "用 4 乘第二項 -3，得到 -12。",
+      "依原順序合併為 8x-12。"
     ],
     "optionAnalysis": [
       {
@@ -421,7 +424,7 @@ export const QUESTIONS = [
         "reason": "負號在分配後改成正號。"
       }
     ],
-    "commonMistake": "只把括號外數乘第一項。",
+    "commonMistake": "只計算 4×2x，卻把括號內的負三原樣保留為負三。",
     "concept": "括號外係數要乘括號內每一項。",
     "tags": [
       "代數",
@@ -436,7 +439,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "188ddfd9a701a17b0eef639ebcc1085da89a1e5ea3c4ee05d6b1d9d92797e8be",
+    "contentSha256": "fb5ddbcdb151fc191472c303b1d2739c556632943377baec74672782192992e7",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -459,11 +462,11 @@ export const QUESTIONS = [
       "3y＋7"
     ],
     "answerIndex": 3,
-    "explanation": "括號前是負號；去括號得-2y+7；合併得3y+7。所以答案是「3y＋7」。",
+    "explanation": "括號前的減號等於把括號整體乘以負一，因此 -(2y-7)=-2y+7。再與 5y 合併，5y-2y=3y，常數正七保留，最簡式為 3y+7。代入零即可驗證常數應為正七。",
     "steps": [
-      "括號前是負號",
-      "去括號得-2y+7",
-      "合併得3y+7"
+      "把減去 (2y-7) 展開成 -2y+7。",
+      "合併 y 項 5y-2y=3y。",
+      "保留常數正七，得到 3y+7。"
     ],
     "optionAnalysis": [
       {
@@ -487,7 +490,7 @@ export const QUESTIONS = [
         "reason": "減去整個括號會改變兩項符號：5y-2y+7=3y+7。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "只改第一項符號或完全不變號。",
+    "commonMistake": "去括號時只把 2y 變號，沒有把負七也改成正七。",
     "concept": "減去括號等於括號內每項變號。",
     "tags": [
       "代數",
@@ -502,7 +505,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "790e16f7c054bc98791b55368b6d16a3f05c4c9b2ec4c2459e35617a3d85c52a",
+    "contentSha256": "a0bab33cf8f2c4a51088edee797aaa24fac6bfed38fa235deadbce66f7a04232",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -525,11 +528,11 @@ export const QUESTIONS = [
       "2m＋5"
     ],
     "answerIndex": 1,
-    "explanation": "分配得6m+3；減4(m-2)得-4m+8；合併為2m+11。所以答案是「2m＋11」。",
+    "explanation": "先展開 3(2m+1)=6m+3；第二部分是減去 4(m-2)，所以展開為 -4m+8。合併同類項後，6m-4m=2m，3+8=11，得到 2m+11。若第二括號符號錯誤，代入任意 m 時兩式就不相等，符號可核對。",
     "steps": [
-      "分配得6m+3",
-      "減4(m-2)得-4m+8",
-      "合併為2m+11"
+      "展開第一括號為 6m+3。",
+      "把 -4 分配到第二括號，得到 -4m+8。",
+      "合併為 2m+11。"
     ],
     "optionAnalysis": [
       {
@@ -553,7 +556,7 @@ export const QUESTIONS = [
         "reason": "把3與8相減。"
       }
     ],
-    "commonMistake": "把-4(m-2)展成-4m-8。",
+    "commonMistake": "把 -4(m-2) 寫成 -4m-8，未處理負數乘負二為正八。",
     "concept": "負號與外係數要一起分配。",
     "tags": [
       "代數",
@@ -568,7 +571,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cfd0008d367560bc2d1f507651e02a33fcbbe99f1834e59e3a9e6b1a3922a134",
+    "contentSha256": "3192fbb1d676be6a5588d04800d674edb3518a355b25bb9426d5bf3efed371a2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -591,11 +594,11 @@ export const QUESTIONS = [
       "-6x＋11"
     ],
     "answerIndex": 2,
-    "explanation": "去第一括號得-4x+5；展開第二括號得2x+6；合併為-2x+11。所以答案是「－2x＋11」。",
+    "explanation": "第一個括號前只有負號，展開為 -4x+5；第二個括號乘二後為 2x+6。合併 x 項得 -2x，常數五加六得十一，因此結果是 -2x+11。代入零可核對常數十一。",
     "steps": [
-      "去第一括號得-4x+5",
-      "展開第二括號得2x+6",
-      "合併為-2x+11"
+      "展開 -(4x-5) 為 -4x+5。",
+      "展開 2(x+3) 為 2x+6。",
+      "合併 -4x+2x 與 5+6，得到 -2x+11。"
     ],
     "optionAnalysis": [
       {
@@ -619,7 +622,7 @@ export const QUESTIONS = [
         "reason": "把係數合併成-6x。"
       }
     ],
-    "commonMistake": "多個括號同時展開時符號混亂。",
+    "commonMistake": "同時展開兩個括號時漏改第一括號的常數符號，導致常數和錯誤。",
     "concept": "逐個括號展開後再分類合併。",
     "tags": [
       "代數",
@@ -634,7 +637,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d66739a989c6543a23ffe445f3a6b31d2f2927b03c5eab21b0ad3beb8783990c",
+    "contentSha256": "88d51b7c8d9f39674629bc8741e403abe7428647a7d493a96b525a25be4e484a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -657,11 +660,11 @@ export const QUESTIONS = [
       "7a－7"
     ],
     "answerIndex": 3,
-    "explanation": "先化簡2(3a-4)=6a-8；中括號化成-a-1；6a-8+a+1=7a-7。所以答案是「7a－7」。",
+    "explanation": "先得 2(3a-4)=6a-8；中括號 a-(2a+1)=-a-1。原式是再減去整個中括號，因此變成 6a-8-(-a-1)=6a-8+a+1=7a-7。兩層減號依序處理，代入零可核對最後常數負七，結果前後同值。",
     "steps": [
-      "先化簡2(3a-4)=6a-8",
-      "中括號化成-a-1",
-      "6a-8+a+1=7a-7"
+      "展開左側括號，得到 6a-8。",
+      "由內向外化簡中括號為 -a-1。",
+      "減去中括號並合併，得到 7a-7。"
     ],
     "optionAnalysis": [
       {
@@ -685,7 +688,7 @@ export const QUESTIONS = [
         "reason": "前段為6a-8；中括號a-(2a+1)=-a-1，所以相減後6a-8-(-a-1)=7a-7。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "未把中括號整體視為被減數。",
+    "commonMistake": "把中括號當成直接相加，沒有讓外層減號作用於括號內每一項。",
     "concept": "內層結果作為整體再處理外部減號。",
     "tags": [
       "代數",
@@ -700,7 +703,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "35a4a727df97894185a9c2221c35f2069c87b497a2cae56bda5d52227f998465",
+    "contentSha256": "2a371d8ccb1c2c5e421f0dd0b827bc6645438eeed20e92689e4d3d97a6ffc0af",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -723,11 +726,11 @@ export const QUESTIONS = [
       "5x"
     ],
     "answerIndex": 0,
-    "explanation": "分別分配1/2得3x-2；分配1/3得x+2；相加得4x。所以答案是「4x」。",
+    "explanation": "把二分之一分配到 6x-4，得到 3x-2；把三分之一分配到 3x+6，得到 x+2。兩式相加時常數負二與正二抵消，x 項合併為 4x。兩個常數正好完全抵消。",
     "steps": [
-      "分別分配1/2得3x-2",
-      "分配1/3得x+2",
-      "相加得4x"
+      "計算 1/2(6x-4)=3x-2。",
+      "計算 1/3(3x+6)=x+2。",
+      "相加並抵消常數，得到 4x。"
     ],
     "optionAnalysis": [
       {
@@ -751,7 +754,7 @@ export const QUESTIONS = [
         "reason": "把兩個係數相加成5。"
       }
     ],
-    "commonMistake": "只約分未知數項而漏處理常數。",
+    "commonMistake": "只約分兩個括號中的 x 項，漏把分數係數分配到常數項。",
     "concept": "分數乘括號內每一項。",
     "tags": [
       "代數",
@@ -766,7 +769,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c43d547566224bc3e962a1ad3cbf3ea3b752ed0021d7fc4ba1670aa03d7fcce5",
+    "contentSha256": "9734ccc1b2651a4a268147726809838a64dc6c2c9259f3c270f3ecf77dd1f155",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -789,11 +792,11 @@ export const QUESTIONS = [
       "0.1x＋1.0"
     ],
     "answerIndex": 2,
-    "explanation": "展開被減括號為0.3x-0.2；外部減號使其成-0.3x+0.2；合併得0.1x+1.4。所以答案是「0.1x＋1.4」。",
+    "explanation": "先算 0.1(3x-2)=0.3x-0.2。原式減去這個括號，符號改為 -0.3x+0.2；再合併 0.4x-0.3x=0.1x，1.2+0.2=1.4，故為 0.1x+1.4。代入零時原式也是一點四，可直接檢查常數符號，兩項都已核對。",
     "steps": [
-      "展開被減括號為0.3x-0.2",
-      "外部減號使其成-0.3x+0.2",
-      "合併得0.1x+1.4"
+      "展開 0.1(3x-2)=0.3x-0.2。",
+      "套用外層減號，改成 -0.3x+0.2。",
+      "合併同類項得到 0.1x+1.4。"
     ],
     "optionAnalysis": [
       {
@@ -817,7 +820,7 @@ export const QUESTIONS = [
         "reason": "常數1.2-0.2算成1.0。"
       }
     ],
-    "commonMistake": "減去含負常數的式子時未變號。",
+    "commonMistake": "減去含負常數的式子時仍寫負零點二，忘記減負數要改成加。",
     "concept": "小數運算仍遵守分配律。",
     "tags": [
       "代數",
@@ -832,7 +835,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c995ef6ae0482b9f038ea329786fa1c5fdb07de3566899d2b98db78c0976ce01",
+    "contentSha256": "da96d31c3ed38dbd1fe3f5f287730a63f4b3158d5dc32951e4ffcfc9f36f1bc8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -855,11 +858,11 @@ export const QUESTIONS = [
       "8x＋2"
     ],
     "answerIndex": 3,
-    "explanation": "先將長與寬相加得4x+1；周長為其2倍；分配得到8x+2。所以答案是「8x＋2」。",
+    "explanation": "長與寬的和為 (3x+2)+(x-1)=4x+1，這只是半周長。長方形周長要乘二，所以 2(4x+1)=8x+2 公尺；常數二與負一也要先正確合併。代入正值後周長亦為正。",
     "steps": [
-      "先將長與寬相加得4x+1",
-      "周長為其2倍",
-      "分配得到8x+2"
+      "先列周長 2[(3x+2)+(x-1)]。",
+      "化簡括號內長寬和為 4x+1。",
+      "分配外層二，得到 8x+2 公尺。"
     ],
     "optionAnalysis": [
       {
@@ -883,7 +886,7 @@ export const QUESTIONS = [
         "reason": "周長2[(3x+2)+(x-1)]=2(4x+1)=8x+2。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "把半周長當成周長。",
+    "commonMistake": "算出長寬和 4x+1 就作答，誤把半周長當成完整周長。",
     "concept": "周長公式與同類項化簡缺一不可。",
     "tags": [
       "代數",
@@ -898,7 +901,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "長與寬的幾何意義決定必須使用2(長+寬)，情境不可刪除為純粹展開題。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e8074f4b9419420a18f46f0e065912f125168aa2f4062a91282fe74cea1a68f4",
+    "contentSha256": "a516be0775708a8398075e579c7d3a699ad1e7b29f9a1a515602aa5eac066723",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -921,11 +924,11 @@ export const QUESTIONS = [
       "12x－150"
     ],
     "answerIndex": 0,
-    "explanation": "成人票費用為4x；兒童票費用為3x-150；合併為7x-150。所以答案是「7x－150」。",
+    "explanation": "四張成人票費用為 4x；每張兒童票是 x-50 元，三張共 3(x-50)=3x-150。兩類票價相加得 4x+3x-150=7x-150 元。每張少五十的影響要重複三次，不能只扣一次。",
     "steps": [
-      "成人票費用為4x",
-      "兒童票費用為3x-150",
-      "合併為7x-150"
+      "寫出成人票總價 4x。",
+      "寫出兒童票總價 3(x-50)=3x-150。",
+      "合併兩類費用為 7x-150。"
     ],
     "optionAnalysis": [
       {
@@ -949,7 +952,7 @@ export const QUESTIONS = [
         "reason": "把張數4與3相乘。"
       }
     ],
-    "commonMistake": "把每張少50誤成總共少50。",
+    "commonMistake": "把每張兒童票少五十元誤成三張合計只少五十元。",
     "concept": "每張折價要乘兒童票張數。",
     "tags": [
       "代數",
@@ -964,7 +967,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "成人與兒童票的張數和價差決定各項係數，刪除售票情境就無法建立正確式子。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c56c14fbe98295febcc9287406d47b2d116f7bc9a5599ad273045f25a83af15d",
+    "contentSha256": "772cabc07daa333a2f4585fe749326d6e1eb1f7b8258b8aa5f64646e182d95f0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -987,11 +990,11 @@ export const QUESTIONS = [
       "12n－8"
     ],
     "answerIndex": 1,
-    "explanation": "原有量為12n；剩餘量是12n-(3n+8)；去括號合併得9n-8。所以答案是「9n－8」。",
+    "explanation": "倉庫原有 n 箱、每箱十二件，所以原有量是 12n。剩餘量為 12n-(3n+8)，外層減號要分配成 -3n-8；合併後得到 9n-8 件。代入零可驗證常數應為負八。",
     "steps": [
-      "原有量為12n",
-      "剩餘量是12n-(3n+8)",
-      "去括號合併得9n-8"
+      "由箱數與每箱件數寫出原有量 12n。",
+      "列剩餘量 12n-(3n+8)。",
+      "去括號並合併，得到 9n-8 件。"
     ],
     "optionAnalysis": [
       {
@@ -1015,7 +1018,7 @@ export const QUESTIONS = [
         "reason": "只扣掉常數8，漏扣3n。"
       }
     ],
-    "commonMistake": "把出貨式中的加8保留為加。",
+    "commonMistake": "去掉出貨量括號時仍保留正八，使已出貨的額外八件反而增加庫存。",
     "concept": "減去整個出貨式要逐項變號。",
     "tags": [
       "代數",
@@ -1030,7 +1033,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每箱件數、箱數與出貨規則共同形成12n-(3n+8)，情境資料直接決定代數式。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6a27596717039fa86513bf61e2082c5613b45fe214e82399557f329cda45fce0",
+    "contentSha256": "55f16592ed6fd1db61fc882f503e1020624a3421749c36e33650ae73ec57ba4d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }
@@ -1053,9 +1056,9 @@ export const CONSTRUCTED_RESPONSES = [
       "代入x=2驗證兩式。"
     ],
     "fullCreditSolution": [
-      "展開：12x-8-2x-10+7。",
-      "化簡為10x-11。",
-      "原式代x=2得9；10(2)-11=9。"
+      "依分配律展開：4(3x-2)-2(x+5)+7=12x-8-2x-10+7。",
+      "合併同類項，12x-2x=10x，常數 -8-10+7=-11，所以最簡式為 10x-11。",
+      "以 x=2 驗證：原式 4(4)-2(7)+7=9，化簡式 10(2)-11=9，兩者同值，證明展開與合併沒有改變原式，前後相符。"
     ],
     "alternativeSolutions": [
       "可先分別化簡兩個括號，再合併。"
@@ -1083,15 +1086,16 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "-2(x+5)展成-2x+10。",
-      "常數-8-10+7算錯。"
+      "把 -2(x+5) 展開成 -2x+10，漏掉負二乘正五仍為負十。",
+      "合併常數 -8-10+7 時忽略其中一個負號，得到錯誤常數。",
+      "只驗證化簡式的值，沒有獨立計算原式，因此無法完成等值檢查。"
     ],
     "independentReview": {
       "derivedResult": "10x-11，x=2時兩式皆為9",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "40355980562b83ec73ecd4d51c21e7ebddcc676529e01650f1ff259533667af5",
+    "contentSha256": "c7d544fdb53eb53a7074b43f3cdf87eafbf6d791f29349f46b2a459d062f37fa",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -1110,9 +1114,9 @@ export const CONSTRUCTED_RESPONSES = [
       "化簡並說明同類項條件。"
     ],
     "fullCreditSolution": [
-      "剩餘=500n-(120n+300)。",
-      "=500n-120n-300=380n-300。",
-      "300是常數，與含n的項不是同類項。"
+      "n 箱紙、每箱五百張，原有紙張為 500n；扣除使用量後列式 500n-(120n+300)。",
+      "把外層減號分配進括號，得到 500n-120n-300，再合併同類項為 380n-300 張。",
+      "三百是沒有未知數的常數項，380n 是含 n 的一次項，兩者不是同類項，不能再直接合併。"
     ],
     "alternativeSolutions": [
       "可用n=1作數值驗證：500-420=80，380-300=80。"
@@ -1140,15 +1144,16 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "括號前負號未分配。",
-      "把300合併到n的係數。"
+      "去括號時把使用量中的正三百保留為正，讓已使用紙張反而增加剩餘量。",
+      "把常數三百加到 n 的係數三百八十，誤寫成 680n。",
+      "只計算每箱紙張差 500-120，漏掉另行使用的三百張。"
     ],
     "independentReview": {
       "derivedResult": "380n-300張",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "ca7c289f985431efc3384ed4d2b78acfb43a6e0506bd6ee232149420f37eda42",
+    "contentSha256": "ed18b5f23ec8ac5da600da58118ec8bcf61de8829791417f04d47c8e8c31de7d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }

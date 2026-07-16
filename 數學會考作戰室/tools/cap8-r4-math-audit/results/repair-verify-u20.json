@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "unitId": "u20",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "021-u20-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\"status\":\"pass\",\"phase\":\"source-plus-staging\",\"packageId\":\"math-v2-human-content-batch-021-u20-complete\",\"counts\":{\"skills\":15,\"lectures\":15,\"mcQuestions\":180,\"constructedResponses\":30,\"semanticReviews\":180,\"figures\":16,\"difficultyTotals\":{\"basic\":45,\"standard\":45,\"advanced\":45,\"literacy\":45},\"answerIndexTotals\":[45,45,45,45],\"emittedModuleCount\":16},\"errors\":[],\"warnings\":[\"Cross-unit duplicate reconciliation is not possible inside this isolated parallel package and remains a central coordinator responsibility.\"]}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "pass",
+          "phase": "source-plus-staging",
+          "packageId": "math-v2-human-content-batch-021-u20-complete",
+          "counts": {
+            "skills": 15,
+            "lectures": 15,
+            "mcQuestions": 180,
+            "constructedResponses": 30,
+            "semanticReviews": 180,
+            "figures": 16,
+            "difficultyTotals": {
+              "basic": 45,
+              "standard": 45,
+              "advanced": 45,
+              "literacy": 45
+            },
+            "answerIndexTotals": [
+              45,
+              45,
+              45,
+              45
+            ],
+            "emittedModuleCount": 16
+          },
+          "errors": [],
+          "warnings": [
+            "Cross-unit duplicate reconciliation is not possible inside this isolated parallel package and remains a central coordinator responsibility."
+          ]
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\"status\":\"pass\",\"phase\":\"source-plus-staging\",\"packageId\":\"math-v2-human-content-batch-021-u20-complete\",\"counts\":{\"skills\":15,\"lectures\":15,\"mcQuestions\":180,\"constructedResponses\":30,\"semanticReviews\":180,\"figures\":16,\"difficultyTotals\":{\"basic\":45,\"standard\":45,\"advanced\":45,\"literacy\":45},\"answerIndexTotals\":[45,45,45,45],\"emittedModuleCount\":16},\"errors\":[],\"warnings\":[\"Cross-unit duplicate reconciliation is not possible inside this isolated parallel package and remains a central coordinator responsibility.\"]}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "pass",
+          "phase": "source-plus-staging",
+          "packageId": "math-v2-human-content-batch-021-u20-complete",
+          "counts": {
+            "skills": 15,
+            "lectures": 15,
+            "mcQuestions": 180,
+            "constructedResponses": 30,
+            "semanticReviews": 180,
+            "figures": 16,
+            "difficultyTotals": {
+              "basic": 45,
+              "standard": 45,
+              "advanced": 45,
+              "literacy": 45
+            },
+            "answerIndexTotals": [
+              45,
+              45,
+              45,
+              45
+            ],
+            "emittedModuleCount": 16
+          },
+          "errors": [],
+          "warnings": [
+            "Cross-unit duplicate reconciliation is not possible inside this isolated parallel package and remains a central coordinator responsibility."
+          ]
+        }
+      }
+    }
+  ]
+}

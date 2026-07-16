@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u07",
+  "batch": "008-u07-complete",
+  "skills": ["s004"],
+  "mc": [
+    {
+      "questionId": "u07-s004-v001",
+      "expectedContentSha256": "d3098052e58ed2a5561d5e5912ad833a067f66e85e292cdcad63e9c1004f424a",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "代入2成立使端點實心，代入3也成立且在右側；題幹文字已足以唯一作圖。", "misconceptionTarget": "四格共用圖例直接列出所有選項，若顯示會洩漏判讀而非提供必要資料。"},
+      "appendArray": {"steps": ["用2與3代入，分別確認實心端點和向右方向。"]}
+    },
+    {
+      "questionId": "u07-s004-v002",
+      "expectedContentSha256": "f1976646393561c9a40e093dd9f6dd14b5c144e77bf05a9ba7332ff738debd52",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "-4代入為真、-3代入為假，故射線在左側且端點空心，與端點正負無關。", "misconceptionTarget": "也可能讓負端點改變左右規則，沒有依數線左小右大判斷。"},
+      "appendArray": {"steps": ["以-4與-3代入，驗證空心向左。"]}
+    },
+    {
+      "questionId": "u07-s004-v003",
+      "expectedContentSha256": "8b9ed1d3744659cd04b73b7d422c5c17f159d2a9f4e6dc9be04a57b8f81a4454",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "右側的6應符合而端點5不符合，因此正確式只能是嚴格大於5並向右延伸。", "misconceptionTarget": "也可能從四格圖例直接抄標籤，沒有用題目端點5完成驗證。"},
+      "appendArray": {"steps": ["把6與5代入候選式，檢查方向與端點。"]}
+    },
+    {
+      "questionId": "u07-s004-v004",
+      "expectedContentSha256": "b62715ad17257b50f2a6ad0e45db242685783ebcfe9fa08196cfd2440dd1de75",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "x=3使原式兩邊同為10而成立，x=4則左式13超過10，確認3是含入的上界。由三x小於等於九也可直接核對此結論。", "misconceptionTarget": "還可能求得x≤3後，畫圖時只看大於形狀而向右。"},
+      "appendArray": {"steps": ["代入3與4回原式，驗證實心向左。"]}
+    },
+    {
+      "questionId": "u07-s004-v005",
+      "expectedContentSha256": "4d4184af39a008cd63618d651e63d875058d0f54d5315095a4fe8bf897be57d1",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "交換左右後4>x須讀成x<4；3成立而4不成立，故空心向左。數線左側的三符合，而右側的五不符合。", "misconceptionTarget": "也可能只把未知數搬到左邊，卻保留符號外觀造成x>4。"},
+      "appendArray": {"steps": ["以x=3與4測試改寫式，確認與原式等價。"]}
+    },
+    {
+      "questionId": "u07-s004-v006",
+      "expectedContentSha256": "c3944f84159c65b73fe2227e88d56d1794e203f2b0f75d29d21f4bdfc14b7f0b",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "兩式都讓1與更小的數成立、讓2失敗，所以端點及整個左向射線完全相同。", "misconceptionTarget": "還可能只看左右交換後符號朝向不同，沒有把兩式讀成中文。"},
+      "appendArray": {"steps": ["用1、0與2代入兩式，比較每個測試值的真假一致。"]}
+    },
+    {
+      "questionId": "u07-s004-v007",
+      "expectedContentSha256": "24b1659a285a50ee78b32b9a22af1c736514140a2ef5482dba77b338322a072e",
+      "appendText": {"explanation": "實心向左代表x≤a；a須至少2且小於3，四項只有2.5同時滿足。端點可為介於二與三之間的實數。", "misconceptionTarget": "也可能把2是解誤寫成a≤2，顛倒端點與候選值的關係。"},
+      "appendArray": {"steps": ["將四個a分別檢查a≥2與a<3兩條條件。"]}
+    },
+    {
+      "questionId": "u07-s004-v008",
+      "expectedContentSha256": "deae0afb53c16948e70fedb4aa6c2cfc73e29a25a3dda15521e7f289e3a9ae9b",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null,
+        "text": "解 2x−6<0 後，哪一個數線描述正確？",
+        "givenConditions": "係數2為正，使用已鎖定的基本解法。",
+        "target": "由正係數不等式解集轉成數線",
+        "independentSolution": {"derivation": "2x−6<0；兩邊同加6得2x<6，再同除以正數2得x<3。端點3代入為0<0假，2代入為-2<0真，所以3空心向左。", "result": "3 空心向左", "answerIndexVerified": 3},
+        "explanation": "先在2x−6<0兩邊同加6，得到2x<6；再同除以正數2，方向不變，得到x<3。端點3不含且較小值位於左側，因此數線為3空心向左；以二回代也成立。",
+        "steps": ["兩邊同加6得2x<6。", "兩邊同除正二得x<3。", "用3與2代入後畫成空心向左。"],
+        "misconceptionTarget": "把數線轉譯題提前使用下一技能的負數除法，或將嚴格端點畫成實心。",
+        "prerequisiteCheck": "只需已鎖定的正數除法與數線轉譯，不使用下一技能。",
+        "ambiguityAndBoundaryAudit": "x=3代回為0<0假；x=2代回為-2<0真。",
+        "difficultyReason": "需先解正係數不等式，再同步判讀空心端點與左向射線。"
+      },
+      "reviewSet": {
+        "independentSolution": "2x−6<0；兩邊同加6得2x<6，再同除以正數2得x<3。端點3代入為0<0假，2代入為-2<0真，所以3空心向左。",
+        "ambiguityChecks": {"wording": "題幹要求先解正係數一次不等式，再選出對應數線，任務與先備範圍明確。", "boundary": "x=3代回為0<0假；x=2代回為-2<0真。", "units": "無單位與近似。", "scope": "只使用不等式基本解法與數線表示，不提前使用下一技能的乘除負數變號。"},
+        "difficultyReason": "需先解正係數不等式，再同步判讀空心端點與左向射線。",
+        "reviewerNote": "獨立重算2x−6<0，兩邊同加6得2x<6，再除正二得x<3；x=3使0<0為假，x=2使-2<0為真，因此唯一答案仍為索引3的「3 空心向左」，且未提前使用下一技能。"
+      }
+    },
+    {
+      "questionId": "u07-s004-v009",
+      "expectedContentSha256": "9e75aaeb41b9d92ee270ce1fda3c4c9ecf056b41806d6abfdd6e38b409968571",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "原端點-1映成1且仍排除，原右側解映到1左側，因此新範圍嚴格小於1。", "misconceptionTarget": "也可能只改端點正負，卻沒有把整條射線鏡射到另一側。"},
+      "appendArray": {"steps": ["追蹤原端點-1及原解0、2的鏡射位置，驗證x<1。"]}
+    },
+    {
+      "questionId": "u07-s004-v010",
+      "expectedContentSha256": "bd2a41f242fa6f50fe78a09a63e62fc75d8d868ffe8cb21b8bc4c0d3f5168b70",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "車高2.1仍未超過限制而可行，2.2則超標；因此端點含入且允許較小值，與不得超過的語意一致。", "misconceptionTarget": "也可能把不得超過當成最低高度，讓射線錯向右側。"},
+      "appendArray": {"steps": ["用2.1與2.2公尺測試，確認實心向左。"]}
+    },
+    {
+      "questionId": "u07-s004-v011",
+      "expectedContentSha256": "a0d073da94a051b8cbbff4c546eac5042d1da9590365975b437d169149057481",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "2.0只是2的另一種小數寫法，並未大於2；只有更高值如2.1才符合。", "misconceptionTarget": "還可能把小數位數較多誤認為數值較大，忽略二點零等於二。"},
+      "appendArray": {"steps": ["比較2.0=2與2.1>2，驗證端點空心。"]}
+    },
+    {
+      "questionId": "u07-s004-v012",
+      "expectedContentSha256": "419ef73e824c317ae2142f23cfcb720cfb26bb6942119e7b2f729c14fcac8f0d",
+      "set": {"visualMode": "text-only", "figureId": null},
+      "appendText": {"explanation": "端點是解集由不符合轉為符合的邊界120；121雖符合但位於射線內部，119則未進入解集。", "misconceptionTarget": "也可能把任何解都稱為端點，沒有辨認解集的邊界值。"},
+      "appendArray": {"steps": ["檢查119、120、121的真假，找出含入的最小邊界120。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u07-s004-cr001",
+      "expectedContentSha256": "ea4087ae7c046f02a0d8a77d67dc737bc443dff82619f613f3838bf33831c33b",
+      "set": {
+        "figureId": null,
+        "fullCreditSolution": ["由2x+3>11兩邊同減3得2x>8，再除以正數2得到x>4。", "在數線端點4畫空心點，並向右畫射線，因所有大於4的數位於右側。", "將x=4代入原式得11>11為假，所以端點不能填實。", "另取x=5，左式13>11成立，可確認射線方向向右。"],
+        "reasoningSteps": ["等價運算求出x>4。", "以嚴格符號判斷空心。", "依大於判斷向右。", "用4與5回原式驗證。"],
+        "commonErrors": ["求得x>4後仍把端點畫實心，錯把4納入。", "把大於當作符號箭頭而向左畫，沒有用5代入檢查方向。"]
+      }
+    },
+    {
+      "questionId": "u07-s004-cr002",
+      "expectedContentSha256": "b1147e12a2577d0d355c2a2b8563d5914c91d2a0d7ebe04807bfe2ff6c8c7e0c",
+      "set": {
+        "figureId": null,
+        "fullCreditSolution": ["範圍-1≤x<5可讀成x至少為-1而且未滿5，或x不小於-1且小於5。", "與整數集合取交集，從-1開始逐一列到4，得到-1、0、1、2、3、4。", "左端符號含等號，所以-1成立並畫實心；右端是嚴格小於，所以5不成立並畫空心。", "代入-1、4都符合，代入5在第二條件失敗，確認列舉完整。"],
+        "reasoningSteps": ["把雙邊符號翻成中文。", "列出範圍內全部整數。", "依等號判斷左右端空實心。", "用兩端及5代入驗算。"],
+        "commonErrors": ["把右端5列入整數解，忽略嚴格小於。", "把左端-1排除，或只列正整數而漏掉-1與0。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u07-s004-lecture-r1",
+      "expectedContentSha256": "37098e6803b174eb767f55249e5af12af0675e66fd5968cafd5ebf8249f29078",
+      "appendArray": {"conceptNarrative": ["特定題目的數線應由最後解集自行畫出；一次展示四種組合的圖例只適合作為講義規則表，若直接掛在選擇題旁會洩漏選項分類，且不應替代端點代入驗證。"]},
+      "set": {
+        "method": [
+          {"step": 1, "instruction": "先把代數答案整理成x與端點的標準形式。", "check": "端點取自最後解集而非原式常數。"},
+          {"step": 2, "instruction": "用端點代入判斷是否包含。", "check": "成立畫實心，不成立畫空心。"},
+          {"step": 3, "instruction": "依大於或小於決定右向或左向射線。", "check": "不受端點正負號干擾。"},
+          {"step": 4, "instruction": "由圖回寫時分開讀方向與端點空實。", "check": "不從線段長度或位置猜端點值。"},
+          {"step": 5, "instruction": "取端點與射線內外各一值回原式檢查。", "check": "圖形與代數解集完全一致。"}
+        ],
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "畫出x>-1。", "solutionSteps": ["端點是-1。", "嚴格大於使端點空心。", "較大數位於右側，向右延伸。"], "answer": "-1空心，射線向右。", "why": "端點的負號不會改變數線方向，真正決定方向的是大於。代入-1得到假所以空心，代入0得到真且零位於右側，因此空心向右唯一正確。"},
+          {"exampleId": "L2", "prompt": "畫出x≤3。", "solutionSteps": ["端點為3。", "≤含等號所以畫實心。", "較小值向左延伸。"], "answer": "3實心，射線向左。", "why": "三代入原式成立，端點必須填實；二與更小的數也成立並位於左側。用四代入則失敗，交叉確認射線沒有畫到右邊。"},
+          {"exampleId": "L3", "prompt": "圖上2為實心點且向右，寫出解集。", "solutionSteps": ["向右讀成x大於2。", "實心補上端點2也成立。", "合併寫成x≥2並以2、3驗算。"], "answer": "x≥2。", "why": "方向與端點包含性要分開判讀：向右先給大於，實心再加入等號。二和三都應成立，而左側的一不成立，這組真假恰好對應x≥2。"},
+          {"exampleId": "L4", "prompt": "解2x-1<5並畫圖。", "solutionSteps": ["同加1得2x<6。", "除正二得x<3。", "在3畫空心點向左。"], "answer": "x<3；數線在3空心向左。", "why": "代數先求出真正端點三，再由嚴格小於判斷空心與左向。二代入原式成立、三使兩邊相等而失敗，所以圖形與原式的解集一致。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "u07-fig-number-line-translation",
+      "expectedContentSha256": "e2e7581832bff9d3c60c6b8956caac02a426dd515599d9178d2cae256dafb005",
+      "set": {
+        "altText": "四個不按比例的數線圖例，以字母c為端點，依序呈現空心向左、實心向左、空心向右與實心向右；下方提醒方向和端點包含性必須分開判讀。",
+        "svgDesc": "四個不按比例的數線圖例，以字母c為端點，依序呈現空心向左、實心向左、空心向右與實心向右；下方提醒方向和端點包含性必須分開判讀。",
+        "mobileReadabilityReview": "縮至360px寬時四個面板仍保持分欄，空實心圓、左右粗射線、箭頭與中文標籤可辨，不互相覆蓋。",
+        "printReadabilityReview": "A4黑白列印時以白底、黑框空心圓、全黑實心圓與粗線箭頭區分四種狀態，不依賴色彩，縮放後端點輪廓仍清楚。",
+        "answerLeakageReview": "四種完整組合只由講義引用作規則總覽；所有題庫與非選題已移除figureId，避免在要求選擇組合時直接顯示答案分類。",
+        "figureReview": {"decision": "pass", "manualVisualInspection": true, "geometryCheck": "pass", "mobileCheck": "pass", "answerLeakageCheck": "pass", "reviewNote": "重新核對四面板SVG幾何、標籤、alt與desc完全一致，白底黑白列印及手機縮放可讀；此完整圖例僅保留給講義，不再掛於作答題目旁。", "reviewedAt": "2026-07-12"}
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u07/u07-fig-number-line-translation.svg",
+      "replacements": [
+        {"from": "<desc id=\"desc\">四個小圖依序展示空心向左、實心向左、空心向右、實心向右；端點皆標為 c，不提供特定題目的答案。</desc>", "to": "<desc id=\"desc\">四個不按比例的數線圖例，以字母c為端點，依序呈現空心向左、實心向左、空心向右與實心向右；下方提醒方向和端點包含性必須分開判讀。</desc>", "count": 1},
+        {"from": "</defs>\n<g font-family=\"sans-serif\"", "to": "</defs>\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"240\" fill=\"white\"/>\n<g font-family=\"sans-serif\"", "count": 1}
+      ]
+    }
+  ]
+}

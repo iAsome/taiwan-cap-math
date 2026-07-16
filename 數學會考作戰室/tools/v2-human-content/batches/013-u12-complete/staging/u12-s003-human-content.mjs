@@ -10,8 +10,8 @@ export const LECTURE = {
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
-    "能分解 x^2+bx+c。",
-    "能分解 ax^2+bx+c 且 a 不等於 1。",
+    "能分解 x²+bx+c。",
+    "能分解 ax²+bx+c 且 a 不等於 1。",
     "能利用常數正負判斷因數符號。",
     "能計算交叉乘積之和。",
     "能交換因數位置並辨認等價答案。"
@@ -44,7 +44,7 @@ export const LECTURE = {
   "notation": [
     {
       "symbol": "(px+q)(rx+s)",
-      "meaning": "展開為 prx^2+(ps+qr)x+qs。"
+      "meaning": "展開為 prx²+(ps+qr)x+qs。"
     },
     {
       "symbol": "ps+qr",
@@ -55,17 +55,18 @@ export const LECTURE = {
     "十字交乘不是畫圖猜答案，而是同時滿足 pr=a、qs=c、ps+qr=b。",
     "常數為正時 q、s 同號；中間係數為正則多半同正，為負則同負。",
     "常數為負時 q、s 異號，交叉和的符號取決於絕對值較大的交叉乘積。",
-    "候選配對找到後必須展開，因為首尾乘積正確仍可能中間項錯。"
+    "候選配對找到後必須展開，因為首尾乘積正確仍可能中間項錯。",
+    "十字交乘的本質是把候選兩因式完整展開並比對三個係數。若寫成甲倍未知數加常數與乙倍未知數加常數相乘，首項乘積要等於二次項係數，常數乘積要等於常數項，而兩個交叉乘積的和才是一次項係數。常數正負可先縮小同號或異號的候選，但因數放在哪一個括號仍會改變交叉和；找到組合後必須展開，並再檢查各因式是否還含公因數。"
   ],
   "formalDefinitions": [
     {
       "name": "十字交乘條件",
-      "statement": "若 ax^2+bx+c=(px+q)(rx+s)，則 pr=a、qs=c、ps+qr=b。"
+      "statement": "若 ax²+bx+c=(px+q)(rx+s)，則 pr=a、qs=c、ps+qr=b。"
     }
   ],
   "formulas": [
     {
-      "formula": "(px+q)(rx+s)=prx^2+(ps+qr)x+qs",
+      "formula": "(px+q)(rx+s)=prx²+(ps+qr)x+qs",
       "conditions": [
         "p、q、r、s 為選定因數"
       ],
@@ -107,40 +108,44 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "x^2+9x+20",
+      "prompt": "x²+9x+20",
       "solutionSteps": [
         "4·5=20。",
         "4+5=9。"
       ],
-      "answer": "(x+4)(x+5)"
+      "answer": "(x+4)(x+5)",
+      "why": "首項係數為一，所以只需找兩個常數乘積二十且和為九；四與五同時符合。展開兩因式時交叉項為四倍與五倍未知數，正好合成九倍。"
     },
     {
       "exampleId": "L2",
-      "prompt": "x^2-2x-15",
+      "prompt": "x²-2x-15",
       "solutionSteps": [
         "3·(-5)=-15。",
         "3+(-5)=-2。"
       ],
-      "answer": "(x+3)(x-5)"
+      "answer": "(x+3)(x-5)",
+      "why": "常數負十五表示兩數異號，正三與負五的乘積為負十五、和為負二；展開時正三倍與負五倍未知數合為負二倍，三項都吻合。"
     },
     {
       "exampleId": "L3",
-      "prompt": "6x^2+11x+3",
+      "prompt": "6x²+11x+3",
       "solutionSteps": [
-        "首項 3x·2x=6x^2。",
+        "首項 3x·2x=6x²。",
         "交叉和 9x+2x=11x。",
         "常數 1·3=3。"
       ],
-      "answer": "(3x+1)(2x+3)"
+      "answer": "(3x+1)(2x+3)",
+      "why": "首項非首一時不能只加常數，必須把三倍與二倍未知數交叉乘常數；九倍與二倍未知數相加成十一倍，同時首項乘積六、常數乘積三。"
     },
     {
       "exampleId": "L4",
-      "prompt": "8y^2-2y-3",
+      "prompt": "8y²-2y-3",
       "solutionSteps": [
         "交叉和 4y-6y=-2y。",
         "首末項也吻合。"
       ],
-      "answer": "(4y-3)(2y+1)"
+      "answer": "(4y-3)(2y+1)",
+      "why": "四倍未知數乘二倍未知數得到八倍平方，負三與正一得到負三；交叉積正四倍與負六倍未知數相加為負二倍，故符號與三個係數都正確。"
     }
   ],
   "difficultyConnections": {
@@ -230,7 +235,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "270f3f0159421ed0d1cd4408a461a37ebcdadb9803f9e30c1175e2a55b18244f"
+  "contentSha256": "3f4e2e7856a1b01bd3d378d7fecf33d3f1a2291ebcc6f55a313a807ac079fd0f"
 };
 
 export const QUESTIONS = [
@@ -258,7 +263,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(x+2)(x+3)=x²+3x+2x+6=x²+5x+6。",
-    "explanation": "首項為 x²，尋找常數因數 2、3；乘積 6、和 5。",
+    "explanation": "首項為 x²，尋找常數因數 2、3；乘積 6、和 5。 首項係數為一時，兩個常數既要相乘得到六，也要相加得到五；只有二與三同時符合。把兩因式展開後，兩個交叉項合為五倍未知數，首項和常數也吻合。",
     "steps": [
       "列 6 的正因數配對。",
       "選 2 與 3 使和為 5。",
@@ -286,7 +291,7 @@ export const QUESTIONS = [
         "reason": "常數為 -6。"
       }
     ],
-    "misconceptionTarget": "只看常數乘積，不查中間項。",
+    "misconceptionTarget": "只看常數乘積，不查中間項。 常數因數除了乘積要正確，兩個交叉項合併後也必須等於中間項。",
     "prerequisiteCheck": "需會整數因數配對與分配律。",
     "estimatedTimeSec": 60,
     "unitAndRoundingChecks": "無單位；係數皆為精確整數。",
@@ -305,7 +310,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3d72517d0a9a6813f6aeba94d07e5c7da067a6055360018b7d1676f9e6ee7f2d"
+    "contentSha256": "7f10b1cb55496bca4245dd9fcddae980fecb0f0998d78b5f1dc817631d480b33"
   },
   {
     "questionId": "u12-s003-v002",
@@ -331,7 +336,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開得 x²-4x+3x-12=x²-x-12。",
-    "explanation": "常數為負，兩因數異號；3 與 -4 的和為 -1。",
+    "explanation": "常數為負，兩因數異號；3 與 -4 的和為 -1。 常數負十二表示兩個常數因數異號，且它們的和要成為負一；正三與負四的乘積為負十二、和為負一，展開兩因式便得到正三倍與負四倍交叉項。",
     "steps": [
       "列 -12 的異號配對。",
       "比較各配對的和。",
@@ -378,7 +383,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c19f544961ba6095b70e87863afd90ff42c25bd03d4c735232176feddf00a0be"
+    "contentSha256": "cab001fb00385cdb73db3c271f1cfaa56a5eea412bdab0c0fe539856d904f8b7"
   },
   {
     "questionId": "u12-s003-v003",
@@ -404,7 +409,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "(2x+1)(x+3)=2x²+6x+x+3=2x²+7x+3。",
-    "explanation": "首項配 2x、x，常數配 1、3；交叉和 2x·3+1·x=7x。",
+    "explanation": "首項配 2x、x，常數配 1、3；交叉和 2x·3+1·x=7x。 二次項由二倍未知數與未知數相乘，常數由一與三相乘；把一放在二倍未知數旁、三放在另一因式後，交叉項六倍未知數與一倍未知數相加正好為七倍。",
     "steps": [
       "列 2=2·1。",
       "列 3=1·3。",
@@ -451,7 +456,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3d2983a1a2f95c0028fbca6475fc0be8f50600dcdb7905da5d2b243769de7e25"
+    "contentSha256": "2c67230f0500cb8c6102c829d9cda6618e2033e9755209170101699e79206659"
   },
   {
     "questionId": "u12-s003-v004",
@@ -477,7 +482,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "3x²-12x+x-4=3x²-11x-4。",
-    "explanation": "首項配 3x、x；常數配 +1、-4，交叉和 -12+1=-11。",
+    "explanation": "首項配 3x、x；常數配 +1、-4，交叉和 -12+1=-11。 首項配成三倍未知數乘未知數，常數負四需異號；把正一與三倍未知數同括號、負四與未知數同括號後，交叉積為正一倍與負十二倍，和為負十一倍。",
     "steps": [
       "判斷常數異號。",
       "測試 1、-4 的排列。",
@@ -524,7 +529,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "379d5d444ed72605ed6256fb4bec0015b2930a42904e9886d20e68b9c781d05c"
+    "contentSha256": "6f4b603b12de0cbb635451c0dee42e5efd2152d563508ba5fda62d8979f8c3a7"
   },
   {
     "questionId": "u12-s003-v005",
@@ -550,7 +555,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(3x+2)(2x-1)=6x²-3x+4x-2=6x²+x-2。",
-    "explanation": "將 6x² 配為 3x·2x，-2 配為 2·(-1)，交叉和為 1x。",
+    "explanation": "將 6x² 配為 3x·2x，-2 配為 2·(-1)，交叉和為 1x。 六倍平方項取三倍未知數與二倍未知數，常數負二取正二與負一；此排列的交叉項是正四倍與負三倍未知數，相加為一倍，並且首尾乘積也完全符合。",
     "steps": [
       "列首項配對 3×2。",
       "列常數異號配對 2、-1。",
@@ -597,7 +602,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d4a68c5737e2245f8ab93599f4d61120aea71c4193577a37eb03fd53766d332c"
+    "contentSha256": "8e281ac1aee1b49c4de3aec191db145ddcd29cc02d47dea5a7ce036ca53ac6f9"
   },
   {
     "questionId": "u12-s003-v006",
@@ -623,7 +628,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開為 4x²-10x+6x-15=4x²-4x-15。",
-    "explanation": "首項取 2x、2x；常數取 +3、-5，交叉和 -10+6=-4。",
+    "explanation": "首項取 2x、2x；常數取 +3、-5，交叉和 -10+6=-4。 兩個首項都取二倍未知數，常數取正三與負五；交叉積正六倍與負十倍未知數相加為負四倍，常數乘積負十五，展開後三個係數都與原式一致。",
     "steps": [
       "常數負故異號。",
       "試 3 與 5 的位置。",
@@ -651,7 +656,7 @@ export const QUESTIONS = [
         "reason": "交叉項 -10x+6x=-4x。"
       }
     ],
-    "misconceptionTarget": "只看 3-5=-2，忽略前方 2x 倍數。",
+    "misconceptionTarget": "只看 3-5=-2，忽略前方 2x 倍數。 首項係數不為一時，常數的差不能直接當中間係數，必須計算交叉乘積。",
     "prerequisiteCheck": "需會非首一十字交乘。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位與近似。",
@@ -670,7 +675,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a8b05cf43f0261d5297763c086df6ac4e9ea0abfe1ddc6977665747c50875a7b"
+    "contentSha256": "526f877d1cf8d513cf508bb1fd176be9ff601b52476c986c1a1daa109d153003"
   },
   {
     "questionId": "u12-s003-v007",
@@ -696,7 +701,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "中間係數由 3+6=9；常數 18 另行吻合。",
-    "explanation": "(x+3)(x+6)=x²+9x+18，所以 k=9。",
+    "explanation": "(x+3)(x+6)=x²+9x+18，所以 k=9。 展開兩個首一因式時，一次項來自六倍未知數與三倍未知數相加，所以中間係數為九；常數三乘六另得十八，兩者用途不同，不能把常數積當成一次項係數。",
     "steps": [
       "展開四項。",
       "合併一次項。",
@@ -724,7 +729,7 @@ export const QUESTIONS = [
         "reason": "只取另一個常數因數。"
       }
     ],
-    "misconceptionTarget": "把乘積 18 或單一因數當 k。",
+    "misconceptionTarget": "把乘積 18 或單一因數當 k。 中間係數來自兩個交叉項相加，不是常數因數的乘積或其中一個因數。",
     "prerequisiteCheck": "需會展開與係數比對。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位；k 精確。",
@@ -743,7 +748,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "2700933018349accaa67a4b30ead28e3d89de5bd9a911c1ac46b6ffe4ddd29a3"
+    "contentSha256": "024d6f7ad6cffd68c653b91000121f615a7ebed7ed8966ce23b83844085d25fa"
   },
   {
     "questionId": "u12-s003-v008",
@@ -769,7 +774,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "與左式比較一次項係數，b=14。",
-    "explanation": "展開右式：6x²+18x-4x-12=6x²+14x-12。",
+    "explanation": "展開右式：6x²+18x-4x-12=6x²+14x-12。 右式的交叉項分別是正十八倍未知數與負四倍未知數，合併為正十四倍；首項六倍平方與常數負十二也同時吻合，因此與左式比對可確定參數為正十四。",
     "steps": [
       "算首項 6x²。",
       "算交叉項 18x、-4x。",
@@ -797,7 +802,7 @@ export const QUESTIONS = [
         "reason": "把交叉和符號整體顛倒。"
       }
     ],
-    "misconceptionTarget": "交叉乘積符號處理錯誤。",
+    "misconceptionTarget": "交叉乘積符號處理錯誤。 計算交叉和時必須保留負二乘二倍未知數所得的負四倍未知數。",
     "prerequisiteCheck": "需會負號乘法與同類項。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位與近似。",
@@ -816,7 +821,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1dec0271aef91e46571133e1662d67d4f36a09a9da82c2838887040f92b80aec"
+    "contentSha256": "038b313dca486bf13b5a36fed6567d4dc18bb59088a97a7148794188e3730181"
   },
   {
     "questionId": "u12-s003-v009",
@@ -842,7 +847,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "原式係數比對得 m=8；完整分解還要提出數字 2。",
-    "explanation": "(2x+4)(x+2)=2(x+2)(x+2)=2x²+8x+8。",
+    "explanation": "(2x+4)(x+2)=2(x+2)(x+2)=2x²+8x+8。 先展開已知兩因式，交叉項四倍與四倍未知數合成八倍，所以參數為八；但第一因式二倍未知數加四仍可提出二，最完整形式應為二乘未知數加二的平方。",
     "steps": [
       "先展開求 m=8。",
       "觀察 2x+4=2(x+2)。",
@@ -889,7 +894,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "00d7ed963bd927b8171bb254fdd133580a382f24f3ead1e7e32b2d5ec865a1c4"
+    "contentSha256": "50e79721d9ad95eff91176bb2f719e16f05e03fcb50cdb90743a2d7a326058ba"
   },
   {
     "questionId": "u12-s003-v010",
@@ -915,7 +920,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "面積乘回 x²+8x+15 平方公尺。",
-    "explanation": "x²+8x+15=(x+3)(x+5)，兩因式可解讀為長與寬。",
+    "explanation": "x²+8x+15=(x+3)(x+5)，兩因式可解讀為長與寬。 常數十五的正因數中，三與五的和正好為八，因此面積式分成未知數加三與未知數加五；題設未知數為正，使兩個邊長皆為正，乘回也恢復原面積。",
     "steps": [
       "找 15 的正因數配對。",
       "選和為 8 的 3、5。",
@@ -943,7 +948,7 @@ export const QUESTIONS = [
         "reason": "3·5=15，3+5=8。"
       }
     ],
-    "misconceptionTarget": "只配常數乘積，忽略中間項。",
+    "misconceptionTarget": "只配常數乘積，忽略中間項。 幾何邊長必須同時符合常數乘積、中間係數與正值條件，不能只配常數。",
     "prerequisiteCheck": "需知道長方形面積。",
     "estimatedTimeSec": 120,
     "unitAndRoundingChecks": "兩因式單位公尺，乘積為平方公尺；無近似。",
@@ -962,7 +967,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d27c50dade6dbe146db8abd8e46ab8f4da03f5f00bf049885298c1a8d3f0db59"
+    "contentSha256": "a89d5f96a15b235f712a7a8599d93a06caa39bdbaa7ead600a2e93446f644694"
   },
   {
     "questionId": "u12-s003-v011",
@@ -988,7 +993,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "展開逐項為 3n²+6n+4n+8。",
-    "explanation": "3n²+10n+8=(3n+4)(n+2)。",
+    "explanation": "3n²+10n+8=(3n+4)(n+2)。 首項配成三倍數量乘數量，常數八配成四乘二；此排列的交叉項是六倍與四倍數量，合計十倍。交換四與二的位置會得到十四倍，所以只有原排列正確。",
     "steps": [
       "首項配 3n、n。",
       "常數配 4、2。",
@@ -1035,7 +1040,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "aa8ff3697ad790185c98ef86e9c2252a4e902ade4a7025dbb6797b7d4e61be10"
+    "contentSha256": "c4151f1dc743d8cc80e04484346d5691dd130d6ece0f7290b586526e0b5598d0"
   },
   {
     "questionId": "u12-s003-v012",
@@ -1061,7 +1066,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "三個係數完全相同，因此排列模型恆等成立。",
-    "explanation": "(2r+1)(r+4)=2r²+8r+r+4=2r²+9r+4。",
+    "explanation": "(2r+1)(r+4)=2r²+8r+r+4=2r²+9r+4。 將排數與每排席數相乘，四個乘積依序為二倍平方、八倍一次、一次與四；兩個一次項合成九倍，與座位總數模型完全相同，因此對所有正整數都成立。",
     "steps": [
       "計算四個乘積。",
       "合併 8r+r。",
@@ -1108,7 +1113,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b1959ffd4c578e830b4df570f3d5d4c7016c16957e2fc9a588aa71a6cda57204"
+    "contentSha256": "14e2b7bf83a558219b4f292d84c2a46433e07c5b517a6c165a025e94fb38fb09"
   }
 ];
 
@@ -1133,7 +1138,8 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "取 (3x+1)(2x-3)。",
       "交叉乘積為 -9x 與 +2x，和為 -7x。",
-      "展開得 6x²-7x-3。"
+      "展開得 6x²-7x-3。",
+      "選三倍未知數與二倍未知數使首項為六倍平方，再選正一與負三使常數為負三；兩個交叉積為正二倍與負九倍未知數，和為負七倍。完整展開兩因式即可依序得到六倍平方、負七倍一次與負三。"
     ],
     "alternativeSolutions": [
       "亦可寫 (2x-3)(3x+1)，因式順序交換。"
@@ -1183,7 +1189,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5943ee44b3ff10798a5be31e05d4ffbf5c37d419667380e405677f77d700df66"
+    "contentSha256": "a94a24aa2c7082110059c8be35c579a81070c5f57b97c70382683664d53bd1e2"
   },
   {
     "questionId": "u12-s003-cr002",
@@ -1204,7 +1210,8 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "右式=8x²+4x-6x-3=8x²-2x-3。",
       "所以 k=-2。",
-      "首項 8、常數 -3 與左式一致，一次項交叉和為 -2x。"
+      "首項 8、常數 -3 與左式一致，一次項交叉和為 -2x。",
+      "展開右式時，首項四倍未知數乘二倍未知數得到八倍平方；交叉項為正四倍與負六倍未知數，合併成負二倍，所以參數等於負二；常數負三乘一仍為負三，三個係數都與左式逐項一致。"
     ],
     "alternativeSolutions": [
       "可直接計算交叉係數 4·1+(-3)·2=4-6=-2，再核對首尾。"
@@ -1254,7 +1261,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "856152bd225718eeeedd810d52746a84a5bfce5f9d25fdd899bc63371654c9b4"
+    "contentSha256": "556d9f12148e181c87ece4dd910272b2300547185ed45d5e43b8520d5d31eb4b"
   }
 ];
 
@@ -1263,7 +1270,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v001",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "3d72517d0a9a6813f6aeba94d07e5c7da067a6055360018b7d1676f9e6ee7f2d",
+    "contentSha256": "7f10b1cb55496bca4245dd9fcddae980fecb0f0998d78b5f1dc817631d480b33",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(x+2)(x+3)=x²+3x+2x+6=x²+5x+6。",
     "derivedAnswer": "(x+2)(x+3)",
@@ -1297,7 +1304,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v002",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "c19f544961ba6095b70e87863afd90ff42c25bd03d4c735232176feddf00a0be",
+    "contentSha256": "cab001fb00385cdb73db3c271f1cfaa56a5eea412bdab0c0fe539856d904f8b7",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開得 x²-4x+3x-12=x²-x-12。",
     "derivedAnswer": "(x+3)(x-4)",
@@ -1331,7 +1338,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v003",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "3d2983a1a2f95c0028fbca6475fc0be8f50600dcdb7905da5d2b243769de7e25",
+    "contentSha256": "2c67230f0500cb8c6102c829d9cda6618e2033e9755209170101699e79206659",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(2x+1)(x+3)=2x²+6x+x+3=2x²+7x+3。",
     "derivedAnswer": "(2x+1)(x+3)",
@@ -1365,7 +1372,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v004",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "379d5d444ed72605ed6256fb4bec0015b2930a42904e9886d20e68b9c781d05c",
+    "contentSha256": "6f4b603b12de0cbb635451c0dee42e5efd2152d563508ba5fda62d8979f8c3a7",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "3x²-12x+x-4=3x²-11x-4。",
     "derivedAnswer": "(3x+1)(x-4)",
@@ -1399,7 +1406,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v005",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "d4a68c5737e2245f8ab93599f4d61120aea71c4193577a37eb03fd53766d332c",
+    "contentSha256": "8e281ac1aee1b49c4de3aec191db145ddcd29cc02d47dea5a7ce036ca53ac6f9",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(3x+2)(2x-1)=6x²-3x+4x-2=6x²+x-2。",
     "derivedAnswer": "(3x+2)(2x-1)",
@@ -1433,7 +1440,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v006",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "a8b05cf43f0261d5297763c086df6ac4e9ea0abfe1ddc6977665747c50875a7b",
+    "contentSha256": "526f877d1cf8d513cf508bb1fd176be9ff601b52476c986c1a1daa109d153003",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開為 4x²-10x+6x-15=4x²-4x-15。",
     "derivedAnswer": "(2x+3)(2x-5)",
@@ -1467,7 +1474,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v007",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "2700933018349accaa67a4b30ead28e3d89de5bd9a911c1ac46b6ffe4ddd29a3",
+    "contentSha256": "024d6f7ad6cffd68c653b91000121f615a7ebed7ed8966ce23b83844085d25fa",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "中間係數由 3+6=9；常數 18 另行吻合。",
     "derivedAnswer": "9",
@@ -1501,7 +1508,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v008",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "1dec0271aef91e46571133e1662d67d4f36a09a9da82c2838887040f92b80aec",
+    "contentSha256": "038b313dca486bf13b5a36fed6567d4dc18bb59088a97a7148794188e3730181",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "與左式比較一次項係數，b=14。",
     "derivedAnswer": "14",
@@ -1535,7 +1542,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v009",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "00d7ed963bd927b8171bb254fdd133580a382f24f3ead1e7e32b2d5ec865a1c4",
+    "contentSha256": "50e79721d9ad95eff91176bb2f719e16f05e03fcb50cdb90743a2d7a326058ba",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "原式係數比對得 m=8；完整分解還要提出數字 2。",
     "derivedAnswer": "m=8，且原分解不是最精簡形式",
@@ -1569,7 +1576,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v010",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "d27c50dade6dbe146db8abd8e46ab8f4da03f5f00bf049885298c1a8d3f0db59",
+    "contentSha256": "a89d5f96a15b235f712a7a8599d93a06caa39bdbaa7ead600a2e93446f644694",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "面積乘回 x²+8x+15 平方公尺。",
     "derivedAnswer": "x+3 與 x+5 公尺",
@@ -1603,7 +1610,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v011",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "aa8ff3697ad790185c98ef86e9c2252a4e902ade4a7025dbb6797b7d4e61be10",
+    "contentSha256": "c4151f1dc743d8cc80e04484346d5691dd130d6ece0f7290b586526e0b5598d0",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開逐項為 3n²+6n+4n+8。",
     "derivedAnswer": "(3n+4)(n+2) 元",
@@ -1637,7 +1644,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s003-v012",
     "unitId": "u12",
     "skillId": "factoring-cross",
-    "contentSha256": "b1959ffd4c578e830b4df570f3d5d4c7016c16957e2fc9a588aa71a6cda57204",
+    "contentSha256": "14e2b7bf83a558219b4f292d84c2a46433e07c5b517a6c165a025e94fb38fb09",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "三個係數完全相同，因此排列模型恆等成立。",
     "derivedAnswer": "正確，因展開為 2r²+9r+4",

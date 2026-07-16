@@ -99,6 +99,11 @@
       "step": 4,
       "instruction": "作第二條高取交點。",
       "check": "第三條高是否也通過？"
+    },
+    {
+      "step": 5,
+      "instruction": "依銳角、直角或鈍角檢查垂心應在內部、頂點或外部。",
+      "check": "位置只能作驗算，仍須逐條確認通過頂點且垂直對邊。"
     }
   ],
   "workedExamples": [
@@ -107,18 +112,22 @@
       "prompt": "∠C=90°，垂心在哪？",
       "solutionSteps": [
         "AC⊥BC。",
-        "AC與BC分別是兩條高。"
+        "AC通過A且垂直BC，是A高。",
+        "BC通過B且垂直AC，是B高。"
       ],
-      "answer": "垂心在C。"
+      "answer": "垂心在C。",
+      "why": "兩股AC、BC本身已是兩條高，並在直角頂點C相交；三高共點，所以不必另外作線就能確定垂心為C，且不可與斜邊中點的外心混淆。"
     },
     {
       "exampleId": "L2",
       "prompt": "鈍角三角形某高垂足在線段外。",
       "solutionSteps": [
-        "延長對邊。",
-        "過頂點作垂線。"
+        "延長對邊所在直線。",
+        "過指定頂點作該直線的垂線。",
+        "在垂足標直角並保留延長線。"
       ],
-      "answer": "該線仍是高。"
+      "answer": "該線仍是高。",
+      "why": "高所垂直的是對邊所在的完整直線，不限於有限線段；垂足落在延長部分仍同時滿足通過頂點與垂直兩項定義。"
     }
   ],
   "commonMistakes": [
@@ -136,6 +145,11 @@
       "mistake": "把直角外心與垂心混淆。",
       "why": "兩個特殊位置不同。",
       "correction": "垂心在直角頂點，外心在斜邊中點。"
+    },
+    {
+      "mistake": "看到兩條虛線相交就直接標成垂心。",
+      "why": "共點本身不保證每條線都是高，圖形外觀也不能證明垂直。",
+      "correction": "逐條核對它通過哪個頂點，並在與對邊所在直線的交點標直角。"
     }
   ],
   "selfCheck": [
@@ -193,5 +207,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "57e545dcaa4c5fe1b31df45fb1b7ea2d80d366ab906781635ff9e7ac1706dc65"
+  "contentSha256": "b1376e2fdf320fdb7ca71c7ec3244f37a78686e6ab529d4ea19b8f2c0780619b"
 }

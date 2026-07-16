@@ -108,6 +108,11 @@ export const LECTURE = {
       "step": 4,
       "instruction": "整理成雙邊不等式或說明無解。",
       "check": "端點包含性是否保留？"
+    },
+    {
+      "step": 5,
+      "instruction": "用交集內外的代表值回代兩式。",
+      "check": "代表值是否同時通過兩個條件？"
     }
   ],
   "workedExamples": [
@@ -118,7 +123,8 @@ export const LECTURE = {
         "第一條件在 1 右側，第二條件在 4 左側含 4。",
         "重疊為 1<x≤4。"
       ],
-      "answer": "1<x≤4。"
+      "answer": "1<x≤4。",
+      "why": "且要求同一個 x 同時位於一的右側與四的左側，所以只留下兩段重疊區。端點一因嚴格大於而排除，端點四因小於或等於而保留。"
     },
     {
       "exampleId": "L2",
@@ -127,7 +133,8 @@ export const LECTURE = {
         "第一解集在 −2 左側，第二在 3 右側。",
         "兩者沒有重疊。"
       ],
-      "answer": "無解。"
+      "answer": "無解。",
+      "why": "負二左側與三右側是分離的兩段數線，沒有任何數能同時落在兩段中。兩個單獨條件雖各自有解，但取交集後仍可能成為空集合。"
     },
     {
       "exampleId": "L3",
@@ -136,7 +143,8 @@ export const LECTURE = {
         "兩條件都只共同包含 5。",
         "交集為單點。"
       ],
-      "answer": "x=5。"
+      "answer": "x=5。",
+      "why": "第一段從五向右、第二段從五向左，而且兩者都包含五。除五以外，小數或大數都會違反其中一式，因此交集可以只有單一點。"
     },
     {
       "exampleId": "L4",
@@ -145,7 +153,8 @@ export const LECTURE = {
         "至少 120 表示 h≥120。",
         "未滿 150 表示 h<150。"
       ],
-      "answer": "120≤h<150。"
+      "answer": "120≤h<150。",
+      "why": "至少包含一百二十，未滿則排除一百五十；兩項規則要同時通過，才能搭乘。雙邊式保留一閉一開的端點，也直接表達可搭乘身高範圍。"
     }
   ],
   "commonMistakes": [
@@ -235,7 +244,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "b4b1ef07f71f076c316efaca06f125515a72e4dfb32ab581fa8c459370e88ea0"
+  "contentSha256": "a8a9808a877dc8b0ee509e7f5a179f31e9015cda7c915c7398cfa289814a016d"
 };
 
 export const QUESTIONS = [
@@ -265,11 +274,11 @@ export const QUESTIONS = [
       "result": "2<x≤6",
       "answerIndexVerified": 2
     },
-    "explanation": "大於 2 不含 2，小於或等於 6 包含 6，合併為 2<x≤6。",
+    "explanation": "大於二表示 x 位在二的右側且不包含二，可寫二小於 x；小於或等於六表示 x 不超過六且包含六。把同一個 x 放中間，得到二小於 x 且 x 不超過六。",
     "steps": [
-      "寫下 x>2",
-      "寫下 x≤6",
-      "按小到大合併"
+      "將大於二翻成 2<x，排除端點二。",
+      "將小於或等於六翻成 x≤6，包含端點六。",
+      "把共同未知數放中間，合併為 2<x≤6。"
     ],
     "optionAnalysis": [
       {
@@ -293,7 +302,7 @@ export const QUESTIONS = [
         "reason": "錯排除 6。"
       }
     ],
-    "misconceptionTarget": "雙邊端點包含性混淆。",
+    "misconceptionTarget": "把兩端的含等號狀態交換，或沒有讓同一個 x 同時滿足兩個條件。",
     "prerequisiteCheck": "需懂四種不等號。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "無單位。",
@@ -309,7 +318,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5b845a18b5fe89674a0b2614dcbf2669c383a1414c09dcd2f90f352ea156065a"
+    "contentSha256": "705370a9a893ce40cb26d093923cd9cc2282bff8ae3bacec1169e3272768f312"
   },
   {
     "questionId": "u07-s007-v002",
@@ -337,10 +346,11 @@ export const QUESTIONS = [
       "result": "−1≤x<3",
       "answerIndexVerified": 0
     },
-    "explanation": "第一解集從 −1 向右含端點，第二解集在 3 左側不含端點；重疊為 −1≤x<3。",
+    "explanation": "第一個解集由負一向右延伸並包含負一，第二個解集位在三左側且不包含三。且表示兩條件同時成立，所以只保留兩段重疊的負一到三之間，得到負一不超過 x 且 x 小於三。",
     "steps": [
-      "畫兩個單邊範圍",
-      "只取重疊部分"
+      "表示 x≥−1 的向右範圍，保留實心端點負一。",
+      "表示 x<3 的向左範圍，排除端點三。",
+      "只取兩範圍重疊處，寫成 −1≤x<3。"
     ],
     "optionAnalysis": [
       {
@@ -364,7 +374,7 @@ export const QUESTIONS = [
         "reason": "兩區間有重疊。"
       }
     ],
-    "misconceptionTarget": "把且當成只需滿足其中一條。",
+    "misconceptionTarget": "把『且』誤當任一條件成立即可，取成兩個解集的聯集而不是交集。",
     "prerequisiteCheck": "需會數線方向。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "無單位。",
@@ -380,7 +390,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5c5cdf41276c5264570484f52e1043815e5d366c0a5d79227c816fe52f8ace9e"
+    "contentSha256": "b5c577b06708eed228986b4674a9ae23d2ecc40780e8b0e1d14f2ef1f962d4ca"
   },
   {
     "questionId": "u07-s007-v003",
@@ -408,10 +418,11 @@ export const QUESTIONS = [
       "result": "無解",
       "answerIndexVerified": 3
     },
-    "explanation": "同一個 x 不可能同時小於 0 又大於或等於 4，兩解集沒有共同部分。",
+    "explanation": "若 x 小於零，就一定在四的左側，不可能同時大於或等於四。兩個單邊解集彼此分離，沒有任何實數能同時通過，因此共同解集是空集合，也就是無解。",
     "steps": [
-      "辨認兩段分離",
-      "判定交集為空"
+      "畫出 x<0 在零左側的範圍。",
+      "畫出 x≥4 從四向右的範圍。",
+      "確認兩段沒有重疊，判定共同解集無解。"
     ],
     "optionAnalysis": [
       {
@@ -435,7 +446,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「無解」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把兩個解集全部列出，未取交集。",
+    "misconceptionTarget": "分別看到兩個非空解集就認為有答案，沒有檢查同一個 x 必須同時符合。",
     "prerequisiteCheck": "需會比較 0 與 4。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "無單位。",
@@ -451,7 +462,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a85598b2edc5b8c2d59fc3580c9c4995d02fcf31812f9b790bfb90cff490a52d"
+    "contentSha256": "8e8b4ef238c274b4ad75c7d35191d34cdac739ca00785b0151670fc9e913911a"
   },
   {
     "questionId": "u07-s007-v004",
@@ -479,10 +490,11 @@ export const QUESTIONS = [
       "result": "x=5",
       "answerIndexVerified": 1
     },
-    "explanation": "兩條件都包含 5，而任何小於或大於 5 的數會違反其中一條，所以交集只有 x=5。",
+    "explanation": "x 不小於五的解集從五向右，x 不大於五的解集從五向左，兩者都包含端點五。小於五會違反第一條，大於五會違反第二條，所以唯一共同值是 x 等於五。",
     "steps": [
-      "檢查端點 5 同時符合",
-      "排除其他數"
+      "確認 x≥5 與 x≤5 都包含端點五。",
+      "排除所有小於五的數，因它們不符合第一式。",
+      "排除所有大於五的數，得到交集只有 x=5。"
     ],
     "optionAnalysis": [
       {
@@ -506,7 +518,7 @@ export const QUESTIONS = [
         "reason": "大多數數不符合。"
       }
     ],
-    "misconceptionTarget": "以為交集必須是一段有長度的區間。",
+    "misconceptionTarget": "以為交集一定要有一段長度，忽略兩個閉區間可以只在單一端點相交。",
     "prerequisiteCheck": "需理解端點交集。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "無單位。",
@@ -522,7 +534,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "018ee6786171cda317fe3c37ab4e19f04516bdfafc486d419df0e05cbc3576f8"
+    "contentSha256": "dd4d164a14b3241b2e6328100c56f3628d9ed79b428474640bc2bceb1ac6681e"
   },
   {
     "questionId": "u07-s007-v005",
@@ -550,10 +562,11 @@ export const QUESTIONS = [
       "result": "3<x≤5",
       "answerIndexVerified": 0
     },
-    "explanation": "第一式得 x>3；第二式得 x≤5。取共同部分為 3<x≤5。",
+    "explanation": "第一式兩邊減二得 x 大於三；第二式除以正二得 x 不超過五。且要求兩式同時成立，因此取兩解集重疊部分，左端三不含、右端五包含，答案為三小於 x 且 x 不超過五。",
     "steps": [
-      "分別解兩式",
-      "取交集"
+      "解 x+2>5，得到 x>3。",
+      "解 2x≤10，得到 x≤5。",
+      "取交集並保留端點性，寫成 3<x≤5。"
     ],
     "optionAnalysis": [
       {
@@ -577,7 +590,7 @@ export const QUESTIONS = [
         "reason": "兩解集有重疊。"
       }
     ],
-    "misconceptionTarget": "解完兩式未把限制合併。",
+    "misconceptionTarget": "分別解完兩式卻沒有取共同部分，或在合併時弄反三與五的端點符號。",
     "prerequisiteCheck": "需會基本解法。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "無單位。",
@@ -593,7 +606,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "0090b378766689b7fa3cee15e7686636337ac9eb9addd10a37602de43628b465"
+    "contentSha256": "546086b0a2684a419cabd5e3f948abe3de19a565d93b7362dc670a55431050e7"
   },
   {
     "questionId": "u07-s007-v006",
@@ -621,10 +634,11 @@ export const QUESTIONS = [
       "result": "0",
       "answerIndexVerified": 3
     },
-    "explanation": "−2 被嚴格左端排除；3 與 2.5 超過 2；0 位於範圍內。",
+    "explanation": "候選值必須同時大於負二且不超過二。負二被嚴格左界排除，三與二點五都超過右界；零位在兩端之間，代入兩個條件都成立，所以唯一正確選項是零。",
     "steps": [
-      "檢查左界",
-      "檢查右界"
+      "逐項檢查是否滿足 −2<x。",
+      "再檢查是否同時滿足 x≤2。",
+      "只有零通過兩個界限，因此選零。"
     ],
     "optionAnalysis": [
       {
@@ -648,7 +662,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「0」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "只檢查其中一個界限。",
+    "misconceptionTarget": "只檢查左界或右界其中一個條件，沒有把候選值同時代入兩邊。",
     "prerequisiteCheck": "需會代入雙邊不等式。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "無單位。",
@@ -664,7 +678,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b1c50d1236510f2b1a037899b1f08f0649c299f222b4c8379d558c40041f69d3"
+    "contentSha256": "9de529ffce19c936963e6dd41efde0d38449b86d30768225779cd14fd85af007"
   },
   {
     "questionId": "u07-s007-v007",
@@ -692,11 +706,11 @@ export const QUESTIONS = [
       "result": "3≤x<5",
       "answerIndexVerified": 1
     },
-    "explanation": "第一式得 x≥3；第二式得 3x<15，所以 x<5。共同解為 3≤x<5。",
+    "explanation": "第一式兩邊加一再除以正二，得到 x 不小於三；第二式兩邊減二再除以正三，得到 x 小於五。兩條件的共同部分由三到五，包含三而排除五，所以是三不超過 x 且 x 小於五。",
     "steps": [
-      "解第一式",
-      "解第二式",
-      "取含左不含右的交集"
+      "解 2x−1≥5，得到 x≥3。",
+      "解 3x+2<17，得到 x<5。",
+      "取交集並保留左閉右開，寫成 3≤x<5。"
     ],
     "optionAnalysis": [
       {
@@ -720,7 +734,7 @@ export const QUESTIONS = [
         "reason": "端點包含性相反。"
       }
     ],
-    "misconceptionTarget": "兩條件端點符號在合併時被交換。",
+    "misconceptionTarget": "合併兩個解集時交換端點的等號，使三被排除或五被錯誤納入。",
     "prerequisiteCheck": "需會多步解法。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "無單位。",
@@ -736,7 +750,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "86782d9cffdd1439e4831d66372be702fe99526aa70a460a644c93debfea26b2"
+    "contentSha256": "62271d36ea1997905621c52081fe07cba1462504a8ae5ead38457e36b7a6afa3"
   },
   {
     "questionId": "u07-s007-v008",
@@ -764,10 +778,11 @@ export const QUESTIONS = [
       "result": "a=1,b=4",
       "answerIndexVerified": 2
     },
-    "explanation": "因 a 為整數且 x>a，要讓最小整數解為 2，需 a=1；因 x≤b 且最大整數解為 4，需 b=4。",
+    "explanation": "解集中最小整數是二，而下界形式為 x 大於整數 a，所以 a 必須是前一個整數一。最大整數是四且上界包含 b，因此 b 必須為四；代回一小於 x 且 x 不超過四，整數正好二、三、四。",
     "steps": [
-      "由最小整數解反推開下界",
-      "由最大整數解反推閉上界"
+      "由最小整數解二反推開下界整數 a=1。",
+      "由最大整數解四反推閉上界 b=4。",
+      "代回 1<x≤4，確認整數解恰為二、三、四。"
     ],
     "optionAnalysis": [
       {
@@ -791,7 +806,7 @@ export const QUESTIONS = [
         "reason": "會多出整數 5。"
       }
     ],
-    "misconceptionTarget": "未利用 a、b 為整數與端點開閉。",
+    "misconceptionTarget": "沒有利用 a、b 是整數與一開一閉的端點性，選到會多含一或五的範圍。",
     "prerequisiteCheck": "需會整數邊界反推。",
     "estimatedTimeSec": "110",
     "unitAndRoundingCheck": "無單位。",
@@ -807,7 +822,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e2a2aa2ac0c40c7b4ab126bcbfce372d61ac8ee39c0fd43fa056086c43ac5190"
+    "contentSha256": "91e45b4e2bf8bf2a29a0042c63c7d7de02906528df3d3968709104a96ff75df1"
   },
   {
     "questionId": "u07-s007-v009",
@@ -835,11 +850,11 @@ export const QUESTIONS = [
       "result": "−2<x≤5",
       "answerIndexVerified": 3
     },
-    "explanation": "−x<2 除以 −1 變號得 x>−2；第二式得 2x≤10，所以 x≤5。交集為 −2<x≤5。",
+    "explanation": "第一式負 x 小於二，兩邊除以負一時不等號反向，得到 x 大於負二；第二式移項得二 x 不超過十，所以 x 不超過五。取共同部分為負二小於 x 且 x 不超過五。",
     "steps": [
-      "第一式除負數變號",
-      "第二式解上界",
-      "取交集"
+      "將 −x<2 除以負一並變號，得 x>−2。",
+      "解 2x−3≤7，得到 x≤5。",
+      "取兩解集交集，寫成 −2<x≤5。"
     ],
     "optionAnalysis": [
       {
@@ -863,7 +878,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「−2<x≤5」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "第一式負數變號或交集端點錯誤。",
+    "misconceptionTarget": "第一式除以負數未變號，或交集時把負二與五的開閉端點弄反。",
     "prerequisiteCheck": "需會負數變號。",
     "estimatedTimeSec": "100",
     "unitAndRoundingCheck": "無單位。",
@@ -879,7 +894,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "0aea7b220327a667a39bcc48bb2964be3ec3847e67697880de7c2a6c3aba2c3c"
+    "contentSha256": "cb9cd6de6ea0a5862d31941e0349f2314a1df826d806f5dc7e448daeeae8b85f"
   },
   {
     "questionId": "u07-s007-v010",
@@ -907,10 +922,11 @@ export const QUESTIONS = [
       "result": "149 公分",
       "answerIndexVerified": 1
     },
-    "explanation": "規則為 120≤h<150。149 位於範圍內；119 低於下限，150 與 151 不符合未滿 150。",
+    "explanation": "至少一百二十包含一百二十，未滿一百五十排除一百五十，所以規則是 h 不小於一百二十且 h 小於一百五十。四個選項中只有一百四十九同時通過上下限。",
     "steps": [
-      "翻譯兩個身高限制",
-      "逐一代入共同範圍"
+      "把至少 120 翻成 h≥120。",
+      "把未滿 150 翻成 h<150。",
+      "逐項代入共同範圍，只有 149 公分符合。"
     ],
     "optionAnalysis": [
       {
@@ -934,7 +950,7 @@ export const QUESTIONS = [
         "reason": "選項「151 公分」超過上限。，與獨立解得的「149 公分」不一致。"
       }
     ],
-    "misconceptionTarget": "只符合其中一條就判定可搭。",
+    "misconceptionTarget": "只符合最低或最高限制之一便判定可搭，沒有同時檢查兩個身高門檻。",
     "prerequisiteCheck": "需理解至少與未滿。",
     "estimatedTimeSec": "65",
     "unitAndRoundingCheck": "單位均為公分。",
@@ -950,7 +966,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "69af2d5411ca07b1daccf769e83a8dd49d51b6f3e73aa359bdbb4a03e5dd539d"
+    "contentSha256": "914091b354f31d6ae9c3043e8cd85c64435bb7fd02b78161d106d7c42e2da103"
   },
   {
     "questionId": "u07-s007-v011",
@@ -978,10 +994,11 @@ export const QUESTIONS = [
       "result": "8 個",
       "answerIndexVerified": 2
     },
-    "explanation": "範圍為 −5<T≤3，整數讀數 −4、−3、−2、−1、0、1、2、3，共 8 個。",
+    "explanation": "高於負五排除負五，不超過三包含三，因此整數讀數從負四到三。依序為負四、負三、負二、負一、零、一、二、三，用末減首加一可驗得共有八個。",
     "steps": [
-      "建立雙邊範圍",
-      "列整數並計數"
+      "將保存範圍寫成 −5<T≤3。",
+      "列出負四到三的全部整數讀數。",
+      "以 3−(−4)+1=8 驗證個數。"
     ],
     "optionAnalysis": [
       {
@@ -1005,7 +1022,7 @@ export const QUESTIONS = [
         "reason": "多算 −5。"
       }
     ],
-    "misconceptionTarget": "負端點與包含性造成計數錯誤。",
+    "misconceptionTarget": "把負五納入或把三排除，並因負數端點造成連續整數計數差一。",
     "prerequisiteCheck": "需會負整數列舉。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "單位 °C，讀數整數化已明示。",
@@ -1021,7 +1038,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "04fe67a0d1a4c4d1290da0621e58c1175c05487d29bbb6954cba2184668c8799"
+    "contentSha256": "3d98598ffbb06d962b9df8dad8d77d3fc07ac63ea426c524f8c74c170bf13a99"
   },
   {
     "questionId": "u07-s007-v012",
@@ -1049,10 +1066,11 @@ export const QUESTIONS = [
       "result": "13、14、15",
       "answerIndexVerified": 0
     },
-    "explanation": "不低於 13 是 a≥13，不高於 15 是 a≤15；整數共同解為 13、14、15。",
+    "explanation": "不低於十三表示年齡至少十三，不高於十五表示至多十五，兩端都包含。年齡又以整數歲計，所以從十三到十五的完整共同解只有十三、十四、十五。",
     "steps": [
-      "翻譯上下界",
-      "列共同整數"
+      "將不低於十三翻成 a≥13。",
+      "將不高於十五翻成 a≤15。",
+      "取整數交集並列出十三、十四、十五。"
     ],
     "optionAnalysis": [
       {
@@ -1076,7 +1094,7 @@ export const QUESTIONS = [
         "reason": "多算 12。"
       }
     ],
-    "misconceptionTarget": "把其中一個含等號端點排除。",
+    "misconceptionTarget": "把不低於或不高於誤讀成嚴格不等式，錯誤排除十三或十五的端點。",
     "prerequisiteCheck": "需理解不低於與不高於。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "單位歲一致。",
@@ -1092,7 +1110,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "482eab581e14ec29d795b55c551595785f60bf56bc2ca16b0188cb98cbae044c"
+    "contentSha256": "32ace9c5f1aa7299f49e8c4a289e3f78dfcbb588f081512bd92f4f1d6856e02e"
   }
 ];
 
@@ -1112,19 +1130,18 @@ export const CONSTRUCTED_RESPONSES = [
       "列出整數解"
     ],
     "fullCreditSolution": [
-      "第一條件為 x>−3。",
-      "第二條件 2x+1≤9，得 2x≤8，所以 x≤4。",
-      "取且的交集，得 −3<x≤4。",
-      "整數解為 −2、−1、0、1、2、3、4。"
+      "第一條件已是 x>−3，表示負三右側且不含負三。",
+      "第二條件 2x+1≤9，兩邊減一得 2x≤8，再除以正二得 x≤4。",
+      "且表示取交集，因此共同解集為 −3<x≤4。",
+      "其中整數解為 −2、−1、0、1、2、3、4。"
     ],
     "alternativeMethod": [
       "可在同一數線畫出 x>−3 與 x≤4，再讀出重疊區；整數只取重疊帶內的刻度。"
     ],
     "reasoningSteps": [
-      "獨立求解",
-      "找交集",
-      "保留兩端包含性",
-      "取整數交集"
+      "分別解兩個不等式，保留各自端點性。",
+      "在同一數線取負三右側與四左側的重疊。",
+      "從共同實數解集中列出全部整數。"
     ],
     "rubric": [
       {
@@ -1149,8 +1166,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "接受 −3<x≤4 或 x>−3 且 x≤4；整數清單無單位。",
     "answerOnlyPolicy": "只列七個整數而未展示兩個條件，最多 2 分；只寫範圍最多 2 分。",
     "commonErrors": [
-      "將兩個解集聯集",
-      "兩端空實心顛倒"
+      "把且誤成聯集，保留兩個單邊解集的全部範圍。",
+      "把負三畫成實心或把四畫成空心，顛倒端點包含性。",
+      "解得共同實數範圍後漏列整數解或錯把負三列入。"
     ],
     "figureId": "u07-fig-and-intersection",
     "independentReview": {
@@ -1163,7 +1181,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "22d5b7f758570c24373fc21f3359679bded2620debf83482b8cf802ae89dc00b"
+    "contentSha256": "5b2aa2ec32a93a49842a2ba35ddf1ea598e10d8e6db5b6d41baaab8570334bc7"
   },
   {
     "questionId": "u07-s007-cr002",
@@ -1179,19 +1197,18 @@ export const CONSTRUCTED_RESPONSES = [
       "解釋同時滿足兩界"
     ],
     "fullCreditSolution": [
-      "至少 35 表示 w≥35；不超過 80 表示 w≤80。",
-      "合併為 35≤w≤80。",
-      "35 與 80 均符合，80.1 超過上限而不符合。",
-      "「且」表示同一個體重必須同時通過最低與最高限制，只取兩條件重疊部分。"
+      "至少三十五表示 w≥35；不超過八十表示 w≤80。",
+      "同一體重必須同時符合兩條規定，所以合併為 35≤w≤80。",
+      "三十五與八十都位於閉區間端點，均符合；八十點一超過上限，不符合。",
+      "且的作用是只保留最低與最高限制重疊的體重範圍。"
     ],
     "alternativeMethod": [
       "也可分別代入 w≥35 與 w≤80；候選值只有兩式都為真時才符合。"
     ],
     "reasoningSteps": [
-      "翻譯範圍詞",
-      "合併雙邊限制",
-      "檢驗端點與外側值",
-      "說明交集語意"
+      "翻譯至少與不超過，建立兩個單邊不等式。",
+      "取兩條件交集，寫成雙邊範圍。",
+      "代入兩個端點與一個外側值，說明且的交集語意。"
     ],
     "rubric": [
       {
@@ -1216,8 +1233,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "w 的單位為公斤；接受分開寫 w≥35 且 w≤80。",
     "answerOnlyPolicy": "只寫 35≤w≤80，無判斷與解釋，最多 1 分。",
     "commonErrors": [
-      "把至少寫成 >",
-      "把且誤讀為只要任一條件"
+      "把至少三十五寫成嚴格大於，使合法端點三十五被排除。",
+      "把且誤讀成符合任一條即可，因而讓八十點一通過最低限制。",
+      "只寫雙邊式卻沒有依題意逐一判斷三個指定數值。"
     ],
     "figureId": "u07-fig-and-intersection",
     "independentReview": {
@@ -1230,7 +1248,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "441d10f070e0e98c598f34d0584d21c07376fa823a257cfb94baf6247f37bb41"
+    "contentSha256": "7a01615c28de59bb0e75a5cfedd95969dbbb35625d9262f42534d6efa66ad20e"
   }
 ];
 
@@ -1241,7 +1259,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "5b845a18b5fe89674a0b2614dcbf2669c383a1414c09dcd2f90f352ea156065a",
+    "contentSha256": "705370a9a893ce40cb26d093923cd9cc2282bff8ae3bacec1169e3272768f312",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "條件一給 2<x，條件二給 x≤6，把共同的 x 放中間即 2<x≤6。",
@@ -1273,7 +1291,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "5c5cdf41276c5264570484f52e1043815e5d366c0a5d79227c816fe52f8ace9e",
+    "contentSha256": "b5c577b06708eed228986b4674a9ae23d2ecc40780e8b0e1d14f2ef1f962d4ca",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "測 −1：兩式皆真；測 2：兩式皆真；測 3：第二式假。共同部分恰是 [−1,3)。",
@@ -1305,7 +1323,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "a85598b2edc5b8c2d59fc3580c9c4995d02fcf31812f9b790bfb90cff490a52d",
+    "contentSha256": "8e8b4ef238c274b4ad75c7d35191d34cdac739ca00785b0151670fc9e913911a",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "若 x<0，必有 x<4，因此不可能 x≥4；故不存在同時滿足者。",
@@ -1337,7 +1355,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "018ee6786171cda317fe3c37ab4e19f04516bdfafc486d419df0e05cbc3576f8",
+    "contentSha256": "dd4d164a14b3241b2e6328100c56f3628d9ed79b428474640bc2bceb1ac6681e",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "x≥5 給 [5,∞)，x≤5 給 (−∞,5]；共同元素只有 5。",
@@ -1369,7 +1387,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "0090b378766689b7fa3cee15e7686636337ac9eb9addd10a37602de43628b465",
+    "contentSha256": "546086b0a2684a419cabd5e3f948abe3de19a565d93b7362dc670a55431050e7",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "x+2>5 ⇒ x>3；2x≤10 ⇒ x≤5。兩者同時成立只在 (3,5]。",
@@ -1401,7 +1419,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "b1c50d1236510f2b1a037899b1f08f0649c299f222b4c8379d558c40041f69d3",
+    "contentSha256": "9de529ffce19c936963e6dd41efde0d38449b86d30768225779cd14fd85af007",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "代入 0：−2<0 真且 0≤2 真；其他各值至少一條失敗，所以選 0。",
@@ -1433,7 +1451,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "86782d9cffdd1439e4831d66372be702fe99526aa70a460a644c93debfea26b2",
+    "contentSha256": "62271d36ea1997905621c52081fe07cba1462504a8ae5ead38457e36b7a6afa3",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "2x−1≥5 ⇒ 2x≥6 ⇒ x≥3；3x+2<17 ⇒ 3x<15 ⇒ x<5。交集 [3,5)。",
@@ -1465,7 +1483,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "e2a2aa2ac0c40c7b4ab126bcbfce372d61ac8ee39c0fd43fa056086c43ac5190",
+    "contentSha256": "91e45b4e2bf8bf2a29a0042c63c7d7de02906528df3d3968709104a96ff75df1",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "要包含 2 但不包含 1，開下界只能是 1；要包含 4 且不包含 5，閉上界應是 4。",
@@ -1497,7 +1515,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "0aea7b220327a667a39bcc48bb2964be3ec3847e67697880de7c2a6c3aba2c3c",
+    "contentSha256": "cb9cd6de6ea0a5862d31941e0349f2314a1df826d806f5dc7e448daeeae8b85f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−x<2 ⇒ x>−2；2x−3≤7 ⇒ x≤5。共同部分是 (−2,5]。",
@@ -1529,7 +1547,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "69af2d5411ca07b1daccf769e83a8dd49d51b6f3e73aa359bdbb4a03e5dd539d",
+    "contentSha256": "914091b354f31d6ae9c3043e8cd85c64435bb7fd02b78161d106d7c42e2da103",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "建立 120≤h<150。代入 149：兩邊皆真；其餘各值至少違反一邊。",
@@ -1561,7 +1579,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "04fe67a0d1a4c4d1290da0621e58c1175c05487d29bbb6954cba2184668c8799",
+    "contentSha256": "3d98598ffbb06d962b9df8dad8d77d3fc07ac63ea426c524f8c74c170bf13a99",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "第一個允許整數是 −4，最後是 3；個數 3−(−4)+1=8。",
@@ -1593,7 +1611,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-and-word",
-    "contentSha256": "482eab581e14ec29d795b55c551595785f60bf56bc2ca16b0188cb98cbae044c",
+    "contentSha256": "32ace9c5f1aa7299f49e8c4a289e3f78dfcbb588f081512bd92f4f1d6856e02e",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "13≤a≤15 且 a 為整數，因此依序只有 13、14、15。",

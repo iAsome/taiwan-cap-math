@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "圓面積公式中的 r 必須是半徑，直徑資料先除以2。",
     "半徑放大k倍，面積會放大k²倍，因為公式中半徑被平方。",
-    "反求半徑時先除以π得到r²，再取正平方根；半徑不取負值。"
+    "反求半徑時先除以π得到r²，再取正平方根；半徑不取負值。",
+    "面積結果必須使用平方單位；若題目同時給圓周長，應先由2πr反求半徑，再進入面積公式，不能把周長係數直接平方。"
   ],
   "formalDefinitions": [
     {
@@ -129,7 +130,8 @@
         "A=π×49。"
       ],
       "answer": "49π。",
-      "level": "basic"
+      "level": "basic",
+      "why": "半徑7已可直接代入圓面積公式，平方後為49，所以面積是49π；平方單位也提醒本題不是求周長14π。也可由單位與14π的周長選項區分所求量。"
     },
     {
       "exampleId": "s013-L2",
@@ -139,7 +141,8 @@
         "A=36π。"
       ],
       "answer": "36π。",
-      "level": "standard"
+      "level": "standard",
+      "why": "題給12是直徑而非半徑，先除以2得6，再平方成36；若直接把12代入πr²，面積會被放大四倍。回代半徑6可重新得到直徑12，資料一致。"
     },
     {
       "exampleId": "s013-L3",
@@ -149,7 +152,8 @@
         "r=9。"
       ],
       "answer": "9。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "81π除以π得到的是r²=81，還要取正平方根；半徑是幾何長度，只接受9而不取負值。再把9平方可重得81，完成反向驗算。"
     },
     {
       "exampleId": "s013-L4",
@@ -158,7 +162,8 @@
         "面積比為4:9。"
       ],
       "answer": "4:9。",
-      "level": "connection"
+      "level": "connection",
+      "why": "圓面積與半徑平方成正比，半徑比2:3的兩項都要平方，故面積比4:9，而不是沿用線性的2:3。兩項皆為正且4:9已是最簡整數比。"
     }
   ],
   "difficultyConnections": {
@@ -208,7 +213,7 @@
     {
       "figureId": "u19-s013-fig001",
       "purpose": "圓 O 畫出一條直徑 d 與垂直半徑 r，圓內以網紋表示面積區域。",
-      "altText": "圓 O 畫出一條直徑 d 與垂直半徑 r，圓內以網紋表示面積區域。，不可按比例目測。"
+      "altText": "圓 O 畫出一條直徑 d 與垂直半徑 r，圓內以網紋表示面積區域，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -243,5 +248,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "95ab3a82fe7fa1d1408daa5d044acae01e6c97d3c473477389aa975556f9fcbe"
+  "contentSha256": "77e0193f66033798d82616e786601fc45aa2494efc6cc259dde9eaade0fa5ed1"
 }

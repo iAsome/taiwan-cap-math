@@ -95,6 +95,11 @@
       "step": 4,
       "instruction": "刪除重複句與無關計算。",
       "check": "每一步是否對下一步有作用？"
+    },
+    {
+      "step": 5,
+      "instruction": "逐步標出每個敘述所依賴的前一步。",
+      "check": "全等後性質、平行判定等是否都晚於其必要條件？"
     }
   ],
   "workedExamples": [
@@ -102,22 +107,23 @@
       "exampleId": "L1",
       "prompt": "D是BC中點，AD⊥BC，證△ADB≅△ADC。",
       "solutionSteps": [
-        "中點得DB＝DC。",
-        "公共邊AD＝AD。",
-        "兩夾角皆90°。",
-        "用SAS。"
+        "由中點得DB＝DC，並列公共邊AD＝AD。",
+        "由AD⊥BC得∠ADB、∠ADC都是直角。",
+        "核對兩邊及夾角後以SAS判定全等。"
       ],
-      "answer": "△ADB≅△ADC。"
+      "answer": "△ADB≅△ADC。",
+      "why": "SAS只能在兩組邊與其夾角都建立後使用；先寫中點、公共邊與垂直所得直角，可避免把全等結論提前，也讓每項條件都有明確來源。"
     },
     {
       "exampleId": "L2",
       "prompt": "已證兩三角形全等，下一步要證兩線平行。",
       "solutionSteps": [
-        "先取一對對應角相等。",
-        "確認該角對為同位角或內錯角。",
-        "用平行線判定。"
+        "依全等式頂點順序找出一對對應角相等。",
+        "確認該角對是兩目標直線被同一截線形成的同位角或內錯角。",
+        "使用相應的平行線判定得到兩線平行。"
       ],
-      "answer": "全等必須先於對應角與平行判定。"
+      "answer": "全等必須先於對應角與平行判定。",
+      "why": "對應角相等是全等成立後的性質，而角相等判定平行還需要角型位置；依此順序書寫，才能確保後一步使用的前提已在前一步建立。"
     }
   ],
   "commonMistakes": [
@@ -135,6 +141,11 @@
       "mistake": "最後只重複待證句。",
       "why": "沒有提供最後判定。",
       "correction": "明寫角型、全等後性質或定義。"
+    },
+    {
+      "mistake": "規劃時由結論逆推，正式書寫也照逆序抄。",
+      "why": "逆向規劃可找條件，但成稿若從結論開始會把未證結果當前提。",
+      "correction": "規劃完成後反轉為由已知向結論的前向推理鏈。"
     }
   ],
   "selfCheck": [
@@ -189,5 +200,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "30db290a1fc5adcf82dd060d6ebb877455093d1267a66264e0fbd8ebbfd9ac48"
+  "contentSha256": "2fe94bf62807eb630ab53c20037c9c33c64197fdae72216724fe3cae1a51bf8a"
 }

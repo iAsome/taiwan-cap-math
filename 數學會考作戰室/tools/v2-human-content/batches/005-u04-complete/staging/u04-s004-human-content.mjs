@@ -103,61 +103,76 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "解 y=x+1，2x+y=7。",
+      "exampleId": "u04-s004-example-a",
+      "prompt": "用代入法解 y=3x-2、x+y=10。",
       "solutionSteps": [
-        "代入得 2x+(x+1)=7。",
-        "3x=6，x=2。",
-        "y=3。"
+        "代入得 x+(3x-2)=10，整理為 4x=12。",
+        "求得 x=3，再回代 y=3×3-2=7。"
       ],
-      "answer": "(x,y)=(2,3)。"
+      "answer": "(x,y)=(3,7)。",
+      "why": "第一式已將 y 孤立，直接取代第二式的 y 最簡潔。求得三後回代得到七，驗算 3+7=10 且 3×3-2=7，兩式一致，也證明代入沒有遺漏常數負二。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "解 x=5-2y，3x+y=8。",
+      "exampleId": "u04-s004-example-b",
+      "prompt": "用代入法解 x=8-3y、2x+y=6。",
       "solutionSteps": [
-        "代入得 3(5-2y)+y=8。",
-        "15-5y=8，y=7/5。",
-        "x=11/5。"
+        "代入得 2(8-3y)+y=6，展開為 16-5y=6。",
+        "求得 y=2，再回代 x=8-3×2=2。"
       ],
-      "answer": "(11/5,7/5)。"
+      "answer": "(x,y)=(2,2)。",
+      "why": "用括號保留 8-3y，外部二須同時乘八與負三 y。解得 y=2 後回代 x=2，並可核對 2×2+2=6，避免漏乘錯誤；第一式也有 2=8-6，兩式驗算皆通過。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "解 x-y=4，x+2y=1。",
+      "exampleId": "u04-s004-example-c",
+      "prompt": "用代入法解 2x+y=9、3x-y=6。",
       "solutionSteps": [
-        "由第一式 x=y+4。",
-        "代入得 y+4+2y=1。",
-        "y=-1，x=3。"
+        "由第一式得 y=9-2x，代入第二式為 3x-(9-2x)=6。",
+        "整理 5x=15 得 x=3，再求 y=3。"
       ],
-      "answer": "(3,-1)。"
+      "answer": "(x,y)=(3,3)。",
+      "why": "第一式的 y 係數為一，孤立後代入能避免分數。第二式的負 y 使括號前出現負號，完整變號後才得到 5x-9=6 與正確解。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "檢查錯誤：2(x-3) 被寫成 2x-3。",
+      "exampleId": "u04-s004-example-d",
+      "prompt": "判斷 y=x+4、2x-2y=-8 的解型態。",
       "solutionSteps": [
-        "分配律要求 2 同時乘 x 與 -3。",
-        "正確是 2x-6。"
+        "代入得到 2x-2(x+4)=-8。",
+        "展開為 2x-2x-8=-8，即 -8=-8。"
       ],
-      "answer": "錯誤在括號未完整展開。"
+      "answer": "兩式重合，有無限多解。",
+      "why": "代入後未知數完全抵消並得到恆等式，表示第二式其實是 y=x+4 的等價形式。每個符合第一式的數對也符合第二式，因此不是唯一解。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "代入後漏括號",
-      "correction": "外部係數必須乘括號內每一項。"
+      "mistake": "取代未知數時漏掉替換式的一部分。",
+      "why": "沒有把等量式視為完整整體。",
+      "correction": "用括號包住整個替換式後再代入。"
     },
     {
-      "mistake": "只求一個未知數",
-      "correction": "聯立解要給出 x、y。"
+      "mistake": "括號外係數只乘第一項。",
+      "why": "分配律沒有作用到括號內所有項。",
+      "correction": "逐項寫出外係數與每一項的乘積。"
     },
     {
-      "mistake": "孤立時移項符號未變",
-      "correction": "可用等式兩邊同加減避免口訣錯。"
+      "mistake": "孤立未知數時移項符號錯誤。",
+      "why": "只背口訣而未維持等式平衡。",
+      "correction": "明寫等式兩邊同加、同減或同除的運算。"
     },
     {
-      "mistake": "回代到自己剛算錯的式子",
-      "correction": "應回到原式並再檢驗。"
+      "mistake": "求出一個未知數就停止。",
+      "why": "忘記聯立方程式的解是一組有序數對。",
+      "correction": "把第一個結果回代原式求出另一個未知數。"
+    },
+    {
+      "mistake": "只代回剛整理的一元式檢查。",
+      "why": "相同的整理錯誤可能無法被發現。",
+      "correction": "完整數對須分別回到兩個原方程式驗算。"
+    },
+    {
+      "mistake": "未知數消去就一律判定無解。",
+      "why": "沒有區分恆等式與不可能等式。",
+      "correction": "結果永真表示無限多解，矛盾才表示無解。"
     }
   ],
   "selfCheck": [
@@ -200,7 +215,40 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "7e24a9ce9d16e18d8f38ee24533eb74d76906e15b9df2d2ba87066179ef68f60"
+  "contentSha256": "b1c460e5495758d47dc43de1e48ce43d55ade3a68133e86bc14188c9a9ab709c",
+  "conceptNarrative": [
+    "代入消去法利用等量替換：若一式已寫成 y=某個 x 的式子，就能在另一式中用整個式子取代 y。取代後只剩一種未知數，聯立問題便化成一元一次方程式。",
+    "代入的核心不是把兩式接在一起，而是替換另一式中該未知數的每一處。替換式若含加減或多項，應加括號保留整體；括號外係數必須依分配律乘到每一項。",
+    "解出第一個未知數後，須回代任一原式求另一個未知數，最後把完整有序數對代回兩式。若代入化簡成恆等式，兩式可能重合；若化成矛盾式，則沒有共同解。",
+    "選擇代入來源時，優先使用已孤立的未知數，或係數為一、負一而容易孤立的式子，可減少分數與符號錯誤。費用、配方與裝置規則也遵循相同的等量替換原理。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "觀察兩式，選擇已孤立或最容易孤立的一個未知數。",
+      "check": "選擇能減少分數與負號，且等價變形沒有改變原式。"
+    },
+    {
+      "step": 2,
+      "instruction": "把該未知數完整表示成另一未知數的式子，標明括號範圍。",
+      "check": "等號兩邊做了相同運算，待代入的整個式子沒有缺項。"
+    },
+    {
+      "step": 3,
+      "instruction": "在另一方程式中以括號完整取代對應未知數，並展開合併。",
+      "check": "每一處都已替換，括號外係數按分配律乘到每一項。"
+    },
+    {
+      "step": 4,
+      "instruction": "解所得一元一次方程式，再回代原式求第二個未知數。",
+      "check": "兩個未知數都有確定值，分數與負號計算已約分整理。"
+    },
+    {
+      "step": 5,
+      "instruction": "將完整有序數對代回兩個原方程式，並辨識恆等或矛盾情形。",
+      "check": "兩式左右皆相等；若未知數消去，也依結果判斷解的型態。"
+    }
+  ]
 };
 
 export const QUESTIONS = [
@@ -225,11 +273,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入 y=x+1：2x+(x+1)=7，3x=6，x=2。",
-    "explanation": "先把 y 的等值式完整代入第二式。",
+    "explanation": "第一式已把 y 表成 x+1，可直接代入第二式的 y，得到 2x+(x+1)=7。去括號並合併為 3x+1=7，所以 3x=6，求得 x=2；代入時整個 x+1 要取代 y。回代第一式可得 y=3，兩式也都能成立。",
     "steps": [
-      "代入 y=x+1。",
-      "合併得 3x+1=7。",
-      "解 x=2。"
+      "以 x+1 完整取代第二式中的 y。",
+      "整理 2x+x+1=7，得到 3x=6。",
+      "兩邊同除以三，求得 x=2。"
     ],
     "optionAnalysis": [
       {
@@ -253,7 +301,7 @@ export const QUESTIONS = [
         "reason": "代入後一元式解得 x=2。"
       }
     ],
-    "misconceptionTarget": "代入後合併同類項錯誤",
+    "misconceptionTarget": "只把 y 換成 x 而漏掉常數一，沒有代入完整的 x+1。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -266,7 +314,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "1d067cf0abd182f2cefdea62df214e649c665d2474caee200cb47255ebad961f"
+    "contentSha256": "023da4590fbd89c4471f5fdc63a475ddd21fb8eeca00d0aad1680a30e0654202"
   },
   {
     "questionId": "u04-s004-v002",
@@ -289,10 +337,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "由 y=x+1，代入 x=2 得 y=3。",
-    "explanation": "回代求另一未知數。",
+    "explanation": "已知 x=2，代回較直接的第一式 y=x+1，可得 y=2+1=3。聯立方程式的解須包含兩個未知數的值，所以求出 x 後仍要回代求 y，並可代回第二式驗得 4+3=7。",
     "steps": [
-      "選較簡單的 y=x+1。",
-      "代入 x=2。"
+      "把已求得的 x=2 代回 y=x+1。",
+      "計算 y=2+1=3。",
+      "以 2×2+3=7 檢查第二式。"
     ],
     "optionAnalysis": [
       {
@@ -316,7 +365,7 @@ export const QUESTIONS = [
         "reason": "把 1 當成乘數。"
       }
     ],
-    "misconceptionTarget": "求出 x 就停止或回代錯式",
+    "misconceptionTarget": "得到 x=2 就停止，忘記聯立方程式還需要求出另一個未知數 y。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -329,7 +378,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "4708c51a9f1b02b7276706ce4fcfa820607b684d195ba4877768e5c2fea8812f"
+    "contentSha256": "7f19382b6d35825cfd006865498f3da73c6d5e1bb5aa5248f49e41091b11f279"
   },
   {
     "questionId": "u04-s004-v003",
@@ -352,10 +401,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "分配律：3×x+3×(-2)=3x-6。",
-    "explanation": "代入式有兩項時，外部係數要乘每一項。",
+    "explanation": "依分配律，括號外的三必須分別乘括號內的 x 與負二，因此 3(x-2)=3×x+3×(-2)=3x-6。不能只乘第一項，常數項也受括號外係數作用。任取一個 x 值代入前後兩式，結果都會相同。",
     "steps": [
-      "保留括號。",
-      "使用分配律。"
+      "把外部係數三分配給括號內每一項。",
+      "計算 3×x=3x 與 3×(-2)=-6。",
+      "合併寫成 3x-6。"
     ],
     "optionAnalysis": [
       {
@@ -379,7 +429,7 @@ export const QUESTIONS = [
         "reason": "負號錯誤。"
       }
     ],
-    "misconceptionTarget": "漏乘括號內常數",
+    "misconceptionTarget": "只把三乘到 x，卻原封不動留下負二而寫成 3x-2。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -392,7 +442,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "385d77a8de462b5a4e05322528784a8b97b2d521212421b17c6aad11221e135a"
+    "contentSha256": "d1691402c2badcdb6cdd44e3b7e72fb0a02f116ceba7437f8e46a833033375aa"
   },
   {
     "questionId": "u04-s004-v004",
@@ -416,10 +466,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "用第一式的 y+4 完整取代第二式中的 x，得到 (y+4)+2y=1。",
-    "explanation": "代入時只替換 x，第二式的 2y 與右邊 1 都保持不變。",
+    "explanation": "第一式說明 x 與 y+4 完全相等，因此第二式 x+2y=1 中的 x 應整個換成 y+4，得到 (y+4)+2y=1。括號保留代入範圍，再合併即可求 y。其餘 2y 與右邊一都不能因代入而改變。",
     "steps": [
-      "以第一式的 y+4 取代第二式中的 x。",
-      "保留第二式的 2y 與右邊 1。"
+      "辨認第一式已孤立 x=y+4。",
+      "在第二式中以 (y+4) 完整取代 x。",
+      "保留其餘 2y 與右邊一，得到 (y+4)+2y=1。"
     ],
     "optionAnalysis": [
       {
@@ -443,7 +494,7 @@ export const QUESTIONS = [
         "reason": "擅自改變等號右邊。"
       }
     ],
-    "misconceptionTarget": "代入時漏括號或改動未被替換的項。",
+    "misconceptionTarget": "把 y+4 拆開代到不同位置，或遺漏第二式原有的 2y 項。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -456,7 +507,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "55b374e766a6d2f0d71e1c03d52ea074aa1e94c337ba0f6b1fecf320f48dda9f"
+    "contentSha256": "f4f5f9bd7b3286caa1d32845714a6618eaab62e1228e056321bd7092f388542e"
   },
   {
     "questionId": "u04-s004-v005",
@@ -479,11 +530,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "2x-(3x-7)=5，2x-3x+7=5，-x=-2，x=2。",
-    "explanation": "y 前有負號，代入後必須整體加括號。",
+    "explanation": "將 y=3x-7 代入 2x-y=5，得到 2x-(3x-7)=5。去括號後為 2x-3x+7=5，即 -x=-2，所以 x=2；負號須分配到括號內兩項。再由 y=6-7=-1，代回可驗得 4-(-1)=5，且第二式也有負一等於負一，解值正確。",
     "steps": [
-      "以 (3x-7) 取代 y。",
-      "展開前面的負號。",
-      "解 -x=-2。"
+      "用 (3x-7) 取代 y，寫成 2x-(3x-7)=5。",
+      "去括號並合併，得到 -x+7=5。",
+      "整理為 -x=-2，求得 x=2。"
     ],
     "optionAnalysis": [
       {
@@ -507,7 +558,7 @@ export const QUESTIONS = [
         "reason": "把常數相加後未解係數。"
       }
     ],
-    "misconceptionTarget": "把 -y 只作用在 3x",
+    "misconceptionTarget": "去除 y 前的減號時只改 3x 的符號，沒有把負七變為正七。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -520,7 +571,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "8b447b6c5ad1adb1cd47f36b0401c4f8c2fadbcaa272dd7c1df4c4dce6af4d72"
+    "contentSha256": "1d985de90fc6ca0f442237ee4d78cf4671b77ce126bf2f01c376dd7c2d38e8e6"
   },
   {
     "questionId": "u04-s004-v006",
@@ -543,11 +594,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "3(5-2y)+y=8，15-5y=8，-5y=-7，y=7/5。",
-    "explanation": "分數解仍是合法聯立解。",
+    "explanation": "把 x=5-2y 代入 3x+y=8，得到 3(5-2y)+y=8。完整展開為 15-6y+y=8，合併成 -5y=-7，兩邊同除以負五，所以 y=7/5。外部三若漏乘負二 y，就不可能得到正確的負五 y，分配律是本題關鍵。",
     "steps": [
-      "代入並展開。",
-      "合併 -6y+y。",
-      "解 y=7/5。"
+      "以 (5-2y) 取代 x，得到 3(5-2y)+y=8。",
+      "展開合併為 15-5y=8，再得 -5y=-7。",
+      "除以 -5，求得 y=7/5。"
     ],
     "optionAnalysis": [
       {
@@ -571,7 +622,7 @@ export const QUESTIONS = [
         "reason": "漏除係數 5。"
       }
     ],
-    "misconceptionTarget": "認為答案必須整數",
+    "misconceptionTarget": "分配三時只乘常數五，漏乘負二 y，導致 y 的係數錯誤。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -584,7 +635,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "98284bb7255e1a7370956e8f72ff8d72bac76345fbb06681fbf58452d1c6cd93"
+    "contentSha256": "f89d47b42d0d4421ca9275dd2d18b5f7f1bf7dfbad6226d6ac109cb11901bf62"
   },
   {
     "questionId": "u04-s004-v007",
@@ -607,11 +658,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入得 4x-2(2x-3)=6，即 4x-4x+6=6，得到 0=0。",
-    "explanation": "第二式等價於 y=2x-3，因此所有第一式解都共同成立。",
+    "explanation": "把 y=2x-3 代入第二式，得到 4x-2(2x-3)=6，化簡為 4x-4x+6=6，也就是 6=6。恆等式表示兩式其實描述同一直線，因此有無限多組共同解。每個符合第一式的 x、y 都會自動滿足第二式。",
     "steps": [
-      "完整代入。",
-      "化簡為 0=0。",
-      "判斷無限多解。"
+      "以 (2x-3) 取代第二式的 y。",
+      "展開得到 4x-4x+6=6。",
+      "辨認結果為恆等式 6=6，判定有無限多解。"
     ],
     "optionAnalysis": [
       {
@@ -635,7 +686,7 @@ export const QUESTIONS = [
         "reason": "代入後得到恆等式 0=0。"
       }
     ],
-    "misconceptionTarget": "看到某一組解就認為唯一",
+    "misconceptionTarget": "看到 x 項消去就宣稱無解，沒有區分恆等式與矛盾式。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -648,7 +699,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "88803f646e182cf714fa3cb08604cb345a673334959adea51bfa53e7243e53e3"
+    "contentSha256": "eb57e32fa5c481d562f45b4234e9352cc123770c80318948004fd2b601f7a39a"
   },
   {
     "questionId": "u04-s004-v008",
@@ -671,11 +722,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "代入得 2(ay+1)-4y=2，即 (2a-4)y=0。要對所有 y 都成立，需 2a-4=0，所以 a=2。",
-    "explanation": "a=2 時第二式正是第一式的 2 倍，代入成 0=0。",
+    "explanation": "第二式 2x-4y=2 兩邊同除以二可寫成 x-2y=1，也就是 x=2y+1。要與第一式 x=ay+1 完全相同，y 的係數必須相等，因此 a=2，此時兩式重合而有無限多解。",
     "steps": [
-      "代入 x=ay+1。",
-      "整理 (2a-4)y=0。",
-      "令係數為 0。"
+      "將 2x-4y=2 兩邊同除以二。",
+      "整理成 x=2y+1。",
+      "與 x=ay+1 比較 y 係數，得到 a=2。"
     ],
     "optionAnalysis": [
       {
@@ -699,7 +750,7 @@ export const QUESTIONS = [
         "reason": "代入得 -8y=0，只得 y=0。"
       }
     ],
-    "misconceptionTarget": "只找某個 y=0 而忽略無限多解要求",
+    "misconceptionTarget": "只比較常數一相同就判定重合，忽略 y 的係數也必須完全一致。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -712,7 +763,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "cbd1d002503a7fc8269e666ef2ad2d13910a32ffeb886fd4af62a456d29c31d1"
+    "contentSha256": "b6f13c7047dbbcf1dec9f3ae354ee10661c16b744ceb27f83be57b0857137c4d"
   },
   {
     "questionId": "u04-s004-v009",
@@ -735,11 +786,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "代入得 2x+(x+4)/3=8；乘 3 得 6x+x+4=24，7x=20，x=20/7。",
-    "explanation": "含分式的代入可先整式乘公分母。",
+    "explanation": "把 y=(x+4)/3 代入 2x+y=8，得到 2x+(x+4)/3=8。等式兩邊同乘三為 6x+x+4=24，故 7x=20，最後求得 x=20/7。分母三作用在整個 x+4，清除分母時等式內每一項都必須同乘三，解值確定。",
     "steps": [
-      "代入分式。",
-      "兩邊乘 3。",
-      "解 7x=20。"
+      "以 (x+4)/3 取代 y。",
+      "等式兩邊同乘三，化為 6x+x+4=24。",
+      "整理得 7x=20，所以 x=20/7。"
     ],
     "optionAnalysis": [
       {
@@ -763,7 +814,7 @@ export const QUESTIONS = [
         "reason": "顛倒分數。"
       }
     ],
-    "misconceptionTarget": "只乘分母內一部分",
+    "misconceptionTarget": "清除分母時只把三乘到分式，沒有讓等式中的其他項同乘三。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -776,7 +827,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "e22b1abada1abef9cc554cced0f97255b3daae723289931bdced0bb589cf8716"
+    "contentSha256": "26664708206421bf1ddb673a4753ce0065361be7e8fdf9b499e8677737482e1e"
   },
   {
     "questionId": "u04-s004-v010",
@@ -799,11 +850,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "將 y=400 代入 400=50x+100，50x=300，x=6。",
-    "explanation": "固定費與變動費模型可用代入法求使用量。",
+    "explanation": "帳單條件 y=400 可直接代入費用式 y=50x+100，得到 400=50x+100。扣除固定費一百元後 50x=300，再除以每次五十元，求得使用六次。回算六次的變動費三百元，加固定費後正好四百元。",
     "steps": [
-      "以 400 取代 y。",
-      "扣除固定費 100。",
-      "除以每次 50。"
+      "用帳單金額四百取代費用式中的 y。",
+      "兩邊同減固定費一百，得到 50x=300。",
+      "兩邊同除以五十，求得 x=6。"
     ],
     "optionAnalysis": [
       {
@@ -827,7 +878,7 @@ export const QUESTIONS = [
         "reason": "忽略固定費後直接除。"
       }
     ],
-    "misconceptionTarget": "忽略固定費",
+    "misconceptionTarget": "直接用四百除以五十，忘記先扣除不隨次數改變的固定費。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "元=元/次×次+元，單位一致。",
@@ -840,7 +891,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "80092a8077d1c3619dfc90db71ee349f320ffb4f5b03794e1f7a6a385d7c3a86"
+    "contentSha256": "6a84abdac24c9b83cd0739af8492bb8822ae6b45891f50f35d6d58272229e287"
   },
   {
     "questionId": "u04-s004-v011",
@@ -863,10 +914,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入 y=2x-5：x+2x-5=16，3x=21，x=7。",
-    "explanation": "兩條裝置規則可藉由代入找共同輸入。",
+    "explanation": "把轉換式 y=2x-5 代入警示規則 x+y=16，可得 x+(2x-5)=16。合併為 3x-5=16，兩邊同加五得 3x=21，所以警示發生時 x=7。此時 y=9，且 7+9=16，兩條裝置規則都同時成立，警示輸入唯一確定。",
     "steps": [
-      "將轉換式代入警示式。",
-      "解 3x-5=16。"
+      "以 (2x-5) 取代警示式中的 y。",
+      "合併為 3x-5=16，再整理成 3x=21。",
+      "兩邊同除以三，求得 x=7。"
     ],
     "optionAnalysis": [
       {
@@ -890,7 +942,7 @@ export const QUESTIONS = [
         "reason": "x=7 時 y=9，且 7+9=16。"
       }
     ],
-    "misconceptionTarget": "把規則分開看而未求共同值",
+    "misconceptionTarget": "分開處理兩條規則，沒有把同一時刻的 y 表示式代入共同條件。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -903,7 +955,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "46c289e005184bc5a15d0b82d88e7aa43bac8d2569288129d3a4b2b35fb57e8d"
+    "contentSha256": "8d51f5bab505cfefb33790d4ddd4035b155eb0990ba39be10bffcc94492d0da4"
   },
   {
     "questionId": "u04-s004-v012",
@@ -926,11 +978,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "y=x+2，x+y=14；代入得 x+x+2=14，2x=12，x=6。",
-    "explanation": "差額關係先表示 y，再代入總量式。",
+    "explanation": "B 比 A 多二公克，應寫成 y=x+2；總用量則是 x+y=14。代入後 x+(x+2)=14，得到 2x+2=14，故 2x=12，A 用量 x=6 公克。B 為八公克，六加八正好十四，且 B 確實比 A 多二公克，方向無誤。",
     "steps": [
-      "把「多 2」寫成 y=x+2。",
-      "代入總量式。",
-      "求 x=6。"
+      "把「B 比 A 多二」翻成 y=x+2。",
+      "代入總量式，得到 x+(x+2)=14。",
+      "整理 2x=12，求得 A 用量六公克。"
     ],
     "optionAnalysis": [
       {
@@ -954,7 +1006,7 @@ export const QUESTIONS = [
         "reason": "把差額重複扣除。"
       }
     ],
-    "misconceptionTarget": "把較多與較少對調",
+    "misconceptionTarget": "把較多與較少方向顛倒，錯寫成 x=y+2 或 y=x-2。",
     "prerequisiteCheck": "只需先備 system-solution-meaning，並使用本技能「代入消去法」。",
     "estimatedTimeSec": 90,
     "unitCheck": "兩未知數與總量均為克。",
@@ -967,7 +1019,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "7fafa3d7f790d9273d6c5cadaf0391b60e13d66568ef8d23abccd5052d86d5d4"
+    "contentSha256": "b94a749eeb4da7f5101f6911d70023efd74debf0c6fbac78082ca456c910ea2c"
   }
 ];
 
@@ -985,19 +1037,17 @@ export const CONSTRUCTED_RESPONSES = [
       "必須展示代入、回代與雙式檢驗。"
     ],
     "standardSolution": [
-      "代入：3x+(2x-1)=14。",
-      "5x=15，所以 x=3。",
-      "y=2×3-1=5。",
-      "檢驗：5=6-1；3×3+5=14。"
+      "第一式已孤立 y，將 y=2x-1 代入 3x+y=14，得到 3x+(2x-1)=14。",
+      "合併同類項得 5x-1=14，所以 5x=15、x=3；回代第一式得 y=2×3-1=5。",
+      "檢驗第一式：5=2×3-1；檢驗第二式：3×3+5=14。兩式均成立，解為 (3,5)，所以代入、回代與有序數對順序都一致。"
     ],
     "alternativeMethods": [
       "可由第二式寫 y=14-3x，再與 y=2x-1 相等。"
     ],
     "reasoningSteps": [
-      "選擇已孤立的 y。",
-      "代入解 x。",
-      "回代求 y。",
-      "雙式檢驗。"
+      "選擇已表示成 y=2x-1 的第一式作為代入來源。",
+      "用整個 2x-1 取代第二式的 y，解出 x 後回代求 y。",
+      "將所得有序數對分別代入兩個原方程式，核對左右相等。"
     ],
     "rubric": [
       {
@@ -1035,7 +1085,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "0286a8cd604b35ab37e4edaa0d9fa68e820bc173b7b3d8a778d94f547462d142"
+    "contentSha256": "b047cd448a1ee870e1cb54a2670092470c4fbb5e668ec5923cc130a333aaae62",
+    "commonErrors": [
+      "代入第二式時漏掉括號或常數負一，錯寫成 3x+2x=14。",
+      "解出 x=3 就停止，沒有回代求出共同解所需的 y。",
+      "只用代入後的一元式檢查，沒有回到兩個原方程式完成驗證。"
+    ]
   },
   {
     "questionId": "u04-s004-cr002",
@@ -1051,19 +1106,17 @@ export const CONSTRUCTED_RESPONSES = [
       "說明分配律錯誤。"
     ],
     "standardSolution": [
-      "3(5-2y)+y=8。",
-      "15-6y+y=8，-5y=-7，y=7/5。",
-      "x=5-14/5=11/5。",
-      "錯誤寫法只把 3 乘到 5，正確應同時乘 -2y。"
+      "把 x=5-2y 代入 3x+y=8，應寫成 3(5-2y)+y=8；分配律給出 15-6y+y=8。",
+      "合併為 15-5y=8，故 -5y=-7、y=7/5；再回代 x=5-2×(7/5)=11/5。",
+      "所以解為 (11/5,7/5)。把 3(5-2y) 寫成 15-2y 的錯誤，是三只乘到五而未乘括號內的 -2y；正確分配後兩項都必須帶有係數三。"
     ],
     "alternativeMethods": [
       "可先由 x=5-2y 代入；或由第二式 y=8-3x 再代入第一式。"
     ],
     "reasoningSteps": [
-      "完整分配括號。",
-      "解分數。",
-      "回代。",
-      "診斷錯誤。"
+      "以括號保留 5-2y 的完整範圍，代入另一個方程式。",
+      "用分配律把三乘到括號內兩項，再合併 y 項並求出 y。",
+      "回代求 x，最後指出錯誤展開違反分配律的確切位置。"
     ],
     "rubric": [
       {
@@ -1101,7 +1154,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "22f5e1ba915a37a26ae7464205470922052639318551e2614d6912bb613da322"
+    "contentSha256": "26421dde86e18d8ca921d440739ffaed6236ba6cbc3e5a5461664d46e6a2de74",
+    "commonErrors": [
+      "只把括號外的三乘到五，將 3(5-2y) 錯展開為 15-2y。",
+      "由 -5y=-7 求 y 時只消去一個負號，得到錯誤的負七分之五。",
+      "回代計算 x 時把 2×(7/5) 誤寫成 7/5，漏掉係數二。"
+    ]
   }
 ];
 

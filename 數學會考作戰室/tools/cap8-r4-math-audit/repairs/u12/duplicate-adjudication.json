@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u12",
+  "batch": "013-u12-complete",
+  "skills": ["s005"],
+  "mc": [
+    {
+      "questionId": "u12-s005-v002",
+      "expectedContentSha256": "7067212fa5f8980bcc48108f378e4d60224c60b33a9591267020a67b824f484e",
+      "set": {
+        "text": "因式分解 x²−7x+12 時，應選哪一組整數填入 (x+□)(x+△)，才能使常數項為12且一次項係數為−7？",
+        "givenConditions": ["□與△為整數。", "□×△=12，且□+△=−7。"],
+        "target": "由乘積與和同時選出兩個常數",
+        "choices": ["3 與 4", "−2 與 −6", "−3 與 −4", "3 與 −4"],
+        "independentSolution": "要使常數項為12，兩數乘積必須是12；一次項係數為−7，兩數和必須是−7。在四組選項中，只有−3與−4同時滿足乘積12、和−7。",
+        "explanation": "將(x+a)(x+b)展開得x²+(a+b)x+ab。本題需要ab=12且a+b=−7。正數3、4的和為7；−2、−6的和為−8；3、−4的積為−12。只有−3、−4的積為12且和為−7。",
+        "steps": ["將(x+a)(x+b)展開為x²+(a+b)x+ab。", "由常數項12得ab=12，由一次項−7x得a+b=−7。", "逐組檢查乘積與和，只有a=−3、b=−4同時符合。"],
+        "optionAnalysis": [
+          { "choice": "3 與 4", "truth": false, "reason": "3×4=12，但3+4=7，會得到+7x而不是−7x。" },
+          { "choice": "−2 與 −6", "truth": false, "reason": "(−2)(−6)=12，但兩數和為−8，會得到−8x。" },
+          { "choice": "−3 與 −4", "truth": true, "reason": "(−3)(−4)=12且(−3)+(−4)=−7，同時符合常數項與一次項。" },
+          { "choice": "3 與 −4", "truth": false, "reason": "3×(−4)=−12，常數項會變成−12，與題幹的+12不同。" }
+        ],
+        "misconceptionTarget": "只檢查兩數乘積是12，沒有同時檢查兩數和必須是−7。",
+        "prerequisiteCheck": "需會帶號整數的加法、乘法與二項式展開。",
+        "ambiguityAndBoundaryAudit": "□、△順序可交換，但選項以無序整數組表示；逐組檢查後只有−3與−4同時符合。",
+        "difficultyReason": "不是直接選完整因式，而是從展開結構同時連結常數項的乘積與一次項的和。",
+        "authoringIntent": "評量二次三項式分解時對『積為常數項、和為一次項係數』的中間判斷。",
+        "concept": "乘積與和的同時配對"
+      },
+      "reviewSet": {
+        "independentSolution": "要使常數項為12，兩數乘積必須是12；一次項係數為−7，兩數和必須是−7。在四組選項中，只有−3與−4同時滿足乘積12、和−7。",
+        "derivedAnswer": "−3 與 −4",
+        "storedAnswer": "−3 與 −4",
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "逐組檢查乘積與和，只有−3與−4的乘積為12且和為−7；其他組至少一個條件不合。",
+          "undefinedSymbol": "題幹已定義□與△是填入兩個一次因式的整數常數，且兩者可以交換順序，不存在未定義符號。",
+          "unitConflict": "本題為純代數運算，沒有實物單位、量綱衝突或單位換算問題，四選項均為整數組。",
+          "roundingConflict": "所有係數均為精確整數，無需四捨五入或近似判斷，乘積與和都用等式精確核對。",
+          "domainBoundary": "只使用二項式展開、帶號整數加乘與二次三項式因式分解，不使用後續一元二次方程式求根公式。",
+          "alternateReading": "□、△順序對乘積不造成差異，選項是整數組而非有序對，交換兩數不會形成另一個答案。"
+        },
+        "difficultyReason": "需從展開式同時使用常數項的積與一次項的和，不是只選完整因式結果。",
+        "prerequisiteCheck": "需會帶號整數加乘與(x+a)(x+b)的展開。",
+        "reviewerNote": "要使常數項為12，兩數乘積必須是12；一次項係數為−7，兩數和必須是−7。在四組選項中，只有−3與−4同時滿足乘積12、和−7。審查補充：展開(x+a)(x+b)得x²+(a+b)x+ab；3與4的和為7，−2與−6的和為−8，3與−4的積為−12，故其餘選項各有明確反例。正確選項唯一，也不再與直接分解題重複。"
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

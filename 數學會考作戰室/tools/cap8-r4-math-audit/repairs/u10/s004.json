@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u10",
+  "batch": "011-u10-complete",
+  "skills": ["s004"],
+  "mc": [
+    {
+      "questionId": "u10-s004-v001",
+      "expectedContentSha256": "a769592245306e68c9c2640a84190d11a839ec734f1d7cc0a9f286219012aebb",
+      "appendText": {"explanation": "原式已化簡且最高非零項為 -4x³，次數只讀未知數的最高指數三；係數負四的絕對值與共有三項都不是判準。", "misconceptionTarget": "把最高項係數的絕對值四或多項式的項數，誤當成多項式次數。"},
+      "appendArray": {"steps": ["確認各項係數皆非零，且不需要再合併同類項。", "比較 x 的指數 3、1、0，最大值為 3，所以是三次多項式。"]}
+    },
+    {
+      "questionId": "u10-s004-v002",
+      "expectedContentSha256": "f25842971fcd74c64527c515aad1adb45209be1cb8f4c3cb8a480998804aa9bc",
+      "appendText": {"explanation": "按降冪排列後，最先出現的最高次非零項是 5x²；首項係數是乘在 x² 前的數 5，而右上角的 2 是指數。", "misconceptionTarget": "把首項的指數二當成首項係數，或改讀後面一次項省略的負一。"},
+      "appendArray": {"steps": ["比較各項指數，確認二次項 5x² 是首項。", "將 5x² 分成係數 5 與文字部分 x²，讀出答案 5。"]}
+    },
+    {
+      "questionId": "u10-s004-v003",
+      "expectedContentSha256": "89e7485c968c1e92c8948b875eeea7717f247f268a90d7abf602186808a7ea1f",
+      "appendText": {"explanation": "非零常數 -9 可寫成 -9x⁰，係數仍非零，因此其最高非零指數為 0；負九是係數值，不代表次數為負九。", "misconceptionTarget": "認為常數式沒有出現 x 就沒有次數，或把常數值 -9 本身當作次數。"},
+      "appendArray": {"steps": ["用 x⁰=1 將 -9 改寫為 -9x⁰。", "最高且唯一的非零指數是 0，所以判定為零次多項式。"]}
+    },
+    {
+      "questionId": "u10-s004-v004",
+      "expectedContentSha256": "bda9e75fab531ccfd4c405ac169dbda9ee2b5fa330956e498cb5c0d52b09054e",
+      "appendText": {"explanation": "判定次數前須先合併同類項；3x⁴ 與 -3x⁴ 的係數和為零而消失，剩式最高非零項是 2x²，故次數降為二，不能沿用原式最高指數。", "misconceptionTarget": "看到原式出現 x⁴ 就直接答四次，沒有檢查兩個四次項已完全抵消。"},
+      "appendArray": {"steps": ["先合併四次項，算得 (3-3)x⁴=0。", "刪去零項後比較 2x² 與 -x，最高指數為 2。"]}
+    },
+    {
+      "questionId": "u10-s004-v005",
+      "expectedContentSha256": "bf47937cf9482c536b76e9cc7a38264705867bfbca2cf4a58007382e9bb40a78",
+      "appendText": {"explanation": "最高次項是 -x⁵，省略的正數係數為 1，但項前負號屬於係數，所以可改寫成 (-1)x⁵，首項係數為 -1，符號不可省略。", "misconceptionTarget": "只補上省略的係數一而忽略項前負號，或把指數五誤當係數。"},
+      "appendArray": {"steps": ["按最高指數五鎖定首項 -x⁵。", "補寫省略係數為 (-1)x⁵，連同符號讀出 -1。"]}
+    },
+    {
+      "questionId": "u10-s004-v006",
+      "expectedContentSha256": "726a59d5944df70342c59fb094ed14ee0e23a168d6c5044551068b76026314ff",
+      "appendText": {"explanation": "要使最高次數恰為二，三次項必須消失，所以 a-2=0；解得 a=2 後，下一個二次項係數固定為 5 且非零，確保不是更低次。", "misconceptionTarget": "只看到式中有 5x² 就稱為二次式，沒有先讓更高的三次項係數變成零。"},
+      "appendArray": {"steps": ["令三次項係數 a-2=0，解出 a=2。"]}
+    },
+    {
+      "questionId": "u10-s004-v007",
+      "expectedContentSha256": "d0adedeb15d6441b64faf08ff1c6c2592ab35ce130d2ad8d79c125a073d1dfa9",
+      "appendText": {"explanation": "三次多項式要求四次項消失而三次項保留；先由 m+1=0 得 m=-1，再算 m-1=-2≠0，因此最高非零項確為三次。", "misconceptionTarget": "只令四次係數為零就停止，沒有確認同一參數值下三次項係數仍非零。"},
+      "appendArray": {"steps": ["以 m=-1 回代兩個係數，得到四次係數 0、三次係數 -2。"]}
+    },
+    {
+      "questionId": "u10-s004-v008",
+      "expectedContentSha256": "8590a005fad5f2b11214b872681a20e530fa9de10b3c2536774136a4fca0acb5",
+      "appendText": {"explanation": "去除加法括號後，分散在兩括號中的 2x³ 與 -2x³ 仍是同類項並抵消；剩下 7x²-x+5，最高指數二、首項係數七。", "misconceptionTarget": "只在各括號內尋找最高次項，未跨括號合併互為相反數的三次項。"},
+      "appendArray": {"steps": ["展開加法括號並合併三次項，得到 0x³+7x²-x+5。", "刪除零項後鎖定 7x²，讀出二次且首項係數 7。"]}
+    },
+    {
+      "questionId": "u10-s004-v009",
+      "expectedContentSha256": "4ed370fd18bee594269d2b4f5578e6bb37e686f422e0fe17f3ae06ba9ce9669b",
+      "appendText": {"explanation": "同一多項式在相同次方的係數必須逐一相等，因此 a=3、b=-4、c=1；連同 b 的負號相加，3-4+1=0，三欄對應皆一致。", "misconceptionTarget": "比較係數時把 -4 抄成正四，或未按二次、一次、常數的順序對應 a、b、c。"},
+      "appendArray": {"steps": ["依 x²、x、常數三欄逐一比較，得到 a=3、b=-4、c=1。", "代入 a+b+c 計算 3+(-4)+1=0。"]}
+    },
+    {
+      "questionId": "u10-s004-v010",
+      "expectedContentSha256": "9964fe4a2cf54b2e2deb45455bc44d0c664f07349dab7881cc3139ef8a3fa4a7",
+      "appendText": {"explanation": "情境字母改為 t 仍用同一判準；最高次非零項是 -2t³，乘在 t³ 前的完整數值包含負號，所以係數是 -2。", "misconceptionTarget": "以數值大小挑出 40 或 15，或把最高指數三當作最高次項係數。"},
+      "appendArray": {"steps": ["比較 t 的指數 3、2、0，先鎖定最高次項 -2t³。", "分離數字因數與文字部分，讀出首項係數 -2。"]}
+    },
+    {
+      "questionId": "u10-s004-v011",
+      "expectedContentSha256": "17ff8db2d308eb6108f92c7cf60e8812597077debae98d659c355bdeb4619a50",
+      "appendText": {"explanation": "平方公尺是面積 A 的物理單位，與代數次數不是同一概念；式中最高非零項 x² 的指數為二，所以模型是二次多項式。", "misconceptionTarget": "把題目中的三個項、常數九或平方公尺的平方字樣，誤當作多項式次數。"},
+      "appendArray": {"steps": ["忽略面積單位，僅比較多項式各項的 x 指數。", "最高非零指數是 x² 的 2，因此選二次多項式。"]}
+    },
+    {
+      "questionId": "u10-s004-v012",
+      "expectedContentSha256": "2e0e0bad3a3c84d7dde1ad55702642e77e07ead9567c7a60afca177a651daf95",
+      "appendText": {"explanation": "原式按降冪重排為 -0.5n²+120n；搬移完整項時負號不變，最高次項是 -0.5n²，因此首項係數為 -0.5，而非原先排首的 120。", "misconceptionTarget": "按原書寫順序把 120 當首項係數，或重排二次項時遺失負號而答正 0.5。"},
+      "appendArray": {"steps": ["將完整二次項 -0.5n² 移到一次項 120n 前。", "由最高次項分離係數，保留負號讀出 -0.5。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u10-s004-cr001",
+      "expectedContentSha256": "1d4328374a3ecadbcbea52bd4e92572b51003e49cea23c0d1be7a0074152cf8b",
+      "appendArray": {"standardSolution": ["判定順序不能由原式直接讀四次：先算 5x⁴+(-5x⁴)=0，刪除零項後再按降冪觀察。剩式的最高非零指數為二，且首項 -3x² 的係數包含負號，所以答案為二次、-3。"], "reasoningSteps": ["刪去係數為零的四次項後，按降冪重新排列並連同符號讀取 -3x²。"]},
+      "set": {"commonErrorTargets": ["未先合併相反的四次項，看到 x⁴ 就直接判為四次多項式。", "次數判為二後卻把首項係數寫成正三，遺失 -3x² 的負號。"]}
+    },
+    {
+      "questionId": "u10-s004-cr002",
+      "expectedContentSha256": "38156ad6fd7ab3634c9809be88be30ac919a0f96b0a80bc37ad254ae2ef7678e",
+      "appendArray": {"standardSolution": ["四次多項式需同時滿足五次係數為零與四次係數非零。a=-2 使 a+2=0，而 a-1=-3；代回後 P(x)=0x⁵-3x⁴+3x²，刪去零項後最高指數確為四。"], "reasoningSteps": ["將 a=-2 完整代回兩個含參數的係數，刪除五次零項後確認四次項仍保留。"]},
+      "set": {"commonErrorTargets": ["誤令四次係數 a-1=0，反而讓目標四次項消失。", "只解 a+2=0 而未檢查 a-1 是否非零，沒有完成『恰為四次』的驗證。"]}
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u10-s004-lecture-r1",
+      "expectedContentSha256": "97a41aed40a91e689d52726d040c6bb278344e7ec8c09912480dcce13d23c774",
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "判定 -3x⁴+2x-7 的次數與首項係數。", "solutionSteps": ["最高非零指數 4；首項 -3x⁴。"], "answer": "4 次，首項係數 -3。", "why": "多項式已按降冪排列且沒有可合併項，所以最高非零項是 -3x⁴。次數讀指數四，首項係數則讀乘在 x⁴ 前且包含負號的 -3；兩種數值來自不同位置，不能互換。"},
+          {"exampleId": "L2", "prompt": "判定 5x³-5x³+2x² 的次數。", "solutionSteps": ["三次項抵消，剩 2x²。"], "answer": "2 次。", "why": "次數只能從化簡後的最高非零項判定。兩個三次項係數和為零，整項消失；剩下 2x² 的係數非零，因此最高指數降為二，而不能因原式曾出現 x³ 就答三次。"},
+          {"exampleId": "L3", "prompt": "常數 -8 的次數。", "solutionSteps": ["-8=-8x⁰，且係數非零。"], "answer": "0 次。", "why": "由 x⁰=1，可將任何非零常數寫成常數係數乘 x⁰；-8 的係數非零，所以最高非零指數就是零。這與零多項式所有係數皆為零、無法指定本課次數的情況不同。"}
+        ]
+      },
+      "appendArray": {
+        "conceptNarrative": ["多項式次數必須從最後化簡式判定：先展開括號、合併同類項並刪除係數為零的項，再按降冪排列，最高非零項的指數才是次數；首項係數則是該項連同正負號的數字因數。含參數時，若要求恰為某次數，要讓所有更高次係數為零，同時確認目標次項係數非零。非零常數可視為零次，而所有項皆抵消的零多項式不能硬套為零次。"],
+        "commonMistakes": [{"mistake": "只令高次項消失就判定為指定次數", "why": "下一個目標次項也可能同時因參數而消失", "correction": "列出高次係數等於零及目標次係數不等於零兩組條件。"}]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

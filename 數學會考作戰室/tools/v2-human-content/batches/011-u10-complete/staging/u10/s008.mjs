@@ -42,10 +42,9 @@ export default {
       }
     ],
     "conceptNarrative": [
-      "兩個二項式相乘共有四次配對，不是只乘首項和末項。",
-      "以 (x+2)(x+5) 為例，中間項來自 5x 與 2x，合為 7x。",
-      "負號會改變交叉乘積的符號。",
-      "表格法能降低漏項，但最後仍要合併同類項。"
+      "二項式乘二項式共有二乘二的四個配對：第一括號每一項都要分別乘第二括號兩項。四個乘積通常形成首項平方、兩個交叉項與常數乘積；先完整列出再合併同類項，可以避免只乘首首、尾尾而漏掉中間項。使用表格法時四格也必須逐格填滿，負號要隨項帶入。",
+      "中間項係數來自兩個交叉乘積的係數和，不可只抄其中一個。例如 (3x-2)(2x+5) 的交叉項為十五 x 與負四 x，合併後是十一 x；尾項負二乘五為負十，與交叉項的符號判斷分開。",
+      "含參數的恆等式可展開後比較同次項係數。求得參數後應至少再用另一個係數驗證，避免某一條件只給出候選值。情境題中的面積、總價仍依長乘寬或單價乘數量建立乘法，展開式最後要保留合適單位與可行範圍。"
     ],
     "formalDefinitions": [
       {
@@ -98,27 +97,33 @@ export default {
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "(x+3)(x+4)。",
+        "prompt": "展開 (x+3)(x+4)。",
         "solutionSteps": [
-          "x²+4x+3x+12。"
+          "列出 x²、4x、3x、12。",
+          "合併交叉項 4x+3x。"
         ],
-        "answer": "x²+7x+12。"
+        "answer": "x²+7x+12。",
+        "why": "四個乘積對應完整二乘二配對，七 x 不是直接把三與四放進公式，而是兩個交叉項的和；常數十二則由三乘四得到。"
       },
       {
         "exampleId": "L2",
-        "prompt": "(2x−1)(x+5)。",
+        "prompt": "展開 (2x-1)(x+5)。",
         "solutionSteps": [
-          "2x²+10x−x−5。"
+          "列出 2x²、10x、-x、-5。",
+          "合併一次項為 9x。"
         ],
-        "answer": "2x²+9x−5。"
+        "answer": "2x²+9x-5。",
+        "why": "負一要分別乘 x 與五，產生負 x、負五；十 x 與負 x 合併為九 x，若忽略負號就會錯成十一 x，常數也會錯成正五，且交叉項沒有完整核對。"
       },
       {
         "exampleId": "L3",
-        "prompt": "(x+2y)(x−y)。",
+        "prompt": "展開 (x+2y)(x-y)。",
         "solutionSteps": [
-          "x²−xy+2xy−2y²。"
+          "列出 x²、-xy、2xy、-2y²。",
+          "合併兩個 xy 項。"
         ],
-        "answer": "x²+xy−2y²。"
+        "answer": "x²+xy-2y²。",
+        "why": "x、y 是不同文字，但兩個交叉乘積都含相同的 xy，所以係數負一與正二可合併為正一；首尾平方項仍各自保留。"
       }
     ],
     "commonMistakes": [
@@ -136,12 +141,17 @@ export default {
         "mistake": "中間項係數只取一個",
         "why": "漏掉另一交叉項",
         "correction": "兩個交叉乘積都寫出再合併。"
+      },
+      {
+        "mistake": "展開兩個整式相減時只改第二式首項符號",
+        "why": "忽略減號作用於整個括號",
+        "correction": "先把第二個展開式加括號，再將每一項都變號後合併。"
       }
     ],
     "selfCheck": [
-      "我是否能能用雙重分配或表格完成二項式乘法？",
-      "我是否能能合併兩個中間同類項？",
-      "我是否能能處理係數、負號及不同文字？",
+      "我是否能用雙重分配或表格完成二項式乘法？",
+      "我是否能合併兩個中間同類項？",
+      "我是否能處理係數、負號及不同文字？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -192,7 +202,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "848ebf404380110d9a702c8ceae64d17ff7ab9ea748ad27e899853a1f699c962"
+    "contentSha256": "4849bb102e9f840eec3cd9e23b36a67c4f28cb4cd05bb7395139b78d1cab9bf0"
   },
   "mcQuestions": [
     {
@@ -222,9 +232,11 @@ export default {
         "derivedChoice": "x²+5x+6",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "交叉項合併為 5x。",
+      "explanation": "交叉項合併為 5x。 兩個二項式相乘共有四個配對，先得 x 二次方、三 x、二 x 與六，再把兩個一次同類項合併為五 x，首尾項都不能漏掉。",
       "steps": [
-        "四項展開 x²+3x+2x+6=x²+5x+6。"
+        "四項展開 x²+3x+2x+6=x²+5x+6。",
+        "寫出 x²+3x+2x+6。",
+        "合併中間項得到 x²+5x+6。"
       ],
       "optionAnalysis": [
         {
@@ -248,7 +260,7 @@ export default {
           "reason": "x²+5x+6 正確。"
         }
       ],
-      "misconceptionTarget": "漏掉交叉乘積",
+      "misconceptionTarget": "漏掉交叉乘積 只乘首項與末項而漏掉兩個交叉乘積。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -263,7 +275,7 @@ export default {
       "semanticReviewRef": "u10-s008-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "5419a365754304806602cc4d7449fba499766b4073d009ff2748e07bb5c91433"
+      "contentSha256": "c2f34e4b7ad4216cc0940a34c8ec562d34df9d9a081a970e68e0359c7cbfac16"
     },
     {
       "questionId": "u10-s008-v002",
@@ -295,7 +307,7 @@ export default {
         "derivedChoice": "−4",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "只計算兩個常數項的乘積，並保留負號。",
+      "explanation": "只計算兩個常數項的乘積，並保留負號。 面積模型四格對應每個前項與後項的配對，漏格來自負四乘一，所以記為負四；它是有號代數面積，用來表示完整展開式的常數項。",
       "steps": [
         "找出常數項−4與1。",
         "計算(−4)×1=−4。",
@@ -323,7 +335,7 @@ export default {
           "reason": "1只抄第二括號常數。"
         }
       ],
-      "misconceptionTarget": "漏乘常數項或丟失負號。",
+      "misconceptionTarget": "漏乘常數項或丟失負號。 忽略負四的符號，把漏格面積只寫成正四。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -338,7 +350,7 @@ export default {
       "semanticReviewRef": "u10-s008-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "294e2ba75190ea1df4175b0da8a3a74a0a24f921ad9bd67167125c0f49d41e03"
+      "contentSha256": "8f3de3ed1c10ec402651d82ad89afae5d94e27dcdde14759a6a6afef2208e8c0"
     },
     {
       "questionId": "u10-s008-v003",
@@ -367,9 +379,11 @@ export default {
         "derivedChoice": "2x²+11x+5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "完成四個乘積再合併。",
+      "explanation": "完成四個乘積再合併。 四個乘積是二 x 二次方、十 x、x 與五；中間兩項同為一次項，係數十加一成十一，因此完整結果為二 x 二次方加十一 x 加五。",
       "steps": [
-        "2x²+10x+x+5=2x²+11x+5。"
+        "2x²+10x+x+5=2x²+11x+5。",
+        "列出四個乘積 2x²、10x、x、5。",
+        "合併 10x+x 得 11x。"
       ],
       "optionAnalysis": [
         {
@@ -393,7 +407,7 @@ export default {
           "reason": "首項係數錯。"
         }
       ],
-      "misconceptionTarget": "交叉項只算一個",
+      "misconceptionTarget": "交叉項只算一個 漏掉一乘 x 的交叉項，將中間係數只寫成十。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -408,7 +422,7 @@ export default {
       "semanticReviewRef": "u10-s008-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "79aab0db045ba699aea2f9cb570b4f6694f01a2e14c940ae334b430e1f79b7f7"
+      "contentSha256": "9ff6b5594b0de87001e94e98220eb884cd6a863c1cd19dd57e8780a4e216940d"
     },
     {
       "questionId": "u10-s008-v004",
@@ -437,9 +451,11 @@ export default {
         "derivedChoice": "6x²+11x-10",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "首項、交叉項和常數符號逐一核對。",
+      "explanation": "首項、交叉項和常數符號逐一核對。 首項乘積為六 x 二次方，交叉乘積十五 x 與負四 x 合併成十一 x，常數負二乘五為負十；四格符號逐一核對後答案唯一。",
       "steps": [
-        "6x²+15x-4x-10=6x²+11x-10。"
+        "6x²+15x-4x-10=6x²+11x-10。",
+        "展開成 6x²+15x-4x-10。",
+        "合併交叉項為 11x，得 6x²+11x-10。"
       ],
       "optionAnalysis": [
         {
@@ -463,7 +479,7 @@ export default {
           "reason": "常數負負判錯。"
         }
       ],
-      "misconceptionTarget": "中間項或尾項符號錯",
+      "misconceptionTarget": "中間項或尾項符號錯 把負二乘五寫成正十，或交叉項十五與四相加。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -478,7 +494,7 @@ export default {
       "semanticReviewRef": "u10-s008-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "69b947da7433aa7ce7b33f4c6ef4c98656bba29adfc71a514995da74ef0d3131"
+      "contentSha256": "07078f7b251a13c5cc446a58bbbef32049ef936e1f763264e30e3b580566834a"
     },
     {
       "questionId": "u10-s008-v005",
@@ -507,9 +523,11 @@ export default {
         "derivedChoice": "x²-xy-6y²",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "xy 交叉項可合併。",
+      "explanation": "xy 交叉項可合併。 四個乘積為 x 二次方、負三 xy、正二 xy、負六 y 二次方；兩個 xy 項係數負三加二為負一，所以中間項是負 xy，四個配對完整。",
       "steps": [
-        "x²-3xy+2xy-6y²=x²-xy-6y²。"
+        "x²-3xy+2xy-6y²=x²-xy-6y²。",
+        "列出 x²-3xy+2xy-6y²。",
+        "合併同類項得到 x²-xy-6y²。"
       ],
       "optionAnalysis": [
         {
@@ -533,7 +551,7 @@ export default {
           "reason": "中間與尾符號錯。"
         }
       ],
-      "misconceptionTarget": "雙文字交叉項合併錯",
+      "misconceptionTarget": "雙文字交叉項合併錯 把負三 xy 與正二 xy 合併成正五 xy。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -548,7 +566,7 @@ export default {
       "semanticReviewRef": "u10-s008-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2008fd9f01654d4b2c810a6d6b6e76aa7a10a4794a0c7736e15bd18e40958edc"
+      "contentSha256": "30c37d18af4b56d8bc9a5a57883315ff5ee64bf550345cdf5420e6eaff077981"
     },
     {
       "questionId": "u10-s008-v006",
@@ -577,10 +595,11 @@ export default {
         "derivedChoice": "5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "用兩個係數交叉驗證。",
+      "explanation": "用兩個係數交叉驗證。 左式展開後一次項係數為 a 加四、常數為四 a；由常數二十先得 a 為五，再檢查一次項係數五加四確為九，兩條件一致。",
       "steps": [
         "展開左式 x²+(a+4)x+4a。",
-        "比較常數 4a=20 得 a=5，且 a+4=9。"
+        "比較常數 4a=20 得 a=5，且 a+4=9。",
+        "代回 a=5，同時驗證 a+4=9 與 4a=20。"
       ],
       "optionAnalysis": [
         {
@@ -604,7 +623,7 @@ export default {
           "reason": "a=5 正確。"
         }
       ],
-      "misconceptionTarget": "只比較中間項或常數項錯",
+      "misconceptionTarget": "只比較中間項或常數項錯 只看一次項九便回答九，未扣除另一交叉係數四。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -619,7 +638,7 @@ export default {
       "semanticReviewRef": "u10-s008-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ed00928f372baf17c72582e198f07ba57741227398e12ca12789234885fac9c3"
+      "contentSha256": "0bb1abd565641c3bc0bea8f83c9b5b988559be0601d051e857708a24cb123700"
     },
     {
       "questionId": "u10-s008-v007",
@@ -648,7 +667,7 @@ export default {
         "derivedChoice": "6x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "兩個二次式的平方項與常數抵消。",
+      "explanation": "兩個二次式的平方項與常數抵消。 兩個乘積各自展開後，第二個整式前的減號要作用到全部三項；二次項與常數項相消，一次項三 x 減負三 x 得六 x。",
       "steps": [
         "第一式 x²+3x+2。",
         "第二式 x²-3x+2。",
@@ -676,7 +695,7 @@ export default {
           "reason": "係數差錯。"
         }
       ],
-      "misconceptionTarget": "展開後相減時未逐項變號",
+      "misconceptionTarget": "展開後相減時未逐項變號 只減第二式首項，沒有把括號前負號分配到所有項。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -691,7 +710,7 @@ export default {
       "semanticReviewRef": "u10-s008-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "5546a09a429c9f43a56ee6fababeb9275faf5a4ace9dc4e27a6b17351d1281aa"
+      "contentSha256": "727303159d074e6cf45537617058c135ca6fa903205cbc53bc918c666786262e"
     },
     {
       "questionId": "u10-s008-v008",
@@ -720,10 +739,11 @@ export default {
         "derivedChoice": "7",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "只比較一次項係數。",
+      "explanation": "只比較一次項係數。 交叉項來自二 x 乘負三的負六 x 與 m 乘 x 的 m x，所以一次項係數是 m 減六；令它等於一，解得 m 為七，代回仍為一。",
       "steps": [
         "展開 2x²+(m-6)x-3m。",
-        "令 m-6=1，得 m=7。"
+        "令 m-6=1，得 m=7。",
+        "由 m-6=1 得 m=7，再代回一次項係數驗算。"
       ],
       "optionAnalysis": [
         {
@@ -747,7 +767,7 @@ export default {
           "reason": "m-6=-1。"
         }
       ],
-      "misconceptionTarget": "中間項係數由兩交叉項組成",
+      "misconceptionTarget": "中間項係數由兩交叉項組成 把一次項係數寫成 m 加六，忽略負三的符號。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -762,7 +782,7 @@ export default {
       "semanticReviewRef": "u10-s008-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e80b6ed91a1eaeedbf14814c1dc05dc10a7bc679c094c23fe4c6a41b165dfe08"
+      "contentSha256": "53b0e849361b3082ab6cc459353fb8f3ae847a500ae857289afb15583da227b9"
     },
     {
       "questionId": "u10-s008-v009",
@@ -791,10 +811,11 @@ export default {
         "derivedChoice": "-2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先確認常數項來自尾尾乘積。",
+      "explanation": "先確認常數項來自尾尾乘積。 二次項係數三 a 等於十二可求 a 為四，但常數項只由兩括號的常數二與負一相乘，固定為負二，與 a 的數值無關。",
       "steps": [
         "x² 係數 3a=12 得 a=4。",
-        "常數只由 2×(-1)=-2，與 a 無關。"
+        "常數只由 2×(-1)=-2，與 a 無關。",
+        "辨認常數乘積 2×(-1)。"
       ],
       "optionAnalysis": [
         {
@@ -818,7 +839,7 @@ export default {
           "reason": "把 2×4。"
         }
       ],
-      "misconceptionTarget": "把首項參數誤帶入常數項",
+      "misconceptionTarget": "把首項參數誤帶入常數項 把求得的 a 乘入常數項，誤算成負八。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -833,7 +854,7 @@ export default {
       "semanticReviewRef": "u10-s008-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8e3019c772e57a55a4d91b96363641c2a4d1de76e6a1472494319ce9f4393c6c"
+      "contentSha256": "5185418fb1308e1f48632601c4d3d74def051803039cb8ce001d15e2c9811419"
     },
     {
       "questionId": "u10-s008-v010",
@@ -862,9 +883,11 @@ export default {
         "derivedChoice": "x²+7x+10 平方公尺",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "兩邊長相乘並合併交叉項。",
+      "explanation": "兩邊長相乘並合併交叉項。 面積是兩邊長相乘，四個乘積為 x 二次方、二 x、五 x 與十；一次項合併成七 x，結果使用平方公尺而不是公尺。",
       "steps": [
-        "面積=(x+5)(x+2)=x²+7x+10。"
+        "面積=(x+5)(x+2)=x²+7x+10。",
+        "展開 (x+5)(x+2)。",
+        "合併得 x²+7x+10 平方公尺。"
       ],
       "optionAnalysis": [
         {
@@ -888,7 +911,7 @@ export default {
           "reason": "把 5-2 當中間係數。"
         }
       ],
-      "misconceptionTarget": "面積展開中間項錯",
+      "misconceptionTarget": "面積展開中間項錯 只把兩邊長相加，或漏掉交叉項而得到錯誤面積。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "公尺×公尺=平方公尺。",
@@ -903,7 +926,7 @@ export default {
       "semanticReviewRef": "u10-s008-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7ec7eb8468c43e51fc9f0587365fd33518ca7b517d4928782cde81c328f5037f"
+      "contentSha256": "bc31492d5171e86c0b399882c61eb30e539c94cfb1f36cc77fa036ae13aca2c8"
     },
     {
       "questionId": "u10-s008-v011",
@@ -932,9 +955,11 @@ export default {
         "derivedChoice": "x²+15x-100 元",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "單價乘件數，常數項 20×(-5) 為負。",
+      "explanation": "單價乘件數，常數項 20×(-5) 為負。 總銷售額為單價乘件數，展開後交叉項是負五 x 加二十 x，合併為十五 x，常數二十乘負五為負一百；情境可行時需有 x 至少為五。",
       "steps": [
-        "銷售額=(x+20)(x-5)=x²+15x-100。"
+        "銷售額=(x+20)(x-5)=x²+15x-100。",
+        "列出四個乘積並合併一次項。",
+        "得到 x²+15x-100 元。"
       ],
       "optionAnalysis": [
         {
@@ -958,7 +983,7 @@ export default {
           "reason": "x²+15x-100 正確。"
         }
       ],
-      "misconceptionTarget": "單價與數量乘法的尾項符號錯",
+      "misconceptionTarget": "單價與數量乘法的尾項符號錯 常數正負相乘寫成正一百，或把交叉項係數相加成二十五。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "元/件乘件數得到元。",
@@ -973,7 +998,7 @@ export default {
       "semanticReviewRef": "u10-s008-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7f6d1efd5d37a9d7cab27a5c36a1dc13188fea5781f3428ae52d855f5aa0464e"
+      "contentSha256": "cb8b2ea85fdf8a1bd468de7edb8ba8468a805f57a9bd1f222f341157e7c607c5"
     },
     {
       "questionId": "u10-s008-v012",
@@ -1002,9 +1027,11 @@ export default {
         "derivedChoice": "5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "交叉面積 x·4 與 1·x 合成 5x。",
+      "explanation": "交叉面積 x·4 與 1·x 合成 5x。 兩邊長相乘時交叉項四 x 與一 x 都屬一次項，合併後係數為五；常數四與二次項係數一不是題目所問的 x 項係數。",
       "steps": [
-        "展開為 x²+5x+4，所以 x 項係數 5。"
+        "展開為 x²+5x+4，所以 x 項係數 5。",
+        "展開為 x²+4x+x+4。",
+        "合併一次項，讀得 x 項係數 5。"
       ],
       "optionAnalysis": [
         {
@@ -1028,7 +1055,7 @@ export default {
           "reason": "把兩常數相乘。"
         }
       ],
-      "misconceptionTarget": "只計一個交叉區域",
+      "misconceptionTarget": "只計一個交叉區域 只取其中一個交叉係數四，漏加另一個一。",
       "prerequisiteCheck": "使用先備技能：monomial-polynomial-distribute；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "展開式各項合計表示平方公尺。",
@@ -1043,7 +1070,7 @@ export default {
       "semanticReviewRef": "u10-s008-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a8e0b83574c96c6fbc7a02e8c48c4e14b6a681adf208d085684157ccc89e7987"
+      "contentSha256": "8acc23bce58dc58213acc9ed33c16111c45b8fe50f2bba68f9a5157657965bbf"
     }
   ],
   "constructedResponses": [
@@ -1065,14 +1092,16 @@ export default {
       ],
       "standardSolution": [
         "2x·x=2x²，2x·4=8x，(-3)·x=-3x，(-3)·4=-12。",
-        "合併得 2x²+5x-12。"
+        "合併得 2x²+5x-12。",
+        "四個配對沒有遺漏，兩個交叉項八 x 與負三 x 合併成五 x，常數為負十二；代入 x=1 時原式 (-1)(5)=-5，結果二加五減十二也為負五。"
       ],
       "alternativeMethods": [
         "可用 2×2 表格，每格填一個乘積。"
       ],
       "reasoningSteps": [
         "2x·x=2x²，2x·4=8x，(-3)·x=-3x，(-3)·4=-12。",
-        "合併得 2x²+5x-12。"
+        "合併得 2x²+5x-12。",
+        "合併同類項後以 x=1 代回原式與展開式，確認兩邊同為 -5。"
       ],
       "rubric": [
         {
@@ -1099,7 +1128,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫答案最高 2 分。",
       "commonErrorTargets": [
-        "逐項分配後合併中間同類項"
+        "只乘首項與末項，漏掉八 x 或負三 x 其中一個交叉乘積。",
+        "把負三乘正四寫成正十二，或將八 x 與負三 x 合併成十一 x。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1110,7 +1140,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1bad5c82d8253c5cdc055fbb936dc298ed717da8b561be2f016e160cb12d7658"
+      "contentSha256": "69e7dc2afe4aeadc8ccbc659a353d57672a423d2adba2ff86bef92d69dba1597"
     },
     {
       "questionId": "u10-s008-cr002",
@@ -1131,7 +1161,8 @@ export default {
       "standardSolution": [
         "左式=2x²+(2a-3)x-3a。",
         "比較常數 -3a=-15 得 a=5。",
-        "再驗 x 項 2a-3=10-3=7，符合。"
+        "再驗 x 項 2a-3=10-3=7，符合。",
+        "由常數條件得到 a=5 後，首項係數固定為二、一次項係數也驗得七；因此三個係數都與右式一致，a=5 是唯一符合完整恆等式的值。"
       ],
       "alternativeMethods": [
         "可先由常數項求 a，再用中間項檢查。"
@@ -1166,7 +1197,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫 a=5，最高 2 分。",
       "commonErrorTargets": [
-        "逐項分配後合併中間同類項"
+        "將一次項係數誤寫成二 a 加三，忽略三前面的負號。",
+        "只由首項二 x² 判定 a，沒有利用常數或一次項係數求出並驗證 a=5。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1177,14 +1209,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "635f959859db5e8adafb945824efac478e050e48bd0465fa3a4a368f02d24a4f"
+      "contentSha256": "4eabcfdef6e79e5e18af64659d23322bf2fe8ebd40b4ab7c62ea6880618055ec"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s008-v001-review",
       "questionId": "u10-s008-v001",
-      "questionContentSha256": "5419a365754304806602cc4d7449fba499766b4073d009ff2748e07bb5c91433",
+      "questionContentSha256": "c2f34e4b7ad4216cc0940a34c8ec562d34df9d9a081a970e68e0359c7cbfac16",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "四項展開 x²+3x+2x+6=x²+5x+6。",
@@ -1213,12 +1245,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 (x+2)(x+3)。」獨立重算：四項展開 x²+3x+2x+6=x²+5x+6。 正解「x²+5x+6」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "8ed5dac425a1bc7397136e64b0a4b6de9659df40c6e3a2a554d9ff9479093bc8"
+      "contentSha256": "971efbfab9caa1802fa1ec800a54088b9d0b2bb3e63f8a8e6edd81d2b4e70d47"
     },
     {
       "reviewId": "u10-s008-v002-review",
       "questionId": "u10-s008-v002",
-      "questionContentSha256": "294e2ba75190ea1df4175b0da8a3a74a0a24f921ad9bd67167125c0f49d41e03",
+      "questionContentSha256": "8f3de3ed1c10ec402651d82ad89afae5d94e27dcdde14759a6a6afef2208e8c0",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "常數區塊來自 (−4)×1，因此是 −4；完整展開為 x²+x−4x−4=x²−3x−4。",
@@ -1247,12 +1279,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "u10-s008-v002 中央修訂後獨立重算：常數區塊來自 (−4)×1，因此是 −4；完整展開為 x²+x−4x−4=x²−3x−4。 四個選項逐項核對，唯一正解為「−4」；其餘選項排除理由為：4忽略負號。；−3是合併後x項係數。；1只抄第二括號常數。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "0e140592f07eb1d4b69c5d9479935a710525f97f2396fd9ba9be6cf6d2afb060"
+      "contentSha256": "ab3514f13fdec1b99f29e1bec86c98e780ec499fb0136ba0625db63366bc8d22"
     },
     {
       "reviewId": "u10-s008-v003-review",
       "questionId": "u10-s008-v003",
-      "questionContentSha256": "79aab0db045ba699aea2f9cb570b4f6694f01a2e14c940ae334b430e1f79b7f7",
+      "questionContentSha256": "9ff6b5594b0de87001e94e98220eb884cd6a863c1cd19dd57e8780a4e216940d",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "2x²+10x+x+5=2x²+11x+5。",
@@ -1281,12 +1313,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 (2x+1)(x+5)。」獨立重算：2x²+10x+x+5=2x²+11x+5。 正解「2x²+11x+5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "459a2f5e8ca2e59030b05e1c5ab9967cd1d57a9d2caa6225aa3dd3368a7e3d9a"
+      "contentSha256": "05160673a921916b6a34426c152a4a9885abbefc8ee87e5f78f9dfb11584d0eb"
     },
     {
       "reviewId": "u10-s008-v004-review",
       "questionId": "u10-s008-v004",
-      "questionContentSha256": "69b947da7433aa7ce7b33f4c6ef4c98656bba29adfc71a514995da74ef0d3131",
+      "questionContentSha256": "07078f7b251a13c5cc446a58bbbef32049ef936e1f763264e30e3b580566834a",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "6x²+15x-4x-10=6x²+11x-10。",
@@ -1315,12 +1347,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 (3x-2)(2x+5)。」獨立重算：6x²+15x-4x-10=6x²+11x-10。 正解「6x²+11x-10」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "e6d1e7b7c82f111ec67df64a610c395e22481e86e287078acd251f8bc5bc56f7"
+      "contentSha256": "64777316da72ea89521c2b2e56e084afccaea42cc8ab880d422d19d8ecfffa46"
     },
     {
       "reviewId": "u10-s008-v005-review",
       "questionId": "u10-s008-v005",
-      "questionContentSha256": "2008fd9f01654d4b2c810a6d6b6e76aa7a10a4794a0c7736e15bd18e40958edc",
+      "questionContentSha256": "30c37d18af4b56d8bc9a5a57883315ff5ee64bf550345cdf5420e6eaff077981",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "x²-3xy+2xy-6y²=x²-xy-6y²。",
@@ -1349,12 +1381,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 (x+2y)(x-3y)。」獨立重算：x²-3xy+2xy-6y²=x²-xy-6y²。 正解「x²-xy-6y²」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "67492c476e99d920bf8db8e74a6828a263a16b213d1d4d3c3912bfaf0da82697"
+      "contentSha256": "324add69ca85e5be3b7fbce622310cc64e4e7502a19f3350342a547834d6b0ab"
     },
     {
       "reviewId": "u10-s008-v006-review",
       "questionId": "u10-s008-v006",
-      "questionContentSha256": "ed00928f372baf17c72582e198f07ba57741227398e12ca12789234885fac9c3",
+      "questionContentSha256": "0bb1abd565641c3bc0bea8f83c9b5b988559be0601d051e857708a24cb123700",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "展開左式 x²+(a+4)x+4a。比較常數 4a=20 得 a=5，且 a+4=9。",
@@ -1383,12 +1415,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 (x+a)(x+4)=x²+9x+20，則 a 為何？」獨立重算：展開左式 x²+(a+4)x+4a。比較常數 4a=20 得 a=5，且 a+4=9。 正解「5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "20805951a13572e5bbbe0cf5fe57a52e99837f386a1e39a5b230d6649423e6c5"
+      "contentSha256": "3a6eecb6c3854528a4258a56c6c442e35d6c4c415b02f85a2368991fa2655197"
     },
     {
       "reviewId": "u10-s008-v007-review",
       "questionId": "u10-s008-v007",
-      "questionContentSha256": "5546a09a429c9f43a56ee6fababeb9275faf5a4ace9dc4e27a6b17351d1281aa",
+      "questionContentSha256": "727303159d074e6cf45537617058c135ca6fa903205cbc53bc918c666786262e",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "第一式 x²+3x+2；第二式 x²-3x+2；相減得 6x。",
@@ -1417,12 +1449,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 (x+1)(x+2)-(x-1)(x-2)。」獨立重算：第一式 x²+3x+2；第二式 x²-3x+2；相減得 6x。 正解「6x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "f8c35cbb7d99f60a6532cfd6723e1f60e39579ca6083743947b9d4c07cb12a9c"
+      "contentSha256": "a81a2c084ea61e88a9068df9307b384fa50473d829b6c714e667b0aac08d12b7"
     },
     {
       "reviewId": "u10-s008-v008-review",
       "questionId": "u10-s008-v008",
-      "questionContentSha256": "e80b6ed91a1eaeedbf14814c1dc05dc10a7bc679c094c23fe4c6a41b165dfe08",
+      "questionContentSha256": "53b0e849361b3082ab6cc459353fb8f3ae847a500ae857289afb15583da227b9",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "展開 2x²+(m-6)x-3m。令 m-6=1，得 m=7。",
@@ -1451,12 +1483,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「(2x+m)(x-3) 的 x 項係數為 1，則 m 為何？」獨立重算：展開 2x²+(m-6)x-3m。令 m-6=1，得 m=7。 正解「7」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "6a4999ed74a4e0153c0e7398991807f1e6aa60e29e3aa2ce0c2ee2053ae42a93"
+      "contentSha256": "54d49524da3ccb79ce743b391614fba0e4fbb69639043dc6a2410424196eed49"
     },
     {
       "reviewId": "u10-s008-v009-review",
       "questionId": "u10-s008-v009",
-      "questionContentSha256": "8e3019c772e57a55a4d91b96363641c2a4d1de76e6a1472494319ce9f4393c6c",
+      "questionContentSha256": "5185418fb1308e1f48632601c4d3d74def051803039cb8ce001d15e2c9811419",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "x² 係數 3a=12 得 a=4；常數只由 2×(-1)=-2，與 a 無關。",
@@ -1485,12 +1517,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 (ax+2)(3x-1) 的 x² 項係數為 12，常數項為何？」獨立重算：x² 係數 3a=12 得 a=4；常數只由 2×(-1)=-2，與 a 無關。 正解「-2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "af0edea9d772ebb04c29b896495470a282630fbf14ad5a8246444cb8bafdb487"
+      "contentSha256": "a0bee2ac8e306af5a9e99ed86f58415780b07d4448e63238ba14a39555be717d"
     },
     {
       "reviewId": "u10-s008-v010-review",
       "questionId": "u10-s008-v010",
-      "questionContentSha256": "7ec7eb8468c43e51fc9f0587365fd33518ca7b517d4928782cde81c328f5037f",
+      "questionContentSha256": "bc31492d5171e86c0b399882c61eb30e539c94cfb1f36cc77fa036ae13aca2c8",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "面積=(x+5)(x+2)=x²+7x+10。",
@@ -1519,12 +1551,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「長方形長 (x+5) 公尺、寬 (x+2) 公尺，面積為何？」獨立重算：面積=(x+5)(x+2)=x²+7x+10。 正解「x²+7x+10 平方公尺」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "459723a3c46a3b26b4c6de4d4accda130af184a7d53025f021fa71027a58e028"
+      "contentSha256": "f51d752d44683d1e73d78f2f817888bde0c3dc957ffcc17686ec94502ec3b4f1"
     },
     {
       "reviewId": "u10-s008-v011-review",
       "questionId": "u10-s008-v011",
-      "questionContentSha256": "7f6d1efd5d37a9d7cab27a5c36a1dc13188fea5781f3428ae52d855f5aa0464e",
+      "questionContentSha256": "cb8b2ea85fdf8a1bd468de7edb8ba8468a805f57a9bd1f222f341157e7c607c5",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "銷售額=(x+20)(x-5)=x²+15x-100。",
@@ -1553,12 +1585,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一個商品每件售價 (x+20) 元，售出 (x-5) 件。總銷售額為何？」獨立重算：銷售額=(x+20)(x-5)=x²+15x-100。 正解「x²+15x-100 元」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "cd0c58a57b278d0b6464e8ee61442fe74500f08002b954d4d5309b3180394d15"
+      "contentSha256": "dad4a21a46c9562b4850ec4858167272c00924558969e1edf0d7bc119908208e"
     },
     {
       "reviewId": "u10-s008-v012-review",
       "questionId": "u10-s008-v012",
-      "questionContentSha256": "a8e0b83574c96c6fbc7a02e8c48c4e14b6a681adf208d085684157ccc89e7987",
+      "questionContentSha256": "8acc23bce58dc58213acc9ed33c16111c45b8fe50f2bba68f9a5157657965bbf",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "展開為 x²+5x+4，所以 x 項係數 5。",
@@ -1587,7 +1619,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「某矩形花圃原邊長為 (x+1) 與 (x+4) 公尺。面積模型的 x 項係數是多少？」獨立重算：展開為 x²+5x+4，所以 x 項係數 5。 正解「5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "789653ae37af288a59bb515edde45c5f70fd4980f319bb8cc64116e8fc85d4a5"
+      "contentSha256": "6024e91481bd91a6fc18bb511e40242b098622944eef5aa6b65e8e410f37bdc0"
     }
   ],
   "drawingSpecs": []

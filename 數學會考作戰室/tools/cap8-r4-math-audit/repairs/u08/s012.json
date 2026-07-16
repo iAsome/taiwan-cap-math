@@ -1,0 +1,41 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u08",
+  "batch":"009-u08-complete",
+  "skills":["s012"],
+  "mc":[
+    {"questionId":"u08-s012-v001","expectedContentSha256":"92c673e6c322f7f3369ffb95b718818383ec96d6972f319431f4f41c0be290cb","appendText":{"explanation":"正面既指定為長乘高的面，沿正前方觀看時寬度方向被壓縮，只留下長與高；因此其餘含寬或只含單一方向的選項都不完整。","misconceptionTarget":"也可能把物體最長的邊誤當成正面，而忽略題目已明確指定觀察面。"},"appendArray":{"steps":["辨認沿視線消失的方向是寬。","核對正視圖保留的兩個方向恰為長與高。"]}},
+    {"questionId":"u08-s012-v002","expectedContentSha256":"7391e7d88d179a8a1e6e5d1992f8b7a22a5062a7de720b61745e618a7c1240d9","appendText":{"explanation":"觀察者位於物體上方並向下投影，依定義所得是俯視圖；正視與側視來自水平方向，透視圖則不是本題的正投影名稱。","misconceptionTarget":"還可能把日常所說的鳥瞰圖與透視圖混用，沒有依正投影術語作答。"},"appendArray":{"steps":["排除來自正面與側面的水平觀察方向。","依上方向下的定義選出俯視圖。"]}},
+    {"questionId":"u08-s012-v003","expectedContentSha256":"42e6beb72921ce53f9a81cf1011ab0b4def6fa172d20c997f2e64934aa866b20","appendText":{"explanation":"俯視時高度六公分沿視線被壓縮，平面只保留長九與寬四，所以尺寸是九乘四公分；三個尺寸同列的選項是立體資料而非平面視圖。","misconceptionTarget":"也可能因高度六較大而把它帶入，沒有先判斷哪個方向沿視線消失。"},"appendArray":{"steps":["由上往下觀看，刪除高度方向。","用長九與寬四核對唯一的二維尺寸選項。"]}},
+    {"questionId":"u08-s012-v004","expectedContentSha256":"4167fbece6292410d5b6c5f56c3797bfbe543ff893099eca8cb4dbc9d0823693","appendText":{"explanation":"從右側看時長九公分沿視線被壓縮，留下寬四與高六，故右側視圖為四乘六公分；附圖只提供尺寸與觀察箭頭，不能取代方向判讀。","misconceptionTarget":"也可能直接抄附圖最醒目的長九，而未找出右側視線真正壓縮的方向。"},"appendArray":{"steps":["依箭頭確認觀察者位於物體右側。","刪除長度方向並保留寬四、高六。"]}},
+    {"questionId":"u08-s012-v005","expectedContentSha256":"f5729af3567313ea65819cd83e0ebdba6f980dbd60b18279c59ad867d3606038","appendText":{"explanation":"五個俯視占用格各代表至少有一塊方塊，但每格上方仍可能繼續堆疊，因此只能保證總數下限為五，不能斷定恰好或至多五塊。","misconceptionTarget":"還可能認為俯視能看見所有層數，忽略同一視線上的方塊會互相遮蔽。"},"appendArray":{"steps":["把每個占用格先配置一塊，得到下限五。","指出任一格可增加高度，所以沒有由俯視得到的五塊上限。"]}},
+    {"questionId":"u08-s012-v006","expectedContentSha256":"e7ca4b1d71d36dbaa966a932d9f9141960a24f814a554fbb258117f9e31243d4","appendText":{"explanation":"兩視圖共同的八公分是長；正視圖剩餘的五公分便是高，俯視圖剩餘的三公分便是寬，所以高五、寬三的配對唯一。","misconceptionTarget":"也可能只按數字出現順序配對，沒有先對齊兩張視圖的共同長度。"},"appendArray":{"steps":["以共同八公分標定同一長度方向。","將兩張視圖各自剩下的尺寸分別指派給高與寬。"]}},
+    {"questionId":"u08-s012-v007","expectedContentSha256":"acfd1531d6d4722139ec6b2782947659745844f1e5db9a3eb3fbc10192629517","appendText":{"explanation":"正方體六個面都是邊長相等的正方形，從任一個基本正面、上方或側面做正投影，輪廓都必然為正方形，而不是僅以外觀猜測。","misconceptionTarget":"也可能把不同觀察方向誤解成一定要產生不同輪廓，忽略三方向尺寸相等。"},"appendArray":{"steps":["令正方體邊長為同一正數。","每個基本視圖都保留兩條相等且垂直的邊。"]}},
+    {"questionId":"u08-s012-v008","expectedContentSha256":"f6cda7426394f593add4111695710b2e2b908e8d62812ccefcb979c2555962ff","appendText":{"explanation":"單一正視圖只提供正面輪廓，深度方向完全缺失；具有正方形正面而深度不同的柱體也能產生相同輪廓，所以不能唯一判成正方體。","misconceptionTarget":"還可能把正方形輪廓的充分條件與正方體的必要條件倒置。"},"appendArray":{"steps":["指出正視圖沒有提供物體深度。","構造正方形正面但深度不等於邊長的柱體反例。"]}},
+    {"questionId":"u08-s012-v009","expectedContentSha256":"728986ac9f3637445a2d940130fda3f8943e6e026bc7424ff078a1cf7df4d8ee","appendText":{"explanation":"第二欄正視輪廓最高為四，依最大值定義至少有一個實際堆疊達到四層；輪廓不提供該欄其他深度位置或總方塊數。","misconceptionTarget":"也可能把二、四、一直接相加成七，錯把各欄最高值當成總數。"},"appendArray":{"steps":["把每欄輪廓值解讀為該欄所有深度位置的最大值。","由最大值四必須可達，推出至少一堆高度四。"]}},
+    {"questionId":"u08-s012-v010","expectedContentSha256":"a6d8f029718ed5c7d49bdddf912a2b4867f3f939693d1a8fcb1a67aad56ff2ca","appendText":{"explanation":"家具的深四十五公分就是前後寬度，俯視圖從上方保留長一百二十與深四十五，高八十沿視線被壓縮，外框故為一百二十乘四十五。","misconceptionTarget":"還可能把櫃體正面高度八十帶入俯視外框，混淆上方與正面觀察。"},"appendArray":{"steps":["將家具術語深對應為長方體的寬。","刪除高度後，以長與深組成俯視外框。"]}},
+    {"questionId":"u08-s012-v011","expectedContentSha256":"d199975354883a410b01fb548472dd498e7dba4e50a899346022953d19d13f78","appendText":{"explanation":"共同的二十公分已指定為高度，正視剩餘三十是長，側視剩餘十二是寬；底面積因此為三十乘十二等於三百六十平方公分。","misconceptionTarget":"也可能直接計算正視三十乘二十，得到的是正面面積而非底面積。"},"appendArray":{"steps":["從正視與側視各刪去共同高度。","用恢復出的長三十與寬十二計算底面積。"]}},
+    {"questionId":"u08-s012-v012","expectedContentSha256":"8ac5cdf6f677cd3c017544c9000523bf5775f3f1243e925d64dd904861a0f6fb","appendText":{"explanation":"六個占用格各至少一塊，故總數不可能小於六；五塊立即違反俯視下界，而最高三層只限制上方堆疊，不會降低基本下限。","misconceptionTarget":"也可能把最高三層誤當總數上限，忽略六個位置可分別堆疊。"},"appendArray":{"steps":["先只用俯視建立總數至少為六。","比較四個選項，只有五小於此不可違反的下界。"]}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u08-s012-cr001","expectedContentSha256":"90b42e8526e572e8bba74c610b533c2d1adf93ea9bcc82821aca56b3c6b5cf5b","appendArray":{"standardSolution":["三組視圖合計恰好涵蓋長高、長寬、寬高三種配對；每次刪去的方向分別為寬、高、長，沒有遺漏或重複。"],"reasoningSteps":["以三種兩兩配對交叉核對長、寬、高。"],"commonErrors":["把右側視圖寫成長乘高，沒有刪除沿右側視線的長度方向。"]}},
+    {"questionId":"u08-s012-cr002","expectedContentSha256":"e6ddf790714641f0204a680300cc017d6fc742001df4f1ce4849af475f98e421","appendArray":{"standardSolution":["配置四、一、一、一、一的總和為八；唯一四高堆從正面與側面都會形成最高四，因此同時滿足兩個最高條件。"],"reasoningSteps":["代回兩個水平視圖確認同一高堆可共享。"],"commonErrors":["誤認正視最高四與側視最高四必須由兩個不同位置分別達成。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u08-s012-lecture-r1","expectedContentSha256":"57af5693af9519ebf8ccfc6d1df7f140aa4a3d6207783982bf94f9e2cce88c1d","appendArray":{"conceptDevelopment":["每次判讀都可用『保留兩向、壓縮一向』核對：三個基本視圖應恰好對應長高、長寬、寬高三種配對；若重複使用同一配對，表示觀察方向尚未固定。"],"stepByStepMethod":[{"step":5,"instruction":"用三種方向配對與反例檢查結論是否充分。","check":"沒有從單一輪廓推定未顯示的深度或內部結構。"}]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"長方體長 8、寬 5、高 3 公分，正面是長×高面。正視圖尺寸？","solutionSteps":["固定正面為長乘高面。","沿正前方觀看時寬被壓縮。","保留長八與高三，得到八乘三公分。"],"answer":"8 公分×3 公分。","why":"正視圖只保留與正面平行的長、高兩方向，寬沿視線消失；先指出被壓縮方向可避免看到數值後任意配對。"},
+      {"exampleId":"L2","prompt":"同一長方體的俯視圖尺寸？","solutionSteps":["由上方向下觀看。","高度三沿垂直視線被壓縮。","保留長八與寬五，得到八乘五公分。"],"answer":"8 公分×5 公分。","why":"俯視圖描述底面外框，因此保留長與寬而不含高度；這也說明俯視輪廓不能直接提供物體有多高。"},
+      {"exampleId":"L3","prompt":"同一長方體的右側視圖尺寸？","solutionSteps":["從右側沿長度方向觀看。","長八沿視線被壓縮。","保留寬五與高三，得到五乘三公分。"],"answer":"5 公分×3 公分。","why":"側視圖的平面由前後寬度與垂直高度組成，長度沿視線消失；依方向刪去一維比背誦固定順序可靠。"},
+      {"exampleId":"L4","prompt":"某方塊組合俯視圖顯示 4 個占用位置，能否只由此確定總方塊數？","solutionSteps":["每個占用位置至少有一塊。","俯視把高度沿視線壓縮，沒有顯示各堆層數。","因此只能推出至少四塊，不能確定實際總數。"],"answer":"不能；只能確定至少 4 塊。","why":"同一個俯視占用圖可對應高度全為一或某些位置向上堆疊的多種立體，構造兩種配置便能證明資訊不足。"}
+    ]}}
+  ],
+  "drawingSpecs":[
+    {"figureId":"u08-s012-fig001","expectedContentSha256":"53ba24a975e66ae9eefe0f46a385c3da49d97d8daf67a9862b3b9c8b84ae9bdd","set":{"altText":"未按比例的透視長方體，前方水平邊標示長9公分，斜向深度邊標示寬4公分，垂直邊標示高6公分；圖右側有向左的觀察箭頭。","svgDescription":"未按比例的透視長方體，前方水平邊標示長9公分，斜向深度邊標示寬4公分，垂直邊標示高6公分；圖右側有向左的觀察箭頭。","mobileReadabilityReview":"縮至360px寬時，長方體黑色粗線、三個尺寸標籤、右側觀察箭頭及未按比例警語仍可辨識且不重疊。","printReadabilityReview":"A4黑白列印以白底、黑色粗線輪廓與箭頭呈現，不依賴色彩；三個尺寸文字在縮放後仍清楚。","answerLeakageReview":"圖僅重述題幹的長、寬、高與右側觀察方向；alt與desc不說明哪兩個方向被保留，也不揭露正確選項。","figureReview":{"decision":"pass","manualRenderedInspection":true,"reviewNote":"重新核對長9、寬4、高6的標籤位置、右側向左箭頭、白底黑白列印與手機縮放；替代文字只描述已知資訊，未揭露側視答案。","reviewedAt":"2026-07-12"}}}
+  ],
+  "textFiles":[
+    {"path":"figures/u08/u08-s012-fig001.svg","replacements":[
+      {"from":"<desc id=\"desc\">長方體的長為 9 公分、寬為 4 公分、高為 6 公分。箭頭由右側指向長方體，表示右側視圖保留寬與高。</desc>","to":"<desc id=\"desc\">未按比例的透視長方體，前方水平邊標示長9公分，斜向深度邊標示寬4公分，垂直邊標示高6公分；圖右側有向左的觀察箭頭。</desc>","count":1},
+      {"from":"</desc>\n<g fill=\"none\"","to":"</desc>\n<rect x=\"0\" y=\"0\" width=\"820\" height=\"430\" fill=\"white\"/>\n<g fill=\"none\"","count":1}
+    ]}
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u07",
+  "batch": "008-u07-complete",
+  "skills": ["s002"],
+  "mc": [
+    {
+      "questionId": "u07-s002-v001",
+      "expectedContentSha256": "3e15ffe9664ff38275984894b4188db038a08ef62d41be1507b1bc71e2b370ea",
+      "appendText": {"explanation": "代入6得到13>12為真，代入端點5得到12>12為假，驗證範圍是嚴格大於5。因此只可能選右側且不含端點的範圍。", "misconceptionTarget": "也可能只在一邊減七，破壞原來的不等關係。"},
+      "appendArray": {"steps": ["用x=6與x=5代回原式，確認方向與端點排除。"]}
+    },
+    {
+      "questionId": "u07-s002-v002",
+      "expectedContentSha256": "14e76f9cb77ee08dc5892a5d30828f61f4c68b16e296ef419916da96792b00e0",
+      "appendText": {"explanation": "端點13代入後左式為9，與右式相等，所以13必須包含；14則不符合。這也排除把上界錯寫成嚴格小於。", "misconceptionTarget": "還可能把x-4理解成x與4的距離而不做等價運算。"},
+      "appendArray": {"steps": ["代入13與14，驗證端點包含且更大值排除。"]}
+    },
+    {
+      "questionId": "u07-s002-v003",
+      "expectedContentSha256": "b667ed94b2dbadac6a6ad15c4417744bd8ec2a574a22e460f34cb76214c8a3c1",
+      "appendText": {"explanation": "正數除法保持次序；用5驗算25<30成立，用6驗算30<30失敗，故端點不含。這同時排除把除以正數誤當成需要反向。", "misconceptionTarget": "也可能把30除以5算錯，或無故把嚴格小於改成含等號。"},
+      "appendArray": {"steps": ["以5與6代入原式檢查範圍內值及端點。"]}
+    },
+    {
+      "questionId": "u07-s002-v004",
+      "expectedContentSha256": "0032d3453dbf7a42e338baa972f441887d4b178a9a79ea21066b66c09bbc3d95",
+      "appendText": {"explanation": "x=6使左式正好20，符合含等號條件；x=5使左式為17而不成立，x=7則成立，確認射線應從6向較大側延伸。", "misconceptionTarget": "還可能把二十減二錯算，或除正三時誤反向。"},
+      "appendArray": {"steps": ["把6與5代回3x+2≥20，核對端點及方向。"]}
+    },
+    {
+      "questionId": "u07-s002-v005",
+      "expectedContentSha256": "09925597f32ba2fabab007d5fa4c5b17417780eff361d067fc1857754204082b",
+      "appendText": {"explanation": "因4為正，最後除法不改方向；代入3成立、4不成立，確認答案不含端點。端點四代入後成為七小於七，這個命題為假。", "misconceptionTarget": "也可能把指定的先同加九做成只改左式符號的移項。"},
+      "appendArray": {"steps": ["用x=3與x=4代回原式驗證x<4。"]}
+    },
+    {
+      "questionId": "u07-s002-v006",
+      "expectedContentSha256": "34de38709ff1d1da28f4a43207f6cdb49c537c414f1a2f856229610a1c0af430",
+      "appendText": {"explanation": "端點6使2×6+5=17而成立；7使左式19超過17，因此只有7不是解。這也說明含等號的上界本身仍然可以取到。", "misconceptionTarget": "還可能看到負十就先排除，未將它代入小於等於的範圍。"},
+      "appendArray": {"steps": ["逐一代入四個選項，找出唯一使原式為假的7。"]}
+    },
+    {
+      "questionId": "u07-s002-v007",
+      "expectedContentSha256": "cb98496943d32b7c5b39189f5116a8678a0bb4f12068dce2066b972a7f0d8863",
+      "appendText": {"explanation": "a為正保證除法不反向；求得4後，原式4x>12確實等價於x>3。若選其他係數，邊界三就不會使左右兩邊相等。", "misconceptionTarget": "也可能忽略a>0的條件，未先確認能否保持不等號方向。"},
+      "appendArray": {"steps": ["將a=4代回並同除正四，檢查解集恰為x>3。"]}
+    },
+    {
+      "questionId": "u07-s002-v008",
+      "expectedContentSha256": "40a28950c52e6b53fcafa5fcbb66bb857e852b51de35ed3ace5d4aaa772b4bb8",
+      "appendText": {"explanation": "乘以正二只清除分母而不反向；端點7代入左式等於5，所以必須包含。範圍外的六代入則不足五，可排除錯向答案。", "misconceptionTarget": "還可能只把分子中的x乘二，沒有對整個不等式等價處理。"},
+      "appendArray": {"steps": ["代入x=7及較小的6，檢查端點與向右範圍。"]}
+    },
+    {
+      "questionId": "u07-s002-v009",
+      "expectedContentSha256": "e858eec313f1baa080e5df313368827d5098b3ffe581b6b7dc1253830127e75b",
+      "appendText": {"explanation": "同加2x可把未知數係數移成正二，後續只需減一並除正二，完全符合題目策略限制。", "misconceptionTarget": "也可能選已知最後答案而忽略題目只問符合限制的第一步。"},
+      "appendArray": {"steps": ["完成7>1+2x、6>2x、3>x，檢查全程未除負數。"]}
+    },
+    {
+      "questionId": "u07-s002-v010",
+      "expectedContentSha256": "2fe85d823a757eaa87ef95efeb026bb43886d50728f7c731641eb57b861a9140",
+      "appendText": {"explanation": "原有18是固定項、每次6乘任務次數；七次剛好60可兌換，證明≥而非>。若少乘任務次數，單位與累積規則都不成立。", "misconceptionTarget": "也可能把每次六點寫成固定六，或把原有十八乘上次數。"},
+      "appendArray": {"steps": ["以n=7算得60點，驗證至少條件包含邊界。"]}
+    },
+    {
+      "questionId": "u07-s002-v011",
+      "expectedContentSha256": "1cb3128a0baf9646470351dedd6d9f8e917c587c4ae73588865c0d49f5d4c0b3",
+      "appendText": {"explanation": "七分鐘水量恰35並未超過，八分鐘38才首次觸發；完整分鐘限制要求取下一整數。", "misconceptionTarget": "還可能把t>7四捨五入回七，忽略嚴格門檻與首次觸發。"},
+      "appendArray": {"steps": ["比較t=7與t=8的水量，確認最小完整分鐘為8。"]}
+    },
+    {
+      "questionId": "u07-s002-v012",
+      "expectedContentSha256": "4cdbda5954299e58146c306fcf0f9cd41e9b97c511b327789549df58e3fdd288",
+      "appendText": {"explanation": "五圈增加4公里，總距離恰6.5而符合不少於；四圈只有5.7公里，尚未達標。整圈限制也表示結果不能保留任何非整數圈數。", "misconceptionTarget": "還可能把累積里程二點五再次乘圈數，錯置固定量與單位量。"},
+      "appendArray": {"steps": ["以4圈與5圈相鄰檢查，確認5為最小整數解。"]}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u07-s002-cr001",
+      "expectedContentSha256": "692e0d23f9ddb46c9896d8bc5da9d21a6f478ea3e20b4189d510e8ed229d925a",
+      "set": {
+        "fullCreditSolution": ["在4x-7≤21兩邊同加7，得到4x≤28；同加相同數不改變大小次序。", "再將兩邊同除以正數4，不等號方向保持，得到x≤7。", "代入邊界x=7，左式4×7-7=21，與右式相等，所以7應納入解集。", "另取範圍外x=8，左式25>21不成立，可確認方向不是x≥7。"],
+        "reasoningSteps": ["兩邊同加7消去常數。", "兩邊同除正四孤立x。", "代入邊界7檢查等號。", "用範圍外的8反查方向。"],
+        "commonErrors": ["只在左邊加7而未同步改右邊，破壞等價關係。", "除以正數4時不必要地反向，或漏掉原符號中的等號。"]
+      }
+    },
+    {
+      "questionId": "u07-s002-cr002",
+      "expectedContentSha256": "14ff70f58693982fef218f2d69677aa39c5abc95c4143c965f9db14a4f802a9e",
+      "set": {
+        "fullCreditSolution": ["設x為購買的筆數，因不能買負支或部分一支，所以x為非負整數。", "筆記本固定34元，x支筆共12x元；不得超過130元給出34+12x≤130。", "兩邊減34得12x≤96，再除正12得x≤8。", "買8支總價34+96=130元可行；買9支為142元超過現金，所以最大非負整數是8。"],
+        "reasoningSteps": ["定義筆數及非負整數限制。", "辨認固定費與每支費建立≤。", "解出連續上界x≤8。", "用8與9支相鄰檢查最大值。"],
+        "commonErrors": ["漏加已確定購買的筆記本34元，使可買筆數被高估。", "把不得超過寫成≥，或解出上界後未套用筆數的整數限制。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u07-s002-lecture-r1",
+      "expectedContentSha256": "8f19bb8e73b7e4f4ccc91d3a23aef7de24799ce494d5e6ea9ca27a3f1067c93d",
+      "appendArray": {"conceptNarrative": ["每一步等價運算後都可用邊界、範圍內與範圍外的測試值回到原式檢查；遇到人數、圈數或分鐘等離散量，還要把連續範圍解讀成合適整數。"]},
+      "set": {
+        "method": [
+          {"step": 1, "instruction": "辨認要消去的常數或正係數。", "check": "本節不直接除以負數。"},
+          {"step": 2, "instruction": "在左右兩邊同加或同減同一數。", "check": "每一行仍與前一行等價。"},
+          {"step": 3, "instruction": "必要時同乘或同除同一正數。", "check": "乘除正數不改不等號方向。"},
+          {"step": 4, "instruction": "將結果寫成x在一段範圍，而非單一值。", "check": "端點是否包含沿用原符號。"},
+          {"step": 5, "instruction": "代入邊界、內部與外部值，情境題再處理整數限制。", "check": "原式真假與答案範圍一致。"}
+        ],
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "解x+5>9。", "solutionSteps": ["兩邊同減5。", "得到x>4。", "代入5成立、4不成立。"], "answer": "x>4。", "why": "同減五保持原來的大小次序，並使未知數單獨。以範圍內的五及端點四回到原式，一真一假，既確認方向也確認嚴格不等號沒有納入端點。"},
+          {"exampleId": "L2", "prompt": "解x-7≤2。", "solutionSteps": ["兩邊同加7。", "得到x≤9。", "用9與10代入檢查。"], "answer": "x≤9。", "why": "消去負七必須在兩邊同加七，不是只把符號搬到右邊。九代入使兩邊相等而成立，十代入則失敗，因此上界九包含在解集中。"},
+          {"exampleId": "L3", "prompt": "解3x<15。", "solutionSteps": ["辨認係數3為正。", "兩邊同除正數3，方向不變。", "得到x<5並以4、5驗算。"], "answer": "x<5。", "why": "正數除法會等比例縮小兩邊而不改變次序，所以仍使用小於號。四在答案範圍內且原式成立，五恰為端點但不成立，驗證嚴格性。"},
+          {"exampleId": "L4", "prompt": "解2x+3≥11。", "solutionSteps": ["兩邊同減3得2x≥8。", "兩邊同除正二得x≥4。", "代入4得等號成立。"], "answer": "x≥4。", "why": "先消去常數再除正係數，每一步都維持等價與方向。端點四讓原式左邊等於十一，因≥含等號而必須納入，較大的數也都成立。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

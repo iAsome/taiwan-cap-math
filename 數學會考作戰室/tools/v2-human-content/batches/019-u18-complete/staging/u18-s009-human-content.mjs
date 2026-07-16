@@ -622,7 +622,7 @@ export const QUESTIONS = [
       "5、5、9 與 10、10、19"
     ],
     "answerIndex": 1,
-    "independentSolution": "第一選項中的兩組三邊均合法，且 4/8=5/10=7/14=1/2。",
+    "independentSolution": "第二選項的4、5、7與8、10、14都滿足三角形不等式，且對應邊比8/4=10/5=14/7=2，所以兩三角形以SSS相似。",
     "explanation": "4+5>7、8+10>14，兩組可成三角形；三組邊比皆 1:2。",
     "steps": [
       "先檢查存在性。",
@@ -656,7 +656,7 @@ export const QUESTIONS = [
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "題目量綱一致，答案不需另行四捨五入。",
     "ambiguityAndBoundaryAudit": "題意限定比較順序與資料範圍，沒有其他合理解讀。",
-    "difficultyReason": "同時检查存在性和 SSS 比例。",
+    "difficultyReason": "同時檢查存在性和 SSS 比例。",
     "literacyContextNecessity": null,
     "visualMode": "text-only",
     "figureId": null,
@@ -665,7 +665,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "dfa142a82881f1254e663fca7b41fed5405046cdbb0404c1ebe172edf3cf08c6"
+    "contentSha256": "3f2d0c72abb0f5193a7db0f73403c531b32d16e719aba7f24b4b9ccb543194b0"
   },
   {
     "questionId": "u18-s009-v007",
@@ -1355,8 +1355,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-sss",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "dfa142a82881f1254e663fca7b41fed5405046cdbb0404c1ebe172edf3cf08c6",
-    "independentSolution": "第一選項中的兩組三邊均合法，且 4/8=5/10=7/14=1/2。",
+    "contentSha256": "3f2d0c72abb0f5193a7db0f73403c531b32d16e719aba7f24b4b9ccb543194b0",
+    "independentSolution": "第二選項的4、5、7與8、10、14都滿足三角形不等式，且對應邊比8/4=10/5=14/7=2，所以兩三角形以SSS相似。",
     "derivedAnswer": "4、5、7 與 8、10、14",
     "storedAnswer": "4、5、7 與 8、10、14",
     "answerMatch": true,
@@ -1375,7 +1375,7 @@ export const SEMANTIC_REVIEWS = [
     },
     "difficultyReason": "同時检查存在性和 SSS 比例。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
-    "reviewerNote": "重新由已知條件獨立計算：第一選項中的兩組三邊均合法，且 4/8=5/10=7/14=1/2。 四個選項逐一核對後，只有「4、5、7 與 8、10、14」符合；主要排除點是「只驗證比例或只驗證三角形不等式。」。",
+    "reviewerNote": "先逐項檢查三角形不等式，再比較三組對應邊。第二選項的4、5、7與8、10、14均可成三角形，且放大倍率都為2，因此只有第二選項符合SSS相似。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },

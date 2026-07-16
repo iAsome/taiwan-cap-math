@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "unitId": "u05",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "006-u05-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u05\",\n  \"lockedSkillCount\": 12,\n  \"lectureCount\": 12,\n  \"mcQuestionCount\": 144,\n  \"constructedResponseCount\": 24,\n  \"semanticReviewCount\": 144,\n  \"figureCount\": 0,\n  \"difficultyCounts\": {\n    \"basic\": 36,\n    \"standard\": 36,\n    \"advanced\": 36,\n    \"literacy\": 36\n  },\n  \"answerIndexCounts\": [\n    36,\n    36,\n    36,\n    36\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"normalizedPromptUniquenessVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingVerified\": true,\n  \"emittedModuleCount\": 12\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u05",
+          "lockedSkillCount": 12,
+          "lectureCount": 12,
+          "mcQuestionCount": 144,
+          "constructedResponseCount": 24,
+          "semanticReviewCount": 144,
+          "figureCount": 0,
+          "difficultyCounts": {
+            "basic": 36,
+            "standard": 36,
+            "advanced": 36,
+            "literacy": 36
+          },
+          "answerIndexCounts": [
+            36,
+            36,
+            36,
+            36
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "legacyIsolationVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "normalizedPromptUniquenessVerified": true,
+          "productionActivationAllowed": false,
+          "stagingVerified": true,
+          "emittedModuleCount": 12
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u05\",\n  \"lockedSkillCount\": 12,\n  \"lectureCount\": 12,\n  \"mcQuestionCount\": 144,\n  \"constructedResponseCount\": 24,\n  \"semanticReviewCount\": 144,\n  \"figureCount\": 0,\n  \"difficultyCounts\": {\n    \"basic\": 36,\n    \"standard\": 36,\n    \"advanced\": 36,\n    \"literacy\": 36\n  },\n  \"answerIndexCounts\": [\n    36,\n    36,\n    36,\n    36\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"normalizedPromptUniquenessVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingVerified\": true,\n  \"emittedModuleCount\": 12\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u05",
+          "lockedSkillCount": 12,
+          "lectureCount": 12,
+          "mcQuestionCount": 144,
+          "constructedResponseCount": 24,
+          "semanticReviewCount": 144,
+          "figureCount": 0,
+          "difficultyCounts": {
+            "basic": 36,
+            "standard": 36,
+            "advanced": 36,
+            "literacy": 36
+          },
+          "answerIndexCounts": [
+            36,
+            36,
+            36,
+            36
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "legacyIsolationVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "normalizedPromptUniquenessVerified": true,
+          "productionActivationAllowed": false,
+          "stagingVerified": true,
+          "emittedModuleCount": 12
+        }
+      }
+    }
+  ]
+}

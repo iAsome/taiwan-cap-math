@@ -69,7 +69,8 @@ export default {
       "由次數表求平均就是加權平均，分母是總次數，不是類別數。",
       "若未知的是資料值，乘上已知次數；若未知的是次數，該次數也要加入總筆數。",
       "修正錯誤資料時，可用正確總和＝原總和−錯值＋正值，無須重列全部資料。",
-      "解出的次數若不是非負整數，表示設定或計算有問題。"
+      "解出的次數若不是非負整數，表示設定或計算有問題。",
+      "頻數表只是把重複資料壓縮呈現，每一列的數值仍須依頻數重複計入。計算平均時，分子是各數值乘頻數後的總和，分母是頻數總和；遇到未知頻數、誤登或漏登資料，應同時追蹤總和與筆數。方程式化簡成恆等式表示有多個解，化成矛盾式才表示無解，兩者不能混為一談。"
     ],
     "definitions": [
       {
@@ -134,43 +135,47 @@ export default {
     "workedExamples": [
       {
         "id": "L1",
-        "prompt": "分數60、70、80的次數為2、3、5。",
+        "prompt": "數值60、70、80的頻數分別為2、3、5，求平均。",
         "solution": [
-          "總分=60×2+70×3+80×5=730。",
-          "總人數=10。",
-          "730÷10=73。"
+          "總和為60×2＋70×3＋80×5＝730。",
+          "總頻數為2＋3＋5＝10。",
+          "平均為730÷10＝73。"
         ],
-        "answer": "平均73分。"
+        "answer": "73。",
+        "why": "頻數代表每個數值實際出現幾次，所以必須先把壓縮表還原成加權總和；73介於60與80之間，且靠近頻數最大的80，數值方向合理。"
       },
       {
         "id": "L2",
-        "prompt": "數值2、5、8的次數為3、x、2，平均5。",
+        "prompt": "數值2、5、8的頻數為3、x、2，若平均為5，判斷x。",
         "solution": [
-          "總和=6+5x+16=22+5x。",
-          "總次數=5+x。",
-          "22+5x=5(5+x) 得22=25，無解。"
+          "列式2×3＋5x＋8×2＝5(3＋x＋2)。",
+          "化簡左邊為22＋5x，右邊為25＋5x。",
+          "得到22＝25的矛盾，因此不存在符合條件的x。"
         ],
-        "answer": "此條件不可能，能用合理性檢查發現資料矛盾。"
+        "answer": "無解。",
+        "why": "數值5本身等於目標平均，增加多少個5都不會抵消兩端既有資料造成的總和差；方程式消去x後成為錯誤等式，表示不是特定x算錯，而是條件彼此不相容。"
       },
       {
         "id": "L3",
-        "prompt": "平均72的10筆資料中，一筆62誤植為82。",
+        "prompt": "10筆資料平均72，其中一筆62誤登為82，求正確平均。",
         "solution": [
-          "錯誤總和=72×10=720。",
-          "正確總和=720-82+62=700。",
-          "700÷10=70。"
+          "誤登資料的總和為72×10＝720。",
+          "把82改回62，總和減少20成為700。",
+          "資料仍為10筆，所以正確平均700÷10＝70。"
         ],
-        "answer": "正確平均70。"
+        "answer": "70。",
+        "why": "更正數值不會改變資料筆數，只會讓總和減少82－62＝20；平均因此下降20÷10＝2，也可由原平均72直接減2快速驗證結果70。"
       },
       {
         "id": "L4",
-        "prompt": "成績50、70、90的次數為2、4、x，平均75。",
+        "prompt": "數值50、70、90的頻數為2、4、x，若平均75，求整數頻數x。",
         "solution": [
-          "100+280+90x=75(6+x)。",
-          "380+90x=450+75x。",
-          "15x=70，x=14/3。"
+          "列式50×2＋70×4＋90x＝75(6＋x)。",
+          "化簡得380＋90x＝450＋75x，所以15x＝70。",
+          "x＝14/3，不是非負整數頻數，因此無符合條件的頻數。"
         ],
-        "answer": "次數不為整數，題設不可能。"
+        "answer": "無符合條件的整數頻數。",
+        "why": "代數方程雖有實數解14/3，但頻數表示資料出現次數，必須是非負整數；把情境限制帶回代數解，才能避免接受數學上可算、資料上不可能的答案。"
       }
     ],
     "commonMistakes": [
@@ -248,7 +253,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "4941a46b6c52f372dcf3d2c2829d93e6f6cbb4b8989adb527aacb8b12a56b9d0"
+    "contentSha256": "595fb5e7b11c076a354dd0a1370b048db99ce661632261df1c1d32da638212f3"
   },
   "mcQuestions": [
     {
@@ -276,11 +281,13 @@ export default {
         "derivedAnswer": "11/6",
         "trustStoredAnswer": false
       },
-      "explanation": "由次數表求平均要用資料值乘次數。",
+      "explanation": "由次數表求平均要用資料值乘次數。 資料總和為1×2＋2×3＋3×1＝11，總次數為2＋3＋1＝6，所以平均是11÷6＝11/6。結果約1.83，介於最小值1與最大值3之間，也較靠近頻數最高的2。",
       "steps": [
         "算加權總和。",
         "算總次數。",
-        "相除。"
+        "相除。",
+        "用數值乘頻數求加權總和11。",
+        "以總頻數6作分母，並確認結果介於1與3之間。"
       ],
       "optionAnalysis": [
         {
@@ -304,7 +311,7 @@ export default {
           "reason": "11 是加權總和。"
         }
       ],
-      "misconceptionTarget": "只平均資料值或忘記除法",
+      "misconceptionTarget": "只平均資料值或忘記除法 或只把1、2、3三種數值平均，忽略每個數值出現的次數。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -322,7 +329,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e2535ba088b8973ac78b3474f3619978b481a4d463c309c52d69dc39f5979474"
+      "contentSha256": "49999125e233dffe0525ca5981e20877dc3fe0fe21a2fb76a61ba8205ca4c09d"
     },
     {
       "questionId": "u09-s013-v002",
@@ -349,11 +356,13 @@ export default {
         "derivedAnswer": "70",
         "trustStoredAnswer": false
       },
-      "explanation": "重複出現的資料值要按次數計入。",
+      "explanation": "重複出現的資料值要按次數計入。 總分為60×1＋70×2＋80×1＝280，總人數4，所以平均為280÷4＝70分。60與80各出現一次且關於70對稱，另外兩筆也是70，能再確認平均確為70。",
       "steps": [
         "乘次數。",
         "加總。",
-        "除總次數。"
+        "除總次數。",
+        "計算各分數乘頻數後的總分280。",
+        "除以頻數總和4，並以對稱分布檢查平均為70。"
       ],
       "optionAnalysis": [
         {
@@ -377,7 +386,7 @@ export default {
           "reason": "280 是總分。"
         }
       ],
-      "misconceptionTarget": "每個資料值只算一次",
+      "misconceptionTarget": "每個資料值只算一次 或看到三種分數就除以3，沒有讓出現兩次的70分計入兩份。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -395,7 +404,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "dd7647b90c16f994a8f3ca4fc351b1b72551d3957a6e8ac7388396d056e2ca5b"
+      "contentSha256": "18968d77b7bce5be041a6e2278358e26d7a912035f88edf70a5132825fe8a8f5"
     },
     {
       "questionId": "u09-s013-v003",
@@ -422,9 +431,11 @@ export default {
         "derivedAnswer": "80",
         "trustStoredAnswer": false
       },
-      "explanation": "可由平均與筆數還原加權總和。",
+      "explanation": "可由平均與筆數還原加權總和。 平均數＝總和÷總次數，因此已知平均4、總次數20時，資料總和必為4×20＝80。將答案80再除以資料筆數20，會回到題給平均4，公式方向與單位均相符。",
       "steps": [
-        "相乘。"
+        "相乘。",
+        "把平均公式改寫成總和＝平均×總次數。",
+        "計算4×20＝80，並以80÷20＝4反向驗算。"
       ],
       "optionAnalysis": [
         {
@@ -448,7 +459,7 @@ export default {
           "reason": "24 是相加。"
         }
       ],
-      "misconceptionTarget": "用除法或相加",
+      "misconceptionTarget": "用除法或相加 或把平均4再除以20，顛倒平均、總和與資料筆數的關係。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -466,7 +477,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d29b3f3ef4dfd0e060b8959221ef03399bfd773b4272191f39d8dd86e86a9806"
+      "contentSha256": "9192bac2c9884f397dbabe7609fd3b3ceb90f877b45b70af13b0e5674c447b67"
     },
     {
       "questionId": "u09-s013-v004",
@@ -493,10 +504,12 @@ export default {
         "derivedAnswer": "5",
         "trustStoredAnswer": false
       },
-      "explanation": "次數欄總和等於總筆數。",
+      "explanation": "次數欄總和等於總筆數。 三類頻數為3、x、2且總次數10，所以3＋x＋2＝10，解得x＝5；此題不需用數值欄。代回後三個頻數合計3＋5＋2＝10，恰好等於題給總資料數。",
       "steps": [
         "加已知次數。",
-        "由總次數扣除。"
+        "由總次數扣除。",
+        "只加總頻數欄而不是數值欄。",
+        "由x＋5＝10得x＝5，再驗算頻數合計確為10。"
       ],
       "optionAnalysis": [
         {
@@ -520,7 +533,7 @@ export default {
           "reason": "3+x+2=10，所以 x=5。"
         }
       ],
-      "misconceptionTarget": "把資料值混入次數和",
+      "misconceptionTarget": "把資料值混入次數和 或把表中數值也加進總次數，只因題目出現平均單元就過度建立加權式。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -538,7 +551,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "823068d0c25e4001ca3201905219102d2252826d1360d5421fbc4e064444b9fe"
+      "contentSha256": "df60c80cafa14e4ec744ae51840434e87f0cd39f5e65fe0134eb4f2f4b6f70ae"
     },
     {
       "questionId": "u09-s013-v005",
@@ -565,11 +578,13 @@ export default {
         "derivedAnswer": "任意非負整數",
         "trustStoredAnswer": false
       },
-      "explanation": "平均條件可能形成恆等式，不一定唯一決定未知次數。",
+      "explanation": "平均條件可能形成恆等式，不一定唯一決定未知次數。 平均條件給2×1＋3x＋2×5＝3(4＋x)，左右都化為12＋3x，因此所有非負整數x皆成立，無法唯一決定。",
       "steps": [
         "建立平均方程。",
         "化簡。",
-        "辨認恆等。"
+        "辨認恆等。",
+        "以加權總和＝平均×總次數列式。",
+        "化簡後比較兩邊完全相同，故依頻數限制判定任意非負整數皆可。"
       ],
       "optionAnalysis": [
         {
@@ -593,7 +608,7 @@ export default {
           "reason": "x=4 可行但非唯一。"
         }
       ],
-      "misconceptionTarget": "假設未知必有唯一解",
+      "misconceptionTarget": "假設未知必有唯一解 或把恆等式消去後的0＝0當成無解，而沒有區分恆等式與矛盾式。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -611,7 +626,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bca59f40c08cb2c5f1ff62639eef1258f5c1e99631315cf7fcb60cd1190f7de0"
+      "contentSha256": "4744cd196065f1d210e48f74fa962c48b0790e2de6caca45cb70c5cfddad5fbd"
     },
     {
       "questionId": "u09-s013-v006",
@@ -638,11 +653,13 @@ export default {
         "derivedAnswer": "錯誤平均較高 1/9",
         "trustStoredAnswer": false
       },
-      "explanation": "更正次數時總和與總次數都會改變。",
+      "explanation": "更正次數時總和與總次數都會改變。 正確總和為9×21＝189；某筆多登1使總和變190，錯誤平均190÷9＝21又1/9，因此高估1/9。平均誤差等於總和誤差1除以資料筆數9，與逐筆重算結果一致。",
       "steps": [
         "算正確平均。",
         "算誤表平均。",
-        "比較。"
+        "比較。",
+        "由正確平均還原總和189。",
+        "將總和誤差1除以資料數9，確認平均誤差為1/9。"
       ],
       "optionAnalysis": [
         {
@@ -666,7 +683,7 @@ export default {
           "reason": "差值不是 2。"
         }
       ],
-      "misconceptionTarget": "只看總和變化忽略分母",
+      "misconceptionTarget": "只看總和變化忽略分母 或認為一筆多1會讓平均也多1，忽略誤差要分攤到9筆資料。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -684,7 +701,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "00e1b1794c81348ff459352e6cde1ea6de539bdcfd05eec3f773acdf3adc070e"
+      "contentSha256": "a6dfa3cea72277b6c67b952effa7b57804f29aa1d793ef8789a4ee7a5948431d"
     },
     {
       "questionId": "u09-s013-v007",
@@ -711,11 +728,13 @@ export default {
         "derivedAnswer": "2",
         "trustStoredAnswer": false
       },
-      "explanation": "未知次數由加權平均方程決定。",
+      "explanation": "未知次數由加權平均方程決定。 依表列出2×3＋5x＋8×1＝4(3＋x＋1)，得14＋5x＝16＋4x，因此x＝2。代回時總和為24、總頻數為6，24÷6＝4，未知頻數也符合非負整數限制，整張頻數表可成立。",
       "steps": [
         "寫方程。",
         "交叉相乘。",
-        "檢查整數解。"
+        "檢查整數解。",
+        "同時寫出加權總和與總頻數。",
+        "解得x＝2後代回，總和24、總次數6，平均確為4。"
       ],
       "optionAnalysis": [
         {
@@ -739,7 +758,7 @@ export default {
           "reason": "x=5 時平均 39/9。"
         }
       ],
-      "misconceptionTarget": "把平均值當次數",
+      "misconceptionTarget": "把平均值當次數 或只把2、5、8做普通平均，沒有使用頻數3、x、1。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -757,7 +776,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b16aab896a302e256798492e40503a4af218d14a8245adcc88a225f585c9c960"
+      "contentSha256": "13f8f1e61dc139a2e1db8c6062aa38c9a4df7d445e417b0a58fee65f4ec15f9f"
     },
     {
       "questionId": "u09-s013-v008",
@@ -784,11 +803,13 @@ export default {
         "derivedAnswer": "4",
         "trustStoredAnswer": false
       },
-      "explanation": "含小數平均可先化分數。",
+      "explanation": "含小數平均可先化分數。 加權總和為0×2＋1×4＋2x＋3×2＝10＋2x，總頻數8＋x；令(10＋2x)/(8＋x)＝1.5，解得x＝4。代回得到18÷12＝1.5，並確認零值兩筆只影響分母、不增加分子，這是本題最容易漏算之處。",
       "steps": [
         "建立方程。",
         "清除小數。",
-        "解並代回。"
+        "解並代回。",
+        "特別把0的兩次出現算入總頻數。",
+        "代入x＝4驗算總和18、總次數12，平均為1.5。"
       ],
       "optionAnalysis": [
         {
@@ -812,7 +833,7 @@ export default {
           "reason": "x=6 時平均 22/14。"
         }
       ],
-      "misconceptionTarget": "小數交叉相乘錯誤",
+      "misconceptionTarget": "小數交叉相乘錯誤 或漏掉數值0雖不增加總和，仍有頻數2要計入分母。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -830,7 +851,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0de861cd6306bc92f8bb9b94c239f3cf037ad8bfbba13dfc7928755358b9c8a9"
+      "contentSha256": "fd4e0d9d3b5f910cec93fd5b0845f43f6b7bdc6ec98920c03574d36647c2a9c6"
     },
     {
       "questionId": "u09-s013-v009",
@@ -857,11 +878,13 @@ export default {
         "derivedAnswer": "6.75",
         "trustStoredAnswer": false
       },
-      "explanation": "新增整組資料需同時更新總和與次數。",
+      "explanation": "新增整組資料需同時更新總和與次數。 原15筆總和為15×6＝90，新增5筆9後總和135、筆數20，所以新平均135÷20＝6.75。新增資料只占四分之一且數值高於舊平均，所以結果應介於6與9之間並較靠近6。",
       "steps": [
         "還原原總和。",
         "加入新組總和。",
-        "除新總次數。"
+        "除新總次數。",
+        "把舊平均還原成15筆的總和90。",
+        "加上45並除以20，確認平均只向9移動到6.75。"
       ],
       "optionAnalysis": [
         {
@@ -885,7 +908,7 @@ export default {
           "reason": "原總和 90，新增 45，總和 135、次數 20，平均 6.75。"
         }
       ],
-      "misconceptionTarget": "直接平均新舊平均",
+      "misconceptionTarget": "直接平均新舊平均 或直接平均舊平均6與新值9，忽略兩部分各代表15筆與5筆。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -903,7 +926,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "b50b306dacd5b65509e63256423d9809df05ae27732ab623a5466229b6289868"
+      "contentSha256": "411bb532df81f73a427464b012c00cee0dbe7a6f1c11d0e0c03aad80b7936c46"
     },
     {
       "questionId": "u09-s013-v010",
@@ -930,11 +953,13 @@ export default {
         "derivedAnswer": "7.8 時",
         "trustStoredAnswer": false
       },
-      "explanation": "時段代表值以人次作權重。",
+      "explanation": "時段代表值以人次作權重。 各時段等待總時間依人數加權後共2330分鐘，總人數300，故平均2330÷300＝7.766…分鐘，依題意取到小數一位為7.8。",
       "steps": [
         "乘時段與人次。",
         "加總。",
-        "除總人次並取位。"
+        "除總人次並取位。",
+        "用每時段平均乘該時段人數並合計2330。",
+        "除以300後依題目指定精度四捨五入為7.8分鐘。"
       ],
       "optionAnalysis": [
         {
@@ -958,7 +983,7 @@ export default {
           "reason": "8.5 過高。"
         }
       ],
-      "misconceptionTarget": "直接平均時段或錯誤取位",
+      "misconceptionTarget": "直接平均時段或錯誤取位 或把各時段平均等待時間直接平均，沒有以各時段人數作權重。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -976,7 +1001,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "6549ce26da0cab642d63fa02a540d1a2c5ca751832b1b6bcb74e220cf014fd46"
+      "contentSha256": "61343e9d67c6123b01835be5c7a57bfb1da09b0fefb3d226446919510faad765"
     },
     {
       "questionId": "u09-s013-v011",
@@ -1003,10 +1028,12 @@ export default {
         "derivedAnswer": "10 度",
         "trustStoredAnswer": false
       },
-      "explanation": "每日值的次數是天數。",
+      "explanation": "每日值的次數是天數。 三種每日用量乘天數後的總量為100單位，總天數3＋4＋3＝10，因此每日平均為100÷10＝10單位。以10單位乘回10天會還原總量100，表示天數權重與每日單位均使用一致。",
       "steps": [
         "求十天總用電。",
-        "除以天數。"
+        "除以天數。",
+        "分別以每日用量乘3、4、3天後加總100。",
+        "再除以10天，保留單位為每日平均用量。"
       ],
       "optionAnalysis": [
         {
@@ -1030,7 +1057,7 @@ export default {
           "reason": "(24+40+36)÷10=10。"
         }
       ],
-      "misconceptionTarget": "把總量當平均",
+      "misconceptionTarget": "把總量當平均 或平均三種每日用量，沒有讓持續4天的那一種用量多計一天。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -1048,7 +1075,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "63a433fe088b2c67e3732f0e163214d3897f7da4959b574a33530edf9348a0e3"
+      "contentSha256": "73c1d9ae3787f7b6f0e4e701a2b44b323bbbb30181b4382a158fdb6662415e74"
     },
     {
       "questionId": "u09-s013-v012",
@@ -1075,11 +1102,13 @@ export default {
         "derivedAnswer": "6，但此時平均其實是 3.3，報告不一致",
         "trustStoredAnswer": false
       },
-      "explanation": "表格缺值可能由總數決定，摘要平均仍需獨立核對。",
+      "explanation": "表格缺值可能由總數決定，摘要平均仍需獨立核對。 先由總人數20解出未知頻數x＝6，再算分數總和66，得到平均66÷20＝3.3；若報告寫成其他值，便與表中頻數不一致。",
       "steps": [
         "補次數。",
         "算加權平均。",
-        "檢查報告一致性。"
+        "檢查報告一致性。",
+        "用頻數合計先求未知頻數6。",
+        "把6代回計算總分66，再以20人驗算平均3.3並判斷報告。"
       ],
       "optionAnalysis": [
         {
@@ -1103,7 +1132,7 @@ export default {
           "reason": "x=8 時總人數 22。"
         }
       ],
-      "misconceptionTarget": "只求缺值不驗算摘要",
+      "misconceptionTarget": "只求缺值不驗算摘要 或只解出未知頻數就停止，沒有再用完整頻數表核對報告中的平均。",
       "prerequisiteCheck": {
         "skillIds": [
           "weighted-average-basic"
@@ -1121,7 +1150,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4f2378c56c9a52c46e54ce719e45601db6d499379246ee99f479256a204a5089"
+      "contentSha256": "cb4af849c0fd5c2531ef21c43a9b43e4cdb7b4c60a3f560087f42ff42398b6ef"
     }
   ],
   "constructedResponses": [
@@ -1146,7 +1175,8 @@ export default {
         "總人數=10+x。",
         "(710+80x)/(10+x)=75。",
         "710+80x=750+75x，5x=40，所以x=8。",
-        "驗算：總分1350、總人數18，1350÷18=75。"
+        "驗算：總分1350、總人數18，1350÷18=75。",
+        "代回x＝8時總人數為18、總分為1350，1350÷18＝75，因此未知頻數與平均條件一致。各分數的頻數也都是非負整數，沒有只在代數上成立而不符合資料情境的問題。"
       ],
       "alternativeMethod": "用相對75分的偏差平衡：60的3人貢獻-45，70的5人-25，90的2人+30，尚缺+40；每位80分貢獻+5，故x=8。",
       "reasoningSteps": [
@@ -1154,7 +1184,8 @@ export default {
         "總次數中加入x。",
         "以加權總和除以總次數等於75。",
         "解方程。",
-        "檢查x為非負整數並代回。"
+        "檢查x為非負整數並代回。",
+        "以代回後的總人數與總分重新算平均，排除移項或頻數加總錯誤。"
       ],
       "rubric": [
         {
@@ -1192,7 +1223,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "fcacefe49515cc34a729e38bdc0354b1fecdc0f1fff99203558b48733e5c0802"
+      "contentSha256": "61898cfd9faaa4aade6860450344a2e394b56c5881b7a53a0563841b387c23e2",
+      "commonErrors": [
+        "只加總60、70、80、90四個分數，沒有乘各自頻數。",
+        "解出x後未代回，或把總人數誤寫成10＋x而漏算90分的2人。"
+      ]
     },
     {
       "questionId": "u09-s013-cr002",
@@ -1214,14 +1249,16 @@ export default {
         "原記錄總時數=7.8×20=156小時。",
         "修正誤植後，原20人的正確總量=156-16+6=146小時。",
         "補登後21人的正確總量=7.5×21=157.5小時。",
-        "漏登者=157.5-146=11.5小時。"
+        "漏登者=157.5-146=11.5小時。",
+        "檢查修正後20筆總和146，再加入11.5得到157.5；157.5÷21＝7.5，與更正後平均相符。"
       ],
       "alternativeMethod": "可列方程(156-16+6+x)/21=7.5，直接解x=11.5。",
       "reasoningSteps": [
         "由原平均還原已登錄總量。",
         "執行扣錯加對，筆數仍20。",
         "由正確平均與21人求最終總量。",
-        "兩總量相減求漏登值。"
+        "兩總量相減求漏登值。",
+        "每次更正都同步追蹤總和與資料筆數，最後用21筆反向驗算。"
       ],
       "rubric": [
         {
@@ -1259,7 +1296,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "b44676ddefe2a8e5e6ebd4842b1ec112c4c7156f2bf200a29c13a17cc4dabcb4"
+      "contentSha256": "9058e2348662595fa565ace1850c6215d7f335e2a42cf84cde8642ea3f75ad5a",
+      "commonErrors": [
+        "把誤登16改回6時加上10而非減去10，導致修正總和方向相反。",
+        "補入缺漏資料後仍用20作分母，沒有把資料筆數改成21。"
+      ]
     }
   ],
   "semanticReviews": [

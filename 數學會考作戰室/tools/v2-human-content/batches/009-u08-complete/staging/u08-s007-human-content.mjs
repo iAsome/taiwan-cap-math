@@ -118,23 +118,33 @@ export const LECTURE = {
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "先確認邊數 n 與是否為正多邊形。",
-      "check": "只有正多邊形才能平均分內角。"
+      "instruction": "先確認邊數 n、圖形為凸多邊形，以及是否為正多邊形。",
+      "check": "只有正多邊形才可把角度平均分配。"
     },
     {
       "step": 2,
-      "instruction": "求內角和先算 n−2。",
-      "check": "再乘 180°。"
+      "instruction": "求內角和時先算 n−2 個三角形。",
+      "check": "再乘一百八十度，不把 n 當三角形數。"
     },
     {
       "step": 3,
-      "instruction": "反求邊數時令 (n−2)×180°=已知內角和。",
-      "check": "解出 n 並檢查整數。"
+      "instruction": "由內角和反求邊數時建立方程。",
+      "check": "解完 n−2 後是否記得加回二？"
     },
     {
       "step": 4,
-      "instruction": "求正多邊形單角可由內角和除 n 或先求外角。",
-      "check": "最後檢查內角與外角相加 180°。"
+      "instruction": "正多邊形單一外角用三百六十度除以 n。",
+      "check": "所得外角乘邊數是否回到三百六十度？"
+    },
+    {
+      "step": 5,
+      "instruction": "利用同頂點內角與外角互補互相轉換。",
+      "check": "內角加外角是否為一百八十度？"
+    },
+    {
+      "step": 6,
+      "instruction": "反求邊數後檢查為大於等於三的整數。",
+      "check": "非整數代表正多邊形規格不可行。"
     }
   ],
   "workedExamples": [
@@ -142,28 +152,33 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "六邊形內角和為多少？",
       "solutionSteps": [
-        "n=6。",
+        "n=6，可分成四個三角形。",
         "(6−2)×180°=720°。"
       ],
-      "answer": "720°。"
+      "answer": "720°。",
+      "why": "從同一頂點分出的四個三角形不重疊且完整覆蓋六邊形，因此四個一百八十度正好就是全部內角和，與外角和三百六十度不同。"
     },
     {
       "exampleId": "L2",
       "prompt": "某凸多邊形內角和為 1260°，有幾邊？",
       "solutionSteps": [
-        "(n−2)×180=1260。",
-        "n−2=7，n=9。"
+        "列 (n−2)×180°=1260°。",
+        "n−2=7，所以 n=9。",
+        "代回九邊形內角和驗證。"
       ],
-      "answer": "9 邊。"
+      "answer": "9 邊。",
+      "why": "一千二百六十除以一百八十得到的是三角形數七，不是邊數；把二加回後得九，代回公式可防止漏加二的常見錯誤。"
     },
     {
       "exampleId": "L3",
       "prompt": "正八邊形每個外角為多少？",
       "solutionSteps": [
-        "外角和 360°。",
-        "360°÷8=45°。"
+        "正八邊形八個外角相等。",
+        "360°÷8=45°。",
+        "八個四十五度總和為三百六十度。"
       ],
-      "answer": "45°。"
+      "answer": "45°。",
+      "why": "沿外圍同方向走一周總轉向量固定為三百六十度，正八邊形又使八次轉角相等，所以平均後的四十五度就是每個外角。"
     },
     {
       "exampleId": "L4",
@@ -172,7 +187,8 @@ export const LECTURE = {
         "每個外角=360°÷12=30°。",
         "內角=180°−30°=150°。"
       ],
-      "answer": "150°。"
+      "answer": "150°。",
+      "why": "先用外角和求出三十度，再利用同頂點內外角互補得到一百五十度；這條路徑同時保留正多邊形等角與轉向性質。"
     }
   ],
   "levelConnections": {
@@ -243,7 +259,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "144ce2e9284087542a5831d84f3c670bd5a33d5d399327d96bfb48bb3d7f0e4b"
+  "contentSha256": "381c8cd66707bee364361c2e0d2ee8baa5db88b962f680ab64951d744fccaef6"
 };
 
 export const QUESTIONS = [
@@ -273,11 +289,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "內角和 540°。",
-    "explanation": "五邊形可由一頂點分成三個三角形。",
+    "explanation": "從五邊形一個頂點向不相鄰頂點連線，可把圖形分成 5−2=3 個三角形。每個三角形內角和為一百八十度，因此五邊形內角和是 3×180°=540°，不是外角和三百六十度。",
     "steps": [
-      "n=5。",
-      "n−2=3。",
-      "3×180=540。"
+      "確認五邊形的邊數 n=5。",
+      "由一個頂點分割成 n−2=3 個三角形。",
+      "計算 3×180°=540°，選第三項。"
     ],
     "optionAnalysis": [
       {
@@ -301,7 +317,7 @@ export const QUESTIONS = [
         "reason": "把 5×180° 當公式。"
       }
     ],
-    "misconceptionTarget": "直接算 n×180°。",
+    "misconceptionTarget": "把任何多邊形的外角和三百六十度誤當成五邊形內角和。",
     "prerequisiteCheck": "能使用三角形內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -313,7 +329,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "2d36cda64f6b6743194162a640b591bb9424038e5031a6c68b5f1135d45a0e09"
+    "contentSha256": "16dd2537a699d087e6d05a6a968d7bc2a64833179cee49ded445ec63565f9b53"
   },
   {
     "questionId": "u08-s007-v002",
@@ -341,10 +357,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "公式為 (n−2)×180°。",
-    "explanation": "每個三角形內角和 180°。",
+    "explanation": "凸 n 邊形從一個頂點向其餘不相鄰頂點作對角線，會分成 n−2 個三角形，且沒有重疊或遺漏。每個三角形內角和為一百八十度，所以總內角和公式是 (n−2)×180°。",
     "steps": [
-      "三角形數 n−2。",
-      "乘 180°。"
+      "選一個頂點將凸 n 邊形分割成三角形。",
+      "確認三角形數量為 n−2。",
+      "把三角形數乘 180°，得到 (n−2)×180°。"
     ],
     "optionAnalysis": [
       {
@@ -368,7 +385,7 @@ export const QUESTIONS = [
         "reason": "這是正 n 邊形每個外角。"
       }
     ],
-    "misconceptionTarget": "把邊數或外角公式混入。",
+    "misconceptionTarget": "把三角形個數誤數成 n 或 n−1，因而得到錯誤的內角和公式。",
     "prerequisiteCheck": "能理解三角形分割。",
     "estimatedTimeSec": 90,
     "unitCheck": "n 為邊數，結果角度單位為 °。",
@@ -380,7 +397,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "59eb0d04bee6150e3ca599c37b90348e6404c845bd36a4a07c4e40b18612d592"
+    "contentSha256": "3356c5c2d6cf81a941092adbeec5b79b15fe38dd69fe372d92d1084a8658e3ad"
   },
   {
     "questionId": "u08-s007-v003",
@@ -408,9 +425,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "每個外角 60°。",
-    "explanation": "六個外角相等。",
+    "explanation": "任一凸多邊形沿同方向繞行一周，外角和為三百六十度。正六邊形的六個外角相等，所以每個外角為 360°÷6=60°；相對應的內角是一百二十度，不能把兩者混用。",
     "steps": [
-      "360÷6=60。"
+      "使用凸多邊形外角和 360°。",
+      "由正六邊形確定六個外角都相等。",
+      "計算 360°÷6=60°，並以內外角互補檢查。"
     ],
     "optionAnalysis": [
       {
@@ -434,7 +453,7 @@ export const QUESTIONS = [
         "reason": "正多邊形外角和 360°，每角 360°÷6=60°。"
       }
     ],
-    "misconceptionTarget": "把內角或內角和當外角。",
+    "misconceptionTarget": "把正六邊形的一百二十度內角當成外角，或用內角和直接除錯。",
     "prerequisiteCheck": "能做除法並理解外角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位為 °。",
@@ -446,7 +465,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "53b1ca120ba883bd47abafd863ba2100579132f26a2ea59a08205e2753964535"
+    "contentSha256": "0f91665e020917bc2e3c6be8c030fb203c3787181c45340348c90027633a4289"
   },
   {
     "questionId": "u08-s007-v004",
@@ -474,10 +493,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "設邊數為 n，(n-2)×180°=1080°，所以 n-2=6，n=8。",
-    "explanation": "將內角和公式反向使用：(n−2)×180°=1080°，解得 n=8。",
+    "explanation": "設邊數為 n，依內角和公式列 (n−2)×180°=1080°。兩邊除以一百八十得 n−2=6，再加二得 n=8；代回 (8−2)×180°=1080°，所以是八邊形。八是合法整數邊數，方程也只有此解。",
     "steps": [
-      "1080÷180=6。",
-      "n−2=6，所以 n=8。"
+      "設未知邊數為 n，列出內角和方程。",
+      "將 1080° 除以 180°，得到 n−2=6。",
+      "求得 n=8，再代回公式驗證。"
     ],
     "optionAnalysis": [
       {
@@ -501,7 +521,7 @@ export const QUESTIONS = [
         "reason": "十邊形內角和為 1440°。"
       }
     ],
-    "misconceptionTarget": "把三角形個數 6 直接當成邊數。",
+    "misconceptionTarget": "直接用一千零八十除以一百八十回答六邊，忘記把減去的二加回。",
     "prerequisiteCheck": "已會多邊形內角和公式與一元一次式的簡單逆運算。",
     "estimatedTimeSec": 90,
     "unitCheck": "內角和以度為單位，答案是邊數名稱。",
@@ -513,7 +533,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "fae4aea7b5f74f5f4f259144adfde127bfda09f9aa81ac93714b678ce15f2d7e"
+    "contentSha256": "42c449d9655600d8aadcd172cd0926c14b9dec15eff024d746060c807e373429"
   },
   {
     "questionId": "u08-s007-v005",
@@ -541,10 +561,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "多邊形為七邊形。",
-    "explanation": "由總和反解邊數。",
+    "explanation": "由 (n−2)×180°=900°，先算 900÷180=5，所以 n−2=5，進而 n=7。七邊形可分成五個三角形，內角和確為 5×180°=900°，與題目相符；七也是大於等於三的合法整數邊數，答案唯一。",
     "steps": [
-      "900÷180=5。",
-      "n=5+2=7。"
+      "把九百度代入凸多邊形內角和公式。",
+      "除以一百八十，得到 n−2=5。",
+      "加二求得七邊，並用五個三角形驗算。"
     ],
     "optionAnalysis": [
       {
@@ -568,7 +589,7 @@ export const QUESTIONS = [
         "reason": "(n−2)×180=900，n−2=5，所以 n=7。"
       }
     ],
-    "misconceptionTarget": "忘記把三角形數加回 2。",
+    "misconceptionTarget": "把三角形數五誤當成邊數，或把九百度直接除錯而選其他邊數。",
     "prerequisiteCheck": "能解簡單方程。",
     "estimatedTimeSec": 90,
     "unitCheck": "邊數以「邊」計數，須為整數。",
@@ -580,7 +601,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "70e18698843a88ab8b3689d492dbc4b8f28baccea94612db205a1e1eded540e1"
+    "contentSha256": "e89ed7ed994434f3cec56ecefc55890fa47750395a569c828d146398bd0a691c"
   },
   {
     "questionId": "u08-s007-v006",
@@ -608,10 +629,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "每個內角 144°。",
-    "explanation": "正多邊形內外角互補。",
+    "explanation": "正十邊形每個外角相等，為 360°÷10=36°。同一頂點的內角與外角互補，所以每個內角為 180°−36°=144°；也可用內角和一千四百四十度除以十驗證。",
     "steps": [
-      "求外角 36°。",
-      "180−36=144°。"
+      "先用外角和求每個外角 36°。",
+      "以 180° 減去 36°，得到內角 144°。",
+      "另算內角和後除以十，確認仍為 144°。"
     ],
     "optionAnalysis": [
       {
@@ -635,7 +657,7 @@ export const QUESTIONS = [
         "reason": "有限邊正多邊形內角小於 180°。"
       }
     ],
-    "misconceptionTarget": "把外角當內角。",
+    "misconceptionTarget": "把三十六度外角直接當內角，或把內角和一千四百四十度當單一角。",
     "prerequisiteCheck": "能使用正多邊形外角。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -647,7 +669,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "53c33b52b2f4b80e1c725636b97fda8cab03f8e957f7baa351dfddc24cf6a937"
+    "contentSha256": "1e2c195eea22e72a234c52f98c1f1e1abc5a23ec024586a92c8c50984747bfb0"
   },
   {
     "questionId": "u08-s007-v007",
@@ -676,9 +698,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "有 15 個相等外角，所以為十五邊形。",
-    "explanation": "正多邊形各外角相等。",
+    "explanation": "正多邊形各外角相等，且外角總和固定為三百六十度。若每個外角二十四度，邊數就是 360°÷24°=15；十五個外角相加正好三百六十度，且邊數為合法整數。",
     "steps": [
-      "360÷24=15。"
+      "使用正多邊形外角和 360°。",
+      "用總和除以單一外角，列 360÷24。",
+      "算得十五邊，並以 15×24°=360° 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -702,7 +726,7 @@ export const QUESTIONS = [
         "reason": "把內角 156° 當邊數。"
       }
     ],
-    "misconceptionTarget": "用 180° 除外角或直接取 24。",
+    "misconceptionTarget": "用一百八十度除外角，或把二十四度直接誤認為邊數。",
     "prerequisiteCheck": "能使用外角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度除以角度後得到無單位邊數。",
@@ -714,7 +738,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1e1b29eb7b1727ea3f81137c7edcbb2f2aa11021b9b4b5dd394958f6b895bf60"
+    "contentSha256": "b737b8a1ed823c859109b5732853e90bf527ed9a5d362e3f5f62ac8bd66dd5ed"
   },
   {
     "questionId": "u08-s007-v008",
@@ -742,10 +766,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "正十二邊形每角 150°。",
-    "explanation": "由內角先求外角再反求邊數。",
+    "explanation": "正多邊形每個內角一百五十度，則每個外角為 180°−150°=30°。外角和三百六十度，所以邊數為 360°÷30°=12；十二邊形的內角和除以十二也確為一百五十度。",
     "steps": [
-      "外角 30°。",
-      "360÷30=12。"
+      "將內角轉成互補的外角 30°。",
+      "以外角和 360° 除以 30°，得到十二邊。",
+      "代入正十二邊形單一內角公式驗證。"
     ],
     "optionAnalysis": [
       {
@@ -769,7 +794,7 @@ export const QUESTIONS = [
         "reason": "把外角 30° 誤當邊數。"
       }
     ],
-    "misconceptionTarget": "直接以 360÷150 或把外角當邊數。",
+    "misconceptionTarget": "直接用三百六十度除以一百五十度，沒有先把內角換成外角。",
     "prerequisiteCheck": "能使用內外角互補與外角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度比例消去，答案為整數邊數。",
@@ -781,7 +806,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "38ed2489a8adfe431100d6e8d3e3227bf75d23c8f2b5ed7e974ebac81d20c857"
+    "contentSha256": "2612be4a95a3cd1d04da58887c855f5934ae003ae7eba1c5f353df3e324e9ec6"
   },
   {
     "questionId": "u08-s007-v009",
@@ -810,10 +835,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "九邊形內角和 1260°，比 720° 多 540°。",
-    "explanation": "也可先算六邊形 720°，目標 1260° 反求 n=9。",
+    "explanation": "六邊形內角和是 (6−2)×180°=720°。目標多邊形比它多五百四十度，所以內角和為 1260°；由 (n−2)×180°=1260° 得 n−2=7，故 n=9。代回九邊形內角和正是一千二百六十度，差值也確為五百四十度。",
     "steps": [
-      "540÷180=3。",
-      "6+3=9。"
+      "先算六邊形內角和 720°。",
+      "加上 540°，得到目標內角和 1260°。",
+      "反解內角和公式，得到九邊形並代回驗證。"
     ],
     "optionAnalysis": [
       {
@@ -837,7 +863,7 @@ export const QUESTIONS = [
         "reason": "十二邊形比六邊形多 1080°。"
       }
     ],
-    "misconceptionTarget": "把多出的三角形數當總邊數。",
+    "misconceptionTarget": "把增加五百四十度直接除以一百八十，只算新增邊數卻未加回原邊數。",
     "prerequisiteCheck": "能理解每增一邊內角和增 180°。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度差以 ° 表示，答案為邊數。",
@@ -849,7 +875,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "083035e8f748a10b44ac7022161c3ae02cf415a8eb49c0508a2d7eaf3c9fbc38"
+    "contentSha256": "22fa3e5bfdf227e72dda84a7be5f083c853313756b7cba2e016f2991aa17fa81"
   },
   {
     "questionId": "u08-s007-v010",
@@ -878,10 +904,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "每柱外轉 45°。",
-    "explanation": "柱位數等於外角數。",
+    "explanation": "沿正八邊形外圍同方向繞行一周，八次外轉角總和為三百六十度。因正八邊形各外角相等，單次外轉角是 360°÷8=45°；一百三十五度則是每個內角。",
     "steps": [
-      "八個相等轉角。",
-      "360÷8=45。"
+      "將每到一柱轉向辨認為正八邊形的外角。",
+      "使用八個相等外角總和 360°。",
+      "計算每次 45°，並以內角 135° 互補檢查。"
     ],
     "optionAnalysis": [
       {
@@ -905,7 +932,7 @@ export const QUESTIONS = [
         "reason": "沿正八邊形一周外轉角總和 360°，每次 360÷8=45°。"
       }
     ],
-    "misconceptionTarget": "把內角當成行進方向的外轉角。",
+    "misconceptionTarget": "把涼亭的一百三十五度內角當成施工時沿外圍的外轉角。",
     "prerequisiteCheck": "能區分內角與外角。",
     "estimatedTimeSec": 90,
     "unitCheck": "轉角以 ° 表示。",
@@ -917,7 +944,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d0df7e5f589f0c146b6b830f228f596b2fe087ab1ceea1b6b7db19464fec04a4"
+    "contentSha256": "d9c0f4fdc315b5875cf0b3d99e35af5791330159ed0e6491e884eb41aafade81"
   },
   {
     "questionId": "u08-s007-v011",
@@ -947,9 +974,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "理論外角為 30°，實測可再與 ±1° 範圍比較。",
-    "explanation": "誤差規格以 30° 為中心值。",
+    "explanation": "正十二邊形有十二個相等外角，總和為三百六十度，因此理論外角為 360°÷12=30°。題目的一度是允許誤差，不是要從理論值扣除；實測值應再與二十九至三十一度範圍比較。",
     "steps": [
-      "360÷12=30。"
+      "確認齒輪外框是正十二邊形。",
+      "用外角和除以十二，求理論值 30°。",
+      "把 ±1° 視為驗收範圍，不能改變中心理論角。"
     ],
     "optionAnalysis": [
       {
@@ -973,7 +1002,7 @@ export const QUESTIONS = [
         "reason": "這是 12×180°，不是任何所求角。"
       }
     ],
-    "misconceptionTarget": "把誤差直接加到理論角或混用內角。",
+    "misconceptionTarget": "把允許誤差一度直接加減到公式中，誤把二十九或三十一度當理論值。",
     "prerequisiteCheck": "能使用正多邊形外角。",
     "estimatedTimeSec": 90,
     "unitCheck": "理論角與誤差皆以 ° 表示。",
@@ -985,7 +1014,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "b2ecf06175bc684632dbbf9cab0cd3ff8cd3bdcb15ebfed33d3fbf4a47b2beac"
+    "contentSha256": "6198d1b6e8d2dc15c64d6fcdb083e9041b137002ae79f29006bbc931def8fd24"
   },
   {
     "questionId": "u08-s007-v012",
@@ -1014,11 +1043,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "規格可行，正二十四邊形每內角 165°。",
-    "explanation": "檢查反求邊數的整數性。",
+    "explanation": "每個內角一百六十五度，對應外角為 180°−165°=15°。正多邊形邊數為 360°÷15°=24，所得是大於等於三的整數；代回正二十四邊形單一內角確為一百六十五度，所以規格可行。",
     "steps": [
-      "求外角 15°。",
-      "360÷15=24。",
-      "24 為有效整數邊數。"
+      "先由內外角互補算出外角 15°。",
+      "用外角和 360° 除以 15°，求得邊數二十四。",
+      "檢查二十四是合法整數邊數，並代回內角驗證。"
     ],
     "optionAnalysis": [
       {
@@ -1042,7 +1071,7 @@ export const QUESTIONS = [
         "reason": "正十二邊形內角是 150°。"
       }
     ],
-    "misconceptionTarget": "只看角度大小而未反求整數邊數。",
+    "misconceptionTarget": "因一百六十五不是一百八十的因數就判不可行，沒有改用外角和檢查。",
     "prerequisiteCheck": "能由內角反求邊數並檢查有效性。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度相除得到邊數，答案需以「邊形」表達。",
@@ -1054,7 +1083,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "26596032e0256b0a4d4b5bbcf734d700171c506cae3f0235fcba6e15b0f8eba6"
+    "contentSha256": "e2d11427796453c18a3c74b6bf5b4da859bf7c7125eb6002849507162e5bc1a2"
   }
 ];
 
@@ -1078,17 +1107,18 @@ export const CONSTRUCTED_RESPONSES = [
       "保留角度單位。"
     ],
     "standardSolution": [
-      "內角和=(9−2)×180°=1260°。",
-      "每一內角=1260°÷9=140°。"
+      "九邊形從一個頂點可分成 9−2=7 個三角形，所以內角和為 7×180°=1260°。",
+      "因為題目是正九邊形，九個內角相等，每一個內角為 1260°÷9=140°。",
+      "驗算每個外角為 180°−140°=40°，九個外角總和為 9×40°=360°。"
     ],
     "alternativeMethods": [
       "可先求每個外角360°÷9=40°，再得內角180°−40°=140°；內角和=9×140°。"
     ],
     "reasoningSteps": [
-      "辨認n=9。",
-      "求1260°。",
-      "因正多邊形而除以9。",
-      "驗算9×140=1260。"
+      "確認邊數 n=9，使用多邊形內角和公式。",
+      "計算七個三角形的內角和一千二百六十度。",
+      "利用正多邊形等角性質除以九，得到一百四十度。",
+      "以外角和三百六十度完成交叉驗算。"
     ],
     "rubric": [
       {
@@ -1115,8 +1145,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "角度附°；九邊形的n取9。",
     "answerOnlyPolicy": "只答1260°與140°無過程最高2分。",
     "commonErrors": [
-      "把n−2寫成n−1。",
-      "把內角和當單一內角。"
+      "把 9−2 誤寫成 9−1，造成內角和多一百八十度。",
+      "算出一千二百六十度後直接當成單一內角。",
+      "未確認正多邊形才可把總內角和平均除以邊數。"
     ],
     "independentReview": {
       "derivedResult": "內角和1260°；每角140°。",
@@ -1132,7 +1163,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "ce487575e41a8e78502dab67a58a683a14d833d82fd15007a07742551fa0b65d"
+    "contentSha256": "d50e9d0ca06898d8bb0fba06e14247eba32ce86c281f28f2c5db6cea3e6da9b1"
   },
   {
     "questionId": "u08-s007-cr002",
@@ -1153,17 +1184,18 @@ export const CONSTRUCTED_RESPONSES = [
       "檢查n為至少3的整數。"
     ],
     "standardSolution": [
-      "每個外角=180°−150°=30°。",
-      "正多邊形外角和360°，所以邊數 n=360°÷30°=12。",
-      "邊數是圖形邊的個數，必須是整數且12≥3。"
+      "正多邊形每個內角為 150°，所以與它互補的每個外角為 180°−150°=30°。",
+      "正多邊形外角和固定為三百六十度，且各外角相等，因此邊數 n=360°÷30°=12。",
+      "邊數代表線段邊的個數，必須是大於等於三的整數；十二符合，代回單一內角仍為一百五十度。"
     ],
     "alternativeMethods": [
       "可列((n−2)×180°)÷n=150°，解得180n−360=150n，30n=360，n=12。"
     ],
     "reasoningSteps": [
-      "把內角轉成外角30°。",
-      "用外角和360°除以單一外角。",
-      "檢查12是合法邊數。"
+      "將已知內角轉成三十度外角。",
+      "用外角和除以單一外角，求得十二邊。",
+      "檢查十二為大於等於三的整數。",
+      "代回正十二邊形內角公式驗證。"
     ],
     "rubric": [
       {
@@ -1190,8 +1222,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "n沒有角度單位；最終可稱正十二邊形。",
     "answerOnlyPolicy": "只答12最高1分，因缺乏公式與整數說明。",
     "commonErrors": [
-      "把內角和360°誤當單一內角總和。",
-      "忽略邊數不得是小數。"
+      "直接用三百六十度除以一百五十度，忽略內角不是轉向外角。",
+      "算出小數邊數仍接受，沒有檢查邊的個數必須是整數。",
+      "把內角與外角相加誤寫成三百六十度，而不是一百八十度。"
     ],
     "independentReview": {
       "derivedResult": "n=12，為正十二邊形。",
@@ -1207,7 +1240,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "3daa6943bdf5ab5a8ff9e83288d33893085d2338d56d2ce569b5654fe4fc2061"
+    "contentSha256": "2af4db3af5dd538769fb243bed6e8c5657fb9f19f2c762fbdbf9622f16835213"
   }
 ];
 
@@ -1216,7 +1249,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v001",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "2d36cda64f6b6743194162a640b591bb9424038e5031a6c68b5f1135d45a0e09",
+    "contentSha256": "16dd2537a699d087e6d05a6a968d7bc2a64833179cee49ded445ec63565f9b53",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由三個三角形重算得到 540°。",
@@ -1251,7 +1284,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v002",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "59eb0d04bee6150e3ca599c37b90348e6404c845bd36a4a07c4e40b18612d592",
+    "contentSha256": "3356c5c2d6cf81a941092adbeec5b79b15fe38dd69fe372d92d1084a8658e3ad",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "以 n=3、4 檢查分別得 180°、360°。",
@@ -1286,7 +1319,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v003",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "53b1ca120ba883bd47abafd863ba2100579132f26a2ea59a08205e2753964535",
+    "contentSha256": "0f91665e020917bc2e3c6be8c030fb203c3787181c45340348c90027633a4289",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "驗算六個外角總和 360°。",
@@ -1321,7 +1354,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v004",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "fae4aea7b5f74f5f4f259144adfde127bfda09f9aa81ac93714b678ce15f2d7e",
+    "contentSha256": "42c449d9655600d8aadcd172cd0926c14b9dec15eff024d746060c807e373429",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "1080° 等於 6×180°，表示由一個頂點可分成 6 個三角形；因此 n−2=6，得到 n=8。",
@@ -1356,7 +1389,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v005",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "70e18698843a88ab8b3689d492dbc4b8f28baccea94612db205a1e1eded540e1",
+    "contentSha256": "e89ed7ed994434f3cec56ecefc55890fa47750395a569c828d146398bd0a691c",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "回代 (7−2)×180=900。",
@@ -1391,7 +1424,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v006",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "53c33b52b2f4b80e1c725636b97fda8cab03f8e957f7baa351dfddc24cf6a937",
+    "contentSha256": "1e2c195eea22e72a234c52f98c1f1e1abc5a23ec024586a92c8c50984747bfb0",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "也可用 (10−2)×180÷10=144。",
@@ -1426,7 +1459,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v007",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "1e1b29eb7b1727ea3f81137c7edcbb2f2aa11021b9b4b5dd394958f6b895bf60",
+    "contentSha256": "b737b8a1ed823c859109b5732853e90bf527ed9a5d362e3f5f62ac8bd66dd5ed",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "驗算 15×24=360。",
@@ -1461,7 +1494,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v008",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "38ed2489a8adfe431100d6e8d3e3227bf75d23c8f2b5ed7e974ebac81d20c857",
+    "contentSha256": "2612be4a95a3cd1d04da58887c855f5934ae003ae7eba1c5f353df3e324e9ec6",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "回代 (12−2)×180÷12=150。",
@@ -1496,7 +1529,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v009",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "083035e8f748a10b44ac7022161c3ae02cf415a8eb49c0508a2d7eaf3c9fbc38",
+    "contentSha256": "22fa3e5bfdf227e72dda84a7be5f083c853313756b7cba2e016f2991aa17fa81",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "以公式差 [(n−2)−4]×180=540 得 n=9。",
@@ -1531,7 +1564,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v010",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "d0df7e5f589f0c146b6b830f228f596b2fe087ab1ceea1b6b7db19464fec04a4",
+    "contentSha256": "d9c0f4fdc315b5875cf0b3d99e35af5791330159ed0e6491e884eb41aafade81",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "驗算 8×45=360。",
@@ -1566,7 +1599,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v011",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "b2ecf06175bc684632dbbf9cab0cd3ff8cd3bdcb15ebfed33d3fbf4a47b2beac",
+    "contentSha256": "6198d1b6e8d2dc15c64d6fcdb083e9041b137002ae79f29006bbc931def8fd24",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "十二個 30° 外轉角合為 360°。",
@@ -1601,7 +1634,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s007-v012",
     "unitId": "u08",
     "skillId": "polygon-angle-basic",
-    "contentSha256": "26596032e0256b0a4d4b5bbcf734d700171c506cae3f0235fcba6e15b0f8eba6",
+    "contentSha256": "e2d11427796453c18a3c74b6bf5b4da859bf7c7125eb6002849507162e5bc1a2",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "回代 180−360/24=165。",

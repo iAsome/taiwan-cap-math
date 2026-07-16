@@ -1,0 +1,1260 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u22",
+  "batch": "023-u22-complete",
+  "skills": [
+    "s013",
+    "s014",
+    "s015",
+    "s016",
+    "s017",
+    "s018"
+  ],
+  "mc": [
+    {
+      "questionId": "u22-s013-v001",
+      "expectedContentSha256": "95a2305f08b9e9d97d857ce293d8d124fdacd36dd7a75d3b7cfd0985d7b0f83b",
+      "appendText": {
+        "explanation": "理想硬幣一次試驗以朝上的面作記錄，正面與反面互斥又涵蓋全部情況；因此不能漏掉任一面，也不必加入題目模型之外的極端狀況。"
+      },
+      "appendArray": {
+        "steps": [
+          "再檢查正面與反面不會同時發生，且沒有第三種題設結果。",
+          "寫成S={正，反}，核對集合已同時滿足互斥與完整。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-v002",
+      "expectedContentSha256": "a40ba92bf77d39de99d4a6f7824bea48d2bc6bbb5c8ed48f847bed92608d25d7",
+      "appendText": {
+        "explanation": "兩次結果要保留先後位置，所以正反與反正是不同樣本點；用乘法原理也可由每次兩種得到二乘二共四種。",
+        "misconceptionTarget": "只按正面個數分成三類，會把兩個不同的有序基本結果合併。"
+      }
+    },
+    {
+      "questionId": "u22-s013-v003",
+      "expectedContentSha256": "9900856e419e97c4646279d6325a3a8e77bac6592f2ddb56e73084308b3e13c2",
+      "appendText": {
+        "explanation": "一次只選一個數，1、2、3彼此互斥且已列盡題目允許的候選；樣本空間是所有可能結果，不是先挑出的某個事件。",
+        "misconceptionTarget": "把例如偶數事件只列成{2}，會漏掉樣本空間中的1與3。"
+      },
+      "appendArray": {
+        "steps": [
+          "逐一確認1、2、3都可被選到且沒有其他合法數值。",
+          "將三個樣本點寫成集合，避免只列題目關心的事件。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-v004",
+      "expectedContentSha256": "efda3fedb0fa002825724d442a68fae58b06bb9047a9eeb3bbca3d7aa9708b50",
+      "appendText": {
+        "explanation": "題目最後只保存奇偶分類，六個原始骰面因此映射成兩種記錄；這裡問的是記錄結果數，不是擲骰前的六個物理面。"
+      },
+      "appendArray": {
+        "steps": [
+          "用{1,3,5}對應奇、{2,4,6}對應偶，確認兩類皆非空且完整。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-v005",
+      "expectedContentSha256": "54e0c9eba9de1d35421808d66fb1597818cab5b323756535585ca1c811e4895c",
+      "appendText": {
+        "explanation": "放回使第一抽的球重新回到袋中，第二抽仍有A、B、C三個選項；每個第一結果後接三個第二結果，合計九個有序配對。"
+      }
+    },
+    {
+      "questionId": "u22-s013-v006",
+      "expectedContentSha256": "aaec5a7c0ac612779fcfcb0713525b79dcea255dd2c85d63b5171f1dac97c435",
+      "appendText": {
+        "explanation": "不放回後不能再抽同一顆球，所以每個首抽只剩另外兩顆；六個列舉結果也和三乘二的計數互相驗證。",
+        "misconceptionTarget": "若仍列AA、BB、CC，就等於無視不放回造成的候選減少。"
+      }
+    },
+    {
+      "questionId": "u22-s013-v007",
+      "expectedContentSha256": "e31ca9063c21ee3b96c2c77008822bc7ad964d3443adfc0a7459222d57952651",
+      "appendText": {
+        "explanation": "兩顆硬幣可區分，表示每顆的正反要分別記錄；完整集合必須同時含正正、正反、反正、反反四種結果。"
+      },
+      "appendArray": {
+        "steps": [
+          "以第一顆為兩條主分支，再各接第二顆正、反，核對四個葉端。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-v008",
+      "expectedContentSha256": "59a641341bf2a9a263384981a912f79f2128db8cb5ff7284216466c1fc236a9e",
+      "appendText": {
+        "explanation": "不重複且不記順序時先列六個兩數組合，再把相同的和合併；雖只剩3到7五個標籤，各標籤對應的組合數不一定相同。"
+      },
+      "appendArray": {
+        "steps": [
+          "核對最小和1+2=3、最大和3+4=7，中間整數皆可形成。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-v009",
+      "expectedContentSha256": "85e740bc4a786e3168bbedb6792b97a1a4fb1c4d9b106599c5f10812e6dc308f",
+      "appendText": {
+        "explanation": "和的值域雖是連續的2至12，卻由不同數量的有序骰面配對構成；比較和2的一組與和7的六組，就足以否定等可能。"
+      },
+      "appendArray": {
+        "steps": [
+          "回到底層36個等可能配對，確認各和的權重而非只數標籤。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-v010",
+      "expectedContentSha256": "ce4170f3226ffcb3566ea8aad4e7d786e9c38066e5e5362143720ba4c2a2a2f7",
+      "appendText": {
+        "explanation": "字母位置固定在前、數字位置固定在後，因此每個字母都能配三個數字；六個字串互不重複，也已涵蓋所有格式合法的密碼。",
+        "misconceptionTarget": "把2種字母和3種數字相加成5，漏掉了兩位置之間的所有配對。"
+      }
+    },
+    {
+      "questionId": "u22-s013-v011",
+      "expectedContentSha256": "aac192f83ee13d57885618366861d591fd1c4cea8574f406420ba97e1c2e8f99",
+      "appendText": {
+        "explanation": "題目只禁止去回都走甲，並沒有禁止去回都走乙；從四個有序配對只刪甲甲，留下甲乙、乙甲、乙乙三種。"
+      },
+      "appendArray": {
+        "steps": [
+          "將留下的三個結果逐一代回限制，確認都不是甲甲。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-v012",
+      "expectedContentSha256": "3198d8d420c4268383b7261c31f5de392c3c30b2bb5f96ec87abbdc3216cc09e",
+      "appendText": {
+        "explanation": "若先按三時段各兩方式會有六種，再依服務條件刪去唯一不合法的晚間紙本；分支數2、2、1相加也得到五種。"
+      }
+    },
+    {
+      "questionId": "u22-s014-v001",
+      "expectedContentSha256": "1efdf0ac1a3770f1776d6f83bf5ca9e1f7b0e0796858ca18aa6811a7dbe29c01",
+      "appendText": {
+        "explanation": "公平是本題判斷各骰面機會相同的明示條件；六個面互斥且總機率為1，因此每一點數都分得相同的六分之一。",
+        "misconceptionTarget": "骰面點數6比1大，不代表朝上機率也比較大。"
+      },
+      "appendArray": {
+        "steps": [
+          "以六個相等機率的總和為1，反推單一骰面的機率。",
+          "比較任兩骰面，確認公平條件使其機率都同為1/6。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v002",
+      "expectedContentSha256": "5196facf3bfb7f5532fcba9314d6e60e41fef5db0a095dd6a2021b9bd1537808",
+      "appendText": {
+        "explanation": "指針均勻落在圓面上時，事件權重由區域面積決定；紅區是藍區三倍，所以兩色機率分別四分之三與四分之一。",
+        "misconceptionTarget": "只有紅、藍兩種標籤，不足以推出兩區各占二分之一。"
+      },
+      "appendArray": {
+        "steps": [
+          "把兩區面積占比相加檢查為1，再比較是否相等。",
+          "由3/4不等於1/4，判定紅、藍兩事件並非等可能。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v003",
+      "expectedContentSha256": "fe7b8a5ebff875b19885f14cdb985e0d7987031e9656dbe269a21bd9607f297a",
+      "appendText": {
+        "explanation": "等可能的基本單位是五顆相同球，不是兩個顏色名稱；紅色含一個基本結果、藍色含四個，聚合後自然不是各半。"
+      },
+      "appendArray": {
+        "steps": [
+          "先寫每顆球機率1/5，再依顏色加總成1/5與4/5。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v004",
+      "expectedContentSha256": "ab55b97136039d73331c88030c69613da952ece953251d786ac7036e34e2dcb4",
+      "appendText": {
+        "explanation": "兩骰共有36個等可能有序配對；和2只由(1,1)形成，而和7由六個配對形成，所以兩事件的權重相差六倍。",
+        "misconceptionTarget": "把2至12的十一個和當成等可能標籤，會忽略各和的配對數不同。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出和7的六個配對並與和2的唯一配對比較。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v005",
+      "expectedContentSha256": "a8d37aca621433c496978801af2c8cbeeaea04d6f321aa69accc6b57373b2e5e",
+      "appendText": {
+        "explanation": "四張實體卡片才是等可能結果，兩張標1會把機率合併到同一標籤；所以數字1占二分之一，另外兩數各占四分之一。"
+      },
+      "appendArray": {
+        "steps": [
+          "用四張卡片的總數作共同分母，逐標籤累加副本數。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v006",
+      "expectedContentSha256": "9c9bbfb3c069c18e9e4e924d70f3c1475180958f6308050e29881adabd257e41",
+      "appendText": {
+        "explanation": "公平三等分轉盤直接給三個相同面積的底層區域，每個標籤恰對應一區；其餘機制若權重不等，就不能只靠隨機外觀宣稱公平。"
+      },
+      "appendArray": {
+        "steps": [
+          "核對A、B、C各占360度的三分之一。",
+          "確認三個相同角度合計360度，沒有遺漏或重疊區域。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v007",
+      "expectedContentSha256": "e22cc2e262c0c83157c545d6454b1963ed12fa69de92f07432cd967d5bb1aa65",
+      "appendText": {
+        "explanation": "成功事件包含骰面1至4共四個基本結果，失敗只含5、6兩個；公平骰面等可能不等於兩個事件類別等可能。",
+        "misconceptionTarget": "看見成功、失敗兩類就各給二分之一，會漏算每類所含骰面數。"
+      },
+      "appendArray": {
+        "steps": [
+          "以4/6與2/6比較並確認兩者相加為1。",
+          "約分得2/3與1/3，據此判定成功較可能而非各半。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v008",
+      "expectedContentSha256": "1802c75870819631f41c92456267becb34a421413f673c7b363c0f964d60cab3",
+      "appendText": {
+        "explanation": "箱中四張實體票外觀相同，所以每張被抽中的機率相同；A的三張副本合計占四分之三，B只有四分之一。",
+        "misconceptionTarget": "把票面名稱A、B視為兩個樣本點，會抹去A有三張副本的權重。"
+      },
+      "appendArray": {
+        "steps": [
+          "將三張A的三個四分之一相加，得到A事件機率3/4。",
+          "以剩下一張B的1/4驗算兩事件機率總和為1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v009",
+      "expectedContentSha256": "903791272ae2317c68c0f8aaddd30db0ca24bcde4c371cd5292abe343a90f5a4",
+      "appendText": {
+        "explanation": "均勻轉盤中機率與中心角成比例；A、B同為60度而等可能，C、D同為120度而等可能，但兩組之間機率不同。",
+        "misconceptionTarget": "四個區塊不代表各四分之一，因為區塊角度並不相同。"
+      },
+      "appendArray": {
+        "steps": [
+          "把各角除以360度，得到1/6、1/6、1/3、1/3並驗算總和。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v010",
+      "expectedContentSha256": "4778347136817c3f2fd5f2ea8a98bb5338d03926ebf493fa1ca024d242b1c76b",
+      "appendText": {
+        "explanation": "抽獎的底層樣本是100張等機會票券，三種事件分別聚合1、9、90張；因此正確機率為1%、9%、90%，不是按名稱均分。",
+        "misconceptionTarget": "以三種獎別作分母3，會把事件分類誤當等可能基本票券。"
+      },
+      "appendArray": {
+        "steps": [
+          "由100減去頭獎與二獎票數，求得未中90張再比較。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v011",
+      "expectedContentSha256": "b3ac2897e777b3132f0445fc5647a8652e760c0b4721a498c03c7f938a5b5402",
+      "appendText": {
+        "explanation": "0到99共有100個等可能整數；三段分別含50、30、20個值，端點皆應計入，所以輸出機率為50%、30%、20%。",
+        "misconceptionTarget": "把0到49誤算49個，或忽略端點，會造成映射權重計數錯誤。"
+      },
+      "appendArray": {
+        "steps": [
+          "逐段用末值減初值再加1，核對三段總數恰為100。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-v012",
+      "expectedContentSha256": "1e7b5c8b313ad412f15bbf71a34ebe0c63086607b0c78fa54c0261c77d1efc81",
+      "appendText": {
+        "explanation": "乙法直接讓全校每個名字具有相同抽取機會；甲法的個人機率是2除以所屬班級人數，班級大小不同時就不相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "用兩個不同班級人數代入2/班級人數，驗證甲法個人機率會改變。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-v001",
+      "expectedContentSha256": "f6c59648594f1937bdb3c40c19c8262f88f6151e15614209d9888a843671e3ce",
+      "appendText": {
+        "explanation": "正面與骰出6是同一路徑上兩個都要成立的條件；兩次試驗獨立，沿路相乘得到二分之一乘六分之一，即十二分之一。",
+        "misconceptionTarget": "把「且」誤作互斥事件相加，會算出超過單一路徑合理大小的結果。"
+      }
+    },
+    {
+      "questionId": "u22-s015-v002",
+      "expectedContentSha256": "92bbe026597f1713596b9c9872be2db23cb3b761820dad85253efe52dcc517c8",
+      "appendText": {
+        "explanation": "第一抽後把球放回，袋中仍是2紅3藍，因此兩次紅球機率都為五分之二；路徑乘積是二十五分之四。",
+        "misconceptionTarget": "若把第二抽改成1/4，就把放回題錯當成不放回。"
+      }
+    },
+    {
+      "questionId": "u22-s015-v003",
+      "expectedContentSha256": "0d6e1f5e1e791a25ef05a79e2f5262cabec75a20300e83452f7a6ea2487a0f82",
+      "appendText": {
+        "explanation": "第一抽紅後剩下1紅3藍共4顆，第二個條件機率必須更新為四分之一；乘上首抽五分之二後得到十分之一。"
+      }
+    },
+    {
+      "questionId": "u22-s015-v004",
+      "expectedContentSha256": "af48fbc296653c5cd6f3e469190ceeb84a4ee685874c6a15f630f7c4c3eef1c2",
+      "appendText": {
+        "explanation": "恰好一次正面包含正反與反正兩條互斥路徑，各為四分之一；跨路徑相加才得到二分之一，不能只算固定順序。"
+      }
+    },
+    {
+      "questionId": "u22-s015-v005",
+      "expectedContentSha256": "6933028ab6363d006a9b8f5f1dc43421d8671690e736c758a46155179d12888d",
+      "appendText": {
+        "explanation": "指定先白後黑只有一條路徑：先白為3/5，抽走白後黑仍有2顆而總數剩4；相乘並約分得3/10。",
+        "misconceptionTarget": "只報3/5或2/4都只完成一階段，尚未符合兩次指定順序。"
+      },
+      "appendArray": {
+        "steps": [
+          "把第二階段更新後的2/4與第一階段3/5相乘，檢查結果小於各單階段機率。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-v006",
+      "expectedContentSha256": "18fdad8281bab7964edf15ced151495bef23c71a93889f239583205b835c86c8",
+      "appendText": {
+        "explanation": "不限順序的一白一黑要合併白黑、黑白兩條互斥路徑；兩條各為3/10，相加得3/5，且沒有重疊結果。"
+      },
+      "appendArray": {
+        "steps": [
+          "先確認兩路徑互斥，再將3/10與3/10相加並約分。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-v007",
+      "expectedContentSha256": "7c292af200dccc9a3ea4ed3f3c1a6a7c2621da55e9804882dd1d521ba278e41a",
+      "appendText": {
+        "explanation": "成功可能經由A或B兩個互斥來源；每路先乘來源權重與條件成功率，再把0.20與0.12相加，才是全體成功率0.32。",
+        "misconceptionTarget": "直接平均0.5與0.2，會忽略A、B被選到的比例不同。"
+      },
+      "appendArray": {
+        "steps": [
+          "驗算兩來源權重0.4+0.6=1，確保沒有漏掉其他第一階段。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-v008",
+      "expectedContentSha256": "44fa9022d0d24aae51e6de63fec12adb45686a5c436db194dba2e2888754586b",
+      "appendText": {
+        "explanation": "不放回且記順序共有六個等可能兩位數；嚴格大於21只取23、31、32三個，21本身不能納入，故機率為二分之一。",
+        "misconceptionTarget": "若把21列為有利或把12與21合併，會同時違反嚴格不等式與順序條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "以三個有利結果除以六個完整結果，並檢查21未被錯算。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-v009",
+      "expectedContentSha256": "051ebcca9280f7bd3bf2a500807e51ef67fa2bb40318c02b93b38232cd98bb10",
+      "appendText": {
+        "explanation": "兩步都成功的路徑機率是p乘三分之一；已知乘積六分之一，除以三分之一便得p為二分之一，代回可驗算。回代後左右兩邊相同，也確認p落在0與1之間。",
+        "misconceptionTarget": "把1/6再乘1/3會重複縮小，而不是由乘積反求第一階段。"
+      },
+      "appendArray": {
+        "steps": [
+          "回代(1/2)(1/3)=1/6，確認反求值符合原路徑。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-v010",
+      "expectedContentSha256": "f34197e906718adfb9fdf44d71d0804c5ac236a1bac9d3554cc3c962fd63570a",
+      "appendText": {
+        "explanation": "恰好一次中獎包含中不中與不中中兩條路徑；每條都是(1/5)(4/5)=4/25，兩條相加得到8/25。兩條順序互斥，因此相加時不會重複計數。"
+      }
+    },
+    {
+      "questionId": "u22-s015-v011",
+      "expectedContentSha256": "b3d6225720041794e35158b56e2a5377ad061cb0f18c95a78f0c7fb680a12d75",
+      "appendText": {
+        "explanation": "B線來源機率是1-0.7=0.3；A、B不良路徑分別貢獻0.014與0.015，相加為0.029，不能把條件不良率直接平均。兩個來源已涵蓋全部產品，故路徑加總完整。"
+      }
+    },
+    {
+      "questionId": "u22-s015-v012",
+      "expectedContentSha256": "56f8525545b5d01c5081f3f22359a934ec54492f581169cab2b4941f340aed6b",
+      "appendText": {
+        "explanation": "題目要求快篩陽性且複檢通過，必須沿同一路徑乘0.1與0.8；得到0.08，表示占全體受檢者的8%。這與只在陽性者中計算的80%層級不同。",
+        "misconceptionTarget": "直接回答0.8，會把陽性者中的通過率誤當所有人的聯合機率。"
+      },
+      "appendArray": {
+        "steps": [
+          "區分0.8是已陽性者中的條件比例，再乘0.1換成全體比例。",
+          "把0.08轉成8%，並確認聯合事件機率不超過0.1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v001",
+      "expectedContentSha256": "1cdb5739f3aa82f2836fa597d9fcf32950e2abf912dc4c91861da7ce1a63ec7b",
+      "appendText": {
+        "explanation": "至少一張紅涵蓋一張或更多紅牌，它的完整否定就是一張紅牌也沒有；兩事件互斥且聯集為全部抽取結果，所以可直接用餘事。",
+        "misconceptionTarget": "把至少一張縮成恰好一張，會漏掉同時抽到兩張以上紅牌的結果。"
+      },
+      "appendArray": {
+        "steps": [
+          "把目標事件與零張紅並列，確認不重疊且沒有遺漏任何紅牌張數。",
+          "因此可把目標機率寫成1減去零張紅的機率。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v002",
+      "expectedContentSha256": "1ea88d60c48aa6cad1166cae613def2ca4d1bee16a08bf68a09f2834d95b1222",
+      "appendText": {
+        "explanation": "不小於6的數學符號是大於或等於6，端點6必須保留；在1到8的整數中，合法結果正是6、7、8三個。逐一代回都同時符合原範圍與不等式。",
+        "misconceptionTarget": "若只列7、8，就是把「不小於」錯讀成嚴格大於。"
+      },
+      "appendArray": {
+        "steps": [
+          "將中文改寫成x≥6，再和1≤x≤8取交集。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v003",
+      "expectedContentSha256": "c6382ae71344082fb132a7a5413dbaf6729ce33253f5f525172267f2452dd48d",
+      "appendText": {
+        "explanation": "含兩端表示3與7都算在事件內，因此有利整數為3、4、5、6、7共五個；除以十個等可能整數後約成二分之一。",
+        "misconceptionTarget": "只算4、5、6會把含兩端誤作不含端點，少算兩個結果。"
+      },
+      "appendArray": {
+        "steps": [
+          "用7-3+1=5複核含端點的整數個數，再除以10。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v004",
+      "expectedContentSha256": "82191c552c18daf83ea6dc87a4bf122fef1c37e6b677d853de8e158cd1b0399d",
+      "appendText": {
+        "explanation": "每人一張同樣籤使30名學生等可能；女生人數要由總人數扣男生得到16，再以16除30並約分為8/15。分母仍是全班30人，不能只用其中一個性別。",
+        "misconceptionTarget": "直接用14/30回答，算到的是男生事件而不是題目所問的女生。"
+      }
+    },
+    {
+      "questionId": "u22-s016-v005",
+      "expectedContentSha256": "11ddb439391f253ee6d0118264a151654353a38a1ab8d7f2b032c0f5f463caeb",
+      "appendText": {
+        "explanation": "用餘事可避免00被重複計算：兩位都非0各有9種，共81種；從100種扣除後留下19種，因此機率19/100。"
+      }
+    },
+    {
+      "questionId": "u22-s016-v006",
+      "expectedContentSha256": "9dce2510e6ab7b9f8a0b1471680d461a8445c2b0818858f7e480ced3473fc17f",
+      "appendText": {
+        "explanation": "第二顆黑可經由白黑或黑黑兩路徑，兩路分別為4/15與1/15；相加得1/3，也和六顆球在第二位置對稱的2/6一致。"
+      },
+      "appendArray": {
+        "steps": [
+          "以位置對稱法2/6再次驗算路徑加總的1/3。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v007",
+      "expectedContentSha256": "b41440fab6a35b97920cb5d7a23e9ebdca449aed0ecdc19b796c544d7dd078c3",
+      "appendText": {
+        "explanation": "至少一顆6的餘事是兩顆都不是6，獨立機率為25/36；以1減去後得11/36，已自動處理雙6的重疊。",
+        "misconceptionTarget": "直接做1/6+1/6會把(6,6)算兩次，因此不能得到正確聯集機率。"
+      }
+    },
+    {
+      "questionId": "u22-s016-v008",
+      "expectedContentSha256": "435f0a01b88bf89419743439bb3d6377f83df07a3996a078f8da2367de0b1139",
+      "appendText": {
+        "explanation": "先列1到50中的八個6倍數，再刪除同時是4倍數、也就是12倍數的四個；剩下6、18、30、42共四個。",
+        "misconceptionTarget": "把「被6整除但不被4整除」讀成兩條件擇一，會納入大量不合法號碼。"
+      },
+      "appendArray": {
+        "steps": [
+          "逐一把四個保留號碼代回，確認皆被6整除且不被4整除。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v009",
+      "expectedContentSha256": "e4183e9c192b928c1e89269ddec67234b68bb51b87094bb62b9f76f288f4ba99",
+      "appendText": {
+        "explanation": "三條路線互斥且權重合為1；各路線被選中且延誤的聯合機率依序是0.05、0.06、0.08，相加才得全體0.19。每個條件延誤率都先乘上相應的路線權重。"
+      },
+      "appendArray": {
+        "steps": [
+          "把0.19與各分路貢獻比較，確認總率不小於任一路徑貢獻且不超過1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v010",
+      "expectedContentSha256": "03ceeeaabeeb5a378d3e91c1242a8ac55988efe1335f09e55677c75a694fd908",
+      "appendText": {
+        "explanation": "對指定的一名隨機參加者，每張號碼牌都是可能位置，樣本空間仍有120張；其中30張可換獎，所以機率固定為四分之一。",
+        "misconceptionTarget": "把分母改成發出的60張，會混淆單一位置的抽牌機率與整批發牌數。"
+      },
+      "appendArray": {
+        "steps": [
+          "用30/120約分，並說明發出60張只影響總中獎人數分布。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v011",
+      "expectedContentSha256": "5f1fec33f7411664d17c81fd068691ac6cd59b84b93ce4e70284967d47b08d48",
+      "appendText": {
+        "explanation": "35%是相似條件歷史資料的相對次數，可用來估計單日下雨機率；它不表示未來每100天必然固定有35天下雨，也不決定明天結果。"
+      },
+      "appendArray": {
+        "steps": [
+          "同時保留35/100的估計值與單次天氣仍不確定的語意。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-v012",
+      "expectedContentSha256": "c1f09aae0c800aa403a976495542a6932ea54a2379cc47468dc9e9cb79b0ac00",
+      "appendText": {
+        "explanation": "20劑全合格是支持品質的樣本證據，但未直接觀察其餘980劑；隨機抽樣可估計母體，不能把不確定性改寫成整批百分之百保證。",
+        "misconceptionTarget": "把隨機抽樣等同逐劑全檢，會把樣本結論過度推廣到整個母體。"
+      },
+      "appendArray": {
+        "steps": [
+          "比較已檢20劑與未檢980劑，限定結論只能是抽樣結果與合理估計。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v001",
+      "expectedContentSha256": "c2c608fbc77d9c47c049d4119149da6e3e4d3b1eea0dbeb4d7d7041653845001",
+      "appendText": {
+        "explanation": "期望值把每種得分乘上其機率後相加；12乘四分之一為3，零分路徑不增加總和，所以長期每局平均為3分。"
+      },
+      "appendArray": {
+        "steps": [
+          "驗算兩種結果機率1/4與3/4相加為1，再完成加權平均。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v002",
+      "expectedContentSha256": "00e5862632d59bf7d28bf1d12524ca8ad8972bacc804f35b49b5043d73dbf307",
+      "appendText": {
+        "explanation": "20%描述大量相同試驗中事件比例趨近的傾向，不規定每五次恰出現一次；短期次序與次數仍會隨機波動。",
+        "misconceptionTarget": "把20%改寫成每五次必有一次，是把機率錯當成預先排定的週期表。"
+      },
+      "appendArray": {
+        "steps": [
+          "把百分率解讀為長期比例傾向，並排除固定週期的說法。",
+          "檢查合理敘述必須允許短期次數偏離五次一次。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v003",
+      "expectedContentSha256": "476859208e41be5d9509151ac46e383efe26f3fedadae53feb64c3f779189e76",
+      "appendText": {
+        "explanation": "在獎品價值與成本都相同的前提下，只需比較中獎率；五分之一大於十分之一，因此乙的期望收益也較高。",
+        "misconceptionTarget": "若另猜獎品或成本差異，就是加入題目已明確排除的條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "將1/5通分為2/10，直接與1/10比較。",
+          "在其他條件相同下，以較高中獎率判定乙較有利。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v004",
+      "expectedContentSha256": "01c64f5694e6d7052351b65f8ff700199182589b430e6f920c613a30e7628504",
+      "appendText": {
+        "explanation": "A的期望是4乘二分之一等於2，B的期望是8乘四分之一也等於2；中獎頻率與最高分不同，但長期平均相同。",
+        "misconceptionTarget": "只看B最高可得8分會忽略其較低的中獎機率；只看A中獎率也同樣不完整。"
+      },
+      "appendArray": {
+        "steps": [
+          "分別把未中獎的零分項納入完整期望式，再比較兩個結果。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v005",
+      "expectedContentSha256": "ba7c7d826ea5f50a1c78b0a723e20f596d74635629628b9a9f8f976ec2e48214",
+      "appendText": {
+        "explanation": "一百乘百分之一得到的是誤報次數的期望值1，不是每組一百次的保證；獨立重做時實際次數可在1的上下波動。",
+        "misconceptionTarget": "把期望1次說成必定恰好1次，混淆長期平均與單批實現。"
+      },
+      "appendArray": {
+        "steps": [
+          "用次數乘單次機率求期望，並註明實際值必須是整數且不固定。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v006",
+      "expectedContentSha256": "dff1feda978a30fc1ac90a77a70d5a35a527b8c3ef420ed62e5a8a0e0f37841a",
+      "appendText": {
+        "explanation": "公平且獨立已保證每次試驗機率不受過去結果影響；前五次全正不會改變第六次，正面仍為二分之一。"
+      },
+      "appendArray": {
+        "steps": [
+          "明確以獨立性判定條件機率仍等於原本的1/2。",
+          "排除因連續正面而增加或減少下一次機率的說法。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v007",
+      "expectedContentSha256": "36d5cefc0a62a47ff4e7d2be7d0382748c4b4c48facce6fe05d29c993781e9a8",
+      "appendText": {
+        "explanation": "獎金期望為20乘五分之一等於4元，再扣每局固定入場費6元，淨收益期望是負2元；正負號表示長期平均損失。",
+        "misconceptionTarget": "只算20×1/5會得到毛獎金，尚未扣除每局一定支付的6元。"
+      },
+      "appendArray": {
+        "steps": [
+          "分開列獎金期望與固定成本，再做4-6=-2。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v008",
+      "expectedContentSha256": "4373baf4d46361e9331f144e756302705a469f73c780a1cdedaf5ad8c911f3ed",
+      "appendText": {
+        "explanation": "得10點的機率是1/6，扣1點的五個骰面合計5/6；加權後(10-5)/6=5/6，公平骰只保證骰面等機會。獎勵與扣分權重不同，所以期望不必等於零。",
+        "misconceptionTarget": "公平骰不代表遊戲期望為0；獎懲映射不對稱仍可產生正期望。"
+      },
+      "appendArray": {
+        "steps": [
+          "檢查10分與負1分兩類機率合為1，再保留扣分的負號。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v009",
+      "expectedContentSha256": "d6e71c8fa23ad2e3185ae6afbd000838b5255c0d81c8ae387d11b7fb491afcb0",
+      "appendText": {
+        "explanation": "甲方案期望省下0.9乘10等於9元，乙則確定8元；題目限定只比期望，所以9大於8即判甲較大，風險偏好另當別論。"
+      },
+      "appendArray": {
+        "steps": [
+          "依題目指定指標只比較9元與8元，不把波動改寫成答案。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v010",
+      "expectedContentSha256": "5803eacdf04716bef5dd9f76e17e721e9eff7ebaaeff8b50226c1fe02a5fe9a4",
+      "appendText": {
+        "explanation": "每張票獨立且中獎率固定，表示先前二十次結果不會進入下一張的條件機率；連續未中不能製造短期補償。"
+      },
+      "appendArray": {
+        "steps": [
+          "以獨立性寫出P(下一張中獎｜前20張未中)=原中獎率。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-v011",
+      "expectedContentSha256": "8a7aa84e3901955db3961fa66508f831af551d904462e2555550e08c1487eead",
+      "appendText": {
+        "explanation": "事故與無事故兩結果的損失加權為50000乘0.02加0乘0.98，得到1000元；這是多年或多人平均風險成本，不是單年必付。"
+      }
+    },
+    {
+      "questionId": "u22-s017-v012",
+      "expectedContentSha256": "a33a7051223ae160bfc6a45f50efae6e4226089fcdbbadd9e6c2814e29fc8799",
+      "appendText": {
+        "explanation": "27%是這一批100次模擬的觀察相對次數，可作機率估計；有限模擬仍有抽樣波動，增加次數通常只使估計較穩定而非構成證明。",
+        "misconceptionTarget": "將一次模擬的27%宣稱為精確理論機率，忽略了有限次數的隨機誤差。"
+      },
+      "appendArray": {
+        "steps": [
+          "把27次除以100得到觀察比例，並明確標示它是估計值。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v001",
+      "expectedContentSha256": "6e349ab0eb579a1a4eb736be6e573ca24546b4d96b99e2e797e50bc4fc93ef5d",
+      "appendText": {
+        "explanation": "盒狀圖的箱體由第一四分位數延伸到第三四分位數，對應排序位置的中間約一半；等機會抽原始觀測筆時，經驗機率約為二分之一。",
+        "misconceptionTarget": "把箱體誤認整份資料的最小到最大範圍，會回答百分之百。"
+      },
+      "appendArray": {
+        "steps": [
+          "由Q1到Q3的排序涵蓋比例約50%，再轉寫成機率約1/2。",
+          "保留『約』字，因端點重複值可能使實際筆數比例略有差異。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v002",
+      "expectedContentSha256": "17733d62083b4870ea5c572abbc3868e4db30f24f88016b4e5452515d9a31ac5",
+      "appendText": {
+        "explanation": "累積30筆就是符合不超過該值的有利筆數，總樣本40筆；以30除40並約分，得到四分之三的經驗機率。每筆等機會抽取是以筆數比例作機率的前提。",
+        "misconceptionTarget": "直接寫30或30%，沒有用總筆數40把次數轉成比例。"
+      },
+      "appendArray": {
+        "steps": [
+          "先確認累積次數已包含所有較小值，再用30/40約分。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v003",
+      "expectedContentSha256": "01d0692fa3cd14a64453684b7dee898fd60b46e3ccdfee18ce40ac0212baa464",
+      "appendText": {
+        "explanation": "中位數只描述各班排序中央位置，沒有規定每一名學生的相對高低；兩班分布可能重疊，因此隨機個體仍可能出現乙高於甲。"
+      },
+      "appendArray": {
+        "steps": [
+          "以兩個重疊分布的可能個體值檢查，否定由中位數推出必然關係。",
+          "結論只保留甲班中心位置較高，不延伸成每一對學生的排序。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v004",
+      "expectedContentSha256": "b0a42993e1c8e852df17b932c26512a7467baa3194b9ae2eb5093653fe75025f",
+      "appendText": {
+        "explanation": "只在自行車社抽樣，使非社員完全沒有入樣機會，抽樣框與全校母體不一致；即使抽滿100人，也無法修正這種系統性偏差。",
+        "misconceptionTarget": "只看樣本數100而忽略誰能被抽到，會錯估偏差是否存在。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出社員與非社員的入樣機率，確認後者為0而不具代表性。",
+          "把推論母體限制為抽樣框，或改採涵蓋全校的抽樣程序。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v005",
+      "expectedContentSha256": "9c1e945f3d6b6acbe7fdc3ca4fd55d92e2397e2bc31d4ac23da9624a7552873b",
+      "appendText": {
+        "explanation": "五數摘要只告訴最大值是100，沒有提供總筆數與100出現次數；缺少分子、分母兩項資訊，就不能算精確抽中機率。"
+      },
+      "appendArray": {
+        "steps": [
+          "分別指出需要100的頻數與資料總筆數，確認盒狀圖皆未提供。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v006",
+      "expectedContentSha256": "01b6f83da2a21b77831dd621620cf0ce033c29599b95fb8e32154cf6e1228ada",
+      "appendText": {
+        "explanation": "累積20筆占總數80筆，表示隨機抽到該上界以下資料的經驗機率為20/80；約分後正好是四分之一。這也與第一四分位數附近的排序比例一致。"
+      },
+      "appendArray": {
+        "steps": [
+          "將累積次數20除以總筆數80並約分驗算。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v007",
+      "expectedContentSha256": "13ee9622fc30ff6e65492583e27b960faf41c1be5abc7fbbe35432d50f1aa75d",
+      "appendText": {
+        "explanation": "15超過離群上界14，只能先標為依該規則的離群候選；它可能源自量測錯誤或真實特殊製程，仍需查證才能處理。",
+        "misconceptionTarget": "一超界就自動刪除或判定造假，超出了盒狀圖規則能支持的結論。"
+      },
+      "appendArray": {
+        "steps": [
+          "先比較15與上界14，再把統計標記和原因判定分成兩步。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v008",
+      "expectedContentSha256": "1b59fa897b8b8afbdc44e3c686567c894d347f718752785344eefc8f4460230d",
+      "appendText": {
+        "explanation": "較小IQR只說中間約一半的日子較集中，較大全距則說極端端點相距較遠；兩個統計量描述不同部分，因此可以同時成立。",
+        "misconceptionTarget": "只憑IQR小便說每一天都穩定，會忽略大全距所揭示的遠端值。"
+      },
+      "appendArray": {
+        "steps": [
+          "分別把IQR對應中間資料、全距對應兩端，再避免合併成單一結論。",
+          "據此同時報告中間較集中與端點距離較遠，不互相否定。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v009",
+      "expectedContentSha256": "c9bd8a52bf80698e163aab7da55a1dd4b120e5e2b5ac74845303ddfa734a963b",
+      "appendText": {
+        "explanation": "抽取範圍限定為已回收問卷，且每份等機會；B在這個樣本中占30%，所以經驗機率就是0.30，不因共有三類而均分。",
+        "misconceptionTarget": "看到A、B、C三類就各給1/3，會無視實際50%、30%、20%的頻率。"
+      },
+      "appendArray": {
+        "steps": [
+          "把B份數占總回收份數的比例直接轉成30%的抽取機率。",
+          "再以三類比例合計100%驗算回收問卷分類完整。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v010",
+      "expectedContentSha256": "b54089103b59e1ba0376beb5a790b89f675521f98657d285c2bc7eb722cf221d",
+      "appendText": {
+        "explanation": "Q3是各班內第75百分位附近的分數，不是甲乙隨機個體交叉比較的勝率；只有兩個Q3無法得知完整重疊情形，因此不能精算。",
+        "misconceptionTarget": "把甲班Q3較高解讀成甲生有75%會贏，混淆班內位置與跨組機率。"
+      },
+      "appendArray": {
+        "steps": [
+          "列出計算跨班勝率所需的完整分布資訊，確認題目只給兩個百分位。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v011",
+      "expectedContentSha256": "60e813207bfe3b8d51a8ae6c30d1b208a1433d8ba72febd64f49a89442f91ec6",
+      "appendText": {
+        "explanation": "資料只涵蓋凌晨使用者，抽樣框缺少其他時段；流量結構若隨時段改變，90%只能描述該資料範圍，不能直接外推全天。",
+        "misconceptionTarget": "樣本再大也不能自動補上完全沒被涵蓋的白天與晚間使用者。"
+      },
+      "appendArray": {
+        "steps": [
+          "比較資料涵蓋的凌晨時段與欲推論的全天母體，指出兩者不一致。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s018-v012",
+      "expectedContentSha256": "7f1e8badbd60d3e4d03eb28ef0fa40b263f8889ea6578f8a5c67d0b0b66903f1",
+      "appendText": {
+        "explanation": "先刪除所有依規則標出的離群值，處理後當然看不到離群；這只能描述清理後資料，不能冒充原始資料性質，必須揭露規則與影響。"
+      },
+      "appendArray": {
+        "steps": [
+          "按時間順序重述先判定、再刪除、後報告，辨認結論由處理步驟製造。"
+        ]
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u22-s013-cr001",
+      "expectedContentSha256": "66cb5581643dce499f77fb1006b949a8176e7a97f473c5a8c6fc3c67e6a14f0e",
+      "appendArray": {
+        "standardSolution": [
+          "列舉的八個有序樣本點同時保留硬幣與骰子結果；事件『正面且偶數』只含(正,2)、(正,4)，所以有利數二除以總數八。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s013-cr002",
+      "expectedContentSha256": "0bee1dc9c20958efb9b393ea6cdcff02ce7eeedf8dec108d42e5f7f083e49ae4",
+      "appendArray": {
+        "standardSolution": [
+          "不放回排除11、22、33，但記錄順序使12與21仍是不同結果；六個等可能兩位數中，大於20的四個占三分之二。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-cr001",
+      "expectedContentSha256": "92945f1817e58351329f468794c4c9391b79a748bb2adc9266c74af87e4cde04",
+      "appendArray": {
+        "standardSolution": [
+          "均勻轉盤的底層權重是中心角而不是標籤數；三角度合為360度，B所占120度，因此其機率為120/360。"
+        ],
+        "reasoningSteps": [
+          "最後驗算60/360+120/360+180/360=1，確認三區機率完整且B的1/3合理。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s014-cr002",
+      "expectedContentSha256": "78423fbfe4b04dedab34a547a948ac52b797003c26aba08ea7f1e6c9325ff192",
+      "appendArray": {
+        "standardSolution": [
+          "公平抽球要求紅、藍所含的相同球數一致；目前是1比3，所以增加兩紅或移除兩藍，都能把兩色權重改成相等。"
+        ],
+        "reasoningSteps": [
+          "分別驗算修改後為3紅3藍或1紅1藍，兩種方案的紅、藍機率都等於1/2。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-cr001",
+      "expectedContentSha256": "d7dc3870fc5bd5932b52f8eb2b404b84317e622ce2b7baceff87cd8d640c2e84",
+      "appendArray": {
+        "standardSolution": [
+          "白黑與黑白是互斥的兩種順序；不放回後第二抽分母皆為4，兩路各得3/10，跨路相加而不是相乘。"
+        ],
+        "commonErrors": [
+          "把第二抽分母仍寫5，等於把題設的不放回誤作放回，會使兩條路徑的條件機率都錯誤。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s015-cr002",
+      "expectedContentSha256": "d11095665a9bb61e9d3290ad3fa69e56079211f6d0a058e551505170fe130a13",
+      "appendArray": {
+        "standardSolution": [
+          "硬幣正、反各占一半，之後分別接骰子三個偶數或卡片唯一偶數；兩來源互斥，所以1/4與1/6相加為5/12。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s016-cr001",
+      "expectedContentSha256": "7e777264e4cf4ae06d54a4fdbdb9bd67280e5a6ae33412164d99630c468994a3",
+      "appendArray": {
+        "standardSolution": [
+          "一獎與二獎票互斥，先合併成30張中獎票再除以全部200張；不中獎是完整餘事，所以直接用1減15%。"
+        ],
+        "reasoningSteps": [
+          "以15%+85%=100%驗算中獎與不中獎互斥且完整，兩個百分率共同涵蓋所有票券。"
+        ]
+      }
+    },
+    {
+      "questionId": "u22-s017-cr001",
+      "expectedContentSha256": "52baacf733a1c47bc3fde1f1594ac7dcceee33d25bd84727c2e6bff03a73df71",
+      "appendArray": {
+        "standardSolution": [
+          "計算淨結果時必須先求獎金期望再扣每局固定費用；負十元只表示長期平均方向，並非任何單局實際可能拿到的金額。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u22-s013-lecture-r1",
+      "expectedContentSha256": "2db2bdb6244ad2fb938ad4b3c1b71f7a38589764f41011e81be33081f0986fc9",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "兩硬幣記順序",
+            "solutionSteps": [
+              "正正、正反、反正、反反。"
+            ],
+            "answer": "正正、正反、反正、反反。",
+            "why": "兩次硬幣若記錄先後，第一擲與第二擲各有正、反兩種；四個有序配對互斥且完整，正反與反正不能合併。也可用二乘二驗算總數為四。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "A、B、C放回抽兩次",
+            "solutionSteps": [
+              "9個有序結果。"
+            ],
+            "answer": "9個有序結果。",
+            "why": "放回後每次仍有A、B、C三個候選，每個首抽都能接三個次抽，所以有三乘三共九個有序結果。AA等重複結果在放回條件下合法。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "A、B、C不放回抽兩次",
+            "solutionSteps": [
+              "AB、AC、BA、BC、CA、CB。"
+            ],
+            "answer": "AB、AC、BA、BC、CA、CB。",
+            "why": "不放回使第二次不能再取首抽字母，每個第一結果只接另外兩個字母；三乘二得到六個結果，列出的六項也恰好互斥且無遺漏。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "1到4不重複取兩數只記和",
+            "solutionSteps": [
+              "和3到7，但各和不等可能。"
+            ],
+            "answer": "和3到7，但各和不等可能。",
+            "why": "六個不重複兩數組合映射成和3至7，但和5可由1+4與2+3兩組形成，其他和的來源數不同。因此值域完整不代表五個和等可能。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s014-lecture-r1",
+      "expectedContentSha256": "d58989b7941e4891d6fe18c607c97931a639e1c408b9be66641536c0f67e743b",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "1紅4藍同樣球",
+            "solutionSteps": [
+              "紅1/5、藍4/5。"
+            ],
+            "answer": "紅1/5、藍4/5。",
+            "why": "五顆相同球才是等可能基本結果，紅色聚合一顆、藍色聚合四顆；所以兩個顏色事件的權重為一比四，而不是因只有兩色就各半。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "兩骰和2與7",
+            "solutionSteps": [
+              "1/36對6/36。"
+            ],
+            "answer": "1/36對6/36。",
+            "why": "公平兩骰共有36個有序配對，和2只有(1,1)，和7則有六個配對；底層結果數不同，所以兩個和的機率分別為1/36與6/36。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "轉盤60°、60°、120°、120°",
+            "solutionSteps": [
+              "前兩等、後兩等。"
+            ],
+            "answer": "前兩等、後兩等。",
+            "why": "均勻轉盤的機率與中心角成比例，兩個60度區各占1/6，兩個120度區各占1/3。只有角度相同的區域才等可能，區域數本身不是依據。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "亂數0至99映射50、30、20個值",
+            "solutionSteps": [
+              "輸出50%、30%、20%。"
+            ],
+            "answer": "輸出50%、30%、20%。",
+            "why": "0到99共有100個等可能整數，三個標籤分別承接50、30、20個值；各區間含端點計數後總和仍為100，因此輸出比例正是50%、30%、20%。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s015-lecture-r1",
+      "expectedContentSha256": "27932f51ea3b957a98c84a636dcd13414cf43daf3d520c29b3d3e4f5ac1d0d96",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "2紅3藍放回兩紅",
+            "solutionSteps": [
+              "(2/5)²=4/25。"
+            ],
+            "answer": "(2/5)²=4/25。",
+            "why": "放回後袋中恢復2紅3藍，所以兩次紅球的條件機率都為2/5；沿指定紅紅路徑相乘，得到4/25，而不是減少第二抽分母。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "2紅3藍不放回兩紅",
+            "solutionSteps": [
+              "(2/5)(1/4)=1/10。"
+            ],
+            "answer": "(2/5)(1/4)=1/10。",
+            "why": "不放回且首抽為紅後，只剩1紅、總數4，第二抽紅的條件機率改成1/4；乘上首抽2/5後為1/10，反映組成已更新。這正是不放回與放回模型的關鍵差異。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "3白2黑不放回一白一黑",
+            "solutionSteps": [
+              "3/10+3/10=3/5。"
+            ],
+            "answer": "3/10+3/10=3/5。",
+            "why": "一白一黑不限順序，必須納入白黑與黑白兩條互斥路徑；兩條各為3/10，相加得到3/5。只算其中一條會漏掉一半有利結果。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "A占0.7不良2%，B占0.3不良5%",
+            "solutionSteps": [
+              "總不良0.014+0.015=0.029。"
+            ],
+            "answer": "總不良0.014+0.015=0.029。",
+            "why": "不良品可能來自A或B兩條互斥來源，必須分別以來源比例乘條件不良率；0.014與0.015相加為0.029，不能直接平均2%與5%。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s016-lecture-r1",
+      "expectedContentSha256": "9a04739b58facb3d4c0a21f78234284992525fe1db18e42a6ca4061fbbb78c51",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "1到10抽介於3與7含端點",
+            "solutionSteps": [
+              "5/10=1/2。"
+            ],
+            "answer": "5/10=1/2。",
+            "why": "含端點使3、4、5、6、7共五個整數都屬事件，總樣本為1至10十個等可能數；所以經驗機率為5/10並約成1/2。端點若漏列，分子就會少算兩個。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "末兩碼至少一個0",
+            "solutionSteps": [
+              "1-81/100=19/100。"
+            ],
+            "answer": "1-81/100=19/100。",
+            "why": "至少一個0的餘事是兩位都非0，每位各有1至9九種，合計81種；從00至99的一百種扣除後剩19種，也避免把00重複計算。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "1到50被6整除但不被4整除",
+            "solutionSteps": [
+              "6、18、30、42，共4個。"
+            ],
+            "answer": "6、18、30、42，共4個。",
+            "why": "先列八個6倍數，再排除同時為4倍數的12、24、36、48；保留的6、18、30、42逐一符合兩條件，因此中獎號碼恰有四個。這也確認『但不』是先取交集條件再排除。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "來源機率0.5、0.3、0.2配延誤率0.1、0.2、0.4",
+            "solutionSteps": [
+              "總延誤0.19。"
+            ],
+            "answer": "總延誤0.19。",
+            "why": "每條路線的延誤貢獻是路線被選機率乘該路線條件延誤率；三條互斥路徑給0.05、0.06、0.08，相加才是全體延誤率0.19。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s017-lecture-r1",
+      "expectedContentSha256": "ec904cdc83a0a5b8b3009999e1d8c279bcd8c548ddad3e2a8ebc3ae68e9754ca",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "1/4得12，其餘0",
+            "solutionSteps": [
+              "期望3分。"
+            ],
+            "answer": "期望3分。",
+            "why": "得12分的結果以1/4權重計入，其餘零分不增加總和；加權平均為12×1/4+0×3/4=3分。這是長期平均，不是單局可保證的分數。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "入場6，1/5得20",
+            "solutionSteps": [
+              "獎金期望4，淨期望-2元。"
+            ],
+            "answer": "獎金期望4，淨期望-2元。",
+            "why": "獎金期望是20×1/5=4元，但每局固定支付6元；淨期望因此為4-6=-2元。負號描述大量重複下的平均損失方向，並不表示單局一定恰好損失兩元。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "骰6得10，其餘扣1",
+            "solutionSteps": [
+              "期望5/6點。"
+            ],
+            "answer": "期望5/6點。",
+            "why": "公平骰面等可能，但遊戲獎懲不對稱；出6貢獻10/6，其餘五面共貢獻-5/6，相加得5/6點，所以公平骰不必然形成公平遊戲。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "100次事件率1%",
+            "solutionSteps": [
+              "期望1次，但實際可不同。"
+            ],
+            "answer": "期望1次，但實際可不同。",
+            "why": "100×1%=1只給事件次數的期望值；實際一組100次可出現零次、一次或多次。機率描述長期平均傾向，不能改寫成固定次數保證。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u22-s018-lecture-r1",
+      "expectedContentSha256": "29a394eeb96b712911324795b06647a5f9eb5fc79bc0d2e01487b90cd0301c42",
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "40筆中累積30",
+            "solutionSteps": [
+              "經驗機率3/4。"
+            ],
+            "answer": "經驗機率3/4。",
+            "why": "累積30筆就是事件的有利觀測筆數，總資料40筆且每筆等機會；因此經驗機率為30/40=3/4。累積次數要除以總數才成比例。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "五數10、20、25、30、100",
+            "solutionSteps": [
+              "不能由五數算抽到100機率。"
+            ],
+            "answer": "不能由五數算抽到100機率。",
+            "why": "五數摘要只揭露最大值100，沒有總筆數也沒有100的重複次數；缺少分子與分母，就不能由盒狀圖精算抽到100的機率。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "只在自行車社抽通學方式",
+            "solutionSteps": [
+              "抽樣框偏差。"
+            ],
+            "answer": "抽樣框偏差。",
+            "why": "抽樣框只含自行車社，使非社員沒有入樣機會；這個程序即使在社內隨機，也不能代表全校各種通學方式，樣本數增加仍無法消除涵蓋偏差。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "先刪離群再稱無離群",
+            "solutionSteps": [
+              "需揭露原始結果與刪除理由。"
+            ],
+            "answer": "需揭露原始結果與刪除理由。",
+            "why": "先刪除依規則標出的離群值，清理後自然看不到離群；這只能描述處理後資料。完整報告必須保留原始標記、刪除理由與對結果的影響。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u22-spinner-weighted",
+      "set": {
+        "figureReview": {
+          "mathematicalAccuracy": "pass",
+          "mobileReadability": "pass",
+          "answerLeakage": "pass",
+          "manualVisualInspection": "pass",
+          "reviewNote": "人工渲染檢視 fig-u22-spinner-weighted：A、B、C中心角分別為60°、120°、180°且總和360°，固定指針與分界清楚；黑白顯示、窄幅縮放、替代文字與圖說皆能傳達B區機率1/3，無裁切、重疊或選項答案洩漏。",
+          "decision": "pass",
+          "reviewedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "figureId": "fig-u22-tree-without-replacement",
+      "set": {
+        "figureReview": {
+          "mathematicalAccuracy": "pass",
+          "mobileReadability": "pass",
+          "answerLeakage": "pass",
+          "manualVisualInspection": "pass",
+          "reviewNote": "人工渲染檢視 fig-u22-tree-without-replacement：3紅2藍不放回的第一層為3/5、2/5，第二層分母正確更新為4；紅藍與藍紅路徑各3/10、合計3/5，黑白線條與文字標籤均清楚，無裁切、重疊或答案洩漏。",
+          "decision": "pass",
+          "reviewedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "figureId": "fig-u22-stat-prob-combined",
+      "set": {
+        "figureReview": {
+          "mathematicalAccuracy": "pass",
+          "mobileReadability": "pass",
+          "answerLeakage": "pass",
+          "manualVisualInspection": "pass",
+          "reviewNote": "人工渲染檢視 fig-u22-stat-prob-combined：甲乙盒狀圖共用0至80分鐘尺度，五數位置與IQR、全距皆正確；下方200人比例條以甲80、乙120呈現2/5與3/5，母體推論警語、黑白列印及窄幅縮放均清楚，無裁切或重疊。",
+          "decision": "pass",
+          "reviewedAt": "2026-07-17"
+        }
+      }
+    }
+  ],
+  "textFiles": []
+}

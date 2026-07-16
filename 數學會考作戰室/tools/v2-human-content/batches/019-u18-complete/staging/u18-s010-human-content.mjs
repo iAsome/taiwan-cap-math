@@ -780,7 +780,7 @@ export const QUESTIONS = [
         "reason": "把差 3 份錯當 1 份。"
       }
     ],
-    "misconceptionTarget": "已知周長差却用總份數。",
+    "misconceptionTarget": "已知周長差卻用總份數。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "周長與差均為 cm。",
@@ -794,7 +794,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "635ff1069dd56b614a455cfb6ffc822fed912487d035915aca837ed5c272bc85"
+    "contentSha256": "4719c711a950248c53e1d095bbc715eaa5f1c6dea943f6d16a3d5ebfa56f9620"
   },
   {
     "questionId": "u18-s010-v009",
@@ -874,8 +874,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "地圖上一個相似湖泊轮廓的周長為 8.4 cm，比例尺為 1:25000。實際湖岸線約多少公裡？",
-    "text": "地圖上一個相似湖泊轮廓的周長為 8.4 cm，比例尺為 1:25000。實際湖岸線約多少公裡？",
+    "prompt": "地圖上一個相似湖泊輪廓的周長為 8.4 cm，比例尺為 1:25000。實際湖岸線約多少公里？",
+    "text": "地圖上一個相似湖泊輪廓的周長為 8.4 cm，比例尺為 1:25000。實際湖岸線約多少公里？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -901,7 +901,7 @@ export const QUESTIONS = [
       {
         "choice": "21 km",
         "truth": false,
-        "reason": "厘米轉公裡少除一個 10。"
+        "reason": "公分轉公里少除一個 10。"
       },
       {
         "choice": "525 km",
@@ -919,8 +919,8 @@ export const QUESTIONS = [
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "1 km=100000 cm；210000 cm=2.1 km。",
     "ambiguityAndBoundaryAudit": "忽略湖岸曲線測量誤差，按題給圖上周長計算約值。",
-    "difficultyReason": "比例尺、周長與厘米至公裡的多步換算。",
-    "literacyContextNecessity": "地圖轮廓周長需要以線性比例尺換成實際岸線長度，單位轉換是情境核心。",
+    "difficultyReason": "比例尺、周長與公分至公里的多步換算。",
+    "literacyContextNecessity": "地圖輪廓周長需要以線性比例尺換成實際岸線長度，單位轉換是情境核心。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -928,7 +928,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e7263a4d932f184bf9a80729622f9858fd48fb307624d945f46f8569d5cbd94f"
+    "contentSha256": "93321dc7a760eddb35dc9012c1a122af3aa5adb88d4f203de84101c2bdb68828"
   },
   {
     "questionId": "u18-s010-v011",
@@ -1008,8 +1008,8 @@ export const QUESTIONS = [
     "itemType": "multiple-choice",
     "type": "mc",
     "sourceScope": "TAIWAN_CAP_JUNIOR_HIGH_MATH",
-    "prompt": "兩款相似跑道模型的周長比為 4:7。大模型每绕一圈為 350 m，小模型運動員跑 12 圈。若比較總路程，大模型跑几圈才與小模型相同？",
-    "text": "兩款相似跑道模型的周長比為 4:7。大模型每绕一圈為 350 m，小模型運動員跑 12 圈。若比較總路程，大模型跑几圈才與小模型相同？",
+    "prompt": "兩款相似跑道模型的周長比為 4:7。大模型每绕一圈為 350 m，小模型運動員跑 12 圈。若比較總路程，大模型跑幾圈才與小模型相同？",
+    "text": "兩款相似跑道模型的周長比為 4:7。大模型每绕一圈為 350 m，小模型運動員跑 12 圈。若比較總路程，大模型跑幾圈才與小模型相同？",
     "givenConditions": [],
     "target": "求出唯一正確選項。",
     "choices": [
@@ -1048,11 +1048,11 @@ export const QUESTIONS = [
         "reason": "把 12×4/7 誤算為整數 3。"
       }
     ],
-    "misconceptionTarget": "圈數與單圈周長成同方向比例，未考虑總路程固定時圈數反比。",
+    "misconceptionTarget": "圈數與單圈周長成同方向比例，未考慮總路程固定時圈數反比。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "總路程以 m，圈數無單位；題目未要求整數圈。",
-    "ambiguityAndBoundaryAudit": "『跑几圈才與小模型相同』允许精確分數圈，没有向上取整要求。",
+    "ambiguityAndBoundaryAudit": "『跑幾圈才與小模型相同』允许精確分數圈，沒有向上取整要求。",
     "difficultyReason": "結合周長比與固定總路程的反比例思考。",
     "literacyContextNecessity": "训練計划比較的是總路程，不是單圈長度；圈數可為分數表示未完整跑完一圈。",
     "visualMode": "text-only",
@@ -1062,7 +1062,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "570aa6df20923dfdbddc7fb500ce85c4f5af8d3680e9fd34f5f20c7e61c4d2af"
+    "contentSha256": "68437bafea92fe3115815b28a5aa5f9a94ec6022a4791d1c2bc4e23a283d9bde"
   }
 ];
 
@@ -1412,7 +1412,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-perimeter",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "635ff1069dd56b614a455cfb6ffc822fed912487d035915aca837ed5c272bc85",
+    "contentSha256": "4719c711a950248c53e1d095bbc715eaa5f1c6dea943f6d16a3d5ebfa56f9620",
     "independentSolution": "設 PA=7k、PB=4k；3k=33，k=11，PB=44。",
     "derivedAnswer": "44 cm",
     "storedAnswer": "44 cm",
@@ -1432,7 +1432,7 @@ export const SEMANTIC_REVIEWS = [
     },
     "difficultyReason": "由周長差與相似比反求周長。",
     "literacyNecessityReview": "非素養級題目，不以生活背景作為難度來源。",
-    "reviewerNote": "重新由已知條件獨立計算：設 PA=7k、PB=4k；3k=33，k=11，PB=44。 四個選項逐一核對後，只有「44 cm」符合；主要排除點是「已知周長差却用總份數。」。",
+    "reviewerNote": "重新由已知條件獨立計算：設 PA=7k、PB=4k；3k=33，k=11，PB=44。 四個選項逐一核對後，只有「44 cm」符合；主要排除點是「已知周長差卻用總份數。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
@@ -1474,7 +1474,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-perimeter",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "e7263a4d932f184bf9a80729622f9858fd48fb307624d945f46f8569d5cbd94f",
+    "contentSha256": "93321dc7a760eddb35dc9012c1a122af3aa5adb88d4f203de84101c2bdb68828",
     "independentSolution": "1 cm 代表 250 m，因此 8.4 cm 代表 8.4×250=2100 m=2.1 km。",
     "derivedAnswer": "2.1 km",
     "storedAnswer": "2.1 km",
@@ -1492,8 +1492,8 @@ export const SEMANTIC_REVIEWS = [
       "units": "1 km=100000 cm；210000 cm=2.1 km。",
       "scope": "只使用國中會考範圍內的「相似比與周長比」概念，未要求高中延伸。"
     },
-    "difficultyReason": "比例尺、周長與厘米至公裡的多步換算。",
-    "literacyNecessityReview": "地圖轮廓周長需要以線性比例尺換成實際岸線長度，單位轉換是情境核心。",
+    "difficultyReason": "比例尺、周長與公分至公里的多步換算。",
+    "literacyNecessityReview": "地圖輪廓周長需要以線性比例尺換成實際岸線長度，單位轉換是情境核心。",
     "reviewerNote": "重新由已知條件獨立計算：1 cm 代表 250 m，因此 8.4 cm 代表 8.4×250=2100 m=2.1 km。 四個選項逐一核對後，只有「2.1 km」符合；主要排除點是「比例尺與長度單位換算混乱。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
@@ -1536,7 +1536,7 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similar-ratio-perimeter",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "570aa6df20923dfdbddc7fb500ce85c4f5af8d3680e9fd34f5f20c7e61c4d2af",
+    "contentSha256": "68437bafea92fe3115815b28a5aa5f9a94ec6022a4791d1c2bc4e23a283d9bde",
     "independentSolution": "總路程相同滿足 12×4份=n×7份，所以 n=48/7。",
     "derivedAnswer": "48/7 圈",
     "storedAnswer": "48/7 圈",
@@ -1550,13 +1550,13 @@ export const SEMANTIC_REVIEWS = [
     ],
     "ambiguityChecks": {
       "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "『跑几圈才與小模型相同』允许精確分數圈，没有向上取整要求。",
+      "boundary": "『跑幾圈才與小模型相同』允许精確分數圈，沒有向上取整要求。",
       "units": "總路程以 m，圈數無單位；題目未要求整數圈。",
       "scope": "只使用國中會考範圍內的「相似比與周長比」概念，未要求高中延伸。"
     },
     "difficultyReason": "結合周長比與固定總路程的反比例思考。",
     "literacyNecessityReview": "训練計划比較的是總路程，不是單圈長度；圈數可為分數表示未完整跑完一圈。",
-    "reviewerNote": "重新由已知條件獨立計算：總路程相同滿足 12×4份=n×7份，所以 n=48/7。 四個選項逐一核對後，只有「48/7 圈」符合；主要排除點是「圈數與單圈周長成同方向比例，未考虑總路程固定時圈數反比。」。",
+    "reviewerNote": "重新由已知條件獨立計算：總路程相同滿足 12×4份=n×7份，所以 n=48/7。 四個選項逐一核對後，只有「48/7 圈」符合；主要排除點是「圈數與單圈周長成同方向比例，未考慮總路程固定時圈數反比。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }

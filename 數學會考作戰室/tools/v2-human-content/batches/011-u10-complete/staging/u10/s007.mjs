@@ -42,10 +42,9 @@ export default {
       }
     ],
     "conceptNarrative": [
-      "括號表示整個多項式都乘同一個單項式。",
-      "每一項連同自己的符號一起相乘。",
-      "展開後若出現同類項，再做合併。",
-      "可用項數檢查：沒有抵消前，n 項通常會產生 n 個乘積項。"
+      "單項式乘多項式是分配律的直接應用，括號外的單項式必須乘到括號內每一項，而且每一項要連同原本正負號一起處理。若括號內有 n 項，在合併或抵消前應得到 n 個乘積項；用箭頭或逐項打勾能檢查漏乘。展開後再按文字與次數辨認同類項，只有同類項才能合併。",
+      "遇到負係數時可先只判斷各乘積的正負，再計算係數與文字。例如負二 x 乘負 x 會得到正二 x²；乘常數四只增加係數，不會多出另一個 x。把符號、係數、文字三部分分開能避免一次發生多種錯誤。",
+      "巢狀括號依由內向外的順序展開，每完成一層就整理一次。若外面另有多項式要加減，應先完成乘法再合併同類項；最高次項可能因係數互為相反數而抵消，所以不能只看未化簡前的最高次數。"
     ],
     "formalDefinitions": [
       {
@@ -98,27 +97,33 @@ export default {
     "workedExamples": [
       {
         "exampleId": "L1",
-        "prompt": "3x(2x²−5)。",
+        "prompt": "展開 3x(2x²-5)。",
         "solutionSteps": [
-          "3x·2x²=6x³；3x·(-5)=-15x。"
+          "3x·2x²=6x³。",
+          "3x·(-5)=-15x。"
         ],
-        "answer": "6x³-15x。"
+        "answer": "6x³-15x。",
+        "why": "括號內二項都必須乘三 x，常數負五也會留下 x 因數；兩個結果次數不同，不能再合併，因此保留三次項與一次項。"
       },
       {
         "exampleId": "L2",
-        "prompt": "−2a(3a²−a+4)。",
+        "prompt": "展開 -2a(3a²-a+4)。",
         "solutionSteps": [
-          "逐項得 -6a³、+2a²、-8a。"
+          "三個乘積依序為 -6a³、+2a²、-8a。",
+          "依次數遞減排列。"
         ],
-        "answer": "-6a³+2a²-8a。"
+        "answer": "-6a³+2a²-8a。",
+        "why": "括號外負號與每項符號共同決定正負，特別是負二 a 乘負 a 會變正；三項的次數各異，逐項保留才能避免錯誤合併。"
       },
       {
         "exampleId": "L3",
-        "prompt": "x(x+2)+3x。",
+        "prompt": "化簡 x(x+2)+3x。",
         "solutionSteps": [
-          "先展開 x²+2x，再合併 3x。"
+          "先展開為 x²+2x+3x。",
+          "合併兩個一次同類項。"
         ],
-        "answer": "x²+5x。"
+        "answer": "x²+5x。",
+        "why": "分配律必須先完成，外加的三 x 並不在括號乘法中；展開後二 x 與三 x 才是同類項，可以合併，而 x² 必須獨立保留。"
       }
     ],
     "commonMistakes": [
@@ -136,12 +141,17 @@ export default {
         "mistake": "把 2x·3 寫成 6x²",
         "why": "常數 3 沒有 x",
         "correction": "文字指數只加實際存在的 0。"
+      },
+      {
+        "mistake": "展開後立刻把不同次數的項相加",
+        "why": "只看到相同文字而忽略指數不同",
+        "correction": "同時比較文字種類與每個指數，完全一致才合併係數。"
       }
     ],
     "selfCheck": [
-      "我是否能能把括號外單項式逐項相乘？",
-      "我是否能能處理括號內負項與缺項？",
-      "我是否能能先分配再合併所得同類項？",
+      "我是否能把括號外單項式逐項相乘？",
+      "我是否能處理括號內負項與缺項？",
+      "我是否能先分配再合併所得同類項？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -192,7 +202,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "c030d5c003a33f5f87429cf6edf590c20b937f43657b879d03438cf9594024e7"
+    "contentSha256": "de85bd7e1623ff7b6eb5edee5795ac6b34829024c094e76a7e6584bdfa72d33b"
   },
   "mcQuestions": [
     {
@@ -222,9 +232,11 @@ export default {
         "derivedChoice": "3x²+12x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "外因數乘到括號內兩項。",
+      "explanation": "外因數乘到括號內兩項。 分配律要求括號外三 x 同時乘括號內 x 與四，兩個乘積分別是三 x 二次方與十二 x；常數四也必須被乘且仍帶有一個 x。",
       "steps": [
-        "3x·x=3x²，3x·4=12x。"
+        "3x·x=3x²，3x·4=12x。",
+        "分別計算 3x·x 與 3x·4。",
+        "寫成 3x²+12x，確認兩項不可合併。"
       ],
       "optionAnalysis": [
         {
@@ -248,7 +260,7 @@ export default {
           "reason": "把係數相加。"
         }
       ],
-      "misconceptionTarget": "只乘部分因子",
+      "misconceptionTarget": "只乘部分因子 只把三 x 乘第一項，或把三 x 乘四寫成十二。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -263,7 +275,7 @@ export default {
       "semanticReviewRef": "u10-s007-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f17e7fb790e0a61a0a4f0b8d765ee502de4f4e93a59a917f04348efbde0cafcc"
+      "contentSha256": "1c333c8d0f732dad03db780d04a2ac49c4af6914907602acc094ba6c74c40b1d"
     },
     {
       "questionId": "u10-s007-v002",
@@ -292,10 +304,11 @@ export default {
         "derivedChoice": "-6a²+10a",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "負外因數逐項分配。",
+      "explanation": "負外因數逐項分配。 負二 a 要連同符號逐項分配，乘三 a 得負六 a 二次方，乘負五則負負得正十 a；兩項次數不同，不能再合併。",
       "steps": [
         "-2a·3a=-6a²。",
-        "-2a·(-5)=+10a。"
+        "-2a·(-5)=+10a。",
+        "保留兩個不同次數項，整理為 -6a²+10a。"
       ],
       "optionAnalysis": [
         {
@@ -319,7 +332,7 @@ export default {
           "reason": "係數乘法錯。"
         }
       ],
-      "misconceptionTarget": "負乘負項符號錯",
+      "misconceptionTarget": "負乘負項符號錯 第二項仍寫負十 a，或把兩項誤合併成單一項。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -334,7 +347,7 @@ export default {
       "semanticReviewRef": "u10-s007-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4a8b4fb56079f86efed03b1a0b84394bf74ac5222d02ec2c5a5148a3917381c0"
+      "contentSha256": "c1428d06a92f3cb8b49461f23d97726eab30463ad130819ac5db14feb726ca84"
     },
     {
       "questionId": "u10-s007-v003",
@@ -363,9 +376,11 @@ export default {
         "derivedChoice": "2x³-x²+3x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "每一項的 x 指數增加 1。",
+      "explanation": "每一項的 x 指數增加 1。 括號外 x 分別乘二 x 二次方、負 x 與三，得到二 x 三次方、負 x 二次方與三 x；三項都有被分配且沒有同類項可合併。",
       "steps": [
-        "x 分別乘三項得 2x³、-x²、3x。"
+        "x 分別乘三項得 2x³、-x²、3x。",
+        "逐項保留符號寫出三個乘積。",
+        "依次數遞減排列成 2x³-x²+3x。"
       ],
       "optionAnalysis": [
         {
@@ -389,7 +404,7 @@ export default {
           "reason": "2x³-x²+3x 正確。"
         }
       ],
-      "misconceptionTarget": "分配時漏乘某項",
+      "misconceptionTarget": "分配時漏乘某項 漏乘中間負項或常數項，導致項數與次數錯誤。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -404,7 +419,7 @@ export default {
       "semanticReviewRef": "u10-s007-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4d60333fc057701941bf1ce2de7fc81c5c8cb6a3775b5a5aa7e459e46c4d11bc"
+      "contentSha256": "dd66d4845193c79ef13955760227adfb4dc34be03ae0b262419d159daabf4750"
     },
     {
       "questionId": "u10-s007-v004",
@@ -433,9 +448,11 @@ export default {
         "derivedChoice": "6x²+2x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "展開後才合併同類項。",
+      "explanation": "展開後才合併同類項。 先用分配律把二 x 乘入括號，得到六 x 二次方減二 x；外面的正四 x 再與負二 x 合併為正二 x，二次項不能與一次項合併。",
       "steps": [
-        "先展開 6x²-2x，再合併 +4x，得 6x²+2x。"
+        "先展開 6x²-2x，再合併 +4x，得 6x²+2x。",
+        "展開得到 6x²-2x+4x。",
+        "合併同類的一次項為 2x，得 6x²+2x。"
       ],
       "optionAnalysis": [
         {
@@ -459,7 +476,7 @@ export default {
           "reason": "漏掉 x。"
         }
       ],
-      "misconceptionTarget": "展開後合併錯誤",
+      "misconceptionTarget": "展開後合併錯誤 把四 x 也乘進括號，或把六 x 二次方與一次項合併。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -474,7 +491,7 @@ export default {
       "semanticReviewRef": "u10-s007-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d40d0af2f2897aa7a429591eb74e6b225b6913029efb72be9f47f6807bd3062b"
+      "contentSha256": "e267bd3377f8cc8b488d84f3177ade13fa207d7b2b085ecac35b889370c3c32d"
     },
     {
       "questionId": "u10-s007-v005",
@@ -503,9 +520,11 @@ export default {
         "derivedChoice": "-6y³-3y²+12y",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "負因數乘正項為負，乘 -4 為正。",
+      "explanation": "負因數乘正項為負，乘 -4 為正。 負三 y 逐項乘二 y 二次方、正 y 與負四，符號依序為負、負、正，結果次數依序為三、二、一；負數乘負四產生正十二 y。",
       "steps": [
-        "逐項得 -6y³、-3y²、+12y。"
+        "逐項得 -6y³、-3y²、+12y。",
+        "計算三個乘積並保留各自符號。",
+        "整理為 -6y³-3y²+12y。"
       ],
       "optionAnalysis": [
         {
@@ -529,7 +548,7 @@ export default {
           "reason": "末項符號錯。"
         }
       ],
-      "misconceptionTarget": "多項負號分配錯",
+      "misconceptionTarget": "多項負號分配錯 漏掉常數負四的負號，將最後一項錯寫成負十二 y。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -544,7 +563,7 @@ export default {
       "semanticReviewRef": "u10-s007-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c6b7a3f12a187e552b7989cdebc333adaf72f64b7e3838be78d489d2c20786fa"
+      "contentSha256": "64c71b321afbed0e5751b9b931164d796f02093d002a71198756d40228fbc5eb"
     },
     {
       "questionId": "u10-s007-v006",
@@ -573,10 +592,11 @@ export default {
         "derivedChoice": "4",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "兩項係數同時驗證。",
+      "explanation": "兩項係數同時驗證。 展開左式為二 k x 二次方加三 k x；比較二次項係數得二 k 等於八，所以 k 為四，再以一次項三乘四等於十二確認同一 k 同時成立。",
       "steps": [
         "比較首項係數 2k=8，得 k=4。",
-        "再驗 3k=12 也成立。"
+        "再驗 3k=12 也成立。",
+        "代回 k=4，兩項係數分別為八與十二。"
       ],
       "optionAnalysis": [
         {
@@ -600,7 +620,7 @@ export default {
           "reason": "展開係數過大。"
         }
       ],
-      "misconceptionTarget": "只比較一項或係數求解錯",
+      "misconceptionTarget": "只比較一項或係數求解錯 只比較其中一項後不驗算，或把係數 k 漏乘括號內三。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -615,7 +635,7 @@ export default {
       "semanticReviewRef": "u10-s007-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3b7de8697c3cb5a8d1ae9d0fa9766eeccf8ca1f5be5ce04cf0e8146d22fcc018"
+      "contentSha256": "1f142c155429dabd8eaf4821ae40115ef177a4dee3576870b37d36a783a24b4c"
     },
     {
       "questionId": "u10-s007-v007",
@@ -644,10 +664,12 @@ export default {
         "derivedChoice": "2x³-6x²+8x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "由內向外兩次分配。",
+      "explanation": "由內向外兩次分配。 巢狀括號由內向外展開，內層 x 乘 x 減三得到 x 二次方減三 x，再保留加四；外層二 x 最後乘遍三項，得到三個不同次數項。",
       "steps": [
         "內層 x(x-3)+4=x²-3x+4。",
-        "再乘 2x 得 2x³-6x²+8x。"
+        "再乘 2x 得 2x³-6x²+8x。",
+        "將 2x 分配到 x²、-3x、4。",
+        "得到 2x³-6x²+8x，三項不可再合併。"
       ],
       "optionAnalysis": [
         {
@@ -671,7 +693,7 @@ export default {
           "reason": "錯誤合併不同次方。"
         }
       ],
-      "misconceptionTarget": "巢狀分配漏步驟",
+      "misconceptionTarget": "巢狀分配漏步驟 只把外層二 x 乘內括號第一項，或漏乘常數四。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -686,7 +708,7 @@ export default {
       "semanticReviewRef": "u10-s007-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "357b4e86f39367e75332caa858e0226faa1a7f2b422956340dc44fa506680bb2"
+      "contentSha256": "7d993bb7d5e9ca4972812f4ca11990da4efb6c617a6c84ac96f41b979526160c"
     },
     {
       "questionId": "u10-s007-v008",
@@ -715,9 +737,11 @@ export default {
         "derivedChoice": "3x²-x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "分配後注意最高次項抵消。",
+      "explanation": "分配後注意最高次項抵消。 負 x 乘入括號後三項符號為負、正、負；再加原式的正二 x 三次方，兩個三次項恰好抵消，只留下三 x 二次方減 x。",
       "steps": [
-        "展開為 -2x³+3x²-x，再加 2x³，三次項抵消，得 3x²-x。"
+        "展開為 -2x³+3x²-x，再加 2x³，三次項抵消，得 3x²-x。",
+        "寫成 -2x³+3x²-x+2x³。",
+        "合併同類項，三次項為零，得 3x²-x。"
       ],
       "optionAnalysis": [
         {
@@ -741,7 +765,7 @@ export default {
           "reason": "3x²-x 正確。"
         }
       ],
-      "misconceptionTarget": "未看到分配後高次項抵消",
+      "misconceptionTarget": "未看到分配後高次項抵消 括號前負號未分配到每一項，或抵消後仍保留三次項。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -756,7 +780,7 @@ export default {
       "semanticReviewRef": "u10-s007-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c338398ce8f540d49efc3afa5c877a3aaaadf0bbaeec237ea992974c67aa7bb8"
+      "contentSha256": "250858dc677299148115c8f02e3f57f9cc83190df6c31f5662b8189d94fa0dc0"
     },
     {
       "questionId": "u10-s007-v009",
@@ -785,10 +809,11 @@ export default {
         "derivedChoice": "-5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先由三次係數求 a，再讀二次係數。",
+      "explanation": "先由三次係數求 a，再讀二次係數。 展開時二 x 與 a x 二次方相乘產生二 a x 三次方，負一產生負 a x 二次方；由三次項係數十得 a 為五，因此二次項係數是負五。",
       "steps": [
         "展開為 2ax³-ax²。",
-        "2a=10 得 a=5，所以 x² 項係數 -a=-5。"
+        "2a=10 得 a=5，所以 x² 項係數 -a=-5。",
+        "把 a=5 代入 -a，得到 x² 項係數 -5。"
       ],
       "optionAnalysis": [
         {
@@ -812,7 +837,7 @@ export default {
           "reason": "-5 正確。"
         }
       ],
-      "misconceptionTarget": "參數求出後未代回另一項",
+      "misconceptionTarget": "參數求出後未代回另一項 求得 a 為五後忽略二次項前的負號，回答正五。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -827,7 +852,7 @@ export default {
       "semanticReviewRef": "u10-s007-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "881b2ed22a3d4fd1941fcbfe0a61622ad7c4800d7dd718a535584fb686fde092"
+      "contentSha256": "0459225b1e6744621992e19ac6ed7b802536879d3c06b8abc148e97ae45212ac"
     },
     {
       "questionId": "u10-s007-v010",
@@ -856,9 +881,11 @@ export default {
         "derivedChoice": "3x²+6x 平方公尺",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "長乘寬，單項式分配到寬的兩部分。",
+      "explanation": "長乘寬，單項式分配到寬的兩部分。 長方形面積為長乘寬，三 x 乘 x 加二時必須分別乘 x 與二，得到三 x 二次方加六 x；面積答案使用平方公尺。",
       "steps": [
-        "面積=3x(x+2)=3x²+6x。"
+        "面積=3x(x+2)=3x²+6x。",
+        "列出 3x(x+2)。",
+        "分配得 3x²+6x，並標示平方公尺。"
       ],
       "optionAnalysis": [
         {
@@ -882,7 +909,7 @@ export default {
           "reason": "係數加法錯。"
         }
       ],
-      "misconceptionTarget": "面積式漏分配",
+      "misconceptionTarget": "面積式漏分配 只將三 x 乘 x，或把二直接加成常數二。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "公尺×公尺=平方公尺。",
@@ -897,7 +924,7 @@ export default {
       "semanticReviewRef": "u10-s007-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "03b5bbb325c8803f2f7684b5e35e9f74344a70154445447a8bae10998e9e96e8"
+      "contentSha256": "43f205923cbc5af1b32a245543695fbafdcb057bfb567b67c9630e0b1920756d"
     },
     {
       "questionId": "u10-s007-v011",
@@ -926,9 +953,11 @@ export default {
         "derivedChoice": "2x²+35x 元",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "「每張價格×張數」後再加服務費。",
+      "explanation": "「每張價格×張數」後再加服務費。 票款由單價 x 乘張數二 x 加五，展開為二 x 二次方加五 x；服務費三十 x 是額外同類的一次項，與五 x 合併為三十五 x。",
       "steps": [
-        "票款=x(2x+5)=2x²+5x，再加 30x 得 2x²+35x。"
+        "票款=x(2x+5)=2x²+5x，再加 30x 得 2x²+35x。",
+        "先求票款 2x²+5x。",
+        "再加 30x，合併為 2x²+35x 元。"
       ],
       "optionAnalysis": [
         {
@@ -952,7 +981,7 @@ export default {
           "reason": "常數 5 未乘 x。"
         }
       ],
-      "misconceptionTarget": "每單位價格與數量關係建模錯",
+      "misconceptionTarget": "每單位價格與數量關係建模錯 把服務費也乘進票數，或漏將五 x 與三十 x 合併。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "x 元/張乘張數得元；30x 亦為元。",
@@ -967,7 +996,7 @@ export default {
       "semanticReviewRef": "u10-s007-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d2b01677b105d0dbca28376bda553e2ca1cbe31363ca4335956d645fe5080011"
+      "contentSha256": "a962f41e5f3f5669bd91bacbd6df5e92f68f41b0ca46890e6c112a0c3cea81eb"
     },
     {
       "questionId": "u10-s007-v012",
@@ -996,9 +1025,11 @@ export default {
         "derivedChoice": "4x²-4x 個",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "每排座位乘排數。",
+      "explanation": "每排座位乘排數。 總座位數是一排四 x 個乘排數 x 減一，分配後四 x 乘 x 得四 x 二次方，四 x 乘負一得負四 x；排數須為可行的正整數。",
       "steps": [
-        "總座位=4x(x-1)=4x²-4x。"
+        "總座位=4x(x-1)=4x²-4x。",
+        "列出 4x(x-1)。",
+        "分配並整理為 4x²-4x 個。"
       ],
       "optionAnalysis": [
         {
@@ -1022,7 +1053,7 @@ export default {
           "reason": "負號錯。"
         }
       ],
-      "misconceptionTarget": "忽略 x-1 的整體乘法",
+      "misconceptionTarget": "忽略 x-1 的整體乘法 把每排與排數相加，或漏乘括號中的負一。",
       "prerequisiteCheck": "使用先備技能：monomial-multiply；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "座位/排乘排數得到座位。",
@@ -1037,7 +1068,7 @@ export default {
       "semanticReviewRef": "u10-s007-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8633d0b951d7b8bfd0c9de346e6d424cb82bf7fac04355a841c35501c9657f6f"
+      "contentSha256": "d11161e65eef153a7c3768dc0319f7f852d5152cfddaf5dc238f13b781df9b9e"
     }
   ],
   "constructedResponses": [
@@ -1061,7 +1092,9 @@ export default {
         "-2x·3x²=-6x³。",
         "-2x·(-x)=+2x²。",
         "-2x·4=-8x。",
-        "結果 -6x³+2x²-8x。"
+        "結果 -6x³+2x²-8x。",
+        "三個乘積的次數依序為三、二、一，彼此不是同類項，故不能再合併；把 x=1 代入原式得 -2(3-1+4)=-12，展開式也得 -6+2-8=-12。",
+        "代入檢查證明展開前後等值，負號與常數項均無遺漏。"
       ],
       "alternativeMethods": [
         "可用三格分配表逐格相乘。"
@@ -1097,7 +1130,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫正確結果無展開過程，最高 2 分。",
       "commonErrorTargets": [
-        "用分配律乘遍每一項並整理"
+        "括號前負二 x 只乘第一項，漏乘負 x 或常數四。",
+        "計算負二 x 乘負 x 時仍寫負二 x²，沒有使用負負得正。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1108,7 +1142,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7505c24271a88bc9503524c7786bf037c06244a057bd9f2790a6b4c17ef3a859"
+      "contentSha256": "e33ca39f0f021408df8b315048834637a9c397bf8ce10f6f888835d8061bd6dc"
     },
     {
       "questionId": "u10-s007-cr002",
@@ -1130,7 +1164,8 @@ export default {
       "standardSolution": [
         "內層 x(x-2)+5=x²-2x+5。",
         "乘 3x 得 3x³-6x²+15x。",
-        "再減 3x³，最高次項抵消，結果 -6x²+15x。"
+        "再減 3x³，最高次項抵消，結果 -6x²+15x。",
+        "最高次項三 x 三次方在前半展開式與後面的減三 x 三次方係數互為相反數，所以完全抵消，化簡後最高次數由三降為二；代入 x=1 時兩式皆為九。"
       ],
       "alternativeMethods": [
         "可先把 3x³ 與外層第一乘積預先配對抵消，再算其餘項。"
@@ -1165,7 +1200,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫 -6x²+15x，最高 2 分。",
       "commonErrorTargets": [
-        "用分配律乘遍每一項並整理"
+        "外層三 x 沒有乘到內層常數五，漏掉十五 x。",
+        "減三 x³ 時只減係數或錯減二次項，未辨認同類的三次項恰好抵消。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1176,14 +1212,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "31bd615b5d8c742218a1564235a615065d007f16a2d71597450f3473730e2510"
+      "contentSha256": "a6e6a36a83161ffcb962dac71ab92aba23a3bcb9f9afab3ad9e0fca11206d041"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s007-v001-review",
       "questionId": "u10-s007-v001",
-      "questionContentSha256": "f17e7fb790e0a61a0a4f0b8d765ee502de4f4e93a59a917f04348efbde0cafcc",
+      "questionContentSha256": "1c333c8d0f732dad03db780d04a2ac49c4af6914907602acc094ba6c74c40b1d",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "3x·x=3x²，3x·4=12x。",
@@ -1212,12 +1248,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 3x(x+4)。」獨立重算：3x·x=3x²，3x·4=12x。 正解「3x²+12x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "ad39ae28dc853dde58276c9061d8644d82ad9dd9ef0177f1bdffba1a21e0d92b"
+      "contentSha256": "ef8af98bf6b8eab83986335258479549d0a669867e08355bbdfc6a691ff5b948"
     },
     {
       "reviewId": "u10-s007-v002-review",
       "questionId": "u10-s007-v002",
-      "questionContentSha256": "4a8b4fb56079f86efed03b1a0b84394bf74ac5222d02ec2c5a5148a3917381c0",
+      "questionContentSha256": "c1428d06a92f3cb8b49461f23d97726eab30463ad130819ac5db14feb726ca84",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "-2a·3a=-6a²；-2a·(-5)=+10a。",
@@ -1246,12 +1282,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 -2a(3a-5)。」獨立重算：-2a·3a=-6a²；-2a·(-5)=+10a。 正解「-6a²+10a」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "ce200d6b2234c5159a9e0ae1e2cae1d7a027fd0389a03d82fe5957abd8646a5c"
+      "contentSha256": "9e5e012a60aff4d52bc9fe48d45160ef65f5700ae383dccf27efd4456abf0cc4"
     },
     {
       "reviewId": "u10-s007-v003-review",
       "questionId": "u10-s007-v003",
-      "questionContentSha256": "4d60333fc057701941bf1ce2de7fc81c5c8cb6a3775b5a5aa7e459e46c4d11bc",
+      "questionContentSha256": "dd66d4845193c79ef13955760227adfb4dc34be03ae0b262419d159daabf4750",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "x 分別乘三項得 2x³、-x²、3x。",
@@ -1280,12 +1316,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 x(2x²-x+3)。」獨立重算：x 分別乘三項得 2x³、-x²、3x。 正解「2x³-x²+3x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "2c49ddb82b9d110390d50d3507321ea512dd27b13d5770c47a4aa3b3c3bd18e0"
+      "contentSha256": "a79c43de0e35d54a962d0dc5a5b44d36e62b8a90b2bb2c19fffa8871135e9357"
     },
     {
       "reviewId": "u10-s007-v004-review",
       "questionId": "u10-s007-v004",
-      "questionContentSha256": "d40d0af2f2897aa7a429591eb74e6b225b6913029efb72be9f47f6807bd3062b",
+      "questionContentSha256": "e267bd3377f8cc8b488d84f3177ade13fa207d7b2b085ecac35b889370c3c32d",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "先展開 6x²-2x，再合併 +4x，得 6x²+2x。",
@@ -1314,12 +1350,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 2x(3x-1)+4x。」獨立重算：先展開 6x²-2x，再合併 +4x，得 6x²+2x。 正解「6x²+2x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "7d389248fa8f4badb269f5969276c42b49d699361828ece4f05e61a8327705fe"
+      "contentSha256": "16f203e4782b177321ec75070456515fa2edc0187e157b5bb9015deb00273373"
     },
     {
       "reviewId": "u10-s007-v005-review",
       "questionId": "u10-s007-v005",
-      "questionContentSha256": "c6b7a3f12a187e552b7989cdebc333adaf72f64b7e3838be78d489d2c20786fa",
+      "questionContentSha256": "64c71b321afbed0e5751b9b931164d796f02093d002a71198756d40228fbc5eb",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "逐項得 -6y³、-3y²、+12y。",
@@ -1348,12 +1384,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「展開 -3y(2y²+y-4)。」獨立重算：逐項得 -6y³、-3y²、+12y。 正解「-6y³-3y²+12y」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "29cd6a0f019e15ea1a3dbb180d9e8a99b750ec8063adb4eb83c8ecc9ecef00aa"
+      "contentSha256": "851df44b3aab06fdd9691bc4e3d4fece5a5bcd40c825cf7525ee15889a7196b9"
     },
     {
       "reviewId": "u10-s007-v006-review",
       "questionId": "u10-s007-v006",
-      "questionContentSha256": "3b7de8697c3cb5a8d1ae9d0fa9766eeccf8ca1f5be5ce04cf0e8146d22fcc018",
+      "questionContentSha256": "1f142c155429dabd8eaf4821ae40115ef177a4dee3576870b37d36a783a24b4c",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "比較首項係數 2k=8，得 k=4；再驗 3k=12 也成立。",
@@ -1382,12 +1418,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 kx(2x+3)=8x²+12x，則 k 為何？」獨立重算：比較首項係數 2k=8，得 k=4；再驗 3k=12 也成立。 正解「4」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "e53dd73592b6113c84f6fe84ca7c079795c1a2a2bf13a7808989f01a710cc922"
+      "contentSha256": "2ccc220ce3bf2cb989bf99d36a0e6b3cae26c4fab9b4badcb0014b4366e9caab"
     },
     {
       "reviewId": "u10-s007-v007-review",
       "questionId": "u10-s007-v007",
-      "questionContentSha256": "357b4e86f39367e75332caa858e0226faa1a7f2b422956340dc44fa506680bb2",
+      "questionContentSha256": "7d993bb7d5e9ca4972812f4ca11990da4efb6c617a6c84ac96f41b979526160c",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "內層 x(x-3)+4=x²-3x+4；再乘 2x 得 2x³-6x²+8x。",
@@ -1416,12 +1452,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 2x[x(x-3)+4]。」獨立重算：內層 x(x-3)+4=x²-3x+4；再乘 2x 得 2x³-6x²+8x。 正解「2x³-6x²+8x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "34e2ea14961a2d6a4e647cbd446bec1d9402f3d8b3b0aaa258d7a86a31cdd382"
+      "contentSha256": "b6cf2f2acafb028131387423d2eedb61a430a8aedcfea1b7fb35f1f78e65ddca"
     },
     {
       "reviewId": "u10-s007-v008-review",
       "questionId": "u10-s007-v008",
-      "questionContentSha256": "c338398ce8f540d49efc3afa5c877a3aaaadf0bbaeec237ea992974c67aa7bb8",
+      "questionContentSha256": "250858dc677299148115c8f02e3f57f9cc83190df6c31f5662b8189d94fa0dc0",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "展開為 -2x³+3x²-x，再加 2x³，三次項抵消，得 3x²-x。",
@@ -1450,12 +1486,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 -x(2x²-3x+1)+2x³。」獨立重算：展開為 -2x³+3x²-x，再加 2x³，三次項抵消，得 3x²-x。 正解「3x²-x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "60f72109ceb291e87780e6f14d468706bec4f3790838190e00696d15f6de9bce"
+      "contentSha256": "f34961eb40c7a35a91706e46f089be5f136fd42217c50d94bfb2f006a7fe8b12"
     },
     {
       "reviewId": "u10-s007-v009-review",
       "questionId": "u10-s007-v009",
-      "questionContentSha256": "881b2ed22a3d4fd1941fcbfe0a61622ad7c4800d7dd718a535584fb686fde092",
+      "questionContentSha256": "0459225b1e6744621992e19ac6ed7b802536879d3c06b8abc148e97ae45212ac",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "展開為 2ax³-ax²。2a=10 得 a=5，所以 x² 項係數 -a=-5。",
@@ -1484,12 +1520,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 ax²(2x-1) 的展開式中 x³ 項係數為 10，則 x² 項係數為何？」獨立重算：展開為 2ax³-ax²。2a=10 得 a=5，所以 x² 項係數 -a=-5。 正解「-5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "32fa087acd3ace5de1841aa110dd159fa32c8c9747ae9905609be0b8e7174628"
+      "contentSha256": "6087093ef796ec0b5d6f210c897a097d20594cfd3a7f0a6918819b7e326e2019"
     },
     {
       "reviewId": "u10-s007-v010-review",
       "questionId": "u10-s007-v010",
-      "questionContentSha256": "03b5bbb325c8803f2f7684b5e35e9f74344a70154445447a8bae10998e9e96e8",
+      "questionContentSha256": "43f205923cbc5af1b32a245543695fbafdcb057bfb567b67c9630e0b1920756d",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "面積=3x(x+2)=3x²+6x。",
@@ -1518,12 +1554,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「長方形長 3x 公尺、寬 (x+2) 公尺，面積為何？」獨立重算：面積=3x(x+2)=3x²+6x。 正解「3x²+6x 平方公尺」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "80a27b4a572857224e985b9ad1ae6a09d70843aecf996ac22ffbcd3a74cb2e40"
+      "contentSha256": "f59092b1068f505b1a5b5517b00d4e42badfcd902682896e6b2f6a08508a2b7a"
     },
     {
       "reviewId": "u10-s007-v011-review",
       "questionId": "u10-s007-v011",
-      "questionContentSha256": "d2b01677b105d0dbca28376bda553e2ca1cbe31363ca4335956d645fe5080011",
+      "questionContentSha256": "a962f41e5f3f5669bd91bacbd6df5e92f68f41b0ca46890e6c112a0c3cea81eb",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "票款=x(2x+5)=2x²+5x，再加 30x 得 2x²+35x。",
@@ -1552,12 +1588,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「每張票 x 元，團體方案買 (2x+5) 張並另收 30x 元服務費。總費用為何？」獨立重算：票款=x(2x+5)=2x²+5x，再加 30x 得 2x²+35x。 正解「2x²+35x 元」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "eea487e0c9bdb8b0f14920f92c2f92bc91ce74f6c630872a68c8b4d9b8178b6d"
+      "contentSha256": "b96a00f4d64e2656499aa930e5611d80e6e23e334d86b629528402443b198b60"
     },
     {
       "reviewId": "u10-s007-v012-review",
       "questionId": "u10-s007-v012",
-      "questionContentSha256": "8633d0b951d7b8bfd0c9de346e6d424cb82bf7fac04355a841c35501c9657f6f",
+      "questionContentSha256": "d11161e65eef153a7c3768dc0319f7f852d5152cfddaf5dc238f13b781df9b9e",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "總座位=4x(x-1)=4x²-4x。",
@@ -1586,7 +1622,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一排有 4x 個座位，共有 (x-1) 排。總座位數為何？」獨立重算：總座位=4x(x-1)=4x²-4x。 正解「4x²-4x 個」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "d2a705e6155e83038d8572c3410c90da892b8dac068384465a23f2ca6110af9c"
+      "contentSha256": "4ace9cde23326d3fab9313b427716df6a177daa2bf41becbfc851545598e0f26"
     }
   ],
   "drawingSpecs": []

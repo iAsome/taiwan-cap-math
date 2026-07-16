@@ -50,10 +50,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "解方程式的核心不是背移項，而是逐步使用等量公理。",
-    "通常先消去加減的常數，再除以未知數係數。",
-    "未知數在兩邊時，先選一邊集中未知數項，另一邊集中常數。",
-    "每一步保持精確，不因答案是負數或分數就擅自改值。"
+    "解一元一次方程式的目標是找出代入後使左右兩邊相等的未知數值。每一步都以等量公理產生等價方程式，而不是把項目無理由搬動。",
+    "只有一個加減常數時，用相反運算消去；未知數帶有非零係數時，再把兩邊同除以該係數。完成後應看到 x 單獨等於一個確定數。",
+    "未知數出現在兩邊時，可先把未知數項集中到一側，再把常數集中到另一側。選擇能讓係數較簡單的方向，可降低負號與算術錯誤。",
+    "小數、負數或情境題仍遵循同一程序。答案可以是負數、分數或小數，不能為了配合預期而改值；代回原方程式是最後的必要檢查。"
   ],
   "formalDefinitions": [
     {
@@ -90,99 +90,102 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "先化簡等式左右兩邊。",
-      "check": "是否有同類項可合併？"
+      "instruction": "先化簡等式左右兩邊，標出所有未知數項與常數項。",
+      "check": "括號已正確展開，同類項已在各自一邊合併。"
     },
     {
       "step": 2,
-      "instruction": "把未知數項集中一邊。",
-      "check": "兩邊是否做同一加減？"
+      "instruction": "用兩邊同加減，把未知數項集中在選定的一側。",
+      "check": "每個移動都能還原成完整等量操作，沒有漏項。"
     },
     {
       "step": 3,
-      "instruction": "把常數集中另一邊。",
-      "check": "負號是否正確？"
+      "instruction": "再用兩邊同加減，把常數項集中到另一側。",
+      "check": "負常數與負號都連同原項一起處理。"
     },
     {
       "step": 4,
-      "instruction": "除以未知數係數。",
-      "check": "係數是否非零？"
+      "instruction": "兩邊同除以未知數的非零係數，得到 x=數。",
+      "check": "中間值不是最終答案，完整係數含正負號。"
     },
     {
       "step": 5,
-      "instruction": "代回原方程式。",
-      "check": "左右值是否完全相同？"
+      "instruction": "將解代回原方程式左右兩邊重新計算。",
+      "check": "左右結果完全相同，情境答案附有正確單位。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "解x-13=8。",
+      "exampleId": "u03-s004-example-a",
+      "prompt": "解方程式 x-14=9。",
       "solutionSteps": [
-        "兩邊同加13。",
-        "x=21。"
+        "兩邊同加 14。",
+        "得到 x=23，代回二十三減十四為九。"
       ],
-      "answer": "21。"
+      "answer": "x=23。",
+      "why": "左邊減十四要用加十四抵消，右邊九也同步加十四得到二十三。代回後原式成立，顯示不是把九再減十四。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "解-5x=35。",
+      "exampleId": "u03-s004-example-b",
+      "prompt": "解方程式 -6x=42。",
       "solutionSteps": [
-        "兩邊同除以-5。",
-        "x=-7。"
+        "兩邊同除以 -6。",
+        "求得 x=-7，代回乘積為四十二。"
       ],
-      "answer": "-7。"
+      "answer": "x=-7。",
+      "why": "未知數完整係數是負六，必須同除以負六；正四十二除以負六得負七。代回負六乘負七為正四十二，符號合理。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "解7x+4=3x+24。",
+      "exampleId": "u03-s004-example-c",
+      "prompt": "解方程式 8x+3=5x+24。",
       "solutionSteps": [
-        "兩邊減3x得4x+4=24。",
-        "減4得4x=20。",
-        "x=5。"
+        "兩邊同減 5x，再同減 3，得到 3x=21。",
+        "兩邊同除以 3，得到 x=7。"
       ],
-      "answer": "5。"
+      "answer": "x=7。",
+      "why": "先集中未知數項可得三 x 加三等於二十四，再消去常數三。最後除以三得到七，代回左右都為五十九。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "解0.6x-1.5=2.1。",
+      "exampleId": "u03-s004-example-d",
+      "prompt": "解方程式 0.4x-1.2=2。",
       "solutionSteps": [
-        "加1.5得0.6x=3.6。",
-        "除0.6得x=6。"
+        "兩邊同加 1.2，得到 0.4x=3.2。",
+        "兩邊同除以 0.4，得到 x=8。"
       ],
-      "answer": "6。"
+      "answer": "x=8。",
+      "why": "小數方程式可直接依等量公理精確運算，三點二除以零點四等於八。也可兩邊同乘十成整數式，答案保持相同。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "移項後符號未改。",
-      "why": "沒有實際做兩邊同加減。",
-      "correction": "寫出完整等量步驟。"
+      "mistake": "移項後符號保持不變。",
+      "why": "沒有實際使用原運算的逆運算。",
+      "correction": "逐步寫成兩邊同加或同減。"
     },
     {
-      "mistake": "只做第一步就把中間值當答案。",
-      "why": "未知數仍帶係數。",
-      "correction": "最後確認式子是x=數。"
+      "mistake": "把中間的 3x=15 當成 x=15。",
+      "why": "未知數尚未除去係數三。",
+      "correction": "確認最後形式必須是 x 單獨。"
     },
     {
-      "mistake": "除負係數時漏負號。",
-      "why": "只看絕對值。",
-      "correction": "依異號相除為負。"
+      "mistake": "除負係數時漏掉負號。",
+      "why": "只使用係數的絕對值計算。",
+      "correction": "把正負號視為完整係數的一部分。"
     },
     {
-      "mistake": "未知數兩邊同時移動但漏一項。",
-      "why": "未先列清每一項。",
-      "correction": "一次只移一類項。"
+      "mistake": "未知數兩邊都有時只移其中一項。",
+      "why": "沒有先完整標出同類項。",
+      "correction": "一次集中一類項並同步化簡兩邊。"
     },
     {
-      "mistake": "小數係數直接取整。",
-      "why": "想讓計算方便而改題。",
-      "correction": "同乘10或精確相除。"
+      "mistake": "處理小數時只移一邊小數點。",
+      "why": "左右放大倍數不同會破壞等式。",
+      "correction": "若放大就讓方程式兩邊同乘相同倍數。"
     },
     {
-      "mistake": "求解後不驗算。",
-      "why": "無法發現符號或算術錯誤。",
-      "correction": "把答案代回原式兩邊。"
+      "mistake": "求得答案後省略代回。",
+      "why": "符號與算術錯誤因而無法被發現。",
+      "correction": "回到原式分別計算左右值並比較。"
     }
   ],
   "selfCheck": [
@@ -236,7 +239,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "bc36afa2d132a9195cfca633ce35fbe46226c710907014a67fc213fe778f7149",
+  "contentSha256": "3b7fae1f9827e321fdb2d95cf22b8fb9b354d08b6488eaf58873c365c9722e94",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 };
@@ -261,11 +264,11 @@ export const QUESTIONS = [
       "30"
     ],
     "answerIndex": 0,
-    "explanation": "兩邊同減9；x=12。所以答案是「12」。",
+    "explanation": "方程式 x+9=21 中，要消去左邊的加九，應在兩邊同減九。化簡得 x=21-9=12；把十二代回，12+9=21，左右相等，因此解為十二。解題與驗算互相支持。",
     "steps": [
-      "將等式兩邊同減 9。",
-      "得到 x＝21－9。",
-      "計算得 x＝12，代回 12＋9＝21。"
+      "在等式兩邊同減 9。",
+      "化簡得到 x=21-9=12。",
+      "代回驗算 12+9=21。"
     ],
     "optionAnalysis": [
       {
@@ -289,7 +292,7 @@ export const QUESTIONS = [
         "reason": "把21與9相加。"
       }
     ],
-    "commonMistake": "移項時符號未改。",
+    "commonMistake": "移項時仍把九加到二十一，沒有使用加九的逆運算減九。",
     "concept": "以逆運算孤立未知數。",
     "tags": [
       "代數",
@@ -304,7 +307,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9221c3babf3644cf137fc6d5ad818be41c6658a56ab9ae68f8240be3671024b9",
+    "contentSha256": "09bf3a3687448c65f99b622ce2f198e85283478b4b3e8d5d4d5d21bb8a189750",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -327,11 +330,11 @@ export const QUESTIONS = [
       "10"
     ],
     "answerIndex": 1,
-    "explanation": "兩邊同加7；x=4。所以答案是「4」。",
+    "explanation": "由 x-7=-3，要抵消減七就在等式兩邊同加七。右邊 -3+7=4，所以 x=4；代回原式可得 4-7=-3，證明正數四才是解。相反運算的方向因而正確，方向無誤。",
     "steps": [
-      "將等式兩邊同加 7。",
-      "得到 x＝－3＋7。",
-      "計算得 x＝4，代回 4－7＝－3。"
+      "等式兩邊同加 7。",
+      "計算 -3+7=4，得到 x=4。",
+      "代回檢查 4-7=-3。"
     ],
     "optionAnalysis": [
       {
@@ -355,7 +358,7 @@ export const QUESTIONS = [
         "reason": "把7移項後仍減。"
       }
     ],
-    "commonMistake": "看到負數就把結果判成負。",
+    "commonMistake": "看到右邊是負三便先判答案為負，忽略加七後會跨過零。",
     "concept": "消去減7要加7。",
     "tags": [
       "代數",
@@ -370,7 +373,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "88d2b5d98e88de1b65ef0f121be3d7929bfbbc47de001e7ec36b7b0084ef679d",
+    "contentSha256": "0fe99c0a47516145689b3158fdca716c871a16ee08c66ba366e23ee988de6ded",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -393,11 +396,11 @@ export const QUESTIONS = [
       "225"
     ],
     "answerIndex": 2,
-    "explanation": "兩邊同除5；x=9。所以答案是「9」。",
+    "explanation": "5x=45 中的五是乘法係數，兩邊同除以五即可讓 x 單獨。45÷5=9，所以 x=9；驗算 5×9=45，確定不是把四十五減五或乘五。完整係數必須一次消去。",
     "steps": [
-      "將等式兩邊同除以 5。",
-      "得到 x＝45÷5。",
-      "計算得 x＝9，代回 5×9＝45。"
+      "辨認未知數係數為 5。",
+      "等式兩邊同除以 5，得到 x=45÷5。",
+      "計算 x=9，並驗算 5×9=45。"
     ],
     "optionAnalysis": [
       {
@@ -421,7 +424,7 @@ export const QUESTIONS = [
         "reason": "把45乘5。"
       }
     ],
-    "commonMistake": "把乘法關係錯做加減。",
+    "commonMistake": "把係數五視為加項而計算四十五減五，沒有用除法消去乘法係數。",
     "concept": "係數非零時兩邊同除。",
     "tags": [
       "代數",
@@ -436,7 +439,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "158d7220b20fddfc85feb957aa17ff4ea4e49ee22279b4d042fdb8dab35caffc",
+    "contentSha256": "190f506e37435c5107d8ed7bcda8b2c250d4d3d77f0597064b78cd76777aeb4b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -459,11 +462,11 @@ export const QUESTIONS = [
       "-5"
     ],
     "answerIndex": 3,
-    "explanation": "兩邊同除-4；正數除以負數得負數；x=-5。所以答案是「-5」。",
+    "explanation": "未知數的係數是負四，因此兩邊要同除以 -4，而不是只除以正四。正二十除以負四得 -5，所以 x=-5；代回 (-4)×(-5)=20，符號與數值都成立。",
     "steps": [
-      "兩邊同除-4",
-      "正數除以負數得負數",
-      "x=-5"
+      "確認 x 的完整係數是 -4。",
+      "等式兩邊同除以 -4。",
+      "得到 x=-5，代回乘積為二十。"
     ],
     "optionAnalysis": [
       {
@@ -487,7 +490,7 @@ export const QUESTIONS = [
         "reason": "兩邊同除以-4，x=20÷(-4)=-5。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "只除以4卻忽略負號。",
+    "commonMistake": "只看係數的絕對值四，除法時漏掉負號而誤答正五。",
     "concept": "異號相除結果為負。",
     "tags": [
       "代數",
@@ -502,7 +505,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e66472661ecc113e5d336b423943e02beacc0346d646fbb896eaa1caf459f14a",
+    "contentSha256": "0dc25744362348a950fa0c3e030815d78e48c3269a45f4e2c4c1e8e2085ba35d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -525,17 +528,17 @@ export const QUESTIONS = [
       "19"
     ],
     "answerIndex": 1,
-    "explanation": "兩邊同減2；得到3x=15；兩邊同除3得5。所以答案是「5」。",
+    "explanation": "先在 3x+2=17 兩邊同減二，得到 3x=15；再同除以三，求得 x=5。代回 3×5+2=17，左右相等；中間值十五不是最後答案。兩次逆運算缺一不可，答案唯一。",
     "steps": [
-      "兩邊同減2",
-      "得到3x=15",
-      "兩邊同除3得5"
+      "等式兩邊同減 2，得到 3x=15。",
+      "兩邊同除以 3，得到 x=5。",
+      "代回驗算 3×5+2=17。"
     ],
     "optionAnalysis": [
       {
         "choice": "3",
         "truth": false,
-        "reason": "只做17-2後未除3。"
+        "reason": "把未知數前的係數3直接當成解，未執行兩邊同減2及同除3。"
       },
       {
         "choice": "5",
@@ -553,7 +556,7 @@ export const QUESTIONS = [
         "reason": "把2移項後相加。"
       }
     ],
-    "commonMistake": "只做第一步就停止。",
+    "commonMistake": "只做到 3x=15 就停止，沒有再除以未知數的係數三。",
     "concept": "先消常數再消係數。",
     "tags": [
       "代數",
@@ -568,7 +571,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e8b12ea71bbf99efca5ff29d0677bac87811d6c892015069097dae65e94d4024",
+    "contentSha256": "54fff6e64b9aa64398419be889d2316dbece7832e606786c3dfd784f3791bae1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -591,11 +594,11 @@ export const QUESTIONS = [
       "13"
     ],
     "answerIndex": 2,
-    "explanation": "兩邊同減7；-2x=12；除以-2得-6。所以答案是「-6」。",
+    "explanation": "由 7-2x=19，先在兩邊同減七，得到 -2x=12。再同除以 -2，可得 x=-6；代回 7-2×(-6)=7+12=19，負號不能遺漏。先整理常數再除負係數，可清楚控制結果符號，代回相符。",
     "steps": [
-      "兩邊同減7",
-      "-2x=12",
-      "除以-2得-6"
+      "等式兩邊同減 7，整理成 -2x=12。",
+      "兩邊同除以 -2，得到 x=-6。",
+      "代回算得 7-2×(-6)=19。"
     ],
     "optionAnalysis": [
       {
@@ -619,7 +622,7 @@ export const QUESTIONS = [
         "reason": "把常數相加。"
       }
     ],
-    "commonMistake": "把7-2x誤看成(7-2)x。",
+    "commonMistake": "把 7-2x 誤讀成 (7-2)x，改變原式的運算結構。",
     "concept": "整理後再除負係數。",
     "tags": [
       "代數",
@@ -634,7 +637,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ff38e24515bb9785d094680802b6a691050307db3975a2068c38c9474e9f993e",
+    "contentSha256": "81135ac08e3fdfcea7cd627aea62d50ff494c2ec3a6e8745be223701d80a9424",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -657,11 +660,11 @@ export const QUESTIONS = [
       "8"
     ],
     "answerIndex": 3,
-    "explanation": "將未知數項集中一邊；將常數項移到另一邊；2x=16後除2。所以答案是「8」。",
+    "explanation": "先在兩邊同減 2x，得到 2x-9=7；再同加九，得到 2x=16。最後同除以二，求得 x=8；代回左右都等於二十三，確認解正確。三步等量操作依序完整。",
     "steps": [
-      "將未知數項集中一邊",
-      "將常數項移到另一邊",
-      "2x=16後除2"
+      "兩邊同減 2x，得到 2x-9=7。",
+      "兩邊同加 9，得到 2x=16。",
+      "兩邊同除以 2，求得 x=8 並代回。"
     ],
     "optionAnalysis": [
       {
@@ -685,7 +688,7 @@ export const QUESTIONS = [
         "reason": "兩邊減2x得2x-9=7，再加9得2x=16，所以x=8。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "只移一項或忘記最後除係數。",
+    "commonMistake": "算到 2x=16 就把十六當成解，忘記最後還要除以係數二。",
     "concept": "同類項集中後再求解。",
     "tags": [
       "代數",
@@ -700,7 +703,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "973c997d6f89aeb009a09f69e23df51b49bfe4bbcf08d97f1c93d0c86979ab2f",
+    "contentSha256": "a85dd7dfc623a816693af5c8b7abd935037026df0e44f28be7e9defc5accdc12",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -723,11 +726,11 @@ export const QUESTIONS = [
       "15"
     ],
     "answerIndex": 0,
-    "explanation": "未知數項相減得3x；常數整理得-15；除3得-5。所以答案是「-5」。",
+    "explanation": "在 6x+5=3x-10 兩邊同減 3x，得到 3x+5=-10；再同減五，得到 3x=-15。最後同除以三，x=-5；代回兩邊都為負二十五。負數解與原式兩側的值一致，不能任意改正。",
     "steps": [
-      "未知數項相減得3x",
-      "常數整理得-15",
-      "除3得-5"
+      "兩邊同減 3x，得到 3x+5=-10。",
+      "兩邊同減 5，得到 3x=-15。",
+      "兩邊同除以 3，求得 x=-5 並驗算。"
     ],
     "optionAnalysis": [
       {
@@ -743,7 +746,7 @@ export const QUESTIONS = [
       {
         "choice": "-15",
         "truth": false,
-        "reason": "把-10-5當成-45。"
+        "reason": "算到3x=-15後把中間值-15誤當成x，沒有再除以係數3。"
       },
       {
         "choice": "15",
@@ -751,7 +754,7 @@ export const QUESTIONS = [
         "reason": "將-10與5相加成15。"
       }
     ],
-    "commonMistake": "負常數移項時符號混亂。",
+    "commonMistake": "整理負常數時漏掉負號，或把中間值負十五直接當成 x。",
     "concept": "集中未知數與常數。",
     "tags": [
       "代數",
@@ -766,7 +769,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bf83b420897639254db17857763c10525c0e0a9af26fa2ddd6a66aa7dd3c6c48",
+    "contentSha256": "82e8beba03b2018b08ad66acd7544441d8531d24eb809f2a428618beebe79c69",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -789,11 +792,11 @@ export const QUESTIONS = [
       "60"
     ],
     "answerIndex": 2,
-    "explanation": "消去常數1.2；0.3x=1.8；1.8÷0.3=6。所以答案是「6」。",
+    "explanation": "先在兩邊同減 1.2，得到 0.3x=1.8；再同除以 0.3，求得 x=6。也可整式同乘十後計算 3x=18，結果相同，不能只移動一邊的小數點。兩種精確算法互相驗證。",
     "steps": [
-      "消去常數1.2",
-      "0.3x=1.8",
-      "1.8÷0.3=6"
+      "兩邊同減 1.2，得到 0.3x=1.8。",
+      "兩邊同除以 0.3，得到 x=6。",
+      "代回檢查 0.3×6+1.2=3。"
     ],
     "optionAnalysis": [
       {
@@ -817,7 +820,7 @@ export const QUESTIONS = [
         "reason": "小數點移位只移一邊。"
       }
     ],
-    "commonMistake": "小數點處理不一致。",
+    "commonMistake": "處理小數時只把一邊放大十倍，破壞原本左右相等的關係。",
     "concept": "可同乘10或直接精確計算。",
     "tags": [
       "代數",
@@ -832,7 +835,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5664fa7e98430a502542aad4ad456da4686a9508b6ca4674d063031446d81520",
+    "contentSha256": "60fcdcc0addf5bf74c4db82d2433dc9e749d26ca31de88c4773cee158f9cbc8a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -855,11 +858,11 @@ export const QUESTIONS = [
       "120"
     ],
     "answerIndex": 3,
-    "explanation": "列4x+50=530；扣除手續費得4x=480；除4得120。所以答案是「120」。",
+    "explanation": "設每張票 x 元，四張票加固定手續費可列 4x+50=530。先扣除一次手續費，得 4x=480，再除以四，x=120 元；固定費不應平均成第五張票。代回總價也正好成立。",
     "steps": [
-      "列4x+50=530",
-      "扣除手續費得4x=480",
-      "除4得120"
+      "設單張票價為 x，列 4x+50=530。",
+      "兩邊同減 50，得到 4x=480。",
+      "兩邊同除以 4，求得每張 120 元。"
     ],
     "optionAnalysis": [
       {
@@ -883,7 +886,7 @@ export const QUESTIONS = [
         "reason": "設每張x元，4x+50=530；4x=480，所以x=120。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "把固定費也當成一張票價。",
+    "commonMistake": "把五十元固定手續費當成另一張票，錯把四百八十除以五。",
     "concept": "總價=單價×張數+固定費。",
     "tags": [
       "代數",
@@ -898,7 +901,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "票數與固定手續費決定方程式4x+50=530，刪除交易結構就無法判斷係數與加項。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4cc5f3879969ac5c351e5a05acf8b7a1e68f1cadb4dc7cd8209cbc57888fa2e4",
+    "contentSha256": "02b8b38da843529a51b1770362b52b8cbef85290de01bde62c25d9ce6b68a2d2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -921,11 +924,11 @@ export const QUESTIONS = [
       "960"
     ],
     "answerIndex": 0,
-    "explanation": "列x-240=680；兩邊同加240；得到920元。所以答案是「920」。",
+    "explanation": "原有金額減去買書支出等於剩餘金額，可列 x-240=680。兩邊同加二百四十，得 x=920 元；用剩餘金額再減支出是在計算另一個量，方向不符題意。",
     "steps": [
-      "列x-240=680",
-      "兩邊同加240",
-      "得到920元"
+      "依原有減支出等於剩餘，列 x-240=680。",
+      "等式兩邊同加 240。",
+      "求得 x=920 元，並驗算 920-240=680。"
     ],
     "optionAnalysis": [
       {
@@ -949,7 +952,7 @@ export const QUESTIONS = [
         "reason": "把240錯加成280。"
       }
     ],
-    "commonMistake": "把支出再從剩餘量扣一次。",
+    "commonMistake": "從剩餘六百八十再扣二百四十，混淆回推原有量與計算支出後餘額。",
     "concept": "原有量-支出=剩餘量。",
     "tags": [
       "代數",
@@ -964,7 +967,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "原有、支出與剩餘的方向關係決定x-240=680，情境不可改成任意加減。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a76a52c1ce6ff9edcb1f57edceb7acf7415be6c414c45e71b07633661012508d",
+    "contentSha256": "9e60c5fc72e61463b99925872cd4fcb8e77c4f70954e8c3b5151c9821f5895cf",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -987,11 +990,11 @@ export const QUESTIONS = [
       "10"
     ],
     "answerIndex": 1,
-    "explanation": "列x-7=-3；兩邊同加7；得到4°C。所以答案是「4」。",
+    "explanation": "目前氣溫 x°C 下降七度後為 -3°C，因此列 x-7=-3。兩邊同加七，得到 x=4°C；由四度下降七度確實是負三度，情境方向與驗算一致。溫度單位亦保持一致。",
     "steps": [
-      "列x-7=-3",
-      "兩邊同加7",
-      "得到4°C"
+      "依下降七度列出 x-7=-3。",
+      "等式兩邊同加 7，得到 x=4。",
+      "驗算 4-7=-3，附回攝氏度。"
     ],
     "optionAnalysis": [
       {
@@ -1015,7 +1018,7 @@ export const QUESTIONS = [
         "reason": "將-3與7相加時符號錯。"
       }
     ],
-    "commonMistake": "把下降7誤寫成原值加7。",
+    "commonMistake": "看到下降七度就從負三再減七，算的是繼續下降而不是回推目前氣溫。",
     "concept": "下降代表從原值減去。",
     "tags": [
       "代數",
@@ -1030,7 +1033,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "氣溫下降與最後溫度決定x-7=-3，正負方向是求解的必要情境資訊。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c0341627cab6aa2f45b58c1f0f8dad95f7a6894e051b3cff2140bc37970005f2",
+    "contentSha256": "f3ee4b6c153974021ffea24b089d1ae353adfc3d38320da57995f0dbae09691f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }
@@ -1053,9 +1056,9 @@ export const CONSTRUCTED_RESPONSES = [
       "代回比較左右。"
     ],
     "fullCreditSolution": [
-      "兩邊減3x：4x-11=25。",
-      "兩邊加11：4x=36，x=9。",
-      "左邊63-11=52；右邊27+25=52。"
+      "由 7x-11=3x+25，兩邊同減 3x，得到 4x-11=25。",
+      "兩邊同加十一得 4x=36，再同除以四，求得 x=9。",
+      "代回驗算：左邊 7×9-11=52，右邊 3×9+25=52，因此九是方程式的解，兩側同值也排除移項符號錯誤。"
     ],
     "alternativeSolutions": [
       "可先兩邊加11再減3x。"
@@ -1083,15 +1086,16 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "移項符號錯。",
-      "算到4x=36未除4。"
+      "移動 3x 時只改右邊，沒有在等式兩邊同減同一項。",
+      "算到 4x=36 就把三十六當成解，漏掉最後同除以四。",
+      "驗算只代入方程式一邊，沒有比較左右兩邊是否同為五十二。"
     ],
     "independentReview": {
       "derivedResult": "x=9",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "bed31dadfecb4a51ef4392f53876716827c06bc3bda01edfbaefe942cf032f2e",
+    "contentSha256": "f99ac5d30cd212227e3cfd28298da3d8b96767fa6d07315e11e35972ef4bf6ba",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -1111,9 +1115,9 @@ export const CONSTRUCTED_RESPONSES = [
       "解並驗算。"
     ],
     "fullCreditSolution": [
-      "設此數為x，列4x-13=2x+9。",
-      "兩邊減2x並加13：2x=22。",
-      "x=11；驗算31=31。"
+      "設此數為 x；某數的四倍再減十三寫成 4x-13，該數的二倍加九寫成 2x+9，因此列 4x-13=2x+9。",
+      "兩邊同減 2x 再同加十三，得到 2x=22；兩邊同除以二，求得 x=11。",
+      "代回檢查，四倍十一減十三為三十一，二倍十一加九也為三十一，列式與答案一致。"
     ],
     "alternativeSolutions": [
       "可用兩邊差額：兩倍的數補足22。"
@@ -1141,15 +1145,16 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "把「再減13」寫成4(x-13)。",
-      "把兩句相加而非設等。"
+      "把某數的四倍再減十三誤寫成 4(x-13)，讓十三也被乘四。",
+      "看到兩句敘述就相加，沒有用等號表達兩個量彼此相等。",
+      "整理 4x-2x 時漏掉一個 x，或把係數差算成六。"
     ],
     "independentReview": {
       "derivedResult": "11",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "fe3d7bb0ef3f787b028fe31f1e6e8a689b543e951da85796158cc70499b52ab4",
+    "contentSha256": "625460e65a3268efd97a66d6a753052ccd9f78ac2005f079fa39cbebb65daa9e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }

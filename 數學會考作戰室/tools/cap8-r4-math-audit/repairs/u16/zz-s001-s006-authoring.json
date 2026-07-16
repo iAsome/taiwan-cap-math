@@ -1,0 +1,1442 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u16",
+  "batch": "017-u16-complete",
+  "skills": [
+    "s001",
+    "s002",
+    "s003",
+    "s004",
+    "s005",
+    "s006"
+  ],
+  "mc": [
+    {
+      "questionId": "u16-s001-v001",
+      "expectedContentSha256": "f2e658efa151786f86de547080a1fbc46c2642aca64fd3c6996fe6a23bf0cb92",
+      "appendText": {
+        "explanation": "只需檢查判定表：SSS 有三組邊，能鎖定三角形；另外三組均缺少固定尺度或夾角。",
+        "misconceptionTarget": "還可能把只有兩邊或兩角相等誤當成足以固定大小。"
+      },
+      "appendArray": {
+        "steps": [
+          "只需檢查判定表：SSS 有三組邊，能鎖定三角形；另外三組均缺少固定尺度或夾角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v002",
+      "expectedContentSha256": "c2b799a18d9a61c401bce8d818560f630567f1c1c50c2b7bdd7ba91c7786bad4",
+      "appendText": {
+        "explanation": "將 ABC 與 DEF 逐位對齊，第二位是 B 與 E，所以答案唯一。"
+      },
+      "appendArray": {
+        "steps": [
+          "將 ABC 與 DEF 逐位對齊，第二位是 B 與 E，所以答案唯一。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v003",
+      "expectedContentSha256": "3fa312167075c23664242b2f993f05167a41fd3b26ee51779cd26f5cd9c653aa",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "AB、AC 的共同端點是 A；DE、DF 的共同端點是 D，給定角正好是夾角，因此為 SAS。",
+        "misconceptionTarget": "關鍵錯誤是沒有檢查角是否位於兩條已知邊的共同端點。"
+      },
+      "appendArray": {
+        "steps": [
+          "AB、AC 的共同端點是 A；DE、DF 的共同端點是 D，給定角正好是夾角，因此為 SAS。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v004",
+      "expectedContentSha256": "10c2e487b7893ef1c3dfc194e4864f584afdbe9edef991048effe39318856103",
+      "appendText": {
+        "explanation": "P-X、Q-Y、R-Z；QR 的兩端 Q、R 對應 Y、Z，故 YZ=11，角 R 對應角 Z 為 54°。 逐位配對後可同時核對線段兩端與角頂點，因此只有第二個選項把兩個條件都寫對。"
+      },
+      "appendArray": {
+        "steps": [
+          "P-X、Q-Y、R-Z；QR 的兩端 Q、R 對應 Y、Z，故 YZ=11，角 R 對應角 Z 為 54°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v005",
+      "expectedContentSha256": "a1b4728558fa5cb8c261b254b5a9036f7ebdfe2334ec3187156f1a9ccbac67d6",
+      "appendText": {
+        "explanation": "兩個三角形都有唯一的三邊 5、7、9；按同長邊配對後三組相等，故全等。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩個三角形都有唯一的三邊 5、7、9；按同長邊配對後三組相等，故全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v006",
+      "expectedContentSha256": "b3be4c47bb71ed2b953e95860a83896d4b169c454c0da3a0b0f096027c9d5bbd",
+      "appendText": {
+        "explanation": "另一三角形可把第一個按比例 1/2、1 或 2 放縮，最長邊可為 6、12、24 等，因此不能確定。"
+      },
+      "appendArray": {
+        "steps": [
+          "另一三角形可把第一個按比例 1/2、1 或 2 放縮，最長邊可為 6、12、24 等，因此不能確定。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v007",
+      "expectedContentSha256": "abdb771fe098c76b5574f69ceeaa37f29985463f7658786561b0d1fcdb43281c",
+      "appendText": {
+        "explanation": "直角已固定為 90°；兩圖斜邊 13 和一股 5 對應相等，依 RHS 全等。",
+        "misconceptionTarget": "直角條件使斜邊與一股成為可用的特殊判定，不能忽略。"
+      },
+      "appendArray": {
+        "steps": [
+          "直角已固定為 90°；兩圖斜邊 13 和一股 5 對應相等，依 RHS 全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v008",
+      "expectedContentSha256": "e10bd4c71695bb016607bad304ba19a2a500ce2195e75a60851564e58e5b13a4",
+      "appendText": {
+        "explanation": "SAS 所需角必在 A 與 D；∠BAC 和 ∠EDF 正好由兩已知邊構成。"
+      },
+      "appendArray": {
+        "steps": [
+          "SAS 所需角必在 A 與 D；∠BAC 和 ∠EDF 正好由兩已知邊構成。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v009",
+      "expectedContentSha256": "8e2fdf9cd89045eb0814b2d34d016fa27ceb81ba2042dff8cc4d95c3ba4f5a6d",
+      "appendText": {
+        "explanation": "固定一邊及非夾角後，另一固定長度邊的端點可能與射線相交兩次，故可能得到兩個不全等三角形。",
+        "misconceptionTarget": "一般非夾角資料可能有兩個第三頂點位置，不能偷換成夾角。"
+      },
+      "appendArray": {
+        "steps": [
+          "固定一邊及非夾角後，另一固定長度邊的端點可能與射線相交兩次，故可能得到兩個不全等三角形。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v010",
+      "expectedContentSha256": "44cf3bc006dc127266f9c799dac7214f75fe835e4e272a9236e3b186a1be17c7",
+      "appendText": {
+        "explanation": "兩塊玻璃分別具有相同三邊，且 30+40>50，故都是存在的三角形並以 SSS 全等。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩塊玻璃分別具有相同三邊，且 30+40>50，故都是存在的三角形並以 SSS 全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v011",
+      "expectedContentSha256": "54d37e2394ebe3ffe68ebaeb058beb7e1d6c83c64d2a9be212d7418a21cec82b",
+      "appendText": {
+        "explanation": "50°+60°+70°=180°，兩片可有相同形狀但不同大小；加入一組對應邊相等後可用 ASA/AAS。"
+      },
+      "appendArray": {
+        "steps": [
+          "50°+60°+70°=180°，兩片可有相同形狀但不同大小；加入一組對應邊相等後可用 ASA/AAS。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s001-v012",
+      "expectedContentSha256": "d0cc54f75a6e1cde50794be6edb6b09a79f25747d5235846ffcd9c7966cdb2e6",
+      "appendText": {
+        "explanation": "A 的位置填 K，B 的位置填 M，C 的位置填 L，得到 △ABC≅△KML。 第二個三角形必須依已知對應順序排列，K、M、L分別占第一、二、三個位置。"
+      },
+      "appendArray": {
+        "steps": [
+          "A 的位置填 K，B 的位置填 M，C 的位置填 L，得到 △ABC≅△KML。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v001",
+      "expectedContentSha256": "413311dad62c43ada5263c0cf9d7e9401ff8bbb14723666765e6e502fc78d414",
+      "appendText": {
+        "explanation": "AB=AC、∠BAD=∠CAD、AD=AD 三項依序是邊、夾角、邊，因此可證 △ABD≅△ACD。"
+      },
+      "appendArray": {
+        "steps": [
+          "AB=AC、∠BAD=∠CAD、AD=AD 三項依序是邊、夾角、邊，因此可證 △ABD≅△ACD。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v002",
+      "expectedContentSha256": "8969e548a7f55c316fb7b53329ce0541e5e2ae3c606530f7612a2472d079cc37",
+      "appendText": {
+        "explanation": "中點定義唯一能直接提供的是 AM=MB（另有共線）；其餘選項需要額外條件。"
+      },
+      "appendArray": {
+        "steps": [
+          "中點定義唯一能直接提供的是 AM=MB（另有共線）；其餘選項需要額外條件。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v003",
+      "expectedContentSha256": "7f09c2b2cee528fb559b1b379729203cdb3e2909c9da5bb2f71d73dd0031e24d",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "兩角的邊分別成兩組反向射線，因此是對頂角，必相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩角的邊分別成兩組反向射線，因此是對頂角，必相等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v004",
+      "expectedContentSha256": "bd22feb0c232e1f882247574597c171d5ad3b0de9bb7bc0269e18490f6f83cac",
+      "appendText": {
+        "explanation": "共同端點配對為 A-D、B-E、C-F；三邊全對應相等，所以 △ABC≅△DEF。 這也同時確認全等式的頂點順序沒有顛倒。"
+      },
+      "appendArray": {
+        "steps": [
+          "共同端點配對為 A-D、B-E、C-F；三邊全對應相等，所以 △ABC≅△DEF。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v005",
+      "expectedContentSha256": "308815e7dd328ad7b4e7ece539557ce1d69dde59a199a85543ae22f3cdb09d49",
+      "appendText": {
+        "explanation": "三項應為 AB=AC、∠BAD=∠CAD、AD=AD；題目已有的已知邊被漏寫。"
+      },
+      "appendArray": {
+        "steps": [
+          "三項應為 AB=AC、∠BAD=∠CAD、AD=AD；題目已有的已知邊被漏寫。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v006",
+      "expectedContentSha256": "add7adb6c3de5953ca7e42fe1f95a47433241df7333854c80d92050af50bc590",
+      "appendText": {
+        "explanation": "既然 △ABC≅△DEF 已成立，對應邊 AC、DF 必相等，無需重新判定。"
+      },
+      "appendArray": {
+        "steps": [
+          "既然 △ABC≅△DEF 已成立，對應邊 AC、DF 必相等，無需重新判定。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v007",
+      "expectedContentSha256": "e7b3160f1db2589309d3282bfd38a743dd0cdf508b5c2cc0839435bc3dc96f3d",
+      "appendText": {
+        "explanation": "該段以 AB=AC 作前提又以 AB=AC 作結論，論證依賴自身，屬循環。",
+        "misconceptionTarget": "若結論已被當作前提使用，無論文字多長都沒有完成證明。"
+      },
+      "appendArray": {
+        "steps": [
+          "該段以 AB=AC 作前提又以 AB=AC 作結論，論證依賴自身，屬循環。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v008",
+      "expectedContentSha256": "3f1cc33c929b9288e698650cf6505a53ff03cb503b1d4c56383257709359c79d",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "兩邊及夾角先建立全等，才可合法推出第三組對應邊 AB=CD。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩邊及夾角先建立全等，才可合法推出第三組對應邊 AB=CD。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v009",
+      "expectedContentSha256": "bdeea84560e92e35b9c4d788dc47b046389a6c4c2f42c74a78eba67505da92c7",
+      "appendText": {
+        "explanation": "若把 △ABC 放大 2 倍，三角不變但邊長改變，故不全等，證明失敗。"
+      },
+      "appendArray": {
+        "steps": [
+          "若把 △ABC 放大 2 倍，三角不變但邊長改變，故不全等，證明失敗。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v010",
+      "expectedContentSha256": "bdaae3789912dea36548b2eab62cdda7bdd9b52c19748d31f4c8eaa780444982",
+      "appendText": {
+        "explanation": "鋼索 AC 與 BD 相交，OA/OC、OB/OD 分別為反向射線，故 ∠AOB=∠COD；SAS 完成證明。"
+      },
+      "appendArray": {
+        "steps": [
+          "鋼索 AC 與 BD 相交，OA/OC、OB/OD 分別為反向射線，故 ∠AOB=∠COD；SAS 完成證明。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v011",
+      "expectedContentSha256": "ed785ec15698146669d078a668bf87d3046c958dc475fc0c7ef270f407e1f420",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "AB=AC（規格）、AD=AD（共用）、∠BAD=∠CAD（角平分）足以證左右半架全等。"
+      },
+      "appendArray": {
+        "steps": [
+          "AB=AC（規格）、AD=AD（共用）、∠BAD=∠CAD（角平分）足以證左右半架全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s002-v012",
+      "expectedContentSha256": "10d48248ebc3d76b674a87fbc5e525d54a91988380eb87ab2a14aba87f2e1915",
+      "appendText": {
+        "explanation": "BC 的端點對應 E、F，因此 BC↔EF；全等即給 BC=EF。"
+      },
+      "appendArray": {
+        "steps": [
+          "BC 的端點對應 E、F，因此 BC↔EF；全等即給 BC=EF。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v001",
+      "expectedContentSha256": "26e3c263ebb575f90d4e0c5db528081ad095dd646b8ef93fb5b208b20ca879cc",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "頂角位於兩腰相交處，AB 與 AC 相交於 A，因此答案是 ∠A。 兩條相等邊的共同端點才決定頂角，與圖形朝向無關。"
+      },
+      "appendArray": {
+        "steps": [
+          "頂角位於兩腰相交處，AB 與 AC 相交於 A，因此答案是 ∠A。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v002",
+      "expectedContentSha256": "0f6df2c94ea070746fc59591d22667203ea19a5665251d28a3704be8e1c0b4f4",
+      "appendText": {
+        "explanation": "7+7>10，三邊可成三角形；恰有兩條邊長 7，符合等腰定義。"
+      },
+      "appendArray": {
+        "steps": [
+          "7+7>10，三邊可成三角形；恰有兩條邊長 7，符合等腰定義。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v003",
+      "expectedContentSha256": "387fd6c70afb5794ca6418efc08b153a3a83eb459d6a2d928b82426fd665aa0a",
+      "appendText": {
+        "explanation": "三邊全相等包含至少兩邊相等的條件，因此等邊是等腰的特殊情形。"
+      },
+      "appendArray": {
+        "steps": [
+          "三邊全相等包含至少兩邊相等的條件，因此等邊是等腰的特殊情形。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v004",
+      "expectedContentSha256": "184ae736edd7a1d4764f82c0b8f409c148b45458d822aefc1954dd9805a005fa",
+      "appendText": {
+        "explanation": "PQ 與 QR 相等且共點 Q，故 PR 是未被選為腰的第三邊，即底邊。 未列入相等邊對的第三邊才是底邊，與圖形畫在紙面的方向無關。"
+      },
+      "appendArray": {
+        "steps": [
+          "PQ 與 QR 相等且共點 Q，故 PR 是未被選為腰的第三邊，即底邊。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v005",
+      "expectedContentSha256": "ce61cf65aca90163aed3c8463584966c91c3827782ba32a8e0e44ac411fa54c5",
+      "appendText": {
+        "explanation": "雖有兩個 4 相等，但 4+4=8，只形成退化線段，所以不能稱為等腰三角形。"
+      },
+      "appendArray": {
+        "steps": [
+          "雖有兩個 4 相等，但 4+4=8，只形成退化線段，所以不能稱為等腰三角形。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v006",
+      "expectedContentSha256": "2539f00b1d4136f001bb4dc0f5dcecc4efceee9c4c728a9548aaa01bc2be22b1",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "兩腰 AB、BC 共同端點為 B；第三邊 AC 是底邊，故底角在 A、C。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩腰 AB、BC 共同端點為 B；第三邊 AC 是底邊，故底角在 A、C。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v007",
+      "expectedContentSha256": "ec674b6bd30595b508d13c801b61c36cebe50bb1588e0e3ce6f14ea9187e7213",
+      "appendText": {
+        "explanation": "三邊皆相等，任意指定一邊作底邊皆可；本題底邊 BC，故腰為 AB、AC。"
+      },
+      "appendArray": {
+        "steps": [
+          "三邊皆相等，任意指定一邊作底邊皆可；本題底邊 BC，故腰為 AB、AC。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v008",
+      "expectedContentSha256": "695699a6a5dae076391e6dd1406c5641a4828fd140f715143bdd83e8e0ee5c9a",
+      "appendText": {
+        "explanation": "一個條件要求有相等邊，另一條件排除所有相等邊，因此沒有解。"
+      },
+      "appendArray": {
+        "steps": [
+          "一個條件要求有相等邊，另一條件排除所有相等邊，因此沒有解。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v009",
+      "expectedContentSha256": "16095076cf7871286327a6de931643880fb7116de54e6157c5f37b56517c995e",
+      "appendText": {
+        "explanation": "最小正整數 x=1；三邊 1、1、1 為等邊，且等邊是等腰特殊情形。"
+      },
+      "appendArray": {
+        "steps": [
+          "最小正整數 x=1；三邊 1、1、1 為等邊，且等邊是等腰特殊情形。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v010",
+      "expectedContentSha256": "8c74f6df760a32a88469417e2f19f9fc957227c49a133ab44575bc4d534aec3c",
+      "appendText": {
+        "explanation": "x=2 時邊長 2、2、3，符合 2+2>3 且第三邊不同，故為最小。"
+      },
+      "appendArray": {
+        "steps": [
+          "x=2 時邊長 2、2、3，符合 2+2>3 且第三邊不同，故為最小。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v011",
+      "expectedContentSha256": "00c121b0bdd387c5014b536500fbb2cf6159cc7927a76b8786750e68361a6abd",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "只憑 AB=AC 可判定等腰及兩腰角色；角度、底邊與中央線仍需額外資料。"
+      },
+      "appendArray": {
+        "steps": [
+          "只憑 AB=AC 可判定等腰及兩腰角色；角度、底邊與中央線仍需額外資料。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s003-v012",
+      "expectedContentSha256": "656519730b925e056816ad0977ef8a9f7f748a0a0756c8f0cddca810081b0c87",
+      "appendText": {
+        "explanation": "設計師把第三邊誤稱腰；依定義應改為底邊，兩條折線才是腰。"
+      },
+      "appendArray": {
+        "steps": [
+          "設計師把第三邊誤稱腰；依定義應改為底邊，兩條折線才是腰。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v001",
+      "expectedContentSha256": "88c9f1cf91acf3518f4fbfb6ada3fc62c496bc5959cb1b60305de5ef525b0868",
+      "appendText": {
+        "explanation": "題目提供三組對應邊，無需角資料，依 SSS 可判定全等。 字母S代表邊，三個S正好對應三組已知邊，不需再加入角度。",
+        "misconceptionTarget": "三個縮寫字母都表示邊，不能把其中一個誤讀為角。"
+      },
+      "appendArray": {
+        "steps": [
+          "題目提供三組對應邊，無需角資料，依 SSS 可判定全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v002",
+      "expectedContentSha256": "c83f9759adb883b2676cf8262cc93d0531a57231640cf34f49ed96c7b2b3a3a6",
+      "appendText": {
+        "explanation": "AB-DE、AC-DF；共同端點 A-D，故剩餘 B-E、C-F，SAS 得 △ABC≅△DEF。 兩已知邊的共同端點與相等角一致，才能使用夾角條件並排定其餘頂點。"
+      },
+      "appendArray": {
+        "steps": [
+          "AB-DE、AC-DF；共同端點 A-D，故剩餘 B-E、C-F，SAS 得 △ABC≅△DEF。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v003",
+      "expectedContentSha256": "552348fc048d82373249091d5f33e59cf38652f3c6c4dd90a4c0561e7abcb116",
+      "appendText": {
+        "explanation": "∠ABC 的兩邊是 BA 與 BC，正好由 AB、BC 形成。 角名稱的中間字母是頂點B，兩射線BA與BC正是題目指定的兩邊。"
+      },
+      "appendArray": {
+        "steps": [
+          "∠ABC 的兩邊是 BA 與 BC，正好由 AB、BC 形成。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v004",
+      "expectedContentSha256": "74973a046e565520a97357466ecacedeab9376fe67f3106f54180fe16ef403f4",
+      "appendText": {
+        "explanation": "三組邊 AMC 對 BMC 分別為 AM-MB、MC-MC、AC-BC，因此 SSS。 中點給AM=MB，共用邊給MC=MC，再加AC=BC，三組邊全部齊備。三邊一一對應後可直接套用SSS，無須另找角度。",
+        "misconceptionTarget": "必須把中點定義與線段自反性各自展開成一組相等邊。"
+      },
+      "appendArray": {
+        "steps": [
+          "三組邊 AMC 對 BMC 分別為 AM-MB、MC-MC、AC-BC，因此 SSS。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v005",
+      "expectedContentSha256": "244b72597cf01cf2bac8a31db7a1448b0866ce2ebd5d9f3dae99c48665f9b2da",
+      "appendText": {
+        "explanation": "兩邊相等且共同端點角相等，資料順序是 S-A-S。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩邊相等且共同端點角相等，資料順序是 S-A-S。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v006",
+      "expectedContentSha256": "13fa71b085c9d27160faa31c9bc1b5c71b7c50a71227b9148745ad5be44f4123",
+      "appendText": {
+        "explanation": "即使兩組數字完全相同，也只是兩組不能形成三角形的線段，SSS 無適用對象。"
+      },
+      "appendArray": {
+        "steps": [
+          "即使兩組數字完全相同，也只是兩組不能形成三角形的線段，SSS 無適用對象。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v007",
+      "expectedContentSha256": "923ebfa4e98af31f7237943cccf95d26b93cca5f5dd55de201bd2c70da905591",
+      "appendText": {
+        "explanation": "資料固定一個非夾角與兩邊，可能有二解，不能直接全等。",
+        "misconceptionTarget": "已知角不在AB、AC之間，不能因資料有兩邊一角便套SAS。"
+      },
+      "appendArray": {
+        "steps": [
+          "資料固定一個非夾角與兩邊，可能有二解，不能直接全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v008",
+      "expectedContentSha256": "bf6848470b96863643f15a9bb9d8eeb41670c9955860cdb8a47dba0d2d77ee8c",
+      "appendText": {
+        "explanation": "SSS 要三組對應邊；補 AC=DF 後恰好完整。 第三組對應邊必連接剩餘頂點A、C與D、F，不能用角度或邊長和代替。"
+      },
+      "appendArray": {
+        "steps": [
+          "SSS 要三組對應邊；補 AC=DF 後恰好完整。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v009",
+      "expectedContentSha256": "ad859466aeab3dd991f4d0cef3108bc07d1d46093325a0d43958975a85a0dd11",
+      "appendText": {
+        "explanation": "共用邊與自身相等，配合另外兩組邊得到 △ABC≅△CDA。 AC同時屬於兩個小三角形，依線段自反性可作為第三組相等邊。"
+      },
+      "appendArray": {
+        "steps": [
+          "共用邊與自身相等，配合另外兩組邊得到 △ABC≅△CDA。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v010",
+      "expectedContentSha256": "1fd714787c385a80cfdb31072503ec5a351e9fa1cb342c01d0a01f61b121767f",
+      "appendText": {
+        "explanation": "固定兩邊長與夾角後第三頂點位置只差剛體翻轉，兩框架全等。",
+        "misconceptionTarget": "兩邊及其夾角已唯一固定三角形，無須再量第三邊。"
+      },
+      "appendArray": {
+        "steps": [
+          "固定兩邊長與夾角後第三頂點位置只差剛體翻轉，兩框架全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v011",
+      "expectedContentSha256": "37629b6a552fcf5d40ecf48b405b2df11a9be260b9628b8928c76d26ecb859ef",
+      "appendText": {
+        "explanation": "在固定射線上，長 12 的圓弧可能與另一條件相交兩次，形成兩個不同三角形。"
+      },
+      "appendArray": {
+        "steps": [
+          "在固定射線上，長 12 的圓弧可能與另一條件相交兩次，形成兩個不同三角形。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s004-v012",
+      "expectedContentSha256": "6829c104e52538092066df0958576a4c29ea11f63db57b7ada22ee6ed8e938fa",
+      "appendText": {
+        "explanation": "存在性檢查通過後，三組對應邊相等保證兩側片完全重合。"
+      },
+      "appendArray": {
+        "steps": [
+          "存在性檢查通過後，三組對應邊相等保證兩側片完全重合。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v001",
+      "expectedContentSha256": "8ae927d94b11cbaa9b5a1b19640848f117b40e35fb06a429a98742709da5ca33",
+      "appendText": {
+        "explanation": "題目明示邊位於兩角之間，資料順序 A-S-A，故 ASA。 夾邊連接兩個已知角的頂點，所以資料順序明確是角、邊、角。",
+        "misconceptionTarget": "應先判定已知邊是否連接兩個角頂點，再區分ASA與AAS。"
+      },
+      "appendArray": {
+        "steps": [
+          "題目明示邊位於兩角之間，資料順序 A-S-A，故 ASA。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v002",
+      "expectedContentSha256": "2b816f6ab9e4ce9820b1c42e45f643a56844b33852b32753fedd294bd395d105",
+      "appendText": {
+        "explanation": "兩組角固定形狀，非夾邊相等固定尺度，符合 AAS。",
+        "misconceptionTarget": "AC不是∠A與∠B的夾邊，因此名稱應是AAS而非ASA。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩組角固定形狀，非夾邊相等固定尺度，符合 AAS。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v003",
+      "expectedContentSha256": "20dfe1047d1f1d318f94d7d432dda4e4b6c186fe65bafe30500423ec27148372",
+      "appendText": {
+        "explanation": "三角形三內角和 180°，故剩餘角為 60°。 依三內角和列式180°－50°－70°＝60°，且三角和回算為180°。計算時先合併兩個已知角再扣除，所得未知角唯一為60°。",
+        "misconceptionTarget": "未知角是用180°扣除兩個已知角，不能把已知角相加後直接作答。"
+      },
+      "appendArray": {
+        "steps": [
+          "三角形三內角和 180°，故剩餘角為 60°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v004",
+      "expectedContentSha256": "946402a0bd80954d5aeff72387f61e950e82c9ffd26fee14b70d6dad15f58f26",
+      "appendText": {
+        "explanation": "∠A-D、∠B-E，夾邊 AB-DE，符合 ASA；剩餘 C-F。 邊AB與DE正好位於兩組已知角之間，並固定相似圖形的實際尺度。"
+      },
+      "appendArray": {
+        "steps": [
+          "∠A-D、∠B-E，夾邊 AB-DE，符合 ASA；剩餘 C-F。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v005",
+      "expectedContentSha256": "49f5a1fbc04534078a862c613d5c40e247971f0d8b8fa967d72b730649e8a09b",
+      "appendText": {
+        "explanation": "兩組角與中間邊均對應相等，ASA 足夠。 相等邊連接直角頂點與35°角頂點，正好是兩個已知角的夾邊。",
+        "misconceptionTarget": "RHS要求斜邊與一股，本題給的是兩角及夾邊，不能見直角就選RHS。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩組角與中間邊均對應相等，ASA 足夠。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v006",
+      "expectedContentSha256": "65a02e72dcfd2d61a72bc600c611b3344b85aeeb145232e1c018f1a83eaba95a",
+      "appendText": {
+        "explanation": "兩角決定形狀，沒有邊長固定大小，所以不能判全等。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩角決定形狀，沒有邊長固定大小，所以不能判全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v007",
+      "expectedContentSha256": "718aceda26c29e5ea57304f179cef7d2c8c498a1ae31b2303bcc9ef014f4c833",
+      "appendText": {
+        "explanation": "A↔D、B↔E、C↔F，故 △ABC≅△DEF（AAS）。 由兩組角先固定A對D、C對F，剩餘頂點必為B對E，邊的端點也一致。"
+      },
+      "appendArray": {
+        "steps": [
+          "A↔D、B↔E、C↔F，故 △ABC≅△DEF（AAS）。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v008",
+      "expectedContentSha256": "981e731eedcf035a1222d29037bfc4cf4d6bff50be6417ee7aa9ac3ba71d4c1c",
+      "appendText": {
+        "explanation": "A-D、B-E，故 C-F；全等對應角相等，∠F=65°。 前兩組角的對應已唯一決定C對F，因此全等後可直接傳遞角度65°。"
+      },
+      "appendArray": {
+        "steps": [
+          "A-D、B-E，故 C-F；全等對應角相等，∠F=65°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v009",
+      "expectedContentSha256": "6e15816f47a851f1b95ad7a839d0479c3afaf03a2ffa6b19198b689572efc35f",
+      "appendText": {
+        "explanation": "最短邊的位置由最小角唯一決定，因此長 4 的邊是對應邊；AAS 或 ASA 可完成全等。"
+      },
+      "appendArray": {
+        "steps": [
+          "最短邊的位置由最小角唯一決定，因此長 4 的邊是對應邊；AAS 或 ASA 可完成全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v010",
+      "expectedContentSha256": "4980be9b3139d5f2d65ebbd2af0ad5b5cadecbf28e63d0963b89d8e485a3b305",
+      "appendText": {
+        "explanation": "兩圖的角度形狀相同且同一對應夾邊長 25，故大小也相同。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩圖的角度形狀相同且同一對應夾邊長 25，故大小也相同。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v011",
+      "expectedContentSha256": "05ffc9d31d0c4b69a9b71d9604a1d7efec5a1a765d25261984ea83ccef11213b",
+      "appendText": {
+        "explanation": "45°、65°、70° 的各對邊比例不同；20 若放在不同邊，整體尺度不同，不能比較。"
+      },
+      "appendArray": {
+        "steps": [
+          "45°、65°、70° 的各對邊比例不同；20 若放在不同邊，整體尺度不同，不能比較。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s005-v012",
+      "expectedContentSha256": "68a17a51e38a997abe1d512c6f4e6c5699be9b01135d929006a079155c2e26c4",
+      "appendText": {
+        "explanation": "同一相似形中對 55° 的邊比對 50° 的邊長；若兩者都被設為 10，兩圖尺度不同，故不必然全等。"
+      },
+      "appendArray": {
+        "steps": [
+          "同一相似形中對 55° 的邊比對 50° 的邊長；若兩者都被設為 10，兩圖尺度不同，故不必然全等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v001",
+      "expectedContentSha256": "72f4b8d428c4d1d6d96b179c9b64bf109638284fa609db5729a0316182bd545b",
+      "appendText": {
+        "explanation": "AB=AC ⇒ ∠C=∠B。 等邊對等角性質指出AB所對∠C與AC所對∠B相等，其他結論無法由條件保證。",
+        "misconceptionTarget": "兩腰相等只保證底角相等，不能擴張成三邊相等或頂角60°。"
+      },
+      "appendArray": {
+        "steps": [
+          "AB=AC ⇒ ∠C=∠B。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v002",
+      "expectedContentSha256": "42f464462b027a98e0d4045bde5e018079225ebc7e83a795664d0bc8de4d6f22",
+      "appendText": {
+        "explanation": "底角相等，故各為 70°。 兩底角總和為180°－40°＝140°，再平均分成兩個相等角各70°。因為等腰三角形的兩個底角大小完全相同，所以必須平均分配。",
+        "misconceptionTarget": "140°是兩個底角的總和，必須再除以2才是單一底角。"
+      },
+      "appendArray": {
+        "steps": [
+          "底角相等，故各為 70°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v003",
+      "expectedContentSha256": "3214ae6cbffe8e43a9a9c7c77a231772f655122f0bc0a116864b7e5b4eaf26a9",
+      "appendText": {
+        "explanation": "∠Q=∠R ⇒ PR=PQ。 ∠Q所對邊PR，∠R所對邊PQ；等角對等邊所以PQ與PR相等。故正確選項是PQ=PR，而不是含QR的任一組邊。",
+        "misconceptionTarget": "相等角所對的是對面邊，不是與該角相鄰的任一條邊。"
+      },
+      "appendArray": {
+        "steps": [
+          "∠Q=∠R ⇒ PR=PQ。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v004",
+      "expectedContentSha256": "86102615177b6912a776719c8f94694bb0e62ac701b1e474031334a0285066f6",
+      "appendText": {
+        "explanation": "兩個 58° 佔 116°，剩餘 64°。 另一個底角也為58°，頂角應由180°扣除兩個58°後得到64°。回算64°加上兩個58°正好等於180°，因此答案唯一。",
+        "misconceptionTarget": "有兩個相等底角，計算頂角時必須從180°扣除兩次58°。"
+      },
+      "appendArray": {
+        "steps": [
+          "兩個 58° 佔 116°，剩餘 64°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v005",
+      "expectedContentSha256": "38a2491a2b358112c7daa7c8ec1c6921ff3bb08f20f36a5126a95ecba31338b7",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "因此 D 是 BC 中點且 AD 垂直 BC。"
+      },
+      "appendArray": {
+        "steps": [
+          "因此 D 是 BC 中點且 AD 垂直 BC。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v006",
+      "expectedContentSha256": "53b19bfab7c9301b3096ffd7194b864261dc9ff2fae7ef90210a12df7cd625c1",
+      "appendText": {
+        "explanation": "AD 平分 ∠A，故兩部分相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "AD 平分 ∠A，故兩部分相等。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v007",
+      "expectedContentSha256": "45f1db4b34ba60f689580d3e9bdd1bac54eacd31da35f52677798521ad56ecf7",
+      "appendText": {
+        "explanation": "三角為 120、30、30，和 180 且比例 4:1。 設底角為x、頂角為4x，角和4x＋x＋x＝180°，解得x＝30°。因此頂角為120°、兩個底角各30°，同時符合比例與內角和。",
+        "misconceptionTarget": "角和中包含一個頂角與兩個底角，不能漏掉第二個底角。"
+      },
+      "appendArray": {
+        "steps": [
+          "三角為 120、30、30，和 180 且比例 4:1。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v008",
+      "expectedContentSha256": "f6cc0f75f4be8b077d9888fd490b53435ae6f294320f9a2d0a4c60213cdd2978",
+      "appendText": {
+        "explanation": "理想幾何中必為 90°，所以條件無法同時成立。"
+      },
+      "appendArray": {
+        "steps": [
+          "理想幾何中必為 90°，所以條件無法同時成立。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v009",
+      "expectedContentSha256": "be19d5a8256ffdc709e1c21da860f0e22f96a88af8043f606ef374d277c44c77",
+      "appendText": {
+        "explanation": "三角為 40、70、70，外角與 B 內角互補驗算成立。 B點內角為180°－110°＝70°，C底角亦為70°，故頂角為40°。三個內角回算為180°，也符合等腰底角相等。"
+      },
+      "appendArray": {
+        "steps": [
+          "三角為 40、70、70，外角與 B 內角互補驗算成立。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v010",
+      "expectedContentSha256": "24e4b4da92cb8165b0a8702dc25af8ea31f5c955c6bb23c63593e0c61e836adc",
+      "appendText": {
+        "explanation": "等腰結構左右底角各 72°。 兩底角總和為180°－36°＝144°，等分後每個底角為72°。左右斜邊相等保證兩底角相等，回算三角和也正確。",
+        "misconceptionTarget": "144°是左右兩個底角合計，不能直接當作每一個底角。"
+      },
+      "appendArray": {
+        "steps": [
+          "等腰結構左右底角各 72°。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v011",
+      "expectedContentSha256": "7737ec99c2465f71386936ae1dffa6a28e7dc7df5dca809fa40db78f59dbf45d",
+      "set": {
+        "visualMode": "text-only",
+        "figureId": null
+      },
+      "appendText": {
+        "explanation": "施工上支柱自然與底樑成 90°，並把頂角分成相等兩角。"
+      },
+      "appendArray": {
+        "steps": [
+          "施工上支柱自然與底樑成 90°，並把頂角分成相等兩角。"
+        ]
+      }
+    },
+    {
+      "questionId": "u16-s006-v012",
+      "expectedContentSha256": "005e3bee9fb4b04db651db28475be4ca5b01920b247b4b477164ab615b900c3b",
+      "appendText": {
+        "explanation": "第三角 180−94=86°，所以為非等邊的等腰三角形；相等的是兩個 47° 的對邊。"
+      },
+      "appendArray": {
+        "steps": [
+          "第三角 180−94=86°，所以為非等邊的等腰三角形；相等的是兩個 47° 的對邊。"
+        ]
+      }
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u16-s001-cr001",
+      "expectedContentSha256": "2d4abc9f7574119c86657858d681164b69a03e1ba82d4a9a2c3be016ce6fd7d1",
+      "appendArray": {
+        "fullCreditSolution": ["三組邊長6、8、10公分在兩圖中依共同端點一一對應，且6＋8＞10可形成三角形；因此由SSS得到唯一對應△ABC≅△DEF。"],
+        "reasoningSteps": ["最後核對全等式同一位置為A對D、B對E、C對F，三組線段端點均一致。"],
+        "commonErrors": ["只看三個數值集合相同便任意排列全等式，未由共同端點確認頂點對應順序。"]
+      }
+    },
+    {
+      "questionId": "u16-s001-cr002",
+      "expectedContentSha256": "73c95b27e630de94f3a23e733da35f509e06cc4a7dd1c46156b8c894eac35e05",
+      "appendArray": {
+        "fullCreditSolution": ["若40°不是5公分與7公分兩邊的夾角，固定非夾角後第三頂點可能有兩個位置，故不能保證全等；把40°明定為夾角即可用SAS，或補第三邊改用SSS。"],
+        "reasoningSteps": ["區分一般SSA與SAS的關鍵，在於40°的兩射線是否正好沿著兩條已知邊。"],
+        "commonErrors": ["只補充另一個角度卻未說明對應位置，仍可能無法確認兩題使用的是同一組資料。"]
+      }
+    },
+    {
+      "questionId": "u16-s002-cr001",
+      "expectedContentSha256": "6eb41a51ec5820f0ec6a051ec88a5d406b3f75b688f9a41cde1a5931ef3fcc27",
+      "appendArray": {
+        "fullCreditSolution": ["共同邊AC在兩個三角形中分別對應CA，配合AB＝CD與BC＝DA形成三組對應邊；SSS證得全等後，才可合法推出∠BAC＝∠DCA等對應角。"],
+        "reasoningSteps": ["由△ABC≅△CDA的順序讀出A對C、B對D、C對A，再選取一組同位置對應角作結論。"],
+        "commonErrors": ["把AC與CA視為不同長度而漏掉共用邊，或在尚未證全等前先引用對應角相等。"]
+      }
+    },
+    {
+      "questionId": "u16-s002-cr002",
+      "expectedContentSha256": "0574204180d7d50ece910f7c532c3626d4d5aa6794c6c0991deaf339f4cfcd07",
+      "appendArray": {
+        "fullCreditSolution": ["全等式逐位給A對P、B對Q、C對R，所以AB與PQ、∠C與∠R分別是對應量；解3x＋1＝16得x＝5，解2y＋5＝65得y＝30，代回均吻合。"],
+        "reasoningSteps": ["將x＝5、y＝30代回原式，確認AB＝16且∠C＝65°，與對應量完全相等。"],
+        "commonErrors": ["未先按全等式建立對應，便把AB配到其他邊或把∠C配到非R頂點的角。"]
+      }
+    },
+    {
+      "questionId": "u16-s003-cr001",
+      "expectedContentSha256": "c13d53a8203f5eb8da9f713a981919255fe61c0cbda861f0b80ff4397bc99e55",
+      "appendArray": {
+        "fullCreditSolution": ["兩腰相等所對的兩個底角相等；三內角和扣掉頂角36°後，兩底角合計144°，平均分配得每個底角72°，回算36＋72＋72＝180。"],
+        "reasoningSteps": ["以36°＋2×底角＝180°列式，解得底角72°並代回驗算。"],
+        "commonErrors": ["把144°直接當成單一底角，忘記等腰三角形有兩個大小相同的底角。"]
+      }
+    },
+    {
+      "questionId": "u16-s003-cr002",
+      "expectedContentSha256": "d65c3b7a6efa955e349bfb2c65374308d65b24bd2b759c5a0ffefbb6d1e88410",
+      "appendArray": {
+        "fullCreditSolution": ["周長方程整理為4x＋3＝27，解得x＝6；代回得到8、8、11，三邊皆正且8＋8＞11，所以確能成三角形，並因只有兩個8相等而為等腰非等邊。"],
+        "reasoningSteps": ["依序完成解方程、代回三邊、存在性檢查與邊長分類，不能只看到前兩式相同便停止。"],
+        "commonErrors": ["求得x後未檢查三角形不等式，或把有兩邊相等誤說成三邊全相等。"]
+      }
+    },
+    {
+      "questionId": "u16-s004-cr001",
+      "expectedContentSha256": "3997eb6ef2b81bd6f17cce3b42ff773c00d93460cd1093663a7e6df21c67f5c4",
+      "appendArray": {
+        "fullCreditSolution": ["AB與AC在A相交，DE與DF在D相交，因此∠A與∠D正是兩組已知邊的夾角；兩邊及夾角一一相等，依SAS得△ABC≅△DEF。"],
+        "reasoningSteps": ["用角名稱的中間字母核對夾角頂點，再依A對D、B對E、C對F寫出全等式。"],
+        "commonErrors": ["只數到兩邊一角便套SAS，沒有檢查該角是否同時接觸兩條已知邊。"]
+      }
+    },
+    {
+      "questionId": "u16-s004-cr002",
+      "expectedContentSha256": "732ac0f177591e16661197381330ae65047b9c6e2ab039b532b2aa1bc4cf34c4",
+      "appendArray": {
+        "fullCreditSolution": ["要用SSS，乙的第三邊必須對應甲尚未配對的12公分邊，故x＝12；周長相等只限制三邊總和，不能保證每一組對應邊分別相等，所以不足以判定全等。"],
+        "reasoningSteps": ["先依7、9兩邊完成配對，再找剩餘第三邊；另以不同三邊分配但同周長的例子否定周長條件。"],
+        "commonErrors": ["由兩個周長相等便直接宣稱SSS，卻沒有列出三組對應邊各自相等。"]
+      }
+    },
+    {
+      "questionId": "u16-s005-cr001",
+      "expectedContentSha256": "7459749e81abd5f6e9e8d55c59c3d402abd8e6f9cb75b84bf0559901b15ef9ad",
+      "appendArray": {
+        "fullCreditSolution": ["兩角配對為A對D、B對E，而AB與DE恰連接這兩組角的頂點，因此是夾邊；資料順序為角、邊、角，依ASA得到△ABC≅△DEF。"],
+        "reasoningSteps": ["檢查已知邊兩端正是兩個已知角的頂點，以此排除AAS後再寫全等式。"],
+        "commonErrors": ["只看到兩角一邊就任選ASA或AAS，沒有判讀AB與DE是否為夾邊。"]
+      }
+    },
+    {
+      "questionId": "u16-s005-cr002",
+      "expectedContentSha256": "8e3d1e9550156e71ca7aab95021ed0a6751fa52f35b70a3bdc0825fe2754cf33",
+      "appendArray": {
+        "fullCreditSolution": ["由內角和得∠R＝∠Z＝65°；P對X、Q對Y後剩餘R對Z，且PR與XZ為非夾邊，所以兩角及一組非夾邊相等，依AAS證得全等。"],
+        "reasoningSteps": ["先算第三角並建立P－X、Q－Y、R－Z的完整對應，再判斷8公分邊的位置。"],
+        "commonErrors": ["把PR誤認為∠P與∠Q的夾邊，因而錯把本題寫成ASA。"]
+      }
+    },
+    {
+      "questionId": "u16-s006-cr001",
+      "expectedContentSha256": "e1f7ca464923415b76ad40966aeb691d5c96fcd3daed28164485f5fb0becce43",
+      "appendArray": {
+        "fullCreditSolution": ["AB＝AC、BD＝DC與AD共用，使△ABD與△ACD依SSS全等；D在直線BC上，故相等的∠ADB、∠ADC又互補，只能各為90°，並由∠BAD＝∠DAC得AD平分∠A。"],
+        "reasoningSteps": ["把全等所得的相等鄰角與直線上的180°條件合併，證明AD垂直BC，再指出頂角平分結論。"],
+        "commonErrors": ["只因圖形看似對稱便直接寫垂直，沒有先以SSS證明兩個鄰角相等。"]
+      }
+    },
+    {
+      "questionId": "u16-s006-cr002",
+      "expectedContentSha256": "77764cf7b011cd7f9d34320592865f297037f18b3c8e665138b7b6b3335a5cdd",
+      "appendArray": {
+        "fullCreditSolution": ["因AB＝AC，兩底角皆為3x＋6度；列（2x＋18）＋2（3x＋6）＝180，得8x＋30＝180、x＝18.75，代回頂角55.5°、兩底角各62.25°。", "解題時必須把兩個相等底角都計入三內角和；所得三角皆為正角，且相加等於180度，因此條件一致。"],
+        "reasoningSteps": ["以55.5°＋62.25°＋62.25°＝180°驗算，並確認兩個底角確實相等。"],
+        "commonErrors": ["角和方程只放入一個底角，漏掉等腰三角形有兩個同為3x＋6度的底角。"]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u16-s001-lecture-r1",
+      "expectedContentSha256": "c43ad30956ccb508cf51fd73ead6e6b98d54c09159a0b76e84c90f77f0a20b4d",
+      "appendArray": {
+        "learningOutcomes": [
+          "能從已知邊角的數量與相對位置選擇有效全等判定，並以反例說明AAA與一般SSA的限制。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "已知 AB=DE、BC=EF、CA=FD，判斷 △ABC 與 △DEF。",
+            "solutionSteps": [
+              "三組對應邊分別相等。",
+              "符合 SSS 判定。",
+              "依A對D、B對E、C對F的端點順序寫全等式並再次核對三邊。"
+            ],
+            "answer": "△ABC≅△DEF（SSS）。",
+            "why": "三組對應邊已各自相等，SSS會唯一固定三角形的形狀與大小；再按共同端點排列頂點，可避免判定正確卻把全等式順序寫錯。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "已知 AB=DE、AC=DF、∠A=∠D，判斷所用條件。",
+            "solutionSteps": [
+              "∠A 位在 AB 與 AC 之間，∠D 位在 DE 與 DF 之間。",
+              "兩邊及夾角相等。",
+              "確認∠A與∠D分別是兩組已知邊的共同端點角。"
+            ],
+            "answer": "可用 SAS 判定全等。",
+            "why": "兩條已知邊在A與D相交，所給角也位於這兩個共同端點，所以它確實是夾角；這個位置檢查正是SAS與一般SSA的分界。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩三角形的三個角都分別為 40°、60°、80°，能否判定全等？",
+            "solutionSteps": [
+              "三角相等只固定形狀。",
+              "邊長可以成同比例放大或縮小。",
+              "以相同角度但邊長放大兩倍的三角形作反例，排除全等。"
+            ],
+            "answer": "不能；AAA 只能保證相似。",
+            "why": "三個角只固定形狀，將所有邊同比例放大仍保留40°、60°、80°，卻不能完全重合，因此AAA不足以證明大小相同。這個反例直接顯示尺度仍未固定。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "若 △PQR≅△XYZ，且 P 對應 X、Q 對應 Y，則 QR 對應哪一邊？",
+            "solutionSteps": [
+              "剩餘頂點 R 對應 Z。",
+              "QR 連接 Q、R，因此對應 YZ。",
+              "將Q、R的對應點Y、Z連成對應邊YZ。"
+            ],
+            "answer": "YZ。",
+            "why": "全等式同一位置的頂點必互相對應；Q對Y且R對Z，所以連接Q、R的線段只能對應連接Y、Z的線段。線段端點的配對因此沒有其他可能。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "兩個直角三角形的斜邊皆為 10，且一股皆為 6，能否判定全等？",
+            "solutionSteps": [
+              "兩圖均為直角三角形。",
+              "斜邊與一股分別相等。",
+              "把直角條件與斜邊、一股相等合併，套用RHS。"
+            ],
+            "answer": "能，用 RHS。",
+            "why": "兩圖都先有相等直角，再給斜邊與一股分別相等，這是直角三角形專用的RHS資料，足以排除一般SSA可能出現的二解。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s002-lecture-r1",
+      "expectedContentSha256": "5c8efbca69c89a13750bb88a957cdc857618ef186685696d66fe14f7dabc4dd7",
+      "appendArray": {
+        "learningOutcomes": [
+          "能把已知、中點、角平分線、對頂角與共用邊依邏輯順序串成不循環的全等證明。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "AD 平分 ∠BAC，且 AB=AC。證明 △ABD≅△ACD。",
+            "solutionSteps": [
+              "AB=AC（已知）。",
+              "∠BAD=∠CAD（角平分線定義）。",
+              "AD=AD（共用邊）。",
+              "兩邊及夾角相等。",
+              "三項資料依邊、夾角、邊排列，因此使用SAS完成結論。"
+            ],
+            "answer": "△ABD≅△ACD（SAS）。",
+            "why": "AB與AC及共用邊AD分別對應，角平分線又給出兩邊之間的夾角相等；三項資料依SAS排列，證明沒有偷用待證結論。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "M 是 AB 中點，CM⊥AB。證明 △AMC≅△BMC。",
+            "solutionSteps": [
+              "AM=MB（中點定義）。",
+              "∠AMC=∠BMC=90°（垂直）。",
+              "CM=CM（共用邊）。",
+              "將AM對MB、MC對MC及兩個直角依共同頂點配對。"
+            ],
+            "answer": "△AMC≅△BMC（SAS）。",
+            "why": "中點定義提供AM＝MB，垂直提供兩個90°夾角，共用邊提供MC＝MC；每一行都有獨立理由，才能合法使用SAS。資料完整且角確為夾角。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "兩直線 AB 與 CD 交於 O，且 AO=BO、CO=DO。證明 △AOC≅△BOD。",
+            "solutionSteps": [
+              "AO=BO、CO=DO（已知）。",
+              "∠AOC=∠BOD（對頂角）。",
+              "兩邊及夾角相等。",
+              "兩組已知邊夾著相等的對頂角，因此依SAS寫全等式。"
+            ],
+            "answer": "△AOC≅△BOD（SAS）。",
+            "why": "AO與BO、CO與DO是兩組對應邊，而相交直線給出它們之間的對頂角相等；夾角位置正確，所以SAS可以完成證明。端點與角的位置也完全吻合。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "已證 △PQR≅△XYZ，且 PQ=7、∠R=48°。求 XY 與 ∠Z。",
+            "solutionSteps": [
+              "全等式給 P↔X、Q↔Y、R↔Z。",
+              "PQ 對應 XY，∠R 對應 ∠Z。",
+              "依P對X、Q對Y、R對Z讀出對應邊與對應角的數值。"
+            ],
+            "answer": "XY=7，∠Z=48°。",
+            "why": "既然全等式已依序給P對X、Q對Y、R對Z，就應直接使用全等三角形對應量相等，不必重新測量或再次判定全等。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s003-lecture-r1",
+      "expectedContentSha256": "0350a55e130fb9e49bd530dfbfab74b2f5be5fd94144c294db3aa33eb95383fe",
+      "appendArray": {
+        "learningOutcomes": [
+          "能先檢查三角形存在性，再依相等邊辨認腰、底邊、頂角與等邊的包含關係。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "△ABC 中 AB=AC，指出腰、底邊、頂角與底角。",
+            "solutionSteps": [
+              "相等邊 AB、AC 為腰。",
+              "共同端點 A 為頂角頂點，BC 為底邊。",
+              "由腰的共同端點與剩餘第三邊，定位頂角和兩個底角。"
+            ],
+            "answer": "腰 AB、AC；底邊 BC；頂角 ∠A；底角 ∠B、∠C。",
+            "why": "腰由相等邊決定，頂角在兩腰共同端點，底邊則是剩餘第三邊；依定義定位後，即使旋轉圖形，各部件名稱也不會改變。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "三邊長為 5、5、8 的三角形屬於哪一類？",
+            "solutionSteps": [
+              "5+5>8，可形成三角形。",
+              "有兩邊相等。",
+              "確認最短兩邊和大於最長邊後，再依兩邊相等分類。"
+            ],
+            "answer": "等腰三角形。",
+            "why": "長度資料要先通過三角形不等式，確認確有三角形後，兩條5相等才足以把圖形分類為等腰，而非只看外觀。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "三邊長為 6、6、6 的三角形是否也是等腰三角形？",
+            "solutionSteps": [
+              "三邊全相等，所以是等邊。",
+              "任取兩邊也相等，符合至少兩邊相等。",
+              "以『至少兩邊相等』檢查等邊三角形確實包含在等腰類別。"
+            ],
+            "answer": "是，等邊三角形是等腰三角形的特殊情形。",
+            "why": "本課的等腰定義是至少兩邊相等，三邊全相等當然滿足其中任兩邊相等，因此等邊是等腰的一個特殊情形。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "圖上 AB、BC 有相同刻痕，CA 無刻痕，哪一角是頂角？",
+            "solutionSteps": [
+              "相等邊 AB、BC 的共同端點是 B。",
+              "頂角位於兩腰交點。",
+              "兩條相等邊共同端點為B，所以其頂角是∠B。"
+            ],
+            "answer": "∠B。",
+            "why": "相同刻痕表示AB＝BC，兩腰共同端點是B，所以∠B才是頂角；這個判斷依標記與端點，不受紙面上下方向影響。底邊因而是AC，底角在A、C。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s004-lecture-r1",
+      "expectedContentSha256": "7a08768062d32c310934cc49b3491ec8265658e8f156b11e79612945ca053c29",
+      "appendArray": {
+        "learningOutcomes": [
+          "能區分SSS、SAS與一般SSA，並以共同端點確認夾角及全等式的頂點順序。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "AB=DE=5、BC=EF=7、CA=FD=8，判斷兩三角形。",
+            "solutionSteps": [
+              "三組對應邊分別相等。",
+              "邊的端點對應為 A↔D、B↔E、C↔F。",
+              "由三組邊的共同端點確認A對D、B對E、C對F。"
+            ],
+            "answer": "△ABC≅△DEF（SSS）。",
+            "why": "三個邊長5、7、8在兩圖中一一相等，且依共同端點建立一致的頂點配對，才能同時得到SSS判定與正確全等式。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "AB=PQ、AC=PR、∠A=∠P，判斷條件。",
+            "solutionSteps": [
+              "∠A 是 AB、AC 的夾角。",
+              "∠P 是 PQ、PR 的夾角。",
+              "兩組已知邊與共同端點角一一對應，因此套用SAS。"
+            ],
+            "answer": "可用 SAS 判定。",
+            "why": "∠A正好夾在AB與AC之間，∠P正好夾在PQ與PR之間；兩邊及其夾角對應相等，SAS足以唯一固定三角形。其餘頂點對應也隨之唯一確定。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "AB=DE、BC=EF、∠A=∠D，能否用 SAS？",
+            "solutionSteps": [
+              "兩已知邊 AB、BC 的夾角是 ∠B。",
+              "給定的是 ∠A，不是夾角。",
+              "因給定角不是夾角，保留一般SSA可能有兩種圖形的結論。"
+            ],
+            "answer": "不能直接用 SAS；資料型態為 SSA。",
+            "why": "AB與BC的夾角應是∠B，題目卻給∠A；非夾角配合兩邊可能產生兩個第三頂點位置，所以不能誤套SAS。這正是一般SSA的二解風險。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "M 為 AB 中點，CM 為共用邊，且 AC=BC。證明 △AMC≅△BMC。",
+            "solutionSteps": [
+              "AM=MB（中點）。",
+              "CM=CM（共用邊）。",
+              "AC=BC（已知）。",
+              "三組邊AM－MB、CM－CM、AC－BC齊備後套用SSS。"
+            ],
+            "answer": "△AMC≅△BMC（SSS）。",
+            "why": "中點、共用邊與已知等腰條件分別提供三組邊相等；將三組資料完整列出後，SSS直接證明兩個小三角形全等。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "AD 平分 ∠A，AB=AC。證明 △ABD 與 △ACD 全等。",
+            "solutionSteps": [
+              "AB=AC。",
+              "∠BAD=∠CAD。",
+              "AD=AD。",
+              "確認∠BAD與∠CAD是AB、AD和AC、AD各自的夾角。"
+            ],
+            "answer": "△ABD≅△ACD（SAS）。",
+            "why": "AD同時出現在兩個三角形，角平分線又把頂角分成相等夾角；配合AB＝AC，資料恰好是邊、角、邊。三項都具有明確且獨立的來源。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s005-lecture-r1",
+      "expectedContentSha256": "eead0ff25a020636e02e8f4240f553762729d99c00fdd9ab6f29a1c318ec6519",
+      "appendArray": {
+        "learningOutcomes": [
+          "能依已知邊相對於兩個角的位置區分ASA與AAS，並寫出一致的頂點對應。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "∠A=∠D、AB=DE、∠B=∠E，判定 △ABC 與 △DEF。",
+            "solutionSteps": [
+              "AB 與 DE 分別連接兩個已知角的頂點。",
+              "兩角及夾邊相等。",
+              "依A對D、B對E及剩餘C對F寫出全等式。"
+            ],
+            "answer": "△ABC≅△DEF（ASA）。",
+            "why": "AB與DE都連接兩個已知角的頂點，所以是夾邊；兩角及夾邊固定形狀與尺度，依ASA可得到唯一的頂點對應。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "∠A=∠D、∠B=∠E、AC=DF，判定。",
+            "solutionSteps": [
+              "兩角已相等。",
+              "AC、DF 不是 A-B 與 D-E 之間的夾邊。",
+              "確認AC與DF不是兩個已知角之間的夾邊，因此選AAS。"
+            ],
+            "answer": "可用 AAS。",
+            "why": "AC與DF只接觸其中一個已知角，並不是A、B與D、E之間的夾邊；兩角加非夾邊的正確名稱因此是AAS。邊的位置判讀不可省略。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "△ABC 與 △DEF 中，∠A=50°、∠B=70°、∠D=50°、∠E=70°，且 BC=EF。",
+            "solutionSteps": [
+              "兩組角分別相等。",
+              "BC、EF 為非夾邊。",
+              "由A對D、B對E推出C對F，再以非夾邊完成AAS。"
+            ],
+            "answer": "兩三角形全等（AAS）。",
+            "why": "兩組角相等先固定A對D、B對E，剩餘頂點自然是C對F；BC與EF是非夾邊且對應相等，所以AAS成立。全等式順序也由此確定。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "兩直角三角形另有一銳角相等，且兩直角頂點間對應股相等，如何判定？",
+            "solutionSteps": [
+              "兩直角相等，另一組銳角相等。",
+              "給定股連接兩已知角的頂點。",
+              "相等的股連接直角與銳角頂點，正好是兩已知角的夾邊。"
+            ],
+            "answer": "可用 ASA。",
+            "why": "直角與另一銳角是兩組對應角，而給定股連接兩角頂點；資料位置是兩角及夾邊，應使用ASA而不是看到直角就選RHS。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "已知 ∠A=∠D、∠B=∠E，但沒有邊長，能否判定全等？",
+            "solutionSteps": [
+              "可由內角和得第三角相等。",
+              "仍只有 AAA，大小未固定。",
+              "舉出同比例放大後三角仍相等但邊長改變的反例。"
+            ],
+            "answer": "不能判定全等。",
+            "why": "兩角可以決定第三角及形狀，卻沒有固定任何尺度；同比例放大仍保留全部角度，所以沒有邊長時只能得到相似。"
+          }
+        ]
+      }
+    },
+    {
+      "lectureId": "u16-s006-lecture-r1",
+      "expectedContentSha256": "7f2dbe01b29601460b4aed939d580dfea579f59a6a3a8d7488cf9c0e289787ea",
+      "appendArray": {
+        "learningOutcomes": [
+          "能由等邊對等角、等角對等邊及三線合一性質解角度與證明垂直或平分關係。"
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {
+            "exampleId": "L1",
+            "prompt": "AB=AC，∠A=40°，求 ∠B、∠C。",
+            "solutionSteps": [
+              "∠B=∠C。",
+              "兩底角和為 180°−40°=140°。",
+              "每個底角為 70°。",
+              "將140°平均分給兩個相等底角，並以角和驗算。"
+            ],
+            "answer": "∠B=∠C=70°。",
+            "why": "AB＝AC使兩底角相等，扣除頂角後得到的140°必須平均分配；因此兩角各70°，回算三內角和也正好180°。兩個底角均不可漏算。"
+          },
+          {
+            "exampleId": "L2",
+            "prompt": "等腰三角形一個底角為 52°，求頂角。",
+            "solutionSteps": [
+              "另一底角也為 52°。",
+              "頂角=180°−104°。",
+              "從180°扣除兩個52°，得到唯一頂角76°。"
+            ],
+            "answer": "76°。",
+            "why": "一個底角52°代表另一底角也為52°，頂角是扣除兩個底角後的剩餘量；若只扣一次就會漏掉等腰性質。回算三角和可再次驗證。"
+          },
+          {
+            "exampleId": "L3",
+            "prompt": "AB=AC，AD 平分 ∠A 且 D 在 BC 上，可推出哪些結論？",
+            "solutionSteps": [
+              "△ABD≅△ACD（SAS）。",
+              "對應邊 BD=DC，對應角 ∠ADB=∠ADC。",
+              "兩角互為鄰補且相等，所以皆 90°。",
+              "相等鄰角又互補，故各為90°，完成垂直結論。"
+            ],
+            "answer": "BD=DC 且 AD⊥BC。",
+            "why": "SAS先證兩個小三角形全等，得到BD＝DC與D點兩鄰角相等；相等又互補的兩角各90°，所以三線合一結論成立。這不是依圖形外觀猜測。"
+          },
+          {
+            "exampleId": "L4",
+            "prompt": "△ABC 中 ∠B=∠C，若 AB=9，求 AC。",
+            "solutionSteps": [
+              "相等角所對邊相等。",
+              "∠B 對 AC，∠C 對 AB。",
+              "∠B所對AC、∠C所對AB，依等角對等邊傳遞長度。"
+            ],
+            "answer": "AC=9。",
+            "why": "相等角所對的邊才相等，∠B對AC而∠C對AB；把對邊位置配對正確後，已知AB＝9便直接推出AC＝9。不能改用角旁的任意鄰邊。"
+          },
+          {
+            "exampleId": "L5",
+            "prompt": "等腰三角形頂角與底角比為 2:1，求三角。",
+            "solutionSteps": [
+              "設底角 x，頂角 2x。",
+              "2x+x+x=180°，得 x=45°。",
+              "代回90°、45°、45°同時核對比例與內角和。"
+            ],
+            "answer": "頂角 90°，兩底角各 45°。",
+            "why": "設底角x時必須在角和中放入兩個x，頂角則為2x；解得x＝45°後，90°、45°、45°同時符合比例與180°。比例與內角和兩項條件都完成驗算。"
+          }
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

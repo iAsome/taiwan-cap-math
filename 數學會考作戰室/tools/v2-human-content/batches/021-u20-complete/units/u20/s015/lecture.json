@@ -121,7 +121,8 @@
         "SAS全等。",
         "對應邊相等。"
       ],
-      "answer": "AB＝AC。"
+      "answer": "AB＝AC。",
+      "why": "中點、公共邊與垂直分別提供兩邊及夾角，符合 SAS；完成全等後再按正確對應順序推出 AB 與 AC 相等，不能先借用待證結論。"
     },
     {
       "exampleId": "L2",
@@ -131,7 +132,8 @@
         "鈍角外心在外。",
         "直角外心在邊上。"
       ],
-      "answer": "規格需限制不共線並另判角型。"
+      "answer": "規格需限制不共線並另判角型。",
+      "why": "規格同時忽略存在性與位置：共線三點沒有有限外心，而非共線時外心仍可能在內、邊上或外部，須依角型分類。"
     }
   ],
   "commonMistakes": [
@@ -149,6 +151,11 @@
       "mistake": "數學外心在外就說方案無數學解。",
       "why": "存在性與可行性不同。",
       "correction": "先承認外心，再評估場地。"
+    },
+    {
+      "mistake": "圖上看似垂直或等長就直接寫入證明。",
+      "why": "未按比例圖的外觀不是正式已知，量測也有誤差。",
+      "correction": "只引用文字、圖例符號或前一步已證結果，並註明每項來源。"
     }
   ],
   "selfCheck": [
@@ -208,5 +215,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "2f53bfebe0d700c15d36311667cf538168ded4461846eaa5f3272bb7163dea04"
+  "contentSha256": "62f47f912855da29fa4164f517a2fb318500f130317619c6e426a1413b80e440"
 }

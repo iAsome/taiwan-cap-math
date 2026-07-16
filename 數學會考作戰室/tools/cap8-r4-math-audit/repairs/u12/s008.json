@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u12",
+  "batch": "013-u12-complete",
+  "skills": ["s008"],
+  "mc": [
+    {"questionId":"u12-s008-v001","expectedContentSha256":"c962ee17ce6badb7727a298b68100fb78f1916e402bb3b7eb924f02553be3c68","appendText":{"explanation":"依分配律，x要分別乘x與5，常數2也要分別乘x與5，得到x²、5x、2x、10四項。合併同類項5x＋2x＝7x，所以完整結果為x²＋7x＋10，三個係數都可由四項乘積逐一回查。","misconceptionTarget":"只乘兩個首項與兩個常數，遺漏兩個交叉乘積。"}},
+    {"questionId":"u12-s008-v002","expectedContentSha256":"4d4959566bf58e151cc836f946668702e21ebf71f5c94ab3992834d97914644a","appendText":{"explanation":"完整展開為2x²＋6x－x－3，其中一次項來自兩個交叉乘積，合併後是5x。題目問的是一次項係數，因此要取5，而不是寫成5x或只保留6。","misconceptionTarget":"只計算2x乘3，漏掉負一乘x所產生的負x。"}},
+    {"questionId":"u12-s008-v003","expectedContentSha256":"dffa8e306c727704d0ee332da39fe137cafd6299a2e79434b1297ac320e252fc","appendText":{"explanation":"把候選式完整展開可得x²＋4x＋x＋4，合併後正是x²＋5x＋4。三個係數逐項相同，因此對所有x都成立，不是只在某個代入值巧合相等。","misconceptionTarget":"只代入x等於零便宣稱恆等，或展開時漏掉其中一個交叉項。"}},
+    {"questionId":"u12-s008-v004","expectedContentSha256":"44d7916c677133aa134bad9abd3c88b16812aaec3f6572f134fe3d6eb2ffbd6f","appendText":{"explanation":"四個乘積為x²、6x、2x與12，所以正確展開是x²＋8x＋12。原主張的二次項與常數項都正確，只有一次項把兩個交叉項漏合併成8x，故應選一次項錯誤。","misconceptionTarget":"把括號中的6直接當一次項係數，忘記還有2x交叉項。"}},
+    {"questionId":"u12-s008-v005","expectedContentSha256":"3dfe4543a8dacc0508a85ece0c776717696a8fd83ea76c2fa1d05b240df609df","appendText":{"explanation":"依序相乘得到3x²、15x、－2x、－10，兩個一次項合併為13x，因此展開式正是3x²＋13x－10。首項、一次項與常數項三者都吻合，所以候選分解確實正確。","misconceptionTarget":"把負二乘x或負二乘五的符號算錯，造成一次項或常數項錯誤。"}},
+    {"questionId":"u12-s008-v006","expectedContentSha256":"65b8852107875e8a9ce01d2ccebdfaa9657eeee57b4ea6ada7788bf5fd67ad64","appendText":{"explanation":"一般展開為2x²＋(p－6)x－3p。比對一次項係數p－6＝－1可得p＝5，再檢查常數－3p＝－15也成立；兩個係數條件同時吻合，才能確認答案。","misconceptionTarget":"只用一次項或常數項其中一個條件求值，沒有用另一項回查。"}},
+    {"questionId":"u12-s008-v007","expectedContentSha256":"702bc03170fa5f044fff542061586b7190e0481bb4737f5325c83e80655c840c","appendText":{"explanation":"代入x＝0只能知道兩式在單一點相等，不足以證明對所有x恆等。本題另將P完整展開，得到x²＋7x＋6，這時才可證明P與Q的每個係數都相同。","misconceptionTarget":"因為本例結論恰好正確，就誤認單點代入也是有效的恆等證明。"}},
+    {"questionId":"u12-s008-v008","expectedContentSha256":"58bd534b0c5f2b9dc7463471b2adb9fdb11d31e1f19bf43f69e6b9b133c80742","appendText":{"explanation":"候選式展開為2x²＋8x－3x－12＝2x²＋5x－12。二次項係數2與常數－12都和原式相同，第一次出現差異的是一次項係數5與6，因此不能因首尾相同就接受。","misconceptionTarget":"只看到首項與常數項吻合便停止，沒有檢查中間一次項係數。"}},
+    {"questionId":"u12-s008-v009","expectedContentSha256":"be8af815fa8b5de3801a32d961cf40d058c6a18c93903d2335316cbae0f6d224","appendText":{"explanation":"要推翻恆等主張，只需找到一個允許值使左右不同。代入x＝1時左式為3×4＝12，右式為1＋6＋6＝13，兩值不等，所以這是直接且充分的反例。","misconceptionTarget":"把某一係數相同或代入零時相等，誤當成能推翻主張的反例。"}},
+    {"questionId":"u12-s008-v010","expectedContentSha256":"81b249839db5f2598cdc7205fb59b4d8b988b63f211123fb354e6bcd4d3eb0c4","appendText":{"explanation":"依分配律展開得n²＋7n＋4n＋28，合併兩個一次項後為n²＋11n＋28，與試算表結果完全一致。完整係數比對證明此公式對所有n都成立。","misconceptionTarget":"把4與7的乘積二十八誤當一次項係數，或只代入一筆資料驗證。"}},
+    {"questionId":"u12-s008-v011","expectedContentSha256":"a5348c692c9aa344741f4073f03d46051a7813bc67fa227c786161ba484fdc98","appendText":{"explanation":"完整展開為3x²－15x＋2x－10，合併一次項得到3x²－13x－10，三個係數都與程式輸出相同。這種完整展開比只檢查首項、常數或單點更能直接證實恆等。","misconceptionTarget":"只核對首項、常數項或x等於零的結果，就宣稱整個公式正確。"}},
+    {"questionId":"u12-s008-v012","expectedContentSha256":"a50927286e7d205838d6568dcd95e5b523db1671d13dbd4a98439c64f09fc93e","appendText":{"explanation":"候選式展開為2p²＋2p＋3p＋3＝2p²＋5p＋3。二次項係數2與常數3都吻合，但一次項係數應為5而不是原式的7，因此唯一不符的是一次項係數，系統應標記此欄。","misconceptionTarget":"只比對首項與常數項便接受候選分解，漏查兩個交叉項的和。"}}
+  ],
+  "constructedResponse": [
+    {"questionId":"u12-s008-cr001","expectedContentSha256":"bbbe406abf690543a17a439885f75a57371f235962ac772cda42489b8b9bc4d7","set":{"fullCreditSolution":["依分配律列出四個乘積：(2x－5)(x＋3)＝2x²＋6x－5x－15，每個括號內的項都不可遺漏。","合併同類項6x－5x＝x，整理為2x²＋x－15。","逐項比對後，二次項係數2、一次項係數1及常數－15全部吻合，所以候選分解正確。"],"reasoningSteps":["先完整展開四個乘積，不能用單一代入值取代恆等檢查。","合併同類項並按降冪排列，避免漏看一次項。","比較二次、一次與常數三個係數後，才作正確結論。"],"commonErrors":["漏掉負五乘x的交叉項，使一次項誤成6x。","把負五乘正三算成正十五，導致常數符號錯誤。"]}},
+    {"questionId":"u12-s008-cr002","expectedContentSha256":"ea84d679ea85d5199a0a1d03bc17f330d9f686bea4d5512d89a3628ae01d1c12","set":{"fullCreditSolution":["代入x＝0只會檢查常數項；不同多項式可能在同一點相等，因此這個證據不足以證明恆等。","完整展開左式：(x＋2)(x＋7)＝x²＋9x＋14，與右式x²＋8x＋14的一次項係數不同。","也可代入x＝1作反例：左式為24、右式為23。故同學的證據不足，而且原主張確實錯誤。"],"reasoningSteps":["先分開評估證明方法是否充分，以及原命題實際是真是假。","以完整展開比較每個係數，找出一次項9與8不一致。","再用一個使左右不等的允許值作反例，確認主張可被推翻。"],"commonErrors":["只說單點證據不足便直接斷言式子錯誤，沒有另行展開或找反例。","因x等於零時兩邊相同，就誤認所有x都會相同。"]}}
+  ],
+  "lectures": [
+    {"lectureId":"u12-s008-lecture-r1","expectedContentSha256":"b5e88dd67bc47ebdc94cb311a9ad78a7804045d8f9a634ca13796b6d250a5b18","appendArray":{"conceptNarrative":["驗證候選因式分解時，要把乘積完整展開、合併同類項並按降冪排列，再逐項比較二次項、一次項與常數項；首尾相同仍可能在交叉項出錯。單點代入只能檢查該數值，不能證明恆等，但找到一個左右不等的反例就足以推翻主張。若式中含未知係數，應至少用一個係數求值，再以其他係數回查，避免只滿足局部條件。"]},"set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"檢查(x＋2)(x＋7)的完整展開。","solutionSteps":["列出x²、7x、2x、14四個乘積。","合併同類項7x＋2x＝9x。","按降冪整理為x²＋9x＋14。"],"answer":"x²＋9x＋14","why":"兩個交叉項共同決定一次項係數，若只乘首項與常數就會漏掉9x；把四項逐一寫出再合併，是最直接也最可靠的檢查方式。"},
+      {"exampleId":"L2","prompt":"檢查(2x－3)(x＋4)是否等於2x²＋5x－12。","solutionSteps":["展開得2x²＋8x－3x－12。","合併一次項8x－3x＝5x。","三個係數逐項比對後完全相同。"],"answer":"候選正確","why":"負三會同時產生負的交叉項與負常數，兩處符號都必須保留；展開後首項、一次項與常數全部吻合，才足以判定恆等。"},
+      {"exampleId":"L3","prompt":"判斷(x＋1)(x＋6)是否等於x²＋5x＋6。","solutionSteps":["展開左式為x²＋6x＋x＋6。","合併得x²＋7x＋6。","比較一次項係數7與5，判定不相等。"],"answer":"不是恆等式","why":"二次項與常數項雖然相同，一次項仍不一致；這說明只檢查首尾兩項不夠，交叉項合併後的係數也必須核對。"},
+      {"exampleId":"L4","prompt":"若(3x＋p)(x－2)的一次項係數為－1，求p。","solutionSteps":["展開一次項為－6x＋px＝(p－6)x。","比對p－6＝－1，解得p＝5。","代回完整展開檢查其他係數沒有衝突。"],"answer":"p＝5","why":"未知係數來自兩個交叉乘積的和，不能只看其中一個；求得p後再代回展開式，可確認設定的係數與其餘項相容。"}
+    ]}}
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

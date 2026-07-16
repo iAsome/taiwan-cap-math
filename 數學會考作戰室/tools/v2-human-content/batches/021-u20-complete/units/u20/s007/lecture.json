@@ -95,6 +95,11 @@
       "step": 4,
       "instruction": "以共同垂距為半徑畫內切圓。",
       "check": "是否三邊都相切？"
+    },
+    {
+      "step": 5,
+      "instruction": "檢查三個半徑是否分別垂直三邊並在切點終止。",
+      "check": "切點不必是邊的中點，也不能用斜距代替半徑。"
     }
   ],
   "workedExamples": [
@@ -103,17 +108,22 @@
       "prompt": "I為內心，∠A=80°。",
       "solutionSteps": [
         "AI平分∠A。",
-        "80°÷2=40°。"
+        "80°÷2=40°。",
+        "寫出兩個相等的分角。"
       ],
-      "answer": "∠BAI=∠IAC=40°。"
+      "answer": "∠BAI=∠IAC=40°。",
+      "why": "內心位於每一個內角的角平分線上，所以AI把80°平均分成兩份；兩份各40°且相加回80°，可直接驗算，也排除了把AI誤當中線的讀法。"
     },
     {
       "exampleId": "L2",
       "prompt": "I到AB距離3公分。",
       "solutionSteps": [
-        "內心到三邊垂距相等。"
+        "確認距離取垂線段。",
+        "內心到三邊垂距相等。",
+        "把共同垂距寫成內切圓半徑。"
       ],
-      "answer": "到BC、CA也都是3公分。"
+      "answer": "到BC、CA也都是3公分。",
+      "why": "I為內心時，到AB、BC、CA的垂直距離同為內切圓半徑；已知其中一段為3公分，其餘兩段必同為3公分，三段都必須在垂足處與邊成直角。"
     }
   ],
   "commonMistakes": [
@@ -131,6 +141,11 @@
       "mistake": "以到頂點距離作內切圓半徑。",
       "why": "內切圓與邊相切。",
       "correction": "用到邊垂距。"
+    },
+    {
+      "mistake": "把角平分線畫成只平分圖面上的開口外觀。",
+      "why": "圖形可能不按比例，角平分必須由等角作圖或到兩邊等距證明。",
+      "correction": "標出兩個相等角，或驗證交點到角兩邊的垂直距離相等。"
     }
   ],
   "selfCheck": [
@@ -188,5 +203,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "520469cd69ea802a758b3cfc068022898d936b8e6ca7e6095000d37104b3a3d2"
+  "contentSha256": "1a1c634f47bb227ae4056c040f60f3e5d1a1a452722ee4d610a912dafde94860"
 }

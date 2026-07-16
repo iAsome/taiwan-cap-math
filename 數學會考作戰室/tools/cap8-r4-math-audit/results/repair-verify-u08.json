@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "unitId": "u08",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "009-u08-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-009-u08-complete\",\n  \"unitId\": \"u08\",\n  \"lockedSkillCount\": 14,\n  \"lectureCount\": 14,\n  \"mcQuestionCount\": 168,\n  \"constructedResponseCount\": 28,\n  \"semanticReviewCount\": 168,\n  \"figureCount\": 4,\n  \"difficultyCounts\": {\n    \"basic\": 42,\n    \"standard\": 42,\n    \"advanced\": 42,\n    \"literacy\": 42\n  },\n  \"answerIndexCounts\": [\n    42,\n    42,\n    42,\n    42\n  ],\n  \"perSkillDifficultyDistributionVerified\": true,\n  \"perSkillAnswerDistributionVerified\": true,\n  \"uniqueAnswerSequencesVerified\": true,\n  \"contentHashesVerified\": true,\n  \"semanticReviewHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"exactAndNormalizedDuplicateScanVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseAndTitlePolicyVerified\": true,\n  \"figureBoundaryVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"centralCoordinatorApprovalRequired\": true,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 14\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-009-u08-complete",
+          "unitId": "u08",
+          "lockedSkillCount": 14,
+          "lectureCount": 14,
+          "mcQuestionCount": 168,
+          "constructedResponseCount": 28,
+          "semanticReviewCount": 168,
+          "figureCount": 4,
+          "difficultyCounts": {
+            "basic": 42,
+            "standard": 42,
+            "advanced": 42,
+            "literacy": 42
+          },
+          "answerIndexCounts": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "perSkillDifficultyDistributionVerified": true,
+          "perSkillAnswerDistributionVerified": true,
+          "uniqueAnswerSequencesVerified": true,
+          "contentHashesVerified": true,
+          "semanticReviewHashesVerified": true,
+          "fileManifestVerified": true,
+          "exactAndNormalizedDuplicateScanVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseAndTitlePolicyVerified": true,
+          "figureBoundaryVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "centralCoordinatorApprovalRequired": true,
+          "stagingPresent": true,
+          "emittedModuleCount": 14
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-009-u08-complete\",\n  \"unitId\": \"u08\",\n  \"lockedSkillCount\": 14,\n  \"lectureCount\": 14,\n  \"mcQuestionCount\": 168,\n  \"constructedResponseCount\": 28,\n  \"semanticReviewCount\": 168,\n  \"figureCount\": 4,\n  \"difficultyCounts\": {\n    \"basic\": 42,\n    \"standard\": 42,\n    \"advanced\": 42,\n    \"literacy\": 42\n  },\n  \"answerIndexCounts\": [\n    42,\n    42,\n    42,\n    42\n  ],\n  \"perSkillDifficultyDistributionVerified\": true,\n  \"perSkillAnswerDistributionVerified\": true,\n  \"uniqueAnswerSequencesVerified\": true,\n  \"contentHashesVerified\": true,\n  \"semanticReviewHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"exactAndNormalizedDuplicateScanVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseAndTitlePolicyVerified\": true,\n  \"figureBoundaryVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"centralCoordinatorApprovalRequired\": true,\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 14\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-009-u08-complete",
+          "unitId": "u08",
+          "lockedSkillCount": 14,
+          "lectureCount": 14,
+          "mcQuestionCount": 168,
+          "constructedResponseCount": 28,
+          "semanticReviewCount": 168,
+          "figureCount": 4,
+          "difficultyCounts": {
+            "basic": 42,
+            "standard": 42,
+            "advanced": 42,
+            "literacy": 42
+          },
+          "answerIndexCounts": [
+            42,
+            42,
+            42,
+            42
+          ],
+          "perSkillDifficultyDistributionVerified": true,
+          "perSkillAnswerDistributionVerified": true,
+          "uniqueAnswerSequencesVerified": true,
+          "contentHashesVerified": true,
+          "semanticReviewHashesVerified": true,
+          "fileManifestVerified": true,
+          "exactAndNormalizedDuplicateScanVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseAndTitlePolicyVerified": true,
+          "figureBoundaryVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "centralCoordinatorApprovalRequired": true,
+          "stagingPresent": true,
+          "emittedModuleCount": 14
+        }
+      }
+    }
+  ]
+}

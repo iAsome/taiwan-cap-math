@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "弧長沿著曲線量，弦長則走兩點間的直線，除非兩點重合，兩者通常不同。",
     "半圓弧長是整個圓周長的一半，四分之一圓弧長是四分之一。",
-    "弧長與中心角成正比，這個比例觀念是正式公式的基礎。"
+    "弧長與中心角成正比，這個比例觀念是正式公式的基礎。",
+    "任意中心角的弧長都可視為整圓周長按角度比例分配；答案是曲線長度，應使用與半徑相同的長度單位，不能寫成平方單位。"
   ],
   "formalDefinitions": [
     {
@@ -114,6 +115,11 @@
       "step": 4,
       "instruction": "保留 π 或依題意取近似值並標單位。",
       "check": "完成此步後，確認仍在「弧長」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "用弧長除以整圓周長，確認所得比例等於中心角除以 360°。",
+      "check": "答案單位是否為長度，且中心角越大時弧長也隨之增加？"
     }
   ],
   "workedExamples": [
@@ -125,7 +131,8 @@
         "取一半得 6π。"
       ],
       "answer": "6π。",
-      "level": "basic"
+      "level": "basic",
+      "why": "半圓弧只占整個圓周的一半；半徑 6 的整圓周長是 12π，取一半得 6π。題目只問曲線弧長，因此不把直徑另加進答案。"
     },
     {
       "exampleId": "s004-L2",
@@ -135,7 +142,8 @@
         "取四分之一得 4π。"
       ],
       "answer": "4π。",
-      "level": "standard"
+      "level": "standard",
+      "why": "四分之一圓的中心角為 90°，占整圓 1/4；半徑 8 的整圓周長 16π 乘 1/4 得 4π，答案仍使用長度單位。九十度只占四分之一，不能誤判為半圓。"
     },
     {
       "exampleId": "s004-L3",
@@ -145,7 +153,8 @@
         "πr=5π。"
       ],
       "answer": "5π。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "直徑 10 必須先除以 2 得半徑 5；半圓弧長是 πr，所以得到 5π。若直接把直徑代入 πr，會把弧長放大一倍。此處答案是曲線長度，單位與直徑相同。"
     },
     {
       "exampleId": "s004-L4",
@@ -155,7 +164,8 @@
         "2π×3×3/4=9π/2。"
       ],
       "answer": "9π/2。",
-      "level": "connection"
+      "level": "connection",
+      "why": "270° 優弧占整圓 3/4，半徑 3 的整圓周長為 6π；兩者相乘得 18π/4，也就是最簡的 9π/2，且大於半圓弧長。優弧超過半圓，結果也必須大於 3π。"
     }
   ],
   "difficultyConnections": {
@@ -205,7 +215,7 @@
     {
       "figureId": "u19-s004-fig001",
       "purpose": "圓上 A、B 之間以粗線標示曲線弧長，並用虛線畫弦 AB，提醒兩者不同。",
-      "altText": "圓上 A、B 之間以粗線標示曲線弧長，並用虛線畫弦 AB，提醒兩者不同。，不可按比例目測。"
+      "altText": "圓上 A、B 之間以粗線標示曲線弧長，並用虛線畫弦 AB，提醒兩者不同，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -240,5 +250,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "74792404aa1d8bc65bc36db078eaf63e05390933a858a695fe36eb6bd4a7fa9b"
+  "contentSha256": "f5536e65e839a7799c550038308fc6cedf33c2c3a4fdae3e6419540e86cd8f3d"
 }

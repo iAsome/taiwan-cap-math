@@ -1,0 +1,557 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u20",
+  "batch": "021-u20-complete",
+  "skills": ["s006", "s007", "s008", "s009", "s010"],
+  "mc": [
+    {
+      "questionId": "u20-s006-v001",
+      "expectedContentSha256": "34f336559ae732128e686e62896742a6a5b7d6d736d11780b2aebfdcebed301b",
+      "appendText": {"explanation": "因為垂直平分線上的點到該邊兩端等距，兩條此類直線的交點便同時到三個頂點等距，正好是外接圓圓心。"}
+    },
+    {
+      "questionId": "u20-s006-v002",
+      "expectedContentSha256": "fc1e12de7cc5ccaf29459365166e5dc8880ba872d628d3e4121caa443f676d0d",
+      "appendText": {"explanation": "外心的位置會隨角型改變，所以不保證在三角形內；到三邊等距則是內心的性質，不能與到頂點等距混用。"}
+    },
+    {
+      "questionId": "u20-s006-v003",
+      "expectedContentSha256": "24babc25ab51caf4dc3846f6eca13e84953c813f8fd1013c5ad1cc79e039ec82",
+      "appendText": {
+        "explanation": "圓心到圓上的A、B、C三點都是同一個半徑，因此這個圓心也就是三邊垂直平分線的交點。",
+        "misconceptionTarget": "內切圓接觸三邊，外接圓則通過三個頂點，辨認時必須先看圓與三角形的關係。"
+      }
+    },
+    {
+      "questionId": "u20-s006-v004",
+      "expectedContentSha256": "f4a1137f8e53fbe89defa3b8a1b7503848aa0b7b3e16310c23e3ca9b78bedf0a",
+      "appendText": {"explanation": "作圖時每一條線都必須同時通過邊的中點並垂直該邊；只連中點得到的是中位線，不能定位外心。"}
+    },
+    {
+      "questionId": "u20-s006-v005",
+      "expectedContentSha256": "e9041a869d8333a93e07c6dde542f7e698faeb252a292bc92a0d9b2edef7dd55",
+      "appendText": {"explanation": "斜邊中點到斜邊兩端的距離相等，且依直徑所對圓周角為直角，它到第三個頂點的距離也相同。"}
+    },
+    {
+      "questionId": "u20-s006-v006",
+      "expectedContentSha256": "338cc659ba8bbed6df3c4e0a1cec8b2b9a87469ed6b1822102473b44e7a91923",
+      "appendText": {"explanation": "重合的是各類特殊線的位置，不是外心的定義消失；三邊垂直平分線仍共同通過唯一的對稱中心。"}
+    },
+    {
+      "questionId": "u20-s006-v007",
+      "expectedContentSha256": "b857781d55cb4d7c1a03f503c46c8859fcd6b8f8920e73b676802c8db70cf753",
+      "appendText": {
+        "explanation": "這裡比較的是點O到線段兩端點的距離，應使用垂直平分線逆性質；角平分線處理的是點到角兩邊的垂直距離。",
+        "misconceptionTarget": "看到等距時要先辨認比較的是端點還是直線；端點等距對應垂直平分線，邊距等距才對應角平分線。"
+      }
+    },
+    {
+      "questionId": "u20-s006-v008",
+      "expectedContentSha256": "2835ac77b1ac55063526e6da6cd86c7dd17b1755fc0a1d819ae4424cc2b03638",
+      "appendText": {"explanation": "例如前兩條分別給出OA＝OB與OA＝OC，遞移可得OB＝OC；因此O也符合BC兩端等距的條件。"}
+    },
+    {
+      "questionId": "u20-s006-v009",
+      "expectedContentSha256": "86758348ab4620b06bebd42065dfa009836332725a1a33b9e0a626634295d061",
+      "appendText": {"explanation": "直角三角形的外心在斜邊中點，屬於邊界而非外部；只有鈍角三角形的垂直平分線交點會落在三角形外。"}
+    },
+    {
+      "questionId": "u20-s006-v010",
+      "expectedContentSha256": "1b6b55b6aebdfdda538bc1faa87d453ea143f6ccacfe4a2d592bac24fea5f453",
+      "appendText": {"explanation": "三站不共線可保證兩條垂直平分線有唯一交點；以該點為圓心即可畫出同時通過三站的圓。"}
+    },
+    {
+      "questionId": "u20-s006-v011",
+      "expectedContentSha256": "dc60b029c301cbdcda6229b2d45f7e61e06c132ef05a8ac31b7f0223d258447b",
+      "appendText": {"explanation": "外部位置不會破壞三站等距的數學條件，但會影響土地權屬、施工與服務區界，必須把幾何解和實務可行性分開。"}
+    },
+    {
+      "questionId": "u20-s006-v012",
+      "expectedContentSha256": "b0e6ba2af635aa76731f29b448f54eb67fad82ed39414d3a4c624ba9c8114c17",
+      "appendText": {"explanation": "只檢查位於圖形內或看起來居中都不是定義條件；兩條不同邊的垂直平分線足以唯一定位外心。"}
+    },
+
+    {
+      "questionId": "u20-s007-v001",
+      "expectedContentSha256": "8f30fc036008d7e310be34d1ce4cbb8249cf9d647c5f20d51b51a5b30fdf0b0f",
+      "appendText": {
+        "explanation": "角平分線上的點到該角兩邊的垂直距離相等；兩條內角平分線的交點因此到三邊等距，可作內切圓圓心。",
+        "misconceptionTarget": "四種中心都由三條特殊線共點形成，必須以角平分線、垂直平分線、中線與高的定義逐一區分。"
+      }
+    },
+    {
+      "questionId": "u20-s007-v002",
+      "expectedContentSha256": "2ee0f9c030eb2160e133e2158f93b79da958e61c6bf0880dfd3cd2c5b1320e1a",
+      "appendText": {"explanation": "所謂點到一邊的距離是向該邊所在直線作垂線的長度；若改量斜線段，三個數值不一定相等。"}
+    },
+    {
+      "questionId": "u20-s007-v003",
+      "expectedContentSha256": "230cdee8bd2bf75184af6cd79af45d54b47a113752b5bd1dc3cc3dfac9deb143",
+      "appendText": {
+        "explanation": "半徑在每個切點都垂直三角形的邊，三條半徑等長正好表示圓心到三邊的垂直距離相等。",
+        "misconceptionTarget": "內切圓位在三角形內並貼住三邊；外接圓通過三個頂點，兩者的接觸對象不可互換。"
+      }
+    },
+    {
+      "questionId": "u20-s007-v004",
+      "expectedContentSha256": "0a23d92240d8e9f4e13dc64bd7ffb1525a376a6ce6637d512a9580e258266bfc",
+      "appendText": {"explanation": "任兩個內角的角平分線已同時建立對三邊的等距關係，所以交點唯一；第三條角平分線只是複核。"}
+    },
+    {
+      "questionId": "u20-s007-v005",
+      "expectedContentSha256": "836d9c441df17f7b542ed811be8e9b59d9bb6436f8e690d277d77d9891ce5363",
+      "appendText": {
+        "explanation": "三個內角都小於180°，其內角平分線朝三角形內部延伸並共點，因此鈍角或直角都不會把內心移到外部。",
+        "misconceptionTarget": "外心與垂心的位置會隨角型改變，但內心由內角平分線形成，任何非退化三角形都位於內部。"
+      }
+    },
+    {
+      "questionId": "u20-s007-v006",
+      "expectedContentSha256": "4bc4fece509b74aeea021957442f367511f3b593015bd04f85d987136dc70874",
+      "appendText": {"explanation": "AI通過頂點A與內心I，且I位於∠A的平分線上，所以∠BAI＝∠IAC；題目沒有對邊中點或垂直條件。"}
+    },
+    {
+      "questionId": "u20-s007-v007",
+      "expectedContentSha256": "7c578a870ac09b02d700737a0895440ce215735a5703b320a96f6a8e773d9c87",
+      "appendText": {"explanation": "角內部條件排除了外角平分線；兩個相等的垂距使P具有關於角平分線的對稱位置，故必落在內角平分線上。"}
+    },
+    {
+      "questionId": "u20-s007-v008",
+      "expectedContentSha256": "703c5c763b1fe89a25e7a72c6c48cefd7322cb93b330f880ffb68a5a8fb736d0",
+      "appendText": {"explanation": "兩個等距式共享AB這一邊，串聯後便得I到AC與BC也等距；由角平分線逆性質可判定I在∠C的平分線。"}
+    },
+    {
+      "questionId": "u20-s007-v009",
+      "expectedContentSha256": "2795c296632923baef40b5e5999cc1cc4885802b58a09d875d692b465138ecc2",
+      "appendText": {
+        "explanation": "AE與AF從同一點A接觸同一圓，依同一圓外點的兩切線段定理必有AE＝AF；這不代表E、F平分原邊。",
+        "misconceptionTarget": "切點由半徑垂直切線決定，通常不是三角形邊的中點；只有額外對稱條件才可能重合。"
+      }
+    },
+    {
+      "questionId": "u20-s007-v010",
+      "expectedContentSha256": "de0919e5b9120d6c739ff255dca4673df9c086457561cd0a93d668df0400ccff",
+      "appendText": {"explanation": "邊界的最短距離要沿垂直方向測量；內心到三條邊的三個垂距相同，正好符合灑水器的服務條件。"}
+    },
+    {
+      "questionId": "u20-s007-v011",
+      "expectedContentSha256": "26d4a3dbdf2ce1a913a44b78ac17b3f1a2b16c48184d961ae609859e9585e0f5",
+      "appendText": {"explanation": "圓與直線相切時，通過切點的半徑必垂直該直線；因此從I向邊作出的垂線段才是精確半徑。"}
+    },
+    {
+      "questionId": "u20-s007-v012",
+      "expectedContentSha256": "a1c63a223d127a5d97f242794d72d8c141bac7f18d5503d470cb0581920ae658",
+      "appendText": {"explanation": "鈍角只會改變外心與垂心的位置；三個內角平分線仍在三角形內共點，所以內心及共同垂距都存在。"}
+    },
+
+    {
+      "questionId": "u20-s008-v001",
+      "expectedContentSha256": "9c20afb8637540994378563c48b1686bb59746955261f5834f02019ae37a4efb",
+      "appendText": {"explanation": "每條中線必須從一個頂點連到其對邊中點；任兩條中線交點已能定位重心，第三條也會通過。"}
+    },
+    {
+      "questionId": "u20-s008-v002",
+      "expectedContentSha256": "9ea71de30129dd2f73e28e854b8e4d2ceb65c3785cfc96b0a38f38b5fa75c71a",
+      "appendText": {"explanation": "名稱中的『中』指對邊中點，不代表中線平分頂角或垂直對邊；這些都需要額外條件才成立。"}
+    },
+    {
+      "questionId": "u20-s008-v003",
+      "expectedContentSha256": "5b33ec6b30756ede5e4d24a2461b2a83a50420027ab61f106969ae3e60a95d78",
+      "appendText": {
+        "explanation": "中線從頂點進入三角形內部並連到對邊，三條中線的共同交點因此不會因鈍角或直角而跑到外部。",
+        "misconceptionTarget": "重心與內心都恆在三角形內；會依角型落在邊上或外部的是外心與垂心。"
+      }
+    },
+    {
+      "questionId": "u20-s008-v004",
+      "expectedContentSha256": "f635733af491c1ffca4ff2fa1d60503e86b030d4f6220899f5b596522f160c05",
+      "appendText": {"explanation": "M在BC中點使AM為中線，N在AC中點使BN為另一條中線；兩線交點就是重心，不要求垂直或角度相等。"}
+    },
+    {
+      "questionId": "u20-s008-v005",
+      "expectedContentSha256": "27f932b3d9003377949e55fca627cff862b35b4f7eaba6a4e9eee926d88348d4",
+      "appendText": {"explanation": "三中線共點對所有非退化三角形成立，與等腰或等邊等對稱條件無關；因此第三條可作為施工複核線。"}
+    },
+    {
+      "questionId": "u20-s008-v006",
+      "expectedContentSha256": "cd7892e90179712ad2b1c57ae1cbc8f889a2243032d493d4c267cfed5e64a03c",
+      "appendText": {"explanation": "只有在材質與厚度均勻時，面積分布才可代表質量分布；三條中線交點因此成為理想的單點支撐位置。"}
+    },
+    {
+      "questionId": "u20-s008-v007",
+      "expectedContentSha256": "9bb227d614fea2dfe15f26f581cb4bb4d84ac5aa3bfa742315e908d8e7116c11",
+      "appendText": {"explanation": "△ABG、△BCG、△CAG各由兩個六分之一原面積的小三角形組成，所以都占原面積三分之一；邊長與周長則無此保證。"}
+    },
+    {
+      "questionId": "u20-s008-v008",
+      "expectedContentSha256": "10221a6ef76375e8837c794852443b16e1550fbb4b4ac268fe6d57d0b6324619",
+      "appendText": {"explanation": "兩個子三角形共用從同一頂點到對邊的高，底邊又被中點分成等長兩段，因此面積必相等。"}
+    },
+    {
+      "questionId": "u20-s008-v009",
+      "expectedContentSha256": "1ca9d2a000e196470d859612aa123b0807a1033278b572bc3d76684600cb93bd",
+      "appendText": {"explanation": "定義只要求G是兩條真正中線的交點；到頂點或到邊等距分別屬於外心與內心，並非重心的附加條件。"}
+    },
+    {
+      "questionId": "u20-s008-v010",
+      "expectedContentSha256": "cb577aafb48d24ff0d96551ea7ddcbe3fa08839bb0eff6ec5d9d85471a38f41d",
+      "appendText": {"explanation": "材質與厚度均勻讓幾何面積中心等同質量中心；若條件不均勻，單憑三中線交點便不能保證平衡。"}
+    },
+    {
+      "questionId": "u20-s008-v011",
+      "expectedContentSha256": "56fe8e8e50cdb8c8396358fbcb39da0f0cd4af1b4d5fe6fe5ce2e720ded0542e",
+      "appendText": {"explanation": "重零件會改變質量加權分布，使實際質心朝零件方向偏移；幾何重心本身仍是原三角形的固定點。"}
+    },
+    {
+      "questionId": "u20-s008-v012",
+      "expectedContentSha256": "224416a6404317912e7b9979897483a77b59992522d56b1e4f56ec4e4f4c12b1",
+      "appendText": {"explanation": "先以兩個可靠中點決定兩條中線，比目測中央更精確；第三條若不通過交點，表示中點或連線至少有一處作圖誤差。"}
+    },
+
+    {
+      "questionId": "u20-s009-v001",
+      "expectedContentSha256": "8ba89b12a3a1911cb44f53f400b7b89082f456c34eced421416574a7eb57c9df",
+      "appendText": {"explanation": "每條高都要通過一個頂點並垂直其對邊所在直線；三條符合這兩項條件的直線交點才可命名為垂心。"}
+    },
+    {
+      "questionId": "u20-s009-v002",
+      "expectedContentSha256": "dc938be9a639294f0c3e807bdbeeb7896a4a3139bfa376b9c111039b451a6fca",
+      "appendText": {
+        "explanation": "『所在直線』包含線段兩端之外的延長部分，所以鈍角三角形即使垂足在延長線上，高仍然有效。",
+        "misconceptionTarget": "高只要求通過頂點並垂直對邊所在直線；垂足是否為中點並不是判定條件。"
+      }
+    },
+    {
+      "questionId": "u20-s009-v003",
+      "expectedContentSha256": "03bd2606c74465baeb504451229f30d8d1c8b75c752f63607a2996b1acfa6bc3",
+      "appendText": {"explanation": "例如直角在C時，AC通過A且垂直BC，BC通過B且垂直AC；兩條高就在C相交，因此垂心為C。"}
+    },
+    {
+      "questionId": "u20-s009-v004",
+      "expectedContentSha256": "96d85adc598f6c698ceb787d9b3dd608f3bfa3ae156368b326af6bd3dcdb2c24",
+      "appendText": {
+        "explanation": "延長對邊只是在圖上呈現完整直線，不會改變原三角形；從頂點作出的垂線仍符合高的定義。",
+        "misconceptionTarget": "對邊線段之外仍屬同一所在直線，垂足落在延長線不代表高不存在。"
+      }
+    },
+    {
+      "questionId": "u20-s009-v005",
+      "expectedContentSha256": "802a3f13b7f11a9a56a37d2d210c19a259747e0edc5d7e64b13765975f663d5e",
+      "appendText": {"explanation": "銳角三角形三條高的垂足都在各邊上，高在內部相交；直角時交於頂點，鈍角時則需延長邊而交在外部。"}
+    },
+    {
+      "questionId": "u20-s009-v006",
+      "expectedContentSha256": "5ea3c67ea3dfa26c3ae298b7716994048ba306f205f93ec238b454061fa18b90",
+      "appendText": {"explanation": "通過A排除只在BC上作出的垂直平分線，垂直BC則排除一般的頂點連線；兩條件缺一都不能稱為A高。"}
+    },
+    {
+      "questionId": "u20-s009-v007",
+      "expectedContentSha256": "4c446cc94cbcc1d48a0ad3d3d2e105535aa4289b6dfb59697742cb1806c2d30b",
+      "appendText": {"explanation": "三高共點是一般三角形定理，不依賴等腰對稱；因此兩條高確定H後，第三個頂點作出的高必通過H。"}
+    },
+    {
+      "questionId": "u20-s009-v008",
+      "expectedContentSha256": "9cf974915d30fad01a95f74c3ca1a8d756f55facd6075c6eb212dbecc86f64ce",
+      "appendText": {"explanation": "120°已大於90°且三角形至多有一個鈍角，所以角型可唯一判為鈍角三角形，其垂心必位於外部。"}
+    },
+    {
+      "questionId": "u20-s009-v009",
+      "expectedContentSha256": "0856a07473cd78d7cde63d903be9cfc23b56d5328f2b09a53b77976ee53d90bf",
+      "appendText": {"explanation": "兩股各自同時具備『通過銳角頂點』與『垂直另一股』，所以不是省略作圖條件，而是題圖已經提供兩條高。"}
+    },
+    {
+      "questionId": "u20-s009-v010",
+      "expectedContentSha256": "6adf69b5223a22a045d41d7b8b84bb369b0429ab1efb278b95ca3c0b93d2c0ce",
+      "appendText": {"explanation": "延長的是邊的所在直線以及相應的高，不是改變屋架尺寸；外部交點仍是三條高度基準線的唯一垂心。"}
+    },
+    {
+      "questionId": "u20-s009-v011",
+      "expectedContentSha256": "bbb2b32e6e731c74bf9a7b0f034f5f06ba555bd30530c607374979e4d9bb504b",
+      "appendText": {"explanation": "任何三條線都可能偶然共點，只有逐條確認頂點與垂直對邊兩項條件後，該共點才具有垂心意義。"}
+    },
+    {
+      "questionId": "u20-s009-v012",
+      "expectedContentSha256": "0a6a26d8bb9b7189399dfb24614a1df00ce0a67da2f3ea13d415180e99c2a5fc",
+      "appendText": {"explanation": "直角記號直接提供高與對邊垂直的依據；若只靠線條外觀看似垂直，圖形未按比例時不能作為證明。"}
+    },
+
+    {
+      "questionId": "u20-s010-v001",
+      "expectedContentSha256": "da2464d28058968e52a9ba0d0518f773cc067622a8c65cb009bd1a49198d3066",
+      "appendText": {
+        "explanation": "OA與OB都是從同一圓心O到外接圓上頂點的線段，兩者同為半徑；題目沒有要求乘二求直徑。",
+        "misconceptionTarget": "圓心到圓上點是半徑，只有通過圓心且兩端都在圓上的整段才是直徑。"
+      }
+    },
+    {
+      "questionId": "u20-s010-v002",
+      "expectedContentSha256": "d25168723cebe8671affe9cfdcbe7483726d76595655cdf1fc71cbd15d67fd13",
+      "appendText": {"explanation": "垂直平分線包含中點，也包含中點兩側無限多個點；PA＝PB只能定位這條直線，不能斷定P恰是中點。"}
+    },
+    {
+      "questionId": "u20-s010-v003",
+      "expectedContentSha256": "e69a5f0e37f24462051294a9f8b9e6999d9ca98cc0af880d332e8eda9834ec69",
+      "appendText": {"explanation": "外接圓通過三角形的每個頂點，所以從外心O連到A、B或C的線段都具有相同的半徑長。"}
+    },
+    {
+      "questionId": "u20-s010-v004",
+      "expectedContentSha256": "db8c36b59ab9223325bebb425dd5997372a98c725842012c4de9f935b77429ce",
+      "appendText": {"explanation": "斜邊兩端位於外接圓上且其中點為圓心，所以整條斜邊跨過圓心形成直徑；半徑只取其中一半。"}
+    },
+    {
+      "questionId": "u20-s010-v005",
+      "expectedContentSha256": "6c73960517bda6946aac6ca1cf8ad6427a55d4afcbd0b3e3fc9071d55e5ca491",
+      "appendText": {
+        "explanation": "A與B在x軸兩側，距離必用右端坐標減左端坐標，即3－(－3)；O=(0,0)位於正中間，故AB確為直徑，也可用OA＝OB＝3反向驗算。",
+        "misconceptionTarget": "座標距離要取兩坐標之差的絕對值，遇到負數時減負會變成加，不能只算3。"
+      }
+    },
+    {
+      "questionId": "u20-s010-v006",
+      "expectedContentSha256": "f94ed7074013d8f0c16ef37525f6747ab647176f5d62dd0dd329f642936079f1",
+      "appendText": {"explanation": "兩條不同邊的垂直平分線讓O同時到A、B、C等距，已足以畫唯一外接圓；單一等距式只限制一條軌跡。"}
+    },
+    {
+      "questionId": "u20-s010-v007",
+      "expectedContentSha256": "122c56aa2e21da9ff01461f5bdf6165c674c3a0c001e50a88ee26043c33fc07d",
+      "appendText": {"explanation": "外心O為BC中點表示BC通過圓心且兩端在圓上，故BC是直徑；A在同圓上時，∠BAC必為直角。"}
+    },
+    {
+      "questionId": "u20-s010-v008",
+      "expectedContentSha256": "7765d56eeeb0e18b45bf726032cbf1f33ecb4b86eb1f144d68c2c0a8c373985d",
+      "appendText": {"explanation": "只取OB＝OC便可套用垂直平分線逆性質；這個結論不要求O在線段BC上，也不表示O到三邊等距。"}
+    },
+    {
+      "questionId": "u20-s010-v009",
+      "expectedContentSha256": "e441ab409bc83adcad070907660620c390a6a992d1d66ce9063f6672d6fb1ee0",
+      "appendText": {"explanation": "外心在外只是垂直平分線交點的位置結果，OA＝OB＝OC仍成立；以此共同長度為半徑即可通過三頂點。"}
+    },
+    {
+      "questionId": "u20-s010-v010",
+      "expectedContentSha256": "47f09220d65768db753228ec9390a9b89d0f3be2b2265de723c6e99e043c23e9",
+      "appendText": {
+        "explanation": "三個站都在以O為圓心的同一圓周上，OA、OB、OC因此是同圓半徑，另外兩段各為13公里。",
+        "misconceptionTarget": "已知OA是圓心到圓周的線段，所以13公里是半徑而非直徑，另外兩段不需倍增或減半。"
+      }
+    },
+    {
+      "questionId": "u20-s010-v011",
+      "expectedContentSha256": "63d991f8f98fbb2fec9bad248517373a4d79d18da3d5e4511f7efbc4a21ad99b",
+      "appendText": {"explanation": "縮放或地圖投影可能讓像素距離失真；以實際座標建立垂直平分線，才能檢查比例換算後的幾何等距。"}
+    },
+    {
+      "questionId": "u20-s010-v012",
+      "expectedContentSha256": "bd918426aa03b8322ebbc063f7f38f836898178b93d3b8328e83dca3539dfa30",
+      "appendText": {"explanation": "控制站在斜邊中點，從中點到斜邊兩端各為12公尺；直徑所對圓周角又保證第三個感測器也在同圓上。"}
+    }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u20-s008-cr002",
+      "expectedContentSha256": "40f857f53a7e33d61fb2104fef85bd7d1f078b9c457cf246783de477cfd1eb56",
+      "appendArray": {
+        "standardSolution": [
+          "因此重心只是在均勻薄板模型下的合理初始支撐點；實際物件若不均勻，應依真實質量分布重新找質心。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s009-cr001",
+      "expectedContentSha256": "1176fb8ca119828a5878d302c326e62f514826c008b0d7d4e6e5513b2804a1d8",
+      "appendArray": {
+        "standardSolution": [
+          "所以判定一條線是否為A高時，只檢查『通過A』與『垂直BC所在直線』；垂足是否在線段BC內不是必要條件。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s009-cr002",
+      "expectedContentSha256": "1d20c830a9fa33eb7a4b42ddd45951c9a9e4974bd9aad1076efe1648cef73697",
+      "appendArray": {
+        "standardSolution": [
+          "因此同一個直角三角形中，垂心在直角頂點C，外心在斜邊AB中點；除非退化，兩點不會重合。"
+        ]
+      }
+    },
+    {
+      "questionId": "u20-s010-cr001",
+      "expectedContentSha256": "c9c5e6b7de837b5266b6709d6e21eafff6986240d2a2c59b9c8b0df4eda0edcd",
+      "appendArray": {
+        "standardSolution": [
+          "這是因為直角三角形的斜邊是外接圓直徑，斜邊中點到三個頂點的距離都相等。",
+          "驗算：直徑為2×13＝26公分，與題給斜邊長一致，所以外接圓半徑確為13公分。"
+        ]
+      }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u20-s006-lecture-r1",
+      "expectedContentSha256": "a8f17123dc0344966966d3a6357b7f9737bb4ffbfe74084a21360d127b6ef86c",
+      "appendArray": {
+        "method": [
+          {"step": 5, "instruction": "以OA、OB、OC三段距離或第三條垂直平分線複核交點。", "check": "不要只憑交點看似位於圖形中央。"}
+        ],
+        "commonMistakes": [
+          {"mistake": "把只通過邊中點的線當成垂直平分線。", "why": "垂直平分線必須同時具有通過中點與垂直該邊兩項條件。", "correction": "在中點標等長刻痕，並在交點標直角後再取兩線交點。"}
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "O在AB、AC垂直平分線上。", "solutionSteps": ["OA＝OB。", "OA＝OC。", "所以OA＝OB＝OC。"], "answer": "O是外心。", "why": "垂直平分線上的點到線段兩端等距，兩個等距式共享OA；遞移後O到A、B、C三頂點等距，恰符合外心判定，並能以O為圓心畫出通過三點的圓。"},
+          {"exampleId": "L2", "prompt": "直角三角形外心在哪裡？", "solutionSteps": ["斜邊是外接圓直徑。", "圓心是斜邊中點。", "中點到三頂點距離相等。"], "answer": "斜邊中點。", "why": "直徑所對圓周角為直角，反過來可把直角三角形斜邊視為外接圓直徑；直徑中點就是圓心，因此也是外心。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s007-lecture-r1",
+      "expectedContentSha256": "520469cd69ea802a758b3cfc068022898d936b8e6ca7e6095000d37104b3a3d2",
+      "appendArray": {
+        "method": [
+          {"step": 5, "instruction": "檢查三個半徑是否分別垂直三邊並在切點終止。", "check": "切點不必是邊的中點，也不能用斜距代替半徑。"}
+        ],
+        "commonMistakes": [
+          {"mistake": "把角平分線畫成只平分圖面上的開口外觀。", "why": "圖形可能不按比例，角平分必須由等角作圖或到兩邊等距證明。", "correction": "標出兩個相等角，或驗證交點到角兩邊的垂直距離相等。"}
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "I為內心，∠A=80°。", "solutionSteps": ["AI平分∠A。", "80°÷2=40°。", "寫出兩個相等的分角。"], "answer": "∠BAI=∠IAC=40°。", "why": "內心位於每一個內角的角平分線上，所以AI把80°平均分成兩份；兩份各40°且相加回80°，可直接驗算，也排除了把AI誤當中線的讀法。"},
+          {"exampleId": "L2", "prompt": "I到AB距離3公分。", "solutionSteps": ["確認距離取垂線段。", "內心到三邊垂距相等。", "把共同垂距寫成內切圓半徑。"], "answer": "到BC、CA也都是3公分。", "why": "I為內心時，到AB、BC、CA的垂直距離同為內切圓半徑；已知其中一段為3公分，其餘兩段必同為3公分，三段都必須在垂足處與邊成直角。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s008-lecture-r1",
+      "expectedContentSha256": "9053d1dff7bd1a9be4d05bbd6a9b5c1263341d1dec35c08bb48fbf6d88b495b1",
+      "appendArray": {
+        "method": [
+          {"step": 5, "instruction": "若用於平衡問題，先核對材質、厚度與附加物是否近似均勻。", "check": "不均勻時只能把幾何重心當初始估計，不能保證實際平衡。"}
+        ],
+        "commonMistakes": [
+          {"mistake": "只看線穿過圖形中央便稱為中線。", "why": "中線的必要條件是從頂點連到對邊中點，視覺位置不能取代中點證據。", "correction": "先以等長刻痕確認對邊被平分，再連接對面頂點。"}
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "M是BC中點。AM是什麼？", "solutionSteps": ["A是BC的對面頂點。", "M把BC分成BM＝MC。", "連接A與M符合中線定義。"], "answer": "AM是中線。", "why": "中線只檢查兩件事：線段從頂點出發，並到達對邊中點；題設同時給出A與BC中點M，所以AM必為中線，不需要另證AM垂直BC或平分∠A。"},
+          {"exampleId": "L2", "prompt": "均勻三角形紙板選單點支撐。", "solutionSteps": ["材質與厚度均勻，所以質量隨面積分布。", "三角形面積中心是三中線交點。", "以重心作初始支撐點並實測複核。"], "answer": "先選重心。", "why": "均勻條件使幾何面積中心與實際質心重合，三中線交點因此能平衡紙板；若另加重物，這個模型便須重新評估。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s009-lecture-r1",
+      "expectedContentSha256": "57e545dcaa4c5fe1b31df45fb1b7ea2d80d366ab906781635ff9e7ac1706dc65",
+      "appendArray": {
+        "method": [
+          {"step": 5, "instruction": "依銳角、直角或鈍角檢查垂心應在內部、頂點或外部。", "check": "位置只能作驗算，仍須逐條確認通過頂點且垂直對邊。"}
+        ],
+        "commonMistakes": [
+          {"mistake": "看到兩條虛線相交就直接標成垂心。", "why": "共點本身不保證每條線都是高，圖形外觀也不能證明垂直。", "correction": "逐條核對它通過哪個頂點，並在與對邊所在直線的交點標直角。"}
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "∠C=90°，垂心在哪？", "solutionSteps": ["AC⊥BC。", "AC通過A且垂直BC，是A高。", "BC通過B且垂直AC，是B高。"], "answer": "垂心在C。", "why": "兩股AC、BC本身已是兩條高，並在直角頂點C相交；三高共點，所以不必另外作線就能確定垂心為C，且不可與斜邊中點的外心混淆。"},
+          {"exampleId": "L2", "prompt": "鈍角三角形某高垂足在線段外。", "solutionSteps": ["延長對邊所在直線。", "過指定頂點作該直線的垂線。", "在垂足標直角並保留延長線。"], "answer": "該線仍是高。", "why": "高所垂直的是對邊所在的完整直線，不限於有限線段；垂足落在延長部分仍同時滿足通過頂點與垂直兩項定義。"}
+        ]
+      }
+    },
+    {
+      "lectureId": "u20-s010-lecture-r1",
+      "expectedContentSha256": "b2445a813bdfe85bedc9dce3060130ef283d966c9f139cf2c3e1bcadf960f9ba",
+      "appendArray": {
+        "method": [
+          {"step": 5, "instruction": "把所得半徑、等距或角型結論代回原條件驗算。", "check": "直徑應為半徑兩倍，三段頂點距離也應一致。"}
+        ],
+        "commonMistakes": [
+          {"mistake": "由OA＝OB便直接宣稱O是三角形外心。", "why": "一組端點等距只把O限制在線段AB的垂直平分線上，尚未連結第三個頂點C。", "correction": "再取得OA＝OC或OB＝OC，才能推出O到三頂點等距。"}
+        ]
+      },
+      "set": {
+        "workedExamples": [
+          {"exampleId": "L1", "prompt": "直角三角形斜邊18公分。", "solutionSteps": ["確認18公分的是斜邊。", "直角三角形斜邊是外接圓直徑。", "R=18÷2=9。"], "answer": "外接圓半徑9公分。", "why": "直角三角形外心在斜邊中點，所以斜邊跨過圓心而成為直徑；半徑只取直徑一半，故18除以2得9公分，回乘2也會恢復斜邊18公分。"},
+          {"exampleId": "L2", "prompt": "OA＝OB且OB＝OC，A、B、C不共線。", "solutionSteps": ["遞移得OA＝OC。", "O到三頂點等距。", "兩條垂直平分線交點唯一。"], "answer": "O為外心。", "why": "兩個等式經遞移形成OA＝OB＝OC，表示A、B、C同在以O為圓心的圓上；不共線又排除退化情形，所以O是唯一外心，第三個等距式不是額外假設。"}
+        ]
+      }
+    }
+  ],
+  "drawingSpecs": [
+    {
+      "figureId": "fig-u20-circumcenter-check-01",
+      "set": {
+        "coordinates": {"A": [220, 55], "B": [75, 245], "C": [410, 235], "O": [241.97, 222.09], "M": [147.5, 150], "N": [315, 145]},
+        "geometryAssertions": [
+          "M為AB中點且有成對等長刻痕",
+          "N為AC中點且有成對等長刻痕",
+          "兩虛線分別過M、N並與對應邊垂直",
+          "兩條垂直平分線交於O，且O位於兩線上"
+        ],
+        "manualVisualInspection": "pass: after coordinate correction, rendered at 480x320 and reviewed at 320px-equivalent readability; both perpendicular bisectors pass through their marked midpoints and meet at O; no clipping or answer leakage"
+      }
+    },
+    {
+      "figureId": "fig-u20-incenter-garden-01",
+      "set": {
+        "coordinates": {"A": [205, 45], "B": [70, 260], "C": [420, 250], "I": [221.07, 173.64], "radius": 82.01, "touchAB": [151.61, 130.03], "touchAC": [277.66, 114.28], "touchBC": [223.41, 255.62]},
+        "geometryAssertions": [
+          "圓完全位於三角形內並分別與AB、AC、BC相切",
+          "I到三個切點的虛線半徑長相等且各自垂直對應邊",
+          "三個切點均有直角標記",
+          "不標示I到頂點等距"
+        ],
+        "manualVisualInspection": "pass: after tangency correction, rendered at 480x320 and reviewed at 320px-equivalent readability; circle is tangent to all three sides and each radius meets its side at a right angle; no clipping or answer leakage"
+      }
+    },
+    {
+      "figureId": "fig-u20-orthocenter-roof-01",
+      "set": {
+        "description": "鈍角三角形屋架ABC，AB、AC向A外側以虛線延長，從B、C作高後在A上方外部交於H。",
+        "coordinates": {"A": [140, 165], "B": [70, 250], "C": [410, 250], "H": [140, 27.65]},
+        "altText": "鈍角三角形ABC的AB、AC向A外側延長，從B、C作出的兩條高在A上方的三角形外部交於H。",
+        "svgDesc": "鈍角三角形屋架ABC，AB、AC向A外側以虛線延長，從B、C作高後在A上方外部交於H。",
+        "geometryAssertions": [
+          "∠A為鈍角",
+          "從B、C作出的兩條虛線高分別通過頂點並垂直對邊延長線",
+          "兩條高在三角形上方外部交於H",
+          "對邊延長部分使用虛線且兩個垂足有直角標記"
+        ],
+        "manualVisualInspection": "pass: after geometry correction, rendered at 480x320 and reviewed at 320px-equivalent readability; angle A is obtuse, both displayed altitudes are perpendicular to the corresponding extended sides and meet outside at H; no clipping or answer leakage"
+      }
+    }
+  ],
+  "textFiles": [
+    {
+      "path": "figures/u20/fig-u20-circumcenter-check-01.svg",
+      "replacements": [
+        {"from": "<path class=\"aux\" d=\"M65 75 L345 285\"/>", "to": "<path class=\"aux\" d=\"M52.5 77.5 L318.5 280.5\"/>"},
+        {"from": "<path class=\"aux\" d=\"M105 285 L385 25\"/>", "to": "<path class=\"aux\" d=\"M180 287.5 L423 31\"/>"},
+        {"from": "<circle class=\"pt\" cx=\"232\" cy=\"158\" r=\"5\"/>", "to": "<circle class=\"pt\" cx=\"241.97\" cy=\"222.09\" r=\"5\"/>"},
+        {"from": "<path class=\"mark\" d=\"M139 139 l10 8 M157 155 l10 8 M302 136 l9 9 M320 153 l9 9\"/>", "to": "<path class=\"mark\" d=\"M139 139 l10 8 M157 155 l10 8 M302 136 l9 9 M320 153 l9 9 M148 150 l5 -6 l6 5 l-5 6 M315 145 l-6 -6 l-6 6 l6 6\"/>"},
+        {"from": "<text class=\"lbl\" x=\"235\" y=\"151\">O</text>", "to": "<text class=\"lbl\" x=\"250\" y=\"220\">O</text>"}
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-incenter-garden-01.svg",
+      "replacements": [
+        {"from": "<circle class=\"line\" cx=\"236\" cy=\"185\" r=\"62\"/>", "to": "<circle class=\"line\" cx=\"221.07\" cy=\"173.64\" r=\"82.01\"/>"},
+        {"from": "<circle class=\"pt\" cx=\"236\" cy=\"185\" r=\"4\"/>", "to": "<circle class=\"pt\" cx=\"221.07\" cy=\"173.64\" r=\"4\"/>"},
+        {"from": "<path class=\"aux\" d=\"M236 185 L183 151 M236 185 L235 247 M236 185 L286 137\"/>", "to": "<path class=\"aux\" d=\"M221.07 173.64 L151.61 130.03 M221.07 173.64 L223.41 255.62 M221.07 173.64 L277.66 114.28\"/>"},
+        {"from": "<path class=\"mark\" d=\"M183 151 l8 5 l5 -8 M235 247 l10 0 l0 -10 M286 137 l7 6 l6 -7\"/>", "to": "<path class=\"mark\" d=\"M152 130 l-5 8 l8 5 l5 -8 M223 256 l9 0 l0 -9 l-9 0 M278 114 l7 7 l-6 7 l-7 -7\"/>"},
+        {"from": "<text class=\"lbl\" x=\"244\" y=\"181\">I</text>", "to": "<text class=\"lbl\" x=\"229\" y=\"170\">I</text>"}
+      ]
+    },
+    {
+      "path": "figures/u20/fig-u20-orthocenter-roof-01.svg",
+      "replacements": [
+        {"from": "<desc id=\"fig-u20-orthocenter-roof-01-desc\">鈍角三角形屋架ABC，兩條邊以虛線延長，從B、C作高後在A側外部交於H。</desc>", "to": "<desc id=\"fig-u20-orthocenter-roof-01-desc\">鈍角三角形屋架ABC，AB、AC向A外側以虛線延長，從B、C作高後在A上方外部交於H。</desc>"},
+        {"from": "<path class=\"line\" d=\"M105 90 L75 250 L410 250 Z\"/>", "to": "<path class=\"line\" d=\"M140 165 L70 250 L410 250 Z\"/>"},
+        {"from": "<path class=\"aux\" d=\"M105 90 L35 285 M105 90 L455 285\"/>", "to": "<path class=\"aux\" d=\"M140 165 L80 146 M140 165 L225 62\"/>"},
+        {"from": "<path class=\"aux\" d=\"M75 250 L258 148 M410 250 L72 62\"/>", "to": "<path class=\"aux\" d=\"M70 250 L140 27.65 M410 250 L140 27.65\"/>"},
+        {"from": "<circle class=\"pt\" cx=\"72\" cy=\"62\" r=\"5\"/>", "to": "<circle class=\"pt\" cx=\"140\" cy=\"27.65\" r=\"5\"/>"},
+        {"from": "<path class=\"mark\" d=\"M246 154 l7 11 l11 -7 M87 70 l9 7 l7 -9\"/>", "to": "<path class=\"mark\" d=\"M101 153 l10 3 l-3 10 l-10 -3 M207 83 l-6 8 l8 6 l6 -8\"/>"},
+        {"from": "<text class=\"lbl\" x=\"98\" y=\"78\">A</text><text class=\"lbl\" x=\"52\" y=\"271\">B</text><text class=\"lbl\" x=\"416\" y=\"270\">C</text><text class=\"lbl\" x=\"48\" y=\"54\">H</text>", "to": "<text class=\"lbl\" x=\"120\" y=\"185\">A</text><text class=\"lbl\" x=\"50\" y=\"272\">B</text><text class=\"lbl\" x=\"415\" y=\"270\">C</text><text class=\"lbl\" x=\"150\" y=\"25\">H</text>"}
+      ]
+    }
+  ]
+}

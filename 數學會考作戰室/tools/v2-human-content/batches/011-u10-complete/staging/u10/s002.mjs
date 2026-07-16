@@ -49,7 +49,8 @@ export default {
       "代入不是只替換一個 x，而是所有 x 都要替換。",
       "代入負數務必加括號，例如 x² 在 x=-3 時是 (-3)²=9，不是 -3²=-9。",
       "同一式中可能同時有 x²、x 與常數，應分項計算再合併。",
-      "若情境限制 x 的意義，例如長度不能為負，代數上可求值但解釋時仍要檢查情境範圍。"
+      "若情境限制 x 的意義，例如長度不能為負，代數上可求值但解釋時仍要檢查情境範圍。",
+      "多項式求值的核心是完整替換而非心算猜值：先圈出同名未知數的每一次出現，以括號代入指定數，特別讓負數成為次方的完整底數；再按次方、乘除、加減的順序分項計算，最後把各項依原符號合併。若含兩個未知數，須依名稱分別代入；若結果具有金額、溫度或面積意義，還要核對固定量、每單位變化量與答案單位是否一致。"
     ],
     "formalDefinitions": [
       {
@@ -106,7 +107,8 @@ export default {
         "solutionSteps": [
           "2(2²)-3(2)+1=8-6+1。"
         ],
-        "answer": "3。"
+        "answer": "3。",
+        "why": "同一個二必須代入二次項與一次項兩處，且平方只作用在代入值上。先算 2²，再乘外面的係數二，接著計算 -3×2，最後合併常數，可維持原式每一項的運算層級。"
       },
       {
         "exampleId": "L2",
@@ -114,7 +116,8 @@ export default {
         "solutionSteps": [
           "-(-3)²+4(-3)=-9-12。"
         ],
-        "answer": "-21。"
+        "answer": "-21。",
+        "why": "原式的負號在平方運算之外，所以應先算 (-3)²=9，再取相反數成 -9；另一項 4(-3)=-12。把負數代入時保留括號，才能分辨外部負號與平方底數。"
       },
       {
         "exampleId": "L3",
@@ -122,7 +125,8 @@ export default {
         "solutionSteps": [
           "2(-1)-5=-2-5。"
         ],
-        "answer": "-7。"
+        "answer": "-7。",
+        "why": "多變數式必須依名稱逐一替換，a=-1 只進入 a 的位置，b=5 只進入 b 的位置。原式是減去 b，因此得到 -2-5 而不是 -2+5，最後結果為負七。"
       }
     ],
     "commonMistakes": [
@@ -140,12 +144,17 @@ export default {
         "mistake": "把 3x² 代入 x=2 算成 6²",
         "why": "把係數也放入平方",
         "correction": "3×(2²)=12。"
+      },
+      {
+        "mistake": "算出各項後按代入順序任意相加減",
+        "why": "分項值仍須服從原式各項前的正負號",
+        "correction": "在代入前先標記每項符號，算完後依原順序重組。"
       }
     ],
     "selfCheck": [
-      "我是否能能將同一未知數的每一處都代入指定值？",
-      "我是否能代入負數時能使用括號保留符號？",
-      "我是否能能依指數、乘除、加減順序求出精確值？",
+      "我是否能將同一未知數的每一處都代入指定值？",
+      "我是否能在代入負數時使用括號保留符號？",
+      "我是否能依指數、乘除、加減順序求出精確值？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -196,7 +205,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "d1e0ce9a86822b0e39659145ab7b4d7a620f779096f39184d6a6444eca87c2ff"
+    "contentSha256": "3aad78eefd16132403be68a0699a2048b598acafa55f6b4de0067abe8b7f3460"
   },
   "mcQuestions": [
     {
@@ -226,9 +235,11 @@ export default {
         "derivedChoice": "14",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "所有 x 以 4 替換後依乘法再加法計算。",
+      "explanation": "所有 x 以 4 替換後依乘法再加法計算。 將 P(4) 解讀為把式中每個 x 換成 4，得到 3×4+2；先算乘法十二，再加常數二，結果十四，代回式子可再次核對。",
       "steps": [
-        "代入 x=4：3×4+2=12+2=14。"
+        "代入 x=4：3×4+2=12+2=14。",
+        "以括號代入寫成 P(4)=3(4)+2，確認 x 已完整替換。",
+        "依先乘後加計算 12+2=14，對應選項 14。"
       ],
       "optionAnalysis": [
         {
@@ -252,7 +263,7 @@ export default {
           "reason": "把 4² 誤用進來。"
         }
       ],
-      "misconceptionTarget": "代入後漏做乘法或常數",
+      "misconceptionTarget": "代入後漏做乘法或常數 把 3x 直接換成 34，或只代入 x 卻漏算乘法與最後的常數項。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -267,7 +278,7 @@ export default {
       "semanticReviewRef": "u10-s002-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e04de41068ef88c9707c2b5217bea86446156301c816bca8da86aea48cf2d938"
+      "contentSha256": "d62b8af9a1243827c27bfb00a3896a609e5f089e8427e944a41d59aeacf545ca"
     },
     {
       "questionId": "u10-s002-v002",
@@ -296,9 +307,11 @@ export default {
         "derivedChoice": "4",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "負數代入平方必須加括號。",
+      "explanation": "負數代入平方必須加括號。 代入負三時，平方的底數是整個 (-3)，所以 (-3)²=9；再減去 5 得 4，而不是先保留外面的負號算成 -9，正負號須分層判讀。",
       "steps": [
-        "Q(-3)=(-3)²-5=9-5=4。"
+        "Q(-3)=(-3)²-5=9-5=4。",
+        "完整代入為 Q(-3)=(-3)²-5，讓負號包含在平方底數內。",
+        "先算平方 9，再做 9-5=4，核對唯一選項。"
       ],
       "optionAnalysis": [
         {
@@ -322,7 +335,7 @@ export default {
           "reason": "把減 5 看成加 5。"
         }
       ],
-      "misconceptionTarget": "負數平方未加括號",
+      "misconceptionTarget": "負數平方未加括號 省略負數外的括號，把 (-3)² 誤算成 -(3²)，導致平方值寫成負九。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -337,7 +350,7 @@ export default {
       "semanticReviewRef": "u10-s002-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ec6bfdcc05450255e499a4dfad8f41fc53c28caf5fc3c4974b50cf19c0f7a148"
+      "contentSha256": "a8cdf2247635101017cc40f896798aac3c5ffd69ea42939271ea2e7f57c8fb3b"
     },
     {
       "questionId": "u10-s002-v003",
@@ -366,9 +379,11 @@ export default {
         "derivedChoice": "6",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先算平方，再乘係數，最後減去 a。",
+      "explanation": "先算平方，再乘係數，最後減去 a。 式中的 2 是乘在 a² 前的係數，不在平方範圍內；代入後先得 2×4=8，再減去同一個 a 值 2，結果為 6，兩處代入都不可遺漏。",
       "steps": [
-        "R(2)=2(2²)-2=8-2=6。"
+        "R(2)=2(2²)-2=8-2=6。",
+        "兩處 a 都代入 2，寫成 R(2)=2(2²)-2。",
+        "依序算平方、乘法與減法，得到 2×4-2=6。"
       ],
       "optionAnalysis": [
         {
@@ -392,7 +407,7 @@ export default {
           "reason": "2(4)-2=6，正確。"
         }
       ],
-      "misconceptionTarget": "係數與平方作用範圍混淆",
+      "misconceptionTarget": "係數與平方作用範圍混淆 把係數 2 與代入值一起平方，或只替換 a² 中的 a 而漏掉末項的 a。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -407,7 +422,7 @@ export default {
       "semanticReviewRef": "u10-s002-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ae590fdf81759eb3461dec9513d7477570bef5e11ce591c8dc66e8a08367f5fb"
+      "contentSha256": "723e6e1a0c9d443ac796256ca7c630cbfae4e7f802ad016af60fb0572820c38f"
     },
     {
       "questionId": "u10-s002-v004",
@@ -436,9 +451,11 @@ export default {
         "derivedChoice": "15",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "分別計算二次項、一次項和常數後相加。",
+      "explanation": "分別計算二次項、一次項和常數後相加。 同一個 -2 同時代入二次項與一次項：平方後為正四，而 -3×(-2) 為正六；三項 8、6、1 相加才是 15。",
       "steps": [
-        "P(-2)=2(-2)²-3(-2)+1=8+6+1=15。"
+        "P(-2)=2(-2)²-3(-2)+1=8+6+1=15。",
+        "把兩處 x 都以 (-2) 替換，寫成 2(-2)²-3(-2)+1。",
+        "分項算得 8、6、1，再相加為 15 並核對正負號。"
       ],
       "optionAnalysis": [
         {
@@ -462,7 +479,7 @@ export default {
           "reason": "多處符號錯誤。"
         }
       ],
-      "misconceptionTarget": "負數代入兩個不同次方時符號錯誤",
+      "misconceptionTarget": "負數代入兩個不同次方時符號錯誤 把 (-2)² 算成負四，或在 -3(-2) 中漏掉負負得正，使兩項符號判斷錯誤。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -477,7 +494,7 @@ export default {
       "semanticReviewRef": "u10-s002-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3cbe99e7d13724294a82956117a12e6d353cd408b0f2158b2ae5145c36641a45"
+      "contentSha256": "4f987e6a4f18a8b25520d776096b3d50b7b0450d699fd0dcd26ed6c7587c1448"
     },
     {
       "questionId": "u10-s002-v005",
@@ -506,9 +523,11 @@ export default {
         "derivedChoice": "8",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "依原式三項求值並保留 -2t 的負號。",
+      "explanation": "依原式三項求值並保留 -2t 的負號。 依原來的三項代入 t=3，常數為 5、一次項為 -2×3=-6、二次項為 3²=9；合計 5-6+9=8，原項符號須完整保留，並以三項相加順序核對答案。",
       "steps": [
-        "A(3)=5-6+9=8。"
+        "A(3)=5-6+9=8。",
+        "將兩處 t 都換成 3，得到 5-2(3)+3²。",
+        "先算乘法與平方，再合併 5-6+9=8。"
       ],
       "optionAnalysis": [
         {
@@ -532,7 +551,7 @@ export default {
           "reason": "把 -6 改成 +6。"
         }
       ],
-      "misconceptionTarget": "忽略一次項負號",
+      "misconceptionTarget": "忽略一次項負號 把 -2t 的負號漏掉，或按書寫順序先做 5-2 再乘 3，破壞運算順序。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -547,7 +566,7 @@ export default {
       "semanticReviewRef": "u10-s002-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ca10dbee80fa7d693e0e36a1a6ab438082b6acd10249e6c8d9e774e9f3f55087"
+      "contentSha256": "1619d853aa86908bd41d36ca64c673d9c64fd7a23361dfbd59818917cfbb50b9"
     },
     {
       "questionId": "u10-s002-v006",
@@ -576,9 +595,11 @@ export default {
         "derivedChoice": "8",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "兩個未知數分別代入，-xy 中的乘積符號要重新判定。",
+      "explanation": "兩個未知數分別代入，-xy 中的乘積符號要重新判定。 x=-1、y=3 必須分別代入所有位置；2x²=2，而 xy=(-1)×3=-3，所以式中的 -xy 變成 -(-3)=+3，最後再加 y=3，三項合計為八。",
       "steps": [
-        "2(-1)²-(-1)(3)+3=2+3+3=8。"
+        "2(-1)²-(-1)(3)+3=2+3+3=8。",
+        "完整代入為 2(-1)²-(-1)(3)+3，保留每組括號。",
+        "算得 2-(-3)+3=2+3+3=8，逐項核對符號。"
       ],
       "optionAnalysis": [
         {
@@ -602,7 +623,7 @@ export default {
           "reason": "8 正確。"
         }
       ],
-      "misconceptionTarget": "多變數代入時負號與乘積混亂",
+      "misconceptionTarget": "多變數代入時負號與乘積混亂 沒有先算 xy 的正負，將 -(-1)(3) 誤作負三，或把 x、y 的代入位置互換。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -617,7 +638,7 @@ export default {
       "semanticReviewRef": "u10-s002-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "54d30ac9dafddd3b56e1ba26012f2063bd43ef9e0666cb4d45c1d9e4a1520142"
+      "contentSha256": "06a7a7a28d30e782a25fa47e2f673e56c35b941826249ad86674a95f305ec0e1"
     },
     {
       "questionId": "u10-s002-v007",
@@ -646,9 +667,11 @@ export default {
         "derivedChoice": "3",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "將四個候選值獨立代入，只有 3 符合。",
+      "explanation": "將四個候選值獨立代入，只有 3 符合。 題目已把 k 限為四個候選正整數，可逐一代入檢查；只有 k=3 時 3³-3×3=27-9=18，其餘值皆不符合，故答案唯一。",
       "steps": [
-        "P(1)=-2，P(2)=2，P(4)=52，P(3)=27-9=18，所以 k=3。"
+        "P(1)=-2，P(2)=2，P(4)=52，P(3)=27-9=18，所以 k=3。",
+        "分別計算四個候選值的 k³-3k，不只檢查第一個看似合理者。",
+        "比較結果 -2、2、18、52，確認只有 k=3 產生 18。"
       ],
       "optionAnalysis": [
         {
@@ -672,7 +695,7 @@ export default {
           "reason": "得到 52。"
         }
       ],
-      "misconceptionTarget": "只檢查單一候選或立方計算錯誤",
+      "misconceptionTarget": "只檢查單一候選或立方計算錯誤 看到十八就猜立方根附近的數，沒有把候選值代入完整的 k³-3k 驗證。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -687,7 +710,7 @@ export default {
       "semanticReviewRef": "u10-s002-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f76b8a60003c26ca8552a12d7b360207a5f2cdb34c54356883e162b2319e9997"
+      "contentSha256": "76d24267f0ae854c5a9061a05a8314934cf76b62f00be61ea8dccf29161ba061"
     },
     {
       "questionId": "u10-s002-v008",
@@ -716,9 +739,11 @@ export default {
         "derivedChoice": "3",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先代入再解係數方程。",
+      "explanation": "先代入再解係數方程。 將 x=2 代入時 x²=4，所以 P(2)=4a+4-1；合併常數得 4a+3=15，依序移項、除以四可得 a=3；代回原式可驗得十五，也能確認參數解唯一。",
       "steps": [
-        "P(2)=4a+4-1=4a+3=15，所以 4a=12，a=3。"
+        "P(2)=4a+4-1=4a+3=15，所以 4a=12，a=3。",
+        "代入並化簡為 4a+3=15，先把含 a 與常數部分分清楚。",
+        "兩邊減 3 得 4a=12，再除以 4 得 a=3，代回核對 P(2)=15。"
       ],
       "optionAnalysis": [
         {
@@ -742,7 +767,7 @@ export default {
           "reason": "a=4 時 P(2)=19。"
         }
       ],
-      "misconceptionTarget": "代入後未平方或解方程錯誤",
+      "misconceptionTarget": "代入後未平方或解方程錯誤 將 ax² 代成 2a 而漏掉平方，或由 4a=12 除法錯誤而選到其他係數。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -757,7 +782,7 @@ export default {
       "semanticReviewRef": "u10-s002-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d36f4c9c01778985dd7034ff6430f81919f857fa66fb00ddffbe53d09522ee29"
+      "contentSha256": "b2f799b30f51f73a76a52cb87ca1471a73f2aeb52d8bad91973c67d2d3d790ce"
     },
     {
       "questionId": "u10-s002-v009",
@@ -786,9 +811,11 @@ export default {
         "derivedChoice": "4",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "分別代入正負 2，再依指定次序相減。",
+      "explanation": "分別代入正負 2，再依指定次序相減。 正二與負二平方都為四，但一次項分別是 +2 與 -2，因此 P(2)=7、P(-2)=3；題目指定前者減後者，差為 4。",
       "steps": [
-        "P(2)=7，P(-2)=4-2+1=3，差為 4。"
+        "P(2)=7，P(-2)=4-2+1=3，差為 4。",
+        "分開計算 P(2)=4+2+1 與 P(-2)=4-2+1。",
+        "依題目順序用 7-3，而非顛倒相減，得到 4。"
       ],
       "optionAnalysis": [
         {
@@ -812,7 +839,7 @@ export default {
           "reason": "7-3=4，正確。"
         }
       ],
-      "misconceptionTarget": "忽略一次項使正負代入不同",
+      "misconceptionTarget": "忽略一次項使正負代入不同 以為正負二代入後平方相同就使整個多項式值相同，忽略一次項會改變符號。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -827,7 +854,7 @@ export default {
       "semanticReviewRef": "u10-s002-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ac13878df9b5628a02c2902f227fdbf8f11acf22e8606151c7e86766947d61d4"
+      "contentSha256": "f91bf8319146249f9bf9b4789bbd115153a5da9bb7466608ae80b6c9e371aae9"
     },
     {
       "questionId": "u10-s002-v010",
@@ -856,9 +883,11 @@ export default {
         "derivedChoice": "8°C",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "每小時下降 2°C，5 小時共下降 10°C。",
+      "explanation": "每小時下降 2°C，5 小時共下降 10°C。 h=5 表示經過五個一小時，每小時下降 2°C，總下降量為 2×5=10°C；由初始 18°C 扣除後為 8°C，溫度單位保持不變，且符合逐時下降的模型方向。",
       "steps": [
-        "T(5)=18-2×5=8。"
+        "T(5)=18-2×5=8。",
+        "將 h=5 代入模型，寫成 T(5)=18-2×5。",
+        "先算下降量 10，再做 18-10=8，保留攝氏度單位。"
       ],
       "optionAnalysis": [
         {
@@ -882,7 +911,7 @@ export default {
           "reason": "把下降當上升。"
         }
       ],
-      "misconceptionTarget": "未把每小時變化乘小時數",
+      "misconceptionTarget": "未把每小時變化乘小時數 只從十八減一次二，或把每小時下降二度誤當成五小時總共下降二度。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "T 的單位為 °C；-2 的單位為 °C/小時。",
@@ -897,7 +926,7 @@ export default {
       "semanticReviewRef": "u10-s002-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "3e9e264a7a7865fe8d6324bc352ea36699d8cfcea90bd7738e98a77059632dcf"
+      "contentSha256": "f7e49ea5f9fa0246530cb289e0f727d1aa03f80ab05d20716cdfd52ac6cb5b8e"
     },
     {
       "questionId": "u10-s002-v011",
@@ -926,9 +955,11 @@ export default {
         "derivedChoice": "70 平方公分",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "代入的是兩個邊長因數，乘積單位為平方公分。",
+      "explanation": "代入的是兩個邊長因數，乘積單位為平方公分。 x=7 時兩個邊長分別是 7 公分與 7+3=10 公分，面積須以長乘寬，故 7×10=70，單位為平方公分。",
       "steps": [
-        "A(7)=7(7+3)=7×10=70 平方公分。"
+        "A(7)=7(7+3)=7×10=70 平方公分。",
+        "分別代入兩個因數，得到 A(7)=7(7+3)。",
+        "先算括號為 10，再乘 7 得 70 平方公分並核對面積單位。"
       ],
       "optionAnalysis": [
         {
@@ -952,7 +983,7 @@ export default {
           "reason": "多乘 2。"
         }
       ],
-      "misconceptionTarget": "把面積乘法誤成加法",
+      "misconceptionTarget": "把面積乘法誤成加法 把兩個邊長直接相加得到十七，或只計算 x² 而漏掉括號中的加三。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "兩邊皆以公分計，面積為平方公分。",
@@ -967,7 +998,7 @@ export default {
       "semanticReviewRef": "u10-s002-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "56e418e90292b074cff2b3d081a0f067ea9166f6d3a714a70040e55295648266"
+      "contentSha256": "012e3893626ed8c0b26b8422b89f81ee96eda43e3566d70233e3a584dbfebf32"
     },
     {
       "questionId": "u10-s002-v012",
@@ -996,9 +1027,11 @@ export default {
         "derivedChoice": "2640 元",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "固定費加上每人費用。",
+      "explanation": "固定費加上每人費用。 1200 元是不隨人數改變的固定費，45n 是每人費；三十二人的變動費為 45×32=1440 元，再加固定費得 2640 元，兩種費用缺一不可。",
       "steps": [
-        "C(32)=1200+45×32=1200+1440=2640。"
+        "C(32)=1200+45×32=1200+1440=2640。",
+        "代入 n=32，得到 C(32)=1200+45×32。",
+        "先算 45×32=1440，再加 1200 得 2640 元。"
       ],
       "optionAnalysis": [
         {
@@ -1022,7 +1055,7 @@ export default {
           "reason": "錯把固定費重複計算。"
         }
       ],
-      "misconceptionTarget": "固定費與單位費混算",
+      "misconceptionTarget": "固定費與單位費混算 只算每人費而漏加固定費，或把固定費 1200 也乘以人數三十二。",
       "prerequisiteCheck": "使用先備技能：polynomial-terms；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "1200 與 45n 均為元；n 為人數。",
@@ -1037,7 +1070,7 @@ export default {
       "semanticReviewRef": "u10-s002-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ff72b2b425dd1c138b1156ceca45e30d76b6d9d246df76cc066757b306659dd6"
+      "contentSha256": "f5f27e5cc6e0136fa049d14de5c9389afe094b2c3755dd54f7714bb8df755db5"
     }
   ],
   "constructedResponses": [
@@ -1059,14 +1092,16 @@ export default {
       ],
       "standardSolution": [
         "P(-2)=2(-2)²-3(-2)+4。",
-        "=2×4+6+4=18。"
+        "=2×4+6+4=18。",
+        "分項檢查可得二次項 2×4=8、一次項 -3×(-2)=6、常數項 4；三者相加為 18。把 -2 同時代入兩處 x 並保留括號，才能確定平方與負負得正兩個符號都正確。"
       ],
       "alternativeMethods": [
         "可先分項計算：二次項 8、一次項 6、常數 4，再相加。"
       ],
       "reasoningSteps": [
         "P(-2)=2(-2)²-3(-2)+4。",
-        "=2×4+6+4=18。"
+        "=2×4+6+4=18。",
+        "把分項結果 8、6、4 依原式符號重新相加，得到 18，並核對完整等號鏈。"
       ],
       "rubric": [
         {
@@ -1093,7 +1128,8 @@ export default {
       "unitAndNotationRules": "不涉及單位；等號鏈需保持左右相等。",
       "answerOnlyPolicy": "只寫 18 且無算式，最高 1 分。",
       "commonErrorTargets": [
-        "將指定數值完整代入並依運算順序求值"
+        "把 (-2)² 算成 -4，沒有將負二整體放入平方括號。",
+        "只替換二次項中的 x，或把 -3(-2) 算成 -6，漏掉負負得正。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1104,7 +1140,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1b8a406d51b8a96030ea98e16b0a51644f200482b4ba73189c4f979a5cb85848"
+      "contentSha256": "7f1da9bb691ac142185310b8978ff52d81488b9def81047d777d66705206a02e"
     },
     {
       "questionId": "u10-s002-cr002",
@@ -1125,14 +1161,16 @@ export default {
       ],
       "standardSolution": [
         "9a-6+1=22，所以 9a-5=22，9a=27，a=3。",
-        "驗算：3×9-6+1=22。"
+        "驗算：3×9-6+1=22。",
+        "由 9a-5=22 解得 a=3 後，不能只寫「符合」；應把 a=3、x=3 一起代回原式，算出 3×3²-2×3+1=27-6+1=22，確實等於題設值。這也確認移項與除法沒有造成參數誤差，故解答完整且唯一。"
       ],
       "alternativeMethods": [
         "可由 Q(3) 的二次項應為 27，直接算 a=27/9=3。"
       ],
       "reasoningSteps": [
         "9a-6+1=22，所以 9a-5=22，9a=27，a=3。",
-        "驗算：3×9-6+1=22。"
+        "驗算：3×9-6+1=22。",
+        "將 a=3 代回 Q(x)，再取 x=3 算得 22，完成與原條件的獨立驗算。"
       ],
       "rubric": [
         {
@@ -1159,7 +1197,8 @@ export default {
       "unitAndNotationRules": "不涉及單位；a 為純數。",
       "answerOnlyPolicy": "只寫 a=3 無過程，最高 1 分。",
       "commonErrorTargets": [
-        "將指定數值完整代入並依運算順序求值"
+        "把 x=3 代入 ax² 時寫成 3a，漏掉平方而建立錯誤方程。",
+        "解出 a 後未回代驗算，或驗算時把參數 a 與變數 x 的兩個三混為同一因數。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1170,14 +1209,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "592d327271e39e9a65f5a9441b8f40099e51baaccfbb062bb1f7b256a76e0816"
+      "contentSha256": "f0ff028fa3fddb3611cb78e4b0937d1608e957cb43d6752f21e2e0fbf8a9cbcf"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s002-v001-review",
       "questionId": "u10-s002-v001",
-      "questionContentSha256": "e04de41068ef88c9707c2b5217bea86446156301c816bca8da86aea48cf2d938",
+      "questionContentSha256": "d62b8af9a1243827c27bfb00a3896a609e5f089e8427e944a41d59aeacf545ca",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "代入 x=4：3×4+2=12+2=14。",
@@ -1206,12 +1245,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「P(x)=3x+2，則 P(4) 為何？」獨立重算：代入 x=4：3×4+2=12+2=14。 正解「14」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "b412ee36cb118b5c9fe74e519d54d7bb756fb454d55d8bdb364707349c425fd1"
+      "contentSha256": "95ab205d44f55f717ba1e55321cc63232bdba59a62b149613f9a46ec8279dc24"
     },
     {
       "reviewId": "u10-s002-v002-review",
       "questionId": "u10-s002-v002",
-      "questionContentSha256": "ec6bfdcc05450255e499a4dfad8f41fc53c28caf5fc3c4974b50cf19c0f7a148",
+      "questionContentSha256": "a8cdf2247635101017cc40f896798aac3c5ffd69ea42939271ea2e7f57c8fb3b",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "Q(-3)=(-3)²-5=9-5=4。",
@@ -1240,12 +1279,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「Q(x)=x²-5，則 Q(-3) 為何？」獨立重算：Q(-3)=(-3)²-5=9-5=4。 正解「4」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "cb68a09a87da5e2a20af9bbb8662725dda9823aaa41888aacf83f2320dd9c734"
+      "contentSha256": "317ac0d25ac7915a2d31d8e81ad95c09da1068d1ef9b63d3dc91ffcfb68f3aa6"
     },
     {
       "reviewId": "u10-s002-v003-review",
       "questionId": "u10-s002-v003",
-      "questionContentSha256": "ae590fdf81759eb3461dec9513d7477570bef5e11ce591c8dc66e8a08367f5fb",
+      "questionContentSha256": "723e6e1a0c9d443ac796256ca7c630cbfae4e7f802ad016af60fb0572820c38f",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "R(2)=2(2²)-2=8-2=6。",
@@ -1274,12 +1313,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「R(a)=2a²-a，則 R(2) 為何？」獨立重算：R(2)=2(2²)-2=8-2=6。 正解「6」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "0e10245d83f3283866cce214b4ae0f1117b69363b3e769a57f00a7f6785b95b8"
+      "contentSha256": "1c8b5a001c6713f8b472a95e78a931f42defc0742638d069189d99e9238a40f9"
     },
     {
       "reviewId": "u10-s002-v004-review",
       "questionId": "u10-s002-v004",
-      "questionContentSha256": "3cbe99e7d13724294a82956117a12e6d353cd408b0f2158b2ae5145c36641a45",
+      "questionContentSha256": "4f987e6a4f18a8b25520d776096b3d50b7b0450d699fd0dcd26ed6c7587c1448",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "P(-2)=2(-2)²-3(-2)+1=8+6+1=15。",
@@ -1308,12 +1347,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 P(x)=2x²-3x+1，P(-2) 為何？」獨立重算：P(-2)=2(-2)²-3(-2)+1=8+6+1=15。 正解「15」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "8916b47f552b3eff1de949433f82d5d3f7af9fe7bdc2669945a1f0c9a15a392e"
+      "contentSha256": "1306351a65fe12caea593394c2699a6d20c499c5c5ca024f28b5c7e506b50ee4"
     },
     {
       "reviewId": "u10-s002-v005-review",
       "questionId": "u10-s002-v005",
-      "questionContentSha256": "ca10dbee80fa7d693e0e36a1a6ab438082b6acd10249e6c8d9e774e9f3f55087",
+      "questionContentSha256": "1619d853aa86908bd41d36ca64c673d9c64fd7a23361dfbd59818917cfbb50b9",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "A(3)=5-6+9=8。",
@@ -1342,12 +1381,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「A(t)=5-2t+t²，則 A(3) 為何？」獨立重算：A(3)=5-6+9=8。 正解「8」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "0cf81b2cebbda507c697c97c6c4fadccf76e0e2cdd44d9749013191289c6ce8b"
+      "contentSha256": "9efb78add849dfe37f48de00d0b7a79c6ea51c7441f8786238bcc19389694b6a"
     },
     {
       "reviewId": "u10-s002-v006-review",
       "questionId": "u10-s002-v006",
-      "questionContentSha256": "54d30ac9dafddd3b56e1ba26012f2063bd43ef9e0666cb4d45c1d9e4a1520142",
+      "questionContentSha256": "06a7a7a28d30e782a25fa47e2f673e56c35b941826249ad86674a95f305ec0e1",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "2(-1)²-(-1)(3)+3=2+3+3=8。",
@@ -1376,12 +1415,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「F(x,y)=2x²-xy+y，當 x=-1、y=3 時，F 為何？」獨立重算：2(-1)²-(-1)(3)+3=2+3+3=8。 正解「8」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "4f4920fab82496ded2d3cc2ada2f1f8e2784b63f77e95e4b1ec89cc8bbf7ecd5"
+      "contentSha256": "f2bfb3f4087b51c413937fb15a25d24f0a81c4c873a10e5ccddbc86a2ac77c14"
     },
     {
       "reviewId": "u10-s002-v007-review",
       "questionId": "u10-s002-v007",
-      "questionContentSha256": "f76b8a60003c26ca8552a12d7b360207a5f2cdb34c54356883e162b2319e9997",
+      "questionContentSha256": "76d24267f0ae854c5a9061a05a8314934cf76b62f00be61ea8dccf29161ba061",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "P(1)=-2，P(2)=2，P(4)=52，P(3)=27-9=18，所以 k=3。",
@@ -1410,12 +1449,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「P(x)=x³-3x。若 k 為正整數且 P(k)=18，下列何者是 k？」獨立重算：P(1)=-2，P(2)=2，P(4)=52，P(3)=27-9=18，所以 k=3。 正解「3」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "43f9c2b9fe9f4472017a93b6c1449deb1bbd419eb4ee2102a6f448a5cf27bbb8"
+      "contentSha256": "7790c60c86d4d71aaf1300682c551cf79f25e05ac4c97000d002a920bc7e3af4"
     },
     {
       "reviewId": "u10-s002-v008-review",
       "questionId": "u10-s002-v008",
-      "questionContentSha256": "d36f4c9c01778985dd7034ff6430f81919f857fa66fb00ddffbe53d09522ee29",
+      "questionContentSha256": "b2f799b30f51f73a76a52cb87ca1471a73f2aeb52d8bad91973c67d2d3d790ce",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "P(2)=4a+4-1=4a+3=15，所以 4a=12，a=3。",
@@ -1444,12 +1483,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 P(x)=ax²+2x-1 且 P(2)=15，則 a 為何？」獨立重算：P(2)=4a+4-1=4a+3=15，所以 4a=12，a=3。 正解「3」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "a816d3b0e2b625773d9e091920c5dd95e8db67614a7ea3fdaaaafae58ca85d74"
+      "contentSha256": "adb169745ad0a5653a383a991542852841d2e0192469af4f9b3d2473620af4fd"
     },
     {
       "reviewId": "u10-s002-v009-review",
       "questionId": "u10-s002-v009",
-      "questionContentSha256": "ac13878df9b5628a02c2902f227fdbf8f11acf22e8606151c7e86766947d61d4",
+      "questionContentSha256": "f91bf8319146249f9bf9b4789bbd115153a5da9bb7466608ae80b6c9e371aae9",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "P(2)=7，P(-2)=4-2+1=3，差為 4。",
@@ -1478,12 +1517,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「P(x)=x²+x+1。P(2)-P(-2) 為何？」獨立重算：P(2)=7，P(-2)=4-2+1=3，差為 4。 正解「4」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "8cb8c39fb6f6265900ec4873037877da906036fb90629e29da0e7b02e2686b51"
+      "contentSha256": "a6bc525b43cd294dc62eedcdb6a4c1ede7ebb45497d5e26cd95fd098578a0a8d"
     },
     {
       "reviewId": "u10-s002-v010-review",
       "questionId": "u10-s002-v010",
-      "questionContentSha256": "3e9e264a7a7865fe8d6324bc352ea36699d8cfcea90bd7738e98a77059632dcf",
+      "questionContentSha256": "f7e49ea5f9fa0246530cb289e0f727d1aa03f80ab05d20716cdfd52ac6cb5b8e",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "T(5)=18-2×5=8。",
@@ -1512,12 +1551,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「溫度模型 T(h)=18-2h，h 表示午夜後經過小時數。h=5 時模型溫度為何？」獨立重算：T(5)=18-2×5=8。 正解「8°C」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "b25eeecf4ea5d5f6a054caca413f9bd4479b110375e0eb1974567f8f4cd3dcd0"
+      "contentSha256": "07b858aa6bc74238359bb5617a7ab7648ddc80f8fccc7fa792ce667f82977abc"
     },
     {
       "reviewId": "u10-s002-v011-review",
       "questionId": "u10-s002-v011",
-      "questionContentSha256": "56e418e90292b074cff2b3d081a0f067ea9166f6d3a714a70040e55295648266",
+      "questionContentSha256": "012e3893626ed8c0b26b8422b89f81ee96eda43e3566d70233e3a584dbfebf32",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "A(7)=7(7+3)=7×10=70 平方公分。",
@@ -1546,12 +1585,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一張長方形紙的面積 A(x)=x(x+3)。當 x=7 公分時面積是多少？」獨立重算：A(7)=7(7+3)=7×10=70 平方公分。 正解「70 平方公分」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "70c441dfa8430b8bacd066c87d278c886633c31d0d0348b128611cdeec08e9d7"
+      "contentSha256": "1b91f50456189bd1d97328fc622032067a55291ae9194c656f8c5b846f381826"
     },
     {
       "reviewId": "u10-s002-v012-review",
       "questionId": "u10-s002-v012",
-      "questionContentSha256": "ff72b2b425dd1c138b1156ceca45e30d76b6d9d246df76cc066757b306659dd6",
+      "questionContentSha256": "f5f27e5cc6e0136fa049d14de5c9389afe094b2c3755dd54f7714bb8df755db5",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "C(32)=1200+45×32=1200+1440=2640。",
@@ -1580,7 +1619,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「活動總費用 C(n)=1200+45n。若有 32 人，總費用為何？」獨立重算：C(32)=1200+45×32=1200+1440=2640。 正解「2640 元」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "820c0ce64129e69d43023c61d69ab5d8ed81d126f4b1b71b47d0849bb1a693d4"
+      "contentSha256": "013260bdef9d4a646ea371720910199d3b10097e5c9f9415c83ce347f8f09fa1"
     }
   ],
   "drawingSpecs": []

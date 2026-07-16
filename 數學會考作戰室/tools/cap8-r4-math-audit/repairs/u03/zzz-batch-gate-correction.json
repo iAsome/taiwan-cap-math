@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u03",
+  "batch": "004-u03-complete",
+  "skills": ["s011"],
+  "mc": [
+    {
+      "questionId": "u03-s011-v006",
+      "expectedContentSha256": "f3b2ae2aaeddda3b27c8312849c0f40eb1ea0605fac3aeaabe9f933bfa303fe4",
+      "reviewSet": {
+        "reviewerNote": "題目：120 公尺繩子切七段等長繩，另剩 1 公尺。獨立重算：7x+1=120，7x=119，所以x=17。原選項 119/7 與 17 等值，造成兩個正確選項；已將該項改為 119，表示可分總長而非單段長。修正後四選項逐項驗算，只有 17 正確。並確認『剩 1 公尺不能使用』排除把 120 直接平均分成七段的解讀，題目與四個選項的長度單位均為公尺。",
+        "ambiguityChecks": {
+          "secondCorrectAnswer": "獨立重算得 7x+1=120，x=17。修正後的其餘選項 16、119、18 分別是錯誤取整、可分總長與超出原長的結果，都不等於每段 17 公尺。",
+          "undefinedSymbol": "未知數 x 明確代表每一段等長繩的長度；七段、總長一百二十公尺與剩餘一公尺都由題幹明示，因此沒有未定義符號或變數指涉。",
+          "unitConflict": "題幹總長、不能使用的剩餘長度、未知的每段長與四個數值選項全部以公尺為同一單位，因此列式與比較時沒有長度單位換算或混用的歧義。",
+          "roundingConflict": "119 可被 7 整除，精確商為 17，不需四捨五入或保留未化簡等值選項。",
+          "domainBoundary": "解題只使用『總長＝段數乘以每段長再加剩餘』的一元一次方程式，未知數取正長度且結果為整數，完整落在國中教育會考的一元一次方程式範圍。",
+          "alternateReading": "題幹明說切成七段等長繩，並另剩一公尺不能使用；所求是單段長度，不是可分總長。"
+        }
+      }
+    }
+  ],
+  "constructedResponse": [],
+  "lectures": [],
+  "drawingSpecs": [],
+  "textFiles": []
+}

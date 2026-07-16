@@ -53,7 +53,8 @@ export default {
       "判定次數前一定要合併同類項，因為最高次項可能抵消。",
       "係數的正負號屬於係數；-x⁵ 的首項係數是 -1。",
       "常數多項式如 7 的次數是 0。",
-      "零多項式沒有本課約定下的次數，不能硬寫 0 次。"
+      "零多項式沒有本課約定下的次數，不能硬寫 0 次。",
+      "多項式次數必須從最後化簡式判定：先展開括號、合併同類項並刪除係數為零的項，再按降冪排列，最高非零項的指數才是次數；首項係數則是該項連同正負號的數字因數。含參數時，若要求恰為某次數，要讓所有更高次係數為零，同時確認目標次項係數非零。非零常數可視為零次，而所有項皆抵消的零多項式不能硬套為零次。"
     ],
     "formalDefinitions": [
       {
@@ -110,7 +111,8 @@ export default {
         "solutionSteps": [
           "最高非零指數 4；首項 -3x⁴。"
         ],
-        "answer": "4 次，首項係數 -3。"
+        "answer": "4 次，首項係數 -3。",
+        "why": "多項式已按降冪排列且沒有可合併項，所以最高非零項是 -3x⁴。次數讀指數四，首項係數則讀乘在 x⁴ 前且包含負號的 -3；兩種數值來自不同位置，不能互換。"
       },
       {
         "exampleId": "L2",
@@ -118,7 +120,8 @@ export default {
         "solutionSteps": [
           "三次項抵消，剩 2x²。"
         ],
-        "answer": "2 次。"
+        "answer": "2 次。",
+        "why": "次數只能從化簡後的最高非零項判定。兩個三次項係數和為零，整項消失；剩下 2x² 的係數非零，因此最高指數降為二，而不能因原式曾出現 x³ 就答三次。"
       },
       {
         "exampleId": "L3",
@@ -126,7 +129,8 @@ export default {
         "solutionSteps": [
           "-8=-8x⁰，且係數非零。"
         ],
-        "answer": "0 次。"
+        "answer": "0 次。",
+        "why": "由 x⁰=1，可將任何非零常數寫成常數係數乘 x⁰；-8 的係數非零，所以最高非零指數就是零。這與零多項式所有係數皆為零、無法指定本課次數的情況不同。"
       }
     ],
     "commonMistakes": [
@@ -144,12 +148,17 @@ export default {
         "mistake": "把三項式稱三次式",
         "why": "混淆項數與次數",
         "correction": "次數看最高指數。"
+      },
+      {
+        "mistake": "只令高次項消失就判定為指定次數",
+        "why": "下一個目標次項也可能同時因參數而消失",
+        "correction": "列出高次係數等於零及目標次係數不等於零兩組條件。"
       }
     ],
     "selfCheck": [
-      "我是否能能判定單項式與多項式的次數？",
-      "我是否能能指出首項、首項係數及指定次項係數？",
-      "我是否能能處理最高次項抵消後次數下降的情況？",
+      "我是否能判定單項式與多項式的次數？",
+      "我是否能指出首項、首項係數及指定次項係數？",
+      "我是否能處理最高次項抵消後次數下降的情況？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -200,7 +209,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "97a41aed40a91e689d52726d040c6bb278344e7ec8c09912480dcce13d23c774"
+    "contentSha256": "d6611c884016785fabe7b517db76b54a458a051f46f3823b686bc69c178c5747"
   },
   "mcQuestions": [
     {
@@ -230,9 +239,11 @@ export default {
         "derivedChoice": "3",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "次數看最高非零指數，不看係數大小。",
+      "explanation": "次數看最高非零指數，不看係數大小。 原式已化簡且最高非零項為 -4x³，次數只讀未知數的最高指數三；係數負四的絕對值與共有三項都不是判準。",
       "steps": [
-        "最高非零項是 -4x³，最高指數為 3。"
+        "最高非零項是 -4x³，最高指數為 3。",
+        "確認各項係數皆非零，且不需要再合併同類項。",
+        "比較 x 的指數 3、1、0，最大值為 3，所以是三次多項式。"
       ],
       "optionAnalysis": [
         {
@@ -256,7 +267,7 @@ export default {
           "reason": "3 正確。"
         }
       ],
-      "misconceptionTarget": "把係數或項數當次數",
+      "misconceptionTarget": "把係數或項數當次數 把最高項係數的絕對值四或多項式的項數，誤當成多項式次數。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -271,7 +282,7 @@ export default {
       "semanticReviewRef": "u10-s004-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a769592245306e68c9c2640a84190d11a839ec734f1d7cc0a9f286219012aebb"
+      "contentSha256": "ee951c8becf436887541d5b1c2f186ecdf8dd42940e959bdab14a2771aa76c8e"
     },
     {
       "questionId": "u10-s004-v002",
@@ -300,9 +311,11 @@ export default {
         "derivedChoice": "5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "首項係數包含首項前的數。",
+      "explanation": "首項係數包含首項前的數。 按降冪排列後，最先出現的最高次非零項是 5x²；首項係數是乘在 x² 前的數 5，而右上角的 2 是指數。",
       "steps": [
-        "按降冪已排列，首項 5x² 的係數是 5。"
+        "按降冪已排列，首項 5x² 的係數是 5。",
+        "比較各項指數，確認二次項 5x² 是首項。",
+        "將 5x² 分成係數 5 與文字部分 x²，讀出答案 5。"
       ],
       "optionAnalysis": [
         {
@@ -326,7 +339,7 @@ export default {
           "reason": "7 是常數。"
         }
       ],
-      "misconceptionTarget": "混淆首項係數與指數",
+      "misconceptionTarget": "混淆首項係數與指數 把首項的指數二當成首項係數，或改讀後面一次項省略的負一。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -341,7 +354,7 @@ export default {
       "semanticReviewRef": "u10-s004-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f25842971fcd74c64527c515aad1adb45209be1cb8f4c3cb8a480998804aa9bc"
+      "contentSha256": "9b2878c451932be2cac3e2210ac9d94350a607e172b7ce997712a864367ff995"
     },
     {
       "questionId": "u10-s004-v003",
@@ -370,9 +383,11 @@ export default {
         "derivedChoice": "0",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "非零常數為 0 次多項式。",
+      "explanation": "非零常數為 0 次多項式。 非零常數 -9 可寫成 -9x⁰，係數仍非零，因此其最高非零指數為 0；負九是係數值，不代表次數為負九。",
       "steps": [
-        "-9=-9x⁰，最高非零指數是 0。"
+        "-9=-9x⁰，最高非零指數是 0。",
+        "用 x⁰=1 將 -9 改寫為 -9x⁰。",
+        "最高且唯一的非零指數是 0，所以判定為零次多項式。"
       ],
       "optionAnalysis": [
         {
@@ -396,7 +411,7 @@ export default {
           "reason": "只有零多項式另作處理。"
         }
       ],
-      "misconceptionTarget": "認為常數沒有次數",
+      "misconceptionTarget": "認為常數沒有次數 認為常數式沒有出現 x 就沒有次數，或把常數值 -9 本身當作次數。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -411,7 +426,7 @@ export default {
       "semanticReviewRef": "u10-s004-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "89e7485c968c1e92c8948b875eeea7717f247f268a90d7abf602186808a7ea1f"
+      "contentSha256": "0d3d34083ab1e512ada9188a14737b69b07e80a978eae09774f060e623c1fe8f"
     },
     {
       "questionId": "u10-s004-v004",
@@ -440,9 +455,11 @@ export default {
         "derivedChoice": "2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先化簡再判定次數。",
+      "explanation": "先化簡再判定次數。 判定次數前須先合併同類項；3x⁴ 與 -3x⁴ 的係數和為零而消失，剩式最高非零項是 2x²，故次數降為二，不能沿用原式最高指數。",
       "steps": [
-        "四次項抵消，剩 2x²-x，最高指數 2。"
+        "四次項抵消，剩 2x²-x，最高指數 2。",
+        "先合併四次項，算得 (3-3)x⁴=0。",
+        "刪去零項後比較 2x² 與 -x，最高指數為 2。"
       ],
       "optionAnalysis": [
         {
@@ -466,7 +483,7 @@ export default {
           "reason": "忽略二次項。"
         }
       ],
-      "misconceptionTarget": "未先合併最高次項",
+      "misconceptionTarget": "未先合併最高次項 看到原式出現 x⁴ 就直接答四次，沒有檢查兩個四次項已完全抵消。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -481,7 +498,7 @@ export default {
       "semanticReviewRef": "u10-s004-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bda9e75fab531ccfd4c405ac169dbda9ee2b5fa330956e498cb5c0d52b09054e"
+      "contentSha256": "75887a6549260fe03440577cecfa067b6463b98e668f46cb746dc68530d78654"
     },
     {
       "questionId": "u10-s004-v005",
@@ -510,9 +527,11 @@ export default {
         "derivedChoice": "-1",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "省略的係數連同負號為 -1。",
+      "explanation": "省略的係數連同負號為 -1。 最高次項是 -x⁵，省略的正數係數為 1，但項前負號屬於係數，所以可改寫成 (-1)x⁵，首項係數為 -1，符號不可省略。",
       "steps": [
-        "-x⁵=-1x⁵，所以首項係數 -1。"
+        "-x⁵=-1x⁵，所以首項係數 -1。",
+        "按最高指數五鎖定首項 -x⁵。",
+        "補寫省略係數為 (-1)x⁵，連同符號讀出 -1。"
       ],
       "optionAnalysis": [
         {
@@ -536,7 +555,7 @@ export default {
           "reason": "4 是二次項係數。"
         }
       ],
-      "misconceptionTarget": "省略係數的符號判讀錯",
+      "misconceptionTarget": "省略係數的符號判讀錯 只補上省略的係數一而忽略項前負號，或把指數五誤當係數。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -551,7 +570,7 @@ export default {
       "semanticReviewRef": "u10-s004-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bf47937cf9482c536b76e9cc7a38264705867bfbca2cf4a58007382e9bb40a78"
+      "contentSha256": "9c6f19395ed8dc8560677388c4c43d8eba5439cd16e85f158e3134fb6a7a515e"
     },
     {
       "questionId": "u10-s004-v006",
@@ -580,10 +599,11 @@ export default {
         "derivedChoice": "2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "最高次項係數必須為 0，下一項需非零。",
+      "explanation": "最高次項係數必須為 0，下一項需非零。 要使最高次數恰為二，三次項必須消失，所以 a-2=0；解得 a=2 後，下一個二次項係數固定為 5 且非零，確保不是更低次。",
       "steps": [
         "要使三次項消失，a-2=0，所以 a=2。",
-        "且二次項係數 5≠0。"
+        "且二次項係數 5≠0。",
+        "令三次項係數 a-2=0，解出 a=2。"
       ],
       "optionAnalysis": [
         {
@@ -607,7 +627,7 @@ export default {
           "reason": "三次係數 1。"
         }
       ],
-      "misconceptionTarget": "只看題目稱二次而未令高次係數為零",
+      "misconceptionTarget": "只看題目稱二次而未令高次係數為零 只看到式中有 5x² 就稱為二次式，沒有先讓更高的三次項係數變成零。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -622,7 +642,7 @@ export default {
       "semanticReviewRef": "u10-s004-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "726a59d5944df70342c59fb094ed14ee0e23a168d6c5044551068b76026314ff"
+      "contentSha256": "5214a128235070f7d2b173ac8dda8600d04ba68469ffd57bf4c0bc8058c75999"
     },
     {
       "questionId": "u10-s004-v007",
@@ -651,10 +671,11 @@ export default {
         "derivedChoice": "-1",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "同時檢查最高項消失與下一項保留。",
+      "explanation": "同時檢查最高項消失與下一項保留。 三次多項式要求四次項消失而三次項保留；先由 m+1=0 得 m=-1，再算 m-1=-2≠0，因此最高非零項確為三次。",
       "steps": [
         "三次要求四次係數 m+1=0，得 m=-1。",
-        "此時三次係數 -2≠0。"
+        "此時三次係數 -2≠0。",
+        "以 m=-1 回代兩個係數，得到四次係數 0、三次係數 -2。"
       ],
       "optionAnalysis": [
         {
@@ -678,7 +699,7 @@ export default {
           "reason": "其實存在 m=-1。"
         }
       ],
-      "misconceptionTarget": "只令一個係數符合而未檢查下一項",
+      "misconceptionTarget": "只令一個係數符合而未檢查下一項 只令四次係數為零就停止，沒有確認同一參數值下三次項係數仍非零。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -693,7 +714,7 @@ export default {
       "semanticReviewRef": "u10-s004-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d0adedeb15d6441b64faf08ff1c6c2592ab35ce130d2ad8d79c125a073d1dfa9"
+      "contentSha256": "c7f85deef8cc4d2ba437a90a251c7b91a3e1f8165679188bc12f09a67663097c"
     },
     {
       "questionId": "u10-s004-v008",
@@ -722,9 +743,11 @@ export default {
         "derivedChoice": "2 次，7",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "跨括號合併後再判定。",
+      "explanation": "跨括號合併後再判定。 去除加法括號後，分散在兩括號中的 2x³ 與 -2x³ 仍是同類項並抵消；剩下 7x²-x+5，最高指數二、首項係數七。",
       "steps": [
-        "三次項 2x³-2x³ 抵消，剩 7x²-x+5，所以 2 次且首項係數 7。"
+        "三次項 2x³-2x³ 抵消，剩 7x²-x+5，所以 2 次且首項係數 7。",
+        "展開加法括號並合併三次項，得到 0x³+7x²-x+5。",
+        "刪除零項後鎖定 7x²，讀出二次且首項係數 7。"
       ],
       "optionAnalysis": [
         {
@@ -748,7 +771,7 @@ export default {
           "reason": "2 次、7 正確。"
         }
       ],
-      "misconceptionTarget": "未合併跨括號同類項",
+      "misconceptionTarget": "未合併跨括號同類項 只在各括號內尋找最高次項，未跨括號合併互為相反數的三次項。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -763,7 +786,7 @@ export default {
       "semanticReviewRef": "u10-s004-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8590a005fad5f2b11214b872681a20e530fa9de10b3c2536774136a4fca0acb5"
+      "contentSha256": "57f044ed217a220e02c599135f8c3db5d0ccf34c308ad663ddce50118ac77249"
     },
     {
       "questionId": "u10-s004-v009",
@@ -792,9 +815,11 @@ export default {
         "derivedChoice": "0",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "相同多項式的同次方係數相等。",
+      "explanation": "相同多項式的同次方係數相等。 同一多項式在相同次方的係數必須逐一相等，因此 a=3、b=-4、c=1；連同 b 的負號相加，3-4+1=0，三欄對應皆一致。",
       "steps": [
-        "對應係數 a=3、b=-4、c=1，所以 a+b+c=0。"
+        "對應係數 a=3、b=-4、c=1，所以 a+b+c=0。",
+        "依 x²、x、常數三欄逐一比較，得到 a=3、b=-4、c=1。",
+        "代入 a+b+c 計算 3+(-4)+1=0。"
       ],
       "optionAnalysis": [
         {
@@ -818,7 +843,7 @@ export default {
           "reason": "使用係數絕對值相加。"
         }
       ],
-      "misconceptionTarget": "係數比較忽略負號",
+      "misconceptionTarget": "係數比較忽略負號 比較係數時把 -4 抄成正四，或未按二次、一次、常數的順序對應 a、b、c。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -833,7 +858,7 @@ export default {
       "semanticReviewRef": "u10-s004-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4ed370fd18bee594269d2b4f5578e6bb37e686f422e0fe17f3ae06ba9ce9669b"
+      "contentSha256": "87b4f98e47d5d67f42d2ad52e3e9a17ee0af12ff434fd99e498b6fd5cfbf66b5"
     },
     {
       "questionId": "u10-s004-v010",
@@ -862,9 +887,11 @@ export default {
         "derivedChoice": "-2",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "情境名稱不改變多項式的首項判讀。",
+      "explanation": "情境名稱不改變多項式的首項判讀。 情境字母改為 t 仍用同一判準；最高次非零項是 -2t³，乘在 t³ 前的完整數值包含負號，所以係數是 -2。",
       "steps": [
-        "最高次項是 -2t³，其係數為 -2。"
+        "最高次項是 -2t³，其係數為 -2。",
+        "比較 t 的指數 3、2、0，先鎖定最高次項 -2t³。",
+        "分離數字因數與文字部分，讀出首項係數 -2。"
       ],
       "optionAnalysis": [
         {
@@ -888,7 +915,7 @@ export default {
           "reason": "40 是常數。"
         }
       ],
-      "misconceptionTarget": "把指數或較大數值當首項係數",
+      "misconceptionTarget": "把指數或較大數值當首項係數 以數值大小挑出 40 或 15，或把最高指數三當作最高次項係數。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "係數單位依 S 與 t 的單位而定；本題只問數值。",
@@ -903,7 +930,7 @@ export default {
       "semanticReviewRef": "u10-s004-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9964fe4a2cf54b2e2deb45455bc44d0c664f07349dab7881cc3139ef8a3fa4a7"
+      "contentSha256": "a0339b43011c666cb2dca6e7e1511d3e0804dc5cbe2ebad50d04aeb943b6607a"
     },
     {
       "questionId": "u10-s004-v011",
@@ -932,9 +959,11 @@ export default {
         "derivedChoice": "2 次",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "面積單位不等於多項式次數；次數由 x 的最高指數決定。",
+      "explanation": "面積單位不等於多項式次數；次數由 x 的最高指數決定。 平方公尺是面積 A 的物理單位，與代數次數不是同一概念；式中最高非零項 x² 的指數為二，所以模型是二次多項式。",
       "steps": [
-        "最高非零項 x² 的指數是 2。"
+        "最高非零項 x² 的指數是 2。",
+        "忽略面積單位，僅比較多項式各項的 x 指數。",
+        "最高非零指數是 x² 的 2，因此選二次多項式。"
       ],
       "optionAnalysis": [
         {
@@ -958,7 +987,7 @@ export default {
           "reason": "2 次正確。"
         }
       ],
-      "misconceptionTarget": "把平方公尺或常數值當多項式次數",
+      "misconceptionTarget": "把平方公尺或常數值當多項式次數 把題目中的三個項、常數九或平方公尺的平方字樣，誤當作多項式次數。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "A 的單位為平方公尺；多項式次數無單位。",
@@ -973,7 +1002,7 @@ export default {
       "semanticReviewRef": "u10-s004-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "17ff8db2d308eb6108f92c7cf60e8812597077debae98d659c355bdeb4619a50"
+      "contentSha256": "38ee2c4818f8bb328be41a96cc52bdee6cb5384ae372799f6a6303b2eb548a80"
     },
     {
       "questionId": "u10-s004-v012",
@@ -1002,9 +1031,11 @@ export default {
         "derivedChoice": "-0.5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "排列只改位置，不改符號。",
+      "explanation": "排列只改位置，不改符號。 原式按降冪重排為 -0.5n²+120n；搬移完整項時負號不變，最高次項是 -0.5n²，因此首項係數為 -0.5，而非原先排首的 120。",
       "steps": [
-        "降冪排列為 -0.5n²+120n，首項係數 -0.5。"
+        "降冪排列為 -0.5n²+120n，首項係數 -0.5。",
+        "將完整二次項 -0.5n² 移到一次項 120n 前。",
+        "由最高次項分離係數，保留負號讀出 -0.5。"
       ],
       "optionAnalysis": [
         {
@@ -1028,7 +1059,7 @@ export default {
           "reason": "2 是指數。"
         }
       ],
-      "misconceptionTarget": "未降冪或漏首項負號",
+      "misconceptionTarget": "未降冪或漏首項負號 按原書寫順序把 120 當首項係數，或重排二次項時遺失負號而答正 0.5。",
       "prerequisiteCheck": "使用先備技能：like-terms-combine；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "係數單位由營收與 n 定義決定；本題只判數值。",
@@ -1043,7 +1074,7 @@ export default {
       "semanticReviewRef": "u10-s004-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2e0e0bad3a3c84d7dde1ad55702642e77e07ead9567c7a60afca177a651daf95"
+      "contentSha256": "b97b24d16d78a64a9c04a0765879c89ccc7a2e543b080e78492043a83d7edc4d"
     }
   ],
   "constructedResponses": [
@@ -1065,14 +1096,16 @@ export default {
       ],
       "standardSolution": [
         "四次項抵消，P(x)=-3x²+x-8。",
-        "最高非零項為 -3x²，所以次數 2、首項係數 -3。"
+        "最高非零項為 -3x²，所以次數 2、首項係數 -3。",
+        "判定順序不能由原式直接讀四次：先算 5x⁴+(-5x⁴)=0，刪除零項後再按降冪觀察。剩式的最高非零指數為二，且首項 -3x² 的係數包含負號，所以答案為二次、-3。"
       ],
       "alternativeMethods": [
         "可先代數化簡，再以係數表 (0,0,-3,1,-8) 判定。"
       ],
       "reasoningSteps": [
         "四次項抵消，P(x)=-3x²+x-8。",
-        "最高非零項為 -3x²，所以次數 2、首項係數 -3。"
+        "最高非零項為 -3x²，所以次數 2、首項係數 -3。",
+        "刪去係數為零的四次項後，按降冪重新排列並連同符號讀取 -3x²。"
       ],
       "rubric": [
         {
@@ -1099,7 +1132,8 @@ export default {
       "unitAndNotationRules": "不涉及單位；係數需含負號。",
       "answerOnlyPolicy": "只寫「2 次，-3」最高 2 分。",
       "commonErrorTargets": [
-        "化簡後判定次數、首項係數與各項符號"
+        "未先合併相反的四次項，看到 x⁴ 就直接判為四次多項式。",
+        "次數判為二後卻把首項係數寫成正三，遺失 -3x² 的負號。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1110,7 +1144,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1d4328374a3ecadbcbea52bd4e92572b51003e49cea23c0d1be7a0074152cf8b"
+      "contentSha256": "f85c1c9fa0b91bc629ad3396e5e6dfed7cff93939395de79db5cf8e6ed5c8f2c"
     },
     {
       "questionId": "u10-s004-cr002",
@@ -1130,14 +1164,16 @@ export default {
       ],
       "standardSolution": [
         "a+2=0 得 a=-2。",
-        "此時四次項係數 a-1=-3≠0，所以 P=-3x⁴+3x²，確為四次。"
+        "此時四次項係數 a-1=-3≠0，所以 P=-3x⁴+3x²，確為四次。",
+        "四次多項式需同時滿足五次係數為零與四次係數非零。a=-2 使 a+2=0，而 a-1=-3；代回後 P(x)=0x⁵-3x⁴+3x²，刪去零項後最高指數確為四。"
       ],
       "alternativeMethods": [
         "可用「最高項消失、下一項保留」的係數條件一次判斷。"
       ],
       "reasoningSteps": [
         "a+2=0 得 a=-2。",
-        "此時四次項係數 a-1=-3≠0，所以 P=-3x⁴+3x²，確為四次。"
+        "此時四次項係數 a-1=-3≠0，所以 P=-3x⁴+3x²，確為四次。",
+        "將 a=-2 完整代回兩個含參數的係數，刪除五次零項後確認四次項仍保留。"
       ],
       "rubric": [
         {
@@ -1164,7 +1200,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫 a=-2，最高 2 分。",
       "commonErrorTargets": [
-        "化簡後判定次數、首項係數與各項符號"
+        "誤令四次係數 a-1=0，反而讓目標四次項消失。",
+        "只解 a+2=0 而未檢查 a-1 是否非零，沒有完成『恰為四次』的驗證。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1175,14 +1212,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "38156ad6fd7ab3634c9809be88be30ac919a0f96b0a80bc37ad254ae2ef7678e"
+      "contentSha256": "4b6200b6b93a984fefcc6861d62c74f3872044c5faf93d4533f51a73d0c9b0e5"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s004-v001-review",
       "questionId": "u10-s004-v001",
-      "questionContentSha256": "a769592245306e68c9c2640a84190d11a839ec734f1d7cc0a9f286219012aebb",
+      "questionContentSha256": "ee951c8becf436887541d5b1c2f186ecdf8dd42940e959bdab14a2771aa76c8e",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "最高非零項是 -4x³，最高指數為 3。",
@@ -1211,12 +1248,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「多項式 -4x³+2x-1 的次數為何？」獨立重算：最高非零項是 -4x³，最高指數為 3。 正解「3」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "07145e4585f154a081993df421decbe34fa83c0f96f05d20655175a1a221d252"
+      "contentSha256": "7c89b4ddc037b48964671aaa64814ecf800493cebddfbbcd5cd2c6bbac58b5c7"
     },
     {
       "reviewId": "u10-s004-v002-review",
       "questionId": "u10-s004-v002",
-      "questionContentSha256": "f25842971fcd74c64527c515aad1adb45209be1cb8f4c3cb8a480998804aa9bc",
+      "questionContentSha256": "9b2878c451932be2cac3e2210ac9d94350a607e172b7ce997712a864367ff995",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "按降冪已排列，首項 5x² 的係數是 5。",
@@ -1245,12 +1282,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「多項式 5x²-x+7 的首項係數為何？」獨立重算：按降冪已排列，首項 5x² 的係數是 5。 正解「5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "77bcbd90da90c2a1af3c9e41b4abbf0a36a48328b84e3bd68ddad9222fad8f11"
+      "contentSha256": "724fdc894011076a55fdc815de20820727e5e0ea2c80dd359257f06b3fcc5746"
     },
     {
       "reviewId": "u10-s004-v003-review",
       "questionId": "u10-s004-v003",
-      "questionContentSha256": "89e7485c968c1e92c8948b875eeea7717f247f268a90d7abf602186808a7ea1f",
+      "questionContentSha256": "0d3d34083ab1e512ada9188a14737b69b07e80a978eae09774f060e623c1fe8f",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "-9=-9x⁰，最高非零指數是 0。",
@@ -1279,12 +1316,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「非零常數多項式 -9 的次數為何？」獨立重算：-9=-9x⁰，最高非零指數是 0。 正解「0」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "e9a8a972671f27ee4174395d509955c3ff5844050ab7cea148521bceff7927cd"
+      "contentSha256": "6bdd2c0065081431bd0abd036949ca2b32dc677e1af8ff8ffaabff692cff56f6"
     },
     {
       "reviewId": "u10-s004-v004-review",
       "questionId": "u10-s004-v004",
-      "questionContentSha256": "bda9e75fab531ccfd4c405ac169dbda9ee2b5fa330956e498cb5c0d52b09054e",
+      "questionContentSha256": "75887a6549260fe03440577cecfa067b6463b98e668f46cb746dc68530d78654",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "四次項抵消，剩 2x²-x，最高指數 2。",
@@ -1313,12 +1350,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 3x⁴-3x⁴+2x²-x 後，其次數為何？」獨立重算：四次項抵消，剩 2x²-x，最高指數 2。 正解「2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "aaa7de401e8f0ceede489c15482cff8129b4621ee20a98478b1c914f6813300b"
+      "contentSha256": "0aef62746fc72ad3759fc4c934913407cbf462693420f021538962bd5c3222eb"
     },
     {
       "reviewId": "u10-s004-v005-review",
       "questionId": "u10-s004-v005",
-      "questionContentSha256": "bf47937cf9482c536b76e9cc7a38264705867bfbca2cf4a58007382e9bb40a78",
+      "questionContentSha256": "9c6f19395ed8dc8560677388c4c43d8eba5439cd16e85f158e3134fb6a7a515e",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "-x⁵=-1x⁵，所以首項係數 -1。",
@@ -1347,12 +1384,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「多項式 -x⁵+4x²-3 的首項係數是多少？」獨立重算：-x⁵=-1x⁵，所以首項係數 -1。 正解「-1」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "c7f6171cae93ac19451acd25a6e9be14cce737909aa826c52953ff9ac3e26a1b"
+      "contentSha256": "9408829d57ed7eb3ec92c02852a7f75c5780d1134081203273d9d3aea4e57a9b"
     },
     {
       "reviewId": "u10-s004-v006-review",
       "questionId": "u10-s004-v006",
-      "questionContentSha256": "726a59d5944df70342c59fb094ed14ee0e23a168d6c5044551068b76026314ff",
+      "questionContentSha256": "5214a128235070f7d2b173ac8dda8600d04ba68469ffd57bf4c0bc8058c75999",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "要使三次項消失，a-2=0，所以 a=2；且二次項係數 5≠0。",
@@ -1381,12 +1418,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 P(x)=(a-2)x³+5x²-1 是二次多項式，則 a 為何？」獨立重算：要使三次項消失，a-2=0，所以 a=2；且二次項係數 5≠0。 正解「2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "ca52b7cf944c7d21b11097f755560be50ae84af55d0f96dd5b2cbc59385ef1e1"
+      "contentSha256": "9ea8397e0afbf7bc459e8b5cbc0f802b62ea99960903fe2ba8cab30e752a6159"
     },
     {
       "reviewId": "u10-s004-v007-review",
       "questionId": "u10-s004-v007",
-      "questionContentSha256": "d0adedeb15d6441b64faf08ff1c6c2592ab35ce130d2ad8d79c125a073d1dfa9",
+      "questionContentSha256": "c7f85deef8cc4d2ba437a90a251c7b91a3e1f8165679188bc12f09a67663097c",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "三次要求四次係數 m+1=0，得 m=-1；此時三次係數 -2≠0。",
@@ -1415,12 +1452,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「P(x)=(m+1)x⁴+(m-1)x³+2。若 P 為三次多項式，m 為何？」獨立重算：三次要求四次係數 m+1=0，得 m=-1；此時三次係數 -2≠0。 正解「-1」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "915013a41ec06681ebb5b314304056fb24ec8d33b5f4beaa9f93e81be7075df1"
+      "contentSha256": "e206f0126dc5b78991fb8731f4a9576c59fe9f0580f1feabb7a50199f8aaefaa"
     },
     {
       "reviewId": "u10-s004-v008-review",
       "questionId": "u10-s004-v008",
-      "questionContentSha256": "8590a005fad5f2b11214b872681a20e530fa9de10b3c2536774136a4fca0acb5",
+      "questionContentSha256": "57f044ed217a220e02c599135f8c3db5d0ccf34c308ad663ddce50118ac77249",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "三次項 2x³-2x³ 抵消，剩 7x²-x+5，所以 2 次且首項係數 7。",
@@ -1449,12 +1486,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「多項式 (2x³-x)+(−2x³+7x²)+5 的次數與首項係數為何？」獨立重算：三次項 2x³-2x³ 抵消，剩 7x²-x+5，所以 2 次且首項係數 7。 正解「2 次，7」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "f7f68cb7198c216a8e5080747e9e0a821821bb3693f4a89e54a44028e8143c26"
+      "contentSha256": "b16ff4e88ae5d2ab2d0afa50ab56690e396ba6e458d1e720272557ed09f74d90"
     },
     {
       "reviewId": "u10-s004-v009-review",
       "questionId": "u10-s004-v009",
-      "questionContentSha256": "4ed370fd18bee594269d2b4f5578e6bb37e686f422e0fe17f3ae06ba9ce9669b",
+      "questionContentSha256": "87b4f98e47d5d67f42d2ad52e3e9a17ee0af12ff434fd99e498b6fd5cfbf66b5",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "對應係數 a=3、b=-4、c=1，所以 a+b+c=0。",
@@ -1483,12 +1520,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 ax²+bx+c 與 3x²-4x+1 是同一多項式，則 a+b+c 為何？」獨立重算：對應係數 a=3、b=-4、c=1，所以 a+b+c=0。 正解「0」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "a09c7ddc7b7d58e049f4a3741d148eead78ad53dc02b5c4865429985cd74dceb"
+      "contentSha256": "87719f8ee49c407b0ee00a084f74cdbf5948617f6a726908fb43921d19cac7c5"
     },
     {
       "reviewId": "u10-s004-v010-review",
       "questionId": "u10-s004-v010",
-      "questionContentSha256": "9964fe4a2cf54b2e2deb45455bc44d0c664f07349dab7881cc3139ef8a3fa4a7",
+      "questionContentSha256": "a0339b43011c666cb2dca6e7e1511d3e0804dc5cbe2ebad50d04aeb943b6607a",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "最高次項是 -2t³，其係數為 -2。",
@@ -1517,12 +1554,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一模型 S(t)=-2t³+15t²+40 中，最高次項係數為何？」獨立重算：最高次項是 -2t³，其係數為 -2。 正解「-2」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "c60e026f6431caecfe01d25919a5d54c11ed4896c462c211345bccf63922f6b2"
+      "contentSha256": "a90d0d1f2825ab322d777070b64299e2f9a145ca8530e4a7a9bba66e2428b273"
     },
     {
       "reviewId": "u10-s004-v011-review",
       "questionId": "u10-s004-v011",
-      "questionContentSha256": "17ff8db2d308eb6108f92c7cf60e8812597077debae98d659c355bdeb4619a50",
+      "questionContentSha256": "38ee2c4818f8bb328be41a96cc52bdee6cb5384ae372799f6a6303b2eb548a80",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "最高非零項 x² 的指數是 2。",
@@ -1551,12 +1588,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「某正方形擴建後面積 A(x)=x²+6x+9 平方公尺。這個面積模型是幾次多項式？」獨立重算：最高非零項 x² 的指數是 2。 正解「2 次」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "a50c15294109d642947540cd21e70b7aa748c97f07047114ef82117843126846"
+      "contentSha256": "4b0fc57c6f0e598c6667d26aaaa2e8254e8c56c2b25b3d6a0e9632bba2911d73"
     },
     {
       "reviewId": "u10-s004-v012-review",
       "questionId": "u10-s004-v012",
-      "questionContentSha256": "2e0e0bad3a3c84d7dde1ad55702642e77e07ead9567c7a60afca177a651daf95",
+      "questionContentSha256": "b97b24d16d78a64a9c04a0765879c89ccc7a2e543b080e78492043a83d7edc4d",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "降冪排列為 -0.5n²+120n，首項係數 -0.5。",
@@ -1585,7 +1622,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「營收模型 R(n)=120n-0.5n²。按降冪排列後的首項係數為何？」獨立重算：降冪排列為 -0.5n²+120n，首項係數 -0.5。 正解「-0.5」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "33323ece150ad9c5c2215e01e0d64c085f4532e39f57dc811d4f90429565585b"
+      "contentSha256": "4ddd96cb262e100c7ad1e3f001ccbbd3acd2ff15719cc66863d8517910cabfef"
     }
   ],
   "drawingSpecs": []

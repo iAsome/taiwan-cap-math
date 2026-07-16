@@ -155,7 +155,7 @@ export default {
         "reasoning": "x/2=18/x。",
         "solutionSteps": [
           "x/2=18/x。",
-          "x^2=36且x>0。"
+          "x²=36且x>0。"
         ],
         "answer": "x=6"
       }
@@ -250,7 +250,7 @@ export default {
       "reviewedAt": "2026-07-12",
       "reviewNote": "逐段檢查「等比數列基本」的定義、符號、適用條件與六類常見錯誤；四個例題均以不同數值與推理路徑重算，並確認未直接複製本技能題庫題幹。"
     },
-    "contentSha256": "f0da0294e671304e052355365f50984882b71cec2553394b7689b7d4e64a3288"
+    "contentSha256": "656017379f8ea99e25ac682684c30ea7732a71c223de8a3f2f0dd8460e9e7ba6"
   },
   "mcQuestions": [
     {
@@ -770,7 +770,7 @@ export default {
         "7"
       ],
       "answerIndex": 1,
-      "independentSolution": "a_n=64(1/2)^{n-1}。列到門檻附近：a_4=8≥5，a_5=4<5，所以最小n=5。",
+      "independentSolution": "a_n=64(1/2)ⁿ⁻¹。列到門檻附近：a_4=8≥5，a_5=4<5，所以最小n=5。",
       "mainExplanation": "依題意依序處理：逐次乘1/2。；檢查前一項與達標項。，所以唯一正確選項是「5」。",
       "steps": [
         "逐次乘1/2。",
@@ -813,7 +813,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "5b0b6caf18c09c5c24ddb9b8d459b9f50c9df9b7c59bc3683d8417e64c2e143f"
+      "contentSha256": "be07faf5f1fb1ea1645fe6ba5a75aba6c9f6ab007c6591c4b1a6a20bbdec3b0c"
     },
     {
       "questionId": "u14-s004-v009",
@@ -985,7 +985,7 @@ export default {
         "20480"
       ],
       "answerIndex": 0,
-      "independentSolution": "第0年50000；第1年40000；第2年32000；第3年25600。等價於50000×(4/5)^3。",
+      "independentSolution": "第0年50000；第1年40000；第2年32000；第3年25600。等價於50000×(4/5)³。",
       "mainExplanation": "依題意依序處理：確認經過3年有3次折減。；逐年乘0.8。，所以唯一正確選項是「25600」。",
       "steps": [
         "確認經過3年有3次折減。",
@@ -1028,7 +1028,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4658d0c146946cad96ab2020d4cb286ed0a46d77b2bb485cbac407f8c3a9ad54"
+      "contentSha256": "ab7a8a115f9f1536182355c146de99c03d1e7a4736859e8eb5324c1e7f4a2205"
     },
     {
       "questionId": "u14-s004-v012",
@@ -1082,7 +1082,7 @@ export default {
         {
           "choice": "5",
           "truth": true,
-          "reason": "通過5層即乘(1/2)^5，160÷32=5。"
+          "reason": "通過5層即乘(1/2)⁵，160÷32=5。"
         }
       ],
       "misconceptionTarget": "把進入前160當成第1層後的量，少減半一次。",
@@ -1100,7 +1100,7 @@ export default {
       "figureDrawingSpecRef": null,
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "fe04d0f6dea1cfa8ed84c30fce3d02d5ddc61a28ac9a3b19db5f96429c60764a"
+      "contentSha256": "47bb3a3b904e0adb959ccec61ffd63d091b874fe464d36e739356360190dfa8e"
     }
   ],
   "constructedResponses": [
@@ -1499,11 +1499,11 @@ export default {
       "questionId": "u14-s004-v008",
       "unitId": "u14",
       "skillId": "geometric-basic",
-      "contentSha256": "5b0b6caf18c09c5c24ddb9b8d459b9f50c9df9b7c59bc3683d8417e64c2e143f",
+      "contentSha256": "be07faf5f1fb1ea1645fe6ba5a75aba6c9f6ab007c6591c4b1a6a20bbdec3b0c",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "a_n=64(1/2)^{n-1}。列到門檻附近：a_4=8≥5，a_5=4<5，所以最小n=5。",
+      "independentSolution": "a_n=64(1/2)ⁿ⁻¹。列到門檻附近：a_4=8≥5，a_5=4<5，所以最小n=5。",
       "derivedAnswer": "5",
       "storedAnswer": "5",
       "answerMatch": true,
@@ -1527,8 +1527,8 @@ export default {
       "prerequisiteCheck": "使用前置技能「等差公差」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「等比數列首項為 64、公比為 1/2。第一個小於 5 的項是第幾項？」獨立重算為：a_n=64(1/2)^{n-1}。列到門檻附近：a_4=8≥5，a_5=4<5，所以最小n=5。 四選項逐項核對後唯一正解為「5」；邊界檢查：項次為正整數；同時驗證a_4與a_5。",
-      "reviewContentSha256": "981a0263845d3c05d8206d6b1fb5a1b54a256dc07fde32137552c217447589ec"
+      "reviewerNote": "題目「等比數列首項為 64、公比為 1/2。第一個小於 5 的項是第幾項？」獨立重算為：a_n=64(1/2)ⁿ⁻¹。列到門檻附近：a_4=8≥5，a_5=4<5，所以最小n=5。 四選項逐項核對後唯一正解為「5」；邊界檢查：項次為正整數；同時驗證a_4與a_5。",
+      "reviewContentSha256": "52cae03d26fd26c2b630d78b033bdf40356643e6d3b5329fa31ec9b3bca72d9b"
     },
     {
       "questionId": "u14-s004-v009",
@@ -1604,11 +1604,11 @@ export default {
       "questionId": "u14-s004-v011",
       "unitId": "u14",
       "skillId": "geometric-basic",
-      "contentSha256": "4658d0c146946cad96ab2020d4cb286ed0a46d77b2bb485cbac407f8c3a9ad54",
+      "contentSha256": "ab7a8a115f9f1536182355c146de99c03d1e7a4736859e8eb5324c1e7f4a2205",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",
-      "independentSolution": "第0年50000；第1年40000；第2年32000；第3年25600。等價於50000×(4/5)^3。",
+      "independentSolution": "第0年50000；第1年40000；第2年32000；第3年25600。等價於50000×(4/5)³。",
       "derivedAnswer": "25600",
       "storedAnswer": "25600",
       "answerMatch": true,
@@ -1632,14 +1632,14 @@ export default {
       "prerequisiteCheck": "使用前置技能「等差公差」所建立的概念。",
       "languageCheck": "繁體中文用語符合臺灣國中數學慣例；項次、項值、單項與總和均明確區分。",
       "reviewerDecision": "pass",
-      "reviewerNote": "題目「一台設備原價 50000 元，每年價值變為前一年的 80%。經過 3 年後估值多少元？」獨立重算為：第0年50000；第1年40000；第2年32000；第3年25600。等價於50000×(4/5)^3。 四選項逐項核對後唯一正解為「25600」；邊界檢查：未要求四捨五入；結果為整數元。",
-      "reviewContentSha256": "96c82f2dc277f6aa9d016698a6bc30dbe503576994144877781a526287f9393f"
+      "reviewerNote": "題目「一台設備原價 50000 元，每年價值變為前一年的 80%。經過 3 年後估值多少元？」獨立重算為：第0年50000；第1年40000；第2年32000；第3年25600。等價於50000×(4/5)³。 四選項逐項核對後唯一正解為「25600」；邊界檢查：未要求四捨五入；結果為整數元。",
+      "reviewContentSha256": "4a6400c38344f4bc2df7b63e8ec6a8088d7f02aef35ecdb95ffb8a5a869bf05c"
     },
     {
       "questionId": "u14-s004-v012",
       "unitId": "u14",
       "skillId": "geometric-basic",
-      "contentSha256": "fe04d0f6dea1cfa8ed84c30fce3d02d5ddc61a28ac9a3b19db5f96429c60764a",
+      "contentSha256": "47bb3a3b904e0adb959ccec61ffd63d091b874fe464d36e739356360190dfa8e",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "reviewVersion": "human-review-r4.0",
       "reviewedAt": "2026-07-12",

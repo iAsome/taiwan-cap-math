@@ -114,40 +114,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "貨物先出2/5，再出剩餘1/4。",
+      "prompt": "貨物先出全數的 2/5，再出剩餘的 1/4，最後剩原量多少？",
       "solutionSteps": [
-        "第一步剩3/5。",
-        "第二步保留3/4，合計9/20。"
+        "第一次出全數的 2/5 後，保留原量的 3/5。",
+        "第二次出剩餘的 1/4，表示保留該剩餘量的 3/4。",
+        "相乘 3/5×3/4＝9/20，得到最後剩餘比例。"
       ],
-      "answer": "剩原量9/20。"
+      "answer": "剩原量的 9/20。",
+      "why": "第一次出貨後剩 3/5。第二次出剩餘的 1/4，表示保留剩餘的 3/4，因此最後比例為 3/5×3/4=9/20；第二次的基準是第一次後的剩餘量。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "會員方案固定1000元，每次60元；單次120元，使用20次。",
+      "prompt": "會員方案固定 1000 元、每次 60 元；單次方案每次 120 元，使用 20 次何者較省？",
       "solutionSteps": [
-        "會員2200元。",
-        "單次2400元。"
+        "會員方案總費用為 1000＋60×20＝2200 元。",
+        "單次方案總費用為 120×20＝2400 元。",
+        "比較差額 2400－2200＝200 元，會員方案較省。"
       ],
-      "answer": "會員省200元。"
+      "answer": "會員方案省 200 元。",
+      "why": "會員方案總費用是 1000+60×20=2200 元，單次方案是 120×20=2400 元。比較完整成本後，會員方案少 2400−2200=200 元，不能只看每次價格。兩方案都依相同二十次使用量計算，才是公平比較。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "男女比5:7，男生完成率80%、女生75%。",
+      "prompt": "男女總人數比 5:7，男生完成率 80%、女生 75%，完成者人數比為何？",
       "solutionSteps": [
-        "完成量比5×0.8:7×0.75。",
-        "化簡4:5.25=16:21。"
+        "設男女總人數為 5k、7k，分別乘完成率，得到完成者 4k 與 5.25k。",
+        "列比 4:5.25，兩項同乘 4 化為 16:21。",
+        "檢查已同時納入兩組原人數與各自完成率。"
       ],
-      "answer": "16:21。"
+      "answer": "16:21。",
+      "why": "設男女總人數為 5k、7k，完成者分別為 5k×0.8=4k 與 7k×0.75=5.25k。比值 4:5.25 同乘 4 化為 16:21，總量差異必須納入。不能只比較完成率八十與七十五，因兩組原人數並不相同。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "每18、30分鐘同步，9:00起；10:10到。",
+      "prompt": "兩活動每 18、30 分鐘同步，9:00 同時開始；10:10 到達要等多久？",
       "solutionSteps": [
-        "LCM=90分鐘，同步10:30。",
-        "等待20分鐘。"
+        "求 18 與 30 的最小公倍數，得到同步週期 90 分鐘。",
+        "從 9:00 加 90 分鐘，下一次同步是 10:30。",
+        "計算 10:30－10:10＝20 分鐘。"
       ],
-      "answer": "20分鐘。"
+      "answer": "20 分鐘。",
+      "why": "18 與 30 的最小公倍數是 90 分鐘，所以由 9:00 起下一次同步是 10:30。到場時間 10:10 與同步時刻相差 20 分鐘；不能從到場時刻重新起算週期。"
     }
   ],
   "commonMistakes": [
@@ -233,7 +237,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "45d63dc3b35ea132aa35bce426eae63367c5e2568b2355bc26fde2e4c60e4ec0",
+  "contentSha256": "61e72dea6de1b010a91ae53eac80640036f04ad6d22399fe784657fe99957a8e",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -257,10 +261,11 @@ export const QUESTIONS = [
       "24 人"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：48×3/8=6×3=18；服務組18人。所以答案是「18 人」。",
+    "explanation": "服務組人數是 48 人的 3/8，計算 48×3/8。先用 48÷8=6，再乘 3 得 18，所以服務組有 18 人；18/48 約分也等於 3/8。先除後乘可保持整數運算，且答案沒有超過總人數。",
     "steps": [
-      "48×3/8=6×3=18",
-      "服務組18人"
+      "依題意列式 48×3/8。",
+      "先算 48÷8=6，再算 6×3=18。",
+      "用 18/48=3/8 驗證比例。"
     ],
     "optionAnalysis": [
       {
@@ -284,7 +289,7 @@ export const QUESTIONS = [
         "reason": "這是1/2。"
       }
     ],
-    "commonMistake": "把總人數除以3再乘8。",
+    "commonMistake": "把總人數四十八先除以分子三再乘分母八，將分率的分子與分母作用顛倒。",
     "concept": "部分量=總量×所佔分率。",
     "tags": [
       "數與量",
@@ -299,7 +304,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "社團總人數與服務組比例共同決定實際人數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0ddf0f9a40d51419725c9af99f5030988e41719f6cde0aa3801d0425c85dce7d",
+    "contentSha256": "b75c5a736dadd28f909ee49cda5d44a6163c13ae3dab933a7e82759b2b9d56c0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -321,10 +326,11 @@ export const QUESTIONS = [
       "78 公克"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：5又1/2=5.5；12×5.5=66。所以答案是「66 公克」。",
+    "explanation": "一盒有 5又1/2 份，也就是 5.5 份。每份含糖 12 公克，整盒為 12×5.5=66 公克；也可算五份 60 公克加半份 6 公克。份數乘每份含糖量才是整盒總量，計算後單位仍為公克。",
     "steps": [
-      "5又1/2=5.5",
-      "12×5.5=66"
+      "把 5又1/2 份換成 5.5 份。",
+      "計算 12×5.5=66 公克。",
+      "以 5 份加半份的糖量 60+6 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -348,7 +354,7 @@ export const QUESTIONS = [
         "reason": "12×5又1/2=66公克；78公克不符合每份12公克的乘法。"
       }
     ],
-    "commonMistake": "忽略半份或把份數取整。",
+    "commonMistake": "忽略另外的半份而只算五份，或把五又二分之一直接取整為六份。",
     "concept": "每份量乘份數可含帶分數。",
     "tags": [
       "數與量",
@@ -363,7 +369,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每份含糖量與盒內份數共同決定整盒含糖量。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b5e82d35c77899cdc0819d9348de9229eca3c9a5f366c762a1a6839349978338",
+    "contentSha256": "37e0ae0b24e2f9935893ab6ca600bc3185e7b82ae2e1a9980fa86c5d03939756",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -385,10 +391,11 @@ export const QUESTIONS = [
       "資訊不足"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：60÷12=5；第60天是第5個週期，會舉行。所以答案是「會，因60是12的倍數」。",
+    "explanation": "活動每 12 天一次，今天之後的舉行日是 12 的正倍數。60÷12=5 沒有餘數，所以第 60 天正好是第五個週期，會再次舉行；應判斷倍數而不是因數。",
     "steps": [
-      "60÷12=5",
-      "第60天是第5個週期，會舉行"
+      "以週期 12 天檢查第 60 天。",
+      "計算 60÷12=5，餘數為 0。",
+      "判定第 60 天是第五個週期，活動會舉行。"
     ],
     "optionAnalysis": [
       {
@@ -412,7 +419,7 @@ export const QUESTIONS = [
         "reason": "資料足夠。"
       }
     ],
-    "commonMistake": "把週期判斷看成因數而非倍數。",
+    "commonMistake": "把週期日是否出現誤判成六十是不是十二的因數，而不是檢查六十是否為十二的倍數。",
     "concept": "事件日是週期的倍數。",
     "tags": [
       "數與量",
@@ -427,7 +434,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "週期12天與指定第60天共同決定是否落在活動時點。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "322775a7a5c0a80cc73bb691ee0660f50cbc227942e13c4e61369d91faf39786",
+    "contentSha256": "a8cd513f39ee8130c32aa2e5bf55b0e2eb9263d138e11f27b65e6d382a2cd103",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -449,10 +456,11 @@ export const QUESTIONS = [
       "2/5"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：第一次後剩3/5；第二次出剩餘1/3，所以保留2/3；最後3/5×2/3=2/5。所以答案是「2/5」。",
+    "explanation": "第一次出貨全數的 2/5，剩下原數的 3/5。第二次出剩餘量的 1/3，表示保留剩餘量的 2/3，所以最後剩 3/5×2/3=2/5。第二次是以第一次後的剩餘量為基準，不能直接從全數再減三分之一。",
     "steps": [
-      "第一次後剩3/5",
-      "第二次出剩餘1/3，所以保留2/3；最後3/5×2/3=2/5"
+      "第一次出貨後剩原數的 1−2/5=3/5。",
+      "第二次出剩餘的 1/3，因此保留剩餘的 2/3。",
+      "相乘 3/5×2/3=2/5，得到最後比例。"
     ],
     "optionAnalysis": [
       {
@@ -476,7 +484,7 @@ export const QUESTIONS = [
         "reason": "最後剩2/5。"
       }
     ],
-    "commonMistake": "把『剩餘的1/3』誤成原數的1/3。",
+    "commonMistake": "把第二次『剩餘的三分之一』改成原數的三分之一，忽略基準已在第一次後更新。",
     "concept": "連續比例的基準會改變，要乘保留倍率。",
     "tags": [
       "數與量",
@@ -491,7 +499,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "第二次比例明確以剩餘量為基準，不能與第一次直接相加。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0d6e827014a28be46261dd744638cf3ab467da3099f83837c214421558859427",
+    "contentSha256": "18cd647d31fdd391f5c0eab1e3bd582973196b0bc8eca28cb574e793fb9f5015",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -513,34 +521,35 @@ export const QUESTIONS = [
       "156 件"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：第一週售84件，第二週售60件；剩240-84-60=96。所以答案是「96 件」。",
+    "explanation": "第一週售出 240×35%=84 件；第二週明定以原進貨量為基準，售出 240×1/4=60 件。尚餘 240−84−60=96 件，兩週共售 144 件。把售出的一百四十四件與剩餘九十六件相加，正好回到原進貨量。",
     "steps": [
-      "第一週售84件，第二週售60件",
-      "剩240-84-60=96"
+      "計算第一週售出 240×0.35=84 件。",
+      "計算第二週售出原量的 1/4，即 60 件。",
+      "用 240−84−60 得尚餘 96 件。"
     ],
     "optionAnalysis": [
       {
         "choice": "96 件",
         "truth": true,
-        "reason": "96件正確。"
+        "reason": "第一週售 84 件、第二週售 60 件，240−84−60=96 件。"
       },
       {
         "choice": "84 件",
         "truth": false,
-        "reason": "把1/4作用在剩餘量。"
+        "reason": "84 件是第一週售出量，誤把中間量當成兩週後尚餘量。"
       },
       {
         "choice": "120 件",
         "truth": false,
-        "reason": "只扣一週。"
+        "reason": "把 84+60 誤加成 120，再算 240−120 才會得到 120 件。"
       },
       {
         "choice": "156 件",
         "truth": false,
-        "reason": "這是售出總數。"
+        "reason": "156 件是只扣除第一週 84 件後的剩餘量，漏掉第二週售出的 60 件。"
       }
     ],
-    "commonMistake": "未看清第二週比例以原進貨量為基準。",
+    "commonMistake": "把第二週的四分之一錯以第一週售後剩餘量為基準，而不是題目指定的原進貨量。",
     "concept": "同題不同百分率可能使用同一或不同基準，須讀文字。",
     "tags": [
       "數與量",
@@ -555,7 +564,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "進貨量、第一週百分率和第二週以原量為基準的分率共同決定剩餘庫存。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d83f34b3af93cfd153dee7e6d2ed920cbb55146a77508e585b291ade25957ebd",
+    "contentSha256": "09bc755d7606cae89981e057d38dbc8e6d0c6bcd1316e8509f5ac9608862417d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -577,10 +586,11 @@ export const QUESTIONS = [
       "4 次"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：共同週期lcm(18,24)=72分鐘；8:00後為9:12、10:24，共2次。所以答案是「2 次」。",
+    "explanation": "18 與 24 的最小公倍數為 72 分鐘，所以共同檢查週期是 72 分鐘。由 8:00 起依序為 9:12、10:24、11:36；10:30 前含端點只有前兩次。起始的八點不算題目所問的之後時刻，十一點三十六也已超出範圍。",
     "steps": [
-      "共同週期lcm(18,24)=72分鐘",
-      "8:00後為9:12、10:24，共2次"
+      "求 lcm(18,24)=72 分鐘。",
+      "由 8:00 每隔 72 分鐘列出 9:12、10:24、11:36。",
+      "依 10:30 前的範圍計數，得到 2 次。"
     ],
     "optionAnalysis": [
       {
@@ -604,7 +614,7 @@ export const QUESTIONS = [
         "reason": "把每36分鐘算共同。"
       }
     ],
-    "commonMistake": "只求LCM但未列區間內時刻。",
+    "commonMistake": "只求出共同週期七十二分鐘卻未列實際時刻，因而漏算或多算指定區間內次數。",
     "concept": "同步週期與時間區間要共同處理。",
     "tags": [
       "數與量",
@@ -619,7 +629,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩週期、起始時刻及截止時刻共同決定同步次數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e959946f1c3f3feae1c0372d5f2a1c5533b38bebb588e8c7e9181b15b1e46bd8",
+    "contentSha256": "9ececad8415adf40195993b03dbe30add0002c76186d4924f850cf7bc39360be",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -641,10 +651,11 @@ export const QUESTIONS = [
       "60 人"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：女生佔7/12，男女差2/12=1/6全班；1/6全班=8，所以全班48。所以答案是「48 人」。",
+    "explanation": "男生佔全班 5/12，女生便佔 7/12，女生比男生多全班的 2/12=1/6。已知這個差是 8 人，所以全班人數為 8÷1/6=48 人。驗算男生二十人、女生二十八人，相差八人且合計四十八人。",
     "steps": [
-      "女生佔7/12，男女差2/12=1/6全班",
-      "1/6全班=8，所以全班48"
+      "算出女生比例 1−5/12=7/12。",
+      "男女差為 7/12−5/12=1/6 全班。",
+      "由 1/6 全班=8 人，求得全班 48 人。"
     ],
     "optionAnalysis": [
       {
@@ -668,7 +679,7 @@ export const QUESTIONS = [
         "reason": "差10人。"
       }
     ],
-    "commonMistake": "直接把8人除以5/12。",
+    "commonMistake": "直接用八人除以男生比例十二分之五，沒有先求女生與男生所佔比例的差。",
     "concept": "差額對應兩比例之差。",
     "tags": [
       "數與量",
@@ -683,7 +694,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "男女比例互補且人數差8，兩者共同建立1/6全班=8。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "825397cda63a3bee9b1366d29b2b7d48cd2d551126cca3623aacbcd7eec00f41",
+    "contentSha256": "388a807a38f7e740d64d4acb7dd207761f9d992823295007a2e1d8f0562ffd8c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -705,10 +716,11 @@ export const QUESTIONS = [
       "2000 元"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：總倍率0.8×1.05=0.84；原價=1680÷0.84=2000。所以答案是「2000 元」。",
+    "explanation": "先打八折再加 5% 稅，總倍率是 0.8×1.05=0.84。實付 1680 元等於原價的 84%，所以原價=1680÷0.84=2000 元；代回可還原實付。稅是按折後價計算，因此不能把折扣率與稅率直接相減。",
     "steps": [
-      "總倍率0.8×1.05=0.84",
-      "原價=1680÷0.84=2000"
+      "合併折扣與稅的倍率 0.8×1.05=0.84。",
+      "列式 1680=原價×0.84。",
+      "計算原價 1680÷0.84=2000 元並代回驗證。"
     ],
     "optionAnalysis": [
       {
@@ -732,7 +744,7 @@ export const QUESTIONS = [
         "reason": "2000×0.84=1680。"
       }
     ],
-    "commonMistake": "把折扣與稅率直接相減成75%。",
+    "commonMistake": "把折扣百分之二十與稅率百分之五直接相減成百分之十五，錯用零點八五倍率。",
     "concept": "連續價格變化用倍率相乘，再反除。",
     "tags": [
       "數與量",
@@ -747,7 +759,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "折扣、稅率與實付金額共同決定原價，計算順序不可交換為百分點加減。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "810ff2b894e554db417eefeff183f4bda719138308e4e4f71ca70fbe84db4bc4",
+    "contentSha256": "360aca16bdc4077fa81272a60a47bf26b9988490732cb3c62f4997827ced7b68",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -769,10 +781,11 @@ export const QUESTIONS = [
       "12:25"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：設A=3k、B=5k；完成量分別12k/5與15k/4；比=(12/5):(15/4)=48:75=16:25。所以答案是「16:25」。",
+    "explanation": "設 A、B 全長分別為 3k、5k。完成長度為 3k×4/5=12k/5 與 5k×3/4=15k/4；兩者比為 (12/5):(15/4)=48:75=16:25。完成率必須分別乘各自全長，再比較實際完成長度；只比較四分之五與四分之三會漏掉原總量差異。",
     "steps": [
-      "設A=3k、B=5k",
-      "完成量分別12k/5與15k/4；比=(12/5):(15/4)=48:75=16:25"
+      "依全長比設 A=3k、B=5k。",
+      "分別乘完成率，得 12k/5 與 15k/4。",
+      "相除並化簡比值，得到 16:25。"
     ],
     "optionAnalysis": [
       {
@@ -796,7 +809,7 @@ export const QUESTIONS = [
         "reason": "漏乘原長度比。"
       }
     ],
-    "commonMistake": "只比較4/5與3/4，忽略兩路總長不同。",
+    "commonMistake": "只比較兩路完成率五分之四與四分之三，忽略兩條路的全長原本不同。",
     "concept": "實際完成量=總量比例×完成分率。",
     "tags": [
       "數與量",
@@ -811,7 +824,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "原長度比與各自完成率共同決定實際完成長度比。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3a9f599c8b35dd279e2d9b5ac0c4436db7faa68997f036d0c66dbeb4b5b9ae4b",
+    "contentSha256": "7c3b7bd807a8234f21ec7de9c0c455b7a08188ca1806cc68bf23b40393d4a681",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -833,10 +846,11 @@ export const QUESTIONS = [
       "兩者同價"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：A=1200+80×25=3200；B=140×25=3500，A省300。所以答案是「A 省 300 元」。",
+    "explanation": "方案 A 總費用為固定年費加使用費，1200+80×25=3200 元；方案 B 為 140×25=3500 元。比較後 A 少 3500−3200=300 元。兩方案都以二十五次完整計費，不能只拿每次單價比較而漏掉固定年費。",
     "steps": [
-      "A=1200+80×25=3200",
-      "B=140×25=3500，A省300"
+      "計算方案 A：1200+80×25=3200 元。",
+      "計算方案 B：140×25=3500 元。",
+      "比較差額 3500−3200=300 元，判定 A 較省。"
     ],
     "optionAnalysis": [
       {
@@ -860,7 +874,7 @@ export const QUESTIONS = [
         "reason": "兩方案差300。"
       }
     ],
-    "commonMistake": "只比較每次費用，忽略年費。",
+    "commonMistake": "只比較每次八十元與一百四十元，沒有把方案 A 的固定年費納入總成本。",
     "concept": "固定費用與按次費用都要計入總成本。",
     "tags": [
       "數與量",
@@ -875,7 +889,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "年費、每次費用與使用次數三項資料共同決定兩方案總價。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3c800b429fe2af5a8a89b0f73c2f95ec0205df36f74095ac6db39bc2bb5e86cb",
+    "contentSha256": "8daa462d852ecfced1137d73adbd7aa732b6cca1f289e3f9754ff4dbf13024ce",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -897,10 +911,11 @@ export const QUESTIONS = [
       "90%"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：目前佔65%；增加目前的1/4後倍率1.25，65%×1.25=81.25%。所以答案是「81.25%」。",
+    "explanation": "目前水量佔容量 65%，再增加『目前水量』的 1/4，表示把現有比例乘 1.25。65%×1.25=81.25%，所以增加後約佔容量 81.25%。增加量是容量的百分之十六點二五，和原比例相加也得相同結果。",
     "steps": [
-      "目前佔65%",
-      "增加目前的1/4後倍率1.25，65%×1.25=81.25%"
+      "把目前水量表示為容量的 65%。",
+      "增加目前的 1/4，使用倍率 1.25。",
+      "計算 65%×1.25=81.25%。"
     ],
     "optionAnalysis": [
       {
@@ -924,7 +939,7 @@ export const QUESTIONS = [
         "reason": "把增加量當容量1/4。"
       }
     ],
-    "commonMistake": "把『目前水量的1/4』誤作總容量的1/4。",
+    "commonMistake": "把目前水量的四分之一誤作總容量的四分之一，直接在百分之六十五上加二十五個百分點。",
     "concept": "比例增量的基準是目前量。",
     "tags": [
       "數與量",
@@ -939,7 +954,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "容量、目前比例與『目前水量的四分之一』共同決定新佔比，基準不得替換。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ac1969c8a9a76fdafcfcd4a86acfc7d13f364b4f26bd6213d0ef71ca619aa1ed",
+    "contentSha256": "ddbd58d3e604c31742fb492af506741e31fe6f5fa5e592e0c49630ae2f2ae8ca",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -961,10 +976,11 @@ export const QUESTIONS = [
       "55 分鐘"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：共同週期lcm(20,30)=60分鐘，同時時刻為10:00、11:00；10:05後下一次11:00，需等55分鐘。所以答案是「55 分鐘」。",
+    "explanation": "20 與 30 的最小公倍數是 60 分鐘，從 9:00 起共同時刻為 10:00、11:00。小明 10:05 才到，已錯過 10:00，下一次是 11:00，需等 55 分鐘。共同週期仍從九點的既定時刻起算，不能改從小明到達時重新計時。",
     "steps": [
-      "共同週期lcm(20,30)=60分鐘，同時時刻為10:00、11:00",
-      "10:05後下一次11:00，需等55分鐘"
+      "求 lcm(20,30)=60 分鐘。",
+      "由 9:00 列共同時刻 10:00、11:00。",
+      "計算 11:00−10:05=55 分鐘。"
     ],
     "optionAnalysis": [
       {
@@ -988,7 +1004,7 @@ export const QUESTIONS = [
         "reason": "到11:00等55分鐘。"
       }
     ],
-    "commonMistake": "從到場時間重新起算60分鐘，而不是對齊原共同時刻。",
+    "commonMistake": "從到場的十點零五分重新加六十分鐘，沒有對齊上午九點形成的共同時刻序列。",
     "concept": "週期時刻需以已知共同起點建立時間軸。",
     "tags": [
       "數與量",
@@ -1003,7 +1019,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩區週期、共同起點與到場時刻共同決定下一同步點及等待時間。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "611ffda7c658deec7247c4c257108dd503b41e0e4f003dfd2d8eb000d31797b3",
+    "contentSha256": "42a796f0c67f66b618a024e35f51a744ae0ea37e5d69dcbe750256b82d9524d8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1018,16 +1034,16 @@ export const CONSTRUCTED_RESPONSES = [
     "type": "constructed-response",
     "visualMode": "text-only",
     "figureId": null,
-    "prompt": "社群原有 360 戶。第一年參加回收計劃的佔 5/9；第二年參加戶數比第一年增加 20%。求第二年參加戶數與佔全社群比例。",
+    "prompt": "社群第一年共有 360 戶，參加回收計畫的占 5/9；第二年參加戶數比第一年增加 20%，且第二年全社群總戶數仍為 360 戶。求第二年參加戶數及其占第二年全社群的比例。",
     "requiredWork": [
       "先求第一年人數。",
       "增加率以第一年為基準。",
       "求第二年佔總戶數比例。"
     ],
     "fullCreditSolution": [
-      "第一年=360×5/9=200戶。",
-      "第二年=200×1.2=240戶。",
-      "佔全社群240/360=2/3，約66.67%。"
+      "第一年參加戶數為 360×5/9=200 戶。",
+      "第二年比第一年增加 20%，所以參加戶數為 200×1.2=240 戶。",
+      "題目明定第二年全社群仍有 360 戶，因此所占比例為 240/360=2/3，約 66.67%。"
     ],
     "alternativeSolutions": [
       "可直接360×5/9×1.2。"
@@ -1035,34 +1051,35 @@ export const CONSTRUCTED_RESPONSES = [
     "rubric": [
       {
         "score": 3,
-        "criteria": "200、240與2/3均正確。"
+        "criteria": "正確算出第一年 200 戶、第二年 240 戶，並以第二年總戶數 360 為基準得到 2/3 或約 66.67%。"
       },
       {
         "score": 2,
-        "criteria": "第二年240正確但比例略缺。"
+        "criteria": "第二年 240 戶正確，且知道要除以第二年總戶數，但比例化簡或百分率換算有一處非核心錯誤。"
       },
       {
         "score": 1,
-        "criteria": "第一年200正確。"
+        "criteria": "只正確求出第一年 200 戶，或列出 200×1.2 但第二年戶數計算錯誤。"
       },
       {
         "score": 0,
-        "criteria": "把20%以360為基準。"
+        "criteria": "把增加的 20% 以全社群 360 戶為基準，或沒有可採計的基準量關係。"
       }
     ],
     "scoringNotes": [
-      "假設社群總戶數兩年不變，題目已給原有總數作為比較基準。"
+      "第二年全社群總戶數已明定仍為 360 戶，因此比例的分母唯一；2/3 與約 66.67% 視為等值答案。"
     ],
     "commonErrors": [
-      "把5/9+20%。",
-      "240/200當社群比例。"
+      "把五分之九與百分之二十直接相加，沒有先求第一年實際參加戶數。",
+      "用 360×20% 當增加戶數，忽略增加率以第一年參加的 200 戶為基準。",
+      "以 240/200 計算第二年所占社群比例，誤把第一年參加戶數當作第二年社群總戶數。"
     ],
     "independentReview": {
-      "derivedResult": "第二年240戶，佔2/3。",
-      "ambiguity": "題意與資料足夠，答案唯一。",
+      "derivedResult": "第二年 240 戶，占第二年全社群 2/3，約 66.67%。",
+      "ambiguity": "題幹已明定第二年全社群總戶數仍為 360 戶，比例分母與答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "49c4f77962b6bb4e5b0de0c515daabb20372291f6c2d35df33c484dd1240406d",
+    "contentSha256": "52323e8861b6a7eab35487f17f89201444b21a1b73fc22443ec3829c553e9f37",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1081,9 +1098,9 @@ export const CONSTRUCTED_RESPONSES = [
       "與35分鐘比較。"
     ],
     "fullCreditSolution": [
-      "lcm(24,36)=72分鐘。共同開始時刻為9:00、10:12、11:24。",
-      "遊客10:10到達，下一次共同開始為10:12，等待時間只有2分鐘。",
-      "影片需要35分鐘，所以無法看完；到10:12時只看了2分鐘，還差33分鐘。"
+      "24 與 36 的最小公倍數是 72 分鐘，所以由 9:00 起共同開始時刻為 9:00、10:12、11:24。",
+      "遊客 10:10 到達，下一次共同開始是 10:12，實際等待時間只有 2 分鐘。",
+      "影片需要 35 分鐘，等待 2 分鐘不能看完；到 10:12 時尚差 35−2=33 分鐘。"
     ],
     "alternativeSolutions": [
       "可先由24與36的倍數列表找出10:12，再比較35分鐘與2分鐘。"
@@ -1091,34 +1108,35 @@ export const CONSTRUCTED_RESPONSES = [
     "rubric": [
       {
         "score": 3,
-        "criteria": "找出10:12、等待2分鐘並明確無法看完。"
+        "criteria": "正確求出共同週期 72 分鐘、下一時刻 10:12、等待 2 分鐘，並明確回答影片不能看完且尚差 33 分鐘。"
       },
       {
         "score": 2,
-        "criteria": "結論正確但同步時刻說明不足。"
+        "criteria": "正確得到 10:12 與等待 2 分鐘，也判斷不能看完，但漏答或算錯尚差 33 分鐘。"
       },
       {
         "score": 1,
-        "criteria": "LCM=72正確但選錯下一時刻。"
+        "criteria": "只正確求得最小公倍數 72 分鐘，或列出同步時刻但選錯到達後的下一時刻。"
       },
       {
         "score": 0,
-        "criteria": "從10:10起再加72分鐘。"
+        "criteria": "從 10:10 到場時刻重新起算 72 分鐘，且沒有可採計的共同時刻推理。"
       }
     ],
     "scoringNotes": [
-      "『看完後還剩幾分鐘』為條件式問句；因為看不完，應說明不存在看完後剩餘時間。"
+      "題目要求的是到共同導覽開始時影片尚差多少分鐘；完整答案必須包含『不能看完』與『尚差 33 分鐘』兩部分。"
     ],
     "commonErrors": [
-      "跳過10:12選擇11:24。",
-      "把到場時刻當共同起點。"
+      "漏掉 10:12 這次共同開始而直接選 11:24，造成等待時間錯誤。",
+      "把遊客到場的 10:10 當成新共同起點，再往後加 72 分鐘。",
+      "只回答影片不能看完，沒有用 35−2 算出到共同開始時尚差 33 分鐘。"
     ],
     "independentReview": {
       "derivedResult": "等待2分鐘，影片無法看完，到共同導覽開始時還差33分鐘。",
       "ambiguity": "題目已明確要求「若不能」計算尚差時間，因此不會把負的剩餘時間誤當答案。",
       "decision": "pass"
     },
-    "contentSha256": "79a7f5f1a55aac858f12428773909d4d193cd582d52f1f736ffde1bb6fb30a3e",
+    "contentSha256": "21c75ea3f5be50fe44f0224403bc69c40ce20ea37c1abe60ff259112a28acea0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

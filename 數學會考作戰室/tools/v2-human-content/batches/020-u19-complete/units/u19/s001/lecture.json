@@ -94,6 +94,11 @@
       "step": 4,
       "instruction": "寫出角名與所對弧。",
       "check": "完成此步後，確認仍在「圓心角與圓周角」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "用頂點不在圓心或圓周、以及切線與弦的反例排除誤判。",
+      "check": "是否同時核對頂點位置與角的兩邊，而不是只看角畫在圓內？"
     }
   ],
   "workedExamples": [
@@ -105,7 +110,8 @@
         "OA、OB 都是半徑。"
       ],
       "answer": "∠AOB 是圓心角。",
-      "level": "basic"
+      "level": "basic",
+      "why": "圓心角的必要條件是頂點位於圓心；本題 O 明確是圓心，且 OA、OB 都是連向圓周的半徑，所以角 AOB 完整符合定義，無須依圖形大小猜測。"
     },
     {
       "exampleId": "s001-L2",
@@ -115,7 +121,8 @@
         "CA、CB 都是弦。"
       ],
       "answer": "∠ACB 是圓周角。",
-      "level": "standard"
+      "level": "standard",
+      "why": "角 ACB 的中間字母 C 是頂點，而 C、A、B 都在圓周上；CA、CB 因此為兩條弦，這兩項位置條件共同保證它是圓周角。若頂點改到 O，角的類型就會隨位置改變。"
     },
     {
       "exampleId": "s001-L3",
@@ -125,7 +132,8 @@
         "頂點也不在圓周。"
       ],
       "answer": "不是本節定義的圓心角或圓周角。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "P 雖在圓內，卻既不是圓心也不在圓周，因此同時不符合圓心角與圓周角的頂點條件；角畫在圓內本身不是分類依據。"
     },
     {
       "exampleId": "s001-L4",
@@ -135,7 +143,8 @@
         "選不含頂點 D 的弧。"
       ],
       "answer": "所對弧為弧 AB。",
-      "level": "connection"
+      "level": "connection",
+      "why": "圓周角所對弧由角兩邊在圓上的端點 A、B 決定，並且不能經過角頂點 D；這樣才是角內部真正截得的那一段弧 AB。"
     }
   ],
   "difficultyConnections": {
@@ -185,7 +194,7 @@
     {
       "figureId": "u19-s001-fig001",
       "purpose": "圓 O 上有 A、B、C 三點，畫出圓心角 AOB 與圓周角 ACB，並以不同弧線標示共同端點。",
-      "altText": "圓 O 上有 A、B、C 三點，畫出圓心角 AOB 與圓周角 ACB，並以不同弧線標示共同端點。，不可按比例目測。"
+      "altText": "圓 O 上有 A、B、C 三點，畫出圓心角 AOB 與圓周角 ACB，並以不同弧線標示共同端點，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -220,5 +229,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "24862856042a899d17f3ec6aa85f79beedc9b05a07b3db01574c6dc24f9bca8a"
+  "contentSha256": "dfffb9aa941891e77201a6a86345ac18c0ffaacbc0326b5a605ee91d12934dd5"
 }

@@ -124,7 +124,8 @@ export const LECTURE = {
         "4 不包含。",
         "小於 4 的最大整數是 3。"
       ],
-      "answer": "3。"
+      "answer": "3。",
+      "why": "嚴格小於四會排除端點四，而整數三正好是四左側相鄰值。三符合條件，下一個整數四不符合，因此三不只是可行值，也是所有整數解中的最大者。"
     },
     {
       "exampleId": "L2",
@@ -133,7 +134,8 @@ export const LECTURE = {
         "−1 包含，3 不包含。",
         "依序列整數。"
       ],
-      "answer": "−1、0、1、2。"
+      "answer": "−1、0、1、2。",
+      "why": "左端含等號，所以負一要列入；右端沒有等號，所以三要排除。從負一到三之前依序列出整數，可避免只看距離而混淆兩端開閉。"
     },
     {
       "exampleId": "L3",
@@ -142,7 +144,8 @@ export const LECTURE = {
         "符合的整數為 3、4、5、6。",
         "共 4 個。"
       ],
-      "answer": "4 個。"
+      "answer": "4 個。",
+      "why": "二點四右側第一個整數是三，六點一左側最後一個整數是六。列出三、四、五、六可直接驗證都在區間內，七則已超過上界。"
     },
     {
       "exampleId": "L4",
@@ -151,7 +154,8 @@ export const LECTURE = {
         "從 −2、−1、0 往右可一直延伸。",
         "沒有上界。"
       ],
-      "answer": "無限多個。"
+      "answer": "無限多個。",
+      "why": "負二因含等號而符合，之後每個更大的整數也都符合。條件沒有給上界，所以解集不會在某個整數停止，不能只列眼前幾項便說共有有限個。"
     }
   ],
   "commonMistakes": [
@@ -239,7 +243,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "181abc3090bfd0286d6adb8436808f21fe5bb978f5ae8336c031f15a0fb4447a"
+  "contentSha256": "72cb061badde50c1e01cc43bbbd328bdd7e438c5b1dea7abfc4edb656c2a956c"
 };
 
 export const QUESTIONS = [
@@ -269,10 +273,11 @@ export const QUESTIONS = [
       "result": "4",
       "answerIndexVerified": 1
     },
-    "explanation": "嚴格小於 5 不包含 5；最接近 5 且較小的整數是 4。",
+    "explanation": "條件 x<5 排除端點五。整數依序排列時，五左邊緊鄰的整數是四，所以四符合且比所有其他符合的整數都大；把四代回可得四小於五。",
     "steps": [
-      "排除端點 5",
-      "取前一個整數 4"
+      "先確認嚴格小於符號不包含端點五。",
+      "在數線上找五左側相鄰整數四。",
+      "代入檢查 4<5 成立，且下一個整數五不成立。"
     ],
     "optionAnalysis": [
       {
@@ -296,7 +301,7 @@ export const QUESTIONS = [
         "reason": "整數解有最大值 4。"
       }
     ],
-    "misconceptionTarget": "把嚴格上界當成可取值。",
+    "misconceptionTarget": "把嚴格上界五當成可取的整數解，沒有檢查端點是否包含。",
     "prerequisiteCheck": "需理解嚴格端點。",
     "estimatedTimeSec": "45",
     "unitAndRoundingCheck": "無單位。",
@@ -312,7 +317,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5b1469aba7cd35341bb5366236eac195411e970f7b13747e599046554865d929"
+    "contentSha256": "9340b823cfabc02b543ace1890a2efc3afe9a9c4bd98288465cea874412d1254"
   },
   {
     "questionId": "u07-s006-v002",
@@ -340,11 +345,11 @@ export const QUESTIONS = [
       "result": "−2、−1、0、1",
       "answerIndexVerified": 3
     },
-    "explanation": "左端 −2 包含，右端 2 不包含，所以整數解為 −2、−1、0、1。",
+    "explanation": "左端使用小於或等於，所以負二必須列入；右端使用嚴格小於，所以二必須排除。從負二開始逐一列到二之前的整數，完整解集是負二、負一、零、一。",
     "steps": [
-      "包含 −2",
-      "排除 2",
-      "依序列整數"
+      "由 −2≤x 判定左端整數負二包含。",
+      "由 x<2 判定右端整數二排除。",
+      "依序列出區間內整數 −2、−1、0、1。"
     ],
     "optionAnalysis": [
       {
@@ -368,7 +373,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「−2、−1、0、1」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "兩端包含性混淆。",
+    "misconceptionTarget": "把兩端都當成含等號或都當成不含等號，造成漏列或多列整數。",
     "prerequisiteCheck": "需會雙邊範圍與端點。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "無單位。",
@@ -384,7 +389,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8146b0bd39ef559fb9d705d680816aa0f36523b9f083b73b48d27ab47996c87d"
+    "contentSha256": "529f4b6c428d1e58a269e2d5e176a2e681c77203e21bdac68f7d792159c06e76"
   },
   {
     "questionId": "u07-s006-v003",
@@ -412,10 +417,11 @@ export const QUESTIONS = [
       "result": "3 個",
       "answerIndexVerified": 0
     },
-    "explanation": "符合的整數是 2、3、4，共 3 個。4.7 不是整數，5 已超過上界。",
+    "explanation": "大於一點二的第一個整數是二，不超過四點七的最後一個整數是四。因此符合的整數只有二、三、四，共三個；一與五分別落在下界外與上界外。",
     "steps": [
-      "找第一個大於 1.2 的整數 2",
-      "找最後一個不超過 4.7 的整數 4"
+      "找下界右側第一個整數二。",
+      "找上界左側最後一個整數四。",
+      "列出二、三、四並計數為三個。"
     ],
     "optionAnalysis": [
       {
@@ -439,7 +445,7 @@ export const QUESTIONS = [
         "reason": "區間有兩個有限界。"
       }
     ],
-    "misconceptionTarget": "看到小數端點就機械加減 1。",
+    "misconceptionTarget": "把小數端點先四捨五入再機械加減一，沒有直接檢查整數是否落在區間。",
     "prerequisiteCheck": "需會小數大小比較。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "無單位與四捨五入；端點精確。",
@@ -455,7 +461,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "acb322965f2851555e2d820ba55e518723fcb1b21b4084a33731e6169b81f339"
+    "contentSha256": "3dfd336aa1f19814a186e59fac88853e6247bfe8c8a61c753204700a15356c06"
   },
   {
     "questionId": "u07-s006-v004",
@@ -483,10 +489,11 @@ export const QUESTIONS = [
       "result": "5",
       "answerIndexVerified": 2
     },
-    "explanation": "3x≤15，所以 x≤5。端點 5 包含，最大整數解為 5。",
+    "explanation": "兩邊先加二得三 x 不超過十五，再除以正三得到 x 不超過五，方向不變。五是整數且含在解集中，而六已超過上界，所以最大整數解是五。",
     "steps": [
-      "解得 x≤5",
-      "取包含的整數上界"
+      "兩邊加二，得到 3x≤15。",
+      "除以正數三，得到 x≤5。",
+      "檢查五成立、六不成立，確定最大整數解為五。"
     ],
     "optionAnalysis": [
       {
@@ -510,7 +517,7 @@ export const QUESTIONS = [
         "reason": "存在最大值 5。"
       }
     ],
-    "misconceptionTarget": "解式後漏含端點或未回答最大整數。",
+    "misconceptionTarget": "解出上界五後誤排除含等號端點，或沒有用下一個整數驗證最大性。",
     "prerequisiteCheck": "需會基本不等式解法。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "無單位。",
@@ -526,7 +533,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "19cd28583196fc0a3b9a62e7240f672f962d04de4db9c074708f60ec3327fd83"
+    "contentSha256": "fe48a0958f5e618ebec8860304aaebdd5f8528eb14a826a1987d7699e3a8b5a6"
   },
   {
     "questionId": "u07-s006-v005",
@@ -554,10 +561,11 @@ export const QUESTIONS = [
       "result": "5 個",
       "answerIndexVerified": 3
     },
-    "explanation": "兩邊同減 3 得 −4≤2x<6，再同除以 2 得 −2≤x<3。整數為 −2、−1、0、1、2，共 5 個。",
+    "explanation": "雙邊同減三得負四不超過二 x 且二 x 小於六，再三邊同除以正二，得到負二不超過 x 且 x 小於三。整數為負二、負一、零、一、二，共五個。",
     "steps": [
-      "同步處理雙邊不等式",
-      "列出 −2 到 2"
+      "雙邊各減三，得 −4≤2x<6。",
+      "三邊同除以正二，得 −2≤x<3。",
+      "列出 −2、−1、0、1、2，計數為五個。"
     ],
     "optionAnalysis": [
       {
@@ -581,7 +589,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「5 個」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "雙邊操作只處理一側，或計數漏加 1。",
+    "misconceptionTarget": "雙邊不等式只處理其中一側，或用末數減首數而忘記計數需加一。",
     "prerequisiteCheck": "需會雙邊同加減與計數。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "無單位。",
@@ -597,7 +605,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "248871ba5e309d79d7ec332bacc8050e6fb823f94505d1a26704f3fb3f256639"
+    "contentSha256": "f8356d9e3405fd42cc1c2bffe3298903debf458116ef30c6570c9dce9977c3ea"
   },
   {
     "questionId": "u07-s006-v006",
@@ -625,10 +633,11 @@ export const QUESTIONS = [
       "result": "−3",
       "answerIndexVerified": 0
     },
-    "explanation": "−4 小於 −3.6，不符合；−3 大於 −3.6，是最小符合的整數。",
+    "explanation": "負四位在負三點六左側，比負三點六小，不符合不小於的條件；負三位在右側且符合。所有更小整數都不合，因此最小整數解是負三。",
     "steps": [
-      "比較相鄰整數 −4、−3",
-      "選第一個不小於 −3.6 的整數"
+      "定位 −3.6 介於 −4 與 −3 之間。",
+      "檢查 −4<−3.6，故負四不符合。",
+      "檢查 −3≥−3.6，確定負三為第一個符合整數。"
     ],
     "optionAnalysis": [
       {
@@ -652,7 +661,7 @@ export const QUESTIONS = [
         "reason": "有最小整數 −3。"
       }
     ],
-    "misconceptionTarget": "對負小數使用錯誤取整方向。",
+    "misconceptionTarget": "遇到負小數便沿錯方向取整，把較小的負四誤認為最小符合值。",
     "prerequisiteCheck": "需比較負小數。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "無單位。",
@@ -668,7 +677,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6999d66c5767b14b965adc42eedd6106e15a49f18d325c15ba0fb40315347269"
+    "contentSha256": "6a68000bf314399e7dcc82693e8e678302777692c03a8db8c75ff227e12e6e32"
   },
   {
     "questionId": "u07-s006-v007",
@@ -696,12 +705,11 @@ export const QUESTIONS = [
       "result": "90",
       "answerIndexVerified": 2
     },
-    "explanation": "乘以正數 3 得 6<x+1≤15，再減 1 得 5<x≤14。整數為 6 至 14，共 9 個；首尾平均為 10，所以總和 9×10=90。",
+    "explanation": "三邊乘正三後得六小於 x 加一且 x 加一不超過十五，再同減一得五小於 x 且 x 不超過十四。整數六到十四共九個，首尾平均十，總和為九十。",
     "steps": [
-      "乘以正 3，方向不變",
-      "減 1 得 5<x≤14",
-      "列出 6 至 14",
-      "用項數乘平均數求和"
+      "三邊乘正三並減一，得到 5<x≤14。",
+      "列出整數由六到十四，共 14−6+1=9 個。",
+      "用首尾平均 (6+14)÷2=10，求和 9×10=90。"
     ],
     "optionAnalysis": [
       {
@@ -725,7 +733,7 @@ export const QUESTIONS = [
         "reason": "多加了 6。"
       }
     ],
-    "misconceptionTarget": "解集計數或等差數列總和錯誤。",
+    "misconceptionTarget": "端點轉換後誤納入五，或求連續整數個數與等差級數總和時漏項。",
     "prerequisiteCheck": "需會雙邊不等式與連續整數和。",
     "estimatedTimeSec": "125",
     "unitAndRoundingCheck": "無單位；總和精確。",
@@ -741,7 +749,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "22a54d003f47a66943eb09a224141a633e0c776688a0ae0c6b2c69884a7e05d1"
+    "contentSha256": "085782ee47c975c6c51ff72156a1526497c691e72cffe3f508505f26b696069b"
   },
   {
     "questionId": "u07-s006-v008",
@@ -769,10 +777,11 @@ export const QUESTIONS = [
       "result": "共有 8 個整數解",
       "answerIndexVerified": 1
     },
-    "explanation": "加 1 得 −6<2x≤10，除以 2 得 −3<x≤5。整數解 −2 至 5，共 8 個。",
+    "explanation": "雙邊加一得負六小於二 x 且二 x 不超過十，再同除以正二得負三小於 x 且 x 不超過五。整數解是負二到五，合計八個，所以第二項正確。",
     "steps": [
-      "解雙邊範圍",
-      "列 −2 到 5 並計數"
+      "雙邊加一，得到 −6<2x≤10。",
+      "同除以正二，得到 −3<x≤5。",
+      "列出 −2、−1、0、1、2、3、4、5，共八個。"
     ],
     "optionAnalysis": [
       {
@@ -796,7 +805,7 @@ export const QUESTIONS = [
         "reason": "總和為 12，不是 4。"
       }
     ],
-    "misconceptionTarget": "嚴格左端點誤納入 −3。",
+    "misconceptionTarget": "把嚴格左端負三列入解集，導致最小值、個數與總和都隨之算錯。",
     "prerequisiteCheck": "需會雙邊解法與計數。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "無單位。",
@@ -812,7 +821,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4a0cfec17862d33b58f2b25d1ada10b66197b7bd0468538e0aa32a1674cf8eaf"
+    "contentSha256": "b3cb370154d882856502cbbb1920acbd6daf7ada3c4f412f2dc5f25a79216d63"
   },
   {
     "questionId": "u07-s006-v009",
@@ -840,10 +849,11 @@ export const QUESTIONS = [
       "result": "8",
       "answerIndexVerified": 0
     },
-    "explanation": "k 為整數且嚴格排除 k，最大整數解會是 k−1。由 k−1=7 得 k=8。",
+    "explanation": "當 k 是整數時，所有小於 k 的整數中最大者必為前一個整數 k 減一。題目說最大者是七，所以列 k−1=7，解得 k=8；代回時最大整數確為七。",
     "steps": [
-      "利用嚴格整數上界",
-      "解 k−1=7"
+      "利用 k 為整數，寫出最大整數解為 k−1。",
+      "令 k−1=7，解得 k=8。",
+      "代回 x<8，確認最大整數解是七。"
     ],
     "optionAnalysis": [
       {
@@ -867,7 +877,7 @@ export const QUESTIONS = [
         "reason": "k 已限定整數，因此唯一。"
       }
     ],
-    "misconceptionTarget": "未使用 k 為整數的條件。",
+    "misconceptionTarget": "忽略 k 限定為整數，誤以為許多介於七與八之間的實數 k 都可以。",
     "prerequisiteCheck": "需理解開端點與相鄰整數。",
     "estimatedTimeSec": "90",
     "unitAndRoundingCheck": "無單位。",
@@ -883,7 +893,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e601ba543c4b1bb04428b714239c904bd9319fb00a00bbe7858a199a8b35d506"
+    "contentSha256": "2fc3e0b7c48b61bb9d586f93de1c66c5ff198be702caf973a9d0ff5839acdad7"
   },
   {
     "questionId": "u07-s006-v010",
@@ -911,11 +921,11 @@ export const QUESTIONS = [
       "result": "6 個",
       "answerIndexVerified": 2
     },
-    "explanation": "符合的整數為 13、14、15、16、17、18，共 6 個。",
+    "explanation": "座位編號必須是整數，十二因嚴格下界而排除，十八因含等號上界而保留。可用編號為十三、十四、十五、十六、十七、十八，逐一計數共有六個。",
     "steps": [
-      "排除 12",
-      "包含 18",
-      "列舉並計數"
+      "把規則讀成 12<n≤18，排除十二。",
+      "列出十三到十八的連續整數編號。",
+      "用 18−13+1=6 驗證共有六個座位。"
     ],
     "optionAnalysis": [
       {
@@ -939,7 +949,7 @@ export const QUESTIONS = [
         "reason": "多算其他座位。"
       }
     ],
-    "misconceptionTarget": "兩端包含性造成座位數 off-by-one。",
+    "misconceptionTarget": "忽略座位編號的離散性，或在開下界與閉上界之間發生差一計數錯誤。",
     "prerequisiteCheck": "需會列有限整數區間。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "單位為個座位，無換算。",
@@ -955,7 +965,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d10a4962b729e524833641fdb39d8fb5ea8203c8d96d8592af7bd0e752c645f6"
+    "contentSha256": "b6b68d104fc039b32f129b2c2dbc754c16d7c552add2a6009a3211cf62c966d8"
   },
   {
     "questionId": "u07-s006-v011",
@@ -983,10 +993,11 @@ export const QUESTIONS = [
       "result": "48 張",
       "answerIndexVerified": 1
     },
-    "explanation": "件數最小為 24，因至少包含 24。每件 2 張，所以最少 24×2=48 張。",
+    "explanation": "件數至少二十四表示二十四本身可取，且題目問最少量，因此選最小整數二十四件。每件使用兩張標籤，總數為二十四乘二，等於四十八張。",
     "steps": [
-      "找最小整數件數 24",
-      "乘每件標籤數 2"
+      "由至少二十四件判定最小可行件數為二十四。",
+      "確認少於三十的上界不影響此最小值。",
+      "計算 24×2=48 張標籤。"
     ],
     "optionAnalysis": [
       {
@@ -1010,7 +1021,7 @@ export const QUESTIONS = [
         "reason": "用 30 件且上界排除。"
       }
     ],
-    "misconceptionTarget": "忽略至少端點，或用上界求最少。",
+    "misconceptionTarget": "把至少端點二十四排除，或誤用接近三十的上界來計算最少標籤數。",
     "prerequisiteCheck": "需會範圍與乘法。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "件與張單位關係為每件 2 張。",
@@ -1026,7 +1037,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e612c624d3ff1859f2e896964d008d5cf4d7f2a0b6499e42d9ce710a8a73a2fd"
+    "contentSha256": "f5a76315b289843d9a9fcd2d2c5a48ace4bb91473bbb40626266513230a692d4"
   },
   {
     "questionId": "u07-s006-v012",
@@ -1054,10 +1065,11 @@ export const QUESTIONS = [
       "result": "−9",
       "answerIndexVerified": 3
     },
-    "explanation": "整數溫度為 −4、−3、−2、−1、0、1，其和為 −9。",
+    "explanation": "溫度只取整數，負四點五右側第一個整數是負四，一點二左側最後一個整數是一。解集為負四、負三、負二、負一、零、一，相加得到負九。",
     "steps": [
-      "列出兩小數端點間整數",
-      "相加"
+      "找下界右側第一個整數 −4。",
+      "找上界左側最後一個整數 1，列出 −4 至 1。",
+      "計算 −4−3−2−1+0+1=−9。"
     ],
     "optionAnalysis": [
       {
@@ -1081,7 +1093,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「−9」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "負整數列舉或加總錯誤。",
+    "misconceptionTarget": "列舉負整數時漏項，或將負號相加錯誤，導致整數溫度總和不正確。",
     "prerequisiteCheck": "需會比較小數與負數加法。",
     "estimatedTimeSec": "90",
     "unitAndRoundingCheck": "單位 °C；總和作數值統計，不需另加單位也可，選項以數值表示。",
@@ -1097,7 +1109,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "8baa0ebb63fe51a0ad04c67f42647d3e97c7bee10029d0a02cd852a6e1f27e6e"
+    "contentSha256": "75604c26588b6bbbc5d15fb9319d57ca77e0bf3970c68a500afdfdfadc22198f"
   }
 ];
 
@@ -1117,18 +1129,18 @@ export const CONSTRUCTED_RESPONSES = [
       "計算總和"
     ],
     "fullCreditSolution": [
-      "3x<18，所以 x<6。",
-      "非負整數且小於 6，因此 x=0、1、2、3、4、5。",
+      "由 3x−2<16 兩邊加二，得 3x<18；再除以正三，得到 x<6。",
+      "題目限定非負整數，所以把實數解 x<6 與 x≥0、x 為整數取交集。",
+      "完整非負整數解為 0、1、2、3、4、5，嚴格上界六不能列入。",
       "總和為 0+1+2+3+4+5=15。"
     ],
     "alternativeMethod": [
       "可用 1+2+3+4+5=5×6÷2=15；仍需列出 0 至 5 以顯示整數範圍。"
     ],
     "reasoningSteps": [
-      "解一次不等式",
-      "取實數解與非負整數的交集",
-      "處理嚴格上界",
-      "加總"
+      "先解一次不等式，得到嚴格上界六。",
+      "加入非負與整數限制，列出零到五。",
+      "檢查六被排除後，加總全部符合整數。"
     ],
     "rubric": [
       {
@@ -1153,8 +1165,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "x 無單位；總和也無單位。需使用整數清單或清楚範圍。",
     "answerOnlyPolicy": "只寫 15 而無解集和列舉，最多 1 分。",
     "commonErrors": [
-      "把 6 列入",
-      "把非負整數誤解為從 1 開始"
+      "把嚴格上界六列入，造成解集與總和都多算一項。",
+      "把非負整數誤讀為正整數，漏掉合法的零。",
+      "只列出整數解卻沒有依題意求它們的總和。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1167,7 +1180,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "f3e8c5422f1edce622b6da8ba7ec32b7dc9ff1ca2f371ac064455b0639354b79"
+    "contentSha256": "7c9f4c618d45247df570a8450934cde3fd7578e987cb489df7946cfce1c93259"
   },
   {
     "questionId": "u07-s006-cr002",
@@ -1184,19 +1197,18 @@ export const CONSTRUCTED_RESPONSES = [
       "說明小數端點"
     ],
     "fullCreditSolution": [
-      "大於 −2.5 的最小整數是 −2；不超過 4.2 的最大整數是 4。",
-      "整數解為 −2、−1、0、1、2、3、4。",
-      "共有 7 個，最大整數解為 4，最小整數解為 −2。",
-      "端點 −2.5 與 4.2 本身不是整數，因此改找區間內相鄰的整數，不做四捨五入。"
+      "負二點五右側第一個整數是負二，因負三小於負二點五而不符合；四點二左側最後一個整數是四。",
+      "所有整數解依序為 −2、−1、0、1、2、3、4。",
+      "共有 4−(−2)+1=7 個，最大整數解為四，最小整數解為負二。",
+      "小數端點本身不是整數，應找區間內相鄰整數，不是先將端點四捨五入。"
     ],
     "alternativeMethod": [
       "也可直接用首尾計數：4−(−2)+1=7，再用端點比較驗證 −2 與 4。"
     ],
     "reasoningSteps": [
-      "比較小數端點與相鄰整數",
-      "確定首尾整數",
-      "使用末減首加一",
-      "區分取整與四捨五入"
+      "比較兩個小數端點與相鄰整數，確定首尾。",
+      "列出負二到四的所有整數解。",
+      "以末減首加一計數，並回報最大與最小值。"
     ],
     "rubric": [
       {
@@ -1221,8 +1233,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "最大、最小與個數均無單位；負號需清楚。",
     "answerOnlyPolicy": "只寫「7 個」而無首尾或說明，最多 1 分。",
     "commonErrors": [
-      "把 −3 納入因為接近 −2.5",
-      "把 4.2 四捨五入成 4 當作唯一理由"
+      "因負三接近負二點五就將負三列入，忽略它其實位在下界外。",
+      "把四點二四捨五入成四當成唯一理由，沒有檢查不等式方向。",
+      "用末數減首數得到六，忘記連續整數計數還要加一。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1235,7 +1248,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "5c1e06627e784d8b8538a446c904ed5f98b7e1698597e558de7da9efb05bcbb9"
+    "contentSha256": "63190a7b114c8daa3ae931b3ab87dd1dbb5d71ddf4b88823714aaab414cac5f3"
   }
 ];
 
@@ -1246,7 +1259,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "5b1469aba7cd35341bb5366236eac195411e970f7b13747e599046554865d929",
+    "contentSha256": "9340b823cfabc02b543ace1890a2efc3afe9a9c4bd98288465cea874412d1254",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "列出靠近上界的整數：…、3、4、5；5 被 x<5 排除，4 保留，故最大為 4。",
@@ -1278,7 +1291,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "8146b0bd39ef559fb9d705d680816aa0f36523b9f083b73b48d27ab47996c87d",
+    "contentSha256": "529f4b6c428d1e58a269e2d5e176a2e681c77203e21bdac68f7d792159c06e76",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "從最小允許整數 −2 開始，到小於 2 的最後整數 1，依序是 −2、−1、0、1。",
@@ -1310,7 +1323,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "acb322965f2851555e2d820ba55e518723fcb1b21b4084a33731e6169b81f339",
+    "contentSha256": "3dfd336aa1f19814a186e59fac88853e6247bfe8c8a61c753204700a15356c06",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "逐整數檢查：1 不大於 1.2；2、3、4 符合；5>4.7。故共 3 個。",
@@ -1342,7 +1355,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "19cd28583196fc0a3b9a62e7240f672f962d04de4db9c074708f60ec3327fd83",
+    "contentSha256": "fe48a0958f5e618ebec8860304aaebdd5f8528eb14a826a1987d7699e3a8b5a6",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "3x−2≤13 ⇒ 3x≤15 ⇒ x≤5。整數 5 可取且任何更大整數不行，因此最大為 5。",
@@ -1374,7 +1387,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "248871ba5e309d79d7ec332bacc8050e6fb823f94505d1a26704f3fb3f256639",
+    "contentSha256": "f8356d9e3405fd42cc1c2bffe3298903debf458116ef30c6570c9dce9977c3ea",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−1≤2x+3<9 ⇒ −4≤2x<6 ⇒ −2≤x<3。列整數 −2、−1、0、1、2，數得 5。",
@@ -1406,7 +1419,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "6999d66c5767b14b965adc42eedd6106e15a49f18d325c15ba0fb40315347269",
+    "contentSha256": "6a68000bf314399e7dcc82693e8e678302777692c03a8db8c75ff227e12e6e32",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "數線上 −4<−3.6<−3。條件要求在 −3.6 右側含邊界，第一個整數是 −3。",
@@ -1438,7 +1451,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "22a54d003f47a66943eb09a224141a633e0c776688a0ae0c6b2c69884a7e05d1",
+    "contentSha256": "085782ee47c975c6c51ff72156a1526497c691e72cffe3f508505f26b696069b",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "2<(x+1)/3≤5 ⇒ 6<x+1≤15 ⇒ 5<x≤14。整數 6,7,…,14 共 9 個，和=(6+14)×9÷2=90。",
@@ -1470,7 +1483,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "4a0cfec17862d33b58f2b25d1ada10b66197b7bd0468538e0aa32a1674cf8eaf",
+    "contentSha256": "b3cb370154d882856502cbbb1920acbd6daf7ada3c4f412f2dc5f25a79216d63",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−3<x≤5，整數為 −2,−1,0,1,2,3,4,5，數量 8；最大 5，最小 −2，和 12。",
@@ -1502,7 +1515,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "e601ba543c4b1bb04428b714239c904bd9319fb00a00bbe7858a199a8b35d506",
+    "contentSha256": "2fc3e0b7c48b61bb9d586f93de1c66c5ff198be702caf973a9d0ff5839acdad7",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "對整數 k，所有小於 k 的整數中最大為 k−1。令 k−1=7，解得 k=8。",
@@ -1534,7 +1547,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "d10a4962b729e524833641fdb39d8fb5ea8203c8d96d8592af7bd0e752c645f6",
+    "contentSha256": "b6b68d104fc039b32f129b2c2dbc754c16d7c552add2a6009a3211cf62c966d8",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "從第一個大於 12 的編號 13，到包含的 18，共 18−13+1=6 個。",
@@ -1566,7 +1579,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "e612c624d3ff1859f2e896964d008d5cf4d7f2a0b6499e42d9ce710a8a73a2fd",
+    "contentSha256": "f5a76315b289843d9a9fcd2d2c5a48ace4bb91473bbb40626266513230a692d4",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "最少可裝 24 件；每件 2 張，總數 2×24=48。上界不影響最小值。",
@@ -1598,7 +1611,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-integer-solutions",
-    "contentSha256": "8baa0ebb63fe51a0ad04c67f42647d3e97c7bee10029d0a02cd852a6e1f27e6e",
+    "contentSha256": "75604c26588b6bbbc5d15fb9319d57ca77e0bf3970c68a500afdfdfadc22198f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−4.5 右邊第一個整數 −4，到小於 1.2 的最後整數 1。相加 (−4−3−2−1)+(0+1)=−10+1=−9。",

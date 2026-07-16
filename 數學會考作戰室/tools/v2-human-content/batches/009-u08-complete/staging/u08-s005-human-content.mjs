@@ -115,23 +115,28 @@ export const LECTURE = {
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "先按邊檢查相等邊數。",
-      "check": "三邊全等、恰兩邊等或三邊互異。"
+      "instruction": "先按邊比較相等邊的數量。",
+      "check": "三邊全等、恰兩邊相等或三邊互異要分清楚。"
     },
     {
       "step": 2,
-      "instruction": "再按角找最大內角。",
-      "check": "最大角決定銳角、直角或鈍角類型。"
+      "instruction": "再按角找出最大內角。",
+      "check": "最大角小於、等於或大於 90°，依序決定銳角、直角或鈍角分類。"
     },
     {
       "step": 3,
-      "instruction": "有等腰條件時標出底邊與底角。",
-      "check": "等長兩邊夾角是頂角，另一邊是底邊。"
+      "instruction": "有等腰條件時標出等邊所對的兩個底角。",
+      "check": "等長兩邊的夾角是頂角，另一邊是底邊。"
     },
     {
       "step": 4,
-      "instruction": "用內角和與相等角求未知量。",
-      "check": "最後同時寫出需要的邊分類和角分類。"
+      "instruction": "用內角和與相等角求未知角，必要時檢查三角形不等式。",
+      "check": "候選邊長必須能實際形成三角形。"
+    },
+    {
+      "step": 5,
+      "instruction": "依題目要求同時寫出按邊與按角的分類。",
+      "check": "兩套分類可並存，例如等腰鈍角三角形；理由要分別對應邊與角。"
     }
   ],
   "workedExamples": [
@@ -142,7 +147,8 @@ export const LECTURE = {
         "有兩邊同為 5。",
         "因此是等腰三角形。"
       ],
-      "answer": "等腰三角形。"
+      "answer": "等腰三角形。",
+      "why": "按邊分類只需檢查相等邊數。5、5、8 中恰有兩邊相等，所以符合等腰三角形定義；第三邊 8 不同，故不是正三角形，而存在相等邊也排除不等邊三角形。"
     },
     {
       "exampleId": "L2",
@@ -151,16 +157,18 @@ export const LECTURE = {
         "三角都小於 90°。",
         "因此為銳角三角形。"
       ],
-      "answer": "銳角三角形。"
+      "answer": "銳角三角形。",
+      "why": "按角分類看最大內角即可。三角中最大的是 70°，仍小於 90°，因此其餘更小的角也都是銳角，整個三角形便是銳角三角形；先驗算三角和為 180° 可確認資料有效。"
     },
     {
       "exampleId": "L3",
       "prompt": "等腰三角形頂角 40°，每個底角為何？",
       "solutionSteps": [
-        "兩底角相等，總和為 180°-40°=140°。",
-        "每個底角 140°÷2=70°。"
+        "兩底角相等，總和為 180°－40°＝140°。",
+        "每個底角 140°÷2＝70°。"
       ],
-      "answer": "70°。"
+      "answer": "70°。",
+      "why": "等腰三角形的兩個底角相等，而三角和為 180°。扣除頂角 40° 後剩下 140°，必須平均分給兩個底角，所以各 70°；回代 40°＋70°＋70° 可完成檢查。"
     },
     {
       "exampleId": "L4",
@@ -169,7 +177,8 @@ export const LECTURE = {
         "三邊相等是正三角形。",
         "每角 60°，三角皆銳角。"
       ],
-      "answer": "正三角形，也是銳角三角形。"
+      "answer": "正三角形，也是銳角三角形。",
+      "why": "三邊相等先決定按邊分類為正三角形；等邊對等角使三角也相等，再由內角和得每角 60°，所以按角又是銳角三角形。兩套分類回答不同特徵，可以同時成立而不互相取代。"
     }
   ],
   "levelConnections": {
@@ -240,7 +249,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "26751fd84c780b35600d7e54604e3c01fb9e6a51a5c2446cb74c7c514daa314c"
+  "contentSha256": "b3792b4c8a3606ebbc152be8c804b6af421ae6dc7194b08fa6b4c17b30deb5d7"
 };
 
 export const QUESTIONS = [
@@ -270,10 +279,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "7、7 相等，第三邊 10 不同，屬等腰。",
-    "explanation": "按邊分類只看相等邊的數量。",
+    "explanation": "按邊分類時只比較三邊是否相等。邊長 7、7、10 中恰有兩邊同為 7，第三邊不同，因此是等腰三角形；三邊沒有全相等，也不是三邊互異。直角則屬於按角分類，不能由此直接選。",
     "steps": [
-      "比較三邊。",
-      "兩邊相等。"
+      "比較三個邊長 7、7、10。",
+      "找出恰有兩邊同為 7，第三邊 10 不同。",
+      "依按邊分類定義，判定為等腰三角形。"
     ],
     "optionAnalysis": [
       {
@@ -297,7 +307,7 @@ export const QUESTIONS = [
         "reason": "題目只給邊長相等關係，且本題問按邊分類。"
       }
     ],
-    "misconceptionTarget": "看到三個數就誤判不等邊。",
+    "misconceptionTarget": "看到第三邊為十就判成不等邊，忽略另外兩邊同為七已符合等腰定義。",
     "prerequisiteCheck": "能比較邊長。",
     "estimatedTimeSec": 90,
     "unitCheck": "三邊使用同一長度單位，分類不受單位省略影響。",
@@ -309,7 +319,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1b5add4b7e00907eceecde752e10dc3f2adce0b6aae40d0c7b2225f2308567a6"
+    "contentSha256": "7386bd5a0c97428ee3e3bab34ad8a029d3a0882cf5d5f2ad6362c8f2ae53c5d8"
   },
   {
     "questionId": "u08-s005-v002",
@@ -337,10 +347,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "最大內角小於 90°，故三角皆銳。",
-    "explanation": "按角分類看最大角 80° 仍小於 90°。",
+    "explanation": "按角分類可先找最大內角。40°、60°、80° 中最大角為 80°，仍小於 90°，所以三個角全部是銳角，三角形為銳角三角形；三角和也可驗算為 180°。",
     "steps": [
-      "找最大角 80°。",
-      "80<90。"
+      "先確認 40°＋60°＋80°＝180°。",
+      "找出最大內角為 80°。",
+      "因最大角仍小於 90°，所以三角皆銳，分類為銳角三角形。"
     ],
     "optionAnalysis": [
       {
@@ -364,7 +375,7 @@ export const QUESTIONS = [
         "reason": "三角不全相等，且正三角形是按邊名稱。"
       }
     ],
-    "misconceptionTarget": "把最大角接近 90° 誤當直角。",
+    "misconceptionTarget": "因選項出現六十度就誤選正三角形，沒有確認三個角是否全部相等。",
     "prerequisiteCheck": "能辨認銳角範圍。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位均為 °。",
@@ -376,7 +387,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "8f27b8551bf64a04a8559b9d283590d1dcba738f6f75d33a9f6cb35a424c1a69"
+    "contentSha256": "9cac9c17438ddc07df062746319430a81d35ade4e8c823607cd8de9635790673"
   },
   {
     "questionId": "u08-s005-v003",
@@ -404,10 +415,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "每角 60°。",
-    "explanation": "三邊相等推出三角相等。",
+    "explanation": "正三角形三邊相等，因此三個內角也相等。三角形內角和為 180°，平均分成三個相等角，得到 180°÷3＝60°，所以正三角形每一個內角都是 60°。",
     "steps": [
-      "三角和 180°。",
-      "平均分成 3 角。"
+      "由正三角形性質知道三個內角相等。",
+      "使用三角形內角和 180°。",
+      "將 180° 平均分成三份，180°÷3＝60°。"
     ],
     "optionAnalysis": [
       {
@@ -431,7 +443,7 @@ export const QUESTIONS = [
         "reason": "三個 120° 總和 360°。"
       }
     ],
-    "misconceptionTarget": "把一周角 360° 平均分。",
+    "misconceptionTarget": "把正三角形的角度誤記為直角九十度，或只背答案而忘了三角和平均分配。",
     "prerequisiteCheck": "能使用三角形內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -443,7 +455,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "57fc8f643458f6aca1464901f15d545be5f4cc8ea15c9e09c1b4622df9d00845"
+    "contentSha256": "e6a802dcc9baf1a29742a9ad7c1434e067b7c72aa2f83c775afd4e271825e20e"
   },
   {
     "questionId": "u08-s005-v004",
@@ -471,10 +483,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "一個 90° 角已足以分類為直角三角形。",
-    "explanation": "按角分類由最大角與 90° 比較。",
+    "explanation": "按角分類時，只要三角形有一個內角恰為 90°，就符合直角三角形的定義。其餘兩角必為銳角且合為 90°，但不影響分類；等腰是另一套按邊分類，題目未給邊長相等。",
     "steps": [
-      "辨認 90° 為直角。",
-      "套用直角三角形定義。"
+      "辨認已知內角 90° 是直角。",
+      "套用「含一個直角的三角形」定義。",
+      "因此按角分類為直角三角形，不能由角度推出必為等腰。"
     ],
     "optionAnalysis": [
       {
@@ -498,7 +511,7 @@ export const QUESTIONS = [
         "reason": "有一個直角的三角形就是直角三角形。"
       }
     ],
-    "misconceptionTarget": "把按邊與按角分類混在一起。",
+    "misconceptionTarget": "把按邊與按角的分類混用，看到三角形就選等腰，或把九十度誤判為鈍角。",
     "prerequisiteCheck": "能辨認直角。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -510,7 +523,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "18ab791b12af9e2e0437402854288d94908d586466d733b6d0eea1003f1e4581"
+    "contentSha256": "5536858e7600fa31e89a686381bad4a905037a22d89631ce3ce9df490d565a0b"
   },
   {
     "questionId": "u08-s005-v005",
@@ -539,10 +552,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "底角各 74°，驗算 32+74+74=180。",
-    "explanation": "等腰底角相等。",
+    "explanation": "等腰三角形兩個底角相等。扣除頂角 32° 後，兩底角總和為 180°－32°＝148°，平均分配得到每個底角 148°÷2＝74°；驗算 32°＋74°＋74°＝180°，相等關係與總和條件都成立。",
     "steps": [
-      "求剩餘 148°。",
-      "除以 2 得 74°。"
+      "由三角和求底角總和：180°－32°＝148°。",
+      "利用等腰底角相等，計算 148°÷2＝74°。",
+      "回代三角相加為 180°，所以每個底角為 74°。"
     ],
     "optionAnalysis": [
       {
@@ -566,7 +580,7 @@ export const QUESTIONS = [
         "reason": "這是兩底角總和。"
       }
     ],
-    "misconceptionTarget": "把頂角當底角或忘記除以 2。",
+    "misconceptionTarget": "把頂角三十二度直接當成每個底角，或求出一百四十八度後忘記平分。",
     "prerequisiteCheck": "能使用內角和與等腰底角性質。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -578,7 +592,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d8c2ffa866c04119b921fa2c4ee643acfe09e83a5a4f1194797a20ae3a1fd9d0"
+    "contentSha256": "5b8f22fcf9042f50931cd0d80d6a02b8d3a2037cc2d33645dcae0d2fd7d742a9"
   },
   {
     "questionId": "u08-s005-v006",
@@ -607,10 +621,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "頂角 A 為 44°。",
-    "explanation": "先由等邊對等角，再用內角和。",
+    "explanation": "AB＝AC 表示 A 是兩等邊的夾角頂點，底邊為 BC，因此底角 ∠B、∠C 相等。已知 ∠B＝68°，便有 ∠C＝68°，所以 ∠A＝180°－68°－68°＝44°；三個內角回代後恰為一百八十度，且頂角為有效正角。",
     "steps": [
-      "∠C=68°。",
-      "∠A=180−68−68=44°。"
+      "由 AB＝AC 判定對應底角 ∠B＝∠C。",
+      "代入已知 ∠B＝68°，得到 ∠C＝68°。",
+      "用內角和求 ∠A＝180°－136°＝44°。"
     ],
     "optionAnalysis": [
       {
@@ -634,7 +649,7 @@ export const QUESTIONS = [
         "reason": "這是 180−68，漏掉另一底角。"
       }
     ],
-    "misconceptionTarget": "弄錯等長邊所對的底角。",
+    "misconceptionTarget": "把相等邊 AB、AC 對面的角配錯，誤認頂角 A 與底角 B 相等。",
     "prerequisiteCheck": "能讀三角形頂點與邊的對應。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -646,7 +661,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "6e2343911b9de95a5ab43f203da4c09b56176b953ea1ebe8c2cee2aa349db6e6"
+    "contentSha256": "b55500ac6bef12f9c08bfded007530797c99ea74bda813cc340565d1cef14c37"
   },
   {
     "questionId": "u08-s005-v007",
@@ -675,11 +690,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "唯一可行角組為 100°、40°、40°。",
-    "explanation": "利用等腰底角相等排除位置。",
+    "explanation": "若 100° 是等腰三角形的一個底角，另一底角也為 100°，兩角和已超過 180°，不可能。因此 100° 必是頂角，剩餘兩個相等底角合為 80°，各為 40°。",
     "steps": [
-      "假設 100° 為底角會超過 180°。",
-      "因此為頂角。",
-      "底角各 40°。"
+      "先假設 100° 為底角，則另一底角也為 100°。",
+      "兩底角合為 200° 超過三角和，故假設不成立。",
+      "所以 100° 是頂角，兩底角各為 (180°－100°)÷2＝40°。"
     ],
     "optionAnalysis": [
       {
@@ -703,7 +718,7 @@ export const QUESTIONS = [
         "reason": "總和不可能為 300°。"
       }
     ],
-    "misconceptionTarget": "不檢查角度和就把 100° 當底角。",
+    "misconceptionTarget": "看到等腰就機械地把已知一百度複製成另一角，沒有檢查三角形內角和。",
     "prerequisiteCheck": "能使用等腰底角相等與內角和。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -715,7 +730,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d741c165b8506c8561009dc5678a62a068489c3701878e790f736c8ced28b22d"
+    "contentSha256": "f94a7918b07be41fb70a7b75ebea74bd132da2b44706e3c0c3be63779ac51f5b"
   },
   {
     "questionId": "u08-s005-v008",
@@ -744,10 +759,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "角組 45°、45°、90° 同時滿足等腰與直角。",
-    "explanation": "結合兩種分類條件。",
+    "explanation": "直角三角形已有一角 90°，另外兩角合為 90°。又因三角形等腰，兩個非直角必須相等，否則若兩個 90° 相等會使總和超過 180°；因此其餘兩角各為 45°。",
     "steps": [
-      "扣除直角後剩 90°。",
-      "兩相等角各 45°。"
+      "先扣除直角，得到另外兩角總和 180°－90°＝90°。",
+      "等腰條件使另外兩個銳角相等。",
+      "將 90° 平分得 45°、45°，所以角組為 45°、45°、90°。"
     ],
     "optionAnalysis": [
       {
@@ -771,7 +787,7 @@ export const QUESTIONS = [
         "reason": "沒有兩角相等。"
       }
     ],
-    "misconceptionTarget": "以為等腰直角三角形可有兩個直角。",
+    "misconceptionTarget": "只套用常見的三十六十九十角組，沒有同時滿足等腰所要求的兩角相等。",
     "prerequisiteCheck": "能使用內角和與等腰性質。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -783,7 +799,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4f3c4528b5cb351615fbe785ea20a6df8a83bf12320dbdbc7eb628057eabce21"
+    "contentSha256": "abb30bc1645252324f607ec422e35d05d787dbe70ef366ddc76918f5c0ec6e0a"
   },
   {
     "questionId": "u08-s005-v009",
@@ -812,10 +828,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "唯一必然結論是底角相等。",
-    "explanation": "邊分類不能唯一決定角分類。",
+    "explanation": "兩邊相等已足以判定三角形為等腰三角形，而等腰三角形中，相等兩邊所對的兩個底角相等。未給角度時，不能確定是銳角、頂角 60° 或三邊全等，因此只有底角相等必然成立。",
     "steps": [
-      "由兩邊相等判等腰。",
-      "套用等腰底角相等。"
+      "由兩邊相等辨認為等腰三角形。",
+      "套用等邊所對等角，得到兩個底角相等。",
+      "檢查其餘選項都需要額外角度或第三邊條件，故不能保證。"
     ],
     "optionAnalysis": [
       {
@@ -839,7 +856,7 @@ export const QUESTIONS = [
         "reason": "等腰三角形的基本性質是兩個底角相等。"
       }
     ],
-    "misconceptionTarget": "由等腰過度推論正三角形或銳角。",
+    "misconceptionTarget": "把「至少兩邊相等」誤讀成三邊一定相等，進而錯推每角都是六十度。",
     "prerequisiteCheck": "能理解必要性質與資訊不足。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題無數值單位。",
@@ -851,7 +868,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "fc9446bab696359ed05000bc90bdc5f29b9fcedcaee21acd6312dc03462be650"
+    "contentSha256": "893079dadfb22589471474541208bf1f37e2486aa8e715f270ed9602d5932741"
   },
   {
     "questionId": "u08-s005-v010",
@@ -880,10 +897,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "兩底角各 65°，總和檢查為 180°。",
-    "explanation": "對稱支架的等腰條件直接決定底角。",
+    "explanation": "兩根斜桿等長，使帳篷截面成為等腰三角形，兩個底角必相等。扣除頂角 50° 後，底角總和為 130°，每個底角為 130°÷2＝65°，並有 50°＋65°＋65°＝180°，所以對稱與內角和同時滿足。",
     "steps": [
-      "剩餘角和 130°。",
-      "平均為 65°。"
+      "由兩根斜桿等長判定兩底角相等。",
+      "求底角總和 180°－50°＝130°。",
+      "平均分成兩角得 65°，回代確認三角和為 180°。"
     ],
     "optionAnalysis": [
       {
@@ -907,7 +925,7 @@ export const QUESTIONS = [
         "reason": "這是兩底角總和。"
       }
     ],
-    "misconceptionTarget": "把外觀對稱當成三邊等長。",
+    "misconceptionTarget": "把剩餘一百三十度當成單一底角，或忽略對稱等腰條件而分成兩個不同角。",
     "prerequisiteCheck": "能使用等腰三角形性質。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度以 ° 表示。",
@@ -919,7 +937,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "720df2a17bf2e86bdea60dbb64f50ea0dfd29b6c1e4a5cc7fa380b998e44f66e"
+    "contentSha256": "2e5f5e700424a1c1b5d4ca14c8b340998e15470ed79c2d9a6a69ef7fcca8c991"
   },
   {
     "questionId": "u08-s005-v011",
@@ -948,10 +966,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "每角 60° 是三邊等長三角形的必要性質。",
-    "explanation": "邊長規格推出角度驗收值。",
+    "explanation": "三邊等長的三角形是正三角形，三個內角也相等。利用內角和 180°，每角為 180°÷3＝60°，因此驗收時每個內角都應符合 60° 的設計標準。",
     "steps": [
-      "辨認正三角形。",
-      "180÷3=60。"
+      "由三邊等長辨認標誌截面為正三角形。",
+      "正三角形三個內角相等，總和為 180°。",
+      "計算 180°÷3＝60°，所以每角驗收標準為 60°。"
     ],
     "optionAnalysis": [
       {
@@ -975,7 +994,7 @@ export const QUESTIONS = [
         "reason": "三邊等長表示正三角形，三角相等且總和 180°，每角 60°。"
       }
     ],
-    "misconceptionTarget": "只以外觀估計角度或誤用四邊形角度。",
+    "misconceptionTarget": "把三邊等長與直角混淆，誤以為每角九十度而沒有檢查三角總和。",
     "prerequisiteCheck": "能使用正三角形性質。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度標準以 ° 表示。",
@@ -987,7 +1006,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "3018ece6db6fc761f6f5a45dd5a9f3eaf4c1f452b627d6ce75cf5f719e39cb44"
+    "contentSha256": "9c20101bff7e95cd9bb839d8cfe5205d49689fe0c70ab3c11b490145d53569e4"
   },
   {
     "questionId": "u08-s005-v012",
@@ -1015,10 +1034,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "木框同時是等腰與銳角三角形。",
-    "explanation": "同時做按邊與按角分類。",
+    "explanation": "三角為 88°、46°、46°，其中兩角相等，因此其所對兩邊相等，按邊是等腰三角形。最大角 88° 仍小於 90°，所以三角皆為銳角，完整分類是等腰銳角三角形。",
     "steps": [
-      "46°=46° 推出兩對邊相等。",
-      "88°<90°，三角皆銳。"
+      "由 46°＝46° 判定兩個對邊相等，得到等腰分類。",
+      "找最大角 88° 並與 90° 比較。",
+      "因 88°＜90°，三角皆銳，所以完整分類為等腰銳角三角形。"
     ],
     "optionAnalysis": [
       {
@@ -1042,7 +1062,7 @@ export const QUESTIONS = [
         "reason": "三角不全為 60°。"
       }
     ],
-    "misconceptionTarget": "只做一套分類或把 88° 當直角。",
+    "misconceptionTarget": "把接近九十度的八十八度當成直角，或只完成等腰分類而漏掉按角分類。",
     "prerequisiteCheck": "能使用等角對等邊與角分類。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -1054,7 +1074,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4a122fe678775f2c4483e6875eec6410aa48f75fb5290322e11cefd1505ba451"
+    "contentSha256": "572a75e9f62fd5ef6066f4e2ffee2675f9482fe4f8686bd3620a1bccf6b67e41"
   }
 ];
 
@@ -1071,19 +1091,20 @@ export const CONSTRUCTED_RESPONSES = [
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecRef": null,
-    "prompt": "一個三角形的三邊長為 7 公分、7 公分、10 公分，三個內角中最大角為 92°。請分別按邊與按角分類，並說明理由。",
+    "prompt": "一個三角形的三邊長為 7 公分、7 公分、10 公分，且已知三個內角中的最大角大於 90°。請分別按邊與按角分類，並說明理由。",
     "requiredWork": [
       "依邊長相等情形分類。",
       "依最大角度分類。",
       "各寫出一項理由。"
     ],
     "standardSolution": [
-      "有兩邊同為7公分，所以按邊是等腰三角形。",
-      "最大角92°大於90°，所以按角是鈍角三角形。",
-      "完整分類為等腰鈍角三角形。"
+      "三邊 7 公分、7 公分、10 公分中有兩邊同為 7 公分，所以按邊分類是等腰三角形。",
+      "題目明示最大內角大於 90°，因此按角分類是鈍角三角形。",
+      "合併兩套互不衝突的分類，這是一個等腰鈍角三角形。",
+      "邊分類由相等邊數決定，角分類由最大角與 90° 的關係決定，兩項理由各自充分。"
     ],
     "alternativeMethods": [
-      "可先指出10公分所對角最大且為92°，再完成兩套分類。"
+      "可先依最大角大於 90° 判成鈍角三角形，再由兩條 7 公分邊判成等腰三角形，次序不影響結論。"
     ],
     "reasoningSteps": [
       "比較三邊是否相等。",
@@ -1093,25 +1114,25 @@ export const CONSTRUCTED_RESPONSES = [
     "rubric": [
       {
         "score": 3,
-        "criteria": "正確判為等腰鈍角三角形，並分別以兩等邊與92°說明。"
+        "criteria": "正確判為等腰鈍角三角形，並分別以兩邊同為 7 公分及最大角大於 90° 說明。"
       },
       {
         "score": 2,
-        "criteria": "兩套分類正確但一項理由缺漏；或只完整完成其中一套並正確寫另一名稱。"
+        "criteria": "兩套分類正確但一項理由缺漏；或完整完成其中一套並正確寫出另一分類名稱。"
       },
       {
         "score": 1,
-        "criteria": "至少正確判出等腰或鈍角其中一項且理由有效。"
+        "criteria": "至少正確判出等腰或鈍角其中一項，且提出對應的有效理由。"
       },
       {
         "score": 0,
-        "criteria": "把按邊與按角混為同一套，或兩項皆錯。"
+        "criteria": "把按邊與按角混為同一套分類，或兩項分類皆錯。"
       }
     ],
     "partialCreditRules": [
       "「等腰三角形且為鈍角三角形」與「等腰鈍角三角形」同義。"
     ],
-    "followThroughPolicy": "若將92°抄成其他大於90°的數但分類仍鈍角，可給分類分；若變成小於90°則不給角分類分。",
+    "followThroughPolicy": "若漏寫「最大」但仍以題目所給大於 90° 的角判為鈍角，可給角分類分；若誤讀成小於 90°，則不給角分類分。",
     "unitAndNotationRules": "邊長附公分，分類名稱不需單位；角度附°。",
     "answerOnlyPolicy": "只答「等腰鈍角」無理由最高2分。",
     "commonErrors": [
@@ -1120,8 +1141,8 @@ export const CONSTRUCTED_RESPONSES = [
     ],
     "independentReview": {
       "derivedResult": "等腰鈍角三角形。",
-      "ambiguityAudit": "題目直接給最大角92°，不需知道另外兩角；兩套分類互不排斥。",
-      "reviewNote": "獨立檢查兩邊相等與最大角大於90°，分類條件均充分。",
+      "ambiguityAudit": "題目直接給最大角大於 90°，不需推算其精確度數；兩套分類條件互不排斥。",
+      "reviewNote": "獨立檢查兩邊相等與最大角大於 90°，兩項分類條件均充分，且不再宣稱與三邊不一致的精確角度。",
       "decision": "pass",
       "reviewedAt": "2026-07-12"
     },
@@ -1132,7 +1153,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "0eec9a19740775429e85152b5696253f78553bc94f31cd37202da9bedeae24d7"
+    "contentSha256": "fed5975c1ae962584545f02b124cda0c487cb84dac071700dab8174418ca22ab"
   },
   {
     "questionId": "u08-s005-cr002",
@@ -1153,10 +1174,10 @@ export const CONSTRUCTED_RESPONSES = [
       "列出所有有效答案。"
     ],
     "standardSolution": [
-      "等腰要求 x=5 或 x=12。",
-      "若x=5，邊長5、5、12，但5+5=10不大於12，不能成三角形。",
-      "若x=12，邊長5、12、12，且5+12>12、12+12>5，成立。",
-      "所以唯一可能是x=12。"
+      "邊長為 5、x、12，要成為等腰三角形，x 必須等於既有邊長 5 或 12，因此先得到兩個候選。",
+      "若 x＝5，三邊為 5、5、12；最短兩邊和 5＋5＝10，不大於 12，不能形成三角形。",
+      "若 x＝12，三邊為 5、12、12；有 5＋12＞12，另外兩個兩邊和也分別大於第三邊，所以可形成三角形。",
+      "因此排除 x＝5 後，唯一可能的整數值是 x＝12。"
     ],
     "alternativeMethods": [
       "可用最短兩邊和檢查：x=5時10≤12失敗；x=12時5+12>12通過。"
@@ -1208,7 +1229,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e744e4a4c848fbf29f662ace0ccf90ec12d91fa1213fe9be881738ecbb8e8e05"
+    "contentSha256": "adbbc2f893d55aa8e947389d4c3b01bc30d99ec4ffe5d1e7d17807a85488e632"
   }
 ];
 
@@ -1217,7 +1238,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v001",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "1b5add4b7e00907eceecde752e10dc3f2adce0b6aae40d0c7b2225f2308567a6",
+    "contentSha256": "7386bd5a0c97428ee3e3bab34ad8a029d3a0882cf5d5f2ad6362c8f2ae53c5d8",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "依邊分類定義，恰兩邊相等。",
@@ -1252,7 +1273,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v002",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "8f27b8551bf64a04a8559b9d283590d1dcba738f6f75d33a9f6cb35a424c1a69",
+    "contentSha256": "9cac9c17438ddc07df062746319430a81d35ade4e8c823607cd8de9635790673",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "逐角檢查皆在 0° 到 90° 之間。",
@@ -1287,7 +1308,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v003",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "57fc8f643458f6aca1464901f15d545be5f4cc8ea15c9e09c1b4622df9d00845",
+    "contentSha256": "e6a802dcc9baf1a29742a9ad7c1434e067b7c72aa2f83c775afd4e271825e20e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "180÷3=60，驗算三角皆銳角。",
@@ -1322,7 +1343,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v004",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "18ab791b12af9e2e0437402854288d94908d586466d733b6d0eea1003f1e4581",
+    "contentSha256": "5536858e7600fa31e89a686381bad4a905037a22d89631ce3ce9df490d565a0b",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "三角形不可能另有第二個 90°，但不影響分類。",
@@ -1357,7 +1378,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v005",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "d8c2ffa866c04119b921fa2c4ee643acfe09e83a5a4f1194797a20ae3a1fd9d0",
+    "contentSha256": "5b8f22fcf9042f50931cd0d80d6a02b8d3a2037cc2d33645dcae0d2fd7d742a9",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "將剩餘角度平均分成兩個底角。",
@@ -1392,7 +1413,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v006",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "6e2343911b9de95a5ab43f203da4c09b56176b953ea1ebe8c2cee2aa349db6e6",
+    "contentSha256": "b55500ac6bef12f9c08bfded007530797c99ea74bda813cc340565d1cef14c37",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立確認等長邊 AB、AC 所對角分別 C、B。",
@@ -1427,7 +1448,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v007",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "d741c165b8506c8561009dc5678a62a068489c3701878e790f736c8ced28b22d",
+    "contentSha256": "f94a7918b07be41fb70a7b75ebea74bd132da2b44706e3c0c3be63779ac51f5b",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重查等腰中相等兩角不可能包含 100°，故 100° 必為不等的頂角。",
@@ -1462,7 +1483,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v008",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "4f3c4528b5cb351615fbe785ea20a6df8a83bf12320dbdbc7eb628057eabce21",
+    "contentSha256": "abb30bc1645252324f607ec422e35d05d787dbe70ef366ddc76918f5c0ec6e0a",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "若直角為相等角之一會有兩個直角而不可能，因此相等者是兩銳角。",
@@ -1497,7 +1518,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v009",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "fc9446bab696359ed05000bc90bdc5f29b9fcedcaee21acd6312dc03462be650",
+    "contentSha256": "893079dadfb22589471474541208bf1f37e2486aa8e715f270ed9602d5932741",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "可舉不同頂角的等腰三角形反駁其他選項。",
@@ -1532,7 +1553,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v010",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "720df2a17bf2e86bdea60dbb64f50ea0dfd29b6c1e4a5cc7fa380b998e44f66e",
+    "contentSha256": "2e5f5e700424a1c1b5d4ca14c8b340998e15470ed79c2d9a6a69ef7fcca8c991",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由兩斜桿等長識別等腰，再計算。",
@@ -1567,7 +1588,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v011",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "3018ece6db6fc761f6f5a45dd5a9f3eaf4c1f452b627d6ce75cf5f719e39cb44",
+    "contentSha256": "9c20101bff7e95cd9bb839d8cfe5205d49689fe0c70ab3c11b490145d53569e4",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立由等邊對等角與內角和推得 60°。",
@@ -1602,7 +1623,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s005-v012",
     "unitId": "u08",
     "skillId": "triangle-basic-classification",
-    "contentSha256": "4a122fe678775f2c4483e6875eec6410aa48f75fb5290322e11cefd1505ba451",
+    "contentSha256": "572a75e9f62fd5ef6066f4e2ffee2675f9482fe4f8686bd3620a1bccf6b67e41",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "角和 180°，等角對等邊，且最大角未達 90°。",

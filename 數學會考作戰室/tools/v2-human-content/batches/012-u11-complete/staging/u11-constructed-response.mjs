@@ -17,7 +17,8 @@ export default [
     "fullCreditSolution": [
       "10²=100。",
       "(-10)²=100。",
-      "因此兩者都符合平方根定義。"
+      "因此兩者都符合平方根定義。",
+      "設 x²=100，因 100=10²，所以 x=10 或 x=-10；逐一驗算 10×10 與 (-10)×(-10) 都等於 100，兩個不同實數都符合平方根定義，因此答案不能只列正值。"
     ],
     "standardAnswer": "10 與 -10。",
     "alternativeMethod": "也可由 x²-100=(x-10)(x+10)=0 得 x=±10。",
@@ -52,8 +53,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "只寫10",
-      "把±100當答案"
+      "把『一百的平方根』當成根號記號 √100，只寫非負的十。",
+      "把被開方數一百加上正負號寫成 ±100，沒有將候選值平方驗算。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -70,7 +71,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "046745b322fb8870a076fbc2b4bce1cd9480cae09b4314e99a7eff993dbb6463"
+    "contentSha256": "a792223a5e8c9652845b2ee24d04705016fa07fc31cf90faf65d7c19bf784b7e"
   },
   {
     "questionId": "u11-s001-cr002",
@@ -90,7 +91,8 @@ export default [
     "fullCreditSolution": [
       "設邊長s>0，s²=288。",
       "s=√288=√(144×2)=12√2。",
-      "負根不符合實際長度。"
+      "負根不符合實際長度。",
+      "由正方形面積公式 s²=288，代數候選為 ±√288；將 288 分解成 144×2 得 √288=12√2。因 s 是邊長，必須取正的 12√2 公分，負值不具幾何意義。"
     ],
     "standardAnswer": "12√2 公分。",
     "alternativeMethod": "可先求代數解s=±12√2，再依s>0篩選。",
@@ -125,11 +127,11 @@ export default [
     "unitAndNotationRules": "平方公分開平方後為公分。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "把面積除以2",
-      "保留±"
+      "把面積二百八十八除以二，未使用邊長平方等於面積。",
+      "正確化簡出 12√2 後仍寫 ±12√2 公分，忽略邊長非負。"
     ],
-    "figureId": "fig-u11-s001-square-area",
-    "drawingSpecReference": "units/u11/s001/drawing-specs.jsonl#fig-u11-s001-square-area",
+    "figureId": null,
+    "drawingSpecReference": null,
     "independentReview": {
       "decision": "pass",
       "derivedResult": "12√2 公分。",
@@ -143,7 +145,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "0caaac585c3258fd5623dca00a52409b40da3e8ea7d8400baa58ce9fa7e72efc"
+    "contentSha256": "409837c46bcf534f3dac62b34cae0238ea8e62c219542f26b36af48e7b6c8a0a"
   },
   {
     "questionId": "u11-s002-cr001",
@@ -163,7 +165,8 @@ export default [
     "fullCreditSolution": [
       "768=256×3。",
       "√768=√256×√3=16√3。",
-      "3不含大於1的平方因數。"
+      "3不含大於1的平方因數。",
+      "選最大完全平方因數二百五十六，可寫 768=256×3；因此 √768=√256×√3=16√3。再檢查根號內三沒有大於一的平方因數，且平方 16√3 可回到七百六十八。"
     ],
     "standardAnswer": "16√3。",
     "alternativeMethod": "也可逐步提出：768=4×192=4²×48=…，最後仍得16√3。",
@@ -198,8 +201,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "把256直接提出",
-      "停在8√12"
+      "把完全平方因數二百五十六原樣提出，錯寫成 256√3。",
+      "只提出六十四而停在 8√12，沒有將根號內十二再化簡。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -216,7 +219,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "b48bbab672a9d842400148cf0ff2b9e59a885a76350e13142a209efdb1090025"
+    "contentSha256": "54ba6d83d63f9cbe4afc51f608d9ae49de8fd0653b225e762147c0371c0fbd09"
   },
   {
     "questionId": "u11-s002-cr002",
@@ -236,7 +239,9 @@ export default [
     "fullCreditSolution": [
       "邊長=√243。",
       "243=81×3。",
-      "所以邊長=9√3公尺。"
+      "所以邊長=9√3公尺。",
+      "設邊長 s>0，則 s²=243，所以 s=√243；因 243=81×3，化簡得 s=9√3 公尺。長度只取非負值，且平方 (9√3)²=243 可完成驗算。",
+      "也可以先估算邊長介於十五與十六之間，以此排除將二百四十三直接當成邊長的錯誤。"
     ],
     "standardAnswer": "9√3 公尺。",
     "alternativeMethod": "用質因數243=3⁵，提出3²得到9√3。",
@@ -271,8 +276,8 @@ export default [
     "unitAndNotationRules": "平方公尺開平方為公尺。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "答121.5公尺",
-      "答81√3"
+      "把面積二百四十三除以二得到一百二十一點五，未使用平方關係。",
+      "抽出平方因數八十一時未開平方，錯寫成 81√3 公尺。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -289,7 +294,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "d8d43ad5f40e409b1362ed9d08cd24a773aa90dd56baac3ffbe8c33c806b09a2"
+    "contentSha256": "ae35e268ade1e54e0bb94bf7de32527a179782dfa12ddd19c131f705643054be"
   },
   {
     "questionId": "u11-s003-cr001",
@@ -309,7 +314,9 @@ export default [
     "fullCreditSolution": [
       "2√27=6√3。",
       "√12=2√3，√75=5√3。",
-      "6√3-2√3+5√3=9√3。"
+      "6√3-2√3+5√3=9√3。",
+      "先分別化簡：2√27=2×3√3=6√3、√12=2√3、√75=5√3；三項成為同類根式後依原符號合併係數 6-2+5=9，因此結果為 9√3，不能把被開方數直接加減。",
+      "回代原式時，三個根式化簡後的被開方數都是三，這正是只能合併外部係數的理由。"
     ],
     "standardAnswer": "9√3。",
     "alternativeMethod": "可先把各被開方數寫成3乘平方數，再一次合併係數2×3-2+5。",
@@ -344,8 +351,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "直接算√(27-12+75)",
-      "漏掉前係數2"
+      "把原式改成 √(27-12+75)，錯把根式加減當作根號內運算。",
+      "化簡 √27 後漏乘前面的係數二，或忽略中間負號。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -362,7 +369,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "fb1488691f3aa7d98c6310fbe6b0ed58efbe04bf59f944ec0f480b505fa647d9"
+    "contentSha256": "62fa56163cdc9d873b163fddb5faa9262f39796ecbd73ff9a7596220df767952"
   },
   {
     "questionId": "u11-s003-cr002",
@@ -382,7 +389,8 @@ export default [
     "fullCreditSolution": [
       "共軛乘積=13-5=8。",
       "√20=2√5。",
-      "總和=8+2√5。"
+      "總和=8+2√5。",
+      "前兩因式互為共軛，乘積用平方差得 13-5=8；再將 √20 化簡成 2√5。八是有理數項，2√5 是根式項，兩者不是同類項，所以最終答案為 8+2√5。"
     ],
     "standardAnswer": "8+2√5。",
     "alternativeMethod": "逐項展開也會使±√65抵消。",
@@ -417,8 +425,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "把平方差算成18",
-      "把8與2√5硬合併"
+      "把共軛乘積誤算成十三加五，得到十八。",
+      "得到八與 2√5 後強行合併成單一根式，忽略兩項不同類。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -435,7 +443,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "e37bedd73d425636332168796c16ec6349543c3225d9dfff3a408ecdf0cf428c"
+    "contentSha256": "85ed0bf9a7d96bf3b15b57ed7c2370be48c60ed1c78e51e7eb27a33fa624b1d1"
   },
   {
     "questionId": "u11-s004-cr001",
@@ -455,7 +463,8 @@ export default [
     "fullCreditSolution": [
       "10²<115<11²。",
       "10.7²=114.49，10.8²=116.64。",
-      "10.75²=115.5625>115，所以√115<10.75，取一位為10.7。"
+      "10.75²=115.5625>115，所以√115<10.75，取一位為10.7。",
+      "先由 10²<115<11² 確定整數區間，再比較一位小數中點 10.75；因 10.75²=115.5625>115，所以 √115<10.75，且已知大於 10.7，故取到小數第一位為 10.7，近似記號應寫 ≈。"
     ],
     "standardAnswer": "√115≈10.7。",
     "alternativeMethod": "可比較10.7與真值差、10.8與真值差，但仍須以平方支持。",
@@ -490,8 +499,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "只寫10",
-      "寫等號10.7"
+      "只寫整數下界十，沒有完成題目要求的小數第一位。",
+      "把近似結果寫成 √115=10.7，未用約等於符號或未檢查中點。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -508,7 +517,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "da083ed60a9c001788250670adf282975800c7bf0e9047f78714abf2c1488b33"
+    "contentSha256": "c97f521432f8588828a0b3ccfcb4bcda9fd231d0b53681f498ef963bbbba2f7d"
   },
   {
     "questionId": "u11-s004-cr002",
@@ -528,7 +537,8 @@ export default [
     "fullCreditSolution": [
       "邊長=√155公尺。",
       "12.4²=153.76，12.5²=156.25。",
-      "12.45²=155.0025>155，所以邊長略小於12.45，填12.4公尺。"
+      "12.45²=155.0025>155，所以邊長略小於12.45，填12.4公尺。",
+      "正方形邊長 s=√155 公尺。十二點四與十二點五的平方分別夾住一百五十五；再算中點 12.45²=155.0025 略大於 155，故 √155 略小於十二點四五，取到小數第一位填 12.4 公尺。"
     ],
     "standardAnswer": "12.4 公尺。",
     "alternativeMethod": "可用線性近似從√156.25=12.5向下微調，但須說明誤差。",
@@ -563,8 +573,8 @@ export default [
     "unitAndNotationRules": "平方公尺轉公尺；近似到小數第一位。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "把155除2",
-      "填12.5未檢查中點"
+      "把面積一百五十五除以二，未由邊長平方等於面積建立根式。",
+      "只看到數值介於十二點四與十二點五就填十二點五，沒有檢查中點平方。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -581,7 +591,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "e1d6789cdce4b04be1b7fa6443178264417c594ec40caf2c3e211584833dcb97"
+    "contentSha256": "bd2ec2fdb902f4837d287d425ed58e8dfb12bff49e4c63fa30837a26f40f1e1c"
   },
   {
     "questionId": "u11-s005-cr001",
@@ -600,13 +610,15 @@ export default [
     ],
     "fullCreditSolution": [
       "√49是非負平方根，所以等於7。",
-      "49的平方根是所有x使x²=49，故為7與-7。"
+      "49的平方根是所有x使x²=49，故為7與-7。",
+      "根號記號 √49 是非負主平方根，因此單值為七；『49 的平方根』則是解 x²=49，正七與負七平方都等於四十九，故為 ±7。兩個問法一個是函數值、一個是全部解。"
     ],
     "standardAnswer": "√49=7；49 的平方根為±7。",
     "alternativeMethod": "用函數單值與方程解集合的觀點說明。",
     "reasoningSteps": [
       "√49是非負平方根，所以等於7。",
-      "49的平方根是所有x使x²=49，故為7與-7。"
+      "49的平方根是所有x使x²=49，故為7與-7。",
+      "分別用主平方根的非負定義與平方方程的全部解檢查，確認兩種答案形式不可互換。"
     ],
     "rubric": [
       {
@@ -634,8 +646,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "兩者都寫±7",
-      "兩者都只寫7"
+      "把 √49 也寫成 ±7，忽略根號記號本身是單值非負。",
+      "把四十九的所有平方根只寫七，遺漏平方相同的負七。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -652,7 +664,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "59da4a200dbfde9fc35ebba5408c103edfd58f9512bfbd604093b06951d8089f"
+    "contentSha256": "12696f7787b7d5de4b2da6bced018cb7bde620a25d3481fabc0d5e215e13a192"
   },
   {
     "questionId": "u11-s005-cr002",
@@ -672,7 +684,8 @@ export default [
     "fullCreditSolution": [
       "√(a²)=|a|。",
       "因a<0，所以|a|=-a。",
-      "-a>0，符合主平方根非負。"
+      "-a>0，符合主平方根非負。",
+      "一般而言 √(a²)=|a|，因主平方根必非負；題設 a<0，所以 |a|=-a，且 -a>0，正符合主平方根符號限制。若直接寫 a，結果反而是負數。"
     ],
     "standardAnswer": "-a。",
     "alternativeMethod": "分情況：平方後失去符號，而非負根必等於a的相反數。",
@@ -707,8 +720,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "直接約成a",
-      "寫±a"
+      "機械消去根號與平方直接寫 a，未檢查 a 為負。",
+      "把單值主平方根寫成 ±a，混淆函數值與平方方程解。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -725,7 +738,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "75bc9a9534588739d67446d3b3f1a7e9fa9de86b5c92bc99fbf1eca1890a3282"
+    "contentSha256": "787e4f880a9c8af9bdc9fee0666ad6280e39d842493b8227c4bdbf8be0800cc9"
   },
   {
     "questionId": "u11-s006-cr001",
@@ -745,7 +758,8 @@ export default [
     "fullCreditSolution": [
       "14²=196<200，所以從15²開始。",
       "22²=484≤500，而23²=529>500。",
-      "15²至22²為225、256、289、324、361、400、441、484。"
+      "15²至22²為225、256、289、324、361、400、441、484。",
+      "先找底數界線：14²=196 低於二百，所以從十五開始；22²=484 仍不超過五百，而 23²=529 已超過。故連續列出 15² 到 22² 共八個值，端點檢查證明前後都沒有遺漏。"
     ],
     "standardAnswer": "共8個：225、256、289、324、361、400、441、484。",
     "alternativeMethod": "可先求√200與√500的整數界線，得到底數15至22。",
@@ -780,8 +794,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "從14²開始",
-      "漏掉22²"
+      "把十四平方一百九十六也列入，忽略範圍下界二百。",
+      "列到二十一平方四百四十一便停止，漏掉仍不超過五百的二十二平方。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -798,7 +812,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "7f8ddfacaa7034b58c4dac36b5bd20cf9d1bd40cc924a463d896f501f4413985"
+    "contentSha256": "7aa33a4419d6339124c0ade123a6eda0883c9f3292b72d7ba02a54a1fa24e82f"
   },
   {
     "questionId": "u11-s006-cr002",
@@ -818,7 +832,9 @@ export default [
     "fullCreditSolution": [
       "設每列n人，共n列，所以n²=676。",
       "26²=676，n=26。",
-      "26×26=676。"
+      "26×26=676。",
+      "設每列 n 人，正方形方陣也有 n 列，所以 n²=676。因 26²=676 且人數為正，取 n=26；最後以 26×26=676 回代驗算，與總人數完全一致。",
+      "二十五平方只有六百二十五，二十七平方則是七百二十九，也可據此確認整數邊長唯一。"
     ],
     "standardAnswer": "每列26人。",
     "alternativeMethod": "利用(25+1)²=625+50+1=676。",
@@ -853,8 +869,8 @@ export default [
     "unitAndNotationRules": "人數為正整數，單位為人。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "答338",
-      "寫±26人"
+      "把六百七十六除以二得到三百三十八，沒有使用列數等於每列人數。",
+      "寫成正負二十六人，忽略人數與列長皆為非負整數。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -871,7 +887,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "26f140dc0d02c23b70e4f76c61c8213ff58b2a48e303b3b25cab0409b5567dd2"
+    "contentSha256": "711662c49bc3188c3aa4477af0c3e214f24bfca8a031b6e6539b2751fd901589"
   },
   {
     "questionId": "u11-s007-cr001",
@@ -891,7 +907,8 @@ export default [
     "fullCreditSolution": [
       "原式乘√3/√3。",
       "得到12√3/(5×3)=12√3/15。",
-      "約分為4√3/5。"
+      "約分為4√3/5。",
+      "同乘 √3/√3 是乘以一，因此保持原值；分母成十五後仍須將十二與十五同除以三，最後 4√3/5 的分母為有理數且係數互質。"
     ],
     "standardAnswer": "4√3/5。",
     "alternativeMethod": "先把12/15約成4/5後理解為(4/5)√3。",
@@ -926,8 +943,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "只改分母",
-      "停在12√3/15"
+      "只將分母 5√3 改成十五，卻沒有同步將分子十二乘 √3。",
+      "得到 12√3/15 後停止，沒有再以公因數三約成最簡形式。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -944,7 +961,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "299002783d71a530c58a6e050b694863e83ac1ae8f040987a687c240964b1ae6"
+    "contentSha256": "933a6cd8300653a913e4093cf44d4161f99c3ac9cef5be6b7eb6c4b42dccf73d"
   },
   {
     "questionId": "u11-s007-cr002",
@@ -964,7 +981,8 @@ export default [
     "fullCreditSolution": [
       "√8=2√2，所以2/√8=1/√2=√2/2。",
       "√18=3√2，所以3/√18=1/√2=√2/2。",
-      "A=√2。"
+      "A=√2。",
+      "兩個分母先各自提出平方因數後都化為 2√2 或 3√2，使兩項各等於 √2/2；相加為 √2，結果分母已是有理數且根式最簡。"
     ],
     "standardAnswer": "√2。",
     "alternativeMethod": "先觀察兩項都等於1/√2，合併成2/√2，再化簡為√2。",
@@ -999,8 +1017,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "分母直接相加",
-      "漏做第二項化簡"
+      "直接把 √8 與 √18 相加成共同分母，沒有先分別化簡每一項。",
+      "只將第一項有理化，第二項仍保留根號分母便進行相加。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1017,7 +1035,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "10fec4f459233c72d16c78fb855eea8a4acb605b8f374b3a742ec5169f4e9c86"
+    "contentSha256": "9181f43c4e3f47734b5b407057854310a99ed56cedc986fc6f1ad64a06b8a353"
   },
   {
     "questionId": "u11-s008-cr001",
@@ -1037,7 +1055,8 @@ export default [
     "fullCreditSolution": [
       "兩邊皆為正。",
       "(3√5)²=45，(√44)²=44。",
-      "45>44，所以3√5>√44。"
+      "45>44，所以3√5>√44。",
+      "因兩數皆非負，平方函數在此範圍保持大小；四十五大於四十四便可反推原正值 3√5 大於 √44，過程是精確比較而非小數估算。"
     ],
     "standardAnswer": "3√5>√44。",
     "alternativeMethod": "把3√5寫成√45，再比較√45與√44。",
@@ -1072,8 +1091,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "只比較5與44",
-      "未確認正值就平方"
+      "只比較被開方數五與四十四，漏掉外係數三平方後會乘九。",
+      "未先確認兩數皆非負便任意平方比較，沒有交代平方不改變順序的條件。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1090,7 +1109,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "c6886bd60a52cbd41a7276388b475da2d38e54e7fb50cf38394b46929d598b2b"
+    "contentSha256": "c157ec26ee7da2ebb8721902f65514fb0e0bb783a5ef4b30f1c54e4e1db8d0d7"
   },
   {
     "questionId": "u11-s008-cr002",
@@ -1110,7 +1129,8 @@ export default [
     "fullCreditSolution": [
       "√12=2√3，約3.464；3；2√2約2.828。",
       "正值大小為√12>3>2√2。",
-      "取負後順序反轉。"
+      "取負後順序反轉。",
+      "可用平方精確驗證正值順序：12>9>8，所以 √12>3>2√2；三者同取負號後數線方向反轉，故由小到大為 -√12、-3、-2√2。"
     ],
     "standardAnswer": "-√12<-3<-2√2。",
     "alternativeMethod": "不用小數：比較平方12、9、8，再取相反數反轉。",
@@ -1145,8 +1165,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "負號後仍保持原順序",
-      "把-√12化成-√6"
+      "比較完正值後直接加負號而維持原方向，忘記乘負一會反轉不等號。",
+      "把 √12 錯化成 2√6，或用不充分的小數位數造成錯誤排序。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1163,7 +1183,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "8de8a7f1c98be4be4d0b8ed9e62ae329efaf6257a635913485ab3ffb6d6846f0"
+    "contentSha256": "6e8c79add84899f58618eb594623d4b8a71798b602eca502401aeb85d7e639f4"
   },
   {
     "questionId": "u11-s009-cr001",
@@ -1183,7 +1203,8 @@ export default [
     "fullCreditSolution": [
       "設斜邊c。",
       "c²=9²+40²=81+1600=1681。",
-      "c=√1681=41。"
+      "c=√1681=41。",
+      "圖中的九、四十為直角兩股，c 在直角對面才是斜邊；平方和一千六百八十一開正平方根為四十一，並應保留長度單位公分。"
     ],
     "standardAnswer": "41 公分。",
     "alternativeMethod": "辨認9-40-41畢氏數組可直接驗算。",
@@ -1218,8 +1239,8 @@ export default [
     "unitAndNotationRules": "答案為公分。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "答49",
-      "算到1681停止"
+      "把兩股九與四十直接相加得到四十九，沒有使用平方和。",
+      "算到 c²=1681 就停止，將斜邊平方誤當斜邊長或漏寫公分。"
     ],
     "figureId": "fig-u11-s009-right-triangle",
     "drawingSpecReference": "units/u11/s009/drawing-specs.jsonl#fig-u11-s009-right-triangle",
@@ -1236,7 +1257,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "1aa91747fd9658f5aed393db060cb25e9fa2f356fd94c292d237176e6c2911c2"
+    "contentSha256": "6d56d8c42fa5bae6c6e8109585f55610094634484a91d355ef0ea51828523613"
   },
   {
     "questionId": "u11-s009-cr002",
@@ -1256,7 +1277,9 @@ export default [
     "fullCreditSolution": [
       "設斜邊c。",
       "c²=a²+a²=2a²。",
-      "c=√(2a²)=a√2，因a>0。"
+      "c=√(2a²)=a√2，因a>0。",
+      "由 c²=2a² 得 c=√2·√(a²)=√2·|a|；題設 a>0，所以 |a|=a，故斜邊唯一為 a√2，而不是正負兩值。",
+      "代回所得斜邊平方為 2a²，與兩股平方和完全一致，且 a√2 為正並大於每一股 a。"
     ],
     "standardAnswer": "a√2。",
     "alternativeMethod": "由相似比例可知所有等腰直角三角形斜邊與股比固定為√2。",
@@ -1291,8 +1314,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "寫2a",
-      "漏用a>0而寫|a|"
+      "把兩股 a 直接相加成 2a，忽略畢氏定理使用平方和。",
+      "由 √(a²)=a 未引用 a>0；一般情況應為 |a|，長度條件才可化成 a。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1309,7 +1332,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "e28934630e10f96df23cd3e2d2224187a4eec7ef7cc943d525b5080ab696e1d2"
+    "contentSha256": "836d6028ad010df80beb8f864e386f04cead4b455e0c72c9ae7bdbb2786dca47"
   },
   {
     "questionId": "u11-s010-cr001",
@@ -1329,7 +1352,8 @@ export default [
     "fullCreditSolution": [
       "梯子跨越牆與地面，是斜邊25。",
       "高度²=25²-15²=625-225=400。",
-      "高度=20。"
+      "高度=20。",
+      "牆與地面形成直角，梯子連接兩股端點且最長，因此是斜邊；以斜邊平方減水平股平方求得四百，開正平方根為二十公尺。"
     ],
     "standardAnswer": "20 公尺。",
     "alternativeMethod": "使用15-20-25比例。",
@@ -1364,8 +1388,8 @@ export default [
     "unitAndNotationRules": "答案為公尺。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "把15與25直接相減",
-      "把高度當斜邊"
+      "把梯長二十五與離牆十五直接相減得到十，沒有使用平方差。",
+      "把未知高度當斜邊而列 15²+25²，忽略梯子才位於直角對面。"
     ],
     "figureId": "fig-u11-s010-ladder",
     "drawingSpecReference": "units/u11/s010/drawing-specs.jsonl#fig-u11-s010-ladder",
@@ -1382,7 +1406,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "794e9984173b6ccb9634e7f3cc8e81de966472b21de843345e57486d92ec7f2c"
+    "contentSha256": "b585c0c550308b0595232f98b32b08aec9abf88ed3819db832088d9b205aeceb"
   },
   {
     "questionId": "u11-s010-cr002",
@@ -1401,13 +1425,15 @@ export default [
     ],
     "fullCreditSolution": [
       "底面對角線=√(6²+8²)=10。",
-      "空間對角線=√(10²+24²)=√676=26。"
+      "空間對角線=√(10²+24²)=√676=26。",
+      "底面對角線十與高二十四互相垂直，第二次使用畢氏定理得空間對角線平方六百七十六，開正根為二十六公分；此線長大於長、寬、高各邊。"
     ],
     "standardAnswer": "26 公分。",
     "alternativeMethod": "直接使用√(6²+8²+24²)=√676，但需說明三方向互相垂直。",
     "reasoningSteps": [
       "底面對角線=√(6²+8²)=10。",
-      "空間對角線=√(10²+24²)=√676=26。"
+      "空間對角線=√(10²+24²)=√676=26。",
+      "以底面對角線十為一股、高二十四為另一股，開正根並附公分單位。"
     ],
     "rubric": [
       {
@@ -1435,8 +1461,8 @@ export default [
     "unitAndNotationRules": "答案為公分。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "只求底面10",
-      "三邊直接相加38"
+      "只完成底面六八十三角形便回答十，漏掉高度二十四。",
+      "把長寬高直接相加得三十八，沒有分兩個直角三角形求空間距離。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1453,7 +1479,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "78f75841b12b1222ce7a1bfe73d1accfe6960d2ea554d7fe4219d558d651172c"
+    "contentSha256": "f164ed9f5bbe6c845ec57d61266ecfe8de8389125fe3d4e33afaf8ebfdbd7ee5"
   },
   {
     "questionId": "u11-s011-cr001",
@@ -1473,7 +1499,8 @@ export default [
     "fullCreditSolution": [
       "Δx=5-(-3)=8。",
       "Δy=8-2=6。",
-      "距離=√(8²+6²)=√100=10。"
+      "距離=√(8²+6²)=√100=10。",
+      "水平差八、垂直差六不受取點順序影響，平方後距離為 √(64+36)=10；答案是兩點直線距離，使用座標單位而非把差值相加。"
     ],
     "standardAnswer": "10 個座標單位。",
     "alternativeMethod": "以絕對差8與6建立6-8-10直角三角形。",
@@ -1508,8 +1535,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "把水平差算2",
-      "使用8+6=14"
+      "計算 5-(-3) 時漏掉括號而得二，造成水平差錯誤。",
+      "直接使用水平差八加垂直差六得十四，求成折線而非直線距離。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1526,7 +1553,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "a0a0493ed7447f31ecac1d117569775f0b7b5bff1860193b2da59841cb0d395d"
+    "contentSha256": "a8a0a107c45e141d49ad28eedf8fad06de264f89591091bc9510be3607d10c53"
   },
   {
     "questionId": "u11-s011-cr002",
@@ -1546,7 +1573,8 @@ export default [
     "fullCreditSolution": [
       "兩點y相同，距離=|x-1|。",
       "|x-1|=9。",
-      "x-1=9或-9，所以x=10或-8。"
+      "x-1=9或-9，所以x=10或-8。",
+      "兩點位於同一水平線，Q 可在 P 的右側九單位或左側九單位，所以 x 相對中心一有兩個對稱解；代回十與負八都使 |x-1|=9。"
     ],
     "standardAnswer": "x=10 或 x=-8。",
     "alternativeMethod": "在數線上從1向左右各移9單位。",
@@ -1581,8 +1609,8 @@ export default [
     "unitAndNotationRules": "依題意保留正確單位與根式或近似符號。",
     "answerOnlyPolicy": "只有正確答案而無任何計算或理由，最高1分；若題目明確要求說明或證明而未提供，不能給滿分。",
     "commonErrors": [
-      "只寫10",
-      "寫±9未平移中心"
+      "只解 x-1=9 而漏掉 x-1=-9，因此只寫 x=10。",
+      "直接寫 x=±9，沒有把兩個位移解加回中心坐標一。"
     ],
     "figureId": null,
     "drawingSpecReference": null,
@@ -1599,7 +1627,7 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "c7dc7ea89ddff1e079f4c4e390b4d8fa61de2881a27e3090795fa66c26f11bf3"
+    "contentSha256": "84f8b8beb0d8272464997e1129d86867e0100c1bb1dc5941da3e391210c83553"
   },
   {
     "questionId": "u11-s012-cr001",
@@ -1672,7 +1700,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "0304d2428b9543c6ccd111fe38ab0e4b3da7b366c989e23d91165f69c7a3bea4"
+    "contentSha256": "09987f63a369d55db3f1519b2874af2c892edeb419aecae0f255e608daeafede",
+    "standardSolution": [
+      "設另一股為b公分，由畢氏定理得b²＝37²−12²，因為斜邊平方應等於兩股平方和。",
+      "利用平方差，b²＝(37−12)(37＋12)＝25×49＝1225，可減少大數平方的計算量。",
+      "因b是實際長度，只取正平方根b＝35公分；最後驗算12²＋35²＝37²，三邊角色與數值都符合。"
+    ],
+    "commonErrorTargets": [
+      "直接以37−12＝25作為另一股，沒有使用三邊平方關係。",
+      "算得1225後未開根，或忘記股長只取正值而寫成正負35。"
+    ]
   },
   {
     "questionId": "u11-s012-cr002",
@@ -1745,7 +1782,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "62f015b593df41c9472dbdde315f33ba9c3ef0a2b3b85902c4991c08945644c9"
+    "contentSha256": "7779279c40c511b790eb5651694cdc0059cb04487aca97b1bdf898e0301c0087",
+    "standardSolution": [
+      "設兩股為7k、24k，先用勾股定理補出斜邊比例，得√[(7k)²＋(24k)²]＝25k。",
+      "由實際斜邊25k＝50得k＝2，所以兩股必須同步放大，分別為14與48。",
+      "驗算14²＋48²＝196＋2304＝2500＝50²，兩股皆為正且斜邊最大，答案符合題目全部條件。"
+    ],
+    "commonErrorTargets": [
+      "把斜邊50直接按7比24分配，忽略畢氏數組的斜邊比例25。",
+      "求得k＝2後只報一股，或把24k誤算成46而未回代驗算。"
+    ]
   },
   {
     "questionId": "u11-s013-cr001",
@@ -1818,7 +1864,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "a2fa60413781b614b4cf4fa23062de8c36fa46081522a572286336a4b165b5ef"
+    "contentSha256": "b7030b536b039d98143fbf82183d7eea109755986aa5cc26fa34b6cd52b2325b",
+    "standardSolution": [
+      "向東十二公里與向北五公里互相垂直，返程直線是直角三角形的斜邊。",
+      "返程距離為√(12²＋5²)＝√169＝13公里。",
+      "全程路程為12＋5＋13＝30公里，所以答案是三十公里。"
+    ],
+    "commonErrorTargets": [
+      "只算返程十三公里，未把向東與向北的去程一起計入全程。",
+      "把十二與五相加成十七並當成返程，混淆折線路程與直線距離。"
+    ]
   },
   {
     "questionId": "u11-s013-cr002",
@@ -1891,7 +1946,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "ec3afa5b0d2f874ebe0f0d84f2afd3f6a792e69851bdb2c46a823bc788b608b7"
+    "contentSha256": "5f8c58599f8b1b5e3c2db3110820c18ccd0fab634aea0ee07f2d9a78fd3081c2",
+    "standardSolution": [
+      "折斷處高八公尺，樹梢離樹根十五公尺，兩段形成直角三角形的兩股。",
+      "折斷部分長√(8²＋15²)＝√289＝17公尺。",
+      "原樹高為仍直立的八公尺加折斷的十七公尺，共25公尺。"
+    ],
+    "commonErrorTargets": [
+      "只答折斷部分十七公尺，忘記原樹高還包含直立的八公尺。",
+      "把八與十五直接相加成二十三，沒有用勾股定理求折斷部分。"
+    ]
   },
   {
     "questionId": "u11-s014-cr001",
@@ -1964,7 +2028,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "7847a2883e2789d8a29e043014c29a1f0fcdb13eac1ad1faa80ad368a1c4f2b7"
+    "contentSha256": "b01fa518b95ad28f58a105ed975cb5fa885175caf71b97c93f589cb60df95a46",
+    "standardSolution": [
+      "先比較三邊，二十九最長，因此若為直角三角形，二十九必須是斜邊。",
+      "計算20²＋21²＝400＋441＝841，同時29²＝841。",
+      "兩者相等，所以三邊組成直角三角形，直角是二十九所對的角。"
+    ],
+    "commonErrorTargets": [
+      "沒有先確定二十九是最長邊，誤把二十或二十一放在平方等式右側。",
+      "只寫等式成立卻未說明結論，或把直角錯誤標在二十九所在的端點。"
+    ]
   },
   {
     "questionId": "u11-s014-cr002",
@@ -2037,7 +2110,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "108513374332dfa01812eea76943c04cc0bc173b6b7ac5c0f9a6a437de1a4008"
+    "contentSha256": "def848d451ea2d717d41696ff71bfd2bc0dc6e5195ed42432397b2a58b60b937",
+    "standardSolution": [
+      "三邊為√12、√25、√37，其中√37最大，應作為候選斜邊，另兩邊則是候選兩股。",
+      "較短兩邊平方和為(√12)²＋(√25)²＝12＋25＝37，全程保留精確根式。",
+      "又(√37)²＝37，所以平方關係精確成立，依逆敘述可判定此三角形是直角三角形。"
+    ],
+    "commonErrorTargets": [
+      "把根號數平方後仍保留根號，導致無法正確比較平方關係。",
+      "只比較十二、二十五與三十七，卻未說明√37是最長邊及判定結論。"
+    ]
   },
   {
     "questionId": "u11-s015-cr001",
@@ -2110,7 +2192,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "73cc994f73303bdcfd0f9a35be1fb9782a40f2c66a5bc018a6976aca3fa0ae75"
+    "contentSha256": "4010a4c10f3b21ac56c2f95975e144889d5bfc8e81b447e4b09bef0466dff8bf",
+    "standardSolution": [
+      "勾股定理：若三角形是直角三角形，兩股平方和等於斜邊平方。",
+      "逆敘述：若同一三角形三邊a≤b≤c且a²＋b²＝c²，則c所對的角為直角。",
+      "兩者交換條件與結論；原定理由直角推邊長關係，逆敘述由邊長關係判定直角。"
+    ],
+    "commonErrorTargets": [
+      "把定理與逆敘述寫成完全相同方向，沒有交換條件與結論。",
+      "逆敘述漏寫c為最長邊或三邊屬於同一三角形，使判定條件不完整。"
+    ]
   },
   {
     "questionId": "u11-s015-cr002",
@@ -2183,7 +2274,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "43c5bc347d98539030736d82c11da2f404661132170651d4a1354bdf0bc1dd51"
+    "contentSha256": "4a848f8428de7d99c141ca3f9d0296f2a45b0a52d6123956ee91c05404e536df",
+    "standardSolution": [
+      "程式不能假設輸入順序已把斜邊放在最後，應先將三個正邊長由小到大排序為a≤b≤c。",
+      "接著先檢查a＋b＞c確能成三角形，再比較a²＋b²是否等於c²。",
+      "例如輸入5、13、12，排序後為5、12、13，且25＋144＝169，因此應判定為直角三角形。"
+    ],
+    "commonErrorTargets": [
+      "直接用第三個輸入值當最長邊，使5、13、12這類不同順序得到錯誤結果。",
+      "只檢查平方等式而不驗證正邊長與三角形不等式，忽略輸入邊界。"
+    ]
   },
   {
     "questionId": "u11-s016-cr001",
@@ -2256,7 +2356,16 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "b2a53a3fd786182e38673cf8be649cda37e98ac38072523ac7ca30a6a195beb1"
+    "contentSha256": "fa00fab210e121ca87cc2f2ae6a9aa7e8a62dc84d166acc6f227102c2f5e1a2a",
+    "standardSolution": [
+      "路線A沿兩垂直方向走，距離為9＋12＝21公里；每公里成本一，總成本21。",
+      "路線B為直線，距離√(9²＋12²)＝15公里；每公里成本1.35，總成本15×1.35＝20.25。",
+      "因20.25＜21，所以選路線B，且比路線A少0.75個成本單位。"
+    ],
+    "commonErrorTargets": [
+      "只比較十五與二十一公里就選路線B，沒有把不同的每公里成本計入。",
+      "把1.35加到十五而非相乘，導致路線B總成本計算錯誤。"
+    ]
   },
   {
     "questionId": "u11-s016-cr002",
@@ -2329,6 +2438,15 @@ export default [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "noTemplateDeclaration": true,
-    "contentSha256": "36d505d1efe9876c3254b40147c0d54da2bfa291cca08553a03e981b0b9edded"
+    "contentSha256": "2d24720ed2114ae404b0cd6dfcfffc6b60db475063416c2d085b2e7fbf885c4b",
+    "standardSolution": [
+      "門框對角線平方為1.2²＋2.1²＝1.44＋4.41＝5.85，所以對角線為√5.85公尺。",
+      "細桿長2.4公尺，其平方5.76小於5.85，因此2.4＜√5.85，理想化判斷為可以通過。",
+      "此模型假設門框與桿在同一平面、桿無厚度且沒有門檻或五金阻擋；實際仍需保留間隙。"
+    ],
+    "commonErrorTargets": [
+      "只比較桿長二點四與門高二點一，未利用門框對角線判斷。",
+      "宣稱實際一定可通過，沒有說明平面、無厚度與無障礙物等模型限制。"
+    ]
   }
 ];

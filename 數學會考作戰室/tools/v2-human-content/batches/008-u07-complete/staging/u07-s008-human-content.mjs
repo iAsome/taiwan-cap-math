@@ -146,7 +146,8 @@ export const LECTURE = {
         "不超過包含 300。",
         "方向為小於或等於。"
       ],
-      "answer": "p≤300。"
+      "answer": "p≤300。",
+      "why": "不超過三百同時包含所有較低價格與剛好三百元，因此是閉上界。用三百測試必須成立、三百零一應不成立，可確認符號為小於或等於。"
     },
     {
       "exampleId": "L2",
@@ -155,7 +156,8 @@ export const LECTURE = {
         "「滿」表示已達 12。",
         "包含 12。"
       ],
-      "answer": "a≥12。"
+      "answer": "a≥12。",
+      "why": "滿十二歲表示已到達十二歲這個門檻，十二本身要納入，之後更高年齡也符合。以十一與十二測試，便可確認方向向右且包含等號。"
     },
     {
       "exampleId": "L3",
@@ -164,7 +166,8 @@ export const LECTURE = {
         "n<8。",
         "小於 8 的最大整數為 7。"
       ],
-      "answer": "7。"
+      "answer": "7。",
+      "why": "未滿八排除端點八，而 n 又限定為整數，因此八左側相鄰整數七就是最大可行值。若 n 是實數則沒有最大值，定義域會改變結論。"
     },
     {
       "exampleId": "L4",
@@ -173,7 +176,8 @@ export const LECTURE = {
         "高於 −3 不含 −3。",
         "不超過 5 包含 5。"
       ],
-      "answer": "−3<T≤5。"
+      "answer": "−3<T≤5。",
+      "why": "高於負三建立開下界，不超過五建立閉上界；兩個條件用且連接，所以同時保留為一開一閉的雙邊範圍，而不是只選其中一端。"
     }
   ],
   "commonMistakes": [
@@ -261,7 +265,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "23b46a85b7e86a78998c2cfb97e47f40516ec203eca018e81597c08b48e2a1ff"
+  "contentSha256": "2d9c675bafd310290dc07a3f942a7fbd1c5c431f9003ead0fdd09365aba34d02"
 };
 
 export const QUESTIONS = [
@@ -291,10 +295,11 @@ export const QUESTIONS = [
       "result": "n≤20",
       "answerIndexVerified": 3
     },
-    "explanation": "「至多」表示不超過，包含 20，因此 n≤20。",
+    "explanation": "至多二十表示數量不能超過二十，二十本身仍符合。以二十測試要通過、二十一要排除，因此不等號方向為小於或等於，正確模型是 n≤20。",
     "steps": [
-      "辨認至多為上界",
-      "保留等號"
+      "辨認至多描述的是上界。",
+      "用邊界二十測試，確認必須包含等號。",
+      "用二十一測試應排除，寫成 n≤20。"
     ],
     "optionAnalysis": [
       {
@@ -318,7 +323,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「n≤20」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把至多與至少混淆。",
+    "misconceptionTarget": "把至多當成至少而寫反方向，或漏掉端點二十可以取值的等號。",
     "prerequisiteCheck": "需懂不等號語意。",
     "estimatedTimeSec": "40",
     "unitAndRoundingCheck": "無單位。",
@@ -334,7 +339,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3f4863ae807d4e6d0964eaa2e1ecf08b6a7ea78e259f7fdd19759c228527b115"
+    "contentSha256": "28b5b16c5325ece36a60be59e5fdb08ffdc497a9610ce2c97dea761e5791f1a7"
   },
   {
     "questionId": "u07-s008-v002",
@@ -362,10 +367,11 @@ export const QUESTIONS = [
       "result": "T>30",
       "answerIndexVerified": 1
     },
-    "explanation": "「超過」是嚴格大於，不包含 30，所以 T>30。",
+    "explanation": "超過三十表示必須比三十更大，剛好三十不算超過。將三十代入應為不符合，三十一則符合，所以使用嚴格大於符號，寫成 T>30。",
     "steps": [
-      "辨認超過為 >",
-      "排除端點 30"
+      "辨認超過代表嚴格大於。",
+      "用 T=30 測試，確認端點應排除。",
+      "用 T=31 測試方向，得到 T>30。"
     ],
     "optionAnalysis": [
       {
@@ -389,7 +395,7 @@ export const QUESTIONS = [
         "reason": "選項「T<30」方向相反。，與獨立解得的「T>30」不一致。"
       }
     ],
-    "misconceptionTarget": "把超過當成至少。",
+    "misconceptionTarget": "把超過誤讀成至少，錯誤加入等號而讓三十度也通過。",
     "prerequisiteCheck": "需理解超過。",
     "estimatedTimeSec": "40",
     "unitAndRoundingCheck": "單位 °C 一致。",
@@ -405,7 +411,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "35cde0e9b06b2bf643b17a5db25d88961fa3e3e790da6302f60d5fca4d30fa87"
+    "contentSha256": "e4eba44c2e6e526efe9e3e6adda2a8d60e5f5476bfcbd8ad94dc8aa304eba8f7"
   },
   {
     "questionId": "u07-s008-v003",
@@ -433,9 +439,11 @@ export const QUESTIONS = [
       "result": "a<12",
       "answerIndexVerified": 0
     },
-    "explanation": "未滿 12 表示尚未到 12，不包含 12，因此 a<12。",
+    "explanation": "未滿十二表示還沒有到十二歲，十二本身不符合，而十一符合。因此年齡位在十二左側且不含端點，正確不等式是 a<12，不是 a≤12。",
     "steps": [
-      "辨認未滿為嚴格小於"
+      "辨認未滿表示嚴格小於。",
+      "以 a=12 測試，確認十二應排除。",
+      "以 a=11 測試方向，寫成 a<12。"
     ],
     "optionAnalysis": [
       {
@@ -459,7 +467,7 @@ export const QUESTIONS = [
         "reason": "方向相反且含端點。"
       }
     ],
-    "misconceptionTarget": "把未滿誤成不超過。",
+    "misconceptionTarget": "把未滿十二當成不超過十二，因而錯誤包含剛好十二歲的人。",
     "prerequisiteCheck": "需理解未滿。",
     "estimatedTimeSec": "40",
     "unitAndRoundingCheck": "單位歲。",
@@ -475,7 +483,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9b7600cb4e13ea1ddcd1d68ff848a9fb6d4dfc14f10c81bc04607bcf1a4bab75"
+    "contentSha256": "5ad2e1d88aa7cf5356283edd1295260b490b74eb105c0a60a8ae26204e9a603e"
   },
   {
     "questionId": "u07-s008-v004",
@@ -503,10 +511,11 @@ export const QUESTIONS = [
       "result": "−2≤n<3",
       "answerIndexVerified": 2
     },
-    "explanation": "不少於 −2 包含 −2，寫 n≥−2；未滿 3 不含 3，寫 n<3，合併為 −2≤n<3。",
+    "explanation": "不少於負二表示 n 不小於負二，包含端點，可寫負二不超過 n；未滿三表示 n 小於三且排除三。合併兩個必要條件後，完整範圍為 −2≤n<3。",
     "steps": [
-      "翻譯兩個關鍵詞",
-      "合併成雙邊範圍"
+      "把不少於負二翻成 n≥−2。",
+      "把未滿三翻成 n<3。",
+      "按小到大合併為 −2≤n<3。"
     ],
     "optionAnalysis": [
       {
@@ -530,7 +539,7 @@ export const QUESTIONS = [
         "reason": "錯納入 3。"
       }
     ],
-    "misconceptionTarget": "負下界使方向或等號判斷錯誤。",
+    "misconceptionTarget": "看到負下界便把方向翻錯，或將不少於與未滿的端點包含性互換。",
     "prerequisiteCheck": "需懂不少於、未滿與且。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "無單位。",
@@ -546,7 +555,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "684b9925d55f598ccbabc483ac0ff20b5b0a9b1274c38d426bb1610f81ec8107"
+    "contentSha256": "b87928d8ffcb8b089a8b7219d25328bc2e63659e1220e8e2e754b706482b76f4"
   },
   {
     "questionId": "u07-s008-v005",
@@ -574,9 +583,11 @@ export const QUESTIONS = [
       "result": "7",
       "answerIndexVerified": 1
     },
-    "explanation": "6 不大於 6.2；7 是第一個大於 6.2 的整數，所以最小值為 7。",
+    "explanation": "六點二位在整數六與七之間，條件要求 x 嚴格大於六點二，所以六不符合，而七是右側第一個整數。八雖也符合但不是最小值，因此答案為七。",
     "steps": [
-      "找 6.2 右側第一個整數"
+      "定位 6<6.2<7。",
+      "檢查六不大於六點二，故不符合。",
+      "檢查七符合且是第一個整數，確定最小值為七。"
     ],
     "optionAnalysis": [
       {
@@ -600,7 +611,7 @@ export const QUESTIONS = [
         "reason": "存在最小整數 7。"
       }
     ],
-    "misconceptionTarget": "對嚴格小數下界錯誤向上多取一格。",
+    "misconceptionTarget": "將六點二四捨五入後再多加一格，或錯把八當成第一個符合整數。",
     "prerequisiteCheck": "需會小數比較。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "無單位與四捨五入。",
@@ -616,7 +627,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "052d068073dd7939781e8511d7a57fd6ca1e17627edb2da2fb8fe16b9f659bcc"
+    "contentSha256": "c5e234b1a8fbd326a894f4798e6f58c7db85d55a534b5eb323ac0401e92fa1d0"
   },
   {
     "questionId": "u07-s008-v006",
@@ -644,10 +655,11 @@ export const QUESTIONS = [
       "result": "沒有最大值",
       "answerIndexVerified": 3
     },
-    "explanation": "任何小於 4 的 y，都可以再找一個更接近 4 且仍小於 4 的實數，因此沒有最大值。",
+    "explanation": "y 可以取任意實數且只要求小於四。對任何候選 y，都能取 y 與四的平均數；此平均數仍小於四卻比 y 大，所以不存在最大的符合實數。",
     "steps": [
-      "辨認 y 為實數",
-      "利用開上界可任意逼近"
+      "先確認 y 的定義域是全部實數。",
+      "任取符合的 y，構造更大的 (y+4)÷2。",
+      "此值仍小於四，故否定任何最大值的存在。"
     ],
     "optionAnalysis": [
       {
@@ -671,7 +683,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「沒有最大值」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把實數問題誤當只取一位小數或整數。",
+    "misconceptionTarget": "擅自把實數限制為整數或一位小數，選三或三點九作為最大值。",
     "prerequisiteCheck": "需理解實數連續性直觀。",
     "estimatedTimeSec": "65",
     "unitAndRoundingCheck": "無單位與精度限制。",
@@ -687,7 +699,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b81c9d557d442f51598a62172d6160d1fcebed9c4b14624f2bdd27b7ac41e591"
+    "contentSha256": "117dc664d1d6919f939f3a6f3601abbb6a855e3c96d1dd1b5514485d9606bf81"
   },
   {
     "questionId": "u07-s008-v007",
@@ -715,10 +727,11 @@ export const QUESTIONS = [
       "result": "x 高於 −3 且不超過 8",
       "answerIndexVerified": 0
     },
-    "explanation": "左端是嚴格大於 −3，對應高於 −3；右端是 ≤8，對應不超過 8。",
+    "explanation": "左端負三小於 x 表示 x 高於負三，沒有等號；右端 x 不超過八表示 x≤8，包含八。只有「高於負三且不超過八」完整保留兩端方向與開閉。",
     "steps": [
-      "逐一翻譯左端",
-      "逐一翻譯右端"
+      "把 −3<x 翻成 x 高於負三。",
+      "把 x≤8 翻成 x 不超過八。",
+      "逐項比對兩端語意，選出完全相符敘述。"
     ],
     "optionAnalysis": [
       {
@@ -742,7 +755,7 @@ export const QUESTIONS = [
         "reason": "方向顛倒且不可能。"
       }
     ],
-    "misconceptionTarget": "只對照一個端點。",
+    "misconceptionTarget": "只核對其中一個端點，忽略另一端是否含等號或不等號方向是否一致。",
     "prerequisiteCheck": "需熟悉多組範圍詞。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "無單位。",
@@ -758,7 +771,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d60bd6d97e43faecd3475e6c9e34559428fd3f95fbb5ccc91c6d162e3451be53"
+    "contentSha256": "0bcbcc6abde7b8c020ab2163bbcef5eb2dddd66cf6f108c43b12e2e2e74cf994"
   },
   {
     "questionId": "u07-s008-v008",
@@ -786,10 +799,11 @@ export const QUESTIONS = [
       "result": "−7",
       "answerIndexVerified": 2
     },
-    "explanation": "範圍 −4≤m≤2，整數為 −4、−3、−2、−1、0、1、2，總和為 −7。",
+    "explanation": "至少負四與不高於二都包含端點，所以整數範圍是負四到二。負二與二、負一與一互相抵銷，再加零，剩下負四加負三，總和為負七。",
     "steps": [
-      "翻譯兩端均包含",
-      "列整數並加總"
+      "把敘述寫成 −4≤m≤2。",
+      "列出 −4、−3、−2、−1、0、1、2。",
+      "配對相反數後計算剩餘 −4−3=−7。"
     ],
     "optionAnalysis": [
       {
@@ -813,7 +827,7 @@ export const QUESTIONS = [
         "reason": "把端點重複。"
       }
     ],
-    "misconceptionTarget": "負數範圍加總錯誤。",
+    "misconceptionTarget": "負數範圍列舉漏項，或相反數抵銷後把負四與負三的和算成正數。",
     "prerequisiteCheck": "需會負整數加法。",
     "estimatedTimeSec": "90",
     "unitAndRoundingCheck": "無單位。",
@@ -829,7 +843,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c1f6158df7e40a41dc62a1b8388203f762668b866bb692678625c88001b50122"
+    "contentSha256": "2b899c419196a15662bdfc932bc31d8b07d10b0b6f2b60b76fc6ebeb1d68f5f5"
   },
   {
     "questionId": "u07-s008-v009",
@@ -857,10 +871,11 @@ export const QUESTIONS = [
       "result": "x<12",
       "answerIndexVerified": 1
     },
-    "explanation": "x<12 的最大整數解是 11，不能保證最大值為 12；其餘三個敘述的最大整數解都是 12。",
+    "explanation": "x<12 排除整數十二，因此最大整數解是十一，不能保證最大值為十二。其餘三項都包含十二並排除十三：x≤12.9、x<13、x≤12 的最大整數解皆為十二。",
     "steps": [
-      "逐項找最大整數解",
-      "辨認唯一不符合「最大為12」者"
+      "逐項判斷整數十二是否符合。",
+      "再檢查下一個整數十三是否被排除。",
+      "只有 x<12 的最大整數解為十一，所以它不能保證。"
     ],
     "optionAnalysis": [
       {
@@ -884,7 +899,7 @@ export const QUESTIONS = [
         "reason": "直接包含 12 且排除更大整數。"
       }
     ],
-    "misconceptionTarget": "把嚴格小於 12 誤以為仍包含整數 12。",
+    "misconceptionTarget": "把嚴格小於十二誤認為仍可取十二，沒有用端點與下一整數檢查。",
     "prerequisiteCheck": "需會開閉端點與取整。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "無單位。",
@@ -900,7 +915,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9036db96dd98461a0cf8c79fbb434e2c270271f1fe6eb4b0d91345c0c098157a"
+    "contentSha256": "ca07d706afc5e9ef24162d9c29fce5605769182df82df257a33efbc7656bdacb"
   },
   {
     "questionId": "u07-s008-v010",
@@ -928,10 +943,11 @@ export const QUESTIONS = [
       "result": "121 秒",
       "answerIndexVerified": 0
     },
-    "explanation": "規範為 90≤t≤120。121 超過上限；90、105、120 都合規。",
+    "explanation": "不少於九十表示九十秒包含，不超過一百二十也包含一百二十，合規區間是 90≤t≤120。九十、一百零五與一百二十都在區間內，只有一百二十一超過上限。",
     "steps": [
-      "建立含兩端區間",
-      "逐一檢查"
+      "將規定寫成 90≤t≤120。",
+      "逐一檢查四個秒數是否落在閉區間。",
+      "確認 121>120，判定一百二十一秒不合規。"
     ],
     "optionAnalysis": [
       {
@@ -955,7 +971,7 @@ export const QUESTIONS = [
         "reason": "上端點包含。"
       }
     ],
-    "misconceptionTarget": "把不超過當成未滿，誤排除 120。",
+    "misconceptionTarget": "把不超過誤解成未滿，錯誤排除合法的一百二十秒端點。",
     "prerequisiteCheck": "需理解不少於與不超過。",
     "estimatedTimeSec": "60",
     "unitAndRoundingCheck": "單位均為秒。",
@@ -971,7 +987,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4573e7b1aca6e8015ab759d102a8ccda1ef9f8ee9d8468f1008fa2c8adee7b3a"
+    "contentSha256": "b2cfe03949bbb9577eb9fe8c32c315503ab48b10460284268705d860fe2804b3"
   },
   {
     "questionId": "u07-s008-v011",
@@ -999,10 +1015,11 @@ export const QUESTIONS = [
       "result": "不加收，因 1.50=1.5 且規則是嚴格超過",
       "answerIndexVerified": 3
     },
-    "explanation": "1.50 與 1.5 數值相等；「超過」要求 w>1.5，不包含端點，所以不加收。",
+    "explanation": "一點五零與一點五只是書寫位數不同，數值完全相等。規則中的超過表示 w>1.5，端點不包含；代入一點五得到一點五大於一點五為假，因此不加收。",
     "steps": [
-      "辨認小數等值",
-      "翻譯超過為嚴格大於"
+      "先確認 1.50=1.5，尾端零不改變數值。",
+      "把超過一點五翻成 w>1.5。",
+      "代入端點得到假敘述，判定不加收。"
     ],
     "optionAnalysis": [
       {
@@ -1026,7 +1043,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「不加收，因 1.50=1.5 且規則是嚴格超過」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "把 1.50 誤認為大於 1.5。",
+    "misconceptionTarget": "因一點五零的小數位較多就誤認數值較大，忽略尾端零不改變大小。",
     "prerequisiteCheck": "需會小數等值與嚴格不等式。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "單位公斤一致；1.50=1.5。",
@@ -1042,7 +1059,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "12236003c0b91d3daff5690815b19a187610a693b37fc0382c225307ed67cb42"
+    "contentSha256": "582bf78d5e354397868c4cad259f7f9434fb0aa9a56d9aa825b7bf53b8f16c01"
   },
   {
     "questionId": "u07-s008-v012",
@@ -1070,10 +1087,11 @@ export const QUESTIONS = [
       "result": "6.6",
       "answerIndexVerified": 2
     },
-    "explanation": "條件為 6.5<q≤8.0。讀值以 0.1 為間隔，6.5 排除，下一個一位小數是 6.6。",
+    "explanation": "允許範圍是六點五嚴格小於 q，且 q 不超過八點零。儀器以零點一為步距，六點五被排除後，下一個可顯示的數值是六點六，因此它是最小允許讀值。",
     "steps": [
-      "建立開下界閉上界",
-      "依一位小數精度找下一格"
+      "把規則寫成 6.5<q≤8.0。",
+      "把一位小數精度解讀為每格零點一。",
+      "排除六點五，取下一格六點六並檢查上界。"
     ],
     "optionAnalysis": [
       {
@@ -1097,7 +1115,7 @@ export const QUESTIONS = [
         "reason": "選項「6.4」低於下界。，與獨立解得的「6.6」不一致。"
       }
     ],
-    "misconceptionTarget": "未將儀器精度轉成離散步距，或誤含 6.5。",
+    "misconceptionTarget": "忽略儀器只能顯示一位小數的離散步距，或錯誤包含嚴格下界六點五。",
     "prerequisiteCheck": "需會嚴格端點與小數序列。",
     "estimatedTimeSec": "85",
     "unitAndRoundingCheck": "指標無單位；讀值步距 0.1，不四捨五入其他值。",
@@ -1113,7 +1131,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c0a14e56fbcf7bc59d25d5581c68301c71ecff9c977143d9217b588be5009145"
+    "contentSha256": "677b31a4eb743ccc212fb9a3e8ca4d58a8739a9bcd850eb28730bd2c939ff6b3"
   }
 ];
 
@@ -1132,18 +1150,18 @@ export const CONSTRUCTED_RESPONSES = [
       "逐句說明等號是否存在"
     ],
     "fullCreditSolution": [
-      "設溫度為 T，甲為 T<6，不含 6°C。",
-      "設人數為 n，乙為 n≥18，包含 18 人。",
-      "設重量為 m，丙為 m≤12.5，包含 12.5 公斤。"
+      "設溫度為 T。「低於六度」表示 T<6，端點六度不包含。",
+      "設人數為 n。「不少於十八人」表示 n≥18，端點十八人包含。",
+      "設重量為 m。「最多十二點五公斤」表示 m≤12.5，端點十二點五公斤包含。",
+      "用各邊界值代入，可驗證甲不通過、乙與丙通過，符合原句。"
     ],
     "alternativeMethod": [
       "字母可不同；也可用「代入邊界是否符合原句」檢查：6 不算低於、18 算不少於、12.5 算最多。"
     ],
     "reasoningSteps": [
-      "辨認低於",
-      "辨認不少於",
-      "辨認最多",
-      "用邊界值驗證"
+      "圈出低於、不少於與最多三個關鍵詞。",
+      "分別判斷方向與是否需要等號。",
+      "以三個邊界值回代原句，確認符號。"
     ],
     "rubric": [
       {
@@ -1168,8 +1186,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "溫度用 °C、人數用人、重量用公斤；不強制每個不等式旁重複單位。",
     "answerOnlyPolicy": "只寫三個符號無邊界說明，最多 2 分。",
     "commonErrors": [
-      "把低於寫成 ≤",
-      "因 12.5 是小數就錯誤排除邊界"
+      "把低於六寫成小於或等於六，錯誤包含六度。",
+      "看到十二點五是小數便排除邊界，忽略最多本來包含等號。",
+      "三句共用同一未知數，導致不同物理量與單位混在一起。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1182,7 +1201,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c3d6e1b13ad3b609065ea5b526eedf1e554946cedeb70f9af5b337b6042d1d6c"
+    "contentSha256": "6e88e22ce5d3298301ad69ee54ba33ec4e28a4252e641a030fb42b7ed885fd3f"
   },
   {
     "questionId": "u07-s008-cr002",
@@ -1198,17 +1217,18 @@ export const CONSTRUCTED_RESPONSES = [
       "討論連續量最大值是否存在"
     ],
     "fullCreditSolution": [
-      "滿 12 表示 a≥12，未滿 16 表示 a<16，所以 12≤a<16。",
-      "若只看整數年齡，可能為 12、13、14、15。",
-      "若年齡可取任意實數，沒有最大值；因任何小於 16 的年齡都可找到更接近 16 且仍小於 16 的值。"
+      "滿十二歲表示 a≥12，未滿十六歲表示 a<16，所以範圍是 12≤a<16。",
+      "若年齡只以整數歲計，可能值為十二、十三、十四、十五，最大整數為十五。",
+      "若年齡可取任意實數，則沒有最大值；十六雖是上界但未包含。",
+      "對任何小於十六的年齡，都能取它與十六的平均數，得到更大且仍小於十六的年齡。"
     ],
     "alternativeMethod": [
       "可用反例說明沒有最大實數：若聲稱 15.9 最大，則 15.95 更大且仍小於 16。"
     ],
     "reasoningSteps": [
-      "翻譯滿與未滿",
-      "區分整數離散範圍",
-      "辨認開區間無最大實數"
+      "翻譯滿與未滿，建立一閉一開範圍。",
+      "在整數定義域列出十二到十五。",
+      "改看實數定義域，以可任意逼近十六說明無最大值。"
     ],
     "rubric": [
       {
@@ -1233,8 +1253,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "年齡單位為歲；接受 12≤a<16 或 a≥12 且 a<16。",
     "answerOnlyPolicy": "只寫四個整數，最多 1 分。",
     "commonErrors": [
-      "把未滿 16 寫 ≤16",
-      "把最大整數 15 誤當最大實數"
+      "把未滿十六寫成 a≤16，錯誤包含十六歲。",
+      "把整數範圍的最大值十五直接當成實數範圍最大值。",
+      "只說接近十六而未說明任一候選值仍可找到更大的符合值。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1247,7 +1268,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "6b9be3e078206653acb17e1173948364182fba295a95dadaad45ecdeabff8aec"
+    "contentSha256": "5e9f1a4e94352636cf31a5b083ed07de1a927c5d2c36e654345b9c6c15efd1bf"
   }
 ];
 
@@ -1258,7 +1279,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "3f4863ae807d4e6d0964eaa2e1ecf08b6a7ea78e259f7fdd19759c228527b115",
+    "contentSha256": "28b5b16c5325ece36a60be59e5fdb08ffdc497a9610ce2c97dea761e5791f1a7",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "測 n=20：至多 20 應允許，所以需等號；測 n=21 應排除，所以方向為 ≤。",
@@ -1290,7 +1311,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "35cde0e9b06b2bf643b17a5db25d88961fa3e3e790da6302f60d5fca4d30fa87",
+    "contentSha256": "e4eba44c2e6e526efe9e3e6adda2a8d60e5f5476bfcbd8ad94dc8aa304eba8f7",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "T=30 沒有超過 30，T=31 有超過；只有 T>30 符合兩個測試。",
@@ -1322,7 +1343,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "9b7600cb4e13ea1ddcd1d68ff848a9fb6d4dfc14f10c81bc04607bcf1a4bab75",
+    "contentSha256": "5ad2e1d88aa7cf5356283edd1295260b490b74eb105c0a60a8ae26204e9a603e",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "用 a=12 測試應不符合，用 a=11 應符合，所以式子是 a<12。",
@@ -1354,7 +1375,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "684b9925d55f598ccbabc483ac0ff20b5b0a9b1274c38d426bb1610f81ec8107",
+    "contentSha256": "b87928d8ffcb8b089a8b7219d25328bc2e63659e1220e8e2e754b706482b76f4",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "「不少於 −2」即 −2≤n；「未滿 3」即 n<3；串接為 −2≤n<3。",
@@ -1386,7 +1407,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "052d068073dd7939781e8511d7a57fd6ca1e17627edb2da2fb8fe16b9f659bcc",
+    "contentSha256": "c5e234b1a8fbd326a894f4798e6f58c7db85d55a534b5eb323ac0401e92fa1d0",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "在數線上 6<6.2<7，條件要在 6.2 右側，首個整數是 7。",
@@ -1418,7 +1439,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "b81c9d557d442f51598a62172d6160d1fcebed9c4b14624f2bdd27b7ac41e591",
+    "contentSha256": "117dc664d1d6919f939f3a6f3601abbb6a855e3c96d1dd1b5514485d9606bf81",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "假設某 y<4 是最大值，取 (y+4)/2；它仍小於 4 且大於 y，矛盾。因此無最大值。",
@@ -1450,7 +1471,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "d60bd6d97e43faecd3475e6c9e34559428fd3f95fbb5ccc91c6d162e3451be53",
+    "contentSha256": "0bcbcc6abde7b8c020ab2163bbcef5eb2dddd66cf6f108c43b12e2e2e74cf994",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "−3<x 是「x 高於 −3」；x≤8 是「x 不超過 8」。只有選項 0 同時準確。",
@@ -1482,7 +1503,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "c1f6158df7e40a41dc62a1b8388203f762668b866bb692678625c88001b50122",
+    "contentSha256": "2b899c419196a15662bdfc932bc31d8b07d10b0b6f2b60b76fc6ebeb1d68f5f5",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "整數 −4 到 2。配對 (−2+2)+(−1+1)+0=0，另有 −4−3=−7。",
@@ -1514,7 +1535,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "9036db96dd98461a0cf8c79fbb434e2c270271f1fe6eb4b0d91345c0c098157a",
+    "contentSha256": "ca07d706afc5e9ef24162d9c29fce5605769182df82df257a33efbc7656bdacb",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "A 的整數解最高到 11；B、C、D 都包含 12 且排除 13。因此只有 x<12 不能保證最大整數解為 12。",
@@ -1546,7 +1567,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "4573e7b1aca6e8015ab759d102a8ccda1ef9f8ee9d8468f1008fa2c8adee7b3a",
+    "contentSha256": "b2cfe03949bbb9577eb9fe8c32c315503ab48b10460284268705d860fe2804b3",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "區間 [90,120]；121 不在區間，其餘三值都在，所以不合規者是 121 秒。",
@@ -1578,7 +1599,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "12236003c0b91d3daff5690815b19a187610a693b37fc0382c225307ed67cb42",
+    "contentSha256": "582bf78d5e354397868c4cad259f7f9434fb0aa9a56d9aa825b7bf53b8f16c01",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "1.50−1.5=0，兩者相等。代入 w>1.5 得 1.5>1.5 假，因此不加收。",
@@ -1610,7 +1631,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-solution-sets",
     "skillId": "inequality-range",
-    "contentSha256": "c0a14e56fbcf7bc59d25d5581c68301c71ecff9c977143d9217b588be5009145",
+    "contentSha256": "677b31a4eb743ccc212fb9a3e8ca4d58a8739a9bcd850eb28730bd2c939ff6b3",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "允許讀值必大於 6.5；一位小數依序為 6.5、6.6、6.7，第一個嚴格大於者是 6.6。",

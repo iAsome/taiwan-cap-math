@@ -77,7 +77,7 @@ export default {
       {
         "exampleId": "s003-ex03",
         "title": "圓周長",
-        "prompt": "圓的半徑為 r、公周長為 C，且 C=2πr。若把 r 作為可選取的量，哪一個是應變數？",
+        "prompt": "圓的半徑為 r、圓周長為 C，且 C=2πr。若把 r 作為可選取的量，哪一個是應變數？",
         "solution": "半徑 r 決定圓周長 C=2πr。",
         "level": "advanced"
       },
@@ -144,7 +144,7 @@ export default {
       "capBoundaryCheck": "內容限國中會考線型函數與基本分段情境，未引入指數、對數、微積分或高中函數理論。"
     },
     "canonicalization": "sorted-keys-json-utf8-v1",
-    "contentSha256": "7b0ab9d117ec2831cfc121b46173f2de07395168bf48e9602dfff91bceaf7e0f"
+    "contentSha256": "38928a9226e979f23859d77560260271ecf56c20d95e1149fb12b5d995a93615"
   },
   "mcQuestions": [
     {

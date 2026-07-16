@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "從同一個圓外點 P 向同一圓作兩條切線，兩個切點雖在不同位置，但 PA 與 PB 長度相等。",
     "理由可由連接圓心後的兩個直角三角形全等理解。",
-    "定理要求同一外點、同一圓、兩條都是真切線，三個條件缺一不可。"
+    "定理要求同一外點、同一圓、兩條都是真切線，三個條件缺一不可。",
+    "若切線段以代數式表示，等長方程的所有根都只是候選；必須回代兩式確認相等且共同長度大於0，零或負值都不具幾何意義。"
   ],
   "formalDefinitions": [
     {
@@ -122,7 +123,8 @@
         "同外點兩切線段相等。"
       ],
       "answer": "PB=9。",
-      "level": "basic"
+      "level": "basic",
+      "why": "PA、PB同由外點P引向同一圓且皆為切線，符合等切線段定理；因此已知PA=9便可直接得到PB=9。兩段相加18也可檢查成對切線的總長。"
     },
     {
       "exampleId": "s017-L2",
@@ -132,7 +134,8 @@
         "x=4。"
       ],
       "answer": "x=4。",
-      "level": "standard"
+      "level": "standard",
+      "why": "兩個代數式分別表示同外點的切線段，所以先列等式；解得x=4後回代兩式都為13，確認等長且為正。共同長度13為正，符合幾何線段限制。"
     },
     {
       "exampleId": "s017-L3",
@@ -142,7 +145,8 @@
         "總長24。"
       ],
       "answer": "24。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "由同外點切線段相等先得PB=12，題目問兩段總長就要把12加兩次；因此得到24而非單段的12。把24再除成兩份可反向回到每段12。"
     },
     {
       "exampleId": "s017-L4",
@@ -152,7 +156,8 @@
         "2PA+10=32。"
       ],
       "answer": "PA=11。",
-      "level": "connection"
+      "level": "connection",
+      "why": "三角形兩腰PA、PB等長，設共同長度t後周長為2t+10；扣除底邊再除以2，得到每腰11。回代11+11+10=32可直接驗證周長，且兩腰均為正長度。"
     }
   ],
   "difficultyConnections": {
@@ -202,7 +207,7 @@
     {
       "figureId": "u19-s017-fig001",
       "purpose": "圓 O 外點 P 向圓作 PA、PB 兩切線，兩線段以相同刻痕表示等長。",
-      "altText": "圓 O 外點 P 向圓作 PA、PB 兩切線，兩線段以相同刻痕表示等長。，不可按比例目測。"
+      "altText": "圓 O 外點 P 向圓作 PA、PB 兩切線，兩線段以相同刻痕表示等長，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -237,5 +242,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "7f4b4b8eb6b17f32a94ce0a07e5c19bae33faba3d7886d2edbb489f6ee86d4ab"
+  "contentSha256": "c29d2cf2710fa59da026e93072c808d0a80bc75e8c2fba39574c8501b6f32d3f"
 }

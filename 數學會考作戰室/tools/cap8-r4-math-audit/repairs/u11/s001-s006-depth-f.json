@@ -1,0 +1,28 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1","unitId":"u11","batch":"012-u11-complete","skills":["s006"],
+  "mc":[
+    {"questionId":"u11-s006-v001","expectedContentSha256":"3a662367d1e0b566abaef39a5f2c90ff5182c59e8c70338679608f3f22a039d3","appendText":{"explanation":"完全平方數須是整數的平方；一百四十四等於十二乘十二，而其餘選項都落在相鄰平方數之間。","misconceptionTarget":"只看到偶數或可分解就稱為完全平方數，沒有找到整數平方根。"}},
+    {"questionId":"u11-s006-v002","expectedContentSha256":"86336314536b5b452dc05520b17fca376ae619312878eeba1ed17916ad8daffd","appendText":{"explanation":"十五乘十五等於二百二十五，根號記號取非負主平方根，所以 √225=15，而不是正負十五。","misconceptionTarget":"不熟悉十五平方，或把主平方根單值誤寫成正負兩數。"}},
+    {"questionId":"u11-s006-v003","expectedContentSha256":"aadac16955aad5f5b92ad019609e8d64e3e9276119e7f41f2c75f066b07610f3","appendText":{"explanation":"平方表示二十乘二十，不是二十乘二；先算二乘二為四，再保留兩個十的因數，得到四百。","misconceptionTarget":"把右上角二解讀為乘以二，錯把二十平方算成四十。"}},
+    {"questionId":"u11-s006-v004","expectedContentSha256":"afba50190d389ea2125df74bc13d5de5a7a884420938adb8c5fa4c1fcb97fe91","appendText":{"explanation":"十七平方二百八十九仍小於三百，而下一個十八平方三百二十四已超過；因此最大的可用完全平方數是二百八十九。","misconceptionTarget":"列到熟悉的十六平方便停止，沒有檢查下一個十七平方仍符合上界。"}},
+    {"questionId":"u11-s006-v005","expectedContentSha256":"8e1b0f62c9bca761bf6bbdc62682abfa126e018583a4d4c8f0e23dd78e34cd41","appendText":{"explanation":"正完全平方數由底數一到十產生，十平方恰為端點一百且包含；零平方不屬於正完全平方數。","misconceptionTarget":"漏算包含的端點一百，或把零也列入正完全平方數。"}},
+    {"questionId":"u11-s006-v006","expectedContentSha256":"a89e1ee1aff0ead74a05c07a0de87c602e8d767d504b2ac749bb58f3e0223ab6","appendText":{"explanation":"由 √n=18 且兩邊非負，可平方得到 n=18²=324；再驗算 √324=18，符合原條件。","misconceptionTarget":"把根號運算後的十八直接當作被開方數 n，沒有反向平方。"}},
+    {"questionId":"u11-s006-v007","expectedContentSha256":"bc91467f2d739fed5972fe07a8f75aafedf339b7796012328eabe1aaed08fdbe","appendText":{"explanation":"將數值範圍轉為正整數底數，二十三到二十六的平方依序為五百二十九至六百七十六，共四個；兩側平方超界。","misconceptionTarget":"只列中間幾個熟悉平方數，未用二十二、二十七平方檢查完整上下界。"}},
+    {"questionId":"u11-s006-v008","expectedContentSha256":"f35dd3769464be3d8e8a56413083667432a2169fa20962b9415a9704a98db9ad","appendText":{"explanation":"平方根嚴格大於二十且小於二十五，只能是二十一至二十四；六百二十五的平方根正好二十五，不符合嚴格上界。","misconceptionTarget":"把『比二十五小』看成小於或等於，錯誤接受平方根等於二十五。"}},
+    {"questionId":"u11-s006-v009","expectedContentSha256":"40dfbce1bfb96d8e98f5d1514cf2744a78d3fe3176b637873ed2d2b496197a6e","appendText":{"explanation":"三位數最小為一百，九平方八十一仍是兩位數，而十平方恰為一百；因此正整數 k 的最小值是十。","misconceptionTarget":"把條件誤讀為 k 本身是三位數，或忽略一百包含在三位數範圍。"}},
+    {"questionId":"u11-s006-v010","expectedContentSha256":"b8ecb4a507602d23b8e76fe9112996980dd88902e33285966f311157616e79ea","appendText":{"explanation":"實心正方形方陣的列數與每列人數相同，設為 x 則總數 x²=361；正人數取 √361=19。","misconceptionTarget":"把三百六十一除以二，或只想到列數而未建立方陣的平方關係。"}},
+    {"questionId":"u11-s006-v011","expectedContentSha256":"56cae2bd9711afca2ad1571d3786024518a70ee41168f591d46467a6b13338e4","appendText":{"explanation":"展示區有二十四列且每列二十四片，總數是 24×24=576；平方表示兩個方向相乘而不是邊長加倍。","misconceptionTarget":"把二十四平方誤算成四十八，沒有乘上列數與每列片數。"}},
+    {"questionId":"u11-s006-v012","expectedContentSha256":"4d106299a5abdc1eb0a79ca269ef1c6eb2dd789ab48c6bdd5792d9d2d712761d","appendText":{"explanation":"正方形邊長平方等於二百五十六，所以邊長為非負主平方根十六；幾何長度不能取負十六。","misconceptionTarget":"雖解出正負十六，卻未以實際邊長非負排除負值。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u11-s006-cr001","expectedContentSha256":"7f8ddfacaa7034b58c4dac36b5bd20cf9d1bd40cc924a463d896f501f4413985","appendArray":{"fullCreditSolution":["先找底數界線：14²=196 低於二百，所以從十五開始；22²=484 仍不超過五百，而 23²=529 已超過。故連續列出 15² 到 22² 共八個值，端點檢查證明前後都沒有遺漏。"]},"set":{"commonErrors":["把十四平方一百九十六也列入，忽略範圍下界二百。","列到二十一平方四百四十一便停止，漏掉仍不超過五百的二十二平方。"]}},
+    {"questionId":"u11-s006-cr002","expectedContentSha256":"26f140dc0d02c23b70e4f76c61c8213ff58b2a48e303b3b25cab0409b5567dd2","appendArray":{"fullCreditSolution":["設每列 n 人，正方形方陣也有 n 列，所以 n²=676。因 26²=676 且人數為正，取 n=26；最後以 26×26=676 回代驗算，與總人數完全一致。","二十五平方只有六百二十五，二十七平方則是七百二十九，也可據此確認整數邊長唯一。"]},"set":{"commonErrors":["把六百七十六除以二得到三百三十八，沒有使用列數等於每列人數。","寫成正負二十六人，忽略人數與列長皆為非負整數。"]}}
+  ],
+  "lectures":[{"lectureId":"u11-s006-lecture-r1","expectedContentSha256":"f1e37e0cd5622a82997140c14f4e5fd120125cda030b8c5da13cb63390213ec6","set":{"workedExamples":[
+    {"exampleId":"L1","prompt":"求17²。","solutionSteps":["17×17=289。"],"answer":"289。","why":"平方是十七乘十七，可用 (10+7)²=100+140+49 快速核對為二百八十九；不能把右上角二當成乘以二而只算三十四。直式乘法也會得到相同結果。"},
+    {"exampleId":"L2","prompt":"判斷196是否完全平方數。","solutionSteps":["14²=196。"],"answer":"是。","why":"完全平方數必須能寫成整數平方；十四乘十四恰為一百九十六，提供明確整數底數，因此判定為是，而不只是因它為偶數。"},
+    {"exampleId":"L3","prompt":"找小於200的最大完全平方數。","solutionSteps":["14²=196。","15²=225超過。"],"answer":"196。","why":"十四平方仍小於二百，下一個整數十五的平方已超過；連續平方隨正整數底數增加，因此中間沒有其他完全平方數，最大值確為一百九十六。"},
+    {"exampleId":"L4","prompt":"計數50到150間的完全平方數。","solutionSteps":["8²=64至12²=144。","底數8,9,10,11,12。"],"answer":"5個。","why":"七平方四十九低於下界、十三平方一百六十九高於上界，所以完整底數範圍是八到十二；包含兩端共有十二減八加一等於五個。"}
+  ]},"appendArray":{"conceptNarrative":["完全平方數的判斷與計數可轉成整數底數問題：先建立相鄰平方表，確認某數是否具有整數平方根；處理區間時，找出第一個不低於下界與最後一個不高於上界的底數，再連續列舉並檢查端點是否包含。零是完全平方數但不是正完全平方數，幾何邊長或人數則只取正根。以範圍外相鄰平方驗證，可證明沒有遺漏或多列。"]}}],
+  "drawingSpecs":[],"textFiles":[]
+}

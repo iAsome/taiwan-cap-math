@@ -49,7 +49,8 @@ export default {
       "合併的本質是分配律反向使用：3x+5x=(3+5)x。",
       "只有文字部分完全相同才能合併；x 與 x² 不同，x 與 y 也不同。",
       "常數項彼此是同類項。",
-      "係數合為 0 時整項消失，但其他項不受影響。"
+      "係數合為 0 時整項消失，但其他項不受影響。",
+      "合併同類項前，先忽略係數並比較完整文字部分：字母種類與每個指數都相同才屬同組，乘法中的 xy 與 yx 可用交換律重排後比較。接著把各項係數連同正負號相加，再原樣抄回文字部分；係數為零時該組消失，為一或負一時通常省略數字。未配對的項與常數不可遺失，括號則須先完整展開，避免錯誤跨組或改變指數。"
     ],
     "formalDefinitions": [
       {
@@ -106,7 +107,8 @@ export default {
         "solutionSteps": [
           "(4+7)x-3。"
         ],
-        "answer": "11x-3。"
+        "answer": "11x-3。",
+        "why": "4x 與 7x 的文字部分完全相同，可由分配律反向合併成 (4+7)x；常數 -3 沒有 x，不能併入這一組。合併只改係數，不改 x 的指數，結果才是 11x-3。"
       },
       {
         "exampleId": "L2",
@@ -114,7 +116,8 @@ export default {
         "solutionSteps": [
           "x² 項係數 5+3；x 項係數 -2+1。"
         ],
-        "answer": "8x²-x。"
+        "answer": "8x²-x。",
+        "why": "先依文字部分分成 x² 與 x 兩組，可避免跨次方相加。二次項係數為八，一次項中 x 的省略係數是一，所以 -2+1=-1；係數負一通常寫成 -x。"
       },
       {
         "exampleId": "L3",
@@ -122,7 +125,8 @@ export default {
         "solutionSteps": [
           "xy=yx，所以 2xy-5xy。"
         ],
-        "answer": "-3xy+4。"
+        "answer": "-3xy+4。",
+        "why": "數的乘法具有交換律，yx 與 xy 表示相同文字部分，故兩項可以合併；係數 2-5=-3。常數四不含任何文字，只能保留，不能與 -3xy 再合併。"
       }
     ],
     "commonMistakes": [
@@ -140,12 +144,17 @@ export default {
         "mistake": "係數相加後又改變指數",
         "why": "混淆加法與乘法法則",
         "correction": "合併後文字部分完全不變。"
+      },
+      {
+        "mistake": "合併後只留下有配對的項",
+        "why": "沒有同類項的項仍是原式的一部分",
+        "correction": "分類時建立每種文字部分及常數的清單，逐組抄回答案。"
       }
     ],
     "selfCheck": [
-      "我是否能能判斷係數不同但文字部分相同的同類項？",
-      "我是否能能只對係數做加減並保留文字部分？",
-      "我是否能能辨認 x、x²、xy 與 yx 的關係？",
+      "我是否能判斷係數不同但文字部分相同的同類項？",
+      "我是否能只對係數做加減並保留文字部分？",
+      "我是否能辨認 x、x²、xy 與 yx 的關係？",
       "我是否檢查了負號、括號、指數與題目所問的量？"
     ],
     "summary": [
@@ -196,7 +205,7 @@ export default {
       "reviewVersion": "human-lecture-review-u10-r1",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "34a8e02513fb3968dfda01dbbae0d4c787bf18327560fd6f702b84faf455a5fa"
+    "contentSha256": "e4c81d5d057946f73fa4333378b64300697e8400a016e75582f4bae03b394cff"
   },
   "mcQuestions": [
     {
@@ -228,7 +237,7 @@ export default {
         "derivedChoice": "同類項相加只加係數，字母與指數保持不變",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "同類項相加只處理係數，字母部分和指數保持不變。",
+      "explanation": "同類項相加只處理係數，字母部分和指數保持不變。 4x+3x 可用分配律反向寫成 (4+3)x=7x；這是加法而非 x·x 的乘法，文字部分仍為 x¹，不能把指數改成二。",
       "steps": [
         "辨認 4x 與 3x 的字母部分同為 x。",
         "計算係數 4+3=7。",
@@ -256,7 +265,7 @@ export default {
           "reason": "指數相加是同底數相乘的規則，不適用於同類項相加。"
         }
       ],
-      "misconceptionTarget": "把同類項加法誤套用為同底數乘法的指數規則",
+      "misconceptionTarget": "把同類項加法誤套用為同底數乘法的指數規則 把同類項的加法誤當同底數冪的乘法，錯誤把兩個一次方指數相加。",
       "prerequisiteCheck": "只使用多項式項、係數與同類項定義。",
       "estimatedTimeSec": 90,
       "unitCheck": "純代數表示，不涉及單位。",
@@ -271,7 +280,7 @@ export default {
       "semanticReviewRef": "u10-s003-v001-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "cc0ad5477cf29a6c8992dac25e80cfa70946b954bdd9da59d708e02b801d2b24"
+      "contentSha256": "4c0101dd411a3498ddb53267edb7a8d8db58853cf4eb79f8806ce1f096d3443f"
     },
     {
       "questionId": "u10-s003-v002",
@@ -300,9 +309,11 @@ export default {
         "derivedChoice": "4x² 與 -7x²",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "係數可以不同，文字種類與指數必須相同。",
+      "explanation": "係數可以不同，文字種類與指數必須相同。 判斷同類項只比較文字種類與各字母指數，不要求係數相同；第四組兩項的文字部分都是 x²，正四與負七不影響分類。",
       "steps": [
-        "4x² 與 -7x² 的文字部分都為 x²。"
+        "4x² 與 -7x² 的文字部分都為 x²。",
+        "逐組遮住係數，只比較每項的字母與指數。",
+        "前三組的文字部分不同，只有 x² 與 x² 完全相同，因此選第四組。"
       ],
       "optionAnalysis": [
         {
@@ -326,7 +337,7 @@ export default {
           "reason": "文字部分相同，正確。"
         }
       ],
-      "misconceptionTarget": "只看係數或部分文字",
+      "misconceptionTarget": "只看係數或部分文字 只因兩項係數相同就判為同類項，或只看都有 x 而忽略 x 與 x² 的指數不同。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -341,7 +352,7 @@ export default {
       "semanticReviewRef": "u10-s003-v002-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c70eaa78e3ee561079d6bf6b4e8ebf16f350eedd5b60e1f3df73fd18775c2acf"
+      "contentSha256": "1e99e11317130d737bbdd351de12b45cb5c97b838f2211d27e67ede2b6bbe048"
     },
     {
       "questionId": "u10-s003-v003",
@@ -372,7 +383,7 @@ export default {
         "derivedChoice": "9a−2b+5",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "只有 6a 和 3a 是同類項；−2b 與常數 5 都必須保留。",
+      "explanation": "只有 6a 和 3a 是同類項；−2b 與常數 5 都必須保留。 同類項合併只改變可配對的 a 項係數；-2b 沒有另一個 b 項，常數 5 也沒有同類常數，因此兩者都必須原樣留在答案中。",
       "steps": [
         "將 a 項分組：6a+3a=9a。",
         "b 項只有 −2b，保持不變。",
@@ -400,7 +411,7 @@ export default {
           "reason": "漏掉常數 5。"
         }
       ],
-      "misconceptionTarget": "把不同字母的項合併，或在化簡時漏掉未合併項",
+      "misconceptionTarget": "把不同字母的項合併，或在化簡時漏掉未合併項 把 a 項與 b 項混合成 ab，或只留下已合併的 9a 而遺失 -2b、5。",
       "prerequisiteCheck": "只使用項、同類項與加減法。",
       "estimatedTimeSec": 90,
       "unitCheck": "純代數表示，不涉及單位。",
@@ -415,7 +426,7 @@ export default {
       "semanticReviewRef": "u10-s003-v003-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4cd8ac514837bbf3e049b27f1a19f7a0c28fb9cd0844eba47847be60b3a1ede0"
+      "contentSha256": "8c48c13d61c8d7a938072b900cad05deea679ea152399fd2cb9d22e8fda13e23"
     },
     {
       "questionId": "u10-s003-v004",
@@ -444,10 +455,11 @@ export default {
         "derivedChoice": "7x²-2x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "分組合併得 7x²-2x。",
+      "explanation": "分組合併得 7x²-2x。 把 x² 項與 x 項分成兩組，分別反向提取文字部分：(5+2)x²=7x²，(-3+1)x=-2x，所以化簡式為 7x²-2x，兩組不可交叉，最後抄回文字部分並維持原指數。",
       "steps": [
         "x² 項係數 5+2=7。",
-        "x 項係數 -3+1=-2。"
+        "x 項係數 -3+1=-2。",
+        "把兩組結果合併並保留各自文字部分，寫成 7x²+(-2)x。"
       ],
       "optionAnalysis": [
         {
@@ -471,7 +483,7 @@ export default {
           "reason": "把二次項相加變三次。"
         }
       ],
-      "misconceptionTarget": "不同次方分組或負係數計算錯誤",
+      "misconceptionTarget": "不同次方分組或負係數計算錯誤 把不同次方的項放在同組，或計算 -3+1 時漏掉負號而得到正四。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -486,7 +498,7 @@ export default {
       "semanticReviewRef": "u10-s003-v004-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e2ddaeb7b230bf371723d22561e9c5fc31e6f0e667728edea647a421206fb60d"
+      "contentSha256": "b7d1658a73a623e4d75337e77ca5dc381e2ca320c650f46772cb7ead4e3c5a23"
     },
     {
       "questionId": "u10-s003-v005",
@@ -515,9 +527,11 @@ export default {
         "derivedChoice": "xy",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "交換律使 yx 與 xy 文字部分相同。",
+      "explanation": "交換律使 yx 與 xy 文字部分相同。 乘法交換律給 yx=xy，因此三項都能寫成 xy 的倍數；係數連同符號相加為 2-5+4=1，係數一通常省略，答案是 xy。",
       "steps": [
-        "yx=xy，所以係數 2-5+4=1，結果 xy。"
+        "yx=xy，所以係數 2-5+4=1，結果 xy。",
+        "先用交換律把 -5yx 改寫成 -5xy，使三項文字部分一致。",
+        "計算係數 2+(-5)+4=1，抄回 xy 並省略係數 1。"
       ],
       "optionAnalysis": [
         {
@@ -541,7 +555,7 @@ export default {
           "reason": "係數為 1，正確。"
         }
       ],
-      "misconceptionTarget": "未辨認 xy=yx 或符號錯",
+      "misconceptionTarget": "未辨認 xy=yx 或符號錯 以字母書寫順序不同為由拒絕合併 yx 與 xy，或把負五的符號漏掉。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -556,7 +570,7 @@ export default {
       "semanticReviewRef": "u10-s003-v005-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ae22ce01b1ded23ff77fdb6248479168f6a13e390f4914cbe3fa1d226c8dc026"
+      "contentSha256": "8f7478b47680658f25a82ef6118cc268fb11e0dfc793070d88e82810f0914041"
     },
     {
       "questionId": "u10-s003-v006",
@@ -585,9 +599,11 @@ export default {
         "derivedChoice": "7",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "比較同類項係數。",
+      "explanation": "比較同類項係數。 兩項的文字部分同為 x²，合併後係數是 3+k；它必須等於右式的係數 10，因此列 3+k=10，解得 k=7，代回係數正好為十。",
       "steps": [
-        "(3+k)x²=10x²，所以 3+k=10，k=7。"
+        "(3+k)x²=10x²，所以 3+k=10，k=7。",
+        "反向使用分配律，將左式寫成 (3+k)x²。",
+        "比較係數得 3+k=10，兩邊減 3 得 k=7，再代回核對。"
       ],
       "optionAnalysis": [
         {
@@ -611,7 +627,7 @@ export default {
           "reason": "把係數相加結果當 k。"
         }
       ],
-      "misconceptionTarget": "未建立係數等式",
+      "misconceptionTarget": "未建立係數等式 沒有先比較等式兩邊的 x² 係數，將 k 與 10 直接相等或把三乘上 k。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -626,7 +642,7 @@ export default {
       "semanticReviewRef": "u10-s003-v006-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e3858c2ae8802751cd8b510c228edb286d395e3a5906220003a54480d02072e2"
+      "contentSha256": "d600f550204d223968c04a373a940db8251c7201d93452fbe7c94a661eb3182a"
     },
     {
       "questionId": "u10-s003-v007",
@@ -655,9 +671,11 @@ export default {
         "derivedChoice": "3x+3",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "負號使 -3 變 +3，再合併 x 項。",
+      "explanation": "負號使 -3 變 +3，再合併 x 項。 括號前的負號作用於括號內每一項，-(2x-3)=-2x+3；再合併 4x-2x+x=3x，常數留下 +3，結果為 3x+3；係數和 4-2+1 也可再次核對，常數項亦維持正三。",
       "steps": [
-        "去括號得 4x-2x+3+x=3x+3。"
+        "去括號得 4x-2x+3+x=3x+3。",
+        "逐項分配負號，把原式改寫成 4x-2x+3+x。",
+        "合併三個 x 項係數 4-2+1=3，得到 3x+3。"
       ],
       "optionAnalysis": [
         {
@@ -681,7 +699,7 @@ export default {
           "reason": "把括號全變正。"
         }
       ],
-      "misconceptionTarget": "括號前負號未逐項分配",
+      "misconceptionTarget": "括號前負號未逐項分配 只改變括號內第一項的符號，仍把 -3 寫成 -3，導致常數項錯誤。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -696,7 +714,7 @@ export default {
       "semanticReviewRef": "u10-s003-v007-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9603cd06efdc7389d7d5361c5696699f1028dc4e4ef3526cd5c20dc8328636c9"
+      "contentSha256": "fceed93de6ba67706340f8baf033a81f92681166c71c1ae9d8885852b4fcd4ad"
     },
     {
       "questionId": "u10-s003-v008",
@@ -725,9 +743,11 @@ export default {
         "derivedChoice": "x²+x-1",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先分配，再依次方合併。",
+      "explanation": "先分配，再依次方合併。 先展開 2(x²-x)=2x²-2x，並將 -(x²+1) 逐項變為 -x²-1；二次項係數為一、一次項係數為一，常數為負一，三組合併後即得答案。",
       "steps": [
-        "展開得 2x²-2x+3x-x²-1=x²+x-1。"
+        "展開得 2x²-2x+3x-x²-1=x²+x-1。",
+        "完整展開成 2x²-2x+3x-x²-1，標出三種同類項。",
+        "分別合併得 (2-1)x²+(-2+3)x-1=x²+x-1。"
       ],
       "optionAnalysis": [
         {
@@ -751,7 +771,7 @@ export default {
           "reason": "末項 -1 誤為 +1。"
         }
       ],
-      "misconceptionTarget": "多重括號展開後分類錯",
+      "misconceptionTarget": "多重括號展開後分類錯 分配二或括號前負號時只處理第一項，或把 x² 與 x 當同類項合併。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -766,7 +786,7 @@ export default {
       "semanticReviewRef": "u10-s003-v008-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1b5652884696adfcc4d22b0b5d19e7736d9f492c4bed870f832bd9e6c87b8464"
+      "contentSha256": "e40850aa1f41cb738daf1419ba41e1c97a56641618e6e24c6718b659ded3047c"
     },
     {
       "questionId": "u10-s003-v009",
@@ -795,9 +815,11 @@ export default {
         "derivedChoice": "無解",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "化簡後 m 抵消，條件矛盾，所以無解。",
+      "explanation": "化簡後 m 抵消，條件矛盾，所以無解。 合併係數時 m 與 -m 完全抵消，只剩 -1+2=1，所以左式恆為 x；要求它等於 5x 等同 1=5，任何 m 都不可能成立。",
       "steps": [
-        "係數和 (m-1)+(2-m)=1，無論 m 為何都只得到 x，不可能是 5x。"
+        "係數和 (m-1)+(2-m)=1，無論 m 為何都只得到 x，不可能是 5x。",
+        "把兩個 x 項合併為 [(m-1)+(2-m)]x。",
+        "化簡括號得 1，與目標係數 5 比較為矛盾，因此判定無解。"
       ],
       "optionAnalysis": [
         {
@@ -821,7 +843,7 @@ export default {
           "reason": "雖係數固定，但不能任意滿足 5x。"
         }
       ],
-      "misconceptionTarget": "未先化簡參數即猜答案",
+      "misconceptionTarget": "未先化簡參數即猜答案 未先化簡含參數的係數就移項求 m，忽略 m 已抵消而產生矛盾等式。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "本題為純代數量；各選項單位一致或不涉及單位。",
@@ -836,7 +858,7 @@ export default {
       "semanticReviewRef": "u10-s003-v009-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "63ac11d05b31e3bfea9dfdad5207da386853e6c227d549aba8c583308d3d4a27"
+      "contentSha256": "c9330c9cad94bca3d09962fd7f7f4d85868fdac2775ab2c4029512c3cac966f1"
     },
     {
       "questionId": "u10-s003-v010",
@@ -865,9 +887,11 @@ export default {
         "derivedChoice": "5x+4 件",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "同類項分別代表隨 x 變動與固定件數。",
+      "explanation": "同類項分別代表隨 x 變動與固定件數。 兩天的件數要相加，x 項係數為 3+2=5，固定件數為 5+(-1)=4；因此總量是 5x+4 件，而不是把不同類項互乘。",
       "steps": [
-        "(3x+5)+(2x-1)=5x+4。"
+        "(3x+5)+(2x-1)=5x+4。",
+        "列總量 (3x+5)+(2x-1)，去括號後保持各項符號。",
+        "分別合併 x 項與常數項，得到 5x+4 件。"
       ],
       "optionAnalysis": [
         {
@@ -891,7 +915,7 @@ export default {
           "reason": "常數把 -1 當 +1。"
         }
       ],
-      "misconceptionTarget": "情境加總時常數符號錯",
+      "misconceptionTarget": "情境加總時常數符號錯 第二天常數是負一卻當成正一，或將兩天的 x 項係數與常數交叉合併。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "各項與答案單位均為件。",
@@ -906,7 +930,7 @@ export default {
       "semanticReviewRef": "u10-s003-v010-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9693641131f0aebc3bba930b605351bacf892a375c697c4ecb339e1f71ef43a1"
+      "contentSha256": "240a54c19408e68d2f5059f029a8a7c1f22b017aeef7983fffeb4eb726f780f0"
     },
     {
       "questionId": "u10-s003-v011",
@@ -935,9 +959,11 @@ export default {
         "derivedChoice": "6x+3 公尺",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "變動長度與固定長度分別合併。",
+      "explanation": "變動長度與固定長度分別合併。 總長等於三段相加；變動部分的係數 2+1+3=6，固定部分 1+4-2=3，所以總長為 6x+3 公尺，兩類長度分開計算。",
       "steps": [
-        "三段相加：(2+1+3)x+(1+4-2)=6x+3。"
+        "三段相加：(2+1+3)x+(1+4-2)=6x+3。",
+        "把三段長度全數列入同一加法式，展開為 2x+1+x+4+3x-2。",
+        "合併 x 項與常數項後，核對總長單位仍為公尺。"
       ],
       "optionAnalysis": [
         {
@@ -961,7 +987,7 @@ export default {
           "reason": "係數與常數皆錯。"
         }
       ],
-      "misconceptionTarget": "多段合併時漏項",
+      "misconceptionTarget": "多段合併時漏項 相加三段時漏掉其中一段，或把第三段的 -2 看成 +2 而算錯固定長度。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "所有長度同為公尺，可相加。",
@@ -976,7 +1002,7 @@ export default {
       "semanticReviewRef": "u10-s003-v011-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1b81c231ae5a1f29867b98b817d34703e1c4f98d1d648191b84a2c2a244d4a93"
+      "contentSha256": "95f9b9021395889c116ce662cc3c4751c09633cae9432839ff428ebf97fa68d4"
     },
     {
       "questionId": "u10-s003-v012",
@@ -1005,9 +1031,11 @@ export default {
         "derivedChoice": "5x²-x",
         "didNotTrustStoredAnswer": true
       },
-      "explanation": "先加兩時段，再減去報廢量的每一項。",
+      "explanation": "先加兩時段，再減去報廢量的每一項。 上午與下午先相加得 6x²-2x，再減報廢量時 -(x²-x)=-x²+x；合併後為 5x²-x，表示只扣除不合格件數，沒有遺漏任何時段。",
       "steps": [
-        "合格量=(4x²+3x)+(2x²-5x)-(x²-x)=5x²-x。"
+        "合格量=(4x²+3x)+(2x²-5x)-(x²-x)=5x²-x。",
+        "列出合格量並完整去括號：4x²+3x+2x²-5x-x²+x。",
+        "合併二次項係數 4+2-1=5、一次項係數 3-5+1=-1，得 5x²-x。"
       ],
       "optionAnalysis": [
         {
@@ -1031,7 +1059,7 @@ export default {
           "reason": "5x²-x 正確。"
         }
       ],
-      "misconceptionTarget": "減去報廢多項式時未逐項變號",
+      "misconceptionTarget": "減去報廢多項式時未逐項變號 減去報廢多項式時只變 x² 的符號，沒有把原來的 -x 轉成 +x。",
       "prerequisiteCheck": "使用先備技能：polynomial-evaluation；未使用後續單元知識。",
       "estimatedTimeSec": 90,
       "unitCheck": "所有式子均表示件數。",
@@ -1046,7 +1074,7 @@ export default {
       "semanticReviewRef": "u10-s003-v012-review",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ffd0dd8b877800f46d317901c1b7cac3f56957aac66cf58943b9a51bb82e373e"
+      "contentSha256": "fe3e341e393705a6f7386a4f0c0eb452d44cdebb43eb36f66a8911f9f0d3fd1a"
     }
   ],
   "constructedResponses": [
@@ -1070,7 +1098,8 @@ export default {
         "x² 項：4x²+5x²=9x²。",
         "x 項：-3x+x=-2x。",
         "常數：2-7=-5。",
-        "結果 9x²-2x-5。"
+        "結果 9x²-2x-5。",
+        "三組的文字部分分別是 x²、x 與不含未知數的常數；每組只加減係數，文字部分不改變。將 9、-2、-5 代回可寫成 9x²+(-2)x+(-5)，與逐組結果一致。"
       ],
       "alternativeMethods": [
         "可用三欄直式對齊 x²、x、常數後相加。"
@@ -1106,7 +1135,8 @@ export default {
       "unitAndNotationRules": "不涉及單位；-2x 可寫成 (-2)x。",
       "answerOnlyPolicy": "只寫正確化簡式但不說明分類，最高 2 分。",
       "commonErrorTargets": [
-        "判斷同類項並只合併係數"
+        "把 x² 項與 x 項混在同一組，或合併後改變 x 的指數。",
+        "合併 -3x+x 時將省略係數的一讀成零，或漏掉常數 2-7。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1117,7 +1147,7 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9dafac6ec78aff6c7570e275ab47f260f3a560ee4eff991d2d350c612bc9f56b"
+      "contentSha256": "332db1b47a82b966e7c39e884e81180042d6e69a2b16e8aafd7551b35ab3ddd5"
     },
     {
       "questionId": "u10-s003-cr002",
@@ -1137,14 +1167,16 @@ export default {
       ],
       "standardSolution": [
         "二次項係數為 (m-2)+(3-m)=1。",
-        "它與 m 無關，不可能等於 5，所以不存在 m。"
+        "它與 m 無關，不可能等於 5，所以不存在 m。",
+        "展開係數和得到 m-2+3-m，正負 m 抵消且 -2+3=1，因此無論代入何值，二次項都固定為 x²。要求係數同時為 5 會導致 1=5 的矛盾，故不存在符合的 m。"
       ],
       "alternativeMethods": [
         "可任取兩個不同 m 代入觀察係數固定為 1，但仍須用代數說明一般性。"
       ],
       "reasoningSteps": [
         "二次項係數為 (m-2)+(3-m)=1。",
-        "它與 m 無關，不可能等於 5，所以不存在 m。"
+        "它與 m 無關，不可能等於 5，所以不存在 m。",
+        "將固定係數 1 與題設係數 5 比較，得到矛盾，明確寫出解集合為空。"
       ],
       "rubric": [
         {
@@ -1171,7 +1203,8 @@ export default {
       "unitAndNotationRules": "不涉及單位。",
       "answerOnlyPolicy": "只寫「無解」無理由，最高 1 分。",
       "commonErrorTargets": [
-        "判斷同類項並只合併係數"
+        "看到 m 就直接解 m-2=5，漏掉另一個同類項中的 3-m。",
+        "只代入單一 m 得到係數一，就宣稱全部都無解，沒有用 m-m 抵消說明一般性。"
       ],
       "figureId": null,
       "drawingSpecId": null,
@@ -1182,14 +1215,14 @@ export default {
       },
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0f453675b39410c078efd3f14b3a38760f722fe7412b12935804ff165c572e45"
+      "contentSha256": "f148adccb5328eb5b2ba77cc288665a098f00d4c3d7723ea60ca3c27c8cdfc23"
     }
   ],
   "semanticReviews": [
     {
       "reviewId": "u10-s003-v001-review",
       "questionId": "u10-s003-v001",
-      "questionContentSha256": "cc0ad5477cf29a6c8992dac25e80cfa70946b954bdd9da59d708e02b801d2b24",
+      "questionContentSha256": "4c0101dd411a3498ddb53267edb7a8d8db58853cf4eb79f8806ce1f096d3443f",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "4x 與 3x 是同類項，相加時只把係數 4 和 3 相加，x 的指數仍是 1；正確結果是 7x。",
@@ -1218,12 +1251,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "本題已由和 U03 完全相同的直接化簡，改為錯誤診斷；唯一正確為第三項。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "8d34f5d0b6d826aa75f43dd710850d20643abe10a37d60827c856464ab060e28"
+      "contentSha256": "edfd04dad5cb3512ac8a41b4a104b632d31f4ae1817924ea0806446bec2d45db"
     },
     {
       "reviewId": "u10-s003-v002-review",
       "questionId": "u10-s003-v002",
-      "questionContentSha256": "c70eaa78e3ee561079d6bf6b4e8ebf16f350eedd5b60e1f3df73fd18775c2acf",
+      "questionContentSha256": "1e99e11317130d737bbdd351de12b45cb5c97b838f2211d27e67ede2b6bbe048",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "4x² 與 -7x² 的文字部分都為 x²。",
@@ -1252,12 +1285,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「下列哪一組是同類項？」獨立重算：4x² 與 -7x² 的文字部分都為 x²。 正解「4x² 與 -7x²」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "36e01b082d3c7698d36c886a681cd96364e395bda09fc1c86f035cf0f9effc69"
+      "contentSha256": "d887299dee4641b2a784bcd891776a32ea942e13800e6a94a2cd77031c551ff6"
     },
     {
       "reviewId": "u10-s003-v003-review",
       "questionId": "u10-s003-v003",
-      "questionContentSha256": "4cd8ac514837bbf3e049b27f1a19f7a0c28fb9cd0844eba47847be60b3a1ede0",
+      "questionContentSha256": "8c48c13d61c8d7a938072b900cad05deea679ea152399fd2cb9d22e8fda13e23",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "6a 與 3a 可合併為 9a；−2b 沒有其他 b 項，常數 5 也保留，所以得到 9a−2b+5。",
@@ -1286,12 +1319,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "本題改為多類項分類，與 U03 的單一字母直接合併題區隔。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "153f61004fe4f5872b5320e2da72d051a4bfaf8777a3641c9b2dfa7efc87fc3e"
+      "contentSha256": "226c1ff1019190d90f4f477ccbbf122457dd3257fcc0da397424c32f270896a0"
     },
     {
       "reviewId": "u10-s003-v004-review",
       "questionId": "u10-s003-v004",
-      "questionContentSha256": "e2ddaeb7b230bf371723d22561e9c5fc31e6f0e667728edea647a421206fb60d",
+      "questionContentSha256": "b7d1658a73a623e4d75337e77ca5dc381e2ca320c650f46772cb7ead4e3c5a23",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "x² 項係數 5+2=7；x 項係數 -3+1=-2。",
@@ -1320,12 +1353,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 5x²-3x+2x²+x。」獨立重算：x² 項係數 5+2=7；x 項係數 -3+1=-2。 正解「7x²-2x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "a4eacc986836cceff896f39054a1e740f23601f58d8fa32f3e5f234ebbf709f4"
+      "contentSha256": "68c4900b9351607d2d172cb3600df3c9aa843ba72b6f3dd0091224caf966e6c5"
     },
     {
       "reviewId": "u10-s003-v005-review",
       "questionId": "u10-s003-v005",
-      "questionContentSha256": "ae22ce01b1ded23ff77fdb6248479168f6a13e390f4914cbe3fa1d226c8dc026",
+      "questionContentSha256": "8f7478b47680658f25a82ef6118cc268fb11e0dfc793070d88e82810f0914041",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "yx=xy，所以係數 2-5+4=1，結果 xy。",
@@ -1354,12 +1387,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 2xy-5yx+4xy。」獨立重算：yx=xy，所以係數 2-5+4=1，結果 xy。 正解「xy」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "5596117fdc1a5c16ce9f6ce7d9ab7c902f2ed1947538b1426c8d97d79e998227"
+      "contentSha256": "19e65c12198f2f52b30c1fe49db2a1be4a6ee070347d6f7ba87e1984187aee4c"
     },
     {
       "reviewId": "u10-s003-v006-review",
       "questionId": "u10-s003-v006",
-      "questionContentSha256": "e3858c2ae8802751cd8b510c228edb286d395e3a5906220003a54480d02072e2",
+      "questionContentSha256": "d600f550204d223968c04a373a940db8251c7201d93452fbe7c94a661eb3182a",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "(3+k)x²=10x²，所以 3+k=10，k=7。",
@@ -1388,12 +1421,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 3x²+kx²=10x²，則 k 為何？」獨立重算：(3+k)x²=10x²，所以 3+k=10，k=7。 正解「7」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "73f36d633e1ded525421f9c714c155759edac94970cd863d454bce386d389417"
+      "contentSha256": "2e8ce1275d98b280b7d9854d35822f43e01d01c7cf54af930da8ad98b06aebed"
     },
     {
       "reviewId": "u10-s003-v007-review",
       "questionId": "u10-s003-v007",
-      "questionContentSha256": "9603cd06efdc7389d7d5361c5696699f1028dc4e4ef3526cd5c20dc8328636c9",
+      "questionContentSha256": "fceed93de6ba67706340f8baf033a81f92681166c71c1ae9d8885852b4fcd4ad",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "去括號得 4x-2x+3+x=3x+3。",
@@ -1422,12 +1455,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 4x-(2x-3)+x。」獨立重算：去括號得 4x-2x+3+x=3x+3。 正解「3x+3」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "74299c0ee541aa4744010a1764cdeaa8a0986d21b035a68afd087ccf7bbdefba"
+      "contentSha256": "bc902d427fb81c98be9960f8b814260b8e404067c3245790a460222b7a858280"
     },
     {
       "reviewId": "u10-s003-v008-review",
       "questionId": "u10-s003-v008",
-      "questionContentSha256": "1b5652884696adfcc4d22b0b5d19e7736d9f492c4bed870f832bd9e6c87b8464",
+      "questionContentSha256": "e40850aa1f41cb738daf1419ba41e1c97a56641618e6e24c6718b659ded3047c",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "展開得 2x²-2x+3x-x²-1=x²+x-1。",
@@ -1456,12 +1489,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「化簡 2(x²-x)+3x-(x²+1)。」獨立重算：展開得 2x²-2x+3x-x²-1=x²+x-1。 正解「x²+x-1」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "3ec95176449a3f84e6292fe1e2e4be3aa8024f56301ef7bec694ee7fe354266b"
+      "contentSha256": "451e14da8a22086b2ecf4189548392419380d95d6a2635fef0354eef80baf2b7"
     },
     {
       "reviewId": "u10-s003-v009-review",
       "questionId": "u10-s003-v009",
-      "questionContentSha256": "63ac11d05b31e3bfea9dfdad5207da386853e6c227d549aba8c583308d3d4a27",
+      "questionContentSha256": "c9330c9cad94bca3d09962fd7f7f4d85868fdac2775ab2c4029512c3cac966f1",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "係數和 (m-1)+(2-m)=1，無論 m 為何都只得到 x，不可能是 5x。",
@@ -1490,12 +1523,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「若 (m-1)x+(2-m)x 化簡後為 5x，則 m 為何？」獨立重算：係數和 (m-1)+(2-m)=1，無論 m 為何都只得到 x，不可能是 5x。 正解「無解」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "fe2c95a37be0a752fc2b3489be39a74e7dd10861047994071491211d95fb036f"
+      "contentSha256": "d7a8e240e509328d02e49b9d752162326e77f3a42431784ca79bb133f20f2ffd"
     },
     {
       "reviewId": "u10-s003-v010-review",
       "questionId": "u10-s003-v010",
-      "questionContentSha256": "9693641131f0aebc3bba930b605351bacf892a375c697c4ecb339e1f71ef43a1",
+      "questionContentSha256": "240a54c19408e68d2f5059f029a8a7c1f22b017aeef7983fffeb4eb726f780f0",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "(3x+5)+(2x-1)=5x+4。",
@@ -1524,12 +1557,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「商店第一天賣出 (3x+5) 件，第二天賣出 (2x-1) 件。兩天共賣出多少件？」獨立重算：(3x+5)+(2x-1)=5x+4。 正解「5x+4 件」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "c6ffc8cb4a9bedc6ba3aff749c760d53953f1d1b6c210ba9f72dc7afcf8308ae"
+      "contentSha256": "01d463d51fcfacf4766ce02d8c1565552741fac76c4a8868302b90f92c2df4e2"
     },
     {
       "reviewId": "u10-s003-v011-review",
       "questionId": "u10-s003-v011",
-      "questionContentSha256": "1b81c231ae5a1f29867b98b817d34703e1c4f98d1d648191b84a2c2a244d4a93",
+      "questionContentSha256": "95f9b9021395889c116ce662cc3c4751c09633cae9432839ff428ebf97fa68d4",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "三段相加：(2+1+3)x+(1+4-2)=6x+3。",
@@ -1558,12 +1591,12 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「一條步道由三段組成，長度分別為 (2x+1)、(x+4)、(3x-2) 公尺。總長為何？」獨立重算：三段相加：(2+1+3)x+(1+4-2)=6x+3。 正解「6x+3 公尺」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "4583ee57d923d0c8d04510ca1960b183bcdafaef9e8adbc6d7648c26cdaedd2e"
+      "contentSha256": "423fe5e2a7b10ca606759a40f57fcb9d1ba76a0fda80dba373b433a68e8e7cea"
     },
     {
       "reviewId": "u10-s003-v012-review",
       "questionId": "u10-s003-v012",
-      "questionContentSha256": "ffd0dd8b877800f46d317901c1b7cac3f56957aac66cf58943b9a51bb82e373e",
+      "questionContentSha256": "fe3e341e393705a6f7386a4f0c0eb452d44cdebb43eb36f66a8911f9f0d3fd1a",
       "reviewVersion": "human-review-u10-r1",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "independentSolution": "合格量=(4x²+3x)+(2x²-5x)-(x²-x)=5x²-x。",
@@ -1592,7 +1625,7 @@ export default {
       "reviewerDecision": "pass",
       "reviewerNote": "題目「工廠上午產量為 4x²+3x，下午產量為 2x²-5x，報廢 x²-x 件。合格總產量為何？」獨立重算：合格量=(4x²+3x)+(2x²-5x)-(x²-x)=5x²-x。 正解「5x²-x」；四個選項理由均已逐項核對。",
       "reviewedAt": "2026-07-12",
-      "contentSha256": "a317e9e42da8a1c58d9c74fc9e062c2080d063defba3276e86026e5e4b7645c1"
+      "contentSha256": "cab2c68af275817b90ba78bbbaf2d7a740ad1ffdd0df5a9c37d0cc85fc1a2e88"
     }
   ],
   "drawingSpecs": []

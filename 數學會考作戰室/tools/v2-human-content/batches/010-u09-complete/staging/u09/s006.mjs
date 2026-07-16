@@ -61,7 +61,8 @@ export default {
       "在本單元會考範圍內採相同組距且縱軸為次數，柱高可直接比較次數。",
       "邊界值要依括號規則歸組，不能重複或漏掉。",
       "門檻若恰為組界，可精確累加整組；若落在組內，僅靠直方圖通常不能知道組內細分。",
-      "最高柱只說哪個區間最常見，不能單獨決定平均。"
+      "最高柱只說哪個區間最常見，不能單獨決定平均。",
+      "直方圖把連續資料依組界分入相連區間，橫軸是資料範圍、縱軸通常是次數；採左含右不含時，落在共同邊界的資料只歸入右側一組，避免重複或漏算。計算門檻內筆數要累加所有完整落入的柱，若門檻切過柱內部，僅憑分組圖不能知道其中精確人數。不同組距的柱高也不能直接比較子區間人數，因較寬柱已合併更多資料範圍。"
     ],
     "definitions": [
       {
@@ -128,7 +129,8 @@ export default {
         "solution": [
           "表示 10≤x<20 有 7 筆。"
         ],
-        "answer": "7 筆。"
+        "answer": "7 筆。",
+        "why": "直方圖橫軸給連續資料區間，縱軸柱高才是該區間次數。左方括號表示十包含在內，右方小括號表示二十不包含；因此七筆資料都滿足十以上且小於二十。"
       },
       {
         "id": "L2",
@@ -136,7 +138,8 @@ export default {
         "solution": [
           "原在 [5,10)，新在 [10,15)。"
         ],
-        "answer": "前組減 1、後組加 1。"
+        "answer": "前組減 1、後組加 1。",
+        "why": "更正前九點八小於十，屬於五到未滿十組；更正後十點二大於等於十，跨到十至未滿十五組。這仍是同一筆資料，所以舊組減一、新組加一，總次數保持不變。"
       },
       {
         "id": "L3",
@@ -144,7 +147,8 @@ export default {
         "solution": [
           "若門檻是組界，累加 0–10 與 10–20 兩柱。"
         ],
-        "answer": "由前兩柱合計。"
+        "answer": "由前兩柱合計。",
+        "why": "未滿二十分鐘包括所有零到未滿十與十到未滿二十的資料，不能只取緊鄰門檻的一柱。門檻二十恰是組界時，前兩柱可完整累加，而二十本身歸入下一組。"
       }
     ],
     "commonMistakes": [
@@ -223,7 +227,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "3897066e45b5f5ecd801b209d97b50f6001851a7d0e2c0bc5ce46dd9327d3f3a"
+    "contentSha256": "6ffacb2d7b50c8b332655f0ec3f303a3b80d1acc2ed3fae2911baea99cd8de4d"
   },
   "mcQuestions": [
     {
@@ -251,7 +255,7 @@ export default {
         "derivedAnswer": "有 7 筆資料介於 10（含）與 20（不含）之間",
         "trustStoredAnswer": false
       },
-      "explanation": "要同時讀懂組界與柱高。",
+      "explanation": "要同時讀懂組界與柱高。 橫軸區間指定資料值從十起且不到二十，縱軸柱高七表示這個區間共有七筆；十、二十是組界，不是次數。",
       "steps": [
         "讀橫軸區間。",
         "讀縱軸柱高 7。",
@@ -279,7 +283,7 @@ export default {
           "reason": "20 是組上限。"
         }
       ],
-      "misconceptionTarget": "把組界或柱高角色混淆",
+      "misconceptionTarget": "把組界或柱高角色混淆 把柱高七當成每筆資料值，或把組界十、二十誤認為人數。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -297,7 +301,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "0ccf0b5ca5d50fb967ea228526f4842b90b3a7954ae22aa9831adc0125f6134b"
+      "contentSha256": "67830db1a947a26eeb674c007b44f2ffa1e1935f79694d6c57dfceb38c72be0c"
     },
     {
       "questionId": "u09-s006-v002",
@@ -324,10 +328,11 @@ export default {
         "derivedAnswer": "20",
         "trustStoredAnswer": false
       },
-      "explanation": "直方圖的總資料筆數是各組次數合計。",
+      "explanation": "直方圖的總資料筆數是各組次數合計。 三柱分別代表互斥組別中的四、九、七筆，總數為四加九加七等於二十；三是組數，九只是一組最高次數。",
       "steps": [
         "讀出三柱高度。",
-        "相加。"
+        "相加。",
+        "用四、九、七三組均已納入且互不重疊，確認總次數二十。"
       ],
       "optionAnalysis": [
         {
@@ -351,7 +356,7 @@ export default {
           "reason": "4+9+7=20。"
         }
       ],
-      "misconceptionTarget": "把組數或最高柱當總數",
+      "misconceptionTarget": "把組數或最高柱當總數 把三根柱的組數或最高柱九筆，錯當整份資料的總筆數。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -369,7 +374,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "404d29a0434e81916e1a5ffc2c58c3ad98e1b91da997ab5c38b5f44118927c18"
+      "contentSha256": "0fbf88e613a36d44a8524d515c666556a0e052f5638b6d0c915cd626486d4352"
     },
     {
       "questionId": "u09-s006-v003",
@@ -396,10 +401,11 @@ export default {
         "derivedAnswer": "最高的柱",
         "trustStoredAnswer": false
       },
-      "explanation": "直方圖的柱相連；組距相同時高度代表次數大小。",
+      "explanation": "直方圖的柱相連；組距相同時高度代表次數大小。 縱軸標示次數且各組組距相同，柱高可直接代表次數，最高柱就是次數最多組；左右位置只代表數值區間。",
       "steps": [
         "確認縱軸標示次數。",
-        "比較柱高。"
+        "比較柱高。",
+        "排除位置與寬度因素後，只比較同組距各柱的縱向高度。"
       ],
       "optionAnalysis": [
         {
@@ -423,7 +429,7 @@ export default {
           "reason": "位置表示數值區間，不保證次數多。"
         }
       ],
-      "misconceptionTarget": "把位置或寬度當次數",
+      "misconceptionTarget": "把位置或寬度當次數 把最靠右或最寬的柱視為次數最多，沒有確認縱軸與組距。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -441,7 +447,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "80d0b08d524162847396fc8e179c80d4e3906dcdda3a27b1ee0273ec6e75305b"
+      "contentSha256": "f94f5d7ccc89f702375d1e0f687813e77b9fd0e334cbfbef7d1057a50ca23cd5"
     },
     {
       "questionId": "u09-s006-v004",
@@ -468,10 +474,11 @@ export default {
         "derivedAnswer": "17 筆",
         "trustStoredAnswer": false
       },
-      "explanation": "門檻 30 位於組界，應完整納入前三組。",
+      "explanation": "門檻 30 位於組界，應完整納入前三組。 小於三十完整包含零到十、十到二十、二十到三十等三組，次數三、八、六合為十七；三十本身屬下一組而未被納入。",
       "steps": [
         "判斷涵蓋哪些區間。",
-        "相加前三柱。"
+        "相加前三柱。",
+        "依左含右不含規則核對三十不在前三組，合計仍為十七。"
       ],
       "optionAnalysis": [
         {
@@ -495,7 +502,7 @@ export default {
           "reason": "20 是全部資料。"
         }
       ],
-      "misconceptionTarget": "只取相鄰一柱",
+      "misconceptionTarget": "只取相鄰一柱 只取二十到三十的一柱，或把三十到四十組也算進小於三十。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -513,7 +520,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "6b2e3dd326c554da67e363e078e23021241e2fec1bccd1f935dc669a0070a1d5"
+      "contentSha256": "dd0c244f283fc1301b3a223aeb985b08de35893323d05342a72d2a5e747f0a68"
     },
     {
       "questionId": "u09-s006-v005",
@@ -540,7 +547,7 @@ export default {
         "derivedAnswer": "10",
         "trustStoredAnswer": false
       },
-      "explanation": "所有柱高總和等於資料總數。",
+      "explanation": "所有柱高總和等於資料總數。 已知三柱五、九、六合計二十，所有四柱必合為總數三十，缺柱為十；十加回後合計與總樣本完全相符。",
       "steps": [
         "加總已知柱。",
         "總數扣除。",
@@ -568,7 +575,7 @@ export default {
           "reason": "20 是已知合計。"
         }
       ],
-      "misconceptionTarget": "把已知合計當缺值",
+      "misconceptionTarget": "把已知合計當缺值 把已知三柱合計二十填成缺柱，沒有由總數三十扣除。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -586,7 +593,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "277ff5d9ae28c362ef4d9ae98bc40697beab9c5b8345944000f35abc5f3a728c"
+      "contentSha256": "28ede65de6c5545ebcd0de45df9674af9da1bc0705fc29d37f8b038d4f5171d1"
     },
     {
       "questionId": "u09-s006-v006",
@@ -613,10 +620,11 @@ export default {
         "derivedAnswer": "[20,30)",
         "trustStoredAnswer": false
       },
-      "explanation": "組界處資料的歸屬必須依區間符號判定。",
+      "explanation": "組界處資料的歸屬必須依區間符號判定。 第一組右端二十不包含，第二組左端二十包含，所以邊界值只歸入二十到未滿三十組；此規則避免同一筆重複或漏算。",
       "steps": [
         "讀括號意義。",
-        "檢查 20 是否滿足不等式。"
+        "檢查 20 是否滿足不等式。",
+        "以二十滿足第二組的不等式且不滿足第一組，確認唯一歸屬。"
       ],
       "optionAnalysis": [
         {
@@ -640,7 +648,7 @@ export default {
           "reason": "後組左端包含 20。"
         }
       ],
-      "misconceptionTarget": "把端點重複或漏算",
+      "misconceptionTarget": "把端點重複或漏算 看到二十同時是兩組邊界就重複計入，或因位在邊界而兩組都不算。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -658,7 +666,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e47ce30af9db48a04830b6bdbbf8e107274ec8de4bbd8d7df6adbf1cdeaed5a4"
+      "contentSha256": "73ea0762deaead6d1a030401808acf25cf6081eef75324ebc89abb629090e846"
     },
     {
       "questionId": "u09-s006-v007",
@@ -685,7 +693,7 @@ export default {
         "derivedAnswer": "甲圖落在中間兩組的比例較高",
         "trustStoredAnswer": false
       },
-      "explanation": "直方圖能支持的是組內比例，不應過度推論個別值。",
+      "explanation": "直方圖能支持的是組內比例，不應過度推論個別值。 兩圖總數同為四十，甲中間兩組二十八筆占百分之七十，乙十八筆占百分之四十五，因此只有甲的中間組比例較高可確定。",
       "steps": [
         "確認兩圖總數相同。",
         "計算中間兩組比例。",
@@ -713,7 +721,7 @@ export default {
           "reason": "同樣總數下 28/40>18/40。"
         }
       ],
-      "misconceptionTarget": "由分布外觀過度推論平均或個別值",
+      "misconceptionTarget": "由分布外觀過度推論平均或個別值 由中間組集中程度直接推論平均、全距或每一筆資料的大小關係。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -731,7 +739,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d4b5650cee35bcd5701743bdd5699912a9243523163752a114a7569e8380e1c4"
+      "contentSha256": "fd4537c8770bafbfea8c572538457dd74356354b12607a879b729c09a710dfd9"
     },
     {
       "questionId": "u09-s006-v008",
@@ -758,10 +766,11 @@ export default {
         "derivedAnswer": "資料主要集中在中央組，兩側大致對稱",
         "trustStoredAnswer": false
       },
-      "explanation": "分布形狀要依整體柱高，不可只看最高值。",
+      "explanation": "分布形狀要依整體柱高，不可只看最高值。 柱高由二、七升到中央十二，再以七、二對稱下降，顯示資料主要集中中央且左右對應；並非全部相同或單調增加。",
       "steps": [
         "比較中央與兩側。",
-        "檢查左右對應柱。"
+        "檢查左右對應柱。",
+        "成對比較第一與第五、第二與第四柱，確認左右次數分別相等。"
       ],
       "optionAnalysis": [
         {
@@ -785,7 +794,7 @@ export default {
           "reason": "到中央後開始下降。"
         }
       ],
-      "misconceptionTarget": "把最高柱誤解為所有資料相同",
+      "misconceptionTarget": "把最高柱誤解為所有資料相同 只看到中央最高柱就說所有資料相同，沒有觀察五柱的整體對稱形狀。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -803,7 +812,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "48734b4873763f6ecb0af688a20202ad0a5ff82a8dd3574cd6299cff15251c21"
+      "contentSha256": "9d13bb0e457e49e6ad61c47945d06f5673d21f45a3aa6643321a7e1be653c6de"
     },
     {
       "questionId": "u09-s006-v009",
@@ -830,7 +839,7 @@ export default {
         "derivedAnswer": "第二組減 1，第三組加 1",
         "trustStoredAnswer": false
       },
-      "explanation": "單筆更正跨組界時，一柱減一、另一柱加一。",
+      "explanation": "單筆更正跨組界時，一柱減一、另一柱加一。 九點八原在五到未滿十組，十點二改到十到未滿十五組，總筆數不變，因此第二組減一、第三組加一。",
       "steps": [
         "判定更正前組別。",
         "判定更正後組別。",
@@ -858,7 +867,7 @@ export default {
           "reason": "跨越組界會改變兩柱。"
         }
       ],
-      "misconceptionTarget": "只增不減或忽略組界",
+      "misconceptionTarget": "只增不減或忽略組界 只替新組加一卻沒有從舊組減一，導致資料總數憑空增加。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -876,7 +885,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "36a016dc58cd19a56af8e218440821eea796017bd437fe85a6e2ac8f18f4e65e"
+      "contentSha256": "3d59726a97bd0d2d603d7ff156275e2ee58e32fe52bdea4b802e387484258c90"
     },
     {
       "questionId": "u09-s006-v010",
@@ -903,7 +912,7 @@ export default {
         "derivedAnswer": "[10000,12000) 的 20 人",
         "trustStoredAnswer": false
       },
-      "explanation": "門檻與組界重合時可精確判斷整組。",
+      "explanation": "門檻與組界重合時可精確判斷整組。 至少一萬步包含一萬，第二組從一萬起且含左端，因此二十人全都確定達標；第一組上界不含一萬，三十五人都未達標。",
       "steps": [
         "將門檻對照區間。",
         "套用左含右不含。",
@@ -931,7 +940,7 @@ export default {
           "reason": "第二組可確定達標。"
         }
       ],
-      "misconceptionTarget": "忽略端點包含規則",
+      "misconceptionTarget": "忽略端點包含規則 忽略一萬是共同組界與至少包含等號，將兩組合併或判成無法確定。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -949,7 +958,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9ad042f042dc7d6153097049e6028ed6084f8a0dacff36ed6617835e71346fe3"
+      "contentSha256": "8eeca59a495bf85b6e185bffd7dc0228a11ebba751acbd7443cd2060fdd9c3a4"
     },
     {
       "questionId": "u09-s006-v011",
@@ -976,7 +985,7 @@ export default {
         "derivedAnswer": "合理，30/40=75%",
         "trustStoredAnswer": false
       },
-      "explanation": "『未滿20分鐘』需要累加所有上界不超過20的前兩組。",
+      "explanation": "『未滿20分鐘』需要累加所有上界不超過20的前兩組。 總數十二加十八加十為四十，未滿二十分鐘完整涵蓋前兩組共三十人，比例四分之三超過一半，公告合理。",
       "steps": [
         "加總總人數。",
         "加總門檻內組別。",
@@ -1004,7 +1013,7 @@ export default {
           "reason": "不需平均數即可算比例。"
         }
       ],
-      "misconceptionTarget": "只看單一最高柱",
+      "misconceptionTarget": "只看單一最高柱 只看十到未滿二十的最高柱十八人，漏加零到未滿十分鐘組。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -1022,7 +1031,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "2f447773a21fdf6d0b2703117d1b015fa51bd291893e9fa0eb768a6ed677f62c"
+      "contentSha256": "b0fe73ae6dc56c24d6f632d0d807366ec4913b2bcac8d9b75328cdd5435ec104"
     },
     {
       "questionId": "u09-s006-v012",
@@ -1049,7 +1058,7 @@ export default {
         "derivedAnswer": "不一定，最高柱只指出眾多資料所在組，不能單獨決定平均",
         "trustStoredAnswer": false
       },
-      "explanation": "不可把眾數組與平均數混為一談。",
+      "explanation": "不可把眾數組與平均數混為一談。 最高柱只告訴最多天數落在二十到三十毫米組，平均要使用全部天數的降雨量；其他組若有大值，平均仍可能落在別處。",
       "steps": [
         "辨識最高柱意義。",
         "回想平均使用全部資料。",
@@ -1077,7 +1086,7 @@ export default {
           "reason": "平均受所有組的資料影響。"
         }
       ],
-      "misconceptionTarget": "把眾數組當平均所在組",
+      "misconceptionTarget": "把眾數組當平均所在組 把最高柱代表的眾數組直接當平均所在組，忽略其餘資料對平均的影響。",
       "prerequisiteCheck": {
         "skillIds": [
           "pie-chart-percent"
@@ -1095,7 +1104,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "16bcc5a0998fd66612324488cd700045fcd9ad703deb2190f4a2962e78b3e96a"
+      "contentSha256": "7cc5b1fd31b3c86299f91f3b182c674a7acd6a250bbca4067fad4e5e948955f8"
     }
   ],
   "constructedResponses": [
@@ -1118,7 +1127,8 @@ export default {
       "standardSolution": [
         "次數最多組為20至未滿30分鐘，共15人。",
         "未滿20分鐘者=5+12=17人，占17/40=42.5%。",
-        "20分鐘不屬於10至未滿20，而屬於20至未滿30組。"
+        "20分鐘不屬於10至未滿20，而屬於20至未滿30組。",
+        "四組次數合計四十，未滿二十分鐘的十七人占百分之四十二點五；邊界二十不屬前一組而進入二十到未滿三十組，比例計算不會重複或漏掉資料。"
       ],
       "alternativeMethod": "可用區間符號寫[0,10)、[10,20)、[20,30)、[30,40)。",
       "reasoningSteps": [
@@ -1163,7 +1173,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "571d4f38f219e7c665359c1ffb475eccdbde140c30a757380cbf22e78a02df9c"
+      "contentSha256": "35236a5afc852b8064770d47471fb387b2b9ae241d2b15b6e29cc62bbe84a499",
+      "commonErrors": [
+        "把最高柱十五人當全班總數，或以十五作分母計算未滿二十分鐘比例。",
+        "把邊界二十分鐘同時算入相鄰兩組，或錯放在十到未滿二十組。"
+      ]
     },
     {
       "questionId": "u09-s006-cr002",
@@ -1183,7 +1197,8 @@ export default {
       ],
       "standardSolution": [
         "說法不成立。甲柱只代表60至未滿70，共18人；乙柱代表60至未滿80，共35人，範圍是甲的兩倍寬。",
-        "乙圖只能確定60至未滿80合計35人；其中60至未滿70可能少於、等於或多於18人，只要與70至未滿80合計35即可。"
+        "乙圖只能確定60至未滿80合計35人；其中60至未滿70可能少於、等於或多於18人，只要與70至未滿80合計35即可。",
+        "例如乙圖的三十五人可分成十七與十八，或二十與十五等多種組合，因此六十到未滿七十的人數可能小於、等於或大於甲圖十八人；單憑較寬柱的高度無法決定。"
       ],
       "alternativeMethod": "可舉兩個可能分配反證：乙可為10與25，或20與15；同一柱35卻導致前半組不同。",
       "reasoningSteps": [
@@ -1228,7 +1243,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "befa903ef915fe50f0a54ca413f37587440fcf58c0df61384ae3b5c4d7bf4418"
+      "contentSha256": "4ea86c1a01eecc53a786e67a302705a6e7ac7429fafc7c48cfc6c0927e2ae38e",
+      "commonErrors": [
+        "只比較柱高三十五與十八，忽略乙柱涵蓋二十個分數、甲柱只涵蓋十個分數。",
+        "擅自把乙柱三十五人平均分成兩半，沒有任何資料保證兩個子區間均分。"
+      ]
     }
   ],
   "semanticReviews": [

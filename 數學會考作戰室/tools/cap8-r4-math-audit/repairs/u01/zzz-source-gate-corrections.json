@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "cap8-r4-math-authoring-ledger-r1",
+  "unitId": "u01",
+  "batch": "002-u01-complete",
+  "skills": ["s003", "s007", "s010", "s013", "s014"],
+  "mc": [
+    { "questionId": "u01-s013-v001", "expectedContentSha256": "973b12cfd57f9be5ba31e89e7ad7b23f09c21c0065431d6e6843a7d43423f988", "replaceText": { "2^(3+4)=2⁷。": "同底數相乘時指數相加，3+4=7，所以得到 2⁷。" } },
+    { "questionId": "u01-s013-v002", "expectedContentSha256": "8cd82c0bc8d51dfa9aef03ff4f964c19d1c2f2c930ac4ff86361ef85e3db92c6", "replaceText": { "5^(8-3)=5⁵。": "同底數相除時指數相減，8-3=5，所以得到 5⁵。" } },
+    { "questionId": "u01-s013-v003", "expectedContentSha256": "a25e1606e6aa8fa04d5d5fdd2e925ae49d478da7e98207ba79844db53abe527d", "replaceText": { "3^(2×4)=3⁸。": "冪的乘方要把指數相乘，2×4=8，所以得到 3⁸。" } },
+    { "questionId": "u01-s013-v004", "expectedContentSha256": "66a8c05199f97e0a238d01c29ba69117bc8b052ab819ec91a036d1297628e2c7", "replaceText": { "(2×5)^3=2^3×5^3。": "積的三次方可分配到每個因數，因此 (2×5)³=2³×5³。" } },
+    { "questionId": "u01-s013-v006", "expectedContentSha256": "0c18418d3799cd620625babeaa9dbb28485b2d10b865593519403b3033969bcd", "replaceText": { "3^(9-4-2)=3³。": "分母兩個同底數因數都要扣除，9-4-2=3，所以得到 3³。" } },
+    { "questionId": "u01-s013-v008", "expectedContentSha256": "623b8186bb07ae16f8fdf14aa4a6e712ed06de1ceb1a6d0d8c4769ae335d3e28", "replaceText": { "5^(2×3-4)=5²。": "先將冪的乘方指數相乘，再做同底數相除；2×3-4=2，所以得到 5²。" } },
+    { "questionId": "u01-s013-v010", "expectedContentSha256": "48af5edc02ec39e85ef6975856b196bfe769761baccd510134dd11c0bef1d7c0", "replaceText": { "2^(3+4)=2⁷。": "同底數相乘時指數相加，3+4=7，所以得到 2⁷。" } },
+    { "questionId": "u01-s013-v011", "expectedContentSha256": "52a1c7ab7003336c507f1914b6c1d7c48b223c62c4c4c9a06b939d498097050e", "replaceText": { "(10²)³=10^(2×3)=10⁶。": "冪的乘方要把指數相乘，2×3=6，因此 (10²)³=10⁶。" } },
+    { "questionId": "u01-s014-v002", "expectedContentSha256": "bc2561a4a79af47167167e2cf2c200dfafc254ea0492de988be1ef51162f3bd0", "replaceText": { "0.00073=7.3×10^-4。": "0.00073=7.3×10⁻⁴。" } },
+    { "questionId": "u01-s014-v006", "expectedContentSha256": "7cbb3dcd0fd383d7b53a90dd5bfdca8c52cfc0ea1084e105b53067a600aff96b", "replaceText": { "8×10^(3+5)=8×10⁸。": "係數相乘得 8，指數相加得 8，所以結果為 8×10⁸。" } },
+    { "questionId": "u01-s014-v007", "expectedContentSha256": "31a1a0c85644bfd3c360d54a21f1bcd225449be9d451fae48379242913d5ed7f", "replaceText": { "3×10^(8-2)=3×10⁶。": "係數相除得 3，指數相減得 6，所以結果為 3×10⁶。" } },
+    { "questionId": "u01-s014-v009", "expectedContentSha256": "fb93e3ff89da7a44739aa13291eaa92283e9fcf911e416619868bb25e2241cfd", "replaceText": { "4.5×10^-7=0.00000045。": "4.5×10⁻⁷=0.00000045。" } },
+    { "questionId": "u01-s014-v011", "expectedContentSha256": "aa376cdf64db653397144de32c1b386b14a6df3cdd7fbaa4698610af01d18f33", "replaceText": { "5(8.2×10^-6)=4.1×10^-5公尺。": "5×(8.2×10⁻⁶)=4.1×10⁻⁵ 公尺。" } }
+  ],
+  "constructedResponse": [
+    {
+      "questionId": "u01-s003-cr002",
+      "expectedContentSha256": "022bc366b3f744392785e6e165d7976cac5fb276f33cb2245552bee2fa1f145f",
+      "set": {
+        "commonErrors": [
+          "把端點距離 12 的一半 6 誤寫成中點坐標，忽略坐標起點不是 0。",
+          "由 R=1 向左移 4 單位時反而做加法，將 S 誤寫成 5。",
+          "只列出 R、S 數值，沒有用兩端等距與左右位置完成檢查。"
+        ]
+      }
+    },
+    {
+      "questionId": "u01-s007-cr001",
+      "expectedContentSha256": "24c662b4e773519d5b014cca6c2456dba67be30547edcca562d84fe5db78bca4",
+      "set": {
+        "commonErrors": [
+          "計算 |4-(-8)| 時漏掉雙重負號，將 AB 距離誤寫成 4。",
+          "只找到 B 右側的 9，漏掉 B 左側同樣相距 5 的 -1。",
+          "把原點 0 當成等距中心，沒有以題目指定的 B=4 為中心。"
+        ]
+      }
+    },
+    {
+      "questionId": "u01-s013-cr001",
+      "expectedContentSha256": "7b89d15c2b85b8d3fec3bafc30f9fde104ad175b846d6c211fc2e7eda85f0f9b",
+      "replaceText": { "可直接寫2^(5+3-4)=2⁴，但須標明兩條規則。": "可直接把指數合併為 5+3-4=4，寫成 2⁴，但須標明使用同底數乘除兩條規則。" }
+    }
+  ],
+  "lectures": [
+    {
+      "lectureId": "u01-s010-lecture-r1",
+      "expectedContentSha256": "58d7319fc4fd339f6a2ab4920222ff115bff24f264ab3e7f866206de6e2b7a73",
+      "replaceText": { "(-1)^n": "(-1)ⁿ" }
+    }
+  ],
+  "drawingSpecs": [],
+  "textFiles": []
+}

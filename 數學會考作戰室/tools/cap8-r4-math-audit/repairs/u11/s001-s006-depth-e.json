@@ -1,0 +1,28 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1","unitId":"u11","batch":"012-u11-complete","skills":["s005"],
+  "mc":[
+    {"questionId":"u11-s005-v001","expectedContentSha256":"7d95dde54b2a7e5ea2d4119f8c34738771c52b90c153b8edc32715137005cfdf","appendText":{"explanation":"根號符號本身代表非負主平方根，所以 √36 單值為六；若題目改問三十六的所有平方根，才需要另列負六。","misconceptionTarget":"把單值記號 √36 與方程 x²=36 的正負兩解混在一起。"}},
+    {"questionId":"u11-s005-v002","expectedContentSha256":"f3aeede8386bc355ca9aef0a27c2bede24522ab8ff0d8c92b3d7fcc9956136ee","appendText":{"explanation":"先算根號內的主平方根 √25=5，再由外面的正負號展開成 +5、-5；正負號不作用在二十五本身。","misconceptionTarget":"忽略根號外的 ± 只寫五，或錯把答案寫成正負二十五。"}},
+    {"questionId":"u11-s005-v003","expectedContentSha256":"c7277fdcabe64ef857736567b37455fb1603f982d9eece8c29d6b48941480f73","appendText":{"explanation":"九為非負數，先取主平方根三，再將整個括號平方回九；這也符合 (√a)²=a 的條件 a≥0。","misconceptionTarget":"只計算 √9=3 而漏掉外部平方，或把結果誤加正負號。"}},
+    {"questionId":"u11-s005-v004","expectedContentSha256":"291ff5e50745e80cb11079786cde14c2c66aee45556aa9e9bb9dd08cbe0f97f9","appendText":{"explanation":"負五整體平方先消除符號得到二十五，再取非負主平方根五；一般規則是 √(a²)=|a|，不必保留原負號。","misconceptionTarget":"機械約掉平方與根號寫回負五，沒有遵守主平方根非負。"}},
+    {"questionId":"u11-s005-v005","expectedContentSha256":"0de1430547c59389f5e7a4869af450f11eb6dcf7cb78c0d89a066e7f56b85c37","appendText":{"explanation":"十七為正數，正 √17 與負 √17 平方都等於十七；方程要求全部實數解，故必須用 ± 同時表示。","misconceptionTarget":"看到根號記號便只寫非負主平方根，遺漏平方方程的負解。"}},
+    {"questionId":"u11-s005-v006","expectedContentSha256":"871a80f400149b6269f56b38059758e0db374905a5037202133bb2e98f54bc2b","appendText":{"explanation":"√(-4) 的被開方數直接為負，而任何實數平方皆非負，所以在實數範圍無意義；√((-2)²) 則先平方成正四。","misconceptionTarget":"未區分負號位於根號內或先被平方，誤認兩種寫法都無實數意義。"}},
+    {"questionId":"u11-s005-v007","expectedContentSha256":"a51c898a86615ac610b2f5f1ffc5c765483e44e30b4ebecad1a5b52d96b91697","appendText":{"explanation":"√(a²) 固定取非負值 |a|；當 a<0 時，與 a 等距的非負數是 -a，因此化簡結果不是 a 或 ±a。","misconceptionTarget":"不看 a<0 的條件就直接消去平方與根號，錯把結果寫成負的 a。"}},
+    {"questionId":"u11-s005-v008","expectedContentSha256":"b5617eb8a25c7ce0628f6384f531227c2df75502e13fdb25cbe1c0beaac0a879","appendText":{"explanation":"等式右邊七為非負，可將兩邊平方得到 x=49；回代 √49=7 成立，不會產生負四十九這個候選。","misconceptionTarget":"把『取平方根』與『平方回去』方向弄反，答七或正負四十九。"}},
+    {"questionId":"u11-s005-v009","expectedContentSha256":"18d8b0f9564fd4e183cb393971d8fbf4172618e6f0b3cfcb0d009172af42e33d","appendText":{"explanation":"t² 先把正負資訊消去，主平方根再取非負值；t≥0 時得 t，t<0 時得 -t，合併正是 |t|。","misconceptionTarget":"只以正數代入檢查，便誤認 √(t²)=t 對所有實數成立。"}},
+    {"questionId":"u11-s005-v010","expectedContentSha256":"cb4165934154cc0e494c2df9c2ace85dc8ffd6b7efeb23fd8a1fb40b69cb5bee","appendText":{"explanation":"根號按鍵實作的是主平方根函數，所以顯示非負的九；方程 x²=81 仍有正九與負九，兩件事不可混淆。","misconceptionTarget":"把計算機單一顯示值當成所有平方根的個數，宣稱負九是錯誤答案。"}},
+    {"questionId":"u11-s005-v011","expectedContentSha256":"baba4ac2c767f433748397887bc03ec3dfca852ff0fa7805f6fde429b9ec36fd","appendText":{"explanation":"零點零四是零點二的平方；誤差允許正負，故正零點二、負零點二都符合 e²=0.04，兩種方向皆須保留。","misconceptionTarget":"因誤差是實際量就只取正值，忽略題目明示可正可負。"}},
+    {"questionId":"u11-s005-v012","expectedContentSha256":"33c04cf0fb735426c98fc12fe298dd2435880a8564d4caa287251af59a692971","appendText":{"explanation":"方程的代數候選為 ±√50，但欄位要求邊長，負值不合語意；因此填非負的 √50，精確形式無須近似。","misconceptionTarget":"只看方程雙根便填正負兩值，未依邊長欄位排除負根。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u11-s005-cr001","expectedContentSha256":"59da4a200dbfde9fc35ebba5408c103edfd58f9512bfbd604093b06951d8089f","appendArray":{"fullCreditSolution":["根號記號 √49 是非負主平方根，因此單值為七；『49 的平方根』則是解 x²=49，正七與負七平方都等於四十九，故為 ±7。兩個問法一個是函數值、一個是全部解。"],"reasoningSteps":["分別用主平方根的非負定義與平方方程的全部解檢查，確認兩種答案形式不可互換。"]},"set":{"commonErrors":["把 √49 也寫成 ±7，忽略根號記號本身是單值非負。","把四十九的所有平方根只寫七，遺漏平方相同的負七。"]}},
+    {"questionId":"u11-s005-cr002","expectedContentSha256":"75bc9a9534588739d67446d3b3f1a7e9fa9de86b5c92bc99fbf1eca1890a3282","appendArray":{"fullCreditSolution":["一般而言 √(a²)=|a|，因主平方根必非負；題設 a<0，所以 |a|=-a，且 -a>0，正符合主平方根符號限制。若直接寫 a，結果反而是負數。"]},"set":{"commonErrors":["機械消去根號與平方直接寫 a，未檢查 a 為負。","把單值主平方根寫成 ±a，混淆函數值與平方方程解。"]}}
+  ],
+  "lectures":[{"lectureId":"u11-s005-lecture-r1","expectedContentSha256":"d6dd460b0a6da365869d543e4b850b22991307904d7886b2b94d329d49ab131b","set":{"workedExamples":[
+    {"exampleId":"L1","prompt":"計算√100。","solutionSteps":["主平方根非負。"],"answer":"10。","why":"根號記號表示非負主平方根，所以雖然正十與負十平方都為一百，√100 的單一值仍是十；只有在問全部平方根時才另列負十。"},
+    {"exampleId":"L2","prompt":"解x²=100。","solutionSteps":["正負10平方皆為100。"],"answer":"x=±10。","why":"平方方程要求所有使平方等於一百的實數，正十、負十都須保留；這與單值的 √100 不同，故使用 ± 將兩個解一起表示。"},
+    {"exampleId":"L3","prompt":"若t=-8，求√(t²)。","solutionSteps":["t²=64。","主平方根為8。"],"answer":"8。","why":"平方先將負八變成六十四，接著主平方根只能取非負八；因此 √(t²) 等於 |t|，當 t 為負數時結果是 -t，而不是原來的 t。"},
+    {"exampleId":"L4","prompt":"判斷√(x-3)有實數意義的條件。","solutionSteps":["被開方數需≥0。","x-3≥0。"],"answer":"x≥3。","why":"在本單元實數範圍，根號內必須非負；令 x-3≥0 後移項得 x≥3。端點三可用，因被開方數零的主平方根有定義。小於三則會使被開方數為負，須排除。"}
+  ]},"appendArray":{"conceptNarrative":["平方根記號與平方方程必須分開：√a 在 a≥0 時是唯一的非負主平方根，而 x²=a 在 a>0 時有 ±√a 兩個實數解。平方後再取主平方根得到的是絕對值 √(t²)=|t|，不能機械消去符號；若根號內含變數，須先令被開方數非負。實際量還要依邊長、速率等語意排除負值，並以回代平方檢查答案。"]}}],
+  "drawingSpecs":[],"textFiles":[]
+}

@@ -212,46 +212,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "把 -6、5/4、√25、√6 分類。",
-      "solutionSteps": [
-        "-6 是負整數，因此也是整數與有理數。",
-        "5/4 是分母不為 0 的整數比，是有理數但不是整數。",
-        "√25=5，是正整數與有理數。",
-        "6 不是完全平方數，√6 是無理數。"
-      ],
-      "answer": "-6：負整數／整數／有理數；5/4：有理數非整數；√25：正整數／整數／有理數；√6：無理數。"
+      "prompt": "把 −6、5/4、√25、√6 分類。",
+      "answer": "−6：負整數、整數、有理數；5/4：有理數但不是整數；√25：正整數、整數、有理數；√6：無理數。",
+      "why": "分類不能只看符號外形。−6 沒有分數部分，5/4 是分母不為零的整數比，√25 要先化成 5；而 6 不是完全平方數，所以 √6 才是無理數。"
     },
     {
-      "exampleId": "L2",
       "prompt": "說明 0.625 為什麼是有理數。",
-      "solutionSteps": [
-        "0.625 有三位小數，所以寫成 625/1000。",
-        "分子與分母同除以 125，得到 5/8。",
-        "5、8 是整數且 8≠0，所以 0.625 是有理數。"
-      ],
-      "answer": "0.625=5/8，因此是有理數。"
+      "answer": "0.625=625/1000=5/8，因此是有理數。",
+      "why": "有限小數有三位小數時，可先寫成分母為 1000 的分數。625/1000 同除以 125 得 5/8，分子與分母都是整數且分母不為零，正好符合有理數定義。"
     },
     {
-      "exampleId": "L3",
       "prompt": "判斷「所有含根號的數都是無理數」是否正確。",
-      "solutionSteps": [
-        "要否定「所有」，只需找到一個反例。",
-        "取 √121。因為 121=11²，所以 √121=11。",
-        "11 是整數與有理數，因此原敘述錯誤。"
-      ],
-      "answer": "錯誤；√121=11 是反例。"
+      "answer": "錯誤；√121=11 是反例。",
+      "why": "要否定「所有」只需提出一個確定的反例。121 是完全平方數，所以 √121 可化成整數 11；11 又可寫成 11/1，這證明含根號的數不一定是無理數。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "在 -2、0、3/2、0.6、√3 中，哪些是有理數？",
-      "solutionSteps": [
-        "-2 與 0 是整數，所以是有理數。",
-        "3/2 本身是整數比。",
-        "0.6=3/5。",
-        "√3 無法寫成兩整數之比。"
-      ],
-      "answer": "-2、0、3/2、0.6 是有理數；√3 是無理數。"
+      "prompt": "在 −2、0、3/2、0.6、√3 中，哪些是有理數？",
+      "answer": "−2、0、3/2、0.6 是有理數；√3 是無理數。",
+      "why": "−2 與 0 都能寫成分母為 1 的分數，3/2 本身是整數比，0.6 可化成 3/5；只有 √3 因 3 不是完全平方數而不能化成整數比。逐項實際改寫後，四個有理數與唯一的無理數便能清楚分開。"
     }
   ],
   "commonMistakes": [
@@ -343,7 +321,7 @@ export const LECTURE = {
     "symbolDefinitionsComplete": true,
     "reviewNote": "Every definition, edge case, worked example and counterexample was checked independently."
   },
-  "contentSha256": "689a11c5767db5e5ad31043fee4992eced0967ed1fbe0565cc86c7fcaddc939e",
+  "contentSha256": "9d39fa67ff7ae0b40c1926906565963c76e4f74d1f5f0aeb5c2b5d3f6d121ce4",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -430,7 +408,7 @@ export const QUESTIONS = [
       "√2"
     ],
     "answerIndex": 2,
-    "explanation": "有理數是可以寫成 p/q 的數，其中 p、q 是整數且 q≠0。-7/9 已經是兩整數之比；π、√11、√2 都是無理數，所以答案是 -7/9。",
+    "explanation": "依有理數定義，能寫成兩個整數之比且分母不為零的數才是有理數。−7/9 已符合這個形式；π、√11 與 √2 都不能寫成這種整數比，因此只有 −7/9 正確。",
     "steps": [
       "回想有理數的判準：能寫成兩整數之比。",
       "檢查四個選項是否符合 p/q 且分母不為 0。",
@@ -471,7 +449,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e424c81b486bd0599abbd85bf554ae2ff79148272000250af87b042803891821",
+    "contentSha256": "a49fca1ce95444ddf35cfdbc47261be43741fbc4fac0d0753793d9ef10a9c04d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -493,7 +471,7 @@ export const QUESTIONS = [
       "0 是整數也是有理數，但不是正整數或負整數"
     ],
     "answerIndex": 3,
-    "explanation": "0 屬於整數，也可寫成 0/1，因此是有理數；但正整數必須大於 0，負整數必須小於 0，所以 0 既不是正整數也不是負整數。",
+    "explanation": "整數包含負整數、0 與正整數，所以 0 是整數；又可把 0 寫成 0/1，分母不為零，因此也是有理數。不過 0 既不大於 0 也不小於 0，不能歸為正整數或負整數。",
     "steps": [
       "先確認 0 是否屬於整數：答案是是。",
       "把 0 寫成 0/1，可知它也是有理數。",
@@ -534,7 +512,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4bf0f291c6b21df0350fd6669341cc9a48a8154467c929c02d073cdbfb5d38bd",
+    "contentSha256": "a758a430f9f1f6a2a07493763cfe821c69b7d8dace3c56986d779f171e62c2df",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -619,7 +597,7 @@ export const QUESTIONS = [
       "只能說是實數，無法再分類"
     ],
     "answerIndex": 2,
-    "explanation": "因為 49=7²，所以 √49=7。7 是正整數，也可寫成 7/1，因此同時是有理數。判斷根號數前必須先化簡，不能只看根號符號。",
+    "explanation": "分類含根號的數要先化簡。因為 49=7²，所以 √49=7；7 大於 0 且沒有分數部分，是正整數，又能寫成 7/1，因此同時也是有理數，不能只看根號外形判成無理數。",
     "steps": [
       "先判斷 49 是否為完全平方數。",
       "√49=7。",
@@ -660,7 +638,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0f5557095178fd3a33d57af79e25a5abc067bcc0fbb1a322d50f63f1257e7f7d",
+    "contentSha256": "dfda79a7d2c015609af71492381e84b7f08903363f9342078c9838965916ecab",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -682,7 +660,7 @@ export const QUESTIONS = [
       "無法判斷，因為沒有寫完所有小數位"
     ],
     "answerIndex": 1,
-    "explanation": "無限小數不一定是無理數。只要小數部分按照固定週期循環，就能化成分數，因此 0.272727… 是有理數。事實上它等於 27/99=3/11。",
+    "explanation": "小數部分的 27 按固定週期持續重複，所以這是循環小數。它可精確化成 27/99，再約分為 3/11；既然能寫成分母不為零的整數比，0.272727… 就是有理數而不是整數。",
     "steps": [
       "辨認小數是否有固定循環節。",
       "循環節是 27，因此它是循環小數。",
@@ -723,7 +701,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a36a5f983a04cd7e980e490f72937dfc4537a4d9d14a31d94402db03c491fa22",
+    "contentSha256": "4bbe94777b1f3bde2354583435cee19f343c17ea6340bb3d446e81c73aabe905",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -745,7 +723,7 @@ export const QUESTIONS = [
       "√5、√16、1/7、-3"
     ],
     "answerIndex": 0,
-    "explanation": "第一組中，-5 與 0 是整數，3/8 是分數，√81=9，四者都能寫成兩整數之比。其餘各組分別含有 π、√2 或 √5，這些是無理數。",
+    "explanation": "第一組的 −5、0 都是整數，3/8 本身是整數比，√81 化簡為 9，因此四個數全是有理數。其餘三組分別含 π、√2 或 √5，任一個無理數就使整組不符合條件。",
     "steps": [
       "每組逐項檢查，不因某一項熟悉就提前作答。",
       "根號數先化簡：√81=9、√16=4。",
@@ -786,7 +764,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a6e94617d640c653e13f808260ef606276e5a4062de2737c88143b65f02cf474",
+    "contentSha256": "5f43375a32ab9a3536e809144bb9d3af0742b6cd5206a05280ff38c9009fee9b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -808,7 +786,7 @@ export const QUESTIONS = [
       "-11/4"
     ],
     "answerIndex": 3,
-    "explanation": "-11/4 是兩整數之比，所以是有理數；它等於 -2.75，並不是整數。6 雖是有理數，但同時也是整數；√7 與 π 都是無理數。",
+    "explanation": "題目要求同時符合有理數與不是整數兩個條件。−11/4 是分母不為零的整數比，且等於 −2.75，所以不是整數；6 雖是有理數卻也是整數，√7 與 π 則都是無理數。",
     "steps": [
       "題目有兩個條件：必須是有理數，而且不能是整數。",
       "排除無理數 √7 與 π。",
@@ -849,7 +827,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bb000fbb3e05132cbf06afd7285b50e8c7a92eedffed10c92b283f136c0bbd11",
+    "contentSha256": "b25255d1fec16a54c5b6f3fb9c9048e1673975c7fbca286070bab4bafff02d58",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -871,7 +849,7 @@ export const QUESTIONS = [
       "x 是無理數"
     ],
     "answerIndex": 1,
-    "explanation": "先算 √36=6，所以 x=(6-8)/2=-2/2=-1。-1 是負整數，也可寫成 -1/1，因此同時是有理數。",
+    "explanation": "先化簡 √36=6，再依運算順序算得 x=(6−8)/2=−2/2=−1。−1 小於 0 且沒有分數部分，所以是負整數；又能寫成 −1/1，因此 x 同時也是有理數。代回原算式後數值與符號都一致，不能因原式含根號便判為無理數。",
     "steps": [
       "先化簡 √36 得 6。",
       "依序計算括號與除法：x=(6-8)/2=-1。",
@@ -912,7 +890,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "89122892675bd0165fdd66c59f8b2300fb69276fc8a6cdeb3f9101967a8e025d",
+    "contentSha256": "329c18332422dbe1f507e73952654754bd3fa40b9aaf65ff4e8afedb180cd72c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -997,7 +975,7 @@ export const QUESTIONS = [
       "√9 公分"
     ],
     "answerIndex": 0,
-    "explanation": "規定允許的長度必須是有理數。1.25=5/4，7/4 已是分數，√9=3；√2 是無理數，不能精確改寫成整數或分數公分，因此不符合。",
+    "explanation": "圖面規定長度必須能精確改寫成整數或分數，也就是必須是有理數。1.25=5/4，7/4 已是分數，√9=3；只有 √2 是無理數，不能用整數或分數公分精確表示。",
     "steps": [
       "把圖面規定轉成「長度必須是有理數」。",
       "將有限小數與可化簡根號改寫。",
@@ -1038,7 +1016,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "「不得使用近似小數」使精確可分數化成為必要條件，直接影響可接受的尺寸。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3879dba9a55378b06e24f9c32e16ecda7d0253b0968c599c6d507f6044c5f435",
+    "contentSha256": "37ee47f5e66b40c52477470972e63b6856ca086228d21ed52694b4a2afc33eee",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1060,7 +1038,7 @@ export const QUESTIONS = [
       "√10"
     ],
     "answerIndex": 3,
-    "explanation": "(√64)/4=8/4=2；0.444…=4/9；(5-9)/2=-4/2=-2，前三者都是有理數。10 不是完全平方數，所以 √10 是無理數，最後不會被標記。",
+    "explanation": "依程式規則逐筆先化簡：(√64)/4=8/4=2，0.444… 是循環小數且等於 4/9，(5−9)/2=−2，前三筆都是有理數。10 不是完全平方數，所以 √10 是無理數，最後不會被標記。",
     "steps": [
       "依程式規則，先化簡每一個輸入式。",
       "將循環小數辨認為有理數。",
@@ -1101,7 +1079,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "程式的「先化簡再標記」流程決定判斷順序；若忽略此流程，會得到錯誤分類。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2912df841ad7fdd14416a0a895f0abf412f204a530bebc2260b332ecae1fca1d",
+    "contentSha256": "d9f49d6a63f7bfd9db6d46283b32a765a21b4b04932405e4742cdebaada7783c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1123,9 +1101,9 @@ export const CONSTRUCTED_RESPONSES = [
       "根號數須先化簡或說明根號內不是完全平方數。"
     ],
     "fullCreditSolution": [
-      "-4、0、√36 是整數；其中 √36=6。",
-      "0.75 與 0.181818… 是有理數但不是整數；0.75=3/4，0.181818…=18/99=2/11。",
-      "√7 是無理數，因為 7 不是完全平方數，√7 不能寫成兩整數之比。"
+      "先處理整數：−4 與 0 本來就是整數，√36=6，所以 √36 也應歸入整數類。",
+      "再處理非整數有理數：0.75=3/4，0.181818…=18/99=2/11，兩者都能化成分數但不是整數。",
+      "最後判斷 √7；因為 7 不是完全平方數，√7 不能寫成分母不為零的整數比，所以歸入無理數類。"
     ],
     "alternativeSolutions": [
       "循環小數可用設 x=0.181818…，再以 100x-x 求得 18/99。",
@@ -1166,7 +1144,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "ee0bd9f73d08674cbf29235127d4bd402c6a20122feb78cf542e123f1cd69106",
+    "contentSha256": "17d7e7aabcf29a535eb842d492116f5004199f1e35c46dd993dbacb2b4af5709",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {

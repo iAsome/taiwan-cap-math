@@ -132,44 +132,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "把 6,420,000 寫成科學記號。",
-      "solutionSteps": [
-        "小數點移到 6.42。",
-        "原小數點向左移 6 位。",
-        "乘 10⁶。"
-      ],
-      "answer": "6.42×10⁶。"
+      "answer": "6.42×10⁶。",
+      "why": "把原數的小數點向左移六位可得到係數 6.42，係數介於 1 與 10 之間。為維持原值需乘 10⁶，所以寫成 6.42×10⁶；向右移六位還原可得原數。"
     },
     {
-      "exampleId": "L2",
       "prompt": "把 0.00058 寫成科學記號。",
-      "solutionSteps": [
-        "第一個非零數字後為 5.8。",
-        "原小數點向右移 4 位。",
-        "使用 10⁻⁴。"
-      ],
-      "answer": "5.8×10⁻⁴。"
+      "answer": "5.8×10⁻⁴。",
+      "why": "將小數點向右移四位得到標準係數 5.8；原數小於 1，必須搭配負指數才保持數值，因此是 5.8×10⁻⁴。還原時向左移四位，可回到 0.00058。"
     },
     {
-      "exampleId": "L3",
       "prompt": "還原 3.07×10⁵。",
-      "solutionSteps": [
-        "10⁵ 使小數點向右移 5 位。",
-        "3.07→307000。",
-        "保留原有效數字。"
-      ],
-      "answer": "307000。"
+      "answer": "307000。",
+      "why": "乘以 10⁵ 等於把小數點向右移五位。從 3.07 依序補足位值後得到 307000；把結果再寫回科學記號時，小數點向左移五位又會得到 3.07×10⁵。"
     },
     {
-      "exampleId": "L4",
       "prompt": "計算 (2×10³)(4×10⁵)。",
-      "solutionSteps": [
-        "係數 2×4=8。",
-        "10³×10⁵=10⁸。",
-        "係數 8 已符合標準。"
-      ],
-      "answer": "8×10⁸。"
+      "answer": "8×10⁸。",
+      "why": "先分別處理係數與 10 的冪：2×4=8，10³×10⁵=10³⁺⁵=10⁸，合併為 8×10⁸。係數 8 已介於 1 與 10 之間，所以不需再調整指數；還原為一般數後，兩邊也同為八億。"
     }
   ],
   "commonMistakes": [
@@ -256,7 +236,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "b0ee4195fa1b6c36f4cc007636375d7b6707f3938148448b3260690373ef34b9",
+  "contentSha256": "0b3895f2d5f4a7be574d960c2572b774b7ace9cbb7d5b8cff8e4277c5ca45e28",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -280,7 +260,7 @@ export const QUESTIONS = [
       "0.52×10⁷"
     ],
     "answerIndex": 0,
-    "explanation": "小數點移到5.2，向左移6位，所以是5.2×10⁶。標準係數需介於1與10。",
+    "explanation": "將 5,200,000 的小數點向左移六位可得到 5.2，為保持原值需乘 10⁶，因此標準科學記號是 5.2×10⁶。雖然 52×10⁵ 數值相同，但係數 52 不符合 1≤|a|<10，第一個選項才同時符合數值與格式。",
     "steps": [
       "得到係數5.2。",
       "數移動6位。",
@@ -323,7 +303,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fb7deb85cf4df66165f3306c1465f3436bbbfb405dcc89344cd924a731962c5d",
+    "contentSha256": "0a07de69cfa36d3f8a2fb8f6c25db7443198a04cac8b9fbd1544649075bd9481",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -345,7 +325,7 @@ export const QUESTIONS = [
       "73×10⁻⁵"
     ],
     "answerIndex": 1,
-    "explanation": "把小數點移到7.3，向右移4位，因此乘10⁻⁴。",
+    "explanation": "把 0.00073 的小數點向右移四位可得到標準係數 7.3。原數小於 1，為保持數值要搭配負指數，所以寫成 7.3×10⁻⁴；還原時小數點向左移四位即回到原數。",
     "steps": [
       "係數7.3。",
       "小數點向右4位。",
@@ -360,7 +340,7 @@ export const QUESTIONS = [
       {
         "choice": "7.3×10⁻⁴",
         "truth": true,
-        "reason": "0.00073=7.3×10^-4。"
+        "reason": "0.00073=7.3×10⁻⁴。"
       },
       {
         "choice": "0.73×10⁻³",
@@ -373,7 +353,7 @@ export const QUESTIONS = [
         "reason": "數值相同但係數不標準。"
       }
     ],
-    "commonMistake": "小於1的數仍使用正指數。",
+    "commonMistake": "看到小數點移動四位便使用正四次方，忽略原數小於一應配負指數。",
     "concept": "小於1的非零正數用負指數。",
     "tags": [
       "數與量",
@@ -388,7 +368,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "59cf3e2f24cc0f1a0a8774e6babf25a1202012d78bb1f986055d3693e9de57b2",
+    "contentSha256": "9d3b4e7f52343917121c3947c33c29a3788d211270bc264c5fbce4e0d9491740",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -410,7 +390,7 @@ export const QUESTIONS = [
       "45×10⁻²"
     ],
     "answerIndex": 2,
-    "explanation": "標準係數需1≤|a|<10。只有4.08符合。",
+    "explanation": "標準科學記號的係數絕對值必須至少為 1 且小於 10。逐項檢查可知 12.5、45 太大，0.8 太小，只有 4.08 符合範圍，因此 4.08×10⁻³ 已是標準形式，故選第三項。",
     "steps": [
       "檢查每個係數。",
       "12.5與45太大，0.8太小。",
@@ -453,7 +433,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "43734d0225c25985b78ba06509a8bc8aead39395ba1733ae7247916240ee111d",
+    "contentSha256": "816101a8a287b6d31d747fc7005531ee6f7d8b43d1ab2a760f7b842392e682a6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -475,7 +455,7 @@ export const QUESTIONS = [
       "602,000"
     ],
     "answerIndex": 3,
-    "explanation": "10⁵使小數點向右移5位：6.02→602000。",
+    "explanation": "10⁵ 表示把 6.02 乘以 100,000，也就是將小數點向右移五位。依序補足位值後得到 602,000，所以第四個選項正確；不能只在原字串後任意補五個零。",
     "steps": [
       "正指數5。",
       "小數點右移5位。",
@@ -518,7 +498,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0eaa8357c1efedaa3b761fd91075431019e4836a0c1c2dfe9d9fdf502057d056",
+    "contentSha256": "d44adb22063b6b52950e0da481531bd3dd09f19629473a73d4c752b74825b61a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -540,7 +520,7 @@ export const QUESTIONS = [
       "資料不足"
     ],
     "answerIndex": 0,
-    "explanation": "正數科學記號先比指數；7>6，所以3.1×10⁷較大。",
+    "explanation": "兩個數都是正的標準科學記號，先比較 10 的指數即可判斷數量級。因為 7>6，3.1×10⁷ 至少是千萬量級，9.9×10⁶ 仍是百萬量級，所以前者較大，不應先只比係數。",
     "steps": [
       "兩數皆正。",
       "比較10的指數7與6。",
@@ -568,7 +548,7 @@ export const QUESTIONS = [
         "reason": "資料充分。"
       }
     ],
-    "commonMistake": "因9.9>3.1就選第二個。",
+    "commonMistake": "只比較係數九點九與三點一，忽略十的指數代表不同數量級。",
     "concept": "正科學記號比較先看數量級。",
     "tags": [
       "數與量",
@@ -583,7 +563,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "20716883157e97d9d4c70f287a4c885aed98bcbd6c21338fc4a60d1f4b73fb40",
+    "contentSha256": "ae27e1e596c72c5d773636512363de01181d9243f056287d8a67efb2cef0cbe0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -605,7 +585,7 @@ export const QUESTIONS = [
       "8×10²"
     ],
     "answerIndex": 1,
-    "explanation": "係數2×4=8，10³×10⁵=10⁸，所以8×10⁸。",
+    "explanation": "兩個科學記號相乘時，係數與 10 的冪分別處理。係數 2×4=8，同底數冪相乘得 10³×10⁵=10³⁺⁵=10⁸，因此結果是 8×10⁸，且係數 8 已符合標準範圍，第二個選項符合。",
     "steps": [
       "乘係數得8。",
       "指數3+5=8。",
@@ -620,7 +600,7 @@ export const QUESTIONS = [
       {
         "choice": "8×10⁸",
         "truth": true,
-        "reason": "8×10^(3+5)=8×10⁸。"
+        "reason": "係數相乘得 8，指數相加得 8，所以結果為 8×10⁸。"
       },
       {
         "choice": "6×10⁸",
@@ -633,7 +613,7 @@ export const QUESTIONS = [
         "reason": "指數相減。"
       }
     ],
-    "commonMistake": "把3與5相乘成15。",
+    "commonMistake": "把十的三次方與五次方相乘時誤將指數三與五相乘成十五。",
     "concept": "科學記號乘法使用同底數指數相加。",
     "tags": [
       "數與量",
@@ -648,7 +628,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "00b58716545a74bef18e615a6cc7bf93e5a07f1f6ca7bd0918c29c8673a0a5ea",
+    "contentSha256": "07118c3d5c36208fa99029de7a211afd9bc3094eec3877b18786dcb6086cce8e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -670,7 +650,7 @@ export const QUESTIONS = [
       "3×10⁴"
     ],
     "answerIndex": 2,
-    "explanation": "係數9÷3=3，指數8-2=6，所以3×10⁶。",
+    "explanation": "科學記號相除可分成係數相除與同底數冪相除。9÷3=3，10⁸÷10²=10⁸⁻²=10⁶，合併得 3×10⁶。指數應相減而不是用 8÷2，因此 3×10⁴ 不成立，第三個選項同時通過係數檢查。",
     "steps": [
       "係數除得3。",
       "指數相減得6。",
@@ -690,7 +670,7 @@ export const QUESTIONS = [
       {
         "choice": "3×10⁶",
         "truth": true,
-        "reason": "3×10^(8-2)=3×10⁶。"
+        "reason": "係數相除得 3，指數相減得 6，所以結果為 3×10⁶。"
       },
       {
         "choice": "3×10⁴",
@@ -698,7 +678,7 @@ export const QUESTIONS = [
         "reason": "指數減錯。"
       }
     ],
-    "commonMistake": "把8÷2當作新指數4。",
+    "commonMistake": "將同底數冪相除誤算成指數八除以二，因而把新指數寫成四。",
     "concept": "科學記號除法係數相除、指數相減。",
     "tags": [
       "數與量",
@@ -713,7 +693,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8ebf4b8969ebf2d3b277b639b7d3ab34deed6317b3daeef61300e9cc66dd7f9e",
+    "contentSha256": "4d1adde3205652302bb24e4bfc17cb29257e386764f00ff26150114d637d522f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -735,7 +715,7 @@ export const QUESTIONS = [
       "1.8×10⁵"
     ],
     "answerIndex": 3,
-    "explanation": "18=1.8×10，所以18×10⁴=1.8×10⁵。",
+    "explanation": "係數 18 不符合小於 10 的標準，因此先寫成 18=1.8×10。原式成為 1.8×10×10⁴=1.8×10⁵；係數縮小十倍時，指數必須增加 1 才能保持數值不變，這也說明第四個選項正確。",
     "steps": [
       "把18改成1.8×10。",
       "合併10¹與10⁴。",
@@ -778,7 +758,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f2c140155d0489da56a7533426537630dda6d6e21ec9f785eb7f54b8eabdb15c",
+    "contentSha256": "0c5b2bd22897a4c79cb223ac9ba39c987d9098edc5c23cef8c29493cfffc2370",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -800,7 +780,7 @@ export const QUESTIONS = [
       "0.45×10⁻⁶"
     ],
     "answerIndex": 0,
-    "explanation": "第一個非零數4移到個位，需把小數點向右移7位，所以4.5×10⁻⁷。",
+    "explanation": "把 0.00000045 的小數點向右移七位才得到標準係數 4.5。原數小於 1，所以搭配 10⁻⁷，寫成 4.5×10⁻⁷；還原時向左移七位，可確認前導零沒有少算。",
     "steps": [
       "定位第一個非零數。",
       "向右移7位得到4.5。",
@@ -810,7 +790,7 @@ export const QUESTIONS = [
       {
         "choice": "4.5×10⁻⁷",
         "truth": true,
-        "reason": "4.5×10^-7=0.00000045。"
+        "reason": "4.5×10⁻⁷=0.00000045。"
       },
       {
         "choice": "4.5×10⁻⁶",
@@ -828,7 +808,7 @@ export const QUESTIONS = [
         "reason": "係數非標準且指數不匹配。"
       }
     ],
-    "commonMistake": "數前導0時少算一位。",
+    "commonMistake": "計數小數點到第一個非零數字的位數時少算一格，將負七次方誤寫成負六次方。",
     "concept": "負指數位數由小數點移動格數決定。",
     "tags": [
       "數與量",
@@ -843,7 +823,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "028a35a34bb0bc0fa0a40272051658442d046100bc0f9cbfc6b01dfb95bdf969",
+    "contentSha256": "d2ea800be4b006658489ffabdac52cbefa8baf4ecd868fb7bf6ddba05335e751",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -865,7 +845,7 @@ export const QUESTIONS = [
       "0.235×10⁸ 人"
     ],
     "answerIndex": 1,
-    "explanation": "23,500,000=2.35×10⁷，且2.35符合標準係數。",
+    "explanation": "將 23,500,000 的小數點移到第一個非零數字 2 之後，係數為 2.35，共向左移七位，所以人口寫成 2.35×10⁷ 人。係數符合標準，還原也會得到原人口數。",
     "steps": [
       "小數點移到2.35。",
       "向左7位。",
@@ -908,7 +888,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "人口原始數字與標準形式要求共同決定係數和指數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "115c1b484fb943ec2886739a1de312123ce64ea2c03e733e7f98bcf1e01ef577",
+    "contentSha256": "85a754cc91dbf0c67cabd9d1fba88ed90f5f211e93b0054d3ae09498dc2a1b92",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -930,7 +910,7 @@ export const QUESTIONS = [
       "41×10⁻⁵ 公尺"
     ],
     "answerIndex": 2,
-    "explanation": "5×8.2×10⁻⁶=41×10⁻⁶=4.1×10⁻⁵公尺。",
+    "explanation": "五個微生物首尾相接，總長度是單一直徑的五倍：5×(8.2×10⁻⁶)=41×10⁻⁶ 公尺。再將係數 41 正規化為 4.1，指數增加 1，得到 4.1×10⁻⁵ 公尺，第三個選項才是正確標準形式。",
     "steps": [
       "係數5×8.2=41。",
       "保留10⁻⁶。",
@@ -950,7 +930,7 @@ export const QUESTIONS = [
       {
         "choice": "4.1×10⁻⁵ 公尺",
         "truth": true,
-        "reason": "5(8.2×10^-6)=4.1×10^-5公尺。"
+        "reason": "5×(8.2×10⁻⁶)=4.1×10⁻⁵ 公尺。"
       },
       {
         "choice": "41×10⁻⁵ 公尺",
@@ -958,7 +938,7 @@ export const QUESTIONS = [
         "reason": "數值大10倍。"
       }
     ],
-    "commonMistake": "算得41×10⁻⁶後，把係數改4.1卻仍保留10⁻⁶。",
+    "commonMistake": "將四十一改成四點一後仍保留負六次方，沒有同步把指數增加一。",
     "concept": "乘整數後需將係數重新正規化。",
     "tags": [
       "數與量",
@@ -973,7 +953,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "單個直徑、個數、首尾相接與單位都參與乘法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e37062f7205d3ec74185d5cd38873c5240845251d117fe1496657564ff464db3",
+    "contentSha256": "ab8454aa513ea53efa1c9970941b8715349c6705be5fcd475cb529cfcf808519",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -995,7 +975,7 @@ export const QUESTIONS = [
       "5.0×10⁹"
     ],
     "answerIndex": 3,
-    "explanation": "指數相同，可加係數：1.2+3.8=5.0，所以5.0×10⁹位元。",
+    "explanation": "兩站資料量都以 10⁹ 位元表示，數量級相同，因此直接相加係數：1.2+3.8=5.0，指數保持 9，合計為 5.0×10⁹ 位元。加法不使用同底數冪相乘的指數相加規則。",
     "steps": [
       "確認兩數同為10⁹。",
       "係數相加得5.0。",
@@ -1038,7 +1018,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩站資料量與「合計」要求決定使用加法而非乘法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b5b1ad9f928aea2efc580ae96493f6e78f158ac77840a1deb63bdd07b8ac8e80",
+    "contentSha256": "0e36c28c881f2b90d56cb9388ca5b2e78e02cd1a566e43009ee80a133b16d0b3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1059,8 +1039,10 @@ export const CONSTRUCTED_RESPONSES = [
       "寫出小數點移動方向與位數。"
     ],
     "fullCreditSolution": [
-      "78,400,000=7.84×10⁷；還原小數點右移7位。",
-      "0.000092=9.2×10⁻⁵；還原小數點左移5位。"
+      "78,400,000 的小數點向左移七位得到 7.84，因此寫成 7.84×10⁷。",
+      "還原時把 7.84 的小數點向右移七位，得到 78,400,000，確認位數正確。",
+      "0.000092 的小數點向右移五位得到 9.2，原數小於 1，所以寫成 9.2×10⁻⁵。",
+      "還原 9.2×10⁻⁵ 時小數點向左移五位，回到 0.000092；兩個係數都符合標準範圍。"
     ],
     "alternativeSolutions": [
       "可用乘法7.84×10,000,000與9.2÷100,000檢查。"
@@ -1087,16 +1069,16 @@ export const CONSTRUCTED_RESPONSES = [
       "9.2×10⁻⁵=0.000092，前導0需仔細計數。"
     ],
     "commonErrors": [
-      "寫78.4×10⁶。",
-      "小數用正指數。",
-      "係數0.92不標準。"
+      "將第一個數寫成 78.4×10⁶；雖然數值相同，但係數 78.4 不符合標準範圍。",
+      "把小於 1 的 0.000092 配上正五次方，造成還原後的數值方向相反。",
+      "只數前導零而少算小數點移動的一格，將第二個指數誤寫成負四。"
     ],
     "independentReview": {
       "derivedResult": "7.84×10⁷；9.2×10⁻⁵。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "af2278d9b683c40f83882fb1b1dec1ffab33c91dee6f147c967e1e02932ece32",
+    "contentSha256": "c4a1f53f83f016b97bf2c5063d23d3513cc3debf626552d0b7f4cafc51ef8009",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1115,9 +1097,10 @@ export const CONSTRUCTED_RESPONSES = [
       "最後標準化。"
     ],
     "fullCreditSolution": [
-      "除法：(6÷3)×10^(7-3)=2×10⁴。",
-      "加法：2×10⁴+4×10⁴=6×10⁴。",
-      "加法是在相同位值下加係數；指數相加只適用同底數冪相乘。"
+      "先做括號中的除法：(6×10⁷)÷(3×10³)=(6÷3)×10⁷⁻³=2×10⁴。",
+      "再與 4×10⁴ 相加；兩項的 10 的指數相同，可加係數得 (2+4)×10⁴=6×10⁴。",
+      "6×10⁴ 的係數已在 1 到 10 之間，所以這就是標準科學記號。",
+      "加法是在相同位值下合併係數；指數相加只適用同底數冪相乘，不能把本題加法寫成 10⁸。"
     ],
     "alternativeSolutions": [
       "可還原為20,000+40,000=60,000=6×10⁴。"
@@ -1144,16 +1127,16 @@ export const CONSTRUCTED_RESPONSES = [
       "兩項同為10⁴後才能直接加係數。"
     ],
     "commonErrors": [
-      "把2×10⁴+4×10⁴寫6×10⁸。",
-      "除法指數相除。",
-      "漏括號順序。"
+      "把 2×10⁴+4×10⁴ 的指數也相加，誤寫為 6×10⁸，混淆加法與乘法規則。",
+      "計算科學記號除法時用 7÷3 當指數，沒有套用同底數指數相減。",
+      "未先完成括號內除法就混合三項係數，破壞原式的運算順序。"
     ],
     "independentReview": {
       "derivedResult": "6×10⁴。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "11e06ea7277159da3e3fcb0e92b7bd9e253b9cdd58568a3d8c889c6b4dd2d237",
+    "contentSha256": "c9082b59fbb21f9822879ff9575d02a251f94b9045c2dc4121fad434a131c1a3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

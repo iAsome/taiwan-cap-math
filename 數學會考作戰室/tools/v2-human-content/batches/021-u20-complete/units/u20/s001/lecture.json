@@ -98,28 +98,35 @@
       "step": 4,
       "instruction": "逐步連到結論並反查是否跳步。",
       "check": "刪掉任何一步後，結論是否仍無理由地出現？"
+    },
+    {
+      "step": 5,
+      "instruction": "完成後由結論反向逐步核對理由與條件。",
+      "check": "是否有使用尚未證成的敘述、依圖估計或漏接的推論？"
     }
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "已知 AB＝AC，求證 ∠B＝∠C。",
+      "prompt": "已知AB＝AC，求證∠B＝∠C。",
       "solutionSteps": [
-        "AB＝AC 是已知。",
-        "因此 △ABC 為等腰三角形。",
-        "等腰三角形兩底角相等。"
+        "把AB＝AC列為已知，∠B＝∠C列為待證。",
+        "由兩腰相等辨認△ABC為等腰三角形。",
+        "使用等腰三角形兩底角相等得到結論。"
       ],
-      "answer": "∠B＝∠C。"
+      "answer": "∠B＝∠C。",
+      "why": "AB＝AC只提供證明起點，必須先由定義建立等腰三角形，才可使用底角性質；這樣每一步都有來源，也沒有把待證角相等提前當作前提。"
     },
     {
       "exampleId": "L2",
       "prompt": "圖上量得兩邊皆約4公分，能否證明等長？",
       "solutionSteps": [
-        "量測有誤差。",
-        "示意圖可能未按比例。",
-        "需等長標記或可推出等長的性質。"
+        "辨認資料只是示意圖上的尺量近似值。",
+        "列出繪圖、刻度與讀值可能造成的誤差。",
+        "要求等長刻痕、已知等式或幾何性質作正式依據。"
       ],
-      "answer": "不能只靠量測證明。"
+      "answer": "不能只靠量測證明。",
+      "why": "兩次量得約4公分只表示在有限精度下接近，不能推出精確等式；示意圖也可能未按比例，所以仍須由題設標記或已證性質支持等長。"
     }
   ],
   "commonMistakes": [
@@ -137,6 +144,11 @@
       "mistake": "列很多定理但不說用在哪裡。",
       "why": "定理未與敘述對應。",
       "correction": "每個新敘述後立即標理由。"
+    },
+    {
+      "mistake": "把近似量測寫成精確等式。",
+      "why": "尺量與圖面都有精度限制，數值相同不等於完成證明。",
+      "correction": "改用題設等長標記、定義、定理或已證的對應關係。"
     }
   ],
   "selfCheck": [
@@ -192,5 +204,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "19ae1698c04b56728fdd531748a2dda7e019e6e1e0346444ca1eec3d325c61be"
+  "contentSha256": "9d27b30e510513aae30fcebb4c82a91eb2015e101981313e102ae5efb5bbed26"
 }

@@ -61,7 +61,8 @@ export default {
       "圓心角與比例成正比，90°就是四分之一。",
       "同一圖內可以比較角度或比例；不同圖總數不同時，比例高不保證人數多。",
       "兩比例的直接差用百分點，倍數則用比例相除。",
-      "解讀調查圓形圖前，要確認圓代表全校、回覆者還是其他群體。"
+      "解讀調查圓形圖前，要確認圓代表全校、回覆者還是其他群體。",
+      "圓形圖以完整圓三百六十度代表全體百分之百，同一類別的圓心角、百分比與人數可依共同總數互相換算。由比例求人數要乘總數，由部分人數反推全體要除以比例；比較不同圓形圖時，不能只看扇形比例，必須先換成相同單位的實際人數。若圖表只涵蓋回覆者，該分母不能在缺乏代表性證據時直接外推到全校或其他母群。"
     ],
     "definitions": [
       {
@@ -126,18 +127,20 @@ export default {
         "id": "L1",
         "prompt": "90° 占多少？",
         "solution": [
-          "90÷360=1/4。"
+          "90÷360＝1/4。"
         ],
-        "answer": "25%。"
+        "answer": "25%。",
+        "why": "圓形圖以完整圓三百六十度代表全體百分之百，九十度是其中四分之一。用九十除三百六十得到零點二五，再換成百分之二十五；不能把角度數直接當成百分比。"
       },
       {
         "id": "L2",
         "prompt": "72° 類別有 18 人。",
         "solution": [
-          "72°=20%。",
-          "18÷0.2=90。"
+          "72°＝20%。",
+          "18÷0.2＝90。"
         ],
-        "answer": "全體 90 人。"
+        "answer": "全體 90 人。",
+        "why": "七十二度占整圓五分之一，表示十八人是全體五分之一。由部分反推全體要用十八除五分之一得到九十；再用九十乘五分之一回到十八，可驗證運算方向。"
       },
       {
         "id": "L3",
@@ -145,7 +148,8 @@ export default {
         "solution": [
           "甲 60 人，乙 75 人。"
         ],
-        "answer": "乙實際人數較多。"
+        "answer": "乙實際人數較多。",
+        "why": "兩個圓形圖的總人數不同，只比較百分之三十與二十五會忽略母體規模。分別乘回總數後，甲六十人、乙七十五人，才是在相同的人數單位上完成比較。"
       }
     ],
     "commonMistakes": [
@@ -224,7 +228,7 @@ export default {
       "decision": "pass"
     },
     "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
-    "contentSha256": "e3ad623301fbe124d6fc15685bf8ea3bf74e65b971ecb771d02d0a64d5b2596a"
+    "contentSha256": "15cf7a99956cb0d577587b7fb6351b9c90490801a41e7ce224605d1276affdab"
   },
   "mcQuestions": [
     {
@@ -252,10 +256,11 @@ export default {
         "derivedAnswer": "12 人",
         "trustStoredAnswer": false
       },
-      "explanation": "圓形圖百分比乘總數得到該類人數。",
+      "explanation": "圓形圖百分比乘總數得到該類人數。 百分之三十是全班四十人的零點三，四十乘零點三得十二人；十二除四十也回到百分之三十，故比例與人數一致。",
       "steps": [
         "把 30% 化為 0.3。",
-        "乘全班 40 人。"
+        "乘全班 40 人。",
+        "以十二人除四十人回算百分之三十，完成反向驗證。"
       ],
       "optionAnalysis": [
         {
@@ -279,7 +284,7 @@ export default {
           "reason": "30 是百分比數字，不是人數。"
         }
       ],
-      "misconceptionTarget": "把百分比數字直接當人數",
+      "misconceptionTarget": "把百分比數字直接當人數 把百分比中的三十直接當三十人，沒有乘上全班總數四十。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -297,7 +302,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "51f43d8932b30cf01df6eb41cdfff217cc1fbc043af0e32d17e88ac6b7948c8e"
+      "contentSha256": "98c2f741f5eaf0c9f25b05e96fcdd017b2934f936e7adc7964a9eade76ffc22f"
     },
     {
       "questionId": "u09-s005-v002",
@@ -324,10 +329,11 @@ export default {
         "derivedAnswer": "25%",
         "trustStoredAnswer": false
       },
-      "explanation": "整個圓 360° 對應 100%。",
+      "explanation": "整個圓 360° 對應 100%。 整圓三百六十度代表百分之百，九十度是四分之一圓，所以比例為四分之一即百分之二十五；角度九十不能直接當百分之九十。",
       "steps": [
         "用扇形角除以 360°。",
-        "轉成百分比。"
+        "轉成百分比。",
+        "用百分之二十五乘三百六十度回得九十度，核對圖形比例。"
       ],
       "optionAnalysis": [
         {
@@ -351,7 +357,7 @@ export default {
           "reason": "90° 不能直接當 90%。"
         }
       ],
-      "misconceptionTarget": "把角度數當百分比",
+      "misconceptionTarget": "把角度數當百分比 把扇形角九十度直接抄成百分之九十，沒有除以整圓三百六十度。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -369,7 +375,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "40472d08f4b68c59546ccbd848e9258340f10c315ed619ca8ec2fcd66298b295"
+      "contentSha256": "c830a0f6cfb20d3fb224d96712b0e4566d7c0bf44a733f5ab8f03ac9ceb8ca5f"
     },
     {
       "questionId": "u09-s005-v003",
@@ -396,10 +402,11 @@ export default {
         "derivedAnswer": "20%",
         "trustStoredAnswer": false
       },
-      "explanation": "完整圓形圖各類比例總和為 100%。",
+      "explanation": "完整圓形圖各類比例總和為 100%。 三個已知類別百分之三十五、二十五、二十合為百分之八十，完整圓尚缺百分之二十；加回後四類正好百分之百。",
       "steps": [
         "加總已知比例。",
-        "由 100% 扣除。"
+        "由 100% 扣除。",
+        "將其餘百分之二十加回已知百分之八十，驗算完整圓。"
       ],
       "optionAnalysis": [
         {
@@ -423,7 +430,7 @@ export default {
           "reason": "80% 是已知三類合計。"
         }
       ],
-      "misconceptionTarget": "把已知合計當剩餘",
+      "misconceptionTarget": "把已知合計當剩餘 把已知合計百分之八十當成其餘比例，沒有由百分之百扣除。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -441,7 +448,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "7e44f01dc99d468e0d03d86e2286aad9ff5fe3d394f8be20dbeabbd6077f9d76"
+      "contentSha256": "644fe11d9cc71f745d4bccc11dedbfaf6085a180da13703a12d4c7dde70eb9a7"
     },
     {
       "questionId": "u09-s005-v004",
@@ -468,7 +475,7 @@ export default {
         "derivedAnswer": "15 個百分點",
         "trustStoredAnswer": false
       },
-      "explanation": "比較兩個百分比的差通常用百分點。",
+      "explanation": "比較兩個百分比的差通常用百分點。 兩個占比直接相減得到四十減二十五等於十五個百分點；若問相對增加率才會再以百分之二十五為分母，兩種量名稱不同。",
       "steps": [
         "讀出兩比例。",
         "相減。",
@@ -496,7 +503,7 @@ export default {
           "reason": "40%-25%=15 個百分點。"
         }
       ],
-      "misconceptionTarget": "混淆百分點與百分比變化率",
+      "misconceptionTarget": "混淆百分點與百分比變化率 把十五個百分點寫成相對增加百分之十五，混淆差值與變化率。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -514,7 +521,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "fd54fc5ef2c6cd615708daecac961d005b5ae89f1381cb1d3144462398fc8579"
+      "contentSha256": "992ff9d50482a0ddc9d0006432afacbadeaf6fc0cb32bca4e905fadab2dd9a86"
     },
     {
       "questionId": "u09-s005-v005",
@@ -541,7 +548,7 @@ export default {
         "derivedAnswer": "90 人",
         "trustStoredAnswer": false
       },
-      "explanation": "由部分人數與扇形比例可反推全體。",
+      "explanation": "由部分人數與扇形比例可反推全體。 七十二度占整圓五分之一，十八人就是全體五分之一；以十八除五分之一得到九十人，九十乘五分之一再回到十八。",
       "steps": [
         "角度換成比例。",
         "用部分除以比例。",
@@ -569,7 +576,7 @@ export default {
           "reason": "360 是整圓角度，不是人數。"
         }
       ],
-      "misconceptionTarget": "把角度直接當人數",
+      "misconceptionTarget": "把角度直接當人數 把扇形七十二度當成七十二人，或用十八直接乘五分之一。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -587,7 +594,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "4367b718f561dc7413ad602f95d9816300c090d50a3f54cc9c6d8050c42fdcc9"
+      "contentSha256": "7727845e933496d6cb1f3324531dd77c671688a40409e2c7721361e3aee5f9d8"
     },
     {
       "questionId": "u09-s005-v006",
@@ -614,10 +621,11 @@ export default {
         "derivedAnswer": "4/3 倍",
         "trustStoredAnswer": false
       },
-      "explanation": "同一圓形圖內，各類人數與圓心角成正比。",
+      "explanation": "同一圓形圖內，各類人數與圓心角成正比。 同一圓中人數比例等於圓心角比例，甲比乙為一百四十四比一百零八，約分得到四比三，所以甲是乙的三分之四倍。",
       "steps": [
         "建立角度比。",
-        "約分 144:108。"
+        "約分 144:108。",
+        "以乙角一百零八乘三分之四回得甲角一百四十四，驗證倍數方向。"
       ],
       "optionAnalysis": [
         {
@@ -641,7 +649,7 @@ export default {
           "reason": "36 是角度差。"
         }
       ],
-      "misconceptionTarget": "把角度差當倍數",
+      "misconceptionTarget": "把角度差當倍數 用角度差三十六當倍數，或把甲乙次序顛倒成四分之三。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -659,7 +667,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "40d0f8a8412d93a0bad0e4098173db4d3784b58d98385645b53cee247558fdae"
+      "contentSha256": "94ac17272b87b5dea7e7ff872ebf31828c3b9504d893c501a2a5fcc25884447b"
     },
     {
       "questionId": "u09-s005-v007",
@@ -686,10 +694,11 @@ export default {
         "derivedAnswer": "33%",
         "trustStoredAnswer": false
       },
-      "explanation": "人數型圓形圖若百分比標示為精確值，對應人數必為整數。",
+      "explanation": "人數型圓形圖若百分比標示為精確值，對應人數必為整數。 精確百分比乘總數五十必須得到整數人；百分之三十三給十六點五人而不可能，其他三個比例分別給五、十二、二十三人。",
       "steps": [
         "將各百分比乘總數。",
-        "檢查是否為整數。"
+        "檢查是否為整數。",
+        "逐項列出對應人數，只有百分之三十三產生非整數十六點五。"
       ],
       "optionAnalysis": [
         {
@@ -713,7 +722,7 @@ export default {
           "reason": "50×46%=23 人可行。"
         }
       ],
-      "misconceptionTarget": "忽略人數不能是小數",
+      "misconceptionTarget": "忽略人數不能是小數 只檢查百分比介於零與一百，忽略人數資料必須是整數。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -731,7 +740,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "366a9615c39a1ab9f1db95464f800eda2784169558be0bf1af4efcffdb1a7c17"
+      "contentSha256": "86adb38a6dc5553321b52441932ab36bc6df4a3e530fa4c8875de096b5ccd92a"
     },
     {
       "questionId": "u09-s005-v008",
@@ -758,10 +767,11 @@ export default {
         "derivedAnswer": "乙校，75 人",
         "trustStoredAnswer": false
       },
-      "explanation": "比較不同總數的圓形圖，必須把比例轉為實際量。",
+      "explanation": "比較不同總數的圓形圖，必須把比例轉為實際量。 甲校百分之三十雖較高，但總數較小，換算為六十人；乙校百分之二十五乘三百為七十五人，因此乙校實際人數較多。",
       "steps": [
         "分別算兩校人數。",
-        "比較 60 與 75。"
+        "比較 60 與 75。",
+        "把六十與七十五分別除回各校總數，核對原百分比。"
       ],
       "optionAnalysis": [
         {
@@ -785,7 +795,7 @@ export default {
           "reason": "60 不等於 75。"
         }
       ],
-      "misconceptionTarget": "只比較百分比",
+      "misconceptionTarget": "只比較百分比 只比較三十與二十五兩個百分比，沒有把不同學校總人數納入。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -803,7 +813,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "a15eeab664e4ab3ca04ccb3b61b99cb3cf1f11e3dbbcec20433ce22ea621c6d7"
+      "contentSha256": "a07197cacb090eac46fccfaf3cbe21af0c93eede2e119cd191adc84fe713e235"
     },
     {
       "questionId": "u09-s005-v009",
@@ -830,7 +840,7 @@ export default {
         "derivedAnswer": "70°",
         "trustStoredAnswer": false
       },
-      "explanation": "同一圖可混合角度與百分比，但要先統一表示。",
+      "explanation": "同一圖可混合角度與百分比，但要先統一表示。 第四類百分之二十五先換成九十度，已知角合為一百二十加八十加九十等於二百九十，整圓剩餘七十度給第三類。",
       "steps": [
         "25% 換成 90°。",
         "加已知角度。",
@@ -858,7 +868,7 @@ export default {
           "reason": "第四類 25%=90°，所以 x=360-120-80-90=70。"
         }
       ],
-      "misconceptionTarget": "直接把 25 當 25°",
+      "misconceptionTarget": "直接把 25 當 25° 把百分之二十五直接當二十五度，導致角度與比例混在同一算式。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -876,7 +886,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "955d82fe835dd867926cba6e1623b496c6f10180db7e6abbcdcbfc95748fb0b0"
+      "contentSha256": "5b0e4d44d5a6508c5d7168308bab7aa0d3dbb87814e9c0cd3e7acdaca2f0cbff"
     },
     {
       "questionId": "u09-s005-v010",
@@ -903,7 +913,7 @@ export default {
         "derivedAnswer": "2,500 元",
         "trustStoredAnswer": false
       },
-      "explanation": "圓形圖預算調整要看比例差，不是看新比例全部。",
+      "explanation": "圓形圖預算調整要看比例差，不是看新比例全部。 教育比例只增加五個百分點，總支出五萬元固定，所以需轉移五萬元的百分之五即二千五百元；百分之二十是調整後總額，不是新增額。",
       "steps": [
         "求比例增加 5%。",
         "乘固定總支出。",
@@ -931,7 +941,7 @@ export default {
           "reason": "10,000 是提高後教育支出。"
         }
       ],
-      "misconceptionTarget": "把新教育總額當成需移金額",
+      "misconceptionTarget": "把新教育總額當成需移金額 直接算教育新總額一萬元當轉移金額，漏扣原本百分之十五。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -949,7 +959,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "103fdcd78fb9a0313ab069cf44f3d06cccd6b4f03b39307aba476816c4607353"
+      "contentSha256": "cfce3743952b32c69829073cb2e1eea703267d813e2eea27075caa9c71d9a759"
     },
     {
       "questionId": "u09-s005-v011",
@@ -976,7 +986,7 @@ export default {
         "derivedAnswer": "不合理，48% 尚未超過 50%",
         "trustStoredAnswer": false
       },
-      "explanation": "圓形圖敘述要區分『最高』、『領先』與『過半』。",
+      "explanation": "圓形圖敘述要區分『最高』、『領先』與『過半』。 過半必須嚴格超過百分之五十，甲目前百分之四十八只有四百八十人；領先乙一個百分點不等於跨過五百人的過半門檻。",
       "steps": [
         "確認過半門檻。",
         "比較 48% 與 50%。",
@@ -1004,7 +1014,7 @@ export default {
           "reason": "48% 小於 50%，領先不等於過半。"
         }
       ],
-      "misconceptionTarget": "把相對領先誤當絕對過半",
+      "misconceptionTarget": "把相對領先誤當絕對過半 把最高或領先一個百分點誤當已過半，沒有比較百分之五十門檻。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -1022,7 +1032,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "e6fa974c85533bc83a06861c86f268ff935ccbc59c4fedb8c9d14530ab355998"
+      "contentSha256": "3e543e71862127d01c210a1c670e807ffabce57ba8d2dd4f3fabbdd66d109eac"
     },
     {
       "questionId": "u09-s005-v012",
@@ -1049,7 +1059,7 @@ export default {
         "derivedAnswer": "可說回覆者中約 30 人選素食，不能直接斷定全校有 120 人",
         "trustStoredAnswer": false
       },
-      "explanation": "圓形圖的分母是回覆者，不一定是全校。",
+      "explanation": "圓形圖的分母是回覆者，不一定是全校。 圖的分母只有二百五十名回覆者，百分之十二約為三十人；未提供抽樣代表性時，不能把同一比例直接套到全校一千人。",
       "steps": [
         "辨認圖的母體是 250 名回覆者。",
         "計算 30 人。",
@@ -1077,7 +1087,7 @@ export default {
           "reason": "可對回覆者換算 30 人。"
         }
       ],
-      "misconceptionTarget": "忽略樣本範圍",
+      "misconceptionTarget": "忽略樣本範圍 忽略圖表母群只有回覆者，直接外推全校一定有一百二十人。",
       "prerequisiteCheck": {
         "skillIds": [
           "line-chart-text"
@@ -1095,7 +1105,7 @@ export default {
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8cc78e700327ff83937f13c7bf09db16d77f63b2261b8337e905b123ba89ae57"
+      "contentSha256": "c901a30ae7f031eac5c9f64b1e4ae2c23af0aa777ac528e1b2f58e82d46bc73c"
     }
   ],
   "constructedResponses": [
@@ -1118,7 +1128,8 @@ export default {
       "standardSolution": [
         "其他=100%-35%-25%-15%=25%。",
         "羽球=480×25%=120人；游泳=480×15%=72人。",
-        "籃球圓心角=360°×35%=126°。"
+        "籃球圓心角=360°×35%=126°。",
+        "檢查人數時，羽球一百二十加游泳七十二只是題目指定兩類；籃球角一百二十六度除三百六十也回到百分之三十五，百分比、人數與角度換算彼此一致。"
       ],
       "alternativeMethod": "可先求1%=4.8人，再乘25與15；角度也可用35/100×360。",
       "reasoningSteps": [
@@ -1163,7 +1174,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "0895b38358f9b0d0cd1edc974aca4505fba721cdf7c04fdb0bc5c64351564a46"
+      "contentSha256": "a620a6ea9619cc1407282613698658bb21fbee76707e4791f34a017b87b3ecfa",
+      "commonErrors": [
+        "把三個已知比例合計百分之七十五當作其他運動比例，沒有用百分之百扣除。",
+        "求籃球圓心角時以四百八十乘百分之三十五，算成人數而非用三百六十度換角。"
+      ]
     },
     {
       "questionId": "u09-s005-cr002",
@@ -1185,7 +1200,8 @@ export default {
         "新全體=30÷0.20=150人。",
         "原全體=150-30=120人。",
         "A原占144/360=40%，A人數=120×40%=48人。",
-        "新圖A比例=48/150=32%，新圓心角=360°×32%=115.2°。"
+        "新圖A比例=48/150=32%，新圓心角=360°×32%=115.2°。",
+        "新圖中 A 類四十八人占一百五十人的百分之三十二，對應一百一十五點二度；D 類三十人加原一百二十人也正好給新總數一百五十，前後總量一致。"
       ],
       "alternativeMethod": "A新角度也可用人數比例48:150直接算48/150×360=115.2°。",
       "reasoningSteps": [
@@ -1230,7 +1246,11 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementMarker": "REPLACE_MATCHING_LEGACY_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "1f9e8f4f37c27fb432ea6e50dcd171870e6859cce42544cbf8e60839162b6dde"
+      "contentSha256": "80b56824e2974309b1a2ca275b6215ff97feaa95abbabeb5b2ae7227f7ada268",
+      "commonErrors": [
+        "把新增 D 類三十人當成原全體的百分之二十，沒有先反推新全體一百五十。",
+        "保留 A 類舊百分之四十不變，忽略新增 D 後 A 人數不變但共同分母已增加。"
+      ]
     }
   ],
   "semanticReviews": [

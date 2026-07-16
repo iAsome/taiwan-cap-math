@@ -115,23 +115,28 @@ export const LECTURE = {
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "確認研究的是直線、線段還是射線。",
-      "check": "對頂角定理需要兩直線相交。"
+      "instruction": "確認研究的是完整直線、線段還是射線。",
+      "check": "對頂角與平行線性質都需要題目給足直線和位置條件。"
     },
     {
       "step": 2,
-      "instruction": "找出相對或相鄰位置。",
-      "check": "相對用相等；相鄰成一直線用和 180°。"
+      "instruction": "在交點找出相對位置或相鄰位置。",
+      "check": "相對的對頂角相等；相鄰且外側成一直線的兩角和為 180°。"
     },
     {
       "step": 3,
-      "instruction": "建立等式並求值。",
-      "check": "含未知數時可用 x 表示角度。"
+      "instruction": "遇到垂直或平行符號時先翻譯成可運算的角度關係。",
+      "check": "垂直交角為 90°；平行線角性質要配合截線位置。"
     },
     {
       "step": 4,
-      "instruction": "回到四角檢查。",
-      "check": "相對兩角相同，相鄰兩角相加 180°。"
+      "instruction": "建立等式求未知數，再代回所有相關角。",
+      "check": "對頂角須相等，鄰補角須相加為 180°。"
+    },
+    {
+      "step": 5,
+      "instruction": "用交點四角總和與題目位置做最後檢查。",
+      "check": "四角總和應為 360°，且不能把有限線段未交當成直線平行。"
     }
   ],
   "workedExamples": [
@@ -142,16 +147,18 @@ export const LECTURE = {
         "對頂角度數相等。",
         "所以相對角也是 47°。"
       ],
-      "answer": "47°。"
+      "answer": "47°。",
+      "why": "兩條直線相交形成的相對兩角，其兩邊分別互為反向射線，因此是對頂角並且度數相等。題目問的是相對角，不需要用 180° 相減；先辨清位置可避免把 133° 的鄰補角誤當答案。"
     },
     {
       "exampleId": "L2",
       "prompt": "同一交點的一個角為 128°，與它相鄰且成一直線的角為多少？",
       "solutionSteps": [
         "鄰補角和為 180°。",
-        "180°-128°=52°。"
+        "180°－128°＝52°。"
       ],
-      "answer": "52°。"
+      "answer": "52°。",
+      "why": "相鄰兩角共用一邊，而非共邊的兩側形成一直線，所以兩角合起來是 180° 的平角。未知角必須由 180° 扣除 128° 得 52°；若直接抄 128°，等於誤用了對頂角相等。"
     },
     {
       "exampleId": "L3",
@@ -160,17 +167,19 @@ export const LECTURE = {
         "垂直定義是相交成直角。",
         "四個角皆為 90°。"
       ],
-      "answer": "90°。"
+      "answer": "90°。",
+      "why": "垂直的定義直接保證其中一個交角是 90°，其對頂角同為 90°，相鄰角又與它互補，也只能是 90°。所以交點周圍四角全部是直角，而不是只保證圖上標出的一角。"
     },
     {
       "exampleId": "L4",
-      "prompt": "兩直線相交，一對對頂角分別為 (3x+5)° 與 (5x-35)°，求 x。",
+      "prompt": "兩直線相交，一對對頂角分別為 (3x＋5)° 與 (5x－35)°，求 x。",
       "solutionSteps": [
-        "對頂角相等，3x+5=5x-35。",
-        "40=2x，x=20。",
+        "對頂角相等，3x＋5＝5x－35。",
+        "40＝2x，x＝20。",
         "兩角皆為 65°。"
       ],
-      "answer": "x=20。"
+      "answer": "x＝20。",
+      "why": "因兩式代表一對對頂角，應建立相等關係而不是互補關係。解得 x＝20 後，兩式都得到 65°，確認度數相等且落在有效角度範圍；代回是辨認性質與代數運算都正確的必要檢查。"
     }
   ],
   "levelConnections": {
@@ -243,7 +252,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "27b5ecbef2116babc5739160c909819f986db8ac99b347dc664b18c3eade5e12"
+  "contentSha256": "a924ba0d7c6ca7528e16b3fd704d674a6a2d80afd3565ff169100aa943d86e96"
 };
 
 export const QUESTIONS = [
@@ -273,10 +282,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "符號直接表示垂直關係。",
-    "explanation": "l ⟂ m 表示兩直線相交成直角。",
+    "explanation": "符號 ⟂ 專門表示兩條直線互相垂直，也就是相交時形成 90° 的角。題目中的 l、m 是直線，所以 l ⟂ m 可直接讀作「直線 l 垂直於直線 m」，不表示平行、重合或長度相等。",
     "steps": [
-      "辨認符號 ⟂。",
-      "翻譯為垂直。"
+      "辨認關係符號是 ⟂，不是平行符號。",
+      "將 ⟂ 翻譯為兩直線相交成直角。",
+      "因此選直線 l 與直線 m 垂直。"
     ],
     "optionAnalysis": [
       {
@@ -300,7 +310,7 @@ export const QUESTIONS = [
         "reason": "直線沒有有限長度可比較。"
       }
     ],
-    "misconceptionTarget": "把 ⟂ 與 ∥ 混淆。",
+    "misconceptionTarget": "把垂直符號與平行符號混淆，或把無限延伸的直線拿來比較長度是否相等。",
     "prerequisiteCheck": "能辨認直線記號。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位。",
@@ -312,7 +322,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "2fa40508482c79616baef8ca616e932659d68c7506394140faceb4a03877dd8c"
+    "contentSha256": "ceecbcc5c32dc2e1d675b53282f5fee9c4ea29956c07ff922fb8ade715ce7c72"
   },
   {
     "questionId": "u08-s003-v002",
@@ -340,10 +350,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "垂直交角固定為 90°。",
-    "explanation": "兩直線垂直時四個交角皆為 90°。",
+    "explanation": "兩條直線互相垂直的定義，就是它們在交點形成直角，而直角的度數固定為 90°。交點周圍的四個角也都會是 90°，因此所問的任一交角皆為 90°。",
     "steps": [
-      "由垂直得到直角。",
-      "直角=90°。"
+      "由「互相垂直」判定交角是直角。",
+      "使用直角度數等於 90° 的定義。",
+      "所以交點處所問的一個角為 90°。"
     ],
     "optionAnalysis": [
       {
@@ -367,7 +378,7 @@ export const QUESTIONS = [
         "reason": "垂直的定義是相交形成直角，直角為 90°。"
       }
     ],
-    "misconceptionTarget": "把平角或一周角當成單一交角。",
+    "misconceptionTarget": "把交點周圍四角總和三百六十度當成單一角度，或把直角誤記為一百八十度。",
     "prerequisiteCheck": "能辨認直角為 90°。",
     "estimatedTimeSec": 90,
     "unitCheck": "答案以度（°）表示。",
@@ -379,7 +390,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "58d4b06cc11a383420165749a673182ee7cbc332c67a145121dc2f3e01158664"
+    "contentSha256": "d9c03aea31875e43c8b127da46cc17a95ca8354e3d4dbe9006cd63d85b444f0a"
   },
   {
     "questionId": "u08-s003-v003",
@@ -408,10 +419,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "對頂角不需相減，直接得到 38°。",
-    "explanation": "相對位置的兩角直接相等，因此另一角也是 38°。",
+    "explanation": "兩條直線相交時，位置相對的兩角是對頂角，對頂角度數相等。已知其中一角為 38°，其對頂角便直接是 38°；142° 是與它相鄰的補角，不是題目所問的對頂角。",
     "steps": [
-      "辨認為對頂角。",
-      "使用對頂角相等。"
+      "由題幹確認兩角是位置相對的對頂角。",
+      "套用對頂角度數相等的性質。",
+      "已知角為 38°，所以另一個對頂角也是 38°。"
     ],
     "optionAnalysis": [
       {
@@ -435,7 +447,7 @@ export const QUESTIONS = [
         "reason": "180° 是平角總量。"
       }
     ],
-    "misconceptionTarget": "把對頂角誤當鄰補角。",
+    "misconceptionTarget": "看到兩直線相交就一律用一百八十度相減，沒有先分清對頂角與相鄰角。",
     "prerequisiteCheck": "能使用角度與相交線概念。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位一致。",
@@ -447,7 +459,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "d4bdf99bc34f51069dee6d601c1e3d362eb099aed75954206ad7edf134e09ae5"
+    "contentSha256": "683743a43a451b690e21f111fb2caf1a9a2101098dcfd5669effce73d822e37e"
   },
   {
     "questionId": "u08-s003-v004",
@@ -476,10 +488,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "由平角總量扣除 124°，得 56°。",
-    "explanation": "題目描述鄰補角。",
+    "explanation": "題目明示兩角相鄰，且非共邊的兩側形成一直線，因此兩角組成平角，總和為 180°。未知角等於 180°－124°＝56°；圖形只協助辨認相鄰位置，計算以標示角度為準。",
     "steps": [
-      "寫 124+x=180。",
-      "x=56。"
+      "從文字與圖形確認所求角和 124° 角為鄰補角。",
+      "列式 124°＋x＝180°。",
+      "解得 x＝56°，並以 124°＋56°＝180° 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -503,7 +516,7 @@ export const QUESTIONS = [
         "reason": "以 360° 扣除一角得到的是其餘三角總和。"
       }
     ],
-    "misconceptionTarget": "把相鄰角誤當對頂角。",
+    "misconceptionTarget": "把相鄰角誤認為對頂角而直接抄一百二十四度，或依未按比例的圖猜角度。",
     "prerequisiteCheck": "能使用互補與相交直線關係。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度單位均為 °。",
@@ -515,7 +528,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "e37c73f3ffdd511d72edbc85765a4dfdf267e446a6c87ac2454b18d3d542ef4f"
+    "contentSha256": "1db0edfb2df5185d7638286d89c2089e1eff9a0b66d522f3c0ca7bc1a2e60bab"
   },
   {
     "questionId": "u08-s003-v005",
@@ -544,11 +557,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "解得 x=13，兩角皆 59°。",
-    "explanation": "建立相等方程。",
+    "explanation": "一對對頂角度數相等，所以列式 4x＋7＝6x－19。移項得 26＝2x，故 x＝13。代回兩個角度式都得到 59°，不但相等且介於 0°、180° 之間，符合對頂角條件，答案因此唯一。",
     "steps": [
-      "4x+7=6x−19。",
-      "26=2x。",
-      "x=13。"
+      "依對頂角相等列式 4x＋7＝6x－19。",
+      "整理得 2x＝26，因此 x＝13。",
+      "代回得兩角皆為 59°，確認等式與角度範圍都成立。"
     ],
     "optionAnalysis": [
       {
@@ -572,7 +585,7 @@ export const QUESTIONS = [
         "reason": "把兩角相加設為 180°。"
       }
     ],
-    "misconceptionTarget": "把對頂角誤設為和 180°。",
+    "misconceptionTarget": "把對頂角誤列成總和一百八十度，或移動負十九時符號處理錯誤。",
     "prerequisiteCheck": "能解一元一次方程與使用對頂角相等。",
     "estimatedTimeSec": 90,
     "unitCheck": "x 無單位；角度式代回後為 °。",
@@ -584,7 +597,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "535e0694eb589e38ef40d00a0cc818fe0cd186343137a374c308d740bac424e2"
+    "contentSha256": "80f2ca8ea44ed883615fcfea8dd1f7a6c2aee2b0c418e8eb47c81dfd95963ce8"
   },
   {
     "questionId": "u08-s003-v006",
@@ -613,11 +626,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代回得到 90°，符合垂直。",
-    "explanation": "用直角條件建立方程。",
+    "explanation": "直線 a、b 垂直，交點處每個角都是 90°，所以 3x＋6＝90。扣除 6 得 3x＝84，再除以 3 得 x＝28；代回 3×28＋6＝90，確實是直角，這個代數結果完整符合題目給定的垂直關係。",
     "steps": [
-      "3x+6=90。",
-      "3x=84。",
-      "x=28。"
+      "由 a ⟂ b 將標示角設為 90°。",
+      "列式 3x＋6＝90，解得 3x＝84。",
+      "得到 x＝28，再代回驗算角度正好為 90°。"
     ],
     "optionAnalysis": [
       {
@@ -641,7 +654,7 @@ export const QUESTIONS = [
         "reason": "垂直交角 90°，3x+6=90，3x=84，x=28。"
       }
     ],
-    "misconceptionTarget": "只看到 3x 而漏掉常數 6。",
+    "misconceptionTarget": "只看到代數式便直接解零，沒有先把垂直條件轉換成角度等於九十度。",
     "prerequisiteCheck": "能使用垂直為 90° 並解方程。",
     "estimatedTimeSec": 90,
     "unitCheck": "x 無單位，角度為 °。",
@@ -653,7 +666,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "30fde34e6887f992e2761edbdd315f77a87aeb887d558cec3afea0afcf83127a"
+    "contentSha256": "c7e855442db5cd76a5f5050ce76433cd1ddd4c9d84c238bb912e2d74bb0bf6ce"
   },
   {
     "questionId": "u08-s003-v007",
@@ -682,11 +695,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "四角交替為 73°、107°、73°、107°。",
-    "explanation": "相交直線形成兩對等角且相鄰互補。",
+    "explanation": "一個 73° 角的對頂角也為 73°；與它相鄰的角和它組成平角，所以是 180°－73°＝107°，而該角的對頂角也為 107°。四角因此交替為 73°、107°、73°、107°，總和正好構成完整一周。",
     "steps": [
-      "找對頂角 73°。",
-      "算鄰補角 107°。",
-      "另一對頂角也是 107°。"
+      "先用對頂角相等找到第二個 73° 角。",
+      "求鄰補角：180°－73°＝107°。",
+      "另一個對頂角同為 107°，四角總和 360° 可完成驗算。"
     ],
     "optionAnalysis": [
       {
@@ -710,7 +723,7 @@ export const QUESTIONS = [
         "reason": "同一交點四角須成兩對對頂角。"
       }
     ],
-    "misconceptionTarget": "只使用對頂相等而漏求相鄰角。",
+    "misconceptionTarget": "認為對頂角相等就把四個角全寫成七十三度，忽略相鄰兩角必須互補。",
     "prerequisiteCheck": "能同時使用對頂角與鄰補角。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度總和檢查為 360°。",
@@ -722,7 +735,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "cac9c95390aa71a21ee532c6d03c2c285cd23d6383e91db74b4fda5fa2f7c835"
+    "contentSha256": "1d10f6c54b68fd3bcf4811339ad84b8989a3d19c8d225306a80c6b65ca5ff3ac"
   },
   {
     "questionId": "u08-s003-v008",
@@ -751,10 +764,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "資訊不足，可能是兩個分離但同度數的角。",
-    "explanation": "相等是對頂角的結果，不是充分判定條件。",
+    "explanation": "對頂角除了共頂點且度數相等，還必須由兩條相交直線形成，使兩角的邊各自互為反向射線。只知道兩角相等又共頂點，仍可能是其他位置的兩個同度數角，因此不能斷定是對頂角。",
     "steps": [
-      "列出已知：相等、共頂點。",
-      "比較對頂角定義還缺反向射線位置。"
+      "整理已知只有兩角相等與共同頂點。",
+      "對照對頂角定義，還需要兩組角邊互為反向射線。",
+      "因缺少相對位置資訊，所以無法斷定，選「不能」。"
     ],
     "optionAnalysis": [
       {
@@ -778,7 +792,7 @@ export const QUESTIONS = [
         "reason": "對頂角正是相等的，但相等不足以反推位置。"
       }
     ],
-    "misconceptionTarget": "把定理『對頂角相等』錯當成逆命題。",
+    "misconceptionTarget": "把對頂角相等的單向性質錯當成逆命題，認為任何共頂點的相等角都是對頂角。",
     "prerequisiteCheck": "能理解對頂角位置定義。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題為邏輯判斷，不涉及單位。",
@@ -790,7 +804,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c4331d97649667430b2371e21c13193b118af616c2da944f4b72380d66ed2c38"
+    "contentSha256": "0adf8ce2ddce75119179e7dc9f75ddf39a4ca5756eaf41224f80a73e933099ca"
   },
   {
     "questionId": "u08-s003-v009",
@@ -820,11 +834,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "三個條件完整符合平行線定義。",
-    "explanation": "平行定義包含同平面、不同且不相交。",
+    "explanation": "在同一平面內，兩條不同直線若沒有交點，正符合平行線的定義。題目已排除重合，垂直則必須有交點，對頂角也要由相交直線形成，所以唯一可確定的是兩直線平行。",
     "steps": [
-      "確認同一平面。",
-      "確認不同直線。",
-      "確認沒有交點。"
+      "確認兩個物件是同一平面內的不同直線。",
+      "使用「沒有交點」排除垂直、相交及重合。",
+      "三項條件合併符合平行線定義，因此兩直線平行。"
     ],
     "optionAnalysis": [
       {
@@ -848,7 +862,7 @@ export const QUESTIONS = [
         "reason": "沒有交點就不形成交角。"
       }
     ],
-    "misconceptionTarget": "漏掉『同一平面』而把空間異面線也稱平行。",
+    "misconceptionTarget": "忽略「不同直線」與「同一平面」條件，或把沒有交點的情形誤判為重合。",
     "prerequisiteCheck": "能辨認平行定義。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題不涉及數值單位。",
@@ -860,7 +874,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "8758c3c24d2ff106d2277b6bcec134c051a68b7c697605695abb3c91de1246de"
+    "contentSha256": "91d6e79f85b0196092c15269fa6c7502115682c4b44cd9c79dcfbdd991a3d4a9"
   },
   {
     "questionId": "u08-s003-v010",
@@ -890,11 +904,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "以正東為 0°，垂直方向可為 28°+90°=118°；與正東較小夾角是 180°−118°=62°。",
-    "explanation": "正東作共同基準，兩道路較小夾角互餘。",
+    "explanation": "兩道路中心線垂直，方向角相差 90°。若第一條與正東夾 28°，第二條可視為方向角 28°＋90°＝118°；直線與正東的較小夾角是 180°－118°＝62°。取另一側方向計算也得到 62°。",
     "steps": [
-      "兩道路方向差 90°。",
-      "一條與正東 28°。",
-      "另一條較小方向角為 62°。"
+      "以正東方向為基準，記第一條道路的較小夾角為 28°。",
+      "垂直方向相差 90°，得到一個方向角 118°。",
+      "直線取與正東的較小夾角，180°－118°＝62°，且另一朝向同樣得到 62°。"
     ],
     "optionAnalysis": [
       {
@@ -918,7 +932,7 @@ export const QUESTIONS = [
         "reason": "垂直方向相差 90°，較小方向角為 90°−28°=62°。"
       }
     ],
-    "misconceptionTarget": "直接把道路間 90° 當成對基準的角。",
+    "misconceptionTarget": "只把二十八度加九十度得到一百一十八度，沒有把直線方向換算成與正東的較小夾角。",
     "prerequisiteCheck": "能使用互餘與垂直關係。",
     "estimatedTimeSec": 90,
     "unitCheck": "方向角以 ° 表示，求較小夾角限定在 0° 到 90°。",
@@ -930,7 +944,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "3009a6cf89420bd01d576c366526f46133773459ba19744be07cf00d28af5c19"
+    "contentSha256": "fa9e98b401533a9dcb64d418f13142ce5fee51d5e72c99e467824e0b7c826075"
   },
   {
     "questionId": "u08-s003-v011",
@@ -959,10 +973,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "90° 交角唯一支持垂直，不涉及長度。",
-    "explanation": "直角尺量測提供垂直判定的必要角度條件。",
+    "explanation": "量得板邊所在兩直線的交角為 90°，正好符合垂直的定義，所以可判定 a 與 b 垂直。這項角度量測沒有提供邊長資訊，也不可能同時表示平行或交角為 180°。",
     "steps": [
-      "讀取交角 90°。",
-      "依垂直定義判定。"
+      "讀取量測結果為交角 90°。",
+      "把 90° 辨認為直角，對照垂直定義。",
+      "因此唯一受量測支持的結論是 a 與 b 垂直。"
     ],
     "optionAnalysis": [
       {
@@ -986,7 +1001,7 @@ export const QUESTIONS = [
         "reason": "平角為 180°。"
       }
     ],
-    "misconceptionTarget": "由垂直錯推等長。",
+    "misconceptionTarget": "由九十度交角額外推論兩板邊等長，混淆方向關係與長度關係。",
     "prerequisiteCheck": "能辨認直角與垂直。",
     "estimatedTimeSec": 90,
     "unitCheck": "量測角度以 ° 表示。",
@@ -998,7 +1013,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "04ff8acb740d0c02b351f037e2c77670f65f4951ea9c4591e1feeba7480c787f"
+    "contentSha256": "c707b6bb83157af380ec38f9673fcc6dead30d629b760c5b3e43a4ad68374870"
   },
   {
     "questionId": "u08-s003-v012",
@@ -1027,10 +1042,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "資訊只能證明目前兩段未交，不能證明兩條完整直線永不相交。",
-    "explanation": "報告缺少延長方向或平行量測條件。",
+    "explanation": "平行要求兩條完整直線在同一平面內延伸後始終沒有交點。報告只觀察有限的 20 公尺線段，兩軌可能在可見範圍外逐漸接近並相交，因此目前未交不足以證明所在直線平行。",
     "steps": [
-      "區分可見線段與完整直線。",
-      "有限範圍未交仍可能延長相交。"
+      "區分報告觀察的是有限長度的軌道部分。",
+      "回憶平行線條件涉及完整直線延伸後沒有交點。",
+      "有限範圍未交仍可能延長後相交，所以資訊不足，不能確定平行。"
     ],
     "optionAnalysis": [
       {
@@ -1054,7 +1070,7 @@ export const QUESTIONS = [
         "reason": "平行線正是不相交。"
       }
     ],
-    "misconceptionTarget": "把線段未交直接當成直線平行。",
+    "misconceptionTarget": "把有限線段目前沒有相交直接當成完整直線平行，忽略延長後可能出現交點。",
     "prerequisiteCheck": "能區分線段與直線。",
     "estimatedTimeSec": 90,
     "unitCheck": "20 公尺只描述觀察範圍，不參與運算。",
@@ -1066,7 +1082,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "02f3aa22cc34c538e86cabf6c61c243f44bdc8a060b65aff28d72acefeb53885"
+    "contentSha256": "e9e512de6c279a99590a73b069731a69b3b9738f3402a1b546aad11be4553995"
   }
 ];
 
@@ -1090,9 +1106,10 @@ export const CONSTRUCTED_RESPONSES = [
       "說明對頂角相等與鄰補角和180°。"
     ],
     "standardSolution": [
-      "對頂角與已知角相等，所以為67°。",
-      "每個相鄰角與67°形成平角，所以是180°−67°=113°。",
-      "兩個相鄰角皆為113°，且它們彼此也是對頂角。"
+      "兩條直線相交時，對頂角度數相等，所以與已知 67° 角相對的角也是 67°。",
+      "每一個相鄰角都與 67° 角組成平角，因此相鄰角為 180°－67°＝113°。",
+      "兩個相鄰角彼此互為對頂角，所以它們同為 113°。",
+      "四角依序為 67°、113°、67°、113°，總和 360°，同時符合對頂角相等與鄰補角和 180°。"
     ],
     "alternativeMethods": [
       "可先用四角總和360°與對頂角相等，得到其餘兩角共226°且相等，各113°。"
@@ -1144,7 +1161,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "7bb36cee96152ed353540d21231d8a70a3dc3ab4828f46623872222f504cccf8"
+    "contentSha256": "e74b96e36641c82d33f9d99a9abe49a3182c118b57a8beb47f0a51d55aaa42a3"
   },
   {
     "questionId": "u08-s003-cr002",
@@ -1165,9 +1182,10 @@ export const CONSTRUCTED_RESPONSES = [
       "求兩角並驗算。"
     ],
     "standardSolution": [
-      "因 l∥m，同旁內角和180°。",
-      "(3x+12)+(5x−8)=180，得8x+4=180，x=22。",
-      "兩角為78°與102°，總和180°。"
+      "直線 l、m 平行且被同一截線所截，同旁內角互補，所以兩角總和為 180°。",
+      "列式 (3x＋12)＋(5x－8)＝180，合併得 8x＋4＝180，因此 8x＝176、x＝22。",
+      "代回第一角為 3×22＋12＝78°，第二角為 5×22－8＝102°。",
+      "78°＋102°＝180°，兩角皆為有效內角，驗證結果符合平行線的同旁內角性質。"
     ],
     "alternativeMethods": [
       "可由其中一角為180°減另一角建立 3x+12=180−(5x−8)，同樣得x=22。"
@@ -1220,7 +1238,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "20dd7c3756d2443347e56d9e4a06ecbf43b80e3a99858540049ea6da1d20dc8a"
+    "contentSha256": "3375f8738b8fea48bbc6584889fd3924388f2aa833edbfadd5c97d11f53b3ce1"
   }
 ];
 
@@ -1229,7 +1247,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v001",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "2fa40508482c79616baef8ca616e932659d68c7506394140faceb4a03877dd8c",
+    "contentSha256": "ceecbcc5c32dc2e1d675b53282f5fee9c4ea29956c07ff922fb8ade715ce7c72",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "依幾何記號，⊥ 唯一對應垂直。",
@@ -1264,7 +1282,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v002",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "58d4b06cc11a383420165749a673182ee7cbc332c67a145121dc2f3e01158664",
+    "contentSha256": "d9c03aea31875e43c8b127da46cc17a95ca8354e3d4dbe9006cd63d85b444f0a",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "依定義，任一交點角為 90°。",
@@ -1299,7 +1317,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v003",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "d4bdf99bc34f51069dee6d601c1e3d362eb099aed75954206ad7edf134e09ae5",
+    "contentSha256": "683743a43a451b690e21f111fb2caf1a9a2101098dcfd5669effce73d822e37e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重查相交直線四角，與 38° 相對的角同為 38°。",
@@ -1334,7 +1352,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v004",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "e37c73f3ffdd511d72edbc85765a4dfdf267e446a6c87ac2454b18d3d542ef4f",
+    "contentSha256": "1db0edfb2df5185d7638286d89c2089e1eff9a0b66d522f3c0ca7bc1a2e60bab",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "相鄰兩角的外側邊成一直線，所以兩角和為180°；未知角=180°−124°=56°。",
@@ -1369,7 +1387,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v005",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "535e0694eb589e38ef40d00a0cc818fe0cd186343137a374c308d740bac424e2",
+    "contentSha256": "80f2ca8ea44ed883615fcfea8dd1f7a6c2aee2b0c418e8eb47c81dfd95963ce8",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立代回：4×13+7=59，6×13−19=59。",
@@ -1404,7 +1422,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v006",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "30fde34e6887f992e2761edbdd315f77a87aeb887d558cec3afea0afcf83127a",
+    "contentSha256": "c7e855442db5cd76a5f5050ce76433cd1ddd4c9d84c238bb912e2d74bb0bf6ce",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由垂直定義獨立解 3x+6=90，得 28。",
@@ -1439,7 +1457,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v007",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "cac9c95390aa71a21ee532c6d03c2c285cd23d6383e91db74b4fda5fa2f7c835",
+    "contentSha256": "1d10f6c54b68fd3bcf4811339ad84b8989a3d19c8d225306a80c6b65ca5ff3ac",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "重建交點一周，兩對對頂角各相等，且 2×73+2×107=360。",
@@ -1474,7 +1492,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v008",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "c4331d97649667430b2371e21c13193b118af616c2da944f4b72380d66ed2c38",
+    "contentSha256": "0adf8ce2ddce75119179e7dc9f75ddf39a4ca5756eaf41224f80a73e933099ca",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "反例可取同頂點兩個不同方向的 40° 角，它們相等卻非對頂。",
@@ -1509,7 +1527,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v009",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "8758c3c24d2ff106d2277b6bcec134c051a68b7c697605695abb3c91de1246de",
+    "contentSha256": "91d6e79f85b0196092c15269fa6c7502115682c4b44cd9c79dcfbdd991a3d4a9",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "排除重合與空間異面後，無交點即平行。",
@@ -1544,7 +1562,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v010",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "3009a6cf89420bd01d576c366526f46133773459ba19744be07cf00d28af5c19",
+    "contentSha256": "fa9e98b401533a9dcb64d418f13142ce5fee51d5e72c99e467824e0b7c826075",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "方向線無箭頭，118° 與其反向 298° 表示同一路線，較小夾角為 62°。",
@@ -1579,7 +1597,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v011",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "04ff8acb740d0c02b351f037e2c77670f65f4951ea9c4591e1feeba7480c787f",
+    "contentSha256": "c707b6bb83157af380ec38f9673fcc6dead30d629b760c5b3e43a4ad68374870",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "由量測值直接判 a ⟂ b。",
@@ -1614,7 +1632,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s003-v012",
     "unitId": "u08",
     "skillId": "parallel-perpendicular-angles",
-    "contentSha256": "02f3aa22cc34c538e86cabf6c61c243f44bdc8a060b65aff28d72acefeb53885",
+    "contentSha256": "e9e512de6c279a99590a73b069731a69b3b9738f3402a1b546aad11be4553995",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "可構造兩條緩慢靠近的直線，在 20 公尺內未交、遠處相交，故不能確定。",

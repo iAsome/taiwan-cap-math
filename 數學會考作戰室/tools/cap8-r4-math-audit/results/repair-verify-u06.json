@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "unitId": "u06",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "007-u06-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-007-u06-complete\",\n  \"unitId\": \"u06\",\n  \"lockedSkillCount\": 12,\n  \"lectureCount\": 12,\n  \"mcQuestionCount\": 144,\n  \"constructedResponseCount\": 24,\n  \"semanticReviewCount\": 144,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 36,\n    \"standard\": 36,\n    \"advanced\": 36,\n    \"literacy\": 36\n  },\n  \"answerIndexCounts\": [\n    36,\n    36,\n    36,\n    36\n  ],\n  \"exactDuplicateScan\": \"PASS\",\n  \"numberNameUnitOnlyNearDuplicateScan\": \"PASS\",\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"traditionalChineseCheck\": \"PASS\",\n  \"legacyIsolationVerified\": true,\n  \"stagingPresent\": true,\n  \"stagingModuleCount\": 12,\n  \"sourceAndStagingParityVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-007-u06-complete",
+          "unitId": "u06",
+          "lockedSkillCount": 12,
+          "lectureCount": 12,
+          "mcQuestionCount": 144,
+          "constructedResponseCount": 24,
+          "semanticReviewCount": 144,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 36,
+            "standard": 36,
+            "advanced": 36,
+            "literacy": 36
+          },
+          "answerIndexCounts": [
+            36,
+            36,
+            36,
+            36
+          ],
+          "exactDuplicateScan": "PASS",
+          "numberNameUnitOnlyNearDuplicateScan": "PASS",
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "traditionalChineseCheck": "PASS",
+          "legacyIsolationVerified": true,
+          "stagingPresent": true,
+          "stagingModuleCount": 12,
+          "sourceAndStagingParityVerified": true,
+          "productionActivationAllowed": false
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"packageId\": \"math-v2-human-content-batch-007-u06-complete\",\n  \"unitId\": \"u06\",\n  \"lockedSkillCount\": 12,\n  \"lectureCount\": 12,\n  \"mcQuestionCount\": 144,\n  \"constructedResponseCount\": 24,\n  \"semanticReviewCount\": 144,\n  \"figureCount\": 3,\n  \"difficultyCounts\": {\n    \"basic\": 36,\n    \"standard\": 36,\n    \"advanced\": 36,\n    \"literacy\": 36\n  },\n  \"answerIndexCounts\": [\n    36,\n    36,\n    36,\n    36\n  ],\n  \"exactDuplicateScan\": \"PASS\",\n  \"numberNameUnitOnlyNearDuplicateScan\": \"PASS\",\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"svgGeometryAssertionsVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"traditionalChineseCheck\": \"PASS\",\n  \"legacyIsolationVerified\": true,\n  \"stagingPresent\": true,\n  \"stagingModuleCount\": 12,\n  \"sourceAndStagingParityVerified\": true,\n  \"productionActivationAllowed\": false\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "packageId": "math-v2-human-content-batch-007-u06-complete",
+          "unitId": "u06",
+          "lockedSkillCount": 12,
+          "lectureCount": 12,
+          "mcQuestionCount": 144,
+          "constructedResponseCount": 24,
+          "semanticReviewCount": 144,
+          "figureCount": 3,
+          "difficultyCounts": {
+            "basic": 36,
+            "standard": 36,
+            "advanced": 36,
+            "literacy": 36
+          },
+          "answerIndexCounts": [
+            36,
+            36,
+            36,
+            36
+          ],
+          "exactDuplicateScan": "PASS",
+          "numberNameUnitOnlyNearDuplicateScan": "PASS",
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "svgGeometryAssertionsVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "traditionalChineseCheck": "PASS",
+          "legacyIsolationVerified": true,
+          "stagingPresent": true,
+          "stagingModuleCount": 12,
+          "sourceAndStagingParityVerified": true,
+          "productionActivationAllowed": false
+        }
+      }
+    }
+  ]
+}

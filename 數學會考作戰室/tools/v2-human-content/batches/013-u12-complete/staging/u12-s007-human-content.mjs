@@ -48,14 +48,13 @@ export const LECTURE = {
     },
     {
       "symbol": "(A+B)(A-B)",
-      "meaning": "可快速算 A^2-B^2。"
+      "meaning": "可快速算 A²-B²。"
     }
   ],
   "conceptNarrative": [
-    "因式分解不只為了寫答案，也能把大數平方差變成兩個小乘數。",
-    "若式子寫成 n×整數式，可立即說明它可被 n 整除，但要注意 n 的取值與除數不可為 0。",
-    "完全平方能把接近整數的計算化成單一平方。",
-    "應用題要先指出乘積形式帶來的資訊，而不是只完成形式轉換。"
+    "因式分解在應用題中是揭露結構的工具，不只是一種答案格式。平方差可把兩個大平方的相減改成底數和乘底數差；完全平方可把接近整數的三項計算合成單一平方。選用公式前要核對所有項與符號，完成後可用估算或直接計算回查量級。",
+    "整除問題要把式子分成整數因子的乘積，再指出其中哪個因子提供所需的質因數。相鄰兩整數必有一個偶數，三個連續整數還必含一個三的倍數，因此三連續整數的乘積必為六的倍數。若要除以變數，必須先確認該變數不為零。",
+    "情境解讀必須把因式對回實際量。總座位數可分成排數乘每排席數，資料量可分成組數乘每組筆數；展開式中的各項不一定各自對應一個獨立量。約分問題還要保留原定義域，即使化簡後的式子表面上在被排除值也有數值。"
   ],
   "formalDefinitions": [
     {
@@ -65,14 +64,14 @@ export const LECTURE = {
   ],
   "formulas": [
     {
-      "formula": "A^2-B^2=(A+B)(A-B)",
+      "formula": "A²-B²=(A+B)(A-B)",
       "conditions": [
         "適用平方差"
       ],
       "meaning": "快速乘法。"
     },
     {
-      "formula": "n^2+kn=n(n+k)",
+      "formula": "n²+kn=n(n+k)",
       "conditions": [
         "n 為共同因式"
       ],
@@ -114,39 +113,47 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "63^2-37^2",
+      "prompt": "不用直接平方，計算 63²−37²。",
       "solutionSteps": [
-        "分解成 (63+37)(63-37)。",
-        "100×26=2600。"
+        "辨認平方差。",
+        "改寫為 (63+37)(63−37)。",
+        "計算 100×26=2600。"
       ],
-      "answer": "2600"
+      "answer": "2600",
+      "why": "底數和正好是一百，差只有二十六，因式分解把兩次四位數平方與減法改成簡單乘法；直接平方相減也會得到相同結果，可作驗算。"
     },
     {
       "exampleId": "L2",
-      "prompt": "98^2+4·98+4",
+      "prompt": "計算 98²+4×98+4。",
       "solutionSteps": [
-        "辨認 98^2+2·98·2+2^2。",
-        "等於 (98+2)^2=100^2。"
+        "把四倍九十八看成兩倍的九十八乘二。",
+        "三項符合 (98+2)²。",
+        "計算 100²=10000。"
       ],
-      "answer": "10000"
+      "answer": "10000",
+      "why": "首末項分別是九十八與二的平方，中間項正好是兩者乘積的兩倍，所以能合成和的完全平方；只因九十八接近一百而直接猜值不足以證明。"
     },
     {
       "exampleId": "L3",
-      "prompt": "n^2+7n",
+      "prompt": "說明整數 n 的式子 n²+7n 可被何數整除。",
       "solutionSteps": [
-        "提 n。",
-        "若 n 為整數，整式必為 n 的倍數。"
+        "提出共同因子 n。",
+        "得到 n(n+7)。",
+        "若 n 非零，除以 n 的商 n+7 為整數。"
       ],
-      "answer": "n(n+7)"
+      "answer": "可被非零整數 n 整除",
+      "why": "乘積形式直接顯示原式含有因子 n；常數七只出現在另一因子內，不能因此宣稱原式一定被七整除。若 n 為零，整除敘述的除數不合法，須另行排除。"
     },
     {
       "exampleId": "L4",
-      "prompt": "x^2-16 與 x-4 的關係",
+      "prompt": "化簡 (x²−16)÷(x−4)，其中 x≠4。",
       "solutionSteps": [
-        "乘積形式顯示 x-4 是因式。",
-        "但 x=4 時不能進一步把原式除以 x-4。"
+        "分子以平方差分成 (x−4)(x+4)。",
+        "由條件知共同因子不為零。",
+        "約去後得 x+4，並保留 x≠4。"
       ],
-      "answer": "x^2-16=(x-4)(x+4)"
+      "answer": "x+4，且 x≠4",
+      "why": "因式分解使共同因子可見，但只有非零因子才能約去。化簡式與原式只在共同定義域相等；不能因新式可代入四，就把原本分母為零的值補回。"
     }
   ],
   "difficultyConnections": {
@@ -236,7 +243,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "9b236f838ea71bd9052a0df2dde484a70491d45ceb34228b22358592c6b67557"
+  "contentSha256": "b1e478855c945c11fdd41c85ae61a11cc49eddb9d84bf1c0074b2a1b811a2b34"
 };
 
 export const QUESTIONS = [
@@ -264,7 +271,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "直接回查 529-289=240。",
-    "explanation": "23²-17²=(23+17)(23-17)=40×6=240。",
+    "explanation": "23²-17²=(23+17)(23-17)=40×6=240。 平方差公式把原本兩次平方與一次減法，改成底數和乘底數差；和為四十、差為六，所以乘積是二百四十。直接計算兩個平方所得差也相同，可作獨立驗算。",
     "steps": [
       "辨認平方差。",
       "計算和 40、差 6。",
@@ -292,7 +299,7 @@ export const QUESTIONS = [
         "reason": "40×6 少算一半。"
       }
     ],
-    "misconceptionTarget": "把平方差當差的平方。",
+    "misconceptionTarget": "把平方差當差的平方。 平方差是和乘差，不是先相減後再把差平方。",
     "prerequisiteCheck": "需會平方差公式。",
     "estimatedTimeSec": 60,
     "unitAndRoundingChecks": "純數值；結果精確。",
@@ -311,7 +318,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a9cacce4c3d366f27bf6a9547e111beee31302bdbb1fbf98d6172788311a783c"
+    "contentSha256": "b67cd92701ace8d2201d3ada52ccf77fb0a63777b63c49f3d699ea6079692b85"
   },
   {
     "questionId": "u12-s007-v002",
@@ -337,7 +344,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "直接算 9801+198+1=10000。",
-    "explanation": "式子是 (99+1)²=100²=10000。",
+    "explanation": "式子是 (99+1)²=100²=10000。 三項依序對應第一數的平方、兩數乘積的兩倍與第二數的平方，因此是和的完全平方。把九十九加一後再平方得到整百的平方；直接相加三項也得到相同數值。",
     "steps": [
       "對照 a²+2ab+b²。",
       "取 a=99、b=1。",
@@ -365,7 +372,7 @@ export const QUESTIONS = [
         "reason": "把完全平方誤當 100²-1。"
       }
     ],
-    "misconceptionTarget": "看見 99 就用 100²-1。",
+    "misconceptionTarget": "看見 99 就用 100²-1。 必須同時核對中間兩倍乘積，不能只因接近整百便猜答案。",
     "prerequisiteCheck": "需會完全平方公式。",
     "estimatedTimeSec": 60,
     "unitAndRoundingChecks": "無單位；精確。",
@@ -384,7 +391,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d98b944126571b197e3d3d855c49a268c40b897cb039f450b1f0cf787bf8d968"
+    "contentSha256": "d7e760389b1a32d805bd84f4276935240470ae6a86246499267f0e0667444787"
   },
   {
     "questionId": "u12-s007-v003",
@@ -410,7 +417,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "整除結論來自乘積形式，不需指定 n 的正負。",
-    "explanation": "n²+6n=n(n+6)，兩因子均為整數且 n 非零，所以除以 n 的商為 n+6。",
+    "explanation": "n²+6n=n(n+6)，兩因子均為整數且 n 非零，所以除以 n 的商為 n+6。 提出共同的整數後，原式成為該整數乘另一個整數的乘積；因題目已排除除數為零，所以用原式除以該整數，商就是另一因子且仍為整數。這只保證被該整數整除，不保證被六整除或結果為正。",
     "steps": [
       "提出 n。",
       "確認 n+6 為整數。",
@@ -438,7 +445,7 @@ export const QUESTIONS = [
         "reason": "乘積中含因數 n，另一因子 n+6 也是整數。"
       }
     ],
-    "misconceptionTarget": "看到常數 6 就誤判可被 6 整除。",
+    "misconceptionTarget": "看到常數 6 就誤判可被 6 整除。 整除結論來自提出的因子，不能看見常數六就判成六的倍數。",
     "prerequisiteCheck": "需會整數與整除。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "無實際單位；商精確。",
@@ -457,7 +464,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "9691edf18f47537f457e905fa7656799e20605ff615dee81abdc55b97010b9fc"
+    "contentSha256": "889710b84c15af433ef380a9b506603301cc8c3c7d29187d2b7b96e1270db94f"
   },
   {
     "questionId": "u12-s007-v004",
@@ -483,7 +490,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "2704-2304=400。",
-    "explanation": "52²-48²=100×4=400。",
+    "explanation": "52²-48²=100×4=400。 兩個底數相近時使用平方差最省算：和正好是一百，差為四，只需做整百乘四。若把差四再平方只會得到十六，漏掉和因子；直接平方相減則可驗算結果確為四百。",
     "steps": [
       "求和 100。",
       "求差 4。",
@@ -530,7 +537,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d68a4ab9fdd14e975e0e1ea17aed86ff4cda8556777fd716be646d924291917e"
+    "contentSha256": "0f33acdc61b8e49522e69a2cb7cfac241ea908c6f52263739ba673c89a0abdb4"
   },
   {
     "questionId": "u12-s007-v005",
@@ -556,7 +563,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "若再算得 5000，與 5625-625 相同。",
-    "explanation": "平方差直接給 A=(75+25)(75-25)=100×50。",
+    "explanation": "平方差直接給 A=(75+25)(75-25)=100×50。 平方差分解後的兩因子必須分別是原底數的和與差。七十五加二十五得到一百，七十五減二十五得到五十，所以最容易計算的乘積是整百乘五十，並可算得五千。",
     "steps": [
       "辨認平方差。",
       "分別算和、差。",
@@ -584,7 +591,7 @@ export const QUESTIONS = [
         "reason": "第二因式應為 50。"
       }
     ],
-    "misconceptionTarget": "把和與差混淆。",
+    "misconceptionTarget": "把和與差混淆。 和與差各自都是必要因子，不能重複使用差或漏掉其中一個。",
     "prerequisiteCheck": "需會平方差。",
     "estimatedTimeSec": 75,
     "unitAndRoundingChecks": "無單位；精確。",
@@ -603,7 +610,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c7e0c4fdb7e7f179967f6bf77e4342664816faee995168df64dea3d164ff22ed"
+    "contentSha256": "7cf7ff648e68cd29d8ce962177839ea4fdf26257709aff5922cb9c4d7e510db8"
   },
   {
     "questionId": "u12-s007-v006",
@@ -629,7 +636,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "例如 k 奇則 k-1 偶；k 偶則 k 本身偶，涵蓋所有整數。",
-    "explanation": "k²-k=k(k-1)，k 與 k-1 相鄰，其中必有一個偶數。",
+    "explanation": "k²-k=k(k-1)，k 與 k-1 相鄰，其中必有一個偶數。 提出共同整數後得到相鄰兩整數的乘積。任一整數若為偶數，第一因子已含二；若為奇數，前一個整數必為偶數，所以第二因子含二。兩種情形涵蓋所有整數，乘積必為偶數。",
     "steps": [
       "提出 k。",
       "辨認兩因子相鄰。",
@@ -676,7 +683,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d77ebbcd842909df0569bd7ff8ad85bf5cef0f32f4b6ec7869f5519c34d1079a"
+    "contentSha256": "2d644526424d9b004b4912912d23826148b8da24aa80fcfe42e4e26e05d274ee"
   },
   {
     "questionId": "u12-s007-v007",
@@ -702,7 +709,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開 20(x-y) 在 x+y=20 的條件下等於原式。",
-    "explanation": "x²-y²=(x+y)(x-y)=20(x-y)。",
+    "explanation": "x²-y²=(x+y)(x-y)=20(x-y)。 平方差可分成兩變數和與兩變數差的乘積，題目已給和為二十，故直接代入第一因子，留下二十乘差。若把差平方或再使用和，展開都不會還原原平方差。",
     "steps": [
       "套平方差。",
       "代入已知和 20。",
@@ -730,7 +737,7 @@ export const QUESTIONS = [
         "reason": "x²-y²=(x+y)(x-y)，且 x+y=20。"
       }
     ],
-    "misconceptionTarget": "把平方差當差平方。",
+    "misconceptionTarget": "把平方差當差平方。 平方差需保留和、差兩個不同因子，不是差的平方。",
     "prerequisiteCheck": "需會代入條件與平方差。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位；若 x、y 有同一單位，兩邊皆平方單位。",
@@ -749,7 +756,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "36c9397003137475e0d486c74a4181b6ddcae4340f5c74ddd2fe1508a6d332fe"
+    "contentSha256": "fd9e48fdad3ca06139b0c707941b6e8176ffb40bfcf942c20da4e0047e6a6554"
   },
   {
     "questionId": "u12-s007-v008",
@@ -775,7 +782,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "因此乘積同時含因數 2 與 3，必為 6 的倍數。",
-    "explanation": "n³+3n²+2n=n(n²+3n+2)=n(n+1)(n+2)。",
+    "explanation": "n³+3n²+2n=n(n²+3n+2)=n(n+1)(n+2)。 先提出共同整數，再將括號內二次三項式分成相鄰的兩個一次因式，便得到三個連續正整數的乘積。任三連續整數至少含一個偶數且含一個三的倍數，所以乘積同時含因數二與三。",
     "steps": [
       "提出 n。",
       "分解二次三項式。",
@@ -822,7 +829,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b977121f2495840b5d81b10042d82a8d7f9910ae3cd35429bcc4d1bb20eed9d0"
+    "contentSha256": "9b1e296206ab2b42d36055cd77c6dd8dd3803c742c04ee6cdc8c7090547fe288"
   },
   {
     "questionId": "u12-s007-v009",
@@ -848,7 +855,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "代數結果在原定義域 x≠4 上成立。",
-    "explanation": "分子分解為 (x-4)(x+4)，因 x-4≠0，可約成 x+4。",
+    "explanation": "分子分解為 (x-4)(x+4)，因 x-4≠0，可約成 x+4。 分子先用平方差寫成差因式乘和因式。題設排除未知數等於四，確保共同差因式不為零，才可約去並留下和因式。化簡式只在原本定義域內等值，不能據此補回被排除的值。",
     "steps": [
       "先因式分解分子。",
       "檢查 x≠4。",
@@ -895,7 +902,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ec3c8a415356b0b7f727d60df6318ab203d55a02073c50727dea08b715f61c0d"
+    "contentSha256": "04841046d1478c7a2d2e8127d1831ea0a42d65c5d67667efb672021eb0dd54aa"
   },
   {
     "questionId": "u12-s007-v010",
@@ -921,7 +928,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "直接平方回查 10201-9801=400。",
-    "explanation": "平方差轉成 200×2=400。",
+    "explanation": "平方差轉成 200×2=400。 兩批數量本身是平方數，所求仍是這兩個數量的差。平方差分解後，底數和為二百、底數差為二，乘得四百；答案要保留張數單位，不能把底數差二誤當海報差。",
     "steps": [
       "辨認兩批數量是平方數。",
       "算和 200、差 2。",
@@ -949,7 +956,7 @@ export const QUESTIONS = [
         "reason": "把和與差相加。"
       }
     ],
-    "misconceptionTarget": "把數量差誤當邊長差。",
+    "misconceptionTarget": "把數量差誤當邊長差。 情境中的數量是兩個平方值，其差不等於底數相差二。",
     "prerequisiteCheck": "需會平方差。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "答案單位張；整數精確。",
@@ -968,7 +975,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "f39bb6d5f52ecc122ce3786c58a057e84923d9cef83145201abc601750407bbd"
+    "contentSha256": "b17ce1d2d28cb153efcfb720a7f5c038fd8f02a5be55051b7f878a5451290832"
   },
   {
     "questionId": "u12-s007-v011",
@@ -994,7 +1001,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "乘回得到總座位數。",
-    "explanation": "n²+5n=n(n+5)，兩因式正好對應排數與每排席數。",
+    "explanation": "n²+5n=n(n+5)，兩因式正好對應排數與每排席數。 把總數提出共同的排數後，兩因子分別是排數與每排席數，乘回即為長方形排列的總座位數。平方項與一次項只是展開後的兩部分，並不是題目中兩個可直接相乘的實際量。",
     "steps": [
       "提出 n。",
       "將兩因式對照題意。",
@@ -1022,7 +1029,7 @@ export const QUESTIONS = [
         "reason": "總數=排數×每排席數。"
       }
     ],
-    "misconceptionTarget": "只做形式分解，未解讀因式。",
+    "misconceptionTarget": "只做形式分解，未解讀因式。 乘積兩因子要回到排數與每排席數，不能只解讀展開項。",
     "prerequisiteCheck": "需知道乘法計數原理。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "兩因式皆為無單位計數，乘積為席；無近似。",
@@ -1041,7 +1048,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c5b77e97f19ffbc723c725e2057b55dfa288490f4fa0847901c91356f2d9c5dd"
+    "contentSha256": "45b7f2251244b0204bcd839d3721536fcd44118174aa3c1cb3a9ad359926c934"
   },
   {
     "questionId": "u12-s007-v012",
@@ -1067,7 +1074,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "乘回即原處理量，分組均為整數。",
-    "explanation": "m²+7m=m(m+7)，可解讀為 m 組、每組 m+7 筆。",
+    "explanation": "m²+7m=m(m+7)，可解讀為 m 組、每組 m+7 筆。 提出正整數分組數後，另一因子仍是整數且代表每組筆數，因此乘積可直接解讀為若干組、每組若干筆。常數七只是每組比基準多的筆數，原式並不一定含因數七，也不一定是平方數。",
     "steps": [
       "提出 m。",
       "利用 m 正整數確認分組數。",
@@ -1095,7 +1102,7 @@ export const QUESTIONS = [
         "reason": "m(m+7) 一般不是平方。"
       }
     ],
-    "misconceptionTarget": "看到常數 7 就宣稱 7 的倍數。",
+    "misconceptionTarget": "看到常數 7 就宣稱 7 的倍數。 提出的因子是分組依據，式中出現七不代表總量必被七整除。",
     "prerequisiteCheck": "需理解整數分組。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "單位筆；m 與 m+7 是計數，無近似。",
@@ -1114,7 +1121,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c58632d6bfe408839afc763b68a67536073913fefb05644284893e3c0006f8b0"
+    "contentSha256": "3886def6cedd5d8e5da30271af649e01fff2dd15a3de153ff60325d2189445e8"
   }
 ];
 
@@ -1138,13 +1145,16 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "103²-97²=(103+97)(103-97)。",
       "=200×6=1200。",
-      "原本兩個四位數平方改成整百乘單位數。"
+      "原本兩個四位數平方改成整百乘單位數。",
+      "平方差公式把兩個三位數的平方與相減，改成底數的和乘底數的差。和是整百、差只有六，因此只做二百乘六即可得到一千二百；若直接把差六平方會漏掉和因子。"
     ],
     "alternativeSolutions": [
       "可直接平方回查：10609-9409=1200，但不能取代主要因式分解過程。"
     ],
     "reasoningSteps": [
-      "公式把兩次平方與一次減法改為兩次簡單加減與一次乘法。"
+      "公式把兩次平方與一次減法改為兩次簡單加減與一次乘法。",
+      "先確認兩項都是平方且以減號連接，才能使用和乘差。",
+      "用直接平方的末兩位或估算量級回查一千二百合理。"
     ],
     "rubric": [
       {
@@ -1176,7 +1186,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只答 1200 無過程最高 1 分。",
     "commonErrors": [
       "把平方差當差平方 36。",
-      "103+97 算成 210。"
+      "103+97 算成 210。",
+      "只算兩底數相差六就當成答案，遺漏平方差的和因子。"
     ],
     "independentReview": {
       "derivedResult": "1200。",
@@ -1186,7 +1197,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a9212bd8ef9e63b0c9a6e6a8bfc7bb85e28bbede5c3adc096b381678005cd3f6"
+    "contentSha256": "62b245faddb1b394504583568f1adfcca36bdc2d2988433c54d583252fa71838"
   },
   {
     "questionId": "u12-s007-cr002",
@@ -1207,14 +1218,16 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "n³-n=n(n²-1)=n(n-1)(n+1)。",
       "n-1、n、n+1 是三個連續整數。",
-      "三個連續整數中至少一個為偶數，且恰有一個是 3 的倍數，因此乘積含因數 2 與 3，是 6 的倍數。"
+      "三個連續整數中至少一個為偶數，且恰有一個是 3 的倍數，因此乘積含因數 2 與 3，是 6 的倍數。",
+      "此論證對負整數、零與正整數都成立，因連續性不受整體平移或正負影響；乘積中可分別找到因數二與因數三，所以必含因數六，不需要假設各因子本身都是六的倍數。"
     ],
     "alternativeSolutions": [
       "可依 n 除以 3 的餘數分類，再配合奇偶；但仍需先寫出三連續因式。"
     ],
     "reasoningSteps": [
       "平方差完成第二層分解。",
-      "連續性提供整除資訊。"
+      "連續性提供整除資訊。",
+      "因二與三互質，乘積同時含這兩個因數便可斷定能被六整除。"
     ],
     "rubric": [
       {
@@ -1256,7 +1269,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "d7727d72dcf3419aa86e58bb4d2aee6f9d8dd059896a7f2c8369163d246ec69d"
+    "contentSha256": "1afc288ca80fb8dafc02d36fb15138888269ba6f616f3f5a074250e0ea5f2458"
   }
 ];
 
@@ -1265,7 +1278,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v001",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "a9cacce4c3d366f27bf6a9547e111beee31302bdbb1fbf98d6172788311a783c",
+    "contentSha256": "b67cd92701ace8d2201d3ada52ccf77fb0a63777b63c49f3d699ea6079692b85",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "直接回查 529-289=240。",
     "derivedAnswer": "240",
@@ -1299,7 +1312,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v002",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "d98b944126571b197e3d3d855c49a268c40b897cb039f450b1f0cf787bf8d968",
+    "contentSha256": "d7e760389b1a32d805bd84f4276935240470ae6a86246499267f0e0667444787",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "直接算 9801+198+1=10000。",
     "derivedAnswer": "10000",
@@ -1333,7 +1346,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v003",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "9691edf18f47537f457e905fa7656799e20605ff615dee81abdc55b97010b9fc",
+    "contentSha256": "889710b84c15af433ef380a9b506603301cc8c3c7d29187d2b7b96e1270db94f",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "整除結論來自乘積形式，不需指定 n 的正負。",
     "derivedAnswer": "n²+6n 可被 n 整除",
@@ -1367,7 +1380,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v004",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "d68a4ab9fdd14e975e0e1ea17aed86ff4cda8556777fd716be646d924291917e",
+    "contentSha256": "0f33acdc61b8e49522e69a2cb7cfac241ea908c6f52263739ba673c89a0abdb4",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "2704-2304=400。",
     "derivedAnswer": "400",
@@ -1401,7 +1414,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v005",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "c7e0c4fdb7e7f179967f6bf77e4342664816faee995168df64dea3d164ff22ed",
+    "contentSha256": "7cf7ff648e68cd29d8ce962177839ea4fdf26257709aff5922cb9c4d7e510db8",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "若再算得 5000，與 5625-625 相同。",
     "derivedAnswer": "100×50",
@@ -1435,7 +1448,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v006",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "d77ebbcd842909df0569bd7ff8ad85bf5cef0f32f4b6ec7869f5519c34d1079a",
+    "contentSha256": "2d644526424d9b004b4912912d23826148b8da24aa80fcfe42e4e26e05d274ee",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "例如 k 奇則 k-1 偶；k 偶則 k 本身偶，涵蓋所有整數。",
     "derivedAnswer": "k(k-1) 是兩個相鄰整數的乘積",
@@ -1469,7 +1482,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v007",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "36c9397003137475e0d486c74a4181b6ddcae4340f5c74ddd2fe1508a6d332fe",
+    "contentSha256": "fd9e48fdad3ca06139b0c707941b6e8176ffb40bfcf942c20da4e0047e6a6554",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開 20(x-y) 在 x+y=20 的條件下等於原式。",
     "derivedAnswer": "20(x-y)",
@@ -1503,7 +1516,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v008",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "b977121f2495840b5d81b10042d82a8d7f9910ae3cd35429bcc4d1bb20eed9d0",
+    "contentSha256": "9b1e296206ab2b42d36055cd77c6dd8dd3803c742c04ee6cdc8c7090547fe288",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "因此乘積同時含因數 2 與 3，必為 6 的倍數。",
     "derivedAnswer": "n(n+1)(n+2)",
@@ -1537,7 +1550,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v009",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "ec3c8a415356b0b7f727d60df6318ab203d55a02073c50727dea08b715f61c0d",
+    "contentSha256": "04841046d1478c7a2d2e8127d1831ea0a42d65c5d67667efb672021eb0dd54aa",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "代數結果在原定義域 x≠4 上成立。",
     "derivedAnswer": "x+4",
@@ -1571,7 +1584,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v010",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "f39bb6d5f52ecc122ce3786c58a057e84923d9cef83145201abc601750407bbd",
+    "contentSha256": "b17ce1d2d28cb153efcfb720a7f5c038fd8f02a5be55051b7f878a5451290832",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "直接平方回查 10201-9801=400。",
     "derivedAnswer": "400 張",
@@ -1605,7 +1618,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v011",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "c5b77e97f19ffbc723c725e2057b55dfa288490f4fa0847901c91356f2d9c5dd",
+    "contentSha256": "45b7f2251244b0204bcd839d3721536fcd44118174aa3c1cb3a9ad359926c934",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "乘回得到總座位數。",
     "derivedAnswer": "排數 n 與每排 n+5 席",
@@ -1639,7 +1652,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s007-v012",
     "unitId": "u12",
     "skillId": "factoring-application",
-    "contentSha256": "c58632d6bfe408839afc763b68a67536073913fefb05644284893e3c0006f8b0",
+    "contentSha256": "3886def6cedd5d8e5da30271af649e01fff2dd15a3de153ff60325d2189445e8",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "乘回即原處理量，分組均為整數。",
     "derivedAnswer": "處理量可分成 m 組，每組 m+7 筆",

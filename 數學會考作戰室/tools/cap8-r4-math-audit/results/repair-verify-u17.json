@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "unitId": "u17",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "018-u17-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u17\",\n  \"lockedSkillCount\": 18,\n  \"lectureCount\": 18,\n  \"mcQuestionCount\": 216,\n  \"constructedResponseCount\": 36,\n  \"semanticReviewCount\": 216,\n  \"figureCount\": 18,\n  \"difficultyCounts\": {\n    \"basic\": 54,\n    \"standard\": 54,\n    \"advanced\": 54,\n    \"literacy\": 54\n  },\n  \"answerIndexCounts\": [\n    54,\n    54,\n    54,\n    54\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingState\": \"present-and-valid\"\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u17",
+          "lockedSkillCount": 18,
+          "lectureCount": 18,
+          "mcQuestionCount": 216,
+          "constructedResponseCount": 36,
+          "semanticReviewCount": 216,
+          "figureCount": 18,
+          "difficultyCounts": {
+            "basic": 54,
+            "standard": 54,
+            "advanced": 54,
+            "literacy": 54
+          },
+          "answerIndexCounts": [
+            54,
+            54,
+            54,
+            54
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "stagingState": "present-and-valid"
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"unitId\": \"u17\",\n  \"lockedSkillCount\": 18,\n  \"lectureCount\": 18,\n  \"mcQuestionCount\": 216,\n  \"constructedResponseCount\": 36,\n  \"semanticReviewCount\": 216,\n  \"figureCount\": 18,\n  \"difficultyCounts\": {\n    \"basic\": 54,\n    \"standard\": 54,\n    \"advanced\": 54,\n    \"literacy\": 54\n  },\n  \"answerIndexCounts\": [\n    54,\n    54,\n    54,\n    54\n  ],\n  \"contentHashesVerified\": true,\n  \"fileManifestVerified\": true,\n  \"figureReferencesVerified\": true,\n  \"questionSpecificReviewEvidenceVerified\": true,\n  \"skillSpecificLectureReviewVerified\": true,\n  \"nearDuplicateScanVerified\": true,\n  \"traditionalChineseVerified\": true,\n  \"legacyIsolationVerified\": true,\n  \"productionActivationAllowed\": false,\n  \"stagingState\": \"present-and-valid\"\n}\n",
+        "stderr": "",
+        "parsed": {
+          "status": "PASS",
+          "unitId": "u17",
+          "lockedSkillCount": 18,
+          "lectureCount": 18,
+          "mcQuestionCount": 216,
+          "constructedResponseCount": 36,
+          "semanticReviewCount": 216,
+          "figureCount": 18,
+          "difficultyCounts": {
+            "basic": 54,
+            "standard": 54,
+            "advanced": 54,
+            "literacy": 54
+          },
+          "answerIndexCounts": [
+            54,
+            54,
+            54,
+            54
+          ],
+          "contentHashesVerified": true,
+          "fileManifestVerified": true,
+          "figureReferencesVerified": true,
+          "questionSpecificReviewEvidenceVerified": true,
+          "skillSpecificLectureReviewVerified": true,
+          "nearDuplicateScanVerified": true,
+          "traditionalChineseVerified": true,
+          "legacyIsolationVerified": true,
+          "productionActivationAllowed": false,
+          "stagingState": "present-and-valid"
+        }
+      }
+    }
+  ]
+}

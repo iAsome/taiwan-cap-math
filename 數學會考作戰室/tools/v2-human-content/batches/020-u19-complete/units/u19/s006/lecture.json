@@ -57,7 +57,8 @@
   "conceptNarrative": [
     "圓周角不是任意等於圓心角的一半，必須兩者對到同一條弧。",
     "同一條弧所對的所有圓周角都相等，頂點可以在同一側圓周的不同位置。",
-    "直徑所對弧是180°，所以其圓周角為90°，這是常用的直角來源。"
+    "直徑所對弧是180°，所以其圓周角為90°，這是常用的直角來源。",
+    "若兩個圓周角的頂點位於弦的兩側，它們會分別截得互補的兩段弧而成為互補角；只有頂點位於同一段弧時，才能直接判定同弧圓周角相等。"
   ],
   "formalDefinitions": [
     {
@@ -114,6 +115,11 @@
       "step": 4,
       "instruction": "套用一半或相等關係。",
       "check": "完成此步後，確認仍在「圓周角定理」的CAP範圍且沒有只憑圖形目測。"
+    },
+    {
+      "step": 5,
+      "instruction": "依圓周角頂點所在弧判斷它截得劣弧或優弧，再做兩倍或相等驗算。",
+      "check": "頂點若換到弦的另一側，所對弧與角度是否也跟著改變？"
     }
   ],
   "workedExamples": [
@@ -125,7 +131,8 @@
         "124°÷2=62°。"
       ],
       "answer": "62°。",
-      "level": "basic"
+      "level": "basic",
+      "why": "角 AOB 是圓心角、角 APB 是圓周角，且兩者同對弧 AB；圓周角恰為圓心角的一半，所以 124° 除以 2 唯一得到 62°。頂點 P 位於另一弧，所對弧選擇也正確。"
     },
     {
       "exampleId": "s006-L2",
@@ -135,7 +142,8 @@
         "同弧圓周角相等。"
       ],
       "answer": "37°。",
-      "level": "standard"
+      "level": "standard",
+      "why": "角 ACB 與角 ADB 的兩邊端點都是 A、B，且頂點位於同一段弧；它們截得完全相同的另一段弧，因此同弧圓周角相等為 37°。"
     },
     {
       "exampleId": "s006-L3",
@@ -145,7 +153,8 @@
         "180°÷2=90°。"
       ],
       "answer": "90°。",
-      "level": "advanced"
+      "level": "advanced",
+      "why": "AB 是直徑，所對弧為 180° 半圓；任何頂點在另一段圓周上的角 ACB 都截得此半圓，所以圓周角為 180° 的一半 90°。這是圓周角定理在直徑情形的直接結果。"
     },
     {
       "exampleId": "s006-L4",
@@ -155,7 +164,8 @@
         "48°×2=96°。"
       ],
       "answer": "96°。",
-      "level": "connection"
+      "level": "connection",
+      "why": "同弧圓心角是圓周角的兩倍，故由 48° 反求時要乘 2 得 96°；再以 96° 除以 2 可回到原角，驗證倍率方向正確。兩角頂點不同，但所對弧的端點一致。"
     }
   ],
   "difficultyConnections": {
@@ -205,7 +215,7 @@
     {
       "figureId": "u19-s006-fig001",
       "purpose": "圓心 O 的角 AOB 與圓周點 C 的角 ACB 同對粗弧 AB。",
-      "altText": "圓心 O 的角 AOB 與圓周點 C 的角 ACB 同對粗弧 AB。，不可按比例目測。"
+      "altText": "圓心 O 的角 AOB 與圓周點 C 的角 ACB 同對粗弧 AB，不可按比例目測。"
     }
   ],
   "practiceLinks": {
@@ -240,5 +250,5 @@
   },
   "legacyReplacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-  "contentSha256": "5aa0131d8c7af6e4c3578d952761071e01afcbca6e065025f1df776b18e17bed"
+  "contentSha256": "04bb36adacf8154f91e6cb9cbdf1a878db642166d715946df4eba213addcc58e"
 }

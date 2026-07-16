@@ -146,7 +146,8 @@ export default {
           "A 每 100 克為 81÷450×100=18 元。",
           "B 每 100 克為 119÷700×100=17 元。"
         ],
-        "answer": "B 包較便宜，每 100 克少 1 元。"
+        "answer": "B 包較便宜，每 100 克少 1 元。",
+        "why": "包裝總價與重量都不同，直接看八十一元與一百一十九元並不公平。換成每一百公克後，A 為十八元、B 為十七元，才可確認 B 的單位價格確實較低。"
       },
       {
         "exampleId": "L2",
@@ -155,7 +156,8 @@ export default {
           "甲為 40/80000×10000=5。",
           "乙為 54/120000×10000=4.5。"
         ],
-        "answer": "甲地每萬人件數較高。"
+        "answer": "甲地每萬人件數較高。",
+        "why": "事件總數會受到人口規模影響，必須除以人口並統一成每萬人。甲雖只有四十件，但每萬人五件高於乙的四點五件，顯示總數較少不代表相對比率較低。"
       },
       {
         "exampleId": "L3",
@@ -164,7 +166,8 @@ export default {
           "5.2÷1.5≈3.47。",
           "3 瓶不足，需向上取整為 4 瓶。"
         ],
-        "answer": "4 瓶。"
+        "answer": "4 瓶。",
+        "why": "三點四七是理論瓶數，但購買單位只能是整瓶，而且題目要求至少足夠。三瓶僅四點五公升，不足五點二公升；四瓶有六公升，故必須依限制向上取整。"
       },
       {
         "exampleId": "L4",
@@ -173,7 +176,8 @@ export default {
           "實際比值 98/96≈1.021，不是 2。",
           "截斷軸只放大視覺差距。"
         ],
-        "answer": "不能；甲約為乙的 1.02 倍。"
+        "answer": "不能；甲約為乙的 1.02 倍。",
+        "why": "截斷縱軸會讓九十八與九十六的兩點差距看起來很大，但倍率必須用原始數值相除。九十八除以九十六約一點零二一，因此圖形外觀不能取代數值計算。"
       }
     ],
     "commonMistakes": [
@@ -260,7 +264,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "f3cbe70d65f8d7960ca5694f639c04b85f2213c23c1e5c64ddc24ab887013945"
+    "contentSha256": "71d7f7560a554ecf101dc76c3f3c6fe157598e37f16355e45ccbe17c949cc70f"
   },
   "mcQuestions": [
     {
@@ -284,11 +288,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "B每100克少1元。",
-      "mainExplanation": "統一到每100公克。",
-      "explanation": "統一到每100公克。",
+      "mainExplanation": "兩包重量不同，必須換成相同的一百公克基準。A 包四百五十公克有四點五個一百公克，每百公克十八元；B 包七百公克有七個一百公克，每百公克十七元，所以 B 包較便宜。",
+      "explanation": "兩包重量不同，必須換成相同的一百公克基準。A 包四百五十公克有四點五個一百公克，每百公克十八元；B 包七百公克有七個一百公克，每百公克十七元，所以 B 包較便宜。",
       "steps": [
-        "81/450×100=18",
-        "119/700×100=17"
+        "A 包每百公克價格為 81÷450×100=18 元。",
+        "B 包每百公克價格為 119÷700×100=17 元。",
+        "在同一重量基準下比較，B 包每百公克便宜一元。"
       ],
       "optionAnalysis": [
         {
@@ -312,7 +317,7 @@ export default {
           "reason": "A每100克18元，B每100克17元。"
         }
       ],
-      "misconceptionTarget": "只看總價。",
+      "misconceptionTarget": "只看八十一元低於一百一十九元，沒有考慮兩包的重量基準不同。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -333,7 +338,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9b1bbc00961517cb15e34314adca3d6bd0c3f9d125c659c4382f534bfe1cc3b3"
+      "contentSha256": "6dc282a61c2692e07f358c9e104cdf651f06e08fd556926d1f867d3e63bb2cdd"
     },
     {
       "questionId": "u06-s012-v002",
@@ -356,11 +361,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "甲每萬人高0.5件。",
-      "mainExplanation": "統一人口基準。",
-      "explanation": "統一人口基準。",
+      "mainExplanation": "比較不同人口地區時，要統一成每萬人件數。甲地四十件除以八萬人，等於每萬人五件；乙地五十四件除以十二萬人，等於每萬人四點五件，因此甲地的比率較高。",
+      "explanation": "比較不同人口地區時，要統一成每萬人件數。甲地四十件除以八萬人，等於每萬人五件；乙地五十四件除以十二萬人，等於每萬人四點五件，因此甲地的比率較高。",
       "steps": [
-        "40/8=5",
-        "54/12=4.5"
+        "甲地人口八萬，算每萬人件數 40÷8=5。",
+        "乙地人口十二萬，算每萬人件數 54÷12=4.5。",
+        "比較五與四點五，判定甲地較高。"
       ],
       "optionAnalysis": [
         {
@@ -384,7 +390,7 @@ export default {
           "reason": "人口與件數已足夠。"
         }
       ],
-      "misconceptionTarget": "只比較總數。",
+      "misconceptionTarget": "直接比較四十件與五十四件的總數，忽略兩地人口規模並不相同。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -405,7 +411,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "830e608fe6585e26d6eabf1f0ad4f7f2d039880b07d2e62fc899ed2cdb1e7f14"
+      "contentSha256": "b377898499853d9ec44fcef663b578937287e357139451e67f134da41a3c1e40"
     },
     {
       "questionId": "u06-s012-v003",
@@ -428,11 +434,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "4瓶6公升足夠，3瓶不足。",
-      "mainExplanation": "比例結果要結合整瓶限制。",
-      "explanation": "比例結果要結合整瓶限制。",
+      "mainExplanation": "所需五點二公升除以每瓶一點五公升，理論值約為三點四七瓶。因只能購買整瓶且飲料必須足夠，三瓶只有四點五公升，不足需求；四瓶共有六公升，所以至少買四瓶。",
+      "explanation": "所需五點二公升除以每瓶一點五公升，理論值約為三點四七瓶。因只能購買整瓶且飲料必須足夠，三瓶只有四點五公升，不足需求；四瓶共有六公升，所以至少買四瓶。",
       "steps": [
-        "理論3.47",
-        "向上取整4"
+        "計算理論瓶數 5.2÷1.5≈3.47。",
+        "檢查三瓶容量 3×1.5=4.5 公升，不足五點二公升。",
+        "向上取整為四瓶，容量六公升足夠。"
       ],
       "optionAnalysis": [
         {
@@ -456,7 +463,7 @@ export default {
           "reason": "不是最少。"
         }
       ],
-      "misconceptionTarget": "一般四捨五入。",
+      "misconceptionTarget": "把三點四七一般四捨五入成三瓶，沒有依『至少且只能整瓶』的限制取整。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -477,7 +484,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "646243652c94f1f1050da39286fc988838186c7611eb3bfc01e7ca7fbabad7ed"
+      "contentSha256": "14ad1beae72d1bdc42596119f5c821fa087ed0d99876d3fcddf46603bb53259d"
     },
     {
       "questionId": "u06-s012-v004",
@@ -500,11 +507,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "甲只高約2.08%。",
-      "mainExplanation": "應用實際數值而非截斷軸視覺。",
-      "explanation": "應用實際數值而非截斷軸視覺。",
+      "mainExplanation": "縱軸從九十五開始只會放大圖柱的視覺差距，不能把露出的高度直接當原數值。應使用標示的九十八與九十六相除，得到約一點零二倍，所以甲僅比乙高約百分之二點零八。",
+      "explanation": "縱軸從九十五開始只會放大圖柱的視覺差距，不能把露出的高度直接當原數值。應使用標示的九十八與九十六相除，得到約一點零二倍，所以甲僅比乙高約百分之二點零八。",
       "steps": [
-        "98÷96≈1.0208",
-        "約1.02"
+        "忽略截斷軸造成的視覺高度，取實際數值九十八與九十六。",
+        "計算 98÷96≈1.0208。",
+        "依選項取約值一點零二倍，而不是依圖高猜兩倍。"
       ],
       "optionAnalysis": [
         {
@@ -528,7 +536,7 @@ export default {
           "reason": "把98/50。"
         }
       ],
-      "misconceptionTarget": "依圖形高度猜倍率。",
+      "misconceptionTarget": "把截斷軸上高出基線的三格與一格相比，誤認甲是乙的三倍。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -549,7 +557,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "68c818ee7a71609f214528d5cd83982c6f95c8b3d287395f5bd717c6952d4095"
+      "contentSha256": "9fd4a883cded6e80532dce1d0414640cd1282b2792e7511ea870d1cc13f3208f"
     },
     {
       "questionId": "u06-s012-v005",
@@ -572,11 +580,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "甲高5個百分點。",
-      "mainExplanation": "比較部分/總量。",
-      "explanation": "比較部分/總量。",
+      "mainExplanation": "合格人數必須除以各校考生總數才可公平比較。甲校九十除以一百二十為百分之七十五；乙校一百零五除以一百五十為百分之七十，所以甲校合格率高五個百分點。",
+      "explanation": "合格人數必須除以各校考生總數才可公平比較。甲校九十除以一百二十為百分之七十五；乙校一百零五除以一百五十為百分之七十，所以甲校合格率高五個百分點。",
       "steps": [
-        "90/120=0.75",
-        "105/150=0.70"
+        "算甲校合格率 90÷120=0.75=75%。",
+        "算乙校合格率 105÷150=0.70=70%。",
+        "比較相同百分率基準，甲校高五個百分點。"
       ],
       "optionAnalysis": [
         {
@@ -600,7 +609,7 @@ export default {
           "reason": "分母已給。"
         }
       ],
-      "misconceptionTarget": "只看合格總人數。",
+      "misconceptionTarget": "只看乙校合格一百零五人較多，沒有同時考慮乙校考生總數也較多。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -621,7 +630,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d9f91d6395b1ca17d7196a8b07be77c672c120b982e6b1d5279561af912acc0f"
+      "contentSha256": "50221f1903df776605e2c0f2c4d9e29e655b9a1c7199bd25512a87d8cbf03076"
     },
     {
       "questionId": "u06-s012-v006",
@@ -644,12 +653,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "甲方案平均每GB約11.67元，仍低於乙25元。",
-      "mainExplanation": "含量內不另收每GB費，只有超過20GB的10GB計超量。",
-      "explanation": "含量內不另收每GB費，只有超過20GB的10GB計超量。",
+      "mainExplanation": "甲方案的二十 GB 已含在月費中，使用三十 GB 時只有超出的十 GB 另計，費用為二百加十乘十五，等於三百五十元。乙方案費用是三十乘二十五，等於七百五十元，所以甲便宜四百元。",
+      "explanation": "甲方案的二十 GB 已含在月費中，使用三十 GB 時只有超出的十 GB 另計，費用為二百加十乘十五，等於三百五十元。乙方案費用是三十乘二十五，等於七百五十元，所以甲便宜四百元。",
       "steps": [
-        "甲350",
-        "乙750",
-        "750-350=400"
+        "甲方案超量為 30-20=10 GB，費用 200+10×15=350 元。",
+        "乙方案無含量，費用 30×25=750 元。",
+        "比較價差 750-350=400 元，甲方案較便宜。"
       ],
       "optionAnalysis": [
         {
@@ -673,7 +682,7 @@ export default {
           "reason": "兩費用相差400。"
         }
       ],
-      "misconceptionTarget": "把全部30GB都按超量費或漏掉月費與含量。",
+      "misconceptionTarget": "把甲方案全部三十 GB 都按超量費計算，或漏掉月費已包含二十 GB。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -694,7 +703,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "d1cfb5cb41a69031e53734f00939917d144323d094be80417d5e414f0e28c73f"
+      "contentSha256": "02886fb64487eae84c3b13b9a268c6935baa7da4778cc0a0605b8855a0e68781"
     },
     {
       "questionId": "u06-s012-v007",
@@ -705,10 +714,10 @@ export default {
       "difficulty": "advanced",
       "itemType": "multiple-choice",
       "type": "mc",
-      "prompt": "某報導說甲區事故 120 件、乙區 80 件，因此甲區更危險。若甲區人口 60 萬、乙區 20 萬，依每萬人事故率判斷何者正確？",
-      "text": "某報導說甲區事故 120 件、乙區 80 件，因此甲區更危險。若甲區人口 60 萬、乙區 20 萬，依每萬人事故率判斷何者正確？",
-      "givenConditions": "假設期間與定義相同。",
-      "target": "批判總數結論",
+      "prompt": "某報導比較同一年度、採相同交通事故認定標準的資料：甲區事故 120 件、人口 60 萬；乙區事故 80 件、人口 20 萬。依每萬人事故率判斷何者正確？",
+      "text": "某報導比較同一年度、採相同交通事故認定標準的資料：甲區事故 120 件、人口 60 萬；乙區事故 80 件、人口 20 萬。依每萬人事故率判斷何者正確？",
+      "givenConditions": "兩區統計期間同為同一年度，交通事故認定標準相同，人口以萬人為單位。",
+      "target": "在同期間同定義下比較每萬人交通事故率",
       "choices": [
         "甲區較高",
         "兩區相同",
@@ -716,12 +725,13 @@ export default {
         "乙區較高"
       ],
       "answerIndex": 3,
-      "independentSolution": "乙率是甲的2倍。",
-      "mainExplanation": "改用同人口基準。",
-      "explanation": "改用同人口基準。",
+      "independentSolution": "同一年度且事故定義相同時，甲為 120÷60=2 件／萬人，乙為 80÷20=4 件／萬人，所以乙區較高且為甲的兩倍。",
+      "mainExplanation": "同一年度且採同一事故定義，兩區資料可用相同人口基準比較。甲區每萬人事故數為一百二十除以六十，等於二；乙區為八十除以二十，等於四，因此乙區比率較高且是甲的兩倍。",
+      "explanation": "同一年度且採同一事故定義，兩區資料可用相同人口基準比較。甲區每萬人事故數為一百二十除以六十，等於二；乙區為八十除以二十，等於四，因此乙區比率較高且是甲的兩倍。",
       "steps": [
-        "120/60=2",
-        "80/20=4"
+        "確認兩區使用同一年度與相同交通事故認定標準。",
+        "計算甲區每萬人事故數 120÷60=2。",
+        "計算乙區 80÷20=4，判定乙區較高且為甲的兩倍。"
       ],
       "optionAnalysis": [
         {
@@ -745,7 +755,7 @@ export default {
           "reason": "甲每萬人2件，乙每萬人4件。"
         }
       ],
-      "misconceptionTarget": "總量直接等同風險。",
+      "misconceptionTarget": "只以甲區事故總數一百二十件較多判定風險，沒有除以各區人口基準。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -753,10 +763,10 @@ export default {
         "evidence": "本題只使用已鎖定前置技能 ['ratio-composite-problem'] 與本技能定義；解法未引用後續單元技巧。"
       },
       "estimatedTimeSec": 100,
-      "unitCheck": "件/萬人。",
-      "roundingCheck": "無近似。",
-      "ambiguityBoundaryAudit": "人口以萬人單位計算。",
-      "difficultyReason": "進階媒體素養。",
+      "unitCheck": "兩區均換算為件／萬人。",
+      "roundingCheck": "兩個比率均為精確值，不需近似。",
+      "ambiguityBoundaryAudit": "統計年度與交通事故認定標準已明定相同。",
+      "difficultyReason": "需先審查資料可比性，再以共同人口基準推翻總件數直覺。",
       "literacyContextNecessity": null,
       "visualMode": "text-only",
       "figureId": null,
@@ -766,7 +776,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "225cd9c91675108dfc7b9325d93c6e35ab33f40f54d0e78ac02260c08425caa0"
+      "contentSha256": "9846b6e02be817df63fdc4a0a644de22a3616f7238013b1e5cb7e3f106c951c8"
     },
     {
       "questionId": "u06-s012-v008",
@@ -789,11 +799,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "約0.9167，單位價下降約8.33%。",
-      "mainExplanation": "單位價格需價格倍率除以數量倍率。",
-      "explanation": "單位價格需價格倍率除以數量倍率。",
+      "mainExplanation": "新商品的價格是原來的一點一倍，數量是原來的一點二倍。每單位價格倍率等於總價倍率除以數量倍率，所以是一點一除以一點二，化為十二分之十一，約零點九一六七倍。",
+      "explanation": "新商品的價格是原來的一點一倍，數量是原來的一點二倍。每單位價格倍率等於總價倍率除以數量倍率，所以是一點一除以一點二，化為十二分之十一，約零點九一六七倍。",
       "steps": [
-        "甲方案折後倍率為1.1，乙方案為1.2",
-        "1.1÷1.2=11/12，所以甲是乙的11/12"
+        "把價格增加 10% 寫成價格倍率 1.1。",
+        "把數量增加 20% 寫成數量倍率 1.2。",
+        "算新舊單位價倍率 1.1÷1.2=11/12。"
       ],
       "optionAnalysis": [
         {
@@ -817,7 +828,7 @@ export default {
           "reason": "取倒數。"
         }
       ],
-      "misconceptionTarget": "把百分比直接相減成10%。",
+      "misconceptionTarget": "把加價百分之十與加量百分之二十直接相減，誤認單位價恰好下降百分之十。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -838,7 +849,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "9b3ca79081f85f11fa381ef36b8f3847fc881a95570ac214c6653ebf2a42e3d0"
+      "contentSha256": "0c6a49fa41c2ae29ca86912e93a24d01399a5229a4a8a7b282bda7fc09d6f4d3"
     },
     {
       "questionId": "u06-s012-v009",
@@ -861,11 +872,12 @@ export default {
       ],
       "answerIndex": 1,
       "independentSolution": "5.2=4×1.3。",
-      "mainExplanation": "增加率分母是原基準。",
-      "explanation": "增加率分母是原基準。",
+      "mainExplanation": "導航路線比直線距離多五點二減四，等於一點二公里。增加百分率必須以原本的直線距離四公里為分母，所以一點二除以四等於零點三，也就是百分之三十。",
+      "explanation": "導航路線比直線距離多五點二減四，等於一點二公里。增加百分率必須以原本的直線距離四公里為分母，所以一點二除以四等於零點三，也就是百分之三十。",
       "steps": [
-        "5.2-4=1.2",
-        "1.2/4=0.3"
+        "先求增加量 5.2-4=1.2 公里。",
+        "以原直線距離為基準，算 1.2÷4=0.3。",
+        "把零點三改寫為 30%，並回查 4×1.3=5.2。"
       ],
       "optionAnalysis": [
         {
@@ -889,7 +901,7 @@ export default {
           "reason": "把導航/直線直接寫130%當增加率。"
         }
       ],
-      "misconceptionTarget": "用新值作分母。",
+      "misconceptionTarget": "用新的五點二公里作分母，或把五點二除以四的一點三直接寫成增加百分之一百三十。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -910,7 +922,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "f39bd37683fd8f473c409dbb97c810eb624cca9fec7ef1c10b159e79b4c610b8"
+      "contentSha256": "e68eb0e3af3a55895dcfe9e402e7c066a3ff865f5ffa2cccbd95ee54e273166c"
     },
     {
       "questionId": "u06-s012-v010",
@@ -933,11 +945,12 @@ export default {
       ],
       "answerIndex": 0,
       "independentSolution": "整包糖36公克、總重150公克。",
-      "mainExplanation": "可以用每份，也可算整包36/150。",
-      "explanation": "可以用每份，也可算整包36/150。",
+      "mainExplanation": "每份糖占每份重量七點二除以三十，等於零點二四，也就是百分之二十四。整包五份時，糖與總重都同乘五，成為三十六除以一百五十，比例仍是百分之二十四。",
+      "explanation": "每份糖占每份重量七點二除以三十，等於零點二四，也就是百分之二十四。整包五份時，糖與總重都同乘五，成為三十六除以一百五十，比例仍是百分之二十四。",
       "steps": [
-        "7.2/30=0.24",
-        "或36/150=0.24"
+        "算每份含糖率 7.2÷30=0.24。",
+        "或求整包糖 7.2×5=36 公克、總重 30×5=150 公克。",
+        "驗算 36÷150=0.24，換成 24%。"
       ],
       "optionAnalysis": [
         {
@@ -961,7 +974,7 @@ export default {
           "reason": "百分率超過100且無依據。"
         }
       ],
-      "misconceptionTarget": "分子用每份、分母用整包。",
+      "misconceptionTarget": "分子使用每份糖量七點二，分母卻使用整包一百五十公克，混合不同基準。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -982,7 +995,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c422c9cf8355c16f83b959864720f53f342ae2102baf61a6a2c40175cdb1558f"
+      "contentSha256": "6bdaf62da37d6c2d622ab0fd198c659733f0ebc16cf09f590a263ca8fa066f99"
     },
     {
       "questionId": "u06-s012-v011",
@@ -1005,11 +1018,12 @@ export default {
       ],
       "answerIndex": 2,
       "independentSolution": "46/50=92%。",
-      "mainExplanation": "由部分率反求總量。",
-      "explanation": "由部分率反求總量。",
+      "mainExplanation": "回收率百分之九十二等於回收份數除以全班人數。設全班 x 人，可列四十六除以 x 等於零點九二，所以 x 等於四十六除以零點九二，得到五十人；四十六除以五十正好是百分之九十二。",
+      "explanation": "回收率百分之九十二等於回收份數除以全班人數。設全班 x 人，可列四十六除以 x 等於零點九二，所以 x 等於四十六除以零點九二，得到五十人；四十六除以五十正好是百分之九十二。",
       "steps": [
-        "92%=23/25",
-        "46÷23×25=50"
+        "寫出回收率關係 46÷全班人數=0.92。",
+        "反求全班人數 46÷0.92=50。",
+        "驗算 46÷50=0.92，也就是 92%。"
       ],
       "optionAnalysis": [
         {
@@ -1033,7 +1047,7 @@ export default {
           "reason": "用46+8。"
         }
       ],
-      "misconceptionTarget": "把百分率乘部分量。",
+      "misconceptionTarget": "把已回收四十六份乘百分之九十二，誤把部分量當成求百分率時的總量。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -1054,7 +1068,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "bd4e774852c524f79403bd8539dab0edbb6741728f97b02a737788dc761badd4"
+      "contentSha256": "3fc94ec9ef94565c7cad79fbd73faf5c967f2c0245c705ab10c033286b946b4e"
     },
     {
       "questionId": "u06-s012-v012",
@@ -1077,11 +1091,12 @@ export default {
       ],
       "answerIndex": 3,
       "independentSolution": "任何正x都符合倍率，絕對差0.15x不固定。",
-      "mainExplanation": "資料足以描述相對關係，不足以求絕對量。",
-      "explanation": "資料足以描述相對關係，不足以求絕對量。",
+      "mainExplanation": "設上月用水量為正數 x，本月增加百分之十五後是 x 加零點一五 x，等於一點一五 x。因題目沒有給 x 的數值，無法確定增加幾噸或兩月總量；只能確定本月是上月的一點一五倍。",
+      "explanation": "設上月用水量為正數 x，本月增加百分之十五後是 x 加零點一五 x，等於一點一五 x。因題目沒有給 x 的數值，無法確定增加幾噸或兩月總量；只能確定本月是上月的一點一五倍。",
       "steps": [
-        "設上月x",
-        "本月1.15x"
+        "設上月用水量為 x。",
+        "依增加 15% 寫出本月 x+0.15x=1.15x。",
+        "因 x 未知，只能確定倍率關係，不能求絕對噸數。"
       ],
       "optionAnalysis": [
         {
@@ -1105,7 +1120,7 @@ export default {
           "reason": "百分比只確定倍率，無基準量不能求噸數。"
         }
       ],
-      "misconceptionTarget": "把百分率基準默認100。",
+      "misconceptionTarget": "把百分之十五的基準默認為一百噸，憑空推得增加十五噸或本月一百一十五噸。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-composite-problem"
@@ -1126,7 +1141,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ed77244fef061b0b54b855ad667ec82db33316f60e9b6fcbf73b528abfd834a4"
+      "contentSha256": "28db4d6281f0210cf13a1ada605a13424f323b4878aef0aad5d99735d2aede23"
     }
   ],
   "constructedResponses": [
@@ -1147,17 +1162,18 @@ export default {
         "說明總價比較的限制。"
       ],
       "fullCreditSolution": [
-        "甲1.2公斤=1200公克，每100公克204÷12=17元。",
-        "乙每100公克120÷7.5=16元。",
-        "乙每100公克便宜1元；只看總價會選乙但理由不充分，因包裝重量不同，必須比較同重量價格。"
+        "先統一重量單位：甲的一點二公斤等於一千二百公克，因此共有十二個一百公克。",
+        "甲每一百公克價格為 204÷12=17 元。乙七百五十公克共有七點五個一百公克，每一百公克為 120÷7.5=16 元。",
+        "在相同重量基準下，乙每一百公克比甲便宜一元。",
+        "只看總價會忽略包裝重量不同；即使此例也選到乙，理由仍不足以支持單位價格較低的結論。"
       ],
       "alternativeSolutions": [
         "可算每公克價格：甲0.17元、乙0.16元。"
       ],
       "reasoningSteps": [
-        "甲1.2公斤=1200公克，每100公克204÷12=17元。",
-        "乙每100公克120÷7.5=16元。",
-        "乙每100公克便宜1元；只看總價會選乙但理由不充分，因包裝重量不同，必須比較同重量價格。"
+        "把甲的一點二公斤換成一千二百公克。",
+        "分別計算兩款每一百公克價格。",
+        "比較同一重量基準，並說明總價不能單獨代表單位價。"
       ],
       "rubric": [
         {
@@ -1184,9 +1200,9 @@ export default {
       "unitNotationRules": "最後標示元/100公克。",
       "answerOnlyPolicy": "只寫乙較便宜最多1分。",
       "commonErrors": [
-        "1.2公斤當1.2公克。",
-        "120÷750後忘乘100。",
-        "只看總價。"
+        "把一點二公斤誤當一點二公克，導致甲的單位價格異常巨大。",
+        "算乙的 120÷750 後忘記乘一百，沒有換成每百公克價格。",
+        "只因乙總價一百二十元較低就下結論，未檢查包裝重量。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1201,7 +1217,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "faa9dd7c770783605c5e88706b804a6d0a1259b448a0cd4cc28179566128e304"
+      "contentSha256": "97a344989426415db87962601bed68cf45f152e051ee7ab775b633e0f6dec6de"
     },
     {
       "questionId": "u06-s012-cr002",
@@ -1212,25 +1228,26 @@ export default {
       "difficulty": "advanced",
       "itemType": "constructed-response",
       "type": "constructed-response",
-      "prompt": "某報告：甲區72件、人口18萬；乙區55件、人口10萬。計算每萬人件數，判斷哪區比率較高，並說明為何總件數與比率會給不同結論。",
-      "target": "人口率與媒體結論",
+      "prompt": "某年度交通事故報告以相同事故認定標準統計：甲區 72 件、人口 18 萬；乙區 55 件、人口 10 萬。計算每萬人事故件數，判斷哪區比率較高，並說明總件數與比率為何會給不同結論。",
+      "target": "在同一年度與同一事故定義下比較每萬人交通事故件數",
       "requiredWork": [
-        "計算兩區相同人口基準的率。",
-        "比較比率。",
-        "解釋總量受人口規模影響。"
+        "確認兩區統計期間與交通事故認定標準相同。",
+        "計算兩區每萬人的交通事故件數。",
+        "比較比率並解釋總件數受人口規模影響。"
       ],
       "fullCreditSolution": [
-        "甲每萬人=72÷18=4件。",
-        "乙每萬人=55÷10=5.5件。",
-        "乙區比率較高，雖然總件數較少；因乙人口較少，將事件數除以人口後每萬人負擔較高。"
+        "題目明定兩區資料來自同一年度，且使用相同交通事故認定標準，因此可在相同口徑下比較。",
+        "甲區每萬人事故件數為 72÷18=4 件；乙區為 55÷10=5.5 件。",
+        "乙區每萬人事故件數較高，雖然其事故總件數五十五件少於甲區七十二件。",
+        "總件數同時受人口規模影響；乙區人口較少，將事故件數除以人口後，每萬人的相對比率反而較高。"
       ],
       "alternativeSolutions": [
         "可先算每人率再乘10000。"
       ],
       "reasoningSteps": [
-        "甲每萬人=72÷18=4件。",
-        "乙每萬人=55÷10=5.5件。",
-        "乙區比率較高，雖然總件數較少；因乙人口較少，將事件數除以人口後每萬人負擔較高。"
+        "先核對同年度與同事故定義，確認資料可比較。",
+        "把兩區事故件數分別除以以萬人表示的人口。",
+        "比較四與五點五，並用人口規模解釋總量與比率差異。"
       ],
       "rubric": [
         {
@@ -1257,24 +1274,24 @@ export default {
       "unitNotationRules": "單位為件/萬人；5.5可寫11/2。",
       "answerOnlyPolicy": "只寫乙區最多1分。",
       "commonErrors": [
-        "把人口18萬寫18人。",
-        "兩率使用不同基準。",
-        "只比較事件總數。"
+        "把十八萬與十萬直接當成十八人與十人，誤解人口單位。",
+        "一區算每萬人、另一區仍用總件數，使用不同基準比較。",
+        "看到甲區七十二件較多便判甲較高，沒有除以人口規模。"
       ],
       "visualMode": "text-only",
       "figureId": null,
       "drawingSpecRef": null,
       "independentReview": {
-        "derivedResult": "甲4、乙5.5件/萬人，乙較高。",
-        "ambiguity": "資料足以在相同期間假設下比較，結論限於比率。",
-        "scope": "U06 locked skill only; no future-unit method required.",
+        "derivedResult": "同年度、同事故定義下，甲為四件／萬人，乙為五點五件／萬人，因此乙區比率較高。",
+        "ambiguity": "統計年度與交通事故認定標準均已明示相同，事件及期間口徑完整。",
+        "scope": "只比較題目所給年度的每萬人事故件數，不外推其他期間或因果風險。",
         "decision": "pass",
-        "reviewedAt": "2026-07-12"
+        "reviewedAt": "2026-07-16"
       },
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "8fd437151dd222023ef2ed2eb4e94fe82959386748c371ecf8c7fdde1b4bd602"
+      "contentSha256": "f27269087048891e2e141335e1b72b3ca2ea0edd6001c43a29136a7e009520c7"
     }
   ],
   "semanticReviews": [
@@ -1283,7 +1300,7 @@ export default {
       "questionId": "u06-s012-v001",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "9b1bbc00961517cb15e34314adca3d6bd0c3f9d125c659c4382f534bfe1cc3b3",
+      "contentSha256": "6dc282a61c2692e07f358c9e104cdf651f06e08fd556926d1f867d3e63bb2cdd",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1320,7 +1337,7 @@ export default {
       "questionId": "u06-s012-v002",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "830e608fe6585e26d6eabf1f0ad4f7f2d039880b07d2e62fc899ed2cdb1e7f14",
+      "contentSha256": "b377898499853d9ec44fcef663b578937287e357139451e67f134da41a3c1e40",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1357,7 +1374,7 @@ export default {
       "questionId": "u06-s012-v003",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "646243652c94f1f1050da39286fc988838186c7611eb3bfc01e7ca7fbabad7ed",
+      "contentSha256": "14ad1beae72d1bdc42596119f5c821fa087ed0d99876d3fcddf46603bb53259d",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1394,7 +1411,7 @@ export default {
       "questionId": "u06-s012-v004",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "68c818ee7a71609f214528d5cd83982c6f95c8b3d287395f5bd717c6952d4095",
+      "contentSha256": "9fd4a883cded6e80532dce1d0414640cd1282b2792e7511ea870d1cc13f3208f",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1431,7 +1448,7 @@ export default {
       "questionId": "u06-s012-v005",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "d9f91d6395b1ca17d7196a8b07be77c672c120b982e6b1d5279561af912acc0f",
+      "contentSha256": "50221f1903df776605e2c0f2c4d9e29e655b9a1c7199bd25512a87d8cbf03076",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1468,7 +1485,7 @@ export default {
       "questionId": "u06-s012-v006",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "d1cfb5cb41a69031e53734f00939917d144323d094be80417d5e414f0e28c73f",
+      "contentSha256": "02886fb64487eae84c3b13b9a268c6935baa7da4778cc0a0605b8855a0e68781",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1505,11 +1522,11 @@ export default {
       "questionId": "u06-s012-v007",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "225cd9c91675108dfc7b9325d93c6e35ab33f40f54d0e78ac02260c08425caa0",
+      "contentSha256": "9846b6e02be817df63fdc4a0a644de22a3616f7238013b1e5cb7e3f106c951c8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-      "independentSolution": "乙率是甲的2倍。",
+      "independentSolution": "同一年度且事故定義相同時，甲為 120÷60=2 件／萬人，乙為 80÷20=4 件／萬人，所以乙區較高且為甲的兩倍。",
       "derivedAnswer": "乙區較高",
       "storedAnswer": "乙區較高",
       "answerMatch": true,
@@ -1521,20 +1538,20 @@ export default {
         true
       ],
       "optionEvidence": [
-        "只看總件數。",
-        "兩率不同。",
-        "人口與事故數足夠，若期間相同。",
-        "甲每萬人2件，乙每萬人4件。"
+        "甲每萬人二件，低於乙每萬人四件。",
+        "兩區每萬人事故數分別為二與四，並不相同。",
+        "同年度、同定義與人口資料皆已提供，足以比較。",
+        "乙每萬人四件，高於甲每萬人二件。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「批判總數結論」，已明示必要條件：假設期間與定義相同。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：件/萬人。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：人口以萬人單位計算。，未超出 U06 鎖定技能邊界。",
-        "rounding": "近似與取整審查：無近似。。"
+        "wording": "題幹明示統計期間與事故認定標準相同，事件口徑一致。",
+        "units": "人口皆以萬人表示，計算結果統一為每萬人事故件數。",
+        "boundary": "結論只比較本年度每萬人事故率，不外推其他年份或其他風險。",
+        "rounding": "兩區比率均為整數精確值，不受近似或取整影響。"
       },
-      "difficultyReason": "進階媒體素養。",
+      "difficultyReason": "先確認資料口徑一致，再將總件數改為相同人口基準比較。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：乙率是甲的2倍。 正確選項為「乙區較高」。逐項檢查後，唯一為真的理由是「甲每萬人2件，乙每萬人4件。」；其餘三項分別因「只看總件數。」、「兩率不同。」、「人口與事故數足夠，若期間相同。」而排除。邊界與語意再檢查：人口以萬人單位計算。",
+      "reviewerNote": "獨立重算：同一年度且事故定義相同時，甲為 120÷60=2 件／萬人，乙為 80÷20=4 件／萬人，所以乙區較高且為甲的兩倍。題目已補足期間與事件定義，資料可比；逐項檢查後只有乙區較高符合計算，答案唯一。",
       "reviewerDecision": "pass"
     },
     {
@@ -1542,7 +1559,7 @@ export default {
       "questionId": "u06-s012-v008",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "9b3ca79081f85f11fa381ef36b8f3847fc881a95570ac214c6653ebf2a42e3d0",
+      "contentSha256": "0c6a49fa41c2ae29ca86912e93a24d01399a5229a4a8a7b282bda7fc09d6f4d3",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1579,7 +1596,7 @@ export default {
       "questionId": "u06-s012-v009",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "f39bd37683fd8f473c409dbb97c810eb624cca9fec7ef1c10b159e79b4c610b8",
+      "contentSha256": "e68eb0e3af3a55895dcfe9e402e7c066a3ff865f5ffa2cccbd95ee54e273166c",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1616,7 +1633,7 @@ export default {
       "questionId": "u06-s012-v010",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "c422c9cf8355c16f83b959864720f53f342ae2102baf61a6a2c40175cdb1558f",
+      "contentSha256": "6bdaf62da37d6c2d622ab0fd198c659733f0ebc16cf09f590a263ca8fa066f99",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1653,7 +1670,7 @@ export default {
       "questionId": "u06-s012-v011",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "bd4e774852c524f79403bd8539dab0edbb6741728f97b02a737788dc761badd4",
+      "contentSha256": "3fc94ec9ef94565c7cad79fbd73faf5c967f2c0245c705ab10c033286b946b4e",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1690,7 +1707,7 @@ export default {
       "questionId": "u06-s012-v012",
       "unitId": "u06",
       "skillId": "ratio-literacy",
-      "contentSha256": "ed77244fef061b0b54b855ad667ec82db33316f60e9b6fcbf73b528abfd834a4",
+      "contentSha256": "28db4d6281f0210cf13a1ada605a13424f323b4878aef0aad5d99735d2aede23",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

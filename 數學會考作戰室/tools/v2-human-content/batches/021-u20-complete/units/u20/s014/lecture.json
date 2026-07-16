@@ -102,6 +102,11 @@
       "step": 4,
       "instruction": "檢查隱藏前提與實務限制。",
       "check": "角型、均勻、共線、可行域是否影響？"
+    },
+    {
+      "step": 5,
+      "instruction": "把選到的中心翻回原情境驗收。",
+      "check": "服務距離、可行域與均勻假設是否都真的滿足？"
     }
   ],
   "workedExamples": [
@@ -112,7 +117,8 @@
         "村落是頂點。",
         "到頂點等距。"
       ],
-      "answer": "外心。"
+      "answer": "外心。",
+      "why": "村落是三個頂點，需求是點到點等距；外心由三邊垂直平分線決定，正好到三頂點距離相同，還須另查設址是否落在可行域。"
     },
     {
       "exampleId": "L2",
@@ -121,7 +127,8 @@
         "圍牆是邊。",
         "距離取垂距。"
       ],
-      "answer": "內心。"
+      "answer": "內心。",
+      "why": "圍牆是三條邊界直線，最短距離取垂距；內心到三邊垂距相同，才能公平服務三面圍牆，且半徑方向必與牆垂直。"
     },
     {
       "exampleId": "L3",
@@ -130,7 +137,8 @@
         "質量均勻。",
         "面積平衡。"
       ],
-      "answer": "重心。"
+      "answer": "重心。",
+      "why": "均勻招牌的質量依面積均勻分布，三中線交點就是面積與質量中心；若另有配重，則必須重新找實際質心。"
     }
   ],
   "commonMistakes": [
@@ -148,6 +156,11 @@
       "mistake": "把幾何重心當物流最佳點。",
       "why": "需求權重可能不同。",
       "correction": "檢查均勻或等權假設。"
+    },
+    {
+      "mistake": "找到數學中心後就直接宣布方案可施工。",
+      "why": "外心可能落在區域外，重心模型也可能違反均勻假設。",
+      "correction": "另列可行域、權重與場地限制，分開報告數學解和實務決策。"
     }
   ],
   "selfCheck": [
@@ -203,5 +216,5 @@
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
   "legacyContentUsed": false,
-  "contentSha256": "edaefbfc5ea1a4a99ff170b4837f2e466e8e150fee4f156941c1970fd1e21160"
+  "contentSha256": "a1fe2b3f6b0c2fb7a05f1f8ced88688895a9ab10690616a30ef347b3e0aa9cde"
 }

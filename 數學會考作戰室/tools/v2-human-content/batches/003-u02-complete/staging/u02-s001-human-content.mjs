@@ -106,40 +106,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "判斷 9 是否為 63 的因數。",
       "solutionSteps": [
-        "63÷9=7。",
-        "商為整數且無餘數。"
+        "計算 63÷9，得到商 7、餘數 0。",
+        "因為商 7 是整數且沒有餘數，所以 9 能整除 63。",
+        "再以 9×7=63 回代，確認 9 是 63 的因數。"
       ],
-      "answer": "9 是 63 的因數。"
+      "answer": "9 是 63 的因數。",
+      "why": "用總數除以候選因數，63÷9=7，商是整數且沒有餘數，因此 9 能整除 63。等價地，63=9×7，也直接顯示 9 是 63 的因數，兩種檢查結果一致。"
     },
     {
-      "exampleId": "L2",
       "prompt": "列出 16 的所有正因數。",
       "solutionSteps": [
-        "成對找乘積16：1×16、2×8、4×4。",
-        "整理不重複因數。"
+        "從 1 開始成對尋找乘積為 16 的正整數，得到 1×16、2×8、4×4。",
+        "檢查到 √16=4 即可停止，因為之後只會重複前面的因數對。",
+        "整理各因數且去除重複的 4，依序得到 1、2、4、8、16。"
       ],
-      "answer": "1、2、4、8、16。"
+      "answer": "1、2、4、8、16。",
+      "why": "成對尋找乘積為 16 的正整數：1×16、2×8、4×4。把每一對兩側整理且不重複，即得全部正因數；檢查到 √16=4 就足以確認沒有遺漏。"
     },
     {
-      "exampleId": "L3",
       "prompt": "找出小於 40 的 7 的正倍數。",
       "solutionSteps": [
-        "依序算7×1到7×5。",
-        "7×6=42超出範圍。"
+        "依序計算 7×1、7×2、7×3、7×4、7×5，得到 7、14、21、28、35。",
+        "下一個正倍數是 7×6=42，已不符合小於 40。",
+        "因此在 35 停止，符合範圍的正倍數共有 7、14、21、28、35。"
       ],
-      "answer": "7、14、21、28、35。"
+      "answer": "7、14、21、28、35。",
+      "why": "正倍數依序由 7×1、7×2、7×3、7×4、7×5 取得；下一個 7×6=42 已不符合小於 40，所以必須在 35 停止。這樣從最小正倍數逐一列舉，可確保沒有跳過任何符合範圍的數。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "60顆球平均分成每袋12顆，可裝幾袋？",
+      "prompt": "60 顆球平均分成每袋 12 顆，可裝幾袋？",
       "solutionSteps": [
-        "60÷12=5。",
-        "沒有餘數。"
+        "用總球數除以每袋球數，列式為 60÷12。",
+        "計算得 60÷12=5，所以可裝 5 袋。",
+        "以 12×5=60 驗算，確認全部裝完且沒有剩餘。"
       ],
-      "answer": "5袋。"
+      "answer": "可裝 5 袋。",
+      "why": "平均分袋的關係是總數＝每袋數×袋數，所以袋數為 60÷12=5。商為整數且 12×5=60，證明全部球正好裝完而沒有剩餘，因此五袋的結論可直接回代驗證。"
     }
   ],
   "commonMistakes": [
@@ -225,7 +229,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "07784bf21675e841eaafef0996e3e22c377867c442c4b68f0d160c1ad993b8e6",
+  "contentSha256": "f7fa6121de25c6c300c5e1cf20c5a9f79ac5fcf4a6ff795846d2c26e2e4207ad",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -249,10 +253,11 @@ export const QUESTIONS = [
       "18"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：24÷6=4，商為整數；其餘三個選項除 24 都有餘數。所以答案是「6」。",
+    "explanation": "因數必須能整除原數。24÷6=4，商是整數，所以 6 是 24 的因數；24 分別除以 10、14、18 都有餘數，三者不能整除 24，因此唯一答案是 6，也符合整除的定義。",
     "steps": [
-      "24÷6=4，商為整數",
-      "其餘三個選項除 24 都有餘數"
+      "先用 24 分別除以四個選項。",
+      "確認 24÷6=4，商為整數且沒有餘數。",
+      "排除除後有餘數的 10、14、18，選 6。"
     ],
     "optionAnalysis": [
       {
@@ -289,7 +294,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5a321674d35efc99e8995c003dcedfb21a8a64e2f21a7dc251fe5cbdacad1607",
+    "contentSha256": "ef52c1230234a6a786a1d4b17141838628395d0cbf740cf313d7d76cce91b339",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -311,10 +316,11 @@ export const QUESTIONS = [
       "62"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：40=8×5；其餘選項除以 8 都不是整數。所以答案是「40」。",
+    "explanation": "判斷 8 的倍數，要看該數能否寫成 8 乘正整數。40=8×5，符合倍數定義；30、54、62 除以 8 都有餘數，即使它們是偶數也不一定是 8 的倍數，關鍵是能否整除。",
     "steps": [
-      "40=8×5",
-      "其餘選項除以 8 都不是整數"
+      "逐一檢查選項能否被 8 整除。",
+      "把 40 寫成 8×5，確認它是 8 的整數倍。",
+      "排除除以 8 有餘數的其餘選項。"
     ],
     "optionAnalysis": [
       {
@@ -338,7 +344,7 @@ export const QUESTIONS = [
         "reason": "62÷8 有餘數。"
       }
     ],
-    "commonMistake": "把所有偶數都當成 8 的倍數。",
+    "commonMistake": "看到三十、五十四、六十二都是偶數，就誤以為偶數必為八的倍數。",
     "concept": "倍數可寫成原數乘整數。",
     "tags": [
       "數與量",
@@ -351,7 +357,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a37494acf400f56ff741237608184b6bb7123f503d6278121a7993fedef47881",
+    "contentSha256": "6290bd3e7a2304a9242d88d4421790de55cb112741d8637e4ad8ec5cb06f1265",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -373,10 +379,11 @@ export const QUESTIONS = [
       "38"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：條件表示 n 必須是 7 的倍數；35=7×5。所以答案是「35」。",
+    "explanation": "「7 是 n 的因數」表示 n 可被 7 整除，也就是 n 必須是 7 的倍數。四個選項中只有 35=7×5；30、32、38 都不能被 7 整除，所以 n 可能是 35，而對應的正整數商為 5。",
     "steps": [
-      "條件表示 n 必須是 7 的倍數",
-      "35=7×5"
+      "把條件翻成 n=7×正整數。",
+      "檢查四個選項是否能被 7 整除。",
+      "確認 35=7×5，故選 35。"
     ],
     "optionAnalysis": [
       {
@@ -413,7 +420,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7e48d7ac6cebe6b680480e66344dff578a9280788ea2d2d76caca956fe29027d",
+    "contentSha256": "7e816b3af6e5c041c8755edcc3d75928c51d97ef871c9c9440d0dcdb2de12fbe",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -435,10 +442,11 @@ export const QUESTIONS = [
       "36"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：36÷36=1；任何正整數本身都是自己的最大正因數。所以答案是「36」。",
+    "explanation": "任何正整數都能整除自己，因為 36÷36=1，所以 36 是自己的正因數。正因數不可能大於原正整數，而選項 1、6、18 雖也是因數卻都較小，因此最大正因數是 36。",
     "steps": [
-      "36÷36=1",
-      "任何正整數本身都是自己的最大正因數"
+      "確認 36÷36=1，沒有餘數。",
+      "利用正因數不大於原正整數的性質判斷上界。",
+      "比較選項後選出最大的正因數 36。"
     ],
     "optionAnalysis": [
       {
@@ -462,7 +470,7 @@ export const QUESTIONS = [
         "reason": "36 是本身，也是最大正因數。"
       }
     ],
-    "commonMistake": "以為因數一定要比原數小。",
+    "commonMistake": "誤以為因數一定小於原數，因而排除原數三十六本身。",
     "concept": "正整數的最大正因數是本身。",
     "tags": [
       "數與量",
@@ -475,7 +483,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e565b7acb13739346667b0400e3cf99c5866dacf819b1c601ad245c885f80982",
+    "contentSha256": "a0eba197a0b266364869d6d9939d3a401d9634fbe163b9daaae863e192de6d86",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -497,10 +505,11 @@ export const QUESTIONS = [
       "12 是 5 的倍數"
     ],
     "answerIndex": 0,
-    "explanation": "依因數與倍數的定義逐項判斷。任一正整數 n 都可寫成 1×n，因此 1 是每個正整數的因數。",
+    "explanation": "任一正整數 n 都可寫成 1×n，因此 1 能整除每個正整數。0 不能作除數；固定正整數的正因數個數有限；12÷5 也不是整數，所以只有「1 是每個正整數的因數」正確。",
     "steps": [
-      "以 n 表示任一正整數，n÷1=n 為整數。",
-      "排除除以 0、無限多個正因數及 12 是 5 的倍數等錯誤敘述。"
+      "以任意正整數 n 寫出 n=1×n。",
+      "用除數不能為 0 與因數個數有限排除中間兩項。",
+      "檢查 12÷5 有餘數，確認只有第一項成立。"
     ],
     "optionAnalysis": [
       {
@@ -537,7 +546,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "264fe2e7a3aa222eeff5fcc896b66fad168e34ba5c77dd77f595e8b2fbcb3dd8",
+    "contentSha256": "b73c6ec446372171de13d911701033d4da4985c4db94866221a7cac81ea26a00",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -559,10 +568,11 @@ export const QUESTIONS = [
       "4 個"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：6 和 9 的共同倍數是 18 的倍數；小於 50 的有 18、36，共 2 個。所以答案是「2 個」。",
+    "explanation": "6 和 9 的共同倍數是最小公倍數 18 的倍數。依序列出 18、36、54，題目限制小於 50，所以只能保留 18、36，共有 2 個；54 已超出範圍，不能列入計數。",
     "steps": [
-      "6 和 9 的共同倍數是 18 的倍數",
-      "小於 50 的有 18、36，共 2 個"
+      "先求 6、9 的最小公倍數為 18。",
+      "列出小於 50 的 18 倍數：18、36。",
+      "排除 54 後計數，得到 2 個。"
     ],
     "optionAnalysis": [
       {
@@ -599,7 +609,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8419eeebc431aba025028b4e1daed669233ec593517de155388b188d1ebbd341",
+    "contentSha256": "6d37fe70e0eb2cd643eea999a2b8ba55de1b557f801c7ed5ec65792de5e6f7c0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -621,10 +631,11 @@ export const QUESTIONS = [
       "24"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：n 必須同時是 6 的倍數和 54 的因數；54 的因數中符合者只有 18。所以答案是「18」。",
+    "explanation": "6 是 n 的因數，故 n 必須是 6 的倍數；n 又是 54 的因數，且大於 10。逐項檢查，18=6×3 且 54÷18=3，三個條件全符合；其餘選項至少違反一項，因此只能選 18。",
     "steps": [
-      "n 必須同時是 6 的倍數和 54 的因數",
-      "54 的因數中符合者只有 18"
+      "先從 6 是 n 的因數得知 n 是 6 的倍數。",
+      "再檢查 n 是否整除 54 且 n>10。",
+      "確認只有 18 同時滿足三個條件。"
     ],
     "optionAnalysis": [
       {
@@ -648,7 +659,7 @@ export const QUESTIONS = [
         "reason": "24 不是 54 的因數。"
       }
     ],
-    "commonMistake": "只檢查其中一個條件。",
+    "commonMistake": "只檢查六的倍數或五十四的因數其中一項，沒有取條件交集。",
     "concept": "複合條件必須同時滿足因數與倍數關係。",
     "tags": [
       "數與量",
@@ -661,7 +672,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f98f7befaa75fe10489a42a6d5ed88c797829bb35ba4899b30aed334bf5170c6",
+    "contentSha256": "164beb81cc15f632c0da6f949ed56a1929bee5a1d31598a5f8fa41a54503bb2d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -683,10 +694,11 @@ export const QUESTIONS = [
       "20"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：20 的正因數為 1、2、4、5、10、20；正好有 6 個。所以答案是「20」。",
+    "explanation": "20 的正因數成對列為 1、2、4、5、10、20，正好 6 個。相較之下，16 有 5 個、24 有 8 個、25 有 3 個正因數，因此只有 20 符合「有且只有 6 個」，而且列舉沒有遺漏或重複。",
     "steps": [
-      "20 的正因數為 1、2、4、5、10、20",
-      "正好有 6 個"
+      "完整列出 20 的正因數並確認不重複。",
+      "計數得到 1、2、4、5、10、20 共 6 個。",
+      "檢查其他選項的因數個數後確認答案唯一。"
     ],
     "optionAnalysis": [
       {
@@ -710,7 +722,7 @@ export const QUESTIONS = [
         "reason": "20 有 6 個正因數。"
       }
     ],
-    "commonMistake": "只列部分因數就下結論。",
+    "commonMistake": "只列出二十的部分因數便停止，沒有成對檢查直到全部列完。",
     "concept": "判斷因數個數時必須完整列舉。",
     "tags": [
       "數與量",
@@ -723,7 +735,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "35d43924652dadf664e2a52dde4e78b0e14869526d6617db926316a05f8097a8",
+    "contentSha256": "319c8b895caf00075dad3306f3939f1ebdef8d4a5b20b876b94debb80bf10404",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -745,10 +757,11 @@ export const QUESTIONS = [
       "65"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：同時以 5 和 6 為因數，表示是 30 的倍數；40 到 70 之間只有 60。所以答案是「60」。",
+    "explanation": "同時以 5、6 為因數，表示所求數是 5 與 6 的共同倍數，也就是 30 的倍數。介於 40、70 之間的 30 倍數只有 60，且 60÷5=12、60÷6=10，兩條件都成立，所以答案具有唯一性。",
     "steps": [
-      "同時以 5 和 6 為因數，表示是 30 的倍數",
-      "40 到 70 之間只有 60"
+      "求出 5、6 的最小公倍數為 30。",
+      "列出 40 與 70 之間的 30 倍數。",
+      "驗算 60 可同時被 5、6 整除。"
     ],
     "optionAnalysis": [
       {
@@ -785,7 +798,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2de44adbc8aa0d788110b6075ba0a24f192f13512f1937822cd6f24f66bd9ee1",
+    "contentSha256": "8a58968eda788a12eb9f84a8947d4bea1df7f62f4ba5349e791c78181dcf984a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -807,10 +820,11 @@ export const QUESTIONS = [
       "12 組"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：組數必須是 72 的因數；72÷10 不是整數，所以 10 組會有剩餘。所以答案是「10 組」。",
+    "explanation": "要平均分組且不剩，組數必須整除 72。72÷6=12、72÷8=9、72÷12=6 都是整數；72÷10=7 餘 2，會剩兩張卡片，因此只有 10 組不可行，無法滿足題意所說的平均且完全分完。",
     "steps": [
-      "組數必須是 72 的因數",
-      "72÷10 不是整數，所以 10 組會有剩餘"
+      "把每個候選組數當作 72 的除數。",
+      "計算 72÷10=7 餘 2，發現不能平均分完。",
+      "確認 6、8、12 組皆可整除 72。"
     ],
     "optionAnalysis": [
       {
@@ -847,7 +861,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "「平均分且不剩」決定了必須檢查組數是否為 72 的因數；刪除情境就無法判定所問的分組條件。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "23214a5deec47f76d2c219b58596ddb22a919afa85c8dc1ad64b935434e6a649",
+    "contentSha256": "70fb00c1498d6b00ce6b9cd9c798698a3fd86e15538addb019c15e4e6cea26f9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -869,10 +883,11 @@ export const QUESTIONS = [
       "10 公分"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：每段長度必須是 96 的因數；96÷8=12，沒有剩餘。所以答案是「8 公分」。",
+    "explanation": "每段等長且完全剪完，段長必須是 96 的因數。96÷8=12，能剪成 12 段且沒有剩餘；96 除以 5、7、10 都有餘數，所以可行的段長是 8 公分，並非只要是整數長度就可以。",
     "steps": [
-      "每段長度必須是 96 的因數",
-      "96÷8=12，沒有剩餘"
+      "把每個候選段長拿來除總長 96 公分。",
+      "確認 96÷8=12，商為整數且無餘數。",
+      "排除除後有餘數的 5、7、10 公分。"
     ],
     "optionAnalysis": [
       {
@@ -896,7 +911,7 @@ export const QUESTIONS = [
         "reason": "96÷10 有餘數。"
       }
     ],
-    "commonMistake": "只看段長是否小於總長。",
+    "commonMistake": "只看候選段長小於九十六公分，沒有檢查能否完全整除總長。",
     "concept": "等長剪裁的段長必須整除總長。",
     "tags": [
       "數與量",
@@ -909,7 +924,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "緞帶總長、整數公分與完全剪完三項資料共同限定整除關係，情境不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a39a23e94ed9fc80fd176ea073ef2c95fbee5fd2da70b1f415012b5721e3a12a",
+    "contentSha256": "b97ed0bf80c55704b819e7ebb098a8ad4a00ac60eaa108dc2981b5f57d3f1da2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -931,10 +946,11 @@ export const QUESTIONS = [
       "14 區"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：196÷14=14；14 是區數，196 也是 14 的倍數。所以答案是「14 區」。",
+    "explanation": "總區數要用總座位數除以每區座位數，196÷14=14。再以 14 區×每區 14 個座位=196 驗算，全部座位正好編完，因此答案是 14 區，且不會有空位或額外座位。",
     "steps": [
-      "196÷14=14",
-      "14 是區數，196 也是 14 的倍數"
+      "辨認總量 196 與每區 14 個座位。",
+      "計算 196÷14=14，得到區數。",
+      "用 14×14=196 驗證沒有剩餘座位。"
     ],
     "optionAnalysis": [
       {
@@ -971,7 +987,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每區 14 席和總席數 196 是求區數的必要資料，必須依實際編區條件相除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4d2ec5d318566c169c72d9717d88f6d0660614b81df918b87ce25bb57b1c34b3",
+    "contentSha256": "f82e11de5fbecaa367c09a0ff47085f68644b71afce66ae681bbee0ec6fd0d38",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -993,9 +1009,9 @@ export const CONSTRUCTED_RESPONSES = [
       "說明檢查到平方根即可。"
     ],
     "fullCreditSolution": [
-      "因數配對：1×48、2×24、3×16、4×12、6×8。",
-      "所以正因數為1、2、3、4、6、8、12、16、24、48。",
-      "因數成對出現；只需檢查不超過 √48 的正整數，所有配對商都已列入，因此沒有遺漏。"
+      "先成對找乘積為 48 的正整數：1×48、2×24、3×16、4×12、6×8。",
+      "整理兩側且不重複，正因數為 1、2、3、4、6、8、12、16、24、48。",
+      "因為只需檢查不超過 √48 的整數，5、7 都不能整除，而所有較小因數的配對商均已列入，所以沒有遺漏。"
     ],
     "alternativeSolutions": [
       "也可逐一用48除以1到6，記錄無餘數者及對應商。"
@@ -1032,7 +1048,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "c6dfdafebf3845151a4383a45b2aea0753f4c176e9c2ab8a265d0eb30cfe7186",
+    "contentSha256": "3f0f2d238bb83f2a0c5e57584d5bce4e9a6051fc716be4c2317b900373fd9cff",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1051,9 +1067,9 @@ export const CONSTRUCTED_RESPONSES = [
       "說明為何沒有其他值。"
     ],
     "fullCreditSolution": [
-      "6與8的最小共同倍數是24。",
-      "同時含6、8為因數的n必須是24的倍數。",
-      "小於80的正倍數為24、48、72。"
+      "6、8 都是 n 的因數，表示 n 必須同時是 6、8 的倍數；兩數最小公倍數為 24。",
+      "因此所有可能 n 都是 24 的正倍數，依序為 24、48、72、96。",
+      "套用 n<80 的嚴格範圍，排除 96，故所有可能值恰為 24、48、72。"
     ],
     "alternativeSolutions": [
       "可分別列6與8的倍數後取交集。"
@@ -1081,16 +1097,16 @@ export const CONSTRUCTED_RESPONSES = [
       "若寫0不計，因題目要求正整數。"
     ],
     "commonErrors": [
-      "寫成14。",
-      "只列24。",
-      "把96列入。"
+      "把最小值十四誤當成唯一答案，沒有繼續逐一列出其倍數。",
+      "只列出二十四而漏掉同樣符合條件的其他整數。",
+      "把上界九十六也列入，忽略題目要求必須小於九十六。"
     ],
     "independentReview": {
       "derivedResult": "n=24、48、72。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "be132995c5de5382ff23672f79354735fc3966adad314ef08e140d3525005f33",
+    "contentSha256": "962df39efd4e3763d35efeb844eb2b5417193173443ace42cca388cdfb93c4e3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

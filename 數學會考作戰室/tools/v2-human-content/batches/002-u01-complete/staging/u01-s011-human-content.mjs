@@ -57,10 +57,9 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "四則混合不能只看哪個數容易算。標準順序是先括號，再乘除，最後加減；同級由左到右。",
-    "加減部分若全部改寫成帶號加法，可使用交換律與結合律，但乘除與加法混合時不可任意換序。",
-    "負數應使用括號，特別是除法與乘法，例如 12÷(-3)。",
-    "情境題先列完整式，逐項標示意義，再依順序計算，能避免漏掉固定費或初始值。"
+    "整數四則混合運算的順序是先括號，再乘除，最後加減；乘與除彼此同級，加與減也彼此同級，同級運算必須由左到右，不能挑看起來容易的部分先算。",
+    "每一步只化簡一個局部，其他項連同前面的正負號完整抄回，可以降低變號或漏項風險。負數作為因數或除數時宜保留括號，讓運算符號與數本身的符號清楚分開。",
+    "情境題先寫起始量，再依時間順序列出每筆帶號變化；重複發生的變化用乘法合併。列成完整算式後仍依標準順序計算，最後檢查所得方向與實際情境是否合理。"
   ],
   "formalDefinitions": [
     {
@@ -97,102 +96,80 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "標出最內層括號。",
-      "check": "是否有遺漏括號？"
+      "instruction": "完整抄下算式並標出最內層括號，先只計算括號內部。",
+      "check": "括號外的負號、乘除與其他項都原樣保留，沒有提早合併。"
     },
     {
       "step": 2,
-      "instruction": "完成所有乘除，由左到右。",
-      "check": "除法是否誤跳過？"
+      "instruction": "處理所有乘法與除法；若連續出現，嚴格依原式由左向右。",
+      "check": "沒有因乘法看似容易就跳過前方同級除法，也沒有擅自改變分組。"
     },
     {
       "step": 3,
-      "instruction": "完成加減，由左到右。",
-      "check": "負號是否跟著數？"
+      "instruction": "乘除完成後，再把剩餘加法與減法由左向右逐項合併。",
+      "check": "減去負數已正確轉為加上相反數，每個數前的符號都跟著抄寫。"
     },
     {
       "step": 4,
-      "instruction": "每一步只改一個局部。",
-      "check": "抄寫其他項時是否變號？"
+      "instruction": "每一行只改一個運算層級，保留足以追查符號來源的中間式。",
+      "check": "前後兩行除已處理局部外完全一致，沒有漏項或無故變號。"
     },
     {
       "step": 5,
-      "instruction": "以估算與情境檢查。",
-      "check": "結果大小和方向合理嗎？"
+      "instruction": "情境題核對起始量、每筆變化、重複次數與單次費用是否全都列入。",
+      "check": "結果單位正確，且增加、扣除或下降後的大小方向符合題目敘述。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "計算 8+(-3)×5。",
-      "solutionSteps": [
-        "先乘法：(-3)×5=-15。",
-        "算式成 8+(-15)。",
-        "結果 -7。"
-      ],
-      "answer": "-7。"
+      "exampleId": "u01-s011-example-a",
+      "prompt": "計算 14+(-4)×6。",
+      "answer": "-10。",
+      "why": "先算優先級較高的乘法，負四乘六等於負二十四，原式再化為十四加負二十四。完成加法得到負十；若先算十四加負四就會破壞順序。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "計算 24÷(-6)-3。",
-      "solutionSteps": [
-        "先除法：24÷(-6)=-4。",
-        "再算 -4-3。",
-        "結果 -7。"
-      ],
-      "answer": "-7。"
+      "exampleId": "u01-s011-example-b",
+      "prompt": "計算 36÷(-4)+[3-8]。",
+      "answer": "-14。",
+      "why": "除法三十六除以負四等於負九，中括號三減八等於負五；兩部分都化簡後相加，負九加負五等於負十四，且每個負號都有明確來源。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "計算 18-[4+(-7)]×2。",
-      "solutionSteps": [
-        "括號 4+(-7)=-3。",
-        "乘法 (-3)×2=-6。",
-        "18-(-6)=24。"
-      ],
-      "answer": "24。"
+      "exampleId": "u01-s011-example-c",
+      "prompt": "起始有 150 點，連續 5 次各扣 12 點，再補回 20 點，最後有多少點？",
+      "answer": "110 點。",
+      "why": "五次扣點先合併為負十二乘五等於負六十，再把起始、扣點與補點完整列成一百五十減六十加二十，依序計算得到一百一十點。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "計算 -30÷5×2+9。",
-      "solutionSteps": [
-        "乘除同級由左到右：-30÷5=-6。",
-        "再 -6×2=-12。",
-        "最後 -12+9=-3。"
-      ],
-      "answer": "-3。"
+      "exampleId": "u01-s011-ex04-r4",
+      "prompt": "計算 48÷[3×(-2)]-5。",
+      "answer": "-13。",
+      "why": "先算中括號 3×(-2)=-6，使原式成 48÷(-6)-5；再完成除法得 -8，最後做加減得到 -13，每一步只處理一個運算層級，也保留中括號作為完整除數的意義。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "先算 8+(-3)。",
-      "why": "忽略乘法優先。",
-      "correction": "先算 (-3)×5。"
+      "mistake": "一律從算式最左邊開始，不先處理後方的乘法或除法。",
+      "correction": "先按括號、乘除、加減分層；只有同一層級才由左向右。"
     },
     {
-      "mistake": "乘除式先算右邊乘法。",
-      "why": "誤認乘法一定先於除法。",
-      "correction": "同級由左到右。"
+      "mistake": "認為乘法永遠先於除法，將右側乘法跨過左側除法先算。",
+      "correction": "乘法與除法同級，沒有括號時必須依它們出現的順序由左到右。"
     },
     {
-      "mistake": "加減式先做加法。",
-      "why": "誤認加法優先。",
-      "correction": "同級由左到右。"
+      "mistake": "括號算完只抄數值，漏掉括號外原有的減號或負號。",
+      "correction": "每次化簡後重抄完整算式，讓外部運算符號繼續保留到該層處理。"
     },
     {
-      "mistake": "括號算完後漏掉外部負號。",
-      "why": "只關注括號內。",
-      "correction": "抄下並處理括號外運算。"
+      "mistake": "同一行同時改動多個局部，導致無法查出哪一步發生變號。",
+      "correction": "一行只處理一個運算層級，其餘項原樣抄回以保留可追溯性。"
     },
     {
-      "mistake": "每一步同時改多處導致變號。",
-      "why": "省略中間步驟。",
-      "correction": "一次只處理一個局部。"
+      "mistake": "情境列式只寫重複變化，漏掉起始量或最後一次單獨費用。",
+      "correction": "依時間順序建立清單，逐一核對起始量、重複項與單次項都已進入算式。"
     },
     {
-      "mistake": "情境列式漏掉起始量。",
-      "why": "只列變化項。",
-      "correction": "先寫起始量，再接全部變化。"
+      "mistake": "先算 48÷3，再把所得結果乘 -2，忽略中括號指定的整體除數。",
+      "correction": "中括號內的乘積是完整除數，必須先求 -6，才能進行 48÷(-6)。"
     }
   ],
   "selfCheck": [
@@ -247,7 +224,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "81ea334152405500f2186a9e2de0a6b6238a643b1f8d15a02eba3b0da4bcefb0",
+  "contentSha256": "78abe1df08b67e27a0d123c7d3cd131d7046d8033737b2a735fadb84987e9825",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -271,11 +248,11 @@ export const QUESTIONS = [
       "-55"
     ],
     "answerIndex": 0,
-    "explanation": "先乘法：(-3)×5=-15，再8+(-15)=-7。",
+    "explanation": "算式同時含加法與乘法，依運算順序要先算乘法。負三乘五等於負十五，原式化為八加負十五；從八向負方向移十五得到負七，所以答案是負七。",
     "steps": [
-      "先算乘法-15。",
-      "再算8-15。",
-      "得到-7。"
+      "先處理優先級較高的乘法，計算 (-3)×5=-15。",
+      "將原式重寫為 8+(-15)，保留負十五的符號。",
+      "完成整數加法得到 -7，並確認未先算 8+(-3)。"
     ],
     "optionAnalysis": [
       {
@@ -299,7 +276,7 @@ export const QUESTIONS = [
         "reason": "把8也乘5。"
       }
     ],
-    "commonMistake": "先算8+(-3)，忽略乘法優先。",
+    "commonMistake": "從左端先算八加負三，忽略乘法必須在外部加法之前完成。",
     "concept": "四則混合先乘除後加減。",
     "tags": [
       "數與量",
@@ -314,7 +291,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "136cac6e8a2d671a54095cd771c65cbad8ee5fd291c4c1f1677b456ae3513626",
+    "contentSha256": "79cbcb447abf24bd1d297d258025acf16a84371c734cb7e3b9f23a0d6ab517ba",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -336,11 +313,11 @@ export const QUESTIONS = [
       "7"
     ],
     "answerIndex": 1,
-    "explanation": "先除法24÷(-6)=-4，再-4-3=-7。",
+    "explanation": "除法的優先級高於後面的減法，先計算二十四除以負六得負四。接著原式成為負四減三，也就是再向負方向移三，結果為負七。",
     "steps": [
-      "先算除法-4。",
-      "再減3。",
-      "得-7。"
+      "先算 24÷(-6)，異號相除得到 -4。",
+      "把尚未處理的減三抄回，形成 -4-3。",
+      "計算 -4-3=-7，並檢查沒有把減三誤成加三。"
     ],
     "optionAnalysis": [
       {
@@ -364,7 +341,7 @@ export const QUESTIONS = [
         "reason": "漏負號。"
       }
     ],
-    "commonMistake": "把-4-3算成-1。",
+    "commonMistake": "將負四減三錯算成負一，把減去正三誤當成往零方向移動。",
     "concept": "先除法，負數再減正數。",
     "tags": [
       "數與量",
@@ -379,7 +356,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "87e80d28a37cc8ed0278aa4443b2e90d60647e72c39ba6dd5f385af6c00f89e7",
+    "contentSha256": "0035add63b48ea7cffccd4a5b18cd9e9cd4f1ae28e95354bd5b4a8e274060cc8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -401,11 +378,11 @@ export const QUESTIONS = [
       "30"
     ],
     "answerIndex": 2,
-    "explanation": "先括號4-7=-3，再乘2得-6，最後18-(-6)=24。",
+    "explanation": "先計算括號內四加負七等於負三，再乘二得到負六。最後原式為十八減負六；減去負數等於加上其相反數，所以十八加六等於二十四。",
     "steps": [
-      "括號=-3。",
-      "乘法=-6。",
-      "18+6=24。"
+      "先算中括號 [4+(-7)]=-3。",
+      "依序完成乘法 (-3)×2=-6，原式化為 18-(-6)。",
+      "把減負六改成加六，計算 18+6=24。"
     ],
     "optionAnalysis": [
       {
@@ -429,7 +406,7 @@ export const QUESTIONS = [
         "reason": "括號符號錯。"
       }
     ],
-    "commonMistake": "括號得-3後，將18-(-6)算成12。",
+    "commonMistake": "括號與乘法都算對後，仍把十八減負六當作十八減六而得到十二。",
     "concept": "先括號、再乘法、最後減法。",
     "tags": [
       "數與量",
@@ -444,7 +421,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e8b9c605d93fe0c5cb13ca77ac1e622ba315bbfa677794b452f0661b71f221f8",
+    "contentSha256": "93b889c536d0999a61c66d520668e72f2196aede802bd9ae501e3bb9fc2e79c6",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -466,11 +443,11 @@ export const QUESTIONS = [
       "-3"
     ],
     "answerIndex": 3,
-    "explanation": "乘除同級由左到右：-30÷5=-6，-6×2=-12，最後-12+9=-3。",
+    "explanation": "乘法與除法屬於同一優先級，必須由左到右。先算負三十除以五得負六，再乘二得負十二；最後加九，負十二加九等於負三。",
     "steps": [
-      "左到右除法=-6。",
-      "乘2得-12。",
-      "加9得-3。"
+      "由左到右先做除法，計算 (-30)÷5=-6。",
+      "接著完成同級乘法 (-6)×2=-12。",
+      "最後做加法 -12+9=-3，得到原式值為 -3。"
     ],
     "optionAnalysis": [
       {
@@ -494,7 +471,7 @@ export const QUESTIONS = [
         "reason": "((-30÷5)×2)+9=-3。"
       }
     ],
-    "commonMistake": "先算5×2=10，再做-30÷10。",
+    "commonMistake": "誤認乘法一定優先於除法，先把五乘二組成十而改變原式結合順序。",
     "concept": "連續乘除同級由左到右。",
     "tags": [
       "數與量",
@@ -509,7 +486,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "cf18e1699cda88260dacc92dcaa813cb8a0b12787aca6c7609d570aa882a6432",
+    "contentSha256": "546eef88785bcedbf64c4e10ea6e3025c613bea08fb8a7bf0c171b3443bc5505",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -531,11 +508,11 @@ export const QUESTIONS = [
       "-33"
     ],
     "answerIndex": 0,
-    "explanation": "先3×5=15，再16-15+2=1+2=3。",
+    "explanation": "算式中間的三乘五要先於兩側加減，先得到十五。原式化成十六減十五加二；加減同級由左到右，先得一，再加二得到三。",
     "steps": [
-      "乘法15。",
-      "16-15=1。",
-      "1+2=3。"
+      "先計算乘法 3×5=15，其他項保持不變。",
+      "由左到右計算 16-15=1。",
+      "再算 1+2=3，確認後方的加二沒有漏掉。"
     ],
     "optionAnalysis": [
       {
@@ -559,7 +536,7 @@ export const QUESTIONS = [
         "reason": "錯誤分組。"
       }
     ],
-    "commonMistake": "把16-3先算成13。",
+    "commonMistake": "先把十六減三算成十三，再乘五，違反乘法優先於加減的規則。",
     "concept": "乘法優先於加減。",
     "tags": [
       "數與量",
@@ -574,7 +551,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c853b9fc8f7a6f24ede63cda52a160a82f2cd485bd8e8734ef563b6a2bd6636c",
+    "contentSha256": "37563d2cbedbd8fe9d8946cb110e7c94ddf43a7b75d7cf881dcac88e39eef6a3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -596,11 +573,11 @@ export const QUESTIONS = [
       "27"
     ],
     "answerIndex": 1,
-    "explanation": "括號內-8+5=-3，再(-3)×(-4)=12。",
+    "explanation": "括號把負八加五指定為一個整體，因此先算括號得到負三。接著負三乘負四是同號相乘，結果為正；三乘四等於十二，所以原式值為十二。",
     "steps": [
-      "先括號=-3。",
-      "負乘負得正。",
-      "3×4=12。"
+      "先處理括號 (-8+5)=-3，不能先把五與外部負四相乘。",
+      "將原式化為 (-3)×(-4)，判定同號乘積為正。",
+      "計算 3×4=12，合併符號得到 12。"
     ],
     "optionAnalysis": [
       {
@@ -624,7 +601,7 @@ export const QUESTIONS = [
         "reason": "大小與符號錯。"
       }
     ],
-    "commonMistake": "先做5×(-4)，破壞括號。",
+    "commonMistake": "跳過括號先算五乘負四，破壞題目明確指定的運算範圍。",
     "concept": "括號優先，負乘負得正。",
     "tags": [
       "數與量",
@@ -639,7 +616,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "484cd483a41dc3882bfdf9c6d82f47296dbe08a1572911179c6647642f463936",
+    "contentSha256": "772cbae2b91f33588984975eeef1a8aa4b0053fa021848c6a8815b879cedc04d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -661,11 +638,11 @@ export const QUESTIONS = [
       "17"
     ],
     "answerIndex": 2,
-    "explanation": "48÷(-6)=-8；括號7-(-2)=9；-8-9=-17。",
+    "explanation": "先分別處理除法與中括號：四十八除以負六得負八，七減負二等於九。原式因此變成負八減九，兩個負向量合計為負十七。",
     "steps": [
-      "除法=-8。",
-      "括號=9。",
-      "相減=-17。"
+      "計算除法 48÷(-6)=-8。",
+      "計算中括號 [7-(-2)]=7+2=9。",
+      "把兩部分代回成 -8-9，得到 -17。"
     ],
     "optionAnalysis": [
       {
@@ -689,7 +666,7 @@ export const QUESTIONS = [
         "reason": "漏負號。"
       }
     ],
-    "commonMistake": "把7-(-2)算成5。",
+    "commonMistake": "把七減負二錯看成七減二得到五，使後續兩部分的差也跟著錯誤。",
     "concept": "同時處理除法與括號內減負。",
     "tags": [
       "數與量",
@@ -704,7 +681,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "667fdd6522e51e24642d06d759b31e5701d77959369cf851796776b240405241",
+    "contentSha256": "5ae1cded6967b8bc33febeb752c6f3390046400aa24c6db82207b3a0a104e9da",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -726,11 +703,11 @@ export const QUESTIONS = [
       "26"
     ],
     "answerIndex": 3,
-    "explanation": "乘除由左到右：(-3)×4=-12，-12÷2=-6；20-(-6)=26。",
+    "explanation": "先依乘除同級由左到右，負三乘四得負十二，再除以二得負六。此時原式是二十減負六，等於二十加六，所以結果為二十六。",
     "steps": [
-      "乘法=-12。",
-      "除法=-6。",
-      "20+6=26。"
+      "先完成乘法 (-3)×4=-12，不先處理左側減號。",
+      "接著由左到右算 (-12)÷2=-6。",
+      "最後計算 20-(-6)=20+6=26。"
     ],
     "optionAnalysis": [
       {
@@ -754,7 +731,7 @@ export const QUESTIONS = [
         "reason": "20-[(-3×4)÷2]=26。"
       }
     ],
-    "commonMistake": "看到20-(-3)就先算23，忽略乘法。",
+    "commonMistake": "看到二十減負三便先算二十三，忽略負三仍屬於後方乘除項。",
     "concept": "減號前的項不能越過尚未完成的乘除。",
     "tags": [
       "數與量",
@@ -769,7 +746,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1c42f057d5ca5b28d255c65be4359134c82392df83f9cee5441132a40c5f4c84",
+    "contentSha256": "1dbbc301fb0b7018a60f51b25544f905647ab84971d7cfa3d8a9450e6ffe37ec",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -791,11 +768,11 @@ export const QUESTIONS = [
       "-20"
     ],
     "answerIndex": 0,
-    "explanation": "括號5-9=-4；-2×(-4)=8；(-3)×4=-12；8-12=-4。",
+    "explanation": "先算中括號五減九等於負四，第一個乘積負二乘負四得八；第二個乘積負三乘四得負十二。最後把兩個乘積相加，八加負十二等於負四。",
     "steps": [
-      "括號=-4。",
-      "兩乘積8與-12。",
-      "相加=-4。"
+      "先算 [5-9]=-4，再得 (-2)×(-4)=8。",
+      "獨立計算第二項 (-3)×4=-12。",
+      "合併兩項 8+(-12)=-4，確認沒有漏掉第二個乘積。"
     ],
     "optionAnalysis": [
       {
@@ -819,7 +796,7 @@ export const QUESTIONS = [
         "reason": "兩部分都錯。"
       }
     ],
-    "commonMistake": "只算第一個乘積8，漏掉第二項。",
+    "commonMistake": "算出第一個乘積八便停止，沒有把後面的負十二視為完整第二項相加。",
     "concept": "先各自完成乘積，再合併帶號結果。",
     "tags": [
       "數與量",
@@ -834,7 +811,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "94d7160d1fdbbc29a59e9627e9903fb7965e38d09ac0d58dc03808fd8784282f",
+    "contentSha256": "cebd0142cc0e5ffa13d8cedae7f2e0a3c86b3823640d0e6abf2839f47ee9d8d9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -856,11 +833,11 @@ export const QUESTIONS = [
       "205 點"
     ],
     "answerIndex": 1,
-    "explanation": "120+(-15)×4+25=120-60+25=85。",
+    "explanation": "四次各扣十五點的總變化是 (-15)×4=-60 點。從起始一百二十點先扣六十剩六十，再補發二十五點，最後得到八十五點，起始量、扣點與補點三者都已計入。",
     "steps": [
-      "四次扣點總變化-60。",
-      "120-60=60。",
-      "再加25得85。"
+      "將四次扣點合併為 (-15)×4=-60 點。",
+      "用起始點數加總扣點，計算 120+(-60)=60 點。",
+      "再加補發的 25 點，得到最後 85 點。"
     ],
     "optionAnalysis": [
       {
@@ -884,7 +861,7 @@ export const QUESTIONS = [
         "reason": "所有數都加。"
       }
     ],
-    "commonMistake": "先算120-15再乘4，把起始點數也重複四次。",
+    "commonMistake": "先把一百二十減十五後整體乘四，錯把起始點數也重複計算四次。",
     "concept": "重複固定變化先乘，再加到起始量。",
     "tags": [
       "數與量",
@@ -899,7 +876,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始點數、每次扣點、次數與補發都不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "591eb2384553c1bd9f1a31b69656e4125baf48757c9d8bf52c5faf24a683da27",
+    "contentSha256": "cfaeb47774aa8ca3ffe56393062f7c8a664602b5d562bd144bbcacb330cfcb17",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -921,11 +898,11 @@ export const QUESTIONS = [
       "145 元"
     ],
     "answerIndex": 2,
-    "explanation": "-50+3×40-25=-50+120-25=45。",
+    "explanation": "三天每天存四十元，總存款為三乘四十等於一百二十元。把它加到起始負五十元得到七十元，再扣二十五元手續費，最終餘額是四十五元。",
     "steps": [
-      "三天存款120。",
-      "-50+120=70。",
-      "扣25得45。"
+      "先計算三天存款總額 3×40=120 元。",
+      "加到起始餘額，算 -50+120=70 元。",
+      "最後扣除手續費，70-25=45 元。"
     ],
     "optionAnalysis": [
       {
@@ -949,7 +926,7 @@ export const QUESTIONS = [
         "reason": "漏手續費。"
       }
     ],
-    "commonMistake": "算3×40-25=95後，忘記起始餘額-50。",
+    "commonMistake": "只計算三天存款減手續費，漏掉起始餘額本來是負五十元。",
     "concept": "起始量與重複交易需依運算順序整合。",
     "tags": [
       "數與量",
@@ -964,7 +941,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始負餘額、每日金額、天數與手續費共同決定結果。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ce4a0f7d6142ea4d627d15b6f0e3496adfc8ccfd39874d5b9eea10f711f583fd",
+    "contentSha256": "11f4cf16934a3649202ba59c2e4f3184ed3e5aff77f2b527c2853f911709f93d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -986,11 +963,11 @@ export const QUESTIONS = [
       "8 分"
     ],
     "answerIndex": 3,
-    "explanation": "-10+5×6+3×(-4)=-10+30-12=8。",
+    "explanation": "答對五題增加五乘六等於三十分，答錯三題的變化為三乘負四等於負十二分。把兩筆變化都加到起始負十分，負十加三十再減十二等於八分。",
     "steps": [
-      "答對總分30。",
-      "答錯總分-12。",
-      "加起始-10得8。"
+      "計算答對得分 5×6=30 分。",
+      "計算答錯變化 3×(-4)=-12 分。",
+      "合併起始分與兩筆變化，-10+30-12=8 分。"
     ],
     "optionAnalysis": [
       {
@@ -1014,7 +991,7 @@ export const QUESTIONS = [
         "reason": "-10+30-12=8。"
       }
     ],
-    "commonMistake": "只算30-12=18，漏掉起始-10。",
+    "commonMistake": "只把答對與答錯的變化相加，忘記最後分數還必須包含起始的負十分。",
     "concept": "不同類型的重複得分分別相乘再合併。",
     "tags": [
       "數與量",
@@ -1029,7 +1006,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始分數、答對答錯數量與每題分值全部必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5a3acea5f01a6c8344938b66c55ecd01829820681982f7ad0d9bba984c2271ba",
+    "contentSha256": "214d2e2942f59c8623151248ba706e3dff1c125429c6decd874174ffb9586617",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1051,9 +1028,9 @@ export const CONSTRUCTED_RESPONSES = [
       "最後做減法。"
     ],
     "fullCreditSolution": [
-      "括號：6+(-8)=-2。",
-      "乘除：(-2)×4=-8，-8÷2=-4。",
-      "最後：30-(-4)=34。"
+      "先處理括號：6+(-8)=-2，因此原式化為 30-(-2)×4÷2，括號外的運算全部保留。",
+      "乘除同級由左到右，先算 (-2)×4=-8，再算 (-8)÷2=-4，不能任意交換順序。",
+      "最後處理減法：30-(-4)=30+4=34，所以原式值為 34，並以減負等於加正檢查符號。"
     ],
     "alternativeSolutions": [
       "可寫30-[(-2)×4÷2]=30-(-4)=34。"
@@ -1080,17 +1057,22 @@ export const CONSTRUCTED_RESPONSES = [
       "乘除由左到右，但本題改寫(-2)×(4÷2)也因乘法結合可得同值；須說明等價。"
     ],
     "commonErrors": [
-      "括號算14。",
-      "30-(-2)先算。",
-      "最後減負算26。"
+      "把括號內六加負八錯算成十四，沒有依異號加法求差。",
+      "在括號化簡後先算三十減負二，跳過後方尚未完成的乘除運算。",
+      "最後把三十減負四仍當作三十減四，因而錯答二十六。"
     ],
     "independentReview": {
       "derivedResult": "34。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "335a6e21451f4fd70ba7b1845948ecccbeaca9045060292072a9f917f0a5c1d6",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "748dfc231b50f7f2402166d79ba0c48575910c404580bf7aee7bc6cbffe019ce",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "只計算最內層括號並完整抄回括號外的乘除與減法。",
+      "完成乘除時嚴格由左到右，一次只化簡一個局部。",
+      "最後將減去負四轉成加四，得到三十四並檢查符號。"
+    ]
   },
   {
     "questionId": "u01-s011-cr002",
@@ -1108,9 +1090,9 @@ export const CONSTRUCTED_RESPONSES = [
       "先乘法後加減。"
     ],
     "fullCreditSolution": [
-      "算式：200+(-18)×6+25×2-12。",
-      "先算乘法：-108與50。",
-      "200-108+50-12=130。"
+      "完整算式為 200+(-18)×6+25×2-12，其中起始點數、六週扣點、兩次補點與最後扣點都已列入。",
+      "依先乘後加減，算得 (-18)×6=-108，25×2=50，原式化為 200-108+50-12。",
+      "加減同級由左到右：200-108=92，92+50=142，142-12=130，因此餘額為 130 點。"
     ],
     "alternativeSolutions": [
       "可寫200-18×6+2×25-12。"
@@ -1137,17 +1119,22 @@ export const CONSTRUCTED_RESPONSES = [
       "兩次補25不可只加一次。"
     ],
     "commonErrors": [
-      "200-18後再乘6。",
-      "漏12。",
-      "把扣點記正。"
+      "先計算二百減十八再乘六，錯把起始二百點也重複計算六次。",
+      "只算六週扣點與兩次補點，漏掉最後另外扣除的十二點。",
+      "把每週扣十八點寫成正十八，造成六週變化方向與情境相反。"
     ],
     "independentReview": {
       "derivedResult": "130點。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "41d43df13ffc8df06909d73bab47e241afbeae5b3f3d0f47aaa63710415782d8",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "92e8b4e14cfd6e0c0ccede74a8eee111203f1765aecba29d71e428fd469afeff",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "先把每一筆變化翻成帶號數，重複六次與兩次的項目分別用乘法表示。",
+      "先算兩個乘積得到負一百零八與正五十，起始值和單次扣點保持不變。",
+      "由左到右合併所有加減項，並逐一核對四類資料都已計入。"
+    ]
   }
 ];
 

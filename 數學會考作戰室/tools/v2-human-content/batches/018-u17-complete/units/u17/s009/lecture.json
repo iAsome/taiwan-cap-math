@@ -59,9 +59,9 @@
     }
   ],
   "conceptNarrative": [
-    "ABCD的對角線是AC與BD，不是四條邊。",
-    "在平行四邊形中，若AC與BD交於O，則AO=OC且BO=OD。一般情況下不保證AC=BD，也不保證互相垂直。",
-    "反過來，若一個四邊形的兩條對角線互相平分，可判定它是平行四邊形。"
+    "四邊形ABCD的對角線是連接不相鄰頂點的AC與BD。若交於O，AO、OC是AC的兩半，BO、OD是BD的兩半；計算時不可跨不同對角線錯配。",
+    "平行四邊形的對角線互相平分，因此AO＝OC、BO＝OD。已知半段可加倍求全長，已知全長可除以2求半段，但一般不保證AC＝BD或兩對角線垂直。",
+    "反過來，若任一四邊形的兩條對角線互相平分，也能判定它是平行四邊形。這個判定只保證一般類別，矩形、菱形或正方形仍需要等長、垂直、直角等額外條件。"
   ],
   "formalDefinitions": [
     {
@@ -124,35 +124,47 @@
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "AO=7",
+      "prompt": "平行四邊形中AO＝7，求OC與AC。",
       "solutionSteps": [
-        "OC=7，AC=14。"
+        "由對角線互相平分得OC＝AO＝7。",
+        "列AC＝AO＋OC。",
+        "計算AC＝14。"
       ],
-      "answer": "OC=7，AC=14。"
+      "answer": "OC＝7，AC＝14。",
+      "why": "AO與OC位於同一條對角線AC上，交點O是中點；半段相等後仍要相加才能得到全長。只寫半段會漏答題目所求的全長。"
     },
     {
       "exampleId": "L2",
-      "prompt": "BO=3x-2、OD=x+8",
+      "prompt": "BO＝3x－2、OD＝x＋8，求x。",
       "solutionSteps": [
-        "令相等得x=5。"
+        "由互相平分列BO＝OD。",
+        "解3x－2＝x＋8，得2x＝10。",
+        "得到x＝5並代回兩半皆為13。"
       ],
-      "answer": "令相等得x=5。"
+      "answer": "x＝5。",
+      "why": "應配對同一條BD上的BO與OD；不能把BO和AO相比，因一般平行四邊形的兩條對角線未必等長。跨對角線比較沒有定理依據。"
     },
     {
       "exampleId": "L3",
-      "prompt": "AC=18",
+      "prompt": "平行四邊形對角線AC＝18，求AO、OC。",
       "solutionSteps": [
-        "AO=OC=9。"
+        "判定O是AC中點。",
+        "計算18÷2＝9。",
+        "寫出AO＝OC＝9。"
       ],
-      "answer": "AO=OC=9。"
+      "answer": "AO＝OC＝9。",
+      "why": "對角線被交點分成相等兩半；由全長求半段要除以2，不能再除一次或與BD混用。中點只把同一線段分成兩份。"
     },
     {
       "exampleId": "L4",
-      "prompt": "AO=OC且BO=OD",
+      "prompt": "四邊形有AO＝OC且BO＝OD，可判定什麼？",
       "solutionSteps": [
-        "可判ABCD為平行四邊形。"
+        "由AO＝OC得O為AC中點。",
+        "由BO＝OD得O為BD中點。",
+        "兩對角線互相平分，判定ABCD為平行四邊形。"
       ],
-      "answer": "可判ABCD為平行四邊形。"
+      "answer": "ABCD為平行四邊形。",
+      "why": "兩條對角線共用同一中點是充分判定；沒有額外角度或長度資料時，不應過度分類為矩形或菱形。"
     }
   ],
   "commonMistakes": [
@@ -230,5 +242,5 @@
     "figureChecked": true,
     "reviewNote": "講義明確區隔「互相平分」與「等長、垂直」三種不同的對角線性質。"
   },
-  "contentSha256": "3c3e4cdbedc7184a162a73ffec65b45c7af296ba9763d63823afe626a47dd3db"
+  "contentSha256": "8dbd3060b63de89cac62a4df8f8eb0c213c7add23af6b5bbd1b89ee4eb0fa065"
 }

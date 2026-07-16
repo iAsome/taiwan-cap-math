@@ -147,44 +147,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "冷藏庫起始 -4°C，先降 3°C，再升 5°C，最後溫度？",
-      "solutionSteps": [
-        "以升溫為正、降溫為負。",
-        "列式 -4+(-3)+5。",
-        "結果 -2°C。"
-      ],
-      "answer": "-2°C。"
+      "prompt": "冷藏庫起始 −4°C，先降 3°C，再升 5°C，最後溫度？",
+      "answer": "−2°C。",
+      "why": "降溫記為負變化、升溫記為正變化，依時間列式 −4+(−3)+5。先由 −4 降到 −7，再升 5 到 −2，所以最後溫度為 −2°C；不能只算兩次變化的淨值。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "河面基準高程 120 公尺，測站偏差 -7 公尺，實際高程？",
-      "solutionSteps": [
-        "偏差 -7 表示低於基準。",
-        "120+(-7)=113。",
-        "單位仍為公尺。"
-      ],
-      "answer": "113 公尺。"
+      "prompt": "河面基準高程 120 公尺，測站偏差 −7 公尺，實際高程？",
+      "answer": "113 公尺。",
+      "why": "偏差 −7 公尺表示測站低於基準，不是高度本身。實際高程等於基準加偏差，120+(−7)=113 公尺；結果仍為正且略低於基準，與負偏差的情境一致。"
     },
     {
-      "exampleId": "L3",
       "prompt": "兩探測器距離分別為 3.2×10⁶ 公尺與 7.5×10⁵ 公尺，哪個較遠？",
-      "solutionSteps": [
-        "指數 6 大於 5。",
-        "第一個數量級較大。",
-        "因此 3.2×10⁶ 公尺較遠。"
-      ],
-      "answer": "第一個探測器。"
+      "answer": "第一個探測器。",
+      "why": "兩個距離都是正數，先比較 10 的指數；6 大於 5，所以 3.2×10⁶ 的數量級較大。也可把第二個改成 0.75×10⁶，直接比較 3.2 與 0.75，仍是第一個較遠。"
     },
     {
-      "exampleId": "L4",
       "prompt": "帳戶 1,200 元，支出 450、收入 300、再支出 200，餘額？",
-      "solutionSteps": [
-        "支出記負、收入記正。",
-        "1200-450+300-200。",
-        "依序得 850 元。"
-      ],
-      "answer": "850 元。"
+      "answer": "850 元。",
+      "why": "支出記負、收入記正，完整算式為 1200−450+300−200。依序得到 750、1050、850，因此最後餘額是 850 元；每筆交易都要納入，不能只合併收入與支出差額。"
     }
   ],
   "commonMistakes": [
@@ -271,7 +251,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "04e152ee03783576f03c8380487bae78c284e227863a2ad2d019896ff5fd0afe",
+  "contentSha256": "521c4ec02950ac903656112eb9b5c5e941d1ca593ee790e3096a578317e8e7fd",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -295,7 +275,7 @@ export const QUESTIONS = [
       "13°C"
     ],
     "answerIndex": 0,
-    "explanation": "升高8記+8，-5+8=3°C。",
+    "explanation": "起始溫度是 −5°C，升高 8°C 代表加入帶正號的變化量 +8°C，因此最後溫度為 −5+8=3°C。異號相加用 8−5=3，且較大絕對值來自正數，所以結果為正。",
     "steps": [
       "起始-5。",
       "升高+8。",
@@ -323,7 +303,7 @@ export const QUESTIONS = [
         "reason": "加絕對值但漏起始符號。"
       }
     ],
-    "commonMistake": "把+8直接當最後溫度。",
+    "commonMistake": "把升高八度的變化量直接當成最後溫度，忘記還要加上起始負五度。",
     "concept": "最後量＝起始量＋帶號變化。",
     "tags": [
       "數與量",
@@ -341,7 +321,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始溫度與升高量都必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ff0b6415f315dc791490ff5a65136608b489f13c1972ce78961d5bfba5d07107",
+    "contentSha256": "76fe18150e5e983b64b735b78afaeb502e67e1bf8ed3b5d6c3d9adebc4e30995",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -363,7 +343,7 @@ export const QUESTIONS = [
       "6 公里且不需方向"
     ],
     "answerIndex": 1,
-    "explanation": "向西被約定為負，所以位置記 -6 公里。",
+    "explanation": "題目把入口設為 0 公里，並明定向西為負方向。補給點在入口西方 6 公里，因此坐標應記為 −6 公里；負號表達方向，數字 6 則表示與入口相距六公里。",
     "steps": [
       "入口為0。",
       "西方是負方向。",
@@ -391,7 +371,7 @@ export const QUESTIONS = [
         "reason": "漏掉方向。"
       }
     ],
-    "commonMistake": "只因距離為6就寫正6。",
+    "commonMistake": "只看到距離六公里便寫成正六，沒有依題目約定保留向西的負方向。",
     "concept": "位置紀錄由基準、方向與距離組成。",
     "tags": [
       "數與量",
@@ -409,7 +389,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "入口基準與西負規則不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "31e5c5774baf5f7286ade3672f705a84677b67bf673756707bf1598cb8b92b40",
+    "contentSha256": "fca9707da87cf2871d69f9bb839aa6ec443a654f49170a758f64dfadb2105e57",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -431,7 +411,7 @@ export const QUESTIONS = [
       "550 元"
     ],
     "answerIndex": 2,
-    "explanation": "-200+350=150元。",
+    "explanation": "負餘額記為 −200 元，存入 350 元是正向變化，所以列式 −200+350。兩數異號，先算 350−200=150，再取絕對值較大的正 350 所帶正號，最後餘額為 150 元，所以選第三項。",
     "steps": [
       "負餘額-200。",
       "存入+350。",
@@ -477,7 +457,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "原負餘額與存入金額共同決定跨零結果。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7921de10f53bf28bc00ad6ac707b257da30793f611de3ec29766a45658a5c077",
+    "contentSha256": "5673fdb3d7876e990e62b761efce53a850e422abbcdc4e7d8ac33694ca449367",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -499,7 +479,7 @@ export const QUESTIONS = [
       "11°C"
     ],
     "answerIndex": 3,
-    "explanation": "溫差=|4-(-7)|=11°C。",
+    "explanation": "日溫差是最高溫與最低溫之間的距離，不帶方向。計算 |4−(−7)|=|4+7|=11°C；也可看成從 −7°C 升到 0°C 共 7°C，再升到 4°C 共 4°C，合計 11°C。溫差的單位仍為攝氏度，因此選十一度。",
     "steps": [
       "最高減最低。",
       "4+7=11。",
@@ -527,7 +507,7 @@ export const QUESTIONS = [
         "reason": "|4+7|=11°C。"
       }
     ],
-    "commonMistake": "算7-4=3，忽略兩溫度分居0兩側。",
+    "commonMistake": "只用七減四得到三，忽略最低溫與最高溫分居零度兩側。",
     "concept": "溫差是兩溫度的絕對差。",
     "tags": [
       "數與量",
@@ -545,7 +525,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "最低、最高與「溫差」措辭共同決定絕對差。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e33e89cb11ddda0e1e2d7d5b24cf26642a0f0cb047eca54e3437d30e4a66cfd5",
+    "contentSha256": "921234beecae342fb4d12083c931845495344b66412ca2bcc5645c6734024cd1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -567,7 +547,7 @@ export const QUESTIONS = [
       "20 件"
     ],
     "answerIndex": 0,
-    "explanation": "甲965、乙1020，相差55。也可算|20-(-35)|=55。",
+    "explanation": "甲線比目標少 35 件，實際產量為 1000−35=965 件；乙線比目標多 20 件，為 1020 件。兩線相差 1020−965=55 件，也可直接算偏差距離 |20−(−35)|=55。共同基準不影響兩者的差，故選五十五件。",
     "steps": [
       "還原或比較共同基準偏差。",
       "計算20+35。",
@@ -595,7 +575,7 @@ export const QUESTIONS = [
         "reason": "只取乙偏差。"
       }
     ],
-    "commonMistake": "用偏差絕對值相減15。",
+    "commonMistake": "將兩個偏差的絕對值相減成十五，沒有注意兩條生產線位於目標兩側。",
     "concept": "同基準兩側偏差的距離為絕對差。",
     "tags": [
       "數與量",
@@ -613,7 +593,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "共同目標與兩個帶號偏差共同決定產量差。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "61ba1e9557e7d9bc0dfc8c8570aca815b2db6896bd39858c61cf0d64322defca",
+    "contentSha256": "250736fcb9f0eadbefd4fee0cb5be71179edd0e3906a30a8112def216ced335e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -635,7 +615,7 @@ export const QUESTIONS = [
       "7.3×10⁹"
     ],
     "answerIndex": 1,
-    "explanation": "3.2×10⁵=320,000；4.1×10⁴=41,000；差279,000=2.79×10⁵。",
+    "explanation": "相減前先統一數量級：4.1×10⁴=0.41×10⁵。於是 A−B=(3.2−0.41)×10⁵=2.79×10⁵。還原檢查是 320,000−41,000=279,000，數量級與答案一致。也可先還原為一般整數再相減，會得到相同的二十七萬九千，第二個選項正確。",
     "steps": [
       "統一位值。",
       "320000-41000=279000。",
@@ -663,7 +643,7 @@ export const QUESTIONS = [
         "reason": "把科學記號相乘。"
       }
     ],
-    "commonMistake": "直接做3.2-4.1並保留較大指數。",
+    "commonMistake": "未統一十的指數就直接用係數三點二減四點一，造成差值與數量級都錯。",
     "concept": "不同指數加減先統一位值。",
     "tags": [
       "數與量",
@@ -681,7 +661,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "A、B數量級與差值要求都參與運算。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "eac40da1fed282727f5b575862e752e5312ab6f768f4b5da7a033bfa52456243",
+    "contentSha256": "03b5b985d6d11682492d65f61ee81300ae748932ae40089ed915ce7513138a50",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -703,7 +683,7 @@ export const QUESTIONS = [
       "1,290 元"
     ],
     "answerIndex": 2,
-    "explanation": "500-3×180+250=500-540+250=210元。",
+    "explanation": "三次各支出 180 元，總支出為 3×180=540 元。由起始 500 元扣除後成為 −40 元，再加入收入 250 元，得 −40+250=210 元，所以最後餘額為 210 元，第三個選項符合所有交易後的狀態。",
     "steps": [
       "三次支出540。",
       "500-540=-40。",
@@ -731,7 +711,7 @@ export const QUESTIONS = [
         "reason": "全部相加。"
       }
     ],
-    "commonMistake": "先算500-180再乘3。",
+    "commonMistake": "先算五百減一次支出後再乘三，錯把起始餘額也重複計算三次。",
     "concept": "重複支出先乘，再與起始與收入合併。",
     "tags": [
       "數與量",
@@ -749,7 +729,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始、支出次數、每次金額與收入全部必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "7d6c6ea2b62c3c1b4b28c325d6672934bc54b018a47ae7a383c0db0cc044ba0d",
+    "contentSha256": "efc86f57ce0c2e56254aa6aeff3ab5439ae77e7eaa3e9919deca06912d996856",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -771,7 +751,7 @@ export const QUESTIONS = [
       "-16°C"
     ],
     "answerIndex": 3,
-    "explanation": "-20+7-5+2=-16°C。",
+    "explanation": "依調整順序從 −20°C 開始：先加 7 得 −13°C，再減 5 得 −18°C，最後加 2 得 −16°C。三次調整的總變化雖是 +4°C，仍須加回起始溫度才能得到最後值，所以選第四項。",
     "steps": [
       "-20+7=-13。",
       "-13-5=-18。",
@@ -817,7 +797,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始溫度與三次按順序調整皆不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "02c7b7628f48e57aff7c171274e00bbaa588a227f9e1f8513213a7b563ab039b",
+    "contentSha256": "ad8a12306d9c5d49f8e9b2b0686674c8f475f80876ae1a70913c22acb9d1121c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -839,7 +819,7 @@ export const QUESTIONS = [
       "1.45×10⁵ 個"
     ],
     "answerIndex": 0,
-    "explanation": "2.5×12=30，所以30×10⁴=3.0×10⁵。",
+    "explanation": "每天生產 2.5×10⁴ 個，十二天的總量是 12×2.5×10⁴=30×10⁴ 個。係數 30 不符合標準科學記號，改寫為 3.0×10 並合併後得到 3.0×10⁵ 個。還原後是三十萬個，也可核對十二天的平均產量未改變。",
     "steps": [
       "係數2.5×12=30。",
       "得到30×10⁴。",
@@ -867,7 +847,7 @@ export const QUESTIONS = [
         "reason": "把2.5與12相加。"
       }
     ],
-    "commonMistake": "算得30×10⁴後直接寫30×10⁵。",
+    "commonMistake": "算到三十乘十的四次方後直接把指數改五，卻沒有把係數同步縮小十倍。",
     "concept": "科學記號乘整數後需重新標準化。",
     "tags": [
       "數與量",
@@ -885,7 +865,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "每日產量、天數與總產量要求共同決定乘法。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "335a68ef757f70b82698548e9549b751939ea68ea8be26bccc02b03cf1777513",
+    "contentSha256": "49373b5a2dcdda31f8abb38f58cbe1a59e121cb44bbab124b8eb53cd9e245c7f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -907,7 +887,7 @@ export const QUESTIONS = [
       "7 單位"
     ],
     "answerIndex": 1,
-    "explanation": "AB=|5-(-8)|=13，BC=|-2-5|=7，總路程20。",
+    "explanation": "機器人實際經過 B，總路程要分段相加。A 到 B 為 |5−(−8)|=13 單位，B 到 C 為 |−2−5|=7 單位，所以總路程 13+7=20 單位；不能只算 A 到 C 的直接距離，第二個選項才包含繞經 B 的兩段。",
     "steps": [
       "第一段13。",
       "第二段7。",
@@ -953,7 +933,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "三區坐標與指定行走順序共同決定兩段路程。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2591e81952774eefd33ed283f43ed8c3fe184ca32689d8bbede203f27ac3013e",
+    "contentSha256": "84e5e7c41a16002eb93076a93ebf0b15b3ce189c74dfc8ff00e8b6da3dfdc0f4",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -975,7 +955,7 @@ export const QUESTIONS = [
       "468 公尺"
     ],
     "answerIndex": 2,
-    "explanation": "上午偏差-12，調整總變化+7-3=+4，下午偏差-8；實際高程480-8=472公尺。",
+    "explanation": "上午偏差是 −12 公尺，下午先增加 7、再減少 3，故下午偏差為 −12+7−3=−8 公尺。實際高程等於基準加偏差，480+(−8)=472 公尺，因此第三個選項正確。",
     "steps": [
       "下午偏差=-12+7-3=-8。",
       "加回基準480。",
@@ -1003,7 +983,7 @@ export const QUESTIONS = [
         "reason": "把兩次調整都當減少。"
       }
     ],
-    "commonMistake": "直接用480+7-3，漏掉上午原偏差-12。",
+    "commonMistake": "只把下午增加七與減少三套在基準上，漏掉上午已有的負十二公尺偏差。",
     "concept": "相對偏差先更新，再加回基準。",
     "tags": [
       "數與量",
@@ -1021,7 +1001,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "基準、上午偏差與下午兩次調整都必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "fa19688282408e5eba11f228665d3b3bab9e55ea26f9f05f5ce577df90f88d5b",
+    "contentSha256": "1f49e4776abf656d36281a1ff144fa3b43c9c26821628dea16d60a0c8567b1f9",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1043,7 +1023,7 @@ export const QUESTIONS = [
       "3.45×10⁸ 公尺"
     ],
     "answerIndex": 3,
-    "explanation": "4.2×10⁸-7.5×10⁷=4.2×10⁸-0.75×10⁸=3.45×10⁸公尺。",
+    "explanation": "先把 B 的距離改成與 A 相同的數量級：7.5×10⁷=0.75×10⁸。兩者相減為 (4.2−0.75)×10⁸=3.45×10⁸ 公尺，係數 3.45 已符合標準科學記號。還原後可用四億二千萬減七千五百萬檢查，仍得三億四千五百萬公尺。",
     "steps": [
       "把B改0.75×10⁸。",
       "係數4.2-0.75=3.45。",
@@ -1071,7 +1051,7 @@ export const QUESTIONS = [
         "reason": "(4.2-0.75)×10⁸=3.45×10⁸。"
       }
     ],
-    "commonMistake": "直接做4.2-7.5並保留10⁸。",
+    "commonMistake": "未先統一十的指數就直接相減四點二與七點五，得到錯誤的負係數。",
     "concept": "不同指數相減先統一數量級。",
     "tags": [
       "數與量",
@@ -1089,7 +1069,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩個探測器距離與「A比B遠多少」決定相減次序。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ff513cf10ce9abf3684c1d7b6eabdfb1adaada4445552a25121d2df15ef3bc71",
+    "contentSha256": "bed7af35fff3361240bae1d4986f6ee31f602449b6ac646aa2364989b220a96f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1111,9 +1091,9 @@ export const CONSTRUCTED_RESPONSES = [
       "起始與最後相差多少使用絕對差。"
     ],
     "fullCreditSolution": [
-      "總帶號變化=2×3-5=+1°C。",
-      "最後溫度=-6+1=-5°C。",
-      "起終溫差=|-5-(-6)|=1°C。"
+      "前兩小時每小時升高 3°C，共升高 2×3=6°C；之後降溫 5°C，所以總帶號變化為 6−5=+1°C。",
+      "最後溫度要把總變化加回起始值：−6+(+1)=−5°C，不能把 +1°C 直接當成最後溫度。",
+      "起始與最後相差多少問的是無方向距離，因此計算 |−5−(−6)|=|1|=1°C。"
     ],
     "alternativeSolutions": [
       "可列-6+3+3-5=-5。"
@@ -1140,16 +1120,16 @@ export const CONSTRUCTED_RESPONSES = [
       "起始與最後相差多少不帶方向；總帶號變化量保留正號。"
     ],
     "commonErrors": [
-      "漏乘2。",
-      "總變化當最後溫度。",
-      "降溫記正。"
+      "只計算一次升高 3°C，漏掉題目說前兩小時每小時都升高。",
+      "把總帶號變化 +1°C 當作最後溫度，沒有加回起始的 −6°C。",
+      "把最後一次降溫記成 +5°C，因而同時算錯總變化與最後溫度。"
     ],
     "independentReview": {
       "derivedResult": "總變化+1°C，最後-5°C，起終相差1°C。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "836379f68191c4c66724fba459a85c317fa467b75e276128d4c15f97b0c6cc5b",
+    "contentSha256": "9a1267a013482d41cc53bf8a26f9b15d2e07f31f5e33526106af80209a76b358",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1168,9 +1148,9 @@ export const CONSTRUCTED_RESPONSES = [
       "三天總量需合計。"
     ],
     "fullCreditSolution": [
-      "第二天=1.8×10⁶-0.45×10⁶=1.35×10⁶。",
-      "第三天=2×1.35×10⁶=2.70×10⁶。",
-      "總量=(1.8+1.35+2.70)×10⁶=5.85×10⁶位元。"
+      "先統一數量級：4.5×10⁵=0.45×10⁶，所以第二天為 (1.8−0.45)×10⁶=1.35×10⁶ 位元。",
+      "第三天是第二天的 2 倍，故 2×1.35×10⁶=2.70×10⁶ 位元；係數仍符合標準範圍。",
+      "三天總量為 (1.8+1.35+2.70)×10⁶=5.85×10⁶ 位元，三項指數相同才能直接相加係數。"
     ],
     "alternativeSolutions": [
       "可還原一般數計算，再轉回科學記號。"
@@ -1197,16 +1177,16 @@ export const CONSTRUCTED_RESPONSES = [
       "2.70×10⁶可寫2.7×10⁶。"
     ],
     "commonErrors": [
-      "第二天寫-2.7×10⁶。",
-      "第三天只加2。",
-      "總量指數相加。"
+      "第二天相減前未統一數量級，直接以 1.8−4.5 得到負的資料量。",
+      "把第三天是第二天的兩倍誤讀成加 2，寫成 1.35×10⁶+2。",
+      "合計三天資料量時把三個指數六相加，誤將結果寫成 10¹⁸ 量級。"
     ],
     "independentReview": {
       "derivedResult": "第二天1.35×10⁶，第三天2.7×10⁶，總量5.85×10⁶位元。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "5c217b7a6f10c615959aaf00707c5953da8218b6e9622938fedfe32104d4818d",
+    "contentSha256": "ed9a3f11f93b2f2cb9c540a345559cab8f74a9aa86777e10d54ac7749cce0a9c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

@@ -57,10 +57,9 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "指數不是乘法係數。3⁴ 表示 3×3×3×3，不是 3×4。",
-    "括號決定負號是否屬於底數。(-2)⁴ 有四個負因數，結果正；-2⁴ 是 -(2⁴)，結果負。",
-    "負底數的偶次方為正，奇次方為負，原因是負因數個數的奇偶。",
-    "10ⁿ 表示 1 後有 n 個 0，能連結十進位位值與科學記號。"
+    "冪用來簡寫相同因數的重複乘法。式子 aⁿ 中，a 是底數，表示重複的因數；n 是指數，表示該因數出現幾次。指數不是一般乘數，因此三的四次方不是三乘四。",
+    "負號是否屬於底數由括號決定。(-2)⁴ 的底數是負二，有四個負因數；-2⁴ 的底數只有二，前方負號在冪之外。負底數的偶次方為正、奇次方為負，源自負因數個數的奇偶。",
+    "指數也能描述成長與幾何結構：每階段固定倍增可寫成同一倍率的冪，正方形面積是邊長平方，十的 n 次方則是一後面接 n 個零。使用前要先確認重複的是乘法而非加法。"
   ],
   "formalDefinitions": [
     {
@@ -97,102 +96,80 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "找出底數是否包含負號與括號。",
-      "check": "底數是 -3 還是 3？"
+      "instruction": "先看括號範圍，圈出完整底數，確認負號是在底數內還是冪之外。",
+      "check": "能明確說出底數是負數或正數，沒有只憑表面符號猜測。"
     },
     {
       "step": 2,
-      "instruction": "讀出指數代表因數個數。",
-      "check": "是否誤看成倍數？"
+      "instruction": "讀取指數，將它解釋為底數作為因數重複出現的次數。",
+      "check": "展開後因數個數與指數相同，底數與指數角色沒有顛倒。"
     },
     {
       "step": 3,
-      "instruction": "必要時展開成重複乘法。",
-      "check": "因數個數是否正確？"
+      "instruction": "必要時完整展開重複乘法，或用分組乘法逐步計算冪值。",
+      "check": "沒有用底數乘指數或重複加法取代重複乘法。"
     },
     {
       "step": 4,
-      "instruction": "先判符號，再算絕對值。",
-      "check": "負因數個數奇數或偶數？"
+      "instruction": "負底數先按指數奇偶判定符號，再計算底數絕對值的冪。",
+      "check": "偶數個負因數得正，奇數個得負；外層負號最後另行處理。"
     },
     {
       "step": 5,
-      "instruction": "用較小例子或估算檢查。",
-      "check": "結果大小是否合理？"
+      "instruction": "情境題辨認每階段倍率或相同長度因數，建立冪後再附回數量或面積單位。",
+      "check": "起始階段與倍增次數一致，面積使用平方單位，十的冪零的個數正確。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "把 5×5×5×5 寫成指數形式。",
-      "solutionSteps": [
-        "重複因數是 5。",
-        "共出現四次。",
-        "寫成 5⁴。"
-      ],
-      "answer": "5⁴。"
+      "exampleId": "u01-s012-example-a",
+      "prompt": "計算 6³。",
+      "answer": "216。",
+      "why": "六的三次方表示三個六相乘，展開為六乘六乘六。先算六乘六等於三十六，再乘六得到二百一十六；指數三不是把六乘三。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "計算 (-3)³。",
-      "solutionSteps": [
-        "底數是 -3。",
-        "三個負因數，奇數個。",
-        "3³=27，結果 -27。"
-      ],
-      "answer": "-27。"
+      "exampleId": "u01-s012-example-b",
+      "prompt": "計算 (-4)³。",
+      "answer": "-64。",
+      "why": "括號表示底數是完整的負四，三次方展開後有三個負因數。奇數個負因數使結果為負，絕對值四乘四乘四等於六十四，所以答案為負六十四。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "比較 -2⁴ 與 (-2)⁴。",
-      "solutionSteps": [
-        "-2⁴=-(2⁴)=-16。",
-        "(-2)⁴ 有四個負因數，等於 16。",
-        "兩者不相等。"
-      ],
-      "answer": "-2⁴=-16；(-2)⁴=16。"
+      "exampleId": "u01-s012-example-c",
+      "prompt": "比較 -5² 與 (-5)²。",
+      "answer": "-5²=-25，(-5)²=25。",
+      "why": "沒有括號時先算五的平方再套用外層負號，得到負二十五；有括號時底數是負五，兩個負因數相乘得正二十五，因此兩式不相等。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "10⁵ 表示多少？",
-      "solutionSteps": [
-        "底數 10 重複相乘五次。",
-        "每乘一次 10，小數點向右一位。",
-        "結果 100000。"
-      ],
-      "answer": "100000。"
+      "exampleId": "u01-s012-ex04-r4",
+      "prompt": "某培養皿起初有 3 個菌落，每一輪數量都變成前一輪的 2 倍，5 輪後有多少個？",
+      "answer": "96 個。",
+      "why": "五輪各乘一次 2，累積倍率是 2⁵=32；起初的 3 個不能省略，因此總數為 3×32=96。指數只表示五次倍增，不包含初始數量。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把 2⁵ 算成 10。",
-      "why": "把指數誤當乘數。",
-      "correction": "2⁵=2×2×2×2×2=32。"
+      "mistake": "把底數與指數直接相乘，例如將二的五次方算成十。",
+      "correction": "指數表示相同底數作為因數出現五次，應展開五個二相乘。"
     },
     {
-      "mistake": "展開 3⁴ 只寫三個 4。",
-      "why": "底數與指數角色顛倒。",
-      "correction": "應寫四個 3 相乘。"
+      "mistake": "展開時顛倒底數與指數，將三的四次方寫成三個四相乘。",
+      "correction": "底數三才是重複因數，指數四只負責指定四個三。"
     },
     {
-      "mistake": "認為 -2⁴=16。",
-      "why": "把外層負號誤納入底數。",
-      "correction": "沒有括號時結果 -16。"
+      "mistake": "忽略括號，認為 -2⁴ 與 (-2)⁴ 的底數完全相同。",
+      "correction": "前者底數為二且負號在外，後者底數為負二，計算順序與結果不同。"
     },
     {
-      "mistake": "認為 (-3)³ 為正。",
-      "why": "只記平方為正。",
-      "correction": "奇數個負因數得負。"
+      "mistake": "只記得負數平方為正，推廣成負底數任何次方都為正。",
+      "correction": "數負因數個數；偶次方為正，奇次方仍為負。"
     },
     {
-      "mistake": "把 a² 寫成 2a。",
-      "why": "混淆平方與倍數。",
-      "correction": "a²=a×a。"
+      "mistake": "把同步倍增或多層容量結構改用固定加法計算。",
+      "correction": "先確認每一階段或每一層都在乘同一倍率，再用冪表示重複乘法。"
     },
     {
-      "mistake": "尚未學指數律就把 2³+2² 合成 2⁵。",
-      "why": "把加法誤用乘法規則。",
-      "correction": "先各自算值再相加。"
+      "mistake": "看到五輪倍增就只算 2⁵，忘記還要乘起初的 3 個菌落。",
+      "correction": "2⁵ 是相對於初始量的倍率；題目求實際總數時，仍須用初始量乘倍率。"
     }
   ],
   "selfCheck": [
@@ -247,7 +224,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "50b29456f5591ff676de3e1bc20d39758573c0e1b4cbde0b9130091cba076316",
+  "contentSha256": "40a1b963bf0bd8f6e76f48215ceb04f5c6d9d0b128a18c62aea834637582b201",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -271,11 +248,11 @@ export const QUESTIONS = [
       "7"
     ],
     "answerIndex": 0,
-    "explanation": "3⁴=3×3×3×3=81。",
+    "explanation": "三的四次方表示底數三連續作為四個因數相乘，不是三乘四。展開為 3×3×3×3，可先配成兩個九，再算九乘九等於八十一。",
     "steps": [
-      "展開四個3。",
-      "3×3=9。",
-      "9×9=81。"
+      "依指數四展開成四個底數相乘：3×3×3×3。",
+      "先算前兩個三與後兩個三，各得到 9。",
+      "計算 9×9=81，確認不是把底數與指數直接相乘。"
     ],
     "optionAnalysis": [
       {
@@ -299,7 +276,7 @@ export const QUESTIONS = [
         "reason": "把底數與指數相加。"
       }
     ],
-    "commonMistake": "把3⁴算成3×4=12。",
+    "commonMistake": "把指數四誤當普通乘數，計算三乘四等於十二而非四個三相乘。",
     "concept": "指數表示底數重複相乘次數。",
     "tags": [
       "數與量",
@@ -314,7 +291,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8e0fe22c1d7ceda461d3dc5c118d476106cd8ddb454cc7fcf2d168ca9eafad69",
+    "contentSha256": "83300d5d1fdb34f9217f0aa590236a8fb99e440ca10271e04d6b8edda0e660ac",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -336,11 +313,11 @@ export const QUESTIONS = [
       "6"
     ],
     "answerIndex": 1,
-    "explanation": "(-2)³=(-2)×(-2)×(-2)=-8，三個負因數為奇數個。",
+    "explanation": "括號表示底數是完整的負二，三次方需展開成三個負二相乘。三個負因數是奇數個，所以結果為負；絕對值二乘二乘二等於八，故答案是負八。",
     "steps": [
-      "底數是-2。",
-      "三個負因數。",
-      "絕對值8，符號負。"
+      "由括號辨認底數為 -2，指數三表示三個相同因數。",
+      "展開 (-2)×(-2)×(-2)，判定三個負因數使結果為負。",
+      "計算絕對值 2×2×2=8，合併得 -8。"
     ],
     "optionAnalysis": [
       {
@@ -364,7 +341,7 @@ export const QUESTIONS = [
         "reason": "大小與符號錯。"
       }
     ],
-    "commonMistake": "認為所有次方都會變正。",
+    "commonMistake": "只記得兩個負數相乘為正，便誤認任何負底數的次方都會是正數。",
     "concept": "負底數奇次方為負。",
     "tags": [
       "數與量",
@@ -379,7 +356,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0acc0002fff663da16e002e81897017e1227ead64921f8fedcd7ccfe11dd6581",
+    "contentSha256": "1f3f0c892b41e35c6669418118c09ba008776f5d6a76413440e130e3d6d0854f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -401,11 +378,11 @@ export const QUESTIONS = [
       "-8"
     ],
     "answerIndex": 2,
-    "explanation": "沒有括號時，先算2⁴=16，再處理外層負號，所以-16。",
+    "explanation": "式中沒有括號把負號包進底數，所以指數四只作用在二上。先計算 2⁴=16，再處理前方外層負號，得到 -16；這與底數為負二的四次方不同。",
     "steps": [
-      "底數是2，不含負號。",
-      "2⁴=16。",
-      "外層取負得-16。"
+      "觀察沒有括號，判定冪的底數是 2，前方負號在冪之外。",
+      "計算 2⁴=2×2×2×2=16。",
+      "最後套用外層負號得到 -16，並與 (-2)⁴ 區分。"
     ],
     "optionAnalysis": [
       {
@@ -429,7 +406,7 @@ export const QUESTIONS = [
         "reason": "算術錯。"
       }
     ],
-    "commonMistake": "把-2⁴誤看成(-2)⁴。",
+    "commonMistake": "把沒有括號的負二四次方看成以負二為底數，因而錯算為正十六。",
     "concept": "次方優先於前置負號，括號決定底數。",
     "tags": [
       "數與量",
@@ -444,7 +421,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ee69c25305b307560b922d441788669729a0524b13702b836efb719055cd0a16",
+    "contentSha256": "eeab06693e4a26ef4c5f4bf57c182ed93d41bfc5c6c623149e44c518adaa6fb8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -466,11 +443,11 @@ export const QUESTIONS = [
       "(-5)⁴"
     ],
     "answerIndex": 3,
-    "explanation": "重複因數是整個 -5，共四次，所以寫成(-5)⁴。",
+    "explanation": "重複出現的完整因數是負五，而且一共出現四次，因此底數應寫成括號內的負五，指數寫四，得到 (-5)⁴。若漏掉括號，負號便不屬於底數，意義會改變。",
     "steps": [
-      "找重複因數-5。",
-      "共4個。",
-      "底數需用括號。"
+      "找出每個重複因數都是完整的 (-5)。",
+      "數出相同因數共四個，因此指數為 4。",
+      "用括號保留負號屬於底數，寫成 (-5)⁴。"
     ],
     "optionAnalysis": [
       {
@@ -494,7 +471,7 @@ export const QUESTIONS = [
         "reason": "四個(-5)相乘= (-5)⁴。"
       }
     ],
-    "commonMistake": "漏掉括號寫成-5⁴，改變原式意義。",
+    "commonMistake": "只寫成負五的四次方卻省略括號，使負號變成冪運算外的符號。",
     "concept": "負底數必須用括號包住。",
     "tags": [
       "數與量",
@@ -509,7 +486,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2c32359d3b634f5e60c7b8ccd707ee52a80b5bf9a7950901df60a7e43a130456",
+    "contentSha256": "4e3d31a55fdb285272dbebf45813c0ab288f8bae4916556fd5b1aa3593085a1a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -531,11 +508,11 @@ export const QUESTIONS = [
       "10,000,000"
     ],
     "answerIndex": 0,
-    "explanation": "10⁶ 是六個10相乘，等於1後面有6個0，即1,000,000。",
+    "explanation": "十的六次方表示六個十相乘。從一開始，每乘一次十就在十進位表示中增加一個零，因此結果是一後面接六個零，也就是一百萬或 1,000,000。",
     "steps": [
-      "指數6表示六個10。",
-      "每乘10增加一個0。",
-      "得到1後6個0。"
+      "把 10⁶ 解讀成六個 10 連續相乘。",
+      "利用十進位位值，確認一後方應有六個零。",
+      "寫成 1,000,000，並數位數核對沒有少零或多零。"
     ],
     "optionAnalysis": [
       {
@@ -559,7 +536,7 @@ export const QUESTIONS = [
         "reason": "有7個0。"
       }
     ],
-    "commonMistake": "把10⁶寫成10×6=60。",
+    "commonMistake": "把指數六當成乘數，將十的六次方誤算為十乘六等於六十。",
     "concept": "10的正整數次方對應十進位位值。",
     "tags": [
       "數與量",
@@ -574,7 +551,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "943f13b1b885f9801e12e9ba80ac716033a3d30016c33aa8752373809a69062a",
+    "contentSha256": "621242ef71c2f4fbb68f3e59ce0e3fb92f96d0739866e9105fe16623226393ad",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -596,11 +573,11 @@ export const QUESTIONS = [
       "兩者都為負"
     ],
     "answerIndex": 1,
-    "explanation": "(-3)²=9；-3²=-(3²)=-9，所以9>-9。",
+    "explanation": "有括號的 (-3)² 以負三為底數，兩個負因數相乘得正九。沒有括號的 -3² 則先算 3²=9，再加外層負號成負九；正九大於負九，括號確實改變了底數範圍。",
     "steps": [
-      "有括號者底數-3，平方得9。",
-      "無括號者先算3²再取負得-9。",
-      "比較9>-9。"
+      "計算有括號者 (-3)²=(-3)×(-3)=9。",
+      "計算無括號者 -3²=-(3²)=-9。",
+      "比較 9 與 -9，得到 (-3)²>-3²。"
     ],
     "optionAnalysis": [
       {
@@ -624,7 +601,7 @@ export const QUESTIONS = [
         "reason": "第一個為正。"
       }
     ],
-    "commonMistake": "忽略括號，認為兩式都等於9。",
+    "commonMistake": "忽略括號對底數範圍的作用，把兩個式子都當成負三的平方而判為相等。",
     "concept": "括號決定負號是否參與次方。",
     "tags": [
       "數與量",
@@ -639,7 +616,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6ffc688b82029b1e364a55b9f7481de82fd75566a8dfdc33253a3d7beebac10e",
+    "contentSha256": "d9ea1b150fc10c75faa038731d3053979395cedefbf8a292ed26d7d4b32e9e3b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -661,11 +638,11 @@ export const QUESTIONS = [
       "2+2+2+2+2=10"
     ],
     "answerIndex": 2,
-    "explanation": "指數5表示五個2相乘，結果32。",
+    "explanation": "二的五次方中，二是底數，五表示底數作為因數出現五次。因此展開為 2×2×2×2×2，依序相乘得到四、八、十六、三十二，正確值為三十二。",
     "steps": [
-      "展開五個2。",
-      "逐步相乘4、8、16、32。",
-      "選第三項。"
+      "依指數五寫出五個底數：2×2×2×2×2。",
+      "由左到右逐次相乘，得到 4、8、16、32。",
+      "核對展開式與結果同時正確，選擇等於 32 的選項。"
     ],
     "optionAnalysis": [
       {
@@ -689,7 +666,7 @@ export const QUESTIONS = [
         "reason": "把重複乘法改成加法。"
       }
     ],
-    "commonMistake": "用重複加法取代重複乘法。",
+    "commonMistake": "用五個二相加或直接算二乘五，混淆重複乘法與重複加法。",
     "concept": "冪是重複乘法，不是重複加法。",
     "tags": [
       "數與量",
@@ -704,7 +681,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8b100f04d10e66f747924243c0bfcab9e10c4453e856be8b7dac6178856fc7a0",
+    "contentSha256": "974a35b234a3b8ee433ca0f6167015a2751d3d38b140d677a156ee606f8e6e85",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -726,11 +703,11 @@ export const QUESTIONS = [
       "64"
     ],
     "answerIndex": 3,
-    "explanation": "4³=4×4×4=64。",
+    "explanation": "四的三次方表示三個四相乘，展開為 4×4×4。先算前兩個四得十六，再用十六乘四得到六十四，所以三次方不是只算兩個因數的平方。",
     "steps": [
-      "三個4相乘。",
-      "4×4=16。",
-      "16×4=64。"
+      "由指數三展開成 4×4×4。",
+      "先計算 4×4=16，仍保留第三個因數 4。",
+      "再算 16×4=64，得到 4³ 的正確值。"
     ],
     "optionAnalysis": [
       {
@@ -754,7 +731,7 @@ export const QUESTIONS = [
         "reason": "4×4×4=64。"
       }
     ],
-    "commonMistake": "把三次方只算兩個4相乘。",
+    "commonMistake": "把三次方只展開成兩個四相乘，停在十六而漏掉第三個因數。",
     "concept": "指數3代表三個底數因數。",
     "tags": [
       "數與量",
@@ -769,7 +746,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6bd7aa2ffaba7fa9fa3cacf6adcec59b9ce443a0815126ef87c23f3cb04c3a87",
+    "contentSha256": "d1601c52405ad8966a7c6e25618c83ab6ba14896c5483c5a484ff7fe26fa3720",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -791,11 +768,11 @@ export const QUESTIONS = [
       "0"
     ],
     "answerIndex": 0,
-    "explanation": "a⁴=(-2)⁴=16，a³=(-2)³=-8，所以16-(-8)=24。",
+    "explanation": "先把 a 的值連同負號完整代入兩個冪。代入 a=-2 後，a⁴ 是四個負二相乘，偶數個負因數得到十六；a³ 是三個負二相乘，得到負八。因此 a⁴-a³=16-(-8)=24。",
     "steps": [
-      "算偶次方16。",
-      "算奇次方-8。",
-      "16+8=24。"
+      "代入 a=-2，計算 a⁴=(-2)⁴=16。",
+      "計算 a³=(-2)³=-8，保留奇次方的負號。",
+      "代回原式 16-(-8)=16+8=24。"
     ],
     "optionAnalysis": [
       {
@@ -819,7 +796,7 @@ export const QUESTIONS = [
         "reason": "誤認兩冪相等。"
       }
     ],
-    "commonMistake": "把a³寫成8，忽略負底數奇次方。",
+    "commonMistake": "把負底數的三次方算成正八，導致後面的減負關係與最終數值都錯誤。",
     "concept": "負底數的奇偶次方符號不同。",
     "tags": [
       "數與量",
@@ -834,7 +811,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1e88f52ac8d6332a43dd939229dd4929eb6751b8358d79e1c7e2b937837eb8dd",
+    "contentSha256": "f40142bb2145ef21b1e0f7ed4b2bddfca6fd01afe2aab47157a1750fbffd5d7f",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -856,11 +833,11 @@ export const QUESTIONS = [
       "512 個"
     ],
     "answerIndex": 1,
-    "explanation": "每小時數量乘2，8次後為2⁸=256。",
+    "explanation": "每個小時所有細胞都同步分裂成兩個，表示總數每小時乘二，而不是固定增加二個。從一個開始經過八次倍增為 1×2⁸，計算得到二百五十六個。",
     "steps": [
-      "起始1。",
-      "每小時乘2，共8次。",
-      "1×2⁸=256。"
+      "辨認同步分裂使總數每小時乘 2，起始數量為 1。",
+      "八小時共有八次倍增，列式 1×2⁸。",
+      "計算 2⁸=256，得到八小時後共 256 個。"
     ],
     "optionAnalysis": [
       {
@@ -884,7 +861,7 @@ export const QUESTIONS = [
         "reason": "多分裂一次。"
       }
     ],
-    "commonMistake": "把「每小時加2個」誤當成同步倍增。",
+    "commonMistake": "把同步倍增解讀成每小時只固定增加兩個，因而用加法取代八次乘二。",
     "concept": "連續倍增可用2的次方表示。",
     "tags": [
       "數與量",
@@ -899,7 +876,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始數量、倍增規則與經過小時數共同決定指數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8404f49f59cffa046b0ab8fd82c0f25ef25aa039a6e1845b1eb0784628a3cf74",
+    "contentSha256": "5576e487a7f6d4f7cffdb01818727d5cc22989fd315184a37bac98bfd6b676c3",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -921,11 +898,11 @@ export const QUESTIONS = [
       "2¹²=4,096 平方公分"
     ],
     "answerIndex": 2,
-    "explanation": "正方形面積=邊長×邊長=12²=144平方公分。",
+    "explanation": "正方形面積是邊長乘邊長，邊長十二公分要重複作為兩個因數，因此可寫成 12²。計算十二乘十二得一百四十四，面積單位是平方公分。",
     "steps": [
-      "面積使用兩個邊長相乘。",
-      "寫12²。",
-      "計算144。"
+      "套用正方形面積等於邊長乘邊長。",
+      "將 12×12 改寫成指數形式 12²。",
+      "計算 12²=144，並附上面積單位平方公分。"
     ],
     "optionAnalysis": [
       {
@@ -949,7 +926,7 @@ export const QUESTIONS = [
         "reason": "底數與指數角色錯。"
       }
     ],
-    "commonMistake": "把平方理解成乘以2。",
+    "commonMistake": "把平方誤解為邊長乘二，既算錯面積數值，也沒有表達兩個邊長相乘。",
     "concept": "平方表示同一長度相乘兩次。",
     "tags": [
       "數與量",
@@ -964,7 +941,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "地磚形狀與邊長決定使用平方，單位須為平方公分。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "71c0882c602bb678b8616408a0804cc3b235e10ebe82b41fd60536193ad06e44",
+    "contentSha256": "f09dd62980bd0a91d45f978423ff37759caf274b4df0fee44a8ea22561961f8c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -986,11 +963,11 @@ export const QUESTIONS = [
       "1,000 盒"
     ],
     "answerIndex": 3,
-    "explanation": "10層×每層10格×每格10盒=10³=1,000盒。",
+    "explanation": "總盒數要把層數、每層格數與每格盒數相乘，三個量的數值都是十，因此列式為 10×10×10=10³。計算可得一千盒，這是三層結構相乘而非三項相加。",
     "steps": [
-      "有三個10相乘。",
-      "寫10³。",
-      "結果1000。"
+      "依結構列出 10 層×每層 10 格×每格 10 盒。",
+      "辨認有三個相同因數 10，改寫為 10³。",
+      "計算 10³=1,000，得到總容量 1,000 盒。"
     ],
     "optionAnalysis": [
       {
@@ -1014,7 +991,7 @@ export const QUESTIONS = [
         "reason": "10×10×10=1000。"
       }
     ],
-    "commonMistake": "看到三個10就寫3×10=30。",
+    "commonMistake": "看到三個十就相加成三十，沒有依層、格、盒的乘法結構計算總量。",
     "concept": "三層相同倍數結構可用三次方。",
     "tags": [
       "數與量",
@@ -1029,7 +1006,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "層數、每層格數與每格盒數三個層級都必要。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "62fa5d773125b913ce8257a407d9c04b1e9be945938cac9d6318c9871428b6e4",
+    "contentSha256": "f2fa11234ff2172e9a392aa50a6548938ae1197dc099f8dd280443c56dcbfd33",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1050,10 +1027,10 @@ export const CONSTRUCTED_RESPONSES = [
       "展開或說明負因數個數。"
     ],
     "fullCreditSolution": [
-      "(-3)⁴=81。",
-      "-3⁴=-(3⁴)=-81。",
-      "(-3)³=-27。",
-      "大小關係：81>-27>-81。"
+      "(-3)⁴ 的底數包含負號，展開為四個負三相乘；負因數有偶數個，所以結果為 81。",
+      "-3⁴ 沒有括號，底數只有 3；先算 3⁴=81，再套用外層負號，結果為 -81。",
+      "(-3)³ 的底數是負三，三個負因數為奇數個，因此展開計算得到 -27。",
+      "比較一正兩負三個結果，81 最大；負數中 -27 比 -81 靠近零，所以 81>-27>-81。"
     ],
     "alternativeSolutions": [
       "可直接用奇偶判符號，但需清楚說明括號差異。"
@@ -1080,17 +1057,22 @@ export const CONSTRUCTED_RESPONSES = [
       "次方先於外層負號。"
     ],
     "commonErrors": [
-      "把-3⁴算81。",
-      "把(-3)³算27。",
-      "比較負數順序錯。"
+      "忽略第二式沒有括號，把外層負號納入底數而將 -3⁴ 算成正八十一。",
+      "認為負底數做任何次方都為正，錯把三個負因數的乘積寫成正二十七。",
+      "比較兩個負數時只看絕對值，誤認負八十一大於負二十七。"
     ],
     "independentReview": {
       "derivedResult": "81、-81、-27；81>-27>-81。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "a96c9e783666646850c0c4b8dd119169626c75c10ad9b580c2bf6c329203f76d",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "fc98ee079151f8bc83a521eedeb608895488ca8c014dd2a0ff10105f692d4b05",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "逐式先由括號判斷負號是否屬於底數，再依指數展開相同因數。",
+      "用負因數個數的奇偶決定符號，分別算出 81、-81、-27。",
+      "最後依數線位置比較三數，正數先於兩個負數，再比較兩負數大小。"
+    ]
   },
   {
     "questionId": "u01-s012-cr002",
@@ -1108,9 +1090,9 @@ export const CONSTRUCTED_RESPONSES = [
       "說明共出現五個3因數。"
     ],
     "fullCreditSolution": [
-      "第1階段3=3¹。",
-      "第2至第5階段依序再乘3，因此第5階段為3⁵。",
-      "3⁵=243。"
+      "依題目定義，第 1 階段已有 3 個小格，可寫成 3¹；每進入下一階段，小格總數都再乘 3。",
+      "因此第 2、3、4、5 階段依序為 3²、3³、3⁴、3⁵，第 5 階段共有五個 3 因數，指數是 5。",
+      "計算 3⁵=3×3×3×3×3=243，所以第 5 階段有 243 個小格。"
     ],
     "alternativeSolutions": [
       "可列3、9、27、81、243驗證。"
@@ -1137,17 +1119,22 @@ export const CONSTRUCTED_RESPONSES = [
       "若把起始階段當第0階段會得3⁶，但不符合題目明定。"
     ],
     "commonErrors": [
-      "3×5=15。",
-      "少一次得3⁴。",
-      "多一次得3⁶。"
+      "把每階段乘三誤解成階段數乘三，直接算三乘五等於十五。",
+      "從第零階段開始計數，少算一次替換而把第五階段寫成三的四次方。",
+      "在第一階段已有三個小格的前提下又多乘一次，錯寫成三的六次方。"
     ],
     "independentReview": {
       "derivedResult": "3⁵=243。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "7b692dc0ea520be8824324f9936bc331e70e94cc36b002ca12a90c985f9fe242",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "29382283af8b0a7612fe3df8f19bc5e140d0480ff5ce0e729d737e7fca6a09c1",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "先固定階段編號起點：第一階段就是三的一次方，而不是零次方。",
+      "逐階段乘三並列出指數遞增，確認到第五階段恰有五個三相乘。",
+      "展開或逐次乘算三的五次方，得到二百四十三並附上小格單位。"
+    ]
   }
 ];
 

@@ -50,7 +50,8 @@ export const LECTURE = {
     "解不等式與解方程式都要讓未知數單獨，但結果通常是一段範圍，不是單一數。",
     "兩邊同加或同減相同數，大小關係不變。",
     "兩邊同乘或同除正數，大小關係也不變。",
-    "本節先處理正係數；若最後需要除以負數，必須使用下一節後段的變號規則。"
+    "本節先處理正係數；若最後需要除以負數，必須使用下一節後段的變號規則。",
+    "每一步等價運算後都可用邊界、範圍內與範圍外的測試值回到原式檢查；遇到人數、圈數或分鐘等離散量，還要把連續範圍解讀成合適整數。"
   ],
   "formalDefinitions": [
     {
@@ -87,61 +88,74 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "消去未知數旁的常數。",
-      "check": "兩邊是否做相同加減？"
+      "instruction": "辨認要消去的常數或正係數。",
+      "check": "本節不直接除以負數。"
     },
     {
       "step": 2,
-      "instruction": "使未知數係數成為 1。",
-      "check": "目前除的是正數還是負數？"
+      "instruction": "在左右兩邊同加或同減同一數。",
+      "check": "每一行仍與前一行等價。"
     },
     {
       "step": 3,
-      "instruction": "整理成 x 在左邊的標準形式。",
-      "check": "交換兩邊時是否保持關係等價？"
+      "instruction": "必要時同乘或同除同一正數。",
+      "check": "乘除正數不改不等號方向。"
     },
     {
       "step": 4,
-      "instruction": "挑端點內外各一數代入。",
-      "check": "內部數成立、外部數不成立嗎？"
+      "instruction": "將結果寫成x在一段範圍，而非單一值。",
+      "check": "端點是否包含沿用原符號。"
+    },
+    {
+      "step": 5,
+      "instruction": "代入邊界、內部與外部值，情境題再處理整數限制。",
+      "check": "原式真假與答案範圍一致。"
     }
   ],
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "解 x+5>9。",
+      "prompt": "解x+5>9。",
       "solutionSteps": [
-        "兩邊同減 5，得 x>4。",
-        "代入 x=5：10>9 成立。"
+        "兩邊同減5。",
+        "得到x>4。",
+        "代入5成立、4不成立。"
       ],
-      "answer": "x>4。"
+      "answer": "x>4。",
+      "why": "同減五保持原來的大小次序，並使未知數單獨。以範圍內的五及端點四回到原式，一真一假，既確認方向也確認嚴格不等號沒有納入端點。"
     },
     {
       "exampleId": "L2",
-      "prompt": "解 x−7≤2。",
+      "prompt": "解x-7≤2。",
       "solutionSteps": [
-        "兩邊同加 7。",
-        "得到 x≤9。"
+        "兩邊同加7。",
+        "得到x≤9。",
+        "用9與10代入檢查。"
       ],
-      "answer": "x≤9。"
+      "answer": "x≤9。",
+      "why": "消去負七必須在兩邊同加七，不是只把符號搬到右邊。九代入使兩邊相等而成立，十代入則失敗，因此上界九包含在解集中。"
     },
     {
       "exampleId": "L3",
-      "prompt": "解 3x<15。",
+      "prompt": "解3x<15。",
       "solutionSteps": [
-        "兩邊同除以正數 3。",
-        "不等號方向不變。"
+        "辨認係數3為正。",
+        "兩邊同除正數3，方向不變。",
+        "得到x<5並以4、5驗算。"
       ],
-      "answer": "x<5。"
+      "answer": "x<5。",
+      "why": "正數除法會等比例縮小兩邊而不改變次序，所以仍使用小於號。四在答案範圍內且原式成立，五恰為端點但不成立，驗證嚴格性。"
     },
     {
       "exampleId": "L4",
-      "prompt": "解 2x+3≥11。",
+      "prompt": "解2x+3≥11。",
       "solutionSteps": [
-        "兩邊同減 3，得 2x≥8。",
-        "兩邊同除以 2，得 x≥4。"
+        "兩邊同減3得2x≥8。",
+        "兩邊同除正二得x≥4。",
+        "代入4得等號成立。"
       ],
-      "answer": "x≥4。"
+      "answer": "x≥4。",
+      "why": "先消去常數再除正係數，每一步都維持等價與方向。端點四讓原式左邊等於十一，因≥含等號而必須納入，較大的數也都成立。"
     }
   ],
   "commonMistakes": [
@@ -229,7 +243,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "8f19bb8e73b7e4f4ccc91d3a23aef7de24799ce494d5e6ea9ca27a3f1067c93d"
+  "contentSha256": "5df0881de0be69063660b916dca3d34ed48b53c64fdcf536f9cfbab6fab084fd"
 };
 
 export const QUESTIONS = [
@@ -259,10 +273,11 @@ export const QUESTIONS = [
       "result": "x>5",
       "answerIndexVerified": 1
     },
-    "explanation": "兩邊同減 7，得到 x>5。嚴格不等號不會因同減而改變方向。",
+    "explanation": "兩邊同減 7，得到 x>5。嚴格不等號不會因同減而改變方向。 代入6得到13>12為真，代入端點5得到12>12為假，驗證範圍是嚴格大於5。因此只可能選右側且不含端點的範圍。",
     "steps": [
       "左右同減 7",
-      "整理為 x>5"
+      "整理為 x>5",
+      "用x=6與x=5代回原式，確認方向與端點排除。"
     ],
     "optionAnalysis": [
       {
@@ -286,7 +301,7 @@ export const QUESTIONS = [
         "reason": "錯把嚴格大於改成含等號。"
       }
     ],
-    "misconceptionTarget": "移除常數時做錯運算或擅自加入等號。",
+    "misconceptionTarget": "移除常數時做錯運算或擅自加入等號。 也可能只在一邊減七，破壞原來的不等關係。",
     "prerequisiteCheck": "需能讀懂不等號與做整數減法。",
     "estimatedTimeSec": "55",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -302,7 +317,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3e15ffe9664ff38275984894b4188db038a08ef62d41be1507b1bc71e2b370ea"
+    "contentSha256": "e7eb99193c618b5ca385503c7a6be8b40327dfb188f5897530f645d8d475e7f5"
   },
   {
     "questionId": "u07-s002-v002",
@@ -330,10 +345,11 @@ export const QUESTIONS = [
       "result": "x≤13",
       "answerIndexVerified": 2
     },
-    "explanation": "兩邊同加 4，得到 x≤13。含等號的 ≤ 在同加後保持不變。",
+    "explanation": "兩邊同加 4，得到 x≤13。含等號的 ≤ 在同加後保持不變。 端點13代入後左式為9，與右式相等，所以13必須包含；14則不符合。這也排除把上界錯寫成嚴格小於。",
     "steps": [
       "左右同加 4",
-      "計算 9+4=13"
+      "計算 9+4=13",
+      "代入13與14，驗證端點包含且更大值排除。"
     ],
     "optionAnalysis": [
       {
@@ -357,7 +373,7 @@ export const QUESTIONS = [
         "reason": "漏掉端點 13。"
       }
     ],
-    "misconceptionTarget": "將減 4 移除時誤作減法，或漏保留等號。",
+    "misconceptionTarget": "將減 4 移除時誤作減法，或漏保留等號。 還可能把x-4理解成x與4的距離而不做等價運算。",
     "prerequisiteCheck": "需能做整數加法。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -373,7 +389,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "14e76f9cb77ee08dc5892a5d30828f61f4c68b16e296ef419916da96792b00e0"
+    "contentSha256": "901abe986940d3c1aeba741edb72ea9aa5ebd70890064857c2c14f4d1bf9e3d6"
   },
   {
     "questionId": "u07-s002-v003",
@@ -401,10 +417,11 @@ export const QUESTIONS = [
       "result": "x<6",
       "answerIndexVerified": 3
     },
-    "explanation": "兩邊同除以正數 5，不等號方向不變，得到 x<6。",
+    "explanation": "兩邊同除以正數 5，不等號方向不變，得到 x<6。 正數除法保持次序；用5驗算25<30成立，用6驗算30<30失敗，故端點不含。這同時排除把除以正數誤當成需要反向。",
     "steps": [
       "左右同除以 5",
-      "正數除法不變號"
+      "正數除法不變號",
+      "以5與6代入原式檢查範圍內值及端點。"
     ],
     "optionAnalysis": [
       {
@@ -428,7 +445,7 @@ export const QUESTIONS = [
         "reason": "獨立重算得到「x<6」，此選項與完整解答一致。"
       }
     ],
-    "misconceptionTarget": "誤以為所有除法都要變號。",
+    "misconceptionTarget": "誤以為所有除法都要變號。 也可能把30除以5算錯，或無故把嚴格小於改成含等號。",
     "prerequisiteCheck": "需會基本除法。",
     "estimatedTimeSec": "50",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -444,7 +461,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b667ed94b2dbadac6a6ad15c4417744bd8ec2a574a22e460f34cb76214c8a3c1"
+    "contentSha256": "d66c4ddec14af1cfb5d00fe3b7b07baea9adea42ded72c3462e09d75a750e05f"
   },
   {
     "questionId": "u07-s002-v004",
@@ -472,10 +489,11 @@ export const QUESTIONS = [
       "result": "x≥6",
       "answerIndexVerified": 0
     },
-    "explanation": "先兩邊同減 2 得 3x≥18，再同除以正數 3，得到 x≥6。",
+    "explanation": "先兩邊同減 2 得 3x≥18，再同除以正數 3，得到 x≥6。 x=6使左式正好20，符合含等號條件；x=5使左式為17而不成立，x=7則成立，確認射線應從6向較大側延伸。",
     "steps": [
       "同減 2 得 3x≥18",
-      "同除以 3 得 x≥6"
+      "同除以 3 得 x≥6",
+      "把6與5代回3x+2≥20，核對端點及方向。"
     ],
     "optionAnalysis": [
       {
@@ -499,7 +517,7 @@ export const QUESTIONS = [
         "reason": "選項「x>6」漏掉等號。，與獨立解得的「x≥6」不一致。"
       }
     ],
-    "misconceptionTarget": "計算 20−2 或端點包含性錯誤。",
+    "misconceptionTarget": "計算 20−2 或端點包含性錯誤。 還可能把二十減二錯算，或除正三時誤反向。",
     "prerequisiteCheck": "需會基本移項與除法。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "無單位與近似；18÷3 整除。",
@@ -515,7 +533,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "0032d3453dbf7a42e338baa972f441887d4b178a9a79ea21066b66c09bbc3d95"
+    "contentSha256": "a0768a75a72f3ed3a4bcd51e2ce9533839e76a2fa3f39a9be33a4ee37cbe8b04"
   },
   {
     "questionId": "u07-s002-v005",
@@ -543,10 +561,11 @@ export const QUESTIONS = [
       "result": "x<4",
       "answerIndexVerified": 2
     },
-    "explanation": "兩邊同加 9 得 4x<16，再同除以 4，得 x<4。",
+    "explanation": "兩邊同加 9 得 4x<16，再同除以 4，得 x<4。 因4為正，最後除法不改方向；代入3成立、4不成立，確認答案不含端點。端點四代入後成為七小於七，這個命題為假。",
     "steps": [
       "同加 9",
-      "除以正數 4"
+      "除以正數 4",
+      "用x=3與x=4代回原式驗證x<4。"
     ],
     "optionAnalysis": [
       {
@@ -570,7 +589,7 @@ export const QUESTIONS = [
         "reason": "錯納入 x=4。"
       }
     ],
-    "misconceptionTarget": "移除 −9 時使用錯誤符號，或把嚴格小於改成含等號。",
+    "misconceptionTarget": "移除 −9 時使用錯誤符號，或把嚴格小於改成含等號。 也可能把指定的先同加九做成只改左式符號的移項。",
     "prerequisiteCheck": "需會整數加法與正數除法。",
     "estimatedTimeSec": "70",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -586,7 +605,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "09925597f32ba2fabab007d5fa4c5b17417780eff361d067fc1857754204082b"
+    "contentSha256": "7956baaa0c6451b6c2a238c21b027392ccd6685370543bc6ce22b162ebbac8d1"
   },
   {
     "questionId": "u07-s002-v006",
@@ -614,10 +633,11 @@ export const QUESTIONS = [
       "result": "7",
       "answerIndexVerified": 3
     },
-    "explanation": "解原式：2x≤12，所以 x≤6。0、6、−10 都符合；7 大於 6，不是解。",
+    "explanation": "解原式：2x≤12，所以 x≤6。0、6、−10 都符合；7 大於 6，不是解。 端點6使2×6+5=17而成立；7使左式19超過17，因此只有7不是解。這也說明含等號的上界本身仍然可以取到。",
     "steps": [
       "先求解 x≤6",
-      "逐一檢查候選值"
+      "逐一檢查候選值",
+      "逐一代入四個選項，找出唯一使原式為假的7。"
     ],
     "optionAnalysis": [
       {
@@ -641,7 +661,7 @@ export const QUESTIONS = [
         "reason": "7>6，不是解。"
       }
     ],
-    "misconceptionTarget": "只代入部分選項，或忘記端點 6 包含。",
+    "misconceptionTarget": "只代入部分選項，或忘記端點 6 包含。 還可能看到負十就先排除，未將它代入小於等於的範圍。",
     "prerequisiteCheck": "需會兩步解法與否定語意。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -657,7 +677,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "34de38709ff1d1da28f4a43207f6cdb49c537c414f1a2f856229610a1c0af430"
+    "contentSha256": "2c5b98e084449fa809d19e17c90e51a217d82c6a48bce01045a433e6a1225220"
   },
   {
     "questionId": "u07-s002-v007",
@@ -685,10 +705,11 @@ export const QUESTIONS = [
       "result": "4",
       "answerIndexVerified": 0
     },
-    "explanation": "因 a>0，兩邊除以 a 得 x>12/a。與 x>3 比較端點，12/a=3，所以 a=4。",
+    "explanation": "因 a>0，兩邊除以 a 得 x>12/a。與 x>3 比較端點，12/a=3，所以 a=4。 a為正保證除法不反向；求得4後，原式4x>12確實等價於x>3。若選其他係數，邊界三就不會使左右兩邊相等。",
     "steps": [
       "正係數除法保持方向",
-      "令解集端點 12/a 等於 3"
+      "令解集端點 12/a 等於 3",
+      "將a=4代回並同除正四，檢查解集恰為x>3。"
     ],
     "optionAnalysis": [
       {
@@ -712,7 +733,7 @@ export const QUESTIONS = [
         "reason": "12/(1/4)=48。"
       }
     ],
-    "misconceptionTarget": "把 a 直接當成解集端點，或解 12/a=3 時顛倒。",
+    "misconceptionTarget": "把 a 直接當成解集端點，或解 12/a=3 時顛倒。 也可能忽略a>0的條件，未先確認能否保持不等號方向。",
     "prerequisiteCheck": "需會解正係數不等式與分數方程。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "無單位；a=4 精確。",
@@ -728,7 +749,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "cb98496943d32b7c5b39189f5116a8678a0bb4f12068dce2066b972a7f0d8863"
+    "contentSha256": "2a9fea2e9388c7ebd0058d5e40bc2a667870d0552a7925d888231c9eeb6075c7"
   },
   {
     "questionId": "u07-s002-v008",
@@ -756,10 +777,11 @@ export const QUESTIONS = [
       "result": "x≥7",
       "answerIndexVerified": 1
     },
-    "explanation": "兩邊同乘正數 2 得 x+3≥10，再同減 3，得到 x≥7。",
+    "explanation": "兩邊同乘正數 2 得 x+3≥10，再同減 3，得到 x≥7。 乘以正二只清除分母而不反向；端點7代入左式等於5，所以必須包含。範圍外的六代入則不足五，可排除錯向答案。",
     "steps": [
       "乘以正數 2",
-      "同減 3"
+      "同減 3",
+      "代入x=7及較小的6，檢查端點與向右範圍。"
     ],
     "optionAnalysis": [
       {
@@ -783,7 +805,7 @@ export const QUESTIONS = [
         "reason": "漏掉端點 7。"
       }
     ],
-    "misconceptionTarget": "清除分母時誤變號或常數移項錯誤。",
+    "misconceptionTarget": "清除分母時誤變號或常數移項錯誤。 還可能只把分子中的x乘二，沒有對整個不等式等價處理。",
     "prerequisiteCheck": "需會分數式與基本解法。",
     "estimatedTimeSec": "80",
     "unitAndRoundingCheck": "無單位與近似。",
@@ -799,7 +821,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "40a28950c52e6b53fcafa5fcbb66bb857e852b51de35ed3ace5d4aaa772b4bb8"
+    "contentSha256": "441ed78d49a0c74bab73bf694868f4dd37acad1e11cb631a26c3363bd988ab85"
   },
   {
     "questionId": "u07-s002-v009",
@@ -827,10 +849,11 @@ export const QUESTIONS = [
       "result": "兩邊同加 2x",
       "answerIndexVerified": 3
     },
-    "explanation": "為避免立刻除以負數，可先在兩邊同加 2x，得到 7>1+2x；之後同減 1、除以正數 2。",
+    "explanation": "為避免立刻除以負數，可先在兩邊同加 2x，得到 7>1+2x；之後同減 1、除以正數 2。 同加2x可把未知數係數移成正二，後續只需減一並除正二，完全符合題目策略限制。",
     "steps": [
       "觀察未知數係數為負",
-      "先同加 2x 使右側係數為正"
+      "先同加 2x 使右側係數為正",
+      "完成7>1+2x、6>2x、3>x，檢查全程未除負數。"
     ],
     "optionAnalysis": [
       {
@@ -854,7 +877,7 @@ export const QUESTIONS = [
         "reason": "最能維持後續只除正數。"
       }
     ],
-    "misconceptionTarget": "把「可得到答案」與「符合指定策略的第一步」混為一談。",
+    "misconceptionTarget": "把「可得到答案」與「符合指定策略的第一步」混為一談。 也可能選已知最後答案而忽略題目只問符合限制的第一步。",
     "prerequisiteCheck": "需會分析操作順序。",
     "estimatedTimeSec": "105",
     "unitAndRoundingCheck": "無單位；整數限制不影響第一步。",
@@ -870,7 +893,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "e858eec313f1baa080e5df313368827d5098b3ffe581b6b7dc1253830127e75b"
+    "contentSha256": "f30899541379274d8d6374df4a1d5a219c7514223461f56c8516834d08add3a6"
   },
   {
     "questionId": "u07-s002-v010",
@@ -898,10 +921,11 @@ export const QUESTIONS = [
       "result": "18+6n≥60",
       "answerIndexVerified": 0
     },
-    "explanation": "總點數是原有 18 點加上每次 6 點乘 n；「至少 60」包含 60，所以 18+6n≥60。",
+    "explanation": "總點數是原有 18 點加上每次 6 點乘 n；「至少 60」包含 60，所以 18+6n≥60。 原有18是固定項、每次6乘任務次數；七次剛好60可兌換，證明≥而非>。若少乘任務次數，單位與累積規則都不成立。",
     "steps": [
       "建立總點數 18+6n",
-      "將至少翻成 ≥"
+      "將至少翻成 ≥",
+      "以n=7算得60點，驗證至少條件包含邊界。"
     ],
     "optionAnalysis": [
       {
@@ -925,7 +949,7 @@ export const QUESTIONS = [
         "reason": "錯排除剛好 60。"
       }
     ],
-    "misconceptionTarget": "把固定量與每單位量混淆，或把至少寫成嚴格大於。",
+    "misconceptionTarget": "把固定量與每單位量混淆，或把至少寫成嚴格大於。 也可能把每次六點寫成固定六，或把原有十八乘上次數。",
     "prerequisiteCheck": "需理解固定量加變動量與至少語意。",
     "estimatedTimeSec": "75",
     "unitAndRoundingCheck": "單位均為點；不需換算。",
@@ -941,7 +965,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "2fe85d823a757eaa87ef95efeb026bb43886d50728f7c731641eb57b861a9140"
+    "contentSha256": "a609bafe27ff59381323a4a1a5abf5c539d9395ab2a576b0096c844b75c761cc"
   },
   {
     "questionId": "u07-s002-v011",
@@ -969,10 +993,11 @@ export const QUESTIONS = [
       "result": "8 分鐘",
       "answerIndexVerified": 1
     },
-    "explanation": "設經過 t 個完整分鐘，14+3t>35，所以 3t>21，t>7。t 為整數，最小為 8。",
+    "explanation": "設經過 t 個完整分鐘，14+3t>35，所以 3t>21，t>7。t 為整數，最小為 8。 七分鐘水量恰35並未超過，八分鐘38才首次觸發；完整分鐘限制要求取下一整數。",
     "steps": [
       "列 14+3t>35",
-      "解得 t>7 並取最小整數"
+      "解得 t>7 並取最小整數",
+      "比較t=7與t=8的水量，確認最小完整分鐘為8。"
     ],
     "optionAnalysis": [
       {
@@ -996,7 +1021,7 @@ export const QUESTIONS = [
         "reason": "5 分鐘只有 29。"
       }
     ],
-    "misconceptionTarget": "把「超過」當成「至少」，或對整數時間錯誤取整。",
+    "misconceptionTarget": "把「超過」當成「至少」，或對整數時間錯誤取整。 還可能把t>7四捨五入回七，忽略嚴格門檻與首次觸發。",
     "prerequisiteCheck": "需會建立一次式與嚴格下界。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "公升與分鐘單位一致；完整分鐘不做小數四捨五入。",
@@ -1012,7 +1037,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "1cb3128a0baf9646470351dedd6d9f8e917c587c4ae73588865c0d49f5d4c0b3"
+    "contentSha256": "98555d0a30940c083270e5b1df27be56c79764f3f6e26a58a61945af3b1244f4"
   },
   {
     "questionId": "u07-s002-v012",
@@ -1040,10 +1065,11 @@ export const QUESTIONS = [
       "result": "5 圈",
       "answerIndexVerified": 2
     },
-    "explanation": "設再走 c 圈，2.5+0.8c≥6.5。得 0.8c≥4，所以 c≥5；至少 5 圈。",
+    "explanation": "設再走 c 圈，2.5+0.8c≥6.5。得 0.8c≥4，所以 c≥5；至少 5 圈。 五圈增加4公里，總距離恰6.5而符合不少於；四圈只有5.7公里，尚未達標。整圈限制也表示結果不能保留任何非整數圈數。",
     "steps": [
       "列總里程下限",
-      "解得 c≥5"
+      "解得 c≥5",
+      "以4圈與5圈相鄰檢查，確認5為最小整數解。"
     ],
     "optionAnalysis": [
       {
@@ -1067,7 +1093,7 @@ export const QUESTIONS = [
         "reason": "7 圈也非最少。"
       }
     ],
-    "misconceptionTarget": "小數運算錯誤，或看到「不少於」卻排除剛好達標。",
+    "misconceptionTarget": "小數運算錯誤，或看到「不少於」卻排除剛好達標。 還可能把累積里程二點五再次乘圈數，錯置固定量與單位量。",
     "prerequisiteCheck": "需會小數加乘與 ≥ 語意。",
     "estimatedTimeSec": "95",
     "unitAndRoundingCheck": "里程同為公里；0.8 精確，不需四捨五入。",
@@ -1083,7 +1109,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "4cdbda5954299e58146c306fcf0f9cd41e9b97c511b327789549df58e3fdd288"
+    "contentSha256": "6443e49fe5fa49aa8302b14534250ff0a0b07dba995dea2c0d5417f85647bf5f"
   }
 ];
 
@@ -1102,17 +1128,19 @@ export const CONSTRUCTED_RESPONSES = [
       "代入邊界值驗證"
     ],
     "fullCreditSolution": [
-      "兩邊同加 7，得 4x≤28。",
-      "兩邊同除以正數 4，不等號方向不變，得 x≤7。",
-      "代入 x=7：4×7−7=21，確實滿足 ≤21；因此邊界包含。"
+      "在4x-7≤21兩邊同加7，得到4x≤28；同加相同數不改變大小次序。",
+      "再將兩邊同除以正數4，不等號方向保持，得到x≤7。",
+      "代入邊界x=7，左式4×7-7=21，與右式相等，所以7應納入解集。",
+      "另取範圍外x=8，左式25>21不成立，可確認方向不是x≥7。"
     ],
     "alternativeMethod": [
       "也可先把 −7 移到右邊寫成 4x≤28，但必須能說明本質是兩邊同加 7。"
     ],
     "reasoningSteps": [
-      "消去常數項",
-      "以正係數孤立 x",
-      "檢查含等號端點"
+      "兩邊同加7消去常數。",
+      "兩邊同除正四孤立x。",
+      "代入邊界7檢查等號。",
+      "用範圍外的8反查方向。"
     ],
     "rubric": [
       {
@@ -1137,8 +1165,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "接受分數或小數中間式；最後需清楚寫 x≤7。",
     "answerOnlyPolicy": "只寫 x≤7 而無任何步驟與驗證，最多 1 分。",
     "commonErrors": [
-      "只在一邊加 7",
-      "除以 4 時錯誤反向不等號"
+      "只在左邊加7而未同步改右邊，破壞等價關係。",
+      "除以正數4時不必要地反向，或漏掉原符號中的等號。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1151,7 +1179,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "692e0d23f9ddb46c9896d8bc5da9d21a6f478ea3e20b4189d510e8ed229d925a"
+    "contentSha256": "0c9f7ab264aa9a73e2d4fc42a13bf65235ca34c11d8060f9c74b5837c43f1c71"
   },
   {
     "questionId": "u07-s002-cr002",
@@ -1168,19 +1196,19 @@ export const CONSTRUCTED_RESPONSES = [
       "用相鄰整數檢查"
     ],
     "fullCreditSolution": [
-      "設 x 為可買的筆數，x 為非負整數。",
-      "總費用為 34+12x，故 34+12x≤130。",
-      "12x≤96，所以 x≤8。",
-      "買 8 支共 130 元；買 9 支需 142 元，因此最多 8 支。"
+      "設x為購買的筆數，因不能買負支或部分一支，所以x為非負整數。",
+      "筆記本固定34元，x支筆共12x元；不得超過130元給出34+12x≤130。",
+      "兩邊減34得12x≤96，再除正12得x≤8。",
+      "買8支總價34+96=130元可行；買9支為142元超過現金，所以最大非負整數是8。"
     ],
     "alternativeMethod": [
       "也可先算剩餘金額 130−34=96，再以 96÷12=8，並用「不得超過」說明這等同於 12x≤96。"
     ],
     "reasoningSteps": [
-      "辨識固定費 34 與每支 12",
-      "把不得超過翻成 ≤",
-      "由連續上界取最大非負整數",
-      "檢查 8 與 9"
+      "定義筆數及非負整數限制。",
+      "辨認固定費與每支費建立≤。",
+      "解出連續上界x≤8。",
+      "用8與9支相鄰檢查最大值。"
     ],
     "rubric": [
       {
@@ -1205,8 +1233,8 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "x 的單位為支，金額為元；不接受把 x 寫成金額。",
     "answerOnlyPolicy": "只寫「8 支」而無列式，最多 1 分。",
     "commonErrors": [
-      "漏加筆記本固定費",
-      "把不得超過寫成 ≥"
+      "漏加已確定購買的筆記本34元，使可買筆數被高估。",
+      "把不得超過寫成≥，或解出上界後未套用筆數的整數限制。"
     ],
     "figureId": null,
     "independentReview": {
@@ -1219,7 +1247,7 @@ export const CONSTRUCTED_RESPONSES = [
     "reviewStatus": "independently-reviewed",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_OLD_RECORD_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "14ff70f58693982fef218f2d69677aa39c5abc95c4143c965f9db14a4f802a9e"
+    "contentSha256": "64b5b79822f5a677e49334c07bd5929bb625fde4faace9ecd377d07bc244aeef"
   }
 ];
 
@@ -1230,7 +1258,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "3e15ffe9664ff38275984894b4188db038a08ef62d41be1507b1bc71e2b370ea",
+    "contentSha256": "e7eb99193c618b5ca385503c7a6be8b40327dfb188f5897530f645d8d475e7f5",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "由 x+7>12，為保持比較兩邊同減 7：x>12−7=5。代 x=6 成立、x=5 不成立。",
@@ -1262,7 +1290,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "14e76f9cb77ee08dc5892a5d30828f61f4c68b16e296ef419916da96792b00e0",
+    "contentSha256": "901abe986940d3c1aeba741edb72ea9aa5ebd70890064857c2c14f4d1bf9e3d6",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "把左右都加 4：x−4+4≤9+4，所以 x≤13；端點 13 代回成立。",
@@ -1294,7 +1322,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "b667ed94b2dbadac6a6ad15c4417744bd8ec2a574a22e460f34cb76214c8a3c1",
+    "contentSha256": "d66c4ddec14af1cfb5d00fe3b7b07baea9adea42ded72c3462e09d75a750e05f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "5x<30，因 5>0 可同除 5 且保持方向：x<6。代 x=5 成立、x=6 不成立。",
@@ -1326,7 +1354,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "0032d3453dbf7a42e338baa972f441887d4b178a9a79ea21066b66c09bbc3d95",
+    "contentSha256": "a0768a75a72f3ed3a4bcd51e2ce9533839e76a2fa3f39a9be33a4ee37cbe8b04",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "原式減 2：3x≥18；再除正 3：x≥6。檢查 x=6 時左邊 20，恰等於右邊。",
@@ -1358,7 +1386,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "09925597f32ba2fabab007d5fa4c5b17417780eff361d067fc1857754204082b",
+    "contentSha256": "7956baaa0c6451b6c2a238c21b027392ccd6685370543bc6ce22b162ebbac8d1",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "兩邊同加 9 得 4x<16；兩邊同除以正數 4，方向不變，得 x<4。",
@@ -1390,7 +1418,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "34de38709ff1d1da28f4a43207f6cdb49c537c414f1a2f856229610a1c0af430",
+    "contentSha256": "2c5b98e084449fa809d19e17c90e51a217d82c6a48bce01045a433e6a1225220",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "2x+5≤17 ⇒ 2x≤12 ⇒ x≤6。測四值，只有 7 不滿足 x≤6，因此不是解。",
@@ -1422,7 +1450,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "cb98496943d32b7c5b39189f5116a8678a0bb4f12068dce2066b972a7f0d8863",
+    "contentSha256": "2a9fea2e9388c7ebd0058d5e40bc2a667870d0552a7925d888231c9eeb6075c7",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "ax>12 且 a>0 等價於 x>12/a。題給同一解集 x>3，因此 12/a=3；乘 a 得 12=3a，a=4。",
@@ -1454,7 +1482,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "40a28950c52e6b53fcafa5fcbb66bb857e852b51de35ed3ace5d4aaa772b4bb8",
+    "contentSha256": "441ed78d49a0c74bab73bf694868f4dd37acad1e11cb631a26c3363bd988ab85",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "因 2 為正，原式乘 2 得 x+3≥10；減 3 得 x≥7。x=7 時左式 5，故含端點。",
@@ -1486,7 +1514,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "e858eec313f1baa080e5df313368827d5098b3ffe581b6b7dc1253830127e75b",
+    "contentSha256": "f30899541379274d8d6374df4a1d5a219c7514223461f56c8516834d08add3a6",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "若先加 2x：7>1+2x，再減 1 得 6>2x，除正 2 得 3>x。整個流程沒有除負數，符合題設。",
@@ -1518,7 +1546,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "2fe85d823a757eaa87ef95efeb026bb43886d50728f7c731641eb57b861a9140",
+    "contentSha256": "a609bafe27ff59381323a4a1a5abf5c539d9395ab2a576b0096c844b75c761cc",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "n 次新增 6n 點，總數 18+6n。邊界 n=7 時總數 60 且可兌換，因此比較符號為 ≥。",
@@ -1550,7 +1578,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "1cb3128a0baf9646470351dedd6d9f8e917c587c4ae73588865c0d49f5d4c0b3",
+    "contentSha256": "98555d0a30940c083270e5b1df27be56c79764f3f6e26a58a61945af3b1244f4",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "逐步算邊界：t=7 時 14+21=35，未超過；t=8 時 14+24=38，首次超過。因此至少 8 分鐘。",
@@ -1582,7 +1610,7 @@ export const SEMANTIC_REVIEWS = [
     "unitId": "u07",
     "topicId": "u07-basics",
     "skillId": "inequality-solve-basic",
-    "contentSha256": "4cdbda5954299e58146c306fcf0f9cd41e9b97c511b327789549df58e3fdd288",
+    "contentSha256": "6443e49fe5fa49aa8302b14534250ff0a0b07dba995dea2c0d5417f85647bf5f",
     "reviewVersion": "human-review-r4.0",
     "reviewedAt": "2026-07-12",
     "independentSolution": "剩餘距離 6.5−2.5=4 公里；每圈 0.8 公里，4÷0.8=5。走 5 圈剛好達到且「不少於」允許等於。",

@@ -10,9 +10,9 @@ export const LECTURE = {
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
-    "能辨認平方差 a^2-b^2。",
+    "能辨認平方差 a²-b²。",
     "能辨認完全平方三項式。",
-    "能分辨 x^2+b^2 不是平方差。",
+    "能分辨 x²+b² 不是平方差。",
     "能在使用公式前先提公因式。",
     "能以展開驗證公式分解。"
   ],
@@ -43,51 +43,52 @@ export const LECTURE = {
   ],
   "notation": [
     {
-      "symbol": "a^2-b^2",
+      "symbol": "a²-b²",
       "meaning": "兩平方之差。"
     },
     {
-      "symbol": "(a+b)^2",
-      "meaning": "a^2+2ab+b^2。"
+      "symbol": "(a+b)²",
+      "meaning": "a²+2ab+b²。"
     },
     {
-      "symbol": "(a-b)^2",
-      "meaning": "a^2-2ab+b^2。"
+      "symbol": "(a-b)²",
+      "meaning": "a²-2ab+b²。"
     }
   ],
   "conceptNarrative": [
-    "平方差來自 (a+b)(a-b)=a^2-b^2，中間交叉項互相抵消。",
+    "平方差來自 (a+b)(a-b)=a²-b²，中間交叉項互相抵消。",
     "完全平方三項式的首末項必須都是平方，中間項還要等於首末平方根乘積的兩倍。",
-    "符號由中間項決定：正中間項配 (a+b)^2，負中間項配 (a-b)^2。",
-    "若各項先有公因式，應先提出，才能露出公式結構。"
+    "符號由中間項決定：正中間項配 (a+b)²，負中間項配 (a-b)²。",
+    "若各項先有公因式，應先提出，才能露出公式結構。",
+    "公式法不是看外形便套用，而要逐項驗證結構。兩項式只有在兩項都是平方且以減號連接時，才能寫成和乘差；三項式則需先找首末項平方根，再確認中間項恰為正或負的兩倍乘積，符號決定括號中的加減。若原式另有公因式，必須先提出再檢查公式，最後把結果完整展開，確認外層因式、交叉項與各項符號都沒有遺漏。"
   ],
   "formalDefinitions": [
     {
       "name": "平方差公式",
-      "statement": "a^2-b^2=(a+b)(a-b)。"
+      "statement": "a²-b²=(a+b)(a-b)。"
     },
     {
       "name": "完全平方公式",
-      "statement": "a^2±2ab+b^2=(a±b)^2。"
+      "statement": "a²±2ab+b²=(a±b)²。"
     }
   ],
   "formulas": [
     {
-      "formula": "a^2-b^2=(a+b)(a-b)",
+      "formula": "a²-b²=(a+b)(a-b)",
       "conditions": [
         "兩項都是平方且中間是減號"
       ],
       "meaning": "平方差。"
     },
     {
-      "formula": "a^2+2ab+b^2=(a+b)^2",
+      "formula": "a²+2ab+b²=(a+b)²",
       "conditions": [
         "中間項恰為 +2ab"
       ],
       "meaning": "和的平方。"
     },
     {
-      "formula": "a^2-2ab+b^2=(a-b)^2",
+      "formula": "a²-2ab+b²=(a-b)²",
       "conditions": [
         "中間項恰為 -2ab"
       ],
@@ -95,7 +96,7 @@ export const LECTURE = {
     }
   ],
   "nonApplicableCases": [
-    "a^2+b^2 在國中整數係數範圍不能套平方差。",
+    "a²+b² 在國中整數係數範圍不能套平方差。",
     "首末項是平方但中間項不是 ±2ab 時，不能硬套完全平方。",
     "若 a 或 b 的辨認錯誤，中間項檢查會失敗。"
   ],
@@ -129,39 +130,43 @@ export const LECTURE = {
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "x^2-49",
+      "prompt": "x²-49",
       "solutionSteps": [
-        "x^2 與 49=7^2。",
+        "x² 與 49=7²。",
         "兩平方相減。"
       ],
-      "answer": "(x+7)(x-7)"
+      "answer": "(x+7)(x-7)",
+      "why": "未知數平方與七的平方以減號連接，正好符合平方差；一正一負兩因式相乘時，正七倍未知數與負七倍未知數抵消，只留下未知數平方減四十九。"
     },
     {
       "exampleId": "L2",
-      "prompt": "4y^2+12y+9",
+      "prompt": "4y²+12y+9",
       "solutionSteps": [
         "首項根為 2y，末項根為 3。",
         "2·2y·3=12y，符號為正。"
       ],
-      "answer": "(2y+3)^2"
+      "answer": "(2y+3)²",
+      "why": "首末項平方根是二倍未知數與三，兩倍乘積恰為正十二倍未知數；因此括號取加號並平方，展開後首項、中間項與末項都逐一吻合。"
     },
     {
       "exampleId": "L3",
-      "prompt": "25m^2-20mn+4n^2",
+      "prompt": "25m²-20mn+4n²",
       "solutionSteps": [
         "首末平方根為 5m、2n。",
         "中間項 -2·5m·2n=-20mn。"
       ],
-      "answer": "(5m-2n)^2"
+      "answer": "(5m-2n)²",
+      "why": "首末平方根五甲與二乙的兩倍乘積是二十甲乙，而原中間項為負，所以使用差式平方；兩個負交叉項合計負二十甲乙，符號與係數都正確。"
     },
     {
       "exampleId": "L4",
-      "prompt": "3a^2-75",
+      "prompt": "3a²-75",
       "solutionSteps": [
-        "先提出 3 得 a^2-25。",
+        "先提出 3 得 a²-25。",
         "再用平方差。"
       ],
-      "answer": "3(a+5)(a-5)"
+      "answer": "3(a+5)(a-5)",
+      "why": "三是兩項的共同因數，若直接只看平方差容易遺漏外層；先提出三後，括號內才是甲平方減五平方，再分成和與差並保留最外層三。"
     }
   ],
   "difficultyConnections": {
@@ -172,7 +177,7 @@ export const LECTURE = {
   },
   "commonMistakes": [
     {
-      "mistake": "把 a^2+b^2 當平方差。",
+      "mistake": "把 a²+b² 當平方差。",
       "why": "只看到兩個平方。",
       "correction": "公式要求減號。"
     },
@@ -182,9 +187,9 @@ export const LECTURE = {
       "correction": "必須等於 ±2ab。"
     },
     {
-      "mistake": "把 (a-b)^2 寫成 a^2-b^2。",
+      "mistake": "把 (a-b)² 寫成 a²-b²。",
       "why": "忽略交叉項。",
-      "correction": "展開是 a^2-2ab+b^2。"
+      "correction": "展開是 a²-2ab+b²。"
     },
     {
       "mistake": "平方差兩括號都同號。",
@@ -257,7 +262,7 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "f83e588b58fa16b0a9949e4978f5455b684cca6b8e96cf1a44ca160282ecb2c9"
+  "contentSha256": "04006396d6367820f026009c868032342ed3fbfece03ddc80bd274723ee2e69d"
 };
 
 export const QUESTIONS = [
@@ -285,7 +290,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "展開 (x+5)(x-5)=x²-25。",
-    "explanation": "x²-25=x²-5²=(x+5)(x-5)。",
+    "explanation": "x²-25=x²-5²=(x+5)(x-5)。 兩項分別是未知數的平方與五的平方，而且中間是減號，符合平方差；寫成一正一負的兩因式後，交叉項正五倍未知數與負五倍未知數相消，只留下原來兩項。",
     "steps": [
       "辨認兩項都是平方。",
       "確認中間是減號。",
@@ -313,7 +318,7 @@ export const QUESTIONS = [
         "reason": "展開為 x²+10x+25。"
       }
     ],
-    "misconceptionTarget": "把平方差誤寫成差的平方。",
+    "misconceptionTarget": "把平方差誤寫成差的平方。 平方差的兩個一次因式必須一正一負，不能寫成同一個差式平方。",
     "prerequisiteCheck": "承接提公因式，但本題無公因式要先提。",
     "estimatedTimeSec": 60,
     "unitAndRoundingChecks": "無單位；係數精確。",
@@ -332,7 +337,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "574cde95cfc1d572580baadb1c1cf904cd45b74756ebdd564db244e9f1009ade"
+    "contentSha256": "3ebcaaebc277fa3b369d0b724cd306f263c7c49ae76adda163d20ac35420fd36"
   },
   {
     "questionId": "u12-s002-v002",
@@ -358,7 +363,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(x+5)² 展開為 x²+10x+25。",
-    "explanation": "x²+10x+25=x²+2·x·5+5²=(x+5)²。",
+    "explanation": "x²+10x+25=x²+2·x·5+5²=(x+5)²。 首項與末項的平方根是未知數與五，兩倍乘積正好為十倍未知數，且中間項為正；因此括號取加號並平方，展開會得到首項、兩個交叉項與末項完全一致。",
     "steps": [
       "找首末平方根 x、5。",
       "核對中間項 +10x。",
@@ -405,7 +410,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "3bc68b006140f0db13462ec11716c51ec9aa0ccddee09add63d2f2961e587494"
+    "contentSha256": "e84cefd0395ec0e9a07138c8e5159457dcf5f677201d1a778e9eb75c056aab8d"
   },
   {
     "questionId": "u12-s002-v003",
@@ -431,7 +436,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "交叉項 -12y+12y 抵消，留下 9y²-16。",
-    "explanation": "9y²-16=(3y)²-4²=(3y+4)(3y-4)。",
+    "explanation": "9y²-16=(3y)²-4²=(3y+4)(3y-4)。 九倍平方項的平方根是三倍未知數，十六的平方根是四；兩平方相減應寫成三倍未知數加四與三倍未知數減四相乘，展開時交叉項抵消。",
     "steps": [
       "取平方根 3y、4。",
       "使用平方差一正一負。",
@@ -478,7 +483,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "114fbeeeccd24a4cf4e607c7fd21b1665fc56df3a98a22d475e188774a617d1f"
+    "contentSha256": "c3a70276964df80f73f756705ec767f1a645932e956b4bc1e8a5fcb79dbec815"
   },
   {
     "questionId": "u12-s002-v004",
@@ -504,7 +509,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "展開平方得到 4x²-12x+9。",
-    "explanation": "4x²-12x+9=(2x)²-2·(2x)·3+3²=(2x-3)²。",
+    "explanation": "4x²-12x+9=(2x)²-2·(2x)·3+3²=(2x-3)²。 四倍平方項與九的平方根分別為二倍未知數及三，中間項恰等於負的兩倍乘積；所以括號使用減號並重複相乘，展開時兩個負交叉項合成負十二倍未知數。",
     "steps": [
       "找首項平方根 2x。",
       "找末項平方根 3。",
@@ -532,7 +537,7 @@ export const QUESTIONS = [
         "reason": "中間項符號為正。"
       }
     ],
-    "misconceptionTarget": "把差的平方與平方差混淆。",
+    "misconceptionTarget": "把差的平方與平方差混淆。 差的平方含有負兩倍乘積中間項，不能與沒有一次項的平方差混為一談。",
     "prerequisiteCheck": "需熟悉 (a-b)² 展開。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位與近似。",
@@ -551,7 +556,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "dcbb774224ba83c3b0a289a7e87f8c36c7127cc7797d91097ae778b29d0bcb6e"
+    "contentSha256": "df979ff907d51df6afa3c6e798670bf49f79abe62fa6e1b7bd051c871edac684"
   },
   {
     "questionId": "u12-s002-v005",
@@ -577,7 +582,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "(5a+2b)² 展開完全吻合三項。",
-    "explanation": "首末項分別為 (5a)²、(2b)²，中間正好是兩倍乘積。",
+    "explanation": "首末項分別為 (5a)²、(2b)²，中間正好是兩倍乘積。 首末項平方根是五倍甲與二倍乙，兩倍乘積為二十甲乙，正好等於正的中間項；因此兩個量在括號內取加號，整個二項式平方後三項逐一吻合。",
     "steps": [
       "取平方根 5a、2b。",
       "計算 2·5a·2b=20ab。",
@@ -605,7 +610,7 @@ export const QUESTIONS = [
         "reason": "會得到 25a²-4b²。"
       }
     ],
-    "misconceptionTarget": "忽略 b 或把平方根係數照抄。",
+    "misconceptionTarget": "忽略 b 或把平方根係數照抄。 取平方根時係數也要開平方，且兩個變數都必須保留在對應項中。",
     "prerequisiteCheck": "需會單項式平方與乘法。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無實際單位；ab 為乘積。",
@@ -624,7 +629,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c1598e01ac3866835c968c5a93f5162e39332d295df52342846aa3bb0a0a2828"
+    "contentSha256": "7426ce539e967413a5471837be3693d212c0979a91ae24db6d3806d604bac4e4"
   },
   {
     "questionId": "u12-s002-v006",
@@ -650,7 +655,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "展開後交叉項抵消，得到原式。",
-    "explanation": "49m²-n²=(7m)²-n²=(7m+n)(7m-n)。",
+    "explanation": "49m²-n²=(7m)²-n²=(7m+n)(7m-n)。 四十九甲平方是七甲的平方，而乙平方的平方根因式是乙；平方差寫成七甲加乙與七甲減乙，展開時正負七甲乙互相抵消，末項留下負乙平方。",
     "steps": [
       "辨認兩平方。",
       "分別取根 7m、n。",
@@ -678,7 +683,7 @@ export const QUESTIONS = [
         "reason": "常數部分成為 -n⁴。"
       }
     ],
-    "misconceptionTarget": "第二個平方根把 n² 當成 n² 本身。",
+    "misconceptionTarget": "第二個平方根把 n² 當成 n² 本身。 辨認平方單項式時要取實際因式乙，不能把原來的乙平方再次放入括號。",
     "prerequisiteCheck": "需理解 n² 的平方根結構是 n。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位；代數恆等不取主值平方根。",
@@ -697,7 +702,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "2e51e1d06eb95e9a6a1463a53f1922dd9725e5829af7f9949f6fe55154b29570"
+    "contentSha256": "c1cd1b3ef049ee90b12ef12c4d5e6e04c22b53ca361f08d91288634cc9237d4a"
   },
   {
     "questionId": "u12-s002-v007",
@@ -723,7 +728,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "2(x+3)(x-3)=2(x²-9)=2x²-18。",
-    "explanation": "2x²-18=2(x²-9)=2(x+3)(x-3)。",
+    "explanation": "2x²-18=2(x²-9)=2(x+3)(x-3)。 原式兩項先共同提出二，括號內成為未知數平方減九；這仍是三的平方差，必須繼續分成未知數加三與未知數減三，最後保留外層二並展開回查。",
     "steps": [
       "先提出 2。",
       "辨認 x²-3²。",
@@ -770,7 +775,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "516c6de955e93ad32636572a6a72ac237103cdda2b5b4a779ebd23704196497d"
+    "contentSha256": "eb56ca3a78c1d568868b3ef6d9ae68becd53af4b427f28775e3d45b6677e803a"
   },
   {
     "questionId": "u12-s002-v008",
@@ -796,7 +801,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "x²+9 沒有減號，因此不符合平方差公式；其餘皆可明確分解。",
-    "explanation": "平方差必須是兩平方相減；x²+9 是平方和。",
+    "explanation": "平方差必須是兩平方相減；x²+9 是平方和。 平方差公式的核心條件是兩個平方量相減；未知數平方加九雖然兩項都是平方，卻是相加，不能在本題限定的整數係數範圍套用，另外三式都可寫成一正一負因式。",
     "steps": [
       "檢查每式是否為 A²-B²。",
       "前三個減法式可套公式。",
@@ -824,7 +829,7 @@ export const QUESTIONS = [
         "reason": "等於 (5+y)(5-y)。"
       }
     ],
-    "misconceptionTarget": "只看到兩個平方就套公式。",
+    "misconceptionTarget": "只看到兩個平方就套公式。 公式適用與否不只看兩項是否為平方，還必須核對中間的運算符號是減號。",
     "prerequisiteCheck": "需理解平方差的必要條件。",
     "estimatedTimeSec": 90,
     "unitAndRoundingChecks": "無單位與近似。",
@@ -843,7 +848,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "921dad1606d40cfe46e27b268c286cdc6eede7d93dc264e0342b6d1148e64322"
+    "contentSha256": "d551e0cc321b96f7c10e80c15d3381358dda5ccc517948700d20e558abca06ce"
   },
   {
     "questionId": "u12-s002-v009",
@@ -869,7 +874,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "(p-q)²=p²-2pq+q²。",
-    "explanation": "p²-2pq+q² 符合 a²-2ab+b²，取 a=p、b=q。",
+    "explanation": "p²-2pq+q² 符合 a²-2ab+b²，取 a=p、b=q。 首項與末項已是甲、乙的平方，中間項為負的兩倍甲乙，所以是甲減乙的平方；把差式乘自己會得到兩個負交叉項，合計正好是負二甲乙。",
     "steps": [
       "對照公式。",
       "辨認中間項 -2pq。",
@@ -897,7 +902,7 @@ export const QUESTIONS = [
         "reason": "展開中間項為 -4pq，末項為 4q²。"
       }
     ],
-    "misconceptionTarget": "把 -2pq 的 2 放進括號成 p-2q。",
+    "misconceptionTarget": "把 -2pq 的 2 放進括號成 p-2q。 中間項中的係數二來自兩個交叉項相加，不應直接放進括號成為二倍乙。",
     "prerequisiteCheck": "需熟悉完全平方一般式。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "無單位；代數恆等精確。",
@@ -916,7 +921,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "14125ec29bc2fd454fb0f54b43cdd6744567f4d7712b5e8986d4fc646e4ccf1b"
+    "contentSha256": "8a46b4d40a7850f8f310c0718c21fb20991331dd34897edc5a1a58bb5aa9ad40"
   },
   {
     "questionId": "u12-s002-v010",
@@ -942,7 +947,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "展開為 L²-36，且兩因式單位各為公尺，乘積為平方公尺。",
-    "explanation": "鋪面面積是兩正方形面積差，使用平方差得 (L+6)(L-6)。",
+    "explanation": "鋪面面積是兩正方形面積差，使用平方差得 (L+6)(L-6)。 鋪面面積是外正方形面積減去邊長六的內正方形面積，因此為兩平方之差；分解後兩因式分別是邊長和與邊長差，乘積單位仍為平方公尺，且題設保證差為正。",
     "steps": [
       "確認兩面積為 L²、6²。",
       "套平方差。",
@@ -989,7 +994,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "b80916f2e49b95ef6bdc692dc9a90a3937408313d36677363e8e0df72fb934cc"
+    "contentSha256": "01b9429dd5040ec29c697b0336a4f0ce4620368e6c47d403d7f6a5801cf83ad1"
   },
   {
     "questionId": "u12-s002-v011",
@@ -1015,7 +1020,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "展開與面積式一致，且兩因式相同符合正方形。",
-    "explanation": "x²+8x+16=x²+2·x·4+4²=(x+4)²。",
+    "explanation": "x²+8x+16=x²+2·x·4+4²=(x+4)²。 面積式首末平方根為未知數與四，正的中間項等於兩倍乘積八倍未知數；所以兩個相同因式都是未知數加四，這也直接符合正方形長與寬相等的幾何條件。",
     "steps": [
       "辨認完全平方。",
       "因式解讀為兩條相同邊。",
@@ -1062,7 +1067,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "c96fa6d0b86e340ae27901c60c464878a6ad8a4600eaa1160379b2bb3a53a5bf"
+    "contentSha256": "93f1746b84be4f72d776431c69df20cfdff0c9c163f5d3e7de188627547a6856"
   },
   {
     "questionId": "u12-s002-v012",
@@ -1088,7 +1093,7 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "96²=9216，10000-9216=784，可獨立回查。",
-    "explanation": "100²-96²=(100+96)(100-96)=196×4=784。",
+    "explanation": "100²-96²=(100+96)(100-96)=196×4=784。 兩個大平方相減可改成底數和乘底數差，和是一百九十六、差是四，相乘得七百八十四；再直接計算九十六平方並由一萬扣除，可得到同值完成獨立驗算。",
     "steps": [
       "辨認平方差。",
       "算和 196、差 4。",
@@ -1116,7 +1121,7 @@ export const QUESTIONS = [
         "reason": "把 96×16 當作公式結果。"
       }
     ],
-    "misconceptionTarget": "把平方差當成差的平方。",
+    "misconceptionTarget": "把平方差當成差的平方。 平方差等於底數和乘底數差，不能只計算底數差後再把它平方。",
     "prerequisiteCheck": "只需整數乘法。",
     "estimatedTimeSec": 105,
     "unitAndRoundingChecks": "單位為位元；結果精確，無四捨五入。",
@@ -1135,7 +1140,7 @@ export const QUESTIONS = [
     "noTemplateDeclaration": true,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a1bf98fb05306959eefe3d4198adf34a43968e2797acbf00b2f7a64851608a7f"
+    "contentSha256": "d2e9c4b937fa26a68ce9940324bf69a7351f1fa7ae8b67c24ac153aacb13bae0"
   }
 ];
 
@@ -1159,7 +1164,8 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "12x²-75=3(4x²-25)。",
       "4x²-25=(2x)²-5²=(2x+5)(2x-5)。",
-      "所以答案為 3(2x+5)(2x-5)。"
+      "所以答案為 3(2x+5)(2x-5)。",
+      "先提出十二與七十五的最大公因數三，得到三乘四倍未知數平方減二十五；括號內是二倍未知數的平方減五的平方，再分成一正一負兩因式。把三乘兩因式展開，交叉項抵消並恢復十二倍平方項與負七十五。"
     ],
     "alternativeSolutions": [
       "也可先看成 3[(2x)²-5²]，再直接套平方差。"
@@ -1199,7 +1205,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只寫正確最終答案最高 2 分。",
     "commonErrors": [
       "把 4x²-25 寫成 (2x-5)²。",
-      "漏掉外層 3。"
+      "漏掉外層 3。",
+      "只看到四倍未知數平方與二十五是平方差，分解後卻遺漏最外層共同因數三。"
     ],
     "independentReview": {
       "derivedResult": "3(2x+5)(2x-5)。",
@@ -1209,7 +1216,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "ce4a3f38999674c4e9d3ff599abf544f5c264b66d91bd54c84622b22a85ad3a5"
+    "contentSha256": "5d74b719f80157bdef1e59be2ea1181ac5e0fc98590a0c33c77356b029ce25d0"
   },
   {
     "questionId": "u12-s002-cr002",
@@ -1231,7 +1238,8 @@ export const CONSTRUCTED_RESPONSES = [
     "fullCreditSolution": [
       "9a²=(3a)²，16b²=(4b)²。",
       "-2·3a·4b=-24ab，恰為中間項。",
-      "因此 9a²-24ab+16b²=(3a-4b)²。"
+      "因此 9a²-24ab+16b²=(3a-4b)²。",
+      "九甲平方與十六乙平方的平方根分別為三甲、四乙；負的兩倍乘積為負二十四甲乙，正好等於中間項，所以三項式是三甲減四乙的平方。展開同一差式兩次，首項、兩個交叉項與末項皆能回到原式。"
     ],
     "alternativeSolutions": [
       "可直接展開 (3a-4b)(3a-4b) 驗證四項合併。"
@@ -1281,7 +1289,7 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-    "contentSha256": "a7ddb636c730c7f185c77debdf0720c8f2c2f19c96a644f44249b26e3da1bf64"
+    "contentSha256": "0b5bdcc85f8806b13daea7277676688ab448cdfbca95241319d3ce7f20c16423"
   }
 ];
 
@@ -1290,7 +1298,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v001",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "574cde95cfc1d572580baadb1c1cf904cd45b74756ebdd564db244e9f1009ade",
+    "contentSha256": "3ebcaaebc277fa3b369d0b724cd306f263c7c49ae76adda163d20ac35420fd36",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開 (x+5)(x-5)=x²-25。",
     "derivedAnswer": "(x+5)(x-5)",
@@ -1324,7 +1332,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v002",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "3bc68b006140f0db13462ec11716c51ec9aa0ccddee09add63d2f2961e587494",
+    "contentSha256": "e84cefd0395ec0e9a07138c8e5159457dcf5f677201d1a778e9eb75c056aab8d",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(x+5)² 展開為 x²+10x+25。",
     "derivedAnswer": "(x+5)²",
@@ -1358,7 +1366,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v003",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "114fbeeeccd24a4cf4e607c7fd21b1665fc56df3a98a22d475e188774a617d1f",
+    "contentSha256": "c3a70276964df80f73f756705ec767f1a645932e956b4bc1e8a5fcb79dbec815",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "交叉項 -12y+12y 抵消，留下 9y²-16。",
     "derivedAnswer": "(3y+4)(3y-4)",
@@ -1392,7 +1400,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v004",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "dcbb774224ba83c3b0a289a7e87f8c36c7127cc7797d91097ae778b29d0bcb6e",
+    "contentSha256": "df979ff907d51df6afa3c6e798670bf49f79abe62fa6e1b7bd051c871edac684",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開平方得到 4x²-12x+9。",
     "derivedAnswer": "(2x-3)²",
@@ -1426,7 +1434,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v005",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "c1598e01ac3866835c968c5a93f5162e39332d295df52342846aa3bb0a0a2828",
+    "contentSha256": "7426ce539e967413a5471837be3693d212c0979a91ae24db6d3806d604bac4e4",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(5a+2b)² 展開完全吻合三項。",
     "derivedAnswer": "(5a+2b)²",
@@ -1460,7 +1468,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v006",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "2e51e1d06eb95e9a6a1463a53f1922dd9725e5829af7f9949f6fe55154b29570",
+    "contentSha256": "c1cd1b3ef049ee90b12ef12c4d5e6e04c22b53ca361f08d91288634cc9237d4a",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開後交叉項抵消，得到原式。",
     "derivedAnswer": "(7m+n)(7m-n)",
@@ -1494,7 +1502,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v007",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "516c6de955e93ad32636572a6a72ac237103cdda2b5b4a779ebd23704196497d",
+    "contentSha256": "eb56ca3a78c1d568868b3ef6d9ae68becd53af4b427f28775e3d45b6677e803a",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "2(x+3)(x-3)=2(x²-9)=2x²-18。",
     "derivedAnswer": "2(x+3)(x-3)",
@@ -1528,7 +1536,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v008",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "921dad1606d40cfe46e27b268c286cdc6eede7d93dc264e0342b6d1148e64322",
+    "contentSha256": "d551e0cc321b96f7c10e80c15d3381358dda5ccc517948700d20e558abca06ce",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "x²+9 沒有減號，因此不符合平方差公式；其餘皆可明確分解。",
     "derivedAnswer": "x²+9",
@@ -1562,7 +1570,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v009",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "14125ec29bc2fd454fb0f54b43cdd6744567f4d7712b5e8986d4fc646e4ccf1b",
+    "contentSha256": "8a46b4d40a7850f8f310c0718c21fb20991331dd34897edc5a1a58bb5aa9ad40",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "(p-q)²=p²-2pq+q²。",
     "derivedAnswer": "(p-q)²",
@@ -1596,7 +1604,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v010",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "b80916f2e49b95ef6bdc692dc9a90a3937408313d36677363e8e0df72fb934cc",
+    "contentSha256": "01b9429dd5040ec29c697b0336a4f0ce4620368e6c47d403d7f6a5801cf83ad1",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開為 L²-36，且兩因式單位各為公尺，乘積為平方公尺。",
     "derivedAnswer": "(L+6)(L-6) 平方公尺",
@@ -1630,7 +1638,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v011",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "c96fa6d0b86e340ae27901c60c464878a6ad8a4600eaa1160379b2bb3a53a5bf",
+    "contentSha256": "93f1746b84be4f72d776431c69df20cfdff0c9c163f5d3e7de188627547a6856",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "展開與面積式一致，且兩因式相同符合正方形。",
     "derivedAnswer": "(x+4)²",
@@ -1664,7 +1672,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u12-s002-v012",
     "unitId": "u12",
     "skillId": "factoring-formula",
-    "contentSha256": "a1bf98fb05306959eefe3d4198adf34a43968e2797acbf00b2f7a64851608a7f",
+    "contentSha256": "d2e9c4b937fa26a68ce9940324bf69a7351f1fa7ae8b67c24ac153aacb13bae0",
     "reviewVersion": "human-review-r4.0",
     "independentSolution": "96²=9216，10000-9216=784，可獨立回查。",
     "derivedAnswer": "784",
@@ -1718,18 +1726,18 @@ export const DRAWING_SPECS = [
         "units": "px"
       },
       "viewBox": "0 0 640 420",
-      "layout": "outer square-like rectangle at (110,50), inner centered rectangle at (225,140)",
+      "layout": "outer square at (110,50) with side 300; inner centered square at (200,140) with side 120",
       "coordinates": {
         "outer": [
           110,
           50,
-          360,
+          300,
           300
         ],
         "inner": [
-          225,
+          200,
           140,
-          130,
+          120,
           120
         ],
         "dimensionY": 375
@@ -1738,21 +1746,21 @@ export const DRAWING_SPECS = [
         {
           "text": "A",
           "position": [
-            282,
+            250,
             405
           ]
         },
         {
           "text": "B",
           "position": [
-            274,
+            250,
             205
           ]
         },
         {
           "text": "面積差 A²-B²",
           "position": [
-            485,
+            435,
             210
           ]
         }
@@ -1779,10 +1787,10 @@ export const DRAWING_SPECS = [
     "answerLeakageReview": "圖中只呈現題幹已給的尺寸或區塊關係，不直接標示待求答案。",
     "figureReview": {
       "decision": "pass",
-      "reviewNote": "人工檢視確認斜線區與中央挖空區可分辨，A、B 標籤不重疊；圖形只支援 A²-B² 的結構，未暗示 A±B 的答案位置。",
+      "reviewNote": "人工檢視確認外框與內框皆為真正正方形，斜線區和中央挖空區可分辨，A、B 標籤不重疊；黑白列印與手機縮放仍清楚，且圖形只呈現已知面積差結構，未標出分解答案。",
       "reviewedAt": "2026-07-12"
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
-    "contentSha256": "105467a868ebcd4620995b73cfb7487f656e3678b4a65b1cb63ef81b1b78f9ed"
+    "contentSha256": "380eb381a031b64f8abcd2a89335a6c7b26cd097519b119258f1e8f2c6042094"
   }
 ];

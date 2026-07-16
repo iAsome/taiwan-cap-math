@@ -74,7 +74,8 @@ export const LECTURE = {
     "素養題先決定在問什麼量，再選工具。『圍一圈』對應周長，『鋪滿』對應面積，『保持等距』對應垂直平分線，『從上方看』對應俯視圖。",
     "生活資料常混有無關資訊。先整理必要條件：單位是否一致、圖形是否正多邊形、三視圖方向是否指定、示意圖是否按比例。",
     "幾何結論需要充分條件。看起來像正方形不夠；必須有四等邊與四直角，或其他可推出這些性質的條件。",
-    "答案不只要算對，也要解釋限制。例如材料面積要考慮挖孔，安全角度要比較上限，三視圖方案要同時滿足三方向。"
+    "答案不只要算對，也要解釋限制。例如材料面積要考慮挖孔，安全角度要比較上限，三視圖方案要同時滿足三方向。",
+    "完成建模後應用單位維度、邊界值與可達配置三種方式驗證：長度不能與面積相加，規格端點要依是否含等號判斷，三視圖界值則須有實際配置可達。"
   ],
   "formalDefinitions": [
     {
@@ -139,6 +140,11 @@ export const LECTURE = {
       "step": 4,
       "instruction": "做可行性與資訊充分性檢查。",
       "check": "確認沒有依圖猜測，並把結果連同單位和理由寫回情境。"
+    },
+    {
+      "step": 5,
+      "instruction": "用量綱、邊界值或可達配置做獨立驗證。",
+      "check": "數值正確之外，單位、限制詞與實際可行性也全部符合。"
     }
   ],
   "workedExamples": [
@@ -146,39 +152,45 @@ export const LECTURE = {
       "exampleId": "L1",
       "prompt": "操場長 80 公尺、寬 50 公尺，只在外圍設置欄杆，需求量是哪一種幾何量？",
       "solutionSteps": [
-        "欄杆沿邊界一周。",
-        "因此求周長，不求面積。"
+        "圈出關鍵詞外圍與欄杆。",
+        "判定材料沿封閉邊界而非覆蓋內部。",
+        "因此選周長，若求數值則算二乘八十加五十。"
       ],
-      "answer": "周長。"
+      "answer": "周長。",
+      "why": "欄杆用量具有一維長度單位，對應四邊總長；面積具有平方單位且描述內部覆蓋，量綱檢查能排除誤用長乘寬。"
     },
     {
       "exampleId": "L2",
       "prompt": "兩村設置到兩村距離相同的救援點，其可能位置如何描述？",
       "solutionSteps": [
-        "到兩定點等距。",
-        "所有可能點形成兩村連線的垂直平分線。"
+        "把兩村視為線段的兩個端點。",
+        "把到兩端等距寫成同一點到兩端距離相等。",
+        "套用等距點軌跡，得到連線的垂直平分線。"
       ],
-      "answer": "位於兩村連線的垂直平分線上。"
+      "answer": "位於兩村連線的垂直平分線上。",
+      "why": "垂直平分線上的每一點都到兩端等距，反之等距點也必在此線上；答案是一整條可能位置集合，不只中點。"
     },
     {
       "exampleId": "L3",
       "prompt": "一塊 6 m×4 m 板材挖去 80 cm×50 cm 開口，求剩餘面積。",
       "solutionSteps": [
-        "先把開口換為 0.8 m×0.5 m，面積 0.4 m²。",
-        "板材面積 24 m²。",
-        "剩餘 24−0.4=23.6 m²。"
+        "把八十公分、五十公分換成零點八公尺、零點五公尺。",
+        "整板面積二十四平方公尺，開口面積零點四平方公尺。",
+        "相減得二十三點六平方公尺，反加開口驗證。"
       ],
-      "answer": "23.6 平方公尺。"
+      "answer": "23.6 平方公尺。",
+      "why": "兩個面積必須先用相同單位才能相減；先換長度再相乘可保證平方倍率正確，反加零點四也能核對區域分割。"
     },
     {
       "exampleId": "L4",
       "prompt": "某堆疊正視最高 4 層，但側視文字說每列最高至多 3 層，設計是否可行？",
       "solutionSteps": [
-        "正視最高 4 表示存在一堆高度 4。",
-        "該堆從側面也屬某列，使側視至少有一列高度 4。",
-        "與至多 3 衝突。"
+        "正視最高四表示存在一個實際四高堆。",
+        "該堆必定落在某一側視列中。",
+        "此列最高至少四，與側視每列至多三矛盾。"
       ],
-      "answer": "不可行。"
+      "answer": "不可行。",
+      "why": "正視與側視雖從不同方向觀看，仍投影同一組高度；全域最高堆必在兩方向輪廓出現，所以四與至多三不能同時成立。"
     }
   ],
   "levelConnections": {
@@ -250,7 +262,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "f8a480939a7b3f7566cb30ea77991fd6c123c13af086aff00df6127277befb92"
+  "contentSha256": "530495c2dd78353e413ebe44c9217ccb96324072802a59f9b38e75b9420dbc9f"
 };
 
 export const QUESTIONS = [
@@ -281,11 +293,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "操場四邊總長為 80+50+80+50=260 公尺。",
-    "explanation": "「沿外圍一圈」對應周長，不是面積。",
+    "explanation": "「沿外圍一圈」對應周長，不是面積。 長方形有兩條八十公尺邊與兩條五十公尺邊，周長二百六十公尺；四千是面積，不能作為一維欄杆長度。",
     "steps": [
       "辨認需求量為周長。",
       "計算 2×(80+50)。",
-      "得 260 公尺。"
+      "得 260 公尺。",
+      "將四邊長八十、五十、八十、五十相加。",
+      "以長度單位公尺排除面積選項。"
     ],
     "optionAnalysis": [
       {
@@ -309,7 +323,7 @@ export const QUESTIONS = [
         "reason": "只多加了一條邊，未完整計算周長。"
       }
     ],
-    "misconceptionTarget": "看到長和寬就直接相乘，混淆周長與面積。",
+    "misconceptionTarget": "看到長和寬就直接相乘，混淆周長與面積。 也可能只加長與寬得到一百三十，漏掉對邊各有兩條。",
     "prerequisiteCheck": "需具備長方形周長與面積的基本判斷。",
     "estimatedTimeSec": 90,
     "unitCheck": "邊長以公尺表示，周長答案為公尺。",
@@ -321,7 +335,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "6718aa12fadf674613a4399c175ddf5887d0a6cbdc29bc24b9552d4284f0b461"
+    "contentSha256": "8a6b83f551553e56077b35f323ada6061c9aef3671ccaa7076c7a52c7188761e"
   },
   {
     "questionId": "u08-s014-v002",
@@ -350,11 +364,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "設 P 為救援站，條件 PA=PB，因此 P 位於線段 AB 的垂直平分線。",
-    "explanation": "救援站到兩村等距是垂直平分線的軌跡性質。",
+    "explanation": "救援站到兩村等距是垂直平分線的軌跡性質。 到線段兩端距離相同的所有平面點恰形成垂直平分線；中點只是這條線上的一點，任意垂線或圓都不能保證同時等距。",
     "steps": [
       "把兩村視為線段端點。",
       "使用到兩端等距的點集合。",
-      "得到甲乙連線的垂直平分線。"
+      "得到甲乙連線的垂直平分線。",
+      "把兩村視為線段的兩個端點。",
+      "用等距軌跡的正反性質核對垂直平分線。"
     ],
     "optionAnalysis": [
       {
@@ -378,7 +394,7 @@ export const QUESTIONS = [
         "reason": "只固定到甲的距離，沒有保證到乙相同。"
       }
     ],
-    "misconceptionTarget": "把垂直平分線誤認為只有中點，或任意垂線。",
+    "misconceptionTarget": "把垂直平分線誤認為只有中點，或任意垂線。 還可能只選甲乙中點，忽略救援站的可能位置是一整條軌跡。",
     "prerequisiteCheck": "需了解垂直平分線上的點到兩端等距。",
     "estimatedTimeSec": 90,
     "unitCheck": "本題所有角度或長度單位一致，答案單位依題意保留。",
@@ -390,7 +406,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "5973e433dee59a64037e4f315f23a8e93a849a45c4dc905d1f9aad1122f56c0c"
+    "contentSha256": "18d00d903ae05377dd49a87d60a742950c3dbdd97044d02aeaae21b8bc1d3e16"
   },
   {
     "questionId": "u08-s014-v003",
@@ -419,11 +435,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "長方形面積為 9×7=63 平方公尺，這才是地墊用量的基礎。",
-    "explanation": "材料覆蓋整個平面區域時，要使用面積。",
+    "explanation": "材料覆蓋整個平面區域時，要使用面積。 地墊要覆蓋地面內部區域，需求量與面積成正比；九乘七得六十三平方公尺，周長只描述邊界長度。",
     "steps": [
       "辨認需求是覆蓋內部。",
       "用長×寬求面積。",
-      "9×7=63。"
+      "9×7=63。",
+      "由鋪滿判定量的種類是面積。",
+      "檢查九公尺乘七公尺的單位為平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -447,7 +465,7 @@ export const QUESTIONS = [
         "reason": "角度和與地墊用量無直接關係。"
       }
     ],
-    "misconceptionTarget": "把鋪面材料誤用周長估算。",
+    "misconceptionTarget": "把鋪面材料誤用周長估算。 也可能因題目給長與寬便計算周長，沒有先辨認鋪滿的語意。",
     "prerequisiteCheck": "需能區分周長與面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "公尺乘公尺得到平方公尺。",
@@ -459,7 +477,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "a9b1b6c11d9d9070c3d679d283f86a76ddf2fbeda572ecdc21374832a796ea67"
+    "contentSha256": "aaa117eeac4ed7532efeea100e68ea692439ca75d18f2c0e78d81d56f013e3bd"
   },
   {
     "questionId": "u08-s014-v004",
@@ -488,12 +506,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "80 cm=0.8 m，50 cm=0.5 m，所以剩餘面積=6×4−0.8×0.5=23.6 m²。",
-    "explanation": "先把 80 公分、50 公分換成 0.8 公尺、0.5 公尺，再計算差。",
+    "explanation": "先把 80 公分、50 公分換成 0.8 公尺、0.5 公尺，再計算差。 整板面積二十四平方公尺，開口換成零點八乘零點五公尺後面積零點四；兩者相減為二十三點六，反加開口可回到二十四。",
     "steps": [
       "統一長度單位為公尺。",
       "算整板 24 平方公尺。",
       "算開口 0.4 平方公尺。",
-      "相減得 23.6 平方公尺。"
+      "相減得 23.6 平方公尺。",
+      "以相同平方公尺單位相減。",
+      "用剩餘二十三點六加開口零點四驗證整板面積。"
     ],
     "optionAnalysis": [
       {
@@ -517,7 +537,7 @@ export const QUESTIONS = [
         "reason": "整板面積 6×4=24 平方公尺；開口 0.8×0.5=0.4 平方公尺；剩 24−0.4=23.6 平方公尺。"
       }
     ],
-    "misconceptionTarget": "未先統一單位，或把平方單位倍率只換一次。",
+    "misconceptionTarget": "未先統一單位，或把平方單位倍率只換一次。 也可能把八十乘五十直接從二十四扣除，混合平方公分與平方公尺。",
     "prerequisiteCheck": "需會長方形面積、複合面積與公分公尺換算。",
     "estimatedTimeSec": 90,
     "unitCheck": "長度先統一為公尺，面積答案為平方公尺。",
@@ -529,7 +549,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "3b96819da5ded6b8881ad8e4466ae5b24ae811be827b5595017580ac52d52fa2"
+    "contentSha256": "2a72bcf03dffee2df892dbeded48d66bf3cf7fdf329cb2b8f5592820d1fb1669"
   },
   {
     "questionId": "u08-s014-v005",
@@ -558,10 +578,12 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "每個內角=((6−2)×180°)÷6=120°。",
-    "explanation": "正多邊形要先求內角和，再平均分配。",
+    "explanation": "正多邊形要先求內角和，再平均分配。 六邊形內角和為四乘一百八十等於七百二十度，正六邊形六角相等，再除六得每角一百二十度。",
     "steps": [
       "計算六邊形內角和 720°。",
-      "除以 6 得 120°。"
+      "除以 6 得 120°。",
+      "先由邊數六求內角和。",
+      "利用正六邊形等角條件平均分配。"
     ],
     "optionAnalysis": [
       {
@@ -585,7 +607,7 @@ export const QUESTIONS = [
         "reason": "720°是六邊形內角總和，不是單一內角。"
       }
     ],
-    "misconceptionTarget": "把內角和、外角或其他正多邊形角度混為一談。",
+    "misconceptionTarget": "把內角和、外角或其他正多邊形角度混為一談。 也可能把每個外角六十度直接當內角，忽略兩者互為補角。",
     "prerequisiteCheck": "需會多邊形內角和與平均分配。",
     "estimatedTimeSec": 90,
     "unitCheck": "角度答案使用度數。",
@@ -597,7 +619,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "463064d5ecc1f33e52da7f984478b85277d58072ed00e18eff103190c89633f9"
+    "contentSha256": "d133e0cc986f413a5f93eb0f1968479e8c2308948c49b999a1ed367571327a0f"
   },
   {
     "questionId": "u08-s014-v006",
@@ -626,12 +648,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "正視=12×5，俯視=12×8，側視=8×5 公分。",
-    "explanation": "題目已指定正面，因此依三個互相垂直的觀看方向配對尺寸。",
+    "explanation": "題目已指定正面，因此依三個互相垂直的觀看方向配對尺寸。 正視保留長十二與高五，俯視保留長十二與寬八，側視保留寬八與高五；三組恰是三個方向的兩兩配對。",
     "steps": [
       "列出長12、寬8、高5。",
       "正視取長×高。",
       "俯視取長×寬。",
-      "側視取寬×高。"
+      "側視取寬×高。",
+      "每個視圖刪去沿視線的一個方向。",
+      "檢查三種兩兩配對各出現一次且沒有重複。"
     ],
     "optionAnalysis": [
       {
@@ -655,7 +679,7 @@ export const QUESTIONS = [
         "reason": "正視保留長與高，俯視保留長與寬，側視保留寬與高。"
       }
     ],
-    "misconceptionTarget": "未固定正面就任意交換三個尺寸。",
+    "misconceptionTarget": "未固定正面就任意交換三個尺寸。 也可能認為正視一定採最大面，無視題目已指定長乘高為正面。",
     "prerequisiteCheck": "需會長方體三視圖的方向配對。",
     "estimatedTimeSec": 90,
     "unitCheck": "各視圖尺寸均以公分表示。",
@@ -667,7 +691,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1337588b84093291c91a0c74eed71e3d154321cde387fd4d2416523686bc51dc"
+    "contentSha256": "a8184985513e2aae11423f4253e81a4a457e445b302d6c58d6bcbd84966f92f3"
   },
   {
     "questionId": "u08-s014-v007",
@@ -696,11 +720,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "4.01∈[3.98,4.02]，但 2.47∉[2.48,2.52]，故只有長度合格。",
-    "explanation": "誤差規格要對每個標示值分別建立閉區間。",
+    "explanation": "誤差規格要對每個標示值分別建立閉區間。 長的允許區間是三點九八到四點零二，四點零一在內；寬的區間是二點四八到二點五二，二點四七低於下限，所以只有寬不合格。",
     "steps": [
       "長度範圍 4.00±0.02。",
       "寬度範圍 2.50±0.02。",
-      "分別代入量測值判斷。"
+      "分別代入量測值判斷。",
+      "分別建立兩個含端點的閉區間。",
+      "將兩個量測值各自與對應上下限比較。"
     ],
     "optionAnalysis": [
       {
@@ -724,7 +750,7 @@ export const QUESTIONS = [
         "reason": "長度確實落在允許範圍。"
       }
     ],
-    "misconceptionTarget": "只看數字接近就判合格，未計算明確範圍。",
+    "misconceptionTarget": "只看數字接近就判合格，未計算明確範圍。 也可能把兩邊誤差合併成一個總誤差，沒有逐一檢查長與寬。",
     "prerequisiteCheck": "需能處理同單位的小數加減與閉區間。",
     "estimatedTimeSec": 120,
     "unitCheck": "標示、誤差與量測皆為公尺。",
@@ -736,7 +762,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "a1f20ba2b9892a35f262abc08c630ae8536b71879b3e56397329f63bac2e2ce7"
+    "contentSha256": "242c5ea9d6fdc65eb8514cca0c72fca9e7907f5dff540e6aa8c2b9839b6d45cc"
   },
   {
     "questionId": "u08-s014-v008",
@@ -765,12 +791,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "外側完整環繞使外框為 12×8，故面積差 12×8−10×6=36。",
-    "explanation": "步道在四周各增加 1 公尺，因此長與寬都增加 2 公尺。",
+    "explanation": "步道在四周各增加 1 公尺，因此長與寬都增加 2 公尺。 外側一公尺使總長左右各增一而成十二，總寬上下各增一而成八；外框九十六扣花圃六十，得到步道三十六平方公尺。",
     "steps": [
       "求外框長 12、寬 8。",
       "算外框面積 96。",
       "扣花圃面積 60。",
-      "得 36。"
+      "得 36。",
+      "由四周環繞判斷每個方向增加兩公尺。",
+      "以面積差計算角落區域，不用周長乘寬近似。"
     ],
     "optionAnalysis": [
       {
@@ -794,7 +822,7 @@ export const QUESTIONS = [
         "reason": "96 是外框 12×8 面積，尚未扣除花圃。"
       }
     ],
-    "misconceptionTarget": "以周長乘寬而漏算或重算角落。",
+    "misconceptionTarget": "以周長乘寬而漏算或重算角落。 也可能只在長與寬各加一，漏掉步道位於原花圃的兩側。",
     "prerequisiteCheck": "需會文字複合面積與外框尺寸判讀。",
     "estimatedTimeSec": 150,
     "unitCheck": "所有長度為公尺，面積為平方公尺。",
@@ -806,7 +834,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "fd8b62b9ad2314b3aaca73dd7d4f5c90ad07dd6751a74f50f36f0ec12fe28d6b"
+    "contentSha256": "48335f1ef7f09500731869e54277e79633023a1517a8516f6af7df25914d2bc3"
   },
   {
     "questionId": "u08-s014-v009",
@@ -835,11 +863,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "總方塊數≥占用位置數=6，所以「只有5個」不可能。",
-    "explanation": "先用最簡單的占用下界檢查規格，不必進一步安排三視圖。",
+    "explanation": "先用最簡單的占用下界檢查規格，不必進一步安排三視圖。 俯視六個占用位置各至少含一個方塊，最低已是六；設計宣稱只有五塊直接違反下界，無須再使用最高三層安排。",
     "steps": [
       "俯視占用位置數為 6。",
       "每個位置至少 1 塊。",
-      "最低總數為 6，大於宣稱的 5。"
+      "最低總數為 6，大於宣稱的 5。",
+      "用占用格數建立不可低於六的下界。",
+      "比較宣稱總數五並判定矛盾。"
     ],
     "optionAnalysis": [
       {
@@ -863,7 +893,7 @@ export const QUESTIONS = [
         "reason": "俯視占用數已提供直接下界，足以判定矛盾。"
       }
     ],
-    "misconceptionTarget": "只注意最高層數，忽略俯視每格至少一塊。",
+    "misconceptionTarget": "只注意最高層數，忽略俯視每格至少一塊。 也可能看到兩個最高值都是三便以為五塊能透過遮蔽達成。",
     "prerequisiteCheck": "需懂俯視占用位置與最低方塊數。",
     "estimatedTimeSec": 90,
     "unitCheck": "占用位置數與方塊個數皆為離散整數。",
@@ -875,7 +905,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "7dda035c72ef947fe5cd6a9be991fa178a915d2ec94932dc724464dafce42782"
+    "contentSha256": "928325b117577200a52a40854103bd59ba7c0ad0f7f5afc4b2842c91256c2a2c"
   },
   {
     "questionId": "u08-s014-v010",
@@ -904,11 +934,13 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "候選位置同時屬於垂直平分線與步道，因此是交點；若平行無交點則無方案。",
-    "explanation": "兩個條件都必須滿足，應取兩個點集合的交集。",
+    "explanation": "兩個條件都必須滿足，應取兩個點集合的交集。 等距條件給出甲乙連線的垂直平分線，施工條件給出指定步道；候選點必同時屬於兩者，所以取交點，沒有交點時就沒有可行位置。",
     "steps": [
       "由 PA=PB 得 P 在 AB 垂直平分線。",
       "由施工限制得 P 在指定步道。",
-      "取兩條線的交點。"
+      "取兩條線的交點。",
+      "把兩項條件分別表示成兩個點集合。",
+      "取集合交集並補充平行無交點時無方案。"
     ],
     "optionAnalysis": [
       {
@@ -932,7 +964,7 @@ export const QUESTIONS = [
         "reason": "這與到 A、B 等距的必要軌跡無關。"
       }
     ],
-    "misconceptionTarget": "只滿足等距或只滿足步道其中一項。",
+    "misconceptionTarget": "只滿足等距或只滿足步道其中一項。 也可能只找甲乙中點，卻沒有檢查該點是否位於指定步道。",
     "prerequisiteCheck": "需理解垂直平分線軌跡及同時條件。",
     "estimatedTimeSec": 120,
     "unitCheck": "本題所有角度或長度單位一致，答案單位依題意保留。",
@@ -944,7 +976,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "923030bc007d5152b87f4a60f62913efec8f3e7ab18ed47e7005303db2ebf289"
+    "contentSha256": "5528ab6153ddea39b029059e1a73bb61c73f1c44879525cb49f9f7038682890f"
   },
   {
     "questionId": "u08-s014-v011",
@@ -972,13 +1004,15 @@ export const QUESTIONS = [
       "8 個"
     ],
     "answerIndex": 1,
-    "independentSolution": "高度矩陣可取 [[1,3],[2,1]]（按適當列序），總和7且輪廓為指定序列。",
-    "explanation": "最少材料配置要讓一個堆同時滿足一個欄高和一個列高。",
+    "independentSolution": "令四格座標為(x,y)。取h(1,2)=3、h(2,1)=2，另兩格各1，則正視欄高為[3,2]、側視列高為[2,3]，總數3+2+1+1=7。",
+    "explanation": "最少材料配置要讓一個堆同時滿足一個欄高和一個列高。 四格底層先用四個，三高堆增加二個，另一交叉位置的二高堆增加一個，總數七；明示座標的配置可同時重算兩個指定序列。",
     "steps": [
       "四格先各1個。",
       "安排一堆高3。",
       "在另一交叉位置安排一堆高2。",
-      "總數3+2+1+1=7。"
+      "總數3+2+1+1=7。",
+      "指定三高堆在第一欄第二列、二高堆在第二欄第一列。",
+      "逐欄與逐列取最大值，驗證兩序列沒有互換。"
     ],
     "optionAnalysis": [
       {
@@ -1002,7 +1036,7 @@ export const QUESTIONS = [
         "reason": "可用高度3、2、1、1的交叉配置，只需7個。"
       }
     ],
-    "misconceptionTarget": "把兩方向高度直接相加，或只放一個最高堆。",
+    "misconceptionTarget": "把兩方向高度直接相加，或只放一個最高堆。 也可能給出矩陣卻未定義列欄方向，造成實際輪廓與文字序列互換。",
     "prerequisiteCheck": "需會三視圖最大高度與最小配置。",
     "estimatedTimeSec": 150,
     "unitCheck": "立方體以「個」計，高度以層數表示。",
@@ -1014,7 +1048,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "2dcbd55089d7cd6657f04ce55be3b7284985ffe2fdea70097b978cfd16b2babb"
+    "contentSha256": "4d7fe19cee2882c27d57e82387374e9682416f6718e5c638a2108a71ba0c8f15"
   },
   {
     "questionId": "u08-s014-v012",
@@ -1044,12 +1078,14 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "17箱不足，18箱可鋪90平方公尺，故最少18箱。",
-    "explanation": "先求真正鋪設面積，再按每箱覆蓋量向上取整。",
+    "explanation": "先求真正鋪設面積，再按每箱覆蓋量向上取整。 廣場九十六平方公尺扣花圃八平方公尺，實鋪八十八；除每箱五得十七點六，十七箱只鋪八十五不足，十八箱可鋪九十而達標。",
     "steps": [
       "算廣場面積96。",
       "扣花圃面積8，得88。",
       "88÷5=17.6。",
-      "只能整箱，買18箱。"
+      "只能整箱，買18箱。",
+      "比較十七箱覆蓋八十五與需求八十八。",
+      "確認十八是第一個覆蓋量不少於需求的整數箱數。"
     ],
     "optionAnalysis": [
       {
@@ -1073,7 +1109,7 @@ export const QUESTIONS = [
         "reason": "需鋪面積=12×8−4×2=96−8=88 平方公尺；88÷5=17.6，整箱購買須進位為18箱。"
       }
     ],
-    "misconceptionTarget": "忘記扣除花圃，或把17.6箱直接寫成17箱。",
+    "misconceptionTarget": "忘記扣除花圃，或把17.6箱直接寫成17箱。 也可能向下取整以避免剩料，卻忽略至少足夠鋪完的限制。",
     "prerequisiteCheck": "需會複合面積、除法與實際整箱限制。",
     "estimatedTimeSec": 150,
     "unitCheck": "面積以平方公尺計，每箱覆蓋量亦為平方公尺，最後答案為箱數。",
@@ -1085,7 +1121,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1b82292ff6bbc0487c9221f4c8019701c9c5543bba758754699425c81a5f622c"
+    "contentSha256": "4753248f5d2011421534c49b74ccc4aa9e3c279677b187ba4406ca2c3329bb4e"
   }
 ];
 
@@ -1112,7 +1148,8 @@ export const CONSTRUCTED_RESPONSES = [
       "鋪面面積=18×12−6×4=216−24=192平方公尺。",
       "地磚數=192×3=576塊。",
       "圍欄沿空地外圍，長度=2×(18+12)=60公尺。",
-      "地磚覆蓋內部用面積；圍欄沿邊界用周長。"
+      "地磚覆蓋內部用面積；圍欄沿邊界用周長。",
+      "以反向檢查：五百七十六除每平方公尺三塊等於一百九十二平方公尺；圍欄六十公尺則等於兩倍的長寬和。"
     ],
     "alternativeMethods": [
       "可先算總地磚648塊，再扣花圃24×3=72塊，得576塊。"
@@ -1121,7 +1158,8 @@ export const CONSTRUCTED_RESPONSES = [
       "辨認鋪面是整體減保留區。",
       "依每平方公尺3塊換數量。",
       "辨認外圍為周長。",
-      "核對兩種單位。"
+      "核對兩種單位。",
+      "分別用覆蓋量與四邊總長反查兩個結果。"
     ],
     "rubric": [
       {
@@ -1149,7 +1187,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只答576與60無過程最高2分。",
     "commonErrors": [
       "從圍欄周長扣花圃周長。",
-      "用216×3未扣花圃。"
+      "用216×3未扣花圃。",
+      "把中央花圃的周長從外圍圍欄扣掉，混淆內部保留區與最外邊界。"
     ],
     "independentReview": {
       "derivedResult": "576塊地磚；60公尺圍欄。",
@@ -1165,7 +1204,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "af4f2ffa1e0ae070972d9435f12883e58426909315e4c3d47147cc948bb932d5"
+    "contentSha256": "b6eeb5f6486813793f77ea5e2b13a9f3864c1ff708130562dc60e1b9f3d393f6"
   },
   {
     "questionId": "u08-s014-cr002",
@@ -1188,7 +1227,8 @@ export const CONSTRUCTED_RESPONSES = [
     "standardSolution": [
       "最少配置讓3高堆同時滿足正視第一欄與側視第二列，2高堆滿足另一欄列，其餘兩格各1，所以最少7塊。",
       "例如按(y=1,y=2)列出高度矩陣 [[1,2],[3,1]]，其正視欄最大值為[3,2]、側視列最大值為[2,3]。",
-      "材料=7×0.04=0.28平方公尺。"
+      "材料=7×0.04=0.28平方公尺。",
+      "以座標配置h(1,2)=3、h(2,1)=2、其餘各1，逐欄得三、二，逐列得二、三；七乘零點零四確為零點二八平方公尺。"
     ],
     "alternativeMethods": [
       "任何等價旋轉或座標安排都可，只要代回指定序列後仍為[3,2]與[2,3]。"
@@ -1197,7 +1237,8 @@ export const CONSTRUCTED_RESPONSES = [
       "由占用四格建立基底。",
       "共享3與2的欄列要求得到7塊。",
       "寫出可達配置並驗證。",
-      "乘每塊0.04。"
+      "乘每塊0.04。",
+      "用明示座標與乘法反查視圖及材料量。"
     ],
     "rubric": [
       {
@@ -1225,7 +1266,8 @@ export const CONSTRUCTED_RESPONSES = [
     "answerOnlyPolicy": "只答0.28平方公尺無方塊數與配置最高1分。",
     "commonErrors": [
       "把每個占用格都設3層。",
-      "將0.04平方公尺誤當0.04公尺。"
+      "將0.04平方公尺誤當0.04公尺。",
+      "配置總數雖為七，卻把三高與二高放在同一列或欄而破壞指定輪廓。"
     ],
     "independentReview": {
       "derivedResult": "最少7塊；材料0.28平方公尺；存在高度3、2、1、1的交叉配置。",
@@ -1241,7 +1283,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "844c022bd415cd4eea91f5b21be6eca3d1738be26d00992e15c139fb03f34f09"
+    "contentSha256": "e5088af1b38b6ea9d72f13d27e85397024f5006a89d02b0d9d99c8ee008be0d4"
   }
 ];
 
@@ -1250,7 +1292,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v001",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "6718aa12fadf674613a4399c175ddf5887d0a6cbdc29bc24b9552d4284f0b461",
+    "contentSha256": "8a6b83f551553e56077b35f323ada6061c9aef3671ccaa7076c7a52c7188761e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立逐邊相加 80+50+80+50=260，與周長公式一致。",
@@ -1285,7 +1327,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v002",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "5973e433dee59a64037e4f315f23a8e93a849a45c4dc905d1f9aad1122f56c0c",
+    "contentSha256": "18d00d903ae05377dd49a87d60a742950c3dbdd97044d02aeaae21b8bc1d3e16",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立套用等距軌跡定理：所有滿足 PA=PB 的點恰為 AB 的垂直平分線。",
@@ -1320,7 +1362,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v003",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "a9b1b6c11d9d9070c3d679d283f86a76ddf2fbeda572ecdc21374832a796ea67",
+    "contentSha256": "aaa117eeac4ed7532efeea100e68ea692439ca75d18f2c0e78d81d56f013e3bd",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立依面積定義計算 9 公尺×7 公尺=63 平方公尺。",
@@ -1355,7 +1397,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v004",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "3b96819da5ded6b8881ad8e4466ae5b24ae811be827b5595017580ac52d52fa2",
+    "contentSha256": "2a72bcf03dffee2df892dbeded48d66bf3cf7fdf329cb2b8f5592820d1fb1669",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立用平方公尺重算：24−(0.8×0.5)=24−0.4=23.6。",
@@ -1390,7 +1432,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v005",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "463064d5ecc1f33e52da7f984478b85277d58072ed00e18eff103190c89633f9",
+    "contentSha256": "d133e0cc986f413a5f93eb0f1968479e8c2308948c49b999a1ed367571327a0f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以外角 360°÷6=60°，內角=180°−60°=120°，與內角和法一致。",
@@ -1425,7 +1467,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v006",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "1337588b84093291c91a0c74eed71e3d154321cde387fd4d2416523686bc51dc",
+    "contentSha256": "a8184985513e2aae11423f4253e81a4a457e445b302d6c58d6bcbd84966f92f3",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立逐一刪去視線方向：正視壓縮寬、俯視壓縮高、側視壓縮長，得到指定配對。",
@@ -1460,7 +1502,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v007",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "a1f20ba2b9892a35f262abc08c630ae8536b71879b3e56397329f63bac2e2ce7",
+    "contentSha256": "242c5ea9d6fdc65eb8514cca0c72fca9e7907f5dff540e6aa8c2b9839b6d45cc",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立比較端點：長度差 0.01≤0.02；寬度差 0.03>0.02。",
@@ -1495,7 +1537,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v008",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "fd8b62b9ad2314b3aaca73dd7d4f5c90ad07dd6751a74f50f36f0ec12fe28d6b",
+    "contentSha256": "48335f1ef7f09500731869e54277e79633023a1517a8516f6af7df25914d2bc3",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立分割計算：上下兩條 10×1 共20，左右含角落兩條 8×1 共16，合計36。",
@@ -1530,7 +1572,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v009",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "7dda035c72ef947fe5cd6a9be991fa178a915d2ec94932dc724464dafce42782",
+    "contentSha256": "928325b117577200a52a40854103bd59ba7c0ad0f7f5afc4b2842c91256c2a2c",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以鴿巢式下界重算：5 個方塊最多占用 5 個俯視位置，無法形成 6 個占用位置。",
@@ -1565,7 +1607,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v010",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "923030bc007d5152b87f4a60f62913efec8f3e7ab18ed47e7005303db2ebf289",
+    "contentSha256": "5528ab6153ddea39b029059e1a73bb61c73f1c44879525cb49f9f7038682890f",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立將需求寫成集合條件 P∈垂直平分線且 P∈步道，故求交集。",
@@ -1600,7 +1642,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v011",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "2dcbd55089d7cd6657f04ce55be3b7284985ffe2fdea70097b978cfd16b2babb",
+    "contentSha256": "4d7fe19cee2882c27d57e82387374e9682416f6718e5c638a2108a71ba0c8f15",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立建立下界：四格基底4，3高堆多2，另一個2高堆多1，共7；存在符合序列的交叉配置。",
@@ -1635,7 +1677,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s014-v012",
     "unitId": "u08",
     "skillId": "geometry-literacy-context",
-    "contentSha256": "1b82292ff6bbc0487c9221f4c8019701c9c5543bba758754699425c81a5f622c",
+    "contentSha256": "4753248f5d2011421534c49b74ccc4aa9e3c279677b187ba4406ca2c3329bb4e",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立檢核容量：17×5=85<88，18×5=90≥88，所以答案18。",

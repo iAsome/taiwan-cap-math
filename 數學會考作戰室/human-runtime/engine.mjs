@@ -7,11 +7,20 @@ const abilityByDifficulty = Object.freeze({ basic: "concept", standard: "procedu
 const difficultyNumber = Object.freeze({ basic: 1, standard: 2, literacy: 3, advanced: 4 });
 const gradeName = grade => grade === 7 ? "國一" : grade === 8 ? "國二" : "國三";
 const normPath = value => String(value).replace(/\\/g, "/");
+const formatFormula = (item, multiline = false) => {
+  if (typeof item === "string") return item;
+  const formula = Array.isArray(item) ? item[0] : item?.formula;
+  const conditions = Array.isArray(item) ? item[1] : item?.conditions;
+  const meaning = Array.isArray(item) ? item[2] : item?.meaning;
+  const list = Array.isArray(conditions) ? conditions : [conditions].filter(Boolean);
+  return `${formula || ""}${list.length ? (multiline ? `\n適用：${list.join("；")}` : `（${list.join("；")}）`) : ""}${multiline && meaning ? `\n意義：${meaning}` : ""}`;
+};
+const formulaItems = lecture => lecture?.formulas?.length ? lecture.formulas : (lecture?.formulasAndConditions || []);
 
 export class HumanProductionRuntime {
   constructor({ manifestUrl, syllabusLockUrl, blueprintUrl, expectedContentVersion, loadJson = browserLoadJson }) {
     Object.assign(this, { manifestUrl, syllabusLockUrl, blueprintUrl, expectedContentVersion, loadJson });
-    this.units = new Map(); this.questionById = new Map(); this.skillById = new Map();
+    this.units = new Map(); this.questionById = new Map(); this.skillById = new Map(); this.figureById = new Map();
   }
   async initialize() {
     [this.manifest, this.syllabus, this.blueprint] = await Promise.all([
@@ -49,6 +58,10 @@ export class HumanProductionRuntime {
       assert(skill.lecture?.contentAuthority === "CHATGPT_HUMAN_AUTHORED_R1", `${skill.skillId} lecture authority mismatch`);
       assert(skill.mcQuestions.length === 12 && skill.constructedResponses.length >= 2, `${skill.skillId} question counts mismatch`);
       this.skillById.set(skill.skillId, { unit, skill });
+      for (const figure of skill.drawingSpecs || []) {
+        assert(!this.figureById.has(figure.figureId), `duplicate figure ${figure.figureId}`);
+        this.figureById.set(figure.figureId, figure);
+      }
       for (const q of [...skill.mcQuestions, ...skill.constructedResponses]) {
         assert(!this.questionById.has(q.questionId), `duplicate question ${q.questionId}`);
         this.questionById.set(q.questionId, q);
@@ -65,38 +78,72 @@ export class HumanProductionRuntime {
     const relative = source.includes(marker) ? source.split(marker).slice(1).join(marker) : source;
     return new URL(`../${relative}`, import.meta.url).href;
   }
+  figureMetadata(figureId, fallback = {}) {
+    if (!figureId) return { figureUrl: null, figureAlt: "", figureCaption: "", figureDescription: "" };
+    const source = { ...(this.figureById.get(figureId) || {}), ...fallback };
+    const drawing = source.drawingSpec || source.drawingSpecification || {};
+    const accessibility = drawing.accessibility;
+    const caption = source.title || source.svgTitle || (typeof accessibility === "object" ? accessibility.title : "") || "題目圖形";
+    const alt = source.figureAlt || source.altText || (typeof accessibility === "object" ? accessibility.altText : "") || source.description || source.svgDesc || source.svgDescription || caption;
+    const asText = value => Array.isArray(value) ? value.join("；") : (typeof value === "string" ? value : "");
+    const description = [...new Set([
+      source.description, source.svgDesc, source.svgDescription, source.purpose, source.drawingPurpose,
+      drawing.description, drawing.purpose, drawing.layoutConstraints, drawing.visualInferenceWarning, drawing.scaleWarning,
+      typeof accessibility === "string" ? accessibility : accessibility?.description,
+      source.visualInferenceWarning, source.noVisualInferenceWarning, source.figureReview?.reviewNote
+    ].map(asText).filter(value => value && value !== alt))].join(" ") || alt;
+    return {
+      figureUrl: this.figureUrl(figureId),
+      figureAlt: alt,
+      figureCaption: caption,
+      figureDescription: description
+    };
+  }
   adaptMc(question) {
     const lock = this.lockByUnit.get(question.unitId); const skill = this.skillById.get(question.skillId)?.skill;
+    const steps = Array.isArray(question.steps || question.solutionSteps) ? (question.steps || question.solutionSteps) : [question.steps || question.solutionSteps].filter(Boolean);
+    const optionAnalysis = (question.optionAnalysis || []).map((item, index) => ({
+      ...(item || {}), choice: item?.choice ?? question.choices?.[item?.choiceIndex ?? index]
+    }));
     return {
       ...question, id: question.questionId, type: "mc", text: question.text ?? question.prompt ?? question.stem ?? "", v2UnitId: question.unitId, unitId: lock.numericId,
       answer: question.answerIndex, difficultyBand: question.difficulty,
       difficulty: difficultyNumber[question.difficulty] || 2, ability: abilityByDifficulty[question.difficulty] || "application",
-      formula: (skill?.lecture?.formulas || []).map(item => `${item.formula}${item.conditions?.length ? `（${item.conditions.join("；")}）` : ""}`).join("\n"),
-      tip: question.steps?.at(-1) || question.concept || "完成後回代或檢查條件。",
-      trap: question.commonMistake || "注意題目條件與符號。", taxonomyTopic: skill?.lecture?.title || skill?.title || question.skillId,
+      explanation: question.explanation || question.mainExplanation || "",
+      concept: question.concept || question.target || question.authoringIntent || skill?.lecture?.title || "",
+      steps, optionAnalysis,
+      formula: formulaItems(skill?.lecture).map(item => formatFormula(item)).join("\n"),
+      tip: steps.at(-1) || question.concept || question.target || "完成後回代或檢查條件。",
+      trap: question.commonMistake || question.misconceptionTarget || "注意題目條件與符號。", taxonomyTopic: skill?.lecture?.title || skill?.title || question.skillId,
       quizLevel: question.difficulty === "literacy" ? "素養" : question.difficulty === "advanced" ? "進階" : "",
-      figureUrl: this.figureUrl(question.figureId), contentVersion: this.manifest.contentVersion
+      ...this.figureMetadata(question.figureId, question), contentVersion: this.manifest.contentVersion
     };
   }
   adaptCr(question) {
     const lock = this.lockByUnit.get(question.unitId); const skill = this.skillById.get(question.skillId)?.skill;
     const asList = value => Array.isArray(value) ? value : (value ? [value] : []);
-    const solution = question.fullCreditSolution || question.standardSolution || [];
+    const stepText = item => typeof item === "string" ? item : (item?.work || item?.instruction || item?.action || "");
+    const lines = value => asList(value).map(stepText).filter(Boolean);
+    const byStepCount = values => values.map(lines).sort((left, right) => right.length - left.length)[0] || [];
+    const hanLength = values => (values.join(" ").match(/\p{Script=Han}/gu) || []).length;
+    const byTextDepth = values => values.map(lines).sort((left, right) => hanLength(right) - hanLength(left))[0] || [];
+    const solutionText = byTextDepth([question.explanation, question.fullCreditSolution, question.standardSolution]);
+    const solution = byStepCount([question.reasoningSteps, question.solutionSteps, question.fullCreditSolution, question.standardSolution]);
     const requiredWork = asList(question.requiredWork);
-    const commonErrors = asList(question.commonErrors);
+    const commonErrors = byTextDepth([question.commonErrors, question.commonErrorTargets]);
     const scoringNotes = asList(question.scoringNotes);
-    const answer = solution.at(-1) || "依完整解法與評分標準作答。";
+    const answer = question.standardAnswer || solutionText.join("；") || "依完整解法與評分標準作答。";
     return {
       ...question, type: "cr", text: question.prompt, answer, v2UnitId: question.unitId, unitId: lock.numericId,
       difficultyBand: question.difficulty, difficulty: question.difficulty === "advanced" ? 4 : 3,
       ability: question.difficulty === "advanced" ? "analysis" : "application",
-      explanation: scoringNotes.join(" ") || "依策略正確性與表達完整性評分。",
+      explanation: solutionText.join(" ") || scoringNotes.join(" "),
       concept: requiredWork.join("；"), steps: solution,
       rubric: (question.rubric || []).map(item => [String(item.score), item.criteria]),
-      formula: (skill?.lecture?.formulas || []).map(item => item.formula).join("\n"),
+      formula: formulaItems(skill?.lecture).map(item => formatFormula(item)).join("\n"),
       tip: requiredWork.at(-1) || "寫出完整推導與結論。",
       trap: commonErrors.join("；") || "只寫答案不能呈現解題能力。",
-      taxonomyTopic: skill?.lecture?.title || question.skillId, quizLevel: "非選", figureUrl: this.figureUrl(question.figureId),
+      taxonomyTopic: skill?.lecture?.title || question.skillId, quizLevel: "非選", ...this.figureMetadata(question.figureId, question),
       contentVersion: this.manifest.contentVersion
     };
   }
@@ -104,20 +151,50 @@ export class HumanProductionRuntime {
   lectureForApp(skill) {
     const l = skill.lecture;
     const joinField = (value, sep) => Array.isArray(value) ? value.join(sep) : (value || "");
-    const formulas = (l.formulas || []).map(item => `${item.formula}${item.conditions?.length ? `\n適用：${item.conditions.join("；")}` : ""}`).join("\n\n");
-    const formatMistake = item => typeof item === "string" ? item : `${item.mistake} 原因：${item.why} 修正：${item.correction}`;
-    let commonMistakes = (l.commonMistakes || []).map(formatMistake);
-    for (const item of l.nonApplicableCases || []) {
-      if (commonMistakes.length >= 4) break;
-      commonMistakes.push(typeof item === "string" ? `不適用：${item}` : `不適用：${item.case || item.text || item}`);
-    }
+    const richestText = values => values.filter(Boolean).sort((left, right) =>
+      (joinField(right, " ").match(/\p{Script=Han}/gu) || []).length - (joinField(left, " ").match(/\p{Script=Han}/gu) || []).length
+    )[0] || "";
+    const formulas = formulaItems(l).map(item => formatFormula(item, true)).join("\n\n");
+    const formatMethod = (item, index) => {
+      if (typeof item === "string") return item;
+      if (Array.isArray(item)) return `${index + 1}. ${item[0]}${item[1] ? `（檢查：${item[1]}）` : ""}`;
+      return `${item.step ?? index + 1}. ${item.instruction || item.action}${item.check ? `（檢查：${item.check}）` : ""}`;
+    };
+    const formatExample = item => {
+      if (Array.isArray(item)) {
+        if (item.length < 4) return { prompt: "", answer: "", why: "" };
+        return { prompt: item[1] || "", answer: item[3] || "", why: joinField(item[2], "；") };
+      }
+      if (item && typeof item === "object" && Object.hasOwn(item, "0")) {
+        if (!["0", "1", "2", "3", "why"].every(key => Object.hasOwn(item, key))) return { prompt: "", answer: "", why: "" };
+        return { prompt: item[1] || "", answer: item[3] || "", why: joinField(item.why, "；") };
+      }
+      if (!item || typeof item !== "object") return { prompt: "", answer: "", why: "" };
+      const derivation = item.why || item.reasoning || item.solutionSteps || item.solution || "";
+      return { prompt: item.prompt || item.question || "", answer: item.answer || joinField(item.solution, "；") || joinField(derivation, "；"), why: joinField(derivation, "；") };
+    };
+    const formatMistake = item => {
+      if (typeof item === "string") return item;
+      if (Array.isArray(item)) return `${item[0]}${item[1] ? ` 原因：${item[1]}` : ""}${item[2] ? ` 修正：${item[2]}` : ""}`;
+      const mistake = item.mistake || item.wrong || item.wrongReasoning || item.mistakeId || "";
+      return `${mistake}${item.why ? ` 原因：${item.why}` : ""}${item.correction || item.fix ? ` 修正：${item.correction || item.fix}` : ""}`;
+    };
+    const formatExtension = item => typeof item === "string" ? item : `${item.prompt || item.text || ""}${item.answer ? `（答案：${item.answer}）` : ""}`;
+    const commonMistakes = (l.commonMistakes || l.mistakes || []).map(formatMistake);
+    const checks = l.selfCheck ?? l.selfCheckItems ?? l.selfChecks ?? [];
+    const next = l.connections?.next ?? l.nextSkillConnection;
+    const nextItems = Array.isArray(next) ? next : [next].filter(Boolean);
     return {
       skillId: skill.skillId, title: l.title || skill.title || skill.skillId,
-      summary: joinField(l.summary || l.conciseSummary || l.learningOutcomes, "；"), concept: joinField(l.conceptNarrative || l.conceptDevelopment, "\n"), formula: formulas,
-      stepGuide: (l.method || []).map(item => `${item.step}. ${item.instruction}（檢查：${item.check}）`),
-      examples: (l.workedExamples || []).map(item => ({ prompt: item.prompt, answer: item.answer, why: (item.solutionSteps || []).join("；") })),
+      summary: joinField(l.summary || l.conciseSummary || l.learningOutcomes, "；"), concept: joinField(richestText([l.conceptNarrative, l.conceptDevelopment, l.concept, l.definition]), "\n"), formula: formulas,
+      stepGuide: (l.method || l.stepByStepMethod || []).map(formatMethod),
+      examples: (l.workedExamples || l.canonicalExamples || l.examples || []).map(formatExample),
       commonMistakes,
-      fullScoreExtension: [...(l.selfCheck || []), ...(l.connections?.next || [])].join("；"),
+      fullScoreExtension: [...checks, ...nextItems].map(formatExtension).join("；"),
+      figures: [...(l.figureReferences || []), ...(l.figureRefs || [])].map(reference => {
+        const fallback = typeof reference === "string" ? {} : reference;
+        return this.figureMetadata(typeof reference === "string" ? reference : reference.figureId, fallback);
+      }).filter(figure => figure.figureUrl),
       contentAuthority: l.contentAuthority
     };
   }

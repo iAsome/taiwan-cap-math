@@ -44,10 +44,10 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "『A是B的p%』中，B是100%的基準，A是比較量。",
-    "『A比B多p%』表示A=B×(1+p%)，百分率仍以B為基準。",
-    "已知比較量求基準量要除以分率。",
-    "含稅價、折後價與增加後的量都是新量，反求原量應除以對應倍率。"
+    "『A 是 B 的 p%』可寫成 A=B×p%，其中 B 是完整的 100% 基準量，A 是比較量。不能因某個數先出現在句中就把它當基準。",
+    "『A 比 B 多 p%』表示 A=B×(1+p%)；『A 比 B 少 p%』表示 A=B×(1−p%)。百分率仍以『比』後面的 B 為基準。",
+    "已知基準量求比較量使用乘法；已知比較量反求基準量則除以分率或變動倍率。含稅價、折後價與增加後數量都屬新量，反求原量不可直接扣百分點。",
+    "多層百分率關係要逐層寫等式或倍率鏈，每一步重新確認基準。最後將答案代回原句，檢查比較量是否等於基準量乘分率。"
   ],
   "formalDefinitions": [
     {
@@ -110,40 +110,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "甲是乙的35%，甲=70。",
+      "prompt": "甲是乙的 35%，甲為 70，求乙。",
       "solutionSteps": [
-        "70=乙×0.35。",
-        "乙=200。"
+        "辨認乙是完整基準量，設乙為 x，列 0.35x＝70。",
+        "兩邊同除以 0.35，求得 x＝200。",
+        "以 200×35%＝70 代回已知比較量。"
       ],
-      "answer": "乙為200。"
+      "answer": "乙為 200。",
+      "why": "『甲是乙的 35%』表示 70=乙×0.35，乙才是完整基準量。反求乙要算 70÷0.35=200；代回 200×35%=70，與已知甲相符。因為甲只占三成五，乙理應比七十大。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "今年比去年多12%，今年1120。",
+      "prompt": "今年比去年多 12%，今年為 1120，求去年。",
       "solutionSteps": [
-        "今年=去年×1.12。",
-        "去年=1000。"
+        "以去年為基準，將今年表示成去年的 1.12 倍。",
+        "設去年為 x，列 1.12x＝1120，解得 x＝1000。",
+        "計算增加量 1000×12%＝120，核對 1000＋120＝1120。"
       ],
-      "answer": "去年1000。"
+      "answer": "去年為 1000。",
+      "why": "今年比去年多 12%，所以今年=去年×1.12。已知增加後的 1120 反求去年，要計算 1120÷1.12=1000；驗算增加 120 後正好為 1120。增加量一百二十也正是去年人數的一成二。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "女生佔全班48%，女生24人。",
+      "prompt": "女生占全班 48%，女生有 24 人，求全班人數。",
       "solutionSteps": [
-        "24=全班×0.48。",
-        "全班=50。"
+        "辨認全班人數是基準量，設全班 x 人，列 0.48x＝24。",
+        "兩邊同除以 0.48，求得 x＝50 人。",
+        "代回 50×48%＝24，並核對其餘二十六人占 52%。"
       ],
-      "answer": "50人。"
+      "answer": "全班 50 人。",
+      "why": "女生人數是比較量，全班人數才是基準量，列式 24=全班×0.48。用 24÷0.48=50；代回 50×48%=24，且人數為合理整數。其餘二十六人占百分之五十二，兩部分合計全班。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "含稅價1050，稅率5%。",
+      "prompt": "含稅價 1050 元，稅率 5%，求未稅價。",
       "solutionSteps": [
-        "1050=未稅×1.05。",
-        "未稅=1000。"
+        "含稅價是未稅價的 105%，設未稅價 x 元，列 1.05x＝1050。",
+        "兩邊同除以 1.05，求得 x＝1000 元。",
+        "計算稅額 1000×5%＝50 元，核對含稅價為 1050 元。"
       ],
-      "answer": "1000元。"
+      "answer": "1000 元。",
+      "why": "含稅價等於未稅價的 105%，所以 1050=未稅價×1.05。反求未稅價為 1050÷1.05=1000 元；直接扣含稅價的 5% 會用錯基準。稅額五十元加回未稅價，正好得到含稅價。"
     }
   ],
   "commonMistakes": [
@@ -229,7 +233,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "8ef9da6a2861aac4a6af9959ac2005df368853c0186576a7cf633b1e9c969343",
+  "contentSha256": "95835efad0b81afa948425a1cbec59b064535b4ccf9df76333aacdb236576f0a",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -253,10 +257,11 @@ export const QUESTIONS = [
       "5"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：『甲是乙的3/5』表示甲=乙×3/5；被乘分率的乙是基準量。所以答案是「乙」。",
+    "explanation": "『甲是乙的 3/5』可寫成甲=乙×3/5。被分率作用、代表完整 100% 的量是乙，因此乙是基準量，甲則是比較量；不能只因甲出現在句首就選甲。",
     "steps": [
-      "『甲是乙的3/5』表示甲=乙×3/5",
-      "被乘分率的乙是基準量"
+      "把文字關係寫成甲=乙×3/5。",
+      "辨認被分率乘上的乙代表完整基準。",
+      "判定乙是基準量、甲是比較量。"
     ],
     "optionAnalysis": [
       {
@@ -280,7 +285,7 @@ export const QUESTIONS = [
         "reason": "5是分母。"
       }
     ],
-    "commonMistake": "看到句首甲就把甲當基準量。",
+    "commonMistake": "只看句首出現甲就把甲當基準，沒有先寫出甲等於乙乘分率的關係。",
     "concept": "『A 是 B 的幾分之幾』中 B 是基準量。",
     "tags": [
       "數與量",
@@ -295,7 +300,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d73b9264f3f76d8f8bdd7b49c8d7cdf2f5642f28f1949038049f536e99674452",
+    "contentSha256": "fefb0acc35d7042929ab101d3db6a4e627d959b4e82bcab020cd809d850f109a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -317,10 +322,11 @@ export const QUESTIONS = [
       "今年與去年平均"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：『比去年增加』以去年作比較起點；20%是增加量佔去年產量的比例。所以答案是「去年產量」。",
+    "explanation": "『今年比去年增加 20%』是以去年產量作比較起點，增加量等於去年產量的 20%。關係式為今年=去年×1.2，所以增加率的基準量是去年產量。",
     "steps": [
-      "『比去年增加』以去年作比較起點",
-      "20%是增加量佔去年產量的比例"
+      "圈出『比去年增加』中的比較起點。",
+      "寫成今年產量=去年產量×1.2。",
+      "確認百分之二十以去年產量為基準。"
     ],
     "optionAnalysis": [
       {
@@ -344,7 +350,7 @@ export const QUESTIONS = [
         "reason": "平均量未被使用。"
       }
     ],
-    "commonMistake": "把新量當作百分率的基準。",
+    "commonMistake": "把增加後的今年產量當成百分之二十的基準，忽略『比去年』已指定比較起點。",
     "concept": "『比原來增加』的基準是原來量。",
     "tags": [
       "數與量",
@@ -359,7 +365,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5789840697cbd3faf6f8151a71e33a4810ead56fca1ab32d45cdf1a826d126fa",
+    "contentSha256": "8c636a3086aba9e0badae5eb92cce7ff475d1186d9f1534fe35b59498a10d86a",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -381,10 +387,11 @@ export const QUESTIONS = [
       "百分率"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：女生人數=全班人數×45%；全班人數是被分率作用的整體。所以答案是「基準量」。",
+    "explanation": "女生 18 人佔全班 45%，可寫成女生人數=全班人數×0.45。全班是被百分率作用的完整人數，也就是基準量；女生 18 人是比較量。反求全班有四十人，代回四成五正好是十八人。",
     "steps": [
-      "女生人數=全班人數×45%",
-      "全班人數是被分率作用的整體"
+      "寫出 18=全班人數×0.45。",
+      "辨認全班人數代表完整的 100%。",
+      "判定全班人數屬於基準量。"
     ],
     "optionAnalysis": [
       {
@@ -408,7 +415,7 @@ export const QUESTIONS = [
         "reason": "45%是分率。"
       }
     ],
-    "commonMistake": "把已知的18人當基準量。",
+    "commonMistake": "因女生十八人是已知數就把它當成基準，沒有辨認全班才是完整的一百分之百。",
     "concept": "部分佔整體百分率時，整體是基準量。",
     "tags": [
       "數與量",
@@ -423,7 +430,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "a9ee22a78811e2e45b938287abac10195cfa3f23c55d65be5c0e0113a105d29d",
+    "contentSha256": "79930acd2da1eefce87bb033f6b1c31c72721e9a58b146e82d00808df067293d",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -445,10 +452,11 @@ export const QUESTIONS = [
       "200"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：80=乙×0.4；乙=80÷0.4=200。所以答案是「200」。",
+    "explanation": "甲數 80 是乙數的 40%，因此列式 80=乙×0.4。已知比較量反求基準量要除以分率，乙=80÷0.4=200；代回 200×40%=80。四成小於全部，所以基準量二百也必須大於比較量八十。",
     "steps": [
-      "80=乙×0.4",
-      "乙=80÷0.4=200"
+      "依題意列式 80=乙×0.4。",
+      "用 80÷0.4 求得乙=200。",
+      "代回 200×0.4=80 驗證。"
     ],
     "optionAnalysis": [
       {
@@ -472,7 +480,7 @@ export const QUESTIONS = [
         "reason": "200正確。"
       }
     ],
-    "commonMistake": "已知比較量卻再次乘百分率。",
+    "commonMistake": "已知比較量八十後仍再乘零點四，沒有用除法反求作為基準的乙數。",
     "concept": "基準量=比較量÷分率。",
     "tags": [
       "數與量",
@@ -487,7 +495,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b70bae521862461115e401627948396d3f671f7667ef88e415acd035be07c3b2",
+    "contentSha256": "8b92bb9db0732ce29f6c908ddc77bfe4e5ee9c4d4d03ebf7767d3b3be2e4f162",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -509,10 +517,11 @@ export const QUESTIONS = [
       "1058 元"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：漲價後=原價×1.15；原價=920÷1.15=800。所以答案是「800 元」。",
+    "explanation": "漲價 15% 後的新價是原價的 115%，所以 920=原價×1.15。反求原價為 920÷1.15=800 元；驗算 800 的 15% 是 120，800+120=920。題目給的是增加後價格，不能直接把九百二十減去它的百分之十五。",
     "steps": [
-      "漲價後=原價×1.15",
-      "原價=920÷1.15=800"
+      "將漲價後關係寫成 920=原價×1.15。",
+      "計算 920÷1.15=800 元。",
+      "以 800+800×0.15=920 驗算。"
     ],
     "optionAnalysis": [
       {
@@ -536,7 +545,7 @@ export const QUESTIONS = [
         "reason": "又乘1.15。"
       }
     ],
-    "commonMistake": "用920減去920的15%，但15%應以原價為基準。",
+    "commonMistake": "直接從九百二十扣除九百二十的百分之十五，誤把增加後金額當成基準。",
     "concept": "反求漲價前基準量要除以1+增率。",
     "tags": [
       "數與量",
@@ -551,7 +560,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "aefe5a3215679dc03422890688b8ff2112b381d85f93899560e4ca95bf599b84",
+    "contentSha256": "67fb6e68a41b98af5b7877e24ed110afb1d140d8a77cb4b289e559bd0ee78c13",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -573,10 +582,11 @@ export const QUESTIONS = [
       "45 公里"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：36=全長×0.6；全長=36÷0.6=60。所以答案是「60 公里」。",
+    "explanation": "已修 36 公里是全長的 60%，列式 36=全長×0.6。反求完整全長要除以完成率，36÷0.6=60 公里；檢查 60×60%=36。尚未修的四成是二十四公里，和已修部分合計六十公里。",
     "steps": [
-      "36=全長×0.6",
-      "全長=36÷0.6=60"
+      "列出 36=全長×0.6。",
+      "用 36÷0.6 求得全長 60 公里。",
+      "代回 60×0.6=36 公里驗證。"
     ],
     "optionAnalysis": [
       {
@@ -600,7 +610,7 @@ export const QUESTIONS = [
         "reason": "全長應為36÷0.6=60公里；45公里不能使已修36公里佔60%。"
       }
     ],
-    "commonMistake": "把完成率當成剩餘率。",
+    "commonMistake": "把完成率百分之六十當作剩餘率，使用百分之四十反求全長。",
     "concept": "全長是完成部分的基準量。",
     "tags": [
       "數與量",
@@ -615,7 +625,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b28ec7bf0dd04cefd3d22fbdd365699ad98e35d8a229152901d814ffa7bbc6f0",
+    "contentSha256": "839f6cb346f4ee6510e68bc25be75429a2ff1715fd98d4b266e24e999d32e027",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -637,10 +647,11 @@ export const QUESTIONS = [
       "115"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：甲=乙×75%；乙=90÷0.75=120。所以答案是「120」。",
+    "explanation": "甲比乙少 25%，表示甲只保留乙的 75%，所以 90=乙×0.75。反求乙為 90÷0.75=120；乙與甲相差 30，30/120=25%。差額必須除以乙這個基準量，不能改用較小的甲作分母。",
     "steps": [
-      "甲=乙×75%",
-      "乙=90÷0.75=120"
+      "把『少 25%』轉成甲=乙×0.75。",
+      "由 90=乙×0.75 求得乙=120。",
+      "檢查 (120−90)/120=25%。"
     ],
     "optionAnalysis": [
       {
@@ -661,10 +672,10 @@ export const QUESTIONS = [
       {
         "choice": "115",
         "truth": false,
-        "reason": "不是整確倍率。"
+        "reason": "115 不是由乙×0.75=90 反求所得的正確數值。"
       }
     ],
-    "commonMistake": "把『甲比乙少25%』誤作乙比甲多25%。",
+    "commonMistake": "把甲比乙少百分之二十五反讀成乙比甲多百分之二十五，錯用甲作基準。",
     "concept": "少p%表示比較量=(1-p)×基準量。",
     "tags": [
       "數與量",
@@ -679,7 +690,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f2c869b5b21d641da93c328c6a8c10bb319f3c3aff8c37abe8e79480f1e7af07",
+    "contentSha256": "754214200bb3cdc0da41137809a6d20f41b8be15dc5afd32c4cb621b05116667",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -701,10 +712,11 @@ export const QUESTIONS = [
       "A 比 C 少10%"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：A=1.2B，B=0.75C；A=1.2×0.75C=0.9C，所以A比C少10%。所以答案是「A 比 C 少10%」。",
+    "explanation": "A 比 B 多 20%，所以 A=1.2B；B 比 C 少 25%，所以 B=0.75C。代入得 A=1.2×0.75C=0.9C，因此 A 是 C 的 90%，比 C 少 10%。兩次比較的基準不同，必須串接倍率，不能把百分率直接相減，否則結論會錯。",
     "steps": [
-      "A=1.2B，B=0.75C",
-      "A=1.2×0.75C=0.9C，所以A比C少10%"
+      "寫出 A=1.2B 與 B=0.75C。",
+      "代入合併倍率，A=1.2×0.75C=0.9C。",
+      "由 0.9C 判斷 A 比 C 少 10%。"
     ],
     "optionAnalysis": [
       {
@@ -728,7 +740,7 @@ export const QUESTIONS = [
         "reason": "A為C的90%，少10%。"
       }
     ],
-    "commonMistake": "直接把20%與25%相減。",
+    "commonMistake": "直接用百分之二十減百分之二十五，忽略兩個百分率分別以 B、C 為基準。",
     "concept": "連鎖比較要把各倍率相乘。",
     "tags": [
       "數與量",
@@ -743,7 +755,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8ec347ee49b7019bc0dbb8d93104a438c56ebe9bb7df125405a2ad0ff55ad57d",
+    "contentSha256": "6cecc804fd82a7448f7ff0ff84b2221572e8b1e2888f2627e674d89b8232af85",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -765,10 +777,11 @@ export const QUESTIONS = [
       "120"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：第一數40%=48；48-0.3×第二數=18，所以0.3×第二數=30，第二數=100。所以答案是「100」。",
+    "explanation": "第一數 120 的 40% 是 48。題意為 48−第二數的30%=18，所以第二數的30%=30，第二數=30÷0.3=100；兩個百分率各有自己的基準。把第二數一百代回，四十八減三十確實等於十八。",
     "steps": [
-      "第一數40%=48",
-      "48-0.3×第二數=18，所以0.3×第二數=30，第二數=100"
+      "計算第一數的 40%：120×0.4=48。",
+      "列式 48−0.3×第二數=18，求得其 30% 為 30。",
+      "用 30÷0.3 求得第二數 100。"
     ],
     "optionAnalysis": [
       {
@@ -792,7 +805,7 @@ export const QUESTIONS = [
         "reason": "120的30%=36，差12。"
       }
     ],
-    "commonMistake": "兩個百分率使用不同基準，卻直接相減40%-30%。",
+    "commonMistake": "把兩個不同基準的百分之四十與百分之三十直接相減，沒有先求各自實際量。",
     "concept": "每個百分率都要乘自己的基準量。",
     "tags": [
       "數與量",
@@ -807,7 +820,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "73abd303043494a522892bf3f12f34dbec21fe8d114d73458ade61a90aaf28ea",
+    "contentSha256": "f132267d947a25452b61198da3684ac83ca8be5dff3672928dc00b3226eb6b59",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -829,10 +842,11 @@ export const QUESTIONS = [
       "13,190 冊"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：今年=去年×1.1；去年=13200÷1.1=12000。所以答案是「12,000 冊」。",
+    "explanation": "今年比去年增加 10%，所以今年冊數等於去年冊數的 1.1 倍。列式 13200=去年×1.1，反求去年=13200÷1.1=12000 冊；再增加 1200 冊即回到今年。增加量正好是去年冊數的一成。",
     "steps": [
-      "今年=去年×1.1",
-      "去年=13200÷1.1=12000"
+      "把增加 10% 寫成今年=去年×1.1。",
+      "計算 13200÷1.1=12000 冊。",
+      "驗算 12000×1.1=13200 冊。"
     ],
     "optionAnalysis": [
       {
@@ -856,7 +870,7 @@ export const QUESTIONS = [
         "reason": "只減10冊。"
       }
     ],
-    "commonMistake": "用今年作為增加量的基準。",
+    "commonMistake": "以今年一萬三千二百冊為百分之十的基準直接扣除，得到錯誤的去年數量。",
     "concept": "『比去年增加』以去年為基準。",
     "tags": [
       "數與量",
@@ -871,7 +885,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "今年數量與增加率共同決定去年基準量，不能以今年直接減10%。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "952b22b198934b95cd335b1d2fb7ab91feee8f086b63fd502f37a89d62560322",
+    "contentSha256": "610783d65a84309442e16dee6be5e143e3e6d4682ef244f9c865e4dd9ca02b12",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -893,10 +907,11 @@ export const QUESTIONS = [
       "810 萬噸"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：540=滿水位×0.72；滿水位=540÷0.72=750。所以答案是「750 萬噸」。",
+    "explanation": "目前 540 萬噸是滿水位容量的 72%，所以 540=容量×0.72。反求容量為 540÷0.72=750 萬噸；驗算 750×72%=540。剩餘的百分之二十八相當於二百一十萬噸，兩部分合計滿水位容量。",
     "steps": [
-      "540=滿水位×0.72",
-      "滿水位=540÷0.72=750"
+      "依比例列式 540=滿水位容量×0.72。",
+      "計算 540÷0.72=750 萬噸。",
+      "用 750×0.72=540 萬噸驗證。"
     ],
     "optionAnalysis": [
       {
@@ -920,7 +935,7 @@ export const QUESTIONS = [
         "reason": "810萬噸代回72%會超過540。"
       }
     ],
-    "commonMistake": "把72%當成少72%，使用錯誤倍率。",
+    "commonMistake": "把百分之七十二解讀成距離滿水位還少百分之七十二，使用錯誤倍率。",
     "concept": "已知百分部分求總容量用除法。",
     "tags": [
       "數與量",
@@ -935,7 +950,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "目前蓄水與佔滿水位百分率共同界定滿水位這個基準量。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "62c69a70f5cd8ff40694a2fd59cbb73f44fa9cb3ec434a5e61f09e392c3ced87",
+    "contentSha256": "f4341090feb4880d92cb60aab2a6423e6cb1e8ba419b5dcdd3b18ad6c8b009ba",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -957,34 +972,35 @@ export const QUESTIONS = [
       "約 971.43 元"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：含稅價=未稅價×1.05；未稅價=1020÷1.05≈971.43。所以答案是「約 971.43 元」。",
+    "explanation": "含稅價等於未稅價的 105%，所以 1020=未稅價×1.05。反求未稅價為 1020÷1.05≈971.43 元；直接算 1020×0.95=969 是把稅率錯以含稅價為基準。將未稅近似值乘一點零五，會回到含稅價約一千零二十元。",
     "steps": [
-      "含稅價=未稅價×1.05",
-      "未稅價=1020÷1.05≈971.43"
+      "把含稅關係寫成 1020=未稅價×1.05。",
+      "計算 1020÷1.05≈971.43 元。",
+      "代回 971.43×1.05 約為 1020，確認近似值。"
     ],
     "optionAnalysis": [
       {
         "choice": "969 元",
         "truth": false,
-        "reason": "直接減5%但四捨五入錯。"
+        "reason": "把 5% 誤以含稅價為基準，計算 1020×0.95=969；反求未稅價應除以 1.05。"
       },
       {
         "choice": "970 元",
         "truth": false,
-        "reason": "不是整數970。"
+        "reason": "將約 971.43 元任意取成 970 元，未依選項所示精度處理近似值。"
       },
       {
         "choice": "1015 元",
         "truth": false,
-        "reason": "只減5元。"
+        "reason": "只從含稅價減去 5 元，把百分率誤當成固定金額。"
       },
       {
         "choice": "約 971.43 元",
         "truth": true,
-        "reason": "約971.43元正確。"
+        "reason": "由 1020÷1.05 得約 971.43 元，且乘回 1.05 可還原含稅價。"
       }
     ],
-    "commonMistake": "把5%以含稅價為基準直接扣除。",
+    "commonMistake": "把百分之五以含稅價一千零二十元為基準直接扣除，沒有除以一點零五。",
     "concept": "含稅價反求未稅基準量要除以1.05。",
     "tags": [
       "數與量",
@@ -999,7 +1015,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "含稅價、稅率與未稅價要求共同決定除以1.05，且需保留近似值。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "1d4a657fabc2ca80ff8ce42cfb84e9df15b3c9004e5b7a1e6be59e6ce21828ef",
+    "contentSha256": "de0a39658cf15796d15757d779ed776b3e1e522b167b6ab1fa8b2e9df6ad6a3b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1021,9 +1037,9 @@ export const CONSTRUCTED_RESPONSES = [
       "代回增加率。"
     ],
     "fullCreditSolution": [
-      "今年=去年×1.15。",
-      "去年=552÷1.15=480人。",
-      "驗算480×15%=72，480+72=552。"
+      "今年比去年增加 15%，所以今年人數等於去年人數的 1.15 倍，列式 552=去年×1.15。",
+      "反求去年人數：552÷1.15=480 人。",
+      "驗算去年增加量為 480×0.15=72 人，480+72=552 人，與今年人數一致。"
     ],
     "alternativeSolutions": [
       "可列方程1.15x=552。"
@@ -1050,16 +1066,16 @@ export const CONSTRUCTED_RESPONSES = [
       "人數為整數，結果合理。"
     ],
     "commonErrors": [
-      "把今年552人當成100%的基準，直接算552×15%。",
-      "用552÷0.15反求去年，混淆增加量與增加後總量。",
-      "求得480後沒有代回1.15×480檢查。"
+      "把今年 552 人當成增加率的基準，直接計算 552×15% 再扣除。",
+      "用 552÷0.15 反求去年，混淆增加量百分之十五與增加後總量百分之一百一十五。",
+      "求得 480 人後未代回 1.15×480 檢查，無法發現倍率方向錯誤。"
     ],
     "independentReview": {
       "derivedResult": "去年480人。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "494a0d28050c72775da54cb97a2112f2afd34a4100227c668f1e497c6645f44b",
+    "contentSha256": "13a2a88b9d2502b2f98df35ce44a638b6007a013c494575a19a1639326c6d355",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1078,9 +1094,9 @@ export const CONSTRUCTED_RESPONSES = [
       "最後百分率以乙為基準。"
     ],
     "fullCreditSolution": [
-      "甲的40%=250×0.4=100。",
-      "乙×5/8=100，所以乙=100×8/5=160。",
-      "甲比乙多90，增加率=90/160=56.25%。"
+      "甲為 250，所以甲的 40% 是 250×0.4=100。",
+      "題意說此數等於乙的 5/8，故乙×5/8=100，乙=100×8/5=160。",
+      "甲比乙多 250−160=90；以乙為基準，90/160=0.5625=56.25%，所以甲比乙多 56.25%。百分率所用分母必須是題目所說的乙，不能改用甲。"
     ],
     "alternativeSolutions": [
       "可列0.4×250=0.625乙。"
@@ -1107,15 +1123,16 @@ export const CONSTRUCTED_RESPONSES = [
       "最後比較明確以乙為基準。"
     ],
     "commonErrors": [
-      "用90/250計算。",
-      "把5/8當5%。"
+      "用差額 90 除以甲 250，忽略題目明定增加率要以乙為基準。",
+      "把乙的八分之五誤讀成百分之五，導致反求乙時使用錯誤分率。",
+      "求出乙為 160 後只回答差 90，沒有再換算成以乙為基準的百分率。"
     ],
     "independentReview": {
       "derivedResult": "乙=160；甲比乙多56.25%。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "5c2d49f85770f4b8453243810a83020fe58364a595a03607240e75f9b5e16ee4",
+    "contentSha256": "98e987e77d061a9ab0cc3c67ce1932fe811eb43687611bb3d637f01d7b8af150",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

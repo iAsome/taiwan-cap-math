@@ -117,43 +117,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "已有250公斤物資，每天增加18公斤，幾天後達430公斤？",
+      "answer": "10天。",
       "solutionSteps": [
-        "250+18x=430。",
-        "18x=180。",
-        "x=10。"
+        "設經過 x 天，累計新增量為 18x 公斤。",
+        "依初始加累計量等於目標，列 250+18x=430。",
+        "解得 18x=180、x=10，代回得 430 公斤。"
       ],
-      "answer": "10天。"
+      "why": "二百五十公斤是活動開始前已經有的初始量，而十八公斤才是每天重複累計的變化量。目標比初始多一百八十公斤，恰好是十個十八公斤；回代能清楚區分初始量與十天累計量。"
     },
     {
-      "exampleId": "L2",
       "prompt": "水槽160公升，每分鐘淨流出5公升，降到85公升需多久？",
+      "answer": "15分鐘。",
       "solutionSteps": [
-        "160-5t=85。",
-        "5t=75。",
-        "t=15。"
+        "設經過 t 分鐘，累計流出量為 5t 公升。",
+        "依水量下降列 160-5t=85，得 5t=75。",
+        "解得 t=15，代回 160-5×15=85。"
       ],
-      "answer": "15分鐘。"
+      "why": "淨流出使水量隨時間減少，所以累計變化 5t 必須從初始的一百六十公升扣除，不能用加法。目標與初始相差七十五公升，以每分鐘五公升計算為十五分鐘；代回後水量仍為正且精確達到目標。"
     },
     {
-      "exampleId": "L3",
       "prompt": "活動收入每人120元，固定支出1800元，淨收入3000元。",
+      "answer": "40人。",
       "solutionSteps": [
-        "120x-1800=3000。",
-        "120x=4800。",
-        "x=40。"
+        "設參加者為 x 人，票款總收入為 120x 元。",
+        "淨收入等於總收入扣固定支出，列 120x-1800=3000。",
+        "解得 120x=4800、x=40，代回淨收入為 3000 元。"
       ],
-      "answer": "40人。"
+      "why": "每人一百二十元會隨參加人數重複累計，所以寫成 120x；一千八百元則是整場活動只扣一次的固定支出。要達到三千元淨收入，總收入需先補回固定支出而成四千八百元；除以每人收入得四十人，單位與整數性都正確。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "方案含10單位，超過每單位25元，超額費150元。",
+      "prompt": "方案含10單位，超過後每單位25元，超額費150元。",
+      "answer": "16單位。",
       "solutionSteps": [
-        "超過量150÷25=6。",
-        "總量10+6。"
+        "先用超額費 150 元除以每超過單位 25 元，得超過 6 單位。",
+        "將超過量 6 加回方案原含 10 單位。",
+        "得總用量 16 單位，驗算 (16-10)×25=150。"
       ],
-      "answer": "16單位。"
+      "why": "一百五十元只是超過免費額度之後的費用，不代表全部十六單位都要計費。先用超額費除以單價，只會得到超過量六單位；所求是總用量，所以還必須加回方案已含的十單位。回代超額部分可得精確費用。"
     }
   ],
   "commonMistakes": [
@@ -239,7 +240,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "0a89ef4bc770df947113a432389e3bf2c8c5d531f9deade4ef45e8018a12d781",
+  "contentSha256": "258767a2a496a563cd695ad8dc28f84db10bd34ed66c0ac30a1fa90162cd44f9",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "legacyContentDisposition": "replace-old-lecture-at-final-integration"
 };
@@ -264,7 +265,7 @@ export const QUESTIONS = [
       "143"
     ],
     "answerIndex": 0,
-    "explanation": "辨認節水後每日量x-3；列20(x-3)=140；解得原每日10噸。所以答案是「10」。",
+    "explanation": "辨認節水後每日量x-3；列20(x-3)=140；解得原每日10噸。所以答案是「10」。 二十天的 140 噸應先除以 20，得節水後每天 7 噸，再加回每天少用的 3 噸，得原本每天 10 噸。回代 20×(10-3)=140，累計量正確。",
     "steps": [
       "辨認節水後每日量x-3",
       "列20(x-3)=140",
@@ -284,7 +285,7 @@ export const QUESTIONS = [
       {
         "choice": "13",
         "truth": false,
-        "reason": "把少3噸加到20天總量一次。"
+        "reason": "在正確求得原本每日 10 噸後，又多加一次 3 噸，才會誤得 13 噸。"
       },
       {
         "choice": "143",
@@ -292,7 +293,7 @@ export const QUESTIONS = [
         "reason": "把140+3當每日量。"
       }
     ],
-    "commonMistake": "總共只減3噸。",
+    "commonMistake": "把每一天都少用三噸誤看成整個二十天合計只少用三噸。",
     "concept": "每天減少量要放在乘天數的括號內。",
     "tags": [
       "代數",
@@ -307,7 +308,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "71962b3358401595614981225a894a9bd9b29d8d9faf41670696e990491cd369",
+    "contentSha256": "73405ed3079f18a45dda4405995a6a6a54b8b3b4f87e0b9be4ad07cdc4e90fb0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -330,7 +331,7 @@ export const QUESTIONS = [
       "35"
     ],
     "answerIndex": 1,
-    "explanation": "超額用量為總量減5；列30(x-5)=210；解得12GB。所以答案是「12」。",
+    "explanation": "超額用量為總量減5；列30(x-5)=210；解得12GB。所以答案是「12」。 二百一十元是超過 5 GB 部分的費用，所以超過量是 210÷30=7 GB。再加回方案原含的 5 GB，總用量為 12 GB。驗算 30×(12-5)=210，費用完全相符。",
     "steps": [
       "超額用量為總量減5",
       "列30(x-5)=210",
@@ -358,7 +359,7 @@ export const QUESTIONS = [
         "reason": "把含量5乘單價。"
       }
     ],
-    "commonMistake": "把全部用量都按30元計費。",
+    "commonMistake": "把全部使用量都以每 GB 三十元計費，忽略方案已包含的五 GB。",
     "concept": "付費量只計超過5GB部分。",
     "tags": [
       "代數",
@@ -373,7 +374,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "c879f23d6f5de0c0728bf6e1bd4e56e29ab1dc51d7848d2a274fd1fade799518",
+    "contentSha256": "4821c43de1ce24d3d2321afd8116b20bac727d02238d2bcb3013c55b579d089b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -396,7 +397,7 @@ export const QUESTIONS = [
       "130"
     ],
     "answerIndex": 2,
-    "explanation": "列80x-2400=5600；加回固定支出得8000；除80得100。所以答案是「100」。",
+    "explanation": "列80x-2400=5600；加回固定支出得8000；除80得100。所以答案是「100」。 淨收入是總票款扣除固定支出，因此總票款必須為 5600+2400=8000 元。每張 80 元，8000÷80=100 張；回代 80×100-2400=5600，淨收入正確。",
     "steps": [
       "列80x-2400=5600",
       "加回固定支出得8000",
@@ -424,7 +425,7 @@ export const QUESTIONS = [
         "reason": "把收入與支出相加後除錯。"
       }
     ],
-    "commonMistake": "把淨收入當總票款。",
+    "commonMistake": "把淨收入五千六百元直接當成未扣場地支出的總票款，因而少算售票數。",
     "concept": "淨收入需先加回固定支出得到票款。",
     "tags": [
       "代數",
@@ -439,7 +440,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "65a800d57bdc907a3f6fdff2bda7cfc60b435514da2dc67aa93e88f494a19697",
+    "contentSha256": "2475b17b4890e62293fd396423e932b53832dfa05be9e4a75eb2b449c9dfaf59",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -462,7 +463,7 @@ export const QUESTIONS = [
       "40"
     ],
     "answerIndex": 3,
-    "explanation": "算上車後35人；座位數=已坐+空位；得到40。所以答案是「40」。",
+    "explanation": "算上車後35人；座位數=已坐+空位；得到40。所以答案是「40」。 已坐人數先由 28+7=35 得到，而「還空 5 位」表示座位總數比已坐人數多 5，所以 x=35+5=40。四十個座位扣除三十五人，確實剩五個空位。",
     "steps": [
       "算上車後35人",
       "座位數=已坐+空位",
@@ -490,7 +491,7 @@ export const QUESTIONS = [
         "reason": "已坐28+7=35人，空5位，所以x=35+5=40。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "把空位當成應扣除。",
+    "commonMistake": "把還空著的五個座位從已坐三十五人中扣除，而非加回求座位總數。",
     "concept": "總容量=使用量+剩餘量。",
     "tags": [
       "代數",
@@ -505,7 +506,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "042af4cda636667d8a3507b9e92b8971cece45d5d3f9d432f13b7db1fbe0d1d9",
+    "contentSha256": "a2ac59ed06017bee1d7ff9f3110808ba304353eb143f6b16b011d3f9b76fd690",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -528,7 +529,7 @@ export const QUESTIONS = [
       "44"
     ],
     "answerIndex": 1,
-    "explanation": "先求淨流量8-3=5；列120+5t=220；解得20分鐘。所以答案是「20」。",
+    "explanation": "先求淨流量8-3=5；列120+5t=220；解得20分鐘。所以答案是「20」。 同時流入與流出時，每分鐘淨增加量是 8-3=5 公升，不是兩者相加。水量需增加 220-120=100 公升，所以時間 100÷5=20 分鐘。回代 120+5×20=220，符合目標。",
     "steps": [
       "先求淨流量8-3=5",
       "列120+5t=220",
@@ -556,7 +557,7 @@ export const QUESTIONS = [
         "reason": "把220÷5。"
       }
     ],
-    "commonMistake": "把兩個流量相加。",
+    "commonMistake": "把每分鐘流入八公升與流出三公升相加，而非依流動方向相減求淨增加量。",
     "concept": "淨變化率=流入率-流出率。",
     "tags": [
       "代數",
@@ -571,7 +572,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "3645fbe6bdb7f90ea85058c49facbfc90bdf5c2e70a68f499498391abb9a9451",
+    "contentSha256": "8a090faff28bd7b4b24ef79fb4e7e7ace1375293990506e798086650d7bf4116",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -594,7 +595,7 @@ export const QUESTIONS = [
       "35"
     ],
     "answerIndex": 2,
-    "explanation": "扣除已有180；12天新增240；每天20公斤。所以答案是「20」。",
+    "explanation": "扣除已有180；12天新增240；每天20公斤。所以答案是「20」。 十二天內新增的重量是 420-180=240 公斤，因此每天增加量 x=240÷12=20 公斤。回代 180+12×20=420，起始量與十二天累計增加量都已納入。",
     "steps": [
       "扣除已有180",
       "12天新增240",
@@ -609,7 +610,7 @@ export const QUESTIONS = [
       {
         "choice": "25",
         "truth": false,
-        "reason": "直接420÷12。"
+        "reason": "把新增總量 420-180 誤算成 300 公斤，再用 300÷12 才會誤得 25 公斤。"
       },
       {
         "choice": "20",
@@ -622,7 +623,7 @@ export const QUESTIONS = [
         "reason": "把已有量平均進每天。"
       }
     ],
-    "commonMistake": "忽略起始已有量。",
+    "commonMistake": "忽略活動開始時已累積的一百八十公斤，直接用最後總量除以十二天。",
     "concept": "總量=初始+天數×每日量。",
     "tags": [
       "代數",
@@ -637,7 +638,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9525c3aedb669404f9613aec4e110cd7322973ba72d1c669a0df430aeb6fe10d",
+    "contentSha256": "ef415a0a674fabf162485724cb3fb76666f7fc7ac99dc74aecbee2770a61e1b1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -660,7 +661,7 @@ export const QUESTIONS = [
       "8"
     ],
     "answerIndex": 3,
-    "explanation": "列溫度變化式；兩邊減8得-12；除-1.5得8小時。所以答案是「8」。",
+    "explanation": "列溫度變化式；兩邊減8得-12；除-1.5得8小時。所以答案是「8」。 從 8°C 降到 -4°C，共下降 8-(-4)=12°C。每小時下降 1.5°C，所以需 12÷1.5=8 小時。時間本身仍為正數；回代 8-1.5×8=-4，終點溫度正確。",
     "steps": [
       "列溫度變化式",
       "兩邊減8得-12",
@@ -688,7 +689,7 @@ export const QUESTIONS = [
         "reason": "8-1.5t=-4，-1.5t=-12，所以t=8。 因此此選項符合題目。"
       }
     ],
-    "commonMistake": "負溫度使時間也判成負。",
+    "commonMistake": "因為終點溫度是負四度，就把所求的經過時間也判成負數，混淆不同量的意義。",
     "concept": "下降用負變化率。",
     "tags": [
       "代數",
@@ -703,7 +704,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0c62300d8bdf152fb555a3e655a69e33520fc5b86f3c56256bef15603d332f48",
+    "contentSha256": "3f396f5abd3cbe783cc3ccdf1f44507de5633196baa3402ea77308fae1de5b47",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -726,7 +727,7 @@ export const QUESTIONS = [
       "22.5"
     ],
     "answerIndex": 0,
-    "explanation": "扣除先讀35頁；9天共讀135頁；每天15頁。所以答案是「15」。",
+    "explanation": "扣除先讀35頁；9天共讀135頁；每天15頁。所以答案是「15」。 先讀的 35 頁是起始累計量，不應平均分到之後九天。這九天共讀 170-35=135 頁，所以每天 135÷9=15 頁。回代 35+9×15=170，累計頁數相符。",
     "steps": [
       "扣除先讀35頁",
       "9天共讀135頁",
@@ -754,7 +755,7 @@ export const QUESTIONS = [
         "reason": "把35頁再加進每日量。"
       }
     ],
-    "commonMistake": "把起始頁數平均到每天。",
+    "commonMistake": "把計畫開始前已讀的三十五頁也平均分進之後九天，誤解起始累計量。",
     "concept": "先讀部分只計一次。",
     "tags": [
       "代數",
@@ -769,7 +770,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b70e6222e3049a589b8a8379257effb6834156177f9bcc74cb6d376f2c34d4df",
+    "contentSha256": "3f5f839f036eef6ccf124fdbb53c3dfa9e6fce5a592c3b0359dfcd278f893973",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -792,7 +793,7 @@ export const QUESTIONS = [
       "9"
     ],
     "answerIndex": 2,
-    "explanation": "扣月費180；電影費225；225÷45=5部。所以答案是「5」。",
+    "explanation": "扣月費180；電影費225；225÷45=5部。所以答案是「5」。 每月 180 元是固定費，要先從 405 元扣除，電影費才是 225 元。每部 45 元，所以購買 225÷45=5 部。回代 180+45×5=405，固定費與按部計費皆正確。",
     "steps": [
       "扣月費180",
       "電影費225",
@@ -807,7 +808,7 @@ export const QUESTIONS = [
       {
         "choice": "6",
         "truth": false,
-        "reason": "直接405÷45。"
+        "reason": "扣除月費時把 180 元誤扣成 135 元，使電影費誤為 270 元，270÷45 才會得 6 部。"
       },
       {
         "choice": "5",
@@ -820,7 +821,7 @@ export const QUESTIONS = [
         "reason": "把月費當電影部數。"
       }
     ],
-    "commonMistake": "總費用直接除單價。",
+    "commonMistake": "把包含固定月費的四百零五元總額直接除以每部四十五元，沒有先扣月費。",
     "concept": "先扣固定費再求離散部數。",
     "tags": [
       "代數",
@@ -835,7 +836,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f932f6efb5d2b120fa953d5104097d3bb88ae4b327ade12eb963c565bf56e9fe",
+    "contentSha256": "d08278ee4a7c2e1af1b5282aed89c2c3b7d343dbdfa274e9843c77c1f9bee11b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -858,7 +859,7 @@ export const QUESTIONS = [
       "6"
     ],
     "answerIndex": 3,
-    "explanation": "扣蛋白粉18克；飲料提供72克；72÷12=6瓶。所以答案是「6」。",
+    "explanation": "扣蛋白粉18克；飲料提供72克；72÷12=6瓶。所以答案是「6」。 蛋白粉的 18 克是固定添加量，只扣一次，飲料所需提供 90-18=72 克。每瓶 12 克，所以瓶數 72÷12=6。回代 12×6+18=90，而且瓶數是完整整數。",
     "steps": [
       "扣蛋白粉18克",
       "飲料提供72克",
@@ -901,7 +902,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "瓶裝蛋白質與單次蛋白粉來源不同，情境決定12x+18而非30x。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ccf6e00371c3a1b6a4497658c9db0876f6e2cbdceeca0387033d661e564f4df4",
+    "contentSha256": "9184ab6f9a323fb7f8eeceb3df3d3ef8cd4f412e20ab70ee688f93a982f1ce59",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -924,7 +925,7 @@ export const QUESTIONS = [
       "120"
     ],
     "answerIndex": 0,
-    "explanation": "總減少量960-600=360；分8個月；每月45公斤。所以答案是「45」。",
+    "explanation": "總減少量960-600=360；分8個月；每月45公斤。所以答案是「45」。 八個月共需減少 960-600=360 公斤，每月固定減少量為 360÷8=45 公斤。這也等價於解 960-8x=600。回代八個月共減三百六十公斤，最後恰為 600 公斤。",
     "steps": [
       "總減少量960-600=360",
       "分8個月",
@@ -952,7 +953,7 @@ export const QUESTIONS = [
         "reason": "把總減少量當每月量。"
       }
     ],
-    "commonMistake": "只減一次x。",
+    "commonMistake": "把每月固定減少 x 公斤只扣一次，忽略這個減少量會連續累計八個月。",
     "concept": "每月減量累積8次。",
     "tags": [
       "代數",
@@ -967,7 +968,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始排放、目標排放與月份數共同決定960-8x=600，環境目標資料不可刪除。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "314f89966bffd337ac92a3efb9e40376baa4c7cd5c517d24c3c6b1fec68adb96",
+    "contentSha256": "058c6e4a4b592b57f613631685a5179490a18a3330c342be9eaa13b75980f255",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -990,7 +991,7 @@ export const QUESTIONS = [
       "21"
     ],
     "answerIndex": 1,
-    "explanation": "先扣場租後有3800元；保留190元所以材料費3610元；3610÷190=19組。所以答案是「19」。",
+    "explanation": "先扣場租後有3800元；保留190元所以材料費3610元；3610÷190=19組。所以答案是「19」。 付場租後剩 3800 元，但題目要求付款後還要保留 190 元，所以真正可買材料的金額為 3610 元。3610÷190=19 組；回代 1200+190×19+190=5000，剩餘金額精確。",
     "steps": [
       "先扣場租後有3800元",
       "保留190元所以材料費3610元",
@@ -1033,7 +1034,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "總預算、固定場租、每組單價與指定剩餘190元四項資料共同決定唯一組數，情境不可簡化。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "36557d50b1eef26e681b7b4d393ff8957289b01822c0b914163c7b6710c85e89",
+    "contentSha256": "7ef022141464bb4f569e655004718b2aaf73055ab31b8a23e7eef69cb9eb2323",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }
@@ -1056,9 +1057,9 @@ export const CONSTRUCTED_RESPONSES = [
       "附時間單位並驗算。"
     ],
     "fullCreditSolution": [
-      "每小時淨增加35-15=20公升。",
-      "600+20t=900。",
-      "20t=300，t=15小時；600+20×15=900。"
+      "水池每小時流入 35 公升、流出 15 公升，所以每小時淨增加 35-15=20 公升。",
+      "設需 t 小時。方程式 600+20t=900 中，600 是初始水量，20t 是 t 小時累計的淨增加量，900 是目標水量。",
+      "移項得 20t=300，所以 t=15 小時。驗算 600+(35-15)×15=600+300=900 公升，時間與容量均符合。"
     ],
     "alternativeSolutions": [
       "也可列600+35t-15t=900後合併。"
@@ -1086,15 +1087,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "把流入與流出相加。",
-      "忽略初始600公升。"
+      "把流入與流出的速率相加成每小時 50 公升，沒有依方向求淨流量。",
+      "只用目標 900 公升除以淨流量，漏掉水池起初已有的 600 公升。"
     ],
     "independentReview": {
       "derivedResult": "15小時",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "966bb2d4fa1feeff113ca90d78a643c1e4a0e872043135056f10c38506d2b620",
+    "contentSha256": "c24380ac787fcfd18b17f8bf06d08ef1e83bf10c99ffcd5bc58f7b2ba31a7cf8",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   },
@@ -1114,9 +1115,9 @@ export const CONSTRUCTED_RESPONSES = [
       "解方程並檢查至少條件。"
     ],
     "fullCreditSolution": [
-      "淨收入75x-15x-2700=4500。",
-      "60x=7200，x=120。",
-      "售120張時淨收入4500元，因此至少120張。"
+      "設售出 x 張餐券。總收入為 75x 元，每張食材費合計 15x 元，固定支出 2700 元只扣一次，因此淨收入方程式為 75x-15x-2700=4500。",
+      "合併同類項得 60x-2700=4500，兩邊加 2700 得 60x=7200，再除以 60 得 x=120 張。",
+      "售 120 張時，票款為 9000 元，食材費為 1800 元，再扣固定支出 2700 元，淨收入恰為 4500 元。題目說明恰有整數解，因此至少需 120 張。"
     ],
     "alternativeSolutions": [
       "可先算每張淨貢獻60元，再加回固定支出。"
@@ -1144,15 +1145,15 @@ export const CONSTRUCTED_RESPONSES = [
       "若前一步算術錯誤但後續方法一致，可依規準給部分分。"
     ],
     "commonErrors": [
-      "只扣固定支出，漏掉每張食材費。",
-      "把2700乘張數。"
+      "只扣一次固定支出 2700 元，卻漏掉每售一張就會增加的 15 元食材費。",
+      "把固定支出 2700 元也乘上張數 x，混淆只發生一次的固定成本與逐張成本。"
     ],
     "independentReview": {
       "derivedResult": "至少120張",
       "ambiguity": "題意、單位與限制條件完整，依指定方法可得到唯一結果。",
       "decision": "pass"
     },
-    "contentSha256": "a518121adde2643a1db8cf5ee53e576fe18a95860a7c9b5e1c27bcf25113bdfb",
+    "contentSha256": "48a8490ffd536c310c287e6a7bc56b904ea6dd0678b1eb5be3437c2703bfdd89",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "legacyContentDisposition": "replace-old-record-at-final-integration"
   }

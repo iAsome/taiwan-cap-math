@@ -111,59 +111,76 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "檢驗 (2,1) 是否為 3x+y=7 的解。",
+      "exampleId": "u04-s002-example-a",
+      "prompt": "說明有序數對 (-4,7) 對 x、y 的意義。",
       "solutionSteps": [
-        "代入 x=2、y=1。",
-        "左邊 3×2+1=7。",
-        "右邊為 7。"
+        "讀取第一分量 -4，指定給 x。",
+        "讀取第二分量 7，指定給 y。"
       ],
-      "answer": "是。"
+      "answer": "x=-4、y=7。",
+      "why": "有序數對依位置而不是依數值正負分配變數。第一分量的負四必須完整給 x，第二分量七給 y；交換後會成為另一個不同數對。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "檢驗 (1,2) 是否為 3x+y=7 的解。",
+      "exampleId": "u04-s002-example-b",
+      "prompt": "檢驗 (2,-1) 是否為 2x+3y=1 的解。",
       "solutionSteps": [
-        "左邊 3×1+2=5。",
-        "5≠7。"
+        "代入 x=2、y=-1，得到 2×2+3×(-1)。",
+        "計算 4-3=1，與右邊相等。"
       ],
-      "answer": "不是。"
+      "answer": "是這個方程式的一組解。",
+      "why": "負一要用括號代入，三乘負一為負三；左邊最後等於一，與右邊完全相同，因此符合方程式解的定義，而非只看數對外觀。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "若 (4,k) 是 2x-y=3 的解，求 k。",
+      "exampleId": "u04-s002-example-c",
+      "prompt": "若 (k,4) 是 3x-y=11 的解，求 k。",
       "solutionSteps": [
-        "代入得 8-k=3。",
-        "所以 k=5。"
+        "依順序代入 x=k、y=4，得到 3k-4=11。",
+        "整理 3k=15，求得 k=5。"
       ],
-      "answer": "k=5。"
+      "answer": "k=5。",
+      "why": "未知字母位於第一分量，所以它代入 x 而不是 y。由一元方程式求得五後，回代可驗算 3×5-4=11，確定分量與計算皆正確。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "找出 x+y=0 的兩組整數解。",
+      "exampleId": "u04-s002-example-d",
+      "prompt": "資料欄為 (輸入,輸出)，檢查 (6,14) 是否符合 y=2x+2。",
       "solutionSteps": [
-        "任取 x，再令 y=-x。",
-        "取 x=2 得 y=-2；取 x=-3 得 y=3。"
+        "依欄位讀出 x=6、y=14。",
+        "計算右側 2×6+2=14，與 y 相等。"
       ],
-      "answer": "例如 (2,-2)、(-3,3)。"
+      "answer": "符合這個輸入輸出模型。",
+      "why": "欄位順序指定六是輸入 x、十四是輸出 y。代入後模型預測值十四與紀錄輸出相同，因此資料成立；若交換欄位便會得到不同結論。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把 (2,-1) 代成 x=-1、y=2",
-      "correction": "忽略有序數對的順序。"
+      "mistake": "將 (a,b) 讀成 x=b、y=a。",
+      "why": "忽略有序數對的固定位置規則。",
+      "correction": "每次先標記第一分量給 x、第二分量給 y。"
     },
     {
-      "mistake": "只算左邊不和右邊比較",
-      "correction": "檢驗需要確認等號成立。"
+      "mistake": "負分量代入時漏掉負號。",
+      "why": "沒有用括號保留數值本身的符號。",
+      "correction": "負數一律連同負號放在括號內代入。"
     },
     {
-      "mistake": "負數代入未加括號",
-      "correction": "容易造成乘法符號錯誤。"
+      "mistake": "只看數對就猜它是解。",
+      "why": "沒有使用等式左右相等的定義。",
+      "correction": "計算方程式左邊並與右邊逐一比較。"
     },
     {
-      "mistake": "以為一個方程式只有一組解",
-      "correction": "二元一次方程式通常有無限多組解。"
+      "mistake": "把係數與分量相加。",
+      "why": "誤讀代數式中省略的乘號。",
+      "correction": "先寫出乘號，再依乘法優先順序計算。"
+    },
+    {
+      "mistake": "求未知分量後沒有回代。",
+      "why": "可能保留移項或符號錯誤而未發現。",
+      "correction": "將完整數對代回原方程式驗證。"
+    },
+    {
+      "mistake": "資料表欄位順序全都視為 x、y。",
+      "why": "忽略情境可能另行定義兩個分量。",
+      "correction": "代入前先閱讀欄名、單位及數對順序。"
     }
   ],
   "selfCheck": [
@@ -206,7 +223,40 @@ export const LECTURE = {
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-  "contentSha256": "c3b16d7c7e1d5edda6f003eddce08c1d2aa4685d5a64762919374fa5156e617a"
+  "contentSha256": "075863ae02992a65006284038a8764b6bf115d453417d745ad66568d9927e0ee",
+  "conceptNarrative": [
+    "有序數對寫成 (x,y)，第一分量固定對應 x，第二分量固定對應 y。順序是數對的一部分，所以 (3,-2) 與 (-2,3) 代表不同代入值，即使使用相同兩個數也不能交換。",
+    "若把有序數對代入二元一次方程式後，等式左右兩邊數值相等，這個數對就是方程式的一組解。判斷必須實際計算，不能只看數值大小或方程式外觀。",
+    "二元一次方程式通常有許多組解；給定其中一個分量時，可以依數對順序代入，將原式化為一元一次方程式，再求另一分量。負數與分數代入時要用括號保留作用範圍。",
+    "資料表或情境中的欄位名稱決定分量意義，例如 (時間,溫度) 與 (成人票,學生票)。代入前先核對欄位定義與單位，才不會因同一組數字在不同脈絡中對應錯誤。"
+  ],
+  "method": [
+    {
+      "step": 1,
+      "instruction": "讀取題目指定的欄位或變數順序，建立第一分量對應 x、第二分量對應 y。",
+      "check": "分量位置與欄位名稱一致，負號及單位均完整保留。"
+    },
+    {
+      "step": 2,
+      "instruction": "將兩個分量以括號代入方程式左邊的所有對應位置。",
+      "check": "同一未知數的每一處都已代入，係數與分量之間按乘法處理。"
+    },
+    {
+      "step": 3,
+      "instruction": "依運算順序計算左邊，必要時先處理負數或分數乘法。",
+      "check": "帶號數、分數係數與括號的計算符號均正確。"
+    },
+    {
+      "step": 4,
+      "instruction": "將算出的左邊數值與等號右邊比較，明確寫出相等或不相等。",
+      "check": "不是憑直覺判定，等式兩邊都有確切計算結果。"
+    },
+    {
+      "step": 5,
+      "instruction": "若有未知分量，先列出代入後的一元方程式，求解後再回代檢查。",
+      "check": "所得分量放回原數對的正確位置，代回原式確實成立。"
+    }
+  ]
 };
 
 export const QUESTIONS = [
@@ -231,10 +281,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "標準記法 (x,y) 中第一個數是 x，第二個數是 y，因此 x=3、y=-2。",
-    "explanation": "有序數對的分量位置固定。",
+    "explanation": "有序數對的第一分量固定對應 x，第二分量固定對應 y，因此 (3,-2) 表示 x=3、y=-2。括號中的順序不能交換，第二分量的負號也屬於數值本身，必須完整保留。",
     "steps": [
-      "讀第一分量。",
-      "讀第二分量並保留負號。"
+      "讀取第一分量 3，指定給 x。",
+      "讀取第二分量 -2，指定給 y。",
+      "寫成 x=3、y=-2 並再次核對順序與負號。"
     ],
     "optionAnalysis": [
       {
@@ -258,7 +309,7 @@ export const QUESTIONS = [
         "reason": "同時改變兩個符號。"
       }
     ],
-    "misconceptionTarget": "交換順序或漏負號",
+    "misconceptionTarget": "把兩個分量交換，或讀第二分量時遺漏負二的負號。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -271,7 +322,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "698321ee32a9dac3d0f026bd90e403714a844de4b3d41073a910ae07f450325b"
+    "contentSha256": "fdab3e184bf58cbe6f72f482f9df3c452b0f524c0d5aeaa3ce40f2250d932aa8"
   },
   {
     "questionId": "u04-s002-v002",
@@ -294,11 +345,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "代入得 3×2+1=7，與右邊相等。",
-    "explanation": "左右相等，因此是解。",
+    "explanation": "依有序數對順序代入 x=2、y=1，方程式左邊為 3×2+1=7，與右邊七相等。因此 (2,1) 確實使方程式成立，是 3x+y=7 的一組解。第一、第二分量的對應不可交換。",
     "steps": [
-      "代入 x=2。",
-      "代入 y=1。",
-      "比較 7=7。"
+      "由 (2,1) 讀出 x=2、y=1。",
+      "代入左邊，計算 3×2+1=7。",
+      "比較左右兩邊同為七，判定是解。"
     ],
     "optionAnalysis": [
       {
@@ -322,7 +373,7 @@ export const QUESTIONS = [
         "reason": "代入即可判斷。"
       }
     ],
-    "misconceptionTarget": "只看數對未實算",
+    "misconceptionTarget": "只看數對中的數字似乎合理，沒有實際代入並比較等式兩邊。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -335,7 +386,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "975904613f0c783c11a43735ffecafa5a5210dd7e774efd8de2a2427cbc12a5b"
+    "contentSha256": "4b1c5bff2acece7eba3ed9346190938c82875e9cd0239175c332f228b65288ce"
   },
   {
     "questionId": "u04-s002-v003",
@@ -358,11 +409,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "檢查各組分量和，4+(-4)=0。",
-    "explanation": "互為相反數的兩個數相加為 0。",
+    "explanation": "方程式 x+y=0 要求兩個分量相加為零，也就是兩數互為相反數。代入 (4,-4) 得 4+(-4)=0；其他三組的和分別不為零，所以只有第四組成立。",
     "steps": [
-      "依序代入 x、y。",
-      "計算 x+y。",
-      "找出和為 0 的選項。"
+      "依序把各選項第一、第二分量代入 x、y。",
+      "分別計算兩個分量的和。",
+      "找出 4+(-4)=0 的有序數對。"
     ],
     "optionAnalysis": [
       {
@@ -386,7 +437,7 @@ export const QUESTIONS = [
         "reason": "4+(-4)=0，等式成立。"
       }
     ],
-    "misconceptionTarget": "忽略負號",
+    "misconceptionTarget": "忽略負號，誤以為相同的兩個數或含零的數對一定相加為零。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -399,7 +450,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "cac4873b580a36884d6f165b9f70aa3cc013ebf10df316e99cdeab17791689a5"
+    "contentSha256": "9b0eddbd2b4e7b06bf5d08d653c8686ad655db7fa11f67488b6c9d5063126027"
   },
   {
     "questionId": "u04-s002-v004",
@@ -422,11 +473,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "代入 x=5、y=k 得 10-k=3，所以 k=7。",
-    "explanation": "已知一個分量時，可代入解一元一次方程式。",
+    "explanation": "(5,k) 的第一分量是 x=5，第二分量是 y=k。代入 2x-y=3 得 2×5-k=3，即 10-k=3；兩邊同減十後為 -k=-7，所以 k=7。回代後 10-7=3，與原方程式一致，證明分量位置與符號都正確。",
     "steps": [
-      "代入 x=5。",
-      "解 10-k=3。",
-      "得到 k=7。"
+      "按順序代入 x=5、y=k，得到 10-k=3。",
+      "在等式兩邊同減十，得到 -k=-7。",
+      "兩邊同乘負一，求得 k=7。"
     ],
     "optionAnalysis": [
       {
@@ -450,7 +501,7 @@ export const QUESTIONS = [
         "reason": "直接抄等號右邊。"
       }
     ],
-    "misconceptionTarget": "負號前未知數移項錯誤",
+    "misconceptionTarget": "處理 -k 時直接把三減十寫成正七，造成移項與符號同時出錯。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -463,7 +514,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "6c0f2bf7915034900c17fc1e4564335f90b80e7d8de8b81dd280063c35bbca69"
+    "contentSha256": "bf00e522c632c1f9f783b00e859ec0f8082ed2e1f11479dd622bcef88f3e9964"
   },
   {
     "questionId": "u04-s002-v005",
@@ -486,10 +537,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "(1,3)：2×1+3=5；(3,1)：2×3+1=7。",
-    "explanation": "交換順序後，因係數不同，結果可能改變。",
+    "explanation": "代入 (1,3) 時左邊為 2×1+3=5，等於右邊；代入 (3,1) 時則為 2×3+1=7，不等於五。由於 x、y 的係數不同，交換分量會改變代入值，只有 (1,3) 滿足。兩組必須各自完整驗算，不能視為同一答案。",
     "steps": [
-      "分別代入兩組。",
-      "比較左值 5 與 7。"
+      "把 (1,3) 代入，算得 2×1+3=5。",
+      "把 (3,1) 代入，算得 2×3+1=7。",
+      "比較兩次結果，判定只有第一組成立。"
     ],
     "optionAnalysis": [
       {
@@ -513,7 +565,7 @@ export const QUESTIONS = [
         "reason": "第一組左邊為 5。"
       }
     ],
-    "misconceptionTarget": "認為分量相同就必然同解",
+    "misconceptionTarget": "認為兩個數相同只是順序互換，所以兩個有序數對必定同時成立。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -526,7 +578,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "2bd07cc1d6bbbdbcf3f7bfd31ab3c6737e65327a71096014dff43b483d5e959d"
+    "contentSha256": "8a0026807348e8bf37dfc976a22b4b8526a4efeb0436a215ba7ceca64e392ddd"
   },
   {
     "questionId": "u04-s002-v006",
@@ -549,11 +601,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入 x=-2 得 -6+2y=4，2y=10，y=5。",
-    "explanation": "負數代入乘法後再解一元式。",
+    "explanation": "把 x=-2 代入 3x+2y=4，須寫成 3×(-2)+2y=4，因此 -6+2y=4。兩邊同加六得 2y=10，再除以二得到 y=5，負數代入時括號不可省略。回驗 -6+10=4，等式確實成立，也證明 y 的正負號無誤。",
     "steps": [
-      "計算 3(-2)=-6。",
-      "解 -6+2y=4。",
-      "除以 2。"
+      "代入 x=-2，寫成 3×(-2)+2y=4。",
+      "計算並移除常數，得到 2y=10。",
+      "兩邊同除以二，求得 y=5。"
     ],
     "optionAnalysis": [
       {
@@ -577,7 +629,7 @@ export const QUESTIONS = [
         "reason": "代入 y=5 時 -6+10=4。"
       }
     ],
-    "misconceptionTarget": "負數代入未加括號",
+    "misconceptionTarget": "負二代入時未加括號或把三乘負二算成正六。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -590,7 +642,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c61931aacc4204c0bf328b97835fa2d5fb82312d0797a1b34426cf2d52561cae"
+    "contentSha256": "91d3b324e204428c5d56c0c857f071fd6140ee0cfb995670f635065a70aee1a6"
   },
   {
     "questionId": "u04-s002-v007",
@@ -613,11 +665,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "對 (6,1)，1/2×6-1=3-1=2。",
-    "explanation": "分數係數仍按順序代入。",
+    "explanation": "將 (6,1) 代入可得 (1/2)×6-1=3-1=2，正好等於右邊。其餘選項代入後都不等於二；(1/2)x 表示 x 的二分之一，不是 1 除以 2x。分數係數仍要先與第一分量相乘。",
     "steps": [
-      "逐組計算 x 的一半。",
-      "再減 y。",
-      "找出結果為 2。"
+      "依序將每組第一分量代入 x、第二分量代入 y。",
+      "對 (6,1) 計算 (1/2)×6-1=2。",
+      "比較右邊二，確認 (6,1) 是解。"
     ],
     "optionAnalysis": [
       {
@@ -641,7 +693,7 @@ export const QUESTIONS = [
         "reason": "左邊 -1+1=0。"
       }
     ],
-    "misconceptionTarget": "把 (1/2)x 誤讀為 1/(2x)",
+    "misconceptionTarget": "把 (1/2)x 誤讀為 1/(2x)，改變分數係數的作用範圍。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -654,7 +706,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "66e859e4d767425cf204d8d08547c0f1f9b0b6f11d403238f3db433d1c7f5893"
+    "contentSha256": "ff75351b7b2cd73f0a5d2aac411c305ab8c3d682eb4b42036718ec5882d3fd91"
   },
   {
     "questionId": "u04-s002-v008",
@@ -677,11 +729,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "(a,2)：a+4=7，a=3；(1,b)：1+2b=7，b=3；所以 a+b=6。",
-    "explanation": "分別利用兩個解條件求 a、b，再相加。",
+    "explanation": "(a,2) 代入 x+2y=7 得 a+4=7，所以 a=3；(1,b) 代入則得 1+2b=7，所以 b=3。兩個未知數分別求出後相加，得到 a+b=6。兩組數對都可回代驗得左邊等於七，答案前後一致。",
     "steps": [
-      "代入第一組求 a=3。",
-      "代入第二組求 b=3。",
-      "計算 a+b=6。"
+      "代入 (a,2)，由 a+4=7 求得 a=3。",
+      "代入 (1,b)，由 1+2b=7 求得 b=3。",
+      "計算 a+b=3+3=6。"
     ],
     "optionAnalysis": [
       {
@@ -705,7 +757,7 @@ export const QUESTIONS = [
         "reason": "把兩個未知分量直接視為 6。"
       }
     ],
-    "misconceptionTarget": "只完成其中一次代入",
+    "misconceptionTarget": "把 a、b 都當作同一分量，或未分別代入兩個不同的有序數對。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -718,7 +770,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "b05c02b4300e47e2618e7762a949c298cb237edbd074aea374ec06cf9a2dc5a1"
+    "contentSha256": "8d90546b517fb7d035ce8c9b5797af2e0d1cf3f42c31f56bd3198cf0dc138b9c"
   },
   {
     "questionId": "u04-s002-v009",
@@ -741,11 +793,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "代入得 4t-(t-1)=10，即 3t+1=10，所以 t=3。",
-    "explanation": "數對分量含代數式時，第二分量要完整加括號代入。",
+    "explanation": "有序數對 (t,t-1) 表示 x=t、y=t-1。代入 4x-y=10 得 4t-(t-1)=10，去括號為 4t-t+1=10，所以 3t=9，求得 t=3。此時數對是 (3,2)，代回可得 12-2=10，確認減號已正確分配，第二分量也確為二，結果唯一。",
     "steps": [
-      "代入 x=t、y=t-1。",
-      "展開負號。",
-      "解 3t+1=10。"
+      "依分量寫出 x=t、y=t-1。",
+      "代入並展開 4t-(t-1)=4t-t+1。",
+      "解 3t+1=10，得到 t=3。"
     ],
     "optionAnalysis": [
       {
@@ -769,7 +821,7 @@ export const QUESTIONS = [
         "reason": "t=3 時數對 (3,2) 代入得 12-2=10。"
       }
     ],
-    "misconceptionTarget": "減去括號時未變號",
+    "misconceptionTarget": "去除 -(t-1) 的括號時沒有把負一變成正一。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -782,7 +834,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "f7fbc42dfa704a89f5acaee2e943b507024506a4eb62e5df51b7d41f83fa1b76"
+    "contentSha256": "8bd42dc0b4988811beaad402b3412b0473323a2b762141b0556345ee2f0387f3"
   },
   {
     "questionId": "u04-s002-v010",
@@ -805,11 +857,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "依題目順序 x=4、y=18，2×4+18=26。",
-    "explanation": "欄位順序是代入的必要資訊。",
+    "explanation": "資料欄位順序是時間、溫度，所以 (4,18) 對應 x=4、y=18。代入模型左邊得 2×4+18=8+18=26，與右邊二十六相等，因此這筆紀錄符合模型。欄名決定分量對應，不能依數值大小交換。",
     "steps": [
-      "讀取資料欄位順序。",
-      "代入模型。",
-      "比較 26=26。"
+      "依欄位順序讀出 x=4、y=18。",
+      "代入模型，計算 2×4+18=26。",
+      "核對左右相等，判定紀錄成立。"
     ],
     "optionAnalysis": [
       {
@@ -833,7 +885,7 @@ export const QUESTIONS = [
         "reason": "題幹已明示 (時間,溫度)。"
       }
     ],
-    "misconceptionTarget": "忽略題幹自訂分量順序",
+    "misconceptionTarget": "忽略資料欄位定義而交換時間與溫度，導致代入位置顛倒。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "模型中的數值按題目已標準化，無跨單位相加疑義。",
@@ -846,7 +898,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "24fabf4739d62d4f555166743887076f4abfe69e0cb8521caf6fe78efe39ed8d"
+    "contentSha256": "c627f0f7d19d7e94304416c633326d7acdc10d48aebb9d84679767f8fc722f34"
   },
   {
     "questionId": "u04-s002-v011",
@@ -869,11 +921,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "20×200+30×120=4000+3600=7600。",
-    "explanation": "逐列依票種順序計算總額。",
+    "explanation": "表格第一欄是成人票 x，第二欄是學生票 y。將 (20,30) 代入，收入為 200×20+120×30=4000+3600=7600，恰與總額相同，所以這一列通過檢驗。兩項票款的單位都是元，才能直接相加比較總額。",
     "steps": [
-      "確認第一欄是成人票。",
-      "分別乘票價。",
-      "加總比較 7600。"
+      "由 (20,30) 指定成人票 x=20、學生票 y=30。",
+      "分別算票款 4000 元與 3600 元。",
+      "相加得 7600 元，確認符合方程式。"
     ],
     "optionAnalysis": [
       {
@@ -897,7 +949,7 @@ export const QUESTIONS = [
         "reason": "總額 8000 元。"
       }
     ],
-    "misconceptionTarget": "交換票種欄位",
+    "misconceptionTarget": "只把票數相加，或將成人與學生的票價配到錯誤欄位。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "張×元/張=元，總額單位一致。",
@@ -910,7 +962,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "3cee7b5363c5c27ce5ab4d58e3ebcb596b8a22e97b9d030722166badc0d22389"
+    "contentSha256": "78d40fa32d2d0f1ac7f287851621f4a76c122096f1db13294b4f43b8da060da2"
   },
   {
     "questionId": "u04-s002-v012",
@@ -933,11 +985,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "3×5-2y=1，15-2y=1，y=7。",
-    "explanation": "由模型與已知輸入值反求第二欄。",
+    "explanation": "輸入值是第一分量，所以令 x=5。代入 3x-2y=1 得 15-2y=1，兩邊同減十五為 -2y=-14，再除以負二得到 y=7；修正值應為七。代回可驗得 15-14=1，符合機器校正規則。",
     "steps": [
-      "代入輸入 x=5。",
-      "解 15-2y=1。",
-      "得到 y=7。"
+      "依資料順序將輸入五代入 x。",
+      "由 15-2y=1 整理成 -2y=-14。",
+      "兩邊同除以 -2，求得修正值 y=7。"
     ],
     "optionAnalysis": [
       {
@@ -961,7 +1013,7 @@ export const QUESTIONS = [
         "reason": "15+14=29。"
       }
     ],
-    "misconceptionTarget": "把修正值符號或係數處理錯",
+    "misconceptionTarget": "把輸入值代入第二分量，或在解 -2y=-14 時漏掉兩個負號。",
     "prerequisiteCheck": "只需先備 system-two-variable-equation-definition，並使用本技能「有序數對與解的判斷」。",
     "estimatedTimeSec": 90,
     "unitCheck": "無單位或題幹單位一致",
@@ -974,7 +1026,7 @@ export const QUESTIONS = [
     "drawingSpecId": null,
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c40be177f135b27f602f51e89153d156044ed3f826a5f6e8b8e83f43ee795473"
+    "contentSha256": "9b23695eb33205985893b712c96123cc1126e3d014da76ea22d69999e3e05801"
   }
 ];
 
@@ -993,16 +1045,17 @@ export const CONSTRUCTED_RESPONSES = [
       "分別比較左邊與 7。"
     ],
     "standardSolution": [
-      "(5,1)：10-3=7，是。",
-      "(2,-1)：4-3(-1)=7，是。",
-      "(-1,-3)：-2-3(-3)=7，是。"
+      "代入 (5,1)：2×5-3×1=10-3=7，等於右邊，所以 (5,1) 是方程式的一組解。",
+      "代入 (2,-1)：2×2-3×(-1)=4+3=7，等於右邊，所以 (2,-1) 也是一組解。",
+      "代入 (-1,-3)：2×(-1)-3×(-3)=-2+9=7，仍與右邊相等，所以三組有序數對全都是解。"
     ],
     "alternativeMethods": [
       "可先整理 y=(2x-7)/3，再檢查每組 y 是否對應。"
     ],
     "reasoningSteps": [
-      "保留負數括號。",
-      "逐組計算。"
+      "依有序數對順序，把第一分量代入 x、第二分量代入 y。",
+      "負數一律以括號代入，逐組計算方程式左邊的確切數值。",
+      "把每一個左邊結果與右邊七比較，分別記錄是否成立。"
     ],
     "rubric": [
       {
@@ -1040,7 +1093,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "c8d67f89af52427db6e618628ebd075ab617cf49a0f9c9f74bb387f0e59a635f"
+    "contentSha256": "347fecd3d6bfafa1755fbb1c4004ca8094dcbd34224fbeb1b9b4077d237e9ae8",
+    "commonErrors": [
+      "交換 x、y 的分量位置，使原本成立的數對被錯誤判成不成立。",
+      "計算減去負數時漏掉負負得正，特別是第二、三組的代入。",
+      "只檢驗第一組就把結論套用到其餘數對，沒有逐組實際計算。"
+    ]
   },
   {
     "questionId": "u04-s002-cr002",
@@ -1056,18 +1114,17 @@ export const CONSTRUCTED_RESPONSES = [
       "最終給 a、b、a+b。"
     ],
     "standardSolution": [
-      "(a,2)：a+4=7，所以 a=3。",
-      "(1,b)：1+2b=7，所以 b=3。",
-      "a+b=6。",
-      "第一分量對應 x，第二分量對應 y。"
+      "(a,2) 的第一分量對應 x、第二分量對應 y，代入 x+2y=7 得 a+2×2=7，所以 a=3。",
+      "(1,b) 代入同一方程式得 1+2b=7，故 2b=6，求得 b=3。",
+      "因此 a+b=3+3=6；兩個數對雖都含未知字母，仍須按第一分量為 x、第二分量為 y 的固定順序代入。"
     ],
     "alternativeMethods": [
       "可由 y=(7-x)/2 分別代入 x=a 與 x=1。"
     ],
     "reasoningSteps": [
-      "按順序解釋每組。",
-      "各解一個一元式。",
-      "合併結果。"
+      "先將 (a,2) 依序代入並解出第一分量 a。",
+      "再將 (1,b) 依序代入，獨立解出第二分量 b。",
+      "計算指定的 a+b，最後回到兩個原數對核對分量順序。"
     ],
     "rubric": [
       {
@@ -1105,7 +1162,12 @@ export const CONSTRUCTED_RESPONSES = [
     },
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_GLOBAL_INTEGRATION",
-    "contentSha256": "a0ba8cc0ce4eb5ac25229f28a42d048da03fc81f6bb3138cfad3f1600b4eb54b"
+    "contentSha256": "1e94cb40fcec1cf21f0f1fb0ed33ed67dd33680891fdc2c221f580141c86cde9",
+    "commonErrors": [
+      "把 (a,2) 讀成 x=2、y=a，造成 a 的方程式完全顛倒。",
+      "代入 (1,b) 時漏掉 y 的係數二，誤寫成一加 b 等於七。",
+      "只求得 a 或 b 便停止，沒有完成題目要求的 a+b。"
+    ]
   }
 ];
 

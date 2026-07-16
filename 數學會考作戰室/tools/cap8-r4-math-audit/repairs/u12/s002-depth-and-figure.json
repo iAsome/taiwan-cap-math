@@ -1,0 +1,54 @@
+{
+  "schemaVersion":"cap8-r4-math-authoring-ledger-r1",
+  "unitId":"u12",
+  "batch":"013-u12-complete",
+  "skills":["s002"],
+  "mc":[
+    {"questionId":"u12-s002-v001","expectedContentSha256":"574cde95cfc1d572580baadb1c1cf904cd45b74756ebdd564db244e9f1009ade","appendText":{"explanation":"兩項分別是未知數的平方與五的平方，而且中間是減號，符合平方差；寫成一正一負的兩因式後，交叉項正五倍未知數與負五倍未知數相消，只留下原來兩項。","misconceptionTarget":"平方差的兩個一次因式必須一正一負，不能寫成同一個差式平方。"}},
+    {"questionId":"u12-s002-v002","expectedContentSha256":"3bc68b006140f0db13462ec11716c51ec9aa0ccddee09add63d2f2961e587494","appendText":{"explanation":"首項與末項的平方根是未知數與五，兩倍乘積正好為十倍未知數，且中間項為正；因此括號取加號並平方，展開會得到首項、兩個交叉項與末項完全一致。"}},
+    {"questionId":"u12-s002-v003","expectedContentSha256":"114fbeeeccd24a4cf4e607c7fd21b1665fc56df3a98a22d475e188774a617d1f","appendText":{"explanation":"九倍平方項的平方根是三倍未知數，十六的平方根是四；兩平方相減應寫成三倍未知數加四與三倍未知數減四相乘，展開時交叉項抵消。"}},
+    {"questionId":"u12-s002-v004","expectedContentSha256":"dcbb774224ba83c3b0a289a7e87f8c36c7127cc7797d91097ae778b29d0bcb6e","appendText":{"explanation":"四倍平方項與九的平方根分別為二倍未知數及三，中間項恰等於負的兩倍乘積；所以括號使用減號並重複相乘，展開時兩個負交叉項合成負十二倍未知數。","misconceptionTarget":"差的平方含有負兩倍乘積中間項，不能與沒有一次項的平方差混為一談。"}},
+    {"questionId":"u12-s002-v005","expectedContentSha256":"c1598e01ac3866835c968c5a93f5162e39332d295df52342846aa3bb0a0a2828","appendText":{"explanation":"首末項平方根是五倍甲與二倍乙，兩倍乘積為二十甲乙，正好等於正的中間項；因此兩個量在括號內取加號，整個二項式平方後三項逐一吻合。","misconceptionTarget":"取平方根時係數也要開平方，且兩個變數都必須保留在對應項中。"}},
+    {"questionId":"u12-s002-v006","expectedContentSha256":"2e51e1d06eb95e9a6a1463a53f1922dd9725e5829af7f9949f6fe55154b29570","appendText":{"explanation":"四十九甲平方是七甲的平方，而乙平方的平方根因式是乙；平方差寫成七甲加乙與七甲減乙，展開時正負七甲乙互相抵消，末項留下負乙平方。","misconceptionTarget":"辨認平方單項式時要取實際因式乙，不能把原來的乙平方再次放入括號。"}},
+    {"questionId":"u12-s002-v007","expectedContentSha256":"516c6de955e93ad32636572a6a72ac237103cdda2b5b4a779ebd23704196497d","appendText":{"explanation":"原式兩項先共同提出二，括號內成為未知數平方減九；這仍是三的平方差，必須繼續分成未知數加三與未知數減三，最後保留外層二並展開回查。"}},
+    {"questionId":"u12-s002-v008","expectedContentSha256":"921dad1606d40cfe46e27b268c286cdc6eede7d93dc264e0342b6d1148e64322","appendText":{"explanation":"平方差公式的核心條件是兩個平方量相減；未知數平方加九雖然兩項都是平方，卻是相加，不能在本題限定的整數係數範圍套用，另外三式都可寫成一正一負因式。","misconceptionTarget":"公式適用與否不只看兩項是否為平方，還必須核對中間的運算符號是減號。"}},
+    {"questionId":"u12-s002-v009","expectedContentSha256":"14125ec29bc2fd454fb0f54b43cdd6744567f4d7712b5e8986d4fc646e4ccf1b","appendText":{"explanation":"首項與末項已是甲、乙的平方，中間項為負的兩倍甲乙，所以是甲減乙的平方；把差式乘自己會得到兩個負交叉項，合計正好是負二甲乙。","misconceptionTarget":"中間項中的係數二來自兩個交叉項相加，不應直接放進括號成為二倍乙。"}},
+    {"questionId":"u12-s002-v010","expectedContentSha256":"b80916f2e49b95ef6bdc692dc9a90a3937408313d36677363e8e0df72fb934cc","appendText":{"explanation":"鋪面面積是外正方形面積減去邊長六的內正方形面積，因此為兩平方之差；分解後兩因式分別是邊長和與邊長差，乘積單位仍為平方公尺，且題設保證差為正。"}},
+    {"questionId":"u12-s002-v011","expectedContentSha256":"c96fa6d0b86e340ae27901c60c464878a6ad8a4600eaa1160379b2bb3a53a5bf","appendText":{"explanation":"面積式首末平方根為未知數與四，正的中間項等於兩倍乘積八倍未知數；所以兩個相同因式都是未知數加四，這也直接符合正方形長與寬相等的幾何條件。"}},
+    {"questionId":"u12-s002-v012","expectedContentSha256":"a1bf98fb05306959eefe3d4198adf34a43968e2797acbf00b2f7a64851608a7f","appendText":{"explanation":"兩個大平方相減可改成底數和乘底數差，和是一百九十六、差是四，相乘得七百八十四；再直接計算九十六平方並由一萬扣除，可得到同值完成獨立驗算。","misconceptionTarget":"平方差等於底數和乘底數差，不能只計算底數差後再把它平方。"}}
+  ],
+  "constructedResponse":[
+    {"questionId":"u12-s002-cr001","expectedContentSha256":"ce4a3f38999674c4e9d3ff599abf544f5c264b66d91bd54c84622b22a85ad3a5","appendArray":{"fullCreditSolution":["先提出十二與七十五的最大公因數三，得到三乘四倍未知數平方減二十五；括號內是二倍未知數的平方減五的平方，再分成一正一負兩因式。把三乘兩因式展開，交叉項抵消並恢復十二倍平方項與負七十五。"],"commonErrors":["只看到四倍未知數平方與二十五是平方差，分解後卻遺漏最外層共同因數三。"]}},
+    {"questionId":"u12-s002-cr002","expectedContentSha256":"a7ddb636c730c7f185c77debdf0720c8f2c2f19c96a644f44249b26e3da1bf64","appendArray":{"fullCreditSolution":["九甲平方與十六乙平方的平方根分別為三甲、四乙；負的兩倍乘積為負二十四甲乙，正好等於中間項，所以三項式是三甲減四乙的平方。展開同一差式兩次，首項、兩個交叉項與末項皆能回到原式。"]}}
+  ],
+  "lectures":[
+    {"lectureId":"u12-s002-lecture-r1","expectedContentSha256":"f83e588b58fa16b0a9949e4978f5455b684cca6b8e96cf1a44ca160282ecb2c9","set":{"workedExamples":[
+      {"exampleId":"L1","prompt":"x²-49","solutionSteps":["x² 與 49=7²。","兩平方相減。"],"answer":"(x+7)(x-7)","why":"未知數平方與七的平方以減號連接，正好符合平方差；一正一負兩因式相乘時，正七倍未知數與負七倍未知數抵消，只留下未知數平方減四十九。"},
+      {"exampleId":"L2","prompt":"4y²+12y+9","solutionSteps":["首項根為 2y，末項根為 3。","2·2y·3=12y，符號為正。"],"answer":"(2y+3)²","why":"首末項平方根是二倍未知數與三，兩倍乘積恰為正十二倍未知數；因此括號取加號並平方，展開後首項、中間項與末項都逐一吻合。"},
+      {"exampleId":"L3","prompt":"25m²-20mn+4n²","solutionSteps":["首末平方根為 5m、2n。","中間項 -2·5m·2n=-20mn。"],"answer":"(5m-2n)²","why":"首末平方根五甲與二乙的兩倍乘積是二十甲乙，而原中間項為負，所以使用差式平方；兩個負交叉項合計負二十甲乙，符號與係數都正確。"},
+      {"exampleId":"L4","prompt":"3a²-75","solutionSteps":["先提出 3 得 a²-25。","再用平方差。"],"answer":"3(a+5)(a-5)","why":"三是兩項的共同因數，若直接只看平方差容易遺漏外層；先提出三後，括號內才是甲平方減五平方，再分成和與差並保留最外層三。"}
+    ]},"appendArray":{"conceptNarrative":["公式法不是看外形便套用，而要逐項驗證結構。兩項式只有在兩項都是平方且以減號連接時，才能寫成和乘差；三項式則需先找首末項平方根，再確認中間項恰為正或負的兩倍乘積，符號決定括號中的加減。若原式另有公因式，必須先提出再檢查公式，最後把結果完整展開，確認外層因式、交叉項與各項符號都沒有遺漏。"]}}
+  ],
+  "drawingSpecs":[
+    {"figureId":"u12-fig-square-frame","expectedContentSha256":"105467a868ebcd4620995b73cfb7487f656e3678b4a65b1cb63ef81b1b78f9ed","set":{"drawingSpec":{"canvas":{"width":640,"height":420,"units":"px"},"viewBox":"0 0 640 420","layout":"outer square at (110,50) with side 300; inner centered square at (200,140) with side 120","coordinates":{"outer":[110,50,300,300],"inner":[200,140,120,120],"dimensionY":375},"labels":[{"text":"A","position":[250,405]},{"text":"B","position":[250,205]},{"text":"面積差 A²-B²","position":[435,210]}],"fill":"outer difference region uses 45-degree hatch; inner region white","lines":{"boundaries":"4px","dimension":"2px"},"units":"generic length symbols A and B","scale":"not to scale","notToScale":true,"visualInferenceWarning":"內外邊長與框寬不可由圖面比例估計。","hiddenLines":"none","accessibility":"pattern is supplemented by text label, not color-dependent"},"figureReview":{"decision":"pass","reviewNote":"人工檢視確認外框與內框皆為真正正方形，斜線區和中央挖空區可分辨，A、B 標籤不重疊；黑白列印與手機縮放仍清楚，且圖形只呈現已知面積差結構，未標出分解答案。","reviewedAt":"2026-07-12"}}}
+  ],
+  "textFiles":[
+    {"path":"figures/u12/u12-fig-square-frame.svg","replacements":[
+      {"from":"<rect x=\"110\" y=\"50\" width=\"360\" height=\"300\"","to":"<rect x=\"110\" y=\"50\" width=\"300\" height=\"300\""},
+      {"from":"<rect x=\"225\" y=\"140\" width=\"130\" height=\"120\"","to":"<rect x=\"200\" y=\"140\" width=\"120\" height=\"120\""},
+      {"from":"<line x1=\"110\" y1=\"375\" x2=\"470\" y2=\"375\"","to":"<line x1=\"110\" y1=\"375\" x2=\"410\" y2=\"375\""},
+      {"from":"<line x1=\"470\" y1=\"365\" x2=\"470\" y2=\"385\"","to":"<line x1=\"410\" y1=\"365\" x2=\"410\" y2=\"385\""},
+      {"from":"<text x=\"282\" y=\"405\"","to":"<text x=\"250\" y=\"405\""},
+      {"from":"<text x=\"274\" y=\"205\"","to":"<text x=\"250\" y=\"205\""},
+      {"from":"<text x=\"485\" y=\"210\"","to":"<text x=\"435\" y=\"210\""}
+    ]},
+    {"path":"review/figure-reviews.jsonl","replacements":[
+      {"from":"\"layout\":\"outer square-like rectangle at (110,50), inner centered rectangle at (225,140)\",\"coordinates\":{\"outer\":[110,50,360,300],\"inner\":[225,140,130,120],\"dimensionY\":375}","to":"\"layout\":\"outer square at (110,50) with side 300; inner centered square at (200,140) with side 120\",\"coordinates\":{\"outer\":[110,50,300,300],\"inner\":[200,140,120,120],\"dimensionY\":375}"},
+      {"from":"\"text\":\"A\",\"position\":[282,405]","to":"\"text\":\"A\",\"position\":[250,405]"},
+      {"from":"\"text\":\"B\",\"position\":[274,205]","to":"\"text\":\"B\",\"position\":[250,205]"},
+      {"from":"\"text\":\"面積差 A²-B²\",\"position\":[485,210]","to":"\"text\":\"面積差 A²-B²\",\"position\":[435,210]"},
+      {"from":"\"contentSha256\":\"105467a868ebcd4620995b73cfb7487f656e3678b4a65b1cb63ef81b1b78f9ed\"","to":"\"contentSha256\":\"380eb381a031b64f8abcd2a89335a6c7b26cd097519b119258f1e8f2c6042094\""},
+      {"from":"\"reviewNote\":\"人工檢視確認斜線區與中央挖空區可分辨，A、B 標籤不重疊；圖形只支援 A²-B² 的結構，未暗示 A±B 的答案位置。\"","to":"\"reviewNote\":\"人工檢視確認外框與內框皆為真正正方形，斜線區和中央挖空區可分辨，A、B 標籤不重疊；黑白列印與手機縮放仍清楚，且圖形只呈現已知面積差結構，未標出分解答案。\""}
+    ]}
+  ]
+}

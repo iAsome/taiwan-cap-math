@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "unitId": "u10",
+  "batches": [
+    {
+      "status": "PASS",
+      "batch": "011-u10-complete",
+      "stagingSyncEmitter": null,
+      "source": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"pass\": true,\n  \"packageId\": \"math-v2-human-content-batch-011-u10-complete\",\n  \"unitId\": \"u10\",\n  \"counts\": {\n    \"skills\": 13,\n    \"lectures\": 13,\n    \"mcQuestions\": 156,\n    \"constructedResponses\": 26,\n    \"semanticReviews\": 156,\n    \"figures\": 4,\n    \"difficulty\": {\n      \"basic\": 39,\n      \"standard\": 39,\n      \"advanced\": 39,\n      \"literacy\": 39\n    },\n    \"answerIndices\": [\n      39,\n      39,\n      39,\n      39\n    ]\n  },\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 14,\n  \"legacyIsolation\": {\n    \"legacyContentImported\": false,\n    \"legacySemanticEvidenceAccepted\": false,\n    \"oldProductionRuntimeModified\": false,\n    \"deleteLegacyNow\": false,\n    \"finalRetirementRequired\": true,\n    \"productionActivationAllowed\": false,\n    \"legacySourceUsedAsInspiration\": false,\n    \"contentAuthority\": \"CHATGPT_HUMAN_AUTHORED_R1\",\n    \"statement\": \"舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。\"\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n",
+        "stderr": "",
+        "parsed": {
+          "pass": true,
+          "packageId": "math-v2-human-content-batch-011-u10-complete",
+          "unitId": "u10",
+          "counts": {
+            "skills": 13,
+            "lectures": 13,
+            "mcQuestions": 156,
+            "constructedResponses": 26,
+            "semanticReviews": 156,
+            "figures": 4,
+            "difficulty": {
+              "basic": 39,
+              "standard": 39,
+              "advanced": 39,
+              "literacy": 39
+            },
+            "answerIndices": [
+              39,
+              39,
+              39,
+              39
+            ]
+          },
+          "stagingPresent": true,
+          "emittedModuleCount": 14,
+          "legacyIsolation": {
+            "legacyContentImported": false,
+            "legacySemanticEvidenceAccepted": false,
+            "oldProductionRuntimeModified": false,
+            "deleteLegacyNow": false,
+            "finalRetirementRequired": true,
+            "productionActivationAllowed": false,
+            "legacySourceUsedAsInspiration": false,
+            "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+            "statement": "舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。"
+          },
+          "errors": [],
+          "warnings": []
+        }
+      },
+      "emitter": {
+        "command": "node importer/emit-unit-modules.mjs",
+        "exitCode": 0,
+        "stdout": "SKIP_EXISTING_VERIFIED_STAGING",
+        "stderr": "",
+        "parsed": {
+          "skipped": true
+        }
+      },
+      "emitted": {
+        "command": "node importer/verify-bundle.mjs",
+        "exitCode": 0,
+        "stdout": "{\n  \"pass\": true,\n  \"packageId\": \"math-v2-human-content-batch-011-u10-complete\",\n  \"unitId\": \"u10\",\n  \"counts\": {\n    \"skills\": 13,\n    \"lectures\": 13,\n    \"mcQuestions\": 156,\n    \"constructedResponses\": 26,\n    \"semanticReviews\": 156,\n    \"figures\": 4,\n    \"difficulty\": {\n      \"basic\": 39,\n      \"standard\": 39,\n      \"advanced\": 39,\n      \"literacy\": 39\n    },\n    \"answerIndices\": [\n      39,\n      39,\n      39,\n      39\n    ]\n  },\n  \"stagingPresent\": true,\n  \"emittedModuleCount\": 14,\n  \"legacyIsolation\": {\n    \"legacyContentImported\": false,\n    \"legacySemanticEvidenceAccepted\": false,\n    \"oldProductionRuntimeModified\": false,\n    \"deleteLegacyNow\": false,\n    \"finalRetirementRequired\": true,\n    \"productionActivationAllowed\": false,\n    \"legacySourceUsedAsInspiration\": false,\n    \"contentAuthority\": \"CHATGPT_HUMAN_AUTHORED_R1\",\n    \"statement\": \"舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。\"\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n",
+        "stderr": "",
+        "parsed": {
+          "pass": true,
+          "packageId": "math-v2-human-content-batch-011-u10-complete",
+          "unitId": "u10",
+          "counts": {
+            "skills": 13,
+            "lectures": 13,
+            "mcQuestions": 156,
+            "constructedResponses": 26,
+            "semanticReviews": 156,
+            "figures": 4,
+            "difficulty": {
+              "basic": 39,
+              "standard": 39,
+              "advanced": 39,
+              "literacy": 39
+            },
+            "answerIndices": [
+              39,
+              39,
+              39,
+              39
+            ]
+          },
+          "stagingPresent": true,
+          "emittedModuleCount": 14,
+          "legacyIsolation": {
+            "legacyContentImported": false,
+            "legacySemanticEvidenceAccepted": false,
+            "oldProductionRuntimeModified": false,
+            "deleteLegacyNow": false,
+            "finalRetirementRequired": true,
+            "productionActivationAllowed": false,
+            "legacySourceUsedAsInspiration": false,
+            "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+            "statement": "舊 Codex 題庫、講義、審查紀錄、編譯題庫與生成器均未讀取、複製、改寫、修補、挖掘或混入本批次。"
+          },
+          "errors": [],
+          "warnings": []
+        }
+      }
+    }
+  ]
+}

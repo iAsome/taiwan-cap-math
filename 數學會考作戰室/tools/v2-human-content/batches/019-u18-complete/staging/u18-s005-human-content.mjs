@@ -1022,46 +1022,46 @@ export const QUESTIONS = [
     "choices": [
       "一定，因為三槽都加相同水量",
       "一定變成 6:5:4",
-      "不一定，只有原水量的共同倍數與加水量符合特殊情況才可能相同",
+      "不會，固定加上 10 公升後不可能維持原比",
       "一定變成 15:14:13"
     ],
     "answerIndex": 2,
-    "independentSolution": "取 k=10 作反例，原為 50:40:30，加後 60:50:40=6:5:4，不等於 5:4:3，所以不一定。",
-    "explanation": "原水量可寫 5k、4k、3k，加水後為 5k+10、4k+10、3k+10，一般不能約成 5:4:3。",
+    "independentSolution": "設原水量為5k、4k、3k，其中k>0。若加10公升後仍為5:4，則(5k+10):(4k+10)=5:4，交叉相乘20k+40=20k+50，得到40=50矛盾，所以不可能維持原比。",
+    "explanation": "原水量寫成5k、4k、3k，各加10後為5k+10、4k+10、3k+10。只要比較前兩項：若仍為5:4，交叉相乘會得到40=50的矛盾，因此新比絕不可能還是5:4:3。",
     "steps": [
-      "以共同倍數 k 表示原量。",
-      "各加 10。",
-      "比較是否存在同一倍率。"
+      "以5k、4k、3k表示原來三槽水量，且k>0。",
+      "假設各加10公升後仍為5:4，列(5k+10):(4k+10)=5:4。",
+      "交叉相乘得20k+40=20k+50，矛盾，故不可能維持原比。"
     ],
     "optionAnalysis": [
       {
         "choice": "一定，因為三槽都加相同水量",
         "truth": false,
-        "reason": "同加不等於同比例放大。"
+        "reason": "同加10是固定加法，不是把各項乘上同一倍數。"
       },
       {
         "choice": "一定變成 6:5:4",
         "truth": false,
-        "reason": "每份不一定是 10 公升。"
+        "reason": "只有k=10時會得60:50:40=6:5:4，題幹未給定k。"
       },
       {
-        "choice": "不一定，只有原水量的共同倍數與加水量符合特殊情況才可能相同",
+        "choice": "不會，固定加上 10 公升後不可能維持原比",
         "truth": true,
-        "reason": "依獨立推導可得到 不一定，只有原水量的共同倍數與加水量符合特殊情況才可能相同，符合所有已知條件。"
+        "reason": "由(5k+10):(4k+10)=5:4會推得40=50矛盾，可知不可能保持原比。"
       },
       {
         "choice": "一定變成 15:14:13",
         "truth": false,
-        "reason": "原比項不是實際公升數。"
+        "reason": "5、4、3是比的項，不是原來的公升數，不能直接各加10。"
       }
     ],
     "misconceptionTarget": "把相同加量誤當相同乘數。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "各槽加水量同為 10 公升；比例無單位。",
-    "ambiguityAndBoundaryAudit": "『每槽都再加入相同的 10 公升』表示固定加法，不是各增加 10%。",
-    "difficultyReason": "以實際操作反例检驗連比不變條件。",
-    "literacyContextNecessity": "储槽操作是固定加量而非按比例補充，决定新配比是否改變，情境不可刪。",
+    "ambiguityAndBoundaryAudit": "『每槽都再加入相同的 10 公升』是對三個正數量加同一正數，不是各增加10%；代數比較可證明無任何k>0能維持原比。",
+    "difficultyReason": "需把連比寫成5k、4k、3k，再用交叉相乘驗證固定加量不能保持原比。",
+    "literacyContextNecessity": "儲槽操作區分固定加量與按比例補充，直接決定新配比是否改變，情境不可刪。",
     "visualMode": "text-only",
     "figureId": null,
     "drawingSpecReference": null,
@@ -1069,7 +1069,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9ee71ec4d5cd614e3c752dce3dbea2fd050ac64a13ba53f92ec31e348345ed55"
+    "contentSha256": "80f38bc7a15bd86aea3b71163991209d0a36ef182751c102f656b71253de6a3b"
   }
 ];
 
@@ -1543,10 +1543,10 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "continued-ratio-properties",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "9ee71ec4d5cd614e3c752dce3dbea2fd050ac64a13ba53f92ec31e348345ed55",
-    "independentSolution": "取 k=10 作反例，原為 50:40:30，加後 60:50:40=6:5:4，不等於 5:4:3，所以不一定。",
-    "derivedAnswer": "不一定，只有原水量的共同倍數與加水量符合特殊情況才可能相同",
-    "storedAnswer": "不一定，只有原水量的共同倍數與加水量符合特殊情況才可能相同",
+    "contentSha256": "80f38bc7a15bd86aea3b71163991209d0a36ef182751c102f656b71253de6a3b",
+    "independentSolution": "設原水量為5k、4k、3k，其中k>0。若加10公升後仍為5:4，則(5k+10):(4k+10)=5:4，交叉相乘20k+40=20k+50，得到40=50矛盾，所以不可能維持原比。",
+    "derivedAnswer": "不會，固定加上 10 公升後不可能維持原比",
+    "storedAnswer": "不會，固定加上 10 公升後不可能維持原比",
     "answerMatch": true,
     "uniqueCorrectAnswer": true,
     "optionTruth": [
@@ -1556,14 +1556,14 @@ export const SEMANTIC_REVIEWS = [
       false
     ],
     "ambiguityChecks": {
-      "wording": "題幹已限定「求出唯一正確選項。」，必要的方向、順序與資料條件均明示。",
-      "boundary": "『每槽都再加入相同的 10 公升』表示固定加法，不是各增加 10%。",
-      "units": "各槽加水量同為 10 公升；比例無單位。",
-      "scope": "只使用國中會考範圍內的「連比性質」概念，未要求高中延伸。"
+      "wording": "題幹明示原水量比與每槽同加10公升，所求是新比是否仍為5:4:3。",
+      "boundary": "同加10公升是固定加量，不是各增加10%；原水量均為正數。",
+      "units": "三槽水量與加水量都以公升表示，比值本身無單位。",
+      "scope": "只使用國中連比的公共倍數表示與比例性質。"
     },
-    "difficultyReason": "以實際操作反例检驗連比不變條件。",
-    "literacyNecessityReview": "储槽操作是固定加量而非按比例補充，决定新配比是否改變，情境不可刪。",
-    "reviewerNote": "重新由已知條件獨立計算：取 k=10 作反例，原為 50:40:30，加後 60:50:40=6:5:4，不等於 5:4:3，所以不一定。 四個選項逐一核對後，只有「不一定，只有原水量的共同倍數與加水量符合特殊情況才可能相同」符合；主要排除點是「把相同加量誤當相同乘數。」。",
+    "difficultyReason": "需用代數表示連比並驗證固定加量是否保持原比。",
+    "literacyNecessityReview": "儲槽加水情境明確區分固定加量與按比例增加，是判斷的核心。",
+    "reviewerNote": "設原水量為5k、4k、3k。若各加10公升後仍保持前兩項5:4，則(5k+10):(4k+10)=5:4，交叉相乘得20k+40=20k+50，即40=50，不可能。因此唯一正確選項是『不會，固定加上10公升後不可能維持原比』。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }

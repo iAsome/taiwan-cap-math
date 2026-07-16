@@ -39,20 +39,21 @@ export const LECTURE = {
   ],
   "notation": [
     {
-      "symbol": "p^a",
-      "meaning": "質數p連乘a次。"
+      "symbol": "pᵃ",
+      "meaning": "質數 p 連乘 a 次。"
     }
   ],
   "conceptNarrative": [
-    "任何大於1的合數都能持續拆成質數乘積。",
+    "任何大於 1 的合數都能持續拆成質數乘積。",
     "分解路徑可以不同，但質因數及其指數最後相同。",
     "因數樹所有葉節點都要納入乘積，不能只讀一條分支。",
-    "完全平方數的每個質因數指數都是偶數。"
+    "完全平方數的每個質因數指數都是偶數。",
+    "完成分解後應把所有質因數乘回原數，藉此檢查有沒有漏掉分支或抄錯指數。"
   ],
   "formalDefinitions": [
     {
       "name": "質因數分解",
-      "statement": "n>1寫成p₁^a₁p₂^a₂…，各p為不同質數。"
+      "statement": "n>1 寫成 p₁的 a₁ 次方、p₂的 a₂ 次方等項的乘積，各 p 為不同質數。"
     },
     {
       "name": "標準排列",
@@ -61,12 +62,12 @@ export const LECTURE = {
   ],
   "formulas": [
     {
-      "formula": "n=p₁^a₁p₂^a₂…",
+      "formula": "n＝p₁ᵃ¹×p₂ᵃ²×…",
       "conditions": [
-        "n為大於1的正整數",
-        "各p為質數"
+        "n 為大於 1 的正整數",
+        "各 p 為質數"
       ],
-      "meaning": "標準質因數分解。"
+      "meaning": "標準質因數分解，a₁、a₂ 依序為各質因數的指數。"
     }
   ],
   "nonApplicableCases": [
@@ -104,40 +105,44 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
       "prompt": "分解 90。",
       "solutionSteps": [
-        "90=2×45。",
-        "45=3²×5。"
+        "90 是偶數，先取出質因數 2，得 90=2×45。",
+        "再分解 45=3×15=3×3×5。",
+        "合併相同質因數得 90=2×3²×5，並以 2×9×5=90 驗算。"
       ],
-      "answer": "2×3²×5。"
+      "answer": "90=2×3²×5。",
+      "why": "先取出 2 得 45，再把 45 分解為 3×15=3²×5。最後 2、3、5 都是質數，且乘回 2×9×5=90，確認分解完整。這次乘回也能檢查指數與質因數沒有遺漏。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "由因數樹 72→8×9。",
+      "prompt": "由因數樹 72→8×9 完成質因數分解。",
       "solutionSteps": [
-        "8=2³。",
-        "9=3²。"
+        "沿第一支分解 8=2×4=2×2×2=2³。",
+        "沿第二支分解 9=3×3=3²。",
+        "收集兩支的質因數得 72=2³×3²，乘回 8×9=72 完成驗算。"
       ],
-      "answer": "72=2³×3²。"
+      "answer": "72=2³×3²。",
+      "why": "因數樹兩支都要繼續拆解：8=2×2×2=2³，9=3×3=3²。收集全部葉節點後得到 2³×3²，乘回為 72。若只處理其中一支，就會漏掉另一支的質因數。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "還原 2⁴×3×5。",
+      "prompt": "把 2⁴×3×5 還原成一般整數。",
       "solutionSteps": [
-        "2⁴=16。",
-        "16×3×5=240。"
+        "先依次方定義計算 2⁴=2×2×2×2=16。",
+        "再依序相乘，16×3=48。",
+        "最後計算 48×5=240。"
       ],
-      "answer": "240。"
+      "answer": "240。",
+      "why": "先依次方定義算 2⁴=16，再依序乘 16×3×5=48×5=240。指數表示底數重複相乘四次，不能算成 2×4，這是還原次方形式的關鍵，最後才把各質因數乘起來。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "使 18 乘最小整數成完全平方。",
+      "prompt": "使 18 乘最小正整數成為完全平方數。",
       "solutionSteps": [
-        "18=2×3²。",
-        "補一個2得2²×3²。"
+        "先做質因數分解：18=2¹×3²。",
+        "完全平方數的各質因數指數須為偶數；3 的指數 2 已符合，2 的指數 1 還缺一個 2。",
+        "補乘 2 後得 18×2=2²×3²=36，因此最小正整數是 2。"
       ],
-      "answer": "乘2。"
+      "answer": "乘 2。",
+      "why": "18=2×3²，質因數 3 的指數 2 已是偶數，只有質因數 2 的指數 1 為奇數。補乘一個 2 後得 2²×3²=36，是完全平方數，且補的質因數個數最少。"
     }
   ],
   "commonMistakes": [
@@ -223,7 +228,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "ed48ed59fbc6543131b8fdbf3a415a0f573441db41d5e4dba18c9d2c07fa2674",
+  "contentSha256": "da0f8b6b36c4047413b708354d65dd9e6984c20e82e4efa8bf02ba8ff665e94c",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -247,10 +252,11 @@ export const QUESTIONS = [
       "2³×3×5"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：60=2×30=2×2×15=2²×3×5；所有因數皆為質數。所以答案是「2²×3×5」。",
+    "explanation": "持續分解 60=2×30=2×2×15=2²×3×5，最後的 2、3、5 都是質數，乘回也得到 60。其他選項含 10、4、15 等合數，或乘積變成 120，並非正確質因數分解，所以只有這一式符合。",
     "steps": [
-      "60=2×30=2×2×15=2²×3×5",
-      "所有因數皆為質數"
+      "先連續用質數 2 除 60，得到兩個因數 2。",
+      "再把 15 分解為 3×5，合併成 2²×3×5。",
+      "確認所有因數為質數並乘回驗算 60。"
     ],
     "optionAnalysis": [
       {
@@ -289,7 +295,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "63d72673e882fb878ab3736dc7d779695a1ccb38a3f38be404cace55e243105a",
+    "contentSha256": "d573e5db4ff6edf97ad0fac491a41bc003c678a38d00b3cb98d2529e8c755160",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -311,10 +317,11 @@ export const QUESTIONS = [
       "4"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：84=2×42=2²×21=2²×3×7；因此 2 的指數為 2。所以答案是「2」。",
+    "explanation": "84=2×42，再把 42 分成 2×21，得到 84=2²×3×7。質因數 2 共出現兩次，所以它的指數為 2；指數記錄重複次數，不是把底數 2 直接當答案的理由，這裡兩者剛好同值。",
     "steps": [
-      "84=2×42=2²×21=2²×3×7",
-      "因此 2 的指數為 2"
+      "連續將 84 除以 2，得到 2×2×21。",
+      "把 21 分解成 3×7，寫成 2²×3×7。",
+      "數出質因數 2 出現兩次，指數為 2。"
     ],
     "optionAnalysis": [
       {
@@ -338,7 +345,7 @@ export const QUESTIONS = [
         "reason": "2⁴ 不整除 84。"
       }
     ],
-    "commonMistake": "把質因數 2 本身誤當成指數。",
+    "commonMistake": "直接把質因數二本身當作指數，沒有從分解式數出它出現兩次。",
     "concept": "指數表示相同質因數重複相乘的次數。",
     "tags": [
       "數與量",
@@ -353,7 +360,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0376573401d4d62a343a076efe32fbf2bed6ea95f6cba32bbdf6aa14b047b443",
+    "contentSha256": "5d4b2652cf3ae4cc29752a789404ab4b3166d26d4f50ad8202be53c79abdcf80",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -375,10 +382,11 @@ export const QUESTIONS = [
       "126=3×42"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：126÷2=63，63=3²×7；所以 126=2×3²×7。所以答案是「126=2×3²×7」。",
+    "explanation": "126÷2=63，而 63=3×21=3²×7，所以完整分解為 126=2×3²×7，且 2、3、7 全是質數。6×21、2×63、3×42 雖乘積正確，仍含合數，不能稱為質因數分解，還必須繼續分解到質數為止，才符合題目所求的形式。",
     "steps": [
-      "126÷2=63，63=3²×7",
-      "所以 126=2×3²×7"
+      "先取出質因數 2，得到商 63。",
+      "將 63 繼續分解為 3²×7。",
+      "確認只剩質數後寫成 2×3²×7。"
     ],
     "optionAnalysis": [
       {
@@ -402,7 +410,7 @@ export const QUESTIONS = [
         "reason": "42 不是質數。"
       }
     ],
-    "commonMistake": "分解到合數就停止。",
+    "commonMistake": "看到乘積已等於一百二十六就停止，未把合數因數繼續拆成質數。",
     "concept": "必須持續分解直到所有因數都是質數。",
     "tags": [
       "數與量",
@@ -417,7 +425,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "5bf5f212982ff78bd3bc5f0d56bfc4114fdbb6e4735048afc7c88648a7316b6b",
+    "contentSha256": "0514123a42ed1149b9b7392a0f19fc1bf71942627346ac35a22a5d58ed9967c0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -439,10 +447,11 @@ export const QUESTIONS = [
       "72"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：2³=8，3²=9；8×9=72。所以答案是「72」。",
+    "explanation": "先分別計算次方：2³=2×2×2=8，3²=3×3=9，再相乘 8×9=72。指數表示同底數重複相乘，不能把底數或指數直接相加，因此答案為 72，乘法次序不會改變結果。",
     "steps": [
-      "2³=8，3²=9",
-      "8×9=72"
+      "把 2³ 展開並算得 8。",
+      "把 3² 展開並算得 9。",
+      "計算 8×9=72，對應第四個選項。"
     ],
     "optionAnalysis": [
       {
@@ -466,7 +475,7 @@ export const QUESTIONS = [
         "reason": "72=2³×3²。"
       }
     ],
-    "commonMistake": "把指數相加或把底數相加。",
+    "commonMistake": "把底數二、三或指數三、二直接相加，沒有按次方定義重複相乘。",
     "concept": "由質因數分解還原原數要計算各次方後相乘。",
     "tags": [
       "數與量",
@@ -481,7 +490,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "ad95a01352c5171b175ba0e1343268b066ba5826e280931f525503280b8257c7",
+    "contentSha256": "10f109dac54885ab7c004383a122e3a7c6158debd49f3cafc6c41284ca225672",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -503,10 +512,11 @@ export const QUESTIONS = [
       "7"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：360=36×10=(2²×3²)×(2×5)=2³×3²×5；a+b=3+2=5。所以答案是「5」。",
+    "explanation": "將 360 拆成 36×10=(2²×3²)×(2×5)=2³×3²×5，因此 a=3、b=2。題目問 a+b，所以 3+2=5；要讀的是指數，不是把質因數底數相加。回代後可驗得原數 360，所以兩個指數的數值無誤且總和為 5。",
     "steps": [
-      "360=36×10=(2²×3²)×(2×5)=2³×3²×5",
-      "a+b=3+2=5"
+      "把 360 分解為 2³×3²×5。",
+      "對照題式讀出 a=3、b=2。",
+      "計算 a+b=3+2=5。"
     ],
     "optionAnalysis": [
       {
@@ -545,7 +555,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "14b5fab407d4a4b0b18bc58c394ebb2f2a2a143fb4ba7450cbb4ad602bc57810",
+    "contentSha256": "6654e271cbae9ad57784bc357319bbb99a815e7926d632d1efe9f4e451f67f21",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -567,10 +577,11 @@ export const QUESTIONS = [
       "2³×3²×5"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：葉節點依序為 2、3、3、2、5；整理得 2²×3²×5。所以答案是「2²×3²×5」。",
+    "explanation": "因數樹的全部葉節點為 2、3、3、2、5，不能只讀其中一條分支。整理相同質因數後有兩個 2、兩個 3、一個 5，故 180=2²×3²×5；乘回可驗得 180，每個葉節點也都是質數。",
     "steps": [
-      "葉節點依序為 2、3、3、2、5",
-      "整理得 2²×3²×5"
+      "沿每條分支收集所有質數葉節點。",
+      "將 2、3、3、2、5 合併成 2²×3²×5。",
+      "乘回 4×9×5=180 驗證沒有遺漏。"
     ],
     "optionAnalysis": [
       {
@@ -609,7 +620,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "46dbcdaabb4b1ec561789333331c98f9d5a789d2a36a80a20d0d92fae835ccfe",
+    "contentSha256": "bc3d2ac55cbe12dbcba6ce4e572ce6016a93ddb22a0fe38bc7d7449025b444cd",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -631,10 +642,11 @@ export const QUESTIONS = [
       "8"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：72=2³×3²；只需補一個2，使指數變成2⁴×3²。所以答案是「2」。",
+    "explanation": "72=2³×3²。完全平方數的每個質因數指數都須為偶數；3 的指數 2 已是偶數，2 的指數 3 只差一個 2 就成 4，所以最小 k=2，且 72×2=144=12²，無需再補其他質因數。",
     "steps": [
-      "72=2³×3²",
-      "只需補一個2，使指數變成2⁴×3²"
+      "先把 72 分解成 2³×3²。",
+      "找出唯一奇指數是質因數 2 的指數 3。",
+      "補乘一個 2 得 2⁴×3²，驗算為 144。"
     ],
     "optionAnalysis": [
       {
@@ -673,7 +685,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2c4bbec299187ec2492df730d841ed9195f28755c6fae87a9c31b3af87b3e1b9",
+    "contentSha256": "bb62a5753290ea908569565374895b53a611f214e9a84754373943b853e14097",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -695,10 +707,11 @@ export const QUESTIONS = [
       "5"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：質因數只有 2、3、5；其中最大是 5。所以答案是「5」。",
+    "explanation": "分解式 N=2⁴×3×5² 中的質因數底數只有 2、3、5，指數只表示各質因數重複的次數。比較底數可知最大質因數是 5；4 是合數，也不是分解式中的質因數。",
     "steps": [
-      "質因數只有 2、3、5",
-      "其中最大是 5"
+      "從分解式讀出質因數底數 2、3、5。",
+      "忽略指數大小，直接比較三個質因數。",
+      "確認最大底數為質數 5。"
     ],
     "optionAnalysis": [
       {
@@ -737,7 +750,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "b8ed07a59fcac1ba99c967fee5038ca801f39bb1acc7967b224bf50512e716a4",
+    "contentSha256": "3b6f5e953966890b12970e39e06772d8f3d3cc4308c080119c3331d1426fe290",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -759,10 +772,11 @@ export const QUESTIONS = [
       "2²×3³×5×7"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：相同質因數的指數相加；A×B=2³×3³×5×7。所以答案是「2³×3³×5×7」。",
+    "explanation": "A、B 相乘時，同底數次方的指數相加：質因數 2 的指數為 2+1=3，質因數 3 的指數為 1+2=3；另外保留 5、7，所以 A×B=2³×3³×5×7，不能把不同底數合併，也不能遺漏單獨出現的質因數。",
     "steps": [
-      "相同質因數的指數相加",
-      "A×B=2³×3³×5×7"
+      "把 A、B 中相同的質因數排在一起。",
+      "分別將 2 與 3 的指數相加得 3、3。",
+      "保留只出現一次的 5、7，寫出完整分解式。"
     ],
     "optionAnalysis": [
       {
@@ -801,7 +815,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8872f6a2b22c4f5bf3900b2d06c2120e3b194ae81518d4bcfad517ee21aa44ef",
+    "contentSha256": "fd6d39dc6e512105343d28caef07460eeaed3a9f6f935b6edd0aba3d68847eff",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -823,10 +837,11 @@ export const QUESTIONS = [
       "90 個"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：2³×3²×5=8×9×5；8×45=360。所以答案是「360 個」。",
+    "explanation": "依次方定義，2³=8、3²=9，所以每箱零件數為 8×9×5。先算 9×5=45，再算 8×45=360，因此每箱有 360 個；不能把 2³ 誤算成 2×3，否則整體乘積會錯誤，並得到不同的零件總數。",
     "steps": [
-      "2³×3²×5=8×9×5",
-      "8×45=360"
+      "先計算 2³=8 與 3²=9。",
+      "將分解式改寫為 8×9×5。",
+      "完成乘法得到每箱 360 個零件。"
     ],
     "optionAnalysis": [
       {
@@ -865,7 +880,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "箱標上的質因數次方是實際數量的唯一表示，必須正確還原才能知道每箱零件數。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "72c57cecf121efdcaad87902be4b2f4b5966321d77df74e1a44cf0d40e365ba9",
+    "contentSha256": "1246ba4761f02827604c690542a2ed058615f585dc855d96876fa125b994c61e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -887,10 +902,11 @@ export const QUESTIONS = [
       "36 公分"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：面積=(2³×3)²；邊長=2³×3=24。所以答案是「24 公分」。",
+    "explanation": "正方形面積是邊長平方。將 2⁶×3² 寫成 (2³×3)²，所以邊長為 2³×3=8×3=24 公分；驗算 24²=576，與原面積的質因數分解相同，所以邊長值正確，並已取正邊長而不是負值。",
     "steps": [
-      "面積=(2³×3)²",
-      "邊長=2³×3=24"
+      "將面積各質因數的偶指數除以 2。",
+      "得到邊長的分解式 2³×3。",
+      "計算 8×3=24 並平方驗算。"
     ],
     "optionAnalysis": [
       {
@@ -929,7 +945,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "正方形面積與整數邊長條件使各質因數指數必須對半，情境資料不可省略。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4bd93cc6624185a2e6713b92852f11cc3f41a8c07cdd07dd0351aab4cd7315b7",
+    "contentSha256": "4069d1ee294222a8b805193378e40a3c2fc7556a194a6d6ce07532dad9129685",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -951,10 +967,11 @@ export const QUESTIONS = [
       "12 個"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：總數=16×3×25=1200；1200÷100=12。所以答案是「12 個」。",
+    "explanation": "先還原檔案總數：2⁴×3×5²=16×3×25=1,200。每個資料夾放 100 個，1,200÷100=12，且沒有剩餘，所以最多可裝滿 12 個資料夾，每個容量都完全使用，答案也是整數個資料夾。",
     "steps": [
-      "總數=16×3×25=1200",
-      "1200÷100=12"
+      "計算 2⁴=16、5²=25。",
+      "相乘 16×3×25 得總檔案數 1,200。",
+      "以 1,200÷100 算得 12 個裝滿的資料夾。"
     ],
     "optionAnalysis": [
       {
@@ -993,7 +1010,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "質因數表示、每資料夾容量與求滿資料夾數三項資料共同決定兩步運算。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "281b59ffee1f8b37c65f48b25074d64b3845d486288a520491f334c5b4001e42",
+    "contentSha256": "b06652e287b8c28ca7d3f6c16a3f6683dc8da22658848e9994923af28a64273b",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1015,9 +1032,9 @@ export const CONSTRUCTED_RESPONSES = [
       "乘回420。"
     ],
     "fullCreditSolution": [
-      "方法一：420÷2=210÷2=105÷3=35÷5=7÷7=1。",
-      "方法二：420=42×10=(2×3×7)(2×5)。",
-      "所以420=2²×3×5×7，乘回為420。"
+      "短除法：420÷2=210、210÷2=105、105÷3=35、35÷5=7、7÷7=1，依序取得質因數後，得到 2²×3×5×7。",
+      "因數樹法：420=42×10=(2×3×7)×(2×5)，整理後同樣是 2²×3×5×7，所有葉節點都已是質數。",
+      "乘回驗算 2²×3×5×7=4×3×5×7=420，兩種路徑得到相同且完整的質因數分解。"
     ],
     "alternativeSolutions": [
       "因數樹分支可不同，只要葉節點完整。"
@@ -1044,15 +1061,15 @@ export const CONSTRUCTED_RESPONSES = [
       "質因數次序可不同。"
     ],
     "commonErrors": [
-      "漏掉第二個2。",
-      "把35當質數停止。"
+      "分解時漏掉第二個質因數二，使乘回結果不再等於原數。",
+      "把三十五誤判為質數而停止，沒有再分解成五乘以七。"
     ],
     "independentReview": {
       "derivedResult": "420=2²×3×5×7。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "cbf27c7420e23c839c0951fa4e99a6de324fc8ba7b49f139be14e0290559df3e",
+    "contentSha256": "bafa733c30ee0bd549b95e30eb43904b5058bdbcefc81a09ba4b3647cfb4a8cf",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -1071,9 +1088,9 @@ export const CONSTRUCTED_RESPONSES = [
       "說明最小性。"
     ],
     "fullCreditSolution": [
-      "540=2²×3³×5。",
-      "完全平方需各指數為偶數，因此3與5各補一次。",
-      "k=3×5=15，此時540×15=2²×3⁴×5²。"
+      "先分解 540=54×10=(2×3³)×(2×5)=2²×3³×5。",
+      "完全平方數的每個質因數指數都須為偶數；2 的指數已偶數，3、5 的指數各缺一。",
+      "最小需補乘 k=3×5=15，此時 540×15=2²×3⁴×5²，各指數皆為偶數。"
     ],
     "alternativeSolutions": [
       "也可寫540=36×15，需再乘15成為(90)²。"
@@ -1108,7 +1125,7 @@ export const CONSTRUCTED_RESPONSES = [
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "3ccf5d4f62cd59be908c720a1287ec66758134a7a3d8525701e34d4c54c31a7b",
+    "contentSha256": "c6b8fbfb8dad3be84f9252b57430bb212d9afaca702e3d9f4d7bc78b507ef6df",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];

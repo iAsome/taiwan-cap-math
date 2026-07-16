@@ -111,23 +111,33 @@ export const LECTURE = {
   "stepByStepMethod": [
     {
       "step": 1,
-      "instruction": "列出所有區域與尺寸。",
-      "check": "標明外框、內框、挖除或重疊。"
+      "instruction": "列出外框、內框、挖除區與重疊區的尺寸。",
+      "check": "每個數值對應哪一塊區域？"
     },
     {
       "step": 2,
-      "instruction": "選擇分割相加或整體相減。",
-      "check": "優先選區塊較少的表示。"
+      "instruction": "選擇互不重疊分割相加或整體減挖除。",
+      "check": "哪種表示使用的區塊較少且不漏算？"
     },
     {
       "step": 3,
-      "instruction": "確認區塊是否互不重疊。",
-      "check": "若重疊，使用包含排除。"
+      "instruction": "遇到兩區重疊時先求交集。",
+      "check": "相加後哪一部分被計算兩次？"
     },
     {
       "step": 4,
-      "instruction": "計算並以另一種分法做合理性檢查。",
-      "check": "結果應小於外框面積且不為負。"
+      "instruction": "四周等寬走道先換成內部長與寬。",
+      "check": "每個方向是否都扣了兩側寬度？"
+    },
+    {
+      "step": 5,
+      "instruction": "統一單位後逐區計算並組合。",
+      "check": "公分是否已換成公尺，平方單位是否一致？"
+    },
+    {
+      "step": 6,
+      "instruction": "用外框上限、非負性或另一種分法驗算。",
+      "check": "剩餘或合併面積是否符合整體關係？"
     }
   ],
   "workedExamples": [
@@ -139,7 +149,8 @@ export const LECTURE = {
         "挖除 3×2=6。",
         "96−6=90。"
       ],
-      "answer": "90 平方公尺。"
+      "answer": "90 平方公尺。",
+      "why": "花圃完整位於草地內且是不保留的挖除區，因此用外框九十六減六最直接；所得九十小於整體且為正，量級合理。"
     },
     {
       "exampleId": "L2",
@@ -148,7 +159,8 @@ export const LECTURE = {
         "沒有重疊，直接相加。",
         "24+35=59。"
       ],
-      "answer": "59 平方公分。"
+      "answer": "59 平方公分。",
+      "why": "互不重疊保證每一塊只被計算一次，所以聯集面積直接相加；不需要扣交集，也不能以兩個面積相乘表示拼接。"
     },
     {
       "exampleId": "L3",
@@ -157,7 +169,8 @@ export const LECTURE = {
         "內長=10−2=8，內寬=7−2=5。",
         "中央面積=8×5=40。"
       ],
-      "answer": "40 平方公尺。"
+      "answer": "40 平方公尺。",
+      "why": "四周等寬表示長方向扣左右兩側、寬方向扣上下兩側；先求內部實際尺寸八與五，才能避免每方向只扣一次。"
     },
     {
       "exampleId": "L4",
@@ -166,7 +179,8 @@ export const LECTURE = {
         "相加得 82，但重疊算了兩次。",
         "82−12=70。"
       ],
-      "answer": "70 平方公尺。"
+      "answer": "70 平方公尺。",
+      "why": "A 與 B 各自面積都包含同一塊十二平方公尺，直接相加會保留兩份；減去一份交集後，聯集中的每一位置恰好計一次。"
     }
   ],
   "levelConnections": {
@@ -237,7 +251,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r4.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "3b412b4a1b4d0e726cd76217bac754ed45ee3cbdf7c011cbe016015c716d512c"
+  "contentSha256": "6c18438404f672565e31bff038c40b3257362f975e192b05c604dfe19678198e"
 };
 
 export const QUESTIONS = [
@@ -268,11 +282,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "剩餘 74 平方公分。",
-    "explanation": "整體減去挖除區。",
+    "explanation": "外長方形面積為 10×8=80 平方公分，挖去部分面積為 2×3=6 平方公分。剩餘區域是整體扣除挖除區，所以 80−6=74 平方公分；兩區尺寸單位一致，可直接相減。",
     "steps": [
-      "算外框 80。",
-      "算挖除 6。",
-      "相減得 74。"
+      "計算外長方形面積八十平方公分。",
+      "計算挖去長方形面積六平方公分。",
+      "用八十減六，得到剩餘七十四平方公分。"
     ],
     "optionAnalysis": [
       {
@@ -296,7 +310,7 @@ export const QUESTIONS = [
         "reason": "錯把外框算成 60。"
       }
     ],
-    "misconceptionTarget": "把挖除區相加或未扣除。",
+    "misconceptionTarget": "把挖去區面積加回整體，或只用邊長相減而沒有計算面積。",
     "prerequisiteCheck": "能求長方形面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "尺寸公分相乘，答案平方公分。",
@@ -308,7 +322,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "c0b0a2f06e66d925d1cc26d516fe78f07898440ff8ca9b5a3fbe24f4b71659e7"
+    "contentSha256": "261968f684e64cdd4fcbba21853a9c50b998f5dbe30823ad21a8930685eb3c29"
   },
   {
     "questionId": "u08-s010-v002",
@@ -337,10 +351,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "合併面積 45 平方公尺。",
-    "explanation": "沒有重複計算問題。",
+    "explanation": "兩個區域明示互不重疊，所以合併後每一部分只計一次，直接相加 18+27=45 平方公尺。相減九平方公尺是在求差，十八乘二十七也沒有面積合併意義，因此第一項正確。",
     "steps": [
-      "確認不重疊。",
-      "18+27=45。"
+      "確認兩區互不重疊，不需要扣交集。",
+      "將兩個面積十八與二十七直接相加。",
+      "得到四十五平方公尺，保留相同平方單位。"
     ],
     "optionAnalysis": [
       {
@@ -364,7 +379,7 @@ export const QUESTIONS = [
         "reason": "計算加法錯誤。"
       }
     ],
-    "misconceptionTarget": "把面積相乘或相減。",
+    "misconceptionTarget": "把合併面積誤算成兩數之差或乘積，忽略互不重疊可直接相加。",
     "prerequisiteCheck": "能做面積加法。",
     "estimatedTimeSec": 90,
     "unitCheck": "同為平方公尺，可直接相加。",
@@ -376,7 +391,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "69c4de79bc8ececf594b642bfe882a5d74ac649908b9038dd15830f4e144e654"
+    "contentSha256": "79f743757bda2d59951dc8a131342f0031bd8e287da5b2d9a57321b5bc2d54e6"
   },
   {
     "questionId": "u08-s010-v003",
@@ -406,11 +421,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "合併面積 57 平方公尺。",
-    "explanation": "使用包含排除。",
+    "explanation": "把 A、B 面積相加得 40+25=65 平方公尺，但重疊八平方公尺在兩個面積中各算一次。合併覆蓋只保留一次，所以再減八，65−8=57 平方公尺，這是包含排除的聯集面積。",
     "steps": [
-      "A+B=65。",
-      "減重疊 8。",
-      "得 57。"
+      "先把 A 與 B 面積相加，得到六十五。",
+      "辨認重疊八平方公尺被重複計算一次。",
+      "用六十五減八，求得合併覆蓋五十七平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -434,7 +449,7 @@ export const QUESTIONS = [
         "reason": "把重疊加上。"
       }
     ],
-    "misconceptionTarget": "忘記扣重疊或扣兩次。",
+    "misconceptionTarget": "直接把四十與二十五相加，沒有扣除被計算兩次的重疊部分。",
     "prerequisiteCheck": "能理解重疊計數。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有面積同為平方公尺。",
@@ -446,7 +461,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "94caf7e5c08d3754727176417d550804d6fbea851a39defc633d415ed9ba7ddd"
+    "contentSha256": "21299ecde55e890856da1ad9730446800730415c9d2919f059805784446558bc"
   },
   {
     "questionId": "u08-s010-v004",
@@ -475,11 +490,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "中央區域 70 平方公尺。",
-    "explanation": "四周邊寬要從每個方向扣兩側。",
+    "explanation": "走道在四周內側寬一公尺，中央長度需扣左右兩側，為 12−2×1=10 公尺；寬度扣上下兩側，為 9−2×1=7 公尺。因此中央面積為 10×7=70 平方公尺。",
     "steps": [
-      "內長 10。",
-      "內寬 7。",
-      "10×7=70。"
+      "長方向扣去左右各一公尺，得到內長十公尺。",
+      "寬方向扣去上下各一公尺，得到內寬七公尺。",
+      "以十乘七，求中央區域七十平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -503,7 +518,7 @@ export const QUESTIONS = [
         "reason": "內長=12−2=10，內寬=9−2=7，中央面積 10×7=70。"
       }
     ],
-    "misconceptionTarget": "長寬只各減一次邊寬。",
+    "misconceptionTarget": "每個方向只扣一次走道寬，忘記四周表示左右或上下各有一側。",
     "prerequisiteCheck": "能求長方形面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "長度均為公尺，答案平方公尺。",
@@ -515,7 +530,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "043c5bbe2e66a7e4bf4a8b0cbff84bd3462929e9089c114153ea108e94cf6959"
+    "contentSha256": "3323e5e5d30ad9dee177b8e88df811f0d5b28f2da2033d8be61b43ade866f5f4"
   },
   {
     "questionId": "u08-s010-v005",
@@ -545,11 +560,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "草地面積 118 平方公尺。",
-    "explanation": "依保留與用途逐區扣除。",
+    "explanation": "地面整體面積為 15×10=150 平方公尺，水池面積為 5×4=20 平方公尺。其餘區域內另有十二平方公尺步道，且不與水池重疊，所以草地為 150−20−12=118 平方公尺。",
     "steps": [
-      "15×10=150。",
-      "5×4=20。",
-      "150−20−12=118。"
+      "計算整塊地面面積一百五十平方公尺。",
+      "扣除水池二十平方公尺。",
+      "再扣除其餘區域中的十二平方公尺步道，得到一百一十八。"
     ],
     "optionAnalysis": [
       {
@@ -573,7 +588,7 @@ export const QUESTIONS = [
         "reason": "水池面積計算錯。"
       }
     ],
-    "misconceptionTarget": "只扣一區或把步道當新增面積。",
+    "misconceptionTarget": "只扣水池而漏掉步道，或把步道面積再加到可用草地。",
     "prerequisiteCheck": "能做複合面積相減。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有面積統一為平方公尺。",
@@ -585,7 +600,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "f60477ac987f1c16fa87ccc258dd85ed274e83362efda2e9f8df27accf1ba397"
+    "contentSha256": "125a58116e0d295ec0997b94969ff23b45734f9338e8dd5b2d44e719d01f3b2a"
   },
   {
     "questionId": "u08-s010-v006",
@@ -614,10 +629,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "剩餘 80 平方公分。",
-    "explanation": "先由邊長求挖除面積。",
+    "explanation": "內部正方形邊長四公分，挖除面積為 4×4=16 平方公分，不是四平方公分。從已知外長方形面積九十六扣除十六，得到 96−16=80 平方公分。",
     "steps": [
-      "4×4=16。",
-      "96−16=80。"
+      "由邊長四公分求正方形面積十六平方公分。",
+      "使用剩餘面積等於外部整體減挖除區。",
+      "計算九十六減十六，得到八十平方公分。"
     ],
     "optionAnalysis": [
       {
@@ -641,7 +657,7 @@ export const QUESTIONS = [
         "reason": "正方形面積 4²=16，剩餘 96−16=80。"
       }
     ],
-    "misconceptionTarget": "用邊長直接從面積相減。",
+    "misconceptionTarget": "直接把邊長四從面積九十六中扣除，沒有先求正方形面積。",
     "prerequisiteCheck": "能辨認長度與面積不同。",
     "estimatedTimeSec": 90,
     "unitCheck": "4 公分平方成 16 平方公分後才可與 96 相減。",
@@ -653,7 +669,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "1ddf412833b106c114d465a18b628973529f97cfbdae82bdbb011713e3b4d769"
+    "contentSha256": "646e74a1981949142aac40f5f8092820b6fa25b342664436cbae9ac7b94ccbb1"
   },
   {
     "questionId": "u08-s010-v007",
@@ -682,11 +698,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "合併面積 40 平方公分。",
-    "explanation": "包含排除一次。",
+    "explanation": "每個長方形面積為 6×4=24 平方公分，兩個相加為四十八。重疊區面積為 2×4=8 平方公分，已被算兩次，合併時扣一次，所以 48−8=40 平方公分。",
     "steps": [
-      "兩矩形共 48。",
-      "重疊 8。",
-      "48−8=40。"
+      "分別求兩個相同長方形面積，各二十四。",
+      "求重疊部分面積八平方公分。",
+      "用二十四加二十四再減八，得到四十。"
     ],
     "optionAnalysis": [
       {
@@ -710,7 +726,7 @@ export const QUESTIONS = [
         "reason": "只算非重疊差。"
       }
     ],
-    "misconceptionTarget": "把重疊扣兩次或完全不扣。",
+    "misconceptionTarget": "兩個面積直接相加為四十八，沒有扣除重疊區的重複計算。",
     "prerequisiteCheck": "能求長方形與重疊面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "各區尺寸皆公分，面積平方公分。",
@@ -722,7 +738,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "ad7bc28de608b945036f678f33833c2f552c75b6941d0ccbf94d1e496afbe201"
+    "contentSha256": "7f8a4cc9336e57b22c080227216048a314832d80ed8b5b89dd085418d9543019"
   },
   {
     "questionId": "u08-s010-v008",
@@ -752,12 +768,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "道路聯集面積=48+36−4=80平方公尺。",
-    "explanation": "重疊區在兩個長方形面積中各算一次，合併時只應保留一次。",
+    "explanation": "長向道路面積為 24×2=48 平方公尺，寬向道路面積為 18×2=36 平方公尺。兩路交會的 2×2=4 平方公尺被算兩次，所以合計占地為 48+36−4=80 平方公尺。",
     "steps": [
-      "算長向道路24×2=48。",
-      "算寬向道路18×2=36。",
-      "扣除重複的交會區2×2=4。",
-      "得80。"
+      "計算貫穿長方向道路面積四十八。",
+      "計算貫穿寬方向道路面積三十六。",
+      "扣除重複計算的四平方公尺交會區，得到八十。"
     ],
     "optionAnalysis": [
       {
@@ -781,7 +796,7 @@ export const QUESTIONS = [
         "reason": "432是整個廣場面積，不是道路面積。"
       }
     ],
-    "misconceptionTarget": "直接相加兩條道路面積，忘記扣重疊。",
+    "misconceptionTarget": "把兩條道路面積直接相加成八十四，忘記交會正方形被算了兩次。",
     "prerequisiteCheck": "需會長方形面積與重疊區只計一次。",
     "estimatedTimeSec": 150,
     "unitCheck": "長度以公尺表示，面積答案為平方公尺。",
@@ -793,7 +808,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "947f32b98af564a10b31ccf91ceb2b2ca366a3266b7b9e7c17cacab368784aa2"
+    "contentSha256": "1ca226149f259c570d50ab7c2fc9e0ed98f6cd2392be866bf5dadb2877940dd3"
   },
   {
     "questionId": "u08-s010-v009",
@@ -822,11 +837,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 3,
     "independentSolution": "L 形面積 51 平方公尺。",
-    "explanation": "補形法處理 L 形。",
+    "explanation": "把 L 形補成 9×7 的外長方形，面積為六十三平方公尺；右上角缺口面積為 4×3=12 平方公尺。以整體扣缺口，63−12=51 平方公尺，即為 L 形實際面積。",
     "steps": [
-      "9×7=63。",
-      "4×3=12。",
-      "63−12=51。"
+      "用補形法求外框長方形面積六十三。",
+      "求右上挖去長方形面積十二。",
+      "以六十三減十二，得到五十一平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -850,7 +865,7 @@ export const QUESTIONS = [
         "reason": "外框 63，挖角 12，面積 51。"
       }
     ],
-    "misconceptionTarget": "把挖角相加或尺寸錯配。",
+    "misconceptionTarget": "只算外框六十三而未扣缺角，或將缺口面積錯誤加回。",
     "prerequisiteCheck": "能使用整體相減。",
     "estimatedTimeSec": 90,
     "unitCheck": "長度公尺，面積平方公尺。",
@@ -862,7 +877,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "875a48460144991ee638a803c6ce87f48552a631d2977d1c7ed85f092ea3466e"
+    "contentSha256": "ae3c221c3a46409bb4ebd55730a8ebc97c240cb2e6e99aac5fb6d396961f2f73"
   },
   {
     "questionId": "u08-s010-v010",
@@ -891,11 +906,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 2,
     "independentSolution": "上漆面積 30 平方公尺。",
-    "explanation": "門是不上漆的挖除區。",
+    "explanation": "完整牆面面積為 12×3=36 平方公尺。每扇門面積為 1.5×2=3 平方公尺，兩扇共六平方公尺；門不需上漆，所以 36−6=30 平方公尺，正好對應第三項。",
     "steps": [
-      "12×3=36。",
-      "1.5×2×2=6。",
-      "36−6=30。"
+      "先求整面展覽牆三十六平方公尺。",
+      "算一扇門三平方公尺，再乘二得六。",
+      "從牆面扣兩扇門，得到上漆面積三十平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -919,7 +934,7 @@ export const QUESTIONS = [
         "reason": "把門面積加上。"
       }
     ],
-    "misconceptionTarget": "只扣一扇或把門洞加上。",
+    "misconceptionTarget": "只扣一扇門，或把一點五與二直接相加當門面積。",
     "prerequisiteCheck": "能做長方形面積與多區扣除。",
     "estimatedTimeSec": 90,
     "unitCheck": "尺寸公尺，結果平方公尺。",
@@ -931,7 +946,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "029a274593b29be3f0446c8f74f608eae19c9ca0c6944d5e0ebc373469c4faec"
+    "contentSha256": "c33d1f005fd323e2eba3a4af1a7e9600744aa47f3f1ec73892a9edca9bd7c89a"
   },
   {
     "questionId": "u08-s010-v011",
@@ -962,11 +977,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 1,
     "independentSolution": "可使用草地 380 平方公尺。",
-    "explanation": "互不重疊可直接扣兩區。",
+    "explanation": "公園外框面積為 25×18=450 平方公尺，花圃面積為 5×6=30 平方公尺。花圃與四十平方公尺遊戲區互不重疊，可依序扣除，450−30−40=380 平方公尺。",
     "steps": [
-      "25×18=450。",
-      "5×6=30。",
-      "450−30−40=380。"
+      "計算整塊公園草地外框面積四百五十。",
+      "計算花圃三十，並保留遊戲區四十。",
+      "因兩區不重疊，從整體各扣一次，得到三百八十。"
     ],
     "optionAnalysis": [
       {
@@ -990,7 +1005,7 @@ export const QUESTIONS = [
         "reason": "把花圃面積重複扣除。"
       }
     ],
-    "misconceptionTarget": "忽略不重疊條件或只扣一區。",
+    "misconceptionTarget": "漏扣其中一區，或因互不重疊反而把花圃與遊戲區相加回草地。",
     "prerequisiteCheck": "能處理複合面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "所有面積以平方公尺表示。",
@@ -1002,7 +1017,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "fc6640b302323a36f198c10eb05b70633726c30b0338c4f56468a593f370bcd7"
+    "contentSha256": "ce1a4a0a2b2ec28f250d7b87c82295837214d27c29531fb367e78f1dc1fe7a34"
   },
   {
     "questionId": "u08-s010-v012",
@@ -1031,11 +1046,11 @@ export const QUESTIONS = [
     ],
     "answerIndex": 0,
     "independentSolution": "剩餘 11.7 平方公尺。",
-    "explanation": "先統一長度單位再扣除。",
+    "explanation": "地毯面積為 4×3=12 平方公尺。破損區需先換單位：六十公分是零點六公尺，五十公分是零點五公尺，面積為 0.6×0.5=0.3 平方公尺；剩餘為 12−0.3=11.7 平方公尺。",
     "steps": [
-      "60 cm=0.6 m，50 cm=0.5 m。",
-      "破損 0.3 m²。",
-      "12−0.3=11.7。"
+      "先求整張地毯面積十二平方公尺。",
+      "將六十、五十公分換成零點六、零點五公尺並求破損面積。",
+      "以十二減零點三，得到十一點七平方公尺。"
     ],
     "optionAnalysis": [
       {
@@ -1059,7 +1074,7 @@ export const QUESTIONS = [
         "reason": "直接用 0.6×? 之後錯算。"
       }
     ],
-    "misconceptionTarget": "把公分倍率直接套面積或未統一單位。",
+    "misconceptionTarget": "公尺與公分直接相乘或相減，沒有先統一長度單位。",
     "prerequisiteCheck": "能換算長度並求複合面積。",
     "estimatedTimeSec": 90,
     "unitCheck": "60 公分=0.6 公尺，50 公分=0.5 公尺，答案平方公尺。",
@@ -1071,7 +1086,7 @@ export const QUESTIONS = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "22379c14e77091f222654b71b48eda64c0326971292e59d6df27a3bef3791e9b"
+    "contentSha256": "824c2bd28ca2d505e0266d4cf98f295bbdb23b2d7e789880062cda3460aca503"
   }
 ];
 
@@ -1095,18 +1110,18 @@ export const CONSTRUCTED_RESPONSES = [
       "相減並附平方公尺。"
     ],
     "standardSolution": [
-      "庭院整體面積=15×10=150平方公尺。",
-      "挖除的水池面積=6×4=24平方公尺。",
-      "草皮面積=150−24=126平方公尺。"
+      "採用整體減挖除區：庭院整體是 15 公尺乘 10 公尺的長方形，面積為 150 平方公尺。",
+      "中央水池是 6 公尺乘 4 公尺的挖除長方形，面積為 24 平方公尺。",
+      "其餘全部鋪草皮且水池位於庭院內，所以草皮面積為 150−24=126 平方公尺；結果小於整體且為正。"
     ],
     "alternativeMethods": [
       "可把水池周圍分割成上、下、左、右不重疊長方形後相加，但需自行合理分配位置尺寸；整體減挖除較直接。"
     ],
     "reasoningSteps": [
-      "建立整體150。",
-      "建立挖除24。",
-      "確認水池位於庭院內。",
-      "相減得126。"
+      "明確指定十五乘十為外部整體區域。",
+      "指定六乘四為中央挖除區域。",
+      "分別計算一百五十與二十四平方公尺。",
+      "用整體減挖除區，得到一百二十六平方公尺並做合理性檢查。"
     ],
     "rubric": [
       {
@@ -1133,8 +1148,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "長度公尺，面積平方公尺。",
     "answerOnlyPolicy": "只答126平方公尺最高2分，因缺少整體與挖除說明。",
     "commonErrors": [
-      "把15+10當庭院面積。",
-      "用150−10求答案。"
+      "用 15+10 當庭院面積，混淆邊長和面積。",
+      "只從一百五十減去水池邊長六或四，沒有先算挖除面積。",
+      "把水池面積加到庭院整體，得到大於外框的不合理草皮面積。"
     ],
     "independentReview": {
       "derivedResult": "126平方公尺。",
@@ -1150,7 +1166,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "4a7d9fceb5fda80a71a7eaa1088e5a251af1db714e5d6bbd4f8e69a4d4a5e057"
+    "contentSha256": "1a238bfeca826f8af14e41d9785e57eddc8665d9c9f89bd70f3e45ae453badd8"
   },
   {
     "questionId": "u08-s010-cr002",
@@ -1171,19 +1187,18 @@ export const CONSTRUCTED_RESPONSES = [
       "求非道路面積。"
     ],
     "standardSolution": [
-      "長向道路面積=20×2=40平方公尺。",
-      "寬向道路面積=14×2=28平方公尺。",
-      "交會區2×2=4平方公尺被算兩次，所以道路聯集=40+28−4=64平方公尺。",
-      "廣場面積280，非道路面積=280−64=216平方公尺。"
+      "沿長方向道路面積為 20×2=40 平方公尺，沿寬方向道路面積為 14×2=28 平方公尺。",
+      "兩路垂直相交的區域為 2×2=4 平方公尺，在四十與二十八中各算一次，因此道路聯集為 40+28−4=64 平方公尺。",
+      "廣場總面積為 20×14=280 平方公尺，非道路面積為 280−64=216 平方公尺。"
     ],
     "alternativeMethods": [
       "可把其中一條路完整算40，再把另一條除去交會段後算(14−2)×2=24，合計64。"
     ],
     "reasoningSteps": [
-      "求兩個長方形道路面積。",
-      "辨認交集4。",
-      "用加法減交集求聯集。",
-      "從廣場整體扣道路。"
+      "把兩條道路分別視為寬二公尺的長方形並求面積。",
+      "辨認交會處二乘二被重複計算。",
+      "用包含排除求道路總面積六十四平方公尺。",
+      "從廣場整體二百八十扣道路，得到非道路二百一十六。"
     ],
     "rubric": [
       {
@@ -1210,8 +1225,9 @@ export const CONSTRUCTED_RESPONSES = [
     "unitAndNotationRules": "全部面積用平方公尺。",
     "answerOnlyPolicy": "只答64與216無過程最高2分。",
     "commonErrors": [
-      "忘記扣交會區。",
-      "把非道路算成280−4。"
+      "直接把四十與二十八相加，忘記扣掉重複計算的交會區。",
+      "道路聯集只算成四平方公尺，把交集誤當全部道路。",
+      "求非道路面積時只用二百八十減四，沒有先求完整道路聯集。"
     ],
     "independentReview": {
       "derivedResult": "道路64平方公尺；非道路216平方公尺。",
@@ -1227,7 +1243,7 @@ export const CONSTRUCTED_RESPONSES = [
     "replacementMarker": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "noTemplateDeclaration": true,
     "reviewStatus": "independently-reviewed",
-    "contentSha256": "189bf72e28973339ca047c1d58f2d296abc5e7da522150e887957a7202c8fdf9"
+    "contentSha256": "ed7d4db210ea1c19fca5a45c4865b2c504231080fa8a3e8ab7a09b0964bd4c69"
   }
 ];
 
@@ -1236,7 +1252,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v001",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "c0b0a2f06e66d925d1cc26d516fe78f07898440ff8ca9b5a3fbe24f4b71659e7",
+    "contentSha256": "261968f684e64cdd4fcbba21853a9c50b998f5dbe30823ad21a8930685eb3c29",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立重算 80−6=74。",
@@ -1271,7 +1287,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v002",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "69c4de79bc8ececf594b642bfe882a5d74ac649908b9038dd15830f4e144e654",
+    "contentSha256": "79f743757bda2d59951dc8a131342f0031bd8e287da5b2d9a57321b5bc2d54e6",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立加總兩區面積。",
@@ -1306,7 +1322,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v003",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "94caf7e5c08d3754727176417d550804d6fbea851a39defc633d415ed9ba7ddd",
+    "contentSha256": "21299ecde55e890856da1ad9730446800730415c9d2919f059805784446558bc",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以非重疊部分 32+17+8=57 重算。",
@@ -1341,7 +1357,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v004",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "043c5bbe2e66a7e4bf4a8b0cbff84bd3462929e9089c114153ea108e94cf6959",
+    "contentSha256": "3323e5e5d30ad9dee177b8e88df811f0d5b28f2da2033d8be61b43ade866f5f4",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立把左右與上下各扣 1 公尺。",
@@ -1376,7 +1392,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v005",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "f60477ac987f1c16fa87ccc258dd85ed274e83362efda2e9f8df27accf1ba397",
+    "contentSha256": "125a58116e0d295ec0997b94969ff23b45734f9338e8dd5b2d44e719d01f3b2a",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立合併非草地面積 32，再以 150−32。",
@@ -1411,7 +1427,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v006",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "1ddf412833b106c114d465a18b628973529f97cfbdae82bdbb011713e3b4d769",
+    "contentSha256": "646e74a1981949142aac40f5f8092820b6fa25b342664436cbae9ac7b94ccbb1",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立重算挖除區為 16。",
@@ -1446,7 +1462,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v007",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "ad7bc28de608b945036f678f33833c2f552c75b6941d0ccbf94d1e496afbe201",
+    "contentSha256": "7f8a4cc9336e57b22c080227216048a314832d80ed8b5b89dd085418d9543019",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "另以重疊 8 加兩側各 16 得 40。",
@@ -1481,7 +1497,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v008",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "947f32b98af564a10b31ccf91ceb2b2ca366a3266b7b9e7c17cacab368784aa2",
+    "contentSha256": "1ca226149f259c570d50ab7c2fc9e0ed98f6cd2392be866bf5dadb2877940dd3",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立用分割法重算：長向道路48，加上寬向道路扣除已覆蓋2公尺段，即(18−2)×2=32，共80。",
@@ -1516,7 +1532,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v009",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "875a48460144991ee638a803c6ce87f48552a631d2977d1c7ed85f092ea3466e",
+    "contentSha256": "ae3c221c3a46409bb4ebd55730a8ebc97c240cb2e6e99aac5fb6d396961f2f73",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "可另分成 5×7 與 4×4，得 35+16=51。",
@@ -1551,7 +1567,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v010",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "029a274593b29be3f0446c8f74f608eae19c9ca0c6944d5e0ebc373469c4faec",
+    "contentSha256": "c33d1f005fd323e2eba3a4af1a7e9600744aa47f3f1ec73892a9edca9bd7c89a",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "獨立以每扇 3 平方公尺重算。",
@@ -1586,7 +1602,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v011",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "fc6640b302323a36f198c10eb05b70633726c30b0338c4f56468a593f370bcd7",
+    "contentSha256": "ce1a4a0a2b2ec28f250d7b87c82295837214d27c29531fb367e78f1dc1fe7a34",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "非草地總面積 70，450−70=380。",
@@ -1621,7 +1637,7 @@ export const SEMANTIC_REVIEWS = [
     "questionId": "u08-s010-v012",
     "unitId": "u08",
     "skillId": "composite-area-text",
-    "contentSha256": "22379c14e77091f222654b71b48eda64c0326971292e59d6df27a3bef3791e9b",
+    "contentSha256": "824c2bd28ca2d505e0266d4cf98f295bbdb23b2d7e789880062cda3460aca503",
     "reviewVersion": "human-review-r4.0",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
     "independentSolution": "亦可將 3000 cm² 換成 0.3 m² 後相減。",

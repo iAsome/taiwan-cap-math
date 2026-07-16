@@ -61,11 +61,10 @@ export default {
       }
     ],
     "conceptNarrative": [
-      "比例式的核心是同一比值 k。若 a/b=c/d=k，則 a=kb、c=kd。",
-      "外項乘積等於內項乘積可用來判斷四個數能否排成比例，也可求未知數。",
-      "兩邊同時倒數會保留相等，但若原分子為 0，倒比會出現 0 作後項，必須額外限制。",
-      "和比性質不是把四項任意相加，而是兩邊做同一代數操作：a/b+1=c/d+1。",
-      "只交換一個比、只在一邊加數或交叉相加，都沒有一般保證。"
+      "比例式 a:b=c:d 可寫成 a/b=c/d，後項 b、d 非零。其核心等價條件是外項積等於內項積 ad=bc，可用來驗證比例、求未知數與推導合法變形。",
+      "四項皆非零時，可同時倒比得到 b:a=d:c；也可交換內項或外項形成等價比例。每個變形都應回到交叉乘積檢查，不能憑位置相似任意重新配對。",
+      "若 a:b=m:n，可設 a=mk、b=nk。這種共同倍數表示法適合處理 a+b、b-a、乘積或總量條件，也能清楚保留正數與非零限制。",
+      "判斷『必成立』時，一個合法推導足以證明真命題；要否定不一定成立的式子，只需找一個符合原比例但使該式失敗的反例。選項之間必須互不等價，確保唯一答案。"
     ],
     "formalDefinitions": [
       {
@@ -115,98 +114,102 @@ export default {
     "method": [
       {
         "step": 1,
-        "instruction": "先寫所有後項非零條件。",
-        "check": "變形後是否出現新的後項？"
+        "instruction": "寫出比例的分式形式與後項非零條件。",
+        "check": "所有倒數或約分所需的非零條件均已明示。"
       },
       {
         "step": 2,
-        "instruction": "把比例式改寫成分數等式或共同比值 k。",
-        "check": "每項角色是否清楚？"
+        "instruction": "以外項積等於內項積 ad=bc 作為核心判準。",
+        "check": "交叉配對正確，沒有把相鄰項乘積誤當比例性質。"
       },
       {
         "step": 3,
-        "instruction": "對等式兩邊做相同運算。",
-        "check": "倒數、加 1 或乘除是否兩邊同步？"
+        "instruction": "推導新比例時比較它的交叉乘積是否仍等價於 ad=bc。",
+        "check": "每個交換、倒比或合比都有代數依據，不是任意重排。"
       },
       {
         "step": 4,
-        "instruction": "還原成比的形式。",
-        "check": "新比例的順序與分母是否合法？"
+        "instruction": "含總和、差或乘積時設共同倍數 k，代入附加條件求解。",
+        "check": "k 的正負或非零限制符合題目，解值保留精確形式。"
       },
       {
         "step": 5,
-        "instruction": "可用一組具體數代入反查。",
-        "check": "若命題宣稱必然成立，是否能被反例推翻？"
+        "instruction": "逐一檢查選項；非必然式用符合原條件的反例排除。",
+        "check": "四選恰有一真，反例同時滿足原比例且確實違反待判式。"
       }
     ],
     "workedExamples": [
       {
-        "exampleId": "L1",
-        "prompt": "已知 6:9=10:15，驗證乘積性質。",
+        "exampleId": "u06-s004-example-a",
+        "prompt": "若 a:b=5:9，求 (a+b):b。",
         "solutionSteps": [
-          "外項積 6×15=90。",
-          "內項積 9×10=90，兩者相等。"
+          "設 a=5k、b=9k。",
+          "a+b=14k，所以新比為 14k:9k=14:9。"
         ],
-        "answer": "比例式符合基本性質。"
+        "answer": "14:9。",
+        "why": "共同倍數表示法把兩部分轉成份數，總份數十四仍與 b 的九份使用相同 k。約去非零 k 後得到十四比九。"
       },
       {
-        "exampleId": "L2",
-        "prompt": "若 a:b=3:4，求 (a+b):b。",
+        "exampleId": "u06-s004-example-b",
+        "prompt": "由 a:b=c:d 推導倒比式需要何條件？",
         "solutionSteps": [
-          "令 a=3k、b=4k。",
-          "(a+b):b=7k:4k=7:4。"
+          "寫成 a/b=c/d。",
+          "若四項非零，兩邊取倒數得 b/a=d/c。"
         ],
-        "answer": "7:4。"
+        "answer": "a、b、c、d 均須非零。",
+        "why": "原比例只保證後項 b、d 非零，但倒比後 a、c 會成為後項，也必須非零。條件完整時取倒數才是合法等價變形。"
       },
       {
-        "exampleId": "L3",
-        "prompt": "由 2:5=8:20 寫出同時倒比。",
+        "exampleId": "u06-s004-example-c",
+        "prompt": "正數 x:y=4:7 且 x+y=33，求 x、y。",
         "solutionSteps": [
-          "兩邊前後項同時交換。",
-          "得到 5:2=20:8，兩邊比值皆 2.5。"
+          "設 x=4k、y=7k，得 11k=33。",
+          "k=3，所以 x=12、y=21。"
         ],
-        "answer": "5:2=20:8。"
+        "answer": "x=12、y=21。",
+        "why": "總量三十三對應四加七共十一份，每份三。共同倍數法同時保留原比，十二加二十一也正好回到三十三。"
       },
       {
-        "exampleId": "L4",
-        "prompt": "已知 a:b=c:d=2:7，求 (b-a):b。",
+        "exampleId": "u06-s004-example-d",
+        "prompt": "長:寬=16:9，寬十八公分時求長。",
         "solutionSteps": [
-          "令 a=2k、b=7k。",
-          "(b-a):b=5k:7k=5:7。"
+          "寬九份等於十八，每份二公分。",
+          "長十六份為 16×2=32 公分。"
         ],
-        "answer": "5:7。"
+        "answer": "長三十二公分。",
+        "why": "寬由九份放大到十八公分的倍數是二，長也必須使用相同倍數。三十二比十八約分後仍為十六比九。"
       }
     ],
     "commonMistakes": [
       {
-        "mistake": "外項認成 a、c。",
-        "why": "只看同一列位置。",
-        "correction": "a、d 在比例式兩端，才是外項。"
+        "mistake": "把相鄰項乘積當成交叉乘積。",
+        "why": "未辨認外項與內項。",
+        "correction": "寫成分式後沿對角線相乘。"
       },
       {
-        "mistake": "只倒左比。",
-        "why": "沒有對等式兩邊做相同操作。",
-        "correction": "左右兩比同步倒比。"
+        "mistake": "未檢查倒比的非零條件。",
+        "why": "原前項在倒比後成為後項。",
+        "correction": "倒比前確認四項皆非零。"
       },
       {
-        "mistake": "0:3=0:5 後寫 3:0=5:0。",
-        "why": "倒比後後項為 0。",
-        "correction": "倒比需原前項非零。"
+        "mistake": "認為任意配對都形成等值比例。",
+        "why": "沒有比較新舊交叉乘積。",
+        "correction": "每個變形都化回 ad=bc 檢查。"
       },
       {
-        "mistake": "由 a:b=c:d 推 a+b=c+d。",
-        "why": "比例相同不代表總量相同。",
-        "correction": "令 a=kb、c=kd 檢查。"
+        "mistake": "由比例相等推出兩組和相等。",
+        "why": "相同比值不限制各組尺度。",
+        "correction": "用不同倍數的等值比建立反例。"
       },
       {
-        "mistake": "和比時寫 (a+b):a=(c+d):d。",
-        "why": "左右分母角色不一致。",
-        "correction": "同一變形應對應相同位置。"
+        "mistake": "把總量直接當共同倍數 k。",
+        "why": "k 只代表每份大小。",
+        "correction": "總量除以份數和後才得到 k。"
       },
       {
-        "mistake": "只看交叉積，忽略原後項為 0。",
-        "why": "乘積等式可能有意義，但比例式本身沒有。",
-        "correction": "先檢查定義域。"
+        "mistake": "選項中保留兩個等價真式。",
+        "why": "沒有逐項做交叉乘積審查。",
+        "correction": "出題與審查時驗證四選恰有一真。"
       }
     ],
     "selfCheck": [
@@ -261,7 +264,7 @@ export default {
       "reviewVersion": "human-lecture-review-u06-r1.0",
       "reviewedAt": "2026-07-12"
     },
-    "contentSha256": "9cf201d81b909fc6364b94ee239622960a1e9fa0d458504a92e994f9dc8134ec"
+    "contentSha256": "b9d49b7873419a599c0820c982eeca58627bb30383211ccb49131aa183f5d2ba"
   },
   "mcQuestions": [
     {
@@ -286,10 +289,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "內項5×12也等於60，交叉驗證。",
       "mainExplanation": "比例式兩端的3、20是外項。",
-      "explanation": "比例式兩端的3、20是外項。",
+      "explanation": "比例式 3:5=12:20 的外項是最外側的三與二十，乘積為 3×20=60。內項五與十二的乘積也是六十，符合比例式外項積等於內項積的性質。",
       "steps": [
-        "辨認外項3與20",
-        "相乘得60"
+        "辨認比例式外項為 3 與 20。",
+        "計算外項乘積 3×20=60。",
+        "以內項 5×12=60 回驗比例成立。"
       ],
       "optionAnalysis": [
         {
@@ -313,7 +317,7 @@ export default {
           "reason": "外項為3與20，乘積3×20=60。"
         }
       ],
-      "misconceptionTarget": "把同側兩數誤認為外項。",
+      "misconceptionTarget": "把相鄰的三與五當作外項，沒有辨認比例式四項的位置。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -334,7 +338,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "033b77958d8366ba23eba5cfe4a9cb5a4a669a56ba5d4b845b07efc07f471758"
+      "contentSha256": "249271f0b86f89001401b3da60fd56bde95d50ed750ff62862c3d97b76bd59ab"
     },
     {
       "questionId": "u06-s004-v002",
@@ -358,10 +362,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "4/6=2/3，10/15=2/3。",
       "mainExplanation": "用外項積等於內項積逐一檢查。",
-      "explanation": "用外項積等於內項積逐一檢查。",
+      "explanation": "4:6 約分為 2:3，10:15 同除以五也為 2:3，因此兩邊比值相等，比例式 4:6=10:15 成立。也可驗算外項積 4×15 與內項積 6×10 均為六十，兩種方法結論一致。",
       "steps": [
-        "檢查四個交叉積",
-        "只有4:6=10:15相等"
+        "分別把 4:6 與 10:15 化成最簡比。",
+        "確認兩邊都得到 2:3。",
+        "再以 4×15=6×10=60 驗證。"
       ],
       "optionAnalysis": [
         {
@@ -385,7 +390,7 @@ export default {
           "reason": "6×18=108但9×14=126。"
         }
       ],
-      "misconceptionTarget": "只看數字大致成倍。",
+      "misconceptionTarget": "只看四個數都可約分就判成立，沒有比較兩邊的實際比值。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -406,7 +411,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "8db3d808ebe06006ce1f43bece1c7be813e3f02360e8a2c879dcf67b2e93941a"
+      "contentSha256": "762346c46d7727762ab602ce4dda4ce647fadf6d948ec26de1062ec37c8f8df5"
     },
     {
       "questionId": "u06-s004-v003",
@@ -430,11 +435,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "(a+b)/b=a/b+1=2/7+1=9/7。",
       "mainExplanation": "使用份數或兩邊比值加1。",
-      "explanation": "使用份數或兩邊比值加1。",
+      "explanation": "由 a:b=2:7，可設 a=2k、b=7k，且 k≠0。則 a+b=9k，所以 (a+b):b=9k:7k=9:7；相同非零倍數 k 可同時約去。這是總份數九對乙七份的關係，與原來共同倍數大小無關，前後項也不會顛倒。",
       "steps": [
-        "a=2k,b=7k",
-        "a+b=9k",
-        "得到9:7"
+        "依原比設 a=2k、b=7k。",
+        "計算 a+b=9k。",
+        "列出 9k:7k，同除以 k 得 9:7。"
       ],
       "optionAnalysis": [
         {
@@ -458,7 +463,7 @@ export default {
           "reason": "5:7錯把相加當相減。"
         }
       ],
-      "misconceptionTarget": "把所求順序看錯。",
+      "misconceptionTarget": "把 a+b 的份數算成九後，卻仍用原前項二作為後項。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -479,7 +484,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1efb68abf6d5df19fa667a40cdcbd97cb4735fce2f4ba8b33431ac09acd2da32"
+      "contentSha256": "da2055a1e14bef1ad045dafbd4b6ac61d75f0d6e2e4fd4789b35520197cf37ac"
     },
     {
       "questionId": "u06-s004-v004",
@@ -495,7 +500,7 @@ export default {
       "givenConditions": "四項均非0，倒比有定義。",
       "target": "判斷必然成立的比例變形",
       "choices": [
-        "a:c=b:d",
+        "a:c=d:b",
         "a+b=c+d",
         "b:a=d:c",
         "a-b=c-d"
@@ -503,34 +508,35 @@ export default {
       "answerIndex": 2,
       "independentSolution": "令a=2,b=3,c=4,d=6驗證正確式；其餘不必成立。",
       "mainExplanation": "由a/b=c/d取倒數得b/a=d/c。",
-      "explanation": "由a/b=c/d取倒數得b/a=d/c。",
+      "explanation": "a:b=c:d 等同 a/b=c/d。四項皆非零時，兩邊可同時取倒數，得到 b/a=d/c，也就是 b:a=d:c。其餘選項不是比例式的一般合法變形，可用反例排除，四選只有倒比式必然成立。",
       "steps": [
-        "所有項非0可取倒數",
-        "得到b:a=d:c"
+        "把 a:b=c:d 寫成 a/b=c/d。",
+        "利用四項非零，對等式兩邊同取倒數。",
+        "得到 b/a=d/c，即 b:a=d:c，並以反例檢查其餘式。"
       ],
       "optionAnalysis": [
         {
-          "choice": "a:c=b:d",
+          "choice": "a:c=d:b",
           "truth": false,
-          "reason": "a:c=b:d 並非由原式一般推出。"
+          "reason": "此式要求 ab=cd，原比例只保證 ad=bc，兩者不等價。"
         },
         {
           "choice": "a+b=c+d",
           "truth": false,
-          "reason": "相同比值不代表兩組總量相等。"
+          "reason": "相同比值不表示兩組項的總和相等。"
         },
         {
           "choice": "b:a=d:c",
           "truth": true,
-          "reason": "原比例兩邊同時倒比，仍相等。"
+          "reason": "四項非零時，原比例兩邊同時取倒數仍相等。"
         },
         {
           "choice": "a-b=c-d",
           "truth": false,
-          "reason": "相同比值不代表差相等。"
+          "reason": "相同比值不表示兩組項的差相等。"
         }
       ],
-      "misconceptionTarget": "把比例相等誤認為各項可任意配對。",
+      "misconceptionTarget": "把交叉乘積條件誤擴張成任意重新配對都能形成等值比例。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -540,7 +546,7 @@ export default {
       "estimatedTimeSec": 90,
       "unitCheck": "無單位。",
       "roundingCheck": "無近似。",
-      "ambiguityBoundaryAudit": "題幹明示非0排除倒比定義問題。",
+      "ambiguityBoundaryAudit": "第一選項已改為 a:c=d:b，它要求 ab=cd，並非由 ad=bc 必然推出；四個選項現在恰有倒比式一項必成立。",
       "difficultyReason": "需要理解條件而非只算數字。",
       "literacyContextNecessity": null,
       "visualMode": "text-only",
@@ -551,7 +557,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "367a1b60750c39efca0d619d06b2c6434ac95c4afda72b844a5ec130cf93a80b"
+      "contentSha256": "27e926d87f5f94629ee3e391e035e2f7e2d4ffba2d3b800a5dcd73683f99f74f"
     },
     {
       "questionId": "u06-s004-v005",
@@ -575,10 +581,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "6:10=3:5，9:15=3:5。",
       "mainExplanation": "由外項積等於內項積求未知數。",
-      "explanation": "由外項積等於內項積求未知數。",
+      "explanation": "由 6:x=9:15 交叉相乘得 6×15=9x，也就是 90=9x。兩邊同除以九，求得 x=10；代回 6:10 與 9:15 都可化為 3:5，且未知數後項不為零，外項積與內項積也同為九十。",
       "steps": [
-        "90=9x",
-        "x=10"
+        "依比例式性質列出外項積等於內項積。",
+        "計算 6×15=90，得到 9x=90。",
+        "求得 x=10，代回約分驗算。"
       ],
       "optionAnalysis": [
         {
@@ -602,7 +609,7 @@ export default {
           "reason": "22.5把90÷4。"
         }
       ],
-      "misconceptionTarget": "外內項辨認錯誤。",
+      "misconceptionTarget": "把六乘九、未知數乘十五配成同側相鄰項，而非交叉乘積。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -623,7 +630,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "208aa649c733ed1f96122f383700c26f674bc1dc92fc0a971ccfab1eeb169142"
+      "contentSha256": "790eb08bbbc2486adb59c2387606bb2c6eec8a2f48cc9dbf697ff9df74092c8f"
     },
     {
       "questionId": "u06-s004-v006",
@@ -647,11 +654,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "(b-a)/b=1-a/b=1-3/8=5/8。",
       "mainExplanation": "差比使用同一份量，8k-3k=5k。",
-      "explanation": "差比使用同一份量，8k-3k=5k。",
+      "explanation": "設 a=3k、b=8k，則 b-a=8k-3k=5k。因此 (b-a):b=5k:8k=5:8；比的兩項同含非零倍數 k，可同時約去，差量五份對原後項八份，沒有改變前後對應，最簡結果必為五比八。",
       "steps": [
-        "a=3k,b=8k",
-        "b-a=5k",
-        "比5:8"
+        "依 a:b=3:8 設 a=3k、b=8k。",
+        "計算 b-a=5k。",
+        "列 5k:8k 並同除以 k，得到 5:8。"
       ],
       "optionAnalysis": [
         {
@@ -675,7 +682,7 @@ export default {
           "reason": "11:8是和比。"
         }
       ],
-      "misconceptionTarget": "把差比與和比混淆。",
+      "misconceptionTarget": "把 b-a 的份數算成八加三，或將後項誤用 a 的三份。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -696,7 +703,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "763dc93c45bce2f450f8c3a54f1965cb2fdf8de49217e53a240f2ca41191cb04"
+      "contentSha256": "0fe21c004fbb24d4b3fd5c1ae242e4798994c4f9ffe92589432fb5f5f68a81a3"
     },
     {
       "questionId": "u06-s004-v007",
@@ -720,11 +727,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "反例足以證明『不一定』。",
       "mainExplanation": "用反例2:3=4:6，但2+4=6、3+6=9，不相等。",
-      "explanation": "用反例2:3=4:6，但2+4=6、3+6=9，不相等。",
+      "explanation": "比例相等只保證交叉乘積 ad=bc，並能做合法倒比、交換內外項等變形，不能推出 a+c=b+d。取 2:3=4:6，便有 a+c=6、b+d=9，不相等，所以此反例足以否定必然性。",
       "steps": [
-        "選取等值比2:3=4:6",
-        "檢查各推論",
-        "總和等式失敗"
+        "將原比例轉成核心條件 ad=bc。",
+        "檢查 a+c=b+d 並非此條件的等價變形。",
+        "用 2:3=4:6 算得六不等於九，構成反例。"
       ],
       "optionAnalysis": [
         {
@@ -748,7 +755,7 @@ export default {
           "reason": "由ad=bc可重排為a/c=b/d，需c、d非0。"
         }
       ],
-      "misconceptionTarget": "把比例相等誤解成和相等。",
+      "misconceptionTarget": "把比例式兩側相等誤認為四個項可以任意相加仍相等。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -769,7 +776,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "1bdf4567346b549f283708e9966a32da6e483e5c834b10c3081d45180eaf0bd9"
+      "contentSha256": "5af89f0af11345bf5e623591cabcec3af0a67cfdb7bc8d707f416a680d06d7ad"
     },
     {
       "questionId": "u06-s004-v008",
@@ -793,11 +800,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "解得468-9b=4b，b=36，a=16，比例4:9。",
       "mainExplanation": "把總和條件轉成a=52-b，再用交叉乘積。",
-      "explanation": "把總和條件轉成a=52-b，再用交叉乘積。",
+      "explanation": "由 a+b=52 可把 a 表為 52-b。代入 a:b=4:9，得到 (52-b):b=4:9；交叉相乘為 9(52-b)=4b，改寫即 4b=9(52-b)。這個等式同時使用總和與原比例，可直接解出後項 b，且保留原本前後項順序。",
       "steps": [
-        "a=52-b",
-        "(52-b):b=4:9",
-        "9(52-b)=4b"
+        "由總和式寫出 a=52-b。",
+        "代入比例得到 (52-b):b=4:9。",
+        "交叉相乘列出 4b=9(52-b)。"
       ],
       "optionAnalysis": [
         {
@@ -821,7 +828,7 @@ export default {
           "reason": "a=52-b，代入a:b=4:9得(52-b)/b=4/9，故9(52-b)=4b。"
         }
       ],
-      "misconceptionTarget": "代入總和時把a、b對應顛倒。",
+      "misconceptionTarget": "把五十二直接當成比例前項，沒有先扣除 b 求出 a。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -842,7 +849,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "80616999a3b54eb4cfe6524c90d655730e4fc3e3273c3de5734e93aa59307389"
+      "contentSha256": "9699ea3e108337c64c7d726d8dc6011e703c2068e398e76fcd9f63245c564841"
     },
     {
       "questionId": "u06-s004-v009",
@@ -866,12 +873,11 @@ export default {
       "answerIndex": 1,
       "independentSolution": "15×36=540，且15:36=5:12，和51。",
       "mainExplanation": "比例給共同倍數，乘積再決定k；正值條件選k=3。",
-      "explanation": "比例給共同倍數，乘積再決定k；正值條件選k=3。",
+      "explanation": "因 x、y 為正數且 x:y=5:12，可設 x=5k、y=12k，k>0。乘積 60k²=540，所以 k²=9、k=3。故 x=15、y=36，x+y=51。正數條件排除了共同倍數負三，十五乘三十六也回到五百四十，故和唯一為五十一。",
       "steps": [
-        "x=5k,y=12k",
-        "60k²=540",
-        "k=3",
-        "x+y=51"
+        "依正數比例設 x=5k、y=12k，且 k>0。",
+        "代入 xy=540，得到 60k²=540。",
+        "取正根 k=3，求 x+y=15+36=51。"
       ],
       "optionAnalysis": [
         {
@@ -895,7 +901,7 @@ export default {
           "reason": "68是k=4。"
         }
       ],
-      "misconceptionTarget": "忽略k平方或正值條件。",
+      "misconceptionTarget": "由 k²=9 同時保留負三，忽略題目已指定 x、y 為正數。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -916,7 +922,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "cbd7e007fa9e6342c1edf20fdf3c2d889dd6ee0f2c0c11bac6965f908645aeb6"
+      "contentSha256": "a3145f4b8091d4037206f6b0714614b12cb0b590bcc3c35558f077054110117d"
     },
     {
       "questionId": "u06-s004-v010",
@@ -940,11 +946,11 @@ export default {
       "answerIndex": 2,
       "independentSolution": "48:27同除3得16:9。",
       "mainExplanation": "寬27是9的3倍，長16也乘3。",
-      "explanation": "寬27是9的3倍，長16也乘3。",
+      "explanation": "長:寬=16:9，寬二十七公分是九份的三倍，所以每份三公分，長十六份為 16×3=48 公分。長寬使用相同倍數，才能維持不變形；四十八比二十七仍可約為十六比九。",
       "steps": [
-        "列16:9=x:27",
-        "交叉相乘或倍率",
-        "x=48"
+        "以寬 27÷9 求每份三公分。",
+        "將長的十六份乘三，得到四十八公分。",
+        "用 48:27 同除以三，回驗為 16:9。"
       ],
       "optionAnalysis": [
         {
@@ -968,7 +974,7 @@ export default {
           "reason": "54把27乘2。"
         }
       ],
-      "misconceptionTarget": "把長寬順序顛倒。",
+      "misconceptionTarget": "把寬增加十八公分也直接加到長，沒有依比例使用倍數。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -989,7 +995,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c7b9d92087395b4c5dab85b1bc9d3854244bb6c84eb7502b38a2204b0b7fc4b3"
+      "contentSha256": "270c857187c9a9334b4f604c210d3b18815b292ea59211a28e6cebcd3ff1a539"
     },
     {
       "questionId": "u06-s004-v011",
@@ -1013,11 +1019,11 @@ export default {
       "answerIndex": 3,
       "independentSolution": "24:16=3:2。",
       "mainExplanation": "不變形表示長寬比保持3:2。",
-      "explanation": "不變形表示長寬比保持3:2。",
+      "explanation": "原長寬比 3:2，長十五公分對應三份，所以原每份五公分、短邊十公分。放大後長二十四公分的每份為 24÷3=8，短邊兩份為 16 公分。",
       "steps": [
-        "24:x=3:2",
-        "3x=48",
-        "x=16"
+        "保持長:寬=3:2 的對應順序。",
+        "由新長 24÷3 求每份八公分。",
+        "短邊兩份乘八，得到十六公分並核對不變形。"
       ],
       "optionAnalysis": [
         {
@@ -1041,7 +1047,7 @@ export default {
           "reason": "15:10=3:2；放大倍率24/15=1.6，短邊10×1.6=16。"
         }
       ],
-      "misconceptionTarget": "只放大一邊或把比例倒置。",
+      "misconceptionTarget": "把長邊增加九公分也加到短邊，誤用相同差而非相同倍數。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -1062,7 +1068,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "c20e0738905f7ba175c6f41284b63877dfd8e9f6b39a952ea6011464d077d66a"
+      "contentSha256": "2d226b2b3b0e3f4b01ef4ea2e262490a1d4f7e2a7249ec886640e047e822da56"
     },
     {
       "questionId": "u06-s004-v012",
@@ -1086,10 +1092,11 @@ export default {
       "answerIndex": 0,
       "independentSolution": "100:350同除50得2:7。",
       "mainExplanation": "水350對應7份，每份50，濃縮液2份100。",
-      "explanation": "水350對應7份，每份50，濃縮液2份100。",
+      "explanation": "濃縮液:水=2:7，三百五十毫升水對應七份，所以每份為 350÷7=50 毫升。濃縮液占兩份，應加入 2×50=100 毫升；一百比三百五十可回驗為二比七。",
       "steps": [
-        "350÷7=50",
-        "50×2=100"
+        "由水七份等於三百五十，求每份五十毫升。",
+        "濃縮液兩份乘五十，得到一百毫升。",
+        "用 100:350 同除以五十，回驗為 2:7。"
       ],
       "optionAnalysis": [
         {
@@ -1113,7 +1120,7 @@ export default {
           "reason": "175把水減半。"
         }
       ],
-      "misconceptionTarget": "把總量與水量混淆。",
+      "misconceptionTarget": "把三百五十當成總量分成九份，忽略它只代表水的七份。",
       "prerequisiteCheck": {
         "skillIds": [
           "ratio-part-total"
@@ -1134,7 +1141,7 @@ export default {
       "sourceScope": "CAP_108_JUNIOR_MATH",
       "reviewStatus": "independently-reviewed",
       "noTemplateDeclaration": true,
-      "contentSha256": "ecde2db1933cb8082064901ecc00ee2a8e38100acc11473a9788bcbd9706d2e9"
+      "contentSha256": "eac89142f98b2516a35bd2b7fb8257b9bd5cd9ac5da96fb2e791809de2b413c8"
     }
   ],
   "constructedResponses": [
@@ -1155,17 +1162,17 @@ export default {
         "指出b不可為0。"
       ],
       "fullCreditSolution": [
-        "因a:b=3:7，可令a=3k、b=7k，且k≠0。",
-        "a+b=10k，所以(a+b):b=10k:7k=10:7。",
-        "或由a/b=3/7，兩邊加1得(a+b)/b=10/7。"
+        "由 a:b=3:7，可設 a=3k、b=7k，其中 k≠0，才能使比的後項有定義。",
+        "則 a+b=10k，所以 (a+b):b=10k:7k；前後項同除以非零 k，得到 10:7。",
+        "另一證法是由 a/b=3/7，兩邊同加一，得到 (a+b)/b=10/7，結論相同。"
       ],
       "alternativeSolutions": [
         "直接用和比性質，但須說明其來自兩邊同加1。"
       ],
       "reasoningSteps": [
-        "因a:b=3:7，可令a=3k、b=7k，且k≠0。",
-        "a+b=10k，所以(a+b):b=10k:7k=10:7。",
-        "或由a/b=3/7，兩邊加1得(a+b)/b=10/7。"
+        "用共同非零倍數 k 表示 a、b。",
+        "計算 a+b 並列出與 b 的新比。",
+        "約去 k 得 10:7，再用分式加一法交叉驗證。"
       ],
       "rubric": [
         {
@@ -1193,9 +1200,9 @@ export default {
       "unitNotationRules": "符號a、b需保持一致；比號或分數表示均可。",
       "answerOnlyPolicy": "只寫10:7最多1分。",
       "commonErrors": [
-        "把a固定等於3。",
-        "只加左邊比值。",
-        "漏掉b非0。"
+        "把 a+b 的份數算成十後，仍把後項錯寫成三份。",
+        "約去 k 時未說明 k 非零，忽略比例後項定義。",
+        "分式兩邊加一時只加分子，沒有寫成同分母形式。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1210,7 +1217,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "19dbc403006fb511495e448be07d65cc0dd3927cee294ed4c2367c672684d08b"
+      "contentSha256": "21aff55c74f6c7b0e1ccace9fd4dbbdd0a523d188693add18148b056e8c75814"
     },
     {
       "questionId": "u06-s004-cr002",
@@ -1229,17 +1236,17 @@ export default {
         "核對比例成立但結論失敗。"
       ],
       "fullCreditSolution": [
-        "命題不一定成立。",
-        "取a=2、b=3、c=4、d=6，則2:3=4:6。",
-        "但a+c=6，而b+d=9，兩者不等，所以反例成立。"
+        "命題不一定成立，比例相等只保證交叉乘積相等，並不保證兩組項的和相等。",
+        "取 a=2、b=3、c=4、d=6，則 2:3=4:6，原比例式確實成立且後項皆非零。",
+        "但 a+c=2+4=6，而 b+d=3+6=9，六不等於九，所以此例足以否定命題。"
       ],
       "alternativeSolutions": [
         "可選任何兩個等值但倍率不同的比，例如1:2=3:6。"
       ],
       "reasoningSteps": [
-        "命題不一定成立。",
-        "取a=2、b=3、c=4、d=6，則2:3=4:6。",
-        "但a+c=6，而b+d=9，兩者不等，所以反例成立。"
+        "先辨認待判命題不是比例式的等價變形。",
+        "選擇兩個等值且後項非零的簡單整數比。",
+        "分別計算兩側和，得到不等結果以完成反例。"
       ],
       "rubric": [
         {
@@ -1267,9 +1274,9 @@ export default {
       "unitNotationRules": "使用比號或分數皆可，需清楚指派a、b、c、d。",
       "answerOnlyPolicy": "只寫『不一定』最多1分。",
       "commonErrors": [
-        "只驗證一組成立案例。",
-        "反例後項為0。",
-        "未檢查比例本身。"
+        "只說不成立卻沒有提供同時滿足原比例的具體反例。",
+        "選的四個數本身不構成等值比例，無法反駁命題。",
+        "驗證反例時只算 a+c，沒有比較 b+d 的數值。"
       ],
       "visualMode": "text-only",
       "figureId": null,
@@ -1284,7 +1291,7 @@ export default {
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
       "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_AT_FINAL_INTEGRATION",
       "reviewStatus": "independently-reviewed",
-      "contentSha256": "a815411e12ff6e55ba67313c8de8814147eaa7c20219d9b13072abb3fc27fed2"
+      "contentSha256": "fd3b0928f2274015ddb1bc836db91cb6a37e77d814366cd487127aa8410d6b8c"
     }
   ],
   "semanticReviews": [
@@ -1293,7 +1300,7 @@ export default {
       "questionId": "u06-s004-v001",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "033b77958d8366ba23eba5cfe4a9cb5a4a669a56ba5d4b845b07efc07f471758",
+      "contentSha256": "249271f0b86f89001401b3da60fd56bde95d50ed750ff62862c3d97b76bd59ab",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1330,7 +1337,7 @@ export default {
       "questionId": "u06-s004-v002",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "8db3d808ebe06006ce1f43bece1c7be813e3f02360e8a2c879dcf67b2e93941a",
+      "contentSha256": "762346c46d7727762ab602ce4dda4ce647fadf6d948ec26de1062ec37c8f8df5",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1367,7 +1374,7 @@ export default {
       "questionId": "u06-s004-v003",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "1efb68abf6d5df19fa667a40cdcbd97cb4735fce2f4ba8b33431ac09acd2da32",
+      "contentSha256": "da2055a1e14bef1ad045dafbd4b6ac61d75f0d6e2e4fd4789b35520197cf37ac",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1404,7 +1411,7 @@ export default {
       "questionId": "u06-s004-v004",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "367a1b60750c39efca0d619d06b2c6434ac95c4afda72b844a5ec130cf93a80b",
+      "contentSha256": "27e926d87f5f94629ee3e391e035e2f7e2d4ffba2d3b800a5dcd73683f99f74f",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1420,20 +1427,20 @@ export default {
         false
       ],
       "optionEvidence": [
-        "a:c=b:d 並非由原式一般推出。",
-        "相同比值不代表兩組總量相等。",
-        "原比例兩邊同時倒比，仍相等。",
-        "相同比值不代表差相等。"
+        "a:c=d:b 等價於 ab=cd，但原比例只保證 ad=bc，因此不是必然式。",
+        "相同比值不表示兩組項的總和相等。",
+        "四項非零，可將 a/b=c/d 兩邊同取倒數，得到 b/a=d/c。",
+        "相同比值不表示兩組項的差相等。"
       ],
       "ambiguityChecks": {
-        "wording": "題幹中的所求量為「判斷必然成立的比例變形」，已明示必要條件：四項均非0，倒比有定義。，不存在需猜測的隱藏量。",
-        "units": "單位審查結果：無單位。；因此選項可在同一基準下比較。",
-        "boundary": "範圍審查結果：題幹明示非0排除倒比定義問題。，未超出 U06 鎖定技能邊界。",
-        "rounding": "近似與取整審查：無近似。。"
+        "wording": "題目要求判斷必然成立的比例變形，並已明示四項非零，倒比有定義。",
+        "units": "本題為無單位代數比例，四個選項均可在相同代數條件下比較。",
+        "boundary": "第一選項要求 ab=cd，不再與原式 ad=bc 等價；只有倒比式由原條件必然推出。",
+        "rounding": "所有判斷均為精確代數等式，不涉及近似或四捨五入。"
       },
       "difficultyReason": "需要理解條件而非只算數字。",
       "literacyNecessity": null,
-      "reviewerNote": "獨立重算：令a=2,b=3,c=4,d=6驗證正確式；其餘不必成立。 正確選項為「b:a=d:c」。逐項檢查後，唯一為真的理由是「原比例兩邊同時倒比，仍相等。」；其餘三項分別因「a:c=b:d 並非由原式一般推出。」、「相同比值不代表兩組總量相等。」、「相同比值不代表差相等。」而排除。邊界與語意再檢查：題幹明示非0排除倒比定義問題。",
+      "reviewerNote": "獨立重算：令a=2,b=3,c=4,d=6驗證正確式；其餘不必成立。 原比例給 ad=bc，修正後第一選項 a:c=d:b 則要求 ab=cd，代入反例得到六不等於二十四，故非必然。第二、第四選項的和與差也不受相同比值保證。四項非零時可對 a/b=c/d 同取倒數，唯一必然成立的是 b:a=d:c；四選真值為 [false,false,true,false]，不存在第二答案。",
       "reviewerDecision": "pass"
     },
     {
@@ -1441,7 +1448,7 @@ export default {
       "questionId": "u06-s004-v005",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "208aa649c733ed1f96122f383700c26f674bc1dc92fc0a971ccfab1eeb169142",
+      "contentSha256": "790eb08bbbc2486adb59c2387606bb2c6eec8a2f48cc9dbf697ff9df74092c8f",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1478,7 +1485,7 @@ export default {
       "questionId": "u06-s004-v006",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "763dc93c45bce2f450f8c3a54f1965cb2fdf8de49217e53a240f2ca41191cb04",
+      "contentSha256": "0fe21c004fbb24d4b3fd5c1ae242e4798994c4f9ffe92589432fb5f5f68a81a3",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1515,7 +1522,7 @@ export default {
       "questionId": "u06-s004-v007",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "1bdf4567346b549f283708e9966a32da6e483e5c834b10c3081d45180eaf0bd9",
+      "contentSha256": "5af89f0af11345bf5e623591cabcec3af0a67cfdb7bc8d707f416a680d06d7ad",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1552,7 +1559,7 @@ export default {
       "questionId": "u06-s004-v008",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "80616999a3b54eb4cfe6524c90d655730e4fc3e3273c3de5734e93aa59307389",
+      "contentSha256": "9699ea3e108337c64c7d726d8dc6011e703c2068e398e76fcd9f63245c564841",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1589,7 +1596,7 @@ export default {
       "questionId": "u06-s004-v009",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "cbd7e007fa9e6342c1edf20fdf3c2d889dd6ee0f2c0c11bac6965f908645aeb6",
+      "contentSha256": "a3145f4b8091d4037206f6b0714614b12cb0b590bcc3c35558f077054110117d",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1626,7 +1633,7 @@ export default {
       "questionId": "u06-s004-v010",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "c7b9d92087395b4c5dab85b1bc9d3854244bb6c84eb7502b38a2204b0b7fc4b3",
+      "contentSha256": "270c857187c9a9334b4f604c210d3b18815b292ea59211a28e6cebcd3ff1a539",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1663,7 +1670,7 @@ export default {
       "questionId": "u06-s004-v011",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "c20e0738905f7ba175c6f41284b63877dfd8e9f6b39a952ea6011464d077d66a",
+      "contentSha256": "2d226b2b3b0e3f4b01ef4ea2e262490a1d4f7e2a7249ec886640e047e822da56",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
@@ -1700,7 +1707,7 @@ export default {
       "questionId": "u06-s004-v012",
       "unitId": "u06",
       "skillId": "proportion-property",
-      "contentSha256": "ecde2db1933cb8082064901ecc00ee2a8e38100acc11473a9788bcbd9706d2e9",
+      "contentSha256": "eac89142f98b2516a35bd2b7fb8257b9bd5cd9ac5da96fb2e791809de2b413c8",
       "reviewVersion": "human-review-u06-r1.0",
       "reviewedAt": "2026-07-12",
       "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",

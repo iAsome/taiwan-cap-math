@@ -53,10 +53,11 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "兩點距離可想成數線上跨過的總長度。從 -4 到 5 會跨過 9 個單位。",
-    "直接相減可能得到負數，所以要取絕對值：|-4-5|=|-9|=9。",
-    "|a-b| 與 |b-a| 相等，因為方向相反但距離相同。",
-    "|x-c|=d 表示以 c 為中心，向左與向右各 d 單位；d>0 時通常有兩個位置。"
+    "兩點距離可想成數線上跨過的總長度。從 −4 到 5 會跨過 9 個單位。",
+    "直接相減可能得到負數，所以要取絕對值：|−4−5|=|−9|=9。",
+    "|a−b| 與 |b−a| 相等，因為方向相反但距離相同。",
+    "|x−c|=d 表示以 c 為中心，向左與向右各 d 單位；d>0 時通常有兩個位置。",
+    "情境若問總路程，必須把每一段距離相加；若只問起點到終點的距離，才只看最初與最後坐標。"
   ],
   "formalDefinitions": [
     {
@@ -123,44 +124,24 @@ export const LECTURE = {
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "求 -6 與 2 的距離。",
-      "solutionSteps": [
-        "寫 |-6-2|。",
-        "|-8|=8。",
-        "距離為 8。"
-      ],
-      "answer": "8。"
+      "prompt": "求 −6 與 2 的距離。",
+      "answer": "距離是 8。",
+      "why": "兩點距離用坐標差的絕對值，|−6−2|=|−8|=8。兩點分居原點兩側，也能把 −6 到 0 的 6 單位與 0 到 2 的 2 單位相加驗證。兩種算法都得到相同的非負距離。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "清晨 -3°C、中午 7°C，溫差多少？",
-      "solutionSteps": [
-        "溫差是不分方向的距離。",
-        "|7-(-3)|=|10|。",
-        "結果 10°C。"
-      ],
-      "answer": "10°C。"
+      "prompt": "清晨 −3°C、中午 7°C，溫差多少？",
+      "answer": "溫差是 10°C。",
+      "why": "溫差問的是不帶方向的距離，所以計算 |7−(−3)|=|10|=10°C。因兩個溫度分居零度兩側，也可將到零度的 3°C 與 7°C 相加。結果只表示差距大小，不附升降方向。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "距離 4 的位置與 1 相距 6，求位置。",
-      "solutionSteps": [
-        "設位置 x，|x-1|=6。",
-        "向右 1+6=7。",
-        "向左 1-6=-5。"
-      ],
-      "answer": "7 或 -5。"
+      "prompt": "某位置與坐標 1 相距 6，求所有可能位置。",
+      "answer": "坐標是 7 或 −5。",
+      "why": "距離條件可寫成 |x−1|=6，表示以 1 為中心向左右各走 6 單位。向右得 1+6=7，向左得 1−6=−5，兩值代回都與 1 相距 6。固定正距離會形成中心兩側的等距位置。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "從 -2 移到 -9，變化量與距離各多少？",
-      "solutionSteps": [
-        "變化量=-9-(-2)=-7，表示向負方向 7。",
-        "距離=|-7|=7。",
-        "兩者大小相同但是否帶方向不同。"
-      ],
-      "answer": "變化量 -7；距離 7。"
+      "prompt": "從 −2 移到 −9，變化量與距離各多少？",
+      "answer": "變化量是 −7；距離是 7。",
+      "why": "帶號變化用後值減前值，−9−(−2)=−7，負號表示向負方向移動；距離只保留大小，所以 |−7|=7。兩者數值大小相同，但方向資訊不同。"
     }
   ],
   "commonMistakes": [
@@ -247,7 +228,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r2.1",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "2f95b82c4909b9e9acee449f8a72514a9f5e87332e3acae584b3af235ebbef8a",
+  "contentSha256": "b3b1658949e375bfa0688a5d199d7521fe6c2107377568e4e49e019f8fe3920e",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -271,7 +252,7 @@ export const QUESTIONS = [
       "6"
     ],
     "answerIndex": 0,
-    "explanation": "距離為 |-3-0|=3。",
+    "explanation": "數線上兩點的距離是坐標差的絕對值。以 −3 與 0 計算，|−3−0|=|−3|=3；絕對值只保留間隔大小，所以距離是 3，不會寫成負數。從數線逐格檢查，兩點也正好相隔三個單位。",
     "steps": [
       "寫坐標差-3。",
       "取絕對值。",
@@ -299,7 +280,7 @@ export const QUESTIONS = [
         "reason": "是-3與3的距離。"
       }
     ],
-    "commonMistake": "把左側坐標 -3 當作負距離。",
+    "commonMistake": "把左側坐標負三直接當成負距離，忘記距離必須取絕對值。",
     "concept": "距離是坐標差的絕對值。",
     "tags": [
       "數與量",
@@ -314,7 +295,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "dc1ba663c444148a0b3c3ed793df6567b4b8903b40b41909548fe37fee11602c",
+    "contentSha256": "614bd8181ddd6ca56d7e6a00e1bcb5a04426ac3460e31787ec6b963a812da9eb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -336,7 +317,7 @@ export const QUESTIONS = [
       "3"
     ],
     "answerIndex": 1,
-    "explanation": "|7-2|=5。",
+    "explanation": "坐標 2 與 7 都在原點右側，兩點間隔應用坐標差而不是坐標和。計算 |7−2|=|5|=5，因此距離為 5；把兩個坐標相加得到 9 並不代表兩點間隔。",
     "steps": [
       "用較大坐標減較小坐標。",
       "7-2=5。",
@@ -364,7 +345,7 @@ export const QUESTIONS = [
         "reason": "算術錯。"
       }
     ],
-    "commonMistake": "用2+7計算距離。",
+    "commonMistake": "把兩個正坐標二與七直接相加，誤將坐標和九當成兩點距離。",
     "concept": "同側兩點距離為坐標差的絕對值。",
     "tags": [
       "數與量",
@@ -379,7 +360,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8be8938879747406c517f2e4dd269c166eb971d904a3ffa05586a5abcb8a7cd1",
+    "contentSha256": "c48ca2aa6c7da2b83e7239ad3daaa4f49c7c96176e678b79953bee742e06687e",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -401,7 +382,7 @@ export const QUESTIONS = [
       "-6-4=-10"
     ],
     "answerIndex": 2,
-    "explanation": "兩點距離為 |-6-4|=|-10|=10。",
+    "explanation": "兩點坐標為 −6 與 4，距離公式是一個坐標減另一個坐標後取絕對值。|−6−4|=|−10|=10；兩點分居原點兩側，也可用 6+4=10 檢查，所以第三個算式正確。",
     "steps": [
       "寫一坐標減另一坐標。",
       "-6-4=-10。",
@@ -429,7 +410,7 @@ export const QUESTIONS = [
         "reason": "未取絕對值且結果為負。"
       }
     ],
-    "commonMistake": "把跨越0的距離算成6-4=2。",
+    "commonMistake": "跨過原點時只算六減四得到二，沒有把兩側到原點的距離相加。",
     "concept": "跨過0時距離是兩側距離相加，等同絕對差。",
     "tags": [
       "數與量",
@@ -444,7 +425,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "bd4699df035f746527f239da508d0e52e286e40d1706f0ea78598e9a459c2d67",
+    "contentSha256": "86313f888bd6214d3538b84bc52c5750ae5065d002a35705fd6843ff0c59ed03",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -466,7 +447,7 @@ export const QUESTIONS = [
       "9"
     ],
     "answerIndex": 3,
-    "explanation": "MN=|5-(-4)|=|9|=9。",
+    "explanation": "由圖讀得 M=−4、N=5，兩點分居原點左右。依距離公式，MN=|5−(−4)|=|5+4|=9；也可把 M 到原點的 4 單位與原點到 N 的 5 單位相加，仍得 9。兩種算法都完整計入跨過原點的路段。",
     "steps": [
       "讀出M=-4,N=5。",
       "計算5-(-4)=9。",
@@ -509,7 +490,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "d7b279534a42ab20fb317e65888937921604fd2e2b9d5437d01c03993a6740e1",
+    "contentSha256": "69e5e80c5a1912d2b4fc2558f97ce8bb86e52e7afae3e401829919637132dcce",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -531,7 +512,7 @@ export const QUESTIONS = [
       "只有 8"
     ],
     "answerIndex": 0,
-    "explanation": "從2向左6得到-4，向右6得到8。",
+    "explanation": "與坐標 2 相距 6，表示從中心 2 向左右各走 6 單位。向左得 2−6=−4，向右得 2+6=8；代回可驗得 |−4−2| 與 |8−2| 都等於 6，因此兩個位置都要列出。這兩點以坐標二為中心左右對稱。",
     "steps": [
       "固定中心2。",
       "2-6=-4。",
@@ -559,7 +540,7 @@ export const QUESTIONS = [
         "reason": "漏掉左側位置。"
       }
     ],
-    "commonMistake": "只向右走得到8。",
+    "commonMistake": "只從中心二向右走六單位得到八，漏掉向左走所得的負四。",
     "concept": "距離固定時有中心左右兩個位置。",
     "tags": [
       "數與量",
@@ -574,7 +555,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "356b8311a6b63395c08da3cd8aee298129c072f69c009f03a2d640459c0558b1",
+    "contentSha256": "d3fea31ca90acb7fe291b55d70829d5e9977930812853f5425022306feeb9de2",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -596,7 +577,7 @@ export const QUESTIONS = [
       "-10°C"
     ],
     "answerIndex": 1,
-    "explanation": "相差多少使用距離：|-2-(-8)|=|6|=6°C。",
+    "explanation": "題目問相差多少，求的是不帶方向的溫度距離。計算 |−2−(−8)|=|−2+8|=6°C；兩次溫度都在零下且位於同一側，所以是 8 與 2 的差，不是兩者相加。",
     "steps": [
       "後值減前值6。",
       "取絕對值。",
@@ -639,7 +620,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f6d9b5a058517b606018e203e9d777fccfaa059f08abdcbfc156ff4c01f81142",
+    "contentSha256": "ae91c68e07d635f4733a7d51871fe4c0a1f4899114f7825a742891915bc72c51",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -661,7 +642,7 @@ export const QUESTIONS = [
       "x=7 或 x=-1"
     ],
     "answerIndex": 2,
-    "explanation": "|x+3|=|x-(-3)|，表示 x 與 -3 的距離為4，所以 x=-3+4=1 或 -3-4=-7。",
+    "explanation": "把 |x+3| 看成 |x−(−3)|，可知 x 與中心 −3 的距離是 4。向右走得 x=−3+4=1，向左走得 x=−3−4=−7；兩值代回後絕對值都為 4，所以不能漏掉任一解。兩個解也確實分居中心左右兩側。",
     "steps": [
       "辨認中心-3。",
       "向右4得1。",
@@ -689,7 +670,7 @@ export const QUESTIONS = [
         "reason": "中心符號讀錯。"
       }
     ],
-    "commonMistake": "把中心誤看成+3。",
+    "commonMistake": "把式中的加三誤讀成中心正三，因而得到錯誤的兩個等距位置。",
     "concept": "|x-c|=d的中心是c；x+3=x-(-3)。",
     "tags": [
       "數與量",
@@ -704,7 +685,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "900b857c775eb617818da16a25f59b224266b6cc0986b3e15864c93f0878d368",
+    "contentSha256": "992f8972bdcafdec6c84ebb55b332eb1511d7342aeac081e115fa2baf336f3bb",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -726,7 +707,7 @@ export const QUESTIONS = [
       "B、C"
     ],
     "answerIndex": 3,
-    "explanation": "AB=8，AC=11，BC=3，因此 B、C 最短。",
+    "explanation": "要比較三點的成對距離，必須逐對計算：AB=|2−(−6)|=8，AC=|5−(−6)|=11，BC=|5−2|=3。三個結果中 3 最小，因此距離最短的是 B、C。逐對列式可避免只憑某點的絕對值大小猜測。",
     "steps": [
       "分別算三對距離。",
       "得到8,11,3。",
@@ -769,7 +750,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "48d78bc1bed323b7368816d081110d3314de36a8bbadbcab6111754a839b0dcb",
+    "contentSha256": "1f034333465cee6dceb10318e486de9811f6c6428f2e894cdc4259b3132bd93c",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -791,7 +772,7 @@ export const QUESTIONS = [
       "7"
     ],
     "answerIndex": 0,
-    "explanation": "AB=|3-(-4)|=7，BC=|-1-3|=4，總路程=11。",
+    "explanation": "總路程要累加實際走過的每一段。A 到 B 為 |3−(−4)|=7，B 到 C 為 |−1−3|=4，所以總路程是 7+4=11；不能用 A 到 C 的直接距離 3 取代繞經 B 的路線。返回的第二段路程不會與第一段互相抵消。",
     "steps": [
       "算第一段7。",
       "算第二段4。",
@@ -834,7 +815,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "03452ed7faf6b1888bf1cd70af5eae46d7273743d26094138ebdea8a1358d536",
+    "contentSha256": "69cfbbc105b3efed2cb29576515edcd13413c8e430ecaab38d03763dacea8ffa",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -856,7 +837,7 @@ export const QUESTIONS = [
       "6°C"
     ],
     "answerIndex": 1,
-    "explanation": "溫差=|3-(-6)|=9°C。",
+    "explanation": "由圖讀得清晨 −6°C、中午 3°C。溫差是不帶方向的距離，故 |3−(−6)|=|9|=9°C；兩個溫度分居 0°C 兩側，也可用 6+3=9 檢查，答案不帶負號。圖上的跨零位置與計算結果互相符合。",
     "steps": [
       "讀圖得到-6與3。",
       "計算3+6=9。",
@@ -899,7 +880,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "圖中的兩時段溫度與問題「溫差」共同決定絕對差。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "2a4543b475f5d10361e7ea39a657bfd88b34ca035702c0753bf9aff54977a944",
+    "contentSha256": "4fb6320352f4f7e030cba475ba345097ca3aa1a1699b809540d28ba89973a3bd",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -921,7 +902,7 @@ export const QUESTIONS = [
       "-33 公尺"
     ],
     "answerIndex": 2,
-    "explanation": "|-48-(-15)|=|-33|=33 公尺。",
+    "explanation": "平台與救援站都位於入口下方，屬於數線同一側。兩處垂直距離為 |−48−(−15)|=|−33|=33 公尺；48 與 15 是各自到入口的深度，不能直接相加成 63。",
     "steps": [
       "兩處都在入口下方。",
       "算坐標差-33。",
@@ -949,7 +930,7 @@ export const QUESTIONS = [
         "reason": "距離不可負。"
       }
     ],
-    "commonMistake": "兩個負高度就把48與15相加成63。",
+    "commonMistake": "看到兩個負高度便把四十八與十五相加，忽略兩處位於入口同一側。",
     "concept": "同一側兩點距離為深度差。",
     "tags": [
       "數與量",
@@ -964,7 +945,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "入口基準與兩處負高度共同決定同側距離。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "9125069fe1056868e81a2b490aff3c7f1e098ff730361671052a70267534edb4",
+    "contentSha256": "6d1ad445c631267a408b486fda30fb25ea2ec9e3e3cd5227633d14b7d66ed948",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -986,7 +967,7 @@ export const QUESTIONS = [
       "370 元"
     ],
     "answerIndex": 3,
-    "explanation": "|130-(-240)|=370 元。",
+    "explanation": "兩次餘額相差多少要取絕對差。由 −240 元到 130 元跨過 0，計算 |130−(−240)|=|370|=370 元；也可把負餘額到 0 的 240 元與 0 到正餘額的 130 元相加。兩種方法都保留了跨過零的完整變化範圍。",
     "steps": [
       "後值減前值130+240。",
       "得到370。",
@@ -1014,7 +995,7 @@ export const QUESTIONS = [
         "reason": "|130+240|=370元。"
       }
     ],
-    "commonMistake": "計算240-130=110，沒有把-240視為負坐標。",
+    "commonMistake": "只用二百四十減一百三十得到一百一十，漏算跨過零的完整距離。",
     "concept": "負餘額到正餘額的距離跨越0。",
     "tags": [
       "數與量",
@@ -1029,7 +1010,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "兩次餘額及「相差多少」措辭決定使用絕對差。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "498de773c2114ec01851fafd15b01ff470591a56a32354092260d3872e3e728f",
+    "contentSha256": "a9f0c307ffad32fbb46071ad5471bf61ed026c51443c59c493f3a7fdbade1192",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1050,8 +1031,9 @@ export const CONSTRUCTED_RESPONSES = [
       "固定中心B=4向左右各5。"
     ],
     "fullCreditSolution": [
-      "AB=|4-(-8)|=12。",
-      "與B相距5的坐標為4-5=-1與4+5=9。"
+      "先求 A、B 的距離：AB=|4−(−8)|=|12|=12，距離不帶負號。",
+      "以 B=4 為中心向左走 5 單位，得到第一個整數坐標 4−5=−1。",
+      "再由 B 向右走 5 單位，得到第二個坐標 4+5=9；代回後 |−1−4| 與 |9−4| 都等於 5。"
     ],
     "alternativeSolutions": [
       "可用數線計數得到相同結果。"
@@ -1078,16 +1060,16 @@ export const CONSTRUCTED_RESPONSES = [
       "兩個等距點都必須列出。"
     ],
     "commonErrors": [
-      "AB算4。",
-      "只寫9。",
-      "把中心當0。"
+      "計算 |4-(-8)| 時漏掉雙重負號，將 AB 距離誤寫成 4。",
+      "只找到 B 右側的 9，漏掉 B 左側同樣相距 5 的 -1。",
+      "把原點 0 當成等距中心，沒有以題目指定的 B=4 為中心。"
     ],
     "independentReview": {
       "derivedResult": "AB=12；坐標-1與9。",
       "ambiguity": "none",
       "decision": "pass"
     },
-    "contentSha256": "7f17710f0b6568973dd1f02295f216f43c9160f4222e6e8d82c0ec298c077501",
+    "contentSha256": "d569c7f0c0be0525e45bcf35e3c31884902306dd8ac963a27fa69e2300fb6e61",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {

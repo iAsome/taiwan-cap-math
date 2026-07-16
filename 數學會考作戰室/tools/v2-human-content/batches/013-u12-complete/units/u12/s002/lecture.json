@@ -9,9 +9,9 @@
   "audience": "國中零基礎至會考滿分",
   "reviewStatus": "independently-reviewed",
   "learningOutcomes": [
-    "能辨認平方差 a^2-b^2。",
+    "能辨認平方差 a²-b²。",
     "能辨認完全平方三項式。",
-    "能分辨 x^2+b^2 不是平方差。",
+    "能分辨 x²+b² 不是平方差。",
     "能在使用公式前先提公因式。",
     "能以展開驗證公式分解。"
   ],
@@ -42,51 +42,52 @@
   ],
   "notation": [
     {
-      "symbol": "a^2-b^2",
+      "symbol": "a²-b²",
       "meaning": "兩平方之差。"
     },
     {
-      "symbol": "(a+b)^2",
-      "meaning": "a^2+2ab+b^2。"
+      "symbol": "(a+b)²",
+      "meaning": "a²+2ab+b²。"
     },
     {
-      "symbol": "(a-b)^2",
-      "meaning": "a^2-2ab+b^2。"
+      "symbol": "(a-b)²",
+      "meaning": "a²-2ab+b²。"
     }
   ],
   "conceptNarrative": [
-    "平方差來自 (a+b)(a-b)=a^2-b^2，中間交叉項互相抵消。",
+    "平方差來自 (a+b)(a-b)=a²-b²，中間交叉項互相抵消。",
     "完全平方三項式的首末項必須都是平方，中間項還要等於首末平方根乘積的兩倍。",
-    "符號由中間項決定：正中間項配 (a+b)^2，負中間項配 (a-b)^2。",
-    "若各項先有公因式，應先提出，才能露出公式結構。"
+    "符號由中間項決定：正中間項配 (a+b)²，負中間項配 (a-b)²。",
+    "若各項先有公因式，應先提出，才能露出公式結構。",
+    "公式法不是看外形便套用，而要逐項驗證結構。兩項式只有在兩項都是平方且以減號連接時，才能寫成和乘差；三項式則需先找首末項平方根，再確認中間項恰為正或負的兩倍乘積，符號決定括號中的加減。若原式另有公因式，必須先提出再檢查公式，最後把結果完整展開，確認外層因式、交叉項與各項符號都沒有遺漏。"
   ],
   "formalDefinitions": [
     {
       "name": "平方差公式",
-      "statement": "a^2-b^2=(a+b)(a-b)。"
+      "statement": "a²-b²=(a+b)(a-b)。"
     },
     {
       "name": "完全平方公式",
-      "statement": "a^2±2ab+b^2=(a±b)^2。"
+      "statement": "a²±2ab+b²=(a±b)²。"
     }
   ],
   "formulas": [
     {
-      "formula": "a^2-b^2=(a+b)(a-b)",
+      "formula": "a²-b²=(a+b)(a-b)",
       "conditions": [
         "兩項都是平方且中間是減號"
       ],
       "meaning": "平方差。"
     },
     {
-      "formula": "a^2+2ab+b^2=(a+b)^2",
+      "formula": "a²+2ab+b²=(a+b)²",
       "conditions": [
         "中間項恰為 +2ab"
       ],
       "meaning": "和的平方。"
     },
     {
-      "formula": "a^2-2ab+b^2=(a-b)^2",
+      "formula": "a²-2ab+b²=(a-b)²",
       "conditions": [
         "中間項恰為 -2ab"
       ],
@@ -94,7 +95,7 @@
     }
   ],
   "nonApplicableCases": [
-    "a^2+b^2 在國中整數係數範圍不能套平方差。",
+    "a²+b² 在國中整數係數範圍不能套平方差。",
     "首末項是平方但中間項不是 ±2ab 時，不能硬套完全平方。",
     "若 a 或 b 的辨認錯誤，中間項檢查會失敗。"
   ],
@@ -128,39 +129,43 @@
   "workedExamples": [
     {
       "exampleId": "L1",
-      "prompt": "x^2-49",
+      "prompt": "x²-49",
       "solutionSteps": [
-        "x^2 與 49=7^2。",
+        "x² 與 49=7²。",
         "兩平方相減。"
       ],
-      "answer": "(x+7)(x-7)"
+      "answer": "(x+7)(x-7)",
+      "why": "未知數平方與七的平方以減號連接，正好符合平方差；一正一負兩因式相乘時，正七倍未知數與負七倍未知數抵消，只留下未知數平方減四十九。"
     },
     {
       "exampleId": "L2",
-      "prompt": "4y^2+12y+9",
+      "prompt": "4y²+12y+9",
       "solutionSteps": [
         "首項根為 2y，末項根為 3。",
         "2·2y·3=12y，符號為正。"
       ],
-      "answer": "(2y+3)^2"
+      "answer": "(2y+3)²",
+      "why": "首末項平方根是二倍未知數與三，兩倍乘積恰為正十二倍未知數；因此括號取加號並平方，展開後首項、中間項與末項都逐一吻合。"
     },
     {
       "exampleId": "L3",
-      "prompt": "25m^2-20mn+4n^2",
+      "prompt": "25m²-20mn+4n²",
       "solutionSteps": [
         "首末平方根為 5m、2n。",
         "中間項 -2·5m·2n=-20mn。"
       ],
-      "answer": "(5m-2n)^2"
+      "answer": "(5m-2n)²",
+      "why": "首末平方根五甲與二乙的兩倍乘積是二十甲乙，而原中間項為負，所以使用差式平方；兩個負交叉項合計負二十甲乙，符號與係數都正確。"
     },
     {
       "exampleId": "L4",
-      "prompt": "3a^2-75",
+      "prompt": "3a²-75",
       "solutionSteps": [
-        "先提出 3 得 a^2-25。",
+        "先提出 3 得 a²-25。",
         "再用平方差。"
       ],
-      "answer": "3(a+5)(a-5)"
+      "answer": "3(a+5)(a-5)",
+      "why": "三是兩項的共同因數，若直接只看平方差容易遺漏外層；先提出三後，括號內才是甲平方減五平方，再分成和與差並保留最外層三。"
     }
   ],
   "difficultyConnections": {
@@ -171,7 +176,7 @@
   },
   "commonMistakes": [
     {
-      "mistake": "把 a^2+b^2 當平方差。",
+      "mistake": "把 a²+b² 當平方差。",
       "why": "只看到兩個平方。",
       "correction": "公式要求減號。"
     },
@@ -181,9 +186,9 @@
       "correction": "必須等於 ±2ab。"
     },
     {
-      "mistake": "把 (a-b)^2 寫成 a^2-b^2。",
+      "mistake": "把 (a-b)² 寫成 a²-b²。",
       "why": "忽略交叉項。",
-      "correction": "展開是 a^2-2ab+b^2。"
+      "correction": "展開是 a²-2ab+b²。"
     },
     {
       "mistake": "平方差兩括號都同號。",
@@ -256,5 +261,5 @@
   },
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
   "replacementPolicy": "REPLACE_MATCHING_LEGACY_ONLY_DURING_FINAL_INTEGRATION",
-  "contentSha256": "f83e588b58fa16b0a9949e4978f5455b684cca6b8e96cf1a44ca160282ecb2c9"
+  "contentSha256": "04006396d6367820f026009c868032342ed3fbfece03ddc80bd274723ee2e69d"
 }

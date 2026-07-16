@@ -1023,7 +1023,7 @@ export const QUESTIONS = [
       "第三邊是否完全等長"
     ],
     "answerIndex": 1,
-    "independentSolution": "若角不是夹角，可能出現不同形状支架；確認夹角位置後，才可保證模板形状相同。",
+    "independentSolution": "若角不是夾角，可能出現不同形狀支架；確認夾角位置後，才可保證模板形狀相同。",
     "explanation": "兩邊比加一角只有在該角是兩邊夾角時才構成 SAS；否則資料不足。",
     "steps": [
       "圈出兩組成比例邊。",
@@ -1052,12 +1052,12 @@ export const QUESTIONS = [
         "reason": "SAS 不需要第三邊等長。"
       }
     ],
-    "misconceptionTarget": "只记住兩邊一角而漏掉角的位置。",
+    "misconceptionTarget": "只記住兩邊一角而漏掉角的位置。",
     "prerequisiteCheck": "能進行基本四則與比例運算。",
     "estimatedTimeSec": 75,
     "unitAndRoundingCheck": "本題為條件判斷，無換算。",
     "ambiguityAndBoundaryAudit": "『各有兩邊成 4:7 的比例』指兩支架之間的兩組對應邊比相同。",
-    "difficultyReason": "在制造决策中识別 SAS 的缺失條件。",
+    "difficultyReason": "在製造決策中識別 SAS 的缺失條件。",
     "literacyContextNecessity": "裁切模板能否共用取決於支架形狀是否由 SAS 唯一確定，夾角位置是必要製造條件。",
     "visualMode": "text-only",
     "figureId": null,
@@ -1066,7 +1066,7 @@ export const QUESTIONS = [
     "replacementPolicy": "REPLACE_MATCHING_LEGACY_RECORD_ONLY_DURING_FINAL_INTEGRATION",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "13c7f4a7f40e19ce405ded24a3e0f812108bc6aebff0947307775fb31f53f14d"
+    "contentSha256": "47376deadd3533b1f100ea57d9edc0c4dc48efd49117c9e369552dc6a60ddcdf"
   }
 ];
 
@@ -1540,8 +1540,8 @@ export const SEMANTIC_REVIEWS = [
     "skillId": "similarity-sas",
     "reviewVersion": "human-review-r3.0",
     "reviewedAt": "2026-07-12",
-    "contentSha256": "13c7f4a7f40e19ce405ded24a3e0f812108bc6aebff0947307775fb31f53f14d",
-    "independentSolution": "若角不是夹角，可能出現不同形状支架；確認夹角位置後，才可保證模板形状相同。",
+    "contentSha256": "47376deadd3533b1f100ea57d9edc0c4dc48efd49117c9e369552dc6a60ddcdf",
+    "independentSolution": "若角不是夾角，可能出現不同形狀支架；確認夾角位置後，才可保證模板形狀相同。",
     "derivedAnswer": "相等角是否為那兩組成比例邊的夾角",
     "storedAnswer": "相等角是否為那兩組成比例邊的夾角",
     "answerMatch": true,
@@ -1558,9 +1558,9 @@ export const SEMANTIC_REVIEWS = [
       "units": "本題為條件判斷，無換算。",
       "scope": "只使用國中會考範圍內的「SAS 相似」概念，未要求高中延伸。"
     },
-    "difficultyReason": "在制造决策中识別 SAS 的缺失條件。",
+    "difficultyReason": "在製造決策中識別 SAS 的缺失條件。",
     "literacyNecessityReview": "裁切模板能否共用取決於支架形狀是否由 SAS 唯一確定，夾角位置是必要製造條件。",
-    "reviewerNote": "重新由已知條件獨立計算：若角不是夹角，可能出現不同形状支架；確認夹角位置後，才可保證模板形状相同。 四個選項逐一核對後，只有「相等角是否為那兩組成比例邊的夾角」符合；主要排除點是「只记住兩邊一角而漏掉角的位置。」。",
+    "reviewerNote": "重新由已知條件獨立計算：若角不是夾角，可能出現不同形狀支架；確認夾角位置後，才可保證模板形狀相同。 四個選項逐一核對後，只有「相等角是否為那兩組成比例邊的夾角」符合；主要排除點是「只記住兩邊一角而漏掉角的位置。」。",
     "reviewerDecision": "pass",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }

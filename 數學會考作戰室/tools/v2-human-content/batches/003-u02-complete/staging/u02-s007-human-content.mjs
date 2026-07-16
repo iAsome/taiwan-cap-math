@@ -44,10 +44,9 @@ export const LECTURE = {
     }
   ],
   "conceptNarrative": [
-    "每個事件發生時刻都是其週期的倍數。",
-    "多事件再次同時發生，時間差必須是所有週期的共同倍數；第一次重合取LCM。",
-    "若題目給鐘點，先求經過分鐘，再加回起始時間。",
-    "區間計數時要處理起點是否算、終點是否包含。"
+    "週期事件從共同起點出發後，各自發生在週期的整數倍時刻。要找第一次「再次」同時發生，經過時間必須是所有週期的共同倍數，而且要取最小正值，也就是 LCM。",
+    "若題目問實際鐘點，求得分鐘或小時後還要加回起始時刻，並正確處理跨小時、跨中午或隔天。若問某事件在下一次同步前發生幾次，可用共同週期除以該事件週期。",
+    "區間計數要特別讀清起點與終點是否包含。『再同時』通常不算第零時刻；終點若包含，只有當它確實是共同週期倍數才計入。列出正倍數比只做除法更能防止邊界錯誤。"
   ],
   "formalDefinitions": [
     {
@@ -77,98 +76,96 @@ export const LECTURE = {
   "method": [
     {
       "step": 1,
-      "instruction": "列出各週期與共同起點。",
-      "check": "單位是否一致？"
+      "instruction": "列出所有事件週期與共同起始時刻，將秒、分鐘、小時或天統一單位。",
+      "check": "每個事件都已列入，沒有把起始鐘點誤當成週期。"
     },
     {
       "step": 2,
-      "instruction": "求LCM。",
-      "check": "是否為第一次再次同步？"
+      "instruction": "求所有週期的最小公倍數，得到第一次再次同步的經過時間。",
+      "check": "結果可被每個週期整除，且沒有更小的正共同倍數。"
     },
     {
       "step": 3,
-      "instruction": "換算成實際時刻。",
-      "check": "有無跨小時或隔天？"
+      "instruction": "若問實際時刻，將共同週期加回起始時刻並完成進位或跨日。",
+      "check": "六十分鐘換一小時、二十四小時換一天的轉換正確。"
     },
     {
       "step": 4,
-      "instruction": "若問次數，列LCM倍數。",
-      "check": "起點、終點是否計入？"
+      "instruction": "若問區間內次數，從第一個正 LCM 倍數逐一列到終點。",
+      "check": "起點是否排除、終點是否包含都依題目文字處理。"
     },
     {
       "step": 5,
-      "instruction": "核對每個事件。",
-      "check": "同步時刻除以每個週期是否為整數？"
+      "instruction": "將每個列出的同步時刻分別除以各週期，做整除驗證。",
+      "check": "最後一個列入值符合範圍，下一個倍數確實超出範圍。"
     }
   ],
   "workedExamples": [
     {
-      "exampleId": "L1",
-      "prompt": "6與8分鐘週期同步。",
+      "exampleId": "u02-s007-example-a",
+      "prompt": "兩個提示音每 9、15 分鐘響一次，現在同時響，何時再同步？",
       "solutionSteps": [
-        "lcm=24。",
-        "24同時為6×4與8×3。"
+        "計算 lcm(9,15)=45，取得第一次再次同步的經過時間。",
+        "驗算 45÷9=5、45÷15=3，兩個週期都在完整次數後重合。"
       ],
-      "answer": "24分鐘後。"
+      "answer": "45 分鐘後。",
+      "why": "再次同步時間必須同時是九與十五的倍數，第一次重合取最小公倍數四十五。四十五除以九得五、除以十五得三，因此兩個提示音都正好回到週期點。"
     },
     {
-      "exampleId": "L2",
-      "prompt": "8:30起每15、20分鐘。",
+      "exampleId": "u02-s007-example-b",
+      "prompt": "上午 8:20 同時啟動的兩設備每 18、24 分鐘重啟，下次同時重啟是何時？",
       "solutionSteps": [
-        "lcm=60分鐘。",
-        "8:30加1小時。"
+        "求 lcm(18,24)=72 分鐘，得到再次共同重啟的最短間隔。",
+        "將七十二分鐘加到上午八點二十分，先加一小時再加十二分鐘。"
       ],
-      "answer": "9:30。"
+      "answer": "上午 9:32。",
+      "why": "十八與二十四的最小公倍數是七十二分鐘。從八點二十分加一小時十二分鐘，先到九點二十分再加十二分鐘，得到九點三十二分。"
     },
     {
-      "exampleId": "L3",
-      "prompt": "12、18分鐘，兩小時內同步幾次？",
+      "exampleId": "u02-s007-example-c",
+      "prompt": "每 10、15 分鐘同步一次的事件，在 90 分鐘內含終點、不含起點，共同步幾次？",
       "solutionSteps": [
-        "lcm=36。",
-        "36、72、108分鐘三次；144超過120。"
+        "計算共同週期 lcm(10,15)=30 分鐘。",
+        "從第一個正倍數列出 30、60、90，排除零且納入符合條件的終點。"
       ],
-      "answer": "不含起點共3次。"
+      "answer": "3 次。",
+      "why": "共同週期為三十分鐘。排除第零分鐘後，不超過九十分鐘的正倍數是三十、六十、九十；終點九十本身是共同倍數，所以應計入，共三次。"
     },
     {
-      "exampleId": "L4",
-      "prompt": "每20、30、45天維護。",
+      "exampleId": "u02-s007-example-d",
+      "prompt": "兩盞燈每 14、21 秒同時閃一次，起點不計，前 100 秒內共重合幾次？",
       "solutionSteps": [
-        "取2²×3²×5。",
-        "得到180。"
+        "求 lcm(14,21)=42 秒，確定共同閃爍間隔。",
+        "列出不超過一百的正倍數 42、84，下一個 126 已超出範圍。"
       ],
-      "answer": "180天後。"
+      "answer": "2 次。",
+      "why": "兩盞燈再次重合的最短間隔是四十二秒。起點不計後，前一百秒內只有四十二與八十四兩個正倍數，因此共同閃爍兩次。"
     }
   ],
   "commonMistakes": [
     {
-      "mistake": "把週期相加。",
-      "why": "共同倍數不等於和。",
-      "correction": "求LCM。"
+      "mistake": "把各週期相加當成再次同步時間。",
+      "correction": "同步時間必須同時被每個週期整除，應求最小公倍數並逐一驗證。"
     },
     {
-      "mistake": "直接取較大週期。",
-      "why": "較大者未必被另一週期整除。",
-      "correction": "檢查整除。"
+      "mistake": "直接取最大的週期，沒有檢查它是否也是其他週期的倍數。",
+      "correction": "只有較大週期能被其餘週期整除時才可能是 LCM，否則必須繼續找。"
     },
     {
-      "mistake": "只求分鐘不換成鐘點。",
-      "why": "答案型態未完成。",
-      "correction": "加回共同起點。"
+      "mistake": "求得共同分鐘數後，未加回起始鐘點。",
+      "correction": "題目問時刻時要做鐘點加法，並處理六十分進位與跨日。"
     },
     {
-      "mistake": "把起點也算作『再』一次。",
-      "why": "忽略不含現在。",
-      "correction": "只列正LCM倍數。"
+      "mistake": "把現在的共同起點也算成『再』一次。",
+      "correction": "不含起點時從第一個正 LCM 倍數開始列舉。"
     },
     {
-      "mistake": "漏看終點含不含。",
-      "why": "區間邊界處理錯。",
-      "correction": "依題文字列出最後一個時刻。"
+      "mistake": "看到終點寫包含就直接計入，未檢查它是否為共同時刻。",
+      "correction": "終點只有在是所有週期的共同倍數時才能算一次。"
     },
     {
-      "mistake": "三週期只算前兩個。",
-      "why": "第三事件可能不同步。",
-      "correction": "求三數LCM。"
+      "mistake": "秒與分鐘的週期未統一單位便直接求最小公倍數。",
+      "correction": "先把所有週期換成同一時間單位，再求共同週期並換回題目所需表示。"
     }
   ],
   "selfCheck": [
@@ -222,7 +219,7 @@ export const LECTURE = {
     "reviewVersion": "human-lecture-review-r3.0",
     "reviewedAt": "2026-07-12"
   },
-  "contentSha256": "6dd43803b6f5e8d290c3848b945f0d8e7541fcc861dfc54e0d6d6de280871a70",
+  "contentSha256": "1de320109d5cf1d82bed30b26f6d86d12fa77f3ea537b7adf466cccc036ef3c2",
   "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
 };
 
@@ -246,10 +243,11 @@ export const QUESTIONS = [
       "24 分鐘"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：再次同時響的時間是4與6的最小公倍數；lcm(4,6)=12。所以答案是「12 分鐘」。",
+    "explanation": "再次同時響的經過時間必須同時是四分鐘與六分鐘的倍數，第一次重合要取最小公倍數。四與六的最小公倍數是十二，所以十二分鐘後第一次再同時響。",
     "steps": [
-      "再次同時響的時間是4與6的最小公倍數",
-      "lcm(4,6)=12"
+      "把兩個響鈴週期列為 4 分鐘與 6 分鐘。",
+      "求 lcm(4,6)=12，確認 12 是兩週期最早的正共同倍數。",
+      "因題目問從現在起多久，所以答案為 12 分鐘後。"
     ],
     "optionAnalysis": [
       {
@@ -273,7 +271,7 @@ export const QUESTIONS = [
         "reason": "24較晚。"
       }
     ],
-    "commonMistake": "只把兩個週期相加。",
+    "commonMistake": "把兩個週期直接相加成十分鐘，卻未檢查十分鐘不是四的倍數。",
     "concept": "同步時間是週期的 LCM。",
     "tags": [
       "數與量",
@@ -288,7 +286,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "4a8097d8d78bada61c882144b43f681dc9a7c0b9ff771375ac2bf8da18683c1d",
+    "contentSha256": "d3119ccd399c92122c6abe8dcbe9000f50f26a7395f51fd9df018d78c56c1a54",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -310,10 +308,11 @@ export const QUESTIONS = [
       "8:00"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：lcm(10,15)=30分鐘；7:00後30分鐘為7:30。所以答案是「7:30」。",
+    "explanation": "兩班車下一次同時發車的等待時間為十與十五的最小公倍數三十分鐘。從上午七時整加三十分鐘得到七時三十分，因此下一次同時發車是七點半。",
     "steps": [
-      "lcm(10,15)=30分鐘",
-      "7:00後30分鐘為7:30"
+      "求班距 10 與 15 的最小公倍數 lcm(10,15)=30 分鐘。",
+      "確認三十分鐘同時是十的三倍與十五的兩倍。",
+      "將 30 分鐘加回 7:00，得到 7:30。"
     ],
     "optionAnalysis": [
       {
@@ -337,7 +336,7 @@ export const QUESTIONS = [
         "reason": "60分鐘不是最早。"
       }
     ],
-    "commonMistake": "直接取較大週期15分鐘。",
+    "commonMistake": "只取較大的十五分鐘，沒有檢查七點十五分並非十分鐘班距的發車時刻。",
     "concept": "求 LCM 後要換算成時刻。",
     "tags": [
       "數與量",
@@ -352,7 +351,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "671804ec7f125222d79a294f2ad43ec8186a3e43f3437a3ccfa6f8b54fb43a9a",
+    "contentSha256": "6b1d6c94f1b8a2a0d158e31ab1c12517b71f5bfa3e47b1a0c16382fff8c8cd18",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -374,10 +373,11 @@ export const QUESTIONS = [
       "24 秒"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：lcm(3,4,6)=12；12是三者第一個共同倍數。所以答案是「12 秒」。",
+    "explanation": "三盞燈再次同時閃的時間要同時是三、四、六秒的倍數，且題目問最少時間，所以求三數最小公倍數。結果為十二秒，三個週期都能整除十二。",
     "steps": [
-      "lcm(3,4,6)=12",
-      "12是三者第一個共同倍數"
+      "列出三個閃燈週期 3、4、6 秒。",
+      "計算 lcm(3,4,6)=12 秒。",
+      "驗算 12÷3=4、12÷4=3、12÷6=2，確定三燈同步。"
     ],
     "optionAnalysis": [
       {
@@ -401,7 +401,7 @@ export const QUESTIONS = [
         "reason": "24較晚。"
       }
     ],
-    "commonMistake": "只求其中兩個週期。",
+    "commonMistake": "只求三與六的共同時刻六秒，漏看六秒不是四秒週期的倍數。",
     "concept": "三事件同步需三數 LCM。",
     "tags": [
       "數與量",
@@ -416,7 +416,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "456ee5a619d3c7c8e22244a017d9144f35164a53faf9376ee9fe85c97604af9a",
+    "contentSha256": "60160f0ec0d7af8568feffbab789ca155302b673c3cfe4b341a6459da939f6bc",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -438,10 +438,11 @@ export const QUESTIONS = [
       "2 次"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：共同週期lcm(8,12)=24天；48天內的共同日為第24、48天，共2次。所以答案是「2 次」。",
+    "explanation": "共同巡檢週期是八與十二的最小公倍數二十四天。不含今天但包含四十八天內的端點，共同日為第二十四天與第四十八天，因此共有兩次。",
     "steps": [
-      "共同週期lcm(8,12)=24天",
-      "48天內的共同日為第24、48天，共2次"
+      "求 lcm(8,12)=24，得到每隔 24 天共同巡檢。",
+      "列出不含第 0 天且不超過 48 天的正倍數 24、48。",
+      "計數兩個共同日，答案為 2 次。"
     ],
     "optionAnalysis": [
       {
@@ -465,7 +466,7 @@ export const QUESTIONS = [
         "reason": "第24與48天，共2次。"
       }
     ],
-    "commonMistake": "「48天內」是否包含第48天未判讀；此處題目明示48天內含第48天。",
+    "commonMistake": "把今天也算一次，或漏掉題目範圍內的第四十八天端點。",
     "concept": "共同時刻是 LCM 的倍數，需依區間計數。",
     "tags": [
       "數與量",
@@ -480,7 +481,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "e0b5617f4c8566f0b9f09bcf040e7e8d741637c51030072e46df62c2b96a1604",
+    "contentSha256": "5da402f2b4e0fbea08a91116accafc7fafee38e46427372eebe4fa0d7c7b46fe",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -502,10 +503,11 @@ export const QUESTIONS = [
       "144 齒"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：lcm(18,24)=72；72÷18=4、72÷24=3。所以答案是「72 齒」。",
+    "explanation": "兩個標記同時回到起點所經齒數要同時是十八與二十四的倍數，最早重合取最小公倍數七十二。七十二分別是十八的四倍、二十四的三倍。",
     "steps": [
-      "lcm(18,24)=72",
-      "72÷18=4、72÷24=3"
+      "把兩個回到起點的週期列為 18 齒與 24 齒。",
+      "計算 lcm(18,24)=72 齒。",
+      "驗算 72÷18=4、72÷24=3，確認兩標記同時回起點。"
     ],
     "optionAnalysis": [
       {
@@ -529,7 +531,7 @@ export const QUESTIONS = [
         "reason": "144較晚。"
       }
     ],
-    "commonMistake": "把齒數相乘而未約去共同因數。",
+    "commonMistake": "直接選兩週期中較大的二十四，沒有確認二十四並非十八的倍數。",
     "concept": "機械週期重合仍使用 LCM。",
     "tags": [
       "數與量",
@@ -544,7 +546,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "35b0fca1397447aeca2ed6464d139832a6edff3aab2e66b0f51415736f990f31",
+    "contentSha256": "557e7549ce48fc0f5dab19de7a58884299b9d097476e8ed5d343e240824c9f65",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -566,10 +568,11 @@ export const QUESTIONS = [
       "6 次"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：共同週期lcm(14,21)=42天；42÷14=3，所以A舉行3次。所以答案是「3 次」。",
+    "explanation": "兩活動下一次同日的等待時間是十四與二十一的最小公倍數四十二天。A 每十四天一次，在第十四、二十八、四十二天舉行，含下一次同日且不含今天，共三次。",
     "steps": [
-      "共同週期lcm(14,21)=42天",
-      "42÷14=3，所以A舉行3次"
+      "計算 lcm(14,21)=42，得到下一次同日為第 42 天。",
+      "列出 A 在這段期間的時刻 14、28、42 天。",
+      "依題意不算今天但包含第 42 天，計得 3 次。"
     ],
     "optionAnalysis": [
       {
@@ -593,7 +596,7 @@ export const QUESTIONS = [
         "reason": "6次需84天。"
       }
     ],
-    "commonMistake": "只回答同步天數，沒有再求 A 的次數。",
+    "commonMistake": "只數下一次同日前的第十四與二十八天，漏掉題目明確包含第四十二天那次。",
     "concept": "共同週期除以單一週期可求期間發生次數。",
     "tags": [
       "數與量",
@@ -608,7 +611,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "eeeb284002b50ebe7987b4ea0f0b0c2141ed151fdf35d446e8e6e5a75e66e25e",
+    "contentSha256": "1fb8551d1bae339c0c518b743f587344e31a1ff63bee80dba2eece785a729439",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -630,10 +633,11 @@ export const QUESTIONS = [
       "6 次"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：共同週期lcm(12,18)=36分鐘；9:36、10:12、10:48、11:24，共4次。所以答案是「4 次」。",
+    "explanation": "共同檢查週期為十二與十八的最小公倍數三十六分鐘。九點後在九點三十六、十點十二、十點四十八、十一點二十四共同檢查；十二點整不包含，共四次。",
     "steps": [
-      "共同週期lcm(12,18)=36分鐘",
-      "9:36、10:12、10:48、11:24，共4次"
+      "求 lcm(12,18)=36 分鐘。",
+      "列出 9:00 後且早於 12:00 的共同時刻 9:36、10:12、10:48、11:24。",
+      "下一個 12:00 被題目排除，因此共有 4 次。"
     ],
     "optionAnalysis": [
       {
@@ -657,7 +661,7 @@ export const QUESTIONS = [
         "reason": "把每30分鐘估算。"
       }
     ],
-    "commonMistake": "沒有精確處理起點與終點是否包含。",
+    "commonMistake": "把十二點整也列入，忽略題目寫明到十二點前且不含十二點。",
     "concept": "同步時刻依共同週期逐一列出。",
     "tags": [
       "數與量",
@@ -672,7 +676,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "70e96412e67214de76c57d0ac545216b63c444b03da90c4ed2979b24fef7a1d6",
+    "contentSha256": "8dcd04f78deb945f253fda50ab3ee0ebe33d0e9eb44f52231c83b74aeb2effef",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -694,10 +698,11 @@ export const QUESTIONS = [
       "180 天"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：20=2²×5，30=2×3×5，45=3²×5；LCM=2²×3²×5=180。所以答案是「180 天」。",
+    "explanation": "三項維護再次同步所需天數是二十、三十、四十五的最小公倍數。質因數最高次方為二平方、三平方與五，相乘得到一百八十天。",
     "steps": [
-      "20=2²×5，30=2×3×5，45=3²×5",
-      "LCM=2²×3²×5=180"
+      "分解 20=2²×5、30=2×3×5、45=3²×5。",
+      "各質因數取最高次方，列出 2²×3²×5。",
+      "計算得到 lcm(20,30,45)=180 天。"
     ],
     "optionAnalysis": [
       {
@@ -721,7 +726,7 @@ export const QUESTIONS = [
         "reason": "180同時符合。"
       }
     ],
-    "commonMistake": "只算兩個週期的 LCM。",
+    "commonMistake": "只計算其中兩個週期的最小公倍數，未檢查第三個四十五天週期。",
     "concept": "多週期取所有質因數最大指數。",
     "tags": [
       "數與量",
@@ -736,7 +741,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6f6b5aeb6f411463239c0aa5cb0b02d6bb530bbdb6d8a5994773469ceaaebefc",
+    "contentSha256": "a2a39aff8b0807006cf10fcb336e57ad38413a078429f2a660c1da2665bcf054",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -758,10 +763,11 @@ export const QUESTIONS = [
       "8 次"
     ],
     "answerIndex": 0,
-    "explanation": "依題意逐步處理：共同週期lcm(16,24)=48；48、96、144、192、240，共5次。所以答案是「5 次」。",
+    "explanation": "共同週期是十六與二十四的最小公倍數四十八分鐘。不含起點且包含第二百四十分鐘，正倍數為四十八、九十六、一百四十四、一百九十二、二百四十，共五次。",
     "steps": [
-      "共同週期lcm(16,24)=48",
-      "48、96、144、192、240，共5次"
+      "計算 lcm(16,24)=48 分鐘。",
+      "列出不超過 240 的正倍數 48、96、144、192、240。",
+      "起點第 0 分鐘不計，五個正倍數均符合，所以答案 5 次。"
     ],
     "optionAnalysis": [
       {
@@ -785,7 +791,7 @@ export const QUESTIONS = [
         "reason": "8次不是48的倍數個數。"
       }
     ],
-    "commonMistake": "區間端點與起點是否計入未區分。",
+    "commonMistake": "把第二百四十分鐘端點排除，只數前四個共同時刻而少算一次。",
     "concept": "用 floor(上限÷LCM) 可計數，並依題意處理起點。",
     "tags": [
       "數與量",
@@ -800,7 +806,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": null,
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "8e496c72dd833b1baa69b8610653e61083927b758a8ed74d979bd7f6cd1f8850",
+    "contentSha256": "279e95bc0ddba72cd22a790b0ed1f2c55d52b29efb03b657ca6f7ecbb2b4faad",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -822,10 +828,11 @@ export const QUESTIONS = [
       "當晚 10:00"
     ],
     "answerIndex": 1,
-    "explanation": "依題意逐步處理：lcm(6,8)=24小時；早上6:00後24小時為隔天早上6:00。所以答案是「隔天早上 6:00」。",
+    "explanation": "兩種藥物再次同時服用的間隔為六與八小時的最小公倍數二十四小時。早上六點經過完整二十四小時，就是隔天早上六點。",
     "steps": [
-      "lcm(6,8)=24小時",
-      "早上6:00後24小時為隔天早上6:00"
+      "求 lcm(6,8)=24 小時。",
+      "確認二十四小時分別是六小時的四倍、八小時的三倍。",
+      "由早上 6:00 加 24 小時，得到隔天早上 6:00。"
     ],
     "optionAnalysis": [
       {
@@ -849,7 +856,7 @@ export const QUESTIONS = [
         "reason": "16小時只符合8小時週期。"
       }
     ],
-    "commonMistake": "把6+8=14小時。",
+    "commonMistake": "只取較大週期八小時，卻未檢查八小時後不符合六小時服藥週期。",
     "concept": "用藥同步需以小時週期 LCM 換算時刻。",
     "tags": [
       "數與量",
@@ -864,7 +871,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "服藥間隔、共同起始時刻及下一次要求共同決定24小時後的實際時刻。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "6499b10cc71c04844088a1b9b0eb74544373971032d0a79e6722afc4b9fd029f",
+    "contentSha256": "a0c0bd294f590567cf8ad17457962fcf2ed681ada054849314dc62468592e048",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -886,10 +893,11 @@ export const QUESTIONS = [
       "4 次"
     ],
     "answerIndex": 2,
-    "explanation": "依題意逐步處理：共同週期lcm(9,12)=36分鐘；2:36、3:12 兩次，3:48已超過。所以答案是「2 次」。",
+    "explanation": "共同啟動週期是九與十二的最小公倍數三十六分鐘。下午兩點後的共同時刻為二點三十六與三點十二；下一次三點四十八已超過三點半，所以共兩次。",
     "steps": [
-      "共同週期lcm(9,12)=36分鐘",
-      "2:36、3:12 兩次，3:48已超過"
+      "計算 lcm(9,12)=36 分鐘。",
+      "從 2:00 起依序加 36 分鐘，得到 2:36、3:12、3:48。",
+      "只保留不超過 3:30 的 2:36 與 3:12，共 2 次。"
     ],
     "optionAnalysis": [
       {
@@ -913,7 +921,7 @@ export const QUESTIONS = [
         "reason": "把每18分鐘算共同。"
       }
     ],
-    "commonMistake": "把90分鐘除以較短週期。",
+    "commonMistake": "把三點四十八也列入，沒有逐一與題目三點半的終點比較。",
     "concept": "先求共同週期，再列實際時刻。",
     "tags": [
       "數與量",
@@ -928,7 +936,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "起始時刻、90分鐘區間與兩個灑水週期都參與判斷，不能化成單一無情境算式。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "0ac15903b003efa1912d46d5bf6f72d8f31e47dd7f02b20aa4b34fcc2d00f2e8",
+    "contentSha256": "59586b9da032553a02b4d6f37b69dd3b1032617e1dcf77e1657258665e7ea846",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   },
   {
@@ -950,10 +958,11 @@ export const QUESTIONS = [
       "11:00"
     ],
     "answerIndex": 3,
-    "explanation": "依題意逐步處理：lcm(12,15,20)=60分鐘；10:00後60分鐘是11:00。所以答案是「11:00」。",
+    "explanation": "三段影片下一次同時從頭播放的等待時間是十二、十五、二十的最小公倍數六十分鐘。上午十點加六十分鐘等於十一點整。",
     "steps": [
-      "lcm(12,15,20)=60分鐘",
-      "10:00後60分鐘是11:00"
+      "計算 lcm(12,15,20)=60 分鐘。",
+      "驗算 60 分別是 12 的五倍、15 的四倍、20 的三倍。",
+      "將 60 分鐘加回上午 10:00，得到 11:00。"
     ],
     "optionAnalysis": [
       {
@@ -977,7 +986,7 @@ export const QUESTIONS = [
         "reason": "60分鐘後11:00。"
       }
     ],
-    "commonMistake": "只看兩個週期或取最大週期。",
+    "commonMistake": "只看其中兩段影片得到較早時刻，未檢查第三個週期也必須同時整除等待時間。",
     "concept": "三段重播同步使用三數 LCM。",
     "tags": [
       "數與量",
@@ -992,7 +1001,7 @@ export const QUESTIONS = [
     "literacyContextNecessity": "三段重播週期與共同起始時間共同決定一小時後的鐘點。",
     "reviewStatus": "independently-reviewed",
     "noTemplateDeclaration": true,
-    "contentSha256": "f3bde1007a1b6809fe93b4a0a4b448c7bc8180df9d7cd65edcb1bebc8b2dd78d",
+    "contentSha256": "89e46f1b34c33eba81307ef920e557131333f66839eac75b270166e1567693a1",
     "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
   }
 ];
@@ -1013,9 +1022,9 @@ export const CONSTRUCTED_RESPONSES = [
       "把分鐘加回8:00。"
     ],
     "fullCreditSolution": [
-      "12=2²×3，18=2×3²，30=2×3×5。",
-      "LCM=2²×3²×5=180分鐘。",
-      "8:00後180分鐘為11:00。"
+      "分解週期：12=2²×3、18=2×3²、30=2×3×5。",
+      "各質因數取最高次方，LCM=2²×3²×5=180 分鐘，也就是三小時；三個週期都能整除一百八十分鐘。",
+      "上午 8:00 加三小時得到 11:00，因此下一次同時檢查是上午十一時。"
     ],
     "alternativeSolutions": [
       "可列倍數交集，但須證明最早。"
@@ -1042,16 +1051,22 @@ export const CONSTRUCTED_RESPONSES = [
       "不計8:00本身，因為問下一次。"
     ],
     "commonErrors": [
-      "答8:30。",
-      "180分鐘換算成1小時80分。"
+      "只求其中兩個週期的最小公倍數，沒有確認第三個三十分鐘週期。",
+      "把一百八十分鐘錯換成一小時八十分，導致鐘點加法錯誤。",
+      "求得一百八十分鐘後直接作答，漏掉題目要求的是實際時刻。"
     ],
     "independentReview": {
       "derivedResult": "上午11:00。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "b59bd8f4d0899da4b39a422c1496997698cf7dc557632d1260717ca2dd7a0019",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "8cebbcd224689be25ac77e54612a9f6e2e98c0595437e807367e6a087aa33e64",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "將三個裝置週期統一為分鐘並做質因數分解。",
+      "求三數最小公倍數，得到再次同步的最短經過時間。",
+      "把一百八十分鐘正確換成三小時並加回共同起始時刻。"
+    ]
   },
   {
     "questionId": "u02-s007-cr002",
@@ -1069,9 +1084,9 @@ export const CONSTRUCTED_RESPONSES = [
       "不計第0秒。"
     ],
     "fullCreditSolution": [
-      "lcm(16,24)=48秒。",
-      "正倍數為48、96、144、192、240、288。",
-      "共6次；336超過300。"
+      "兩燈共同週期為 lcm(16,24)=48 秒，因此同時閃的正時刻都是四十八的倍數。",
+      "第 1 秒至第 300 秒內依序為 48、96、144、192、240、288 秒。",
+      "共有 6 次；第 0 秒依題意不計，下一個 336 秒又已超過 300 秒。"
     ],
     "alternativeSolutions": [
       "可用⌊300/48⌋=6，再列出驗證。"
@@ -1098,16 +1113,22 @@ export const CONSTRUCTED_RESPONSES = [
       "300不是48倍數，不額外計入。"
     ],
     "commonErrors": [
-      "把0秒算一次。",
-      "把300秒算同步。"
+      "把起始第零秒也算成一次，忽略範圍從第一秒開始。",
+      "因三百是區間終點就直接列入，沒有檢查三百不是四十八的倍數。",
+      "列到二百四十秒便停止，漏掉仍不超過三百秒的二百八十八秒。"
     ],
     "independentReview": {
       "derivedResult": "48、96、144、192、240、288秒，共6次。",
       "ambiguity": "題意與資料足夠，答案唯一。",
       "decision": "pass"
     },
-    "contentSha256": "3f573ac8c15027b150ce9eca1c06ff043efb37bb34f6a88819da1e2a1ebced0e",
-    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1"
+    "contentSha256": "a92db4e8c41e71fcf15a92ba105551c9f76584edc53d12067d9a2bc0802889fc",
+    "contentAuthority": "CHATGPT_HUMAN_AUTHORED_R1",
+    "reasoningSteps": [
+      "先求兩週期的最小公倍數，建立共同閃爍間隔。",
+      "從第一個正倍數開始逐項列到不超過三百秒。",
+      "按端點規則排除第零秒，並用下一個倍數確認列舉已完整。"
+    ]
   }
 ];
 
