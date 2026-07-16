@@ -119,7 +119,9 @@ function sourceProvenance(authorityRefs, status = "original") {
   return {
     status,
     authorRole: "Codex R4 Chinese content author",
-    copyrightStatus: "Original wording; official sources used only for scope and assessment calibration.",
+    copyrightStatus: status === "public-domain"
+      ? "Public-domain source text with original questions and explanations."
+      : "Original wording; official sources used only for scope and assessment calibration.",
     sourceRefs: [...authorityRefs],
   };
 }
@@ -1812,6 +1814,8 @@ function questionsFor(skill, family, guide) {
   if (culturalQuestions) return culturalQuestions;
   const referenceQuestions = referencePracticeQuestions(skill);
   if (referenceQuestions) return referenceQuestions;
+  const crossVersionQuestions = crossVersionPracticeQuestions(skill);
+  if (crossVersionQuestions) return crossVersionQuestions;
   const serial = skill.id.slice(-3);
   return QUESTION_FRAMES.map((frame, questionIndex) => {
     const answerIndex = questionIndex % 4;
@@ -2839,7 +2843,7 @@ function makeLiteraryQuestion(skill, serial, questionIndex, spec, representation
     cognitiveProcess: questionIndex < 3 ? ["comprehend", "identify"] : questionIndex < 7 ? ["analyze", "infer"] : ["analyze", "evaluate", "transfer"],
     representationType,
     misconceptionTargets: [spec.wrong[0]],
-    provenance: sourceProvenance(skill.authorityRefs),
+    provenance: sourceProvenance(skill.authorityRefs, spec.provenanceStatus ?? "original"),
     independentReviews: [
       { reviewerRole: `${reviewerPrefix}-solution-review`, derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
       { reviewerRole: `${reviewerPrefix}-alternative-review`, derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別只憑表面特徵、加入未提供資訊，或忽略動作與後文照應。", status: "pass" },
@@ -3362,8 +3366,10 @@ const calligraphySourceAssets = CALLIGRAPHY_ASSET_SPECS.map((asset) => ({
 const sourceAssets = [...dataSourceAssets, ...calligraphySourceAssets];
 
 function calligraphyPracticeSpec(serial, item, index) {
+  const otherScripts = ["篆書", "隸書", "楷書", "行書", "草書"].filter((script) => script !== item.script);
+  const scriptDistractors = [0, 1, 2].map((offset) => otherScripts[(index + offset) % otherScripts.length]);
   const bySerial = {
-    255: { stem: `書法觀察卡：「${item.observable}」最接近哪一書體？`, correct: item.script, wrong: ["印刷黑體", "拉丁字母草寫", "無法依任何可見特徵描述"], reason: `「${item.observable}」與${item.script}的基本可見特徵相合。` },
+    255: { stem: `書法觀察卡：「${item.observable}」最接近哪一書體？`, correct: item.script, wrong: scriptDistractors, reason: `「${item.observable}」與${item.script}的基本可見特徵相合。` },
     256: { stem: `觀察卡標示「${item.script}：${item.stroke}」用筆畫與結構比較時，哪項正確？`, correct: `應以「${item.stroke}」和其他書體逐項比較，不能只用快慢或好看概括。`, wrong: ["所有書體的筆畫結構完全相同。", "只要字大就是草書。", "不看部件便可由作者年代判定。"], reason: "正解提出可見、可逐項比較的筆畫與結構證據。" },
     257: { stem: `作品載體資料：「${item.medium}」哪項判斷最恰當？`, correct: `${item.medium}；判讀時須區分書寫本身、刻石／拓印或影印再製造成的效果。`, wrong: ["拓本與墨跡能保留完全相同的墨色濃淡。", "任何缺口都必然是原作者故意漏筆。", "載體不影響我們能觀察到的特徵。"], reason: "正解區分原書寫、刻製、拓印與再製的證據層次。" },
     258: { stem: `行款資料：「${item.layout}」哪項描述最符合可見布局？`, correct: item.layout, wrong: ["只數單字筆畫，不看字距行距。", "任何空白都等於文章結束。", "行距不同便證明作品損壞。"], reason: "正解直接描述行向、字距、行距與空白分布。" },
@@ -3413,6 +3419,198 @@ function referencePracticeQuestions(skill) {
   if (serial >= 261 && serial <= 266) {
     const representations = ["reference-tool-choice", "reference-guide", "search-keywords", "source-metadata", "primary-secondary-source", "source-conflict"];
     return TOOL_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, toolPracticeSpec(serial, item), representations[serial - 261], "chinese-reference"));
+  }
+  return null;
+}
+
+const MODERN_PROSE_CASES = Object.freeze([
+  {
+    title: "窗邊那盆蔥",
+    text: "母親把切剩的蔥根插進窗邊小盆，我嫌那幾截白根破壞窗景。兩週後，細葉貼著玻璃向上長；傍晚煮湯時，母親只剪一半，說要留一段讓它再發。後來颱風把盆吹倒，我第一次趕在雨裡扶起它，才發現自己早已記得每天的新高度。",
+    event: "敘事者由嫌棄蔥根，到冒雨扶起盆栽",
+    image: "細葉貼著玻璃向上長，母親每次只剪一半",
+    emotion: "從嫌棄轉為珍惜，並理解母親耐心延續日常的心意",
+    theme: "反覆而節制的照料，會使平凡事物長成值得珍惜的生活記憶",
+    structure: "開頭的『破壞窗景』與結尾記得新高度相對照，轉折把嫌棄改寫成關心",
+    selection: "人物行動由旁觀改為扶盆；植物由白根長成細葉，兩條變化線共同表現情感轉變",
+    transfer: "先標出態度前後差異，再用扶盆與記得高度兩項細節驗證轉變",
+  },
+  {
+    title: "補好的球衣",
+    text: "決賽前，球衣側邊裂了一道口。姊姊把布翻到背面，一針一針縫，線色並不相同。我原本想用外套遮住，直到上場後摔倒，才發現補線牢牢撐住拉扯。終場回家，我沒有急著脫下球衣，只把那排歪斜的針腳攤在燈下看了很久。",
+    event: "敘事者由想遮住補線，到賽後凝視針腳",
+    image: "不同顏色而略顯歪斜的針腳承受住比賽中的拉扯",
+    emotion: "由在意外觀轉為感謝姊姊實在而細密的照顧",
+    theme: "真切的照顧未必外表完美，卻會在需要時顯出力量",
+    structure: "『想用外套遮住』和『攤在燈下看』首尾形成反向動作，突出價值判斷的改變",
+    selection: "球衣的裂口與補線是物件線索，人物遮掩與凝視的動作則呈現內心轉折",
+    transfer: "比較同一物件在賽前、場上與賽後的意義，不用作者生平代替文本",
+  },
+  {
+    title: "雨聲排練",
+    text: "社團排練時，大雨敲得鐵皮屋頂滿是碎響，鼓手越敲越重，仍蓋不過雨。指揮忽然抬手，全團停下。雨點先密後疏，像替樂曲留出一段不規則的前奏。再開始時，鼓手不再追趕它，只在雨聲的空隙落槌，原先的干擾竟成了節奏的一部分。",
+    event: "樂團由試圖壓過雨聲，改為聽取空隙後重新合奏",
+    image: "雨點先密後疏，鼓槌只落在雨聲的空隙",
+    emotion: "由焦躁對抗轉為專注聆聽與從容配合",
+    theme: "面對無法消除的干擾，改變聆聽方式可能開出新的合作節奏",
+    structure: "『越敲越重』之後以全團停下為明顯轉折，結尾回應開頭的雨聲但改變其功能",
+    selection: "雨勢變化是環境線，鼓手落槌方式是人物線，兩者由衝突轉為配合",
+    transfer: "先找轉折前後相同的雨聲，再比較人物如何重新回應同一環境",
+  },
+  {
+    title: "緩慢的電梯",
+    text: "搬家那天，我抱著紙箱衝進電梯，門卻被一隻手擋住。樓上的老先生慢慢推來一盆比人還高的樹，每過一道門檻都要重新扶正。我在角落數著樓層，心裡發急；電梯停下時，他把枝葉往自己肩上攏，替我的紙箱讓出出口。那一刻，我才看見他的手背被陶盆磨出一道紅痕。",
+    event: "敘事者由嫌老先生耽擱，到看見對方替自己讓路與手上的磨痕",
+    image: "老人把高大枝葉攏向肩頭，手背留下陶盆磨出的紅痕",
+    emotion: "急躁逐漸轉為理解與歉意",
+    theme: "放慢片刻看見他人的負擔，才能修正只從自己需要出發的判斷",
+    structure: "前段反覆寫『慢』與『發急』，結尾用『才看見』轉入新的理解",
+    selection: "狹窄電梯放大彼此動作；老人讓路與敘事者觀察共同完成觀點轉變",
+    transfer: "圈出『心裡發急』與『才看見』，再補上造成改變的具體動作",
+  },
+  {
+    title: "烤焦的第一盤",
+    text: "第一次幫父親顧烤箱，我把計時器按錯，餅乾邊緣全黑。父親沒說可惜，只拿一塊剖開，指給我看中心仍濕、外圈已乾的差別。他把第二盤分成兩層，讓我各記一次時間。夜裡收攤，那盤焦餅仍留在桌角，旁邊多了一張由我重寫的溫度表。",
+    event: "一次烤焦沒有被掩飾，而被拆開觀察並改成第二次操作的依據",
+    image: "焦餅剖面旁放著敘事者重寫的溫度表",
+    emotion: "由挫敗與怕被責備，轉為願意承擔並重新嘗試",
+    theme: "把失敗留下來細看，比急著丟棄更能形成可用的經驗",
+    structure: "開頭的錯按計時器與結尾重寫溫度表相照應，焦餅由失誤象徵轉成學習證據",
+    selection: "父親沒有責罵而是剖開餅乾；敘事者則由按錯轉為主動記錄，人物互動推動成長",
+    transfer: "追蹤焦餅在事件中的功能變化，並用父親與敘事者的行動交叉說明",
+  },
+  {
+    title: "光落下以前",
+    text: "攝影課到河堤取景，同學早已拍滿記憶卡，我的相機仍垂在胸前。雲層厚得沒有層次，老師卻只說再等一下。風把一角雲推開時，對岸窗面依次亮起，騎車人的影子從短變長。我只按了一次快門，回程才懂得等待不是什麼都沒做，而是把注意力留給變化。",
+    event: "敘事者沒有追求拍攝數量，而在等待後捕捉到光影變化",
+    image: "對岸窗面依次亮起，騎車人的影子由短變長",
+    emotion: "由不安落後轉為沉靜專注",
+    theme: "有意識的等待能使人看見匆忙行動時錯過的變化",
+    structure: "相機一直垂著的靜止與最後一次快門相呼應，結尾重新定義『等待』",
+    selection: "同學拍滿記憶卡形成對照，敘事者只拍一次；數量差異凸顯觀察方式而非成敗",
+    transfer: "區分『沒有拍』的表面狀態與等待期間持續觀察的實際行動",
+  },
+  {
+    title: "摺痕裡的地圖",
+    text: "我們照著手機導航去找舊戲院，巷口施工後，藍線仍固執地穿過圍籬。同行的同學從口袋掏出一張手繪地圖，紙上用鉛筆補了市場後門、洗衣店和一棵歪樹。那張紙被摺得發白，卻領我們繞過工地。抵達時，我把新的封路日期寫在歪樹旁，地圖又多了一條別人的路。",
+    event: "電子導航失效後，手繪地圖因持續補記而引導眾人抵達",
+    image: "摺痕發白的紙上並列市場後門、洗衣店、歪樹與新封路日期",
+    emotion: "由依賴單一工具轉為信任共同累積的在地經驗",
+    theme: "資訊的價值不只在外觀新穎，也在能否隨真實環境更新並被共同補充",
+    structure: "開頭藍線『固執』不變，結尾紙圖增加新路線，兩種地圖形成動靜對照",
+    selection: "施工圍籬是事件障礙，紙張摺痕與鉛筆標記是物件細節，共同凸顯地圖被實際使用",
+    transfer: "先比較兩種地圖對變動環境的反應，再判斷作者評價依據",
+  },
+  {
+    title: "站牌旁的椅子",
+    text: "站牌旁的木椅少了一塊椅板，乘客總把袋子橫放，提醒後來的人別坐。某個清晨，缺口被一段顏色較淺的新木補上，螺絲旁還留著鉛筆定位線。沒有人知道誰修的。幾天後，一名孩童又在椅腳貼了反光貼，夜班下車的人遠遠就看見那排安穩的座位。",
+    event: "公共座椅從被動避開，經匿名修補與後續加貼反光條而恢復使用",
+    image: "淺色新木、未擦去的鉛筆線與椅腳反光貼保留不同人的手跡",
+    emotion: "對無名善意的驚喜，逐步轉成願意接續照顧公共空間的認同",
+    theme: "公共空間的改善可以由一個未署名的行動開始，並被更多人接續",
+    structure: "前段人人避開缺口，後段不同人留下修補痕跡，使用方式由退讓轉成參與",
+    selection: "作品不塑造單一英雄，而用新木、鉛筆線與反光貼串起多人的微小行動",
+    transfer: "整理物件狀態的三次變化，再由使用者反應歸納公共意義",
+  },
+  {
+    title: "回信的空格",
+    text: "外公學會用語音傳訊後，每則都很長，末尾總有幾秒只聽見電風扇。起初我會把空白往前拉掉。暑假回鄉，我看見他按下錄音後，總要走到窗前確認菜園，再慢慢說今天的雨。後來我不再刪那幾秒；風扇聲一來，我就知道他正望著窗外，替下一句找一個確實的景象。",
+    event: "敘事者由刪除語音空白，到理解外公停頓時正在觀察窗外",
+    image: "訊息末尾的電風扇聲與窗外菜園、雨景相連",
+    emotion: "由急於取得訊息轉為體會外公說話的節奏與慎重",
+    theme: "理解他人的表達，有時需要保留看似無用的停頓與生活背景",
+    structure: "相同的幾秒空白在前後被賦予不同意義，暑假親見是理解轉折",
+    selection: "聲音細節取代外貌描寫，人物走到窗前的動作說明空白並非忘詞",
+    transfer: "不要把停頓直接判成無內容，要用後文行動還原它在溝通中的功能",
+  },
+  {
+    title: "海風中的粉筆",
+    text: "離島教室的窗關不緊，粉筆字常被海風吹落的細沙弄得斑駁。代課老師每天重寫日期，字愈寫愈大。我以為他只是怕我們看不清，離校前才發現黑板右下角還留著前一天的小字：『船若停航，作業延一天。』那句話從未用上，卻讓每天望著風浪的同學知道，課表也懂得替人留路。",
+    event: "老師反覆重寫日期，並預先留下停航時可延後作業的說明",
+    image: "被海風與細沙磨斑的黑板上，大日期旁留著一行小字",
+    emotion: "由不解轉為感受到規則中體貼處境的安心",
+    theme: "清楚的規則若能預留現實變化，便不只是要求，也能成為支持",
+    structure: "前文以字愈寫愈大吸引注意，結尾卻用不起眼小字揭示真正重點",
+    selection: "海風與船班交代環境限制；老師的大字、小字分別處理日常秩序與例外",
+    transfer: "辨認作者先突出大字再揭示小字的資訊落差，據此判斷篇章焦點",
+  },
+  {
+    title: "不熄的小燈",
+    text: "修鞋店打烊後，門楣的小燈仍亮著。我問老闆是否忘了關，他指向玻璃內一排修好的鞋：夜班的人下車晚，可以看見鞋已經好了，隔天就不用白跑。燈泡不亮，從巷口只像一顆溫黃的豆。後來店搬走，鄰居在原處裝了感應燈，仍有人習慣在那裡放慢腳步。",
+    event: "修鞋匠以小燈傳達取件訊息，店搬走後鄰居用另一盞燈延續照明",
+    image: "門楣小燈像一顆溫黃的豆，照著玻璃內修好的鞋",
+    emotion: "感受到不起眼的體貼被地方記住並延續",
+    theme: "微小而具體的便利能累積成一個地方共同記得的照顧",
+    structure: "開頭疑問『是否忘了關』在說明用途後翻轉，結尾以新燈回應舊燈",
+    selection: "舊店燈與感應燈不是同一物件，卻因相同的照顧功能形成跨時照應",
+    transfer: "追問小燈服務誰、解決何事，再以搬店後的延續判斷象徵範圍",
+  },
+  {
+    title: "兩張車票",
+    text: "父親把兩張褪色車票夾在食譜裡，一張是他第一次到城裡學做菜，另一張是多年後帶我回鄉。我問為何不放相簿，他說食譜每次打開，票就會跟著蒸氣微微捲起，好像路還在走。那晚我照他的筆記煮湯，翻頁時，兩張車票一前一後滑到同一行鹽量旁。",
+    event: "兩段不同年代的旅程，因食譜與一次共同煮湯被放到同一生活脈絡",
+    image: "褪色車票受蒸氣捲起，最後並落在食譜同一行旁",
+    emotion: "在日常傳承中感受父子生命道路的連結",
+    theme: "記憶不只被收藏，也會在反覆實作的生活技藝中繼續前行",
+    structure: "開頭問票為何不進相簿，結尾讓車票落在實際使用的食譜上作答",
+    selection: "車票代表兩次移動，食譜代表長期實作；物件交會使個人往事成為代間傳承",
+    transfer: "比較相簿與食譜的功能差異，再用結尾煮湯行動確認題旨",
+  },
+]);
+
+function modernProsePracticeSpec(serial, item, index) {
+  const lead = ["初讀", "不查作者資料，閱讀", "校刊編輯複核", "把下文交給未讀過課本的同學分析"][index % 4];
+  const bySerial = {
+    267: { stem: `${lead}原創散文〈${item.title}〉：\n${item.text}\n\n哪個分析程序最能跨版本使用？`, correct: `${item.transfer}；結論還要回扣「${item.theme}」。`, wrong: ["先猜作者是哪位名家，再用生平替全文下結論。", "只找曾在課本看過的相似標題，情節不同也直接套用。", "把自己期待的結局補進文章，再以補寫內容說明主旨。"], reason: "正解依序處理篇章內可見的行動、描寫或轉折，不依賴特定課本版本。" },
+    268: { stem: `${lead}原創散文〈${item.title}〉：\n${item.text}\n\n敘事與描寫如何共同呈現情感？`, correct: `${item.event}；「${item.image}」使情感落在可見細節上，表現${item.emotion}。`, wrong: ["只要出現景物，文章必定是在歌頌自然，與人物行動無關。", "敘事依時間出現，所以人物從頭到尾都沒有情緒變化。", "可由標題筆畫多寡推知作者情緒，不必閱讀正文。"], reason: "正解同時指出事件變化與具體描寫，並把二者連到有範圍的情感判斷。" },
+    269: { stem: `${lead}原創散文〈${item.title}〉：\n${item.text}\n\n哪項最能由題材推到全文主旨？`, correct: item.theme, wrong: [`全文只在說明「${item.image}」這個局部畫面。`, `這個故事證明所有人面對${item.title}都會作出完全相同的選擇。`, "文章主要目的只是列出物件名稱，人物前後改變可以忽略。"], reason: "正解涵蓋人物、事件與結尾關係，沒有停在單一細節或擴張成普遍定律。" },
+    270: { stem: `${lead}原創散文〈${item.title}〉：\n${item.text}\n\n轉折和首尾照應產生什麼結構效果？`, correct: item.structure, wrong: ["轉折把前文全部判成虛假，因此開頭資訊都不必保留。", "首尾出現不同句子，所以兩部分必然互不相關。", "只要結尾較短，就表示它沒有改變全文理解。"], reason: "正解具體指出開頭與結尾如何互相重讀，並說明中間轉折所完成的功能。" },
+    271: { stem: `${lead}原創散文〈${item.title}〉：\n${item.text}\n\n比較人物、事件與景物的選擇，哪項說明最完整？`, correct: item.selection, wrong: ["景物一律只是裝飾，刪除後不會影響人物理解。", "人物只要說一句話，就能取代所有事件結果與物件線索。", "事件先後只用來增加字數，不能表現觀點或情感。"], reason: "正解建立共同基準，說明不同材料各自承擔的篇章工作。" },
+    272: { stem: `${lead}原創散文〈${item.title}〉：\n${item.text}\n\n若把已學閱讀策略轉用到這篇陌生散文，最可靠的操作是什麼？`, correct: item.transfer, wrong: ["背出同冊課文順序，順序相近就選同一答案。", "用自己的類似經驗補足人物沒有說出的全部動機。", "只看第一句便決定主旨，後面的轉折與照應都略過。"], reason: "正解保留可遷移的文本操作，且要求由本篇證據重新驗證。" },
+  };
+  return bySerial[serial];
+}
+
+const NEW_POEM_CASES = Object.freeze([
+  { title: "晾衣繩", poem: "風把白襯衫\n翻成一封封沒有字的信\n夕陽逐件蓋上紅印\n只有最末那件\n仍替未歸的人留著袖口", imagery: "白襯衫、無字的信、夕陽紅印與空袖口", emotion: "說話者在日常等待中含蓄牽掛尚未歸來的人", syntax: "『只有最末那件』單獨轉折，下一行才補出它替誰保留位置", device: "把襯衫比作未寫字的信，又以末件空袖口象徵等待", titleRelation: "題目點出日常晾衣場景，詩句再把衣物轉化為傳遞牽掛的媒介", bound: "可確定有等待與牽掛，不能斷言未歸者的身分、去向或回來日期" },
+  { title: "夜班公車", poem: "末班車收起沿街的燈\n一站一站\n把疲倦的人放回巷子\n司機沒有說晚安\n方向燈卻替每個背影眨了一下", imagery: "末班車、沿街燈光、巷口背影與方向燈", emotion: "在深夜疲憊中感到一種克制而不張揚的照顧", syntax: "『一站一站』獨立成行，放慢公車逐次送客的節奏", device: "方向燈被寫成向背影眨眼，以擬人收束無聲的關照", titleRelation: "題目限定夜班公車，內容聚焦它如何把疲倦乘客送回各自生活", bound: "可說司機的行動帶來關照感，不能據此虛構他與每位乘客的私交" },
+  { title: "種子的時鐘", poem: "土裡沒有鐘聲\n種子仍把黑暗\n一格一格推遠\n當第一片葉抵達清晨\n春天才知道自己準時", imagery: "土中黑暗、格子、初葉與清晨", emotion: "對看不見的生長抱持安靜期待與肯定", syntax: "第二、三行把受詞『黑暗』與動作『推遠』分開，使生長顯得緩慢持續", device: "以時鐘和準時比喻種子內在的生長節律", titleRelation: "題目先提出『時鐘』，詩中卻不用鐘聲，而以種子發芽重新定義時間", bound: "可解為等待與生長，不能推定詩中特指某個人的考試或疾病" },
+  { title: "失物招領", poem: "玻璃櫃裡\n一把傘等過三場雨\n一串鑰匙沉默得生鏽\n那隻單手套仍張著掌心\n像記得誰曾匆忙鬆手", imagery: "玻璃櫃、舊傘、鏽鑰匙與張掌的單手套", emotion: "從遺失物感到時間停留與對缺席主人的想像", syntax: "末兩行延後說出手套的比喻，使物件由靜止轉成帶有記憶的姿勢", device: "讓物件等待、沉默、記得，以擬人串連被遺落的時間", titleRelation: "題目是公共場所標示，內容則轉向物件等待主人時累積的情感", bound: "可推知遺失與等待，不能確定每件物品何時、由誰領回" },
+  { title: "防波堤", poem: "浪把同一句重話\n說了一整夜\n堤岸不回答\n只在天亮時交出\n一條仍能通行的路", imagery: "夜浪、沉默堤岸、天亮與可走的路", emotion: "在反覆壓力中保持沉著，最後顯出承受後的安定", syntax: "『堤岸不回答』形成短促停頓，讓沉默成為承受而非空白", device: "浪的重複與堤岸的沉默形成對比，象徵壓力與堅持", titleRelation: "題目點明承浪的設施，詩句把物理功能轉成面對重壓的形象", bound: "可談承受與守護，不能直接指定為某場戰爭或某位政治人物" },
+  { title: "空教室", poem: "鐘聲走遠了\n粉筆灰還浮在斜光裡\n一張忘了收的考卷\n壓住半開的窗\n替今天保留最後一道風", imagery: "遠去鐘聲、粉筆灰、斜光、考卷與半開窗", emotion: "課後空間帶有一天結束時的安靜留戀", syntax: "前三行先撤去人聲，後兩行才讓考卷與風接續教室活動的餘韻", device: "以考卷『壓住』窗又『保留』風，製造具體動作中的反差", titleRelation: "題目說教室已空，內容卻用遺留物與風表現活動尚未完全消散", bound: "可知課程結束後仍有痕跡，不能斷言考卷主人故意逃避成績" },
+  { title: "書頁裡的雨", poem: "多年後翻開那一頁\n一圈淡淡的水痕\n仍圍著你寫的日期\n雨早停了\n紙卻替記憶保留天氣", imagery: "舊書頁、水痕、手寫日期與已停的雨", emotion: "重讀舊物時，對共同往事生出溫柔懷念", syntax: "第四行『雨早停了』先結束現實天氣，末行再轉入記憶仍存", device: "紙張被擬人為替記憶保存天氣，水痕成為時間留下的媒介", titleRelation: "題目把雨放進書頁，內容說明真正留下的是水痕與記憶的交疊", bound: "可判斷說話者懷念某人，不能確認兩人關係或分離原因" },
+  { title: "修鞋攤", poem: "老闆低著頭\n把裂開的路一針針縫回鞋底\n鐵鎚落下\n巷口的下午便多了一拍\n有人穿著修好的遠方離開", imagery: "低頭老闆、裂鞋底、針線、鐵鎚聲與離開的人", emotion: "敬重日常勞動把破損修回可行道路的力量", syntax: "末行把『遠方』移作可穿走之物，讓鞋與旅程的關係在結尾才完整", device: "將鞋底裂縫比作道路，鐵鎚聲又化為巷口節拍", titleRelation: "題目指向小攤，內容從具體修鞋擴大到替他人恢復行走能力", bound: "可歌詠修補與勞動，不能據此認定顧客要移民或永不回來" },
+  { title: "月臺上的逗點", poem: "列車把長長的句子帶走\n你站在月臺\n沒有把手揮成句號\n直到尾燈縮成一點\n我們仍停在尚未說完的地方", imagery: "列車、月臺、揮手、尾燈與標點", emotion: "離別中仍保留未完的聯繫與不願斷絕的情意", syntax: "第二行停住人物，第三行以否定『沒有』延後告別的完成", device: "用逗點、句號與未完句比喻離別不是關係終止", titleRelation: "題目直接提出逗點，詩中透過不揮成句號解釋它代表暫停而非結束", bound: "可判斷關係仍未完結，不能保證兩人何時重逢" },
+  { title: "清晨市場", poem: "捲門一扇扇升起\n魚鱗接住第一束光\n菜葉抖掉昨夜的水\n找零聲、問價聲、刀聲\n把城市從睡意裡切開", imagery: "升起的捲門、亮魚鱗、帶水菜葉與多種市聲", emotion: "感受城市由沉睡轉為忙碌的鮮明生命力", syntax: "第四行並列三種聲音，末行才補出它們共同喚醒城市的效果", device: "以『切開睡意』把刀聲與城市甦醒連在一起，兼具轉化與動感", titleRelation: "題目限定清晨市場，內容以光、水與聲音呈現一天如何被開啟", bound: "可說市場充滿活力，不能推論所有攤商當天都獲利" },
+  { title: "山城水塔", poem: "霧把屋頂收進口袋\n只有水塔露出肩膀\n遠方傳來放學鐘\n看不見的路上\n孩子們正把笑聲一級級帶回來", imagery: "霧中屋頂、水塔肩膀、鐘聲、山路與孩子笑聲", emotion: "視線受阻時，仍由聲音感到熟悉生活正在歸來", syntax: "『看不見的路上』獨立限制視覺，末行再用聽覺補出人物動態", device: "霧被擬成口袋，水塔露肩；看不見與聽得見形成感官對照", titleRelation: "題目以高處水塔定位山城，內容再由它引出霧中生活的尺度與方向", bound: "可知道孩子放學回來，不能由笑聲判定每個人都沒有煩惱" },
+  { title: "沒有寄出的卡片", poem: "地址寫好了\n郵票也貼在右上角\n我把想念折進一句『近來好嗎』\n卻讓信封留在抽屜\n每次打開，都先收到自己的沉默", imagery: "完整地址、郵票、簡短問候、抽屜與未寄信封", emotion: "想聯絡又遲疑，因未採取行動而反覆面對自己的沉默", syntax: "前三行逐步準備寄信，第四行以『卻』折返，讓行動停在最後一步",
+    device: "把想念折進問候，又讓自己『收到』沉默，以收發關係呈現遲疑",
+    titleRelation: "題目先揭示卡片未寄，內容著重準備完成與行動停下之間的落差",
+    bound: "可推知說話者猶豫聯絡，不能確定對方是否拒絕、搬家或已讀訊息" },
+]);
+
+function newPoemPracticeSpec(serial, item, index) {
+  const lead = ["閱讀本題原創新詩", "不依賴作者生平，細讀", "同學第一次看到", "校刊編輯準備賞析"][index % 4];
+  const bySerial = {
+    273: { stem: `${lead}〈${item.title}〉：\n${item.poem}\n\n哪個讀法最能跨版本處理陌生新詩？`, correct: `先整理「${item.imagery}」的關係，再依「${item.syntax}」說明語氣與意義。`, wrong: ["只要查到詩人姓名，就把他的所有經歷都投射進每一行。", "題目和某篇課文有一字相同，因此兩詩主旨必然一致。", "先自由補寫完整故事，再用自己補的情節證明答案。"], reason: "正解從意象與語序出發，操作可用於不同版本的陌生詩作。" },
+    274: { stem: `${lead}〈${item.title}〉：\n${item.poem}\n\n意象群如何組成情感？`, correct: `「${item.imagery}」互相連結，表現${item.emotion}。`, wrong: ["每個意象彼此無關，只是隨機列出的名詞。", "詩中只要有自然景物，情感必定是快樂讚美。", "可略過所有詩句，直接由標題字數決定情緒。"], reason: "正解把多個意象放入同一情境，情感強度沒有超過詩句。" },
+    275: { stem: `${lead}〈${item.title}〉：\n${item.poem}\n\n分行、語序或留白帶來什麼效果？`, correct: item.syntax, wrong: ["分行只為排版整齊，移到任何位置都不改變閱讀節奏。", "語句沒有寫滿，所以可任意補入任何人物與結局。", "只要一行較短，就表示那一行與全詩毫無關係。"], reason: "正解指出形式如何延後、停住或補足語意，能回到具體行列核對。" },
+    276: { stem: `${lead}〈${item.title}〉：\n${item.poem}\n\n反覆、對比或象徵如何服務詩意？`, correct: item.device, wrong: ["修辭名稱一經判定，便不必說明它和內容的關係。", "象徵可以離開詩句，完全依讀者喜好指定任何意思。", "有兩個不同物件就是互相否定，前後意義不能連接。"], reason: "正解同時辨認形式特徵與它在本詩形成的內容效果。" },
+    277: { stem: `${lead}〈${item.title}〉：\n${item.poem}\n\n題目和內容的關係，哪項最恰當？`, correct: item.titleRelation, wrong: ["題目已說完全部內容，正文沒有提供任何轉化或限制。", "題目若不是完整句，就一定和詩句沒有關係。", "正文只能逐字重複題目，否則便算離題。"], reason: "正解說明題目如何設定入口，而詩句又如何延伸或重新定義它。" },
+    278: { stem: `${lead}〈${item.title}〉：\n${item.poem}\n\n哪個解釋最能守住證據邊界？`, correct: item.bound, wrong: ["只要讀者曾有類似經驗，就可把自己的所有經歷當成詩中事實。", "詩沒有交代的姓名、年代與結局，都可當成唯一確定答案。", "一個意象可證明全世界的人遇到此事都會有同樣反應。"], reason: "正解把可支持的意義和文本未提供的細節分開，沒有把可能說成必然。" },
+  };
+  return bySerial[serial];
+}
+
+function crossVersionPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial >= 267 && serial <= 272) {
+    const representations = ["cross-version-prose-method", "narration-description-emotion", "subject-to-theme", "transition-and-echo", "selection-comparison", "strategy-transfer"];
+    return MODERN_PROSE_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, modernProsePracticeSpec(serial, item, questionIndex), representations[serial - 267], "chinese-cross-version-prose"));
+  }
+  if (serial >= 273 && serial <= 278) {
+    const representations = ["cross-version-poetry-method", "imagery-and-emotion", "syntax-and-blank", "poetic-device", "title-and-content", "evidence-boundary"];
+    return NEW_POEM_CASES.map((item, questionIndex) => makeLiteraryQuestion(skill, serial, questionIndex, newPoemPracticeSpec(serial, item, questionIndex), representations[serial - 273], "chinese-cross-version-poetry"));
   }
   return null;
 }
