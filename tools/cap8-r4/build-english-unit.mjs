@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -19,6 +20,39 @@ function provenance(authorityRefs) {
     copyrightStatus: "Original wording; official sources used only for scope and assessment calibration.",
     sourceRefs: [...authorityRefs],
   };
+}
+
+async function materializeEnglishAsset(value, skillById) {
+  assert(value.content?.startsWith("<svg"), `${value.id}: inline SVG content missing`);
+  assert(!/<script\b/iu.test(value.content), `${value.id}: scripts are forbidden in SVG assets`);
+  assert(/\bviewBox=/u.test(value.content), `${value.id}: SVG viewBox required`);
+  const skills = value.skillIds.map((id) => {
+    const skill = skillById.get(id);
+    assert(skill, `${value.id}: unknown skill ${id}`);
+    return skill;
+  });
+  const metadata = {
+    id: value.id,
+    subject: "english",
+    skillIds: value.skillIds,
+    type: value.type,
+    path: value.path,
+    sha256: createHash("sha256").update(value.content).digest("hex"),
+    creator: "Codex R4 English content author",
+    source: "Original project-authored SVG; official sources used only for assessment calibration.",
+    license: "Original project asset.",
+    originality: "original",
+    transformationRecord: "Authored directly as an original semantic SVG; no source artwork copied.",
+    calibrationRefs: [...new Set(skills.flatMap((skill) => skill.authorityRefs))],
+    caption: value.caption,
+    altText: value.altText,
+    longDescription: value.longDescription,
+    dataFallback: value.dataFallback,
+    accessibility: { colorIndependent: true, printSafe: true },
+    technical: value.technical,
+  };
+  await validateAuthoringRecord("asset", metadata);
+  return { metadata, content: value.content };
 }
 
 function materializeLecture(value, skill) {
@@ -100,6 +134,13 @@ export async function materializeEnglishUnit(source, { graphPath = GRAPH_PATH } 
     assert(skill, `${value.id}: skill is outside ${source.unitId}`);
     return materializeEnglishQuestion(value, skill);
   });
+  const assets = [];
+  for (const value of source.assets ?? []) assets.push(await materializeEnglishAsset(value, skillById));
+  const assetIds = new Set(assets.map((value) => value.metadata.id));
+  assert.equal(assetIds.size, assets.length, `${source.unitId}: duplicate asset ID`);
+  for (const value of [...lectures, ...questions]) {
+    for (const assetId of value.assets) assert(assetIds.has(assetId), `${value.id}: unknown unit asset ${assetId}`);
+  }
   assert.equal(new Set(lectures.map((value) => value.id)).size, lectures.length, "duplicate lecture ID");
   assert.equal(new Set(lectures.map((value) => value.skillId)).size, skills.length, "duplicate lecture skill");
   assert.equal(new Set(questions.map((value) => value.id)).size, questions.length, "duplicate question ID");
@@ -116,7 +157,7 @@ export async function materializeEnglishUnit(source, { graphPath = GRAPH_PATH } 
   }
   for (const value of lectures) await validateAuthoringRecord("lecture", value);
   for (const value of questions) await validateAuthoringRecord("question", value);
-  return { lectures, questions, skills };
+  return { lectures, questions, skills, assets };
 }
 
 export async function materializeAllEnglishUnits({ repoRoot = REPO_ROOT, graphPath = GRAPH_PATH } = {}) {
@@ -128,18 +169,20 @@ export async function materializeAllEnglishUnits({ repoRoot = REPO_ROOT, graphPa
   const skills = units.flatMap((unit) => unit.skills);
   const lectures = units.flatMap((unit) => unit.lectures);
   const questions = units.flatMap((unit) => unit.questions);
+  const assets = units.flatMap((unit) => unit.assets);
   assert.equal(skills.length, 320, "English frozen skill total mismatch");
   assert.equal(lectures.length, 320, "English lecture total mismatch");
   assert.equal(questions.length, 3_840, "English skill-question total mismatch");
   for (const [label, values] of [["skill", skills], ["lecture", lectures], ["question", questions]]) {
     assert.equal(new Set(values.map((value) => value.id)).size, values.length, `duplicate English ${label} ID across units`);
   }
+  assert.equal(new Set(assets.map((value) => value.metadata.id)).size, assets.length, "duplicate English visual asset ID across units");
   const visibleKeys = questions.map((value) => JSON.stringify([
     value.stem.normalize("NFKC").toLowerCase().replace(/\s+/gu, " ").trim(),
     value.options.map((option) => option.normalize("NFKC").toLowerCase().replace(/\s+/gu, " ").trim()).sort(),
   ]));
   assert.equal(new Set(visibleKeys).size, visibleKeys.length, "duplicate normalized English question across units");
-  return { units, skills, lectures, questions };
+  return { units, skills, lectures, questions, assets };
 }
 
 export async function buildEnglishUnit(unitId, { repoRoot = REPO_ROOT } = {}) {

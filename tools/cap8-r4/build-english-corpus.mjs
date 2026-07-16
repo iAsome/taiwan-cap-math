@@ -231,7 +231,7 @@ async function outputFiles(corpus, repoRoot) {
   for (const unit of corpus.units) {
     const info = graphUnits.get(unit.unitId);
     assert(info, `${unit.unitId}: frozen unit metadata missing`);
-    putJson(`${ENGLISH_FOLDER}/r4/runtime/bundles/${unit.unitId}.json`, { unitId: unit.unitId, skills: unit.skills, lectures: unit.lectures, questions: unit.questions });
+    putJson(`${ENGLISH_FOLDER}/r4/runtime/bundles/${unit.unitId}.json`, { unitId: unit.unitId, skills: unit.skills, lectures: unit.lectures, questions: unit.questions, assets: unit.assets.map((value) => value.metadata) });
   }
   for (const value of corpus.lectures) putJson(`${ENGLISH_FOLDER}/r4/runtime/lectures/${value.id}.json`, value);
   for (const value of [...corpus.questions, ...corpus.stimulusQuestions]) putJson(`${ENGLISH_FOLDER}/r4/runtime/questions/${value.id}.json`, value);
@@ -239,6 +239,7 @@ async function outputFiles(corpus, repoRoot) {
   putJson(`${ENGLISH_FOLDER}/r4/runtime/reading.json`, corpus.reading);
   putJson(`${ENGLISH_FOLDER}/r4/runtime/listening.json`, corpus.listening.map(({ spokenText, voiceProfile, audioDescription, ...value }) => value));
   for (const value of corpus.audio) files.set(`${ENGLISH_FOLDER}/r4/runtime/audio/${value.id}.wav`, value.bytes);
+  for (const value of corpus.assets) files.set(value.metadata.path, Buffer.from(value.content, "utf8"));
   const units = corpus.units.map((unit) => {
     const info = graphUnits.get(unit.unitId);
     return {
@@ -284,6 +285,7 @@ async function manifestFor(corpus, files, graphBytes, repoRoot) {
     else if (relative.includes("/runtime/questions/")) artifacts.push(descriptor(path.basename(relative, ".json"), "question", relative, bytes));
     else if (relative.includes("/runtime/stimuli/")) artifacts.push(descriptor(path.basename(relative, ".json"), "stimulus", relative, bytes));
     else if (relative.includes("/runtime/audio/")) artifacts.push(descriptor(path.basename(relative, ".wav"), "asset", relative, bytes));
+    else if (relative.includes("/runtime/assets/")) artifacts.push(descriptor(path.basename(relative, path.extname(relative)), "asset", relative, bytes));
   }
   const uiRelatives = ["index.html", "styles.css", "app.mjs", "service-worker.js", "manifest.webmanifest"];
   for (const name of uiRelatives) {
@@ -312,7 +314,7 @@ async function manifestFor(corpus, files, graphBytes, repoRoot) {
       skillQuestions: 3_840,
       stimulusQuestions: 2_900,
       stimuli: 800,
-      assets: 300,
+      assets: 300 + corpus.assets.length,
       readingPassages: 500,
       listeningStimuli: 300,
     },

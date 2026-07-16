@@ -6,7 +6,7 @@ const toast = $("#toast");
 const STORAGE_KEY = "cap8.r4.english.progress";
 const MIGRATION_KEY = "cap8.r4.english.migration.v1";
 const LEGACY_KEYS = ["capEnglish.completed", "capEnglish.paperHistory", "capEnglish.lastSeed", "capEnglish.lastQuizSeed", "capEnglish.dark"];
-const state = { catalog: null, cache: new Map(), progress: loadProgress(), timer: null };
+const state = { catalog: null, cache: new Map(), assets: new Map(), progress: loadProgress(), timer: null };
 
 function h(value) {
   return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
@@ -98,7 +98,9 @@ function navigate(view, params = {}) {
 async function loadUnit(unitId) {
   const unit = state.catalog.units.find((value) => value.id === unitId);
   if (!unit) throw new Error(`找不到單元 ${unitId}`);
-  return fetchJson(unit.bundle);
+  const bundle = await fetchJson(unit.bundle);
+  for (const asset of bundle.assets ?? []) state.assets.set(asset.id, asset);
+  return bundle;
 }
 
 function completedPercent(unit) {
@@ -135,8 +137,16 @@ async function renderCourse(params) {
   });
 }
 
+function assetHtml(ids = []) {
+  return ids.map((id) => state.assets.get(id)).filter(Boolean).map((asset) => {
+    const source = asset.path.split("/r4/")[1];
+    const fallback = asset.dataFallback ? `<details><summary>資料表替代</summary><p>${h(asset.dataFallback.summary)}</p><table class="asset-table"><thead><tr>${asset.dataFallback.columns.map((value) => `<th>${h(value)}</th>`).join("")}</tr></thead><tbody>${asset.dataFallback.rows.map((row) => `<tr>${row.map((value) => `<td>${h(value)}</td>`).join("")}</tr>`).join("")}</tbody></table></details>` : "";
+    return `<figure class="question-asset"><img src="${h(source)}" alt="${h(asset.altText)}"><figcaption>${h(asset.caption)}</figcaption><details><summary>完整圖形說明</summary><p>${h(asset.longDescription)}</p></details>${fallback}</figure>`;
+  }).join("");
+}
+
 function questionHtml(question, number, name) {
-  return `<fieldset class="question" data-question="${h(question.id)}"><legend>${number}. ${h(question.stem)}</legend><div class="choices">${question.options.map((option, index) => `<label class="choice"><input type="radio" name="${h(name)}" value="${index}"><span><b>${String.fromCharCode(65 + index)}.</b> ${h(option)}</span></label>`).join("")}</div><div class="rationale" hidden></div></fieldset>`;
+  return `<fieldset class="question" data-question="${h(question.id)}"><legend>${number}. ${h(question.stem)}</legend>${assetHtml(question.assets)}<div class="choices">${question.options.map((option, index) => `<label class="choice"><input type="radio" name="${h(name)}" value="${index}"><span><b>${String.fromCharCode(65 + index)}.</b> ${h(option)}</span></label>`).join("")}</div><div class="rationale" hidden></div></fieldset>`;
 }
 
 function rationales(question) {

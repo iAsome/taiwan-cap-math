@@ -3,16 +3,16 @@ import assert from "node:assert/strict";
 const DIFFICULTIES = ["foundation", "foundation", "foundation", "standard", "standard", "standard", "standard", "advanced", "advanced", "advanced", "transfer", "transfer"];
 
 export function defineChoiceQuestions(cases, { type, operation, misconception }) {
-  return cases.map(([stem, correct, correctReason, distractors], index) => {
+  return cases.map(([stem, correct, correctReason, distractors, assetIds = []], index) => {
     const choices = [{ value: correct, reason: correctReason, correct: true }, ...distractors.map(([value, reason]) => ({ value, reason, correct: false }))];
     const shift = index % 4;
     const rotated = [...choices.slice(shift), ...choices.slice(0, shift)];
     const answerIndex = rotated.findIndex((choice) => choice.correct);
-    return [stem, rotated.map((choice) => choice.value), answerIndex, rotated[answerIndex].reason, rotated.filter((choice) => !choice.correct).map((choice) => choice.reason), type, operation, misconception];
+    return [stem, rotated.map((choice) => choice.value), answerIndex, rotated[answerIndex].reason, rotated.filter((choice) => !choice.correct).map((choice) => choice.reason), type, operation, misconception, assetIds];
   });
 }
 
-export function defineEnglishUnit({ unitId, skills, vocabularyPolicy }) {
+export function defineEnglishUnit({ unitId, skills, vocabularyPolicy, assets = [] }) {
   assert.match(unitId, /^ENG_R4_U\d{2}$/);
   const lectures = skills.map((skill) => {
     assert.equal(skill.examples.length, 3, `${skill.id}: three worked examples required`);
@@ -33,7 +33,7 @@ export function defineEnglishUnit({ unitId, skills, vocabularyPolicy }) {
   const questions = skills.flatMap((skill) => {
     assert.equal(skill.questions.length, 12, `${skill.id}: twelve questions required`);
     return skill.questions.map((item, index) => {
-      const [stem, options, answerIndex, correctReason, wrongReasons, representationType, operation, misconception] = item;
+      const [stem, options, answerIndex, correctReason, wrongReasons, representationType, operation, misconception, assetIds = []] = item;
       assert.equal(options.length, 4, `${skill.id} question ${index + 1}: four options required`);
       assert.equal(wrongReasons.length, 3, `${skill.id} question ${index + 1}: three distractor reasons required`);
       const correct = options[answerIndex];
@@ -53,8 +53,9 @@ export function defineEnglishUnit({ unitId, skills, vocabularyPolicy }) {
         cognitiveProcess: [skill.process, operation],
         representationType,
         misconceptionTargets: [misconception],
+        assets: assetIds,
       };
     });
   });
-  return { unitId, lectures, questions, vocabularyPolicy };
+  return { unitId, lectures, questions, vocabularyPolicy, assets };
 }
