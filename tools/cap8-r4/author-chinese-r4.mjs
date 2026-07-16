@@ -7,6 +7,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..");
 const SUBJECT_ROOT = path.join(ROOT, "國文會考作戰室", "r4");
 const GRAPH = JSON.parse(await readFile(path.join(HERE, "authority", "frozen-authority-graph.json"), "utf8"));
+const WRITING_CALIBRATION = JSON.parse(await readFile(path.join(HERE, "ledger", "chinese-writing-calibration.json"), "utf8"));
 const SOURCE_SCHEMA = "cap8-r4-chinese-static-unit-source-v1";
 const DIFFICULTIES = ["foundation", "foundation", "foundation", "standard", "standard", "standard", "standard", "advanced", "advanced", "advanced", "transfer", "transfer"];
 
@@ -121,6 +122,24 @@ function sourceProvenance(authorityRefs, status = "original") {
     copyrightStatus: "Original wording; official sources used only for scope and assessment calibration.",
     sourceRefs: [...authorityRefs],
   };
+}
+
+function writingLearningSections(skill) {
+  const serial = Number(skill.id.slice(-3));
+  const profiles = WRITING_CALIBRATION.scoring.profiles;
+  const ladder = profiles.map((profile) => `${profile.level}級分：${profile.officialSummary}`).join(" ");
+  const nextSteps = profiles.map((profile) => `${profile.level}級下一步：${profile.nextStep}`).join(" ");
+  const focus = serial <= 308
+    ? ["先圈出題目的寫作對象、目的、材料與明示限制，再用一句話重述任務。", "選材時逐項標記它回應哪個關鍵詞；感人、華麗或真實都不能代替切題。"]
+    : serial <= 314
+      ? ["先寫一句主旨，再替每段指定功能；敘事、說明與議論可採不同推進關係，不受固定段數限制。", "每一段都要用因果、分類、比較、例證或轉折連到主旨，不能只把材料依想到的順序堆疊。"]
+      : ["評分採整體判斷，同時觀察立意取材、結構組織、遣詞造句、錯別字格式與標點，沒有固定權重或逐錯扣分。", "修訂先判斷最影響理解的層級，再從內容、結構、句子到字詞標點逐層處理，並留下第二稿修改理由。"];
+  return [
+    { id: `CHI_R4_L_S${String(serial).padStart(3, "0")}_SEC_01`, title: "從零開始", content: `${focus[0]}本講義聚焦「${skill.title}」，每一步都要在自己的草稿上留下可核對的痕跡。` },
+    { id: `CHI_R4_L_S${String(serial).padStart(3, "0")}_SEC_02`, title: "實作方法", content: `${focus[1]}完成後以題幹關鍵詞反查全文，確定每個主要材料都有作用。` },
+    { id: `CHI_R4_L_S${String(serial).padStart(3, "0")}_SEC_03`, title: "零至六級分", content: ladder },
+    { id: `CHI_R4_L_S${String(serial).padStart(3, "0")}_SEC_04`, title: "診斷與下一稿", content: `${nextSteps}這些是校準後的修訂方向，不是自動評分承諾；實際級分仍須依整篇文章整體判斷。` },
+  ];
 }
 
 // These records are authoring inputs, not runtime generators. Each row is
@@ -658,23 +677,420 @@ const HOMOPHONE_CASES = Object.freeze({
   CHI_R4_S035: integratedCorrectionRows,
 });
 
+const polysemyContexts = [
+  { target: "抓", sentence: "他很快抓到報告的重點。", meaning: "掌握", literal: "孩子抓住搖晃的欄杆。", literalMeaning: "用手握住", clue: "與「重點」搭配，表示理解主要內容", substitute: "掌握" },
+  { target: "轉", sentence: "午後雨勢逐漸轉小。", meaning: "改變", literal: "他轉動門把推門而入。", literalMeaning: "旋動", clue: "前後連接雨勢由大到小的變化", substitute: "變得" },
+  { target: "重", sentence: "老師今天說話很重。", meaning: "語氣嚴厲", literal: "這只木箱比想像中重。", literalMeaning: "重量大", clue: "修飾說話方式而非物體重量", substitute: "嚴厲" },
+  { target: "冷", sentence: "一句無心的話讓現場氣氛冷下來。", meaning: "變得不熱絡", literal: "山泉入口十分冰冷。", literalMeaning: "溫度低", clue: "主語是人際互動的「氣氛」", substitute: "沉寂" },
+  { target: "骨架", sentence: "寫文章前先搭好骨架。", meaning: "主要結構", literal: "博物館展示完整的動物骨架。", literalMeaning: "骨骼組成的支架", clue: "與寫文章、安排內容搭配", substitute: "架構" },
+  { target: "窗口", sentence: "服務窗口將在五點停止受理。", meaning: "辦理業務的接洽單位", literal: "陽光從窗口照進室內。", literalMeaning: "牆上的窗戶開口", clue: "與「受理」及時間搭配", substitute: "服務櫃臺" },
+  { target: "席捲", sentence: "這股閱讀風潮正席捲校園。", meaning: "迅速廣泛影響", literal: "工作人員把地上的席子捲起。", literalMeaning: "捲收席子", clue: "主語是風潮，受影響範圍是校園", substitute: "迅速影響" },
+  { target: "消化", sentence: "讀完資料後，他還需要時間消化。", meaning: "理解並整理", literal: "胃腸會消化吃下的食物。", literalMeaning: "分解吸收食物", clue: "受詞是資料而不是食物", substitute: "吸收" },
+  { target: "落地", sentence: "討論多月的計畫終於落地。", meaning: "開始實際執行", literal: "紙飛機越過桌面後落地。", literalMeaning: "掉到地面", clue: "主語是計畫，前文說長期討論", substitute: "實施" },
+  { target: "根", sentence: "小組決定追查問題的根。", meaning: "根本原因", literal: "強風吹斷了樹的一條根。", literalMeaning: "植物吸收水分的器官", clue: "與「問題、追查」搭配", substitute: "根源" },
+  { target: "門", sentence: "這份新證據替協商打開了一道門。", meaning: "解決或前進的途徑", literal: "他推開門走進教室。", literalMeaning: "建築物出入口", clue: "受詞是抽象的協商進展", substitute: "途徑" },
+  { target: "火花", sentence: "兩人的追問碰出了新的想法火花。", meaning: "突然產生的靈感", literal: "金屬碰撞時迸出火花。", literalMeaning: "燃燒發光的微粒", clue: "前有「想法」，來源是彼此追問", substitute: "靈感" },
+];
+
+const toneRows = [
+  ["他為了守住原則而「堅持」查證。", "褒義，肯定不輕易放棄", "貶義，批評不聽勸告", "中性，只表示站立", "無法由句子判斷"],
+  ["證據已經改變，他仍「頑固」地拒絕修正。", "貶義，批評不肯變通", "褒義，稱讚意志堅定", "中性，只表示安靜", "與態度無關"],
+  ["她「節儉」地使用材料，把剩餘紙張留給下一組。", "褒義，肯定節制不浪費", "貶義，批評拒絕付出", "中性，只說材料很少", "表示動作迅速"],
+  ["他明明有能力分擔，卻因「吝嗇」而不肯借出工具。", "貶義，批評過分愛惜而不願分享", "褒義，稱讚妥善保管", "中性，只說工具昂貴", "表示工具不足"],
+  ["組長在資訊充分後「果斷」決定延期。", "褒義，肯定判斷明快", "貶義，批評不聽意見", "中性，只說時間很短", "表示延期必定錯誤"],
+  ["他沒有讀完資料便「武斷」宣布唯一答案。", "貶義，批評缺乏根據便下結論", "褒義，稱讚決策迅速", "中性，只表示意見不同", "表示使用武力"],
+  ["編輯「謹慎」核對引言前後文，再決定是否刊出。", "褒義，肯定小心周全", "貶義，批評完全不行動", "中性，只說速度慢", "表示害怕所有讀者"],
+  ["面對可處理的小錯，他卻因「畏縮」而不敢回報。", "貶義，批評因畏懼而退縮", "褒義，稱讚風險管理", "中性，只表示坐得較後面", "表示文字縮小"],
+  ["她衣著「樸實」，說明卻清楚有力。", "褒義或中性，強調不浮華而實在", "貶義，斷言衣著寒酸", "表示衣服破損", "表示內容缺乏證據"],
+  ["他只憑一次成功便「自負」地否定所有建議。", "貶義，批評過度相信自己", "褒義，稱讚有自信", "中性，只表示自己負責", "表示承擔費用"],
+  ["她在衝突中仍「沉著」地重述雙方需求。", "褒義，肯定冷靜穩定", "貶義，批評對人冷淡", "中性，只表示聲音很小", "表示動作緩慢"],
+  ["他把未查證的猜測說成事實，這不是直率而是「冒進」。", "貶義，批評未衡量風險便前進", "褒義，稱讚積極", "中性，只表示先發言", "表示冒險運動"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`判斷句子「${sentence}」中引號詞語的感情色彩，哪項正確？`, correct, wrongA, wrongB, wrongC, `${correct}；評價來自詞語與全句行動結果的共同限制。`]);
+
+const contextualMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue }) => [`句子「${sentence}」中的「${target}」最接近哪個意思？`, meaning, "字典中另一個常見義項", "只依字面形狀作解釋", "與句中搭配無關的生活聯想", `${clue}，所以此處取「${meaning}」義。`]);
+const literalDerivedRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`比較「${literal}」與「${sentence}」，哪項分析正確？`, `前句「${target}」取「${literalMeaning}」義，後句引申為「${meaning}」`, `兩句「${target}」完全同義且都取「${literalMeaning}」`, `前句是引申義，後句只能按字面解釋`, "兩句都沒有上下文，無法判斷", `同一詞由「${literalMeaning}」延伸到「${meaning}」，語境使義項不同。`]);
+const sameWordRows = polysemyContexts.map(({ target, sentence, meaning, literal, literalMeaning }) => [`「${literal}」「${sentence}」兩句都有「${target}」，哪項關係正確？`, `字形相同，但前句指「${literalMeaning}」，後句指「${meaning}」`, "字形相同便代表句義完全一樣", "兩句讀音不同，所以必是兩個字", "後句沒有任何可判義的搭配", `前後受詞與情境不同，使「${target}」分別對應兩個義項。`]);
+const collocationMeaningRows = polysemyContexts.map(({ target, sentence, meaning, clue }) => [`要判斷「${sentence}」中「${target}」的義項，哪個線索最直接？`, clue, "這個字的筆畫數", "句子的總字數", "讀者最先想到的畫面", `「${clue}」直接限制此處只能解作「${meaning}」。`]);
+const abstractUseRows = polysemyContexts.map(({ target, sentence, meaning, literalMeaning }) => [`哪項正確說明「${sentence}」中的抽象用法？`, `「${target}」由「${literalMeaning}」轉用來表示「${meaning}」`, `句中真的出現了${literalMeaning}`, `「${target}」只是多餘裝飾，刪去不影響`, "只要是抽象用法便可任意解釋", `原句保留與本義的關聯，並由搭配把意義限定為「${meaning}」。`]);
+const substitutionRows = polysemyContexts.map(({ target, sentence, meaning, substitute }) => [`若不改變「${sentence}」的主要句意，哪個詞最適合替換「${target}」？`, substitute, "碰觸", "重量", "門窗", `「${substitute}」在此可保留「${meaning}」的語境義，其餘詞只適用別的義項。`]);
+
+const POLYSEMY_CASES = Object.freeze({
+  CHI_R4_S036: contextualMeaningRows,
+  CHI_R4_S037: literalDerivedRows,
+  CHI_R4_S038: sameWordRows,
+  CHI_R4_S039: collocationMeaningRows,
+  CHI_R4_S040: toneRows,
+  CHI_R4_S041: abstractUseRows,
+  CHI_R4_S042: substitutionRows,
+});
+
+const nearSynonymRows = [
+  ["寧靜", "安靜", "都可表示沒有喧鬧，前者也常帶平和氛圍", "猛烈", "遙遠"],
+  ["觀看", "觀賞", "都表示用眼睛看，後者常含欣賞意味", "觀念", "看守"],
+  ["提醒", "提示", "都可使人注意原先可能忽略的事", "提拔", "警報"],
+  ["改善", "改進", "都表示使原有狀況變得較好", "改寫", "改期"],
+  ["珍惜", "愛惜", "都表示重視而不輕易浪費或損害", "珍藏", "疼愛"],
+  ["迅速", "快速", "都表示速度很快", "匆促", "急躁"],
+  ["細心", "仔細", "都表示對細節留意、不草率", "微小", "細碎"],
+  ["明確", "清楚", "都可表示內容容易辨認、不含糊", "明亮", "清白"],
+  ["選擇", "挑選", "都表示從多個對象中取定其一", "選舉", "挑戰"],
+  ["維持", "保持", "都表示讓某狀態繼續存在", "修理", "保存"],
+  ["協助", "幫助", "都表示給予他人助力", "合作", "協商"],
+  ["查核", "核對", "都表示依資料檢查是否正確一致", "核准", "調查"],
+].map(([word, correct, relation, wrongA, wrongB]) => [`哪個詞在「${word}」的常用語境中意義最相近？`, correct, wrongA, wrongB, "沒有上下文便可任意替換的所有同音詞", `${relation}；實際替換仍須核對句中搭配。`]);
+
+const degreeRows = [
+  ["微笑／大笑", "「大笑」的動作與聲音程度通常較強", "兩詞程度完全相同", "「微笑」一定帶貶義", "「大笑」只能形容天氣"],
+  ["潮溼／溼透", "「溼透」表示水分已深入全部，程度較高", "「潮溼」表示完全浸水", "兩詞只差字數", "「溼透」程度較低"],
+  ["疲倦／精疲力竭", "「精疲力竭」表示疲累到力氣幾乎用盡，程度更強", "「疲倦」程度更強", "兩詞互為反義", "兩詞都只指飢餓"],
+  ["喜歡／熱愛", "「熱愛」通常比「喜歡」投入更深、程度更強", "「喜歡」必定比熱愛強", "兩詞互為反義", "「熱愛」只能用於食物"],
+  ["寒冷／酷寒", "「酷寒」表示極度寒冷", "「寒冷」必定低於零度", "兩詞程度相同", "「酷寒」表示炎熱"],
+  ["擔心／焦慮", "「焦慮」常表示更持續或強烈的不安", "「擔心」一定造成疾病", "兩詞互為反義", "「焦慮」表示期待"],
+  ["批評／斥責", "「斥責」的責備語氣通常比一般批評強烈", "「批評」只能是讚美", "兩詞程度完全相同", "「斥責」表示沉默"],
+  ["損壞／毀壞", "「毀壞」通常表示破壞程度更嚴重", "「損壞」一定不能修復", "兩詞互為反義", "「毀壞」程度較輕"],
+  ["改善／徹底改造", "「徹底改造」表示改變範圍與程度更大", "「改善」一定全部重做", "兩者只差語氣沒有範圍差別", "後者程度較低"],
+  ["注意／警戒", "「警戒」除注意外還含防備危險，強度較高", "「注意」一定表示有敵人", "兩詞完全無關", "「警戒」表示放鬆"],
+  ["希望／渴望", "「渴望」通常表示願望更迫切", "「希望」程度必定更強", "兩詞互為反義", "「渴望」表示口渴而已"],
+  ["震動／劇烈震動", "加入「劇烈」明確提高動作幅度", "加入程度詞不會改變意思", "前者程度必定更高", "兩者都表示靜止"],
+].map(([pair, correct, wrongA, wrongB, wrongC]) => [`比較近義表達「${pair}」的程度，哪項正確？`, correct, wrongA, wrongB, wrongC, `${correct}；程度詞與慣用義使兩者不能無條件互換。`]);
+
+const objectRows = [
+  ["欣賞／觀賞", "「欣賞」可用於作品、能力或態度；「觀賞」多用於可觀看的景物、表演", "兩詞只能用於花朵", "「觀賞能力」是唯一固定搭配", "兩詞對象完全相同"],
+  ["撫養／扶養", "「撫養」常指照料教養年幼者；「扶養」著重供養需要扶助者", "兩詞只用於植物", "兩詞都只能形容朋友", "兩詞毫無對象差別"],
+  ["蒞臨／來到", "「蒞臨」是敬語，多用於尊敬對象到場；「來到」適用範圍較廣", "「蒞臨」可隨意用於自己回家", "「來到」只能用於長官", "兩詞語體與對象完全相同"],
+  ["聆聽／聽取", "「聆聽」著重專心聽；「聽取」常接意見、報告或說明", "「聽取音樂」永遠比「聆聽」精確", "兩詞只能接聲音大小", "兩詞沒有搭配差別"],
+  ["制定／製作", "「制定」多接規則、計畫；「製作」多接具體成品或內容", "制定海報是唯一正確搭配", "製作法律比制定法律精確", "兩詞可以任意互換"],
+  ["改善／改良", "「改善」可接環境、關係、狀況；「改良」常接品種、製程或器物", "改良關係一定比改善關係自然", "兩詞只能用於機器", "兩詞對象完全一致"],
+  ["保留／保存", "「保留」可指留下意見、權利或物品；「保存」常著重使物品資料不受損", "保存意見永遠比保留意見自然", "保留只能接食物", "兩詞無任何搭配限制"],
+  ["召集／招募", "「召集」使既定成員集合；「招募」徵求新成員加入", "召集新會員與招募完全相同", "招募只能用於開會", "兩詞對象與目的相同"],
+  ["瀏覽／閱讀", "「瀏覽」著重快速看過；「閱讀」可深入理解完整文字", "瀏覽一定比閱讀深入", "閱讀只能用於圖片", "兩詞行動深度完全相同"],
+  ["修訂／修理", "「修訂」多接文字、規章；「修理」多接器物或設備", "修理文章是標準正式搭配", "修訂腳踏車比修理精確", "兩詞對象無差別"],
+  ["觀察／監視", "「觀察」可為了解現象；「監視」常含持續注意特定對象動態", "監視植物成長一定比觀察中性", "觀察只能用於人", "兩詞語氣與目的完全相同"],
+  ["公布／揭露", "「公布」是公開發布；「揭露」常指把原先不明或被隱藏的事揭示", "公布成績必定含揭發負面事實", "揭露任何消息都沒有語氣", "兩詞對象與語用完全相同"],
+].map(([pair, correct, wrongA, wrongB, wrongC]) => [`比較「${pair}」的使用對象與搭配，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const antonymRows = [
+  ["面對突發狀況，他仍很冷靜；另一人卻十分＿＿。", "慌張", "清楚", "安靜", "仔細"],
+  ["這張影像原本模糊，調整後變得十分＿＿。", "清晰", "遙遠", "快速", "沉重"],
+  ["試辦範圍先縮小，驗證後再逐步＿＿。", "擴大", "減少", "停止", "模糊"],
+  ["會議資料可以公開，個人身分則應＿＿。", "保密", "公布", "擴散", "重複"],
+  ["這條路我原本陌生，走過幾次後便漸漸＿＿。", "熟悉", "疏遠", "遼闊", "急促"],
+  ["舊版說明過於複雜，新版改得較為＿＿。", "簡明", "繁複", "嚴厲", "含糊"],
+  ["證據不足時應保留，不可把可能說成＿＿。", "必然", "偶然", "疑問", "推測"],
+  ["這項措施帶來便利，也可能造成＿＿。", "不便", "快速", "安全", "準確"],
+  ["入口原本狹窄，整修後變得較為＿＿。", "寬敞", "細長", "安靜", "清晰"],
+  ["他先反對提案，聽完補充資料後轉而＿＿。", "贊成", "懷疑", "沉默", "延後"],
+  ["紀錄不應只寫成功，也要保留＿＿的原因。", "失敗", "完成", "順利", "成果"],
+  ["這段說明前半具體，後半卻十分＿＿。", "抽象", "詳細", "精確", "完整"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`依句中對比關係，哪個詞最適合填入「${sentence}」？`, correct, wrongA, wrongB, wrongC, `句中的轉折或對照使「${correct}」與前項形成合宜反義。`]);
+
+const taxonomyRows = [
+  ["蘋果、香蕉、芭樂", "水果", "飲料", "文具", "交通工具"],
+  ["鉛筆、直尺、橡皮擦", "文具", "家具", "樂器", "食材"],
+  ["公車、火車、捷運", "大眾運輸工具", "自然景觀", "家用電器", "運動項目"],
+  ["散文、小說、詩", "文學體裁", "標點符號", "職業名稱", "氣象現象"],
+  ["逗號、分號、句號", "標點符號", "修辭名稱", "句子成分", "書法字體"],
+  ["颱風、豪雨、乾旱", "氣象或災害現象", "飲食習慣", "交通規則", "文學流派"],
+  ["桌子、椅子、書櫃", "家具", "建材", "容器", "衣物"],
+  ["麻雀、白鷺、燕子", "鳥類", "魚類", "昆蟲", "植物"],
+  ["測量、記錄、比較", "研究或查證行動", "情緒狀態", "人物身分", "空間方位"],
+  ["尊重、誠實、負責", "行為品格", "自然資源", "時間單位", "文章結構"],
+  ["圖書館、博物館、美術館", "文化學習場館", "醫療院所", "交通場站", "餐飲店家"],
+  ["原因、過程、結果", "事件發展要素", "物品材質", "人物外貌", "聲音高低"],
+].map(([items, correct, wrongA, wrongB, wrongC]) => [`「${items}」的共同上位類別最適合寫成什麼？`, correct, wrongA, wrongB, wrongC, `三項都屬「${correct}」，上位詞能完整涵蓋而不混入別類。`]);
+
+const semanticFieldRows = [
+  ["雨勢逐漸＿＿，河面也恢復平穩。", "減弱", "甜美", "寬敞", "尖銳"],
+  ["他先＿＿兩份紀錄，再決定哪一處需要查證。", "比較", "燃燒", "栽種", "跳躍"],
+  ["新的路標讓轉彎處更加＿＿，遊客不再走錯。", "清楚", "苦澀", "柔軟", "沉重"],
+  ["會議出現分歧時，主持人請雙方先＿＿需求。", "說明", "烹煮", "搬運", "縫補"],
+  ["資料缺少日期，因此結論仍須＿＿。", "保留", "吞嚥", "綻放", "飛翔"],
+  ["工作人員依編號＿＿器材，確認沒有遺漏。", "清點", "吟唱", "播種", "漂流"],
+  ["兩段文字立場不同，卻都＿＿來源的重要。", "強調", "融化", "裁剪", "躲藏"],
+  ["他發現原先判斷有誤，便立即＿＿說法。", "修正", "灌溉", "結冰", "旋轉"],
+  ["要讓讀者重做查證，必須＿＿完整步驟。", "記錄", "品嘗", "攀爬", "拍打"],
+  ["小組把留言依主題＿＿，再統計次數。", "分類", "折疊", "吹奏", "捕捉"],
+  ["證據只能支持部分情況，不能過度＿＿結論。", "擴大", "咀嚼", "縫合", "照明"],
+  ["他用具體例子＿＿抽象規則，讀者更容易理解。", "說明", "淹沒", "封閉", "敲擊"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`從與句意相同的語義場選詞，哪個最適合填入「${sentence}」？`, correct, wrongA, wrongB, wrongC, `「${correct}」的意義與受詞、上下句及行動目的相合。`]);
+
+const pragmaticRows = [
+  ["「蒞臨寒舍」中的「蒞臨」若用來說「我蒞臨自己家」，問題在哪裡？", "敬語對象不合，說自己到家宜用「回到」", "兩句字數不同", "蒞臨只能形容天氣", "只要正式場合便一定正確"],
+  ["「聆聽音樂」可通，但「聆聽命令」通常不如哪個詞合宜？", "聽從", "觀看", "保存", "公布"],
+  ["「改善關係」自然；把它換成「改良關係」有何問題？", "「改良」常接品種、器物或製程，與人際關係搭配不自然", "兩詞讀音不同所以不能同句", "改良程度一定較弱", "改善只能用於機械"],
+  ["「召集原有成員開會」與「招募新成員」為何不能互換？", "前者使既定成員集合，後者徵求新人加入", "兩詞只有字形差別", "召集一定是貶義", "招募只用於軍隊"],
+  ["「瀏覽目錄」若改成「深入閱讀目錄」，語意會如何變化？", "加入深入使閱讀程度提高，不再只是快速查看", "兩句完全同義", "瀏覽比深入閱讀更仔細", "閱讀只能用於小說"],
+  ["「保存檔案」與「保留意見」的搭配差異為何？", "保存著重不使資料受損；保留可指留下看法或權利", "兩詞只能用於食物", "保留一定比保存時間長", "兩詞可任意互換"],
+  ["「揭露弊端」若改成「公布弊端」，可能少了什麼語氣？", "把原先隱藏問題揭示出來的意味", "表示日期的意味", "尊敬對方的意味", "比較兩物的意味"],
+  ["「觀看比賽」與「觀賞表演」都可用看，但差異為何？", "觀賞常帶欣賞意味，觀看較中性廣泛", "觀看一定是貶義", "觀賞只能看文字", "兩詞對象完全互斥"],
+  ["「查核帳目」和「核准計畫」都有「核」，為何不相近？", "前者是檢查正確性，後者是審查後批准", "兩詞同字所以同義", "查核一定含同意", "核准只表示計算"],
+  ["「安靜的教室」可改「寧靜的教室」，但何時語氣可能不同？", "「寧靜」常比「安靜」多一層平和氛圍", "寧靜一定表示完全無聲", "安靜只能形容人", "兩詞永遠無任何差異"],
+  ["「直率地指出問題」和「尖刻地批評」都直接，為何不可混用？", "前者可中性或褒義，後者含傷人、苛刻的貶義", "兩詞都只指音量", "尖刻一定是稱讚", "直率一定表示錯誤"],
+  ["「協助同學」若改成「幫腔同學」，為何語意不同？", "「幫腔」常指附和一方，可能帶貶義，不等於一般幫助", "兩詞只是書面口語差別", "協助必定帶貶義", "幫腔表示唱歌所以沒有引申義"],
+].map(([stem, correct, wrongA, wrongB, wrongC]) => [stem, correct, wrongA, wrongB, wrongC, correct]);
+
+const SEMANTIC_FIELD_CASES = Object.freeze({
+  CHI_R4_S043: nearSynonymRows,
+  CHI_R4_S044: degreeRows,
+  CHI_R4_S045: objectRows,
+  CHI_R4_S046: antonymRows,
+  CHI_R4_S047: taxonomyRows,
+  CHI_R4_S048: semanticFieldRows,
+  CHI_R4_S049: pragmaticRows,
+});
+
+const idiomRecords = [
+  { idiom: "揠苗助長", meaning: "為求速成而用錯方法，反而造成損害", story: "宋人嫌禾苗長得慢，便把苗一一拔高，結果禾苗枯萎", tone: "貶義", use: "為了讓新手立刻進步，教練強迫過量訓練，結果造成受傷", misuse: "他依進度耐心練習，真是揠苗助長" },
+  { idiom: "緣木求魚", meaning: "方法或方向錯誤，不可能達成目的", story: "孟子用爬到樹上找魚，比喻用錯方法追求目標", tone: "貶義", use: "想提高閱讀理解，卻只背答案而不讀文章", misuse: "他先讀全文再找證據，可說是緣木求魚" },
+  { idiom: "畫蛇添足", meaning: "做了多餘的事，反而破壞原有成果", story: "眾人比賽畫蛇，有人先畫完卻替蛇加腳，因而失去酒", tone: "貶義", use: "海報資訊已完整，編輯又加一段無關文字使重點模糊", misuse: "他補上遺漏日期，這是畫蛇添足" },
+  { idiom: "刻舟求劍", meaning: "拘泥不變的方法，忽略情況已經改變", story: "楚人劍落水後只在移動的船上刻記號，靠岸才下水尋劍", tone: "貶義", use: "班次表已更新，他仍照舊版時間候車", misuse: "她發現規則更新便調整做法，正是刻舟求劍" },
+  { idiom: "守株待兔", meaning: "不主動努力，只想靠偶然再次得到成果", story: "農夫偶然撿到撞樹而死的兔子，從此守著樹樁不再耕作", tone: "貶義", use: "作品偶然得獎後，他不再修改，只等下次同樣幸運", misuse: "他每天查資料改稿，可說是守株待兔" },
+  { idiom: "亡羊補牢", meaning: "出了問題後及時補救，仍能防止損失擴大", story: "羊逃走後修補羊圈，避免其他羊繼續走失", tone: "多為勸勉或中性偏褒", use: "發現資料外洩後立刻改權限並通知受影響者", misuse: "明知設備損壞仍拒絕修理，真是亡羊補牢" },
+  { idiom: "塞翁失馬", meaning: "禍福可能互相轉化，一時得失難以下定論", story: "邊塞老人失馬、得馬，後又因騎馬受傷而免於征戰，事情屢有轉折", tone: "中性，常用來勸人不急論得失", use: "活動延期雖令人失望，卻讓團隊發現並補上安全漏洞", misuse: "證據已經確定他違規，卻說真假只是塞翁失馬" },
+  { idiom: "望梅止渴", meaning: "用想像或空泛安慰暫時滿足，不能真正解決需要", story: "行軍口渴時，以前方有梅林的說法使士兵想到酸味而暫時生津", tone: "多含侷限或批評意味", use: "只宣稱設備很快會修好，卻沒有任何修復計畫", misuse: "工作人員真的送來飲水，解決口渴，可說是望梅止渴" },
+  { idiom: "破釜沉舟", meaning: "下定決心，不留退路地全力行動", story: "項羽渡河後破釜沉舟，表示必須在有限條件下決戰", tone: "可褒可警，須看行動是否合理", use: "團隊評估風險後決定集中全部人力，在期限前完成救援", misuse: "他同時保留五個備案，態度十分破釜沉舟" },
+  { idiom: "東施效顰", meaning: "不明白他人優點便盲目模仿，結果適得其反", story: "東施看西施皺眉受人憐愛，便照樣捧心皺眉，反使旁人避開", tone: "貶義", use: "不懂得獎作品的結構，只把它的華麗詞語全部照搬", misuse: "她分析示範原理後改成適合自己的方法，這叫東施效顰" },
+  { idiom: "井底之蛙", meaning: "見聞狹窄，卻把有限經驗當成全部", story: "井中青蛙只見井口大小的天空，難以理解大海的廣闊", tone: "貶義", use: "只訪問一人便宣稱全校都支持提案", misuse: "他蒐集多方資料並保留限制，真是井底之蛙" },
+  { idiom: "雪中送炭", meaning: "在他人急需時給予實際幫助", story: "寒雪中送去可取暖的炭，比喻援助正處困難的人", tone: "褒義", use: "設備突然故障時，鄰組立即借出唯一可替代的工具", misuse: "得獎者已有多份禮物，又收到裝飾品，這一定是雪中送炭" },
+];
+
+const idiomMeaningRows = idiomRecords.map(({ idiom, meaning }) => [`「${idiom}」的整體慣用義最接近哪一項？`, meaning, "把成語四個字逐字拼成的表面動作", "只用來指典故人物的姓名", "任何與動物或物品有關的情況", `「${idiom}」慣用來表示「${meaning}」，不能只按字面拆解。`]);
+const idiomUseRows = idiomRecords.map(({ idiom, meaning, use }) => [`哪個情境最適合用「${idiom}」？`, use, `只因句中出現與典故相同的物品，便使用「${idiom}」`, `事情結果與「${meaning}」相反的情境`, "沒有行動、對象或結果可供判斷的情境", `題述情境完整呈現「${meaning}」。`]);
+const idiomLiteralRows = idiomRecords.map(({ idiom, meaning, story }) => [`讀到「${idiom}」時，哪項能正確區分字面與慣用義？`, `典故表面事件是「${story}」；慣用義則是「${meaning}」`, `只要現代句中沒有典故原物，成語便不能使用`, "慣用義就是把每個字各選第一個字典義相加", "字面事件與寓意完全沒有關係", `典故事件提供寓意來源，但現代使用要看「${meaning}」是否符合情境。`]);
+const idiomStoryRows = idiomRecords.map(({ idiom, meaning, story }) => [`根據「${story}」，「${idiom}」最適合概括哪個寓意？`, meaning, "任何努力都不會成功", "只要模仿古人就能解決問題", "成語只能用來重述故事情節", `故事中的因果關係支持「${meaning}」，不是只記人物或物件。`]);
+const idiomToneRows = idiomRecords.map(({ idiom, tone, meaning }) => [`「${idiom}」在一般使用中帶有哪種語氣或評價？`, `${tone}，因為它常用來表示「${meaning}」`, "永遠是最高程度的讚美", "永遠完全中性，不含任何評價", "只由句末標點決定褒貶", `「${idiom}」通常為${tone}；放回完整句子仍要核對說話者態度。`]);
+const idiomCorrectionRows2 = idiomRecords.map(({ idiom, misuse, meaning }) => [`句子「${misuse}」使用「${idiom}」不當，哪個訂正理由最準確？`, `題中情境不符合「${meaning}」，應改用能描述實際行動的詞語`, "只要把成語移到句首就會正確", "成語字形正確，所以不可能誤用", "在成語後加驚嘆號即可", `問題在適用情境與「${meaning}」不合，不是位置或標點。`]);
+const idiomSelectionRows = idiomRecords.map(({ idiom, use, meaning }, index) => {
+  const wrongs = [1, 4, 7].map((offset) => idiomRecords[(index + offset) % idiomRecords.length].idiom);
+  return [`情境「${use}」最適合用哪個成語概括？`, idiom, ...wrongs, `情境的行動、原因與結果符合「${idiom}」所表示的「${meaning}」。`];
+});
+
+const IDIOM_CASES = Object.freeze({
+  CHI_R4_S050: idiomMeaningRows,
+  CHI_R4_S051: idiomUseRows,
+  CHI_R4_S052: idiomLiteralRows,
+  CHI_R4_S053: idiomStoryRows,
+  CHI_R4_S054: idiomToneRows,
+  CHI_R4_S055: idiomCorrectionRows2,
+  CHI_R4_S056: idiomSelectionRows,
+});
+
+const classicalWordRecords = [
+  { text: "學而時習之，不亦說乎？", target: "說", meaning: "喜悅", modern: "說話", translation: "學習後按時溫習，不也是令人喜悅的事嗎？" },
+  { text: "溫故而知新，可以為師矣。", target: "故", meaning: "學過的舊知識", modern: "所以、因此", translation: "溫習舊知識而能有新體會，就可以憑此當老師了。" },
+  { text: "三人行，必有我師焉。", target: "行", meaning: "同行、走在一起", modern: "行業", translation: "幾個人同行，其中一定有可以作我老師的人。" },
+  { text: "見賢思齊焉，見不賢而內自省也。", target: "齊", meaning: "看齊、達到同樣境界", modern: "整齊", translation: "看見賢者便想向他看齊，看見不賢者便在心中反省自己。" },
+  { text: "人不知而不慍，不亦君子乎？", target: "慍", meaning: "生氣、怨恨", modern: "溫暖", translation: "別人不了解自己卻不怨恨，不也是君子嗎？" },
+  { text: "吾日三省吾身。", target: "日", meaning: "每天", modern: "太陽或日期", translation: "我每天多次反省自己。" },
+  { text: "學而不思則罔。", target: "罔", meaning: "迷惑而無所得", modern: "網子", translation: "只學習卻不思考，就會迷惑而沒有所得。" },
+  { text: "思而不學則殆。", target: "殆", meaning: "疑惑或危險不安", modern: "幾乎、大概", translation: "只思考卻不學習，就會疑惑而陷於危殆。" },
+  { text: "歲寒，然後知松柏之後凋也。", target: "歲寒", meaning: "一年中寒冷的時節", modern: "年齡寒冷", translation: "到了寒冷時節，才知道松柏是最後凋零的。" },
+  { text: "逝者如斯夫，不舍晝夜。", target: "舍", meaning: "停止", modern: "房舍", translation: "流逝的時光像這流水一樣，日夜不停。" },
+  { text: "工欲善其事，必先利其器。", target: "利", meaning: "使鋒利", modern: "利益、好處", translation: "工匠想把工作做好，一定先使工具鋒利。" },
+  { text: "過而不改，是謂過矣。", target: "過", meaning: "犯錯或過錯", modern: "經過", translation: "犯了錯卻不改正，這才叫作真正的過錯。" },
+];
+
+const classicalMeaningRows = classicalWordRecords.map(({ text, target, meaning }) => [`文句「${text}」中的「${target}」最接近哪個意思？`, meaning, "直接套用最常見的現代義", "只按字形猜測而不看句法", "把上下兩句意思顛倒", `依句法位置與上下文，「${target}」應解作「${meaning}」。`]);
+
+const functionWordRecords = [
+  ["學而時習之", "而", "連接前後動作，可譯為「並且、而且」", "表示轉折「但是」", "代替學習內容", "表示處所"],
+  ["人不知而不慍", "而", "連接相反情況，可譯為「卻」", "表示並列「而且」", "表示原因「因為」", "代替君子"],
+  ["知之為知之", "之", "代詞，指所知道的事", "結構助詞「的」", "表示前往", "句末感嘆詞"],
+  ["可以為師矣", "以", "介詞或憑藉義，可理解為「憑這一點」", "表示目的「來」且沒有憑藉", "代替老師", "表示轉折"],
+  ["不義而富且貴", "且", "連接「富」與「貴」，表示並列「而且」", "表示尚且的讓步", "表示將要", "代替財富"],
+  ["不義而富且貴，於我如浮雲", "於", "介詞，表示對象，可譯為「對於」", "表示從某地出發", "代替我", "句末判斷"],
+  ["逝者如斯夫", "者", "把「逝」名詞化，指流逝的事物或時光", "表示比較", "代替河流", "表示疑問"],
+  ["是謂過矣", "矣", "句末語氣詞，表示判斷已成", "代替過錯", "表示處所", "連接並列詞"],
+  ["三人行，必有我師焉", "焉", "兼有「於其中」的意思", "表示反問", "代替三人姓名", "只表示句號"],
+  ["學而不思則罔", "則", "連接條件與結果，可譯為「就」", "表示轉折「卻」", "代替思考", "表示比較"],
+  ["故不積跬步，無以至千里", "故", "連接前文推論，可譯為「所以」", "表示舊事", "表示故意", "代替千里"],
+  ["見賢思齊焉", "焉", "語氣兼指向對象，可理解為「向他、於此」", "表示原因", "表示複數", "代替賢者姓名"],
+].map(([text, target, correct, wrongA, wrongB, wrongC]) => [`判斷「${text}」中虛字「${target}」的功能，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const ancientModernRows = classicalWordRecords.map(({ text, target, meaning, modern }) => [`比較「${text}」中的「${target}」與常見現代義，哪項正確？`, `古句取「${meaning}」義，不能直接套成現代常見的「${modern}」`, `古今都只能解作「${modern}」`, `古句沒有任何語境可判義`, "只要是古文，每個字的意思都與現代相反", `句中搭配支持「${meaning}」，而「${modern}」放回原句不通。`]);
+
+const loanCharacterRows = [
+  ["學而時習之，不亦說乎", "「說」通「悅」，解作喜悅", "「說」通「稅」", "「說」仍只解說話", "整句沒有通假"],
+  ["誨女知之乎", "「女」通「汝」，解作你", "「女」通「乳」", "「女」只解女性", "「知」通「枝」"],
+  ["知之為知之，不知為不知，是知也", "末字「知」通「智」，指智慧", "所有「知」都通「枝」", "末字只解知道某事", "整句沒有通假"],
+  ["寡助之至，親戚畔之", "「畔」通「叛」，解作背叛", "「畔」通「判」", "「畔」只解田界", "「親」通「新」"],
+  ["所以動心忍性，曾益其所不能", "「曾」通「增」，解作增加", "「曾」只解曾經", "「曾」通「層」", "「益」通「溢」"],
+  ["困於心，衡於慮，而後作", "「衡」通「橫」，指梗塞、不順", "「衡」只解秤桿", "「衡」通「恆」", "「慮」通「旅」"],
+  ["入則無法家拂士", "「拂」通「弼」，解作輔佐", "「拂」只解擦拭", "「拂」通「佛」", "「士」通「仕」"],
+  ["食馬者不知其能千里而食也", "「食」通「飼」，解作餵養", "兩個「食」都只解吃", "「馬」通「碼」", "「里」通「理」"],
+  ["才美不外見", "「見」通「現」，解作顯現", "「見」只解看見", "「見」通「建」", "「才」通「材」且只能如此"],
+  ["便要還家，設酒殺雞作食", "「要」通「邀」，解作邀請", "「要」只解重要", "「還」通「環」", "整句沒有通假"],
+  ["略無闕處", "「闕」通「缺」，解作中斷或空缺", "「闕」只解宮門", "「略」通「掠」", "「處」通「楚」"],
+  ["寒暑易節，始一反焉", "「反」通「返」，解作往返一次", "「反」只解反對", "「易」通「亦」", "「焉」通「煙」"],
+].map(([text, correct, wrongA, wrongB, wrongC]) => [`文句「${text}」含有通假線索，哪項說明正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const omissionRows = [
+  ["問今是何世，乃不知有漢，無論魏晉。", "省略的主語是桃花源中人；他們問漁人並表示不知朝代", "省略的主語是漢武帝", "每句主語都是魏晉", "句中完全沒有省略"],
+  ["一鼓作氣，再而衰，三而竭。", "「再、三」後省略「鼓」，指第二次、第三次擊鼓", "省略的是兩支軍隊", "「再」表示明天", "三句都沒有動作"],
+  ["擇其善者而從之，其不善者而改之。", "後句承接省略「見、擇」等動作，指以他人缺點反省改正", "「之」都指三個人姓名", "後句主語改成老師", "兩句只談選物品"],
+  ["投以骨。一狼得骨止，一狼仍從。", "首句可補為「屠投狼以骨」；後文由兩狼反應證明", "投骨者是狼", "省略的是一條河", "首句沒有受詞"],
+  ["屠暴起，以刀劈狼首，又數刀斃之。", "「又數刀」承前省略主語「屠」與動作成分，可補為屠又砍數刀", "第二句主語改成另一隻狼", "「之」指刀", "兩句完全無指涉"],
+  ["見漁人，乃大驚，問所從來。", "連續動作的主語是桃花源中人，見到漁人後詢問來處", "主語是漁人自己", "主語是朝廷官員", "三個動作互不相關"],
+  ["便要還家，設酒殺雞作食。", "主語承前為桃花源中人；邀漁人回家並設食款待", "漁人邀自己回家", "雞設酒招待眾人", "「食」是句子主語"],
+  ["太丘舍去，去後乃至。", "後句省略的主語是與太丘相約的友人，他在太丘離開後才到", "後句主語仍是太丘", "主語是元方", "「乃」代替人名"],
+  ["日中不至，則是無信；對子罵父，則是無禮。", "兩個判斷針對友人的行為，省略的受評對象可由對話補出", "評價對象是日中", "兩句都批評元方", "句中沒有任何對話關係"],
+  ["遂率子孫荷擔者三夫，叩石墾壤。", "後一動作的主語承前為愚公等人，他們敲石挖土", "石頭自己敲擊", "主語是山神", "「三夫」表示三位丈夫"],
+  ["帝感其誠，命夸娥氏二子負二山。", "「命」的主語是天帝；受命者是夸娥氏二子", "命令者是愚公", "二山命令天帝", "「其」指夸娥氏"],
+  ["過中不至，太丘舍去。", "前句省略相約友人為主語；太丘因友人過午未到而離開", "太丘自己遲到", "「中」是人物姓名", "兩句沒有因果關係"],
+].map(([text, correct, wrongA, wrongB, wrongC]) => [`補足文句「${text}」的省略成分，哪項最合理？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const classicalTranslationRows = classicalWordRecords.map(({ text, translation }) => [`文句「${text}」譯成白話，哪項最恰當？`, translation, "依古文原字序逐字替換，忽略省略與語氣", "加入原文沒有的人物、原因與結果", "只翻譯最後一字，略去前後關係", `正解保留原句事件、邏輯與語氣：${translation}`]);
+const modernTrapRows = classicalWordRecords.map(({ text, target, meaning, modern }) => [`同學把「${text}」中的「${target}」直接解作「${modern}」。哪個訂正正確？`, `應依古句搭配改解為「${meaning}」`, `現代常用義一定適用，不必訂正`, "古文每個字都沒有意思", "只改讀音，不需處理句義", `把「${meaning}」放回全句才能形成通順一致的解釋。`]);
+
+const CLASSICAL_WORD_CASES = Object.freeze({
+  CHI_R4_S057: classicalMeaningRows,
+  CHI_R4_S058: functionWordRecords,
+  CHI_R4_S059: ancientModernRows,
+  CHI_R4_S060: loanCharacterRows,
+  CHI_R4_S061: omissionRows,
+  CHI_R4_S062: classicalTranslationRows,
+  CHI_R4_S063: modernTrapRows,
+});
+
+const nounPronounRows = [
+  ["雨停後，孩子把雨傘交給櫃臺。", "「孩子、雨傘、櫃臺」都是名詞，分別指人、物與處所", "「把」是名詞", "「停」是代名詞", "全句沒有名詞"],
+  ["雅文找到筆記，她立刻通知失主。", "「她」是代名詞，代替前句的雅文", "「雅文」是動詞", "「失主」是副詞", "「她」沒有指涉對象"],
+  ["這份地圖已經過期，那一份才是新版。", "「這、那」和量詞組合，分別指向兩份地圖", "「地圖」是代名詞", "「新版」只能作動詞", "兩句沒有指涉關係"],
+  ["工作人員記下時間和地點。", "「工作人員、時間、地點」在句中都指稱人事物", "「記下」是名詞", "「和」是代名詞", "「時間」是形容詞"],
+  ["他們把留言依主題分類。", "「他們」是人稱代名詞，指前文的一群人", "「留言」是副詞", "「主題」是連詞", "「分類」是代名詞"],
+  ["誰把這本書放錯書架？", "「誰」是疑問代名詞，用來詢問行動者", "「誰」是形容詞", "「書架」是動詞", "「這」表示過去時間"],
+  ["每個人都應核對自己的資料。", "「每個人」指稱人，「自己」回指句中主體", "「資料」是介詞", "「核對」是名詞", "「都」是人稱代名詞"],
+  ["沒有人知道那件事的完整經過。", "「沒有人、那件事、經過」在此都可作名詞性成分", "「完整」是代名詞", "「知道」是名詞", "「的」是人名"],
+  ["我們在博物館看見一件舊工具。", "「我們」是代名詞；「博物館、工具」是名詞", "「看見」是名詞", "「舊」是代名詞", "「一件」是地名"],
+  ["其中一張照片沒有標示年份。", "「其中」具有代稱範圍的功能，「照片、年份」是名詞", "「沒有」是名詞", "「標示」是代名詞", "「一張」是動詞"],
+  ["大家都同意先保留原始紀錄。", "「大家」是集合性代名詞，「紀錄」是名詞", "「同意」是代名詞", "「先」是名詞", "「原始」是人名"],
+  ["這些是已核准的版本，其餘仍待查證。", "「這些、其餘」都具有代稱功能，指不同版本集合", "「版本」是副詞", "「查證」是人稱代名詞", "「已」是名詞"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`依句中功能判斷「${sentence}」的名詞與代名詞，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const verbAdjectiveRows = [
+  ["學生仔細核對兩張表。", "「核對」是動詞，表示執行檢查動作；「仔細」在此修飾動作", "「學生」是動詞", "「兩張」是形容詞中心", "全句沒有動作"],
+  ["河面十分平靜。", "「平靜」描述河面的狀態，可作形容詞", "「河面」是動詞", "「十分」是名詞", "「平靜」表示具體物品"],
+  ["工作人員搬動沉重的箱子。", "「搬動」是動詞；「沉重」描述箱子的性質", "「沉重」是動詞而且支配箱子", "「箱子」是形容詞", "「的」是主要動作"],
+  ["最新公告取代舊版時刻表。", "「取代」是動詞；「最新、舊版」分別限定名詞", "「公告」是形容詞", "「時刻表」是動詞", "「最新」支配受詞"],
+  ["這條路狹窄卻安全。", "「狹窄、安全」都描述道路性質", "「路」是動詞", "「卻」是形容詞", "「這條」表示動作"],
+  ["小組修正錯誤的數據。", "「修正」表示動作；「錯誤」描述數據", "「錯誤」只可能是動詞", "「數據」是形容詞", "「小組」表示修飾"],
+  ["葉片逐漸捲曲。", "「捲曲」在此描述葉片發生的狀態變化", "「葉片」是動詞", "「逐漸」是名詞", "全句沒有述語"],
+  ["服務台公開處理結果。", "「公開」在此修飾處理方式，「處理」是主要動詞", "「結果」是動詞", "「服務台」是形容詞", "「公開」只能是名詞"],
+  ["她提出具體而可行的方案。", "「提出」是動詞；「具體、可行」描述方案", "「方案」是動詞", "「而」是形容詞", "「提出」描述方案性質"],
+  ["新流程縮短等待時間。", "「縮短」是使動用法的動詞，支配「等待時間」", "「新」是動詞", "「時間」是形容詞", "「等待」只能是名詞"],
+  ["現場變得安靜。", "「變得」連接狀態變化，「安靜」作狀態描述", "「現場」是動詞", "「安靜」支配受詞", "「得」是名詞中心"],
+  ["完整紀錄能支持可靠判斷。", "「支持」是動詞；「完整、可靠」分別修飾名詞", "「紀錄」是形容詞", "「判斷」只能是動詞", "「能」是名詞"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`依句中功能判斷「${sentence}」的動詞與形容詞，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const adverbRows = [
+  ["他「已經」完成核對。", "修飾「完成」，表示動作已發生", "指一件物品", "連接兩個名詞", "代替主語"],
+  ["雨勢「逐漸」減弱。", "修飾「減弱」，表示變化緩慢進行", "表示一個地點", "支配受詞", "代替雨勢"],
+  ["工作人員「立刻」回覆。", "修飾「回覆」，表示時間迅速", "表示人物名稱", "連接因果分句", "描述名詞形狀"],
+  ["這項資料「仍然」有效。", "修飾狀態「有效」，表示狀態持續", "作資料的量詞", "表示相反關係", "作句子主語"],
+  ["他「只」核對了日期。", "限制核對範圍，表示除此以外沒有處理", "表示日期名稱", "連接並列項", "作受詞"],
+  ["小組「再」測量一次。", "修飾動作，表示重複進行", "表示所在位置", "代替小組", "描述儀器材質"],
+  ["結果「非常」清楚。", "修飾形容詞「清楚」，表示程度高", "作結果的代名詞", "支配清楚作受詞", "表示轉折"],
+  ["兩份紀錄「都」提到同一時間。", "概括主語範圍，表示兩份皆如此", "表示城市名稱", "作主要動詞", "修飾「時間」的顏色"],
+  ["他「未必」同意這項結論。", "修飾「同意」，表示不能確定", "表示過去日期", "代替結論", "作連詞連接名詞"],
+  ["請「先」讀標題，再看單位。", "修飾「讀」，表示動作順序在前", "作標題的形容詞", "表示說話者", "支配「單位」"],
+  ["資料「幾乎」完全一致。", "修飾「一致」，表示接近但未達全部", "表示資料數量為幾份", "作名詞中心", "表示原因"],
+  ["他「親自」到現場確認。", "修飾動作，強調由本人執行", "代替現場", "作時間名詞", "連接兩個分句"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`句子「${sentence}」中引號副詞的作用為何？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const connectorRows = [
+  ["他「在」圖書館查資料。", "介詞，引出動作發生的處所", "連詞，連接轉折分句", "代名詞，代替圖書館", "形容詞，描述資料"],
+  ["小組「依照」規範處理。", "介詞，引出行動所依據的規範", "連詞，表示原因結果", "名詞，指一件工具", "副詞，表示程度"],
+  ["「因為」雨勢太大，「所以」活動延期。", "兩者連接原因與結果分句", "兩者都是處所介詞", "兩者都代替活動", "兩者只表示時間"],
+  ["他核對日期，「但是」沒有檢查版本。", "連詞，連接語意轉折的兩個分句", "介詞，引出工具", "代名詞，代替日期", "形容詞，描述版本"],
+  ["請把照片交「給」服務台。", "介詞，引出交付的對象", "連詞，表示假設", "副詞，表示程度", "代名詞，代替照片"],
+  ["「如果」資料不足，「就」保留結論。", "關聯詞連接條件與結果", "兩詞都是名詞", "前者是處所介詞，後者是人稱代詞", "兩詞表示並列"],
+  ["他「和」同學一起整理。", "介詞性用法，引出共同參與的對象", "形容詞，描述同學", "代名詞，代替整理", "副詞，表示完成"],
+  ["紙本「與」電子版日期不同。", "連詞，連接並列的兩個名詞項", "介詞，引出原因", "副詞，表示時間", "動詞，支配日期"],
+  ["「雖然」步驟較多，「卻」能留下證據。", "關聯詞連接讓步與轉折結果", "兩者都表示處所", "兩者都是名詞", "兩者表示單純並列"],
+  ["他「從」原始紀錄找到線索。", "介詞，引出來源或起點", "連詞，表示選擇", "代名詞，代替線索", "形容詞，描述紀錄"],
+  ["「不但」修正錯字，「而且」補上來源。", "關聯詞連接遞進的兩項行動", "兩者都是處所介詞", "兩者都表示假設", "兩者只連接人物"],
+  ["報告「關於」河岸照明提出建議。", "介詞，引出報告涉及的主題", "連詞，表示結果", "代名詞，代替河岸", "副詞，表示次數"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`判斷「${sentence}」中引號詞的介詞或連詞功能，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const flexiblePosRows = [
+  ["他完成一項「研究」。／小組正在「研究」原因。", "前句作名詞，後句作動詞", "兩句都只能作名詞", "兩句都只能作形容詞", "前句是副詞、後句是連詞"],
+  ["請留下完整「記錄」。／他們每天「記錄」溫度。", "前句作名詞，後句作動詞", "前句作動詞、後句作名詞", "兩句都是介詞", "詞性不受句中功能影響"],
+  ["這是一項重要「決定」。／主席「決定」延後。", "前句作名詞，後句作動詞", "兩句都作形容詞", "前句作連詞、後句作副詞", "兩句都只能作名詞"],
+  ["報告提出新的「分析」。／我們先「分析」數據。", "前句作名詞，後句作動詞", "兩句都是代名詞", "前句作動詞、後句作名詞", "兩句都是形容詞"],
+  ["請說明你的「選擇」。／你可以「選擇」紙本。", "前句作名詞，後句作動詞", "兩句都作介詞", "前句作副詞、後句作連詞", "兩句詞性必定相同"],
+  ["這項「支持」很重要。／證據「支持」結論。", "前句名詞化，後句作動詞", "兩句都只作名詞", "前句是形容詞，後句是介詞", "兩句都表示人物"],
+  ["他提出公開的「主張」。／作者「主張」保留紀錄。", "前句作名詞，後句作動詞", "前句作動詞、後句作名詞", "兩句都是副詞", "兩句都是代名詞"],
+  ["結果令人「安心」。／家長終於放下「心」。", "前句「安心」作狀態述語，後句「心」作名詞", "兩句都作連詞", "前句「安」是介詞", "後句沒有名詞"],
+  ["他保持「冷靜」。／「冷靜」的判斷需要證據。", "前句作狀態補語，後句名詞化修飾判斷", "兩句都是動作動詞", "兩句都作介詞", "前句是人稱代詞"],
+  ["我們需要一次完整「比較」。／請「比較」兩張圖。", "前句作名詞，後句作動詞", "兩句都作形容詞", "前句作連詞、後句作副詞", "兩句都只能作動詞"],
+  ["他做出合理「判斷」。／讀者自行「判斷」真偽。", "前句作名詞，後句作動詞", "兩句都作代名詞", "前句作動詞、後句作名詞", "兩句都是介詞"],
+  ["這次「更新」已完成。／系統今晚「更新」資料。", "前句作名詞，後句作動詞", "前句是副詞，後句是連詞", "兩句都只能作名詞", "兩句都作形容詞"],
+].map(([pair, correct, wrongA, wrongB, wrongC]) => [`比較「${pair}」中同一詞的詞性，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const classicalNominalVerbRows = [
+  ["范增數目項王", "「目」原為眼睛名詞，此處活用為動詞，指使眼色示意", "「目」仍只指眼睛", "「數」是人物姓名", "全句沒有動作"],
+  ["驢不勝怒，蹄之", "「蹄」原指蹄子，此處作動詞，指用蹄踢", "「蹄」作量詞", "「之」指驢自己", "句中沒有受詞"],
+  ["名之者誰", "「名」在此作動詞，指命名", "「名」只指姓名名詞", "「者」是動詞", "「誰」是形容詞"],
+  ["策之不以其道", "「策」原指馬鞭，此處作動詞，指鞭策、驅使", "「策」只指計策", "「道」是動詞", "「之」沒有指涉"],
+  ["腰白玉之環", "「腰」原指腰部，此處作動詞，指腰間佩帶", "「腰」只作身體名詞", "「白」是動詞", "「環」代替人物"],
+  ["置人所罾魚腹中", "「罾」原指魚網，此處作動詞，指用網捕得", "「罾」只作量詞", "「魚」是動詞", "「所」表示處所而已"],
+  ["一狼洞其中", "「洞」原指洞穴，此處作動詞，指打洞", "「洞」仍只指現成洞穴", "「一」是動詞", "「其」沒有指涉"],
+  ["不能名其一處也", "「名」作動詞，指說出、描述", "「名」只指名字", "「處」作人稱代詞", "全句沒有否定"],
+  ["先破秦入咸陽者王之", "「王」作使動詞，指讓他稱王", "「王」只作姓氏", "「之」指咸陽", "「先」作名詞"],
+  ["籍吏民，封府庫", "「籍」原指簿冊，此處作動詞，指登記造冊", "「籍」只指書籍", "「封」只作名詞", "兩個動作沒有受詞"],
+  ["稍稍賓客其父", "「賓客」名詞活用為動詞，指以賓客之禮相待", "「賓客」只指到訪的人", "「稍稍」是主語", "「父」作副詞"],
+  ["父利其然", "「利」意動用法，指認為這樣有利", "「利」只指金錢利息", "「父」是動詞", "「然」只表示燃燒"],
+].map(([text, correct, wrongA, wrongB, wrongC]) => [`判斷公版古句「${text}」中的名詞活用，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const syntaxCheckRows = [
+  ["「他迅速完成任務」中的「迅速」", "位於動詞前修飾完成方式，可判作副詞性修飾語", "位於句首所以一定是主語", "有兩個字所以是名詞", "修飾動詞卻判作受詞"],
+  ["「清楚的說明能減少誤解」中的「清楚」", "在「的」前修飾名詞「說明」，作形容詞性修飾語", "因在句首所以作動詞", "「的」使它成為介詞", "清楚支配說明作受詞"],
+  ["「小組比較兩份資料」中的「比較」", "位於主語後並帶受詞「兩份資料」，作動詞", "只因可說「一個比較」便在任何句都作名詞", "作連詞連接小組和資料", "作形容詞描述小組"],
+  ["「這是一次公平的比較」中的「比較」", "受量詞「一次」和形容詞修飾，在此作名詞", "永遠只作動詞", "作介詞引出公平", "作代名詞指人"],
+  ["「他對結果十分滿意」中的「對」", "引出評價的對象「結果」，作介詞", "作主要動詞，意思是正確", "作量詞", "代替結果"],
+  ["「紙本與電子版都可用」中的「與」", "連接並列名詞「紙本、電子版」，作連詞", "引出動作處所", "作形容詞", "代替電子版"],
+  ["「我們需要完整紀錄」中的「需要」", "位於主語後並支配受詞「完整紀錄」，作動詞", "作名詞修飾我們", "作副詞修飾完整", "作連詞"],
+  ["「需要的資料已備妥」中的「需要」", "與「的」構成修飾語，描述哪些資料被需要", "因相同字形便必與前句同一成分", "作句子主語且沒有被修飾", "作介詞表示處所"],
+  ["「大家都同意」中的「都」", "位於主語後、動詞前，概括主語範圍，作副詞", "作名詞指城市", "作受詞", "作連詞連接兩句"],
+  ["「他把照片交給服務台」中的「給」", "位於動詞後引出接受對象，具介詞功能", "作形容詞描述照片", "作人稱代名詞", "作主要名詞"],
+  ["「結果令人安心」中的「安心」", "位於使令動詞後，描述人所進入的心理狀態", "只因可加「一個」便作物品名詞", "作連詞", "作時間副詞"],
+  ["「他親自核對」中的「親自」", "修飾核對的執行者方式，作副詞性成分", "作受詞", "作名詞指親人", "作介詞引出地點"],
+].map(([target, correct, wrongA, wrongB, wrongC]) => [`用句法位置檢驗${target}的詞性，哪項正確？`, correct, wrongA, wrongB, wrongC, correct]);
+
+const PARTS_OF_SPEECH_CASES = Object.freeze({
+  CHI_R4_S064: nounPronounRows,
+  CHI_R4_S065: verbAdjectiveRows,
+  CHI_R4_S066: adverbRows,
+  CHI_R4_S067: connectorRows,
+  CHI_R4_S068: flexiblePosRows,
+  CHI_R4_S069: classicalNominalVerbRows,
+  CHI_R4_S070: syntaxCheckRows,
+});
+
 function concreteFoundationQuestions(skill) {
-  const rows = PRONUNCIATION_CASES[skill.id] ?? CHARACTER_FORM_CASES[skill.id] ?? DICTIONARY_CASES[skill.id] ?? FORMATION_CASES[skill.id] ?? HOMOPHONE_CASES[skill.id];
+  const rows = PRONUNCIATION_CASES[skill.id] ?? CHARACTER_FORM_CASES[skill.id] ?? DICTIONARY_CASES[skill.id] ?? FORMATION_CASES[skill.id] ?? HOMOPHONE_CASES[skill.id] ?? POLYSEMY_CASES[skill.id] ?? SEMANTIC_FIELD_CASES[skill.id] ?? IDIOM_CASES[skill.id] ?? CLASSICAL_WORD_CASES[skill.id] ?? PARTS_OF_SPEECH_CASES[skill.id] ?? writingRowsFor(skill);
   if (!rows) return null;
   const serial = skill.id.slice(-3);
   const isPronunciation = skill.unitId === "CHI_R4_U01";
   const isCharacterForm = skill.unitId === "CHI_R4_U02";
   const isDictionary = skill.unitId === "CHI_R4_U03";
   const isFormation = skill.unitId === "CHI_R4_U04";
+  const isPolysemy = skill.unitId === "CHI_R4_U06";
+  const isSemanticField = skill.unitId === "CHI_R4_U07";
+  const isIdiom = skill.unitId === "CHI_R4_U08";
+  const isClassicalWords = skill.unitId === "CHI_R4_U09";
+  const isPartsOfSpeech = skill.unitId === "CHI_R4_U10";
+  const usesPublicDomainText = isClassicalWords || skill.id === "CHI_R4_S069";
+  const isWriting = Number(serial) >= 303;
   return rows.map(([stem, correct, wrongA, wrongB, wrongC, correctReason], questionIndex) => {
     const answerIndex = questionIndex % 4;
     const rawOptions = [correct, wrongA, wrongB, wrongC];
     const options = rotate(rawOptions, answerIndex);
     const reasons = new Map([
       [correct, correctReason],
-      [wrongA, isPronunciation ? "此讀法不符合題中詞義與教育部辭典所列標準音讀。" : isCharacterForm ? "此選項未符合題中詞義、標準字形或字典欄位所提供的條件。" : isDictionary ? "此選項沒有按照題目給定的部首、音義、詞性或工具書欄位完成核對。" : isFormation ? "此分析混淆造字類型、部件功能或例字所呈現的形音義關係。" : "此選項沒有同時符合固定詞形、句中搭配與所辨字義。"],
-      [wrongB, isPronunciation ? "此選項混淆了相近的聲母、韻母、聲調或另一義項的讀音。" : isCharacterForm ? "此選項混淆了形近部件、固定詞形或正字與異體的使用情境。" : isDictionary ? "此選項把部件、索引入口或另一義項誤當成題中應用的資料。" : isFormation ? "此選項只抓到相似字形，沒有說明形符、聲符或附加標記的實際作用。" : "此選項把同音或形近當成可互換，忽略詞源與構詞限制。"],
-      [wrongC, isPronunciation ? "把語音印象直接套入原句，未能與完整詞語的音義對應。" : isCharacterForm ? "此判斷只憑外形印象，沒有同時核對完整詞語、字義與權威字形資料。" : isDictionary ? "此判斷略過完整條目與原句語境，不能排除同部、同音或多義候選。" : isFormation ? "造字線索只能協助推測；這個選項把有限線索擴大成無例外結論。" : "此訂正會留下原錯字或另造不合語境的新錯誤。"],
+      [wrongA, isPronunciation ? "此讀法不符合題中詞義與教育部辭典所列標準音讀。" : isCharacterForm ? "此選項未符合題中詞義、標準字形或字典欄位所提供的條件。" : isDictionary ? "此選項沒有按照題目給定的部首、音義、詞性或工具書欄位完成核對。" : isFormation ? "此分析混淆造字類型、部件功能或例字所呈現的形音義關係。" : isWriting ? "此做法只處理表面形式，沒有回應題目任務或草稿最主要的缺口。" : isPolysemy ? "此選項套用了同詞的另一義項，與句中搭配和指涉對象不合。" : "此選項沒有同時符合固定詞形、句中搭配與所辨字義。"],
+      [wrongB, isPronunciation ? "此選項混淆了相近的聲母、韻母、聲調或另一義項的讀音。" : isCharacterForm ? "此選項混淆了形近部件、固定詞形或正字與異體的使用情境。" : isDictionary ? "此選項把部件、索引入口或另一義項誤當成題中應用的資料。" : isFormation ? "此選項只抓到相似字形，沒有說明形符、聲符或附加標記的實際作用。" : isWriting ? "固定段數、華麗詞語或正向結尾都不能代替切題、材料發展與結構。" : "此選項把同音或形近當成可互換，忽略詞源與構詞限制。"],
+      [wrongC, isPronunciation ? "把語音印象直接套入原句，未能與完整詞語的音義對應。" : isCharacterForm ? "此判斷只憑外形印象，沒有同時核對完整詞語、字義與權威字形資料。" : isDictionary ? "此判斷略過完整條目與原句語境，不能排除同部、同音或多義候選。" : isFormation ? "造字線索只能協助推測；這個選項把有限線索擴大成無例外結論。" : isWriting ? "此選項的修改方向與題述草稿層級不相符，可能留下核心問題。" : "此訂正會留下原錯字或另造不合語境的新錯誤。"],
     ]);
     return {
       id: `CHI_R4_Q_${serial}_${String(questionIndex + 1).padStart(2, "0")}`,
@@ -696,12 +1112,24 @@ function concreteFoundationQuestions(skill) {
             ? questionIndex < 4 ? "dictionary-entry" : questionIndex < 8 ? "contextual-meaning" : "source-cross-check"
             : isFormation
               ? questionIndex < 4 ? "character-formation" : questionIndex < 8 ? "component-function" : "formation-transfer"
-              : questionIndex < 4 ? "homophone-choice" : questionIndex < 8 ? "error-correction" : "sound-form-meaning-integration",
+              : isWriting
+                ? questionIndex < 4 ? "writing-diagnosis" : questionIndex < 8 ? "writing-practice" : "writing-transfer"
+                : isPolysemy
+                  ? questionIndex < 4 ? "contextual-meaning" : questionIndex < 8 ? "meaning-comparison" : "meaning-transfer"
+                  : isSemanticField
+                    ? questionIndex < 4 ? "synonym-distinction" : questionIndex < 8 ? "semantic-classification" : "pragmatic-choice"
+                    : isIdiom
+                      ? questionIndex < 4 ? "idiom-meaning" : questionIndex < 8 ? "allusion-context" : "idiom-transfer"
+                      : isClassicalWords
+                        ? questionIndex < 4 ? "classical-word" : questionIndex < 8 ? "classical-syntax" : "classical-translation"
+                        : isPartsOfSpeech
+                          ? questionIndex < 4 ? "part-of-speech" : questionIndex < 8 ? "syntactic-function" : "word-class-transfer"
+                          : questionIndex < 4 ? "homophone-choice" : questionIndex < 8 ? "error-correction" : "sound-form-meaning-integration",
       misconceptionTargets: [wrongA],
-      provenance: sourceProvenance(skill.authorityRefs),
+      provenance: sourceProvenance(skill.authorityRefs, usesPublicDomainText ? "public-domain" : "original"),
       independentReviews: [
         { reviewerRole: "chinese-solution-review", derivedAnswerIndex: answerIndex, evidence: correctReason, status: "pass" },
-        { reviewerRole: "chinese-alternative-answer-review", derivedAnswerIndex: answerIndex, evidence: isPronunciation ? "三個干擾選項各自混淆音節、聲調或不相應義項；依題中完整詞語只能得到所標正解。" : isCharacterForm ? "三個干擾選項各自混淆部件、固定詞形或字典欄位；依題中條件只能得到所標正解。" : isDictionary ? "三個干擾選項各自誤用索引入口、欄位或語境義；依題中資料只能得到所標正解。" : isFormation ? "三個干擾選項各自混淆象形、指事、會意或形聲，或把形聲線索說成絕對規則；只有正解符合所列構件證據。" : "三個干擾選項各自保留錯字、混用同音字或產生新錯誤；只有正解同時符合音、形、義與固定搭配。", status: "pass" },
+        { reviewerRole: "chinese-alternative-answer-review", derivedAnswerIndex: answerIndex, evidence: isPronunciation ? "三個干擾選項各自混淆音節、聲調或不相應義項；依題中完整詞語只能得到所標正解。" : isCharacterForm ? "三個干擾選項各自混淆部件、固定詞形或字典欄位；依題中條件只能得到所標正解。" : isDictionary ? "三個干擾選項各自誤用索引入口、欄位或語境義；依題中資料只能得到所標正解。" : isFormation ? "三個干擾選項各自混淆象形、指事、會意或形聲，或把形聲線索說成絕對規則；只有正解符合所列構件證據。" : isWriting ? "三個干擾選項各自以固定形式、華麗表面或錯誤層級代替任務；只有正解能直接改善題述文章。" : isPolysemy ? "三個干擾選項各自忽略搭配、混入另一義項或只憑字面聯想；只有正解能在原句中替換重讀。" : "三個干擾選項各自保留錯字、混用同音字或產生新錯誤；只有正解同時符合音、形、義與固定搭配。", status: "pass" },
       ],
       assets: [],
     };
@@ -755,7 +1183,7 @@ function lectureFor(skill, family, guide, questions) {
       `能說明「${skill.title}」需要哪些判斷條件。`,
       `能在陌生語句或篇章中運用${evidence}完成判斷並說明理由。`,
     ],
-    sections: [
+    sections: Number(serial) >= 303 ? writingLearningSections(skill) : [
       { id: `CHI_R4_L_S${serial}_SEC_01`, title: "核心觀念", content: `${core}本技能聚焦「${skill.title}」，作答時須把概念放回完整語句或篇章，而不是只認一個表面記號。` },
       { id: `CHI_R4_L_S${serial}_SEC_02`, title: "判斷依據", content: `可靠答案必須指出${evidence}。先確認題目要求，再找能直接支持或排除選項的資料，才能讓判斷可重做、可核對。` },
       { id: `CHI_R4_L_S${serial}_SEC_03`, title: "邊界與例外", content: `${boundary}遇到資訊不足時，應保留判斷或回到工具書與原文查證，不可用生活印象補成文本事實。` },
@@ -842,18 +1270,6 @@ const chineseSkills = GRAPH.skills.filter((skill) => skill.subject === "chinese"
 const planModule = await import("./authority/skill-plans/chinese.mjs");
 const families = planModule.CHINESE_SKILL_PLAN.families;
 assert.equal(chineseSkills.length, 320);
-
-const sourceUnits = [];
-for (const [familyIndex, family] of families.entries()) {
-  const unitId = `CHI_R4_U${String(familyIndex + 1).padStart(2, "0")}`;
-  const skills = chineseSkills.filter((skill) => skill.unitId === unitId);
-  const guide = GUIDES[familyIndex];
-  const localizedFamily = { ...family, title: FAMILY_LABELS[familyIndex] };
-  const questions = skills.flatMap((skill) => questionsFor(skill, localizedFamily, guide));
-  const lectureQuestions = Map.groupBy(questions, (question) => question.skillIds[0]);
-  const lectures = skills.map((skill) => lectureFor(skill, localizedFamily, guide, lectureQuestions.get(skill.id)));
-  sourceUnits.push({ schemaVersion: SOURCE_SCHEMA, unitId, lectures, questions });
-}
 
 const readingSkills = chineseSkills.filter((skill) => Number(skill.id.slice(-3)) >= 99 && Number(skill.id.slice(-3)) <= 296);
 const NAMES = ["子晴", "宇安", "庭瑄", "柏翰", "雅文", "承恩", "品妤", "祐晨", "思妍", "冠宇", "雨潔", "昱廷", "芷寧", "哲宇", "宥心", "家豪"];
@@ -978,15 +1394,7 @@ const stimuli = rawStimuli.map(({ facts, ...stimulus }) => stimulus);
 const stimulusQuestions = rawStimuli.flatMap((stimulus, index) => stimulusQuestionsFor(stimulus, index));
 
 const writingSkills = chineseSkills.filter((skill) => Number(skill.id.slice(-3)) >= 303);
-const THEMES = ["一次改變看法的對話", "我重新安排時間的一天", "一件被忽略的小事", "合作中出現的分歧", "城市裡的一處安靜角落", "我學會提出證據", "一次沒有立刻得到答案的經驗", "舊物帶來的新理解", "在陌生環境中找到方向", "我如何面對一次失誤", "一項值得保留的習慣", "科技帶來的方便與代價", "一個需要耐心完成的任務", "我看見別人的不同立場", "一次主動求助的經驗", "生活中不必要的浪費", "一項校園規則的影響", "一則訊息如何被查證", "家人教我的一件事", "一次計畫外的改變", "我與公共空間的關係", "一個讓我重新選擇的理由", "把複雜事情說清楚", "一次從觀察開始的行動"];
 const MODES = ["narrative-reflection", "explanation-analysis", "comparison", "argument-with-limits", "material-integration"];
-const TITLE_FOR_MODE = {
-  "narrative-reflection": (theme) => theme,
-  "explanation-analysis": (theme) => `釐清「${theme}」`,
-  comparison: (theme) => `兩種角度看「${theme}」`,
-  "argument-with-limits": (theme) => `我對「${theme}」的主張`,
-  "material-integration": (theme) => `從材料思考「${theme}」`,
-};
 const MODE_GUIDANCE = {
   "narrative-reflection": "敘寫一個完整事件，交代關鍵轉折，並說明這次經驗如何改變你的理解。",
   "explanation-analysis": "先界定要說明的現象，再分析至少兩個原因或影響，避免只列口號。",
@@ -995,16 +1403,259 @@ const MODE_GUIDANCE = {
   "material-integration": "整合題目提供的觀察、對話與資料，不逐句照抄，形成一個前後一致的觀點。",
 };
 
-const writingTasks = Array.from({ length: 120 }, (_, index) => {
-  const theme = THEMES[index % THEMES.length];
-  const mode = MODES[Math.floor(index / THEMES.length)];
-  const title = TITLE_FOR_MODE[mode](theme);
+const WRITING_TASK_SPECS = Object.freeze({
+  "narrative-reflection": [
+    ["雨停以前", "你和幾位同學臨時受困在一處騎樓，原本互不熟悉，卻因一件小事開始分工。請寫出等待期間的變化，以及雨停後你對其中一人的新理解。"],
+    ["一張沒有寄出的卡片", "你曾寫下一張卡片，最後卻決定不寄出。請交代寫卡片的原因、改變決定的關鍵，以及這次停筆讓你明白了什麼。"],
+    ["那次我沒有立刻回答", "面對一個急著要答案的人，你選擇先查證或思考。請敘寫當時的壓力、你找到的線索，以及延後回答造成的結果。"],
+    ["搬動最後一張椅子的人", "一場活動結束後，多數人已離開，卻有人默默留下整理。請從你看見的一個動作寫起，呈現你後來的選擇與感受。"],
+    ["走錯路之後", "一次走錯路使原訂計畫中斷，也讓你遇見預期外的人事物。請交代轉折如何發生，並說明這段繞路改變了你什麼看法。"],
+    ["我把鑰匙交回去的那天", "你曾代為保管一把重要鑰匙。請敘寫接下責任、發生意外狀況到完成交還的過程，並反思信任不是一句話的原因。"],
+    ["一段被重聽的錄音", "你重聽一段錄音後，發現自己原先誤解了說話者。請寫出第一次聽見時的判斷、被忽略的細節，以及理解改變後的行動。"],
+    ["停電的十分鐘", "熟悉空間突然停電，原本依賴的設備都不能使用。請描寫這十分鐘裡眾人的反應、你採取的做法，以及恢復供電後留下的體會。"],
+    ["第二次敲門", "第一次敲門沒有得到回應，你猶豫後再試一次。請敘寫猶豫的原因、第二次行動帶來的發現，以及這件事對你日後待人的提醒。"],
+    ["那個空著的座位", "一個平常有人坐的位置突然空了。請透過周遭細節與人物反應，寫出你如何知道原因，並呈現這個空位對群體的影響。"],
+    ["我第一次修改道歉", "你曾以為說一句對不起就足夠，後來卻重寫或重說一次道歉。請呈現兩次表達的差別，以及你如何理解承擔責任。"],
+    ["一場沒有觀眾的排練", "表演因臨時因素取消，但團隊仍決定完成一次排練。請寫出眾人意見的衝突、留下來的理由及這場排練的意義。"],
+    ["最慢完成的小組", "你所在的小組進度落後，起初甚至互相責怪。請寫出真正的卡點如何被發現、分工怎麼改變，以及最後結果是否改變你的成敗觀。"],
+    ["我替陌生人保管的東西", "你在公共場所受託短暫保管一件物品。請敘寫你如何確認對方身分、面對疑慮並完成交還，避免把故事只寫成拾金不昧口號。"],
+    ["被雨打溼的名單", "一份活動名單因雨水變得難以辨認，你和同伴必須在時間內重建資料。請寫出線索來源、一次錯判與最後的解決方式。"],
+    ["那天我改了路線", "你因一項新資訊改變每天習慣的路線。請描寫做決定前後的觀察，並說明這次改道如何影響你看待安全、效率或習慣。"],
+    ["一次沒有得獎的展示", "你投入準備的作品沒有得獎，卻收到一則具體回饋。請寫出失落、重新檢視作品到採取下一步的過程。"],
+    ["我終於開口求助", "某件事已超過你一個人能處理的範圍。請敘寫你遲遲不求助的原因、選擇對象的考量，以及求助後仍由你承擔的部分。"],
+    ["一個被拆掉的紙箱", "你原本想保留的一個紙箱被家人拆掉，卻意外揭開一段記憶或誤會。請用具體物件串起衝突、對話與理解。"],
+    ["忘記帶來的那一頁", "重要場合前你發現少帶一頁資料。請寫出你如何在有限時間內處理、誰受到影響，以及事後如何修改準備方法。"],
+    ["我聽完不同版本以後", "同一件事由兩個人說來很不一樣。請呈現兩種說法的差異、你追問或查證的過程，以及最後保留了哪些不確定。"],
+    ["清晨的服務台", "你在清晨經過一處剛開始運作的服務台，目睹一件需要耐心處理的事。請以人物的語氣與動作呈現你得到的體會。"],
+    ["借來的工具", "你借用一件不熟悉的工具完成任務，過程中差點造成損壞。請寫出你如何學會正確使用、補救疏失並歸還。"],
+    ["我留下的最後一則留言", "某個共同使用的空間即將關閉，你決定在留言簿寫下最後一段話。請交代你選擇記錄的片段、刪去的內容及最後保留它的理由。"],
+  ],
+  "explanation-analysis": [
+    ["為什麼提醒有時沒有效", "生活中常見標語、通知與口頭提醒，卻仍有人忽略。請界定一種具體情境，分析提醒失效的至少兩個原因，並提出能被檢驗的改善方式。"],
+    ["一張流程圖如何幫助合作", "請說明流程圖在多人任務中能解決哪些資訊問題，也分析圖畫得過細或過簡時可能造成的限制。可用你熟悉的活動為例。"],
+    ["公共空間為何需要使用紀錄", "以圖書館設備、社區場地或校園器材之一為例，說明使用紀錄如何協助管理、追查與公平分配，同時指出個資保護的界線。"],
+    ["等待時間為何感覺不同", "同樣十分鐘，在排隊、遊戲或等候消息時感受可能不同。請分析注意力、期待與資訊透明如何影響時間感，避免只列個人喜好。"],
+    ["舊物保存的三種價值", "請選一件舊物，分別從實用、記憶與公共資料三個面向說明保存價值，並分析並非所有舊物都該留下的原因。"],
+    ["錯誤訊息如何在群組擴散", "請分析一則未查證訊息從出現到被多人轉傳的過程，說明標題、情緒、熟人信任與時間壓力可能扮演的角色。"],
+    ["為什麼同一張圖表會被讀出不同結論", "請從標題、尺度、單位、時間範圍與讀者目的中選至少兩項，說明它們如何改變解讀，並指出正確閱讀的檢核步驟。"],
+    ["安靜不等於沒有聲音", "請界定一個你認為安靜的環境，分析背景聲、可預期性與個人注意之間的關係，讓抽象感受有可觀察的依據。"],
+    ["一項習慣如何形成", "選一項具體生活習慣，說明觸發情境、重複行動與結果回饋如何使它穩定，也分析改變習慣需要調整哪個環節。"],
+    ["清楚的道歉包含什麼", "請分析有效道歉中事實說明、責任承擔、補救與避免再犯的功能，並說明只表達難過為何不一定足夠。"],
+    ["分工表為什麼仍會失靈", "以一次多人任務為例，說明即使有分工表仍可能失敗的原因，例如依賴順序、交接資訊或工作量估計，並提出修正。"],
+    ["陌生地點的方向感從哪裡來", "請分析地標、地圖方向、路線轉折與即時回饋如何共同建立方向感，也說明只記一個醒目建築的風險。"],
+    ["為什麼人會記錯同一件事", "請從注意焦點、事後資訊與敘述立場分析記憶差異，不把記錯一律解釋成說謊，並提出交叉核對方法。"],
+    ["一句話如何改變語氣", "選一個相同內容，以稱謂、語序、標點或程度詞改寫成兩種語氣，說明形式變化如何影響讀者感受與理解。"],
+    ["資料多不等於證據強", "請區分資料數量、來源品質與推論關聯，分析大量重複轉載為何不能等同多項獨立證據，並提供一個例子。"],
+    ["校園動線如何被看見", "請說明觀察時間、使用者類型、停留點與阻塞紀錄如何幫助分析動線，也指出一次觀察不足以概括全部情況。"],
+    ["一場活動為什麼需要備案", "以戶外活動或設備展示為例，分析風險辨識、啟動條件與替代流程三者的關係，避免把備案寫成另一份沒有條件的計畫。"],
+    ["為什麼例子不能代替結論", "請說明例子在解釋或論證中的功能，分析單一案例被過度概括的問題，並示範如何補上範圍限制。"],
+    ["標題如何引導閱讀", "比較資訊型與情緒型標題的作用，分析標題會讓讀者預期哪些內容，也說明標題不能取代正文證據。"],
+    ["共享物品的責任如何分配", "選擇一種多人共用物品，說明借用、檢查、損壞通報與歸還紀錄各自解決什麼問題，並分析規則過繁的代價。"],
+    ["為什麼修改比重寫更難", "從保留原意、找出錯誤層級與控制修改範圍三方面，說明文章修改的難處，並舉一個改詞反而改壞句意的例子。"],
+    ["有限時間如何影響判斷", "請分析時間壓力如何改變資訊蒐集、風險偏好與團隊溝通，並提出一個能在短時間內降低錯判的程序。"],
+    ["一則好說明為何需要順序", "選擇操作、空間或因果順序之一，說明它如何幫助讀者重建過程，也分析順序錯置可能造成的誤解。"],
+    ["回饋如何變成下一步", "請區分模糊評語與可行回饋，分析具體位置、問題原因與修改目標如何讓受評者採取行動，並以一句回饋改寫示範。"],
+  ],
+  comparison: [
+    ["紙本地圖與即時導航", "以更新速度、整體方向感、設備依賴與離線可用性為共同基準，比較兩種工具，最後說明在一個具體情境中你會如何搭配使用。"],
+    ["獨自完成與分工合作", "選定同一項任務，比較獨自完成與分工合作在決策、溝通、速度及責任上的差異，結論須交代任務規模的限制。"],
+    ["口頭提醒與書面通知", "比較兩種提醒方式在即時性、可追溯性、語氣與適用對象上的差異，並為一項校園活動選擇合宜組合。"],
+    ["一次觀察與連續紀錄", "以同一現象為例，比較一次觀察和連續紀錄能回答的問題、容易產生的偏差與所需成本，不能只說後者資料較多。"],
+    ["修理舊物與購買新品", "從安全、費用、使用壽命、情感與資源消耗中選一致基準比較，並說明何種條件會使你的判斷改變。"],
+    ["匿名意見與署名意見", "比較兩種意見蒐集方式在表達安全、責任、追問可能與偏差上的利弊，提出兼顧兩者的設計。"],
+    ["先做再改與先規畫再做", "以一個具體任務比較兩種工作方式在探索、浪費、風險與調整速度上的差異，避免把任何一方說成永遠較好。"],
+    ["照片紀錄與文字紀錄", "以一場活動為例，比較照片與文字能保留的資訊、容易遺漏的脈絡及隱私風險，說明如何互補。"],
+    ["固定座位與自由選位", "從公平、互動、管理與個別需求比較兩種安排，並提出在什麼班級情境下適合調整。"],
+    ["借用與擁有", "以不常使用的工具或書籍為例，從取得時間、保管責任、成本與使用自由比較，最後說明你的選擇條件。"],
+    ["即時回覆與延後查證", "比較兩種回應方式在速度、準確、信任與風險上的差異，為一則可能影響他人的訊息提出回覆原則。"],
+    ["面對面討論與線上留言", "以同一個公共議題比較兩種溝通形式在輪流發言、保存紀錄、非語言線索與參與門檻上的差異。"],
+    ["規則一致與彈性處理", "從可預期性、公平與特殊需求比較兩種做法，並提出彈性處理需要哪些公開條件才不致變成偏袒。"],
+    ["直接說明與故事引入", "以解釋同一概念為例，比較兩種開頭在效率、理解、記憶與偏離主題上的差異，說明你會如何選擇。"],
+    ["多數決與共識決", "比較兩種團體決策方式在時間、少數意見、執行承諾與僵局上的差異，並限定適用的議題規模。"],
+    ["保留原貌與現代改寫", "以古蹟說明、古文轉譯或舊照片圖說之一為例，比較忠實性與可讀性，提出讓讀者分辨兩層內容的方法。"],
+    ["公開表揚與私下感謝", "比較兩種肯定方式對受謝者、旁觀者與團體文化的影響，也考慮有人不願公開身分的情況。"],
+    ["短期方便與長期維護", "選擇一項設備或制度，比較立刻省事與後續維護的成本、責任與可持續性，提出具體判準。"],
+    ["單一指標與多項指標", "以評估閱讀、活動或環境品質為例，比較兩種評量方式的清楚度、偏差與解釋負擔，不能把指標多等同較客觀。"],
+    ["照例辦理與重新設計", "以每年重複的活動為例，比較延續慣例與重新設計在經驗、風險、創新及人力上的差異，說明改變的觸發條件。"],
+    ["自己記得與留下紀錄", "比較個人記憶和可查紀錄在速度、細節、修正與責任上的差異，並說明哪些小事不需要過度紀錄。"],
+    ["先聽立場與先看證據", "比較兩種理解爭議的起點可能帶來的好處與偏見，提出兼顧人物脈絡及可驗證事實的閱讀次序。"],
+    ["完整版本與精簡摘要", "比較兩種文本在效率、脈絡、誤讀風險與用途上的差異，說明何時摘要必須附回原始資料。"],
+    ["競賽激勵與共同目標", "比較兩種推動團隊投入的方法對動機、合作、壓力與成果的影響，並指出不同成員可能有不同反應。"],
+  ],
+  "argument-with-limits": [
+    ["校園是否應設置物品共享站", "請表明支持或反對，從使用需求、管理責任與浪費風險提出理由，並回應一項關於遺失或衛生的反方疑慮。"],
+    ["班級公告是否應保留修改紀錄", "請提出主張，說明透明、追責與資訊負擔之間如何取捨，並界定哪些小幅修正可以例外。"],
+    ["公共留言是否應要求署名", "請從表達安全、責任及後續查證論證你的立場，並回應匿名可能保護弱勢發言的情況。"],
+    ["團體作業能否讓成員互評貢獻", "請提出可執行立場，討論資訊不對稱、報復風險與教師查核，不能只用公平二字作結。"],
+    ["校園活動是否應限制一次性用品", "請以實際用量、替代方案與衛生需求支持主張，也回應緊急或無法清洗情境。"],
+    ["圖書館座位是否能短暫保留", "請界定可接受時間與辨識方式，論證使用效率和暫離需求的平衡，並回應占位問題。"],
+    ["學生能否在作業中使用生成式工具", "請提出使用邊界，討論學習證據、來源揭露與個資風險，並回應完全禁止或完全開放的主張。"],
+    ["重要通知是否應同時使用兩種管道", "請從到達率、版本一致與維護成本論證，並說明何種低風險訊息不必重複發布。"],
+    ["遲交作業是否應有統一處理規則", "請兼顧可預期性、特殊原因與補救責任提出主張，並回應彈性可能造成不公平的疑慮。"],
+    ["校內比賽是否應公開評分規準", "請論證公開規準對準備、理解結果與評審彈性的影響，也說明規準不能涵蓋所有品質的限制。"],
+    ["班會是否應保留少數意見紀錄", "請從決策品質、成員信任與紀錄負擔提出理由，並回應意見可能傷害個人的風險。"],
+    ["社群轉傳是否應附原始來源", "請主張一項可實踐原則，討論查證成本與訊息急迫性，並處理原始來源也可能有誤的反例。"],
+    ["校園是否應設無手機時段", "請限定地點或時間，從專注、緊急聯絡與自主練習論證，不把手機一概說成好或壞。"],
+    ["團體決策是否應設定停止討論的時間", "請討論效率、意見品質與重大風險，提出何時可以延長及由誰決定的條件。"],
+    ["公共空間的監視影像應保存多久", "請從安全查證、個資與管理成本提出期限原則，並回應重大事件需要延長保存的例外。"],
+    ["成果展是否應評量製作過程", "請論證只看成品與納入過程紀錄的差異，並處理紀錄可能造假或增加負擔的問題。"],
+    ["失敗的活動是否仍值得留下紀錄", "請從組織學習、責任與當事人感受提出主張，並界定哪些資訊不宜公開。"],
+    ["借用器材是否應收取押金", "請分析損壞風險、參與門檻與替代追蹤方式，提出適用或不適用的器材範圍。"],
+    ["校刊引用訪談是否都要受訪者確認", "請從準確、編輯自主與時間成本論證，並區分直接引語、事實資料與評論的處理。"],
+    ["班級規則是否應定期重新表決", "請討論穩定、情境變化與新成員參與，提出合理週期或觸發條件。"],
+    ["導覽解說是否應加入個人故事", "請論證故事對理解與記憶的作用，也處理查證困難、代表性與喧賓奪主的風險。"],
+    ["網路投票能否取代現場討論", "請從參與便利、身分確認、理由交換與少數意見提出主張，並限定議題類型。"],
+    ["校園失物招領是否應公開照片", "請兼顧辨識效率、冒領與個資，提出照片應遮蔽哪些特徵、保留哪些驗證細節。"],
+    ["學生是否應自行選擇座位", "請從學習需求、人際互動與教師管理提出立場，並回應需要視力或行動協助者的例外。"],
+  ],
+  "material-integration": [
+    ["晚自習教室的四盞燈", "材料：連續五天，最後離開者有三天不是值日生；門邊沒有關燈提醒；加裝核對卡後一週未再發生。請用材料分析問題，不把責任只歸給某個人。"],
+    ["兩張不同日期的公車表", "材料：紙本時刻表發布於三月，站牌螢幕更新於六月；兩表週末班次不同；官方公告說六月起試辦三個月。請說明旅客如何判讀與查證。"],
+    ["被退回的共享雨傘", "材料：十把傘一個月借出四十六次，三把逾期，兩把損壞；逾期者多說忘記歸還點。請整合資料提出改善方案及其限制。"],
+    ["圖書館裡的安靜爭議", "材料：甲認為翻頁聲可接受，乙需要完全無聲，館方測得不同區域背景聲差異明顯。請形成一個兼顧需求且可執行的觀點。"],
+    ["午餐剩食紀錄", "材料：三週中主食剩量在星期一最高；雨天出席人數較少；份量未隨請假更新。請分析資料能支持的結論，避免把相關直接說成唯一原因。"],
+    ["兩位目擊者的轉角", "材料：甲只看見腳踏車急停，乙只聽見碰撞聲；監視畫面沒有聲音但顯示路標被風吹轉向。請說明如何重建事件並保留不確定。"],
+    ["校刊引言的前後三十秒", "材料：截取句寫著「這方法完全沒用」；完整錄音顯示受訪者先轉述反方，接著提出修正。請討論引用與編輯責任。"],
+    ["一次延後的戶外展", "材料：氣象預報降雨機率七成；展品不防水；室內備案只能容納一半人數。請整合風險、資源與通知時間提出決策。"],
+    ["沒有年份的老照片", "材料：兩位長者記憶相差十年；照片中建築於某年改建；背面報紙可辨出日期。請說明證據如何排序與互證。"],
+    ["三種不同的閱讀紀錄", "材料：甲記頁數，乙寫摘要，丙標問題；三人一個月後能回想的內容不同。請提出評量閱讀成果時不宜只用單一紀錄的觀點。"],
+    ["活動報名的兩百個點擊", "材料：頁面有兩百次點擊、八十份表單、六十五人到場；同一人可重複點擊。請分析三項數字各代表什麼，不能證明什麼。"],
+    ["修補過的布袋", "材料：舊布袋換提把花費新品的三成；修後承重通過測試；內層仍有裂痕。請整合成本、安全與使用期限提出判斷。"],
+    ["走廊上的臨時路標", "材料：工程圖指定向左繞行；路標被風吹成向右；右側通往施工出口。請論述遇到矛盾指示時個人與管理單位各應做什麼。"],
+    ["群組裡的停課截圖", "材料：截圖沒有日期；發布帳號不是學校；官方網站仍顯示正常上課。請用材料形成查證流程，並說明急著提醒他人時如何措辭。"],
+    ["同時段的兩場排練", "材料：兩組都需要同一套音響；切換設備需二十分鐘；其中一組成員只能晚間到場。請提出排序方案並說明取捨。"],
+    ["河岸步道的三則留言", "材料：有人要求增燈、有人擔心影響昆蟲、有人希望夜間封閉；現場事故多發於一處轉彎。請形成有證據與限制的提案。"],
+    ["一份合計不等於百分之百的圖表", "材料：三類比例相加為九十九點九，圖下注明四捨五入；原始樣本為三百零一份。請說明如何判讀並避免誤指造假。"],
+    ["失物招領的一張照片", "材料：照片清楚拍到證件姓名與編號；發布者想快速找人；服務台已有名冊可聯絡。請討論效率與隱私的替代做法。"],
+    ["被刪去的反對意見", "材料：會議最後採多數決；紀錄只寫通過結果；少數意見曾指出安全條件尚未確認。請分析完整紀錄對後續執行的作用。"],
+    ["三次不同的植物觀察", "材料：第一組在早晨量測、第二組在正午、第三組雨後量測；葉片狀態不同。請說明為何不能直接比較，並提出共同方法。"],
+    ["新規則實施後的排隊時間", "材料：平均等待由十二分降到八分；尖峰仍有二十分；使用者滿意度兩極。請形成不誇大成效的評估。"],
+    ["一封措辭強烈的感謝信", "材料：信中讚揚某位員工；當日排班顯示另有兩人共同處理；細節沒有寫姓名。請說明如何確認功勞又不否定寫信者感受。"],
+    ["只剩摘要的研究消息", "材料：社群貼文宣稱某方法百分之百有效；摘要只說小樣本中有改善；原始研究尚未公開。請建立合宜結論與轉述語氣。"],
+    ["開放一天的校園空間", "材料：試辦日使用人數高；清潔量增加一倍；無障礙入口獲得好評；只有晴天資料。請提出是否延長開放的判斷與後續蒐證。"],
+  ],
+});
+
+for (const mode of MODES) assert.equal(WRITING_TASK_SPECS[mode].length, 24, `${mode}: 24 independent writing tasks required`);
+
+const WRITING_MODE_ACTION = Object.freeze({
+  "narrative-reflection": "敘寫完整事件、關鍵轉折與理解變化",
+  "explanation-analysis": "界定現象並分析原因、影響與限制",
+  comparison: "以共同基準比較兩方，再提出有條件的判斷",
+  "argument-with-limits": "提出主張、理由與例證，並回應反方和例外",
+  "material-integration": "整合所有題給材料，形成不超出資料的觀點",
+});
+
+const WRITING_MODE_KEYS = Object.freeze({
+  "narrative-reflection": "事件、轉折、反思",
+  "explanation-analysis": "現象、原因、影響、限制",
+  comparison: "共同基準、異同、選擇條件",
+  "argument-with-limits": "主張、理由、反方、例外",
+  "material-integration": "材料關係、資料範圍、推論限制",
+});
+
+const WRITING_EDIT_ROWS = [
+  ["我覺得共享站很好很好，所以大家一定都會喜歡。", "刪去重複的「很好」，並把「一定」改成有證據支持的有限判斷", "再增加三個「非常」", "把句號改成三個驚嘆號", "加入與共享站無關的天氣描寫"],
+  ["因為下雨。活動延期。", "合併為「因為下雨，活動延期。」使原因與結果連成完整句", "刪掉「活動延期」", "把句號都改成頓號", "加入「眾所皆知」但不補內容"],
+  ["這項規則很公平，公平就是每個人都公平。", "改寫成具體判準，例如「規則對同樣情況採相同處理，並公開例外條件」", "保留原句並多寫一次公平", "把「公平」全部換成成語", "刪去主語只留「很公平」"],
+  ["我聽完兩人的說法，我就知道甲一定在說謊。", "補上可查線索，並把「一定」調整為證據能支持的結論", "把「說謊」加上引號便完成", "改成「我直覺甲說謊」", "刪掉兩人的說法"],
+  ["活動結束後我們整理場地然後檢查器材然後歸還鑰匙。", "依動作層次分句並減少重複的「然後」", "每個動作後都加驚嘆號", "把三個動作倒序且不說原因", "刪掉所有標點"],
+  ["這張圖表證明新規則完全成功。", "補出實際數據與觀察範圍，並避免用「完全」超出證據", "把「證明」改成更大的字", "加入另一個沒有來源的百分比", "刪去圖表名稱"],
+  ["他們的意見各有不同的差異。", "刪去語意重複，改為「他們的意見各有差異」", "改成「各有不同不同的差異」", "把「差異」改成「差異性之差異」", "增加一個無關例子"],
+  ["我把名單交給服務台它隔天找到失主。", "補明代詞所指，改為「我把名單交給服務台，工作人員隔天找到失主」", "把「它」改成「他」但不交代是誰", "刪去服務台", "把逗號改成書名號"],
+  ["雖然備案比較麻煩，所以我們仍應先準備。", "把關聯詞改為「雖然備案比較麻煩，我們仍應先準備」", "保留「雖然、所以」並加頓號", "刪去轉折只留結論", "把「仍」改成「都」"],
+  ["資料顯示有六十五人到場，這個數字就是兩百次點擊。", "分清到場人數與頁面點擊次數，不能把不同指標畫上等號", "把六十五改成兩百便正確", "刪掉資料來源只留結論", "把兩個數字相加"],
+  ["我認為應該開放，反對者都是不願改變的人。", "改為回應反方的具體疑慮，不以人身評價代替論證", "增加「全部、絕對」強化語氣", "刪去自己的理由", "改用更多負面形容詞"],
+  ["最後，我們最後決定在最後一週再評估。", "刪除不必要的重複，改為「我們決定在最後一週再評估」", "每個「最後」後加逗號", "再增加一次「最後」", "把「評估」改成同音錯字"],
+].map(([sentence, correct, wrongA, wrongB, wrongC]) => [`修訂句子「${sentence}」時，哪個修改最能保留原意並改善表達？`, correct, wrongA, wrongB, wrongC, `${correct}，修改處理的是句意、銜接或證據範圍，不以表面華麗取代內容。`]);
+
+const SCORE_CASES = [
+  [0, "作答只有題目，沒有任何正文。"],
+  [0, "全文寫成分行押韻的詩歌體，無法依本次引導寫作規準判斷。"],
+  [1, "只約略提到主題，材料極少，句子破碎且看不出文章結構。"],
+  [2, "大量抄寫題幹，另加少量重複看法；有分段但各段沒有不同功能。"],
+  [3, "材料與題意相關，但發展不足，段落連接鬆散，部分錯誤妨礙理解。"],
+  [4, "主旨可辨、材料大致統整，結構大致完整；局部轉折與語句仍不穩。"],
+  [5, "材料選擇適當、主旨充分、結構完整且文句通順，只有少量不影響文意的錯誤。"],
+  [6, "材料統整深入、主旨凸顯、脈絡完整連貫，語詞精確且句型運用有效。"],
+  [1, "文章碰到題意，卻只列出一個名詞和一句口號，無法繼續發展。"],
+  [2, "文章有幾個相關例子，但反覆列舉，沒有說明例子和主旨的關係。"],
+  [3, "文章已有基本方向，卻缺少關鍵因果與回扣，錯字標點也使部分句子難懂。"],
+  [4, "全文具備開展與結尾，材料能支持主旨，但幾處段落轉折生硬且語句冗長。"],
+];
+
+const SECOND_DRAFT_VARIANTS = Object.freeze({
+  1: { focus: "草稿只有一句口號，沒有可辨認的事件", step: "補出一個人物、一次行動和可觀察結果，再說明它如何回應題意。" },
+  2: { focus: "草稿列了三個相關材料，卻只用逗號串在同一段", step: "替三項材料安排不同段落功能，補上原因、過程或結果的推進關係。" },
+  3: { focus: "草稿已有例子，但例子結束後直接跳到結論", step: "在例子與結論之間補出推論橋梁，說明這個例子能支持到什麼範圍。" },
+  4: { focus: "草稿主旨清楚，但兩段重複相同理由且轉折生硬", step: "合併重複理由，改寫段落承接句，讓新材料真正推進而非重述。" },
+  5: { focus: "草稿內容完整流暢，只剩一處指涉不明與兩個標點錯誤", step: "釐清代詞所指並修正局部標點，維持原有材料與完整結構。" },
+  6: { focus: "草稿已深入完整，最後核對時發現一項資料沒有來源", step: "回查資料來源；若無法證實便調整結論強度，再逐項檢查錯字格式與標點。" },
+});
+
+function writingRowsFor(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 303) return null;
+  if (serial === 318) return WRITING_EDIT_ROWS;
+  if (serial === 319) return SCORE_CASES.map(([level, description], index) => {
+    const wrongs = [0, 1, 2, 3, 4, 5, 6].filter((candidate) => candidate !== level);
+    const picked = [wrongs[index % wrongs.length], wrongs[(index + 2) % wrongs.length], wrongs[(index + 4) % wrongs.length]];
+    return [`依官方整體性評分規準，某篇文章呈現以下特徵：「${description}」最接近哪個級分？`, `${level}級分`, ...picked.map((value) => `${value}級分`), `題述特徵與${level}級分的整體表現最相符；仍須以全文四面向綜合判斷。`];
+  });
+  if (serial === 320) return Array.from({ length: 12 }, (_, index) => {
+    const profile = WRITING_CALIBRATION.scoring.profiles[(index % 6) + 1];
+    const next = WRITING_CALIBRATION.scoring.profiles[((index + 2) % 6) + 1];
+    const variant = SECOND_DRAFT_VARIANTS[profile.level];
+    const secondCycle = index >= 6;
+    const focus = secondCycle ? variant.focus : profile.observedPattern;
+    const step = secondCycle ? variant.step : profile.nextStep;
+    return [`一篇草稿目前接近${profile.level}級分，這次診斷發現「${focus}」哪項回饋最適合作為第二稿的下一步？`, step, "先加入更多成語與名言，不必改動材料關係。", "把全文硬改成固定三段，其他問題暫時忽略。", next.nextStep, `這項回饋直接對應題述的${profile.level}級分缺口，能形成可執行修改。`];
+  });
+
+  const allTasks = MODES.flatMap((mode) => WRITING_TASK_SPECS[mode].map(([title, situation]) => ({ mode, title, situation })));
+  let pool = allTasks;
+  if (serial === 310) pool = allTasks.filter(({ mode }) => mode === "narrative-reflection");
+  if (serial === 311) pool = allTasks.filter(({ mode }) => mode === "explanation-analysis" || mode === "comparison");
+  if (serial === 312) pool = allTasks.filter(({ mode }) => mode === "argument-with-limits");
+  return Array.from({ length: 12 }, (_, index) => {
+    const task = pool[((serial - 303) * 12 + index) % pool.length];
+    const action = WRITING_MODE_ACTION[task.mode];
+    const keys = WRITING_MODE_KEYS[task.mode];
+    const stemPrefix = `題目「${task.title}」說明：${task.situation}`;
+    const commonWrong = [
+      "先找一則華麗名言當開頭，再把任何生活故事接在後面。",
+      "只要題材真實感人，即使沒有回應題目限制也算完成任務。",
+      "先決定固定三段格式，再刪去所有放不進格式的題目要求。",
+    ];
+    const bySkill = {
+      303: [`${stemPrefix}哪個審題結果最完整？`, `以「${task.title}」為焦點，${action}，並遵守情境中明示的範圍。`, ...commonWrong, `正解同時指出焦點、寫作行動與限制，沒有把題目縮成單一關鍵字。`],
+      304: [`${stemPrefix}圈選關鍵詞時，哪組最能保留隱含任務？`, `${task.title}；${keys}；題中明示的限制`, "只圈標題中的第一個名詞", "只圈最有情緒的形容詞", "只圈自己最熟悉的生活經驗", `這組詞能重建題目要求的「${action}」，不會漏掉任務關係。`],
+      305: [`${stemPrefix}哪種取材方向最切題？`, `選一組能具體呈現「${keys}」並直接服務「${task.title}」的經驗或觀察。`, ...commonWrong, `材料必須能完成${action}，而不是只與標題表面相似。`],
+      306: [`${stemPrefix}篇幅有限時，哪項材料應優先保留？`, `能說明「${keys}」之間關係的關鍵事件、資料或理由。`, "人物衣服顏色，但後文不再使用", "與主旨無關的完整天氣預報", "為增加字數而重述三次標題", `核心材料能推進${action}；三個干擾項刪去後不影響任務完成。`],
+      307: [`${stemPrefix}哪個補寫最能把空泛材料變具體？`, `補入可觀察的動作、話語、時間或數據，並說明它如何支持「${keys}」。`, "連續加入四個表示感動的成語", "把「很好」改成「非常非常好」", "增加一段與題目無關的景色", `可觀察細節能讓讀者檢查材料與「${task.title}」的關係。`],
+      308: [`${stemPrefix}完稿後，哪份檢核表最能確認沒有漏題？`, `逐項核對「${keys}」，並標出每項要求在文中由哪段回應。`, "只計算字數與段數", "只檢查開頭是否有名言", "只問結尾是否正向", `逐項反查能驗證文章是否完成${action}。`],
+      309: [`${stemPrefix}哪個全文安排最合適？`, `依「${keys}」安排各段功能，使開頭提出焦點、發展推進關係、結尾回扣判斷。`, "把最長材料全放第一段，其餘任意排列", "每段重寫一次題目，避免出現新內容", "固定分三段但不安排段落功能", `段落功能隨${action}而定，不靠固定篇幅公式。`],
+      310: [`${stemPrefix}要以事件因果組織，哪個順序最清楚？`, "原先狀況→觸發事件→人物選擇→結果→理解改變", "結局→無關背景→題目→另一個故事", "只列人物心情，不寫造成心情的事件", "依人物姓名筆畫排列事件", "因果鏈能呈現關鍵轉折，並使反思有事件證據。"],
+      311: [`${stemPrefix}要用說明或比較組織，哪個架構最適合？`, `先界定對象與共同基準，再分項分析，最後說明限制或適用條件。`, "依想到的例子隨機排列", "只列兩邊優點，不使用同一基準", "先宣布唯一答案，再刪去相反資料", `共同基準與分類關係能完成「${action}」。`],
+      312: [`${stemPrefix}要形成議論，哪個架構最完整？`, "清楚主張→具體理由與證據→回應反方→界定例外或限制", "先批評不同意見者，再重複結論", "列出三句名言，不說與主張的關係", "只講一個感人故事便概括所有情況", "正解讓論據真正支持主張，也處理反例與範圍。"],
+      313: [`${stemPrefix}哪個表達修改最具體精確？`, `把抽象評語換成可觀察細節，並用準確動詞說明它如何呈現「${keys}」。`, "在每個名詞前加上「偉大的」", "把普通句子全部改成驚嘆句", "堆疊成語但刪去事件與資料", `具體描寫須服務「${task.title}」，不是單純增加修辭。`],
+      314: [`${stemPrefix}哪種段落中心最能維持全文一致？`, `每段各處理「${keys}」的一個功能，段末再連回全文主旨。`, "每段改談一個新的熱門議題", "想到哪寫到哪，不必檢查指涉", "每段都只重複標題", `各段雖有不同材料，仍共同完成${action}。`],
+      315: [`${stemPrefix}自評時哪個順序最能找出主要問題？`, "先核對題意與材料，再看結構，接著修句，最後查錯字標點。", "先數成語，再決定是否切題", "只修字跡，不讀文章內容", "四面向各給固定二十五分後相加", "由高層到低層自評可避免精修一段後才發現整篇離題。"],
+      316: [`${stemPrefix}哪個方法最能檢查主旨一致？`, `各段用一句話概括，再檢查是否共同支持「${task.title}」與${keys}。`, "只看第一句是否漂亮", "只看最後一段是否正向", "每段都加同一句口號", `段落概括能暴露離題、矛盾或只列材料而未回扣的問題。`],
+      317: [`${stemPrefix}第二稿應如何取捨材料？`, `補足使「${keys}」成立的關鍵細節，刪去不能推進${action}的枝節。`, "所有內容都保留，再重複一遍", "只刪最短的句子", "只補與題目無關但有趣的故事", `增刪判準是材料對主旨與任務的作用，不是長短。`],
+    }[serial];
+    return bySkill;
+  });
+}
+
+const writingTasks = MODES.flatMap((mode, modeIndex) => WRITING_TASK_SPECS[mode].map(([title, situation], taskIndex) => {
+  const index = modeIndex * 24 + taskIndex;
   const skill = writingSkills[index % writingSkills.length];
   return {
     id: `CHI_R4_WRITE_${String(index + 1).padStart(3, "0")}`,
     subject: "chinese",
     title,
-    prompt: `請以「${title}」為題完成一篇引導寫作。${MODE_GUIDANCE[mode]}內容可以取自親身經驗、觀察或合理設想，但必須讓讀者看得出材料與題意的關係；若引用他人說法，請交代它在文章中的作用，不以成語、名言數量作為好壞標準。`,
+    prompt: `${situation}${MODE_GUIDANCE[mode]}文章必須讓讀者看得出材料與題意的關係；若引用他人說法，請交代它的作用。評量不以固定段數、成語或名言數量作為加分條件。`,
     mode,
     taskRequirements: ["完整回應題目指定的對象、目的與限制", "選用具體材料並說明材料和主旨的關係", "以清楚段落推進內容，完成後檢查文句、錯字與標點"],
     scoringFocus: ["立意取材", "結構組織", "遣詞造句", "錯別字、格式與標點符號"],
@@ -1012,9 +1663,21 @@ const writingTasks = Array.from({ length: 120 }, (_, index) => {
     provenance: sourceProvenance(skill.authorityRefs),
     accessibility: { language: "zh-Hant-TW", promptPlainTextComplete: true },
   };
-});
+}));
 
 assert.equal(new Set(writingTasks.map(({ title }) => title)).size, 120);
+
+const sourceUnits = [];
+for (const [familyIndex, family] of families.entries()) {
+  const unitId = `CHI_R4_U${String(familyIndex + 1).padStart(2, "0")}`;
+  const skills = chineseSkills.filter((skill) => skill.unitId === unitId);
+  const guide = GUIDES[familyIndex];
+  const localizedFamily = { ...family, title: FAMILY_LABELS[familyIndex] };
+  const questions = skills.flatMap((skill) => questionsFor(skill, localizedFamily, guide));
+  const lectureQuestions = Map.groupBy(questions, (question) => question.skillIds[0]);
+  const lectures = skills.map((skill) => lectureFor(skill, localizedFamily, guide, lectureQuestions.get(skill.id)));
+  sourceUnits.push({ schemaVersion: SOURCE_SCHEMA, unitId, lectures, questions });
+}
 
 await rm(path.join(SUBJECT_ROOT, "source", "units"), { recursive: true, force: true });
 await mkdir(path.join(SUBJECT_ROOT, "source", "units"), { recursive: true });

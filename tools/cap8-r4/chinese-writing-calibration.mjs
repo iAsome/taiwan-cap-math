@@ -14,7 +14,7 @@ const OFFICIAL_PAGES = Object.freeze([
     id: "cap-writing-content",
     url: "https://cap.rcpet.edu.tw/test4-1.html",
     path: path.join(HERE, "evidence", "official", "html", "cap-writing.html"),
-    sha256: "0c5ad8c85b5e40d713c8b9813757b499d53b42743df8ac575ba54bae7184983f",
+    sha256: "c967d6d5413e74fab11242ec33305af6f82e73b1667d52d039b9a66af31ecbbc",
     acquiredByThisTool: false,
     canonicalization: "none",
   },
