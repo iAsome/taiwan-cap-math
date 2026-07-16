@@ -6,6 +6,8 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { materializeAllEnglishUnits, materializeEnglishQuestion } from "./build-english-unit.mjs";
 import { validateAuthoringRecord } from "./authoring-validator.mjs";
+import { ENGLISH_SKILL_PLAN } from "./authority/skill-plans/english.mjs";
+import { englishStimulusGlossary } from "./english-stimulus-glossary.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(HERE, "..", "..");
@@ -78,7 +80,8 @@ async function materializeReading(values, skillById) {
     assert.equal(value.questions?.length, 4, `${value.id}: four reading questions required`);
     const questions = [];
     for (const question of value.questions) questions.push(await materializeStimulusQuestion(question, value.id, skillById));
-    result.push({ id: value.id, passage: value.passage, glossary: value.glossary, questions, provenance: value.provenance });
+    const glossary = await englishStimulusGlossary([value.passage, ...questions.flatMap((question) => [question.stem, ...question.options])]);
+    result.push({ id: value.id, passage: value.passage, glossary, questions, provenance: value.provenance });
   }
   assertUnique(result.map((value) => value.id), "reading stimulus ID");
   assertUnique(result.map((value) => normalized(value.passage)), "normalized reading passage");
@@ -100,6 +103,7 @@ async function materializeListening(values, skillById, assetById) {
     const audioId = value.id.replace("_LISTEN_", "_AUDIO_");
     const questions = [];
     for (const question of value.questions) questions.push(await materializeStimulusQuestion(question, value.id, skillById, { listening: true, audioId, visualAssetId:value.visualAssetId??null }));
+    const glossary = await englishStimulusGlossary([value.transcript, ...questions.flatMap((question) => [question.stem, ...question.options])]);
     result.push({
       id: value.id,
       section: value.section,
@@ -110,6 +114,7 @@ async function materializeListening(values, skillById, assetById) {
       voiceProfile: value.voiceProfile ?? { voice: "Microsoft Zira Desktop", rate: -1 },
       audioId,
       audioPath: `runtime/audio/${audioId}.wav`,
+      glossary,
       visualAssets: visualAsset ? [visualAsset.metadata] : [],
       questions,
       provenance: value.provenance,
@@ -228,8 +233,8 @@ export async function materializeEnglishCorpus({ repoRoot = REPO_ROOT, synthesiz
 async function outputFiles(corpus, repoRoot) {
   assert.equal(corpus.audio.length, 300, "write requires fully prepared in-memory audio");
   const graphBytes = await readFile(GRAPH_PATH);
-  const graph = JSON.parse(graphBytes.toString("utf8"));
-  const graphUnits = new Map(graph.units.filter((unit) => unit.subject === "english").map((unit) => [unit.id, unit]));
+  assert.equal(ENGLISH_SKILL_PLAN.families.length,48,"English unit-family metadata mismatch");
+  const graphUnits = new Map(ENGLISH_SKILL_PLAN.families.map((family,index) => [`ENG_R4_U${String(index+1).padStart(2,"0")}`,{id:`ENG_R4_U${String(index+1).padStart(2,"0")}`,title:family.title}]));
   const files = new Map();
   const putJson = (relative, value) => files.set(relative.replaceAll("\\", "/"), jsonBytes(value));
   for (const unit of corpus.units) {
@@ -263,6 +268,7 @@ async function outputFiles(corpus, repoRoot) {
     reading: { bundle: "runtime/reading.json" },
     listening: { bundle: "runtime/listening.json" },
     audioPaths: corpus.audio.map((value) => `runtime/audio/${value.id}.wav`),
+    assetPaths: corpus.assets.map((value) => value.metadata.path.split("/r4/")[1]),
   });
   return { files, graphBytes };
 }

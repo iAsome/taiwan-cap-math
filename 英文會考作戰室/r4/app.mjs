@@ -6,7 +6,7 @@ const toast = $("#toast");
 const STORAGE_KEY = "cap8.r4.english.progress";
 const MIGRATION_KEY = "cap8.r4.english.migration.v1";
 const LEGACY_KEYS = ["capEnglish.completed", "capEnglish.paperHistory", "capEnglish.lastSeed", "capEnglish.lastQuizSeed", "capEnglish.dark"];
-const state = { catalog: null, cache: new Map(), assets: new Map(), progress: loadProgress(), timer: null };
+const state = { catalog: null, cache: new Map(), assets: new Map(), progress: loadProgress(), timer: null, rendered: false };
 
 function h(value) {
   return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
@@ -163,7 +163,10 @@ function mountQuiz(questions, { kind, seed, stimulusHtml = "", onDone } = {}) {
       const fieldset = $(`[data-question="${question.id}"]`);
       const selected = Number(new FormData(event.currentTarget).get(`q${index}`));
       if (selected === question.answerIndex) score += 1;
-      fieldset.querySelectorAll(".choice").forEach((choice, optionIndex) => choice.classList.add(optionIndex === question.answerIndex ? "correct" : optionIndex === selected ? "wrong" : ""));
+      fieldset.querySelectorAll(".choice").forEach((choice, optionIndex) => {
+        const result = optionIndex === question.answerIndex ? "correct" : optionIndex === selected ? "wrong" : "";
+        if (result) choice.classList.add(result);
+      });
       const detail = $(".rationale", fieldset);
       detail.hidden = false;
       detail.innerHTML = rationales(question).map((reason, optionIndex) => `<p><strong>${String.fromCharCode(65 + optionIndex)}：</strong>${h(reason)}</p>`).join("");
@@ -212,7 +215,7 @@ async function renderListening(params) {
   const seed = params.get("seed") || "115";
   const item = selectStatic(bank, 1, `listening:${seed}`)[0];
   for (const asset of item.visualAssets ?? []) state.assets.set(asset.id, asset);
-  main.innerHTML = `${heading("LISTENING", "英語聽力", "依官方結構播放兩次；作答後才顯示文字稿。", `<div class="toolbar"><label class="field">種子碼<input id="listeningSeed" type="number" min="1" value="${h(seed)}"></label><button class="button" id="newListening">換一組</button></div>`)}<section class="audio-box"><strong>Listening Set</strong><audio id="listeningAudio" preload="metadata" src="${h(item.audioPath)}"></audio><button class="button" id="playListening">播放兩次</button><span id="playState" role="status">尚未播放</span><details id="transcript" hidden><summary>文字稿</summary><p>${h(item.transcript ?? item.script)}</p></details></section>`;
+  main.innerHTML = `${heading("LISTENING", "英語聽力", "依官方結構播放兩次；作答後才顯示文字稿。", `<div class="toolbar"><label class="field">種子碼<input id="listeningSeed" type="number" min="1" value="${h(seed)}"></label><button class="button" id="newListening">換一組</button></div>`)}<section class="audio-box"><strong>Listening Set</strong><audio id="listeningAudio" preload="metadata" src="${h(item.audioPath)}"></audio>${glossaryHtml(item.glossary)}<button class="button" id="playListening">播放兩次</button><span id="playState" role="status">尚未播放</span><details id="transcript" hidden><summary>文字稿</summary><p>${h(item.transcript ?? item.script)}</p></details></section>`;
   mountQuiz(item.questions, { kind: "listening", seed, onDone: () => { $("#transcript").hidden = false; } });
   $("#newListening").addEventListener("click", () => navigate("listening", { seed: Number($("#listeningSeed").value || 1) + 1 }));
   $("#playListening").addEventListener("click", () => playTwice(item));
@@ -262,7 +265,7 @@ async function startMock(mode, seed) {
     const sets = [...picture, ...response, ...discourse];
     for (const asset of sets.flatMap((item) => item.visualAssets ?? [])) state.assets.set(asset.id, asset);
     questions = sets.flatMap((item) => item.questions);
-    stimulusHtml = sets.map((item, index) => `<section class="audio-box"><strong>Listening ${index + 1}</strong><audio controls preload="metadata" src="${h(item.audioPath)}"></audio></section>`).join("");
+    stimulusHtml = sets.map((item, index) => `<section class="audio-box"><strong>Listening ${index + 1}</strong><audio controls preload="metadata" src="${h(item.audioPath)}"></audio>${glossaryHtml(item.glossary)}</section>`).join("");
   }
   $("#mockArea").remove();
   main.innerHTML += `<aside class="panel"><span>剩餘時間</span><strong class="timer" id="timer">${minutes}:00</strong></aside>`;
@@ -319,7 +322,8 @@ async function render() {
     else navigate("home");
     main.querySelectorAll("[data-go]").forEach((button) => button.addEventListener("click", () => navigate(button.dataset.go)));
     main.querySelectorAll("[data-unit]").forEach((button) => button.addEventListener("click", () => navigate("course", { unit: button.dataset.unit })));
-    main.focus({ preventScroll: true });
+    if (state.rendered) main.focus({ preventScroll: true });
+    state.rendered = true;
   } catch (error) {
     main.innerHTML = `<div class="fatal"><h1>內容載入失敗</h1><p>${h(error.message)}</p></div>`;
   } finally {
@@ -341,6 +345,10 @@ async function boot() {
 $("#menu").addEventListener("click", () => {
   const open = $("#sidebar").classList.toggle("open");
   $("#menu").setAttribute("aria-expanded", String(open));
+});
+$(".skip-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  main.focus({ preventScroll: true });
 });
 window.addEventListener("hashchange", render);
 boot().catch((error) => {

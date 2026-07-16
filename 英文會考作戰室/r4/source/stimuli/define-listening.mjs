@@ -18,8 +18,9 @@ function rotate(correct,distractors,index){
 function makeQuestion({id,skillId,stem,correct,distractors,index,operation,evidence,assets=[]}){
   assert.equal(new Set([correct,...distractors]).size,4,`${id}: duplicate option`);
   const {options,answerIndex}=rotate(correct,distractors,index);
+  const setNumber=id.match(/_LISTEN_(\d{3})_/u)[1];
   return {
-    id,skillId,stem,options,answerIndex,
+    id,skillId,stem:`In Listening Set ${setNumber}, ${stem[0].toLowerCase()}${stem.slice(1)}`,options,answerIndex,
     reasons:options.map((option)=>option===correct?`${option}：${evidence}`:`${option}：此項與鎖定音稿中的明示人物、地點、順序、數量或目的不符。`),
     difficulty:DIFFICULTIES[index%4],
     cognitiveProcess:["listen-to-locked-original-recording",operation],

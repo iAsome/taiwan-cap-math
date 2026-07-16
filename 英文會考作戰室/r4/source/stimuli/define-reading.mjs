@@ -28,7 +28,7 @@ const LOCATOR_STEMS=[
   (quote)=>`While checking the passage, which paragraph contains the exact line “${quote}”?`,
   (quote)=>`Where can a reader locate the sentence “${quote}” in the passage?`,
   (quote)=>`Which paragraph provides the quoted evidence “${quote}”?`,
-  (quote)=>`A reader marked “${quote}.” Which paragraph was marked?`,
+  (quote)=>`A reader marked “${quote}” Which paragraph was marked?`,
   (quote)=>`Which paragraph should be cited for the line “${quote}”?`,
 ];
 const COUNT_STEMS=[
@@ -75,8 +75,9 @@ function rotate(correct,distractors,reasons,index){
 function question({id,skillId,stem,correct,distractors,correctReason,wrongReasons,index,operation,representationType,reviewEvidence}){
   assert.equal(new Set([correct,...distractors]).size,4,`${id}: duplicate option`);
   const choices=rotate(correct,distractors,{correct:correctReason,wrong:wrongReasons},index);
+  const setNumber=id.match(/_READ_(\d{3})_/u)[1];
   return {
-    id,skillId,stem,...choices,
+    id,skillId,stem:`In Reading Set ${setNumber}, ${stem[0].toLowerCase()}${stem.slice(1)}`,...choices,
     difficulty:DIFFICULTIES[index%4],
     cognitiveProcess:["read-locked-passage-evidence",operation],
     representationType,
