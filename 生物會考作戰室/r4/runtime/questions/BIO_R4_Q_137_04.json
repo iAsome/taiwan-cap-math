@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_137_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲犬來自大型犬品系且食量多，乙犬來自小型犬品系且食量少；甲較重。哪個結論最恰當？",
+  "options": [
+    "體重只由品系決定",
+    "體重只由食量決定",
+    "甲犬較重證明環境無作用",
+    "品系與食量同時不同，無法由此分開兩者影響"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "食量也不同，單憑兩犬不能把全部差異歸給品系。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "品系背景同樣不同，無法只把體重結果歸給食量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "餵食量本來就是環境差異，題目不能證明它毫無作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個可能原因一起變動，現有比較缺少拆分因果的條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "以混雜比較宣稱唯一因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此設計把遺傳背景與營養環境混在一起，因此只能描述差異，不能唯一定因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "增加同品系不同食量及不同品系相同食量的組別，才有助分辨各自影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_079_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S079",
+  "stem": "若恢復十分鐘兩次原始值為115與117，平均116是否合理？",
+  "options": [
+    "合理，兩值相加除以二為116",
+    "不合理，應只留117",
+    "不合理，平均應為232",
+    "無法計算任何平均"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "一百一十五加一百一十七為二百三十二，除二得一百一十六。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只留較高值會忽略另一筆資料，不能代表兩次平均。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二百三十二是兩值總和，未除以量測次數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "已有兩個明確數值與次數，可以直接計算算術平均。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "平均計算可檢查表格處理是否一致，也保留原始值供變異判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩次讀值只差二單位，顯示本時點重複量測相對接近。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

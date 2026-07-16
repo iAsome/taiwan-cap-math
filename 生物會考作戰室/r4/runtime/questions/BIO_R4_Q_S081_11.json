@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S081_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S081"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "工程師設計機器人：感測器連到中央處理器，處理器再經導線控制馬達。若類比人體神經系統，中央處理器最接近哪個部分？",
+  "options": [
+    "受器",
+    "周圍神經",
+    "中樞神經系統",
+    "肌肉與腺體"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "感測器本身才較接近接收刺激的受器。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "導線較接近負責連接與傳導的周圍神經。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "中央處理器整合輸入並形成命令，功能近似中樞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "馬達才較接近執行反應的肌肉等動器官。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "類比",
+    "遷移"
+  ],
+  "representationType": "工程模型",
+  "misconceptionTargets": [
+    "依外形而非功能類比"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-010"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "類比應依功能對應，中央處理器的整合角色符合中樞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "感測器負責接收、導線負責傳送、馬達負責執行；中央處理器整合輸入並形成命令，對應中樞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

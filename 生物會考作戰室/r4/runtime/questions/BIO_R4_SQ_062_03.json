@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_062_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S062",
+  "stem": "若另一人呼出氣氧為17%，可否說本表錯誤？",
+  "options": [
+    "可以，所有人必須固定16%",
+    "不能，個體與測量條件可不同，本表只代表一次測量",
+    "可以，呼出氣不能含氧",
+    "不能，因為17%等於零"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表格已限定只代表本次測量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "小幅差異不否定相對趨勢。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "呼出氣原本就會保留一部分氧氣，因此不能僅由含氧判定測量錯誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "百分之十七明顯不等於零，不能宣稱樣本完全不含氧氣。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "生理數值可受活動、換氣與測量條件影響，不必人人完全相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「不能，個體與測量條件可不同，本表只代表一次測量」保留資料適用範圍，也不否定呼出氧低於吸入氣的概念。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L128",
+  "subject": "biology",
+  "unitId": "BIO_R4_U17",
+  "skillId": "BIO_R4_S128",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S127"
+  ],
+  "objectives": [
+    "能區分基因型、表現型與環境條件。",
+    "能由控制變因資料推論基因與環境對表現的影響。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L128_SEC1",
+      "title": "基因型",
+      "content": "基因型指個體在特定基因位置所具有的遺傳組合，常以字母符號表示。符號是模型記錄，不是肉眼外觀；同一表現型可能由不同基因型形成。"
+    },
+    {
+      "id": "BIO_R4_L128_SEC2",
+      "title": "表現型",
+      "content": "表現型是可觀察或測量的性狀，例如花色、株高或酵素活性。表現型是基因作用與發育過程的結果，不能只看符號名稱就忽略實際測量。"
+    },
+    {
+      "id": "BIO_R4_L128_SEC3",
+      "title": "環境影響",
+      "content": "營養、溫度、光照等環境因素可改變某些性狀的表現。環境影響表現型不等於必然改寫基因型，也不表示所有性狀都能任意由環境改變。"
+    },
+    {
+      "id": "BIO_R4_L128_SEC4",
+      "title": "比較方法",
+      "content": "相同基因型置於不同環境可檢驗環境效應；不同基因型置於相同環境可比較遺傳差異。若兩者同時改變，就難以判斷表現差異來自哪一因素。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L128_EX1",
+      "prompt": "植株標記Aa且開紫花，哪個是基因型、哪個是表現型？",
+      "steps": [
+        "找出以字母記錄的遺傳組合。",
+        "找出可直接觀察的性狀結果。"
+      ],
+      "answer": "Aa是基因型，紫花是表現型。",
+      "why": "字母組合代表特定基因版本，花色則是實際可觀察結果，兩者不能互換名稱。"
+    },
+    {
+      "id": "BIO_R4_L128_EX2",
+      "prompt": "相同基因型植株在高低溫下高度不同，可提出什麼結論？",
+      "steps": [
+        "確認遺傳組合已控制相同。",
+        "辨認被改變的是溫度環境。"
+      ],
+      "answer": "溫度可能影響株高表現型。",
+      "why": "此比較支持環境效應，但不能由高度差異推論兩株基因型已經不同，因為表現改變不等同DNA版本改變。"
+    },
+    {
+      "id": "BIO_R4_L128_EX3",
+      "prompt": "不同基因型植株同時放在不同光照下，能否只歸因基因？",
+      "steps": [
+        "列出基因型與光照兩個差異。",
+        "檢查是否只有一個自變項。"
+      ],
+      "answer": "不能。",
+      "why": "遺傳與環境同時改變，表現差異可能來自任一因素或交互作用，需重新控制條件。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "基因型就是肉眼看見的花色。",
+      "whyWrong": "基因型是遺傳組合，花色屬可觀察的表現型，資料層次不同。",
+      "correction": "以字母組合記基因型，以實際測量或描述記表現型。"
+    },
+    {
+      "belief": "表現型完全不受環境影響。",
+      "whyWrong": "許多表現型會受營養、光照或溫度影響，不能只由基因型決定。",
+      "correction": "判讀時檢查題目是否控制環境並提供相關資料。"
+    },
+    {
+      "belief": "環境改變表現就一定改寫基因型。",
+      "whyWrong": "環境可改變基因表現或生理狀態，不代表DNA版本必然被改寫。",
+      "correction": "除非有基因檢測證據，不由表現差異直接宣稱基因型改變。"
+    },
+    {
+      "belief": "表現型相同表示基因型必定相同。",
+      "whyWrong": "某些遺傳模型中不同基因型可產生相同表現，環境也可能使結果接近。",
+      "correction": "要知道基因型需依遺傳推論或檢測，不只看外觀。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "Aa與高莖分別屬哪類資料？",
+      "answer": "Aa是基因型，高莖是表現型。",
+      "reason": "字母記錄遺傳組合，可觀察高度則記錄表現結果。"
+    },
+    {
+      "prompt": "環境使株高改變，是否必然表示基因型改變？",
+      "answer": "不必然。",
+      "reason": "表現可在DNA版本不變時受生理與環境條件影響。"
+    },
+    {
+      "prompt": "要比較基因型效果，環境應如何處理？",
+      "answer": "讓不同基因型處於相同環境。",
+      "reason": "控制環境能降低非遺傳因素對表現比較的干擾。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_Q0153",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S013"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "視野影像向左移，能確定玻片主要向哪裡移動？",
+  "options": [
+    "向右",
+    "向左",
+    "向上",
+    "向下"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "影像左移對應玻片向相反的右方移動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "玻片左移會使影像右移，與觀察結果相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "向上主要造成影像向下，不符合水平結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "向下主要造成影像向上，也不符合題幹。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "方向反推"
+  ],
+  "representationType": "影像結果",
+  "misconceptionTargets": [
+    "影像玻片同向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-018",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-031"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "顯微鏡影像移動方向與玻片相反，因此影像向左表示玻片向右。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹只有水平左移；玻片向上或向下會造成垂直影像位移，與紀錄不符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

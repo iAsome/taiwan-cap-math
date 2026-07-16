@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_065_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某段通往手指的血管阻塞，最直接可能造成什麼？",
+  "options": [
+    "手指獲得氧氣與養分的量下降",
+    "肺泡立刻無法接觸空氣",
+    "胃內食物完全停止消化",
+    "膀胱無法暫存尿液"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "局部血管阻塞會減少流向手指的血液，使氧氣與養分供應降低。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "手指血管阻塞不會直接封閉呼吸道，肺泡仍可能正常接觸空氣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "局部循環受阻不能直接推論胃內所有消化活動完全停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "膀胱儲尿功能與通往手指的血管不是同一條運輸通路。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-051",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-046"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先定位阻塞位置，再判斷其後方組織的血流與物質供應，而非推論無關器官停止。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "血管同時承擔送入與帶走功能，因此局部阻塞也可能使代謝廢物移除變慢。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

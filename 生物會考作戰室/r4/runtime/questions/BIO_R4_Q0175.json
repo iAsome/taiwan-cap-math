@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0175",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "影像只放大細胞圖形，比例尺未同步放大，會造成什麼問題？",
+  "options": [
+    "細胞實體真的長大",
+    "比例尺數值自動改變",
+    "原本比例關係失效，估算會錯誤",
+    "所有單位變成公克"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "影像編輯不會改變玻片實物的生物尺寸。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "比例尺標示不會自行知道圖形被單獨放大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩者縮放不同，影像倍數不再對應比例尺。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "長度單位不會因圖片編輯轉成質量單位。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "限制評估"
+  ],
+  "representationType": "影像編輯",
+  "misconceptionTargets": [
+    "比例尺可獨立縮放"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比例尺有效的前提是與影像共享同一縮放比例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "只改細胞圖形會讓讀者以錯誤比值換算實際尺寸。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

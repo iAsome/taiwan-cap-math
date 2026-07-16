@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_076_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某時段攝取800毫升、尿汗等共流失1100毫升，何者正確？",
+  "options": [
+    "淨增加300毫升",
+    "兩者完全平衡",
+    "淨增加1900毫升",
+    "淨減少300毫升"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "攝取量小於流失量，淨變化不可能是增加三百毫升。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "八百與一千一百不相等，不能判定完全平衡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一千九百是兩者相加，不是身體水分淨增加量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "八百減一千一百為負三百，代表淨減少三百毫升。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "負收支表示該時段流失較多，需要依狀態評估補水。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "計算必須使用相同時間與相同體積單位，才能直接相減。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

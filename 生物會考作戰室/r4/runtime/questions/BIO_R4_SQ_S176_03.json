@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S176_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S176",
+  "stem": "丙有一片陽性，最適當的後續處理是？",
+  "options": [
+    "把它改記為零",
+    "宣稱二氧化碳完全無關",
+    "刪除甲組",
+    "檢查袋體漏氣與個體差異並重複實驗"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "竄改觀察值會破壞資料完整性，不能為符合預期而改寫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "丙整體遠低於甲，一片例外不能支持完全無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲是正常條件基準，刪除後反而失去重要比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "微量漏氣或生物差異都可造成例外，應查證並重複。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移異常處理"
+  ],
+  "representationType": "研究決策",
+  "misconceptionTargets": [
+    "例外資料應直接刪除"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "異常核對一比十顯示少數例外，需保留並尋找可測來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可靠度核對檢查密封與再做獨立批次，可判斷例外是否可重現。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

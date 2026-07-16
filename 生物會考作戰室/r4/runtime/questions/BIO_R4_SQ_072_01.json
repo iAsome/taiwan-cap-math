@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_072_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S072",
+  "stem": "療程結束時哪項變化有資料直接支持？",
+  "options": [
+    "所有病原永久消失",
+    "菌種數與有益代謝物都下降",
+    "每人都發生腹瀉",
+    "腸道完全沒有微生物"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表格沒有追蹤永久結果，也沒有分別標示所有病原是否消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "菌種數由一百二十降至三十八，代謝物由一百降至三十一。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "腹瀉比例為百分之二十九，不能說每位受試者都出現腹瀉。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍測得平均三十八種，顯示腸道並非完全沒有微生物。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "直接比較治療前與結束時兩欄數值，可確認兩項指標同步下降。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "群體比例與平均值不能改寫成每個人或所有微生物的絕對結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

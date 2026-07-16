@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q_S181_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "棲地一半濕地密度十、一半乾地密度二，總面積一百，估計總數為何？",
+  "options": [
+    "約六百個體",
+    "約一千個體",
+    "約二百個體",
+    "約一百二十個體"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "濕地五十乘十得五百，乾地五十乘二得一百，合計六百。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一千只計整地都為高密度，忽略乾地。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "二百只接近整地都為低密度，忽略濕地。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百二十把密度直接相加，未依各層面積加權。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "計算分層估計"
+  ],
+  "representationType": "加權題",
+  "misconceptionTargets": [
+    "分層密度直接平均總數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分層核對濕地與乾地各占總面積一半，也就是五十平方公尺。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "加權核對五百與一百分別估算後加總為六百。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

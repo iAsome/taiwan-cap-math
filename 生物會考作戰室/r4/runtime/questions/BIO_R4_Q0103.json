@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q0103",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S009"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "光源已開啟但視野仍暗，哪項檢查最有直接幫助？",
+  "options": [
+    "更換鏡座顏色",
+    "把玻片夾拆掉",
+    "確認光圈與通光孔是否對準",
+    "轉動鏡臂"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "鏡座顏色不影響光線穿過標本的路徑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "玻片夾不阻擋通光孔時，拆除反而失去固定功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "光圈開度與光路對準直接決定視野進光量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "鏡臂是支撐構造，轉動不能改善照明。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "問題排除"
+  ],
+  "representationType": "照明情境",
+  "misconceptionTargets": [
+    "亮度靠調焦"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-027"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "光源已有供電，接著確認光圈開度與通光孔對準，才能讓光線穿過標本。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "鏡座顏色不改變進光量，拆除玻片夾或轉動鏡臂也無法修復光源到物鏡的路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

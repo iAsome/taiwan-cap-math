@@ -1,0 +1,160 @@
+{
+  "id": "BIO_R4_L004",
+  "subject": "biology",
+  "unitId": "BIO_R4_U01",
+  "skillId": "BIO_R4_S004",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S003"
+  ],
+  "objectives": [
+    "能依研究目的設置適當對照組。",
+    "能說明重複個體與重複測量如何提升結果可信度。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L004_S1",
+      "title": "對照組的功能",
+      "content": "對照組不接受主要實驗處理，但其他條件盡量與實驗組一致。兩組結果的差異可作為判斷處理效果的基準，而不是保證實驗組一定改變。"
+    },
+    {
+      "id": "BIO_R4_L004_S2",
+      "title": "選擇合理基準",
+      "content": "測試肥料時可用不施肥但同樣澆水的植株作對照；測試溶劑中的藥劑時，對照組也應接受等量溶劑，才能分開藥劑與溶劑的影響。"
+    },
+    {
+      "id": "BIO_R4_L004_S3",
+      "title": "重複的兩種意義",
+      "content": "同一處理使用多個生物個體可降低個體差異影響；對同一對象在一致方法下重複測量，可檢查讀值穩定性。兩者都不是重抄同一數字。"
+    },
+    {
+      "id": "BIO_R4_L004_S4",
+      "title": "比較與平均",
+      "content": "多次結果可列出範圍並計算平均，但不能只保留符合預期的數值。若差異很大，應先檢查操作、個體與環境，再決定是否需要增加樣本。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L004_E1",
+      "prompt": "測試液態肥料是否增加豆苗葉數，如何設對照？",
+      "steps": [
+        "實驗組依指定濃度施肥。",
+        "對照組給等量清水，其餘光照、品種與水量相同。"
+      ],
+      "answer": "不施肥而接受等量清水者為對照組。",
+      "why": "兩組僅在肥料處理上有系統差異，因此葉數差異較能連結到肥料，而非額外水量或環境條件。"
+    },
+    {
+      "id": "BIO_R4_L004_E2",
+      "prompt": "每組只用一顆種子，實驗組發芽而對照組未發芽。",
+      "steps": [
+        "辨認單顆種子可能本來就有活性差異。",
+        "增加各組種子數並在相同條件重做。"
+      ],
+      "answer": "目前證據不足，應增加獨立個體重複。",
+      "why": "單一個體可能因損傷或休眠造成偶然結果，多顆種子可顯示組內變異並降低把個體特例當處理效果的風險。"
+    },
+    {
+      "id": "BIO_R4_L004_E3",
+      "prompt": "量同一片葉三次得到七點二、七點三、八點九公分。",
+      "steps": [
+        "比較三次讀值，找出明顯不一致者。",
+        "重新檢查尺的位置與葉片是否拉直，再量一次。"
+      ],
+      "answer": "先查核八點九公分的操作，不可直接挑喜歡的值。",
+      "why": "重複測量的用途是揭露不穩定讀值；先找程序原因再決定紀錄方式，才能避免任意刪除不合預期資料。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "對照組就是完全不做任何處理。",
+      "whyWrong": "對照組仍需接受共同程序，只是不接受主要自變項處理。",
+      "correction": "讓兩組除主要處理外皆一致，必要時給對照組等量溶劑。"
+    },
+    {
+      "belief": "有對照組便能保證得到預期結果。",
+      "whyWrong": "對照只提供比較基準，資料可能顯示有效、無效或方向相反。",
+      "correction": "依實際組間差異下結論，不以對照組存在取代資料。"
+    },
+    {
+      "belief": "把同一數字抄三次就算重複測量。",
+      "whyWrong": "重複必須重新進行量測或使用獨立個體，重抄不增加證據。",
+      "correction": "每次依相同程序重新讀值並保留各次結果。"
+    },
+    {
+      "belief": "重複結果不同代表實驗一定失敗。",
+      "whyWrong": "生物個體與測量本來就可能有變異，差異可提供不確定性資訊。",
+      "correction": "呈現範圍與平均，並檢查是否有系統性操作問題。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "測試鹽水對發芽的影響，對照組應使用什麼？",
+      "answer": "相同體積的清水。",
+      "reason": "清水不含主要處理鹽分，又保留供水程序，可作為合理比較基準。"
+    },
+    {
+      "prompt": "每組增加到二十顆種子主要改善什麼？",
+      "answer": "降低單一種子個體差異造成的偶然影響。",
+      "reason": "多個獨立個體能呈現組內變異，使組間比較不被一顆特殊種子主導。"
+    },
+    {
+      "prompt": "三次讀值差很多時，可以只留最接近預測者嗎？",
+      "answer": "不可以，應查明差異並完整記錄。",
+      "reason": "依預測挑資料會造成偏差，重複正是用來發現與處理測量不穩定。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_EXPERIMENT_GRAPH"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

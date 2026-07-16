@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_Q_139_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "父親血液細胞有後天變異，精子未檢出；子代卻有相同變異。應優先如何處理？",
+  "options": [
+    "立刻宣稱血液細胞直接變成精子",
+    "複核檢體、檢測方法及變異是否獨立出現",
+    "認定所有體細胞變異都能自由移動",
+    "刪除子代資料以維持原假設"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "血液細胞沒有正常轉成精子並參與受精的路徑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "意外結果需先查核標示、靈敏度與另一來源，再修正解釋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一矛盾案例不能推翻細胞系統並宣稱變異任意移動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "刪除不合預期資料會造成偏差，也失去發現問題的機會。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "遇到矛盾資料就直接改寫生物機制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「複核檢體、檢測方法及變異是否獨立出現」允許檢驗污染、漏檢、另一親本或獨立變異等多種可查證原因。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若複核後仍成立，才需要提出新假設並以獨立樣本重複，不能先指定機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

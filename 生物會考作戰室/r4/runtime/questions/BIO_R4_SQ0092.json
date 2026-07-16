@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0092",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST031",
+  "stem": "百分之三鹽水組的零變化應如何解讀？",
+  "options": [
+    "水分子完全停止",
+    "所有鹽分都已消失",
+    "組織完全不含水",
+    "此時間內平均淨水移動接近零"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "即使總質量不變，雙向水分子移動仍可持續發生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表格未測鹽含量，也沒有消失證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "蘿蔔組織本來含水，零變化不表示無水。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "前後質量相同表示進出量大致抵銷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "零值解讀"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "淨零等同靜止"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "質量秤只能顯示總體淨結果，不能追蹤個別分子。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "百分之三可視為本次條件下接近平衡的估計，而非普遍固定值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

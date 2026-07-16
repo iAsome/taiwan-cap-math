@@ -1,0 +1,126 @@
+{
+  "id": "BIO_R4_L_S114",
+  "subject": "biology",
+  "unitId": "BIO_R4_U15",
+  "skillId": "BIO_R4_S114",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S113"
+  ],
+  "objectives": [
+    "比較風媒花與蟲媒花在花粉、花部外觀及資源投入上的常見適應。",
+    "依訪花、風速與花粉攔截資料，判斷可能的傳粉媒介並提出驗證方法。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S114_SEC01",
+      "title": "風媒花粉",
+      "content": "風媒植物常產生數量多、較輕且乾燥的花粉，花藥容易把花粉釋放到空氣，柱頭也常較外露或具有較大攔截面，以增加隨機相遇機會。"
+    },
+    {
+      "id": "BIO_R4_L_S114_SEC02",
+      "title": "蟲媒吸引",
+      "content": "蟲媒花常利用顏色、氣味或蜜源吸引動物，花粉可能較黏，容易附在動物身體並被帶到同種花。這些特徵能提高較定向的花粉傳播。"
+    },
+    {
+      "id": "BIO_R4_L_S114_SEC03",
+      "title": "成本與機率",
+      "content": "風傳方向不易控制，因此大量花粉能補償散失；動物傳粉較定向，但植物常需投入花瓣、氣味或蜜等資源。兩者都是提高花粉到達柱頭機率的不同策略。"
+    },
+    {
+      "id": "BIO_R4_L_S114_SEC04",
+      "title": "證據判斷",
+      "content": "花朵特徵只能提出初步假設，較可靠的判斷還需觀察媒介、隔離風或昆蟲並測量柱頭花粉量與結實率。部分植物也可能同時利用多種媒介。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S114_EX01",
+      "prompt": "花小、無香味、花粉多而輕、柱頭羽毛狀，較符合哪種傳粉？",
+      "steps": [
+        "比對吸引動物的特徵是否明顯。",
+        "檢查花粉散播與柱頭攔截特徵。"
+      ],
+      "answer": "較符合風媒傳粉。",
+      "why": "輕而大量的花粉容易隨風散播，外露且面積大的柱頭有利攔截，並不依賴鮮豔花瓣吸引昆蟲。"
+    },
+    {
+      "id": "BIO_R4_L_S114_EX02",
+      "prompt": "花朵有香味與蜜，花粉黏在蜂毛上，較支持什麼？",
+      "steps": [
+        "確認植物提供吸引動物的訊號與資源。",
+        "觀察花粉是否由動物攜帶。"
+      ],
+      "answer": "較符合蟲媒傳粉。",
+      "why": "香味和蜜可吸引昆蟲，黏性花粉能附著昆蟲並隨訪花移動，形成較定向的傳播。"
+    },
+    {
+      "id": "BIO_R4_L_S114_EX03",
+      "prompt": "排除昆蟲後仍結實，能否直接證明只靠風媒？",
+      "steps": [
+        "承認昆蟲不是必要媒介的可能性。",
+        "列出自花授粉或其他動物等替代解釋。"
+      ],
+      "answer": "不能，還需檢驗風與其他可能途徑。",
+      "why": "結實只顯示排除的昆蟲不是唯一途徑，仍可能有自花授粉、操作污染或其他媒介，須再設風隔離組。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "花瓣不鮮豔就一定完全不能靠動物傳粉。",
+      "whyWrong": "傳粉動物也可能受到花朵氣味、蜜源或其他訊號吸引而前來訪花。",
+      "correction": "應綜合訪花紀錄、花粉特性與控制實驗判斷媒介。"
+    },
+    {
+      "belief": "風媒花只需要一粒非常重的花粉。",
+      "whyWrong": "風傳散失機率高，常見適應是大量且較輕的花粉。",
+      "correction": "大量輕乾花粉與外露花藥可提高隨風散播機會。"
+    },
+    {
+      "belief": "蟲媒花的花粉越乾越不易黏附越有利。",
+      "whyWrong": "蟲媒花粉常具黏性，才能附著在昆蟲身上移動。",
+      "correction": "評估應看花粉能否黏附媒介並在訪花時轉移柱頭。"
+    },
+    {
+      "belief": "看到昆蟲停在花上就證明它完成傳粉。",
+      "whyWrong": "昆蟲停留可能只是休息或取食，未必攜帶花粉並實際接觸柱頭。",
+      "correction": "需觀察花粉轉移，並比較有無昆蟲時柱頭花粉與結實率。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "風媒花粉常有什麼特徵？",
+      "answer": "數量多、較輕且容易散出。",
+      "reason": "大量且較輕的乾燥花粉，可補償風向隨機傳播時造成的花粉散失。"
+    },
+    {
+      "prompt": "蟲媒花如何增加昆蟲訪花？",
+      "answer": "利用顏色、氣味或蜜源。",
+      "reason": "這些訊號與資源可吸引昆蟲靠近並接觸花部。"
+    },
+    {
+      "prompt": "花朵外形為何只能作媒介初步證據？",
+      "answer": "相似特徵可能對應多種途徑。",
+      "reason": "仍需媒介觀察與隔離實驗確認花粉實際如何移動。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

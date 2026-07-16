@@ -1,0 +1,126 @@
+{
+  "id": "BIO_R4_L_S111",
+  "subject": "biology",
+  "unitId": "BIO_R4_U15",
+  "skillId": "BIO_R4_S111",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S110"
+  ],
+  "objectives": [
+    "區分授粉與受精的發生位置、參與構造及先後順序。",
+    "根據花粉萌發、花粉管生長與配子融合證據，判斷過程停在哪一階段。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S111_SEC01",
+      "title": "授粉",
+      "content": "授粉是花粉由花藥等來源到達適合柱頭的過程。花粉可能靠風、動物或人工移動；只要到達柱頭便可稱授粉，但尚未代表配子已融合。"
+    },
+    {
+      "id": "BIO_R4_L_S111_SEC02",
+      "title": "萌發與運送",
+      "content": "適合的花粉附著柱頭後可萌發，形成沿花柱向子房生長的花粉管。花粉管負責把雄性配子送往胚珠，是授粉與受精之間的重要橋梁。"
+    },
+    {
+      "id": "BIO_R4_L_S111_SEC03",
+      "title": "受精",
+      "content": "雄性配子抵達胚珠後與卵細胞融合，才稱為受精。受精發生位置在胚珠內，和花粉到達柱頭的授粉位置不同，時間也通常較晚。"
+    },
+    {
+      "id": "BIO_R4_L_S111_SEC04",
+      "title": "成功條件",
+      "content": "授粉成功不保證受精成功，因為花粉可能不相容、無法萌發、花粉管停止生長或配子無法融合。判讀資料時應逐段檢查，而非只看柱頭有無花粉。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S111_EX01",
+      "prompt": "蜜蜂把甲花花粉帶到乙花柱頭，當下完成哪個過程？",
+      "steps": [
+        "找出花粉移動的終點是柱頭。",
+        "確認尚未出現配子融合證據。"
+      ],
+      "answer": "授粉。",
+      "why": "花粉抵達柱頭符合授粉定義；雄性配子仍需經花粉管進入胚珠，之後才可能完成受精。"
+    },
+    {
+      "id": "BIO_R4_L_S111_EX02",
+      "prompt": "柱頭有大量花粉但沒有花粉管，能否說已受精？",
+      "steps": [
+        "承認花粉到達表示已授粉。",
+        "檢查雄性配子是否有路徑到胚珠。"
+      ],
+      "answer": "不能，只能確認授粉。",
+      "why": "缺少花粉管時，雄性配子難以抵達胚珠與卵細胞融合，因此不能由柱頭花粉量直接推得受精。"
+    },
+    {
+      "id": "BIO_R4_L_S111_EX03",
+      "prompt": "胚珠內觀察到雙方配子融合，先前至少發生過哪些步驟？",
+      "steps": [
+        "由融合位置往前追蹤雄性配子來源。",
+        "排列授粉、萌發、花粉管生長與受精。"
+      ],
+      "answer": "授粉後花粉萌發，花粉管運送配子，最後受精。",
+      "why": "雄性配子須先由到達柱頭的花粉建立運送路徑，才能進入胚珠，所以受精通常晚於授粉。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "花粉碰到柱頭就表示受精完成。",
+      "whyWrong": "此時只能確認授粉，尚未觀察胚珠內配子融合。",
+      "correction": "受精須等雄性配子經花粉管抵達胚珠並與卵細胞融合。"
+    },
+    {
+      "belief": "授粉發生在胚珠，受精發生在柱頭。",
+      "whyWrong": "兩者位置顛倒，柱頭接粉而胚珠內進行配子融合。",
+      "correction": "授粉位置是柱頭，受精位置則在子房內的胚珠。"
+    },
+    {
+      "belief": "只要授粉數量多，每個胚珠都一定受精。",
+      "whyWrong": "花粉相容性、萌發、花粉管與配子融合都可能失敗。",
+      "correction": "需直接觀察花粉管進入胚珠或胚珠受精結果。"
+    },
+    {
+      "belief": "受精可以在授粉以前正常完成。",
+      "whyWrong": "雄性配子通常由到達柱頭的花粉經花粉管送入胚珠。",
+      "correction": "典型順序是授粉、花粉萌發與管生長，之後才受精。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "花粉到達柱頭稱為什麼？",
+      "answer": "授粉。",
+      "reason": "授粉描述花粉由來源移動並落到適合柱頭的過程。"
+    },
+    {
+      "prompt": "植物的配子融合通常發生在哪裡？",
+      "answer": "胚珠內。",
+      "reason": "雄性配子經花粉管進入胚珠後才與卵細胞融合。"
+    },
+    {
+      "prompt": "柱頭有花粉為何不能證明受精？",
+      "answer": "後續萌發與融合可能失敗。",
+      "reason": "授粉後仍有多個必要步驟，須有胚珠內證據才能確認。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

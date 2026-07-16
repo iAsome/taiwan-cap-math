@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_077_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S077",
+  "stem": "哪個環境的汗液實際蒸發量較多？",
+  "options": [
+    "低濕",
+    "高濕",
+    "兩者相同",
+    "表中沒有蒸發資料"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "低濕蒸發三百一十毫升，高於高濕的一百五十毫升。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高濕分泌量雖高，但實際蒸發量反而較低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩組蒸發量相差一百六十毫升，並非相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格明確列有實際蒸發量，不能說沒有資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-004"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分泌量與蒸發量分列，作答時應直接比較蒸發欄。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "高濕出汗更多仍蒸發較少，正好顯示汗量不等於散熱量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

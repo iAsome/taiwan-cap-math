@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S170_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S170",
+  "stem": "由甲到丙，覆蓋率增加時哪項趨勢最明確？",
+  "options": [
+    "降雨量由二十增至六十公升",
+    "逕流量與泥沙量都上升",
+    "地表溫度固定不變",
+    "逕流量與泥沙量都下降"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "每坡降雨都固定二十公升，不能把三組相加當單坡雨量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩項數值都隨覆蓋增加而降低，並非上升。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "溫度由三十八降至二十九度，沒有固定不變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "逕流由十二降到三點八，泥沙由八十六降到十四。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取覆蓋趨勢"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "高覆蓋增加逕流"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "序列核對三個覆蓋率依次增加，而兩個輸出數值逐步減少。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "控制核對坡度、土壤與降雨相同，使覆蓋差異具有較強解釋力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

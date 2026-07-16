@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q0296",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "細胞內某離子濃度維持在與外界不同的值，最不能直接推出什麼？",
+  "options": [
+    "細胞內外條件可能不同",
+    "細胞膜可能參與離子調節",
+    "離子的移動可能受多項機制影響",
+    "此離子絕對沒有跨膜交換"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "濃度差本身就顯示內外條件不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "維持差異與膜調節相符，雖仍需更多機制證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "通道、能量及濃度等因素都可能參與，這是合理保留。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "即使持續交換，若同時有主動調節或消耗，濃度仍可不同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估推論"
+  ],
+  "representationType": "濃度情境",
+  "misconceptionTargets": [
+    "濃度不同等於無交換"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-024"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "濃度是某一時刻的狀態，不能單獨顯示分子是否正在雙向移動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "要判斷沒有交換，需追蹤標記物或流量，而非只看內外數值不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

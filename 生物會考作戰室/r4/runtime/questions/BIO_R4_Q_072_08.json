@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_072_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "只有病人檢出菌乙，健康者未檢出，是否已證明乙致病？",
+  "options": [
+    "是，任何相關都等於因果",
+    "是，無需確認污染",
+    "是，無需知道時間順序",
+    "尚未，仍需排除污染並確認乙先於症狀及能造成病變"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "疾病相關性可提供線索，但不會自動等同直接因果關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "檢體採集或分析污染可能造成假檢出，必須納入排除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "若乙只在患病後增加，可能是疾病結果，因此時間順序很重要。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "污染、時間順序與致病機制都補足單純病例對照仍欠缺的證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "病例對照差異是重要但非充分證據，合理答案會指出仍需驗證的環節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "科學懷疑不是否定乙，而是把候選病因轉成可檢驗的預測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

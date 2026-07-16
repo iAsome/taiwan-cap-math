@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S154_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "特徵矩陣中四種生物全都有脊柱，只有甲乙有羽毛。哪項最能區分甲乙為一組？",
+  "options": [
+    "都能攝食",
+    "都占據棲地",
+    "都有脊柱",
+    "都有羽毛"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "攝食是四種生物都可能具有的生命活動，無法只挑出甲乙。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "每種生物都占據某種棲地，這項敘述沒有矩陣中的分組專一性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "脊柱在四種生物皆有，能辨認大群卻不能把甲乙與丙丁分開。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "羽毛只出現在甲乙兩列，正好提供把這兩者歸為小組的共同特徵。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取特徵矩陣"
+  ],
+  "representationType": "矩陣敘述",
+  "misconceptionTargets": [
+    "選所有成員共有特徵"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "矩陣核對尋找甲乙為有而丙丁為無的欄位，只有羽毛符合該模式。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "排除核對確認脊柱等普遍特徵無法區分四列，甲乙共有羽毛才具專一支持。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

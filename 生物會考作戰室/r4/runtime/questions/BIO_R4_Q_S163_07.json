@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一項小型研究沒有發現差異，最謹慎說法為何？",
+  "options": [
+    "永遠沒有因果",
+    "原假說必定正確",
+    "本次資料未顯示差異，仍需評估樣本與方法",
+    "刪除研究"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "小樣本可能無法檢出真實差異，不能外推成永遠沒有作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有差異不會反向證明原假說，仍可能支持不足或假說不成立。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "說法同時報告結果與檢出能力限制，沒有超出本次研究。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "無差異研究仍提供效果範圍與方法資訊，不應因不符合預期刪除。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "限制無差異結論"
+  ],
+  "representationType": "研究摘要",
+  "misconceptionTargets": [
+    "一次無差異證明永遠無因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "樣本量核對檢查研究能否偵測預期差異，避免把低檢出力當無效果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "範圍核對只說本次未顯示，保留以更佳方法重複檢驗的可能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

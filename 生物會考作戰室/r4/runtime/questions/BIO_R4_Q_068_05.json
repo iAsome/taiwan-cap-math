@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要公平比較甲乙兩人的脈搏速率，最重要的做法為何？",
+  "options": [
+    "使用相同量測時間並換算成同一單位",
+    "讓兩人使用不同計時長度且不換算",
+    "只記錄感覺較喘的人",
+    "選擇兩人最高的一次數值"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "統一量測時間或換算成每分鐘，可避免單位差異造成錯誤比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同時間又不換算時，原始次數大小不能直接代表速率高低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主觀喘感不是脈搏計數，無法取代兩人的客觀量測結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只挑最高值會忽略其他重複資料，也可能放大偶然計數誤差。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "速率比較的基本前提是分母一致，因此時間單位必須相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若兩人分別量十五秒和三十秒，可正確換算後比較，不必丟棄資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

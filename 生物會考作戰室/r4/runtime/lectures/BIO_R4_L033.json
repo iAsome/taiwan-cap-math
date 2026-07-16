@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L033",
+  "subject": "biology",
+  "unitId": "BIO_R4_U05",
+  "skillId": "BIO_R4_S033",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "prerequisites": [
+    "BIO_R4_S032"
+  ],
+  "objectives": [
+    "能由微觀到巨觀排列生命體的組成層次。",
+    "能以構成與包含關係辨認陌生例子的層次。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L033_S1",
+      "title": "基本排序",
+      "content": "多細胞生物常由細胞組成組織，組織構成器官，多個器官協調形成器官系統，各系統共同構成個體。排序依構成關係，不是依名稱長短或重要性。"
+    },
+    {
+      "id": "BIO_R4_L033_S2",
+      "title": "細胞到組織",
+      "content": "細胞是生命構造與功能的基本單位；許多形態或功能相近的細胞，加上其間物質，可形成完成特定工作的組織，例如肌肉組織。"
+    },
+    {
+      "id": "BIO_R4_L033_S3",
+      "title": "器官與系統",
+      "content": "器官通常含兩種以上組織並共同完成主要功能，例如胃含上皮、肌肉等組織；器官系統則由多個器官分工合作，例如消化系統。"
+    },
+    {
+      "id": "BIO_R4_L033_S4",
+      "title": "不同生物的限制",
+      "content": "不是每種生物都有完整的組織、器官與系統層次；單細胞生物本身就是個體。層次模型適用時要先確認研究對象與構造複雜度。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L033_E1",
+      "prompt": "肌肉細胞、肌肉組織、胃、消化系統與人體如何排序？",
+      "steps": [
+        "先由單一基本單位找出細胞。",
+        "依誰由誰構成逐步排到完整個體。"
+      ],
+      "answer": "肌肉細胞、肌肉組織、胃、消化系統、人體。",
+      "why": "排序以包含關係為證據：細胞形成組織，組織參與器官，器官屬於系統，系統共同構成個體。"
+    },
+    {
+      "id": "BIO_R4_L033_E2",
+      "prompt": "草履蟲只有一個細胞，是否缺少個體層次？",
+      "steps": [
+        "確認草履蟲能獨立完成生命活動。",
+        "區分細胞數與是否為完整生物。"
+      ],
+      "answer": "草履蟲的單一細胞同時就是一個個體。",
+      "why": "單細胞生物不需先形成組織與器官才成為個體，因此不能硬套多細胞生物的每一中間層次。"
+    },
+    {
+      "id": "BIO_R4_L033_E3",
+      "prompt": "一個構造含上皮與肌肉等多種組織並共同推送食物，屬哪層次？",
+      "steps": [
+        "找出它由多種組織構成。",
+        "確認這些組織合作完成特定功能。"
+      ],
+      "answer": "屬於器官層次。",
+      "why": "多種組織在一個有界構造中合作，是器官的重要判準；功能大小或名稱熟悉度不是必要條件。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "生命層次只要依實際尺寸由小排到大即可。",
+      "whyWrong": "尺寸可提供線索，但真正判準是構成與包含關係，某些細胞也可能很長。",
+      "correction": "用誰構成誰及共同功能建立順序，不只看外觀大小。"
+    },
+    {
+      "belief": "器官一定只由一種組織構成。",
+      "whyWrong": "器官通常含多種組織，各自分工後共同完成主要功能。",
+      "correction": "辨認器官時找多種組織與整合功能兩項證據。"
+    },
+    {
+      "belief": "所有生物都必須具有器官系統。",
+      "whyWrong": "單細胞與部分簡單多細胞生物沒有完整器官系統，仍是生物。",
+      "correction": "先判斷生物種類，再決定哪些組成層次適用。"
+    },
+    {
+      "belief": "個體只是最大的器官。",
+      "whyWrong": "個體由多個器官系統或其他構造共同維持完整生命活動。",
+      "correction": "將完整生物與其中單一器官的局部功能分開。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "由小到大如何排列細胞、器官、組織、個體與器官系統？",
+      "answer": "細胞、組織、器官、器官系統、個體。",
+      "reason": "順序依每一層由前一層組成，並逐步整合更廣的功能。"
+    },
+    {
+      "prompt": "判斷陌生構造為器官的兩項線索是什麼？",
+      "answer": "由多種組織構成，且這些組織合作完成主要功能。",
+      "reason": "只知道尺寸或形狀不足，構成與整合功能才是層次證據。"
+    },
+    {
+      "prompt": "為何不能要求草履蟲具有組織與器官才算個體？",
+      "answer": "它的一個細胞已能完成完整個體所需的生命活動。",
+      "reason": "多細胞層次是常見組織方式，不是所有生物成為個體的必要條件。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  }
+}

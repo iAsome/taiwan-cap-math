@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_119_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST119",
+  "stem": "這份資料最直接支持哪項結論？",
+  "options": [
+    "同齡者一定同月開始加速",
+    "開始較晚者健康一定異常",
+    "同齡者的開始時間與增加量可不同",
+    "身高增加量就是激素濃度"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表中四人的開始月份明顯不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料明示健康無異常，不能作此診斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "月份與增加量都有差異，且健康檢查正常。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "身高變化不是激素濃度的直接數值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把同齡誤認為青春期進度必須相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐列比較可見同齡不等於同時、同速，「同齡者的開始時間與增加量可不同」完全符合表格。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他項與資料相反或把身高過度解讀成內分泌檢測結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

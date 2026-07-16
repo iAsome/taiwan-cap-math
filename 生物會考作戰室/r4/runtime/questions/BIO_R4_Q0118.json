@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0118",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "學生從高倍開始且一直找不到標本，最有效的修正是？",
+  "options": [
+    "繼續隨機移動玻片",
+    "轉回低倍重新找像並置中",
+    "關燈後只看黑暗",
+    "拆下玻片夾"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "高倍視野小，隨機移動更容易讓標本離開視野。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "低倍視野較大，重新定位後可再逐步升高倍率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "關燈會失去透射光，不能提供標本位置資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "拆夾使玻片更不穩，無法解決視野太小問題。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "故障排除"
+  ],
+  "representationType": "找像困難",
+  "misconceptionTargets": [
+    "高倍找不到就亂移"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "問題源自高倍起始的視野限制，回到低倍能直接恢復搜尋範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "完成低倍置中再切高倍，較能保留欲觀察部位。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

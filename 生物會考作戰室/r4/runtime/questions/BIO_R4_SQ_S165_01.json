@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_S165_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S165"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S165",
+  "stem": "比較甲乙最直接支持哪項？",
+  "options": [
+    "根毛完整伴隨較高吸水量",
+    "根毛受損增加吸水",
+    "葉片移除增加吸水",
+    "土壤水分完全不同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲乙都保留葉片且條件相同，根毛完整的甲吸水18毫升，高於乙的7毫升。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙的吸水量較低，資料方向不支持受損增加吸水。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲乙都保留葉片，不能由這組比較判斷移除葉片的效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹說三組土壤水分相同，不能以不存在的水分差解釋。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀表判斷根毛功能"
+  ],
+  "representationType": "比較表",
+  "misconceptionTargets": [
+    "根毛不影響吸水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-015"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "控制核對甲乙主要差在根毛狀態，適合檢驗根毛功能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "數值核對直接比較18與7毫升，確認方向而不只看外觀。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

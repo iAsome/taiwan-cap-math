@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0354",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "每個濃度設置五條相似試材，主要目的為何？",
+  "options": [
+    "讓每條使用不同時間",
+    "估計個體差異並提高結果可靠性",
+    "保證所有數值完全相同",
+    "避免記錄任何反常值"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同一濃度的重複試材仍應使用相同處理時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "多個獨立試材可估計平均與變異，降低單一偶然值影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "生物試材本來可能有差異，不會保證完全相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "反常值應查核並依準則處理，不是避免記錄。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "重複概念"
+  ],
+  "representationType": "實驗設計",
+  "misconceptionTargets": [
+    "重複保證一致"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "重複的價值在於看出結果分布與趨勢是否穩定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "平均值需要搭配範圍或其他變異資訊，不能只報一個數字。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "BIO_R4_ST_S061",
+  "subject": "biology",
+  "skillId": "BIO_R4_S061",
+  "type": "cell-metabolism-data",
+  "content": {
+    "title": "肌肉細胞活動資料",
+    "text": "研究者測量同一批肌肉細胞在休息與收縮狀態下，每分鐘葡萄糖消耗、氧消耗、二氧化碳產生與可用能量指標。其他培養條件相同。",
+    "note": "指標數值只供比較兩種狀態，不代表人體完整代謝量。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-112-MAIN-INTEGRATED-NATURAL-025"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-025"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格比較休息與收縮肌肉細胞的物質消耗、產物與能量指標。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "狀態",
+        "葡萄糖消耗",
+        "氧消耗",
+        "二氧化碳產生",
+        "能量指標"
+      ],
+      "rows": [
+        [
+          "休息",
+          "2",
+          "3",
+          "3",
+          "4"
+        ],
+        [
+          "收縮",
+          "7",
+          "10",
+          "10",
+          "13"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

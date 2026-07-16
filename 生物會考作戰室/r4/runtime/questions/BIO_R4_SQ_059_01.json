@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_059_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S059",
+  "stem": "依資料，氧的淨移動方向為何？",
+  "options": [
+    "肺泡到胃",
+    "血液到肺泡",
+    "肺泡到血液",
+    "兩側沒有差異"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "胃不位於肺泡交換膜另一側。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此方向由低濃度5移向高濃度14。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "肺泡氧14高於血液5，淨方向進血。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表中膜兩側氧氣數值明顯不同，並不符合兩側濃度完全相等。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較氧的兩個數值，肺泡側14較高，血液側5較低。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "肺泡氧濃度高於血液，因此氧氣由肺泡向血液產生淨擴散。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

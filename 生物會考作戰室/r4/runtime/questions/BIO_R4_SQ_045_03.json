@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_045_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S045",
+  "stem": "若要判斷真正峰值是否位於30與40°C之間，最適當的追加實驗為何？",
+  "options": [
+    "只測60與70°C",
+    "刪除30°C組",
+    "在31至39°C增加多個測量點",
+    "同時改變受質種類"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "更高溫不能定位30到40°C間峰值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除關鍵比較點會損失資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "區間內加密測量可找出是否有更高值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "改受質會使研究問題轉成另一酵素配對。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問題指定30與40°C之間，因此應保持其他條件並在此區間加密。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「在31至39°C增加多個測量點」直接提高峰值定位解析度，沒有引入新的實驗變因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

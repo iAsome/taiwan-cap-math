@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_207_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S207",
+  "stem": "兩種鳥檢出結果不同，為何不能只用鳥種解釋？",
+  "options": [
+    "所有鳥代謝相同",
+    "未檢出等於零風險",
+    "底泥測值一定錯",
+    "覓食地點與食物來源也不同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料不支持所有鳥的代謝必定相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未檢出不能證明永遠沒有風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有品質資料可否定底泥測值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "河口牡蠣提供明確途徑，上游鳥缺少此途徑。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比較暴露途徑差異"
+  ],
+  "representationType": "鳥類檢出對照",
+  "misconceptionTargets": [
+    "把檢出差異只歸因物種"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較受體時需同時考慮物種與實際暴露路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料最大的差異是棲地與食物，不宜只歸因鳥種。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,156 @@
+{
+  "id": "BIO_R4_L_S220",
+  "subject": "biology",
+  "unitId": "BIO_R4_U30",
+  "skillId": "BIO_R4_S220",
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S219"
+  ],
+  "objectives": [
+    "以證據與科學原理建立解釋",
+    "明確標示不確定性及結論範圍"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S220_SEC_01",
+      "title": "主張與證據",
+      "content": "主張直接回答研究問題，證據則是支持主張的觀察或數據。應選相關、可靠且足量的證據，不只列結論；與問題無關的數據不能支持主張。"
+    },
+    {
+      "id": "BIO_R4_L_S220_SEC_02",
+      "title": "推理連結",
+      "content": "推理用科學原理說明證據為何支持主張。例如氣孔關閉減少水分散失，可連結葉片失水數據與調節解釋，但不得加入資料未測的機制。"
+    },
+    {
+      "id": "BIO_R4_L_S220_SEC_03",
+      "title": "處理反證",
+      "content": "完整論證也檢查不符合主張的數據、替代解釋與研究限制。不能任意刪除離群值，應查明品質與可能原因，異常值仍可能揭露新機制。"
+    },
+    {
+      "id": "BIO_R4_L_S220_SEC_04",
+      "title": "具體不確定性",
+      "content": "不確定性應指出來源，如樣本少、測量範圍或方法偏差，以及它會限制效果大小、方向或外推哪一部分，並在結論中保留相應語氣。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S220_EX_01",
+      "prompt": "處理組平均高於對照，如何形成完整解釋？",
+      "steps": [
+        "提出處理提高反應的主張並引用差值",
+        "用相關生物機制連結處理與反應"
+      ],
+      "answer": "主張、數據與機制必須相互對應。",
+      "why": "只有平均差是證據描述，加入處理如何改變生理過程的推理，才形成可檢查的科學解釋。"
+    },
+    {
+      "id": "BIO_R4_L_S220_EX_02",
+      "prompt": "每組只有兩個樣本，應如何寫不確定性？",
+      "steps": [
+        "指出小樣本難估計自然變異",
+        "限制效果大小與普遍性的信心"
+      ],
+      "answer": "結果支持初步趨勢，但效果大小仍不穩定。",
+      "why": "兩個樣本容易受個體差異影響，應增加獨立重複後再判斷觀察差值是否具代表性。"
+    },
+    {
+      "id": "BIO_R4_L_S220_EX_03",
+      "prompt": "一筆數據反向，能否直接刪除？",
+      "steps": [
+        "檢查原始紀錄與品質控制",
+        "分別分析保留與排除時的結論"
+      ],
+      "answer": "不能只因不符合預期而刪除。",
+      "why": "反向值可能是自然變異或測量問題，只有事先規則與具體品質證據才能支持排除。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "列出數據就已經完成科學解釋。",
+      "whyWrong": "數據沒有說明為何會產生該結果，也未連接科學原理。",
+      "correction": "加入由證據到主張的機制推理與適用條件。"
+    },
+    {
+      "belief": "不確定性只要寫可能有誤差就足夠。",
+      "whyWrong": "空泛說法未指出誤差來源及它限制哪一項結論。",
+      "correction": "具體寫出樣本、測量或範圍限制及可能影響。"
+    },
+    {
+      "belief": "不符合主張的資料都可以刪除。",
+      "whyWrong": "依結果選擇資料會造成偏差，也可能漏掉真實生物變異。",
+      "correction": "依事先訂定的判準與測量品質證據處理離群值，並透明報告去留。"
+    },
+    {
+      "belief": "有不確定性就不能提出任何科學主張。",
+      "whyWrong": "多數研究都有不確定性，仍可提出限定範圍的最佳解釋。",
+      "correction": "依證據強度調整用詞，並明示尚待驗證部分。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "科學論證的推理有何功能？",
+      "answer": "說明證據為何支持主張。",
+      "reason": "推理引用科學原理，把觀察數據與欲回答的結論連接起來。"
+    },
+    {
+      "prompt": "不確定性應包含哪些資訊？",
+      "answer": "來源及它限制的結論部分。",
+      "reason": "具體限制能讓讀者判斷方向、大小或外推受到何種影響。"
+    },
+    {
+      "prompt": "遇到離群值應先做什麼？",
+      "answer": "查核原始紀錄、方法與品質控制。",
+      "reason": "先判斷數值是錯誤或真實變異，不能只因不合預期刪除。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

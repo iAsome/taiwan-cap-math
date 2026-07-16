@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_075_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "血液可正常到肺，但肺泡壁無法讓二氧化碳通過，何者最合理？",
+  "options": [
+    "運輸與排出都完全正常",
+    "尿素改由肺大量排出",
+    "血液不再流動",
+    "二氧化碳送達肺但仍難以離體"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "氣體跨壁受阻表示排出環節異常，不能說整個流程正常。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "肺泡障礙不會使含氮尿素改成由肺大量排出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹明示血液可正常到肺，不能反向推論血流停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "循環完成送達，但交換障礙使二氧化碳留在血液中累積。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "定位流程受阻處：血液運輸正常，問題在肺泡跨膜與呼出之前。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "相同廢物累積可由運輸或器官處理不同原因造成，需依證據區分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

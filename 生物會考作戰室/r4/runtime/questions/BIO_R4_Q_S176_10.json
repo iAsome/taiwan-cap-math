@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S176_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "四組結果為有光有碳陽性、缺光陰性、缺碳陰性、兩者皆缺陰性。最合理結論是？",
+  "options": [
+    "只要有水即可形成澱粉",
+    "本實驗條件下光與二氧化碳皆為必要條件",
+    "光與碳都沒有作用",
+    "陰性代表葉片全部死亡"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三個缺條件組都陰性，水相同不能單獨形成澱粉。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "只有兩條件齊備時陽性，分別缺一皆失敗。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "結果恰好顯示移除任一條件會改變產物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "陰性可由光合受限解釋，不能直接判定死亡。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合四組對照"
+  ],
+  "representationType": "因子設計",
+  "misconceptionTargets": [
+    "單一陽性可忽略對照"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "組合核對四種有無搭配完整，陽性只出現在光與碳同時存在。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "單缺核對缺光和缺碳各自陰性，分別支持兩條件的必要性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

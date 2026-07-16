@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_ST_S109",
+  "subject": "biology",
+  "skillId": "BIO_R4_S109",
+  "type": "removal-table",
+  "content": {
+    "title": "花部移除與結果",
+    "context": "研究者選取同種且發育相近的花，分組移除不同花部。每組都以相同數量的同種花粉塗在柱頭，並記錄花粉附著與成熟果實數。",
+    "columns": [
+      "組別",
+      "處理",
+      "柱頭花粉附著",
+      "二十朵花形成成熟果實數"
+    ],
+    "rows": [
+      [
+        "甲",
+        "不移除花部",
+        "有",
+        "17"
+      ],
+      [
+        "乙",
+        "移除花瓣",
+        "有",
+        "15"
+      ],
+      [
+        "丙",
+        "移除柱頭",
+        "無法塗粉",
+        "0"
+      ]
+    ],
+    "note": "各組光照、溫度與供水相同，使用的花粉活性也相同。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-106-MAIN-INTEGRATED-NATURAL-044",
+    "CAP-108-MAIN-INTEGRATED-NATURAL-022",
+    "CAP-110-MAIN-INTEGRATED-NATURAL-010"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-022",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-010"
+    ]
+  },
+  "accessibility": {
+    "summary": "甲組不移除花部，有花粉附著，二十朵中十七朵結果；乙組移除花瓣，仍有花粉附著，十五朵結果；丙組移除柱頭，無法塗粉，也沒有果實成熟。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "組別",
+        "結果"
+      ],
+      "rows": [
+        [
+          "甲",
+          "附著花粉，成熟果實17"
+        ],
+        [
+          "乙",
+          "附著花粉，成熟果實15"
+        ],
+        [
+          "丙",
+          "無法塗粉，成熟果實0"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

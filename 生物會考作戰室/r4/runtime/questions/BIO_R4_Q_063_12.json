@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_063_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若運動後頻率下降但每次呼吸更深，總換氣量如何判斷？",
+  "options": [
+    "只看頻率即可確定下降",
+    "一定變成零",
+    "一定無限增加",
+    "需同時計算頻率與每次氣量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單次氣量增加可能抵銷頻率下降。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "仍在呼吸不會使總量必為零。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料也不能支持無限增加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個因素共同決定每分鐘總量。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "頻率與深度朝相反方向變化時，無法只靠其中一項下結論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「需同時計算頻率與每次氣量」指出需要的完整計算資料，是唯一可靠判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

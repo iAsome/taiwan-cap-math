@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S159_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "太空站樣本出現未知微粒。它有蛋白外殼與遺傳物質，只在活細胞培養組增加。最合理分類是？",
+  "options": [
+    "形成菌絲的真菌",
+    "可獨立分裂的細菌",
+    "病毒類顆粒",
+    "沒有任何生物相關構造的礦物"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹沒有細胞核或菌絲，且真菌不需進入另一活細胞才能普遍生長。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若能獨立分裂，應可在合適無活細胞培養條件增加，與觀察不符。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "外殼、遺傳物質與宿主依賴三項證據共同符合病毒的基本特徵。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遺傳物質與只在活細胞組增加具有生物增殖關聯，不像完全無關的礦物。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移未知樣本分類"
+  ],
+  "representationType": "新場域情境",
+  "misconceptionTargets": [
+    "未知微粒只依外觀分類"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-050",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-028",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-004"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結構核對由蛋白外殼包覆遺傳物質，提供病毒顆粒的組成證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "條件核對另由活細胞組才增加證明宿主依賴，與結構證據獨立相合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

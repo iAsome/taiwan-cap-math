@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_045_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲酵素在35°C最高，乙酵素在50°C最高，最合理的比較結論為何？",
+  "options": [
+    "兩酵素受質必定相同",
+    "乙酵素永遠不會失活",
+    "甲酵素在所有溫度都較快",
+    "不同酵素適合的溫度範圍可能不同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "最高溫度不同不能證明受質相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "50°C最高不代表任何高溫都不失活。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料只給最高位置，未給全範圍速率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩酵素的觀察峰值差異支持此結論。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "兩種酵素在相同指標下最高點不同，表示適合溫度可能有差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不能把峰值資訊延伸成受質、永不失活或全溫度快慢的斷言。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

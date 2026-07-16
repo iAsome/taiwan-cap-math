@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_076_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "比較兩人的水分收支，最重要的資料處理為何？",
+  "options": [
+    "只比較飲水瓶顏色",
+    "忽略食物中的水",
+    "使用相同時段並加總各攝取與流失途徑",
+    "只選流汗較多者"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "瓶子顏色不代表飲水體積，也不影響各項流失量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "食物含水可能是重要來源，忽略會低估總攝取。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "統一時間與完整加總可避免分母不同或漏項造成誤判。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只挑某一人不能完成兩人公平比較，也忽略其他流失途徑。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "收支比較需要同一時間尺度與同一單位，並避免只看單一途徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若有估計值也應標示不確定性，不能把不完整紀錄當成精確總量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

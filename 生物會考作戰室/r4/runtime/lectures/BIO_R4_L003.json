@@ -1,0 +1,160 @@
+{
+  "id": "BIO_R4_L003",
+  "subject": "biology",
+  "unitId": "BIO_R4_U01",
+  "skillId": "BIO_R4_S003",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S002"
+  ],
+  "objectives": [
+    "能從實驗目的辨認自變項與應變項。",
+    "能指出需維持一致的控制變因並說明理由。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L003_S1",
+      "title": "三類變因",
+      "content": "自變項是研究者刻意改變或選來比較的條件；應變項是隨後觀察或測量的結果；控制變因則是在各組維持一致以避免干擾判讀的條件。"
+    },
+    {
+      "id": "BIO_R4_L003_S2",
+      "title": "由問題找變因",
+      "content": "先把研究問題改寫成『某條件是否影響某結果』。前者通常是自變項，後者通常是應變項；其他可能影響結果的條件則優先列入控制。"
+    },
+    {
+      "id": "BIO_R4_L003_S3",
+      "title": "操作定義",
+      "content": "變因名稱還需對應具體作法。例如溫度要寫各組攝氏度，生長要寫七天後株高或新增葉數，才能確認究竟改了什麼、測了什麼。"
+    },
+    {
+      "id": "BIO_R4_L003_S4",
+      "title": "避免混淆",
+      "content": "若比較光照時數時又讓各組水量不同，株高差異無法確定來自光或水。控制變因不是永遠不變，而是在這次研究各組採相同設定。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L003_E1",
+      "prompt": "比較不同水溫下魚的鰓蓋開合次數。",
+      "steps": [
+        "找出研究者安排的不同條件：水溫。",
+        "找出每組測得的結果：每分鐘鰓蓋開合次數。"
+      ],
+      "answer": "自變項是水溫，應變項是每分鐘鰓蓋開合次數。",
+      "why": "題目直接問溫度是否影響呼吸動作，溫度是被比較的原因條件，開合次數是回應結果，角色不能依數字大小互換。"
+    },
+    {
+      "id": "BIO_R4_L003_E2",
+      "prompt": "研究光照時數對豆苗株高的影響，列出兩項控制變因。",
+      "steps": [
+        "列出也可能影響株高的條件。",
+        "選擇可在各光照組維持一致者。"
+      ],
+      "answer": "例如豆苗品種與每日澆水量。",
+      "why": "若品種或水量不同，株高差異可能由它們造成；各組固定後，才較能把差異連結到光照時數。"
+    },
+    {
+      "id": "BIO_R4_L003_E3",
+      "prompt": "兩組種子分別用清水與鹽水培養，卻在不同天計算發芽率。",
+      "steps": [
+        "確認欲比較的自變項是溶液種類。",
+        "檢查計算時間是否也會影響發芽率。"
+      ],
+      "answer": "觀察天數應設為相同的控制變因。",
+      "why": "發芽率會隨時間改變，不同天計算等於額外改變一項條件，使溶液效果與時間效果混在一起。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "自變項就是實驗中數值最大的項目。",
+      "whyWrong": "變因角色由研究目的決定，與數值大小或單位種類沒有關係。",
+      "correction": "找研究者刻意比較的條件，那一項才是自變項。"
+    },
+    {
+      "belief": "應變項是實驗前保持不變的條件。",
+      "whyWrong": "應變項是用來判斷反應的測量結果，不是固定條件。",
+      "correction": "把測得結果列為應變項，固定條件另列為控制變因。"
+    },
+    {
+      "belief": "控制變因在所有研究中都必須永遠相同。",
+      "whyWrong": "同一因素在不同研究可扮演不同角色，取決於當次問題。",
+      "correction": "只要求本研究各比較組維持一致，另一次可把它改成自變項。"
+    },
+    {
+      "belief": "同時改兩個條件可以得到兩倍清楚的答案。",
+      "whyWrong": "多項條件共同變化時，結果差異無法歸給其中任何單一因素。",
+      "correction": "採單一主要自變項，其餘重要條件控制一致。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "比較肥料量對葉數影響時，自變項是什麼？",
+      "answer": "每盆施用的肥料量。",
+      "reason": "肥料量是研究者刻意設定不同的條件，因此在此研究中扮演自變項。"
+    },
+    {
+      "prompt": "上述研究的應變項是什麼？",
+      "answer": "固定天數後的葉片數。",
+      "reason": "葉片數是接受不同肥料處理後量得的結果，用來判斷是否有影響。"
+    },
+    {
+      "prompt": "為何各盆需使用同品種植物？",
+      "answer": "避免品種差異混淆肥料效果。",
+      "reason": "品種也可能影響葉數，固定品種可讓組間差異較能歸因於肥料量。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_EXPERIMENT_GRAPH"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

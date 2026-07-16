@@ -1,0 +1,63 @@
+{
+  "id": "BIO_R4_ST132",
+  "subject": "biology",
+  "skillId": "BIO_R4_S132",
+  "type": "文字與資料表",
+  "content": {
+    "title": "親代與配子符號檢核",
+    "text": "系統記錄三個親代的基因型與配子。甲為TT，配子只記T；乙為Tt，配子記T或t；丙為tt，配子只記t。第四筆錯誤把乙的單一配子寫成Tt，學生需依單套原則修正。",
+    "data": "甲TT→T；乙Tt→T或t；丙tt→t；錯誤列：乙Tt→Tt。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "資料以甲乙丙親代基因型、合法配子及一筆錯誤配子文字呈現。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "summary": "資料以甲乙丙親代基因型、合法配子及一筆錯誤配子文字呈現。",
+      "columns": [
+        "親代",
+        "基因型",
+        "合法配子"
+      ],
+      "rows": [
+        [
+          "甲",
+          "TT",
+          "T"
+        ],
+        [
+          "乙",
+          "Tt",
+          "T或t"
+        ],
+        [
+          "丙",
+          "tt",
+          "t"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

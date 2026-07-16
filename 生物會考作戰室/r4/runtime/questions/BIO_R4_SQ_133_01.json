@@ -1,0 +1,91 @@
+{
+  "id": "BIO_R4_SQ_133_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST133",
+  "stem": "白毛子代的理論機率為何？",
+  "options": [
+    "二分之一",
+    "四分之一",
+    "四分之三",
+    "百分之百"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩個bb格占四格的一半。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "四格有兩格白毛，不是只有一格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四分之三會多算一個Bb黑毛格。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍有兩格Bb黑毛，不可能全部白毛。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "方格計數未合併相同結果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-010",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-047",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-015",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-019",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-014",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-012",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-030",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-025"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「二分之一」由兩個bb位置除以四個等機會位置得到二分之一。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "基因型與表現規則都明確，沒有另一比例可成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

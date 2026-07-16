@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_132_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST132",
+  "stem": "若甲T配子與丙t配子結合，子代應記為何者？",
+  "options": [
+    "只記甲提供的版本 T",
+    "只記丙提供的版本 t",
+    "子代純合基因型 TT",
+    "子代異型合子基因型 Tt"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只寫T會漏掉丙提供的t。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只寫t會漏掉甲提供的T。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "TT需要兩方都提供T，與丙不符。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩方版本重新成對，形成Tt。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "合併配子時改寫或漏掉版本"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "受精時甲給T、丙給t，「子代異型合子基因型 Tt」完整保留兩方來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其他選項遺漏一方或把丙的t錯改成T，沒有第二個正解。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

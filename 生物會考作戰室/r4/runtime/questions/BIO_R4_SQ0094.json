@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0094",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST032",
+  "stem": "正常組的時間趨勢最支持哪項判斷？",
+  "options": [
+    "離子濃度持續無限制上升",
+    "擾動後離子濃度逐漸朝原值回復",
+    "細胞內離子立即全部消失",
+    "二十分鐘時沒有任何離子移動"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數值是下降而非持續上升。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一百五十依序降到一百二十與一百零五，接近原值一百。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "濃度仍為一百零五，沒有全部消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "濃度接近原值不能證明沒有動態交換。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "趨勢判讀"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "終點忽略趨勢"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "以處理前基準比較多個時間點，可看出偏差逐漸縮小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這支持調節現象，但尚未單獨指出所有分子機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

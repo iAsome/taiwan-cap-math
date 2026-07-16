@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S115_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S115"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S115",
+  "stem": "乙成活數高於甲，哪項解釋最合理但仍需驗證？",
+  "options": [
+    "壓條枝條必定改成有性生殖",
+    "成活差異只可能由花粉數造成",
+    "甲的枝條一定完全沒有細胞",
+    "乙生根前仍連母株，可能持續獲得水分而提高成活"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "壓條仍屬營養繁殖，沒有配子融合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "實驗沒有花粉處理，不能解釋此差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "扦插枝條由活細胞構成，否則不能生根。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "母株連接是兩操作的重要差異，可提出機制假設。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "機制推論"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "成活差異即確定機制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料支持關聯與合理機制，但要證明供水作用仍須量測枝條水分狀態。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "即使控制相近，生根位置等個別差異仍可能影響成活，應增加重複。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_SQ_139_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S139"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST139",
+  "stem": "甲的結果最適合支持哪項結論？",
+  "options": [
+    "翅膀細胞完全沒有遺傳物質",
+    "R 會使所有精子死亡",
+    "體細胞變異在任何繁殖方式都不可能保留",
+    "只在翅膀檢出的 R 未直接進入這批子代"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲的翅膀正因含遺傳物質才可檢出版本 R。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲的精子未檢出 R，資料不能推論帶 R 精子死亡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "結果只涉及果蠅有性生殖，不能外推到植物扦插等方式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "四十隻子代均未檢出，符合侷限體細胞不經受精傳遞。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把特定有性生殖結果外推到所有繁殖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「只在翅膀檢出的 R 未直接進入這批子代」限定在本批有性生殖資料，沒有把零次觀察擴大成所有情境的絕對規則。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若檢測靈敏度有限，仍可增加樣本與複核精子，但現有結果不支持直接傳遞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

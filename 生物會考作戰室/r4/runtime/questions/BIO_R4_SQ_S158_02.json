@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S158_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S158",
+  "stem": "為何丙不能寫成『此細菌完全沒有作用』？",
+  "options": [
+    "觀察時間與指標有限，其他作用仍可能未被測到",
+    "因為池水不能量測",
+    "因為所有細菌都致病",
+    "因為魚隻活動一定增加"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩週與三項指標只涵蓋部分可能結果，不能排除較慢或未測作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "紀錄已量測溶氧、酸鹼值與魚隻活動，池水並非不能進行量測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "是否致病需要健康結果支持，不能用另一個全稱說法取代資料限制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹明說魚隻活動未見差異，宣稱一定增加會直接違反觀察紀錄。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估無差異結論"
+  ],
+  "representationType": "限制推論",
+  "misconceptionTargets": [
+    "未見差異等於完全無作用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "範圍核對列出本次只有兩週及三個依變項，顯示資料沒有涵蓋所有可能作用。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反事實核對想像延長觀察或增加指標，結果仍可能改變，因此『完全沒有』過強。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

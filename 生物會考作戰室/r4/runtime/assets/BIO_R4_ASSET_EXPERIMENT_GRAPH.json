@@ -1,0 +1,76 @@
+{
+  "id": "BIO_R4_ASSET_EXPERIMENT_GRAPH",
+  "skillIds": [
+    "BIO_R4_S003",
+    "BIO_R4_S004",
+    "BIO_R4_S006",
+    "BIO_R4_S007",
+    "BIO_R4_S215"
+  ],
+  "type": "graph",
+  "path": "生物會考作戰室/r4/assets/experiment-graph.svg",
+  "calibrationRefs": [
+    "CAP-106-MAIN-INTEGRATED-NATURAL-047"
+  ],
+  "caption": "單一變因實驗的資料點與趨勢線",
+  "altText": "橫軸為溫度攝氏度，縱軸為每分鐘產生氣泡數；數據由 10 到 30 度上升，40 度下降。",
+  "longDescription": "圖中五個資料點分別為 10°C 時 4 個、20°C 時 9 個、30°C 時 15 個、40°C 時 7 個、50°C 時 1 個氣泡每分鐘。折線只連接觀測值，顯示反應在 30°C 附近最高；不能由此斷定所有酵素的最適溫度都相同。",
+  "dataFallback": {
+    "summary": "圖中五個資料點分別為 10°C 時 4 個、20°C 時 9 個、30°C 時 15 個、40°C 時 7 個、50°C 時 1 個氣泡每分鐘。折線只連接觀測值，顯示反應在 30°C 附近最高；不能由此斷定所有酵素的最適溫度都相同。",
+    "columns": [
+      "溫度（°C）",
+      "每分鐘氣泡數（個）"
+    ],
+    "rows": [
+      [
+        "10",
+        "4"
+      ],
+      [
+        "20",
+        "9"
+      ],
+      [
+        "30",
+        "15"
+      ],
+      [
+        "40",
+        "7"
+      ],
+      [
+        "50",
+        "1"
+      ]
+    ]
+  },
+  "technical": {
+    "axes": [
+      "溫度（°C）",
+      "每分鐘氣泡數（個）"
+    ],
+    "units": [
+      "°C",
+      "個／分鐘"
+    ],
+    "legend": "實線與圓點表示各溫度下的觀測值",
+    "significantFigures": "氣泡數記錄至整數",
+    "controlledVariables": [
+      "酵素量",
+      "受質量",
+      "反應時間"
+    ],
+    "dataSource": "本站原創教學資料；數值只供單一變因與趨勢判讀"
+  },
+  "subject": "biology",
+  "creator": "CAP R4 biology authoring team",
+  "source": "Original data-driven SVG calibrated against official CAP representation conventions",
+  "license": "Repository-owned original educational asset",
+  "originality": "original",
+  "transformationRecord": "Created from curriculum concepts and independently authored data; no external artwork copied",
+  "accessibility": {
+    "colorIndependent": true,
+    "printSafe": true
+  },
+  "sha256": "8c5aa92a22b8e51fc3c6641e8d7a9806dbfed2eafa5a9e7e9a5a718a96b971d4"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0324",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "人工膜袋內外濃度相同，但外液持續蒸發。稍後水的淨方向最可能如何改變？",
+  "options": [
+    "蒸發使外液溶質濃度降低，水必定進袋",
+    "蒸發不會改變任何濃度",
+    "袋內水全部停止",
+    "外液濃度升高後，水可能由袋內淨移向外液"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "蒸發移除水，通常使外液溶質濃度提高而非降低。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水量減少會改變外液濃度與滲透條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水分子仍運動，且新的濃度差可能造成淨量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "外液因蒸發變濃，可成為高溶質側並吸引水淨外移。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "條件變化"
+  ],
+  "representationType": "動態情境",
+  "misconceptionTargets": [
+    "只看起始濃度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-048",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-016",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-053",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "滲透方向要使用當下濃度，不能永遠沿用開始時相同的條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "環境蒸發雖不直接跨膜，卻會透過改變外液濃度重建水勢差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

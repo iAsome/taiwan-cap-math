@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0340",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "能量抑制後運輸速率由每分鐘十單位降到四單位，最恰當的結論為何？",
+  "options": [
+    "十單位全為被動移動",
+    "四單位證明處理完全無效",
+    "所有運輸都已停止",
+    "至少部分運輸依賴能量，殘餘量可能另有來源"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "速率下降顯示原運輸不宜全歸為被動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "由十降到四表示處理造成明顯影響，不能說完全無效。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "仍測得四單位，運輸並未全部停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "下降部分支持能量依賴，殘餘可來自被動成分或抑制不完全。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "量化判讀"
+  ],
+  "representationType": "前後數據",
+  "misconceptionTargets": [
+    "殘餘即全被動"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "使用『至少部分』能忠實對應處理前後的差值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "要區分殘餘來源，還需人工膜、死細胞或不同抑制方法等對照。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

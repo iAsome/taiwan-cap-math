@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S087_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人由熱環境進入涼爽室內後，出汗逐漸減少。最合理的解釋為何？",
+  "options": [
+    "體溫偏高刺激減弱，中樞調整汗腺命令",
+    "汗腺永久失去分泌能力",
+    "所有感覺神經立刻消失",
+    "涼爽空氣把汗腺變成肌肉"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "環境與體溫變化後，散熱命令可隨需要降低。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "分泌減少不等於汗腺永久失去功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "神經不會因進入室內就立刻全部消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "汗腺不會因溫度改變轉變成肌肉。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "因果解釋"
+  ],
+  "representationType": "環境轉換",
+  "misconceptionTargets": [
+    "把反應降低當成器官失效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "調節反應會隨偏離程度改變，「體溫偏高刺激減弱，中樞調整汗腺命令」符合動態恆定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "出汗逐漸減少是可逆調節，不能推成汗腺永久失能、感覺神經消失或汗腺轉變成肌肉。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

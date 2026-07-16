@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S087_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "跑步後呼吸加快，若以神經調節流程描述，哪個順序較合理？",
+  "options": [
+    "呼吸肌先決定→受器消失→腦停止",
+    "腦先產生運動→體內完全沒有變化",
+    "受器接收光→汗腺形成呼吸",
+    "體內變化被偵測→中樞整合→呼吸肌活動調整"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "呼吸肌執行命令，不能使受器消失或腦停止。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "運動會造成體內需求改變，不是完全沒有變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "光受器與汗腺不是呼吸調節的主要路徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此順序符合偵測、整合與動器官調整。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排序",
+    "應用"
+  ],
+  "representationType": "運動情境",
+  "misconceptionTargets": [
+    "把動器官當成調節決策者"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "神經調節需先有變化訊息，再由中樞控制呼吸肌。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "呼吸肌不能先作決策，運動確實改變體內需求，光受器與汗腺也不會構成呼吸調節路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

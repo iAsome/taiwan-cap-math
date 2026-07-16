@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_207_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "湖水測得污染物，但岸邊鳥類體內未檢出，哪個結論合理？",
+  "options": [
+    "物質完全無害",
+    "湖中有污染物，但尚未證明鳥類已吸收",
+    "所有魚已死亡",
+    "鳥類永不暴露"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未檢出不能證明物質完全沒有危害。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "目前只能確認污染物存在湖中，不能確認鳥類吸收。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目沒有提供魚類存活資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一次未檢出不能保證未來不暴露。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論"
+  ],
+  "representationType": "證據判讀",
+  "misconceptionTargets": [
+    "環境檢出等同受害"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結論強度不能超過證據；未檢出不是永不暴露。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "分清環境濃度與體內濃度可避免過度推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

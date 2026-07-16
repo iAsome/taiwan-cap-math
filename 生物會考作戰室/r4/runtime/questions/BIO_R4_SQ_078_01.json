@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_078_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S078",
+  "stem": "哪組各環節的升溫散熱反應最完整？",
+  "options": [
+    "三組完全相同",
+    "乙組",
+    "丙組",
+    "甲組"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三組汗量與神經資料差異很大，不能判為完全相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙受器傳入與後續輸出都低，前端訊息明顯受阻。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙前端訊號高但汗量低，效應器連接並不完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "甲的傳入、輸出與汗量都高，顯示整條路徑可運作。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完整反應要同時看感受、控制輸出和效應器結果，甲三者一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "只看中樞輸出會漏掉丙的汗腺反應障礙，因此需串連全部欄位。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

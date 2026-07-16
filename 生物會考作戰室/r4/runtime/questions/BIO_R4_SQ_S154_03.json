@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S154_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S154",
+  "stem": "若新增戊也有四項構造，僅憑此表可作何種最保守結論？",
+  "options": [
+    "戊就是丁的同一個體",
+    "戊與丁所有基因相同",
+    "戊一定住同一棲地",
+    "戊與丁共享表列特徵最多"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩個個體可有相同四項構造，矩陣相同不能證明戊就是丁本身。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表格只記四項可見構造，沒有全基因序列可支持基因完全相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "矩陣沒有棲地欄位，即使構造相同也不能推出兩者一定同地生活。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "戊與丁在四個表列欄位都為有，這是資料能直接支持的最大共同數。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "限制資料推論"
+  ],
+  "representationType": "新增資料情境",
+  "misconceptionTargets": [
+    "由共享構造推全部相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料範圍核對只允許使用矩陣四欄，排除個體、全基因與棲地等外加資訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐欄核對顯示戊丁四項皆同，『共享表列特徵最多』是最保守且完整的敘述。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

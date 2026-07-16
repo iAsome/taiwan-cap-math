@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_121_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST121",
+  "stem": "若要讓模型更能呈現長期近似各半趨勢，應優先怎麼做？",
+  "options": [
+    "只保留四次中想要的結果",
+    "改成固定XX、XY輪替",
+    "增加獨立抽取次數並保留所有紀錄",
+    "抽到XX就停止實驗"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "挑選結果會造成偏誤，不能呈現真實趨勢。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "固定輪替不是隨機受精模型。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "更多完整獨立事件較能觀察長期比例。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遇特定結果就停止會扭曲紀錄。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "為符合預期比例而篩選或預排結果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "機率趨勢需靠大量且未篩選的獨立資料觀察，「增加獨立抽取次數並保留所有紀錄」最合適。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此做法保留隨機波動，不用預排或刪除資料製造各半表象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

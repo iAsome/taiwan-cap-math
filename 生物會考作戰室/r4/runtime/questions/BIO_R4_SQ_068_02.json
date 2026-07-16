@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_068_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S068",
+  "stem": "停止運動後的脈搏呈現何種趨勢？",
+  "options": [
+    "由72持續升到132",
+    "立即降為零並維持",
+    "由132逐步降到接近休息值",
+    "每個時點完全沒有變化"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "七十二到一百三十二描述運動前到運動後，不是停止後的恢復序列。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表中沒有任何時點為零，停止活動不等於心臟停止跳動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "停止後由一百三十二、104、84降到74，逐步接近休息七十二。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "各時點數值明顯不同，不能說恢復期間完全沒有變化。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "從運動後立即開始依時間閱讀，可看見脈搏逐段下降的恢復趨勢。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "六分鐘時仍比休息多兩次，宜說接近休息值而非宣稱完全相等。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

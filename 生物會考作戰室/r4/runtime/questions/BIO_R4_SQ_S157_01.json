@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S157_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S157"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S157",
+  "stem": "四週降雨與鳴叫資料顯示哪種現象？",
+  "options": [
+    "雨量低時鳴叫最多",
+    "本次紀錄中雨量較高的週次鳴叫較多",
+    "四週鳴叫完全相同",
+    "雨量與鳴叫方向相反"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "雨量只有2與5毫米的週次，鳴叫僅6與8次，並不是最多。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "雨量38與42毫米時鳴叫55與61次，在本次四週資料中同時較高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四週鳴叫次數為8、61、55、6，數值明顯不可能視為完全相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "雨量高的兩週鳴叫也高，雨量低的兩週鳴叫也低，方向並未相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取共同調查資料"
+  ],
+  "representationType": "時間資料表",
+  "misconceptionTargets": [
+    "把相關直接寫成因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "排序核對分別將四週雨量與鳴叫由低到高排列，兩欄高低次序大致一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "因果限制核對只描述本次資料的同向相關，不宣稱降雨已被證明是唯一原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

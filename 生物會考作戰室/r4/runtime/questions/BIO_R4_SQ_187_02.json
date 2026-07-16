@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_187_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S187",
+  "stem": "若螺體內有可追蹤的穩定標記，依紀錄最合理的後續傳遞順序為何？",
+  "options": [
+    "螺→附著藻→夜鷺",
+    "螺→夜鷺→吳郭魚",
+    "螺→水黽→落水小蟲",
+    "螺→吳郭魚→夜鷺"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "附著藻是螺的食物，標記不會依鏈條逆流。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "夜鷺先吃魚，不能再把標記逆傳回吳郭魚。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水黽那一段與螺沒有紀錄中的連接。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "吳郭魚吃螺且夜鷺吃魚，順序有直接證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "追蹤物質傳遞"
+  ],
+  "representationType": "標記推論",
+  "misconceptionTargets": [
+    "標記沿箭頭逆向移動"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "穩定標記會沿食物到攝食者傳遞，故先魚後夜鷺。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「螺→吳郭魚→夜鷺」只使用已觀察關係，沒有假設夜鷺直接吞食螺。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

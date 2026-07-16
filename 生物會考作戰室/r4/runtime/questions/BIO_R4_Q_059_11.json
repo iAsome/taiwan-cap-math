@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_059_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "人工膜一側氧20、另一側氧8，若膜可通透，預測何者正確？",
+  "options": [
+    "氧淨由8移向20",
+    "氧完全不動",
+    "氧淨由20移向8",
+    "氧先變成二氧化碳"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此方向由低濃度到高濃度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩側濃度不同會有淨移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "由高濃度20到低濃度8符合擴散。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "跨膜移動不會改變氣體種類。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "人工膜仍可使用濃度差規則，20側是高濃度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「氧淨由20移向8」是由高到低的唯一方向，無需把氧轉成其他物質。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

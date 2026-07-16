@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_192_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "圖例標示箭頭代表候鳥遷徙方向。看到甲地→乙地時，最合理的解讀為何？",
+  "options": [
+    "乙地攝食甲地",
+    "能量必由甲地進入乙地",
+    "甲地是生產者",
+    "候鳥由甲地移往乙地，不能直接當食物鏈"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "地點不是題述攝食關係中的生物。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "圖例只定義遷徙，不能改讀成能量傳遞。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "地點不屬於生產者這種生物角色。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "按圖例解讀移動方向，並限制食物鏈推論。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "依圖例限制箭頭意義"
+  ],
+  "representationType": "遷徙圖",
+  "misconceptionTargets": [
+    "所有箭頭都表示食物鏈"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "箭頭沒有跨圖通用的唯一意義，必須先依圖例判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「候鳥由甲地移往乙地，不能直接當食物鏈」忠實使用遷徙定義，也沒有加入不存在的攝食關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

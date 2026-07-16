@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_135_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某顯性表現個體沒有任何親子資料，基因型應先如何記錄？",
+  "options": [
+    "直接寫AA",
+    "保留AA或Aa兩種可能",
+    "直接寫aa",
+    "寫成沒有基因"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "外觀不足以排除Aa，不能直接寫AA。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "完全顯性下兩種基因型都符合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "aa應呈隱性表現，與題意衝突。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "顯性性狀表示相關基因資訊存在。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把所有顯性表現者直接定為AA"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「保留AA或Aa兩種可能」避免在證據不足時過早唯一化基因型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "後續若出現隱性子代或檢測資料，再排除其中一種。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

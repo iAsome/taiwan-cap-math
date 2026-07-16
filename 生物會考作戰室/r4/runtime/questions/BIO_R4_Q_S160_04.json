@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S160_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "共用未消毒注射針具最直接增加哪種風險？",
+  "options": [
+    "只有食物腐敗",
+    "只受室內通風影響",
+    "蚊蟲孳生",
+    "帶有血液的病原進入組織"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "針具使用不涉及食物保存，不能以腐敗描述人體暴露路徑。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "開窗不會移除針尖殘留血液，通風不是中斷穿刺暴露的直接措施。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "針具和容器積水不同，題幹沒有病媒幼蟲發育或叮咬過程。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "針尖可把殘留血液穿過皮膚帶入組織，形成直接血液暴露。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "連結針具與血液途徑"
+  ],
+  "representationType": "醫療安全",
+  "misconceptionTargets": [
+    "通風可阻斷所有途徑"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "屏障核對顯示穿刺繞過完整皮膚，讓污染物直接接觸體內組織。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "媒介核對把殘留血液鎖定為攜帶來源，解釋為何消毒與不共用針具重要。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

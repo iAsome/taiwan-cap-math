@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_076_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S076",
+  "stem": "若下次環境更熱且其他條件相同，最適合優先調整什麼？",
+  "options": [
+    "減少所有飲水",
+    "忽略汗液資料",
+    "把流失量改記為零",
+    "依增加的汗液流失規畫額外補水並持續監測"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "更熱常增加出汗，減少飲水可能使負收支更加明顯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "汗液是本表最大流失項，不能在高溫情境反而忽略。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "改寫紀錄不會讓真實水分停止流失，也破壞資料可信度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "按實測汗量調整並監測個人狀態，比固定補水量更合理。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "預測由機制出發：溫度升高可能提高汗量，因此需評估增加的流失。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "補水仍不可無限制，長時間大量出汗時也需考慮鹽分與專業健康建議。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

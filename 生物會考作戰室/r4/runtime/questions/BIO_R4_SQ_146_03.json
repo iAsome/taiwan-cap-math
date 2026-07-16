@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ_146_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S146"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST146",
+  "stem": "若兩棲地間甲蟲大量互相遷移，預測時需加入什麼？",
+  "options": [
+    "只保留捕食資料並忽略遷移",
+    "估計遷入版本對各地體色比例的補充作用",
+    "刪除所有不合預期比例",
+    "假定遷入個體沒有體色"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "遷移能直接改變版本頻率，不能忽略。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "版本流動可能抵銷各地天擇造成的分化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除資料會遮蔽選擇和遷移共同結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遷入個體同樣具有體色與遺傳版本。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把天擇視為族群比例的唯一機制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-003",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-016",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-049"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「估計遷入版本對各地體色比例的補充作用」承認族群比例由多種機制共同影響，不由繁殖差異單獨決定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "可用標記追蹤來源並建立遷移率，檢查各地選擇是否仍足以維持差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

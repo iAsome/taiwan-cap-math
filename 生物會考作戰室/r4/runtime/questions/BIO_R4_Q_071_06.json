@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_071_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "病人與健康者都常檢出微生物甲，最適當的初步結論為何？",
+  "options": [
+    "甲一定是唯一病因",
+    "僅由檢出尚不能判定甲致病",
+    "健康者的資料必定造假",
+    "甲能治療所有疾病"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "健康者也常檢出，使甲為唯一病因的說法缺少差異證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "共同檢出只證明存在，仍需菌量、位置與暴露實驗等資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "健康者有微生物可能是正常狀態，不能無證據宣稱資料造假。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "是否致病都尚未確定，更不能推論甲可治療所有疾病。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "存在與致病是兩個不同命題，需檢查患病風險是否隨甲而改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "下一步可比較菌量、菌株特徵與時間順序，而非先下絕對結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

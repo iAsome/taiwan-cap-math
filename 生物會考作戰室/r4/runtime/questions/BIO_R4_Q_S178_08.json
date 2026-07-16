@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S178_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲株缺水時捲葉，乙株不捲；甲存活率較高。要判斷捲葉是否有保水效益，還需優先測什麼？",
+  "options": [
+    "兩株花色是否相同",
+    "盆器價格",
+    "研究者姓名",
+    "葉面失水量與葉溫，並控制品種和供水"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "花色不能直接量化捲葉前後水分收支。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "盆器價格不是植物生理效益的性能指標。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "研究者姓名不會建立捲葉與存活的作用機制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "直接測失水與熱狀態，並控制背景，才能連結反應和保水。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "設計效益檢驗"
+  ],
+  "representationType": "研究評估",
+  "misconceptionTargets": [
+    "存活相關即證明單一機制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "機制核對捲葉若降低暴露面，應先呈現單位時間失水下降。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "因果核對控制品種與供水，可排除甲乙原本耐旱差異造成存活差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

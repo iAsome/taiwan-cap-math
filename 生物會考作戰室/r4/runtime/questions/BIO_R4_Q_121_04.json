@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪一個配子組合可形成XX受精卵？",
+  "options": [
+    "Y卵與Y精子",
+    "Y卵與X精子",
+    "X卵與Y精子",
+    "X卵與X精子"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "基礎模型中沒有Y卵，且YY也不是XX。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "基礎模型中卵不提供Y，組合也非XX。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "X與Y結合會形成XY而非XX。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個配子各提供X，合併後形成XX。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "不會由配子符號組合受精卵"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "形成XX需要卵與精子各提供一條X，「X卵與X精子」完全符合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "逐項相加染色體即可排除含Y或虛構Y卵的其他選項。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

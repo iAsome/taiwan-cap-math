@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_SQ_143_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST143",
+  "stem": "若乙改用鐵路使運輸耗能降為四十單位，應如何更新評估？",
+  "options": [
+    "重算乙的淨能源與排放，再用相同產出比較",
+    "只改生命週期排放名稱",
+    "直接宣稱乙在所有指標都最佳",
+    "沿用舊結論且不必重算"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "以新數據重算才能判斷方案結論是否因運輸改變。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱修改不會反映實際能源收支與排放變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "淨能源可能改善，但其他排放和條件仍需實測。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "運輸投入大幅改變會影響原有排序，不能沿用舊值。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "條件改變後仍沿用舊方案排序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「重算乙的淨能源與排放，再用相同產出比較」展現敏感度分析概念，讓決策隨關鍵條件的新證據更新。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "還需確認鐵路建設、轉運與實際距離是否納入同一生命週期邊界。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

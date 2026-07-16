@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_075_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "腎臟功能正常但流入腎臟血量大減，可能有何結果？",
+  "options": [
+    "尿素送達增加",
+    "單位時間尿素清除可能下降",
+    "糞便完全停止形成",
+    "肺部不再換氣"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "供血量下降通常使送達腎臟的尿素量減少，而不是增加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "腎臟只能處理流經的血液，血流少可能限制單位時間清除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "腎血流變化不能直接使大腸的糞便形成完全停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肺換氣有自己的呼吸機制，不會只因腎血流下降就停止。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "器官功能正常仍需要足夠物質送達，運輸可成為整體流程的限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若血中尿素升高且腎血流低，需同時評估血流和腎組織功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

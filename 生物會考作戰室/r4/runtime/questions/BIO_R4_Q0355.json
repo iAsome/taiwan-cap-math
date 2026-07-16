@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0355",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲條起始十克增一克，乙條起始二十克也增一克。哪項比較較合理？",
+  "options": [
+    "兩者相對變化完全相同",
+    "乙條變化百分比較大",
+    "甲條百分比增加較大",
+    "不能計算任何變化"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "相同一克相對於不同起始質量，比例不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙為一除以二十，百分比小於甲。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲增百分之十，乙增百分之五，因此甲相對變化較大。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "起始與變化量都有提供，可以計算百分比。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "百分比計算"
+  ],
+  "representationType": "數值比較",
+  "misconceptionTargets": [
+    "克數相同即影響同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "百分比變化等於變化量除以起始量再乘百分之百。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較不同大小試材時，相對值通常比相同克數更公平。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

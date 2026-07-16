@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S098_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S098"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S098",
+  "stem": "哪個狀態最符合主動屈肘？",
+  "options": [
+    "三種狀態都沒有測得任何肌肉張力",
+    "狀態乙：後側肌肉張力較高且肘角變大",
+    "狀態丙：兩側維持張力但肘角不變",
+    "狀態甲：前側肌肉張力較高且肘角變小"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三種狀態都測得肌肉張力，並非全無張力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "狀態乙的肘角變大，屬伸展方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "狀態丙的肘角維持不變，沒有呈現主動屈曲。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "狀態甲的前側張力較高且肘角變小。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "混淆屈伸方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主動屈肘須同時看到肘角變小與前側屈肌張力較高，狀態甲符合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "狀態乙的角度變大、狀態丙角度不變，都不符合主動屈肘結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

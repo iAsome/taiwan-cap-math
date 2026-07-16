@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某人十五秒脈搏為十八次，換算每分鐘最接近多少？",
+  "options": [
+    "三十六",
+    "七十二",
+    "九十",
+    "一百零八"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三十六只乘以二，對應三十秒資料而不是十五秒資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "六十秒是十五秒四倍，十八乘四可得每分鐘七十二次。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "九十不是十八依正確時間倍數換算的結果，缺乏計算依據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百零八相當於乘六，適用於十秒資料而非十五秒資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先算六十除以十五等於四，再把計數十八乘四得到七十二。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "換算後的每分鐘單位可與其他心跳或脈搏速率資料直接比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

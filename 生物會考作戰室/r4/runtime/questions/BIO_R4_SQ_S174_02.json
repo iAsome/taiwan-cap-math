@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S174_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S174",
+  "stem": "由正午到傍晚，哪項推論最合理？",
+  "options": [
+    "光變弱使光合作用優勢縮小，淨交換接近零",
+    "呼吸一定增加九倍",
+    "葉綠體全部消失",
+    "二氧化碳不再參與任何作用"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩氣體淨量都由大幅度縮至一，符合光合速率下降。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料只給淨值，不能直接算呼吸增加倍數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "短時間光弱不會讓所有葉綠體從細胞中消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "二氧化碳仍有負一淨交換，不能說完全不參與。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析光強變化"
+  ],
+  "representationType": "趨勢推理",
+  "misconceptionTargets": [
+    "淨值可直接等於呼吸量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "幅度核對氧由九降一、碳由負八變負一，兩者都靠近零。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "條件核對主要改變是光強，最直接影響需光的光合作用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

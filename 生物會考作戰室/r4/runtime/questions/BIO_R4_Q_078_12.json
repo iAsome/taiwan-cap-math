@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_078_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "藥物阻斷汗腺接收神經指令，炎熱時最可能如何？",
+  "options": [
+    "體溫受器完全消失",
+    "荷爾蒙全部變成汗",
+    "腎臟停止所有功能",
+    "中樞可發訊號但汗腺反應下降"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "藥物作用在汗腺接收端，不表示體溫受器構造完全消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "化學訊號不會整體轉變成汗液，汗仍由汗腺細胞分泌。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "汗腺神經阻斷不會直接使腎臟所有功能完全停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "控制端可能正常偵測並發令，但效應器無法充分接收而少汗。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "依藥物阻斷位置定位，問題在訊號到效應器的連接而非感受或中樞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可同步記錄神經活動和汗量，驗證有指令但器官反應不足的推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

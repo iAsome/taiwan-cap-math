@@ -1,0 +1,132 @@
+{
+  "id": "BIO_R4_L_S203",
+  "subject": "biology",
+  "unitId": "BIO_R4_U28",
+  "skillId": "BIO_R4_S203",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S202"
+  ],
+  "objectives": [
+    "分析保護區、棲地復育與永續利用各自需要的條件。",
+    "依監測結果調整保育措施，辨認只掛名或缺少基線的方案。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S203_SEC_01",
+      "title": "保護區需有效管理",
+      "content": "劃設範圍可限制開發與捕捉，但成效還取決於邊界位置、棲地品質、執法、周邊壓力與在地參與。只有名稱而沒有管理資源，可能成為紙上保護區。"
+    },
+    {
+      "id": "BIO_R4_L_S203_SEC_02",
+      "title": "復育要移除退化原因",
+      "content": "種樹、補水或移除障礙之前，應先確認棲地為何退化。若污染仍持續輸入，只增加生物個體往往無法恢復環境功能。"
+    },
+    {
+      "id": "BIO_R4_L_S203_SEC_03",
+      "title": "永續利用需有補充與限制",
+      "content": "可利用量必須低於資源更新能力，並保留繁殖個體與關鍵季節。配額要依標準化族群資料調整，不能把一次高產量固定成永久上限。"
+    },
+    {
+      "id": "BIO_R4_L_S203_SEC_04",
+      "title": "成效監測與調適",
+      "content": "保育前先建立基線，再設定可量測目標、時間與預警值。若結果未達標，應分析原因並調整措施，而不是只報告投入經費或施工數量。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S203_EX_01",
+      "prompt": "保護區內仍持續盜獵，為何劃界不足？",
+      "steps": [
+        "邊界限制開發但未自動阻止違法行為。",
+        "需巡護、執法與社區合作降低直接死亡。"
+      ],
+      "answer": "缺少有效管理。",
+      "why": "保護區是工具而非結果，只有實際降低威脅並維持棲地才算發揮作用，還要用巡護紀錄驗證盜獵壓力下降。"
+    },
+    {
+      "id": "BIO_R4_L_S203_EX_02",
+      "prompt": "河川持續排污時大量放魚，能否稱完整復育？",
+      "steps": [
+        "魚死亡原因可能仍存在。",
+        "先處理污染並恢復水質與棲地。"
+      ],
+      "answer": "不能。",
+      "why": "未移除退化原因就補充個體，可能重複死亡，也不能恢復水域生態功能；必須先停止污染源並確認水質改善。"
+    },
+    {
+      "id": "BIO_R4_L_S203_EX_03",
+      "prompt": "採集配額如何隨族群下降資料調整？",
+      "steps": [
+        "確認方法一致且下降真實。",
+        "降低或暫停採集並保留繁殖補充。"
+      ],
+      "answer": "採調適性降低配額。",
+      "why": "永續利用不是固定採集權，而是依族群承受能力與不確定性持續調整，避免採取量超過當年繁殖補充量。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "劃成保護區就會自動復原。",
+      "whyWrong": "污染、外來種、盜獵與棲地退化仍可能在區內持續。",
+      "correction": "設定威脅指標、投入管理資源並定期公開成效。"
+    },
+    {
+      "belief": "復育就是種越多生物越好。",
+      "whyWrong": "物種不合地點或壓力未移除，增加個體可能失敗甚至造成衝擊。",
+      "correction": "先找退化原因，選本地適生物種並監測存活與功能。"
+    },
+    {
+      "belief": "永續配額訂一次後永遠不變。",
+      "whyWrong": "資源量、繁殖率與環境會變，固定配額可能超過更新能力。",
+      "correction": "依年度標準化族群量、繁殖補充資料與預警值調整採集量。"
+    },
+    {
+      "belief": "投入經費等於生態成效。",
+      "whyWrong": "支出只代表投入，不能證明物種、棲地或功能已改善。",
+      "correction": "把施工與經費另列，成效用生物與環境指標驗證。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "何謂紙上保護區？",
+      "answer": "有名義範圍但缺少有效管理。",
+      "reason": "若威脅未下降、棲地未維持，行政劃界本身不能保證成效。"
+    },
+    {
+      "prompt": "復育前為何要先找退化原因？",
+      "answer": "措施才能對準限制因素。",
+      "reason": "若持續壓力未移除，補植或放流可能無法存活與建立。"
+    },
+    {
+      "prompt": "永續利用配額最應依什麼調整？",
+      "answer": "標準化族群與繁殖補充資料。",
+      "reason": "採取量必須隨資源更新能力變動，不能永久固定。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

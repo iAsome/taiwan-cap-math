@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S100_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S100",
+  "stem": "哪種方式的腰背相對張力最低？",
+  "options": [
+    "方式乙：箱子離腰部較遠，相對張力71",
+    "方式甲：箱子靠近腰部，相對張力42",
+    "方式丙：箱子最遠離腰部，相對張力78",
+    "三種搬運方式的腰背相對張力完全相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "方式乙的張力為71，明顯高於甲的42。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "方式甲的張力42，是三者最低值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "方式丙的張力78，是三者最高值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三個張力分別為42、71與78，數值並不相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "誤讀張力大小"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "方式甲相對張力四十二，低於方式乙七十一與方式丙七十八。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "箱子最靠近腰部可縮短力臂，與方式甲張力最低的資料相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "BIO_R4_ST_S057",
+  "subject": "biology",
+  "skillId": "BIO_R4_S057",
+  "type": "airflow-trace",
+  "content": {
+    "title": "吸入微粒定位紀錄",
+    "text": "研究模型以無害標記微粒模擬吸入空氣，依時間記錄微粒位置。微粒只沿呼吸道管腔前進，不進入食道或消化器官；到達肺泡後停止追蹤。",
+    "note": "時間只代表出現先後，不用來比較各段氣流速度。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格依時間列出微粒在鼻腔、咽、氣管、支氣管與肺泡的位置。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "時間",
+        "位置"
+      ],
+      "rows": [
+        [
+          "0秒",
+          "鼻腔"
+        ],
+        [
+          "1秒",
+          "咽"
+        ],
+        [
+          "2秒",
+          "氣管"
+        ],
+        [
+          "3秒",
+          "支氣管"
+        ],
+        [
+          "5秒",
+          "肺泡"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

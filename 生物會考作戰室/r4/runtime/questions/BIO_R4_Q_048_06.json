@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_048_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "只記錄每分鐘產物量的實驗，可直接回答哪個問題？",
+  "options": [
+    "受質總能量是否加倍",
+    "酵素是否改變產物形成速率",
+    "酵素的所有原子來源",
+    "人體是否完全不需養分"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未直接測量能量，不能判斷加倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "每分鐘產物量就是反應速率指標。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "產物速率不會提供所有原子來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一反應不能回答整體營養需求。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "測量項目決定可回答範圍，每分鐘產物量直接對應形成速率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「酵素是否改變產物形成速率」與資料一致，「受質總能量是否加倍」、「酵素的所有原子來源」、「人體是否完全不需養分」都超出實驗變因與觀察。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

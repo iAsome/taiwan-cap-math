@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S096_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S096"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "設計機械手指時，希望能彎曲又不會向側面過度偏移，最適合採用哪項仿生原理？",
+  "options": [
+    "取消轉動連接並完全焊死",
+    "只增加驅動馬達，不設任何限制",
+    "設置主要屈伸轉軸，並加上限制側向位移的固定帶",
+    "讓硬桿本身主動縮短"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "完全焊死會使手指失去彎曲能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只有動力而無限制會增加不受控位移。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "轉軸提供活動，固定帶則模擬韌帶穩定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "硬桿對應骨骼，不需以主動縮短產力。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "仿生關節"
+  ],
+  "representationType": "遷移應用",
+  "misconceptionTargets": [
+    "動力愈大即可控制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "設計同時滿足活動與穩定兩項需求，符合關節系統的功能分工。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "固定帶不是取消活動，而是限制不需要的方向並保留主要屈伸。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0165",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "十倍目鏡不變，物鏡由十倍換四十倍，總倍率變成原來幾倍？",
+  "options": [
+    "四倍",
+    "兩倍",
+    "十倍",
+    "四十倍"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "物鏡倍率變為四倍，目鏡相同，所以總倍率也變四倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十到四十不是兩倍，而是四倍關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "目鏡十倍在前後都相同，不影響倍率比值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四十倍是新物鏡本身，不是前後總倍率倍數。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比例推理"
+  ],
+  "representationType": "倍率變化",
+  "misconceptionTargets": [
+    "總倍率比值誤算"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "前後總倍率分別為一百與四百，四百是一百的四倍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "固定的目鏡因子在比值中相消，變化由物鏡四倍關係決定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

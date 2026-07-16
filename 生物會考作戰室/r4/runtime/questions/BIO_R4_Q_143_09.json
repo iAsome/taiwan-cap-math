@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_143_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "運輸距離增加後某生質燃料淨能源轉為負值，表示什麼？",
+  "options": [
+    "在該距離下流程投入已超過能源產出",
+    "燃料的總熱值必定等於零",
+    "原料一定不是生物來源",
+    "所有近距離方案也必定失敗"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "淨值為負表示取得與轉換耗能大於最後產能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "燃料仍可有熱值，只是完整流程消耗更多能源。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "淨能源表現不能反推原料是否具有生物來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "距離是條件之一，近距離可能有不同收支結果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "混淆燃料熱值與完整流程淨能源"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「在該距離下流程投入已超過能源產出」正確解讀淨值，也顯示場址與運輸規劃會改變方案可行性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "應做距離敏感度分析，找出淨值由正轉負的範圍而非只報單點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

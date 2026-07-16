@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0460",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "一公分長組織由十微米細胞沿直線緊密排列，理想化約可排多少個？",
+  "options": [
+    "十個",
+    "一百個",
+    "一萬個",
+    "一千個"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "十個十微米細胞沿直線排列只占一百微米，遠短於一公分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一百個十微米細胞沿直線排列只占一毫米，仍短於一公分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一萬個十微米細胞沿直線排列會占十公分，超過題幹長度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "一公分是一萬微米，除以十為一千。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "線性估算"
+  ],
+  "representationType": "數值情境",
+  "misconceptionTargets": [
+    "公分微米漏換"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "答案是一維緊密排列估算，不是組織細胞總數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "真實組織中的細胞還有形狀、間隙與排列方向差異，不能把估算當精確總數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

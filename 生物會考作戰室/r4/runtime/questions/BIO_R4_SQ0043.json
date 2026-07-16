@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ0043",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST015",
+  "stem": "甲細胞的實際長度估算為多少？",
+  "options": [
+    "四十微米",
+    "二十微米",
+    "十微米",
+    "一百微米"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "四十微米為兩倍比例尺，與甲資料相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二十微米是整段比例尺，不是甲的一半。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "零點五乘二十微米等於十微米。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一百微米遠大於甲的零點五倍關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "比例計算"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "直接使用螢幕公分"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "甲的螢幕長度為比例尺一半，實際長度也取二十微米的一半。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "使用倍數而非螢幕公分，可保留正確的微米單位。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

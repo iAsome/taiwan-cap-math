@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "夏季泳池人數與冰品銷量都增加，最合理解釋為何？",
+  "options": [
+    "游泳必定造成買冰",
+    "冰品必定造成游泳",
+    "兩者完全相同",
+    "高溫可能同時影響兩者"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料沒有追蹤游泳者是否因游泳才購買冰品，不能宣稱必然。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "銷量上升也不表示吃冰直接迫使所有人去泳池。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "人數與銷量是不同變項，即使趨勢同向也不會變成相同事物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "高溫可同時增加消暑活動與冰品需求，形成共同第三因素。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨識共同原因"
+  ],
+  "representationType": "生活數據",
+  "misconceptionTargets": [
+    "同步上升必互為因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "第三因素核對加入氣溫後，可同時解釋兩個趨勢而不要求彼此因果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "個體資料核對指出總量相關未連結同一人的購買與游泳，限制更強結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

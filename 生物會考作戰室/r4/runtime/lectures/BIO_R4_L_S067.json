@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S067",
+  "subject": "biology",
+  "unitId": "BIO_R4_U09",
+  "skillId": "BIO_R4_S067",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S066"
+  ],
+  "objectives": [
+    "比較動脈、靜脈與微血管的血流方向及主要構造",
+    "依血管構造與連接位置推論承壓、回流或物質交換功能"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S067_SEC_01",
+      "title": "動脈將血送離心臟",
+      "content": "動脈承接心臟收縮送出的血液，管壁通常較厚且富彈性，可承受較高壓力。動脈會逐漸分支成較細血管，最後連接微血管。"
+    },
+    {
+      "id": "BIO_R4_L_S067_SEC_02",
+      "title": "靜脈將血送回心臟",
+      "content": "靜脈由微血管端匯集血液並送回心臟，壓力通常較低，部分靜脈具有瓣膜，可減少血液倒流。靜脈的分類仍依回心方向。"
+    },
+    {
+      "id": "BIO_R4_L_S067_SEC_03",
+      "title": "微血管進行交換",
+      "content": "微血管管徑小、管壁很薄，分布在組織細胞附近。氧氣、養分、二氧化碳與部分廢物可在微血管和組織之間移動，是循環物質交換的主要場所。"
+    },
+    {
+      "id": "BIO_R4_L_S067_SEC_04",
+      "title": "構造配合功能",
+      "content": "動脈厚而有彈性的管壁配合較高壓力；靜脈較大的管腔與瓣膜協助低壓回流；微血管薄壁與廣泛分支則縮短交換距離。判讀時要把構造證據與血流方向一起使用。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S067_EX_01",
+      "prompt": "未知血管血流離開心臟且管壁厚，應判為何者？",
+      "steps": [
+        "先依血流方向分類",
+        "再用厚壁承壓特徵驗證"
+      ],
+      "answer": "動脈",
+      "why": "離開心臟是動脈的定義，厚而有彈性的管壁也適合承受心臟收縮產生的較高壓力，因此方向與構造證據彼此一致。"
+    },
+    {
+      "id": "BIO_R4_L_S067_EX_02",
+      "prompt": "腿部某血管內有瓣膜，最可能協助哪項功能？",
+      "steps": [
+        "確認瓣膜可阻止反向流動",
+        "連結腿部低壓回心的需求"
+      ],
+      "answer": "協助靜脈血回流並減少倒流",
+      "why": "腿部靜脈血需克服重力回到心臟，靜脈瓣膜可在血液向上移動後關閉，降低倒流機會；瓣膜並不是用來加厚交換壁。"
+    },
+    {
+      "id": "BIO_R4_L_S067_EX_03",
+      "prompt": "哪種血管最適合讓氧氣移到附近細胞？",
+      "steps": [
+        "找出血管與細胞最接近的位置",
+        "比較管壁厚薄對擴散距離的影響"
+      ],
+      "answer": "微血管",
+      "why": "微血管廣泛分布在細胞附近，且管壁極薄，可縮短物質跨壁移動距離；大型動脈與靜脈主要負責運輸，並非大多數組織交換面。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "動脈一定含氧較多，靜脈一定含氧較少",
+      "whyWrong": "肺動脈與肺靜脈的含氧情形正好不符合此種絕對說法。",
+      "correction": "先以離心或回心方向分類，再依循環位置判斷血液含氧狀態。"
+    },
+    {
+      "belief": "微血管壁越厚越能提高交換效率",
+      "whyWrong": "壁越厚會增加擴散距離，使氣體和小分子通過更困難。",
+      "correction": "微血管薄壁與細密分布可縮短交換距離，有利物質進出組織。"
+    },
+    {
+      "belief": "靜脈瓣膜會主動收縮，把血液像心臟一樣泵走",
+      "whyWrong": "瓣膜主要被動開閉以防倒流，不會像心肌一樣提供主要推力。",
+      "correction": "靜脈回流由多種因素協助，瓣膜的角色是維持較正確的流向。"
+    },
+    {
+      "belief": "大型動脈是所有組織物質交換的主要場所",
+      "whyWrong": "大型動脈壁較厚且離多數細胞較遠，不利直接交換。",
+      "correction": "動脈負責快速輸送，主要交換則在薄壁且貼近細胞的微血管。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "血液離開心臟時流經哪類血管？",
+      "answer": "動脈",
+      "reason": "動脈的分類依據就是血液由心臟向外流動，而不是依含氧量命名。"
+    },
+    {
+      "prompt": "靜脈瓣膜的主要作用是什麼？",
+      "answer": "減少血液倒流",
+      "reason": "瓣膜順著回心方向開啟，血液想反向流動時關閉以協助維持回流。"
+    },
+    {
+      "prompt": "微血管適合交換物質的構造原因為何？",
+      "answer": "管壁薄且接近組織細胞",
+      "reason": "薄壁縮短跨膜距離，細密分布又使血液能靠近需要交換的細胞。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_CIRCULATION"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S092_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究記錄某人甲狀腺素濃度偏低，同時觀察到耗氧量下降與體溫偏低。哪項推論最符合資料？",
+  "options": [
+    "甲狀腺素濃度愈低，所有器官必定愈健康",
+    "耗氧量下降證明細胞完全停止代謝",
+    "體溫變化只可能由外界氣溫造成",
+    "甲狀腺素不足可能使代謝速率降低，連帶減少產熱"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "激素過低可能造成生理失衡，不能視為健康證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "耗氧量下降代表代謝可能變慢，不表示完全停止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "外界溫度會影響體溫，但資料還顯示激素與耗氧量改變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "代謝變慢可使能量釋放與產熱減少，符合兩項觀察。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合資料"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "把相關現象推成絕對結果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲狀腺素偏低、耗氧下降及體溫偏低形成一致的代謝證據鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料可支持代謝變慢的解釋，但不能宣稱細胞代謝已完全停止。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

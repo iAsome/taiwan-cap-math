@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "參考範圍36.4至37.4度，測得38.0度，何者正確？",
+  "options": [
+    "低於範圍",
+    "剛好在範圍內",
+    "高於範圍",
+    "一定是儀器壞掉"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三十八高於下限，不可能描述成低於整個範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三十八大於上限三十七點四，並不在範圍內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "讀值超過上限，可描述為本次體溫高於參考範圍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "超界可能是真實或誤差，單筆資料不能確定儀器一定故障。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "數值與上限單位相同，可直接比較並判定高於範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "下一步可重測與觀察症狀，但不應在題目證據之外自行確定病因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

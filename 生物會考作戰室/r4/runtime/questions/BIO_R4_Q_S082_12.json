@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S082_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某溫室警報流程為溫度上升→感測器→控制主機→蜂鳴器。若要類比人體完整反應，還應在主機與蜂鳴器之間明確補上什麼？",
+  "options": [
+    "另一個溫度刺激",
+    "接收刺激的受器",
+    "形成知覺的受試者",
+    "傳送主機命令的輸出線路"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同一反應不需在命令形成後再加入另一刺激。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "感測器已對應受器，不能重複放在主機之後。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "警報系統不需加入受試者才能描述輸出路徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "主機命令需經輸出線路到蜂鳴器，近似傳出神經。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "模型修正",
+    "遷移"
+  ],
+  "representationType": "系統流程",
+  "misconceptionTargets": [
+    "省略中樞到動器官的傳出路徑"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-009",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-012"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "人體中樞與動器官之間有傳出路徑，類比模型應補同功能元件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "溫度刺激與感測器已在主機前方，受試者也不是輸出元件；主機到蜂鳴器之間缺的是命令傳輸線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

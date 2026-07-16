@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ_208_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S208"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S208",
+  "stem": "哪項敘述最符合這組資料？",
+  "options": [
+    "所有生物濃度相同",
+    "污染物濃度沿營養階層升高",
+    "浮游植物濃度最高",
+    "水鳥製造污染物"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表中四種生物的濃度數值明顯不同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "四階層濃度由0.02依序升到8.10 mg/kg。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "浮游植物的0.02是最低值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "高濃度不能證明水鳥製造污染物。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "沿營養階層比較濃度"
+  ],
+  "representationType": "食物鏈濃度表",
+  "misconceptionTargets": [
+    "單一高值就等於生物放大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先確認單位一致，再沿攝食順序比較濃度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "沿連續營養階層穩定上升的濃度趨勢，支持生物放大。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

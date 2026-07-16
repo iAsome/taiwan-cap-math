@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_076_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S076",
+  "stem": "本次水分淨變化最接近何者？",
+  "options": [
+    "增加2600毫升",
+    "增加400毫升",
+    "減少400毫升",
+    "完全平衡"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二千六百是攝取與流失總量相加，並非淨變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "淨值為負而不是正，不能判成增加四百毫升。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "攝取一千一百減流失一千五百，得到負四百毫升。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩個總量相差四百，並沒有達到完全平衡。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "使用攝取減流失公式，負值表示本次健行估計淨失水。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結果含估計誤差，但流失高於攝取的方向仍可作為補水評估線索。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

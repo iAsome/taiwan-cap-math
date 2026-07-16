@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "標本符合1b，而1b指示前往第3步。接下來應讀哪裡？",
+  "options": [
+    "重新讀1a",
+    "第3對敘述",
+    "直接猜名稱",
+    "檢索表最後一行"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "1a與1b互斥，標本已符合1b，就沒有理由返回被排除的1a重新選擇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "1b的明確指示是前往第3步，因此接著要比較第3對特徵敘述。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "第1步尚未給出名稱終點，此時猜測會跳過區分標本所需的後續證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "最後一行不一定屬於1b路徑，任意跳過第3步會破壞檢索順序。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "追蹤檢索路徑"
+  ],
+  "representationType": "步驟指示",
+  "misconceptionTargets": [
+    "選完後任意跳步"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "箭頭核對直接從1b讀到數字3，因此接著讀第3對敘述才符合路徑指示。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "程序核對確認目前只完成第一對選擇，尚需第3對證據才可能抵達辨識終點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0251",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "三維細胞模型在平板上可任意旋轉，介面應如何維持標示正確？",
+  "options": [
+    "標籤固定在螢幕左上角",
+    "旋轉後隨機重命名",
+    "讓標籤綁定構造本身而非螢幕方位",
+    "只允許一個觀看方向"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "固定螢幕角落會在模型旋轉後失去指向。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "隨機命名破壞構造身分與學習一致性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "綁定構造可讓指線隨旋轉仍指向同一物件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "限制視角會失去三維模型探索空間關係的價值。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "技術設計"
+  ],
+  "representationType": "互動模型",
+  "misconceptionTargets": [
+    "標籤綁版面方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "細胞構造身分不隨攝影機改變，標籤資料應附著在物件座標。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這項設計保留旋轉自由，也能持續呈現正確包圍關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

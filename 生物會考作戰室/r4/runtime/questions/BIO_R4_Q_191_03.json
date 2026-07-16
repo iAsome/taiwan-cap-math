@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_191_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要判斷一種鳥是否有替代食物，應優先查看食物網的哪項資訊？",
+  "options": [
+    "鳥節點的字體大小",
+    "圖紙的背景顏色",
+    "所有指向鳥的箭頭",
+    "鳥名稱的筆畫數"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "字體大小若無圖例不代表食物種類。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "背景顏色不是攝食關係的科學資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "入箭頭列出能量流入鳥的已知食物來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "名稱筆畫與鳥的實際食性沒有關係。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨認替代食物"
+  ],
+  "representationType": "食物網判讀",
+  "misconceptionTargets": [
+    "只看生物名稱判食性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "食物會以箭頭指向攝食者，故應檢查鳥的全部入箭頭。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「所有指向鳥的箭頭」能直接辨認替代路徑，其餘皆是無關的版面特徵。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

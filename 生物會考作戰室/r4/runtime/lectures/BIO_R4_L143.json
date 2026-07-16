@@ -1,0 +1,134 @@
+{
+  "id": "BIO_R4_L143",
+  "subject": "biology",
+  "unitId": "BIO_R4_U19",
+  "skillId": "BIO_R4_S143",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S142"
+  ],
+  "objectives": [
+    "用淨能源、土地、水與排放證據評估生質能源方案",
+    "比較生物處理的污染削減、資源投入、副產物與適用條件"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L143_SEC1",
+      "title": "生質能源的完整收支",
+      "content": "生質能源把植物、藻類或有機廢棄物轉為燃料，但評估不能只看燃燒時能量。栽培、肥料、灌溉、採收、運輸與轉換都要耗能並可能排放，應以產出減投入計算淨能源。"
+    },
+    {
+      "id": "BIO_R4_L143_SEC2",
+      "title": "原料來源與土地競爭",
+      "content": "使用農業廢棄物可減少與糧食競爭，但收集過多可能降低有機質回到土壤。若另闢土地種能源作物，還要評估棲地改變、水資源與糧價；原料相同名稱不代表各地影響相同。"
+    },
+    {
+      "id": "BIO_R4_L143_SEC3",
+      "title": "生物處理的條件限制",
+      "content": "微生物可分解有機污染物，但活性受溫度、酸鹼值、氧氣和毒性影響。有些污染物只被轉成另一物質，仍需檢查最終產物；處理速度、殘留濃度和菌株安全都是方案判準。"
+    },
+    {
+      "id": "BIO_R4_L143_SEC4",
+      "title": "以共同單位作決策",
+      "content": "比較方案時可用每百萬焦耳燃料的排放、每噸廢棄物的耗能或每公噸水的污染削減。共同功能單位能避免產量規模誤導，敏感度分析則可顯示運輸距離或原料含水量改變時結論是否穩定。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L143_EX1",
+      "prompt": "方案產出一百能量單位、栽培與轉換投入六十單位，淨能源多少？",
+      "steps": [
+        "確認產出與投入採相同能量單位",
+        "以總產出扣除全部製程投入"
+      ],
+      "answer": "淨能源為四十單位。",
+      "why": "淨能源不是只報一百的燃料熱值，扣除六十投入後才顯示方案真正增加的可用能量。"
+    },
+    {
+      "id": "BIO_R4_L143_EX2",
+      "prompt": "廚餘製沼氣可同時減廢與供能，還需檢查什麼？",
+      "steps": [
+        "量測收集運輸與反應槽所耗能源",
+        "記錄甲烷逸散、殘渣去向與替代處理效益"
+      ],
+      "answer": "需做完整能源與排放收支。",
+      "why": "沼氣產量是效益之一，但逸散甲烷與殘渣若未管理，可能抵銷部分優勢，故要擴大評估邊界。"
+    },
+    {
+      "id": "BIO_R4_L143_EX3",
+      "prompt": "菌株使污染物甲下降九成，產物乙卻具有毒性。方案是否完成處理？",
+      "steps": [
+        "追蹤甲被轉化後的物質去向",
+        "比較乙的濃度、毒性與後續去除方法"
+      ],
+      "answer": "不能只憑甲下降判定完成。",
+      "why": "污染物消失可能只是被轉換，若產物仍具危害，必須納入最終風險與後續處置才算完整評估。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "生質燃料燃燒來自植物，所以必定零排放。",
+      "whyWrong": "栽培、肥料、運輸與轉換都可能排放，土地改變也會影響碳收支。",
+      "correction": "以完整生命週期和共同能量單位比較，不只看燃燒階段。"
+    },
+    {
+      "belief": "能源產出越高，方案一定越有效率。",
+      "whyWrong": "若投入能源也大幅增加，高產出不代表淨能源或排放表現較佳。",
+      "correction": "計算產出減投入及能源回收比，再與替代方案公平比較。"
+    },
+    {
+      "belief": "污染物原本名稱消失，就代表環境完全安全。",
+      "whyWrong": "生物處理可能生成仍有毒的中間產物，或把污染移到污泥中。",
+      "correction": "追蹤最終產物、毒性與去向，不能只量起始污染物下降。"
+    },
+    {
+      "belief": "實驗室最有效的菌株在任何場址都同樣有效。",
+      "whyWrong": "現地溫度、酸鹼、氧氣與混合污染可能抑制菌株，規模也影響操作。",
+      "correction": "先做場址試驗並監測關鍵條件，再決定放大與維護方式。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "生質能源為何要計算運輸耗能？",
+      "answer": "運輸是取得燃料的必要投入。",
+      "reason": "原料距離與含水量會增加耗能，忽略後會高估方案的淨能源效益。"
+    },
+    {
+      "prompt": "污染物濃度下降後還要量測什麼？",
+      "answer": "轉化產物與毒性。",
+      "reason": "原物可能只是變成另一種物質，追蹤產物才能判斷危害是否真正降低。"
+    },
+    {
+      "prompt": "比較燃料方案時使用每百萬焦耳排放有何好處？",
+      "answer": "以相同能源服務公平比較。",
+      "reason": "共同功能單位排除總產量不同造成的誤導，能直接比較提供同等能量的負荷。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

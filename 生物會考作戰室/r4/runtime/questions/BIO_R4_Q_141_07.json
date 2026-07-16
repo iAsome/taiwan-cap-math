@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_141_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "評估油污生物處理時，哪組指標最完整？",
+  "options": [
+    "只記錄菌種名稱",
+    "只拍攝處理前照片",
+    "油污削減量、時間、耗能與副產物",
+    "只詢問操作員是否喜歡"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "菌種名稱不等於實際削減效果與資源投入。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單張前照沒有處理後對照，也無法量化污染變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "效果、速度、能源和後續處置共同反映整體效益。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "個人偏好不是污染物濃度或環境負荷的客觀資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "只看污染下降而忽略處理投入"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「油污削減量、時間、耗能與副產物」兼顧目標成果和可能轉移的環境成本，適合比較不同處理方案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料應以每噸土壤或每公升水等共同單位呈現，避免處理規模造成誤判。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

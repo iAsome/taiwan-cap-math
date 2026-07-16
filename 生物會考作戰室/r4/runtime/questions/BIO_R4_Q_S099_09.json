@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S099_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人能產生正常腿部肌力，但走在不平地面時常踩不穩；視覺正常，腳踝位置感覺回傳異常。哪項推論最合理？",
+  "options": [
+    "位置感覺不足使中樞較難即時修正落腳姿勢",
+    "肌力正常便能排除所有運動問題",
+    "腳踝骨骼必定完全消失",
+    "視覺正常代表不需其他感覺"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "缺少肢體位置資訊會降低地面變化下的修正。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "協調還需感覺回饋，不能只看肌力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目沒有骨骼消失的證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "視覺不能完全取代腳踝位置與受力資訊。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "位置感覺"
+  ],
+  "representationType": "整合推論",
+  "misconceptionTargets": [
+    "肌力正常等於動作正常"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "肌力保留但不平地面控制差，與位置回饋異常形成一致證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "運動表現包含力量與協調，兩者可被不同環節分別影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

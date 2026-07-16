@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_073_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S073"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "判斷某排出物屬排泄或排遺，最先應問什麼？",
+  "options": [
+    "出口名稱有幾個字",
+    "排出時聲音大小",
+    "物質是否由細胞代謝產生",
+    "容器是什麼顏色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱字數是文字特徵，無法判斷排出物生理來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "聲音大小與物質是否經細胞代謝沒有因果關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "來源若為細胞代謝廢物則屬排泄，否則需再判斷是否為食物殘餘。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "容器顏色不會改變排出物形成的生理過程。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "以來源作第一個判準，比只記出口位置更能處理不同器官的排出。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "確認是否為代謝產物後，再追蹤肺、腎或皮膚等排出途徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

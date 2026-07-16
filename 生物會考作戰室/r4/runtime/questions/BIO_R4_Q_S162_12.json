@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S162_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "污水處理看板要避免誤導，哪句最適合？",
+  "options": [
+    "微生物讓污染瞬間消失",
+    "加入任何菌都同樣有效",
+    "處理後永遠不需檢測",
+    "微生物轉換部分有機物，成效需監測且剩餘物仍要管理"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "處理需要時間且物質轉往其他形式，不能用瞬間消失描述。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "菌種功能與污染物、溫度及酸鹼值相關，不是任意加入都同效。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "出流水與污泥仍可能含剩餘污染，持續檢測是確認安全的必要資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "敘述同時交代轉換、量測與後續管理，符合微生物處理的能力及限制。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移公共環境說明"
+  ],
+  "representationType": "看板文字",
+  "misconceptionTargets": [
+    "微生物處理等於完全消失"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "物質守恆核對要求看板交代污染物轉換而非消失，保留污泥等可能去向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "操作責任核對加入成效監測與剩餘物管理，避免把生物處理描述成無條件完成。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

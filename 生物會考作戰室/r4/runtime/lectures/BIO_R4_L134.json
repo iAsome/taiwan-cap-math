@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L134",
+  "subject": "biology",
+  "unitId": "BIO_R4_U18",
+  "skillId": "BIO_R4_S134",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S133"
+  ],
+  "objectives": [
+    "能讀取家系資料中的世代、親子、手足與性狀資訊。",
+    "能區分圖例符號、親屬連線與遺傳推論。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L134_SEC1",
+      "title": "先讀圖例",
+      "content": "家系圖常用不同外框符號記錄生理性別，以填實或空白記錄是否具有研究性狀。符號意義必須依題目圖例，不可只憑顏色、位置或個人習慣猜測。"
+    },
+    {
+      "id": "BIO_R4_L134_SEC2",
+      "title": "再讀世代與編號",
+      "content": "世代通常由上到下排列並以羅馬數字標示，同世代個體再由左到右編號。完整代號如II-3同時指出第二世代與該世代第三名個體。"
+    },
+    {
+      "id": "BIO_R4_L134_SEC3",
+      "title": "辨認親屬關係",
+      "content": "配偶以水平關係相連，子代由共同的親代線向下連接；同一親代組合下的子代互為手足。線條表示家系關係，不等於性狀必然由某一人直接傳給另一人。"
+    },
+    {
+      "id": "BIO_R4_L134_SEC4",
+      "title": "分開觀察與推論",
+      "content": "由家系圖可直接讀出誰有性狀及親屬關係；基因型與遺傳模式則需結合顯隱性假設與多名個體資料推論。不要把未著色直接等同不帶隱性版本。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L134_EX1",
+      "prompt": "文字資料寫I-1與I-2為配偶，子代為II-1、II-2，II-1與II-2關係為何？",
+      "steps": [
+        "確認兩人同屬第二世代。",
+        "追蹤兩人是否來自同一親代組合。"
+      ],
+      "answer": "手足。",
+      "why": "兩個代號都由I-1與I-2這組共同親代向下連接，因此屬同一手足群，不是只因位置相鄰。"
+    },
+    {
+      "id": "BIO_R4_L134_EX2",
+      "prompt": "II-3符號填實，依圖例填實代表有性狀，可直接知道什麼？",
+      "steps": [
+        "先使用題目提供的填實圖例。",
+        "只陳述可直接觀察的表現資訊。"
+      ],
+      "answer": "II-3具有研究性狀。",
+      "why": "填實只直接表示表現型；若未提供遺傳規則，不能僅由此確定其完整基因型。"
+    },
+    {
+      "id": "BIO_R4_L134_EX3",
+      "prompt": "空白個體能否直接判定不帶隱性版本？",
+      "steps": [
+        "區分表現型與基因型。",
+        "考慮異型合子可能不呈隱性性狀。"
+      ],
+      "answer": "不能。",
+      "why": "若研究性狀為隱性，未表現的異型合子仍可攜帶該版本，需親屬資料進一步推論。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "家系圖中位置相近就一定是手足。",
+      "whyWrong": "手足必須由同一親代連線向下，不是只靠圖面距離判斷。",
+      "correction": "沿連線追蹤共同親代，再確認世代與編號，避免把鄰近位置當成親屬證據。"
+    },
+    {
+      "belief": "空白符號表示沒有任何相關基因。",
+      "whyWrong": "空白通常只表示未呈研究性狀，個體仍可能攜帶未表現版本。",
+      "correction": "把圖例當表現型資訊，基因型另由遺傳規則推論。"
+    },
+    {
+      "belief": "填實符號一定代表隱性基因型。",
+      "whyWrong": "填實只表示具有研究性狀，是否隱性取決於題目給定模式。",
+      "correction": "先確認研究性狀的顯隱性，再推論可能基因型。"
+    },
+    {
+      "belief": "連線表示性狀沿線直接流動。",
+      "whyWrong": "連線表示配偶或親子關係，不是基因像液體沿線移動。",
+      "correction": "遺傳推論要逐代列配子與基因型，不由線條方向猜測。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "II-4代號中的II表示什麼？",
+      "answer": "第二世代。",
+      "reason": "羅馬數字標示世代，後面的數字才是同世代個體編號。"
+    },
+    {
+      "prompt": "判斷手足應查看哪項資訊？",
+      "answer": "是否由同一親代組合向下連接。",
+      "reason": "共同親代連線是手足關係的直接家系證據。"
+    },
+    {
+      "prompt": "填實符號能否單獨確定完整基因型？",
+      "answer": "通常不能。",
+      "reason": "填實直接給表現型，基因型還需遺傳模式與親屬資料。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

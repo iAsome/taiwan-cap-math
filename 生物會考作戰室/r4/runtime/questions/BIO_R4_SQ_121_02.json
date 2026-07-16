@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_121_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST121",
+  "stem": "前兩次皆為XX，為何第3次仍可能為XY？",
+  "options": [
+    "前兩次把X卡變成Y卡",
+    "抽後放回，每次仍可能抽到Y精子卡",
+    "卵在第3次突然改帶Y",
+    "子宮替第3次增加Y"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "放回規則不會把X卡改成Y卡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "每次重新混合抽取，Y卡始終保有被抽中的機會。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "模型中的卵每次固定帶X，沒有改帶Y。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "子宮不參與受精時性染色體的新增。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "認為連續相同結果會排除下一次另一結果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "抽後放回使各次條件相同，所以連續XX後仍可抽到Y。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「抽後放回，每次仍可能抽到Y精子卡」正確使用獨立事件概念，其他項捏造卡片或器官改變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

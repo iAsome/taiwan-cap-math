@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0462",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "兩細胞直徑分別十二與二十四微米，哪項敘述正確？",
+  "options": [
+    "體積必定只差兩倍",
+    "後者直徑是前者兩倍",
+    "後者一定含兩個前者",
+    "功能重要性差兩倍"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若形狀相似，體積差可能遠大於兩倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "二十四除以十二為二，直接支持直徑比。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "尺寸比不能說一個細胞含另一個。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "大小沒有直接定義功能重要性。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "線性比較"
+  ],
+  "representationType": "數值題",
+  "misconceptionTargets": [
+    "直徑推全部"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題目只提供兩個直徑，因此只能對線性直徑下兩倍的結論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "避免把線性比值擴張成體積、包含或功能比值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

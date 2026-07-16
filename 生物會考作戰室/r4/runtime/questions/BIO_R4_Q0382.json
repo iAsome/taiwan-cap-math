@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0382",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要證明某通道參與離子恆定，哪項實驗較有力？",
+  "options": [
+    "只畫通道示意圖",
+    "阻斷通道並比較離子回復曲線與對照組",
+    "只記錄細胞顏色",
+    "詢問研究者相信哪個機制"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "示意圖能說明假設，不能證明真實功能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "操弄通道後若回復改變，可直接檢驗其因果角色。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "顏色若未校正為離子指標便不具直接性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "個人信念不能取代實驗比較。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "機制檢驗"
+  ],
+  "representationType": "研究設計",
+  "misconceptionTargets": [
+    "相關即因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "因果檢驗需改變候選機制並測量恆定結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同時檢查阻斷處理是否影響細胞存活，可排除非專一損傷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

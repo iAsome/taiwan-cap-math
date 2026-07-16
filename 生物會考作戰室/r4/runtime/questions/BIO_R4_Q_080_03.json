@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_080_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "生理值短暫離開平常值後回復，最合理說明為何？",
+  "options": [
+    "一定沒有調節",
+    "所有器官停止",
+    "調節可允許短暫波動",
+    "參考範圍不存在"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "數值能回復反而可能顯示調節反應有效，不能說一定沒有。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "器官若全部停止便難以產生使數值回復的反應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "刺激後偏離並逐步回復，符合動態恆定而非固定不動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "回復到平常狀態不會證明參考範圍不存在。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間序列比單點更能顯示系統是否把偏差帶回可接受範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "短暫超界仍需看幅度與風險，但不能只因改變便否定恆定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

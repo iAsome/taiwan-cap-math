@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ0045",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST015",
+  "stem": "影像整體縮小一半後，丙細胞估算值應如何？",
+  "options": [
+    "仍為五十微米",
+    "變成一百微米",
+    "縮成二十五微米",
+    "無條件變成五公分"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "丙仍為二點五倍二十微米，等於五十微米。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有生物生長或比例倍增的證據，不能變成一百。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "影像與比例尺同步縮小，比值不會減半。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "五公分是原螢幕顯示長度，不是細胞實際尺寸。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "縮放應用"
+  ],
+  "representationType": "影像處理",
+  "misconceptionTargets": [
+    "顯示縮放改變實物"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "整張圖等比例縮放後，細胞與比例尺仍維持二點五倍關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "實際尺寸由比例關係決定，不隨輸出圖片大小改變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

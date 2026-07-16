@@ -1,0 +1,91 @@
+{
+  "id": "BIO_R4_Q_133_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "Aa×aa的子代不可能出現哪種基因型？",
+  "options": [
+    "Aa",
+    "AA",
+    "aa",
+    "Aa與aa"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A配子與a配子可形成Aa。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "aa親代無法提供A，因此不能形成AA。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "a與a結合可形成aa子代基因型。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這正是兩種可能子代，不是不可能項。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未檢查子代每個版本的親代來源"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-010",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-047",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-015",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-019",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-014",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-012",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-030",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-025"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "形成AA需要雙親各給A，但aa親代只有a，「AA」唯一不可能。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "逐一追蹤版本來源即可排除，不需靠表現型猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

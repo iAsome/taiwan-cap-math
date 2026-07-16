@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0200",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S017"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一個多細胞生物死亡後，為何不能只看外形判斷每個細胞狀態？",
+  "options": [
+    "所有細胞狀態永遠相同",
+    "外形能顯示每個分子",
+    "死亡後細胞一定立刻消失",
+    "不同細胞可能在不同時間失去功能，需細胞層次證據"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不同組織供氧與損傷程度不同，不能假定完全同步。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "巨觀外形無法直接呈現每個細胞與分子的狀態。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "細胞構造不會在個體死亡瞬間全部消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "細胞功能變化需用代謝、膜完整等直接指標判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據評估"
+  ],
+  "representationType": "生命狀態",
+  "misconceptionTargets": [
+    "個體狀態等於每細胞同步"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "個體層次與細胞層次相關但不必在時間上完全一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "提出細胞層次測量能避免由巨觀外形過度推論所有細胞。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

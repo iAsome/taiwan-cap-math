@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S090_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S090",
+  "stem": "依表格，哪個訊息開始引起反應較快？",
+  "options": [
+    "表格未提供任何開始反應時間",
+    "訊息乙：隨循環運送，90秒開始反應",
+    "兩種訊息在同一時間開始反應",
+    "訊息甲：沿特定神經路徑，0.15秒開始反應"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表格已列出兩種訊息的開始反應時間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "訊息乙需要90秒，開始反應時間明顯較晚。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "0.15秒與90秒並不相同，不能判為同時。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "訊息甲在0.15秒開始，早於訊息乙的90秒。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "比較表",
+  "misconceptionTargets": [
+    "把時間較大誤讀為較快"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "訊息甲的開始時間為零點一五秒，明顯短於訊息乙的九十秒。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲沿特定神經路徑且快速開始，資料共同符合神經訊息反應較快的特徵。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

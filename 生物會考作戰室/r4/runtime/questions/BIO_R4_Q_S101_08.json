@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S101_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲支架較輕但負重後變形大；乙較重但變形小。若產品需長時間承重，哪項評估最合理？",
+  "options": [
+    "只選最輕者，不必看變形",
+    "只選外觀最像骨骼者",
+    "兩者都沒有任何可用資料",
+    "需依可接受重量與變形標準權衡，不能只看單一指標"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "變形過大可能無法達成支撐需求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外觀相似不能取代承重資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "質量與變形都是可用的功能資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "設計需求同時涉及輕量、承重與穩定。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "多指標權衡"
+  ],
+  "representationType": "資料評估",
+  "misconceptionTargets": [
+    "單一指標決定設計"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "多目標設計常需權衡，最小質量不一定就是最佳方案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先設定安全變形上限，再比較符合上限方案的質量，判斷會更完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

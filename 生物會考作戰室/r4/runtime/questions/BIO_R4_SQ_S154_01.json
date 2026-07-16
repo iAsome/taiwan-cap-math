@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S154_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S154"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S154",
+  "stem": "丙與丁共同具有幾項表列構造？",
+  "options": [
+    "二項",
+    "三項",
+    "四項",
+    "一項"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙丁除脊柱與四肢外還共享羊膜，只算二項會漏掉一欄。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩列在脊柱、四肢、羊膜都記為有，共同構造總數為三項。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "羽毛只在丁列為有，不能把任一方單獨具有的特徵算成共同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只計脊柱會漏掉兩列同時具有的四肢與羊膜，低估共同數。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取特徵矩陣"
+  ],
+  "representationType": "構造資料表",
+  "misconceptionTargets": [
+    "把任一方具有當共同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "交集核對逐欄要求丙丁都為有，得到脊柱、四肢與羊膜三欄。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "差異核對單獨檢查羽毛欄，丙為無而丁為有，因此不能加入共同計數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S097_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S097"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S097",
+  "stem": "依實驗表格，哪組硬棒的末端位移最大？",
+  "options": [
+    "甲組：連接完整且轉軸可動，末端位移9公分",
+    "乙組：連接鬆脫，末端位移1公分",
+    "丙組：轉軸鎖死，末端位移0公分",
+    "三組硬棒的末端位移數值完全相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲組末端位移9公分，為三組最大。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙組末端位移只有1公分，明顯小於甲組。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙組轉軸鎖死，因此末端位移為0公分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三組位移分別為9、1與0公分，數值並不相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "忽略位移數值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "甲組末端位移九公分，高於乙組一公分與丙組零公分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "完整傳力連接與可動轉軸也符合甲組能產生較大位移的結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

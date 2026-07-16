@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S170_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "有植被坡逕流較少但土壤含水量較高，這兩項結果如何同時成立？",
+  "options": [
+    "較多雨水入滲並留在土壤，較少沿表面流走",
+    "水同時完全不存在",
+    "植被停止所有水分移動",
+    "量測必定互相矛盾"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "入滲增加可提升土壤含水，同時降低離開坡面的地表水量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料顯示土壤中與流出端都有水，不能說水完全不存在。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "植物會吸水與蒸散，並不會讓環境中所有水分停止移動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩結果描述不同水庫與通路，透過水量分配即可相容。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合水量分配"
+  ],
+  "representationType": "系統推理",
+  "misconceptionTargets": [
+    "低逕流等於土壤更乾"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "收支核對降雨可分到土壤儲存與地表輸出，兩者比例能此消彼長。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "位置核對含水量測在土壤內、逕流量測在坡面出口，並非同一項數值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

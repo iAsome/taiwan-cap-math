@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_SQ_143_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST143",
+  "stem": "乙使用較高效率的轉換設備，為何整體仍較差？",
+  "options": [
+    "乙的稻稈不是生物來源",
+    "甲完全不需收集原料",
+    "高效設備一定使燃料沒有熱值",
+    "乙增加的運輸耗能超過轉換階段節省"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩案原料都是稻稈，來源性質不能解釋差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲同樣記錄一百單位收集耗能，並非不需收集。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "設備效率不會讓產出熱值消失，表格仍為一千單位。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "乙轉換少耗一百，運輸卻多耗二百，整體投入反而增加。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "以局部設備效率代表完整方案"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「乙增加的運輸耗能超過轉換階段節省」比較階段間的增減，說明局部效率提升可能被供應鏈代價抵銷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "場址決策應把原料距離納入，不能只依設備標示效率選擇。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

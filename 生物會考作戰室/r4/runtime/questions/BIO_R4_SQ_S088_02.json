@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S088_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S088"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S088",
+  "stem": "這組資料最支持標記化學訊息以何種方式到達遠處？",
+  "options": [
+    "由腺體沿體表導管前進",
+    "先進骨骼再變成血液",
+    "由旁微血管進入循環後隨血流運送",
+    "由遠處血管逆向製造腺體"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表中無體表導管，且標記先在血管出現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有骨骼測量或轉變成血液的證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "先旁微血管後遠處血管符合隨血流運送。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "時間順序是腺體先，不能解釋為遠處製造腺體。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據推論"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "顛倒分泌來源與運送方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-032",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時序與血流方向都指向由近端微血管運到遠處。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「由旁微血管進入循環後隨血流運送」整合三列資料，未加入表中沒有的構造。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

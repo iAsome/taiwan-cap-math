@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_S105_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S105"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S105",
+  "stem": "若要確認乙是細胞膜融合機制受阻，最適合新增什麼？",
+  "options": [
+    "只比較培養液顏色",
+    "只測親代體型",
+    "觀察膜融合相關蛋白功能，並設恢復功能的對照處理",
+    "刪除到達比例資料"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不能直接檢驗細胞融合機制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "親代體型也與膜蛋白功能缺乏直接關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "操縱相關功能可檢驗融合是否恢復。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "刪除資料會失去判斷相遇正常的重要證據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗設計"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "用無關資料驗證機制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-009",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-044",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-017"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "假設指向膜融合，後續實驗應直接測量並操縱該環節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "恢復處理與對照能比較融合比例及分裂受精卵是否同步增加。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

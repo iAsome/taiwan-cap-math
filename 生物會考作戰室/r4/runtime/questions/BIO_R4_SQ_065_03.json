@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_065_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S065",
+  "stem": "若新增丁組出口液量為200毫升，但標記物運出量只有10單位，最合理的模型改變為何？",
+  "options": [
+    "幫浦完全停止",
+    "管路完全封死",
+    "液體中的標記物起始濃度降低",
+    "出口量測容器破裂且液量增加"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "幫浦完全停止時出口液量不應仍和正常甲組相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "管路完全封死會阻止液體流出，無法解釋二百毫升出口液量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "液流正常而標記物少，最符合流動媒介所攜帶物質濃度降低。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "容器破裂通常造成收集量減少，也不能合理解釋標記物比例特別降低。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-051",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-046"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先分開比較流量與運輸內容；流量正常排除幫浦與管路嚴重失效。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這種結果類似人體血流正常但血液所攜物質不足，顯示運輸媒介內容也很重要。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

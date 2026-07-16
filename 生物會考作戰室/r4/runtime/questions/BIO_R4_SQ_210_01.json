@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_210_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S210",
+  "stem": "現有資料最適合支持哪項敘述？",
+  "options": [
+    "高齡比例不需考慮",
+    "污染是每位居民症狀唯一原因",
+    "乙區完全沒有風險",
+    "甲區較高污染與較高通報率同時出現"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "年齡可能影響通報率，是重要干擾因素。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "觀察資料不能證明每位個人的唯一病因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙區仍有污染與通報，不能稱零風險。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "表中甲區兩項數值都較高，可描述共同出現。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "描述區域關聯趨勢"
+  ],
+  "representationType": "兩區比較表",
+  "misconceptionTargets": [
+    "群體關聯等於個人病因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先描述資料中的關聯，再檢查可否進一步推因果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "群體數值不能直接轉成每位居民的個人判定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

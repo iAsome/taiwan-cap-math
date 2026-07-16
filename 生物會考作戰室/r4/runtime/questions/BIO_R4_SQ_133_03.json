@@ -1,0 +1,91 @@
+{
+  "id": "BIO_R4_SQ_133_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S133"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST133",
+  "stem": "實際六隻子代全為黑毛，能否說模型錯誤？",
+  "options": [
+    "能，二分之一要求黑白交替",
+    "能，六隻中必須三黑三白",
+    "不能，小樣本可能波動，應增加樣本並檢查程序",
+    "不能，因白毛永遠不可能"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二分之一不規定出現順序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "理論比例不保證六隻恰好各三。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項正確處理小樣本偏差與後續查核。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "白毛在模型中有二分之一機率，並非不可能。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把小樣本比例偏差直接當模型錯誤"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-010",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-047",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-017",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-015",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-019",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-014",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-012",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-030",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-025"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "連續六黑機率較低但不是零，「不能，小樣本可能波動，應增加樣本並檢查程序」避免過早否定模型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "增加獨立樣本與檢查親代程序能提供更穩定判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

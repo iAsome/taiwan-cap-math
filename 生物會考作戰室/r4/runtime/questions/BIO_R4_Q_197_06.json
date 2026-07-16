@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_197_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S197"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某地植物數減少但平均個體明顯變大，總生物量可能如何？",
+  "options": [
+    "只能減少",
+    "可能增加、減少或近似不變",
+    "必定等於個體數",
+    "一定變成零"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "平均體重增加可能抵銷數量下降。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "需同時知道數量與平均質量才能判斷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "生物量不是個體數本身，兩者單位不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍有植物存在，不會必定歸零。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "整合數量與體型"
+  ],
+  "representationType": "不完整資料",
+  "misconceptionTargets": [
+    "數量下降等於生物量下降"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「可能增加、減少或近似不變」保留三種可能，正確反映缺少定量幅度的限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "不能只由數量方向推出生物量方向，還需平均質量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

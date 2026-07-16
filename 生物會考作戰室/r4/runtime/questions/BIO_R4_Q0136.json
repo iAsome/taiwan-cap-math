@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0136",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "想先搜尋玻片上細胞分布最密集處，應採哪種策略？",
+  "options": [
+    "直接用最高倍隨機找",
+    "關燈後移動玻片",
+    "只看目鏡外殼",
+    "低倍掃描分布，置中後再升倍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "最高倍視野太小，隨機搜尋效率低且容易遺失位置。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "關燈後沒有影像，不能比較細胞分布。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "外殼不呈現標本影像，無法提供密度資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "低倍範圍大可找密集區，高倍再看局部細節。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "策略應用"
+  ],
+  "representationType": "觀察任務",
+  "misconceptionTargets": [
+    "高倍適合全域搜尋"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "任務先需要全域比較再需要局部觀察，分階段使用倍率最有效。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "置中可保留選定區域，避免切高倍後失去目標。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

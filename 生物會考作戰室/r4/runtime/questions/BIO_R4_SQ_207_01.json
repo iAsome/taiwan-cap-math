@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_207_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S207",
+  "stem": "哪條農藥路徑最受資料支持？",
+  "options": [
+    "上游鳥→底泥→農田",
+    "牡蠣→農田→排水溝",
+    "農田→排水溝→河口底泥或顆粒→牡蠣",
+    "陽光→牡蠣→排水溝"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "上游鳥未檢出，也沒有移動證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "方向與農藥由農田排出的時序相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "排水連接農田與河口，底泥及牡蠣都檢出農藥。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "陽光並不是題目所述的農藥來源。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "串聯污染傳播路徑"
+  ],
+  "representationType": "多介質檢測表",
+  "misconceptionTargets": [
+    "只憑檢出位置倒推污染方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "依時間與空間連接樣本，可建立有證據的路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "每段移動都應對應排水、棲地或攝食資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

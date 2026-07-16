@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_195_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S195"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S195",
+  "stem": "要分別估算光合作用總量與呼吸量，最適合增加何種設計？",
+  "options": [
+    "設置相同水草的明暗處理並量測相同時間氣體變化",
+    "只多看一次水草外觀",
+    "只把缸子換顏色",
+    "刪除所有夜間數據"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "暗處可估呼吸，明處為兩作用淨值，可進一步計算。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外觀不能量化兩種氣體交換速率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "容器顏色若改變光照會成為混雜因素。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "夜間資料正有助估計呼吸，不應刪除。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計明暗配對實驗"
+  ],
+  "representationType": "方法遷移",
+  "misconceptionTargets": [
+    "單一淨值足以求兩總量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「設置相同水草的明暗處理並量測相同時間氣體變化」以相同材料與時間比較明暗，可拆解淨值的兩個成分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "仍需控制溫度等條件，避免把處理外差異誤認為作用差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S173_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S173",
+  "stem": "若要培育能在低光環境維持較多有機物形成的葉片，依資料最合理的初步方向是？",
+  "options": [
+    "移除所有葉綠體",
+    "完全遮光並減少二氧化碳",
+    "保留具葉綠體組織並測試其低光吸收與澱粉形成",
+    "只把白區外表染綠"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "移除主要光合胞器會降低而非提高有機物形成能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺光與缺碳都會限制反應，不符合目標。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "資料顯示葉綠體與光都重要，低光育種需直接測其利用效率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "外部染色不會增加細胞內葉綠體，也不能保證功能改變。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移低光培育"
+  ],
+  "representationType": "育種情境",
+  "misconceptionTargets": [
+    "外觀染綠等於葉綠體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料核對白區即使照光仍無澱粉，顯示保留作用葉綠體是基本前提。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "目標核對低光不是無光，應在低強度梯度實測澱粉而非用顏色代替。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

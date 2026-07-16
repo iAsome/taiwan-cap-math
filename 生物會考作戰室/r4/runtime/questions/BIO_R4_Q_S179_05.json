@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S179_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究者只統計公園內樟樹數量，研究單位最接近哪一層？",
+  "options": [
+    "公園樟樹族群",
+    "公園全部群集",
+    "公園生態系",
+    "全球生物圈"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "只調查同地樟樹個體數，對應單一物種族群。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "群集需同時統計其他植物、動物與微生物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "生態系還需土壤、光照等非生物條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "公園樟樹調查沒有涵蓋全球生物範圍。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "由研究對象判層次"
+  ],
+  "representationType": "調查題",
+  "misconceptionTargets": [
+    "公園內研究都是生態系"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "研究對象核對只指定樟樹一種，而非所有生物。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "尺度核對地點限定一座公園，因此不與其他地區樟樹任意合併。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

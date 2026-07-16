@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_071_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S071",
+  "stem": "哪株最可能被用於乳酸發酵？",
+  "options": [
+    "丙菌株",
+    "乙菌株",
+    "甲菌株",
+    "三株資料完全相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙造成宿主組織損傷，資料不支持作為本食品發酵菌。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙的證據是植物殘葉質量減少，較支持分解作用而非乳酸發酵。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲在含糖食品中使乳酸增加，且未見有害物，符合發酵用途。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三株測試情境與結果均不同，不能說資料完全相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "依預期產物選菌株，乳酸增加是甲最直接的功能證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "仍須評估食品安全與製程條件，不能只由產酸便推廣到所有用途。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

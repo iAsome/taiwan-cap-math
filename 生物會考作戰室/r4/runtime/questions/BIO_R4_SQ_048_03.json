@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_048_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S048",
+  "stem": "根據材料，哪個結論超出本實驗能直接支持的範圍？",
+  "options": [
+    "甲組早期產物形成較快",
+    "酵素E使反應釋放的總能量增加",
+    "酵素E提高受測反應速率",
+    "兩組最後累積產物相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "早期數值差直接支持此描述。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "實驗沒有直接測量能量，不能得到此結論。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "時間序列可支持催化速率提高。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "40分鐘兩組都為20，資料直接支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "材料特別註明沒有測量能量，因此總能量增加是超出證據的推論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「甲組早期產物形成較快」、「酵素E提高受測反應速率」、「兩組最後累積產物相同」都可由表中時間與產物數值直接讀出或合理概括。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

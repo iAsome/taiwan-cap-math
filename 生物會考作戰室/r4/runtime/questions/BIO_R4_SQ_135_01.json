@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_135_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST135",
+  "stem": "依隱性假設，甲與乙的基因型各為何？",
+  "options": [
+    "都AA",
+    "都aa",
+    "都Aa",
+    "一AA一aa"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "AA親代不能提供a形成丙的aa。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "aa會有斑點，與兩人表現不符。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩人無斑點且都需提供a，只能是Aa。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "aa親代應有斑點，且AA方仍不給a。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未由隱性子代鎖定雙親攜帶者"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「都Aa」同時滿足雙親顯性表現與隱性子代的版本來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘組合至少有一方無法提供a或表現型衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

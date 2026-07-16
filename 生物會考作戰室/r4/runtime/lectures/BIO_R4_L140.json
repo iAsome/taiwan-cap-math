@@ -1,0 +1,134 @@
+{
+  "id": "BIO_R4_L140",
+  "subject": "biology",
+  "unitId": "BIO_R4_U19",
+  "skillId": "BIO_R4_S140",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S139"
+  ],
+  "objectives": [
+    "依操作機制辨識選擇育種、微生物發酵與基因技術",
+    "從投入材料、處理步驟和產物判斷生物技術類型"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L140_SEC1",
+      "title": "選擇育種",
+      "content": "育種者從具有目標性狀的個體中挑選親本，使其繁殖，再由後代繼續選擇。傳統育種利用原有變異與有性生殖的重新組合，通常需經多代評估；它不等於直接在實驗室改寫特定遺傳序列。"
+    },
+    {
+      "id": "BIO_R4_L140_SEC2",
+      "title": "微生物發酵",
+      "content": "發酵利用酵母菌、乳酸菌等生物的代謝，把糖等原料轉成酒精、乳酸、氣體或其他產物。溫度、酸鹼值、含氧量與污染控制都會影響結果；看見微生物培養與代謝產物，是辨識的重要線索。"
+    },
+    {
+      "id": "BIO_R4_L140_SEC3",
+      "title": "基因技術",
+      "content": "基因技術會檢測、選取、增添或調整特定遺傳資訊，使細胞產生目標產物或性狀。例如把人類蛋白質的相關資訊置入微生物，使其製造蛋白質；判斷時要找直接處理特定遺傳資訊的步驟。"
+    },
+    {
+      "id": "BIO_R4_L140_SEC4",
+      "title": "技術可能組合使用",
+      "content": "一項產品可經多種技術完成，例如先以基因技術建立能製造蛋白質的菌株，再利用大型培養槽發酵增殖，最後分離純化產物。分類應針對各步驟的機制，而不是強迫整個流程只能有一個名稱。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L140_EX1",
+      "prompt": "農民連續多代挑選甜度較高的番茄作親本，這屬於哪類技術？",
+      "steps": [
+        "確認操作核心是選親本與繁殖",
+        "檢查流程未直接調整特定遺傳序列"
+      ],
+      "answer": "選擇育種。",
+      "why": "甜度變異經親本選擇與多代繁殖逐步累積，符合育種機制，而非靠微生物代謝或直接處理基因資訊。"
+    },
+    {
+      "id": "BIO_R4_L140_EX2",
+      "prompt": "製作優格時加入乳酸菌並維持適溫，乳糖轉為乳酸。如何分類？",
+      "steps": [
+        "找出參與的乳酸菌與原料",
+        "辨認乳酸是微生物代謝形成的產物"
+      ],
+      "answer": "微生物發酵。",
+      "why": "流程利用活菌代謝改變原料，溫度控制是維持代謝條件；沒有選親本多代繁殖，也未直接調整特定基因。"
+    },
+    {
+      "id": "BIO_R4_L140_EX3",
+      "prompt": "研究者把製造人類蛋白質的資訊置入細菌，再培養細菌取得蛋白質。包含哪些技術？",
+      "steps": [
+        "辨認置入特定資訊屬基因技術",
+        "辨認後續培養利用微生物大量生長與生產"
+      ],
+      "answer": "先用基因技術建立菌株，再以培養發酵生產。",
+      "why": "同一流程可含不同機制，置入特定遺傳資訊與大量培養不是互斥分類，應按步驟分別說明。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要使用生物，就是基因技術。",
+      "whyWrong": "發酵與傳統育種也使用生物，但不一定直接檢測或調整特定遺傳資訊。",
+      "correction": "依實際操作機制分類，不用是否出現生物作唯一標準。"
+    },
+    {
+      "belief": "發酵一定需要氧氣越多越好。",
+      "whyWrong": "不同微生物與產物對氧氣需求不同，有些流程需限制氧氣才能得到目標產物。",
+      "correction": "應依菌種代謝與產品需求控制含氧量，不能套用單一條件。"
+    },
+    {
+      "belief": "選擇育種可以精確指定每個後代的所有性狀。",
+      "whyWrong": "有性生殖會重新組合許多遺傳版本，目標性狀可能與其他性狀一起變動。",
+      "correction": "需多代、大量後代與性狀測試，無法保證每個結果完全相同。"
+    },
+    {
+      "belief": "一項產品只能使用一種生物技術。",
+      "whyWrong": "實際生產常把基因建立、微生物培養與純化等不同步驟串接。",
+      "correction": "逐段辨識投入、操作與產物，可同時指出流程中的多種技術。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "挑選產蛋量高的雞作親本並連續繁殖，核心技術為何？",
+      "answer": "選擇育種。",
+      "reason": "流程以親本選擇和世代繁殖累積目標性狀，未直接處理特定遺傳資訊。"
+    },
+    {
+      "prompt": "麵糰加入酵母後產生氣體而膨脹，主要利用什麼？",
+      "answer": "酵母菌發酵代謝。",
+      "reason": "酵母利用糖產生二氧化碳，氣體被麵糰保留而使體積增加。"
+    },
+    {
+      "prompt": "直接調整細胞中目標遺傳序列以改變產物，應歸為哪類？",
+      "answer": "基因技術。",
+      "reason": "判斷關鍵是針對特定遺傳資訊進行檢測或調整，而非僅培養生物。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

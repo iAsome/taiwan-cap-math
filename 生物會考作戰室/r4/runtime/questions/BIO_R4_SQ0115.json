@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ0115",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": "BIO_R4_ST039",
+  "stem": "小葉脈寬約是口腔上皮細胞尺度的多少倍？",
+  "options": [
+    "一百倍",
+    "一倍",
+    "十倍",
+    "一千倍"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若小葉脈是細胞尺度的一百倍，寬度應為五毫米而非零點五毫米。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩者尺度不同，不是一倍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "零點五毫米是五百微米，除以五十為十。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "若小葉脈是細胞尺度的一千倍，寬度應為五公分而非零點五毫米。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "換算比值"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "毫米直接除微米"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先把零點五毫米換成五百微米，再計算比值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "所得十倍只表示小葉脈寬度與細胞代表尺度之間的線性比。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

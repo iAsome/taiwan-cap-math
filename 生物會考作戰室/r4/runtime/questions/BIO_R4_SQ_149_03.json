@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_149_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S149"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST149",
+  "stem": "若新基因顯示乙與丙差異最少，下一步最合理為何？",
+  "options": [
+    "刪除新基因以保留舊分組",
+    "立刻宣布前肢資料造假",
+    "檢查基因同源性、樣本品質並增加獨立序列",
+    "將所有物種合成同一種"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不利資料仍需查核，不能只因衝突刪除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "衝突可能有多種原因，不能直接指定造假。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項能測試污染、基因歷史與取樣不足等原因。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一個基因結果不能抹除所有物種差異。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "證據衝突時只保留符合舊假說者"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-012",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-052"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「檢查基因同源性、樣本品質並增加獨立序列」把衝突視為改進假說的線索，先驗證再決定是否修正樹形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "最終報告應呈現不同資料支持度，避免只挑一致結果製造假確定性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

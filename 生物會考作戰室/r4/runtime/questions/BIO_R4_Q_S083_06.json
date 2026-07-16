@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S083_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人被尖物刺到後的路徑為皮膚受器→傳入神經→甲→傳出神經→肌肉。若為縮手反射，甲最可能是什麼？",
+  "options": [
+    "血管",
+    "脊髓",
+    "肌腱",
+    "皮膚表皮"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "血管運送血液，不是反射弧的神經整合中心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "脊髓位於傳入與傳出之間，可先整合縮手反射。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肌腱連接肌肉與骨，不負責神經訊息整合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表皮位於刺激接收端，不在兩段神經之間。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "模型判讀"
+  ],
+  "representationType": "反射弧",
+  "misconceptionTargets": [
+    "不依流程位置判斷構造"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "甲的前後皆為神經且負責轉換傳入為命令，符合脊髓。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "血管只運血、肌腱連接肌骨、表皮位於接收端，這些構造都不能在傳入與傳出神經間整合訊息。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_076_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S076",
+  "stem": "本次健行的總攝取量是多少？",
+  "options": [
+    "900毫升",
+    "1100毫升",
+    "1500毫升",
+    "400毫升"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "九百只計飲水，漏掉食物提供的二百毫升水分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "飲水九百加食物水分二百，總攝取為一千一百毫升。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一千五百是三項流失量的合計，不是攝取總量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四百是收支差的絕對值，不能當作總攝取量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "攝取欄需把所有來源相加，不能只使用最明顯的飲水資料。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先分清攝取與流失分類，再分別加總，可降低把不同方向數值混加的錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

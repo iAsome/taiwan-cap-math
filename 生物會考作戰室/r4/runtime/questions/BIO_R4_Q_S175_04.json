@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要判斷二氧化碳是否為限制因素，哪項比較最公平？",
+  "options": [
+    "不同物種且不同光照",
+    "同時改光與水",
+    "只測一片葉一次",
+    "同葉面積、同光溫水分，只改二氧化碳濃度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "物種與光照都不同時，速率差有多種來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "同時改兩項無法隔離二氧化碳的效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有濃度對照時，單一讀值不能判斷補碳反應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "控制其他條件後，速率差較能歸因於二氧化碳。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "選擇公平比較"
+  ],
+  "representationType": "實驗設計",
+  "misconceptionTargets": [
+    "同時改多因子可判單因子"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "變因核對待測因素只有二氧化碳，其餘主要條件保持相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "尺度核對葉面積與時間一致，避免組織量不同造成速率差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

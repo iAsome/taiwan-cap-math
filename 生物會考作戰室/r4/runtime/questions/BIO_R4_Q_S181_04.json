@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q_S181_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "每平方公尺平均七株，棲地三十平方公尺，估計總數為何？",
+  "options": [
+    "約二十三株",
+    "約三十七株",
+    "約一百株",
+    "約二百一十株"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二十三來自錯誤相減，沒有面積外推意義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三十七是七與三十相加，不是密度乘面積。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一百沒有符合七乘三十的計算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "七乘三十等於二百一十，應以約數報告。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "估計總族群數"
+  ],
+  "representationType": "密度外推",
+  "misconceptionTargets": [
+    "密度與面積相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "量綱核對株每平方公尺乘平方公尺，單位化為株。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "運算核對七乘三十得到二百一十，符合外推公式。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

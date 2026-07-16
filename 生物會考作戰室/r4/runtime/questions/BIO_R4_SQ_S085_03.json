@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S085_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S085",
+  "stem": "若要檢驗效果是否來自觀看時間不同，最適合新增哪種處理？",
+  "options": [
+    "兩組改用不同中央符號",
+    "只詢問受試者喜歡字母或數字",
+    "電腦自動控制兩組呈現時間完全相同",
+    "第二組改在更暗的房間觀看"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改中央符號會破壞相同刺激的比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "偏好調查不能直接排除呈現時間差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "自動控制時間可排除觀看時間成為混淆因素。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "改房間亮度會新增入光條件差異。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗改進",
+    "遷移"
+  ],
+  "representationType": "控制變因",
+  "misconceptionTargets": [
+    "以新增混淆變因檢驗原假設"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "要排除時間解釋，就應直接固定並記錄兩組呈現時間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「電腦自動控制兩組呈現時間完全相同」只處理待排除變因，不會改變中央刺激或亮度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

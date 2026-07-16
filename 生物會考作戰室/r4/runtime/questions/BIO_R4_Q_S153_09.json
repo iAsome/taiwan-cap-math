@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S153_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "資料顯示A類群包含B、C，B又包含D。哪個類群範圍最廣？",
+  "options": [
+    "直接含B、C且間接含D的A類群",
+    "只含D並受A包含的B類群",
+    "目前只知受A包含的C類群",
+    "位於B內層且也受A包含的D類群"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "A類群直接包含B與C，又透過B間接包含D，因此涵蓋題中其餘所有類群。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "B類群雖包含D，自己仍被A包含，範圍小於最外層的A類群。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "C類群只有被A包含的資訊，沒有證據顯示它還涵蓋B類群或D類群。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "D類群位於B內，而B又位於A內，所以它是題中內層成員而非最廣。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "抽象包含推理"
+  ],
+  "representationType": "階層圖文字",
+  "misconceptionTargets": [
+    "把最末端當最大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "傳遞包含核對從D回到B再到A，確認A直接或間接涵蓋全部節點。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "外層核對不依類群真名，只讀包含方向即可唯一判定A的範圍最廣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

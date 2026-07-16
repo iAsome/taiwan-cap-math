@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_150_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S150"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST150",
+  "stem": "哪一地證據較適合修正最早紀錄？",
+  "options": [
+    "甲地，因數字較早就必定可靠",
+    "只依研究者發表順序",
+    "兩地都不能提供任何資訊",
+    "乙地，因多標本、未擾動且獨立定年一致"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "較早數字仍受層位擾動與單次測量限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "發表先後不能取代樣本品質與獨立驗證。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩地都有資訊，只是支持程度不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "乙地在樣本、地層與方法三方面都有較強查核。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "只看最早年代而忽略證據品質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「乙地，因多標本、未擾動且獨立定年一致」使用多項可靠度判準，而不是只挑最早的吸引人數字。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲地仍可保留為待查線索，進一步恢復斷層關係並重測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

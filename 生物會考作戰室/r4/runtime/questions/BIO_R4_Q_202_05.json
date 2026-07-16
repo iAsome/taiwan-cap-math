@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_202_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "夜行獸只在白天調查到少量個體，最合理的下一步為何？",
+  "options": [
+    "改用夜間適合方法重複調查",
+    "立刻宣告只剩觀察到的個體",
+    "停止所有監測",
+    "把觀察數乘任意倍數"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "調查時段配合活動可提高偵測並降低偏差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "觀察數可能漏掉未活動個體，不能當總數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "停止監測會保留方法造成的不確定性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "沒有校正依據不能任意放大數值。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "改善低偵測調查"
+  ],
+  "representationType": "夜行物種",
+  "misconceptionTargets": [
+    "觀察數等於真實總數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-043"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「改用夜間適合方法重複調查」先修正明顯的時段偵測問題，再以重複資料進行風險判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "重複調查仍應標明偵測率與估計範圍，避免把漏看誤認為真實低族群。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S153_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "下列由小到大的生命組成順序何者正確？",
+  "options": [
+    "器官→組織→細胞",
+    "細胞→組織→器官",
+    "組織→細胞→個體",
+    "個體→器官→組織"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "器官由組織構成、組織再由細胞構成，這個箭頭是由大到小。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "細胞先形成組織，多種組織再構成器官，完全符合由小到大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "組織應由細胞形成，把組織放在細胞前面已顛倒前兩層。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "個體包含器官與組織，從個體出發明顯是由大往小拆解。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "排列組成層次"
+  ],
+  "representationType": "順序題",
+  "misconceptionTargets": [
+    "顛倒大小方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "包含核對逐段詢問後者是否由前者構成，細胞到組織、組織到器官兩個箭頭皆成立。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "方向核對以細胞為最小起點、器官為較大終點，確認題目要求一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

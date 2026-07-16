@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_063_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S063",
+  "stem": "若只記錄頻率而不測每次氣量，會失去哪項資訊？",
+  "options": [
+    "無法準確比較每分鐘總換氣量",
+    "跑步時間是否存在",
+    "受試者姓名",
+    "肺泡是否含任何氣體"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "總量還需頻率乘以每次氣量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "活動時間可另外由程序記錄。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "姓名與是否測每次氣量無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "有呼吸並不表示肺泡完全無氣。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "表格顯示每分鐘換氣量由兩個指標共同決定，缺一無法完整計算。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「無法準確比較每分鐘總換氣量」指出實際資訊缺口，沒有將測量不足誇大成肺泡不存在。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

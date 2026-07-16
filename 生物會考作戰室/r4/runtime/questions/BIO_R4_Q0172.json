@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0172",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "估算顯微照片中細胞大小時，哪項資訊最可靠？",
+  "options": [
+    "螢幕品牌",
+    "照片檔名長度",
+    "觀看者離螢幕距離",
+    "與影像同步的比例尺"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "螢幕品牌不會直接提供標本實際尺度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "檔名是管理資訊，與影像長度比例無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "觀看距離改變視覺感受，不改影像內尺度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同圖比例尺直接連結顯示長度與實際微米。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "方法選擇"
+  ],
+  "representationType": "影像資料",
+  "misconceptionTargets": [
+    "顯示公分等於實際"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "照片可能被縮放，只有同步比例尺能隨影像保留尺度關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較細胞與比例尺的倍數可消除不同顯示設備造成的影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

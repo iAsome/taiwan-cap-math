@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q_S181_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "為何不能只在植物最密集處設置所有樣區？",
+  "options": [
+    "會使平均密度偏高並高估總數",
+    "會使所有植物立即死亡",
+    "會自動增加總面積",
+    "會讓樣區面積變成零"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "密集處非典型，將高平均外推會產生高估。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "計數本身不必然使植物死亡，問題是代表性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "選點不會改變棲地實際總面積。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "樣區仍有既定面積，不會因植物多而歸零。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨識選點偏差"
+  ],
+  "representationType": "研究批判",
+  "misconceptionTargets": [
+    "方便選點就有代表性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "抽樣核對選點機率偏向高密度區，未涵蓋稀疏位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "外推核對偏高平均再乘大面積，誤差會被放大。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

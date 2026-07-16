@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ0031",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S011"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST011",
+  "stem": "哪次操作最能說明升倍前置中的作用？",
+  "options": [
+    "丙操作",
+    "乙操作",
+    "甲操作",
+    "三次結果完全相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙連低倍定位都未完成，不能單獨呈現置中成功。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙位於邊緣且遺失目標，屬未置中的反例。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲在中央，升倍後仍保留目標，直接顯示置中效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三次結果明顯不同，不能視為完全相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料辨識"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "置中無功能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "甲把切換前的中央位置與切換後保留目標連結起來。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "乙與丙則顯示邊緣或未定位會增加高倍空白的可能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

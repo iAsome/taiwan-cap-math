@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0268",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要由一張細胞顯微影像估算實際長度，最不可缺少哪項資料？",
+  "options": [
+    "課本頁碼",
+    "細胞名稱的字體",
+    "圖片邊框顏色",
+    "可換算距離的比例尺"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "頁碼不能把影像長度換算為真實距離。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "字體只影響排版，與細胞實際尺度無關。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "邊框顏色沒有提供空間尺度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "比例尺建立圖上距離與實際距離的對應，才能進行估算。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "尺度判讀"
+  ],
+  "representationType": "測量情境",
+  "misconceptionTargets": [
+    "倍率直接等尺寸"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "尺寸結論必須有尺度依據，不能只憑畫面看起來大或小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若只有倍率，還需確認影像是否在排版時縮放；比例尺通常更直接可靠。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

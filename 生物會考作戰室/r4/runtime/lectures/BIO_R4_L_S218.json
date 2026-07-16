@@ -1,0 +1,156 @@
+{
+  "id": "BIO_R4_L_S218",
+  "subject": "biology",
+  "unitId": "BIO_R4_U30",
+  "skillId": "BIO_R4_S218",
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S217"
+  ],
+  "objectives": [
+    "辨認研究限制對結論的影響",
+    "提出直接回應限制的可行改進"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S218_SEC_01",
+      "title": "限制不是否定",
+      "content": "限制說明研究在哪些地方無法充分回答問題，例如樣本少、時間短或測量間接，不表示整項研究毫無價值；限制本身也需有設計依據。"
+    },
+    {
+      "id": "BIO_R4_L_S218_SEC_02",
+      "title": "連結推論",
+      "content": "好的限制要明確指出受影響的科學結論：只測一種物種限制跨物種外推；沒有對照限制介入效果的歸因，不能只列籠統缺點。"
+    },
+    {
+      "id": "BIO_R4_L_S218_SEC_03",
+      "title": "對症改進",
+      "content": "研究改進應直接補足證據缺口。樣本少就增加獨立樣本；儀器誤差就校正或重複測量；時間短就延長觀察，每項改動都要對應原限制。"
+    },
+    {
+      "id": "BIO_R4_L_S218_SEC_04",
+      "title": "可行與優先",
+      "content": "研究資源有限時，應優先修正最可能改變核心結論的限制，並說明成本、安全、倫理及實際執行條件，不能以新增設備取代核心修正。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S218_EX_01",
+      "prompt": "每組只有一盆植物，限制與改進為何？",
+      "steps": [
+        "辨認單盆可能受個體偶然差異影響",
+        "增加多盆獨立重複並隨機分組"
+      ],
+      "answer": "樣本太少；增加獨立重複。",
+      "why": "單盆結果可能只是該盆特殊狀況，多個獨立樣本可估計自然變異並檢查效果是否穩定。"
+    },
+    {
+      "id": "BIO_R4_L_S218_EX_02",
+      "prompt": "無未處理組卻稱藥劑有效，如何改進？",
+      "steps": [
+        "指出缺少自然變化基準",
+        "增設其他條件相同但不加藥組"
+      ],
+      "answer": "加入未處理對照組。",
+      "why": "對照組顯示沒有藥劑時的同期變化，才能把處理組額外差異較合理地歸因於藥劑。"
+    },
+    {
+      "id": "BIO_R4_L_S218_EX_03",
+      "prompt": "只觀察兩天卻談終生影響，問題為何？",
+      "steps": [
+        "比較觀察期與結論時間範圍",
+        "延長追蹤並設定多個測量點"
+      ],
+      "answer": "結論時間外推超過資料。",
+      "why": "短期結果不能涵蓋後續生長、繁殖或恢復情形，延長觀察才能檢驗長期影響。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "有研究限制就表示所有結果都不能使用。",
+      "whyWrong": "限制通常縮小可回答範圍，不必然否定所有觀察。",
+      "correction": "逐項說明哪些結論仍成立，以及哪些判斷需要更多直接證據。"
+    },
+    {
+      "belief": "任何限制都可用增加樣本數解決。",
+      "whyWrong": "缺對照、測錯指標或儀器偏差不會只靠樣本變多消失。",
+      "correction": "依限制類型選擇對照、換指標或校正等改進。"
+    },
+    {
+      "belief": "寫做得更仔細就是完整改進。",
+      "whyWrong": "沒有指出具體步驟，就無法判斷如何降低哪項誤差。",
+      "correction": "明寫改變的程序、控制條件與預期改善的證據。"
+    },
+    {
+      "belief": "改進越多越好，不必考慮可行性。",
+      "whyWrong": "不安全、過度昂貴或無法執行的方案不能改善實際研究。",
+      "correction": "依核心限制、可用資源、安全與研究倫理排序可執行的改進。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "樣本只有一個，最直接的改進是什麼？",
+      "answer": "增加獨立重複樣本。",
+      "reason": "重複可估計個體變異並檢查結果是否受單一樣本左右。"
+    },
+    {
+      "prompt": "缺少對照組會限制哪項判斷？",
+      "answer": "無法區分處理效果與自然變化。",
+      "reason": "沒有未處理基準，就不知道結果在無介入時是否也會發生。"
+    },
+    {
+      "prompt": "好改進方案應具備何特徵？",
+      "answer": "直接回應限制且實際可執行。",
+      "reason": "具體改進要說明如何取得原研究缺少的關鍵證據。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

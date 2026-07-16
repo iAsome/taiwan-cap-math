@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S092_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某實驗分別培養兩組相同組織，兩組養分充足，只有甲組加入適量生長激素。若甲組生長較快，可支持何種結論？",
+  "options": [
+    "生長激素是組織唯一的營養來源",
+    "未加激素的組織必定死亡",
+    "在其他條件相近時，生長激素可調節組織生長",
+    "所有組織對生長激素的反應必定相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組養分均充足，不能把生長激素視為營養來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未加激素不等於必定死亡，題目只比較生長快慢。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "控制其他條件後的差異可支持生長激素具有調節作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不同組織是否有受體及反應程度仍可能不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "控制變因"
+  ],
+  "representationType": "實驗推論",
+  "misconceptionTargets": [
+    "過度推論實驗結果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "實驗控制養分條件，甲組生長較快可歸因於加入的生長激素。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這個結果只支持受測組織的反應，不能推廣成所有組織反應完全一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

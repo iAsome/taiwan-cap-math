@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q_S181_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "五個樣區數量為 0、0、1、19、20，平均為 8。最需注意什麼？",
+  "options": [
+    "平均計算一定錯誤",
+    "總數必定是八",
+    "物種分布完全均勻",
+    "分布高度群聚，少數樣區可能使估計不穩"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "總和四十除以五確為八，計算沒有錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "八是單區平均，不是整片棲地總數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "零與二十差距很大，明顯不是均勻分布。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "高變異顯示位置影響大，需要更多或分層樣區。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估群聚分布"
+  ],
+  "representationType": "變異分析",
+  "misconceptionTargets": [
+    "平均可取代所有分布資訊"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "離差核對最低零、最高二十，平均無法呈現空間斑塊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可靠度核對增加樣區可判斷密集斑塊占棲地的實際比例。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

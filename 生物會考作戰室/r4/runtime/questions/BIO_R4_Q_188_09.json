@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_188_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某資料只記錄兔吃草、鹿吃草、狼吃鹿。建立食物網時哪支箭頭不可加入？",
+  "options": [
+    "兔→狼",
+    "草→兔",
+    "草→鹿",
+    "鹿→狼"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "資料未記錄狼吃兔，加入會超出證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兔吃草可直接轉成草指向兔。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "鹿吃草可直接轉成草指向鹿。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "狼吃鹿可直接轉成鹿指向狼。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "守住資料證據邊界"
+  ],
+  "representationType": "資料建模",
+  "misconceptionTargets": [
+    "可能發生就能畫入"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "食物網不能以常識猜測補線，兔→狼在本資料中沒有依據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘三支箭頭都能逐句對應紀錄，方向也符合定義。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

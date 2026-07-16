@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0177",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "零點零八毫米換算成微米是多少？",
+  "options": [
+    "八十微米",
+    "八微米",
+    "八百微米",
+    "零點八微米"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "零點零八乘一千等於八十微米。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "八微米等於零點零零八毫米，少了十倍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "八百微米等於零點八毫米，多了十倍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "零點八微米等於零點零零零八毫米，差距更大。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "單位換算"
+  ],
+  "representationType": "尺度數值",
+  "misconceptionTargets": [
+    "小數位換算錯誤"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "毫米轉微米乘一千，小數點向右移三位得到八十。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "反向把八十微米除以一千，可回到零點零八毫米。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

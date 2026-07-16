@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S171_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某扣件有鉤原型平均拉脫力 18 牛頓，無鉤對照 3 牛頓，兩者材料與面積相同。哪個推論最合理？",
+  "options": [
+    "顏色造成十五牛頓差",
+    "鉤狀結構顯著增加機械附著",
+    "無鉤對照反而較牢",
+    "一次平均值可保證永不損壞"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題目未改變顏色，不能把受控外因素當成主要原因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "只改鉤結構且拉脫力提高六倍，符合鉤圈扣合機制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三牛頓小於十八牛頓，資料方向不支持無鉤較牢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "平均性能不等於無限耐久，仍需重複扣合與疲勞測試。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解讀扣件數據"
+  ],
+  "representationType": "性能資料",
+  "misconceptionTargets": [
+    "外觀而非結構造成附著"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制核對材料和面積相同，主要差異集中在是否具有鉤狀結構。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "量化核對十八除以三為六，附著提升幅度與仿生目標直接對應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

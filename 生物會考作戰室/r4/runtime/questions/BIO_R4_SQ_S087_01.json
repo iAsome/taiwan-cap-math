@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S087_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S087",
+  "stem": "依表格，體溫最高時的出汗程度為何？",
+  "options": [
+    "0級",
+    "1級",
+    "3級",
+    "2級"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "0級出現在運動前與休息30分鐘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "1級出現在運動10分鐘，體溫37.2°C。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "37.7°C為最高體溫，該列出汗是3級。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "2級出現在休息15分鐘，體溫37.3°C。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "跨列拼接數據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "找出體溫欄最大值37.7，再讀同列出汗程度3。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "0級對應36.7或36.9°C、1級對應37.2°C、2級對應37.3°C；最高的37.7°C同列才是3級。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

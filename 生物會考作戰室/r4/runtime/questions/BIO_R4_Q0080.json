@@ -1,0 +1,114 @@
+{
+  "id": "BIO_R4_Q0080",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S007"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究只測二十至三十度，何種結論超出資料範圍？",
+  "options": [
+    "二十至三十度間有上升趨勢",
+    "本次測量支持溫度關係",
+    "仍需測其他溫度",
+    "一百度時也必定維持同樣趨勢"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此句限制在實際測試區間，與資料範圍相符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "本次測量是合理限制語，沒有宣稱永遠成立。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "承認未測範圍並提出後續研究，表達恰當。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "一百度未被測試，且生物反應可能不再延續原趨勢。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "範圍評估"
+  ],
+  "representationType": "外推",
+  "misconceptionTargets": [
+    "趨勢可無限延伸"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-048",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-048"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "外推到遠超測試區間的一百度沒有直接證據，正確敘述過度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "二十至三十度的趨勢與本次測量支持都限定資料範圍，提出續測也明確承認未知區間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

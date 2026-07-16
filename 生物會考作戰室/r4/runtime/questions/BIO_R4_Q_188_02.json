@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_188_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "食物網關係式列有「稻→蝗蟲」與「稻→田鼠」，可直接判斷哪一項？",
+  "options": [
+    "蝗蟲一定吃田鼠",
+    "蝗蟲與田鼠都攝食稻",
+    "田鼠一定吃蝗蟲",
+    "稻是兩者的分解者"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題示沒有田鼠→蝗蟲，不能如此推論。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩支箭頭都由稻指出，代表兩者取得稻的能量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題示沒有蝗蟲→田鼠，不能如此推論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "稻是食物來源，不是分解兩者遺體的生物。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "讀取共享食物來源"
+  ],
+  "representationType": "局部食物網",
+  "misconceptionTargets": [
+    "共享食物就彼此捕食"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "共同箭尾稻代表兩種消費者都利用稻，答案為「蝗蟲與田鼠都攝食稻」。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "共享食物不能證明兩種消費者之間還有直接攝食。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

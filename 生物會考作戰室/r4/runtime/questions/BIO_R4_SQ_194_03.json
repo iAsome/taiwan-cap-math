@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_194_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S194",
+  "stem": "若要估算此系統的淨碳變化，還最需要哪項資料？",
+  "options": [
+    "番茄與鼠的名稱長度",
+    "各碳庫存量及跨邊界輸入輸出量",
+    "溫室牆面顏色",
+    "只記標記是否曾出現"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱長度不代表碳的質量或流量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "淨變化需比較庫存與所有主要流入流出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "牆面顏色不能取代碳收支量測。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "出現與否只能示蹤，不能給出完整碳量。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "擴充示蹤為碳收支"
+  ],
+  "representationType": "研究設計",
+  "misconceptionTargets": [
+    "追蹤到路徑就等於知道總量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "標記回答碳去了哪裡，淨收支還需要定量的庫存與通量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「各碳庫存量及跨邊界輸入輸出量」補足量的資訊，也包含研究系統邊界。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_119_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S119"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "想知道某激素濃度是否上升，哪種資料最可靠？",
+  "options": [
+    "同學對外觀的猜測",
+    "只比較一張童年照片",
+    "以適當方法在不同時間測量濃度",
+    "詢問是否覺得自己長高"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同學猜測主觀且不能提供濃度數值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單張照片沒有時間比較，也不能量測激素。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "重複的適當測量能直接比較濃度變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "自覺身高改變是間接感受，不是激素測量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "用外觀印象精確反推激素濃度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "研究濃度變化應直接測量同一變項並保留時間資訊，「以適當方法在不同時間測量濃度」最佳。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "外觀、照片或感受只能作間接線索，均不能取代濃度資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

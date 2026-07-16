@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S180_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "移除掠食魚後小蝦增加，但水溫與食物皆不變，最支持什麼？",
+  "options": [
+    "掠食魚是限制小蝦數量的生物因子",
+    "水溫是唯一原因",
+    "食物突然完全消失",
+    "小蝦屬非生物因子"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "只移除捕食者便出現反應，支持生物因子作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水溫保持相同，不能解釋處理間差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "食物受控制且小蝦增加，不支持完全消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "小蝦具生命與繁殖，不能分類為非生物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析移除實驗"
+  ],
+  "representationType": "介入證據",
+  "misconceptionTargets": [
+    "生物因子不能實驗"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "介入核對移除掠食魚是唯一主要處理，數量隨後上升。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "控制核對水溫與食物不變，排除兩條常見替代原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

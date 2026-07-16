@@ -1,0 +1,132 @@
+{
+  "id": "BIO_R4_L015",
+  "subject": "biology",
+  "unitId": "BIO_R4_U02",
+  "skillId": "BIO_R4_S015",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S014"
+  ],
+  "objectives": [
+    "能用影像比例尺估算細胞實際大小。",
+    "能在影像縮放與單位換算時維持比例關係。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L015_S1",
+      "title": "比例尺意義",
+      "content": "顯微影像上的比例尺是一段線，其標示數值代表標本中的實際長度。例如線段標示二十微米，表示該線段對應實物二十微米。"
+    },
+    {
+      "id": "BIO_R4_L015_S2",
+      "title": "估算步驟",
+      "content": "先比較細胞影像長度是比例尺線段的幾倍，再以倍數乘比例尺代表的實際長度。估算時要沿同一方向量取，並清楚寫出單位。"
+    },
+    {
+      "id": "BIO_R4_L015_S3",
+      "title": "單位換算",
+      "content": "一毫米等於一千微米。細胞常用微米表示；換算前先確認數值與單位，避免把微米誤當毫米而造成一千倍差距。"
+    },
+    {
+      "id": "BIO_R4_L015_S4",
+      "title": "影像縮放限制",
+      "content": "照片在螢幕或影印時若整張等比例縮放，細胞影像與比例尺會一起變大或變小，估算仍有效。若只縮放其中一者，原比例關係便失效。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L015_E1",
+      "prompt": "細胞影像長度約為二十微米比例尺的三倍。",
+      "steps": [
+        "判定細胞相對比例尺倍數為三。",
+        "以三乘二十微米計算實際長度。"
+      ],
+      "answer": "細胞長度約六十微米。",
+      "why": "比例尺已把影像長度連結到實物尺度，三段相同線長對應三個二十微米，因此可直接按比例估算。"
+    },
+    {
+      "id": "BIO_R4_L015_E2",
+      "prompt": "某細胞約占五十微米比例尺的一半。",
+      "steps": [
+        "把一半寫成零點五倍。",
+        "以零點五乘五十微米。"
+      ],
+      "answer": "細胞長度約二十五微米。",
+      "why": "細胞比比例尺短並不妨礙估算，只要能判斷相對倍數；一半線長對應一半實際長度。"
+    },
+    {
+      "id": "BIO_R4_L015_E3",
+      "prompt": "整張影像放大兩倍，比例尺也一起放大，估算值會改變嗎？",
+      "steps": [
+        "比較放大前後細胞影像與比例尺的長度比。",
+        "兩者都乘二，所以比值不變。"
+      ],
+      "answer": "估算的實際尺寸不變。",
+      "why": "等比例縮放只改顯示大小，不改細胞相對比例尺的倍數；實物尺寸也不會因照片放大而改變。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "螢幕上量到幾公分，細胞實際就是幾公分。",
+      "whyWrong": "顯示尺寸受照片縮放影響，不能直接當成標本實際大小。",
+      "correction": "必須把影像量值與同圖比例尺比較後再換算。"
+    },
+    {
+      "belief": "總倍率足以精確決定印刷照片中的細胞大小。",
+      "whyWrong": "照片可能被裁切或縮放，標示倍率未必反映目前顯示尺寸。",
+      "correction": "優先使用與影像一起存在的比例尺進行估算。"
+    },
+    {
+      "belief": "一微米等於一毫米。",
+      "whyWrong": "一毫米包含一千微米，若混用兩種單位會造成一千倍估算誤差。",
+      "correction": "記住一毫米等於一千微米，換算時檢查數量級。"
+    },
+    {
+      "belief": "照片放大後，細胞實際尺寸也跟著變大。",
+      "whyWrong": "變大的只是影像顯示，玻片上的細胞實物沒有改變。",
+      "correction": "若影像與比例尺同步縮放，計算出的實際尺寸仍相同。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "細胞長為十微米比例尺的四倍，實際長度約多少？",
+      "answer": "四十微米。",
+      "reason": "四段比例尺長度各代表十微米，因此四乘十得到四十微米。"
+    },
+    {
+      "prompt": "零點二毫米等於多少微米？",
+      "answer": "二百微米。",
+      "reason": "一毫米等於一千微米，零點二乘一千為二百。"
+    },
+    {
+      "prompt": "為何整張照片等比例放大不改變估算尺寸？",
+      "answer": "細胞與比例尺同步放大，比值不變。",
+      "reason": "計算使用的是兩者長度比，而不是螢幕上的絕對公分數。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_187_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "已知丙攝食乙、乙攝食甲，若依食物鏈箭頭慣例，哪一圖示正確？",
+  "options": [
+    "丙→乙→甲",
+    "乙→甲→丙",
+    "甲→乙→丙",
+    "甲→丙→乙"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此項依攝食者到食物排列，方向完全相反。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙到甲的方向錯，甲也未直接傳給丙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲被乙吃且乙被丙吃，兩段方向都正確。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有丙攝食甲或乙攝食丙的關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "轉換抽象關係"
+  ],
+  "representationType": "代號鏈條",
+  "misconceptionTargets": [
+    "照句子出現順序排列"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "將句子逆向改成食物到攝食者，得到甲→乙→丙。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「甲→乙→丙」保留兩個已知關係，其他圖示均新增或顛倒關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

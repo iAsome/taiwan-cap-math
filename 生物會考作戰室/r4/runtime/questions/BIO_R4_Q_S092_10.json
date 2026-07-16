@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S092_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某藥物阻斷細胞接收性激素訊號，但血液中性激素濃度正常。最可能出現哪種結果？",
+  "options": [
+    "性激素會改成消化酵素",
+    "相關標的細胞反應減弱，生殖成熟可能受影響",
+    "所有細胞都會立刻死亡",
+    "生長激素分泌必定完全停止"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "受體阻斷不會把激素轉變成另一類物質。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "血中有激素但細胞無法有效接收，相關反應會下降。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只有特定訊號傳遞受阻，不代表所有細胞立即死亡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目未提供生長激素分泌完全停止的證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "受體阻斷"
+  ],
+  "representationType": "機制推論",
+  "misconceptionTargets": [
+    "只看激素濃度判斷作用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "激素濃度正常不代表作用正常，標的細胞仍須能接收訊號。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "性激素訊號與生殖成熟相關，受體受阻可使相應發育反應減弱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

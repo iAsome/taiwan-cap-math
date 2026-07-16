@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S209",
+  "subject": "biology",
+  "unitId": "BIO_R4_U29",
+  "skillId": "BIO_R4_S209",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S208"
+  ],
+  "objectives": [
+    "比較污染濃度與暴露時間對影響的作用",
+    "由控制實驗判斷濃度反應與時間效應"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S209_SEC_01",
+      "title": "暴露不只看濃度",
+      "content": "生物受污染物影響，常同時取決於環境濃度、每次暴露時間、暴露頻率與吸收效率。只報一項條件不足以比較總暴露。"
+    },
+    {
+      "id": "BIO_R4_L_S209_SEC_02",
+      "title": "急性與慢性暴露",
+      "content": "短時間高濃度可能造成急性反應，長時間低濃度則可能累積慢性影響。兩者機制與結果不必相同，不能只用乘積斷定。"
+    },
+    {
+      "id": "BIO_R4_L_S209_SEC_03",
+      "title": "濃度反應資料",
+      "content": "固定暴露時間並改變濃度，可觀察濃度與反應的關係；固定濃度並改變時間，則較能檢驗時間效應。其他條件應一致。"
+    },
+    {
+      "id": "BIO_R4_L_S209_SEC_04",
+      "title": "個體差異與界線",
+      "content": "不同物種、生命階段與健康狀態可能有不同敏感度。族群平均趨勢不能保證每個個體相同，結論須保留變異，敏感個體也可能較早出現反應。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S209_EX_01",
+      "prompt": "同濃度下暴露一日與十日，十日組反應較大，可推論什麼？",
+      "steps": [
+        "確認污染濃度相同",
+        "比較暴露時間與反應差異"
+      ],
+      "answer": "較長暴露時間與較大反應有關。",
+      "why": "在其他條件相同時，兩組主要差異是暴露時間，因此資料支持時間增加會提高此實驗中的影響。"
+    },
+    {
+      "id": "BIO_R4_L_S209_EX_02",
+      "prompt": "固定四十八小時，比較四種濃度的存活率，目的為何？",
+      "steps": [
+        "固定暴露時間與環境",
+        "比較濃度改變時的存活率"
+      ],
+      "answer": "檢驗濃度與存活反應的關係。",
+      "why": "暴露時間固定後，組間主要差異是污染濃度，存活率變化可用來描述濃度反應趨勢。"
+    },
+    {
+      "id": "BIO_R4_L_S209_EX_03",
+      "prompt": "濃度加倍、時間減半，是否必定有相同影響？",
+      "steps": [
+        "辨認總量乘積可能相近",
+        "檢查急性峰值、代謝與恢復差異"
+      ],
+      "answer": "不能保證影響相同。",
+      "why": "生物反應可能受濃度峰值、吸收速率與修復時間影響，濃度和時間不能在所有情況直接互換。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要環境濃度相同，所有暴露影響就相同。",
+      "whyWrong": "暴露時間、頻率、吸收途徑及生物敏感度仍可能不同。",
+      "correction": "比較時應同時記錄污染濃度、暴露時間、接觸頻率與生物反應。"
+    },
+    {
+      "belief": "濃度乘時間相同，就一定有完全相同的生物反應。",
+      "whyWrong": "高峰濃度可能觸發急性反應，間歇暴露也可能有恢復期。",
+      "correction": "乘積可作初步指標，但仍需實驗比較實際反應。"
+    },
+    {
+      "belief": "短期未觀察到死亡，就表示長期暴露完全安全。",
+      "whyWrong": "慢性暴露可能先影響生長、繁殖或行為而非立即死亡。",
+      "correction": "應延長觀察期間，並測量生長、繁殖與行為等次致死反應指標。"
+    },
+    {
+      "belief": "族群平均反應能代表每一個體的結果。",
+      "whyWrong": "平均值會隱藏個體敏感度與反應範圍的差異。",
+      "correction": "報告平均值時也應呈現樣本數與變異資訊。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "固定污染濃度改變暴露天數，主要檢驗哪項因素？",
+      "answer": "暴露時間。",
+      "reason": "濃度固定後，組間的主要處理差異就是接觸污染物的時間。"
+    },
+    {
+      "prompt": "為何短期高濃度不能直接等同長期低濃度？",
+      "answer": "濃度峰值、代謝與修復過程可能不同。",
+      "reason": "即使簡單乘積接近，生物反應仍可能因暴露型態而改變。"
+    },
+    {
+      "prompt": "判斷慢性影響除死亡率外可測什麼？",
+      "answer": "生長、繁殖或行為等指標。",
+      "reason": "長期低濃度可能先造成次致死反應，單看死亡率容易漏失影響。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

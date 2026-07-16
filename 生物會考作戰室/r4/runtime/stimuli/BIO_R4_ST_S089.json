@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_ST_S089",
+  "subject": "biology",
+  "skillId": "BIO_R4_S089",
+  "type": "cell-response-table",
+  "content": {
+    "title": "三種細胞對激素M的反應",
+    "context": "研究者培養甲、乙、丙三種細胞，先檢查細胞表面是否有可辨識激素M的受體，再加入相同濃度的M。反應以某項代謝活動是否明顯改變判定，所有培養條件除細胞種類外均相同。",
+    "columns": [
+      "細胞",
+      "有無M受體",
+      "加入M後代謝活動",
+      "培養液中有無M"
+    ],
+    "rows": [
+      [
+        "甲",
+        "有",
+        "增加",
+        "有"
+      ],
+      [
+        "乙",
+        "無",
+        "無明顯改變",
+        "有"
+      ],
+      [
+        "丙",
+        "有",
+        "降低",
+        "有"
+      ]
+    ],
+    "note": "甲與丙的反應方向不同，代表細胞內後續作用不同，不代表其中一者未辨識M。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "三種細胞都接觸M；甲丙有M受體並分別增加或降低代謝活動，乙無M受體且無明顯改變。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "細胞",
+        "受體與反應"
+      ],
+      "rows": [
+        [
+          "甲",
+          "有M受體，代謝增加"
+        ],
+        [
+          "乙",
+          "無M受體，無明顯改變"
+        ],
+        [
+          "丙",
+          "有M受體，代謝降低"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

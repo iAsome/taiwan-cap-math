@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S101_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "產品宣稱模仿人體關節即可節能，卻只展示外觀照片。最適當的要求為何？",
+  "options": [
+    "只確認產品名稱含有仿生",
+    "只詢問設計師是否喜歡人體",
+    "接受宣稱，不需任何資料",
+    "提供能耗、活動角度與負載條件的對照及重複測試"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱不能證明機制與節能結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "個人喜好也不是功能證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "節能主張必須有可重複的量測支持。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "對照測試能區分仿生結構是否改善表現。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "證據識讀"
+  ],
+  "representationType": "批判思考",
+  "misconceptionTargets": [
+    "外觀照片等於功能證據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "主張涉及節能與關節功能，應直接測量能耗並控制負載與動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "重複與對照可降低偶然結果影響，也能揭示設計適用條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

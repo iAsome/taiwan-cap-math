@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_143_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "實驗室菌株分解油污很快，放到現地卻變慢。最合理原因為何？",
+  "options": [
+    "現地污染物一定不存在",
+    "溫度、酸鹼值或混合污染抑制菌株",
+    "菌株名稱在戶外改變",
+    "實驗室數據必定全部錯誤"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "既然仍量到處理，只是速度下降，不能說污染物不存在。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "現地條件與培養環境不同，可能限制生長與代謝。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "名稱不是生理條件，不會決定分解速率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "差異可能反映適用範圍，而非所有實驗資料皆錯。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把實驗室效率直接外推到所有場址"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「溫度、酸鹼值或混合污染抑制菌株」提出可量測的環境限制，能用場址試驗逐一檢查。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "放大前應測量菌株存活、氧氣和污染組成，避免直接套用理想條件速率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

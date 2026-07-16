@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S158_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要檢驗某土壤微生物是否促進幼苗生長，哪種設計最有力？",
+  "options": [
+    "設置有無該微生物且其他條件相同的組別",
+    "只量一株接種幼苗",
+    "比較不同季節的不同植物",
+    "先假定接種組一定較高"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "只改變該微生物並控制水、光與土壤，可把高度差較合理連到處理。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單株沒有未接種比較，也容易受個體差異影響，不能判斷促進效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "季節與植物種類同時改變，結果即使不同也無法辨認是哪個因素造成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "先假定結果會把預期當成證據，不能取代實際量測與組間比較。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "設計微生物功能實驗"
+  ],
+  "representationType": "對照實驗",
+  "misconceptionTargets": [
+    "單一觀察即可證明益處"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "變因核對顯示接種與否是組間唯一規劃差異，可直接對應研究問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "重現核對要求兩組有多株幼苗並重複測量，能降低單一個體偶然造成的偏差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

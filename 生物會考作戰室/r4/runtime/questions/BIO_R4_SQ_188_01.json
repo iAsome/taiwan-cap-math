@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_188_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S188",
+  "stem": "依資料整合食物網時，蘆葦種子應有哪兩支箭頭？",
+  "options": [
+    "小鼠→蘆葦種子、麻雀→蘆葦種子",
+    "蘆葦種子→小鼠、蘆葦種子→麻雀",
+    "蘆葦種子→草鴞、蘆葦種子→遊隼",
+    "招潮蟹→蘆葦種子、小鼠→麻雀"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此項把食物與攝食者的方向完全顛倒。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩種攝食者都直接取食種子，方向正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料沒有兩種猛禽直接取食蘆葦種子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料未記錄這兩段關係，不能自行補線。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "整合共享食物節點"
+  ],
+  "representationType": "表格建網",
+  "misconceptionTargets": [
+    "共享節點只能留一支箭頭"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "表中兩列共享蘆葦種子，合併後應保留兩支出箭頭。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「蘆葦種子→小鼠、蘆葦種子→麻雀」沒有遺漏或新增關係，並符合食物指向攝食者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

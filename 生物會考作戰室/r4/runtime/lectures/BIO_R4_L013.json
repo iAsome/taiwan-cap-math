@@ -1,0 +1,132 @@
+{
+  "id": "BIO_R4_L013",
+  "subject": "biology",
+  "unitId": "BIO_R4_U02",
+  "skillId": "BIO_R4_S013",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S012"
+  ],
+  "objectives": [
+    "能判斷玻片移動與視野影像移動方向相反。",
+    "能依目標在視野中的位置決定玻片置中方向。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L013_S1",
+      "title": "成像方向",
+      "content": "複式顯微鏡形成的視野影像相對標本上下、左右皆相反。玻片上的字母或箭頭經成像後會呈現倒轉方向，但標本本身並未翻面。"
+    },
+    {
+      "id": "BIO_R4_L013_S2",
+      "title": "移動相反",
+      "content": "玻片向右移時，影像在視野中向左移；玻片向上推時，影像向下移。判斷題先圈出題目問的是玻片還是影像，避免把兩者混淆。"
+    },
+    {
+      "id": "BIO_R4_L013_S3",
+      "title": "目標置中",
+      "content": "要把視野邊緣的目標移向中央，玻片應朝目標目前在視野中的方向移動。例如目標在右上方，就把玻片往右上方小幅移動，影像便向左下靠近中央。"
+    },
+    {
+      "id": "BIO_R4_L013_S4",
+      "title": "操作與驗證",
+      "content": "移動時用小幅、緩慢動作並持續看視野，若方向判斷不確定，可先輕推單一方向觀察影像反應。高倍視野小，更需先在低倍練習與置中。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L013_E1",
+      "prompt": "玻片向左移，視野中的像會往哪裡？",
+      "steps": [
+        "寫下玻片實際移動方向為左。",
+        "依成像關係取相反方向。"
+      ],
+      "answer": "視野影像向右移。",
+      "why": "複式顯微鏡的影像移動與玻片相反，這是光學成像結果，不代表標本在玻片上自行移動。"
+    },
+    {
+      "id": "BIO_R4_L013_E2",
+      "prompt": "目標出現在視野右下角，如何移到中央？",
+      "steps": [
+        "目標影像需向左上方移動才會到中央。",
+        "玻片方向與影像相反，因此往右下方移動。"
+      ],
+      "answer": "把玻片小幅往右下方移動。",
+      "why": "玻片右下移使影像左上移，正好從右下角靠近中央；也可記成玻片朝目標所在方向推。"
+    },
+    {
+      "id": "BIO_R4_L013_E3",
+      "prompt": "不知道方向時直接大幅推片，為何不佳？",
+      "steps": [
+        "高倍視野小，大幅移動可能讓目標完全離開。",
+        "改以低倍或小幅試推，觀察影像反方向變化。"
+      ],
+      "answer": "用小幅試推建立方向，再逐步置中。",
+      "why": "小幅動作保留位置線索並降低遺失目標風險，實際影像回饋也比死背方向更容易查核。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "玻片向右，影像也會向右。",
+      "whyWrong": "顯微鏡成像使影像移動方向與玻片實際移動方向相反。",
+      "correction": "每次先寫玻片方向，再取相反方向判斷影像。"
+    },
+    {
+      "belief": "影像倒轉表示標本真的在玻片上翻面。",
+      "whyWrong": "標本位置未變，倒轉只發生在經鏡頭形成的影像。",
+      "correction": "區分玻片上的實物與眼睛看到的光學影像。"
+    },
+    {
+      "belief": "目標在右邊時應把玻片往左推。",
+      "whyWrong": "玻片往左會讓影像向右，目標反而更靠近右緣。",
+      "correction": "置中時把玻片朝目標所在的視野方向小幅移動。"
+    },
+    {
+      "belief": "高倍下快速大幅移動較容易找到方向。",
+      "whyWrong": "高倍視野小，大幅移動會使目標迅速離開並增加碰撞風險。",
+      "correction": "先在低倍視野完成置中，必要時沿單一方向小幅試推玻片。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "玻片向上推，影像向哪裡移動？",
+      "answer": "向下移動。",
+      "reason": "玻片與視野影像的移動方向在上下軸相反。"
+    },
+    {
+      "prompt": "目標在視野左上角，玻片應往哪裡移動以置中？",
+      "answer": "往左上方移動。",
+      "reason": "玻片左上移會使影像右下移，目標因而靠近中央。"
+    },
+    {
+      "prompt": "如何用實際操作驗證移動方向？",
+      "answer": "小幅推玻片並觀察影像反應。",
+      "reason": "單一方向的小幅試推保留目標，也能直接顯示影像的相反移動。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S093_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某藥物使分泌腺不再回應負回饋抑制，最可能出現哪種現象？",
+  "options": [
+    "激素濃度必定永遠為零",
+    "激素可能持續分泌而累積過多",
+    "標的細胞全部變成分泌腺",
+    "回饋系統一定比原先更穩定"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "失去抑制不會使分泌必然降為零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "分泌腺不受抑制時，可能無法在濃度升高後減少分泌。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "回饋失常不會改變細胞的器官身分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "缺少負回饋抑制通常不利於維持穩定。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "負回饋"
+  ],
+  "representationType": "機制推論",
+  "misconceptionTargets": [
+    "誤解回饋抑制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "負回饋原本可在濃度偏高時降低分泌，失靈後可能持續輸出訊號。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "激素累積程度仍受代謝與排除影響，但持續過多是合理風險。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

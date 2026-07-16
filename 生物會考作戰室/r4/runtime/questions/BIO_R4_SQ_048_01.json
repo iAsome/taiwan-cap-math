@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_048_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S048"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S048",
+  "stem": "比較5分鐘資料，加入酵素E最直接造成什麼差異？",
+  "options": [
+    "乙組沒有任何反應",
+    "受質種類完全不同",
+    "甲組憑空得到能量",
+    "固定時間內形成較多產物"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙組已有3單位產物，並非沒有反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹明示兩組受質種類相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料沒有直接測量能量來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "甲組12高於乙組3，顯示較快形成產物。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "相同五分鐘內甲組累積產物較多，直接支持酵素提高反應速率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「受質種類完全不同」、「甲組憑空得到能量」、「乙組沒有任何反應」與控制條件、測量項目或乙組非零數值衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

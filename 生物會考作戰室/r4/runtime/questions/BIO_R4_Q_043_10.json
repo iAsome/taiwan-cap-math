@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_043_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S043"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "檢驗甲食物含澱粉與水，乙食物含蛋白質與水，哪項比較有證據支持？",
+  "options": [
+    "甲乙完全沒有共同成分",
+    "甲乙都含水但突出養分不同",
+    "甲只是一種養分而非食物",
+    "乙必定不能提供任何能量"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩者都有水，並非沒有共同成分。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "檢測結果逐項支持此比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲已被題幹定義為受測食物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "含蛋白質不能推出完全不供能。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "先找共同項水，再比較澱粉與蛋白質差異，即可得到「甲乙都含水但突出養分不同」。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他敘述或忽略共同資料、混淆層次，或使用資料無法支持的必定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_212_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "廠商只提供最佳一次去除率就宣稱技術穩定，最大問題為何？",
+  "options": [
+    "數值有百分比",
+    "技術有名稱",
+    "最佳結果一定最低",
+    "缺少重複、變異與不同條件下的表現"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "百分比可合理表示去除率，本身不是缺陷。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱不影響證據是否充分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "最佳結果通常較高，且此敘述無助評估穩定性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "單次最佳值不能顯示結果是否可重現或適用不同場址。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評鑑"
+  ],
+  "representationType": "宣稱檢核",
+  "misconceptionTargets": [
+    "最佳單次代表穩定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "穩定性要看多次結果的範圍，而不是只展示最高值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不同溫度、污染濃度與場址條件也可能改變效能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

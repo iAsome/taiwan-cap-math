@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S162_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "為何污水微生物槽需要監測溫度與酸鹼值？",
+  "options": [
+    "讓所有菌種功能相同",
+    "微生物代謝活性受環境條件影響",
+    "使污染物自動消失",
+    "只為讓表格更長"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "不同菌種有各自適合範圍，監測不能讓所有種類功能變成完全相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "溫度與酸鹼值會影響酵素和生長，偏離範圍可能降低處理速率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "監測只提供條件資料，污染物仍需實際代謝、分離或其他處理。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紀錄的目的在控制操作與解釋效果，不是增加文字或表格長度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "理解環境條件控制"
+  ],
+  "representationType": "操作監測",
+  "misconceptionTargets": [
+    "菌種功能不受環境影響"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "機制核對把溫度酸鹼值連到酵素活性，解釋處理速率為何可能改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "操作核對可在指標偏離時調整條件，顯示監測能直接支持系統控制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

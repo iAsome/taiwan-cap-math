@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S168_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S168",
+  "stem": "比較甲與乙，最能支持哪個結論？",
+  "options": [
+    "有風使失水量降為零",
+    "相同濕度下，有風使失水量增加",
+    "濕度越高失水一定越多",
+    "風使土壤直接蒸發成為唯一來源"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙仍失水八點四克，資料明確不是降為零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩組同為百分之四十濕度，只有風不同，乙的失水量較高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲乙濕度相同，不能由這一比較判斷高濕效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "土面已封住，且資料只能支持風影響整盆的主要葉片失水。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "比較風速效果"
+  ],
+  "representationType": "數據表",
+  "misconceptionTargets": [
+    "風使蒸散停止"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-005",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-011",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-045"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制核對甲乙的濕度、光照與溫度相同，可專注比較風速。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "數值核對八點四大於五點一，方向符合風帶走葉面水蒸氣。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

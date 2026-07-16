@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲葉光合速率 4，補水後為 9，補光後仍為 4；最合理判斷是？",
+  "options": [
+    "當時水分比光更具限制性",
+    "光是唯一限制",
+    "補水使葉綠體消失",
+    "速率與條件無關"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "補水帶來明顯提升而補光無效，直接支持水分瓶頸。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若光是唯一限制，補光應提升而補水不應有此效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "速率上升不符合葉綠體消失造成能力下降的預期。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不同處理產生九與四的差異，顯示條件確實相關。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比較補充反應"
+  ],
+  "representationType": "診斷資料",
+  "misconceptionTargets": [
+    "加光永遠有效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "介入核對兩種補充中只有補水改變輸出，反應具有選擇性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "機制核對水可補原料並改善氣孔開度，兩路徑都能提高速率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

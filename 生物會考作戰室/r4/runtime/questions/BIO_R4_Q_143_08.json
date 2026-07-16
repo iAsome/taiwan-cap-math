@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_143_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S143"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "沼氣方案產能高，但甲烷逸散也增加。完整結論為何？",
+  "options": [
+    "產能高即可忽略逸散",
+    "逸散代表完全沒有任何能源",
+    "只需量反應槽溫度",
+    "需把逸散造成的氣候影響扣入整體效益"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲烷是重要溫室氣體，逸散可能抵銷部分能源優勢。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "仍有能量產出，不能因一項缺點說完全沒有能源。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "溫度影響反應，但不能代替實際逸散和產量數據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同時記錄供能與排放，才能判斷淨環境效益。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "只看沼氣產量而忽略甲烷逸散"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「需把逸散造成的氣候影響扣入整體效益」擴大評估邊界到未被利用的氣體，避免只報成功收集部分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "改善密封後需再次量測，不能只由設備規格推定逸散已消失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0345",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同一物質的總運輸量包含被動與主動兩部分，缺氧後只剩原來的三成。合理推論為何？",
+  "options": [
+    "原運輸中可能有較大的能量依賴成分",
+    "剩下三成表示粒子完全不動",
+    "缺氧把細胞膜變成細胞壁",
+    "全部運輸必定由擴散完成"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "缺氧使七成消失，支持較大部分與能量供應有關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "仍有三成運輸，不能說粒子完全不動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "缺氧不會使細胞構造互相轉換。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "若全部被動，通常不應因能量受限而大幅下降。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比例推論"
+  ],
+  "representationType": "量化資料",
+  "misconceptionTargets": [
+    "複合機制忽略"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "前後比例可估計機制貢獻，但不能把差值當成精確且唯一來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "殘餘三成仍需用其他對照判斷是被動成分或抑制不完全。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

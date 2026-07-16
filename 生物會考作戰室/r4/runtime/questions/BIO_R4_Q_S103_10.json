@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S103_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "親代甲有標記A、親代乙有標記B；子代只有A。能否因此排除乙為親代？",
+  "options": [
+    "可以，子代必須呈現親代所有標記",
+    "不能，只比較一個標記不足，乙可能未把B傳入該配子",
+    "可以，配子不含遺傳資訊",
+    "不能，因為遺傳標記完全沒用"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "子代不一定取得每個親代的所有標記。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "單一標記缺失不足以排除親緣，需更多資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "配子正是攜帶遺傳資訊的細胞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "標記有用，但證據數量與選擇會影響判斷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據限制"
+  ],
+  "representationType": "資料評析",
+  "misconceptionTargets": [
+    "子代必含親代全部標記"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "親代形成的每個配子只帶部分資訊，特定標記未必被子代取得。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "應增加多個獨立標記再評估，避免用單一缺失作絕對排除。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

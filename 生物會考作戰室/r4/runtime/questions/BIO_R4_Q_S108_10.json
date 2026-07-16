@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S108_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "調查員重複經過同一路段並記下未標記鹿隻，可能造成何種問題？",
+  "options": [
+    "使鹿立刻產生更多後代",
+    "同一隻鹿可能被重複計入，形成數量增加假象",
+    "使所有鹿由有性生殖改為無性生殖",
+    "讓鹿的身體細胞停止分裂"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "調查路徑本身不會使鹿立即繁殖。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "缺少個體辨識時，重複觀察可能被誤當成不同個體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "計數方式不會改變鹿原有的生殖方式。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "重複經過路段與鹿的細胞分裂沒有直接因果關係。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "調查誤差"
+  ],
+  "representationType": "方法分析",
+  "misconceptionTargets": [
+    "忽略重複計數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "數量資料的可信度取決於是否能辨認個體，未標記情況下重複計數是重要替代解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "增加標記、固定觀察時段或使用可辨識影像，有助排除同一個體多次出現造成的偏差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

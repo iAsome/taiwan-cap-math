@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_137_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要檢驗兩種玉米品系的株高差異是否受土壤影響，下列哪種設計最有資訊量？",
+  "options": [
+    "只測一株高品系玉米",
+    "讓兩品系各自種在固定且不同的土壤",
+    "兩品系都分別種在甲、乙兩種土壤並重複",
+    "把所有種子混合後不記品系"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單株資料無法估計品系內變異，也沒有土壤比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "品系與土壤綁在一起，仍無法分開兩種因素。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "交叉安排可同時比較同土壤的品系及同品系的土壤效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "失去品系標記後，便不能追蹤遺傳背景與結果的關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "品系與環境配對固定造成混雜"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把每個品系都放入兩種土壤，能避免品系與環境完全混雜。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "各組安排多株並隨機分配，可降低個體差異和位置偏差造成的誤判。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

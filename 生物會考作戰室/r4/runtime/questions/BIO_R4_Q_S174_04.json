@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S174_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "白天葉片淨釋出氧氣，最適當的解釋是？",
+  "options": [
+    "呼吸作用完全停止",
+    "葉片不再消耗有機物",
+    "所有細胞只光合作用",
+    "光合作用產氧速率大於呼吸耗氧速率"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "白天活細胞仍呼吸，淨釋氧不能證明完全停止。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "呼吸仍可能分解有機物，只是氣體總量被光合作用蓋過。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "部分細胞缺葉綠體，且具葉綠體細胞也可同時呼吸。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "淨值為產生量減消耗量，正值表示產氧作用較快。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "解釋淨釋氧"
+  ],
+  "representationType": "淨值題",
+  "misconceptionTargets": [
+    "淨釋氧等於不呼吸"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "淨值核對測得的是整體釋出，不是每一反應的獨立速率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時段核對有光使光合作用較強，而呼吸仍提供背景耗氧量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

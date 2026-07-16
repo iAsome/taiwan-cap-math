@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_125_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "動物園解說牌寫『同種個體染色體數相同，所以性格都相同』。應如何修正？",
+  "options": [
+    "改成同種沒有任何共同特徵",
+    "改成性格只由染色體數決定",
+    "保留染色體共同性，刪除對性格的無據推論",
+    "改成外觀不同就一定不同種"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同種仍具有物種層次的共同染色體特徵。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "染色體數不能直接決定複雜行為與性格。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此項保留有證據部分並移除越界結論。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "外觀有個體差異，不能單憑不同就改判物種。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由染色體數推論固定性格"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "解說牌前半可成立，後半跨越到未測量性格，「保留染色體共同性，刪除對性格的無據推論」修正精確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他修改不是全部否定共同性，就是換成另一個錯誤絕對判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S099_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S099"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "看見球飛來並伸手接球，哪個流程最合理？",
+  "options": [
+    "肌肉先看見球再通知眼睛",
+    "骨骼自行決定方向",
+    "眼接收訊息→中樞整合→運動神經控制肌肉",
+    "紅血球直接拉動手臂"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "肌肉沒有視覺受器，不能先看見球。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "骨骼不具整合資訊與決策功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "流程依序連結感覺、整合與動作輸出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紅血球不會直接產生手臂拉力。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "接球流程"
+  ],
+  "representationType": "流程判斷",
+  "misconceptionTargets": [
+    "肌肉自行決策"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "接球先需取得視覺資訊，再由中樞控制相關肌肉完成動作。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "流程同時符合訊息方向與各構造功能，沒有跳過中樞整合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

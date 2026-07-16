@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_047_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S047"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲組25°C且pH 5，乙組40°C且pH 8，此設計最大的問題為何？",
+  "options": [
+    "沒有使用任何酵素",
+    "沒有測量任何溫度",
+    "兩組條件完全相同",
+    "溫度與pH同時改變，因果無法區分"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹只列溫度與pH差異，沒有說實驗未使用酵素。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "25與40°C都是明確溫度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩組至少有兩項條件不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多變因同時改變造成解釋混淆。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-037"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較兩組時溫度與pH都不同，結果無法指定由哪個因素造成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「溫度與pH同時改變，因果無法區分」直接指出單一變因原則被破壞，是最核心的設計缺陷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

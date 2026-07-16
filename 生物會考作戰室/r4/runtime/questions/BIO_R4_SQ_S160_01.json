@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S160_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S160",
+  "stem": "哪組比較最支持未煮沸飲料與腸胃症狀相關？",
+  "options": [
+    "甲與丙",
+    "甲與乙",
+    "乙與丁",
+    "丙與丁"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲與丙的症狀類型和暴露都不同，不能專一檢驗飲料與腸胃症狀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲乙主要差在是否飲用該飲料，症狀比例又約為16/22與2/18，方向明顯不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙與丁分屬飲食與練唱調查，兩者都缺少飲用該飲料的暴露組。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "丙丁可比較室內練唱與戶外停留，較適合分析呼吸道而非飲料假說。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "選擇飲食暴露比較"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "跨不同症狀任意比較"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "暴露配對核對只選飲用與未飲用該飲料的甲乙，其他條件的問題較少。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "比例核對分別計算約73%與11%，不只比較症狀人數的表面大小。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

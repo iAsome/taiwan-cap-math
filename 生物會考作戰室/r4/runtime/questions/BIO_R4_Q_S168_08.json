@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S168_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲組高濕有風，乙組低濕無風，甲乙失水量相同。可得哪個最合理結論？",
+  "options": [
+    "濕度完全沒有作用",
+    "風速完全沒有作用",
+    "兩組氣孔數必定相同",
+    "兩項環境因子效果可能互相抵銷，不能各自判定無效"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "高濕可能減慢蒸散，只因同時有風而未呈現較小總量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "有風可能加快蒸散，只因同時高濕而被另一效果抵銷。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "相同失水量無法證明葉片氣孔數量必然完全一樣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩個因子同時改變時，相同結果可由相反影響平衡造成。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析雙變因資料"
+  ],
+  "representationType": "實驗推理",
+  "misconceptionTargets": [
+    "結果相同代表因子都無效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-005",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-011",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-045"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "設計核對甲乙同時改變濕度與風速，無法把結果專一歸給其中一項。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "機制核對高濕偏向減慢、有風偏向加快，方向相反時可能出現抵銷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

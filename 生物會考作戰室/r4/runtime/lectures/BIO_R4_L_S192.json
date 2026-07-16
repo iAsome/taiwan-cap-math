@@ -1,0 +1,126 @@
+{
+  "id": "BIO_R4_L_S192",
+  "subject": "biology",
+  "unitId": "BIO_R4_U26",
+  "skillId": "BIO_R4_S192",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S191"
+  ],
+  "objectives": [
+    "辨認食物鏈箭頭與生物移動、攻擊方向的差異。",
+    "以能量標記或食物來源核對箭頭，修正具迷惑性的情境圖。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S192_SEC_01",
+      "title": "同一事件有兩種方向",
+      "content": "蛇朝鼠移動時，攻擊方向可寫蛇到鼠；但蛇吃鼠後，物質與能量由鼠進入蛇，所以食物鏈箭頭是鼠→蛇。同一事件的動作方向與能量方向可能相反。"
+    },
+    {
+      "id": "BIO_R4_L_S192_SEC_02",
+      "title": "用食物標記核對",
+      "content": "若在食物中放入可追蹤標記，標記會先出現在食物，再出現在攝食者。把箭頭想成標記傳遞路線，比想像誰追誰更可靠，也適用於不會移動的植物。"
+    },
+    {
+      "id": "BIO_R4_L_S192_SEC_03",
+      "title": "逃跑方向更不能當箭頭",
+      "content": "兔逃離狐時，兔的移動方向可能背向狐；狐追兔時又朝向兔。兩種動作箭頭彼此不同，但食物鏈只依攝食關係固定畫兔→狐，不受當時位置改變。"
+    },
+    {
+      "id": "BIO_R4_L_S192_SEC_04",
+      "title": "先讀圖例再判讀",
+      "content": "生態圖也可能用箭頭表示遷移、氣流或數量影響，所以不能見箭頭就當食物鏈。若圖例明定物質與能量流向，才使用食物指向攝食者的規則。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S192_EX_01",
+      "prompt": "貓向麻雀撲去並捕食，動作與食物鏈箭頭各如何？",
+      "steps": [
+        "動作由貓朝向麻雀。",
+        "能量由被吃的麻雀傳入貓。"
+      ],
+      "answer": "動作貓→麻雀；食物鏈麻雀→貓。",
+      "why": "兩支箭頭回答不同問題；食物鏈不描繪撲擊，而是描繪食物物質與能量的傳遞。"
+    },
+    {
+      "id": "BIO_R4_L_S192_EX_02",
+      "prompt": "在葉片做標記後，毛毛蟲攝食葉片，標記先後在哪裡？",
+      "steps": [
+        "標記起初位於葉片。",
+        "攝食後部分標記可進入毛毛蟲。"
+      ],
+      "answer": "葉片→毛毛蟲。",
+      "why": "標記實際追蹤物質由食物進入攝食者，能直接核對食物鏈箭頭而不受移動方向影響。"
+    },
+    {
+      "id": "BIO_R4_L_S192_EX_03",
+      "prompt": "候鳥由北向南遷移，能否用此方向判斷牠的食物鏈箭頭？",
+      "steps": [
+        "遷移描述位置改變。",
+        "食物鏈需要另外知道候鳥吃什麼及被誰吃。"
+      ],
+      "answer": "不能。",
+      "why": "地理移動與攝食關係是不同變項，沒有食物資料就不能由北向南推得能量傳遞方向。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "捕食者追向哪裡，食物鏈就指向哪裡。",
+      "whyWrong": "追逐箭頭由捕食者指向獵物，食物能量卻由獵物進入捕食者。",
+      "correction": "把動作箭頭與食物鏈分開標示，後者固定由食物指向攝食者。"
+    },
+    {
+      "belief": "獵物逃跑方向就是能量傳遞方向。",
+      "whyWrong": "逃跑方向取決於位置，與被捕食後能量進入誰沒有固定關係。",
+      "correction": "忽略移動方位，只問哪一生物被吃、哪一生物取得食物。"
+    },
+    {
+      "belief": "任何生態圖上的箭頭都是食物鏈。",
+      "whyWrong": "箭頭也可表示遷移、風向、數量影響或物質運輸等不同意義。",
+      "correction": "先讀圖例；只有圖例定義為攝食傳遞時才套用食物鏈規則。"
+    },
+    {
+      "belief": "食物不移動，所以不能作為箭尾。",
+      "whyWrong": "箭頭表示物質與能量來源，不要求箭尾生物主動移動。",
+      "correction": "植物與固定生物仍可作食物來源，箭頭由其指向攝食者。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "鷹俯衝抓兔，食物鏈箭頭由誰指向誰？",
+      "answer": "兔→鷹。",
+      "reason": "兔是鷹的食物，物質與能量由兔傳給鷹，與俯衝方向相反。"
+    },
+    {
+      "prompt": "魚逆流游動可否判定牠吃哪種生物？",
+      "answer": "不能。",
+      "reason": "游動方向只描述位置改變，沒有提供食物來源或攝食者資訊。"
+    },
+    {
+      "prompt": "圖例寫箭頭代表遷徙時，還能讀成能量流向嗎？",
+      "answer": "不能直接如此解讀。",
+      "reason": "箭頭意義由圖例決定，遷徙箭頭與食物鏈箭頭的定義不同。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_050_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S050"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S050",
+  "stem": "若想單獨比較磨碎是否加快酵素作用，應新增哪種組別？",
+  "options": [
+    "不同食物且不同溫度",
+    "等量整塊餅乾加相同酵素液",
+    "只放空容器不加餅乾",
+    "磨碎餅乾但改用不同pH"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "食物與溫度同時不同會造成混淆。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "只改顆粒大小可與乙組公平比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "空容器無法比較顆粒大小效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "pH不同會加入另一個影響酵素的變因。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "消化系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "研究磨碎效果需固定酵素、食物量與環境，只改顆粒大小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "新增整塊加相同酵素液組，才能檢驗接觸面積對速率的影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

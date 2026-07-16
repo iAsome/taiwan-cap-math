@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q0292",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "袋內原有葡萄糖，十分鐘後外液也測得葡萄糖。哪項結論最受支持？",
+  "options": [
+    "袋膜讓所有大分子自由通過",
+    "葡萄糖只會由外向內移動",
+    "袋膜完全不具任何邊界功能",
+    "葡萄糖在此條件下能由袋內通過膜到外液"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "實驗只提供葡萄糖資料，沒有測試所有大分子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "葡萄糖起初在袋內而後出現在外液，方向不是只由外向內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "膜仍區隔袋內外，能通過一物質不代表沒有邊界。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "起始位置與後續檢出共同支持葡萄糖跨膜到外液。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "實驗推論"
+  ],
+  "representationType": "檢測結果",
+  "misconceptionTargets": [
+    "檢出過度解釋"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-024"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先比對物質的起始位置與後續位置，再判定是否發生跨膜移動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結論只限葡萄糖及實驗條件，不能擴張到未測物質。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

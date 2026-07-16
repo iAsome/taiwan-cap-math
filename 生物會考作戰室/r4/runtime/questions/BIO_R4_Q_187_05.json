@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_187_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "田鼠吃稻穀，蛇捕食田鼠。下列哪一條能正確表示這兩段能量傳遞？",
+  "options": [
+    "稻→田鼠→蛇",
+    "蛇→田鼠→稻",
+    "田鼠→稻→蛇",
+    "稻→蛇→田鼠"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "稻先傳給田鼠，再由田鼠傳給蛇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項把兩段箭頭都畫成相反方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "田鼠不是稻的食物，且蛇未直接吃稻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹沒有蛇吃稻或田鼠吃蛇的關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "把文字轉成食物鏈"
+  ],
+  "representationType": "農田情境",
+  "misconceptionTargets": [
+    "由強者往弱者畫箭頭"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "把每句改寫成食物指向攝食者，即可得到第一條。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "能量沿稻、田鼠、蛇傳遞，不能依捕食者強弱排序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

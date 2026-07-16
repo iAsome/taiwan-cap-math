@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_187_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "機器人依食物鏈箭頭分配追蹤標籤：標籤應從食物傳給攝食者。輸入「藻類→螺→魚」後，順序何者正確？",
+  "options": [
+    "先標魚，再標螺，最後標藻類",
+    "只標螺，不標其他生物",
+    "先標藻類，再標螺，最後標魚",
+    "三者同時且無先後關係"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此順序逆著箭頭，不能模擬物質傳遞。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "鏈中兩段傳遞都需要追蹤，不能只標中間者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "順著兩支箭頭依序追蹤，符合傳遞方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹要求模擬順序，不能忽略箭頭方向。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "將箭頭規則遷移到追蹤程序"
+  ],
+  "representationType": "程序情境",
+  "misconceptionTargets": [
+    "箭頭只表示同時出現"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "追蹤標籤應沿箭頭由藻類進入螺，再由螺進入魚。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「先標藻類，再標螺，最後標魚」把食物鏈符號轉成可執行程序，沒有倒置關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

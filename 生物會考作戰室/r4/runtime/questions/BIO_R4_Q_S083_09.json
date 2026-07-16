@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S083_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若縮手反射的傳入神經被阻斷，而肌肉與傳出神經正常，受到相同刺激時最可能發生什麼？",
+  "options": [
+    "脊髓收不到刺激訊息，縮手反射難以啟動",
+    "脊髓仍可直接知道皮膚受刺激",
+    "肌肉自行判斷刺激並收縮",
+    "傳出神經會改成傳入神經"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "反射需先有刺激訊息進入脊髓，阻斷後難以啟動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺少傳入路徑時，脊髓不能無中生有取得刺激資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肌肉是動器官，不能取代受器與中樞判斷。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "神經路徑不會因阻斷就立即互換訊息方向。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "因果推論"
+  ],
+  "representationType": "路徑中斷",
+  "misconceptionTargets": [
+    "認為其他構造可自動取代傳入路徑"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "沿反射弧逐段檢查，傳入中斷會使整合中心缺少輸入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "脊髓不能繞過中斷直接得知刺激，肌肉不能自行判斷，傳出神經也不會轉換成傳入神經。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

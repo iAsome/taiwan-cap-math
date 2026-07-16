@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S175_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S175",
+  "stem": "低光下提高二氧化碳沒有增益，最合理原因是？",
+  "options": [
+    "葉片沒有活細胞",
+    "二氧化碳不是光合原料",
+    "光能先成為主要限制",
+    "速率二代表完全停止"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "葉片仍有速率二，沒有證據支持全部死亡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二氧化碳確為碳原料，只是此時不是最短缺條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩種碳濃度皆為二，顯示低光時碳源增加無法被充分利用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "速率二大於零，不能描述為完全停止。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判斷低光限制"
+  ],
+  "representationType": "交叉表",
+  "misconceptionTargets": [
+    "補充任何因素都有效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "配對核對同為低光時兩欄相等，排除補碳帶來可測提升。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "瓶頸核對提高光到中等後速率上升，支持原本光能不足。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

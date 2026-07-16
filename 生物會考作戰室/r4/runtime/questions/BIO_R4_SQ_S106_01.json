@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S106_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S106"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S106",
+  "stem": "哪個情境的細胞分裂直接使獨立個體數增加？",
+  "options": [
+    "情境甲與丙：兩者都沒有增加獨立個體數",
+    "情境甲：同一份組織分裂後缺口縮小",
+    "情境丙：同一胚的細胞由1增加到32",
+    "情境乙：細胞與獨立個體都由1增加到8"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "情境甲與丙都沒有增加獨立個體數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "情境甲只讓同一份組織的缺口縮小。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "情境丙的細胞雖增至32個，整體仍維持為一個胚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "情境乙的細胞與獨立個體都由1增至8。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "細胞增加等於個體增加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "情境乙每個子細胞可獨立生活，因此細胞數與個體數同步由一增至八。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "情境甲是組織修復，情境丙是同一胚生長，兩者都未增加獨立個體。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

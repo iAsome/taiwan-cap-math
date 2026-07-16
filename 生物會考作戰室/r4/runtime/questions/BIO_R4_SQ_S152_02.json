@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S152_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S152",
+  "stem": "觀察到葉片不漂浮後，下一個有效問題是什麼？",
+  "options": [
+    "葉片圓或細小？",
+    "植株完全沉水或葉片挺立水上？",
+    "花朵紅或白？",
+    "水深是否超過一公尺？"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "圓且寬或細小成片是第2步，只適用已在1a選擇漂浮葉片者。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "不漂浮對應1b並前往第3步，第3步正以完全沉水和挺立水上分流。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這份檢索表沒有以花色分流，新增紅白問題會離開既定路徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表中未設定水深界線，超過一公尺不能導向任何既有名稱。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "選擇後續特徵"
+  ],
+  "representationType": "路徑判斷",
+  "misconceptionTargets": [
+    "誤走另一分支"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "箭頭核對從1b直接讀到第3步，後續必須使用第3對敘述。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "適用分支核對排除只給漂浮葉片使用的第2步，完全沉水或挺立水上符合條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

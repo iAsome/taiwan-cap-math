@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲量10秒得14次，乙量15秒得20次，誰的換算脈搏較快？",
+  "options": [
+    "甲，約每分鐘84次",
+    "乙，因原始數字20較大",
+    "兩人必定完全相同",
+    "無法換算任何一人"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲十四乘六為八十四次，乙二十乘四為八十次，因此甲較快。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "原始計數受到量測時間影響，二十較大不能直接證明乙速率較快。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "換算後兩人相差每分鐘四次，不能說數值完全相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩筆都有明確時間，可在速率近似穩定下換算成每分鐘次數。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先各自換算同一分鐘單位，再比較八十四與八十，不能直接比十四與二十。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "這題也顯示原始計數較大不代表速率較高，分母時間同樣重要。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

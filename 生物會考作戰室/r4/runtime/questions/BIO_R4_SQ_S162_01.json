@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S162_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S162",
+  "stem": "哪箱在四週內分解的材料較多？",
+  "options": [
+    "無法由質量判斷",
+    "乙箱",
+    "兩箱相同",
+    "甲箱"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表中有相同起始量與剩餘量，可直接計算兩箱減少量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙仍有47公斤未分解材料，減少量明顯少於甲箱。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩箱起始相同但剩餘量不同，因此分解量不會相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "甲由60公斤降到18公斤，減少42公斤，比乙減少13公斤多。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算堆肥分解量"
+  ],
+  "representationType": "數據表",
+  "misconceptionTargets": [
+    "只比較起始量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "減量核對分別計算60減18與60減47，得到42公斤和13公斤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "剩餘量核對以較少未分解材料交叉驗證甲較快，不依氣味單一判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

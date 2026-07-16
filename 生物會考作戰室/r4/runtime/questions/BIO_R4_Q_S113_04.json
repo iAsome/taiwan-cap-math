@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S113_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "種子完全浸沒在煮沸冷卻並覆油的水中不萌發，主要缺少什麼？",
+  "options": [
+    "水分",
+    "種皮",
+    "儲存養分",
+    "可供呼吸的氧氣"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "種子已完全浸水，水分不是主要缺少項。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目沒有移除種皮，不能據此判定缺種皮。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "種子本身仍可能保有養分，處理主要改變氣體。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "煮沸與覆油可降低水中氧氣並阻止空氣補入。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "缺氧實驗"
+  ],
+  "representationType": "情境",
+  "misconceptionTargets": [
+    "水越多越易萌發"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此實驗刻意保持有水而降低氧氣，用來檢驗萌發中的呼吸需求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完全浸水不等於條件更好，若氣體交換受阻，胚可能因供能不足而停止生長。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

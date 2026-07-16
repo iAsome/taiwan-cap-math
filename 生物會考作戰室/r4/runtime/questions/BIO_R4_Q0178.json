@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0178",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "只有標示總倍率、沒有比例尺的截圖，為何難以直接量細胞實際大小？",
+  "options": [
+    "倍率完全沒有意義",
+    "截圖可能經縮放或裁切，顯示尺寸不再固定",
+    "細胞沒有實際大小",
+    "微米不能表示細胞"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "倍率仍描述原成像條件，但不是目前顯示尺度的充分資訊。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "後續縮放會改變螢幕公分與實物的對應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "細胞有實際尺寸，只是目前缺少可靠換算基準。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "微米正是常用的細胞尺度單位。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "方法限制"
+  ],
+  "representationType": "數位截圖",
+  "misconceptionTargets": [
+    "標示倍率可取代比例尺"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "總倍率若脫離原顯示條件，無法把目前像素或公分直接換成微米。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "加入與影像同步的比例尺可讓縮放後仍保留估算依據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

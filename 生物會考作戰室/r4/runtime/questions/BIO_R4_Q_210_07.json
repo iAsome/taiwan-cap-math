@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_210_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S210"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "哪項資料最能補強空氣污染與健康反應的時間關係？",
+  "options": [
+    "街道名稱",
+    "醫院外觀",
+    "每日污染濃度與同時期群體健康指標",
+    "居民姓氏"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "街道名稱不提供暴露與反應時序。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "建築外觀不能量化群體健康變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同步時間序列可檢查暴露變化是否先於或伴隨反應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "姓氏與污染造成的生物反應沒有直接關係。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用"
+  ],
+  "representationType": "時間序列",
+  "misconceptionTargets": [
+    "忽略時序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "建立時間順序是評估因果假說的重要一環。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時間序列仍需控制季節與其他共同變化因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

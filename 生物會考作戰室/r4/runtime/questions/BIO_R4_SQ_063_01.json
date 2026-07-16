@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_SQ_063_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S063",
+  "stem": "哪個狀態的每分鐘換氣量最高？",
+  "options": [
+    "恢復3分鐘",
+    "休息",
+    "跑步",
+    "恢復6分鐘"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "恢復3分鐘為16公升，低於跑步。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "休息時每分鐘換氣量只有六公升，遠低於運動時的三十六公升。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "跑步時36公升是表中最大值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "恢復6分鐘8.4公升也較低。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐列比較每分鐘換氣量，36公升最大且對應跑步。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "答案直接來自表格，不需只用呼吸頻率另行猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

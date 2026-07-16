@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_062_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S062"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "吸入氧21%、呼出氧16%，最直接支持哪項結論？",
+  "options": [
+    "部分氧進入血液，但呼出氣仍有氧",
+    "人體完全未利用氧",
+    "呼出氣全部是二氧化碳",
+    "氮在呼出氣中消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "氧比例下降且非零，符合部分交換。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "比例下降反駁完全未利用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "氧仍有16%，不能說全部是二氧化碳。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題目資料沒有顯示氮氣消失，反而顯示呼出氣仍含大量氮氣。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "21降到16表示有一部分氧離開肺泡氣，但仍保留相當比例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「部分氧進入血液，但呼出氣仍有氧」完整對應兩個數值，不加入未測的其他氣體結論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

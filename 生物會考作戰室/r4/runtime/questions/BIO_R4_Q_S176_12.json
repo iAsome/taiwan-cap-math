@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S176_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "無法辨色的學生要判讀澱粉實驗，哪種紀錄最合適？",
+  "options": [
+    "只提供深藍與淺藍照片",
+    "不提供任何文字",
+    "只說顏色很漂亮",
+    "以儀器數值或陽性陰性文字搭配觸覺區位圖"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只靠色差會排除無法辨色者，也缺少客觀尺度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有資料便無法判斷各處檢驗結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "美感描述不代表澱粉是否存在或含量差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "數值與文字可獨立判讀，觸覺圖則保留葉片分區位置。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移無障礙紀錄"
+  ],
+  "representationType": "資料呈現",
+  "misconceptionTargets": [
+    "檢驗只能靠顏色"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可及性核對不看顏色仍可知道每區結果與相對位置。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "科學性核對儀器值或明確分類比主觀色名更適合跨人比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

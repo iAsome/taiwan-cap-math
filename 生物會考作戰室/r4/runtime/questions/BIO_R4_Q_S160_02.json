@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S160_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "飲用被排泄物污染且未煮沸的水，最可能增加哪條途徑的感染風險？",
+  "options": [
+    "血液",
+    "糞口",
+    "蚊媒",
+    "皮膚完整時的穿刺"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹沒有血液混入或針具穿刺，不能判為直接血液暴露。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "污染水把排泄物中的病原經口攝入，符合糞口傳播的入口與媒介。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有蚊蟲攜帶病原並叮咬的過程，飲水本身不是病媒傳播。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "水經口進入消化道，不是由完整皮膚發生穿刺，因此路徑描述不合。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨識糞口途徑"
+  ],
+  "representationType": "飲水事件",
+  "misconceptionTargets": [
+    "只要是水就屬病媒"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "入口核對確認病原隨水由口腔進入，直接對應糞口途徑名稱。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "來源核對追查到排泄物污染，與單純水中化學物質或蚊蟲叮咬清楚區分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要比較運動前後某濃度，哪項設計最可靠？",
+  "options": [
+    "前後使用不同單位",
+    "同一方法在明確時點重複量測",
+    "只記感覺不記數字",
+    "只保留符合預期者"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單位不同又不換算會使前後數字無法公平比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一致方法、明確時間與重複測量可降低方法差異與偶然誤差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主觀感覺無法取代濃度數值，也不能和參考範圍比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "選擇性保留結果會偏向預期，無法呈現完整資料。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制量測方法讓活動狀態成為主要差異，時間點則建立趨勢順序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若活動也改變飲食或飲水，應同步記錄這些可能影響濃度的因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

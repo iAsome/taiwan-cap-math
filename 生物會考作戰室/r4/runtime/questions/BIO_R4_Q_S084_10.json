@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S084_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某模型以感光元件、傳輸線、處理器依序模擬視覺。傳輸線最接近哪個人體構造？",
+  "options": [
+    "視網膜受器",
+    "視神經",
+    "水晶體",
+    "眼瞼"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "感光元件本身較接近視網膜受器。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "視神經把眼內產生的訊息傳到腦，功能符合傳輸線。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水晶體折射光線，不負責傳送神經訊息。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "眼瞼主要保護眼球，並非此模型的訊息線。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "類比"
+  ],
+  "representationType": "功能模型",
+  "misconceptionTargets": [
+    "依外形而非功能配對"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "按接收、傳輸、處理三功能對應，傳輸線就是視神經角色。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "視網膜受器負責感光、水晶體負責折射、眼瞼負責保護，只有視神經負責把訊息送往腦。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

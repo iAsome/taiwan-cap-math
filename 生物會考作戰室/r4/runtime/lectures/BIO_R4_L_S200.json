@@ -1,0 +1,132 @@
+{
+  "id": "BIO_R4_L_S200",
+  "subject": "biology",
+  "unitId": "BIO_R4_U28",
+  "skillId": "BIO_R4_S200",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S199"
+  ],
+  "objectives": [
+    "依機制辨識棲地破壞、污染、過度利用與外來種威脅。",
+    "從複合情境找直接證據，區分主要壓力與伴隨因素。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S200_SEC_01",
+      "title": "棲地破壞改變生活空間",
+      "content": "填湖、砍林、河川水泥化與道路切割會減少或分割生物棲地，使覓食、繁殖與遷移受阻。判定重點是生活空間的面積、連通或結構被改變。"
+    },
+    {
+      "id": "BIO_R4_L_S200_SEC_02",
+      "title": "污染改變環境品質",
+      "content": "農藥、重金屬、污水、噪音與強光可能超過生物耐受範圍。需有污染物濃度、暴露途徑或生理反應等證據，不能只因環境看起來髒就下結論。"
+    },
+    {
+      "id": "BIO_R4_L_S200_SEC_03",
+      "title": "過度利用超過補充速度",
+      "content": "捕撈、採集、狩獵或伐木若長期高於族群繁殖與補充能力，會使資源下降。利用本身不必然等於過度，需比較採取量與族群更新資料。"
+    },
+    {
+      "id": "BIO_R4_L_S200_SEC_04",
+      "title": "外來種造成新的交互作用",
+      "content": "外來種是由人為直接或間接帶離原分布地的生物；只有在當地擴散並造成競爭、捕食、疾病或棲地改變時，才構成明確生態威脅。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S200_EX_01",
+      "prompt": "濕地被填平建停車場，水鳥繁殖地消失，主要威脅為何？",
+      "steps": [
+        "辨認改變的是生活空間本身。",
+        "繁殖地面積直接減少，符合棲地破壞。"
+      ],
+      "answer": "棲地破壞。",
+      "why": "題幹沒有污染濃度或捕捉資料，最直接證據是濕地被填平而失去繁殖空間。"
+    },
+    {
+      "id": "BIO_R4_L_S200_EX_02",
+      "prompt": "溪流重金屬升高且魚鰓受損，主要威脅為何？",
+      "steps": [
+        "找出環境中的有害物質。",
+        "濃度升高與生理損傷建立暴露證據。"
+      ],
+      "answer": "污染。",
+      "why": "重金屬透過水體接觸魚鰓並造成損傷，比棲地面積或捕撈更直接解釋；仍須確認暴露與損傷的時序相符。"
+    },
+    {
+      "id": "BIO_R4_L_S200_EX_03",
+      "prompt": "外地引入的蛙大量捕食本地昆蟲，應如何分類？",
+      "steps": [
+        "確認蛙由人為帶入原分布區外。",
+        "確認其擴散並造成新的捕食壓力。"
+      ],
+      "answer": "外來種威脅。",
+      "why": "不是所有外來生物都有害；本例因有大量捕食本地生物的直接影響而構成威脅。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "看到垃圾就一定能判定所有物種受污染。",
+      "whyWrong": "垃圾存在不等於已知暴露劑量與生物反應，也可能伴隨棲地改變。",
+      "correction": "補測污染物、暴露途徑與生物指標，再判斷影響機制。"
+    },
+    {
+      "belief": "任何捕撈都叫過度利用。",
+      "whyWrong": "若採取量低於族群補充能力，利用不一定導致長期下降。",
+      "correction": "比較捕撈量、年齡結構與繁殖補充率，判斷是否超過承受量。"
+    },
+    {
+      "belief": "所有外來種都必然成為入侵威脅。",
+      "whyWrong": "有些外來種無法建立族群，或尚未造成可證實的生態衝擊。",
+      "correction": "分開記錄來源、擴散能力與實際影響，不只看是否外來。"
+    },
+    {
+      "belief": "一個地點只能有一種威脅。",
+      "whyWrong": "道路可能同時切割棲地、增加光害並協助外來種擴散。",
+      "correction": "逐項列出證據，辨認主要與次要壓力，不強迫只能選一類。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "森林被道路分割成小塊，最直接是哪類威脅？",
+      "answer": "棲地破壞與破碎化。",
+      "reason": "道路改變棲地連通性，使生物遷移與繁殖交流受到阻礙。"
+    },
+    {
+      "prompt": "採集量長期高於族群繁殖補充量，屬哪類威脅？",
+      "answer": "過度利用。",
+      "reason": "移除速度超過補充速度，會使族群數量與年齡結構惡化。"
+    },
+    {
+      "prompt": "外地植物出現一次就能稱入侵威脅嗎？",
+      "answer": "不能只憑一次出現判定。",
+      "reason": "還需證明建立、擴散及對本地生物或環境造成實際影響。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  }
+}

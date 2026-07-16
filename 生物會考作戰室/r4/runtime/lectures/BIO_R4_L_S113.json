@@ -1,0 +1,126 @@
+{
+  "id": "BIO_R4_L_S113",
+  "subject": "biology",
+  "unitId": "BIO_R4_U15",
+  "skillId": "BIO_R4_S113",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S112"
+  ],
+  "objectives": [
+    "辨認種皮、胚與種子內養分構造的功能。",
+    "運用控制變因實驗判斷水、溫度、氧氣與光對種子萌發的影響。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S113_SEC01",
+      "title": "種皮與胚",
+      "content": "種皮包覆種子內部，可降低機械傷害與不當失水。胚是種子內可發育成幼苗的幼小植物體，萌發後胚根與胚芽等構造逐步生長。"
+    },
+    {
+      "id": "BIO_R4_L_S113_SEC02",
+      "title": "養分供應",
+      "content": "種子萌發初期尚未長出足夠葉片，需利用子葉或胚乳等構造儲存的養分。不同植物的主要養分儲存位置不同，不能把子葉與胚乳視為所有種子都相同。"
+    },
+    {
+      "id": "BIO_R4_L_S113_SEC03",
+      "title": "共同條件",
+      "content": "多數種子萌發需要足量水以啟動代謝、適宜溫度讓酵素正常作用，以及氧氣供細胞呼吸釋放能量。水太少或完全淹水缺氧都可能抑制萌發。"
+    },
+    {
+      "id": "BIO_R4_L_S113_SEC04",
+      "title": "實驗判斷",
+      "content": "研究萌發條件時一次只改變一項因素，並使用同批種子及相同觀察時間。光照需求會因物種而異，須由明暗對照資料判斷，不可直接列為所有種子的共同必要條件。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S113_EX01",
+      "prompt": "乾燥種子吸水後體積增加並開始代謝，水的主要作用為何？",
+      "steps": [
+        "找出吸水發生於萌發初期。",
+        "連結水與細胞代謝及種皮軟化。"
+      ],
+      "answer": "提供啟動萌發代謝所需的水分。",
+      "why": "吸水能使種子內代謝反應恢復，也可能使外層軟化，讓胚開始生長；水不是直接提供全部能量。"
+    },
+    {
+      "id": "BIO_R4_L_S113_EX02",
+      "prompt": "種子完全浸在缺氧水中不萌發，最可能缺少什麼？",
+      "steps": [
+        "確認水分充足但環境缺氧。",
+        "連結胚生長與細胞呼吸能量。"
+      ],
+      "answer": "足夠氧氣。",
+      "why": "萌發中的胚需要呼吸作用釋放可用能量，完全淹水可能使氧氣供應不足，即使水很多也不能正常萌發。"
+    },
+    {
+      "id": "BIO_R4_L_S113_EX03",
+      "prompt": "同種種子在明暗兩組萌發率相近，可得到何種有限結論？",
+      "steps": [
+        "確認除光照外其他條件相同。",
+        "只對本物種與本實驗範圍下結論。"
+      ],
+      "answer": "此條件下光不是該種子萌發的必要差異因素。",
+      "why": "明暗結果相近表示此批種子可在兩種光照下萌發，但不能擴大成所有植物種子都不受光影響。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "種皮是萌發後長成整株植物的部分。",
+      "whyWrong": "主要發育成幼苗的是種子內的胚，不是外層種皮。",
+      "correction": "種皮負責包覆保護，胚才會繼續生長形成幼苗。"
+    },
+    {
+      "belief": "種子萌發只需要水，其他條件都不重要。",
+      "whyWrong": "胚的代謝還需要適宜溫度與呼吸所需氧氣。",
+      "correction": "應同時考慮水、溫度、氧氣，並依物種檢查光需求。"
+    },
+    {
+      "belief": "水越多，任何種子的萌發率一定越高。",
+      "whyWrong": "完全淹水可能造成缺氧，過多水也可能促進腐敗。",
+      "correction": "萌發需要足量而非無限水分，並須維持可呼吸環境。"
+    },
+    {
+      "belief": "所有植物種子萌發都絕對需要光照。",
+      "whyWrong": "不同物種對光反應不同，有些種子可在黑暗中萌發。",
+      "correction": "光是否必要須由特定物種的明暗對照實驗判斷。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "種子中哪一構造可發育成幼苗？",
+      "answer": "胚。",
+      "reason": "胚是幼小植物體，萌發後各部分會逐步生長。"
+    },
+    {
+      "prompt": "多數種子萌發共同需要哪些條件？",
+      "answer": "水、適宜溫度與氧氣。",
+      "reason": "這些條件分別支持代謝啟動、酵素作用與呼吸供能。"
+    },
+    {
+      "prompt": "如何判斷光是否為某種種子的必要條件？",
+      "answer": "設置其他條件相同的明暗組。",
+      "reason": "只改變光照並比較萌發率，才能隔離光的影響。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

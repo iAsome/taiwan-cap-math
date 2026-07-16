@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_127_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S127"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某報告把人類配子的二十三條寫成二十三對，錯誤會造成什麼結果？",
+  "options": [
+    "少算二十二條",
+    "只影響性染色體名稱",
+    "讓配子看似沒有DNA",
+    "把配子染色體總數誤算成四十六條"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二十三對不是只少算，反而會把總數加倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "對與條的混淆影響全部染色體計數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "即使誤寫成對，仍沒有表示配子無DNA。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "二十三對換算為四十六條，正是錯誤結果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "混淆條與對造成染色體數加倍"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "一對含兩條，所以把二十三條寫成對會錯算成四十六條。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「把配子染色體總數誤算成四十六條」明確指出計數後果，其他選項未處理單位加倍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

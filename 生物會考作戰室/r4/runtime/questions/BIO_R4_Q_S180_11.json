@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S180_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "都市公園鳥類減少，要同時檢查哪組生物與非生物因子？",
+  "options": [
+    "公園名稱與招牌顏色",
+    "研究者年齡與相機品牌",
+    "食物昆蟲量及夜間噪音、光照",
+    "只記一隻鳥羽色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱與招牌不是主要生態機制指標。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "研究工具資訊不能代表鳥類環境壓力。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "昆蟲是生物資源，噪音與光屬非生物干擾。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單鳥羽色無法解釋公園整體數量變化。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移都市調查"
+  ],
+  "representationType": "公民科學",
+  "misconceptionTargets": [
+    "只測單類因子"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "類別核對食物昆蟲具生命，夜間光噪為物理環境。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "問題核對兩類因子都可能影響覓食、棲息與繁殖，值得共同監測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

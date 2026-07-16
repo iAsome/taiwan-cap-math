@@ -1,0 +1,89 @@
+{
+  "id": "BIO_R4_SQ_138_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S138"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST138",
+  "stem": "哪項結論最符合這組資料？",
+  "options": [
+    "Q 的活性在高溫下降較明顯，顯示版本效果受溫度影響",
+    "P 與 Q 的遺傳資訊必定相同",
+    "Q 在所有溫度都完全沒有活性",
+    "40°C 必定使所有細菌立即死亡"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "低溫近似而高溫分化，支持版本與溫度交互影響功能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目已指出兩種酵素版本不同，不能反向說資訊必定相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "Q 在兩個溫度都有量得活性，不能說完全沒有。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "仍量得酵素活性，且資料沒有細菌死亡率的測量。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "忽略條件性功能差異"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-038"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「Q 的活性在高溫下降較明顯，顯示版本效果受溫度影響」同時涵蓋四個數值，並把結論限定在酵素活性而非未測的死亡結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同一變異在不同環境呈現不同效果，說明有利或有害需依實際條件判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

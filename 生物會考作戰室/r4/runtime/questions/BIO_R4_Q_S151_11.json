@@ -1,0 +1,90 @@
+{
+  "id": "BIO_R4_Q_S151_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "資料庫規定甲組為體長大於10公分，乙組為體長小於10公分。量得正好10公分者無法歸組，應如何修正？",
+  "options": [
+    "刪除量測值",
+    "讓兩組都包含10公分",
+    "其中一組改為大於或等於10公分",
+    "改成目測大小"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪掉十公分紀錄只隱藏邊界個體，下一個十公分標本仍會遇到相同缺口。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若甲乙都包含十公分，邊界個體會同時落入兩組，從遺漏改成重疊。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "只在一組加入等號，十公分者便有唯一去處，其他大於或小於者也維持互斥。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "目測大小會失去原有公分界線，觀察者可能對接近十公分者作不同判斷。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "處理分類邊界"
+  ],
+  "representationType": "數值規則",
+  "misconceptionTargets": [
+    "忽略等號造成的缺口"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-031",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-043",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-020",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-039",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "邊界測試分別代入九、十、十一公分，在單側加入等號可使三個數值都恰好進入一組。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "最小修改核對顯示只需在甲或乙一側加入等號，不必刪資料或降低量測精度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

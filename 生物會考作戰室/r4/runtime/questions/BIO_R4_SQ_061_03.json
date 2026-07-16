@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_061_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S061"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S061",
+  "stem": "若收縮組葡萄糖不足，最合理預測為何？",
+  "options": [
+    "肺泡數量立即增加",
+    "二氧化碳變成葡萄糖",
+    "可轉換能量來源受限，能量指標可能下降",
+    "細胞不再需要氧與養分"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "細胞培養養分不會立即改變肺泡數量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二氧化碳不會自動逆轉成全部葡萄糖。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "反應物不足會限制細胞呼吸與能量產生。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "活細胞仍有基本代謝需求。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-025"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料顯示葡萄糖消耗與較高能量指標並行，缺糖會限制反應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「可轉換能量來源受限，能量指標可能下降」是依反應物角色作出的有限預測，沒有跨到無關構造。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

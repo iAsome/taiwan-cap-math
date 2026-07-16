@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S173_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S173"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S173",
+  "stem": "哪一區同時具有較多葉綠體、光照與澱粉形成？",
+  "options": [
+    "綠色照光區",
+    "綠色遮光區",
+    "白色照光區",
+    "白色遮光區"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "該區平均三十四個葉綠體、有光且澱粉檢驗明顯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "雖有三十三個葉綠體，但遮光後未見澱粉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "雖接受光照，平均僅一個葉綠體且未見澱粉。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此區既遮光、葉綠體少，也沒有澱粉訊號。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取三條件交集"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "只要綠色不需光"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "逐欄核對綠色照光列同時滿足場所、能量與產物三項條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "排除核對其餘三列至少缺光或缺大量葉綠體，且結果皆為未見。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

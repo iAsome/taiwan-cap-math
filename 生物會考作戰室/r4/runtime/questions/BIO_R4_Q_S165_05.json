@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S165_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S165"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "幼苗移植後根毛大量受損，即使土壤濕潤仍萎凋，最合理原因是？",
+  "options": [
+    "吸水表面積減少",
+    "葉片突然變成根",
+    "莖不再有細胞",
+    "土壤水全部消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "根毛減少使可接觸土壤水的表面下降，吸收可能暫時跟不上散失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "器官不會因移植立即互換，葉片仍維持葉的構造與位置。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "根毛受損不代表莖的全部細胞同時消失，兩者範圍不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹明說土壤濕潤，不能把萎凋解釋成所有水分消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論根毛受損"
+  ],
+  "representationType": "移植情境",
+  "misconceptionTargets": [
+    "有水就必定不萎凋"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-015"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "條件核對保留土壤有水，將問題定位在吸收能力而非水源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "構造核對由根毛損失連到接觸面積下降，形成可檢驗機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

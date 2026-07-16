@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S152_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S152",
+  "stem": "某植物葉片漂浮水面且細小成片，檢索結果為何？",
+  "options": [
+    "浮萍",
+    "香蒲",
+    "水蘊草",
+    "荷花"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "漂浮水面先選1a，細小成片再選2b，該完整路徑的終點是浮萍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "香蒲的葉片挺立水面上，應由葉片不漂浮的1b進入3b。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水蘊草植株完全沉水，檢索路徑為1b到3a，不符合漂浮葉片。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "荷花須先走1a，再符合葉片圓且寬的2a，與細小成片不符。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "沿檢索表辨識"
+  ],
+  "representationType": "文字檢索表",
+  "misconceptionTargets": [
+    "只看第一步猜名稱"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "路徑核對依觀察順序先走1a，再由細小成片選2b，沒有跳過任何步驟。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "特徵反查將浮萍終點對回漂浮與細小兩項，兩項皆與標本描述一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

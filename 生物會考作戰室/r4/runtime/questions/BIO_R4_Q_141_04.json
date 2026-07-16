@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_141_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "比較兩種水稻技術的產量時，哪個單位最適合公平比較？",
+  "options": [
+    "每個農場的總收穫袋數",
+    "每位農民的年齡",
+    "每包種子的廣告字數",
+    "每公頃在相同季節的收穫量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "農場面積不同會使總袋數受規模影響，難以公平比較。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "農民年齡不是作物技術產量的共同效益單位。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "廣告內容長短不能反映實際田間收穫成果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "固定面積與季節後，數值較能反映技術表現差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "使用總量比較不同規模方案"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「每公頃在相同季節的收穫量」使用共同面積與時間背景，降低規模和季節造成的比較偏差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "還需安排相近土壤、管理與重複田區，避免地點差異被誤認為技術效益。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

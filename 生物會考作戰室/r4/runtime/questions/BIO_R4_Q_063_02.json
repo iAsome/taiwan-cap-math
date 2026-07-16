@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_063_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "每分鐘呼吸次數稱為哪一種資料？",
+  "options": [
+    "每次氣量",
+    "呼吸頻率",
+    "血糖濃度",
+    "肺泡面積"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "每次氣量是單次吸入或呼出的體積。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "每分鐘次數正是呼吸頻率的定義。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "血糖是血液中的養分濃度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肺泡面積屬於構造資料，不能直接代表每分鐘呼吸次數的測量值。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "題幹的單位是次數除以時間，直接對應呼吸頻率。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「呼吸頻率」符合測量定義，其他指標的物理量與單位不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

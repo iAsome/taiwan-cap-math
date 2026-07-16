@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0367",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "百分之五溶液中增重，百分之十中減重。平衡濃度最合理的說法為何？",
+  "options": [
+    "一定是百分之零",
+    "一定精確為百分之七點五",
+    "可能位於百分之五與百分之十之間",
+    "一定高於百分之十"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "零濃度不在符號轉換的兩點之間。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有證據保證關係線性或零點恰在中點。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "正負變化在兩測點間轉換，支持零點位於其間。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "高於百分之十不符合已在百分之十出現負值的區間判斷。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "區間估計"
+  ],
+  "representationType": "兩點資料",
+  "misconceptionTargets": [
+    "線性硬插值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料稀疏時以區間表述，不把中點當成必然精確答案。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "可在區間內增加濃度並重複測量，逐步縮小估計範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

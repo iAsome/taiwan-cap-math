@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_051_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S051"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "製作模擬消化液時，若要分解澱粉應優先加入什麼？",
+  "options": [
+    "蛋白質酵素",
+    "膽汁",
+    "澱粉酵素",
+    "紅血球"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "蛋白質酵素的作用對象是蛋白質，無法完成本模型的澱粉分解目標。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "膽汁主要乳化脂質而不分解澱粉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "澱粉酵素與目標受質配對。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紅血球負責氣體運送而非消化。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "消化系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-027",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-008",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-024",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-003",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-035"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "模擬設計應依受質選酵素，澱粉需要相應澱粉酵素。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「澱粉酵素」符合專一性，「蛋白質酵素」、「膽汁」、「紅血球」的受質或生理功能皆不相符。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

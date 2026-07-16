@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S180_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S180",
+  "stem": "甲與丙、乙與丁共同顯示哪個趨勢？",
+  "options": [
+    "高溫池藤壺都較多",
+    "水溫與藤壺完全相同",
+    "相近掠食螺數下，高溫池藤壺較少",
+    "掠食螺是非生物因子"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙少於甲、丁少於乙，高溫池並未較多。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "溫度及藤壺數值皆有明顯差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩組配對都顯示三十四度池的藤壺數較低。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "掠食螺是活生物，不會因表格而變成非生物。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "整合溫度趨勢"
+  ],
+  "representationType": "交叉比較",
+  "misconceptionTargets": [
+    "單次配對即可無限外推"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "低掠食螺配對核對甲八十四隻明顯高於丙四十六隻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "高螺配對核對乙三十一高於丁十九，方向再次一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

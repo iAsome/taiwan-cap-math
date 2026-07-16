@@ -1,0 +1,133 @@
+{
+  "id": "BIO_R4_L_S185",
+  "subject": "biology",
+  "unitId": "BIO_R4_U25",
+  "skillId": "BIO_R4_S185",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S184"
+  ],
+  "objectives": [
+    "分析棲地改變、污染、捕撈與外來種如何改變群集結構",
+    "由前後對照與多指標資料評估人類活動及復育措施"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S185_SEC_01",
+      "title": "棲地改變",
+      "content": "道路、開發與河道整治會縮小或切割棲地，降低個體移動與族群交流。邊緣光熱、噪音和捕食風險也可能改變，使群集不只因面積減少而變化。"
+    },
+    {
+      "id": "BIO_R4_L_S185_SEC_02",
+      "title": "污染與利用",
+      "content": "肥料逕流可造成藻類大量增生與夜間缺氧；農藥可能影響非目標生物。過度捕撈會先降低目標族群，也可能透過食物關係改變其他物種數量。"
+    },
+    {
+      "id": "BIO_R4_L_S185_SEC_03",
+      "title": "外來種與連鎖效應",
+      "content": "外來種若缺少天敵並快速繁殖，可能競爭、捕食或傳播疾病，使原生群集的豐富度與均勻度改變。外來不必然等於入侵，需有擴散和生態衝擊證據。"
+    },
+    {
+      "id": "BIO_R4_L_S185_SEC_04",
+      "title": "評估與復育",
+      "content": "應比較活動前後及未受影響對照區，追蹤物種豐富度、相對數量、指標種與環境條件。復育需處理壓力來源並長期監測，不能只看短期總個體數。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S185_EX_01",
+      "prompt": "河川受肥料逕流後藻增加、溶氧下降、魚種減少，如何連結？",
+      "steps": [
+        "辨認營養鹽輸入",
+        "連結藻增與分解耗氧",
+        "以低氧解釋敏感魚種下降"
+      ],
+      "answer": "營養鹽污染可經優養化改變魚類群集。",
+      "why": "藻類及其死亡分解增加耗氧，使耐低氧差的魚種先減少；物種組成改變不只是魚總數的單一波動。"
+    },
+    {
+      "id": "BIO_R4_L_S185_EX_02",
+      "prompt": "道路把森林分成小塊，內部物種下降，可能機制是什麼？",
+      "steps": [
+        "計算棲地面積與連通性下降",
+        "辨認邊緣比例增加",
+        "連結遷移受阻與邊緣環境"
+      ],
+      "answer": "棲地切割同時造成隔離與邊緣效應。",
+      "why": "道路阻礙個體交流，且小斑塊更大比例接近光熱、噪音不同的邊緣，兩條路徑都能改變森林群集。"
+    },
+    {
+      "id": "BIO_R4_L_S185_EX_03",
+      "prompt": "移除外來魚後原生蝦增加，能否宣稱生態系完全恢復？",
+      "steps": [
+        "肯定原生蝦改善",
+        "檢查其他物種與環境",
+        "限制完全恢復的結論"
+      ],
+      "answer": "不能，只能說原生蝦指標改善，仍需長期多物種監測。",
+      "why": "單一物種短期增加不能代表食物網、豐富度與水質都回到基準；外來魚幼體或其他壓力也可能仍存在。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "開發只影響被直接移除的植物。",
+      "whyWrong": "棲地縮小、隔離與邊緣效應還會影響動物、微生物與交互關係。",
+      "correction": "應追蹤多類群、連通性及邊緣環境，評估群集層次影響。"
+    },
+    {
+      "belief": "外來物種一定造成生態危害。",
+      "whyWrong": "有些外來種未擴散或未造成可測衝擊，不能只靠來源分類入侵。",
+      "correction": "需證明其建立、擴散及對原生物種或生態功能的負面效果。"
+    },
+    {
+      "belief": "總個體數恢復就代表群集完全恢復。",
+      "whyWrong": "少數耐受種大量增加可掩蓋敏感物種消失，豐富度與均勻度仍可能很低。",
+      "correction": "同時比較物種組成、相對數量、功能群與環境品質。"
+    },
+    {
+      "belief": "污染停止後群集必定立刻回到原狀。",
+      "whyWrong": "底泥污染、棲地破壞、種源不足與食物網改變可能延遲恢復。",
+      "correction": "移除污染源後仍須修復棲地並以多年對照資料評估恢復路徑。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "棲地切割除面積外還改變什麼？",
+      "answer": "連通性與邊緣環境。",
+      "reason": "道路可阻礙個體交流，並增加受光熱與噪音影響的邊緣比例。"
+    },
+    {
+      "prompt": "為何不能只看群集總個體數？",
+      "answer": "總數可能掩蓋物種組成與均勻度下降。",
+      "reason": "少數耐受種增加時，總數可不變但敏感物種已消失。"
+    },
+    {
+      "prompt": "判定外來種入侵需哪些證據？",
+      "answer": "建立擴散並造成可測生態衝擊。",
+      "reason": "外來來源本身不等於危害，需觀察對原生群集的負面結果。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  }
+}

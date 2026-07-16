@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S160_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S160",
+  "stem": "由丙丁資料可優先提出哪項假說？",
+  "options": [
+    "未煮沸飲料造成所有呼吸道症狀",
+    "戶外停留必定造成腸胃症狀",
+    "長時間不通風練唱增加呼吸道暴露",
+    "只要參加活動就必然發病"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙丁的主要差異是練唱環境，不是兩組是否飲用未煮沸飲料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "丁記錄的是呼吸道症狀一人，沒有戶外造成腸胃症狀的資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "丙有12/20、丁有1/20出現呼吸道症狀，支持檢查密閉長時暴露。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四組都有未發病者，參加活動本身不會推出每個人必然發病。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "由比例提出路徑假說"
+  ],
+  "representationType": "群聚資料",
+  "misconceptionTargets": [
+    "同場即必然同途徑"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "症狀核對先限定呼吸道結果，避免把甲乙的腸胃事件混入丙丁。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "條件核對比較室內長時與戶外短時，通風、時間與近距離接觸是可再測的路徑因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

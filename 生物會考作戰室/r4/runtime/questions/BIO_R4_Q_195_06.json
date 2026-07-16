@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_195_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S195"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若植物一小時光合作用吸收12單位二氧化碳，呼吸釋出4單位，淨變化為何？",
+  "options": [
+    "淨釋出16單位",
+    "淨吸收8單位",
+    "淨吸收48單位",
+    "完全沒有變化"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "應以吸收減釋出，不是把方向相反者相加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "12減4等於8，且吸收量較大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩個速率相減不會得到相乘結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只有兩速率相等時才可能淨變化為零。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算二氧化碳淨值"
+  ],
+  "representationType": "速率運算",
+  "misconceptionTargets": [
+    "淨值等於兩作用相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "以吸收為正方向計算，12－4得到淨吸收8單位。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "淨值小於總光合作用量，因呼吸同時抵銷部分變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

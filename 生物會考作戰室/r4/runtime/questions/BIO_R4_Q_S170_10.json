@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S170_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "植被區白天地表較涼，但夜間兩區溫度相近。哪個解釋最合理？",
+  "options": [
+    "植物白天不存在",
+    "遮陰效應在有太陽輻射時較明顯",
+    "夜間植物全部死亡",
+    "溫度計夜間不能使用"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "植物在白天仍存在，且正是造成遮陰的構造。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "夜間沒有直接日照可遮，白天能量輸入差異因此較突出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "夜間溫度相近不代表植被週期性死亡。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一般溫度計可在夜間量測，資料沒有儀器失效證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解釋時段差異"
+  ],
+  "representationType": "時間資料",
+  "misconceptionTargets": [
+    "植被降溫任何時段相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時段核對遮陰主要改變太陽輻射到地表的量，白天作用條件更明確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結果核對夜間相近並未否定白天差異，反而符合機制隨日照改變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

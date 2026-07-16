@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ0072",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST024",
+  "stem": "模型丙預測高濃度溶液中細胞體積下降，但實驗沒有下降。下一步何者最合理？",
+  "options": [
+    "刪掉實驗資料以保留模型",
+    "把甲模型塗得更逼真",
+    "直接宣布所有細胞都不會失水",
+    "重複實驗並檢查丙的膜通透性假設與參數"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪除不符資料會妨礙檢驗，也可能掩蓋模型缺漏。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲的外觀不會處理丙的預測機制與實驗差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一次衝突不足以推翻所有情境，仍需確認條件與細胞種類。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "同時檢查資料可靠性與模型假設，能用證據定位差異原因。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "證據修模"
+  ],
+  "representationType": "資料延伸",
+  "misconceptionTargets": [
+    "模型不可修正"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "模型與資料不符是查核兩者的起點，不是任意選一方相信。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "修正應聚焦預測所依賴的濃度、通透性與時間等參數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

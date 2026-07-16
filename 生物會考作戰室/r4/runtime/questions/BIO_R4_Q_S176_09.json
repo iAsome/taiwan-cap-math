@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S176_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "正常空氣組有澱粉、去二氧化碳組無澱粉，但後者吸收劑也釋放毒物。最謹慎判斷是？",
+  "options": [
+    "毒物是替代原因，需用不釋毒的控碳方法重做",
+    "已完全證明只因缺碳",
+    "毒物一定促進光合",
+    "不用設置任何對照"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "吸收劑同時改變碳源與毒物暴露，陰性結果有兩種解釋。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "未隔離毒物前不能把全部差異只歸於二氧化碳。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "結果是無澱粉，並不支持毒物促進光合作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "正因存在替代原因，更需要額外對照與改良方法。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估試劑副作用"
+  ],
+  "representationType": "因果推理",
+  "misconceptionTargets": [
+    "處理有效即無副作用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "機制核對毒物可傷害細胞，使澱粉減少而不必經由碳源限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "改進核對使用安全吸收劑或設吸收劑但補碳組，可分辨兩種作用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

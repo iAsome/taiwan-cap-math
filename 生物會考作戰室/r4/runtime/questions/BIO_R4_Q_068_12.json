@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "智慧手環只每五分鐘取樣十秒脈搏，何種限制最重要？",
+  "options": [
+    "一定會使心臟停止",
+    "可直接知道每次送血量",
+    "能證明所有時刻都完全相同",
+    "可能漏掉取樣間短暫變化，且短時計數誤差較大"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "手環量測不會因取樣方式直接使使用者心臟停止跳動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "脈搏頻率取樣沒有直接測量心臟每次送出的血液體積。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "間隔取樣反而無法證明未量測時刻都與取樣值完全相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "五分鐘間隔可能漏掉短暫升降，十秒計數也較受一兩次誤差影響。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "資料解析度由取樣間隔與每次量測長度共同決定，兩者都限制細節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此資料仍可看長期趨勢，但不應用來宣稱每一秒的脈搏或每搏輸出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

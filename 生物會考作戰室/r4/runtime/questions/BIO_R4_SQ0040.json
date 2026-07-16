@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ0040",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST014",
+  "stem": "表中四十倍物鏡對應的總倍率計算是否正確？",
+  "options": [
+    "無法使用乘法計算",
+    "錯誤，應為五十倍",
+    "錯誤，應為四倍",
+    "正確，十乘四十為四百倍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "複式顯微鏡總倍率正是使用兩鏡倍率相乘。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "五十倍是把十與四十相加，公式不正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四倍忽略目鏡與物鏡大部分放大效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "目鏡十倍乘物鏡四十倍，結果確為四百倍。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算查核"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "倍率使用加法"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "把表中兩個鏡頭倍率代入公式，學生填寫的四百倍可被確認。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "計算正確不代表解析一定改善，還要另看觀察欄。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

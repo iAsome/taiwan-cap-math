@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_066_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某血液樣本剛在肺部取得氧氣，接著最可能依序經過何處？",
+  "options": [
+    "肺靜脈→左心房→左心室",
+    "肺動脈→右心房→右心室",
+    "主動脈→右心室→肺部",
+    "右心房→全身→左心房"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "肺部含氧血由肺靜脈回左心房，再進左心室準備送往全身。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "肺動脈把右心室低氧血送入肺，方向與剛離開肺部的樣本相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "血液離開肺部需先回左心，不能跳過心房直接由主動脈進右心室。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "剛離肺的血先到左心房而非右心房，此路徑顛倒左右心功能。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-034",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-016",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-026",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-039"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹以剛在肺部取得氧為起點，下一條血管一定是回心的肺靜脈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "接著依心房到心室的順序進入左心，不能因含氧高就跳過心臟腔室。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

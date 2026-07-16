@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S175_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S175",
+  "stem": "低二氧化碳欄由中光到高光維持速率 4，最合理判斷是？",
+  "options": [
+    "高光使葉片立即死亡",
+    "正常二氧化碳欄也必為四",
+    "光完全沒有能量",
+    "二氧化碳供應限制平台高度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "速率維持不代表死亡，且中光已有正常反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料明列正常碳高光為十，不能改寫為四。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "低光到中光由二升四，已顯示光能具有作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "加光無效但另一欄高光可到十，支持低碳瓶頸。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析碳限制平台"
+  ],
+  "representationType": "交叉比較",
+  "misconceptionTargets": [
+    "平台永遠由光造成"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "欄內核對光由中到高、速率不變，表示光已非唯一限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "欄間核對同高光下正常碳為十，證明增加碳源可解除部分平台。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

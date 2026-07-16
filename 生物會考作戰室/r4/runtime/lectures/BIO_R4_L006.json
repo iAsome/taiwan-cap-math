@@ -1,0 +1,160 @@
+{
+  "id": "BIO_R4_L006",
+  "subject": "biology",
+  "unitId": "BIO_R4_U01",
+  "skillId": "BIO_R4_S006",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S005"
+  ],
+  "objectives": [
+    "能以標題、欄名與單位建立完整資料表。",
+    "能依連續變化或類別比較選擇適當圖形並正確標軸。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L006_S1",
+      "title": "完整資料表",
+      "content": "表格需有能說明研究內容的標題，各欄寫清楚變因名稱與單位，每列對應一個時間、組別或樣本。原始值與平均值最好分欄，避免來源混淆。"
+    },
+    {
+      "id": "BIO_R4_L006_S2",
+      "title": "欄列安排",
+      "content": "通常把研究者設定的條件或時間放在前欄，把測得結果放在後欄。表格不是把數字排整齊即可，還要讓讀者知道每個數字代表什麼。"
+    },
+    {
+      "id": "BIO_R4_L006_S3",
+      "title": "選擇圖形",
+      "content": "折線圖適合呈現時間或連續條件下的變化趨勢；長條圖適合比較不同類別或處理組。選圖取決於資料關係，不取決於哪種圖比較好看。"
+    },
+    {
+      "id": "BIO_R4_L006_S4",
+      "title": "坐標與尺度",
+      "content": "橫軸常放自變項，縱軸放應變項，兩軸都需名稱、單位與等距刻度。尺度可不從零開始，但應清楚標示，不能用不等距刻度誇大差異。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L006_E1",
+      "prompt": "整理豆苗第一至第五天的株高。",
+      "steps": [
+        "以天數作第一欄並標示天。",
+        "以株高作第二欄並標示公分，再依時間排序。"
+      ],
+      "answer": "建立『豆苗生長紀錄』表，欄名為天數（天）與株高（公分）。",
+      "why": "標題交代對象，欄名與單位說明每筆數值，按時間排列後可直接追蹤生長變化，也方便轉成折線圖。"
+    },
+    {
+      "id": "BIO_R4_L006_E2",
+      "prompt": "比較甲乙丙三種培養液的平均根長，應選何種圖？",
+      "steps": [
+        "判斷三種培養液是彼此分離的類別。",
+        "以培養液作橫軸、平均根長作縱軸。"
+      ],
+      "answer": "使用長條圖比較三類培養液。",
+      "why": "類別間沒有連續順序，長條彼此分開可清楚比較高度；若連線，容易誤示中間存在未測得的連續條件。"
+    },
+    {
+      "id": "BIO_R4_L006_E3",
+      "prompt": "溫度每五度測一次酵母產氣量，如何畫圖？",
+      "steps": [
+        "把連續變化的溫度放橫軸。",
+        "把產氣體積與毫升單位放縱軸，標出各點。"
+      ],
+      "answer": "可用折線圖呈現溫度與產氣量的變化趨勢。",
+      "why": "溫度具連續數值順序，連接測量點有助觀看整體趨勢；但線段中間值仍是趨勢呈現，不等於實際都有測量。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "表格只要有數字，不必標單位。",
+      "whyWrong": "沒有單位無法判斷尺度，不同資料也可能被錯誤比較。",
+      "correction": "在欄名完整標示變因名稱與單位，不必在每個資料格重複。"
+    },
+    {
+      "belief": "所有資料畫折線圖都比較科學。",
+      "whyWrong": "類別資料任意連線會暗示不存在的連續關係。",
+      "correction": "連續或時間資料用折線，獨立類別比較用長條。"
+    },
+    {
+      "belief": "圖的縱軸一定要放研究者改變的條件。",
+      "whyWrong": "慣例通常把自變項置橫軸、應變結果置縱軸。",
+      "correction": "先辨認自變因與應變因角色，再依軸名及單位安排位置。"
+    },
+    {
+      "belief": "改變刻度距離不會影響圖形解讀。",
+      "whyWrong": "不等距或截斷卻未標示的尺度會誇大或縮小差異。",
+      "correction": "採等距刻度並清楚標示起點與間隔，讓讀者正確判讀。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "比較四種土壤的平均株高，宜用哪種圖？",
+      "answer": "長條圖。",
+      "reason": "四種土壤是獨立類別，分開的長條能呈現各組平均差異。"
+    },
+    {
+      "prompt": "追蹤十天葉片數變化，橫軸應放什麼？",
+      "answer": "天數。",
+      "reason": "時間是有順序的自變條件，放橫軸可由左至右閱讀變化。"
+    },
+    {
+      "prompt": "表格欄名只寫『長度』有何不足？",
+      "answer": "缺少測量對象與單位。",
+      "reason": "應寫如『根長（毫米）』，讀者才知道數值意義並能比較。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_EXPERIMENT_GRAPH"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

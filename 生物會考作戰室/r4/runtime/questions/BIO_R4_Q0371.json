@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0371",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "運動飲料配方測試中，細胞質量增加百分之三。若其他物質影響可忽略，表示什麼？",
+  "options": [
+    "細胞一定死亡",
+    "所有溶質都移出",
+    "水對細胞有小幅淨進入",
+    "細胞內完全沒有水"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "小幅增重不能單獨判定死亡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "沒有溶質測量，且題幹設定其他影響可忽略。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "正百分比表示總質量增加，可解讀為淨進水。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "能增重的細胞本來就含有水。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "情境遷移"
+  ],
+  "representationType": "配方情境",
+  "misconceptionTargets": [
+    "增重等同溶質"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "由量化正值判方向時，需明說依賴其他物質變化可忽略的前提。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "實際配方安全性還需細胞功能與多種濃度資料，不能只靠一次稱量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

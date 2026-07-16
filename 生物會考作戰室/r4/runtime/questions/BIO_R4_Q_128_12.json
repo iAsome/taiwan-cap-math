@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_128_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "農場想讓同品系蔬菜大小較一致，哪項策略最符合基因型與環境概念？",
+  "options": [
+    "只改蔬菜名稱",
+    "讓每株接受完全不同水分",
+    "不記錄任何條件",
+    "維持相近環境並記錄仍存在的個體差異"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱不會改變基因型或生長條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水分差異會增加環境造成的表現變異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不記錄條件就無法追查差異來源。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "控制環境可減少變異，但仍不保證完全相同。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "以為同品系即可保證表現完全一致"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同品系已降低部分遺傳差異，「維持相近環境並記錄仍存在的個體差異」再控制環境且保留合理變異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這比宣稱能完全一致更符合表現型受多因素影響的事實。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

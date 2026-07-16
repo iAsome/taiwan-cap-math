@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某圖把XX親代畫成可產生X卵與Y卵，應如何修正？",
+  "options": [
+    "刪除Y卵，只保留X卵",
+    "刪除X卵，只保留Y卵",
+    "把每個卵都改成XY",
+    "把卵改成不含遺傳物質"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "XX分開後只能提供X，因此應刪除Y卵。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "XX中沒有Y可供卵取得，不能只留Y。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "配子只帶一條性染色體，不同時帶XX。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "卵是生殖細胞，仍含親代部分遺傳物質。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未由親代組合檢查配子可能種類"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "先由親代XX列出可分配染色體，可知所有卵在模型中都帶X。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「刪除Y卵，只保留X卵」修正來源錯誤，也保留配子含一條性染色體的基本原則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

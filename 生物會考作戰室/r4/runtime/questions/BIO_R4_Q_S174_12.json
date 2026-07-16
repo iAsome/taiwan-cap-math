@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S174_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "水族箱想用水草協助供氧，哪項評估最完整？",
+  "options": [
+    "只看水草是綠色",
+    "只量正午一次氧氣",
+    "假設水草夜間也淨產氧",
+    "連續量日夜氧氣，並考量水草與動物都呼吸"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "綠色顯示可能有葉綠素，但不能量化整箱氣體收支。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單次白天高值會漏掉夜間耗氧風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "夜間缺光時水草呼吸常造成淨耗氧，不能先假定相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "跨日夜資料能分開光合產氧與所有生物呼吸耗氧的總結果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移水族供氧"
+  ],
+  "representationType": "系統監測",
+  "misconceptionTargets": [
+    "水草任何時段都淨產氧"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時間核對光合作用受日照改變，呼吸則日夜持續，必須完整取樣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "收支核對水草、魚與微生物都可能耗氧，不能只計一種生物。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

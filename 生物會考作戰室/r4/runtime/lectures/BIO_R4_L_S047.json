@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S047",
+  "subject": "biology",
+  "unitId": "BIO_R4_U06",
+  "skillId": "BIO_R4_S047",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S046"
+  ],
+  "objectives": [
+    "設計單一變因的酵素探究並辨識操縱、控制與應變變因。",
+    "選擇合適對照、測量方式與重複程序，使結果能回答研究問題。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S047_SEC_01",
+      "title": "研究問題決定操縱變因",
+      "content": "單一變因探究先把問題寫成「某因素是否影響酵素反應速率」。研究者主動改變的因素是操縱變因，例如溫度；每次只改一項，才可把組間差異歸因於它。"
+    },
+    {
+      "id": "BIO_R4_L_S047_SEC_02",
+      "title": "控制其他影響因素",
+      "content": "酵素量、受質量、酸鹼值、反應時間與測量方法都可能影響結果。研究溫度時，這些條件需在各組維持相同；所謂公平比較不是讓所有條件都不變，而是只讓操縱變因不同。"
+    },
+    {
+      "id": "BIO_R4_L_S047_SEC_03",
+      "title": "應變變因要能測量",
+      "content": "應變變因是用來反映酵素作用的結果，例如每分鐘產物量、固定時間的產物量或受質減少量。只寫「反應好不好」缺乏操作定義，無法讓不同觀察者以相同標準記錄。"
+    },
+    {
+      "id": "BIO_R4_L_S047_SEC_04",
+      "title": "對照與重複提升可信度",
+      "content": "不加酵素或維持基準條件的組別可提供比較基準；每組重複測量並取適當代表值，可降低偶然誤差。對照與重複不能補救多個變因同時改變，設計根本仍是單一變因。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S047_EX_01",
+      "prompt": "研究溫度對酵素速率的影響，各組應改變哪一項？",
+      "steps": [
+        "由研究問題找出原因因素。",
+        "確認其餘條件可維持相同。"
+      ],
+      "answer": "溫度",
+      "why": "題目要檢驗溫度效果，因此溫度是唯一操縱變因；若同時改變酵素量，結果就無法判斷是溫度或酵素量造成。"
+    },
+    {
+      "id": "BIO_R4_L_S047_EX_02",
+      "prompt": "固定反應五分鐘後測產物毫升數，應變變因是什麼？",
+      "steps": [
+        "找出研究者最後記錄的數值。",
+        "寫出物理量與固定時間條件。"
+      ],
+      "answer": "五分鐘產物體積",
+      "why": "產物體積是隨操縱條件改變而測得的反應結果，且有明確時間與單位，可讓各組以一致方法比較。"
+    },
+    {
+      "id": "BIO_R4_L_S047_EX_03",
+      "prompt": "每組只做一次且數值差異很小，如何改善？",
+      "steps": [
+        "辨識單次值可能受偶然誤差影響。",
+        "增加獨立重複並用相同程序測量。"
+      ],
+      "answer": "各組重複多次並比較代表值",
+      "why": "重複可看出結果是否穩定並降低單次偶然值的影響；但重複時仍須維持相同的控制條件與測量方法。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "公平實驗表示每一組所有條件完全相同。",
+      "whyWrong": "若所有條件都相同，就沒有操縱變因可用來檢驗研究問題。",
+      "correction": "只改研究因素，其餘可能影響結果的條件維持一致。"
+    },
+    {
+      "belief": "同時改溫度與pH可以更快得到兩種結論。",
+      "whyWrong": "結果改變時無法分辨是哪個因素或兩者交互造成。",
+      "correction": "分成兩次單一變因實驗，分別研究溫度與酸鹼值。"
+    },
+    {
+      "belief": "只寫反應比較好就算可測量結果。",
+      "whyWrong": "好壞沒有共同尺度，不同觀察者可能使用不同判準。",
+      "correction": "以固定時間產物量或每分鐘變化量建立明確操作定義。"
+    },
+    {
+      "belief": "重複很多次就能修正不公平的設計。",
+      "whyWrong": "多變因混淆會在每次重複中持續存在，無法靠次數消除。",
+      "correction": "先確保單一操縱與控制條件，再用重複測量降低偶然誤差。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "研究pH效果時，操縱變因是什麼？",
+      "answer": "pH",
+      "reason": "研究問題指定酸鹼值，因此各組只主動改變pH並控制其他條件。"
+    },
+    {
+      "prompt": "每分鐘產物量屬於哪一類變因？",
+      "answer": "應變變因",
+      "reason": "它是隨實驗條件變化而被測量的反應結果與速率指標。"
+    },
+    {
+      "prompt": "各組重複三次的主要目的為何？",
+      "answer": "降低偶然誤差影響",
+      "reason": "重複結果可檢查穩定性，避免單次異常值主導整體結論。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  }
+}

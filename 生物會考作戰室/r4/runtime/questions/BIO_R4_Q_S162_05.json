@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S162_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "污水處理槽加入能分解有機物的微生物，最適合用哪項資料評估效果？",
+  "options": [
+    "處理前後有機污染指標",
+    "槽體名稱字數",
+    "工作人員身高",
+    "廠房牆面顏色"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "以相同方法比較處理前後濃度，可直接判斷目標有機污染是否下降。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱字數是語言形式，不反映水中有機物被分解的程度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "工作人員身高與微生物代謝污染物沒有可檢驗的因果機制。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "牆色不會顯示污水中污染濃度或處理後物質的去向。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "選擇處理成效指標"
+  ],
+  "representationType": "污水處理",
+  "misconceptionTargets": [
+    "只看設備外觀判成效"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "依變項核對鎖定研究目標是有機污染，因此應量與污染直接相關的指標。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "前後比較核對使用同一採樣與分析方法，避免把儀器差異誤當處理效果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

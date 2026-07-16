@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_137_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S137"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "研究者要比較肥料是否影響小白菜葉數，哪一項安排最重要？",
+  "options": [
+    "兩組使用不同品種與不同盆器",
+    "除肥料量外盡量維持其他條件一致",
+    "只挑葉數最多的一株記錄",
+    "施肥組測三次而對照組不測量"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "品種和盆器同時改變，會增加無法排除的干擾因素。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "控制水量、光照與品種，可較清楚檢驗肥料的影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只選極端個體會造成樣本偏差，不能代表整組結果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩組測量次數不同，資料品質與可比性都會下降。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "忽略控制變因就判定環境效果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "公平比較的核心是只讓研究因素有系統地不同，其他條件盡量一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同時設置對照並重複量測，才能辨認肥料效果是否穩定出現。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,133 @@
+{
+  "id": "BIO_R4_L_S182",
+  "subject": "biology",
+  "unitId": "BIO_R4_U25",
+  "skillId": "BIO_R4_S182",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S181"
+  ],
+  "objectives": [
+    "由溫度、水分與光照梯度判斷生物分布的適生範圍",
+    "區分環境相關、限制因素與控制實驗提供的因果證據"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S182_SEC_01",
+      "title": "耐受範圍",
+      "content": "每種生物對溫度、水分、光與鹽度常有可耐受範圍，在最適區生長與繁殖較佳，接近上下限時表現下降，超過耐受界線便難以存活。"
+    },
+    {
+      "id": "BIO_R4_L_S182_SEC_02",
+      "title": "多因子限制",
+      "content": "野外分布通常同時受多項非生物因子及生物關係影響。光充足但土壤乾燥時，水仍可成為限制；改善水後，溫度或競爭可能接著限制。"
+    },
+    {
+      "id": "BIO_R4_L_S182_SEC_03",
+      "title": "讀取梯度",
+      "content": "沿海拔、林緣到林內或潮間帶高度調查，可比較物種密度與環境梯度。若密度峰值位於中等條件，應描述最適範圍，不可假設因子越多越好。"
+    },
+    {
+      "id": "BIO_R4_L_S182_SEC_04",
+      "title": "驗證因果",
+      "content": "分布與溫度同向只是相關，還可能有水分、食物或競爭共變。可在控制其他條件下設環境梯度，或將生物互換移植並設保護措施，檢查反應是否重現。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S182_EX_01",
+      "prompt": "某藻在二十度密度最高，十度與三十度都較低，如何描述？",
+      "steps": [
+        "找出密度峰值",
+        "比較峰值兩側下降",
+        "以範圍而非線性關係表述"
+      ],
+      "answer": "二十度接近本資料的最適溫度，過低或過高皆不利。",
+      "why": "密度並非隨溫度持續增加，而是在中間值最高；雙側下降符合耐受曲線，結論只限本次溫度與其他條件。"
+    },
+    {
+      "id": "BIO_R4_L_S182_EX_02",
+      "prompt": "林下植物只出現在陰濕處，能直接說低光是唯一原因嗎？",
+      "steps": [
+        "辨認低光與高濕同時存在",
+        "列出水分替代解釋",
+        "提出分別改光與水的實驗"
+      ],
+      "answer": "不能，光與水分共變，需分開檢驗。",
+      "why": "陰濕地同時改變至少兩項環境條件，植物分布可由耐陰、需水或兩者交互造成，單一觀察無法指定唯一原因。"
+    },
+    {
+      "id": "BIO_R4_L_S182_EX_03",
+      "prompt": "控制水分後，高溫組種子萌發率仍低，最支持什麼？",
+      "steps": [
+        "確認各組水分相同",
+        "只比較溫度梯度",
+        "將萌發差連到高溫"
+      ],
+      "answer": "在本範圍內高溫限制該種子的萌發。",
+      "why": "水分這條替代解釋已受控制，高溫處理與低萌發穩定配對，因此比未控制的野外分布更能支持溫度效應。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "某因子增加時，生物數量一定持續增加。",
+      "whyWrong": "許多生物有最適範圍，過低與過高都可能降低存活或繁殖。",
+      "correction": "應由完整梯度找峰值與耐受上下限，不用單方向規則外推。"
+    },
+    {
+      "belief": "物種只出現在潮濕地，就已證明水是唯一原因。",
+      "whyWrong": "潮濕地可能同時較陰、較冷或競爭者較少，存在共變因子。",
+      "correction": "需用控制實驗或互換移植分別檢查水分及其他候選條件。"
+    },
+    {
+      "belief": "沒有出現在某地代表絕對無法生存。",
+      "whyWrong": "擴散障礙、歷史事件或未被調查到，也可能造成觀察缺席。",
+      "correction": "缺席是線索，仍需移植、重複調查與繁殖資料判斷環境是否限制。"
+    },
+    {
+      "belief": "平均環境相同，兩地就一定有相同分布。",
+      "whyWrong": "極端值、季節波動、土壤微環境與生物互動仍可能不同。",
+      "correction": "除平均值外，應記錄變異範圍、時間尺度及關鍵生物因子。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "密度在中等溫度最高，代表什麼？",
+      "answer": "中等溫度可能接近最適範圍。",
+      "reason": "過低與過高密度都下降，不符合溫度越高越好的線性關係。"
+    },
+    {
+      "prompt": "為何野外相關不能直接證明因果？",
+      "answer": "其他環境與生物因子可能同時改變。",
+      "reason": "共變因素可產生相同分布圖形，需控制或介入才能區分。"
+    },
+    {
+      "prompt": "互換移植可提供什麼資訊？",
+      "answer": "檢查不同環境是否造成可重現的表現差。",
+      "reason": "把來源不同個體放入共同或交換環境，可分離環境與來源差異。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  }
+}

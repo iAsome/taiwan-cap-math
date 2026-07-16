@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0088",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S030"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST030",
+  "stem": "根據表格，甲組與乙組哪項比較最合理？",
+  "options": [
+    "兩組都證明所有濃度必定失水",
+    "乙的處理時間比甲長",
+    "甲與乙濃度完全相同",
+    "相同時間下，乙增重少於甲"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組都增重，且不能代表所有濃度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表格顯示甲乙兩組的處理時間都是二十分鐘。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲為零、乙為百分之五，濃度不同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩組同為二十分鐘，乙的正零點三小於甲的正一點二。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "表格判讀"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "忽略時間"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲乙只有濃度有系統差異，較適合進行局部比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "仍需重複與變異資料才能判斷差異是否穩定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

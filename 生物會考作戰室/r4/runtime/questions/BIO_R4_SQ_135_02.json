@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_135_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST135",
+  "stem": "哪項資料可排除丁為AA？",
+  "options": [
+    "丁沒有斑點",
+    "丁的手足丙有斑點",
+    "丁位於第二世代",
+    "丁生出有斑點的己"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "無斑點可為AA或Aa，不能單獨排除。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "手足有斑點只證明雙親攜帶a，不必然決定丁。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "世代位置與是否攜帶a沒有直接關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "己為aa要求丁提供a，因此丁不能AA。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未利用隱性子代排除AA"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「丁生出有斑點的己」建立丁必須提供a的直接親子證據，唯一能排除AA。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結合丁無斑點後，還可進一步判定丁為Aa。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

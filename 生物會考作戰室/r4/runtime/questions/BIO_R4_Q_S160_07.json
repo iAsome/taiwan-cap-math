@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S160_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "同場活動中，長時間待在不通風小室者病例較多。最合理的下一步是？",
+  "options": [
+    "立即證明食物是唯一原因",
+    "只調查參加者年齡",
+    "比較停留時間、通風與近距離接觸",
+    "刪除沒有發病者資料"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "病例集中於不通風小室，尚未提供共同食物與發病的專一證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "年齡可能影響宿主狀態，但不能單獨檢驗小室內的暴露路徑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "三項資料可檢查呼吸道暴露的濃度、時間與距離是否伴隨風險。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未發病者是重要比較組，刪除後無法計算不同暴露條件的發病差異。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "由群聚規劃調查"
+  ],
+  "representationType": "群聚事件",
+  "misconceptionTargets": [
+    "共處即證明唯一途徑"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "假說核對由不通風小室提出呼吸道暴露預測，再收集能直接檢驗的條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較組核對保留有無發病及長短停留者，才能判斷病例集中是否超過偶然。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

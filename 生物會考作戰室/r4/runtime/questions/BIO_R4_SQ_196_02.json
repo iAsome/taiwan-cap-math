@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_196_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S196"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S196",
+  "stem": "甲與乙相比，最能支持哪項初步推論？",
+  "options": [
+    "乾燥一定殺死全部微生物",
+    "水分使碳原子消失",
+    "適度水分可能促進本實驗的落葉分解",
+    "透氣會完全停止分解"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "分解較慢不等於微生物全部死亡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "減量代表物質轉移，碳不會憑空消失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩袋皆透氣，主要處理差異是水分。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩袋都透氣且都有減量，不支持停止。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "由配對處理推論水分"
+  ],
+  "representationType": "對照比較",
+  "misconceptionTargets": [
+    "分解慢就是全數死亡"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "甲乙共享材料、溫度與通氣，水分是主要比較因素。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「適度水分可能促進本實驗的落葉分解」限於可能與本實驗，沒有外推成所有材料必然相同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

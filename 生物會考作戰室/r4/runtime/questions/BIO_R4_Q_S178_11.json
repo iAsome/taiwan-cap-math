@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S178_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "都市屋頂植栽常遇午後短暫乾熱，哪項管理最符合植物反應取捨？",
+  "options": [
+    "正午持續強風吹乾介質",
+    "完全封死氣孔",
+    "清晨適量供水、午後遮陰並監測光合與失水",
+    "移除所有根系"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "強風與乾介質會增加蒸散負擔，可能加劇關孔。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "氣孔需調節氣體交換，人工完全封死會長期限制進碳。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "補水與遮陰降低壓力，雙指標可檢查保水是否犧牲過多光合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "根系是吸水與固定構造，移除會使問題惡化。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移屋頂管理"
+  ],
+  "representationType": "城市栽培",
+  "misconceptionTargets": [
+    "管理只需完全關孔"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "時段核對清晨供水降低正午前缺水，午後遮陰減少高熱蒸散。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "取捨核對同時量失水與光合，可避免只追求保水卻忽略碳吸收。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

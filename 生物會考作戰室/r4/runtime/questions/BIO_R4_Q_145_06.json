@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_145_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S145"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "判斷某變化是否為演化，哪項資料最關鍵？",
+  "options": [
+    "單一個體今天的心跳",
+    "多代族群中可遺傳版本的頻率",
+    "一片葉的即時含水量",
+    "一隻鳥學會的新叫聲"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "心跳是短期生理狀態，不代表族群遺傳變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "版本頻率跨代資料直接對應演化定義。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "含水量會隨環境變化，沒有世代與遺傳證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "學習行為可在個體一生形成，未必可遺傳。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "以個體即時狀態取代族群跨代資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「多代族群中可遺傳版本的頻率」可直接檢驗族群遺傳組成是否跨世代改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "外觀比例也可參考，但若受環境影響，仍需共同環境或遺傳資料確認。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

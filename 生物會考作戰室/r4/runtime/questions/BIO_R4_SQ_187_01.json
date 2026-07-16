@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_187_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S187"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S187",
+  "stem": "依觀察紀錄，哪一條食物鏈完全由已知關係組成？",
+  "options": [
+    "落水小蟲→夜鷺→水黽",
+    "夜鷺→吳郭魚→螺→附著藻",
+    "附著藻→螺→吳郭魚→夜鷺",
+    "附著藻→水黽→吳郭魚"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "紀錄沒有夜鷺吃落水小蟲或水黽吃夜鷺。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此項把全部攝食關係的箭頭反向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "三段都能在紀錄中找到，方向也符合定義。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "紀錄沒有水黽吃附著藻或被吳郭魚吃。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "由表格組成食物鏈"
+  ],
+  "representationType": "表格轉鏈條",
+  "misconceptionTargets": [
+    "自行補上可能關係"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "逐列串接前三筆資料，可得到附著藻至夜鷺的完整鏈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他選項不是反向，就是加入紀錄未支持的攝食關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

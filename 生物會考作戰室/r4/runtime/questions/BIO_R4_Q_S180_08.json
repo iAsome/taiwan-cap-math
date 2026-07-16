@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S180_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "野外資料顯示魚少時水溫高且鳥多，最謹慎結論是？",
+  "options": [
+    "只由水溫造成",
+    "只由鳥捕食造成",
+    "兩者都完全無關",
+    "水溫與捕食皆是候選因子，需分開檢驗"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩項因子同時改變，不能只指定水溫。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "鳥多是合理線索，但仍有高溫替代解釋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "已有相關與合理機制，不能武斷宣稱都無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "保留兩條假說並設計控制比較最符合證據。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估野外共變"
+  ],
+  "representationType": "因果推理",
+  "misconceptionTargets": [
+    "相關等於單一因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "共變核對高溫與鳥多在相同時段出現，效果尚未隔離。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "機制核對高溫可影響生理，鳥可捕食，兩者皆值得測試。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

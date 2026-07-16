@@ -1,0 +1,75 @@
+{
+  "id": "BIO_R4_ST_S085",
+  "subject": "biology",
+  "skillId": "BIO_R4_S085",
+  "type": "context-experiment",
+  "content": {
+    "title": "相同中央符號的情境判讀",
+    "context": "研究者製作一個可讀成英文字母B或數字13的中央符號，中央符號的線條、大小與亮度完全相同。第一組看到「A、中央符號、C」，第二組看到「12、中央符號、14」，之後立即回答中央符號為何。",
+    "columns": [
+      "組別",
+      "周圍情境",
+      "回答B的人數",
+      "回答13的人數"
+    ],
+    "rows": [
+      [
+        "第一組",
+        "A＿C",
+        "24",
+        "6"
+      ],
+      [
+        "第二組",
+        "12＿14",
+        "5",
+        "25"
+      ]
+    ],
+    "note": "每組30人，觀看距離、時間、螢幕與中央符號均相同，只有周圍情境不同。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-110-ALTERNATE-INTEGRATED-NATURAL-014"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "accessibility": {
+    "summary": "第一組在字母情境中多數回答B，第二組在數字情境中多數回答13；中央符號與觀看條件相同。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "組別",
+        "結果摘要"
+      ],
+      "rows": [
+        [
+          "第一組",
+          "字母情境，24人答B、6人答13"
+        ],
+        [
+          "第二組",
+          "數字情境，5人答B、25人答13"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

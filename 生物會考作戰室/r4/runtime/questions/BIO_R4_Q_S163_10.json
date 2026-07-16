@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "三個不同地區以相近方法都得到同方向結果，最合理判讀是？",
+  "options": [
+    "證明每個個體必然發病",
+    "重複一致可加強關係可信度",
+    "地區差異完全不存在",
+    "不再需要檢查方法"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "群體風險增加不代表每位暴露者必然出現疾病。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "跨地區重複同方向，降低單一地點偶然或特殊條件解釋的可能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "相近結果仍可存在氣候、族群與醫療差異，不能說地區完全相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "重複研究也可能共享偏差，仍要檢查量測、分組與混淆控制。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估重複證據"
+  ],
+  "representationType": "跨地研究",
+  "misconceptionTargets": [
+    "重複一次即絕對證明"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "重現性核對比較三地效果方向，確認結果不是只出現在單一樣本。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "方法核對仍審查共同偏差，避免把一致性誇大成無需品質評估。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

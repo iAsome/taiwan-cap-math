@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0275",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "陌生圖像同時包含顯微照片背景與後加的彩色構造輪廓。最合理的資料分類為何？",
+  "options": [
+    "只能算純示意圖，照片部分沒有價值",
+    "只能算未處理原始照片",
+    "是以觀察影像為底的註解圖，需分開解讀原始訊號與後加標示",
+    "因為混合兩種形式，所以不能提供任何資訊"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "底層照片仍可能保留觀察資料，不能因標示而全數否定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "彩色輪廓已是後加資訊，因此不能稱為未處理原始照片。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分類同時承認照片來源與解釋性標示，並要求分辨兩者證據角色。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "複合圖仍可提供資訊，只需清楚知道各部分如何產生。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "混合圖像判讀"
+  ],
+  "representationType": "複合影像",
+  "misconceptionTargets": [
+    "二分法誤判"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "科學圖像可同時含觀察與解釋元素，不必強迫歸入單一極端類別。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "使用複合圖時，先找圖例與方法以確認哪些像素來自標本、哪些是標註。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

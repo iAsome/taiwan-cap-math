@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S197",
+  "subject": "biology",
+  "unitId": "BIO_R4_U27",
+  "skillId": "BIO_R4_S197",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S196"
+  ],
+  "objectives": [
+    "整合生物量、族群與環境資料判斷生態系變化。",
+    "區分同步趨勢、時間先後與因果結論，提出需要補充的證據。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S197_SEC_01",
+      "title": "指標回答不同問題",
+      "content": "生物量描述一定範圍內生物物質總量，族群數量描述個體多寡，水溫、溶氧與養分則描述環境。單一指標不能代表整個系統的所有面向。"
+    },
+    {
+      "id": "BIO_R4_L_S197_SEC_02",
+      "title": "先對齊時間與單位",
+      "content": "比較資料前須確認採樣月份、地點、面積與單位一致。若一組是每平方公尺生物量，另一組是全湖個體數，不能直接用數值大小互相比較。"
+    },
+    {
+      "id": "BIO_R4_L_S197_SEC_03",
+      "title": "找共同變化與延遲",
+      "content": "藻類增加後，分解與呼吸可能使溶氧稍晚下降，魚類再更晚受到影響。時間先後可支持機制假說，但仍需對照與重複資料排除季節等因素。"
+    },
+    {
+      "id": "BIO_R4_L_S197_SEC_04",
+      "title": "結論保留證據邊界",
+      "content": "資料顯示相關時，宜說趨勢一致、可能有關，不應直接說唯一造成。若採樣方法改變、缺少基線或只有一個時間點，應先補資料再判斷系統變化。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S197_EX_01",
+      "prompt": "藻類生物量上升、夜間溶氧下降，能否直接說藻類是唯一原因？",
+      "steps": [
+        "兩指標方向符合呼吸耗氧假說。",
+        "檢查是否有溫度、污染與水流等其他因素。"
+      ],
+      "answer": "不能，只能先提出可能關聯。",
+      "why": "同步趨勢可支持假說，但沒有對照與其他環境資料時不足以證明唯一因果。"
+    },
+    {
+      "id": "BIO_R4_L_S197_EX_02",
+      "prompt": "甲月魚100隻、乙月魚80隻，但採樣時間從2小時改成1小時，能直接比較嗎？",
+      "steps": [
+        "辨認取樣努力量不同。",
+        "先換算相同努力量或保持方法一致。"
+      ],
+      "answer": "不能直接比較。",
+      "why": "捕獲數下降可能只是採樣時間減半造成，先標準化每小時捕獲量，才能判斷族群趨勢。"
+    },
+    {
+      "id": "BIO_R4_L_S197_EX_03",
+      "prompt": "植物個體數不變但平均體重增加，生物量如何變化？",
+      "steps": [
+        "生物量與個體數及平均質量有關。",
+        "個體數固定而平均質量增加。"
+      ],
+      "answer": "總生物量增加。",
+      "why": "個體數相同不代表生物量相同；當平均體重或乾重增加，所有個體合計的總量也會增加。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "個體數與生物量一定同步。",
+      "whyWrong": "個體變少但平均體型變大時，總生物量仍可能持平或增加。",
+      "correction": "分別記錄個體數與平均質量，再依相同範圍計算生物量。"
+    },
+    {
+      "belief": "兩項資料同時改變就證明因果。",
+      "whyWrong": "季節、溫度或共同外因可能同時影響兩個指標。",
+      "correction": "利用時間序列、對照地點與機制量測逐步加強因果證據。"
+    },
+    {
+      "belief": "數值較大就代表生態系較健康。",
+      "whyWrong": "藻類過度增加或污染耐受種增加，數值大未必是改善。",
+      "correction": "先定義指標意義與參考範圍，再整合多項資料判讀。"
+    },
+    {
+      "belief": "不同採樣方法的數據可直接相減。",
+      "whyWrong": "努力量、面積與工具差異會造成不屬於生態系的數值變化。",
+      "correction": "標準化單位與方法，或只比較可換算到相同尺度的資料。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "魚數量不變時，魚類生物量是否必定不變？",
+      "answer": "不一定。",
+      "reason": "平均體重可能改變，因此同樣個體數仍可有不同總生物量。"
+    },
+    {
+      "prompt": "溶氧下降與魚減少同時發生，能否直接證明唯一因果？",
+      "answer": "不能。",
+      "reason": "同步變化可支持關聯，但仍需排除溫度、疾病與採樣差異。"
+    },
+    {
+      "prompt": "跨月份比較水域資料，最先確認哪些條件？",
+      "answer": "採樣地點、時間、方法與單位。",
+      "reason": "只有量測尺度一致，數值差異才較能反映系統本身變化。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0320",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若膜也能讓蔗糖快速通過，為何長期袋重較難只由初始濃度判斷？",
+  "options": [
+    "水不再具有任何運動",
+    "蔗糖濃度與水量都無法測量",
+    "袋子會自動製造更多蔗糖",
+    "蔗糖移動會改變原本驅動水移動的濃度差"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "水仍持續運動，通透性改變不會使水靜止。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩者仍可測量，只是需同時追蹤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有機制使袋子自動製造蔗糖。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "溶質跨膜使兩側濃度隨時間改變，水的淨方向與量也會改變。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "前提評估"
+  ],
+  "representationType": "條件變更",
+  "misconceptionTargets": [
+    "忽略溶質通透"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-048",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-016",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-053",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "簡化滲透判斷依賴溶質受膜限制；取消前提後需建立較完整模型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "長期結果應同時追蹤水與溶質，而非只讀起始數值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

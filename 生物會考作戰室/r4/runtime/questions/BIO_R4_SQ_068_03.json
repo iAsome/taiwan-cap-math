@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_068_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S068",
+  "stem": "若原始十五秒計數在恢復四分鐘為21次，與表中84次是否一致？",
+  "options": [
+    "不一致，應為21次／分",
+    "不一致，應為42次／分",
+    "無法由十五秒換算",
+    "一致，21乘4等於84次／分"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "二十一次是十五秒原始計數，不能直接當作每分鐘速率。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乘以二只適用三十秒量測，十五秒資料需要乘以四。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "已知量測秒數便可在速率近似穩定下換算，並非完全無法換算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "六十秒為十五秒四倍，二十一乘四正好得到每分鐘八十四次。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "用六十除以十五得到倍數四，再檢查二十一乘四是否等於表中數值。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "單位換算一致只能驗證算術，仍不代表這個數值可推廣到所有學生。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

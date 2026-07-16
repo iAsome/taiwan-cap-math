@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "儀器記錄心跳100次但手腕只觸得92次脈搏，最保守的解釋為何？",
+  "options": [
+    "心臟必定完全停止",
+    "血液已全部離開身體",
+    "手腕一定沒有動脈",
+    "部分心跳未形成可觸脈搏或脈搏計數有誤差"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "儀器仍記錄到一百次心跳，不能說心臟已完全停止。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩種訊號數量不同不能支持全身血液全部離開體外的極端推論。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "手腕能觸得九十二次脈搏，已證明該處存在可感受的動脈搏動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "有效搏動差異或量測誤差都可能使脈搏數略低於儀器心跳數。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "面對兩種量測不一致，應先考慮信號形成與測量方法，而非下極端結論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若要分辨原因，可同步記錄心電與動脈壓力波，檢查每次心跳是否都有脈搏。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

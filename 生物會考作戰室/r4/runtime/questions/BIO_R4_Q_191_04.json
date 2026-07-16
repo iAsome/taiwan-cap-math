@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_191_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S191"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "鼠吃種子且鷹吃鼠。鷹減少後，哪條間接效應路徑最合理？",
+  "options": [
+    "鼠減少，種子增加",
+    "鼠變植物，種子不變",
+    "種子先增加，再使鼠消失",
+    "鼠可能增加，使種子受攝食壓力上升"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "鷹減少通常使鼠捕食壓力下降，不支持鼠先減少。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "族群變動不會使消費者轉變成植物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "這段次序與已知攝食關係不符且過度確定。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "先影響鼠，再間接提高種子被食壓力，路徑合理。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "追蹤兩段間接效應"
+  ],
+  "representationType": "連鎖推論",
+  "misconceptionTargets": [
+    "跳過中間物種直接下結論"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "應逐段追蹤鷹減少、鼠可能增加、種子壓力上升。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「鼠可能增加，使種子受攝食壓力上升」使用方向性語句，並沒有聲稱種子必定消失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

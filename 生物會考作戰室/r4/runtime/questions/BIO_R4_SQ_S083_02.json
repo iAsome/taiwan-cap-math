@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S083_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S083"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S083",
+  "stem": "下列哪項機制最能解釋表中的穩定先後順序？",
+  "options": [
+    "肌肉先產生疼痛，再通知皮膚",
+    "按鍵動作使手臂被動移開",
+    "腦先完成疼痛判讀，之後時間倒退",
+    "脊髓先發出移手命令，腦稍後形成疼痛知覺"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "疼痛知覺由腦整合，不是肌肉製造後交給皮膚。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "手移開早於按鍵，按鍵不能成為先前移手的原因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "時間不會倒退，此說法也無法解釋測量值。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "反射弧較早完成，知覺形成與按鍵報告較晚。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "機制解釋"
+  ],
+  "representationType": "時間表",
+  "misconceptionTargets": [
+    "倒置反射與知覺形成順序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "三次都先移手後報痛，符合反射先於意識報告。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "因果方向與神經構造功能共同支持「脊髓先發出移手命令，腦稍後形成疼痛知覺」。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

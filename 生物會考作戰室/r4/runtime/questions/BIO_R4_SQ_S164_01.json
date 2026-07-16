@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S164_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S164"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S164",
+  "stem": "哪則訊息目前最具可追溯性？",
+  "options": [
+    "匿名且無日期與資料來源的乙訊息",
+    "具正式來源、日期及研究連結的甲訊息",
+    "只有個人心得且缺比較組的丙訊息",
+    "三則訊息的來源與證據完全相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙訊息匿名無日期且沒有資料來源，無法確認原文與依據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲訊息有正式來源、修訂日期、研究連結與適用族群，可逐項回查。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙訊息雖有來源但只有心得且缺比較組，證據完整度低於甲。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三則在來源、日期與證據上明顯不同，不能視為完全相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "比較資訊可追溯性"
+  ],
+  "representationType": "來源表",
+  "misconceptionTargets": [
+    "所有網路訊息同等可信"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "來源核對確認甲能連回負責機構與完整頁面。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "證據核對再確認甲提供研究連結與族群限制，和只辨識機構採不同路徑。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

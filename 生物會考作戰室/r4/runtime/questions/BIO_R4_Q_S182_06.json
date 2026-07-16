@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S182_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要檢驗光照對幼苗分布的作用，哪項設計最佳？",
+  "options": [
+    "各組同時改光與水",
+    "同種幼苗在不同光照且水分、土壤一致",
+    "只看一處林地",
+    "不同物種各放一種光"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同時改水會混入另一限制因素。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "只改光照並控制材料與環境，可隔離光效應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單一地點沒有光梯度對照。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "物種差與光照差無法分開。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "設計光照實驗"
+  ],
+  "representationType": "控制實驗",
+  "misconceptionTargets": [
+    "多因子同改可判單因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "變因核對各實驗組只有設定的光照強度會系統改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "公平核對同種、同水與同土壤降低替代解釋。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

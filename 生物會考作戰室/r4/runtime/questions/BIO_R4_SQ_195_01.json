@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_195_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S195"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S195",
+  "stem": "6時至14時二氧化碳下降，最合理的淨結果為何？",
+  "options": [
+    "碳元素已從缸中消失",
+    "水草完全停止呼吸",
+    "光合作用吸收量大於呼吸釋放量",
+    "遮光使光合作用加快"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "碳可進入水草有機物，並未消失。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "淨下降不能證明呼吸完全停止。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "受光期間淨下降可由吸收超過釋放解釋。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "此時是受光，不是遮光處理。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀受光淨變化"
+  ],
+  "representationType": "時間序列表",
+  "misconceptionTargets": [
+    "下降等於沒有呼吸"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「光合作用吸收量大於呼吸釋放量」以兩作用差值解釋18降至9的觀察。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料只支持淨吸收，不能直接給出兩個總速率。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

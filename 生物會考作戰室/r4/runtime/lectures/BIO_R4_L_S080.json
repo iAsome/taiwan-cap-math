@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S080",
+  "subject": "biology",
+  "unitId": "BIO_R4_U10",
+  "skillId": "BIO_R4_S080",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S079"
+  ],
+  "objectives": [
+    "說明恆定是生理變項在一定範圍內的動態調節",
+    "由偏差、反向調節與回復資料辨認負回饋，而非完全不變"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S080_SEC_01",
+      "title": "恆定允許合理波動",
+      "content": "體溫、水分與某些濃度會隨活動、飲食與時間改變。只要變化受調節並多數維持在可接受範圍，就可視為動態恆定，不必每秒固定在同一數字。"
+    },
+    {
+      "id": "BIO_R4_L_S080_SEC_02",
+      "title": "負回饋抵消偏差",
+      "content": "變項高於目標範圍時，調節反應通常朝降低方向；變項偏低時則朝升高方向。反應結果抵消原偏差，稱為負回饋。"
+    },
+    {
+      "id": "BIO_R4_L_S080_SEC_03",
+      "title": "調節需要時間",
+      "content": "刺激發生後，受器偵測、中樞整合、訊號傳遞與器官反應都需要時間，因此數值可能先偏離再逐步回復，甚至在範圍附近小幅波動。"
+    },
+    {
+      "id": "BIO_R4_L_S080_SEC_04",
+      "title": "恆定能力有界限",
+      "content": "極端環境、器官受損或調節訊號失效時，偏差可能超過可調範圍並持續擴大。恆定不表示身體能抵抗任何刺激，也不表示所有人的範圍完全相同。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S080_EX_01",
+      "prompt": "體溫在36.6至37.1度間變動，是否代表沒有恆定？",
+      "steps": [
+        "確認變化是否在合理範圍",
+        "檢查調節是否能限制偏差"
+      ],
+      "answer": "不代表，範圍內小幅波動可屬動態恆定",
+      "why": "恆定的重點是內在狀態被調節在一定範圍，而不是固定單值；活動與晝夜變化可造成小幅波動，只要沒有持續失控便不違反恆定。"
+    },
+    {
+      "id": "BIO_R4_L_S080_EX_02",
+      "prompt": "體溫升高後出汗增加並使體溫下降，屬哪種回饋？",
+      "steps": [
+        "辨認原偏差方向為升高",
+        "檢查反應結果是否抵消升高"
+      ],
+      "answer": "負回饋",
+      "why": "原變化是體溫上升，出汗蒸發增加散熱，使體溫朝原範圍下降；反應方向抵消原偏差，符合負回饋而非強化偏差。"
+    },
+    {
+      "id": "BIO_R4_L_S080_EX_03",
+      "prompt": "指標超界後沒有任何反向反應且繼續上升，可推論什麼？",
+      "steps": [
+        "檢查是否出現抵消偏差的反應",
+        "判斷數值是否朝範圍回復"
+      ],
+      "answer": "調節可能失效或刺激超過調節能力",
+      "why": "若偏高後仍持續升高，資料不符合有效負回饋正在修正的結果；可能是感受、控制或效應器受損，也可能是外界刺激過強。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "恆定代表生理數值永遠完全不變",
+      "whyWrong": "生理值會隨時間與活動波動，調節目標通常是一段可接受範圍。",
+      "correction": "判斷恆定要看數值是否受控及能否回復，而非要求每次讀值完全相同。"
+    },
+    {
+      "belief": "任何數值改變都表示調節失敗",
+      "whyWrong": "刺激後短暫偏離可能正是調節系統偵測並回應的起點。",
+      "correction": "應觀察偏差是否持續擴大，或在反向反應後逐步回到範圍。"
+    },
+    {
+      "belief": "負回饋會讓原偏差越來越大",
+      "whyWrong": "負回饋的效果是抵消原變化，使變項朝目標範圍回復。",
+      "correction": "偏高時促進降低、偏低時促進升高，反應方向需相對原偏差判斷。"
+    },
+    {
+      "belief": "有恆定調節就不會受到極端環境傷害",
+      "whyWrong": "調節能力有限，極端刺激可超過散熱、產熱或水鹽調節範圍。",
+      "correction": "恆定只在一定條件內維持，超界持續時仍需外在措施或專業協助。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "恆定是否要求數值完全固定？",
+      "answer": "否，可在受調節的範圍內波動",
+      "reason": "生理活動持續改變，但負回饋可限制偏差並使數值多數維持在範圍。"
+    },
+    {
+      "prompt": "如何由資料辨認負回饋？",
+      "answer": "偏差後出現反向反應並使數值回復",
+      "reason": "反應效果若抵消原變化而非強化它，就符合負回饋的方向。"
+    },
+    {
+      "prompt": "恆定為何可能失敗？",
+      "answer": "調節環節受損或刺激超過能力",
+      "reason": "受器、訊號或效應器失效，以及極端環境，都可能使偏差持續擴大。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

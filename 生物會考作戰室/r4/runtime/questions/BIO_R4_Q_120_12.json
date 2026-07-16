@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_120_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "匿名資料含染色體組合、身高與興趣。若研究問題只問性染色體組合，應如何使用資料？",
+  "options": [
+    "只看興趣並公開姓名",
+    "用身高猜測後刪除檢測",
+    "把三項全部視為同一變項",
+    "以染色體檢測作答，其他欄位不作無關推論"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "興趣不能判定染色體，公開姓名也不尊重隱私。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "身高不是染色體組合的直接替代測量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "染色體、身高與興趣是不同層次的變項。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此做法使用直接證據並限制資料解釋範圍。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "將染色體資料延伸為無關個人特質推論"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-052",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-039",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "研究問題決定需要的證據，「以染色體檢測作答，其他欄位不作無關推論」選直接資料且避免從無關欄位貼標籤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "這也符合個資最少使用原則，不把生物資料擴張成能力或興趣判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

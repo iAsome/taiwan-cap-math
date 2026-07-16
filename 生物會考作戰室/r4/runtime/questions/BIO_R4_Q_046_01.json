@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_046_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某酵素在pH 6、7、8的速率為5、11、7，哪組最高？",
+  "options": [
+    "pH 7",
+    "pH 6",
+    "pH 8",
+    "三組相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "pH 7的速率11是最大值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "pH 6的速率為5，低於pH 7的11。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "pH 8的速率7也低於11。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三組速率分別為5、11、7，數值並不相同。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-042",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較相同單位的三個速率，最大值11對應pH 7。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "此答案只描述受測三點，不代表其他酸鹼值不可能有更高值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

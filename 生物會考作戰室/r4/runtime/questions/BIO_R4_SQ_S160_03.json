@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S160_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S160",
+  "stem": "下次活動要同時降低兩種風險，哪項方案最完整？",
+  "options": [
+    "只更換活動海報顏色",
+    "只要求戶外組洗鞋",
+    "刪除症狀紀錄",
+    "提供煮沸飲料並改善練唱空間通風"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "海報顏色不會去除飲料污染，也不會增加小室的空氣交換。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "洗鞋和飲料攝入、呼吸道吸入都沒有最直接的傳播鏈對應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除紀錄只讓風險難以追蹤，無法改變病原在飲料或室內空氣中的存在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "煮沸針對飲料媒介，通風針對密閉練唱，分別中斷兩條暴露途徑。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移雙路徑防護"
+  ],
+  "representationType": "活動規劃",
+  "misconceptionTargets": [
+    "單一無關措施可處理所有感染"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "路徑配對核對把甲乙事件連到安全飲料、丙丁事件連到通風，兩者皆有處理。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "結果預測核對預期飲用組腸胃症狀與室內組呼吸道症狀各自下降，可在下次驗證。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_207_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S207"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "報告只提供空氣污染濃度，卻稱每位居民都有相同健康影響，主要問題為何？",
+  "options": [
+    "使用濃度單位",
+    "地點在附近",
+    "污染物來自空氣",
+    "缺少個人暴露與健康測量，結論超過證據"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "濃度單位是必要資訊，不是推論問題。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "地點接近不能證明每人結果相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "空氣是介質，但不足以判定個體狀況。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "環境濃度不能代替個人接觸、吸收與反應證據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評鑑"
+  ],
+  "representationType": "論證檢核",
+  "misconceptionTargets": [
+    "環境資料替代個體診斷"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "群體環境資料可提示風險，不能替每個人下判定。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "檢查結論是否跨越環境、暴露與健康反應層次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

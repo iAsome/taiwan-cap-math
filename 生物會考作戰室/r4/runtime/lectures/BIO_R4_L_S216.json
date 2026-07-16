@@ -1,0 +1,156 @@
+{
+  "id": "BIO_R4_L_S216",
+  "subject": "biology",
+  "unitId": "BIO_R4_U30",
+  "skillId": "BIO_R4_S216",
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S215"
+  ],
+  "objectives": [
+    "整合模式、顯微觀察與文字資訊",
+    "區分直接觀察與模式推論"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S216_SEC_01",
+      "title": "三種資訊",
+      "content": "顯微觀察記錄呈現可見形態，文字提供條件與功能，模式則簡化構造關係。三者用途不同，整合時不能互相取代。"
+    },
+    {
+      "id": "BIO_R4_L_S216_SEC_02",
+      "title": "對應共同特徵",
+      "content": "先找各資料都涉及的構造、位置或過程，再判斷彼此支持或衝突。名稱相同不代表尺度與視角完全相同，必要時還要標明切面方向。"
+    },
+    {
+      "id": "BIO_R4_L_S216_SEC_03",
+      "title": "觀察與推論",
+      "content": "看見細胞邊界與顆粒是直接觀察；依模式判斷顆粒可能參與光合作用是推論。答案應清楚標示證據來源，不可把推論改寫成看見。"
+    },
+    {
+      "id": "BIO_R4_L_S216_SEC_04",
+      "title": "模式的限制",
+      "content": "模式會省略數量、比例或動態細節，顯微記錄也受染色、倍率與切面影響。整合結論要保留這些限制，避免把示意比例當成實測結果。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S216_EX_01",
+      "prompt": "觀察記錄有綠色顆粒，文字稱其受光製造養分，可整合為何？",
+      "steps": [
+        "確認顆粒是直接觀察",
+        "用功能文字連結光合作用"
+      ],
+      "answer": "顆粒可能是參與光合作用的葉綠體。",
+      "why": "形態與顏色來自觀察，功能來自文字證據，兩者共同支持葉綠體判斷但仍屬整合推論。"
+    },
+    {
+      "id": "BIO_R4_L_S216_EX_02",
+      "prompt": "模式只畫一個粒線體，能否推論每個細胞只有一個？",
+      "steps": [
+        "辨認模式為簡化表徵",
+        "檢查是否提供實際數量資料"
+      ],
+      "answer": "不能。",
+      "why": "模式中的單一符號可只代表構造種類，未必按實際數量繪製，因此不能把圖示個數當細胞計數。"
+    },
+    {
+      "id": "BIO_R4_L_S216_EX_03",
+      "prompt": "切片只見部分細胞核，能否判定其他細胞無核？",
+      "steps": [
+        "考慮切面未穿過每個細胞中央",
+        "尋找不同切面或染色證據"
+      ],
+      "answer": "不能直接判定。",
+      "why": "薄切片只呈現被切到的部分，細胞核可能位於切面之外，未見構造不等於完整細胞沒有構造。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "模式畫幾個構造，細胞內就一定只有幾個。",
+      "whyWrong": "模式常用單一符號代表一類構造，不按真實數量呈現。",
+      "correction": "構造數量需由明確計數資料或適當顯微觀察判斷。"
+    },
+    {
+      "belief": "顯微記錄未見某構造，就證明完整細胞沒有它。",
+      "whyWrong": "切面位置、染色與解析度都可能使構造未被看見。",
+      "correction": "應結合不同切面、染色或其他證據再下結論。"
+    },
+    {
+      "belief": "文字功能說明可以取代所有形態證據。",
+      "whyWrong": "相似功能可能由不同構造完成，仍需位置與形態資料辨認。",
+      "correction": "把功能文字與直接觀察的構造特徵相互核對。"
+    },
+    {
+      "belief": "觀察和推論是完全相同的陳述。",
+      "whyWrong": "觀察描述直接記錄，推論則加入既有知識解釋資料。",
+      "correction": "回答時分別標示看見什麼及由此推得什麼。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "模式中符號數量可直接當實際數量嗎？",
+      "answer": "不一定。",
+      "reason": "模式可能簡化構造，只表示種類或關係而非精確數量。"
+    },
+    {
+      "prompt": "何者是直接觀察：有顆粒或顆粒會製造養分？",
+      "answer": "有顆粒。",
+      "reason": "顆粒存在可由記錄看見，功能是結合知識後的推論。"
+    },
+    {
+      "prompt": "切片未見細胞核時為何要保留判斷？",
+      "answer": "切面可能沒有穿過細胞核。",
+      "reason": "二維切片只呈現部分三維細胞，未見不等於不存在。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

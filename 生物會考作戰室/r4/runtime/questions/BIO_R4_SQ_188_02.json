@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_188_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S188",
+  "stem": "下列哪兩條完整食物鏈可同時由紀錄直接抽出？",
+  "options": [
+    "蘆葦種子→小鼠→遊隼；招潮蟹→草鴞",
+    "麻雀→蘆葦種子→小鼠；遊隼→招潮蟹",
+    "蘆葦種子→小鼠→草鴞；蘆葦種子→麻雀→遊隼",
+    "招潮蟹→遊隼→麻雀；小鼠→蘆葦種子"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "資料沒有遊隼吃小鼠或草鴞吃招潮蟹。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "第一段方向錯，第二段也把捕食關係反轉。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩條鏈的每一段都能在表中逐列找到。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遊隼不是麻雀的食物，小鼠也不指向種子。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "從網絡抽取兩條鏈"
+  ],
+  "representationType": "多路徑選擇",
+  "misconceptionTargets": [
+    "只要物種都在表內即可相連"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "沿共享種子分成小鼠到草鴞、麻雀到遊隼兩條路徑。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「蘆葦種子→小鼠→草鴞；蘆葦種子→麻雀→遊隼」完全受資料支持，其他選項都含反向或未記錄箭頭。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

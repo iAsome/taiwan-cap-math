@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S160_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩班都有病例，甲班多在共同午餐後發病，乙班多在密閉練唱後發病。最恰當作法是？",
+  "options": [
+    "假設兩班必為同一路徑",
+    "分別建立飲食與呼吸道暴露時間線",
+    "只比較班級名稱",
+    "把所有未發病者刪除"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩班有不同共同活動，不能因症狀相似就預設傳播途徑完全相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "午餐與練唱各形成不同假說，分開時間線可檢查潛伏期與暴露配對。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "班級名稱不包含攝入、通風或接觸等可解釋感染的生物資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "未發病者可顯示暴露後仍未發病的比例，是辨認風險差的重要比較。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比較多群聚路徑"
+  ],
+  "representationType": "雙事件分析",
+  "misconceptionTargets": [
+    "相同症狀必同途徑"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "情境核對先分離午餐攝入與密閉練唱兩種活動，不用單一路徑硬套。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "時間核對再比較暴露到發病間隔是否一致，能排除不合潛伏期的活動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0466",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "若球形細胞直徑增加兩倍且形狀相似，體積趨勢最合理為何？",
+  "options": [
+    "仍完全相同",
+    "約增加到八倍",
+    "只增加到兩倍",
+    "必定減少一半"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "尺寸增加會使體積增加，不會相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "相似球體體積與直徑三次方成比例，二的三次方為八。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩倍只描述直徑這項線性尺度，不能直接當作球體體積倍數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "直徑增加不會使體積減半。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "幾何遷移"
+  ],
+  "representationType": "模型題",
+  "misconceptionTargets": [
+    "線性等同體積"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "這是相似球形模型的估算，真實細胞變形時需直接量測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "線性尺度、表面積與三維體積隨尺寸改變的倍數規則彼此不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

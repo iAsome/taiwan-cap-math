@@ -1,0 +1,90 @@
+{
+  "id": "BIO_R4_SQ_S151_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S151",
+  "stem": "若新增戊，只有是否有硬殼的紀錄，最適當作法是？",
+  "options": [
+    "先完成第一層，第二層標記待觀察",
+    "刪除戊",
+    "猜測分節足",
+    "把戊同時放入兩個末組"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "硬殼紀錄足以決定第一層，將分節足標為待觀察可保留資料的確定程度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "戊已有硬殼資料可用，因缺少分節足紀錄就刪除會造成不必要的樣本偏差。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有觀察分節足就自行填值，會把未知資料誤寫成看似確定的構造證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同時放入兩個末組會讓一個標本具有互相衝突的分節足紀錄，破壞互斥性。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "處理缺漏資料"
+  ],
+  "representationType": "不完整資料表",
+  "misconceptionTargets": [
+    "用猜測補齊觀察"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-031",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-043",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-020",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-039",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "資料來源核對把戊的硬殼標為已觀察、分節足標為未知，不容許用推測取代測量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "分類進度核對顯示硬殼資料足以完成前層，並以待觀察明示分節足仍未知。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

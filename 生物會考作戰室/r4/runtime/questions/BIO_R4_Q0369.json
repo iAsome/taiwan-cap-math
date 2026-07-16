@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0369",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某濃度三次百分比變化為正二、零、負二，平均為零。應如何報告？",
+  "options": [
+    "平均淨變化為零，但個體變異明顯",
+    "三次結果完全一致",
+    "所有試材都沒有水移動",
+    "只報其中的零即可"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "平均是零，但正負二顯示個體或測量間有分散。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三個數值不同，不能說完全一致。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "百分比變化只反映淨量，且兩個試材有非零變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只取一值會丟失重複資料並造成偏差。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "平均與變異"
+  ],
+  "representationType": "重複資料",
+  "misconceptionTargets": [
+    "平均遮蔽變異"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "平均需搭配範圍或變異，才能看出零點估計的不確定性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "增加重複並改善尺寸控制，可判斷分散是生物差異還是操作誤差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

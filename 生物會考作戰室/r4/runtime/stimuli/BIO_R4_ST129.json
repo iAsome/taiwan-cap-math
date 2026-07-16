@@ -1,0 +1,63 @@
+{
+  "id": "BIO_R4_ST129",
+  "subject": "biology",
+  "skillId": "BIO_R4_S129",
+  "type": "文字與資料表",
+  "content": {
+    "title": "兩版豆苗高度模型",
+    "text": "第一版模型只用基因型預測豆苗高度：G1預測18公分，G2預測22公分。實測發現低溫時接近預測，高溫時兩型都比預測高約5公分。第二版模型保留基因型基準，另加入溫度調整量。兩版都不是豆苗真實構造圖。",
+    "data": "G1低溫18、高溫23；G2低溫22、高溫27；第一版只有基因型，第二版加入溫度。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "資料以兩版模型的變項及G1、G2在低溫高溫的實測高度文字表呈現。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "summary": "資料以兩版模型的變項及G1、G2在低溫高溫的實測高度文字表呈現。",
+      "columns": [
+        "基因型",
+        "低溫實測",
+        "高溫實測",
+        "第一版預測"
+      ],
+      "rows": [
+        [
+          "G1",
+          "18公分",
+          "23公分",
+          "18公分"
+        ],
+        [
+          "G2",
+          "22公分",
+          "27公分",
+          "22公分"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "三次量測為7、19、7，參考範圍6至8，最適當處理為何？",
+  "options": [
+    "只保留19",
+    "直接把19改成7",
+    "宣稱一定瞬間生病又痊癒",
+    "保留三筆並重測、檢查中間量測"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只保留超界值會忽略前後一致資料，造成選擇偏差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "更改原始數值破壞資料，不是處理異常值的正確方法。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "中間值可能是真實或誤差，現有資料不足以確定病程。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "保留原值並查儀器、操作及重測，可釐清差異來源。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "異常值不是自動刪除或自動採信，而是需要可追溯的檢查程序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若重測仍高且有相應症狀，才有更多理由把它視為真實狀態變化。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

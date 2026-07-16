@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_ST_S099",
+  "subject": "biology",
+  "skillId": "BIO_R4_S099",
+  "type": "reaction-table",
+  "content": {
+    "title": "不同回饋條件下的指向誤差",
+    "context": "受試者先看見螢幕目標，再用手指觸碰目標。甲條件全程看見手與目標；乙條件開始移動後遮住手；丙條件全程可見，但手腕受到輕微外力偏移。每種條件重複十次。",
+    "columns": [
+      "條件",
+      "視覺回饋",
+      "外力",
+      "平均誤差"
+    ],
+    "rows": [
+      [
+        "甲",
+        "全程有",
+        "無",
+        "3毫米"
+      ],
+      [
+        "乙",
+        "移動後無",
+        "無",
+        "11毫米"
+      ],
+      [
+        "丙",
+        "全程有",
+        "有",
+        "5毫米"
+      ]
+    ],
+    "note": "平均誤差愈小，表示手指停點愈接近目標。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "甲全程有視覺且無外力，誤差3毫米；乙移動後無視覺且無外力，誤差11毫米；丙全程有視覺但有外力，誤差5毫米。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "條件",
+        "回饋、外力與誤差"
+      ],
+      "rows": [
+        [
+          "甲",
+          "全程有視覺、無外力、3毫米"
+        ],
+        [
+          "乙",
+          "移動後無視覺、無外力、11毫米"
+        ],
+        [
+          "丙",
+          "全程有視覺、有外力、5毫米"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

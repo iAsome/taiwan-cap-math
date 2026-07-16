@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_118_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S118"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪一項最能區分『到達子宮』與『完成著床』？",
+  "options": [
+    "是否曾經排卵",
+    "細胞數是否大於一",
+    "早期胚胎是否已附著子宮內膜",
+    "母體是否具有卵巢"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "排卵是更早事件，不能判定是否已附著。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "細胞數增加可在抵達子宮前發生，不是著床判準。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "附著子宮內膜是完成著床的關鍵證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "具有卵巢是一般構造，無法區分兩種狀態。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把胚胎到達子宮直接視為已著床"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "著床不只是進入子宮，還必須確認早期胚胎已附著於內膜。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「早期胚胎是否已附著子宮內膜」直接檢查定義中的附著，其他線索都可能在未著床時出現。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S087_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "恆溫箱溫度過高時啟動風扇，降回設定範圍後停止。此系統最像人體哪項特徵？",
+  "options": [
+    "受器只接收一次後永久失效",
+    "動器官不需要控制訊號",
+    "偵測偏離並啟動反向調節以回復範圍",
+    "內部狀態必須永遠等於單一數值"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "系統需持續偵測，並非只接收一次。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "風扇要接到控制器命令才能依條件啟停。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "升溫啟動降溫，對應抵銷偏離的調節。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "設定範圍表示允許小幅變化，不是永遠單值。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "類比",
+    "遷移"
+  ],
+  "representationType": "恆溫設備",
+  "misconceptionTargets": [
+    "把恆定等同固定單值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "類比重點是感測、控制、執行與回復範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「偵測偏離並啟動反向調節以回復範圍」完整呈現方向相反的調節機制，最符合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

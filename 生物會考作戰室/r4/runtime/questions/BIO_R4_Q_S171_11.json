@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S171_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "醫療貼片需可固定又可低痛移除，從帶鉤果實仿生時應優先如何調整？",
+  "options": [
+    "只把貼片染成果實色",
+    "使用越尖越長的鉤且不測皮膚",
+    "調整微鉤尺寸與密度，測固定力及移除力的平衡",
+    "直接黏上真果實"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不會解決固定與低痛移除之間的力學需求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "過尖長鉤可能傷害皮膚，且未測試不能確保安全。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩項指標同時測量，才能找出足夠固定又不過度拉扯的設計。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "真果實尺寸、衛生與穩定性不符醫療材料需求。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移醫材設計"
+  ],
+  "representationType": "設計取捨",
+  "misconceptionTargets": [
+    "仿生只需最大化原功能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "需求核對設計同時有固定下限與移除舒適上限，不能只追求最大拉力。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "參數核對鉤長、密度可系統調整，再以兩種力值找到折衷範圍。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

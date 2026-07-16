@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "光合速率隨光增加後呈平台，最適合的解釋是？",
+  "options": [
+    "植物已沒有任何代謝",
+    "其他條件可能成為限制",
+    "光全部變成水",
+    "葉片必定死亡"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "平台仍可有穩定光合速率，不能說沒有代謝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "再加光無效表示瓶頸可能轉為二氧化碳、水分或溫度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "光是能量，不會因曲線平台直接轉成水分子。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "活葉也可出現正常飽和平台，沒有死亡證據。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "解讀光飽和"
+  ],
+  "representationType": "曲線概念",
+  "misconceptionTargets": [
+    "平台等於作用停止"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "曲線核對輸入增加但輸出不再增加，表示光不是當下唯一瓶頸。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "候選核對光合作用還需要碳源、水及酵素適溫，皆可能限制平台高度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

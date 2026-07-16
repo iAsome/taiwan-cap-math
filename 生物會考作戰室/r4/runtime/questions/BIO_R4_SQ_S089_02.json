@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S089_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S089",
+  "stem": "乙的培養液中有M卻無明顯反應，最能支持哪項概念？",
+  "options": [
+    "培養液中有M就保證每個細胞反應",
+    "激素到達細胞附近不等於細胞能辨識並反應",
+    "乙必定比甲有更多M受體",
+    "M只能使代謝活動降低"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙的結果直接反駁到達就保證反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "乙接觸M但缺受體且不反應，正好支持此區分。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "表中乙無M受體，不能推論更多。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲的活動增加，顯示M作用不只降低。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "證據推論"
+  ],
+  "representationType": "細胞表",
+  "misconceptionTargets": [
+    "把到達視為充分條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "利用乙作反例，可分開運送到達與目標辨識。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "乙接觸M但未檢出受體且無反應；甲有受體後活動增加，也否定M只能降低代謝的說法。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

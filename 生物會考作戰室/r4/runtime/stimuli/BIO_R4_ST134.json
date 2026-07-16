@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_ST134",
+  "subject": "biology",
+  "skillId": "BIO_R4_S134",
+  "type": "文字與資料表",
+  "content": {
+    "title": "三代家系文字紀錄",
+    "text": "第一世代I-1與I-2為配偶，兩人的子女為II-1與II-2。II-2與II-3為配偶，兩人的子女為III-1、III-2。研究性狀狀態：I-2、II-2、III-1具有性狀，其餘未呈現。",
+    "data": "I-1無、I-2有；II-1無、II-2有、II-3無；III-1有、III-2無。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "三代家系以每位代號、配偶關係、親子關係與是否具有性狀的文字表呈現。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "summary": "三代家系以每位代號、配偶關係、親子關係與是否具有性狀的文字表呈現。",
+      "columns": [
+        "個體",
+        "世代",
+        "親屬資料",
+        "性狀"
+      ],
+      "rows": [
+        [
+          "I-1",
+          "I",
+          "I-2配偶；II-1、II-2親代",
+          "無"
+        ],
+        [
+          "I-2",
+          "I",
+          "I-1配偶；II-1、II-2親代",
+          "有"
+        ],
+        [
+          "II-2",
+          "II",
+          "I-1、I-2子女；II-3配偶",
+          "有"
+        ],
+        [
+          "II-3",
+          "II",
+          "II-2配偶；III-1、III-2親代",
+          "無"
+        ],
+        [
+          "III-1",
+          "III",
+          "II-2、II-3子女",
+          "有"
+        ],
+        [
+          "III-2",
+          "III",
+          "II-2、II-3子女",
+          "無"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S160_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "聚餐後只有飲用同一壺未煮沸飲料者大量出現腸胃症狀。最優先調查什麼？",
+  "options": [
+    "飲料是否受污染及飲用者發病比例",
+    "活動場地牆壁顏色",
+    "參加者姓名筆畫",
+    "戶外蚊蟲翅膀長度"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "共同飲料與腸胃症狀形成糞口或食物媒介假說，檢驗飲料與比例可直接測試。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "牆壁顏色不會說明病原是否隨飲料進入口腔與消化道。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "姓名筆畫是文字特徵，和誰飲用污染飲料或出現症狀沒有機制關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹病例依飲料暴露集中，蚊翅長度不能檢驗這條攝入路徑。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析共同來源事件"
+  ],
+  "representationType": "流行病學線索",
+  "misconceptionTargets": [
+    "時間相近即任選原因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "暴露差核對比較飲用與未飲用者的發病比例，直接測試共同飲料假說。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "樣本核對檢驗飲料中的病原或污染指標，提供不同於問卷比例的實物證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

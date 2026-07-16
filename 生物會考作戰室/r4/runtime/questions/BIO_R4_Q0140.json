@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0140",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S012"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "切高倍後目標消失，哪個解釋最合理？",
+  "options": [
+    "細胞瞬間溶解",
+    "高倍把玻片清空",
+    "目鏡停止成像",
+    "目標可能未置中而落到較小視野外"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "切換鏡頭不會造成細胞瞬間溶解。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "物鏡不會移除玻片內容，只改可見區域。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "若目鏡完全停止成像，通常整個視野都無法正常觀察。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "未置中最能解釋低倍有目標而高倍遺失。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "原因推論"
+  ],
+  "representationType": "操作情境",
+  "misconceptionTargets": [
+    "高倍空白等於無標本"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "高倍只保留中央小區域，邊緣目標會超出新的視野。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "退回低倍重新置中可直接檢驗這個解釋。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

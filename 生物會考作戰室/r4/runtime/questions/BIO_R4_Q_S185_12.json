@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S185_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S185"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "呈現開發前後群集資料時，哪種設計最可及且完整？",
+  "options": [
+    "只用紅綠圓餅圖",
+    "只報總數",
+    "省略對照區",
+    "文字表列各物種數、豐富度、均勻度、環境值與對照"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只靠色彩不利辨色，也難讀精確數值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "總數會掩蓋物種替換與優勢度變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有對照無法排除共同年份變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多指標和對照可獨立檢查結構與環境。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移衝擊報告"
+  ],
+  "representationType": "無障礙資料",
+  "misconceptionTargets": [
+    "總數足以代表群集"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "內容核對逐種數量可重算豐富度與相對比例。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "可及性核對文字表格可由螢幕閱讀器取得且不依賴色彩。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S110_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S110"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "花藥產生正常花粉，但花粉無法萌發，最合理的判斷為何？",
+  "options": [
+    "花粉可能到達柱頭，卻難以形成運送雄性配子的路徑",
+    "花粉必定已使所有胚珠受精",
+    "胚珠會改由萼片提供雄性配子",
+    "子房會在授粉前直接形成種子"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "無法萌發便難形成花粉管，雄性配子運送會受阻。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "到達柱頭只是授粉，不能保證胚珠已受精。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "萼片沒有替代花粉提供雄性配子的功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "種子通常需胚珠受精後發育，不會預先形成。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "階段判斷"
+  ],
+  "representationType": "突變情境",
+  "misconceptionTargets": [
+    "花粉到達等於受精"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "此題要分開花粉形成、傳到柱頭、萌發與受精四個階段，前一步正常不保證後一步完成。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若要驗證，可比較正常與突變花粉的花粉管長度及胚珠受精比例。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

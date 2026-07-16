@@ -1,0 +1,133 @@
+{
+  "id": "BIO_R4_L_S180",
+  "subject": "biology",
+  "unitId": "BIO_R4_U25",
+  "skillId": "BIO_R4_S180",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S179"
+  ],
+  "objectives": [
+    "依是否具有生命或源自生物活動區分生物與非生物因子",
+    "由控制實驗判斷特定環境因子對生物的影響"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S180_SEC_01",
+      "title": "生物因子",
+      "content": "生物因子包含環境中的生物及其活動，例如捕食者、食物、競爭者、寄生生物與分解者。已死亡的落葉雖不再存活，仍是生物產生的有機物，可成為其他生物資源。"
+    },
+    {
+      "id": "BIO_R4_L_S180_SEC_02",
+      "title": "非生物因子",
+      "content": "光、溫度、水分、鹽度、酸鹼值、風與土壤礦物屬非生物因子。它們沒有生命，卻能改變生物的生長、分布、繁殖與族群數量。"
+    },
+    {
+      "id": "BIO_R4_L_S180_SEC_03",
+      "title": "交互影響",
+      "content": "生物因子與非生物因子會共同作用。樹木遮陰可降低地表光與溫度，蚯蚓活動可改變土壤孔隙；因此環境變化有時由生物活動引起。"
+    },
+    {
+      "id": "BIO_R4_L_S180_SEC_04",
+      "title": "因果檢驗",
+      "content": "要檢驗鹽度或光照的作用，應只改一項因子，控制物種、個體大小、時間與其他條件。野外相關資料可提出假說，但需排除共變因子才能加強因果判斷。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S180_EX_01",
+      "prompt": "池塘魚數下降，同時水溫升高且掠食鳥增加，能直接判定原因嗎？",
+      "steps": [
+        "列出水溫為非生物因子",
+        "列出掠食鳥為生物因子",
+        "辨認兩者同時變化造成混淆"
+      ],
+      "answer": "不能，需分別檢驗溫度與捕食壓力。",
+      "why": "魚數變化同時有非生物與生物兩條合理路徑，單一時間相關無法分配各自效果，應採配對或控制實驗。"
+    },
+    {
+      "id": "BIO_R4_L_S180_EX_02",
+      "prompt": "落葉堆算生物因子還是非生物因子？",
+      "steps": [
+        "確認落葉曾由植物產生",
+        "辨認其中有機物可供分解者利用",
+        "依來源與生態作用分類"
+      ],
+      "answer": "通常視為生物來源的有機資源。",
+      "why": "落葉雖已死亡，仍是植物組織並可作為分解者食物；它不同於溫度或岩石等不具生物來源的物理因子。"
+    },
+    {
+      "id": "BIO_R4_L_S180_EX_03",
+      "prompt": "兩缸只改鹽度，蝦存活率不同，證據指向什麼？",
+      "steps": [
+        "確認蝦種與數量相同",
+        "確認溫度、食物與時間受控制",
+        "將存活差連到鹽度"
+      ],
+      "answer": "鹽度這項非生物因子影響蝦的存活。",
+      "why": "單一變因設計使兩缸主要差異集中在鹽度，且存活率是直接生物反應，因此因果解釋比野外共變資料更有力。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "環境因子只有溫度與水分。",
+      "whyWrong": "光、鹽度、酸鹼值、生物食物與捕食者也都會影響生物。",
+      "correction": "應分成生物與非生物兩大類，再依研究情境列出具體因子。"
+    },
+    {
+      "belief": "死亡落葉一定是非生物因子。",
+      "whyWrong": "落葉源自植物且保有有機物，可成為分解者食物與棲所。",
+      "correction": "分類時除是否仍存活，也要考慮是否為生物產物及其生態功能。"
+    },
+    {
+      "belief": "生物因子不可能改變非生物環境。",
+      "whyWrong": "植物遮陰、蒸散及生物翻土都能改變光、溫度與土壤狀態。",
+      "correction": "生物和非生物因子可雙向影響，不能把兩類視為彼此隔離。"
+    },
+    {
+      "belief": "野外兩項變化同時發生就已證明因果。",
+      "whyWrong": "兩項可能共同受第三因素影響，或只是時間上巧合。",
+      "correction": "應控制其他條件、增加重複並尋找處理後一致反應。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "池塘中的掠食魚屬哪類因子？",
+      "answer": "生物因子。",
+      "reason": "掠食魚是活生物，其捕食活動會影響獵物族群。"
+    },
+    {
+      "prompt": "海水鹽度屬哪類因子？",
+      "answer": "非生物因子。",
+      "reason": "鹽度是水體物理化學條件，本身沒有生命但影響生物。"
+    },
+    {
+      "prompt": "為何一次只改一項環境因子？",
+      "answer": "避免多項變化混淆因果。",
+      "reason": "其他條件相同時，結果差才較能歸因於待測因子。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  }
+}

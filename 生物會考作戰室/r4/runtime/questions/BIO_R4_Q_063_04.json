@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_063_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S063"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "判斷每分鐘換氣量除了呼吸頻率，還需知道什麼？",
+  "options": [
+    "牙齒數量",
+    "食物甜度",
+    "尿液顏色",
+    "每次呼吸氣量"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "牙齒數量不決定肺換氣量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "食物甜度也不是通氣測量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "尿液顏色與單次呼吸體積無關。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "頻率乘每次氣量才能估計總換氣。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同樣頻率下，深呼吸與淺呼吸的一分鐘總氣量不同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「每次呼吸氣量」是計算每分鐘換氣量不可缺少的第二個指標。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

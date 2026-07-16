@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_072_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S072",
+  "stem": "這份資料最能反駁哪項說法？",
+  "options": [
+    "治療用於明確感染",
+    "停止後菌種數部分恢復",
+    "微生物越少必定越健康且沒有代價",
+    "腹瀉比例可被量測"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹明示治療有醫療目的，表格沒有反駁其必要性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩週時菌種數由三十八升至八十二，資料支持部分恢復。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "菌種大減時代謝物下降且腹瀉上升，顯示減少也可能伴隨代價。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表中列出不同時點比例，表示腹瀉確實被記錄與比較。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "資料不是主張不應治療，而是顯示全面影響正常菌群可能有伴隨後果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "判讀需同時看菌種、功能產物和症狀，不能只把總菌量下降當唯一成功。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

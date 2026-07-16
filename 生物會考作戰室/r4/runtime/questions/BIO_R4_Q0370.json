@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0370",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "曲線在百分之八附近穿越零，但測量誤差為正負百分之一。哪項結論較妥當？",
+  "options": [
+    "精確平衡濃度必為百分之八點零零零",
+    "平衡濃度約在百分之八附近，精度受誤差限制",
+    "所有濃度都等同百分之八",
+    "曲線不能提供任何資訊"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "測量有誤差時報到過多小數是假精確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "近似值及限制符合圖線與誤差能支持的範圍。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不同濃度仍有不同處理條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "曲線可估計零點，只是不能無限精確。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "不確定性"
+  ],
+  "representationType": "圖表判讀",
+  "misconceptionTargets": [
+    "過度精確"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "報告精度應與測量工具、重複變異及濃度間距相稱。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "可增加零點附近測點以取得更窄但仍有不確定性的區間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

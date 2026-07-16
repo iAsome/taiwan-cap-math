@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_131_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若aa呈白花、Aa呈紫花，可判定何者？",
+  "options": [
+    "a為顯性",
+    "A為顯性",
+    "兩者共顯性",
+    "花色完全不遺傳"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "若a顯性，Aa應呈a所對應白花。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "Aa呈A所對應紫花，故A為顯性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題目只呈一種性狀，不符合兩者同時表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "親代版本與花色有明確關係，不能說不遺傳。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未用異型合子判斷顯性版本"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "異型合子Aa的紫花表現唯一指向A為顯性，「A為顯性」正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "Aa呈A所對應紫花，故A為顯性。若a顯性，Aa應呈a所對應白花。題目只呈一種性狀，不符合兩者同時表現。親代版本與花色有明確關係，不能說不遺傳。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

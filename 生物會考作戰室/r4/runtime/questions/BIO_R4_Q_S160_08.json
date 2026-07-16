@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S160_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S160"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某感染者沒有症狀，但檢測顯示其呼吸道仍排出病原。哪項判讀正確？",
+  "options": [
+    "沒有症狀就沒有病原",
+    "檢測結果必定錯誤",
+    "只有發燒才會傳播",
+    "無症狀不等於沒有傳播可能"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "檢測已顯示呼吸道有病原排出，外觀無症狀不能否定該資料。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若未發現採樣或檢驗問題，不能只因結果不合直覺就宣稱必定錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "病原排出可發生於無發燒狀態，發燒不是所有傳播的必要條件。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "傳播取決於病原排出與接觸途徑，症狀缺如不會自動切斷兩者。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "理解無症狀傳播可能"
+  ],
+  "representationType": "檢測情境",
+  "misconceptionTargets": [
+    "無症狀必定不傳播"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "證據核對把呼吸道排出量與主觀症狀分開，前者直接關係到暴露來源。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "條件核對仍需距離、通風與防護才能估計實際風險，不把可能誇大成必然感染。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

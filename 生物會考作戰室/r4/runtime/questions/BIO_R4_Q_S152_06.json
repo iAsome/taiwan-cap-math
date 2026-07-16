@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某一步寫有毛到2、有四足到3。為何不合格？",
+  "options": [
+    "兩句字數不同",
+    "同一動物可能兩項皆符合",
+    "沒有使用顏色",
+    "編號不是連續字母"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "成對敘述不必字數相同，只要界線清楚並能讓標本唯一分流。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "狗或貓同時有毛又有四足，會在這一步同時符合通往2與3的條件。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "顏色只是可選特徵之一，沒有使用顏色並不會自動使檢索步驟無效。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "數字或字母都可標示路徑，真正問題是生物特徵是否互斥而非編號外形。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨識規則缺陷"
+  ],
+  "representationType": "檢索表審查",
+  "misconceptionTargets": [
+    "只看格式不看互斥性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "反例核對選一隻狗代入兩句，兩句同時為真，立即證明這一對不能唯一分流。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "規格核對把版面與生物條件分開，同一動物可同時有毛及四足，違反互斥原則。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

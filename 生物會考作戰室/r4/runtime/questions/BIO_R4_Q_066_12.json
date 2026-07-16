@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_066_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S066"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "模型中甲泵送液到交換器再回乙泵，乙泵送液到全身模型再回甲泵。甲、乙最接近什麼？",
+  "options": [
+    "甲左心、乙右心",
+    "兩者都是肺泡",
+    "兩者都是小腸",
+    "甲右心、乙左心"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲先送到交換器代表送往肺部，應對右心而非左心。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "泵負責推動液體，不類似只進行氣體交換的肺泡。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "小腸沒有分別推動肺循環與體循環的兩個幫浦功能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "甲送肺模型對應右心，乙送全身模型對應左心，方向一致。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-034",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-016",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-026",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-039"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先看每個泵的目的地：送肺的是右心，送全身的是左心。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "不要依模型左右位置猜名稱，功能與流向才是可靠的類比依據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

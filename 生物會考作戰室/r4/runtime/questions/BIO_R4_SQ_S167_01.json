@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S167_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S167",
+  "stem": "甲株三個部位皆明顯著色，最直接支持哪個路徑？",
+  "options": [
+    "染液由葉脈先到根內",
+    "染液只在葉片自行產生",
+    "染液由根進入並沿莖木質部抵達葉脈",
+    "染液完全停在土壤中"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "處理從根部接觸染液開始，逆向順序不符合實驗時間與來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "若只在葉片產生，根內與莖上段不應同時出現外加染液。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "根、莖上段與葉脈連續出現染液，符合由根往葉的木質部路徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三個植物部位皆有著色，已否定染液完全停留在土壤。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "解讀完整路徑"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "染液在葉片產生"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "來源核對染液最初位於根部外液，移動起點應由根端開始。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "分布核對三個節點依序皆明顯，構成連續而非跳躍的輸水證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

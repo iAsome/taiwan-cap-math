@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0464",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "用器官長度除以細胞直徑估算細胞總數，最大問題為何？",
+  "options": [
+    "除法永遠不能使用",
+    "細胞直徑沒有單位",
+    "器官不含細胞",
+    "只算一維排列，忽略寬厚、空隙與多種細胞"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "除法可提供適當的一維估算。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "細胞直徑可以用微米等單位表示。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "器官由大量細胞與組織構成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "總數是三維問題，不能由單一長度比直接得到。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "模型限制"
+  ],
+  "representationType": "估算評估",
+  "misconceptionTargets": [
+    "一維等同總數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "一維比值可作合理性檢查，但需清楚標示模型限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若要估總數，還需體積、細胞密度與組織組成資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

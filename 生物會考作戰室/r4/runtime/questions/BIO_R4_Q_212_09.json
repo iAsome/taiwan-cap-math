@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_212_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "技術A去除率高但產物有毒，B去除率稍低且無檢出毒性，何者合理？",
+  "options": [
+    "需綜合去除率、產物毒性及暴露評估，不能只選A",
+    "必選A因效率最高",
+    "必選B且不必監測",
+    "兩者完全相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "技術選擇需同時衡量效益與副產物風險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高去除率不能抵銷有毒產物而不評估。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "目前未檢出不等於永遠無風險，仍需監測。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩者效益與風險資料明顯不同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析"
+  ],
+  "representationType": "多準則比較",
+  "misconceptionTargets": [
+    "效率最高必最佳"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "單一效率指標容易把污染轉化後的風險漏掉。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "決策可依場址、暴露與可控制性比較整體淨效益。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

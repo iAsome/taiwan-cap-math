@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S091_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S091"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "連續血糖裝置顯示飯後短暫升高，使用者便判定調節一定失敗。這項判斷缺少什麼？",
+  "options": [
+    "裝置外殼顏色",
+    "使用者鞋子尺寸",
+    "餐桌高度",
+    "後續血糖是否在激素調節後朝原範圍回復"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "外殼顏色不能判斷負回饋功能。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "鞋子尺寸與飯後血糖回復沒有直接關聯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "餐桌高度不是此調節的關鍵證據。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "需要時間序列才能判斷偏離後是否被修正。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "證據評估",
+    "遷移"
+  ],
+  "representationType": "健康裝置",
+  "misconceptionTargets": [
+    "以單一時點否定恆定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "短暫升高可屬正常波動，不能只用單一時點判定失敗。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "後續回復趨勢與激素反應才是檢驗動態恆定的核心資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

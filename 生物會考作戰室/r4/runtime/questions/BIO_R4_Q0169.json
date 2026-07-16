@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0169",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "細胞影像長度約為十微米比例尺的三倍，實際長度約多少？",
+  "options": [
+    "三十微米",
+    "十三微米",
+    "三微米",
+    "三百微米"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三乘十微米得到三十微米，比例計算正確。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十三是把三與十相加，未使用長度比例。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三微米忽略比例尺每段代表的十微米。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三百多乘一個十，實際長度被高估。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "比例計算"
+  ],
+  "representationType": "文字比例尺",
+  "misconceptionTargets": [
+    "倍數與數值相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "影像含三段比例尺長度，每段代表十微米，因此總長三十微米。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "估算依相對倍數計算，不直接使用螢幕公分數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

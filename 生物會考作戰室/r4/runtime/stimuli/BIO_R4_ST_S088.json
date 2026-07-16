@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_ST_S088",
+  "subject": "biology",
+  "skillId": "BIO_R4_S088",
+  "type": "tracer-table",
+  "content": {
+    "title": "標記物在腺體與血管中的出現時間",
+    "context": "研究者讓某腺體合成帶有安全標記的化學訊息，依序檢測腺體細胞、腺體旁微血管與遠處血管。表中時間是首次測到標記物的時間，數值越小代表越早出現。",
+    "columns": [
+      "檢測位置",
+      "首次測到時間（秒）",
+      "是否有連接腺體到體表的導管"
+    ],
+    "rows": [
+      [
+        "腺體細胞",
+        "0",
+        "否"
+      ],
+      [
+        "腺體旁微血管",
+        "8",
+        "否"
+      ],
+      [
+        "遠處血管",
+        "35",
+        "否"
+      ]
+    ],
+    "note": "檢測期間血流方向由腺體附近流向遠處，標記物本身不改變化學訊息的功能。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-109-ALTERNATE-INTEGRATED-NATURAL-032",
+    "CAP-113-MAIN-INTEGRATED-NATURAL-005"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-032",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "accessibility": {
+    "summary": "標記物先在腺體細胞出現，8秒後在旁邊微血管出現，35秒後在遠處血管出現，沒有通往體表的導管。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "位置",
+        "時間摘要"
+      ],
+      "rows": [
+        [
+          "腺體細胞",
+          "0秒最先測到"
+        ],
+        [
+          "腺體旁微血管",
+          "8秒測到"
+        ],
+        [
+          "遠處血管",
+          "35秒測到"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

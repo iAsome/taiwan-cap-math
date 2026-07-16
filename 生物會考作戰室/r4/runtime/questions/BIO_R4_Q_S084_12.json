@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S084_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "教室擴音設備的麥克風正常接收聲音，導線卻中斷，電腦收不到資料。此故障最像聽覺路徑哪種情況？",
+  "options": [
+    "耳道收不到聲波",
+    "耳膜無法振動",
+    "耳蝸受器不能接收刺激",
+    "受器已產生訊息但聽神經傳入受阻"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "麥克風已接收聲音，不對應聲波進入失敗。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "接收正常表示類比中的振動接收並非主要問題。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "麥克風正常也不符合受器完全不能接收。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "導線中斷正對應受器後的訊息傳入路徑受阻。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "系統類比",
+    "遷移"
+  ],
+  "representationType": "聲音設備",
+  "misconceptionTargets": [
+    "忽略接收端已正常"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "類比中的接收端正常、傳輸端中斷，對應聽神經受阻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "麥克風正常表示聲音已進入且接收端能反應，因此故障不在耳道、耳膜或耳蝸接收，而在接收後的傳輸線。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

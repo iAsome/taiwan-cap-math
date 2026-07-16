@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "為何基礎模型中由哪類精子受精會影響形成XX或XY？",
+  "options": [
+    "卵通常都給X，而精子可給X或Y",
+    "卵可任意改成X或Y",
+    "精子同時把XY都送入卵",
+    "子宮在受精後隨意增加Y"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "固定的X卵配上不同精子，會形成兩種組合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "卵不能依意志任意改變所帶染色體。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "每個精子通常只帶X或Y其中一條。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "子宮不會替受精卵新增性染色體。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把受精後性染色體歸因於子宮改變"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "兩種可能結果的差異來自精子攜帶X或Y，「卵通常都給X，而精子可給X或Y」說明完整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "其餘說法違反配子形成或捏造子宮能改變染色體的作用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S162_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S162"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某菌可分解油脂，但含重金屬廢水中金屬濃度不變。這顯示什麼？",
+  "options": [
+    "量測一定錯誤",
+    "所有污染都已處理",
+    "重金屬不存在",
+    "微生物功能具有處理範圍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "結果可由菌種不能移除金屬解釋，沒有證據就不能先斷言量測必錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "油脂與金屬是不同污染物，油脂可分解不代表全部污染皆已處理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "金屬濃度不變正表示重金屬仍在，不能反向宣稱它不存在。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "菌種代謝油脂的能力不能自動轉成處理元素金屬的能力。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估菌種功能限制"
+  ],
+  "representationType": "複合污染",
+  "misconceptionTargets": [
+    "一種菌可處理所有污染"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "污染物核對分別追蹤油脂與重金屬，兩個指標呈現不同處理結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "功能核對把菌種酵素底物專一性納入，支持先分析污染種類再選技術。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

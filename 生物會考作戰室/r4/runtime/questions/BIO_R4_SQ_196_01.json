@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_196_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S196"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S196",
+  "stem": "依四週後的紀錄，哪一袋落葉減量最多？",
+  "options": [
+    "乙袋",
+    "甲袋",
+    "丙袋",
+    "三袋相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙只減少12克，少於甲袋。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲由100降至61，減少39克，最多。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙只減少5克，是三袋最少。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三個剩餘質量不同，減量不相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算落葉減量"
+  ],
+  "representationType": "處理表格",
+  "misconceptionTargets": [
+    "剩餘最多就是分解最多"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "以相同起始量減去剩餘量，甲袋減量最大。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「甲袋」是直接資料比較，尚未把差異全歸於單一因素。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

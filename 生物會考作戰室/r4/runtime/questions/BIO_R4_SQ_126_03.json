@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_SQ_126_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S126"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST126",
+  "stem": "若報告寫『丁階段每個子細胞只有兩條』，應如何查錯？",
+  "options": [
+    "把兩個子細胞再合成一個",
+    "確認是否把平均分配誤當成原有四條直接除以二",
+    "用DNA量取代所有條數",
+    "刪除母細胞原有條數"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "合併細胞不是修正計數觀念的方法。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此錯誤正是忽略分裂前複製造成的。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "DNA量與染色體條數不能任意互換。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "母細胞四條是判斷結果的重要基準。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "用母細胞條數除二作子細胞條數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-037",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-026",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-022"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "一般體細胞分裂維持每細胞四條，兩條答案源於錯誤直接除半。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「確認是否把平均分配誤當成原有四條直接除以二」定位了推理錯誤，也保留表中丁階段的實際計數。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_075_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S075"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "垃圾車把垃圾送到處理場卻未處理，最像哪種情況？",
+  "options": [
+    "細胞完全不產生廢物",
+    "血液不流動",
+    "循環送達排泄器官但器官無法移出廢物",
+    "未消化食物正常排遺"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "模型已有垃圾被運送，代表廢物確實存在並非未產生。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "垃圾車能到處理場表示運輸存在，不類似血液完全不流動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "送達正常但處理失敗，對應排泄器官功能受阻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "垃圾來自製程後運輸，不是消化道內未吸收食物殘餘。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "類比需分辨運送與處理兩環節，不能看到累積就一律怪罪交通。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "模型顯示循環正常仍不足以完成排泄，排泄器官也必須正常。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

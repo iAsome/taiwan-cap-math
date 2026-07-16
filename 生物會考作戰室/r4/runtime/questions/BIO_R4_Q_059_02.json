@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_059_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "肺泡氧濃度高於微血管血液時，氧淨移向哪裡？",
+  "options": [
+    "由血液進肺泡",
+    "由肺泡進血液",
+    "由肺泡進胃",
+    "由血液進小腸"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此方向是由低氧血到高氧肺泡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "由高濃度肺泡到低濃度血液正確。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "胃負責消化食物，不會與肺泡之間形成氧氣濃度差並交換氧氣。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "小腸也不是肺泡氣體的直接去向。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "只比較氧，肺泡側較高，所以淨方向為肺泡到微血管。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「由肺泡進血液」符合濃度梯度與交換界面，其餘方向或器官錯誤。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

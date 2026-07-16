@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_ST136",
+  "subject": "biology",
+  "skillId": "BIO_R4_S136",
+  "type": "文字與資料表",
+  "content": {
+    "title": "ABO 血型家系推論",
+    "text": "某家庭中，甲親本為 A 型，已知基因型是 IAi；乙親本為 B 型，已知基因型是 IBi。甲形成的配子可能帶 IA 或 i，乙形成的配子可能帶 IB 或 i。將兩人的配子組合後，可得到四種等可能的子代基因型。",
+    "data": "IA 與 IB 共同出現時表現 AB 型；IAi 表現 A 型；IBi 表現 B 型；ii 表現 O 型。四種組合的理論機率各為四分之一。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "accessibility": {
+    "summary": "資料表逐列列出 IAi 與 IBi 親本的配子組合、子代基因型、血型及理論機率，不依賴顏色或圖示。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "summary": "資料表逐列列出 IAi 與 IBi 親本的配子組合、子代基因型、血型及理論機率，不依賴顏色或圖示。",
+      "columns": [
+        "甲的配子",
+        "乙的配子",
+        "子代基因型",
+        "子代血型",
+        "理論機率"
+      ],
+      "rows": [
+        [
+          "IA",
+          "IB",
+          "IAIB",
+          "AB 型",
+          "1/4"
+        ],
+        [
+          "IA",
+          "i",
+          "IAi",
+          "A 型",
+          "1/4"
+        ],
+        [
+          "i",
+          "IB",
+          "IBi",
+          "B 型",
+          "1/4"
+        ],
+        [
+          "i",
+          "i",
+          "ii",
+          "O 型",
+          "1/4"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

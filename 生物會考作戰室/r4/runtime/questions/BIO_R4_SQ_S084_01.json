@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S084_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S084",
+  "stem": "哪位受試者的資料最直接顯示視網膜已反應，但訊息傳入腦的路徑異常？",
+  "options": [
+    "受試者乙：視網膜反應異常",
+    "受試者甲：視網膜正常但視神經傳導異常",
+    "受試者丙：視網膜與視神經皆正常",
+    "受試者乙與丙：兩者未共同符合條件"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙的視網膜反應本身異常，不符合已反應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲的視網膜正常而視神經傳導異常，完全符合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙的視神經傳導正常，沒有題述異常。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "乙與丙沒有共同呈現題述的兩項條件。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "只看最終結果不看受損位置"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "同時比對視網膜與視神經兩欄，只有甲符合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "甲不能辨認也與訊息無法正常傳入腦的結果一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

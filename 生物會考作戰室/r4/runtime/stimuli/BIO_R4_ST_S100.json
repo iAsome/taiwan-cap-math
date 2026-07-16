@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_ST_S100",
+  "subject": "biology",
+  "skillId": "BIO_R4_S100",
+  "type": "load-table",
+  "content": {
+    "title": "負重位置與腰背肌肉張力",
+    "context": "研究者請同一受試者以三種方式靜止拿住相同箱子十秒，量得腰背肌肉相對張力。受試者雙腳位置、箱重與測量時間均相同。",
+    "columns": [
+      "方式",
+      "箱子距腰部",
+      "膝部狀態",
+      "腰背相對張力"
+    ],
+    "rows": [
+      [
+        "甲",
+        "15公分",
+        "適度彎曲",
+        "42"
+      ],
+      [
+        "乙",
+        "45公分",
+        "適度彎曲",
+        "71"
+      ],
+      [
+        "丙",
+        "45公分",
+        "伸直",
+        "78"
+      ]
+    ],
+    "note": "相對張力只供三種方式比較，不是傷害發生的固定界線。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "相同箱重下，甲距腰15公分、膝適度彎曲、張力42；乙距腰45公分、膝適度彎曲、張力71；丙距腰45公分、膝伸直、張力78。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "方式",
+        "位置、膝部與張力"
+      ],
+      "rows": [
+        [
+          "甲",
+          "15公分、適度彎曲、42"
+        ],
+        [
+          "乙",
+          "45公分、適度彎曲、71"
+        ],
+        [
+          "丙",
+          "45公分、伸直、78"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

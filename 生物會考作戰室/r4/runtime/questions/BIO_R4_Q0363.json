@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0363",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S031"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "五克試材增加零點五克，百分比變化為何？",
+  "options": [
+    "百分之一",
+    "百分之五",
+    "百分之十",
+    "百分之五十"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "零點五除以五不是百分之一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "百分之五會對應增加零點二五克。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "零點五除以五等於零點一，即百分之十。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "百分之五十需增加二點五克。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "百分比計算"
+  ],
+  "representationType": "數值題",
+  "misconceptionTargets": [
+    "分母用終值"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "百分比變化以變化量除以初始值，再乘百分之百。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "保留正號可表示增加方向，與減重的負百分比區分。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_S111_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S111",
+  "stem": "甲乙兩組比較最支持哪項推論？",
+  "options": [
+    "柱頭有花粉必定形成花粉管",
+    "配子融合發生在花藥內",
+    "沒有花粉也能正常受精",
+    "授粉成功後，花粉管形成仍可能失敗"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙提供柱頭有花粉但沒有花粉管的反例。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "表格記錄融合位置在胚珠，不在花藥。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙無花粉也無融合，不支持此說法。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "甲乙都授粉，後續結果不同，支持中間階段可失敗。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比較推論"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "授粉保證受精"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "甲乙控制了授粉已發生，差異出現在花粉管與融合，顯示授粉不是充分條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若要找乙的原因，可再檢查花粉活性、相容性與柱頭萌發環境。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

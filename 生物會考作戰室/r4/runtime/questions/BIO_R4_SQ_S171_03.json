@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_SQ_S171_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S171",
+  "stem": "書包扣件要求至少 10 牛頓且重複完整率至少 90%，應選哪個原型？",
+  "options": [
+    "乙，因兩項門檻都達到",
+    "丙，因只需看最大拉力",
+    "甲，因沒有鉤最耐用",
+    "三者都不必看數據"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "乙拉力十一點八牛頓且完整率百分之九十四，兩條件皆符合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "丙拉力足夠但完整率百分之七十一，低於耐久門檻。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "甲拉脫力只有二點五牛頓，未達最低固定需求。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "產品有明確數值門檻，必須逐項比較資料才能決策。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移產品選型"
+  ],
+  "representationType": "規格決策",
+  "misconceptionTargets": [
+    "只看最大拉力選擇"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "門檻核對乙的十一點八大於十，百分之九十四也大於百分之九十。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "排除核對甲敗在拉力、丙敗在耐久，只有乙同時通過兩項要求。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

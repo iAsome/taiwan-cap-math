@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ0073",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S025"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST025",
+  "stem": "哪項結論最直接受到表格支持？",
+  "options": [
+    "葡萄糖在此條件下能由袋內通過膜到外液",
+    "澱粉已全部由袋內移到外液",
+    "膜能讓所有物質自由通過",
+    "二十分鐘後膜已完全消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "葡萄糖起初只在袋內，後來外液檢出，支持跨膜外移。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外液未檢出澱粉，不能說澱粉已全部移出。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只測兩種物質，且結果不同，不能推出全部自由通過。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "袋內外仍可分別檢測，沒有膜消失的證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "表格判讀"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "單一結果推全部"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-024"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "利用開始與結束的所在位置變化，可判定葡萄糖跨越人工膜。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "結論要限定實驗條件與被測物質，不能超出表格資料。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

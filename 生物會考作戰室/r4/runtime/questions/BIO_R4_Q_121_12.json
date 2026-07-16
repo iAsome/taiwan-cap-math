@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "遊戲設計者讓結果嚴格依XX、XY、XX、XY輪替，想模擬真實受精。最佳修正為何？",
+  "options": [
+    "維持輪替，因機率等於固定順序",
+    "每次都設定成XX",
+    "由上一局結果指定下一局",
+    "每局獨立隨機選X或Y精子"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "各半機率不代表結果必須按固定順序出現。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "全設XX不能呈現兩種可能組合。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "上一局不會決定下一個受精精子的染色體。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "獨立隨機抽取較能模擬每次新的配子相遇。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把機率模型寫成固定輪替規則"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "真實模型的重點是每次事件獨立且有兩種可能，不是預排交替。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「每局獨立隨機選X或Y精子」保留近似各半的長期趨勢，也允許短期連續相同結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

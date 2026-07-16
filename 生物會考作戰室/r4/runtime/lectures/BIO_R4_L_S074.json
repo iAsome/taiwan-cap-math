@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S074",
+  "subject": "biology",
+  "unitId": "BIO_R4_U10",
+  "skillId": "BIO_R4_S074",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S073"
+  ],
+  "objectives": [
+    "比較腎臟、皮膚與肺排出物質的種類與主要功能",
+    "依器官受損情境推論哪種代謝廢物較難移除"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S074_SEC_01",
+      "title": "腎臟形成尿液",
+      "content": "腎臟接收血液，將尿素、多餘水分與部分鹽類形成尿液排出，同時保留身體仍需的許多物質。腎臟是含氮廢物排泄與水鹽調節的重要器官。"
+    },
+    {
+      "id": "BIO_R4_L_S074_SEC_02",
+      "title": "皮膚形成汗液",
+      "content": "汗腺分泌汗液，含水與少量鹽類等。汗液蒸發能帶走熱量，因此流汗的主要情境常和體溫調節有關，也具有排出少量物質的作用。"
+    },
+    {
+      "id": "BIO_R4_L_S074_SEC_03",
+      "title": "肺排出氣體廢物",
+      "content": "細胞產生的二氧化碳由血液運到肺部，跨入肺泡後隨呼氣排出；呼出氣也含水氣。肺不只讓空氣進出，還是移除二氧化碳的重要排泄器官。"
+    },
+    {
+      "id": "BIO_R4_L_S074_SEC_04",
+      "title": "器官分工不可任意替代",
+      "content": "肺、腎臟與皮膚排出物有部分重疊，例如水，但主要廢物與調節角色不同。大量流汗不能完全替代腎臟排尿，腎臟也不能取代肺快速排出二氧化碳。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S074_EX_01",
+      "prompt": "血中尿素升高且尿素排出下降，應優先檢查哪個器官？",
+      "steps": [
+        "辨認尿素主要由尿液排出",
+        "連結尿液形成器官"
+      ],
+      "answer": "腎臟",
+      "why": "尿素是含氮代謝廢物，主要由血液送至腎臟並隨尿液排出；當血中累積且尿中排出下降時，腎臟處理功能是合理優先檢查環節。"
+    },
+    {
+      "id": "BIO_R4_L_S074_EX_02",
+      "prompt": "運動時汗量增加，最直接有助哪項調節？",
+      "steps": [
+        "確認汗液到達皮膚表面",
+        "判斷蒸發時的熱量變化"
+      ],
+      "answer": "汗液蒸發帶走熱量，協助降溫",
+      "why": "水分由液態變成氣態需要吸收熱量，汗液在皮膚表面蒸發可帶走身體熱量；若環境濕度高而難蒸發，降溫效果會下降。"
+    },
+    {
+      "id": "BIO_R4_L_S074_EX_03",
+      "prompt": "肺換氣停止時，哪種代謝廢物最直接難以排出？",
+      "steps": [
+        "找出由肺主要排出的物質",
+        "區分尿素與二氧化碳途徑"
+      ],
+      "answer": "二氧化碳",
+      "why": "細胞呼吸產生的二氧化碳經血液運到肺，必須進入肺泡並隨呼氣排出；腎臟無法在短時間內取代肺的氣體交換與排出功能。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只有腎臟參與排泄",
+      "whyWrong": "肺排出二氧化碳，皮膚也可排出汗液中的水與鹽。",
+      "correction": "排泄涉及多個器官，應依代謝廢物種類判斷主要排出途徑。"
+    },
+    {
+      "belief": "流汗可完全取代排尿",
+      "whyWrong": "汗液與尿液成分及調節方式不同，尿素主要仍由腎臟排出。",
+      "correction": "皮膚與腎臟可都排水鹽，但腎臟對含氮廢物及水鹽調節不可被完全取代。"
+    },
+    {
+      "belief": "肺只吸入氧氣，不參與排泄",
+      "whyWrong": "肺會把細胞代謝產生的二氧化碳由血液移到肺泡並排出。",
+      "correction": "肺同時參與氣體交換與二氧化碳排泄，呼出氣也帶走部分水氣。"
+    },
+    {
+      "belief": "汗液只要分泌就一定能有效降溫",
+      "whyWrong": "主要降溫來自蒸發，若汗液滴落或環境濕度高，效果會降低。",
+      "correction": "判斷散熱需看汗液是否蒸發，不能只用分泌量代表實際帶走熱量。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "尿素主要由哪個器官排出？",
+      "answer": "腎臟",
+      "reason": "腎臟從血液處理含氮廢物，尿素隨形成的尿液離開身體。"
+    },
+    {
+      "prompt": "汗液蒸發如何協助體溫調節？",
+      "answer": "蒸發吸熱並帶走體表熱量",
+      "reason": "汗水由液態變氣態需要能量，因此可降低皮膚及流經皮膚血液的熱量。"
+    },
+    {
+      "prompt": "肺參與排泄的主要證據為何？",
+      "answer": "呼氣排出細胞代謝產生的二氧化碳",
+      "reason": "二氧化碳由血液運到肺泡並離開體外，符合代謝廢物排泄。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

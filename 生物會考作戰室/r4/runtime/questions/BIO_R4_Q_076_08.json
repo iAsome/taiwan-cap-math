@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_076_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩人飲水皆500毫升，甲汗400、乙汗100毫升。能否只據此判定甲淨失水較多？",
+  "options": [
+    "能，因其他途徑必定相同",
+    "能，因尿量永遠是零",
+    "能，因食物完全不含水",
+    "尚不能，還需尿液、呼氣、食物等完整收支"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題目沒有證明其他來源與流失相同，不能自行補上此條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩人的尿量沒有提供，也不可能宣稱永遠都是零。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "食物通常可能含水，題目未說兩人食物水分皆為零。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "汗量只是總收支的一部分，其他項目可能改變最終淨值。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "局部資料可說甲汗液流失較多，但不能直接等同總水分淨減少較多。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "精確結論要和測量範圍一致，缺少的收支項目應明確列出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

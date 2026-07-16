@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_080_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S080"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪組原偏差與負回饋反應配對正確？",
+  "options": [
+    "體溫升高－產熱再增加",
+    "水分不足－排尿大量增加",
+    "血糖偏低－持續降低血糖",
+    "體溫升高－增加散熱"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "產熱再增加會強化體溫升高，不是抵消偏差。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "水分不足時大量排尿會使缺水加劇，方向不符負回饋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "血糖已低再持續降低，會讓偏差擴大而非回復。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "增加散熱可使偏高體溫下降，反應方向抵消原偏差。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "負回饋不靠反應名稱判斷，而要看結果是否使變項朝範圍移動。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同一反應在不同原始狀態下意義可能不同，因此須先讀清偏差方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

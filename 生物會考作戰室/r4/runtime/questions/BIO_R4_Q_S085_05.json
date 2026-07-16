@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S085_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要檢驗標題是否影響同一張模糊圖片的辨認，哪項設計最合理？",
+  "options": [
+    "圖片相同，只更換呈現前的標題",
+    "標題與圖片都同時更換",
+    "只測一人且不記錄答案",
+    "每次用不同亮度與不同距離"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "固定圖片並只改標題，能分離情境變因。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩者同時改變就無法判定何者造成差異。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "沒有比較與紀錄，不能檢驗標題效應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "亮度與距離改變會加入額外影響因素。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "實驗設計"
+  ],
+  "representationType": "研究方法",
+  "misconceptionTargets": [
+    "同時改變多個變因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "良好設計只改欲檢驗的標題，其他刺激條件保持一致。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "同時更換圖片會混入刺激差異，不記錄答案就無法比較，改變亮度與距離也會增加入光條件的混淆。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

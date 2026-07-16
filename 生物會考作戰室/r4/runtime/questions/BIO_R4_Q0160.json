@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0160",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S014"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "哪一句最正確說明『空放大』？",
+  "options": [
+    "視野越大，細胞越多",
+    "把玻片實體放大",
+    "倍率降低時光線變亮",
+    "影像變大但沒有增加可分辨細節"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "視野大小與細胞數不是空放大的定義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "顯微鏡只形成影像，不會改變玻片實體尺寸。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "亮度變化也不是判定是否增加細節的核心。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "影像尺寸增加而細節仍黏成模糊區，正是空放大。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "概念辨識"
+  ],
+  "representationType": "文字敘述",
+  "misconceptionTargets": [
+    "放大等於解析"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "有效放大需伴隨可分辨資訊增加，否則只是把模糊區域放大。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "判斷時應觀察相鄰細節能否分開，而非只看影像尺寸。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

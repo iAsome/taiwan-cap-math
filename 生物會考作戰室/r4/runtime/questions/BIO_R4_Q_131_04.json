@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_131_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一株呈顯性紫花，只看外觀能確定其基因型嗎？",
+  "options": [
+    "能，只可能AA",
+    "能，只可能Aa",
+    "能，只可能aa",
+    "不能，可能AA或Aa"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "AA可能但不是唯一能呈紫花的基因型。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "Aa可能但也不能排除AA。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "aa在題設完全顯性下呈隱性表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項列出兩種都能呈顯性的可能。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由顯性外觀直接判定純合"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "外觀只能判定至少有一個A，無法區分AA與Aa，「不能，可能AA或Aa」正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "此項列出兩種都能呈顯性的可能。AA可能但不是唯一能呈紫花的基因型。Aa可能但也不能排除AA。aa在題設完全顯性下呈隱性表現。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

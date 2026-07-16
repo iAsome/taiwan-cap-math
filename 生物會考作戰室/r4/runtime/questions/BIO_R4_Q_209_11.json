@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_209_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S209"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "校園水池每天短暫使用藥劑，評估蝌蚪暴露最需要哪組紀錄？",
+  "options": [
+    "水池名稱與面積",
+    "師生人數與天氣照片",
+    "每次濃度、持續時間、頻率及蝌蚪反應",
+    "藥劑包裝顏色"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "名稱與面積不足以計算實際接觸型態。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "人數與照片不能取代污染物與生物反應量測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "四項資料能連結暴露型態與可能影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "包裝顏色不代表有效濃度或毒性。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "評估"
+  ],
+  "representationType": "生活監測",
+  "misconceptionTargets": [
+    "暴露紀錄不完整"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "間歇暴露必須記錄每次事件，而非只報單一平均。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "把暴露紀錄與蝌蚪反應同步，可檢查時間關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

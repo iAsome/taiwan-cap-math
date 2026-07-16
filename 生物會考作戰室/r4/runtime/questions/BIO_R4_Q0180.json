@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0180",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "同學估算細胞為五公分長，最可能忽略了哪個步驟？",
+  "options": [
+    "替細胞命名",
+    "增加目鏡顏色",
+    "計算花瓣數",
+    "用比例尺把照片長度換成實際微米"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "命名不會改變尺寸數值或單位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "目鏡顏色與尺度換算也沒有關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "花瓣數不適用於一般細胞影像大小估算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "五公分多半是照片量值，需再依比例尺換成微米。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "錯誤診斷"
+  ],
+  "representationType": "同儕計算",
+  "misconceptionTargets": [
+    "顯示長度等於實際長度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "細胞通常以微米描述，直接報螢幕公分顯示未完成尺度轉換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "先求細胞與比例尺線的比值，再乘標示微米即可修正。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S084_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S084"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某人視網膜可正常產生訊息，但視神經無法傳導。最直接的結果為何？",
+  "options": [
+    "視覺訊息難以到達腦部",
+    "耳膜無法振動",
+    "鼻內受器停止作用",
+    "手臂肌肉必定麻痺"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "視神經中斷會妨礙視網膜訊息送往腦。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "耳膜屬聽覺路徑，不受視神經直接控制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "鼻內受器與視神經是不同感覺路徑。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "局部視覺傳入異常不能推出手臂必定麻痺。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "因果推論"
+  ],
+  "representationType": "受損情境",
+  "misconceptionTargets": [
+    "把局部感覺神經異常推成全身問題"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-032",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-025",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-050"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "依受損構造的連接兩端，直接影響是眼到腦的訊息傳入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "耳膜屬聽覺、鼻內受器屬嗅覺、手臂肌肉屬運動路徑，局部視神經中斷不會直接使它們失能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S082_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S082"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲路徑中，受器與中樞均正常，傳出神經也可傳遞，但刺激後仍無動作。依現有證據最應檢查什麼？",
+  "options": [
+    "刺激是否存在",
+    "受器能否接收",
+    "中樞能否整合",
+    "動器官能否執行命令"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "題幹已說明刺激後進行觀察，不能優先否定刺激。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "受器已列為正常，不是尚未檢查的主要環節。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "中樞整合也已列為正常，無須重複定位。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "前面環節正常而無動作，應檢查末端動器官。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "系統分析"
+  ],
+  "representationType": "功能診斷",
+  "misconceptionTargets": [
+    "忽略已知正常環節"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-009",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-012"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "用排除法沿流程檢查，剩餘未被證實正常的是動器官。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「動器官能否執行命令」直接補上完整路徑最後一環，其他項已有條件排除。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

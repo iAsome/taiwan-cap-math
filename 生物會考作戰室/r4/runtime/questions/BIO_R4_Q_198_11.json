@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_198_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S198"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "校園池塘要設預警值，哪項程序最合理？",
+  "options": [
+    "任選一個好看的整數",
+    "只用別國湖泊單日值",
+    "以本池長期範圍、生物耐受與量測誤差共同設定",
+    "每次超標就修改標準"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有資料依據的整數無法反映風險。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同系統與單日值都缺乏當地代表性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "結合基線、機制與誤差可形成合理門檻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遇到不利數據就改標準會失去預警功能。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設定生態預警門檻"
+  ],
+  "representationType": "校園管理",
+  "misconceptionTargets": [
+    "預警值可任意決定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「以本池長期範圍、生物耐受與量測誤差共同設定」兼顧正常波動與生物風險，不把平均值直接當門檻。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "門檻仍應定期依新長期資料檢討，而非任意變動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_117_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S117"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要判斷某顯微影像中的單細胞是否已受精，哪項新增證據最有判別力？",
+  "options": [
+    "影像取自女性體內",
+    "細胞外形大致呈圓形",
+    "附近曾出現許多精子",
+    "細胞內可確認父母雙方遺傳物質已組合"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "取自女性體內不能區分卵與受精卵。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "圓形外觀不是已受精的專一證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "附近有精子只表示可能相遇，不代表已結合。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "兩方遺傳物質組合直接支持受精已完成。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "用間接位置線索取代受精直接證據"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "判別證據應直接對應受精定義，「細胞內可確認父母雙方遺傳物質已組合」證明兩配子的遺傳物質已結合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "地點、外形和接近情形都只是間接線索，不能排除尚未受精的卵。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

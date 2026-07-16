@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_131_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S131"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某性狀異型合子呈中間型，是否適合直接套完全顯性模型？",
+  "options": [
+    "適合，仍任選一個顯性",
+    "適合，因中間型等於AA",
+    "不適合，因基因不會影響性狀",
+    "不適合，資料可能屬不完全顯性"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "中間型未呈任一親本型，不能任選顯性。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "異型合子不是AA，且表現也不同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "不適用完全顯性不代表基因沒有作用。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "中間表現符合需要考慮不完全顯性的線索。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把所有遺傳性狀都套完全顯性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「不適合，資料可能屬不完全顯性」依異型合子表現判斷模型限制，沒有否定遺傳。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "其他選項強套完全顯性或用錯誤理由拒絕模型。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

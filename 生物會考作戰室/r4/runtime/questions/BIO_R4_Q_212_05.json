@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_212_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S212"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "處理組下降40%，對照組下降35%，最合理解讀為何？",
+  "options": [
+    "技術額外效果可能只有約五個百分點",
+    "技術造成全部40%下降",
+    "對照證明技術無限有效",
+    "污染物完全消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩組差異約五個百分點，較接近超過自然變化的效果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "對照已有35%下降，不能將全部歸因技術。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "對照用途是估計基準，不能證明無限效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "下降比例不等於濃度已降到零。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "應用"
+  ],
+  "representationType": "數據比較",
+  "misconceptionTargets": [
+    "全部前後差歸因技術"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較處理與對照的差值，不只看處理組前後差。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "小差異還要搭配變異與重複判斷是否穩定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

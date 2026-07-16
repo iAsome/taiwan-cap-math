@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_067_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "未知血管內血液流向心臟，且可見瓣膜，最可能是哪類血管？",
+  "options": [
+    "動脈",
+    "微血管",
+    "靜脈",
+    "支氣管"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "動脈血流離開心臟，與題幹所示回心方向不符。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "微血管連接小動脈與小靜脈，通常不以大型瓣膜作為主要特徵。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "回心方向加上瓣膜防倒流，兩項證據都符合靜脈。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "支氣管運送空氣而不是血液，不能由血流方向判作血管。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-008"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "方向是主要分類證據，瓣膜則提供另一項構造支持，兩者共同指向靜脈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "即使未知血液含氧量，仍可由回心方向可靠判定血管種類。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

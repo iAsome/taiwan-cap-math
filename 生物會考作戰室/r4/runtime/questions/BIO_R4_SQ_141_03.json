@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_SQ_141_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S141"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GA-4-5",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MB-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LC-NC-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST141",
+  "stem": "若乙方案所用電力來自高排放來源，下一步應補充哪項評估？",
+  "options": [
+    "只更換報告標題",
+    "只計算微生物名稱長度",
+    "換算每方案完整能源排放並合併污泥處置影響",
+    "忽略電力來源，因乙耗電較少"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改標題不會增加能源或環境負荷的數據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱字數與發電排放、污泥處理都沒有關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "完整換算可比較處理場外的能源與最終處置成本。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "耗電較少是優點，但電力來源仍影響實際排放。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "只看場內耗電數字而忽略能源來源"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GA-4-5",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MB-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LC-NC-4-1",
+      "AUTH-NATURAL-LP-AH-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「換算每方案完整能源排放並合併污泥處置影響」把評估邊界從處理槽擴大到能源和污泥去向，避免污染負荷被轉移而未記錄。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "使用相同處理量作功能單位，才可將排放、耗能與削減成果放在同一比較基礎。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

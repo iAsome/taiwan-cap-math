@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S101_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "機器人裝有距離感測器，但感測值只顯示在螢幕，不會改變馬達。缺少哪個環節？",
+  "options": [
+    "感測器取得資料",
+    "外殼保護線路",
+    "輪子接觸地面",
+    "控制器依感測結果更新馬達命令"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "感測值能顯示，表示資料已取得。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外殼保護不能讓資料自動改變動作。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "輪子存在也不足以形成回饋修正。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "感測必須影響輸出，才能形成閉環控制。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "回饋控制"
+  ],
+  "representationType": "機制判斷",
+  "misconceptionTargets": [
+    "有感測器等於有回饋"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "系統已有感測卻沒有修正，問題在資訊與運動輸出之間。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完整回饋需讓結果更新下一次命令，而不是只把數值展示給人看。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

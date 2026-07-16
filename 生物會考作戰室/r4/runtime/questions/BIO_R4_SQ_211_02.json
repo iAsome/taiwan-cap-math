@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_SQ_211_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S211"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LC-ME-4-1",
+    "AUTH-NATURAL-LC-ME-4-6",
+    "AUTH-NATURAL-LC-NB-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S211",
+  "stem": "為何不能由資料斷言升溫是唯一原因？",
+  "options": [
+    "海拔沒有單位",
+    "溫度無法測量",
+    "二十年太長",
+    "降雨與種間互動等因素尚未排除"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "海拔資料已經明確使用公尺作為測量單位。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "年均溫已被量測並可比較。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "長期資料有助判斷氣候趨勢，不是主要缺點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "研究文字明示仍有其他可能影響分布的因素。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "限制長期關聯因果推論"
+  ],
+  "representationType": "替代解釋評估",
+  "misconceptionTargets": [
+    "同步變化就證明升溫是唯一原因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LC-ME-4-1",
+      "AUTH-NATURAL-LC-ME-4-6",
+      "AUTH-NATURAL-LC-NB-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-044"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同步趨勢支持關聯，但唯一原因需要排除替代解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "檢查研究有無控制降雨、棲地與生物互動。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

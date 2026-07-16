@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S152_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S152"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "標本在第2步的兩項都不符合，最合理的解釋是？",
+  "options": [
+    "標本一定不存在",
+    "任選一項即可",
+    "觀察不足或檢索表不適用",
+    "兩項都選就能繼續"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "真實標本可能存在，只是缺少關鍵構造觀察或根本不在這份表涵蓋的類群內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "任選一項會把無證據的猜測寫進路徑，最後名稱也無法由標本特徵支持。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "資料不足與超出適用範圍都能解釋兩項皆不符，應先重新檢查。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同時選兩項違反二分檢索的單一路徑要求，也沒有解決兩項其實都不符合。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "處理無法分流"
+  ],
+  "representationType": "異常判斷",
+  "misconceptionTargets": [
+    "強迫標本進入任一組"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "涵蓋性核對顯示這個標本目前沒有合法出口，不能以任選或雙選掩蓋缺口。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "診斷核對區分沒觀察清楚和表外標本，觀察不足或檢索表不適用均可後續查證。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_059_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S059"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "肺泡氧為13單位、血液氧為6單位，氧的淨方向為何？",
+  "options": [
+    "肺泡到血液",
+    "血液到肺泡",
+    "肺泡到食道",
+    "兩側完全相同"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "13高於6，氧由肺泡淨移向血液。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "此方向由低濃度指向高濃度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "食道不在肺泡與微血管的交換界面，不能決定氧氣擴散方向。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩個氧濃度數值明顯不同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比較數值13與6，肺泡是高濃度側，血液是低濃度側。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「肺泡到血液」可由數據直接導出，沒有第二個合理方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

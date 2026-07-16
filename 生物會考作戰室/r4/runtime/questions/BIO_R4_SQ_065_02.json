@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_065_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S065",
+  "stem": "乙與丙的出口液量都低於甲，但造成下降的環節有何不同？",
+  "options": [
+    "乙缺少標記物，丙沒有液體",
+    "乙的推動力下降，丙的局部通路受阻",
+    "乙管路變長，丙幫浦停止",
+    "兩組都只能解釋肺泡破裂"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三組起始標記物與液量相同，不能說乙缺少標記物或丙沒有液體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "乙改變幫浦轉速而丙夾緊管路，分別代表動力與通路限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有改變管路長度，丙的幫浦狀態也明確標示正常。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "裝置測試的是流動與運送，不能把兩種變化都解釋成肺泡破裂。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-051",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-046"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "閱讀控制條件可定位自變因：乙只降低幫浦轉速，丙只夾緊中段管路。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "相同的出口量下降可以來自不同環節，因此要依實際操作判斷原因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

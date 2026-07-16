@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S168_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S168"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "比較兩盆蒸散時，甲葉面積為乙的兩倍。若不校正葉面積，主要問題是？",
+  "options": [
+    "無法知道花盆顏色",
+    "不能測量任何質量",
+    "失水差可能來自蒸散表面積不同",
+    "木質部一定停止運水"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "花盆顏色與葉面蒸散面積的混淆無直接關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "即使葉面積不同，天平仍可讀得質量變化，只是比較不公平。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "較多葉面通常有更多可能散水的表面，會混入處理效果。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "葉面積不同不代表木質部必然完全失去功能。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨識混淆變因"
+  ],
+  "representationType": "實驗評估",
+  "misconceptionTargets": [
+    "葉面積不影響失水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-005",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-011",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-045"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "變因核對兩盆除了待測條件外，葉面積也不同，形成額外解釋。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "尺度核對可改用單位葉面積失水量，才能比較每一面積的蒸散強弱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

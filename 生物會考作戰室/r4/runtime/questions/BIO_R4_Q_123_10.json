@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_123_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲細胞核含染色體，乙染色體含DNA。可由此推出何者？",
+  "options": [
+    "DNA位於細胞核外",
+    "DNA可透過染色體位於細胞核中",
+    "細胞核比細胞更大",
+    "基因不可能位於DNA上"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩個包含關係支持DNA在核內，不是核外。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "串連甲乙可得DNA隨染色體位於細胞核。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹沒有支持細胞核大於細胞，且實際相反。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "基因正可位於DNA上，與題述並不衝突。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "不能串連多層包含關係"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "把兩層包含關係串接後，「DNA可透過染色體位於細胞核中」是必要且合理的結論。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他項反轉位置、尺度或否定基因與DNA關係，均無法由題幹推出。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

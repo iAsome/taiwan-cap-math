@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_076_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪項量測最能估計一場運動的總體失水趨勢？",
+  "options": [
+    "運動衣顏色",
+    "控制飲水與排尿後比較運動前後體重",
+    "只數呼吸一次",
+    "記錄鞋帶長度"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "衣服顏色不能量出水分由身體離開的總質量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "控制進出量後的體重下降可近似反映短期總水分損失。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "單次呼吸不能代表整場運動的汗液、尿液與呼吸總失水。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "鞋帶長度與人體水分收支沒有可用的直接關係。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "短期體重法可整合多途徑失水，但需扣除期間飲水與排出物質量。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "量測前後應使用同一台秤與相似衣著，降低器材和濕衣造成的誤差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

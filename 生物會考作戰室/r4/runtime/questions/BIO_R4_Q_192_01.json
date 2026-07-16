@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_192_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S192"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "蛇向田鼠移動並將牠吃下，正確的食物鏈箭頭是哪一個？",
+  "options": [
+    "田鼠→蛇",
+    "蛇→田鼠",
+    "太陽→蛇",
+    "蛇→土壤"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "田鼠是食物，能量由田鼠傳入蛇。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "這較像攻擊方向，與食物鏈定義相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "蛇不直接以陽光取得食物化學能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "土壤不是蛇攝食後的能量接收者。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "排除移動方向干擾"
+  ],
+  "representationType": "捕食動作",
+  "misconceptionTargets": [
+    "追捕方向就是食物鏈方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹的移動方向是干擾資訊，食物鏈仍由田鼠指向蛇。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "以誰被吃核對後，只有「田鼠→蛇」符合能量傳遞方向。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

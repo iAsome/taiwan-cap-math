@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0459",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "某細胞直徑變成原來兩倍，哪項可直接確定？",
+  "options": [
+    "體積一定兩倍",
+    "表面積一定兩倍",
+    "直徑是原來兩倍",
+    "細胞數量也是兩倍"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "體積需三維形狀資料，不能由直徑直接定為兩倍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "面積也不會只按直徑線性變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "題幹直接提供的只有直徑倍數。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一細胞大小不決定細胞數量。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "比值意義"
+  ],
+  "representationType": "概念題",
+  "misconceptionTargets": [
+    "長度推體積"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "題目只量直徑，因此結論應停在實際測量的線性尺度類型。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "面積、體積與數量需要額外幾何或計數資訊。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

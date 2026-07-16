@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S170_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S170"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "相同降雨下，植被坡逕流 3 公升、裸地坡 9 公升，最合理推論是？",
+  "options": [
+    "植被坡有較多水被截留或入滲",
+    "植被讓降雨量增加三倍",
+    "裸地完全沒有土壤",
+    "所有水都由植物製造成"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "較少水由地表流出，表示截留、入滲或暫存比例較高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題目已說相同降雨，不能反過來宣稱雨量由植被增加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "裸地指缺少植被覆蓋，不等於地面完全沒有土壤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "水源來自實驗降雨，植物不會憑空製造全部水量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "解讀逕流差"
+  ],
+  "representationType": "數據推論",
+  "misconceptionTargets": [
+    "低逕流代表雨量較少"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "水量核對植被坡流出量只有裸地三分之一，去向必有更多留在系統內。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "機制核對葉冠截留、地表阻力和根系孔隙皆可使逕流降低。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

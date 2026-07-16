@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_072_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要比較菌量與疾病風險，哪種設計較合理？",
+  "options": [
+    "只測一名病人一次",
+    "以一致方法測多名病人與健康者並控制重要因素",
+    "讓每個樣本用不同儀器且不校正",
+    "只保留符合預期的資料"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單一個案無法呈現群體變異，也缺少健康比較基準。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "一致量測與控制年齡、用藥等因素，可較公平比較菌量分布。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "未校正的不同儀器會混入方法差異，使菌量難以直接比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "選擇性保留資料會造成偏差，無法反映完整觀察結果。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "多樣本與一致方法能提高比較可信度，但相關仍需後續因果驗證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "預先訂定納入條件並保留不符合預期的結果，可降低選擇偏差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

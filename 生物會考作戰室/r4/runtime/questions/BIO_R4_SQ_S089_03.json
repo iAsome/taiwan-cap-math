@@ -1,0 +1,79 @@
+{
+  "id": "BIO_R4_SQ_S089_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S089",
+  "stem": "若移除甲的M受體後重新測試，哪項結果最能支持受體的必要性？",
+  "options": [
+    "甲在未加M時立刻變成丙",
+    "乙無受體但突然製造血液",
+    "加入M後甲原有的代謝增加反應消失",
+    "M在培養液中變成神經纖維"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "細胞種類不會因一次受體移除就立刻互換。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙的無關變化不能檢驗甲受體功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "移除受體後特定反應消失，直接支持必要性。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "激素不會在培養液中變成神經構造。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "實驗預測",
+    "遷移"
+  ],
+  "representationType": "介入研究",
+  "misconceptionTargets": [
+    "用無關結果檢驗受體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "前後測試只改受體，反應隨之消失才是關鍵預測。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「加入M後甲原有的代謝增加反應消失」可直接由受體假設推出，且具有可測性。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

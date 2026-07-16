@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_ST135",
+  "subject": "biology",
+  "skillId": "BIO_R4_S135",
+  "type": "文字與資料表",
+  "content": {
+    "title": "隱性性狀家系推理",
+    "text": "研究假設斑點為隱性aa。第一世代甲與乙都沒有斑點，兩人的子代丙有斑點、丁沒有斑點。丁與同樣沒有斑點的戊生出有斑點的己。所有親子關係均已確認。",
+    "data": "甲無、乙無→丙有、丁無；丁無、戊無→己有。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "accessibility": {
+    "summary": "家系以甲乙丙丁戊己、兩組親子關係及是否有斑點的文字資料呈現。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "summary": "家系以甲乙丙丁戊己、兩組親子關係及是否有斑點的文字資料呈現。",
+      "columns": [
+        "個體",
+        "斑點",
+        "親屬資訊"
+      ],
+      "rows": [
+        [
+          "甲",
+          "無",
+          "丙、丁親代"
+        ],
+        [
+          "乙",
+          "無",
+          "丙、丁親代"
+        ],
+        [
+          "丙",
+          "有",
+          "甲乙子代"
+        ],
+        [
+          "丁",
+          "無",
+          "甲乙子代；己親代"
+        ],
+        [
+          "戊",
+          "無",
+          "己親代"
+        ],
+        [
+          "己",
+          "有",
+          "丁戊子代"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

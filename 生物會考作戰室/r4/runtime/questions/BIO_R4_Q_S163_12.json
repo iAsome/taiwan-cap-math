@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "新聞圖卡要呈現尚未確認的病因研究，哪句最負責任？",
+  "options": [
+    "已找到百分之百唯一原因",
+    "同時出現就證明因果",
+    "不必說明樣本與限制",
+    "研究發現相關，仍需時間、對照與重複證據"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未確認研究不能宣稱百分之百或唯一，這會超出證據強度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "共現可能受第三因素影響，不能直接使用證明因果的語氣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "樣本與方法決定推論範圍，省略限制會讓讀者誤解可信度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "敘述準確區分目前相關結果與未完成的因果證據需求。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移科學新聞判讀"
+  ],
+  "representationType": "媒體文字",
+  "misconceptionTargets": [
+    "相關研究可直接宣布病因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "語氣核對以『相關』對應觀察資料，不使用證明或唯一等過強詞。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "證據清單核對明示時間、對照與重複三條後續路徑，讓主張可被檢驗。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

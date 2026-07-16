@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S167_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S167"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "幼苗根毛大量受損，但莖木質部完整，最可能先出現哪種結果？",
+  "options": [
+    "吸水量增加",
+    "吸水量下降且葉片容易萎凋",
+    "葉片立刻製造更多水",
+    "木質部改成運送花粉"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "吸收面積減少不會使土壤水進入量反而增加。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "根毛受損降低路徑入口供水，葉片散水未停止時容易失去膨壓。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "葉片不能憑空製造足以補充蒸散的水，仍依賴根部供應。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "維管組織的運輸功能不會因根毛受損改為運送花粉。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "推論根毛受損"
+  ],
+  "representationType": "因果推論",
+  "misconceptionTargets": [
+    "莖完整就不會缺水"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "入口核對根毛是土壤水進入植物的主要部位，受損會降低供水。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "收支核對進水減少而葉仍持續散水，葉細胞膨壓因而下降。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

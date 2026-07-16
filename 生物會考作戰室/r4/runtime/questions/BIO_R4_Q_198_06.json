@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_198_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S198"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某指標連續六期超出多年上限，最合理做法為何？",
+  "options": [
+    "忽略，因所有變化都正常",
+    "檢查量測後調查持續環境壓力",
+    "刪除六期資料",
+    "把上限改高以符合數據"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "持續超界已不是可直接忽略的單次波動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "先驗證資料，再找驅動因素，程序合理。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除不利資料會造成選擇性偏誤。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任意改基線會掩蓋可能的系統轉變。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "處理持續超界"
+  ],
+  "representationType": "監測決策",
+  "misconceptionTargets": [
+    "不合基線就刪資料"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「檢查量測後調查持續環境壓力」同時防止儀器誤差與漏掉真實警訊。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若多項指標也偏離，系統轉變的證據會更強。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

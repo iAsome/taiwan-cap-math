@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_Q0179",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S015"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "醫療影像軟體重新輸出圖片時，怎樣保留尺寸判讀能力？",
+  "options": [
+    "只放大病灶圖形",
+    "刪除所有單位",
+    "讓影像與比例尺同步等比例縮放",
+    "把比例尺移到另一張未縮放圖片"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單獨放大會破壞病灶與比例尺的原比例。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪單位使線段無法對應實際長度。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同步縮放保持比值，仍能估算實際尺寸。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "比例尺與不同縮放圖片配對會造成錯誤換算。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "技術應用"
+  ],
+  "representationType": "影像軟體",
+  "misconceptionTargets": [
+    "比例尺可分離處理"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "尺寸判讀依賴影像與比例尺共享相同幾何變換。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "輸出後再用已知物件驗證比例，也能檢查軟體是否扭曲影像。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

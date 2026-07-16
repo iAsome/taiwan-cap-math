@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "袋中X卡與Y卡數量相同，每次抽後放回，模擬精子受精。連抽三次皆為X，第四次如何判斷？",
+  "options": [
+    "一定抽到Y",
+    "袋中已沒有X",
+    "必須重做前三次",
+    "X與Y機會仍相同"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "前三次結果不會迫使第四次成為Y。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "每次抽後放回，X卡數量不會減少。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "已發生的結果有效，無須為了平衡而重做。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "放回使每次抽取條件相同，機會維持不變。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把隨機結果誤認為必須固定交替"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "抽後放回對應獨立事件，第四次不受前三次連續X改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「X與Y機會仍相同」符合模型設定，其他項都誤用自動平衡或未放回想像。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

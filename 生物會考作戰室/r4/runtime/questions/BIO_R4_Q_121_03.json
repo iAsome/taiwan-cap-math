@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "在XY親代形成的精子中，性染色體可能是哪一種？",
+  "options": [
+    "只能是X",
+    "同時是XY",
+    "X或Y",
+    "一定沒有性染色體"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "XY中的Y也可能分配到另一類精子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "一般配子只帶成對性染色體中的一條。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "精子可分別攜帶X或Y，符合基礎模型。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "正常精子仍具有一條性染色體。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "認為每個精子同時攜帶X與Y"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "XY在形成配子時分開，所以不同精子可攜帶X或Y。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「X或Y」完整列出兩種可能，其他項不是漏掉Y就是錯估數量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0279",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S024"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "模型省略細胞內許多小分子，何時仍可視為合理？",
+  "options": [
+    "只要製作者不說明省略即可",
+    "只要模型看起來漂亮即可",
+    "研究問題只關注主要胞器相對位置時",
+    "任何時候都合理，模型不需證據"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "隱瞞省略會使使用者無法評估模型限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外觀不能代替模型與研究問題的關聯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "小分子不影響主要胞器位置問題時，省略能讓重點更清楚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不同用途需要不同特徵，模型仍需接受證據檢驗。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "簡化合理性"
+  ],
+  "representationType": "用途判斷",
+  "misconceptionTargets": [
+    "省略必錯"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "簡化是否合理不是固定答案，要看被省略內容會不會影響目標問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "清楚標示省略與限制，可讓簡化模型被正確使用。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

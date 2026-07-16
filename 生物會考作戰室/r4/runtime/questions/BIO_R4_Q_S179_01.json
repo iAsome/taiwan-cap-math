@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S179_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S179"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一隻正在池塘游動的鯽魚，屬於哪個生態層次？",
+  "options": [
+    "單一生物個體",
+    "同種鯽魚族群",
+    "池塘生物群集",
+    "完整池塘生態系"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "題幹只指定一隻魚，因此是單一個體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "族群至少包含同地同時的多隻同種生物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "群集需包含多種族群，題幹只有一隻鯽魚。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "生態系還需群集與水溫等非生物環境。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "辨識個體層次"
+  ],
+  "representationType": "文字情境",
+  "misconceptionTargets": [
+    "看到池塘就判生態系"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "數量核對只有一隻生物，尚未形成任何集合。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "範圍核對題幹沒有加入其他魚、物種或環境因子。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

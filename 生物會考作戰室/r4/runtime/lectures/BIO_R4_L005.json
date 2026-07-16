@@ -1,0 +1,158 @@
+{
+  "id": "BIO_R4_L005",
+  "subject": "biology",
+  "unitId": "BIO_R4_U01",
+  "skillId": "BIO_R4_S005",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S004"
+  ],
+  "objectives": [
+    "能區分質性描述與含單位的定量資料。",
+    "能依器材最小刻度記錄合理精度並保留原始資料。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L005_S1",
+      "title": "兩類資料",
+      "content": "質性資料描述顏色、形狀、氣味或行為型態；定量資料以計數或測量得到數值。兩類資料可互補，不是有數字的資料永遠比描述重要。"
+    },
+    {
+      "id": "BIO_R4_L005_S2",
+      "title": "單位與條件",
+      "content": "測量值需寫數值、單位與必要條件，例如二十五度下葉長六點二公分。沒有單位的『長六』無法判斷尺度，也難與他組比較。"
+    },
+    {
+      "id": "BIO_R4_L005_S3",
+      "title": "器材精度",
+      "content": "最小刻度一毫米的尺不能可靠報到千分之一毫米；電子天平顯示到零點一公克，就依顯示記錄。多寫小數位不會讓器材變精密。"
+    },
+    {
+      "id": "BIO_R4_L005_S4",
+      "title": "一致紀錄",
+      "content": "同一實驗應使用相同單位、讀值規則與觀察時點。原始資料即使看來異常也先保留並註記，換算或平均另列，避免後續無法追查。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L005_E1",
+      "prompt": "尺的最小刻度為一毫米，葉長介於六點二與六點三公分間。",
+      "steps": [
+        "確認器材能穩定分辨到一毫米。",
+        "以公分記錄時保留到小數第一位。"
+      ],
+      "answer": "可記為約六點二公分，不寫六點二三七公分。",
+      "why": "後三位超出尺的分辨能力，只會製造虛假精確；依最小刻度記錄才能誠實呈現測量限制。"
+    },
+    {
+      "id": "BIO_R4_L005_E2",
+      "prompt": "觀察菌落時同時看到白色圓斑並數得十二個。",
+      "steps": [
+        "把外觀特徵列為質性資料。",
+        "把菌落個數列為定量資料並註明觀察範圍。"
+      ],
+      "answer": "白色圓形是質性資料，十二個是定量資料。",
+      "why": "顏色形狀回答外觀類別，數量回答可計數規模，兩者來源與用途不同，合併記錄能提供較完整證據。"
+    },
+    {
+      "id": "BIO_R4_L005_E3",
+      "prompt": "兩組分別以公分與毫米記錄根長，如何比較？",
+      "steps": [
+        "保留兩組原始單位與讀值。",
+        "另建換算欄，把數值換成共同單位再比較。"
+      ],
+      "answer": "統一換成毫米或公分後比較，但不增加原讀值精度。",
+      "why": "單位換算只改表示尺度，不會產生器材未測得的小數位；保留原始欄可追查換算是否正確。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "定量資料一定正確，質性資料一定主觀。",
+      "whyWrong": "數值也可能由錯誤工具取得，質性描述可用明確分類提高一致性。",
+      "correction": "同時檢查方法、單位與判準，不只看資料是否含數字。"
+    },
+    {
+      "belief": "小數位寫得愈多，測量就愈科學。",
+      "whyWrong": "超過器材分辨能力的小數沒有觀察依據，只是假精確。",
+      "correction": "依最小刻度或顯示位數記錄，並誠實呈現估讀限制。"
+    },
+    {
+      "belief": "不同單位的數值可直接比大小。",
+      "whyWrong": "六毫米與一公分的數字大小不同，若不換算會得到錯誤順序。",
+      "correction": "比較前先換成共同單位，換算後仍保留原測量精度。"
+    },
+    {
+      "belief": "異常讀值應立即擦掉，表格才整齊。",
+      "whyWrong": "異常可能揭露生物變異或操作問題，刪除會失去查核線索。",
+      "correction": "保留原值並註記情況，確認原因後再說明是否納入分析。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "『葉片呈深綠色』屬哪類資料？",
+      "answer": "質性資料。",
+      "reason": "它描述顏色類別而非以數值測量大小，仍可用色票建立一致判準。"
+    },
+    {
+      "prompt": "天平顯示十二點三公克，應記成十二點三零零嗎？",
+      "answer": "不應自行增加顯示器沒有的小數位。",
+      "reason": "新增位數暗示更高精度，但實際器材只提供到零點一公克。"
+    },
+    {
+      "prompt": "根長二十五毫米與三點一公分何者較長？",
+      "answer": "三點一公分較長。",
+      "reason": "二十五毫米等於二點五公分，統一單位後才能正確比較。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

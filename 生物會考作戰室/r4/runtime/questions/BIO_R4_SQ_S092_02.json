@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S092_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S092"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S092",
+  "stem": "比較甲組與乙組，最能支持哪項推論？",
+  "options": [
+    "生長激素正常就能排除營養影響",
+    "低蛋白飼料一定使生長激素完全消失",
+    "生長激素相同時，低蛋白條件可能限制增重",
+    "平均增重差異只可能來自遺傳"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組激素都正常，增重仍不同，不能排除營養影響。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料顯示乙組生長激素正常。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "兩組主要差異是飼料條件，乙組增重較少。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "幼鼠遺傳背景相近，且兩組飼料條件不同。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "控制變因"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "忽略營養條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "甲乙兩組的生長激素狀態相同，可把飼料差異與增重差異連結。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "結果支持營養可能限制生長，但仍應避免宣稱低蛋白必然造成固定結果。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

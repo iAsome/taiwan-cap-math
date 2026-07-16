@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_202_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲種下降50隻，起始100隻；乙種下降100隻，起始1000隻。哪個比例下降較大？",
+  "options": [
+    "甲種",
+    "乙種",
+    "兩者皆100%",
+    "無法由資料計算"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲下降50÷100＝50%，比例較大。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "乙下降100÷1000＝10%，比例較小。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩者都仍有個體，不是百分之百下降。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "起始與下降數都已提供，可以計算。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "計算族群下降比例"
+  ],
+  "representationType": "比例比較",
+  "misconceptionTargets": [
+    "只看減少隻數判急迫"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-043"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「甲種」顯示絕對減少較小者也可能有較高比例風險。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "比例便於比較，但仍應搭配現存數量與分布。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

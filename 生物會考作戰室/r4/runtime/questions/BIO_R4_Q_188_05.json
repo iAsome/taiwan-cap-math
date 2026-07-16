@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_188_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "整合「藻→螺→魚」與「藻→蝦→魚」時，最少需要幾個不同生物節點？",
+  "options": [
+    "四個",
+    "三個",
+    "五個",
+    "六個"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "藻、螺、蝦、魚共四種，共享者不重複。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "三個會漏掉螺或蝦其中一種食物來源。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "五個代表把共享的藻或魚重複計算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "六個是兩條鏈並排，沒有合併相同節點。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "合併重複節點"
+  ],
+  "representationType": "節點計數",
+  "misconceptionTargets": [
+    "每條鏈的同種生物都算新節點"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "列出不重複名稱即可得四個，不必把兩條鏈各自重畫。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "共享藻與魚各只算一次，螺與蝦則是不同節點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

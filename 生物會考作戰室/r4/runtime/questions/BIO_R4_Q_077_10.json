@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_077_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S077"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要研究濕度對汗液散熱的影響，哪個設計最合適？",
+  "options": [
+    "同時改溫度、風速與活動",
+    "固定溫度風速與活動，只改濕度並量蒸發量",
+    "只問受試者喜歡哪種天氣",
+    "每組用不同量測時間"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "多個環境與活動條件同時改變，無法把結果歸因於濕度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "控制其他因素只改濕度，可比較它對蒸發與體溫的影響。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "主觀喜好不能取代汗液蒸發量與體溫等客觀資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "量測時間不同又不換算會使總蒸發量無法公平比較。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-006",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-004"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "單一變因設計讓濕度成為主要差異，蒸發量則是直接結果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "人體研究還需補水與安全監測，不能為控制實驗忽略熱傷害風險。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

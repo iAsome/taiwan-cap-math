@@ -1,0 +1,134 @@
+{
+  "id": "BIO_R4_L009",
+  "subject": "biology",
+  "unitId": "BIO_R4_U02",
+  "skillId": "BIO_R4_S009",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S008"
+  ],
+  "objectives": [
+    "能辨識複式顯微鏡的主要構造。",
+    "能把鏡頭、載物、照明與調焦構造連結到正確功能。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L009_S1",
+      "title": "成像構造",
+      "content": "目鏡位於鏡筒上方供眼睛觀察，物鏡接近玻片並提供不同倍率。兩者共同形成總放大倍率，不能把鏡頭外觀大小直接當成倍率。"
+    },
+    {
+      "id": "BIO_R4_L009_S2",
+      "title": "載物構造",
+      "content": "載物臺支撐玻片，通光孔讓下方光線穿過標本，玻片夾協助固定位置。移動玻片時應輕推，不可讓玻片撞擊物鏡。"
+    },
+    {
+      "id": "BIO_R4_L009_S3",
+      "title": "照明構造",
+      "content": "反光鏡或光源把光送向標本，光圈調節通過的光量。視野太暗應先檢查光路、光圈與光源，而不是立刻更換高倍物鏡。"
+    },
+    {
+      "id": "BIO_R4_L009_S4",
+      "title": "調焦與支撐",
+      "content": "粗調節輪使鏡筒或載物臺較大幅移動，適合低倍初步對焦；細調節輪作小幅微調。鏡臂與鏡座提供支撐，也是安全搬運時的握持位置。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L009_E1",
+      "prompt": "視野昏暗但標本已對焦，應先檢查哪個構造？",
+      "steps": [
+        "確認光源是否開啟且對準通光孔。",
+        "調整光圈，觀察亮度是否改善。"
+      ],
+      "answer": "先檢查光源、反光鏡或光圈等照明構造。",
+      "why": "亮度問題主要來自進光量與光路，任意轉動粗調節輪會破壞焦點，也不能直接解決照明不足。"
+    },
+    {
+      "id": "BIO_R4_L009_E2",
+      "prompt": "玻片放上顯微鏡後總是滑動，應使用哪個構造？",
+      "steps": [
+        "把玻片平放在載物臺中央。",
+        "用玻片夾固定但保留可微調的位置。"
+      ],
+      "answer": "使用載物臺上的玻片夾。",
+      "why": "玻片夾的功能是避免標本在觀察或調焦時任意位移；鏡臂與光圈都無法直接固定玻片。"
+    },
+    {
+      "id": "BIO_R4_L009_E3",
+      "prompt": "低倍已看到影像，只差一點清晰，應轉哪個構造？",
+      "steps": [
+        "維持標本與光路位置。",
+        "小幅轉動細調節輪直到輪廓清楚。"
+      ],
+      "answer": "使用細調節輪微調焦距。",
+      "why": "影像已接近清楚時只需小幅調整，細調節輪比粗調節輪精細，也較不易讓物鏡快速接近玻片。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "目鏡是最接近標本的鏡頭。",
+      "whyWrong": "目鏡靠近觀察者眼睛，接近玻片並形成初步影像的是物鏡。",
+      "correction": "依位置與用途辨認：眼睛看目鏡，物鏡對準標本。"
+    },
+    {
+      "belief": "光圈的功能是把影像放大。",
+      "whyWrong": "光圈只調節通過標本的光量，不提供鏡頭放大作用。",
+      "correction": "放大由目鏡與物鏡完成，亮度則用光圈與光源調整。"
+    },
+    {
+      "belief": "粗調節輪和細調節輪功能完全相同。",
+      "whyWrong": "兩者移動幅度不同，粗調適合初焦，細調適合微調。",
+      "correction": "低倍先用粗調接近焦點，再以細調讓影像清楚。"
+    },
+    {
+      "belief": "鏡臂只是裝飾，搬運時不用扶。",
+      "whyWrong": "鏡臂與鏡座共同支撐儀器，單手提目鏡容易掉落。",
+      "correction": "一手握鏡臂、一手托鏡座，保持鏡身直立搬運。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "最接近玻片並可切換倍率的是哪個構造？",
+      "answer": "物鏡。",
+      "reason": "物鏡安裝在旋轉盤上並朝向標本，不同物鏡提供不同倍率。"
+    },
+    {
+      "prompt": "視野太暗時可調整哪兩類構造？",
+      "answer": "光源或反光鏡，以及光圈。",
+      "reason": "這些構造共同決定光線是否對準並有足夠光量穿過標本。"
+    },
+    {
+      "prompt": "影像接近清楚時為何改用細調節輪？",
+      "answer": "它移動幅度小，便於精細對焦。",
+      "reason": "小幅微調可提升清晰度，也降低鏡頭快速碰撞玻片的風險。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_MICROSCOPE"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

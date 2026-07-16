@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0244",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S021"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "切片中細胞核偏在左側，應如何判斷細胞外側？",
+  "options": [
+    "左側一定是外面",
+    "右側一定是外面",
+    "核的位置可直接決定外側",
+    "追蹤細胞膜或細胞壁的連續包圍邊界"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "核偏左仍位於細胞內，不能把左側直接定義為外。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹也沒有證據讓右側固定成外側。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "細胞核位置會變異，不能作唯一方向基準。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "外圍連續邊界直接定義細胞內外，最可靠。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "空間判讀"
+  ],
+  "representationType": "切片情境",
+  "misconceptionTargets": [
+    "核位置決定方向"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "細胞核是內部構造而非方向指標，切片位置又可能偏斜。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "沿膜或壁看誰包住誰，可在任何旋轉方向恢復內外。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

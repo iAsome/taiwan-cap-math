@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S043",
+  "subject": "biology",
+  "unitId": "BIO_R4_U06",
+  "skillId": "BIO_R4_S043",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S042"
+  ],
+  "objectives": [
+    "區分食物與養分兩個不同層次的概念。",
+    "閱讀食品或實驗資料時，能由食物辨識其中可能含有的多種養分。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S043_SEC_01",
+      "title": "食物是攝取的材料",
+      "content": "食物是人實際吃下的材料，例如飯、蛋、牛奶或蔬菜。食物常由許多物質組成，還具有形狀、氣味與口感。把飯、蛋直接列成養分類別，會混淆日常名稱與生物學分類。"
+    },
+    {
+      "id": "BIO_R4_L_S043_SEC_02",
+      "title": "養分是可利用成分",
+      "content": "養分是食物中能被身體利用的成分，包括醣類、蛋白質、脂質、維生素、礦物質與水。同一種養分可存在於不同食物，同一種食物也可能同時含有數類養分。"
+    },
+    {
+      "id": "BIO_R4_L_S043_SEC_03",
+      "title": "主要含有不等於只有",
+      "content": "營養資料常用「富含」或「主要提供」描述某食物的突出成分，這不代表其中只有一種養分。解題時應保留資料限定，不能把相對含量較多誇大成其他成分完全不存在。"
+    },
+    {
+      "id": "BIO_R4_L_S043_SEC_04",
+      "title": "由問題層次選答案",
+      "content": "題目問吃了什麼，答案應是食物名稱；題目問攝取何種成分或功能來源，答案才是養分類別。先辨認問題在日常材料或成分層次，可排除看似相關但層次不一致的選項。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S043_EX_01",
+      "prompt": "午餐吃了飯、蛋和青菜，其中「蛋」屬於食物還是養分名稱？",
+      "steps": [
+        "確認蛋是實際攝取的材料名稱。",
+        "與蛋白質等成分類別分開。"
+      ],
+      "answer": "食物",
+      "why": "蛋是可直接描述餐點內容的食物；蛋中含蛋白質等養分，但不能因名稱相近就把整顆蛋等同於單一養分。"
+    },
+    {
+      "id": "BIO_R4_L_S043_EX_02",
+      "prompt": "牛奶標示含蛋白質、脂質、鈣與水，可得出什麼概念？",
+      "steps": [
+        "列出同一食品標示的多種成分。",
+        "判斷食物與養分不是一對一關係。"
+      ],
+      "answer": "一種食物可含多種養分",
+      "why": "資料在同一份牛奶中列出不同養分類別，直接否定食物只含一種養分的說法，也顯示食物是多種成分的組合。"
+    },
+    {
+      "id": "BIO_R4_L_S043_EX_03",
+      "prompt": "題目問米飯主要提供哪類養分，應回答米飯還是醣類？",
+      "steps": [
+        "辨認問題要求的是養分類別。",
+        "由米飯富含澱粉且澱粉屬醣類作答。"
+      ],
+      "answer": "醣類",
+      "why": "米飯是題幹中的食物，題目要求其中主要養分；澱粉分類為醣類，所以答案需提升到成分類別而非重複食物名稱。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "食物名稱就是養分名稱。",
+      "whyWrong": "飯、蛋與蔬菜是攝取材料，醣類與蛋白質才是成分類別。",
+      "correction": "先問是否能直接吃下；食物可吃下，養分則是食物中的可利用成分。"
+    },
+    {
+      "belief": "一種食物只能含一種養分。",
+      "whyWrong": "天然或加工食物通常同時含水、醣類、蛋白質等多種成分。",
+      "correction": "用含量多寡描述突出養分，不把食物與單一成分畫上等號。"
+    },
+    {
+      "belief": "富含蛋白質表示完全沒有其他養分。",
+      "whyWrong": "富含只比較相對含量或營養特色，不代表其他成分的含量為零。",
+      "correction": "保留語句的程度限制，把富含理解為較突出而非唯一存在。"
+    },
+    {
+      "belief": "同一養分只能來自一種食物。",
+      "whyWrong": "蛋白質可來自蛋、豆類等不同食物，醣類來源也不只一種。",
+      "correction": "食物與養分是多對多關係，應依資料判斷而非固定一對一配對。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "牛奶在概念上屬於食物還是養分？",
+      "answer": "食物",
+      "reason": "牛奶是可攝取的材料，其中同時含有多種可利用養分。"
+    },
+    {
+      "prompt": "蛋白質在概念上屬於食物還是養分？",
+      "answer": "養分",
+      "reason": "蛋白質是許多食物中可被人體利用的一類成分。"
+    },
+    {
+      "prompt": "富含鈣是否表示食物只含鈣？",
+      "answer": "不是",
+      "reason": "富含表示鈣相對突出，不能推論其他所有成分完全不存在。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  }
+}

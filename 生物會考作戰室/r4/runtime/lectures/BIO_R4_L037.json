@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L037",
+  "subject": "biology",
+  "unitId": "BIO_R4_U05",
+  "skillId": "BIO_R4_S037",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "prerequisites": [
+    "BIO_R4_S036"
+  ],
+  "objectives": [
+    "能區分個體、族群、群集與生態系層次。",
+    "能依同種、多種生物與非生物環境判讀陌生生態情境。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L037_S1",
+      "title": "個體與族群",
+      "content": "一隻白鷺或一株榕樹是個體；同一時間生活在一定範圍內的同種生物個體集合稱為族群。判斷族群需同時確認同種、時間與空間範圍。"
+    },
+    {
+      "id": "BIO_R4_L037_S2",
+      "title": "群集",
+      "content": "同一地區中不同物種的族群共同生活並互相影響，形成群集。例如池塘中的魚、藻類、水草與微生物共同構成生物群集。"
+    },
+    {
+      "id": "BIO_R4_L037_S3",
+      "title": "生態系",
+      "content": "群集加上陽光、水、空氣、土壤、溫度等非生物環境及彼此作用，形成生態系。生態系不是只有生物名單，也不是只有地點名稱。"
+    },
+    {
+      "id": "BIO_R4_L037_S4",
+      "title": "範圍與分類",
+      "content": "同一地點可依研究問題劃定不同大小的生態系，但分類判準不變。『森林』可能指地點、群集或生態系，需查看描述是否包含多種生物與非生物因素。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L037_E1",
+      "prompt": "校園同一水池內的三十隻同種孔雀魚屬哪層次？",
+      "steps": [
+        "確認所有個體為同一物種。",
+        "確認時間與水池範圍一致。"
+      ],
+      "answer": "這些孔雀魚構成一個族群。",
+      "why": "族群是特定時空中的同種個體集合；數量多只是集合特徵，真正判準是同種與共同範圍。"
+    },
+    {
+      "id": "BIO_R4_L037_E2",
+      "prompt": "水池中的魚、水草、蝌蚪與藻類合稱什麼？",
+      "steps": [
+        "辨認包含多種生物。",
+        "檢查描述未納入水溫或水質等非生物因素。"
+      ],
+      "answer": "這些生物共同構成群集。",
+      "why": "多物種族群共同生活符合群集；若再加入水、光、溫度等環境作用，才上升為生態系。"
+    },
+    {
+      "id": "BIO_R4_L037_E3",
+      "prompt": "潮間帶生物、海水鹽度與岩石彼此作用，屬哪層次？",
+      "steps": [
+        "找出多種生物成分。",
+        "確認同時包含非生物條件與交互作用。"
+      ],
+      "answer": "屬於潮間帶生態系。",
+      "why": "生物群集與海水、岩石等環境共同構成生態系，不能只因地點名稱便省略組成證據。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "同一地區所有生物都屬同一族群。",
+      "whyWrong": "族群必須由同種生物組成，多物種集合應歸為群集。",
+      "correction": "先確認觀察對象是否屬於同一物種，再依個體數量判斷集合層次。"
+    },
+    {
+      "belief": "群集已經包含陽光、土壤與水。",
+      "whyWrong": "群集只指多種生物族群，非生物環境加入後才形成生態系。",
+      "correction": "先把生物成分與光、水、土壤等非生物成分分欄辨認。"
+    },
+    {
+      "belief": "一個族群一定要有非常多個體。",
+      "whyWrong": "族群判準是同種且位於相同時空範圍，不由固定數量門檻決定。",
+      "correction": "使用同種生物、相同時間與一定空間範圍三項條件判讀。"
+    },
+    {
+      "belief": "看到地名就能直接判定是生態系。",
+      "whyWrong": "地名只標示範圍，仍需描述生物、非生物環境及其作用。",
+      "correction": "應閱讀題幹實際包含的物種與環境成分，不依名稱直接猜測層次。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "族群的三項必要判準是什麼？",
+      "answer": "同種生物、相同時間及一定空間範圍。",
+      "reason": "三項共同限制可避免把不同物種或不同年代的資料混成一個族群。"
+    },
+    {
+      "prompt": "群集與生態系的主要差別為何？",
+      "answer": "生態系除生物群集外，還包含非生物環境及其交互作用。",
+      "reason": "是否納入光、水、土壤等環境成分是關鍵分界。"
+    },
+    {
+      "prompt": "一隻鳥與同島同種鳥群分別屬哪一層次？",
+      "answer": "一隻鳥是個體，同島同時的同種鳥群是族群。",
+      "reason": "個體是單一生物，族群則是限定時空的同種個體集合。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  }
+}

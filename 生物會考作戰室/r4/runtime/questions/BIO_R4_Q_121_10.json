@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_121_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S121"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "大型模擬做一千次受精，XX與XY比例接近各半；小家庭結果卻可能連續相同。兩者是否矛盾？",
+  "options": [
+    "矛盾，所有家庭都必須各半",
+    "不矛盾，大量趨勢不保證小樣本剛好各半",
+    "矛盾，模擬一定造假",
+    "不矛盾，因小家庭沒有染色體"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "機率不要求每個小群體都精確符合比例。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "此項正確區分大量事件趨勢與小樣本波動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "資料差異可由抽樣波動解釋，不能直接指控造假。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "家庭成員仍有染色體，此理由明顯錯誤。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把長期機率當成每個小樣本的固定配額"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "一千次接近預期比例，而少數次連續同結果可同時出現。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「不矛盾，大量趨勢不保證小樣本剛好各半」用樣本大小解釋差異，不需否定模型或生物構造。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

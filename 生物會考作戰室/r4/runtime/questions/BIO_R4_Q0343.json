@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0343",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "活細胞外離子濃度低、細胞內高，卻仍持續吸收。哪項判讀最合理？",
+  "options": [
+    "濃度數值一定量錯",
+    "離子正由高往低被動進入",
+    "現象可能涉及能量驅動的逆濃度差運輸",
+    "細胞內外濃度其實必定相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "反常資料需查核，但不能未經證據便斷定量錯。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外低內高時，向內不是由高往低。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "持續向高濃度側累積符合主動運輸的方向特徵。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹已給內外不同，不能直接否定資料。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "方向判讀"
+  ],
+  "representationType": "濃度情境",
+  "misconceptionTargets": [
+    "主動被動顛倒"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先把實際移動方向與濃度梯度相比，再提出可能機制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "要進一步確認主動性，還應測試能量抑制對吸收的影響。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

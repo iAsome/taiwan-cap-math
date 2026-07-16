@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_148_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S148"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪項證據最能反駁需求定向產生抗性？",
+  "options": [
+    "施藥後抗性比例上升",
+    "施藥前保存樣本已檢出低頻抗性版本",
+    "藥物名稱很長",
+    "抗性菌顏色不同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "施藥後上升可符合選擇，也可能被錯解成誘發。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "壓力前已有版本直接顯示變異不需等待需求。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "名稱長短與變異出現時間沒有關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "顏色差異不能指出抗性版本何時產生。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "沒有用施壓前資料檢驗變異先後"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「施藥前保存樣本已檢出低頻抗性版本」提供時間順序證據，支持先有變異、後有環境篩選。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若再比較各型施藥下繁殖，可補上版本上升的選擇機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

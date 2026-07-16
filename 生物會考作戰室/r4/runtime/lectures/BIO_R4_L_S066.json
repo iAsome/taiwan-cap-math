@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L_S066",
+  "subject": "biology",
+  "unitId": "BIO_R4_U09",
+  "skillId": "BIO_R4_S066",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S065"
+  ],
+  "objectives": [
+    "依血流方向區分肺循環與體循環的完整路徑",
+    "利用起點、交換位置與含氧變化判斷血液所處循環"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S066_SEC_01",
+      "title": "肺循環路徑",
+      "content": "肺循環由右心室送出血液，經肺動脈到肺部微血管進行氣體交換，再經肺靜脈回到左心房。血液在肺部獲得氧氣並排出二氧化碳。"
+    },
+    {
+      "id": "BIO_R4_L_S066_SEC_02",
+      "title": "體循環路徑",
+      "content": "體循環由左心室送出血液，經主動脈與各級血管到全身組織微血管，交換物質後再經靜脈回到右心房。它把氧氣和養分送給組織並帶走廢物。"
+    },
+    {
+      "id": "BIO_R4_L_S066_SEC_03",
+      "title": "方向由心臟判定",
+      "content": "動脈是血液離開心臟的血管，靜脈是血液流回心臟的血管。肺動脈雖是動脈卻含氧較低，肺靜脈雖是靜脈卻含氧較高，因此不能只用含氧量命名。"
+    },
+    {
+      "id": "BIO_R4_L_S066_SEC_04",
+      "title": "兩循環首尾相接",
+      "content": "肺循環與體循環不是兩套互不相干的道路。肺部回來的血進入左心，再送往全身；全身回來的血進入右心，再送往肺部，形成連續閉合路徑。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S066_EX_01",
+      "prompt": "血液由右心室出發後，依序會經過哪些主要位置？",
+      "steps": [
+        "先判定右心室送往肺部",
+        "再接上肺部交換與回心路徑"
+      ],
+      "answer": "肺動脈、肺部微血管、肺靜脈、左心房",
+      "why": "右心室是肺循環的起點，血液需到肺部交換氣體；交換後由肺靜脈回到左心房，才可接續由左心室送往全身的體循環。"
+    },
+    {
+      "id": "BIO_R4_L_S066_EX_02",
+      "prompt": "由左心室射出的血液，下一個主要循環目標為何？",
+      "steps": [
+        "確認左心室是體循環起點",
+        "追蹤血液由動脈到組織"
+      ],
+      "answer": "經主動脈送往全身組織",
+      "why": "左心室收縮時將含氧較高的血液送入主動脈，血液再分流到全身微血管，向細胞提供氧氣與養分後回到右心房。"
+    },
+    {
+      "id": "BIO_R4_L_S066_EX_03",
+      "prompt": "肺靜脈為何可含氧較高卻仍稱靜脈？",
+      "steps": [
+        "回想動脈與靜脈的分類依據",
+        "檢查血流相對心臟的方向"
+      ],
+      "answer": "因它把血液由肺部送回心臟",
+      "why": "血管名稱依血液離開或回到心臟而定，不依含氧量；肺靜脈的血流方向是肺部到左心房，因此即使含氧較高仍屬靜脈。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "所有動脈都含氧較高的血液",
+      "whyWrong": "肺動脈把右心室的低氧血送往肺部，是重要的例外。",
+      "correction": "動脈以血液離開心臟定義，含氧量須依血液來自何處判斷。"
+    },
+    {
+      "belief": "肺循環由左心室出發並送往全身",
+      "whyWrong": "送往全身的是體循環，肺循環則由右心室出發到肺部。",
+      "correction": "右心室接肺循環，左心室接體循環，兩者目的地與功能不同。"
+    },
+    {
+      "belief": "體循環的血液交換後直接回到左心房",
+      "whyWrong": "全身組織回流的血液先進入右心房，之後再由右心送往肺部。",
+      "correction": "體循環路徑是左心室到全身組織，再由靜脈回到右心房。"
+    },
+    {
+      "belief": "肺循環與體循環彼此斷開，血液不會相接",
+      "whyWrong": "兩循環透過心臟左右兩側依序銜接，血液可連續運行。",
+      "correction": "肺回流進左心接體循環，體回流進右心接肺循環，形成閉合路徑。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "肺循環由哪個心室開始？",
+      "answer": "右心室",
+      "reason": "右心室將含氧較低的血液推入肺動脈，送往肺部進行氣體交換。"
+    },
+    {
+      "prompt": "體循環完成後血液先回到哪個心房？",
+      "answer": "右心房",
+      "reason": "全身組織回流的血液經靜脈匯集，最後先進入右心房。"
+    },
+    {
+      "prompt": "判定動脈與靜脈的主要依據是什麼？",
+      "answer": "血流相對心臟的方向",
+      "reason": "離開心臟的血管稱動脈，流回心臟的血管稱靜脈，不依含氧高低命名。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_CIRCULATION"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S153_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S153",
+  "stem": "身體構成列由小到大，丁應放在哪裡？",
+  "options": [
+    "甲之前",
+    "甲與乙之間",
+    "乙與丙之間",
+    "丙與戊之間"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丁是器官系統，包含多個器官，不可能比代表細胞的甲更小。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "器官系統也大於乙所代表的組織，不能夾在細胞與組織之間。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙代表器官，丁由多個器官形成，所以丁應在丙之後而非之前。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "器官先形成器官系統，再共同組成個體，因此丁位於丙器官與戊個體之間。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "定位組成層次"
+  ],
+  "representationType": "卡片排序",
+  "misconceptionTargets": [
+    "顛倒器官與系統"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "完整序列核對依卡片內容得到甲細胞、乙組織、丙器官、丁器官系統、戊個體。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "相鄰包含核對確認丙可構成丁、丁再構成戊，因此位置只有丙與戊之間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

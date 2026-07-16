@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_045_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若要更精確估計峰值在30°C附近的位置，下一步應如何測量？",
+  "options": [
+    "只重複10°C",
+    "刪除所有30°C資料",
+    "增加25至35°C間較密集的溫度點",
+    "把溫度與酸鹼同時改變"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只測10°C不能定位30°C附近峰值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除最高附近資料會減少判斷依據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "縮小附近測量間隔可提高定位精度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "同時改酸鹼會混入另一變因。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "峰值可能落在既有測量點之間，因此需增加鄰近且較密集的溫度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「增加25至35°C間較密集的溫度點」只細化溫度變因，其餘設計無法回答或破壞公平比較。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

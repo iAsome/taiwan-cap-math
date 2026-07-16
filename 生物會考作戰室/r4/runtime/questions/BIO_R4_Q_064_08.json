@@ -1,0 +1,77 @@
+{
+  "id": "BIO_R4_Q_064_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S064"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某藥物不影響肺部與心臟，卻使肌肉細胞無法利用氧氣。服藥後快跑，何者最合理？",
+  "options": [
+    "即使氧氣送達肌肉，細胞仍難以正常增加有氧釋能",
+    "肺泡因此完全無法讓氧氣進入血液",
+    "心臟會因此不再推動任何血液",
+    "小腸會立即停止吸收所有養分"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "障礙位於細胞利用氧氣的階段，氧氣即使到達也難轉為正常的有氧能量供應。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "題幹說明肺部不受影響，不能推論肺泡完全失去氣體交換功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹也排除心臟受影響，細胞利用氧氣受阻不等於血流完全停止。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "肌肉利用氧氣的障礙不會直接使小腸立刻停止吸收所有種類的養分。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "呼吸系統判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "沿著供能鏈定位受阻環節：肺部取得與循環運送正常，問題發生在細胞利用氧氣。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "原料送達不代表一定能被使用，細胞呼吸受阻時仍不能正常提升有氧能量供應。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

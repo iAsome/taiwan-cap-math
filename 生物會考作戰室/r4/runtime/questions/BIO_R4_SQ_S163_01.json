@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S163_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S163",
+  "stem": "目前資料最直接顯示什麼？",
+  "options": [
+    "未飲用組無人有症狀",
+    "飲水機已證實是唯一病因",
+    "飲用組症狀比例較高",
+    "A棟與外食一定無關"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "未飲用組仍有6人出現症狀，說完全無人與表格矛盾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "尚無水樣結果且棟別不同，不能由比例差宣布唯一病因。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "飲用組為24/60、未飲用組為6/60，症狀比例分別為40%與10%。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "A棟施工與外食都是可能替代因素，目前不能宣稱一定無關。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "讀取相關資料"
+  ],
+  "representationType": "世代資料",
+  "misconceptionTargets": [
+    "比例差即唯一病因"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比例核對使用相同總人數比較24與6，確認飲用組較高。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "語氣核對只陳述觀察差異，不把相關結果提升成已證實病因。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

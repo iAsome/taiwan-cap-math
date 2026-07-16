@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S101_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S101"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "團隊想設計能保護線路又可彎曲的機器人脊柱，哪個方案最符合骨骼系統原理？",
+  "options": [
+    "用一根無接縫硬管完全固定",
+    "只用柔軟布袋且不設支架",
+    "以多節硬殼包圍線路，節間用受限制關節連接",
+    "把線路裸露並增加馬達速度"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "完全固定會失去所需彎曲能力。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "柔軟布袋難以提供主要承重與硬式保護。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分節兼顧保護、支撐與有限活動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "裸露線路不符合保護需求。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "脊柱仿生"
+  ],
+  "representationType": "遷移設計",
+  "misconceptionTargets": [
+    "保護與活動不能並存"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "硬殼對應椎骨保護，節間連接則保留受控制的活動範圍。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "方案同時回應兩項需求，比只追求堅硬或柔軟更完整。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

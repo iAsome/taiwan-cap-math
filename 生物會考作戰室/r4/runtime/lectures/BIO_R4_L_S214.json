@@ -1,0 +1,156 @@
+{
+  "id": "BIO_R4_L_S214",
+  "subject": "biology",
+  "unitId": "BIO_R4_U30",
+  "skillId": "BIO_R4_S214",
+  "authorityRefs": [
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S213"
+  ],
+  "objectives": [
+    "對齊研究問題、變因、步驟與數據",
+    "判斷結論是否由實驗證據支持"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S214_SEC_01",
+      "title": "問題決定設計",
+      "content": "研究問題要指出欲比較的因素與測量結果。設計中的操弄變因、應變變因和生物材料都應直接回應問題，且材料特性不得另成混淆來源。"
+    },
+    {
+      "id": "BIO_R4_L_S214_SEC_02",
+      "title": "公平比較",
+      "content": "除操弄變因外，溫度、時間、材料數量等條件應盡量相同，並設適當對照與重複，降低其他因素干擾，才能把差異合理歸因於操弄條件。"
+    },
+    {
+      "id": "BIO_R4_L_S214_SEC_03",
+      "title": "資料回答問題",
+      "content": "若問題問生長，就要測長度、質量或其他生長指標；只測存活不能完整回答生長是否改變。單位與時間點也要清楚。"
+    },
+    {
+      "id": "BIO_R4_L_S214_SEC_04",
+      "title": "結論受證據限制",
+      "content": "結論只能涵蓋實驗物種、條件、時間與實際測量結果。觀察到差異時，仍應報告變異並避免外推到未測情境，未測物種不可直接套用。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S214_EX_01",
+      "prompt": "問題問光照是否影響幼苗高度，應變變因是什麼？",
+      "steps": [
+        "找出研究者改變的光照",
+        "找出問題要求比較的幼苗高度"
+      ],
+      "answer": "一段時間後的幼苗高度。",
+      "why": "研究問題指定要判斷高度是否受光照影響，因此應變變因必須是以相同方式測得的高度。"
+    },
+    {
+      "id": "BIO_R4_L_S214_EX_02",
+      "prompt": "兩組肥料不同但溫度也不同，主要問題為何？",
+      "steps": [
+        "列出兩組所有不同條件",
+        "辨認溫度也可能影響生長"
+      ],
+      "answer": "無法把生長差異只歸因肥料。",
+      "why": "肥料與溫度同時改變，兩者都可能造成生長差異，所以缺少公平比較所需的控制條件。"
+    },
+    {
+      "id": "BIO_R4_L_S214_EX_03",
+      "prompt": "只測發芽率能否回答肥料是否使幼苗長得更高？",
+      "steps": [
+        "辨認測量結果是發芽率",
+        "比較問題要求的高度指標"
+      ],
+      "answer": "不能完整回答。",
+      "why": "發芽率與幼苗高度是不同反應，現有資料只能回答發芽情形，沒有直接測量後續生長高度。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "只要步驟很多，實驗就一定能回答問題。",
+      "whyWrong": "步驟數量不能保證操弄與測量變因和研究問題一致。",
+      "correction": "逐項檢查每個步驟是否產生回答問題所需資料。"
+    },
+    {
+      "belief": "兩組結果不同，就一定是指定操弄變因造成。",
+      "whyWrong": "若其他條件未控制，差異也可能來自溫度或材料差別。",
+      "correction": "除操弄變因外保持條件一致並設置適當對照。"
+    },
+    {
+      "belief": "測到存活率就能回答任何生長問題。",
+      "whyWrong": "存活與生長是不同生物反應，所需測量指標並不相同。",
+      "correction": "依研究問題選擇高度、質量或其他直接生長指標。"
+    },
+    {
+      "belief": "一種植物的結果可直接代表所有植物。",
+      "whyWrong": "物種的生理與環境需求不同，反應不必一致。",
+      "correction": "將結論限定於受測物種，跨物種需另行驗證。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "研究問題問溫度對呼吸速率的影響，操弄變因為何？",
+      "answer": "溫度。",
+      "reason": "研究者應改變溫度並測量呼吸速率，才能直接回應問題。"
+    },
+    {
+      "prompt": "為何兩組材料數量應相同？",
+      "answer": "避免材料量造成結果差異。",
+      "reason": "材料量若不同，總反應量可能改變而混淆操弄變因的效果。"
+    },
+    {
+      "prompt": "結論為何要限定實驗條件？",
+      "answer": "未測條件下的反應可能不同。",
+      "reason": "證據只來自特定物種、時間與環境，不能無限制外推。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

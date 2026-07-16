@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S182_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某昆蟲在 15、25、35°C 存活率為 40%、90%、20%，最佳判讀是？",
+  "options": [
+    "溫度越高存活越佳",
+    "十五度一定致死",
+    "三十五度是最適溫度",
+    "二十五度接近本試驗最適溫度"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三十五度存活最低，不支持越高越佳。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十五度仍有四成存活，不能說一定致死。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "三十五度只有兩成，明顯不是最高表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "二十五度存活九成，在三個處理中最高。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀溫度資料"
+  ],
+  "representationType": "梯度數據",
+  "misconceptionTargets": [
+    "最高處理值必最佳"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "數值核對九十高於四十與二十，峰值位於二十五度。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "限制核對結論只涵蓋三個測試溫度，不能宣稱精確最適點。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

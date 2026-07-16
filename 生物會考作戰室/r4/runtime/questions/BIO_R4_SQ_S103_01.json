@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S103_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S103"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S103",
+  "stem": "哪個子代同時具有標記A與C？",
+  "options": [
+    "子代三",
+    "子代二",
+    "子代一",
+    "三者都有"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "子代三檢出標記A與標記D，缺少標記C。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "子代二檢出的是標記B與標記D，並沒有A與C。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "子代一的檢測結果同時包含標記A與標記C。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "只有子代一同時具有題目指定的兩個標記。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "資料判讀"
+  ],
+  "representationType": "表格",
+  "misconceptionTargets": [
+    "只核對一個標記"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "直接核對子代列與兩個標記欄，子代一同時為有。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "子代二與三各缺少A或C之一，不能算同時具有。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

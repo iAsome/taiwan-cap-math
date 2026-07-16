@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_S113_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S113"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S113",
+  "stem": "甲丙結果最合理支持哪項推論？",
+  "options": [
+    "完全浸水必定比濕潤更能萌發",
+    "水很多但缺乏空氣時，萌發仍可能受抑制",
+    "空氣只影響花期授粉",
+    "綠豆在二十五度一定無法萌發"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙的萌發數遠低於濕潤且有空氣的甲。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩組同溫但水與空氣狀態顯示積水缺氧風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "萌發中的胚也需要空氣進行呼吸。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "甲在二十五度萌發十八顆，直接反駁此說法。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "資料限制"
+  ],
+  "representationType": "表格推論",
+  "misconceptionTargets": [
+    "水多必定有利"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "丙同時完全浸水與缺空氣，結果支持缺氧可能抑制，但無法只估計水量單獨效果。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "若要更精確，可增加含水量相同但供氧不同的處理組。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

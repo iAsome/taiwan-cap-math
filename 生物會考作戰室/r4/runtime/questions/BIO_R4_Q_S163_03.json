@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S163_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S163"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "為何研究病因需要未暴露比較組？",
+  "options": [
+    "增加報告頁數",
+    "讓每組名稱不同",
+    "比較沒有該暴露時結果是否較少",
+    "保證所有人發病"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "比較組的目的在建立反事實參照，不是增加文件長度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "名稱差異沒有生物意義，重要的是暴露條件與結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "未暴露組提供若沒有甲暴露時的發病比例，可檢查風險差。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "比較組通常包含未發病者，不可能用來保證每人發病。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "理解對照功能"
+  ],
+  "representationType": "研究設計",
+  "misconceptionTargets": [
+    "只有病例資料就足夠"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "反事實核對以未暴露者估計沒有該因素時的結果，直接對應病因問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比例核對比較兩組發病率而非只看病例數，避免組別大小誤導。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

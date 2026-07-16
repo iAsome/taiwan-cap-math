@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_123_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST123",
+  "stem": "依模型判斷，乙最可能代表何者？",
+  "options": [
+    "基因",
+    "染色體",
+    "細胞核",
+    "DNA片段"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "基因是最內部DNA片段，較符合丁。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "染色體是由DNA與蛋白質構成的丙。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "乙位於完整細胞內並包含染色體，代表細胞核。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "DNA片段位於丙所含DNA上，不是乙。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "無法由上下層辨認細胞核"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "甲為完整細胞、丙為染色體，兩者間的乙只能是細胞核。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「細胞核」同時符合位置與包含關係，其他選項都屬更小層次。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

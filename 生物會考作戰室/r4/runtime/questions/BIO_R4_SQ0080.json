@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ0080",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST027",
+  "stem": "乙袋質量不變，最精確的解釋是哪一項？",
+  "options": [
+    "乙袋內沒有水分子",
+    "所有蔗糖都在二十分鐘內消失",
+    "膜已完全不讓水通過",
+    "袋內外水仍可交換，但平均淨量接近零"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "袋內溶液含水，質量不變不表示無水。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "蔗糖受膜限制且沒有消失的反應證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹已說膜讓水通過，無資料顯示通透性消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "內外濃度相同，可有雙向水交換而淨量互相抵銷。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "平衡判讀"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "不變即停止"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-048",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-016",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-053",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "乙的零克變化支持淨量為零，不支持個別水分子停止。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "用動態平衡解釋時需同時說出雙向交換與整體穩定。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

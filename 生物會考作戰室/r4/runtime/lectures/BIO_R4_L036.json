@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L036",
+  "subject": "biology",
+  "unitId": "BIO_R4_U05",
+  "skillId": "BIO_R4_S036",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "prerequisites": [
+    "BIO_R4_S035"
+  ],
+  "objectives": [
+    "能說明多種組織如何合作形成器官功能。",
+    "能由單一組織受損推論器官功能的特定影響與限制。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L036_S1",
+      "title": "器官是整合單位",
+      "content": "器官通常含多種組織，各自完成部分工作並在空間與時間上協調。器官的主要功能不是某一組織單獨放大，而是分泌、收縮、運送、保護或感受等作用的整合。"
+    },
+    {
+      "id": "BIO_R4_L036_S2",
+      "title": "動物器官合作",
+      "content": "胃的上皮組織可保護與分泌，肌肉組織攪拌並推送，神經組織調節活動，血液供應養分與氧。任一環節受損都可能降低胃的整體功能。"
+    },
+    {
+      "id": "BIO_R4_L036_S3",
+      "title": "植物器官合作",
+      "content": "葉片表皮調節交換並保護，葉肉進行光合作用，維管束運送水與養分。葉片功能同樣來自不同植物組織合作，不是只有葉綠體多的細胞重要。"
+    },
+    {
+      "id": "BIO_R4_L036_S4",
+      "title": "推論要具體",
+      "content": "說明受損後果時，應指出哪種組織的哪項工作下降，再連到器官哪項功能；不能因局部受損便宣稱器官所有功能立刻完全消失。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L036_E1",
+      "prompt": "胃肌肉組織收縮變弱，最直接影響什麼？",
+      "steps": [
+        "辨認肌肉的主要工作是收縮。",
+        "連結收縮與食物攪拌、推送。"
+      ],
+      "answer": "胃攪拌與推送食物的能力可能下降。",
+      "why": "推論鎖定肌肉組織的工作，不把它誤說成胃完全不能分泌或所有組織同時消失。"
+    },
+    {
+      "id": "BIO_R4_L036_E2",
+      "prompt": "葉片維管束受阻，如何影響葉肉？",
+      "steps": [
+        "指出維管束負責水與物質運送。",
+        "連結供應下降與葉肉光合作用條件。"
+      ],
+      "answer": "水分運送受阻可能降低葉肉進行光合作用的能力。",
+      "why": "不同組織的功能互相依賴；運送組織受損可間接限制另一組織取得原料。"
+    },
+    {
+      "id": "BIO_R4_L036_E3",
+      "prompt": "心臟有肌肉、神經與結締組織，為何不能只說肌肉就是心臟？",
+      "steps": [
+        "區分主要出力與整體協調。",
+        "列出訊號、支撐與供應等其他必要工作。"
+      ],
+      "answer": "肌肉提供收縮力，但心臟器官需多種組織共同運作。",
+      "why": "一種組織可能對主要功能特別關鍵，仍不能等同整個含多種組織的器官。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "器官的主要功能只靠一種最顯眼組織完成。",
+      "whyWrong": "其他組織提供保護、調節、運送與支撐，缺一可能降低整體功能。",
+      "correction": "逐一列出各組織的部分工作、輸入輸出與彼此依賴關係。"
+    },
+    {
+      "belief": "一種組織受損表示器官所有功能立即歸零。",
+      "whyWrong": "器官可能仍保留其他組織功能，受損程度與補償能力也不同。",
+      "correction": "推論最直接受影響功能，再評估是否擴及整體。"
+    },
+    {
+      "belief": "植物葉片只有葉肉組織有功能。",
+      "whyWrong": "表皮調節交換與保護，維管束負責運送，都支持葉肉工作。",
+      "correction": "把葉片視為表皮、葉肉與維管束等多組織合作的器官。"
+    },
+    {
+      "belief": "組織合作只表示它們彼此靠近。",
+      "whyWrong": "合作包含物質、訊號與力的傳遞，以及工作時間上的協調。",
+      "correction": "應用可測量的物質輸入、輸出與器官功能變化，證明各組織如何合作。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "胃肌肉組織受損最直接影響哪項功能？",
+      "answer": "食物攪拌與推送能力可能下降。",
+      "reason": "答案需對應肌肉的收縮工作，不擴張成所有胃功能都消失。"
+    },
+    {
+      "prompt": "葉片維管束如何支持葉肉組織？",
+      "answer": "運送水與其他物質，提供葉肉進行光合作用所需條件。",
+      "reason": "維管束在葉片內運送水與礦物質，讓葉肉細胞取得光合作用所需原料。"
+    },
+    {
+      "prompt": "如何寫出完整的組織受損因果鏈？",
+      "answer": "指出受損組織、下降的部分工作，再連到器官功能變化。",
+      "reason": "依細胞、組織、器官到系統逐步陳述，可避免跳躍與全有全無結論。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  }
+}

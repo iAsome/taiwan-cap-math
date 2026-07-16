@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_193_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S193"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "太空艙要長期運作，哪項設計最符合物質與能量原理？",
+  "options": [
+    "只密封廢物，不設能源",
+    "只供光，不回收水與養分",
+    "回收水與養分，並持續供應可用能量",
+    "讓熱在艙內自行變回食物"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "沒有能量輸入，生命活動無法長期維持。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "只供光而不回收物質會造成資源逐步不足。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同時處理物質循環與能量輸入，設計完整。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "散失熱不能由生態系全部自動逆轉成食物。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "應用於生命支持系統"
+  ],
+  "representationType": "工程設計",
+  "misconceptionTargets": [
+    "只要密閉就能永久運作"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-040"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「回收水與養分，並持續供應可用能量」分別滿足物質可回收與能量需補充兩項條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此設計沒有假設完全封閉或百分之百效率，較符合實際。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

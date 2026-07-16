@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q_190_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S190"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "表中甲、乙、丙三層能量依序為60、900、12000單位。若構成同一鏈，由低至高最合理排序為何？",
+  "options": [
+    "甲→乙→丙",
+    "乙→甲→丙",
+    "甲→丙→乙",
+    "丙→乙→甲"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "此序列能量逐級增加，不符合一般傳遞趨勢。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "後段由60增至12000，不能形成合理金字塔。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "由60直接升至12000，同樣顛倒能量趨勢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "12000到900再到60，能量逐級減少。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "由數據反推階層"
+  ],
+  "representationType": "能量表格",
+  "misconceptionTargets": [
+    "字母順序就是營養順序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-038",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-041",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-003",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-028",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-023",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "由低營養階層到高階層，總能量應由最大排到最小。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "丙、乙、甲的數值依序下降，是唯一符合能量金字塔的排序。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

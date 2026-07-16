@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_123_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "圖書館比喻中，細胞核是書庫、染色體是書。若要比喻基因，哪項最恰當？",
+  "options": [
+    "整座城市",
+    "書庫外的道路",
+    "書中具有特定內容的一段文字",
+    "閱讀者的身高"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "城市尺度遠大於書庫，無法表示DNA片段。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "書庫外道路不在書中，位置關係不符。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "特定文字片段符合基因是DNA一段的關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "閱讀者身高不是書內資訊片段。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "比喻遺失基因是DNA片段的關係"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比喻需保留部分與整體，基因應是書中帶資訊的一段內容。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「書中具有特定內容的一段文字」維持基因、DNA與染色體的包含關係，其他項皆脫離書內。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

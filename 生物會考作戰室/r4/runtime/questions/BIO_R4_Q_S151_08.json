@@ -1,0 +1,90 @@
+{
+  "id": "BIO_R4_Q_S151_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S151"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要讓甲、乙兩組涵蓋所有待分生物，還必須滿足哪項條件？",
+  "options": [
+    "甲組名稱較長",
+    "乙組至少十種",
+    "兩組外觀都醒目",
+    "每個生物至少符合其中一組"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲組名稱的字數不會讓原本無法歸組的生物自動符合其特徵定義。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "涵蓋性只要求所有對象都有去處，乙組可以少於十種甚至只有一種。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "外觀是否醒目與規則是否收進全部標本無關，冷門特徵也可形成完整分類。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "每個待分生物至少符合甲或乙，才能保證沒有個體落在兩組規則之外。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判斷分類涵蓋性"
+  ],
+  "representationType": "條件推理",
+  "misconceptionTargets": [
+    "只檢查互斥不檢查遺漏"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-031",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-031",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-043",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-020",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-039",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-024",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "集合核對把甲乙兩組合併後與全部待分生物相比，每個生物至少歸入一組才不會遺漏。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "概念核對區分涵蓋與互斥：本題問是否全被納入，不問名稱、數量或醒目程度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

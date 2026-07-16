@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_071_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S071"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "堆肥溫度與分解速率在接種分解菌後上升，下一步何者最能驗證菌的作用？",
+  "options": [
+    "把接種組放在更熱地點",
+    "只拍接種組照片",
+    "設未接種但其他條件相同的對照",
+    "改用不同大小容器且不記錄"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "外界溫度同時改變會混入另一變因，無法分辨升溫來源。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單組照片缺少未接種基準，也不能量化分解與溫度變化。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "相同條件只差是否接種，可比較菌對分解速率的影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "容器大小不一且不記錄會增加差異，反而降低可比較性。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "控制實驗需保留接種為主要差異，未接種組提供自然變化基準。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同步量測質量減少、溫度與產物，比只憑外觀更能支持分解功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,130 @@
+{
+  "id": "BIO_R4_L126",
+  "subject": "biology",
+  "unitId": "BIO_R4_U17",
+  "skillId": "BIO_R4_S126",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S125"
+  ],
+  "objectives": [
+    "能依細胞分裂階段判斷染色體複製、排列與分離。",
+    "能區分DNA複製造成的結構變化與子細胞染色體數。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L126_SEC1",
+      "title": "分裂前的複製",
+      "content": "細胞進入分裂前，DNA先完成複製，使每條染色體具有兩份相同遺傳資訊。複製增加DNA份量，但在著絲點尚未分開前，通常仍按一條複製染色體計數。"
+    },
+    {
+      "id": "BIO_R4_L126_SEC2",
+      "title": "排列與分離",
+      "content": "分裂時染色體凝縮並排列，之後複製的兩份分開移向細胞兩端。判讀示意時要沿同一染色體追蹤，不把凝縮外形誤當成數目突然任意增加。"
+    },
+    {
+      "id": "BIO_R4_L126_SEC3",
+      "title": "形成子細胞",
+      "content": "細胞質分裂後形成兩個子細胞；一般生長修補的體細胞分裂中，每個子細胞獲得與母細胞相同數目的染色體及大致相同遺傳資訊。"
+    },
+    {
+      "id": "BIO_R4_L126_SEC4",
+      "title": "讀圖的三個問題",
+      "content": "先看是否只有一個或已形成兩個細胞，再看染色體位於中央或兩端，最後數每一個細胞內的染色體。比較總數時必須說清楚是每細胞還是兩細胞合計。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L126_EX1",
+      "prompt": "一個細胞中複製染色體排在中央，下一步通常發生什麼？",
+      "steps": [
+        "確認仍只有一個細胞且染色體已排列。",
+        "依分裂順序追蹤複製部分。"
+      ],
+      "answer": "複製的染色體部分分離並移向兩端。",
+      "why": "中央排列有助後續平均分離，使形成的兩個子細胞各取得完整染色體，避免其中一端缺少遺傳資訊。"
+    },
+    {
+      "id": "BIO_R4_L126_EX2",
+      "prompt": "母細胞有四條染色體，完成一般體細胞分裂後每個子細胞幾條？",
+      "steps": [
+        "題目問每一個子細胞而非兩者合計。",
+        "使用體細胞分裂維持染色體數的原則。"
+      ],
+      "answer": "每個子細胞四條。",
+      "why": "複製後遺傳資訊平均分配，形成兩個各有四條的子細胞；兩細胞合計才是八條。"
+    },
+    {
+      "id": "BIO_R4_L126_EX3",
+      "prompt": "DNA複製後含量加倍，能否立即說染色體數也加倍？",
+      "steps": [
+        "先確認計數單位是否以著絲點為準。",
+        "區分DNA份量與染色體條數。"
+      ],
+      "answer": "不能立即如此判定。",
+      "why": "複製後每條染色體含兩份DNA，在分離前仍可視為一條複製染色體，兩個量不可混用。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "DNA複製後染色體條數必定立刻加倍。",
+      "whyWrong": "複製增加每條染色體所含DNA，分離前的染色體計數不一定同步加倍。",
+      "correction": "先說明計數方式與階段，再比較DNA量和染色體數。"
+    },
+    {
+      "belief": "兩個子細胞會各分到母細胞一半條數。",
+      "whyWrong": "一般體細胞分裂前已複製，平均分配後每個子細胞維持原有條數。",
+      "correction": "把一半理解為複製資訊各一份，不是染色體條數減半。"
+    },
+    {
+      "belief": "染色體移向兩端代表已經有兩個細胞。",
+      "whyWrong": "分離後仍需細胞質分裂才形成兩個獨立子細胞，位置改變不等於邊界完成。",
+      "correction": "判讀時同時查看染色體位置與細胞邊界，確認是否已形成兩個子細胞。"
+    },
+    {
+      "belief": "兩個子細胞合計數可當作每個子細胞數。",
+      "whyWrong": "合計把兩個細胞相加，會是單一子細胞染色體數的兩倍。",
+      "correction": "回答前標明每細胞或全部細胞合計，避免計數單位混淆。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "體細胞分裂前DNA複製的目的為何？",
+      "answer": "提供可平均分配的兩份遺傳資訊。",
+      "reason": "複製讓兩個子細胞各能取得完整染色體資訊。"
+    },
+    {
+      "prompt": "母細胞六條染色體，分裂後每個子細胞通常幾條？",
+      "answer": "六條。",
+      "reason": "一般體細胞分裂維持每個子細胞的染色體數，不是變成三條。"
+    },
+    {
+      "prompt": "如何判斷分離後是否已形成兩個細胞？",
+      "answer": "檢查細胞質與細胞邊界是否已分開。",
+      "reason": "染色體位於兩端只是分離階段，完整邊界才顯示兩個子細胞。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  }
+}

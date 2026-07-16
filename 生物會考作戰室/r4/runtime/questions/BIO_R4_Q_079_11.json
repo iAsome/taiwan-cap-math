@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "魚缸感測值高於安全範圍後逐步下降，最像何種判讀？",
+  "options": [
+    "數值越高永遠越好",
+    "感測器完全無用",
+    "偏差正朝目標範圍回復",
+    "安全範圍只有單一數字"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "既然高於安全上限，不能說越高永遠越好。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "感測器提供連續變化，正可用於判斷回復方向。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "超界值逐步下降並接近範圍，符合偏差縮小。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "範圍具有上下界，不會因判讀趨勢就變成單一數字。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "類比重點是用範圍和時間序列判斷，而不是魚缸與人體構造相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "仍要確認感測器校正，避免把儀器漂移誤認為系統真的回復。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

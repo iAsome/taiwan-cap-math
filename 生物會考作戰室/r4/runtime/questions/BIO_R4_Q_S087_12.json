@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S087_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S087"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "穿戴裝置只量到皮膚溫度升高，就宣稱使用者所有內部調節都失效。這項結論主要有何問題？",
+  "options": [
+    "皮膚溫度永遠不能測量",
+    "只要升溫就不需其他資料",
+    "裝置應只記錄鞋子顏色",
+    "單一表面數值不足以判定所有調節系統失效"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "皮膚溫度可以測量，只是解讀需限制。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "升溫仍需搭配核心體溫與反應等資料。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "鞋色與內部調節功能沒有直接關係。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "結論範圍遠超過單一測量所能支持。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "證據評估",
+    "遷移"
+  ],
+  "representationType": "健康裝置",
+  "misconceptionTargets": [
+    "由單一指標過度概括"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "由一個測量推論所有系統，是典型超出證據的概括。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「單一表面數值不足以判定所有調節系統失效」指出資料不足，而非否定測量本身有價值。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

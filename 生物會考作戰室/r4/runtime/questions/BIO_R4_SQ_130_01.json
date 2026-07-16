@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_130_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S130"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST130",
+  "stem": "哪次結果恰好等於3比1？",
+  "options": [
+    "試驗一",
+    "三次都不符合",
+    "試驗二",
+    "試驗三"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "七十二比二十八不是精確三比一。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "試驗三明確符合，因此此項錯誤。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "八十一比十九不是精確三比一。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "七十五比二十五可約成三比一。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "不會由總數換算3比1"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "每次總數一百，三比一對應七十五與二十五，故「試驗三」正確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比例計算直接且唯一，不需由接近程度猜測。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

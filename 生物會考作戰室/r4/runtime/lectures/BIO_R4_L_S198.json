@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S198",
+  "subject": "biology",
+  "unitId": "BIO_R4_U27",
+  "skillId": "BIO_R4_S198",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S197"
+  ],
+  "objectives": [
+    "理解生態平衡是多項指標在一定範圍內波動的動態狀態。",
+    "由長期資料區分正常波動、短暫偏離與持續改變。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S198_SEC_01",
+      "title": "平衡不等於靜止",
+      "content": "族群會出生、死亡、遷入與遷出，環境也有日夜及季節變化。生態平衡是多種作用持續進行後，重要指標仍在可接受範圍內波動，不是每次量測都相同。"
+    },
+    {
+      "id": "BIO_R4_L_S198_SEC_02",
+      "title": "要有基線與範圍",
+      "content": "判斷異常需先用多年或多季資料建立常見範圍。單一高值可能是季節高峰，單一低值也可能是量測誤差；連續超出基線才較值得警示。"
+    },
+    {
+      "id": "BIO_R4_L_S198_SEC_03",
+      "title": "不同指標相互回饋",
+      "content": "獵物增加可能使捕食者稍後增加，捕食壓力又使獵物回落。這類負回饋可讓族群在範圍內起伏，但實際結果仍受棲地、氣候與疾病影響。"
+    },
+    {
+      "id": "BIO_R4_L_S198_SEC_04",
+      "title": "尺度改變會改變判斷",
+      "content": "日夜溶氧起伏在一天尺度很明顯，放到全年可能只是規律波動。判讀資料要先選定時間、空間與指標，不能把不同尺度的數值混在一起。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S198_EX_01",
+      "prompt": "鳥數每季在80至110隻間規律波動，可否說每次改變都代表失衡？",
+      "steps": [
+        "比較數值是否在長期常見範圍。",
+        "檢查波動是否具季節規律且能回復。"
+      ],
+      "answer": "不能。",
+      "why": "在基線範圍內的規律波動可屬動態平衡，不要求族群數每季完全固定；仍要用多年資料界定常態範圍。"
+    },
+    {
+      "id": "BIO_R4_L_S198_EX_02",
+      "prompt": "某指標連續六期超出多年上限，應如何處理？",
+      "steps": [
+        "排除儀器或採樣方法改變。",
+        "若資料可靠，再檢查持續驅動因素。"
+      ],
+      "answer": "視為可能的系統轉變警訊。",
+      "why": "連續超出基線比單次尖峰更難用正常波動解釋，但仍需比對營養鹽、溶氧及未受影響湖區。"
+    },
+    {
+      "id": "BIO_R4_L_S198_EX_03",
+      "prompt": "白天溶氧高、清晨低且每日重複，是否必定表示惡化？",
+      "steps": [
+        "辨認光合作用與呼吸造成日夜節律。",
+        "比較最低值是否低於生物耐受範圍。"
+      ],
+      "answer": "不一定。",
+      "why": "規律日夜變化可屬正常動態；若清晨低值持續越過警戒才可能造成風險。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "平衡時所有族群數量完全不變。",
+      "whyWrong": "出生、死亡與季節資源變化會使族群持續波動。",
+      "correction": "用長期範圍與回復能力描述平衡，不要求單一固定值。"
+    },
+    {
+      "belief": "任何一次超出平均值都代表崩潰。",
+      "whyWrong": "平均值上下本來就會有自然變異與量測誤差。",
+      "correction": "比較基線範圍、持續時間及多項指標，再判斷是否異常。"
+    },
+    {
+      "belief": "只要最後回到原值，中間變化都無關緊要。",
+      "whyWrong": "短期極端值仍可能造成死亡或改變物種組成。",
+      "correction": "除終點外，也檢查偏離幅度、持續時間與生物反應。"
+    },
+    {
+      "belief": "所有生態系都有相同平衡範圍。",
+      "whyWrong": "物種、氣候、棲地與尺度不同，常見波動範圍也不同。",
+      "correction": "為每個系統建立自己的長期基線，不套用無關地點數值。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "族群每年雨季增加、乾季減少，是否必定失衡？",
+      "answer": "不一定。",
+      "reason": "若長期規律且維持在常見範圍，可屬季節性的動態波動。"
+    },
+    {
+      "prompt": "判斷一次低值是否異常，最需要哪類資料？",
+      "answer": "相同方法取得的長期基線。",
+      "reason": "基線可提供常見範圍，避免把正常變異誤判為系統崩潰。"
+    },
+    {
+      "prompt": "為何連續多期超出範圍比單次尖峰更需注意？",
+      "answer": "較可能反映持續驅動因素。",
+      "reason": "持續偏離較難以短期波動或單次量測誤差解釋。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

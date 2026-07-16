@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_078_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S078"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S078",
+  "stem": "丙組資料最能定位哪個受損環節？",
+  "options": [
+    "溫度受器無法偵測",
+    "中樞訊號到汗腺或汗腺反應受阻",
+    "中樞無法產生任何輸出",
+    "核心溫度沒有上升"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "丙受器傳入九十一，顯示偵測升溫的訊號仍高。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "前端與輸出正常但汗量九，問題位於輸出之後的執行環節。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "丙中樞輸出八十六，不能說中樞完全沒有輸出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "題幹明示三組核心溫度同樣上升，不能否認刺激存在。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "定位控制路徑要找第一個和正常組分離的欄位，丙在汗量才明顯下降。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "要再區分神經末端與汗腺本身，可直接刺激汗腺並測其分泌能力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S182_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S182"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S182",
+  "stem": "要選復育溪段，依目前資料最合理作法是？",
+  "options": [
+    "只選最高溫戊段",
+    "優先調查接近丙段條件的地點並實驗驗證溫度與溶氧",
+    "只看溪段名稱",
+    "宣稱二十度保證存活"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "戊密度最低，不是資料支持的優先條件。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "丙是密度峰值線索，再驗證可避免把相關當因果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "名稱不提供環境與生物反應資訊。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單次野外峰值不能保證所有季節與生命階段。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移復育評估"
+  ],
+  "representationType": "保育決策",
+  "misconceptionTargets": [
+    "峰值相關可保證成功"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "證據核對丙段目前有最高密度，可作候選而非最終保證。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "驗證核對控制溫度與溶氧的實驗能找出真正可管理條件。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

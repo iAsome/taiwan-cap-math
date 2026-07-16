@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S153_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S153"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "科與屬相比，通常哪項敘述正確？",
+  "options": [
+    "屬一定包含較多科",
+    "兩者毫無包含關係",
+    "科可包含多個屬",
+    "每科只能有一物種"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "屬是科之下較窄的類群，不會反過來包含多個上位的科。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "科與屬有明確的上位、下位包含關係，並非兩套無關概念。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "科的範圍較廣，可以把具有共同特徵的多個屬包含其中。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一個科可有多個屬與物種，把它限制成單一物種會過度縮小。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "比較分類範圍"
+  ],
+  "representationType": "概念比較",
+  "misconceptionTargets": [
+    "顛倒上位下位類群"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "階層位置核對先確認科高於屬，因此包含方向應由科指向多個屬。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "巢狀集合核對顯示『科可包含多個屬』保留上位類群涵蓋數個下位類群的關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

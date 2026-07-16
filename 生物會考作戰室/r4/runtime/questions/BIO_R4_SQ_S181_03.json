@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ_S181_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S181",
+  "stem": "若植物集中在靠海半區，下一輪最適合如何改善？",
+  "options": [
+    "只在最多的樣區附近加測",
+    "把零值刪除",
+    "把靠海與內陸分層，各自隨機取樣並按面積加權",
+    "把所有株數改成平均五"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只加測密集處會進一步高估整地密度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "零值也是空間分布資訊，不能為方便而刪除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "分層能讓兩種環境都有代表，再依面積合併。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "用平均取代原始數據會消除變異與群聚證據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移分層取樣"
+  ],
+  "representationType": "研究改良",
+  "misconceptionTargets": [
+    "密集處追加最有代表性"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "環境核對靠海與內陸可能有鹽霧、水分差異，適合先分層。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "估算核對各層密度乘各層面積後加總，可避免比例失真。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,88 @@
+{
+  "id": "BIO_R4_Q_202_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S202"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LC-LB-4-3",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LC-MD-4-1",
+    "AUTH-NATURAL-LC-NA-4-1",
+    "AUTH-NATURAL-LP-AH-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "某物種分布三地，但三地都受同一水庫工程影響，能否視為充分分散風險？",
+  "options": [
+    "可以，地點數大於一就完全安全",
+    "不能，三地共享同一威脅來源",
+    "可以，工程不會影響生物",
+    "不能，因物種不能分布多地"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "多地若受同一事件波及，風險仍高度相關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "共同威脅使地點數未能真正分散風險。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "水文改變可同時影響多處棲地。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "物種可具有多個地理族群。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "評估假分散風險"
+  ],
+  "representationType": "共同威脅",
+  "misconceptionTargets": [
+    "多地分布必定安全"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LC-LB-4-3",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LC-MD-4-1",
+      "AUTH-NATURAL-LC-NA-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-004",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-043"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「不能，三地共享同一威脅來源」把分布地點與威脅獨立性分開判斷。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "保育可尋找不受同一事件影響的額外棲地或降低工程壓力。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

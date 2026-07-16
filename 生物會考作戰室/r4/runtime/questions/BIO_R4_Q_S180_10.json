@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_S180_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "鹽度升高與水草減少同時發生，若要驗證鹽度效應，最需要哪組？",
+  "options": [
+    "只觀察原池一次",
+    "相同水草在不同鹽度且其他條件一致的多缸比較",
+    "不同物種放入不同溫度",
+    "只詢問目擊者"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "單次野外觀察不能隔離其他同時變化。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "材料與環境受控，只改鹽度可直接比較反應。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "物種與溫度又形成新混淆，無法驗證鹽度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "主觀回憶不如可重複的處理數據有力。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "建構鹽度實驗"
+  ],
+  "representationType": "方案選擇",
+  "misconceptionTargets": [
+    "野外相關已足夠"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "設計核對多缸提供鹽度梯度與獨立重複。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "因果核對其餘條件固定後，生長差可專一連到鹽度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

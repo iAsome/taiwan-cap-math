@@ -1,0 +1,134 @@
+{
+  "id": "BIO_R4_L014",
+  "subject": "biology",
+  "unitId": "BIO_R4_U02",
+  "skillId": "BIO_R4_S014",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "prerequisites": [
+    "BIO_R4_S013"
+  ],
+  "objectives": [
+    "能以目鏡倍率乘物鏡倍率計算總放大倍率。",
+    "能說明放大倍率受解析力、視野、亮度與標本品質限制。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L014_S1",
+      "title": "總倍率計算",
+      "content": "複式顯微鏡的總放大倍率等於目鏡倍率乘以物鏡倍率。例如十倍目鏡搭配四十倍物鏡，總倍率為四百倍，而不是五十倍。"
+    },
+    {
+      "id": "BIO_R4_L014_S2",
+      "title": "倍率切換",
+      "content": "目鏡固定時，切換物鏡會按相同比例改變總倍率。記錄觀察結果時要同時寫目鏡與物鏡，避免只寫『高倍』而無法重現。"
+    },
+    {
+      "id": "BIO_R4_L014_S3",
+      "title": "放大與解析",
+      "content": "放大只讓影像看起來更大，解析力則是分辨兩個相近細節的能力。若鏡頭、標本或光線無法提供更多資訊，繼續放大只得到較大的模糊影像。"
+    },
+    {
+      "id": "BIO_R4_L014_S4",
+      "title": "實際限制",
+      "content": "倍率升高常伴隨視野縮小、亮度降低與工作距離變短。選倍率應配合問題與標本厚度，不是永遠選最大數字；搜尋先低倍，細節再逐步升倍。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L014_E1",
+      "prompt": "十倍目鏡搭配十倍物鏡，總倍率是多少？",
+      "steps": [
+        "找出目鏡倍率為十倍。",
+        "乘以物鏡十倍，得到十乘十。"
+      ],
+      "answer": "總放大倍率為一百倍。",
+      "why": "光線先經物鏡形成放大影像，再由目鏡再次放大，因此兩段倍率相乘而不是相加。"
+    },
+    {
+      "id": "BIO_R4_L014_E2",
+      "prompt": "十五倍目鏡搭配四十倍物鏡，學生算成五十五倍。",
+      "steps": [
+        "辨認學生把兩個倍率誤用加法。",
+        "改用十五乘四十並保留倍數單位。"
+      ],
+      "answer": "正確總倍率為六百倍。",
+      "why": "複式系統的兩段放大連續作用，十五倍影像再放大四十倍，總效果必須使用乘法。"
+    },
+    {
+      "id": "BIO_R4_L014_E3",
+      "prompt": "升到更高倍率後影像更大卻更模糊，能否說細節增加？",
+      "steps": [
+        "分開判斷影像大小與相鄰結構能否辨識。",
+        "檢查標本薄度、對焦、光線與鏡頭解析能力。"
+      ],
+      "answer": "不能只因影像變大就說細節增加。",
+      "why": "若無法分辨原本黏在一起的結構，這只是空放大；應改善製片與光學條件，而非只提高倍率。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "總倍率等於目鏡加物鏡。",
+      "whyWrong": "兩段放大是連續作用，總效果應相乘而不是相加。",
+      "correction": "寫成目鏡倍率乘物鏡倍率，再進行整數計算。"
+    },
+    {
+      "belief": "倍率越高，任何標本一定越清楚。",
+      "whyWrong": "解析力、光線與標本厚度不足時，高倍只放大模糊。",
+      "correction": "先改善標本與對焦，再選能提供有效細節的倍率。"
+    },
+    {
+      "belief": "總倍率只看物鏡，目鏡不影響。",
+      "whyWrong": "目鏡會再次放大物鏡形成的影像，也是總倍率的一部分。",
+      "correction": "每次計算與紀錄都同時列出目鏡和物鏡倍率。"
+    },
+    {
+      "belief": "高倍率沒有任何操作代價。",
+      "whyWrong": "高倍視野小、較暗且工作距離短，搜尋與調焦更困難。",
+      "correction": "依任務逐步升倍，不把最大倍率當成唯一最佳選擇。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "十倍目鏡與四十倍物鏡的總倍率是多少？",
+      "answer": "四百倍。",
+      "reason": "十倍目鏡乘四十倍物鏡等於四百倍，兩段放大效果必須相乘。"
+    },
+    {
+      "prompt": "影像變大但仍無法分開兩個細點，代表什麼？",
+      "answer": "只有放大，解析細節沒有改善。",
+      "reason": "有效觀察需增加可分辨資訊，不能把較大的模糊影像當成更多細節。"
+    },
+    {
+      "prompt": "為何最高倍率不一定最適合搜尋標本？",
+      "answer": "視野較小、較暗且工作距離較短。",
+      "reason": "搜尋需要大範圍與安全操作，因此應先從低倍開始。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_MICROSCOPE"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  }
+}

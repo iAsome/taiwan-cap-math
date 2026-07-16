@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_144_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S144"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-GB-4-1",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若岩層已被褶皺翻轉，判讀年代前應先做什麼？",
+  "options": [
+    "直接把最深處判為最老",
+    "利用岩層構造與其他指標恢復原始順序",
+    "刪除所有不合預期化石",
+    "假定每層年代完全相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "翻轉會使深度順序顛倒，不能直接套用下老上新。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "交錯層理等構造可協助判斷頂底並校正相對年代。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "刪除資料會造成偏差，也無法修復地層順序。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不同岩層依序沉積，不能為方便而假定同時。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "不檢查地層擾動就依深度排序"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-GB-4-1",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「利用岩層構造與其他指標恢復原始順序」先確認地質背景，再使用相對年代原則，符合證據判讀程序。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "還可結合指標化石與放射定年，交叉檢查恢復後的年代關係。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

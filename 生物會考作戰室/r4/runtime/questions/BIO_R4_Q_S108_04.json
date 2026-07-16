@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S108_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S108"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪一項研究最能排除移入，確認細菌數增加來自生殖？",
+  "options": [
+    "在開放水池中每月估計細菌總數",
+    "比較兩個不同地點一次採樣的細菌數",
+    "只觀察培養液顏色是否變深",
+    "將單一菌落置於密閉無菌培養系統並連續記錄分裂"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "開放水池仍可能有細菌隨水流或生物移入。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "不同地點的單次差異不能呈現個體形成過程。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "培養液顏色可能受多種因素影響，不能確認新細菌形成。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "密閉無菌且記錄分裂，可排除外來細菌並看到數量來源。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "實驗控制"
+  ],
+  "representationType": "探究設計",
+  "misconceptionTargets": [
+    "未排除外來個體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "確認數量來源要同時控制外來個體並記錄形成過程，密閉無菌系統能符合這兩項要求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "只比較總數或顏色容易混入其他解釋，無法直接連結細菌分裂與新個體產生。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

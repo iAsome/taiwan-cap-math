@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_136_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S136"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "A型個體可能有哪些基因型？",
+  "options": [
+    "只有IAIA",
+    "IAIB或ii",
+    "IAIA或IAi",
+    "IBIB或IBi"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "IAi同樣呈A型，不能只列純合。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "IAIB為AB型，ii為O型。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "「IAIA或IAi」完整列出A型兩種可能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "這兩種基因型都呈B型表現，並非A型。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由A型表現唯一化基因型"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-011"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "IA對i顯性，因此IAIA與IAi都為A型，「IAIA或IAi」唯一完整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其他選項漏掉可能或混入AB、O、B型基因型。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

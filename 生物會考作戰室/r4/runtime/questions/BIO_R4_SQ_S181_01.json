@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ_S181_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S181"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S181",
+  "stem": "八個樣區的每平方公尺平均株數是多少？",
+  "options": [
+    "每平方公尺五株",
+    "每平方公尺八株",
+    "每平方公尺四十株",
+    "每平方公尺二百株"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "總和四十除以八，平均為五株。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "八是樣區數，不是平均個體數。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "四十是所有樣區總和，尚未除以八。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "二百是總地面積，並非樣區平均。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算樣區平均"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "總和等於平均"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-027",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-014",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-021"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "加總核對三加七加五加四加六加五加二加八等於四十。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "除法核對四十株分配到八個同面積樣區，平均得到五。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_125_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S125"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST125",
+  "stem": "若有人以資料宣稱『M2必定使體長增加五毫米』，最重要的問題是什麼？",
+  "options": [
+    "表格沒有體長數字",
+    "M2只出現在低溫",
+    "樣本少且溫度也影響表現，不能宣稱固定增加量",
+    "染色體數彼此不同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "表格明確列出每隻甲蟲體長。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "M2在二十與二十八度都各有一筆。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "資料量與多因素情境不足以支持固定因果量。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "四隻甲蟲染色體數都相同。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由少量多因素資料宣稱固定基因效果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較M版本時仍需考慮溫度與更多重複樣本，「樣本少且溫度也影響表現，不能宣稱固定增加量」指出證據限制。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "固定增加五毫米是過度精確的必然聲稱，現有四筆資料不能支持。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

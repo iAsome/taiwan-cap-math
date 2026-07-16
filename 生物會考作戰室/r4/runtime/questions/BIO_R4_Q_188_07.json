@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_188_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S188"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩條鏈共享同一隻蛇，合併成食物網時應如何處理？",
+  "options": [
+    "畫兩個蛇節點並視為不同物種",
+    "刪除其中一條鏈",
+    "只畫一個蛇節點並接上全部有證據的箭頭",
+    "把所有指向蛇的箭頭改為蛇指出"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "同一物種重複畫會遮蔽其共享關係。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "刪除會遺失另一條有效的能量路徑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "合併節點且保留箭頭，符合食物網整合原則。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "合併不會改變食物與攝食者的方向。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "處理共享節點"
+  ],
+  "representationType": "圖形編修",
+  "misconceptionTargets": [
+    "相同名稱仍要分開畫"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-002"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一生物應合成一個節點，相關攝食證據則全部保留。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "這樣才能看出蛇的多種食物或天敵，不會製造重複個體。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

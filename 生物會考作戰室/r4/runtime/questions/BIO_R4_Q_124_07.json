@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_124_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某基因版本在親代配子與子代細胞中都檢出，最支持哪項結論？",
+  "options": [
+    "子代完全不含親代資訊",
+    "該版本由食物臨時形成",
+    "該基因版本可經配子傳遞",
+    "所有性狀只由此版本決定"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "子代檢出相同版本，與完全不含資訊矛盾。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料指出配子已有該版本，不需假設食物形成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "親代配子到子代的連續證據支持遺傳傳遞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "檢出一個版本不能推出它決定所有性狀。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "由一個基因過度推論所有性狀"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「該基因版本可經配子傳遞」只對資料呈現的基因版本來源下結論，證據充分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「所有性狀只由此版本決定」過度延伸到所有性狀，前兩項則與檢測順序衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

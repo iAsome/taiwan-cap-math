@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_194_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S194"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "要估算校園一年碳收支，哪組資料最完整？",
+  "options": [
+    "只數樹木棵數",
+    "只量一天二氧化碳",
+    "植物固定、呼吸分解、燃料燃燒及物質移出入量",
+    "只問學生是否喜歡樹"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "棵數未含生長、分解與燃燒等流量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單日資料難代表全年，也漏掉多條路徑。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同時涵蓋主要碳輸入、內部轉移與輸出。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "偏好問卷不能量化碳原子收支。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計校園碳盤查"
+  ],
+  "representationType": "碳管理應用",
+  "misconceptionTargets": [
+    "數樹就等於完整碳盤查"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「植物固定、呼吸分解、燃料燃燒及物質移出入量」以多條可量化路徑建立收支，最接近完整評估。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "實際研究仍需統一單位、時間與不確定性，不能只列名稱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

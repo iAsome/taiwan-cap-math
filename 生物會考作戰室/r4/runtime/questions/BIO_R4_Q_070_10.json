@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_070_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S070"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "要證明反應具有抗原專一性，哪項比較最合適？",
+  "options": [
+    "只測一次相同抗原",
+    "再次給相同抗原與不同抗原並比較反應",
+    "只觀察受試者身高",
+    "改變抗原同時改變量測時間"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "只測單一條件無法比較相同與不同抗原的反應差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "在其他條件一致下比較兩種抗原，可檢查反應是否偏向原抗原。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "身高不能直接顯示免疫反應是否辨識特定抗原。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "抗原與時間同時改變會混入多個因素，使結果難以歸因。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "專一性需要對照不同抗原，而不是只看再次反應是否出現。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "控制劑量與量測時間，可使反應差異較能歸因於抗原種類。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

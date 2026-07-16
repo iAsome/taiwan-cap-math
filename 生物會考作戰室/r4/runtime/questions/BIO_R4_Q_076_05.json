@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_076_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "沒有排尿的兩小時內，為何仍不能把水分流失記為零？",
+  "options": [
+    "仍可能經呼氣與皮膚散失水分",
+    "心臟會製造尿液",
+    "食物水分一定消失",
+    "血液完全不含水"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "呼吸持續帶出水氣，皮膚也可能有汗液或不顯性失水。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "尿液主要由腎臟形成，心臟不會取代腎臟製尿。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "是否進食與食物含水需實際記錄，不能說一定全部消失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "血液以水為重要成分，兩小時無尿不會使血液完全無水。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "總流失是多途徑加總，任何一項暫時為零都不能代表整體為零。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "若要估算可量體重變化並記錄飲食排出，但仍須考慮量測誤差。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

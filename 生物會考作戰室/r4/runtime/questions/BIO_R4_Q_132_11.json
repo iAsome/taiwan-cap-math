@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_132_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S132"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "試算表要驗證配子欄，哪項規則最合適？",
+  "options": [
+    "每格必須兩個字母",
+    "大寫字母一律刪除",
+    "每個配子格只允許該親代具有的一個版本",
+    "配子可加入任意新版本"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩字母是個體基因型格式，不適合配子。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "大寫可代表有效版本，不能一律刪除。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "此規則同時檢查單套與來源，最合理。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "配子不能憑空取得親代沒有的版本。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "配子驗證未檢查版本來源"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「每個配子格只允許該親代具有的一個版本」能抓到Aa配子或AA個體產a配子等兩類錯誤。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "其餘規則誤刪有效資訊或允許違反遺傳來源。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

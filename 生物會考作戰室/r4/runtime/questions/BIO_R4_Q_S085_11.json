@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S085_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S085"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "語音助理把同一段模糊聲音搭配不同句子前文後，辨識成不同詞。此現象最適合類比人體哪項特性？",
+  "options": [
+    "肌肉收縮會製造聲音刺激",
+    "受器不必接收聲波",
+    "腦會利用上下文整合感覺訊息",
+    "周圍神經能自行理解語意"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "肌肉可能發聲但不是此辨識差異的重點。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "無聲音輸入時不能辨識題述同一段聲音。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "上下文改變解讀，類比中樞利用情境判讀。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "周圍神經主要傳導，不是語意理解中心。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "類比",
+    "遷移"
+  ],
+  "representationType": "語音科技",
+  "misconceptionTargets": [
+    "把傳導路徑當成判讀中心"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-014"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "類比重點是相同輸入配合不同上下文產生不同判讀。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「腦會利用上下文整合感覺訊息」把情境線索與中樞整合連起來，最符合。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

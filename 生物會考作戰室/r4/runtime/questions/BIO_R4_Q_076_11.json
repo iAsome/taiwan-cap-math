@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_076_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "水槽有進水與多個排水口，最適合類比哪個概念？",
+  "options": [
+    "只有飲水重要",
+    "只有尿液流失",
+    "水分平衡由多種攝取與流失共同決定",
+    "身體水量永遠不變"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "人體還有食物水分等來源，不能只類比單一進水口。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "汗液、呼氣與糞便也會失水，不能只看尿液排出口。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "總水量變化取決於所有進入與離開流量的差，類比合理。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "若進出量不同，水槽液面會改變，不能代表水量永遠不變。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "模型重點是多個流量共同決定淨變化，而不是器官外形相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "人體還有調節回饋，水槽若沒有控制器就不能呈現全部恆定機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

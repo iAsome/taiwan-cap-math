@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_067_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S067"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": "BIO_R4_ST_S067",
+  "stem": "依血流方向與管壁，甲最可能是哪類血管？",
+  "options": [
+    "微血管",
+    "靜脈",
+    "動脈",
+    "輸尿管"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "微血管壁極薄且位於末端交換處，不符合甲的厚壁。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "靜脈應朝向心臟回流，與甲的方向記錄正好相反。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲的血流離開心臟且管壁厚，兩項特徵都符合動脈。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "輸尿管運送尿液，並不會呈現離心方向的血液流動。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-008"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先用離心方向分類，再用厚壁承壓特徵驗證，甲可判為動脈。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "跨壁比例低也符合大型輸送血管不是主要組織交換面的情形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

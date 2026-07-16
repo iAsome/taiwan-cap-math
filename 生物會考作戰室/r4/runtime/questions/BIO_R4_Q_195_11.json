@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_195_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S195"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "都市屋頂綠化要評估淨碳交換，哪項量測最有用？",
+  "options": [
+    "只記植物葉色名稱",
+    "只數花盆數量",
+    "連續量測日夜二氧化碳交換並記錄光照與溫度",
+    "只測一天正午一次"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "葉色名稱不能量化碳吸收與釋放。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "花盆數不包含生物量與代謝速率。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "連續資料可區分光照、呼吸與環境變化。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "單一時點不能代表日夜完整淨收支。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "設計綠化碳監測"
+  ],
+  "representationType": "都市應用",
+  "misconceptionTargets": [
+    "正午數值代表全天"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「連續量測日夜二氧化碳交換並記錄光照與溫度」涵蓋兩種作用、時間變化與重要環境條件。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "評估淨交換要整合一段時間，不能由一次正午量測外推全年。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

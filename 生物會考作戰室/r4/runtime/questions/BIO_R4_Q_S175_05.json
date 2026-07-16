@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S175_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S175"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "高光下將二氧化碳由低提高，光合速率明顯增加，最合理推論是？",
+  "options": [
+    "原本二氧化碳供應受限",
+    "光完全沒有作用",
+    "水是唯一產物",
+    "葉綠體被移除"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "補充碳源後速率提高，支持低碳是當時瓶頸。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "高光仍提供反應能量，不能因補碳有效就說光無作用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "光合作用形成有機物與氧氣，水也不是唯一產物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "若葉綠體被移除，補碳通常無法帶來正常速率提升。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判斷碳源限制"
+  ],
+  "representationType": "資料推論",
+  "misconceptionTargets": [
+    "限制因素永遠固定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "介入核對主要改變二氧化碳且輸出上升，具處理反應關係。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "條件核對結論限定在高光背景，低光時結果可能不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

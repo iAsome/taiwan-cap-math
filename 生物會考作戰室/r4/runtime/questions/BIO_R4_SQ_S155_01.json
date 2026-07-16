@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S155_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S155",
+  "stem": "依兩地物種調查表，物種豐富度如何？",
+  "options": [
+    "相同",
+    "甲較高",
+    "乙較高",
+    "無法由表判斷"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲乙兩列都列出種一到種四，物種種類數同為四種。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲地個體分配較平均，但沒有因此多出第五種，豐富度不較高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙地種一個體很多仍只算一種，總物種數沒有超過甲地。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格明確列出兩地四個物種欄，已足以比較物種豐富度。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "計算物種豐富度"
+  ],
+  "representationType": "調查表",
+  "misconceptionTargets": [
+    "把個體總數當物種數"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-001"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "種類計數核對只數非零物種欄，甲乙都得到四種，不使用個體總數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "概念核對將豐富度與均勻度分開，數量分配差異不改變兩地種類數相同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_123_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S123"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某構造位於細胞核內，含長DNA與許多基因。它最可能是何者？",
+  "options": [
+    "細胞膜",
+    "液胞",
+    "染色體",
+    "整個器官"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "細胞膜包圍細胞，不位於細胞核內。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "液胞不是由長DNA與許多基因構成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "染色體位置、成分與基因數都符合描述。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "器官由多種組織組成，層次遠大於細胞核。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "無法由位置與成分辨認染色體"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "位置在核內且含DNA與基因，兩項線索共同指向染色體。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「染色體」完整符合，其他選項在位置、成分或生物層次上衝突。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

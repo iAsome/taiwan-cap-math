@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0077",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST026",
+  "stem": "第十分鐘的資料最能顯示哪項概念？",
+  "options": [
+    "粒子持續雙向交換，但淨移動為零",
+    "粒子已全部停止",
+    "只有甲到乙的擴散",
+    "膜已變成完全不通透"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "雙向量相等而濃度相同，符合動態平衡。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "兩方向各六粒，明確顯示仍有粒子移動。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "乙到甲也有六粒，不能忽略反向移動。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "粒子仍能雙向通過，膜並未變成不通透。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "動態平衡"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "平衡等同靜止"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "第十分鐘同時具備濃度相同與雙向流量相等兩項平衡證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "沒有淨移動描述總體變化，不等於跨膜事件數為零。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

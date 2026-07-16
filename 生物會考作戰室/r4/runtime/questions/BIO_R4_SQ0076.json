@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0076",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S026"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST026",
+  "stem": "第一分鐘粒子 X 的淨移動為何？",
+  "options": [
+    "沒有任何粒子跨膜",
+    "淨十二粒由甲到乙",
+    "淨三粒由乙到甲",
+    "淨六粒由甲到乙"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩方向都有粒子跨膜，不能說沒有移動。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "九與三方向相反，不能相加成同方向十二粒。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "較多方向是甲到乙，不是乙到甲。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "甲到乙九粒減去反向三粒，剩六粒往乙。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "淨量計算"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "雙向相加"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "淨量以相反方向的通過數相減，方向取通過較多的一側。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "表格同時提供濃度較高的甲側，與計算出的淨方向一致。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,160 @@
+{
+  "id": "BIO_R4_L007",
+  "subject": "biology",
+  "unitId": "BIO_R4_U01",
+  "skillId": "BIO_R4_S007",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-MB-4-2",
+    "AUTH-NATURAL-LP-AH-4-1",
+    "AUTH-NATURAL-LP-AH-4-2",
+    "AUTH-NATURAL-LP-AI-4-1",
+    "AUTH-NATURAL-LP-AI-4-2",
+    "AUTH-NATURAL-LP-AI-4-3",
+    "AUTH-NATURAL-LP-AN-4-1",
+    "AUTH-NATURAL-LP-AN-4-2",
+    "AUTH-NATURAL-LP-AN-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PC-4-1",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-PE-4-2",
+    "AUTH-NATURAL-LP-PO-4-1",
+    "AUTH-NATURAL-LP-PO-4-2",
+    "AUTH-NATURAL-LP-TC-4-1",
+    "AUTH-NATURAL-LP-TI-4-1",
+    "AUTH-NATURAL-LP-TM-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S006"
+  ],
+  "objectives": [
+    "能比較預測與實際數據，判斷資料支持程度。",
+    "能用限制性語句區分支持、未支持與證據不足。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L007_S1",
+      "title": "假說與預測",
+      "content": "假說是對現象提出可檢驗的解釋，預測則是在特定條件下應觀察到的結果。判讀時要先確認資料是否真的對應假說所預測的變因與方向。"
+    },
+    {
+      "id": "BIO_R4_L007_S2",
+      "title": "支持不等於證明",
+      "content": "數據符合預測，可說在本次條件下支持假說；數據不符，可說未支持或需要修正。有限實驗不能證明解釋永遠正確，也不能排除所有替代原因。"
+    },
+    {
+      "id": "BIO_R4_L007_S3",
+      "title": "差異與變異",
+      "content": "比較平均值時也要查看重複資料的範圍。若兩組平均只差一點而組內波動很大，證據可能不足；若差異穩定且方向一致，支持程度較高。"
+    },
+    {
+      "id": "BIO_R4_L007_S4",
+      "title": "結論的範圍",
+      "content": "結論只涵蓋實際研究的物種、條件、時間與測量指標。未測的濃度、其他生物或長期效果都不能直接推廣，應列為後續問題而非既定事實。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L007_E1",
+      "prompt": "假說為光照越久豆苗越高，三組平均株高依序為八、十一、十四公分。",
+      "steps": [
+        "確認光照時數增加時株高是否同方向增加。",
+        "檢查三組條件與重複資料是否可比。"
+      ],
+      "answer": "數據趨勢在本次條件下支持假說。",
+      "why": "三個光照水準的平均株高隨光照增加而上升，方向符合預測；但仍應限制在所測豆苗、期間與光照範圍。"
+    },
+    {
+      "id": "BIO_R4_L007_E2",
+      "prompt": "假說為鹽濃度越高發芽率越低，三組發芽率為百分之七十、八十、六十。",
+      "steps": [
+        "依濃度順序檢查是否持續下降。",
+        "注意中濃度反而高於低濃度，與單調預測不符。"
+      ],
+      "answer": "目前數據未完整支持『越高越低』的假說。",
+      "why": "最高濃度雖最低，但中濃度高於低濃度，整體不呈持續下降；需重複研究或修正關係描述。"
+    },
+    {
+      "id": "BIO_R4_L007_E3",
+      "prompt": "處理組平均十二、對照組平均十一，但各組讀值都介於八至十五。",
+      "steps": [
+        "比較平均差距與組內變異範圍。",
+        "判斷一點差距是否穩定超出自然波動。"
+      ],
+      "answer": "證據不足以強力支持處理有效。",
+      "why": "兩組範圍高度重疊，平均差距相對小；應增加獨立重複並檢查結果是否持續，而非只看平均大小。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "結果符合預測就證明假說永遠正確。",
+      "whyWrong": "有限條件的資料只能增加支持，仍可能有其他解釋或例外。",
+      "correction": "結論寫明本次條件與支持程度，保留後續檢驗空間。"
+    },
+    {
+      "belief": "只要有一筆符合預測，就能忽略其餘資料。",
+      "whyWrong": "選擇單筆資料會隱藏整體趨勢與變異，造成偏誤結論。",
+      "correction": "完整比較所有重複與組別，再判斷整體是否符合預測。"
+    },
+    {
+      "belief": "不支持假說等於實驗毫無價值。",
+      "whyWrong": "不符合預測可排除解釋、揭露變因或引導修正假說。",
+      "correction": "如實報告未支持結果，檢查設計後提出新的可檢驗問題。"
+    },
+    {
+      "belief": "平均值較大就一定有明顯效果。",
+      "whyWrong": "平均差距可能小於組內自然變異，未必穩定或具有實質意義。",
+      "correction": "同時查看重複值、範圍與樣本數，不只比較兩個平均。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "三組數據方向完全符合預測時，可寫成『證明』嗎？",
+      "answer": "不宜，應寫本次數據支持假說。",
+      "reason": "有限樣本只能在測試條件下提供支持，無法排除所有其他解釋與未測情境。"
+    },
+    {
+      "prompt": "平均值相近且組內波動很大時，應如何判斷？",
+      "answer": "目前證據不足，需更多重複或改良測量。",
+      "reason": "平均差距未穩定超出自然變異，不能僅以大小順序宣稱處理有效。"
+    },
+    {
+      "prompt": "結果與預測相反，最合宜的處理是什麼？",
+      "answer": "保留數據並檢查設計、修正或另提假說。",
+      "reason": "反向結果仍是證據，刪除會造成偏差，也失去改進解釋的機會。"
+    }
+  ],
+  "assets": [
+    "BIO_R4_ASSET_EXPERIMENT_GRAPH"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-MB-4-2",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "AUTH-NATURAL-LP-AH-4-2",
+      "AUTH-NATURAL-LP-AI-4-1",
+      "AUTH-NATURAL-LP-AI-4-2",
+      "AUTH-NATURAL-LP-AI-4-3",
+      "AUTH-NATURAL-LP-AN-4-1",
+      "AUTH-NATURAL-LP-AN-4-2",
+      "AUTH-NATURAL-LP-AN-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PC-4-1",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "AUTH-NATURAL-LP-PO-4-1",
+      "AUTH-NATURAL-LP-PO-4-2",
+      "AUTH-NATURAL-LP-TC-4-1",
+      "AUTH-NATURAL-LP-TI-4-1",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0239",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S020"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "自動影像系統要區分葉肉與動物細胞，哪組特徵最有用？",
+  "options": [
+    "圖片檔名長度",
+    "拍攝者姓名",
+    "外側細胞壁與胞內葉綠體的辨識",
+    "螢幕亮度偏好"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "檔名不是影像內的細胞構造，容易被任意更改。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "姓名也不能判斷細胞生物來源。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "植物差異構造可提供直接且可定位的分類特徵。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "個人亮度偏好與細胞類型沒有穩定關聯。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "技術設計"
+  ],
+  "representationType": "影像分類",
+  "misconceptionTargets": [
+    "中繼資料取代構造"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "分類器需要類別間真正不同的影像特徵，壁與葉綠體最具生物意義。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "還應納入標本與染色資料，以處理根細胞或顆粒不清的例外。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

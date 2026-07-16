@@ -1,0 +1,72 @@
+{
+  "id": "BIO_R4_ST_S076",
+  "subject": "biology",
+  "skillId": "BIO_R4_S076",
+  "type": "water-balance-table",
+  "content": {
+    "title": "四小時健行的水分收支",
+    "text": "學生記錄健行四小時內的水分來源與流失。食物水分與飲水均已量測；汗液依體重和衣物變化估計，呼氣及其他流失依量測模型估計。",
+    "note": "數值皆為毫升，估計值可能有誤差，但可用來比較本次收支方向。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "表格列出飲水、食物水分合計攝取一千一百毫升，以及尿、汗、呼氣其他合計流失一千五百毫升。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "類別",
+        "項目",
+        "水量（毫升）"
+      ],
+      "rows": [
+        [
+          "攝取",
+          "飲水",
+          "900"
+        ],
+        [
+          "攝取",
+          "食物水分",
+          "200"
+        ],
+        [
+          "流失",
+          "尿液",
+          "180"
+        ],
+        [
+          "流失",
+          "汗液",
+          "1050"
+        ],
+        [
+          "流失",
+          "呼氣與其他",
+          "270"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

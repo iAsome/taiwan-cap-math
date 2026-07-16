@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_120_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S120"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "模型只收錄XX與XY兩組資料。若新個案不屬兩者，哪項處理最合理？",
+  "options": [
+    "刪除個案以維持模型",
+    "宣稱個案不可能存在",
+    "停止使用所有染色體知識",
+    "記錄新證據並標示原模型適用範圍"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "刪除不合資料會造成選擇性偏誤。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "觀察到的可靠個案不能只因不合模型而否定。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "模型有限不表示全部相關知識都失效。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "此項保留模型用途並用新證據修正限制。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把簡化模型當成不能出現例外的完整現實"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-052",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-039",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-030"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "科學模型遇到未涵蓋現象時應擴充或限定，而不是排除證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「記錄新證據並標示原模型適用範圍」同時維持誠實記錄與可用知識，最符合科學實作。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

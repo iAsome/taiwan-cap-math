@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_045_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S045"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "表中20、30、40°C的速率為6、14、9，能直接得到哪個結論？",
+  "options": [
+    "本次測量以30°C速率最高",
+    "所有酵素最適溫度是30°C",
+    "35°C速率必定等於14",
+    "40°C已使受質消失"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "三個觀察值中14確實最大。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單一酵素資料不能代表所有酵素。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "35°C未測，不能指定其速率。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "速率下降不能證明受質已消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-044",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-041"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "結論必須忠於資料範圍，只能說本次三個測量點以30°C最高。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "後三項分別過度普遍化、臆測未測數值與錯推物質消失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q0271",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S023"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一張圖把細胞核畫得占細胞一半，但圖說寫『構造位置示意，未按比例』。應如何判讀？",
+  "options": [
+    "細胞核實際一定占一半",
+    "圖說可忽略，因為圖畫得很清楚",
+    "可用來理解位置，不能用來計算真實大小比例",
+    "所有細胞核與細胞的比例都相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "圖說已明示未按比例，畫面比例不能當成測量結果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "圖說界定資料用途，清楚程度不能取消其限制。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "示意圖仍可呈現相對位置，但不支持真實尺寸計算。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "不同細胞與生命狀態的核質比例可能不同，不能普遍化。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "圖說判讀"
+  ],
+  "representationType": "示意圖",
+  "misconceptionTargets": [
+    "忽略比例限制"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先讀圖說再使用圖片；『未按比例』直接限制可以回答的問題。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "同一張圖可適合說明位置、卻不適合量尺寸，證據用途需逐項判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

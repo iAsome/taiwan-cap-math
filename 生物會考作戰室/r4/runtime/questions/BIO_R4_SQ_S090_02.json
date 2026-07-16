@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_SQ_S090_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S090",
+  "stem": "哪項分類最符合表中運送方式與時間？",
+  "options": [
+    "甲較像神經，乙較像激素",
+    "甲較像激素，乙較像神經",
+    "甲乙都只能是消化液",
+    "甲乙都不是生物訊息"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲的特定路徑與乙的血液運送分別符合兩類。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "甲沿神經且快速，不符合激素為主的分類。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "消化液不能解釋甲沿神經路徑的資料。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩者都引起調節反應，屬生物訊息資料。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分類推論"
+  ],
+  "representationType": "比較表",
+  "misconceptionTargets": [
+    "只看作用時間不看運送方式"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "運送路徑是直接分類證據，時間資料提供相符支持。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "神經甲、激素乙能同時解釋開始與維持時間。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

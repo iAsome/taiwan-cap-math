@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_193_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S193"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "若某生態系的物質回收率提高，能否推論它不再需要能量輸入？",
+  "options": [
+    "可以，物質就是能量",
+    "不可以，能量仍會在代謝中逐步散失",
+    "可以，分解者會製造陽光",
+    "不可以，因物質不能回收"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "物質與能量是不同概念，不能互相替代。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "物質回收不會阻止化學能轉成熱。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "分解者無法製造太陽輻射能。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "物質確實可以在系統中被重複利用。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析物質回收限制"
+  ],
+  "representationType": "系統效率",
+  "misconceptionTargets": [
+    "回收物質可取代能量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-040"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "提高物質循環效率與補充能量是兩個不同需求。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「不可以，能量仍會在代謝中逐步散失」指出即使物質充分回收，系統仍需外界能量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

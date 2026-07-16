@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_S155_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某稀有作物只剩大量基因幾乎相同的無性繁殖個體。哪項風險較高？",
+  "options": [
+    "每株會變成不同物種",
+    "生態系數量立即增加",
+    "同一病害可能影響多數個體",
+    "所有個體必定不需水"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "無性繁殖產生相似後代，不會讓每一株自動成為新的物種。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "大量個體仍可位於同一農地，個體數增加不等於生態系類型增加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "個體遺傳差異低，若共同缺乏抗病特徵，同一病害可能同時造成廣泛損失。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "遺傳相似不會取消植物的水分需求，題幹也沒有耐旱或免灌溉證據。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "推論低基因多樣風險"
+  ],
+  "representationType": "農業情境",
+  "misconceptionTargets": [
+    "個體多即基因多樣"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-001"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "風險機制核對將低基因差異連到共同脆弱性，而不是連到物種或生態系數。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "情境核對以同一病害測試多數相似個體，直接顯示可能同時受害的系統性損失。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

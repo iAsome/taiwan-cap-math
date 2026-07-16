@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_Q0115",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S010"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-INC-4-1",
+    "AUTH-NATURAL-LC-INC-4-2",
+    "AUTH-NATURAL-LC-INC-4-3",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PC-4-2",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "玻片尚未固定就轉動粗調節輪，最可能增加哪種風險？",
+  "options": [
+    "目鏡倍率自動歸零",
+    "鏡座顏色改變",
+    "標本滑動或物鏡碰撞玻片",
+    "光源永久變亮"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "粗調不會把目鏡的光學倍率改成零。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "調焦動作也不會改變鏡座材料與顏色。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "玻片位移會使標本離開光路，也可能造成碰撞。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "光源亮度由電源與光圈控制，不由粗調永久改變。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "風險分析"
+  ],
+  "representationType": "操作情境",
+  "misconceptionTargets": [
+    "玻片固定不重要"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-INC-4-1",
+      "AUTH-NATURAL-LC-INC-4-2",
+      "AUTH-NATURAL-LC-INC-4-3",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PC-4-2",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "未固定標本使位置不穩，粗調的大幅移動會放大碰撞與遺失風險。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先置中固定再調焦，才能讓鏡頭與玻片保持可預期的相對位置。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

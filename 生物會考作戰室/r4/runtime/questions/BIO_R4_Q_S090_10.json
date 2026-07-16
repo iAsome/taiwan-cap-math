@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S090_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S090"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "阻斷通往甲肌肉的神經後，甲的立即收縮消失；血中激素濃度不變。哪項解釋較合理？",
+  "options": [
+    "該收縮完全由血液流動造成",
+    "立即收縮依賴特定神經路徑",
+    "激素因此全部消失",
+    "甲肌肉已變成內分泌腺"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "阻斷神經而非血流使收縮消失，支持神經作用。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "特定路徑受阻與局部立即反應消失直接相連。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹明示血中激素濃度不變。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "神經阻斷不會使肌肉改變為腺體。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "因果推論"
+  ],
+  "representationType": "阻斷實驗",
+  "misconceptionTargets": [
+    "忽略介入位置"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "介入位置與消失功能一致，支持特定神經路徑的必要性。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "血中激素未變使激素濃度下降的解釋不成立。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

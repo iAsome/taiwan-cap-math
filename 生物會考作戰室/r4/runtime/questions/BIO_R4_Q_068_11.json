@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_068_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S068"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "病人手腕脈搏微弱但心電圖心跳規律，下一步最適合量什麼？",
+  "options": [
+    "食物甜度",
+    "頭髮長度",
+    "同步動脈壓力波與每次心臟輸出",
+    "膀胱容量"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "食物甜度不能直接解釋心臟電活動與手腕脈搏強弱的差異。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "頭髮長度與動脈壓力波形成沒有可用於本題的直接關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "同步測壓力波和心輸出可檢查每次心跳是否形成有效周邊脈搏。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "膀胱容量屬泌尿資料，無法定位心跳與脈搏訊號不一致的原因。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "已有心電與觸診差異，追加量測應直接連接心臟送血和周邊壓力波兩環節。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "選擇與問題最近的生理變項，能避免蒐集大量無關資料仍無法判斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

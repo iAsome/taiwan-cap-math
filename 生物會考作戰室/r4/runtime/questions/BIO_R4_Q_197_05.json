@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_197_05",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S197"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲湖魚數為每小時20隻，乙湖記錄全天80隻，能直接說乙湖較多嗎？",
+  "options": [
+    "不能，時間尺度不同需先標準化",
+    "能，80一定代表族群較大",
+    "能，全天與每小時完全相同",
+    "不能，因魚不能計數"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "兩數據的採樣時間不同，不能直接比原數值。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "較大數字可能只因累計時間較長。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "全天和每小時是不同努力量與尺度。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "魚可用標準化調查估算數量。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "標準化採樣努力"
+  ],
+  "representationType": "跨湖比較",
+  "misconceptionTargets": [
+    "數字大就族群大"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "「不能，時間尺度不同需先標準化」指出需換算相同努力量，避免由單純數字大小誤判。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "即使換算後，工具與地點差異仍需一併確認。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

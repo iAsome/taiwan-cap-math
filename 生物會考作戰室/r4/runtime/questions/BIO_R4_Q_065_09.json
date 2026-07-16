@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q_065_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S065"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "甲心臟輸出正常但腿部血管阻塞；乙血管通暢但心臟輸出低。兩者共同可能出現什麼？",
+  "options": [
+    "部分組織的血液供應不足",
+    "肺部都必定停止換氣",
+    "食物都必定無法吞嚥",
+    "尿液都會改由肺排出"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "甲受局部通路限制，乙受整體動力限制，兩者都可能使組織血液供應不足。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "循環受限可能間接影響身體，但不能推論兩人的肺部都必定停止換氣。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "吞嚥由消化與神經肌肉活動完成，題幹不足以推論兩人都無法吞嚥。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "人體不會因循環異常就把尿液改由肺排出，器官功能沒有這種替代方式。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-051",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-045",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-046"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "找出兩個情境的共同結果，而不是要求受損位置相同；動力與通路都會影響供血。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "題幹只支持血液供應風險，不能擴張成所有系統與器官都必然停止。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

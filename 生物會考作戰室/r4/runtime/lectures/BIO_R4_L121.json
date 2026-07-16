@@ -1,0 +1,126 @@
+{
+  "id": "BIO_R4_L121",
+  "subject": "biology",
+  "unitId": "BIO_R4_U16",
+  "skillId": "BIO_R4_S121",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S120"
+  ],
+  "objectives": [
+    "能追蹤性染色體由父母配子到受精卵的組合。",
+    "能用機率模型解釋每次受精事件彼此獨立且不應歸咎親代。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L121_SEC1",
+      "title": "配子只帶一條",
+      "content": "在簡化模型中，體細胞具有成對性染色體，形成配子時每個配子只得到其中一條。具有XX者形成的卵通常帶X；具有XY者形成的精子可帶X或Y。"
+    },
+    {
+      "id": "BIO_R4_L121_SEC2",
+      "title": "受精時重新成對",
+      "content": "卵與精子結合後，兩個配子各提供一條性染色體。X卵與X精子形成XX受精卵，X卵與Y精子形成XY受精卵，組合在受精時確立。"
+    },
+    {
+      "id": "BIO_R4_L121_SEC3",
+      "title": "機率不是固定輪替",
+      "content": "若X精子與Y精子形成機會近似，每次受精形成XX或XY的機會可近似各半。機率描述大量事件趨勢，不保證家庭中一定交替或剛好各半。"
+    },
+    {
+      "id": "BIO_R4_L121_SEC4",
+      "title": "科學資訊與責任",
+      "content": "受精涉及大量配子的隨機相遇，任何一方都不能依意志選擇單一精子。用科學模型責怪母親、父親或子女都不合理，且忽略機率本質。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L121_EX1",
+      "prompt": "X卵與帶Y的精子結合，受精卵性染色體為何？",
+      "steps": [
+        "先寫出卵提供的X。",
+        "再加入精子提供的Y。"
+      ],
+      "answer": "XY。",
+      "why": "受精卵各從一個配子取得一條性染色體，因此X與Y組合成XY，而不是XX，並保留雙方各一條的來源。"
+    },
+    {
+      "id": "BIO_R4_L121_EX2",
+      "prompt": "某家庭前兩名子女皆為XX，第三次受精一定形成XY嗎？",
+      "steps": [
+        "辨認每次受精是新的配子相遇。",
+        "不要把機率近似各半誤作輪替規則。"
+      ],
+      "answer": "不一定。",
+      "why": "先前結果不會指定下一個精子攜帶X或Y，每次受精仍有各自的可能結果，不受前次配子組合控制。"
+    },
+    {
+      "id": "BIO_R4_L121_EX3",
+      "prompt": "有人責怪具有XX組合的親代沒有提供Y，如何評析？",
+      "steps": [
+        "列出卵與精子可攜帶的性染色體。",
+        "區分生物來源與道德責任。"
+      ],
+      "answer": "基礎模型中卵通常只帶X，且隨機受精不應歸責任何人。",
+      "why": "Y若出現來自精子，但配子相遇並非意志控制；科學來源說明不能被扭曲成責任指控。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "每個卵都可能帶X或Y。",
+      "whyWrong": "在常見XX親代的基礎模型中，卵通常只從XX中取得一條X。",
+      "correction": "先由親代組合列配子：XX產生X卵，XY產生X或Y精子，再逐次列出受精組合。"
+    },
+    {
+      "belief": "有過XX子代後，下次必定輪到XY。",
+      "whyWrong": "每次受精是新的隨機配子組合，前次結果不會安排下一次結果。",
+      "correction": "把各次事件分開列出，不使用固定交替的想像。"
+    },
+    {
+      "belief": "形成XX或XY是母親可以選擇的。",
+      "whyWrong": "卵在基礎模型中都提供X，結合哪個精子是大量配子相遇的結果。",
+      "correction": "用配子來源與機率解釋，不把結果歸咎或歸功任何親代。"
+    },
+    {
+      "belief": "機率各半表示每兩名子女必定一名XX、一名XY。",
+      "whyWrong": "各半描述很多次事件的長期趨勢，少量結果可以連續相同。",
+      "correction": "區分單次可能性與大量比例，不能把機率當成固定配額。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "基礎模型中，一個卵通常攜帶哪條性染色體？",
+      "answer": "X。",
+      "reason": "具有XX組合者形成配子時，每個卵從成對染色體取得一條X。"
+    },
+    {
+      "prompt": "X卵與X精子結合會形成哪種組合？",
+      "answer": "XX。",
+      "reason": "兩個配子各提供一條X，所以受精卵重新成對為XX。"
+    },
+    {
+      "prompt": "前一次形成XY，能否預定下一次一定形成XX？",
+      "answer": "不能。",
+      "reason": "每次受精由新的配子隨機相遇，前一次結果不會安排下一次。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

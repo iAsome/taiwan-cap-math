@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q0339",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S029"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "哪項資料最支持某離子運輸含有主動成分？",
+  "options": [
+    "離子顏色在兩側相同",
+    "容器大小不同",
+    "逆濃度差累積且缺氧後速率下降",
+    "死細胞與活細胞速率完全相同"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "顏色不能顯示運輸方向或能量需求。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "容器大小不是主動運輸的直接證據。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "逆差累積加上能量受限後下降，共同支持耗能運輸。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "活死結果相同反而較符合不依賴生命活動。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "證據辨識"
+  ],
+  "representationType": "資料敘述",
+  "misconceptionTargets": [
+    "濃度差單獨定論"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "方向與能量依賴是兩條互補證據，比單看濃度更有力。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "支持主動成分不等於證明全部移動都只有一種機制。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

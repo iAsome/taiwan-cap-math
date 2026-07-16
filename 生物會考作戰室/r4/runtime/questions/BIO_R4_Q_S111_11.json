@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_S111_11",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S111"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-7",
+    "AUTH-NATURAL-LC-GA-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "果園花朵柱頭有花粉卻結實率低，最優先增加哪項檢查？",
+  "options": [
+    "只計算每朵花瓣數",
+    "只測量樹幹周長",
+    "檢查花粉活性、花粉管是否進入胚珠及受精比例",
+    "把柱頭上的花粉全部洗去"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "花瓣數不能定位授粉後受阻環節。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "樹幹周長與當次配子融合缺乏直接關係。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "這些資料可分辨萌發、運送與融合是否正常。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "洗去花粉會破壞已知授粉條件，無法診斷原問題。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "農業診斷"
+  ],
+  "representationType": "應用",
+  "misconceptionTargets": [
+    "低結實率都因未授粉"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-7",
+      "AUTH-NATURAL-LC-GA-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-006"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "已有花粉到柱頭的證據，後續檢查應沿受精路徑前進，而不是重複確認花朵外形。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "分階段量測能避免把低結實率一律歸咎於傳粉昆蟲不足。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

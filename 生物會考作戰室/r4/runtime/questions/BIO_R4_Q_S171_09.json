@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S171_09",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S171"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DB-4-8",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "縮小模型的分枝管路很均勻，放大十倍後卻不均勻，最合理說明是？",
+  "options": [
+    "尺度改變會影響流阻，仿生原理仍需實尺寸驗證",
+    "植物構造從未有功能",
+    "模型顏色不足",
+    "所有放大原型必定失敗"
+  ],
+  "answerIndex": 0,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": true,
+      "reason": "管徑、長度與流量尺度改變會改變阻力，需重新調整設計參數。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "小模型成功已顯示原理可能有用，不能反推生物構造無功能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "分流不均由流體與幾何關係解釋，顏色不會修正流阻。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "有些放大設計可經參數調整成功，不能宣稱一律失敗。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析尺度限制"
+  ],
+  "representationType": "模型推理",
+  "misconceptionTargets": [
+    "仿生跨尺度永遠相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DB-4-8",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "尺度核對幾何放大不代表流動條件按相同比例改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 0,
+      "evidence": "工程核對應在預定使用流量下測試並調整支管直徑，而非只複製外形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S176_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S176"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S176",
+  "stem": "比較甲與乙最能檢驗哪個條件？",
+  "options": [
+    "二氧化碳",
+    "光照",
+    "植物種類",
+    "供水量"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組二氧化碳相同，不能由此比較碳源效果。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "兩組碳源正常，只在是否照光不同，可檢驗光。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "所有材料同種，物種不是組間操作差異。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "供水固定相同，不是甲乙造成結果差的因素。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "辨識光照配對"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "配對時忽略控制條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-108-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "配對核對甲乙共享正常二氧化碳，隔離有光與無光。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結果核對十比零的陽性差，支持光與澱粉形成相關。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

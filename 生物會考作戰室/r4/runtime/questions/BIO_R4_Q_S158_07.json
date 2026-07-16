@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_S158_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S158"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "兩盆土都檢出同種細菌，四週內植物高度與葉色皆無差異。最合適的結論是？",
+  "options": [
+    "細菌必定促進生長",
+    "細菌必定抑制生長",
+    "本次指標未顯示明顯影響",
+    "兩盆土一定無細菌"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "植物高度沒有增加差異，資料不支持該細菌必定促進本次生長。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "葉色與高度都未呈現較差結果，也不能判定細菌必定抑制植物。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "在四週與兩項量測範圍內沒有差異，應限定為未見明顯影響。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "兩盆土已檢出同種細菌，否定其存在會和檢測資料互相矛盾。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀無差異資料"
+  ],
+  "representationType": "植物實驗",
+  "misconceptionTargets": [
+    "無差異等於永遠無作用"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "數據核對分別比較高度與葉色，兩個依變項都沒有盆間差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "限制條件核對保留四週觀察範圍，不排除更久時間或其他指標可能改變。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

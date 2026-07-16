@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0428",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S036"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "只觀察到器官功能下降，為何不能直接確定是哪種組織受損？",
+  "options": [
+    "器官沒有任何組織",
+    "所有組織功能完全相同",
+    "功能下降一定是測量錯誤",
+    "多種組織及其互動都可能造成相似整體結果"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "器官正是由多種組織構成。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "組織彼此分工而非完全相同。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "下降可能是真實現象，不能先排除。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "相同整體輸出可由出力、訊號、供應等不同環節受損造成。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "反向推論限制"
+  ],
+  "representationType": "診斷情境",
+  "misconceptionTargets": [
+    "器官結果唯一定位"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "由整體結果回推局部原因時，需要組織專一測量或操弄。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "列出多個替代原因能避免把相關現象當成唯一診斷。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

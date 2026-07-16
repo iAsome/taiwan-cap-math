@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_124_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S124"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST124",
+  "stem": "資料最直接支持哪項結論？",
+  "options": [
+    "葉面積只由基因決定",
+    "光照越久葉面積必定越大",
+    "相同基因型在不同光照下可有不同葉面積",
+    "植物基因已被光照全部刪除"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "基因型相同仍有差異，不能說只由基因決定。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "十六小時組小於十二小時組，並非一直增加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "表格同時支持相同基因型與不同環境表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "資料沒有檢測到基因消失，更不支持全部刪除。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "把環境效果讀成單調或唯一決定"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "比較四列可見控制基因型後，光照不同伴隨葉面積差異。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "「相同基因型在不同光照下可有不同葉面積」不超出試驗範圍，也沒有誤稱關係必為持續增加。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

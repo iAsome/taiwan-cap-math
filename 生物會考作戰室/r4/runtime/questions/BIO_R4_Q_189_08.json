@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_189_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S189"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BD-4-1",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "一座遮光溫室停止外部能量輸入，但生物仍短暫活動。最合理解釋為何？",
+  "options": [
+    "能量會在系統內永久循環",
+    "消費者可無限製造光能",
+    "熱能可全部自動轉為食物",
+    "系統暫時利用原先儲存於有機物的化學能"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "能量在代謝中散失，不能永久無損循環。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "消費者無法自行製造供光合作用使用的光能。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "低品質熱能不能由生態系全部逆轉成食物。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "既有生物量能供應短期化學能，但會逐漸耗盡。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析能量輸入中斷"
+  ],
+  "representationType": "封閉系統推論",
+  "misconceptionTargets": [
+    "能量像物質可永久循環"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BD-4-1",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "遮光後仍可消耗原有有機物，所以短暫活動不代表無需輸入。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「系統暫時利用原先儲存於有機物的化學能」同時解釋短期延續與長期無法維持兩個現象。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "BIO_R4_SQ_074_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S074"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S074",
+  "stem": "依表格，哪個器官排出尿素相對量最高？",
+  "options": [
+    "三者相同",
+    "皮膚",
+    "肺部",
+    "腎臟"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三組數值八十、二、零不同，不能判為相同。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "皮膚只測得相對量二，明顯不是最高值。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "肺在本次尿素欄為零，主要排出物是二氧化碳。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "腎臟尿素相對量八十，高於皮膚二與肺零。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-106-MAIN-INTEGRATED-NATURAL-036",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-043",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-035",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-019",
+      "CAP-113-MAIN-INTEGRATED-NATURAL-033",
+      "CAP-115-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "直接比較尿素欄即可判斷，腎臟是本表最主要的尿素排出器官。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "相對量不能當作固定人體比例，但可支持器官間本次功能差異。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S089_06",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S089"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "研究者移除細胞的Y受體後，Y不再引起反應。最直接支持何者？",
+  "options": [
+    "Y沒有進入培養液",
+    "Y受體是該反應的重要條件",
+    "細胞立刻失去所有功能",
+    "Y已變成神經訊息"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "培養液中仍可加入Y，移除的是受體。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "唯一改變的受體移除後反應消失，支持必要性。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "一項反應消失不等於所有細胞功能都失去。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "激素不會因移除受體而變成神經訊息。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "實驗推論"
+  ],
+  "representationType": "受體操作",
+  "misconceptionTargets": [
+    "由單一反應推成全面失能"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "前後比較把反應差異連結到受體狀態的改變。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "「Y受體是該反應的重要條件」是資料可支持的最小結論，沒有擴大到全部功能。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

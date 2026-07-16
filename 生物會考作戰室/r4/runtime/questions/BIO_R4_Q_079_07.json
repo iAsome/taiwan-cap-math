@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_079_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "群體平均值為7，個人讀值為8且仍在參考範圍，何者合理？",
+  "options": [
+    "個人一定異常",
+    "平均值就是唯一正常值",
+    "讀值可在範圍內波動，不必等於平均",
+    "應把8改寫成7"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "八仍在題目參考範圍，不能只因不同於平均就判異常。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "平均是群體代表值，不是每個人每次都必須等於的唯一數字。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "生理值可有個體與時間變異，範圍內不要求等於平均。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "原始讀值應如實保存，不能為符合平均而任意更改。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "區分平均與參考範圍，可以避免把正常變異誤判為異常。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "若個人長期基準不同，還可比較其自身趨勢，而非只依群體平均。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

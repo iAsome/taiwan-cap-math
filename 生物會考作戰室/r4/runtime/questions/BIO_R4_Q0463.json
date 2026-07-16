@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_Q0463",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S039"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-2",
+    "AUTH-NATURAL-LC-DA-4-3",
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-INC-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LC-INC-4-6"
+  ],
+  "stimulusId": null,
+  "stem": "某資料寫細胞約二十微米，計算結果最適合如何報告？",
+  "options": [
+    "精確到小數點後十位",
+    "完全不提供單位",
+    "保留約值與合理有效位數",
+    "把二十任意改成二十一"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "原始資料是約值，不能製造十位小數精度。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺少單位會失去尺度意義。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "結果精度應與原始約值相稱。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "任意改值不符合測量證據。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "精度判讀"
+  ],
+  "representationType": "資料表達",
+  "misconceptionTargets": [
+    "計算增加精度"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-2",
+      "AUTH-NATURAL-LC-DA-4-3",
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-INC-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LC-INC-4-6"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "計算不會讓輸入資料變得比原本更精確。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "使用『約』與單位可清楚表達估算性質。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

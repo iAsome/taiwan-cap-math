@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_046_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S046"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-1",
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-DB-4-1",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S046",
+  "stem": "第一階段所測三個pH中，哪個反應速率最高？",
+  "options": [
+    "pH 4",
+    "pH 6",
+    "pH 8",
+    "三者相同"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "pH 4的速率為6，明顯低於pH 6的15。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "pH 6速率15為三者最大。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "pH 8速率5低於另外兩組。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "三組速率分別為6、15、5，數值並不相同。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "生物概念判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-1",
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-DB-4-1",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-MAIN-INTEGRATED-NATURAL-042",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-032"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "第一階段數值6、15、5中，最大值15對應pH 6。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結論只限三個受測pH，不能宣稱精確峰值必定正好是六。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

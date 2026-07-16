@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ_S178_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S178"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S178",
+  "stem": "缺水第 3 天氣孔與失水同時下降，最支持哪個判斷？",
+  "options": [
+    "氣孔與水分無關",
+    "關孔使失水增加",
+    "缺水使光合作用加倍",
+    "關孔有助降低水分散失"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩指標同步變化且有合理通道機制，不能說完全無關。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "資料顯示失水由八點二下降，並非增加。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "光合由十二降至四點五，沒有加倍。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "開度降到二十八時失水也降到三點一，方向符合保水。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "解讀保水反應"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "關孔增加蒸散"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時間核對缺水處理後開度與失水相較正常組都明顯降低。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "機制核對氣孔是水蒸氣出口，開口縮小能直接減少通過量。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

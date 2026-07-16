@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_SQ_079_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S079"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S079",
+  "stem": "依表格，最早位於參考範圍內的時點為何？",
+  "options": [
+    "恢復十分鐘",
+    "運動後立即",
+    "運動前",
+    "恢復二十分鐘"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "恢復十分鐘一百一十六仍高於上限，尚未進入參考範圍。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "運動後一百三十八高於上限一百，並不在參考範圍內。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "運動前八十四介於七十與一百之間，且是最早的量測時點。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "恢復二十分鐘九十六雖在範圍內，但量測時間晚於運動前。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先依上下限找出範圍內讀值，再比較其時間順序，運動前最早。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "運動前八十四單位早於恢復二十分鐘的九十六單位，兩者雖都在範圍內但時點不同。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

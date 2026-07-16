@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_SQ0095",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S032"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST032",
+  "stem": "正常組與阻斷組差異最合理支持什麼？",
+  "options": [
+    "通道阻斷使離子回復更快",
+    "兩組趨勢完全相同",
+    "被阻斷通道可能參與離子濃度回復",
+    "阻斷處理使所有離子消失"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "阻斷組下降較慢，不是回復更快。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "二十分鐘一百零五與一百三十六差異明顯。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "其他條件相同而阻斷後回復受阻，支持通道參與。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "阻斷組仍維持較高數值，並未消失。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "因果比較"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "數值方向顛倒"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "操弄候選通道並比較回復曲線，比只看相關位置更接近因果證據。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "仍需檢查阻斷劑是否有其他作用及細胞存活情形。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

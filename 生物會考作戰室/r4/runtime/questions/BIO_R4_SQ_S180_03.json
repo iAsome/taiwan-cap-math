@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S180_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S180"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-INC-4-6",
+    "AUTH-NATURAL-LC-LA-4-1",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LC-LB-4-2",
+    "AUTH-NATURAL-LP-PA-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S180",
+  "stem": "要進一步分開兩因子效果，哪項實驗最合理？",
+  "options": [
+    "每缸同時改螺數、溫度與鹽度",
+    "只再看丁池一次",
+    "刪除藤壺數資料",
+    "設低高螺數與低高溫度四種組合並重複"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "三因子同時改變會增加混淆。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "單一池重看不提供因子組合對照。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "藤壺數正是反應指標，刪除後無法比較。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "二乘二設計可估生物、非生物及交互效果。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "遷移因子實驗"
+  ],
+  "representationType": "研究設計",
+  "misconceptionTargets": [
+    "同時改越多越能判因果"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-INC-4-6",
+      "AUTH-NATURAL-LC-LA-4-1",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LC-LB-4-2",
+      "AUTH-NATURAL-LP-PA-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "組合核對螺數與溫度各有兩水準，四種搭配完整。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "重複核對每種組合多缸可估偶然變異並提升可靠度。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

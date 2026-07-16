@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_076_03",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S076"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DB-4-3",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某時段攝取600毫升、流失450毫升，淨變化為何？",
+  "options": [
+    "減少1050毫升",
+    "減少150毫升",
+    "增加150毫升",
+    "增加1050毫升"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "收支應相減而非相加，六百與四百五十相加不代表淨減少。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "攝取大於流失，淨值不會是負一百五十毫升。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "六百減四百五十等於正一百五十，表示淨增加。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "一千零五十是兩數總和，並非攝取減流失的收支結果。"
+    }
+  ],
+  "difficulty": "foundation",
+  "cognitiveProcess": [
+    "排泄與恆定判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DB-4-3",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先固定公式為攝取減流失，再依正值判定淨增加。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "此結果只描述該時段估計，不代表身體會永久保留全部一百五十毫升。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

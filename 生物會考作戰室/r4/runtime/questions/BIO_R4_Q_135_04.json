@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_Q_135_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S135"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-6",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "AA與aa雜交，哪種子代基因型不可能出現？",
+  "options": [
+    "Aa",
+    "具有A的子代",
+    "顯性表現子代",
+    "aa"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "A配子與a配子每次都形成Aa。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "所有Aa子代都具有A版本並呈顯性表現。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "完全顯性下Aa都呈顯性表現。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "AA親代無法提供a，不能形成aa。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "未由純合親代配子排除aa"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-6",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-033"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "AA親代無法提供a，不能形成aa。A配子與a配子每次都形成Aa。所有Aa子代都具有A版本並呈顯性表現。完全顯性下Aa都呈顯性表現。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "AA 親代只提供 A，aa 親代只提供 a，因此每個子代都形成 Aa。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

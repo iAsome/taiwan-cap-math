@@ -1,0 +1,92 @@
+{
+  "id": "BIO_R4_ST_S091",
+  "subject": "biology",
+  "skillId": "BIO_R4_S091",
+  "type": "time-series-table",
+  "content": {
+    "title": "餐後血糖與胰島素變化",
+    "context": "受試者空腹測量後吃下同份量餐點，研究者在不同時間測量血糖與血中胰島素相對量。相對量以空腹時為1.0，數值越大代表比空腹時高。",
+    "columns": [
+      "餐後時間（分鐘）",
+      "血糖（mg/dL）",
+      "胰島素相對量"
+    ],
+    "rows": [
+      [
+        "0",
+        "88",
+        "1.0"
+      ],
+      [
+        "30",
+        "132",
+        "3.2"
+      ],
+      [
+        "60",
+        "112",
+        "2.4"
+      ],
+      [
+        "120",
+        "92",
+        "1.2"
+      ]
+    ],
+    "note": "受試者測量期間未再進食，且依相同方式坐著休息。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [
+    "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+    "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+    "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-002",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-008",
+      "CAP-114-MAIN-INTEGRATED-NATURAL-020"
+    ]
+  },
+  "accessibility": {
+    "summary": "血糖由空腹88升至30分鐘132，再降至120分鐘92；胰島素相對量由1.0升至3.2，再降至1.2。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "時間",
+        "血糖與胰島素"
+      ],
+      "rows": [
+        [
+          "0分鐘",
+          "88 mg/dL，胰島素1.0"
+        ],
+        [
+          "30分鐘",
+          "132 mg/dL，胰島素3.2"
+        ],
+        [
+          "60分鐘",
+          "112 mg/dL，胰島素2.4"
+        ],
+        [
+          "120分鐘",
+          "92 mg/dL，胰島素1.2"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

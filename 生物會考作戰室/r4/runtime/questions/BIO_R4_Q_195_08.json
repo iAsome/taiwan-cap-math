@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_Q_195_08",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S195"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "甲箱有植物，乙箱無植物，其他條件相同。此對照主要用途為何？",
+  "options": [
+    "證明植物不含碳",
+    "讓乙箱進行更多光合作用",
+    "使兩箱溫度必定不同",
+    "排除容器本身或環境造成的氣體變化"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "是否有植物不能用來證明植物不含碳。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "無植物箱不會因此進行更多光合作用。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "對照應盡量維持溫度等條件相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "乙箱可顯示非植物因素造成的背景變化。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "解釋無植物對照"
+  ],
+  "representationType": "實驗設計",
+  "misconceptionTargets": [
+    "有兩個箱就不需控制條件"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "「排除容器本身或環境造成的氣體變化」說明無植物對照如何幫助隔離植物作用。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "若兩箱其他條件一致，差異才較可歸因於植物代謝。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

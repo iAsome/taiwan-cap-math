@@ -1,0 +1,82 @@
+{
+  "id": "BIO_R4_ST_S101",
+  "subject": "biology",
+  "skillId": "BIO_R4_S101",
+  "type": "design-table",
+  "content": {
+    "title": "三種仿生支架的測試結果",
+    "context": "團隊設計三種相同高度的支架，分別測量質量、承受600牛頓負載後的壓縮變形，以及卸載後是否恢復原形。設計目標為質量不超過180克、變形不超過4毫米且能恢復。",
+    "columns": [
+      "版本",
+      "質量",
+      "變形",
+      "卸載後恢復"
+    ],
+    "rows": [
+      [
+        "甲",
+        "150克",
+        "7毫米",
+        "是"
+      ],
+      [
+        "乙",
+        "175克",
+        "3毫米",
+        "是"
+      ],
+      [
+        "丙",
+        "210克",
+        "2毫米",
+        "是"
+      ]
+    ],
+    "note": "三種版本使用相同負載、測量時間與底面尺寸。"
+  },
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "calibrationRefs": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "accessibility": {
+    "summary": "目標為質量不超過180克、變形不超過4毫米且可恢復。甲150克、變形7毫米、可恢復；乙175克、變形3毫米、可恢復；丙210克、變形2毫米、可恢復。",
+    "colorIndependent": true,
+    "dataFallback": {
+      "columns": [
+        "版本",
+        "質量、變形與恢復"
+      ],
+      "rows": [
+        [
+          "甲",
+          "150克、7毫米、可恢復"
+        ],
+        [
+          "乙",
+          "175克、3毫米、可恢復"
+        ],
+        [
+          "丙",
+          "210克、2毫米、可恢復"
+        ]
+      ]
+    }
+  },
+  "assets": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S159_07",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S159"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LC-GC-4-4",
+    "AUTH-NATURAL-LC-MA-4-1",
+    "AUTH-NATURAL-LC-MC-4-1",
+    "AUTH-NATURAL-LP-AH-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某微小病原在含豐富養分但沒有活細胞的培養液中不增加，進入活細胞後才增加。最支持哪項判讀？",
+  "options": [
+    "一定是植物",
+    "一定是真菌菌絲",
+    "具有病毒式宿主依賴",
+    "能自行分裂的細菌"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "植物由細胞構成且可進行自身代謝，題幹的宿主依賴不支持植物判讀。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "真菌可利用外界養分生長，菌絲也不必進入另一個活細胞才形成。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "只有活細胞存在時數量才增加，符合病毒利用宿主系統增殖的特徵。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "能自行分裂的細菌應可在合適無活細胞培養基增加，與結果方向相反。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "由培養結果辨認病毒"
+  ],
+  "representationType": "實驗比較",
+  "misconceptionTargets": [
+    "營養充足即可讓病毒增殖"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LC-GC-4-4",
+      "AUTH-NATURAL-LC-MA-4-1",
+      "AUTH-NATURAL-LC-MC-4-1",
+      "AUTH-NATURAL-LP-AH-4-1",
+      "CAP-109-MAIN-INTEGRATED-NATURAL-050",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-028",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-004"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "條件差核對顯示養分不是限制，是否存在活細胞才是增殖結果改變的關鍵。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "替代類型核對排除可獨立代謝的細菌與真菌，使宿主依賴成為最直接證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

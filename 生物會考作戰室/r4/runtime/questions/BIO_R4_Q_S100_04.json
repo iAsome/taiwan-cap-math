@@ -1,0 +1,80 @@
+{
+  "id": "BIO_R4_Q_S100_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S100"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-5",
+    "AUTH-NATURAL-LC-DC-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-MC-4-2",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "手持相同啞鈴，甲屈肘靠近胸口，乙伸直手臂。哪項判斷最合理？",
+  "options": [
+    "甲的力臂一定較長",
+    "兩者肌肉負擔必定完全相同",
+    "乙不需要肩部肌肉",
+    "乙的負重距肩較遠，肩部通常需較大張力"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "甲的啞鈴通常更靠近肩關節。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "相同重量在不同距離會造成不同力矩。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "伸直手臂仍須肩部肌肉維持姿勢。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "較長力臂增加重量造成的轉動效果。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "姿勢比較"
+  ],
+  "representationType": "情境推論",
+  "misconceptionTargets": [
+    "重量相同等於負擔相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-5",
+      "AUTH-NATURAL-LC-DC-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-MC-4-2",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "比較姿勢時須同時看重量與距離，不能只因啞鈴相同就判定負擔相同。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "乙的負重位置較遠，符合肩部肌肉張力增加的力學推論。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

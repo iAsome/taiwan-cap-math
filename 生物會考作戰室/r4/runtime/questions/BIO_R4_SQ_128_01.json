@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_128_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S128"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-4",
+    "AUTH-NATURAL-LC-FC-4-2",
+    "AUTH-NATURAL-LC-GA-4-2",
+    "AUTH-NATURAL-LC-GA-4-3",
+    "AUTH-NATURAL-LC-GA-4-4",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST128",
+  "stem": "比較G1的兩組最適合研究何者？",
+  "options": [
+    "基因型由G1變G2的效果",
+    "溫度對相同基因型高度的影響",
+    "土壤種類的效果",
+    "水分是否完全消失"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩組都為G1，沒有改變基因型。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "基因型相同而溫度不同，可比較環境效果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "題幹明示土壤相同，沒有土壤處理。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "水分被控制相同，不是完全消失。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "判讀與推論"
+  ],
+  "representationType": "文字與資料情境",
+  "misconceptionTargets": [
+    "比較環境效應時選錯對照組"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-4",
+      "AUTH-NATURAL-LC-FC-4-2",
+      "AUTH-NATURAL-LC-GA-4-2",
+      "AUTH-NATURAL-LC-GA-4-3",
+      "AUTH-NATURAL-LC-GA-4-4",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-TM-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "G1兩列只改變溫度，「溫度對相同基因型高度的影響」符合控制變因比較。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "其他選項指向未改變或不存在的變項，不能由資料回答。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

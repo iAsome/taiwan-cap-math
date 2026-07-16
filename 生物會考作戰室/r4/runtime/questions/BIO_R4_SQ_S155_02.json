@@ -1,0 +1,83 @@
+{
+  "id": "BIO_R4_SQ_S155_02",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S155"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-FC-4-1",
+    "AUTH-NATURAL-LC-GC-4-1",
+    "AUTH-NATURAL-LC-GC-4-2",
+    "AUTH-NATURAL-LC-MA-4-2",
+    "AUTH-NATURAL-LC-MA-4-5",
+    "AUTH-NATURAL-LP-TM-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S155",
+  "stem": "依各物種個體數，哪地物種均勻度較高？",
+  "options": [
+    "乙地",
+    "甲地",
+    "兩地必定相同",
+    "資料只可比較基因"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "乙地有85隻集中於種一，其他三種只有4到6隻，分配不均。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "甲地四種各有24到26隻，個體數接近，因此均勻度較高。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "兩地雖同為四種，但個體比例一邊平均、一邊集中，均勻度不相同。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "表格提供逐種個體數，可比較群集均勻度，並非只能研究基因。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "比較均勻度"
+  ],
+  "representationType": "數值資料",
+  "misconceptionTargets": [
+    "豐富度相同即均勻度相同"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-FC-4-1",
+      "AUTH-NATURAL-LC-GC-4-1",
+      "AUTH-NATURAL-LC-GC-4-2",
+      "AUTH-NATURAL-LC-MA-4-2",
+      "AUTH-NATURAL-LC-MA-4-5",
+      "AUTH-NATURAL-LP-TM-4-1",
+      "CAP-112-MAIN-INTEGRATED-NATURAL-001"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "離差核對比較各列最大與最小值，甲地相差2而乙地相差81。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "支配度核對顯示乙地種一占八成以上，甲地沒有單一物種支配群集。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

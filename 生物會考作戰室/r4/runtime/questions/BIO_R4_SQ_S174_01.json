@@ -1,0 +1,84 @@
+{
+  "id": "BIO_R4_SQ_S174_01",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S174"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST_S174",
+  "stem": "正午資料最適合解釋為何？",
+  "options": [
+    "葉片沒有任何代謝",
+    "呼吸作用完全停止",
+    "葉片淨消耗氧氣",
+    "光合作用速率大於呼吸作用，呈現淨產氧與淨吸碳"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "兩種氣體都有明顯變化，不能說沒有代謝。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "淨值不能證明呼吸停止，活細胞白天仍需能量。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "氧氣為正九代表淨釋出，不是淨消耗。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "氧氣正值、二氧化碳負值，方向符合光合作用占優勢。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "解讀正午淨值"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "淨產氧等於不呼吸"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-023",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-018"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "符號核對正氧表示對外釋氧，負碳表示由外界吸收二氧化碳。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "時段核對強光支持光合作用較快，但不排除背景呼吸。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "BIO_R4_Q_S093_12",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S093"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-4",
+    "AUTH-NATURAL-LC-DC-4-2",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "某患者接受激素補充後，血中濃度已正常，但症狀沒有改善。下一步最合理的探查方向為何？",
+  "options": [
+    "立刻無限增加劑量",
+    "停止測量所有生理指標",
+    "只根據外貌判定康復",
+    "檢查標的細胞受體及其他可能造成症狀的因素"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "濃度已正常時盲目加量可能導致過量。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "持續追蹤生理指標才能判斷作用結果。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "外貌不能取代受體功能與其他病因檢查。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "症狀未改善可能來自接收訊號異常或不同病因。"
+    }
+  ],
+  "difficulty": "transfer",
+  "cognitiveProcess": [
+    "治療評估"
+  ],
+  "representationType": "臨床推論",
+  "misconceptionTargets": [
+    "濃度正常便盲目加量"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-4",
+      "AUTH-NATURAL-LC-DC-4-2",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "補充後濃度正常只確認分泌量已補足，不能證明標的細胞能正常反應。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "同時檢查受體與其他病因，可避免把所有症狀錯歸於激素不足。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

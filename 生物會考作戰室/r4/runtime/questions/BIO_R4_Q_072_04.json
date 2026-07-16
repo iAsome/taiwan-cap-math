@@ -1,0 +1,81 @@
+{
+  "id": "BIO_R4_Q_072_04",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S072"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DB-4-2",
+    "AUTH-NATURAL-LC-DC-4-3",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-GC-4-3",
+    "AUTH-NATURAL-LP-PA-4-1",
+    "AUTH-NATURAL-LP-PE-4-2"
+  ],
+  "stimulusId": null,
+  "stem": "病人樣本有菌甲，哪項最能避免過早認定甲為病因？",
+  "options": [
+    "只把菌甲名稱重寫",
+    "不記錄任何健康者",
+    "只選症狀最重的一人",
+    "加入健康對照並比較菌量、菌株與位置"
+  ],
+  "answerIndex": 3,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "改寫名稱不會增加菌甲與疾病之間的因果證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "缺少健康對照便無法知道菌甲是否也常見於無症狀者。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "只挑最重個案會造成選樣偏差，也沒有未患病基準。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": true,
+      "reason": "多面向比較可判斷菌甲是否與疾病特別相關並排除正常存在。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "循環與防禦判讀",
+    "證據推理"
+  ],
+  "representationType": "文字與資料判讀",
+  "misconceptionTargets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DB-4-2",
+      "AUTH-NATURAL-LC-DC-4-3",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-GC-4-3",
+      "AUTH-NATURAL-LP-PA-4-1",
+      "AUTH-NATURAL-LP-PE-4-2"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "健康對照是區分正常菌與疾病相關菌的重要基準，但仍非單獨充分。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 3,
+      "evidence": "再加入時間順序與機制資料，可更可靠判定菌甲是病因、結果或旁觀者。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

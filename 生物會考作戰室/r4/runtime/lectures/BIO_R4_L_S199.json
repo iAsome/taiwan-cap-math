@@ -1,0 +1,128 @@
+{
+  "id": "BIO_R4_L_S199",
+  "subject": "biology",
+  "unitId": "BIO_R4_U27",
+  "skillId": "BIO_R4_S199",
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-2",
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BD-4-2",
+    "AUTH-NATURAL-LC-BD-4-3",
+    "AUTH-NATURAL-LC-LB-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "prerequisites": [
+    "BIO_R4_S198"
+  ],
+  "objectives": [
+    "分析干擾後生態系回復、部分回復或轉為新狀態。",
+    "使用干擾前基線、時間序列與多項指標評估恢復程度。"
+  ],
+  "sections": [
+    {
+      "id": "BIO_R4_L_S199_SEC_01",
+      "title": "干擾先造成偏離",
+      "content": "颱風、火災、污染或外來種都可能使族群與環境指標離開原有範圍。干擾強度、持續時間及受影響範圍不同，偏離程度也不相同。"
+    },
+    {
+      "id": "BIO_R4_L_S199_SEC_02",
+      "title": "恢復要看時間序列",
+      "content": "若指標在干擾後逐步回到原基線，表示有恢復跡象；只量干擾前與多年後兩點，會漏掉最低點、恢復速度與中途再次受擾情形。"
+    },
+    {
+      "id": "BIO_R4_L_S199_SEC_03",
+      "title": "數值回來不等於組成相同",
+      "content": "總生物量可回到原值，但若原生種被外來種取代，生態系功能與食物網可能已不同。評估恢復需同時看總量、物種組成、環境與功能。"
+    },
+    {
+      "id": "BIO_R4_L_S199_SEC_04",
+      "title": "持續新範圍可能代表轉變",
+      "content": "若多項指標長期停在不同於干擾前的新範圍，且物種組成也改變，可能表示系統轉變。仍需排除採樣方法與季節差異，再作結論。"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "BIO_R4_L_S199_EX_01",
+      "prompt": "颱風後紅樹林覆蓋降至40%，三年回到85%的原範圍，如何判讀？",
+      "steps": [
+        "比較干擾後最低值與干擾前基線。",
+        "確認三年數值已回到原常見範圍。"
+      ],
+      "answer": "覆蓋率有明顯恢復跡象。",
+      "why": "覆蓋率回到原範圍只能支持此指標恢復，仍須檢查樹種組成與動物群是否一併回復。"
+    },
+    {
+      "id": "BIO_R4_L_S199_EX_02",
+      "prompt": "總植物量恢復，但幾乎全由外來草構成，算完全復原嗎？",
+      "steps": [
+        "總量與干擾前接近。",
+        "物種組成與原系統明顯不同。"
+      ],
+      "answer": "不能稱為完全復原。",
+      "why": "單一總量會掩蓋原生種被外來草取代的組成轉變，食物來源與棲地功能可能尚未恢復。"
+    },
+    {
+      "id": "BIO_R4_L_S199_EX_03",
+      "prompt": "湖泊清除污染後溶氧短暫上升又長期下降，應如何判讀？",
+      "steps": [
+        "辨認短暫改善沒有維持。",
+        "檢查污染是否再輸入或系統是否已改變。"
+      ],
+      "answer": "尚不能判定穩定恢復。",
+      "why": "穩定恢復需要多期數值持續回到基線；單次反彈後再下降，不能證明干擾影響已解除。"
+    }
+  ],
+  "misconceptions": [
+    {
+      "belief": "干擾後任何回升都代表完全恢復。",
+      "whyWrong": "短暫反彈可能再次下降，也可能只有單一指標改善。",
+      "correction": "比較多期趨勢與多項指標是否持續回到干擾前範圍。"
+    },
+    {
+      "belief": "總生物量相同就代表物種組成相同。",
+      "whyWrong": "少數優勢種可補足總量，卻取代原有多種生物。",
+      "correction": "除總量外，記錄物種組成、多樣性與關鍵生態功能。"
+    },
+    {
+      "belief": "沒有回到原值就一定完全崩潰。",
+      "whyWrong": "系統可能部分恢復、緩慢恢復或轉到仍可運作的新狀態。",
+      "correction": "描述恢復程度與不確定性，不只使用成功或失敗二分法。"
+    },
+    {
+      "belief": "只要等得夠久，任何生態系都會自行復原。",
+      "whyWrong": "棲地消失、持續污染或外來種可能阻止原系統回復。",
+      "correction": "監測限制因素，必要時採取移除壓力與復育措施。"
+    }
+  ],
+  "checks": [
+    {
+      "prompt": "判斷復原最少需要干擾前資料嗎？",
+      "answer": "需要基線才能比較。",
+      "reason": "沒有干擾前範圍，就難判斷後續數值是否回到原有狀態。"
+    },
+    {
+      "prompt": "總生物量恢復時，還應檢查哪一項？",
+      "answer": "物種組成與生態功能。",
+      "reason": "總量可能由不同物種補足，不能單獨證明原食物網已恢復。"
+    },
+    {
+      "prompt": "多項指標長期停在新範圍可能表示什麼？",
+      "answer": "生態系可能已轉變。",
+      "reason": "持續偏離原基線且組成改變，比短期波動更支持新狀態。"
+    }
+  ],
+  "assets": [],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-2",
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BD-4-2",
+      "AUTH-NATURAL-LC-BD-4-3",
+      "AUTH-NATURAL-LC-LB-4-1",
+      "AUTH-NATURAL-LP-TR-4-1"
+    ]
+  }
+}

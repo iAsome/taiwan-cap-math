@@ -1,0 +1,86 @@
+{
+  "id": "BIO_R4_SQ0079",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S027"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-DA-4-1",
+    "AUTH-NATURAL-LC-DC-4-4",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LC-INC-4-5",
+    "AUTH-NATURAL-LP-PE-4-1",
+    "AUTH-NATURAL-LP-TR-4-1"
+  ],
+  "stimulusId": "BIO_R4_ST027",
+  "stem": "甲袋質量減少最合理的水淨移動方向為何？",
+  "options": [
+    "水完全沒有跨膜",
+    "由外液移入甲袋",
+    "由甲袋內移向外液",
+    "蔗糖由外液全部移入甲袋"
+  ],
+  "answerIndex": 2,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "袋重減少是有淨水移出的證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": false,
+      "reason": "外液濃度較高，不支持水淨進入較稀的甲袋。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": true,
+      "reason": "甲袋內溶質較低，水淨外移且袋重下降。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "膜只讓水通過，不能用蔗糖移入解釋。"
+    }
+  ],
+  "difficulty": "standard",
+  "cognitiveProcess": [
+    "質量判讀"
+  ],
+  "representationType": "資料表",
+  "misconceptionTargets": [
+    "減重方向顛倒"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-DA-4-1",
+      "AUTH-NATURAL-LC-DC-4-4",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LC-INC-4-5",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "AUTH-NATURAL-LP-TR-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-048",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-016",
+      "CAP-110-ALTERNATE-INTEGRATED-NATURAL-053",
+      "CAP-112-ALTERNATE-INTEGRATED-NATURAL-034"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "先比較甲袋與外液濃度，再用質量下降驗證水的淨外移。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 2,
+      "evidence": "兩項獨立線索方向一致，形成較完整的滲透證據。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}

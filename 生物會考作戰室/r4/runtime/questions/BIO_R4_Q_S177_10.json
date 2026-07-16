@@ -1,0 +1,85 @@
+{
+  "id": "BIO_R4_Q_S177_10",
+  "subject": "biology",
+  "skillIds": [
+    "BIO_R4_S177"
+  ],
+  "authorityRefs": [
+    "AUTH-NATURAL-LC-BC-4-3",
+    "AUTH-NATURAL-LC-BC-4-4",
+    "AUTH-NATURAL-LC-DB-4-6",
+    "AUTH-NATURAL-LC-DC-4-5",
+    "AUTH-NATURAL-LP-PA-4-2",
+    "AUTH-NATURAL-LP-PE-4-1"
+  ],
+  "stimulusId": null,
+  "stem": "緩慢旋轉裝置使幼苗各方向平均受重力，根不再固定朝一側彎，最支持什麼？",
+  "options": [
+    "根只受光刺激",
+    "固定重力方向是根定向生長的重要線索",
+    "旋轉使根沒有細胞",
+    "水分不影響生長"
+  ],
+  "answerIndex": 1,
+  "optionRationales": [
+    {
+      "optionIndex": 0,
+      "isCorrect": false,
+      "reason": "裝置處理的是重力方向平均化，未提供單側光效應證據。"
+    },
+    {
+      "optionIndex": 1,
+      "isCorrect": true,
+      "reason": "失去穩定向下刺激後固定彎曲減弱，符合向地性預測。"
+    },
+    {
+      "optionIndex": 2,
+      "isCorrect": false,
+      "reason": "旋轉不會移除根細胞，材料仍可持續伸長。"
+    },
+    {
+      "optionIndex": 3,
+      "isCorrect": false,
+      "reason": "實驗沒有操縱水分，不能由此判定水分作用。"
+    }
+  ],
+  "difficulty": "advanced",
+  "cognitiveProcess": [
+    "分析旋轉裝置"
+  ],
+  "representationType": "模擬實驗",
+  "misconceptionTargets": [
+    "重力與根方向無關"
+  ],
+  "provenance": {
+    "status": "original",
+    "authorRole": "Codex R4 Biology content author",
+    "copyrightStatus": "Original wording and data; official sources used only for scope and assessment calibration.",
+    "sourceRefs": [
+      "AUTH-NATURAL-LC-BC-4-3",
+      "AUTH-NATURAL-LC-BC-4-4",
+      "AUTH-NATURAL-LC-DB-4-6",
+      "AUTH-NATURAL-LC-DC-4-5",
+      "AUTH-NATURAL-LP-PA-4-2",
+      "AUTH-NATURAL-LP-PE-4-1",
+      "CAP-107-MAIN-INTEGRATED-NATURAL-046",
+      "CAP-109-ALTERNATE-INTEGRATED-NATURAL-014",
+      "CAP-111-MAIN-INTEGRATED-NATURAL-005"
+    ]
+  },
+  "independentReviews": [
+    {
+      "reviewerRole": "biology-independent-solution-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "對照核對一般靜置組保有固定向下方向，旋轉組則持續改變相對方向。",
+      "status": "pass"
+    },
+    {
+      "reviewerRole": "biology-alternative-answer-review",
+      "derivedAnswerIndex": 1,
+      "evidence": "結果核對方向性消失而非總生長必然停止，指向定向刺激被削弱。",
+      "status": "pass"
+    }
+  ],
+  "assets": []
+}
