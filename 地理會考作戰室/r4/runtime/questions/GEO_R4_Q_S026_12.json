@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-1"
   ],
   "stimulusId": null,
-  "stem": "用地形剖面作無障礙教學時，哪種替代資料最能支援四類地形比較？",
+  "stem": "甲地中央海拔一百五十公尺，周圍多在六百公尺以上；乙地中央同為一百五十公尺，向外仍是廣闊低平地。兩地較可能分屬何種地形？",
   "options": [
-    "只列每區顏色",
-    "只放一張山景照片",
-    "只說甲比較漂亮",
-    "列出各區最低最高海拔、坡度、周緣高低與剖面序列"
+    "甲較像山地，乙較像丘陵",
+    "只看中央海拔即可判兩地完全相同",
+    "甲、乙都必為平原",
+    "甲較像盆地，乙較像平原"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不是地形定義且不利非視覺讀者。"
+      "reason": "甲的中央低地不是山地主體，乙也沒有丘陵起伏證據。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "單張照片難以比較四區。"
+      "reason": "相同海拔可處於不同周緣形態，不能推出同類地形。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "美感不提供地理證據。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "地形分類還要看周緣高低與相對起伏，不能只比中央高度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "數值與相對關係能重建低平、起伏及環繞形態。"
+      "reason": "甲受高地環繞符合盆地，乙向外低平較符合平原。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "地形資料替代"
+    "形態比較"
   ],
-  "representationType": "accessible-profile",
+  "representationType": "paired-terrain",
   "misconceptionTargets": [
-    "平均值足以替代剖面"
+    "用單一海拔決定地形類型"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "表格不能只給平均海拔，還要保留相對高差和周邊關係。 正確選項「列出各區最低最高海拔、坡度、周緣高低與剖面序列」可由題幹推出，因為數值與相對關係能重建低平、起伏及環繞形態。",
+      "evidence": "本題刻意控制中央海拔相同，要求使用周圍地勢辨認形態。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "配合有順序的剖面點列，可讓讀者獨立辨識盆地與谷地。 逐項排除其他選項：「只列每區顏色」顏色不是地形定義且不利非視覺讀者。；「只放一張山景照片」單張照片難以比較四區。；「只說甲比較漂亮」美感不提供地理證據。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二同時使用中央與周緣關係，避免以單一高度命名地形。",
       "status": "pass"
     }
   ],

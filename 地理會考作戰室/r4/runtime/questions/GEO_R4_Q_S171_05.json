@@ -17,7 +17,7 @@
   "options": [
     "不矛盾，正成長率較低仍表示持續增加",
     "矛盾，成長率下降等於負值",
-    "矛盾，人口應立即歸零",
+    "不矛盾，因總人口與成長率沒有關係",
     "不矛盾，因百分比沒有意義"
   ],
   "answerIndex": 0,
@@ -30,17 +30,17 @@
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "百分之一仍為正。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "百分之一仍為正。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "人口不會因此消失。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "成長率仍會影響人口增加的速度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "百分比仍是重要指標。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "百分比仍是重要指標。"
     }
   ],
   "difficulty": "standard",
@@ -68,13 +68,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 0,
-      "evidence": "正確選項「不矛盾，正成長率較低仍表示持續增加」可由題幹推出，因為速度放慢不等於方向反轉。",
+      "evidence": "分清成長減速和人口減少。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 0,
-      "evidence": "逐項排除其他選項：「矛盾，成長率下降等於負值」百分之一仍為正。 這項內容無法支持題幹所要求的地理判斷。；「矛盾，人口應立即歸零」人口不會因此消失。 這項內容無法支持題幹所要求的地理判斷。；「不矛盾，因百分比沒有意義」百分比仍是重要指標。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "基期也影響增加人數。",
       "status": "pass"
     }
   ],

@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-SOC-3B-4-3"
   ],
   "stimulusId": null,
-  "stem": "年溫差與年雨量的替代表格需保留什麼？",
+  "stem": "某站十一個月雨量合計一千六百毫米，六月資料缺值。能否計算全年總雨量？",
   "options": [
-    "只列最後答案",
-    "只用顏色",
-    "刪除月份",
-    "十二月原值、單位、極值標記、加總與缺值狀態"
+    "能，用其餘十一月平均必然等於六月",
+    "能，全年就是一千六百毫米",
+    "能，把六月直接當零毫米",
+    "不能得到精確年量，須補六月資料或明列缺值"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "答案無法查漏月。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "用平均估算需提出方法與不確定性，不能宣稱必然等於真值。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "一千六百毫米只是已知十一個月的合計。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "月份是序列。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "缺值不等於零雨，直接填零會低估年量。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "完整證據允許重算。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "全年加總缺少一個月，應先補值或把結果標為不完整。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "計算可及性"
+    "缺月處理"
   ],
-  "representationType": "accessible-calculation",
+  "representationType": "annual-total-missing",
   "misconceptionTargets": [
-    "最終數字可取代原始月表"
+    "把缺值當成零或直接忽略"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "可另列公式列，讓螢幕閱讀器依序讀出計算。 正確選項「十二月原值、單位、極值標記、加總與缺值狀態」可由題幹推出，因為完整證據允許重算。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "年降水量定義為十二個月加總，任何缺月都會影響精確結果。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "缺值不能隱藏在總量欄，應有明確狀態。 逐項排除其他選項：「只列最後答案」答案無法查漏月。 這項內容無法支持題幹所要求的地理判斷。；「只用顏色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「刪除月份」月份是序列。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三沒有捏造六月數值，並清楚說明如何處理不完整資料。",
       "status": "pass"
     }
   ],

@@ -19,43 +19,43 @@
     "AUTH-SOCIAL-LP-GEO-1A-4-2"
   ],
   "stimulusId": null,
-  "stem": "跨國生產網絡圖的無障礙替代應包含什麼？",
+  "stem": "某產品在丁國完成組裝，但組裝只占製造價值的一小部分；標示組裝地時還應避免哪種推論？",
   "options": [
-    "只用國旗顏色",
-    "只列品牌總部",
-    "省略零件連線",
-    "環節、國家、企業角色、投入產出、運量、價值與方向"
+    "認為組裝是生產網絡的一個節點",
+    "追查關鍵零件的供應國",
+    "分別列出設計、零件與組裝流向",
+    "把組裝地誤當成所有零件、設計與價值的唯一來源"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "色彩不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "組裝確實是網絡節點，這項描述沒有越界。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "不代表製造。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "追查零件來源能補足供應鏈資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "網絡核心。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "分環節列流向可避免把產地過度簡化。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建分工與依賴。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "最終組裝地不能代表上游全部來源與價值分配。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "生產網絡可及性"
+    "產地標示"
   ],
-  "representationType": "accessible-gpn",
+  "representationType": "assembly-origin",
   "misconceptionTargets": [
-    "品牌總部位置可取代全部生產網絡"
+    "組裝地等於全部來源"
   ],
   "provenance": {
     "status": "original",
@@ -80,13 +80,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資料表可按產品批次列供應層級。 正確選項「環節、國家、企業角色、投入產出、運量、價值與方向」可由題幹推出，因為可重建分工與依賴。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "題幹要求找應避免的推論，只有第一項把單一節點擴張成完整來源。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "不確定來源需明示，不可假裝完整。 逐項排除其他選項：「只用國旗顏色」色彩不足。 這項內容無法支持題幹所要求的地理判斷。；「只列品牌總部」不代表製造。 這項內容無法支持題幹所要求的地理判斷。；「省略零件連線」網絡核心。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "標示規則與價值來源是不同問題，答題需分開處理。",
       "status": "pass"
     }
   ],

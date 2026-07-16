@@ -18,15 +18,15 @@
   "options": [
     "地震是否越過赤道",
     "建築耐震、地盤、人口密度、預警與救援",
-    "兩城國旗顏色",
-    "城市名稱字數"
+    "只比較兩城地震規模",
+    "只比較兩城人口總數"
   ],
   "answerIndex": 1,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "赤道不是震波界線。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "赤道不是震波界線。"
     },
     {
       "optionIndex": 1,
@@ -36,12 +36,12 @@
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "無風險意義。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題幹已控制同規模，不能解釋傷亡差。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "無因果關係。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "人口總數未包含建築、地盤與救援脆弱度。"
     }
   ],
   "difficulty": "advanced",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "規模相同仍需比較震源距離。 正確選項「建築耐震、地盤、人口密度、預警與救援」可由題幹推出，因為可解釋脆弱度與暴露差。",
+      "evidence": "規模相同仍需比較震源距離。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "災害不是自然事件的同義詞。 逐項排除其他選項：「地震是否越過赤道」赤道不是震波界線。 這項內容無法支持題幹所要求的地理判斷。；「兩城國旗顏色」無風險意義。 這項內容無法支持題幹所要求的地理判斷。；「城市名稱字數」無因果關係。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "災害不是自然事件的同義詞。",
       "status": "pass"
     }
   ],

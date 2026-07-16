@@ -14,43 +14,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-1"
   ],
   "stimulusId": null,
-  "stem": "讓非視覺使用者查核疊圖結果，最有效的替代為何？",
+  "stem": "疾病高值區與工業區在疊圖上重合。僅憑這個結果，最合理的結論為何？",
   "options": [
-    "只提供合成熱度顏色",
-    "只說系統已算好",
-    "隱藏未通過條件",
-    "列每候選區各條件原始值、是否通過、來源日期與最終規則"
+    "重合表示疾病資料必定錯誤",
+    "只要改用更深顏色就能證明因果",
+    "工業活動已被證明是唯一病因",
+    "兩者存在空間重合，仍須查人口結構、暴露與時間資料"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色無法獨立讀取門檻。"
+      "reason": "重合本身不構成疾病資料錯誤的證據。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "黑箱結論不能查核。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "改變符號顏色不會增加因果或暴露證據。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "隱藏會失去決策透明度。"
+      "reason": "空間重合只能建立關聯線索，尚未排除其他解釋。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "結構化資料可重現交集與取捨。"
+      "reason": "答案保留重合事實，並提出檢驗暴露、時間與混雜因素的下一步。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "疊圖透明度"
+    "疊圖推論"
   ],
-  "representationType": "accessible-overlay",
+  "representationType": "overlay-inference",
   "misconceptionTargets": [
-    "合成顏色可取代原始條件"
+    "把空間重合直接當成因果"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "表格應保留地形、人口、交通各欄，而非只列總分。 正確選項「列每候選區各條件原始值、是否通過、來源日期與最終規則」可由題幹推出，因為結構化資料可重現交集與取捨。",
+      "evidence": "疊圖擅長找候選關係，不會自動提供作用機制或時間順序。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "鍵盤排序與文字狀態也能讓使用者比較候選地。 逐項排除其他選項：「只提供合成熱度顏色」顏色無法獨立讀取門檻。；「只說系統已算好」黑箱結論不能查核。 這項內容無法支持題幹所要求的地理判斷。；「隱藏未通過條件」隱藏會失去決策透明度。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二把空間分析定位為後續查證的起點，推論強度與資料相稱。",
       "status": "pass"
     }
   ],

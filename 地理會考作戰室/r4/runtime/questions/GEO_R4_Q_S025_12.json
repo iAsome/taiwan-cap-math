@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-1"
   ],
   "stimulusId": null,
-  "stem": "供視障者判斷河網流向的資料表，哪項資訊最必要？",
+  "stem": "地形圖上一條人工渠道跨越低丘，渠線局部由低處通往高處。下列解釋何者最審慎？",
   "options": [
-    "只列河流藍色色碼",
-    "只說河很彎",
-    "只提供照片亮度",
-    "各節點海拔、支流匯合順序與河段連接"
+    "只要稱為渠道，就完全不受重力影響",
+    "自然河流一定會長期逆坡流動",
+    "圖面必定畫錯，不需查其他資料",
+    "渠道可能利用抽水或壓力輸水，應查設施與水位資料"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "色碼不能提供方向且不具普遍可讀性。"
+      "reason": "人工渠道仍受重力與工程條件限制，不會完全脫離物理作用。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "彎曲程度不表示上下游。"
+      "reason": "自然河流通常由高往低，題目也明示為人工渠道。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "亮度不是河網高程資料。"
+      "reason": "人工輸水可能越過地形高點，不能未查設施就判為製圖錯誤。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "高程與網路拓撲足以追蹤高到低及匯流。"
+      "reason": "泵站、管線或控制水位能解釋局部逆坡，且可由設施資料查證。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "河網可及性"
+    "例外判讀"
   ],
-  "representationType": "accessible-network",
+  "representationType": "canal-scenario",
   "misconceptionTargets": [
-    "顏色可以替代流向資料"
+    "把自然河流規則無條件套用人工渠道"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "等值替代需保留可推理的節點、邊與高度，不只是圖像摘要。 正確選項「各節點海拔、支流匯合順序與河段連接」可由題幹推出，因為高程與網路拓撲足以追蹤高到低及匯流。",
+      "evidence": "先辨認『人工渠道』是自然河流流向規則的適用例外，再尋找工程機制。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若另列 V 尖側與開口側高度，可再提供形態交叉驗證。 逐項排除其他選項：「只列河流藍色色碼」色碼不能提供方向且不具普遍可讀性。；「只說河很彎」彎曲程度不表示上下游。；「只提供照片亮度」亮度不是河網高程資料。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三提出可查證的泵站與水位證據，沒有把例外寫成必然。",
       "status": "pass"
     }
   ],

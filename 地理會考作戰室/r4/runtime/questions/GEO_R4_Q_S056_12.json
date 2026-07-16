@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-SOC-3B-4-3"
   ],
   "stimulusId": null,
-  "stem": "完整氣候圖的長說明應優先提供哪些資訊？",
+  "stem": "單一測站一九九一至二○二○年年均溫上升零點八度。這筆資料直接支持哪項結論？",
   "options": [
-    "只列圖的顏色",
-    "只寫結論正確",
-    "省略資料來源",
-    "地點、統計期間、軸單位、十二月數值、缺值與主要趨勢"
+    "全球每個地點都上升零點八度",
+    "升溫唯一原因已被證明是都市化",
+    "未來每一年都必比前一年更熱",
+    "該測站在這段期間呈升溫趨勢"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不是數值替代。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "單站結果不能外推到全球所有地點與相同幅度。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無法檢核。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "溫度序列本身沒有控制都市化或其他成因。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "來源與期間影響可信度。"
+      "reason": "長期趨勢仍含年際波動，不能推成逐年單調增加。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "涵蓋重建判讀所需的背景與數據。"
+      "reason": "同站、明確期間的序列可直接描述該地觀測趨勢。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "證據可及性"
+    "證據範圍"
   ],
-  "representationType": "accessible-evidence",
+  "representationType": "climate-evidence",
   "misconceptionTargets": [
-    "圖色名稱足以取代完整資料"
+    "由單站趨勢推出全球幅度或單一成因"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資料表是精確替代，長說明補充視覺趨勢與異常。 正確選項「地點、統計期間、軸單位、十二月數值、缺值與主要趨勢」可由題幹推出，因為涵蓋重建判讀所需的背景與數據。",
+      "evidence": "先分開資料直接描述的地點與期間，再檢查選項是否擴張到全球、成因或未來。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資訊順序應讓螢幕閱讀器先掌握圖意再查月值。 逐項排除其他選項：「只列圖的顏色」顏色不是數值替代。 這項內容無法支持題幹所要求的地理判斷。；「只寫結論正確」無法檢核。 這項內容無法支持題幹所要求的地理判斷。；「省略資料來源」來源與期間影響可信度。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一只陳述觀測趨勢，推論範圍與單站資料相符。",
       "status": "pass"
     }
   ],

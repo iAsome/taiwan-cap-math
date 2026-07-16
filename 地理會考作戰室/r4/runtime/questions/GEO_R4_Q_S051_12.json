@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-SOC-3B-4-3"
   ],
   "stimulusId": null,
-  "stem": "氣象資料表如何支援非視覺使用者？",
+  "stem": "測站記錄『北風四公尺／秒』。若旗幟位於測站南側，風大致會把旗幟吹向哪一方？",
   "options": [
-    "只用箭頭顏色",
-    "只畫溫度線",
-    "刪除時間",
-    "明列欄名、單位、觀測時段、缺值代碼與風向來向"
+    "東方，因四公尺／秒是東向速度",
+    "無法判斷，任何風向都不含來向",
+    "北方，因北風往北吹",
+    "南方，因風向名稱表示風的來向"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色和箭頭不夠。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "風速數值只表示快慢，不能改成東西方向。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "單圖無法涵蓋其他要素。"
+      "reason": "氣象風向慣例本來就以來向命名。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "時間是資料語意。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "北風不是吹往北，而是從北方吹來。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "完整文字欄位可獨立讀取與比較。"
+      "reason": "北風由北向南移動，因此下風方向大致在南側。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "氣象表可及性"
+    "風向判讀"
   ],
-  "representationType": "accessible-weather-table",
+  "representationType": "wind-direction",
   "misconceptionTargets": [
-    "彩色箭頭可取代單位時間"
+    "把風向名稱當成吹去方向"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "風向最好同時列來向和去向，減少圖示歧義。 正確選項「明列欄名、單位、觀測時段、缺值代碼與風向來向」可由題幹推出，因為完整文字欄位可獨立讀取與比較。",
+      "evidence": "先把『北風』翻成從北方來，再求相反的下風方向。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "表格還需標時區、測站與資料品質。 逐項排除其他選項：「只用箭頭顏色」顏色和箭頭不夠。 這項內容無法支持題幹所要求的地理判斷。；「只畫溫度線」單圖無法涵蓋其他要素。；「刪除時間」時間是資料語意。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二同時正確使用風向命名與風速單位，未把速度當方向。",
       "status": "pass"
     }
   ],

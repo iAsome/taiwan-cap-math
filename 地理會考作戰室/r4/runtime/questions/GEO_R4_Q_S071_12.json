@@ -16,43 +16,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-1"
   ],
   "stimulusId": null,
-  "stem": "人口點圖的文字替代應包含什麼？",
+  "stem": "甲區人口十八萬、面積六十平方公里；乙區人口二十四萬、面積二百四十平方公里。哪區人口密度較高？",
   "options": [
-    "只說點是紅色",
-    "只列圖寬",
-    "省略每點代表人數",
-    "點值、統計年份、主要集中帶與稀疏區、行政界及尺度"
+    "乙區，每平方公里四千人",
+    "乙區，因總人口較多",
+    "兩區相同，因都超過十萬人",
+    "甲區，每平方公里三千人"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "乙區二十四萬除以二百四十是一千，不是四千。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "尺寸非人口證據。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "人口密度要同時考慮人口與面積，總人口較多不必然較密。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "點值是定量關鍵。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "超過同一人口門檻不代表人口與面積比值相同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可解讀數量與空間型態。"
+      "reason": "十八萬除以六十為三千，高於乙區的一千。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "人口圖可及性"
+    "人口密度計算"
   ],
-  "representationType": "accessible-dot-map",
+  "representationType": "density-comparison",
   "misconceptionTargets": [
-    "點色可取代點值"
+    "只用總人口判人口密度"
   ],
   "provenance": {
     "status": "original",
@@ -74,13 +74,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "點的位置若經隨機化以保護隱私，也應註明。 正確選項「點值、統計年份、主要集中帶與稀疏區、行政界及尺度」可由題幹推出，因為可解讀數量與空間型態。",
+      "evidence": "分別以人口除面積後再比較，不能只看分子。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資料表可按分區列人口與面積。 逐項排除其他選項：「只說點是紅色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列圖寬」尺寸非人口證據。 這項內容無法支持題幹所要求的地理判斷。；「省略每點代表人數」點值是定量關鍵。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一完整給出甲區密度，並可由乙區較大面積解釋差異。",
       "status": "pass"
     }
   ],

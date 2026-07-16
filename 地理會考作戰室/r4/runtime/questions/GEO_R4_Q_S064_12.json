@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-3"
   ],
   "stimulusId": null,
-  "stem": "無障礙水系圖的文字替代應包含什麼？",
+  "stem": "工廠位於甲市上游，但排水沿同一支流流入乙市取水口。評估影響時應優先採哪個範圍？",
   "options": [
-    "只說河是藍色",
-    "只列圖幅大小",
-    "省略上下游",
-    "出口、各支流匯流順序、流向、分水嶺與關鍵點相對位置"
+    "以兩市市名排序",
+    "只看甲市行政界",
+    "只看乙市人口總數",
+    "沿共同集水區追蹤排水至取水口的流路"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "市名順序與水文流向沒有關係。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "尺寸不是水系結構。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "污染可能跨行政界往下游移動，只看甲市會截斷流路。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "上下游是核心。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "人口總數沒有指出污染來源與水流連通。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建水文關係與作答證據。"
+      "reason": "集水區與河網能連結上游排放、支流匯流和下游取水點。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "水系可及性"
+    "集水區應用"
   ],
-  "representationType": "accessible-network",
+  "representationType": "cross-boundary-basin",
   "misconceptionTargets": [
-    "顏色足以表達流向"
+    "用行政界代替集水區"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "另附節點與連線資料表，可讓讀者依序追蹤。 正確選項「出口、各支流匯流順序、流向、分水嶺與關鍵點相對位置」可由題幹推出，因為可重建水文關係與作答證據。",
+      "evidence": "水文事件的作用範圍應沿分水嶺、支流與出口界定，而非照行政邊界切開。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "分水嶺可用線型與標籤，不只靠色塊。 逐項排除其他選項：「只說河是藍色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列圖幅大小」尺寸不是水系結構。 這項內容無法支持題幹所要求的地理判斷。；「省略上下游」上下游是核心。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三保留來源到受體的完整連通路徑，是唯一可追查的分析範圍。",
       "status": "pass"
     }
   ],

@@ -16,43 +16,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-1"
   ],
   "stimulusId": null,
-  "stem": "人口金字塔的無障礙替代最適合什麼？",
+  "stem": "某地零至十四歲占比由百分之二十四降為百分之十三。若不知道兩年總人口，能否確定幼年人口實際減少多少人？",
   "options": [
-    "只說左藍右紅",
-    "只寫底部很寬",
-    "省略年齡組",
-    "按年齡組列男女或各性別人數占比、單位與年份的表格"
+    "不能，因百分比永遠不能比較",
+    "能，必定減少十一人",
+    "能，必定減少百分之十一的人數",
+    "不能，占比下降但仍需兩年總人口才能算人數"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足且可能強化刻板。"
+      "reason": "百分比可以比較結構，只是本題不能由它單獨換成人數。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無精確數值。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "十一是百分點差，不是人數。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "失去縱軸。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "百分點變化不能直接當成實際人口減幅。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建每條橫條。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "各年實際人數等於占比乘總人口，缺少分母就無法求差額。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "金字塔可及性"
+    "比例與人數"
   ],
-  "representationType": "accessible-pyramid",
+  "representationType": "age-share",
   "misconceptionTargets": [
-    "左右顏色足以取代數值"
+    "把百分點差直接當成實際人數差"
   ],
   "provenance": {
     "status": "original",
@@ -74,13 +74,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "長說明可補充整體形狀與局部凹凸。 正確選項「按年齡組列男女或各性別人數占比、單位與年份的表格」可由題幹推出，因為可重建每條橫條。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "先分清『占比下降十一個百分點』和『人數減少多少』是不同問題。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若性別分類不只二元，應依原資料如實標示。 逐項排除其他選項：「只說左藍右紅」顏色不足且可能強化刻板。；「只寫底部很寬」無精確數值。 這項內容無法支持題幹所要求的地理判斷。；「省略年齡組」失去縱軸。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三指出所缺分母，保留資料能支持的結構變化。",
       "status": "pass"
     }
   ],

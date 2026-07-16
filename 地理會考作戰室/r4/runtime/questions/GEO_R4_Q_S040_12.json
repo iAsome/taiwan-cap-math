@@ -14,43 +14,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-1"
   ],
   "stimulusId": null,
-  "stem": "影像教材的文字替代至少應包含什麼中繼資料？",
+  "stem": "一幅『災後影像』在七月二十日發布，但拍攝時間是六月一日；災害發生於七月十五日。這幅影像可作何用？",
   "options": [
-    "只寫衛星圖三字",
-    "只列彩色名稱",
-    "只留發布日期",
-    "圖例類別、拍攝時間與時區、波段、解析度、雲量及來源"
+    "發布日比拍攝日更能代表地表狀態",
+    "可精確顯示七月二十日所有積水",
+    "直接當作七月十五日後的災情證據",
+    "作為災前基準，不能因發布日晚就當成災後拍攝"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "過於籠統不能支援解讀。"
+      "reason": "發布日不會把舊影像內容更新成當日狀態。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "顏色名無法說明波段與類別。"
+      "reason": "舊影像既非災後拍攝，也不能呈現發布日積水。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "發布日不能取代拍攝日。"
+      "reason": "六月一日早於災害，不能支援災後狀態。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這些項目決定影像語意與可用限制。"
+      "reason": "地表狀態對應拍攝時刻；發布時間只表示資料何時上線。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "影像中繼可及性"
+    "中繼資料判讀"
   ],
-  "representationType": "accessible-metadata",
+  "representationType": "image-timeline",
   "misconceptionTargets": [
-    "發布日期足以描述影像"
+    "把發布時間當成拍攝時間"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若影像承載題目資料，還需用表格列各區特徵與數值。 正確選項「圖例類別、拍攝時間與時區、波段、解析度、雲量及來源」可由題幹推出，因為這些項目決定影像語意與可用限制。",
+      "evidence": "先建立拍攝、處理、發布三種時間，判讀地表現象時以拍攝時間為準。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "長說明與中繼資料共同提供不依視覺的完整判讀入口。 逐項排除其他選項：「只寫衛星圖三字」過於籠統不能支援解讀。；「只列彩色名稱」顏色名無法說明波段與類別。；「只留發布日期」發布日不能取代拍攝日。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二正確把影像定位為災前基準，避免由檔案發布日誤判時序。",
       "status": "pass"
     }
   ],

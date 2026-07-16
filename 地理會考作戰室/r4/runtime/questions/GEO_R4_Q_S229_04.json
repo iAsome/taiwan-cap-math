@@ -20,8 +20,8 @@
   "stimulusId": null,
   "stem": "兩地颱風風速相同，乙地災損較高，最應先比較什麼？",
   "options": [
-    "颱風名稱字數",
-    "兩地國旗顏色",
+    "只比較兩地風速",
+    "假定兩地建築與人口相同",
     "只比較緯度",
     "建築、排水、暴露人口、預警與恢復資源"
   ],
@@ -30,22 +30,22 @@
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "與損失無關。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題幹已控制風速相同，不能解釋災損差。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無關。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "未查建築、暴露與能力就假定相同會遮蔽原因。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "不足以解釋。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "不足以解釋。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "涵蓋暴露脆弱與能力。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "涵蓋暴露脆弱與能力。"
     }
   ],
   "difficulty": "standard",
@@ -78,13 +78,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "正確選項「建築、排水、暴露人口、預警與恢復資源」可由題幹推出，因為涵蓋暴露脆弱與能力。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "相同危害是有用對照。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「颱風名稱字數」與損失無關。 這項內容無法支持題幹所要求的地理判斷。；「兩地國旗顏色」無關。 這項內容無法支持題幹所要求的地理判斷。；「只比較緯度」不足以解釋。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "仍需查雨量浪高差異。",
       "status": "pass"
     }
   ],

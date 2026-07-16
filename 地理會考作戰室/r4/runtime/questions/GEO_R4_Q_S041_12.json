@@ -14,43 +14,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-1"
   ],
   "stimulusId": null,
-  "stem": "公開設址結果如何支援無障礙查核？",
+  "stem": "健康站候選地甲可服務最多人口，但位於官方洪水高潛勢區；規則明定高潛勢區不得設站。應如何處理？",
   "options": [
-    "只顯示紅綠總分圖",
-    "只提供滑鼠懸停",
-    "隱藏不利條件",
-    "提供候選地逐層原始值、排除理由、權重、日期與文字說明"
+    "把洪水圖層權重調低到零",
+    "只比較甲的土地價格",
+    "因服務人口最多而保留甲為首選",
+    "先依硬性排除規則淘汰甲，再比較其他候選地"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足且可能無法列印。"
+      "reason": "任意取消風險圖層會違反既定規則並隱藏安全問題。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "滑鼠限定不支援鍵盤觸控。"
+      "reason": "價格只是一項條件，無法解除洪水暴露。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "隱藏破壞透明度。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "服務效益不能推翻題目明定的安全排除條件。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "結構資料讓不同使用者重現決策。"
+      "reason": "硬性限制先篩除不可行地，再用門檻或偏好排序其餘方案。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "決策可及性"
+    "規則排序"
   ],
-  "representationType": "accessible-siting",
+  "representationType": "site-exclusion",
   "misconceptionTargets": [
-    "合成圖足以取代規則資料"
+    "用高效益抵銷硬性安全限制"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "表格需區分不合格、未知與合格，不能只用顏色。 正確選項「提供候選地逐層原始值、排除理由、權重、日期與文字說明」可由題幹推出，因為結構資料讓不同使用者重現決策。",
+      "evidence": "設址分析先分清『不得』與『較佳』，兩者不能混成可互相抵銷的分數。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "還應說明最終決策者與模型不是法定許可。 逐項排除其他選項：「只顯示紅綠總分圖」顏色不足且可能無法列印。；「只提供滑鼠懸停」滑鼠限定不支援鍵盤觸控。；「隱藏不利條件」隱藏破壞透明度。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二遵守決策順序，也保留在合格候選地中比較服務效益的空間。",
       "status": "pass"
     }
   ],

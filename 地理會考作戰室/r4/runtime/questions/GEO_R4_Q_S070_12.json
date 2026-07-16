@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-3"
   ],
   "stimulusId": null,
-  "stem": "流域決策地圖的文字替代應如何呈現？",
+  "stem": "枯水期水庫最低放流二十，河口民生需求十八、生態流量十五；若中間沒有其他入流，最低放流是否足夠？",
   "options": [
-    "只列行政區顏色",
-    "只說方案很好",
-    "省略河川連通",
-    "依上游至下游列工程、取水、排放、支流、受影響點與流向"
+    "無法比較，因三個數值單位必定不同",
+    "足夠，二十大於十五",
+    "足夠，民生與生態可共用同一份水",
+    "不足，兩項合計三十三，比二十少十三"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題目把三項都列為同一枯水期資料，可在給定假設下比較。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無證據。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "只比較生態流量會漏掉民生基本需求。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "連通是決策核心。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "兩項需求同時存在時不能把同一份水重複計入。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建影響傳遞與利害關係。"
+      "reason": "十八加十五為三十三，最低放流二十留下十三的缺口。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "流域決策可及性"
+    "下游需求"
   ],
-  "representationType": "accessible-basin-decision",
+  "representationType": "environmental-flow",
   "misconceptionTargets": [
-    "行政色塊可取代上下游關係"
+    "只滿足單一需求就視為下游足夠"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "另附節點連線表與各方案水量變化。 正確選項「依上游至下游列工程、取水、排放、支流、受影響點與流向」可由題幹推出，因為可重建影響傳遞與利害關係。",
+      "evidence": "沿上游至下游累加同時存在的需求，再檢查最低放流能否覆蓋。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "黑白列印可用符號線型，但仍要有標籤。 逐項排除其他選項：「只列行政區顏色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只說方案很好」無證據。 這項內容無法支持題幹所要求的地理判斷。；「省略河川連通」連通是決策核心。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案三依題設無其他入流計算，也沒有把結果外推到有支流補注的情況。",
       "status": "pass"
     }
   ],

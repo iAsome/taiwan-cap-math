@@ -17,43 +17,43 @@
     "AUTH-SOCIAL-LP-SOC-2A-4-1"
   ],
   "stimulusId": null,
-  "stem": "漁場洋流圖的無障礙替代應包含什麼？",
+  "stem": "某漁場總漁獲量持平，但每船日漁獲連續三年下降，最合理的管理判讀是什麼？",
   "options": [
-    "只說寒流藍暖流紅",
-    "只列最大港",
-    "省略箭頭方向",
-    "洋流方向溫度、季節、湧升區、漁獲與港口距離"
+    "總漁獲持平已證明魚群數量完全不變",
+    "每船日下降表示港口距離自動縮短",
+    "只要再增加船數，資源便會自然恢復",
+    "捕撈努力可能增加並掩蓋資源壓力，應查船數與魚群資料"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "色彩不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "總量未納入努力量，不能單獨證明魚群穩定。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "無漁場結構。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "捕撈效率下降與港口距離縮短沒有必然關係。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "洋流核心是方向。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "增加捕撈壓力不會促使魚群自然恢復。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建自然人文關係。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "單位努力量漁獲下降時，更多船日可能勉強維持總量。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "漁場圖可及性"
+    "努力量趨勢"
   ],
-  "representationType": "accessible-fishing-map",
+  "representationType": "cpue-trend",
   "misconceptionTargets": [
-    "紅藍顏色可取代洋流方向與溫度"
+    "總漁獲持平等於資源穩定"
   ],
   "provenance": {
     "status": "original",
@@ -76,13 +76,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資料表可分季節列海溫與漁獲。 正確選項「洋流方向溫度、季節、湧升區、漁獲與港口距離」可由題幹推出，因為可重建自然人文關係。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "總漁獲與單位努力量方向不同，需先查努力量是否上升。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "圖上魚類符號需有文字名稱與數量定義。 逐項排除其他選項：「只說寒流藍暖流紅」色彩不足。 這項內容無法支持題幹所要求的地理判斷。；「只列最大港」無漁場結構。 這項內容無法支持題幹所要求的地理判斷。；「省略箭頭方向」洋流核心是方向。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "資源判讀還要用族群量、年齡結構與標準化船型資料交叉驗證。",
       "status": "pass"
     }
   ],

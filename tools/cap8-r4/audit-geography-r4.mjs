@@ -11,8 +11,8 @@ const REPO_ROOT = path.resolve(HERE, "..", "..");
 const SUBJECT_ROOT = path.join(REPO_ROOT, "地理會考作戰室", "r4");
 const MANIFEST_PATH = path.join(SUBJECT_ROOT, "content-manifest-v4.json");
 const AUDIT_PATH = path.join(SUBJECT_ROOT, "audit", "final-audit.json");
-const REVIEWED_AT = "2026-07-16";
-const REVIEWER_ROLE = "Codex R4 Geography final semantic and rendered-context reviewer";
+const REVIEWED_AT = "2026-07-17";
+const REVIEWER_ROLE = "Codex R4 Geography reverse-semantic and rendered-context reviewer";
 
 function repositoryPath(absolutePath) {
   return path.relative(REPO_ROOT, absolutePath).split(path.sep).join("/");

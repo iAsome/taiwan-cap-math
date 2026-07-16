@@ -17,43 +17,43 @@
     "AUTH-SOCIAL-LP-SOC-2A-4-1"
   ],
   "stimulusId": null,
-  "stem": "農業類型比較圖的可及替代應包含什麼？",
+  "stem": "農場面積由十公頃增至二十公頃，總勞力不變；若只看勞力投入，集約程度如何變化？",
   "options": [
-    "只用紅綠色標現代落後",
-    "只列總產量",
-    "省略分母",
-    "土地面積、每公頃投入產出、產品去向、收益與環境指標"
+    "每公頃勞力加倍，投入密度上升",
+    "面積改變不會影響任何單位土地指標",
+    "沒有產品去向資料，所以無法計算每公頃勞力",
+    "每公頃勞力減半，勞力投入密度下降"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "帶價值偏見且色彩不足。"
+      "reason": "面積增加而總勞力固定，不會使每公頃勞力加倍。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "不知規模效率。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "單位土地指標的分母就是面積，面積改變會影響結果。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "無法判集約。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "產品去向用來判自給或商業，不妨礙計算勞力密度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建兩條分類軸與影響。"
+      "reason": "同一總勞力分配到兩倍面積，每公頃只剩原來一半。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "類型圖可及性"
+    "單位土地"
   ],
-  "representationType": "accessible-farm-types",
+  "representationType": "per-area-change",
   "misconceptionTargets": [
-    "總產量足以判集約粗放"
+    "只看總投入不看面積"
   ],
   "provenance": {
     "status": "original",
@@ -76,13 +76,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "應避免把類型名稱當發展高低排名。 正確選項「土地面積、每公頃投入產出、產品去向、收益與環境指標」可由題幹推出，因為可重建兩條分類軸與影響。",
+      "evidence": "以總勞力除面積可得投入密度，分母加倍使數值減半。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「只用紅綠色標現代落後」帶價值偏見且色彩不足。；「只列總產量」不知規模效率。 這項內容無法支持題幹所要求的地理判斷。；「省略分母」無法判集約。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "這題只判勞力面向的集約程度，沒有把產品去向混入另一分類軸。",
       "status": "pass"
     }
   ],

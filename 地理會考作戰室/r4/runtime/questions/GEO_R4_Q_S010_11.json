@@ -14,22 +14,22 @@
   "stimulusId": null,
   "stem": "航空路線資料只標出各站緯度。規劃由北到南的停靠順序時可以使用，但還缺什麼才能確定站點完整位置？",
   "options": [
-    "機票顏色",
-    "旅客年齡",
+    "各站海拔",
+    "各站到赤道的角距離",
     "經度",
-    "站名筆畫"
+    "各站所屬國家但不附國界圖"
   ],
   "answerIndex": 2,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "機票顏色不提供地點。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "海拔只補充垂直位置，不能確定同一緯線上的東西位置。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "旅客年齡與站點位置無關。"
+      "reason": "到赤道的角距離仍是緯度資訊，沒有補上東西位置。"
     },
     {
       "optionIndex": 2,
@@ -39,7 +39,7 @@
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "站名筆畫不是空間座標。"
+      "reason": "只有國名且沒有國界或站點資料，仍不能唯一定位。"
     }
   ],
   "difficulty": "transfer",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 2,
-      "evidence": "緯度足以排序南北，卻不能區分同緯線上的東西地點，因此需經度。 正確選項「經度」可由題幹推出，因為經度與緯度配對才能唯一定位地表位置。",
+      "evidence": "緯度足以排序南北，卻不能區分同緯線上的東西地點，因此需經度。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 2,
-      "evidence": "其餘選項皆非地理定位變數，答案索引零唯一。 逐項排除其他選項：「機票顏色」機票顏色不提供地點。 這項內容無法支持題幹所要求的地理判斷。；「旅客年齡」旅客年齡與站點位置無關。；「站名筆畫」站名筆畫不是空間座標。；因此沒有同樣成立的替代答案。",
+      "evidence": "其餘選項皆非地理定位變數，答案索引零唯一。",
       "status": "pass"
     }
   ],

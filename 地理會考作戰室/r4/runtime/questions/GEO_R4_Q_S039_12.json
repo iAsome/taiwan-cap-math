@@ -14,43 +14,43 @@
     "AUTH-SOCIAL-LP-SOC-3D-4-1"
   ],
   "stimulusId": null,
-  "stem": "公開變遷圖如何讓讀者查核？",
+  "stem": "同一河口兩期資料顯示建成區增加十五公頃、泥灘減少十五公頃，但總分析面積不變。這代表什麼？",
   "options": [
-    "只提供紅綠差異色",
-    "只說有變化",
-    "隱藏分類錯誤",
-    "提供各區起訖類別、面積、日期、解析度、信心與未知遮蔽表"
+    "建成區增加表示河口總面積也增加十五公頃",
+    "泥灘減少必定全由量測錯誤造成",
+    "總面積不變，所以沒有土地覆蓋轉換",
+    "至少有十五公頃可能由泥灘轉為建成區，仍應查轉換矩陣"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "色覺與黑白列印會限制且無數值。"
+      "reason": "分類面積在固定範圍內重分配，不會使分析區自動變大。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "籠統敘述不可重現。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "題目沒有誤差證據，不能把真實轉換先排除。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "誤差應揭露。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "總面積守恆不代表各類別沒有互相轉換。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "完整表格保留計算與品質資訊。"
+      "reason": "兩類一增一減提供可能轉換線索，轉換矩陣可確認實際來源去向。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "變遷透明度"
+    "變遷矩陣"
   ],
-  "representationType": "accessible-change",
+  "representationType": "change-accounting",
   "misconceptionTargets": [
-    "差異色圖可取代時序資料"
+    "用總面積不變否定類別轉換"
   ],
   "provenance": {
     "status": "original",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "不只靠顏色的類別標籤能讓螢幕閱讀器與列印讀者使用。 正確選項「提供各區起訖類別、面積、日期、解析度、信心與未知遮蔽表」可由題幹推出，因為完整表格保留計算與品質資訊。",
+      "evidence": "變遷分析要同時看各類增減與來源去向，不能只看總面積。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若列轉換矩陣，還應明確說列為起期、欄為末期。 逐項排除其他選項：「只提供紅綠差異色」色覺與黑白列印會限制且無數值。；「只說有變化」籠統敘述不可重現。 這項內容無法支持題幹所要求的地理判斷。；「隱藏分類錯誤」誤差應揭露。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二把可由淨變化支持的線索和仍需轉換矩陣確認的部分分開。",
       "status": "pass"
     }
   ],

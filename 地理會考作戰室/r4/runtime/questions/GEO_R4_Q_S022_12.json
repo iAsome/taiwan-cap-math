@@ -12,44 +12,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-1"
   ],
   "stimulusId": null,
-  "stem": "要讓無法看圖形的讀者判讀海拔，替代資料最少應保留什麼？",
+  "stem": "等高距二十公尺，某點位於二百四十與二百六十公尺等高線之間，且沒有標高點。下列判讀何者恰當？",
   "options": [
-    "只說有很多線",
-    "只列線條顏色",
-    "只提供山景照片",
-    "點位所在等高線或夾線範圍、等高距、標高點與升降方向"
+    "該點一定高於二百六十公尺",
+    "只要在線間就不能提供任何高度範圍",
+    "該點一定正好二百五十公尺",
+    "該點海拔可合理判在二百四十至二百六十公尺之間"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "線多不提供數值與位置關係。"
+      "reason": "點位尚未越過二百六十公尺等高線。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "顏色不是等高資訊的等值替代。"
+      "reason": "即使沒有標高點，兩條相鄰等高線仍提供上下界。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "照片難以提供可計算高度序列。"
+      "reason": "線間位置只能估讀範圍，不能保證正好位於中間高度。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "這些資料足以重建高度讀值與範圍。"
+      "reason": "相鄰兩線界定合理高度範圍，且未超過圖面精度。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "資料等值",
-    "無障礙"
+    "範圍估讀"
   ],
-  "representationType": "accessible-contour",
+  "representationType": "contour-interval",
   "misconceptionTargets": [
-    "一句圖像摘要即可解題"
+    "把線間點直接指定為中間高度"
   ],
   "provenance": {
     "status": "original",
@@ -67,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "長說明或資料表要保留解題所需的數值與拓撲，不只是圖像主題摘要。 正確選項「點位所在等高線或夾線範圍、等高距、標高點與升降方向」可由題幹推出，因為這些資料足以重建高度讀值與範圍。",
+      "evidence": "題目沒有坡面均勻或中點條件，因此不能把線間幾何位置當成精確高度。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若有多點，可列每點位於哪條線或哪兩線之間，讓讀者獨立計算。 逐項排除其他選項：「只說有很多線」線多不提供數值與位置關係。；「只列線條顏色」顏色不是等高資訊的等值替代。；「只提供山景照片」照片難以提供可計算高度序列。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二保留等高距能支持的範圍，也明確限制估讀精度。",
       "status": "pass"
     }
   ],

@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-2"
   ],
   "stimulusId": null,
-  "stem": "都市化時序圖的可及替代應包含什麼？",
+  "stem": "某地都市人口由一百萬增至一百七十五萬，建成區由三百增至六百平方公里。哪項判讀較合理？",
   "options": [
-    "只說線向上",
-    "只列最後一年",
-    "省略百分率單位",
-    "各年都市人口、總人口、都市化率、定義與邊界變更"
+    "兩者都增加百分之七十五",
+    "建成區只增加三百，所以成長較慢",
+    "都市人口增加就能證明每位居民住房面積相同",
+    "都市人口增加百分之七十五，建成區增加百分之百，土地擴張較快"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "缺數值。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "建成區由三百到六百是百分之百，不是百分之七十五。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "看不到速度。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "比較速度要用相對原值，不能只看差額三百。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "易誤讀。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "總量變化未提供住房分配，不能推得每人面積相同。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重算與判資料斷點。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "人口增加七十五萬相對原值一百萬為百分之七十五；建成區則翻倍。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "時序可及性"
+    "都市擴張率"
   ],
-  "representationType": "accessible-urbanization",
+  "representationType": "urban-growth-comparison",
   "misconceptionTargets": [
-    "線條方向可取代分子分母"
+    "用絕對增量直接比較不同量綱的成長速度"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "建成區面積若同圖也要分軸單位。 正確選項「各年都市人口、總人口、都市化率、定義與邊界變更」可由題幹推出，因為可重算與判資料斷點。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "用各自原值計算變化率後，才能比較人口與土地擴張速度。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「只說線向上」缺數值。 這項內容無法支持題幹所要求的地理判斷。；「只列最後一年」看不到速度。 這項內容無法支持題幹所要求的地理判斷。；「省略百分率單位」易誤讀。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一指出建成區成長較快，但沒有把它直接等同單一成因。",
       "status": "pass"
     }
   ],

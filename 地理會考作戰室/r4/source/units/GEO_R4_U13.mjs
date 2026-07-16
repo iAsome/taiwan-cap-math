@@ -2154,6 +2154,7 @@ const stimuli = [
     skillId: "GEO_R4_S085",
     type: "table",
     content: {
+      sourceNote: "原創虛構教學資料；地名、數值與情境不對應真實個案。",
       title: "三條街的文化景觀調查",
       prompt: "某班在相同時段、以相同範圍調查三條街，資料如下。請把可觀察線索和居民身分推論分開。",
       table: {
@@ -2177,6 +2178,7 @@ const stimuli = [
     skillId: "GEO_R4_S086",
     type: "table",
     content: {
+      sourceNote: "原創虛構教學資料；地名、數值與情境不對應真實個案。",
       title: "海岸聚落名稱與土地利用變化",
       prompt: "研究者整理某虛構聚落三個年代的地名、環境與主要活動，用來判斷名稱和地方變遷的關係。",
       table: {
@@ -2200,6 +2202,7 @@ const stimuli = [
     skillId: "GEO_R4_S087",
     type: "table",
     content: {
+      sourceNote: "原創虛構教學資料；地名、數值與情境不對應真實個案。",
       title: "蒸米捲的跨地傳播紀錄",
       prompt: "研究者比較一種原創虛構料理在三地出現的年代、傳播線索與製作變化。",
       table: {
@@ -2223,6 +2226,7 @@ const stimuli = [
     skillId: "GEO_R4_S088",
     type: "table",
     content: {
+      sourceNote: "原創虛構教學資料；地名、數值與情境不對應真實個案。",
       title: "甲語使用比例與國界",
       prompt: "P、Q 兩國各有兩個邊境行政區。研究者以居民日常使用甲語的比例分類文化區。",
       table: {
@@ -2247,6 +2251,7 @@ const stimuli = [
     skillId: "GEO_R4_S089",
     type: "table",
     content: {
+      sourceNote: "原創虛構教學資料；地名、數值與情境不對應真實個案。",
       title: "四群居民使用社區中心的條件",
       prompt: "社區中心比較不同使用者的距離、時段與障礙，準備調整服務。",
       table: {
@@ -2271,6 +2276,7 @@ const stimuli = [
     skillId: "GEO_R4_S090",
     type: "table",
     content: {
+      sourceNote: "原創虛構教學資料；地名、數值與情境不對應真實個案。",
       title: "活動中心協商制度前後比較",
       prompt: "甲、乙兩群原本都需要週末晚間，時段由單一管理者決定；後來改為需求公開、共同會議、輪替與申訴制度。",
       table: {
@@ -2295,6 +2301,7 @@ const stimuli = [
     skillId: "GEO_R4_S091",
     type: "table",
     content: {
+      sourceNote: "原創虛構教學資料；地名、數值與情境不對應真實個案。",
       title: "四種傳統服飾調查樣本",
       prompt: "四組學生使用不同地點與方式調查傳統服飾穿著，準備討論哪些結果能代表社區日常。",
       table: {

@@ -18,8 +18,8 @@
   "options": [
     "緯度",
     "補給船、飛機、建材、廢棄物運回與人員移動",
-    "站名長度",
-    "國旗數量"
+    "只計站區面積",
+    "只計科研人員數"
   ],
   "answerIndex": 1,
   "optionRationales": [
@@ -36,12 +36,12 @@
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "無排放意義。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "面積不能估算補給、建材、廢棄物與人員移動排放。"
     },
     {
       "optionIndex": 3,
       "isCorrect": false,
-      "reason": "不是能源量。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "人數仍漏掉船機補給與建材的生命週期排放。"
     }
   ],
   "difficulty": "standard",
@@ -70,13 +70,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 1,
-      "evidence": "正確選項「補給船、飛機、建材、廢棄物運回與人員移動」可由題幹推出，因為完整生命週期包含物流。",
+      "evidence": "遠距補給可能占比高。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 1,
-      "evidence": "逐項排除其他選項：「緯度」位置已知但非足跡全貌。；「站名長度」無排放意義。 這項內容無法支持題幹所要求的地理判斷。；「國旗數量」不是能源量。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "共享物流可減少重複。",
       "status": "pass"
     }
   ],

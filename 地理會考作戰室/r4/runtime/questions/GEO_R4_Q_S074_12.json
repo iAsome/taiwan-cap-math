@@ -16,43 +16,43 @@
     "AUTH-SOCIAL-LP-SOC-2B-4-1"
   ],
   "stimulusId": null,
-  "stem": "人口轉型示意圖的文字替代應包含什麼？",
+  "stem": "某時期出生率千分之九、死亡率千分之十一。下列哪項判讀最恰當？",
   "options": [
-    "只說兩線不同顏色",
-    "只列最後階段",
-    "省略時間方向",
-    "各時段出生死亡率相對高低、差距、自然增加與假設"
+    "總人口必定每年減少千分之二",
+    "死亡率較高表示出生人數一定為零",
+    "自然增加率為千分之二",
+    "自然增加率為負千分之二，但總人口仍可能受遷移影響"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "缺少遷移資料，不能把自然減少直接等同總人口變化。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "失去轉型序列。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "死亡率高於出生率不代表完全沒有出生。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "模型依賴時序。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "出生率減死亡率為負二，不是正二。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "可重建模型變化。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "自然增加為負，但淨移入可能抵銷甚至使總人口增加。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "模型圖可及性"
+    "轉型判讀"
   ],
-  "representationType": "accessible-transition",
+  "representationType": "late-transition",
   "misconceptionTargets": [
-    "線條顏色足以表達階段"
+    "把自然減少直接等同人口總減少"
   ],
   "provenance": {
     "status": "original",
@@ -74,13 +74,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "若圖使用階段編號，應說明編號只是分析框架。 正確選項「各時段出生死亡率相對高低、差距、自然增加與假設」可由題幹推出，因為可重建模型變化。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "人口轉型資料先回答自然增加，再另問遷移是否改變總量。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "另附率值表比僅有曲線更可檢核。 逐項排除其他選項：「只說兩線不同顏色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列最後階段」失去轉型序列。 這項內容無法支持題幹所要求的地理判斷。；「省略時間方向」模型依賴時序。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二使用模型中的率，也保留未提供遷移資料的不確定性。",
       "status": "pass"
     }
   ],

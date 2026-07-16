@@ -12,43 +12,43 @@
     "AUTH-SOCIAL-LP-SOC-3B-4-3"
   ],
   "stimulusId": null,
-  "stem": "等壓線圖的非視覺替代應提供什麼？",
+  "stem": "甲乙兩區等壓線同樣密集，但甲為平坦海面、乙為高山谷地。可以直接斷言兩地實際風速相同嗎？",
   "options": [
-    "只列藍紅顏色",
-    "只說風很大",
-    "刪除比例尺",
-    "各線數值、間隔、中心高低、區域線距與測站風"
+    "可以，海拔不會影響任何風場",
+    "不可以，因等壓線與風勢完全無關",
+    "可以，線距相同就保證風速完全相同",
+    "不可以，梯度線索相近但摩擦與地形仍會改變實際風"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不夠。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "高山地形可阻擋、導引或加速氣流。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "籠統且無位置。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "等壓線疏密與壓力梯度有關，並非毫無風勢資訊。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "實距比較需比例尺。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "等壓線密度只提供氣壓梯度線索，不能消除下墊面差異。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "數值與空間關係可判梯度及限制。"
+      "reason": "海面摩擦與山谷導流不同，實際風速方向仍需觀測。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "等壓圖可及性"
+    "梯度限制"
   ],
-  "representationType": "accessible-isobars",
+  "representationType": "terrain-wind",
   "misconceptionTargets": [
-    "顏色可取代氣壓數值"
+    "把等壓線密度當成實際風速唯一決定因子"
   ],
   "provenance": {
     "status": "original",
@@ -66,13 +66,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "可用區段表列壓差、實際距離與風速，供獨立核算。 正確選項「各線數值、間隔、中心高低、區域線距與測站風」可由題幹推出，因為數值與空間關係可判梯度及限制。",
+      "evidence": "以等壓線判風勢是初步比較，不是忽略地形與摩擦的精確預報。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "方向箭頭也需文字來向去向，不只靠圖示。 逐項排除其他選項：「只列藍紅顏色」顏色不夠。 這項內容無法支持題幹所要求的地理判斷。；「只說風很大」籠統且無位置。 這項內容無法支持題幹所要求的地理判斷。；「刪除比例尺」實距比較需比例尺。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案二保留氣壓梯度的用途，也指出實際風場的限制。",
       "status": "pass"
     }
   ],

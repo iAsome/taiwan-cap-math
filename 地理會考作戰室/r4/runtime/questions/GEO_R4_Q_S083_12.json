@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-2"
   ],
   "stimulusId": null,
-  "stem": "通勤流量圖的無障礙替代應包含什麼？",
+  "stem": "核心區住房負擔百分之四十二、交通百分之八；外郊住房百分之二十三、交通百分之二十二。只說外郊住房便宜，會忽略什麼？",
   "options": [
-    "只說箭頭是紅色",
-    "只列最大流",
-    "省略反向流",
-    "起終點、運具、時段、人數、時間、費用與方向"
+    "核心區交通負擔一定高於外郊",
+    "外郊總負擔只有百分之二十三",
+    "住房成本下降必然使所有家庭受益",
+    "外郊住房與交通合計百分之四十五，且通勤時間更長"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "表中核心交通百分之八，低於外郊百分之二十二。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "掩蓋其他地區。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "百分之二十三只列住房，漏掉交通百分之二十二。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "雙向可能不同。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "不同運具與家庭條件會產生不同結果，不能宣稱全體受益。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "能重建流動與負擔。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "外郊交通負擔抵銷部分住房節省，還伴隨較長通勤時間。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "通勤圖可及性"
+    "聯合負擔"
   ],
-  "representationType": "accessible-commute",
+  "representationType": "housing-transport-cost",
   "misconceptionTargets": [
-    "箭頭顏色可取代人數與方向"
+    "只看住房負擔判斷郊區較便宜"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "箭頭寬若代表人數需給數值圖例。 正確選項「起終點、運具、時段、人數、時間、費用與方向」可由題幹推出，因為能重建流動與負擔。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "比較居住區位要把住房與交通視為聯合成本，不能只挑較低的一欄。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "資料表可按時段分頁但保持一致欄位。 逐項排除其他選項：「只說箭頭是紅色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列最大流」掩蓋其他地區。 這項內容無法支持題幹所要求的地理判斷。；「省略反向流」雙向可能不同。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一依表加總並納入通勤時間，呈現外郊生活的完整取捨。",
       "status": "pass"
     }
   ],

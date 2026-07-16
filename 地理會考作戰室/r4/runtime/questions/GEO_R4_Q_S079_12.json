@@ -15,43 +15,43 @@
     "AUTH-SOCIAL-LP-GEO-1B-4-2"
   ],
   "stimulusId": null,
-  "stem": "聚落分布圖的文字替代應包含什麼？",
+  "stem": "一群住宅沿河谷道路連續排列，戶距短，但沒有醫院、商場等高階機能。最合理的描述為何？",
   "options": [
-    "只說點是黑色",
-    "只列行政區名",
-    "省略比例尺",
-    "每個聚落或網格的位置、人口、住屋密度、道路與主要機能"
+    "一定是散村，因位於河谷",
+    "一定是大都市，因住屋相鄰",
+    "沒有高階機能就不能稱為聚落",
+    "屬沿線集中聚落，不能只因住宅集中就判為都市"
   ],
   "answerIndex": 3,
   "optionRationales": [
     {
       "optionIndex": 0,
       "isCorrect": false,
-      "reason": "顏色不足。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "戶距短且連續排列不符合住宅分散的散村特徵。"
     },
     {
       "optionIndex": 1,
       "isCorrect": false,
-      "reason": "缺空間細節。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "住宅集中不足以證明人口規模與都市機能達到大都市。"
     },
     {
       "optionIndex": 2,
       "isCorrect": false,
-      "reason": "距離判讀需要尺度。 這項內容無法支持題幹所要求的地理判斷。"
+      "reason": "聚落可以是村落或小鎮，不必具備高階都市服務。"
     },
     {
       "optionIndex": 3,
       "isCorrect": true,
-      "reason": "能判集散與交通關係。 這項證據可直接支持題幹所要求的地理判斷。"
+      "reason": "住宅沿交通線集中描述空間型態，高階機能則是都市層級的另一面向。"
     }
   ],
   "difficulty": "transfer",
   "cognitiveProcess": [
-    "聚落圖可及性"
+    "型態分類"
   ],
-  "representationType": "accessible-settlement-map",
+  "representationType": "linear-settlement",
   "misconceptionTargets": [
-    "點色可取代人口與位置資料"
+    "把住宅集中直接等同大都市"
   ],
   "provenance": {
     "status": "original",
@@ -72,13 +72,13 @@
     {
       "reviewerRole": "geography-solution-review",
       "derivedAnswerIndex": 3,
-      "evidence": "大量點可按區域摘要並附完整資料表。 正確選項「每個聚落或網格的位置、人口、住屋密度、道路與主要機能」可由題幹推出，因為能判集散與交通關係。 這項證據可直接支持題幹所要求的地理判斷。",
+      "evidence": "把分布型態與聚落層級分開判斷，兩者不能由同一外觀互相代替。",
       "status": "pass"
     },
     {
       "reviewerRole": "geography-alternative-answer-review",
       "derivedAnswerIndex": 3,
-      "evidence": "逐項排除其他選項：「只說點是黑色」顏色不足。 這項內容無法支持題幹所要求的地理判斷。；「只列行政區名」缺空間細節。 這項內容無法支持題幹所要求的地理判斷。；「省略比例尺」距離判讀需要尺度。 這項內容無法支持題幹所要求的地理判斷。；因此沒有同樣成立的替代答案。",
+      "evidence": "答案一保留沿線集中的證據，也限制對都市化程度的推論。",
       "status": "pass"
     }
   ],
