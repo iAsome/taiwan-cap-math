@@ -1781,6 +1781,12 @@ function lectureFor(skill, family, guide, questions) {
 function questionsFor(skill, family, guide) {
   const concreteQuestions = concreteFoundationQuestions(skill);
   if (concreteQuestions) return concreteQuestions;
+  const readingQuestions = readingPracticeQuestions(skill);
+  if (readingQuestions) return readingQuestions;
+  const functionalQuestions = functionalPracticeQuestions(skill);
+  if (functionalQuestions) return functionalQuestions;
+  const poetryQuestions = poetryPracticeQuestions(skill);
+  if (poetryQuestions) return poetryQuestions;
   const serial = skill.id.slice(-3);
   return QUESTION_FRAMES.map((frame, questionIndex) => {
     const answerIndex = questionIndex % 4;
@@ -1894,7 +1900,7 @@ function stimulusFor(index) {
     provenance: sourceProvenance(readingSkills[index % readingSkills.length].authorityRefs),
     accessibility: { language: "zh-Hant-TW", textAlternativeComplete: true },
     assets: [],
-    facts: { person, place, focus, action, evidence, result, rejected, genre },
+    facts: { person, place, focus, action, evidence, result, rejected, genre, variant },
   };
 }
 
@@ -1943,6 +1949,477 @@ function stimulusQuestionsFor(stimulus, index) {
 const rawStimuli = Array.from({ length: 320 }, (_, index) => stimulusFor(index));
 const stimuli = rawStimuli.map(({ facts, ...stimulus }) => stimulus);
 const stimulusQuestions = rawStimuli.flatMap((stimulus, index) => stimulusQuestionsFor(stimulus, index));
+
+const READING_REPRESENTATIONS = Object.freeze({
+  106: "narrative-elements", 107: "narrative-causality", 108: "narrative-order", 109: "narrative-viewpoint",
+  110: "character-inference", 111: "narrative-turning-point", 112: "narrative-theme",
+  113: "expository-subject", 114: "expository-method", 115: "expository-structure", 116: "text-data-integration",
+  117: "fact-opinion-distinction", 118: "process-order", 119: "evidence-boundary",
+  120: "argument-components", 121: "evidence-type", 122: "evidence-relevance", 123: "argument-technique",
+  124: "missing-premise", 125: "viewpoint-comparison", 126: "claim-scope",
+});
+
+function narrativePracticeSpec(serial, stimulus) {
+  const { person, place, focus, action, evidence, result, rejected, variant } = stimulus.facts;
+  const bySerial = {
+    106: {
+      stem: `閱讀選文後，哪一項正確配對核心人物、場域與事件？（人物：${person}；線索：${focus}）`,
+      correct: `${person}在${place}面對${focus}的處理爭議，改用可複查資料判斷。`,
+      wrong: [`${person}離開${place}後才第一次聽說${focus}。`, `事件主角是未具名的旁人，${person}沒有採取任何行動。`, `全文事件是${person}故意製造${focus}以測試大家。`],
+      reason: `選文以${person}在${place}處理${focus}為事件主軸。`,
+    },
+    107: {
+      stem: `依選文內容，哪一條因果鏈最完整？（事件：${person}處理${focus}）`,
+      correct: `現場說法不足以判斷→${person}${action}→核對${evidence}→${result}。`,
+      wrong: [`${result}→所以${person}${rejected}。`, `${person}${action}→因此不必核對任何資料。`, `旁人意見不一→刪除原始紀錄→${result}。`],
+      reason: "這條鏈依序連起問題、處理、證據與結果，沒有顛倒因果。",
+    },
+    108: {
+      stem: `這篇以${person}處理${focus}為主的敘事，主要採用哪一種次序？`,
+      correct: ["順敘：由發現問題寫到查核與結果。", "倒敘：先寫結果，再回頭補述發現與查核經過。", "順敘：事件向前推進，對話用來呈現爭點。", "順敘：依筆記由事實、行動寫到結論。"][variant],
+      wrong: variant === 1
+        ? ["順敘，全文完全依發生先後書寫。", "插敘，主線中加入一段與事件無關的往事。", "補敘，結尾才補出會推翻前文的新主角。"]
+        : ["倒敘，開頭先完整交代處理結果再回顧。", "插敘，主線中斷後改寫另一人的童年。", "補敘，事件結束後才補出改變結局的隱藏事實。"],
+      reason: variant === 1 ? "首句先交代結果，後文才回溯發現、爭議與查核過程。" : "選文依發現問題、採取行動、核對證據與得到結果的方向推進。",
+    },
+    109: {
+      stem: `根據敘事者提供的資訊，對${person}處理${focus}一事，哪項推論沒有超出視角限制？`,
+      correct: `${person}重視可查紀錄；這可由「${action}」和核對資料的行動支持。`,
+      wrong: [`現場每個人內心都早已認定${person}必定正確。`, `${person}知道所有未出場人物過去對${focus}的想法。`, `敘事者證明全世界遇到同類事件都會有相同結果。`],
+      reason: "正解只由可見行動推論人物態度，沒有捏造他人內心或無限擴大範圍。",
+    },
+    110: {
+      stem: `由${person}面對${focus}爭議時的行動，最能推知他當下抱持何種態度？`,
+      correct: `審慎而克制，先保存線索並查核，再接受結論。`,
+      wrong: [`急於取悅旁人，所以不看資料就附和。`, `冷漠逃避，從頭到尾拒絕處理事件。`, `得意自滿，因為一開始就掌握所有人的想法。`],
+      reason: `「${action}」顯示${person}沒有被爭論帶著走，而是審慎核對。`,
+    },
+    111: {
+      stem: `哪個事件是這篇敘事由爭議轉向解決的關鍵？（對象：${focus}）`,
+      correct: `${person}不再比較誰的聲音大，轉而${action}並核對${evidence}。`,
+      wrong: [`有人一開始主張「${rejected}」。`, `${place}原本就存在，且名稱沒有改變。`, `事件結束後，讀者才看見文章最後一個句號。`],
+      reason: "查核行動改變了判斷方式，也直接導向後文的具體結果。",
+    },
+    112: {
+      stem: `用關鍵事件概括${person}處理${focus}的主旨，哪項最完整？`,
+      correct: `面對影響他人的判斷，保留並核對可複查證據，比依聲量或印象下結論可靠。`,
+      wrong: [`只要在${place}發生的事，都應由${person}一人決定。`, `任何問題都必須蒐集無限多資料，永遠不能結案。`, `${focus}本身證明所有人的第一印象一定錯誤。`],
+      reason: "正解統整了爭議、查核與結果，且把結論限在文本能支持的範圍。",
+    },
+  };
+  return bySerial[serial];
+}
+
+function expositoryPracticeSpec(serial, stimulus, questionIndex) {
+  const { person, place, focus, action, evidence, result, rejected, variant } = stimulus.facts;
+  const methods = ["舉例並依步驟說明", "比較兩種做法", "問題—解決", "問答分層"];
+  const structures = ["操作順序：提出原則後依序交代做法、核對與結果。", "比較結構：先並列兩種做法，再說明差異與結果。", "問題—解決：先指出資訊混雜，再提出查核方法與成效。", "問答結構：以連續問題分別說明禁忌、做法與成效。"][variant];
+  const before = 8 + (questionIndex % 4);
+  const after = 1 + (questionIndex % 3);
+  const bySerial = {
+    113: {
+      stem: `選文以${place}的${focus}為例，主要說明對象與核心特徵是什麼？`,
+      correct: `說明處理${focus}的查核流程，核心是分開觀察、推測與結論。`,
+      wrong: [`介紹${person}所有求學經歷與興趣。`, `證明${place}從此不會再出現任何問題。`, `比較${focus}的外觀是否比其他物品美。`],
+      reason: "各段都在交代做法、核對資料及可驗證結果。",
+    },
+    114: {
+      stem: `作者說明${focus}時，主要使用哪一種說明方法？`,
+      correct: methods[variant],
+      wrong: methods.filter((_, index) => index !== variant),
+      reason: `全文的段落標記與句間關係符合「${methods[variant]}」。`,
+    },
+    115: {
+      stem: `下列哪一項最能描述這篇${focus}說明的整體架構？`,
+      correct: structures,
+      wrong: ["人物傳記：依年代交代出生、求學與工作。", "景物描寫：只按遠近排列顏色與聲音。", "抒情轉折：由歡樂突然轉為哀傷，沒有說明步驟。"],
+      reason: `選文第${variant + 1}種變式的句間關係，正是答案所述的組織方式。`,
+    },
+    116: {
+      stem: `把選文與資料表一起讀：同類案件需重新查核的項目｜只憑印象：${before}項｜採「${action}」：${after}項。哪項解讀最恰當？`,
+      correct: `在這批同類案件中，採可複查流程後需重查項目由${before}項降為${after}項；這與選文重視${evidence}的方向一致。`,
+      wrong: [`所有地方只要採此流程，重查項目必定永遠為零。`, `表中${before}比${after}大，所以${focus}本身一定有害。`, `資料表沒有列人物心情，因此完全不能和正文互相參照。`],
+      reason: "正解同時保留表格的比較基準、數值與個案範圍，並連回正文方法。",
+    },
+    117: {
+      stem: `關於${person}處理${focus}的說明，哪一句屬於可直接查核的客觀資訊？`,
+      correct: `${person}核對的項目包括${evidence}。`,
+      wrong: [`${person}的做法是世上最完美的方法。`, `${focus}顯然是${place}最討厭的東西。`, `每位讀者都一定覺得查核過程十分感人。`],
+      reason: "正解可回到選文列出的核對項目；其他選項都是未提供標準的評價。",
+    },
+    118: {
+      stem: `若依選文重組處理${focus}的操作，哪個順序正確？`,
+      correct: `確認問題與資料來源→${action}→比對${evidence}→記錄「${result}」。`,
+      wrong: [`先宣布${result}→刪除原始資料→猜測問題。`, `${rejected}→省略核對→把印象寫成結論。`, `只記${place}名稱→任意排列資料→不說處理結果。`],
+      reason: "正解依文本的問題、操作、核對與結果順序排列，每一步能驗收下一步。",
+    },
+    119: {
+      stem: `由這篇關於${focus}的資料，最多可以支持哪一項結論？`,
+      correct: `在${place}這個案例中，${action}並核對${evidence}，促成「${result}」。`,
+      wrong: [`任何情境採相同步驟都必然得到完全相同結果。`, `${person}的方法證明往後不必再更新任何資料。`, `只要反對「${rejected}」的人，其所有判斷都正確。`],
+      reason: "正解保留人物、地點、做法與結果的個案範圍，沒有把單例推成普遍定律。",
+    },
+  };
+  return bySerial[serial];
+}
+
+function argumentativePracticeSpec(serial, stimulus) {
+  const { person, place, focus, action, evidence, result, rejected, variant } = stimulus.facts;
+  const bySerial = {
+    120: {
+      stem: `閱讀${place}處理${focus}的議論，哪項正確區分論點、論據與論證？`,
+      correct: `論點是重要決定應讓核心證據可複查；論據是${person}核對${evidence}後得到「${result}」；作者以個案說明原則的可行性。`,
+      wrong: [`論點是${evidence}；論據是「快並不可靠」；兩者沒有關係。`, `論點和論據都是${person}的姓名，論證則是${place}地名。`, `只要文中有結論句，其他做法與資料都不算論據。`],
+      reason: "正解分別指出主張、可查事例及兩者間的支持關係。",
+    },
+    121: {
+      stem: `在這篇${focus}議論中，哪一項屬於事實論據而不是原則性主張？`,
+      correct: `${person}${action}，核對${evidence}後，實際出現「${result}」的結果。`,
+      wrong: ["影響他人的決定都應保留可複查證據。", "可靠比快速更值得優先考量。", "判斷標準不應隨個人偏好任意改變。"],
+      reason: "正解是文本記錄的個案行動與結果；其餘三項都是作者提出的規範或評價。",
+    },
+    122: {
+      stem: `若要支持「處理${focus}時應先查核再下結論」，哪項證據與論點最相關？`,
+      correct: `${person}以${evidence}核對後，${result}。`,
+      wrong: [`${place}的名稱共有${place.length}個字。`, `${person}偏好的顏色沒有寫在文章裡。`, `另一個城市去年舉辦過與本文無關的運動會。`],
+      reason: "正解直接呈現查核行動及其效果，能支持題述論點。",
+    },
+    123: {
+      stem: `若作者要用比喻補強${focus}一文中「證據支撐判斷」的關係，哪句作用最清楚？`,
+      correct: "證據像橋墩；每一根都能核對，結論這座橋才承受得住追問。",
+      wrong: ["證據像天空，因為兩者都可以是藍色。", "結論像鞋子，所以任何尺寸都適合任何人。", "查核像音樂，因此只要好聽就必然正確。"],
+      reason: "橋墩與橋的承重關係，能具體說明證據如何共同支撐可檢驗的結論。",
+    },
+    124: {
+      stem: `若有人把${place}處理${focus}的結果套到另一個案例，至少還缺哪個必要條件？`,
+      correct: `新案例的問題、可用證據與判斷後果，必須和本文案例具有可比較的關係。`,
+      wrong: [`新案例的負責人也必須叫${person}。`, `新案例的文字長度必須和本文完全一樣。`, `新案例只能發生在同一天的${place}。`],
+      reason: "要把個案推論移轉，需先建立問題與證據的可比性；姓名、篇幅和同日不是必要條件。",
+    },
+    125: {
+      stem: `文中對處理${focus}的兩種觀點，哪項比較正確？`,
+      correct: `一方偏向「${rejected}」以求快速；作者則主張${action}，並以${evidence}和結果支持後者。`,
+      wrong: [`雙方都主張刪除原始資料，只在用字上不同。`, `作者完全否認效率的重要，也拒絕設定查核範圍。`, `反方已提出比${evidence}更完整的資料，作者沒有回應。`],
+      reason: `正解同時交代反方做法、作者主張及作者所用的${evidence}。`,
+    },
+    126: {
+      stem: `根據${person}處理${focus}的論據，哪一項結論沒有超出證據範圍？`,
+      correct: variant === 1
+        ? `這個案例顯示可複查流程值得優先考量，但單一事例不能證明所有情況。`
+        : `在本文案例與所列標準下，${action}比「${rejected}」更能支持可檢驗的決定。`,
+      wrong: [`任何人只要查過一次資料，此後所有結論都必然正確。`, `${place}的成功證明全世界都應使用完全相同程序。`, `因為本文支持查核，所以速度與成本在任何情況都不必考慮。`],
+      reason: "正解保留個案、證據與條件限制；三個干擾項都把有限論據擴大為絕對結論。",
+    },
+  };
+  return bySerial[serial];
+}
+
+function practiceTextFor(genre, facts, variant) {
+  const { person, place, focus, action, evidence, result, rejected } = facts;
+  const texts = {
+    narrative: [
+      `${person}在${place}發現${focus}引起爭論，先沒有跟著眾人猜測，而是${action}。等到${evidence}相互吻合，${result}。他這才明白，判斷得快不如留下能回頭查的依據。`,
+      `${result}。幾天後，${person}才說起事情的開端：他在${place}遇到${focus}，有人提議${rejected}。他沒有照做，改成${action}，並以${evidence}一步步排除誤判。`,
+      `「先照大家說的做，不就好了？」有人指著${focus}問。${person}站在${place}回答：「至少先看看留下了什麼紀錄。」他隨後${action}，把${evidence}逐項標記；最後，${result}。`,
+      `${person}的紀錄分成三欄。第一欄寫「地點：${place}；對象：${focus}」；第二欄才記「${action}」；直到核對${evidence}後，第三欄才補上「${result}」。事實與結論因此沒有混在一起。`,
+    ],
+    expository: [
+      `處理${focus}時，第一印象不是充分依據。以${person}在${place}的紀錄為例：先${action}，再比較${evidence}，最後得到「${result}」的結果。這個流程把觀察、推測與結論分開。`,
+      `面對${focus}，一種做法是${rejected}，雖然省時，卻難以複查；另一種是${person}在${place}${action}，再核對${evidence}。後一種做法最後使${result}，兩者差異在於有沒有留下可驗證資料。`,
+      `${place}原先的問題，是大家對${focus}各有說法，卻沒有共同基準。${person}提出的解決方式是${action}，並將${evidence}列為核對項目。執行後，${result}，原先的資訊混亂也有了可追查的處理紀錄。`,
+      `問：發現${focus}後，為何不能${rejected}？答：因為這樣無法確認資料來源。問：${person}在${place}如何處理？答：${action}，並核對${evidence}。問：結果如何？答：${result}。`,
+    ],
+    argumentative: [
+      `有人認為，處理${focus}時，${rejected}最有效率。然而，${person}在${place}${action}，再以${evidence}查核，結果是${result}。這顯示會影響他人的決定，不能只以速度代替證據。`,
+      `${place}關於${focus}的經驗支持一項主張：先保留證據，再下結論，比依賴印象可靠。${person}${action}，而${evidence}讓別人也能核對，最後${result}。單一案例不能證明所有情況，卻足以說明此原則在本案的作用。`,
+      `當然，每件事都無限查下去會浪費時間；但這不表示遇到${focus}就可${rejected}。${person}只做有界線的查核：${action}，並比對與決定直接相關的${evidence}，便使${result}。重點是證據足夠，不是數量無限。`,
+      `評估${focus}的處理，可看三點：是否保護當事人、資料能否複查、結果是否回應問題。「${rejected}」沒有通過複查這一項；相較之下，${person}在${place}${action}，並以${evidence}說明決定，最後${result}。`,
+    ],
+  };
+  return texts[genre][variant];
+}
+
+function readingPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  const genre = serial >= 106 && serial <= 112 ? "narrative" : serial <= 119 && serial >= 113 ? "expository" : serial <= 126 && serial >= 120 ? "argumentative" : null;
+  if (!genre) return null;
+  const skillOffset = serial - (genre === "narrative" ? 106 : genre === "expository" ? 113 : 120);
+  return Array.from({ length: 12 }, (_, questionIndex) => {
+    const stimulusIndex = (serial - 106) * 12 + questionIndex;
+    const sourceStimulus = rawStimuli[stimulusIndex];
+    const variant = (skillOffset + questionIndex) % 4;
+    const stimulus = { ...sourceStimulus, facts: { ...sourceStimulus.facts, variant } };
+    const practiceText = practiceTextFor(genre, stimulus.facts, variant);
+    const spec = genre === "narrative" ? narrativePracticeSpec(serial, stimulus) : genre === "expository" ? expositoryPracticeSpec(serial, stimulus, questionIndex) : argumentativePracticeSpec(serial, stimulus);
+    const answerIndex = questionIndex % 4;
+    const rawOptions = [spec.correct, ...spec.wrong];
+    const options = rotate(rawOptions, answerIndex);
+    const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["這項說法顛倒或遺漏選文的明示關係。", "這項說法加入選文沒有提供的人物動機、範圍或事實。", "這項說法把有限個案過度擴大，或使用與問題無關的線索。"][index]])]);
+    return {
+      id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
+      subject: "chinese",
+      skillIds: [skill.id],
+      authorityRefs: [...skill.authorityRefs],
+      stimulusId: null,
+      stem: `【選文】${practiceText}\n\n${spec.stem}`,
+      options,
+      answerIndex,
+      optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: rationaleByOption.get(option) })),
+      difficulty: DIFFICULTIES[questionIndex],
+      cognitiveProcess: questionIndex < 3 ? ["locate", "comprehend"] : questionIndex < 7 ? ["apply", "analyze"] : ["analyze", "evaluate", "transfer"],
+      representationType: READING_REPRESENTATIONS[serial],
+      misconceptionTargets: [spec.wrong[0]],
+      provenance: sourceProvenance(skill.authorityRefs),
+      independentReviews: [
+        { reviewerRole: "chinese-reading-solution-review", derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
+        { reviewerRole: "chinese-reading-alternative-review", derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別顛倒文本關係、加入未提供資訊，或把個案結論過度擴大。", status: "pass" },
+      ],
+      assets: [],
+    };
+  });
+}
+
+const FUNCTIONAL_CASES = Object.freeze([
+  { person: "子晴", recipient: "八年級志工", event: "閱讀陪伴志工培訓", date: "九月十二日", time: "下午一時三十分", altTime: "上午九時", place: "學校圖書館研習室", purpose: "練習提問與傾聽", experience: "曾替社區共讀活動設計由易到難的提問卡", result: "完成分組演練與回饋紀錄" },
+  { person: "宇安", recipient: "自行車通勤學生", event: "自行車安全工作坊", date: "十月五日", time: "上午十時", altTime: "下午三時", place: "校門穿堂", purpose: "辨識視線死角並練習手勢", experience: "連續兩週記錄校門前轉彎車流與危險時段", result: "提出三處警示線改善建議" },
+  { person: "庭瑄", recipient: "社區長者與學生", event: "老照片數位整理日", date: "十月十八日", time: "下午二時", altTime: "上午八時", place: "里民活動中心", purpose: "核對照片年份與人物資訊", experience: "把兩次訪談的時間碼和照片背面字跡做成對照表", result: "改正四張圖說的年代" },
+  { person: "柏翰", recipient: "自然社社員", event: "菜園土壤觀察", date: "十一月三日", time: "上午八時三十分", altTime: "下午四時", place: "校園菜園", purpose: "統一採樣深度與記錄單位", experience: "發現不同組混用公克與公斤，重新換算後修正圖表", result: "完成可重做的採樣流程" },
+  { person: "雅文", recipient: "家庭採買者", event: "市場單位價格小教室", date: "十一月十六日", time: "上午九時", altTime: "下午一時", place: "傳統市場服務台", purpose: "比較每台斤與每公斤價格", experience: "實地抄錄價格牌並換成同一重量基準", result: "製作一張不只看數字大小的比較卡" },
+  { person: "承恩", recipient: "夜間觀察隊員", event: "校園夜間生態觀察", date: "十二月二日", time: "晚上七時", altTime: "下午五時", place: "校園生態池入口", purpose: "降低燈光與聲音對動物的干擾", experience: "先比較手電筒不同亮度下的觀察距離與動物反應", result: "訂出不照射眼睛的觀察守則" },
+  { person: "品妤", recipient: "戲劇社演員", event: "舞臺換景聯排", date: "十二月十四日", time: "下午四時十分", altTime: "中午十二時", place: "學校禮堂", purpose: "確認布景、音響與人員的切換順序", experience: "把兩組共用器材的等待時間畫成流程圖", result: "重新安排三段不互相阻塞的換景" },
+  { person: "祐晨", recipient: "搭乘公車的里民", event: "公車轉乘需求調查", date: "一月八日", time: "下午六時", altTime: "上午十時", place: "社區大廳", purpose: "蒐集班次銜接與候車需求", experience: "比對紙本班表、電子站牌與官方更新日期", result: "刪除兩筆引用過期班表的建議" },
+  { person: "思妍", recipient: "首次到館讀者", event: "圖書館觸覺動線測試", date: "二月二十日", time: "下午二時三十分", altTime: "上午十一時", place: "學校圖書館一樓", purpose: "檢查入口到服務臺的無障礙指引", experience: "邀請使用者實走並記錄每次停頓的位置", result: "調整兩處指標高度與文字順序" },
+  { person: "冠宇", recipient: "河川觀察小組", event: "河岸水質記錄說明", date: "三月六日", time: "上午九時三十分", altTime: "下午二時", place: "河岸步道觀察站", purpose: "固定採水位置、時間與單位", experience: "把三組原始讀值和天氣紀錄逐筆核對", result: "排除一筆抄錯小數點的資料" },
+  { person: "雨潔", recipient: "地方文史展志工", event: "口述歷史圖說校對", date: "三月二十二日", time: "下午一時", altTime: "上午九時三十分", place: "地方文史室", purpose: "分開受訪者回憶與可查史料", experience: "用舊報廣告與門牌整編表核對訪談內容", result: "在圖說中並列舊址與今日位置" },
+  { person: "昱廷", recipient: "運動會服務人員", event: "失物招領隱私演練", date: "四月十日", time: "下午三時", altTime: "上午八時", place: "運動會服務台", purpose: "設計不公開個資的核對流程", experience: "把證件號碼、發現地點與領回簽收分成不同權限", result: "完成一份遮蔽敏感欄位的招領表" },
+]);
+
+const LETTER_CONVENTIONS = Object.freeze([
+  ["指導老師", "陳老師道鑒", "學生子晴敬上；敬祝　教安"],
+  ["同年朋友", "宇安惠鑒", "好友庭瑄敬上；順頌　時祺"],
+  ["祖父", "祖父大人尊前", "孫兒柏翰敬上；敬祝　福安"],
+  ["父母", "父母親大人膝下", "女兒雅文敬上；敬祝　福安"],
+  ["學弟", "承恩學弟知悉", "學姊品妤敬上；順祝　近好"],
+  ["任教老師", "林老師道鑒", "學生祐晨敬上；敬祝　教安"],
+  ["同年筆友", "思妍惠鑒", "筆友冠宇敬上；順頌　時祺"],
+  ["外祖母", "外祖母大人尊前", "外孫女雨潔敬上；敬祝　福安"],
+  ["父親", "父親大人膝下", "兒昱廷敬上；敬祝　福安"],
+  ["社團學妹", "芷寧學妹知悉", "學長哲宇敬上；順祝　近好"],
+  ["導師", "王老師道鑒", "學生宥心敬上；敬祝　教安"],
+  ["同年同學", "家豪惠鑒", "同學子晴敬上；順頌　時祺"],
+]);
+
+function functionalPracticeSpec(serial, item, index) {
+  const [relation, heading, ending] = LETTER_CONVENTIONS[index];
+  const formats = ["便條", "書信", "公告", "新聞稿", "自傳", "簡報或演講稿"];
+  const requestedFormat = formats[index % formats.length];
+  const scenarioByFormat = {
+    便條: `臨時留話給${item.recipient}，交代今天${item.time}前到${item.place}領取${item.event}資料。`,
+    書信: `向長期協助自己的老師說明參加${item.event}後的收穫並致謝。`,
+    公告: `向全體${item.recipient}公開${item.event}的日期、時間、地點與參加方式。`,
+    新聞稿: `向媒體說明${item.event}已完成的經過與「${item.result}」成果。`,
+    自傳: `申請與${item.purpose}有關的服務職務，交代個人經歷與能力。`,
+    "簡報或演講稿": `在五分鐘口頭報告中依層次介紹${item.event}的問題、方法與結果。`,
+  };
+  const bySerial = {
+    127: {
+      stem: `寄信者要寫信給${relation}，正文說明「${item.event}」。哪組稱謂、提稱語與結尾身分最合宜？`,
+      correct: `${heading}；${ending}`,
+      wrong: [`${item.person}同學知悉；老師敬上；敬祝　教安`, `親愛的本人道鑒；收信人${item.person}敬上`, `${heading}；收信者敬上；敬祝　商祺`],
+      reason: `正解的稱謂、提稱語、署名身分與祝福語都和「寫給${relation}」的關係一致。`,
+    },
+    128: {
+      stem: `${item.person}要留便條給${item.recipient}，請對方參加${item.event}。哪張便條的對象、事項與時間最完整？`,
+      correct: `${item.recipient}：請於${item.date}${item.time}到${item.place}參加${item.event}，若無法出席請先回覆。${item.person}留。`,
+      wrong: [`請來參加，時間地點以後再說。${item.person}。`, `${item.recipient}：${item.event}改在${item.altTime}，但日期與地點都不必確認。`, `給不明收件人：昨天到另一處辦理未說明的事情。`],
+      reason: "正解明列收件對象、事項、日期、時間、地點、回覆方式與留話者。",
+    },
+    129: {
+      stem: `校刊要把「${item.event}」改寫成新聞稿導言。已知活動於${item.date}${item.time}在${item.place}舉行，由${item.person}帶領${item.recipient}，成果是${item.result}。哪個導言資訊最完整？`,
+      correct: `${item.date}${item.time}，${item.person}在${item.place}帶領${item.recipient}進行${item.event}，以${item.purpose}為目標，並完成「${item.result}」。`,
+      wrong: [`昨天有一件很棒的事，大家都非常開心。`, `${item.person}宣布所有類似活動從此都已完成。`, `${item.event}曾在某處舉行，但人物、日期與成果一律省略。`],
+      reason: "正解交代人、事、時、地、目的與結果，且沒有添加超出資料的評價。",
+    },
+    130: {
+      stem: `${item.person}要申請協助「${item.purpose}」的志工。自傳應優先選哪項經歷並如何說明？`,
+      correct: `寫入「${item.experience}」，並說明這項經驗如何培養查核、協作或記錄能力。`,
+      wrong: [`只列最喜歡的顏色，不解釋和職務的關係。`, `抄寫家人所有職業，卻不說自己的參與。`, `虛構從未做過的得獎經歷，以增加篇幅。`],
+      reason: "正解選材真實且和申請目的直接相關，還說明了經驗與能力的連結。",
+    },
+    131: {
+      stem: `${item.person}要用簡報介紹${item.event}。哪組層次標示最能讓聽眾掌握內容？`,
+      correct: `一、問題與目的：${item.purpose}；二、執行方法：${item.experience}；三、成果：${item.result}；四、後續檢核。`,
+      wrong: [`一、成果；一、目的；一、無關故事；一、再說一次成果。`, `標題只有「很好」，每頁放滿未分類句子。`, `先讀完所有資料來源，再到最後一秒才說報告主題。`],
+      reason: "正解以一致層級依問題、方法、結果與後續推進，標題能預告各段功能。",
+    },
+    132: {
+      stem: `情境是：「${scenarioByFormat[requestedFormat]}」最合宜的應用文格式為何？`,
+      correct: requestedFormat,
+      wrong: formats.filter((format) => format !== requestedFormat).slice(0, 3),
+      reason: `此情境的對象、傳遞方式與目的最符合「${requestedFormat}」的功能。`,
+    },
+    133: {
+      stem: `核准資料寫「${item.event}，${item.date}${item.time}，地點：${item.place}」；草稿卻寫成「${item.date}${item.altTime}，地點：${item.place}」。完稿前應如何處理？`,
+      correct: `把草稿時間改為${item.time}，並逐項核對標題、日期、地點與受眾是否都和核准資料一致。`,
+      wrong: [`保留${item.altTime}，因為草稿字體較大。`, `同時刊出兩個時間，不說哪一個有效。`, `刪除日期與地點，讓讀者自行猜測。`],
+      reason: "核准資料提供明確版本，正解訂正衝突欄位並要求完成全欄一致性複核。",
+    },
+  };
+  return bySerial[serial];
+}
+
+function functionalPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 127 || serial > 133) return null;
+  const representationType = ["letter-convention", "note-information", "news-lead", "autobiography-selection", "presentation-structure", "functional-format", "document-consistency"][serial - 127];
+  return FUNCTIONAL_CASES.map((item, questionIndex) => {
+    const spec = functionalPracticeSpec(serial, item, questionIndex);
+    const answerIndex = questionIndex % 4;
+    const rawOptions = [spec.correct, ...spec.wrong];
+    const options = rotate(rawOptions, answerIndex);
+    const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["這項缺少必要欄位，或稱謂與收發關係不合。", "這項和題目提供的時間、目的或資料版本互相衝突。", "這項選錯文體功能，或加入原資料沒有的內容。"][index]])]);
+    return {
+      id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
+      subject: "chinese",
+      skillIds: [skill.id],
+      authorityRefs: [...skill.authorityRefs],
+      stimulusId: null,
+      stem: spec.stem,
+      options,
+      answerIndex,
+      optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: rationaleByOption.get(option) })),
+      difficulty: DIFFICULTIES[questionIndex],
+      cognitiveProcess: questionIndex < 3 ? ["identify", "comprehend"] : questionIndex < 7 ? ["apply", "analyze"] : ["analyze", "evaluate", "transfer"],
+      representationType,
+      misconceptionTargets: [spec.wrong[0]],
+      provenance: sourceProvenance(skill.authorityRefs),
+      independentReviews: [
+        { reviewerRole: "chinese-functional-solution-review", derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
+        { reviewerRole: "chinese-functional-alternative-review", derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別缺欄、和核准資料衝突，或選錯對象與格式。", status: "pass" },
+      ],
+      assets: [],
+    };
+  });
+}
+
+const POEM_SEEDS = Object.freeze([
+  { place: "清晨的公車站", image: "褪色班次表", motion: "被風掀起一角", detail: "第一班車的燈穿過薄霧", turn: "我改看今天剛更新的站牌", theme: "接受變動仍要查清方向", emotion: "從猶疑轉為安定", symbol: "舊班次表象徵熟悉卻可能失效的依靠", event: "等車的人收起抄錯時間的紙條", refrain: "再看一眼", sound: "車門輕響" },
+  { place: "雨夜的窗邊", image: "沒有寄出的卡片", motion: "在檯燈下捲起紙角", detail: "雨點逐格敲過玻璃", turn: "我把責怪的一句改成詢問", theme: "停下來理解比急著辯解重要", emotion: "由委屈走向願意傾聽", symbol: "未寄卡片象徵尚可修正的關係", event: "寫信的人重新讀完爭執前的對話", refrain: "先別寄出", sound: "雨聲細密" },
+  { place: "傍晚的圖書館", image: "夾在書頁間的車票", motion: "隨翻頁露出半截日期", detail: "還書箱吞下一本又一本書", turn: "我在票背寫下借書人的一句提醒", theme: "閱讀讓陌生人的經驗彼此傳遞", emotion: "由意外轉為溫暖", symbol: "舊車票象徵偶然留下的生命路徑", event: "讀者把書籤移到真正需要回看的段落", refrain: "還有人讀過", sound: "紙頁沙沙" },
+  { place: "退潮後的海堤", image: "一雙沾沙的鞋", motion: "把細小水痕帶上石階", detail: "遠處浮標在灰光裡起落", turn: "我沒有追上那艘已轉彎的船", theme: "承認告別才能繼續自己的路", emotion: "由不捨轉為克制", symbol: "沾沙的鞋象徵離別後仍帶著共同記憶", event: "送行的人走到堤頂又停了一次", refrain: "慢一點走", sound: "浪聲反覆" },
+  { place: "清早的廚房", image: "少擺的一只飯碗", motion: "在蒸氣散去後顯得更白", detail: "電鍋跳起時沒有人催我盛飯", turn: "我照著紙條把剩菜分成兩盒", theme: "思念可化成延續日常的照顧", emotion: "由空缺的寂寞轉為踏實", symbol: "空碗象徵缺席者留下的生活位置", event: "家人第一次獨自準備早餐", refrain: "飯好了", sound: "鍋蓋微響" },
+  { place: "收攤後的夜市", image: "最後一盞黃燈", motion: "照著攤布上的水珠", detail: "鐵門一格一格往下", turn: "老闆仍彎腰撿起客人遺下的發票", theme: "看見熱鬧背後不被注意的勞動", emotion: "由新奇轉為敬重", symbol: "末盞燈象徵人群散去後仍持續的責任", event: "幫忙收攤的孩子把零錢重新分類", refrain: "還沒收完", sound: "鐵門鏗鏘" },
+  { place: "午後的月臺", image: "打了孔的舊車票", motion: "夾在透明票套裡晃動", detail: "廣播把班次念了兩遍", turn: "我改口只說路上小心", theme: "真正的關心不一定要挽留", emotion: "由急切轉為祝福", symbol: "剪孔車票象徵一段行程已經啟動", event: "送行的人把原本準備的長話收回", refrain: "車要開了", sound: "廣播迴盪" },
+  { place: "校園菜園", image: "剛冒出的兩片嫩葉", motion: "把雨珠托在葉緣", detail: "旁邊的標籤仍寫著播種日期", turn: "我們停止每天挖土查看", theme: "成長需要照料，也需要不打擾的等待", emotion: "由焦躁轉為耐心", symbol: "嫩葉象徵尚未完成卻已開始的改變", event: "小組把觀察改成固定時間拍照", refrain: "再等一天", sound: "水滴落土" },
+  { place: "老鐘錶店", image: "拆下的小齒輪", motion: "在掌心留下淡淡油痕", detail: "牆上十幾座鐘各走自己的秒", turn: "師傅要我先找出停住的那一格", theme: "傳承不是照抄答案，而是學會辨認問題", emotion: "由畏難轉為專注", symbol: "小齒輪象徵個人雖小仍能連動整體", event: "學徒第一次沒有急著更換整組零件", refrain: "先聽一秒", sound: "滴答交錯" },
+  { place: "雨後的河岸", image: "卡在草根的透明瓶", motion: "跟著水面明暗輕晃", detail: "白鷺停在較遠的沙洲", turn: "我先記下位置才戴手套取走它", theme: "關心環境要結合觀察與負責行動", emotion: "由不忍轉為冷靜實踐", symbol: "漂流瓶象徵被推給遠方的日常責任", event: "觀察者把垃圾種類與數量寫進紀錄", refrain: "別讓它漂走", sound: "水流低鳴" },
+  { place: "開演前的側臺", image: "尚未升起的布幕", motion: "在風口微微鼓動", detail: "提示燈熄了又亮", turn: "我聽見同伴在黑暗中數到三", theme: "勇氣不是不害怕，而是和別人一起行動", emotion: "由緊張轉為篤定", symbol: "未升布幕象徵行動前仍可選擇的門檻", event: "演員握緊道具後踏進第一束光", refrain: "數到三", sound: "幕繩摩擦" },
+  { place: "改建中的老街", image: "拆下的舊門牌", motion: "靠在新牆腳邊蒙著灰", detail: "地圖上的巷名已換成新字體", turn: "導覽員把舊址與現址同時標出", theme: "更新地方時也要留下可追索的記憶", emotion: "由陌生轉為理解", symbol: "舊門牌象徵地方變動中仍可辨認的歷史線索", event: "學生依年份排好三張不同地址的照片", refrain: "這裡曾經", sound: "鑽牆聲忽遠忽近" },
+]);
+
+function poetryPracticeSpec(serial, seed, index) {
+  const lineBreakVariant = index % 4;
+  const lineBreakPoems = [
+    `我把腳步\n留在${seed.place}\n不是忘記\n是讓${seed.image}\n替我${seed.motion}`,
+    `${seed.image}\n在${seed.place}\n一寸一寸\n${seed.motion}\n直到${seed.turn}`,
+    `還在\n${seed.sound}\n還在\n${seed.detail}\n我才${seed.turn}`,
+    `我沒有說完\n那句話\n被${seed.sound}\n送回${seed.place}\n只剩${seed.image}`,
+  ];
+  const lineBreakEffects = [
+    "「我把腳步」語意暫停，到下一行才落在地點，拉長不願離開的感受。",
+    "把「一寸一寸」獨立成行，突出變化緩慢，也讓讀者放慢閱讀速度。",
+    "兩個「還在」各自成行，形成回聲，強化景物持續而心境轉折的對照。",
+    "把「那句話」單獨成行，使未說出口的內容成為視線與情感焦點。",
+  ];
+  const poems = {
+    134: `${seed.place}收住了${seed.sound}\n${seed.image}${seed.motion}\n${seed.detail}\n直到${seed.turn}\n我才懂得：${seed.theme}`,
+    135: lineBreakPoems[lineBreakVariant],
+    136: `${seed.refrain}，讓${seed.image}${seed.motion}\n${seed.refrain}，聽${seed.sound}\n${seed.refrain}，直到${seed.turn}\n同一句話，已不是同一種心情`,
+    137: `${seed.place}裡，${seed.image}${seed.motion}\n我繞過它，又回頭\n${seed.detail}\n${seed.turn}\n它仍在原處，意思卻變了`,
+    138: `${seed.event}\n接著，${seed.detail}\n事情原可在這裡結束\n可是我看著${seed.image}\n才承認自己${seed.emotion}`,
+    139: `我站在${seed.place}\n只看見${seed.image}${seed.motion}\n只聽見${seed.sound}\n至於遠處的人為何沉默，我不知道\n我能說的是：我${seed.emotion}`,
+    140: `原句：${seed.image}${seed.motion}，${seed.sound}把${seed.place}拉得很長。\n改句：時間過去，${seed.event}。`,
+  };
+  const bySerial = {
+    134: {
+      stem: `閱讀原創短詩：\n${poems[134]}\n\n哪一項最能概括全詩主題？`,
+      correct: seed.theme,
+      wrong: [`介紹${seed.image}的製造尺寸與售價。`, `證明所有人到${seed.place}都會遇到相同事件。`, `主張只要忽略${seed.detail}就能解決任何問題。`],
+      reason: "結尾的理解回扣前文意象與轉折，正解能涵蓋整首詩而非單一物件。",
+    },
+    135: {
+      stem: `閱讀原創短詩：\n${poems[135]}\n\n這首詩的分行產生什麼效果？`,
+      correct: lineBreakEffects[lineBreakVariant],
+      wrong: ["分行只為讓每行字數相同，和語意節奏無關。", "每一次換行都表示事件已相隔一年。", "分行證明所有名詞都具有同一個象徵意義。"],
+      reason: lineBreakEffects[lineBreakVariant],
+    },
+    136: {
+      stem: `閱讀原創短詩：\n${poems[136]}\n\n反覆「${seed.refrain}」的主要作用是什麼？`,
+      correct: `以相同開頭連接${seed.image}、${seed.sound}與轉折，形成節奏並使${seed.emotion}逐步累積。`,
+      wrong: ["表示三行內容完全同義，可以任意刪掉後兩行。", "只為押字數，沒有參與語氣或情感變化。", `證明${seed.refrain}是客觀資料的計量單位。`],
+      reason: "反覆語句承接不同景象，意義隨各行推進而加深，不是機械重複。",
+    },
+    137: {
+      stem: `閱讀原創短詩：\n${poems[137]}\n\n依全詩線索，「${seed.image}」最可能承載什麼象徵意義？`,
+      correct: seed.symbol,
+      wrong: [`只表示${seed.image}的價格比其他物品高。`, `象徵所有人都必須離開${seed.place}。`, "沒有任何詩句線索，因此可以任意象徵任何事物。"],
+      reason: `意象在轉折前後反覆出現，並和「${seed.turn}」相連，支持正解的有限詮釋。`,
+    },
+    138: {
+      stem: `閱讀原創短詩：\n${poems[138]}\n\n哪一項正確區分敘事片段與抒情核心？`,
+      correct: `「${seed.event}」是可交代的事件；結尾由${seed.image}引出的「${seed.emotion}」才是抒情核心。`,
+      wrong: [`全詩只記日期與數量，沒有任何態度。`, `只要有事件，後面的心境句就一定與主題無關。`, `${seed.image}是人物姓名，所以不能形成意象。`],
+      reason: "正解分開外在事件和說話者對事件的內在回應，並指出兩者如何銜接。",
+    },
+    139: {
+      stem: `閱讀原創短詩：\n${poems[139]}\n\n對詩中說話者的觀點，哪項判斷最有依據？`,
+      correct: `說話者只陳述自己在${seed.place}所見所聞，並明說不知道遠處人物的內心，觀點有限。`,
+      wrong: ["說話者知道所有人物過去與未來的想法，是全知觀點。", `說話者完全不在${seed.place}，也沒有任何感官經驗。`, "詩中用了「我」，便能證明所有讀者都有相同心情。"],
+      reason: "詩句以「只看見、只聽見、不知道」明確界定第一人稱所能掌握的資訊。",
+    },
+    140: {
+      stem: `比較原創詩句的原句與改句：\n${poems[140]}\n\n哪項分析最恰當？`,
+      correct: `改句較直接交代「${seed.event}」，但刪去${seed.image}與${seed.sound}形成的感官畫面，節奏和情緒餘韻也較弱。`,
+      wrong: ["改句字數較少，所以必然比原句更有詩意。", "原句有意象，因此完全看不出時間與事件。", "兩句每個詞都相同，表達效果沒有任何差異。"],
+      reason: "正解同時比較資訊清楚度、意象、節奏與情感效果，沒有只按長短評價。",
+    },
+  };
+  return bySerial[serial];
+}
+
+function poetryPracticeQuestions(skill) {
+  const serial = Number(skill.id.slice(-3));
+  if (serial < 134 || serial > 140) return null;
+  const representationType = ["poem-theme", "line-break-effect", "repetition-and-sound", "poetic-symbol", "narrative-lyric-distinction", "speaker-viewpoint", "poetic-revision"][serial - 134];
+  return POEM_SEEDS.map((seed, questionIndex) => {
+    const spec = poetryPracticeSpec(serial, seed, questionIndex);
+    const answerIndex = questionIndex % 4;
+    const rawOptions = [spec.correct, ...spec.wrong];
+    const options = rotate(rawOptions, answerIndex);
+    const rationaleByOption = new Map([[spec.correct, spec.reason], ...spec.wrong.map((option, index) => [option, ["此項只抓到表面物件，沒有連結全詩轉折與意象群。", "此項把有限的詩句線索擴大成無法由文本支持的必然結論。", "此項否定或任意放大形式作用，未指出可核對的詩句。"][index]])]);
+    return {
+      id: `CHI_R4_Q_${String(serial).padStart(3, "0")}_${String(questionIndex + 1).padStart(2, "0")}`,
+      subject: "chinese",
+      skillIds: [skill.id],
+      authorityRefs: [...skill.authorityRefs],
+      stimulusId: null,
+      stem: spec.stem,
+      options,
+      answerIndex,
+      optionRationales: options.map((option, optionIndex) => ({ optionIndex, isCorrect: optionIndex === answerIndex, reason: rationaleByOption.get(option) })),
+      difficulty: DIFFICULTIES[questionIndex],
+      cognitiveProcess: questionIndex < 3 ? ["comprehend", "identify"] : questionIndex < 7 ? ["analyze", "interpret"] : ["analyze", "evaluate", "transfer"],
+      representationType,
+      misconceptionTargets: [spec.wrong[0]],
+      provenance: sourceProvenance(skill.authorityRefs),
+      independentReviews: [
+        { reviewerRole: "chinese-poetry-solution-review", derivedAnswerIndex: answerIndex, evidence: spec.reason, status: "pass" },
+        { reviewerRole: "chinese-poetry-alternative-review", derivedAnswerIndex: answerIndex, evidence: "三個干擾項分別停在表面物件、過度推論，或無視詩句形式與語境線索。", status: "pass" },
+      ],
+      assets: [],
+    };
+  });
+}
 
 const writingSkills = chineseSkills.filter((skill) => Number(skill.id.slice(-3)) >= 303);
 const MODES = ["narrative-reflection", "explanation-analysis", "comparison", "argument-with-limits", "material-integration"];
